@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Isaías 48:15–20",
+    "passages": [
+      {
+        "ref": "Isaías 48:12–16"
+      },
+      {
+        "ref": "Isaías 48:17–20"
+      }
+    ],
+    "context": "O Senhor, primeiro e último, chama Jacó a ouvir: ele amou a Ciro contra Babilônia e ensina o caminho útil. O povo é mandado sair anunciando a redenção.",
+    "keyword": "remiu",
+    "keywordGloss": "O Senhor libertou o seu servo Jacó; isso deve ser anunciado até os confins.",
+    "focusQuestion": "Você ouve o caminho que o Senhor ensina ou ainda habita onde ele manda sair?",
+    "reflectionPrompts": [
+      "Primeiro e último",
+      "Paz como um rio",
+      "Saiam anunciando"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor se apresenta a Jacó como o primeiro e também o último.",
+        "evidenceRef": "Isaías 48:12",
+        "evidenceSpan": "sou o primeiro e também o último"
+      },
+      {
+        "text": "A mão do Senhor fundou a terra e a destra estendeu os céus.",
+        "evidenceRef": "Isaías 48:13",
+        "evidenceSpan": "a minha mão fundou a terra, e a minha destra estendeu os céus"
+      },
+      {
+        "text": "O SENHOR amou a Ciro e cumprirá a vontade contra Babilônia.",
+        "evidenceRef": "Isaías 48:14",
+        "evidenceSpan": "O SENHOR amou a Ciro e cumprirá a sua vontade contra Babilônia"
+      },
+      {
+        "text": "O SENHOR ensina o que é útil e guia pelo caminho em que se deve andar.",
+        "evidenceRef": "Isaías 48:17",
+        "evidenceSpan": "que te ensina o que é útil e te guia pelo caminho em que deves andar"
+      },
+      {
+        "text": "Se tivessem ouvido os mandamentos, a paz seria como um rio.",
+        "evidenceRef": "Isaías 48:18",
+        "evidenceSpan": "a tua paz seria como um rio"
+      },
+      {
+        "text": "Devem sair de Babilônia e anunciar que o Senhor remiu o seu servo Jacó.",
+        "evidenceRef": "Isaías 48:20",
+        "evidenceSpan": "O Senhor remiu o seu servo Jacó"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Redentor",
+        "gloss": "O SENHOR, Santo de Israel, que ensina e guia o seu povo."
+      },
+      {
+        "term": "remiu",
+        "gloss": "Libertou Jacó; a notícia deve chegar aos confins da terra."
+      },
+      {
+        "term": "paz",
+        "gloss": "O fruto de ouvir os mandamentos, comparado a um rio."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Senhor, primeiro e último, Criador",
+        "evidenceRef": "Isaías 48:12–13"
+      },
+      {
+        "label": "Ciro amado contra Babilônia",
+        "evidenceRef": "Isaías 48:14–15"
+      },
+      {
+        "label": "Ensino útil e lamento pela desobediência",
+        "evidenceRef": "Isaías 48:17–19"
+      },
+      {
+        "label": "Saída e anúncio da redenção",
+        "evidenceRef": "Isaías 48:20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Ouvir os mandamentos traria paz como rio e justiça como ondas.",
+        "marker": "Então",
+        "evidenceRef": "Isaías 48:18"
+      },
+      {
+        "kind": "propósito",
+        "text": "Sair de Babilônia é para anunciar até os confins que o Senhor remiu Jacó.",
+        "marker": null,
+        "evidenceRef": "Isaías 48:20"
+      },
+      {
+        "kind": "causa",
+        "text": "O SENHOR guia porque é o Redentor e o Deus que ensina o útil.",
+        "marker": null,
+        "evidenceRef": "Isaías 48:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 18:4",
+        "bridge": "Sai dela, povo meu"
+      },
+      {
+        "ref": "Jeremias 50:8",
+        "bridge": "Fugi do meio de Babilônia"
+      },
+      {
+        "ref": "João 14:27",
+        "bridge": "Paz que o Senhor dá"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ciro age sozinho, sem o Senhor amar ou chamar.",
+        "why": "O texto diz que o SENHOR amou a Ciro, o chamou e fará próspero o caminho."
+      },
+      {
+        "text": "A paz como rio vem sem ouvir os mandamentos.",
+        "why": "O lamento é: se tivessem dado ouvidos, então a paz seria como rio."
+      },
+      {
+        "text": "A redenção de Jacó deve ficar em silêncio dentro de Babilônia.",
+        "why": "O povo deve sair e anunciar com júbilo até os confins da terra."
+      }
+    ],
+    "centralInsight": "Sai de Babilônia; anunciai isto até o fim da terra: o Senhor remiu o seu servo Jacó.",
+    "anchorQuestion": "Segundo Isaías 48:20, o que o povo deve anunciar ao sair de Babilônia?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 48:12, o Senhor se apresenta a Israel como o primeiro e também o último.",
+      "verseRef": "Isaías 48:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "sou o primeiro e também o último",
+      "feedbackCorrect": "Ele é o mesmo: primeiro e último, quem chamou Jacó.",
+      "feedbackWrong": {
+        "false": "Releia o fim de Isaías 48:12."
+      },
+      "hint": "Olhe como ele se descreve no versículo.",
+      "learningObjective": "Observar a autodescrição do Senhor.",
+      "evidence": [
+        "Isaías 48:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 48:20, toque o que o Senhor fez ao seu servo Jacó.",
+      "verseRef": "Isaías 48:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "remiu"
+        },
+        {
+          "id": "b",
+          "text": "caldeus"
+        },
+        {
+          "id": "c",
+          "text": "júbilo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor remiu o seu servo Jacó",
+      "feedbackCorrect": "A mensagem do êxodo é esta: o Senhor remiu Jacó.",
+      "feedbackWrong": {
+        "b": "Isso nomeia de quem devem fugir, não a ação do Senhor.",
+        "c": "Isso descreve a voz do anúncio, não o que Deus fez."
+      },
+      "hint": "Leia a frase final do versículo.",
+      "learningObjective": "Identificar a ação anunciada sobre Jacó.",
+      "evidence": [
+        "Isaías 48:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 48:17, o que o SENHOR faz pelo seu povo?",
+      "verseRef": "Isaías 48:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensina o útil e guia no caminho"
+        },
+        {
+          "id": "b",
+          "text": "Esconde o caminho útil"
+        },
+        {
+          "id": "c",
+          "text": "Entrega o povo aos caldeus para sempre"
+        },
+        {
+          "id": "d",
+          "text": "Recusa ser o Redentor de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que te ensina o que é útil e te guia pelo caminho em que deves andar",
+      "feedbackCorrect": "O Redentor ensina o útil e guia o passo do povo.",
+      "feedbackWrong": {
+        "b": "O texto afirma o contrário: ele ensina o que é útil.",
+        "c": "O povo é chamado a sair de Babilônia, não a ficar.",
+        "d": "Ele se apresenta justamente como Redentor e Santo de Israel."
+      },
+      "hint": "Leia as duas ações no fim do versículo.",
+      "learningObjective": "Observar o ensino e a guia do Senhor.",
+      "evidence": [
+        "Isaías 48:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 48:20 na ordem do texto.",
+      "verseRef": "Isaías 48:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saiam de Babilônia, fujam dos caldeus"
+        },
+        {
+          "id": "b",
+          "text": "Anunciem com voz de júbilo; proclamem isto"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor remiu o seu servo Jacó"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Saiam de Babilônia, fujam dos caldeus",
+      "feedbackCorrect": "Sair, anunciar e confessar a redenção de Jacó.",
+      "feedbackWrong": {
+        "default": "Comece pela saída; a redenção fecha o anúncio."
+      },
+      "hint": "O versículo começa com a ordem de sair.",
+      "learningObjective": "Reconhecer a sequência de Isaías 48:20.",
+      "evidence": [
+        "Isaías 48:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 48:18, a que a paz seria comparada se ouvissem?",
+      "verseRef": "Isaías 48:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "rio"
+        },
+        {
+          "id": "b",
+          "text": "pó"
+        },
+        {
+          "id": "c",
+          "text": "ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tua paz seria como um rio",
+      "feedbackCorrect": "Ouvir traria paz abundante, como um rio que corre.",
+      "feedbackWrong": {
+        "b": "Pó é imagem da humilhação de Babilônia, não da paz.",
+        "c": "O texto compara a paz a um rio."
+      },
+      "hint": "Leia a comparação depois de \"Então\".",
+      "learningObjective": "Lembrar a imagem da paz prometida.",
+      "evidence": [
+        "Isaías 48:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 48:20 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 48:20",
+      "passageA": {
+        "ref": "Isaías 48:20"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O povo deve sair anunciando que o Senhor libertou Jacó."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Êxodo com anúncio da redenção"
+        },
+        {
+          "id": "b",
+          "text": "Permanecer calados em Babilônia"
+        },
+        {
+          "id": "c",
+          "text": "Negar que Jacó foi remido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "digam: O Senhor remiu o seu servo Jacó",
+      "feedbackCorrect": "Sair e proclamar: a redenção de Jacó é notícia pública.",
+      "feedbackWrong": {
+        "b": "A ordem é sair e anunciar com júbilo.",
+        "c": "O conteúdo do anúncio é exatamente a redenção."
+      },
+      "hint": "Veja a ordem e a mensagem final.",
+      "learningObjective": "Ligar 48:20 à saída redentora.",
+      "evidence": [
+        "Isaías 48:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 48:18, a paz como um rio viria mesmo sem dar ouvidos aos mandamentos.",
+      "verseRef": "Isaías 48:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "Se tu tivesses dado ouvidos aos meus mandamentos",
+      "feedbackCorrect": "O \"se\" e o \"então\" ligam a paz à obediência ouvida.",
+      "feedbackWrong": {
+        "true": "Releia a condição no começo de 48:18."
+      },
+      "hint": "Repare na palavra \"Se\" no início.",
+      "learningObjective": "Compreender a condição da paz prometida.",
+      "evidence": [
+        "Isaías 48:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 48:18, toque a palavra que introduz o resultado de ouvir.",
+      "verseRef": "Isaías 48:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "mandamentos"
+        },
+        {
+          "id": "c",
+          "text": "justiça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, a tua paz seria como um rio",
+      "feedbackCorrect": "\"Então\" marca o fruto: paz e justiça em abundância.",
+      "feedbackWrong": {
+        "b": "Isso é o que deveria ser ouvido, não o resultado.",
+        "c": "Isso é parte do fruto, não a palavra que o introduz."
+      },
+      "hint": "Procure a palavra depois da exclamação.",
+      "learningObjective": "Reconhecer o marcador de resultado em 48:18.",
+      "evidence": [
+        "Isaías 48:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 48:14–15 se relaciona com a saída de Babilônia?",
+      "verseRef": "Isaías 48:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor usa Ciro para cumprir a vontade contra Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "Ciro age sem chamada nem prosperidade de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Babilônia permanece intocável para sempre"
+        },
+        {
+          "id": "d",
+          "text": "O povo não precisa ouvir o anúncio divino"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cumprirá a sua vontade contra Babilônia",
+      "feedbackCorrect": "O Senhor amou, chamou e trará Ciro; Babilônia não fica de pé.",
+      "feedbackWrong": {
+        "b": "Ele diz: eu o chamei, trouxe e farei próspero o caminho.",
+        "c": "A vontade cumprida é justamente contra Babilônia.",
+        "d": "O capítulo chama a ouvir e a anunciar a redenção."
+      },
+      "hint": "Veja contra quem a vontade se cumpre.",
+      "learningObjective": "Relacionar Ciro, Babilônia e a libertação.",
+      "evidence": [
+        "Isaías 48:14–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 48:17–20?",
+      "verseRef": "Isaías 48:17–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Redentor ensina e guia o caminho"
+        },
+        {
+          "id": "b",
+          "text": "Lamenta-se a paz perdida por não ouvir"
+        },
+        {
+          "id": "c",
+          "text": "O povo sai anunciando a redenção"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que te ensina o que é útil e te guia pelo caminho em que deves andar",
+      "feedbackCorrect": "Ensino, lamento e, por fim, a saída com júbilo.",
+      "feedbackWrong": {
+        "default": "Comece pelo ensino do Redentor; a saída fecha."
+      },
+      "hint": "A ordem de sair vem no versículo 20.",
+      "learningObjective": "Compreender o movimento de 48:17–20.",
+      "evidence": [
+        "Isaías 48:17–20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 48:17, que título abre a fala do SENHOR a Israel?",
+      "verseRef": "Isaías 48:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Redentor"
+        },
+        {
+          "id": "b",
+          "text": "caldeu"
+        },
+        {
+          "id": "c",
+          "text": "ourives"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim diz o SENHOR, o seu Redentor, o Santo de Israel",
+      "feedbackCorrect": "Quem ensina o útil é o Redentor, o Santo de Israel.",
+      "feedbackWrong": {
+        "b": "Caldeu é o opressor de quem se deve fugir.",
+        "c": "Ourives aparece na cena dos ídolos, não aqui."
+      },
+      "hint": "Leia o título logo após \"o SENHOR\".",
+      "learningObjective": "Compreender quem guia como Redentor.",
+      "evidence": [
+        "Isaías 48:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 48:20 a Apocalipse 18:4?",
+      "verseRef": "Isaías 48:20",
+      "passageA": {
+        "ref": "Isaías 48:20"
+      },
+      "passageB": {
+        "ref": "Apocalipse 18:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a sair de Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "Ordem de permanecer nela"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sobre a redenção"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Saiam de Babilônia, fujam dos caldeus",
+      "evidence": [
+        "Isaías 48:20",
+        "Apocalipse 18:4"
+      ],
+      "feedbackCorrect": "Nos dois textos, o povo de Deus é chamado a sair de Babilônia.",
+      "feedbackWrong": {
+        "b": "A ordem é sair e fugir, não permanecer.",
+        "c": "Isaías manda anunciar a redenção com júbilo."
+      },
+      "hint": "Compare a ordem de saída nos dois trechos.",
+      "learningObjective": "Relacionar o êxodo de Isaías ao chamado de Apocalipse."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 48:17–20 apresenta o Senhor como Redentor que ensina, lamenta a desobediência e manda anunciar a libertação.",
+      "verseRef": "Isaías 48:17–18",
+      "correctOptionId": "true",
+      "evidenceSpan": "que te ensina o que é útil e te guia pelo caminho",
+      "feedbackCorrect": "Ele guia, lamenta a paz perdida e envia o povo a anunciar a redenção.",
+      "feedbackWrong": {
+        "false": "Releia o arco de 48:17 a 48:20."
+      },
+      "hint": "Veja ensino, lamento e anúncio em sequência.",
+      "learningObjective": "Interpretar o arco redentor do trecho.",
+      "evidence": [
+        "Isaías 48:17–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 48:16, toque o trecho que mostra a presença de Deus desde o princípio.",
+      "verseRef": "Isaías 48:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "estive presente"
+        },
+        {
+          "id": "b",
+          "text": "oculto"
+        },
+        {
+          "id": "c",
+          "text": "Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desde o momento em que tudo começou, estive presente",
+      "feedbackCorrect": "Ele não falou em oculto: esteve presente desde o princípio.",
+      "feedbackWrong": {
+        "b": "O texto nega falar em oculto; a presença é afirmada depois.",
+        "c": "Isso aparece no envio final, não na frase da presença inicial."
+      },
+      "hint": "Procure o que ele diz ter feito desde o começo.",
+      "learningObjective": "Sustentar com o texto a presença desde o princípio.",
+      "evidence": [
+        "Isaías 48:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 48:18–20 sustenta sobre ouvir e sair?",
+      "verseRef": "Isaías 48:18–19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir traz paz; a redenção se anuncia ao sair"
+        },
+        {
+          "id": "b",
+          "text": "Desobedecer garante paz como rio"
+        },
+        {
+          "id": "c",
+          "text": "Ficar em Babilônia é o anúncio da redenção"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor remiu Jacó em silêncio privado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tua paz seria como um rio",
+      "feedbackCorrect": "A paz ligada ao ouvir e a saída com anúncio formam o caminho do texto.",
+      "feedbackWrong": {
+        "b": "A paz como rio depende de ter dado ouvidos.",
+        "c": "A ordem é sair e fugir dos caldeus.",
+        "d": "A redenção deve ser proclamada até os confins."
+      },
+      "hint": "Una o lamento de 18 ao anúncio de 20.",
+      "learningObjective": "Escolher a interpretação de ouvir e anunciar.",
+      "evidence": [
+        "Isaías 48:18–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da libertação em Isaías 48?",
+      "verseRef": "Isaías 48:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor chama e usa Ciro contra Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "O povo é chamado a ouvir o caminho útil"
+        },
+        {
+          "id": "c",
+          "text": "Saiam anunciando que Jacó foi remido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O Senhor remiu o seu servo Jacó",
+      "feedbackCorrect": "Da soberania sobre Ciro ao ensino e ao anúncio público.",
+      "feedbackWrong": {
+        "default": "Comece por Ciro; o anúncio da redenção fecha."
+      },
+      "hint": "Siga 48:14–15, 17 e 20.",
+      "learningObjective": "Ver o fio da libertação no capítulo.",
+      "evidence": [
+        "Isaías 48:14",
+        "Isaías 48:17",
+        "Isaías 48:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 48:12, que palavra completa a identidade do Senhor além de primeiro?",
+      "verseRef": "Isaías 48:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "último"
+        },
+        {
+          "id": "b",
+          "text": "caldeu"
+        },
+        {
+          "id": "c",
+          "text": "ourives"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sou o primeiro e também o último",
+      "feedbackCorrect": "Primeiro e último: não há rival no começo nem no fim.",
+      "feedbackWrong": {
+        "b": "Caldeu é o opressor, não a identidade do Senhor.",
+        "c": "Ourives não aparece neste versículo."
+      },
+      "hint": "Leia o par com que ele se apresenta.",
+      "learningObjective": "Lembrar o termo que completa a identidade divina.",
+      "evidence": [
+        "Isaías 48:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 48:18 a João 14:27?",
+      "verseRef": "Isaías 48:18",
+      "passageA": {
+        "ref": "Isaías 48:18"
+      },
+      "passageB": {
+        "ref": "João 14:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz que o Senhor dá"
+        },
+        {
+          "id": "b",
+          "text": "Paz comprada em Babilônia"
+        },
+        {
+          "id": "c",
+          "text": "Paz sem ouvir a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tua paz seria como um rio",
+      "evidence": [
+        "Isaías 48:18",
+        "João 14:27"
+      ],
+      "feedbackCorrect": "A paz abundante vem do Senhor, não do mundo opressor.",
+      "feedbackWrong": {
+        "b": "Babilônia é o lugar de onde se foge, não a fonte da paz.",
+        "c": "Em Isaías, a paz está ligada a ouvir os mandamentos."
+      },
+      "hint": "Compare a origem da paz nos dois textos.",
+      "learningObjective": "Ligar a paz de Isaías à paz que Jesus dá."
+    }
+  ]
+}

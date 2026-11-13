@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 138:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 138:1–6"
+      },
+      {
+        "ref": "Salmos 138:7–8"
+      }
+    ],
+    "context": "De todo o coração eu te louvarei; o Senhor olha para o humilde. O Senhor aperfeiçoará o que me concerne.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "De todo o coração",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Render-te-ei graças.",
+        "evidenceRef": "Salmos 138:1",
+        "evidenceSpan": "Render-te-ei graças"
+      },
+      {
+        "text": "Prostrar-me-ei para o teu santo templo e louvarei.",
+        "evidenceRef": "Salmos 138:2",
+        "evidenceSpan": "Prostrar-me-ei para o teu santo templo e louvarei"
+      },
+      {
+        "text": "No dia em que clamei.",
+        "evidenceRef": "Salmos 138:3",
+        "evidenceSpan": "No dia em que clamei"
+      },
+      {
+        "text": "Todos os reis da terra te renderão graças.",
+        "evidenceRef": "Salmos 138:4",
+        "evidenceSpan": "Todos os reis da terra te renderão graças"
+      },
+      {
+        "text": "Cantarão os caminhos do Senhor.",
+        "evidenceRef": "Salmos 138:5",
+        "evidenceSpan": "Cantarão os caminhos do Senhor"
+      },
+      {
+        "text": "Ainda que o Senhor seja excelso.",
+        "evidenceRef": "Salmos 138:6",
+        "evidenceSpan": "Ainda que o Senhor seja excelso"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Render-te-ei",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "graças",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Render-te-ei graças senhor de todo o",
+        "evidenceRef": "Salmos 138:1"
+      },
+      {
+        "label": "Prostrar-me-ei para o teu santo templo",
+        "evidenceRef": "Salmos 138:2"
+      },
+      {
+        "label": "No dia em que clamei tu",
+        "evidenceRef": "Salmos 138:3"
+      },
+      {
+        "label": "Todos os reis da terra te",
+        "evidenceRef": "Salmos 138:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 138:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Salmos 138:4"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 138:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Lançar o cuidado"
+      },
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças"
+      },
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é pastor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Louvor perante os deuses e cuidado pessoal: a misericórdia dura para sempre."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Louvor perante os deuses e cuidado pessoal: a misericórdia dura para sempre.",
+    "anchorQuestion": "O que Salmos 138:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 138:1, render-te-ei graças.",
+      "verseRef": "Salmos 138:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Render-te-ei graças",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 138:1 afirma.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 138:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 138:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Render-te-ei"
+        },
+        {
+          "id": "b",
+          "text": "graças"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Render-te-ei",
+      "feedbackCorrect": "O versículo destaca «Render-te-ei».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 138:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 138:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "No dia em que clamei"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No dia em que clamei",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 138:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 138:1 na ordem do texto.",
+      "verseRef": "Salmos 138:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Render-te-ei graças"
+        },
+        {
+          "id": "b",
+          "text": "graças"
+        },
+        {
+          "id": "c",
+          "text": "todo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Render-te-ei graças",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 138:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 138:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todos"
+        },
+        {
+          "id": "b",
+          "text": "Render-te-ei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todos",
+      "feedbackCorrect": "A palavra do versículo é «Todos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 138:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 138:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 138:1",
+      "passageA": {
+        "ref": "Salmos 138:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "De todo o coração eu te louvarei; o Senhor olha para o humilde. O Senhor aperfeiçoará o que me concerne."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Render-te-ei",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 138:2, o marcador pois une ideias no fluxo do texto.",
+      "verseRef": "Salmos 138:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 138:2 afirma.",
+      "evidence": [
+        "Salmos 138:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 138:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 138:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Prostrar-me-ei"
+        },
+        {
+          "id": "c",
+          "text": "teu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 138:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 138:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 138:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todos os reis da terra te renderão graças",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 138:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 138:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Render-te-ei graças senhor de todo"
+        },
+        {
+          "id": "b",
+          "text": "Prostrar-me-ei para o teu santo templo"
+        },
+        {
+          "id": "c",
+          "text": "No dia em que clamei tu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Render-te-ei",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 138:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 138:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamei"
+        },
+        {
+          "id": "b",
+          "text": "Render-te-ei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "clamei",
+      "feedbackCorrect": "A palavra do versículo é «clamei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 138:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 138:1 a 1 Pedro 5:7.",
+      "verseRef": "Salmos 138:1",
+      "passageA": {
+        "ref": "Salmos 138:1"
+      },
+      "passageB": {
+        "ref": "1 Pedro 5:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lançar o cuidado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Render-te-ei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 138:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 138:8 afirma.",
+      "evidence": [
+        "Salmos 138:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 138:8, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 138:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "completará"
+        },
+        {
+          "id": "c",
+          "text": "diz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 138:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 138:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 138:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarão os caminhos do Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 138:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 138:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Render-te-ei",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 138:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 138:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarão"
+        },
+        {
+          "id": "b",
+          "text": "Render-te-ei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarão",
+      "feedbackCorrect": "A palavra do versículo é «Cantarão».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 138:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 138:1 a Filipenses 4:6.",
+      "verseRef": "Salmos 138:1",
+      "passageA": {
+        "ref": "Salmos 138:1"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração com ações de graças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Render-te-ei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 138:1"
+      ]
+    }
+  ]
+}

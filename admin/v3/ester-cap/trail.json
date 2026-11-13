@@ -1,0 +1,169 @@
+{
+  "slug": "ester-cap",
+  "title": "Ester",
+  "description": "Ester capítulo a capítulo: no palácio, risco e livramento do povo.",
+  "icon": "💎",
+  "color": "#C9947E",
+  "order": 18,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Ameaça no palácio · cap. 1–5",
+      "icon": "zap",
+      "section": "Ester",
+      "missions": [
+        {
+          "slug": "etc-01-vasti-recusa",
+          "title": "Vasti recusa",
+          "subtitle": "Ester 1:10–21",
+          "intro": "No banquete, o rei manda chamar a rainha Vasti; ela não vem, e o conselho decide o destino dela.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 1:10–21",
+          "hookVerse": "No sétimo dia, quando o coração do rei estava alegre por causa do vinho, ele mandou chamar Meumã, Bizta, Harbona, Bigtá, Abagta, Zetar e Carcas, os sete eunucos que serviam na presença do rei Assuero. Que levassem à presença do rei a rainha Vasti, com a coroa real, para mostrar aos povos e aos príncipes a sua formosura, pois era extraordinariamente formosa.",
+          "hookNote": "A recusa de Vasti muda o trono: o rei busca outra rainha no lugar dela.",
+          "centralInsight": "A recusa de Vasti muda o trono: o rei busca outra rainha no lugar dela.",
+          "objective": "Ver a porta se abrir"
+        },
+        {
+          "slug": "etc-02-hama-exaltado",
+          "title": "Hamã exaltado",
+          "subtitle": "Ester 3:1–7",
+          "intro": "Depois de Ester no trono, o rei eleva Hamã; Mardoqueu não se curva, e a fúria cresce.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 3:1–7",
+          "hookVerse": "Depois disso, o rei Assuero engrandeceu Hamã, filho de Hammedata, o agagita, e o exaltou, colocando-o acima de todos os príncipes que estavam ao seu lado. E todos os servos do rei, que estavam à porta do rei, se inclinavam e se prostravam diante de Hamã; pois assim tinha ordenado o rei a respeito dele. No entanto, Mardoqueu não se inclinava nem se prostrava.",
+          "hookNote": "Hamã quer destruir todos os judeus por causa de um homem que não se prostra.",
+          "centralInsight": "Hamã quer destruir todos os judeus por causa de um homem que não se prostra.",
+          "objective": "Perceber a ameaça crescer"
+        },
+        {
+          "slug": "etc-03-para-esta-ocasiao",
+          "title": "Para esta ocasião",
+          "subtitle": "Ester 4:5–15",
+          "intro": "Mardoqueu manda o decreto a Ester; ela fala do risco, e ele responde com urgência.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 4:5–15",
+          "hookVerse": "Então, Ester chamou Hataque, um dos eunucos do rei que lhe tinha sido designado para servi-la, e lhe ordenou que fosse a Mardoqueu para saber o que estava acontecendo e qual era a razão da situação. E Hathach saiu à praça da cidade para se encontrar com Mardoqueu que estava em frente à porta do rei.",
+          "hookNote": "Se Ester se calar, o livramento virá de outro lugar; quem sabe foi para esta ocasião.",
+          "centralInsight": "Se Ester se calar, o livramento virá de outro lugar; quem sabe foi para esta ocasião.",
+          "objective": "Ouvir o chamado a agir"
+        },
+        {
+          "slug": "etc-04-o-cetro-de-ouro",
+          "title": "O cetro de ouro",
+          "subtitle": "Ester 5:1–8",
+          "intro": "No terceiro dia, Ester entra sem ser chamada; o rei estende o cetro e ela convida a um banquete.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 5:1–8",
+          "hookVerse": "No terceiro dia, Ester se vestiu com seus trajes reais e se colocou no pátio interior da casa do rei, frente à sala do rei; o rei estava sentado em seu trono real, na residência real, defronte à porta da sala. E aconteceu que, ao ver o rei a rainha Ester parada no pátio, ela alcançou favor aos seus olhos; então o rei estendeu a Ester o cetro de ouro que tinha na mão; e Ester se aproximou e tocou a ponta do cetro.",
+          "hookNote": "Ester alcança favor: o rei estende o cetro e aceita o banquete com Hamã.",
+          "centralInsight": "Ester alcança favor: o rei estende o cetro e aceita o banquete com Hamã.",
+          "objective": "Entrar com coragem"
+        },
+        {
+          "slug": "etc-boss-1",
+          "title": "Travessia: Ameaça no palácio",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a queda de Vasti, a exaltação de Hamã, o chamado a Ester e o cetro estendido.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Ameaça no palácio",
+          "hookVerse": "Revise a queda de Vasti, a exaltação de Hamã, o chamado a Ester e o cetro estendido.",
+          "hookNote": "Revise a queda de Vasti, a exaltação de Hamã, o chamado a Ester e o cetro estendido.",
+          "centralInsight": "No risco, Ester é chamada a usar o lugar que recebeu",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Virada e livramento · cap. 6–10",
+      "icon": "zap",
+      "section": "Ester",
+      "missions": [
+        {
+          "slug": "etc-05-honra-a-mardoqueu",
+          "title": "Honra a Mardoqueu",
+          "subtitle": "Ester 6:1–11",
+          "intro": "O rei não dorme, lê as crônicas e pergunta o que fazer ao homem a quem deseja honrar.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 6:1–11",
+          "hookVerse": "Naquela mesma noite, o sono do rei se foi; então, ele mandou trazer o Livro das Crônicas e o fizeram ler diante dele. E foi encontrado registrado que Mardoqueu denunciara Bigthan e Teres, os dois eunucos do rei, que eram guardas da porta e haviam conspirado para matar o rei Assuero.",
+          "hookNote": "Hamã planeja a forca; o rei manda que ele mesmo honre Mardoqueu em público.",
+          "centralInsight": "Hamã planeja a forca; o rei manda que ele mesmo honre Mardoqueu em público.",
+          "objective": "Ver a virada começar"
+        },
+        {
+          "slug": "etc-06-hama-exposto",
+          "title": "Hamã exposto",
+          "subtitle": "Ester 7:1–10",
+          "intro": "No segundo banquete, Ester pede a vida do seu povo e aponta o inimigo diante do rei.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 7:1–10",
+          "hookVerse": "Veio, pois, o rei com Hamã, para beber com a rainha Ester. Disse o rei a Ester, no segundo dia do banquete do vinho: \"Qual é a sua petição, rainha Ester? Será concedida a você. Que deseja? Até metade do meu reino lhe será dado.\"",
+          "hookNote": "Hamã cai na forca que preparou para Mardoqueu; a trama volta contra ele.",
+          "centralInsight": "Hamã cai na forca que preparou para Mardoqueu; a trama volta contra ele.",
+          "objective": "Ver o inimigo cair"
+        },
+        {
+          "slug": "etc-07-novo-decreto",
+          "title": "Novo decreto",
+          "subtitle": "Ester 8:7–17",
+          "intro": "O rei autoriza escrever em nome dele; Mardoqueu envia o edito que permite aos judeus se defender.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 8:7–17",
+          "hookVerse": "Então, o rei Assuero disse à rainha Ester e ao judeu Mardoqueu: Eis que dei a Ester a casa de Hamã, e a ele penduraram numa forca, pois havia intentado matar os judeus. Escrevam, pois, aos judeus, o que acharem mais apropriado, em nome do rei, e selem-no com o anel do rei; porque os decretos escritos em nome do rei e selados com o anel do rei não podem ser revogados.",
+          "hookNote": "Com o novo decreto, Susã se alegra: luz, regozijo e honra para os judeus.",
+          "centralInsight": "Com o novo decreto, Susã se alegra: luz, regozijo e honra para os judeus.",
+          "objective": "Celebrar o livramento escrito"
+        },
+        {
+          "slug": "etc-08-dias-de-festa",
+          "title": "Dias de festa",
+          "subtitle": "Ester 9:12–21",
+          "intro": "Depois da defesa, o povo descansa; Mardoqueu manda lembrar esses dias todos os anos.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ester 9:12–21",
+          "hookVerse": "E disse o rei à rainha Ester: Na cidadela de Susã, mataram e destruíram quinhentos homens judeus e os dez filhos de Hamã. Nas províncias do rei, o que terão feito? Qual é, pois, a sua petição? Será concedida, ou que ainda desejas? Far-se-á. Então, disse Ester: Se bem parecer ao rei, que se conceda também amanhã aos judeus que estão em Susã que façam, conforme o edito de hoje, e que dependurem na forca os corpos dos dez filhos de Hamã.",
+          "hookNote": "Os dias de alívio viram festa anual: descanso, banquetes e porções uns aos outros.",
+          "centralInsight": "Os dias de alívio viram festa anual: descanso, banquetes e porções uns aos outros.",
+          "objective": "Lembrar o livramento"
+        },
+        {
+          "slug": "etc-boss-2",
+          "title": "Travessia: Virada e livramento",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise a honra a Mardoqueu, a queda de Hamã, o novo decreto e os dias de festa.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Virada e livramento",
+          "hookVerse": "Revise a honra a Mardoqueu, a queda de Hamã, o novo decreto e os dias de festa.",
+          "hookNote": "Revise a honra a Mardoqueu, a queda de Hamã, o novo decreto e os dias de festa.",
+          "centralInsight": "O plano do mal se inverte e o povo guarda a memória do livramento",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

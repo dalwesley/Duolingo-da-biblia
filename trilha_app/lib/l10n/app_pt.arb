@@ -347,7 +347,7 @@
   "categoryLinguasTitle": "Línguas originais",
   "categoryOracaoBlurb": "O Pai Nosso como escola de oração, a perseverança e a ajuda do Espírito. E o jejum como forma de render o desejo diante do Pai.",
   "categoryOracaoTitle": "Oração",
-  "categoryPanoramaBlurb": "A Bíblia como uma história só, da criação à nova criação. Antes de entrar livro a livro, esta trilha mostra o arco, a ordem dos livros e o lugar de cada parte.",
+  "categoryPanoramaBlurb": "Os pontos altos de cada livro em poucas cenas. Para conhecer o livro inteiro antes de ir capítulo a capítulo.",
   "categoryPanoramaTitle": "Panorama",
   "categoryParabolasMilagresBlurb": "O ensino e os sinais de Jesus. As parábolas mostram como é o Reino; os milagres revelam quem ele é — pão, vista, tempestade, vida — em eco com o Antigo Testamento.",
   "categoryParabolasMilagresTitle": "Parábolas e milagres",
@@ -1609,7 +1609,7 @@
   "groupCallSubtitle": "O convite aparece no app. Ou compartilhe o QR code e o código.",
   "groupCallTitle": "Chamar pessoas",
   "groupCreateCta": "Criar grupo",
-  "groupDaysAway": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
+  "groupDaysAway": "{count, plural, =1{1 dia sem caminhar} other{{count} dias sem caminhar}}",
   "@groupDaysAway": {
     "placeholders": {
       "count": {
@@ -1708,7 +1708,7 @@
     }
   },
   "groupSeatDaysInWeek": "Dias na semana",
-  "groupSeatIdle": "ainda não estudou nesta semana",
+  "groupSeatIdle": "ainda não caminhou nesta semana",
   "groupSeatMakeLeader": "Passar a liderança para {name}",
   "@groupSeatMakeLeader": {
     "placeholders": {
@@ -1725,13 +1725,13 @@
       }
     }
   },
-  "groupSeatNever": "ainda não estudou",
+  "groupSeatNever": "ainda não caminhou",
   "groupSeatSteps": "Passos",
   "groupSeatStudyDone": "Feito",
   "groupSeatStudyNotYet": "Ainda não",
-  "groupSeatToday": "estudou hoje",
+  "groupSeatToday": "caminhou hoje",
   "groupSeatViewProfile": "Ver perfil",
-  "groupSeatWeek": "estudou nesta semana",
+  "groupSeatWeek": "caminhou nesta semana",
   "groupSetupKindLabel": "Para que é o grupo",
   "groupSetupLimitHint": "Até {limit} pessoas. Grupo grande? Abra outro — discipulado acontece em grupo pequeno.",
   "@groupSetupLimitHint": {
@@ -1742,12 +1742,16 @@
     }
   },
   "groupSetupNameLabel": "Nome",
-  "groupStudyAgain": "Você já fez · Estudar de novo",
-  "groupStudyCta": "Estudar com o grupo",
-  "groupStudyDoneCount": "{done} de {total} já fizeram",
-  "@groupStudyDoneCount": {
+  "groupStudyDoneTapAgain": "Você já fez · toque para rever",
+  "groupStudySwap": "Trocar",
+  "groupStudyTapToOpen": "Toque para estudar",
+  "groupStudyTrailLine": "{trail} · cena {n} de {total}",
+  "@groupStudyTrailLine": {
     "placeholders": {
-      "done": {
+      "trail": {
+        "type": "String"
+      },
+      "n": {
         "type": "int"
       },
       "total": {
@@ -1755,7 +1759,6 @@
       }
     }
   },
-  "groupStudySwap": "Trocar",
   "groupWeekStudy": "Estudo da semana",
   "groupsSoonBody": "Estamos preparando os grupos para células, discipulado e EBD. Aguarde: quando abrirem, você fica sabendo aqui.",
   "groupsSoonItemLeader": "O líder acompanha quem já fez",
@@ -2464,7 +2467,7 @@
   },
   "juntosRoomJoinedGeneric": "Você entrou no grupo.",
   "juntosRoomOptions": "Opções do grupo",
-  "juntosRoomShareText": "Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}",
+  "juntosRoomShareText": "Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem caminhou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}",
   "@juntosRoomShareText": {
     "description": "Share text a friend sends; casual friend voice.",
     "placeholders": {
@@ -3816,6 +3819,41 @@
       }
     }
   },
+  "notifPlanDayBody": "{title}: o grupo começa o dia junto.",
+  "@notifPlanDayBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPlanDayTitle": "Dia {n} de {total} abriu",
+  "@notifPlanDayTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "notifPlanEveningBody": "{title}: ainda dá tempo de cumprir hoje.",
+  "@notifPlanEveningBody": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "notifPlanEveningTitle": "Falta o dia {n} do propósito",
+  "@notifPlanEveningTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "notifPracticeTitle": "Hora de praticar",
   "notifQuestsLeftBody": "{count, plural, =1{Sobrou 1 tarefa. Mais uma e o dia fecha.} other{Ainda faltam {count} tarefas do dia.}}",
   "@notifQuestsLeftBody": {
@@ -4185,7 +4223,6 @@
   "paywallOffersFailed": "Não conseguimos carregar os planos. Confira sua conexão e tente de novo.",
   "paywallPerkBadgeBody": "Um selo exclusivo no seu perfil e na Caravana.",
   "paywallPerkBadgeTitle": "Selo de Peregrino",
-  "paywallPerkExplainBody": "Cada erro fica guardado, com a resposta certa e o porquê.",
   "paywallPerkGiftBody": "Compartilhe 1 trilha do Peregrino+ por mês com um amigo. Ela fica aberta inteira para quem recebe, sem pagar.",
   "paywallPerkGiftTitle": "Uma trilha por mês de presente",
   "paywallPerkManyTrailsBody": "No grátis é uma trilha por vez. No Peregrino+, você anda em quantas quiser, cada uma no seu ritmo.",
@@ -4206,12 +4243,8 @@
   "paywallPerkReinforceTitle": "O que você mais erra",
   "paywallPerkSeasonBody": "O Advento, o Natal, a Páscoa e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.",
   "paywallPerkSeasonTitle": "Trilhas da estação",
-  "paywallPerkStreakBody": "Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.",
-  "paywallPerkStreakTitle": "Seus dias",
   "paywallPerkThemesBody": "Sermão do Monte, A Promessa, Oração, Família, História da Igreja e outras rotas — inteiras desde a 1ª cena.",
   "paywallPerkThemesTitle": "Trilhas por tema",
-  "paywallPerkWeeklyBody": "Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.",
-  "paywallPerkWeeklyTitle": "Revisão da semana",
   "paywallPitch": "Seu apoio mantém o Stway grátis para quem não pode pagar.\nE você ainda ganha os benefícios abaixo.",
   "paywallPlanAnnual": "Anual",
   "paywallPlanFounder": "Pioneiro",
@@ -4495,6 +4528,33 @@
   "pioneerBadge": "Pioneiro",
   "planAllRead": "Tudo lido",
   "planAlreadyRead": "Já lidos",
+  "planAnswerCta": "Responder",
+  "planAnswerDelete": "Apagar",
+  "planAnswerDeleteBody": "Ela some para todo o grupo.",
+  "planAnswerDeleteTitle": "Apagar esta resposta?",
+  "planAnswerEmpty": "Ninguém mais respondeu ainda.",
+  "planAnswerError": "Não deu para enviar. Tente de novo.",
+  "planAnswerHint": "Toque e segure uma resposta para denunciar ou apagar.",
+  "planAnswerSaved": "Resposta enviada.",
+  "planAnswerSend": "Enviar",
+  "planAnswerSheetHint": "Escreva em poucas linhas. Só o grupo vê.",
+  "planAnswersCount": "{count, plural, =0{Ninguém respondeu ainda.} =1{1 pessoa já respondeu.} other{{count} pessoas já responderam.}}",
+  "@planAnswersCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planAnswersLocked": "Responda para ver o que o grupo escreveu.",
+  "planAnswersTitle": "Respostas do dia {n}",
+  "@planAnswersTitle": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
   "planApproxDays": "{count, plural, =1{~1 dia} other{~{count} dias}}",
   "@planApproxDays": {
     "placeholders": {
@@ -4528,6 +4588,17 @@
     }
   },
   "planAtYourPace": "No seu ritmo",
+  "planAutoTitle": "{what} em {count} dias",
+  "@planAutoTitle": {
+    "placeholders": {
+      "what": {
+        "type": "String"
+      },
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "planBibleFinished": "Você concluiu a Bíblia neste plano.",
   "planCardDoneToday": "Leitura de hoje feita",
   "planCardIdle": "Canônico ou cronológico, no seu tempo",
@@ -4542,10 +4613,65 @@
       }
     }
   },
+  "planCatchUpHint": "{count, plural, =1{1 dia para recuperar} other{{count} dias para recuperar}}",
+  "@planCatchUpHint": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planCatchUpTag": "Recuperar",
+  "planChain": "{count, plural, =1{Corrente de 1 dia} other{Corrente de {count} dias}}",
+  "@planChain": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planChainBody": "Quando metade do grupo cumpre o dia na data, a corrente cresce.",
+  "planChainZero": "Comece a corrente",
   "planChaptersSkipped": "{count, plural, =1{1 capítulo pulado} other{{count} capítulos pulados}}",
   "@planChaptersSkipped": {
     "placeholders": {
       "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planCloseReveal": "Fechar e revelar",
+  "planClosing": "Fechando…",
+  "planClosingBannerTitle": "O propósito do grupo foi fechado",
+  "planDateRange": "{count, plural, =1{1 dia} other{{count} dias}} · {from} a {to}",
+  "@planDateRange": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "from": {
+        "type": "String"
+      },
+      "to": {
+        "type": "String"
+      }
+    }
+  },
+  "planDayDate": "Dia {n} · {date}",
+  "@planDayDate": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planDayDone": "Dia {n} feito",
+  "@planDayDone": {
+    "placeholders": {
+      "n": {
         "type": "int"
       }
     }
@@ -4558,6 +4684,21 @@
       }
     }
   },
+  "planDayEditNote": "Recado de quem conduz (opcional)",
+  "planDayEditQuestion": "Pergunta",
+  "planDayEmpty": "Sem cena nem capítulo neste dia",
+  "@planDayEmpty": {
+    "description": "Day row in the plan editor when the day has nothing."
+  },
+  "planDayNoteLine": "Recado: {text}",
+  "@planDayNoteLine": {
+    "description": "Day row in the plan editor: the leader's note for that day.",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
   "planDayNumber": "Dia {day}",
   "@planDayNumber": {
     "placeholders": {
@@ -4566,15 +4707,204 @@
       }
     }
   },
+  "planDayQuestionLine": "Pergunta: {text}",
+  "@planDayQuestionLine": {
+    "description": "Day row in the plan editor: the question of that day.",
+    "placeholders": {
+      "text": {
+        "type": "String"
+      }
+    }
+  },
   "planDone": "Feito",
+  "planEditorCount": "{count, plural, =0{Nenhum dia no período} =1{1 dia com algo para fazer} other{{count} dias com algo para fazer}}",
+  "@planEditorCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planEditorDayOpen": "Já abriu",
+  "planEditorDays": "{count, plural, =1{1 dia} other{{count} dias}}",
+  "@planEditorDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planEditorDuration": "Duração",
+  "planEditorDurationBody": "Quantas semanas o grupo caminha junto. Você escolhe o dia de começar; o fim fecha a última semana.",
+  "planEditorEnd": "Termina",
+  "planEditorHideDays": "Esconder os dias",
+  "planEditorHowLong": "Por quanto tempo",
+  "planEditorNameDefault": "Propósito de {count} dias",
+  "@planEditorNameDefault": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planEditorNeedContent": "Escolha a cena da trilha ou o capítulo da Bíblia para começar.",
+  "planEditorQuestion": "Pergunta do dia",
+  "planEditorReadingEnds": "O livro acaba no dia {n}; depois, sem capítulo.",
+  "@planEditorReadingEnds": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "planEditorReadingPreview": "Dia 1: {first} · último dia: {last}",
+  "@planEditorReadingPreview": {
+    "placeholders": {
+      "first": {
+        "type": "String"
+      },
+      "last": {
+        "type": "String"
+      }
+    }
+  },
+  "planEditorRename": "Editar o nome",
+  "planEditorRestHint": "Toque num dia para deixá-lo de descanso: nele não abre nada.",
+  "planEditorRestShort": "Dias da semana com propósito",
+  "planEditorSave": "Salvar",
+  "planEditorSaveError": "Não deu para salvar o propósito.",
+  "planEditorSaveNew": "Começar o propósito",
+  "planEditorSaved": "Propósito salvo. O grupo já vê.",
+  "planEditorShowDays": "Ver a pergunta de cada dia ({count})",
+  "@planEditorShowDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planEditorStart": "Começa",
+  "planEditorTitleEdit": "Editar propósito",
+  "planEditorTitleNew": "Novo propósito",
+  "planEditorWeeks": "{count, plural, =1{1 semana} other{{count} semanas}}",
+  "@planEditorWeeks": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planEditorWhatDaily": "O que o grupo faz todo dia",
+  "planEmptyCta": "Criar o propósito",
+  "planEmptyLabel": "Propósito do grupo",
+  "planEmptyLeaderBody": "Escolha a trilha, o livro e as datas. Todo dia o grupo recebe uma cena, um capítulo e uma pergunta.",
+  "planEmptyLeaderTitle": "Qual será o propósito do grupo?",
+  "planEmptyMemberBody": "{leader} escolhe a trilha, o livro e as datas. Depois, o dia de cada um aparece aqui.",
+  "@planEmptyMemberBody": {
+    "placeholders": {
+      "leader": {
+        "type": "String"
+      }
+    }
+  },
+  "planEmptyMemberTitle": "O propósito ainda não começou",
+  "planEndBody": "Os dias que faltam somem e o propósito termina hoje. O que o grupo já fez continua contado.",
+  "planEndConfirm": "Encerrar",
   "planEndConfirmAction": "Encerrar",
   "planEndConfirmBody": "Seu progresso no plano será zerado. Os capítulos já marcados como lidos na Bíblia permanecem.",
   "planEndConfirmTitle": "Encerrar plano?",
   "planEndCta": "Encerrar plano",
+  "planEndTitle": "Encerrar o propósito?",
   "planEstimate": "Estimativa",
   "planFinished": "Plano concluído",
+  "planFirstDay": "No dia 1: {items}",
+  "@planFirstDay": {
+    "placeholders": {
+      "items": {
+        "type": "String"
+      }
+    }
+  },
+  "planHearthEnds": "Termina em",
+  "@planHearthEnds": {
+    "description": "Countdown label until the plan ends (end of the last day)."
+  },
+  "planHearthLabel": "O grupo no propósito",
+  "@planHearthLabel": {
+    "description": "Header of the group card (people + countdown) while a plan exists."
+  },
+  "planHearthStarts": "Começa em",
+  "@planHearthStarts": {
+    "description": "Countdown label until the plan starts."
+  },
+  "planInviteBody": "Você escolhe quando começa e quando termina. Todo dia o grupo recebe algo para fazer junto: um capítulo, uma cena e uma pergunta.",
+  "planInviteTitle": "Criar um propósito",
+  "planItemManual": "Marcar o dia como feito",
+  "planItemManualBody": "Hoje é só você e Deus. Marque quando terminar.",
+  "planItemQuestion": "Pergunta do dia",
+  "planItemRead": "Ler {ref}",
+  "@planItemRead": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planItemScene": "Cena: {title}",
+  "@planItemScene": {
+    "placeholders": {
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "planJoin": "Estou dentro",
+  "planJoined": "Você está dentro",
+  "planJoinedCount": "{count} de {total} estão dentro",
+  "@planJoinedCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "planJoinedToast": "Você está dentro. O dia 1 abre {when}.",
+  "@planJoinedToast": {
+    "placeholders": {
+      "when": {
+        "type": "String"
+      }
+    }
+  },
+  "planLabelDay": "Propósito · Dia {n} de {total}",
+  "@planLabelDay": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "planLabelEnded": "Propósito encerrado",
+  "planLabelStartsIn": "{days, plural, =0{Propósito · começa hoje} =1{Propósito · começa amanhã} other{Propósito · começa em {days} dias}}",
+  "@planLabelStartsIn": {
+    "placeholders": {
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planLastDayDone": "Era o último dia do propósito.",
   "planLockedGuidedBody": "Seus 3 dias grátis deste plano acabaram. Ele continua no Peregrino+; a Bíblia inteira segue grátis.",
   "planMarkDayRead": "Marcar leitura do dia",
+  "planMenuCreate": "Criar propósito",
+  "planMenuEdit": "Editar propósito",
+  "planMenuEnd": "Encerrar o propósito",
   "planMinutes": "{minutes} min",
   "@planMinutes": {
     "placeholders": {
@@ -4583,7 +4913,34 @@
       }
     }
   },
+  "planNextOpens": "O dia {n} abre {when}.",
+  "@planNextOpens": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      },
+      "when": {
+        "type": "String"
+      }
+    }
+  },
   "planNextReading": "Próxima leitura",
+  "planNotStartedBody": "{days, plural, =1{Começa amanhã, {date}.} other{Começa em {days} dias, {date}.}} No primeiro dia, a cena e o capítulo do grupo aparecem aqui.",
+  "@planNotStartedBody": {
+    "description": "Body of the not-started dialog; date is the short start date.",
+    "placeholders": {
+      "days": {
+        "type": "int"
+      },
+      "date": {
+        "type": "String"
+      }
+    }
+  },
+  "planNotStartedTitle": "O propósito ainda não começou",
+  "@planNotStartedTitle": {
+    "description": "Anan dialog when someone taps to study before the group's plan starts."
+  },
   "planOrderAlphabetical": "Ordem alfabética",
   "planOrderAlphabeticalShort": "Alfabética",
   "planOrderCanonical": "Ordem da Bíblia",
@@ -4591,6 +4948,19 @@
   "planOrderChronological": "Ordem cronológica",
   "planOrderChronologicalShort": "Cronológica",
   "planPendingChapters": "Capítulos pendentes",
+  "planPerDay": "{count} por dia",
+  "@planPerDay": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "planPickReadingChapter": "Capítulo",
+  "planPickReadingSave": "Começar aqui",
+  "planPickReadingSubtitle": "O grupo lê em sequência a partir daqui.",
+  "planPickReadingTitle": "Livro e capítulo de partida",
+  "planPickSceneTitle": "Cena de partida",
   "planPortionMeta": "{count, plural, =1{~{minutes} min · 1 capítulo} other{~{minutes} min · {count} capítulos}}",
   "@planPortionMeta": {
     "placeholders": {
@@ -4618,6 +4988,109 @@
       }
     }
   },
+  "planPulseDone": "{done} de {total} já cumpriram o dia {n}",
+  "@planPulseDone": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      },
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "planPulseNone": "Ninguém cumpriu o dia {n} ainda. Seja o primeiro.",
+  "@planPulseNone": {
+    "placeholders": {
+      "n": {
+        "type": "int"
+      }
+    }
+  },
+  "planPulseTitle": "Hoje no grupo",
+  "planQ1": "O que {ref} mostra sobre quem Deus é?",
+  "@planQ1": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ10": "Que promessa ou aviso aparece em {ref}?",
+  "@planQ10": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ2": "Qual frase de {ref} ficou com você hoje?",
+  "@planQ2": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ3": "O que {ref} pede de você nesta semana?",
+  "@planQ3": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ4": "Onde você se vê em {ref}?",
+  "@planQ4": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ5": "O que surpreendeu você em {ref}?",
+  "@planQ5": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ6": "Pelo que {ref} faz você agradecer?",
+  "@planQ6": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ7": "Que pergunta você levaria ao grupo sobre {ref}?",
+  "@planQ7": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ8": "Como {ref} aponta para Jesus?",
+  "@planQ8": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
+  "planQ9": "O que você quer pedir a Deus depois de ler {ref}?",
+  "@planQ9": {
+    "placeholders": {
+      "ref": {
+        "type": "String"
+      }
+    }
+  },
   "planReadingDays": "{count, plural, =1{1 dia de leitura} other{{count} dias de leitura}}",
   "@planReadingDays": {
     "placeholders": {
@@ -4638,6 +5111,38 @@
     }
   },
   "planReminderOff": "Desligado",
+  "planRestToday": "Hoje é dia de descanso",
+  "planReveal": "Ver a revelação",
+  "planRevealConstantBody": "Cumpriu mais dias na data certa.",
+  "planRevealEyebrow": "Propósito · {room}",
+  "@planRevealEyebrow": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      }
+    }
+  },
+  "planRevealFaithfulBody": "Cumpriram todos os dias. Cada um ganha o selo.",
+  "planRevealFaithfulNone": "Desta vez ninguém cumpriu todos os dias. O próximo propósito é uma nova chance.",
+  "planRevealFaithfulTitle": "Fiéis no propósito",
+  "planRevealGroupPct": "dos dias do propósito, o grupo cumpriu junto",
+  "planRevealYourSeal": "Você ganhou o selo Fiel. Ele fica ao lado do seu nome no grupo.",
+  "planSeatDays": "Dias do propósito",
+  "@planSeatDays": {
+    "description": "Person sheet stat label: days of the plan this person closed (value like 5/21)."
+  },
+  "planSeatIn": "Dentro",
+  "@planSeatIn": {
+    "description": "Person sheet: tapped 'I'm in' on the group's plan."
+  },
+  "planSeatLabel": "Propósito",
+  "@planSeatLabel": {
+    "description": "Person sheet stat label before the plan starts (value says if they're in)."
+  },
+  "planSeatNotIn": "Ainda não",
+  "@planSeatNotIn": {
+    "description": "Person sheet: hasn't tapped 'I'm in' yet."
+  },
   "planSectionOrder": "Ordem",
   "planSectionTime": "Tempo disponível",
   "planSetupBody": "Montamos a porção diária para caber nesse tempo — na ordem da Bíblia ou na ordem dos acontecimentos. Capítulos que você já leu são pulados.",
@@ -4650,6 +5155,52 @@
       }
     }
   },
+  "planSourcePick": "Escolher",
+  "planSourceQuestionBody": "Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Abra os dias para ver cada uma e trocar a que quiser.",
+  "planSourceQuestionNone": "Escolha a cena ou o capítulo: a pergunta sai deles.",
+  "planSourceQuestionOff": "Desligada: o grupo faz a cena e lê o capítulo, sem pergunta para responder.",
+  "@planSourceQuestionOff": {
+    "description": "Question of the day card body when the toggle is off."
+  },
+  "planSourceReading": "Capítulo da Bíblia",
+  "planSourceReadingEmpty": "O grupo ainda não tem leitura. Escolha um livro e o capítulo de partida.",
+  "planSourceReadingFrom": "{book}, a partir do capítulo {from}",
+  "@planSourceReadingFrom": {
+    "placeholders": {
+      "book": {
+        "type": "String"
+      },
+      "from": {
+        "type": "int"
+      }
+    }
+  },
+  "planSourceRemove": "Tirar",
+  "planSourceScene": "Cena da trilha",
+  "planSourceSceneCount": "Uma cena por dia: {scenes} de {days} dias têm cena.",
+  "@planSourceSceneCount": {
+    "placeholders": {
+      "scenes": {
+        "type": "int"
+      },
+      "days": {
+        "type": "int"
+      }
+    }
+  },
+  "planSourceSceneEmpty": "O grupo ainda não tem estudo. Escolha a cena de partida da trilha.",
+  "planSourceSceneFrom": "{trail} · a partir de “{title}”",
+  "@planSourceSceneFrom": {
+    "placeholders": {
+      "trail": {
+        "type": "String"
+      },
+      "title": {
+        "type": "String"
+      }
+    }
+  },
+  "planStartAnother": "Começar outro propósito",
   "planStartCta": "Começar plano · {minutes} min/dia",
   "@planStartCta": {
     "placeholders": {
@@ -4658,11 +5209,28 @@
       }
     }
   },
+  "planSuggestGeneral": "Geral",
+  "planSuggestLife": "Para a vida",
+  "planSuggestText": "Sobre o texto",
+  "planSuggestTitle": "Sugestões",
   "planSwitchBody": "O plano atual será encerrado. Os capítulos já lidos continuam marcados na Bíblia.",
   "planSwitchTitle": "Trocar de plano?",
   "planTimePerDay": "Tempo por dia",
   "planTitle": "Plano de leitura",
   "planTodayDoneBody": "Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.",
+  "planTomorrow": "amanhã",
+  "planWaitReveal": "Quem conduz vai revelar como o grupo foi.",
+  "planYouDid": "Você cumpriu {done} de {total} dias",
+  "@planYouDid": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
   "plansCatalogBody": "Cada dia já vem pronto; perdeu um, continua de onde parou.",
   "plansCatalogHeader": "Planos de leitura",
   "plansGuidedPlusNote": "A Bíblia inteira é grátis, sempre. Nos guiados, os primeiros 3 dias são grátis; depois, Peregrino+.",
@@ -4697,6 +5265,7 @@
   "plusNoticeEndingTitle": "Seu Peregrino+ grátis está acabando",
   "plusNoticeFreeBible": "A Bíblia, livro a livro",
   "plusNoticeFreeHeader": "Continua grátis, sempre",
+  "plusNoticeFreeLearning": "Revisão da semana, erros explicados e a evolução da sua leitura",
   "plusNoticeFreeScenes": "Uma trilha por vez, nos 3 modos — e as portas de entrada",
   "plusNoticeFreeSocial": "Caravana e companhia",
   "plusNoticeFreeSocialCaravan": "Caravana",
@@ -4920,6 +5489,33 @@
     }
   },
   "profileDaysPerWeek": "dias por semana",
+  "profileGroupSealsBody": "Ganhos nos fechamentos do seu grupo, nas semanas em que você fez tudo o que o líder marcou.",
+  "profileGrowthSteady": "Sua leitura está firme: {pct}% de acerto em {mode}.",
+  "@profileGrowthSteady": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "pct": {
+        "type": "int"
+      }
+    }
+  },
+  "profileGrowthUp": "Sua leitura cresceu: em {mode}, você acertava {from}% e agora acerta {to}%.",
+  "@profileGrowthUp": {
+    "placeholders": {
+      "mode": {
+        "type": "String"
+      },
+      "from": {
+        "type": "int"
+      },
+      "to": {
+        "type": "int"
+      }
+    }
+  },
+  "profileGrowthWaiting": "Continue caminhando: em algumas semanas, aqui aparece como a sua leitura cresceu.",
   "profileInTheWord": "Na Palavra",
   "profileInTheWordWhisper": "Versos que você guarda, anota e os que já saíram daqui.",
   "profileLampHelp": "Cada lamparina é uma semana: o azeite sobe a cada dia caminhado e a chama cresce.",
@@ -4990,7 +5586,8 @@
       }
     }
   },
-  "profilePlusTeaserTitle": "Seu Peregrino+",
+  "profilePlusGestureNudge": "Ponto forte, o que reforçar e o treino na medida são do Peregrino+.",
+  "profilePlusGestureNudgeCta": "Conhecer",
   "profilePrivacyHiddenSemantics": "{label} oculto da caravana",
   "@profilePrivacyHiddenSemantics": {
     "placeholders": {
@@ -5400,6 +5997,33 @@
   "recognitionWhoTitle": "Quem reconheceu",
   "recognitionYesterday": "Ontem",
   "recognitionYourScene": "Sua cena",
+  "referralBankedLine": "{count, plural, =1{1 mês de Plus guardado por convites} other{{count} meses de Plus guardados por convites}}",
+  "@referralBankedLine": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "referralInviteLine": "Se a pessoa assinar o Peregrino+, você ganha 1 mês de Plus.",
+  "referralRewardGranted": "{name} assinou o Peregrino+ pelo seu convite. Você ganhou 1 mês de Plus!",
+  "@referralRewardGranted": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "referralRewardGrantedAnon": "Alguém assinou o Peregrino+ pelo seu convite. Você ganhou 1 mês de Plus!",
+  "referralRewardKept": "{name} assinou o Peregrino+ pelo seu convite. Seu mês ganho fica guardado para quando o seu Plus acabar.",
+  "@referralRewardKept": {
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
+  "referralRewardKeptAnon": "Alguém assinou o Peregrino+ pelo seu convite. Seu mês ganho fica guardado para quando o seu Plus acabar.",
   "reinforceCta": "Reforçar {gesture}",
   "@reinforceCta": {
     "placeholders": {
@@ -5485,6 +6109,14 @@
   },
   "resetTitle": "Apagar progresso",
   "reviewSlotTaken": "A revisão de hoje já foi feita — esta fica para amanhã.",
+  "roomCloseWeek": "Fechar a semana e revelar",
+  "roomCloseWeekBusy": "Fechando…",
+  "roomCloseWeekConfirmBody": "Quem fez tudo até agora ganha o selo. Você pode fechar de novo antes de domingo se mais gente terminar.",
+  "roomCloseWeekConfirmTitle": "Fechar a semana agora?",
+  "roomCloseWeekFailed": "Não deu para fechar a semana. Tente de novo.",
+  "roomCloseWeekHint": "Faça na reunião: o grupo vê junto quem foi fiel na semana.",
+  "roomClosingBannerBody": "Veja como o grupo foi e quem ganhou o selo.",
+  "roomClosingBannerTitle": "A semana do grupo foi fechada",
   "roomErrorCreate": "Não foi possível criar o grupo. Tente de novo.",
   "roomErrorCreateFirst": "Crie o grupo antes de chamar alguém.",
   "roomErrorFull": "Este grupo já tem {limit} pessoas.",
@@ -5519,11 +6151,103 @@
   "roomLeaderDiscipulado": "Discipulador",
   "roomLeaderEbd": "Professor",
   "roomLeaderFamilia": "Responsável",
+  "roomLeaderWeekDays": "{count, plural, =1{1 dia} other{{count} dias}}",
+  "@roomLeaderWeekDays": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "roomLeaderWeekScene": "cena",
+  "roomLeaderWeekTitle": "Acompanhamento da semana",
   "roomNameHintAmigos": "Ex.: Amigos da facul",
   "roomNameHintCelula": "Ex.: Célula Norte",
   "roomNameHintDiscipulado": "Ex.: Discipulado de quinta",
   "roomNameHintEbd": "Ex.: EBD Jovens",
   "roomNameHintFamilia": "Ex.: Família Souza",
+  "roomReadingBook": "Livro",
+  "roomReadingChange": "Trocar",
+  "roomReadingDone": "Leitura feita nesta semana · toque para reler",
+  "roomReadingFrom": "Do capítulo",
+  "roomReadingLabel": "Leitura da semana",
+  "roomReadingOrOther": "Ou escolha outro texto",
+  "roomReadingPickBody": "Escolha capítulos da Bíblia para o grupo ler até a reunião.",
+  "roomReadingPickTitle": "Marcar a leitura da semana",
+  "roomReadingPickerSubtitle": "Até {max} capítulos de um livro.",
+  "@roomReadingPickerSubtitle": {
+    "placeholders": {
+      "max": {
+        "type": "int"
+      }
+    }
+  },
+  "roomReadingProgressTap": "{done} de {total} lidos nesta semana · toque para ler",
+  "@roomReadingProgressTap": {
+    "placeholders": {
+      "done": {
+        "type": "int"
+      },
+      "total": {
+        "type": "int"
+      }
+    }
+  },
+  "roomReadingSameAsStudy": "Mesmo texto do estudo",
+  "roomReadingSameAsStudyBody": "{reading} — a passagem de “{study}”. O grupo lê o capítulo e faz a cena.",
+  "@roomReadingSameAsStudyBody": {
+    "placeholders": {
+      "reading": {
+        "type": "String"
+      },
+      "study": {
+        "type": "String"
+      }
+    }
+  },
+  "roomReadingSave": "Marcar para o grupo",
+  "roomReadingSaved": "Leitura marcada para o grupo",
+  "roomReadingTo": "Até o capítulo",
+  "roomReadingTooFast": "Capítulo marcado. Para contar na leitura do grupo, leia com calma (uns {minutes} min) ou ouça o áudio, e conclua de novo.",
+  "@roomReadingTooFast": {
+    "placeholders": {
+      "minutes": {
+        "type": "int"
+      }
+    }
+  },
+  "roomRevealAgain": "Ver a revelação de novo",
+  "roomRevealConstantBody": "Esteve com a Palavra o maior número de dias.",
+  "roomRevealConstantTitle": "Mais constante",
+  "roomRevealDone": "Amém",
+  "roomRevealEyebrow": "Fechamento · {room}",
+  "@roomRevealEyebrow": {
+    "placeholders": {
+      "room": {
+        "type": "String"
+      }
+    }
+  },
+  "roomRevealFaithfulBody": "Fizeram tudo o que o líder marcou. Cada um ganha o selo.",
+  "roomRevealFaithfulNone": "Desta vez ninguém completou tudo. A próxima semana começa segunda.",
+  "roomRevealFaithfulTitle": "Fiéis na semana",
+  "roomRevealGiftCta": "Dar um passe de trilha a alguém",
+  "roomRevealGiftHint": "Seu passe do mês libera uma trilha do Peregrino+ inteira para quem você escolher.",
+  "roomRevealGiftPickBody": "Escolha a trilha. Depois envie o link para quem você quer premiar.",
+  "roomRevealGiftPickTitle": "Qual trilha?",
+  "roomRevealGroupPct": "do que o líder marcou, o grupo fez junto",
+  "roomRevealGrownBody": "Acertou mais nesta semana do que nas próprias semanas anteriores.",
+  "roomRevealGrownTitle": "Quem mais cresceu",
+  "roomRevealTitle": "A semana do grupo",
+  "roomRevealYourSeal": "Você ganhou o selo Fiel na semana. Ele fica ao lado do seu nome no grupo.",
+  "roomSealCount": "{count, plural, =1{1 selo Fiel na semana} other{{count} selos Fiel na semana}}",
+  "@roomSealCount": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
   "roomStudyFallbackTitle": "Estudo da semana",
   "sceneAddress": "{collection} › {trail} › Cena {number}",
   "@sceneAddress": {
@@ -6184,6 +6908,18 @@
   "supportThanksTitle": "Obrigado!",
   "supportTitle": "Apoiar o Stway",
   "supporterBadge": "Apoiador",
+  "takeawaysReviewLabel": "Para rever",
+  "takeawaysRow": "{count, plural, =1{Você encontrou 1 coisa no texto} other{Você encontrou {count} coisas no texto}}",
+  "@takeawaysRow": {
+    "placeholders": {
+      "count": {
+        "type": "int"
+      }
+    }
+  },
+  "takeawaysRowReviewOnly": "Veja o que rever no texto",
+  "takeawaysSubtitle": "Cada frase vem de uma pergunta que você respondeu. Toque para abrir o versículo.",
+  "takeawaysTitle": "O que você viu no texto",
   "tomorrowDayOf": "Dia {streak} de {goal}",
   "@tomorrowDayOf": {
     "placeholders": {
@@ -6334,22 +7070,22 @@
       }
     }
   },
-  "trailsDoorIntroBible": "A Bíblia inteira, livro a livro. O Antigo Testamento guarda a promessa; o Novo mostra o cumprimento em Jesus. Cada livro é uma trilha.",
+  "trailsDoorIntroBible": "A Bíblia inteira, livro a livro. O Antigo Testamento guarda a promessa; o Novo mostra o cumprimento em Jesus. No Panorama, os pontos altos de cada livro em poucas cenas.",
   "trailsDoorIntroHowItWorks": "Cada trilha é feita de etapas e cenas curtas. Ao terminar uma trilha, a seguinte se abre.",
   "trailsDoorIntroLabel": "Antes de começar",
   "trailsDoorIntroLife": "A fé no dia a dia. Discipulado, oração e a história da igreja: como seguir Jesus hoje, como orar e como a fé chegou até nós.",
   "trailsDoorIntroStudy": "Ferramentas para ler a Bíblia com mais cuidado: hermenêutica, hebraico e grego, doutrina e a pessoa de Cristo, sempre a partir do próprio texto.",
-  "trailsDoorIntroThemes": "A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.",
+  "trailsDoorIntroThemes": "A Bíblia lida por fios, não por livros: as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.",
   "trailsDownloading": "Baixando…",
   "trailsEmptyBody": "O currículo baixa na primeira abertura. Se a rede oscilar, toque para tentar de novo.",
   "trailsEmptyTitle": "As cenas ainda não chegaram",
   "trailsHorizonBody": "Novas trilhas estão sendo preparadas.",
   "trailsHorizonEyebrow": "No horizonte",
-  "trailsHubBibleBody": "Antigo e Novo Testamento.",
+  "trailsHubBibleBody": "Antigo e Novo Testamento, e o Panorama.",
   "trailsHubStudy": "Estudo",
   "trailsHubStudyBody": "Hermenêutica, línguas e doutrina.",
   "trailsHubThemes": "Temas",
-  "trailsHubThemesBody": "Sabedoria, panorama e os fios da Bíblia.",
+  "trailsHubThemesBody": "Sabedoria e os fios da Bíblia.",
   "trailsInProgress": "Em andamento",
   "trailsJourneySoonBody": "Estas trilhas ainda estão sendo preparadas.",
   "trailsLabeledScenesOf": "{total, plural, =1{{label} · {done} de 1 cena} other{{label} · {done} de {total} cenas}}",
@@ -6694,6 +7430,35 @@
     }
   },
   "waveCta": "Acenar",
+  "waveKindCheer": "Força, o grupo está com você",
+  "@waveKindCheer": {
+    "description": "Wave message: encouragement."
+  },
+  "waveKindMiss": "Sentimos sua falta",
+  "@waveKindMiss": {
+    "description": "Wave message: missing them."
+  },
+  "waveKindPlan": "Entra no propósito com a gente?",
+  "@waveKindPlan": {
+    "description": "Wave message: invite into the group plan."
+  },
+  "waveKindPray": "Estou orando por você",
+  "@waveKindPray": {
+    "description": "Wave message: prayer support."
+  },
+  "waveKindStudy": "Vem estudar com o grupo",
+  "@waveKindStudy": {
+    "description": "Wave message: default call to study."
+  },
+  "waveSheetSubtitle": "Escolha o recado. Chega como notificação para {name}.",
+  "@waveSheetSubtitle": {
+    "description": "Wave picker subtitle.",
+    "placeholders": {
+      "name": {
+        "type": "String"
+      }
+    }
+  },
   "webRedeemDone": "Peregrino+ ativado. A assinatura do site agora está na sua conta.",
   "webRedeemExpired": "O link venceu. Um novo foi enviado para {email}.",
   "@webRedeemExpired": {
@@ -6730,7 +7495,6 @@
   "weeklyReviewMissionIntro": "Três perguntas das cenas desta semana.",
   "weeklyReviewMissionTitle": "Revisão da semana",
   "weeklyReviewNoQuestions": "Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.",
-  "weeklyReviewPlusBody": "Com o Peregrino+, você revê o que cada cena ensinou e responde 3 perguntas.",
   "weeklyReviewPreparing": "Preparando…",
   "weeklyReviewRange": "{start} – {end}",
   "@weeklyReviewRange": {

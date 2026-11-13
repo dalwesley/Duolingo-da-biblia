@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Gênesis 7:17–22",
+    "passages": [
+      {
+        "ref": "Gênesis 7:17–22"
+      },
+      {
+        "ref": "Gênesis 7:23–24"
+      }
+    ],
+    "context": "O dilúvio sobe, a arca flutua, e tudo o que tem fôlego morre fora dela.",
+    "keyword": "dilúvio",
+    "keywordGloss": "Termo literal do trecho desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "As águas prevalecem",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Dilúvio perdurou terra quarenta dias águas.",
+        "evidenceRef": "Gênesis 7:17",
+        "evidenceSpan": "o dilúvio perdurou sobre a terra por quarenta"
+      },
+      {
+        "text": "Águas prevaleceram aumentando excessivamente terra arca.",
+        "evidenceRef": "Gênesis 7:18",
+        "evidenceSpan": "as águas prevaleceram aumentando excessivamente sobre a terra"
+      },
+      {
+        "text": "Águas subiram forma excessiva terra cobrindo.",
+        "evidenceRef": "Gênesis 7:19",
+        "evidenceSpan": "E as águas subiram de forma excessiva sobre"
+      },
+      {
+        "text": "Águas prevaleceram quinze côvados acima montes.",
+        "evidenceRef": "Gênesis 7:20",
+        "evidenceSpan": "As águas prevaleceram quinze côvados acima deles"
+      },
+      {
+        "text": "Pereceu toda criatura movia terra aves.",
+        "evidenceRef": "Gênesis 7:21",
+        "evidenceSpan": "E pereceu toda criatura que se movia sobre"
+      },
+      {
+        "text": "Tudo tinha fôlego vida narinas tudo.",
+        "evidenceRef": "Gênesis 7:22",
+        "evidenceSpan": "Tudo o que tinha fôlego de vida em"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "dilúvio",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "perdurou",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "terra",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Dilúvio perdurou terra quarenta dias",
+        "evidenceRef": "Gênesis 7:17"
+      },
+      {
+        "label": "Águas prevaleceram aumentando excessivamente terra",
+        "evidenceRef": "Gênesis 7:18"
+      },
+      {
+        "label": "Águas subiram forma excessiva terra",
+        "evidenceRef": "Gênesis 7:19"
+      },
+      {
+        "label": "Águas prevaleceram quinze côvados acima",
+        "evidenceRef": "Gênesis 7:20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 7:17"
+      },
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 7:21"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 6:9",
+        "bridge": "Noé andou com Deus"
+      },
+      {
+        "ref": "Gênesis 9:11",
+        "bridge": "Aliança após o dilúvio"
+      },
+      {
+        "ref": "Gênesis 3:15",
+        "bridge": "Promessa da semente"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "Só quem está na arca permanece; as águas cobrem até as montanhas."
+      }
+    ],
+    "centralInsight": "Só quem está na arca permanece; as águas cobrem até as montanhas.",
+    "anchorQuestion": "O que Gênesis 7:17 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 7:17, o dilúvio perdurou sobre a terra por quarenta.",
+      "verseRef": "Gênesis 7:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "o dilúvio perdurou sobre a terra por quarenta",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 7:17 afirma.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 7:17, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "dilúvio"
+        },
+        {
+          "id": "b",
+          "text": "perdurou"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dilúvio",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 7:19, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 7:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há águas subiram forma excessiva no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E as águas subiram",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 7:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 7:17 na ordem do texto.",
+      "verseRef": "Gênesis 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "E o dilúvio perdurou sobre a terra por quarenta dias"
+        },
+        {
+          "id": "b",
+          "text": "as águas cresceram"
+        },
+        {
+          "id": "c",
+          "text": "levantaram a arca e esta se elevou acima da superfície da terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E o dilúvio perdurou sobre a terra por quarenta dias",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 7:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "perdurou"
+        },
+        {
+          "id": "b",
+          "text": "dilúvio"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "perdurou",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 7:17 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 7:17",
+      "passageA": {
+        "ref": "Gênesis 7:17"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O dilúvio sobe, a arca flutua, e tudo o que tem fôlego morre fora dela."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 7:17, o marcador se une ideias no fluxo do texto.",
+      "verseRef": "Gênesis 7:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 7:17 afirma.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 7:17, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "dilúvio"
+        },
+        {
+          "id": "c",
+          "text": "perdurou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 7:20, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 7:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As águas prevaleceram quinze",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 7:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dilúvio perdurou terra quarenta dias"
+        },
+        {
+          "id": "b",
+          "text": "Águas prevaleceram aumentando excessivamente terra"
+        },
+        {
+          "id": "c",
+          "text": "Águas subiram forma excessiva terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 7:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 7:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "terra"
+        },
+        {
+          "id": "b",
+          "text": "dilúvio"
+        },
+        {
+          "id": "c",
+          "text": "perdurou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "terra",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 7:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 7:17 a Gênesis 6:9.",
+      "verseRef": "Gênesis 7:17",
+      "passageA": {
+        "ref": "Gênesis 7:17"
+      },
+      "passageB": {
+        "ref": "Gênesis 6:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Noé andou com Deus"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 7:17",
+        "Gênesis 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 7:24",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 7:24 afirma.",
+      "evidence": [
+        "Gênesis 7:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 7:21, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 7:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "pereceu"
+        },
+        {
+          "id": "b",
+          "text": "toda"
+        },
+        {
+          "id": "c",
+          "text": "criatura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pereceu",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 7:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 7:21, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 7:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E pereceu toda criatura",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 7:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 7:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 7:21, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 7:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "toda"
+        },
+        {
+          "id": "b",
+          "text": "dilúvio"
+        },
+        {
+          "id": "c",
+          "text": "perdurou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toda",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 7:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 7:17 a Gênesis 9:11.",
+      "verseRef": "Gênesis 7:17",
+      "passageA": {
+        "ref": "Gênesis 7:17"
+      },
+      "passageB": {
+        "ref": "Gênesis 9:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança após o dilúvio"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 7:17",
+        "Gênesis 9:11"
+      ]
+    }
+  ]
+}

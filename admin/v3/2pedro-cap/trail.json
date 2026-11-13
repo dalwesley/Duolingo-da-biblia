@@ -1,0 +1,78 @@
+{
+  "slug": "2pedro-cap",
+  "title": "2 Pedro",
+  "description": "2 Pedro capítulo a capítulo: crescimento na fé, alerta contra falsos e espera do dia.",
+  "icon": "🪨",
+  "color": "#00695C",
+  "order": 75,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Crescimento e alerta · cap. 1–3",
+      "icon": "zap",
+      "section": "2 Pedro",
+      "missions": [
+        {
+          "slug": "p2c-01-tudo-para-a-vida",
+          "title": "Tudo para a vida",
+          "subtitle": "2 Pedro 1:3–11",
+          "intro": "O poder divino deu tudo o que é necessário à vida e à piedade.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "2 Pedro 1:3–11",
+          "hookVerse": "Seu divino poder nos tem concedido tudo o que diz respeito à vida e à piedade, por meio do pleno conhecimento daquele que nos chamou para sua própria glória e excelência. Por meio delas, ele nos tem concedido suas preciosas e mui grandes promessas, para que, por elas, possamos ser coparticipantes da natureza divina, escapando da corrupção que há no mundo, resultante das paixões.",
+          "hookNote": "Acrecentai à fé virtude, conhecimento e amor: assim a entrada no reino será amplamente concedida.",
+          "centralInsight": "Acrecentai à fé virtude, conhecimento e amor: assim a entrada no reino será amplamente concedida.",
+          "objective": "Crescer na fé"
+        },
+        {
+          "slug": "p2c-02-falsos-mestres",
+          "title": "Falsos mestres",
+          "subtitle": "2 Pedro 2:1–9",
+          "intro": "Como houve falsos profetas, haverá falsos mestres que introduzem heresias.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "2 Pedro 2:1–9",
+          "hookVerse": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, heresias destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição. E muitos seguirão suas práticas libertinas, e, por causa deles, será infamado o caminho da verdade.",
+          "hookNote": "O Senhor sabe livrar os piedosos da tentação e reservar os injustos para o juízo.",
+          "centralInsight": "O Senhor sabe livrar os piedosos da tentação e reservar os injustos para o juízo.",
+          "objective": "Discernir e confiar"
+        },
+        {
+          "slug": "p2c-03-crescei-na-graca",
+          "title": "Crescei na graça",
+          "subtitle": "2 Pedro 3:14–18",
+          "intro": "Enquanto esperam o dia, Pedro pede diligência e crescimento até o fim.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "2 Pedro 3:14–18",
+          "hookVerse": "Por isso, amados, aguardando essas coisas, empenhem-se para ser encontrados por ele em paz, sem mácula e irrepreensíveis. E considerem a longanimidade de nosso Senhor como uma oportunidade de salvação, assim como também o nosso amado irmão Paulo lhes escreveu, segundo a sabedoria que lhe foi concedida.",
+          "hookNote": "Esforçai-vos por ser achados sem mácula; crescei na graça e no conhecimento de Cristo.",
+          "centralInsight": "Esforçai-vos por ser achados sem mácula; crescei na graça e no conhecimento de Cristo.",
+          "objective": "Crescer até o fim"
+        },
+        {
+          "slug": "p2c-boss-1",
+          "title": "Travessia: Crescimento e alerta",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o crescimento, o alerta contra falsos e a espera diligente.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Crescimento e alerta",
+          "hookVerse": "Revise o crescimento, o alerta contra falsos e a espera diligente.",
+          "hookNote": "Revise o crescimento, o alerta contra falsos e a espera diligente.",
+          "centralInsight": "Cresçam na graça e fiquem firmes até o dia do Senhor",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

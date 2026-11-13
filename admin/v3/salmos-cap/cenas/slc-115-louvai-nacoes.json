@@ -1,0 +1,894 @@
+{
+  "study": {
+    "slug": "slc-115-louvai-nacoes",
+    "passageRef": "Salmos 117:1–2",
+    "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios. Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+    "passages": [
+      {
+        "ref": "Salmos 117:1–2",
+        "text": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios. Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor."
+      }
+    ],
+    "context": "Louvai ao Senhor, todas as nações; a sua misericórdia é grande, e a verdade dura para sempre.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Louvai, nações",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Louvai ao Senhor.",
+        "evidenceRef": "Salmos 117:1",
+        "evidenceSpan": "Louvai ao Senhor"
+      },
+      {
+        "text": "Porque a sua misericórdia é imensa para conosco.",
+        "evidenceRef": "Salmos 117:2",
+        "evidenceSpan": "Porque a sua misericórdia é imensa para conosco"
+      },
+      {
+        "text": "Louvai ao Senhor.",
+        "evidenceRef": "Salmos 117:1",
+        "evidenceSpan": "Louvai ao Senhor"
+      },
+      {
+        "text": "Porque a sua misericórdia é imensa para conosco.",
+        "evidenceRef": "Salmos 117:2",
+        "evidenceSpan": "Porque a sua misericórdia é imensa para conosco"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Louvai",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "todas",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Louvai ao senhor vós todas as",
+        "evidenceRef": "Salmos 117:1"
+      },
+      {
+        "label": "Porque a sua misericórdia é imensa",
+        "evidenceRef": "Salmos 117:2"
+      },
+      {
+        "label": "Louvai ao Senhor, vós todas as nações; louvai-o,…",
+        "evidenceRef": "Salmos 117:1"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Porque\".",
+        "marker": "Porque",
+        "evidenceRef": "Salmos 117:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O salmo avança na oração e no argumento.",
+        "marker": null,
+        "evidenceRef": "Salmos 117:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças",
+        "text": "Mas os que esperam no Senhor renovam suas forças; sobem com asas como águias; correm e não se cansam; caminham e não se fatigam."
+      },
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Lançar o cuidado",
+        "text": "Lancem sobre ele toda a sua preocupação porque ele se importa com vocês."
+      },
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças",
+        "text": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "O salmo mais curto chama o mundo inteiro ao louvor."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "O salmo mais curto chama o mundo inteiro ao louvor.",
+    "anchorQuestion": "O que Salmos 117:1 destaca neste salmo?",
+    "relatedVerses": [
+      {
+        "reference": "Isaías 40:31",
+        "reason": "Renovam as forças"
+      },
+      {
+        "reference": "1 Pedro 5:7",
+        "reason": "Lançar o cuidado"
+      },
+      {
+        "reference": "Filipenses 4:6",
+        "reason": "Oração com ações de graças"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "salmos-cap-sem-slc-115-louvai-nacoes-01",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Segundo Salmos 117:1, louvai ao Senhor.",
+      "prompt": "Segundo Salmos 117:1, louvai ao Senhor.",
+      "cue": "Segundo Salmos 117:1, louvai ao Senhor.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Louvai ao Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 117:1 afirma.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-sem-slc-115-louvai-nacoes-02",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Salmos 117:1, toque quem ou o quê o versículo destaca.",
+      "prompt": "Em Salmos 117:1, toque quem ou o quê o versículo destaca.",
+      "cue": "Em Salmos 117:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvai"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "vós"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "O versículo destaca «Louvai».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-sem-slc-115-louvai-nacoes-03",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Salmos 117:2, o que o texto apresenta com clareza.",
+      "prompt": "Segundo Salmos 117:2, o que o texto apresenta com clareza.",
+      "cue": "Segundo Salmos 117:2, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque a sua misericórdia é imensa para conosco"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Porque a sua misericórdia é imensa para conosco",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-sem-slc-115-louvai-nacoes-04",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Salmos 117:1 na ordem do texto.",
+      "prompt": "Monte Salmos 117:1 na ordem do texto.",
+      "cue": "Monte Salmos 117:1 na ordem do texto.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvai"
+        },
+        {
+          "id": "b",
+          "text": "ao"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-sem-slc-115-louvai-nacoes-05",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Salmos 117:2, complete a palavra que o texto usa com peso.",
+      "prompt": "Em Salmos 117:2, complete a palavra que o texto usa com peso.",
+      "cue": "Em Salmos 117:2, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "template": "Porque a sua ___ é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Louvai"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "misericórdia",
+      "feedbackCorrect": "A palavra do versículo é «misericórdia».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-sem-slc-115-louvai-nacoes-06",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Salmos 117:1 comunica que se liga a este contexto.",
+      "prompt": "O que Salmos 117:1 comunica que se liga a este contexto.",
+      "cue": "O que Salmos 117:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "passageA": {
+        "ref": "Salmos 117:1",
+        "text": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Louvai ao Senhor, todas as nações; a sua misericórdia é grande, e a verdade dura para sempre."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-cam-slc-115-louvai-nacoes-01",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Salmos 117:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "prompt": "Em Salmos 117:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "cue": "Em Salmos 117:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 117:2 afirma.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-cam-slc-115-louvai-nacoes-02",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Salmos 117:2, toque a palavra que marca a relação no texto.",
+      "prompt": "Em Salmos 117:2, toque a palavra que marca a relação no texto.",
+      "cue": "Em Salmos 117:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "sua"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O versículo destaca «Porque».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-cam-slc-115-louvai-nacoes-03",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Segundo Salmos 117:2, o que o texto apresenta com clareza (cam).",
+      "prompt": "Segundo Salmos 117:2, o que o texto apresenta com clareza (cam).",
+      "cue": "Segundo Salmos 117:2, o que o texto apresenta com clareza (cam).",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Porque a sua misericórdia é imensa para conosco",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-cam-slc-115-louvai-nacoes-04",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "prompt": "O texto mostra avança o movimento deste salmo.",
+      "cue": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvai ao senhor vós todas"
+        },
+        {
+          "id": "b",
+          "text": "Porque a sua misericórdia é imensa"
+        },
+        {
+          "id": "c",
+          "text": "Louvai ao Senhor vós todas as nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-cam-slc-115-louvai-nacoes-05",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Salmos 117:1, complete a palavra que o texto usa com peso.",
+      "prompt": "Em Salmos 117:1, complete a palavra que o texto usa com peso.",
+      "cue": "Em Salmos 117:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "template": "Louvai ao ___, vós todas as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Louvai"
+        },
+        {
+          "id": "c",
+          "text": "vós"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-cam-slc-115-louvai-nacoes-06",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Salmos 117:1 a Isaías 40:31.",
+      "prompt": "O que liga Salmos 117:1 a Isaías 40:31.",
+      "cue": "O que liga Salmos 117:1 a Isaías 40:31.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "passageA": {
+        "ref": "Salmos 117:1",
+        "text": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios."
+      },
+      "passageB": {
+        "ref": "Isaías 40:31",
+        "text": "Mas os que esperam no Senhor renovam suas forças; sobem com asas como águias; correm e não se cansam; caminham e não se fatigam."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Renovam as forças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-pro-slc-115-louvai-nacoes-01",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "prompt": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "cue": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 117:2 afirma.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-pro-slc-115-louvai-nacoes-02",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Salmos 117:2, toque o trecho que sustenta a leitura do salmo.",
+      "prompt": "Em Salmos 117:2, toque o trecho que sustenta a leitura do salmo.",
+      "cue": "Em Salmos 117:2, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua"
+        },
+        {
+          "id": "b",
+          "text": "Porque"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "sua",
+      "feedbackCorrect": "O versículo destaca «sua».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-pro-slc-115-louvai-nacoes-03",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Segundo Salmos 117:2, o que o texto apresenta com clareza (pro).",
+      "prompt": "Segundo Salmos 117:2, o que o texto apresenta com clareza (pro).",
+      "cue": "Segundo Salmos 117:2, o que o texto apresenta com clareza (pro).",
+      "verseRef": "Salmos 117:2",
+      "passageText": "Porque a sua misericórdia é imensa para conosco, e a fidelidade do Senhor perdura para sempre. Louvem ao Senhor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Porque a sua misericórdia é imensa para conosco",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 117:2"
+      ]
+    },
+    {
+      "id": "salmos-cap-pro-slc-115-louvai-nacoes-04",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "prompt": "Qual sequência mostra a lógica do salmo.",
+      "cue": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-pro-slc-115-louvai-nacoes-05",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Salmos 117:1, complete a palavra que o texto usa com peso (pro).",
+      "prompt": "Em Salmos 117:1, complete a palavra que o texto usa com peso (pro).",
+      "cue": "Em Salmos 117:1, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "template": "Louvai ao Senhor, vós ___ as nações; louvai-o, todos os gentios.",
+      "options": [
+        {
+          "id": "a",
+          "text": "todas"
+        },
+        {
+          "id": "b",
+          "text": "Louvai"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "todas",
+      "feedbackCorrect": "A palavra do versículo é «todas».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    },
+    {
+      "id": "salmos-cap-pro-slc-115-louvai-nacoes-06",
+      "trail": "salmos-cap",
+      "section": "slc-115-louvai-nacoes",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Salmos 117:1 a 1 Pedro 5:7.",
+      "prompt": "O que liga Salmos 117:1 a 1 Pedro 5:7.",
+      "cue": "O que liga Salmos 117:1 a 1 Pedro 5:7.",
+      "verseRef": "Salmos 117:1",
+      "passageText": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios.",
+      "passageA": {
+        "ref": "Salmos 117:1",
+        "text": "Louvai ao Senhor, vós todas as nações; louvai-o, todos os gentios."
+      },
+      "passageB": {
+        "ref": "1 Pedro 5:7",
+        "text": "Lancem sobre ele toda a sua preocupação porque ele se importa com vocês."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lançar o cuidado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Louvai",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 117:1"
+      ]
+    }
+  ]
+}

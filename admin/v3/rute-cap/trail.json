@@ -1,0 +1,92 @@
+{
+  "slug": "rute-cap",
+  "title": "Rute",
+  "description": "Rute capítulo a capítulo: lealdade, campo de Boaz e redenção na porta da cidade.",
+  "icon": "🌾",
+  "color": "#E8922A",
+  "order": 12,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Lealdade e redenção · cap. 1–4",
+      "icon": "zap",
+      "section": "Rute",
+      "missions": [
+        {
+          "slug": "rtc-01-volta-de-moabe",
+          "title": "Volta de Moabe",
+          "subtitle": "Rute 1:6–15",
+          "intro": "Noemi ouve que o Senhor deu alimento e parte de Moabe com as noras; no caminho, insiste que voltem.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Rute 1:6–15",
+          "hookVerse": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento. Então, ela saiu do lugar onde estava, acompanhada por suas duas noras, e, enquanto caminhavam de volta para a terra de Judá,",
+          "hookNote": "Orfa beija e parte; Rute se apega a Noemi quando o caminho parece sem futuro.",
+          "centralInsight": "Orfa beija e parte; Rute se apega a Noemi quando o caminho parece sem futuro.",
+          "objective": "Apegar-se com lealdade"
+        },
+        {
+          "slug": "rtc-02-favor-no-campo",
+          "title": "Favor no campo",
+          "subtitle": "Rute 2:13–20",
+          "intro": "Rute agradece o favor de Boaz; à noite conta a Noemi e fica sabendo quem ele é.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Rute 2:13–20",
+          "hookVerse": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas. E, já sendo hora de comer, Boaz lhe disse: Achega-te para aqui, e come do pão e molha o teu bocado no vinagre. Ela se assentou ao lado dos segadores, e ele lhe deu grãos tostados de cereais; ela comeu, se fartou e ainda lhe sobejou.",
+          "hookNote": "Boaz acolhe a estrangeira; Noemi vê a mão do Senhor: ele é parente resgatador.",
+          "centralInsight": "Boaz acolhe a estrangeira; Noemi vê a mão do Senhor: ele é parente resgatador.",
+          "objective": "Reconhecer o favor do Senhor"
+        },
+        {
+          "slug": "rtc-03-noite-na-eira",
+          "title": "Noite na eira",
+          "subtitle": "Rute 3:1–8",
+          "intro": "Noemi orienta Rute a se lavar, ir à eira e deitar aos pés de Boaz depois da ceia.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Rute 3:1–8",
+          "hookVerse": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz? Não é Boaz, com quem você esteve entre as servas, um dos nossos parentes? Esta noite, ele estará limpando a cevada na eira.",
+          "hookNote": "Rute obedece o plano da sogra; à meia-noite Boaz se sobressalta e a encontra ali.",
+          "centralInsight": "Rute obedece o plano da sogra; à meia-noite Boaz se sobressalta e a encontra ali.",
+          "objective": "Confiar e agir com pureza"
+        },
+        {
+          "slug": "rtc-04-na-porta-da-cidade",
+          "title": "Na porta da cidade",
+          "subtitle": "Rute 4:1–12",
+          "intro": "Boaz reúne os anciãos e o outro parente; quem tem direito primeiro recusa a redenção.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Rute 4:1–12",
+          "hookVerse": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se. Então, Boaz chamou dez homens dos anciãos da cidade e disse: “Sentem-se aqui.” E eles se assentaram.",
+          "hookNote": "Boaz resgata a terra e Rute diante das testemunhas: a linhagem de Noemi não se apaga.",
+          "centralInsight": "Boaz resgata a terra e Rute diante das testemunhas: a linhagem de Noemi não se apaga.",
+          "objective": "Resgatar com fidelidade"
+        },
+        {
+          "slug": "rtc-boss-1",
+          "title": "Travessia: Lealdade e redenção",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a volta de Moabe, o favor no campo, a eira e a redenção na porta.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Lealdade e redenção",
+          "hookVerse": "Revise a volta de Moabe, o favor no campo, a eira e a redenção na porta.",
+          "hookNote": "Revise a volta de Moabe, o favor no campo, a eira e a redenção na porta.",
+          "centralInsight": "Lealdade e redenção restauram a casa sob o olhar do Senhor",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

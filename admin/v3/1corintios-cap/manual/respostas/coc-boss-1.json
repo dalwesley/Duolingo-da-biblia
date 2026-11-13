@@ -1,0 +1,622 @@
+{
+  "study": {
+    "passageRef": "1 Coríntios 1:22–27",
+    "passages": [
+      { "ref": "1 Coríntios 1:22–27" },
+      { "ref": "1 Coríntios 2:1–5" },
+      { "ref": "1 Coríntios 3:5–11" },
+      { "ref": "1 Coríntios 4:1–7" }
+    ],
+    "context": "Esta Travessia revisa a etapa Cruz e sabedoria: Cristo crucificado, pregação sem ostentação, Deus que dá o crescimento e despenseiros fiéis.",
+    "keyword": "cruz",
+    "keywordGloss": "O centro que une a igreja: Cristo crucificado, não nomes humanos nem sabedoria deste século.",
+    "focusQuestion": "O que ainda disputa com a cruz o centro da sua confiança?",
+    "reflectionPrompts": [
+      "Cruz no centro",
+      "Fé no poder de Deus",
+      "Fundamento e fidelidade"
+    ],
+    "facts": [
+      {
+        "text": "Paulo e os seus pregam Cristo crucificado.",
+        "evidenceRef": "1 Coríntios 1:23",
+        "evidenceSpan": "Mas nós pregamos a Cristo crucificado"
+      },
+      {
+        "text": "Paulo decidiu saber só de Jesus Cristo crucificado.",
+        "evidenceRef": "1 Coríntios 2:2",
+        "evidenceSpan": "senão de Jesus Cristo, e este crucificado"
+      },
+      {
+        "text": "Paulo plantou, Apolo regou, Deus deu o crescimento.",
+        "evidenceRef": "1 Coríntios 3:6",
+        "evidenceSpan": "Eu plantei, Apolo regou; mas foi Deus quem deu o crescimento"
+      },
+      {
+        "text": "O fundamento já estabelecido é Jesus Cristo.",
+        "evidenceRef": "1 Coríntios 3:11",
+        "evidenceSpan": "que é Jesus Cristo"
+      },
+      {
+        "text": "O que se exige dos despenseiros é serem encontrados fiéis.",
+        "evidenceRef": "1 Coríntios 4:2",
+        "evidenceSpan": "seja encontrado fiel"
+      },
+      {
+        "text": "Quem se gloria deve gloriar-se no Senhor.",
+        "evidenceRef": "1 Coríntios 1:31",
+        "evidenceSpan": "Aquele que se gloria, glorie-se no Senhor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "crucificado",
+        "gloss": "O conteúdo da pregação e o centro da fé."
+      },
+      {
+        "term": "fundamento",
+        "gloss": "Jesus Cristo: base única da edificação."
+      },
+      {
+        "term": "fiel",
+        "gloss": "O critério do despenseiro dos mistérios de Deus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A pregação aponta Cristo crucificado",
+        "evidenceRef": "1 Coríntios 1:23–24"
+      },
+      {
+        "label": "A fé se apoia no poder de Deus",
+        "evidenceRef": "1 Coríntios 2:4–5"
+      },
+      {
+        "label": "Só Deus dá o crescimento",
+        "evidenceRef": "1 Coríntios 3:6–7"
+      },
+      {
+        "label": "O despenseiro é medido pela fidelidade",
+        "evidenceRef": "1 Coríntios 4:1–2"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Pedem-se sinais e sabedoria, mas a pregação é Cristo crucificado.",
+        "marker": "Mas",
+        "evidenceRef": "1 Coríntios 1:23"
+      },
+      {
+        "kind": "propósito",
+        "text": "A pregação sem persuasão humana existe para que a fé se sustente no poder de Deus.",
+        "marker": "Para que",
+        "evidenceRef": "1 Coríntios 2:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Servos plantam e regam, mas Deus dá o crescimento.",
+        "marker": "mas",
+        "evidenceRef": "1 Coríntios 3:6"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Gálatas 6:14", "bridge": "Gloriar-se só na cruz" },
+      { "ref": "Romanos 1:16", "bridge": "Evangelho é poder de Deus" },
+      { "ref": "Efésios 2:20", "bridge": "Cristo como pedra angular" }
+    ],
+    "misreadings": [
+      {
+        "text": "A igreja se une em torno do líder mais sábio ou eloquente.",
+        "why": "A etapa coloca a cruz, o poder de Deus e o fundamento Cristo acima dos nomes."
+      },
+      {
+        "text": "Plantador e regador são o centro do crescimento da igreja.",
+        "why": "Nem quem planta nem quem rega é algo; Deus concede o crescimento."
+      },
+      {
+        "text": "Consciência limpa e aplauso humano já justificam o ministro.",
+        "why": "Quem julga é o Senhor; o despenseiro é medido pela fidelidade."
+      }
+    ],
+    "centralInsight": "A igreja se une na cruz, não em nomes humanos",
+    "anchorQuestion": "Quem 1 Coríntios 3:11 diz que é o fundamento já estabelecido?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 1:23, a pregação apresentada é a Cristo crucificado.",
+      "verseRef": "1 Coríntios 1:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "Mas nós pregamos a Cristo crucificado",
+      "feedbackCorrect": "O texto afirma: nós pregamos a Cristo crucificado.",
+      "feedbackWrong": {
+        "false": "Releia o começo do versículo sobre o conteúdo da pregação."
+      },
+      "hint": "Olhe o objeto do verbo pregamos.",
+      "learningObjective": "Relembrar o conteúdo da pregação na etapa.",
+      "evidence": ["1 Coríntios 1:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 3:6, toque quem deu o crescimento.",
+      "verseRef": "1 Coríntios 3:6",
+      "options": [
+        { "id": "a", "text": "Deus" },
+        { "id": "b", "text": "Apolo" },
+        { "id": "c", "text": "Eu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas foi Deus quem deu o crescimento",
+      "feedbackCorrect": "Paulo planta, Apolo rega, Deus dá o crescimento.",
+      "feedbackWrong": {
+        "b": "Apolo regou; não deu o crescimento.",
+        "c": "Eu plantei; o crescimento é de Deus."
+      },
+      "hint": "Veja o sujeito depois de mas foi.",
+      "learningObjective": "Identificar quem dá o crescimento.",
+      "evidence": ["1 Coríntios 3:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Coríntios 4:2, o que se exige dos despenseiros?",
+      "verseRef": "1 Coríntios 4:2",
+      "options": [
+        { "id": "a", "text": "Ser encontrado fiel" },
+        { "id": "b", "text": "Ser o mais eloquente" },
+        { "id": "c", "text": "Julgar antes do tempo" },
+        { "id": "d", "text": "Gloriar-se no recebido" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seja encontrado fiel",
+      "feedbackCorrect": "A exigência explícita é fidelidade.",
+      "feedbackWrong": {
+        "b": "Eloquência não é o critério do versículo.",
+        "c": "O texto depois pede para não julgar antes do tempo.",
+        "d": "A jactância pelo recebido é questionada no v.7."
+      },
+      "hint": "Veja o adjetivo depois de encontrado.",
+      "learningObjective": "Relembrar a exigência de fidelidade.",
+      "evidence": ["1 Coríntios 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 2:5 na ordem do texto.",
+      "verseRef": "1 Coríntios 2:5",
+      "options": [
+        { "id": "a", "text": "Para que a sua fé não se sustentasse" },
+        { "id": "b", "text": "na sabedoria humana" },
+        { "id": "c", "text": "mas no poder de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "mas no poder de Deus",
+      "feedbackCorrect": "Propósito, base rejeitada e base certa nessa ordem.",
+      "feedbackWrong": {
+        "default": "Comece com Para que; o poder de Deus fecha."
+      },
+      "hint": "O versículo abre com Para que.",
+      "learningObjective": "Relembrar a ordem do propósito da fé.",
+      "evidence": ["1 Coríntios 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Coríntios 3:11, complete: o fundamento já estabelecido é Jesus ___.",
+      "verseRef": "1 Coríntios 3:11",
+      "options": [
+        { "id": "a", "text": "Cristo" },
+        { "id": "b", "text": "Apolo" },
+        { "id": "c", "text": "Paulo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Jesus Cristo",
+      "feedbackCorrect": "O fundamento é Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "Apolo é servo, não o fundamento.",
+        "c": "Paulo lançou o fundamento; o fundamento é Cristo."
+      },
+      "hint": "Veja o título depois de Jesus.",
+      "learningObjective": "Lembrar o nome do fundamento.",
+      "evidence": ["1 Coríntios 3:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Coríntios 1:31 comunica que se liga a este contexto?",
+      "verseRef": "1 Coríntios 1:31",
+      "passageA": { "ref": "1 Coríntios 1:31" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A etapa corta a glória em líderes e sabedoria humana e aponta a cruz."
+      },
+      "options": [
+        { "id": "a", "text": "Gloriar-se no Senhor" },
+        { "id": "b", "text": "Gloriar-se em Apolo" },
+        { "id": "c", "text": "Gloriar-se na retórica" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "glorie-se no Senhor",
+      "feedbackCorrect": "A citação fecha a etapa: a glória fica no Senhor.",
+      "feedbackWrong": {
+        "b": "Apolo é servo, não o alvo da glória.",
+        "c": "Retórica é o que a pregação evita."
+      },
+      "hint": "Veja em quem a citação manda gloriar-se.",
+      "learningObjective": "Ligar o contexto da etapa à glória no Senhor.",
+      "evidence": ["1 Coríntios 1:31"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 2:2, toque o que completa Jesus Cristo na decisão de Paulo.",
+      "verseRef": "1 Coríntios 2:2",
+      "options": [
+        { "id": "a", "text": "crucificado" },
+        { "id": "b", "text": "vocês" },
+        { "id": "c", "text": "nada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus Cristo, e este crucificado",
+      "feedbackCorrect": "A decisão é saber de Jesus Cristo, e este crucificado.",
+      "feedbackWrong": {
+        "b": "Vocês é o público; o complemento de Cristo é crucificado.",
+        "c": "Nada é o que ele evita saber além de Cristo."
+      },
+      "hint": "Veja a palavra depois de este.",
+      "learningObjective": "Identificar o Cristo crucificado na decisão de Paulo.",
+      "evidence": ["1 Coríntios 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 1:22 na ordem do texto.",
+      "verseRef": "1 Coríntios 1:22",
+      "options": [
+        { "id": "a", "text": "Os judeus solicitam sinais" },
+        { "id": "b", "text": "assim como os gregos" },
+        { "id": "c", "text": "procuram sabedoria" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Os judeus solicitam sinais, assim como os gregos procuram sabedoria",
+      "feedbackCorrect": "Sinais dos judeus e sabedoria dos gregos nessa ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelos judeus; a sabedoria fecha o versículo."
+      },
+      "hint": "Quem solicita aparece primeiro.",
+      "learningObjective": "Relembrar o pedido de judeus e gregos.",
+      "evidence": ["1 Coríntios 1:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 2:5, a pregação sem persuasão humana serve para firmar a fé na sabedoria humana.",
+      "verseRef": "1 Coríntios 2:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "não se sustentasse na sabedoria humana, mas no poder de Deus",
+      "feedbackCorrect": "O propósito é fé no poder de Deus, não na sabedoria humana.",
+      "feedbackWrong": {
+        "true": "O texto diz para que a fé não se sustente na sabedoria humana."
+      },
+      "hint": "Leia o contraste com mas.",
+      "learningObjective": "Ver o propósito da pregação na etapa.",
+      "evidence": ["1 Coríntios 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 1:23, toque a palavra que marca o contraste com os pedidos de sinais e sabedoria.",
+      "verseRef": "1 Coríntios 1:22–23",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "sinais" },
+        { "id": "c", "text": "sabedoria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas nós pregamos a Cristo crucificado",
+      "feedbackCorrect": "Mas introduz a resposta da pregação.",
+      "feedbackWrong": {
+        "b": "Sinais é o pedido dos judeus.",
+        "c": "Sabedoria é o que os gregos procuram."
+      },
+      "hint": "Procure a conjunção que abre a resposta.",
+      "learningObjective": "Tocar o marcador de contraste da pregação.",
+      "evidence": ["1 Coríntios 1:22–23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação 1 Coríntios 3:6–7 estabelece entre servos e crescimento?",
+      "verseRef": "1 Coríntios 3:6–7",
+      "options": [
+        { "id": "a", "text": "Servos trabalham, mas só Deus concede o crescimento" },
+        { "id": "b", "text": "O plantador é a fonte do crescimento" },
+        { "id": "c", "text": "O regador substitui Deus" },
+        { "id": "d", "text": "Servos e Deus têm o mesmo papel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem quem planta nem quem rega é algo, mas sim Deus",
+      "feedbackCorrect": "O contraste reserva o crescimento a Deus.",
+      "feedbackWrong": {
+        "b": "Quem planta não é algo diante do crescimento.",
+        "c": "Quem rega também não concede o crescimento.",
+        "d": "O texto distingue servos e Deus."
+      },
+      "hint": "Leia o mas e o assim.",
+      "learningObjective": "Relacionar o trabalho dos servos ao crescimento de Deus.",
+      "evidence": ["1 Coríntios 3:6–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da etapa Cruz e sabedoria.",
+      "verseRef": "1 Coríntios 1:23",
+      "options": [
+        { "id": "a", "text": "A pregação aponta Cristo crucificado" },
+        { "id": "b", "text": "A fé se apoia no poder de Deus" },
+        { "id": "c", "text": "Só Deus dá o crescimento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Mas nós pregamos a Cristo crucificado",
+      "feedbackCorrect": "Cruz, fé no poder e crescimento de Deus nessa linha.",
+      "feedbackWrong": {
+        "default": "Comece pela pregação da cruz."
+      },
+      "hint": "Pense na ordem das cenas da etapa.",
+      "learningObjective": "Ordenar os movimentos revisados na Travessia.",
+      "evidence": ["1 Coríntios 1:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Coríntios 2:5, complete a marca do propósito: ___ que a sua fé não se sustentasse na sabedoria humana.",
+      "verseRef": "1 Coríntios 2:5",
+      "options": [
+        { "id": "a", "text": "Para" },
+        { "id": "b", "text": "Quando" },
+        { "id": "c", "text": "Embora" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que a sua fé não se sustentasse na sabedoria humana",
+      "feedbackCorrect": "Para que introduz o propósito da pregação.",
+      "feedbackWrong": {
+        "b": "Quando não abre o versículo.",
+        "c": "Embora não está no texto."
+      },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Lembrar a marca do propósito da fé.",
+      "evidence": ["1 Coríntios 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 2:5 a Romanos 1:16?",
+      "verseRef": "1 Coríntios 2:5",
+      "passageA": { "ref": "1 Coríntios 2:5" },
+      "passageB": { "ref": "Romanos 1:16" },
+      "options": [
+        { "id": "a", "text": "Poder de Deus no evangelho" },
+        { "id": "b", "text": "Fidelidade do despenseiro" },
+        { "id": "c", "text": "Partidos em torno de Apolo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas no poder de Deus",
+      "feedbackCorrect": "Nos dois textos, a confiança está no poder de Deus.",
+      "feedbackWrong": {
+        "b": "Fidelidade é tema de 1 Coríntios 4, não de Romanos 1:16.",
+        "c": "Partidos são o problema local, não a ponte."
+      },
+      "hint": "Compare a palavra poder.",
+      "learningObjective": "Ligar a fé no poder ao evangelho como poder.",
+      "evidence": ["1 Coríntios 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 4:4, toque a expressão que marca o contraste com a consciência limpa.",
+      "verseRef": "1 Coríntios 4:4",
+      "options": [
+        { "id": "a", "text": "no entanto" },
+        { "id": "b", "text": "culpado" },
+        { "id": "c", "text": "Porque" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no entanto, isso não me torna justificado",
+      "feedbackCorrect": "No entanto vira o argumento para o juízo do Senhor.",
+      "feedbackWrong": {
+        "b": "Culpado descreve o sentimento, não o contraste.",
+        "c": "Porque abre a frase; o contraste está em no entanto."
+      },
+      "hint": "Procure a expressão no meio do versículo.",
+      "learningObjective": "Tocar o marcador de contraste do juízo.",
+      "evidence": ["1 Coríntios 4:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o fio da fidelidade e do juízo.",
+      "verseRef": "1 Coríntios 4:1–2",
+      "options": [
+        { "id": "a", "text": "O despenseiro é medido pela fidelidade" },
+        { "id": "b", "text": "Tribunal humano tem pouco valor" },
+        { "id": "c", "text": "O Senhor trará à luz o oculto" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "seja encontrado fiel",
+      "feedbackCorrect": "Fidelidade, relativização do juízo humano e vinda do Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pela exigência de fidelidade."
+      },
+      "hint": "Siga de 4:2 até 4:5.",
+      "learningObjective": "Ordenar fidelidade e juízo na etapa.",
+      "evidence": ["1 Coríntios 4:1–2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo 1 Coríntios 1:23–24, Cristo crucificado é poder e sabedoria de Deus para os chamados.",
+      "verseRef": "1 Coríntios 1:23–24",
+      "correctOptionId": "true",
+      "evidenceSpan": "pregamos a Cristo, poder de Deus e sabedoria de Deus",
+      "feedbackCorrect": "Para os chamados, a pregação apresenta Cristo como poder e sabedoria de Deus.",
+      "feedbackWrong": {
+        "false": "O versículo 24 chama Cristo de poder de Deus e sabedoria de Deus."
+      },
+      "hint": "Veja como o texto nomeia Cristo para os chamados.",
+      "learningObjective": "Sustentar a leitura da cruz como poder e sabedoria.",
+      "evidence": ["1 Coríntios 1:23–24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 3:11, toque o trecho que sustenta o fundamento único.",
+      "verseRef": "1 Coríntios 3:11",
+      "options": [
+        { "id": "a", "text": "Jesus Cristo" },
+        { "id": "b", "text": "outro fundamento" },
+        { "id": "c", "text": "ninguém pode" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Jesus Cristo",
+      "feedbackCorrect": "O fundamento estabelecido é Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "Outro fundamento é o que ninguém pode estabelecer.",
+        "c": "Ninguém pode introduz a proibição."
+      },
+      "hint": "Veja a identificação no fim do versículo.",
+      "learningObjective": "Tocar o trecho que nomeia o fundamento.",
+      "evidence": ["1 Coríntios 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura a Travessia sustenta melhor?",
+      "verseRef": "1 Coríntios 1:29–31",
+      "options": [
+        { "id": "a", "text": "A glória fica no Senhor, não em nomes humanos" },
+        { "id": "b", "text": "A sabedoria humana é o fundamento da fé" },
+        { "id": "c", "text": "O crescimento depende do líder mais forte" },
+        { "id": "d", "text": "O despenseiro se justifica pela fama" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que se gloria, glorie-se no Senhor",
+      "feedbackCorrect": "A etapa corta a jactância e aponta a glória ao Senhor.",
+      "feedbackWrong": {
+        "b": "A fé se sustenta no poder de Deus.",
+        "c": "Só Deus dá o crescimento.",
+        "d": "O critério do despenseiro é fidelidade."
+      },
+      "hint": "Una cruz, crescimento e juízo ao fim de 1:31.",
+      "learningObjective": "Escolher a interpretação unificadora da etapa.",
+      "evidence": ["1 Coríntios 1:29–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da glória na etapa.",
+      "verseRef": "1 Coríntios 1:29–31",
+      "options": [
+        { "id": "a", "text": "Ninguém se gloria diante de Deus" },
+        { "id": "b", "text": "Cristo se torna sabedoria e redenção" },
+        { "id": "c", "text": "Quem se gloria, glorie-se no Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "glorie-se no Senhor",
+      "feedbackCorrect": "Corte da glória humana, dom em Cristo e glória no Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo Para que ninguém se glorie."
+      },
+      "hint": "Siga 1:29–31.",
+      "learningObjective": "Encadear o argumento até a glória no Senhor.",
+      "evidence": ["1 Coríntios 1:29–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Coríntios 4:2, complete o critério: seja encontrado ___.",
+      "verseRef": "1 Coríntios 4:2",
+      "options": [
+        { "id": "a", "text": "fiel" },
+        { "id": "b", "text": "famoso" },
+        { "id": "c", "text": "rico" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seja encontrado fiel",
+      "feedbackCorrect": "O termo do critério é fiel.",
+      "feedbackWrong": {
+        "b": "Famoso não está no texto.",
+        "c": "Rico não é o critério."
+      },
+      "hint": "Veja a última palavra do versículo.",
+      "learningObjective": "Lembrar o termo da fidelidade do despenseiro.",
+      "evidence": ["1 Coríntios 4:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 1:23 a Gálatas 6:14?",
+      "verseRef": "1 Coríntios 1:23",
+      "passageA": { "ref": "1 Coríntios 1:23" },
+      "passageB": { "ref": "Gálatas 6:14" },
+      "options": [
+        { "id": "a", "text": "Cruz como centro da glória" },
+        { "id": "b", "text": "Fogo que prova a obra" },
+        { "id": "c", "text": "Tribunal humano final" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pregamos a Cristo crucificado",
+      "feedbackCorrect": "Paulo prega a cruz e só se gloria nela.",
+      "feedbackWrong": {
+        "b": "O fogo é tema de 1 Coríntios 3, não de Gálatas 6:14.",
+        "c": "Tribunal humano não liga os dois textos."
+      },
+      "hint": "Pense no que fica no centro da glória.",
+      "learningObjective": "Ligar a pregação da cruz à glória só na cruz.",
+      "evidence": ["1 Coríntios 1:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 2:4, toque o trecho que sustenta a demonstração do Espírito.",
+      "verseRef": "1 Coríntios 2:4",
+      "options": [
+        { "id": "a", "text": "poder" },
+        { "id": "b", "text": "persuasivas" },
+        { "id": "c", "text": "humana" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "demonstração do Espírito e de poder",
+      "feedbackCorrect": "A demonstração é do Espírito e de poder, não de persuasão humana.",
+      "feedbackWrong": {
+        "b": "Palavras persuasivas são o que a pregação não fundamentou.",
+        "c": "Sabedoria humana é rejeitada como fundamento."
+      },
+      "hint": "Veja o fim do versículo depois de mas.",
+      "learningObjective": "Tocar o trecho que sustenta a demonstração do Espírito.",
+      "evidence": ["1 Coríntios 2:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do fundamento e da fidelidade.",
+      "verseRef": "1 Coríntios 3:11",
+      "options": [
+        { "id": "a", "text": "O fundamento único é Cristo" },
+        { "id": "b", "text": "Servos edificam como despenseiros" },
+        { "id": "c", "text": "A fidelidade será vista pelo Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "que é Jesus Cristo",
+      "feedbackCorrect": "Fundamento, serviço e juízo do Senhor nessa ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo fundamento Cristo."
+      },
+      "hint": "Una 3:11 a 4:1–5.",
+      "learningObjective": "Encadear fundamento, despenseiro e juízo.",
+      "evidence": ["1 Coríntios 3:11"]
+    }
+  ]
+}

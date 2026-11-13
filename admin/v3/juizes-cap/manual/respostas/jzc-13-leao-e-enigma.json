@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 14:5–14",
+    "passages": [
+      {
+        "ref": "Juízes 14:5–14"
+      }
+    ],
+    "context": "O Espírito apodera-se de Sansão contra o leão; o mel e o enigma já mostram segredo e risco.",
+    "keyword": "enigma",
+    "keywordGloss": "Proposta que esconde o segredo do leão e do mel.",
+    "focusQuestion": "Onde o poder do Espírito precisa de transparência, não de segredo?",
+    "reflectionPrompts": [
+      "Espírito e leão",
+      "Mel no cadáver",
+      "Do forte saiu doçura"
+    ],
+    "facts": [
+      {
+        "text": "Um leão jovem saiu ao encontro de Sansão.",
+        "evidenceRef": "Juízes 14:5",
+        "evidenceSpan": "um leão jovem, bramando, lhe saiu ao encontro"
+      },
+      {
+        "text": "O Espírito do Senhor se apoderou dele.",
+        "evidenceRef": "Juízes 14:6",
+        "evidenceSpan": "o Espírito do Senhor se apoderou dele"
+      },
+      {
+        "text": "Havia enxame de abelhas com mel no leão.",
+        "evidenceRef": "Juízes 14:8",
+        "evidenceSpan": "um enxame de abelhas com mel"
+      },
+      {
+        "text": "Não revelou que o mel vinha do leão.",
+        "evidenceRef": "Juízes 14:9",
+        "evidenceSpan": "não lhes revelou que o mel vinha do corpo do leão"
+      },
+      {
+        "text": "Propôs um enigma por sete dias.",
+        "evidenceRef": "Juízes 14:12",
+        "evidenceSpan": "Proponho um enigma"
+      },
+      {
+        "text": "Do que come saiu comida, e do forte saiu doçura.",
+        "evidenceRef": "Juízes 14:14",
+        "evidenceSpan": "Do que come saiu comida, e do forte saiu doçura"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "enigma",
+        "gloss": "Proposta de Sansão aos trinta companheiros."
+      },
+      {
+        "term": "leão",
+        "gloss": "Animal despedaçado pelo Espírito."
+      },
+      {
+        "term": "mel",
+        "gloss": "Doçura tirada do corpo do leão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Leão e Espírito",
+        "evidenceRef": "Juízes 14:5–6"
+      },
+      {
+        "label": "Mel e segredo",
+        "evidenceRef": "Juízes 14:7–9"
+      },
+      {
+        "label": "Banquete e enigma",
+        "evidenceRef": "Juízes 14:10–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Despedaçou; no entanto não revelou.",
+        "marker": "no entanto",
+        "evidenceRef": "Juízes 14:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deram mel; mas não revelou a origem.",
+        "marker": "mas",
+        "evidenceRef": "Juízes 14:9"
+      },
+      {
+        "kind": "causa",
+        "text": "Fez banquete pois era costume.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 14:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Zacarias 4:6",
+        "bridge": "Não por força"
+      },
+      {
+        "ref": "Provérbios 25:2",
+        "bridge": "Glória encobrir assunto"
+      },
+      {
+        "ref": "Efésios 5:11",
+        "bridge": "Não participar das trevas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Sansão vence o leão sozinho.",
+        "why": "O Espírito se apoderou dele."
+      },
+      {
+        "text": "Contou tudo aos pais.",
+        "why": "Não revelou o que fizera."
+      },
+      {
+        "text": "O enigma foi decifrado em três dias.",
+        "why": "Não puderam decifrar."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 14:14, o que saiu do forte?",
+    "centralInsight": "O Espírito o impulsiona, mas o enigma e o segredo já mostram o risco da vida dele."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 14:6, o Espírito do Senhor se apoderou de Sansão.",
+      "verseRef": "Juízes 14:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Espírito do Senhor se apoderou dele",
+      "feedbackCorrect": "Espírito.",
+      "feedbackWrong": {
+        "false": "O texto afirma."
+      },
+      "hint": "Veja o sujeito.",
+      "learningObjective": "Observar o Espírito.",
+      "evidence": [
+        "Juízes 14:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 14:8, toque o que havia no leão.",
+      "verseRef": "Juízes 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mel"
+        },
+        {
+          "id": "b",
+          "text": "abelhas"
+        },
+        {
+          "id": "c",
+          "text": "corpo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um enxame de abelhas com mel",
+      "feedbackCorrect": "Mel.",
+      "feedbackWrong": {
+        "b": "Abelhas formam o enxame.",
+        "c": "Corpo é o leão."
+      },
+      "hint": "Veja o enxame.",
+      "learningObjective": "Identificar o mel.",
+      "evidence": [
+        "Juízes 14:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 14:14, o enigma diz que do forte saiu:",
+      "verseRef": "Juízes 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doçura"
+        },
+        {
+          "id": "b",
+          "text": "Amargura"
+        },
+        {
+          "id": "c",
+          "text": "Pedra"
+        },
+        {
+          "id": "d",
+          "text": "Fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do forte saiu doçura",
+      "feedbackCorrect": "Doçura.",
+      "feedbackWrong": {
+        "b": "Não é amargura.",
+        "c": "Não é pedra.",
+        "d": "Não é fogo."
+      },
+      "hint": "Leia o fim.",
+      "learningObjective": "Reconhecer a doçura.",
+      "evidence": [
+        "Juízes 14:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 14:14 na ordem do texto.",
+      "verseRef": "Juízes 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do que come saiu comida"
+        },
+        {
+          "id": "b",
+          "text": "e do forte saiu doçura"
+        },
+        {
+          "id": "c",
+          "text": "não puderam decifrar o enigma"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não puderam decifrar o enigma",
+      "feedbackCorrect": "Comida, doçura e falha.",
+      "feedbackWrong": {
+        "default": "Comece pelo que come."
+      },
+      "hint": "O que não puderam?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 14:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 14:12, complete: Proponho um ___.",
+      "verseRef": "Juízes 14:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "enigma"
+        },
+        {
+          "id": "b",
+          "text": "hino"
+        },
+        {
+          "id": "c",
+          "text": "voto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Proponho um enigma",
+      "feedbackCorrect": "Enigma.",
+      "feedbackWrong": {
+        "b": "Não é hino.",
+        "c": "Não é voto."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar enigma.",
+      "evidence": [
+        "Juízes 14:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 14:5 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 14:5",
+      "passageA": {
+        "ref": "Juízes 14:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sansão encontra um leão no caminho de Timna."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Leão ao encontro"
+        },
+        {
+          "id": "b",
+          "text": "Sem animal"
+        },
+        {
+          "id": "c",
+          "text": "Só o pai age"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um leão jovem, bramando, lhe saiu ao encontro",
+      "feedbackCorrect": "Encontro com leão.",
+      "feedbackWrong": {
+        "b": "Há leão.",
+        "c": "Há Sansão."
+      },
+      "hint": "O que sai ao encontro?",
+      "learningObjective": "Ligar caminho e leão.",
+      "evidence": [
+        "Juízes 14:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 14:6, Sansão despedaça o leão; no entanto, não revela aos pais.",
+      "verseRef": "Juízes 14:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "no entanto, não revelou a seu pai nem a sua mãe",
+      "feedbackCorrect": "Segredo após o poder.",
+      "feedbackWrong": {
+        "false": "O no entanto marca o segredo."
+      },
+      "hint": "Leia o no entanto.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 14:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 14:6, toque o marcador de contraste.",
+      "verseRef": "Juízes 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "no entanto"
+        },
+        {
+          "id": "b",
+          "text": "cabrito"
+        },
+        {
+          "id": "c",
+          "text": "mãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no entanto, não revelou a seu pai nem a sua mãe",
+      "feedbackCorrect": "No entanto.",
+      "feedbackWrong": {
+        "b": "Cabrito é a comparação.",
+        "c": "Mãos vazias."
+      },
+      "hint": "Procure após mãos.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 14:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 14:9 faz?",
+      "verseRef": "Juízes 14:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deu o mel; mas não revelou a origem"
+        },
+        {
+          "id": "b",
+          "text": "Contou tudo; mas escondeu o mel"
+        },
+        {
+          "id": "c",
+          "text": "Sem mel; mas com enigma"
+        },
+        {
+          "id": "d",
+          "text": "Revelou; mas sem banquete"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não lhes revelou que o mel vinha do corpo do leão",
+      "feedbackCorrect": "Mel e segredo.",
+      "feedbackWrong": {
+        "b": "Há segredo.",
+        "c": "Há mel.",
+        "d": "Há banquete depois."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Compreender o segredo.",
+      "evidence": [
+        "Juízes 14:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do relato.",
+      "verseRef": "Juízes 14:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leão e Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Mel e segredo"
+        },
+        {
+          "id": "c",
+          "text": "Banquete e enigma"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "um leão jovem, bramando, lhe saiu ao encontro",
+      "feedbackCorrect": "Leão, mel e enigma.",
+      "feedbackWrong": {
+        "default": "Comece pelo leão."
+      },
+      "hint": "O que fecha o enigma?",
+      "learningObjective": "Ordenar o relato",
+      "evidence": [
+        "Juízes 14:5",
+        "Juízes 14:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 14:14, complete: do forte saiu ___.",
+      "verseRef": "Juízes 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "doçura"
+        },
+        {
+          "id": "b",
+          "text": "amargura"
+        },
+        {
+          "id": "c",
+          "text": "ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do forte saiu doçura",
+      "feedbackCorrect": "Doçura.",
+      "feedbackWrong": {
+        "b": "Não é amargura.",
+        "c": "Não é ferro."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Lembrar doçura.",
+      "evidence": [
+        "Juízes 14:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 14:6 a Zacarias 4:6?",
+      "verseRef": "Juízes 14:6",
+      "passageA": {
+        "ref": "Juízes 14:6"
+      },
+      "passageB": {
+        "ref": "Zacarias 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não por força"
+        },
+        {
+          "id": "b",
+          "text": "Só mãos vazias"
+        },
+        {
+          "id": "c",
+          "text": "Sem Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apoderou dele",
+      "feedbackCorrect": "Espírito, não força.",
+      "feedbackWrong": {
+        "b": "Há Espírito.",
+        "c": "Há mãos vazias."
+      },
+      "hint": "Compare a origem.",
+      "learningObjective": "Ligar a Zacarias.",
+      "evidence": [
+        "Juízes 14:6",
+        "Zacarias 4:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 14:9, o segredo do mel mostra transparência total de Sansão.",
+      "verseRef": "Juízes 14:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "não lhes revelou que o mel vinha do corpo do leão",
+      "feedbackCorrect": "Há ocultação.",
+      "feedbackWrong": {
+        "true": "Não revelou."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Avaliar o segredo.",
+      "evidence": [
+        "Juízes 14:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 14:14, toque o que não puderam fazer.",
+      "verseRef": "Juízes 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "decifrar"
+        },
+        {
+          "id": "b",
+          "text": "enigma"
+        },
+        {
+          "id": "c",
+          "text": "comida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não puderam decifrar o enigma",
+      "feedbackCorrect": "Decifrar.",
+      "feedbackWrong": {
+        "b": "Enigma é o objeto.",
+        "c": "Comida abre o dito."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Tocar decifrar.",
+      "evidence": [
+        "Juízes 14:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une Espírito e segredo?",
+      "verseRef": "Juízes 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Espírito dá poder; o segredo já mostra risco"
+        },
+        {
+          "id": "b",
+          "text": "Sem Espírito não há leão"
+        },
+        {
+          "id": "c",
+          "text": "O enigma prova humildade"
+        },
+        {
+          "id": "d",
+          "text": "Os pais sabiam tudo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no entanto, não revelou a seu pai nem a sua mãe",
+      "feedbackCorrect": "Poder e ocultação.",
+      "feedbackWrong": {
+        "b": "Há Espírito.",
+        "c": "Há risco.",
+        "d": "Pais não sabiam."
+      },
+      "hint": "Una poder e ocultação.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 14:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do risco.",
+      "verseRef": "Juízes 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito vence o leão"
+        },
+        {
+          "id": "b",
+          "text": "Mel vira segredo"
+        },
+        {
+          "id": "c",
+          "text": "Enigma expõe o jogo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Do que come saiu comida, e do forte saiu doçura",
+      "feedbackCorrect": "Poder, segredo e enigma.",
+      "feedbackWrong": {
+        "default": "Comece pelo Espírito."
+      },
+      "hint": "O que o enigma expõe?",
+      "learningObjective": "Encadear o risco",
+      "evidence": [
+        "Juízes 14:6",
+        "Juízes 14:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 14:5, complete: um ___ jovem, bramando.",
+      "verseRef": "Juízes 14:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "leão"
+        },
+        {
+          "id": "b",
+          "text": "cordeiro"
+        },
+        {
+          "id": "c",
+          "text": "cão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um leão jovem, bramando",
+      "feedbackCorrect": "Leão.",
+      "feedbackWrong": {
+        "b": "Não é cordeiro.",
+        "c": "Não é cão."
+      },
+      "hint": "Veja o animal.",
+      "learningObjective": "Lembrar leão.",
+      "evidence": [
+        "Juízes 14:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 14:9 a Efésios 5:11?",
+      "verseRef": "Juízes 14:9",
+      "passageA": {
+        "ref": "Juízes 14:9"
+      },
+      "passageB": {
+        "ref": "Efésios 5:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não participar das trevas"
+        },
+        {
+          "id": "b",
+          "text": "Esconder sempre"
+        },
+        {
+          "id": "c",
+          "text": "Banquete sem risco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não lhes revelou que o mel vinha do corpo do leão",
+      "feedbackCorrect": "Ocultação.",
+      "feedbackWrong": {
+        "b": "Há ocultação.",
+        "c": "Há risco."
+      },
+      "hint": "Compare a luz.",
+      "learningObjective": "Ligar a Efésios.",
+      "evidence": [
+        "Juízes 14:9",
+        "Efésios 5:11"
+      ]
+    }
+  ]
+}

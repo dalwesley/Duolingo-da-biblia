@@ -1,0 +1,203 @@
+{
+  "slug": "1cronicas-cap",
+  "prefix": "c1c",
+  "book": "1 Crônicas",
+  "chapters": 29,
+  "title": "1 Crônicas",
+  "description": "1 Crônicas capítulo a capítulo: das linhagens ao rei que prepara a casa do Senhor.",
+  "icon": "📖",
+  "color": "#5A7A8E",
+  "order": 15,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["cronicas"],
+  "modules": [
+    {
+      "title": "Linhagens de Israel · cap. 1–9",
+      "scenes": [
+        {
+          "ref": "1 Crônicas 2:1–8",
+          "chapters": "1–3",
+          "title": "Filhos de Israel",
+          "intro": "As listas abrem com os doze filhos de Israel e a linha de Judá.",
+          "insight": "De Judá veio o príncipe; a história de Israel começa em nomes que Deus não esquece.",
+          "objective": "Ver a linhagem de Judá"
+        },
+        {
+          "ref": "1 Crônicas 5:18–26",
+          "chapters": "4–5",
+          "title": "Clamaram na peleja",
+          "intro": "As tribos do leste lutam e, depois, abandonam o Deus dos pais.",
+          "insight": "Quem confia no Senhor é ouvido na guerra; quem se entrega aos ídolos vai ao exílio.",
+          "objective": "Confiar, não idolatrar"
+        },
+        {
+          "ref": "1 Crônicas 6:48–53",
+          "chapters": "6–7",
+          "title": "Serviço de Arão",
+          "intro": "No meio das genealogias, o texto destaca o ministério dos filhos de Arão.",
+          "insight": "Arão e seus filhos servem no santuário para a expiação de Israel, conforme Moisés ordenou.",
+          "objective": "Valorizar o serviço santo"
+        },
+        {
+          "ref": "1 Crônicas 9:1–9",
+          "chapters": "8–9",
+          "title": "De volta a Jerusalém",
+          "intro": "Depois do exílio, os primeiros habitantes voltam às suas cidades e a Jerusalém.",
+          "insight": "Judá foi ao exílio por suas transgressões; Deus ainda traz um remanescente para habitar.",
+          "objective": "Lembrar a causa do exílio"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Linhagens de Israel",
+        "intro": "Revise as linhagens, a confiança na peleja, o serviço sacerdotal e a volta do exílio.",
+        "insight": "Deus guarda o povo e o culto mesmo depois da queda"
+      }
+    },
+    {
+      "title": "Davi sobe ao trono · cap. 10–14",
+      "scenes": [
+        {
+          "ref": "1 Crônicas 10:6–14",
+          "title": "Saul cai",
+          "intro": "Saul e seus filhos morrem; o texto explica por que o reino passou a Davi.",
+          "insight": "Saul morreu por sua transgressão: não guardou a palavra do Senhor nem o buscou.",
+          "objective": "Buscar o Senhor de verdade"
+        },
+        {
+          "ref": "1 Crônicas 11:1–9",
+          "title": "Rei em Hebrom",
+          "intro": "Todo o Israel vem a Davi; ele toma a fortaleza de Sião.",
+          "insight": "Ungido segundo a palavra do Senhor, Davi cresce porque o Senhor dos Exércitos está com ele.",
+          "objective": "Reconhecer o rei escolhido"
+        },
+        {
+          "ref": "1 Crônicas 12:16–22",
+          "title": "Exército de Deus",
+          "intro": "Homens de Benjamim e Judá vêm a Davi; o Espírito fala por Amasai.",
+          "insight": "Dia após dia vinham ajudar Davi, até se formar um grande exército, como de Deus.",
+          "objective": "Ajudar o ungido do Senhor"
+        },
+        {
+          "ref": "1 Crônicas 13:7–14",
+          "title": "Uzá e a arca",
+          "intro": "Davi tenta trazer a arca num carro novo; Uzá estende a mão e morre.",
+          "insight": "A arca é santa: o zelo sem a ordem do Senhor pode custar caro.",
+          "objective": "Tratar o santo com temor"
+        },
+        {
+          "ref": "1 Crônicas 14:8–17",
+          "title": "Davi consulta",
+          "intro": "Os filisteus sobem contra Davi; ele pergunta ao Senhor antes de lutar.",
+          "insight": "Davi pergunta, o Senhor responde, e a fama dele se espalha por todas as terras.",
+          "objective": "Perguntar antes de agir"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Davi sobe ao trono",
+        "intro": "Revise a queda de Saul, a unção de Davi, os que o ajudam, a arca e as consultas a Deus.",
+        "insight": "O reino passa a quem busca o Senhor e o teme"
+      }
+    },
+    {
+      "title": "Arca, culto e aliança · cap. 15–20",
+      "scenes": [
+        {
+          "ref": "1 Crônicas 15:3–11",
+          "title": "Levitas preparados",
+          "intro": "Davi reúne Israel e os levitas para trazer a arca do jeito certo.",
+          "insight": "Só os escolhidos carregam a arca: Davi prepara sacerdotes e levitas para o serviço.",
+          "objective": "Preparar o culto com ordem"
+        },
+        {
+          "ref": "1 Crônicas 16:23–34",
+          "title": "Cantem ao Senhor",
+          "intro": "No cântico de Asafe, toda a terra é chamada a louvar o Senhor.",
+          "insight": "Grande é o Senhor: anuncie sua glória entre as nações e rendei graças, pois ele é bom.",
+          "objective": "Anunciar a glória do Senhor"
+        },
+        {
+          "ref": "1 Crônicas 17:7–14",
+          "title": "Casa para sempre",
+          "intro": "Natan leva a Davi a palavra do Senhor sobre a casa e o trono.",
+          "insight": "O Senhor edificará a casa de Davi: o trono do filho será estabelecido para sempre.",
+          "objective": "Confiar na promessa eterna"
+        },
+        {
+          "ref": "1 Crônicas 18:1–8",
+          "title": "Vitórias do Senhor",
+          "intro": "Davi derrota filisteus, moabitas e sírios; o Senhor lhe dá vitória.",
+          "insight": "O Senhor concedia vitórias a Davi por onde ele ia.",
+          "objective": "Creditar a vitória a Deus"
+        },
+        {
+          "ref": "1 Crônicas 19:8–19",
+          "chapters": "19–20",
+          "title": "Guerra contra Amom",
+          "intro": "A bondade de Davi é rejeitada; Israel enfrenta Amom e a Síria.",
+          "insight": "Quando os aliados se juntam contra Israel, Davi vence porque o Senhor combate por ele.",
+          "objective": "Enfrentar a oposição com fé"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Arca, culto e aliança",
+        "intro": "Revise o culto preparado, o cântico, a aliança com Davi e as vitórias nas guerras.",
+        "insight": "O Senhor habita no culto e firma o trono do seu ungido"
+      }
+    },
+    {
+      "title": "Templo e sucessão · cap. 21–29",
+      "scenes": [
+        {
+          "ref": "1 Crônicas 21:7–17",
+          "title": "Censo e arrependimento",
+          "intro": "O censo desagrada a Deus; Davi confessa e vê o anjo sobre Jerusalém.",
+          "insight": "Davi pequenou muito: escolhe cair nas mãos do Senhor, que é misericordioso.",
+          "objective": "Confessar e buscar misericórdia"
+        },
+        {
+          "ref": "1 Crônicas 22:6–13",
+          "title": "Salomão edificará",
+          "intro": "Davi encarrega Salomão de edificar a casa do Senhor.",
+          "insight": "Salomão edificará a casa: o Senhor lhe dá paz; que ele guarde a lei e seja forte.",
+          "objective": "Preparar o sucessor na fé"
+        },
+        {
+          "ref": "1 Crônicas 23:24–32",
+          "chapters": "23–25",
+          "title": "Levitas em paz",
+          "intro": "Com o povo em descanso, Davi organiza o serviço dos levitas na casa do Senhor.",
+          "insight": "O Senhor deu paz: os levitas agora servem na casa, e não mais carregam o tabernáculo.",
+          "objective": "Servir na casa do Senhor"
+        },
+        {
+          "ref": "1 Crônicas 26:20–28",
+          "chapters": "26–27",
+          "title": "Tesouros dedicados",
+          "intro": "Há encarregados dos tesouros da casa de Deus e das ofertas dedicadas.",
+          "insight": "O que foi dedicado ao Senhor fica sob cuidado fiel para a casa de Deus.",
+          "objective": "Guardar o que é de Deus"
+        },
+        {
+          "ref": "1 Crônicas 28:8–15",
+          "title": "Conhece o Deus",
+          "intro": "Davi fala a Salomão diante de todo o Israel sobre buscar e servir a Deus.",
+          "insight": "Conhece o Deus de teu pai e serve-o de coração íntegro; se o buscares, ele se deixa achar.",
+          "objective": "Buscar de coração íntegro"
+        },
+        {
+          "ref": "1 Crônicas 29:10–19",
+          "title": "Tudo vem de ti",
+          "intro": "Davi louva o Senhor diante da congregação e ora por Salomão.",
+          "insight": "Tua é, Senhor, a grandeza: tudo vem de ti, e da tua mão te damos.",
+          "objective": "Oferecer com gratidão"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Templo e sucessão",
+        "intro": "Revise o censo, a ordem a Salomão, o serviço levítico, o chamado a buscar e o louvor final.",
+        "insight": "O templo nasce de um coração que confessa, prepara e devolve tudo a Deus"
+      }
+    }
+  ]
+}

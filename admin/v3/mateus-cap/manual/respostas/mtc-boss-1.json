@@ -1,0 +1,624 @@
+{
+  "study": {
+    "passageRef": "Mateus 4:18–23",
+    "passages": [
+      { "ref": "Mateus 4:18–23" },
+      { "ref": "Mateus 1:1–6" },
+      { "ref": "Mateus 2:1–6" },
+      { "ref": "Mateus 2:9–10" },
+      { "ref": "Mateus 3:1–6" },
+      { "ref": "Mateus 3:7–12" }
+    ],
+    "context": "Esta travessia revisa Mateus 1 a 4: a genealogia de Jesus, os magos vindos do Oriente, a pregação de João no deserto e os pescadores à beira do mar da Galileia.",
+    "keyword": "Rei",
+    "keywordGloss": "É o título com que os magos buscam o menino e o lugar de Jesus na linhagem de Davi.",
+    "focusQuestion": "Quando o chamado de Jesus chega no meio da sua rotina, o que você deixa para ir com ele?",
+    "reflectionPrompts": [
+      "A linhagem que abre o livro",
+      "Adoração e agitação",
+      "Redes deixadas na hora"
+    ],
+    "facts": [
+      {
+        "text": "Jesus Cristo é apresentado como filho de Davi e filho de Abraão.",
+        "evidenceRef": "Mateus 1:1",
+        "evidenceSpan": "filho de Davi e filho de Abraão"
+      },
+      {
+        "text": "Os magos dizem que vieram para adorar o menino.",
+        "evidenceRef": "Mateus 2:2",
+        "evidenceSpan": "viemos para adorá-lo"
+      },
+      {
+        "text": "Herodes se alarmou, e toda a Jerusalém ficou agitada.",
+        "evidenceRef": "Mateus 2:3",
+        "evidenceSpan": "alarmou-se, e toda a Jerusalém também ficou agitada"
+      },
+      {
+        "text": "Ao verem a estrela, os magos se alegraram com intenso júbilo.",
+        "evidenceRef": "Mateus 2:10",
+        "evidenceSpan": "alegraram-se com grande e intenso júbilo"
+      },
+      {
+        "text": "João pede frutos que sejam dignos de arrependimento.",
+        "evidenceRef": "Mateus 3:8",
+        "evidenceSpan": "frutos que sejam dignos de arrependimento"
+      },
+      {
+        "text": "Eles deixaram as redes imediatamente e o seguiram.",
+        "evidenceRef": "Mateus 4:20",
+        "evidenceSpan": "deixaram imediatamente as redes e o seguiram"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "genealogia",
+        "gloss": "É a lista de gerações com que Mateus abre o livro e apresenta Jesus."
+      },
+      {
+        "term": "arrependimento",
+        "gloss": "É a mudança de vida de que João diz que os frutos devem ser dignos."
+      },
+      {
+        "term": "pescadores",
+        "gloss": "É o ofício de quem Jesus encontra no mar e o novo ofício que ele promete."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A genealogia apresenta Jesus, filho de Davi",
+        "evidenceRef": "Mateus 1:1–6"
+      },
+      {
+        "label": "Magos adoram o Rei e Herodes se alarma",
+        "evidenceRef": "Mateus 2:1–3"
+      },
+      {
+        "label": "João pede uma resposta à altura do reino",
+        "evidenceRef": "Mateus 3:7–9"
+      },
+      {
+        "label": "Jesus chama pescadores e eles o seguem",
+        "evidenceRef": "Mateus 4:18–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Ao verem a estrela, os magos se alegram com intenso júbilo.",
+        "marker": null,
+        "evidenceRef": "Mateus 2:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "O tom de João muda quando fariseus e saduceus se aproximam para o batismo.",
+        "marker": "porém",
+        "evidenceRef": "Mateus 3:7"
+      },
+      {
+        "kind": "sequência",
+        "text": "Logo após o convite, eles deixam as redes e seguem Jesus.",
+        "marker": "Então",
+        "evidenceRef": "Mateus 4:20"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 40:3", "bridge": "A voz no deserto" },
+      { "ref": "Marcos 1:17", "bridge": "O chamado aos pescadores" },
+      { "ref": "Miqueias 5:2", "bridge": "O Guia sai de Belém" }
+    ],
+    "misreadings": [
+      {
+        "text": "A genealogia apresenta só reis de vida irrepreensível.",
+        "why": "Além de reis, a lista traz Tamar, Raabe, Rute e a mulher de Urias (1:3, 1:5 e 1:6)."
+      },
+      {
+        "text": "Herodes e Jerusalém receberam a notícia do menino com o mesmo júbilo dos magos.",
+        "why": "Herodes se alarmou e Jerusalém ficou agitada (2:3). O júbilo intenso é dos magos, ao verem a estrela (2:10)."
+      },
+      {
+        "text": "Ter Abraão por pai já deixa a pessoa pronta, sem precisar mudar.",
+        "why": "João manda não começar por essa frase e pede frutos dignos de arrependimento (3:8–9)."
+      }
+    ],
+    "centralInsight": "O Rei prometido chega e chama a segui-lo",
+    "anchorQuestion": "O que Simão e André fizeram com as redes quando Jesus os chamou?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Jesus Cristo é filho de Davi e filho de Abraão.",
+      "verseRef": "Mateus 1:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "filho de Davi e filho de Abraão",
+      "feedbackCorrect": "A primeira linha o apresenta como filho de Davi e filho de Abraão.",
+      "feedbackWrong": {
+        "false": "Releia o fim do versículo: as duas filiações estão lado a lado."
+      },
+      "hint": "Leia o que a primeira linha diz depois do nome.",
+      "learningObjective": "Reconhecer como Mateus apresenta Jesus na abertura da genealogia.",
+      "evidence": ["Mateus 1:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 2:1, toque de onde vieram os magos.",
+      "verseRef": "Mateus 2:1",
+      "options": [
+        { "id": "a", "text": "alguns magos" },
+        { "id": "b", "text": "do Oriente" },
+        { "id": "c", "text": "rei Herodes" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vieram do Oriente a Jerusalém",
+      "feedbackCorrect": "Os magos saíram do Oriente e chegaram a Jerusalém atrás do menino.",
+      "feedbackWrong": {
+        "a": "Alguns magos são quem viajou, não o lugar de onde saíram.",
+        "c": "Herodes é o rei da época, não o lugar de onde os magos vieram."
+      },
+      "hint": "Procure a origem da viagem, antes de Jerusalém.",
+      "learningObjective": "Observar de onde os magos partiram até Jerusalém.",
+      "evidence": ["Mateus 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 4:18, o que Simão e André faziam no mar?",
+      "verseRef": "Mateus 4:18",
+      "options": [
+        { "id": "a", "text": "Lançavam redes ao mar" },
+        { "id": "b", "text": "Consertavam redes no barco" },
+        { "id": "c", "text": "Batizavam no rio Jordão" },
+        { "id": "d", "text": "Consultavam os sacerdotes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lançavam suas redes ao mar",
+      "feedbackCorrect": "Jesus os encontrou lançando as redes ao mar, no meio do trabalho.",
+      "feedbackWrong": {
+        "b": "Quem consertava redes no barco eram Tiago e João, mais adiante.",
+        "c": "O batismo no Jordão é a cena de João, não o trabalho destes irmãos.",
+        "d": "Quem convoca os sacerdotes é Herodes, em outro capítulo."
+      },
+      "hint": "Veja o que os dois faziam quando Jesus os viu.",
+      "learningObjective": "Identificar o trabalho de Simão e André quando Jesus os viu.",
+      "evidence": ["Mateus 4:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 1:6 na ordem do texto.",
+      "verseRef": "Mateus 1:6",
+      "options": [
+        { "id": "a", "text": "E Jessé gerou o rei Davi" },
+        { "id": "b", "text": "e o rei Davi gerou Salomão" },
+        { "id": "c", "text": "da mulher de Urias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jessé gerou o rei Davi",
+      "feedbackCorrect": "Jessé gera Davi, Davi gera Salomão, e a mãe é a mulher de Urias.",
+      "feedbackWrong": {
+        "default": "A ordem começa em Jessé e Davi; Salomão e a mulher de Urias vêm depois."
+      },
+      "hint": "O versículo começa por quem gerou o rei.",
+      "learningObjective": "Reconhecer a sequência de Mateus 1:6.",
+      "evidence": ["Mateus 1:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 2:2, o que os magos dizem que vieram fazer?",
+      "verseRef": "Mateus 2:2",
+      "options": [
+        { "id": "a", "text": "encontrá-lo" },
+        { "id": "b", "text": "adorá-lo" },
+        { "id": "c", "text": "anunciá-lo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "viemos para adorá-lo",
+      "feedbackCorrect": "Eles declaram que vieram adorar o menino, não só achá-lo ou anunciá-lo.",
+      "feedbackWrong": {
+        "a": "Achar o menino é o caminho. O verbo no fim da fala é outro.",
+        "c": "Eles não dizem que vieram anunciar. Olhe o verbo que fecha a fala."
+      },
+      "hint": "Olhe o último verbo da fala deles.",
+      "learningObjective": "Lembrar o propósito que os magos declaram em Mateus 2:2.",
+      "evidence": ["Mateus 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 4:20 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 4:20",
+      "passageA": { "ref": "Mateus 4:20" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Chamados à beira do mar, eles deixam as redes na hora e vão com Jesus."
+      },
+      "options": [
+        { "id": "a", "text": "Pediram tempo ao pai" },
+        { "id": "b", "text": "Deixaram as redes na hora" },
+        { "id": "c", "text": "Voltaram para o barco" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "deixaram imediatamente as redes e o seguiram",
+      "feedbackCorrect": "O chamado não espera: eles deixam as redes na hora e vão com Jesus.",
+      "feedbackWrong": {
+        "a": "Quem deixa o pai é o outro par de irmãos, no versículo seguinte.",
+        "c": "Eles não voltam ao barco. As redes ficam para trás na hora."
+      },
+      "hint": "Veja o que acontece com as redes nesse versículo.",
+      "learningObjective": "Ligar Mateus 4:20 à resposta imediata dos pescadores.",
+      "evidence": ["Mateus 4:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 3:1, toque o ambiente em que ele pregava.",
+      "verseRef": "Mateus 3:1",
+      "options": [
+        { "id": "a", "text": "João Batista" },
+        { "id": "b", "text": "Nesse tempo" },
+        { "id": "c", "text": "no deserto" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "pregando no deserto da Judéia",
+      "feedbackCorrect": "João aparece pregando no deserto da Judéia, não numa cidade.",
+      "feedbackWrong": {
+        "a": "João Batista é quem prega, não o lugar da pregação.",
+        "b": "Nesse tempo marca o momento, não o ambiente."
+      },
+      "hint": "Veja o lugar nomeado logo depois do verbo pregar.",
+      "learningObjective": "Observar onde João Batista estava pregando.",
+      "evidence": ["Mateus 3:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 2:2 na ordem do texto.",
+      "verseRef": "Mateus 2:2",
+      "options": [
+        { "id": "a", "text": "Dizendo: Onde está o recém-nascido Rei dos judeus?" },
+        { "id": "b", "text": "Pois vimos a sua estrela no Oriente" },
+        { "id": "c", "text": "e viemos para adorá-lo." }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "viemos para adorá-lo",
+      "feedbackCorrect": "A fala pergunta pelo Rei, conta da estrela e termina na adoração.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta; a estrela vem no meio e a adoração fecha."
+      },
+      "hint": "A fala começa com uma pergunta.",
+      "learningObjective": "Reconhecer a sequência da fala dos magos em Mateus 2:2.",
+      "evidence": ["Mateus 2:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 4:20, eles só deixaram as redes depois de acabar a pesca.",
+      "verseRef": "Mateus 4:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "deixaram imediatamente as redes",
+      "feedbackCorrect": "Não há espera: eles deixaram as redes imediatamente.",
+      "feedbackWrong": {
+        "true": "O versículo não fala em acabar a pesca. A saída é imediata."
+      },
+      "hint": "Veja se o texto marca espera ou pressa.",
+      "learningObjective": "Compreender que a saída das redes acontece sem demora.",
+      "evidence": ["Mateus 4:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 3:7, toque a palavra que muda o tom do relato.",
+      "verseRef": "Mateus 3:7",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "fariseus" },
+        { "id": "c", "text": "batismo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ao ver, porém, que muitos fariseus",
+      "feedbackCorrect": "Porém marca a virada: ao ver aqueles homens, o tom de João muda.",
+      "feedbackWrong": {
+        "b": "Fariseus diz quem chega, não a palavra que vira o relato.",
+        "c": "Batismo é o motivo da aproximação, não a virada do tom."
+      },
+      "hint": "Ela aparece logo depois de Ao ver, entre vírgulas.",
+      "learningObjective": "Reconhecer o marcador que muda o tom de João.",
+      "evidence": ["Mateus 3:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como João reage, em Mateus 3:7–8, ao ver fariseus e saduceus?",
+      "verseRef": "Mateus 3:7–8",
+      "options": [
+        { "id": "a", "text": "Ele os recebe com a mesma fala da multidão" },
+        { "id": "b", "text": "O tom muda e ele cobra uma resposta real" },
+        { "id": "c", "text": "Ele elogia a descendência de Abraão" },
+        { "id": "d", "text": "Ele adia o batismo para outro dia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ao ver, porém, que muitos fariseus e saduceus",
+      "feedbackCorrect": "Ao vê-los, o tom muda: ele os confronta e cobra uma resposta real.",
+      "feedbackWrong": {
+        "a": "A palavra de virada mostra que a fala a eles não repete a da multidão.",
+        "c": "Ele não elogia a família. A cobrança de uma resposta vem em seguida.",
+        "d": "O texto não adia o batismo. Ele fala com quem já se aproximava."
+      },
+      "hint": "Observe a mudança de tom e o que ele exige em seguida.",
+      "learningObjective": "Relacionar a mudança de tom de João com a exigência que vem depois.",
+      "evidence": ["Mateus 3:7–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a lista avança em Mateus 1:5–6?",
+      "verseRef": "Mateus 1:5–6",
+      "options": [
+        { "id": "a", "text": "Raabe e Rute entram na lista" },
+        { "id": "b", "text": "Jessé gera o rei Davi" },
+        { "id": "c", "text": "Davi gera Salomão" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jessé gerou o rei Davi",
+      "feedbackCorrect": "A lista traz Raabe e Rute, sobe a Davi e chega a Salomão.",
+      "feedbackWrong": {
+        "default": "Raabe e Rute vêm antes; Davi nasce de Jessé e depois gera Salomão."
+      },
+      "hint": "Comece pelos nomes de 1:5 e siga até Salomão.",
+      "learningObjective": "Compreender o avanço da genealogia de Raabe e Rute até Salomão.",
+      "evidence": ["Mateus 1:5", "Mateus 1:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 4:22, o que eles fizeram depois de deixar o barco e o pai?",
+      "verseRef": "Mateus 4:22",
+      "options": [
+        { "id": "a", "text": "seguiram" },
+        { "id": "b", "text": "voltaram" },
+        { "id": "c", "text": "esperaram" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o seguiram",
+      "feedbackCorrect": "Depois de deixar barco e pai, o verbo final diz que eles o seguiram.",
+      "feedbackWrong": {
+        "b": "Eles não voltaram. O versículo fecha dizendo que o seguiram.",
+        "c": "Não há espera. O verbo final mostra que eles foram com ele."
+      },
+      "hint": "Olhe o verbo que fecha o versículo.",
+      "learningObjective": "Lembrar a ação que fecha a resposta de Tiago e João.",
+      "evidence": ["Mateus 4:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 3:3 a Isaías 40:3?",
+      "verseRef": "Mateus 3:3",
+      "passageA": { "ref": "Mateus 3:3" },
+      "passageB": { "ref": "Isaías 40:3" },
+      "options": [
+        { "id": "a", "text": "O batismo no Jordão" },
+        { "id": "b", "text": "A voz no deserto" },
+        { "id": "c", "text": "A genealogia de Davi" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Voz do que clama no deserto",
+      "feedbackCorrect": "Mateus aplica a João a voz que, em Isaías, prepara o caminho do Senhor.",
+      "feedbackWrong": {
+        "a": "O batismo aparece nos versículos vizinhos. A ponte com Isaías é a citação.",
+        "c": "A genealogia abre o livro. Aqui a ligação é a frase do profeta."
+      },
+      "hint": "Compare a citação dentro do versículo com Isaías.",
+      "learningObjective": "Relacionar a citação de Mateus 3:3 com Isaías 40:3.",
+      "evidence": ["Mateus 3:3", "Isaías 40:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 2:10, toque a reação dos magos diante do que viram.",
+      "verseRef": "Mateus 2:10",
+      "options": [
+        { "id": "a", "text": "a estrela" },
+        { "id": "b", "text": "intenso júbilo" },
+        { "id": "c", "text": "alegraram-se" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "alegraram-se com grande e intenso júbilo",
+      "feedbackCorrect": "Ver a estrela produz alegria: o verbo da reação é alegraram-se.",
+      "feedbackWrong": {
+        "a": "A estrela é o que eles viram, não a reação.",
+        "b": "Júbilo nomeia a intensidade. A reação é o verbo."
+      },
+      "hint": "Procure o verbo da reação, no meio do versículo.",
+      "learningObjective": "Reconhecer a reação dos magos ao verem a estrela.",
+      "evidence": ["Mateus 2:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o chamado em Mateus 4:19–20?",
+      "verseRef": "Mateus 4:19–20",
+      "options": [
+        { "id": "a", "text": "Jesus convida os dois a segui-lo" },
+        { "id": "b", "text": "A promessa muda o ofício deles" },
+        { "id": "c", "text": "Eles deixam as redes sem demora" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Vinde após mim",
+      "feedbackCorrect": "Jesus convida, promete um novo ofício e eles deixam as redes na hora.",
+      "feedbackWrong": {
+        "default": "O convite abre; a promessa vem no meio; deixar as redes é a resposta."
+      },
+      "hint": "Comece pelo convite de Jesus.",
+      "learningObjective": "Compreender a sequência do convite e da resposta imediata.",
+      "evidence": ["Mateus 4:19", "Mateus 4:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 3:8–9, descender de Abraão não dispensa a mudança que João exige.",
+      "verseRef": "Mateus 3:8–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "não comecem a dizer entre vocês mesmos: Temos por pai a Abraão",
+      "feedbackCorrect": "João barra o orgulho da família e exige uma mudança à altura.",
+      "feedbackWrong": {
+        "false": "Ele manda não dizer que têm Abraão por pai e cobra uma resposta."
+      },
+      "hint": "Veja o que João proíbe dizer sobre Abraão.",
+      "learningObjective": "Interpretar por que a família de Abraão não substitui a mudança.",
+      "evidence": ["Mateus 3:8–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 4:19, toque o que Jesus diz que fará deles.",
+      "verseRef": "Mateus 4:19",
+      "options": [
+        { "id": "a", "text": "pescadores de homens" },
+        { "id": "b", "text": "após mim" },
+        { "id": "c", "text": "Vinde" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos farei pescadores de homens",
+      "feedbackCorrect": "Jesus não os deixa no mesmo ofício: fará deles pescadores de homens.",
+      "feedbackWrong": {
+        "b": "Após mim é para onde ir, não o que ele fará deles.",
+        "c": "Vinde é o convite. O que ele fará vem depois de farei."
+      },
+      "hint": "Leia o ofício novo, no fim da frase.",
+      "learningObjective": "Localizar o novo ofício que Jesus promete aos pescadores.",
+      "evidence": ["Mateus 4:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 2:2–3 sustenta sobre as reações ao menino?",
+      "verseRef": "Mateus 2:2–3",
+      "options": [
+        { "id": "a", "text": "Herodes e a cidade se alegram com os magos" },
+        { "id": "b", "text": "Os magos vêm adorar, e Herodes se perturba" },
+        { "id": "c", "text": "Os magos vieram só para avisar o palácio" },
+        { "id": "d", "text": "Herodes e os magos combinam a mesma visita" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "alarmou-se, e toda a Jerusalém também ficou agitada",
+      "feedbackCorrect": "Os magos vieram adorar. Herodes, ao ouvir, se alarma, e a cidade se agita.",
+      "feedbackWrong": {
+        "a": "O júbilo é a reação dos magos à estrela. Herodes se alarmou.",
+        "c": "Eles declaram que vieram adorar, não que vieram só avisar o palácio.",
+        "d": "Não há combinação. A notícia alarma Herodes e agita a cidade."
+      },
+      "hint": "Compare o fim da fala dos magos com a reação de Herodes.",
+      "learningObjective": "Escolher a leitura que distingue a adoração dos magos do alarme de Herodes.",
+      "evidence": ["Mateus 2:2–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência atravessa este bloco de Mateus?",
+      "verseRef": "Mateus 1:1",
+      "options": [
+        { "id": "a", "text": "A lista liga Jesus a Davi e Abraão" },
+        { "id": "b", "text": "Visitantes de longe adoram o menino" },
+        { "id": "c", "text": "Gente do mar larga o trabalho" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "filho de Davi e filho de Abraão",
+      "feedbackCorrect": "O bloco abre na linhagem, passa pela adoração e chega ao chamado.",
+      "feedbackWrong": {
+        "default": "A lista vem primeiro; a visita dos magos fica no meio; o chamado fecha."
+      },
+      "hint": "Siga a ordem dos capítulos: família, magos, chamado.",
+      "learningObjective": "Encadear a genealogia, a visita dos magos e o chamado dos pescadores.",
+      "evidence": ["Mateus 1:1", "Mateus 2:2", "Mateus 4:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 3:8, a produção pedida deve ser digna de quê?",
+      "verseRef": "Mateus 3:8",
+      "options": [
+        { "id": "a", "text": "sacrifício" },
+        { "id": "b", "text": "arrependimento" },
+        { "id": "c", "text": "conhecimento" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "dignos de arrependimento",
+      "feedbackCorrect": "A última palavra é arrependimento: a mudança de que essa produção deve ser digna.",
+      "feedbackWrong": {
+        "a": "Não é sacrifício. A palavra do versículo é arrependimento.",
+        "c": "Não é conhecimento. O texto diz arrependimento."
+      },
+      "hint": "Leia a última palavra do versículo.",
+      "learningObjective": "Lembrar o termo que diz de que mudança os frutos devem ser dignos.",
+      "evidence": ["Mateus 3:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 4:19 a Marcos 1:17?",
+      "verseRef": "Mateus 4:19",
+      "passageA": { "ref": "Mateus 4:19" },
+      "passageB": { "ref": "Marcos 1:17" },
+      "options": [
+        { "id": "a", "text": "A consulta dos sacerdotes" },
+        { "id": "b", "text": "O júbilo diante da estrela" },
+        { "id": "c", "text": "O chamado aos pescadores" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "pescadores de homens",
+      "feedbackCorrect": "Marcos registra o mesmo convite: Jesus chama pescadores para segui-lo.",
+      "feedbackWrong": {
+        "a": "Sacerdotes aparecem com Herodes. Aqui a ponte é o convite de Jesus.",
+        "b": "O júbilo é dos magos. Os dois versículos registram o mesmo chamado."
+      },
+      "hint": "Compare o convite de Jesus nos dois versículos.",
+      "learningObjective": "Ligar o convite de Mateus 4:19 ao mesmo chamado em Marcos.",
+      "evidence": ["Mateus 4:19", "Marcos 1:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 3:8, toque o que João manda produzir.",
+      "verseRef": "Mateus 3:8",
+      "options": [
+        { "id": "a", "text": "portanto" },
+        { "id": "b", "text": "frutos" },
+        { "id": "c", "text": "Produzam" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "frutos que sejam dignos de arrependimento",
+      "feedbackCorrect": "João manda produzir frutos que sejam dignos de arrependimento.",
+      "feedbackWrong": {
+        "a": "Portanto só liga a frase. O que deve ser produzido é o substantivo.",
+        "c": "Produzam é o verbo da ordem, não a coisa que deve ser produzida."
+      },
+      "hint": "Veja o que a frase manda que passe a existir.",
+      "learningObjective": "Localizar o que João diz que deve ser produzido.",
+      "evidence": ["Mateus 3:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga Mateus 2:6 à visita dos magos?",
+      "verseRef": "Mateus 2:6",
+      "options": [
+        { "id": "a", "text": "O profeta anuncia um Guia em Belém" },
+        { "id": "b", "text": "Os magos perguntam pelo Rei" },
+        { "id": "c", "text": "A estrela os leva até o menino" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "de ti sairá o Guia",
+      "feedbackCorrect": "O profeta aponta Belém; os magos perguntam pelo Rei; a estrela os leva.",
+      "feedbackWrong": {
+        "default": "A profecia vem primeiro; a pergunta dos magos fica no meio; a estrela fecha."
+      },
+      "hint": "Comece pelo que o profeta diz de Belém.",
+      "learningObjective": "Encadear a palavra sobre Belém, a pergunta dos magos e a estrela.",
+      "evidence": ["Mateus 2:6", "Mateus 2:2", "Mateus 2:9"]
+    }
+  ]
+}

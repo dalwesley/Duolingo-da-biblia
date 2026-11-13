@@ -1,0 +1,47 @@
+{
+  "slug": "joel-cap",
+  "prefix": "jlc",
+  "book": "Joel",
+  "chapters": 3,
+  "title": "Joel",
+  "description": "Joel capítulo a capítulo: o dia do Senhor, o arrependimento e a restauração.",
+  "icon": "🌾",
+  "color": "#8E6A5A",
+  "order": 36,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": ["joel"],
+  "modules": [
+    {
+      "title": "O dia do Senhor · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "Joel 1:13–20",
+          "title": "Lamento no templo",
+          "intro": "Os sacerdotes são chamados a chorar; a terra geme e os animais sofrem.",
+          "insight": "A praga chama o povo ao jejum e ao clamor perante o Senhor.",
+          "objective": "Clamar perante o Senhor"
+        },
+        {
+          "ref": "Joel 2:1–9",
+          "title": "Trombeta em Sião",
+          "intro": "Joel anuncia o dia do Senhor com trombeta, trevas e um exército que avança.",
+          "insight": "O dia do Senhor é grande e terrível: ninguém o pode sofrer sem arrependimento.",
+          "objective": "Temer o dia do Senhor"
+        },
+        {
+          "ref": "Joel 3:14–21",
+          "title": "No vale da decisão",
+          "intro": "Multidões no vale da decisão; o Senhor ruge de Sião e habita em Jerusalém.",
+          "insight": "O Senhor é refúgio do seu povo e promete restaurar Judá.",
+          "objective": "O Senhor como refúgio"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: O dia do Senhor",
+        "intro": "Revise o lamento, a trombeta em Sião e o vale da decisão.",
+        "insight": "O dia do Senhor chama ao arrependimento e oferece refúgio"
+      }
+    }
+  ]
+}

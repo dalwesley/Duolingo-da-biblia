@@ -1,0 +1,1226 @@
+{
+  "slug": "salmos-cap",
+  "prefix": "slc",
+  "book": "Salmos",
+  "chapters": 150,
+  "title": "Salmos",
+  "description": "Salmos capítulo a capítulo: oração, louvor e lamento do povo de Deus.",
+  "icon": "🎵",
+  "color": "#7E90A0",
+  "order": 21,
+  "realm": "antigo-testamento",
+  "category": "poeticos",
+  "avoidTrails": [
+    "salmos"
+  ],
+  "modules": [
+    {
+      "title": "Livro I · salmos 1–10",
+      "scenes": [
+        {
+          "ref": "Salmos 1:1–6",
+          "title": "Dois caminhos",
+          "intro": "O justo e o ímpio se separam no conselho, no fruto e no fim.",
+          "insight": "O justo fica na lei; o ímpio é palha ao vento.",
+          "objective": "Escolher o caminho"
+        },
+        {
+          "ref": "Salmos 2:1–12",
+          "title": "O Rei ungido",
+          "intro": "As nações se revoltam, e o Senhor ri; ele instala o seu Rei em Sião.",
+          "insight": "Deus estabelece o Filho; beijai o Filho enquanto há tempo.",
+          "objective": "Honrar o Rei"
+        },
+        {
+          "ref": "Salmos 3:1–8",
+          "title": "Escudo ao redor",
+          "intro": "Davi foge de Absalão e diz: tu, Senhor, és escudo ao redor de mim.",
+          "insight": "No meio dos muitos que dizem “não há salvação”, Deus ergue a cabeça.",
+          "objective": "Deus é escudo"
+        },
+        {
+          "ref": "Salmos 4:1–8",
+          "title": "Em paz me deito",
+          "intro": "Na angústia, Davi pede e confessa: em paz me deito e logo adormeço.",
+          "insight": "A segurança do justo não é o celeiro cheio — é o rosto de Deus.",
+          "objective": "Paz para dormir"
+        },
+        {
+          "ref": "Salmos 5:1–12",
+          "title": "De manhã ouves",
+          "intro": "De manhã apresento a minha oração e espero; tu não tens prazer na maldade.",
+          "insight": "Oração matinal e caminho reto: Deus cerca o justo de favor.",
+          "objective": "Orar e esperar"
+        },
+        {
+          "ref": "Salmos 6:1–10",
+          "title": "Até quando, Senhor",
+          "intro": "Senhor, não me repreendas na ira; os meus ossos estão perturbados.",
+          "insight": "O lamento pode ser oração: Deus ouve o choro do aflito.",
+          "objective": "Choro que ora"
+        },
+        {
+          "ref": "Salmos 7:1–12",
+          "title": "Julga-me, Senhor",
+          "intro": "Davi pede juízo e diz que, se há culpa em suas mãos, que o inimigo o alcance.",
+          "insight": "Integridade se coloca sob o olhar de Deus, não só sob a acusação humana.",
+          "objective": "Juízo justo"
+        },
+        {
+          "ref": "Salmos 8:1–9",
+          "title": "Quão admirável",
+          "intro": "Pela boca dos pequeninos firmaste a força; que é o homem, para dele te lembrares?",
+          "insight": "A criação canta a glória de Deus — e o homem recebe cuidado e domínio.",
+          "objective": "Glória e cuidado"
+        },
+        {
+          "ref": "Salmos 9:1–10",
+          "title": "Graças de todo o coração",
+          "intro": "Louvarei com retidão de coração; o Senhor é alto refúgio para o oprimido.",
+          "insight": "Louvor e juízo andam juntos: Deus não se esquece do clamor dos pobres.",
+          "objective": "Refúgio do oprimido"
+        },
+        {
+          "ref": "Salmos 10:1–12",
+          "title": "Por que te escondes",
+          "intro": "O ímpio persegue o pobre e diz que Deus se esqueceu; o Senhor ouve o desejo dos mansos.",
+          "insight": "Mesmo quando Deus parece escondido, ele vê a opressão e se levanta.",
+          "objective": "Deus vê o opressor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro I 1–10",
+        "intro": "Revise os salmos desta etapa (dois caminhos, o rei ungido, escudo ao redor…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro I · salmos 11–21",
+      "scenes": [
+        {
+          "ref": "Salmos 11:1–7",
+          "title": "No Senhor me refugio",
+          "intro": "Se os fundamentos se arruinam, que pode fazer o justo? O Senhor está no seu templo.",
+          "insight": "Quando tudo treme, o refúgio continua: Deus prova o justo e odeia a violência.",
+          "objective": "Fundamentos firmes"
+        },
+        {
+          "ref": "Salmos 12:1–8",
+          "title": "Lábios lisonjeiros",
+          "intro": "Salva, Senhor, porque já não há homens fiéis; os lábios lisonjeiros falam com dobrez.",
+          "insight": "Deus promete se levantar pelo pobre quando a palavra humana é mentira.",
+          "objective": "Palavras puras",
+          "chapters": "12–13"
+        },
+        {
+          "ref": "Salmos 14:1–7",
+          "title": "Não há Deus",
+          "intro": "Diz o tolo no coração: não há Deus. O Senhor olha dos céus e busca o que entende.",
+          "insight": "Negar a Deus é corrupção; a salvação de Israel virá de Sião.",
+          "objective": "Deus busca o sábio"
+        },
+        {
+          "ref": "Salmos 15:1–5",
+          "title": "Quem habitará",
+          "intro": "Senhor, quem habitará no teu santo monte? O que anda em sinceridade e fala a verdade.",
+          "insight": "A presença de Deus pede vida íntegra: língua, juramento e mãos limpas.",
+          "objective": "Habitar com Deus"
+        },
+        {
+          "ref": "Salmos 16:1–11",
+          "title": "Tu és o meu Senhor",
+          "intro": "Tu és a minha porção; não deixarás a minha alma na morte, nem o Santo verá corrupção.",
+          "insight": "Deus como herança e caminho de vida: à sua direita há delícias perpétuas.",
+          "objective": "Porção e vida"
+        },
+        {
+          "ref": "Salmos 17:6–15",
+          "title": "Guarda-me como a menina",
+          "intro": "A minha sentença sairá de tua presença; guarda-me como a menina dos olhos.",
+          "insight": "O justo pede proteção e se farta com a semelhança de Deus ao acordar.",
+          "objective": "Guardado por Deus"
+        },
+        {
+          "ref": "Salmos 18:1–6",
+          "title": "Rocha e libertador",
+          "intro": "Eu te amo, ó Senhor, força minha; ele estendeu a mão desde o alto e me tomou.",
+          "insight": "Amor a Deus e libertação: a Rocha ouve o clamor e tira das muitas águas.",
+          "objective": "Deus libertador"
+        },
+        {
+          "ref": "Salmos 19:1–11",
+          "title": "Os céus narram",
+          "intro": "Os céus declaram a glória de Deus; a lei do Senhor é perfeita e restaura a alma.",
+          "insight": "Criação e Escritura falam: Deus se revela no céu e na palavra que alumia.",
+          "objective": "Glória e lei"
+        },
+        {
+          "ref": "Salmos 20:1–9",
+          "title": "O Senhor te ouça",
+          "intro": "O Senhor te ouça no dia da angústia; alguns confiam em carros, nós no nome do Senhor.",
+          "insight": "A vitória não vem do armamento — vem do nome do Deus de Jacó.",
+          "objective": "Confiar no nome"
+        },
+        {
+          "ref": "Salmos 21:1–12",
+          "title": "O rei se alegra",
+          "intro": "O rei se alegra na tua força; pediu vida, e lhe deste. A mão acha os inimigos.",
+          "insight": "Deus responde ao rei com vida e alegria; a força dele sustentam o trono.",
+          "objective": "Alegria do rei"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro I 11–21",
+        "intro": "Revise os salmos desta etapa (no senhor me refugio, lábios lisonjeiros, não há deus…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro I · salmos 22–32",
+      "scenes": [
+        {
+          "ref": "Salmos 22:1–11",
+          "title": "Por que me desamparaste",
+          "intro": "Deus meu, Deus meu, por que me desamparaste? Mas tu és santo, e eu te louvarei.",
+          "insight": "O abandono gritado vira louvor: Deus não despreza a aflição do aflito.",
+          "objective": "Do abandono ao louvor",
+          "chapters": "22–23"
+        },
+        {
+          "ref": "Salmos 24:1–10",
+          "title": "Do Senhor é a terra",
+          "intro": "Do Senhor é a terra; quem subirá ao monte? Levantai, ó portas, a cabeça.",
+          "insight": "O Rei da glória entra: mãos limpas e coração puro sobem ao monte.",
+          "objective": "Rei da glória"
+        },
+        {
+          "ref": "Salmos 25:1–10",
+          "title": "A ti, Senhor, levanto",
+          "intro": "A ti, Senhor, levanto a minha alma; mostra-me os teus caminhos e lembra-te da misericórdia.",
+          "insight": "Quem espera em Deus pede caminho, perdão e amizade do Senhor.",
+          "objective": "Mostra teus caminhos"
+        },
+        {
+          "ref": "Salmos 26:1–12",
+          "title": "Julga-me, Senhor",
+          "intro": "Julga-me, Senhor, pois tenho andado na minha integridade; odeio o ajuntamento de malfeitores.",
+          "insight": "Integridade se prova no culto e nas companhias que se evitam.",
+          "objective": "Andar íntegro"
+        },
+        {
+          "ref": "Salmos 27:1–8",
+          "title": "O Senhor é a minha luz",
+          "intro": "O Senhor é a minha luz e a minha salvação; uma coisa pedi: habitar na casa do Senhor.",
+          "insight": "Medo cede à presença: o desejo central é ver a beleza do Senhor.",
+          "objective": "Luz e salvação"
+        },
+        {
+          "ref": "Salmos 28:1–9",
+          "title": "A ti clamo",
+          "intro": "A ti clamo, ó Senhor; não me arrastes com os ímpios. O Senhor é a minha força e escudo.",
+          "insight": "Clamor ouvido e coração que confia: Deus apascenta para sempre.",
+          "objective": "Força e escudo"
+        },
+        {
+          "ref": "Salmos 29:1–11",
+          "title": "Voz do Senhor",
+          "intro": "Tributai ao Senhor glória; a voz do Senhor sobre as águas quebra os cedros.",
+          "insight": "A tempestade proclama o Rei: o Senhor se assenta sobre o dilúvio.",
+          "objective": "Glória na tempestade"
+        },
+        {
+          "ref": "Salmos 30:1–12",
+          "title": "Mudaste o meu pranto",
+          "intro": "Eu te exaltarei, porque me livraste; o pranto pode durar uma noite, a alegria vem pela manhã.",
+          "insight": "Deus vira lamento em dança: a ira é por um momento, o favor é a vida.",
+          "objective": "Pranto em dança"
+        },
+        {
+          "ref": "Salmos 31:1–8",
+          "title": "Em tuas mãos",
+          "intro": "Em ti, Senhor, me refugio; em tuas mãos entrego o meu espírito. Sê forte e cobrai ânimo.",
+          "insight": "Entregar o espírito e esperar: Deus guarda o fiel na rede dos adversários.",
+          "objective": "Entregar o espírito"
+        },
+        {
+          "ref": "Salmos 32:1–11",
+          "title": "Bem-aventurado o perdoado",
+          "intro": "Bem-aventurado aquele cuja transgressão é perdoada; confessei, e tu perdoaste.",
+          "insight": "Silêncio nos ossos dói; confissão abre o perdão e o cercado de livramento.",
+          "objective": "Confessar e ser perdoado"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro I 22–32",
+        "intro": "Revise os salmos desta etapa (por que me desamparaste, do senhor é a terra, a ti, senhor, levanto…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro I · salmos 33–41",
+      "scenes": [
+        {
+          "ref": "Salmos 33:1–12",
+          "title": "Cantai ao Senhor",
+          "intro": "Cantai ao Senhor com júbilo; pela palavra do Senhor foram feitos os céus. Bem-aventurado o povo cujo Deus é o Senhor.",
+          "insight": "Criação pela palavra e nação escolhida: o olho do Senhor está sobre os que o temem.",
+          "objective": "Povo do Senhor"
+        },
+        {
+          "ref": "Salmos 34:1–10",
+          "title": "Bendizei comigo",
+          "intro": "Bendirei ao Senhor em todo o tempo; provai e vede que o Senhor é bom.",
+          "insight": "O anjo do Senhor cerca os que o temem; quem busca o bem foge do mal.",
+          "objective": "Provar que é bom"
+        },
+        {
+          "ref": "Salmos 35:1–10",
+          "title": "Contende, Senhor",
+          "intro": "Contende, Senhor, com os que contendem comigo; digam: o Senhor seja engrandecido.",
+          "insight": "O justo pede defesa contra a acusação falsa e promete louvor na grande congregação.",
+          "objective": "Deus defende"
+        },
+        {
+          "ref": "Salmos 36:1–12",
+          "title": "Fonte da vida",
+          "intro": "A tua misericórdia chega até os céus; em ti está o manancial da vida, e na tua luz vemos a luz.",
+          "insight": "Sob as asas de Deus há fartura; a luz dele faz ver.",
+          "objective": "Luz e manancial"
+        },
+        {
+          "ref": "Salmos 37:1–11",
+          "title": "Não te indignes",
+          "intro": "Não te indignes por causa dos malfeitores; deleita-te no Senhor, e ele concederá o desejo.",
+          "insight": "O justo herda a terra com mansidão; o Senhor firma os passos.",
+          "objective": "Deleitar-se no Senhor"
+        },
+        {
+          "ref": "Salmos 38:1–10",
+          "title": "Tua flecha me penetrou",
+          "intro": "Senhor, não me repreendas na ira; não há coisa sã na minha carne por causa do pecado.",
+          "insight": "Pecado e doença se misturam no lamento; a esperança ainda diz: tu responderás.",
+          "objective": "Esperar na ferida"
+        },
+        {
+          "ref": "Salmos 39:1–12",
+          "title": "Cala-me a boca",
+          "intro": "Porei mordaça à minha boca; faze-me conhecer o meu fim. Sou um estrangeiro contigo.",
+          "insight": "A vida é um sopro; a oração pede que Deus desvie o olhar da praga e dê alento.",
+          "objective": "Vida como sopro"
+        },
+        {
+          "ref": "Salmos 40:1–10",
+          "title": "Tirou-me do poço",
+          "intro": "Esperei com paciência; tirou-me de um poço de miséria. Eis-me aqui: deleito-me em fazer a tua vontade.",
+          "insight": "Do poço ao cântico novo: obediência vale mais que sacrifício.",
+          "objective": "Eis-me aqui"
+        },
+        {
+          "ref": "Salmos 41:1–12",
+          "title": "Feliz o que cuida",
+          "intro": "Bem-aventurado o que considera o pobre; na doença o Senhor o susterá. Até o amigo levantou o calcanhar.",
+          "insight": "Cuidar do fraco traz bênção; a traição dói, mas Deus firma o justo.",
+          "objective": "Cuidar do pobre"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro I 33–41",
+        "intro": "Revise os salmos desta etapa (cantai ao senhor, bendizei comigo, contende, senhor…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro II · salmos 42–51",
+      "scenes": [
+        {
+          "ref": "Salmos 42:1–11",
+          "title": "A minh’alma tem sede",
+          "intro": "Como o cervo brama pelas correntes, assim a minh’alma por ti. Por que te abates, ó minha alma?",
+          "insight": "Sede de Deus no exílio: a alma se repreende e ainda louva.",
+          "objective": "Sede de Deus"
+        },
+        {
+          "ref": "Salmos 43:1–5",
+          "title": "Envia a tua luz",
+          "intro": "Faz-me justiça, ó Deus; envia a tua luz e a tua verdade, para que me guiem.",
+          "insight": "Luz e verdade guiam de volta ao altar — e a alma volta a esperar em Deus.",
+          "objective": "Luz e verdade"
+        },
+        {
+          "ref": "Salmos 44:1–8",
+          "title": "Por amor de ti",
+          "intro": "Ouvimos com os ouvidos; mas agora nos rejeitaste. Por amor de ti somos mortos todo o dia.",
+          "insight": "A memória das vitórias e a dor presente: o povo clama sem esconder a ferida.",
+          "objective": "Clamor do povo"
+        },
+        {
+          "ref": "Salmos 45:1–9",
+          "title": "O rei formoso",
+          "intro": "O meu coração ferve; tu és o mais formoso; o cetro de equidade é o cetro do teu reino.",
+          "insight": "Cântico real e noiva: o Rei ama a justiça e a esposa se enfeita.",
+          "objective": "Rei e noiva"
+        },
+        {
+          "ref": "Salmos 46:1–11",
+          "title": "Deus é o nosso refúgio",
+          "intro": "Deus é o nosso refúgio e fortaleza; ainda que a terra se mude, não temeremos. Aquietai-vos.",
+          "insight": "No caos das nações, há um rio que alegra a cidade — e Deus está no meio dela.",
+          "objective": "Aquietai-vos"
+        },
+        {
+          "ref": "Salmos 47:1–9",
+          "title": "Batei palmas",
+          "intro": "Batei palmas, todos os povos; Deus subiu com júbilo. Reinai, Deus, sobre as nações.",
+          "insight": "O reinado de Deus é público: os povos são convocados a louvar.",
+          "objective": "Deus reina"
+        },
+        {
+          "ref": "Salmos 48:1–12",
+          "title": "Grande é o Senhor",
+          "intro": "Grande é o Senhor e mui digno de louvor na cidade do nosso Deus. Contai às gerações.",
+          "insight": "Sião é bela e segura; a misericórdia de Deus se conta de geração em geração.",
+          "objective": "Cidade de Deus"
+        },
+        {
+          "ref": "Salmos 49:1–12",
+          "title": "Ricos que perecem",
+          "intro": "Ouvi isto, todos os povos; os que confiam na sua fazenda. O homem na honra não permanece.",
+          "insight": "Riqueza não resgata a alma; a morte pastoreia os que vivem sem entendimento.",
+          "objective": "Riqueza sem resgate"
+        },
+        {
+          "ref": "Salmos 50:7–15",
+          "title": "Deus vem e não cala",
+          "intro": "O Senhor vem e não se calará; não aceito novilhos da tua casa. Oferece ações de graças.",
+          "insight": "O culto verdadeiro é gratidão e caminho reto — não só animais no altar.",
+          "objective": "Culto de gratidão"
+        },
+        {
+          "ref": "Salmos 51:1–6",
+          "title": "Cria em mim",
+          "intro": "Tem misericórdia de mim; cria em mim um coração puro e renova o espírito.",
+          "insight": "Contra Deus pecamos; o sacrifício aceitável é o espírito quebrantado.",
+          "objective": "Coração puro"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro II 42–51",
+        "intro": "Revise os salmos desta etapa (a minh’alma tem sede, envia a tua luz, por amor de ti…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro II · salmos 52–61",
+      "scenes": [
+        {
+          "ref": "Salmos 52:1–9",
+          "title": "Língua destruidora",
+          "intro": "Por que te glorias na maldade? O Senhor te destruirá para sempre; eu sou como oliveira verde.",
+          "insight": "A língua que ama o mal cai; o justo confia na misericórdia de Deus para sempre.",
+          "objective": "Oliveira que confia"
+        },
+        {
+          "ref": "Salmos 53:1–6",
+          "title": "O tolo outra vez",
+          "intro": "Diz o tolo: não há Deus. Deus olha dos céus. Oxalá de Sião viesse a salvação.",
+          "insight": "A corrupção se repete; a esperança do povo continua em Sião.",
+          "objective": "Salvação de Sião"
+        },
+        {
+          "ref": "Salmos 54:1–7",
+          "title": "Salva-me pelo teu nome",
+          "intro": "Salva-me, ó Deus, pelo teu nome; estranhos se levantam contra mim. Oferecertei de boa vontade.",
+          "insight": "O nome de Deus salva; o justo responde com oferta voluntária e louvor.",
+          "objective": "Salvo pelo nome"
+        },
+        {
+          "ref": "Salmos 55:1–8",
+          "title": "Lança o teu cuidado",
+          "intro": "O meu coração está angustiado; lança o teu cuidado sobre o Senhor, e ele te susterá.",
+          "insight": "A traição do amigo dói; a saída é lançar o cuidado sobre quem sustenta.",
+          "objective": "Lançar o cuidado"
+        },
+        {
+          "ref": "Salmos 56:1–12",
+          "title": "Em Deus confio",
+          "intro": "Tem misericórdia de mim; em Deus confio e não temerei. Tu contaste as minhas deambulações.",
+          "insight": "Lágrimas no odre de Deus: confiança vence o medo do homem.",
+          "objective": "Não temerei"
+        },
+        {
+          "ref": "Salmos 57:1–11",
+          "title": "À sombra das tuas asas",
+          "intro": "Tem misericórdia; na sombra das tuas asas me abrigo até que passem as calamidades.",
+          "insight": "No meio dos leões, o coração firme canta: eleva-te sobre os céus, ó Deus.",
+          "objective": "Abrigo nas asas"
+        },
+        {
+          "ref": "Salmos 58:1–11",
+          "title": "Juízes injustos",
+          "intro": "Falais deveras a justiça? No ventre se desviaram. O justo se alegrará quando vir a vingança.",
+          "insight": "Há juízo para juízes maus; a terra saberá que há um Deus que julga.",
+          "objective": "Deus julga"
+        },
+        {
+          "ref": "Salmos 59:1–12",
+          "title": "Livra-me dos inimigos",
+          "intro": "Livra-me dos meus inimigos; à noite uivam como cães. Eu cantarei a tua força de manhã.",
+          "insight": "Deus é alto refúgio no dia da angústia; de manhã o louvor sobe.",
+          "objective": "Força de manhã"
+        },
+        {
+          "ref": "Salmos 60:1–12",
+          "title": "Restaurados por Deus",
+          "intro": "Ó Deus, tu nos rejeitaste; dá-nos socorro na angústia, porque vão é o socorro humano.",
+          "insight": "Quando a terra treme, só Deus pisa os inimigos e firma o estandarte.",
+          "objective": "Socorro divino"
+        },
+        {
+          "ref": "Salmos 61:1–8",
+          "title": "Do fim da terra",
+          "intro": "Desde o extremo da terra clamo; leva-me para a rocha que é mais alta do que eu.",
+          "insight": "Voto e refúgio: habitar nas tendas de Deus para sempre.",
+          "objective": "Rocha mais alta"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro II 52–61",
+        "intro": "Revise os salmos desta etapa (língua destruidora, o tolo outra vez, salva-me pelo teu nome…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro II · salmos 62–71",
+      "scenes": [
+        {
+          "ref": "Salmos 62:1–12",
+          "title": "Só em Deus",
+          "intro": "A minh’alma espera somente em Deus; só ele é a minha rocha. Não confieis na opressão.",
+          "insight": "Silêncio confiante: poder e misericórdia pertencem a Deus.",
+          "objective": "Só em Deus"
+        },
+        {
+          "ref": "Salmos 63:1–11",
+          "title": "Sede na terra seca",
+          "intro": "Ó Deus, tu és o meu Deus; cedo te buscarei. A tua graça é melhor do que a vida.",
+          "insight": "Na terra seca, a alma se farta como em tutano; os lábios louvam.",
+          "objective": "Graça melhor que a vida"
+        },
+        {
+          "ref": "Salmos 64:1–10",
+          "title": "Esconde-me do secreto",
+          "intro": "Ouve a minha voz; esconde-me do secreto conselho dos maus. Deus os ferirá.",
+          "insight": "A língua afiada dos inimigos vira contra eles; o reto se alegra no Senhor.",
+          "objective": "Deus revela o laço"
+        },
+        {
+          "ref": "Salmos 65:1–12",
+          "title": "A ti, ó Deus, espera",
+          "intro": "A ti, ó Deus, espera o louvor em Sião; tu visitas a terra e a regas em abundância.",
+          "insight": "Perdão, presença e colheita: Deus farta a terra e o povo com bondade.",
+          "objective": "Deus que visita"
+        },
+        {
+          "ref": "Salmos 66:1–12",
+          "title": "Vinde e vede",
+          "intro": "Aclamai a Deus, toda a terra; ele converteu o mar em terra seca. Provaste-nos como a prata.",
+          "insight": "Prova e libertação: os votos se pagam com louvor na casa de Deus.",
+          "objective": "Provados e livres"
+        },
+        {
+          "ref": "Salmos 67:1–7",
+          "title": "Deus tenha misericórdia",
+          "intro": "Deus tenha misericórdia de nós e nos abençoe; para que se conheça na terra o teu caminho.",
+          "insight": "Bênção sobre o povo para que as nações louvem: a terra dará o seu fruto.",
+          "objective": "Bênção para as nações"
+        },
+        {
+          "ref": "Salmos 68:1–10",
+          "title": "Levanta-se Deus",
+          "intro": "Levanta-se Deus, e os seus inimigos se espalham; pai dos órfãos e juiz das viúvas.",
+          "insight": "O Deus do Sinai carrega cargas e habita com o fraco; bendito seja.",
+          "objective": "Pai de órfãos"
+        },
+        {
+          "ref": "Salmos 69:1–12",
+          "title": "As águas me sobem",
+          "intro": "Salva-me, ó Deus, porque as águas me sobem até a alma; o zelo da tua casa me consumiu.",
+          "insight": "O sofredor inocente clama; o louvor agrada mais do que boi com chifres.",
+          "objective": "Zelo e clamor"
+        },
+        {
+          "ref": "Salmos 70:1–5",
+          "title": "Apressa-te, ó Deus",
+          "intro": "Apressa-te, ó Deus, em me livrar; digam sempre: engrandecido seja Deus.",
+          "insight": "Oração curta e urgente: Deus como socorro e libertador que não demora.",
+          "objective": "Socorro depressa"
+        },
+        {
+          "ref": "Salmos 71:1–9",
+          "title": "Em ti me refugio",
+          "intro": "Em ti, Senhor, me refúgio; não me rejeites no tempo da velhice. Eu esperarei de contínuo.",
+          "insight": "Da juventude à velhice, a boca anuncia a justiça de Deus o dia todo.",
+          "objective": "Fidelidade na velhice"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro II 62–71",
+        "intro": "Revise os salmos desta etapa (só em deus, sede na terra seca, esconde-me do secreto…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro II · salmos 72–72",
+      "scenes": [
+        {
+          "ref": "Salmos 72:1–11",
+          "title": "O rei justo",
+          "intro": "Ó Deus, dá ao rei os teus juízos; ele julgará o teu povo com justiça e os pobres.",
+          "insight": "O reinado ideal defende o pobre; a terra se enche da glória de Deus.",
+          "objective": "Rei que defende"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro II 72–72",
+        "intro": "Revise os salmos desta etapa (o rei justo…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro III · salmos 73–82",
+      "scenes": [
+        {
+          "ref": "Salmos 73:1–12",
+          "title": "Quase me desviaram",
+          "intro": "Quanto a mim, os meus pés quase escorregaram ao ver a prosperidade dos ímpios — até que entrei no santuário.",
+          "insight": "No santuário a conta fecha: Deus é a porção para sempre.",
+          "objective": "Porção no santuário"
+        },
+        {
+          "ref": "Salmos 74:1–11",
+          "title": "Até quando, ó Deus",
+          "intro": "Por que nos rejeitas para sempre? Lembrou-te da tua congregação. Levanta-te, ó Deus.",
+          "insight": "O santuário profanado e o povo sem sinais: a fé ainda apela à aliança.",
+          "objective": "Lembra a aliança"
+        },
+        {
+          "ref": "Salmos 75:1–10",
+          "title": "Deus é o juiz",
+          "intro": "Graças te damos; Deus é o juiz: a um abate e a outro exalta. Não vos ensoberbeçais.",
+          "insight": "O cálice está na mão de Deus; a soberba será cortada.",
+          "objective": "Deus exalta e abate"
+        },
+        {
+          "ref": "Salmos 76:1–12",
+          "title": "Conhecido em Judá",
+          "intro": "Conhecido é Deus em Judá; quebras o furor, e o príncipe dos príncipes te teme.",
+          "insight": "Deus desarma guerras e exige que se cumpram os votos feitos a ele.",
+          "objective": "Deus que desarma"
+        },
+        {
+          "ref": "Salmos 77:1–12",
+          "title": "Lembro-me de Deus",
+          "intro": "Clamo a Deus, e ele me ouvirá; lembro-me das tuas maravilhas, do caminho no mar.",
+          "insight": "Na noite sem consolo, a memória dos feitos de Deus reabre a esperança.",
+          "objective": "Lembrar as maravilhas"
+        },
+        {
+          "ref": "Salmos 78:1–8",
+          "title": "Contai aos filhos",
+          "intro": "Escutai a minha lei; contaremos aos filhos os louvores do Senhor — e eles se rebelaram.",
+          "insight": "A história de Israel ensina: Deus é fiel, e o povo esquece. Não sejais como os pais.",
+          "objective": "Ensinar a história"
+        },
+        {
+          "ref": "Salmos 79:1–9",
+          "title": "As nações entraram",
+          "intro": "Ó Deus, as nações entraram na tua herança; até quando arderá o teu zelo? Nós, teu povo, te louvaremos.",
+          "insight": "Destruição e zombaria: o povo pede perdão e livramento pelo nome de Deus.",
+          "objective": "Pelo teu nome"
+        },
+        {
+          "ref": "Salmos 80:1–7",
+          "title": "Pastor de Israel",
+          "intro": "Ó pastor de Israel, escuta; faze resplandecer o teu rosto, e seremos salvos.",
+          "insight": "A vide transplantada do Egito precisa do rosto de Deus para reviver.",
+          "objective": "Rosto que salva"
+        },
+        {
+          "ref": "Salmos 81:1–12",
+          "title": "Ouviste, povo meu",
+          "intro": "Cantai a Deus, nossa força; ouviste, povo meu. Ah, se me ouvires, Israel!",
+          "insight": "Deus livrou e pediu escuta; o povo quis o próprio conselho e perdeu a fartura.",
+          "objective": "Ouvir para ser farto"
+        },
+        {
+          "ref": "Salmos 82:1–8",
+          "title": "Deuses e juízo",
+          "intro": "Deus está na assembleia; até quando julgareis injustamente? Levantai-vos, ó Deus.",
+          "insight": "Juízes humanos caem como qualquer príncipe; o juízo final é de Deus.",
+          "objective": "Julgar com justiça"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro III 73–82",
+        "intro": "Revise os salmos desta etapa (quase me desviaram, até quando, ó deus, deus é o juiz…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro III · salmos 83–89",
+      "scenes": [
+        {
+          "ref": "Salmos 83:1–8",
+          "title": "Não te silencies",
+          "intro": "Ó Deus, não estejas quieto; teus inimigos se agitam. Que saibam que só tu és o Altíssimo.",
+          "insight": "A coalizão contra o povo vira oração: Deus, mostra quem és.",
+          "objective": "Só tu és Altíssimo"
+        },
+        {
+          "ref": "Salmos 84:1–12",
+          "title": "Quão amáveis",
+          "intro": "Quão amáveis são os teus tabernáculos; um dia nos teus átrios vale mais que mil.",
+          "insight": "Quem tem Deus por sol e escudo anda de força em força até Sião.",
+          "objective": "Um dia nos átrios"
+        },
+        {
+          "ref": "Salmos 85:1–12",
+          "title": "Restauraste-nos",
+          "intro": "Restauraste, Senhor, a sorte de Jacó; a misericórdia e a verdade se encontraram.",
+          "insight": "Perdão passado e paz futura: a justiça e a paz se beijam na terra.",
+          "objective": "Misericórdia e verdade"
+        },
+        {
+          "ref": "Salmos 86:1–10",
+          "title": "Inclina os ouvidos",
+          "intro": "Inclina, Senhor, os teus ouvidos; tu és bom e perdoador. Une o meu coração ao temor do teu nome.",
+          "insight": "No dia da angústia o servo clama; Deus grande em misericórdia responde.",
+          "objective": "Coração unido"
+        },
+        {
+          "ref": "Salmos 87:1–7",
+          "title": "Sião, mãe dos povos",
+          "intro": "O Senhor ama as portas de Sião; deste e daquele se dirá: nasceu em Sião.",
+          "insight": "Deus registra as nações em Sião: a cidade santa é mãe de muitos.",
+          "objective": "Nascidos em Sião"
+        },
+        {
+          "ref": "Salmos 88:1–9",
+          "title": "Clamo de dia e de noite",
+          "intro": "Senhor, Deus da minha salvação, clamo de dia e de noite; amigo e companheiro afastaste.",
+          "insight": "O salmo mais escuro ainda fala a Deus: mesmo sem saída visível, há oração.",
+          "objective": "Clamar no escuro"
+        },
+        {
+          "ref": "Salmos 89:1–8",
+          "title": "A aliança com Davi",
+          "intro": "Cantarei as misericórdias do Senhor; fiz aliança com meu escolhido. Até quando, Senhor?",
+          "insight": "Promessa a Davi e crise presente: a fé segura a aliança mesmo na disciplina.",
+          "objective": "Aliança firme"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro III 83–89",
+        "intro": "Revise os salmos desta etapa (não te silencies, quão amáveis, restauraste-nos…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro IV · salmos 90–99",
+      "scenes": [
+        {
+          "ref": "Salmos 90:1–12",
+          "title": "Tu és Deus",
+          "intro": "Senhor, tu tens sido o nosso refúgio; mil anos aos teus olhos são como o dia de ontem. Ensina-nos a contar os nossos dias.",
+          "insight": "Mortalidade e misericórdia: a sabedoria do coração começa no eterno Deus.",
+          "objective": "Contar os dias"
+        },
+        {
+          "ref": "Salmos 91:1–12",
+          "title": "À sombra do Altíssimo",
+          "intro": "Quem habita no esconderijo do Altíssimo descansa à sombra. Nenhum mal te sucederá.",
+          "insight": "Anjos, livramento e amor: Deus se liga a quem conhece o seu nome.",
+          "objective": "Habitar no esconderijo"
+        },
+        {
+          "ref": "Salmos 92:1–12",
+          "title": "Bom é louvar",
+          "intro": "Bom é louvar ao Senhor e cantar louvores; o justo florescerá como a palmeira.",
+          "insight": "Louvor de manhã e à noite: na velhice o justo ainda dá fruto.",
+          "objective": "Florescer como palmeira"
+        },
+        {
+          "ref": "Salmos 93:1–5",
+          "title": "O Senhor reina",
+          "intro": "O Senhor reina; está vestido de majestade. Mais que a voz das muitas águas é o Senhor.",
+          "insight": "Trono firme desde a antiguidade: a santidade ornamente a casa de Deus.",
+          "objective": "Trono eterno"
+        },
+        {
+          "ref": "Salmos 94:1–11",
+          "title": "Deus das vinganças",
+          "intro": "Ó Deus das vinganças, aparece; até quando os ímpios triunfarão? O Senhor não rejeitará o seu povo.",
+          "insight": "Quando a opressão ri, Deus ouve; bem-aventurado quem ele disciplina.",
+          "objective": "Deus não rejeita"
+        },
+        {
+          "ref": "Salmos 95:1–11",
+          "title": "Hoje, se ouvirdes",
+          "intro": "Vinde, cantemos; o mar é dele. Hoje, se ouvirdes a sua voz, não endureçais o coração.",
+          "insight": "Louvor e aviso: o deserto ensina a não endurecer quando Deus fala.",
+          "objective": "Não endurecer"
+        },
+        {
+          "ref": "Salmos 96:1–12",
+          "title": "Cantai novo cântico",
+          "intro": "Cantai ao Senhor um cântico novo; anunciai entre as nações a sua glória. Ele julgará com justiça.",
+          "insight": "Missão e culto: toda a terra é chamada a tremer diante do Criador.",
+          "objective": "Glória entre as nações"
+        },
+        {
+          "ref": "Salmos 97:1–12",
+          "title": "O Senhor reina",
+          "intro": "O Senhor reina; a terra se alegre. Odeiais o mal, vós que amais o Senhor.",
+          "insight": "Nuvem e trevas ao redor dele; luz se semeia para o justo.",
+          "objective": "Amar o Senhor"
+        },
+        {
+          "ref": "Salmos 98:1–9",
+          "title": "Maravilhas do Senhor",
+          "intro": "Cantai ao Senhor um cântico novo, porque ele fez maravilhas; os rios batam palmas.",
+          "insight": "Salvação revelada às nações: toda a criação aplaude o juízo reto.",
+          "objective": "Criação que aplaude"
+        },
+        {
+          "ref": "Salmos 99:1–9",
+          "title": "Santo é o Senhor",
+          "intro": "O Senhor reina; santidade é o esplendor da sua casa. Moisés e Arão clamaram, e ele respondeu.",
+          "insight": "Deus santo perdoa e vinga: o povo deve exaltar o seu nome.",
+          "objective": "Santo é ele"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro IV 90–99",
+        "intro": "Revise os salmos desta etapa (tu és deus, à sombra do altíssimo, bom é louvar…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro IV · salmos 100–106",
+      "scenes": [
+        {
+          "ref": "Salmos 100:1–5",
+          "title": "Celebrai com júbilo",
+          "intro": "Celebrai com júbilo ao Senhor; sabeis que o Senhor é Deus. A sua misericórdia dura para sempre.",
+          "insight": "Entrar pelas portas com ações de graças: somos povo do seu pasto.",
+          "objective": "Portas com gratidão"
+        },
+        {
+          "ref": "Salmos 101:1–8",
+          "title": "Canto à misericórdia",
+          "intro": "Cantarei a misericórdia e o juízo; não porei coisa vil diante dos meus olhos.",
+          "insight": "O rei promete casa íntegra: longe do perverso, perto dos fiéis da terra.",
+          "objective": "Casa íntegra"
+        },
+        {
+          "ref": "Salmos 102:1–12",
+          "title": "Oração do aflito",
+          "intro": "Ouve a minha oração, Senhor; os meus dias são como sombra. Tu, porém, permaneces para sempre.",
+          "insight": "O aflito e Sião: Deus olha da sua santidade e reconstrói.",
+          "objective": "Deus permanece"
+        },
+        {
+          "ref": "Salmos 103:1–12",
+          "title": "Bendize, ó minh’alma",
+          "intro": "Bendize, ó minh’alma, ao Senhor; ele perdoa, sara, resgata e coroa. Como um pai se compadece.",
+          "insight": "Misericórdia do oriente ao ocidente: o pó é lembrado, e a aliança permanece.",
+          "objective": "Como um pai"
+        },
+        {
+          "ref": "Salmos 104:1–12",
+          "title": "Deus da criação",
+          "intro": "Bendize ao Senhor; ele estendeu os céus. Todos esperam de ti que lhes dês o sustento a seu tempo.",
+          "insight": "Criação abundante e sopro que volta: enquanto eu viver, cantarei ao Senhor.",
+          "objective": "Sustento a seu tempo"
+        },
+        {
+          "ref": "Salmos 105:1–11",
+          "title": "Lembrai as maravilhas",
+          "intro": "Lembrai-vos das maravilhas; ele se lembrou da sua santa palavra a Abraão e tirou o povo com júbilo.",
+          "insight": "História da aliança: de Canaã ao êxodo, Deus cumpre o que jurou.",
+          "objective": "Deus se lembra"
+        },
+        {
+          "ref": "Salmos 106:1–12",
+          "title": "Pecamos com os pais",
+          "intro": "Louvai ao Senhor; pecamos com os nossos pais. Mesmo assim, ele os salvou por amor do seu nome.",
+          "insight": "Memória do fracasso e da graça: salva-nos, Senhor, e louvaremos.",
+          "objective": "Graça apesar do pecado"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro IV 100–106",
+        "intro": "Revise os salmos desta etapa (celebrai com júbilo, canto à misericórdia, oração do aflito…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro V · salmos 107–116",
+      "scenes": [
+        {
+          "ref": "Salmos 107:1–9",
+          "title": "Louvai ao Senhor",
+          "intro": "Louvai ao Senhor, porque ele é bom; clamaram na angústia, e ele os livrou. Quem é sábio observe.",
+          "insight": "Deserto, prisão, doença e mar: Deus livra — e o sábio presta atenção.",
+          "objective": "Observar a bondade"
+        },
+        {
+          "ref": "Salmos 108:1–12",
+          "title": "O meu coração está firme",
+          "intro": "O meu coração está firme; despertarei a aurora. Dá-nos socorro, porque vão é o humano.",
+          "insight": "Louvor cedo e vitória pedida: só Deus pisa os inimigos.",
+          "objective": "Coração firme"
+        },
+        {
+          "ref": "Salmos 109:1–8",
+          "title": "Boca de mentira",
+          "intro": "Ó Deus do meu louvor, não te cales; cercaram-me com palavras de ódio. Livra-me.",
+          "insight": "Acusação e oração imprecatoria: o pobre e necessitado ainda louva no meio da assembleia.",
+          "objective": "Deus do louvor"
+        },
+        {
+          "ref": "Salmos 110:1–7",
+          "title": "Assenta-te à minha direita",
+          "intro": "Disse o Senhor ao meu Senhor: assenta-te à minha direita. Tu és sacerdote eterno.",
+          "insight": "Rei e sacerdote segundo Melquisedeque: o cetro sai de Sião.",
+          "objective": "Rei sacerdote"
+        },
+        {
+          "ref": "Salmos 111:1–10",
+          "title": "Grandes obras",
+          "intro": "Louvai ao Senhor; grandes são as obras do Senhor. O temor do Senhor é o princípio da sabedoria.",
+          "insight": "Obras, aliança e preceitos: quem os pratica tem bom entendimento.",
+          "objective": "Princípio da sabedoria"
+        },
+        {
+          "ref": "Salmos 112:1–10",
+          "title": "Bem-aventurado o que teme",
+          "intro": "Bem-aventurado o homem que teme ao Senhor; a sua justiça permanece. Não temerá más notícias.",
+          "insight": "Generosidade e firmeza: a luz raia nas trevas para o reto.",
+          "objective": "Não temer notícias"
+        },
+        {
+          "ref": "Salmos 113:1–9",
+          "title": "Do pó à glória",
+          "intro": "Louvai, servos do Senhor; ele levanta o pobre do pó e o coloca com os príncipes.",
+          "insight": "Do nascente ao poente o nome é louvado; Deus habita nas alturas e olha para baixo.",
+          "objective": "Levantar o pobre"
+        },
+        {
+          "ref": "Salmos 114:1–8",
+          "title": "O mar viu e fugiu",
+          "intro": "Quando Israel saiu do Egito, o mar viu e fugiu; a terra estremeceu diante de Deus.",
+          "insight": "O êxodo ainda ecoa: a criação reage à presença do Deus de Jacó.",
+          "objective": "Presença que abala"
+        },
+        {
+          "ref": "Salmos 115:1–12",
+          "title": "A nós não, Senhor",
+          "intro": "Não a nós, Senhor, mas ao teu nome dá glória. Os ídolos têm boca e não falam; Deus é o nosso auxílio.",
+          "insight": "Ídolos mudos versus Deus vivo: os que o temem confiam nele.",
+          "objective": "Glória ao nome"
+        },
+        {
+          "ref": "Salmos 116:1–12",
+          "title": "Amo o Senhor",
+          "intro": "Amo o Senhor, porque ele ouviu; na minha angústia invoquei. Que darei ao Senhor por todos os benefícios?",
+          "insight": "Livramento da morte e votos pagos na presença de todo o povo.",
+          "objective": "Que darei ao Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro V 107–116",
+        "intro": "Revise os salmos desta etapa (louvai ao senhor, o meu coração está firme, boca de mentira…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro V · salmos 117–126",
+      "scenes": [
+        {
+          "ref": "Salmos 117:1–2",
+          "title": "Louvai, nações",
+          "intro": "Louvai ao Senhor, todas as nações; a sua misericórdia é grande, e a verdade dura para sempre.",
+          "insight": "O salmo mais curto chama o mundo inteiro ao louvor.",
+          "objective": "Todas as nações"
+        },
+        {
+          "ref": "Salmos 118:19–29",
+          "title": "A pedra rejeitada",
+          "intro": "Louvai ao Senhor, porque ele é bom; a pedra que os edificadores rejeitaram tornou-se cabeça de esquina.",
+          "insight": "Dia que o Senhor fez: portas da justiça se abrem para o louvor.",
+          "objective": "Pedra angular"
+        },
+        {
+          "ref": "Salmos 119:105–112",
+          "title": "Lâmpada para os pés",
+          "intro": "Bem-aventurados os que andam na lei; lâmpada para os meus pés é a tua palavra, e luz para o meu caminho.",
+          "insight": "A palavra guarda, alegra e alumia: o servo se apega aos preceitos.",
+          "objective": "Palavra que alumia"
+        },
+        {
+          "ref": "Salmos 120:1–7",
+          "title": "Livra-me dos lábios",
+          "intro": "Na minha angústia clamei; livra-me dos lábios mentirosos. Ai de mim, que moro em Meseque.",
+          "insight": "Longe da paz, o peregrino pede livramento da língua falsa.",
+          "objective": "Longe da paz"
+        },
+        {
+          "ref": "Salmos 121:1–8",
+          "title": "O Senhor te guarda",
+          "intro": "Levanto os olhos para os montes; o Senhor é quem te guarda. Não dormita nem dorme.",
+          "insight": "Ajuda vem do Criador: ele guarda a saída e a entrada para sempre.",
+          "objective": "Guarda que não dorme"
+        },
+        {
+          "ref": "Salmos 122:1–9",
+          "title": "Alegrei-me",
+          "intro": "Alegrei-me quando me disseram: vamos à casa do Senhor. Orai pela paz de Jerusalém.",
+          "insight": "Peregrinos em festa: paz nas muralhas e bem para os irmãos.",
+          "objective": "Paz de Jerusalém"
+        },
+        {
+          "ref": "Salmos 123:1–4",
+          "title": "Como os olhos dos servos",
+          "intro": "A ti levanto os olhos; como os olhos dos servos à mão dos seus senhores, assim os nossos a Deus.",
+          "insight": "Mera misericórdia pedida sob o desprezo dos arrogantes.",
+          "objective": "Olhos no Senhor"
+        },
+        {
+          "ref": "Salmos 124:1–8",
+          "title": "Se não fora o Senhor",
+          "intro": "Se não fora o Senhor a nosso favor, as águas nos teriam submergido. O nosso auxílio está no nome.",
+          "insight": "Livramento como pássaro da armadilha: o auxílio tem nome.",
+          "objective": "Auxílio no nome"
+        },
+        {
+          "ref": "Salmos 125:1–5",
+          "title": "Como Monte Sião",
+          "intro": "Os que confiam no Senhor são como o Monte Sião; a vara da impiedade não repousará sobre a sorte dos justos.",
+          "insight": "Estabilidade e cercania: Deus cerca o seu povo desde agora e para sempre.",
+          "objective": "Como Sião"
+        },
+        {
+          "ref": "Salmos 126:1–6",
+          "title": "Restaurados com canto",
+          "intro": "Quando o Senhor restaurou a sorte de Sião, ficamos como quem sonha. Quem semeia com lágrimas colherá com júbilo.",
+          "insight": "Restauração e semeadura: o choro do plantio vira canção na colheita.",
+          "objective": "Semeadura com lágrimas"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro V 117–126",
+        "intro": "Revise os salmos desta etapa (louvai, nações, a pedra rejeitada, lâmpada para os pés…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro V · salmos 127–136",
+      "scenes": [
+        {
+          "ref": "Salmos 127:1–5",
+          "title": "Se o Senhor não edificar",
+          "intro": "Se o Senhor não edificar a casa, em vão trabalham; os filhos são herança do Senhor.",
+          "insight": "Trabalho e família sob a bênção: sem Deus, a vigília é vã.",
+          "objective": "Casa que Deus edifica"
+        },
+        {
+          "ref": "Salmos 128:1–6",
+          "title": "Temor e mesa",
+          "intro": "Bem-aventurado o que teme ao Senhor; comerás do trabalho das tuas mãos. Assim será abençoado o homem.",
+          "insight": "Temor, mesa farta e filhos como oliveiras: bênção sobre Israel.",
+          "objective": "Temor na casa"
+        },
+        {
+          "ref": "Salmos 129:1–8",
+          "title": "Muitas vezes me angustiaram",
+          "intro": "Muitas vezes me angustiaram desde a minha mocidade; o Senhor é justo e corta as cordas dos ímpios.",
+          "insight": "A história de opressão não apaga a justiça: Sião não é colhida pelos que odeiam.",
+          "objective": "Cordas cortadas"
+        },
+        {
+          "ref": "Salmos 130:1–8",
+          "title": "Das profundezas",
+          "intro": "Das profundezas clamo a ti; se tu, Senhor, observares as iniquidades… Mas contigo está o perdão.",
+          "insight": "Espera mais que o guarda pela manhã: no Senhor há benignidade e redenção.",
+          "objective": "Das profundezas"
+        },
+        {
+          "ref": "Salmos 131:1–3",
+          "title": "Como criança desmamada",
+          "intro": "Senhor, não é altivo o meu coração; aquietei a minh’alma como a criança desmamada.",
+          "insight": "Humildade e quietude: Israel espera no Senhor desde agora e para sempre.",
+          "objective": "Alma quieta"
+        },
+        {
+          "ref": "Salmos 132:1–12",
+          "title": "O juramento a Davi",
+          "intro": "Lembra-te, Senhor, de Davi; não darei sono aos meus olhos até achar lugar para o Senhor. O Senhor jurou a Davi.",
+          "insight": "Arca, Sião e lâmpada para o ungido: Deus escolhe morada e sustenta o rei.",
+          "objective": "Lugar para o Senhor"
+        },
+        {
+          "ref": "Salmos 133:1–3",
+          "title": "Que bom e agradável",
+          "intro": "Oh! quão bom e quão suave é que os irmãos vivam em união; como o óleo sobre a cabeça.",
+          "insight": "Unidade abençoada: ali o Senhor ordena a vida para sempre.",
+          "objective": "Irmãos em união"
+        },
+        {
+          "ref": "Salmos 134:1–3",
+          "title": "Bendizei na noite",
+          "intro": "Eis: bendizei ao Senhor, todos os servos, na casa do Senhor, nas noites. O Senhor te abençoe desde Sião.",
+          "insight": "Louvor noturno e bênção desde Sião: o culto não dorme.",
+          "objective": "Bênção de Sião"
+        },
+        {
+          "ref": "Salmos 135:1–7",
+          "title": "Nosso Deus faz",
+          "intro": "Louvai o nome do Senhor; o nosso Deus está nos céus e faz tudo o que lhe agrada. Ídolos são prata e ouro.",
+          "insight": "Deus escolheu Jacó e fere os ídolos; a casa de Israel louva.",
+          "objective": "Deus que faz"
+        },
+        {
+          "ref": "Salmos 136:1–9",
+          "title": "Porque a sua misericórdia",
+          "intro": "Louvai ao Senhor, porque ele é bom, porque a sua misericórdia dura para sempre — na criação e no êxodo.",
+          "insight": "Refrão da aliança: cada feito de Deus carrega misericórdia que não acaba.",
+          "objective": "Misericórdia para sempre"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro V 127–136",
+        "intro": "Revise os salmos desta etapa (se o senhor não edificar, temor e mesa, muitas vezes me angustiaram…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro V · salmos 137–146",
+      "scenes": [
+        {
+          "ref": "Salmos 137:1–9",
+          "title": "Junto aos rios da Babilônia",
+          "intro": "Junto aos rios da Babilônia nos sentamos e choramos; como cantaremos em terra estranha?",
+          "insight": "Exílio e memória de Sião: a dor se recusa a divertir os opressores.",
+          "objective": "Saudade de Sião"
+        },
+        {
+          "ref": "Salmos 138:1–8",
+          "title": "De todo o coração",
+          "intro": "De todo o coração eu te louvarei; o Senhor olha para o humilde. O Senhor aperfeiçoará o que me concerne.",
+          "insight": "Louvor perante os deuses e cuidado pessoal: a misericórdia dura para sempre.",
+          "objective": "Deus aperfeiçoa"
+        },
+        {
+          "ref": "Salmos 139:1–12",
+          "title": "Tu me conheces",
+          "intro": "Senhor, tu me sondas e me conheces; para onde irei do teu Espírito? Sonda-me e conhece o meu coração.",
+          "insight": "Onisciência e presença: somos temerosamente e maravilhosamente feitos.",
+          "objective": "Sonda-me"
+        },
+        {
+          "ref": "Salmos 140:1–12",
+          "title": "Livra-me do homem mau",
+          "intro": "Livra-me, Senhor, do homem mau; línguas afiadas e laços. Tu és o meu Deus; ouve a voz das minhas súplicas.",
+          "insight": "Proteção contra violência e língua: o justo louvará o teu nome.",
+          "objective": "Livrar do mau"
+        },
+        {
+          "ref": "Salmos 141:1–10",
+          "title": "A minha oração",
+          "intro": "Senhor, a ti clamo; seja a minha oração como o incenso. Põe guarda à minha boca.",
+          "insight": "Oração como incenso e correção do justo: melhor ferida de amigo que óleo de ímpio.",
+          "objective": "Guarda à boca"
+        },
+        {
+          "ref": "Salmos 142:1–7",
+          "title": "Clamo com a voz",
+          "intro": "Com a minha voz clamo ao Senhor; não há quem cuide da minha alma. Tu és o meu refúgio.",
+          "insight": "Solidão na caverna: Deus conhece a vereda e tira da prisão para louvor.",
+          "objective": "Ninguém mais cuida"
+        },
+        {
+          "ref": "Salmos 143:1–12",
+          "title": "Ouve a minha oração",
+          "intro": "Ouve, Senhor, a minha oração; não entres em juízo com o teu servo. Ensina-me a fazer a tua vontade.",
+          "insight": "Espírito desfalecido e sede de Deus: o servo pede caminho pela manhã.",
+          "objective": "Ensinar a vontade"
+        },
+        {
+          "ref": "Salmos 144:1–10",
+          "title": "Bendito seja o Senhor",
+          "intro": "Bendito seja o Senhor, a minha rocha; o homem é como um sopro. Livra-me e dá prosperidade ao povo.",
+          "insight": "Deus treina as mãos para a guerra e enche os celeiros — e o povo é feliz.",
+          "objective": "Rocha e povo"
+        },
+        {
+          "ref": "Salmos 145:1–13",
+          "title": "Grandioso és tu",
+          "intro": "Eu te exaltarei, meu Deus; cada geração louvará as tuas obras. O Senhor é bom para todos.",
+          "insight": "Reinado eterno e mão aberta: Deus sustenta os que caem e ouve o clamor.",
+          "objective": "Bom para todos"
+        },
+        {
+          "ref": "Salmos 146:1–10",
+          "title": "Não confieis em príncipes",
+          "intro": "Louvai ao Senhor, ó minh’alma; não confieis em príncipes. Feliz aquele que tem o Deus de Jacó.",
+          "insight": "Deus solta os presos, abre os olhos e reina para sempre — não o príncipe mortal.",
+          "objective": "Deus de Jacó"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro V 137–146",
+        "intro": "Revise os salmos desta etapa (junto aos rios da babilônia, de todo o coração, tu me conheces…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    },
+    {
+      "title": "Livro V · salmos 147–150",
+      "scenes": [
+        {
+          "ref": "Salmos 147:1–12",
+          "title": "Ele sara os quebrantados",
+          "intro": "Louvai ao Senhor; ele sara os quebrantados e conta o número das estrelas. Ele não se deleita na força do cavalo.",
+          "insight": "Cuidado com o ferido e governo das estrelas: o temor dele é o que agrada.",
+          "objective": "Sara e conta"
+        },
+        {
+          "ref": "Salmos 148:1–12",
+          "title": "Louvai nos céus",
+          "intro": "Louvai ao Senhor desde os céus; louvai-o, sol e lua, monstros marinhos, reis e povos.",
+          "insight": "Criação inteira no coro: o nome dele é exaltado sobre a terra e os céus.",
+          "objective": "Coro da criação"
+        },
+        {
+          "ref": "Salmos 149:1–9",
+          "title": "Cântico novo em Sião",
+          "intro": "Cantai ao Senhor um cântico novo; os mansos serão adornados de salvação. Espada de dois gumes nas mãos.",
+          "insight": "Louvor na assembleia e juízo escrito: a glória é de todos os santos.",
+          "objective": "Cântico e juízo"
+        },
+        {
+          "ref": "Salmos 150:1–6",
+          "title": "Tudo que tem fôlego",
+          "intro": "Louvai a Deus no seu santuário; louvai-o com timbrel e danças. Tudo quanto tem fôlego louve ao Senhor.",
+          "insight": "O saltério fecha em festa: todo instrumento e todo fôlego para o louvor.",
+          "objective": "Tudo que tem fôlego"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Livro V 147–150",
+        "intro": "Revise os salmos desta etapa (ele sara os quebrantados, louvai nos céus, cântico novo em sião…).",
+        "insight": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      }
+    }
+  ]
+}

@@ -1,0 +1,915 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 17:3–10",
+    "passages": [
+      {
+        "ref": "2 Crônicas 17:3–10"
+      },
+      {
+        "ref": "2 Crônicas 18:12–22"
+      },
+      {
+        "ref": "2 Crônicas 19:4–11"
+      },
+      {
+        "ref": "2 Crônicas 20:15–22"
+      }
+    ],
+    "context": "Revise Josafá: caminhos de Davi, Micaías, juízes e a batalha do Senhor.",
+    "keyword": "buscou",
+    "keywordGloss": "Josafá buscou o Deus de seu pai; a etapa gira em torno de buscar e ouvir.",
+    "focusQuestion": "Você busca o Senhor e fala o que Ele manda?",
+    "reflectionPrompts": [
+      "Travessia: Josafá",
+      "Palavra verdadeira",
+      "Batalha do Senhor"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor estava com Josafá porque andou nos caminhos de Davi.",
+        "evidenceRef": "2 Crônicas 17:3",
+        "evidenceSpan": "o Senhor estava com Josafá, pois andou nos primeiros caminhos de Davi"
+      },
+      {
+        "text": "Micaías fala o que Deus disser.",
+        "evidenceRef": "2 Crônicas 18:13",
+        "evidenceSpan": "o que meu Deus me disser, isso falarei"
+      },
+      {
+        "text": "Os juízes não julgam em benefício do homem, mas em nome do Senhor.",
+        "evidenceRef": "2 Crônicas 19:6",
+        "evidenceSpan": "não julgam em benefício do homem, mas em nome do Senhor"
+      },
+      {
+        "text": "A batalha não pertence a Judá, mas a Deus.",
+        "evidenceRef": "2 Crônicas 20:15",
+        "evidenceSpan": "a batalha não pertence a vocês, mas a Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "buscou",
+        "gloss": "Ação de Josafá em relação a Deus."
+      },
+      {
+        "term": "falarei",
+        "gloss": "Compromisso de Micaías com a palavra de Deus."
+      },
+      {
+        "term": "batalha",
+        "gloss": "Pertence a Deus, não ao povo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Josafá anda e ensina a lei",
+        "evidenceRef": "2 Crônicas 17:3–9"
+      },
+      {
+        "label": "Micaías fala a verdade",
+        "evidenceRef": "2 Crônicas 18:13–22"
+      },
+      {
+        "label": "Juízes para o Senhor",
+        "evidenceRef": "2 Crônicas 19:6–7"
+      },
+      {
+        "label": "A batalha é de Deus",
+        "evidenceRef": "2 Crônicas 20:15–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O Senhor está com Josafá porque ele andou nos caminhos de Davi.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 17:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os profetas falam o que é bom; Micaías fala o que Deus disser.",
+        "marker": "Mas",
+        "evidenceRef": "2 Crônicas 18:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao louvarem, o Senhor arma emboscadas.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 20:22"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 14:14",
+        "bridge": "O Senhor pelejará por vós"
+      },
+      {
+        "ref": "Deuteronômio 16:19",
+        "bridge": "Juízes sem parcialidade"
+      },
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Confiar no nome do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A unanimidade dos profetas de Acabe garante a verdade.",
+        "why": "Micaías denuncia espírito de mentira."
+      },
+      {
+        "text": "Judá precisava vencer pela espada primeiro.",
+        "why": "20:17: não precisareis lutar."
+      },
+      {
+        "text": "O juízo humano é só política.",
+        "why": "19:6–7: juízo em nome do Senhor, sem suborno."
+      }
+    ],
+    "centralInsight": "Quem busca o Senhor ouve a verdade e vê a vitória que é dele",
+    "anchorQuestion": "De quem é a batalha, segundo 2 Crônicas 20:15?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 17:3, o Senhor estava com Josafá porque andou nos primeiros caminhos de Davi.",
+      "verseRef": "2 Crônicas 17:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor estava com Josafá, pois andou nos primeiros caminhos de Davi",
+      "feedbackCorrect": "A presença do Senhor se liga aos caminhos de Davi.",
+      "feedbackWrong": {
+        "false": "Releia 17:3: a causa é andar nos caminhos de Davi."
+      },
+      "hint": "Veja o pois no versículo.",
+      "learningObjective": "Observar a causa da presença do Senhor.",
+      "evidence": [
+        "2 Crônicas 17:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 18:13, toque o verbo do compromisso de Micaías.",
+      "verseRef": "2 Crônicas 18:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "falarei"
+        },
+        {
+          "id": "b",
+          "text": "mensageiro"
+        },
+        {
+          "id": "c",
+          "text": "bom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso falarei",
+      "feedbackCorrect": "Ele falará o que Deus disser.",
+      "feedbackWrong": {
+        "b": "O mensageiro pediu outra coisa.",
+        "c": "Bom era o pedido da corte."
+      },
+      "hint": "Procure o verbo final da resposta.",
+      "learningObjective": "Identificar o compromisso de falar.",
+      "evidence": [
+        "2 Crônicas 18:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 20:15, de quem é a batalha?",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "De Deus, não do povo"
+        },
+        {
+          "id": "b",
+          "text": "Só de Josafá e dos capitães"
+        },
+        {
+          "id": "c",
+          "text": "Dos amonitas e moabitas"
+        },
+        {
+          "id": "d",
+          "text": "Dos cantores levitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "A batalha é do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto nega que seja do povo.",
+        "c": "Eles são o inimigo.",
+        "d": "Os cantores louvam; a batalha é de Deus."
+      },
+      "hint": "Leia o contraste final.",
+      "learningObjective": "Observar de quem é a batalha.",
+      "evidence": [
+        "2 Crônicas 20:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 19:6 na ordem do texto.",
+      "verseRef": "2 Crônicas 19:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Observem o que fazem"
+        },
+        {
+          "id": "b",
+          "text": "pois não julgam em benefício do homem"
+        },
+        {
+          "id": "c",
+          "text": "mas em nome do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não julgam em benefício do homem, mas em nome do Senhor",
+      "feedbackCorrect": "Cuidado, negação do benefício humano e juízo do Senhor.",
+      "feedbackWrong": {
+        "default": "Comece por Observem."
+      },
+      "hint": "Siga a fala aos juízes.",
+      "learningObjective": "Reconhecer a ordem de 19:6.",
+      "evidence": [
+        "2 Crônicas 19:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 20:15, a ___ não pertence a vocês, mas a Deus.",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "batalha"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "coroa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "A batalha é de Deus.",
+      "feedbackWrong": {
+        "b": "O texto fala da batalha.",
+        "c": "Não é coroa; é batalha."
+      },
+      "hint": "Veja o sujeito do contraste.",
+      "learningObjective": "Lembrar de quem é a batalha.",
+      "evidence": [
+        "2 Crônicas 20:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 17:3 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 17:3",
+      "passageA": {
+        "ref": "2 Crônicas 17:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Josafá busca a Deus e o Senhor está com ele."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor com quem anda direito"
+        },
+        {
+          "id": "b",
+          "text": "Baalins garantem vitória"
+        },
+        {
+          "id": "c",
+          "text": "Davi é abandonado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor estava com Josafá, pois andou",
+      "feedbackCorrect": "Caminhos de Davi e presença do Senhor abrem a etapa.",
+      "feedbackWrong": {
+        "b": "Ele não buscou baalins.",
+        "c": "Ele segue Davi."
+      },
+      "hint": "Ligue presença e caminhos.",
+      "learningObjective": "Ligar Josafá à presença divina.",
+      "evidence": [
+        "2 Crônicas 17:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 19:7, toque o que o Senhor não aceita.",
+      "verseRef": "2 Crônicas 19:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "suborno"
+        },
+        {
+          "id": "b",
+          "text": "temor"
+        },
+        {
+          "id": "c",
+          "text": "cuidado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem aceitação de suborno",
+      "feedbackCorrect": "No Senhor não há aceitação de suborno.",
+      "feedbackWrong": {
+        "b": "O temor deve estar com eles.",
+        "c": "Cuidado é a ordem."
+      },
+      "hint": "Olhe o fim da lista.",
+      "learningObjective": "Identificar a rejeição ao suborno.",
+      "evidence": [
+        "2 Crônicas 19:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 20:22 na ordem do texto.",
+      "verseRef": "2 Crônicas 20:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "começaram a cantar e dar louvores"
+        },
+        {
+          "id": "b",
+          "text": "o Senhor armou emboscadas"
+        },
+        {
+          "id": "c",
+          "text": "foram desbaratados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor armou emboscadas",
+      "feedbackCorrect": "Louvor, emboscadas e derrota do inimigo.",
+      "feedbackWrong": {
+        "default": "Comece pelo louvor."
+      },
+      "hint": "Siga a sequência do versículo.",
+      "learningObjective": "Reconhecer a ordem de 20:22.",
+      "evidence": [
+        "2 Crônicas 20:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 18:12–13, o mensageiro e Micaías concordam sobre o critério da profecia.",
+      "verseRef": "2 Crônicas 18:12–13",
+      "correctOptionId": "false",
+      "evidenceSpan": "o que meu Deus me disser, isso falarei",
+      "feedbackCorrect": "O mensageiro pede o que é bom; Micaías fala o que Deus disser.",
+      "feedbackWrong": {
+        "true": "Há contraste entre agrado do rei e palavra de Deus."
+      },
+      "hint": "Compare o pedido com a resposta.",
+      "learningObjective": "Compreender o contraste profético.",
+      "evidence": [
+        "2 Crônicas 18:12–13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 17:3, toque a palavra que marca a causa da presença do Senhor.",
+      "verseRef": "2 Crônicas 17:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Josafá"
+        },
+        {
+          "id": "c",
+          "text": "baalins"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois andou nos primeiros caminhos de Davi",
+      "feedbackCorrect": "Pois introduz a causa: caminhos de Davi.",
+      "feedbackWrong": {
+        "b": "Josafá é o rei.",
+        "c": "Baalins são o que ele não buscou."
+      },
+      "hint": "Procure a palavra da causa.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "2 Crônicas 17:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 20:22 se relaciona com 20:15?",
+      "verseRef": "2 Crônicas 20:15–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se a batalha é de Deus, o louvor precede a vitória que Ele dá"
+        },
+        {
+          "id": "b",
+          "text": "Judá precisa lutar primeiro para Deus agir"
+        },
+        {
+          "id": "c",
+          "text": "O louvor só vem depois da espada"
+        },
+        {
+          "id": "d",
+          "text": "As emboscadas negam que a batalha seja de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor armou emboscadas",
+      "feedbackCorrect": "A declaração de 20:15 se cumpre enquanto louvam.",
+      "feedbackWrong": {
+        "b": "Não precisavam lutar.",
+        "c": "O louvor vem antes.",
+        "d": "As emboscadas são a ação de Deus."
+      },
+      "hint": "Ligue batalha de Deus e emboscadas.",
+      "learningObjective": "Relacionar palavra e vitória.",
+      "evidence": [
+        "2 Crônicas 20:15–22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa de Josafá?",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josafá anda nos caminhos de Davi"
+        },
+        {
+          "id": "b",
+          "text": "Micaías fala só o que Deus manda"
+        },
+        {
+          "id": "c",
+          "text": "A batalha é do Senhor e o povo louva"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "Fidelidade, verdade profética e vitória pelo louvor.",
+      "feedbackWrong": {
+        "default": "A batalha do Senhor fecha o arco."
+      },
+      "hint": "Comece pelos caminhos de Davi.",
+      "learningObjective": "Compreender o arco da etapa.",
+      "evidence": [
+        "2 Crônicas 20:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 18:13, o que meu Deus me ___, isso falarei.",
+      "verseRef": "2 Crônicas 18:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "disser"
+        },
+        {
+          "id": "b",
+          "text": "esconder"
+        },
+        {
+          "id": "c",
+          "text": "negar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o que meu Deus me disser",
+      "feedbackCorrect": "A palavra depende do que Deus disser.",
+      "feedbackWrong": {
+        "b": "O verbo é disser.",
+        "c": "Não é negar; é disser."
+      },
+      "hint": "Veja o verbo da condição.",
+      "learningObjective": "Lembrar o verbo do que Deus fala.",
+      "evidence": [
+        "2 Crônicas 18:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 20:15 a Êxodo 14:13–14?",
+      "verseRef": "2 Crônicas 20:15",
+      "passageA": {
+        "ref": "2 Crônicas 20:15"
+      },
+      "passageB": {
+        "ref": "Êxodo 14:13–14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor pelejará por vós"
+        },
+        {
+          "id": "b",
+          "text": "Israel luta sem Deus"
+        },
+        {
+          "id": "c",
+          "text": "O medo manda na guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "Nos dois textos, Deus peleja e o povo não deve temer.",
+      "feedbackWrong": {
+        "b": "A batalha é de Deus.",
+        "c": "A ordem é não temer."
+      },
+      "hint": "Compare quem luta.",
+      "learningObjective": "Relacionar Josafá ao Êxodo.",
+      "evidence": [
+        "2 Crônicas 20:15",
+        "Êxodo 14:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 19:6, toque a expressão que marca o contraste do juízo.",
+      "verseRef": "2 Crônicas 19:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas em nome"
+        },
+        {
+          "id": "b",
+          "text": "juízes"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas em nome do Senhor",
+      "feedbackCorrect": "Mas vira o juízo para o nome do Senhor.",
+      "feedbackWrong": {
+        "b": "Os juízes são os ouvintes.",
+        "c": "Homem é o que se nega como benefício."
+      },
+      "hint": "Procure o contraste após o homem.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Crônicas 19:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam ensino, juízo e batalha em Josafá?",
+      "verseRef": "2 Crônicas 20:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mestres levam a lei pelas cidades"
+        },
+        {
+          "id": "b",
+          "text": "Juízes julgam em nome do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "O povo fica firme e vê a salvação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vejam a salvação que o SENHOR trará a vocês",
+      "feedbackCorrect": "Lei, juízo justo e salvação na batalha.",
+      "feedbackWrong": {
+        "default": "A salvação fecha o movimento."
+      },
+      "hint": "Comece pelo ensino da lei.",
+      "learningObjective": "Compreender a sequência do reinado.",
+      "evidence": [
+        "2 Crônicas 20:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 17–20 apresenta busca a Deus, palavra verdadeira e batalha do Senhor como um só fio.",
+      "verseRef": "2 Crônicas 20:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "Caminhos de Davi, Micaías fiel e vitória pelo louvor formam a etapa.",
+      "feedbackWrong": {
+        "false": "Una 17:3, 18:13 e 20:15–22."
+      },
+      "hint": "Ligue presença, profecia e batalha.",
+      "learningObjective": "Interpretar o fio da etapa.",
+      "evidence": [
+        "2 Crônicas 20:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 18:22, toque o trecho que sustenta a leitura do engano profético.",
+      "verseRef": "2 Crônicas 18:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "espírito de mentira"
+        },
+        {
+          "id": "b",
+          "text": "teus profetas"
+        },
+        {
+          "id": "c",
+          "text": "Agora, pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "espírito de mentira na boca de todos estes teus profetas",
+      "feedbackCorrect": "O espírito de mentira desmascara o coro unânime.",
+      "feedbackWrong": {
+        "b": "Os profetas são o canal.",
+        "c": "Agora pois introduz o anúncio."
+      },
+      "hint": "Procure o que foi enviado à boca.",
+      "learningObjective": "Sustentar a leitura do engano.",
+      "evidence": [
+        "2 Crônicas 18:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa de Josafá sustenta?",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem busca o Senhor ouve a verdade e vê a vitória que é dele"
+        },
+        {
+          "id": "b",
+          "text": "A unanimidade dos profetas de Acabe garante a verdade"
+        },
+        {
+          "id": "c",
+          "text": "Josafá vence pela espada sem fé"
+        },
+        {
+          "id": "d",
+          "text": "O juízo humano ignora o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Creiam no SENHOR, vosso Deus, e estarão seguros",
+      "feedbackCorrect": "Busca, verdade profética e fé na batalha de Deus.",
+      "feedbackWrong": {
+        "b": "Micaías denuncia a mentira.",
+        "c": "Não precisavam lutar.",
+        "d": "Os juízes julgam em nome do Senhor."
+      },
+      "hint": "Una 17:3, 18:13 e 20:20.",
+      "learningObjective": "Escolher a leitura da etapa.",
+      "evidence": [
+        "2 Crônicas 20:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da batalha do Senhor nesta etapa?",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A batalha não é de Judá, mas de Deus"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor pelejará; aquietai-vos"
+        },
+        {
+          "id": "c",
+          "text": "A batalha é do Senhor, diz Davi"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "De Josafá ao Êxodo e a Davi.",
+      "feedbackWrong": {
+        "default": "Siga Crônicas, Êxodo e 1 Samuel."
+      },
+      "hint": "Comece pela palavra a Josafá.",
+      "learningObjective": "Ver a batalha no fio bíblico.",
+      "evidence": [
+        "2 Crônicas 20:15",
+        "Êxodo 14:14",
+        "1 Samuel 17:47"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 17:4, Josafá ___ o Deus de seu pai.",
+      "verseRef": "2 Crônicas 17:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "buscou"
+        },
+        {
+          "id": "b",
+          "text": "abandonou"
+        },
+        {
+          "id": "c",
+          "text": "esqueceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "buscou o Deus de seu pai",
+      "feedbackCorrect": "A busca a Deus marca o reinado.",
+      "feedbackWrong": {
+        "b": "O texto diz buscou.",
+        "c": "Não esqueceu; buscou."
+      },
+      "hint": "Veja o primeiro verbo após Antes.",
+      "learningObjective": "Lembrar o verbo da busca.",
+      "evidence": [
+        "2 Crônicas 17:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 19:7 a Deuteronômio 16:18–19?",
+      "verseRef": "2 Crônicas 19:7",
+      "passageA": {
+        "ref": "2 Crônicas 19:7"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 16:18–19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízes sem parcialidade"
+        },
+        {
+          "id": "b",
+          "text": "Suborno como bênção"
+        },
+        {
+          "id": "c",
+          "text": "Juízo só para reis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem acepção de pessoas, nem aceitação de suborno",
+      "feedbackCorrect": "Nos dois textos, juízes rejeitam parcialidade e suborno.",
+      "feedbackWrong": {
+        "b": "Suborno é rejeitado.",
+        "c": "A ordem vale para o povo."
+      },
+      "hint": "Compare o que se proíbe.",
+      "learningObjective": "Relacionar Josafá à lei.",
+      "evidence": [
+        "2 Crônicas 19:7",
+        "Deuteronômio 16:18–19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 20:20, toque o verbo que Josafá ordena ao povo.",
+      "verseRef": "2 Crônicas 20:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Creiam"
+        },
+        {
+          "id": "b",
+          "text": "Tecoa"
+        },
+        {
+          "id": "c",
+          "text": "manhã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Creiam no SENHOR, vosso Deus",
+      "feedbackCorrect": "Creiam no Senhor e estarão seguros.",
+      "feedbackWrong": {
+        "b": "Tecoa é o destino.",
+        "c": "A manhã situa o tempo."
+      },
+      "hint": "Procure o imperativo da fé.",
+      "learningObjective": "Sustentar a ordem de crer.",
+      "evidence": [
+        "2 Crônicas 20:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da palavra fiel nesta etapa?",
+      "verseRef": "2 Crônicas 18:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Micaías fala só o que Deus disser"
+        },
+        {
+          "id": "b",
+          "text": "Falsos profetas surgem no meio"
+        },
+        {
+          "id": "c",
+          "text": "Jesus é o bom pastor das ovelhas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o que meu Deus me disser, isso falarei",
+      "feedbackCorrect": "Da fidelidade de Micaías ao aviso e ao pastor.",
+      "feedbackWrong": {
+        "default": "Siga Crônicas, 2 Pedro e João."
+      },
+      "hint": "Comece por Micaías.",
+      "learningObjective": "Ver a palavra fiel no fio bíblico.",
+      "evidence": [
+        "2 Crônicas 18:13",
+        "2 Pedro 2:1",
+        "João 10:11"
+      ]
+    }
+  ]
+}

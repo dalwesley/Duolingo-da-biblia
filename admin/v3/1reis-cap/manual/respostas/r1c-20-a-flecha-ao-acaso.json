@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "1 Reis 22:29–34",
+    "passages": [
+      {
+        "ref": "1 Reis 22:29–38"
+      }
+    ],
+    "context": "Acabe e Josafá sobem a Ramote-Gileade. Acabe se disfarça; uma flecha ao acaso o encontra. Em Samaria, os cães lamberão seu sangue conforme a palavra do Senhor.",
+    "keyword": "acaso",
+    "keywordGloss": "O tiro aparentemente casual que cumpre o juízo anunciado contra o rei disfarçado.",
+    "focusQuestion": "Que disfarce você usa para escapar de uma palavra que já foi dita?",
+    "reflectionPrompts": [
+      "Disfarce na batalha",
+      "Flecha ao acaso",
+      "Cães em Samaria"
+    ],
+    "facts": [
+      {
+        "text": "Acabe se disfarça e entra na batalha.",
+        "evidenceRef": "1 Reis 22:30",
+        "evidenceSpan": "o rei de Israel se disfarçou e entrou na batalha"
+      },
+      {
+        "text": "O rei da Síria manda lutar só contra o rei de Israel.",
+        "evidenceRef": "1 Reis 22:31",
+        "evidenceSpan": "mas somente contra o rei de Israel"
+      },
+      {
+        "text": "Uma flecha ao acaso fere Acabe entre as juntas da armadura.",
+        "evidenceRef": "1 Reis 22:34",
+        "evidenceSpan": "atirando ao acaso, feriu o rei de Israel"
+      },
+      {
+        "text": "Acabe morre à tarde; o sangue escorre no carro.",
+        "evidenceRef": "1 Reis 22:35",
+        "evidenceSpan": "mas ele morreu à tarde"
+      },
+      {
+        "text": "Os cães lamberam o sangue conforme a palavra do Senhor.",
+        "evidenceRef": "1 Reis 22:38",
+        "evidenceSpan": "os cães lamberam o sangue do rei, conforme a palavra que o Senhor tinha dito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "acaso",
+        "gloss": "O tiro aparentemente casual que alcança o rei disfarçado."
+      },
+      {
+        "term": "disfarçou",
+        "gloss": "A tentativa de Acabe de esconder-se na batalha."
+      },
+      {
+        "term": "palavra",
+        "gloss": "A palavra do Senhor que se cumpre quando os cães lambem o sangue."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acabe se disfarça; mira só no rei",
+        "evidenceRef": "1 Reis 22:29–31"
+      },
+      {
+        "label": "Josafá é confundido e depois poupado",
+        "evidenceRef": "1 Reis 22:32–33"
+      },
+      {
+        "label": "Flecha ao acaso e morte no carro",
+        "evidenceRef": "1 Reis 22:34–35"
+      },
+      {
+        "label": "Cães lambem o sangue em Samaria",
+        "evidenceRef": "1 Reis 22:36–38"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Acabe se disfarça; Josafá, porém, traja suas vestes.",
+        "marker": null,
+        "evidenceRef": "1 Reis 22:30"
+      },
+      {
+        "kind": "resultado",
+        "text": "Os cães lambem o sangue conforme a palavra do Senhor.",
+        "marker": null,
+        "evidenceRef": "1 Reis 22:38"
+      },
+      {
+        "kind": "sequência",
+        "text": "Ferido ao acaso, Acabe morre à tarde e o sangue cumpre o anúncio.",
+        "marker": null,
+        "evidenceRef": "1 Reis 22:34"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 21:19",
+        "bridge": "Anúncio do sangue lambido"
+      },
+      {
+        "ref": "Números 32:23",
+        "bridge": "O pecado vos encontrará"
+      },
+      {
+        "ref": "Isaías 55:11",
+        "bridge": "A palavra não volta vazia"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A flecha ao acaso prova que a morte de Acabe foi só sorte, sem juízo.",
+        "why": "O texto fecha dizendo que os cães cumpriram a palavra do Senhor."
+      },
+      {
+        "text": "O disfarce de Acabe o protege até o fim da batalha.",
+        "why": "Mesmo disfarçado, a flecha o encontra entre as juntas da armadura."
+      },
+      {
+        "text": "Josafá é o alvo deliberado até a morte.",
+        "why": "Ao verem que não era o rei de Israel, deixaram de persegui-lo."
+      }
+    ],
+    "anchorQuestion": "Segundo 1 Reis 22:38, o que os cães fizeram conforme a palavra do Senhor?",
+    "centralInsight": "Nenhum disfarce segura o juízo: a palavra contra Acabe se cumpre."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 22 —30, o rei de Israel se disfarçou e entrou na batalha.",
+      "verseRef": "1 Reis 22:30",
+      "correctOptionId": "true",
+      "evidenceSpan": "o rei de Israel se disfarçou e entrou na batalha",
+      "feedbackCorrect": "O disfarce e a entrada na batalha são explícitos.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o que Acabe faz.",
+      "learningObjective": "Observar o disfarce.",
+      "evidence": [
+        "1 Reis 22:30"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 22:34, toque como o homem atirou a flecha.",
+      "verseRef": "1 Reis 22:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "armou"
+        },
+        {
+          "id": "b",
+          "text": "homem"
+        },
+        {
+          "id": "c",
+          "text": "arco"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "homem",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o acaso.",
+      "evidence": [
+        "1 Reis 22:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 22:38, o que aconteceu ao lavarem a carruagem?",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os cães lamberam o sangue do rei"
+        },
+        {
+          "id": "b",
+          "text": "Acabe foi coroado de novo"
+        },
+        {
+          "id": "c",
+          "text": "Josafá ficou ferido"
+        },
+        {
+          "id": "d",
+          "text": "A flecha foi devolvida intacta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os cães lamberam o sangue do rei",
+      "feedbackCorrect": "Os cães cumprem a palavra anunciada.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o que os cães fazem.",
+      "learningObjective": "Notar o cumprimento com os cães.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 22:34 na ordem do texto.",
+      "verseRef": "1 Reis 22:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "um homem armou o arco de forma descuidada"
+        },
+        {
+          "id": "b",
+          "text": "atirando ao acaso, feriu o rei de Israel"
+        },
+        {
+          "id": "c",
+          "text": "me leva para fora do combate, porque estou gravemente ferido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "atirando ao acaso, feriu o rei de Israel",
+      "feedbackCorrect": "Arco, flecha e pedido de retirada.",
+      "feedbackWrong": {
+        "default": "Comece pelo homem que arma o arco."
+      },
+      "hint": "Quem age primeiro no verso?",
+      "learningObjective": "Seguir a ordem do verso.",
+      "evidence": [
+        "1 Reis 22:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 22:35, complete: mas ele ___ à tarde.",
+      "verseRef": "1 Reis 22:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "morreu"
+        },
+        {
+          "id": "b",
+          "text": "fugiu"
+        },
+        {
+          "id": "c",
+          "text": "venceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas ele morreu à tarde",
+      "feedbackCorrect": "Acabe morre à tarde no carro.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que acontece à tarde?",
+      "learningObjective": "Lembrar a morte à tarde.",
+      "evidence": [
+        "1 Reis 22:35"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 22:38 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 22:38",
+      "passageA": {
+        "ref": "1 Reis 22:38"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O disfarce falha; a palavra contra Acabe se cumpre no sangue lambido."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra cumprida no sangue"
+        },
+        {
+          "id": "b",
+          "text": "Disfarce que salva o rei"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem nenhum juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Os cães confirmam a palavra do Senhor.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a frase conforme a palavra.",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 22 —30, o porém indica que Acabe e Josafá usam o mesmo disfarce na peleja.",
+      "verseRef": "1 Reis 22:30",
+      "correctOptionId": "false",
+      "evidenceSpan": "você, porém, traje suas vestes",
+      "feedbackCorrect": "O porém marca o contraste: só Acabe se disfarça.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o que cada um deve vestir.",
+      "learningObjective": "Compreender o contraste do porém.",
+      "evidence": [
+        "1 Reis 22:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 22:30, toque o marcador de contraste entre Acabe e Josafá.",
+      "verseRef": "1 Reis 22:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "Josafá"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o porém.",
+      "evidence": [
+        "1 Reis 22:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 1 Reis 22:38 faz entre os cães e a palavra do Senhor?",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resultado: o sangue cumpre a palavra dita"
+        },
+        {
+          "id": "b",
+          "text": "Contraste: a palavra falhou em Samaria"
+        },
+        {
+          "id": "c",
+          "text": "Acaso: os cães agem sem ligação com Deus"
+        },
+        {
+          "id": "d",
+          "text": "Perdão: o sangue apaga o juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Conforme marca o cumprimento da palavra.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a palavra conforme.",
+      "learningObjective": "Ver o resultado conforme a palavra.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos até o cumprimento em Samaria.",
+      "verseRef": "1 Reis 22:34–38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acabe se disfarça; mira só no rei"
+        },
+        {
+          "id": "b",
+          "text": "Flecha ao acaso e morte no carro"
+        },
+        {
+          "id": "c",
+          "text": "Cães lambem o sangue em Samaria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os cães lamberam o sangue do rei",
+      "feedbackCorrect": "Disfarce, flecha e cumprimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo disfarce."
+      },
+      "hint": "O que abre a batalha?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "1 Reis 22:30",
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 22:38, complete: ___ a palavra que o Senhor tinha dito.",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "conforme"
+        },
+        {
+          "id": "b",
+          "text": "contra"
+        },
+        {
+          "id": "c",
+          "text": "apesar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Conforme marca o cumprimento.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Palavra que liga sangue e anúncio.",
+      "learningObjective": "Lembrar o conforme.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 22:38 a 1 Reis 21:19?",
+      "verseRef": "1 Reis 22:38",
+      "passageA": {
+        "ref": "1 Reis 22:38"
+      },
+      "passageB": {
+        "ref": "1 Reis 21:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio do sangue lambido"
+        },
+        {
+          "id": "b",
+          "text": "Perdão sem qualquer sangue"
+        },
+        {
+          "id": "c",
+          "text": "Disfarce abençoado por Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os cães lamberam o sangue do rei",
+      "feedbackCorrect": "O anúncio de 21:19 se cumpre em 22:38.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare cães e sangue.",
+      "learningObjective": "Ligar anúncio e cumprimento.",
+      "evidence": [
+        "1 Reis 22:38",
+        "1 Reis 21:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 22 —30–38, o disfarce de Acabe impede que a palavra do Senhor se cumpra.",
+      "verseRef": "1 Reis 22:38",
+      "correctOptionId": "false",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Mesmo disfarçado, a palavra se cumpre.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o fim em Samaria.",
+      "learningObjective": "Rejeitar a leitura do disfarce salvador.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 22:38, toque o termo que sustenta o cumprimento do juízo.",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "carruagem"
+        },
+        {
+          "id": "b",
+          "text": "lavarem"
+        },
+        {
+          "id": "c",
+          "text": "tanque"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lavarem",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar a palavra cumprida.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une o disfarce, a flecha e os cães?",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nenhum disfarce segura o juízo anunciado"
+        },
+        {
+          "id": "b",
+          "text": "A flecha prova que tudo foi só sorte"
+        },
+        {
+          "id": "c",
+          "text": "Josafá morre no lugar de Acabe"
+        },
+        {
+          "id": "d",
+          "text": "Os cães agem sem relação com o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "O cumprimento fecha a cena: a palavra vence o disfarce.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una disfarce e cumprimento.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da palavra que encontra o culpado.",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "O pecado vos encontrará"
+        },
+        {
+          "id": "b",
+          "text": "Anúncio do sangue de Acabe"
+        },
+        {
+          "id": "c",
+          "text": "Cães cumprem a palavra em Samaria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Aviso, anúncio e cumprimento.",
+      "feedbackWrong": {
+        "default": "Comece por Números; feche em Samaria."
+      },
+      "hint": "Siga Números, 1 Reis 21 e 22.",
+      "learningObjective": "Encadear pecado e cumprimento.",
+      "evidence": [
+        "Números 32:23",
+        "1 Reis 21:19",
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 22:30, complete: o rei de Israel se ___.",
+      "verseRef": "1 Reis 22:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "disfarçou"
+        },
+        {
+          "id": "b",
+          "text": "renderam"
+        },
+        {
+          "id": "c",
+          "text": "ocultaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei de Israel se disfarçou",
+      "feedbackCorrect": "Disfarçou: a tentativa de escapar.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que o rei faz consigo?",
+      "learningObjective": "Lembrar disfarçou.",
+      "evidence": [
+        "1 Reis 22:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 22:38 a Isaías 55:11?",
+      "verseRef": "1 Reis 22:38",
+      "passageA": {
+        "ref": "1 Reis 22:38"
+      },
+      "passageB": {
+        "ref": "Isaías 55:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A palavra não volta vazia"
+        },
+        {
+          "id": "b",
+          "text": "A palavra falha no fim"
+        },
+        {
+          "id": "c",
+          "text": "O acaso cancela o anúncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Nos dois textos, a palavra cumpre o propósito.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a palavra que se cumpre.",
+      "learningObjective": "Ligar cumprimento e palavra.",
+      "evidence": [
+        "1 Reis 22:38",
+        "Isaías 55:11"
+      ]
+    }
+  ]
+}

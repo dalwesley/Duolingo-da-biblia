@@ -182,6 +182,12 @@ service cloud.firestore {
             ? !('desbravador' in request.resource.data)
             : request.resource.data.get('desbravador', false)
                 == resource.data.get('desbravador', false))
+        // Líder do piloto de grupos: só o script do admin marca
+        // (admin/scripts/mark_group_pilots.mjs).
+        && (resource == null
+            ? !('groupsPilot' in request.resource.data)
+            : request.resource.data.get('groupsPilot', false)
+                == resource.data.get('groupsPilot', false))
         // giftedTrails no público: nunca. Mora no private (legado) ou em
         // users/{uid}/giftedTrails/{slug}. Mapa vazio passa: a 1.0.40
         // manda `giftedTrails: {}` em todo save.
@@ -289,16 +295,68 @@ service cloud.firestore {
       }
 
       allow read: if isSignedIn();
+      // Grupo do piloto (`pilot`) só nasce de quem o admin marcou como
+      // líder do piloto (users/{uid}.groupsPilot).
       allow create: if isSignedIn()
-        && request.resource.data.ownerId == request.auth.uid;
+        && request.resource.data.ownerId == request.auth.uid
+        && (request.resource.data.get('pilot', false) == false
+            || get(/databases/$(database)/documents/users/$(request.auth.uid)).data.get('groupsPilot', false) == true);
       allow delete: if isSignedIn()
         && resource.data.ownerId == request.auth.uid;
       // Só o líder edita. Passar a liderança exige que o novo líder já esteja
-      // na lista do grupo.
+      // na lista do grupo. `pilot` não muda depois de criado.
       allow update: if isSignedIn()
         && resource.data.ownerId == request.auth.uid
+        && request.resource.data.get('pilot', false)
+            == resource.data.get('pilot', false)
         && (request.resource.data.ownerId == resource.data.ownerId
-            || isRoomMember(request.resource.data.ownerId));
+            || isRoomMember(request.resource.data.ownerId))
+        // Propósito do grupo: um mapa com até 60 dias.
+        && (!('plan' in request.resource.data)
+            || (request.resource.data.plan is map
+                && request.resource.data.plan.days is list
+                && request.resource.data.plan.days.size() <= 60));
+
+      // Fechamento da semana (revelação): só o líder grava; quem é do
+      // grupo lê. Um doc por semana (id = segunda-feira).
+      match /closings/{week} {
+        allow read: if isSignedIn() && isRoomMember(request.auth.uid);
+        allow create, update: if isSignedIn()
+          && get(/databases/$(database)/documents/rooms/$(code)).data.ownerId == request.auth.uid
+          && isYmd(week)
+          && request.resource.data.week == week
+          && request.resource.data.closedBy == request.auth.uid
+          && request.resource.data.groupPct is int
+          && request.resource.data.groupPct >= 0
+          && request.resource.data.groupPct <= 100
+          && request.resource.data.faithful is list
+          && request.resource.data.faithful.size() <= 50
+          && request.resource.data.constant is list
+          && request.resource.data.constant.size() <= 50
+          && request.resource.data.get('grown', []) is list
+          && request.resource.data.get('grown', []).size() <= 50;
+        allow delete: if isSignedIn()
+          && get(/databases/$(database)/documents/rooms/$(code)).data.ownerId == request.auth.uid;
+      }
+
+      // Resposta à pergunta do dia do propósito (dayKey = "planId_dia").
+      // Só quem é do grupo lê; cada um grava a própria; o líder apaga
+      // qualquer uma.
+      match /answers/{dayKey}/by/{uid} {
+        allow read: if isSignedIn() && isRoomMember(request.auth.uid);
+        allow create, update: if isSignedIn()
+          && request.auth.uid == uid
+          && isRoomMember(uid)
+          && request.resource.data.uid == uid
+          && request.resource.data.text is string
+          && request.resource.data.text.size() > 0
+          && request.resource.data.text.size() <= 280
+          && request.resource.data.name is string
+          && request.resource.data.name.size() <= 80;
+        allow delete: if isSignedIn()
+          && (request.auth.uid == uid
+              || get(/databases/$(database)/documents/rooms/$(code)).data.ownerId == request.auth.uid);
+      }
 
       // Chamado para estudar: um doc por destinatário, no máximo 1 por dia.
       match /nudges/{toUid} {
@@ -438,7 +496,10 @@ service cloud.firestore {
           && data.participantIds.size() == 2
           && data.participantIds.hasAll([request.auth.uid, data.toUid])
           && data.createdAt is timestamp
-          && id == data.roomCode + '_' + data.toUid;
+          && id == data.roomCode + '_' + data.toUid
+          // `pilot` só se o grupo é do piloto.
+          && (data.get('pilot', false) == false
+              || get(/databases/$(database)/documents/rooms/$(data.roomCode)).data.get('pilot', false) == true);
       }
 
       allow read: if isSignedIn()
@@ -654,6 +715,13 @@ service cloud.firestore {
         && !exists(/databases/$(database)/documents/trailGifts/$(request.resource.data.code))
         && existsAfter(/databases/$(database)/documents/trailGifts/$(request.resource.data.code));
       allow update, delete: if false;
+    }
+
+    // Meses de Peregrino+ ganhos por convite que virou assinatura
+    // (functions/referral.js). Só o servidor grava; o dono lê o saldo.
+    match /referralRewards/{uid} {
+      allow get: if isSignedIn() && request.auth.uid == uid;
+      allow list, write: if false;
     }
 
     match /users/{uid}/blocks/{blockedUid} {

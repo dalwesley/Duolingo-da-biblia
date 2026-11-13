@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Eclesiastes 3:1–6",
+    "passages": [
+      {
+        "ref": "Eclesiastes 3:1–6"
+      },
+      {
+        "ref": "Eclesiastes 3:7–8"
+      }
+    ],
+    "context": "O Pregador acabou de ver que o esforço sob o sol não se sustenta nas mãos. Agora ele olha para o ritmo da vida: pares de tempos opostos que não dependem do nosso relógio.",
+    "keyword": "Tempo",
+    "keywordGloss": "Cada coisa debaixo do céu tem sua hora, e reconhecê-la é parte da sabedoria.",
+    "focusQuestion": "Em que estação da vida você está agora, e onde você tem tentado forçar o relógio?",
+    "reflectionPrompts": [
+      "Tudo tem sua hora",
+      "Pares de tempos opostos",
+      "Reconhecer a estação"
+    ],
+    "facts": [
+      {
+        "text": "Para tudo há um tempo designado debaixo do céu.",
+        "evidenceRef": "Eclesiastes 3:1",
+        "evidenceSpan": "Para tudo há um tempo designado"
+      },
+      {
+        "text": "Há tempo de nascer e tempo de morrer.",
+        "evidenceRef": "Eclesiastes 3:2",
+        "evidenceSpan": "Há tempo de nascer e tempo de morrer"
+      },
+      {
+        "text": "Há tempo de plantar e tempo de arrancar o que se plantou.",
+        "evidenceRef": "Eclesiastes 3:2",
+        "evidenceSpan": "tempo de plantar e tempo de arrancar o que se plantou"
+      },
+      {
+        "text": "Há tempo de chorar e tempo de rir.",
+        "evidenceRef": "Eclesiastes 3:4",
+        "evidenceSpan": "Tempo de chorar e tempo de rir"
+      },
+      {
+        "text": "Há tempo de estar em silêncio e tempo de falar.",
+        "evidenceRef": "Eclesiastes 3:7",
+        "evidenceSpan": "tempo de estar em silêncio e tempo de falar"
+      },
+      {
+        "text": "Há tempo de guerra e tempo de paz.",
+        "evidenceRef": "Eclesiastes 3:8",
+        "evidenceSpan": "tempo de guerra e tempo de paz"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "tempo designado",
+        "gloss": "Hora marcada para cada coisa, que não depende da pressa de quem vive."
+      },
+      {
+        "term": "propósito",
+        "gloss": "A razão de ser de cada coisa debaixo do céu, que tem seu momento próprio."
+      },
+      {
+        "term": "momento apropriado",
+        "gloss": "A hora certa para cada propósito: nem antes, nem depois."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Tudo tem seu tempo designado",
+        "evidenceRef": "Eclesiastes 3:1"
+      },
+      {
+        "label": "Vida e morte, plantar e arrancar",
+        "evidenceRef": "Eclesiastes 3:2–3"
+      },
+      {
+        "label": "Choro e riso, perda e guarda",
+        "evidenceRef": "Eclesiastes 3:4–6"
+      },
+      {
+        "label": "Silêncio, fala, amor e paz",
+        "evidenceRef": "Eclesiastes 3:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois de afirmar que tudo tem seu tempo, o texto lista pares de tempos opostos, como nascer e morrer.",
+        "marker": null,
+        "evidenceRef": "Eclesiastes 3:1–2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Cada par coloca lado a lado dois tempos opostos, como chorar e rir.",
+        "marker": null,
+        "evidenceRef": "Eclesiastes 3:4"
+      },
+      {
+        "kind": "propósito",
+        "text": "Para cada propósito debaixo do céu há um momento apropriado.",
+        "marker": "para",
+        "evidenceRef": "Eclesiastes 3:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 12:15",
+        "bridge": "Choro e alegria têm seu lugar"
+      },
+      {
+        "ref": "Salmos 31:15",
+        "bridge": "Nossos tempos estão com Deus"
+      },
+      {
+        "ref": "Gálatas 4:4",
+        "bridge": "Deus age na plenitude do tempo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Como tudo tem seu tempo, o ser humano não precisa fazer escolhas.",
+        "why": "O texto lista ações humanas, como plantar, buscar e falar: reconhecer o tempo é saber o que fazer nele."
+      },
+      {
+        "text": "O texto manda forçar cada coisa a acontecer o quanto antes.",
+        "why": "Ele diz que há momento apropriado para cada propósito: a sabedoria é reconhecer a hora, e não apressá-la."
+      },
+      {
+        "text": "O texto aprova matar, aborrecer e guerrear em qualquer hora.",
+        "why": "Ele só reconhece que existem tempos assim na vida, sem tornar toda ação certa a qualquer momento."
+      }
+    ],
+    "centralInsight": "A vida tem estações: sabedoria é reconhecer o tempo, não forçar o relógio.",
+    "anchorQuestion": "Segundo Eclesiastes 3:1, o que há para tudo e para cada propósito debaixo do céu?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Eclesiastes 3:2, o texto diz que há tempo de plantar e tempo de arrancar o que se plantou.",
+      "verseRef": "Eclesiastes 3:2",
+      "evidenceSpan": "tempo de plantar e tempo de arrancar o que se plantou",
+      "feedbackCorrect": "O versículo coloca lado a lado o tempo de plantar e o de arrancar o que se plantou.",
+      "hint": "Olhe para o que vem depois do ponto e vírgula.",
+      "learningObjective": "Observar um dos pares de tempos do texto.",
+      "evidence": [
+        "Eclesiastes 3:2"
+      ],
+      "correctOptionId": "true",
+      "feedbackWrong": {
+        "false": "Releia a segunda parte do versículo: plantar tem seu par."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 3:4, toque o tempo oposto ao de chorar.",
+      "verseRef": "Eclesiastes 3:4",
+      "evidenceSpan": "Tempo de chorar e tempo de rir",
+      "feedbackCorrect": "O versículo opõe o tempo de chorar ao tempo de rir.",
+      "hint": "Procure o que vem logo depois de \"chorar e tempo de\".",
+      "learningObjective": "Identificar o par do tempo de chorar.",
+      "evidence": [
+        "Eclesiastes 3:4"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "prantear"
+        },
+        {
+          "id": "b",
+          "text": "rir"
+        },
+        {
+          "id": "c",
+          "text": "chorar"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Prantear\" é um sinônimo de chorar, e não o seu oposto.",
+        "c": "\"Chorar\" é o próprio termo do par; o oposto vem depois."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Eclesiastes 3:1, o que há para tudo debaixo do céu?",
+      "verseRef": "Eclesiastes 3:1",
+      "evidenceSpan": "Para tudo há um tempo designado, e para cada propósito debaixo do céu há um momento apropriado",
+      "feedbackCorrect": "Para tudo há um tempo designado, e cada propósito tem seu momento apropriado.",
+      "hint": "Leia o começo do versículo.",
+      "learningObjective": "Observar o que o versículo afirma sobre o tempo.",
+      "evidence": [
+        "Eclesiastes 3:1"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Um destino que ninguém pode conhecer"
+        },
+        {
+          "id": "b",
+          "text": "Uma regra que Deus não explica"
+        },
+        {
+          "id": "c",
+          "text": "Um tempo que cada pessoa escolhe"
+        },
+        {
+          "id": "d",
+          "text": "Um tempo designado e um momento apropriado"
+        }
+      ],
+      "correctOptionId": "d",
+      "feedbackWrong": {
+        "a": "O versículo fala de tempo designado, e não de destino oculto.",
+        "b": "O versículo afirma que há tempo, sem falar de regra escondida.",
+        "c": "O tempo é designado; o texto não diz que cada um o escolhe."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Eclesiastes 3:5 na ordem do texto.",
+      "verseRef": "Eclesiastes 3:5",
+      "evidenceSpan": "Tempo de espalhar pedras e tempo de ajuntar pedras",
+      "feedbackCorrect": "É a sequência do versículo: as pedras primeiro, depois o abraço e o afastar-se dele.",
+      "hint": "O versículo abre falando de pedras.",
+      "learningObjective": "Reconhecer a sequência de Eclesiastes 3:5.",
+      "evidence": [
+        "Eclesiastes 3:5"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tempo de espalhar pedras e tempo de ajuntar pedras"
+        },
+        {
+          "id": "b",
+          "text": "tempo de abraçar"
+        },
+        {
+          "id": "c",
+          "text": "e tempo de afastar-se do abraço"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "O versículo começa pelas pedras; o abraço vem depois."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Eclesiastes 3:7, há tempo de estar em quê e tempo de falar?",
+      "verseRef": "Eclesiastes 3:7",
+      "evidenceSpan": "tempo de estar em silêncio e tempo de falar",
+      "feedbackCorrect": "O versículo coloca o silêncio como par do tempo de falar.",
+      "hint": "Pense no oposto de falar.",
+      "learningObjective": "Lembrar o par do tempo de falar.",
+      "evidence": [
+        "Eclesiastes 3:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "dúvida"
+        },
+        {
+          "id": "b",
+          "text": "festa"
+        },
+        {
+          "id": "c",
+          "text": "silêncio"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "Dúvida não é o par de falar neste versículo.",
+        "b": "Festa não aparece aqui; o par de falar é outro."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Eclesiastes 3:1 comunica que se liga a este contexto?",
+      "verseRef": "Eclesiastes 3:1",
+      "evidenceSpan": "Para tudo há um tempo designado",
+      "feedbackCorrect": "O versículo abre afirmando que tudo tem seu tempo designado.",
+      "hint": "Veja como o versículo começa: para tudo...",
+      "learningObjective": "Ligar o versículo ao ritmo da vida.",
+      "evidence": [
+        "Eclesiastes 3:1"
+      ],
+      "passageA": {
+        "ref": "Eclesiastes 3:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Pregador mostra que a vida tem um ritmo, com horas certas para cada coisa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo acontece ao acaso"
+        },
+        {
+          "id": "b",
+          "text": "O tempo só traz perdas"
+        },
+        {
+          "id": "c",
+          "text": "Cada coisa tem sua hora"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "O texto fala de tempo designado, e não de acaso.",
+        "b": "O texto lista ganhos e perdas, e não só perdas."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Eclesiastes 3:4, o texto coloca lado a lado tempos opostos, como chorar e rir, prantear e saltar de alegria.",
+      "verseRef": "Eclesiastes 3:4",
+      "evidenceSpan": "tempo de prantear e tempo de saltar de alegria",
+      "feedbackCorrect": "O versículo é feito de pares: cada tempo difícil tem, ao lado, seu oposto.",
+      "hint": "Repare na repetição de \"tempo de\" no versículo.",
+      "learningObjective": "Compreender a estrutura de pares do texto.",
+      "evidence": [
+        "Eclesiastes 3:4"
+      ],
+      "correctOptionId": "true",
+      "feedbackWrong": {
+        "false": "Releia o versículo: cada tempo vem acompanhado de seu oposto."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 3:7, toque a ação que se contrapõe a rasgar.",
+      "verseRef": "Eclesiastes 3:7",
+      "evidenceSpan": "Tempo de rasgar e tempo de costurar",
+      "feedbackCorrect": "Rasgar e costurar formam o par: um desfaz, o outro refaz.",
+      "hint": "Olhe a primeira metade do versículo, antes do ponto e vírgula.",
+      "learningObjective": "Tocar a ação oposta no par.",
+      "evidence": [
+        "Eclesiastes 3:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "costurar"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "falar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Silêncio\" faz par com falar, e não com rasgar.",
+        "c": "\"Falar\" faz par com o silêncio, na segunda metade do versículo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Eclesiastes 3:1 tem com os pares de tempos que vêm depois?",
+      "verseRef": "Eclesiastes 3:1–2",
+      "evidenceSpan": "Para tudo há um tempo designado",
+      "feedbackCorrect": "O versículo 1 afirma o princípio, e os pares seguintes mostram exemplos dele.",
+      "hint": "Pense no que a lista faz em relação à primeira frase.",
+      "learningObjective": "Relacionar o princípio geral com os exemplos.",
+      "evidence": [
+        "Eclesiastes 3:1–2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A frase geral diz que o tempo é inimigo do homem"
+        },
+        {
+          "id": "b",
+          "text": "A lista contradiz a frase geral"
+        },
+        {
+          "id": "c",
+          "text": "A frase geral abre a lista: tudo o que se faz tem sua hora"
+        },
+        {
+          "id": "d",
+          "text": "A lista mostra que só os bons momentos são designados"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "O texto não trata o tempo como inimigo; apenas o descreve.",
+        "b": "Os pares exemplificam a frase geral, e não a contradizem.",
+        "d": "Os exemplos incluem tempos difíceis, também designados."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Eclesiastes 3:1–2.",
+      "verseRef": "Eclesiastes 3:1–2",
+      "evidenceSpan": "Para tudo há um tempo designado",
+      "feedbackCorrect": "Primeiro o princípio geral, depois os exemplos: vida, morte e o plantio.",
+      "hint": "Siga o texto: princípio e depois exemplos.",
+      "learningObjective": "Compreender o movimento do geral ao particular.",
+      "evidence": [
+        "Eclesiastes 3:1–2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo tem um tempo designado"
+        },
+        {
+          "id": "b",
+          "text": "A vida e a morte têm sua hora"
+        },
+        {
+          "id": "c",
+          "text": "Plantar e arrancar também têm sua hora"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "O princípio geral abre o trecho; os exemplos vêm depois."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Eclesiastes 3:8, qual é o tempo oposto ao de amar?",
+      "verseRef": "Eclesiastes 3:8",
+      "evidenceSpan": "Tempo de amar e tempo de aborrecer",
+      "feedbackCorrect": "O texto opõe o tempo de amar ao tempo de aborrecer.",
+      "hint": "Pense no contrário de amar.",
+      "learningObjective": "Lembrar a palavra que fecha o par.",
+      "evidence": [
+        "Eclesiastes 3:8"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "perdoar"
+        },
+        {
+          "id": "b",
+          "text": "aborrecer"
+        },
+        {
+          "id": "c",
+          "text": "esperar"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "Perdoar não é o oposto de amar no versículo.",
+        "c": "Esperar não aparece neste par de tempos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 3:4 a Romanos 12:15?",
+      "verseRef": "Eclesiastes 3:4",
+      "evidenceSpan": "Tempo de chorar e tempo de rir",
+      "feedbackCorrect": "Nos dois textos, chorar e se alegrar são parte da vida, cada um a seu tempo.",
+      "hint": "Compare o que os dois textos dizem sobre choro e alegria.",
+      "learningObjective": "Ligar o par choro e riso ao ensino de Paulo.",
+      "evidence": [
+        "Eclesiastes 3:4",
+        "Romanos 12:15"
+      ],
+      "passageA": {
+        "ref": "Eclesiastes 3:4"
+      },
+      "passageB": {
+        "ref": "Romanos 12:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chorar é falta de fé"
+        },
+        {
+          "id": "b",
+          "text": "Choro e alegria têm seu lugar"
+        },
+        {
+          "id": "c",
+          "text": "A alegria deve ser evitada"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos trata o choro como falta de fé.",
+        "c": "Os dois textos reconhecem a alegria, e não a evitam."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Eclesiastes 3:1 ensina que o homem deve forçar cada coisa a acontecer, sem esperar o momento apropriado.",
+      "verseRef": "Eclesiastes 3:1",
+      "evidenceSpan": "para cada propósito debaixo do céu há um momento apropriado",
+      "feedbackCorrect": "O texto diz que há momento apropriado para cada propósito: sabedoria é reconhecer a hora.",
+      "hint": "Veja o que o versículo diz sobre o momento de cada propósito.",
+      "learningObjective": "Rejeitar a leitura de que se deve forçar o relógio.",
+      "evidence": [
+        "Eclesiastes 3:1"
+      ],
+      "correctOptionId": "false",
+      "feedbackWrong": {
+        "true": "O versículo fala de tempo designado e momento apropriado, e não de pressa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 3:5, toque o trecho que mostra que até a proximidade tem seu tempo de acabar.",
+      "verseRef": "Eclesiastes 3:5",
+      "evidenceSpan": "tempo de afastar-se do abraço",
+      "feedbackCorrect": "Até o abraço tem seu fim: há tempo de abraçar e tempo de se afastar dele.",
+      "hint": "Procure o gesto que desfaz o abraço.",
+      "learningObjective": "Sustentar com o texto uma leitura sobre as estações.",
+      "evidence": [
+        "Eclesiastes 3:5"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "abraçar"
+        },
+        {
+          "id": "b",
+          "text": "ajuntar pedras"
+        },
+        {
+          "id": "c",
+          "text": "afastar-se do abraço"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "\"Abraçar\" é o começo da proximidade, e não o seu fim.",
+        "b": "As pedras falam de outro par de tempos do versículo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Eclesiastes 3:1–2 sustenta sobre as estações da vida?",
+      "verseRef": "Eclesiastes 3:1–2",
+      "evidenceSpan": "Para tudo há um tempo designado",
+      "feedbackCorrect": "Há tempo para tudo, inclusive para nascer e morrer: a sabedoria é reconhecer a estação.",
+      "hint": "Compare cada opção com a ideia de tempo designado.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": [
+        "Eclesiastes 3:1–2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O tempo é uma força cega que ninguém compreende"
+        },
+        {
+          "id": "b",
+          "text": "A vida tem estações, e a sabedoria é reconhecer cada uma"
+        },
+        {
+          "id": "c",
+          "text": "O homem deve acelerar cada fase para não perdê-la"
+        },
+        {
+          "id": "d",
+          "text": "Só as estações boas da vida são designadas por Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto não fala de força cega, mas de tempo designado.",
+        "c": "O texto não manda acelerar nada: fala de momento apropriado.",
+        "d": "O versículo 2 inclui morrer e arrancar: todos têm tempo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do tempo certo na Bíblia?",
+      "verseRef": "Eclesiastes 3:1",
+      "evidenceSpan": "Para tudo há um tempo designado",
+      "feedbackCorrect": "Do tempo designado a tudo, o fio chega à plenitude do tempo em Cristo.",
+      "hint": "Comece no princípio geral e termine em Cristo.",
+      "learningObjective": "Ver o tempo certo como fio que atravessa a Bíblia.",
+      "evidence": [
+        "Eclesiastes 3:1",
+        "Eclesiastes 3:11",
+        "Gálatas 4:4"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O Pregador diz que tudo tem seu tempo designado"
+        },
+        {
+          "id": "b",
+          "text": "Deus faz tudo formoso no seu tempo"
+        },
+        {
+          "id": "c",
+          "text": "Deus envia o Filho na plenitude do tempo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga o fio: Ec 3:1, depois Ec 3:11 e, por fim, Gálatas 4:4."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Eclesiastes 3:1, que termo indica a razão de ser de cada coisa debaixo do céu?",
+      "verseRef": "Eclesiastes 3:1",
+      "evidenceSpan": "para cada propósito debaixo do céu há um momento apropriado",
+      "feedbackCorrect": "Cada propósito tem seu momento apropriado: o tempo serve ao que Deus quer fazer.",
+      "hint": "Veja a palavra que vem depois de \"para cada\".",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": [
+        "Eclesiastes 3:1"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "pecado"
+        },
+        {
+          "id": "b",
+          "text": "propósito"
+        },
+        {
+          "id": "c",
+          "text": "castigo"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "Pecado não é o termo do versículo; ele fala da razão de ser das coisas.",
+        "c": "Castigo não aparece: o texto fala de propósito e de hora certa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 3:1 a Salmos 31:15?",
+      "verseRef": "Eclesiastes 3:1",
+      "evidenceSpan": "Para tudo há um tempo designado",
+      "feedbackCorrect": "O salmista entrega seus tempos a Deus, como o Pregador reconhece o tempo designado.",
+      "hint": "Compare em mãos de quem estão os tempos.",
+      "learningObjective": "Ligar o tempo designado ao salmo que o confia a Deus.",
+      "evidence": [
+        "Eclesiastes 3:1",
+        "Salmos 31:15"
+      ],
+      "passageA": {
+        "ref": "Eclesiastes 3:1"
+      },
+      "passageB": {
+        "ref": "Salmos 31:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O tempo é controlado pelo acaso"
+        },
+        {
+          "id": "b",
+          "text": "Cada um decide seu tempo"
+        },
+        {
+          "id": "c",
+          "text": "Nossos tempos estão com Deus"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos atribui o tempo ao acaso.",
+        "b": "Nos dois textos, o tempo não é escolhido por quem vive."
+      }
+    }
+  ]
+}

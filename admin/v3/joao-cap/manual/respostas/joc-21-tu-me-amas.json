@@ -1,0 +1,498 @@
+{
+  "study": {
+    "passageRef": "João 21:15–19",
+    "passages": [
+      { "ref": "João 21:15–19" },
+      { "ref": "João 21:12–14" },
+      { "ref": "João 21:20–22" }
+    ],
+    "context": "Jesus e os discípulos estão à beira do mar, depois da pesca. Ele os chama para comer. A conversa que vem em seguida fica entre Jesus e Pedro, antes de falarem do outro discípulo.",
+    "keyword": "Tu me amas",
+    "keywordGloss": "É a pergunta que Jesus faz a Pedro três vezes, depois da refeição à beira do mar.",
+    "focusQuestion": "O que o amor que você diz ter por Jesus pede no cuidado dos outros?",
+    "reflectionPrompts": [
+      "A refeição com o Senhor",
+      "A pergunta repetida",
+      "O caminho que é o seu"
+    ],
+    "facts": [
+      {
+        "text": "Nenhum dos discípulos ousava perguntar quem ele era, porque sabiam que era o Senhor.",
+        "evidenceRef": "João 21:12",
+        "evidenceSpan": "porque sabiam que era o Senhor"
+      },
+      {
+        "text": "Jesus pegou o pão e o ofereceu, da mesma forma que fez com o peixe.",
+        "evidenceRef": "João 21:13",
+        "evidenceSpan": "pegou o pão e o ofereceu a eles"
+      },
+      {
+        "text": "Esta era a terceira vez que Jesus se manifestava aos discípulos depois de ressuscitar.",
+        "evidenceRef": "João 21:14",
+        "evidenceSpan": "a terceira vez que Jesus se manifestava aos seus discípulos"
+      },
+      {
+        "text": "Jesus disse a Pedro para apascentar as ovelhas dele.",
+        "evidenceRef": "João 21:15",
+        "evidenceSpan": "Apascenta as minhas ovelhas"
+      },
+      {
+        "text": "Simão se entristeceu porque Jesus perguntou pela terceira vez.",
+        "evidenceRef": "João 21:17",
+        "evidenceSpan": "Simão se entristeceu por ele ter perguntado pela terceira vez"
+      },
+      {
+        "text": "Jesus indicou o tipo de morte com que Pedro glorificaria a Deus.",
+        "evidenceRef": "João 21:19",
+        "evidenceSpan": "indicando o tipo de morte com que ele glorificaria a Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "amas",
+        "gloss": "A pergunta que Jesus repete a Pedro depois que eles comem."
+      },
+      {
+        "term": "Apascenta",
+        "gloss": "O verbo do chamado: cuidar das ovelhas que Jesus chama de minhas."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "O nome com que os discípulos reconhecem Jesus e com que Pedro lhe responde."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus pergunta se Pedro o ama",
+        "evidenceRef": "João 21:15"
+      },
+      {
+        "label": "Pedro responde que Jesus sabe",
+        "evidenceRef": "João 21:15"
+      },
+      {
+        "label": "Jesus lhe entrega as ovelhas",
+        "evidenceRef": "João 21:16"
+      },
+      {
+        "label": "A morte anunciada e o segue-me",
+        "evidenceRef": "João 21:18–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Ninguém perguntava quem ele era porque já sabiam que era o Senhor.",
+        "marker": "porque",
+        "evidenceRef": "João 21:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "Na juventude Pedro ia para onde queria; na velhice, outro o levará para onde não deseja.",
+        "marker": "mas",
+        "evidenceRef": "João 21:18"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois de indicar a morte, Jesus acrescenta o chamado a segui-lo.",
+        "marker": "após",
+        "evidenceRef": "João 21:19"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 10:11", "bridge": "Ovelhas do bom Pastor" },
+      { "ref": "João 13:36", "bridge": "O seguir prometido depois" },
+      { "ref": "João 13:38", "bridge": "Depois das três negações" }
+    ],
+    "misreadings": [
+      {
+        "text": "As três perguntas humilham Pedro e lhe fecham o serviço.",
+        "why": "A cada resposta Jesus diz apascenta as minhas ovelhas: a pergunta abre o cuidado, não fecha a porta."
+      },
+      {
+        "text": "Jesus entrega a Pedro um rebanho que passa a ser dele.",
+        "why": "Jesus diz as minhas ovelhas: o rebanho continua sendo dele, e Pedro é chamado a cuidar."
+      },
+      {
+        "text": "Jesus manda Pedro seguir o caminho do outro discípulo.",
+        "why": "Jesus responde que te importa e devolve Pedro ao próprio chamado: quanto a ti, segue-me."
+      }
+    ],
+    "centralInsight": "Jesus restaura Pedro com uma pergunta de amor e um chamado: apascenta as minhas ovelhas.",
+    "anchorQuestion": "O que Jesus pede a Pedro cada vez que ele diz que o ama?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 21:14, esta era a terceira vez que Jesus se manifestava aos discípulos depois de ressuscitar.",
+      "verseRef": "João 21:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "a terceira vez que Jesus se manifestava aos seus discípulos",
+      "feedbackCorrect": "O versículo numera esta cena: era a terceira vez depois da ressurreição.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: ele diz que esta era a terceira vez."
+      },
+      "hint": "Olhe o número desta manifestação no versículo.",
+      "learningObjective": "Observar que esta é a terceira manifestação de Jesus aos discípulos.",
+      "evidence": ["João 21:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 21:12, toque quem os discípulos sabiam que era.",
+      "verseRef": "João 21:12",
+      "options": [
+        { "id": "a", "text": "Vinde" },
+        { "id": "b", "text": "dos discípulos" },
+        { "id": "c", "text": "o Senhor" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "sabiam que era o Senhor",
+      "feedbackCorrect": "Eles não perguntam quem é, porque já sabiam que era o Senhor.",
+      "feedbackWrong": {
+        "a": "Vinde é o convite para comer, não quem eles reconheceram.",
+        "b": "Os discípulos são quem sabia; o nome de quem eles reconheceram vem no fim."
+      },
+      "hint": "Procure o nome no fim da frase, depois de sabiam.",
+      "learningObjective": "Identificar quem os discípulos reconheceram à mesa.",
+      "evidence": ["João 21:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 21:17, o que aconteceu com Simão na terceira pergunta?",
+      "verseRef": "João 21:17",
+      "options": [
+        { "id": "a", "text": "Ele celebrou a repetição da pergunta" },
+        { "id": "b", "text": "Ele se entristeceu com a pergunta" },
+        { "id": "c", "text": "Ele se calou e não deu resposta" },
+        { "id": "d", "text": "Ele passou a pergunta a outro" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Simão se entristeceu",
+      "feedbackCorrect": "O texto diz que Simão se entristeceu quando a pergunta veio pela terceira vez.",
+      "feedbackWrong": {
+        "a": "Não há celebração aqui; o texto diz que Simão se entristeceu.",
+        "c": "Ele não se cala; responde que Jesus sabe todas as coisas.",
+        "d": "A pergunta continua com Pedro; ele não a passa a outro."
+      },
+      "hint": "Veja a reação de Simão logo depois da pergunta.",
+      "learningObjective": "Observar a reação de Simão à terceira pergunta.",
+      "evidence": ["João 21:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 21:17 na ordem do texto.",
+      "verseRef": "João 21:17",
+      "options": [
+        { "id": "a", "text": "Jesus lhe perguntou pela terceira vez" },
+        { "id": "b", "text": "Simão se entristeceu" },
+        { "id": "c", "text": "Apascenta as minhas ovelhas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jesus lhe perguntou pela terceira vez",
+      "feedbackCorrect": "A ordem é a pergunta, a tristeza de Simão e o chamado às ovelhas.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta; a tristeza vem no meio e as ovelhas no fim."
+      },
+      "hint": "A frase começa com a pergunta de Jesus.",
+      "learningObjective": "Reconhecer a sequência de João 21:17.",
+      "evidence": ["João 21:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 21:13, o que Jesus pegou e ofereceu, como fez com o peixe?",
+      "verseRef": "João 21:13",
+      "options": [
+        { "id": "a", "text": "peixe" },
+        { "id": "b", "text": "pão" },
+        { "id": "c", "text": "vinho" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pegou o pão",
+      "feedbackCorrect": "Ele pegou o pão e o ofereceu, da mesma forma que fez com o peixe.",
+      "feedbackWrong": {
+        "a": "O peixe é a comparação; o que ele pegou e ofereceu nesta frase é o pão.",
+        "c": "Vinho caberia na frase, mas o texto diz que ele pegou o pão."
+      },
+      "hint": "Veja o alimento que ele pega antes de oferecer.",
+      "learningObjective": "Lembrar o que Jesus pegou e ofereceu na refeição.",
+      "evidence": ["João 21:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 21:15 comunica que se liga a este contexto?",
+      "verseRef": "João 21:15",
+      "passageA": { "ref": "João 21:15" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O rebanho continua sendo de Jesus, e Pedro é chamado a cuidar."
+      },
+      "options": [
+        { "id": "a", "text": "Pedro fica dono do rebanho" },
+        { "id": "b", "text": "Cuidar das ovelhas de Jesus" },
+        { "id": "c", "text": "A refeição encerra o serviço" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Apascenta as minhas ovelhas",
+      "feedbackCorrect": "Jesus diz as minhas ovelhas: Pedro cuida, e o rebanho continua dele.",
+      "feedbackWrong": {
+        "a": "O texto não transfere a posse; Jesus chama as ovelhas de minhas.",
+        "c": "A refeição abre a conversa; o cuidado das ovelhas vem depois."
+      },
+      "hint": "Veja de quem Jesus diz que são as ovelhas.",
+      "learningObjective": "Ligar o chamado de João 21:15 ao fato de que as ovelhas são de Jesus.",
+      "evidence": ["João 21:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 21:12, os discípulos não perguntaram quem era Jesus porque ainda não sabiam que era o Senhor.",
+      "verseRef": "João 21:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque sabiam que era o Senhor",
+      "feedbackCorrect": "O porque aponta o contrário: eles não perguntavam porque já sabiam.",
+      "feedbackWrong": {
+        "true": "O versículo dá a razão oposta: sabiam que era o Senhor, e por isso não perguntavam."
+      },
+      "hint": "Leia a razão que vem logo depois da pergunta deles.",
+      "learningObjective": "Compreender por que os discípulos não perguntaram quem ele era.",
+      "evidence": ["João 21:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 21:18, toque a palavra que marca o contraste entre a juventude e a velhice.",
+      "verseRef": "João 21:18",
+      "options": [
+        { "id": "a", "text": "verdade" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "jovem" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas quando fores velho",
+      "feedbackCorrect": "Mas vira a cena: na velhice, outro o levará para onde ele não deseja.",
+      "feedbackWrong": {
+        "a": "Verdade abre o anúncio solene; o contraste entre as idades vem depois.",
+        "c": "Jovem nomeia a primeira fase; a virada está na palavra curta entre elas."
+      },
+      "hint": "Procure a palavra curta depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste em João 21:18.",
+      "evidence": ["João 21:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que o contraste de João 21:18 mostra sobre a velhice de Pedro?",
+      "verseRef": "João 21:18",
+      "options": [
+        { "id": "a", "text": "Outro o levará para onde ele não quer" },
+        { "id": "b", "text": "Na velhice ele anda para onde quiser" },
+        { "id": "c", "text": "Desde jovem outro já o conduzia" },
+        { "id": "d", "text": "O anúncio fala só de quem o veste" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "te levará para onde não desejas",
+      "feedbackCorrect": "O contraste mostra a virada: na velhice, outro o leva para onde ele não deseja.",
+      "feedbackWrong": {
+        "b": "Isso descreve a juventude, quando ele andava para onde queria.",
+        "c": "O texto diz que, jovem, ele andava para onde queria, sem ser levado.",
+        "d": "O anúncio não para na veste; outro também o leva para onde ele não deseja."
+      },
+      "hint": "Compare o que ele fazia jovem com o que outro fará depois.",
+      "learningObjective": "Relacionar a juventude livre e a velhice conduzida em João 21:18.",
+      "evidence": ["João 21:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o diálogo em João 21:15–16?",
+      "verseRef": "João 21:15–16",
+      "options": [
+        { "id": "a", "text": "Jesus pergunta se Pedro o ama" },
+        { "id": "b", "text": "Pedro responde que Jesus sabe" },
+        { "id": "c", "text": "Jesus lhe entrega as ovelhas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Apascenta as minhas ovelhas",
+      "feedbackCorrect": "O diálogo anda assim: a pergunta, a resposta de Pedro e o cuidado das ovelhas.",
+      "feedbackWrong": {
+        "default": "A entrega das ovelhas vem por último, depois da pergunta e da resposta."
+      },
+      "hint": "O cuidado das ovelhas é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento da pergunta ao cuidado das ovelhas.",
+      "evidence": ["João 21:15–16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 21:19, que palavra liga o anúncio da morte ao chamado seguinte?",
+      "verseRef": "João 21:19",
+      "options": [
+        { "id": "a", "text": "ao" },
+        { "id": "b", "text": "sem" },
+        { "id": "c", "text": "após" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "após dizer isso",
+      "feedbackCorrect": "Após liga os dois passos: dito o anúncio da morte, Jesus chama a seguir.",
+      "feedbackWrong": {
+        "a": "Ao marcaria o instante da fala; o texto usa a palavra do passo seguinte.",
+        "b": "Sem inverteria o sentido; Jesus fala e, em seguida, chama a seguir."
+      },
+      "hint": "A palavra fica entre a vírgula e o verbo dizer.",
+      "learningObjective": "Lembrar a palavra que liga o anúncio da morte ao chamado.",
+      "evidence": ["João 21:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 21:15 a João 10:11?",
+      "verseRef": "João 21:15",
+      "passageA": { "ref": "João 21:15" },
+      "passageB": { "ref": "João 10:11" },
+      "options": [
+        { "id": "a", "text": "Pedro substitui o Pastor" },
+        { "id": "b", "text": "Ovelhas do bom Pastor" },
+        { "id": "c", "text": "O pão substitui o rebanho" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Apascenta as minhas ovelhas",
+      "feedbackCorrect": "Jesus, o bom Pastor, chama Pedro a cuidar de ovelhas que continuam dele.",
+      "feedbackWrong": {
+        "a": "Pedro recebe um serviço; quem entrega a vida pelas ovelhas continua sendo Jesus.",
+        "c": "O pão é da refeição; a ponte entre os textos é o rebanho do Pastor."
+      },
+      "hint": "Compare de quem são as ovelhas nos dois textos.",
+      "learningObjective": "Relacionar o chamado de Pedro ao Pastor que dá a vida pelas ovelhas.",
+      "evidence": ["João 21:15", "João 10:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 21:22, Jesus manda Pedro seguir o mesmo caminho do outro discípulo.",
+      "verseRef": "João 21:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quanto a ti, segue-me",
+      "feedbackCorrect": "Jesus afasta a comparação: que te importa, e quanto a ti, segue-me.",
+      "feedbackWrong": {
+        "true": "O versículo não iguala os caminhos; devolve Pedro ao seu próprio seguir."
+      },
+      "hint": "Veja a frase final, depois da pergunta sobre o outro.",
+      "learningObjective": "Interpretar a resposta de Jesus sobre o caminho do outro discípulo.",
+      "evidence": ["João 21:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 21:19, toque o que essa morte faria em relação a Deus.",
+      "verseRef": "João 21:19",
+      "options": [
+        { "id": "a", "text": "tipo de morte" },
+        { "id": "b", "text": "glorificaria" },
+        { "id": "c", "text": "Segue-me" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ele glorificaria a Deus",
+      "feedbackCorrect": "O texto diz o sentido dessa morte: com ela Pedro glorificaria a Deus.",
+      "feedbackWrong": {
+        "a": "Tipo de morte nomeia o anúncio; o que ela faz em relação a Deus vem em seguida.",
+        "c": "Segue-me é o chamado depois; o sentido da morte está no verbo anterior."
+      },
+      "hint": "Procure o verbo que liga a morte a Deus.",
+      "learningObjective": "Sustentar com o texto que a morte anunciada glorifica a Deus.",
+      "evidence": ["João 21:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 21:17 sustenta sobre a terceira pergunta?",
+      "verseRef": "João 21:17",
+      "options": [
+        { "id": "a", "text": "A pergunta humilha Pedro e lhe fecha o serviço" },
+        { "id": "b", "text": "A pergunta abre o cuidado das ovelhas de Jesus" },
+        { "id": "c", "text": "A pergunta entrega a Pedro um rebanho só dele" },
+        { "id": "d", "text": "A tristeza de Pedro anula a resposta de amor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Apascenta as minhas ovelhas",
+      "feedbackCorrect": "Mesmo na terceira vez, a pergunta termina no cuidado das ovelhas de Jesus.",
+      "feedbackWrong": {
+        "a": "A tristeza não fecha a porta: Jesus ainda lhe entrega as ovelhas.",
+        "c": "Jesus diz minhas ovelhas; o rebanho não passa a ser de Pedro.",
+        "d": "Ele responde que ama, e Jesus confirma o chamado em seguida."
+      },
+      "hint": "Veja o que Jesus diz logo depois da resposta de Pedro.",
+      "learningObjective": "Escolher a leitura que João 21:17 sustenta sobre a terceira pergunta.",
+      "evidence": ["João 21:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho de Pedro até João 21:19?",
+      "verseRef": "João 21:19",
+      "options": [
+        { "id": "a", "text": "Jesus avisa que Pedro o negará três vezes" },
+        { "id": "b", "text": "Jesus pergunta três vezes se Pedro o ama" },
+        { "id": "c", "text": "Pedro segue até a morte que glorifica a Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "glorificaria a Deus",
+      "feedbackCorrect": "O caminho vai da negação anunciada à pergunta de amor e à morte que glorifica.",
+      "feedbackWrong": {
+        "default": "Comece pelo aviso da negação; a pergunta de amor vem depois e a morte no fim."
+      },
+      "hint": "Siga a história de Pedro, do aviso até a morte.",
+      "learningObjective": "Encadear a negação anunciada, a pergunta de amor e a morte que glorifica.",
+      "evidence": ["João 13:38", "João 21:17", "João 21:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 21:16, que verbo carrega o chamado de Jesus a Pedro?",
+      "verseRef": "João 21:16",
+      "options": [
+        { "id": "a", "text": "Conta" },
+        { "id": "b", "text": "Apascenta" },
+        { "id": "c", "text": "Esconde" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Apascenta as minhas ovelhas",
+      "feedbackCorrect": "Apascenta é o chamado: cuidar das ovelhas que Jesus chama de minhas.",
+      "feedbackWrong": {
+        "a": "Contar caberia na frase, mas não é o verbo que Jesus usa aqui.",
+        "c": "Esconder caberia na frase, mas Jesus entrega um cuidado, não um ocultamento."
+      },
+      "hint": "É o verbo logo antes de as minhas ovelhas.",
+      "learningObjective": "Lembrar o verbo que carrega o chamado de Jesus a Pedro.",
+      "evidence": ["João 21:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 21:19 a João 13:36?",
+      "verseRef": "João 21:19",
+      "passageA": { "ref": "João 21:19" },
+      "passageB": { "ref": "João 13:36" },
+      "options": [
+        { "id": "a", "text": "Pedro ainda não pode seguir" },
+        { "id": "b", "text": "O seguir prometido depois" },
+        { "id": "c", "text": "Pedro segue outro discípulo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Segue-me",
+      "feedbackCorrect": "Na ceia, o seguir ficava para depois; agora Jesus diz segue-me, até a morte.",
+      "feedbackWrong": {
+        "a": "Isso vale na ceia, naquele momento; João 21 mostra o seguir que ficara para depois.",
+        "c": "Nenhum dos dois textos manda Pedro seguir o outro discípulo."
+      },
+      "hint": "Veja quando Jesus diz que Pedro poderia segui-lo.",
+      "learningObjective": "Ligar o segue-me de João 21:19 ao seguir que Jesus havia deixado para depois.",
+      "evidence": ["João 21:19", "João 13:36"]
+    }
+  ]
+}

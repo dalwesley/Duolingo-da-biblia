@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 37:15–26",
+    "passages": [
+      {
+        "ref": "Ezequiel 37:15–26"
+      }
+    ],
+    "context": "Duas varas — Judá e José — se tornam um só bastão; um só rei e aliança de paz.",
+    "keyword": "bastão",
+    "keywordGloss": "Pedaço de madeira que representa as casas unidas na mão de Deus.",
+    "focusQuestion": "Onde ainda há divisão que só Deus pode tornar um?",
+    "reflectionPrompts": [
+      "Duas varas",
+      "Uma só nação",
+      "Servo Davi"
+    ],
+    "facts": [
+      {
+        "text": "Ezequiel deve escrever em duas madeiras: Judá e José.",
+        "evidenceRef": "Ezequiel 37:16",
+        "evidenceSpan": "pega um pedaço de madeira e escreve nele: \"Para Judá e para os filhos de Israel, seus companheiros\""
+      },
+      {
+        "text": "Deve ajuntá-los num só bastão na mão.",
+        "evidenceRef": "Ezequiel 37:17",
+        "evidenceSpan": "Ajunta-os um ao outro, faze deles um só bastão para que se tornem um na tua mão"
+      },
+      {
+        "text": "Deus fará deles uma só nação com um só rei.",
+        "evidenceRef": "Ezequiel 37:22",
+        "evidenceSpan": "Farei deles uma só nação na terra, nos montes de Israel, e um só rei governará todos eles"
+      },
+      {
+        "text": "Meu servo Davi reinará e terão um só pastor.",
+        "evidenceRef": "Ezequiel 37:24",
+        "evidenceSpan": "E meu servo Davi reinará sobre eles; e todos terão um só pastor"
+      },
+      {
+        "text": "Deus fará aliança de paz perpétua e porá o santuário no meio.",
+        "evidenceRef": "Ezequiel 37:26",
+        "evidenceSpan": "Eu farei com eles uma aliança de paz; será uma aliança perpétua"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "bastão",
+        "gloss": "Símbolo da união de Judá e José."
+      },
+      {
+        "term": "nação",
+        "gloss": "Uma só, sob um só rei."
+      },
+      {
+        "term": "Davi",
+        "gloss": "Servo que reinará como pastor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Duas madeiras escritas",
+        "evidenceRef": "Ezequiel 37:15–16"
+      },
+      {
+        "label": "Um só bastão na mão",
+        "evidenceRef": "Ezequiel 37:17–20"
+      },
+      {
+        "label": "Uma nação e um rei",
+        "evidenceRef": "Ezequiel 37:21–23"
+      },
+      {
+        "label": "Davi, aliança e santuário",
+        "evidenceRef": "Ezequiel 37:24–26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Então lhes dirás a palavra do Senhor.",
+        "marker": "Então",
+        "evidenceRef": "Ezequiel 37:19"
+      },
+      {
+        "kind": "propósito",
+        "text": "Ajuntar para que se tornem um na mão.",
+        "marker": "para que",
+        "evidenceRef": "Ezequiel 37:17"
+      },
+      {
+        "kind": "contraste",
+        "text": "Nunca mais serão duas nações.",
+        "marker": "nunca mais",
+        "evidenceRef": "Ezequiel 37:22"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 10:16",
+        "bridge": "Um rebanho um pastor"
+      },
+      {
+        "ref": "Oséias 1:11",
+        "bridge": "Judá e Israel juntos"
+      },
+      {
+        "ref": "Isaías 11:12–13",
+        "bridge": "Reunir os dispersos"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "As duas casas permanecem divididas para sempre.",
+        "why": "Deus fará um só bastão e uma só nação."
+      },
+      {
+        "text": "Haverá muitos reis e muitos pastores rivais.",
+        "why": "Um só rei e um só pastor."
+      },
+      {
+        "text": "A aliança de paz é passageira.",
+        "why": "Será aliança perpétua."
+      }
+    ],
+    "centralInsight": "Farei deles uma só nação; um só rei será rei de todos eles, e não se contaminarão mais.",
+    "anchorQuestion": "O que as duas madeiras se tornam em Ezequiel 37:17?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 37:17, as madeiras devem tornar-se um só bastão na mão.",
+      "verseRef": "Ezequiel 37:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "faze deles um só bastão para que se tornem um na tua mão",
+      "feedbackCorrect": "Um só bastão na mão.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a união."
+      },
+      "hint": "Veja 37:17.",
+      "learningObjective": "Identificar o bastão.",
+      "evidence": [
+        "Ezequiel 37:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 37:17, toque o que as madeiras devem tornar-se.",
+      "verseRef": "Ezequiel 37:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "um só bastão"
+        },
+        {
+          "id": "b",
+          "text": "tua mão"
+        },
+        {
+          "id": "c",
+          "text": "um ao outro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faze deles um só bastão",
+      "feedbackCorrect": "Tornam-se um só bastão.",
+      "feedbackWrong": {
+        "b": "É onde ficam unidos; o que se tornam é um só bastão.",
+        "c": "É o gesto de juntar; o resultado é um só bastão."
+      },
+      "hint": "Procure o resultado.",
+      "learningObjective": "Tocar o bastão.",
+      "evidence": [
+        "Ezequiel 37:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 37:22, o que Deus fará deles?",
+      "verseRef": "Ezequiel 37:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma só nação com um só rei"
+        },
+        {
+          "id": "b",
+          "text": "Duas nações eternas"
+        },
+        {
+          "id": "c",
+          "text": "Três reinos rivais"
+        },
+        {
+          "id": "d",
+          "text": "Um exílio sem fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei deles uma só nação na terra, nos montes de Israel, e um só rei governará todos eles",
+      "feedbackCorrect": "Uma nação e um rei.",
+      "feedbackWrong": {
+        "b": "Nunca mais serão duas.",
+        "c": "Há um só rei.",
+        "d": "Há retorno à terra."
+      },
+      "hint": "Veja nação e rei.",
+      "learningObjective": "Reconhecer a união.",
+      "evidence": [
+        "Ezequiel 37:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 37:17 na ordem do texto.",
+      "verseRef": "Ezequiel 37:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ajunta-os um ao outro"
+        },
+        {
+          "id": "b",
+          "text": "faze deles um só bastão"
+        },
+        {
+          "id": "c",
+          "text": "para que se tornem um na tua mão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ajunta-os um ao outro, faze deles um só bastão para que se tornem um na tua mão",
+      "feedbackCorrect": "Ajuntar → bastão → um.",
+      "feedbackWrong": {
+        "default": "Comece pelo ajuntar."
+      },
+      "hint": "Comece pelo ajuntar.",
+      "learningObjective": "Ordenar o versículo.",
+      "evidence": [
+        "Ezequiel 37:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 37:22, Farei deles uma só ___.",
+      "verseRef": "Ezequiel 37:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "nação"
+        },
+        {
+          "id": "b",
+          "text": "rede"
+        },
+        {
+          "id": "c",
+          "text": "trombeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei deles uma só nação na terra",
+      "feedbackCorrect": "A palavra é nação.",
+      "feedbackWrong": {
+        "b": "Não é rede.",
+        "c": "Não é trombeta."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar a nação.",
+      "evidence": [
+        "Ezequiel 37:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 37:17 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 37:17",
+      "passageA": {
+        "ref": "Ezequiel 37:17"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Judá e José se unem num só bastão sob um só rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um só bastão"
+        },
+        {
+          "id": "b",
+          "text": "Cedro no Líbano"
+        },
+        {
+          "id": "c",
+          "text": "Monte Seir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faze deles um só bastão",
+      "feedbackCorrect": "O bastão resume a união.",
+      "feedbackWrong": {
+        "b": "Cedro está em 31.",
+        "c": "Seir está em 35."
+      },
+      "hint": "Compare a união.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 37:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 37:22, Israel permanecerá dividido em duas nações para sempre.",
+      "verseRef": "Ezequiel 37:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "nunca mais serão duas nações, nem se dividirão em dois reinos",
+      "feedbackCorrect": "Nunca mais serão duas nações.",
+      "feedbackWrong": {
+        "true": "O texto nega a divisão eterna."
+      },
+      "hint": "Veja o fim de 37:22.",
+      "learningObjective": "Ver a união.",
+      "evidence": [
+        "Ezequiel 37:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 37:17, toque a expressão que marca o propósito da união.",
+      "verseRef": "Ezequiel 37:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "bastão"
+        },
+        {
+          "id": "c",
+          "text": "mão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que se tornem um na tua mão",
+      "feedbackCorrect": "\"Para que\" marca o propósito.",
+      "feedbackWrong": {
+        "b": "É o resultado material.",
+        "c": "É o lugar da união."
+      },
+      "hint": "Procure o propósito.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 37:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 37:17 e 37:22 se relacionam?",
+      "verseRef": "Ezequiel 37:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O bastão único aponta para uma só nação"
+        },
+        {
+          "id": "b",
+          "text": "O bastão confirma a divisão"
+        },
+        {
+          "id": "c",
+          "text": "A nação cancela o bastão"
+        },
+        {
+          "id": "d",
+          "text": "O rei multiplica as varas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faze deles um só bastão",
+      "feedbackCorrect": "Símbolo e cumprimento se ligam.",
+      "feedbackWrong": {
+        "b": "Há união.",
+        "c": "O bastão ilustra a nação.",
+        "d": "Há um só rei."
+      },
+      "hint": "Una bastão e nação.",
+      "learningObjective": "Relacionar símbolo e cumprimento.",
+      "evidence": [
+        "Ezequiel 37:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 37?",
+      "verseRef": "Ezequiel 37:16–24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Duas madeiras escritas"
+        },
+        {
+          "id": "b",
+          "text": "Um só bastão e uma nação"
+        },
+        {
+          "id": "c",
+          "text": "Davi como um só pastor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "todos terão um só pastor",
+      "feedbackCorrect": "Varas → nação → pastor.",
+      "feedbackWrong": {
+        "default": "Comece nas madeiras."
+      },
+      "hint": "Comece nas madeiras.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 37:16",
+        "Ezequiel 37:22",
+        "Ezequiel 37:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 37:24, E meu servo ___ reinará sobre eles.",
+      "verseRef": "Ezequiel 37:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "Faraó"
+        },
+        {
+          "id": "c",
+          "text": "Gogue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E meu servo Davi reinará sobre eles",
+      "feedbackCorrect": "A palavra é Davi.",
+      "feedbackWrong": {
+        "b": "Não é Faraó.",
+        "c": "Não é Gogue."
+      },
+      "hint": "Veja o servo.",
+      "learningObjective": "Lembrar o rei.",
+      "evidence": [
+        "Ezequiel 37:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 37:24 a João 10:16?",
+      "verseRef": "Ezequiel 37:24",
+      "passageA": {
+        "ref": "Ezequiel 37:24"
+      },
+      "passageB": {
+        "ref": "João 10:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um rebanho um pastor"
+        },
+        {
+          "id": "b",
+          "text": "Rede sobre Faraó"
+        },
+        {
+          "id": "c",
+          "text": "Porta fechada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todos terão um só pastor",
+      "feedbackCorrect": "Nos dois, um pastor reúne.",
+      "feedbackWrong": {
+        "b": "Rede está em 32.",
+        "c": "Porta está em 44."
+      },
+      "hint": "Compare o pastor.",
+      "learningObjective": "Relacionar a João.",
+      "evidence": [
+        "Ezequiel 37:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 37:26, Deus fará com eles uma aliança de paz perpétua.",
+      "verseRef": "Ezequiel 37:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu farei com eles uma aliança de paz; será uma aliança perpétua",
+      "feedbackCorrect": "A aliança é de paz e perpétua.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a aliança."
+      },
+      "hint": "Veja 37:26.",
+      "learningObjective": "Confirmar a aliança.",
+      "evidence": [
+        "Ezequiel 37:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 37:26, toque o trecho que sustenta a duração da aliança.",
+      "verseRef": "Ezequiel 37:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "perpétua"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "santuário"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será uma aliança perpétua",
+      "feedbackCorrect": "\"Perpétua\" marca a duração.",
+      "feedbackWrong": {
+        "b": "É o tipo da aliança.",
+        "c": "É o que Deus põe no meio."
+      },
+      "hint": "Procure a duração.",
+      "learningObjective": "Tocar a duração.",
+      "evidence": [
+        "Ezequiel 37:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 37 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 37:17–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus une o povo sob um rei e aliança perpétua"
+        },
+        {
+          "id": "b",
+          "text": "A divisão das casas permanece"
+        },
+        {
+          "id": "c",
+          "text": "Haverá muitos pastores rivais"
+        },
+        {
+          "id": "d",
+          "text": "A aliança é passageira"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu farei com eles uma aliança de paz; será uma aliança perpétua",
+      "feedbackCorrect": "União, rei e aliança.",
+      "feedbackWrong": {
+        "b": "Há um só bastão.",
+        "c": "Há um só pastor.",
+        "d": "É perpétua."
+      },
+      "hint": "Una bastão e aliança.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 37:17",
+        "Ezequiel 37:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da união.",
+      "verseRef": "Ezequiel 37:17–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um só bastão na mão"
+        },
+        {
+          "id": "b",
+          "text": "Uma só nação e um rei"
+        },
+        {
+          "id": "c",
+          "text": "Aliança de paz e santuário"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "porei o meu santuário no meio deles, para sempre",
+      "feedbackCorrect": "Símbolo → nação → aliança.",
+      "feedbackWrong": {
+        "default": "Comece no bastão."
+      },
+      "hint": "Comece no bastão.",
+      "learningObjective": "Encadear a união.",
+      "evidence": [
+        "Ezequiel 37:17",
+        "Ezequiel 37:22",
+        "Ezequiel 37:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 37:26, Eu farei com eles uma aliança de ___.",
+      "verseRef": "Ezequiel 37:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "paz"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu farei com eles uma aliança de paz",
+      "feedbackCorrect": "A palavra é paz.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "Não é ouro."
+      },
+      "hint": "Veja o tipo da aliança.",
+      "learningObjective": "Lembrar a paz.",
+      "evidence": [
+        "Ezequiel 37:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 37:22 a Oséias 1:11?",
+      "verseRef": "Ezequiel 37:22",
+      "passageA": {
+        "ref": "Ezequiel 37:22"
+      },
+      "passageB": {
+        "ref": "Oséias 1:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá e Israel juntos"
+        },
+        {
+          "id": "b",
+          "text": "Crocodilo nas águas"
+        },
+        {
+          "id": "c",
+          "text": "Dia do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei deles uma só nação na terra",
+      "feedbackCorrect": "Nos dois, as casas se unem.",
+      "feedbackWrong": {
+        "b": "Crocodilo está em 32.",
+        "c": "Dia está em 30."
+      },
+      "hint": "Compare a união.",
+      "learningObjective": "Ligar a Oséias.",
+      "evidence": [
+        "Ezequiel 37:22"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Efésios 2:13–18",
+    "passages": [
+      {
+        "ref": "Efésios 2:13–18"
+      },
+      {
+        "ref": "Efésios 2:19–22"
+      }
+    ],
+    "context": "Longe e perto foram aproximados pelo sangue de Cristo. Ele é a paz que faz um só povo e edifica a habitação de Deus no Espírito.",
+    "keyword": "paz",
+    "keywordGloss": "Cristo em pessoa: derruba a inimizade e faz dos dois um novo homem.",
+    "focusQuestion": "Onde você ainda ergue paredes que Cristo já derrubou?",
+    "reflectionPrompts": [
+      "Um só povo",
+      "Cristo nossa paz",
+      "Habitação no Espírito"
+    ],
+    "facts": [
+      {
+        "text": "Os que estavam distantes foram aproximados pelo sangue de Cristo.",
+        "evidenceRef": "Efésios 2:13",
+        "evidenceSpan": "foram aproximados pelo sangue de Cristo"
+      },
+      {
+        "text": "Ele é a nossa paz e de ambos fez um.",
+        "evidenceRef": "Efésios 2:14",
+        "evidenceSpan": "Ele é a nossa paz, que de ambos fez um"
+      },
+      {
+        "text": "Pela cruz reconciliou ambos em um só corpo com Deus.",
+        "evidenceRef": "Efésios 2:16",
+        "evidenceSpan": "reconciliou ambos em um só corpo com Deus"
+      },
+      {
+        "text": "Anunciou paz aos longe e aos perto.",
+        "evidenceRef": "Efésios 2:17",
+        "evidenceSpan": "anunciou paz a vocês que estavam longe e paz também aos que estavam perto"
+      },
+      {
+        "text": "Já não são estrangeiros, mas cidadãos e família de Deus.",
+        "evidenceRef": "Efésios 2:19",
+        "evidenceSpan": "já não sois estrangeiros nem peregrinos, mas cidadãos dos santos"
+      },
+      {
+        "text": "São edificados como habitação de Deus no Espírito.",
+        "evidenceRef": "Efésios 2:22",
+        "evidenceSpan": "edificados como uma habitação de Deus no Espírito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "paz",
+        "gloss": "Cristo que faz um e reconcilia pela cruz."
+      },
+      {
+        "term": "inimizade",
+        "gloss": "Parede derrubada na carne de Cristo."
+      },
+      {
+        "term": "habitação",
+        "gloss": "Casa de Deus edificada no Espírito."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Aproximados pelo sangue",
+        "evidenceRef": "Efésios 2:13"
+      },
+      {
+        "label": "Cristo paz: um novo homem",
+        "evidenceRef": "Efésios 2:14–15"
+      },
+      {
+        "label": "Reconciliação pela cruz",
+        "evidenceRef": "Efésios 2:16–18"
+      },
+      {
+        "label": "Família e habitação no Espírito",
+        "evidenceRef": "Efésios 2:19–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Antes distantes; agora aproximados em Cristo.",
+        "marker": "Mas",
+        "evidenceRef": "Efésios 2:13"
+      },
+      {
+        "kind": "propósito",
+        "text": "Aboliu a inimizade para criar um novo homem.",
+        "marker": "para que",
+        "evidenceRef": "Efésios 2:15"
+      },
+      {
+        "kind": "resultado",
+        "text": "Assim já não são estrangeiros, mas família.",
+        "marker": "Assim",
+        "evidenceRef": "Efésios 2:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Colossenses 1:20",
+        "bridge": "Paz pelo sangue da cruz"
+      },
+      {
+        "ref": "João 10:16",
+        "bridge": "Um só rebanho"
+      },
+      {
+        "ref": "1 Pedro 2:5",
+        "bridge": "Casa espiritual"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A paz de Cristo mantém dois povos separados.",
+        "why": "De ambos fez um e criou um novo homem."
+      },
+      {
+        "text": "A inimizade continua de pé na igreja.",
+        "why": "Ele derrubou a parede e destruiu a inimizade."
+      },
+      {
+        "text": "A habitação de Deus é só edifício de pedra.",
+        "why": "São edificados como habitação no Espírito."
+      }
+    ],
+    "centralInsight": "Cristo é a nossa paz: de dois povos fez um e edifica a casa de Deus no Espírito.",
+    "anchorQuestion": "Segundo Efésios 2:14, quem é a nossa paz?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Efésios 2:14, Cristo é a nossa paz e de ambos fez um.",
+      "verseRef": "Efésios 2:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ele é a nossa paz, que de ambos fez um",
+      "feedbackCorrect": "Cristo é a paz que une.",
+      "feedbackWrong": {
+        "false": "Releia o início do versículo."
+      },
+      "hint": "Olhe quem é a paz.",
+      "learningObjective": "Observar Cristo como paz.",
+      "evidence": [
+        "Efésios 2:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Efésios 2:13, toque pelo que foram aproximados.",
+      "verseRef": "Efésios 2:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "distantes"
+        },
+        {
+          "id": "c",
+          "text": "agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aproximados pelo sangue de Cristo",
+      "feedbackCorrect": "O sangue de Cristo aproximou.",
+      "feedbackWrong": {
+        "b": "Distantes descreve o passado.",
+        "c": "Agora marca o tempo da virada."
+      },
+      "hint": "Veja o meio da aproximação.",
+      "learningObjective": "Identificar o sangue.",
+      "evidence": [
+        "Efésios 2:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Efésios 2:19, o que eles já não são?",
+      "verseRef": "Efésios 2:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estrangeiros nem peregrinos"
+        },
+        {
+          "id": "b",
+          "text": "Cidadãos dos santos"
+        },
+        {
+          "id": "c",
+          "text": "Família de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Pedra angular"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "já não sois estrangeiros nem peregrinos",
+      "feedbackCorrect": "Já não estrangeiros; agora cidadãos e família.",
+      "feedbackWrong": {
+        "b": "Cidadãos é o que passam a ser.",
+        "c": "Família também.",
+        "d": "Pedra angular é Cristo."
+      },
+      "hint": "Leia o que já não sois.",
+      "learningObjective": "Ver a nova identidade.",
+      "evidence": [
+        "Efésios 2:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Efésios 2:13–14 na ordem do texto.",
+      "verseRef": "Efésios 2:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "vocês que antes estavam distantes, foram aproximados"
+        },
+        {
+          "id": "b",
+          "text": "pelo sangue de Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Ele é a nossa paz, que de ambos fez um"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele é a nossa paz",
+      "feedbackCorrect": "Distantes, sangue e então a paz.",
+      "feedbackWrong": {
+        "default": "Comece pelos distantes."
+      },
+      "hint": "Siga 2:13–14.",
+      "learningObjective": "Seguir a ordem da aproximação.",
+      "evidence": [
+        "Efésios 2:13–14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Efésios 2:14, complete: Ele é a nossa ___.",
+      "verseRef": "Efésios 2:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "paz"
+        },
+        {
+          "id": "b",
+          "text": "parede"
+        },
+        {
+          "id": "c",
+          "text": "lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele é a nossa paz",
+      "feedbackCorrect": "Paz nomeia Cristo.",
+      "feedbackWrong": {
+        "b": "Parede foi derrubada.",
+        "c": "Lei das ordenanças foi abolida."
+      },
+      "hint": "Veja o predicado de Ele é.",
+      "learningObjective": "Lembrar a palavra paz.",
+      "evidence": [
+        "Efésios 2:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Efésios 2:14 comunica que se liga a este contexto?",
+      "verseRef": "Efésios 2:14",
+      "passageA": {
+        "ref": "Efésios 2:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Longe e perto foram unidos em um só povo em Cristo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo é a nossa paz"
+        },
+        {
+          "id": "b",
+          "text": "Parede ainda de pé"
+        },
+        {
+          "id": "c",
+          "text": "Dois povos separados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele é a nossa paz, que de ambos fez um",
+      "feedbackCorrect": "A paz de Cristo une os dois.",
+      "feedbackWrong": {
+        "b": "A parede foi derrubada.",
+        "c": "De ambos fez um."
+      },
+      "hint": "Ligue paz e unidade.",
+      "learningObjective": "Ligar o contexto à paz de Cristo.",
+      "evidence": [
+        "Efésios 2:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Efésios 2:13, o Mas agora mostra que os distantes continuam longe de Cristo.",
+      "verseRef": "Efésios 2:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "foram aproximados pelo sangue de Cristo",
+      "feedbackCorrect": "O Mas agora introduz a aproximação.",
+      "feedbackWrong": {
+        "true": "Foram aproximados, não ficaram longe."
+      },
+      "hint": "Leia o que o Mas agora introduz.",
+      "learningObjective": "Ver o contraste da aproximação.",
+      "evidence": [
+        "Efésios 2:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Efésios 2:13, toque a palavra que marca a virada.",
+      "verseRef": "Efésios 2:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "antes"
+        },
+        {
+          "id": "c",
+          "text": "sangue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas agora, em Cristo Jesus",
+      "feedbackCorrect": "O Mas marca a virada.",
+      "feedbackWrong": {
+        "b": "Antes descreve o passado.",
+        "c": "Sangue é o meio."
+      },
+      "hint": "Procure a conjunção inicial.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Efésios 2:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Efésios 2:15–16 estabelece entre cruz e paz?",
+      "verseRef": "Efésios 2:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cruz reconcilia ambos e faz um novo homem em paz"
+        },
+        {
+          "id": "b",
+          "text": "A cruz reforça a inimizade"
+        },
+        {
+          "id": "c",
+          "text": "A paz dispensa a cruz"
+        },
+        {
+          "id": "d",
+          "text": "A cruz separa longe e perto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reconciliou ambos em um só corpo com Deus",
+      "feedbackCorrect": "Cruz e novo homem fazem a paz.",
+      "feedbackWrong": {
+        "b": "A inimizade é destruída.",
+        "c": "A paz vem pela cruz.",
+        "d": "Longe e perto ouvem paz."
+      },
+      "hint": "Una abolir a inimizade e reconciliar.",
+      "learningObjective": "Relacionar cruz e paz.",
+      "evidence": [
+        "Efésios 2:15–16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Efésios 2:13–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aproximados pelo sangue"
+        },
+        {
+          "id": "b",
+          "text": "Cristo paz: um novo homem"
+        },
+        {
+          "id": "c",
+          "text": "Família e habitação no Espírito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "habitação de Deus no Espírito",
+      "feedbackCorrect": "Aproximação, paz e então a casa.",
+      "feedbackWrong": {
+        "default": "Comece pela aproximação."
+      },
+      "hint": "Pense no fluxo até a habitação.",
+      "learningObjective": "Ordenar aproximação, paz e habitação.",
+      "evidence": [
+        "Efésios 2:13–22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Efésios 2:15, complete o propósito: ___ que dos dois criasse um novo homem.",
+      "verseRef": "Efésios 2:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "para"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "Assim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que dos dois criasse, em si mesmo, um novo homem",
+      "feedbackCorrect": "Para que marca o propósito.",
+      "feedbackWrong": {
+        "b": "Porém marca contraste.",
+        "c": "Assim aparece em 2:19."
+      },
+      "hint": "Veja a finalidade.",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": [
+        "Efésios 2:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Efésios 2:16 a Colossenses 1:20?",
+      "verseRef": "Efésios 2:16",
+      "passageA": {
+        "ref": "Efésios 2:16"
+      },
+      "passageB": {
+        "ref": "Colossenses 1:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz pela cruz"
+        },
+        {
+          "id": "b",
+          "text": "Parede de pedra"
+        },
+        {
+          "id": "c",
+          "text": "Peregrinos eternos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio da cruz, reconciliou ambos",
+      "feedbackCorrect": "Ambos ligam paz e reconciliação à cruz.",
+      "feedbackWrong": {
+        "b": "A parede foi derrubada.",
+        "c": "Já não são peregrinos."
+      },
+      "hint": "Compare cruz e paz.",
+      "learningObjective": "Ligar a paz pela cruz.",
+      "evidence": [
+        "Efésios 2:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Efésios 2:14–19, a paz de Cristo mantém dois povos separados na igreja.",
+      "verseRef": "Efésios 2:14–19",
+      "correctOptionId": "false",
+      "evidenceSpan": "de ambos fez um",
+      "feedbackCorrect": "De ambos fez um; já não estrangeiros, mas família.",
+      "feedbackWrong": {
+        "true": "A unidade, não a separação, é o fruto."
+      },
+      "hint": "Una 2:14 e 2:19.",
+      "learningObjective": "Avaliar a leitura errada da paz.",
+      "evidence": [
+        "Efésios 2:14–19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Efésios 2:14, toque o trecho que sustenta a unidade.",
+      "verseRef": "Efésios 2:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "fez um"
+        },
+        {
+          "id": "b",
+          "text": "parede"
+        },
+        {
+          "id": "c",
+          "text": "inimizade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de ambos fez um",
+      "feedbackCorrect": "Fez um sustenta a unidade dos dois povos.",
+      "feedbackWrong": {
+        "b": "Parede foi derrubada.",
+        "c": "Inimizade caiu."
+      },
+      "hint": "Veja o resultado da paz.",
+      "learningObjective": "Tocar o trecho da unidade.",
+      "evidence": [
+        "Efésios 2:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Efésios 2:13–22 sustenta melhor?",
+      "verseRef": "Efésios 2:13–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo une e edifica a habitação de Deus no Espírito"
+        },
+        {
+          "id": "b",
+          "text": "A inimizade deve permanecer"
+        },
+        {
+          "id": "c",
+          "text": "Só os perto têm acesso ao Pai"
+        },
+        {
+          "id": "d",
+          "text": "A casa de Deus é só pedra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitação de Deus no Espírito",
+      "feedbackCorrect": "Paz, acesso e habitação no Espírito.",
+      "feedbackWrong": {
+        "b": "Inimizade foi destruída.",
+        "c": "Longe e perto ouvem paz.",
+        "d": "Habitação no Espírito."
+      },
+      "hint": "Una paz e habitação.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Efésios 2:13–22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até a habitação.",
+      "verseRef": "Efésios 2:13–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aproximados pelo sangue de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Um novo homem em paz pela cruz"
+        },
+        {
+          "id": "c",
+          "text": "Família de Deus e habitação no Espírito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "habitação de Deus no Espírito",
+      "feedbackCorrect": "Aproximação, paz e habitação.",
+      "feedbackWrong": {
+        "default": "A habitação fecha."
+      },
+      "hint": "Siga até 2:22.",
+      "learningObjective": "Encadear aproximação, paz e habitação.",
+      "evidence": [
+        "Efésios 2:13–22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Efésios 2:22, complete: habitação de Deus no ___.",
+      "verseRef": "Efésios 2:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "sangue"
+        },
+        {
+          "id": "c",
+          "text": "muro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitação de Deus no Espírito",
+      "feedbackCorrect": "Espírito é o âmbito da habitação.",
+      "feedbackWrong": {
+        "b": "Sangue aproximou.",
+        "c": "Muro foi derrubado."
+      },
+      "hint": "Veja o complemento final.",
+      "learningObjective": "Lembrar o termo Espírito.",
+      "evidence": [
+        "Efésios 2:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Efésios 2:22 a 1 Pedro 2:5?",
+      "verseRef": "Efésios 2:22",
+      "passageA": {
+        "ref": "Efésios 2:22"
+      },
+      "passageB": {
+        "ref": "1 Pedro 2:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Casa espiritual de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Parede de separação"
+        },
+        {
+          "id": "c",
+          "text": "Lei das ordenanças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitação de Deus no Espírito",
+      "feedbackCorrect": "Ambos falam do povo como casa de Deus.",
+      "feedbackWrong": {
+        "b": "Parede caiu.",
+        "c": "Ordenanças foram abolidas."
+      },
+      "hint": "Compare a casa de Deus.",
+      "learningObjective": "Ligar a habitação espiritual.",
+      "evidence": [
+        "Efésios 2:22"
+      ]
+    }
+  ]
+}

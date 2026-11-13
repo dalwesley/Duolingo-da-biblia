@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 56:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 56:1–6"
+      },
+      {
+        "ref": "Salmos 56:7–12"
+      }
+    ],
+    "context": "Tem misericórdia de mim; em Deus confio e não temerei. Tu contaste as minhas deambulações.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Em Deus confio",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Tem misericórdia de mim.",
+        "evidenceRef": "Salmos 56:1",
+        "evidenceSpan": "Tem misericórdia de mim"
+      },
+      {
+        "text": "Os que me observam buscam me ferir continuamente.",
+        "evidenceRef": "Salmos 56:2",
+        "evidenceSpan": "Os que me observam buscam me ferir continuamente"
+      },
+      {
+        "text": "Nos dias em que eu sentir temor.",
+        "evidenceRef": "Salmos 56:3",
+        "evidenceSpan": "Nos dias em que eu sentir temor"
+      },
+      {
+        "text": "Em Deus, cuja palavra eu exalto, coloquei a minha confiança; não temerei o que o homem possa me faz…",
+        "evidenceRef": "Salmos 56:4",
+        "evidenceSpan": "Em Deus"
+      },
+      {
+        "text": "Todos os dias distorcem minhas palavras.",
+        "evidenceRef": "Salmos 56:5",
+        "evidenceSpan": "Todos os dias distorcem minhas palavras"
+      },
+      {
+        "text": "Eles se reúnem, escondem-se e espionam os meus passos, aguardando o momento de tirarem minha vida.",
+        "evidenceRef": "Salmos 56:6",
+        "evidenceSpan": "Eles se reúnem"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Tem misericórdia de mim ó deus",
+        "evidenceRef": "Salmos 56:1"
+      },
+      {
+        "label": "Os que me observam buscam me",
+        "evidenceRef": "Salmos 56:2"
+      },
+      {
+        "label": "Nos dias em que eu sentir",
+        "evidenceRef": "Salmos 56:3"
+      },
+      {
+        "label": "Em deus cuja palavra eu exalto",
+        "evidenceRef": "Salmos 56:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 56:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 56:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Salmos 56:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      },
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      },
+      {
+        "ref": "Salmos 139:14",
+        "bridge": "Feitos de modo admirável"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Lágrimas no odre de Deus: confiança vence o medo do homem."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Lágrimas no odre de Deus: confiança vence o medo do homem.",
+    "anchorQuestion": "O que Salmos 56:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 56:1, tem misericórdia de mim.",
+      "verseRef": "Salmos 56:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Tem misericórdia de mim",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 56:1 afirma.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 56:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 56:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "mim"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "misericórdia",
+      "feedbackCorrect": "O versículo destaca «misericórdia».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 56:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 56:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nos dias em que eu sentir temor"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos dias em que eu sentir temor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 56:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 56:1 na ordem do texto.",
+      "verseRef": "Salmos 56:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tem misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "de mim"
+        },
+        {
+          "id": "c",
+          "text": "ó Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tem misericórdia",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 56:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 56:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "Tem"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "A palavra do versículo é «Deus».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 56:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 56:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 56:1",
+      "passageA": {
+        "ref": "Salmos 56:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Tem misericórdia de mim; em Deus confio e não temerei. Tu contaste as minhas deambulações."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tem",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 56:1, o marcador pois une ideias no fluxo do texto.",
+      "verseRef": "Salmos 56:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 56:1 afirma.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 56:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 56:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "mim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 56:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 56:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Em Deus",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 56:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 56:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tem misericórdia de mim ó deus"
+        },
+        {
+          "id": "b",
+          "text": "Os que me observam buscam me"
+        },
+        {
+          "id": "c",
+          "text": "Nos dias em que eu sentir"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tem",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 56:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 56:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias"
+        },
+        {
+          "id": "b",
+          "text": "Tem"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dias",
+      "feedbackCorrect": "A palavra do versículo é «dias».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 56:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 56:1 a Salmos 46:1.",
+      "verseRef": "Salmos 56:1",
+      "passageA": {
+        "ref": "Salmos 56:1"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 56:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 56:12 afirma.",
+      "evidence": [
+        "Salmos 56:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 56:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 56:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "votos"
+        },
+        {
+          "id": "b",
+          "text": "fiz"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "votos",
+      "feedbackCorrect": "O versículo destaca «votos».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 56:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 56:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 56:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todos os dias distorcem minhas palavras",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 56:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 56:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tem",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 56:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 56:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todos"
+        },
+        {
+          "id": "b",
+          "text": "Tem"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todos",
+      "feedbackCorrect": "A palavra do versículo é «Todos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 56:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 56:1 a Salmos 103:1.",
+      "verseRef": "Salmos 56:1",
+      "passageA": {
+        "ref": "Salmos 56:1"
+      },
+      "passageB": {
+        "ref": "Salmos 103:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bendize a alma"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 56:1"
+      ]
+    }
+  ]
+}

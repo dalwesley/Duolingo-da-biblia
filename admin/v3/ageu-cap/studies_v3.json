@@ -1,0 +1,472 @@
+{
+  "studies": {
+    "agc-01-tempo-de-construir": {
+      "slug": "agc-01-tempo-de-construir",
+      "passageRef": "Ageu 1:4–9",
+      "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos. Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado. Assim diz o Senhor dos Exércitos: Reflitam sobre o seu passado. Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "passages": [
+        {
+          "ref": "Ageu 1:4–9",
+          "text": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos. Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado. Assim diz o Senhor dos Exércitos: Reflitam sobre o seu passado. Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa."
+        },
+        {
+          "ref": "Ageu 1:2",
+          "text": "Assim fala o Senhor dos Exércitos: Este povo diz: Não veio ainda o tempo, o tempo em que a Casa do Senhor deve ser edificada."
+        },
+        {
+          "ref": "Ageu 1:10–11",
+          "text": "Por isso, os céus se fecharam sobre vocês, retendo o orvalho, e a terra não produz os seus frutos. Porque fiz vir a seca sobre a terra, sobre os montes, sobre o cereal, sobre o vinho, sobre o azeite, e sobre o que a terra produz; assim como sobre os homens, sobre os animais, e sobre todo o trabalho das mãos."
+        }
+      ],
+      "context": "Depois do exílio, o povo em Judá reconstruiu suas casas, mas a Casa do Senhor ficou em ruínas. Por Ageu, o Senhor confronta essa prioridade e chama a construir.",
+      "keyword": "ruínas",
+      "keywordGloss": "O estado da Casa do Senhor enquanto o povo cuida só da própria casa.",
+      "focusQuestion": "O que na sua vida está bem cuidado enquanto a Casa do Senhor fica em segundo plano?",
+      "reflectionPrompts": [
+        "Prioridade invertida",
+        "Considerar os caminhos",
+        "Casa em ruínas"
+      ],
+      "facts": [
+        {
+          "text": "O povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+          "evidenceRef": "Ageu 1:2",
+          "evidenceSpan": "Não veio ainda o tempo"
+        },
+        {
+          "text": "O Senhor pergunta se é tempo de habitar em casas apaineladas enquanto a casa permanece em ruínas.",
+          "evidenceRef": "Ageu 1:4",
+          "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas"
+        },
+        {
+          "text": "O Senhor manda considerar os caminhos.",
+          "evidenceRef": "Ageu 1:5",
+          "evidenceSpan": "Considerai os vossos caminhos"
+        },
+        {
+          "text": "Semear muito e colher pouco marca o esforço sem fruto.",
+          "evidenceRef": "Ageu 1:6",
+          "evidenceSpan": "Semeiam muito, mas colhem pouco"
+        },
+        {
+          "text": "O Senhor manda subir ao monte, trazer madeira e construir a casa.",
+          "evidenceRef": "Ageu 1:8",
+          "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa"
+        },
+        {
+          "text": "A escassez vem porque a casa do Senhor permanece em ruínas enquanto cada um corre para a própria casa.",
+          "evidenceRef": "Ageu 1:9",
+          "evidenceSpan": "por causa da minha casa, que permanece em ruínas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ruínas",
+          "gloss": "Estado da Casa do Senhor enquanto o povo cuida só de si."
+        },
+        {
+          "term": "Considerai",
+          "gloss": "Chamado a olhar com atenção os próprios caminhos."
+        },
+        {
+          "term": "construam",
+          "gloss": "Ação concreta pedida: reedificar a Casa do Senhor."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O povo adia a obra da Casa",
+          "evidenceRef": "Ageu 1:2"
+        },
+        {
+          "label": "O Senhor confronta casas boas e templo em ruínas",
+          "evidenceRef": "Ageu 1:4"
+        },
+        {
+          "label": "Esforço sem fruto e chamado a refletir",
+          "evidenceRef": "Ageu 1:5–7"
+        },
+        {
+          "label": "Ordem de construir e razão da escassez",
+          "evidenceRef": "Ageu 1:8–9"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Casas apaineladas do povo contrastam com a Casa do Senhor em ruínas.",
+          "marker": "enquanto",
+          "evidenceRef": "Ageu 1:4"
+        },
+        {
+          "kind": "causa",
+          "text": "A escassez acontece por causa da casa do Senhor que permanece em ruínas.",
+          "marker": "por causa",
+          "evidenceRef": "Ageu 1:9"
+        },
+        {
+          "kind": "resultado",
+          "text": "Por isso os céus se fecham e a terra não produz frutos.",
+          "marker": "Por isso",
+          "evidenceRef": "Ageu 1:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Mateus 6:33",
+          "bridge": "Buscar primeiro o Reino",
+          "text": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas."
+        },
+        {
+          "ref": "1 Reis 8:17–18",
+          "bridge": "Desejo de edificar a Casa",
+          "text": "Também Davi, meu pai, propôs em seu coração edificar uma casa ao nome do SENHOR, o Deus de Israel. Mas o Senhor disse a Davi, meu pai: Já que você se propôs em seu coração a edificar uma casa para o meu nome, bem fez em ter tal intenção."
+        },
+        {
+          "ref": "Esdras 5:1–2",
+          "bridge": "Ageu anima a reconstrução",
+          "text": "E Ageu e Zacarias, filho de Ido, profetas, profetizaram aos judeus que estavam em Judá e em Jerusalém, em nome do Deus de Israel, cujo Espírito estava com eles. Então, se levantaram Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e começaram a edificar a Casa de Deus, a qual está em Jerusalém; e com eles os referidos profetas de Deus, que os ajudavam."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O povo só esperava o momento certo; não havia culpa.",
+          "why": "O Senhor confronta a desculpa: há tempo para casas apaineladas, não para a Casa dele."
+        },
+        {
+          "text": "A escassez veio por azar climático, sem ligação com a prioridade.",
+          "why": "Ageu 1:9–10 liga a falta ao descuido com a casa do Senhor."
+        },
+        {
+          "text": "Bastava orar; construir a casa não era necessário.",
+          "why": "Em 1:8 o Senhor manda subir, trazer madeira e construir."
+        }
+      ],
+      "centralInsight": "Enquanto cada um corre para a própria casa, a casa do Senhor fica em ruínas.",
+      "anchorQuestion": "Segundo Ageu 1:9, por que o Senhor soprou sobre o pouco que o povo alcançou?",
+      "relatedVerses": [
+        {
+          "reference": "Mateus 6:33",
+          "reason": "Buscar primeiro o Reino"
+        },
+        {
+          "reference": "1 Reis 8:17–18",
+          "reason": "Desejo de edificar a Casa"
+        },
+        {
+          "reference": "Esdras 5:1–2",
+          "reason": "Ageu anima a reconstrução"
+        }
+      ]
+    },
+    "agc-02-do-dia-em-diante": {
+      "slug": "agc-02-do-dia-em-diante",
+      "passageRef": "Ageu 2:14–19",
+      "passageText": "Então, Ageu prosseguiu e disse: Assim é este povo, e assim é esta nação perante mim, diz o SENHOR; e assim é toda a obra das suas mãos: tudo o que ali oferecem é imundo. Agora, portanto, atentem para tudo o que está acontecendo desde este dia em diante, antes que coloquem pedra sobre pedra no templo do SENHOR. Depois que essas coisas aconteciam, alguém ia a um monte de grãos, buscando vinte medidas, e encontrava apenas dez; ia ao lagar para tirar cinquenta, e encontrava somente vinte. Eu os feri com queimaduras, ferrugem e saraiva em toda a obra das suas mãos; contudo, entre vocês não houve quem se voltasse para mim, diz o SENHOR. Considerem, eu lhes peço, desde este dia em diante, desde o vigésimo quarto dia do mês nono, desde o dia em que se fundou o templo do SENHOR, considerem estas coisas. Já não há sementes no celeiro. A videira, a figueira, a romeira e a oliveira não têm dado seus frutos; mas, desde este dia, Eu vos abençoarei.",
+      "passages": [
+        {
+          "ref": "Ageu 2:14–19",
+          "text": "Então, Ageu prosseguiu e disse: Assim é este povo, e assim é esta nação perante mim, diz o SENHOR; e assim é toda a obra das suas mãos: tudo o que ali oferecem é imundo. Agora, portanto, atentem para tudo o que está acontecendo desde este dia em diante, antes que coloquem pedra sobre pedra no templo do SENHOR. Depois que essas coisas aconteciam, alguém ia a um monte de grãos, buscando vinte medidas, e encontrava apenas dez; ia ao lagar para tirar cinquenta, e encontrava somente vinte. Eu os feri com queimaduras, ferrugem e saraiva em toda a obra das suas mãos; contudo, entre vocês não houve quem se voltasse para mim, diz o SENHOR. Considerem, eu lhes peço, desde este dia em diante, desde o vigésimo quarto dia do mês nono, desde o dia em que se fundou o templo do SENHOR, considerem estas coisas. Já não há sementes no celeiro. A videira, a figueira, a romeira e a oliveira não têm dado seus frutos; mas, desde este dia, Eu vos abençoarei."
+        },
+        {
+          "ref": "Ageu 2:10–13",
+          "text": "No vigésimo quarto dia do nono mês, no segundo ano de Dario, a palavra do Senhor veio por intermédio do profeta Ageu, dizendo: Assim diz o SENHOR dos Exércitos: Pergunte agora aos sacerdotes a respeito da lei, dizendo: Se alguém leva carne santa na orla de seu vestido e, com essa orla, toca no pão, no cozinhado, no vinho, no azeite ou em qualquer outro mantimento, isso se tornará sagrado? Os sacerdotes responderam: Não. E Ageu questionou: Se alguém que se tornou impuro por causa de um cadáver tocar em alguma destas coisas, ficará imunda? E os sacerdotes responderam: Ficará imunda."
+        }
+      ],
+      "context": "Ageu consulta os sacerdotes sobre puro e impuro e aplica a lição ao povo. Depois aponta o passado de escassez e anuncia bênção a partir do dia do alicerce.",
+      "keyword": "abençoarei",
+      "keywordGloss": "Promessa do Senhor de abençoar a partir do dia em que o templo é fundado.",
+      "focusQuestion": "Que passo de obediência você precisa dar para viver \"desde este dia\" sob a bênção de Deus?",
+      "reflectionPrompts": [
+        "Puro e impuro",
+        "Desde este dia",
+        "Bênção no alicerce"
+      ],
+      "facts": [
+        {
+          "text": "Carne santa na orla do vestido não torna sagrado o que toca.",
+          "evidenceRef": "Ageu 2:12",
+          "evidenceSpan": "Os sacerdotes responderam: Não"
+        },
+        {
+          "text": "Quem está impuro por um cadáver contamina o que toca.",
+          "evidenceRef": "Ageu 2:13",
+          "evidenceSpan": "Ficará imunda"
+        },
+        {
+          "text": "O Senhor aplica isso ao povo: a obra das mãos e as ofertas são imundas.",
+          "evidenceRef": "Ageu 2:14",
+          "evidenceSpan": "tudo o que ali oferecem é imundo"
+        },
+        {
+          "text": "O Senhor feriu a obra das mãos, e o povo não se voltou para ele.",
+          "evidenceRef": "Ageu 2:17",
+          "evidenceSpan": "não houve quem se voltasse para mim"
+        },
+        {
+          "text": "Devem considerar desde o dia em que se fundou o templo do Senhor.",
+          "evidenceRef": "Ageu 2:18",
+          "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR"
+        },
+        {
+          "text": "Desde este dia o Senhor promete abençoar.",
+          "evidenceRef": "Ageu 2:19",
+          "evidenceSpan": "desde este dia, Eu vos abençoarei"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "imundo",
+          "gloss": "Estado das ofertas e da obra enquanto o povo vive longe do Senhor."
+        },
+        {
+          "term": "fundou",
+          "gloss": "O dia em que o alicerce do templo é posto."
+        },
+        {
+          "term": "abençoarei",
+          "gloss": "Promessa do Senhor a partir daquele dia."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Perguntas aos sacerdotes sobre santo e impuro",
+          "evidenceRef": "Ageu 2:11–13"
+        },
+        {
+          "label": "Aplicação: o povo e suas ofertas estão imundos",
+          "evidenceRef": "Ageu 2:14"
+        },
+        {
+          "label": "Lembrete da escassez passada",
+          "evidenceRef": "Ageu 2:15–17"
+        },
+        {
+          "label": "Bênção desde o dia do alicerce",
+          "evidenceRef": "Ageu 2:18–19"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "A impureza do povo torna imunda toda a obra das mãos e as ofertas.",
+          "marker": "assim",
+          "evidenceRef": "Ageu 2:14"
+        },
+        {
+          "kind": "contraste",
+          "text": "O Senhor feriu a obra, contudo ninguém se voltou para ele.",
+          "marker": "contudo",
+          "evidenceRef": "Ageu 2:17"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois da fundação do templo, o Senhor promete abençoar desde aquele dia.",
+          "marker": "desde",
+          "evidenceRef": "Ageu 2:19"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Zacarias 8:9–12",
+          "bridge": "Força e bênção na obra"
+        },
+        {
+          "ref": "Malaquias 3:10",
+          "bridge": "Bênção após obediência",
+          "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+        },
+        {
+          "ref": "Ageu 1:8",
+          "bridge": "Chamado a construir a Casa",
+          "text": "Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Basta tocar o santo para tornar santo o resto da vida.",
+          "why": "Os sacerdotes respondem que a orla com carne santa não santifica o que toca."
+        },
+        {
+          "text": "A bênção de 2:19 não depende de nenhuma mudança prática.",
+          "why": "A promessa vem ligada ao dia em que se fundou o templo."
+        },
+        {
+          "text": "O povo já se voltava para o Senhor durante as pragas.",
+          "why": "Em 2:17 o Senhor diz que não houve quem se voltasse para ele."
+        }
+      ],
+      "centralInsight": "A partir do dia em que o alicerce é posto, o Senhor promete abençoar.",
+      "anchorQuestion": "Segundo Ageu 2:19, o que o Senhor promete fazer desde este dia?",
+      "relatedVerses": [
+        {
+          "reference": "Zacarias 8:9–12",
+          "reason": "Força e bênção na obra"
+        },
+        {
+          "reference": "Malaquias 3:10",
+          "reason": "Bênção após obediência"
+        },
+        {
+          "reference": "Ageu 1:8",
+          "reason": "Chamado a construir a Casa"
+        }
+      ]
+    },
+    "agc-boss-1": {
+      "slug": "agc-boss-1",
+      "passageRef": "Ageu 1:4–9",
+      "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos. Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado. Assim diz o Senhor dos Exércitos: Reflitam sobre o seu passado. Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "passages": [
+        {
+          "ref": "Ageu 1:4–9",
+          "text": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos. Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado. Assim diz o Senhor dos Exércitos: Reflitam sobre o seu passado. Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa."
+        },
+        {
+          "ref": "Ageu 2:14–19",
+          "text": "Então, Ageu prosseguiu e disse: Assim é este povo, e assim é esta nação perante mim, diz o SENHOR; e assim é toda a obra das suas mãos: tudo o que ali oferecem é imundo. Agora, portanto, atentem para tudo o que está acontecendo desde este dia em diante, antes que coloquem pedra sobre pedra no templo do SENHOR. Depois que essas coisas aconteciam, alguém ia a um monte de grãos, buscando vinte medidas, e encontrava apenas dez; ia ao lagar para tirar cinquenta, e encontrava somente vinte. Eu os feri com queimaduras, ferrugem e saraiva em toda a obra das suas mãos; contudo, entre vocês não houve quem se voltasse para mim, diz o SENHOR. Considerem, eu lhes peço, desde este dia em diante, desde o vigésimo quarto dia do mês nono, desde o dia em que se fundou o templo do SENHOR, considerem estas coisas. Já não há sementes no celeiro. A videira, a figueira, a romeira e a oliveira não têm dado seus frutos; mas, desde este dia, Eu vos abençoarei."
+        }
+      ],
+      "context": "Nesta travessia, revise o confronto de Ageu 1 — casas apaineladas e Casa em ruínas — e a promessa de Ageu 2: bênção desde o dia do alicerce.",
+      "keyword": "prioridade",
+      "keywordGloss": "Colocar a Casa do Senhor à frente do conforto próprio, e viver a bênção que começa na obediência.",
+      "focusQuestion": "O que muda quando a Casa do Senhor deixa de ser adiamento e vira o primeiro passo do seu dia?",
+      "reflectionPrompts": [
+        "Casa em primeiro lugar",
+        "Escassez que ensina",
+        "Bênção no alicerce"
+      ],
+      "facts": [
+        {
+          "text": "O povo adia a edificação da Casa do Senhor.",
+          "evidenceRef": "Ageu 1:2",
+          "evidenceSpan": "Não veio ainda o tempo"
+        },
+        {
+          "text": "Há casas apaineladas enquanto a Casa permanece em ruínas.",
+          "evidenceRef": "Ageu 1:4",
+          "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas"
+        },
+        {
+          "text": "O Senhor manda construir a casa para se agradar e ser glorificado.",
+          "evidenceRef": "Ageu 1:8",
+          "evidenceSpan": "construam a casa; dela me agradarei e serei glorificado"
+        },
+        {
+          "text": "A escassez vem por causa da casa do Senhor em ruínas.",
+          "evidenceRef": "Ageu 1:9",
+          "evidenceSpan": "por causa da minha casa, que permanece em ruínas"
+        },
+        {
+          "text": "O povo e suas ofertas são imundos perante o Senhor.",
+          "evidenceRef": "Ageu 2:14",
+          "evidenceSpan": "tudo o que ali oferecem é imundo"
+        },
+        {
+          "text": "Desde o dia do alicerce o Senhor promete abençoar.",
+          "evidenceRef": "Ageu 2:19",
+          "evidenceSpan": "desde este dia, Eu vos abençoarei"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ruínas",
+          "gloss": "Estado da Casa enquanto o povo corre para si."
+        },
+        {
+          "term": "fundou",
+          "gloss": "Dia em que o templo recebe alicerce."
+        },
+        {
+          "term": "abençoarei",
+          "gloss": "Promessa do Senhor a partir daquele dia."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Desculpa do tempo e confronto das casas",
+          "evidenceRef": "Ageu 1:2–4"
+        },
+        {
+          "label": "Chamado a considerar e a construir",
+          "evidenceRef": "Ageu 1:5–8"
+        },
+        {
+          "label": "Impureza do povo e memória da escassez",
+          "evidenceRef": "Ageu 2:14–17"
+        },
+        {
+          "label": "Bênção desde o dia do alicerce",
+          "evidenceRef": "Ageu 2:18–19"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "A falta vem por causa da casa do Senhor em ruínas.",
+          "marker": "por causa",
+          "evidenceRef": "Ageu 1:9"
+        },
+        {
+          "kind": "contraste",
+          "text": "Pragas vieram, contudo ninguém se voltou.",
+          "marker": "contudo",
+          "evidenceRef": "Ageu 2:17"
+        },
+        {
+          "kind": "resultado",
+          "text": "Desde o dia do alicerce, o Senhor abençoa.",
+          "marker": "desde",
+          "evidenceRef": "Ageu 2:19"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Mateus 6:33",
+          "bridge": "Buscar primeiro o Reino",
+          "text": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas."
+        },
+        {
+          "ref": "Esdras 5:1–2",
+          "bridge": "Ageu anima a obra",
+          "text": "E Ageu e Zacarias, filho de Ido, profetas, profetizaram aos judeus que estavam em Judá e em Jerusalém, em nome do Deus de Israel, cujo Espírito estava com eles. Então, se levantaram Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e começaram a edificar a Casa de Deus, a qual está em Jerusalém; e com eles os referidos profetas de Deus, que os ajudavam."
+        },
+        {
+          "ref": "Malaquias 3:10",
+          "bridge": "Bênção após obediência",
+          "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Ageu só fala de prédio; a vida espiritual não entra.",
+          "why": "O texto liga Casa, prioridade do coração, impureza das ofertas e bênção."
+        },
+        {
+          "text": "A bênção de 2:19 cancela a necessidade de construir.",
+          "why": "A promessa está ligada ao dia em que o templo foi fundado."
+        },
+        {
+          "text": "Correr para a própria casa é neutro diante de Deus.",
+          "why": "Ageu 1:9 faz dessa corrida a razão da escassez."
+        }
+      ],
+      "centralInsight": "Quem põe a casa do Senhor em primeiro lugar encontra a bênção dele",
+      "anchorQuestion": "O que Ageu liga à casa em ruínas em 1:9 e ao dia do alicerce em 2:19?",
+      "relatedVerses": [
+        {
+          "reference": "Mateus 6:33",
+          "reason": "Buscar primeiro o Reino"
+        },
+        {
+          "reference": "Esdras 5:1–2",
+          "reason": "Ageu anima a obra"
+        },
+        {
+          "reference": "Malaquias 3:10",
+          "reason": "Bênção após obediência"
+        }
+      ]
+    }
+  }
+}

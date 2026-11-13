@@ -1,0 +1,442 @@
+{
+  "slug": "genesis-cap",
+  "prefix": "gnc",
+  "book": "Gênesis",
+  "chapters": 50,
+  "title": "Gênesis",
+  "description": "Gênesis capítulo a capítulo: da criação à família que Deus guarda.",
+  "icon": "📖",
+  "color": "#1B3A5C",
+  "order": 1,
+  "realm": "antigo-testamento",
+  "category": "pentateuco",
+  "avoidTrails": ["genesis-1-11", "genesis-12-50"],
+  "modules": [
+    {
+      "title": "Criação e queda · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "Gênesis 1:26–31",
+          "title": "À imagem de Deus",
+          "intro": "No sexto dia, Deus fala de fazer o homem e a mulher e entrega o cuidado da terra.",
+          "insight": "Deus cria o ser humano à sua imagem e vê que tudo o que fez era muito bom.",
+          "objective": "Feitos à imagem de Deus"
+        },
+        {
+          "ref": "Gênesis 2:18–24",
+          "title": "Não é bom estar só",
+          "intro": "O Senhor Deus forma uma mulher e a traz ao homem no jardim.",
+          "insight": "Deus dá ao homem uma ajuda adequada, e os dois se tornam uma só carne.",
+          "objective": "Companhia dada por Deus"
+        },
+        {
+          "ref": "Gênesis 3:8–15",
+          "title": "A voz no jardim",
+          "intro": "Depois de comer do fruto, o homem e a mulher ouvem o Senhor Deus no jardim.",
+          "insight": "O pecado esconde, mas Deus procura; e já anuncia quem ferirá a serpente.",
+          "objective": "Deus chama o escondido"
+        },
+        {
+          "ref": "Gênesis 4:17–26",
+          "chapters": "4–5",
+          "title": "Começaram a invocar",
+          "intro": "A linha de Caim constrói cidades; depois nasce Sete, e as pessoas começam a buscar o Senhor.",
+          "insight": "Mesmo depois do crime, ainda há quem invoque o nome do Senhor.",
+          "objective": "Invocar o nome do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Criação e queda",
+        "intro": "Revise a imagem de Deus, a companhia no jardim, a voz que chama e quem invoca o Senhor.",
+        "insight": "Deus cria, chama e ainda é buscado depois da queda"
+      }
+    },
+    {
+      "title": "Dilúvio e nações · cap. 6–11",
+      "scenes": [
+        {
+          "ref": "Gênesis 6:13–22",
+          "title": "Faze uma arca",
+          "intro": "Deus anuncia o fim da terra corrompida e manda Noé construir uma arca.",
+          "insight": "Noé faz tudo segundo o que Deus ordenou, enquanto o juízo se aproxima.",
+          "objective": "Obedecer ao que Deus manda"
+        },
+        {
+          "ref": "Gênesis 7:17–24",
+          "title": "As águas prevalecem",
+          "intro": "O dilúvio sobe, a arca flutua, e tudo o que tem fôlego morre fora dela.",
+          "insight": "Só quem está na arca permanece; as águas cobrem até as montanhas.",
+          "objective": "Salvos na arca"
+        },
+        {
+          "ref": "Gênesis 8:15–22",
+          "title": "Saia da arca",
+          "intro": "Deus manda Noé sair com a família e os animais; Noé constrói um altar.",
+          "insight": "Deus aceita o cheiro agradável e promete não amaldiçoar de novo a terra assim.",
+          "objective": "Adorar depois do juízo"
+        },
+        {
+          "ref": "Gênesis 9:1–7",
+          "chapters": "9–10",
+          "title": "Frutificai e multiplicai",
+          "intro": "Deus abençoa Noé e seus filhos e fala do sangue e da vida humana.",
+          "insight": "A vida humana tem valor diante de Deus: quem derrama sangue responde por isso.",
+          "objective": "A vida que Deus valoriza"
+        },
+        {
+          "ref": "Gênesis 11:27–32",
+          "title": "A família de Terá",
+          "intro": "A lista chega a Terá, Abrão, Sarai e Ló, a caminho de Canaã.",
+          "insight": "Deus prepara uma família comum para o próximo passo da promessa.",
+          "objective": "A família da promessa"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Dilúvio e nações",
+        "intro": "Revise a arca, as águas, o altar, o valor da vida e a família de Terá.",
+        "insight": "Deus julga, salva e prepara o caminho da promessa"
+      }
+    },
+    {
+      "title": "Abrão na terra · cap. 12–16",
+      "scenes": [
+        {
+          "ref": "Gênesis 12:10–20",
+          "title": "Fome e medo",
+          "intro": "Há fome em Canaã; Abrão desce ao Egito e pede que Sarai diga ser sua irmã.",
+          "insight": "O medo faz Abrão esconder a verdade, mas o Senhor guarda Sarai mesmo assim.",
+          "objective": "Confiar sem mentir"
+        },
+        {
+          "ref": "Gênesis 13:1–7",
+          "title": "De volta ao altar",
+          "intro": "Abrão sobe do Egito rico em gado, e a terra não basta para ele e Ló juntos.",
+          "insight": "Abrão volta ao lugar do altar; a bênção material também traz tensão.",
+          "objective": "Voltar ao lugar da oração"
+        },
+        {
+          "ref": "Gênesis 14:1–12",
+          "title": "Guerra no vale",
+          "intro": "Reis guerreiam, Sodoma e Gomorra caem, e Ló é levado com os bens.",
+          "insight": "Ló escolheu a planície e acaba preso na guerra dos reis.",
+          "objective": "O custo da escolha de Ló"
+        },
+        {
+          "ref": "Gênesis 15:7–16",
+          "chapters": "15–16",
+          "title": "A terra prometida",
+          "intro": "O Senhor lembra que tirou Abrão de Ur e fala de uma herança e de anos de aflição.",
+          "insight": "A promessa inclui espera e aflição; a terra virá no tempo de Deus.",
+          "objective": "Esperar a promessa de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Abrão na terra",
+        "intro": "Revise o Egito, o altar, a guerra e a promessa que inclui espera.",
+        "insight": "A fé de Abrão aprende a confiar no tempo de Deus"
+      }
+    },
+    {
+      "title": "Aliança e juízo · cap. 17–20",
+      "scenes": [
+        {
+          "ref": "Gênesis 17:12–18",
+          "title": "A circuncisão e o riso",
+          "intro": "Deus fala do sinal na carne e Abrão ri ao ouvir de um filho com Sara.",
+          "insight": "A aliança tem sinal, e Abrão ainda pergunta se Ismael poderia viver diante de Deus.",
+          "objective": "A aliança e o filho prometido"
+        },
+        {
+          "ref": "Gênesis 18:1–8",
+          "title": "Três visitantes",
+          "intro": "O Senhor aparece junto aos carvalhos de Manre, e Abrão corre para servir.",
+          "insight": "Abrão recebe os visitantes com pressa e generosidade diante do Senhor.",
+          "objective": "Receber com generosidade"
+        },
+        {
+          "ref": "Gênesis 19:12–22",
+          "title": "Fuja para o monte",
+          "intro": "Os homens avisam Ló: a cidade será destruída; ele hesita e pede outra saída.",
+          "insight": "A misericórdia apressa Ló para fora, mesmo quando ele ainda barganha o destino.",
+          "objective": "Sair a tempo do juízo"
+        },
+        {
+          "ref": "Gênesis 20:1–7",
+          "title": "Abraão e Abimeleque",
+          "intro": "Abraão diz de novo que Sara é irmã; Deus fala a Abimeleque em sonho.",
+          "insight": "Deus protege Sara e confronta o rei: Abraão é profeta, apesar do medo.",
+          "objective": "Deus guarda a promessa"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Aliança e juízo",
+        "intro": "Revise o sinal da aliança, a visita, a fuga de Ló e a proteção de Sara.",
+        "insight": "Deus cumpre a aliança e julga com misericórdia"
+      }
+    },
+    {
+      "title": "Isaque e a família · cap. 21–25",
+      "scenes": [
+        {
+          "ref": "Gênesis 21:14–21",
+          "title": "Água no deserto",
+          "intro": "Agar e o menino são mandados embora; Deus ouve o choro no deserto.",
+          "insight": "Deus ouve a voz do menino e abre os olhos de Agar para um poço.",
+          "objective": "Deus ouve no deserto"
+        },
+        {
+          "ref": "Gênesis 22:1–8",
+          "title": "Toma o teu filho",
+          "intro": "Deus põe Abraão à prova e pede Isaque; os dois sobem o monte juntos.",
+          "insight": "Abraão obedece e confia: Deus proverá o cordeiro, meu filho.",
+          "objective": "Obedecer na prova"
+        },
+        {
+          "ref": "Gênesis 23:1–8",
+          "title": "O túmulo de Sara",
+          "intro": "Sara morre em Quiriate-Arba; Abraão chora e pede um lugar para sepultá-la.",
+          "insight": "A primeira terra que Abraão possui em Canaã é um túmulo comprado com lágrimas.",
+          "objective": "Luto e raiz na terra"
+        },
+        {
+          "ref": "Gênesis 24:50–58",
+          "title": "Rebeca decide ir",
+          "intro": "Labão e Betuel reconhecem a mão do Senhor; perguntam a Rebeca se ela vai.",
+          "insight": "Rebeca responde: irei. A promessa segue com quem decide partir.",
+          "objective": "Dizer sim ao chamado"
+        },
+        {
+          "ref": "Gênesis 25:7–11",
+          "title": "Abraão descansa",
+          "intro": "Abraão morre em boa velhice; Isaque e Ismael o sepultam junto de Sara.",
+          "insight": "A vida da promessa termina em paz, e Deus abençoa Isaque depois dele.",
+          "objective": "Fim em paz com Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Isaque e a família",
+        "intro": "Revise Agar, a prova no monte, Sara, Rebeca e a morte de Abraão.",
+        "insight": "Deus sustenta a família da promessa em dor e em fé"
+      }
+    },
+    {
+      "title": "Jacó e Esaú · cap. 26–30",
+      "scenes": [
+        {
+          "ref": "Gênesis 26:1–11",
+          "title": "Isaque na terra",
+          "intro": "Há outra fome; o Senhor fala a Isaque, e ele também esconde que Rebeca é sua mulher.",
+          "insight": "Deus renova a promessa a Isaque, mesmo quando o medo repete o erro do pai.",
+          "objective": "A promessa continua"
+        },
+        {
+          "ref": "Gênesis 27:1–10",
+          "title": "A bênção em jogo",
+          "intro": "Isaque envelhece; Rebeca ouve e prepara Jacó para tomar a bênção de Esaú.",
+          "insight": "A família corre atrás da bênção com pressa e engano.",
+          "objective": "Não roubar a bênção"
+        },
+        {
+          "ref": "Gênesis 28:1–9",
+          "title": "Jacó é enviado",
+          "intro": "Isaque abençoa Jacó de verdade e o manda buscar mulher em Padã-Arã.",
+          "insight": "A bênção de Abraão é confirmada a Jacó no envio, não só no engano.",
+          "objective": "Abençoado e enviado"
+        },
+        {
+          "ref": "Gênesis 29:1–12",
+          "title": "O poço e Raquel",
+          "intro": "Jacó chega à terra do oriente e encontra Raquel junto ao poço dos rebanhos.",
+          "insight": "Deus guia Jacó até a família de sua mãe no momento certo.",
+          "objective": "Encontro no caminho de Deus"
+        },
+        {
+          "ref": "Gênesis 30:22–30",
+          "title": "Deus se lembra de Raquel",
+          "intro": "Deus abre o ventre de Raquel; depois Jacó fala a Labão de partir.",
+          "insight": "Deus ouve Raquel e dá José; Jacó reconhece que o Senhor o fez prosperar.",
+          "objective": "Deus ouve e faz prosperar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Jacó e Esaú",
+        "intro": "Revise Isaque, a bênção, o envio, o poço e José.",
+        "insight": "Deus conduz Jacó apesar do engano da família"
+      }
+    },
+    {
+      "title": "Volta a Canaã · cap. 31–36",
+      "scenes": [
+        {
+          "ref": "Gênesis 31:43–50",
+          "title": "O monte da testemunha",
+          "intro": "Labão e Jacó fazem um acordo e levantam um montão como testemunha entre eles.",
+          "insight": "O Senhor vigia o pacto quando a confiança entre homens já não basta.",
+          "objective": "Deus como testemunha"
+        },
+        {
+          "ref": "Gênesis 32:1–8",
+          "title": "Acampamento de Deus",
+          "intro": "Anjos encontram Jacó; depois vem a notícia de que Esaú vem com quatrocentos homens.",
+          "insight": "Jacó vê o acampamento de Deus e ainda assim teme o encontro com o irmão.",
+          "objective": "Medo e presença de Deus"
+        },
+        {
+          "ref": "Gênesis 33:1–11",
+          "title": "O abraço de Esaú",
+          "intro": "Jacó se curva diante de Esaú; Esaú corre, abraça e chora.",
+          "insight": "O encontro temido vira abraço: Jacó vê o rosto de Esaú como quem vê o de Deus.",
+          "objective": "Reconciliação inesperada"
+        },
+        {
+          "ref": "Gênesis 34:1–7",
+          "title": "Diná em Siquém",
+          "intro": "Diná sai a ver as filhas da terra; Siquém a toma, e os irmãos ficam furiosos.",
+          "insight": "A violência contra Diná fere toda a família e acende a ira dos irmãos.",
+          "objective": "A dor da injustiça"
+        },
+        {
+          "ref": "Gênesis 35:1–7",
+          "chapters": "35–36",
+          "title": "Sobe a Betel",
+          "intro": "Deus manda Jacó subir a Betel; a família guarda os deuses estranhos e constrói um altar.",
+          "insight": "Voltar a Betel é deixar os ídolos e cumprir o voto feito no medo.",
+          "objective": "Voltar ao altar de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Volta a Canaã",
+        "intro": "Revise o pacto com Labão, o medo de Esaú, o abraço, Diná e Betel.",
+        "insight": "Deus guarda Jacó no caminho de volta à terra"
+      }
+    },
+    {
+      "title": "José no Egito · cap. 37–41",
+      "scenes": [
+        {
+          "ref": "Gênesis 37:1–11",
+          "title": "Sonhos que ferem",
+          "intro": "José traz mau relatório e conta sonhos; os irmãos o odeiam ainda mais.",
+          "insight": "Os sonhos de José anunciam o futuro, mas a família não aguenta ouvi-los.",
+          "objective": "Sonhos e inveja"
+        },
+        {
+          "ref": "Gênesis 38:24–30",
+          "title": "Tamar e os gêmeos",
+          "intro": "Judá descobre que Tamar engravidou e depois reconhece que ela é mais justa do que ele.",
+          "insight": "Judá confessa a própria falha; da história difícil nascem Perez e Zerá.",
+          "objective": "Confissão que restaura"
+        },
+        {
+          "ref": "Gênesis 39:6–15",
+          "title": "José resiste",
+          "intro": "A mulher de Potifar insiste; José recusa pecar contra Deus e foge.",
+          "insight": "José vê o pecado como ofensa a Deus, não só como risco humano.",
+          "objective": "Fugir do pecado"
+        },
+        {
+          "ref": "Gênesis 40:9–15",
+          "title": "Sonhos na prisão",
+          "intro": "O copeiro conta o sonho; José interpreta e pede que se lembrem dele.",
+          "insight": "José serve com o dom de Deus na prisão e ainda espera ser lembrado.",
+          "objective": "Servir mesmo preso"
+        },
+        {
+          "ref": "Gênesis 41:1–8",
+          "title": "Sonhos de Faraó",
+          "intro": "Faraó sonha com vacas e espigas; nenhum sábio do Egito sabe explicar.",
+          "insight": "Deus fala até a Faraó, e a sabedoria do Egito não basta para entender.",
+          "objective": "Deus fala a Faraó"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: José no Egito",
+        "intro": "Revise os sonhos, Tamar, a fuga do pecado, a prisão e Faraó.",
+        "insight": "Deus eleva José no meio da traição e da espera"
+      }
+    },
+    {
+      "title": "A família reunida · cap. 42–46",
+      "scenes": [
+        {
+          "ref": "Gênesis 42:1–11",
+          "title": "Desçam ao Egito",
+          "intro": "Jacó manda os filhos comprar trigo; José os reconhece e eles não o reconhecem.",
+          "insight": "Os sonhos começam a se cumprir quando os irmãos se curvam sem saber.",
+          "objective": "O sonho se cumpre"
+        },
+        {
+          "ref": "Gênesis 43:8–14",
+          "title": "Judá se oferece",
+          "intro": "Judá pede a Israel que envie Benjamim e se põe como fiador do irmão.",
+          "insight": "Judá muda: agora se oferece pelo irmão mais novo diante do pai.",
+          "objective": "Responsável pelo irmão"
+        },
+        {
+          "ref": "Gênesis 44:16–22",
+          "title": "Deus achou a culpa",
+          "intro": "A taça aparece; Judá fala por todos e lembra a dor do pai por Benjamim.",
+          "insight": "Judá não foge da culpa e coloca a dor do pai no centro do pedido.",
+          "objective": "Assumir a culpa juntos"
+        },
+        {
+          "ref": "Gênesis 45:16–25",
+          "title": "Notícia na casa de Faraó",
+          "intro": "Faraó se alegra; José manda carros e provisão para trazer o pai.",
+          "insight": "A reconciliação se torna convite: toda a família é chamada ao Egito.",
+          "objective": "A família é chamada"
+        },
+        {
+          "ref": "Gênesis 46:1–7",
+          "title": "Israel oferece sacrifícios",
+          "intro": "Israel para em Berseba, oferece sacrifícios, e Deus fala de noite: não temas.",
+          "insight": "Deus promete descer com Jacó ao Egito e de lá fazer dele uma grande nação.",
+          "objective": "Não temer o Egito"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: A família reunida",
+        "intro": "Revise a ida ao Egito, Judá, a culpa, o convite e a voz em Berseba.",
+        "insight": "Deus reúne a família e cumpre o que sonhou"
+      }
+    },
+    {
+      "title": "Bênção e fim · cap. 47–50",
+      "scenes": [
+        {
+          "ref": "Gênesis 47:1–12",
+          "title": "Diante de Faraó",
+          "intro": "José apresenta a família; Faraó oferece o melhor da terra, e Jacó abençoa Faraó.",
+          "insight": "O pastor peregrino abençoa o rei; Deus sustenta Israel em Gósen.",
+          "objective": "Abençoar até o rei"
+        },
+        {
+          "ref": "Gênesis 48:8–16",
+          "title": "As mãos cruzadas",
+          "intro": "Jacó abençoa Efraim e Manassés e cruza as mãos sobre os meninos.",
+          "insight": "A bênção de Deus não segue a ordem esperada; Jacó lembra o Deus que o pastoreou.",
+          "objective": "Bênção além da ordem"
+        },
+        {
+          "ref": "Gênesis 49:8–15",
+          "title": "Judá e o cetro",
+          "intro": "Jacó fala do futuro das tribos e demora em Judá, leão e cetro.",
+          "insight": "De Judá virá o governo; o cetro não se apartará até que venha Siló.",
+          "objective": "A esperança em Judá"
+        },
+        {
+          "ref": "Gênesis 50:15–21",
+          "title": "Vós pensastes mal",
+          "intro": "Os irmãos temem depois da morte do pai; José chora e fala de perdão.",
+          "insight": "O mal que os irmãos pensaram, Deus o tornou em bem para salvar muita gente.",
+          "objective": "Perdoar como José"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Bênção e fim",
+        "intro": "Revise Faraó, as mãos cruzadas, Judá e o perdão de José.",
+        "insight": "Deus escreve o fim com bênção e perdão"
+      }
+    }
+  ]
+}

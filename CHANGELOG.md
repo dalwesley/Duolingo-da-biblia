@@ -9,6 +9,29 @@ Versionamento do app: `trilha_app/pubspec.yaml` (`1.0.x+build`).
 
 ## [Unreleased]
 
+## [1.0.47] — 2026-11-13
+
+### Added
+- Convide e ganhe 1 mês: quem entra pelo seu convite (companhia, grupo ou passe de trilha) e paga o Peregrino+ te dá 1 mês de Plus. Sem Plus, o mês entra na hora; com Plus, fica guardado e entra quando a assinatura acabar. Vale o primeiro convite, uma vez por pessoa, até 12 meses por ano; o teste grátis sozinho não conta. Aviso no app ao ganhar, linha da regra no convite, no passe de trilha e no paywall, saldo de meses guardados em Ajustes
+- Site: a regra do convite em `/planos` (card do Peregrino+ e Perguntas) e nos Termos
+- Grupos: Propósito do grupo — o líder define início e fim, e cada dia traz capítulo, cena e pergunta, a partir do estudo e da leitura do grupo. Corrente do grupo, respostas visíveis depois de responder (com denúncia), lembretes às 7h e 19h
+- Grupos: leitura da semana, fechamento da semana com revelação (Fiéis, Mais constante, Quem mais cresceu) e selo de Fiel no perfil
+- Na festa da cena, "Você encontrou N coisas no texto": o que você acertou de primeira e o que vale rever, com o versículo
+- Perfil: "Meu estudo" para todos, com a linha de crescimento por semana
+- Coleção Panorama no Explorar, ao lado de AT, NT e Temas; trilhas capítulo a capítulo dos 66 livros no catálogo
+- Leitura da Bíblia conta para o grupo só com o capítulo lido de verdade (tempo de leitura ou áudio)
+
+### Changed
+- Revisão da semana, erros explicados, histórico de sequência e a linha de crescimento saem do Plus e ficam grátis
+- Estudos da cena carregam por trilha (antes vinha tudo a cada versão do catálogo)
+- No grupo, "caminhou" (qualquer cena) e "fez o estudo" (a cena do grupo) são coisas diferentes
+- Cor do lugar nas barras de seção de cada aba
+- Versão 1.0.47 (47), iOS 1047
+
+### Infra
+- Functions: `onCompanionJoinReferral`, `onTrailGiftReferral`, `releaseReferralMonths` (de hora em hora); `revenueCatWebhook` conta o mês de quem convidou e solta meses guardados; atribuição também em `onRoomMemberCreate`. Segredo novo `REVENUECAT_SECRET_KEY` (API REST do RevenueCat). Exclusão de conta apaga `referralRewards/{uid}`
+- `firestore.rules`: `referralRewards/{uid}` (só o dono lê; só a Function grava); propósito, fechamentos, respostas e piloto dos grupos
+
 ## [1.0.46] — 2026-11-11
 
 ### Added

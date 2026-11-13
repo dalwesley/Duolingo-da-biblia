@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Colossenses 1:21–26",
+    "passages": [
+      {
+        "ref": "Colossenses 1:21–26"
+      },
+      {
+        "ref": "Colossenses 1:27–29"
+      }
+    ],
+    "context": "Paulo escreve a crentes em Colossos. Depois de exaltar Cristo, lembra o passado deles: eram estranhos e inimigos, e agora foram reconciliados pela morte de Cristo.",
+    "keyword": "reconciliou",
+    "keywordGloss": "Deus restaurou o relacionamento: de inimigos, passam a ser apresentados santos diante dele.",
+    "focusQuestion": "Onde você ainda vive como se a reconciliação de Cristo não tivesse mudado seu lugar diante de Deus?",
+    "reflectionPrompts": [
+      "De inimigos a santos",
+      "Cristo em vós",
+      "Anunciar a todo homem"
+    ],
+    "facts": [
+      {
+        "text": "Outrora eram estranhos e inimigos no entendimento por causa de obras malignas.",
+        "evidenceRef": "Colossenses 1:21",
+        "evidenceSpan": "outrora eram estranhos e inimigos no entendimento"
+      },
+      {
+        "text": "Agora Deus os reconciliou.",
+        "evidenceRef": "Colossenses 1:21",
+        "evidenceSpan": "agora os reconciliou"
+      },
+      {
+        "text": "A reconciliação foi no corpo da carne de Cristo, por meio da morte.",
+        "evidenceRef": "Colossenses 1:22",
+        "evidenceSpan": "no corpo da sua carne, por meio da sua morte"
+      },
+      {
+        "text": "O propósito é apresentá-los santos, irrepreensíveis e sem culpa.",
+        "evidenceRef": "Colossenses 1:22",
+        "evidenceSpan": "para apresentar-vos diante dele santos, irrepreensíveis e sem culpa"
+      },
+      {
+        "text": "O mistério oculto por séculos agora se manifestou aos santos.",
+        "evidenceRef": "Colossenses 1:26",
+        "evidenceSpan": "O mistério que esteve oculto por séculos e gerações, mas que agora se manifestou"
+      },
+      {
+        "text": "O mistério entre os gentios é Cristo em vocês, a esperança da glória.",
+        "evidenceRef": "Colossenses 1:27",
+        "evidenceSpan": "Cristo em vocês, a esperança da glória"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "reconciliou",
+        "gloss": "Ação de Deus que restaura quem era estranho e inimigo."
+      },
+      {
+        "term": "mistério",
+        "gloss": "Verdade ocultada por séculos e agora revelada: Cristo nos gentios."
+      },
+      {
+        "term": "esperança da glória",
+        "gloss": "O futuro seguro que Cristo presente nos santos já garante."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Eram estranhos e inimigos",
+        "evidenceRef": "Colossenses 1:21"
+      },
+      {
+        "label": "Reconciliados pela morte de Cristo",
+        "evidenceRef": "Colossenses 1:22"
+      },
+      {
+        "label": "Chamados a permanecer firmes na fé",
+        "evidenceRef": "Colossenses 1:23"
+      },
+      {
+        "label": "Cristo em vós, esperança da glória",
+        "evidenceRef": "Colossenses 1:27"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Outrora inimigos; agora reconciliados.",
+        "marker": "agora",
+        "evidenceRef": "Colossenses 1:21"
+      },
+      {
+        "kind": "propósito",
+        "text": "A morte de Cristo visa apresentá-los santos diante de Deus.",
+        "marker": "para",
+        "evidenceRef": "Colossenses 1:22"
+      },
+      {
+        "kind": "contraste",
+        "text": "A apresentação santa vem com a condição de permanecerem firmes na fé.",
+        "marker": "porém",
+        "evidenceRef": "Colossenses 1:23"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 2:13",
+        "bridge": "Perto pelo sangue de Cristo"
+      },
+      {
+        "ref": "Romanos 5:10",
+        "bridge": "Reconciliados pela morte"
+      },
+      {
+        "ref": "Efésios 3:6",
+        "bridge": "Gentios no mistério"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A reconciliação é só um sentimento interno, sem custo real.",
+        "why": "O texto liga a reconciliação ao corpo e à morte de Cristo."
+      },
+      {
+        "text": "Uma vez reconciliado, não importa permanecer firme na fé.",
+        "why": "O texto condiciona com \"se, porém, permanecerem alicerçados e firmes\"."
+      },
+      {
+        "text": "O mistério é só para judeus; gentios ficam de fora.",
+        "why": "Paulo diz que o mistério entre os gentios é Cristo em vocês."
+      }
+    ],
+    "centralInsight": "Cristo em vós, esperança da glória: Paulo anuncia a todo homem para apresentá-lo perfeito em Cristo.",
+    "anchorQuestion": "Segundo Colossenses 1:27, o que é o mistério entre os gentios?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Colossenses 1:21, Paulo diz que Deus agora os reconciliou.",
+      "verseRef": "Colossenses 1:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "O contraste é claro: outrora inimigos, agora reconciliados.",
+      "feedbackWrong": {
+        "false": "Releia o fim do versículo: agora os reconciliou."
+      },
+      "hint": "Olhe o contraste com \"outrora\".",
+      "learningObjective": "Observar a reconciliação anunciada no texto.",
+      "evidence": [
+        "Colossenses 1:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Colossenses 1:22, toque o meio pelo qual Cristo reconciliou.",
+      "verseRef": "Colossenses 1:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua morte"
+        },
+        {
+          "id": "b",
+          "text": "santos"
+        },
+        {
+          "id": "c",
+          "text": "sem culpa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio da sua morte",
+      "feedbackCorrect": "A reconciliação acontece por meio da morte de Cristo.",
+      "feedbackWrong": {
+        "b": "\"Santos\" é o resultado da apresentação, não o meio.",
+        "c": "\"Sem culpa\" descreve o alvo, não o meio da reconciliação."
+      },
+      "hint": "Procure a expressão \"por meio\".",
+      "learningObjective": "Identificar a morte de Cristo como meio da reconciliação.",
+      "evidence": [
+        "Colossenses 1:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Colossenses 1:22, com que propósito Cristo reconcilia?",
+      "verseRef": "Colossenses 1:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para apresentá-los santos e sem culpa diante dele"
+        },
+        {
+          "id": "b",
+          "text": "Para exigir obras que apaguem o passado"
+        },
+        {
+          "id": "c",
+          "text": "Para afastá-los dos gentios da igreja"
+        },
+        {
+          "id": "d",
+          "text": "Para torná-los juízes das nações agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+      "feedbackCorrect": "O alvo da reconciliação é apresentá-los santos diante dele.",
+      "feedbackWrong": {
+        "b": "O texto aponta para a apresentação santa, não para autoexpiação.",
+        "c": "Não há exclusão de gentios; o mistério os inclui.",
+        "d": "O texto fala de apresentação diante dele, não de juízo das nações."
+      },
+      "hint": "Leia a cláusula que começa com \"para\".",
+      "learningObjective": "Observar o propósito da reconciliação.",
+      "evidence": [
+        "Colossenses 1:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Colossenses 1:21 na ordem do texto.",
+      "verseRef": "Colossenses 1:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "E a vocês, que outrora eram estranhos e inimigos"
+        },
+        {
+          "id": "b",
+          "text": "no entendimento por causa de suas obras malignas"
+        },
+        {
+          "id": "c",
+          "text": "agora os reconciliou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "Primeiro o passado hostil; depois a reconciliação presente.",
+      "feedbackWrong": {
+        "default": "Comece pelo outrora; a reconciliação fecha o versículo."
+      },
+      "hint": "O versículo começa pelo passado deles.",
+      "learningObjective": "Reconhecer a sequência de Colossenses 1:21.",
+      "evidence": [
+        "Colossenses 1:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Colossenses 1:27, o mistério entre os gentios é Cristo em vocês, a ___ da glória.",
+      "verseRef": "Colossenses 1:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "riqueza"
+        },
+        {
+          "id": "b",
+          "text": "esperança"
+        },
+        {
+          "id": "c",
+          "text": "sabedoria"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Cristo em vocês, a esperança da glória",
+      "feedbackCorrect": "O mistério é Cristo em vocês, a esperança da glória.",
+      "feedbackWrong": {
+        "a": "Há \"riqueza da glória\" antes, mas o mistério se define como esperança.",
+        "c": "Sabedoria aparece no anúncio; aqui o termo é esperança."
+      },
+      "hint": "Veja como o mistério é nomeado no fim do versículo.",
+      "learningObjective": "Lembrar a definição do mistério no texto.",
+      "evidence": [
+        "Colossenses 1:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+      "verseRef": "Colossenses 1:21",
+      "passageA": {
+        "ref": "Colossenses 1:21"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Eram estranhos e inimigos; agora Deus os reconciliou."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Inimizade sem mudança"
+        },
+        {
+          "id": "b",
+          "text": "De inimigos a reconciliados"
+        },
+        {
+          "id": "c",
+          "text": "Só obras apagam culpa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "O texto marca a virada: outrora inimigos, agora reconciliados.",
+      "feedbackWrong": {
+        "a": "O \"agora\" mostra mudança real, não inimizade permanente.",
+        "c": "A reconciliação é ação de Deus, não mérito das obras."
+      },
+      "hint": "Compare \"outrora\" com \"agora\".",
+      "learningObjective": "Ligar o versículo à virada da reconciliação.",
+      "evidence": [
+        "Colossenses 1:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Colossenses 1:23, permanecer firmes na fé é opcional depois da reconciliação.",
+      "verseRef": "Colossenses 1:23",
+      "correctOptionId": "false",
+      "evidenceSpan": "Se, porém, permanecerem alicerçados e firmes na fé",
+      "feedbackCorrect": "O \"se, porém\" marca condição: precisam permanecer firmes.",
+      "feedbackWrong": {
+        "true": "Releia: a apresentação santa vem com o permanecer firmes."
+      },
+      "hint": "Repare na palavra que abre a condição.",
+      "learningObjective": "Compreender a condição de permanecer na fé.",
+      "evidence": [
+        "Colossenses 1:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+      "verseRef": "Colossenses 1:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "evangelho"
+        },
+        {
+          "id": "c",
+          "text": "criatura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se, porém, permanecerem",
+      "feedbackCorrect": "\"Porém\" introduz a condição: permanecer alicerçados e firmes.",
+      "feedbackWrong": {
+        "b": "\"Evangelho\" é o conteúdo da esperança, não o marcador.",
+        "c": "\"Criatura\" aparece no alcance do evangelho, não na condição."
+      },
+      "hint": "Procure a partícula depois de \"Se\".",
+      "learningObjective": "Reconhecer o marcador da condição.",
+      "evidence": [
+        "Colossenses 1:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Colossenses 1:22 se relaciona com a morte de Cristo?",
+      "verseRef": "Colossenses 1:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "A morte é o meio que visa apresentá-los santos"
+        },
+        {
+          "id": "b",
+          "text": "A morte só ilustra um exemplo ético a imitar"
+        },
+        {
+          "id": "c",
+          "text": "A morte cancela a necessidade de santidade"
+        },
+        {
+          "id": "d",
+          "text": "A morte afasta os gentios da reconciliação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio da sua morte, para apresentar-vos diante dele santos",
+      "feedbackCorrect": "Meio e propósito juntos: morte para apresentação santa.",
+      "feedbackWrong": {
+        "b": "O texto fala de meio eficaz, não só de exemplo.",
+        "c": "O alvo é santos e sem culpa, não permissão para o pecado.",
+        "d": "O mistério inclui os gentios; não os afasta."
+      },
+      "hint": "Una \"por meio\" e \"para\".",
+      "learningObjective": "Relacionar meio e propósito na reconciliação.",
+      "evidence": [
+        "Colossenses 1:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em Colossenses 1:21–23?",
+      "verseRef": "Colossenses 1:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eram estranhos e inimigos"
+        },
+        {
+          "id": "b",
+          "text": "São reconciliados pela morte"
+        },
+        {
+          "id": "c",
+          "text": "Devem permanecer firmes na fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "Passado hostil, reconciliação e chamada a permanecer.",
+      "feedbackWrong": {
+        "default": "Comece pelo outrora; a firmeza vem depois da reconciliação."
+      },
+      "hint": "Siga: passado, reconciliação, condição.",
+      "learningObjective": "Compreender o movimento do argumento.",
+      "evidence": [
+        "Colossenses 1:21–22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Colossenses 1:22, a reconciliação visa apresentar-vos diante dele ___.",
+      "verseRef": "Colossenses 1:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "santos"
+        },
+        {
+          "id": "b",
+          "text": "ricos"
+        },
+        {
+          "id": "c",
+          "text": "livres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para apresentar-vos diante dele santos",
+      "feedbackCorrect": "O alvo é apresentação santa, irrepreensível e sem culpa.",
+      "feedbackWrong": {
+        "b": "O texto não fala de riqueza material aqui.",
+        "c": "A palavra do propósito é \"santos\", não \"livres\"."
+      },
+      "hint": "Veja o primeiro adjetivo depois de \"diante dele\".",
+      "learningObjective": "Lembrar o alvo da apresentação.",
+      "evidence": [
+        "Colossenses 1:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+      "verseRef": "Colossenses 1:21–22",
+      "passageA": {
+        "ref": "Colossenses 1:21–22"
+      },
+      "passageB": {
+        "ref": "Romanos 5:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reconciliados pela morte"
+        },
+        {
+          "id": "b",
+          "text": "Salvos sem Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Inimizade permanente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio da sua morte",
+      "evidence": [
+        "Colossenses 1:21–22",
+        "Romanos 5:10"
+      ],
+      "feedbackCorrect": "Nos dois textos, inimigos são reconciliados pela morte de Cristo.",
+      "feedbackWrong": {
+        "b": "A reconciliação é em Cristo, não sem ele.",
+        "c": "Os textos anunciam mudança, não inimizade eterna."
+      },
+      "hint": "Compare o que a morte de Cristo faz nos dois trechos.",
+      "learningObjective": "Relacionar a reconciliação em Colossenses e Romanos."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Colossenses 1:27 apresenta o mistério como Cristo em vocês, a esperança da glória, entre os gentios.",
+      "verseRef": "Colossenses 1:27",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cristo em vocês, a esperança da glória",
+      "feedbackCorrect": "O mistério revelado aos santos é Cristo presente nos gentios.",
+      "feedbackWrong": {
+        "false": "Releia: o mistério entre os gentios é Cristo em vocês."
+      },
+      "hint": "Veja como o mistério é definido no versículo.",
+      "learningObjective": "Interpretar o mistério como Cristo nos gentios.",
+      "evidence": [
+        "Colossenses 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Colossenses 1:27, toque o trecho que nomeia o conteúdo do mistério.",
+      "verseRef": "Colossenses 1:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo em vocês"
+        },
+        {
+          "id": "b",
+          "text": "seus santos"
+        },
+        {
+          "id": "c",
+          "text": "os gentios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Cristo em vocês, a esperança da glória",
+      "feedbackCorrect": "O mistério se define assim: Cristo em vocês, esperança da glória.",
+      "feedbackWrong": {
+        "b": "Os santos recebem a revelação; o conteúdo é Cristo em vocês.",
+        "c": "Os gentios são o âmbito; o conteúdo é Cristo em vocês."
+      },
+      "hint": "Procure a cláusula explicativa \"que é\".",
+      "learningObjective": "Sustentar a definição do mistério no texto.",
+      "evidence": [
+        "Colossenses 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Colossenses 1:21–23 sustenta sobre a reconciliação?",
+      "verseRef": "Colossenses 1:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "De inimigos a santos, pela morte, com firmeza na fé"
+        },
+        {
+          "id": "b",
+          "text": "Mudança só de humor, sem custo na cruz"
+        },
+        {
+          "id": "c",
+          "text": "Reconciliação que dispensa permanecer na fé"
+        },
+        {
+          "id": "d",
+          "text": "Salvação restrita a quem nunca foi inimigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "O texto une passado hostil, morte reconciliadora e chamada a permanecer.",
+      "feedbackWrong": {
+        "b": "Há corpo e morte reais no centro da reconciliação.",
+        "c": "O \"se, porém\" exige permanecer firmes.",
+        "d": "O texto parte justamente de quem era inimigo."
+      },
+      "hint": "Una outrora, morte e permanecer.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": [
+        "Colossenses 1:21–22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da reconciliação até o anúncio?",
+      "verseRef": "Colossenses 1:27–28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus revela Cristo nos gentios"
+        },
+        {
+          "id": "b",
+          "text": "Paulo anuncia advertindo e ensinando"
+        },
+        {
+          "id": "c",
+          "text": "O alvo é apresentar todo homem perfeito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para que apresentemos todo homem perfeito em Cristo",
+      "evidence": [
+        "Colossenses 1:27–28"
+      ],
+      "feedbackCorrect": "Revelação, anúncio e apresentação perfeita em Cristo.",
+      "feedbackWrong": {
+        "default": "Comece pelo mistério revelado; o alvo fecha o anúncio."
+      },
+      "hint": "Siga: mistério → anúncio → apresentação.",
+      "learningObjective": "Ver o encadeamento do mistério ao anúncio."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+      "verseRef": "Colossenses 1:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "mistério"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "império"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O mistério que esteve oculto",
+      "feedbackCorrect": "É o mistério oculto por séculos que agora se manifesta.",
+      "feedbackWrong": {
+        "b": "O texto não fala de templo aqui; fala de mistério.",
+        "c": "Não há \"império\"; o termo é mistério."
+      },
+      "hint": "É a palavra que abre o versículo.",
+      "learningObjective": "Lembrar o termo teológico central do trecho.",
+      "evidence": [
+        "Colossenses 1:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Colossenses 1:27 a Efésios 3:6?",
+      "verseRef": "Colossenses 1:27",
+      "passageA": {
+        "ref": "Colossenses 1:27"
+      },
+      "passageB": {
+        "ref": "Efésios 3:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gentios no mistério"
+        },
+        {
+          "id": "b",
+          "text": "Lei sem Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Exclusão dos gentios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deste mistério entre os gentios",
+      "evidence": [
+        "Colossenses 1:27",
+        "Efésios 3:6"
+      ],
+      "feedbackCorrect": "Nos dois textos, o mistério inclui os gentios em Cristo.",
+      "feedbackWrong": {
+        "b": "O mistério aponta para Cristo, não para lei sem ele.",
+        "c": "Os textos incluem os gentios, não os excluem."
+      },
+      "hint": "Nomeie a ponte entre o texto e o contexto ligado.",
+      "learningObjective": "Ligar o mistério de Colossenses ao de Efésios."
+    }
+  ]
+}

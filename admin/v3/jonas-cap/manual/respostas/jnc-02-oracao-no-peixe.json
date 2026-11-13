@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Jonas 2:1–6",
+    "passages": [
+      { "ref": "Jonas 2:1–6" },
+      { "ref": "Jonas 2:7–10" }
+    ],
+    "context": "Jonas foi lançado ao mar e engolido. Do ventre do peixe, ele ora e lembra o templo santo.",
+    "keyword": "salvação",
+    "keywordGloss": "Jonas confessa: a salvação pertence ao Senhor.",
+    "focusQuestion": "Na sua angústia, você clama ao Senhor ou tenta sair sozinho?",
+    "reflectionPrompts": [
+      "Clamor na angústia",
+      "Templo santo",
+      "Salvação do Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Jonas orou ao Senhor do ventre do peixe.",
+        "evidenceRef": "Jonas 2:1",
+        "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe"
+      },
+      {
+        "text": "Na angústia, Jonas clamou e o Senhor respondeu.",
+        "evidenceRef": "Jonas 2:2",
+        "evidenceSpan": "Na minha angústia, clamei ao Senhor, e ele me respondeu"
+      },
+      {
+        "text": "Jonas foi lançado no profundo, no coração dos mares.",
+        "evidenceRef": "Jonas 2:3",
+        "evidenceSpan": "Tu me lançaste no profundo, no coração dos mares"
+      },
+      {
+        "text": "Mesmo lançado, Jonas ainda espera ver o santo templo.",
+        "evidenceRef": "Jonas 2:4",
+        "evidenceSpan": "ainda verei o teu santo templo"
+      },
+      {
+        "text": "O Senhor fez subir a vida de Jonas da sepultura.",
+        "evidenceRef": "Jonas 2:6",
+        "evidenceSpan": "fizeste subir minha vida da sepultura, ó Senhor, meu Deus"
+      },
+      {
+        "text": "O Senhor falou ao peixe, e ele vomitou Jonas na terra.",
+        "evidenceRef": "Jonas 2:10",
+        "evidenceSpan": "o Senhor falou ao peixe, e ele vomitou a Jonas na terra"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "angústia",
+        "gloss": "O lugar de onde Jonas clama e é ouvido."
+      },
+      {
+        "term": "templo",
+        "gloss": "O santo templo para onde sobe a oração de Jonas."
+      },
+      {
+        "term": "salvação",
+        "gloss": "O que pertence ao Senhor, segundo a confissão de Jonas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Oração do ventre do peixe",
+        "evidenceRef": "Jonas 2:1–2"
+      },
+      {
+        "label": "Descida às águas e ao abismo",
+        "evidenceRef": "Jonas 2:3–5"
+      },
+      {
+        "label": "Lembrança do Senhor e do templo",
+        "evidenceRef": "Jonas 2:6–7"
+      },
+      {
+        "label": "Confissão da salvação e saída do peixe",
+        "evidenceRef": "Jonas 2:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Jonas clama na angústia e o Senhor responde.",
+        "marker": "e ele me respondeu",
+        "evidenceRef": "Jonas 2:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Lançado da presença, Jonas ainda espera ver o templo.",
+        "marker": "contudo",
+        "evidenceRef": "Jonas 2:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "Quando a alma desfalecia, Jonas se lembrou do Senhor.",
+        "marker": "Quando",
+        "evidenceRef": "Jonas 2:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 18:6",
+        "bridge": "Clamar na angústia"
+      },
+      {
+        "ref": "Salmos 3:4",
+        "bridge": "O Senhor ouve o clamor"
+      },
+      {
+        "ref": "Mateus 12:40",
+        "bridge": "Jonas e o Filho do Homem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jonas se salva pelo próprio esforço, sem depender do Senhor.",
+        "why": "Jonas 2:9 diz que ao Senhor pertence a salvação; 2:10 mostra o Senhor falando ao peixe."
+      },
+      {
+        "text": "No peixe, Jonas abandona qualquer esperança do templo.",
+        "why": "Em 2:4 e 2:7 ele ainda fala do santo templo e da oração que sobe a ele."
+      },
+      {
+        "text": "A angústia prova que o Senhor não ouve Jonas.",
+        "why": "2:2 diz que ele clamou e o Senhor respondeu e ouviu a voz."
+      }
+    ],
+    "centralInsight": "Na angústia, Jonas clama: a salvação vem do Senhor.",
+    "anchorQuestion": "Segundo Jonas 2:9, a quem pertence a salvação?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Jonas 2:1, Jonas orou ao Senhor do ventre do peixe.",
+      "verseRef": "Jonas 2:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+      "feedbackCorrect": "O versículo abre a cena: a oração nasce no ventre do peixe.",
+      "feedbackWrong": {
+        "false": "Releia Jonas 2:1: Jonas orou do ventre do peixe."
+      },
+      "hint": "Veja de onde Jonas ora.",
+      "learningObjective": "Observar o lugar da oração de Jonas.",
+      "evidence": ["Jonas 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jonas 2:2, toque o que Jonas fez na angústia.",
+      "verseRef": "Jonas 2:2",
+      "options": [
+        { "id": "a", "text": "clamei" },
+        { "id": "b", "text": "abismo" },
+        { "id": "c", "text": "ondas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+      "feedbackCorrect": "Na angústia, a ação de Jonas é clamar ao Senhor.",
+      "feedbackWrong": {
+        "b": "O abismo é o lugar; a ação é o clamor.",
+        "c": "As ondas aparecem em 2:3; aqui o verbo é clamar."
+      },
+      "hint": "Procure o verbo da oração no começo do versículo.",
+      "learningObjective": "Identificar o clamor de Jonas na angústia.",
+      "evidence": ["Jonas 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Jonas 2:10, o que o peixe fez depois que o Senhor falou?",
+      "verseRef": "Jonas 2:10",
+      "options": [
+        { "id": "a", "text": "Vomitou Jonas na terra" },
+        { "id": "b", "text": "Levou Jonas de volta a Társis" },
+        { "id": "c", "text": "Engoliu também os marinheiros" },
+        { "id": "d", "text": "Ficou em silêncio sem agir" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele vomitou a Jonas na terra",
+      "feedbackCorrect": "O Senhor fala, e o peixe vomita Jonas na terra.",
+      "feedbackWrong": {
+        "b": "O texto diz que Jonas foi vomitado na terra, não a Társis.",
+        "c": "Só Jonas é mencionado saindo do peixe.",
+        "d": "O peixe obedece: vomita Jonas."
+      },
+      "hint": "Leia a ação do peixe no fim do versículo.",
+      "learningObjective": "Observar a saída de Jonas do peixe.",
+      "evidence": ["Jonas 2:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Jonas 2:2 na ordem do texto.",
+      "verseRef": "Jonas 2:2",
+      "options": [
+        { "id": "a", "text": "Na minha angústia, clamei ao Senhor, e ele me respondeu" },
+        { "id": "b", "text": "do ventre do abismo, gritei" },
+        { "id": "c", "text": "e tu ouviste a minha voz" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Na minha angústia, clamei ao Senhor, e ele me respondeu",
+      "feedbackCorrect": "Clamor, grito do abismo e a certeza de ter sido ouvido.",
+      "feedbackWrong": {
+        "default": "Comece pela angústia e pelo clamor; a voz ouvida fecha o versículo."
+      },
+      "hint": "O versículo começa pela angústia de Jonas.",
+      "learningObjective": "Reconhecer a sequência de Jonas 2:2.",
+      "evidence": ["Jonas 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Jonas 2:9, a quem pertence a salvação?",
+      "verseRef": "Jonas 2:9",
+      "options": [
+        { "id": "a", "text": "SENHOR" },
+        { "id": "b", "text": "peixe" },
+        { "id": "c", "text": "Jonas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ao SENHOR pertence a salvação",
+      "feedbackCorrect": "Jonas confessa: a salvação pertence ao Senhor.",
+      "feedbackWrong": {
+        "b": "O peixe obedece; a salvação é do Senhor.",
+        "c": "Jonas recebe; quem salva é o Senhor."
+      },
+      "hint": "Veja a última frase do versículo.",
+      "learningObjective": "Lembrar a quem pertence a salvação.",
+      "evidence": ["Jonas 2:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Jonas 2:2 comunica que se liga a este contexto?",
+      "verseRef": "Jonas 2:2",
+      "passageA": { "ref": "Jonas 2:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na angústia, o clamor de Jonas encontra resposta do Senhor."
+      },
+      "options": [
+        { "id": "a", "text": "O Senhor não ouve" },
+        { "id": "b", "text": "Clamor encontra resposta" },
+        { "id": "c", "text": "A angústia não tem saída" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+      "feedbackCorrect": "Jonas clama e afirma: o Senhor respondeu e ouviu a voz.",
+      "feedbackWrong": {
+        "a": "O texto diz que ele respondeu e ouviu.",
+        "c": "Há saída: o Senhor ouve o clamor."
+      },
+      "hint": "Veja o que acontece depois do clamor.",
+      "learningObjective": "Ligar Jonas 2:2 ao clamor que é ouvido.",
+      "evidence": ["Jonas 2:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Jonas 2:4, Jonas diz que, lançado da presença, nunca mais verá o templo.",
+      "verseRef": "Jonas 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "contudo, ainda verei o teu santo templo",
+      "feedbackCorrect": "O \"contudo\" vira a frase: ainda assim ele espera ver o santo templo.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 2:4: contudo, ainda verei o teu santo templo."
+      },
+      "hint": "Repare na palavra que liga as duas partes do versículo.",
+      "learningObjective": "Compreender o contraste entre lançamento e esperança do templo.",
+      "evidence": ["Jonas 2:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jonas 2:4, toque a palavra que marca o contraste na oração.",
+      "verseRef": "Jonas 2:4",
+      "options": [
+        { "id": "a", "text": "lançado" },
+        { "id": "b", "text": "contudo" },
+        { "id": "c", "text": "templo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "contudo, ainda verei o teu santo templo",
+      "feedbackCorrect": "\"Contudo\" marca a virada: da perda aparente à esperança do templo.",
+      "feedbackWrong": {
+        "a": "\"Lançado\" descreve a queda; o contraste vem depois.",
+        "c": "\"Templo\" é a esperança; a palavra de contraste vem antes."
+      },
+      "hint": "Procure a palavra que liga a queda à esperança.",
+      "learningObjective": "Reconhecer o marcador de contraste em Jonas 2:4.",
+      "evidence": ["Jonas 2:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Jonas 2:7 se relaciona com a angústia de Jonas?",
+      "verseRef": "Jonas 2:7",
+      "options": [
+        { "id": "a", "text": "Quando a alma desfalecia, ele se lembrou do Senhor" },
+        { "id": "b", "text": "Quando a alma desfalecia, ele abandonou a oração" },
+        { "id": "c", "text": "Ele só orou depois de já estar em terra firme" },
+        { "id": "d", "text": "Ele se lembrou dos ídolos vãos, não do Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu me lembrei do Senhor; e a minha oração subiu a Ti",
+      "feedbackCorrect": "No desfalecimento, a memória do Senhor levanta a oração ao templo.",
+      "feedbackWrong": {
+        "b": "Ele se lembra e ora; não abandona a oração.",
+        "c": "A oração sobe ainda no peixe, ao santo templo.",
+        "d": "Os ídolos aparecem em 2:8; aqui ele se lembra do Senhor."
+      },
+      "hint": "Veja o que Jonas faz quando a alma desfalecia.",
+      "learningObjective": "Relacionar o desfalecimento à lembrança do Senhor.",
+      "evidence": ["Jonas 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a oração em Jonas 2:1–10?",
+      "verseRef": "Jonas 2:1–2",
+      "options": [
+        { "id": "a", "text": "Jonas ora do ventre do peixe" },
+        { "id": "b", "text": "Ele desce às águas e lembra o templo" },
+        { "id": "c", "text": "Confessa a salvação e o peixe o vomita" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+      "feedbackCorrect": "Oração, descida com esperança, confissão e saída do peixe.",
+      "feedbackWrong": {
+        "default": "Comece pela oração no peixe; a saída vem por último."
+      },
+      "hint": "A saída do peixe é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento da oração à libertação.",
+      "evidence": ["Jonas 2:1–10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Jonas 2:7, o que Jonas fez quando a alma desfalecia?",
+      "verseRef": "Jonas 2:7",
+      "options": [
+        { "id": "a", "text": "esqueci" },
+        { "id": "b", "text": "lembrei" },
+        { "id": "c", "text": "calei" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu me lembrei do Senhor",
+      "feedbackCorrect": "No desfalecimento, ele se lembrou do Senhor e a oração subiu.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: ele se lembrou.",
+        "c": "Ele não se cala: a oração sobe ao templo."
+      },
+      "hint": "Veja o verbo ligado ao Senhor no meio do versículo.",
+      "learningObjective": "Compreender a lembrança do Senhor na angústia.",
+      "evidence": ["Jonas 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Jonas 2:2 a Salmos 18:6?",
+      "verseRef": "Jonas 2:2",
+      "passageA": { "ref": "Jonas 2:2" },
+      "passageB": { "ref": "Salmos 18:6" },
+      "options": [
+        { "id": "a", "text": "Clamar na angústia" },
+        { "id": "b", "text": "Silêncio diante de Deus" },
+        { "id": "c", "text": "Fuga sem oração" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+      "evidence": ["Jonas 2:2", "Salmos 18:6"],
+      "feedbackCorrect": "Nos dois textos, o clamor na angústia chega ao Senhor.",
+      "feedbackWrong": {
+        "b": "Ambos falam de clamor, não de silêncio.",
+        "c": "Jonas e o salmista clamam; não fogem sem orar."
+      },
+      "hint": "Compare o começo das duas orações.",
+      "learningObjective": "Relacionar o clamor de Jonas ao clamor dos Salmos."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Jonas 2:9–10 apresenta a salvação como conquista do esforço de Jonas no peixe.",
+      "verseRef": "Jonas 2:9–10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ao SENHOR pertence a salvação",
+      "feedbackCorrect": "Jonas confessa que a salvação é do Senhor; o peixe obedece à palavra dele.",
+      "feedbackWrong": {
+        "true": "Releia 2:9–10: a salvação é do Senhor; ele fala ao peixe."
+      },
+      "hint": "Veja a quem pertence a salvação e quem fala ao peixe.",
+      "learningObjective": "Interpretar a salvação como obra do Senhor.",
+      "evidence": ["Jonas 2:9–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jonas 2:9, toque o trecho que sustenta de quem é a salvação.",
+      "verseRef": "Jonas 2:9",
+      "options": [
+        { "id": "a", "text": "sacrifício" },
+        { "id": "b", "text": "salvação" },
+        { "id": "c", "text": "prometi" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ao SENHOR pertence a salvação",
+      "feedbackCorrect": "A palavra final carrega a leitura: a salvação pertence ao Senhor.",
+      "feedbackWrong": {
+        "a": "O sacrifício é a resposta de Jonas; a salvação é do Senhor.",
+        "c": "A promessa é de Jonas; a salvação é atribuída ao Senhor."
+      },
+      "hint": "Procure a última palavra forte do versículo.",
+      "learningObjective": "Sustentar com o texto que a salvação é do Senhor.",
+      "evidence": ["Jonas 2:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Jonas 2:1–10 sustenta sobre a angústia de Jonas?",
+      "verseRef": "Jonas 2:2",
+      "options": [
+        { "id": "a", "text": "Na angústia ele clama, e a salvação vem do Senhor" },
+        { "id": "b", "text": "A angústia prova que o Senhor não ouve" },
+        { "id": "c", "text": "Jonas se salva só pelo próprio esforço" },
+        { "id": "d", "text": "No peixe ele abandona a esperança do templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+      "feedbackCorrect": "O clamor é ouvido, e Jonas confessa: a salvação é do Senhor.",
+      "feedbackWrong": {
+        "b": "2:2 diz que o Senhor respondeu e ouviu.",
+        "c": "2:9–10 apontam o Senhor, não o esforço de Jonas.",
+        "d": "2:4 e 2:7 ainda falam do santo templo."
+      },
+      "hint": "Una o clamor de 2:2 com a confissão de 2:9.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a angústia.",
+      "evidence": ["Jonas 2:2", "Jonas 2:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do clamor que começa em Jonas 2?",
+      "verseRef": "Jonas 2:2",
+      "options": [
+        { "id": "a", "text": "Jonas clama na angústia e é ouvido" },
+        { "id": "b", "text": "O salmista clama e Deus ouve do templo" },
+        { "id": "c", "text": "Jonas no peixe aponta para o Filho do Homem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+      "evidence": ["Jonas 2:2", "Salmos 18:6", "Mateus 12:40"],
+      "feedbackCorrect": "O clamor de Jonas ecoa nos Salmos e aponta para Jesus.",
+      "feedbackWrong": {
+        "default": "Siga a Bíblia: Jonas, o Salmo e Mateus 12:40."
+      },
+      "hint": "Siga a ordem: oração de Jonas, Salmos, Evangelhos.",
+      "learningObjective": "Ver o clamor de Jonas como fio que atravessa a Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Jonas 2:2, em que situação Jonas clamou ao Senhor?",
+      "verseRef": "Jonas 2:2",
+      "options": [
+        { "id": "a", "text": "alegria" },
+        { "id": "b", "text": "angústia" },
+        { "id": "c", "text": "vitória" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+      "feedbackCorrect": "O termo carrega a cena: o clamor nasce na angústia.",
+      "feedbackWrong": {
+        "a": "Não é alegria: ele clama na angústia.",
+        "c": "Ainda não há vitória; há angústia e clamor."
+      },
+      "hint": "É a palavra que abre a oração de Jonas.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da oração.",
+      "evidence": ["Jonas 2:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Jonas 2:1 a Mateus 12:40?",
+      "verseRef": "Jonas 2:1",
+      "passageA": { "ref": "Jonas 2:1" },
+      "passageB": { "ref": "Mateus 12:40" },
+      "options": [
+        { "id": "a", "text": "Jonas e o Filho do Homem" },
+        { "id": "b", "text": "Negação da ressurreição" },
+        { "id": "c", "text": "Fuga sem retorno" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do ventre do peixe",
+      "evidence": ["Jonas 2:1", "Mateus 12:40"],
+      "feedbackCorrect": "Jesus liga o peixe de Jonas aos três dias do Filho do Homem.",
+      "feedbackWrong": {
+        "b": "Mateus aponta para a morte e a ressurreição, não as nega.",
+        "c": "Jonas sai do peixe; o sinal aponta para a volta à vida."
+      },
+      "hint": "Veja o que Jesus compara ao ventre do peixe.",
+      "learningObjective": "Ligar a oração no peixe ao sinal que Jesus aponta."
+    }
+  ]
+}

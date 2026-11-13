@@ -1,0 +1,352 @@
+{
+  "slug": "exodo-cap",
+  "prefix": "exc",
+  "book": "Êxodo",
+  "chapters": 40,
+  "title": "Êxodo",
+  "description": "Êxodo capítulo a capítulo: Deus liberta o povo e habita no meio dele.",
+  "icon": "⛰️",
+  "color": "#6E92AE",
+  "order": 3,
+  "realm": "antigo-testamento",
+  "category": "pentateuco",
+  "avoidTrails": ["exodo"],
+  "modules": [
+    {
+      "title": "Opressão e chamado · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Êxodo 1:15–22",
+          "title": "As parteiras temeram",
+          "intro": "O rei do Egito manda matar os meninos hebreus; Sifrá e Puá desobedecem.",
+          "insight": "As parteiras temem a Deus mais que ao rei, e Deus lhes faz bem.",
+          "objective": "Temer a Deus acima do rei"
+        },
+        {
+          "ref": "Êxodo 2:1–10",
+          "title": "Um cesto no rio",
+          "intro": "Uma mãe esconde o menino e o põe no Nilo; a filha de Faraó o acha.",
+          "insight": "Deus guarda o menino no rio e o devolve à própria mãe para amamentar.",
+          "objective": "Deus guarda o menino"
+        },
+        {
+          "ref": "Êxodo 3:15–22",
+          "title": "Este é o meu nome",
+          "intro": "Deus manda Moisés dizer aos israelitas quem o envia e o que Faraó fará.",
+          "insight": "O Senhor, o Deus dos pais, envia Moisés e promete tirar o povo com mão forte.",
+          "objective": "O nome que envia"
+        },
+        {
+          "ref": "Êxodo 4:1–9",
+          "title": "Sinais na mão",
+          "intro": "Moisés teme que não creiam nele; Deus dá sinais com a vara e a mão.",
+          "insight": "Deus dá sinais para que o povo creia que o Senhor apareceu a Moisés.",
+          "objective": "Sinais que geram fé"
+        },
+        {
+          "ref": "Êxodo 5:1–9",
+          "title": "Deixem o povo ir",
+          "intro": "Moisés e Arão falam a Faraó; ele endurece e aumenta a carga dos tijolos.",
+          "insight": "Faraó não conhece o Senhor e responde à libertação com mais opressão.",
+          "objective": "Oposição à libertação"
+        },
+        {
+          "ref": "Êxodo 6:2–8",
+          "title": "Eu sou o Senhor",
+          "intro": "Deus fala a Moisés do nome, da aliança e da terra que jurou dar.",
+          "insight": "O Senhor se revela e promete tirar, resgatar e tomar Israel por povo.",
+          "objective": "Eu vos tomarei por povo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Opressão e chamado",
+        "intro": "Revise as parteiras, o cesto, o nome, os sinais, Faraó e a promessa.",
+        "insight": "Deus ouve o clamor e chama para libertar"
+      }
+    },
+    {
+      "title": "Pragas · cap. 7–11",
+      "scenes": [
+        {
+          "ref": "Êxodo 8:16–24",
+          "chapters": "7–8",
+          "title": "Piolhos e moscas",
+          "intro": "Arão estende a vara; os magos falham, e Deus separa a terra de Gósen.",
+          "insight": "Os magos confessam o dedo de Deus, e o Senhor faz distinção do seu povo.",
+          "objective": "O dedo de Deus"
+        },
+        {
+          "ref": "Êxodo 9:13–21",
+          "title": "A saraiva anunciada",
+          "intro": "Moisés avisa Faraó da saraiva; quem teme a palavra do Senhor recolhe os servos.",
+          "insight": "Quem teme a palavra do Senhor age; quem a ignora deixa tudo no campo.",
+          "objective": "Temer a palavra do Senhor"
+        },
+        {
+          "ref": "Êxodo 10:21–29",
+          "title": "Trevas espessas",
+          "intro": "Trevas cobrem o Egito por três dias; em Gósen há luz, e Faraó se enfurece.",
+          "insight": "O Senhor separa luz e trevas entre o povo e o Egito; Faraó manda Moisés sair.",
+          "objective": "Luz no meio das trevas"
+        },
+        {
+          "ref": "Êxodo 11:1–10",
+          "title": "Mais uma praga",
+          "intro": "O Senhor anuncia a morte dos primogênitos e diz que o povo será despedido.",
+          "insight": "A última praga decide a saída: o Senhor faz distinção entre Egito e Israel.",
+          "objective": "A praga que liberta"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Pragas",
+        "intro": "Revise o dedo de Deus, a saraiva, as trevas e a última praga.",
+        "insight": "O Senhor julga o Egito e guarda o seu povo"
+      }
+    },
+    {
+      "title": "Libertação · cap. 12–15",
+      "scenes": [
+        {
+          "ref": "Êxodo 12:21–28",
+          "title": "O sangue na porta",
+          "intro": "Moisés manda matar o cordeiro e marcar as portas; o povo se curva e obedece.",
+          "insight": "O sangue é sinal: o Senhor passa por cima da casa marcada e não deixa o destruidor entrar.",
+          "objective": "Marcados pelo sangue"
+        },
+        {
+          "ref": "Êxodo 13:17–22",
+          "title": "Coluna de nuvem e fogo",
+          "intro": "Deus não leva o povo pelo caminho curto; vai adiante numa coluna de nuvem e de fogo.",
+          "insight": "O Senhor guia o caminho e não se afasta: nuvem de dia, fogo de noite.",
+          "objective": "Guiados pelo Senhor"
+        },
+        {
+          "ref": "Êxodo 14:1–12",
+          "title": "Presos entre o mar",
+          "intro": "O Senhor manda acampar junto ao mar; Faraó persegue, e o povo grita de medo.",
+          "insight": "O medo pergunta se não havia sepulturas no Egito; a fé ainda não vê a saída.",
+          "objective": "Medo diante do mar"
+        },
+        {
+          "ref": "Êxodo 15:1–11",
+          "title": "Cantarei ao Senhor",
+          "intro": "Depois do mar, Moisés e os filhos de Israel cantam ao Senhor.",
+          "insight": "O Senhor é a força e a salvação: glorioso em santidade, terrível em feitos.",
+          "objective": "Cantar a salvação"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Libertação",
+        "intro": "Revise o sangue, a coluna, o medo no mar e o cântico.",
+        "insight": "O Senhor liberta e merece o cântico"
+      }
+    },
+    {
+      "title": "Deserto até Sinai · cap. 16–20",
+      "scenes": [
+        {
+          "ref": "Êxodo 16:11–18",
+          "title": "Pão do céu",
+          "intro": "O Senhor ouve as murmurações e manda pão pela manhã; cada um recolhe o que precisa.",
+          "insight": "Quem recolhe muito não sobra, e quem recolhe pouco não falta: o Senhor basta.",
+          "objective": "O pão que basta"
+        },
+        {
+          "ref": "Êxodo 17:1–7",
+          "title": "Água da rocha",
+          "intro": "O povo tem sede em Refidim e briga com Moisés; Deus manda ferir a rocha.",
+          "insight": "O Senhor dá água mesmo quando o povo pergunta se ele está no meio deles.",
+          "objective": "Água no lugar da briga"
+        },
+        {
+          "ref": "Êxodo 18:13–23",
+          "title": "Jetro aconselha",
+          "intro": "Moisés julga o povo o dia todo; Jetro propõe homens capazes para ajudar.",
+          "insight": "O peso não é para um só: Deus usa conselho sábio para cuidar do povo.",
+          "objective": "Dividir o peso"
+        },
+        {
+          "ref": "Êxodo 19:10–19",
+          "title": "Preparai o povo",
+          "intro": "O Senhor manda consagrar o povo; no terceiro dia há trovões, nuvem e trombeta.",
+          "insight": "Encontrar o Senhor pede preparo: o Sinai treme quando ele desce no fogo.",
+          "objective": "Preparar-se para o Senhor"
+        },
+        {
+          "ref": "Êxodo 20:7–17",
+          "title": "As palavras do Sinai",
+          "intro": "Depois do nome do Senhor, vêm o sábado, os pais e o próximo.",
+          "insight": "A lei guarda o nome de Deus, o descanso e o amor concreto ao próximo.",
+          "objective": "Ouvir as dez palavras"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Deserto até Sinai",
+        "intro": "Revise o maná, a rocha, Jetro, o preparo e as palavras do Sinai.",
+        "insight": "O Senhor sustenta no deserto e fala no monte"
+      }
+    },
+    {
+      "title": "Aliança e justiça · cap. 21–24",
+      "scenes": [
+        {
+          "ref": "Êxodo 21:1–11",
+          "title": "Servo e liberdade",
+          "intro": "O Senhor regula o servo hebreu: no sétimo ano sai livre, e o amor pode fazê-lo ficar.",
+          "insight": "Até a servidão tem limite e dignidade diante do Senhor.",
+          "objective": "Liberdade no sétimo ano"
+        },
+        {
+          "ref": "Êxodo 22:21–27",
+          "title": "O estrangeiro e a viúva",
+          "intro": "Deus proíbe oprimir o estrangeiro, a viúva e o órfão, e fala do manto empenhado.",
+          "insight": "O Senhor ouve o clamor do fraco; a roupa do pobre é sagrada até de noite.",
+          "objective": "Não oprimir o fraco"
+        },
+        {
+          "ref": "Êxodo 23:1–9",
+          "title": "Não seguir a multidão",
+          "intro": "A lei pede verdade no tribunal e cuidado até com o animal do inimigo.",
+          "insight": "Justiça não se curva à maioria, nem ao presente, nem ao ódio.",
+          "objective": "Justiça sem parcialidade"
+        },
+        {
+          "ref": "Êxodo 24:3–11",
+          "title": "Sangue da aliança",
+          "intro": "O povo diz que fará tudo; Moisés asperge o sangue e sobe com os anciãos.",
+          "insight": "A aliança se sela com sangue, e eles veem a Deus e comem e bebem.",
+          "objective": "Selados na aliança"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Aliança e justiça",
+        "intro": "Revise o servo, o fraco, o tribunal e o sangue da aliança.",
+        "insight": "A aliança pede justiça e compromisso com o Senhor"
+      }
+    },
+    {
+      "title": "O santuário · cap. 25–31",
+      "scenes": [
+        {
+          "ref": "Êxodo 25:17–22",
+          "title": "O propiciatório",
+          "intro": "Deus descreve a tampa da arca com querubins; ali ele se encontrará com Moisés.",
+          "insight": "O Senhor fala de cima do propiciatório, no meio do seu povo.",
+          "objective": "Encontro sobre a arca"
+        },
+        {
+          "ref": "Êxodo 26:30–37",
+          "chapters": "26–27",
+          "title": "Segundo o modelo",
+          "intro": "O tabernáculo e a entrada seguem o modelo mostrado no monte.",
+          "insight": "O santuário não é invenção humana: Moisés levanta tudo conforme o modelo.",
+          "objective": "Construir como Deus mostrou"
+        },
+        {
+          "ref": "Êxodo 28:1–12",
+          "title": "Áarão no peito",
+          "intro": "Deus escolhe Áarão e os filhos e manda gravar os nomes de Israel nas pedras.",
+          "insight": "O sacerdote leva o povo sobre o coração quando entra perante o Senhor.",
+          "objective": "Levar o povo no coração"
+        },
+        {
+          "ref": "Êxodo 29:38–46",
+          "title": "Holocausto contínuo",
+          "intro": "Cada dia, dois cordeiros no altar; Deus promete habitar no meio de Israel.",
+          "insight": "O culto diário lembra: o Senhor é quem santifica e quer morar com o povo.",
+          "objective": "Deus no meio do povo"
+        },
+        {
+          "ref": "Êxodo 31:12–18",
+          "chapters": "30–31",
+          "title": "O sábado e as tábuas",
+          "intro": "O Senhor liga o sábado à aliança e entrega a Moisés as tábuas escritas a dedo.",
+          "insight": "O sábado é sinal entre o Senhor e Israel; as tábuas vêm da própria mão de Deus.",
+          "objective": "Sinal da aliança"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: O santuário",
+        "intro": "Revise o propiciatório, o modelo, Áarão, o culto diário e o sábado.",
+        "insight": "Deus quer habitar no meio do povo santificado"
+      }
+    },
+    {
+      "title": "Queda e glória · cap. 32–34",
+      "scenes": [
+        {
+          "ref": "Êxodo 32:7–14",
+          "title": "Moisés intercede",
+          "intro": "O povo faz um bezerro; Deus fala em consumi-los, e Moisés pede misericórdia.",
+          "insight": "Moisés lembra a promessa a Abraão, e o Senhor se arrepende do mal anunciado.",
+          "objective": "Interceder pelo povo"
+        },
+        {
+          "ref": "Êxodo 33:12–23",
+          "title": "Mostra-me a tua glória",
+          "intro": "Moisés pede que a presença vá com eles e quer ver a glória do Senhor.",
+          "insight": "O Senhor faz passar toda a sua bondade e proclama o nome diante de Moisés.",
+          "objective": "Desejar a presença de Deus"
+        },
+        {
+          "ref": "Êxodo 34:1–9",
+          "title": "Novas tábuas",
+          "intro": "Moisés sobe de novo; o Senhor passa e proclama que é misericordioso e justificado.",
+          "insight": "O Senhor perdoa iniquidade e não tem por inocente o culpado; Moisés adora.",
+          "objective": "Misericórdia e verdade"
+        },
+        {
+          "ref": "Êxodo 34:27–35",
+          "title": "O rosto que brilha",
+          "intro": "Moisés escreve as palavras e desce com o rosto resplandecente; o povo teme.",
+          "insight": "Quem esteve com o Senhor leva no rosto a marca da conversa com ele.",
+          "objective": "Brilhar depois de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Queda e glória",
+        "intro": "Revise a intercessão, a glória, as novas tábuas e o rosto de Moisés.",
+        "insight": "Depois da queda, Deus renova a aliança e mostra a glória"
+      }
+    },
+    {
+      "title": "A obra concluída · cap. 35–40",
+      "scenes": [
+        {
+          "ref": "Êxodo 35:20–29",
+          "title": "Coração disposto",
+          "intro": "Todo aquele a quem o coração move traz oferta ao Senhor para a obra.",
+          "insight": "A oferta que Deus quer vem de coração disposto, de homens e mulheres.",
+          "objective": "Ofertar de coração"
+        },
+        {
+          "ref": "Êxodo 36:2–7",
+          "chapters": "36–38",
+          "title": "Bastante oferta",
+          "intro": "Bezaleel e Aoliabe recebem os materiais; o povo traz mais do que é preciso.",
+          "insight": "Há generosidade demais: Moisés manda parar de trazer ofertas.",
+          "objective": "Generosidade que sobra"
+        },
+        {
+          "ref": "Êxodo 39:32–43",
+          "title": "Como o Senhor ordenou",
+          "intro": "Toda a obra do tabernáculo fica pronta; Moisés vê e abençoa o povo.",
+          "insight": "Fizeram tudo como o Senhor ordenou, e Moisés os abençoa.",
+          "objective": "Obra conforme o Senhor"
+        },
+        {
+          "ref": "Êxodo 40:34–38",
+          "title": "A glória enche",
+          "intro": "A nuvem cobre a tenda, e a glória do Senhor enche o tabernáculo.",
+          "insight": "O Senhor habita de fato: a nuvem guia, e a glória enche a casa.",
+          "objective": "Glória no meio do povo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: A obra concluída",
+        "intro": "Revise a oferta, a generosidade, a obra pronta e a glória que enche.",
+        "insight": "Quando o povo obedece, a glória do Senhor habita no meio"
+      }
+    }
+  ]
+}

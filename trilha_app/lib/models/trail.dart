@@ -223,6 +223,9 @@ class Trail {
   final String color;
   final String realmId;
   final String categoryId;
+
+  /// Coleção à parte da área (`panorama`): a trilha mora nela, não em AT/NT.
+  final String? collectionId;
   final List<TrailModule> modules;
 
   const Trail({
@@ -236,6 +239,7 @@ class Trail {
     required this.color,
     this.realmId = 'antigo-testamento',
     this.categoryId = 'pentateuco',
+    this.collectionId,
     required this.modules,
   });
 
@@ -247,7 +251,11 @@ class Trail {
 
   /// Card da aba Trilhas onde esta trilha mora.
   TrailJourney get journey =>
-      TrailJourney.forTrail(realmId: realmId, categoryId: categoryId);
+      TrailJourney.forTrail(
+        realmId: realmId,
+        categoryId: categoryId,
+        collectionId: collectionId,
+      );
 
   String get localizedDescription =>
       ContentOverlay.instance.trailField(slug, 'description') ?? description;
@@ -266,6 +274,9 @@ class Trail {
       color: json['color'] as String? ?? '#1B3A5C',
       realmId: json['realm'] as String? ?? 'antigo-testamento',
       categoryId: json['category'] as String? ?? 'pentateuco',
+      collectionId: (json['collection'] as String?)?.trim().isEmpty ?? true
+          ? null
+          : (json['collection'] as String).trim(),
       modules: [
         for (var i = 0; i < mods.length; i++)
           TrailModule.fromJson(

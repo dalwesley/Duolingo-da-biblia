@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Daniel 12:1–4",
+    "passages": [
+      {
+        "ref": "Daniel 12:1–4"
+      },
+      {
+        "ref": "Daniel 12:5–10"
+      }
+    ],
+    "context": "A visão chega ao fim: Miguel se levanta, há angústia e salvação, ressurreição, e as palavras são seladas até o tempo do fim.",
+    "keyword": "sábios",
+    "keywordGloss": "Os que resplandecem e, no fim, compreendem o que os ímpios não entendem.",
+    "focusQuestion": "O que muda quando você vive à luz da ressurreição e do tempo do fim?",
+    "reflectionPrompts": [
+      "Tempo de angústia",
+      "Ressurreição",
+      "Sábios compreendem"
+    ],
+    "facts": [
+      {
+        "text": "Miguel, o grande príncipe, se levantará e defenderá o povo.",
+        "evidenceRef": "Daniel 12:1",
+        "evidenceSpan": "se levantará Miguel, o grande príncipe, que defende os filhos do teu povo"
+      },
+      {
+        "text": "Haverá tempo de angústia sem igual; o povo inscrito no livro será salvo.",
+        "evidenceRef": "Daniel 12:1",
+        "evidenceSpan": "o teu povo será salvo, todo aquele que for encontrado inscrito no livro"
+      },
+      {
+        "text": "Muitos no pó da terra ressuscitarão, uns para vida eterna, outros para vergonha.",
+        "evidenceRef": "Daniel 12:2",
+        "evidenceSpan": "ressuscitarão, uns para a vida eterna, e outros para vergonha e horror eterno"
+      },
+      {
+        "text": "Os sábios resplandecerão como o fulgor do firmamento.",
+        "evidenceRef": "Daniel 12:3",
+        "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento"
+      },
+      {
+        "text": "Daniel deve encerrar e selar o livro até o tempo do fim.",
+        "evidenceRef": "Daniel 12:4",
+        "evidenceSpan": "encerra estas palavras e sela este livro até o tempo do fim"
+      },
+      {
+        "text": "Os sábios compreenderão; nenhum dos ímpios compreenderá.",
+        "evidenceRef": "Daniel 12:10",
+        "evidenceSpan": "nenhum deles compreenderá, mas os sábios compreenderão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sábios",
+        "gloss": "Os que resplandecem e compreendem no fim."
+      },
+      {
+        "term": "ressuscitarão",
+        "gloss": "O despertar dos que estão no pó da terra."
+      },
+      {
+        "term": "sela",
+        "gloss": "Ação de encerrar o livro até o tempo do fim."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Miguel, angústia e salvação",
+        "evidenceRef": "Daniel 12:1"
+      },
+      {
+        "label": "Ressurreição e resplendor dos sábios",
+        "evidenceRef": "Daniel 12:2–3"
+      },
+      {
+        "label": "Livro selado até o fim",
+        "evidenceRef": "Daniel 12:4–9"
+      },
+      {
+        "label": "Purificados; sábios compreendem",
+        "evidenceRef": "Daniel 12:10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Uns para vida eterna; outros para vergonha eterna.",
+        "marker": null,
+        "evidenceRef": "Daniel 12:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ímpios não compreendem; mas os sábios compreenderão.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 12:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Haverá angústia; porém o povo será salvo.",
+        "marker": "porém",
+        "evidenceRef": "Daniel 12:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 5:28–29",
+        "bridge": "Ressurreição para vida ou juízo"
+      },
+      {
+        "ref": "Mateus 13:43",
+        "bridge": "Justos brilharão como sol"
+      },
+      {
+        "ref": "Apocalipse 20:12",
+        "bridge": "Livros abertos no juízo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Não há ressurreição neste capítulo.",
+        "why": "12:2: muitos ressuscitarão."
+      },
+      {
+        "text": "Todos compreenderão igualmente no fim.",
+        "why": "12:10: ímpios não compreendem; sábios compreendem."
+      },
+      {
+        "text": "O livro fica aberto e sem selo.",
+        "why": "12:4 e 12:9: palavras encerradas e seladas até o fim."
+      }
+    ],
+    "centralInsight": "Os sábios resplandecerão; quem é sábio entenderá no tempo do fim.",
+    "anchorQuestion": "Segundo Daniel 12:2, para que destinos os que ressuscitam vão?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 12:2, ninguém ressuscita; só há sono sem despertar.",
+      "verseRef": "Daniel 12:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Muitos dos que estão no pó da terra ressuscitarão",
+      "feedbackCorrect": "Muitos ressuscitarão, uns para vida, outros para vergonha.",
+      "feedbackWrong": {
+        "true": "Releia 12:2."
+      },
+      "hint": "Veja o verbo de despertar.",
+      "learningObjective": "Observar a ressurreição no texto.",
+      "evidence": [
+        "Daniel 12:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 12:3, toque quem resplandecerá como o fulgor do firmamento.",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "Os sábios resplandecerão.",
+      "hint": "Procure o sujeito do resplandecer.",
+      "learningObjective": "Identificar quem resplandece.",
+      "evidence": [
+        "Daniel 12:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "sábios"
+        },
+        {
+          "id": "b",
+          "text": "firmamento"
+        },
+        {
+          "id": "c",
+          "text": "estrelas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Firmamento\" é a comparação do fulgor.",
+        "c": "\"Estrelas\" é a comparação dos que conduzem à justiça."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 12:1, quem se levantará para defender o povo?",
+      "verseRef": "Daniel 12:1",
+      "evidenceSpan": "se levantará Miguel, o grande príncipe",
+      "feedbackCorrect": "Miguel, o grande príncipe, se levantará.",
+      "hint": "Veja quem se levanta.",
+      "learningObjective": "Observar o defensor do povo.",
+      "evidence": [
+        "Daniel 12:1"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Miguel"
+        },
+        {
+          "id": "b",
+          "text": "O rei da Pérsia"
+        },
+        {
+          "id": "c",
+          "text": "O homem de linho só"
+        },
+        {
+          "id": "d",
+          "text": "Nabucodonosor"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é o defensor aqui.",
+        "c": "O linho aparece depois.",
+        "d": "Não aparece em 12:1."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 12:2 na ordem do texto.",
+      "verseRef": "Daniel 12:2",
+      "evidenceSpan": "ressuscitarão, uns para a vida eterna",
+      "feedbackCorrect": "Pó da terra, ressurreição, destinos eternos.",
+      "hint": "Comece pelos que estão no pó.",
+      "learningObjective": "Reconhecer a sequência de 12:2.",
+      "evidence": [
+        "Daniel 12:2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Muitos dos que estão no pó da terra ressuscitarão"
+        },
+        {
+          "id": "b",
+          "text": "uns para a vida eterna"
+        },
+        {
+          "id": "c",
+          "text": "e outros para vergonha e horror eterno"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo pó; os destinos fecham."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 12:4, o que Daniel deve fazer ao livro?",
+      "verseRef": "Daniel 12:4",
+      "evidenceSpan": "sela este livro até o tempo do fim",
+      "feedbackCorrect": "Ele deve selar o livro até o tempo do fim.",
+      "hint": "É o verbo junto de \"este livro\".",
+      "learningObjective": "Lembrar a ação sobre o livro.",
+      "evidence": [
+        "Daniel 12:4"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "sela"
+        },
+        {
+          "id": "b",
+          "text": "quebra"
+        },
+        {
+          "id": "c",
+          "text": "vende"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não quebra.",
+        "c": "Não vende."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 12:3 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "No fim, os sábios brilham e conduzem muitos à justiça.",
+      "hint": "Compare sábios e resplendor.",
+      "learningObjective": "Ligar sabedoria e resplendor final.",
+      "evidence": [
+        "Daniel 12:3"
+      ],
+      "passageA": {
+        "ref": "Daniel 12:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Há angústia e ressurreição; os sábios resplandecem eternamente."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sábios resplandecem no fim"
+        },
+        {
+          "id": "b",
+          "text": "Ímpios brilham como estrelas"
+        },
+        {
+          "id": "c",
+          "text": "Livro sem nenhum selo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "São os sábios que resplandecem.",
+        "c": "O livro é selado."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 12:1, apesar da angústia, o povo inscrito no livro será salvo.",
+      "verseRef": "Daniel 12:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "porém, naquele tempo, o teu povo será salvo, todo aquele que for encontrado inscrito no livro",
+      "feedbackCorrect": "\"Porém\" marca: angústia, mas há salvação.",
+      "feedbackWrong": {
+        "false": "Releia o contraste em 12:1."
+      },
+      "hint": "Veja o \"porém\" e o livro.",
+      "learningObjective": "Compreender angústia e salvação.",
+      "evidence": [
+        "Daniel 12:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 12:1, toque a palavra que marca o contraste após a angústia.",
+      "verseRef": "Daniel 12:1",
+      "evidenceSpan": "porém, naquele tempo, o teu povo será salvo",
+      "feedbackCorrect": "\"Porém\" marca a virada para a salvação.",
+      "hint": "Procure o contraste perto da salvação.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Daniel 12:1"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "nação"
+        },
+        {
+          "id": "c",
+          "text": "angústia"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Nação\" descreve a comparação.",
+        "c": "\"Angústia\" é o que antecede o contraste."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 12:2–3 relaciona ressurreição e os sábios?",
+      "verseRef": "Daniel 12:2–3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "Há ressurreição com destinos distintos; os sábios resplandecem e conduzem à justiça.",
+      "hint": "Compare 12:2 e 12:3.",
+      "learningObjective": "Relacionar ressurreição e resplendor.",
+      "evidence": [
+        "Daniel 12:2–3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ressurreição distinta e sábios que brilham"
+        },
+        {
+          "id": "b",
+          "text": "Só há um destino para todos"
+        },
+        {
+          "id": "c",
+          "text": "Sábios desaparecem na angústia"
+        },
+        {
+          "id": "d",
+          "text": "Não há ressurreição no texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há vida e vergonha.",
+        "c": "Eles resplandecem.",
+        "d": "12:2 afirma ressurreição."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 12:1–10?",
+      "verseRef": "Daniel 12:1–10",
+      "evidenceSpan": "mas os sábios compreenderão",
+      "feedbackCorrect": "Miguel e salvação, ressurreição, livro selado, sábios compreendem.",
+      "hint": "Comece por Miguel.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": [
+        "Daniel 12:1–10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Miguel, angústia e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Ressurreição e livro selado"
+        },
+        {
+          "id": "c",
+          "text": "Purificados; sábios compreendem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece por Miguel; a compreensão fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 12:10, que palavra marca o contraste com os ímpios?",
+      "verseRef": "Daniel 12:10",
+      "evidenceSpan": "nenhum deles compreenderá, mas os sábios compreenderão",
+      "feedbackCorrect": "\"Mas\" marca: ímpios não; sábios sim.",
+      "hint": "É o contraste antes dos sábios.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": [
+        "Daniel 12:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "sempre"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é \"sempre\".",
+        "c": "Não é \"nunca\"."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 12:2 a João 5:28–29?",
+      "verseRef": "Daniel 12:2",
+      "evidenceSpan": "uns para a vida eterna, e outros para vergonha e horror eterno",
+      "feedbackCorrect": "Nos dois textos, há ressurreição para vida ou juízo.",
+      "hint": "Compare os destinos.",
+      "learningObjective": "Relacionar a ressurreição em Daniel e João.",
+      "evidence": [
+        "Daniel 12:2",
+        "João 5:28–29"
+      ],
+      "passageA": {
+        "ref": "Daniel 12:2"
+      },
+      "passageB": {
+        "ref": "João 5:28–29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ressurreição para vida ou juízo"
+        },
+        {
+          "id": "b",
+          "text": "Sono sem despertar"
+        },
+        {
+          "id": "c",
+          "text": "Só juízo sem vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há ressurreição explícita.",
+        "c": "Há também vida eterna."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 12:10, ímpios e sábios compreendem igualmente o tempo do fim.",
+      "verseRef": "Daniel 12:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "nenhum deles compreenderá, mas os sábios compreenderão",
+      "feedbackCorrect": "Só os sábios compreenderão.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 12:10."
+      },
+      "hint": "Compare ímpios e sábios.",
+      "learningObjective": "Interpretar a compreensão no fim.",
+      "evidence": [
+        "Daniel 12:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 12:10, toque o trecho que mostra quem compreende.",
+      "verseRef": "Daniel 12:10",
+      "evidenceSpan": "mas os sábios compreenderão",
+      "feedbackCorrect": "Os sábios compreenderão.",
+      "hint": "Procure quem compreende no fim.",
+      "learningObjective": "Sustentar a compreensão dos sábios.",
+      "evidence": [
+        "Daniel 12:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "sábios compreenderão"
+        },
+        {
+          "id": "b",
+          "text": "ímpios agirão"
+        },
+        {
+          "id": "c",
+          "text": "tempo do fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ímpios não compreendem.",
+        "c": "É o horizonte, não quem compreende."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 12:1–10 sustenta sobre o fim?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "Há angústia e salvação, ressurreição, e sábios que compreendem e brilham.",
+      "hint": "Compare cada opção com 12:1–10.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Daniel 12:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sábios resplandecem e compreendem no fim"
+        },
+        {
+          "id": "b",
+          "text": "Não há juízo nem ressurreição"
+        },
+        {
+          "id": "c",
+          "text": "O livro nunca é selado"
+        },
+        {
+          "id": "d",
+          "text": "Miguel abandona o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "12:2 afirma ressurreição.",
+        "c": "12:4 e 12:9 selam.",
+        "d": "Miguel defende o povo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do resplendor dos justos?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "Daniel vê; Jesus fala dos justos como sol; Apocalipse abre os livros.",
+      "hint": "Parta de Daniel.",
+      "learningObjective": "Ver o resplendor no fio bíblico.",
+      "evidence": [
+        "Daniel 12:3",
+        "Mateus 13:43",
+        "Apocalipse 20:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel: sábios resplandecem"
+        },
+        {
+          "id": "b",
+          "text": "Jesus: justos brilharão como sol"
+        },
+        {
+          "id": "c",
+          "text": "Apocalipse: livros no juízo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Daniel 12, Mateus 13 e Apocalipse 20."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 12:2, que verbo descreve o despertar dos que estão no pó?",
+      "verseRef": "Daniel 12:2",
+      "evidenceSpan": "ressuscitarão, uns para a vida eterna",
+      "feedbackCorrect": "Eles ressuscitarão.",
+      "hint": "É o verbo central do versículo.",
+      "learningObjective": "Lembrar o termo da ressurreição.",
+      "evidence": [
+        "Daniel 12:2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ressuscitarão"
+        },
+        {
+          "id": "b",
+          "text": "desaparecerão"
+        },
+        {
+          "id": "c",
+          "text": "esquecerão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não desaparecerão.",
+        "c": "Não esquecerão."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 12:3 a Mateus 13:43?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "aqueles que conduzem muitos à justiça brilharão como as estrelas",
+      "feedbackCorrect": "Nos dois textos, os justos/sábios brilham.",
+      "hint": "Compare o brilho dos justos.",
+      "learningObjective": "Ligar o resplendor em Daniel e Mateus.",
+      "evidence": [
+        "Daniel 12:3",
+        "Mateus 13:43"
+      ],
+      "passageA": {
+        "ref": "Daniel 12:3"
+      },
+      "passageB": {
+        "ref": "Mateus 13:43"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justos que brilham"
+        },
+        {
+          "id": "b",
+          "text": "Ímpios que brilham"
+        },
+        {
+          "id": "c",
+          "text": "Livro sem esperança"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "São justos/sábios.",
+        "c": "Há esperança de resplendor."
+      }
+    }
+  ]
+}

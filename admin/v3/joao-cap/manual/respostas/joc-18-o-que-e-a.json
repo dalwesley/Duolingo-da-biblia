@@ -1,0 +1,496 @@
+{
+  "study": {
+    "passageRef": "João 18:33–38",
+    "passages": [
+      { "ref": "João 18:33–38" }
+    ],
+    "context": "Jesus já foi preso e levado ao governador. Pilatos volta ao pretório, chama Jesus e pergunta se ele é o rei dos judeus. O diálogo seguinte é esse interrogatório.",
+    "keyword": "verdade",
+    "keywordGloss": "No texto, é aquilo de que Jesus veio dar testemunho, e quem é dela ouve a voz dele.",
+    "focusQuestion": "Quando a verdade pede que você fique, você ouve ou sai da sala?",
+    "reflectionPrompts": [
+      "A pergunta sobre o rei",
+      "Um reino fora daqui",
+      "A pergunta sem espera"
+    ],
+    "facts": [
+      {
+        "text": "Pilatos pergunta a Jesus se ele é o rei dos judeus.",
+        "evidenceRef": "João 18:33",
+        "evidenceSpan": "Você é o rei dos judeus?"
+      },
+      {
+        "text": "Pilatos diz que a própria nação de Jesus e os principais sacerdotes o entregaram.",
+        "evidenceRef": "João 18:35",
+        "evidenceSpan": "A tua própria nação e os principais sacerdotes são os que te entregaram a mim"
+      },
+      {
+        "text": "Jesus diz que o seu reino não é deste mundo.",
+        "evidenceRef": "João 18:36",
+        "evidenceSpan": "Meu reino não é deste mundo"
+      },
+      {
+        "text": "Jesus nasceu e veio ao mundo a fim de dar testemunho da verdade.",
+        "evidenceRef": "João 18:37",
+        "evidenceSpan": "Para isso nasci e para isso vim ao mundo, a fim de dar testemunho da verdade"
+      },
+      {
+        "text": "Todo o que é da verdade ouve a voz de Jesus.",
+        "evidenceRef": "João 18:37",
+        "evidenceSpan": "Todo o que é da verdade ouve a minha voz"
+      },
+      {
+        "text": "Pilatos diz que não encontra crime algum em Jesus.",
+        "evidenceRef": "João 18:38",
+        "evidenceSpan": "Não encontro nele crime algum"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "verdade",
+        "gloss": "Aquilo de que Jesus veio dar testemunho, e de que é quem ouve a voz dele."
+      },
+      {
+        "term": "reino",
+        "gloss": "O governo de Jesus, que ele diz não ser deste mundo nem daqui."
+      },
+      {
+        "term": "testemunho",
+        "gloss": "A missão para a qual Jesus diz ter nascido e vindo ao mundo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pilatos pergunta se Jesus é rei",
+        "evidenceRef": "João 18:33"
+      },
+      {
+        "label": "Jesus afirma um reino que não é daqui",
+        "evidenceRef": "João 18:36"
+      },
+      {
+        "label": "Jesus aponta o testemunho da verdade",
+        "evidenceRef": "João 18:37"
+      },
+      {
+        "label": "Pilatos não encontra crime algum",
+        "evidenceRef": "João 18:38"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jesus contrasta a hipótese de um reino daqui com o que vale agora: o reino não é daqui.",
+        "marker": "Mas",
+        "evidenceRef": "João 18:36"
+      },
+      {
+        "kind": "causa",
+        "text": "Se o reino fosse deste mundo, os ministros se empenhariam para que Jesus não fosse entregue.",
+        "marker": "se",
+        "evidenceRef": "João 18:36"
+      },
+      {
+        "kind": "propósito",
+        "text": "Jesus nasceu e veio ao mundo a fim de dar testemunho da verdade.",
+        "marker": "fim",
+        "evidenceRef": "João 18:37"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 10:27", "bridge": "Quem é dele ouve" },
+      { "ref": "João 14:6", "bridge": "Jesus é a verdade" },
+      { "ref": "João 17:17", "bridge": "A palavra é a verdade" }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus nega ser rei quando diz que Pilatos é quem afirma o título.",
+        "why": "Ele não recusa o título. Explica que nasceu para dar testemunho da verdade."
+      },
+      {
+        "text": "O reinado de Jesus, nesse texto, é um trono de poder neste mundo.",
+        "why": "Ele diz que o reino não é deste mundo nem daqui. Vir ao mundo é para testemunhar a verdade."
+      },
+      {
+        "text": "Só ouve a voz de Jesus quem já entende tudo por conta própria.",
+        "why": "O texto não põe essa condição. Todo o que é da verdade ouve a voz dele."
+      }
+    ],
+    "centralInsight": "O Reino de Jesus não é deste mundo, e quem é da verdade ouve a voz dele.",
+    "anchorQuestion": "Segundo João 18:37, para que Jesus nasceu e veio ao mundo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 18:38, Pilatos declara que não encontra crime algum em Jesus.",
+      "verseRef": "João 18:38",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não encontro nele crime algum",
+      "feedbackCorrect": "Ao sair, Pilatos diz aos judeus que não encontra crime algum em Jesus.",
+      "feedbackWrong": {
+        "false": "Releia o fim do versículo: ele diz que não encontra nele crime algum."
+      },
+      "hint": "Olhe a frase que Pilatos diz aos judeus.",
+      "learningObjective": "Observar que Pilatos não encontra crime em Jesus.",
+      "evidence": ["João 18:38"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 18:33, toque quem Pilatos chamou para interrogar.",
+      "verseRef": "João 18:33",
+      "options": [
+        { "id": "a", "text": "pretório" },
+        { "id": "b", "text": "Jesus" },
+        { "id": "c", "text": "judeus" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamou Jesus",
+      "feedbackCorrect": "Pilatos entra no pretório e chama Jesus para a pergunta.",
+      "feedbackWrong": {
+        "a": "O pretório é o lugar onde ele entra, não quem foi chamado.",
+        "c": "Judeus está na pergunta. Quem foi chamado vem antes dela."
+      },
+      "hint": "Procure o nome de quem foi chamado.",
+      "learningObjective": "Identificar quem Pilatos chama no pretório.",
+      "evidence": ["João 18:33"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 18:35, quem entregou Jesus a Pilatos?",
+      "verseRef": "João 18:35",
+      "options": [
+        { "id": "a", "text": "Os discípulos que estavam com ele" },
+        { "id": "b", "text": "Os soldados romanos do pretório" },
+        { "id": "c", "text": "Judas e o grupo que o prendeu" },
+        { "id": "d", "text": "A nação dele e os principais sacerdotes" }
+      ],
+      "correctOptionId": "d",
+      "evidenceSpan": "os principais sacerdotes são os que te entregaram a mim",
+      "feedbackCorrect": "Pilatos aponta a nação de Jesus e os principais sacerdotes.",
+      "feedbackWrong": {
+        "a": "Os discípulos não são citados. Quem entrega é a nação e os sacerdotes.",
+        "b": "O pretório é o lugar. Quem entrega é a nação e os sacerdotes.",
+        "c": "Judas o entregou antes, mas aqui Pilatos nomeia a nação e os sacerdotes."
+      },
+      "hint": "Leia quem Pilatos diz que o entregou.",
+      "learningObjective": "Observar quem Pilatos diz que entregou Jesus.",
+      "evidence": ["João 18:35"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 18:36 na ordem do texto.",
+      "verseRef": "João 18:36",
+      "options": [
+        { "id": "a", "text": "Meu reino não é deste mundo" },
+        { "id": "b", "text": "se meu reino fosse deste mundo" },
+        { "id": "c", "text": "Mas agora, meu reino não é daqui" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Meu reino não é deste mundo",
+      "feedbackCorrect": "A fala abre com o reino atual, segue o se fosse e fecha fora daqui.",
+      "feedbackWrong": {
+        "default": "Comece por Meu reino não é deste mundo. O não é daqui fecha a fala."
+      },
+      "hint": "A primeira frase fala do reino agora.",
+      "learningObjective": "Reconhecer a sequência da fala de Jesus em João 18:36.",
+      "evidence": ["João 18:36"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 18:33, que título Pilatos pergunta se Jesus tem?",
+      "verseRef": "João 18:33",
+      "options": [
+        { "id": "a", "text": "chefe" },
+        { "id": "b", "text": "rei" },
+        { "id": "c", "text": "guia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Você é o rei dos judeus?",
+      "feedbackCorrect": "A pergunta de Pilatos é se Jesus é o rei dos judeus.",
+      "feedbackWrong": {
+        "a": "Chefe não está na pergunta. O título que aparece é outro.",
+        "c": "Guia não aparece. A pergunta traz um título de governo."
+      },
+      "hint": "É o título na pergunta de Pilatos.",
+      "learningObjective": "Lembrar o título da pergunta de Pilatos.",
+      "evidence": ["João 18:33"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 18:36 comunica que se liga a este contexto?",
+      "verseRef": "João 18:36",
+      "passageA": { "ref": "João 18:36" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Pilatos chama Jesus e pergunta se ele é o rei dos judeus."
+      },
+      "options": [
+        { "id": "a", "text": "Jesus nega ser rei" },
+        { "id": "b", "text": "O reino não é daqui" },
+        { "id": "c", "text": "Os ministros já lutaram" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "meu reino não é daqui",
+      "feedbackCorrect": "Diante da pergunta sobre ser rei, Jesus situa o reino fora daqui.",
+      "feedbackWrong": {
+        "a": "Jesus não recusa o título. Ele diz que o reino não é daqui.",
+        "c": "A luta não aconteceu. O que ele afirma é que o reino não é daqui."
+      },
+      "hint": "Veja de onde Jesus diz que vem o reino.",
+      "learningObjective": "Ligar a fala sobre o reino à pergunta de Pilatos.",
+      "evidence": ["João 18:36"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 18:36, os ministros de Jesus lutaram para que ele não fosse entregue aos judeus.",
+      "verseRef": "João 18:36",
+      "correctOptionId": "false",
+      "evidenceSpan": "se meu reino fosse deste mundo, meus ministros se empenhariam",
+      "feedbackCorrect": "A luta está no se fosse. O reino não é daqui, então eles não lutaram.",
+      "feedbackWrong": {
+        "true": "O texto não narra uma luta feita. Fala do que fariam se o reino fosse daqui."
+      },
+      "hint": "Repare no se que acompanha a ação dos ministros.",
+      "learningObjective": "Compreender que a luta dos ministros fica no condicional.",
+      "evidence": ["João 18:36"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 18:36, toque a palavra que marca a virada sobre o reino.",
+      "verseRef": "João 18:36",
+      "options": [
+        { "id": "a", "text": "mundo" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "ministros" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Mas agora",
+      "feedbackCorrect": "Mas vira a frase: a hipótese fica para trás, e o reino não é daqui.",
+      "feedbackWrong": {
+        "a": "Mundo diz o âmbito do reino. A virada é a palavra curta da última frase.",
+        "c": "Ministros são os da hipótese. A virada abre a última frase."
+      },
+      "hint": "Procure a palavra curta que abre a última frase.",
+      "learningObjective": "Reconhecer o marcador de contraste na fala de Jesus.",
+      "evidence": ["João 18:36"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como João 18:37 apresenta o motivo da vinda de Jesus?",
+      "verseRef": "João 18:37",
+      "options": [
+        { "id": "a", "text": "O alvo da vinda é ocupar um trono daqui" },
+        { "id": "b", "text": "O alvo da vinda é responder a Pilatos" },
+        { "id": "c", "text": "O alvo da vinda é testemunhar a verdade" },
+        { "id": "d", "text": "O alvo da vinda é ser livrado por outros" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "a fim de dar testemunho da verdade",
+      "feedbackCorrect": "Jesus nasceu e veio ao mundo a fim de dar testemunho da verdade.",
+      "feedbackWrong": {
+        "a": "O texto não fala de trono daqui. A vinda é para testemunhar a verdade.",
+        "b": "Pilatos pergunta, mas o propósito declarado é o testemunho da verdade.",
+        "d": "Outros não são o motivo da vinda. O alvo declarado é a verdade."
+      },
+      "hint": "Olhe o a fim de na resposta de Jesus.",
+      "learningObjective": "Compreender o propósito da vinda de Jesus em João 18:37.",
+      "evidence": ["João 18:37"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o diálogo em João 18:37–38?",
+      "verseRef": "João 18:37–38",
+      "options": [
+        { "id": "a", "text": "Pilatos pergunta se Jesus é rei" },
+        { "id": "b", "text": "Jesus aponta o testemunho da verdade" },
+        { "id": "c", "text": "Pilatos não encontra crime algum" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a fim de dar testemunho da verdade",
+      "feedbackCorrect": "Pilatos pergunta se ele é rei, Jesus fala da verdade, e não há crime.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta de Pilatos. A frase do crime fecha o trecho."
+      },
+      "hint": "A fala sobre a verdade fica no meio.",
+      "learningObjective": "Compreender o movimento da pergunta de Pilatos até a sentença.",
+      "evidence": ["João 18:37–38"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 18:36, o que fariam os ministros se o reino fosse deste mundo?",
+      "verseRef": "João 18:36",
+      "options": [
+        { "id": "a", "text": "apressariam" },
+        { "id": "b", "text": "reuniriam" },
+        { "id": "c", "text": "empenhariam" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "meus ministros se empenhariam",
+      "feedbackCorrect": "Eles se empenhariam, no condicional, para que Jesus não fosse entregue.",
+      "feedbackWrong": {
+        "a": "Apressar não está no texto. O verbo é o esforço para impedir a entrega.",
+        "b": "Reunir não aparece. O verbo mostra o empenho contra a entrega."
+      },
+      "hint": "É o verbo logo depois de ministros se.",
+      "learningObjective": "Lembrar o verbo que o texto põe no condicional.",
+      "evidence": ["João 18:36"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 18:37 a João 10:27?",
+      "verseRef": "João 18:37",
+      "passageA": { "ref": "João 18:37" },
+      "passageB": { "ref": "João 10:27" },
+      "options": [
+        { "id": "a", "text": "Reino imposto pela força" },
+        { "id": "b", "text": "Quem é dele ouve" },
+        { "id": "c", "text": "Pilatos explica a verdade" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ouve a minha voz",
+      "feedbackCorrect": "Nos dois textos, quem é de Jesus ouve a voz dele.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois fala de reino imposto pela força. Os dois falam de ouvir.",
+        "c": "Pilatos não explica a verdade aqui. A ponte é ouvir a voz."
+      },
+      "hint": "Compare o que os dois textos dizem sobre ouvir.",
+      "learningObjective": "Relacionar ouvir a voz de Jesus em João 18 e em João 10.",
+      "evidence": ["João 18:37", "João 10:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 18:36–37, o reinado de Jesus não é deste mundo e existe para o testemunho da verdade.",
+      "verseRef": "João 18:36–37",
+      "correctOptionId": "true",
+      "evidenceSpan": "a fim de dar testemunho da verdade",
+      "feedbackCorrect": "O reino não é daqui, e a vinda de Jesus é para testemunhar a verdade.",
+      "feedbackWrong": {
+        "false": "As duas frases se sustentam: o reino não é daqui, e o alvo é a verdade."
+      },
+      "hint": "Leia o fecho de 18:36 com o propósito dito em 18:37.",
+      "learningObjective": "Interpretar o reinado de Jesus como testemunho da verdade.",
+      "evidence": ["João 18:36–37"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 18:37, toque o que Jesus veio dar ao mundo.",
+      "verseRef": "João 18:37",
+      "options": [
+        { "id": "a", "text": "tu és rei" },
+        { "id": "b", "text": "minha voz" },
+        { "id": "c", "text": "testemunho da verdade" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "dar testemunho da verdade",
+      "feedbackCorrect": "Ele veio dar testemunho da verdade. É isso que a frase aponta.",
+      "feedbackWrong": {
+        "a": "Tu és rei é a pergunta de Pilatos, não o que Jesus veio dar.",
+        "b": "Minha voz é o que se ouve. O que ele veio dar está no a fim de."
+      },
+      "hint": "Olhe o que completa o verbo dar.",
+      "learningObjective": "Sustentar com o texto para que Jesus diz ter vindo.",
+      "evidence": ["João 18:37"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 18:37 sustenta sobre o reinado de Jesus?",
+      "verseRef": "João 18:37",
+      "options": [
+        { "id": "a", "text": "Ele recusa o título e não se diz rei" },
+        { "id": "b", "text": "O reinado dele existe para testemunhar a verdade" },
+        { "id": "c", "text": "O reinado dele é um trono de poder terreno" },
+        { "id": "d", "text": "Só ouve a voz dele quem já sabe tudo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Para isso nasci e para isso vim ao mundo",
+      "feedbackCorrect": "Ele não recusa ser rei: nasceu para dar testemunho da verdade.",
+      "feedbackWrong": {
+        "a": "Tu dizes que eu sou rei não é recusa. Ele explica para que nasceu.",
+        "c": "O texto não descreve um trono daqui. O reinado testemunha a verdade.",
+        "d": "Não há essa condição. Todo o que é da verdade ouve a voz dele."
+      },
+      "hint": "Ligue o sou rei ao propósito que vem em seguida.",
+      "learningObjective": "Escolher a leitura do reinado que o texto sustenta.",
+      "evidence": ["João 18:37"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica de João 18:36–37?",
+      "verseRef": "João 18:36–37",
+      "options": [
+        { "id": "a", "text": "Jesus declara um reino que não é daqui" },
+        { "id": "b", "text": "Ele veio para testemunhar a verdade" },
+        { "id": "c", "text": "Quem é da verdade ouve a voz dele" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Todo o que é da verdade ouve a minha voz",
+      "feedbackCorrect": "A fala vai do reino fora daqui ao testemunho, e então a quem ouve.",
+      "feedbackWrong": {
+        "default": "Siga a fala: primeiro o reino, depois o testemunho, e então quem ouve."
+      },
+      "hint": "O reino abre. Ouvir a voz é o ponto de chegada.",
+      "learningObjective": "Acompanhar a lógica do reino, do testemunho e de quem ouve.",
+      "evidence": ["João 18:36–37"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 18:38, que palavra completa a pergunta de Pilatos antes de ele sair?",
+      "verseRef": "João 18:38",
+      "options": [
+        { "id": "a", "text": "justiça" },
+        { "id": "b", "text": "verdade" },
+        { "id": "c", "text": "culpa" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O que é a verdade?",
+      "feedbackCorrect": "É a palavra que Jesus veio testemunhar e que Pilatos pergunta ao sair.",
+      "feedbackWrong": {
+        "a": "Justiça não é a pergunta. Pilatos usa a palavra do testemunho de Jesus.",
+        "c": "Culpa não está na pergunta. A palavra é a do testemunho que Jesus veio dar."
+      },
+      "hint": "É a palavra da pergunta curta de Pilatos.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": ["João 18:38"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 18:37 a João 14:6?",
+      "verseRef": "João 18:37",
+      "passageA": { "ref": "João 18:37" },
+      "passageB": { "ref": "João 14:6" },
+      "options": [
+        { "id": "a", "text": "Um rei só terreno" },
+        { "id": "b", "text": "Pilatos fecha a questão" },
+        { "id": "c", "text": "Jesus é a verdade" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "dar testemunho da verdade",
+      "feedbackCorrect": "Ele veio testemunhar a verdade, e João 14 diz que ele é a verdade.",
+      "feedbackWrong": {
+        "a": "O reino não é um trono terreno. A ponte entre os textos é a verdade.",
+        "b": "Pilatos não resolve a pergunta. A ligação é quem é a verdade."
+      },
+      "hint": "Compare o tema que os dois textos nomeiam.",
+      "learningObjective": "Ligar o testemunho da verdade em João 18 a Jesus como a verdade.",
+      "evidence": ["João 18:37", "João 14:6"]
+    }
+  ]
+}

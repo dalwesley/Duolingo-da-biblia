@@ -1,0 +1,717 @@
+{
+ "study": {
+  "passageRef": "Romanos 12:9–14",
+  "passages": [
+   {
+    "ref": "Romanos 12:9–14"
+   },
+   {
+    "ref": "Romanos 12:15–18"
+   }
+  ],
+  "context": "Depois de falar da misericórdia de Deus e do corpo de Cristo, Paulo descreve o amor sem hipocrisia no dia a dia da comunidade e diante de todos.",
+  "keyword": "amor",
+  "keywordGloss": "Afeto verdadeiro, sem máscara, que detesta o mal e se apega ao bem.",
+  "focusQuestion": "Onde o seu amor ainda usa máscara?",
+  "reflectionPrompts": [
+   "Sem hipocrisia",
+   "Alegria e choro",
+   "Paz com todos"
+  ],
+  "facts": [
+   {
+    "text": "O amor deve ser sem hipocrisia.",
+    "evidenceRef": "Romanos 12:9",
+    "evidenceSpan": "O amor seja sem hipocrisia"
+   },
+   {
+    "text": "É preciso detestar o mal e apegar-se ao bem.",
+    "evidenceRef": "Romanos 12:9",
+    "evidenceSpan": "Detestem o mal e apeguem-se ao bem"
+   },
+   {
+    "text": "Devem preferir-se em honra uns aos outros.",
+    "evidenceRef": "Romanos 12:10",
+    "evidenceSpan": "preferindo-se em honra uns aos outros"
+   },
+   {
+    "text": "Abençoem os que perseguem; não amaldiçoem.",
+    "evidenceRef": "Romanos 12:14",
+    "evidenceSpan": "Abençoem os que os perseguem; abençoem e não amaldiçoem"
+   },
+   {
+    "text": "Alegrai-vos com os que se alegram e chorai com os que choram.",
+    "evidenceRef": "Romanos 12:15",
+    "evidenceSpan": "Alegrai-vos com os que se alegram e chorai com os que choram"
+   },
+   {
+    "text": "Quanto depender de vocês, vivam em paz com todos.",
+    "evidenceRef": "Romanos 12:18",
+    "evidenceSpan": "quanto depender de vocês, vivam em paz com todos os homens"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "hipocrisia",
+    "gloss": "Máscara: o amor verdadeiro não finge."
+   },
+   {
+    "term": "hospitalidade",
+    "gloss": "Prática concreta de acolher e compartilhar."
+   },
+   {
+    "term": "paz",
+    "gloss": "Busca ativa, quanto depender de vocês, com todos."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Amor verdadeiro contra o mal",
+    "evidenceRef": "Romanos 12:9"
+   },
+   {
+    "label": "Honra, zelo e perseverança",
+    "evidenceRef": "Romanos 12:10–12"
+   },
+   {
+    "label": "Partilha, bênção e empatia",
+    "evidenceRef": "Romanos 12:13–15"
+   },
+   {
+    "label": "Humildade, bem e paz com todos",
+    "evidenceRef": "Romanos 12:16–18"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Detestar o mal e apegar-se ao bem.",
+    "marker": "e",
+    "evidenceRef": "Romanos 12:9"
+   },
+   {
+    "kind": "propósito",
+    "text": "Há esforço para praticar o bem diante de todos.",
+    "marker": "esforcem-se",
+    "evidenceRef": "Romanos 12:17"
+   },
+   {
+    "kind": "resultado",
+    "text": "Se for possível, quanto depender de vocês, há paz com todos.",
+    "marker": "Se",
+    "evidenceRef": "Romanos 12:18"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Pedro 3:9",
+    "bridge": "Não retribuir o mal"
+   },
+   {
+    "ref": "Mateus 5:44",
+    "bridge": "Abençoar quem persegue"
+   },
+   {
+    "ref": "1 João 3:18",
+    "bridge": "Amar de fato e de verdade"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O amor cristão aceita o mal sem detestá-lo.",
+    "why": "12:9 manda detestar o mal e apegar-se ao bem."
+   },
+   {
+    "text": "Diante da perseguição, o certo é amaldiçoar de volta.",
+    "why": "12:14: abençoem e não amaldiçoem."
+   },
+   {
+    "text": "A paz com todos é automática, sem esforço da nossa parte.",
+    "why": "12:18: quanto depender de vocês — há responsabilidade."
+   }
+  ],
+  "centralInsight": "O amor detesta o mal, se alegra com os que se alegram e busca paz com todos.",
+  "anchorQuestion": "Segundo Romanos 12:9, como deve ser o amor?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Romanos 12:14, Paulo manda amaldiçoar os que perseguem.",
+   "verseRef": "Romanos 12:14",
+   "correctOptionId": "false",
+   "evidenceSpan": "abençoem e não amaldiçoem",
+   "feedbackCorrect": "O comando é abençoar, não amaldiçoar.",
+   "feedbackWrong": {
+    "true": "Releia 12:14: abençoem e não amaldiçoem."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Observar a resposta à perseguição.",
+   "evidence": [
+    "Romanos 12:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 12:9, toque o que o amor deve ser.",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "sem hipocrisia"
+    },
+    {
+     "id": "b",
+     "text": "o mal"
+    },
+    {
+     "id": "c",
+     "text": "ao bem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "O amor verdadeiro não usa máscara.",
+   "feedbackWrong": {
+    "b": "O mal é o que se detesta, não o que o amor é.",
+    "c": "Ao bem é o que se apega; a qualidade do amor vem antes."
+   },
+   "hint": "Leia a primeira frase.",
+   "learningObjective": "Identificar a qualidade do amor.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Romanos 12:15, o que fazer com quem se alegra e com quem chora?",
+   "verseRef": "Romanos 12:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Alegrar-se com os que se alegram e chorar com os que choram"
+    },
+    {
+     "id": "b",
+     "text": "Ignorar os dois para não se envolver"
+    },
+    {
+     "id": "c",
+     "text": "Alegrar-se só com os fortes"
+    },
+    {
+     "id": "d",
+     "text": "Chorar também com os que se alegram"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Alegrai-vos com os que se alegram e chorai com os que choram",
+   "feedbackCorrect": "O amor entra na alegria e na dor do outro.",
+   "feedbackWrong": {
+    "b": "O texto manda participar, não ignorar.",
+    "c": "Não há restrição aos fortes.",
+    "d": "A ordem combina alegria com alegria e choro com choro."
+   },
+   "hint": "Leia as duas ações do versículo.",
+   "learningObjective": "Observar a empatia pedida no texto.",
+   "evidence": [
+    "Romanos 12:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 12:9 na ordem do texto.",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "O amor seja sem hipocrisia"
+    },
+    {
+     "id": "b",
+     "text": "Detestem o mal"
+    },
+    {
+     "id": "c",
+     "text": "e apeguem-se ao bem"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "Amor verdadeiro, rejeição do mal e apego ao bem.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor sem hipocrisia."
+   },
+   "hint": "O versículo abre com o amor.",
+   "learningObjective": "Reconhecer a sequência de Romanos 12:9.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Romanos 12:18, vivam em ___ com todos os homens.",
+   "verseRef": "Romanos 12:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "paz"
+    },
+    {
+     "id": "b",
+     "text": "guerra"
+    },
+    {
+     "id": "c",
+     "text": "indiferença"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vivam em paz com todos os homens",
+   "feedbackCorrect": "A meta, quanto depender de vocês, é a paz.",
+   "feedbackWrong": {
+    "b": "Não é guerra; é paz.",
+    "c": "Não é indiferença; é paz."
+   },
+   "hint": "Veja o que se deve viver com todos.",
+   "learningObjective": "Lembrar a meta da convivência.",
+   "evidence": [
+    "Romanos 12:18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Romanos 12:13 comunica que se liga a este contexto?",
+   "verseRef": "Romanos 12:13",
+   "passageA": {
+    "ref": "Romanos 12:13"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O amor concreto compartilha necessidades e pratica hospitalidade."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amor só em palavras"
+    },
+    {
+     "id": "b",
+     "text": "Partilha e hospitalidade"
+    },
+    {
+     "id": "c",
+     "text": "Fechar a porta aos santos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Compartilhem as necessidades dos santos; pratiquem a hospitalidade",
+   "feedbackCorrect": "O amor se mostra em partilha e acolhida.",
+   "feedbackWrong": {
+    "a": "Há práticas concretas, não só palavras.",
+    "c": "O texto manda compartilhar e praticar hospitalidade."
+   },
+   "hint": "Veja as duas práticas do versículo.",
+   "learningObjective": "Ligar o amor à partilha concreta.",
+   "evidence": [
+    "Romanos 12:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Romanos 12:17, Paulo autoriza retribuir o mal pelo mal.",
+   "verseRef": "Romanos 12:17",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não retribuam a ninguém o mal pelo mal",
+   "feedbackCorrect": "A ordem é negativa: não retribuam o mal pelo mal.",
+   "feedbackWrong": {
+    "true": "Releia 12:17: Não retribuam a ninguém o mal pelo mal."
+   },
+   "hint": "Veja a primeira ordem do versículo.",
+   "learningObjective": "Compreender a recusa da retribuição.",
+   "evidence": [
+    "Romanos 12:17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 12:18, toque a palavra que marca a condição da paz.",
+   "verseRef": "Romanos 12:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "Se"
+    },
+    {
+     "id": "b",
+     "text": "paz"
+    },
+    {
+     "id": "c",
+     "text": "todos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se for possível, quanto depender de vocês",
+   "feedbackCorrect": "\"Se\" introduz a condição: quando for possível, façam a parte de vocês.",
+   "feedbackWrong": {
+    "b": "\"Paz\" é a meta; a condição abre o verso.",
+    "c": "\"Todos\" é o alcance; a condição vem antes."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer a condição da busca da paz.",
+   "evidence": [
+    "Romanos 12:18"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Romanos 12:9 se relaciona com Romanos 12:17?",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Detestar o mal inclui não retribuir o mal pelo mal"
+    },
+    {
+     "id": "b",
+     "text": "Detestar o mal autoriza vingar-se"
+    },
+    {
+     "id": "c",
+     "text": "O bem se pratica só entre amigos"
+    },
+    {
+     "id": "d",
+     "text": "A hipocrisia é útil contra inimigos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Detestem o mal e apeguem-se ao bem",
+   "feedbackCorrect": "O amor sem hipocrisia rejeita o mal também na retribuição.",
+   "feedbackWrong": {
+    "b": "12:17 proíbe retribuir o mal.",
+    "c": "12:17 fala do bem diante de todos.",
+    "d": "12:9 rejeita a hipocrisia."
+   },
+   "hint": "Una detestar o mal e não retribuir o mal.",
+   "learningObjective": "Relacionar rejeição do mal e conduta.",
+   "evidence": [
+    "Romanos 12:9",
+    "Romanos 12:17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o amor em Romanos 12:14–15?",
+   "verseRef": "Romanos 12:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Abençoar quem persegue"
+    },
+    {
+     "id": "b",
+     "text": "Não amaldiçoar"
+    },
+    {
+     "id": "c",
+     "text": "Entrar na alegria e no choro do outro"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Abençoem os que os perseguem",
+   "feedbackCorrect": "Bênção, recusa da maldição e empatia.",
+   "feedbackWrong": {
+    "default": "Comece pela bênção; a empatia fecha."
+   },
+   "hint": "Siga a ordem dos versículos 14 e 15.",
+   "learningObjective": "Compreender o movimento do amor.",
+   "evidence": [
+    "Romanos 12:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Romanos 12:10, amem-se com amor ___.",
+   "verseRef": "Romanos 12:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "fraternal"
+    },
+    {
+     "id": "b",
+     "text": "fingido"
+    },
+    {
+     "id": "c",
+     "text": "distante"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com amor fraternal",
+   "feedbackCorrect": "O amor entre irmãos é fraternal e cordial.",
+   "feedbackWrong": {
+    "b": "O contexto rejeita hipocrisia.",
+    "c": "Não é distante; é fraternal."
+   },
+   "hint": "Veja o tipo de amor no versículo.",
+   "learningObjective": "Lembrar o caráter fraternal do amor.",
+   "evidence": [
+    "Romanos 12:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Romanos 12:14 a Mateus 5:44?",
+   "verseRef": "Romanos 12:14",
+   "passageA": {
+    "ref": "Romanos 12:14"
+   },
+   "passageB": {
+    "ref": "Mateus 5:44"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Abençoar quem persegue"
+    },
+    {
+     "id": "b",
+     "text": "Amaldiçoar o inimigo"
+    },
+    {
+     "id": "c",
+     "text": "Ignorar a perseguição"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Abençoem os que os perseguem",
+   "feedbackCorrect": "Paulo ecoa o ensino de Jesus: bênção a quem persegue.",
+   "feedbackWrong": {
+    "b": "Os dois textos rejeitam a maldição.",
+    "c": "Há ação: abençoar."
+   },
+   "hint": "Compare a resposta a quem persegue.",
+   "learningObjective": "Relacionar Romanos 12 e o Sermão do Monte.",
+   "evidence": [
+    "Romanos 12:14",
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Romanos 12:9–18 apresenta o amor cristão como verdadeiro, sem hipocrisia, com práticas concretas.",
+   "verseRef": "Romanos 12:9",
+   "correctOptionId": "true",
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "O texto começa rejeitando a máscara e pede práticas concretas.",
+   "feedbackWrong": {
+    "false": "Releia 12:9: o amor seja sem hipocrisia."
+   },
+   "hint": "Veja a primeira exigência sobre o amor.",
+   "learningObjective": "Interpretar o amor sem hipocrisia.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 12:17, toque o trecho que mostra o esforço pelo bem.",
+   "verseRef": "Romanos 12:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "esforcem-se"
+    },
+    {
+     "id": "b",
+     "text": "ninguém"
+    },
+    {
+     "id": "c",
+     "text": "mal pelo mal"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "esforcem-se para praticar o bem diante de todos os homens",
+   "feedbackCorrect": "Há esforço ativo para o bem diante de todos.",
+   "feedbackWrong": {
+    "b": "\"Ninguém\" está na proibição da retribuição.",
+    "c": "\"Mal pelo mal\" é o que se rejeita."
+   },
+   "hint": "Procure o verbo de esforço.",
+   "learningObjective": "Sustentar com o texto o esforço pelo bem.",
+   "evidence": [
+    "Romanos 12:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Romanos 12:9–18 sustenta sobre o amor?",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "É verdadeiro, rejeita o mal e busca paz concreta"
+    },
+    {
+     "id": "b",
+     "text": "Aceita o mal para parecer gentil"
+    },
+    {
+     "id": "c",
+     "text": "Só vale dentro da família biológica"
+    },
+    {
+     "id": "d",
+     "text": "Dispensa hospitalidade e partilha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O amor seja sem hipocrisia. Detestem o mal",
+   "feedbackCorrect": "Sem máscara, contra o mal e a favor da paz: o fio do trecho.",
+   "feedbackWrong": {
+    "b": "12:9 manda detestar o mal.",
+    "c": "Há paz com todos e hospitalidade.",
+    "d": "12:13 manda partilhar e praticar hospitalidade."
+   },
+   "hint": "Una 12:9, 12:13 e 12:18.",
+   "learningObjective": "Escolher a leitura sustentável do amor.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do amor em Romanos 12?",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Amor sem hipocrisia detesta o mal"
+    },
+    {
+     "id": "b",
+     "text": "Partilha, bênção e empatia práticas"
+    },
+    {
+     "id": "c",
+     "text": "Busca de paz com todos, quanto depender de vocês"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "Coração verdadeiro, práticas e paz: o caminho do texto.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor sem máscara; a paz fecha."
+   },
+   "hint": "Siga 12:9 → 12:13–15 → 12:18.",
+   "learningObjective": "Ver o encadeamento do amor.",
+   "evidence": [
+    "Romanos 12:9",
+    "Romanos 12:15",
+    "Romanos 12:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Romanos 12:9, o amor seja sem ___.",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "hipocrisia"
+    },
+    {
+     "id": "b",
+     "text": "alegria"
+    },
+    {
+     "id": "c",
+     "text": "honra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "O termo carrega a exigência de autenticidade.",
+   "feedbackWrong": {
+    "b": "A alegria aparece depois; aqui é sem hipocrisia.",
+    "c": "A honra aparece em 12:10; aqui é hipocrisia."
+   },
+   "hint": "Veja o que o amor não pode ter.",
+   "learningObjective": "Lembrar o termo da autenticidade.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Romanos 12:17 a 1 Pedro 3:9?",
+   "verseRef": "Romanos 12:17",
+   "passageA": {
+    "ref": "Romanos 12:17"
+   },
+   "passageB": {
+    "ref": "1 Pedro 3:9"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Não retribuir o mal"
+    },
+    {
+     "id": "b",
+     "text": "Vingar-se com justiça"
+    },
+    {
+     "id": "c",
+     "text": "Ignorar o bem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não retribuam a ninguém o mal pelo mal",
+   "feedbackCorrect": "Os dois textos cortam a cadeia da vingança.",
+   "feedbackWrong": {
+    "b": "Ambos rejeitam retribuir o mal.",
+    "c": "Paulo manda esforçar-se pelo bem."
+   },
+   "hint": "Compare a proibição da retribuição.",
+   "learningObjective": "Ligar a recusa da vingança em Paulo e Pedro.",
+   "evidence": [
+    "Romanos 12:17",
+    "1 Pedro 3:9"
+   ]
+  }
+ ]
+}

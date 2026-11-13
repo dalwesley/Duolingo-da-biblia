@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Cantares 1:9–14",
+    "passages": [
+      { "ref": "Cantares 1:9–14" },
+      { "ref": "Cantares 1:15–17" }
+    ],
+    "context": "No Cântico, o amado e a amada se olham e se nomeiam. A cena abre com elogio, perfume e a casa compartilhada.",
+    "keyword": "formosa",
+    "keywordGloss": "Beleza reconhecida e dita em voz alta: o amor não esconde o elogio.",
+    "focusQuestion": "Quem você precisa elogiar com verdade e sem pressa suja?",
+    "reflectionPrompts": [
+      "Nomear a beleza",
+      "Perfume do encontro",
+      "Casa compartilhada"
+    ],
+    "facts": [
+      {
+        "text": "O amado compara a querida às éguas dos carros de Faraó.",
+        "evidenceRef": "Cantares 1:9",
+        "evidenceSpan": "Comparo-te, ó querida minha, às éguas dos carros de Faraó"
+      },
+      {
+        "text": "As faces dela são formosas entre os enfeites, e o pescoço, com os colares.",
+        "evidenceRef": "Cantares 1:10",
+        "evidenceSpan": "Formosas são as tuas faces entre os teus enfeites"
+      },
+      {
+        "text": "Enquanto o rei está à mesa, o nardo dela exala perfume.",
+        "evidenceRef": "Cantares 1:12",
+        "evidenceSpan": "o meu nardo exala o seu perfume"
+      },
+      {
+        "text": "O amado é para ela um saquitel de mirra.",
+        "evidenceRef": "Cantares 1:13",
+        "evidenceSpan": "O meu amado é para mim um saquitel de mirra"
+      },
+      {
+        "text": "Ele diz duas vezes que ela é formosa; os olhos dela são como os das pombas.",
+        "evidenceRef": "Cantares 1:15",
+        "evidenceSpan": "Eis que tu és formosa, ó querida minha, eis que tu és formosa"
+      },
+      {
+        "text": "As vigas da casa são de cedro e os caibros de cipreste.",
+        "evidenceRef": "Cantares 1:17",
+        "evidenceSpan": "As vigas da nossa casa são de cedro, e os seus caibros, de cipreste"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "formosa",
+        "gloss": "A beleza da amada dita em voz alta, sem vergonha."
+      },
+      {
+        "term": "amado",
+        "gloss": "O parceiro nomeado com carinho e comparado a mirra e hena."
+      },
+      {
+        "term": "nardo",
+        "gloss": "Perfume que marca a presença dela enquanto o rei está à mesa."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amado elogia a querida com imagem real",
+        "evidenceRef": "Cantares 1:9–11"
+      },
+      {
+        "label": "Ela responde com perfume e memória do amado",
+        "evidenceRef": "Cantares 1:12–14"
+      },
+      {
+        "label": "Os dois se dizem formosos um ao outro",
+        "evidenceRef": "Cantares 1:15–16"
+      },
+      {
+        "label": "A casa compartilhada aparece em cedro e cipreste",
+        "evidenceRef": "Cantares 1:17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Enquanto o rei está à mesa, o nardo dela exala perfume.",
+        "marker": "Enquanto",
+        "evidenceRef": "Cantares 1:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "O elogio repetido (\"eis que tu és formosa\") firma o olhar do amor.",
+        "marker": null,
+        "evidenceRef": "Cantares 1:15"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ele a chama formosa; ela o chama formoso e amável: o elogio é mútuo.",
+        "marker": null,
+        "evidenceRef": "Cantares 1:15–16"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Efésios 5:25", "bridge": "Amor que cuida e entrega" },
+      { "ref": "Gênesis 2:23", "bridge": "Nomear o outro com alegria" },
+      { "ref": "Provérbios 5:18", "bridge": "Alegrar-se com o amor da aliança" }
+    ],
+    "misreadings": [
+      {
+        "text": "Elogiar a beleza do outro é vaidade ou pecado.",
+        "why": "O texto celebra o elogio mútuo e santo dentro do amor."
+      },
+      {
+        "text": "O Cântico só fala de desejo bruto, sem cuidado nem palavra.",
+        "why": "A cena é cheia de nomeação cuidadosa: querida, formosa, amado."
+      },
+      {
+        "text": "O amor aqui é só privado e escondido, sem casa compartilhada.",
+        "why": "1:17 fala da casa deles, com vigas de cedro."
+      }
+    ],
+    "centralInsight": "O amor santo nomeia a beleza do outro sem vergonha e sem pressa suja.",
+    "anchorQuestion": "Em Cantares 1:15, o que o amado diz duas vezes sobre a querida?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 1:15, o amado diz duas vezes que a querida é formosa.",
+      "verseRef": "Cantares 1:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha, eis que tu és formosa",
+      "feedbackCorrect": "O elogio vem repetido: ela é formosa, e ele o diz duas vezes.",
+      "feedbackWrong": {
+        "false": "Releia 1:15: o elogio \"tu és formosa\" aparece duas vezes."
+      },
+      "hint": "Conte quantas vezes aparece \"tu és formosa\".",
+      "learningObjective": "Observar o elogio repetido à amada.",
+      "evidence": ["Cantares 1:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 1:13, toque o que o amado é para ela.",
+      "verseRef": "Cantares 1:13",
+      "options": [
+        { "id": "a", "text": "saquitel de mirra" },
+        { "id": "b", "text": "meu amado" },
+        { "id": "c", "text": "entre os" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um saquitel de mirra",
+      "feedbackCorrect": "Para ela, o amado é um saquitel de mirra.",
+      "feedbackWrong": {
+        "b": "\"Meu amado\" nomeia quem ele é; a imagem está depois.",
+        "c": "Isso só liga a frase; a imagem do amado é outra."
+      },
+      "hint": "Procure a imagem depois de \"para mim\".",
+      "learningObjective": "Identificar a imagem do amado como mirra.",
+      "evidence": ["Cantares 1:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 1:12, o que acontece enquanto o rei está à mesa?",
+      "verseRef": "Cantares 1:12",
+      "options": [
+        { "id": "a", "text": "O nardo dela exala perfume" },
+        { "id": "b", "text": "Ela foge do encontro" },
+        { "id": "c", "text": "O rei fecha a casa" },
+        { "id": "d", "text": "As vigas caem sozinhas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o meu nardo exala o seu perfume",
+      "feedbackCorrect": "Enquanto o rei está à mesa, o nardo dela exala perfume.",
+      "feedbackWrong": {
+        "b": "O texto não fala de fuga; fala de perfume.",
+        "c": "Não há fechamento da casa neste versículo.",
+        "d": "As vigas aparecem em 1:17, não aqui."
+      },
+      "hint": "Veja o que o nardo faz no versículo.",
+      "learningObjective": "Reconhecer o perfume no momento da mesa.",
+      "evidence": ["Cantares 1:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 1:15 na ordem do texto.",
+      "verseRef": "Cantares 1:15",
+      "options": [
+        { "id": "a", "text": "Eis que tu és formosa, ó querida minha" },
+        { "id": "b", "text": "eis que tu és formosa" },
+        { "id": "c", "text": "os teus olhos são como os das pombas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha, eis que tu és formosa; os teus olhos são como os das pombas",
+      "feedbackCorrect": "Primeiro o elogio com o vocativo; depois a repetição; por fim os olhos.",
+      "feedbackWrong": {
+        "default": "Comece pelo primeiro \"Eis que tu és formosa\"; os olhos vêm no fim."
+      },
+      "hint": "Siga a ordem: elogio, repetição, olhos.",
+      "learningObjective": "Seguir a ordem literal do elogio.",
+      "evidence": ["Cantares 1:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 1:17, de que madeira são as vigas da casa?",
+      "verseRef": "Cantares 1:17",
+      "options": [
+        { "id": "a", "text": "cedro" },
+        { "id": "b", "text": "carvalho" },
+        { "id": "c", "text": "pinho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As vigas da nossa casa são de cedro",
+      "feedbackCorrect": "As vigas da casa compartilhada são de cedro.",
+      "feedbackWrong": {
+        "b": "O texto não fala de carvalho: fala de cedro.",
+        "c": "Não é pinho: as vigas são de cedro."
+      },
+      "hint": "Veja a madeira nomeada no começo do versículo.",
+      "learningObjective": "Lembrar a madeira das vigas da casa.",
+      "evidence": ["Cantares 1:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 1:15 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 1:15",
+      "passageA": { "ref": "Cantares 1:15" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amado e a amada se olham e se nomeiam sem vergonha."
+      },
+      "options": [
+        { "id": "a", "text": "Elogio aberto da beleza" },
+        { "id": "b", "text": "Silêncio forçado no encontro" },
+        { "id": "c", "text": "Vergonha de nomear o outro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha",
+      "feedbackCorrect": "O contexto de nomeação aparece no elogio aberto: ela é formosa.",
+      "feedbackWrong": {
+        "b": "O versículo é cheio de palavras, não de silêncio.",
+        "c": "O texto faz o oposto: nomeia com alegria."
+      },
+      "hint": "Veja o que ele diz em voz alta sobre ela.",
+      "learningObjective": "Ligar o contexto do encontro ao elogio aberto.",
+      "evidence": ["Cantares 1:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 1:12, o perfume do nardo aparece enquanto o rei está à mesa.",
+      "verseRef": "Cantares 1:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Enquanto o rei se encontra à sua mesa, o meu nardo exala o seu perfume",
+      "feedbackCorrect": "O \"enquanto\" liga o momento da mesa ao perfume que exala.",
+      "feedbackWrong": {
+        "false": "Releia: o nardo exala enquanto o rei está à mesa."
+      },
+      "hint": "Olhe a palavra que abre o versículo.",
+      "learningObjective": "Ver a relação temporal entre mesa e perfume.",
+      "evidence": ["Cantares 1:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 1:12, toque a palavra que marca o tempo do perfume.",
+      "verseRef": "Cantares 1:12",
+      "options": [
+        { "id": "a", "text": "Enquanto" },
+        { "id": "b", "text": "perfume" },
+        { "id": "c", "text": "mesa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enquanto o rei se encontra à sua mesa",
+      "feedbackCorrect": "\"Enquanto\" marca a relação de tempo: mesa e perfume juntos.",
+      "feedbackWrong": {
+        "b": "Perfume é o que acontece; a marca de tempo é outra.",
+        "c": "Mesa é o cenário; a palavra de tempo está no início."
+      },
+      "hint": "Comece pela primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de sequência temporal.",
+      "evidence": ["Cantares 1:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 1:15–16 mostra entre os dois?",
+      "verseRef": "Cantares 1:15–16",
+      "options": [
+        { "id": "a", "text": "O elogio da beleza é mútuo" },
+        { "id": "b", "text": "Só ela recebe elogio, nunca ele" },
+        { "id": "c", "text": "Eles evitam nomear um ao outro" },
+        { "id": "d", "text": "O encontro acontece sem qualquer palavra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que és formoso e amável, ó meu amado",
+      "feedbackCorrect": "Ele a chama formosa; ela o chama formoso e amável.",
+      "feedbackWrong": {
+        "b": "Em 1:16 ela também elogia o amado.",
+        "c": "Os versículos estão cheios de vocativos e elogios.",
+        "d": "Há palavras claras de um para o outro."
+      },
+      "hint": "Compare o que ele diz em 1:15 com o que ela diz em 1:16.",
+      "learningObjective": "Relacionar os elogios mútuos do casal.",
+      "evidence": ["Cantares 1:15–16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 1:9–17.",
+      "verseRef": "Cantares 1:15–16",
+      "options": [
+        { "id": "a", "text": "O amado elogia a querida com imagem real" },
+        { "id": "b", "text": "Ela responde com perfume e memória do amado" },
+        { "id": "c", "text": "Os dois se dizem formosos um ao outro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha",
+      "feedbackCorrect": "Primeiro o elogio dele; depois a resposta dela; por fim o elogio mútuo.",
+      "feedbackWrong": {
+        "default": "Comece pelo elogio inicial dele; o elogio mútuo vem depois."
+      },
+      "hint": "Siga a ordem da cena: elogio, resposta, troca.",
+      "learningObjective": "Ordenar a estrutura do diálogo de amor.",
+      "evidence": ["Cantares 1:9–16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 1:12, o que exala perfume enquanto o rei está à mesa?",
+      "verseRef": "Cantares 1:12",
+      "options": [
+        { "id": "a", "text": "nardo" },
+        { "id": "b", "text": "incenso" },
+        { "id": "c", "text": "vinho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o meu nardo exala o seu perfume",
+      "feedbackCorrect": "É o nardo que exala perfume no momento da mesa.",
+      "feedbackWrong": {
+        "b": "O versículo nomeia o nardo, e não o incenso.",
+        "c": "O texto não fala de vinho neste versículo."
+      },
+      "hint": "Veja o que exala o perfume no versículo.",
+      "learningObjective": "Lembrar o perfume que marca o encontro.",
+      "evidence": ["Cantares 1:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 1:15 a Gênesis 2:23?",
+      "verseRef": "Cantares 1:15",
+      "passageA": { "ref": "Cantares 1:15" },
+      "passageB": { "ref": "Gênesis 2:23" },
+      "options": [
+        { "id": "a", "text": "Nomear o outro com alegria" },
+        { "id": "b", "text": "Esconder o outro em silêncio" },
+        { "id": "c", "text": "Negar a beleza do encontro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha",
+      "feedbackCorrect": "Nos dois textos, o amor nomeia o outro com alegria.",
+      "feedbackWrong": {
+        "b": "Os textos fazem o oposto: falam e nomeiam.",
+        "c": "O Cântico afirma a beleza; não a nega."
+      },
+      "hint": "Compare o ato de dizer quem o outro é.",
+      "learningObjective": "Ligar o elogio do Cântico ao nomear de Gênesis.",
+      "evidence": ["Cantares 1:15", "Gênesis 2:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 1:15–16 ensina que elogiar a beleza do outro é vaidade pecaminosa.",
+      "verseRef": "Cantares 1:15–16",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha",
+      "feedbackCorrect": "O texto celebra o elogio mútuo; não trata o elogio como pecado.",
+      "feedbackWrong": {
+        "true": "O trecho faz o oposto: celebra o elogio aberto e mútuo."
+      },
+      "hint": "Veja o tom do que eles dizem um ao outro.",
+      "learningObjective": "Rejeitar a leitura que condena o elogio santo.",
+      "evidence": ["Cantares 1:15–16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 1:17, toque o trecho que sustenta a casa compartilhada.",
+      "verseRef": "Cantares 1:17",
+      "options": [
+        { "id": "a", "text": "nossa casa" },
+        { "id": "b", "text": "cipreste" },
+        { "id": "c", "text": "seus caibros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As vigas da nossa casa são de cedro",
+      "feedbackCorrect": "\"Nossa casa\" mostra o espaço compartilhado do amor.",
+      "feedbackWrong": {
+        "b": "Cipreste é material; a partilha está em \"nossa casa\".",
+        "c": "Caibros descrevem a estrutura; a partilha está em \"nossa\"."
+      },
+      "hint": "Procure a palavra que mostra a quem a casa pertence.",
+      "learningObjective": "Sustentar com o texto a casa compartilhada.",
+      "evidence": ["Cantares 1:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 1:9–17 sustenta sobre o amor?",
+      "verseRef": "Cantares 1:15–16",
+      "options": [
+        { "id": "a", "text": "O amor santo nomeia a beleza sem vergonha" },
+        { "id": "b", "text": "O amor verdadeiro nunca usa palavras de elogio" },
+        { "id": "c", "text": "O encontro deve ficar só no desejo sem nome" },
+        { "id": "d", "text": "A beleza do outro deve ser escondida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha",
+      "feedbackCorrect": "A cena é cheia de nomeação cuidadosa e elogio aberto.",
+      "feedbackWrong": {
+        "b": "O texto está cheio de elogios falados.",
+        "c": "Eles nomeiam um ao outro com clareza.",
+        "d": "O amado e a amada dizem a beleza em voz alta."
+      },
+      "hint": "Una o elogio de 1:15–16 com o tom da cena.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Cantares 1:15–16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do elogio à casa?",
+      "verseRef": "Cantares 1:16–17",
+      "options": [
+        { "id": "a", "text": "O amado nomeia a beleza dela" },
+        { "id": "b", "text": "Ela responde chamando-o formoso" },
+        { "id": "c", "text": "Aparece a casa que os dois compartilham" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "As vigas da nossa casa são de cedro",
+      "feedbackCorrect": "Do elogio mútuo o texto chega à casa compartilhada.",
+      "feedbackWrong": {
+        "default": "Comece pelo elogio dele; a casa vem depois da resposta dela."
+      },
+      "hint": "Siga de 1:15 a 1:17.",
+      "learningObjective": "Ver o encadeamento do elogio até a casa.",
+      "evidence": ["Cantares 1:15–17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 1:15, que termo carrega o elogio central à amada?",
+      "verseRef": "Cantares 1:15",
+      "options": [
+        { "id": "a", "text": "formosa" },
+        { "id": "b", "text": "triste" },
+        { "id": "c", "text": "oculta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tu és formosa",
+      "feedbackCorrect": "\"Formosa\" é o termo que carrega o elogio repetido.",
+      "feedbackWrong": {
+        "b": "O texto não a chama triste.",
+        "c": "O elogio é aberto, não oculto."
+      },
+      "hint": "Veja o adjetivo repetido no versículo.",
+      "learningObjective": "Lembrar o termo teológico-afetivo do elogio.",
+      "evidence": ["Cantares 1:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 1:16 a Provérbios 5:18?",
+      "verseRef": "Cantares 1:16",
+      "passageA": { "ref": "Cantares 1:16" },
+      "passageB": { "ref": "Provérbios 5:18" },
+      "options": [
+        { "id": "a", "text": "Alegria no amor da aliança" },
+        { "id": "b", "text": "Fuga de toda proximidade" },
+        { "id": "c", "text": "Silêncio obrigatório no casal" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que és formoso e amável, ó meu amado",
+      "feedbackCorrect": "Os dois textos celebram a alegria no amor da aliança.",
+      "feedbackWrong": {
+        "b": "Os textos apontam proximidade, não fuga.",
+        "c": "Há palavras de alegria, não silêncio forçado."
+      },
+      "hint": "Compare o tom de alegria com o amado.",
+      "learningObjective": "Ligar o Cântico ao ensino de alegrar-se no amor.",
+      "evidence": ["Cantares 1:16", "Provérbios 5:18"]
+    }
+  ]
+}

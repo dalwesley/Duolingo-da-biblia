@@ -102,10 +102,13 @@ Future<void> showTrailGiftSheet(BuildContext context, Trail trail) async {
       : currentTitle != null
       ? l10n.trailGiftSheetSwap(currentTitle)
       : l10n.trailGiftSheetBody;
+  final sheetText = used
+      ? description
+      : '$description\n\n${l10n.referralInviteLine}';
   await showPathPreviewSheet(
     context,
     title: trail.localizedTitle,
-    description: description,
+    description: sheetText,
     art: TrailArt.of(trail.slug),
     eyebrow: l10n.trailGiftEyebrow,
     accent: AppRoles.reward,

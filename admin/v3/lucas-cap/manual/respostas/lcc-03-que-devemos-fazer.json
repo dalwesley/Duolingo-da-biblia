@@ -1,0 +1,493 @@
+{
+  "study": {
+    "passageRef": "Lucas 3:10–14",
+    "passages": [
+      { "ref": "Lucas 3:10–14" },
+      { "ref": "Lucas 3:7–9" }
+    ],
+    "context": "João Batista fala às multidões que saíam para o batismo. Ele anuncia a ira que se aproxima e pede fruto, não apenas o nome de Abraão. Multidão, publicanos e soldados passam a perguntar o que devem fazer.",
+    "keyword": "frutos",
+    "keywordGloss": "No texto, fruto é o sinal de arrependimento que sai da frase e aparece no gesto.",
+    "focusQuestion": "Onde você ainda precisa transformar o arrependimento em um gesto concreto?",
+    "reflectionPrompts": [
+      "Fruto no cotidiano",
+      "Repartir o extra",
+      "Limite no ofício"
+    ],
+    "facts": [
+      {
+        "text": "João fala às multidões que saíam para ser batizadas.",
+        "evidenceRef": "Lucas 3:7",
+        "evidenceSpan": "João dizia às multidões que saíam para ser batizadas"
+      },
+      {
+        "text": "João manda produzir frutos dignos de arrependimento.",
+        "evidenceRef": "Lucas 3:8",
+        "evidenceSpan": "Produzam frutos dignos de arrependimento"
+      },
+      {
+        "text": "A árvore que não produz bom fruto será cortada e lançada ao fogo.",
+        "evidenceRef": "Lucas 3:9",
+        "evidenceSpan": "que não produz bom fruto será cortada e lançada ao fogo"
+      },
+      {
+        "text": "Quem tem duas túnicas deve compartilhar com quem não tem.",
+        "evidenceRef": "Lucas 3:11",
+        "evidenceSpan": "Aquele que tiver duas túnicas, compartilhe com quem não tem"
+      },
+      {
+        "text": "João diz aos publicanos para não exigirem além do que foi estabelecido.",
+        "evidenceRef": "Lucas 3:13",
+        "evidenceSpan": "Não exijam além do que foi estabelecido."
+      },
+      {
+        "text": "João manda os soldados não maltratarem, não extorquirem e se contentarem com o salário.",
+        "evidenceRef": "Lucas 3:14",
+        "evidenceSpan": "A ninguém maltrateis, nem extorquais, mas contentai-vos com o salário de vocês."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "arrependimento",
+        "gloss": "A virada que João exige, visível em fruto, não só numa frase sobre a origem."
+      },
+      {
+        "term": "compartilhe",
+        "gloss": "O verbo do fruto para a multidão: quem tem a mais reparte com quem não tem."
+      },
+      {
+        "term": "estabelecido",
+        "gloss": "O teto do cobro: os publicanos não devem exigir além do que já foi fixado."
+      }
+    ],
+    "structure": [
+      {
+        "label": "João exige fruto e alerta sobre o corte",
+        "evidenceRef": "Lucas 3:7–9"
+      },
+      {
+        "label": "A multidão aprende a repartir o que tem",
+        "evidenceRef": "Lucas 3:10–11"
+      },
+      {
+        "label": "Publicanos e soldados recebem limites justos",
+        "evidenceRef": "Lucas 3:12–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "João barra a frase sobre ter Abraão por pai, pois Deus pode suscitar filhos até das pedras.",
+        "marker": "pois",
+        "evidenceRef": "Lucas 3:8"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do alerta, a multidão pergunta o que deve, então, fazer.",
+        "marker": "então",
+        "evidenceRef": "Lucas 3:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os soldados não devem maltratar nem extorquir, mas contentar-se com o salário.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 3:14"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 58:7", "bridge": "Repartir pão e roupa" },
+      { "ref": "Lucas 19:8", "bridge": "Restituir o cobro indevido" },
+      { "ref": "Mateus 3:8", "bridge": "Mesmo apelo ao fruto" }
+    ],
+    "misreadings": [
+      {
+        "text": "Ter Abraão por pai já livra da ira, mesmo sem fruto.",
+        "why": "João manda não começar a dizer isso e pede frutos dignos. Deus pode suscitar filhos até das pedras."
+      },
+      {
+        "text": "O arrependimento fica na intenção e não precisa mudar o trato com as pessoas.",
+        "why": "João responde com atos: compartilhar túnica e alimento, não exigir além do marcado e não extorquir."
+      },
+      {
+        "text": "Publicanos e soldados precisam abandonar o ofício para se arrepender.",
+        "why": "João não pede demissão. Pede não exigir além do estabelecido, não maltratar, não extorquir e viver do salário."
+      }
+    ],
+    "centralInsight": "O arrependimento aparece no dia a dia: repartir, ser honesto, não explorar.",
+    "anchorQuestion": "O que João pediu a quem tinha duas túnicas, aos publicanos e aos soldados?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 3:12, alguns publicanos chegaram para o batismo e perguntaram a João o que fazer.",
+      "verseRef": "Lucas 3:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Chegaram também alguns publicanos para serem batizados e perguntaram-lhe: Mestre, o que devemos fazer?",
+      "feedbackCorrect": "Eles chegam para o batismo e, no mesmo versículo, perguntam o que devem fazer.",
+      "feedbackWrong": {
+        "false": "Lucas 3:12 une as duas coisas: a vinda ao batismo e a pergunta sobre o que fazer."
+      },
+      "hint": "Veja quem chega e o que essa gente pergunta a João.",
+      "learningObjective": "Reconhecer que os publicanos vieram ao batismo e perguntaram o que fazer.",
+      "evidence": ["Lucas 3:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 3:11, toque o item que está em dobro.",
+      "verseRef": "Lucas 3:11",
+      "options": [
+        { "id": "a", "text": "alimento" },
+        { "id": "b", "text": "duas túnicas" },
+        { "id": "c", "text": "faça o mesmo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "duas túnicas",
+      "feedbackCorrect": "Quem tem duas reparte a túnica. O alimento entra na frase seguinte, sem número dobrado.",
+      "feedbackWrong": {
+        "a": "O alimento também se reparte, mas o texto não diz que ele está em dobro.",
+        "c": "Essa frase estende a ordem ao alimento. O item em dobro é a túnica."
+      },
+      "hint": "Olhe o objeto citado no começo do versículo.",
+      "learningObjective": "Identificar o item em dobro que deve ser repartido.",
+      "evidence": ["Lucas 3:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 3:13, o que João disse aos publicanos?",
+      "verseRef": "Lucas 3:13",
+      "options": [
+        { "id": "a", "text": "Não exigir além do que já estava marcado" },
+        { "id": "b", "text": "Devolver quatro vezes o que tinham cobrado" },
+        { "id": "c", "text": "Deixar o ofício e seguir João no deserto" },
+        { "id": "d", "text": "Cobrar um pouco mais e repartir com os pobres" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não exijam além do que foi estabelecido.",
+      "feedbackCorrect": "João não manda sair do ofício. Manda não exigir além do que já estava marcado.",
+      "feedbackWrong": {
+        "b": "O texto não fala em devolver quatro vezes. Fala em não exigir além.",
+        "c": "João não manda deixar o ofício. A resposta fica dentro do trabalho de cobrar.",
+        "d": "O limite é não passar do marcado, não cobrar um extra para repartir."
+      },
+      "hint": "Leia a frase curta que João diz aos publicanos.",
+      "learningObjective": "Reconhecer o limite que João põe ao cobro dos publicanos.",
+      "evidence": ["Lucas 3:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 3:9 na ordem do texto.",
+      "verseRef": "Lucas 3:9",
+      "options": [
+        { "id": "a", "text": "Já está colocado o machado à raiz das árvores" },
+        { "id": "b", "text": "toda árvore, pois, que não produz bom fruto" },
+        { "id": "c", "text": "será cortada e lançada ao fogo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Já está colocado o machado à raiz das árvores",
+      "feedbackCorrect": "O versículo vai do machado na raiz ao fruto e, no fim, ao corte no fogo.",
+      "feedbackWrong": {
+        "default": "Comece pelo machado já posto na raiz. O fogo fecha o versículo."
+      },
+      "hint": "A primeira frase fala do machado. O fogo vem no fim.",
+      "learningObjective": "Reconhecer a sequência do aviso sobre o machado e o fruto.",
+      "evidence": ["Lucas 3:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 3:14, com o que os soldados devem contentar-se?",
+      "verseRef": "Lucas 3:14",
+      "options": [
+        { "id": "a", "text": "ordenado" },
+        { "id": "b", "text": "soldo" },
+        { "id": "c", "text": "salário" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "contentai-vos com o salário de vocês",
+      "feedbackCorrect": "João não tira a paga. Manda os soldados viverem do salário, sem abuso.",
+      "feedbackWrong": {
+        "a": "Ordenado é ideia próxima, mas o versículo nomeia o salário.",
+        "b": "Soldo é sinônimo, mas a palavra do texto é salário."
+      },
+      "hint": "Olhe com o que eles devem contentar-se, no fim da fala.",
+      "learningObjective": "Lembrar com o que os soldados devem contentar-se.",
+      "evidence": ["Lucas 3:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 3:8 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 3:8",
+      "passageA": { "ref": "Lucas 3:8" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ter Abraão por pai não substitui o fruto que João exige."
+      },
+      "options": [
+        { "id": "a", "text": "Ira sem qualquer aviso" },
+        { "id": "b", "text": "Fruto acima da origem" },
+        { "id": "c", "text": "Pedras no lugar do povo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Produzam frutos dignos de arrependimento",
+      "feedbackCorrect": "João pede fruto e barra a frase sobre ter Abraão por pai.",
+      "feedbackWrong": {
+        "a": "A ira é o alerta. O vínculo aqui é o fruto diante da origem.",
+        "c": "As pedras mostram que Deus não depende da origem. O pedido segue sendo o fruto."
+      },
+      "hint": "Compare o pedido de fruto com a frase sobre Abraão.",
+      "learningObjective": "Ligar Lucas 3:8 ao fato de que a origem não substitui o fruto.",
+      "evidence": ["Lucas 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 3:14, João manda os soldados deixarem o ofício e o salário.",
+      "verseRef": "Lucas 3:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas contentai-vos com o salário de vocês",
+      "feedbackCorrect": "O contraste pede outro rumo: sem maltratar nem extorquir, vivendo do próprio salário.",
+      "feedbackWrong": {
+        "true": "João não pede demissão. Pede não maltratar, não extorquir e permanecer no salário."
+      },
+      "hint": "Repare no contraste que fecha a resposta aos soldados.",
+      "learningObjective": "Compreender que o contraste não pede saída do ofício.",
+      "evidence": ["Lucas 3:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 3:10, toque a palavra que liga o alerta à pergunta da multidão.",
+      "verseRef": "Lucas 3:10",
+      "options": [
+        { "id": "a", "text": "multidão" },
+        { "id": "b", "text": "fazer" },
+        { "id": "c", "text": "então" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "então",
+      "feedbackCorrect": "'Então' amarra a pergunta ao alerta: diante dele, o que fazer agora.",
+      "feedbackWrong": {
+        "a": "A palavra multidão diz quem pergunta, não o elo com o alerta.",
+        "b": "Fazer é o verbo da pergunta, não o elo com o aviso anterior."
+      },
+      "hint": "Procure a palavra curta entre vírgulas, dentro da pergunta.",
+      "learningObjective": "Reconhecer a palavra que liga o alerta à pergunta.",
+      "evidence": ["Lucas 3:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação a pergunta de Lucas 3:10 tem com o aviso de João?",
+      "verseRef": "Lucas 3:9–10",
+      "options": [
+        { "id": "a", "text": "A pergunta segue o aviso e pede um passo concreto" },
+        { "id": "b", "text": "A multidão recusa o aviso e pede outro batismo" },
+        { "id": "c", "text": "A pergunta troca o fruto por regra de sacerdotes" },
+        { "id": "d", "text": "A fala encerra a cena antes de qualquer resposta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O que devemos, então, fazer?",
+      "feedbackCorrect": "A palavrinha no meio da pergunta marca a sequência: o aviso pede um passo.",
+      "feedbackWrong": {
+        "b": "A multidão não recusa o aviso. Ela pergunta o que deve fazer.",
+        "c": "Não há regra de sacerdotes. A pergunta pede um caminho prático.",
+        "d": "A fala não encerra a cena. João responde em seguida."
+      },
+      "hint": "Observe a palavra que une o aviso à pergunta da multidão.",
+      "learningObjective": "Relacionar a pergunta da multidão ao aviso anterior.",
+      "evidence": ["Lucas 3:9–10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Em que ordem se movem os três blocos desta cena?",
+      "verseRef": "Lucas 3:7–8",
+      "options": [
+        { "id": "a", "text": "João exige fruto e alerta sobre o corte" },
+        { "id": "b", "text": "A multidão aprende a repartir o que tem" },
+        { "id": "c", "text": "Publicanos e soldados recebem limites justos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Produzam frutos dignos de arrependimento",
+      "feedbackCorrect": "Primeiro o alerta do fruto, depois o repartir, e então os limites do ofício.",
+      "feedbackWrong": {
+        "default": "O alerta abre a cena. O repartir vem no meio. Os limites fecham."
+      },
+      "hint": "O machado e o fruto vêm antes das respostas práticas.",
+      "learningObjective": "Compreender os três movimentos da cena, do alerta ao limite.",
+      "evidence": ["Lucas 3:7–9", "Lucas 3:10–11", "Lucas 3:12–14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 3:13, que palavra marca o limite do cobro?",
+      "verseRef": "Lucas 3:13",
+      "options": [
+        { "id": "a", "text": "estabelecido" },
+        { "id": "b", "text": "devido" },
+        { "id": "c", "text": "cobrado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não exijam além do que foi estabelecido.",
+      "feedbackCorrect": "O teto do cobro é o que já foi estabelecido, não um valor inventado ali.",
+      "feedbackWrong": {
+        "b": "Devido se aproxima, mas a palavra do versículo é estabelecido.",
+        "c": "João não diz cobrado. Ele aponta o que já foi estabelecido."
+      },
+      "hint": "Leia o limite no fim da frase dita aos publicanos.",
+      "learningObjective": "Lembrar a palavra que marca o teto do cobro.",
+      "evidence": ["Lucas 3:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 3:11 a Isaías 58:7?",
+      "verseRef": "Lucas 3:11",
+      "passageA": { "ref": "Lucas 3:11" },
+      "passageB": { "ref": "Isaías 58:7" },
+      "options": [
+        { "id": "a", "text": "Ameaça de corte imediato" },
+        { "id": "b", "text": "Orgulho da descendência" },
+        { "id": "c", "text": "Repartir pão e roupa" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "compartilhe com quem não tem",
+      "feedbackCorrect": "Isaías pede repartir o pão e cobrir quem está nu. João pede túnica e alimento.",
+      "feedbackWrong": {
+        "a": "O corte está em Lucas 3:9. Aqui a ponte é repartir com quem precisa.",
+        "b": "A descendência é tema de Lucas 3:8, não o vínculo com Isaías 58."
+      },
+      "hint": "Compare o que cada texto manda fazer com comida e roupa.",
+      "learningObjective": "Relacionar o repartir de Lucas 3:11 ao apelo de Isaías 58.",
+      "evidence": ["Lucas 3:11", "Isaías 58:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 3:8, ter Abraão por pai não dispensa o fruto que João exige.",
+      "verseRef": "Lucas 3:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "não comecem a dizer entre vocês: Temos por pai a Abraão",
+      "feedbackCorrect": "João pede fruto e barra a frase de quem se apoia só em ter Abraão por pai.",
+      "feedbackWrong": {
+        "false": "O texto manda não dizer isso. O fruto segue exigido, e as pedras também podem virar filhos."
+      },
+      "hint": "Veja a frase que João manda não começar a dizer.",
+      "learningObjective": "Interpretar que a origem em Abraão não dispensa o fruto.",
+      "evidence": ["Lucas 3:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 3:9, toque o que falta na árvore que será cortada.",
+      "verseRef": "Lucas 3:9",
+      "options": [
+        { "id": "a", "text": "bom fruto" },
+        { "id": "b", "text": "o machado" },
+        { "id": "c", "text": "ao fogo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não produz bom fruto",
+      "feedbackCorrect": "O corte não alcança toda árvore. Alcança a que não produz bom fruto.",
+      "feedbackWrong": {
+        "b": "O machado é o instrumento já posto na raiz, não o que falta na árvore.",
+        "c": "O fogo é o destino da árvore sem fruto, não o que lhe falta."
+      },
+      "hint": "Veja o que a árvore deixa de produzir antes do corte.",
+      "learningObjective": "Localizar o critério que define a árvore cortada.",
+      "evidence": ["Lucas 3:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 3:11 sustenta sobre o arrependimento?",
+      "verseRef": "Lucas 3:11",
+      "options": [
+        { "id": "a", "text": "Basta a boa intenção, sem mexer no que se possui" },
+        { "id": "b", "text": "A ordem vale só para a túnica e esquece o alimento" },
+        { "id": "c", "text": "O fruto pedido é repartir o extra com quem não tem" },
+        { "id": "d", "text": "João manda ficar sem nada, não só repartir o extra" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "compartilhe com quem não tem",
+      "feedbackCorrect": "O fruto aqui é gesto: repartir com quem não tem, e fazer o mesmo com o alimento.",
+      "feedbackWrong": {
+        "a": "João não para na intenção. Ele pede um gesto com túnica e alimento.",
+        "b": "O alimento entra na mesma ordem. A frase seguinte manda fazer o mesmo.",
+        "d": "O texto não manda ficar sem nada. Manda repartir quando se tem a mais."
+      },
+      "hint": "Veja o que João manda fazer com o que sobra.",
+      "learningObjective": "Escolher a leitura em que o arrependimento reparte o extra.",
+      "evidence": ["Lucas 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento o texto constrói do alerta até a resposta?",
+      "verseRef": "Lucas 3:10",
+      "options": [
+        { "id": "a", "text": "O nome de Abraão não dispensa o fruto" },
+        { "id": "b", "text": "Os grupos perguntam como viver isso" },
+        { "id": "c", "text": "A resposta cabe no trato diário" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O que devemos, então, fazer?",
+      "feedbackCorrect": "Sem o nome no lugar do fruto, a pergunta nasce, e a resposta cai no trato.",
+      "feedbackWrong": {
+        "default": "Comece pela origem que não basta. A pergunta vem no meio. O trato fecha."
+      },
+      "hint": "A frase sobre Abraão vem antes das respostas práticas.",
+      "learningObjective": "Ordenar a lógica do alerta, da pergunta e do trato.",
+      "evidence": ["Lucas 3:8", "Lucas 3:10", "Lucas 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 3:8, os frutos devem ser dignos de quê?",
+      "verseRef": "Lucas 3:8",
+      "options": [
+        { "id": "a", "text": "conversão" },
+        { "id": "b", "text": "arrependimento" },
+        { "id": "c", "text": "obediência" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "frutos dignos de arrependimento",
+      "feedbackCorrect": "O termo da cena é arrependimento: o fruto tem de ser digno dele.",
+      "feedbackWrong": {
+        "a": "Conversão é próxima, mas o versículo nomeia o arrependimento.",
+        "c": "Obediência é próxima, mas a palavra do texto é arrependimento."
+      },
+      "hint": "Olhe de que os frutos devem ser dignos, logo no início.",
+      "learningObjective": "Lembrar o termo que nomeia a virada pedida por João.",
+      "evidence": ["Lucas 3:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 3:13 a Lucas 19:8?",
+      "verseRef": "Lucas 3:13",
+      "passageA": { "ref": "Lucas 3:13" },
+      "passageB": { "ref": "Lucas 19:8" },
+      "options": [
+        { "id": "a", "text": "Restituir o cobro indevido" },
+        { "id": "b", "text": "Soldado contente no posto" },
+        { "id": "c", "text": "Filhos tirados das pedras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não exijam além do que foi estabelecido.",
+      "feedbackCorrect": "Zaqueu restitui o que defraudou, no espírito do limite que João pôs ao cobro.",
+      "feedbackWrong": {
+        "b": "O soldado está em Lucas 3:14. Lucas 19:8 fala de quem devolve o que tomou.",
+        "c": "As pedras estão em Lucas 3:8. A ponte aqui é o cobro restituído."
+      },
+      "hint": "Veja o que Zaqueu decide sobre o que tinha defraudado.",
+      "learningObjective": "Ligar o limite do cobro à restituição narrada em Lucas 19.",
+      "evidence": ["Lucas 3:13", "Lucas 19:8"]
+    }
+  ]
+}

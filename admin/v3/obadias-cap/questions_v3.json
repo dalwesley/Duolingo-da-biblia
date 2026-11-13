@@ -1,0 +1,1782 @@
+[
+  {
+    "id": "obadias-cap-sem-obc-01-o-dia-do-senhor-01",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Obadias 1:10, Edom será exterminado para sempre.",
+    "prompt": "Em Obadias 1:10, Edom será exterminado para sempre.",
+    "cue": "Em Obadias 1:10, Edom será exterminado para sempre.",
+    "verseRef": "Obadias 1:10",
+    "passageText": "Por causa da violência cometida contra teu irmão Jacó, cobrir-te-ás de vergonha e serás exterminado para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "serás exterminado para sempre",
+    "feedbackCorrect": "O versículo diz que Edom será exterminado para sempre.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1:10: serás exterminado para sempre."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Observar o destino anunciado a Edom.",
+    "evidence": [
+      "Obadias 1:10"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-01-o-dia-do-senhor-02",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Obadias 1:11, toque o que os estranhos levaram.",
+    "prompt": "Em Obadias 1:11, toque o que os estranhos levaram.",
+    "cue": "Em Obadias 1:11, toque o que os estranhos levaram.",
+    "verseRef": "Obadias 1:11",
+    "passageText": "No dia em que o enfrentaste, quando os estranhos levaram os bens e os estrangeiros entraram pelas portas, lançando sortes sobre Jerusalém, tu também eras um deles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "os bens"
+      },
+      {
+        "id": "c",
+        "text": "portas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os estranhos levaram os bens",
+    "feedbackCorrect": "Segundo 1:11, os estranhos levaram os bens.",
+    "feedbackWrong": {
+      "a": "Jerusalém é sobre quem lançaram sortes, não o que levaram.",
+      "c": "As portas são por onde os estrangeiros entraram, não o que levaram."
+    },
+    "hint": "Procure o que foi levado.",
+    "learningObjective": "Identificar o que os estranhos levaram.",
+    "evidence": [
+      "Obadias 1:11"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-01-o-dia-do-senhor-03",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Obadias 1:16, o que todas as nações farão?",
+    "prompt": "Segundo Obadias 1:16, o que todas as nações farão?",
+    "cue": "Segundo Obadias 1:16, o que todas as nações farão?",
+    "verseRef": "Obadias 1:16",
+    "passageText": "Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oferecerão sacrifícios"
+      },
+      {
+        "id": "b",
+        "text": "Beberão continuamente"
+      },
+      {
+        "id": "c",
+        "text": "Fugirão para as montanhas"
+      },
+      {
+        "id": "d",
+        "text": "Construirão cidades"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "todas as nações beberão continuamente",
+    "feedbackCorrect": "O versículo diz que todas as nações beberão continuamente.",
+    "feedbackWrong": {
+      "a": "O versículo não fala de sacrifícios.",
+      "c": "O versículo não fala de fuga para as montanhas.",
+      "d": "O versículo não fala de construir cidades."
+    },
+    "hint": "Leia o verbo que se repete no versículo.",
+    "learningObjective": "Observar o que as nações farão.",
+    "evidence": [
+      "Obadias 1:16"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-01-o-dia-do-senhor-04",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Obadias 1:15 na ordem do texto.",
+    "prompt": "Monte Obadias 1:15 na ordem do texto.",
+    "cue": "Monte Obadias 1:15 na ordem do texto.",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o Dia do Senhor está prestes a vir sobre todas as nações"
+      },
+      {
+        "id": "b",
+        "text": "como tu fizeste, assim também será feito a ti"
+      },
+      {
+        "id": "c",
+        "text": "a tua maldade retornará sobre a tua cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "É a sequência do versículo: o Dia chega, o ato volta e a maldade retorna.",
+    "feedbackWrong": {
+      "default": "O Dia do Senhor abre o versículo; a cabeça de Edom fecha."
+    },
+    "hint": "O versículo começa com o Dia do Senhor.",
+    "learningObjective": "Reconhecer a sequência de Obadias 1:15.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-01-o-dia-do-senhor-05",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Obadias 1:8, quem o Senhor fará perecer, junto com a sabedoria do monte de Esaú?",
+    "prompt": "Em Obadias 1:8, quem o Senhor fará perecer, junto com a sabedoria do monte de Esaú?",
+    "cue": "Em Obadias 1:8, quem o Senhor fará perecer, junto com a sabedoria do monte de Esaú?",
+    "verseRef": "Obadias 1:8",
+    "passageText": "Não acontecerá, naquele dia, diz o Senhor, que farei perecer os sábios de Edom e a sabedoria do monte de Esaú?",
+    "template": "Não acontecerá, naquele dia, diz o Senhor, que farei perecer os ___ de Edom e a sabedoria do monte de Esaú?",
+    "options": [
+      {
+        "id": "a",
+        "text": "reis"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "sábios"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "farei perecer os sábios de Edom",
+    "feedbackCorrect": "O Senhor fará perecer os sábios de Edom.",
+    "feedbackWrong": {
+      "a": "\"Reis\" não aparece em 1:8; o texto fala de outro grupo de Edom.",
+      "b": "\"Filhos\" não aparece em 1:8; o texto fala de outro grupo de Edom."
+    },
+    "hint": "Pense em quem tinha fama de inteligência.",
+    "learningObjective": "Lembrar quem o Senhor fará perecer em Edom.",
+    "evidence": [
+      "Obadias 1:8"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-01-o-dia-do-senhor-06",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:15 comunica que se liga a este contexto?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 1:15",
+      "text": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os profetas chamam de Dia do Senhor o dia em que Deus age em juízo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus julga as nações"
+      },
+      {
+        "id": "b",
+        "text": "Um dia de festa para Edom"
+      },
+      {
+        "id": "c",
+        "text": "Um dia só para o templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Dia do Senhor está prestes a vir sobre todas as nações",
+    "feedbackCorrect": "O Dia do Senhor é o dia do juízo, e vem sobre todas as nações.",
+    "feedbackWrong": {
+      "b": "Para Edom, o Dia do Senhor é juízo, não festa.",
+      "c": "O texto diz que o Dia vem sobre todas as nações, não só sobre o templo."
+    },
+    "hint": "Veja sobre quem o dia vem.",
+    "learningObjective": "Ligar Obadias 1:15 ao sentido do Dia do Senhor.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-01-o-dia-do-senhor-01",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Obadias 1:15, o que Edom fez é a medida do que será feito a ele.",
+    "prompt": "Em Obadias 1:15, o que Edom fez é a medida do que será feito a ele.",
+    "cue": "Em Obadias 1:15, o que Edom fez é a medida do que será feito a ele.",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "\"Como tu fizeste, assim também será feito a ti\": o juízo devolve o ato.",
+    "feedbackWrong": {
+      "false": "Releia o meio de 1:15: como tu fizeste, assim também será feito a ti."
+    },
+    "hint": "Compare \"fizeste\" e \"será feito\".",
+    "learningObjective": "Compreender a proporção entre o ato de Edom e o juízo.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-01-o-dia-do-senhor-02",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Obadias 1:16, toque a palavra que abre a razão do juízo.",
+    "prompt": "Em Obadias 1:16, toque a palavra que abre a razão do juízo.",
+    "cue": "Em Obadias 1:16, toque a palavra que abre a razão do juízo.",
+    "verseRef": "Obadias 1:16",
+    "passageText": "Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "continuamente"
+      },
+      {
+        "id": "b",
+        "text": "monte"
+      },
+      {
+        "id": "c",
+        "text": "Porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Porque, assim como vocês beberam",
+    "feedbackCorrect": "\"Porque\" abre a razão: o que foi bebido no monte santo volta às nações.",
+    "feedbackWrong": {
+      "a": "\"Continuamente\" diz como as nações beberão, não a razão.",
+      "b": "\"Monte\" é o lugar onde beberam, não a palavra que dá a razão."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que introduz a razão do juízo.",
+    "evidence": [
+      "Obadias 1:16"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-01-o-dia-do-senhor-03",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Obadias 1:15 relaciona a ação de Edom com o juízo que vem?",
+    "prompt": "Como Obadias 1:15 relaciona a ação de Edom com o juízo que vem?",
+    "cue": "Como Obadias 1:15 relaciona a ação de Edom com o juízo que vem?",
+    "verseRef": "Obadias 1:14–15",
+    "passageText": "Nem deverias ter parado nas encruzilhadas para exterminar os que escaparam nem ter entregado os que te restaram no dia da angústia. Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo vale só para Jacó, não para Edom"
+      },
+      {
+        "id": "b",
+        "text": "O juízo é adiado até Edom se arrepender"
+      },
+      {
+        "id": "c",
+        "text": "O juízo não tem relação com os atos de Edom"
+      },
+      {
+        "id": "d",
+        "text": "O juízo devolve a Edom o mesmo que ele fez"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "O juízo é proporcional: o que Edom fez volta sobre ele.",
+    "feedbackWrong": {
+      "a": "O juízo é anunciado contra Edom e as nações, não contra Jacó.",
+      "b": "O versículo não fala de adiamento nem de arrependimento.",
+      "c": "O texto liga o juízo aos atos: \"como tu fizeste\"."
+    },
+    "hint": "Compare o que Edom fez com o que será feito.",
+    "learningObjective": "Relacionar a ação de Edom com o juízo anunciado.",
+    "evidence": [
+      "Obadias 1:14–15"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-01-o-dia-do-senhor-04",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia o juízo em Obadias 1:15–16?",
+    "prompt": "Como se encadeia o juízo em Obadias 1:15–16?",
+    "cue": "Como se encadeia o juízo em Obadias 1:15–16?",
+    "verseRef": "Obadias 1:15–16",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça. Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia do Senhor se aproxima das nações"
+      },
+      {
+        "id": "b",
+        "text": "Cada ato de Edom volta sobre ele"
+      },
+      {
+        "id": "c",
+        "text": "As nações bebem até desaparecer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim também será feito a ti",
+    "feedbackCorrect": "Primeiro o Dia chega, depois o ato volta sobre Edom e as nações bebem.",
+    "feedbackWrong": {
+      "default": "O Dia chega primeiro; o fim das nações vem por último."
+    },
+    "hint": "O Dia do Senhor abre a cena.",
+    "learningObjective": "Compreender o movimento do juízo em 1:15–16.",
+    "evidence": [
+      "Obadias 1:15–16"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-01-o-dia-do-senhor-05",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Obadias 1:15, que palavra liga o que Edom fez ao que será feito a ele?",
+    "prompt": "Em Obadias 1:15, que palavra liga o que Edom fez ao que será feito a ele?",
+    "cue": "Em Obadias 1:15, que palavra liga o que Edom fez ao que será feito a ele?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "template": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, ___ também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "então"
+      },
+      {
+        "id": "c",
+        "text": "assim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "A palavra liga as duas partes da comparação: ato e resposta.",
+    "feedbackWrong": {
+      "a": "\"Porém\" marcaria contraste; o texto faz uma comparação.",
+      "b": "\"Então\" marcaria só o tempo; o texto compara duas coisas."
+    },
+    "hint": "Ela vem entre as duas partes da comparação.",
+    "learningObjective": "Lembrar a palavra que liga o ato de Edom à resposta.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-01-o-dia-do-senhor-06",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Obadias 1:15 a Gálatas 6:7?",
+    "prompt": "O que liga Obadias 1:15 a Gálatas 6:7?",
+    "cue": "O que liga Obadias 1:15 a Gálatas 6:7?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 1:15",
+      "text": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Gálatas 6:7",
+      "text": "Não se enganem: de Deus não se zomba; pois tudo o que o homem semear, isso também colherá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A sorte decide o castigo"
+      },
+      {
+        "id": "b",
+        "text": "Colhe-se o que se semeia"
+      },
+      {
+        "id": "c",
+        "text": "Deus esquece o que fazemos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "Nos dois textos, o resultado acompanha o que se fez.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, o resultado vem do que foi feito, e não da sorte.",
+      "c": "Nos dois textos, Deus não esquece o que foi feito."
+    },
+    "hint": "Compare o que volta sobre quem age.",
+    "learningObjective": "Relacionar o juízo de Obadias com a colheita de Gálatas.",
+    "evidence": [
+      "Obadias 1:15",
+      "Gálatas 6:7"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-01-o-dia-do-senhor-01",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Obadias 1:15, o Dia do Senhor atinge só Edom, e as demais nações ficam de fora.",
+    "prompt": "Em Obadias 1:15, o Dia do Senhor atinge só Edom, e as demais nações ficam de fora.",
+    "cue": "Em Obadias 1:15, o Dia do Senhor atinge só Edom, e as demais nações ficam de fora.",
+    "verseRef": "Obadias 1:15–16",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça. Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sobre todas as nações",
+    "feedbackCorrect": "O Dia do Senhor vem \"sobre todas as nações\", e não só sobre Edom.",
+    "feedbackWrong": {
+      "true": "Releia 1:15: o Dia do Senhor está prestes a vir sobre todas as nações."
+    },
+    "hint": "Veja a quem o Dia vem.",
+    "learningObjective": "Interpretar o alcance do Dia do Senhor.",
+    "evidence": [
+      "Obadias 1:15–16"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-01-o-dia-do-senhor-02",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Obadias 1:15, toque o trecho que mostra o mal voltando sobre quem o praticou.",
+    "prompt": "Em Obadias 1:15, toque o trecho que mostra o mal voltando sobre quem o praticou.",
+    "cue": "Em Obadias 1:15, toque o trecho que mostra o mal voltando sobre quem o praticou.",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tua cabeça"
+      },
+      {
+        "id": "b",
+        "text": "Dia do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "todas as nações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+    "feedbackCorrect": "A maldade \"retornará sobre a tua cabeça\": volta ao próprio autor.",
+    "feedbackWrong": {
+      "b": "\"Dia do Senhor\" é o momento do juízo, não onde o mal recai.",
+      "c": "\"Todas as nações\" mostra o alcance do Dia, não o mal voltando."
+    },
+    "hint": "Procure para onde a maldade volta.",
+    "learningObjective": "Sustentar com o texto que o mal recai sobre quem o faz.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-01-o-dia-do-senhor-03",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Obadias 1:15–16 sustenta sobre o juízo de Deus?",
+    "prompt": "Que leitura Obadias 1:15–16 sustenta sobre o juízo de Deus?",
+    "cue": "Que leitura Obadias 1:15–16 sustenta sobre o juízo de Deus?",
+    "verseRef": "Obadias 1:15–16",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça. Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A sabedoria humana livra do juízo do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Cada povo colhe o que fez, sob o Dia do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "O juízo é só contra Edom, e as outras nações escapam"
+      },
+      {
+        "id": "d",
+        "text": "O castigo de Edom não tem relação com o que ele fez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "O texto liga o juízo ao que cada povo fez, e ele vem sobre todas as nações.",
+    "feedbackWrong": {
+      "a": "Em 1:8 o Senhor faz perecer até a sabedoria de Edom.",
+      "c": "O Dia do Senhor vem sobre todas as nações, não só sobre Edom.",
+      "d": "O texto diz: como tu fizeste, assim será feito a ti."
+    },
+    "hint": "Compare cada opção com o começo e o fim do trecho.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o juízo.",
+    "evidence": [
+      "Obadias 1:15–16"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-01-o-dia-do-senhor-04",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela como a Bíblia ensina que o mal volta sobre quem o faz?",
+    "prompt": "Qual sequência revela como a Bíblia ensina que o mal volta sobre quem o faz?",
+    "cue": "Qual sequência revela como a Bíblia ensina que o mal volta sobre quem o faz?",
+    "verseRef": "Obadias 1:14–15",
+    "passageText": "Nem deverias ter parado nas encruzilhadas para exterminar os que escaparam nem ter entregado os que te restaram no dia da angústia. Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Obadias anuncia que o mal volta sobre quem o fez"
+      },
+      {
+        "id": "b",
+        "text": "Jesus ensina que a medida usada volta para nós"
+      },
+      {
+        "id": "c",
+        "text": "Paulo afirma que cada um colhe o que semeia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "O princípio de Obadias reaparece no ensino de Jesus e no de Paulo.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Obadias 1:15, Mateus 7:2 e Gálatas 6:7."
+    },
+    "hint": "Parta de Obadias e avance para o Novo Testamento.",
+    "learningObjective": "Ver o princípio de Obadias 1:15 como fio bíblico.",
+    "evidence": [
+      "Obadias 1:15",
+      "Mateus 7:2",
+      "Gálatas 6:7"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-01-o-dia-do-senhor-05",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Obadias 1:15, que verbo mostra o mal voltando para quem o praticou?",
+    "prompt": "Em Obadias 1:15, que verbo mostra o mal voltando para quem o praticou?",
+    "cue": "Em Obadias 1:15, que verbo mostra o mal voltando para quem o praticou?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "template": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade ___ sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "descansará"
+      },
+      {
+        "id": "b",
+        "text": "passará"
+      },
+      {
+        "id": "c",
+        "text": "retornará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+    "feedbackCorrect": "O verbo diz que a maldade volta ao ponto de partida: o próprio culpado.",
+    "feedbackWrong": {
+      "a": "\"Descansará\" sugere paz; o texto fala de juízo.",
+      "b": "\"Passará\" sugere que o mal vai embora; o texto diz que volta."
+    },
+    "hint": "É o verbo da ideia de voltar ao ponto de partida.",
+    "learningObjective": "Lembrar o termo que carrega o sentido do juízo.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-01-o-dia-do-senhor-06",
+    "trail": "obadias-cap",
+    "section": "obc-01-o-dia-do-senhor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Obadias 1:16 a Jeremias 25:15?",
+    "prompt": "O que liga Obadias 1:16 a Jeremias 25:15?",
+    "cue": "O que liga Obadias 1:16 a Jeremias 25:15?",
+    "verseRef": "Obadias 1:16",
+    "passageText": "Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "passageA": {
+      "ref": "Obadias 1:16",
+      "text": "Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido."
+    },
+    "passageB": {
+      "ref": "Jeremias 25:15",
+      "text": "Porque assim me disse o Senhor, o Deus de Israel: Toma da minha mão este cálice do vinho do meu furor e darás a beber dele a todas as nações para as quais eu te enviar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Bênção para os fiéis de Edom"
+      },
+      {
+        "id": "b",
+        "text": "Banquete de festa para Israel"
+      },
+      {
+        "id": "c",
+        "text": "Cálice do juízo para as nações"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todas as nações beberão continuamente",
+    "feedbackCorrect": "Nos dois textos, as nações bebem o cálice do juízo do Senhor.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos fala de bênção para Edom: falam de juízo.",
+      "b": "Beber, nos dois textos, é sofrer o juízo, e não festejar."
+    },
+    "hint": "Veja o que as nações recebem para beber.",
+    "learningObjective": "Ligar o beber das nações ao cálice do juízo.",
+    "evidence": [
+      "Obadias 1:16",
+      "Jeremias 25:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-01",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Obadias 1:20, os cativos de Jerusalém possuirão as cidades do Sul.",
+    "prompt": "Em Obadias 1:20, os cativos de Jerusalém possuirão as cidades do Sul.",
+    "cue": "Em Obadias 1:20, os cativos de Jerusalém possuirão as cidades do Sul.",
+    "verseRef": "Obadias 1:20",
+    "passageText": "E os que foram levados cativos do exército dos filhos de Israel, que eram cananeus até Sarepta, e os cativos de Jerusalém, que estão em Sefarad, possuirão as cidades do Sul.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "possuirão as cidades do Sul",
+    "feedbackCorrect": "O versículo diz que os cativos de Jerusalém possuirão as cidades do Sul.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1:20: possuirão as cidades do Sul."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Observar o que os cativos de Jerusalém possuirão.",
+    "evidence": [
+      "Obadias 1:20"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-02",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Obadias 1:18, toque o nome da casa que será restolho.",
+    "prompt": "Em Obadias 1:18, toque o nome da casa que será restolho.",
+    "cue": "Em Obadias 1:18, toque o nome da casa que será restolho.",
+    "verseRef": "Obadias 1:18",
+    "passageText": "A casa de Jacó será fogo, e a casa de José, chama; a casa de Esaú será restolho; elas incendiarão esta e a consumirão; e ninguém mais restará da casa de Esaú, porque o SENHOR assim falou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jacó"
+      },
+      {
+        "id": "b",
+        "text": "Esaú"
+      },
+      {
+        "id": "c",
+        "text": "José"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a casa de Esaú será restolho",
+    "feedbackCorrect": "A casa de Esaú é a que será restolho.",
+    "feedbackWrong": {
+      "a": "A casa de Jacó será fogo, não restolho.",
+      "c": "A casa de José será chama, não restolho."
+    },
+    "hint": "Veja quem recebe o juízo no versículo.",
+    "learningObjective": "Identificar qual casa será restolho.",
+    "evidence": [
+      "Obadias 1:18"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-03",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Obadias 1:16, como as nações beberão?",
+    "prompt": "Segundo Obadias 1:16, como as nações beberão?",
+    "cue": "Segundo Obadias 1:16, como as nações beberão?",
+    "verseRef": "Obadias 1:16",
+    "passageText": "Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em segredo"
+      },
+      {
+        "id": "b",
+        "text": "Com alegria"
+      },
+      {
+        "id": "c",
+        "text": "Só uma vez"
+      },
+      {
+        "id": "d",
+        "text": "Continuamente"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "todas as nações beberão continuamente",
+    "feedbackCorrect": "O versículo diz que todas as nações beberão continuamente.",
+    "feedbackWrong": {
+      "a": "O versículo não fala de segredo.",
+      "b": "O versículo não fala de alegria, e sim de juízo.",
+      "c": "O versículo não diz que será uma vez só."
+    },
+    "hint": "Procure o advérbio ligado ao verbo beber.",
+    "learningObjective": "Observar como as nações beberão.",
+    "evidence": [
+      "Obadias 1:16"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-04",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Obadias 1:17 na ordem do texto.",
+    "prompt": "Monte Obadias 1:17 na ordem do texto.",
+    "cue": "Monte Obadias 1:17 na ordem do texto.",
+    "verseRef": "Obadias 1:17",
+    "passageText": "Mas, no monte Sião, haverá livramento; será um local sagrado, e os da casa de Jacó possuirão suas heranças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "no monte Sião, haverá livramento"
+      },
+      {
+        "id": "b",
+        "text": "será um local sagrado"
+      },
+      {
+        "id": "c",
+        "text": "os da casa de Jacó possuirão suas heranças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "no monte Sião, haverá livramento",
+    "feedbackCorrect": "É a sequência do versículo: livramento, local sagrado e herança de Jacó.",
+    "feedbackWrong": {
+      "default": "Comece pelo livramento em Sião; a herança de Jacó vem por último."
+    },
+    "hint": "O versículo abre falando do monte Sião.",
+    "learningObjective": "Reconhecer a sequência de Obadias 1:17.",
+    "evidence": [
+      "Obadias 1:17"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-05",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Obadias 1:19, que região Benjamim tomará?",
+    "prompt": "Em Obadias 1:19, que região Benjamim tomará?",
+    "cue": "Em Obadias 1:19, que região Benjamim tomará?",
+    "verseRef": "Obadias 1:19",
+    "passageText": "E os que estão no sul estarão em posse da montanha de Esaú, e os que habitam nas planícies os filisteus; também possuirão os campos de Efraim e os campos de Samaria; e Benjamim tomará Gileade.",
+    "template": "E os que estão no sul estarão em posse da montanha de Esaú, e os que habitam nas planícies os filisteus; também possuirão os campos de Efraim e os campos de Samaria; e Benjamim tomará ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sarepta"
+      },
+      {
+        "id": "b",
+        "text": "Gileade"
+      },
+      {
+        "id": "c",
+        "text": "Sefarad"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Benjamim tomará Gileade",
+    "feedbackCorrect": "Benjamim tomará Gileade, segundo o versículo.",
+    "feedbackWrong": {
+      "a": "Sarepta aparece em 1:20, e não como região que Benjamim toma.",
+      "c": "Sefarad aparece em 1:20, onde estão cativos de Jerusalém."
+    },
+    "hint": "Fica no fim do versículo.",
+    "learningObjective": "Lembrar a região que Benjamim tomará.",
+    "evidence": [
+      "Obadias 1:19"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-06",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Obadias 1:21 comunica que se liga a este contexto?",
+    "verseRef": "Obadias 1:21",
+    "passageText": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor.",
+    "passageA": {
+      "ref": "Obadias 1:21",
+      "text": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Obadias tem um só capítulo, e este é o seu último versículo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fecha com a queda de Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Fecha com o reino do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Fecha sem desfecho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e o reino será do Senhor",
+    "feedbackCorrect": "O último versículo do livro fecha com o reino do Senhor.",
+    "feedbackWrong": {
+      "a": "O versículo final fala de salvadores e do reino, não da queda de Jerusalém.",
+      "c": "O versículo final entrega o desfecho do livro."
+    },
+    "hint": "Veja como o versículo termina.",
+    "learningObjective": "Ligar Obadias 1:21 ao fim do livro.",
+    "evidence": [
+      "Obadias 1:21"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-07",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Obadias 1:15, toque sobre quem o Dia do Senhor está prestes a vir.",
+    "prompt": "Em Obadias 1:15, toque sobre quem o Dia do Senhor está prestes a vir.",
+    "cue": "Em Obadias 1:15, toque sobre quem o Dia do Senhor está prestes a vir.",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "maldade"
+      },
+      {
+        "id": "b",
+        "text": "todas as nações"
+      },
+      {
+        "id": "c",
+        "text": "tua cabeça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Dia do Senhor está prestes a vir sobre todas as nações",
+    "feedbackCorrect": "O Dia do Senhor está prestes a vir sobre todas as nações.",
+    "feedbackWrong": {
+      "a": "\"Maldade\" é o que volta sobre Edom, não sobre quem o Dia vem.",
+      "c": "\"Tua cabeça\" é onde a maldade recai, não sobre quem o Dia vem."
+    },
+    "hint": "Procure quem será alcançado.",
+    "learningObjective": "Identificar sobre quem vem o Dia do Senhor.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-sem-obc-boss-1-08",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Obadias 1:20–21 na ordem do texto.",
+    "prompt": "Monte Obadias 1:20–21 na ordem do texto.",
+    "cue": "Monte Obadias 1:20–21 na ordem do texto.",
+    "verseRef": "Obadias 1:20–21",
+    "passageText": "E os que foram levados cativos do exército dos filhos de Israel, que eram cananeus até Sarepta, e os cativos de Jerusalém, que estão em Sefarad, possuirão as cidades do Sul. E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "possuirão as cidades do Sul"
+      },
+      {
+        "id": "b",
+        "text": "E surgirão salvadores ao monte Sião"
+      },
+      {
+        "id": "c",
+        "text": "para julgar a montanha de Esaú"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E surgirão salvadores ao monte Sião",
+    "feedbackCorrect": "É a sequência do texto: cidades do Sul, salvadores em Sião e juízo sobre Esaú.",
+    "feedbackWrong": {
+      "default": "As cidades do Sul fecham o v. 20; o juízo sobre Esaú fecha o v. 21."
+    },
+    "hint": "O verso 20 termina antes dos salvadores.",
+    "learningObjective": "Reconhecer a sequência de Obadias 1:20–21.",
+    "evidence": [
+      "Obadias 1:20–21"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-01",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Obadias 1:15, o mal que Edom fez não tem relação com o que será feito a ele.",
+    "prompt": "Em Obadias 1:15, o mal que Edom fez não tem relação com o que será feito a ele.",
+    "cue": "Em Obadias 1:15, o mal que Edom fez não tem relação com o que será feito a ele.",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "O versículo liga as duas coisas: \"como tu fizeste, assim também será feito a ti\".",
+    "feedbackWrong": {
+      "true": "Releia 1:15: o que será feito a Edom corresponde ao que ele fez."
+    },
+    "hint": "Compare \"fizeste\" e \"será feito\".",
+    "learningObjective": "Compreender a relação entre o ato de Edom e o juízo.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-02",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Obadias 1:17, toque a palavra que opõe o livramento de Sião ao juízo anterior.",
+    "prompt": "Em Obadias 1:17, toque a palavra que opõe o livramento de Sião ao juízo anterior.",
+    "cue": "Em Obadias 1:17, toque a palavra que opõe o livramento de Sião ao juízo anterior.",
+    "verseRef": "Obadias 1:17",
+    "passageText": "Mas, no monte Sião, haverá livramento; será um local sagrado, e os da casa de Jacó possuirão suas heranças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "heranças"
+      },
+      {
+        "id": "c",
+        "text": "sagrado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas, no monte Sião, haverá livramento",
+    "feedbackCorrect": "\"Mas\" vira a página: depois do juízo, Sião recebe livramento.",
+    "feedbackWrong": {
+      "b": "\"Heranças\" diz o que Jacó possuirá, não marca contraste.",
+      "c": "\"Sagrado\" descreve o local, não marca contraste."
+    },
+    "hint": "Procure a palavra que abre o versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 1:17.",
+    "evidence": [
+      "Obadias 1:17"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-03",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Obadias 1:18 relaciona o fogo de Jacó com o fim de Esaú?",
+    "prompt": "Como Obadias 1:18 relaciona o fogo de Jacó com o fim de Esaú?",
+    "cue": "Como Obadias 1:18 relaciona o fogo de Jacó com o fim de Esaú?",
+    "verseRef": "Obadias 1:18",
+    "passageText": "A casa de Jacó será fogo, e a casa de José, chama; a casa de Esaú será restolho; elas incendiarão esta e a consumirão; e ninguém mais restará da casa de Esaú, porque o SENHOR assim falou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jacó e Esaú se unem contra o fogo"
+      },
+      {
+        "id": "b",
+        "text": "O fogo de Jacó consome a casa de Esaú"
+      },
+      {
+        "id": "c",
+        "text": "Esaú consome Jacó com o próprio fogo"
+      },
+      {
+        "id": "d",
+        "text": "O fogo de Jacó não alcança Esaú"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "elas incendiarão esta e a consumirão",
+    "feedbackCorrect": "A casa de Jacó é fogo, e a de Esaú, restolho: o fogo a consome.",
+    "feedbackWrong": {
+      "a": "O texto não mostra união entre Jacó e Esaú.",
+      "c": "É o contrário: Jacó é o fogo, e Esaú, o restolho.",
+      "d": "O texto diz que ninguém mais restará da casa de Esaú."
+    },
+    "hint": "Veja o que \"elas incendiarão\" faz com Esaú.",
+    "learningObjective": "Relacionar o fogo de Jacó com o fim de Esaú.",
+    "evidence": [
+      "Obadias 1:18"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-04",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a esperança em Obadias 1:17–18?",
+    "prompt": "Como avança a esperança em Obadias 1:17–18?",
+    "cue": "Como avança a esperança em Obadias 1:17–18?",
+    "verseRef": "Obadias 1:17–18",
+    "passageText": "Mas, no monte Sião, haverá livramento; será um local sagrado, e os da casa de Jacó possuirão suas heranças. A casa de Jacó será fogo, e a casa de José, chama; a casa de Esaú será restolho; elas incendiarão esta e a consumirão; e ninguém mais restará da casa de Esaú, porque o SENHOR assim falou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião recebe livramento e herança"
+      },
+      {
+        "id": "b",
+        "text": "Jacó age como fogo contra Esaú"
+      },
+      {
+        "id": "c",
+        "text": "Esaú fica sem sobreviventes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ninguém mais restará da casa de Esaú",
+    "feedbackCorrect": "Sião recebe livramento, Jacó age como fogo e Esaú não sobrevive.",
+    "feedbackWrong": {
+      "default": "Sião vem primeiro; o fim de Esaú fecha a sequência."
+    },
+    "hint": "O versículo 17 abre a sequência.",
+    "learningObjective": "Compreender o avanço da esperança em 1:17–18.",
+    "evidence": [
+      "Obadias 1:17–18"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-05",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Obadias 1:15, que palavra liga o que Edom fez ao que será feito a ele?",
+    "prompt": "Em Obadias 1:15, que palavra liga o que Edom fez ao que será feito a ele?",
+    "cue": "Em Obadias 1:15, que palavra liga o que Edom fez ao que será feito a ele?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "template": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, ___ também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "então"
+      },
+      {
+        "id": "b",
+        "text": "assim"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "A palavra liga as duas partes da comparação: ato e resposta.",
+    "feedbackWrong": {
+      "a": "\"Então\" marcaria só o tempo; o texto compara duas coisas.",
+      "c": "\"Porém\" marcaria contraste; o texto faz uma comparação."
+    },
+    "hint": "Ela vem entre as duas partes da comparação.",
+    "learningObjective": "Lembrar a palavra que liga o ato de Edom à resposta.",
+    "evidence": [
+      "Obadias 1:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-06",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Obadias 1:15 a Salmos 7:16?",
+    "prompt": "O que liga Obadias 1:15 a Salmos 7:16?",
+    "cue": "O que liga Obadias 1:15 a Salmos 7:16?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "passageA": {
+      "ref": "Obadias 1:15",
+      "text": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça."
+    },
+    "passageB": {
+      "ref": "Salmos 7:16",
+      "text": "A sua malícia recairá sobre a própria cabeça, e a sua violência alcançará a sua própria fronte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mal sempre é esquecido"
+      },
+      {
+        "id": "b",
+        "text": "A maldade volta ao autor"
+      },
+      {
+        "id": "c",
+        "text": "O castigo é sorteado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+    "feedbackCorrect": "Nos dois textos, o mal recai sobre quem o praticou.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, o mal tem resposta, e não é esquecido.",
+      "c": "Nos dois textos, o mal volta ao autor, e não é sorteado."
+    },
+    "hint": "Compare para onde o mal retorna.",
+    "learningObjective": "Relacionar o retorno do mal em Obadias e em Salmos.",
+    "evidence": [
+      "Obadias 1:15",
+      "Salmos 7:16"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-07",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Obadias 1:16, toque a palavra que abre a razão do juízo.",
+    "prompt": "Em Obadias 1:16, toque a palavra que abre a razão do juízo.",
+    "cue": "Em Obadias 1:16, toque a palavra que abre a razão do juízo.",
+    "verseRef": "Obadias 1:16",
+    "passageText": "Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "continuamente"
+      },
+      {
+        "id": "b",
+        "text": "monte"
+      },
+      {
+        "id": "c",
+        "text": "Porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Porque, assim como vocês beberam",
+    "feedbackCorrect": "\"Porque\" abre a razão: o que foi bebido no monte santo volta às nações.",
+    "feedbackWrong": {
+      "a": "\"Continuamente\" diz como as nações beberão, não a razão.",
+      "b": "\"Monte\" é o lugar onde beberam, não a palavra que dá a razão."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que introduz a razão do juízo.",
+    "evidence": [
+      "Obadias 1:16"
+    ]
+  },
+  {
+    "id": "obadias-cap-cam-obc-boss-1-08",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a posse da terra em Obadias 1:19–20?",
+    "prompt": "Como avança a posse da terra em Obadias 1:19–20?",
+    "cue": "Como avança a posse da terra em Obadias 1:19–20?",
+    "verseRef": "Obadias 1:19–20",
+    "passageText": "E os que estão no sul estarão em posse da montanha de Esaú, e os que habitam nas planícies os filisteus; também possuirão os campos de Efraim e os campos de Samaria; e Benjamim tomará Gileade. E os que foram levados cativos do exército dos filhos de Israel, que eram cananeus até Sarepta, e os cativos de Jerusalém, que estão em Sefarad, possuirão as cidades do Sul.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O sul toma a montanha de Esaú"
+      },
+      {
+        "id": "b",
+        "text": "Efraim e Samaria voltam ao povo"
+      },
+      {
+        "id": "c",
+        "text": "Os cativos retomam as cidades do Sul"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "possuirão os campos de Efraim",
+    "feedbackCorrect": "A posse avança do sul e das planícies até os cativos que voltam.",
+    "feedbackWrong": {
+      "default": "O sul vem primeiro; o retorno dos cativos fecha a sequência."
+    },
+    "hint": "O versículo 19 abre a sequência.",
+    "learningObjective": "Compreender o avanço da posse da terra.",
+    "evidence": [
+      "Obadias 1:19–20"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-01",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Obadias 1:18, a casa de Jacó vence a de Esaú por força própria, sem que o Senhor tenha falado.",
+    "prompt": "Em Obadias 1:18, a casa de Jacó vence a de Esaú por força própria, sem que o Senhor tenha falado.",
+    "cue": "Em Obadias 1:18, a casa de Jacó vence a de Esaú por força própria, sem que o Senhor tenha falado.",
+    "verseRef": "Obadias 1:18",
+    "passageText": "A casa de Jacó será fogo, e a casa de José, chama; a casa de Esaú será restolho; elas incendiarão esta e a consumirão; e ninguém mais restará da casa de Esaú, porque o SENHOR assim falou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "porque o SENHOR assim falou",
+    "feedbackCorrect": "O versículo fecha com \"porque o SENHOR assim falou\": o desfecho vem da palavra dele.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 1:18: o desfecho se apoia no que o SENHOR falou."
+    },
+    "hint": "Leia a última parte do versículo.",
+    "learningObjective": "Interpretar a origem do desfecho da casa de Esaú.",
+    "evidence": [
+      "Obadias 1:18"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-02",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Obadias 1:21, toque o trecho que sustenta quem é o dono do reino.",
+    "prompt": "Em Obadias 1:21, toque o trecho que sustenta quem é o dono do reino.",
+    "cue": "Em Obadias 1:21, toque o trecho que sustenta quem é o dono do reino.",
+    "verseRef": "Obadias 1:21",
+    "passageText": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salvadores"
+      },
+      {
+        "id": "b",
+        "text": "monte Sião"
+      },
+      {
+        "id": "c",
+        "text": "do Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o reino será do Senhor",
+    "feedbackCorrect": "O reino é \"do Senhor\", e não dos salvadores que sobem a Sião.",
+    "feedbackWrong": {
+      "a": "\"Salvadores\" diz quem sobe a Sião, não de quem é o reino.",
+      "b": "\"Monte Sião\" é o lugar, não o dono do reino."
+    },
+    "hint": "Procure o final do versículo.",
+    "learningObjective": "Sustentar com o texto de quem é o reino.",
+    "evidence": [
+      "Obadias 1:21"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-03",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Obadias 1:15–16 sustenta sobre o juízo sobre as nações?",
+    "prompt": "Que leitura Obadias 1:15–16 sustenta sobre o juízo sobre as nações?",
+    "cue": "Que leitura Obadias 1:15–16 sustenta sobre o juízo sobre as nações?",
+    "verseRef": "Obadias 1:15–16",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça. Porque, assim como vocês beberam no meu santo monte, assim todas as nações beberão continuamente; beberão, sorverão e serão como se nunca tivessem existido.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O juízo é só um acaso da história"
+      },
+      {
+        "id": "b",
+        "text": "As nações colhem o mal que fizeram no Dia do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Só Edom será julgado, e as demais escapam"
+      },
+      {
+        "id": "d",
+        "text": "As nações são julgadas por serem estrangeiras, e não pelo que fizeram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como tu fizeste, assim também será feito a ti",
+    "feedbackCorrect": "O juízo vem sobre todas as nações e acompanha o que cada uma fez.",
+    "feedbackWrong": {
+      "a": "O texto liga o juízo ao que se fez: não é acaso.",
+      "c": "O Dia do Senhor vem sobre todas as nações, não só sobre Edom.",
+      "d": "O texto diz: como tu fizeste, assim será feito a ti."
+    },
+    "hint": "Compare cada opção com o começo e o fim do trecho.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre o juízo.",
+    "evidence": [
+      "Obadias 1:15–16"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-04",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da maldade que volta, na história da Bíblia?",
+    "prompt": "Qual sequência revela o caminho da maldade que volta, na história da Bíblia?",
+    "cue": "Qual sequência revela o caminho da maldade que volta, na história da Bíblia?",
+    "verseRef": "Obadias 1:15",
+    "passageText": "Porque o Dia do Senhor está prestes a vir sobre todas as nações; como tu fizeste, assim também será feito a ti; a tua maldade retornará sobre a tua cabeça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Obadias avisa que a maldade retorna sobre Edom"
+      },
+      {
+        "id": "b",
+        "text": "Salmos diz que a malícia recai sobre o próprio autor"
+      },
+      {
+        "id": "c",
+        "text": "Gálatas diz que cada um colhe o que semeia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a tua maldade retornará sobre a tua cabeça",
+    "feedbackCorrect": "O aviso a Edom reaparece nos Salmos e em Gálatas: o mal volta a quem o faz.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Obadias 1:15, Salmos 7:16 e Gálatas 6:7."
+    },
+    "hint": "Parta do aviso a Edom e vá ao Novo Testamento.",
+    "learningObjective": "Ver o retorno do mal como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Obadias 1:15",
+      "Salmos 7:16",
+      "Gálatas 6:7"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-05",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Obadias 1:21, que palavra mostra o que pertence ao Senhor no desfecho do livro?",
+    "prompt": "Em Obadias 1:21, que palavra mostra o que pertence ao Senhor no desfecho do livro?",
+    "cue": "Em Obadias 1:21, que palavra mostra o que pertence ao Senhor no desfecho do livro?",
+    "verseRef": "Obadias 1:21",
+    "passageText": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor.",
+    "template": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o ___ será do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "poder"
+      },
+      {
+        "id": "b",
+        "text": "reino"
+      },
+      {
+        "id": "c",
+        "text": "juízo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o reino será do Senhor",
+    "feedbackCorrect": "O livro termina entregando o reino ao Senhor.",
+    "feedbackWrong": {
+      "a": "\"Poder\" não aparece; o texto usa outra palavra para o governo final.",
+      "c": "\"Juízo\" não aparece em 1:21; o texto fecha com outra palavra."
+    },
+    "hint": "Pense no que o Senhor governa.",
+    "learningObjective": "Lembrar o termo que carrega o sentido do desfecho.",
+    "evidence": [
+      "Obadias 1:21"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-06",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Obadias 1:21 a Apocalipse 11:15?",
+    "prompt": "O que liga Obadias 1:21 a Apocalipse 11:15?",
+    "cue": "O que liga Obadias 1:21 a Apocalipse 11:15?",
+    "verseRef": "Obadias 1:21",
+    "passageText": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor.",
+    "passageA": {
+      "ref": "Obadias 1:21",
+      "text": "E surgirão salvadores ao monte Sião, para julgar a montanha de Esaú; e o reino será do Senhor."
+    },
+    "passageB": {
+      "ref": "Apocalipse 11:15",
+      "text": "E o sétimo anjo tocou a trombeta, e no céu houve grandes vozes que afirmavam: \"O reino do mundo se tornou de nosso Senhor e de seu Cristo, e Ele reinará pelos séculos dos séculos.\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino final é dos homens"
+      },
+      {
+        "id": "b",
+        "text": "O reino final é de Deus"
+      },
+      {
+        "id": "c",
+        "text": "O reino final nunca chega"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e o reino será do Senhor",
+    "feedbackCorrect": "Obadias termina com o reino do Senhor, e o Apocalipse mostra esse reino chegando.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, o reino é do Senhor, e não dos homens.",
+      "c": "Nos dois textos, o reino do Senhor se cumpre."
+    },
+    "hint": "Veja de quem o reino se torna.",
+    "learningObjective": "Ligar o reino de Obadias à sua realização no Apocalipse.",
+    "evidence": [
+      "Obadias 1:21",
+      "Apocalipse 11:15"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-07",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Obadias 1:17, toque o trecho que mostra Sião como lugar separado para Deus.",
+    "prompt": "Em Obadias 1:17, toque o trecho que mostra Sião como lugar separado para Deus.",
+    "cue": "Em Obadias 1:17, toque o trecho que mostra Sião como lugar separado para Deus.",
+    "verseRef": "Obadias 1:17",
+    "passageText": "Mas, no monte Sião, haverá livramento; será um local sagrado, e os da casa de Jacó possuirão suas heranças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "suas heranças"
+      },
+      {
+        "id": "b",
+        "text": "livramento"
+      },
+      {
+        "id": "c",
+        "text": "local sagrado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "será um local sagrado",
+    "feedbackCorrect": "O texto chama Sião de \"local sagrado\": lugar separado para Deus.",
+    "feedbackWrong": {
+      "a": "\"Suas heranças\" é o que Jacó possuirá, não o caráter do lugar.",
+      "b": "\"Livramento\" é o que Sião recebe, não o que a separa para Deus."
+    },
+    "hint": "Procure a descrição do lugar.",
+    "learningObjective": "Sustentar com o texto que Sião é lugar separado.",
+    "evidence": [
+      "Obadias 1:17"
+    ]
+  },
+  {
+    "id": "obadias-cap-pro-obc-boss-1-08",
+    "trail": "obadias-cap",
+    "section": "obc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de Sião na história da Bíblia?",
+    "prompt": "Qual sequência revela o caminho de Sião na história da Bíblia?",
+    "cue": "Qual sequência revela o caminho de Sião na história da Bíblia?",
+    "verseRef": "Obadias 1:17",
+    "passageText": "Mas, no monte Sião, haverá livramento; será um local sagrado, e os da casa de Jacó possuirão suas heranças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Obadias promete livramento no monte Sião"
+      },
+      {
+        "id": "b",
+        "text": "Hebreus diz que os crentes chegaram ao monte Sião"
+      },
+      {
+        "id": "c",
+        "text": "Apocalipse mostra a nova Jerusalém descendo do céu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "no monte Sião, haverá livramento",
+    "feedbackCorrect": "A promessa de livramento em Sião chega à Jerusalém celestial e à cidade nova.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Obadias 1:17, Hebreus 12:22 e Apocalipse 21:2."
+    },
+    "hint": "Parta da promessa em Obadias e avance ao Novo Testamento.",
+    "learningObjective": "Ver Sião como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Obadias 1:17",
+      "Hebreus 12:22",
+      "Apocalipse 21:2"
+    ]
+  }
+]

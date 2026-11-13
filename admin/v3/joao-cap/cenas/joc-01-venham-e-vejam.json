@@ -1,0 +1,924 @@
+{
+  "study": {
+    "slug": "joc-01-venham-e-vejam",
+    "passageRef": "João 1:37–42",
+    "passageText": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus. E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está hospedado? Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora. Era André, o irmão de Simão Pedro, um dos dois que tinham ouvido o testemunho de João e seguido Jesus. Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo). E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro).",
+    "passages": [
+      {
+        "ref": "João 1:37–42",
+        "text": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus. E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está hospedado? Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora. Era André, o irmão de Simão Pedro, um dos dois que tinham ouvido o testemunho de João e seguido Jesus. Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo). E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro)."
+      },
+      {
+        "ref": "João 1:35–36",
+        "text": "No dia seguinte, João estava novamente presente, acompanhado de dois dos seus discípulos. Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus!"
+      }
+    ],
+    "context": "No dia anterior, João já tinha apontado Jesus. Neste dia ele está com dois discípulos quando Jesus passa. O trecho acompanha o que esses dois fazem em seguida.",
+    "keyword": "Messias",
+    "keywordGloss": "Título que André anuncia ao irmão, explicado no texto como o Cristo.",
+    "focusQuestion": "Quando você encontra Jesus, a quem você chama para ver também?",
+    "reflectionPrompts": [
+      "Ouvir e seguir",
+      "Ficar com Jesus",
+      "Chamar o irmão"
+    ],
+    "facts": [
+      {
+        "text": "João estava acompanhado de dois dos seus discípulos.",
+        "evidenceRef": "João 1:35",
+        "evidenceSpan": "acompanhado de dois dos seus discípulos"
+      },
+      {
+        "text": "Ao ver Jesus passar, João exclamou que ele é o Cordeiro de Deus.",
+        "evidenceRef": "João 1:36",
+        "evidenceSpan": "Eis o Cordeiro de Deus"
+      },
+      {
+        "text": "Os dois discípulos seguiram a Jesus.",
+        "evidenceRef": "João 1:37",
+        "evidenceSpan": "seguiram a Jesus"
+      },
+      {
+        "text": "Jesus convida os dois a vir e ver, e eles ficam com ele naquele dia.",
+        "evidenceRef": "João 1:39",
+        "evidenceSpan": "Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia."
+      },
+      {
+        "text": "André disse ao irmão que já tinham encontrado o Messias.",
+        "evidenceRef": "João 1:41",
+        "evidenceSpan": "Já encontramos o Messias"
+      },
+      {
+        "text": "André levou Simão a Jesus.",
+        "evidenceRef": "João 1:42",
+        "evidenceSpan": "E o levou a Jesus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Cordeiro",
+        "gloss": "Título com que João apresenta Jesus aos dois discípulos."
+      },
+      {
+        "term": "testemunho",
+        "gloss": "O que os dois ouviram de João antes de seguir Jesus."
+      },
+      {
+        "term": "Messias",
+        "gloss": "Título que André anuncia ao irmão; o texto o traduz por Cristo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "João aponta Jesus aos discípulos",
+        "evidenceRef": "João 1:35–36"
+      },
+      {
+        "label": "Os dois seguem Jesus e permanecem",
+        "evidenceRef": "João 1:37–39"
+      },
+      {
+        "label": "André anuncia o Messias ao irmão",
+        "evidenceRef": "João 1:40–41"
+      },
+      {
+        "label": "Jesus olha para Simão e o nomeia",
+        "evidenceRef": "João 1:42"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Ao ouvir o que João diz, os dois discípulos seguem a Jesus.",
+        "marker": "ouvindo-o",
+        "evidenceRef": "João 1:37"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois do convite, os dois veem a morada e ficam com Jesus naquele dia.",
+        "marker": "ficaram",
+        "evidenceRef": "João 1:39"
+      },
+      {
+        "kind": "causa",
+        "text": "Depois de anunciar o Messias, André leva o irmão a Jesus.",
+        "marker": null,
+        "evidenceRef": "João 1:41–42"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 1:29",
+        "bridge": "Cordeiro anunciado por João",
+        "text": "No dia seguinte, João viu Jesus, que se aproximava dele, e disse: Eis o Cordeiro de Deus, que tira o pecado do mundo!"
+      },
+      {
+        "ref": "João 4:29",
+        "bridge": "Chamar outro para ver",
+        "text": "Venham ver um homem que me disse tudo o que eu tenho feito: será este, porventura, o Cristo?"
+      },
+      {
+        "ref": "João 1:45",
+        "bridge": "Achar e contar a outro",
+        "text": "Filipe encontrou Natanael e disse-lhe: Encontramos aquele de quem Moisés escreveu na lei e a quem os profetas se referiram: Jesus, o Nazareno, filho de José."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "André encontra o Messias e guarda a notícia só para si.",
+        "why": "Ele procura Simão, diz que encontraram o Messias e o leva a Jesus."
+      },
+      {
+        "text": "Jesus recusa Simão e o manda de volta, sem o receber.",
+        "why": "André o leva a Jesus, que olha para ele e diz que será chamado Cefas."
+      },
+      {
+        "text": "Cefas já era o nome de Simão, e Jesus apenas o repete.",
+        "why": "Jesus diz que Simão será chamado Cefas, e o texto explica o sentido desse nome."
+      }
+    ],
+    "centralInsight": "Quem encontra Jesus vai chamar o irmão: achamos o Messias.",
+    "anchorQuestion": "O que André disse a Simão quando o encontrou?",
+    "relatedVerses": [
+      {
+        "reference": "João 1:29",
+        "reason": "Cordeiro anunciado por João"
+      },
+      {
+        "reference": "João 4:29",
+        "reason": "Chamar outro para ver"
+      },
+      {
+        "reference": "João 1:45",
+        "reason": "Achar e contar a outro"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "joao-cap-sem-joc-01-venham-e-vejam-01",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em João 1:36, João chamou Jesus de Cordeiro de Deus.",
+      "prompt": "Em João 1:36, João chamou Jesus de Cordeiro de Deus.",
+      "cue": "Em João 1:36, João chamou Jesus de Cordeiro de Deus.",
+      "verseRef": "João 1:36",
+      "passageText": "Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Eis o Cordeiro de Deus",
+      "feedbackCorrect": "João vê Jesus passar e exclama que ele é o Cordeiro de Deus.",
+      "feedbackWrong": {
+        "false": "O versículo traz a exclamação de João: Eis o Cordeiro de Deus."
+      },
+      "hint": "Leia o que João exclama ao ver Jesus passar.",
+      "learningObjective": "Reconhecer o título com que João apresenta Jesus aos discípulos.",
+      "evidence": [
+        "João 1:36"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-01-venham-e-vejam-02",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em João 1:40, toque quem era o irmão de Simão Pedro.",
+      "prompt": "Em João 1:40, toque quem era o irmão de Simão Pedro.",
+      "cue": "Em João 1:40, toque quem era o irmão de Simão Pedro.",
+      "verseRef": "João 1:40",
+      "passageText": "Era André, o irmão de Simão Pedro, um dos dois que tinham ouvido o testemunho de João e seguido Jesus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "André"
+        },
+        {
+          "id": "b",
+          "text": "Simão Pedro"
+        },
+        {
+          "id": "c",
+          "text": "João"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "André, o irmão de Simão Pedro",
+      "feedbackCorrect": "O versículo nomeia André como o irmão de Simão Pedro.",
+      "feedbackWrong": {
+        "b": "Simão Pedro é o irmão que será achado; o nome pedido é o outro.",
+        "c": "João é quem deu o testemunho; o irmão de Simão é André."
+      },
+      "hint": "O nome está logo no início do versículo.",
+      "learningObjective": "Identificar André como o irmão de Simão Pedro.",
+      "evidence": [
+        "João 1:40"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-01-venham-e-vejam-03",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo João 1:35, quem acompanhava João naquele dia?",
+      "prompt": "Segundo João 1:35, quem acompanhava João naquele dia?",
+      "cue": "Segundo João 1:35, quem acompanhava João naquele dia?",
+      "verseRef": "João 1:35",
+      "passageText": "No dia seguinte, João estava novamente presente, acompanhado de dois dos seus discípulos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus estava ali sem companhia"
+        },
+        {
+          "id": "b",
+          "text": "Dois discípulos o acompanhavam"
+        },
+        {
+          "id": "c",
+          "text": "Uma multidão vinha do templo"
+        },
+        {
+          "id": "d",
+          "text": "Simão Pedro já caminhava junto"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "acompanhado de dois dos seus discípulos",
+      "feedbackCorrect": "João estava novamente presente, acompanhado de dois dos seus discípulos.",
+      "feedbackWrong": {
+        "a": "Jesus passa no versículo seguinte; aqui João está com dois discípulos.",
+        "c": "Não há multidão neste versículo; João está com dois discípulos.",
+        "d": "Simão ainda não está na cena; o texto fala de dois discípulos de João."
+      },
+      "hint": "Veja com quem João está no fim do versículo.",
+      "learningObjective": "Observar quem estava com João quando Jesus passou.",
+      "evidence": [
+        "João 1:35"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-01-venham-e-vejam-04",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte João 1:39 na ordem do texto.",
+      "prompt": "Monte João 1:39 na ordem do texto.",
+      "cue": "Monte João 1:39 na ordem do texto.",
+      "verseRef": "João 1:39",
+      "passageText": "Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele lhes disse: Venham e vejam."
+        },
+        {
+          "id": "b",
+          "text": "Foram, viram onde ele estava morando"
+        },
+        {
+          "id": "c",
+          "text": "e ficaram com ele naquele dia."
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Venham e vejam",
+      "feedbackCorrect": "O versículo vai do convite à visita e, então, à permanência naquele dia.",
+      "feedbackWrong": {
+        "default": "Comece pela fala de Jesus; a permanência aparece no fim da frase."
+      },
+      "hint": "A fala de Jesus abre o versículo.",
+      "learningObjective": "Reconhecer a sequência do convite, da visita e da permanência.",
+      "evidence": [
+        "João 1:39"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-01-venham-e-vejam-05",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em João 1:38, que palavra completa a pergunta dos dois a Jesus?",
+      "prompt": "Em João 1:38, que palavra completa a pergunta dos dois a Jesus?",
+      "cue": "Em João 1:38, que palavra completa a pergunta dos dois a Jesus?",
+      "verseRef": "João 1:38",
+      "passageText": "E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está hospedado?",
+      "template": "E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está ___?",
+      "options": [
+        {
+          "id": "a",
+          "text": "sentado"
+        },
+        {
+          "id": "b",
+          "text": "escondido"
+        },
+        {
+          "id": "c",
+          "text": "hospedado"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "onde você está hospedado",
+      "feedbackCorrect": "Eles perguntam onde Jesus está hospedado, e ele os convida a ver.",
+      "feedbackWrong": {
+        "a": "O texto não diz que ele estava sentado; a pergunta é sobre a hospedagem.",
+        "b": "A pergunta não fala de esconderijo; eles querem saber onde ele mora."
+      },
+      "hint": "Leia a última palavra da pergunta dos discípulos.",
+      "learningObjective": "Lembrar o que os discípulos perguntam sobre o lugar de Jesus.",
+      "evidence": [
+        "João 1:38"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-01-venham-e-vejam-06",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que liga João 1:41 a este contexto?",
+      "prompt": "O que liga João 1:41 a este contexto?",
+      "cue": "O que liga João 1:41 a este contexto?",
+      "verseRef": "João 1:41",
+      "passageText": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo).",
+      "passageA": {
+        "ref": "João 1:41",
+        "text": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo)."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "André acha primeiro o irmão e lhe diz que encontraram o Messias."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio do Messias ao irmão"
+        },
+        {
+          "id": "b",
+          "text": "Troca do nome de Simão"
+        },
+        {
+          "id": "c",
+          "text": "Convite para ver a casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "André acha Simão e lhe diz que já encontraram o Messias.",
+      "feedbackWrong": {
+        "b": "O novo nome vem no versículo seguinte, na boca de Jesus.",
+        "c": "O convite para ver a morada está antes; aqui André fala com o irmão."
+      },
+      "hint": "Veja o que André diz logo depois de achar Simão.",
+      "learningObjective": "Ligar João 1:41 ao anúncio de André ao próprio irmão.",
+      "evidence": [
+        "João 1:41"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-01-venham-e-vejam-01",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em João 1:37, os dois discípulos seguiram Jesus antes de ouvir o que João dizia.",
+      "prompt": "Em João 1:37, os dois discípulos seguiram Jesus antes de ouvir o que João dizia.",
+      "cue": "Em João 1:37, os dois discípulos seguiram Jesus antes de ouvir o que João dizia.",
+      "verseRef": "João 1:37",
+      "passageText": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "ouvindo-o dizer isso, seguiram a Jesus",
+      "feedbackCorrect": "O seguir vem depois: ao ouvir o que João dizia, eles seguiram Jesus.",
+      "feedbackWrong": {
+        "true": "A frase põe o ouvir antes: ouvindo-o dizer isso, seguiram a Jesus."
+      },
+      "hint": "Observe o que acontece antes do verbo seguir.",
+      "learningObjective": "Compreender que o seguir nasce do que eles ouvem de João.",
+      "evidence": [
+        "João 1:37"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-01-venham-e-vejam-02",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em João 1:37, toque a palavra que liga o que eles ouviram ao seguir Jesus.",
+      "prompt": "Em João 1:37, toque a palavra que liga o que eles ouviram ao seguir Jesus.",
+      "cue": "Em João 1:37, toque a palavra que liga o que eles ouviram ao seguir Jesus.",
+      "verseRef": "João 1:37",
+      "passageText": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "ouvindo-o"
+        },
+        {
+          "id": "c",
+          "text": "dois discípulos"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "ouvindo-o dizer isso, seguiram a Jesus",
+      "feedbackCorrect": "Ouvindo-o liga o anúncio de João ao passo seguinte: eles seguiram Jesus.",
+      "feedbackWrong": {
+        "a": "A expressão diz para quem foram, não o que os moveu.",
+        "c": "A expressão diz quem ouviu, não o elo entre ouvir e seguir."
+      },
+      "hint": "Procure o termo entre vírgulas, antes do verbo.",
+      "learningObjective": "Reconhecer a palavra que une o anúncio de João ao seguir.",
+      "evidence": [
+        "João 1:37"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-01-venham-e-vejam-03",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "O que João 1:37 mostra sobre os dois discípulos?",
+      "prompt": "O que João 1:37 mostra sobre os dois discípulos?",
+      "cue": "O que João 1:37 mostra sobre os dois discípulos?",
+      "verseRef": "João 1:37",
+      "passageText": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir João os faz seguir Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Eles ficam parados ao lado de João"
+        },
+        {
+          "id": "c",
+          "text": "Eles vão chamar Simão antes de ir"
+        },
+        {
+          "id": "d",
+          "text": "Eles seguem sem ter ouvido João"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "ouvindo-o dizer isso, seguiram a Jesus",
+      "feedbackCorrect": "O texto une as duas ações: ao ouvir João, eles seguem Jesus.",
+      "feedbackWrong": {
+        "b": "Eles não permanecem com João; o versículo diz que seguiram Jesus.",
+        "c": "Simão só aparece depois; aqui os dois seguem Jesus.",
+        "d": "O seguir não vem solto; a frase diz que eles ouviram e então foram."
+      },
+      "hint": "Veja a ordem entre ouvir João e ir atrás de Jesus.",
+      "learningObjective": "Relacionar o anúncio de João com a decisão dos dois de seguir.",
+      "evidence": [
+        "João 1:37"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-01-venham-e-vejam-04",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Qual é a ordem dos movimentos neste relato?",
+      "prompt": "Qual é a ordem dos movimentos neste relato?",
+      "cue": "Qual é a ordem dos movimentos neste relato?",
+      "verseRef": "João 1:35–36",
+      "passageText": "No dia seguinte, João estava novamente presente, acompanhado de dois dos seus discípulos. Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus!",
+      "options": [
+        {
+          "id": "a",
+          "text": "João aponta Jesus aos discípulos"
+        },
+        {
+          "id": "b",
+          "text": "Os dois seguem Jesus e permanecem"
+        },
+        {
+          "id": "c",
+          "text": "André anuncia o Messias ao irmão"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Eis o Cordeiro de Deus",
+      "feedbackCorrect": "João aponta Jesus, os dois permanecem com ele, e André fala ao irmão.",
+      "feedbackWrong": {
+        "default": "O anúncio ao irmão vem por último, depois de apontar, seguir e ficar."
+      },
+      "hint": "O relato começa com João diante dos discípulos.",
+      "learningObjective": "Compreender os três movimentos principais do encontro.",
+      "evidence": [
+        "João 1:35–36",
+        "João 1:37–39",
+        "João 1:40–41"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-01-venham-e-vejam-05",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em João 1:39, o que os dois fizeram com Jesus naquele dia?",
+      "prompt": "Em João 1:39, o que os dois fizeram com Jesus naquele dia?",
+      "cue": "Em João 1:39, o que os dois fizeram com Jesus naquele dia?",
+      "verseRef": "João 1:39",
+      "passageText": "Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora.",
+      "template": "Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ___ com ele naquele dia. Era cerca da décima hora.",
+      "options": [
+        {
+          "id": "a",
+          "text": "partiram"
+        },
+        {
+          "id": "b",
+          "text": "voltaram"
+        },
+        {
+          "id": "c",
+          "text": "ficaram"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "ficaram com ele naquele dia",
+      "feedbackCorrect": "Depois de ver a morada, eles ficaram com Jesus naquele dia.",
+      "feedbackWrong": {
+        "a": "O texto não diz que partiram; eles permaneceram com ele naquele dia.",
+        "b": "Eles não voltam atrás; o verbo do versículo é permanecer com Jesus."
+      },
+      "hint": "Observe o verbo depois de verem onde ele morava.",
+      "learningObjective": "Identificar o resultado do convite naquele dia.",
+      "evidence": [
+        "João 1:39"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-01-venham-e-vejam-06",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga João 1:36 a João 1:29?",
+      "prompt": "O que liga João 1:36 a João 1:29?",
+      "cue": "O que liga João 1:36 a João 1:29?",
+      "verseRef": "João 1:36",
+      "passageText": "Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus!",
+      "passageA": {
+        "ref": "João 1:36",
+        "text": "Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus!"
+      },
+      "passageB": {
+        "ref": "João 1:29",
+        "text": "No dia seguinte, João viu Jesus, que se aproximava dele, e disse: Eis o Cordeiro de Deus, que tira o pecado do mundo!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Permanência na mesma casa"
+        },
+        {
+          "id": "b",
+          "text": "Novo nome dado a Simão"
+        },
+        {
+          "id": "c",
+          "text": "Cordeiro anunciado por João"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Eis o Cordeiro de Deus",
+      "feedbackCorrect": "Nos dois dias, João aponta Jesus com o mesmo título: Cordeiro de Deus.",
+      "feedbackWrong": {
+        "a": "A permanência na morada vem depois; os dois textos trazem o título.",
+        "b": "O novo nome é dado por Jesus mais adiante, não nestes anúncios."
+      },
+      "hint": "Compare a exclamação de João nos dois textos.",
+      "learningObjective": "Relacionar o anúncio de João 1:36 ao que ele já dissera.",
+      "evidence": [
+        "João 1:36",
+        "João 1:29"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-01-venham-e-vejam-01",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em João 1:41–42, André anuncia o Messias ao irmão e o leva até Jesus.",
+      "prompt": "Em João 1:41–42, André anuncia o Messias ao irmão e o leva até Jesus.",
+      "cue": "Em João 1:41–42, André anuncia o Messias ao irmão e o leva até Jesus.",
+      "verseRef": "João 1:41–42",
+      "passageText": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo). E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro).",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "André acha Simão, anuncia o Messias e, em seguida, o leva a Jesus.",
+      "feedbackWrong": {
+        "false": "O texto mostra o anúncio e o passo seguinte: André leva Simão a Jesus."
+      },
+      "hint": "Leia o que André diz e o que faz logo depois.",
+      "learningObjective": "Interpretar o gesto de André como anúncio e condução do irmão.",
+      "evidence": [
+        "João 1:41–42"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-01-venham-e-vejam-02",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em João 1:42, toque o gesto de André que conduz Simão a Jesus.",
+      "prompt": "Em João 1:42, toque o gesto de André que conduz Simão a Jesus.",
+      "cue": "Em João 1:42, toque o gesto de André que conduz Simão a Jesus.",
+      "verseRef": "João 1:42",
+      "passageText": "E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro).",
+      "options": [
+        {
+          "id": "a",
+          "text": "olhou para"
+        },
+        {
+          "id": "b",
+          "text": "será chamado"
+        },
+        {
+          "id": "c",
+          "text": "o levou"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "E o levou a Jesus",
+      "feedbackCorrect": "A primeira frase mostra o gesto de André: ele leva o irmão a Jesus.",
+      "feedbackWrong": {
+        "a": "Quem olha é Jesus, já diante de Simão; o gesto de André vem antes.",
+        "b": "A frase diz o nome futuro; quem conduz Simão é o gesto do início."
+      },
+      "hint": "Olhe a primeira frase, antes de Jesus falar.",
+      "learningObjective": "Localizar no texto o gesto de André ao trazer o irmão.",
+      "evidence": [
+        "João 1:42"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-01-venham-e-vejam-03",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura de João 1:41–42 o texto sustenta?",
+      "prompt": "Que leitura de João 1:41–42 o texto sustenta?",
+      "cue": "Que leitura de João 1:41–42 o texto sustenta?",
+      "verseRef": "João 1:41–42",
+      "passageText": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo). E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus manda Simão embora sem o receber"
+        },
+        {
+          "id": "b",
+          "text": "Cefas era o nome que Simão já tinha"
+        },
+        {
+          "id": "c",
+          "text": "André esconde a descoberta do irmão"
+        },
+        {
+          "id": "d",
+          "text": "André anuncia o Messias e leva Simão"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "E o levou a Jesus",
+      "feedbackCorrect": "André não cala o achado: anuncia o Messias e leva Simão a Jesus.",
+      "feedbackWrong": {
+        "a": "Jesus não o despede; olha para Simão e lhe anuncia outro nome.",
+        "b": "O nome é futuro: você será chamado Cefas, não um nome que ele já usava.",
+        "c": "Ele não esconde; procura o irmão e diz que encontraram o Messias."
+      },
+      "hint": "Compare cada leitura com o anúncio e com o que Jesus diz.",
+      "learningObjective": "Escolher a leitura que o encontro de André com Simão sustenta.",
+      "evidence": [
+        "João 1:41–42"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-01-venham-e-vejam-04",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual lógica liga o testemunho, a permanência e o anúncio?",
+      "prompt": "Qual lógica liga o testemunho, a permanência e o anúncio?",
+      "cue": "Qual lógica liga o testemunho, a permanência e o anúncio?",
+      "verseRef": "João 1:37",
+      "passageText": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir o testemunho leva a seguir"
+        },
+        {
+          "id": "b",
+          "text": "Aceitar o convite leva a ficar"
+        },
+        {
+          "id": "c",
+          "text": "Ficar com Jesus leva a anunciar"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "ouvindo-o dizer isso, seguiram a Jesus",
+      "feedbackCorrect": "Quem ouve segue, quem aceita o convite fica, e quem fica anuncia.",
+      "feedbackWrong": {
+        "default": "O anúncio ao irmão é o último passo, depois de seguir e ficar."
+      },
+      "hint": "O anúncio ao irmão é o ponto de chegada.",
+      "learningObjective": "Encadear testemunho, permanência e anúncio neste encontro.",
+      "evidence": [
+        "João 1:37",
+        "João 1:39",
+        "João 1:41"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-01-venham-e-vejam-05",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em João 1:41, que título André diz ter encontrado?",
+      "prompt": "Em João 1:41, que título André diz ter encontrado?",
+      "cue": "Em João 1:41, que título André diz ter encontrado?",
+      "verseRef": "João 1:41",
+      "passageText": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo).",
+      "template": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o ___ (que, traduzido, é o Cristo).",
+      "options": [
+        {
+          "id": "a",
+          "text": "Messias"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "profeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "André diz que encontraram o Messias, e o texto explica: o Cristo.",
+      "feedbackWrong": {
+        "b": "O versículo não diz rei; André anuncia o Messias, isto é, o Cristo.",
+        "c": "O título na boca de André é Messias, não profeta."
+      },
+      "hint": "Leia o título antes do parêntese.",
+      "learningObjective": "Lembrar o título que carrega o anúncio de André ao irmão.",
+      "evidence": [
+        "João 1:41"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-01-venham-e-vejam-06",
+      "trail": "joao-cap",
+      "section": "joc-01-venham-e-vejam",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga João 1:41 a João 4:29?",
+      "prompt": "O que liga João 1:41 a João 4:29?",
+      "cue": "O que liga João 1:41 a João 4:29?",
+      "verseRef": "João 1:41",
+      "passageText": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo).",
+      "passageA": {
+        "ref": "João 1:41",
+        "text": "Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo)."
+      },
+      "passageB": {
+        "ref": "João 4:29",
+        "text": "Venham ver um homem que me disse tudo o que eu tenho feito: será este, porventura, o Cristo?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nome novo dado a Simão"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio depois do encontro"
+        },
+        {
+          "id": "c",
+          "text": "Chamar outro para ver"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "André chama o irmão, e a mulher também chama outros a ver o Cristo.",
+      "feedbackWrong": {
+        "a": "O novo nome é de Simão; a ponte é chamar outra pessoa para ver.",
+        "b": "Nenhum dos dois textos fica no silêncio; os dois chamam alguém."
+      },
+      "hint": "Veja o que a mulher pede que as pessoas façam.",
+      "learningObjective": "Ligar o anúncio de André ao chamado para vir ver o Cristo.",
+      "evidence": [
+        "João 1:41",
+        "João 4:29"
+      ]
+    }
+  ]
+}

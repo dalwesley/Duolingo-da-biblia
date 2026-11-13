@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Isaías 65:17–22",
+    "passages": [
+      {
+        "ref": "Isaías 65:17–22"
+      }
+    ],
+    "context": "Neste trecho, a palavra do Senhor alcança o povo com juízo e esperança. Observe o que o texto afirma antes de interpretar.",
+    "keyword": "crio",
+    "keywordGloss": "Termo do trecho ligado ao sentido da cena.",
+    "focusQuestion": "O que este trecho pede de você diante do Senhor?",
+    "reflectionPrompts": [
+      "Ouvir a palavra",
+      "Confiar no Senhor",
+      "Responder com fé"
+    ],
+    "facts": [
+      {
+        "text": "Em Isaías 65:17, o texto registra: Pois eis que eu crio novos céus e.",
+        "evidenceRef": "Isaías 65:17",
+        "evidenceSpan": "Pois eis que eu crio novos céus e"
+      },
+      {
+        "text": "Em Isaías 65:18, o texto registra: Mas vocês se alegrarão e exultarão perpetuamente no.",
+        "evidenceRef": "Isaías 65:18",
+        "evidenceSpan": "Mas vocês se alegrarão e exultarão perpetuamente no"
+      },
+      {
+        "text": "Em Isaías 65:19, o texto registra: E exultarei por causa de Jerusalém e me.",
+        "evidenceRef": "Isaías 65:19",
+        "evidenceSpan": "E exultarei por causa de Jerusalém e me"
+      },
+      {
+        "text": "Em Isaías 65:20, o texto registra: Não haverá mais ali criança que viva poucos.",
+        "evidenceRef": "Isaías 65:20",
+        "evidenceSpan": "Não haverá mais ali criança que viva poucos"
+      },
+      {
+        "text": "Em Isaías 65:21, o texto registra: E edificarão casas e habitarão nelas; plantarão vinhas.",
+        "evidenceRef": "Isaías 65:21",
+        "evidenceSpan": "E edificarão casas e habitarão nelas; plantarão vinhas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "crio",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "novos",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "céus",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "crio novos céus nova",
+        "evidenceRef": "Isaías 65:17"
+      },
+      {
+        "label": "vocês alegrarão exultarão perpetuamente",
+        "evidenceRef": "Isaías 65:18"
+      },
+      {
+        "label": "exultarei causa Jerusalém alegrarei",
+        "evidenceRef": "Isaías 65:19"
+      },
+      {
+        "label": "haverá criança viva poucos",
+        "evidenceRef": "Isaías 65:20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Relação de causa presente em Isaías 65:17.",
+        "marker": "Pois",
+        "evidenceRef": "Isaías 65:17"
+      },
+      {
+        "kind": "contraste",
+        "text": "Relação de contraste presente em Isaías 65:18.",
+        "marker": "porque",
+        "evidenceRef": "Isaías 65:18"
+      },
+      {
+        "kind": "resultado",
+        "text": "Relação de resultado presente em Isaías 65:20.",
+        "marker": "pois",
+        "evidenceRef": "Isaías 65:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio"
+      },
+      {
+        "ref": "Jeremias 1:19",
+        "bridge": "Eu estou contigo"
+      },
+      {
+        "ref": "Mateus 5:6",
+        "bridge": "Fome de justiça"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não exige mudança concreta de vida.",
+        "why": "A palavra do Senhor chama a ouvir e agir."
+      },
+      {
+        "text": "A mensagem vale só para lideranças, nunca para o povo.",
+        "why": "O endereço do texto alcança o povo e a cidade."
+      },
+      {
+        "text": "O Senhor anuncia sem compromisso com o cumprimento.",
+        "why": "O texto liga a palavra de Deus ao que Ele faz."
+      }
+    ],
+    "centralInsight": "Não se ouvirá nela mais voz de choro nem de clamor.",
+    "anchorQuestion": "O que Isaías 65:17 afirma de modo claro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 65:17, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Isaías 65:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois eis que eu crio novos céus e uma nova",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Isaías 65:17.",
+      "evidence": [
+        "Isaías 65:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 65:18, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 65:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "vocês"
+        },
+        {
+          "id": "b",
+          "text": "alegrarão"
+        },
+        {
+          "id": "c",
+          "text": "exultarão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas vocês se aleg",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 65:18.",
+      "evidence": [
+        "Isaías 65:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 65:19, qual leitura o texto sustenta?",
+      "verseRef": "Isaías 65:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus exultará por Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E exultarei por causa de Jerusalém e",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Isaías 65:19.",
+      "evidence": [
+        "Isaías 65:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Isaías 65:20.",
+      "verseRef": "Isaías 65:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não haverá mais ali criança que viva poucos dias"
+        },
+        {
+          "id": "b",
+          "text": "nem velho que não cumpra os seus anos; pois o jovem morrerá aos cem an"
+        },
+        {
+          "id": "c",
+          "text": "e o pecador, mesmo aos cem anos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não haverá mais ali criança que viva poucos dias, ",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 65:20.",
+      "evidence": [
+        "Isaías 65:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 65:21, qual palavra completa o sentido do versículo?",
+      "verseRef": "Isaías 65:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "edificarão"
+        },
+        {
+          "id": "b",
+          "text": "casas"
+        },
+        {
+          "id": "c",
+          "text": "habitarão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E edificarão casas e h",
+      "feedbackCorrect": "A palavra do texto é edificarão.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Isaías 65:21.",
+      "evidence": [
+        "Isaías 65:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 65:22 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 65:22",
+      "passageA": {
+        "ref": "Isaías 65:22",
+        "text": "Não construirão para que outros habitem; não plantarão para que outros comam; po"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor dirige a palavra ao seu povo neste trecho."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Sem chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não construirão para que outros habitem; não plant",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Isaías 65:22.",
+      "evidence": [
+        "Isaías 65:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 65:19, o texto inclui a ideia de E exultarei por causa de Jerusalém.",
+      "verseRef": "Isaías 65:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "E exultarei por causa de Jerusalém e me alegrarei no",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Isaías 65:19.",
+      "evidence": [
+        "Isaías 65:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 65:20, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 65:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "haverá"
+        },
+        {
+          "id": "b",
+          "text": "criança"
+        },
+        {
+          "id": "c",
+          "text": "viva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não haverá mais al",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 65:20.",
+      "evidence": [
+        "Isaías 65:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Isaías 65:21, qual leitura o texto sustenta?",
+      "verseRef": "Isaías 65:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E edificarão casas e habitarão nelas; plantarão vinhas",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Isaías 65:21.",
+      "evidence": [
+        "Isaías 65:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento de Isaías 65:22.",
+      "verseRef": "Isaías 65:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "construirão outros habitem"
+        },
+        {
+          "id": "b",
+          "text": "plantarão outros comam"
+        },
+        {
+          "id": "c",
+          "text": "longevidade povo será árvore"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não construirão para que outros habitem; não plant",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 65:22.",
+      "evidence": [
+        "Isaías 65:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 65:17, qual palavra completa o sentido do versículo?",
+      "verseRef": "Isaías 65:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "crio"
+        },
+        {
+          "id": "b",
+          "text": "novos"
+        },
+        {
+          "id": "c",
+          "text": "céus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "is que eu crio novos céu",
+      "feedbackCorrect": "A palavra do texto é crio.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Isaías 65:17.",
+      "evidence": [
+        "Isaías 65:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 65:18 a Salmos 46:1?",
+      "verseRef": "Isaías 65:18",
+      "passageA": {
+        "ref": "Isaías 65:18",
+        "text": "Mas vocês se alegrarão e exultarão perpetuamente no que eu crio; porque eis que "
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas vocês se alegrarão e exultarão perpetuamente n",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Isaías 65:18.",
+      "evidence": [
+        "Isaías 65:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Isaías 65:21, o texto inclui a ideia de E edificarão casas e habitarão nelas;.",
+      "verseRef": "Isaías 65:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "E edificarão casas e habitarão nelas; plantarão vinhas e comerão",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Isaías 65:21.",
+      "evidence": [
+        "Isaías 65:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 65:22, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 65:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "construirão"
+        },
+        {
+          "id": "b",
+          "text": "outros"
+        },
+        {
+          "id": "c",
+          "text": "habitem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não construirão para qu",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 65:22.",
+      "evidence": [
+        "Isaías 65:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Isaías 65:17, qual leitura o texto sustenta?",
+      "verseRef": "Isaías 65:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois eis que eu crio novos céus e",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Isaías 65:17.",
+      "evidence": [
+        "Isaías 65:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o movimento de Isaías 65:18.",
+      "verseRef": "Isaías 65:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "vocês alegrarão exultarão perpetuamente"
+        },
+        {
+          "id": "b",
+          "text": "crio Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "alegria povo regozijo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas vocês se alegrarão e exultarão perpetuamente n",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 65:18.",
+      "evidence": [
+        "Isaías 65:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 65:19, qual palavra completa o sentido do versículo?",
+      "verseRef": "Isaías 65:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "exultarei"
+        },
+        {
+          "id": "b",
+          "text": "causa"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E exultarei por causa",
+      "feedbackCorrect": "A palavra do texto é exultarei.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Isaías 65:19.",
+      "evidence": [
+        "Isaías 65:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 65:20 a Jeremias 1:19?",
+      "verseRef": "Isaías 65:20",
+      "passageA": {
+        "ref": "Isaías 65:20",
+        "text": "Não haverá mais ali criança que viva poucos dias, nem velho que não cumpra os se"
+      },
+      "passageB": {
+        "ref": "Jeremias 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu estou contigo"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não haverá mais ali criança que viva poucos dias, ",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Isaías 65:20.",
+      "evidence": [
+        "Isaías 65:20"
+      ]
+    }
+  ]
+}

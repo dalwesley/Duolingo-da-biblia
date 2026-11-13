@@ -1,0 +1,503 @@
+{
+  "study": {
+    "passageRef": "Mateus 23:23–28",
+    "passages": [
+      {
+        "ref": "Mateus 23:23–28"
+      }
+    ],
+    "context": "Jesus está em Jerusalém e dirige uma série de ais aos escribas e fariseus. Fala de ervas do dízimo, de copo e prato, e de sepulcros caiados de branco, imagens conhecidas do culto e do enterro.",
+    "keyword": "interior",
+    "keywordGloss": "Interior é o lado do copo e da pessoa que Jesus põe antes da aparência.",
+    "focusQuestion": "O que em você está bonito por fora e pede cuidado por dentro?",
+    "reflectionPrompts": [
+      "O dízimo miúdo",
+      "O copo por dentro",
+      "O sepulcro caiado"
+    ],
+    "facts": [
+      {
+        "text": "Eles dão o dízimo da hortelã, do endro e do cominho.",
+        "evidenceRef": "Mateus 23:23",
+        "evidenceSpan": "vocês dão o dízimo da hortelã, do endro e do cominho"
+      },
+      {
+        "text": "Eles negligenciam a justiça, a misericórdia e a fé.",
+        "evidenceRef": "Mateus 23:23",
+        "evidenceSpan": "negligenciam os preceitos mais importantes da Lei: a justiça, a misericórdia e a fé"
+      },
+      {
+        "text": "Eles coam um mosquito e engolem um camelo.",
+        "evidenceRef": "Mateus 23:24",
+        "evidenceSpan": "coam um mosquito e engolem um camelo"
+      },
+      {
+        "text": "Por dentro, o copo e o prato estão cheios de rapina e intemperança.",
+        "evidenceRef": "Mateus 23:25",
+        "evidenceSpan": "por dentro estão cheios de rapina e intemperança"
+      },
+      {
+        "text": "Jesus manda limpar primeiro o interior do copo e do prato.",
+        "evidenceRef": "Mateus 23:26",
+        "evidenceSpan": "Limpe primeiro o interior do copo e do prato"
+      },
+      {
+        "text": "Eles se parecem com sepulcros caiados, bonitos por fora e cheios de imundícia por dentro.",
+        "evidenceRef": "Mateus 23:27",
+        "evidenceSpan": "se assemelham a sepulcros caiados, que, por fora, parecem realmente bonitos, mas, por dentro, estão cheios de ossos de mortos e de toda sorte de imundícia"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "hipócritas",
+        "gloss": "Nome que Jesus repete para quem mostra uma coisa e vive outra."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "Um dos preceitos que Jesus chama de mais importantes e que eles deixam de lado."
+      },
+      {
+        "term": "interior",
+        "gloss": "O lado do copo e da pessoa que Jesus manda limpar antes da aparência."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O dízimo miúdo deixa o essencial",
+        "evidenceRef": "Mateus 23:23"
+      },
+      {
+        "label": "A limpeza do copo começa por dentro",
+        "evidenceRef": "Mateus 23:25–26"
+      },
+      {
+        "label": "O sepulcro caiado esconde a imundícia",
+        "evidenceRef": "Mateus 23:27–28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Eles dão o dízimo das ervas, mas negligenciam a justiça, a misericórdia e a fé.",
+        "marker": "mas",
+        "evidenceRef": "Mateus 23:23"
+      },
+      {
+        "kind": "contraste",
+        "text": "O porém corrige o desvio: devem praticar o mais importante sem abandonar o dízimo.",
+        "marker": "porém",
+        "evidenceRef": "Mateus 23:23"
+      },
+      {
+        "kind": "propósito",
+        "text": "Limpar o interior tem o fim de fazer o exterior ficar limpo também.",
+        "marker": "para",
+        "evidenceRef": "Mateus 23:26"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Miqueias 6:8",
+        "bridge": "Justiça e misericórdia"
+      },
+      {
+        "ref": "1 Samuel 16:7",
+        "bridge": "Senhor contempla o coração"
+      },
+      {
+        "ref": "Lucas 11:39",
+        "bridge": "Copo sujo por dentro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O dízimo da hortelã, do endro e do cominho já cumpre os preceitos mais importantes da Lei.",
+        "why": "Jesus diz que eles dão esse dízimo e, ainda assim, negligenciam a justiça, a misericórdia e a fé."
+      },
+      {
+        "text": "Limpar o exterior do copo e do prato já torna limpo o interior.",
+        "why": "O interior está cheio de rapina e intemperança, e Jesus manda limpá-lo primeiro para o exterior ficar limpo."
+      },
+      {
+        "text": "Parecer justo diante dos homens é o mesmo que ser justo por dentro.",
+        "why": "O texto separa a aparência diante dos homens da hipocrisia e da maldade que enchem o interior."
+      }
+    ],
+    "centralInsight": "Deus olha o interior: justiça, misericórdia e fidelidade valem mais que a aparência.",
+    "anchorQuestion": "Em Mateus 23, o que Jesus manda limpar primeiro no copo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 23:26, Jesus manda limpar primeiro o exterior do copo e do prato.",
+      "verseRef": "Mateus 23:26",
+      "correctOptionId": "false",
+      "evidenceSpan": "Limpe primeiro o interior do copo e do prato",
+      "feedbackCorrect": "Jesus manda limpar primeiro o interior. O exterior fica limpo como consequência.",
+      "feedbackWrong": {
+        "true": "O exterior não vem primeiro. Jesus manda começar pelo interior do copo."
+      },
+      "hint": "Olhe o que Jesus manda limpar primeiro no copo.",
+      "learningObjective": "Observar que Jesus manda começar a limpeza pelo interior do copo.",
+      "evidence": ["Mateus 23:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 23:24, toque quem Jesus interpela no início do versículo.",
+      "verseRef": "Mateus 23:24",
+      "options": [
+        { "id": "a", "text": "Condutores cegos" },
+        { "id": "b", "text": "um mosquito" },
+        { "id": "c", "text": "um camelo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Condutores cegos",
+      "feedbackCorrect": "O alerta se dirige aos condutores cegos. Mosquito e camelo são as imagens.",
+      "feedbackWrong": {
+        "b": "O mosquito é o que eles coam, não a quem Jesus fala.",
+        "c": "O camelo é o que eles engolem, não a quem Jesus fala."
+      },
+      "hint": "É o vocativo que abre o versículo.",
+      "learningObjective": "Identificar a quem Jesus dirige o alerta do mosquito e do camelo.",
+      "evidence": ["Mateus 23:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 23:25, o que enche o copo e o prato por dentro?",
+      "verseRef": "Mateus 23:25",
+      "options": [
+        { "id": "a", "text": "Justiça, misericórdia e fé" },
+        { "id": "b", "text": "Rapina e intemperança" },
+        { "id": "c", "text": "Hortelã, endro e cominho" },
+        { "id": "d", "text": "Ossos de mortos e imundícia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por dentro estão cheios de rapina e intemperança",
+      "feedbackCorrect": "Por dentro, o copo e o prato estão cheios de rapina e intemperança.",
+      "feedbackWrong": {
+        "a": "Justiça, misericórdia e fé são os preceitos que eles negligenciam.",
+        "c": "Hortelã, endro e cominho são as ervas do dízimo, não o conteúdo do copo.",
+        "d": "Ossos e imundícia estão no sepulcro, não no copo."
+      },
+      "hint": "Leia o que o versículo diz depois de por dentro.",
+      "learningObjective": "Reconhecer o que o texto diz haver dentro do copo e do prato.",
+      "evidence": ["Mateus 23:25"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 23:23 na ordem do texto.",
+      "verseRef": "Mateus 23:23",
+      "options": [
+        { "id": "a", "text": "Ai de vocês, escribas e fariseus, hipócritas!" },
+        { "id": "b", "text": "Pois vocês dão o dízimo da hortelã" },
+        { "id": "c", "text": "a justiça, a misericórdia e a fé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ai de vocês, escribas e fariseus, hipócritas",
+      "feedbackCorrect": "O versículo abre com o ai, segue no dízimo e chega aos preceitos da Lei.",
+      "feedbackWrong": {
+        "default": "Comece pelo ai aos hipócritas. O dízimo vem antes dos preceitos."
+      },
+      "hint": "A frase começa pelo ai e chega aos preceitos da Lei.",
+      "learningObjective": "Reconhecer a sequência de Mateus 23:23.",
+      "evidence": ["Mateus 23:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 23:23, o que eles dão da hortelã, do endro e do cominho?",
+      "verseRef": "Mateus 23:23",
+      "options": [
+        { "id": "a", "text": "tributo" },
+        { "id": "b", "text": "dízimo" },
+        { "id": "c", "text": "fruto" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "dão o dízimo da hortelã",
+      "feedbackCorrect": "Eles dão o dízimo dessas ervas, e ainda assim negligenciam o mais importante.",
+      "feedbackWrong": {
+        "a": "O texto não fala em tributo. O que eles dão dessas ervas é o dízimo.",
+        "c": "O texto não fala em fruto. O que eles dão dessas ervas é o dízimo."
+      },
+      "hint": "É o nome do que eles entregam das três ervas.",
+      "learningObjective": "Lembrar o que eles entregam da hortelã, do endro e do cominho.",
+      "evidence": ["Mateus 23:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 23:27 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 23:27",
+      "passageA": { "ref": "Mateus 23:27" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O sepulcro caiado parece bonito por fora e está cheio de imundícia por dentro."
+      },
+      "options": [
+        { "id": "a", "text": "Coar o mosquito" },
+        { "id": "b", "text": "Beleza que esconde imundícia" },
+        { "id": "c", "text": "Dízimo das ervas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por fora, parecem realmente bonitos",
+      "feedbackCorrect": "A imagem liga a beleza de fora à imundícia que o sepulcro esconde.",
+      "feedbackWrong": {
+        "a": "O mosquito é outra imagem. Aqui Jesus fala do sepulcro caiado.",
+        "c": "O dízimo está em outro versículo. Aqui a imagem é o sepulcro."
+      },
+      "hint": "Compare a imagem do sepulcro com o fato ao lado.",
+      "learningObjective": "Ligar a imagem do sepulcro caiado ao contraste entre fora e dentro.",
+      "evidence": ["Mateus 23:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 23:23, o dízimo da hortelã contrasta com a negligência da justiça, da misericórdia e da fé.",
+      "verseRef": "Mateus 23:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "mas negligenciam os preceitos mais importantes da Lei",
+      "feedbackCorrect": "O mas separa as práticas: eles dão o dízimo e negligenciam justiça, misericórdia e fé.",
+      "feedbackWrong": {
+        "false": "Releia o trecho depois das ervas: eles dão o dízimo e negligenciam esses preceitos."
+      },
+      "hint": "Observe a frase que vem depois do dízimo das ervas.",
+      "learningObjective": "Compreender o contraste entre o dízimo miúdo e os preceitos mais importantes.",
+      "evidence": ["Mateus 23:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 23:23, toque a palavra que introduz o dever de praticar as duas coisas.",
+      "verseRef": "Mateus 23:23",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "porém" },
+        { "id": "c", "text": "Pois" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Deveriam, porém, praticar essas coisas",
+      "feedbackCorrect": "O porém corrige o desvio: praticar o mais importante sem abandonar o dízimo.",
+      "feedbackWrong": {
+        "a": "Mas introduz a negligência, não o dever de praticar as duas coisas.",
+        "c": "Pois abre a acusação. O dever das duas práticas vem com porém."
+      },
+      "hint": "Fica entre Deveriam e a ordem de praticar.",
+      "learningObjective": "Reconhecer a palavra que pede as duas práticas juntas.",
+      "evidence": ["Mateus 23:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que finalidade Mateus 23:26 dá à limpeza do interior?",
+      "verseRef": "Mateus 23:26",
+      "options": [
+        { "id": "a", "text": "Fazer o exterior ficar limpo também" },
+        { "id": "b", "text": "Dispensar justiça e misericórdia" },
+        { "id": "c", "text": "Deixar o interior cheio de rapina" },
+        { "id": "d", "text": "Trocar o dízimo pela aparência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que também o exterior fique limpo",
+      "feedbackCorrect": "A limpeza do interior tem um fim: o exterior fica limpo também.",
+      "feedbackWrong": {
+        "b": "Jesus não dispensa a justiça. Ele cobra os preceitos mais importantes.",
+        "c": "O interior cheio de rapina é o problema, não a finalidade da ordem.",
+        "d": "O versículo não troca o dízimo. Fala da limpeza do copo."
+      },
+      "hint": "Leia a finalidade anunciada no fim da ordem.",
+      "learningObjective": "Compreender para que Jesus manda limpar primeiro o interior.",
+      "evidence": ["Mateus 23:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência dos alertas em Mateus 23:23–28?",
+      "verseRef": "Mateus 23:27–28",
+      "options": [
+        { "id": "a", "text": "O dízimo miúdo deixa o essencial" },
+        { "id": "b", "text": "A limpeza do copo começa por dentro" },
+        { "id": "c", "text": "O sepulcro caiado esconde a imundícia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "por fora, parecem realmente bonitos",
+      "feedbackCorrect": "O discurso vai do dízimo miúdo ao copo e, por fim, ao sepulcro caiado.",
+      "feedbackWrong": {
+        "default": "Comece pelo dízimo das ervas, siga para o copo e termine no sepulcro."
+      },
+      "hint": "Siga a ordem das imagens, da erva ao sepulcro.",
+      "learningObjective": "Compreender os três movimentos do discurso.",
+      "evidence": ["Mateus 23:23", "Mateus 23:25–26", "Mateus 23:27–28"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 23:26, quando Jesus manda limpar o interior do copo?",
+      "verseRef": "Mateus 23:26",
+      "options": [
+        { "id": "a", "text": "depois" },
+        { "id": "b", "text": "logo" },
+        { "id": "c", "text": "primeiro" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Limpe primeiro o interior",
+      "feedbackCorrect": "Primeiro vem o interior. Só então o exterior fica limpo.",
+      "feedbackWrong": {
+        "a": "O interior não fica para depois. Jesus o coloca no começo da limpeza.",
+        "b": "O texto não diz logo. Diz a ordem em que a limpeza deve começar."
+      },
+      "hint": "É o advérbio que marca a ordem da limpeza.",
+      "learningObjective": "Lembrar a palavra que marca a prioridade da limpeza interior.",
+      "evidence": ["Mateus 23:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 23:23 a Miqueias 6:8?",
+      "verseRef": "Mateus 23:23",
+      "passageA": { "ref": "Mateus 23:23" },
+      "passageB": { "ref": "Miqueias 6:8" },
+      "options": [
+        { "id": "a", "text": "Dízimo da hortelã" },
+        { "id": "b", "text": "Justiça e misericórdia" },
+        { "id": "c", "text": "Andar com humildade" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a justiça, a misericórdia e a fé",
+      "feedbackCorrect": "Os dois textos põem justiça e misericórdia no centro do que Deus pede.",
+      "feedbackWrong": {
+        "a": "Miqueias não fala de dízimo de hortelã. Fala do que o Senhor exige.",
+        "c": "Humildade está em Miqueias. O elo com Jesus é justiça e misericórdia."
+      },
+      "hint": "Compare os preceitos que Jesus destaca com o que Miqueias pede.",
+      "learningObjective": "Relacionar os preceitos de Mateus 23:23 ao que Miqueias diz que o Senhor exige.",
+      "evidence": ["Mateus 23:23", "Miqueias 6:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Mateus 23:28 mostra aparência de justiça diante dos homens junto com hipocrisia e maldade no interior.",
+      "verseRef": "Mateus 23:28",
+      "correctOptionId": "true",
+      "evidenceSpan": "interiormente estão repletos de hipocrisia e maldade",
+      "feedbackCorrect": "A aparência diante dos homens convive com hipocrisia e maldade no interior.",
+      "feedbackWrong": {
+        "false": "O versículo une as duas coisas: aparência de justiça e interior repleto de hipocrisia."
+      },
+      "hint": "Leia o contraste no fim do versículo, depois dos homens.",
+      "learningObjective": "Interpretar a aparência de justiça como distinta do interior.",
+      "evidence": ["Mateus 23:28"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 23:27, toque o que sustenta a leitura de um interior impuro.",
+      "verseRef": "Mateus 23:27",
+      "options": [
+        { "id": "a", "text": "bonitos" },
+        { "id": "b", "text": "caiados" },
+        { "id": "c", "text": "imundícia" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "toda sorte de imundícia",
+      "feedbackCorrect": "A imundícia, com os ossos, mostra o que o sepulcro esconde por dentro.",
+      "feedbackWrong": {
+        "a": "Bonitos descreve a aparência de fora, não a impureza de dentro.",
+        "b": "Caiados é a cal por fora. A impureza está no que há por dentro."
+      },
+      "hint": "Está no fim do versículo, junto dos ossos.",
+      "learningObjective": "Localizar no texto o que sustenta a impureza do interior.",
+      "evidence": ["Mateus 23:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Mateus 23:25–26 o texto sustenta?",
+      "verseRef": "Mateus 23:25–26",
+      "options": [
+        { "id": "a", "text": "O exterior limpo já resolve o interior" },
+        { "id": "b", "text": "O dízimo das ervas cumpre o essencial" },
+        { "id": "c", "text": "A limpeza que vale começa no interior" },
+        { "id": "d", "text": "Parecer justo aos homens basta" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Limpe primeiro o interior do copo",
+      "feedbackCorrect": "Jesus manda limpar o interior primeiro. A aparência de fora não resolve.",
+      "feedbackWrong": {
+        "a": "O exterior limpo não corrige a rapina. Jesus começa pelo interior.",
+        "b": "O dízimo das ervas não cumpre o essencial. Eles o dão e ainda negligenciam.",
+        "d": "Parecer justo aos homens não basta. O interior é que precisa de limpeza."
+      },
+      "hint": "Compare cada leitura com a ordem sobre o copo.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a limpeza.",
+      "evidence": ["Mateus 23:25–26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica do alerta de Jesus aos fariseus?",
+      "verseRef": "Mateus 23:23",
+      "options": [
+        { "id": "a", "text": "Eles medem a hortelã e lavam o copo" },
+        { "id": "b", "text": "Justiça e misericórdia ficam sem prática" },
+        { "id": "c", "text": "Jesus exige limpeza interior antes da aparência" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "negligenciam os preceitos mais importantes da Lei",
+      "feedbackCorrect": "O alerta parte do detalhe externo, passa pela justiça esquecida e chega à limpeza interior.",
+      "feedbackWrong": {
+        "default": "Comece pelo cuidado externo, siga pelo que ficou sem prática e termine na ordem de Jesus."
+      },
+      "hint": "Comece pelo cuidado externo e termine na exigência de Jesus.",
+      "learningObjective": "Acompanhar a lógica do alerta, do detalhe externo à limpeza interior.",
+      "evidence": ["Mateus 23:23", "Mateus 23:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 23:26, que lado do copo deve ser limpo antes do outro?",
+      "verseRef": "Mateus 23:26",
+      "options": [
+        { "id": "a", "text": "exterior" },
+        { "id": "b", "text": "interior" },
+        { "id": "c", "text": "fundo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Limpe primeiro o interior do copo",
+      "feedbackCorrect": "Interior é o lado que Jesus manda limpar antes, para o outro ficar limpo.",
+      "feedbackWrong": {
+        "a": "O exterior fica limpo depois. Jesus nomeia primeiro o outro lado.",
+        "c": "O texto não fala em fundo. Nomeia o lado que deve ser limpo antes."
+      },
+      "hint": "É o lado do copo que Jesus cita antes do outro.",
+      "learningObjective": "Lembrar o termo que carrega a prioridade da limpeza.",
+      "evidence": ["Mateus 23:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 23:28 a 1 Samuel 16:7?",
+      "verseRef": "Mateus 23:28",
+      "passageA": { "ref": "Mateus 23:28" },
+      "passageB": { "ref": "1 Samuel 16:7" },
+      "options": [
+        { "id": "a", "text": "Homem observa o exterior" },
+        { "id": "b", "text": "Estatura decide a escolha" },
+        { "id": "c", "text": "Senhor contempla o coração" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "exteriormente aparentam ser justos",
+      "feedbackCorrect": "Os dois textos voltam o olhar para dentro: o Senhor contempla o coração.",
+      "feedbackWrong": {
+        "a": "O homem vê o exterior. A ponte é o Senhor contemplar o coração.",
+        "b": "A estatura é o critério que o Senhor recusa, não o elo com Mateus."
+      },
+      "hint": "Olhe para quem contempla o íntimo, não para a estatura.",
+      "learningObjective": "Ligar a aparência diante dos homens ao olhar do Senhor para o coração.",
+      "evidence": ["Mateus 23:28", "1 Samuel 16:7"]
+    }
+  ]
+}

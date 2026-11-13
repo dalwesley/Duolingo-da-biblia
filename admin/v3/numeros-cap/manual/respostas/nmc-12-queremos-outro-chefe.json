@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Números 14:1–6",
+    "passages": [
+      {
+        "ref": "Números 14:1–6"
+      },
+      {
+        "ref": "Números 14:7–10"
+      }
+    ],
+    "context": "Cena de Queremos outro chefe: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Queremos outro chefe",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então toda a congregação se levantou e clamou.",
+        "evidenceRef": "Números 14:1",
+        "evidenceSpan": "Então toda a congregação se levantou e clamou"
+      },
+      {
+        "text": "E todos os filhos de Israel murmuraram contra.",
+        "evidenceRef": "Números 14:2",
+        "evidenceSpan": "E todos os filhos de Israel murmuraram contra"
+      },
+      {
+        "text": "E por que o Senhor nos trouxe a.",
+        "evidenceRef": "Números 14:3",
+        "evidenceSpan": "E por que o Senhor nos trouxe a"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 14:4",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Números 14:5",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 14:6",
+        "evidenceSpan": "E"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Arão",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então toda a congregação se levantou",
+        "evidenceRef": "Números 14:1"
+      },
+      {
+        "label": "E todos os filhos de israel",
+        "evidenceRef": "Números 14:2"
+      },
+      {
+        "label": "E por que o senhor nos",
+        "evidenceRef": "Números 14:3"
+      },
+      {
+        "label": "E diziam uns aos outros levantemos",
+        "evidenceRef": "Números 14:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 14:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Números 14:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 14:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 32:26",
+        "bridge": "Levi se põe com o Senhor"
+      },
+      {
+        "ref": "1 Coríntios 10:9",
+        "bridge": "Não tentem o Senhor"
+      },
+      {
+        "ref": "2 Pedro 2:15",
+        "bridge": "Caminho de Balaão"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A incredulidade prefere a escravidão; só dois confiam que o Senhor é capaz.",
+    "anchorQuestion": "O que Números 14:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 14:1, o texto inclui Então toda a congregação se levantou e clamou.",
+      "verseRef": "Números 14:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então toda a congregação se levantou e clamou",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 14:1 afirma.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 14:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Números 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "toda"
+        },
+        {
+          "id": "c",
+          "text": "congregação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 14:3, o que o texto apresenta com clareza.",
+      "verseRef": "Números 14:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto deixa claro: por que o Deus nos trouxe a esta terra para sermos feridos"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E por que o Senhor nos trouxe a esta terra para sermos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 14:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 14:2 na ordem do texto.",
+      "verseRef": "Números 14:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "E todos os filhos"
+        },
+        {
+          "id": "b",
+          "text": "de Israel murmuraram contra"
+        },
+        {
+          "id": "c",
+          "text": "Moisés e contra Arão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E todos os filhos",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Números 14:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 14:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "diziam"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "toda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "diziam",
+      "feedbackCorrect": "A palavra do versículo é diziam.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 14:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 14:1 comunica que se liga a este contexto.",
+      "verseRef": "Números 14:1",
+      "passageA": {
+        "ref": "Números 14:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Queremos outro chefe: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 14:1, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Números 14:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 14:1 afirma.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 14:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Números 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "toda"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "congregação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toda",
+      "feedbackCorrect": "O versículo destaca toda.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Números 14:4, o que o texto apresenta com clareza.",
+      "verseRef": "Números 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: diziam uns aos outros: Levantemos um capitão e voltemos"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E diziam uns aos outros: Levantemos um capitão e voltemos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Números 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então toda a congregação se levantou"
+        },
+        {
+          "id": "b",
+          "text": "E todos os filhos de israel"
+        },
+        {
+          "id": "c",
+          "text": "E por que o senhor nos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 14:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 14:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "toda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é Senhor.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 14:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 14:1 a Êxodo 32:26.",
+      "verseRef": "Números 14:1",
+      "passageA": {
+        "ref": "Números 14:1"
+      },
+      "passageB": {
+        "ref": "Êxodo 32:26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi se põe com o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Números 14:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 14:10 afirma.",
+      "evidence": [
+        "Números 14:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 14:6, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Números 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué"
+        },
+        {
+          "id": "b",
+          "text": "filho"
+        },
+        {
+          "id": "c",
+          "text": "Num"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Josué",
+      "feedbackCorrect": "O versículo destaca Josué.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 14:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Números 14:5, o que o texto apresenta com clareza.",
+      "verseRef": "Números 14:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: então, Moisés e Arão se prostraram com o rosto em terra"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, Moisés e Arão se prostraram com o rosto em terra",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 14:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Números 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 14:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 14:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "toda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés",
+      "feedbackCorrect": "A palavra do versículo é Moisés.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 14:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 14:1 a 1 Coríntios 10:9.",
+      "verseRef": "Números 14:1",
+      "passageA": {
+        "ref": "Números 14:1"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 10:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tentem o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 14:1"
+      ]
+    }
+  ]
+}

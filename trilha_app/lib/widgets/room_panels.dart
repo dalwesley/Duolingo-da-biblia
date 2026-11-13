@@ -7,6 +7,7 @@ import '../l10n/app_language.dart';
 import '../models/study_room.dart';
 import '../models/trail.dart';
 import '../models/trail_catalog.dart';
+import '../models/room_plan.dart';
 import '../data/mission_study.dart';
 import '../services/bible_service.dart';
 import '../services/league_service.dart';
@@ -19,6 +20,7 @@ import '../utils/appearance.dart';
 import '../utils/content_filter.dart';
 import '../utils/trail_progress.dart';
 import '../utils/trail_visuals.dart';
+import '../services/content_catalog_service.dart';
 import 'act_feel.dart';
 import 'app_sheet.dart';
 import 'cinematic_icon.dart';
@@ -83,20 +85,17 @@ class RoomStudyCard extends StatelessWidget {
     }
 
     final a = Appearance.of(context);
-    final total = members.length;
-    final doneList = [
-      for (final m in members)
-        if (m.didStudy(s)) m,
-    ];
-    final meDone = doneList.any((m) => m.isUser);
+    final meDone = members.any((m) => m.isUser && m.didStudy(s));
 
-    // Palco neutro enquanto falta estudar; teal (presença) quando fiz.
+    // O card inteiro abre o estudo. Quem já fez quem vê é o líder (na
+    // Semana do grupo); aqui fica a trilha e a cena.
     final head = header;
     return GlassCard(
-      tint: meDone ? AppRoles.presence : a.chrome,
+      tint: meDone ? AppRoles.presence : a.place,
       glow: meDone ? 0.3 : 0.75,
       elevated: !meDone,
       padding: cardPaddingFor(head),
+      onTap: onOpen,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
@@ -119,8 +118,6 @@ class RoomStudyCard extends StatelessWidget {
             Column(
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
-                // Enxuto: rótulo + referência numa linha, o tema, o recado em
-                // 2 linhas e quem já fez. O trecho completo abre no estudo.
                 if (head != null) const SizedBox(height: AppSpace.lg),
                 SectionLabel(
                   [
@@ -141,6 +138,7 @@ class RoomStudyCard extends StatelessWidget {
                     color: a.text,
                   ),
                 ),
+                _StudyTrailInfo(missionSlug: s.missionSlug),
                 if (s.note != null && s.note!.isNotEmpty) ...[
                   const SizedBox(height: AppSpace.md),
                   _LeaderNote(
@@ -151,47 +149,127 @@ class RoomStudyCard extends StatelessWidget {
                     note: s.note!,
                   ),
                 ],
-                if (doneList.isNotEmpty) ...[
-                  const SizedBox(height: AppSpace.md),
-                  Row(
-                    children: [
-                      _FaceRow(people: doneList),
-                      const SizedBox(width: AppSpace.sm),
-                      Expanded(
-                        child: Text(
-                          context.l10n.groupStudyDoneCount(
-                            doneList.length,
-                            total,
-                          ),
-                          style: AppTypography.body(
-                            size: 13,
-                            weight: FontWeight.w700,
-                            color: AppRoles.presence,
-                          ),
+                const SizedBox(height: AppSpace.md),
+                Row(
+                  children: [
+                    CinematicIcon(
+                      glyph: meDone
+                          ? CinematicGlyph.check
+                          : CinematicGlyph.book,
+                      size: 14,
+                      accent: meDone ? AppRoles.presence : a.textSecondary,
+                      framed: false,
+                    ),
+                    const SizedBox(width: 6),
+                    Expanded(
+                      child: Text(
+                        meDone
+                            ? context.l10n.groupStudyDoneTapAgain
+                            : context.l10n.groupStudyTapToOpen,
+                        style: AppTypography.body(
+                          size: 13,
+                          weight: FontWeight.w700,
+                          color: meDone ? AppRoles.presence : a.textSecondary,
                         ),
                       ),
-                    ],
-                  ),
-                ],
-                const SizedBox(height: AppSpace.lg),
-                if (meDone)
-                  GhostCta(
-                    label: context.l10n.groupStudyAgain,
-                    leading: CinematicGlyph.check,
-                    expanded: true,
-                    onTap: onOpen,
-                  )
-                else
-                  CopperCta(
-                    label: context.l10n.groupStudyCta,
-                    onTap: onOpen,
-                    leading: CinematicGlyph.book,
-                  ),
+                    ),
+                    CinematicIcon(
+                      glyph: CinematicGlyph.chevron,
+                      size: 14,
+                      accent: a.textSecondary,
+                      framed: false,
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
         ],
       ),
+    );
+  }
+}
+
+/// Trilha e lugar da cena ("Gênesis 1–11 · cena 1 de 12") e o começo da
+/// introdução — o que o grupo vai encontrar.
+class _StudyTrailInfo extends StatefulWidget {
+  final String missionSlug;
+
+  const _StudyTrailInfo({required this.missionSlug});
+
+  @override
+  State<_StudyTrailInfo> createState() => _StudyTrailInfoState();
+}
+
+class _StudyTrailInfoState extends State<_StudyTrailInfo> {
+  late Future<({Trail trail, Mission mission, int index, int total})?> _info =
+      _load(widget.missionSlug);
+
+  @override
+  void didUpdateWidget(covariant _StudyTrailInfo old) {
+    super.didUpdateWidget(old);
+    if (old.missionSlug != widget.missionSlug) {
+      _info = _load(widget.missionSlug);
+    }
+  }
+
+  static Future<({Trail trail, Mission mission, int index, int total})?> _load(
+    String slug,
+  ) async {
+    for (final trail in await TrailRepository().getTrails()) {
+      final scenes = [for (final m in trail.modules) ...m.missions];
+      final i = scenes.indexWhere((m) => m.slug == slug);
+      if (i >= 0) {
+        return (
+          trail: trail,
+          mission: scenes[i],
+          index: i,
+          total: scenes.length,
+        );
+      }
+    }
+    return null;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return FutureBuilder(
+      future: _info,
+      builder: (context, snap) {
+        final info = snap.data;
+        if (info == null) return const SizedBox.shrink();
+        final intro = info.mission.localizedIntro.trim();
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            const SizedBox(height: AppSpace.sm),
+            Text(
+              context.l10n.groupStudyTrailLine(
+                info.trail.localizedTitle,
+                info.index + 1,
+                info.total,
+              ),
+              maxLines: 1,
+              overflow: TextOverflow.ellipsis,
+              style: AppTypography.body(
+                size: 13,
+                weight: FontWeight.w700,
+                color: a.textSecondary,
+              ),
+            ),
+            if (intro.isNotEmpty) ...[
+              const SizedBox(height: AppSpace.sm),
+              Text(
+                intro,
+                maxLines: 3,
+                overflow: TextOverflow.ellipsis,
+                style: AppTypography.body(size: 14, height: 1.4, color: a.text),
+              ),
+            ],
+          ],
+        );
+      },
     );
   }
 }
@@ -203,11 +281,15 @@ class _EmptyStage extends StatelessWidget {
   final VoidCallback onPick;
   final Widget? header;
 
+  /// Textos do vazio do propósito (sem eles, o do estudo da semana).
+  final ({String label, String title, String body, String cta})? copy;
+
   const _EmptyStage({
     required this.room,
     required this.isLeader,
     required this.onPick,
     this.header,
+    this.copy,
   });
 
   @override
@@ -216,7 +298,7 @@ class _EmptyStage extends StatelessWidget {
     final head = header;
     return GlassCard(
       glow: isLeader ? 0.55 : null,
-      tint: isLeader ? a.chrome : null,
+      tint: isLeader ? a.place : null,
       padding: RoomStudyCard.cardPaddingFor(head),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -232,28 +314,34 @@ class _EmptyStage extends StatelessWidget {
               children: [
                 if (head != null) ...[
                   const SizedBox(height: AppSpace.lg),
-                  SectionLabel(context.l10n.groupWeekStudy),
+                  SectionLabel(copy?.label ?? context.l10n.groupWeekStudy),
                 ],
                 const SizedBox(height: AppSpace.md),
                 CustomPaint(
                   painter: _DashedFramePainter(color: a.textFaint),
                   child: EmptyState(
-                    title: isLeader
-                        ? context.l10n.groupEmptyLeaderTitle
-                        : context.l10n.groupEmptyMemberTitle,
-                    body: isLeader
-                        ? context.l10n.groupEmptyLeaderBody
-                        : context.l10n.groupEmptyMemberBody(
-                            room.kind.leaderTitle,
-                          ),
+                    title:
+                        copy?.title ??
+                        (isLeader
+                            ? context.l10n.groupEmptyLeaderTitle
+                            : context.l10n.groupEmptyMemberTitle),
+                    body:
+                        copy?.body ??
+                        (isLeader
+                            ? context.l10n.groupEmptyLeaderBody
+                            : context.l10n.groupEmptyMemberBody(
+                                room.kind.leaderTitle,
+                              )),
                   ),
                 ),
                 if (isLeader) ...[
                   const SizedBox(height: AppSpace.lg),
                   CopperCta(
-                    label: context.l10n.groupPickStudyCta,
+                    label: copy?.cta ?? context.l10n.groupPickStudyCta,
                     onTap: onPick,
-                    leading: CinematicGlyph.book,
+                    leading: copy == null
+                        ? CinematicGlyph.book
+                        : CinematicGlyph.calendar,
                     trailing: null,
                     dense: true,
                   ),
@@ -262,6 +350,42 @@ class _EmptyStage extends StatelessWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Grupo sem propósito: o topo convida o líder a criar (trilha, livro e
+/// datas moram dentro do propósito); o membro espera.
+class RoomPlanEmptyCard extends StatelessWidget {
+  final StudyRoom room;
+  final bool isLeader;
+  final Widget header;
+  final VoidCallback onCreate;
+
+  const RoomPlanEmptyCard({
+    super.key,
+    required this.room,
+    required this.isLeader,
+    required this.header,
+    required this.onCreate,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    final l10n = context.l10n;
+    return _EmptyStage(
+      room: room,
+      isLeader: isLeader,
+      onPick: onCreate,
+      header: header,
+      copy: (
+        label: l10n.planEmptyLabel,
+        title: isLeader ? l10n.planEmptyLeaderTitle : l10n.planEmptyMemberTitle,
+        body: isLeader
+            ? l10n.planEmptyLeaderBody
+            : l10n.planEmptyMemberBody(room.kind.leaderTitle),
+        cta: l10n.planEmptyCta,
       ),
     );
   }
@@ -287,7 +411,7 @@ class _VerseStage extends StatelessWidget {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 end: Alignment.bottomCenter,
-                colors: [a.chrome, a.chrome.withValues(alpha: 0.1)],
+                colors: [a.place, a.place.withValues(alpha: 0.1)],
               ),
             ),
           ),
@@ -356,7 +480,7 @@ class _LeaderNoteState extends State<_LeaderNote> {
                 child: CinematicIcon(
                   glyph: CinematicGlyph.quote,
                   size: AppMetrics.iconSm,
-                  accent: a.chrome,
+                  accent: a.place,
                   framed: false,
                 ),
               ),
@@ -376,43 +500,6 @@ class _LeaderNoteState extends State<_LeaderNote> {
             ],
           ),
         ),
-      ),
-    );
-  }
-}
-
-/// Rostos sobrepostos de quem já fez.
-class _FaceRow extends StatelessWidget {
-  final List<RoomMember> people;
-  static const size = AppMetrics.avatarSm * 2;
-
-  const _FaceRow({required this.people});
-
-  @override
-  Widget build(BuildContext context) {
-    if (people.isEmpty) return const SizedBox.shrink();
-    final shown = people.take(5).toList();
-    final step = size * 0.64;
-    final ring = Appearance.of(context).cardFill;
-    return SizedBox(
-      width: size + step * (shown.length - 1),
-      height: size,
-      child: Stack(
-        children: [
-          for (var i = 0; i < shown.length; i++)
-            Positioned(
-              left: step * i,
-              // Borda na cor do card separa os rostos sobrepostos.
-              child: UserAvatar(
-                name: shown[i].name,
-                photoUrl: shown[i].photoUrl,
-                seed: shown[i].uid,
-                radius: size / 2,
-                style: shown[i].portraitStyle,
-                borderColor: ring,
-              ),
-            ),
-        ],
       ),
     );
   }
@@ -452,8 +539,86 @@ class _DashedFramePainter extends CustomPainter {
 /// O que a pessoa escolheu na folha de alguém do grupo.
 enum RoomSeatAction { wave, profile, transfer, moderate }
 
+/// Recado do aceno no grupo. Só recados prontos (sem texto livre): a
+/// notificação sai da function `onRoomNudge` com o texto de cada um.
+enum RoomWaveKind { plan, pray, cheer, miss, study }
+
+/// Escolher o recado do aceno. [invitePlan]: a pessoa ainda não entrou no
+/// propósito que vai começar — o convite vem primeiro.
+Future<RoomWaveKind?> showRoomWavePicker(
+  BuildContext context, {
+  required String name,
+  bool invitePlan = false,
+}) {
+  return showAppSheet<RoomWaveKind>(
+    context,
+    builder: (ctx) {
+      final l10n = ctx.l10n;
+      String label(RoomWaveKind k) => switch (k) {
+        RoomWaveKind.plan => l10n.waveKindPlan,
+        RoomWaveKind.pray => l10n.waveKindPray,
+        RoomWaveKind.cheer => l10n.waveKindCheer,
+        RoomWaveKind.miss => l10n.waveKindMiss,
+        RoomWaveKind.study => l10n.waveKindStudy,
+      };
+      CinematicGlyph glyph(RoomWaveKind k) => switch (k) {
+        RoomWaveKind.plan => CinematicGlyph.calendar,
+        RoomWaveKind.pray => CinematicGlyph.heart,
+        RoomWaveKind.cheer => CinematicGlyph.spark,
+        RoomWaveKind.miss => CinematicGlyph.people,
+        RoomWaveKind.study => CinematicGlyph.book,
+      };
+      final kinds = [
+        if (invitePlan) RoomWaveKind.plan,
+        RoomWaveKind.cheer,
+        RoomWaveKind.pray,
+        RoomWaveKind.miss,
+        if (!invitePlan) RoomWaveKind.study,
+      ];
+      return AppSheetPanel(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            AppSheetHeader(
+              title: l10n.nudgeTitle(name),
+              subtitle: l10n.waveSheetSubtitle(name),
+            ),
+            const SizedBox(height: AppSpace.md),
+            for (final k in kinds)
+              _SeatActionRow(
+                label: label(k),
+                glyph: glyph(k),
+                onTap: () => Navigator.pop(ctx, k),
+              ),
+          ],
+        ),
+      );
+    },
+  );
+}
+
 /// Toque numa pessoa do grupo: quem é, como está e o que dá para fazer
 /// (acenar, ver o perfil, passar a liderança, denunciar ou bloquear).
+Widget _planStat(BuildContext ctx, RoomMember member, RoomPlan plan) {
+  final l10n = ctx.l10n;
+  final mine = member.plan?.planId == plan.id ? member.plan : null;
+  if (plan.phase() == PlanPhase.upcoming) {
+    final joined = mine?.joined ?? false;
+    return _SeatStat(
+      value: joined ? l10n.planSeatIn : l10n.planSeatNotIn,
+      label: l10n.planSeatLabel,
+      highlight: joined,
+    );
+  }
+  final done = mine?.done.length ?? 0;
+  return _SeatStat(
+    value: '$done/${plan.total}',
+    label: l10n.planSeatDays,
+    highlight: done > 0,
+  );
+}
+
 Future<RoomSeatAction?> showRoomSeatSheet(
   BuildContext context, {
   required RoomMember member,
@@ -461,6 +626,7 @@ Future<RoomSeatAction?> showRoomSeatSheet(
   required bool isLeader,
   required String leaderTitle,
   required RoomStudy? study,
+  RoomPlan? plan,
   required bool canCall,
   required bool alreadyCalled,
   bool canViewProfile = false,
@@ -531,7 +697,7 @@ Future<RoomSeatAction?> showRoomSeatSheet(
                 child: SoftBadge(
                   text: leaderTitle,
                   glyph: CinematicGlyph.crown,
-                  accent: a.chrome,
+                  accent: a.place,
                 ),
               ),
             ],
@@ -563,15 +729,20 @@ Future<RoomSeatAction?> showRoomSeatSheet(
                     label: ctx.l10n.groupSeatSteps,
                   ),
                   Container(width: 1, height: 28, color: a.cardBorder),
-                  _SeatStat(
-                    value: study == null
-                        ? '—'
-                        : (member.didStudy(study)
-                              ? ctx.l10n.groupSeatStudyDone
-                              : ctx.l10n.groupSeatStudyNotYet),
-                    label: ctx.l10n.groupWeekStudy,
-                    highlight: member.didStudy(study),
-                  ),
+                  // Com propósito, o terceiro número é dele: antes de
+                  // começar, se a pessoa está dentro; depois, os dias feitos.
+                  if (plan != null)
+                    _planStat(ctx, member, plan)
+                  else
+                    _SeatStat(
+                      value: study == null
+                          ? '—'
+                          : (member.didStudy(study)
+                                ? ctx.l10n.groupSeatStudyDone
+                                : ctx.l10n.groupSeatStudyNotYet),
+                      label: ctx.l10n.groupWeekStudy,
+                      highlight: member.didStudy(study),
+                    ),
                 ],
               ),
             ),
@@ -684,7 +855,7 @@ class _SeatActionRow extends StatelessWidget {
               CinematicIcon(
                 glyph: glyph,
                 size: AppMetrics.iconMd,
-                accent: faint ? a.textFaint : a.chrome,
+                accent: faint ? a.textFaint : a.place,
                 framed: false,
               ),
               const SizedBox(width: AppSpace.md),
@@ -1000,15 +1171,24 @@ class _KindChip extends StatelessWidget {
 
 // ───────────────────────── Escolher o estudo ─────────────────────────
 
-Future<RoomStudy?> showRoomStudyPicker(BuildContext context) {
+/// [title] troca o topo ("Estudo da semana"); [skipNote] devolve a cena no
+/// toque, sem o passo do recado (o propósito tem recado por dia).
+Future<RoomStudy?> showRoomStudyPicker(
+  BuildContext context, {
+  String? title,
+  bool skipNote = false,
+}) {
   return showAppSheet<RoomStudy>(
     context,
-    builder: (_) => const _RoomStudyPicker(),
+    builder: (_) => _RoomStudyPicker(title: title, skipNote: skipNote),
   );
 }
 
 class _RoomStudyPicker extends StatefulWidget {
-  const _RoomStudyPicker();
+  final String? title;
+  final bool skipNote;
+
+  const _RoomStudyPicker({this.title, this.skipNote = false});
 
   @override
   State<_RoomStudyPicker> createState() => _RoomStudyPickerState();
@@ -1049,6 +1229,18 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   });
 
   Future<void> _pickMission(Mission m) async {
+    if (widget.skipNote) {
+      Navigator.pop(
+        context,
+        RoomStudy(
+          missionSlug: m.slug,
+          title: m.localizedTitle,
+          verseRef: m.hookRef ?? m.subtitle,
+          week: LeagueService.weekKey(),
+        ),
+      );
+      return;
+    }
     setState(() {
       _mission = m;
       _stage = null;
@@ -1061,6 +1253,11 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
   static final _refLike = RegExp(r'\d');
 
   static Future<({String? ref, String? verse})> _resolveStage(Mission m) async {
+    // Estudos vêm por trilha: a cena escolhida aqui pode ser de outra.
+    await ContentCatalogService.instance.ensureStudies([
+      m.slug,
+      m.resolvedBankSection,
+    ]);
     final study =
         MissionStudy.forSlug(m.slug) ??
         MissionStudy.forSlug(m.resolvedBankSection);
@@ -1124,7 +1321,9 @@ class _RoomStudyPickerState extends State<_RoomStudyPicker> {
         .toDouble();
     final heading = _mission != null
         ? context.l10n.groupPickerMarkScene
-        : (_trail?.localizedTitle ?? context.l10n.groupWeekStudy);
+        : (_trail?.localizedTitle ??
+              widget.title ??
+              context.l10n.groupWeekStudy);
 
     return AppSheetPanel(
       child: SizedBox(
@@ -1739,13 +1938,25 @@ class _SceneNumber extends StatelessWidget {
 
 /// Menu do card: só o que o líder conduz. Copiar, sair e encerrar ficam
 /// no fim da página.
-enum RoomMenuAction { pickStudy, edit, goal, clearStudy, transfer }
+enum RoomMenuAction {
+  pickStudy,
+  edit,
+  goal,
+  clearStudy,
+  transfer,
+  plan,
+  endPlan,
+}
+
+/// Propósito do grupo visto pelo menu: nenhum, em curso/próximo, terminado.
+enum RoomMenuPlan { none, live, ended }
 
 Future<RoomMenuAction?> showRoomMenu(
   BuildContext context, {
   required StudyRoom room,
   required bool hasStudy,
   required bool canTransfer,
+  RoomMenuPlan plan = RoomMenuPlan.none,
 }) {
   return showAppSheet<RoomMenuAction>(
     context,
@@ -1768,7 +1979,7 @@ Future<RoomMenuAction?> showRoomMenu(
                 CinematicIcon(
                   glyph: glyph,
                   size: AppMetrics.leadingIcon,
-                  accent: danger ? AppRoles.risk : a.chrome,
+                  accent: danger ? AppRoles.risk : a.place,
                 ),
                 const SizedBox(width: AppSpace.md),
                 Expanded(
@@ -1793,11 +2004,11 @@ Future<RoomMenuAction?> showRoomMenu(
               child: SectionLabel(ctx.l10n.groupMenuLeadSection),
             ),
             item(
-              RoomMenuAction.pickStudy,
-              hasStudy
-                  ? ctx.l10n.groupMenuSwapStudy
-                  : ctx.l10n.groupMenuPickStudy,
-              CinematicGlyph.book,
+              RoomMenuAction.plan,
+              plan == RoomMenuPlan.live
+                  ? ctx.l10n.planMenuEdit
+                  : ctx.l10n.planMenuCreate,
+              CinematicGlyph.calendar,
             ),
             item(
               RoomMenuAction.edit,
@@ -1811,7 +2022,13 @@ Future<RoomMenuAction?> showRoomMenu(
                   : ctx.l10n.groupMenuSetGoal,
               CinematicGlyph.target,
             ),
-            if (hasStudy)
+            if (plan == RoomMenuPlan.live)
+              item(
+                RoomMenuAction.endPlan,
+                ctx.l10n.planMenuEnd,
+                CinematicGlyph.stop,
+              ),
+            if (hasStudy && plan == RoomMenuPlan.none)
               item(
                 RoomMenuAction.clearStudy,
                 ctx.l10n.groupMenuClearStudy,
@@ -1926,7 +2143,7 @@ class RoomIncomingInviteCard extends StatelessWidget {
     final from = _firstName(invite.fromName);
     return GlassCard(
       glow: 0.7,
-      tint: a.chrome,
+      tint: a.place,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [

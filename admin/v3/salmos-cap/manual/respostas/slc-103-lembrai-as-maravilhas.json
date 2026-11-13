@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 105:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 105:1–6"
+      },
+      {
+        "ref": "Salmos 105:7–11"
+      }
+    ],
+    "context": "Lembrai-vos das maravilhas; ele se lembrou da sua santa palavra a Abraão e tirou o povo com júbilo.",
+    "keyword": "SENHOR",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Lembrai as maravilhas",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Louvem ao SENHOR e invoquem o seu nome.",
+        "evidenceRef": "Salmos 105:1",
+        "evidenceSpan": "Louvem ao SENHOR e invoquem o seu nome"
+      },
+      {
+        "text": "Cantem a Ele, louvem-No com cânticos e declarem todas as Suas maravilhas.",
+        "evidenceRef": "Salmos 105:2",
+        "evidenceSpan": "Cantem a Ele"
+      },
+      {
+        "text": "Glorifiquem-se no seu santo nome.",
+        "evidenceRef": "Salmos 105:3",
+        "evidenceSpan": "Glorifiquem-se no seu santo nome"
+      },
+      {
+        "text": "Busquem ao Senhor e o seu poder.",
+        "evidenceRef": "Salmos 105:4",
+        "evidenceSpan": "Busquem ao Senhor e o seu poder"
+      },
+      {
+        "text": "Lembrem-se das maravilhas que ele realizou.",
+        "evidenceRef": "Salmos 105:5",
+        "evidenceSpan": "Lembrem-se das maravilhas que ele realizou"
+      },
+      {
+        "text": "Vós, descendência de Abraão, seu servo, vós, filhos de Jacó, seus escolhidos.",
+        "evidenceRef": "Salmos 105:6",
+        "evidenceSpan": "Vós"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SENHOR",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Louvem",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Louvem ao senhor e invoquem o",
+        "evidenceRef": "Salmos 105:1"
+      },
+      {
+        "label": "Cantem a ele louvem-no com cânticos",
+        "evidenceRef": "Salmos 105:2"
+      },
+      {
+        "label": "Glorifiquem-se no seu santo nome alegre-se",
+        "evidenceRef": "Salmos 105:3"
+      },
+      {
+        "label": "Busquem ao senhor e o seu",
+        "evidenceRef": "Salmos 105:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 105:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 105:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 105:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças"
+      },
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é pastor"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "História da aliança: de Canaã ao êxodo, Deus cumpre o que jurou."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "História da aliança: de Canaã ao êxodo, Deus cumpre o que jurou.",
+    "anchorQuestion": "O que Salmos 105:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 105:1, louvem ao SENHOR e invoquem o seu nome.",
+      "verseRef": "Salmos 105:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Louvem ao SENHOR e invoquem o seu nome",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 105:1 afirma.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 105:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 105:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "invoquem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "O versículo destaca «Louvem».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 105:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 105:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glorifiquem-se no seu santo nome"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Glorifiquem-se no seu santo nome",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 105:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 105:1 na ordem do texto.",
+      "verseRef": "Salmos 105:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem"
+        },
+        {
+          "id": "b",
+          "text": "ao"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 105:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 105:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Busquem"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Busquem",
+      "feedbackCorrect": "A palavra do versículo é «Busquem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 105:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 105:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 105:1",
+      "passageA": {
+        "ref": "Salmos 105:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Lembrai-vos das maravilhas; ele se lembrou da sua santa palavra a Abraão e tirou o povo com júbilo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 105:3, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 105:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 105:3 afirma.",
+      "evidence": [
+        "Salmos 105:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 105:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 105:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glorifiquem-se"
+        },
+        {
+          "id": "b",
+          "text": "seu"
+        },
+        {
+          "id": "c",
+          "text": "santo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Glorifiquem-se",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 105:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 105:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 105:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Busquem ao Senhor e o seu poder",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 105:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 105:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem ao senhor e invoquem"
+        },
+        {
+          "id": "b",
+          "text": "Cantem a ele louvem-no com cânticos"
+        },
+        {
+          "id": "c",
+          "text": "Glorifiquem-se no seu santo nome alegre-se"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 105:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 105:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrem-se"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrem-se",
+      "feedbackCorrect": "A palavra do versículo é «Lembrem-se».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 105:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 105:1 a Filipenses 4:6.",
+      "verseRef": "Salmos 105:1",
+      "passageA": {
+        "ref": "Salmos 105:1"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração com ações de graças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 105:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "Dizendo",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 105:11 afirma.",
+      "evidence": [
+        "Salmos 105:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 105:11, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 105:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dizendo"
+        },
+        {
+          "id": "b",
+          "text": "Dar-te-ei"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Dizendo",
+      "feedbackCorrect": "O versículo destaca «Dizendo».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 105:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 105:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 105:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrem-se das maravilhas que ele realizou",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 105:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 105:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 105:5, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 105:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "maravilhas"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "maravilhas",
+      "feedbackCorrect": "A palavra do versículo é «maravilhas».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 105:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 105:1 a Salmos 23:1.",
+      "verseRef": "Salmos 105:1",
+      "passageA": {
+        "ref": "Salmos 105:1"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 105:1"
+      ]
+    }
+  ]
+}

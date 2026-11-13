@@ -1,0 +1,482 @@
+{
+  "study": {
+    "passageRef": "Sofonias 1:2–7",
+    "passages": [
+      { "ref": "Sofonias 1:2–7" },
+      { "ref": "Sofonias 1:8–9" }
+    ],
+    "context": "Sofonias anuncia o juízo do Senhor sobre Judá e Jerusalém. O dia do Senhor se aproxima contra idolatria, abandono e quem não busca a face dele.",
+    "keyword": "consumirei",
+    "keywordGloss": "Palavra do Senhor que anuncia juízo abrangente sobre a face da terra.",
+    "focusQuestion": "O Senhor encontra em você busca sincera ou abandono disfarçado?",
+    "reflectionPrompts": [
+      "Juízo anunciado",
+      "Quem não busca",
+      "Dia do Senhor"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor declara que consumirá todas as coisas sobre a face da terra.",
+        "evidenceRef": "Sofonias 1:2",
+        "evidenceSpan": "consumirei todas as coisas que existem sobre a face da terra"
+      },
+      {
+        "text": "O Senhor estenderá a mão contra Judá e contra Jerusalém.",
+        "evidenceRef": "Sofonias 1:4",
+        "evidenceSpan": "Estenderei minha mão contra Judá e contra todos os habitantes de Jerusalém"
+      },
+      {
+        "text": "Há quem se prostra nos telhados diante do exército do céu.",
+        "evidenceRef": "Sofonias 1:5",
+        "evidenceSpan": "se prostram sobre os telhados diante do exército do céu"
+      },
+      {
+        "text": "Há quem abandona o Senhor e não busca a Sua face.",
+        "evidenceRef": "Sofonias 1:6",
+        "evidenceSpan": "abandonam o Senhor e não buscam a Sua face"
+      },
+      {
+        "text": "O dia do Senhor se aproxima.",
+        "evidenceRef": "Sofonias 1:7",
+        "evidenceSpan": "o dia do Senhor se aproxima"
+      },
+      {
+        "text": "No dia do sacrifício, o Senhor castigará príncipes e filhos do rei.",
+        "evidenceRef": "Sofonias 1:8",
+        "evidenceSpan": "castigarei os príncipes, os filhos do rei"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "consumirei",
+        "gloss": "Anúncio do Senhor de juízo que atinge tudo sobre a terra."
+      },
+      {
+        "term": "abandonam",
+        "gloss": "Ação de quem deixa o Senhor e deixa de buscá-lo."
+      },
+      {
+        "term": "dia do Senhor",
+        "gloss": "Tempo próximo de juízo preparado pelo Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Anúncio de consumir tudo sobre a terra",
+        "evidenceRef": "Sofonias 1:2–3"
+      },
+      {
+        "label": "Mão contra Judá e idolatria em Jerusalém",
+        "evidenceRef": "Sofonias 1:4–5"
+      },
+      {
+        "label": "Julgamento de quem abandona e não busca",
+        "evidenceRef": "Sofonias 1:6"
+      },
+      {
+        "label": "Silêncio perante o dia que se aproxima",
+        "evidenceRef": "Sofonias 1:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Há que silenciar porque o dia do Senhor se aproxima.",
+        "marker": "porque",
+        "evidenceRef": "Sofonias 1:7"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do anúncio geral, o juízo aponta Judá e Jerusalém.",
+        "marker": null,
+        "evidenceRef": "Sofonias 1:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Senhor preparou o sacrifício e santificou os convidados.",
+        "marker": null,
+        "evidenceRef": "Sofonias 1:7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Amós 5:18", "bridge": "Dia do Senhor próximo" },
+      { "ref": "Jeremias 2:13", "bridge": "Abandonar o Senhor" },
+      { "ref": "Isaías 2:12", "bridge": "Dia do Senhor contra soberba" }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo só atinge os estrangeiros; Judá está a salvo.",
+        "why": "1:4 aponta a mão do Senhor contra Judá e Jerusalém."
+      },
+      {
+        "text": "Basta jurar pelo Senhor mesmo misturando outros deuses.",
+        "why": "1:5 inclui quem jura pelo SENHOR e também por Milcom."
+      },
+      {
+        "text": "O dia do Senhor ainda está longe e não exige silêncio.",
+        "why": "1:7 manda silenciar porque o dia do Senhor se aproxima."
+      }
+    ],
+    "centralInsight": "O Senhor busca quem se voltou para trás e quem não o busca.",
+    "anchorQuestion": "Segundo Sofonias 1:6, o que fazem aqueles que o Senhor inclui no juízo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Sofonias 1:2, o Senhor declara que consumirá todas as coisas sobre a face da terra.",
+      "verseRef": "Sofonias 1:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "consumirei todas as coisas que existem sobre a face da terra",
+      "feedbackCorrect": "O versículo abre com o Senhor anunciando que consumirá tudo sobre a terra.",
+      "feedbackWrong": { "false": "Releia 1:2: o Senhor diz que consumirá todas as coisas." },
+      "hint": "Veja o verbo no começo da fala do Senhor.",
+      "learningObjective": "Observar o anúncio de juízo abrangente.",
+      "evidence": ["Sofonias 1:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Sofonias 1:4, toque contra quem o Senhor estende a mão, além de Judá.",
+      "verseRef": "Sofonias 1:4",
+      "options": [
+        { "id": "a", "text": "habitantes de Jerusalém" },
+        { "id": "b", "text": "resto de Baal" },
+        { "id": "c", "text": "sacerdotes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contra Judá e contra todos os habitantes de Jerusalém",
+      "feedbackCorrect": "A mão do Senhor se estende contra Judá e contra os habitantes de Jerusalém.",
+      "feedbackWrong": {
+        "b": "O resto de Baal é o que será exterminado; o alvo da mão vem antes.",
+        "c": "Os sacerdotes aparecem no fim; o alvo imediato inclui Jerusalém."
+      },
+      "hint": "Leia o par ligado a Judá no começo do versículo.",
+      "learningObjective": "Identificar o alcance do juízo sobre Judá.",
+      "evidence": ["Sofonias 1:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Sofonias 1:6, o que fazem aqueles incluídos no juízo?",
+      "verseRef": "Sofonias 1:6",
+      "options": [
+        { "id": "a", "text": "Abandonam o Senhor e não buscam a Sua face" },
+        { "id": "b", "text": "Jejuam e clamam na Casa do Senhor" },
+        { "id": "c", "text": "Edificam altares só ao Senhor" },
+        { "id": "d", "text": "Buscam a face dele com mansidão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abandonam o Senhor e não buscam a Sua face",
+      "feedbackCorrect": "O texto aponta quem abandona o Senhor e deixa de buscá-lo.",
+      "feedbackWrong": {
+        "b": "O versículo não fala de jejum; fala de abandono e falta de busca.",
+        "c": "O texto não descreve construção de altares aqui.",
+        "d": "Aqui o problema é não buscar, não a mansidão."
+      },
+      "hint": "Veja os verbos que descrevem a atitude diante do Senhor.",
+      "learningObjective": "Observar o abandono e a falta de busca.",
+      "evidence": ["Sofonias 1:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Sofonias 1:7 na ordem do texto.",
+      "verseRef": "Sofonias 1:7",
+      "options": [
+        { "id": "a", "text": "Silencie-se diante do Senhor Deus" },
+        { "id": "b", "text": "porque o dia do Senhor se aproxima" },
+        { "id": "c", "text": "o Senhor preparou o sacrifício e santificou os seus convidados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Silencie-se diante do Senhor Deus, porque o dia do Senhor se aproxima",
+      "feedbackCorrect": "Primeiro o silêncio, depois a razão do dia próximo, e então o sacrifício preparado.",
+      "feedbackWrong": { "default": "Comece pelo mandato de silenciar; o sacrifício fecha o versículo." },
+      "hint": "O versículo começa com um mandato.",
+      "learningObjective": "Reconhecer a sequência de Sofonias 1:7.",
+      "evidence": ["Sofonias 1:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Sofonias 1:2, o que o Senhor diz que fará com todas as coisas sobre a terra?",
+      "verseRef": "Sofonias 1:2",
+      "options": [
+        { "id": "a", "text": "abençoarei" },
+        { "id": "b", "text": "consumirei" },
+        { "id": "c", "text": "guardarei" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "consumirei todas as coisas que existem sobre a face da terra",
+      "feedbackCorrect": "O Senhor anuncia: consumirei todas as coisas sobre a face da terra.",
+      "feedbackWrong": {
+        "a": "O verbo do versículo não é de bênção; é de juízo.",
+        "c": "O texto não fala em guardar; fala em consumir."
+      },
+      "hint": "É o primeiro verbo da declaração do Senhor.",
+      "learningObjective": "Lembrar o verbo que abre o juízo.",
+      "evidence": ["Sofonias 1:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Sofonias 1:6 comunica que se liga a este contexto?",
+      "verseRef": "Sofonias 1:6",
+      "passageA": { "ref": "Sofonias 1:6" },
+      "passageB": { "ref": "Contexto", "text": "O juízo inclui quem se afastou e deixou de buscar o Senhor." },
+      "options": [
+        { "id": "a", "text": "Só estrangeiros são julgados" },
+        { "id": "b", "text": "Abandono sem busca" },
+        { "id": "c", "text": "Fé misturada é aceita" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "abandonam o Senhor e não buscam a Sua face",
+      "feedbackCorrect": "O texto liga juízo a quem abandona e não busca a face do Senhor.",
+      "feedbackWrong": {
+        "a": "O trecho fala de quem abandona o Senhor, sem restringir a estrangeiros.",
+        "c": "O problema aqui é abandono, não aprovação de fé misturada."
+      },
+      "hint": "Veja o que essas pessoas deixam de fazer.",
+      "learningObjective": "Ligar Sofonias 1:6 ao abandono sem busca.",
+      "evidence": ["Sofonias 1:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Sofonias 1:7, o silêncio diante do Senhor Deus é pedido porque o dia do Senhor ainda está longe.",
+      "verseRef": "Sofonias 1:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque o dia do Senhor se aproxima",
+      "feedbackCorrect": "O \"porque\" liga o silêncio à proximidade do dia, não à distância.",
+      "feedbackWrong": { "true": "Releia 1:7: o dia do Senhor se aproxima." },
+      "hint": "Repare na razão dada depois de \"porque\".",
+      "learningObjective": "Compreender a causa do silêncio em 1:7.",
+      "evidence": ["Sofonias 1:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Sofonias 1:7, toque a palavra que marca a razão do silêncio.",
+      "verseRef": "Sofonias 1:7",
+      "options": [
+        { "id": "a", "text": "diante" },
+        { "id": "b", "text": "porque" },
+        { "id": "c", "text": "preparou" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "porque o dia do Senhor se aproxima",
+      "feedbackCorrect": "\"Porque\" introduz a causa: o dia do Senhor se aproxima.",
+      "feedbackWrong": {
+        "a": "\"Diante\" indica posição, não a razão.",
+        "c": "\"Preparou\" descreve a ação do Senhor, não a ligação causal."
+      },
+      "hint": "Procure a conjunção que introduz a causa.",
+      "learningObjective": "Reconhecer o marcador de causa em 1:7.",
+      "evidence": ["Sofonias 1:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Sofonias 1:4 se relaciona com o anúncio de Sofonias 1:2–3?",
+      "verseRef": "Sofonias 1:2–3",
+      "options": [
+        { "id": "a", "text": "Estreita o juízo geral contra Judá e Jerusalém" },
+        { "id": "b", "text": "Cancela o juízo anunciado sobre a terra" },
+        { "id": "c", "text": "Desloca o juízo só para os animais" },
+        { "id": "d", "text": "Promete abrigo imediato a Jerusalém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estenderei minha mão contra Judá e contra todos os habitantes de Jerusalém",
+      "feedbackCorrect": "Depois do anúncio amplo, 1:4 aponta a mão contra Judá e Jerusalém.",
+      "feedbackWrong": {
+        "b": "1:4 não cancela; especifica o alvo em Judá.",
+        "c": "1:3 já falou de animais; 1:4 foca Judá e Jerusalém.",
+        "d": "Aqui não há abrigo; há mão estendida contra a cidade."
+      },
+      "hint": "Veja para quem a mão se estende em 1:4.",
+      "learningObjective": "Relacionar o juízo geral ao foco em Judá.",
+      "evidence": ["Sofonias 1:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Sofonias 1:4–7?",
+      "verseRef": "Sofonias 1:4–5",
+      "options": [
+        { "id": "a", "text": "Mão contra Judá e idolatria em Jerusalém" },
+        { "id": "b", "text": "Julgamento de quem abandona e não busca" },
+        { "id": "c", "text": "Silêncio perante o dia que se aproxima" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Estenderei minha mão contra Judá",
+      "feedbackCorrect": "O texto vai de Judá idólatra ao abandono, e fecha com o dia próximo.",
+      "feedbackWrong": { "default": "Comece pela mão contra Judá; o silêncio do dia vem por último." },
+      "hint": "Siga a ordem: Judá, abandono, dia.",
+      "learningObjective": "Compreender o movimento do juízo na cena.",
+      "evidence": ["Sofonias 1:4", "Sofonias 1:6", "Sofonias 1:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Sofonias 1:7, o que o texto diz que o dia do Senhor faz?",
+      "verseRef": "Sofonias 1:7",
+      "options": [
+        { "id": "a", "text": "atrasa" },
+        { "id": "b", "text": "aproxima" },
+        { "id": "c", "text": "passa" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o dia do Senhor se aproxima",
+      "feedbackCorrect": "O dia do Senhor se aproxima: por isso o chamado ao silêncio.",
+      "feedbackWrong": {
+        "a": "O texto não diz que o dia atrasa; diz que se aproxima.",
+        "c": "\"Passa\" não é o verbo do dia aqui; o texto diz que se aproxima."
+      },
+      "hint": "Veja o verbo ligado ao dia do Senhor.",
+      "learningObjective": "Lembrar a ação que marca a proximidade do dia.",
+      "evidence": ["Sofonias 1:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Sofonias 1:7 a Amós 5:18?",
+      "verseRef": "Sofonias 1:7",
+      "passageA": { "ref": "Sofonias 1:7" },
+      "passageB": { "ref": "Amós 5:18" },
+      "options": [
+        { "id": "a", "text": "Dia do Senhor próximo" },
+        { "id": "b", "text": "Festa sem juízo" },
+        { "id": "c", "text": "Paz garantida a todos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o dia do Senhor se aproxima",
+      "evidence": ["Sofonias 1:7", "Amós 5:18"],
+      "feedbackCorrect": "Nos dois textos, o dia do Senhor se aproxima e exige seriedade.",
+      "feedbackWrong": {
+        "b": "Amós e Sofonias não tratam o dia como festa vazia de juízo.",
+        "c": "O dia próximo não é promessa de paz automática."
+      },
+      "hint": "Compare o tema do dia em ambos.",
+      "learningObjective": "Relacionar o dia do Senhor em Sofonias e Amós."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Sofonias 1:5–6 mostra que misturar o Senhor com outros deuses e abandoná-lo entram no juízo anunciado.",
+      "verseRef": "Sofonias 1:5–6",
+      "correctOptionId": "true",
+      "evidenceSpan": "jurando pelo SENHOR e também por Milcom",
+      "feedbackCorrect": "O texto inclui quem jura pelo SENHOR e por Milcom, e quem abandona.",
+      "feedbackWrong": { "false": "1:5–6 lista idolatria misturada e abandono como alvos." },
+      "hint": "Veja quem jura e quem abandona.",
+      "learningObjective": "Interpretar o alcance do juízo sobre a idolatria misturada.",
+      "evidence": ["Sofonias 1:5–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Sofonias 1:5, toque o trecho que mostra a idolatria misturada com o Senhor.",
+      "verseRef": "Sofonias 1:5",
+      "options": [
+        { "id": "a", "text": "sobre os telhados" },
+        { "id": "b", "text": "também por Milcom" },
+        { "id": "c", "text": "exército do céu" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "jurando pelo SENHOR e também por Milcom",
+      "feedbackCorrect": "\"Também por Milcom\" mostra o juramento dividido entre o Senhor e outro deus.",
+      "feedbackWrong": {
+        "a": "Os telhados são o lugar; a mistura está no juramento.",
+        "c": "O exército do céu é outro culto; a mistura com o Senhor está no fim."
+      },
+      "hint": "Procure o segundo nome ao lado do SENHOR.",
+      "learningObjective": "Sustentar com o texto a idolatria misturada.",
+      "evidence": ["Sofonias 1:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Sofonias 1:4–7 sustenta sobre o juízo?",
+      "verseRef": "Sofonias 1:4–5",
+      "options": [
+        { "id": "a", "text": "O Senhor julga Judá idólatra e quem não o busca" },
+        { "id": "b", "text": "O juízo só atinge os estrangeiros" },
+        { "id": "c", "text": "Basta jurar pelo Senhor mesmo com outros deuses" },
+        { "id": "d", "text": "O dia do Senhor ainda está longe" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estenderei minha mão contra Judá",
+      "feedbackCorrect": "A mão contra Judá, a idolatria e o abandono mostram juízo real e próximo.",
+      "feedbackWrong": {
+        "b": "1:4 aponta Judá e Jerusalém, não só estrangeiros.",
+        "c": "1:5 inclui quem jura pelo SENHOR e também por Milcom.",
+        "d": "1:7 diz que o dia do Senhor se aproxima."
+      },
+      "hint": "Compare cada opção com 1:4–7.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": ["Sofonias 1:4", "Sofonias 1:6", "Sofonias 1:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do dia do Senhor que começa em Sofonias 1:7?",
+      "verseRef": "Sofonias 1:7",
+      "options": [
+        { "id": "a", "text": "O dia do Senhor se aproxima em Sofonias" },
+        { "id": "b", "text": "Amós alerta quem deseja o dia do Senhor" },
+        { "id": "c", "text": "Isaías fala do dia contra toda soberba" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o dia do Senhor se aproxima",
+      "evidence": ["Sofonias 1:7", "Amós 5:18", "Isaías 2:12"],
+      "feedbackCorrect": "O dia próximo em Sofonias ecoa o alerta de Amós e o juízo de Isaías.",
+      "feedbackWrong": { "default": "Comece em Sofonias; depois Amós e Isaías." },
+      "hint": "Siga Sofonias, Amós e Isaías.",
+      "learningObjective": "Ver o dia do Senhor como fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Sofonias 1:6, que verbo descreve quem deixa o Senhor?",
+      "verseRef": "Sofonias 1:6",
+      "options": [
+        { "id": "a", "text": "celebram" },
+        { "id": "b", "text": "abandonam" },
+        { "id": "c", "text": "edificam" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "abandonam o Senhor e não buscam a Sua face",
+      "feedbackCorrect": "O termo carrega o afastamento: abandonam o Senhor.",
+      "feedbackWrong": {
+        "a": "O versículo não fala de celebração; fala de abandono.",
+        "c": "Não há edificação aqui; há abandono."
+      },
+      "hint": "É o verbo que abre a descrição dessas pessoas.",
+      "learningObjective": "Lembrar o termo que carrega o afastamento.",
+      "evidence": ["Sofonias 1:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Sofonias 1:6 a Jeremias 2:13?",
+      "verseRef": "Sofonias 1:6",
+      "passageA": { "ref": "Sofonias 1:6" },
+      "passageB": { "ref": "Jeremias 2:13" },
+      "options": [
+        { "id": "a", "text": "Abandonar o Senhor" },
+        { "id": "b", "text": "Construir cisternas boas" },
+        { "id": "c", "text": "Buscar só Milcom" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abandonam o Senhor",
+      "evidence": ["Sofonias 1:6", "Jeremias 2:13"],
+      "feedbackCorrect": "Nos dois textos, o povo abandona o Senhor, a fonte da vida.",
+      "feedbackWrong": {
+        "b": "Em Jeremias, as cisternas rotas são o erro, não a solução.",
+        "c": "Sofonias 1:6 fala de abandono do Senhor, não de culto exclusivo a Milcom."
+      },
+      "hint": "Compare o que o povo faz com o Senhor.",
+      "learningObjective": "Ligar o abandono em Sofonias e Jeremias."
+    }
+  ]
+}

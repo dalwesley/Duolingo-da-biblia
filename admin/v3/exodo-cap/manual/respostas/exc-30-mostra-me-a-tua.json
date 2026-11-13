@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Êxodo 33:12–23",
+    "passages": [
+      {
+        "ref": "Êxodo 33:12–23"
+      }
+    ],
+    "context": "Após a queda, Moisés pede que a presença vá com o povo e quer ver a glória do Senhor.",
+    "keyword": "Glória",
+    "keywordGloss": "Moisés pede ver a glória; o Senhor faz passar sua bondade e proclama o nome.",
+    "focusQuestion": "Você deseja mais a presença de Deus ou só o destino da jornada?",
+    "reflectionPrompts": [
+      "Presença irá contigo",
+      "Mostra-me a tua glória",
+      "Bondade que passa"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor promete: a minha presença irá contigo e eu te darei descanso.",
+        "evidenceRef": "Êxodo 33:14",
+        "evidenceSpan": "A minha presença irá contigo"
+      },
+      {
+        "text": "Moisés diz que sem a presença não subam daquele lugar.",
+        "evidenceRef": "Êxodo 33:15",
+        "evidenceSpan": "Se a tua presença não for comigo, não nos faças subir"
+      },
+      {
+        "text": "Moisés pede: mostra-me a tua glória.",
+        "evidenceRef": "Êxodo 33:18",
+        "evidenceSpan": "me mostres a tua glória"
+      },
+      {
+        "text": "O Senhor fará passar toda a sua bondade e proclamará o nome.",
+        "evidenceRef": "Êxodo 33:19",
+        "evidenceSpan": "Farei passar toda a minha bondade"
+      },
+      {
+        "text": "Ninguém pode ver a face de Deus e viver.",
+        "evidenceRef": "Êxodo 33:20",
+        "evidenceSpan": "ninguém pode contemplar a minha face e viver"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "presença",
+        "gloss": "O ir com Deus que distingue o povo."
+      },
+      {
+        "term": "glória",
+        "gloss": "O que Moisés pede ver; Deus responde com bondade e nome."
+      },
+      {
+        "term": "bondade",
+        "gloss": "O que o Senhor faz passar diante de Moisés."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pedido de presença e graça",
+        "evidenceRef": "Êxodo 33:12–13"
+      },
+      {
+        "label": "Promessa da presença e distinção",
+        "evidenceRef": "Êxodo 33:14–17"
+      },
+      {
+        "label": "Pedido para ver a glória",
+        "evidenceRef": "Êxodo 33:18–20"
+      },
+      {
+        "label": "Abrigo na penha e visão parcial",
+        "evidenceRef": "Êxodo 33:21–23"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Se a presença não for, não subam.",
+        "marker": "Se",
+        "evidenceRef": "Êxodo 33:15"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque Moisés achou graça, o Senhor fará o que pediu.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 33:17"
+      },
+      {
+        "kind": "propósito",
+        "text": "Deus cobre Moisés até passar a glória.",
+        "marker": "até",
+        "evidenceRef": "Êxodo 33:22"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 9:15",
+        "bridge": "Misericórdia de quem Ele quer"
+      },
+      {
+        "ref": "João 1:14",
+        "bridge": "Vimos a sua glória"
+      },
+      {
+        "ref": "2 Coríntios 3:7",
+        "bridge": "Glória no rosto de Moisés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Moisés se contenta em ir sem a presença de Deus.",
+        "why": "Ele diz que sem a presença não subam."
+      },
+      {
+        "text": "Deus mostra a face plenamente a Moisés.",
+        "why": "Ninguém pode ver a face e viver."
+      },
+      {
+        "text": "A bondade que passa não se liga ao nome do Senhor.",
+        "why": "Ele faz passar a bondade e proclama o nome."
+      }
+    ],
+    "centralInsight": "O Senhor faz passar toda a sua bondade e proclama o nome diante de Moisés.",
+    "anchorQuestion": "O que Moisés pediu ver, e o que o Senhor fez passar?"
+  },
+  "questions": [
+    {
+      "question": "Moisés aceitou subir sem a presença do Senhor, contanto que chegassem à terra.",
+      "verseRef": "Êxodo 33:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "Se a tua presença não for comigo, não nos faças subir",
+      "feedbackCorrect": "Sem a presença, Moisés não quer subir.",
+      "feedbackWrong": {
+        "true": "Releia: se a presença não for, não subam."
+      },
+      "hint": "Veja a condição que Moisés põe.",
+      "learningObjective": "Observar o pedido da presença.",
+      "evidence": [
+        "Êxodo 33:15"
+      ],
+      "difficulty": "semente",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 33:18, toque o que Moisés pede ver.",
+      "verseRef": "Êxodo 33:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "Rogo-te"
+        },
+        {
+          "id": "c",
+          "text": "mostres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me mostres a tua glória",
+      "feedbackCorrect": "Ele pede ver a glória.",
+      "feedbackWrong": {
+        "b": "Rogo-te introduz; o objeto é glória.",
+        "c": "Mostres é o verbo; o objeto é glória."
+      },
+      "hint": "A última palavra do pedido.",
+      "learningObjective": "Identificar o pedido da glória.",
+      "evidence": [
+        "Êxodo 33:18"
+      ],
+      "difficulty": "semente",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Segundo Êxodo 33:14, o que o Senhor promete?",
+      "verseRef": "Êxodo 33:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sua presença irá e dará descanso"
+        },
+        {
+          "id": "b",
+          "text": "Abandonará Moisés no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Mandará só um anjo sem presença"
+        },
+        {
+          "id": "d",
+          "text": "Negará qualquer graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A minha presença irá contigo e eu te darei descanso",
+      "feedbackCorrect": "Presença e descanso são a promessa.",
+      "feedbackWrong": {
+        "b": "Há presença, não abandono.",
+        "c": "Ele promete a própria presença.",
+        "d": "Há graça e atendimento."
+      },
+      "hint": "Leia as duas partes da resposta.",
+      "learningObjective": "Observar a promessa da presença.",
+      "evidence": [
+        "Êxodo 33:14"
+      ],
+      "difficulty": "semente",
+      "type": "choice"
+    },
+    {
+      "question": "Monte Êxodo 33:19 na ordem do texto.",
+      "verseRef": "Êxodo 33:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Farei passar toda a minha bondade diante de você"
+        },
+        {
+          "id": "b",
+          "text": "e proclamarei o nome do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "terei misericórdia de quem eu tiver misericórdia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Farei passar toda a minha bondade",
+      "feedbackCorrect": "Bondade, nome, misericórdia.",
+      "feedbackWrong": {
+        "default": "Comece por Farei passar."
+      },
+      "hint": "O versículo começa com a bondade que passa.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 33:19.",
+      "evidence": [
+        "Êxodo 33:19"
+      ],
+      "difficulty": "semente",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 33:14, o que irá com Moisés?",
+      "verseRef": "Êxodo 33:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "presença"
+        },
+        {
+          "id": "b",
+          "text": "exército"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A minha presença irá contigo",
+      "feedbackCorrect": "A presença irá com ele.",
+      "feedbackWrong": {
+        "b": "O texto diz presença.",
+        "c": "Não é ouro."
+      },
+      "hint": "A minha ___ irá contigo.",
+      "learningObjective": "Lembrar a palavra presença.",
+      "evidence": [
+        "Êxodo 33:14"
+      ],
+      "difficulty": "semente",
+      "type": "complete"
+    },
+    {
+      "question": "O que Êxodo 33:18 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 33:18",
+      "passageA": {
+        "ref": "Êxodo 33:18"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Moisés pede presença e quer ver a glória do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Desejo de ver a glória"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de orar"
+        },
+        {
+          "id": "c",
+          "text": "Volta ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me mostres a tua glória",
+      "feedbackCorrect": "O pedido da glória expressa o desejo da presença.",
+      "feedbackWrong": {
+        "b": "Há pedido, não recusa.",
+        "c": "Não há volta ao Egito."
+      },
+      "hint": "Compare o contexto com o pedido.",
+      "learningObjective": "Ligar presença e glória.",
+      "evidence": [
+        "Êxodo 33:18"
+      ],
+      "difficulty": "semente",
+      "type": "connect"
+    },
+    {
+      "question": "Em Êxodo 33:20, o Senhor diz que Moisés poderá ver plenamente a sua face e viver.",
+      "verseRef": "Êxodo 33:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "ninguém pode contemplar a minha face e viver",
+      "feedbackCorrect": "Ninguém pode contemplar a face e viver.",
+      "feedbackWrong": {
+        "true": "Releia: ninguém pode contemplar a face e viver."
+      },
+      "hint": "O que acontece se alguém contemplar a face?",
+      "learningObjective": "Compreender o limite da visão.",
+      "evidence": [
+        "Êxodo 33:20"
+      ],
+      "difficulty": "caminhada",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 33:17, toque a palavra que introduz o motivo do atendimento.",
+      "verseRef": "Êxodo 33:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "nome"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois você achou graça diante de mim",
+      "feedbackCorrect": "\"Pois\" introduz a graça como motivo.",
+      "feedbackWrong": {
+        "b": "Nome vem depois; o marcador é pois.",
+        "c": "Moisés é o ouvinte; o marcador é pois."
+      },
+      "hint": "Qual palavra precede \"você achou graça\"?",
+      "learningObjective": "Tocar o marcador de resultado.",
+      "evidence": [
+        "Êxodo 33:17"
+      ],
+      "difficulty": "caminhada",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Como Êxodo 33:19 liga a glória pedida à resposta de Deus?",
+      "verseRef": "Êxodo 33:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele faz passar a bondade e proclama o nome"
+        },
+        {
+          "id": "b",
+          "text": "Ele mostra a face sem nenhum limite"
+        },
+        {
+          "id": "c",
+          "text": "Ele recusa falar o próprio nome"
+        },
+        {
+          "id": "d",
+          "text": "Ele manda Moisés voltar sem resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei passar toda a minha bondade",
+      "feedbackCorrect": "A resposta à glória é bondade e proclamação do nome.",
+      "feedbackWrong": {
+        "b": "A face não será vista.",
+        "c": "Ele proclamará o nome.",
+        "d": "Há resposta clara."
+      },
+      "hint": "O que Ele fará passar?",
+      "learningObjective": "Relacionar glória e bondade.",
+      "evidence": [
+        "Êxodo 33:19"
+      ],
+      "difficulty": "caminhada",
+      "type": "choice"
+    },
+    {
+      "question": "Como avança Êxodo 33:14–23?",
+      "verseRef": "Êxodo 33:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa da presença e distinção"
+        },
+        {
+          "id": "b",
+          "text": "Pedido para ver a glória"
+        },
+        {
+          "id": "c",
+          "text": "Abrigo na penha e visão parcial"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A minha presença irá contigo",
+      "feedbackCorrect": "Presença, pedido da glória, abrigo na rocha.",
+      "feedbackWrong": {
+        "default": "Comece pela presença; a penha vem por último."
+      },
+      "hint": "Primeiro a presença; no fim a penha.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 33:14–23"
+      ],
+      "difficulty": "caminhada",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 33:19, o que o Senhor fará passar?",
+      "verseRef": "Êxodo 33:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "bondade"
+        },
+        {
+          "id": "b",
+          "text": "ira"
+        },
+        {
+          "id": "c",
+          "text": "treva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toda a minha bondade",
+      "feedbackCorrect": "Ele fará passar toda a sua bondade.",
+      "feedbackWrong": {
+        "b": "Não é ira neste versículo.",
+        "c": "O texto diz bondade."
+      },
+      "hint": "Toda a minha ___.",
+      "learningObjective": "Lembrar a bondade que passa.",
+      "evidence": [
+        "Êxodo 33:19"
+      ],
+      "difficulty": "caminhada",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 33:19 a Romanos 9:15?",
+      "verseRef": "Êxodo 33:19",
+      "passageA": {
+        "ref": "Êxodo 33:19"
+      },
+      "passageB": {
+        "ref": "Romanos 9:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericórdia soberana de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Mérito humano decisivo"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sobre o nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "terei misericórdia de quem eu tiver misericórdia",
+      "feedbackCorrect": "Paulo cita a misericórdia soberana anunciada a Moisés.",
+      "feedbackWrong": {
+        "b": "O texto destaca a escolha de Deus.",
+        "c": "Há proclamação do nome."
+      },
+      "hint": "Quem decide a misericórdia?",
+      "learningObjective": "Relacionar Êxodo e Romanos.",
+      "evidence": [
+        "Êxodo 33:19",
+        "Romanos 9:15"
+      ],
+      "difficulty": "caminhada",
+      "type": "connect"
+    },
+    {
+      "question": "Êxodo 33:18–23 sustenta que Deus revela glória com bondade e nome, sem entregar a face a quem não pode vê-la e viver.",
+      "verseRef": "Êxodo 33:19–20",
+      "correctOptionId": "true",
+      "evidenceSpan": "ninguém pode contemplar a minha face e viver",
+      "feedbackCorrect": "Bondade e nome vêm; a face permanece velada.",
+      "feedbackWrong": {
+        "false": "O texto une revelação e limite da face."
+      },
+      "hint": "Una bondade e face.",
+      "learningObjective": "Interpretar revelação e limite.",
+      "evidence": [
+        "Êxodo 33:19",
+        "Êxodo 33:20"
+      ],
+      "difficulty": "profundezas",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 33:20, toque o trecho que marca o limite da visão.",
+      "verseRef": "Êxodo 33:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "minha face"
+        },
+        {
+          "id": "b",
+          "text": "Disse ainda"
+        },
+        {
+          "id": "c",
+          "text": "poderás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contemplar a minha face e viver",
+      "feedbackCorrect": "A face é o limite: ninguém a contempla e vive.",
+      "feedbackWrong": {
+        "b": "Disse ainda introduz.",
+        "c": "Não poderás; o limite é a face."
+      },
+      "hint": "O que não se pode contemplar?",
+      "learningObjective": "Sustentar o limite da visão.",
+      "evidence": [
+        "Êxodo 33:20"
+      ],
+      "difficulty": "profundezas",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Que leitura Êxodo 33:14–23 sustenta sobre a presença de Deus?",
+      "verseRef": "Êxodo 33:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem ela a jornada perde o sentido para Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Ela é dispensável se houver terra"
+        },
+        {
+          "id": "c",
+          "text": "Ver a face plena é o direito de todo o povo"
+        },
+        {
+          "id": "d",
+          "text": "Deus recusa qualquer bondade a Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se a tua presença não for comigo, não nos faças subir",
+      "feedbackCorrect": "A presença é indispensável; a glória vem com limite.",
+      "feedbackWrong": {
+        "b": "Moisés recusa subir sem presença.",
+        "c": "Ninguém vê a face e vive.",
+        "d": "Ele faz passar a bondade."
+      },
+      "hint": "Una presença e limite da face.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 33:15",
+        "Êxodo 33:20"
+      ],
+      "difficulty": "profundezas",
+      "type": "choice"
+    },
+    {
+      "question": "Qual sequência liga o pedido da glória à Escritura?",
+      "verseRef": "Êxodo 33:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés pede ver a glória"
+        },
+        {
+          "id": "b",
+          "text": "Deus faz passar bondade e nome"
+        },
+        {
+          "id": "c",
+          "text": "João diz: vimos a sua glória"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "me mostres a tua glória",
+      "feedbackCorrect": "Pedido, resposta, eco em João.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido; João vem por último."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o fio da glória na Escritura.",
+      "evidence": [
+        "Êxodo 33:18",
+        "Êxodo 33:19",
+        "João 1:14"
+      ],
+      "difficulty": "profundezas",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 33:20, o que ninguém pode contemplar e viver?",
+      "verseRef": "Êxodo 33:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "face"
+        },
+        {
+          "id": "b",
+          "text": "nuvem"
+        },
+        {
+          "id": "c",
+          "text": "voz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contemplar a minha face e viver",
+      "feedbackCorrect": "Ninguém pode contemplar a face e viver.",
+      "feedbackWrong": {
+        "b": "O texto fala da face.",
+        "c": "O limite é a face."
+      },
+      "hint": "A minha ___ e viver.",
+      "learningObjective": "Lembrar o limite da visão.",
+      "evidence": [
+        "Êxodo 33:20"
+      ],
+      "difficulty": "profundezas",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 33:18 a João 1:14?",
+      "verseRef": "Êxodo 33:18",
+      "passageA": {
+        "ref": "Êxodo 33:18"
+      },
+      "passageB": {
+        "ref": "João 1:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ver a glória de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Negar a encarnação"
+        },
+        {
+          "id": "c",
+          "text": "Esconder o nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tua glória",
+      "feedbackCorrect": "O pedido de Moisés ecoa na glória vista em Cristo.",
+      "feedbackWrong": {
+        "b": "João afirma a glória vista.",
+        "c": "Há revelação, não ocultação do tema."
+      },
+      "hint": "Que palavra une os dois textos?",
+      "learningObjective": "Ligar glória em Êxodo e João.",
+      "evidence": [
+        "Êxodo 33:18",
+        "João 1:14"
+      ],
+      "difficulty": "profundezas",
+      "type": "connect"
+    }
+  ]
+}

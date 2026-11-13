@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Cantares 6:1–9",
+    "passages": [
+      {
+        "ref": "Cantares 6:1–9"
+      }
+    ],
+    "context": "As filhas perguntam para onde foi o amado. Ela sabe: desceu ao jardim. Depois ele a nomeia formosa como Tirza e, entre sessenta rainhas, escolhe uma: a pomba imaculada.",
+    "keyword": "uma",
+    "keywordGloss": "Entre muitas, o amor da aliança escolhe uma e a chama perfeita.",
+    "focusQuestion": "O que significa, para você, ser escolhido(a) entre muitas vozes?",
+    "reflectionPrompts": [
+      "Buscaremos contigo",
+      "Eu sou do meu amado",
+      "Uma é a minha pomba"
+    ],
+    "facts": [
+      {
+        "text": "As filhas perguntam para onde foi o amado e se oferecem a buscá-lo.",
+        "evidenceRef": "Cantares 6:1",
+        "evidenceSpan": "Para onde foi o teu amado, ó mais formosa entre as mulheres"
+      },
+      {
+        "text": "Ele desceu ao seu jardim, aos canteiros de bálsamo, para pastorear e colher lírios.",
+        "evidenceRef": "Cantares 6:2",
+        "evidenceSpan": "Meu amado desceu ao seu jardim, aos canteiros de bálsamo"
+      },
+      {
+        "text": "Ela afirma: eu sou do meu amado, e meu amado é meu.",
+        "evidenceRef": "Cantares 6:3",
+        "evidenceSpan": "Eu sou do meu amado, e meu amado é meu"
+      },
+      {
+        "text": "Ele a chama formosa como Tirza e formidável como um exército com bandeiras.",
+        "evidenceRef": "Cantares 6:4",
+        "evidenceSpan": "Formosa és, querida minha, como Tirza"
+      },
+      {
+        "text": "Há sessenta rainhas e oitenta concubinas, e virgens incontáveis.",
+        "evidenceRef": "Cantares 6:8",
+        "evidenceSpan": "Sessenta são as rainhas, oitenta, as concubinas"
+      },
+      {
+        "text": "Mas uma é a sua pomba, a imaculada, a única de sua mãe.",
+        "evidenceRef": "Cantares 6:9",
+        "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "uma",
+        "gloss": "A escolha exclusiva no meio da multidão."
+      },
+      {
+        "term": "pomba",
+        "gloss": "O nome terno da escolhida."
+      },
+      {
+        "term": "meu",
+        "gloss": "A mútua pertença: eu sou dele e ele é meu."
+      }
+    ],
+    "structure": [
+      {
+        "label": "As filhas perguntam e se oferecem",
+        "evidenceRef": "Cantares 6:1"
+      },
+      {
+        "label": "Ela sabe onde ele pastoreia",
+        "evidenceRef": "Cantares 6:2–3"
+      },
+      {
+        "label": "Ele a elogia com força e beleza",
+        "evidenceRef": "Cantares 6:4–7"
+      },
+      {
+        "label": "Entre muitas, uma é a escolhida",
+        "evidenceRef": "Cantares 6:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Há muitas rainhas e concubinas, mas uma é a pomba imaculada.",
+        "marker": "Mas",
+        "evidenceRef": "Cantares 6:8–9"
+      },
+      {
+        "kind": "resultado",
+        "text": "As donzelas a chamam bem-aventurada e as rainhas a louvam.",
+        "marker": null,
+        "evidenceRef": "Cantares 6:9"
+      },
+      {
+        "kind": "propósito",
+        "text": "As filhas querem buscá-lo com ela.",
+        "marker": null,
+        "evidenceRef": "Cantares 6:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 5:25–27",
+        "bridge": "Uma noiva amada e limpa"
+      },
+      {
+        "ref": "Isaías 62:4–5",
+        "bridge": "Chamada pelo nome novo"
+      },
+      {
+        "ref": "João 10:3",
+        "bridge": "Chama as suas ovelhas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O amor da aliança trata todos os vínculos como iguais.",
+        "why": "O texto contrapõe a multidão a uma escolhida."
+      },
+      {
+        "text": "Ser \"uma\" significa isolamento sem comunidade.",
+        "why": "As filhas buscam com ela e as donzelas a louvam."
+      },
+      {
+        "text": "Ela não sabe onde está o amado.",
+        "why": "Ela responde com o jardim e a mútua pertença."
+      }
+    ],
+    "centralInsight": "Entre muitas, o amor da aliança escolhe uma e a chama perfeita.",
+    "anchorQuestion": "Segundo Cantares 6:9, quantas são a pomba e a imaculada dele?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 6:9, uma é a minha pomba, a minha imaculada.",
+      "verseRef": "Cantares 6:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada",
+      "feedbackCorrect": "Entre muitas, ele escolhe uma.",
+      "feedbackWrong": {
+        "false": "Releia 6:9: uma é a pomba."
+      },
+      "hint": "Veja a palavra depois de Mas.",
+      "learningObjective": "Observar a escolha de uma.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 6:3, toque a afirmação de mútua pertença.",
+      "verseRef": "Cantares 6:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "é meu"
+        },
+        {
+          "id": "b",
+          "text": "lírios"
+        },
+        {
+          "id": "c",
+          "text": "pastoreia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou do meu amado, e meu amado é meu",
+      "feedbackCorrect": "A mútua pertença fecha o versículo.",
+      "feedbackWrong": {
+        "b": "Lírios são o lugar do pastoreio.",
+        "c": "Pastoreia descreve a ação; a pertença é outra."
+      },
+      "hint": "Olhe a reciprocidade no meio do versículo.",
+      "learningObjective": "Identificar a mútua pertença.",
+      "evidence": [
+        "Cantares 6:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 6:2, para onde desceu o amado?",
+      "verseRef": "Cantares 6:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao seu jardim"
+        },
+        {
+          "id": "b",
+          "text": "Ao deserto"
+        },
+        {
+          "id": "c",
+          "text": "À torre de Davi"
+        },
+        {
+          "id": "d",
+          "text": "À sala do banquete"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu amado desceu ao seu jardim",
+      "feedbackCorrect": "Ele desceu ao jardim.",
+      "feedbackWrong": {
+        "b": "Deserto aparece em outros capítulos.",
+        "c": "Torre está em 4:4.",
+        "d": "Banquete está em 2:4."
+      },
+      "hint": "Leia o destino do amado.",
+      "learningObjective": "Reconhecer o jardim.",
+      "evidence": [
+        "Cantares 6:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 6:9 na ordem do texto.",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas uma é a minha pomba"
+        },
+        {
+          "id": "b",
+          "text": "a minha imaculada"
+        },
+        {
+          "id": "c",
+          "text": "a única de sua mãe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada, a única de sua mãe",
+      "feedbackCorrect": "Uma → imaculada → única.",
+      "feedbackWrong": {
+        "default": "Comece por Mas uma; a mãe fecha."
+      },
+      "hint": "Siga pomba → imaculada → única.",
+      "learningObjective": "Seguir a ordem da escolha.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 6:8, quantas são as rainhas?",
+      "verseRef": "Cantares 6:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sessenta"
+        },
+        {
+          "id": "b",
+          "text": "Oitenta"
+        },
+        {
+          "id": "c",
+          "text": "Mil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sessenta são as rainhas",
+      "feedbackCorrect": "Sessenta são as rainhas.",
+      "feedbackWrong": {
+        "b": "Oitenta são as concubinas.",
+        "c": "O texto diz sessenta."
+      },
+      "hint": "Veja o número das rainhas.",
+      "learningObjective": "Lembrar o número das rainhas.",
+      "evidence": [
+        "Cantares 6:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 6:9 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 6:9",
+      "passageA": {
+        "ref": "Cantares 6:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Entre muitas, o amor da aliança escolhe uma e a chama perfeita."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Escolha de uma só"
+        },
+        {
+          "id": "b",
+          "text": "Igualdade de todas"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "O \"Mas uma\" marca a escolha exclusiva.",
+      "feedbackWrong": {
+        "b": "Há contraste com a multidão.",
+        "c": "Há nomeação clara."
+      },
+      "hint": "Veja a palavra Mas.",
+      "learningObjective": "Ligar o contexto à escolha.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 6:8–9, as muitas rainhas anulam a escolha de uma.",
+      "verseRef": "Cantares 6:8–9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada",
+      "feedbackCorrect": "A multidão prepara o contraste; a escolha permanece.",
+      "feedbackWrong": {
+        "true": "O \"Mas\" confirma a escolha de uma."
+      },
+      "hint": "Leia o contraste depois de 6:8.",
+      "learningObjective": "Ver o contraste entre muitas e uma.",
+      "evidence": [
+        "Cantares 6:8–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 6:9, toque o marcador do contraste.",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas uma"
+        },
+        {
+          "id": "b",
+          "text": "donzelas"
+        },
+        {
+          "id": "c",
+          "text": "louvaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "\"Mas uma\" marca o contraste.",
+      "feedbackWrong": {
+        "b": "Donzelas a veem depois.",
+        "c": "O louvor é o resultado."
+      },
+      "hint": "Comece pelas primeiras palavras.",
+      "learningObjective": "Tocar o marcador do contraste.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 6:1–3 estabelece entre pergunta e resposta?",
+      "verseRef": "Cantares 6:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perguntam o caminho; ela sabe o jardim e a pertença"
+        },
+        {
+          "id": "b",
+          "text": "Ela não sabe responder nada"
+        },
+        {
+          "id": "c",
+          "text": "As filhas já encontraram o amado"
+        },
+        {
+          "id": "d",
+          "text": "Ele sumiu sem destino no texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu amado desceu ao seu jardim",
+      "feedbackCorrect": "A pergunta de 6:1 recebe o jardim e a mútua pertença.",
+      "feedbackWrong": {
+        "b": "Ela responde em 6:2–3.",
+        "c": "Elas se oferecem a buscar.",
+        "d": "Há jardim e lírios."
+      },
+      "hint": "Ligue 6:1 a 6:2–3.",
+      "learningObjective": "Relacionar pergunta e resposta.",
+      "evidence": [
+        "Cantares 6:1–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 6:1–9.",
+      "verseRef": "Cantares 6:1–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "As filhas perguntam e se oferecem"
+        },
+        {
+          "id": "b",
+          "text": "Ela sabe onde ele pastoreia"
+        },
+        {
+          "id": "c",
+          "text": "Entre muitas, uma é a escolhida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "Pergunta → resposta → escolha.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta; a escolha fecha."
+      },
+      "hint": "Siga perguntar → saber → escolher.",
+      "learningObjective": "Ordenar a estrutura da cena.",
+      "evidence": [
+        "Cantares 6:1–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 6:4, a que cidade ela é comparada em formosura?",
+      "verseRef": "Cantares 6:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tirza"
+        },
+        {
+          "id": "b",
+          "text": "Gileade"
+        },
+        {
+          "id": "c",
+          "text": "En-Gedi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Formosa és, querida minha, como Tirza",
+      "feedbackCorrect": "Formosa como Tirza.",
+      "feedbackWrong": {
+        "b": "Gileade aparece nos cabelos.",
+        "c": "En-Gedi está em outro capítulo."
+      },
+      "hint": "Veja a primeira comparação.",
+      "learningObjective": "Lembrar a comparação com Tirza.",
+      "evidence": [
+        "Cantares 6:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 6:9 a Efésios 5:25–27?",
+      "verseRef": "Cantares 6:9",
+      "passageA": {
+        "ref": "Cantares 6:9"
+      },
+      "passageB": {
+        "ref": "Efésios 5:25–27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma noiva amada e limpa"
+        },
+        {
+          "id": "b",
+          "text": "Multidão sem escolha"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de qualquer louvor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a minha imaculada",
+      "feedbackCorrect": "Os dois textos falam de uma amada limpa/imaculada.",
+      "feedbackWrong": {
+        "b": "Há escolha de uma.",
+        "c": "Há louvor das rainhas."
+      },
+      "hint": "Compare imaculada e sem mancha.",
+      "learningObjective": "Ligar a escolha a Efésios 5.",
+      "evidence": [
+        "Cantares 6:9",
+        "Efésios 5:25–27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 6:8–9 trata todos os vínculos como iguais diante do amado.",
+      "verseRef": "Cantares 6:8–9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada",
+      "feedbackCorrect": "O contraste \"Mas uma\" rejeita a igualdade plana.",
+      "feedbackWrong": {
+        "true": "O texto escolhe uma entre muitas."
+      },
+      "hint": "Veja o contraste depois das rainhas.",
+      "learningObjective": "Rejeitar a leitura da igualdade plana.",
+      "evidence": [
+        "Cantares 6:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 6:9, toque o trecho que sustenta a singularidade.",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "a única"
+        },
+        {
+          "id": "b",
+          "text": "as rainhas"
+        },
+        {
+          "id": "c",
+          "text": "as concubinas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a única de sua mãe",
+      "feedbackCorrect": "A singularidade está em \"a única de sua mãe\".",
+      "feedbackWrong": {
+        "b": "Rainhas são a multidão.",
+        "c": "Concubinas são a multidão."
+      },
+      "hint": "Veja como ela é descrita entre as muitas.",
+      "learningObjective": "Sustentar a singularidade com o texto.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 6:1–9 sustenta sobre o amor?",
+      "verseRef": "Cantares 6:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entre muitas, o amor da aliança escolhe uma e a chama perfeita"
+        },
+        {
+          "id": "b",
+          "text": "O amor evita qualquer escolha"
+        },
+        {
+          "id": "c",
+          "text": "A multidão apaga o nome da amada"
+        },
+        {
+          "id": "d",
+          "text": "Ela não sabe onde está o amado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada",
+      "feedbackCorrect": "A multidão e o \"Mas uma\" sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "Há escolha explícita.",
+        "c": "Há nomeação e louvor.",
+        "d": "Ela responde com o jardim."
+      },
+      "hint": "Una 6:8 ao Mas de 6:9.",
+      "learningObjective": "Escolher a interpretação da escolha.",
+      "evidence": [
+        "Cantares 6:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho da pergunta à escolha?",
+      "verseRef": "Cantares 6:1–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "As filhas perguntam pelo amado"
+        },
+        {
+          "id": "b",
+          "text": "Ela afirma a mútua pertença no jardim"
+        },
+        {
+          "id": "c",
+          "text": "Ele declara uma entre muitas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "Pergunta → pertença → escolha.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta; a escolha fecha."
+      },
+      "hint": "Siga perguntar → pertencer → escolher.",
+      "learningObjective": "Ver o encadeamento da cena.",
+      "evidence": [
+        "Cantares 6:1–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 6:9, que título terno ele usa para a escolhida?",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "pomba"
+        },
+        {
+          "id": "b",
+          "text": "torre"
+        },
+        {
+          "id": "c",
+          "text": "palmeira"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a minha pomba",
+      "feedbackCorrect": "O título é pomba.",
+      "feedbackWrong": {
+        "b": "Torre não está neste versículo.",
+        "c": "Palmeira está em outro capítulo."
+      },
+      "hint": "Veja o nome depois de \"uma é\".",
+      "learningObjective": "Lembrar o título pomba.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 6:9 a Isaías 62:4–5?",
+      "verseRef": "Cantares 6:9",
+      "passageA": {
+        "ref": "Cantares 6:9"
+      },
+      "passageB": {
+        "ref": "Isaías 62:4–5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamada pelo nome novo"
+        },
+        {
+          "id": "b",
+          "text": "Esquecida sem nome"
+        },
+        {
+          "id": "c",
+          "text": "Misturada na multidão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a minha pomba, a minha imaculada",
+      "feedbackCorrect": "Os dois textos nomeiam a amada com títulos de escolha.",
+      "feedbackWrong": {
+        "b": "Há nomeação clara.",
+        "c": "Há singularidade."
+      },
+      "hint": "Compare a nomeação nos dois textos.",
+      "learningObjective": "Ligar a nomeação a Isaías 62.",
+      "evidence": [
+        "Cantares 6:9",
+        "Isaías 62:4–5"
+      ]
+    }
+  ]
+}

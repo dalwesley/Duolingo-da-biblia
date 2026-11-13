@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 65:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 65:1–6"
+      },
+      {
+        "ref": "Salmos 65:7–12"
+      }
+    ],
+    "context": "A ti, ó Deus, espera o louvor em Sião; tu visitas a terra e a regas em abundância.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "A ti, ó Deus, espera",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "A ti, ó Deus, pertence a confiança e o louvor em Sião! A ti se pagará o voto.",
+        "evidenceRef": "Salmos 65:1",
+        "evidenceSpan": "A ti"
+      },
+      {
+        "text": "Ó tu que ouves as orações.",
+        "evidenceRef": "Salmos 65:2",
+        "evidenceSpan": "Ó tu que ouves as orações"
+      },
+      {
+        "text": "As iniquidades se levantam contra mim.",
+        "evidenceRef": "Salmos 65:3",
+        "evidenceSpan": "As iniquidades se levantam contra mim"
+      },
+      {
+        "text": "Bem-aventurado aquele a quem escolhes e fazes chegar.",
+        "evidenceRef": "Salmos 65:4",
+        "evidenceSpan": "Bem-aventurado aquele a quem escolhes e fazes chegar"
+      },
+      {
+        "text": "Com feitos tremendos nos respondes.",
+        "evidenceRef": "Salmos 65:5",
+        "evidenceSpan": "Com feitos tremendos nos respondes"
+      },
+      {
+        "text": "Aquele que, pela sua força consolida os montes, cingido de poder;",
+        "evidenceRef": "Salmos 65:6",
+        "evidenceSpan": "Aquele que"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "pertence",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "confiança",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ti ó deus pertence a",
+        "evidenceRef": "Salmos 65:1"
+      },
+      {
+        "label": "Ó tu que ouves as orações",
+        "evidenceRef": "Salmos 65:2"
+      },
+      {
+        "label": "As iniquidades se levantam contra mim",
+        "evidenceRef": "Salmos 65:3"
+      },
+      {
+        "label": "Bem-aventurado aquele a quem escolhes e",
+        "evidenceRef": "Salmos 65:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 65:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 65:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 65:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      },
+      {
+        "ref": "João 10:11",
+        "bridge": "Bom Pastor"
+      },
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Perdão, presença e colheita: Deus farta a terra e o povo com bondade."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Perdão, presença e colheita: Deus farta a terra e o povo com bondade.",
+    "anchorQuestion": "O que Salmos 65:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 65:1, a ti.",
+      "verseRef": "Salmos 65:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "A ti",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 65:1 afirma.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 65:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 65:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "pertence"
+        },
+        {
+          "id": "c",
+          "text": "confiança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca «Deus».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 65:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 65:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "As iniquidades se levantam contra mim"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As iniquidades se levantam contra mim",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 65:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 65:1 na ordem do texto.",
+      "verseRef": "Salmos 65:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ti"
+        },
+        {
+          "id": "b",
+          "text": "ó Deus"
+        },
+        {
+          "id": "c",
+          "text": "pertence"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A ti",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 65:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 65:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurado"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "pertence"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurado",
+      "feedbackCorrect": "A palavra do versículo é «Bem-aventurado».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 65:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 65:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 65:1",
+      "passageA": {
+        "ref": "Salmos 65:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A ti, ó Deus, espera o louvor em Sião; tu visitas a terra e a regas em abundância."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 65:1, o marcador se une ideias no fluxo do texto.",
+      "verseRef": "Salmos 65:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 65:1 afirma.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 65:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 65:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "pertence"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 65:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 65:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurado aquele a quem escolhes e fazes chegar",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 65:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 65:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ti ó deus pertence"
+        },
+        {
+          "id": "b",
+          "text": "Ó tu que ouves as orações"
+        },
+        {
+          "id": "c",
+          "text": "As iniquidades se levantam contra mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 65:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 65:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "iniquidades"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "pertence"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "iniquidades",
+      "feedbackCorrect": "A palavra do versículo é «iniquidades».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 65:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 65:1 a Hebreus 13:15.",
+      "verseRef": "Salmos 65:1",
+      "passageA": {
+        "ref": "Salmos 65:1"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício de louvor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 65:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 65:12 afirma.",
+      "evidence": [
+        "Salmos 65:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 65:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 65:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "pastos"
+        },
+        {
+          "id": "b",
+          "text": "deserto"
+        },
+        {
+          "id": "c",
+          "text": "destilam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pastos",
+      "feedbackCorrect": "O versículo destaca «pastos».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 65:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 65:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 65:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Com feitos tremendos nos respondes",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 65:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 65:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 65:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 65:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "feitos"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "pertence"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "feitos",
+      "feedbackCorrect": "A palavra do versículo é «feitos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 65:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 65:1 a João 10:11.",
+      "verseRef": "Salmos 65:1",
+      "passageA": {
+        "ref": "Salmos 65:1"
+      },
+      "passageB": {
+        "ref": "João 10:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bom Pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 65:1"
+      ]
+    }
+  ]
+}

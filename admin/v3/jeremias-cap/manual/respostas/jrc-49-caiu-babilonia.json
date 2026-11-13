@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Jeremias 50:1–6",
+    "passages": [
+      {
+        "ref": "Jeremias 50:1–6"
+      }
+    ],
+    "context": "Neste trecho, a palavra do Senhor alcança o povo com juízo e esperança. Observe o que o texto afirma antes de interpretar.",
+    "keyword": "palavra",
+    "keywordGloss": "Termo do trecho ligado ao sentido da cena.",
+    "focusQuestion": "O que este trecho pede de você diante do Senhor?",
+    "reflectionPrompts": [
+      "Ouvir a palavra",
+      "Confiar no Senhor",
+      "Responder com fé"
+    ],
+    "facts": [
+      {
+        "text": "Em Jeremias 50:1, o texto registra: A palavra que o SENHOR falou contra a.",
+        "evidenceRef": "Jeremias 50:1",
+        "evidenceSpan": "A palavra que o SENHOR falou contra a"
+      },
+      {
+        "text": "Em Jeremias 50:2, o texto registra: Anunciem entre as nações; façam ouvir e levantem.",
+        "evidenceRef": "Jeremias 50:2",
+        "evidenceSpan": "Anunciem entre as nações; façam ouvir e levantem"
+      },
+      {
+        "text": "Em Jeremias 50:3, o texto registra: Porque uma nação do norte se levantou contra.",
+        "evidenceRef": "Jeremias 50:3",
+        "evidenceSpan": "Porque uma nação do norte se levantou contra"
+      },
+      {
+        "text": "Em Jeremias 50:4, o texto registra: Naqueles dias, naquele tempo, diz o SENHOR, os.",
+        "evidenceRef": "Jeremias 50:4",
+        "evidenceSpan": "Naqueles dias, naquele tempo, diz o SENHOR, os"
+      },
+      {
+        "text": "Em Jeremias 50:5, o texto registra: Pelo caminho de Sião perguntarão, com os rostos.",
+        "evidenceRef": "Jeremias 50:5",
+        "evidenceSpan": "Pelo caminho de Sião perguntarão, com os rostos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "palavra",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "SENHOR",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "falou",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "palavra SENHOR falou contra",
+        "evidenceRef": "Jeremias 50:1"
+      },
+      {
+        "label": "Anunciem entre nações façam",
+        "evidenceRef": "Jeremias 50:2"
+      },
+      {
+        "label": "nação norte levantou contra",
+        "evidenceRef": "Jeremias 50:3"
+      },
+      {
+        "label": "Naqueles dias naquele tempo",
+        "evidenceRef": "Jeremias 50:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Relação de causa presente em Jeremias 50:3.",
+        "marker": "Porque",
+        "evidenceRef": "Jeremias 50:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Relação de contraste presente em Jeremias 50:2.",
+        "marker": null,
+        "evidenceRef": "Jeremias 50:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Relação de resultado presente em Jeremias 50:3.",
+        "marker": null,
+        "evidenceRef": "Jeremias 50:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 6:8",
+        "bridge": "Envio do profeta"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro pedido"
+      },
+      {
+        "ref": "Deuteronômio 30:2",
+        "bridge": "Voltar ao Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não exige mudança concreta de vida.",
+        "why": "A palavra do Senhor chama a ouvir e agir."
+      },
+      {
+        "text": "A mensagem vale só para lideranças, nunca para o povo.",
+        "why": "O endereço do texto alcança o povo e a cidade."
+      },
+      {
+        "text": "O Senhor anuncia sem compromisso com o cumprimento.",
+        "why": "O texto liga a palavra de Deus ao que Ele faz."
+      }
+    ],
+    "centralInsight": "Fugi do meio de Babilônia, e saí da terra dos caldeus, e sede como os bodes diante do rebanho.",
+    "anchorQuestion": "O que Jeremias 50:1 afirma de modo claro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Jeremias 50:1, o texto inclui a ideia de A palavra que o SENHOR falou.",
+      "verseRef": "Jeremias 50:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "A palavra que o SENHOR falou contra a Babilônia e",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 50:1.",
+      "evidence": [
+        "Jeremias 50:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jeremias 50:2, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 50:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anunciem"
+        },
+        {
+          "id": "b",
+          "text": "entre"
+        },
+        {
+          "id": "c",
+          "text": "nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Anunciem entre a",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 50:2.",
+      "evidence": [
+        "Jeremias 50:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Jeremias 50:3, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 50:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque uma nação do norte se levantou"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque uma nação do norte se levantou",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 50:3.",
+      "evidence": [
+        "Jeremias 50:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 50:4.",
+      "verseRef": "Jeremias 50:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naqueles dias, naquele tempo"
+        },
+        {
+          "id": "b",
+          "text": "diz o SENHOR, os filhos de Israel e os filhos de Judá voltarão juntos"
+        },
+        {
+          "id": "c",
+          "text": "e buscarão ao SENHOR, seu Deus."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Naqueles dias, naquele tempo, diz o SENHOR, os fil",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 50:4.",
+      "evidence": [
+        "Jeremias 50:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Jeremias 50:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 50:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pelo"
+        },
+        {
+          "id": "b",
+          "text": "caminho"
+        },
+        {
+          "id": "c",
+          "text": "Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pelo caminho d",
+      "feedbackCorrect": "A palavra do texto é Pelo.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 50:5.",
+      "evidence": [
+        "Jeremias 50:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Jeremias 50:6 comunica que se liga a este contexto?",
+      "verseRef": "Jeremias 50:6",
+      "passageA": {
+        "ref": "Jeremias 50:6",
+        "text": "O meu povo é como ovelhas perdidas; os seus pastores as fizeram errar e as deixa"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor dirige a palavra ao seu povo neste trecho."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Sem chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O meu povo é como ovelhas perdidas; os seus pastor",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 50:6.",
+      "evidence": [
+        "Jeremias 50:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Jeremias 50:3, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 50:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porque uma nação do norte se levantou contra ela, que",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 50:3.",
+      "evidence": [
+        "Jeremias 50:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jeremias 50:4, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 50:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naqueles"
+        },
+        {
+          "id": "b",
+          "text": "dias"
+        },
+        {
+          "id": "c",
+          "text": "naquele"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Naqueles dias, n",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 50:4.",
+      "evidence": [
+        "Jeremias 50:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Jeremias 50:5, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 50:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pelo caminho de Sião perguntarão, com os rostos",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 50:5.",
+      "evidence": [
+        "Jeremias 50:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 50:6.",
+      "verseRef": "Jeremias 50:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "povo ovelhas perdidas"
+        },
+        {
+          "id": "b",
+          "text": "pastores fizeram errar deixaram"
+        },
+        {
+          "id": "c",
+          "text": "monte passaram outeiro esquecendo-se"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O meu povo é como ovelhas perdidas; os seus pastor",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 50:6.",
+      "evidence": [
+        "Jeremias 50:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Jeremias 50:1, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 50:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "palavra"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "falou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A palavra que o SEN",
+      "feedbackCorrect": "A palavra do texto é palavra.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "Olhe com atenção o versículo indicado no palco.",
+      "learningObjective": "Completar Jeremias 50:1.",
+      "evidence": [
+        "Jeremias 50:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Jeremias 50:2 a Isaías 6:8?",
+      "verseRef": "Jeremias 50:2",
+      "passageA": {
+        "ref": "Jeremias 50:2",
+        "text": "Anunciem entre as nações; façam ouvir e levantem estandarte; proclamem, não encu"
+      },
+      "passageB": {
+        "ref": "Isaías 6:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Envio do profeta"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Anunciem entre as nações; façam ouvir e levantem e",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 50:2.",
+      "evidence": [
+        "Jeremias 50:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Jeremias 50:5, o texto inclui a ideia de Pelo caminho de Sião perguntarão, com.",
+      "verseRef": "Jeremias 50:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Pelo caminho de Sião perguntarão, com os rostos voltados para",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 50:5.",
+      "evidence": [
+        "Jeremias 50:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jeremias 50:6, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 50:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "povo"
+        },
+        {
+          "id": "b",
+          "text": "ovelhas"
+        },
+        {
+          "id": "c",
+          "text": "perdidas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O meu povo é como",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 50:6.",
+      "evidence": [
+        "Jeremias 50:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Jeremias 50:1, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 50:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A palavra que o SENHOR falou contra a",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 50:1.",
+      "evidence": [
+        "Jeremias 50:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 50:2.",
+      "verseRef": "Jeremias 50:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anunciem entre nações"
+        },
+        {
+          "id": "b",
+          "text": "façam ouvir levantem estandarte"
+        },
+        {
+          "id": "c",
+          "text": "proclamem encubram Tomada Babilônia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Anunciem entre as nações; façam ouvir e levantem e",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 50:2.",
+      "evidence": [
+        "Jeremias 50:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Jeremias 50:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 50:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "nação"
+        },
+        {
+          "id": "b",
+          "text": "norte"
+        },
+        {
+          "id": "c",
+          "text": "levantou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "orque uma nação do norte",
+      "feedbackCorrect": "A palavra do texto é nação.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 50:3.",
+      "evidence": [
+        "Jeremias 50:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Jeremias 50:4 a Salmos 51:10?",
+      "verseRef": "Jeremias 50:4",
+      "passageA": {
+        "ref": "Jeremias 50:4",
+        "text": "Naqueles dias, naquele tempo, diz o SENHOR, os filhos de Israel e os filhos de J"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro pedido"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Naqueles dias, naquele tempo, diz o SENHOR, os fil",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 50:4.",
+      "evidence": [
+        "Jeremias 50:4"
+      ]
+    }
+  ]
+}

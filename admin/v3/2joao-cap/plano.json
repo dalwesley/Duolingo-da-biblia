@@ -1,0 +1,33 @@
+{
+  "slug": "2joao-cap",
+  "prefix": "j2c",
+  "book": "2 João",
+  "chapters": 1,
+  "title": "2 João",
+  "description": "2 João capítulo a capítulo: verdade, amor e cuidado com o engano.",
+  "icon": "💌",
+  "color": "#00897B",
+  "order": 76,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["cartas-joao"],
+  "modules": [
+    {
+      "title": "Verdade e cuidado · cap. 1",
+      "scenes": [
+        {
+          "ref": "2 João 1:10–13",
+          "title": "Não recebais o enganador",
+          "intro": "João fecha a carta curta alertando sobre quem não traz a doutrina de Cristo.",
+          "insight": "Quem não permanece na doutrina de Cristo não tem a Deus; não o recebais em casa.",
+          "objective": "Guardar a doutrina de Cristo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Verdade e cuidado",
+        "intro": "Revise o alerta contra quem não traz a doutrina de Cristo.",
+        "insight": "Amar a verdade é também recusar o engano"
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "slug": "hebreus-cap",
+  "prefix": "hbc",
+  "book": "Hebreus",
+  "chapters": 13,
+  "title": "Hebreus",
+  "description": "Hebreus capítulo a capítulo: Cristo, superior e suficiente, chama a perseverar.",
+  "icon": "⛪",
+  "color": "#26A69A",
+  "order": 73,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["hebreus"],
+  "modules": [
+    {
+      "title": "Cristo superior · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Hebreus 1:8–14",
+          "title": "O trono do Filho",
+          "intro": "A carta compara o Filho aos anjos e cita as Escrituras sobre o seu trono.",
+          "insight": "O Filho está no trono para sempre; os anjos são espíritos ministradores.",
+          "objective": "Honrar o Filho entronizado"
+        },
+        {
+          "ref": "Hebreus 2:9–15",
+          "title": "Jesus por todos",
+          "intro": "Vemos Jesus coroado de glória depois de sofrer a morte por todos.",
+          "insight": "Jesus se fez homem para, pela morte, destruir o que tinha o poder da morte.",
+          "objective": "Confiar no Salvador humano"
+        },
+        {
+          "ref": "Hebreus 3:7–15",
+          "title": "Hoje, se ouvirdes",
+          "intro": "O Espírito Santo alerta com a história de Israel no deserto.",
+          "insight": "Hoje, se ouvirdes a sua voz, não endureçais o coração; permanecei firmes até o fim.",
+          "objective": "Ouvir sem endurecer"
+        },
+        {
+          "ref": "Hebreus 4:1–10",
+          "title": "O descanso de Deus",
+          "intro": "A promessa de entrar no descanso ainda permanece; há risco de falhar.",
+          "insight": "Há um descanso para o povo de Deus: quem entra descansa das suas obras.",
+          "objective": "Entrar no descanso"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cristo superior",
+        "intro": "Revise o Filho no trono, a morte por todos, o ouvir de hoje e o descanso de Deus.",
+        "insight": "Cristo é maior: ouça-o e entre no descanso"
+      }
+    },
+    {
+      "title": "Sacerdote e aliança · cap. 5–9",
+      "scenes": [
+        {
+          "ref": "Hebreus 5:5–10",
+          "title": "Sacerdote eterno",
+          "intro": "Cristo não se glorificou a si mesmo; Deus o nomeou sacerdote para sempre.",
+          "insight": "Aperfeiçoado pela obediência, Cristo tornou-se Autor da salvação eterna.",
+          "objective": "Obedecer ao Autor da salvação"
+        },
+        {
+          "ref": "Hebreus 6:13–20",
+          "title": "Âncora da alma",
+          "intro": "Deus jurou por si mesmo a Abraão e mostrou a firmeza da sua promessa.",
+          "insight": "A esperança é âncora da alma, segura e firme, porque Jesus entrou além do véu.",
+          "objective": "Segurar a esperança firme"
+        },
+        {
+          "ref": "Hebreus 7:23–28",
+          "title": "Salva completamente",
+          "intro": "Os sacerdotes antigos morriam; este permanece para sempre.",
+          "insight": "Jesus pode salvar completamente os que se aproximam de Deus por meio dele.",
+          "objective": "Aproximar-se por Cristo"
+        },
+        {
+          "ref": "Hebreus 9:11–16",
+          "chapters": "8–9",
+          "title": "Sangue que limpa",
+          "intro": "Cristo veio como sumo sacerdote dos bens já realizados, com o próprio sangue.",
+          "insight": "O sangue de Cristo limpa a consciência e ele é Mediador da nova aliança.",
+          "objective": "Confiar no sangue de Cristo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sacerdote e aliança",
+        "intro": "Revise o sacerdote eterno, a âncora, a salvação completa e o sangue que limpa.",
+        "insight": "Em Cristo temos sacerdote, esperança e aliança nova"
+      }
+    },
+    {
+      "title": "Fé e perseverança · cap. 10–13",
+      "scenes": [
+        {
+          "ref": "Hebreus 10:19–25",
+          "title": "Aproximemo-nos",
+          "intro": "Pelo sangue de Jesus há ousadia para entrar e um chamado a perseverar juntos.",
+          "insight": "Aproximemo-nos com fé, mantenhamos a esperança e estimulemos uns aos outros ao amor.",
+          "objective": "Perseverar juntos na fé"
+        },
+        {
+          "ref": "Hebreus 11:8–16",
+          "title": "Abraão pela fé",
+          "intro": "Pela fé Abraão obedeceu e saiu, sem saber para onde ia.",
+          "insight": "Pela fé os patriarcas buscaram a pátria celestial e Deus não se envergonha deles.",
+          "objective": "Andar pela fé"
+        },
+        {
+          "ref": "Hebreus 12:1–6",
+          "title": "Olhando para Jesus",
+          "intro": "Com tanta nuvem de testemunhas, a carta chama a correr com perseverança.",
+          "insight": "Olhando firmemente para Jesus, o autor e consumador da fé, suportamos a disciplina.",
+          "objective": "Correr olhando para Jesus"
+        },
+        {
+          "ref": "Hebreus 13:12–17",
+          "title": "Fora do acampamento",
+          "intro": "Jesus sofreu fora da porta; a carta chama a ir a ele e a oferecer louvor.",
+          "insight": "Saiamos a Jesus fora do acampamento, ofereçamos louvor e obedeçamos aos guias.",
+          "objective": "Seguir Jesus até o fim"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fé e perseverança",
+        "intro": "Revise a aproximação, a fé de Abraão, o olhar para Jesus e a vida fora do acampamento.",
+        "insight": "A fé persevera olhando para Jesus até o fim"
+      }
+    }
+  ]
+}

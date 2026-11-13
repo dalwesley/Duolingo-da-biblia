@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Êxodo 19:10–15",
+    "passages": [
+      {
+        "ref": "Êxodo 19:10–19"
+      }
+    ],
+    "context": "Antes de o Senhor descer no Sinai, Moisés deve preparar o povo: lavar vestes, limites e temor.",
+    "keyword": "Preparai",
+    "keywordGloss": "O encontro com o Senhor pede povo pronto, limpo e respeitoso dos limites.",
+    "focusQuestion": "O que você precisa preparar antes de se aproximar do Senhor?",
+    "reflectionPrompts": [
+      "Lavar as vestes",
+      "Limites no monte",
+      "Sinai em fogo"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor mandou purificar o povo e lavar as vestes.",
+        "evidenceRef": "Êxodo 19:10",
+        "evidenceSpan": "purifique-os hoje e amanhã, e que lavem as suas vestes"
+      },
+      {
+        "text": "No terceiro dia o Senhor desceria sobre o monte Sinai.",
+        "evidenceRef": "Êxodo 19:11",
+        "evidenceSpan": "no terceiro dia o Senhor, à vista de todo o povo, descerá sobre o monte Sinai"
+      },
+      {
+        "text": "Quem tocasse o monte certamente morreria.",
+        "evidenceRef": "Êxodo 19:12",
+        "evidenceSpan": "todo aquele que tocar o monte certamente morrerá"
+      },
+      {
+        "text": "O monte Sinai fumegava porque o Senhor descera em fogo.",
+        "evidenceRef": "Êxodo 19:18",
+        "evidenceSpan": "o Senhor tinha descido sobre ele em fogo"
+      },
+      {
+        "text": "Moisés falava e Deus respondia com trovão.",
+        "evidenceRef": "Êxodo 19:19",
+        "evidenceSpan": "Moisés falava, e Deus lhe respondia com trovão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "purifique-os",
+        "gloss": "Preparar o povo para o encontro com o Senhor."
+      },
+      {
+        "term": "limites",
+        "gloss": "Marca ao redor do monte: ninguém toca sem morrer."
+      },
+      {
+        "term": "fogo",
+        "gloss": "Sinal da descida do Senhor sobre o Sinai."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de purificar e lavar",
+        "evidenceRef": "Êxodo 19:10–11"
+      },
+      {
+        "label": "Limites em torno do monte",
+        "evidenceRef": "Êxodo 19:12–13"
+      },
+      {
+        "label": "Moisés consagra o povo",
+        "evidenceRef": "Êxodo 19:14–15"
+      },
+      {
+        "label": "Sinai treme em fogo e trombeta",
+        "evidenceRef": "Êxodo 19:16–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Estejam prontos porque no terceiro dia o Senhor descerá.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 19:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem tocar o monte certamente morrerá.",
+        "marker": "certamente",
+        "evidenceRef": "Êxodo 19:12"
+      },
+      {
+        "kind": "sequência",
+        "text": "No terceiro dia vêm trovões, nuvem e trombeta; o povo treme.",
+        "marker": null,
+        "evidenceRef": "Êxodo 19:16"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 12:18–19",
+        "bridge": "Monte e trombeta"
+      },
+      {
+        "ref": "Hebreus 12:21",
+        "bridge": "Temor no Sinai"
+      },
+      {
+        "ref": "Salmos 68:8",
+        "bridge": "Terra tremeu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Qualquer um podia subir o monte à vontade.",
+        "why": "Há limites; quem tocar o monte morrerá."
+      },
+      {
+        "text": "O Senhor desceu sem o povo se preparar.",
+        "why": "Antes manda purificar, lavar e estar prontos."
+      },
+      {
+        "text": "O Sinai ficou quieto e silencioso.",
+        "why": "Trovões, fogo, fumaça e trombeta marcam a cena."
+      }
+    ],
+    "centralInsight": "Encontrar o Senhor pede preparo: o Sinai treme quando ele desce no fogo.",
+    "anchorQuestion": "O que o Senhor pediu ao povo antes de descer no Sinai?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O Senhor mandou purificar o povo e que lavassem as suas vestes.",
+      "verseRef": "Êxodo 19:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "purifique-os hoje e amanhã, e que lavem as suas vestes",
+      "feedbackCorrect": "A ordem une purificação e lavar as vestes.",
+      "feedbackWrong": {
+        "false": "Releia: purifique-os e que lavem as suas vestes."
+      },
+      "hint": "Veja o que fazer hoje e amanhã.",
+      "learningObjective": "Observar a ordem de preparo.",
+      "evidence": [
+        "Êxodo 19:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 19:11, toque o monte onde o Senhor desceria.",
+      "verseRef": "Êxodo 19:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sinai"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "descerá sobre o monte Sinai",
+      "feedbackCorrect": "O Senhor desceria sobre o monte Sinai.",
+      "feedbackWrong": {
+        "b": "O povo vê; o monte nomeado é Sinai.",
+        "c": "Senhor é quem desce; o monte é Sinai."
+      },
+      "hint": "Leia o nome do monte.",
+      "learningObjective": "Identificar o Sinai.",
+      "evidence": [
+        "Êxodo 19:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 19:12, o que aconteceria a quem tocasse o monte?",
+      "verseRef": "Êxodo 19:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Certamente morreria"
+        },
+        {
+          "id": "b",
+          "text": "Receberia ouro"
+        },
+        {
+          "id": "c",
+          "text": "Virou sacerdote"
+        },
+        {
+          "id": "d",
+          "text": "Ficaria mudo um dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo aquele que tocar o monte certamente morrerá",
+      "feedbackCorrect": "Tocar o monte traz morte certa.",
+      "feedbackWrong": {
+        "b": "Não há recompensa; há morte.",
+        "c": "O texto não fala de sacerdócio aqui.",
+        "d": "A pena é morrer."
+      },
+      "hint": "Leia a consequência de tocar.",
+      "learningObjective": "Observar o limite sagrado.",
+      "evidence": [
+        "Êxodo 19:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 19:10 na ordem do texto.",
+      "verseRef": "Êxodo 19:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse também o Senhor a Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Vá ao povo e purifique-os hoje e amanhã"
+        },
+        {
+          "id": "c",
+          "text": "e que lavem as suas vestes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "purifique-os hoje e amanhã",
+      "feedbackCorrect": "Ordem do Senhor, purificar, lavar vestes.",
+      "feedbackWrong": {
+        "default": "Comece pela fala do Senhor."
+      },
+      "hint": "O versículo começa com Disse.",
+      "learningObjective": "Reconhecer a ordem de 19:10.",
+      "evidence": [
+        "Êxodo 19:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 19:18, sobre o quê o Senhor tinha descido no monte?",
+      "verseRef": "Êxodo 19:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "água"
+        },
+        {
+          "id": "c",
+          "text": "areia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "descido sobre ele em fogo",
+      "feedbackCorrect": "O Senhor descera sobre o monte em fogo.",
+      "feedbackWrong": {
+        "b": "O sinal é fogo, não água.",
+        "c": "O texto diz fogo."
+      },
+      "hint": "Veja em que Ele descera.",
+      "learningObjective": "Lembrar o fogo no Sinai.",
+      "evidence": [
+        "Êxodo 19:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 19:10 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 19:10",
+      "passageA": {
+        "ref": "Êxodo 19:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Antes da descida no Sinai, o povo precisa se preparar."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Preparo antes do encontro"
+        },
+        {
+          "id": "b",
+          "text": "Fuga imediata do monte"
+        },
+        {
+          "id": "c",
+          "text": "Culto a ídolos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "purifique-os hoje e amanhã",
+      "feedbackCorrect": "Purificar e lavar é o preparo para o encontro.",
+      "feedbackWrong": {
+        "b": "O texto prepara, não manda fugir.",
+        "c": "Não há culto a ídolos aqui."
+      },
+      "hint": "Compare a ordem com o momento.",
+      "learningObjective": "Ligar preparo e encontro.",
+      "evidence": [
+        "Êxodo 19:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 19:11, o Senhor desceria no terceiro dia à vista de todo o povo.",
+      "verseRef": "Êxodo 19:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "no terceiro dia o Senhor, à vista de todo o povo, descerá",
+      "feedbackCorrect": "O prazo e a visibilidade estão no texto.",
+      "feedbackWrong": {
+        "false": "Releia: no terceiro dia, à vista de todo o povo."
+      },
+      "hint": "Veja o dia e a quem seria visível.",
+      "learningObjective": "Compreender o prazo da descida.",
+      "evidence": [
+        "Êxodo 19:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 19:11, toque a palavra que marca o motivo de estarem prontos.",
+      "verseRef": "Êxodo 19:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "monte"
+        },
+        {
+          "id": "c",
+          "text": "vista"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prontos para o terceiro dia, pois no terceiro dia",
+      "feedbackCorrect": "\"Pois\" liga o preparo à descida do Senhor.",
+      "feedbackWrong": {
+        "b": "\"monte\" é o lugar; o marcador de causa é pois.",
+        "c": "\"vista\" marca a visibilidade; a causa é pois."
+      },
+      "hint": "Procure a palavra que explica o preparo.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 19:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 19:12–13 liga o limite ao temor do monte?",
+      "verseRef": "Êxodo 19:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tocar o monte traz morte; o limite protege"
+        },
+        {
+          "id": "b",
+          "text": "O limite convida a subir sem medo"
+        },
+        {
+          "id": "c",
+          "text": "Só animais podem tocar o monte"
+        },
+        {
+          "id": "d",
+          "text": "O limite era só decoração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo aquele que tocar o monte certamente morrerá",
+      "feedbackCorrect": "O limite existe porque tocar o monte mata.",
+      "feedbackWrong": {
+        "b": "O texto proíbe subir e tocar.",
+        "c": "Animal ou homem: não viverá.",
+        "d": "A pena mostra seriedade."
+      },
+      "hint": "Una limite e consequência.",
+      "learningObjective": "Relacionar limite e temor.",
+      "evidence": [
+        "Êxodo 19:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena do Sinai em Êxodo 19:10–19?",
+      "verseRef": "Êxodo 19:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem de purificar o povo"
+        },
+        {
+          "id": "b",
+          "text": "Limites em torno do monte"
+        },
+        {
+          "id": "c",
+          "text": "O Sinai treme em fogo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "purifique-os hoje e amanhã",
+      "feedbackCorrect": "Preparo, limites e teofania em fogo.",
+      "feedbackWrong": {
+        "default": "Comece pela purificação; o fogo fecha."
+      },
+      "hint": "Siga preparo, limite e descida.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Êxodo 19:10",
+        "Êxodo 19:12",
+        "Êxodo 19:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 19:12, que palavra resume a certeza da pena?",
+      "verseRef": "Êxodo 19:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "certamente"
+        },
+        {
+          "id": "b",
+          "text": "talvez"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "certamente morrerá",
+      "feedbackCorrect": "A pena é certa: certamente morrerá.",
+      "feedbackWrong": {
+        "b": "Não há talvez; há certeza.",
+        "c": "O texto usa certamente."
+      },
+      "hint": "Veja o advérbio antes de morrerá.",
+      "learningObjective": "Lembrar o marcador de certeza.",
+      "evidence": [
+        "Êxodo 19:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 19:16 a Hebreus 12:18–19?",
+      "verseRef": "Êxodo 19:16",
+      "passageA": {
+        "ref": "Êxodo 19:16"
+      },
+      "passageB": {
+        "ref": "Hebreus 12:18–19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Trombeta e temor"
+        },
+        {
+          "id": "b",
+          "text": "Maná no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Sangue na porta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "forte som de trombeta",
+      "feedbackCorrect": "Hebreus retoma o Sinai: fogo, trombeta e temor.",
+      "feedbackWrong": {
+        "b": "O elo é a teofania, não o maná.",
+        "c": "A páscoa não é o tema aqui."
+      },
+      "hint": "Compare trombeta e voz no monte.",
+      "learningObjective": "Relacionar Sinai e Hebreus.",
+      "evidence": [
+        "Êxodo 19:16",
+        "Hebreus 12:18–19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 19:10–19 sustenta que o povo podia subir o monte à vontade, sem limites.",
+      "verseRef": "Êxodo 19:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "todo aquele que tocar o monte certamente morrerá",
+      "feedbackCorrect": "Há limites: quem tocar o monte morrerá.",
+      "feedbackWrong": {
+        "true": "Releia: limites ao redor; tocar o monte mata."
+      },
+      "hint": "Veja o que acontece a quem toca o monte.",
+      "learningObjective": "Interpretar o encontro santo com limites.",
+      "evidence": [
+        "Êxodo 19:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 19:18, toque o trecho que sustenta a presença do Senhor no monte.",
+      "verseRef": "Êxodo 19:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "descido"
+        },
+        {
+          "id": "b",
+          "text": "fornalha"
+        },
+        {
+          "id": "c",
+          "text": "fumaça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor tinha descido sobre ele em fogo",
+      "feedbackCorrect": "O Senhor tinha descido: presença real no fogo.",
+      "feedbackWrong": {
+        "b": "Fornalha é comparação; o eixo é descido.",
+        "c": "Fumaça é efeito; o trecho é descido."
+      },
+      "hint": "Veja o verbo da ação do Senhor.",
+      "learningObjective": "Sustentar a leitura da presença.",
+      "evidence": [
+        "Êxodo 19:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 19:10–19 sustenta sobre o Sinai?",
+      "verseRef": "Êxodo 19:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "A santidade de Deus exige preparo e temor"
+        },
+        {
+          "id": "b",
+          "text": "O povo podia tratar o monte como praça"
+        },
+        {
+          "id": "c",
+          "text": "O fogo nega a presença do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Só Moisés precisava se preparar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor tinha descido sobre ele em fogo",
+      "feedbackCorrect": "Fogo e limites mostram santidade que pede preparo.",
+      "feedbackWrong": {
+        "b": "Há limites e pena de morte.",
+        "c": "O fogo marca a descida do Senhor.",
+        "d": "O povo inteiro é purificado."
+      },
+      "hint": "Una fogo, limite e preparo.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 19:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o Sinai à Escritura?",
+      "verseRef": "Êxodo 19:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel treme ante trombeta e fogo"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo lembra a terra que tremeu"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus retoma o monte terrível"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "todo o povo que estava no acampamento se estremeceu",
+      "feedbackCorrect": "Do Êxodo ao Salmo e a Hebreus: o mesmo temor santo.",
+      "feedbackWrong": {
+        "default": "Comece pelo Sinai; depois Salmo e Hebreus."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o Sinai ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 19:16",
+        "Salmos 68:8",
+        "Hebreus 12:18–19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 19:10, que verbo resume a ordem de preparar o povo?",
+      "verseRef": "Êxodo 19:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "purifique-os"
+        },
+        {
+          "id": "b",
+          "text": "esqueça-os"
+        },
+        {
+          "id": "c",
+          "text": "espalhe-os"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "purifique-os hoje e amanhã",
+      "feedbackCorrect": "A ordem-chave é purifique-os.",
+      "feedbackWrong": {
+        "b": "Não é esquecer; é purificar.",
+        "c": "O verbo é purificar."
+      },
+      "hint": "Veja o primeiro imperativo ao povo.",
+      "learningObjective": "Lembrar o termo do preparo.",
+      "evidence": [
+        "Êxodo 19:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 19:18 a Hebreus 12:21?",
+      "verseRef": "Êxodo 19:18",
+      "passageA": {
+        "ref": "Êxodo 19:18"
+      },
+      "passageB": {
+        "ref": "Hebreus 12:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor no Sinai"
+        },
+        {
+          "id": "b",
+          "text": "Alegria no Egito"
+        },
+        {
+          "id": "c",
+          "text": "Pão do céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo o monte tremia grandemente",
+      "feedbackCorrect": "Hebreus lembra o temor diante do Sinai.",
+      "feedbackWrong": {
+        "b": "O elo é temor, não alegria no Egito.",
+        "c": "O maná não é o tema deste elo."
+      },
+      "hint": "Compare tremor e temor.",
+      "learningObjective": "Ligar Sinai a Hebreus.",
+      "evidence": [
+        "Êxodo 19:18",
+        "Hebreus 12:21"
+      ]
+    }
+  ]
+}

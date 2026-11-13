@@ -1,0 +1,917 @@
+{
+  "study": {
+    "passageRef": "Judas 1:7–12",
+    "passages": [
+      {
+        "ref": "Judas 1:7–12"
+      },
+      {
+        "ref": "Judas 1:13"
+      }
+    ],
+    "context": "A Travessia revisa Judas: a fé entregue exige vigilância. Exemplos de juízo, o contraste de Miguel e as imagens de esterilidade chamam a reconhecer o engano.",
+    "keyword": "vigilância",
+    "keywordGloss": "A fé entregue uma vez exige reconhecer e rejeitar o engano infiltrado.",
+    "focusQuestion": "Onde sua comunhão precisa de mais vigilância contra manchas sem fruto?",
+    "reflectionPrompts": [
+      "Fé e juízo",
+      "Não difamar como Miguel",
+      "Trevas reservadas"
+    ],
+    "facts": [
+      {
+        "text": "Sodoma sofre a punição do fogo eterno como exemplo.",
+        "evidenceRef": "Judas 1:7",
+        "evidenceSpan": "sofrendo a punição do fogo eterno"
+      },
+      {
+        "text": "Miguel disse: O Senhor te repreenda.",
+        "evidenceRef": "Judas 1:9",
+        "evidenceSpan": "O Senhor te repreenda"
+      },
+      {
+        "text": "Esses falam mal do que não entendem.",
+        "evidenceRef": "Judas 1:10",
+        "evidenceSpan": "falam mal do que não entendem"
+      },
+      {
+        "text": "Seguiram Caim, Balaão e Corá.",
+        "evidenceRef": "Judas 1:11",
+        "evidenceSpan": "caminho de Caim"
+      },
+      {
+        "text": "São árvores desprovidas de frutos, duplamente mortas.",
+        "evidenceRef": "Judas 1:12",
+        "evidenceSpan": "desprovidas destes, duplamente mortas, desarraigadas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "repreenda",
+        "gloss": "A palavra de Miguel: o juízo pertence ao Senhor."
+      },
+      {
+        "term": "ganância",
+        "gloss": "Moveu-os no erro de Balaão."
+      },
+      {
+        "term": "desarraigadas",
+        "gloss": "Árvores mortas e arrancadas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Exemplo de Sodoma",
+        "evidenceRef": "Judas 1:7"
+      },
+      {
+        "label": "Miguel e a repreensão do Senhor",
+        "evidenceRef": "Judas 1:8–9"
+      },
+      {
+        "label": "Três caminhos de ruína",
+        "evidenceRef": "Judas 1:10–11"
+      },
+      {
+        "label": "Imagens finais de juízo",
+        "evidenceRef": "Judas 1:12–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Miguel entrega a repreensão ao Senhor; esses difamam.",
+        "marker": "Contudo",
+        "evidenceRef": "Judas 1:9"
+      },
+      {
+        "kind": "causa",
+        "text": "Ai deles porque seguiram esses caminhos.",
+        "marker": "Porque",
+        "evidenceRef": "Judas 1:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Trevas eternas estão reservadas.",
+        "marker": null,
+        "evidenceRef": "Judas 1:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Pedro 2:10",
+        "bridge": "Desprezam autoridade"
+      },
+      {
+        "ref": "2 Pedro 2:17",
+        "bridge": "Trevas reservadas"
+      },
+      {
+        "ref": "Hebreus 3:12",
+        "bridge": "Cuidar do coração incrédulo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A fé entregue não precisa de vigilância contra infiltrados.",
+        "why": "Judas escreve para contender pela fé diante desses."
+      },
+      {
+        "text": "Difamar dignidades é virtude angélica.",
+        "why": "Miguel não se atreveu; entregou a repreensão ao Senhor."
+      },
+      {
+        "text": "Árvores sem fruto ainda assim nutrem a festa.",
+        "why": "São manchas, sem água e sem fruto."
+      }
+    ],
+    "centralInsight": "A fé entregue uma vez exige vigilância contra o engano",
+    "anchorQuestion": "O que Miguel disse em Judas 1:9 em vez de difamar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Judas 1:9, Miguel proferiu juízo infamatório contra o diabo.",
+      "verseRef": "Judas 1:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "não se atreveu a proferir um juízo infamatório",
+      "feedbackCorrect": "Ele não se atreveu; disse que o Senhor repreenda.",
+      "feedbackWrong": {
+        "true": "A negação é explícita."
+      },
+      "hint": "Leia o que Miguel não se atreveu.",
+      "learningObjective": "Observar a atitude de Miguel.",
+      "evidence": [
+        "Judas 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Judas 1:9, toque quem Miguel diz que repreenda.",
+      "verseRef": "Judas 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "diabo"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor te repreenda",
+      "feedbackCorrect": "Miguel entrega a repreensão ao Senhor.",
+      "feedbackWrong": {
+        "b": "Caim aparece no v.11.",
+        "c": "Corá aparece no v.11."
+      },
+      "hint": "Veja quem repreende.",
+      "learningObjective": "Identificar quem repreende.",
+      "evidence": [
+        "Judas 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Judas 1:12, o que são nas festas de fraternidade?",
+      "verseRef": "Judas 1:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manchas, banqueteando-se sem recato"
+        },
+        {
+          "id": "b",
+          "text": "Pastores fiéis cheios de fruto"
+        },
+        {
+          "id": "c",
+          "text": "Nuvens cheias de água"
+        },
+        {
+          "id": "d",
+          "text": "Estrelas fixas de luz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estes são manchas em suas festas de fraternidade",
+      "feedbackCorrect": "São manchas nas festas.",
+      "feedbackWrong": {
+        "b": "São árvores sem fruto.",
+        "c": "São nuvens sem água.",
+        "d": "São estrelas errantes."
+      },
+      "hint": "Leia o início do versículo.",
+      "learningObjective": "Reconhecer a imagem das festas.",
+      "evidence": [
+        "Judas 1:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Judas 1:11 na ordem do texto.",
+      "verseRef": "Judas 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "caminho de Caim"
+        },
+        {
+          "id": "b",
+          "text": "erro de Balaão"
+        },
+        {
+          "id": "c",
+          "text": "revolta de Corá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "caminho de Caim, e, movidos de ganância, se precipitaram no erro de Balaão, e pereceram na revolta de Corá",
+      "feedbackCorrect": "A ordem é Caim, Balaão e Corá.",
+      "feedbackWrong": {
+        "default": "Comece por Caim."
+      },
+      "hint": "São três nomes em sequência.",
+      "learningObjective": "Seguir a ordem dos três caminhos.",
+      "evidence": [
+        "Judas 1:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Judas 1:13, complete: estrelas ___.",
+      "verseRef": "Judas 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "errantes"
+        },
+        {
+          "id": "b",
+          "text": "fixas"
+        },
+        {
+          "id": "c",
+          "text": "fiéis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estrelas errantes",
+      "feedbackCorrect": "A imagem é de estrelas errantes.",
+      "feedbackWrong": {
+        "b": "Fixas não está no texto.",
+        "c": "Fiéis não está no texto."
+      },
+      "hint": "É o adjetivo depois de estrelas.",
+      "learningObjective": "Lembrar a imagem final.",
+      "evidence": [
+        "Judas 1:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Judas 1:9 comunica que se liga a este contexto?",
+      "verseRef": "Judas 1:9",
+      "passageA": {
+        "ref": "Judas 1:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A Travessia chama a vigilância: juízo certo, sem difamar como os infiltrados, e destino de trevas para o engano."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor repreende"
+        },
+        {
+          "id": "b",
+          "text": "Difamar dignidades"
+        },
+        {
+          "id": "c",
+          "text": "Seguir Balaão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor te repreenda",
+      "feedbackCorrect": "Na vigilância, Miguel modela deixar o juízo com o Senhor.",
+      "feedbackWrong": {
+        "b": "Difamar é o que esses fazem.",
+        "c": "Balaão é o erro denunciado."
+      },
+      "hint": "Veja a palavra de Miguel.",
+      "learningObjective": "Ligar o contexto a Miguel.",
+      "evidence": [
+        "Judas 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Judas 1:7, toque o que sofrem como punição.",
+      "verseRef": "Judas 1:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo eterno"
+        },
+        {
+          "id": "b",
+          "text": "exemplo"
+        },
+        {
+          "id": "c",
+          "text": "Sodoma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "punição do fogo eterno",
+      "feedbackCorrect": "Sofrem a punição do fogo eterno.",
+      "feedbackWrong": {
+        "b": "Manchas é imagem do v.12.",
+        "c": "Ventos impelam nuvens no v.12."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Identificar a punição.",
+      "evidence": [
+        "Judas 1:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Judas 1:13 na ordem do texto.",
+      "verseRef": "Judas 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ondas impetuosas do mar"
+        },
+        {
+          "id": "b",
+          "text": "estrelas errantes"
+        },
+        {
+          "id": "c",
+          "text": "negridão das trevas está eternamente reservada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "estrelas errantes, para as quais a negridão das trevas está eternamente reservada",
+      "feedbackCorrect": "Das ondas às estrelas, até as trevas.",
+      "feedbackWrong": {
+        "default": "Comece com Ondas."
+      },
+      "hint": "O destino fecha o versículo.",
+      "learningObjective": "Seguir a ordem do v.13.",
+      "evidence": [
+        "Judas 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Judas 1:11, o ai sobre eles se deve a terem seguido caminhos justos.",
+      "verseRef": "Judas 1:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "caminho de Caim",
+      "feedbackCorrect": "O ai vem dos caminhos de Caim, Balaão e Corá.",
+      "feedbackWrong": {
+        "true": "Esses nomes desmentem caminhos justos."
+      },
+      "hint": "Leia os três nomes.",
+      "learningObjective": "Ver a causa do ai.",
+      "evidence": [
+        "Judas 1:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Judas 1:11, toque a palavra que marca a causa do ai.",
+      "verseRef": "Judas 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "Ai"
+        },
+        {
+          "id": "c",
+          "text": "ganância"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque se deixaram levar pelo caminho de Caim",
+      "feedbackCorrect": "Porque introduz a causa.",
+      "feedbackWrong": {
+        "b": "Ai é a exclamação.",
+        "c": "Ganância move o erro de Balaão."
+      },
+      "hint": "É a palavra depois de Ai deles.",
+      "learningObjective": "Tocar o marcador causal.",
+      "evidence": [
+        "Judas 1:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Judas 1:9–10 estabelece?",
+      "verseRef": "Judas 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Miguel não difama; esses falam mal do que não entendem"
+        },
+        {
+          "id": "b",
+          "text": "Miguel e esses difamam da mesma forma"
+        },
+        {
+          "id": "c",
+          "text": "Falar mal prova entendimento"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor autoriza juízo infamatório angélico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não se atreveu a proferir um juízo infamatório",
+      "feedbackCorrect": "O contraste é o ponto.",
+      "feedbackWrong": {
+        "b": "Miguel não difamou.",
+        "c": "Falam do que não entendem.",
+        "d": "Miguel entregou a repreensão ao Senhor."
+      },
+      "hint": "Compare Miguel e estes.",
+      "learningObjective": "Compreender o contraste.",
+      "evidence": [
+        "Judas 1:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da Travessia.",
+      "verseRef": "Judas 1:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exemplo de Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "Três caminhos de ruína"
+        },
+        {
+          "id": "c",
+          "text": "Imagens finais de juízo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "postas como exemplo",
+      "feedbackCorrect": "Do exemplo aos caminhos, até as imagens.",
+      "feedbackWrong": {
+        "default": "Comece por Sodoma; as imagens fecham."
+      },
+      "hint": "Siga 7, 11 e 12–13.",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "Judas 1:7",
+        "Judas 1:11",
+        "Judas 1:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Judas 1:9, complete: O Senhor te ___.",
+      "verseRef": "Judas 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "repreenda"
+        },
+        {
+          "id": "b",
+          "text": "difame"
+        },
+        {
+          "id": "c",
+          "text": "corrompa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor te repreenda",
+      "feedbackCorrect": "A palavra de Miguel é repreenda.",
+      "feedbackWrong": {
+        "b": "Difamar é o que ele evita.",
+        "c": "Corromper descreve esses."
+      },
+      "hint": "É o verbo da citação.",
+      "learningObjective": "Lembrar a palavra de Miguel.",
+      "evidence": [
+        "Judas 1:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Judas 1:13 a 2 Pedro 2:17?",
+      "verseRef": "Judas 1:13",
+      "passageA": {
+        "ref": "Judas 1:13"
+      },
+      "passageB": {
+        "ref": "2 Pedro 2:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Trevas reservadas"
+        },
+        {
+          "id": "b",
+          "text": "Miguel e Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Fruto abundante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negridão das trevas está eternamente reservada",
+      "feedbackCorrect": "Ambos apontam trevas reservadas ao engano.",
+      "feedbackWrong": {
+        "b": "Miguel não é a ponte.",
+        "c": "O texto nega o fruto."
+      },
+      "hint": "Compare o destino.",
+      "learningObjective": "Ligar as trevas.",
+      "evidence": [
+        "Judas 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Judas 1:8, toque o marcador do contraste com Sodoma.",
+      "verseRef": "Judas 1:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "No entanto"
+        },
+        {
+          "id": "b",
+          "text": "sonhando"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No entanto, esses indivíduos, sonhando",
+      "feedbackCorrect": "No entanto marca a virada.",
+      "feedbackWrong": {
+        "b": "Sonhando descreve o modo.",
+        "c": "Carne é o que corrompem."
+      },
+      "hint": "É a abertura do versículo.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Judas 1:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene a lógica da vigilância.",
+      "verseRef": "Judas 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrar o juízo de Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "Não difamar como os infiltrados"
+        },
+        {
+          "id": "c",
+          "text": "Reconhecer o destino de trevas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O Senhor te repreenda",
+      "feedbackCorrect": "Do juízo ao modelo de Miguel, até o destino.",
+      "feedbackWrong": {
+        "default": "Comece por Sodoma; as trevas fecham."
+      },
+      "hint": "Siga 7, 9 e 13.",
+      "learningObjective": "Ordenar juízo e vigilância.",
+      "evidence": [
+        "Judas 1:7",
+        "Judas 1:9",
+        "Judas 1:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Judas 1:12–13, a fé entregue exige reconhecer infiltrados vazios sob juízo.",
+      "verseRef": "Judas 1:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Estes são manchas em suas festas de fraternidade",
+      "feedbackCorrect": "As imagens sustentam vigilância contra o engano vazio.",
+      "feedbackWrong": {
+        "false": "Manchas e trevas sustentam essa leitura."
+      },
+      "hint": "Leia as imagens e o destino.",
+      "learningObjective": "Confirmar a leitura da vigilância.",
+      "evidence": [
+        "Judas 1:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Judas 1:12, toque o trecho que sustenta a esterilidade das árvores.",
+      "verseRef": "Judas 1:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "desprovidas destes"
+        },
+        {
+          "id": "b",
+          "text": "banqueteando-se"
+        },
+        {
+          "id": "c",
+          "text": "ventos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desprovidas destes, duplamente mortas, desarraigadas",
+      "feedbackCorrect": "Estão desprovidas de frutos.",
+      "feedbackWrong": {
+        "b": "Banqueteando descreve o abuso na festa.",
+        "c": "Ventos impelam as nuvens."
+      },
+      "hint": "Veja o que falta às árvores.",
+      "learningObjective": "Sustentar a esterilidade.",
+      "evidence": [
+        "Judas 1:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Judas 1:7–13 sustenta?",
+      "verseRef": "Judas 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vigilância: juízo certo, sem difamar, contra o engano vazio"
+        },
+        {
+          "id": "b",
+          "text": "Infiltrados são pastores seguros"
+        },
+        {
+          "id": "c",
+          "text": "Miguel autoriza difamar"
+        },
+        {
+          "id": "d",
+          "text": "Não há trevas reservadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negridão das trevas está eternamente reservada",
+      "feedbackCorrect": "Exemplo, contraste e destino formam a vigilância.",
+      "feedbackWrong": {
+        "b": "São manchas sem fruto.",
+        "c": "Miguel não difamou.",
+        "d": "Trevas estão reservadas."
+      },
+      "hint": "Una Sodoma, Miguel e as trevas.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Judas 1:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da fé vigilante?",
+      "verseRef": "Judas 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomar Sodoma como aviso"
+        },
+        {
+          "id": "b",
+          "text": "Seguir o modelo de Miguel"
+        },
+        {
+          "id": "c",
+          "text": "Rejeitar caminhos e imagens do engano"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ai deles",
+      "feedbackCorrect": "Do aviso ao modelo, até rejeitar o engano.",
+      "feedbackWrong": {
+        "default": "Comece por Sodoma; a rejeição fecha."
+      },
+      "hint": "Siga 7, 9 e 11–13.",
+      "learningObjective": "Encadear aviso e rejeição.",
+      "evidence": [
+        "Judas 1:7",
+        "Judas 1:9",
+        "Judas 1:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Judas 1:11, complete: movidos de ___, se precipitaram no erro de Balaão.",
+      "verseRef": "Judas 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "ganância"
+        },
+        {
+          "id": "b",
+          "text": "mansidão"
+        },
+        {
+          "id": "c",
+          "text": "fruto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "movidos de ganância",
+      "feedbackCorrect": "A ganância move o erro de Balaão.",
+      "feedbackWrong": {
+        "b": "Mansidão não está no texto.",
+        "c": "Fruto falta às árvores."
+      },
+      "hint": "É o substantivo depois de movidos de.",
+      "learningObjective": "Lembrar o termo do erro.",
+      "evidence": [
+        "Judas 1:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Judas 1:11 a Números 16:3?",
+      "verseRef": "Judas 1:11",
+      "passageA": {
+        "ref": "Judas 1:11",
+        "text": "pereceram na revolta de Corá"
+      },
+      "passageB": {
+        "ref": "Números 16:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Revolta de Corá"
+        },
+        {
+          "id": "b",
+          "text": "Nuvens sem água"
+        },
+        {
+          "id": "c",
+          "text": "Miguel e Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "revolta de Corá",
+      "feedbackCorrect": "Judas evoca a revolta de Corá.",
+      "feedbackWrong": {
+        "b": "Nuvens são imagem local.",
+        "c": "Miguel não é a ponte aqui."
+      },
+      "hint": "Compare Corá.",
+      "learningObjective": "Ligar a revolta.",
+      "evidence": [
+        "Judas 1:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Judas 1:10, toque o trecho que sustenta o objeto do falar mal.",
+      "verseRef": "Judas 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "não entendem"
+        },
+        {
+          "id": "b",
+          "text": "brutos"
+        },
+        {
+          "id": "c",
+          "text": "natural"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "falam mal do que não entendem",
+      "feedbackCorrect": "Falam mal do que não entendem.",
+      "feedbackWrong": {
+        "b": "Brutos é a comparação.",
+        "c": "Natural descreve o instinto."
+      },
+      "hint": "Veja o objeto do falar mal.",
+      "learningObjective": "Sustentar o objeto.",
+      "evidence": [
+        "Judas 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do aviso ao destino?",
+      "verseRef": "Judas 1:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ver o juízo em Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "Ouvir o ai dos três caminhos"
+        },
+        {
+          "id": "c",
+          "text": "Enxergar trevas para estrelas errantes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "postas como exemplo",
+      "feedbackCorrect": "Do aviso ao ai, até as trevas.",
+      "feedbackWrong": {
+        "default": "Comece por Sodoma; as trevas fecham."
+      },
+      "hint": "Siga 7, 11 e 13.",
+      "learningObjective": "Encadear aviso e destino.",
+      "evidence": [
+        "Judas 1:7",
+        "Judas 1:11",
+        "Judas 1:13"
+      ]
+    }
+  ]
+}

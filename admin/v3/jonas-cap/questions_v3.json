@@ -1,0 +1,4073 @@
+[
+  {
+    "id": "jonas-cap-sem-jnc-01-a-sorte-cai-sobre-01",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+    "prompt": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+    "cue": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+    "verseRef": "Jonas 1:7",
+    "passageText": "E cada um dizia ao seu companheiro: Vinde, lancemos sortes, para que saibamos por causa de quem nos sobreveio este mal. E lançaram sortes, e a sorte caiu sobre Jonas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a sorte caiu sobre Jonas",
+    "feedbackCorrect": "O texto fecha o versículo: lançaram sortes, e a sorte caiu sobre Jonas.",
+    "feedbackWrong": {
+      "false": "Releia o fim de Jonas 1:7: a sorte caiu sobre Jonas."
+    },
+    "hint": "Veja o resultado do lançamento das sortes.",
+    "learningObjective": "Observar quem a sorte aponta na tempestade.",
+    "evidence": [
+      "Jonas 1:7"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-01-a-sorte-cai-sobre-02",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jonas 1:9, toque quem Jonas diz temer.",
+    "prompt": "Em Jonas 1:9, toque quem Jonas diz temer.",
+    "cue": "Em Jonas 1:9, toque quem Jonas diz temer.",
+    "verseRef": "Jonas 1:9",
+    "passageText": "Sou hebreu e temo o Senhor, o Deus do céu, que fez o mar e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o mar"
+      },
+      {
+        "id": "b",
+        "text": "o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "a terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "temo o Senhor, o Deus do céu",
+    "feedbackCorrect": "Jonas se apresenta como hebreu que teme o Senhor, Criador do mar e da terra.",
+    "feedbackWrong": {
+      "a": "O mar é obra do Senhor; Jonas diz a quem teme.",
+      "c": "A terra também é criada; o temor de Jonas é ao Senhor."
+    },
+    "hint": "Procure o nome de quem ele teme.",
+    "learningObjective": "Identificar o Deus que Jonas confessa.",
+    "evidence": [
+      "Jonas 1:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-01-a-sorte-cai-sobre-03",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jonas 1:10, o que os homens já sabiam sobre Jonas?",
+    "prompt": "Segundo Jonas 1:10, o que os homens já sabiam sobre Jonas?",
+    "cue": "Segundo Jonas 1:10, o que os homens já sabiam sobre Jonas?",
+    "verseRef": "Jonas 1:10",
+    "passageText": "Então, os homens ficaram possuídos de grande temor e lhe disseram: Que é isto que fizeste? Pois sabiam os homens que ele fugia da presença do Senhor, porque lho havia declarado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que ele era o dono do navio"
+      },
+      {
+        "id": "b",
+        "text": "Que ele vinha de Nínive"
+      },
+      {
+        "id": "c",
+        "text": "Que ele nunca havia falado de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Que ele fugia da presença do Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "ele fugia da presença do Senhor",
+    "feedbackCorrect": "Eles já sabiam da fuga porque Jonas mesmo havia declarado.",
+    "feedbackWrong": {
+      "a": "O texto não diz que Jonas era dono do navio.",
+      "b": "O destino da missão era Nínive; aqui o tema é a fuga.",
+      "c": "Jonas havia declarado a fuga; eles sabiam por isso."
+    },
+    "hint": "Leia o motivo do grande temor dos homens.",
+    "learningObjective": "Observar o que já se sabia sobre a fuga de Jonas.",
+    "evidence": [
+      "Jonas 1:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-01-a-sorte-cai-sobre-04",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jonas 1:15–16 na ordem do texto.",
+    "prompt": "Monte Jonas 1:15–16 na ordem do texto.",
+    "cue": "Monte Jonas 1:15–16 na ordem do texto.",
+    "verseRef": "Jonas 1:15–16",
+    "passageText": "E levantaram Jonas e o lançaram ao mar; e o mar se acalmou de sua fúria. Eles, portanto, temeram grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E levantaram Jonas e o lançaram ao mar"
+      },
+      {
+        "id": "b",
+        "text": "e o mar se acalmou de sua fúria"
+      },
+      {
+        "id": "c",
+        "text": "Eles, portanto, temeram grandemente o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E levantaram Jonas e o lançaram ao mar",
+    "feedbackCorrect": "Primeiro lançam Jonas; o mar acalma; o temor ao Senhor vem em 1:16.",
+    "feedbackWrong": {
+      "default": "Comece pelo lançamento de Jonas; o temor ao Senhor fecha a cena."
+    },
+    "hint": "O versículo 15 começa com o que fazem a Jonas.",
+    "learningObjective": "Reconhecer a sequência de Jonas 1:15–16.",
+    "evidence": [
+      "Jonas 1:15–16"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-01-a-sorte-cai-sobre-05",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jonas 1:12, por causa de quem a tempestade atingiu os marinheiros?",
+    "prompt": "Em Jonas 1:12, por causa de quem a tempestade atingiu os marinheiros?",
+    "cue": "Em Jonas 1:12, por causa de quem a tempestade atingiu os marinheiros?",
+    "verseRef": "Jonas 1:12",
+    "passageText": "Tomai-me e lançai-me ao mar, e o mar se acalmará para vós, pois eu sei que esta grande tempestade vos atingiu por minha causa.",
+    "template": "Tomai-me e lançai-me ao mar, e o mar se acalmará para vós, pois eu sei que esta grande tempestade vos atingiu por ___ causa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nossa"
+      },
+      {
+        "id": "b",
+        "text": "minha"
+      },
+      {
+        "id": "c",
+        "text": "vossa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esta grande tempestade vos atingiu por minha causa",
+    "feedbackCorrect": "Jonas assume: a tempestade veio por causa dele.",
+    "feedbackWrong": {
+      "a": "Jonas fala de si: a causa é dele, não de todos juntos.",
+      "c": "Não é por causa deles; Jonas diz \"por minha causa\"."
+    },
+    "hint": "Veja de quem é a causa que Jonas confessa.",
+    "learningObjective": "Lembrar a confissão de Jonas sobre a tempestade.",
+    "evidence": [
+      "Jonas 1:12"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-01-a-sorte-cai-sobre-06",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 1:16 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 1:16 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 1:16 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 1:16",
+    "passageText": "Eles, portanto, temeram grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos.",
+    "passageA": {
+      "ref": "Jonas 1:16",
+      "text": "Eles, portanto, temeram grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Até marinheiros pagãos passam a temer o Senhor depois da tempestade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Temor e culto ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Só Jonas teme a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Eles ignoram o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "temeram grandemente o Senhor; e ofereceram sacrifícios",
+    "feedbackCorrect": "Eles temem o Senhor, oferecem sacrifícios e fazem votos.",
+    "feedbackWrong": {
+      "b": "Aqui quem teme e oferece sacrifícios são os marinheiros.",
+      "c": "O texto diz que temeram e cultuaram o Senhor."
+    },
+    "hint": "Veja a reação final dos homens após o mar acalmar.",
+    "learningObjective": "Ligar Jonas 1:16 ao temor dos marinheiros.",
+    "evidence": [
+      "Jonas 1:16"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-01-a-sorte-cai-sobre-01",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jonas 1:13, os homens remavam e logo conseguiram levar o navio de volta à terra.",
+    "prompt": "Em Jonas 1:13, os homens remavam e logo conseguiram levar o navio de volta à terra.",
+    "cue": "Em Jonas 1:13, os homens remavam e logo conseguiram levar o navio de volta à terra.",
+    "verseRef": "Jonas 1:13",
+    "passageText": "Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra, mas não conseguiam, pois o mar se tornava cada vez mais tempestuoso contra eles.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas não conseguiam, pois o mar se tornava cada vez mais tempestuoso",
+    "feedbackCorrect": "O \"porém\" e o fim do versículo mostram esforço sem êxito: o mar só piora.",
+    "feedbackWrong": {
+      "true": "Releia 1:13: remavam, mas não conseguiam; o mar piorava."
+    },
+    "hint": "Repare no contraste entre o esforço e o resultado.",
+    "learningObjective": "Compreender o contraste entre remo humano e tempestade.",
+    "evidence": [
+      "Jonas 1:13"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-01-a-sorte-cai-sobre-02",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+    "prompt": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+    "cue": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+    "verseRef": "Jonas 1:13",
+    "passageText": "Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra, mas não conseguiam, pois o mar se tornava cada vez mais tempestuoso contra eles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "remavam"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "tempestuoso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os homens, porém, remavam",
+    "feedbackCorrect": "\"Porém\" marca a resistência: em vez de lançar Jonas, eles remam.",
+    "feedbackWrong": {
+      "a": "\"Remavam\" é a ação; o contraste está na palavra de ligação.",
+      "c": "\"Tempestuoso\" descreve o mar, não o contraste da narrativa."
+    },
+    "hint": "Procure a palavra curta depois de \"Os homens\".",
+    "learningObjective": "Reconhecer o marcador de contraste em Jonas 1:13.",
+    "evidence": [
+      "Jonas 1:13"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-01-a-sorte-cai-sobre-03",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jonas 1:12 se relaciona com a tempestade?",
+    "prompt": "Como Jonas 1:12 se relaciona com a tempestade?",
+    "cue": "Como Jonas 1:12 se relaciona com a tempestade?",
+    "verseRef": "Jonas 1:12",
+    "passageText": "Tomai-me e lançai-me ao mar, e o mar se acalmará para vós, pois eu sei que esta grande tempestade vos atingiu por minha causa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas admite que a tempestade veio por sua causa"
+      },
+      {
+        "id": "b",
+        "text": "Jonas diz que a tempestade não tem causa"
+      },
+      {
+        "id": "c",
+        "text": "Jonas promete acalmar o mar sozinho no navio"
+      },
+      {
+        "id": "d",
+        "text": "Jonas culpa os marinheiros pela tempestade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esta grande tempestade vos atingiu por minha causa",
+    "feedbackCorrect": "Jonas liga a tempestade à própria culpa e se oferece ao mar.",
+    "feedbackWrong": {
+      "b": "Ele aponta causa clara: \"por minha causa\".",
+      "c": "O plano é lançá-lo ao mar, não ficar no navio.",
+      "d": "Ele assume a causa; não culpa os outros."
+    },
+    "hint": "Veja o que Jonas diz sobre a causa da tempestade.",
+    "learningObjective": "Relacionar a confissão de Jonas à tempestade.",
+    "evidence": [
+      "Jonas 1:12"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-01-a-sorte-cai-sobre-04",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Jonas 1:12–16?",
+    "prompt": "Como avança a cena em Jonas 1:12–16?",
+    "cue": "Como avança a cena em Jonas 1:12–16?",
+    "verseRef": "Jonas 1:12–13",
+    "passageText": "Tomai-me e lançai-me ao mar, e o mar se acalmará para vós, pois eu sei que esta grande tempestade vos atingiu por minha causa. Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra, mas não conseguiam, pois o mar se tornava cada vez mais tempestuoso contra eles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas se oferece para ser lançado ao mar"
+      },
+      {
+        "id": "b",
+        "text": "Os homens remam em vão contra a tempestade"
+      },
+      {
+        "id": "c",
+        "text": "Jonas é lançado e o mar se acalma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tomai-me e lançai-me ao mar",
+    "feedbackCorrect": "Oferta de Jonas, esforço inútil, depois o lançamento e a calmaria.",
+    "feedbackWrong": {
+      "default": "Comece pelo pedido de Jonas; o lançamento vem depois do remo em vão."
+    },
+    "hint": "O remo dos homens fica entre a oferta e o lançamento.",
+    "learningObjective": "Compreender o movimento da oferta à calmaria.",
+    "evidence": [
+      "Jonas 1:12–16"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-01-a-sorte-cai-sobre-05",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jonas 1:16, o que os homens fizeram além de temer o Senhor?",
+    "prompt": "Em Jonas 1:16, o que os homens fizeram além de temer o Senhor?",
+    "cue": "Em Jonas 1:16, o que os homens fizeram além de temer o Senhor?",
+    "verseRef": "Jonas 1:16",
+    "passageText": "Eles, portanto, temeram grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos.",
+    "template": "Eles, portanto, temeram grandemente o Senhor; e ___ sacrifícios ao Senhor e fizeram votos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ofereceram"
+      },
+      {
+        "id": "b",
+        "text": "fugiram"
+      },
+      {
+        "id": "c",
+        "text": "negaram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ofereceram sacrifícios ao Senhor e fizeram votos",
+    "feedbackCorrect": "Temeram, ofereceram sacrifícios e fizeram votos ao Senhor.",
+    "feedbackWrong": {
+      "b": "Não fogem; permanecem e cultuam o Senhor.",
+      "c": "Não negam; oferecem sacrifícios e votos."
+    },
+    "hint": "Veja a ação de culto depois do temor.",
+    "learningObjective": "Compreender a resposta dos marinheiros ao Senhor.",
+    "evidence": [
+      "Jonas 1:16"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-01-a-sorte-cai-sobre-06",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jonas 1:15 a Salmos 107:28–29?",
+    "prompt": "O que liga Jonas 1:15 a Salmos 107:28–29?",
+    "cue": "O que liga Jonas 1:15 a Salmos 107:28–29?",
+    "verseRef": "Jonas 1:15",
+    "passageText": "E levantaram Jonas e o lançaram ao mar; e o mar se acalmou de sua fúria.",
+    "passageA": {
+      "ref": "Jonas 1:15",
+      "text": "E levantaram Jonas e o lançaram ao mar; e o mar se acalmou de sua fúria."
+    },
+    "passageB": {
+      "ref": "Salmos 107:28–29",
+      "text": "Então, na sua angústia, clamaram ao SENHOR, e Ele os livrou de suas tribulações. Ele faz cessar a tempestade e as suas ondas se aquietam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamar e o mar acalma"
+      },
+      {
+        "id": "b",
+        "text": "O mar nunca se acalma"
+      },
+      {
+        "id": "c",
+        "text": "Só remo humano salva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o mar se acalmou de sua fúria",
+    "feedbackCorrect": "Nos dois textos, o Senhor é quem acalma a fúria do mar.",
+    "feedbackWrong": {
+      "b": "Em ambos, o mar se acalma diante da ação ligada ao Senhor.",
+      "c": "Em Jonas 1:13 o remo falha; a calmaria vem depois."
+    },
+    "hint": "Compare o que acontece com o mar nos dois trechos.",
+    "learningObjective": "Relacionar a calmaria em Jonas e nos Salmos.",
+    "evidence": [
+      "Jonas 1:15",
+      "Salmos 107:28–29"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-01-a-sorte-cai-sobre-01",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Jonas 1:14–16 mostra marinheiros que clamam ao Senhor e passam a temê-lo de verdade.",
+    "prompt": "Jonas 1:14–16 mostra marinheiros que clamam ao Senhor e passam a temê-lo de verdade.",
+    "cue": "Jonas 1:14–16 mostra marinheiros que clamam ao Senhor e passam a temê-lo de verdade.",
+    "verseRef": "Jonas 1:16",
+    "passageText": "Eles, portanto, temeram grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "temeram grandemente o Senhor; e ofereceram sacrifícios",
+    "feedbackCorrect": "Eles clamam, temem grandemente, oferecem sacrifícios e fazem votos.",
+    "feedbackWrong": {
+      "false": "Releia 1:14–16: clamor, temor, sacrifícios e votos ao Senhor."
+    },
+    "hint": "Veja o clamor e a reação depois do mar acalmar.",
+    "learningObjective": "Interpretar o temor dos marinheiros como resposta real ao Senhor.",
+    "evidence": [
+      "Jonas 1:14–16"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-01-a-sorte-cai-sobre-02",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jonas 1:10, toque o trecho que mostra a fuga de Jonas.",
+    "prompt": "Em Jonas 1:10, toque o trecho que mostra a fuga de Jonas.",
+    "cue": "Em Jonas 1:10, toque o trecho que mostra a fuga de Jonas.",
+    "verseRef": "Jonas 1:10",
+    "passageText": "Então, os homens ficaram possuídos de grande temor e lhe disseram: Que é isto que fizeste? Pois sabiam os homens que ele fugia da presença do Senhor, porque lho havia declarado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fugia da presença"
+      },
+      {
+        "id": "b",
+        "text": "grande temor"
+      },
+      {
+        "id": "c",
+        "text": "lho havia declarado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele fugia da presença do Senhor",
+    "feedbackCorrect": "O texto sustenta a leitura: Jonas fugia da presença do Senhor.",
+    "feedbackWrong": {
+      "b": "O temor é a reação dos homens, não a fuga.",
+      "c": "Isso diz como souberam; a fuga está na frase anterior."
+    },
+    "hint": "Procure o verbo que descreve o que Jonas fazia.",
+    "learningObjective": "Sustentar com o texto a fuga de Jonas.",
+    "evidence": [
+      "Jonas 1:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-01-a-sorte-cai-sobre-03",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jonas 1:12–16 sustenta sobre a fuga de Jonas?",
+    "prompt": "Que leitura Jonas 1:12–16 sustenta sobre a fuga de Jonas?",
+    "cue": "Que leitura Jonas 1:12–16 sustenta sobre a fuga de Jonas?",
+    "verseRef": "Jonas 1:12",
+    "passageText": "Tomai-me e lançai-me ao mar, e o mar se acalmará para vós, pois eu sei que esta grande tempestade vos atingiu por minha causa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas nega a culpa e se recusa a ser lançado ao mar"
+      },
+      {
+        "id": "b",
+        "text": "A fuga põe outros em risco e leva até pagãos a temer o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "A fuga de Jonas só o afetava e ninguém mais sofria"
+      },
+      {
+        "id": "d",
+        "text": "Os marinheiros permaneceram indiferentes ao Deus de Jonas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esta grande tempestade vos atingiu por minha causa",
+    "feedbackCorrect": "A tempestade atinge os outros por causa dele; no fim, eles temem o Senhor.",
+    "feedbackWrong": {
+      "a": "Jonas pede para ser lançado e assume a causa.",
+      "c": "Jonas mesmo diz que a tempestade os atingiu por sua causa.",
+      "d": "Eles clamam, temem e oferecem sacrifícios ao Senhor."
+    },
+    "hint": "Compare a confissão de Jonas com a reação final dos homens.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a fuga.",
+    "evidence": [
+      "Jonas 1:12–16"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-01-a-sorte-cai-sobre-04",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho de quem foge e encontra o Senhor no mar?",
+    "prompt": "Qual sequência revela o caminho de quem foge e encontra o Senhor no mar?",
+    "cue": "Qual sequência revela o caminho de quem foge e encontra o Senhor no mar?",
+    "verseRef": "Jonas 1:15",
+    "passageText": "E levantaram Jonas e o lançaram ao mar; e o mar se acalmou de sua fúria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fúria do mar cessa após o lançamento"
+      },
+      {
+        "id": "b",
+        "text": "Náufragos clamam e o Senhor acalma a tempestade"
+      },
+      {
+        "id": "c",
+        "text": "Jesus repreende o vento e há grande calmaria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o mar se acalmou de sua fúria",
+    "feedbackCorrect": "A calmaria em Jonas ecoa no Salmo e se aprofunda em Jesus no mar.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Jonas, o Salmo dos náufragos e Marcos 4."
+    },
+    "hint": "Siga a ordem: Jonas, Salmos, Evangelhos.",
+    "learningObjective": "Ver a calmaria do mar como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Jonas 1:15",
+      "Salmos 107:28–29",
+      "Marcos 4:39"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-01-a-sorte-cai-sobre-05",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jonas 1:16, que verbo mostra a resposta dos marinheiros ao Senhor?",
+    "prompt": "Em Jonas 1:16, que verbo mostra a resposta dos marinheiros ao Senhor?",
+    "cue": "Em Jonas 1:16, que verbo mostra a resposta dos marinheiros ao Senhor?",
+    "verseRef": "Jonas 1:16",
+    "passageText": "Eles, portanto, temeram grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos.",
+    "template": "Eles, portanto, ___ grandemente o Senhor; e ofereceram sacrifícios ao Senhor e fizeram votos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fugiram"
+      },
+      {
+        "id": "b",
+        "text": "negaram"
+      },
+      {
+        "id": "c",
+        "text": "temeram"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "temeram grandemente o Senhor",
+    "feedbackCorrect": "O termo carrega o fim da cena: eles temeram grandemente o Senhor.",
+    "feedbackWrong": {
+      "a": "Não fogem: temeram o Senhor e fizeram votos.",
+      "b": "Não negam: temem e oferecem sacrifícios."
+    },
+    "hint": "É o verbo que abre a reação final dos homens.",
+    "learningObjective": "Lembrar o termo que carrega o temor ao Senhor.",
+    "evidence": [
+      "Jonas 1:16"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-01-a-sorte-cai-sobre-06",
+    "trail": "jonas-cap",
+    "section": "jnc-01-a-sorte-cai-sobre",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jonas 1:10 a Salmos 139:7–8?",
+    "prompt": "O que liga Jonas 1:10 a Salmos 139:7–8?",
+    "cue": "O que liga Jonas 1:10 a Salmos 139:7–8?",
+    "verseRef": "Jonas 1:10",
+    "passageText": "Então, os homens ficaram possuídos de grande temor e lhe disseram: Que é isto que fizeste? Pois sabiam os homens que ele fugia da presença do Senhor, porque lho havia declarado.",
+    "passageA": {
+      "ref": "Jonas 1:10",
+      "text": "Então, os homens ficaram possuídos de grande temor e lhe disseram: Que é isto que fizeste? Pois sabiam os homens que ele fugia da presença do Senhor, porque lho havia declarado."
+    },
+    "passageB": {
+      "ref": "Salmos 139:7–8",
+      "text": "Para onde poderei fugir do teu Espírito? Para onde me ausentarei da tua presença? Se eu subir aos céus, lá estás; se eu fizer a minha cama no mais profundo abismo, lá estás também."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor só está no templo"
+      },
+      {
+        "id": "b",
+        "text": "Dá para esconder de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Não há fuga do Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fugia da presença do Senhor",
+    "feedbackCorrect": "Jonas foge, mas o Salmo lembra: ninguém se esconde do Senhor.",
+    "feedbackWrong": {
+      "a": "O Senhor está presente até no mar e no abismo.",
+      "b": "O Salmo pergunta para onde fugir: não há lugar."
+    },
+    "hint": "Compare a fuga de Jonas com a pergunta do Salmo.",
+    "learningObjective": "Ligar a fuga de Jonas à onipresença do Senhor.",
+    "evidence": [
+      "Jonas 1:10",
+      "Salmos 139:7–8"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-02-oracao-no-peixe-01",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jonas 2:1, Jonas orou ao Senhor do ventre do peixe.",
+    "prompt": "Em Jonas 2:1, Jonas orou ao Senhor do ventre do peixe.",
+    "cue": "Em Jonas 2:1, Jonas orou ao Senhor do ventre do peixe.",
+    "verseRef": "Jonas 2:1",
+    "passageText": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+    "feedbackCorrect": "O versículo abre a cena: a oração nasce no ventre do peixe.",
+    "feedbackWrong": {
+      "false": "Releia Jonas 2:1: Jonas orou do ventre do peixe."
+    },
+    "hint": "Veja de onde Jonas ora.",
+    "learningObjective": "Observar o lugar da oração de Jonas.",
+    "evidence": [
+      "Jonas 2:1"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-02-oracao-no-peixe-02",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jonas 2:2, toque o que Jonas fez na angústia.",
+    "prompt": "Em Jonas 2:2, toque o que Jonas fez na angústia.",
+    "cue": "Em Jonas 2:2, toque o que Jonas fez na angústia.",
+    "verseRef": "Jonas 2:2–3",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz. Tu me lançaste no profundo, no coração dos mares, e a corrente das águas me cercou; todas as tuas ondas e as tuas vagas passaram sobre mim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "abismo"
+      },
+      {
+        "id": "b",
+        "text": "clamei"
+      },
+      {
+        "id": "c",
+        "text": "ondas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+    "feedbackCorrect": "Na angústia, a ação de Jonas é clamar ao Senhor.",
+    "feedbackWrong": {
+      "a": "O abismo é o lugar; a ação é o clamor.",
+      "c": "As ondas aparecem em 2:3; aqui o verbo é clamar."
+    },
+    "hint": "Procure o verbo da oração no começo do versículo.",
+    "learningObjective": "Identificar o clamor de Jonas na angústia.",
+    "evidence": [
+      "Jonas 2:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-02-oracao-no-peixe-03",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jonas 2:10, o que o peixe fez depois que o Senhor falou?",
+    "prompt": "Segundo Jonas 2:10, o que o peixe fez depois que o Senhor falou?",
+    "cue": "Segundo Jonas 2:10, o que o peixe fez depois que o Senhor falou?",
+    "verseRef": "Jonas 2:10",
+    "passageText": "Então o Senhor falou ao peixe, e ele vomitou a Jonas na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vomitou Jonas na terra"
+      },
+      {
+        "id": "b",
+        "text": "Ficou em silêncio sem agir"
+      },
+      {
+        "id": "c",
+        "text": "Levou Jonas de volta a Társis"
+      },
+      {
+        "id": "d",
+        "text": "Engoliu também os marinheiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele vomitou a Jonas na terra",
+    "feedbackCorrect": "O Senhor fala, e o peixe vomita Jonas na terra.",
+    "feedbackWrong": {
+      "b": "O peixe obedece: vomita Jonas.",
+      "c": "O texto diz que Jonas foi vomitado na terra, não a Társis.",
+      "d": "Só Jonas é mencionado saindo do peixe."
+    },
+    "hint": "Leia a ação do peixe no fim do versículo.",
+    "learningObjective": "Observar a saída de Jonas do peixe.",
+    "evidence": [
+      "Jonas 2:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-02-oracao-no-peixe-04",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jonas 2:2 na ordem do texto.",
+    "prompt": "Monte Jonas 2:2 na ordem do texto.",
+    "cue": "Monte Jonas 2:2 na ordem do texto.",
+    "verseRef": "Jonas 2:2",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Na minha angústia, clamei ao Senhor, e ele me respondeu"
+      },
+      {
+        "id": "b",
+        "text": "do ventre do abismo, gritei"
+      },
+      {
+        "id": "c",
+        "text": "e tu ouviste a minha voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Na minha angústia, clamei ao Senhor, e ele me respondeu",
+    "feedbackCorrect": "Clamor, grito do abismo e a certeza de ter sido ouvido.",
+    "feedbackWrong": {
+      "default": "Comece pela angústia e pelo clamor; a voz ouvida fecha o versículo."
+    },
+    "hint": "O versículo começa pela angústia de Jonas.",
+    "learningObjective": "Reconhecer a sequência de Jonas 2:2.",
+    "evidence": [
+      "Jonas 2:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-02-oracao-no-peixe-05",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jonas 2:9, a quem pertence a salvação?",
+    "prompt": "Em Jonas 2:9, a quem pertence a salvação?",
+    "cue": "Em Jonas 2:9, a quem pertence a salvação?",
+    "verseRef": "Jonas 2:9",
+    "passageText": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao SENHOR pertence a salvação!",
+    "template": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao ___ pertence a salvação!",
+    "options": [
+      {
+        "id": "a",
+        "text": "SENHOR"
+      },
+      {
+        "id": "b",
+        "text": "peixe"
+      },
+      {
+        "id": "c",
+        "text": "Jonas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ao SENHOR pertence a salvação",
+    "feedbackCorrect": "Jonas confessa: a salvação pertence ao Senhor.",
+    "feedbackWrong": {
+      "b": "O peixe obedece; a salvação é do Senhor.",
+      "c": "Jonas recebe; quem salva é o Senhor."
+    },
+    "hint": "Veja a última frase do versículo.",
+    "learningObjective": "Lembrar a quem pertence a salvação.",
+    "evidence": [
+      "Jonas 2:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-02-oracao-no-peixe-06",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 2:2 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 2:2 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 2:2 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 2:2",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "passageA": {
+      "ref": "Jonas 2:2",
+      "text": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na angústia, o clamor de Jonas encontra resposta do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamor encontra resposta"
+      },
+      {
+        "id": "b",
+        "text": "A angústia não tem saída"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor não ouve"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+    "feedbackCorrect": "Jonas clama e afirma: o Senhor respondeu e ouviu a voz.",
+    "feedbackWrong": {
+      "b": "Há saída: o Senhor ouve o clamor.",
+      "c": "O texto diz que ele respondeu e ouviu."
+    },
+    "hint": "Veja o que acontece depois do clamor.",
+    "learningObjective": "Ligar Jonas 2:2 ao clamor que é ouvido.",
+    "evidence": [
+      "Jonas 2:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-02-oracao-no-peixe-01",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jonas 2:4, Jonas diz que, lançado da presença, nunca mais verá o templo.",
+    "prompt": "Em Jonas 2:4, Jonas diz que, lançado da presença, nunca mais verá o templo.",
+    "cue": "Em Jonas 2:4, Jonas diz que, lançado da presença, nunca mais verá o templo.",
+    "verseRef": "Jonas 2:4",
+    "passageText": "E eu disse: fui lançado de diante de tua presença; contudo, ainda verei o teu santo templo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "contudo, ainda verei o teu santo templo",
+    "feedbackCorrect": "O \"contudo\" vira a frase: ainda assim ele espera ver o santo templo.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 2:4: contudo, ainda verei o teu santo templo."
+    },
+    "hint": "Repare na palavra que liga as duas partes do versículo.",
+    "learningObjective": "Compreender o contraste entre lançamento e esperança do templo.",
+    "evidence": [
+      "Jonas 2:4"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-02-oracao-no-peixe-02",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jonas 2:4, toque a palavra que marca o contraste na oração.",
+    "prompt": "Em Jonas 2:4, toque a palavra que marca o contraste na oração.",
+    "cue": "Em Jonas 2:4, toque a palavra que marca o contraste na oração.",
+    "verseRef": "Jonas 2:4",
+    "passageText": "E eu disse: fui lançado de diante de tua presença; contudo, ainda verei o teu santo templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lançado"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "contudo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "contudo, ainda verei o teu santo templo",
+    "feedbackCorrect": "\"Contudo\" marca a virada: da perda aparente à esperança do templo.",
+    "feedbackWrong": {
+      "a": "\"Lançado\" descreve a queda; o contraste vem depois.",
+      "b": "\"Templo\" é a esperança; a palavra de contraste vem antes."
+    },
+    "hint": "Procure a palavra que liga a queda à esperança.",
+    "learningObjective": "Reconhecer o marcador de contraste em Jonas 2:4.",
+    "evidence": [
+      "Jonas 2:4"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-02-oracao-no-peixe-03",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jonas 2:7 se relaciona com a angústia de Jonas?",
+    "prompt": "Como Jonas 2:7 se relaciona com a angústia de Jonas?",
+    "cue": "Como Jonas 2:7 se relaciona com a angústia de Jonas?",
+    "verseRef": "Jonas 2:7",
+    "passageText": "Quando a minha alma desfalecia dentro de mim, eu me lembrei do Senhor; e a minha oração subiu a Ti, no teu santo templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quando a alma desfalecia, ele se lembrou do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Quando a alma desfalecia, ele abandonou a oração"
+      },
+      {
+        "id": "c",
+        "text": "Ele só orou depois de já estar em terra firme"
+      },
+      {
+        "id": "d",
+        "text": "Ele se lembrou dos ídolos vãos, não do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu me lembrei do Senhor; e a minha oração subiu a Ti",
+    "feedbackCorrect": "No desfalecimento, a memória do Senhor levanta a oração ao templo.",
+    "feedbackWrong": {
+      "b": "Ele se lembra e ora; não abandona a oração.",
+      "c": "A oração sobe ainda no peixe, ao santo templo.",
+      "d": "Os ídolos aparecem em 2:8; aqui ele se lembra do Senhor."
+    },
+    "hint": "Veja o que Jonas faz quando a alma desfalecia.",
+    "learningObjective": "Relacionar o desfalecimento à lembrança do Senhor.",
+    "evidence": [
+      "Jonas 2:7"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-02-oracao-no-peixe-04",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a oração em Jonas 2:1–10?",
+    "prompt": "Como avança a oração em Jonas 2:1–10?",
+    "cue": "Como avança a oração em Jonas 2:1–10?",
+    "verseRef": "Jonas 2:1–2",
+    "passageText": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe. E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas ora do ventre do peixe"
+      },
+      {
+        "id": "b",
+        "text": "Ele desce às águas e lembra o templo"
+      },
+      {
+        "id": "c",
+        "text": "Confessa a salvação e o peixe o vomita"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+    "feedbackCorrect": "Oração, descida com esperança, confissão e saída do peixe.",
+    "feedbackWrong": {
+      "default": "Comece pela oração no peixe; a saída vem por último."
+    },
+    "hint": "A saída do peixe é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da oração à libertação.",
+    "evidence": [
+      "Jonas 2:1–10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-02-oracao-no-peixe-05",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jonas 2:7, o que Jonas fez quando a alma desfalecia?",
+    "prompt": "Em Jonas 2:7, o que Jonas fez quando a alma desfalecia?",
+    "cue": "Em Jonas 2:7, o que Jonas fez quando a alma desfalecia?",
+    "verseRef": "Jonas 2:7",
+    "passageText": "Quando a minha alma desfalecia dentro de mim, eu me lembrei do Senhor; e a minha oração subiu a Ti, no teu santo templo.",
+    "template": "Quando a minha alma desfalecia dentro de mim, eu me ___ do Senhor; e a minha oração subiu a Ti, no teu santo templo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "calei"
+      },
+      {
+        "id": "b",
+        "text": "lembrei"
+      },
+      {
+        "id": "c",
+        "text": "esqueci"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu me lembrei do Senhor",
+    "feedbackCorrect": "No desfalecimento, ele se lembrou do Senhor e a oração subiu.",
+    "feedbackWrong": {
+      "a": "Ele não se cala: a oração sobe ao templo.",
+      "c": "O texto diz o contrário: ele se lembrou."
+    },
+    "hint": "Veja o verbo ligado ao Senhor no meio do versículo.",
+    "learningObjective": "Compreender a lembrança do Senhor na angústia.",
+    "evidence": [
+      "Jonas 2:7"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-02-oracao-no-peixe-06",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jonas 2:2 a Salmos 18:6?",
+    "prompt": "O que liga Jonas 2:2 a Salmos 18:6?",
+    "cue": "O que liga Jonas 2:2 a Salmos 18:6?",
+    "verseRef": "Jonas 2:2",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "passageA": {
+      "ref": "Jonas 2:2",
+      "text": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz."
+    },
+    "passageB": {
+      "ref": "Salmos 18:6",
+      "text": "Na minha angústia, clamei ao Senhor e pedi socorro ao meu Deus; do Seu templo, Ele ouviu a minha voz, e o meu clamor penetrou os Seus ouvidos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamar na angústia"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio diante de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Fuga sem oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+    "feedbackCorrect": "Nos dois textos, o clamor na angústia chega ao Senhor.",
+    "feedbackWrong": {
+      "b": "Ambos falam de clamor, não de silêncio.",
+      "c": "Jonas e o salmista clamam; não fogem sem orar."
+    },
+    "hint": "Compare o começo das duas orações.",
+    "learningObjective": "Relacionar o clamor de Jonas ao clamor dos Salmos.",
+    "evidence": [
+      "Jonas 2:2",
+      "Salmos 18:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-02-oracao-no-peixe-01",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Jonas 2:9–10 apresenta a salvação como conquista do esforço de Jonas no peixe.",
+    "prompt": "Jonas 2:9–10 apresenta a salvação como conquista do esforço de Jonas no peixe.",
+    "cue": "Jonas 2:9–10 apresenta a salvação como conquista do esforço de Jonas no peixe.",
+    "verseRef": "Jonas 2:9–10",
+    "passageText": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao SENHOR pertence a salvação! Então o Senhor falou ao peixe, e ele vomitou a Jonas na terra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Ao SENHOR pertence a salvação",
+    "feedbackCorrect": "Jonas confessa que a salvação é do Senhor; o peixe obedece à palavra dele.",
+    "feedbackWrong": {
+      "true": "Releia 2:9–10: a salvação é do Senhor; ele fala ao peixe."
+    },
+    "hint": "Veja a quem pertence a salvação e quem fala ao peixe.",
+    "learningObjective": "Interpretar a salvação como obra do Senhor.",
+    "evidence": [
+      "Jonas 2:9–10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-02-oracao-no-peixe-02",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jonas 2:9, toque o trecho que sustenta de quem é a salvação.",
+    "prompt": "Em Jonas 2:9, toque o trecho que sustenta de quem é a salvação.",
+    "cue": "Em Jonas 2:9, toque o trecho que sustenta de quem é a salvação.",
+    "verseRef": "Jonas 2:9",
+    "passageText": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao SENHOR pertence a salvação!",
+    "options": [
+      {
+        "id": "a",
+        "text": "prometi"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ao SENHOR pertence a salvação",
+    "feedbackCorrect": "A palavra final carrega a leitura: a salvação pertence ao Senhor.",
+    "feedbackWrong": {
+      "a": "A promessa é de Jonas; a salvação é atribuída ao Senhor.",
+      "b": "O sacrifício é a resposta de Jonas; a salvação é do Senhor."
+    },
+    "hint": "Procure a última palavra forte do versículo.",
+    "learningObjective": "Sustentar com o texto que a salvação é do Senhor.",
+    "evidence": [
+      "Jonas 2:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-02-oracao-no-peixe-03",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jonas 2:1–10 sustenta sobre a angústia de Jonas?",
+    "prompt": "Que leitura Jonas 2:1–10 sustenta sobre a angústia de Jonas?",
+    "cue": "Que leitura Jonas 2:1–10 sustenta sobre a angústia de Jonas?",
+    "verseRef": "Jonas 2:2",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas se salva só pelo próprio esforço"
+      },
+      {
+        "id": "b",
+        "text": "A angústia prova que o Senhor não ouve"
+      },
+      {
+        "id": "c",
+        "text": "No peixe ele abandona a esperança do templo"
+      },
+      {
+        "id": "d",
+        "text": "Na angústia ele clama, e a salvação vem do Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+    "feedbackCorrect": "O clamor é ouvido, e Jonas confessa: a salvação é do Senhor.",
+    "feedbackWrong": {
+      "a": "2:9–10 apontam o Senhor, não o esforço de Jonas.",
+      "b": "2:2 diz que o Senhor respondeu e ouviu.",
+      "c": "2:4 e 2:7 ainda falam do santo templo."
+    },
+    "hint": "Una o clamor de 2:2 com a confissão de 2:9.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a angústia.",
+    "evidence": [
+      "Jonas 2:2",
+      "Jonas 2:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-02-oracao-no-peixe-04",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do clamor que começa em Jonas 2?",
+    "prompt": "Qual sequência revela o caminho do clamor que começa em Jonas 2?",
+    "cue": "Qual sequência revela o caminho do clamor que começa em Jonas 2?",
+    "verseRef": "Jonas 2:2",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas clama na angústia e é ouvido"
+      },
+      {
+        "id": "b",
+        "text": "O salmista clama e Deus ouve do templo"
+      },
+      {
+        "id": "c",
+        "text": "Jonas no peixe aponta para o Filho do Homem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "clamei ao Senhor, e ele me respondeu",
+    "feedbackCorrect": "O clamor de Jonas ecoa nos Salmos e aponta para Jesus.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Jonas, o Salmo e Mateus 12:40."
+    },
+    "hint": "Siga a ordem: oração de Jonas, Salmos, Evangelhos.",
+    "learningObjective": "Ver o clamor de Jonas como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Jonas 2:2",
+      "Salmos 18:6",
+      "Mateus 12:40"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-02-oracao-no-peixe-05",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jonas 2:2, em que situação Jonas clamou ao Senhor?",
+    "prompt": "Em Jonas 2:2, em que situação Jonas clamou ao Senhor?",
+    "cue": "Em Jonas 2:2, em que situação Jonas clamou ao Senhor?",
+    "verseRef": "Jonas 2:2",
+    "passageText": "E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "template": "E disse: Na minha ___, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegria"
+      },
+      {
+        "id": "b",
+        "text": "angústia"
+      },
+      {
+        "id": "c",
+        "text": "vitória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Na minha angústia, clamei ao Senhor",
+    "feedbackCorrect": "O termo carrega a cena: o clamor nasce na angústia.",
+    "feedbackWrong": {
+      "a": "Não é alegria: ele clama na angústia.",
+      "c": "Ainda não há vitória; há angústia e clamor."
+    },
+    "hint": "É a palavra que abre a oração de Jonas.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da oração.",
+    "evidence": [
+      "Jonas 2:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-02-oracao-no-peixe-06",
+    "trail": "jonas-cap",
+    "section": "jnc-02-oracao-no-peixe",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jonas 2:1 a Mateus 12:40?",
+    "prompt": "O que liga Jonas 2:1 a Mateus 12:40?",
+    "cue": "O que liga Jonas 2:1 a Mateus 12:40?",
+    "verseRef": "Jonas 2:1",
+    "passageText": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe.",
+    "passageA": {
+      "ref": "Jonas 2:1",
+      "text": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe."
+    },
+    "passageB": {
+      "ref": "Mateus 12:40",
+      "text": "Pois, assim como Jonas esteve três dias e três noites no ventre do grande peixe, assim o Filho do Homem estará três dias e três noites no coração da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negação da ressurreição"
+      },
+      {
+        "id": "b",
+        "text": "Jonas e o Filho do Homem"
+      },
+      {
+        "id": "c",
+        "text": "Fuga sem retorno"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "do ventre do peixe",
+    "feedbackCorrect": "Jesus liga o peixe de Jonas aos três dias do Filho do Homem.",
+    "feedbackWrong": {
+      "a": "Mateus aponta para a morte e a ressurreição, não as nega.",
+      "c": "Jonas sai do peixe; o sinal aponta para a volta à vida."
+    },
+    "hint": "Veja o que Jesus compara ao ventre do peixe.",
+    "learningObjective": "Ligar a oração no peixe ao sinal que Jesus aponta.",
+    "evidence": [
+      "Jonas 2:1",
+      "Mateus 12:40"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-03-ninive-se-arrepende-01",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jonas 3:5, os habitantes de Nínive creram em Deus e proclamaram um jejum.",
+    "prompt": "Em Jonas 3:5, os habitantes de Nínive creram em Deus e proclamaram um jejum.",
+    "cue": "Em Jonas 3:5, os habitantes de Nínive creram em Deus e proclamaram um jejum.",
+    "verseRef": "Jonas 3:5",
+    "passageText": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum",
+    "feedbackCorrect": "O texto une fé, jejum e panos de saco, do maior ao menor.",
+    "feedbackWrong": {
+      "false": "Releia Jonas 3:5: creram, proclamaram jejum e vestiram-se de saco."
+    },
+    "hint": "Veja a primeira reação da cidade.",
+    "learningObjective": "Observar a resposta inicial de Nínive.",
+    "evidence": [
+      "Jonas 3:5"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-03-ninive-se-arrepende-02",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jonas 3:4, toque o prazo que Jonas anunciou.",
+    "prompt": "Em Jonas 3:4, toque o prazo que Jonas anunciou.",
+    "cue": "Em Jonas 3:4, toque o prazo que Jonas anunciou.",
+    "verseRef": "Jonas 3:3–4",
+    "passageText": "Jonas se levantou e foi a Nínive, conforme a palavra do Senhor. Nínive era uma cidade muito importante diante de Deus e levava três dias para percorrê-la. Jonas começou a entrar na cidade, percorrendo um dia de caminho, e pregava: \"Ainda quarenta dias, e Nínive será subvertida.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "um dia"
+      },
+      {
+        "id": "b",
+        "text": "quarenta dias"
+      },
+      {
+        "id": "c",
+        "text": "três dias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ainda quarenta dias, e Nínive será subvertida",
+    "feedbackCorrect": "A mensagem é clara: ainda quarenta dias, e Nínive será subvertida.",
+    "feedbackWrong": {
+      "a": "Um dia é o caminho que Jonas percorreu; o prazo é quarenta dias.",
+      "c": "Três dias é o tamanho da cidade em 3:3, não o prazo do juízo."
+    },
+    "hint": "Leia a frase que Jonas pregava.",
+    "learningObjective": "Identificar o prazo anunciado a Nínive.",
+    "evidence": [
+      "Jonas 3:4"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-03-ninive-se-arrepende-03",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jonas 3:6, o que o rei de Nínive fez ao ouvir a notícia?",
+    "prompt": "Segundo Jonas 3:6, o que o rei de Nínive fez ao ouvir a notícia?",
+    "cue": "Segundo Jonas 3:6, o que o rei de Nínive fez ao ouvir a notícia?",
+    "verseRef": "Jonas 3:6",
+    "passageText": "A notícia chegou ao rei de Nínive, e ele se levantou do seu trono, retirou as vestes reais, cobriu-se com pano de saco e sentou-se sobre cinzas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandou prender Jonas imediatamente"
+      },
+      {
+        "id": "b",
+        "text": "Ignorou o povo e continuou no trono"
+      },
+      {
+        "id": "c",
+        "text": "Fugiu da cidade para Társis"
+      },
+      {
+        "id": "d",
+        "text": "Levantou-se, tirou as vestes reais e sentou-se sobre cinzas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "retirou as vestes reais, cobriu-se com pano de saco e sentou-se sobre cinzas",
+    "feedbackCorrect": "O rei desce do trono e entra no luto do arrependimento.",
+    "feedbackWrong": {
+      "a": "O texto não fala de prisão; fala do luto do rei.",
+      "b": "Ele se levanta do trono e se cobre de saco.",
+      "c": "Quem fugiu antes foi Jonas; o rei permanece e se humilha."
+    },
+    "hint": "Siga os gestos do rei depois de se levantar do trono.",
+    "learningObjective": "Observar a humilhação do rei de Nínive.",
+    "evidence": [
+      "Jonas 3:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-03-ninive-se-arrepende-04",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jonas 3:10 na ordem do texto.",
+    "prompt": "Monte Jonas 3:10 na ordem do texto.",
+    "cue": "Monte Jonas 3:10 na ordem do texto.",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E Deus viu as obras deles, como se converteram de seu mau caminho"
+      },
+      {
+        "id": "b",
+        "text": "e Deus se arrependeu do mal que havia dito que lhes faria"
+      },
+      {
+        "id": "c",
+        "text": "e não o fez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+    "feedbackCorrect": "Deus vê a conversão, se arrepende do mal e não o executa.",
+    "feedbackWrong": {
+      "default": "Comece pelo que Deus viu; o \"não o fez\" fecha o versículo."
+    },
+    "hint": "O versículo começa com o olhar de Deus.",
+    "learningObjective": "Reconhecer a sequência de Jonas 3:10.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-03-ninive-se-arrepende-05",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jonas 3:5, o que os habitantes de Nínive fizeram em Deus?",
+    "prompt": "Em Jonas 3:5, o que os habitantes de Nínive fizeram em Deus?",
+    "cue": "Em Jonas 3:5, o que os habitantes de Nínive fizeram em Deus?",
+    "verseRef": "Jonas 3:5",
+    "passageText": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "template": "Os habitantes de Nínive ___ em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "duvidaram"
+      },
+      {
+        "id": "b",
+        "text": "creram"
+      },
+      {
+        "id": "c",
+        "text": "riram"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+    "feedbackCorrect": "A primeira resposta da cidade é crer em Deus.",
+    "feedbackWrong": {
+      "a": "O texto não fala de dúvida: eles creram.",
+      "c": "Não riem: creem, jejuam e vestem-se de saco."
+    },
+    "hint": "É o primeiro verbo da reação do povo.",
+    "learningObjective": "Lembrar a fé inicial de Nínive.",
+    "evidence": [
+      "Jonas 3:5"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-03-ninive-se-arrepende-06",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 3:10 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 3:10 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 3:10 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "passageA": {
+      "ref": "Jonas 3:10",
+      "text": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quando o povo se converte, Deus deixa de trazer o mal anunciado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ignora a conversão"
+      },
+      {
+        "id": "b",
+        "text": "Conversão afasta o juízo"
+      },
+      {
+        "id": "c",
+        "text": "O mal veio mesmo assim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+    "feedbackCorrect": "Deus vê a conversão e não executa o mal anunciado.",
+    "feedbackWrong": {
+      "a": "Ele vê as obras e responde.",
+      "c": "O texto diz que não o fez."
+    },
+    "hint": "Veja o que Deus faz depois de ver as obras.",
+    "learningObjective": "Ligar Jonas 3:10 à resposta de Deus à conversão.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-03-ninive-se-arrepende-01",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jonas 3:8–10, a conversão do mau caminho aparece ligada ao fato de Deus se arrepender do mal.",
+    "prompt": "Em Jonas 3:8–10, a conversão do mau caminho aparece ligada ao fato de Deus se arrepender do mal.",
+    "cue": "Em Jonas 3:8–10, a conversão do mau caminho aparece ligada ao fato de Deus se arrepender do mal.",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "como se converteram de seu mau caminho; e Deus se arrependeu do mal",
+    "feedbackCorrect": "O texto une conversão vista por Deus e o arrependimento do mal anunciado.",
+    "feedbackWrong": {
+      "false": "Releia 3:8–10: conversão do mau caminho e Deus se arrepende do mal."
+    },
+    "hint": "Una o decreto do rei com o que Deus vê em 3:10.",
+    "learningObjective": "Compreender a ligação entre conversão e resposta de Deus.",
+    "evidence": [
+      "Jonas 3:8–10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-03-ninive-se-arrepende-02",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jonas 3:10, toque a palavra que liga o que Deus viu à conversão do povo.",
+    "prompt": "Em Jonas 3:10, toque a palavra que liga o que Deus viu à conversão do povo.",
+    "cue": "Em Jonas 3:10, toque a palavra que liga o que Deus viu à conversão do povo.",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mal"
+      },
+      {
+        "id": "b",
+        "text": "como"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "como se converteram de seu mau caminho",
+    "feedbackCorrect": "\"Como\" explica o que Deus viu: a conversão do mau caminho.",
+    "feedbackWrong": {
+      "a": "\"Mal\" é o que Deus deixa de fazer; não é a ligação.",
+      "c": "\"Obras\" é o que ele viu; a ligação com a conversão vem em seguida."
+    },
+    "hint": "Procure a palavra entre \"obras deles\" e \"se converteram\".",
+    "learningObjective": "Reconhecer o marcador que liga visão e conversão.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-03-ninive-se-arrepende-03",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jonas 3:9 se relaciona com o jejum decretado?",
+    "prompt": "Como Jonas 3:9 se relaciona com o jejum decretado?",
+    "cue": "Como Jonas 3:9 se relaciona com o jejum decretado?",
+    "verseRef": "Jonas 3:9",
+    "passageText": "Quem sabe se Deus voltará para nós, se se arrependerá e afastará seu grande furor de forma que não sejamos destruídos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Expressa a esperança de que Deus afaste o furor"
+      },
+      {
+        "id": "b",
+        "text": "Nega qualquer possibilidade de Deus se arrepender"
+      },
+      {
+        "id": "c",
+        "text": "Afirma que a destruição é certa e sem saída"
+      },
+      {
+        "id": "d",
+        "text": "Manda o povo confiar só no jejum sem clamar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "se se arrependerá e afastará seu grande furor",
+    "feedbackCorrect": "\"Quem sabe\" abre a esperança: Deus pode se arrepender e poupar.",
+    "feedbackWrong": {
+      "b": "O rei espera justamente que Deus se arrependa.",
+      "c": "O versículo deixa aberta a possibilidade de não serem destruídos.",
+      "d": "3:8 manda clamar fortemente a Deus."
+    },
+    "hint": "Leia a pergunta que o decreto deixa no ar.",
+    "learningObjective": "Relacionar o jejum à esperança da misericórdia.",
+    "evidence": [
+      "Jonas 3:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-03-ninive-se-arrepende-04",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Jonas 3:1–10?",
+    "prompt": "Como avança a cena em Jonas 3:1–10?",
+    "cue": "Como avança a cena em Jonas 3:1–10?",
+    "verseRef": "Jonas 3:4–5",
+    "passageText": "Jonas começou a entrar na cidade, percorrendo um dia de caminho, e pregava: \"Ainda quarenta dias, e Nínive será subvertida.\" Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas prega o juízo em quarenta dias"
+      },
+      {
+        "id": "b",
+        "text": "Povo e rei jejuam e se convertem"
+      },
+      {
+        "id": "c",
+        "text": "Deus se arrepende do mal anunciado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ainda quarenta dias, e Nínive será subvertida",
+    "feedbackCorrect": "Pregação, arrependimento da cidade e resposta misericordiosa de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pela pregação; a resposta de Deus vem por último."
+    },
+    "hint": "A misericórdia de Deus é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da pregação à misericórdia.",
+    "evidence": [
+      "Jonas 3:1–10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-03-ninive-se-arrepende-05",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jonas 3:8, de que cada um deveria se converter?",
+    "prompt": "Em Jonas 3:8, de que cada um deveria se converter?",
+    "cue": "Em Jonas 3:8, de que cada um deveria se converter?",
+    "verseRef": "Jonas 3:8",
+    "passageText": "Mas os homens e os animais se cobrirão de pano de saco e clamarão fortemente a Deus; e cada um se converterá de seu mau caminho e da violência que está em suas mãos.",
+    "template": "Mas os homens e os animais se cobrirão de pano de saco e clamarão fortemente a Deus; e cada um se converterá de seu ___ caminho e da violência que está em suas mãos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mau"
+      },
+      {
+        "id": "b",
+        "text": "longo"
+      },
+      {
+        "id": "c",
+        "text": "bom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cada um se converterá de seu mau caminho",
+    "feedbackCorrect": "A conversão é do mau caminho e da violência nas mãos.",
+    "feedbackWrong": {
+      "b": "O texto fala de mau caminho, não de caminho longo.",
+      "c": "Não é do bom caminho: é do mau caminho."
+    },
+    "hint": "Veja o adjetivo antes de \"caminho\".",
+    "learningObjective": "Compreender o objeto da conversão pedida.",
+    "evidence": [
+      "Jonas 3:8"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-03-ninive-se-arrepende-06",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jonas 3:10 a Jeremias 18:8?",
+    "prompt": "O que liga Jonas 3:10 a Jeremias 18:8?",
+    "cue": "O que liga Jonas 3:10 a Jeremias 18:8?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "passageA": {
+      "ref": "Jonas 3:10",
+      "text": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez."
+    },
+    "passageB": {
+      "ref": "Jeremias 18:8",
+      "text": "Se essa nação à qual me referi se converter da maldade que falei, também eu me arrependerei do mal que pensava fazer a ela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus nunca muda de plano"
+      },
+      {
+        "id": "b",
+        "text": "Juízo sem possibilidade"
+      },
+      {
+        "id": "c",
+        "text": "Conversão e Deus se arrepende"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus se arrependeu do mal que havia dito que lhes faria",
+    "feedbackCorrect": "Nos dois textos, a conversão do povo encontra o arrependimento de Deus.",
+    "feedbackWrong": {
+      "a": "Os dois mostram Deus se arrependendo do mal anunciado.",
+      "b": "Ambos abrem espaço para o juízo ser afastado."
+    },
+    "hint": "Compare o que Deus faz quando a nação se converte.",
+    "learningObjective": "Relacionar a misericórdia em Jonas e em Jeremias.",
+    "evidence": [
+      "Jonas 3:10",
+      "Jeremias 18:8"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-03-ninive-se-arrepende-01",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Jonas 3:5–10 apresenta o jejum de Nínive como rito vazio, sem mudança de caminho.",
+    "prompt": "Jonas 3:5–10 apresenta o jejum de Nínive como rito vazio, sem mudança de caminho.",
+    "cue": "Jonas 3:5–10 apresenta o jejum de Nínive como rito vazio, sem mudança de caminho.",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "como se converteram de seu mau caminho",
+    "feedbackCorrect": "O decreto pede conversão, e Deus vê as obras dessa mudança.",
+    "feedbackWrong": {
+      "true": "Releia 3:8–10: há conversão do mau caminho, e Deus a vê."
+    },
+    "hint": "Veja o que Deus observou nas obras deles.",
+    "learningObjective": "Interpretar o jejum como unido à conversão real.",
+    "evidence": [
+      "Jonas 3:8–10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-03-ninive-se-arrepende-02",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jonas 3:10, toque o trecho que sustenta a resposta misericordiosa de Deus.",
+    "prompt": "Em Jonas 3:10, toque o trecho que sustenta a resposta misericordiosa de Deus.",
+    "cue": "Em Jonas 3:10, toque o trecho que sustenta a resposta misericordiosa de Deus.",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras deles"
+      },
+      {
+        "id": "b",
+        "text": "mau caminho"
+      },
+      {
+        "id": "c",
+        "text": "se arrependeu"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus se arrependeu do mal que havia dito que lhes faria",
+    "feedbackCorrect": "O texto sustenta: Deus se arrependeu do mal e não o fez.",
+    "feedbackWrong": {
+      "a": "As obras são o que ele viu; a resposta misericordiosa vem depois.",
+      "b": "O mau caminho é o que eles deixaram; a resposta de Deus é outra."
+    },
+    "hint": "Procure o verbo cujo sujeito é Deus, depois de ver as obras.",
+    "learningObjective": "Sustentar com o texto o arrependimento de Deus.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-03-ninive-se-arrepende-03",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jonas 3:1–10 sustenta sobre Nínive?",
+    "prompt": "Que leitura Jonas 3:1–10 sustenta sobre Nínive?",
+    "cue": "Que leitura Jonas 3:1–10 sustenta sobre Nínive?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus destruiu Nínive mesmo depois do jejum"
+      },
+      {
+        "id": "b",
+        "text": "O rei permaneceu indiferente ao anúncio"
+      },
+      {
+        "id": "c",
+        "text": "Só houve rito externo, sem mudança de caminho"
+      },
+      {
+        "id": "d",
+        "text": "Quando o povo se arrepende, Deus se arrepende do mal anunciado"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+    "feedbackCorrect": "A conversão vista por Deus encontra misericórdia: o mal não veio.",
+    "feedbackWrong": {
+      "a": "3:10 diz que Deus não fez o mal anunciado.",
+      "b": "O rei se humilha e decreta o jejum.",
+      "c": "3:8–10 falam de converter-se do mau caminho."
+    },
+    "hint": "Compare a conversão do povo com a última ação de Deus.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre Nínive.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-03-ninive-se-arrepende-04",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da conversão que passa por Nínive?",
+    "prompt": "Qual sequência revela o caminho da conversão que passa por Nínive?",
+    "cue": "Qual sequência revela o caminho da conversão que passa por Nínive?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive se converte e Deus poupa a cidade"
+      },
+      {
+        "id": "b",
+        "text": "Deus se arrepende do mal se a nação se converter"
+      },
+      {
+        "id": "c",
+        "text": "Jesus aponta Nínive como povo que se arrependeu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus se arrependeu do mal que havia dito que lhes faria",
+    "feedbackCorrect": "Nínive ilustra a palavra dos profetas e o sinal que Jesus lembra.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Jonas, Jeremias e Lucas."
+    },
+    "hint": "Siga a ordem: Jonas, o profeta e o Evangelho.",
+    "learningObjective": "Ver o arrependimento de Nínive como fio bíblico.",
+    "evidence": [
+      "Jonas 3:10",
+      "Jeremias 18:8",
+      "Lucas 11:32"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-03-ninive-se-arrepende-05",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jonas 3:10, que verbo mostra o que o povo fez do mau caminho?",
+    "prompt": "Em Jonas 3:10, que verbo mostra o que o povo fez do mau caminho?",
+    "cue": "Em Jonas 3:10, que verbo mostra o que o povo fez do mau caminho?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "template": "E Deus viu as obras deles, como se ___ de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "converteram"
+      },
+      {
+        "id": "b",
+        "text": "ocultaram"
+      },
+      {
+        "id": "c",
+        "text": "fingiram"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como se converteram de seu mau caminho",
+    "feedbackCorrect": "O termo carrega a cena: eles se converteram, e Deus viu as obras.",
+    "feedbackWrong": {
+      "b": "Não ocultaram: se converteram do mau caminho.",
+      "c": "Não é fingimento: Deus viu conversão real."
+    },
+    "hint": "É o verbo ligado a \"mau caminho\" no versículo.",
+    "learningObjective": "Lembrar o termo que carrega a conversão de Nínive.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-03-ninive-se-arrepende-06",
+    "trail": "jonas-cap",
+    "section": "jnc-03-ninive-se-arrepende",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jonas 3:5 a Lucas 11:32?",
+    "prompt": "O que liga Jonas 3:5 a Lucas 11:32?",
+    "cue": "O que liga Jonas 3:5 a Lucas 11:32?",
+    "verseRef": "Jonas 3:5",
+    "passageText": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "passageA": {
+      "ref": "Jonas 3:5",
+      "text": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor."
+    },
+    "passageB": {
+      "ref": "Lucas 11:32",
+      "text": "Os homens de Nínive se levantarão no juízo com esta geração e a condenarão, pois se arrependeram com a pregação de Jonas; e eis que aqui está quem é maior do que Jonas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive rejeitou Jonas"
+      },
+      {
+        "id": "b",
+        "text": "Só Israel se arrepende"
+      },
+      {
+        "id": "c",
+        "text": "Nínive se arrependeu"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+    "feedbackCorrect": "Jesus lembra Nínive como povo que se arrependeu com a pregação.",
+    "feedbackWrong": {
+      "a": "Eles creram e se arrependeram; não rejeitaram.",
+      "b": "Lucas usa Nínive como exemplo de arrependimento."
+    },
+    "hint": "Veja o que Jesus diz sobre os homens de Nínive.",
+    "learningObjective": "Ligar a fé de Nínive ao ensino de Jesus.",
+    "evidence": [
+      "Jonas 3:5",
+      "Lucas 11:32"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-04-a-planta-e-a-01",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jonas 4:1, Jonas ficou extremamente desgostoso e se irou grandemente.",
+    "prompt": "Em Jonas 4:1, Jonas ficou extremamente desgostoso e se irou grandemente.",
+    "cue": "Em Jonas 4:1, Jonas ficou extremamente desgostoso e se irou grandemente.",
+    "verseRef": "Jonas 4:1",
+    "passageText": "E Jonas ficou extremamente desgostoso com isso e se irou grandemente.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Jonas ficou extremamente desgostoso com isso e se irou grandemente",
+    "feedbackCorrect": "O versículo abre a cena com o desgosto e a ira de Jonas.",
+    "feedbackWrong": {
+      "false": "Releia Jonas 4:1: ele ficou desgostoso e se irou grandemente."
+    },
+    "hint": "Veja a reação de Jonas no primeiro versículo.",
+    "learningObjective": "Observar a ira de Jonas diante da misericórdia.",
+    "evidence": [
+      "Jonas 4:1"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-04-a-planta-e-a-02",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+    "prompt": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+    "cue": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+    "verseRef": "Jonas 4:6",
+    "passageText": "E o Senhor Deus fez surgir uma planta, que subiu sobre a cabeça de Jonas, para lhe dar sombra e aliviar seu desconforto; e Jonas se alegrou imensamente por causa da planta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seu desconforto"
+      },
+      {
+        "id": "b",
+        "text": "dar sombra"
+      },
+      {
+        "id": "c",
+        "text": "uma planta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fez surgir uma planta, que subiu sobre a cabeça de Jonas",
+    "feedbackCorrect": "O Senhor faz surgir uma planta para dar sombra a Jonas.",
+    "feedbackWrong": {
+      "a": "O desconforto é o que a planta alivia; o que surge é a planta.",
+      "b": "Dar sombra é o propósito; o que Deus faz surgir é a planta."
+    },
+    "hint": "Procure o que sobe sobre a cabeça de Jonas.",
+    "learningObjective": "Identificar a planta que Deus faz surgir.",
+    "evidence": [
+      "Jonas 4:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-04-a-planta-e-a-03",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jonas 4:7, o que Deus enviou no dia seguinte?",
+    "prompt": "Segundo Jonas 4:7, o que Deus enviou no dia seguinte?",
+    "cue": "Segundo Jonas 4:7, o que Deus enviou no dia seguinte?",
+    "verseRef": "Jonas 4:7",
+    "passageText": "Então Deus, no dia seguinte, enviou um verme, que feriu a planta, fazendo-a secar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Uma nova planta maior"
+      },
+      {
+        "id": "b",
+        "text": "Um verme que feriu a planta"
+      },
+      {
+        "id": "c",
+        "text": "Chuva para refrescar Jonas"
+      },
+      {
+        "id": "d",
+        "text": "Um anjo para consolá-lo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "enviou um verme, que feriu a planta, fazendo-a secar",
+    "feedbackCorrect": "Deus envia o verme; a planta é ferida e seca.",
+    "feedbackWrong": {
+      "a": "Não há nova planta: a existente seca.",
+      "c": "Em vez de chuva, vem vento quente em 4:8.",
+      "d": "O texto fala de verme, não de anjo."
+    },
+    "hint": "Leia o que feriu a planta.",
+    "learningObjective": "Observar o que Deus envia contra a planta.",
+    "evidence": [
+      "Jonas 4:7"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-04-a-planta-e-a-04",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jonas 4:6 na ordem do texto.",
+    "prompt": "Monte Jonas 4:6 na ordem do texto.",
+    "cue": "Monte Jonas 4:6 na ordem do texto.",
+    "verseRef": "Jonas 4:6",
+    "passageText": "E o Senhor Deus fez surgir uma planta, que subiu sobre a cabeça de Jonas, para lhe dar sombra e aliviar seu desconforto; e Jonas se alegrou imensamente por causa da planta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E o Senhor Deus fez surgir uma planta"
+      },
+      {
+        "id": "b",
+        "text": "que subiu sobre a cabeça de Jonas, para lhe dar sombra"
+      },
+      {
+        "id": "c",
+        "text": "e Jonas se alegrou imensamente por causa da planta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Jonas se alegrou imensamente por causa da planta",
+    "feedbackCorrect": "Deus faz surgir a planta, ela dá sombra, e Jonas se alegra.",
+    "feedbackWrong": {
+      "default": "Comece pela ação do Senhor; a alegria de Jonas fecha o versículo."
+    },
+    "hint": "O versículo começa com o Senhor Deus.",
+    "learningObjective": "Reconhecer a sequência de Jonas 4:6.",
+    "evidence": [
+      "Jonas 4:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-04-a-planta-e-a-05",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jonas 4:7, o que feriu a planta?",
+    "prompt": "Em Jonas 4:7, o que feriu a planta?",
+    "cue": "Em Jonas 4:7, o que feriu a planta?",
+    "verseRef": "Jonas 4:7",
+    "passageText": "Então Deus, no dia seguinte, enviou um verme, que feriu a planta, fazendo-a secar.",
+    "template": "Então Deus, no dia seguinte, enviou um ___, que feriu a planta, fazendo-a secar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "verme"
+      },
+      {
+        "id": "b",
+        "text": "vento"
+      },
+      {
+        "id": "c",
+        "text": "sol"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "enviou um verme, que feriu a planta",
+    "feedbackCorrect": "Foi o verme enviado por Deus que feriu a planta.",
+    "feedbackWrong": {
+      "b": "O vento vem em 4:8; quem fere a planta é o verme.",
+      "c": "O sol bate em Jonas depois; a planta é ferida pelo verme."
+    },
+    "hint": "Veja o que Deus enviou no dia seguinte.",
+    "learningObjective": "Lembrar o que fez a planta secar.",
+    "evidence": [
+      "Jonas 4:7"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-04-a-planta-e-a-06",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 4:11 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 4:11 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 4:11 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 4:11",
+    "passageText": "E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?",
+    "passageA": {
+      "ref": "Jonas 4:11",
+      "text": "E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Senhor quer que Jonas entenda sua compaixão por Nínive."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus despreza a cidade"
+      },
+      {
+        "id": "b",
+        "text": "Só a planta importa"
+      },
+      {
+        "id": "c",
+        "text": "Compaixão pela grande cidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu não deveria ter compaixão da grande cidade de Nínive",
+    "feedbackCorrect": "A pergunta final aponta a compaixão do Senhor por Nínive.",
+    "feedbackWrong": {
+      "a": "O Senhor defende ter compaixão da cidade.",
+      "b": "A planta ensina; o alvo é a cidade."
+    },
+    "hint": "Leia a pergunta que o Senhor faz a Jonas.",
+    "learningObjective": "Ligar Jonas 4:11 à compaixão por Nínive.",
+    "evidence": [
+      "Jonas 4:11"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-04-a-planta-e-a-01",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jonas 4:2, Jonas diz que fugiu porque não sabia que o Senhor era misericordioso.",
+    "prompt": "Em Jonas 4:2, Jonas diz que fugiu porque não sabia que o Senhor era misericordioso.",
+    "cue": "Em Jonas 4:2, Jonas diz que fugiu porque não sabia que o Senhor era misericordioso.",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "pois sabia que Tu és Deus clemente, e misericordioso",
+    "feedbackCorrect": "Ele fugiu justamente porque sabia da misericórdia do Senhor.",
+    "feedbackWrong": {
+      "true": "Releia 4:2: ele fugiu porque sabia que o Senhor é misericordioso."
+    },
+    "hint": "Repare no \"pois sabia\" da oração de Jonas.",
+    "learningObjective": "Compreender a causa da fuga segundo Jonas.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-04-a-planta-e-a-02",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jonas 4:2, toque a palavra que introduz o motivo da fuga de Jonas.",
+    "prompt": "Em Jonas 4:2, toque a palavra que introduz o motivo da fuga de Jonas.",
+    "cue": "Em Jonas 4:2, toque a palavra que introduz o motivo da fuga de Jonas.",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pois"
+      },
+      {
+        "id": "b",
+        "text": "clemente"
+      },
+      {
+        "id": "c",
+        "text": "fugindo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois sabia que Tu és Deus clemente, e misericordioso",
+    "feedbackCorrect": "\"Pois\" marca a causa: ele fugiu porque conhecia a misericórdia de Deus.",
+    "feedbackWrong": {
+      "b": "\"Clemente\" descreve Deus; a ligação causal é \"pois\".",
+      "c": "\"Fugindo\" é a ação; a causa vem depois."
+    },
+    "hint": "Procure a palavra curta antes de \"sabia\".",
+    "learningObjective": "Reconhecer o marcador de causa em Jonas 4:2.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-04-a-planta-e-a-03",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jonas 4:10–11 se relaciona com a ira de Jonas pela planta?",
+    "prompt": "Como Jonas 4:10–11 se relaciona com a ira de Jonas pela planta?",
+    "cue": "Como Jonas 4:10–11 se relaciona com a ira de Jonas pela planta?",
+    "verseRef": "Jonas 4:10–11",
+    "passageText": "E o Senhor disse: Você teve compaixão da planta que não lhe custou trabalho, nem a fez crescer, que em uma noite nasceu e em uma noite pereceu; E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diz que Jonas plantou e cuidou da planta"
+      },
+      {
+        "id": "b",
+        "text": "Nega qualquer compaixão de Deus por Nínive"
+      },
+      {
+        "id": "c",
+        "text": "Afirma que a planta valia mais que a cidade"
+      },
+      {
+        "id": "d",
+        "text": "Contrasta a compaixão pela planta com a de Deus por Nínive"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Você teve compaixão da planta que não lhe custou trabalho",
+    "feedbackCorrect": "Jonas se importa com a planta; o Senhor, com cento e vinte mil pessoas.",
+    "feedbackWrong": {
+      "a": "4:10 diz que a planta não lhe custou trabalho.",
+      "b": "4:11 afirma a compaixão pela cidade.",
+      "c": "O Senhor questiona essa proporção, não a confirma."
+    },
+    "hint": "Compare o que Jonas sentiu pela planta com a pergunta final.",
+    "learningObjective": "Relacionar a planta à lição sobre Nínive.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-04-a-planta-e-a-04",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Jonas 4:6–11?",
+    "prompt": "Como avança a cena em Jonas 4:6–11?",
+    "cue": "Como avança a cena em Jonas 4:6–11?",
+    "verseRef": "Jonas 4:6–7",
+    "passageText": "E o Senhor Deus fez surgir uma planta, que subiu sobre a cabeça de Jonas, para lhe dar sombra e aliviar seu desconforto; e Jonas se alegrou imensamente por causa da planta. Então Deus, no dia seguinte, enviou um verme, que feriu a planta, fazendo-a secar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A planta dá sombra e alegra Jonas"
+      },
+      {
+        "id": "b",
+        "text": "O verme fere a planta e o sol o abate"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor ensina compaixão por Nínive"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Jonas se alegrou imensamente por causa da planta",
+    "feedbackCorrect": "Conforto, perda e a lição da compaixão divina.",
+    "feedbackWrong": {
+      "default": "Comece pela alegria da planta; a lição sobre Nínive vem por último."
+    },
+    "hint": "A pergunta sobre Nínive é o ponto de chegada.",
+    "learningObjective": "Compreender o movimento da planta à lição.",
+    "evidence": [
+      "Jonas 4:6–11"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-04-a-planta-e-a-05",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jonas 4:6, para que a planta subiu sobre a cabeça de Jonas?",
+    "prompt": "Em Jonas 4:6, para que a planta subiu sobre a cabeça de Jonas?",
+    "cue": "Em Jonas 4:6, para que a planta subiu sobre a cabeça de Jonas?",
+    "verseRef": "Jonas 4:6",
+    "passageText": "E o Senhor Deus fez surgir uma planta, que subiu sobre a cabeça de Jonas, para lhe dar sombra e aliviar seu desconforto; e Jonas se alegrou imensamente por causa da planta.",
+    "template": "E o Senhor Deus fez surgir uma planta, que subiu sobre a cabeça de Jonas, para lhe ___ sombra e aliviar seu desconforto; e Jonas se alegrou imensamente por causa da planta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dar"
+      },
+      {
+        "id": "b",
+        "text": "ferir"
+      },
+      {
+        "id": "c",
+        "text": "tirar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para lhe dar sombra e aliviar seu desconforto",
+    "feedbackCorrect": "A planta sobe para lhe dar sombra e aliviar o desconforto.",
+    "feedbackWrong": {
+      "b": "Quem fere a planta depois é o verme, não a finalidade dela.",
+      "c": "O propósito é dar sombra, não tirar."
+    },
+    "hint": "Veja o infinitivo depois de \"para lhe\".",
+    "learningObjective": "Compreender o propósito da planta.",
+    "evidence": [
+      "Jonas 4:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-04-a-planta-e-a-06",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jonas 4:2 a Êxodo 34:6?",
+    "prompt": "O que liga Jonas 4:2 a Êxodo 34:6?",
+    "cue": "O que liga Jonas 4:2 a Êxodo 34:6?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "passageA": {
+      "ref": "Jonas 4:2",
+      "text": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal."
+    },
+    "passageB": {
+      "ref": "Êxodo 34:6",
+      "text": "E, passando o Senhor por diante dele, exclamou: \"O Senhor, o Senhor Deus é compassivo, clemente, longânime e grande em misericórdia e fidelidade;\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus clemente e misericordioso"
+      },
+      {
+        "id": "b",
+        "text": "Deus só castiga sempre"
+      },
+      {
+        "id": "c",
+        "text": "Deus ignora o pecador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu és Deus clemente, e misericordioso, tardio em irar-se",
+    "feedbackCorrect": "Jonas ecoa a autoapresentação do Senhor: clemente e misericordioso.",
+    "feedbackWrong": {
+      "b": "Os dois textos destacam misericórdia e longanimidade.",
+      "c": "A descrição é de Deus que se compadece, não que ignora."
+    },
+    "hint": "Compare os adjetivos usados para o Senhor.",
+    "learningObjective": "Relacionar a confissão de Jonas a Êxodo 34:6.",
+    "evidence": [
+      "Jonas 4:2",
+      "Êxodo 34:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-04-a-planta-e-a-01",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Jonas 4:10–11 mostra que a planta importava a Jonas porque ele a plantou e fez crescer.",
+    "prompt": "Jonas 4:10–11 mostra que a planta importava a Jonas porque ele a plantou e fez crescer.",
+    "cue": "Jonas 4:10–11 mostra que a planta importava a Jonas porque ele a plantou e fez crescer.",
+    "verseRef": "Jonas 4:10–11",
+    "passageText": "E o Senhor disse: Você teve compaixão da planta que não lhe custou trabalho, nem a fez crescer, que em uma noite nasceu e em uma noite pereceu; E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a planta que não lhe custou trabalho, nem a fez crescer",
+    "feedbackCorrect": "O Senhor destaca: a planta não lhe custou trabalho nem a fez crescer.",
+    "feedbackWrong": {
+      "true": "Releia 4:10: a planta não lhe custou trabalho nem a fez crescer."
+    },
+    "hint": "Veja o que o Senhor diz sobre o trabalho de Jonas com a planta.",
+    "learningObjective": "Interpretar a planta como dom, não conquista de Jonas.",
+    "evidence": [
+      "Jonas 4:10–11"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-04-a-planta-e-a-02",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jonas 4:11, toque o trecho que sustenta a preocupação do Senhor com Nínive.",
+    "prompt": "Em Jonas 4:11, toque o trecho que sustenta a preocupação do Senhor com Nínive.",
+    "cue": "Em Jonas 4:11, toque o trecho que sustenta a preocupação do Senhor com Nínive.",
+    "verseRef": "Jonas 4:11",
+    "passageText": "E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "mão direita"
+      },
+      {
+        "id": "b",
+        "text": "compaixão"
+      },
+      {
+        "id": "c",
+        "text": "muitos animais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu não deveria ter compaixão da grande cidade de Nínive",
+    "feedbackCorrect": "A palavra central é compaixão: o Senhor a defende em relação a Nínive.",
+    "feedbackWrong": {
+      "a": "\"Mão direita\" ilustra a inocência do povo; o centro é a compaixão.",
+      "c": "Os animais fecham o versículo; o centro é a compaixão."
+    },
+    "hint": "Procure a palavra que o Senhor aplica a si mesmo e à cidade.",
+    "learningObjective": "Sustentar com o texto a compaixão do Senhor por Nínive.",
+    "evidence": [
+      "Jonas 4:11"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-04-a-planta-e-a-03",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Jonas 4:1–11 sustenta sobre a misericórdia de Deus?",
+    "prompt": "Que leitura Jonas 4:1–11 sustenta sobre a misericórdia de Deus?",
+    "cue": "Que leitura Jonas 4:1–11 sustenta sobre a misericórdia de Deus?",
+    "verseRef": "Jonas 4:11",
+    "passageText": "E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas se alegra com a misericórdia sobre Nínive"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor tem compaixão da cidade; Jonas precisa aprender a mesma"
+      },
+      {
+        "id": "c",
+        "text": "A planta valia mais porque Jonas a cultivou"
+      },
+      {
+        "id": "d",
+        "text": "O Senhor não se importa com Nínive"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu não deveria ter compaixão da grande cidade de Nínive",
+    "feedbackCorrect": "A pergunta final convida Jonas a compartilhar a misericórdia de Deus.",
+    "feedbackWrong": {
+      "a": "4:1 mostra ira e desgosto, não alegria.",
+      "c": "4:10 diz que a planta não lhe custou trabalho.",
+      "d": "4:11 afirma a compaixão pela cidade."
+    },
+    "hint": "Una a ira de Jonas com a pergunta final do Senhor.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a misericórdia.",
+    "evidence": [
+      "Jonas 4:1",
+      "Jonas 4:11"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-04-a-planta-e-a-04",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da misericórdia confessada em Jonas 4:2?",
+    "prompt": "Qual sequência revela o caminho da misericórdia confessada em Jonas 4:2?",
+    "cue": "Qual sequência revela o caminho da misericórdia confessada em Jonas 4:2?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas confessa o Senhor clemente e misericordioso"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor se apresenta compassivo em Êxodo"
+      },
+      {
+        "id": "c",
+        "text": "Jesus ensina que Deus quer misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tu és Deus clemente, e misericordioso, tardio em irar-se",
+    "feedbackCorrect": "A confissão de Jonas ecoa Êxodo e se aprofunda no ensino de Jesus.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Jonas, Êxodo e Mateus."
+    },
+    "hint": "Siga a ordem: Jonas, a revelação no Sinai e o Evangelho.",
+    "learningObjective": "Ver a misericórdia de Deus como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Jonas 4:2",
+      "Êxodo 34:6",
+      "Mateus 9:13"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-04-a-planta-e-a-05",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jonas 4:2, que palavra Jonas usa junto com clemente para descrever o Senhor?",
+    "prompt": "Em Jonas 4:2, que palavra Jonas usa junto com clemente para descrever o Senhor?",
+    "cue": "Em Jonas 4:2, que palavra Jonas usa junto com clemente para descrever o Senhor?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "template": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e ___, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "distante"
+      },
+      {
+        "id": "b",
+        "text": "severo"
+      },
+      {
+        "id": "c",
+        "text": "misericordioso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tu és Deus clemente, e misericordioso, tardio em irar-se",
+    "feedbackCorrect": "O termo carrega a confissão: o Senhor é clemente e misericordioso.",
+    "feedbackWrong": {
+      "a": "Não é distante: é misericordioso e tardio em irar-se.",
+      "b": "Jonas não diz severo: diz misericordioso."
+    },
+    "hint": "Veja o segundo adjetivo depois de \"Deus clemente\".",
+    "learningObjective": "Lembrar o termo que carrega a misericórdia confessada.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-04-a-planta-e-a-06",
+    "trail": "jonas-cap",
+    "section": "jnc-04-a-planta-e-a",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jonas 4:11 a Mateus 9:13?",
+    "prompt": "O que liga Jonas 4:11 a Mateus 9:13?",
+    "cue": "O que liga Jonas 4:11 a Mateus 9:13?",
+    "verseRef": "Jonas 4:11",
+    "passageText": "E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?",
+    "passageA": {
+      "ref": "Jonas 4:11",
+      "text": "E eu não deveria ter compaixão da grande cidade de Nínive, onde há mais de cento e vinte mil pessoas que não sabem discernir entre a mão direita e a mão esquerda, e também muitos animais?"
+    },
+    "passageB": {
+      "ref": "Mateus 9:13",
+      "text": "Vão, portanto, e aprendam o que significa: Quero misericórdia e não sacrifícios; pois não vim chamar os justos, mas sim os pecadores ao arrependimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só juízo sem graça"
+      },
+      {
+        "id": "b",
+        "text": "Planta maior que pessoas"
+      },
+      {
+        "id": "c",
+        "text": "Quero misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu não deveria ter compaixão da grande cidade de Nínive",
+    "feedbackCorrect": "Jesus ecoa o coração de Deus: misericórdia, não só rito ou ira.",
+    "feedbackWrong": {
+      "a": "Ambos apontam para misericórdia.",
+      "b": "Jonas 4 questiona justamente essa proporção invertida."
+    },
+    "hint": "Compare o que Deus deseja em relação às pessoas.",
+    "learningObjective": "Ligar a compaixão por Nínive ao ensino de Jesus.",
+    "evidence": [
+      "Jonas 4:11",
+      "Mateus 9:13"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-01",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+    "prompt": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+    "cue": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+    "verseRef": "Jonas 1:7",
+    "passageText": "E cada um dizia ao seu companheiro: Vinde, lancemos sortes, para que saibamos por causa de quem nos sobreveio este mal. E lançaram sortes, e a sorte caiu sobre Jonas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "e a sorte caiu sobre Jonas",
+    "feedbackCorrect": "As sortes apontam Jonas como causa do mal no navio.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1:7: a sorte caiu sobre Jonas."
+    },
+    "hint": "Veja o resultado das sortes no fim do versículo.",
+    "learningObjective": "Observar que a sorte identifica Jonas.",
+    "evidence": [
+      "Jonas 1:7"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-02",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jonas 1:9, toque o que Jonas diz temer.",
+    "prompt": "Em Jonas 1:9, toque o que Jonas diz temer.",
+    "cue": "Em Jonas 1:9, toque o que Jonas diz temer.",
+    "verseRef": "Jonas 1:9",
+    "passageText": "Sou hebreu e temo o Senhor, o Deus do céu, que fez o mar e a terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "o mar"
+      },
+      {
+        "id": "c",
+        "text": "a terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Sou hebreu e temo o Senhor",
+    "feedbackCorrect": "Jonas confessa: teme o Senhor, o Deus do céu.",
+    "feedbackWrong": {
+      "b": "O mar é obra de Deus; Jonas diz temer o Senhor.",
+      "c": "A terra também é obra; o temor declarado é ao Senhor."
+    },
+    "hint": "Leia o objeto do verbo \"temo\".",
+    "learningObjective": "Identificar a quem Jonas diz temer.",
+    "evidence": [
+      "Jonas 1:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-03",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Jonas 3:5, o que os habitantes de Nínive fizeram ao crer em Deus?",
+    "prompt": "Segundo Jonas 3:5, o que os habitantes de Nínive fizeram ao crer em Deus?",
+    "cue": "Segundo Jonas 3:5, o que os habitantes de Nínive fizeram ao crer em Deus?",
+    "verseRef": "Jonas 3:5",
+    "passageText": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pediram mais quarenta dias de prazo"
+      },
+      {
+        "id": "b",
+        "text": "Expulsaram Jonas da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Ignoraram a mensagem e seguiram festas"
+      },
+      {
+        "id": "d",
+        "text": "Proclamaram jejum e se vestiram de panos de saco"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco",
+    "feedbackCorrect": "Creram, jejuaram e se vestiram de saco, do maior ao menor.",
+    "feedbackWrong": {
+      "a": "A mensagem é de quarenta dias; a resposta é jejum.",
+      "b": "O texto não fala de expulsão; fala de fé e jejum.",
+      "c": "Há resposta coletiva de fé, não de festa."
+    },
+    "hint": "Veja o que segue a fé em Deus.",
+    "learningObjective": "Observar a resposta de Nínive.",
+    "evidence": [
+      "Jonas 3:5"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-04",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jonas 1:15 na ordem do texto.",
+    "prompt": "Monte Jonas 1:15 na ordem do texto.",
+    "cue": "Monte Jonas 1:15 na ordem do texto.",
+    "verseRef": "Jonas 1:15",
+    "passageText": "E levantaram Jonas e o lançaram ao mar; e o mar se acalmou de sua fúria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E levantaram Jonas"
+      },
+      {
+        "id": "b",
+        "text": "e o lançaram ao mar"
+      },
+      {
+        "id": "c",
+        "text": "e o mar se acalmou de sua fúria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e o mar se acalmou de sua fúria",
+    "feedbackCorrect": "Jonas é levantado, lançado, e o mar se acalma.",
+    "feedbackWrong": {
+      "default": "Comece por levantar Jonas; o mar se acalma no fim."
+    },
+    "hint": "O versículo começa com o que fizeram a Jonas.",
+    "learningObjective": "Reconhecer a sequência de 1:15.",
+    "evidence": [
+      "Jonas 1:15"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-05",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Jonas 2:9, a quem pertence a salvação, segundo Jonas?",
+    "prompt": "Em Jonas 2:9, a quem pertence a salvação, segundo Jonas?",
+    "cue": "Em Jonas 2:9, a quem pertence a salvação, segundo Jonas?",
+    "verseRef": "Jonas 2:9",
+    "passageText": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao SENHOR pertence a salvação!",
+    "template": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao ___ pertence a salvação!",
+    "options": [
+      {
+        "id": "a",
+        "text": "navio"
+      },
+      {
+        "id": "b",
+        "text": "SENHOR"
+      },
+      {
+        "id": "c",
+        "text": "peixe"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ao SENHOR pertence a salvação!",
+    "feedbackCorrect": "Do ventre do peixe, Jonas confessa: a salvação é do Senhor.",
+    "feedbackWrong": {
+      "a": "O navio não aparece nesta confissão.",
+      "c": "O peixe obedece; a salvação pertence ao Senhor."
+    },
+    "hint": "Leia a última frase do versículo.",
+    "learningObjective": "Lembrar a quem pertence a salvação.",
+    "evidence": [
+      "Jonas 2:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-06",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Jonas 4:2 comunica que se liga a este contexto?",
+    "prompt": "O que Jonas 4:2 comunica que se liga a este contexto?",
+    "cue": "O que Jonas 4:2 comunica que se liga a este contexto?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "passageA": {
+      "ref": "Jonas 4:2",
+      "text": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Jonas foge porque conhece a misericórdia de Deus e teme vê-la alcançar Nínive."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga por causa da misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Fuga por temor do mar"
+      },
+      {
+        "id": "c",
+        "text": "Fuga por ignorância de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso",
+    "feedbackCorrect": "Jonas foge porque sabe que Deus é clemente e misericordioso.",
+    "feedbackWrong": {
+      "b": "O motivo confessado é a misericórdia, não o mar.",
+      "c": "Ele foge justamente porque conhece o caráter de Deus."
+    },
+    "hint": "Veja o \"pois sabia\" na oração de Jonas.",
+    "learningObjective": "Ligar 4:2 à fuga motivada pela misericórdia.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-07",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+    "prompt": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+    "cue": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+    "verseRef": "Jonas 4:6",
+    "passageText": "E o Senhor Deus fez surgir uma planta, que subiu sobre a cabeça de Jonas, para lhe dar sombra e aliviar seu desconforto; e Jonas se alegrou imensamente por causa da planta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "uma planta"
+      },
+      {
+        "id": "b",
+        "text": "sombra"
+      },
+      {
+        "id": "c",
+        "text": "desconforto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E o Senhor Deus fez surgir uma planta",
+    "feedbackCorrect": "Deus faz surgir uma planta para sombra e alívio.",
+    "feedbackWrong": {
+      "b": "\"Sombra\" é o efeito da planta, não o que Deus fez surgir.",
+      "c": "\"Desconforto\" é o que a planta alivia, não o que surge."
+    },
+    "hint": "Leia o objeto de \"fez surgir\".",
+    "learningObjective": "Identificar a planta enviada por Deus.",
+    "evidence": [
+      "Jonas 4:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-sem-jnc-boss-1-08",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Jonas 2:10 na ordem do texto.",
+    "prompt": "Monte Jonas 2:10 na ordem do texto.",
+    "cue": "Monte Jonas 2:10 na ordem do texto.",
+    "verseRef": "Jonas 2:10",
+    "passageText": "Então o Senhor falou ao peixe, e ele vomitou a Jonas na terra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então o Senhor falou ao peixe"
+      },
+      {
+        "id": "b",
+        "text": "e ele vomitou a Jonas"
+      },
+      {
+        "id": "c",
+        "text": "na terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e ele vomitou a Jonas na terra",
+    "feedbackCorrect": "O Senhor fala; o peixe vomita Jonas na terra.",
+    "feedbackWrong": {
+      "default": "Comece pela fala do Senhor ao peixe."
+    },
+    "hint": "O versículo começa com \"Então\".",
+    "learningObjective": "Reconhecer a sequência de 2:10.",
+    "evidence": [
+      "Jonas 2:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-01",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Jonas 1:13, os homens abandonam Jonas de imediato, sem tentar remar de volta à terra.",
+    "prompt": "Em Jonas 1:13, os homens abandonam Jonas de imediato, sem tentar remar de volta à terra.",
+    "cue": "Em Jonas 1:13, os homens abandonam Jonas de imediato, sem tentar remar de volta à terra.",
+    "verseRef": "Jonas 1:13",
+    "passageText": "Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra, mas não conseguiam, pois o mar se tornava cada vez mais tempestuoso contra eles.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra",
+    "feedbackCorrect": "Eles remam com esforço; o \"porém\" marca a tentativa antes do lançamento.",
+    "feedbackWrong": {
+      "true": "Releia 1:13: eles remavam para voltar à terra."
+    },
+    "hint": "Veja o que os homens fazem apesar da tempestade.",
+    "learningObjective": "Compreender o contraste do esforço dos marinheiros.",
+    "evidence": [
+      "Jonas 1:13"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-02",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+    "prompt": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+    "cue": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+    "verseRef": "Jonas 1:13",
+    "passageText": "Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra, mas não conseguiam, pois o mar se tornava cada vez mais tempestuoso contra eles.",
+    "options": [
+      {
+        "id": "a",
+        "text": "navio"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "tempestuoso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os homens, porém, remavam",
+    "feedbackCorrect": "\"Porém\" mostra que, em vez de lançá-lo logo, remam.",
+    "feedbackWrong": {
+      "a": "\"Navio\" é o objeto do esforço, não o contraste.",
+      "c": "\"Tempestuoso\" descreve o mar, não o contraste."
+    },
+    "hint": "Procure a palavra curta após \"Os homens\".",
+    "learningObjective": "Reconhecer o marcador de contraste em 1:13.",
+    "evidence": [
+      "Jonas 1:13"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-03",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Jonas 3:10 se relaciona com a pregação de Jonas 3:4?",
+    "prompt": "Como Jonas 3:10 se relaciona com a pregação de Jonas 3:4?",
+    "cue": "Como Jonas 3:10 se relaciona com a pregação de Jonas 3:4?",
+    "verseRef": "Jonas 3:4",
+    "passageText": "Jonas começou a entrar na cidade, percorrendo um dia de caminho, e pregava: \"Ainda quarenta dias, e Nínive será subvertida.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas se alegra e celebra a misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Deus se arrepende do mal porque o povo se converte"
+      },
+      {
+        "id": "c",
+        "text": "A mensagem de quarenta dias é cancelada sem resposta"
+      },
+      {
+        "id": "d",
+        "text": "Deus destrói Nínive apesar do jejum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Ainda quarenta dias, e Nínive será subvertida",
+    "feedbackCorrect": "A ameaça de subversão encontra conversão; Deus não faz o mal anunciado.",
+    "feedbackWrong": {
+      "a": "Em 4:1 Jonas se irou, não se alegrou.",
+      "c": "Há resposta coletiva e mudança divina.",
+      "d": "3:10 diz que Deus se arrepende e não o faz."
+    },
+    "hint": "Compare o anúncio de 3:4 com o desfecho de 3:10.",
+    "learningObjective": "Relacionar pregação, conversão e arrependimento de Deus.",
+    "evidence": [
+      "Jonas 3:4",
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-04",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a etapa fuga e misericórdia em Jonas?",
+    "prompt": "Como avança a etapa fuga e misericórdia em Jonas?",
+    "cue": "Como avança a etapa fuga e misericórdia em Jonas?",
+    "verseRef": "Jonas 1:15",
+    "passageText": "E levantaram Jonas e o lançaram ao mar; e o mar se acalmou de sua fúria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga exposta e mar acalmado"
+      },
+      {
+        "id": "b",
+        "text": "Oração no peixe e salvação"
+      },
+      {
+        "id": "c",
+        "text": "Pregação, arrependimento e lição da planta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e o mar se acalmou de sua fúria",
+    "feedbackCorrect": "Do mar à oração, depois Nínive e a planta.",
+    "feedbackWrong": {
+      "default": "Comece pela fuga no mar; a planta fecha a etapa."
+    },
+    "hint": "Siga a ordem das cenas da etapa.",
+    "learningObjective": "Seguir o arco da etapa.",
+    "evidence": [
+      "Jonas 1:15"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-05",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Jonas 3:10, que verbo descreve a resposta de Deus ao ver a conversão de Nínive?",
+    "prompt": "Em Jonas 3:10, que verbo descreve a resposta de Deus ao ver a conversão de Nínive?",
+    "cue": "Em Jonas 3:10, que verbo descreve a resposta de Deus ao ver a conversão de Nínive?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "template": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se ___ do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "destruiu"
+      },
+      {
+        "id": "b",
+        "text": "arrependeu"
+      },
+      {
+        "id": "c",
+        "text": "esqueciu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+    "feedbackCorrect": "Deus se arrepende do mal anunciado e não o faz.",
+    "feedbackWrong": {
+      "a": "O texto diz que ele não fez o mal anunciado.",
+      "c": "Há arrependimento ativo, não esquecimento."
+    },
+    "hint": "Veja o que Deus fez após ver as obras deles.",
+    "learningObjective": "Lembrar a resposta divina à conversão.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-06",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Jonas 4:2 a Êxodo 34:6?",
+    "prompt": "O que liga Jonas 4:2 a Êxodo 34:6?",
+    "cue": "O que liga Jonas 4:2 a Êxodo 34:6?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "passageA": {
+      "ref": "Jonas 4:2",
+      "text": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal."
+    },
+    "passageB": {
+      "ref": "Êxodo 34:6",
+      "text": "E, passando o Senhor por diante dele, exclamou: \"O Senhor, o Senhor Deus é compassivo, clemente, longânime e grande em misericórdia e fidelidade;\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus só de juízo seco"
+      },
+      {
+        "id": "b",
+        "text": "Deus desconhecido de Jonas"
+      },
+      {
+        "id": "c",
+        "text": "Deus clemente e misericordioso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade",
+    "feedbackCorrect": "Jonas ecoa a revelação do Sinai: Deus clemente e misericordioso.",
+    "feedbackWrong": {
+      "a": "Os dois textos destacam clemência e misericórdia.",
+      "b": "Jonas confessa que já sabia desse caráter."
+    },
+    "hint": "Compare os atributos de Deus nos dois textos.",
+    "learningObjective": "Relacionar a confissão de Jonas a Êxodo 34:6.",
+    "evidence": [
+      "Jonas 4:2",
+      "Êxodo 34:6"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-07",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Jonas 4:2, toque a palavra que liga a fuga ao conhecimento do caráter de Deus.",
+    "prompt": "Em Jonas 4:2, toque a palavra que liga a fuga ao conhecimento do caráter de Deus.",
+    "cue": "Em Jonas 4:2, toque a palavra que liga a fuga ao conhecimento do caráter de Deus.",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "Társis"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "fugindo para Társis, pois sabia que Tu és Deus clemente",
+    "feedbackCorrect": "\"Pois\" liga a fuga ao que Jonas já sabia de Deus.",
+    "feedbackWrong": {
+      "a": "\"Palavra\" abre a oração; não marca a causa da fuga.",
+      "b": "\"Társis\" é o destino; a ligação causal vem depois."
+    },
+    "hint": "Procure a palavra antes de \"sabia\".",
+    "learningObjective": "Reconhecer o marcador causal em 4:2.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-cam-jnc-boss-1-08",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os movimentos após a pregação em Nínive?",
+    "prompt": "Como se encadeiam os movimentos após a pregação em Nínive?",
+    "cue": "Como se encadeiam os movimentos após a pregação em Nínive?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pregação e arrependimento de Nínive"
+      },
+      {
+        "id": "b",
+        "text": "Deus se arrepende do mal anunciado"
+      },
+      {
+        "id": "c",
+        "text": "Jonas se irou e recebe a lição da planta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+    "feedbackCorrect": "Conversão, misericórdia divina e então a ira de Jonas.",
+    "feedbackWrong": {
+      "default": "Comece pela resposta de Nínive; a planta fecha."
+    },
+    "hint": "A ira de Jonas vem depois da misericórdia de Deus.",
+    "learningObjective": "Relacionar Nínive, misericórdia e a planta.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-01",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Jonas 4:2 e 4:10, a etapa mostra que Jonas conhece a misericórdia de Deus e precisa aprender a mesma compaixão pela cidade.",
+    "prompt": "Em Jonas 4:2 e 4:10, a etapa mostra que Jonas conhece a misericórdia de Deus e precisa aprender a mesma compaixão pela cidade.",
+    "cue": "Em Jonas 4:2 e 4:10, a etapa mostra que Jonas conhece a misericórdia de Deus e precisa aprender a mesma compaixão pela cidade.",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pois sabia que Tu és Deus clemente, e misericordioso",
+    "feedbackCorrect": "Jonas sabe quem Deus é; a planta o confronta a ter compaixão.",
+    "feedbackWrong": {
+      "false": "Una 4:2 (ele sabia) com 4:10 (compaixão pela planta e pela cidade)."
+    },
+    "hint": "Compare o que Jonas sabia com a pergunta sobre a planta.",
+    "learningObjective": "Interpretar a etapa como lição de misericórdia.",
+    "evidence": [
+      "Jonas 4:2",
+      "Jonas 4:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-02",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jonas 4:10, toque o trecho que sustenta a lição sobre a cidade.",
+    "prompt": "Em Jonas 4:10, toque o trecho que sustenta a lição sobre a cidade.",
+    "cue": "Em Jonas 4:10, toque o trecho que sustenta a lição sobre a cidade.",
+    "verseRef": "Jonas 4:10",
+    "passageText": "E o Senhor disse: Você teve compaixão da planta que não lhe custou trabalho, nem a fez crescer, que em uma noite nasceu e em uma noite pereceu;",
+    "options": [
+      {
+        "id": "a",
+        "text": "compaixão"
+      },
+      {
+        "id": "b",
+        "text": "trabalho"
+      },
+      {
+        "id": "c",
+        "text": "noite"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Você teve compaixão da planta",
+    "feedbackCorrect": "\"Compaixão\" é o ponto: Jonas a teve pela planta; Deus a tem pela cidade.",
+    "feedbackWrong": {
+      "b": "\"Trabalho\" descreve o custo da planta, não a lição central.",
+      "c": "\"Noite\" marca o tempo da planta, não a lição."
+    },
+    "hint": "Procure o que Jonas teve em relação à planta.",
+    "learningObjective": "Sustentar com o texto a lição da compaixão.",
+    "evidence": [
+      "Jonas 4:10"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-03",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a etapa de Jonas sustenta sobre a misericórdia de Deus?",
+    "prompt": "Que leitura a etapa de Jonas sustenta sobre a misericórdia de Deus?",
+    "cue": "Que leitura a etapa de Jonas sustenta sobre a misericórdia de Deus?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas foge porque não conhece o caráter de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Deus é misericordioso e ensina Jonas a ter compaixão"
+      },
+      {
+        "id": "c",
+        "text": "A planta não ensina nada sobre a cidade"
+      },
+      {
+        "id": "d",
+        "text": "Nínive se salva sem qualquer arrependimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Tu és Deus clemente, e misericordioso",
+    "feedbackCorrect": "Do mar a Nínive e à planta, a misericórdia é maior que a fuga de Jonas.",
+    "feedbackWrong": {
+      "a": "4:2 mostra que ele foge porque conhece Deus.",
+      "c": "4:10 liga a planta à compaixão pela cidade.",
+      "d": "3:5–10 mostram fé, jejum e conversão."
+    },
+    "hint": "Una 4:2, 3:10 e 4:10.",
+    "learningObjective": "Escolher a interpretação do arco da etapa.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-04",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o sinal de Jonas e o arrependimento na Escritura?",
+    "prompt": "Qual sequência mostra o sinal de Jonas e o arrependimento na Escritura?",
+    "cue": "Qual sequência mostra o sinal de Jonas e o arrependimento na Escritura?",
+    "verseRef": "Jonas 2:1",
+    "passageText": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jonas ora do ventre do peixe"
+      },
+      {
+        "id": "b",
+        "text": "Jesus aponta o sinal de Jonas"
+      },
+      {
+        "id": "c",
+        "text": "Nínive é lembrada como exemplo de arrependimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+    "feedbackCorrect": "Do peixe ao sinal no evangelho e ao exemplo de Nínive.",
+    "feedbackWrong": {
+      "default": "Siga: Jonas 2, Mateus 12 e Lucas 11."
+    },
+    "hint": "Parta da oração no peixe.",
+    "learningObjective": "Ver Jonas e Nínive no fio bíblico.",
+    "evidence": [
+      "Jonas 2:1",
+      "Mateus 12:40",
+      "Lucas 11:32"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-05",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Jonas 4:2, que palavra nomeia o Deus que Jonas conhecia e temia ver perdoar Nínive?",
+    "prompt": "Em Jonas 4:2, que palavra nomeia o Deus que Jonas conhecia e temia ver perdoar Nínive?",
+    "cue": "Em Jonas 4:2, que palavra nomeia o Deus que Jonas conhecia e temia ver perdoar Nínive?",
+    "verseRef": "Jonas 4:2",
+    "passageText": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "template": "E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e ___, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericordioso"
+      },
+      {
+        "id": "b",
+        "text": "distante"
+      },
+      {
+        "id": "c",
+        "text": "injusto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu és Deus clemente, e misericordioso",
+    "feedbackCorrect": "Jonas confessa: Deus é clemente e misericordioso.",
+    "feedbackWrong": {
+      "b": "O texto não chama Deus de distante.",
+      "c": "Jonas afirma misericórdia, não injustiça."
+    },
+    "hint": "Veja o segundo atributo após \"clemente\".",
+    "learningObjective": "Lembrar o termo teológico da confissão de Jonas.",
+    "evidence": [
+      "Jonas 4:2"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-06",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Jonas 3:5 a Lucas 11:32?",
+    "prompt": "O que liga Jonas 3:5 a Lucas 11:32?",
+    "cue": "O que liga Jonas 3:5 a Lucas 11:32?",
+    "verseRef": "Jonas 3:5",
+    "passageText": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor.",
+    "passageA": {
+      "ref": "Jonas 3:5",
+      "text": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco, desde o maior até o menor."
+    },
+    "passageB": {
+      "ref": "Lucas 11:32",
+      "text": "Os homens de Nínive se levantarão no juízo com esta geração e a condenarão, pois se arrependeram com a pregação de Jonas; e eis que aqui está quem é maior do que Jonas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive ignorou a mensagem"
+      },
+      {
+        "id": "b",
+        "text": "Nínive se arrependeu"
+      },
+      {
+        "id": "c",
+        "text": "Só Jonas se arrependeu"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+    "feedbackCorrect": "Jesus aponta Nínive como povo que se arrependeu diante da pregação.",
+    "feedbackWrong": {
+      "a": "Os dois textos afirmam resposta de arrependimento.",
+      "c": "O foco é a cidade que creu e se arrependeu."
+    },
+    "hint": "Compare a resposta de Nínive nos dois textos.",
+    "learningObjective": "Ligar o arrependimento de Nínive a Lucas 11:32.",
+    "evidence": [
+      "Jonas 3:5",
+      "Lucas 11:32"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-07",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Jonas 2:9, toque o trecho que sustenta de quem vem a salvação.",
+    "prompt": "Em Jonas 2:9, toque o trecho que sustenta de quem vem a salvação.",
+    "cue": "Em Jonas 2:9, toque o trecho que sustenta de quem vem a salvação.",
+    "verseRef": "Jonas 2:9",
+    "passageText": "Mas eu te oferecerei um sacrifício de gratidão; cumprirei o que prometi. Ao SENHOR pertence a salvação!",
+    "options": [
+      {
+        "id": "a",
+        "text": "gratidão"
+      },
+      {
+        "id": "b",
+        "text": "sacrifício"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Ao SENHOR pertence a salvação!",
+    "feedbackCorrect": "\"Salvação\" é o que pertence ao Senhor, não ao esforço de Jonas.",
+    "feedbackWrong": {
+      "a": "\"Gratidão\" descreve o tipo de sacrifício, não a origem da salvação.",
+      "b": "\"Sacrifício\" é a oferta de Jonas; a salvação é do Senhor."
+    },
+    "hint": "Leia a última frase do versículo.",
+    "learningObjective": "Sustentar com o texto a origem da salvação.",
+    "evidence": [
+      "Jonas 2:9"
+    ]
+  },
+  {
+    "id": "jonas-cap-pro-jnc-boss-1-08",
+    "trail": "jonas-cap",
+    "section": "jnc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência resume o chamado da etapa de Jonas?",
+    "prompt": "Qual sequência resume o chamado da etapa de Jonas?",
+    "cue": "Qual sequência resume o chamado da etapa de Jonas?",
+    "verseRef": "Jonas 3:10",
+    "passageText": "E Deus viu as obras deles, como se converteram de seu mau caminho; e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar a fuga e a tempestade por causa própria"
+      },
+      {
+        "id": "b",
+        "text": "Receber salvação e anunciar a mensagem"
+      },
+      {
+        "id": "c",
+        "text": "Aprender a misericórdia que Deus tem pela cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+    "feedbackCorrect": "Da fuga à salvação, até a lição de misericórdia.",
+    "feedbackWrong": {
+      "default": "Comece pela fuga; a misericórdia fecha."
+    },
+    "hint": "Siga o arco: fuga, salvação, misericórdia.",
+    "learningObjective": "Encadear as respostas da etapa.",
+    "evidence": [
+      "Jonas 3:10"
+    ]
+  }
+]

@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "2 Reis 11:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 11:1–12"
+      }
+    ],
+    "context": "Atalia tenta apagar a linhagem real. Jeoseba esconde Joás no templo; no sétimo ano, Joiada o unge rei.",
+    "keyword": "escondido",
+    "keywordGloss": "Joás permanece escondido na Casa do Senhor enquanto Atalia governa.",
+    "focusQuestion": "Onde você confia que o Senhor guarda a promessa quando tudo parece perdido?",
+    "reflectionPrompts": [
+      "Linhagem ameaçada",
+      "Escondido no templo",
+      "Viva o rei"
+    ],
+    "facts": [
+      {
+        "text": "Atalia extermina toda a linhagem real.",
+        "evidenceRef": "2 Reis 11:1",
+        "evidenceSpan": "exterminou toda a linhagem real"
+      },
+      {
+        "text": "Jeoseba furta Joás e o esconde de Atalia.",
+        "evidenceRef": "2 Reis 11:2",
+        "evidenceSpan": "escondendo-o de Atalia, para que não fosse morto"
+      },
+      {
+        "text": "Joás fica escondido na Casa do Senhor durante seis anos.",
+        "evidenceRef": "2 Reis 11:3",
+        "evidenceSpan": "permaneceu escondido na Casa do Senhor durante seis anos"
+      },
+      {
+        "text": "Joiada mostra o filho do rei aos capitães e faz aliança.",
+        "evidenceRef": "2 Reis 11:4",
+        "evidenceSpan": "fez com eles uma aliança e os comprometeu na Casa do SENHOR, mostrando-lhes o filho do rei"
+      },
+      {
+        "text": "O sacerdote entrega lanças e escudos do rei Davi.",
+        "evidenceRef": "2 Reis 11:10",
+        "evidenceSpan": "as lanças e os escudos que eram do rei Davi"
+      },
+      {
+        "text": "Joás recebe coroa e Livro do Testemunho; gritam viva ao rei.",
+        "evidenceRef": "2 Reis 11:12",
+        "evidenceSpan": "pôs-lhe a coroa e entregou-lhe o Livro do Testemunho"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "escondido",
+        "gloss": "Joás permanece oculto na Casa do Senhor por seis anos."
+      },
+      {
+        "term": "aliança",
+        "gloss": "Joiada compromete a guarda em torno do filho do rei."
+      },
+      {
+        "term": "coroa",
+        "gloss": "Sinal da unção pública de Joás como rei."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Atalia mata a linhagem real",
+        "evidenceRef": "2 Reis 11:1"
+      },
+      {
+        "label": "Jeoseba esconde Joás no templo",
+        "evidenceRef": "2 Reis 11:2–3"
+      },
+      {
+        "label": "Joiada alia a guarda ao filho do rei",
+        "evidenceRef": "2 Reis 11:4–11"
+      },
+      {
+        "label": "Joás é ungido e proclamado rei",
+        "evidenceRef": "2 Reis 11:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Atalia extermina a linhagem; porém Jeoseba salva Joás.",
+        "marker": "Mas",
+        "evidenceRef": "2 Reis 11:2"
+      },
+      {
+        "kind": "propósito",
+        "text": "Jeoseba esconde Joás para que não fosse morto.",
+        "marker": "para que",
+        "evidenceRef": "2 Reis 11:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "No sétimo ano, Joiada revela o filho do rei e o unge.",
+        "marker": "Então",
+        "evidenceRef": "2 Reis 11:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 7:16",
+        "bridge": "Trono de Davi para sempre"
+      },
+      {
+        "ref": "Salmos 132:17",
+        "bridge": "Lâmpada para o ungido"
+      },
+      {
+        "ref": "2 Crônicas 23:11",
+        "bridge": "Mesma unção de Joás"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Atalia consegue apagar por completo a casa de Davi.",
+        "why": "Jeoseba esconde Joás; a linhagem sobrevive no templo."
+      },
+      {
+        "text": "Joás é escondido no palácio sob a proteção de Atalia.",
+        "why": "Ele fica na Casa do Senhor, escondido de Atalia."
+      },
+      {
+        "text": "A unção acontece sem livro nem testemunho da Lei.",
+        "why": "Entregam-lhe a coroa e o Livro do Testemunho."
+      }
+    ],
+    "anchorQuestion": "Onde Joás permaneceu escondido durante seis anos?",
+    "centralInsight": "O Senhor guarda a lâmpada de Davi: o menino é ungido enquanto Atalia grita traição."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 11:3, Joás permaneceu escondido na Casa do Senhor durante seis anos.",
+      "verseRef": "2 Reis 11:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "permaneceu escondido na Casa do Senhor durante seis anos",
+      "feedbackCorrect": "Seis anos no templo, sob Atalia.",
+      "feedbackWrong": {
+        "false": "O verso 3 localiza Joás na Casa do Senhor por seis anos."
+      },
+      "hint": "Onde ele fica escondido?",
+      "learningObjective": "Observar o esconderijo de Joás.",
+      "evidence": [
+        "2 Reis 11:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 11:2, toque quem furtou Joás dentre os filhos do rei.",
+      "verseRef": "2 Reis 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeoseba"
+        },
+        {
+          "id": "b",
+          "text": "Atalia"
+        },
+        {
+          "id": "c",
+          "text": "Acazias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas Jeoseba, filha do rei Jorão e irmã de Acazias, tomou Joás",
+      "feedbackCorrect": "Jeoseba salva o menino.",
+      "feedbackWrong": {
+        "b": "Atalia é quem mata, não quem salva.",
+        "c": "Acazias já morrera; Joás é seu filho."
+      },
+      "hint": "Quem age depois do Mas?",
+      "learningObjective": "Identificar Jeoseba.",
+      "evidence": [
+        "2 Reis 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 11:12, o que entregam a Joás junto com a coroa?",
+      "verseRef": "2 Reis 11:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Livro do Testemunho"
+        },
+        {
+          "id": "b",
+          "text": "O trono de Atalia"
+        },
+        {
+          "id": "c",
+          "text": "As chaves de Samaria"
+        },
+        {
+          "id": "d",
+          "text": "O vaso de azeite de Eliseu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pôs-lhe a coroa e entregou-lhe o Livro do Testemunho",
+      "feedbackCorrect": "Coroa e Livro do Testemunho juntos.",
+      "feedbackWrong": {
+        "b": "Não entregam o trono de Atalia.",
+        "c": "Samaria não entra nesta cena.",
+        "d": "O texto fala do Livro do Testemunho."
+      },
+      "hint": "O que acompanha a coroa?",
+      "learningObjective": "Observar a entrega do Testemunho.",
+      "evidence": [
+        "2 Reis 11:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 11:12 na ordem do texto.",
+      "verseRef": "2 Reis 11:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "pôs-lhe a coroa e entregou-lhe o Livro do Testemunho"
+        },
+        {
+          "id": "b",
+          "text": "e o proclamaram rei, ungiram-no"
+        },
+        {
+          "id": "c",
+          "text": "bateram palmas e gritaram: Viva o rei!"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "gritaram: Viva o rei!",
+      "feedbackCorrect": "Coroa, unção e aclamação.",
+      "feedbackWrong": {
+        "default": "Comece pela coroa e pelo Livro."
+      },
+      "hint": "O que vem antes do viva?",
+      "learningObjective": "Seguir a ordem da unção.",
+      "evidence": [
+        "2 Reis 11:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 11:3, complete. ele permaneceu ___ na Casa do Senhor.",
+      "verseRef": "2 Reis 11:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "escondido"
+        },
+        {
+          "id": "b",
+          "text": "exposto"
+        },
+        {
+          "id": "c",
+          "text": "cativo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneceu escondido na Casa do Senhor durante seis anos",
+      "feedbackCorrect": "Escondido. A palavra da preservação.",
+      "feedbackWrong": {
+        "b": "Não está exposto; está escondido.",
+        "c": "O texto diz escondido, não cativo."
+      },
+      "hint": "Como ele permanece no templo?",
+      "learningObjective": "Lembrar a palavra escondido.",
+      "evidence": [
+        "2 Reis 11:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 11:2 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 11:2",
+      "passageA": {
+        "ref": "2 Reis 11:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A linhagem real é salva quando Jeoseba esconde Joás de Atalia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Preservação do filho do rei"
+        },
+        {
+          "id": "b",
+          "text": "Vitória total de Atalia"
+        },
+        {
+          "id": "c",
+          "text": "Fuga de Joás para Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "escondendo-o de Atalia, para que não fosse morto",
+      "feedbackCorrect": "O menino é preservado, não apagado.",
+      "feedbackWrong": {
+        "b": "Atalia não alcança Joás.",
+        "c": "Ele fica no templo, não no Egito."
+      },
+      "hint": "O que Jeoseba faz com Joás?",
+      "learningObjective": "Ligar o verso à preservação.",
+      "evidence": [
+        "2 Reis 11:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 11:2, Jeoseba esconde Joás para que ele não fosse morto.",
+      "verseRef": "2 Reis 11:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "escondendo-o de Atalia, para que não fosse morto",
+      "feedbackCorrect": "O para que marca o propósito da fuga.",
+      "feedbackWrong": {
+        "false": "Leia o para que no fim do verso."
+      },
+      "hint": "Qual a finalidade de esconder?",
+      "learningObjective": "Compreender o propósito de Jeoseba.",
+      "evidence": [
+        "2 Reis 11:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 11:2, toque o marcador de propósito.",
+      "verseRef": "2 Reis 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "Jeoseba"
+        },
+        {
+          "id": "c",
+          "text": "câmara interior"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que não fosse morto",
+      "feedbackCorrect": "Para que introduz a finalidade.",
+      "feedbackWrong": {
+        "b": "Jeoseba é quem age.",
+        "c": "A câmara é o lugar, não o propósito."
+      },
+      "hint": "Procure a finalidade no fim.",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "2 Reis 11:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 11:2 se relaciona com 2 Reis 11:1?",
+      "verseRef": "2 Reis 11:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contra o extermínio, Jeoseba salva Joás"
+        },
+        {
+          "id": "b",
+          "text": "Jeoseba ajuda Atalia a matar a linhagem"
+        },
+        {
+          "id": "c",
+          "text": "Atalia esconde Joás para adotá-lo"
+        },
+        {
+          "id": "d",
+          "text": "O texto mostra que ninguém escapou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas Jeoseba, filha do rei Jorão e irmã de Acazias, tomou Joás",
+      "feedbackCorrect": "O Mas vira a cena do extermínio à preservação.",
+      "feedbackWrong": {
+        "b": "Jeoseba age contra Atalia, não com ela.",
+        "c": "Atalia é de quem se esconde.",
+        "d": "Joás escapa; a linhagem não acaba."
+      },
+      "hint": "Repare no Mas do verso 2.",
+      "learningObjective": "Relacionar extermínio e salvamento.",
+      "evidence": [
+        "2 Reis 11:1–2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da preservação de Joás.",
+      "verseRef": "2 Reis 11:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atalia mata a linhagem real"
+        },
+        {
+          "id": "b",
+          "text": "Jeoseba esconde Joás no templo"
+        },
+        {
+          "id": "c",
+          "text": "Joás é ungido e proclamado rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "exterminou toda a linhagem real",
+      "feedbackCorrect": "Ameaça, esconderijo e unção.",
+      "feedbackWrong": {
+        "default": "Comece pelo extermínio de Atalia."
+      },
+      "hint": "O que abre a crise?",
+      "learningObjective": "Ordenar a estrutura da cena.",
+      "evidence": [
+        "2 Reis 11:1",
+        "2 Reis 11:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 11:4, complete. fez com eles uma ___.",
+      "verseRef": "2 Reis 11:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "festa"
+        },
+        {
+          "id": "c",
+          "text": "guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez com eles uma aliança e os comprometeu na Casa do SENHOR",
+      "feedbackCorrect": "Aliança amarra a guarda ao filho do rei.",
+      "feedbackWrong": {
+        "b": "Não é festa; é aliança.",
+        "c": "O texto diz aliança, não guerra."
+      },
+      "hint": "O que Joiada faz com os capitães?",
+      "learningObjective": "Lembrar a palavra aliança.",
+      "evidence": [
+        "2 Reis 11:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 11:12 a 2 Crônicas 23:11?",
+      "verseRef": "2 Reis 11:12",
+      "passageA": {
+        "ref": "2 Reis 11:12"
+      },
+      "passageB": {
+        "ref": "2 Crônicas 23:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesma unção de Joás"
+        },
+        {
+          "id": "b",
+          "text": "Coroação de Atalia"
+        },
+        {
+          "id": "c",
+          "text": "Fuga do filho do rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o proclamaram rei, ungiram-no",
+      "feedbackCorrect": "Crônicas ecoa a mesma unção com coroa e Testemunho.",
+      "feedbackWrong": {
+        "b": "Quem é ungido é Joás, não Atalia.",
+        "c": "Os textos mostram proclamação, não fuga."
+      },
+      "hint": "Compare a cena da coroação.",
+      "learningObjective": "Ligar as duas narrações da unção.",
+      "evidence": [
+        "2 Reis 11:12",
+        "2 Crônicas 23:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 11:1–3, Atalia consegue apagar por completo a linhagem real de Judá.",
+      "verseRef": "2 Reis 11:2–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "escondendo-o de Atalia, para que não fosse morto",
+      "feedbackCorrect": "Joás sobrevive escondido; a linhagem não acaba.",
+      "feedbackWrong": {
+        "true": "Jeoseba esconde Joás; o extermínio não é total."
+      },
+      "hint": "Alguém escapa ao extermínio?",
+      "learningObjective": "Corrigir a leitura do fim da linhagem.",
+      "evidence": [
+        "2 Reis 11:2–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 11:12, toque o trecho que mostra a unção pública.",
+      "verseRef": "2 Reis 11:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "ungiram-no"
+        },
+        {
+          "id": "b",
+          "text": "bateram palmas"
+        },
+        {
+          "id": "c",
+          "text": "filho do rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o proclamaram rei, ungiram-no",
+      "feedbackCorrect": "Ungiram-no. O ato que confirma o rei.",
+      "feedbackWrong": {
+        "b": "As palmas acompanham; o ato é ungiram-no.",
+        "c": "Filho do rei o identifica; a unção o confirma."
+      },
+      "hint": "Qual verbo confirma o rei?",
+      "learningObjective": "Sustentar a unção no texto.",
+      "evidence": [
+        "2 Reis 11:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 11:1–3 sustenta sobre a casa de Davi?",
+      "verseRef": "2 Reis 11:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor preserva o menino quando a linhagem é atacada"
+        },
+        {
+          "id": "b",
+          "text": "Atalia apaga por completo a casa de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Joás é guardado no palácio sob Atalia"
+        },
+        {
+          "id": "d",
+          "text": "A unção ocorre sem o Livro do Testemunho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneceu escondido na Casa do Senhor durante seis anos",
+      "feedbackCorrect": "O esconderijo no templo preserva a linhagem.",
+      "feedbackWrong": {
+        "b": "Joás sobrevive; a linhagem não some.",
+        "c": "Ele fica na Casa do Senhor, longe de Atalia.",
+        "d": "O verso 12 entrega o Livro do Testemunho."
+      },
+      "hint": "Onde o menino permanece?",
+      "learningObjective": "Escolher a leitura da preservação.",
+      "evidence": [
+        "2 Reis 11:2–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a lâmpada de Davi nesta história?",
+      "verseRef": "2 Reis 11:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus promete firmar o trono de Davi"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor prepara lâmpada para o ungido"
+        },
+        {
+          "id": "c",
+          "text": "Joás recebe a coroa e é proclamado rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pôs-lhe a coroa e entregou-lhe o Livro do Testemunho",
+      "feedbackCorrect": "Promessa, lâmpada e cumprimento em Joás.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa a Davi."
+      },
+      "hint": "Siga 2 Samuel, Salmos e 2 Reis.",
+      "learningObjective": "Ver a preservação da casa de Davi.",
+      "evidence": [
+        "2 Samuel 7:16",
+        "Salmos 132:17",
+        "2 Reis 11:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 11:12, complete. pôs-lhe a ___ e entregou-lhe o Livro.",
+      "verseRef": "2 Reis 11:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "coroa"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "capa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pôs-lhe a coroa e entregou-lhe o Livro do Testemunho",
+      "feedbackCorrect": "A coroa marca o rei ungido.",
+      "feedbackWrong": {
+        "b": "Não é espada; é coroa.",
+        "c": "Não é capa; é coroa."
+      },
+      "hint": "O que põem sobre ele?",
+      "learningObjective": "Lembrar o termo coroa.",
+      "evidence": [
+        "2 Reis 11:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 11:12 a Salmos 132:17?",
+      "verseRef": "2 Reis 11:12",
+      "passageA": {
+        "ref": "2 Reis 11:12"
+      },
+      "passageB": {
+        "ref": "Salmos 132:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâmpada para o ungido"
+        },
+        {
+          "id": "b",
+          "text": "Fim da casa de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Trono entregue a Atalia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o proclamaram rei, ungiram-no",
+      "feedbackCorrect": "A lâmpada do ungido brilha de novo em Joás.",
+      "feedbackWrong": {
+        "b": "A unção mostra continuidade, não fim.",
+        "c": "Quem reina é Joás, não Atalia."
+      },
+      "hint": "O que o Salmo diz do ungido?",
+      "learningObjective": "Ligar a unção à lâmpada de Davi.",
+      "evidence": [
+        "2 Reis 11:12",
+        "Salmos 132:17"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 33:1–6",
+    "passages": [
+      {
+        "ref": "Gênesis 33:1–6"
+      },
+      {
+        "ref": "Gênesis 33:7–11"
+      }
+    ],
+    "context": "Jacó se curva diante de Esaú; Esaú corre, abraça e chora.",
+    "keyword": "senhor",
+    "keywordGloss": "Palavra que carrega o sentido desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "O abraço de Esaú",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Jacó levantou olhos viu esaú aproximava.",
+        "evidenceRef": "Gênesis 33:1",
+        "evidenceSpan": "Jacó levantou os olhos e viu que Esaú"
+      },
+      {
+        "text": "Colocou servas filhos frente lia filhos.",
+        "evidenceRef": "Gênesis 33:2",
+        "evidenceSpan": "E colocou as servas e seus filhos à"
+      },
+      {
+        "text": "Mesmo avançando frente prostrou-se chão sete.",
+        "evidenceRef": "Gênesis 33:3",
+        "evidenceSpan": "prostrou-se até o chão sete vezes"
+      },
+      {
+        "text": "Esaú correu encontro abraçou-o lançou-se pescoço.",
+        "evidenceRef": "Gênesis 33:4",
+        "evidenceSpan": "lançou-se ao seu pescoço e o beijou"
+      },
+      {
+        "text": "Levantou olhos viu mulheres filhos perguntou.",
+        "evidenceRef": "Gênesis 33:5",
+        "evidenceSpan": "olhos e viu as mulheres e os filhos"
+      },
+      {
+        "text": "Aproximaram servas filhos prostraram.",
+        "evidenceRef": "Gênesis 33:6",
+        "evidenceSpan": "se aproximaram as servas com seus filhos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "senhor",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "Jacó",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jacó levantou olhos viu esaú",
+        "evidenceRef": "Gênesis 33:1"
+      },
+      {
+        "label": "Colocou servas filhos frente lia",
+        "evidenceRef": "Gênesis 33:2"
+      },
+      {
+        "label": "Mesmo avançando frente prostrou-se chão",
+        "evidenceRef": "Gênesis 33:3"
+      },
+      {
+        "label": "Esaú correu encontro abraçou-o lançou-se",
+        "evidenceRef": "Gênesis 33:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 33:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 33:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 33:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 32:28",
+        "bridge": "Nome Israel"
+      },
+      {
+        "ref": "Gênesis 28:15",
+        "bridge": "Eu estou contigo"
+      },
+      {
+        "ref": "Gênesis 26:3",
+        "bridge": "Promessa a Isaque"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "O encontro temido vira abraço: Jacó vê o rosto de Esaú como quem vê o de Deus."
+      }
+    ],
+    "centralInsight": "O encontro temido vira abraço: Jacó vê o rosto de Esaú como quem vê o de Deus.",
+    "anchorQuestion": "O que Gênesis 33:1 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 33:1, jacó levantou os olhos e viu que Esaú.",
+      "verseRef": "Gênesis 33:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Jacó levantou os olhos e viu que Esaú",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 33:1 afirma.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 33:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 33:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jacó"
+        },
+        {
+          "id": "b",
+          "text": "levantou"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jacó",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 33:3, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 33:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há mesmo avançando frente prostrou-se no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 33:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 33:1 na ordem do texto.",
+      "verseRef": "Gênesis 33:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Jacó levantou"
+        },
+        {
+          "id": "b",
+          "text": "os olhos"
+        },
+        {
+          "id": "c",
+          "text": "e viu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Jacó levantou",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 33:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 33:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantou"
+        },
+        {
+          "id": "b",
+          "text": "Jacó"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantou",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 33:1 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 33:1",
+      "passageA": {
+        "ref": "Gênesis 33:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jacó se curva diante de Esaú; Esaú corre, abraça e chora."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 33:1, o texto trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Gênesis 33:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 33:1 afirma.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 33:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 33:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Jacó"
+        },
+        {
+          "id": "c",
+          "text": "levantou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 33:4, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 33:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 33:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 33:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jacó levantou olhos viu esaú"
+        },
+        {
+          "id": "b",
+          "text": "Colocou servas filhos frente lia"
+        },
+        {
+          "id": "c",
+          "text": "Mesmo avançando frente prostrou-se chão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 33:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 33:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "mesmo"
+        },
+        {
+          "id": "b",
+          "text": "Jacó"
+        },
+        {
+          "id": "c",
+          "text": "levantou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mesmo",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 33:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 33:1 a Gênesis 32:28.",
+      "verseRef": "Gênesis 33:1",
+      "passageA": {
+        "ref": "Gênesis 33:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 32:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nome Israel"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 33:1",
+        "Gênesis 32:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 33:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "Receba",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 33:11 afirma.",
+      "evidence": [
+        "Gênesis 33:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 33:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 33:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "olhos"
+        },
+        {
+          "id": "b",
+          "text": "Levantou"
+        },
+        {
+          "id": "c",
+          "text": "viu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "olhos",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 33:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 33:5, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 33:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levantou os olhos e",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 33:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 33:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 33:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 33:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 33:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "Jacó"
+        },
+        {
+          "id": "c",
+          "text": "levantou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 33:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 33:1 a Gênesis 28:15.",
+      "verseRef": "Gênesis 33:1",
+      "passageA": {
+        "ref": "Gênesis 33:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 28:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu estou contigo"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 33:1",
+        "Gênesis 28:15"
+      ]
+    }
+  ]
+}

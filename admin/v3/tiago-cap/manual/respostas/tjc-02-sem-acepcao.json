@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Tiago 2:1–6",
+    "passages": [
+      { "ref": "Tiago 2:1–6" },
+      { "ref": "Tiago 2:7–9" }
+    ],
+    "context": "A igreja se reúne e entram um homem rico e um pobre. Tiago mostra como o tratamento dado a cada um revela se a fé em Cristo está sendo vivida ou apenas declarada.",
+    "keyword": "acepção de pessoas",
+    "keywordGloss": "Tratar alguém melhor ou pior por posição, riqueza ou aparência.",
+    "focusQuestion": "Quem você costuma receber melhor ou pior, sem perceber, por causa da aparência?",
+    "reflectionPrompts": [
+      "Fé sem acepção",
+      "Deus escolhe os pobres",
+      "A lei real do amor"
+    ],
+    "facts": [
+      {
+        "text": "Tiago diz que a fé em Cristo não convive com acepção de pessoas.",
+        "evidenceRef": "Tiago 2:1",
+        "evidenceSpan": "sem fazer acepção de pessoas"
+      },
+      {
+        "text": "Entram na reunião um homem com anéis de ouro e um pobre com roupas esfarrapadas.",
+        "evidenceRef": "Tiago 2:2",
+        "evidenceSpan": "algum homem com anéis de ouro e vestes luxuosas"
+      },
+      {
+        "text": "O rico recebe um lugar de honra; o pobre, que fique em pé.",
+        "evidenceRef": "Tiago 2:3",
+        "evidenceSpan": "Senta-te aqui em um lugar de honra"
+      },
+      {
+        "text": "Deus escolheu os pobres deste mundo para serem ricos na fé e herdeiros do reino.",
+        "evidenceRef": "Tiago 2:5",
+        "evidenceSpan": "escolheu os pobres deste mundo para que se tornem ricos na fé"
+      },
+      {
+        "text": "Os ricos oprimem os irmãos e os arrastam para os tribunais.",
+        "evidenceRef": "Tiago 2:6",
+        "evidenceSpan": "vos arrastam para os tribunais"
+      },
+      {
+        "text": "Amar o próximo como a si mesmo é a lei real da Escritura.",
+        "evidenceRef": "Tiago 2:8",
+        "evidenceSpan": "Amarás o teu próximo como a ti mesmo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "acepção",
+        "gloss": "Preferência por alguém por sua posição, e não por quem a pessoa é."
+      },
+      {
+        "term": "juízes",
+        "gloss": "Quem separa as pessoas por aparência age como juiz, com critérios maus."
+      },
+      {
+        "term": "lei real",
+        "gloss": "A lei do Reino: amar o próximo como a si mesmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A fé em Cristo não admite acepção",
+        "evidenceRef": "Tiago 2:1"
+      },
+      {
+        "label": "Na reunião, o rico é honrado e o pobre, rebaixado",
+        "evidenceRef": "Tiago 2:2–4"
+      },
+      {
+        "label": "Deus escolheu os pobres, mas eles foram menosprezados",
+        "evidenceRef": "Tiago 2:5–7"
+      },
+      {
+        "label": "A lei real do amor decide o que é pecado",
+        "evidenceRef": "Tiago 2:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Deus escolheu os pobres para que sejam ricos na fé e herdeiros do reino.",
+        "marker": "para que",
+        "evidenceRef": "Tiago 2:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deus honrou os pobres, mas os irmãos menosprezaram o pobre.",
+        "marker": "Entretanto",
+        "evidenceRef": "Tiago 2:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Observar a lei real é fazer bem; fazer acepção de pessoas é pecado.",
+        "marker": "porém",
+        "evidenceRef": "Tiago 2:8"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Levítico 19:18", "bridge": "A origem da lei do amor" },
+      { "ref": "Lucas 6:20", "bridge": "O reino pertence aos pobres" },
+      { "ref": "Atos 10:34", "bridge": "Deus não faz acepção" }
+    ],
+    "misreadings": [
+      {
+        "text": "Tiago proíbe receber bem os visitantes ricos.",
+        "why": "O erro é dar honra ao rico e rebaixar o pobre (2:3), e não receber alguém bem."
+      },
+      {
+        "text": "Deus ama só os pobres e rejeita todos os ricos.",
+        "why": "O texto condena o menosprezo e a acepção (2:6, 2:9), e não diz que Deus rejeita os ricos."
+      },
+      {
+        "text": "Fazer acepção de pessoas é só falta de educação.",
+        "why": "Tiago chama a acepção de pecado e diz que a lei acusa como transgressores (2:9)."
+      }
+    ],
+    "centralInsight": "Fazer acepção de pessoas é pecado; a lei real é amar o próximo como a si mesmo.",
+    "anchorQuestion": "Segundo Tiago 2:8, que mandamento da Escritura é chamado de lei real?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Tiago 2:2, entram na reunião um homem com anéis de ouro e um pobre com roupas esfarrapadas.",
+      "verseRef": "Tiago 2:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "um pobre com roupas esfarrapadas",
+      "feedbackCorrect": "Tiago monta a cena com dois visitantes: um homem rico e um pobre.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: entram os dois, o homem com anéis de ouro e o pobre."
+      },
+      "hint": "Veja quem entra no encontro e como cada um está vestido.",
+      "learningObjective": "Observar quem entra na reunião.",
+      "evidence": ["Tiago 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Tiago 2:3, toque o lugar oferecido ao homem que veste roupas luxuosas.",
+      "verseRef": "Tiago 2:3",
+      "options": [
+        { "id": "a", "text": "lugar de honra" },
+        { "id": "b", "text": "em pé" },
+        { "id": "c", "text": "estrado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senta-te aqui em um lugar de honra",
+      "feedbackCorrect": "O rico ouve: \"Senta-te aqui em um lugar de honra\".",
+      "feedbackWrong": {
+        "b": "Ficar em pé é o que se diz ao pobre, e não ao rico.",
+        "c": "O estrado dos pés é o lugar sugerido ao pobre."
+      },
+      "hint": "Procure o convite feito a quem veste roupas luxuosas.",
+      "learningObjective": "Identificar o lugar dado ao rico.",
+      "evidence": ["Tiago 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Tiago 2:5, quem Deus escolheu para serem ricos na fé?",
+      "verseRef": "Tiago 2:5",
+      "options": [
+        { "id": "a", "text": "Os pobres deste mundo" },
+        { "id": "b", "text": "Os ricos da reunião" },
+        { "id": "c", "text": "Os juízes da cidade" },
+        { "id": "d", "text": "Os que usam anéis de ouro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus não escolheu os pobres deste mundo",
+      "feedbackCorrect": "Deus escolheu os pobres deste mundo para serem ricos na fé.",
+      "feedbackWrong": {
+        "b": "A escolha de Deus recai sobre os pobres, e não sobre os ricos.",
+        "c": "Os juízes aparecem em 2:4 como quem distingue, e não como escolhidos.",
+        "d": "Os anéis de ouro descrevem o visitante rico de 2:2, não os escolhidos."
+      },
+      "hint": "Veja o objeto do verbo escolher na pergunta de Tiago.",
+      "learningObjective": "Reconhecer quem Deus escolheu, segundo Tiago.",
+      "evidence": ["Tiago 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o começo de Tiago 2:5 na ordem do texto.",
+      "verseRef": "Tiago 2:5",
+      "options": [
+        { "id": "a", "text": "Meus amados irmãos, ouvi" },
+        { "id": "b", "text": "acaso Deus não escolheu os pobres deste mundo" },
+        { "id": "c", "text": "para que se tornem ricos na fé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé",
+      "feedbackCorrect": "Tiago chama a atenção, pergunta quem Deus escolheu e diz para quê.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado aos irmãos; o fim da escolha vem por último."
+      },
+      "hint": "O versículo abre com um chamado e fecha com o fim da escolha.",
+      "learningObjective": "Seguir a ordem do texto sobre a escolha de Deus.",
+      "evidence": ["Tiago 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Tiago 2:8, que lei os irmãos devem observar, conforme a Escritura?",
+      "verseRef": "Tiago 2:8",
+      "options": [
+        { "id": "a", "text": "real" },
+        { "id": "b", "text": "antiga" },
+        { "id": "c", "text": "nova" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "observando a lei real",
+      "feedbackCorrect": "O texto chama de lei real o mandamento de amar o próximo.",
+      "feedbackWrong": {
+        "b": "O texto não usa esse nome: fala da lei que a Escritura cita.",
+        "c": "Tiago não fala de uma lei nova, mas da lei que a Escritura já ensina."
+      },
+      "hint": "Veja o adjetivo que acompanha a palavra lei.",
+      "learningObjective": "Lembrar o nome que Tiago dá à lei do amor.",
+      "evidence": ["Tiago 2:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Tiago 2:1 comunica que se liga a este contexto?",
+      "verseRef": "Tiago 2:1",
+      "passageA": { "ref": "Tiago 2:1" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A reunião dos irmãos recebe visitantes ricos e pobres, e o tratamento dado a cada um revela a fé."
+      },
+      "options": [
+        { "id": "a", "text": "Fé sem acepção de pessoas" },
+        { "id": "b", "text": "Honra só a quem tem posses" },
+        { "id": "c", "text": "Atenção só aos mais velhos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem fazer acepção de pessoas",
+      "feedbackCorrect": "Tiago liga a fé em Cristo ao modo de tratar todos, sem acepção.",
+      "feedbackWrong": {
+        "b": "Honrar só quem tem posses é justamente o que Tiago condena.",
+        "c": "O texto fala de ricos e pobres, e não de idade."
+      },
+      "hint": "Veja como o versículo termina a ordem sobre a fé.",
+      "learningObjective": "Ligar o contexto da reunião à ordem de Tiago 2:1.",
+      "evidence": ["Tiago 2:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Tiago 2:5, Deus escolheu os ricos deste mundo para que se tornem ricos na fé.",
+      "verseRef": "Tiago 2:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "escolheu os pobres deste mundo para que se tornem ricos na fé",
+      "feedbackCorrect": "Deus escolheu os pobres deste mundo para serem ricos na fé.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: quem Deus escolheu foram os pobres, e não os ricos."
+      },
+      "hint": "Compare quem é escolhido com quem a reunião estava honrando.",
+      "learningObjective": "Ver o propósito da escolha de Deus.",
+      "evidence": ["Tiago 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Tiago 2:6, toque a palavra que marca o contraste com a escolha de Deus.",
+      "verseRef": "Tiago 2:6",
+      "options": [
+        { "id": "a", "text": "Entretanto" },
+        { "id": "b", "text": "pobre" },
+        { "id": "c", "text": "tribunais" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, vós menosprezastes o pobre",
+      "feedbackCorrect": "O \"Entretanto\" vira o argumento: Deus escolheu, mas vocês menosprezaram.",
+      "feedbackWrong": {
+        "b": "Pobre nomeia quem é menosprezado, e não a virada do argumento.",
+        "c": "Os tribunais mostram o que os ricos fazem, e não o contraste."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de contraste entre a escolha de Deus e a atitude dos irmãos.",
+      "evidence": ["Tiago 2:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Tiago 2:3–4 estabelece entre o tratamento dado e o julgamento?",
+      "verseRef": "Tiago 2:3–4",
+      "options": [
+        { "id": "a", "text": "Tratar rico e pobre de modo desigual é julgar com maus critérios" },
+        { "id": "b", "text": "O tratamento diferente é apenas questão de cortesia" },
+        { "id": "c", "text": "Distinguir as pessoas mostra bom discernimento" },
+        { "id": "d", "text": "O pobre merece menos atenção por não contribuir" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não fizestes distinção entre vós mesmos e não vos tornastes juízes",
+      "feedbackCorrect": "Quem distingue por aparência se torna juiz com pensamentos pervertidos.",
+      "feedbackWrong": {
+        "b": "Tiago trata isso como julgamento mau, e não como simples cortesia.",
+        "c": "O texto chama esses juízes de tomados de pensamentos pervertidos.",
+        "d": "O texto não mede o valor da pessoa pela contribuição."
+      },
+      "hint": "Ligue o lugar dado a cada um ao que Tiago diz que eles se tornaram.",
+      "learningObjective": "Relacionar o tratamento desigual ao julgamento.",
+      "evidence": ["Tiago 2:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Tiago 2:8–9.",
+      "verseRef": "Tiago 2:8–9",
+      "options": [
+        { "id": "a", "text": "A lei real manda amar o próximo" },
+        { "id": "b", "text": "Quem a observa faz bem" },
+        { "id": "c", "text": "Quem faz acepção peca e é transgressor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Se, porém, fazeis acepção de pessoas, cometeis pecado",
+      "feedbackCorrect": "A lei do amor vem primeiro; observá-la é fazer bem; quebrá-la é pecar.",
+      "feedbackWrong": {
+        "default": "Comece pela lei real; a consequência de ignorá-la vem por último."
+      },
+      "hint": "Siga o caminho: a lei, quem a cumpre, quem a quebra.",
+      "learningObjective": "Ordenar o argumento sobre a lei real.",
+      "evidence": ["Tiago 2:8–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Tiago 2:6, que ação os irmãos fizeram com o pobre, contrária à escolha de Deus?",
+      "verseRef": "Tiago 2:6",
+      "options": [
+        { "id": "a", "text": "menosprezastes" },
+        { "id": "b", "text": "acolhestes" },
+        { "id": "c", "text": "ouvistes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vós menosprezastes o pobre",
+      "feedbackCorrect": "Deus escolheu os pobres, mas os irmãos os menosprezaram.",
+      "feedbackWrong": {
+        "b": "Acolher seria o oposto do que Tiago denuncia no versículo.",
+        "c": "O texto fala de desprezo, e não de ouvir o pobre."
+      },
+      "hint": "Veja o verbo que vem depois de vós e contradiz a escolha de Deus.",
+      "learningObjective": "Lembrar a ação que muda a cena.",
+      "evidence": ["Tiago 2:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Tiago 2:8 a Levítico 19:18?",
+      "verseRef": "Tiago 2:8",
+      "passageA": { "ref": "Tiago 2:8" },
+      "passageB": { "ref": "Levítico 19:18" },
+      "options": [
+        { "id": "a", "text": "O mandamento de amar o próximo" },
+        { "id": "b", "text": "O culto no templo de Jerusalém" },
+        { "id": "c", "text": "A partilha da terra prometida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Amarás o teu próximo como a ti mesmo",
+      "feedbackCorrect": "Tiago cita Levítico: amar o próximo como a si mesmo é a lei real.",
+      "feedbackWrong": {
+        "b": "O culto no templo não aparece nos dois textos; o tema é o próximo.",
+        "c": "A partilha da terra não liga os textos; ambos falam de amar o próximo."
+      },
+      "hint": "Veja a frase que Tiago diz tirar da Escritura.",
+      "learningObjective": "Ligar a lei real de Tiago à sua origem em Levítico.",
+      "evidence": ["Tiago 2:8", "Levítico 19:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Tiago 2:9, fazer acepção de pessoas é apenas uma falha de etiqueta, e não pecado.",
+      "verseRef": "Tiago 2:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "fazeis acepção de pessoas, cometeis pecado",
+      "feedbackCorrect": "Tiago chama a acepção de pecado e diz que a lei acusa como transgressores.",
+      "feedbackWrong": {
+        "true": "O texto diz o contrário: fazer acepção de pessoas é cometer pecado."
+      },
+      "hint": "Veja o que o versículo diz que se comete ao fazer acepção.",
+      "learningObjective": "Rejeitar a leitura que reduz a acepção a uma falha de etiqueta.",
+      "evidence": ["Tiago 2:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Tiago 2:9, toque a palavra que diz como a lei classifica quem faz acepção.",
+      "verseRef": "Tiago 2:9",
+      "options": [
+        { "id": "a", "text": "transgressores" },
+        { "id": "b", "text": "pessoas" },
+        { "id": "c", "text": "lei" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sendo arguidos pela lei como transgressores",
+      "feedbackCorrect": "A lei acusa quem faz acepção como transgressor: a falha é contra a lei.",
+      "feedbackWrong": {
+        "b": "Pessoas é o alvo da acepção, e não a classificação dada por ela.",
+        "c": "A lei é quem acusa; o rótulo que ela dá vem depois."
+      },
+      "hint": "Procure o rótulo que fecha o versículo.",
+      "learningObjective": "Sustentar com o texto que a acepção é transgressão.",
+      "evidence": ["Tiago 2:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Tiago 2:1 sustenta sobre a fé em Cristo e o trato com as pessoas?",
+      "verseRef": "Tiago 2:1",
+      "options": [
+        { "id": "a", "text": "Crer em Cristo, Senhor da glória, exclui tratar pessoas por posição" },
+        { "id": "b", "text": "A fé em Cristo é assunto privado, sem efeito na reunião" },
+        { "id": "c", "text": "Dar mais honra a quem tem mais é sabedoria prática" },
+        { "id": "d", "text": "A acepção só é grave quando causa prejuízo material" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas",
+      "feedbackCorrect": "A fé no Senhor da glória não se vive junto com acepção de pessoas.",
+      "feedbackWrong": {
+        "b": "Tiago liga a fé em Cristo ao modo de tratar as pessoas na reunião.",
+        "c": "O versículo trata essa preferência como contrária à fé em Cristo.",
+        "d": "O texto não mede a acepção pelo prejuízo material."
+      },
+      "hint": "Una o título de Cristo ao que a fé não pode fazer.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre fé e acepção.",
+      "evidence": ["Tiago 2:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do argumento de Tiago sobre os pobres e a lei?",
+      "verseRef": "Tiago 2:5–6",
+      "options": [
+        { "id": "a", "text": "Deus escolhe os pobres como herdeiros do reino" },
+        { "id": "b", "text": "Menosprezar o pobre contradiz a escolha de Deus" },
+        { "id": "c", "text": "Amar o próximo como a si mesmo cumpre a lei real" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Entretanto, vós menosprezastes o pobre",
+      "feedbackCorrect": "A escolha de Deus mostra o erro do menosprezo, e a lei do amor corrige a conduta.",
+      "feedbackWrong": {
+        "default": "Siga o argumento: a escolha de Deus (2:5), o erro (2:6) e a lei do amor (2:8)."
+      },
+      "hint": "Comece pelo que Deus fez, depois pelo erro, e termine na lei.",
+      "learningObjective": "Encadear a escolha de Deus, o erro dos irmãos e a lei do amor.",
+      "evidence": ["Tiago 2:5–6", "Tiago 2:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Tiago 2:1, que termo nomeia o que não combina com a fé em Cristo?",
+      "verseRef": "Tiago 2:1",
+      "options": [
+        { "id": "a", "text": "acepção" },
+        { "id": "b", "text": "exceção" },
+        { "id": "c", "text": "menção" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem fazer acepção de pessoas",
+      "feedbackCorrect": "Acepção de pessoas é o termo central: preferir alguém pela posição.",
+      "feedbackWrong": {
+        "b": "O texto não fala de abrir exceção, mas de preferir pessoas por posição.",
+        "c": "Menção não aparece no versículo; o termo é outro."
+      },
+      "hint": "Veja o que o versículo manda não fazer com as pessoas.",
+      "learningObjective": "Lembrar o termo que carrega o sentido central da cena.",
+      "evidence": ["Tiago 2:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Tiago 2:5 a Lucas 6:20?",
+      "verseRef": "Tiago 2:5",
+      "passageA": { "ref": "Tiago 2:5" },
+      "passageB": { "ref": "Lucas 6:20" },
+      "options": [
+        { "id": "a", "text": "O reino é dos pobres" },
+        { "id": "b", "text": "O reino é dos ricos" },
+        { "id": "c", "text": "O reino exige riqueza antes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "herdeiros do reino que prometeu",
+      "feedbackCorrect": "Tiago ecoa Jesus: o reino é dos pobres, escolhidos por Deus.",
+      "feedbackWrong": {
+        "b": "Os dois textos dizem o contrário: o reino é dos pobres.",
+        "c": "Nenhum dos textos exige riqueza; Deus a dá em fé aos pobres."
+      },
+      "hint": "Compare quem recebe o reino nos dois textos.",
+      "learningObjective": "Ligar a escolha dos pobres em Tiago ao ensino de Jesus.",
+      "evidence": ["Tiago 2:5", "Lucas 6:20"]
+    }
+  ]
+}

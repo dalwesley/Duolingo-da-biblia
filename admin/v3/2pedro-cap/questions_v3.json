@@ -1,0 +1,3310 @@
+[
+  {
+    "id": "2pedro-cap-sem-p2c-01-tudo-para-a-vida-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Pedro 1:3, o divino poder já concedeu tudo o que diz respeito à vida e à piedade.",
+    "prompt": "Em 2 Pedro 1:3, o divino poder já concedeu tudo o que diz respeito à vida e à piedade.",
+    "cue": "Em 2 Pedro 1:3, o divino poder já concedeu tudo o que diz respeito à vida e à piedade.",
+    "verseRef": "2 Pedro 1:3",
+    "passageText": "Seu divino poder nos tem concedido tudo o que diz respeito à vida e à piedade, por meio do pleno conhecimento daquele que nos chamou para sua própria glória e excelência.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "nos tem concedido tudo o que diz respeito à vida e à piedade",
+    "feedbackCorrect": "O poder divino já concedeu o necessário para viver com piedade.",
+    "feedbackWrong": {
+      "false": "O versículo afirma a concessão completa para vida e piedade."
+    },
+    "hint": "Leia o que o poder divino tem concedido.",
+    "learningObjective": "Observar a concessão divina.",
+    "evidence": [
+      "2 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-01-tudo-para-a-vida-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Pedro 1:5, toque o que devem acrescentar primeiro à fé.",
+    "prompt": "Em 2 Pedro 1:5, toque o que devem acrescentar primeiro à fé.",
+    "cue": "Em 2 Pedro 1:5, toque o que devem acrescentar primeiro à fé.",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocês"
+      },
+      {
+        "id": "b",
+        "text": "diligência"
+      },
+      {
+        "id": "c",
+        "text": "virtude"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "O primeiro elo acrescentado à fé é a virtude.",
+    "feedbackWrong": {
+      "a": "Vocês é o sujeito, não o que se acrescenta.",
+      "b": "Diligência é o modo de reunir esforço, não o primeiro elo."
+    },
+    "hint": "Veja o que vem depois de à fé de vocês.",
+    "learningObjective": "Identificar o primeiro elo.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-01-tudo-para-a-vida-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Pedro 1:11, o que será amplamente concedido?",
+    "prompt": "Segundo 2 Pedro 1:11, o que será amplamente concedido?",
+    "cue": "Segundo 2 Pedro 1:11, o que será amplamente concedido?",
+    "verseRef": "2 Pedro 1:11",
+    "passageText": "Pois assim vos será amplamente concedida a entrada no reino eterno de nosso Senhor e Salvador Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cegueira das paixões"
+      },
+      {
+        "id": "b",
+        "text": "A corrupção do mundo"
+      },
+      {
+        "id": "c",
+        "text": "A entrada no reino eterno"
+      },
+      {
+        "id": "d",
+        "text": "A ociosidade no conhecimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a entrada no reino eterno de nosso Senhor e Salvador Jesus Cristo",
+    "feedbackCorrect": "A entrada no reino eterno será amplamente concedida.",
+    "feedbackWrong": {
+      "a": "Cegueira descreve quem não tem as qualidades.",
+      "b": "Corrupção é o que se escapa pelas promessas.",
+      "d": "Ociosidade é o que as qualidades evitam."
+    },
+    "hint": "Leia o fim do versículo 11.",
+    "learningObjective": "Reconhecer o que é concedido.",
+    "evidence": [
+      "2 Pedro 1:11"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-01-tudo-para-a-vida-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 1:5 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 1:5 na ordem do texto.",
+    "cue": "Monte 2 Pedro 1:5 na ordem do texto.",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "options": [
+      {
+        "id": "a",
+        "text": "reunindo toda a sua diligência"
+      },
+      {
+        "id": "b",
+        "text": "acrescentem à fé de vocês a virtude"
+      },
+      {
+        "id": "c",
+        "text": "à virtude, o conhecimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento",
+    "feedbackCorrect": "Primeiro a diligência; depois fé→virtude→conhecimento.",
+    "feedbackWrong": {
+      "default": "Comece com reunindo toda a sua diligência."
+    },
+    "hint": "O versículo une diligência e a cadeia inicial.",
+    "learningObjective": "Seguir a ordem do versículo 5.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-01-tudo-para-a-vida-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Pedro 1:10, complete: nunca ___ em tempo algum.",
+    "prompt": "Em 2 Pedro 1:10, complete: nunca ___ em tempo algum.",
+    "cue": "Em 2 Pedro 1:10, complete: nunca ___ em tempo algum.",
+    "verseRef": "2 Pedro 1:10",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum.",
+    "template": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca ___ em tempo algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "crescerão"
+      },
+      {
+        "id": "b",
+        "text": "tropeçarão"
+      },
+      {
+        "id": "c",
+        "text": "conhecerão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nunca tropeçarão em tempo algum",
+    "feedbackCorrect": "Confirmando vocação e eleição, nunca tropeçarão.",
+    "feedbackWrong": {
+      "a": "Crescerem refere-se às qualidades no v.8.",
+      "c": "Conhecimento aparece noutro sentido no trecho."
+    },
+    "hint": "Veja o verbo depois de nunca.",
+    "learningObjective": "Lembrar o resultado de confirmar a eleição.",
+    "evidence": [
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-01-tudo-para-a-vida-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Pedro 1:5 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 1:5 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 1:5 comunica que se liga a este contexto?",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "passageA": {
+      "ref": "2 Pedro 1:5",
+      "text": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O poder divino já deu tudo para a vida; Pedro pede diligência para acrescentar virtudes até o amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ficar ocioso no conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "Acrescentar virtude à fé"
+      },
+      {
+        "id": "c",
+        "text": "Esquecer a purificação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "No contexto do dom divino, o chamado humano é acrescentar à fé.",
+    "feedbackWrong": {
+      "a": "Ociosidade é o que se evita.",
+      "c": "Esquecer a purificação descreve quem não tem as qualidades."
+    },
+    "hint": "Veja o imperativo acrescentem.",
+    "learningObjective": "Ligar o contexto ao acrescentar.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-01-tudo-para-a-vida-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Pedro 1:4, as preciosas promessas visam a participação na natureza divina, escapando da corrupção.",
+    "prompt": "Em 2 Pedro 1:4, as preciosas promessas visam a participação na natureza divina, escapando da corrupção.",
+    "cue": "Em 2 Pedro 1:4, as preciosas promessas visam a participação na natureza divina, escapando da corrupção.",
+    "verseRef": "2 Pedro 1:4",
+    "passageText": "Por meio delas, ele nos tem concedido suas preciosas e mui grandes promessas, para que, por elas, possamos ser coparticipantes da natureza divina, escapando da corrupção que há no mundo, resultante das paixões.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que, por elas, possamos ser coparticipantes da natureza divina, escapando da corrupção",
+    "feedbackCorrect": "O propósito das promessas é participação e escape da corrupção.",
+    "feedbackWrong": {
+      "false": "Para que marca esse duplo propósito."
+    },
+    "hint": "Leia a frase para que, por elas.",
+    "learningObjective": "Ver o propósito das promessas.",
+    "evidence": [
+      "2 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-01-tudo-para-a-vida-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 1:4, toque o marcador do propósito das promessas.",
+    "prompt": "Em 2 Pedro 1:4, toque o marcador do propósito das promessas.",
+    "cue": "Em 2 Pedro 1:4, toque o marcador do propósito das promessas.",
+    "verseRef": "2 Pedro 1:4",
+    "passageText": "Por meio delas, ele nos tem concedido suas preciosas e mui grandes promessas, para que, por elas, possamos ser coparticipantes da natureza divina, escapando da corrupção que há no mundo, resultante das paixões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para que"
+      },
+      {
+        "id": "b",
+        "text": "preciosas"
+      },
+      {
+        "id": "c",
+        "text": "paixões"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que, por elas, possamos ser coparticipantes",
+    "feedbackCorrect": "Para que introduz o propósito das promessas.",
+    "feedbackWrong": {
+      "b": "Preciosas descreve as promessas.",
+      "c": "Paixões ligam-se à corrupção, não ao marcador."
+    },
+    "hint": "Procure a expressão de finalidade.",
+    "learningObjective": "Tocar o marcador de propósito.",
+    "evidence": [
+      "2 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-01-tudo-para-a-vida-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 2 Pedro 1:8 estabelece sobre as qualidades?",
+    "prompt": "Qual relação 2 Pedro 1:8 estabelece sobre as qualidades?",
+    "cue": "Qual relação 2 Pedro 1:8 estabelece sobre as qualidades?",
+    "verseRef": "2 Pedro 1:8",
+    "passageText": "Pois, se essas qualidades estiverem em vocês e crescerem, não os tornarão ociosos nem improdutivos no pleno conhecimento de nosso Senhor Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se crescerem, apagarão o conhecimento de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Se faltarem, confirmam a eleição automaticamente"
+      },
+      {
+        "id": "c",
+        "text": "Se faltarem, ainda assim serão produtivos"
+      },
+      {
+        "id": "d",
+        "text": "Se crescerem, não os tornarão ociosos nem improdutivos"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "se essas qualidades estiverem em vocês e crescerem, não os tornarão ociosos nem improdutivos",
+    "feedbackCorrect": "O crescimento das qualidades evita ociosidade e improdutividade.",
+    "feedbackWrong": {
+      "a": "Elas servem ao pleno conhecimento de Cristo.",
+      "b": "A eleição se confirma com esforço no v.10.",
+      "c": "Quem não as possui fica cego no v.9."
+    },
+    "hint": "Leia a condição e o resultado no v.8.",
+    "learningObjective": "Compreender o resultado das qualidades.",
+    "evidence": [
+      "2 Pedro 1:8"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-01-tudo-para-a-vida-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho sobre o crescimento.",
+    "prompt": "Ordene os movimentos do trecho sobre o crescimento.",
+    "cue": "Ordene os movimentos do trecho sobre o crescimento.",
+    "verseRef": "2 Pedro 1:5–6",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento; ao conhecimento, o domínio próprio; ao domínio próprio, a perseverança; à perseverança, a piedade; à piedade, o amor; ao amor, a caridade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Poder divino já concedeu tudo"
+      },
+      {
+        "id": "b",
+        "text": "Acrescentar à fé até o amor"
+      },
+      {
+        "id": "c",
+        "text": "Confirmar vocação e entrar no reino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "Do dom divino à cadeia da fé, até confirmar e entrar.",
+    "feedbackWrong": {
+      "default": "Comece pelo dom; a entrada fecha."
+    },
+    "hint": "Siga vv.3–4, 5–7 e 10–11.",
+    "learningObjective": "Ordenar a estrutura do crescimento.",
+    "evidence": [
+      "2 Pedro 1:3",
+      "2 Pedro 1:5",
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-01-tudo-para-a-vida-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Pedro 1:4, complete: possamos ser ___ da natureza divina.",
+    "prompt": "Em 2 Pedro 1:4, complete: possamos ser ___ da natureza divina.",
+    "cue": "Em 2 Pedro 1:4, complete: possamos ser ___ da natureza divina.",
+    "verseRef": "2 Pedro 1:4",
+    "passageText": "Por meio delas, ele nos tem concedido suas preciosas e mui grandes promessas, para que, por elas, possamos ser coparticipantes da natureza divina, escapando da corrupção que há no mundo, resultante das paixões.",
+    "template": "Por meio delas, ele nos tem concedido suas preciosas e mui grandes promessas, para que, por elas, possamos ser ___ da natureza divina, escapando da corrupção que há no mundo, resultante das paixões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "coparticipantes"
+      },
+      {
+        "id": "b",
+        "text": "cegos"
+      },
+      {
+        "id": "c",
+        "text": "ociosos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "possamos ser coparticipantes da natureza divina",
+    "feedbackCorrect": "O propósito é ser coparticipantes da natureza divina.",
+    "feedbackWrong": {
+      "b": "Cegos descreve quem não tem as qualidades.",
+      "c": "Ociosos é o que as qualidades evitam."
+    },
+    "hint": "É o substantivo depois de ser.",
+    "learningObjective": "Lembrar o termo da participação.",
+    "evidence": [
+      "2 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-01-tudo-para-a-vida-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Pedro 1:5–7 a Gálatas 5:22?",
+    "prompt": "O que liga 2 Pedro 1:5–7 a Gálatas 5:22?",
+    "cue": "O que liga 2 Pedro 1:5–7 a Gálatas 5:22?",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "passageA": {
+      "ref": "2 Pedro 1:5",
+      "text": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;"
+    },
+    "passageB": {
+      "ref": "Gálatas 5:22",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Corrupção das paixões"
+      },
+      {
+        "id": "b",
+        "text": "Crescimento em virtudes"
+      },
+      {
+        "id": "c",
+        "text": "Cegueira voluntária"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "Ambos descrevem um crescimento moral que inclui amor.",
+    "feedbackWrong": {
+      "a": "Corrupção é o que se escapa.",
+      "c": "Cegueira é o contraste negativo."
+    },
+    "hint": "Compare a lista de qualidades e o fruto.",
+    "learningObjective": "Ligar a cadeia da fé ao fruto.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-01-tudo-para-a-vida-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 2 Pedro 1:5–8, basta a fé inicial; acrescentar virtudes é desnecessário para o conhecimento de Cristo.",
+    "prompt": "Segundo 2 Pedro 1:5–8, basta a fé inicial; acrescentar virtudes é desnecessário para o conhecimento de Cristo.",
+    "cue": "Segundo 2 Pedro 1:5–8, basta a fé inicial; acrescentar virtudes é desnecessário para o conhecimento de Cristo.",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "Pedro manda acrescentar com diligência; sem isso há ociosidade.",
+    "feedbackWrong": {
+      "true": "O imperativo acrescentem e o aviso do v.8 desmentem a ociosidade."
+    },
+    "hint": "Veja o imperativo e o resultado no v.8.",
+    "learningObjective": "Rejeitar a leitura da fé ociosa.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-01-tudo-para-a-vida-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 1:10, toque o trecho que sustenta o que devem confirmar.",
+    "prompt": "Em 2 Pedro 1:10, toque o trecho que sustenta o que devem confirmar.",
+    "cue": "Em 2 Pedro 1:10, toque o trecho que sustenta o que devem confirmar.",
+    "verseRef": "2 Pedro 1:10",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocação e eleição"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "tropeçarão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "confirmar a sua vocação e eleição",
+    "feedbackCorrect": "Devem confirmar a vocação e a eleição.",
+    "feedbackWrong": {
+      "b": "Ociosos é o que se evita no v.8.",
+      "c": "Próximo descreve a visão limitada do cego no v.9."
+    },
+    "hint": "Veja o que vem depois de confirmar a sua.",
+    "learningObjective": "Sustentar o que confirmar.",
+    "evidence": [
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-01-tudo-para-a-vida-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Pedro 1:3–11 sustenta?",
+    "prompt": "Que leitura 2 Pedro 1:3–11 sustenta?",
+    "cue": "Que leitura 2 Pedro 1:3–11 sustenta?",
+    "verseRef": "2 Pedro 1:10",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Virtudes são opcionais se houver fé vazia"
+      },
+      {
+        "id": "b",
+        "text": "Deus deu tudo; acrescentem virtudes e confirmem a eleição"
+      },
+      {
+        "id": "c",
+        "text": "Tropeçar prova que a eleição está confirmada"
+      },
+      {
+        "id": "d",
+        "text": "Deus nada deu; só o esforço humano salva"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esforcem-se cada vez mais para confirmar a sua vocação e eleição",
+    "feedbackCorrect": "Dom divino e diligência humana caminham juntos até o reino.",
+    "feedbackWrong": {
+      "a": "O acrescentar é mandado.",
+      "c": "Confirmando, nunca tropeçarão.",
+      "d": "O v.3 afirma a concessão divina."
+    },
+    "hint": "Una o v.3 ao v.10.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-01-tudo-para-a-vida-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do dom à entrada no reino?",
+    "prompt": "Qual sequência mostra o fio do dom à entrada no reino?",
+    "cue": "Qual sequência mostra o fio do dom à entrada no reino?",
+    "verseRef": "2 Pedro 1:10–11",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum. Pois assim vos será amplamente concedida a entrada no reino eterno de nosso Senhor e Salvador Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dom divino para vida e piedade"
+      },
+      {
+        "id": "b",
+        "text": "Cadeia da fé até o amor"
+      },
+      {
+        "id": "c",
+        "text": "Entrada ampla no reino eterno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "entrada no reino eterno",
+    "feedbackCorrect": "Do dom à cadeia, até a entrada no reino.",
+    "feedbackWrong": {
+      "default": "Comece pelo dom; o reino fecha."
+    },
+    "hint": "Siga vv.3, 5 e 11.",
+    "learningObjective": "Encadear dom, crescimento e reino.",
+    "evidence": [
+      "2 Pedro 1:3",
+      "2 Pedro 1:5",
+      "2 Pedro 1:11"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-01-tudo-para-a-vida-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 1:5, complete: reunindo toda a sua ___.",
+    "prompt": "Em 2 Pedro 1:5, complete: reunindo toda a sua ___.",
+    "cue": "Em 2 Pedro 1:5, complete: reunindo toda a sua ___.",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "template": "E vocês, reunindo toda a sua ___, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "options": [
+      {
+        "id": "a",
+        "text": "diligência"
+      },
+      {
+        "id": "b",
+        "text": "ociosidade"
+      },
+      {
+        "id": "c",
+        "text": "cegueira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "reunindo toda a sua diligência",
+    "feedbackCorrect": "A diligência é o modo de acrescentar à fé.",
+    "feedbackWrong": {
+      "b": "Ociosidade é o oposto no v.8.",
+      "c": "Cegueira descreve quem não tem as qualidades."
+    },
+    "hint": "É a palavra depois de toda a sua.",
+    "learningObjective": "Lembrar o termo do esforço.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-01-tudo-para-a-vida-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-01-tudo-para-a-vida",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Pedro 1:10 a Filipenses 2:12?",
+    "prompt": "O que liga 2 Pedro 1:10 a Filipenses 2:12?",
+    "cue": "O que liga 2 Pedro 1:10 a Filipenses 2:12?",
+    "verseRef": "2 Pedro 1:10",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum.",
+    "passageA": {
+      "ref": "2 Pedro 1:10",
+      "text": "esforcem-se cada vez mais para confirmar a sua vocação e eleição"
+    },
+    "passageB": {
+      "ref": "Filipenses 2:12",
+      "text": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa salvação com temor e tremor;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Entrada automática sem fé"
+      },
+      {
+        "id": "b",
+        "text": "Esforço que confirma a salvação"
+      },
+      {
+        "id": "c",
+        "text": "Cegueira das paixões"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esforcem-se cada vez mais para confirmar a sua vocação e eleição",
+    "feedbackCorrect": "Nos dois textos, há diligência humana diante da obra de Deus.",
+    "feedbackWrong": {
+      "a": "A entrada vem com a cadeia da fé.",
+      "c": "Cegueira não é a ponte."
+    },
+    "hint": "Compare o esforço pedido.",
+    "learningObjective": "Ligar o esforço em Pedro e Paulo.",
+    "evidence": [
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-02-falsos-mestres-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Pedro 2:1, os falsos mestres introduzirão heresias abertamente, sem dissimulação.",
+    "prompt": "Em 2 Pedro 2:1, os falsos mestres introduzirão heresias abertamente, sem dissimulação.",
+    "cue": "Em 2 Pedro 2:1, os falsos mestres introduzirão heresias abertamente, sem dissimulação.",
+    "verseRef": "2 Pedro 2:1",
+    "passageText": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, heresias destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "introduzirão, dissimuladamente, heresias destrutivas",
+    "feedbackCorrect": "O texto diz que introduzirão dissimuladamente.",
+    "feedbackWrong": {
+      "true": "A palavra dissimuladamente mostra o modo oculto."
+    },
+    "hint": "Veja o advérbio junto de introduzirão.",
+    "learningObjective": "Observar o modo das heresias.",
+    "evidence": [
+      "2 Pedro 2:1"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-02-falsos-mestres-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Pedro 2:9, toque a quem o Senhor sabe livrar.",
+    "prompt": "Em 2 Pedro 2:9, toque a quem o Senhor sabe livrar.",
+    "cue": "Em 2 Pedro 2:9, toque a quem o Senhor sabe livrar.",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "injustos"
+      },
+      {
+        "id": "c",
+        "text": "piedosos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "livrar os piedosos da provação",
+    "feedbackCorrect": "O Senhor sabe livrar os piedosos.",
+    "feedbackWrong": {
+      "a": "Senhor é quem age, não quem é livrado.",
+      "b": "Os injustos são reservados para o juízo."
+    },
+    "hint": "Veja o objeto de livrar.",
+    "learningObjective": "Identificar quem é livrado.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-02-falsos-mestres-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Pedro 2:5, a quem Deus preservou no dilúvio?",
+    "prompt": "Segundo 2 Pedro 2:5, a quem Deus preservou no dilúvio?",
+    "cue": "Segundo 2 Pedro 2:5, a quem Deus preservou no dilúvio?",
+    "verseRef": "2 Pedro 2:5",
+    "passageText": "E não poupou o mundo antigo, mas preservou a Noé, pregador da justiça, e mais sete pessoas, quando trouxe o dilúvio sobre o mundo dos ímpios;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sodoma e Gomorra"
+      },
+      {
+        "id": "b",
+        "text": "Os anjos que pecaram"
+      },
+      {
+        "id": "c",
+        "text": "Os falsos mestres"
+      },
+      {
+        "id": "d",
+        "text": "Noé, pregador da justiça"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "preservou a Noé, pregador da justiça",
+    "feedbackCorrect": "Noé foi preservado como pregador da justiça.",
+    "feedbackWrong": {
+      "a": "Sodoma foi reduzida a cinzas.",
+      "b": "Anjos não foram poupados.",
+      "c": "Falsos mestres enfrentam destruição."
+    },
+    "hint": "Leia quem foi preservado.",
+    "learningObjective": "Reconhecer o livramento de Noé.",
+    "evidence": [
+      "2 Pedro 2:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-02-falsos-mestres-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 2:9 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 2:9 na ordem do texto.",
+    "cue": "Monte 2 Pedro 2:9 na ordem do texto.",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor sabe livrar os piedosos da provação"
+      },
+      {
+        "id": "b",
+        "text": "e reservar os injustos"
+      },
+      {
+        "id": "c",
+        "text": "para o Dia do Juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo",
+    "feedbackCorrect": "Primeiro o livrar; depois o reservar para o juízo.",
+    "feedbackWrong": {
+      "default": "Comece com O Senhor sabe livrar."
+    },
+    "hint": "O versículo une livrar e reservar.",
+    "learningObjective": "Seguir a ordem do versículo 9.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-02-falsos-mestres-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Pedro 2:1, complete: introduzirão, dissimuladamente, ___.",
+    "prompt": "Em 2 Pedro 2:1, complete: introduzirão, dissimuladamente, ___.",
+    "cue": "Em 2 Pedro 2:1, complete: introduzirão, dissimuladamente, ___.",
+    "verseRef": "2 Pedro 2:1",
+    "passageText": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, heresias destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição.",
+    "template": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, ___ destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "piedosos"
+      },
+      {
+        "id": "b",
+        "text": "heresias"
+      },
+      {
+        "id": "c",
+        "text": "promessas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "introduzirão, dissimuladamente, heresias destrutivas",
+    "feedbackCorrect": "O que introduzem são heresias destrutivas.",
+    "feedbackWrong": {
+      "a": "Piedosos são livrados no v.9.",
+      "c": "Promessas não são o conteúdo aqui."
+    },
+    "hint": "Veja o substantivo depois de dissimuladamente.",
+    "learningObjective": "Lembrar o que introduzem.",
+    "evidence": [
+      "2 Pedro 2:1"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-02-falsos-mestres-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Pedro 2:9 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 2:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 2:9 comunica que se liga a este contexto?",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "passageA": {
+      "ref": "2 Pedro 2:9",
+      "text": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Pedro alerta contra falsos mestres e lembra juízos e livramentos do passado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Poupar os anjos"
+      },
+      {
+        "id": "b",
+        "text": "Infamar a verdade por bem"
+      },
+      {
+        "id": "c",
+        "text": "Livrar e reservar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "livrar os piedosos da provação e reservar os injustos",
+    "feedbackCorrect": "No meio do alerta, a conclusão é: o Senhor sabe livrar e reservar.",
+    "feedbackWrong": {
+      "a": "Deus não poupou os anjos.",
+      "b": "Infamar a verdade é o dano dos falsos."
+    },
+    "hint": "Veja o que o Senhor sabe fazer.",
+    "learningObjective": "Ligar o contexto à conclusão.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-02-falsos-mestres-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Pedro 2:2, por causa dos falsos mestres o caminho da verdade será louvado.",
+    "prompt": "Em 2 Pedro 2:2, por causa dos falsos mestres o caminho da verdade será louvado.",
+    "cue": "Em 2 Pedro 2:2, por causa dos falsos mestres o caminho da verdade será louvado.",
+    "verseRef": "2 Pedro 2:2",
+    "passageText": "E muitos seguirão suas práticas libertinas, e, por causa deles, será infamado o caminho da verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "será infamado o caminho da verdade",
+    "feedbackCorrect": "O caminho da verdade será infamado, não louvado.",
+    "feedbackWrong": {
+      "true": "A palavra é infamado."
+    },
+    "hint": "Leia o fim do versículo 2.",
+    "learningObjective": "Ver o resultado das práticas libertinas.",
+    "evidence": [
+      "2 Pedro 2:2"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-02-falsos-mestres-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 2:1, toque o marcador da comparação com os falsos profetas.",
+    "prompt": "Em 2 Pedro 2:1, toque o marcador da comparação com os falsos profetas.",
+    "cue": "Em 2 Pedro 2:1, toque o marcador da comparação com os falsos profetas.",
+    "verseRef": "2 Pedro 2:1",
+    "passageText": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, heresias destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "destrutivas"
+      },
+      {
+        "id": "b",
+        "text": "assim como"
+      },
+      {
+        "id": "c",
+        "text": "dissimuladamente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assim como entre vós haverá falsos mestres",
+    "feedbackCorrect": "Assim como liga o passado dos falsos profetas ao futuro dos mestres.",
+    "feedbackWrong": {
+      "a": "Destrutivas descreve as heresias.",
+      "c": "Dissimuladamente descreve o modo."
+    },
+    "hint": "Procure a expressão de comparação.",
+    "learningObjective": "Tocar o marcador da comparação.",
+    "evidence": [
+      "2 Pedro 2:1"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-02-falsos-mestres-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 2 Pedro 2:4–9 estabelece?",
+    "prompt": "Qual relação 2 Pedro 2:4–9 estabelece?",
+    "cue": "Qual relação 2 Pedro 2:4–9 estabelece?",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "Falsos mestres nunca enfrentam condenação"
+      },
+      {
+        "id": "b",
+        "text": "Juízos passados sustentam que Deus livra e reserva"
+      },
+      {
+        "id": "c",
+        "text": "Deus poupou anjos e Sodoma igualmente"
+      },
+      {
+        "id": "d",
+        "text": "Noé e Ló foram destruídos com os ímpios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos da provação e reservar os injustos",
+    "feedbackCorrect": "Os exemplos culminam nessa certeza dupla.",
+    "feedbackWrong": {
+      "a": "A condenação não tarda no v.3.",
+      "c": "Não poupou anjos nem Sodoma.",
+      "d": "Noé e Ló foram livrados."
+    },
+    "hint": "Una os exemplos ao v.9.",
+    "learningObjective": "Compreender a lógica dos exemplos.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-02-falsos-mestres-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do alerta.",
+    "prompt": "Ordene os movimentos do alerta.",
+    "cue": "Ordene os movimentos do alerta.",
+    "verseRef": "2 Pedro 2:1–2",
+    "passageText": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, heresias destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição. E muitos seguirão suas práticas libertinas, e, por causa deles, será infamado o caminho da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Falsos mestres e caminho infamado"
+      },
+      {
+        "id": "b",
+        "text": "Juízo sobre anjos e dilúvio"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor livra e reserva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "haverá falsos mestres",
+    "feedbackCorrect": "Do alerta ao juízo histórico, até a conclusão do Senhor.",
+    "feedbackWrong": {
+      "default": "Comece pelos falsos; a conclusão fecha."
+    },
+    "hint": "Siga vv.1–3, 4–5 e 9.",
+    "learningObjective": "Ordenar a estrutura do alerta.",
+    "evidence": [
+      "2 Pedro 2:1",
+      "2 Pedro 2:4",
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-02-falsos-mestres-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Pedro 2:2, complete: será ___ o caminho da verdade.",
+    "prompt": "Em 2 Pedro 2:2, complete: será ___ o caminho da verdade.",
+    "cue": "Em 2 Pedro 2:2, complete: será ___ o caminho da verdade.",
+    "verseRef": "2 Pedro 2:2",
+    "passageText": "E muitos seguirão suas práticas libertinas, e, por causa deles, será infamado o caminho da verdade.",
+    "template": "E muitos seguirão suas práticas libertinas, e, por causa deles, será ___ o caminho da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "infamado"
+      },
+      {
+        "id": "b",
+        "text": "louvado"
+      },
+      {
+        "id": "c",
+        "text": "preservado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "será infamado o caminho da verdade",
+    "feedbackCorrect": "Por causa deles o caminho é infamado.",
+    "feedbackWrong": {
+      "b": "O texto diz infamado.",
+      "c": "Preservado descreve Noé."
+    },
+    "hint": "É o verbo no fim do versículo.",
+    "learningObjective": "Lembrar o resultado sobre a verdade.",
+    "evidence": [
+      "2 Pedro 2:2"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-02-falsos-mestres-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Pedro 2:6 a Judas 1:7?",
+    "prompt": "O que liga 2 Pedro 2:6 a Judas 1:7?",
+    "cue": "O que liga 2 Pedro 2:6 a Judas 1:7?",
+    "verseRef": "2 Pedro 2:6",
+    "passageText": "E, reduzindo a cinzas as cidades de Sodoma e Gomorra, condenou-as à ruína completa, tornando-as exemplo para aqueles que venham a viver impiamente.",
+    "passageA": {
+      "ref": "2 Pedro 2:6",
+      "text": "E, reduzindo a cinzas as cidades de Sodoma e Gomorra, condenou-as à ruína completa, tornando-as exemplo para aqueles que venham a viver impiamente."
+    },
+    "passageB": {
+      "ref": "Judas 1:7",
+      "text": "Como Sodoma e Gomorra e as cidades circunvizinhas que, havendo-se entregado à prostituição como aqueles, se deixaram levar por outra carne, são postas como exemplo, sofrendo a punição do fogo eterno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Anjos poupados"
+      },
+      {
+        "id": "b",
+        "text": "Sodoma como exemplo"
+      },
+      {
+        "id": "c",
+        "text": "Noé no dilúvio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tornando-as exemplo para aqueles que venham a viver impiamente",
+    "feedbackCorrect": "Pedro e Judas usam Sodoma como exemplo de juízo.",
+    "feedbackWrong": {
+      "a": "Anjos não foram poupados.",
+      "c": "Noé não é o tema de Judas 1:7."
+    },
+    "hint": "Compare Sodoma nos dois textos.",
+    "learningObjective": "Ligar o exemplo de Sodoma.",
+    "evidence": [
+      "2 Pedro 2:6"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-02-falsos-mestres-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 2 Pedro 2:9, o Senhor sabe livrar os piedosos da provação e reservar os injustos para o juízo.",
+    "prompt": "Segundo 2 Pedro 2:9, o Senhor sabe livrar os piedosos da provação e reservar os injustos para o juízo.",
+    "cue": "Segundo 2 Pedro 2:9, o Senhor sabe livrar os piedosos da provação e reservar os injustos para o juízo.",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos da provação e reservar os injustos",
+    "feedbackCorrect": "A conclusão do argumento é essa dupla certeza.",
+    "feedbackWrong": {
+      "false": "O versículo afirma exatamente isso."
+    },
+    "hint": "Leia o que o Senhor sabe.",
+    "learningObjective": "Confirmar a leitura sustentável.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-02-falsos-mestres-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 2:6, toque o trecho que sustenta o papel de Sodoma e Gomorra.",
+    "prompt": "Em 2 Pedro 2:6, toque o trecho que sustenta o papel de Sodoma e Gomorra.",
+    "cue": "Em 2 Pedro 2:6, toque o trecho que sustenta o papel de Sodoma e Gomorra.",
+    "verseRef": "2 Pedro 2:6",
+    "passageText": "E, reduzindo a cinzas as cidades de Sodoma e Gomorra, condenou-as à ruína completa, tornando-as exemplo para aqueles que venham a viver impiamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidades"
+      },
+      {
+        "id": "b",
+        "text": "cinzas"
+      },
+      {
+        "id": "c",
+        "text": "exemplo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tornando-as exemplo para aqueles que venham a viver impiamente",
+    "feedbackCorrect": "Foram tornadas exemplo para quem vive impiamente.",
+    "feedbackWrong": {
+      "a": "Cidades é o sujeito, não o papel.",
+      "b": "Cinzas descreve a ruína, não o papel pedagógico."
+    },
+    "hint": "Veja o que se tornaram para os ímpios.",
+    "learningObjective": "Sustentar o papel de exemplo.",
+    "evidence": [
+      "2 Pedro 2:6"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-02-falsos-mestres-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Pedro 2:1–9 sustenta?",
+    "prompt": "Que leitura 2 Pedro 2:1–9 sustenta?",
+    "cue": "Que leitura 2 Pedro 2:1–9 sustenta?",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus poupa anjos e cidades ímpias"
+      },
+      {
+        "id": "b",
+        "text": "Não há diferença entre piedosos e injustos"
+      },
+      {
+        "id": "c",
+        "text": "Falsos virão; Deus julga ímpios e livra piedosos"
+      },
+      {
+        "id": "d",
+        "text": "Falsos mestres são inofensivos ao caminho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos da provação e reservar os injustos",
+    "feedbackCorrect": "Alerta, juízo e livramento formam a leitura do trecho.",
+    "feedbackWrong": {
+      "a": "Não poupou.",
+      "b": "O v.9 distingue.",
+      "d": "O caminho é infamado."
+    },
+    "hint": "Una o alerta ao v.9.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-02-falsos-mestres-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do alerta ao livramento?",
+    "prompt": "Qual sequência mostra o fio do alerta ao livramento?",
+    "cue": "Qual sequência mostra o fio do alerta ao livramento?",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entrada de falsos mestres"
+      },
+      {
+        "id": "b",
+        "text": "Juízos históricos como aviso"
+      },
+      {
+        "id": "c",
+        "text": "Livrar piedosos e reservar injustos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos",
+    "feedbackCorrect": "Do alerta aos exemplos, até a conclusão do Senhor.",
+    "feedbackWrong": {
+      "default": "Comece pelos falsos; o livrar fecha."
+    },
+    "hint": "Siga vv.1, 4–6 e 9.",
+    "learningObjective": "Encadear alerta, juízo e livramento.",
+    "evidence": [
+      "2 Pedro 2:1",
+      "2 Pedro 2:6",
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-02-falsos-mestres-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 2:9, complete: reservar os ___.",
+    "prompt": "Em 2 Pedro 2:9, complete: reservar os ___.",
+    "cue": "Em 2 Pedro 2:9, complete: reservar os ___.",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "template": "O Senhor sabe livrar os piedosos da provação e reservar os ___ para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "pregadores"
+      },
+      {
+        "id": "b",
+        "text": "piedosos"
+      },
+      {
+        "id": "c",
+        "text": "injustos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "reservar os injustos para o Dia do Juízo",
+    "feedbackCorrect": "Os injustos são reservados para o juízo.",
+    "feedbackWrong": {
+      "a": "Pregador descreve Noé.",
+      "b": "Piedosos são livrados."
+    },
+    "hint": "É o oposto de quem é livrado.",
+    "learningObjective": "Lembrar quem é reservado.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-02-falsos-mestres-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-02-falsos-mestres",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Pedro 2:7 a Gênesis 19:16?",
+    "prompt": "O que liga 2 Pedro 2:7 a Gênesis 19:16?",
+    "cue": "O que liga 2 Pedro 2:7 a Gênesis 19:16?",
+    "verseRef": "2 Pedro 2:7",
+    "passageText": "E livrou o justo Ló, que se sentia angustiado pela conduta libertina daqueles insubordinados.",
+    "passageA": {
+      "ref": "2 Pedro 2:7",
+      "text": "E livrou o justo Ló, que se sentia angustiado pela conduta libertina daqueles insubordinados."
+    },
+    "passageB": {
+      "ref": "Gênesis 19:16",
+      "text": "Mas ele hesitou, e aqueles homens o agarraram pela mão assim como a mão de sua mulher e a mão de suas duas filhas, pois o Senhor foi misericordioso com ele; e os levaram para fora da cidade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Infamar a verdade"
+      },
+      {
+        "id": "b",
+        "text": "Heresias destrutivas"
+      },
+      {
+        "id": "c",
+        "text": "Deus livra o justo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "livrou o justo Ló",
+    "feedbackCorrect": "Pedro e Gênesis mostram Deus livrando Ló.",
+    "feedbackWrong": {
+      "a": "Infamar a verdade é dano dos falsos.",
+      "b": "Heresias não são a ponte com Gênesis 19."
+    },
+    "hint": "Compare o livramento de Ló.",
+    "learningObjective": "Ligar o livramento de Ló.",
+    "evidence": [
+      "2 Pedro 2:7"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-03-crescei-na-graca-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3:13, segundo a promessa, esperam novos céus e nova terra onde habita a justiça.",
+    "prompt": "Em 2 Pedro 3:13, segundo a promessa, esperam novos céus e nova terra onde habita a justiça.",
+    "cue": "Em 2 Pedro 3:13, segundo a promessa, esperam novos céus e nova terra onde habita a justiça.",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "esperamos novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "A esperança se apoia na promessa de novos céus e nova terra.",
+    "feedbackWrong": {
+      "false": "O versículo afirma essa esperança."
+    },
+    "hint": "Leia o que esperam segundo a promessa.",
+    "learningObjective": "Observar a esperança da promessa.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-03-crescei-na-graca-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3:18, toque o primeiro lugar em que devem crescer.",
+    "prompt": "Em 2 Pedro 3:18, toque o primeiro lugar em que devem crescer.",
+    "cue": "Em 2 Pedro 3:18, toque o primeiro lugar em que devem crescer.",
+    "verseRef": "2 Pedro 3:17–18",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem. Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "graça"
+      },
+      {
+        "id": "c",
+        "text": "engano"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cresçam na graça e no conhecimento",
+    "feedbackCorrect": "Devem crescer na graça e no conhecimento.",
+    "feedbackWrong": {
+      "a": "Glória é atribuída a Cristo no fim.",
+      "c": "Engano é o que arrasta no v.17."
+    },
+    "hint": "Veja o primeiro termo depois de cresçam na.",
+    "learningObjective": "Identificar o lugar do crescimento.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-03-crescei-na-graca-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Pedro 3:14, como devem empenhar-se a ser encontrados?",
+    "prompt": "Segundo 2 Pedro 3:14, como devem empenhar-se a ser encontrados?",
+    "cue": "Segundo 2 Pedro 3:14, como devem empenhar-se a ser encontrados?",
+    "verseRef": "2 Pedro 3:14",
+    "passageText": "Por isso, amados, aguardando essas coisas, empenhem-se para ser encontrados por ele em paz, sem mácula e irrepreensíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem esperar novos céus"
+      },
+      {
+        "id": "b",
+        "text": "Arrastados pelo engano de ímpios"
+      },
+      {
+        "id": "c",
+        "text": "Em paz, sem mácula e irrepreensíveis"
+      },
+      {
+        "id": "d",
+        "text": "Distorcendo as Escrituras difíceis"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "encontrados por ele em paz, sem mácula e irrepreensíveis",
+    "feedbackCorrect": "O empenho visa paz, sem mácula e irrepreensíveis.",
+    "feedbackWrong": {
+      "a": "A esperança dos novos céus permanece.",
+      "b": "Isso é o que devem evitar.",
+      "d": "Distorcer leva à destruição."
+    },
+    "hint": "Leia o fim do versículo 14.",
+    "learningObjective": "Reconhecer o alvo do empenho.",
+    "evidence": [
+      "2 Pedro 3:14"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-03-crescei-na-graca-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 3:18 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 3:18 na ordem do texto.",
+    "cue": "Monte 2 Pedro 3:18 na ordem do texto.",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cresçam na graça"
+      },
+      {
+        "id": "b",
+        "text": "e no conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "de nosso Senhor e Salvador Jesus Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo",
+    "feedbackCorrect": "Primeiro a graça; depois o conhecimento de Cristo.",
+    "feedbackWrong": {
+      "default": "Comece com cresçam na graça."
+    },
+    "hint": "O versículo abre com Antes, cresçam.",
+    "learningObjective": "Seguir a ordem do versículo 18.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-03-crescei-na-graca-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3:15, complete: considerem a ___ de nosso Senhor.",
+    "prompt": "Em 2 Pedro 3:15, complete: considerem a ___ de nosso Senhor.",
+    "cue": "Em 2 Pedro 3:15, complete: considerem a ___ de nosso Senhor.",
+    "verseRef": "2 Pedro 3:15",
+    "passageText": "E considerem a longanimidade de nosso Senhor como uma oportunidade de salvação, assim como também o nosso amado irmão Paulo lhes escreveu, segundo a sabedoria que lhe foi concedida.",
+    "template": "E considerem a ___ de nosso Senhor como uma oportunidade de salvação, assim como também o nosso amado irmão Paulo lhes escreveu, segundo a sabedoria que lhe foi concedida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mácula"
+      },
+      {
+        "id": "b",
+        "text": "destruição"
+      },
+      {
+        "id": "c",
+        "text": "longanimidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "considerem a longanimidade de nosso Senhor como uma oportunidade de salvação",
+    "feedbackCorrect": "A longanimidade é oportunidade de salvação.",
+    "feedbackWrong": {
+      "a": "Mácula é o que devem evitar.",
+      "b": "Destruição é o fim dos que distorcem."
+    },
+    "hint": "É o substantivo depois de considerem a.",
+    "learningObjective": "Lembrar o termo da paciência divina.",
+    "evidence": [
+      "2 Pedro 3:15"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-03-crescei-na-graca-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Pedro 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 3:18 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 3:18 comunica que se liga a este contexto?",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "passageA": {
+      "ref": "2 Pedro 3:18",
+      "text": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Diante do Dia de Deus, Pedro pede santo procedimento, empenho sem mácula e firmeza contra o engano."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deslizar da firmeza"
+      },
+      {
+        "id": "b",
+        "text": "Crescer na graça"
+      },
+      {
+        "id": "c",
+        "text": "Distorcer as Escrituras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cresçam na graça e no conhecimento",
+    "feedbackCorrect": "No fechamento, o chamado positivo é crescer na graça.",
+    "feedbackWrong": {
+      "a": "Deslizar é o que devem evitar.",
+      "c": "Distorcer leva à destruição."
+    },
+    "hint": "Veja o imperativo Antes, cresçam.",
+    "learningObjective": "Ligar o contexto ao crescimento.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-03-crescei-na-graca-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:15, a longanimidade do Senhor deve ser vista como oportunidade de salvação.",
+    "prompt": "Em 2 Pedro 3:15, a longanimidade do Senhor deve ser vista como oportunidade de salvação.",
+    "cue": "Em 2 Pedro 3:15, a longanimidade do Senhor deve ser vista como oportunidade de salvação.",
+    "verseRef": "2 Pedro 3:15",
+    "passageText": "E considerem a longanimidade de nosso Senhor como uma oportunidade de salvação, assim como também o nosso amado irmão Paulo lhes escreveu, segundo a sabedoria que lhe foi concedida.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "considerem a longanimidade de nosso Senhor como uma oportunidade de salvação",
+    "feedbackCorrect": "A demora é lida como longanimidade salvadora.",
+    "feedbackWrong": {
+      "false": "O versículo faz essa leitura explícita."
+    },
+    "hint": "Leia como uma oportunidade de…",
+    "learningObjective": "Ver a relação longanimidade-salvação.",
+    "evidence": [
+      "2 Pedro 3:15"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-03-crescei-na-graca-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:13, toque o marcador do contraste com a dissolução.",
+    "prompt": "Em 2 Pedro 3:13, toque o marcador do contraste com a dissolução.",
+    "cue": "Em 2 Pedro 3:13, toque o marcador do contraste com a dissolução.",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "options": [
+      {
+        "id": "a",
+        "text": "justiça"
+      },
+      {
+        "id": "b",
+        "text": "promessa"
+      },
+      {
+        "id": "c",
+        "text": "No entanto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "No entanto, segundo a sua promessa, esperamos",
+    "feedbackCorrect": "No entanto vira da dissolução para a esperança da promessa.",
+    "feedbackWrong": {
+      "a": "Justiça habita na nova terra.",
+      "b": "Promessa é a base, não o marcador."
+    },
+    "hint": "É a abertura do versículo.",
+    "learningObjective": "Tocar o marcador do contraste.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-03-crescei-na-graca-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 2 Pedro 3:17–18 estabelece?",
+    "prompt": "Qual relação 2 Pedro 3:17–18 estabelece?",
+    "cue": "Qual relação 2 Pedro 3:17–18 estabelece?",
+    "verseRef": "2 Pedro 3:17–18",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem. Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Em vez de deslizar pelo engano, cresçam na graça"
+      },
+      {
+        "id": "b",
+        "text": "Crescer na graça é opcional se houver paz"
+      },
+      {
+        "id": "c",
+        "text": "Engano de ímpios fortalece a firmeza automaticamente"
+      },
+      {
+        "id": "d",
+        "text": "Deslizar prova crescimento na graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Antes, cresçam na graça e no conhecimento",
+    "feedbackCorrect": "O contraste Antes vira do cuidado contra o deslize para o crescimento.",
+    "feedbackWrong": {
+      "b": "O crescimento é mandado.",
+      "c": "Devem cuidar para não ser arrastados.",
+      "d": "Deslizar é o perigo."
+    },
+    "hint": "Una o v.17 ao Antes do v.18.",
+    "learningObjective": "Compreender o contraste final.",
+    "evidence": [
+      "2 Pedro 3:17–18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-03-crescei-na-graca-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do fechamento.",
+    "prompt": "Ordene os movimentos do fechamento.",
+    "cue": "Ordene os movimentos do fechamento.",
+    "verseRef": "2 Pedro 3:13–14",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça. Por isso, amados, aguardando essas coisas, empenhem-se para ser encontrados por ele em paz, sem mácula e irrepreensíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santo procedimento enquanto aguardam"
+      },
+      {
+        "id": "b",
+        "text": "Novos céus e empenho sem mácula"
+      },
+      {
+        "id": "c",
+        "text": "Cuidar da firmeza e crescer na graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "empenhem-se para ser encontrados por ele em paz",
+    "feedbackCorrect": "Do procedimento santo à esperança, até firmeza e crescimento.",
+    "feedbackWrong": {
+      "default": "Comece pelo procedimento; a graça fecha."
+    },
+    "hint": "Siga vv.11, 13–14 e 17–18.",
+    "learningObjective": "Ordenar a estrutura do fechamento.",
+    "evidence": [
+      "2 Pedro 3:11",
+      "2 Pedro 3:14",
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-03-crescei-na-graca-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:18, complete: Antes, ___ na graça.",
+    "prompt": "Em 2 Pedro 3:18, complete: Antes, ___ na graça.",
+    "cue": "Em 2 Pedro 3:18, complete: Antes, ___ na graça.",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "template": "Antes, ___ na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "distorçam"
+      },
+      {
+        "id": "b",
+        "text": "deslizem"
+      },
+      {
+        "id": "c",
+        "text": "cresçam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Antes, cresçam na graça e no conhecimento",
+    "feedbackCorrect": "O verbo do contraste positivo é cresçam.",
+    "feedbackWrong": {
+      "a": "Distorcem descreve os instáveis.",
+      "b": "Deslizem é o perigo do v.17."
+    },
+    "hint": "É o verbo depois de Antes.",
+    "learningObjective": "Lembrar o verbo do crescimento.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-03-crescei-na-graca-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "prompt": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "cue": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "passageA": {
+      "ref": "2 Pedro 3:13",
+      "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+    },
+    "passageB": {
+      "ref": "Apocalipse 21:1",
+      "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Engano de ímpios"
+      },
+      {
+        "id": "b",
+        "text": "Novos céus e nova terra"
+      },
+      {
+        "id": "c",
+        "text": "Distorção das Escrituras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esperamos novos céus e nova terra",
+    "feedbackCorrect": "Pedro e Apocalipse apontam novos céus e nova terra.",
+    "feedbackWrong": {
+      "a": "Engano não é a ponte.",
+      "c": "Distorção não é a ponte."
+    },
+    "hint": "Compare a esperança cósmica.",
+    "learningObjective": "Ligar a promessa dos novos céus.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-03-crescei-na-graca-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 2 Pedro 3:16, distorcer as Escrituras difíceis é inofensivo para ignorantes e instáveis.",
+    "prompt": "Segundo 2 Pedro 3:16, distorcer as Escrituras difíceis é inofensivo para ignorantes e instáveis.",
+    "cue": "Segundo 2 Pedro 3:16, distorcer as Escrituras difíceis é inofensivo para ignorantes e instáveis.",
+    "verseRef": "2 Pedro 3:16",
+    "passageText": "Assim como em todas as suas cartas ele aborda esses temas nos quais há algumas passagens difíceis de compreender que os ignorantes e instáveis distorcem da mesma forma que fazem com as demais Escrituras, para a sua própria destruição.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para a sua própria destruição",
+    "feedbackCorrect": "A distorção leva à própria destruição.",
+    "feedbackWrong": {
+      "true": "O fim do versículo mostra a consequência."
+    },
+    "hint": "Leia o fim da frase sobre distorcem.",
+    "learningObjective": "Rejeitar a leitura inofensiva da distorção.",
+    "evidence": [
+      "2 Pedro 3:16"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-03-crescei-na-graca-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3:17, toque o trecho que sustenta o que não devem perder.",
+    "prompt": "Em 2 Pedro 3:17, toque o trecho que sustenta o que não devem perder.",
+    "cue": "Em 2 Pedro 3:17, toque o trecho que sustenta o que não devem perder.",
+    "verseRef": "2 Pedro 3:17",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "engano"
+      },
+      {
+        "id": "b",
+        "text": "firmeza"
+      },
+      {
+        "id": "c",
+        "text": "ímpios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não deslizem da firmeza que possuem",
+    "feedbackCorrect": "Não devem deslizar da firmeza que possuem.",
+    "feedbackWrong": {
+      "a": "Engano é o que arrasta.",
+      "c": "Ímpios são a fonte do engano."
+    },
+    "hint": "Veja o que vem depois de deslizem da.",
+    "learningObjective": "Sustentar o que preservar.",
+    "evidence": [
+      "2 Pedro 3:17"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-03-crescei-na-graca-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 Pedro 3:11–18 sustenta?",
+    "prompt": "Que leitura 2 Pedro 3:11–18 sustenta?",
+    "cue": "Que leitura 2 Pedro 3:11–18 sustenta?",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aguardar o Dia com santidade, firmeza e crescimento na graça"
+      },
+      {
+        "id": "b",
+        "text": "Deslizar da firmeza é inevitável e bom"
+      },
+      {
+        "id": "c",
+        "text": "A demora cancela a promessa dos novos céus"
+      },
+      {
+        "id": "d",
+        "text": "Distorcer Escrituras é sinal de maturidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo",
+    "feedbackCorrect": "Santo procedimento, empenho, firmeza e crescimento formam o padrão.",
+    "feedbackWrong": {
+      "b": "Devem cuidar para não deslizar.",
+      "c": "A longanimidade é salvação, não cancelamento.",
+      "d": "Distorcer leva à destruição."
+    },
+    "hint": "Una o v.11 ao v.18.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-03-crescei-na-graca-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da esperança ao crescimento?",
+    "prompt": "Qual sequência mostra o fio da esperança ao crescimento?",
+    "cue": "Qual sequência mostra o fio da esperança ao crescimento?",
+    "verseRef": "2 Pedro 3:17–18",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem. Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperar novos céus com justiça"
+      },
+      {
+        "id": "b",
+        "text": "Empenhar-se sem mácula"
+      },
+      {
+        "id": "c",
+        "text": "Crescer na graça e no conhecimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cresçam na graça e no conhecimento",
+    "feedbackCorrect": "Da esperança ao empenho, até o crescimento na graça.",
+    "feedbackWrong": {
+      "default": "Comece pelos novos céus; a graça fecha."
+    },
+    "hint": "Siga vv.13, 14 e 18.",
+    "learningObjective": "Encadear esperança, empenho e crescimento.",
+    "evidence": [
+      "2 Pedro 3:13",
+      "2 Pedro 3:14",
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-03-crescei-na-graca-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 3:17, complete: não sendo arrastados pelo ___ de ímpios.",
+    "prompt": "Em 2 Pedro 3:17, complete: não sendo arrastados pelo ___ de ímpios.",
+    "cue": "Em 2 Pedro 3:17, complete: não sendo arrastados pelo ___ de ímpios.",
+    "verseRef": "2 Pedro 3:17",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem.",
+    "template": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo ___ de ímpios, não deslizem da firmeza que possuem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "engano"
+      },
+      {
+        "id": "c",
+        "text": "procedimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não sendo arrastados pelo engano de ímpios",
+    "feedbackCorrect": "O perigo é ser arrastado pelo engano de ímpios.",
+    "feedbackWrong": {
+      "a": "Conhecimento é o lugar do crescimento no v.18.",
+      "c": "Procedimento santo é o chamado do v.11."
+    },
+    "hint": "Veja o que arrasta no versículo.",
+    "learningObjective": "Lembrar o termo do perigo do deslize.",
+    "evidence": [
+      "2 Pedro 3:17"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-03-crescei-na-graca-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-03-crescei-na-graca",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Pedro 3:18 a Efésios 4:15?",
+    "prompt": "O que liga 2 Pedro 3:18 a Efésios 4:15?",
+    "cue": "O que liga 2 Pedro 3:18 a Efésios 4:15?",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "passageA": {
+      "ref": "2 Pedro 3:18",
+      "text": "cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo"
+    },
+    "passageB": {
+      "ref": "Efésios 4:15",
+      "text": "Antes, seguindo a verdade com amor, cresçamos em tudo naquele que é a cabeça, Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Distorcer Escrituras"
+      },
+      {
+        "id": "b",
+        "text": "Crescer em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Deslizar da firmeza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cresçam na graça e no conhecimento",
+    "feedbackCorrect": "Nos dois textos, o crescimento aponta para Cristo.",
+    "feedbackWrong": {
+      "a": "Distorção não é a ponte.",
+      "c": "Deslizar é o perigo, não a ponte."
+    },
+    "hint": "Compare o crescimento em Cristo.",
+    "learningObjective": "Ligar o crescimento em Pedro e Paulo.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 Pedro 1:3, o divino poder ainda não concedeu nada para a vida e a piedade.",
+    "prompt": "Em 2 Pedro 1:3, o divino poder ainda não concedeu nada para a vida e a piedade.",
+    "cue": "Em 2 Pedro 1:3, o divino poder ainda não concedeu nada para a vida e a piedade.",
+    "verseRef": "2 Pedro 1:3",
+    "passageText": "Seu divino poder nos tem concedido tudo o que diz respeito à vida e à piedade, por meio do pleno conhecimento daquele que nos chamou para sua própria glória e excelência.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "nos tem concedido tudo o que diz respeito à vida e à piedade",
+    "feedbackCorrect": "O poder já concedeu tudo para vida e piedade.",
+    "feedbackWrong": {
+      "true": "O versículo afirma a concessão."
+    },
+    "hint": "Leia o que tem concedido.",
+    "learningObjective": "Observar o dom divino.",
+    "evidence": [
+      "2 Pedro 1:3"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Pedro 1:5, toque o que acrescentam à fé.",
+    "prompt": "Em 2 Pedro 1:5, toque o que acrescentam à fé.",
+    "cue": "Em 2 Pedro 1:5, toque o que acrescentam à fé.",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "diligência"
+      },
+      {
+        "id": "c",
+        "text": "virtude"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "Acrescentam a virtude à fé.",
+    "feedbackWrong": {
+      "a": "Cegos descreve quem não tem as qualidades.",
+      "b": "Ociosos é o que se evita."
+    },
+    "hint": "Veja depois de à fé de vocês.",
+    "learningObjective": "Identificar o primeiro elo.",
+    "evidence": [
+      "2 Pedro 1:5"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 Pedro 2:9, o que o Senhor sabe fazer?",
+    "prompt": "Segundo 2 Pedro 2:9, o que o Senhor sabe fazer?",
+    "cue": "Segundo 2 Pedro 2:9, o que o Senhor sabe fazer?",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "Poupar os anjos que pecaram"
+      },
+      {
+        "id": "b",
+        "text": "Livrar os piedosos e reservar os injustos"
+      },
+      {
+        "id": "c",
+        "text": "Infamar o caminho da verdade"
+      },
+      {
+        "id": "d",
+        "text": "Cancelar a promessa dos novos céus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "livrar os piedosos da provação e reservar os injustos",
+    "feedbackCorrect": "Ele sabe livrar e reservar.",
+    "feedbackWrong": {
+      "a": "Não poupou os anjos.",
+      "c": "Infamar é o dano dos falsos.",
+      "d": "A promessa permanece."
+    },
+    "hint": "Leia o versículo 9.",
+    "learningObjective": "Reconhecer o que o Senhor sabe.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 3:18 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 3:18 na ordem do texto.",
+    "cue": "Monte 2 Pedro 3:18 na ordem do texto.",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cresçam na graça"
+      },
+      {
+        "id": "b",
+        "text": "e no conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "de nosso Senhor e Salvador Jesus Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo",
+    "feedbackCorrect": "Graça primeiro; depois conhecimento de Cristo.",
+    "feedbackWrong": {
+      "default": "Comece com cresçam na graça."
+    },
+    "hint": "O versículo abre com Antes, cresçam.",
+    "learningObjective": "Seguir a ordem do crescimento.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 Pedro 2:1, complete: introduzirão, dissimuladamente, ___.",
+    "prompt": "Em 2 Pedro 2:1, complete: introduzirão, dissimuladamente, ___.",
+    "cue": "Em 2 Pedro 2:1, complete: introduzirão, dissimuladamente, ___.",
+    "verseRef": "2 Pedro 2:1",
+    "passageText": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, heresias destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição.",
+    "template": "Houve também, entre o povo, falsos profetas; assim como entre vós haverá falsos mestres, os quais introduzirão, dissimuladamente, ___ destrutivas e até renegarem o Soberano Senhor que os resgatou, trazendo sobre si mesmos repentina destruição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "virtude"
+      },
+      {
+        "id": "b",
+        "text": "heresias"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "heresias destrutivas",
+    "feedbackCorrect": "Introduzem heresias destrutivas.",
+    "feedbackWrong": {
+      "a": "Virtude é o que se acrescenta à fé.",
+      "c": "Graça é o lugar do crescimento."
+    },
+    "hint": "Veja o que introduzem.",
+    "learningObjective": "Lembrar o conteúdo dos falsos.",
+    "evidence": [
+      "2 Pedro 2:1"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 Pedro 3:13 comunica que se liga a este contexto?",
+    "prompt": "O que 2 Pedro 3:13 comunica que se liga a este contexto?",
+    "cue": "O que 2 Pedro 3:13 comunica que se liga a este contexto?",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "passageA": {
+      "ref": "2 Pedro 3:13",
+      "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Travessia revisa o dom divino, o alerta contra falsos e o crescimento até o Dia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Novos céus e justiça"
+      },
+      {
+        "id": "b",
+        "text": "Fé ociosa"
+      },
+      {
+        "id": "c",
+        "text": "Heresias sem juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "novos céus e nova terra, onde habita a justiça",
+    "feedbackCorrect": "No arco da carta, a esperança aponta novos céus com justiça.",
+    "feedbackWrong": {
+      "b": "A fé deve acrescentar virtudes.",
+      "c": "Heresias enfrentam juízo."
+    },
+    "hint": "Veja o que esperam.",
+    "learningObjective": "Ligar o contexto à esperança.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-07",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 Pedro 3:17, toque o que não devem perder ao ser arrastados.",
+    "prompt": "Em 2 Pedro 3:17, toque o que não devem perder ao ser arrastados.",
+    "cue": "Em 2 Pedro 3:17, toque o que não devem perder ao ser arrastados.",
+    "verseRef": "2 Pedro 3:17",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "engano"
+      },
+      {
+        "id": "b",
+        "text": "firmeza"
+      },
+      {
+        "id": "c",
+        "text": "ímpios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não deslizem da firmeza que possuem",
+    "feedbackCorrect": "Não devem deslizar da firmeza.",
+    "feedbackWrong": {
+      "a": "Engano é o que arrasta.",
+      "c": "Ímpios são a fonte do engano."
+    },
+    "hint": "Veja depois de deslizem da.",
+    "learningObjective": "Identificar o que preservar.",
+    "evidence": [
+      "2 Pedro 3:17"
+    ]
+  },
+  {
+    "id": "2pedro-cap-sem-p2c-boss-1-08",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 Pedro 2:9 na ordem do texto.",
+    "prompt": "Monte 2 Pedro 2:9 na ordem do texto.",
+    "cue": "Monte 2 Pedro 2:9 na ordem do texto.",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor sabe livrar os piedosos da provação"
+      },
+      {
+        "id": "b",
+        "text": "e reservar os injustos"
+      },
+      {
+        "id": "c",
+        "text": "para o Dia do Juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo",
+    "feedbackCorrect": "Livrar primeiro; reservar depois.",
+    "feedbackWrong": {
+      "default": "Comece com O Senhor sabe livrar."
+    },
+    "hint": "O versículo une livrar e reservar.",
+    "learningObjective": "Seguir a ordem do v.9.",
+    "evidence": [
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 Pedro 2:2, por causa dos falsos o caminho da verdade será exaltado.",
+    "prompt": "Em 2 Pedro 2:2, por causa dos falsos o caminho da verdade será exaltado.",
+    "cue": "Em 2 Pedro 2:2, por causa dos falsos o caminho da verdade será exaltado.",
+    "verseRef": "2 Pedro 2:2",
+    "passageText": "E muitos seguirão suas práticas libertinas, e, por causa deles, será infamado o caminho da verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "será infamado o caminho da verdade",
+    "feedbackCorrect": "O caminho será infamado.",
+    "feedbackWrong": {
+      "true": "A palavra é infamado."
+    },
+    "hint": "Leia o fim do v.2.",
+    "learningObjective": "Ver o resultado dos falsos.",
+    "evidence": [
+      "2 Pedro 2:2"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 1:4, toque o marcador do propósito das promessas.",
+    "prompt": "Em 2 Pedro 1:4, toque o marcador do propósito das promessas.",
+    "cue": "Em 2 Pedro 1:4, toque o marcador do propósito das promessas.",
+    "verseRef": "2 Pedro 1:4",
+    "passageText": "Por meio delas, ele nos tem concedido suas preciosas e mui grandes promessas, para que, por elas, possamos ser coparticipantes da natureza divina, escapando da corrupção que há no mundo, resultante das paixões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para que"
+      },
+      {
+        "id": "b",
+        "text": "corrupção"
+      },
+      {
+        "id": "c",
+        "text": "preciosas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que, por elas, possamos ser coparticipantes",
+    "feedbackCorrect": "Para que marca o propósito.",
+    "feedbackWrong": {
+      "b": "Corrupção é o que se escapa.",
+      "c": "Preciosas descreve as promessas."
+    },
+    "hint": "Procure a finalidade.",
+    "learningObjective": "Tocar o marcador de propósito.",
+    "evidence": [
+      "2 Pedro 1:4"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 2 Pedro 3:17–18 estabelece?",
+    "prompt": "Qual relação 2 Pedro 3:17–18 estabelece?",
+    "cue": "Qual relação 2 Pedro 3:17–18 estabelece?",
+    "verseRef": "2 Pedro 3:17–18",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem. Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Engano fortalece a firmeza sozinho"
+      },
+      {
+        "id": "b",
+        "text": "Deslizar é o alvo do crescimento"
+      },
+      {
+        "id": "c",
+        "text": "Em vez de deslizar, cresçam na graça"
+      },
+      {
+        "id": "d",
+        "text": "Crescer na graça é opcional"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Antes, cresçam na graça e no conhecimento",
+    "feedbackCorrect": "O contraste Antes vira para o crescimento.",
+    "feedbackWrong": {
+      "a": "Devem cuidar.",
+      "b": "Deslizar é o perigo.",
+      "d": "O crescimento é mandado."
+    },
+    "hint": "Una o v.17 ao Antes.",
+    "learningObjective": "Compreender o contraste final.",
+    "evidence": [
+      "2 Pedro 3:17–18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos da carta.",
+    "prompt": "Ordene os movimentos da carta.",
+    "cue": "Ordene os movimentos da carta.",
+    "verseRef": "2 Pedro 1:5",
+    "passageText": "E vocês, reunindo toda a sua diligência, acrescentem à fé de vocês a virtude; à virtude, o conhecimento;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dom divino e cadeia da fé"
+      },
+      {
+        "id": "b",
+        "text": "Falsos mestres e juízo"
+      },
+      {
+        "id": "c",
+        "text": "Firmeza e crescimento na graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "acrescentem à fé de vocês a virtude",
+    "feedbackCorrect": "Do dom ao alerta, até a firmeza na graça.",
+    "feedbackWrong": {
+      "default": "Comece pelo dom; a graça fecha."
+    },
+    "hint": "Siga o arco da carta.",
+    "learningObjective": "Ordenar o arco da Travessia.",
+    "evidence": [
+      "2 Pedro 1:3",
+      "2 Pedro 2:1",
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:15, complete: considerem a ___ de nosso Senhor.",
+    "prompt": "Em 2 Pedro 3:15, complete: considerem a ___ de nosso Senhor.",
+    "cue": "Em 2 Pedro 3:15, complete: considerem a ___ de nosso Senhor.",
+    "verseRef": "2 Pedro 3:15",
+    "passageText": "E considerem a longanimidade de nosso Senhor como uma oportunidade de salvação, assim como também o nosso amado irmão Paulo lhes escreveu, segundo a sabedoria que lhe foi concedida.",
+    "template": "E considerem a ___ de nosso Senhor como uma oportunidade de salvação, assim como também o nosso amado irmão Paulo lhes escreveu, segundo a sabedoria que lhe foi concedida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "corrupção"
+      },
+      {
+        "id": "b",
+        "text": "heresia"
+      },
+      {
+        "id": "c",
+        "text": "longanimidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "considerem a longanimidade de nosso Senhor",
+    "feedbackCorrect": "A longanimidade é oportunidade de salvação.",
+    "feedbackWrong": {
+      "a": "Corrupção é o que se escapa no cap.1.",
+      "b": "Heresia é o perigo dos falsos."
+    },
+    "hint": "Veja depois de considerem a.",
+    "learningObjective": "Lembrar o termo da paciência.",
+    "evidence": [
+      "2 Pedro 3:15"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "prompt": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "cue": "O que liga 2 Pedro 3:13 a Apocalipse 21:1?",
+    "verseRef": "2 Pedro 3:13",
+    "passageText": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça.",
+    "passageA": {
+      "ref": "2 Pedro 3:13",
+      "text": "No entanto, segundo a sua promessa, esperamos novos céus e nova terra, onde habita a justiça."
+    },
+    "passageB": {
+      "ref": "Apocalipse 21:1",
+      "text": "Vi um novo céu e uma nova terra, pois o primeiro céu e a primeira terra passaram e o mar já não existe."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Novos céus e nova terra"
+      },
+      {
+        "id": "b",
+        "text": "Anjos não poupados"
+      },
+      {
+        "id": "c",
+        "text": "Heresias destrutivas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "novos céus e nova terra",
+    "feedbackCorrect": "Ambos apontam novos céus e nova terra.",
+    "feedbackWrong": {
+      "b": "Anjos não são a ponte.",
+      "c": "Heresias não são a ponte."
+    },
+    "hint": "Compare a esperança cósmica.",
+    "learningObjective": "Ligar a promessa.",
+    "evidence": [
+      "2 Pedro 3:13"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-07",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 Pedro 3:18, toque a palavra que marca a virada do deslize.",
+    "prompt": "Em 2 Pedro 3:18, toque a palavra que marca a virada do deslize.",
+    "cue": "Em 2 Pedro 3:18, toque a palavra que marca a virada do deslize.",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Antes"
+      },
+      {
+        "id": "b",
+        "text": "eterno"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Antes, cresçam na graça",
+    "feedbackCorrect": "Antes vira para o crescimento.",
+    "feedbackWrong": {
+      "b": "Eterno descreve o dia.",
+      "c": "Glória é atribuída a Cristo."
+    },
+    "hint": "É a primeira palavra.",
+    "learningObjective": "Tocar o marcador da virada.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-cam-p2c-boss-1-08",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene a lógica do juízo e livramento.",
+    "prompt": "Ordene a lógica do juízo e livramento.",
+    "cue": "Ordene a lógica do juízo e livramento.",
+    "verseRef": "2 Pedro 2:9",
+    "passageText": "O Senhor sabe livrar os piedosos da provação e reservar os injustos para o Dia do Juízo a fim de serem castigados",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entrada de falsos mestres"
+      },
+      {
+        "id": "b",
+        "text": "Exemplos de juízo histórico"
+      },
+      {
+        "id": "c",
+        "text": "Livrar piedosos e reservar injustos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor sabe livrar os piedosos",
+    "feedbackCorrect": "Do alerta aos exemplos, até a conclusão.",
+    "feedbackWrong": {
+      "default": "Comece pelos falsos; o livrar fecha."
+    },
+    "hint": "Siga 2:1, 2:4–6 e 2:9.",
+    "learningObjective": "Ordenar alerta e juízo.",
+    "evidence": [
+      "2 Pedro 2:1",
+      "2 Pedro 2:6",
+      "2 Pedro 2:9"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-01",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 2 Pedro 3:18, os leitores devem crescer na graça e no conhecimento de Jesus Cristo.",
+    "prompt": "Segundo 2 Pedro 3:18, os leitores devem crescer na graça e no conhecimento de Jesus Cristo.",
+    "cue": "Segundo 2 Pedro 3:18, os leitores devem crescer na graça e no conhecimento de Jesus Cristo.",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo",
+    "feedbackCorrect": "O fechamento manda crescer na graça e no conhecimento.",
+    "feedbackWrong": {
+      "false": "O versículo afirma o imperativo."
+    },
+    "hint": "Leia o imperativo Antes, cresçam.",
+    "learningObjective": "Confirmar o chamado final.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-02",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 2:6, toque o trecho que sustenta o papel de Sodoma.",
+    "prompt": "Em 2 Pedro 2:6, toque o trecho que sustenta o papel de Sodoma.",
+    "cue": "Em 2 Pedro 2:6, toque o trecho que sustenta o papel de Sodoma.",
+    "verseRef": "2 Pedro 2:6",
+    "passageText": "E, reduzindo a cinzas as cidades de Sodoma e Gomorra, condenou-as à ruína completa, tornando-as exemplo para aqueles que venham a viver impiamente.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exemplo"
+      },
+      {
+        "id": "b",
+        "text": "ruína"
+      },
+      {
+        "id": "c",
+        "text": "cinzas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tornando-as exemplo",
+    "feedbackCorrect": "Foram tornadas exemplo.",
+    "feedbackWrong": {
+      "b": "Ruína completa descreve a condenação.",
+      "c": "Cinzas descreve a ruína."
+    },
+    "hint": "Veja o que se tornaram.",
+    "learningObjective": "Sustentar o papel de exemplo.",
+    "evidence": [
+      "2 Pedro 2:6"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-03",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o arco de 2 Pedro sustenta?",
+    "prompt": "Que leitura o arco de 2 Pedro sustenta?",
+    "cue": "Que leitura o arco de 2 Pedro sustenta?",
+    "verseRef": "2 Pedro 3:18",
+    "passageText": "Antes, cresçam na graça e no conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, tanto agora quanto no dia eterno. Amém.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignorar virtudes e confiar só em heresias"
+      },
+      {
+        "id": "b",
+        "text": "A demora cancela novos céus"
+      },
+      {
+        "id": "c",
+        "text": "Receber o dom, vigiar falsos e crescer na graça até o Dia"
+      },
+      {
+        "id": "d",
+        "text": "Deslizar da firmeza prova maturidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cresçam na graça e no conhecimento",
+    "feedbackCorrect": "Dom, vigilância e crescimento formam o fio.",
+    "feedbackWrong": {
+      "a": "Virtudes são mandadas; heresias, rejeitadas.",
+      "b": "A promessa permanece.",
+      "d": "Deslizar é o perigo."
+    },
+    "hint": "Una 1:5, 2:9 e 3:18.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-04",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do dom ao Dia?",
+    "prompt": "Qual sequência mostra o fio do dom ao Dia?",
+    "cue": "Qual sequência mostra o fio do dom ao Dia?",
+    "verseRef": "2 Pedro 3:14",
+    "passageText": "Por isso, amados, aguardando essas coisas, empenhem-se para ser encontrados por ele em paz, sem mácula e irrepreensíveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acrescentar virtudes à fé"
+      },
+      {
+        "id": "b",
+        "text": "Confiar no Senhor que livra"
+      },
+      {
+        "id": "c",
+        "text": "Crescer na graça aguardando o Dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "empenhem-se para ser encontrados por ele em paz",
+    "feedbackCorrect": "Da cadeia da fé ao livramento, até crescer aguardando.",
+    "feedbackWrong": {
+      "default": "Comece pelas virtudes; a graça fecha."
+    },
+    "hint": "Siga 1:5, 2:9 e 3:18.",
+    "learningObjective": "Encadear fé, juízo e graça.",
+    "evidence": [
+      "2 Pedro 1:5",
+      "2 Pedro 2:9",
+      "2 Pedro 3:18"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-05",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 1:10, complete: nunca ___ em tempo algum.",
+    "prompt": "Em 2 Pedro 1:10, complete: nunca ___ em tempo algum.",
+    "cue": "Em 2 Pedro 1:10, complete: nunca ___ em tempo algum.",
+    "verseRef": "2 Pedro 1:10",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum.",
+    "template": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca ___ em tempo algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "crescerão"
+      },
+      {
+        "id": "b",
+        "text": "tropeçarão"
+      },
+      {
+        "id": "c",
+        "text": "livrarão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nunca tropeçarão em tempo algum",
+    "feedbackCorrect": "Confirmando a eleição, nunca tropeçarão.",
+    "feedbackWrong": {
+      "a": "Crescer é o chamado do cap.3.",
+      "c": "Livrar é ação do Senhor no cap.2."
+    },
+    "hint": "Veja depois de nunca.",
+    "learningObjective": "Lembrar o resultado da confirmação.",
+    "evidence": [
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-06",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 Pedro 2:6 a Judas 1:7?",
+    "prompt": "O que liga 2 Pedro 2:6 a Judas 1:7?",
+    "cue": "O que liga 2 Pedro 2:6 a Judas 1:7?",
+    "verseRef": "2 Pedro 2:6",
+    "passageText": "E, reduzindo a cinzas as cidades de Sodoma e Gomorra, condenou-as à ruína completa, tornando-as exemplo para aqueles que venham a viver impiamente.",
+    "passageA": {
+      "ref": "2 Pedro 2:6",
+      "text": "E, reduzindo a cinzas as cidades de Sodoma e Gomorra, condenou-as à ruína completa, tornando-as exemplo para aqueles que venham a viver impiamente."
+    },
+    "passageB": {
+      "ref": "Judas 1:7",
+      "text": "Como Sodoma e Gomorra e as cidades circunvizinhas que, havendo-se entregado à prostituição como aqueles, se deixaram levar por outra carne, são postas como exemplo, sofrendo a punição do fogo eterno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sodoma como exemplo"
+      },
+      {
+        "id": "b",
+        "text": "Cadeia da fé"
+      },
+      {
+        "id": "c",
+        "text": "Novos céus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tornando-as exemplo",
+    "feedbackCorrect": "Pedro e Judas usam Sodoma como exemplo.",
+    "feedbackWrong": {
+      "b": "Cadeia da fé não é a ponte.",
+      "c": "Novos céus não são a ponte aqui."
+    },
+    "hint": "Compare Sodoma.",
+    "learningObjective": "Ligar o exemplo de juízo.",
+    "evidence": [
+      "2 Pedro 2:6"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-07",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 Pedro 1:10, toque o trecho que sustenta o que confirmar.",
+    "prompt": "Em 2 Pedro 1:10, toque o trecho que sustenta o que confirmar.",
+    "cue": "Em 2 Pedro 1:10, toque o trecho que sustenta o que confirmar.",
+    "verseRef": "2 Pedro 1:10",
+    "passageText": "Portanto, irmãos, esforcem-se cada vez mais para confirmar a sua vocação e eleição; pois, agindo assim, nunca tropeçarão em tempo algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocação e eleição"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "tropeçarão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "confirmar a sua vocação e eleição",
+    "feedbackCorrect": "Devem confirmar vocação e eleição.",
+    "feedbackWrong": {
+      "b": "Dilúvio é exemplo do cap.2.",
+      "c": "Mácula é o que evitar no cap.3."
+    },
+    "hint": "Veja depois de confirmar a sua.",
+    "learningObjective": "Sustentar o que confirmar.",
+    "evidence": [
+      "2 Pedro 1:10"
+    ]
+  },
+  {
+    "id": "2pedro-cap-pro-p2c-boss-1-08",
+    "trail": "2pedro-cap",
+    "section": "p2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho até a firmeza?",
+    "prompt": "Qual sequência revela o caminho até a firmeza?",
+    "cue": "Qual sequência revela o caminho até a firmeza?",
+    "verseRef": "2 Pedro 3:17",
+    "passageText": "Amados, portanto, cientes disso de antemão, cuidem para que, não sendo arrastados pelo engano de ímpios, não deslizem da firmeza que possuem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Receber tudo para vida e piedade"
+      },
+      {
+        "id": "b",
+        "text": "Rejeitar heresias destrutivas"
+      },
+      {
+        "id": "c",
+        "text": "Guardar a firmeza e crescer"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não deslizem da firmeza que possuem",
+    "feedbackCorrect": "Do dom à rejeição dos falsos, até guardar e crescer.",
+    "feedbackWrong": {
+      "default": "Comece pelo dom; a firmeza fecha."
+    },
+    "hint": "Siga 1:3, 2:1 e 3:17–18.",
+    "learningObjective": "Encadear dom, alerta e firmeza.",
+    "evidence": [
+      "2 Pedro 1:3",
+      "2 Pedro 2:1",
+      "2 Pedro 3:17"
+    ]
+  }
+]

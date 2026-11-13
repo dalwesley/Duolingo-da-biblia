@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Números 1:49–54",
+    "passages": [
+      {
+        "ref": "Números 1:47–52"
+      },
+      {
+        "ref": "Números 1:53–54"
+      }
+    ],
+    "context": "Israel é contado para a guerra. No meio do acampamento, Deus separa uma tribo que não entra no censo: os levitas cuidam do tabernáculo.",
+    "keyword": "Levitas",
+    "keywordGloss": "Tribo separada do censo de guerra para cuidar do tabernáculo do Testemunho.",
+    "focusQuestion": "O que Deus pediu a você para guardar, mesmo quando o restante do povo segue outro ritmo?",
+    "reflectionPrompts": [
+      "Separados para servir",
+      "Cuidar da habitação",
+      "Obedecer à ordem"
+    ],
+    "facts": [
+      {
+        "text": "Os levitas não foram contabilizados entre as outras tribos.",
+        "evidenceRef": "Números 1:47",
+        "evidenceSpan": "não foram contabilizados entre eles"
+      },
+      {
+        "text": "O Senhor ordenou a Moisés que não contasse a tribo de Levi.",
+        "evidenceRef": "Números 1:49",
+        "evidenceSpan": "não contarás a tribo de Levi"
+      },
+      {
+        "text": "Os levitas devem cuidar do tabernáculo do Testemunho e de seus utensílios.",
+        "evidenceRef": "Números 1:50",
+        "evidenceSpan": "cuidar do tabernáculo do Testemunho"
+      },
+      {
+        "text": "Os levitas desarmam e montam o tabernáculo; o estranho que se aproximar morre.",
+        "evidenceRef": "Números 1:51",
+        "evidenceSpan": "qualquer estranho que se aproximar morrerá"
+      },
+      {
+        "text": "Os levitas acampam ao redor do tabernáculo para que não haja ira sobre a congregação.",
+        "evidenceRef": "Números 1:53",
+        "evidenceSpan": "para que não haja ira sobre a congregação"
+      },
+      {
+        "text": "Israel fez conforme tudo o que o Senhor ordenara a Moisés.",
+        "evidenceRef": "Números 1:54",
+        "evidenceSpan": "de acordo com tudo o que o Senhor havia ordenado a Moisés"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "tabernáculo",
+        "gloss": "Habitação do Testemunho que os levitas transportam, montam e guardam."
+      },
+      {
+        "term": "levitas",
+        "gloss": "Tribo designada ao serviço santo, fora do censo de guerra."
+      },
+      {
+        "term": "Testemunho",
+        "gloss": "Nome do tabernáculo ligado à presença e à palavra de Deus no meio do povo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Levi fica fora do censo",
+        "evidenceRef": "Números 1:47–49"
+      },
+      {
+        "label": "Os levitas são designados ao tabernáculo",
+        "evidenceRef": "Números 1:50"
+      },
+      {
+        "label": "Eles montam, desarmam e acampam ao redor",
+        "evidenceRef": "Números 1:51–53"
+      },
+      {
+        "label": "O povo obedece à ordem do Senhor",
+        "evidenceRef": "Números 1:54"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Enquanto as demais tribos entram no censo, Levi fica de fora por ordem do Senhor.",
+        "marker": "Porém",
+        "evidenceRef": "Números 1:47"
+      },
+      {
+        "kind": "propósito",
+        "text": "Os levitas acampam ao redor do tabernáculo para proteger a congregação da ira.",
+        "marker": "para que",
+        "evidenceRef": "Números 1:53"
+      },
+      {
+        "kind": "resultado",
+        "text": "Israel age conforme a ordem dada a Moisés.",
+        "marker": "Assim",
+        "evidenceRef": "Números 1:54"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 32:26",
+        "bridge": "Levi se põe com o Senhor"
+      },
+      {
+        "ref": "Deuteronômio 10:8",
+        "bridge": "Levi separado para o serviço"
+      },
+      {
+        "ref": "1 Crônicas 23:32",
+        "bridge": "Cuidar da casa de Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os levitas ficaram de fora porque eram menos importantes que as outras tribos.",
+        "why": "O texto os designa ao cuidado do tabernáculo: a exclusão do censo é vocação, não desprezo."
+      },
+      {
+        "text": "Qualquer israelita podia aproximar-se do tabernáculo sem risco.",
+        "why": "O texto diz que qualquer estranho que se aproximar morrerá."
+      },
+      {
+        "text": "Os levitas acampavam longe do tabernáculo, como as demais tribos.",
+        "why": "Eles armam tendas ao redor do tabernáculo do Testemunho."
+      }
+    ],
+    "centralInsight": "Deus separa gente para guardar a sua habitação enquanto o povo se organiza.",
+    "anchorQuestion": "Por que os levitas não entraram no censo das outras tribos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Os levitas não foram contabilizados entre as demais tribos no censo.",
+      "verseRef": "Números 1:47",
+      "correctOptionId": "true",
+      "evidenceSpan": "não foram contabilizados entre eles",
+      "feedbackCorrect": "O texto abre dizendo que os levitas ficaram de fora da contagem.",
+      "feedbackWrong": {
+        "false": "Releia Números 1:47: os levitas não foram contabilizados entre eles."
+      },
+      "hint": "Veja o começo do trecho.",
+      "learningObjective": "Observar que Levi fica fora do censo.",
+      "evidence": [
+        "Números 1:47"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 1:50, toque quem deve cuidar do tabernáculo do Testemunho.",
+      "verseRef": "Números 1:50",
+      "options": [
+        {
+          "id": "a",
+          "text": "utensílios"
+        },
+        {
+          "id": "b",
+          "text": "levitas"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "designar os levitas para cuidar",
+      "feedbackCorrect": "Os levitas são designados para cuidar do tabernáculo e de tudo o que lhe pertence.",
+      "feedbackWrong": {
+        "a": "Os utensílios são o que se cuida, não quem cuida.",
+        "c": "Israel acampa em seus arraiais; quem cuida são os levitas."
+      },
+      "hint": "Procure quem é designado para cuidar.",
+      "learningObjective": "Identificar os levitas como cuidadores do tabernáculo.",
+      "evidence": [
+        "Números 1:50"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 1:53, onde os levitas devem armar suas tendas.",
+      "verseRef": "Números 1:53",
+      "options": [
+        {
+          "id": "a",
+          "text": "Longe do acampamento de Israel"
+        },
+        {
+          "id": "b",
+          "text": "No meio das outras tribos"
+        },
+        {
+          "id": "c",
+          "text": "O texto deixa claro: os levitas armarão suas tendas ao redor do tabernáculo"
+        },
+        {
+          "id": "d",
+          "text": "Só junto ao estandarte de Judá"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "ao redor do tabernáculo do Testemunho",
+      "feedbackCorrect": "Eles acampam ao redor do tabernáculo para cuidar dele e proteger o povo.",
+      "feedbackWrong": {
+        "a": "O texto os põe ao redor do tabernáculo, no centro.",
+        "b": "Cada tribo tem seu arraial; os levitas ficam ao redor do tabernáculo.",
+        "d": "O texto não os liga ao estandarte de Judá."
+      },
+      "hint": "Olhe onde eles armam as tendas.",
+      "learningObjective": "Observar o lugar do acampamento levítico.",
+      "evidence": [
+        "Números 1:53"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 1:54 na ordem do texto.",
+      "verseRef": "Números 1:54",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assim fizeram os filhos de Israel"
+        },
+        {
+          "id": "b",
+          "text": "de acordo com tudo o que o Senhor havia ordenado a Moisés"
+        },
+        {
+          "id": "c",
+          "text": "assim agiram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Assim fizeram os filhos de Israel",
+      "feedbackCorrect": "O povo obedeceu: fez conforme tudo o que o Senhor ordenara a Moisés.",
+      "feedbackWrong": {
+        "default": "Comece pelo que Israel fez; termine com “assim agiram”."
+      },
+      "hint": "O versículo fecha com a obediência.",
+      "learningObjective": "Reconhecer a sequência da obediência em Números 1:54.",
+      "evidence": [
+        "Números 1:54"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 1:49, o que Moisés não deve realizar sobre Levi entre Israel.",
+      "verseRef": "Números 1:49",
+      "options": [
+        {
+          "id": "a",
+          "text": "altar"
+        },
+        {
+          "id": "b",
+          "text": "censo"
+        },
+        {
+          "id": "c",
+          "text": "arraial"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "nem realizarás o censo deles",
+      "feedbackCorrect": "Levi fica fora do censo: não entra na contagem de guerra.",
+      "feedbackWrong": {
+        "a": "O texto fala de censo, não de altar.",
+        "c": "Arraial aparece depois; aqui a ordem é sobre o censo."
+      },
+      "hint": "Veja o que não se fará com a tribo de Levi.",
+      "learningObjective": "Lembrar que Levi não entra no censo.",
+      "evidence": [
+        "Números 1:49"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 1:50 comunica que se liga a este contexto.",
+      "verseRef": "Números 1:50",
+      "passageA": {
+        "ref": "Números 1:50"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus separa gente para guardar a sua habitação enquanto o povo se organiza."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi vai à guerra"
+        },
+        {
+          "id": "b",
+          "text": "Cuidar do tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "Contar todas as tribos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cuidar do tabernáculo do Testemunho",
+      "feedbackCorrect": "A designação dos levitas é para guardar e servir a habitação de Deus.",
+      "feedbackWrong": {
+        "a": "Levi fica fora do censo de guerra.",
+        "c": "O texto exclui Levi da contagem."
+      },
+      "hint": "Veja a tarefa dada aos levitas.",
+      "learningObjective": "Ligar o versículo à vocação de guardar a habitação.",
+      "evidence": [
+        "Números 1:50"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Os levitas acampam ao redor do tabernáculo apenas por comodidade, sem ligação com a proteção do povo.",
+      "verseRef": "Números 1:53",
+      "correctOptionId": "false",
+      "evidenceSpan": "para que não haja ira sobre a congregação",
+      "feedbackCorrect": "O \"para que\" marca o propósito: o acampamento levítico protege a congregação da ira.",
+      "feedbackWrong": {
+        "true": "Releia Números 1:53: eles acampam ali para que não haja ira sobre a congregação."
+      },
+      "hint": "Repare na expressão de finalidade no versículo.",
+      "learningObjective": "Compreender o propósito do acampamento levítico.",
+      "evidence": [
+        "Números 1:53"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 1:53, toque a expressão que marca o propósito do acampamento dos levitas.",
+      "verseRef": "Números 1:53",
+      "options": [
+        {
+          "id": "a",
+          "text": "por isso"
+        },
+        {
+          "id": "b",
+          "text": "ao redor"
+        },
+        {
+          "id": "c",
+          "text": "para que"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para que não haja ira",
+      "feedbackCorrect": "\"Para que\" mostra a finalidade: evitar ira sobre a congregação.",
+      "feedbackWrong": {
+        "a": "\"Por isso\" introduz a responsabilidade; o propósito vem antes.",
+        "b": "\"Ao redor\" diz o lugar, não o propósito."
+      },
+      "hint": "Procure a expressão de finalidade.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Números 1:53"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Números 1:47–49 se relaciona com o papel dos levitas.",
+      "verseRef": "Números 1:47–49",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mostra que Levi é excluído do censo para outra tarefa"
+        },
+        {
+          "id": "b",
+          "text": "Mostra que Levi perdeu o direito de herança"
+        },
+        {
+          "id": "c",
+          "text": "Mostra que Levi será contado depois das outras tribos"
+        },
+        {
+          "id": "d",
+          "text": "Mostra que Levi deve liderar a guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não contarás a tribo de Levi",
+      "feedbackCorrect": "A exclusão do censo abre espaço para a designação ao tabernáculo.",
+      "feedbackWrong": {
+        "b": "O texto não fala de perda de herança aqui.",
+        "c": "A ordem é não contá-los entre Israel, não adiar a contagem.",
+        "d": "Eles ficam fora do censo de guerra."
+      },
+      "hint": "Pense no contraste \"porém\" com as outras tribos.",
+      "learningObjective": "Relacionar a exclusão do censo à vocação levíticas.",
+      "evidence": [
+        "Números 1:47–49"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Números 1:49–54.",
+      "verseRef": "Números 1:49–54",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi fica fora do censo por ordem do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Os levitas são designados ao tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "O povo faz conforme a ordem dada a Moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Assim fizeram os filhos de Israel",
+      "feedbackCorrect": "Primeiro a exclusão, depois a tarefa, e por fim a obediência do povo.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem de não contar; termine com a obediência."
+      },
+      "hint": "A obediência fecha o trecho.",
+      "learningObjective": "Compreender o movimento da ordem à prática.",
+      "evidence": [
+        "Números 1:49",
+        "Números 1:50",
+        "Números 1:54"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 1:53, o acampamento dos levitas evita que haja o quê sobre a congregação.",
+      "verseRef": "Números 1:53",
+      "options": [
+        {
+          "id": "a",
+          "text": "festa"
+        },
+        {
+          "id": "b",
+          "text": "ira"
+        },
+        {
+          "id": "c",
+          "text": "chuva"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que não haja ira",
+      "feedbackCorrect": "O propósito é proteger a congregação da ira.",
+      "feedbackWrong": {
+        "a": "O texto fala de ira, não de festa.",
+        "c": "Não há menção de chuva; o risco é a ira."
+      },
+      "hint": "Veja o que se quer evitar.",
+      "learningObjective": "Lembrar o propósito protetor do acampamento.",
+      "evidence": [
+        "Números 1:53"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 1:50 a Deuteronômio 10:8.",
+      "verseRef": "Números 1:50",
+      "passageA": {
+        "ref": "Números 1:50"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 10:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi separado para servir"
+        },
+        {
+          "id": "b",
+          "text": "Levi conta para a guerra"
+        },
+        {
+          "id": "c",
+          "text": "Levi deixa o tabernáculo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "designar os levitas para cuidar",
+      "feedbackCorrect": "Nos dois textos, Levi é separado para o serviço ligado à presença de Deus.",
+      "feedbackWrong": {
+        "b": "Números tira Levi do censo de guerra.",
+        "c": "Os textos os põem junto ao serviço santo."
+      },
+      "hint": "Compare a tarefa dada a Levi.",
+      "learningObjective": "Relacionar a designação dos levitas nos dois livros.",
+      "evidence": [
+        "Números 1:50",
+        "Deuteronômio 10:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Números 1:47–53 apresenta a exclusão de Levi do censo como vocação de guarda, não como desprezo.",
+      "verseRef": "Números 1:50–53",
+      "correctOptionId": "true",
+      "evidenceSpan": "cuidar do tabernáculo do Testemunho",
+      "feedbackCorrect": "O texto troca a contagem de guerra pelo cuidado da habitação de Deus.",
+      "feedbackWrong": {
+        "false": "Veja a designação em 1:50 e o propósito em 1:53: é serviço, não rejeição."
+      },
+      "hint": "Compare o que eles deixam de fazer com o que passam a fazer.",
+      "learningObjective": "Interpretar a exclusão como vocação de guarda.",
+      "evidence": [
+        "Números 1:50"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 1:51, toque o trecho que sustenta o limite de quem se aproxima do tabernáculo.",
+      "verseRef": "Números 1:51",
+      "options": [
+        {
+          "id": "a",
+          "text": "desarmarão"
+        },
+        {
+          "id": "b",
+          "text": "estranho"
+        },
+        {
+          "id": "c",
+          "text": "montarão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "qualquer estranho que se aproximar morrerá",
+      "feedbackCorrect": "A aproximação do estranho traz morte: o serviço tem limite santo.",
+      "feedbackWrong": {
+        "a": "Desarmar é a tarefa dos levitas, não o limite.",
+        "c": "Montar também é tarefa; o aviso é sobre o estranho."
+      },
+      "hint": "Procure quem não pode se aproximar.",
+      "learningObjective": "Sustentar com o texto a santidade do acesso.",
+      "evidence": [
+        "Números 1:51"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Números 1:47–53 sustenta sobre os levitas.",
+      "verseRef": "Números 1:50–53",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus os separa para guardar sua habitação no meio do povo"
+        },
+        {
+          "id": "b",
+          "text": "Eles ficaram de fora por serem menos importantes"
+        },
+        {
+          "id": "c",
+          "text": "Qualquer um podia aproximar-se do tabernáculo sem risco"
+        },
+        {
+          "id": "d",
+          "text": "Eles acampavam longe, como as demais tribos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ao redor do tabernáculo do Testemunho",
+      "feedbackCorrect": "A exclusão do censo e o acampamento ao redor mostram vocação de guarda.",
+      "feedbackWrong": {
+        "b": "A designação ao tabernáculo desmente o desprezo.",
+        "c": "O estranho que se aproximar morre.",
+        "d": "Eles armam tendas ao redor do tabernáculo."
+      },
+      "hint": "Una a exclusão do censo com o lugar do acampamento.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Números 1:50–53"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o serviço de Levi na história bíblica.",
+      "verseRef": "Números 1:50",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi é designado a cuidar do tabernáculo"
+        },
+        {
+          "id": "b",
+          "text": "Levi é separado para levar a arca e abençoar"
+        },
+        {
+          "id": "c",
+          "text": "Os levitas cuidam da casa do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "cuidar do tabernáculo do Testemunho",
+      "feedbackCorrect": "Do acampamento no deserto ao serviço contínuo da casa de Deus.",
+      "feedbackWrong": {
+        "default": "Siga a ordem: Números, Deuteronômio, Crônicas."
+      },
+      "hint": "Comece pela designação em Números.",
+      "learningObjective": "Ver o fio do serviço levítico na Escritura.",
+      "evidence": [
+        "Números 1:50",
+        "Deuteronômio 10:8",
+        "1 Crônicas 23:32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 1:50, o que os levitas devem cuidar, segundo o Senhor.",
+      "verseRef": "Números 1:50",
+      "options": [
+        {
+          "id": "a",
+          "text": "estandarte"
+        },
+        {
+          "id": "b",
+          "text": "tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cuidar do tabernáculo do Testemunho",
+      "feedbackCorrect": "O termo carrega a vocação: guardar a habitação de Deus.",
+      "feedbackWrong": {
+        "a": "Estandarte é das outras tribos.",
+        "c": "O deserto é o cenário; o objeto do cuidado é o tabernáculo."
+      },
+      "hint": "É a palavra que nomeia a habitação.",
+      "learningObjective": "Lembrar o termo teológico central da cena.",
+      "evidence": [
+        "Números 1:50"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 1:50 a Êxodo 32:26.",
+      "verseRef": "Números 1:50",
+      "passageA": {
+        "ref": "Números 1:50"
+      },
+      "passageB": {
+        "ref": "Êxodo 32:26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi se põe com o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Levi recusa o serviço"
+        },
+        {
+          "id": "c",
+          "text": "Levi mistura-se às outras tribos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "designar os levitas para cuidar",
+      "feedbackCorrect": "Em Êxodo, Levi se põe ao lado do Senhor; em Números, recebe o cuidado da habitação.",
+      "feedbackWrong": {
+        "b": "Os textos mostram serviço, não recusa.",
+        "c": "Levi é separado para uma tarefa própria."
+      },
+      "hint": "Lembre quem se pôs ao lado do Senhor no bezerro.",
+      "learningObjective": "Ligar a vocação de Levi ao seu posicionamento com Deus.",
+      "evidence": [
+        "Números 1:50",
+        "Êxodo 32:26"
+      ]
+    }
+  ]
+}

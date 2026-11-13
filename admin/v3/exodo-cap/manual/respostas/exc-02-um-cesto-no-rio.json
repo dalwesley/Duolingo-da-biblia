@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Êxodo 2:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 2:1–10"
+      }
+    ],
+    "context": "Faraó ordenou lançar os meninos hebreus no Nilo. Uma mãe da casa de Levi esconde o filho e o põe no rio.",
+    "keyword": "Cesto",
+    "keywordGloss": "O menino é colocado num cesto entre os juncos; Deus o guarda até a filha de Faraó.",
+    "focusQuestion": "Onde você precisa confiar que Deus guarda o que parece perdido?",
+    "reflectionPrompts": [
+      "Esconder e confiar",
+      "Compaixão inesperada",
+      "Deus devolve"
+    ],
+    "facts": [
+      {
+        "text": "A mãe escondeu o filho formoso por três meses.",
+        "evidenceRef": "Êxodo 2:2",
+        "evidenceSpan": "escondeu-o por três meses"
+      },
+      {
+        "text": "Ela colocou o menino num cesto entre os juncos à beira do rio.",
+        "evidenceRef": "Êxodo 2:3",
+        "evidenceSpan": "largou-o entre os juncos à beira do rio"
+      },
+      {
+        "text": "A irmã ficou de longe para observar.",
+        "evidenceRef": "Êxodo 2:4",
+        "evidenceSpan": "sua irmã ficou de longe, para observar"
+      },
+      {
+        "text": "A filha de Faraó achou o cesto e se encheu de compaixão.",
+        "evidenceRef": "Êxodo 2:6",
+        "evidenceSpan": "encheu-se de compaixão"
+      },
+      {
+        "text": "A filha de Faraó adotou o menino e o nomeou Moisés.",
+        "evidenceRef": "Êxodo 2:10",
+        "evidenceSpan": "o adotou e o nomeou Moisés"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cesto",
+        "gloss": "Abrigo improvisado no rio onde o menino é confiado."
+      },
+      {
+        "term": "compaixão",
+        "gloss": "O que move a filha de Faraó ao ver a criança chorando."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome que lembra: das águas o tirei."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A mãe esconde e põe o menino no rio",
+        "evidenceRef": "Êxodo 2:2–3"
+      },
+      {
+        "label": "A irmã observa de longe",
+        "evidenceRef": "Êxodo 2:4"
+      },
+      {
+        "label": "A filha de Faraó acha e se compadece",
+        "evidenceRef": "Êxodo 2:5–6"
+      },
+      {
+        "label": "A mãe amamenta e Moisés é adotado",
+        "evidenceRef": "Êxodo 2:7–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Não podendo mais escondê-lo, ela o põe no cesto no rio.",
+        "marker": "Não podendo",
+        "evidenceRef": "Êxodo 2:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "Ao ver a criança chorando, a filha de Faraó se enche de compaixão.",
+        "marker": "ao vê-la",
+        "evidenceRef": "Êxodo 2:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "A irmã ficou de longe para observar o que aconteceria.",
+        "marker": "para observar",
+        "evidenceRef": "Êxodo 2:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 11:23",
+        "bridge": "Pais esconderam Moisés"
+      },
+      {
+        "ref": "Atos 7:21",
+        "bridge": "Filha de Faraó adotou"
+      },
+      {
+        "ref": "Salmos 27:10",
+        "bridge": "Senhor acolhe o abandonado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A mãe abandonou o filho sem plano.",
+        "why": "Ela impermeabiliza o cesto e a irmã fica observando."
+      },
+      {
+        "text": "A filha de Faraó não sabia que era hebreu.",
+        "why": "Ela diz: este é um menino dos hebreus."
+      },
+      {
+        "text": "Deus só age depois da adoção no palácio.",
+        "why": "A preservação começa no esconder e no rio."
+      }
+    ],
+    "centralInsight": "Deus guarda o menino no rio e o devolve à própria mãe para amamentar.",
+    "anchorQuestion": "Quem achou o cesto no rio e se compadeceu do menino?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "A mãe escondeu o menino no palácio de Faraó por três meses.",
+      "verseRef": "Êxodo 2:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "escondeu-o por três meses",
+      "feedbackCorrect": "Ela o escondeu por três meses; o texto não diz que foi no palácio.",
+      "feedbackWrong": {
+        "true": "Releia Êxodo 2:2: escondeu-o, sem falar de palácio."
+      },
+      "hint": "O texto diz o tempo; confira se diz o lugar.",
+      "learningObjective": "Observar o fato sem acrescentar lugar.",
+      "evidence": [
+        "Êxodo 2:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 2:3, toque o que a mãe usou para colocar o menino.",
+      "verseRef": "Êxodo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "cesto"
+        },
+        {
+          "id": "b",
+          "text": "rio"
+        },
+        {
+          "id": "c",
+          "text": "juncos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou um cesto de juncos",
+      "feedbackCorrect": "Ela tomou um cesto de juncos e nele colocou o menino.",
+      "feedbackWrong": {
+        "b": "O rio é o lugar; o recipiente é o cesto.",
+        "c": "Os juncos estão na margem; o menino vai no cesto."
+      },
+      "hint": "O que ela tomou e impermeabilizou?",
+      "learningObjective": "Identificar o cesto.",
+      "evidence": [
+        "Êxodo 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 2:6, o que a filha de Faraó sentiu ao ver a criança?",
+      "verseRef": "Êxodo 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raiva"
+        },
+        {
+          "id": "b",
+          "text": "Compaixão"
+        },
+        {
+          "id": "c",
+          "text": "Medo"
+        },
+        {
+          "id": "d",
+          "text": "Indiferença"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "encheu-se de compaixão",
+      "feedbackCorrect": "Ao vê-la chorando, encheu-se de compaixão.",
+      "feedbackWrong": {
+        "a": "O texto fala de compaixão, não de raiva.",
+        "c": "Não há medo; há compaixão.",
+        "d": "Ela se compadeceu e falou."
+      },
+      "hint": "Leia a reação ao choro.",
+      "learningObjective": "Observar a compaixão da filha de Faraó.",
+      "evidence": [
+        "Êxodo 2:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 2:3 na ordem do texto.",
+      "verseRef": "Êxodo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não podendo mais escondê-lo, tomou um cesto de juncos"
+        },
+        {
+          "id": "b",
+          "text": "impermeabilizou-o com betume e piche"
+        },
+        {
+          "id": "c",
+          "text": "colocando nele o menino, largou-o entre os juncos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomou um cesto de juncos",
+      "feedbackCorrect": "Cesto, impermeabilizar, colocar o menino.",
+      "feedbackWrong": {
+        "default": "Comece por não poder mais esconder."
+      },
+      "hint": "O cesto vem antes do betume.",
+      "learningObjective": "Reconhecer a sequência do cesto.",
+      "evidence": [
+        "Êxodo 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 2:10, que nome a filha de Faraó deu ao menino?",
+      "verseRef": "Êxodo 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arão"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "José"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o nomeou Moisés",
+      "feedbackCorrect": "Ela o nomeou Moisés: porque das águas o tirei.",
+      "feedbackWrong": {
+        "a": "Arão é o irmão; o nome aqui é Moisés.",
+        "c": "José não é o nome deste menino."
+      },
+      "hint": "O nome explica tirar das águas.",
+      "learningObjective": "Lembrar o nome Moisés.",
+      "evidence": [
+        "Êxodo 2:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 2:3 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 2:3",
+      "passageA": {
+        "ref": "Êxodo 2:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Faraó ordenou lançar os meninos hebreus no Nilo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mãe confia o menino ao rio"
+        },
+        {
+          "id": "b",
+          "text": "Mãe entrega o filho a Faraó"
+        },
+        {
+          "id": "c",
+          "text": "Menino foge sozinho do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "largou-o entre os juncos à beira do rio",
+      "feedbackCorrect": "Ela põe o menino no cesto no rio, sob a ameaça do decreto.",
+      "feedbackWrong": {
+        "b": "Ela não o entrega a Faraó; o põe no rio.",
+        "c": "É um bebê no cesto, não uma fuga."
+      },
+      "hint": "O que ela faz quando não pode mais esconder?",
+      "learningObjective": "Ligar o cesto à ameaça do Nilo.",
+      "evidence": [
+        "Êxodo 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 2:6, a filha de Faraó se encheu de raiva ao ver o menino hebreu.",
+      "verseRef": "Êxodo 2:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "encheu-se de compaixão",
+      "feedbackCorrect": "O texto diz compaixão, não raiva, ao vê-la chorando.",
+      "feedbackWrong": {
+        "true": "Releia: encheu-se de compaixão, não de raiva."
+      },
+      "hint": "Qual sentimento o texto nomeia?",
+      "learningObjective": "Compreender a reação da filha de Faraó.",
+      "evidence": [
+        "Êxodo 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 2:4, toque a expressão que marca o propósito da irmã.",
+      "verseRef": "Êxodo 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "de longe"
+        },
+        {
+          "id": "b",
+          "text": "para observar"
+        },
+        {
+          "id": "c",
+          "text": "sua irmã"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para observar o que lhe aconteceria",
+      "feedbackCorrect": "Ela ficou de longe para observar o que aconteceria.",
+      "feedbackWrong": {
+        "a": "\"De longe\" diz onde; o propósito é \"para observar\".",
+        "c": "\"Sua irmã\" é quem; o propósito vem depois."
+      },
+      "hint": "Procure o \"para\" que explica o motivo.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Êxodo 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 2:3 se relaciona com não poder mais esconder o menino?",
+      "verseRef": "Êxodo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso ela o põe no cesto no rio"
+        },
+        {
+          "id": "b",
+          "text": "Por isso ela o entrega a Faraó"
+        },
+        {
+          "id": "c",
+          "text": "Por isso ela foge com ele ao deserto"
+        },
+        {
+          "id": "d",
+          "text": "Por isso ela o deixa com a irmã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não podendo mais escondê-lo, tomou um cesto",
+      "feedbackCorrect": "Não podendo esconder, ela prepara o cesto e o larga no rio.",
+      "feedbackWrong": {
+        "b": "Ela não o entrega a Faraó neste versículo.",
+        "c": "Não há fuga ao deserto aqui.",
+        "d": "A irmã observa; quem age é a mãe com o cesto."
+      },
+      "hint": "Leia o começo de Êxodo 2:3.",
+      "learningObjective": "Relacionar limite do esconder e ação no rio.",
+      "evidence": [
+        "Êxodo 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 2:3–6?",
+      "verseRef": "Êxodo 2:3–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A mãe põe o menino no cesto no rio"
+        },
+        {
+          "id": "b",
+          "text": "A irmã observa de longe"
+        },
+        {
+          "id": "c",
+          "text": "A filha de Faraó se compadece"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "encheu-se de compaixão",
+      "feedbackCorrect": "Cesto no rio, irmã de longe, compaixão da princesa.",
+      "feedbackWrong": {
+        "default": "Comece pelo cesto; a compaixão vem por último."
+      },
+      "hint": "A compaixão é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Êxodo 2:3–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 2:6, de que a filha de Faraó se encheu?",
+      "verseRef": "Êxodo 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "medo"
+        },
+        {
+          "id": "b",
+          "text": "compaixão"
+        },
+        {
+          "id": "c",
+          "text": "ódio"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "encheu-se de compaixão",
+      "feedbackCorrect": "Ao ver a criança chorando, encheu-se de compaixão.",
+      "feedbackWrong": {
+        "a": "O texto não fala de medo.",
+        "c": "O sentimento nomeado é compaixão."
+      },
+      "hint": "Qual sentimento o versículo nomeia?",
+      "learningObjective": "Lembrar a palavra que marca a virada.",
+      "evidence": [
+        "Êxodo 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 2:2 a Hebreus 11:23?",
+      "verseRef": "Êxodo 2:2",
+      "passageA": {
+        "ref": "Êxodo 2:2"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pais esconderam Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Fuga imediata do Egito"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "escondeu-o por três meses",
+      "feedbackCorrect": "Hebreus lê o esconder como ato de fé dos pais.",
+      "feedbackWrong": {
+        "b": "Ainda não há êxodo; há esconder o menino.",
+        "c": "Não há aliança com Faraó nesses textos."
+      },
+      "hint": "O que os pais fizeram por três meses?",
+      "learningObjective": "Relacionar o esconder e a fé.",
+      "evidence": [
+        "Êxodo 2:2",
+        "Hebreus 11:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 2:3–9 mostra Deus guardando o menino no rio e o devolvendo à própria mãe para amamentar.",
+      "verseRef": "Êxodo 2:8–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "chamou a mãe do menino",
+      "feedbackCorrect": "A irmã chama a mãe; a filha de Faraó paga para ela cuidar.",
+      "feedbackWrong": {
+        "false": "Releia 2:8–9: a mãe é chamada para cuidar do próprio filho."
+      },
+      "hint": "Quem a moça chama para amamentar?",
+      "learningObjective": "Interpretar a preservação e a devolução à mãe.",
+      "evidence": [
+        "Êxodo 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 2:9, toque quem toma o menino para criá-lo.",
+      "verseRef": "Êxodo 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "filha de Faraó"
+        },
+        {
+          "id": "b",
+          "text": "a mulher"
+        },
+        {
+          "id": "c",
+          "text": "salário"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a mulher tomou o menino e o criou",
+      "feedbackCorrect": "A mulher — a mãe — tomou o menino e o criou.",
+      "feedbackWrong": {
+        "a": "A filha de Faraó manda; quem toma é a mulher.",
+        "c": "Salário é o pagamento; quem cria é a mulher."
+      },
+      "hint": "Quem tomou o menino no fim do versículo?",
+      "learningObjective": "Sustentar que a mãe o cria de novo.",
+      "evidence": [
+        "Êxodo 2:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 2:3–10 sustenta sobre o menino no rio?",
+      "verseRef": "Êxodo 2:3–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus guarda o menino e o devolve à mãe"
+        },
+        {
+          "id": "b",
+          "text": "A mãe o abandonou sem qualquer plano"
+        },
+        {
+          "id": "c",
+          "text": "A filha de Faraó não soube que era hebreu"
+        },
+        {
+          "id": "d",
+          "text": "Só o palácio importa; o rio foi acaso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamou a mãe do menino",
+      "feedbackCorrect": "Do cesto à adoção, o menino é guardado e volta à mãe.",
+      "feedbackWrong": {
+        "b": "Há cesto preparado e irmã observando.",
+        "c": "Ela diz: menino dos hebreus.",
+        "d": "O rio é o meio da preservação."
+      },
+      "hint": "Siga do cesto até quem amamenta.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": [
+        "Êxodo 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da preservação de Moisés?",
+      "verseRef": "Êxodo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O menino é posto no cesto no rio"
+        },
+        {
+          "id": "b",
+          "text": "Hebreus celebra a fé que o escondeu"
+        },
+        {
+          "id": "c",
+          "text": "Atos lembra a adoção pela filha de Faraó"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "largou-o entre os juncos",
+      "evidence": [
+        "Êxodo 2:3",
+        "Hebreus 11:23",
+        "Atos 7:21"
+      ],
+      "feedbackCorrect": "Do rio à leitura da fé e à adoção no relato de Atos.",
+      "feedbackWrong": {
+        "default": "Comece pelo cesto em Êxodo; depois Hebreus e Atos."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver a preservação atravessar a Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 2:2, o que a mãe fez com o filho formoso?",
+      "verseRef": "Êxodo 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "vendeu"
+        },
+        {
+          "id": "b",
+          "text": "escondeu"
+        },
+        {
+          "id": "c",
+          "text": "entregou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "escondeu-o por três meses",
+      "feedbackCorrect": "Vendo que era formoso, escondeu-o por três meses.",
+      "feedbackWrong": {
+        "a": "O texto não diz que vendeu.",
+        "c": "Ela escondeu; não entregou ainda."
+      },
+      "hint": "O verbo depois de ver que era formoso.",
+      "learningObjective": "Lembrar a ação inicial de preservação.",
+      "evidence": [
+        "Êxodo 2:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 2:10 a Atos 7:21?",
+      "verseRef": "Êxodo 2:10",
+      "passageA": {
+        "ref": "Êxodo 2:10"
+      },
+      "passageB": {
+        "ref": "Atos 7:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Filha de Faraó adotou"
+        },
+        {
+          "id": "b",
+          "text": "Moisés rejeita o Egito"
+        },
+        {
+          "id": "c",
+          "text": "Pragas sobre o Nilo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o adotou e o nomeou Moisés",
+      "feedbackCorrect": "Atos retoma a adoção pela filha de Faraó.",
+      "feedbackWrong": {
+        "b": "Ainda é a adoção, não a rejeição adulta.",
+        "c": "As pragas vêm depois na história."
+      },
+      "hint": "O que a filha de Faraó faz com o menino?",
+      "learningObjective": "Ligar a adoção em Êxodo e Atos.",
+      "evidence": [
+        "Êxodo 2:10",
+        "Atos 7:21"
+      ]
+    }
+  ]
+}

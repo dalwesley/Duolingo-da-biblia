@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 13:7–14",
+    "passages": [
+      {
+        "ref": "1 Crônicas 13:7–14"
+      }
+    ],
+    "context": "Davi traz a arca num carro novo. Uzá a toca, morre, e a arca fica na casa de Obede-Edom.",
+    "keyword": "temeu",
+    "keywordGloss": "Depois do juízo sobre Uzá, Davi temeu a Deus e perguntou como trazer a arca.",
+    "focusQuestion": "Seu zelo pelo santo está alinhado com a ordem de Deus?",
+    "reflectionPrompts": [
+      "Carro novo",
+      "Ira contra Uzá",
+      "Bênção em Obede-Edom"
+    ],
+    "facts": [
+      {
+        "text": "Transportaram a arca de Deus num carro novo; Uzá e Aiô dirigiam.",
+        "evidenceRef": "1 Crônicas 13:7",
+        "evidenceSpan": "transportaram a arca de Deus em um carro novo"
+      },
+      {
+        "text": "Uzá estendeu a mão à arca para segurá-la, pois os bois tropeçavam.",
+        "evidenceRef": "1 Crônicas 13:9",
+        "evidenceSpan": "Uzá estendeu a mão à arca para segurá-la, pois os bois estavam tropeçando"
+      },
+      {
+        "text": "A ira do Senhor se acendeu contra Uzá e o feriu; morreu diante de Deus.",
+        "evidenceRef": "1 Crônicas 13:10",
+        "evidenceSpan": "a ira do Senhor se acendeu contra Uzá e o feriu"
+      },
+      {
+        "text": "Davi temeu a Deus e perguntou como traria a arca a si.",
+        "evidenceRef": "1 Crônicas 13:12",
+        "evidenceSpan": "Davi temeu a Deus, dizendo: Como trarei a mim a arca de Deus?"
+      },
+      {
+        "text": "A arca ficou três meses com Obede-Edom; o Senhor abençoou sua casa.",
+        "evidenceRef": "1 Crônicas 13:14",
+        "evidenceSpan": "o Senhor abençoou a casa de Obede-Edom e tudo o que ele possuía"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "temeu",
+        "gloss": "A reação de Davi ao juízo: reverência que pergunta o caminho certo."
+      },
+      {
+        "term": "ira",
+        "gloss": "A resposta de Deus ao toque indevido na arca."
+      },
+      {
+        "term": "abençoou",
+        "gloss": "O fruto da presença da arca na casa de Obede-Edom."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A arca vai num carro novo com alegria",
+        "evidenceRef": "1 Crônicas 13:7–8"
+      },
+      {
+        "label": "Uzá toca a arca e morre",
+        "evidenceRef": "1 Crônicas 13:9–10"
+      },
+      {
+        "label": "Davi se desgosta e teme",
+        "evidenceRef": "1 Crônicas 13:11–12"
+      },
+      {
+        "label": "A arca em Obede-Edom traz bênção",
+        "evidenceRef": "1 Crônicas 13:13–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Uzá foi ferido por ter estendido a mão à arca.",
+        "marker": "por",
+        "evidenceRef": "1 Crônicas 13:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso Davi não trouxe a arca à Cidade de Davi, mas a Obede-Edom.",
+        "marker": "Por isso",
+        "evidenceRef": "1 Crônicas 13:13"
+      },
+      {
+        "kind": "causa",
+        "text": "Uzá segurou a arca porque os bois tropeçavam.",
+        "marker": "pois",
+        "evidenceRef": "1 Crônicas 13:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 4:15",
+        "bridge": "Não tocar as coisas santas"
+      },
+      {
+        "ref": "2 Samuel 6:7",
+        "bridge": "Uzá ferido junto à arca"
+      },
+      {
+        "ref": "1 Crônicas 15:13",
+        "bridge": "Não buscaram pela ordem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Uzá morreu por maldade deliberada, sem nenhuma intenção de ajudar.",
+        "why": "13:9 diz que estendeu a mão para segurá-la porque os bois tropeçavam."
+      },
+      {
+        "text": "A presença da arca só traz juízo, nunca bênção.",
+        "why": "13:14: o Senhor abençoou a casa de Obede-Edom."
+      },
+      {
+        "text": "Davi segurou a arca e ignorou o juízo.",
+        "why": "13:12: Davi temeu e perguntou como trazer a arca."
+      }
+    ],
+    "centralInsight": "A arca é santa: o zelo sem a ordem do Senhor pode custar caro.",
+    "anchorQuestion": "O que aconteceu quando Uzá estendeu a mão à arca, segundo 1 Crônicas 13:10?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 13 —10, a ira do Senhor se acendeu contra Uzá e o feriu.",
+      "verseRef": "1 Crônicas 13:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "a ira do Senhor se acendeu contra Uzá e o feriu",
+      "feedbackCorrect": "O texto registra ira, ferimento e morte diante de Deus.",
+      "feedbackWrong": {
+        "false": "Releia 13:10: a ira do Senhor se acendeu contra Uzá."
+      },
+      "hint": "Veja a reação do Senhor.",
+      "learningObjective": "Observar o juízo sobre Uzá.",
+      "evidence": [
+        "1 Crônicas 13:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 13:7, toque quem dirigia o carro com Aiô.",
+      "verseRef": "1 Crônicas 13:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "arca"
+        },
+        {
+          "id": "b",
+          "text": "transportaram"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "transportaram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar quem recebeu a bênção.",
+      "evidence": [
+        "1 Crônicas 13:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 13:9, por que Uzá estendeu a mão à arca?",
+      "verseRef": "1 Crônicas 13:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para segurá-la, pois os bois estavam tropeçando"
+        },
+        {
+          "id": "b",
+          "text": "Para levá-la ao templo de Dagom"
+        },
+        {
+          "id": "c",
+          "text": "Para destruí-la diante do povo"
+        },
+        {
+          "id": "d",
+          "text": "Para ungí-la com óleo novo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Uzá estendeu a mão à arca para segurá-la, pois os bois estavam tropeçando",
+      "feedbackCorrect": "O motivo explícito é segurá-la quando os bois tropeçavam.",
+      "feedbackWrong": {
+        "b": "Não há Dagom neste trecho.",
+        "c": "Ele quis segurar, não destruir.",
+        "d": "Não há unção da arca aqui."
+      },
+      "hint": "Leia a finalidade e a razão no versículo.",
+      "learningObjective": "Observar o motivo do toque de Uzá.",
+      "evidence": [
+        "1 Crônicas 13:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 13:10 na ordem do texto.",
+      "verseRef": "1 Crônicas 13:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "a ira do Senhor se acendeu contra Uzá"
+        },
+        {
+          "id": "b",
+          "text": "e o feriu por ter estendido a mão à arca"
+        },
+        {
+          "id": "c",
+          "text": "e morreu ali diante de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a ira do Senhor se acendeu contra Uzá e o feriu",
+      "feedbackCorrect": "Ira, ferimento e morte na sequência do versículo.",
+      "feedbackWrong": {
+        "default": "Comece pela ira do Senhor."
+      },
+      "hint": "O versículo começa com a ira.",
+      "learningObjective": "Reconhecer a ordem de 13:10.",
+      "evidence": [
+        "1 Crônicas 13:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 13:12, Davi _____ a Deus depois do juízo.",
+      "verseRef": "1 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "ignorou"
+        },
+        {
+          "id": "b",
+          "text": "temeu"
+        },
+        {
+          "id": "c",
+          "text": "amaldiçoou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi temeu a Deus",
+      "feedbackCorrect": "Davi temeu a Deus e perguntou como trazer a arca.",
+      "feedbackWrong": {
+        "a": "Ele não ignorou; temeu.",
+        "c": "O verbo do texto é temeu."
+      },
+      "hint": "Veja a reação de Davi naquele dia.",
+      "learningObjective": "Lembrar a palavra-chave: temeu.",
+      "evidence": [
+        "1 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 13:14 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 13:14",
+      "passageA": {
+        "ref": "1 Crônicas 13:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A mesma arca que julgou Uzá abençoa a casa que a recebe."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor abençoou a casa"
+        },
+        {
+          "id": "b",
+          "text": "Uzá foi exaltado rei"
+        },
+        {
+          "id": "c",
+          "text": "A arca desapareceu para sempre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor abençoou a casa de Obede-Edom",
+      "feedbackCorrect": "O versículo e o contexto batem: há bênção com a arca.",
+      "feedbackWrong": {
+        "b": "Uzá morreu; não foi exaltado.",
+        "c": "A arca ficou três meses na casa."
+      },
+      "hint": "Veja o que o Senhor fez à casa.",
+      "learningObjective": "Ligar a bênção ao contexto da arca.",
+      "evidence": [
+        "1 Crônicas 13:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 13 —13, Davi leva a arca direto para a Cidade de Davi após a morte de Uzá.",
+      "verseRef": "1 Crônicas 13:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "Davi não trouxe a arca para si, para a Cidade de Davi",
+      "feedbackCorrect": "\"Por isso\" ele não a trouxe; mandou-a a Obede-Edom.",
+      "feedbackWrong": {
+        "true": "Releia 13:13: Davi não trouxe a arca à sua cidade."
+      },
+      "hint": "Veja para onde a arca foi.",
+      "learningObjective": "Compreender o desvio da arca.",
+      "evidence": [
+        "1 Crônicas 13:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 13:9, toque a palavra que marca a razão do toque de Uzá.",
+      "verseRef": "1 Crônicas 13:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "eira"
+        },
+        {
+          "id": "b",
+          "text": "chegaram"
+        },
+        {
+          "id": "c",
+          "text": "Quitom"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chegaram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "1 Crônicas 13:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 13:14 se relaciona com 13:10?",
+      "verseRef": "1 Crônicas 13:10–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A arca julga o toque indevido e abençoa quem a recebe"
+        },
+        {
+          "id": "b",
+          "text": "O juízo sobre Uzá cancela qualquer bênção futura"
+        },
+        {
+          "id": "c",
+          "text": "Obede-Edom é ferido como Uzá"
+        },
+        {
+          "id": "d",
+          "text": "Davi ignora a arca após o juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor abençoou a casa de Obede-Edom",
+      "feedbackCorrect": "Juízo e bênção mostram a santidade da arca.",
+      "feedbackWrong": {
+        "b": "13:14 registra bênção explícita.",
+        "c": "Obede-Edom é abençoado, não ferido.",
+        "d": "Davi temeu e redirecionou a arca."
+      },
+      "hint": "Compare juízo e bênção.",
+      "learningObjective": "Relacionar juízo e bênção da arca.",
+      "evidence": [
+        "1 Crônicas 13:10–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Crônicas 13:7–14?",
+      "verseRef": "1 Crônicas 13:7–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leva a arca com alegria no carro"
+        },
+        {
+          "id": "b",
+          "text": "Uzá toca e morre; Davi teme"
+        },
+        {
+          "id": "c",
+          "text": "A arca em Obede-Edom traz bênção"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor abençoou a casa de Obede-Edom",
+      "feedbackCorrect": "Alegria, juízo e bênção formam o arco.",
+      "feedbackWrong": {
+        "default": "A bênção fecha o trecho."
+      },
+      "hint": "Comece pelo transporte alegre.",
+      "learningObjective": "Compreender o arco da cena.",
+      "evidence": [
+        "1 Crônicas 13:7–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 13:13, _____ Davi não trouxe a arca para a Cidade de Davi.",
+      "verseRef": "1 Crônicas 13:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia"
+        },
+        {
+          "id": "b",
+          "text": "Por isso"
+        },
+        {
+          "id": "c",
+          "text": "Nunca"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Por isso, Davi não trouxe a arca para si",
+      "feedbackCorrect": "\"Por isso\" liga o temor à mudança de destino da arca.",
+      "feedbackWrong": {
+        "a": "Aqui a expressão é \"Por isso\".",
+        "c": "Não é \"Nunca\"; é \"Por isso\"."
+      },
+      "hint": "Veja as duas primeiras palavras de 13:13.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": [
+        "1 Crônicas 13:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 13:10 a 2 Samuel 6:7?",
+      "verseRef": "1 Crônicas 13:10",
+      "passageA": {
+        "ref": "1 Crônicas 13:10"
+      },
+      "passageB": {
+        "ref": "2 Samuel 6:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Uzá ferido junto à arca"
+        },
+        {
+          "id": "b",
+          "text": "Uzá coroado em Sião"
+        },
+        {
+          "id": "c",
+          "text": "Arca destruída pelos bois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a ira do Senhor se acendeu contra Uzá e o feriu",
+      "evidence": [
+        "1 Crônicas 13:10",
+        "2 Samuel 6:7"
+      ],
+      "feedbackCorrect": "Os dois relatos registram o ferimento de Uzá junto à arca.",
+      "feedbackWrong": {
+        "b": "Uzá morre; não é coroado.",
+        "c": "A arca permanece; Uzá morre."
+      },
+      "hint": "Compare o juízo sobre Uzá.",
+      "learningObjective": "Relacionar Crônicas a Samuel."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Crônicas 13 —7–14 ensina que a arca é santa e que zelo sem a ordem do Senhor pode custar a vida.",
+      "verseRef": "1 Crônicas 13:10–14",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor abençoou a casa de Obede-Edom",
+      "feedbackCorrect": "Juízo sobre Uzá e bênção sobre Obede-Edom sustentam essa leitura.",
+      "feedbackWrong": {
+        "false": "Una 13:10 e 13:14: juízo e bênção."
+      },
+      "hint": "Compare o fim de Uzá e a casa de Obede-Edom.",
+      "learningObjective": "Interpretar a santidade da arca.",
+      "evidence": [
+        "1 Crônicas 13:10–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 13:10, toque o trecho que sustenta o juízo sobre Uzá.",
+      "verseRef": "1 Crônicas 13:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "acendeu"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "contra"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura do temor.",
+      "evidence": [
+        "1 Crônicas 13:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Crônicas 13:7–14 sustenta?",
+      "verseRef": "1 Crônicas 13:7–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santo exige ordem; presença de Deus julga e abençoa"
+        },
+        {
+          "id": "b",
+          "text": "Qualquer toque na arca é sempre bem-vindo"
+        },
+        {
+          "id": "c",
+          "text": "A arca só traz maldição, nunca bênção"
+        },
+        {
+          "id": "d",
+          "text": "Davi tratou o juízo com indiferença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi temeu a Deus, dizendo: Como trarei a mim a arca de Deus?",
+      "feedbackCorrect": "Juízo, temor e bênção formam a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "Uzá morre por estender a mão.",
+        "c": "Obede-Edom é abençoado.",
+        "d": "Davi temeu e perguntou o caminho."
+      },
+      "hint": "Una juízo, temor e bênção.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "1 Crônicas 13:7–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do culto segundo a ordem?",
+      "verseRef": "1 Crônicas 13:10–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toque indevido traz juízo"
+        },
+        {
+          "id": "b",
+          "text": "Davi teme e para o transporte"
+        },
+        {
+          "id": "c",
+          "text": "A arca abençoa quem a recebe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor abençoou a casa de Obede-Edom",
+      "evidence": [
+        "1 Crônicas 13:10",
+        "1 Crônicas 13:12",
+        "1 Crônicas 13:14"
+      ],
+      "feedbackCorrect": "Juízo, temor e bênção preparam o culto ordenado.",
+      "feedbackWrong": {
+        "default": "Comece pelo juízo sobre Uzá."
+      },
+      "hint": "Siga 10 → 12 → 14.",
+      "learningObjective": "Encadear juízo, temor e bênção."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 13:10, que termo carrega a reação santa de Deus?",
+      "verseRef": "1 Crônicas 13:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "ira"
+        },
+        {
+          "id": "b",
+          "text": "alegria"
+        },
+        {
+          "id": "c",
+          "text": "indiferença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a ira do Senhor se acendeu contra Uzá",
+      "feedbackCorrect": "\"Ira\" carrega o sentido da santidade ofendida.",
+      "feedbackWrong": {
+        "b": "A alegria estava no cortejo; aqui é ira.",
+        "c": "Deus não fica indiferente."
+      },
+      "hint": "Veja o que se acendeu contra Uzá.",
+      "learningObjective": "Lembrar o termo teológico: ira.",
+      "evidence": [
+        "1 Crônicas 13:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 13:10 a Números 4:15?",
+      "verseRef": "1 Crônicas 13:10",
+      "passageA": {
+        "ref": "1 Crônicas 13:10"
+      },
+      "passageB": {
+        "ref": "Números 4:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tocar as coisas santas"
+        },
+        {
+          "id": "b",
+          "text": "Qualquer um carrega a arca"
+        },
+        {
+          "id": "c",
+          "text": "Bois ungidos para o culto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por ter estendido a mão à arca",
+      "evidence": [
+        "1 Crônicas 13:10",
+        "Números 4:15"
+      ],
+      "feedbackCorrect": "Os dois textos guardam a santidade: não se toca o santo à vontade.",
+      "feedbackWrong": {
+        "b": "Há ordem para o transporte santo.",
+        "c": "Bois não são o centro da regra."
+      },
+      "hint": "Compare a proibição de tocar.",
+      "learningObjective": "Ligar o juízo à lei do santo."
+    }
+  ]
+}

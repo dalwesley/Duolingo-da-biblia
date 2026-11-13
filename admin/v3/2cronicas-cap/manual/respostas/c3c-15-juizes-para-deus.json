@@ -1,0 +1,452 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 19:4–11",
+    "passages": [{ "ref": "2 Crônicas 19:4–11" }],
+    "context": "Josafá percorre o povo, estabelece juízes e lembra que o juízo é do Senhor, sem injustiça nem suborno.",
+    "keyword": "juízes",
+    "keywordGloss": "Homens estabelecidos para julgar em nome do Senhor, não em benefício do homem.",
+    "focusQuestion": "Quando você decide algo, lembra que o Senhor está no juízo?",
+    "reflectionPrompts": ["Juízo para o Senhor", "Sem suborno", "Temor e fidelidade"],
+    "facts": [
+      {
+        "text": "Josafá incitou o povo a retornar ao Senhor, Deus de seus pais.",
+        "evidenceRef": "2 Crônicas 19:4",
+        "evidenceSpan": "os incitou a retornar ao Senhor, Deus de seus pais"
+      },
+      {
+        "text": "Estabeleceu juízes em todas as cidades fortificadas.",
+        "evidenceRef": "2 Crônicas 19:5",
+        "evidenceSpan": "estabeleceu juízes na terra, em todas as cidades fortificadas"
+      },
+      {
+        "text": "Disse que não julgam em benefício do homem, mas em nome do Senhor.",
+        "evidenceRef": "2 Crônicas 19:6",
+        "evidenceSpan": "não julgam em benefício do homem, mas em nome do Senhor"
+      },
+      {
+        "text": "No Senhor não há injustiça, acepção de pessoas nem aceitação de suborno.",
+        "evidenceRef": "2 Crônicas 19:7",
+        "evidenceSpan": "não há injustiça, nem acepção de pessoas, nem aceitação de suborno"
+      },
+      {
+        "text": "Ordenou andar no temor do Senhor, com fidelidade e de todo o coração.",
+        "evidenceRef": "2 Crônicas 19:9",
+        "evidenceSpan": "andem no temor do Senhor, com fidelidade e de todo o coração"
+      }
+    ],
+    "keyTerms": [
+      { "term": "juízes", "gloss": "Quem Josafá estabelece para julgar a causa do Senhor." },
+      { "term": "suborno", "gloss": "O que o Senhor não aceita; o juízo deve rejeitar." },
+      { "term": "temor", "gloss": "Atitude exigida dos juízes ao andar e decidir." }
+    ],
+    "structure": [
+      { "label": "Josafá chama o povo de volta ao Senhor", "evidenceRef": "2 Crônicas 19:4" },
+      { "label": "Juízes nas cidades e aviso do juízo divino", "evidenceRef": "2 Crônicas 19:5–7" },
+      { "label": "Tribunal em Jerusalém com levitas e sacerdotes", "evidenceRef": "2 Crônicas 19:8–9" },
+      { "label": "Ordens sobre disputas e liderança de Amarias", "evidenceRef": "2 Crônicas 19:10–11" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não julgam para o homem, mas em nome do Senhor.",
+        "marker": "mas",
+        "evidenceRef": "2 Crônicas 19:6"
+      },
+      {
+        "kind": "causa",
+        "text": "Devem ter cuidado porque no Senhor não há injustiça nem suborno.",
+        "marker": "porque",
+        "evidenceRef": "2 Crônicas 19:7"
+      },
+      {
+        "kind": "propósito",
+        "text": "Admoestar para que não se tornem culpados e não venha ira.",
+        "marker": "para que",
+        "evidenceRef": "2 Crônicas 19:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Deuteronômio 16:18–19", "bridge": "Juízes sem parcialidade" },
+      { "ref": "Miquéias 6:8", "bridge": "Praticar juízo e humildade" },
+      { "ref": "Tiago 2:1", "bridge": "Sem acepção de pessoas" }
+    ],
+    "misreadings": [
+      {
+        "text": "Os juízes servem sobretudo ao interesse do rei e do homem.",
+        "why": "19:6: não julgam em benefício do homem, mas em nome do Senhor."
+      },
+      {
+        "text": "O Senhor tolera suborno se o resultado for útil.",
+        "why": "19:7: nele não há aceitação de suborno."
+      },
+      {
+        "text": "Josafá só cuidou de Jerusalém e ignorou as cidades.",
+        "why": "19:5: juízes em todas as cidades fortificadas."
+      }
+    ],
+    "centralInsight": "Não julgueis para o homem, senão para o Senhor; ele está convosco no juízo.",
+    "anchorQuestion": "Para quem os juízes julgam, segundo 2 Crônicas 19:6?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 19:6, Josafá diz que os juízes não julgam em benefício do homem, mas em nome do Senhor.",
+      "verseRef": "2 Crônicas 19:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "não julgam em benefício do homem, mas em nome do Senhor",
+      "feedbackCorrect": "O juízo é em nome do Senhor, que está com eles ao julgar.",
+      "feedbackWrong": { "false": "Releia 19:6: o alvo do juízo é o Senhor, não o homem." },
+      "hint": "Olhe o contraste \"não… mas…\".",
+      "learningObjective": "Observar para quem se julga.",
+      "evidence": ["2 Crônicas 19:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 19:7, toque o que o Senhor não aceita.",
+      "verseRef": "2 Crônicas 19:7",
+      "options": [
+        { "id": "a", "text": "suborno" },
+        { "id": "b", "text": "temor" },
+        { "id": "c", "text": "cuidado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem aceitação de suborno",
+      "feedbackCorrect": "No Senhor não há aceitação de suborno.",
+      "feedbackWrong": {
+        "b": "O temor deve estar com eles; não é o que Deus rejeita.",
+        "c": "\"Cuidado\" é ordem aos juízes, não o que Deus rejeita."
+      },
+      "hint": "Olhe o fim da lista do que não há no Senhor.",
+      "learningObjective": "Identificar a rejeição ao suborno.",
+      "evidence": ["2 Crônicas 19:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 19:5, onde Josafá estabeleceu juízes?",
+      "verseRef": "2 Crônicas 19:5",
+      "options": [
+        { "id": "a", "text": "Em todas as cidades fortificadas" },
+        { "id": "b", "text": "Somente no palácio do rei" },
+        { "id": "c", "text": "Apenas em Berseba" },
+        { "id": "d", "text": "Só entre os sacerdotes de Samaria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em todas as cidades fortificadas, de cidade em cidade",
+      "feedbackCorrect": "Os juízes foram postos em todas as cidades fortificadas.",
+      "feedbackWrong": {
+        "b": "O texto fala das cidades da terra.",
+        "c": "Berseba aparece em 19:4 no percurso, não como único lugar.",
+        "d": "Não há juízes de Samaria neste versículo."
+      },
+      "hint": "Leia onde ele estabeleceu juízes.",
+      "learningObjective": "Observar o alcance da reforma judicial.",
+      "evidence": ["2 Crônicas 19:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 19:6 na ordem do texto.",
+      "verseRef": "2 Crônicas 19:6",
+      "options": [
+        { "id": "a", "text": "E disse aos juízes: Observem o que fazem" },
+        { "id": "b", "text": "pois não julgam em benefício do homem" },
+        { "id": "c", "text": "mas em nome do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não julgam em benefício do homem, mas em nome do Senhor",
+      "feedbackCorrect": "Aviso, negação do benefício humano e juízo em nome do Senhor.",
+      "feedbackWrong": { "default": "Comece pela fala aos juízes." },
+      "hint": "O versículo abre com \"E disse aos juízes\".",
+      "learningObjective": "Reconhecer a ordem de 19:6.",
+      "evidence": ["2 Crônicas 19:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 19:5, Josafá estabeleceu ___ na terra.",
+      "verseRef": "2 Crônicas 19:5",
+      "options": [
+        { "id": "a", "text": "juízes" },
+        { "id": "b", "text": "ídolos" },
+        { "id": "c", "text": "muros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estabeleceu juízes na terra",
+      "feedbackCorrect": "Ele estabeleceu juízes, cidade em cidade.",
+      "feedbackWrong": {
+        "b": "Não há ídolos neste versículo.",
+        "c": "O verbo cai sobre juízes, não muros."
+      },
+      "hint": "Veja o que ele estabeleceu.",
+      "learningObjective": "Lembrar o que Josafá estabeleceu.",
+      "evidence": ["2 Crônicas 19:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 19:6 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 19:6",
+      "passageA": { "ref": "2 Crônicas 19:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O juízo humano deve lembrar que Deus está presente na decisão."
+      },
+      "options": [
+        { "id": "a", "text": "Juízo em nome do Senhor" },
+        { "id": "b", "text": "Juízo só para o rei" },
+        { "id": "c", "text": "Deus ausente do tribunal" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele está com vocês no ato de julgar",
+      "feedbackCorrect": "O Senhor está com os juízes no ato de julgar.",
+      "feedbackWrong": {
+        "b": "O juízo não é em benefício do homem.",
+        "c": "O texto afirma a presença de Deus no juízo."
+      },
+      "hint": "Veja com quem está o Senhor ao julgarem.",
+      "learningObjective": "Ligar o versículo à presença de Deus no juízo.",
+      "evidence": ["2 Crônicas 19:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 19:7, o temor do Senhor e a rejeição ao suborno aparecem juntos na ordem aos juízes.",
+      "verseRef": "2 Crônicas 19:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "que o temor do SENHOR esteja convosco",
+      "feedbackCorrect": "Temor, cuidado e o caráter de Deus sem suborno formam a ordem.",
+      "feedbackWrong": { "false": "19:7 une temor do Senhor e ausência de suborno nele." },
+      "hint": "Leia o versículo do começo ao fim.",
+      "learningObjective": "Compreender temor e integridade no juízo.",
+      "evidence": ["2 Crônicas 19:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 19:7, toque a palavra que marca a causa do cuidado exigido.",
+      "verseRef": "2 Crônicas 19:7",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "Agora" },
+        { "id": "c", "text": "tomai" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque no SENHOR, nosso Deus, não há injustiça",
+      "feedbackCorrect": "\"Porque\" introduz o caráter de Deus como motivo do cuidado.",
+      "feedbackWrong": {
+        "b": "\"Agora\" abre o apelo; a causa vem com \"porque\".",
+        "c": "\"Tomai\" é a ordem; a causa é \"porque\"."
+      },
+      "hint": "Procure a palavra que explica o motivo.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": ["2 Crônicas 19:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 19:6 se relaciona com 19:7?",
+      "verseRef": "2 Crônicas 19:6–7",
+      "options": [
+        { "id": "a", "text": "Julgar em nome do Senhor exige temor e rejeição ao suborno" },
+        { "id": "b", "text": "O juízo divino tolera parcialidade útil" },
+        { "id": "c", "text": "O Senhor está ausente quando se julga" },
+        { "id": "d", "text": "Suborno é permitido se houver temor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não há injustiça, nem acepção de pessoas, nem aceitação de suborno",
+      "feedbackCorrect": "Presença de Deus no juízo e seu caráter sem suborno moldam os juízes.",
+      "feedbackWrong": {
+        "b": "Não há acepção de pessoas no Senhor.",
+        "c": "Ele está com eles no ato de julgar.",
+        "d": "Suborno é excluído, não permitido."
+      },
+      "hint": "Ligue \"em nome do Senhor\" ao que não há nele.",
+      "learningObjective": "Relacionar juízo divino e integridade.",
+      "evidence": ["2 Crônicas 19:6–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 19:4–9?",
+      "verseRef": "2 Crônicas 19:4–9",
+      "options": [
+        { "id": "a", "text": "Josafá chama o povo de volta ao Senhor" },
+        { "id": "b", "text": "Estabelece juízes nas cidades" },
+        { "id": "c", "text": "Ordena temor, fidelidade e coração inteiro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "andem no temor do Senhor, com fidelidade e de todo o coração",
+      "feedbackCorrect": "Retorno ao Senhor, juízes e ordem de andar com temor.",
+      "feedbackWrong": { "default": "A ordem de 19:9 fecha o movimento." },
+      "hint": "Comece pelo percurso de Josafá.",
+      "learningObjective": "Compreender o arco da reforma.",
+      "evidence": ["2 Crônicas 19:4–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 19:6, eles não julgam em benefício do ___.",
+      "verseRef": "2 Crônicas 19:6",
+      "options": [
+        { "id": "a", "text": "homem" },
+        { "id": "b", "text": "Senhor" },
+        { "id": "c", "text": "templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não julgam em benefício do homem",
+      "feedbackCorrect": "O benefício do homem não é o alvo; o juízo é do Senhor.",
+      "feedbackWrong": {
+        "b": "O juízo é em nome do Senhor, não \"benefício do Senhor\".",
+        "c": "A palavra do contraste é homem."
+      },
+      "hint": "Veja o que a negação exclui.",
+      "learningObjective": "Lembrar o contraste homem/Senhor.",
+      "evidence": ["2 Crônicas 19:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 19:7 a Deuteronômio 16:18–19?",
+      "verseRef": "2 Crônicas 19:7",
+      "passageA": { "ref": "2 Crônicas 19:7" },
+      "passageB": { "ref": "Deuteronômio 16:18–19" },
+      "options": [
+        { "id": "a", "text": "Juízes sem parcialidade" },
+        { "id": "b", "text": "Suborno como bênção" },
+        { "id": "c", "text": "Juízo só para estrangeiros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem acepção de pessoas, nem aceitação de suborno",
+      "evidence": ["2 Crônicas 19:7", "Deuteronômio 16:18–19"],
+      "feedbackCorrect": "Nos dois textos, juízes devem rejeitar parcialidade e suborno.",
+      "feedbackWrong": {
+        "b": "Suborno é rejeitado.",
+        "c": "A ordem vale para o juízo do povo."
+      },
+      "hint": "Compare o que se proíbe aos juízes.",
+      "learningObjective": "Relacionar Josafá à lei de Deuteronômio."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 19:4–11 trata o juízo como tarefa meramente política, sem referência ao caráter de Deus.",
+      "verseRef": "2 Crônicas 19:6–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque no SENHOR, nosso Deus, não há injustiça",
+      "feedbackCorrect": "O juízo se funda no caráter de Deus: sem injustiça nem suborno.",
+      "feedbackWrong": { "true": "19:6–7 amarra o tribunal ao Senhor e ao seu caráter." },
+      "hint": "Veja o \"porque\" de 19:7.",
+      "learningObjective": "Interpretar o juízo como serviço a Deus.",
+      "evidence": ["2 Crônicas 19:6–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 19:7, toque o trecho que sustenta a leitura de um Deus sem parcialidade.",
+      "verseRef": "2 Crônicas 19:7",
+      "options": [
+        { "id": "a", "text": "acepção de pessoas" },
+        { "id": "b", "text": "nosso Deus" },
+        { "id": "c", "text": "tomai cuidado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem acepção de pessoas",
+      "feedbackCorrect": "\"Nem acepção de pessoas\" sustenta que Deus não é parcial.",
+      "feedbackWrong": {
+        "b": "\"Nosso Deus\" nomeia; a ausência de parcialidade está na lista.",
+        "c": "A ordem aos juízes; o fundamento é o caráter de Deus."
+      },
+      "hint": "Procure o que não há no Senhor.",
+      "learningObjective": "Sustentar a imparcialidade divina com o texto.",
+      "evidence": ["2 Crônicas 19:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 19:6–9 sustenta sobre autoridade?",
+      "verseRef": "2 Crônicas 19:6–9",
+      "options": [
+        { "id": "a", "text": "Autoridade judicial deve andar no temor do Senhor" },
+        { "id": "b", "text": "Basta o cargo; o coração não importa" },
+        { "id": "c", "text": "O Senhor está longe do tribunal" },
+        { "id": "d", "text": "Fidelidade é opcional se houver lei escrita" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "andem no temor do Senhor, com fidelidade e de todo o coração",
+      "feedbackCorrect": "Presença de Deus no juízo e ordem de temor com coração inteiro.",
+      "feedbackWrong": {
+        "b": "19:9 exige fidelidade e todo o coração.",
+        "c": "Ele está com eles no ato de julgar.",
+        "d": "Fidelidade é ordem explícita."
+      },
+      "hint": "Una 19:6 e 19:9.",
+      "learningObjective": "Escolher a leitura sustentável sobre autoridade.",
+      "evidence": ["2 Crônicas 19:6–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do juízo justo que começa em 2 Crônicas 19:7?",
+      "verseRef": "2 Crônicas 19:7",
+      "options": [
+        { "id": "a", "text": "No Senhor não há suborno nem acepção" },
+        { "id": "b", "text": "A lei pede juízes sem parcialidade" },
+        { "id": "c", "text": "A fé em Cristo rejeita acepção de pessoas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "nem acepção de pessoas, nem aceitação de suborno",
+      "evidence": ["2 Crônicas 19:7", "Deuteronômio 16:19", "Tiago 2:1"],
+      "feedbackCorrect": "Do caráter de Deus à lei e à fé sem parcialidade.",
+      "feedbackWrong": { "default": "Siga: Crônicas, Deuteronômio, Tiago." },
+      "hint": "Comece pelo que não há no Senhor.",
+      "learningObjective": "Ver a imparcialidade no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 19:9, andem no ___ do Senhor, com fidelidade.",
+      "verseRef": "2 Crônicas 19:9",
+      "options": [
+        { "id": "a", "text": "temor" },
+        { "id": "b", "text": "orgulho" },
+        { "id": "c", "text": "esquecimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "andem no temor do Senhor",
+      "feedbackCorrect": "O temor do Senhor é o modo de andar dos juízes.",
+      "feedbackWrong": {
+        "b": "O texto pede temor, não orgulho.",
+        "c": "Não é esquecimento; é temor com fidelidade."
+      },
+      "hint": "Veja a primeira qualidade do andar.",
+      "learningObjective": "Lembrar o termo do andar fiel.",
+      "evidence": ["2 Crônicas 19:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 19:7 a Tiago 2:1?",
+      "verseRef": "2 Crônicas 19:7",
+      "passageA": { "ref": "2 Crônicas 19:7" },
+      "passageB": { "ref": "Tiago 2:1" },
+      "options": [
+        { "id": "a", "text": "Sem acepção de pessoas" },
+        { "id": "b", "text": "Suborno no culto" },
+        { "id": "c", "text": "Juízo só para reis" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem acepção de pessoas",
+      "evidence": ["2 Crônicas 19:7", "Tiago 2:1"],
+      "feedbackCorrect": "Nos dois textos, acepção de pessoas é incompatível com Deus.",
+      "feedbackWrong": {
+        "b": "Suborno é rejeitado, não proposto.",
+        "c": "A imparcialidade vale para o povo de Deus."
+      },
+      "hint": "Compare a rejeição à parcialidade.",
+      "learningObjective": "Ligar o juízo de Josafá a Tiago 2:1."
+    }
+  ]
+}

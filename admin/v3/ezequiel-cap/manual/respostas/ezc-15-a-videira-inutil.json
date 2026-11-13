@@ -1,0 +1,724 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 15:1–8",
+    "passages": [
+      {
+        "ref": "Ezequiel 15:1–8"
+      }
+    ],
+    "context": "Deus compara Jerusalém ao sarmento da videira: madeira sem utilidade para obra, só boa para o fogo. O juízo segue a mesma lógica.",
+    "keyword": "sarmento",
+    "keywordGloss": "O ramo da videira, imagem de madeira inútil que o Senhor entrega ao fogo como fará com Jerusalém.",
+    "focusQuestion": "Onde sua vida parece ramo sem fruto, só madeira para o fogo?",
+    "reflectionPrompts": [
+      "Madeira sem obra",
+      "Entregue ao fogo",
+      "Habitantes de Jerusalém"
+    ],
+    "facts": [
+      {
+        "text": "O sarmento da videira não se distingue entre os troncos da floresta.",
+        "evidenceRef": "Ezequiel 15:2",
+        "evidenceSpan": "o que distingue o ramo entre os troncos da floresta"
+      },
+      {
+        "text": "A madeira do sarmento não serve para fazer obra nem estaca.",
+        "evidenceRef": "Ezequiel 15:3",
+        "evidenceSpan": "Pode-se usar madeira dele para fazer alguma obra"
+      },
+      {
+        "text": "Entregam o sarmento ao fogo para ser consumido.",
+        "evidenceRef": "Ezequiel 15:4",
+        "evidenceSpan": "Eis que o entregam ao fogo, para ser consumido"
+      },
+      {
+        "text": "Estando inteiro, o sarmento não serve para obra alguma.",
+        "evidenceRef": "Ezequiel 15:5",
+        "evidenceSpan": "estando inteiro, não serve para obra alguma"
+      },
+      {
+        "text": "Como o sarmento ao fogo, Deus entregará os habitantes de Jerusalém.",
+        "evidenceRef": "Ezequiel 15:6",
+        "evidenceSpan": "assim entregarei os habitantes de Jerusalém"
+      },
+      {
+        "text": "A terra será desolação por causa das graves transgressões.",
+        "evidenceRef": "Ezequiel 15:8",
+        "evidenceSpan": "Farei da terra uma desolação, porquanto cometeram graves transgressões"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sarmento",
+        "gloss": "O ramo da videira, imagem da madeira sem utilidade."
+      },
+      {
+        "term": "fogo",
+        "gloss": "O destino do sarmento inútil e o juízo sobre Jerusalém."
+      },
+      {
+        "term": "desolação",
+        "gloss": "O resultado do juízo sobre a terra por causa das transgressões."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pergunta sobre o valor do sarmento",
+        "evidenceRef": "Ezequiel 15:1–3"
+      },
+      {
+        "label": "O sarmento vai ao fogo e não serve",
+        "evidenceRef": "Ezequiel 15:4–5"
+      },
+      {
+        "label": "Comparação com os habitantes de Jerusalém",
+        "evidenceRef": "Ezequiel 15:6–7"
+      },
+      {
+        "label": "Terra em desolação pelas transgressões",
+        "evidenceRef": "Ezequiel 15:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Como o sarmento entregue ao fogo, assim Deus entregará Jerusalém.",
+        "marker": "Como",
+        "evidenceRef": "Ezequiel 15:6"
+      },
+      {
+        "kind": "causa",
+        "text": "A terra fica desolada porque cometeram graves transgressões.",
+        "marker": "porquanto",
+        "evidenceRef": "Ezequiel 15:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Saberão que o Senhor é Deus quando Ele voltar a face contra eles.",
+        "marker": "quando",
+        "evidenceRef": "Ezequiel 15:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 15:6",
+        "bridge": "Ramo seco ao fogo"
+      },
+      {
+        "ref": "Isaías 5:24",
+        "bridge": "Palha no fogo"
+      },
+      {
+        "ref": "Mateus 3:10",
+        "bridge": "Árvore sem fruto"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A videira é sempre útil; o texto só elogia Israel.",
+        "why": "O sarmento não serve para obra e vai ao fogo; a comparação é de juízo."
+      },
+      {
+        "text": "O fogo é só metáfora sem destino real para Jerusalém.",
+        "why": "Deus diz que entregará os habitantes como entregou o sarmento ao fogo."
+      },
+      {
+        "text": "A desolação da terra não tem causa no texto.",
+        "why": "O versículo liga a desolação às graves transgressões."
+      }
+    ],
+    "centralInsight": "Como dei a madeira da videira ao fogo, assim darei os moradores de Jerusalém.",
+    "anchorQuestion": "A quem Deus compara o sarmento entregue ao fogo em Ezequiel 15:6?"
+  },
+  "questions": [
+    {
+      "question": "Em Ezequiel 15:5, estando inteiro, o sarmento não serve para obra alguma.",
+      "verseRef": "Ezequiel 15:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "estando inteiro, não serve para obra alguma",
+      "feedbackCorrect": "Mesmo inteiro, o sarmento não serve para obra.",
+      "feedbackWrong": {
+        "false": "O versículo diz que, inteiro, não serve para obra alguma."
+      },
+      "hint": "Leia o começo da comparação no versículo.",
+      "learningObjective": "Identificar a inutilidade do sarmento.",
+      "difficulty": "semente",
+      "type": "true_false",
+      "evidence": [
+        "Ezequiel 15:5"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:2, toque a madeira comparada aos outros sarmentos.",
+      "verseRef": "Ezequiel 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "sarmento da videira"
+        },
+        {
+          "id": "b",
+          "text": "Filho do homem"
+        },
+        {
+          "id": "c",
+          "text": "troncos da floresta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o que tem o sarmento da videira mais do que qualquer outro sarmento",
+      "feedbackCorrect": "A pergunta parte do sarmento da videira.",
+      "feedbackWrong": {
+        "b": "É o vocativo do profeta, não a madeira.",
+        "c": "São o contraste, não o objeto da pergunta."
+      },
+      "hint": "Procure o objeto da primeira pergunta do Senhor.",
+      "learningObjective": "Identificar o sarmento da videira.",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "evidence": [
+        "Ezequiel 15:2"
+      ]
+    },
+    {
+      "question": "Segundo Ezequiel 15:6, o que Deus fará com os habitantes de Jerusalém?",
+      "verseRef": "Ezequiel 15:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entregá-los como o sarmento ao fogo"
+        },
+        {
+          "id": "b",
+          "text": "Torná-los madeira útil para obra"
+        },
+        {
+          "id": "c",
+          "text": "Plantá-los de novo no bosque"
+        },
+        {
+          "id": "d",
+          "text": "Poupar só as extremidades"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "A comparação fecha com a entrega dos habitantes.",
+      "feedbackWrong": {
+        "b": "O sarmento não serve para obra.",
+        "c": "Não há novo plantio neste versículo.",
+        "d": "O destino é o fogo, não a poupança."
+      },
+      "hint": "Leia o fim da comparação com o sarmento.",
+      "learningObjective": "Reconhecer o destino de Jerusalém.",
+      "difficulty": "semente",
+      "type": "choice",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Monte Ezequiel 15:6 na ordem do texto.",
+      "verseRef": "Ezequiel 15:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como o sarmento da videira entre as árvores do bosque"
+        },
+        {
+          "id": "b",
+          "text": "que entreguei ao fogo para que seja consumido"
+        },
+        {
+          "id": "c",
+          "text": "assim entregarei os habitantes de Jerusalém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Como o sarmento da videira entre as árvores do bosque, que entreguei ao fogo para que seja consumido, assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "Comparação, fogo e destino de Jerusalém.",
+      "feedbackWrong": {
+        "default": "Comece pelo Como; feche com os habitantes."
+      },
+      "hint": "Siga a comparação até o assim.",
+      "learningObjective": "Reconhecer a ordem da comparação.",
+      "difficulty": "semente",
+      "type": "order",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:4, o entregam ao ___, para ser consumido.",
+      "verseRef": "Ezequiel 15:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "campo"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o entregam ao fogo, para ser consumido",
+      "feedbackCorrect": "O destino do sarmento é o fogo.",
+      "feedbackWrong": {
+        "b": "Não é campo: é fogo.",
+        "c": "Não é templo: é fogo."
+      },
+      "hint": "Veja o substantivo depois de ao.",
+      "learningObjective": "Lembrar o destino do sarmento.",
+      "difficulty": "semente",
+      "type": "complete",
+      "evidence": [
+        "Ezequiel 15:4"
+      ]
+    },
+    {
+      "question": "O que Ezequiel 15:6 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 15:6",
+      "passageA": {
+        "ref": "Ezequiel 15:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O sarmento inútil vai ao fogo; assim vão os habitantes de Jerusalém."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém como sarmento"
+        },
+        {
+          "id": "b",
+          "text": "Paz sem juízo"
+        },
+        {
+          "id": "c",
+          "text": "Muro sem fenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "A comparação une sarmento e Jerusalém.",
+      "feedbackWrong": {
+        "b": "O texto aponta juízo, não paz.",
+        "c": "Não é o tema desta cena."
+      },
+      "hint": "Compare o sarmento com os habitantes.",
+      "learningObjective": "Ligar a comparação ao contexto.",
+      "difficulty": "semente",
+      "type": "connect",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:6, a palavra Como marca a comparação entre o sarmento e Jerusalém.",
+      "verseRef": "Ezequiel 15:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Como o sarmento da videira entre as árvores do bosque",
+      "feedbackCorrect": "Como introduz a comparação que fecha com assim.",
+      "feedbackWrong": {
+        "false": "O versículo abre a comparação com Como."
+      },
+      "hint": "Veja a palavra que abre a comparação.",
+      "learningObjective": "Perceber o marcador de comparação.",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:8, toque a palavra que marca a causa da desolação.",
+      "verseRef": "Ezequiel 15:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "porquanto"
+        },
+        {
+          "id": "b",
+          "text": "desolação"
+        },
+        {
+          "id": "c",
+          "text": "Senhor Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porquanto cometeram graves transgressões",
+      "feedbackCorrect": "Porquanto introduz a causa das transgressões.",
+      "feedbackWrong": {
+        "b": "É o resultado, não o marcador.",
+        "c": "É quem fala, não a causa."
+      },
+      "hint": "Procure a palavra que liga desolação e transgressões.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "evidence": [
+        "Ezequiel 15:8"
+      ]
+    },
+    {
+      "question": "Como Ezequiel 15:5 se liga a 15:6?",
+      "verseRef": "Ezequiel 15:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inutilidade do sarmento prepara o juízo sobre Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "O sarmento inútil vira madeira nobre"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém é poupada por ser videira"
+        },
+        {
+          "id": "d",
+          "text": "O fogo só queima as extremidades"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "A inutilidade leva à comparação de juízo.",
+      "feedbackWrong": {
+        "b": "O texto não valoriza o sarmento.",
+        "c": "A comparação é de entrega ao fogo.",
+        "d": "O destino é o consumo pelo fogo."
+      },
+      "hint": "Una a inutilidade à comparação.",
+      "learningObjective": "Relacionar inutilidade e juízo.",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "evidence": [
+        "Ezequiel 15:5",
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Como a cena avança em Ezequiel 15?",
+      "verseRef": "Ezequiel 15:1–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pergunta sobre o valor do sarmento"
+        },
+        {
+          "id": "b",
+          "text": "O sarmento vai ao fogo e não serve"
+        },
+        {
+          "id": "c",
+          "text": "Comparação e desolação de Jerusalém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "Pergunta, fogo e juízo sobre a cidade.",
+      "feedbackWrong": {
+        "default": "Comece na pergunta; feche na desolação."
+      },
+      "hint": "Pense em pergunta, fogo e comparação.",
+      "learningObjective": "Ordenar os movimentos da cena.",
+      "difficulty": "caminhada",
+      "type": "order",
+      "evidence": [
+        "Ezequiel 15:1",
+        "Ezequiel 15:2",
+        "Ezequiel 15:3",
+        "Ezequiel 15:4",
+        "Ezequiel 15:5",
+        "Ezequiel 15:6",
+        "Ezequiel 15:7",
+        "Ezequiel 15:8"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:6, assim entregarei os habitantes de ___.",
+      "verseRef": "Ezequiel 15:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Nínive"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "O alvo da comparação é Jerusalém.",
+      "feedbackWrong": {
+        "b": "Não é Nínive: é Jerusalém.",
+        "c": "Não é Egito: é Jerusalém."
+      },
+      "hint": "Veja o nome depois de habitantes de.",
+      "learningObjective": "Lembrar o alvo do juízo.",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "O que liga Ezequiel 15:6 a João 15:6?",
+      "verseRef": "Ezequiel 15:6",
+      "passageA": {
+        "ref": "Ezequiel 15:6"
+      },
+      "passageB": {
+        "ref": "João 15:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ramo seco ao fogo"
+        },
+        {
+          "id": "b",
+          "text": "Templo sem nuvem"
+        },
+        {
+          "id": "c",
+          "text": "Espada no santuário"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entreguei ao fogo para que seja consumido",
+      "feedbackCorrect": "Os dois ligam o ramo inútil ao fogo.",
+      "feedbackWrong": {
+        "b": "Não é o elo.",
+        "c": "É de outra cena."
+      },
+      "hint": "Compare o destino do ramo nos dois textos.",
+      "learningObjective": "Relacionar o sarmento ao ramo em João.",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:8, a terra fica desolada sem nenhuma ligação com as transgressões.",
+      "verseRef": "Ezequiel 15:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "porquanto cometeram graves transgressões",
+      "feedbackCorrect": "A desolação tem causa explícita nas transgressões.",
+      "feedbackWrong": {
+        "true": "O versículo liga a desolação às transgressões."
+      },
+      "hint": "Veja a palavra que liga desolação e culpa.",
+      "learningObjective": "Rejeitar a leitura sem causa.",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "evidence": [
+        "Ezequiel 15:8"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:7, toque o trecho que sustenta a ação de Deus contra eles.",
+      "verseRef": "Ezequiel 15:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porei minha face"
+        },
+        {
+          "id": "b",
+          "text": "outro fogo"
+        },
+        {
+          "id": "c",
+          "text": "o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porei minha face contra eles",
+      "feedbackCorrect": "Porei minha face marca o juízo pessoal.",
+      "feedbackWrong": {
+        "b": "É consequência, não a ação inicial.",
+        "c": "É o reconhecimento final."
+      },
+      "hint": "Procure a primeira ação do versículo.",
+      "learningObjective": "Tocar o trecho do juízo.",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "evidence": [
+        "Ezequiel 15:7"
+      ]
+    },
+    {
+      "question": "Qual leitura de Ezequiel 15 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 15:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém inútil como sarmento será entregue ao juízo"
+        },
+        {
+          "id": "b",
+          "text": "A videira sempre garante proteção sem fruto"
+        },
+        {
+          "id": "c",
+          "text": "O fogo é só imagem sem destino real"
+        },
+        {
+          "id": "d",
+          "text": "Só as extremidades do povo serão julgadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "A comparação une inutilidade e juízo.",
+      "feedbackWrong": {
+        "b": "O sarmento não serve para obra.",
+        "c": "Deus entrega os habitantes como o sarmento.",
+        "d": "O destino alcança os habitantes."
+      },
+      "hint": "Una a inutilidade à comparação final.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    },
+    {
+      "question": "Ordene a lógica da cena.",
+      "verseRef": "Ezequiel 15:1–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sarmento sem utilidade para obra"
+        },
+        {
+          "id": "b",
+          "text": "Entrega ao fogo como destino"
+        },
+        {
+          "id": "c",
+          "text": "Habitantes de Jerusalém no mesmo juízo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "Inutilidade, fogo e juízo sobre a cidade.",
+      "feedbackWrong": {
+        "default": "Comece na inutilidade; feche em Jerusalém."
+      },
+      "hint": "Pense em valor, fogo e comparação.",
+      "learningObjective": "Encadear a lógica da videira inútil.",
+      "difficulty": "profundezas",
+      "type": "order",
+      "evidence": [
+        "Ezequiel 15:1",
+        "Ezequiel 15:2",
+        "Ezequiel 15:3",
+        "Ezequiel 15:4",
+        "Ezequiel 15:5",
+        "Ezequiel 15:6",
+        "Ezequiel 15:7",
+        "Ezequiel 15:8"
+      ]
+    },
+    {
+      "question": "Em Ezequiel 15:8, Farei da terra uma ___.",
+      "verseRef": "Ezequiel 15:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "desolação"
+        },
+        {
+          "id": "b",
+          "text": "vinha"
+        },
+        {
+          "id": "c",
+          "text": "fortaleza"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei da terra uma desolação",
+      "feedbackCorrect": "O termo do juízo é desolação.",
+      "feedbackWrong": {
+        "b": "Não é vinha: é desolação.",
+        "c": "Não é fortaleza: é desolação."
+      },
+      "hint": "Veja o substantivo depois de uma.",
+      "learningObjective": "Lembrar o termo do juízo final.",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "evidence": [
+        "Ezequiel 15:8"
+      ]
+    },
+    {
+      "question": "O que liga Ezequiel 15:6 a Mateus 3:10?",
+      "verseRef": "Ezequiel 15:6",
+      "passageA": {
+        "ref": "Ezequiel 15:6"
+      },
+      "passageB": {
+        "ref": "Mateus 3:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Árvore sem fruto"
+        },
+        {
+          "id": "b",
+          "text": "Paz sem muro"
+        },
+        {
+          "id": "c",
+          "text": "Rolo doce na boca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entreguei ao fogo para que seja consumido",
+      "feedbackCorrect": "Os dois ligam inutilidade e juízo pelo fogo.",
+      "feedbackWrong": {
+        "b": "Não é o elo.",
+        "c": "É de outra cena."
+      },
+      "hint": "Compare o destino do que não produz.",
+      "learningObjective": "Ligar a videira ao juízo das árvores.",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "evidence": [
+        "Ezequiel 15:6"
+      ]
+    }
+  ]
+}

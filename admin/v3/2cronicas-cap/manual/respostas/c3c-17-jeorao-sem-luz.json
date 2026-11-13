@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 21:5–15",
+    "passages": [
+      {
+        "ref": "2 Crônicas 21:5–15"
+      }
+    ],
+    "context": "Jeorão anda nos caminhos de Acabe, mata os irmãos e recebe carta de Elias anunciando juízo.",
+    "keyword": "abandonou",
+    "keywordGloss": "Jeorão abandonou o Senhor; por isso Libna se levanta e vem o juízo.",
+    "focusQuestion": "Que caminhos você está seguindo — os de Josafá ou os de Acabe?",
+    "reflectionPrompts": [
+      "Caminhos de Acabe",
+      "Lâmpada de Davi",
+      "Carta de Elias"
+    ],
+    "facts": [
+      {
+        "text": "Jeorão seguiu os caminhos dos reis de Israel e da casa de Acabe.",
+        "evidenceRef": "2 Crônicas 21:6",
+        "evidenceSpan": "seguiu os caminhos dos reis de Israel"
+      },
+      {
+        "text": "O Senhor não quis destruir a casa de Davi por causa da aliança e da lâmpada.",
+        "evidenceRef": "2 Crônicas 21:7",
+        "evidenceSpan": "não quis destruir a casa de Davi"
+      },
+      {
+        "text": "Libna se levantou porque Jeorão abandonou o Senhor.",
+        "evidenceRef": "2 Crônicas 21:10",
+        "evidenceSpan": "porque este abandonou o Senhor, Deus de seus pais"
+      },
+      {
+        "text": "Construiu altos e seduziu Jerusalém à idolatria.",
+        "evidenceRef": "2 Crônicas 21:11",
+        "evidenceSpan": "seduziu os habitantes de Jerusalém à idolatria"
+      },
+      {
+        "text": "Elias anuncia grande aflição sobre povo e rei.",
+        "evidenceRef": "2 Crônicas 21:14",
+        "evidenceSpan": "o Senhor castigará com grande aflição"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "abandonou",
+        "gloss": "Causa da revolta de Libna e do juízo."
+      },
+      {
+        "term": "lâmpada",
+        "gloss": "Promessa que preserva a casa de Davi."
+      },
+      {
+        "term": "idolatria",
+        "gloss": "Prática a que Jeorão induziu Judá, como Acabe."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jeorão imita Acabe e faz o mal",
+        "evidenceRef": "2 Crônicas 21:5–6"
+      },
+      {
+        "label": "Deus preserva a lâmpada de Davi",
+        "evidenceRef": "2 Crônicas 21:7"
+      },
+      {
+        "label": "Rebeliões e altos idólatras",
+        "evidenceRef": "2 Crônicas 21:8–11"
+      },
+      {
+        "label": "Carta de Elias anuncia o castigo",
+        "evidenceRef": "2 Crônicas 21:12–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Libna se levantou porque Jeorão abandonou o Senhor.",
+        "marker": "porque",
+        "evidenceRef": "2 Crônicas 21:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Contudo, o Senhor não quis destruir a casa de Davi.",
+        "marker": "Contudo",
+        "evidenceRef": "2 Crônicas 21:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porquanto não andou nos caminhos certos, virá aflição.",
+        "marker": "Porquanto",
+        "evidenceRef": "2 Crônicas 21:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 7:16",
+        "bridge": "Trono de Davi para sempre"
+      },
+      {
+        "ref": "1 Reis 21:25",
+        "bridge": "Acabe vendeu-se ao mal"
+      },
+      {
+        "ref": "Salmos 132:17",
+        "bridge": "Lâmpada para Davi"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jeorão andou nos caminhos de Josafá e Asa.",
+        "why": "21:12–13 diz que não andou nesses caminhos."
+      },
+      {
+        "text": "Deus destruiu de vez a casa de Davi.",
+        "why": "21:7: não quis destruir a casa de Davi."
+      },
+      {
+        "text": "Libna se rebelou sem ligação com o abandono.",
+        "why": "21:10 liga a revolta ao abandono."
+      }
+    ],
+    "centralInsight": "Porque abandonaste o Senhor, Deus ferirá teu povo, tua casa e a ti mesmo.",
+    "anchorQuestion": "Por que Libna se levantou contra Jeorão, segundo 2 Crônicas 21:10?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 21:10, Libna se levantou contra Jeorão porque ele abandonou o Senhor.",
+      "verseRef": "2 Crônicas 21:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque este abandonou o Senhor, Deus de seus pais",
+      "feedbackCorrect": "A revolta de Libna é ligada ao abandono do Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 21:10: a causa é abandonar o Senhor."
+      },
+      "hint": "Veja o porque no fim do versículo.",
+      "learningObjective": "Observar a causa da revolta de Libna.",
+      "evidence": [
+        "2 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 21:7, toque o que o Senhor prometeu dar a Davi e a seus filhos.",
+      "verseRef": "2 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "lâmpada"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dar a ele e a seus filhos uma lâmpada continuamente",
+      "feedbackCorrect": "A lâmpada continua por causa da aliança com Davi.",
+      "feedbackWrong": {
+        "b": "A casa é o que Deus não quis destruir; o dom é a lâmpada.",
+        "c": "A aliança é o motivo; o dom é a lâmpada."
+      },
+      "hint": "Procure o que seria dado continuamente.",
+      "learningObjective": "Identificar a lâmpada de Davi.",
+      "evidence": [
+        "2 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 21:6, o que Jeorão fez diante do Senhor?",
+      "verseRef": "2 Crônicas 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fez o que era mau diante do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Removeu todos os altos de Judá"
+        },
+        {
+          "id": "c",
+          "text": "Andou só nos caminhos de Asa"
+        },
+        {
+          "id": "d",
+          "text": "Recusou a casa de Acabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez o que era mau diante do Senhor",
+      "feedbackCorrect": "Seguiu Acabe e fez o que era mau diante do Senhor.",
+      "feedbackWrong": {
+        "b": "Ele construiu altos.",
+        "c": "Andou como os reis de Israel.",
+        "d": "Tinha por esposa a filha de Acabe."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar a avaliação de Jeorão.",
+      "evidence": [
+        "2 Crônicas 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 21:10 na ordem do texto.",
+      "verseRef": "2 Crônicas 21:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os edomitas se rebelaram contra o domínio de Judá"
+        },
+        {
+          "id": "b",
+          "text": "Libna se levantou contra Jeorão"
+        },
+        {
+          "id": "c",
+          "text": "porque este abandonou o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "porque este abandonou o Senhor, Deus de seus pais",
+      "feedbackCorrect": "Rebeliões e, por fim, a causa do abandono.",
+      "feedbackWrong": {
+        "default": "A causa fecha o versículo."
+      },
+      "hint": "Comece pelos edomitas.",
+      "learningObjective": "Reconhecer a ordem de 21:10.",
+      "evidence": [
+        "2 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 21:10, Jeorão ___ o Senhor, Deus de seus pais.",
+      "verseRef": "2 Crônicas 21:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "abandonou"
+        },
+        {
+          "id": "b",
+          "text": "buscou"
+        },
+        {
+          "id": "c",
+          "text": "louvou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abandonou o Senhor, Deus de seus pais",
+      "feedbackCorrect": "O verbo da queda é abandonou.",
+      "feedbackWrong": {
+        "b": "O texto diz abandonou, não buscou.",
+        "c": "Não há louvor; há abandono."
+      },
+      "hint": "Veja o verbo depois de porque este.",
+      "learningObjective": "Lembrar o verbo do abandono.",
+      "evidence": [
+        "2 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 21:10 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 21:10",
+      "passageA": {
+        "ref": "2 Crônicas 21:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A revolta política revela o abandono espiritual do rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandono traz rebelião"
+        },
+        {
+          "id": "b",
+          "text": "Libna louva Jeorão"
+        },
+        {
+          "id": "c",
+          "text": "Edom fortalece Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque este abandonou o Senhor",
+      "feedbackCorrect": "Abandonar o Senhor e a revolta de Libna estão ligados.",
+      "feedbackWrong": {
+        "b": "Libna se levantou contra ele.",
+        "c": "Edom se rebelou."
+      },
+      "hint": "Veja a causa dada no texto.",
+      "learningObjective": "Ligar abandono e rebelião.",
+      "evidence": [
+        "2 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 21:7, o Senhor destrói de vez a casa de Davi por causa de Jeorão.",
+      "verseRef": "2 Crônicas 21:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Senhor não quis destruir a casa de Davi",
+      "feedbackCorrect": "Contudo, por causa da aliança, Deus não destrói a casa de Davi.",
+      "feedbackWrong": {
+        "true": "Releia 21:7: Ele não quis destruir a casa de Davi."
+      },
+      "hint": "Olhe o começo do versículo.",
+      "learningObjective": "Compreender a preservação da lâmpada.",
+      "evidence": [
+        "2 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 21:7, toque a palavra que marca o contraste com a maldade de Jeorão.",
+      "verseRef": "2 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contudo"
+        },
+        {
+          "id": "b",
+          "text": "aliança"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contudo, o Senhor não quis destruir",
+      "feedbackCorrect": "Contudo introduz a misericórdia da aliança.",
+      "feedbackWrong": {
+        "b": "A aliança é o motivo; o contraste abre com Contudo.",
+        "c": "Os filhos recebem a lâmpada."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 21:12–13 se relaciona com 21:6?",
+      "verseRef": "2 Crônicas 21:6–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "A carta de Elias confirma que ele andou como Acabe"
+        },
+        {
+          "id": "b",
+          "text": "Elias elogia os caminhos de Josafá em Jeorão"
+        },
+        {
+          "id": "c",
+          "text": "Jeorão é absolvido por poupar os irmãos"
+        },
+        {
+          "id": "d",
+          "text": "A idolatria de Acabe é rejeitada por Jeorão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "andou pelos caminhos dos reis de Israel",
+      "feedbackCorrect": "A carta ecoa 21:6: caminhos de Israel e idolatria de Acabe.",
+      "feedbackWrong": {
+        "b": "Ele não andou nos caminhos de Josafá.",
+        "c": "Matou os irmãos.",
+        "d": "Induziu Judá à idolatria como Acabe."
+      },
+      "hint": "Compare a acusação de Elias com 21:6.",
+      "learningObjective": "Relacionar a carta ao relato.",
+      "evidence": [
+        "2 Crônicas 21:6–13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 21:6–15?",
+      "verseRef": "2 Crônicas 21:6–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeorão faz o mal como Acabe"
+        },
+        {
+          "id": "b",
+          "text": "Deus preserva a lâmpada de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Elias anuncia aflição e doença"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor castigará com grande aflição",
+      "feedbackCorrect": "Mal, preservação da casa e juízo anunciado.",
+      "feedbackWrong": {
+        "default": "A carta de Elias fecha o arco."
+      },
+      "hint": "Comece pela maldade de Jeorão.",
+      "learningObjective": "Compreender o arco da cena.",
+      "evidence": [
+        "2 Crônicas 21:6–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 21:7, o Senhor não quis ___ a casa de Davi.",
+      "verseRef": "2 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "destruir"
+        },
+        {
+          "id": "b",
+          "text": "guardar"
+        },
+        {
+          "id": "c",
+          "text": "ungir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não quis destruir a casa de Davi",
+      "feedbackCorrect": "Ele não quis destruir a casa, por causa da aliança.",
+      "feedbackWrong": {
+        "b": "O verbo negado é destruir.",
+        "c": "Não é ungir; é destruir."
+      },
+      "hint": "Veja o verbo depois de não quis.",
+      "learningObjective": "Lembrar o verbo da preservação.",
+      "evidence": [
+        "2 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 21:7 a Salmos 132:17?",
+      "verseRef": "2 Crônicas 21:7",
+      "passageA": {
+        "ref": "2 Crônicas 21:7"
+      },
+      "passageB": {
+        "ref": "Salmos 132:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâmpada para Davi"
+        },
+        {
+          "id": "b",
+          "text": "Fim da casa de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Acabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma lâmpada continuamente",
+      "evidence": [
+        "2 Crônicas 21:7",
+        "Salmos 132:17"
+      ],
+      "feedbackCorrect": "Nos dois textos, Deus mantém uma lâmpada para Davi.",
+      "feedbackWrong": {
+        "b": "A casa não é destruída.",
+        "c": "A aliança é com Davi."
+      },
+      "hint": "Compare a imagem da lâmpada.",
+      "learningObjective": "Relacionar a lâmpada ao salmo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 21:5–15 ensina que a maldade do rei anula de imediato toda a aliança com Davi.",
+      "verseRef": "2 Crônicas 21:7–15",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Senhor não quis destruir a casa de Davi",
+      "feedbackCorrect": "Há juízo sobre Jeorão, mas a lâmpada de Davi permanece.",
+      "feedbackWrong": {
+        "true": "21:7 preserva a casa; 21:14–15 julga o rei mau."
+      },
+      "hint": "Compare 21:7 com o castigo de 21:14.",
+      "learningObjective": "Interpretar juízo e aliança juntos.",
+      "evidence": [
+        "2 Crônicas 21:7–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 21:13, toque o trecho que liga Jeorão à casa de Acabe.",
+      "verseRef": "2 Crônicas 21:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa de Acabe"
+        },
+        {
+          "id": "b",
+          "text": "seus irmãos"
+        },
+        {
+          "id": "c",
+          "text": "reis de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a idolatria da casa de Acabe",
+      "feedbackCorrect": "A idolatria é equiparada à da casa de Acabe.",
+      "feedbackWrong": {
+        "b": "Os irmãos assassinados agravam a culpa.",
+        "c": "Os caminhos de Israel abrem; o paralelo cultual é Acabe."
+      },
+      "hint": "Procure a comparação com Acabe.",
+      "learningObjective": "Sustentar o paralelo com Acabe.",
+      "evidence": [
+        "2 Crônicas 21:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 21:7–10 sustenta?",
+      "verseRef": "2 Crônicas 21:7–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus julga o abandono e ainda guarda a promessa a Davi"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar o Senhor não tem consequências"
+        },
+        {
+          "id": "c",
+          "text": "A lâmpada de Davi depende só de Jeorão"
+        },
+        {
+          "id": "d",
+          "text": "Libna se rebela por fidelidade a Acabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não quis destruir a casa de Davi",
+      "feedbackCorrect": "Juízo pelo abandono e preservação da aliança convivem no texto.",
+      "feedbackWrong": {
+        "b": "Libna se levanta por causa do abandono.",
+        "c": "A lâmpada vem da promessa de Deus.",
+        "d": "A causa é o abandono do Senhor."
+      },
+      "hint": "Una 21:7 e 21:10.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Crônicas 21:7–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da lâmpada de Davi que começa em 2 Crônicas 21:7?",
+      "verseRef": "2 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus não destrói a casa de Davi"
+        },
+        {
+          "id": "b",
+          "text": "O trono de Davi fica firme para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Deus prepara lâmpada para o ungido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "uma lâmpada continuamente",
+      "evidence": [
+        "2 Crônicas 21:7",
+        "2 Samuel 7:16",
+        "Salmos 132:17"
+      ],
+      "feedbackCorrect": "Da preservação em Crônicas à promessa e ao salmo da lâmpada.",
+      "feedbackWrong": {
+        "default": "Siga Crônicas, 2 Samuel e Salmos."
+      },
+      "hint": "Comece por 21:7.",
+      "learningObjective": "Ver a lâmpada no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 21:11, Jeorão seduziu Jerusalém à ___.",
+      "verseRef": "2 Crônicas 21:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "idolatria"
+        },
+        {
+          "id": "b",
+          "text": "oração"
+        },
+        {
+          "id": "c",
+          "text": "aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seduziu os habitantes de Jerusalém à idolatria",
+      "feedbackCorrect": "O termo carrega a queda cultual de Judá sob Jeorão.",
+      "feedbackWrong": {
+        "b": "O texto fala de idolatria, não oração.",
+        "c": "Não é aliança; é idolatria."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Lembrar o termo da sedução.",
+      "evidence": [
+        "2 Crônicas 21:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 21:6 a 1 Reis 21:25?",
+      "verseRef": "2 Crônicas 21:6",
+      "passageA": {
+        "ref": "2 Crônicas 21:6"
+      },
+      "passageB": {
+        "ref": "1 Reis 21:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Caminhos da casa de Acabe"
+        },
+        {
+          "id": "b",
+          "text": "Fidelidade de Josafá"
+        },
+        {
+          "id": "c",
+          "text": "Reforma dos altos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim como a casa de Acabe",
+      "evidence": [
+        "2 Crônicas 21:6",
+        "1 Reis 21:25"
+      ],
+      "feedbackCorrect": "Jeorão se alinha ao padrão mau associado a Acabe.",
+      "feedbackWrong": {
+        "b": "Ele não segue Josafá.",
+        "c": "Ele constrói altos, não reforma."
+      },
+      "hint": "Compare a casa de Acabe nos dois textos.",
+      "learningObjective": "Ligar Jeorão ao mal de Acabe."
+    }
+  ]
+}

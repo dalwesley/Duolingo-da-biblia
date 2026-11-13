@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Jeremias 48:1–6",
+    "passages": [
+      {
+        "ref": "Jeremias 48:1–6"
+      }
+    ],
+    "context": "Neste trecho, a palavra do Senhor alcança o povo com juízo e esperança. Observe o que o texto afirma antes de interpretar.",
+    "keyword": "Contra",
+    "keywordGloss": "Termo do trecho ligado ao sentido da cena.",
+    "focusQuestion": "O que este trecho pede de você diante do Senhor?",
+    "reflectionPrompts": [
+      "Ouvir a palavra",
+      "Confiar no Senhor",
+      "Responder com fé"
+    ],
+    "facts": [
+      {
+        "text": "Em Jeremias 48:1, o texto registra: Contra Moabe, assim diz o Senhor dos Exércitos,.",
+        "evidenceRef": "Jeremias 48:1",
+        "evidenceSpan": "Contra Moabe, assim diz o Senhor dos Exércitos,"
+      },
+      {
+        "text": "Em Jeremias 48:2, o texto registra: Já não há mais glória de Moabe; em.",
+        "evidenceRef": "Jeremias 48:2",
+        "evidenceSpan": "Já não há mais glória de Moabe; em"
+      },
+      {
+        "text": "Em Jeremias 48:3, o texto registra: A voz de clamor em Horonaim: ruína e.",
+        "evidenceRef": "Jeremias 48:3",
+        "evidenceSpan": "A voz de clamor em Horonaim: ruína e"
+      },
+      {
+        "text": "Em Jeremias 48:4, o texto registra: Moabe já foi destruído, seus pequenos estão clamando.",
+        "evidenceRef": "Jeremias 48:4",
+        "evidenceSpan": "Moabe já foi destruído, seus pequenos estão clamando"
+      },
+      {
+        "text": "Em Jeremias 48:5, o texto registra: Porque na subida de Luíte haverá choro contínuo;.",
+        "evidenceRef": "Jeremias 48:5",
+        "evidenceSpan": "Porque na subida de Luíte haverá choro contínuo;"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Contra",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "Moabe",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Contra Moabe Senhor Exércitos",
+        "evidenceRef": "Jeremias 48:1"
+      },
+      {
+        "label": "glória Moabe Hesbom tramaram",
+        "evidenceRef": "Jeremias 48:2"
+      },
+      {
+        "label": "clamor Horonaim ruína grande",
+        "evidenceRef": "Jeremias 48:3"
+      },
+      {
+        "label": "Moabe destruído pequenos estão",
+        "evidenceRef": "Jeremias 48:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Relação de causa presente em Jeremias 48:1.",
+        "marker": "porque",
+        "evidenceRef": "Jeremias 48:1"
+      },
+      {
+        "kind": "contraste",
+        "text": "Relação de contraste presente em Jeremias 48:2.",
+        "marker": "para que",
+        "evidenceRef": "Jeremias 48:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Relação de resultado presente em Jeremias 48:5.",
+        "marker": "Porque",
+        "evidenceRef": "Jeremias 48:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 6:8",
+        "bridge": "Envio do profeta"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro pedido"
+      },
+      {
+        "ref": "Deuteronômio 30:2",
+        "bridge": "Voltar ao Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não exige mudança concreta de vida.",
+        "why": "A palavra do Senhor chama a ouvir e agir."
+      },
+      {
+        "text": "A mensagem vale só para lideranças, nunca para o povo.",
+        "why": "O endereço do texto alcança o povo e a cidade."
+      },
+      {
+        "text": "O Senhor anuncia sem compromisso com o cumprimento.",
+        "why": "O texto liga a palavra de Deus ao que Ele faz."
+      }
+    ],
+    "centralInsight": "Maldito aquele que faz a obra do Senhor relaxadamente; e maldito o que retém a sua espada do sangue.",
+    "anchorQuestion": "O que Jeremias 48:1 afirma de modo claro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Jeremias 48:1, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 48:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Contra Moabe, assim diz o Senhor dos Exércitos, o Deus",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 48:1.",
+      "evidence": [
+        "Jeremias 48:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jeremias 48:2, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 48:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "Moabe"
+        },
+        {
+          "id": "c",
+          "text": "Hesbom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "há mais glória de Moab",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 48:2.",
+      "evidence": [
+        "Jeremias 48:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Jeremias 48:3, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 48:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A voz de clamor em Horonaim: ruína"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A voz de clamor em Horonaim: ruína",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 48:3.",
+      "evidence": [
+        "Jeremias 48:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 48:4.",
+      "verseRef": "Jeremias 48:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moabe já foi destruído"
+        },
+        {
+          "id": "b",
+          "text": "seus pequenos estão clamando"
+        },
+        {
+          "id": "c",
+          "text": "em alta voz."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Moabe já foi destruído, seus pequenos estão claman",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 48:4.",
+      "evidence": [
+        "Jeremias 48:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Jeremias 48:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 48:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "subida"
+        },
+        {
+          "id": "b",
+          "text": "Luíte"
+        },
+        {
+          "id": "c",
+          "text": "haverá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque na subida de Luíte",
+      "feedbackCorrect": "A palavra do texto é subida.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 48:5.",
+      "evidence": [
+        "Jeremias 48:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Jeremias 48:6 comunica que se liga a este contexto?",
+      "verseRef": "Jeremias 48:6",
+      "passageA": {
+        "ref": "Jeremias 48:6",
+        "text": "Escapem, salvem suas vidas, ainda que venham a ser como o junco solitário no des"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor dirige a palavra ao seu povo neste trecho."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Sem chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escapem, salvem suas vidas, ainda que venham a ser",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 48:6.",
+      "evidence": [
+        "Jeremias 48:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Jeremias 48:3, o texto inclui a ideia de A voz de clamor em Horonaim,.",
+      "verseRef": "Jeremias 48:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "A voz de clamor em Horonaim: ruína e grande devastação!",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 48:3.",
+      "evidence": [
+        "Jeremias 48:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jeremias 48:4, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 48:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moabe"
+        },
+        {
+          "id": "b",
+          "text": "destruído"
+        },
+        {
+          "id": "c",
+          "text": "pequenos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moabe já foi",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 48:4.",
+      "evidence": [
+        "Jeremias 48:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Jeremias 48:5, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 48:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque na subida de Luíte haverá choro contínuo;",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 48:5.",
+      "evidence": [
+        "Jeremias 48:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 48:6.",
+      "verseRef": "Jeremias 48:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escapem salvem vidas"
+        },
+        {
+          "id": "b",
+          "text": "venham"
+        },
+        {
+          "id": "c",
+          "text": "junco solitário deserto"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Escapem, salvem suas vidas, ainda que venham a ser",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 48:6.",
+      "evidence": [
+        "Jeremias 48:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Jeremias 48:1, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 48:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contra"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Exércitos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contra Moabe, as",
+      "feedbackCorrect": "A palavra do texto é Contra.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 48:1.",
+      "evidence": [
+        "Jeremias 48:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Jeremias 48:2 a Isaías 6:8?",
+      "verseRef": "Jeremias 48:2",
+      "passageA": {
+        "ref": "Jeremias 48:2",
+        "text": "Já não há mais glória de Moabe; em Hesbom tramaram contra ela, dizendo: vinde, e"
+      },
+      "passageB": {
+        "ref": "Isaías 6:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Envio do profeta"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Já não há mais glória de Moabe; em Hesbom tramaram",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 48:2.",
+      "evidence": [
+        "Jeremias 48:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Jeremias 48:5, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 48:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porque na subida de Luíte haverá choro contínuo; na descida",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 48:5.",
+      "evidence": [
+        "Jeremias 48:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jeremias 48:6, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 48:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escapem"
+        },
+        {
+          "id": "b",
+          "text": "salvem"
+        },
+        {
+          "id": "c",
+          "text": "vidas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escapem, salvem",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 48:6.",
+      "evidence": [
+        "Jeremias 48:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Jeremias 48:1, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 48:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contra Moabe, assim diz o Senhor dos Exércitos,",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 48:1.",
+      "evidence": [
+        "Jeremias 48:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 48:2.",
+      "verseRef": "Jeremias 48:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória Moabe"
+        },
+        {
+          "id": "b",
+          "text": "Hesbom tramaram contra dizendo"
+        },
+        {
+          "id": "c",
+          "text": "também Madmém serás reduzida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Já não há mais glória de Moabe; em Hesbom tramaram",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 48:2.",
+      "evidence": [
+        "Jeremias 48:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Jeremias 48:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 48:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamor"
+        },
+        {
+          "id": "b",
+          "text": "Horonaim"
+        },
+        {
+          "id": "c",
+          "text": "ruína"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A voz de clamor em Horona",
+      "feedbackCorrect": "A palavra do texto é clamor.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 48:3.",
+      "evidence": [
+        "Jeremias 48:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Jeremias 48:4 a Salmos 51:10?",
+      "verseRef": "Jeremias 48:4",
+      "passageA": {
+        "ref": "Jeremias 48:4",
+        "text": "Moabe já foi destruído, seus pequenos estão clamando em alta voz."
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro pedido"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moabe já foi destruído, seus pequenos estão claman",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 48:4.",
+      "evidence": [
+        "Jeremias 48:4"
+      ]
+    }
+  ]
+}

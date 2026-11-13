@@ -1,0 +1,61 @@
+{
+  "slug": "1joao-cap",
+  "prefix": "j1c",
+  "book": "1 João",
+  "chapters": 5,
+  "title": "1 João",
+  "description": "1 João capítulo a capítulo: comunhão, obediência, amor e certeza em Cristo.",
+  "icon": "💌",
+  "color": "#00695C",
+  "order": 76,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["cartas-joao"],
+  "modules": [
+    {
+      "title": "Luz, amor e certeza · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "1 João 1:1–4",
+          "title": "O que vimos e ouvimos",
+          "intro": "João começa pelo Verbo da vida: ouvido, visto e tocado.",
+          "insight": "Anunciamos o que vimos e ouvimos para que tenhais comunhão conosco e alegria completa.",
+          "objective": "Comunhão com o Verbo da vida"
+        },
+        {
+          "ref": "1 João 2:1–6",
+          "title": "Advogado junto ao Pai",
+          "intro": "Se alguém pecar, há Advogado; e quem diz que o conhece deve guardar os mandamentos.",
+          "insight": "Jesus Cristo é a propiciação; quem diz que permanece nele deve andar como ele andou.",
+          "objective": "Andar como Cristo andou"
+        },
+        {
+          "ref": "1 João 3:1–6",
+          "title": "Filhos de Deus",
+          "intro": "Vede quão grande amor o Pai nos concedeu: sermos chamados filhos de Deus.",
+          "insight": "Somos filhos de Deus agora; quem nele permanece não continua no pecado.",
+          "objective": "Viver como filhos de Deus"
+        },
+        {
+          "ref": "1 João 4:1–6",
+          "title": "Provai os espíritos",
+          "intro": "Não creiais em todo espírito: muitos falsos profetas saíram pelo mundo.",
+          "insight": "Todo espírito que confessa Jesus Cristo vindo em carne é de Deus; maior é aquele que está em vós.",
+          "objective": "Discernir a verdade"
+        },
+        {
+          "ref": "1 João 5:1–5",
+          "title": "A vitória da fé",
+          "intro": "Quem crê que Jesus é o Cristo é nascido de Deus e ama os filhos de Deus.",
+          "insight": "Esta é a vitória que vence o mundo: a nossa fé em Jesus como Filho de Deus.",
+          "objective": "Vencer o mundo pela fé"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Luz, amor e certeza",
+        "intro": "Revise a comunhão, o Advogado, a filiação, o discernimento e a fé que vence.",
+        "insight": "Em Cristo há comunhão, obediência e vitória pela fé"
+      }
+    }
+  ]
+}

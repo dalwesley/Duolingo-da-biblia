@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Cantares 7:6–13",
+    "passages": [
+      {
+        "ref": "Cantares 7:6–13"
+      }
+    ],
+    "context": "O amado celebra a formosura e o desejo. Ela responde com pertença e convite: vem, saiamos ao campo; ali te darei o meu amor. O desejo é mútuo e verbal.",
+    "keyword": "amor",
+    "keywordGloss": "O desejo dentro da aliança é convite mútuo, não posse brusca.",
+    "focusQuestion": "O seu desejo pelo outro tem sido convite ou exigência?",
+    "reflectionPrompts": [
+      "Quão formosa",
+      "Saudades de mim",
+      "Ali te darei"
+    ],
+    "facts": [
+      {
+        "text": "Ele a chama formosa e aprazível, ó amor em delícias.",
+        "evidenceRef": "Cantares 7:6",
+        "evidenceSpan": "Quão formosa e quão aprazível és, ó amor em delícias"
+      },
+      {
+        "text": "A estatura dela é semelhante à palmeira.",
+        "evidenceRef": "Cantares 7:7",
+        "evidenceSpan": "A tua estatura é semelhante à palmeira"
+      },
+      {
+        "text": "Ela afirma: eu sou do meu amado, e ele tem saudades de mim.",
+        "evidenceRef": "Cantares 7:10",
+        "evidenceSpan": "Eu sou do meu amado, e ele tem saudades de mim"
+      },
+      {
+        "text": "Ela o convida: vem, saiamos ao campo, passemos a noite nas aldeias.",
+        "evidenceRef": "Cantares 7:11",
+        "evidenceSpan": "Vem, ó meu amado, saiamos ao campo"
+      },
+      {
+        "text": "Nas vinhas ela promete: ali te darei o meu amor.",
+        "evidenceRef": "Cantares 7:12",
+        "evidenceSpan": "ali te darei o meu amor"
+      },
+      {
+        "text": "Há frutos novos e velhos reservados para o amado.",
+        "evidenceRef": "Cantares 7:13",
+        "evidenceSpan": "eu os reservei, ó meu amado"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "saudades",
+        "gloss": "O amado deseja a presença dela."
+      },
+      {
+        "term": "darei",
+        "gloss": "A promessa de dar o amor nas vinhas."
+      },
+      {
+        "term": "palmeira",
+        "gloss": "Imagem da estatura amada no louvor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amado celebra a formosura",
+        "evidenceRef": "Cantares 7:6–9"
+      },
+      {
+        "label": "Ela afirma a pertença e a saudade",
+        "evidenceRef": "Cantares 7:10"
+      },
+      {
+        "label": "O convite ao campo e às vinhas",
+        "evidenceRef": "Cantares 7:11–12"
+      },
+      {
+        "label": "Os frutos reservados ao amado",
+        "evidenceRef": "Cantares 7:13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Elas vão às vinhas para ver se florescem e ali dar o amor.",
+        "marker": "ali",
+        "evidenceRef": "Cantares 7:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "A saudade dele encontra resposta no convite dela.",
+        "marker": null,
+        "evidenceRef": "Cantares 7:10–11"
+      },
+      {
+        "kind": "sequência",
+        "text": "Do elogio dele ao convite dela.",
+        "marker": null,
+        "evidenceRef": "Cantares 7:6–11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 7:3–4",
+        "bridge": "Mútua entrega no casamento"
+      },
+      {
+        "ref": "Provérbios 5:18–19",
+        "bridge": "Alegrar-se com a esposa"
+      },
+      {
+        "ref": "Gênesis 2:24",
+        "bridge": "Uma só carne, mútua união"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Desejo dentro da aliança é sempre posse brusca.",
+        "why": "O texto mostra convite verbal e mútuo."
+      },
+      {
+        "text": "Só o homem fala; a mulher permanece muda.",
+        "why": "Ela convida, promete e reserva frutos."
+      },
+      {
+        "text": "O amor maduro evita qualquer desejo.",
+        "why": "Há elogio, saudade e \"te darei o meu amor\"."
+      }
+    ],
+    "centralInsight": "O desejo dentro da aliança é convite mútuo, não posse brusca.",
+    "anchorQuestion": "Segundo Cantares 7:12, o que ela dará nas vinhas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 7:12, ela promete que ali te darei o meu amor.",
+      "verseRef": "Cantares 7:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "O convite inclui a oferta do amor.",
+      "feedbackWrong": {
+        "false": "Releia 7:12: ali te darei o meu amor."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar a oferta do amor.",
+      "evidence": [
+        "Cantares 7:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 7:11, toque o convite inicial.",
+      "verseRef": "Cantares 7:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu amado"
+        },
+        {
+          "id": "b",
+          "text": "aldeias"
+        },
+        {
+          "id": "c",
+          "text": "noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem, ó meu amado, saiamos ao campo",
+      "feedbackCorrect": "O convite abre com Vem.",
+      "feedbackWrong": {
+        "b": "Aldeias são o destino da noite.",
+        "c": "Noite é o tempo, não o convite."
+      },
+      "hint": "Ouça a primeira palavra.",
+      "learningObjective": "Identificar o convite.",
+      "evidence": [
+        "Cantares 7:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 7:10, o que ele tem dela?",
+      "verseRef": "Cantares 7:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saudades"
+        },
+        {
+          "id": "b",
+          "text": "Indiferença"
+        },
+        {
+          "id": "c",
+          "text": "Raiva"
+        },
+        {
+          "id": "d",
+          "text": "Esquecimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele tem saudades de mim",
+      "feedbackCorrect": "Ele tem saudades dela.",
+      "feedbackWrong": {
+        "b": "Há saudade explícita.",
+        "c": "O tom é desejo, não raiva.",
+        "d": "Há memória e desejo."
+      },
+      "hint": "Leia a segunda metade do versículo.",
+      "learningObjective": "Reconhecer a saudade mútua.",
+      "evidence": [
+        "Cantares 7:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 7:10 na ordem do texto.",
+      "verseRef": "Cantares 7:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu sou do meu amado"
+        },
+        {
+          "id": "b",
+          "text": "e ele tem"
+        },
+        {
+          "id": "c",
+          "text": "saudades de mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu sou do meu amado, e ele tem saudades de mim",
+      "feedbackCorrect": "Pertença → ele tem → saudades.",
+      "feedbackWrong": {
+        "default": "Comece por Eu sou; saudades fecha."
+      },
+      "hint": "Siga pertença → ele → saudades.",
+      "learningObjective": "Seguir a ordem da pertença.",
+      "evidence": [
+        "Cantares 7:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 7:7, a que é semelhante a estatura dela?",
+      "verseRef": "Cantares 7:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "palmeira"
+        },
+        {
+          "id": "b",
+          "text": "torre"
+        },
+        {
+          "id": "c",
+          "text": "muro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "semelhante à palmeira",
+      "feedbackCorrect": "A estatura é semelhante à palmeira.",
+      "feedbackWrong": {
+        "b": "Torre aparece em outros capítulos.",
+        "c": "Muro aparece em 8:10."
+      },
+      "hint": "Veja a comparação da estatura.",
+      "learningObjective": "Lembrar a palmeira.",
+      "evidence": [
+        "Cantares 7:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 7:11–12 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 7:11–12",
+      "passageA": {
+        "ref": "Cantares 7:11–12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O desejo dentro da aliança é convite mútuo, não posse brusca."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Convite verbal mútuo"
+        },
+        {
+          "id": "b",
+          "text": "Posse sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem desejo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem, ó meu amado, saiamos ao campo",
+      "feedbackCorrect": "O \"Vem\" e o \"te darei\" mostram convite, não posse brusca.",
+      "feedbackWrong": {
+        "b": "Há palavras claras de convite.",
+        "c": "Há desejo explícito."
+      },
+      "hint": "Veja o tom do Vem.",
+      "learningObjective": "Ligar o contexto ao convite.",
+      "evidence": [
+        "Cantares 7:11–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 7:11, ela convida o amado a sair ao campo e passar a noite nas aldeias.",
+      "verseRef": "Cantares 7:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vem, ó meu amado, saiamos ao campo",
+      "feedbackCorrect": "Ela toma a iniciativa do convite: saiamos ao campo.",
+      "feedbackWrong": {
+        "false": "Releia 7:11: ela chama o amado a sair ao campo."
+      },
+      "hint": "Veja quem fala o convite no versículo.",
+      "learningObjective": "Ver a voz ativa dela.",
+      "evidence": [
+        "Cantares 7:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 7:12, toque a promessa do amor.",
+      "verseRef": "Cantares 7:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu amor"
+        },
+        {
+          "id": "b",
+          "text": "romeiras"
+        },
+        {
+          "id": "c",
+          "text": "vides"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "A promessa é te darei o meu amor.",
+      "feedbackWrong": {
+        "b": "Romeiras são o que se verifica.",
+        "c": "Vides são o que florescem."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Tocar a promessa do amor.",
+      "evidence": [
+        "Cantares 7:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 7:10–12 estabelece entre saudade e convite?",
+      "verseRef": "Cantares 7:10–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A saudade dele encontra resposta no convite dela"
+        },
+        {
+          "id": "b",
+          "text": "A saudade anula qualquer encontro"
+        },
+        {
+          "id": "c",
+          "text": "Não há convite no texto"
+        },
+        {
+          "id": "d",
+          "text": "Ela recusa qualquer saída ao campo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele tem saudades de mim",
+      "feedbackCorrect": "Saudade (7:10) e Vem (7:11) se respondem.",
+      "feedbackWrong": {
+        "b": "Há convite ao encontro.",
+        "c": "Há Vem e saiamos.",
+        "d": "Ela propõe o campo."
+      },
+      "hint": "Ligue 7:10 a 7:11.",
+      "learningObjective": "Relacionar saudade e convite.",
+      "evidence": [
+        "Cantares 7:10–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 7:6–13.",
+      "verseRef": "Cantares 7:6–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amado celebra a formosura"
+        },
+        {
+          "id": "b",
+          "text": "Ela afirma a pertença e a saudade"
+        },
+        {
+          "id": "c",
+          "text": "O convite ao campo e às vinhas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vem, ó meu amado, saiamos ao campo",
+      "feedbackCorrect": "Elogio → pertença → convite.",
+      "feedbackWrong": {
+        "default": "Comece pelo elogio; o convite fecha."
+      },
+      "hint": "Siga elogiar → pertencer → convidar.",
+      "learningObjective": "Ordenar a estrutura da cena.",
+      "evidence": [
+        "Cantares 7:6–13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 7:13, o que ela fez com os frutos?",
+      "verseRef": "Cantares 7:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "reservei"
+        },
+        {
+          "id": "b",
+          "text": "desprezei"
+        },
+        {
+          "id": "c",
+          "text": "escondi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu os reservei, ó meu amado",
+      "feedbackCorrect": "Ela os reservou para o amado.",
+      "feedbackWrong": {
+        "b": "O texto diz reservei.",
+        "c": "O texto diz reservei."
+      },
+      "hint": "Veja o verbo final.",
+      "learningObjective": "Lembrar os frutos reservados.",
+      "evidence": [
+        "Cantares 7:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 7:10–12 a 1 Coríntios 7:3–4?",
+      "verseRef": "Cantares 7:10–12",
+      "passageA": {
+        "ref": "Cantares 7:10–12"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 7:3–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mútua entrega no casamento"
+        },
+        {
+          "id": "b",
+          "text": "Domínio unilateral"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem oferta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "Os dois textos falam de entrega mútua.",
+      "feedbackWrong": {
+        "b": "Há mútua voz e oferta.",
+        "c": "Há oferta explícita."
+      },
+      "hint": "Compare a mútua entrega.",
+      "learningObjective": "Ligar o convite a 1 Coríntios 7.",
+      "evidence": [
+        "Cantares 7:10–12",
+        "1 Coríntios 7:3–4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 7:6–13 apresenta o desejo na aliança como posse brusca sem palavras.",
+      "verseRef": "Cantares 7:11–12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Vem, ó meu amado, saiamos ao campo",
+      "feedbackCorrect": "Há convite verbal e oferta, não posse brusca.",
+      "feedbackWrong": {
+        "true": "O texto é convite, não brusquidão muda."
+      },
+      "hint": "Veja o tom do Vem e do te darei.",
+      "learningObjective": "Rejeitar a leitura da posse brusca.",
+      "evidence": [
+        "Cantares 7:11–12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 7:6, toque o trecho que sustenta o tom de prazer no amor.",
+      "verseRef": "Cantares 7:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "em delícias"
+        },
+        {
+          "id": "b",
+          "text": "formosa"
+        },
+        {
+          "id": "c",
+          "text": "aprazível"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ó amor em delícias",
+      "feedbackCorrect": "O tom está em \"ó amor em delícias\".",
+      "feedbackWrong": {
+        "b": "\"Formosa\" descreve a beleza; o trecho de delícias carrega o tom do amor.",
+        "c": "\"Aprazível\" também louva; o trecho pedido é em delícias."
+      },
+      "hint": "Leia o vocativo final.",
+      "learningObjective": "Sustentar o tom do elogio.",
+      "evidence": [
+        "Cantares 7:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 7:6–13 sustenta sobre o desejo?",
+      "verseRef": "Cantares 7:10–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O desejo dentro da aliança é convite mútuo, não posse brusca"
+        },
+        {
+          "id": "b",
+          "text": "O desejo maduro deve ser silenciado"
+        },
+        {
+          "id": "c",
+          "text": "Só uma voz pode falar de desejo"
+        },
+        {
+          "id": "d",
+          "text": "Não há oferta de amor no texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "Elogio, saudade e convite sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "Há desejo celebrado.",
+        "c": "Há voz dele e dela.",
+        "d": "Há te darei o meu amor."
+      },
+      "hint": "Una elogio, saudade e Vem.",
+      "learningObjective": "Escolher a interpretação do convite.",
+      "evidence": [
+        "Cantares 7:10–12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do elogio à oferta?",
+      "verseRef": "Cantares 7:6–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele celebra a formosura e o desejo"
+        },
+        {
+          "id": "b",
+          "text": "Ela reconhece a saudade dele"
+        },
+        {
+          "id": "c",
+          "text": "Ela convida e promete dar o amor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "Elogio → saudade → oferta.",
+      "feedbackWrong": {
+        "default": "Comece pelo elogio; a oferta fecha."
+      },
+      "hint": "Siga elogiar → saudade → ofertar.",
+      "learningObjective": "Ver o encadeamento da cena.",
+      "evidence": [
+        "Cantares 7:6–12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 7:11, para onde ela propõe sair?",
+      "verseRef": "Cantares 7:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "campo"
+        },
+        {
+          "id": "b",
+          "text": "deserto"
+        },
+        {
+          "id": "c",
+          "text": "palácio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saiamos ao campo",
+      "feedbackCorrect": "O destino é o campo.",
+      "feedbackWrong": {
+        "b": "O texto diz campo.",
+        "c": "O texto diz campo."
+      },
+      "hint": "Veja o destino do saiamos.",
+      "learningObjective": "Lembrar o campo.",
+      "evidence": [
+        "Cantares 7:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 7:6–12 a Provérbios 5:18–19?",
+      "verseRef": "Cantares 7:6–12",
+      "passageA": {
+        "ref": "Cantares 7:6–12"
+      },
+      "passageB": {
+        "ref": "Provérbios 5:18–19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrar-se com a esposa"
+        },
+        {
+          "id": "b",
+          "text": "Fugir de toda alegria"
+        },
+        {
+          "id": "c",
+          "text": "Calar o desejo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quão formosa e quão aprazível és",
+      "feedbackCorrect": "Os dois textos celebram a alegria no amor da aliança.",
+      "feedbackWrong": {
+        "b": "Há celebração clara.",
+        "c": "Há desejo nomeado."
+      },
+      "hint": "Compare a alegria nos dois textos.",
+      "learningObjective": "Ligar o desejo a Provérbios 5.",
+      "evidence": [
+        "Cantares 7:6–12",
+        "Provérbios 5:18–19"
+      ]
+    }
+  ]
+}

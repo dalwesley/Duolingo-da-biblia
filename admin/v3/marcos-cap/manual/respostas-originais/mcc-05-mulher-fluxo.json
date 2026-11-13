@@ -1,0 +1,717 @@
+{\
+&#x20; "study": {\
+&#x20;   "passageRef": "Marcos 5:25–30",\
+&#x20;   "passages": [\
+&#x20;     {\
+&#x20;       "ref": "Marcos 5:25–30"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "ref": "Marcos 5:31–34"\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "context": "Marcos apresenta uma mulher que sofria havia doze anos e já havia gastado seus recursos tentando obter melhora. Ao ouvir falar de Jesus, ela se aproxima em meio à multidão e toca sua veste.",\
+&#x20;   "keyword": "Fé",\
+&#x20;   "keywordGloss": "A fé da mulher a leva a se aproximar de Jesus, confiando que ele pode mudar sua situação.",\
+&#x20;   "focusQuestion": "O que você tem enfrentado em silêncio e precisa levar a Jesus com confiança?",\
+&#x20;   "reflectionPrompts": [\
+&#x20;     "Aproximar-se de Jesus",\
+&#x20;     "Fé em meio à multidão",\
+&#x20;     "Encontrada e acolhida"\
+&#x20;   ],\
+&#x20;   "facts": [\
+&#x20;     {\
+&#x20;       "text": "A mulher sofria de um fluxo de sangue havia doze anos.",\
+&#x20;       "evidenceRef": "Marcos 5:25",\
+&#x20;       "evidenceSpan": "havia sofrido de um fluxo de sangue por doze anos."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "Ela havia gastado tudo o que possuía com diversos médicos, sem obter benefício.",\
+&#x20;       "evidenceRef": "Marcos 5:26",\
+&#x20;       "evidenceSpan": "esgotando tudo o que possuía, sem conseguir obter qualquer benefício"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "A mulher ouviu falar de Jesus, aproximou-se por trás da multidão e tocou sua veste.",\
+&#x20;       "evidenceRef": "Marcos 5:27",\
+&#x20;       "evidenceSpan": "Ouvindo a fama de Jesus, veio por trás da multidão e tocou-lhe a veste."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "Depois de tocar a veste, ela percebeu que estava curada.",\
+&#x20;       "evidenceRef": "Marcos 5:29",\
+&#x20;       "evidenceSpan": "imediatamente a hemorragia cessou, e ela percebeu em seu corpo que estava curada daquela enfermidade."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "Jesus perguntou quem havia tocado em suas vestes.",\
+&#x20;       "evidenceRef": "Marcos 5:30",\
+&#x20;       "evidenceSpan": "Quem me tocou nas vestes?"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "A mulher se aproximou, prostrou-se diante de Jesus e declarou toda a verdade.",\
+&#x20;       "evidenceRef": "Marcos 5:33",\
+&#x20;       "evidenceSpan": "aproximou-se, prostrou-se diante dele e declarou-lhe toda a verdade."\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "keyTerms": [\
+&#x20;     {\
+&#x20;       "term": "fé",\
+&#x20;       "gloss": "Confiança que leva a mulher a se aproximar de Jesus, esperando nele a cura."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "term": "prostrou-se",\
+&#x20;       "gloss": "Gesto de reverência e humildade da mulher diante de Jesus."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "term": "paz",\
+&#x20;       "gloss": "A palavra final de Jesus expressa a restauração e a despedida acolhedora."\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "structure": [\
+&#x20;     {\
+&#x20;       "label": "Uma longa enfermidade e tentativas sem resultado",\
+&#x20;       "evidenceRef": "Marcos 5:25–26"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "label": "A mulher se aproxima de Jesus com confiança",\
+&#x20;       "evidenceRef": "Marcos 5:27–28"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "label": "A cura acontece e Jesus percebe o toque",\
+&#x20;       "evidenceRef": "Marcos 5:29–30"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "label": "A mulher se apresenta e Jesus a despede em paz",\
+&#x20;       "evidenceRef": "Marcos 5:31–34"\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "relations": [\
+&#x20;     {\
+&#x20;       "kind": "causa",\
+&#x20;       "text": "Ao ouvir falar de Jesus, a mulher se aproxima por trás da multidão e toca sua veste.",\
+&#x20;       "marker": "Ouvindo",\
+&#x20;       "evidenceRef": "Marcos 5:27"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "kind": "resultado",\
+&#x20;       "text": "Depois que a mulher toca a veste, a hemorragia cessa e ela percebe que está curada.",\
+&#x20;       "marker": "imediatamente",\
+&#x20;       "evidenceRef": "Marcos 5:29"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "kind": "sequência",\
+&#x20;       "text": "Depois de perceber a cura, Jesus se volta para a multidão e pergunta quem o tocou.",\
+&#x20;       "marker": "E",\
+&#x20;       "evidenceRef": "Marcos 5:29–30"\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "crossRefs": [\
+&#x20;     {\
+&#x20;       "ref": "Mateus 9:22",\
+&#x20;       "bridge": "Fé que recebe a cura"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "ref": "Lucas 8:48",\
+&#x20;       "bridge": "Fé e despedida em paz"\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "ref": "Hebreus 4:16",\
+&#x20;       "bridge": "Aproximar-se com confiança"\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "misreadings": [\
+&#x20;     {\
+&#x20;       "text": "A mulher foi curada porque a veste de Jesus possuía poder próprio.",\
+&#x20;       "why": "Jesus atribui a salvação à fé da mulher, e não a uma propriedade independente da veste."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "Jesus perguntou quem o tocou porque não sabia o que havia acontecido.",\
+&#x20;       "why": "O texto diz que Jesus percebeu que dele havia saído poder e se voltou para descobrir quem fizera aquilo."\
+&#x20;     },\
+&#x20;     {\
+&#x20;       "text": "A mulher foi embora curada sem precisar se apresentar a Jesus.",\
+&#x20;       "why": "Ela se aproxima, se prostra e declara toda a verdade; Jesus então fala diretamente com ela."\
+&#x20;     }\
+&#x20;   ],\
+&#x20;   "centralInsight": "Jesus não só cura: ele chama pelo nome quem se escondia na multidão.",\
+&#x20;   "anchorQuestion": "O que Jesus disse à mulher depois que ela declarou toda a verdade?"\
+&#x20; },\
+&#x20; "questions": [\
+&#x20;   {\
+&#x20;     "difficulty": "semente",\
+&#x20;     "type": "true_false",\
+&#x20;     "question": "A mulher sofria de um fluxo de sangue havia doze anos.",\
+&#x20;     "verseRef": "Marcos 5:25",\
+&#x20;     "correctOptionId": "true",\
+&#x20;     "evidenceSpan": "havia sofrido de um fluxo de sangue por doze anos.",\
+&#x20;     "feedbackCorrect": "Marcos informa a duração da enfermidade: doze anos.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "false": "O versículo 25 declara que ela sofria havia doze anos."\
+&#x20;     },\
+&#x20;     "hint": "Observe o tempo indicado no versículo.",\
+&#x20;     "learningObjective": "Identificar a duração da enfermidade da mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:25"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "semente",\
+&#x20;     "type": "find_in_text",\
+&#x20;     "question": "Em Marcos 5:27, toque o que a mulher tocou ao se aproximar de Jesus.",\
+&#x20;     "verseRef": "Marcos 5:27",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "a multidão"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "a veste"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "a fama"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "b",\
+&#x20;     "evidenceSpan": "tocou-lhe a veste.",\
+&#x20;     "feedbackCorrect": "O texto identifica a veste de Jesus como aquilo que ela tocou.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "a": "A multidão estava ao redor, mas não foi o que ela tocou.",\
+&#x20;       "c": "A fama de Jesus foi o que ela ouviu, não aquilo que tocou."\
+&#x20;     },\
+&#x20;     "hint": "Procure o objeto que aparece depois do verbo tocar.",\
+&#x20;     "learningObjective": "Identificar o objeto tocado pela mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:27"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "semente",\
+&#x20;     "type": "choice",\
+&#x20;     "question": "O que a mulher já havia feito antes de se aproximar de Jesus?",\
+&#x20;     "verseRef": "Marcos 5:26",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Gastado tudo o que possuía tentando obter benefício."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Encontrado uma cura definitiva com diversos médicos."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "Recusado qualquer tratamento para sua enfermidade."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "d",\
+&#x20;         "text": "Recebido ajuda suficiente para recuperar sua saúde."\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "esgotando tudo o que possuía, sem conseguir obter qualquer benefício",\
+&#x20;     "feedbackCorrect": "Ela havia esgotado seus recursos sem conseguir melhora; sua situação continuava difícil.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "O texto afirma que ela não conseguiu obter qualquer benefício.",\
+&#x20;       "c": "Marcos relata que ela sofreu nas mãos de diversos médicos.",\
+&#x20;       "d": "O versículo diz que ela ia piorando, não que havia se recuperado."\
+&#x20;     },\
+&#x20;     "hint": "Observe o que aconteceu com os recursos que ela possuía.",\
+&#x20;     "learningObjective": "Reconhecer o histórico de tentativas frustradas de tratamento.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:26"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "semente",\
+&#x20;     "type": "order",\
+&#x20;     "question": "Coloque Marcos 5:27 na ordem em que os acontecimentos são apresentados.",\
+&#x20;     "verseRef": "Marcos 5:27",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Ouvindo a fama de Jesus"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "veio por trás da multidão"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "e tocou-lhe a veste."\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOrder": [\
+&#x20;       "a",\
+&#x20;       "b",\
+&#x20;       "c"\
+&#x20;     ],\
+&#x20;     "evidenceSpan": "Ouvindo a fama de Jesus, veio por trás da multidão e tocou-lhe a veste.",\
+&#x20;     "feedbackCorrect": "Primeiro ela ouve falar de Jesus, depois se aproxima e então toca sua veste.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "default": "Comece pelo que ela ouviu, siga sua aproximação e termine com o toque."\
+&#x20;     },\
+&#x20;     "hint": "Acompanhe a sequência dos verbos no versículo.",\
+&#x20;     "learningObjective": "Reconhecer a sequência da aproximação da mulher a Jesus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:27"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "semente",\
+&#x20;     "type": "complete",\
+&#x20;     "question": "Em Marcos 5:29, complete o que aconteceu imediatamente com a hemorragia.",\
+&#x20;     "verseRef": "Marcos 5:29",\
+&#x20;     "template": "E imediatamente a hemorragia \_\_\_\_, e ela percebeu em seu corpo que estava curada daquela enfermidade.",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "continuou"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "cessou"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "aumentou"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "b",\
+&#x20;     "evidenceSpan": "imediatamente a hemorragia cessou",\
+&#x20;     "feedbackCorrect": "A hemorragia cessou imediatamente, e a mulher percebeu que estava curada.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "a": "O versículo afirma que a hemorragia deixou de acontecer.",\
+&#x20;       "c": "O texto descreve a cura, não o agravamento da enfermidade."\
+&#x20;     },\
+&#x20;     "hint": "Observe o verbo que descreve o resultado do toque.",\
+&#x20;     "learningObjective": "Lembrar o resultado imediato do toque da mulher na veste de Jesus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:29"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "semente",\
+&#x20;     "type": "connect",\
+&#x20;     "question": "O que Marcos 5:25 comunica que se liga a este contexto?",\
+&#x20;     "verseRef": "Marcos 5:25",\
+&#x20;     "passageA": {\
+&#x20;       "ref": "Marcos 5:25"\
+&#x20;     },\
+&#x20;     "passageB": {\
+&#x20;       "ref": "Contexto",\
+&#x20;       "text": "A mulher enfrentava uma enfermidade havia doze anos."\
+&#x20;     },\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Uma enfermidade prolongada"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Uma cura já completa"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "Uma multidão reunida"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "por doze anos.",\
+&#x20;     "feedbackCorrect": "O versículo apresenta a longa duração do sofrimento da mulher.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "A cura acontece depois, quando ela toca a veste de Jesus.",\
+&#x20;       "c": "A multidão aparece quando a mulher se aproxima de Jesus."\
+&#x20;     },\
+&#x20;     "hint": "Observe o que o texto informa sobre a duração da situação.",\
+&#x20;     "learningObjective": "Relacionar o versículo ao contexto de sofrimento prolongado da mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:25"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "caminhada",\
+&#x20;     "type": "true_false",\
+&#x20;     "question": "Em Marcos 5:29–30, Jesus percebeu que dele havia saído poder antes de perguntar quem o tocou.",\
+&#x20;     "verseRef": "Marcos 5:29–30",\
+&#x20;     "correctOptionId": "true",\
+&#x20;     "evidenceSpan": "percebendo que de Si mesmo saíra poder",\
+&#x20;     "feedbackCorrect": "A percepção de Jesus aparece antes de ele se voltar para a multidão e perguntar.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "false": "O texto apresenta primeiro a percepção de Jesus e depois sua pergunta."\
+&#x20;     },\
+&#x20;     "hint": "Observe a ordem das ações de Jesus nos dois versículos.",\
+&#x20;     "learningObjective": "Compreender a sequência entre a percepção de Jesus e sua pergunta.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:29–30"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "caminhada",\
+&#x20;     "type": "find_in_text",\
+&#x20;     "question": "Em Marcos 5:28, toque a palavra que apresenta o motivo da confiança expressa pela mulher.",\
+&#x20;     "verseRef": "Marcos 5:28",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Porque"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "apenas"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "curada"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "Porque dizia: Se eu apenas tocar nas suas vestes, ficarei curada.",\
+&#x20;     "feedbackCorrect": "A palavra introduz a razão que a mulher expressava para se aproximar e tocar a veste.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "Essa palavra faz parte da expectativa da mulher, mas não introduz sua razão.",\
+&#x20;       "c": "Essa palavra expressa o resultado esperado, não a ligação entre as ideias."\
+&#x20;     },\
+&#x20;     "hint": "Procure a palavra que inicia a explicação da confiança dela.",\
+&#x20;     "learningObjective": "Reconhecer o marcador que introduz a razão da atitude da mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:28"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "caminhada",\
+&#x20;     "type": "choice",\
+&#x20;     "question": "Como a cura da mulher se relaciona com a pergunta de Jesus à multidão?",\
+&#x20;     "verseRef": "Marcos 5:29–30",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "A cura acontece, e Jesus percebe que dele saiu poder."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Jesus pergunta antes que a mulher perceba qualquer mudança."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "A multidão informa a Jesus quem recebeu a cura."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "d",\
+&#x20;         "text": "A mulher toca novamente a veste depois da pergunta."\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "E imediatamente Jesus, percebendo que de Si mesmo saíra poder, voltou-se para a multidão e perguntou",\
+&#x20;     "feedbackCorrect": "Jesus percebe a saída de poder e então pergunta quem o tocou.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "A mulher já havia percebido a cura antes de Jesus fazer a pergunta.",\
+&#x20;       "c": "Os discípulos mencionam a multidão, mas não identificam quem tocou Jesus.",\
+&#x20;       "d": "O texto não relata um segundo toque depois da pergunta."\
+&#x20;     },\
+&#x20;     "hint": "Relacione o que acontece com a mulher ao que Jesus percebe.",\
+&#x20;     "learningObjective": "Compreender a ligação entre a cura e a reação de Jesus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:29–30"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "caminhada",\
+&#x20;     "type": "order",\
+&#x20;     "question": "Organize os movimentos da cena desde a cura até a resposta de Jesus.",\
+&#x20;     "verseRef": "Marcos 5:29–34",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "A mulher percebe que foi curada"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Jesus pergunta quem o tocou e procura a pessoa"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "A mulher se apresenta e Jesus fala com ela"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOrder": [\
+&#x20;       "a",\
+&#x20;       "b",\
+&#x20;       "c"\
+&#x20;     ],\
+&#x20;     "evidenceSpan": "Filha, a tua fé te salvou; vai em paz e fica livre do teu mal.",\
+&#x20;     "feedbackCorrect": "A cura é percebida, Jesus procura quem o tocou e a mulher se apresenta diante dele.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "default": "Comece pela percepção da cura, passe pela pergunta e termine com o encontro."\
+&#x20;     },\
+&#x20;     "hint": "Siga a cena desde a cura até a fala final de Jesus.",\
+&#x20;     "learningObjective": "Compreender a progressão entre a cura, a busca de Jesus e o encontro com a mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:29–34"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "caminhada",\
+&#x20;     "type": "complete",\
+&#x20;     "question": "Em Marcos 5:30, complete a ação de Jesus depois de perceber que dele havia saído poder.",\
+&#x20;     "verseRef": "Marcos 5:30",\
+&#x20;     "template": "E imediatamente Jesus, percebendo que de Si mesmo saíra poder, \_\_\_-se para a multidão e perguntou: Quem me tocou nas vestes?",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "voltou"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "escondeu"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "afastou"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "voltou-se para a multidão",\
+&#x20;     "feedbackCorrect": "Jesus se volta para a multidão e faz a pergunta sobre quem o tocou.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "O texto mostra Jesus se voltando para a multidão, não se escondendo.",\
+&#x20;       "c": "Jesus não se afasta; ele se volta para a multidão."\
+&#x20;     },\
+&#x20;     "hint": "Observe o movimento de Jesus antes da pergunta.",\
+&#x20;     "learningObjective": "Lembrar a ação que introduz a pergunta de Jesus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:30"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "caminhada",\
+&#x20;     "type": "connect",\
+&#x20;     "question": "O que liga Marcos 5:34 a Lucas 8:48?",\
+&#x20;     "verseRef": "Marcos 5:34",\
+&#x20;     "passageA": {\
+&#x20;       "ref": "Marcos 5:34"\
+&#x20;     },\
+&#x20;     "passageB": {\
+&#x20;       "ref": "Lucas 8:48"\
+&#x20;     },\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Fé e despedida em paz"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Tratamento por médicos"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "A multidão que impede a aproximação"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "Filha, a tua fé te salvou; vai em paz",\
+&#x20;     "feedbackCorrect": "Os dois relatos registram Jesus relacionando a fé da mulher à cura e à paz.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "Os textos não tratam do tratamento médico como ponto central dessa fala.",\
+&#x20;       "c": "A multidão faz parte da cena, mas não é a ponte entre as despedidas."\
+&#x20;     },\
+&#x20;     "hint": "Compare as palavras finais de Jesus nos dois relatos.",\
+&#x20;     "learningObjective": "Relacionar os relatos paralelos da cura e da despedida da mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:34",\
+&#x20;       "Lucas 8:48"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "profundezas",\
+&#x20;     "type": "true_false",\
+&#x20;     "question": "Em Marcos 5:27–34, a mulher foi curada sem que Jesus se dirigisse diretamente a ela.",\
+&#x20;     "verseRef": "Marcos 5:33–34",\
+&#x20;     "correctOptionId": "false",\
+&#x20;     "evidenceSpan": "Filha, a tua fé te salvou; vai em paz e fica livre do teu mal.",\
+&#x20;     "feedbackCorrect": "Jesus fala diretamente com a mulher depois que ela se apresenta e declara a verdade.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "true": "Jesus a chama de filha e fala diretamente com ela no versículo 34."\
+&#x20;     },\
+&#x20;     "hint": "Observe a quem Jesus dirige suas palavras finais.",\
+&#x20;     "learningObjective": "Interpretar o encontro como mais do que uma cura física silenciosa.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:33–34"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "profundezas",\
+&#x20;     "type": "find_in_text",\
+&#x20;     "question": "Em Marcos 5:33, toque o trecho que sustenta a leitura de que a mulher deixou de se esconder e se apresentou a Jesus.",\
+&#x20;     "verseRef": "Marcos 5:33",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "atemorizada e tremendo"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "prostrou-se diante dele"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "toda a verdade"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "b",\
+&#x20;     "evidenceSpan": "aproximou-se, prostrou-se diante dele e declarou-lhe toda a verdade.",\
+&#x20;     "feedbackCorrect": "Ela se aproxima e se prostra diante de Jesus, deixando a multidão e se apresentando.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "a": "Essa expressão descreve seu estado emocional, não sua apresentação diante de Jesus.",\
+&#x20;       "c": "A declaração da verdade faz parte do encontro, mas o gesto de se apresentar está antes."\
+&#x20;     },\
+&#x20;     "hint": "Procure o gesto que mostra que ela se colocou diante de Jesus.",\
+&#x20;     "learningObjective": "Identificar a evidência de que a mulher se apresentou pessoalmente a Jesus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:33"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "profundezas",\
+&#x20;     "type": "choice",\
+&#x20;     "question": "Qual interpretação melhor explica por que Jesus procura quem o tocou, mesmo depois de a cura já ter acontecido?",\
+&#x20;     "verseRef": "Marcos 5:30–34",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Jesus queria apenas descobrir quem havia causado tumulto na multidão."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Jesus transforma a cura em um encontro pessoal com a mulher."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "Jesus precisava que os discípulos identificassem quem tinha sido curado."\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "d",\
+&#x20;         "text": "Jesus queria mostrar que a veste tinha poder independente da fé."\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "b",\
+&#x20;     "evidenceSpan": "Então, a mulher, cônscia do que lhe havia acontecido, atemorizada e tremendo, aproximou-se, prostrou-se diante dele e declarou-lhe toda a verdade.",\
+&#x20;     "feedbackCorrect": "Jesus não encerra a cena na cura: a mulher se apresenta, e ele fala diretamente com ela.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "a": "O texto não apresenta a pergunta como simples reação ao tumulto.",\
+&#x20;       "c": "Os discípulos não identificam a mulher; ela própria se apresenta.",\
+&#x20;       "d": "Jesus destaca a fé da mulher, não um poder independente da veste."\
+&#x20;     },\
+&#x20;     "hint": "Observe o que acontece depois da pergunta e como Jesus encerra a cena.",\
+&#x20;     "learningObjective": "Interpretar a busca de Jesus como parte de um encontro pessoal com a mulher.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:30–34"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "profundezas",\
+&#x20;     "type": "order",\
+&#x20;     "question": "Organize o argumento que mostra como Jesus transforma a cura em um encontro pessoal.",\
+&#x20;     "verseRef": "Marcos 5:30–34",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Jesus percebe o toque e pergunta quem o tocou"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "A mulher se apresenta e declara o que aconteceu"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "Jesus reconhece sua fé e a despede em paz"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOrder": [\
+&#x20;       "a",\
+&#x20;       "b",\
+&#x20;       "c"\
+&#x20;     ],\
+&#x20;     "evidenceSpan": "Filha, a tua fé te salvou; vai em paz e fica livre do teu mal.",\
+&#x20;     "feedbackCorrect": "A pergunta leva à apresentação da mulher, e o encontro termina com a palavra acolhedora de Jesus.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "default": "Comece pela pergunta de Jesus, siga pela apresentação da mulher e termine com a resposta dele."\
+&#x20;     },\
+&#x20;     "hint": "Acompanhe a conversa desde a pergunta até a fala final de Jesus.",\
+&#x20;     "learningObjective": "Reconhecer o encadeamento entre a busca de Jesus, a apresentação da mulher e sua despedida.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:30–34"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "profundezas",\
+&#x20;     "type": "complete",\
+&#x20;     "question": "Em Marcos 5:34, complete a palavra que expressa o destino anunciado por Jesus à mulher.",\
+&#x20;     "verseRef": "Marcos 5:34",\
+&#x20;     "template": "Filha, a tua fé te salvou; vai em \_\_\_ e fica livre do teu mal.",\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "silêncio"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "paz"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "temor"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "b",\
+&#x20;     "evidenceSpan": "vai em paz e fica livre do teu mal.",\
+&#x20;     "feedbackCorrect": "Jesus encerra o encontro desejando paz à mulher e declarando sua libertação do mal.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "a": "O texto não a despede em silêncio; Jesus fala diretamente com ela.",\
+&#x20;       "c": "O temor aparece na reação da mulher, mas não é o destino anunciado por Jesus."\
+&#x20;     },\
+&#x20;     "hint": "Observe a expressão que vem depois do reconhecimento da fé.",\
+&#x20;     "learningObjective": "Lembrar a palavra que expressa a despedida de Jesus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:34"\
+&#x20;     ]\
+&#x20;   },\
+&#x20;   {\
+&#x20;     "difficulty": "profundezas",\
+&#x20;     "type": "connect",\
+&#x20;     "question": "O que liga Marcos 5:34 a Hebreus 4:16?",\
+&#x20;     "verseRef": "Marcos 5:34",\
+&#x20;     "passageA": {\
+&#x20;       "ref": "Marcos 5:34"\
+&#x20;     },\
+&#x20;     "passageB": {\
+&#x20;       "ref": "Hebreus 4:16"\
+&#x20;     },\
+&#x20;     "options": [\
+&#x20;       {\
+&#x20;         "id": "a",\
+&#x20;         "text": "Aproximar-se com confiança"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "b",\
+&#x20;         "text": "Confiar nos recursos humanos"\
+&#x20;       },\
+&#x20;       {\
+&#x20;         "id": "c",\
+&#x20;         "text": "Evitar qualquer exposição"\
+&#x20;       }\
+&#x20;     ],\
+&#x20;     "correctOptionId": "a",\
+&#x20;     "evidenceSpan": "Filha, a tua fé te salvou",\
+&#x20;     "feedbackCorrect": "A mulher se aproxima de Jesus pela fé; Hebreus convida a chegar com confiança ao trono da graça.",\
+&#x20;     "feedbackWrong": {\
+&#x20;       "b": "A mulher já havia esgotado seus recursos sem obter benefício.",\
+&#x20;       "c": "Ela deixa de se esconder e se apresenta diante de Jesus."\
+&#x20;     },\
+&#x20;     "hint": "Pense na atitude da mulher diante de Jesus e no convite de Hebreus.",\
+&#x20;     "learningObjective": "Relacionar a aproximação confiante da mulher ao convite bíblico para buscar a graça de Deus.",\
+&#x20;     "evidence": [\
+&#x20;       "Marcos 5:34",\
+&#x20;       "Hebreus 4:16"\
+&#x20;     ]\
+&#x20;   }\
+&#x20; ]\
+}

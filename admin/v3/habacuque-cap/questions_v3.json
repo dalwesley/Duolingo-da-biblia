@@ -1,0 +1,3307 @@
+[
+  {
+    "id": "habacuque-cap-sem-hqc-01-olhai-entre-as-nacoes-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 1:6, o Senhor suscita os caldeus, uma nação amarga e impetuosa.",
+    "prompt": "Em Habacuque 1:6, o Senhor suscita os caldeus, uma nação amarga e impetuosa.",
+    "cue": "Em Habacuque 1:6, o Senhor suscita os caldeus, uma nação amarga e impetuosa.",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "suscito os caldeus, uma nação amarga e impetuosa",
+    "feedbackCorrect": "Deus mesmo suscita os caldeus para avançar pela terra.",
+    "feedbackWrong": {
+      "false": "Releia 1:6: \"Pois eis que suscito os caldeus\"."
+    },
+    "hint": "Veja quem é o sujeito de \"suscito\".",
+    "learningObjective": "Observar que Deus suscita os caldeus.",
+    "evidence": [
+      "Habacuque 1:6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-01-olhai-entre-as-nacoes-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 1:6, toque a nação que Deus suscita.",
+    "prompt": "Em Habacuque 1:6, toque a nação que Deus suscita.",
+    "cue": "Em Habacuque 1:6, toque a nação que Deus suscita.",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "caldeus"
+      },
+      {
+        "id": "b",
+        "text": "extensão"
+      },
+      {
+        "id": "c",
+        "text": "moradas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Os caldeus são a nação amarga e impetuosa suscitada.",
+    "feedbackWrong": {
+      "b": "\"Extensão\" descreve a terra, não a nação.",
+      "c": "\"Moradas\" são o alvo da conquista, não a nação suscitada."
+    },
+    "hint": "Procure o nome depois de \"suscito os\".",
+    "learningObjective": "Identificar os caldeus no texto.",
+    "evidence": [
+      "Habacuque 1:6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-01-olhai-entre-as-nacoes-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 1:9, para que virão todos eles?",
+    "prompt": "Segundo Habacuque 1:9, para que virão todos eles?",
+    "cue": "Segundo Habacuque 1:9, para que virão todos eles?",
+    "verseRef": "Habacuque 1:9",
+    "passageText": "Todos eles virão para praticar a violência; seus rostos suspirarão por seguir adiante, e congregarão os prisioneiros como areia.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para praticar a violência"
+      },
+      {
+        "id": "b",
+        "text": "Para edificar o templo"
+      },
+      {
+        "id": "c",
+        "text": "Para ensinar a Lei"
+      },
+      {
+        "id": "d",
+        "text": "Para plantar figueiras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "virão para praticar a violência",
+    "feedbackCorrect": "Todos virão para praticar a violência e reunir prisioneiros.",
+    "feedbackWrong": {
+      "b": "O texto fala de violência, não de edificar o templo.",
+      "c": "O trecho não fala de ensinar a Lei.",
+      "d": "Não há plantio de figueiras neste versículo."
+    },
+    "hint": "Veja o propósito declarado no início do versículo.",
+    "learningObjective": "Observar o propósito declarado do avanço.",
+    "evidence": [
+      "Habacuque 1:9"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-01-olhai-entre-as-nacoes-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 1:5 na ordem do texto.",
+    "prompt": "Monte Habacuque 1:5 na ordem do texto.",
+    "cue": "Monte Habacuque 1:5 na ordem do texto.",
+    "verseRef": "Habacuque 1:5",
+    "passageText": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos"
+      },
+      {
+        "id": "b",
+        "text": "pois estou realizando em seus dias uma obra tão grandiosa"
+      },
+      {
+        "id": "c",
+        "text": "que vocês não crerão mesmo que alguém a declare"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos",
+    "feedbackCorrect": "Olhar e maravilhar-se; depois a obra grandiosa que não crerão.",
+    "feedbackWrong": {
+      "default": "Comece pelo olhar; a incredulidade fecha."
+    },
+    "hint": "O versículo começa com verbos de olhar.",
+    "learningObjective": "Reconhecer a sequência do chamado em 1:5.",
+    "evidence": [
+      "Habacuque 1:5"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-01-olhai-entre-as-nacoes-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 1:12, para que o Senhor estabeleceu essa nação?",
+    "prompt": "Em Habacuque 1:12, para que o Senhor estabeleceu essa nação?",
+    "cue": "Em Habacuque 1:12, para que o Senhor estabeleceu essa nação?",
+    "verseRef": "Habacuque 1:12",
+    "passageText": "Não és tu desde a eternidade, ó SENHOR, meu Deus, meu Santo? Não morreremos! Ó SENHOR, para executar juízo, os estabeleceste; tu, ó Rocha, os fundaste para servir de disciplina.",
+    "template": "Não és tu desde a eternidade, ó SENHOR, meu Deus, meu Santo? Não morreremos! Ó SENHOR, para executar ___, os estabeleceste; tu, ó Rocha, os fundaste para servir de disciplina.",
+    "options": [
+      {
+        "id": "a",
+        "text": "juízo"
+      },
+      {
+        "id": "b",
+        "text": "festa"
+      },
+      {
+        "id": "c",
+        "text": "aliança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para executar juízo, os estabeleceste",
+    "feedbackCorrect": "Ele os estabeleceu para executar juízo e disciplina.",
+    "feedbackWrong": {
+      "b": "\"Festa\" não é a finalidade em 1:12.",
+      "c": "\"Aliança\" não aparece nessa cláusula."
+    },
+    "hint": "É a palavra depois de \"executar\".",
+    "learningObjective": "Lembrar a finalidade do estabelecimento.",
+    "evidence": [
+      "Habacuque 1:12"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-01-olhai-entre-as-nacoes-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "passageA": {
+      "ref": "Habacuque 1:6",
+      "text": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus responde à queixa do profeta com uma obra que espanta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus suscita juízo estranho"
+      },
+      {
+        "id": "b",
+        "text": "Caldeus agem sem Deus"
+      },
+      {
+        "id": "c",
+        "text": "Profeta já entende tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Deus suscita os caldeus: a obra espanta o justo.",
+    "feedbackWrong": {
+      "b": "O texto diz que Deus os suscita.",
+      "c": "O trecho mostra perplexidade, não compreensão plena."
+    },
+    "hint": "Ligue quem suscita à perplexidade do profeta.",
+    "learningObjective": "Ligar a suscitação dos caldeus ao espanto.",
+    "evidence": [
+      "Habacuque 1:6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-01-olhai-entre-as-nacoes-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 1:12, o Senhor estabeleceu os caldeus para executar juízo e disciplina.",
+    "prompt": "Em Habacuque 1:12, o Senhor estabeleceu os caldeus para executar juízo e disciplina.",
+    "cue": "Em Habacuque 1:12, o Senhor estabeleceu os caldeus para executar juízo e disciplina.",
+    "verseRef": "Habacuque 1:12",
+    "passageText": "Não és tu desde a eternidade, ó SENHOR, meu Deus, meu Santo? Não morreremos! Ó SENHOR, para executar juízo, os estabeleceste; tu, ó Rocha, os fundaste para servir de disciplina.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para executar juízo, os estabeleceste",
+    "feedbackCorrect": "O \"para\" marca o propósito: juízo e disciplina.",
+    "feedbackWrong": {
+      "false": "Releia 1:12: juízo e disciplina são a finalidade."
+    },
+    "hint": "Procure a finalidade depois de \"para\".",
+    "learningObjective": "Compreender o propósito do juízo.",
+    "evidence": [
+      "Habacuque 1:12"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-01-olhai-entre-as-nacoes-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 1:5, toque a palavra que liga o espanto à obra de Deus.",
+    "prompt": "Em Habacuque 1:5, toque a palavra que liga o espanto à obra de Deus.",
+    "cue": "Em Habacuque 1:5, toque a palavra que liga o espanto à obra de Deus.",
+    "verseRef": "Habacuque 1:5",
+    "passageText": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "dias"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "perplexos, pois estou realizando",
+    "feedbackCorrect": "\"Pois\" liga o espanto à obra grandiosa que Deus realiza.",
+    "feedbackWrong": {
+      "a": "\"Nações\" é o cenário do olhar, não o marcador.",
+      "b": "\"Dias\" situa o tempo da obra, não a causa gramatical."
+    },
+    "hint": "Veja o que liga o espanto à obra no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de causa em 1:5.",
+    "evidence": [
+      "Habacuque 1:5"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-01-olhai-entre-as-nacoes-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Habacuque 1:5–12 relaciona a obra de Deus e os caldeus?",
+    "prompt": "Como Habacuque 1:5–12 relaciona a obra de Deus e os caldeus?",
+    "cue": "Como Habacuque 1:5–12 relaciona a obra de Deus e os caldeus?",
+    "verseRef": "Habacuque 1:5–6",
+    "passageText": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os caldeus avançam sem qualquer papel de Deus"
+      },
+      {
+        "id": "b",
+        "text": "O profeta inventa a nação sem revelação"
+      },
+      {
+        "id": "c",
+        "text": "A obra grandiosa é só bênção sem juízo"
+      },
+      {
+        "id": "d",
+        "text": "Deus suscita os caldeus como juízo que espanta"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "A obra espantosa é Deus suscitar os caldeus para juízo.",
+    "feedbackWrong": {
+      "a": "O Senhor diz \"suscito os caldeus\".",
+      "b": "A obra é declarada por Deus, não inventada.",
+      "c": "O texto fala de juízo e disciplina."
+    },
+    "hint": "Ligue 1:5 ao \"suscito\" de 1:6 e ao \"para\" de 1:12.",
+    "learningObjective": "Relacionar a obra grandiosa ao instrumento caldeu.",
+    "evidence": [
+      "Habacuque 1:5–6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-01-olhai-entre-as-nacoes-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Habacuque 1:5–13?",
+    "prompt": "Como avança a cena em Habacuque 1:5–13?",
+    "cue": "Como avança a cena em Habacuque 1:5–13?",
+    "verseRef": "Habacuque 1:13",
+    "passageText": "Tu és tão puro de olhos que não podes ver o mal e a opressão não podes contemplar; por que, pois, toleras os que procedem perfidamente e te calas quando o ímpio devora aquele que é mais justo do que ele?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado a olhar a obra espantosa"
+      },
+      {
+        "id": "b",
+        "text": "Os caldeus suscitados avançam"
+      },
+      {
+        "id": "c",
+        "text": "Pergunta do justo ao Santo puro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tu és tão puro de olhos",
+    "feedbackCorrect": "Obra espantosa, avanço dos caldeus, e a pergunta do justo.",
+    "feedbackWrong": {
+      "default": "Olhar primeiro; a pergunta do justo por último."
+    },
+    "hint": "Comece pelo chamado a olhar; a pergunta fecha.",
+    "learningObjective": "Seguir o movimento do anúncio à pergunta.",
+    "evidence": [
+      "Habacuque 1:5–13"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-01-olhai-entre-as-nacoes-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 1:12, para servir de que os caldeus foram fundados?",
+    "prompt": "Em Habacuque 1:12, para servir de que os caldeus foram fundados?",
+    "cue": "Em Habacuque 1:12, para servir de que os caldeus foram fundados?",
+    "verseRef": "Habacuque 1:12",
+    "passageText": "Não és tu desde a eternidade, ó SENHOR, meu Deus, meu Santo? Não morreremos! Ó SENHOR, para executar juízo, os estabeleceste; tu, ó Rocha, os fundaste para servir de disciplina.",
+    "template": "Não és tu desde a eternidade, ó SENHOR, meu Deus, meu Santo? Não morreremos! Ó SENHOR, para executar juízo, os estabeleceste; tu, ó Rocha, os fundaste para servir de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disciplina"
+      },
+      {
+        "id": "b",
+        "text": "mercado"
+      },
+      {
+        "id": "c",
+        "text": "exílio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os fundaste para servir de disciplina",
+    "feedbackCorrect": "Foram fundados para servir de disciplina.",
+    "feedbackWrong": {
+      "b": "\"Mercado\" não aparece em 1:12.",
+      "c": "\"Exílio\" não é a palavra final dessa frase."
+    },
+    "hint": "É a última palavra da frase sobre a Rocha.",
+    "learningObjective": "Lembrar a palavra do propósito de disciplina.",
+    "evidence": [
+      "Habacuque 1:12"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-01-olhai-entre-as-nacoes-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 1:6 a Jeremias 25:8–9?",
+    "prompt": "O que liga Habacuque 1:6 a Jeremias 25:8–9?",
+    "cue": "O que liga Habacuque 1:6 a Jeremias 25:8–9?",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "passageA": {
+      "ref": "Habacuque 1:6",
+      "text": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem."
+    },
+    "passageB": {
+      "ref": "Jeremias 25:8–9",
+      "text": "Portanto, assim diz o Senhor dos Exércitos: Visto que não escutaram as minhas palavras, Eis que enviarei buscar todas as tribos do Norte, diz o Senhor, assim como a Nabucodonosor, rei da Babilônia, meu servo, e os farei vir contra esta terra, contra os seus moradores e contra todas estas nações ao redor; e os destruirei totalmente, e os tornarei objeto de espanto, de assobio e de ruínas perpétuas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nação sem nenhum papel"
+      },
+      {
+        "id": "b",
+        "text": "Babilônia como instrumento"
+      },
+      {
+        "id": "c",
+        "text": "Promessa de paz imediata"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Nos dois textos, Deus usa Babilônia/caldeus como instrumento.",
+    "feedbackWrong": {
+      "a": "Deus suscita e envia a nação.",
+      "c": "O tom é de juízo, não de paz imediata."
+    },
+    "hint": "Compare quem envia a nação.",
+    "learningObjective": "Relacionar os caldeus em Habacuque e Jeremias.",
+    "evidence": [
+      "Habacuque 1:6",
+      "Jeremias 25:8–9"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-01-olhai-entre-as-nacoes-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Habacuque 1:5–13, o profeta aceita o juízo sem luta nem pergunta a Deus.",
+    "prompt": "Em Habacuque 1:5–13, o profeta aceita o juízo sem luta nem pergunta a Deus.",
+    "cue": "Em Habacuque 1:5–13, o profeta aceita o juízo sem luta nem pergunta a Deus.",
+    "verseRef": "Habacuque 1:13",
+    "passageText": "Tu és tão puro de olhos que não podes ver o mal e a opressão não podes contemplar; por que, pois, toleras os que procedem perfidamente e te calas quando o ímpio devora aquele que é mais justo do que ele?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "por que, pois, toleras os que procedem perfidamente",
+    "feedbackCorrect": "Ele pergunta por que Deus tolera o ímpio que devora o justo.",
+    "feedbackWrong": {
+      "true": "1:13 mostra a luta: \"por que, pois, toleras…?\""
+    },
+    "hint": "Leia a pergunta no fim do trecho.",
+    "learningObjective": "Interpretar a fé que luta para entender.",
+    "evidence": [
+      "Habacuque 1:13"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-01-olhai-entre-as-nacoes-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 1:13, toque o trecho que mostra a pureza dos olhos de Deus.",
+    "prompt": "Em Habacuque 1:13, toque o trecho que mostra a pureza dos olhos de Deus.",
+    "cue": "Em Habacuque 1:13, toque o trecho que mostra a pureza dos olhos de Deus.",
+    "verseRef": "Habacuque 1:13",
+    "passageText": "Tu és tão puro de olhos que não podes ver o mal e a opressão não podes contemplar; por que, pois, toleras os que procedem perfidamente e te calas quando o ímpio devora aquele que é mais justo do que ele?",
+    "options": [
+      {
+        "id": "a",
+        "text": "puro de olhos"
+      },
+      {
+        "id": "b",
+        "text": "ímpio"
+      },
+      {
+        "id": "c",
+        "text": "justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Tu és tão puro de olhos que não podes ver o mal",
+    "feedbackCorrect": "Deus é puro de olhos e não pode ver o mal.",
+    "feedbackWrong": {
+      "b": "\"Ímpio\" é quem devora, não a descrição de Deus.",
+      "c": "\"Justo\" é a vítima comparada, não os olhos de Deus."
+    },
+    "hint": "Procure a descrição dos olhos no início.",
+    "learningObjective": "Sustentar a pureza de Deus com o texto.",
+    "evidence": [
+      "Habacuque 1:13"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-01-olhai-entre-as-nacoes-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Habacuque 1:5–13 sustenta sobre o governo de Deus?",
+    "prompt": "Que leitura Habacuque 1:5–13 sustenta sobre o governo de Deus?",
+    "cue": "Que leitura Habacuque 1:5–13 sustenta sobre o governo de Deus?",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus age de modos espantosos e o justo pergunta"
+      },
+      {
+        "id": "b",
+        "text": "O profeta não luta nem pergunta"
+      },
+      {
+        "id": "c",
+        "text": "Deus aprova a violência como bem moral"
+      },
+      {
+        "id": "d",
+        "text": "Os caldeus avançam sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Deus age de modos que espantam; o justo luta para entender.",
+    "feedbackWrong": {
+      "b": "1:13 mostra a pergunta do justo.",
+      "c": "Eles se tornam culpados; o fim é juízo.",
+      "d": "Deus diz que suscita os caldeus."
+    },
+    "hint": "Una a obra grandiosa, o juízo e a pergunta de 1:13.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Habacuque 1:6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-01-olhai-entre-as-nacoes-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o juízo espantoso e a perplexidade do justo?",
+    "prompt": "Qual sequência mostra o juízo espantoso e a perplexidade do justo?",
+    "cue": "Qual sequência mostra o juízo espantoso e a perplexidade do justo?",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque: Deus suscita os caldeus"
+      },
+      {
+        "id": "b",
+        "text": "Jeremias: Babilônia como instrumento"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo: justo perplexo com o ímpio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Habacuque vê os caldeus; Jeremias ecoa Babilônia; o Salmo mostra o justo perplexo.",
+    "feedbackWrong": {
+      "default": "Siga: Habacuque 1, Jeremias 25 e Salmos 73."
+    },
+    "hint": "Parta de Habacuque e avance na Escritura.",
+    "learningObjective": "Ver a perplexidade do justo no fio bíblico.",
+    "evidence": [
+      "Habacuque 1:6",
+      "Jeremias 25:8–9",
+      "Salmos 73:2–3"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-01-olhai-entre-as-nacoes-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 1:13, que palavra nomeia o mal que Deus não pode contemplar?",
+    "prompt": "Em Habacuque 1:13, que palavra nomeia o mal que Deus não pode contemplar?",
+    "cue": "Em Habacuque 1:13, que palavra nomeia o mal que Deus não pode contemplar?",
+    "verseRef": "Habacuque 1:13",
+    "passageText": "Tu és tão puro de olhos que não podes ver o mal e a opressão não podes contemplar; por que, pois, toleras os que procedem perfidamente e te calas quando o ímpio devora aquele que é mais justo do que ele?",
+    "template": "Tu és tão puro de olhos que não podes ver o mal e a ___ não podes contemplar; por que, pois, toleras os que procedem perfidamente e te calas quando o ímpio devora aquele que é mais justo do que ele?",
+    "options": [
+      {
+        "id": "a",
+        "text": "colheita"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "opressão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a opressão não podes contemplar",
+    "feedbackCorrect": "A opressão é o mal que os olhos puros não contemplam.",
+    "feedbackWrong": {
+      "a": "\"Colheita\" não aparece em 1:13.",
+      "b": "\"Aliança\" não é o paralelo de \"mal\" aqui."
+    },
+    "hint": "É a palavra paralelamente a \"o mal\".",
+    "learningObjective": "Lembrar o termo que carrega o escândalo do justo.",
+    "evidence": [
+      "Habacuque 1:13"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-01-olhai-entre-as-nacoes-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-01-olhai-entre-as-nacoes",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 1:5 a Isaías 55:8–9?",
+    "prompt": "O que liga Habacuque 1:5 a Isaías 55:8–9?",
+    "cue": "O que liga Habacuque 1:5 a Isaías 55:8–9?",
+    "verseRef": "Habacuque 1:5",
+    "passageText": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare",
+    "passageA": {
+      "ref": "Habacuque 1:5",
+      "text": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare"
+    },
+    "passageB": {
+      "ref": "Isaías 55:8–9",
+      "text": "Pois os meus pensamentos não são como os seus pensamentos, nem os seus caminhos são como os meus caminhos, diz o Senhor. Assim como os céus são mais altos do que a terra, assim os meus caminhos são mais altos do que os vossos caminhos, e os meus pensamentos, mais altos do que os vossos pensamentos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus copia planos humanos"
+      },
+      {
+        "id": "b",
+        "text": "Caminhos de Deus espantam"
+      },
+      {
+        "id": "c",
+        "text": "Obra fácil de prever"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "uma obra tão grandiosa que vocês não crerão",
+    "feedbackCorrect": "Nos dois textos, os caminhos de Deus ultrapassam a expectativa humana.",
+    "feedbackWrong": {
+      "a": "Os textos afirmam diferença, não cópia.",
+      "c": "A obra é tão grandiosa que não crerão."
+    },
+    "hint": "Compare a obra que espanta com os caminhos mais altos.",
+    "learningObjective": "Ligar a obra espantosa aos caminhos de Deus.",
+    "evidence": [
+      "Habacuque 1:5",
+      "Isaías 55:8–9"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-02-ai-dos-opressores-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 2:20, o Senhor está em seu santo templo e toda a terra deve permanecer em silêncio.",
+    "prompt": "Em Habacuque 2:20, o Senhor está em seu santo templo e toda a terra deve permanecer em silêncio.",
+    "cue": "Em Habacuque 2:20, o Senhor está em seu santo templo e toda a terra deve permanecer em silêncio.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor está em seu santo templo",
+    "feedbackCorrect": "O contraste final: o Senhor no templo; a terra em silêncio diante dele.",
+    "feedbackWrong": {
+      "false": "Releia 2:20: o Senhor está no templo; a terra permanece em silêncio."
+    },
+    "hint": "Leia o versículo que fecha o trecho dos ais.",
+    "learningObjective": "Observar a presença do Senhor e o silêncio da terra.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-02-ai-dos-opressores-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 2:12, toque o material com que se edifica a cidade condenada.",
+    "prompt": "Em Habacuque 2:12, toque o material com que se edifica a cidade condenada.",
+    "cue": "Em Habacuque 2:12, toque o material com que se edifica a cidade condenada.",
+    "verseRef": "Habacuque 2:12",
+    "passageText": "Ai daquele que edifica a cidade com sangue e que a funda com iniquidade!",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "iniquidade"
+      },
+      {
+        "id": "c",
+        "text": "sangue"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "edifica a cidade com sangue",
+    "feedbackCorrect": "Há ai contra quem edifica a cidade com sangue.",
+    "feedbackWrong": {
+      "a": "\"Cidade\" é o que se edifica, não o material do ai.",
+      "b": "\"Iniquidade\" funda a cidade; o edificar é com sangue."
+    },
+    "hint": "Procure com o que a cidade é edificada.",
+    "learningObjective": "Identificar a violência na fundação da cidade.",
+    "evidence": [
+      "Habacuque 2:12"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-02-ai-dos-opressores-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 2:14, de que a terra se encherá?",
+    "prompt": "Segundo Habacuque 2:14, de que a terra se encherá?",
+    "cue": "Segundo Habacuque 2:14, de que a terra se encherá?",
+    "verseRef": "Habacuque 2:14",
+    "passageText": "Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Do conhecimento da glória do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "De ídolos cobertos de ouro"
+      },
+      {
+        "id": "c",
+        "text": "Do silêncio dos madeiros"
+      },
+      {
+        "id": "d",
+        "text": "De bens mal adquiridos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor",
+    "feedbackCorrect": "A terra se encherá do conhecimento da glória do Senhor.",
+    "feedbackWrong": {
+      "b": "Ídolos aparecem depois; 2:14 fala da glória do Senhor.",
+      "c": "O silêncio é diante do Senhor em 2:20, não o conteúdo de 2:14.",
+      "d": "Bens mal adquiridos são alvo do ai, não o que enche a terra."
+    },
+    "hint": "Compare com a imagem das águas que cobrem o mar.",
+    "learningObjective": "Observar a promessa da glória que enche a terra.",
+    "evidence": [
+      "Habacuque 2:14"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-02-ai-dos-opressores-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 2:20 na ordem do texto.",
+    "prompt": "Monte Habacuque 2:20 na ordem do texto.",
+    "cue": "Monte Habacuque 2:20 na ordem do texto.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o Senhor está em seu santo templo"
+      },
+      {
+        "id": "b",
+        "text": "que toda a terra permaneça em silêncio"
+      },
+      {
+        "id": "c",
+        "text": "diante dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas o Senhor está em seu santo templo",
+    "feedbackCorrect": "Primeiro o Senhor no templo; depois o silêncio de toda a terra.",
+    "feedbackWrong": {
+      "default": "Comece pelo Senhor no templo; \"diante dele\" fecha."
+    },
+    "hint": "O versículo começa com \"Mas\".",
+    "learningObjective": "Reconhecer a sequência de Habacuque 2:20.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-02-ai-dos-opressores-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 2:19, o que falta no interior do ídolo?",
+    "prompt": "Em Habacuque 2:19, o que falta no interior do ídolo?",
+    "cue": "Em Habacuque 2:19, o que falta no interior do ídolo?",
+    "verseRef": "Habacuque 2:19",
+    "passageText": "Ai daquele que diz ao madeiro: Acorda! e à pedra muda: Desperta! Pode ele ensinar algo? Eis que está coberto de ouro e prata, mas, em seu interior, não há fôlego algum.",
+    "template": "Ai daquele que diz ao madeiro: Acorda! e à pedra muda: Desperta! Pode ele ensinar algo? Eis que está coberto de ouro e prata, mas, em seu interior, não há ___ algum.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prata"
+      },
+      {
+        "id": "b",
+        "text": "fôlego"
+      },
+      {
+        "id": "c",
+        "text": "ouro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em seu interior, não há fôlego algum",
+    "feedbackCorrect": "Por fora há ouro e prata; por dentro não há fôlego algum.",
+    "feedbackWrong": {
+      "a": "Prata cobre o exterior; no interior falta outra coisa.",
+      "c": "Ouro cobre o exterior; no interior falta outra coisa."
+    },
+    "hint": "Veja o que falta no interior, depois do ouro e da prata.",
+    "learningObjective": "Lembrar a vacuidade do ídolo.",
+    "evidence": [
+      "Habacuque 2:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-02-ai-dos-opressores-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 2:20 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 2:20 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 2:20 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "passageA": {
+      "ref": "Habacuque 2:20",
+      "text": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Depois dos ais e dos ídolos sem fôlego, o Senhor está no templo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abrigo nas alturas salva"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio diante do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Confiança em ídolos mudos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que toda a terra permaneça em silêncio diante dele",
+    "feedbackCorrect": "Diante do Senhor no templo, a resposta é silêncio, não ídolos.",
+    "feedbackWrong": {
+      "a": "O ai de 2:9 condena o abrigo erguido com bens mal adquiridos.",
+      "c": "O texto contrasta ídolos sem fôlego com o Senhor no templo."
+    },
+    "hint": "Compare o templo com os ídolos mudos.",
+    "learningObjective": "Ligar 2:20 ao chamado a calar-se diante do Senhor.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-02-ai-dos-opressores-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 2:18–20, os ídolos cobertos de ouro têm o mesmo fôlego e presença do Senhor no templo.",
+    "prompt": "Em Habacuque 2:18–20, os ídolos cobertos de ouro têm o mesmo fôlego e presença do Senhor no templo.",
+    "cue": "Em Habacuque 2:18–20, os ídolos cobertos de ouro têm o mesmo fôlego e presença do Senhor no templo.",
+    "verseRef": "Habacuque 2:19–20",
+    "passageText": "Ai daquele que diz ao madeiro: Acorda! e à pedra muda: Desperta! Pode ele ensinar algo? Eis que está coberto de ouro e prata, mas, em seu interior, não há fôlego algum. Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "em seu interior, não há fôlego algum",
+    "feedbackCorrect": "Ídolos não têm fôlego; o Senhor está no templo — contraste, não igualdade.",
+    "feedbackWrong": {
+      "true": "Releia 2:19–20: sem fôlego no ídolo; o Senhor no templo."
+    },
+    "hint": "Compare o interior do ídolo com a presença do Senhor.",
+    "learningObjective": "Compreender o contraste entre ídolo e Senhor.",
+    "evidence": [
+      "Habacuque 2:19–20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-02-ai-dos-opressores-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos anteriores.",
+    "prompt": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos anteriores.",
+    "cue": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos anteriores.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "santo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas o Senhor está em seu santo templo",
+    "feedbackCorrect": "\"Mas\" vira a página: ídolos mudos, porém o Senhor no templo.",
+    "feedbackWrong": {
+      "b": "\"Terra\" é quem deve calar-se, não o marcador.",
+      "c": "\"Santo\" descreve o templo, não o contraste gramatical."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 2:20.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-02-ai-dos-opressores-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Habacuque 2:18–20 relaciona ídolos e o Senhor?",
+    "prompt": "Como Habacuque 2:18–20 relaciona ídolos e o Senhor?",
+    "cue": "Como Habacuque 2:18–20 relaciona ídolos e o Senhor?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O madeiro ensina melhor que o templo"
+      },
+      {
+        "id": "b",
+        "text": "Ídolos sem fôlego contrastam com o Senhor no templo"
+      },
+      {
+        "id": "c",
+        "text": "A terra deve gritar aos ídolos mudos"
+      },
+      {
+        "id": "d",
+        "text": "Ídolos de ouro igualam a presença do Senhor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas o Senhor está em seu santo templo",
+    "feedbackCorrect": "Ídolos sem fôlego ensinam falsidade; o Senhor vivo está no templo.",
+    "feedbackWrong": {
+      "a": "O texto pergunta se o madeiro pode ensinar algo.",
+      "c": "2:20 manda silêncio diante do Senhor, não grito aos ídolos.",
+      "d": "2:19 diz que não há fôlego; 2:20 aponta o Senhor."
+    },
+    "hint": "Leia o \"Mas\" que fecha o bloco.",
+    "learningObjective": "Relacionar a crítica aos ídolos com a presença do Senhor.",
+    "evidence": [
+      "Habacuque 2:18–20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-02-ai-dos-opressores-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Habacuque 2:9–20?",
+    "prompt": "Como avança o argumento em Habacuque 2:9–20?",
+    "cue": "Como avança o argumento em Habacuque 2:9–20?",
+    "verseRef": "Habacuque 2:14",
+    "passageText": "Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ai da ganância e da cidade com sangue"
+      },
+      {
+        "id": "b",
+        "text": "Promessa da glória que enche a terra"
+      },
+      {
+        "id": "c",
+        "text": "Ídolos mudos e o Senhor no templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor",
+    "feedbackCorrect": "Ais da ganância e do sangue; promessa da glória; ídolos e silêncio no templo.",
+    "feedbackWrong": {
+      "default": "Ais primeiro; o Senhor no templo por último."
+    },
+    "hint": "Comece pelos ais; o templo fecha.",
+    "learningObjective": "Seguir o movimento dos ais à presença do Senhor.",
+    "evidence": [
+      "Habacuque 2:9–14"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-02-ai-dos-opressores-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 2:14, do conhecimento de que a terra se encherá?",
+    "prompt": "Em Habacuque 2:14, do conhecimento de que a terra se encherá?",
+    "cue": "Em Habacuque 2:14, do conhecimento de que a terra se encherá?",
+    "verseRef": "Habacuque 2:14",
+    "passageText": "Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+    "template": "Porque a terra se encherá do conhecimento da ___ do Senhor, como as águas cobrem o mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "glória"
+      },
+      {
+        "id": "b",
+        "text": "nudez"
+      },
+      {
+        "id": "c",
+        "text": "ganância"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conhecimento da glória do Senhor",
+    "feedbackCorrect": "É do conhecimento da glória do Senhor, como águas cobrem o mar.",
+    "feedbackWrong": {
+      "b": "\"Nudez\" aparece noutro ai; não em 2:14.",
+      "c": "Ganância é alvo do ai, não o que enche a terra."
+    },
+    "hint": "É a palavra depois de \"conhecimento da\".",
+    "learningObjective": "Lembrar a palavra que carrega a promessa.",
+    "evidence": [
+      "Habacuque 2:14"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-02-ai-dos-opressores-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 2:14 a Isaías 11:9?",
+    "prompt": "O que liga Habacuque 2:14 a Isaías 11:9?",
+    "cue": "O que liga Habacuque 2:14 a Isaías 11:9?",
+    "verseRef": "Habacuque 2:14",
+    "passageText": "Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+    "passageA": {
+      "ref": "Habacuque 2:14",
+      "text": "Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar."
+    },
+    "passageB": {
+      "ref": "Isaías 11:9",
+      "text": "Não fará mal nem dano algum em todo o meu monte santo, porque a terra se encherá do conhecimento do Senhor, assim como as águas cobrem o mar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ídolos que ensinam bem"
+      },
+      {
+        "id": "b",
+        "text": "Abrigo nas alturas"
+      },
+      {
+        "id": "c",
+        "text": "Terra cheia do conhecimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor",
+    "feedbackCorrect": "Nos dois textos, a terra se enche do conhecimento do Senhor.",
+    "feedbackWrong": {
+      "a": "Habacuque critica ídolos que ensinam falsidade.",
+      "b": "O abrigo nas alturas é condenado no ai de 2:9."
+    },
+    "hint": "Compare o que enche a terra em cada passagem.",
+    "learningObjective": "Relacionar a glória que enche a terra em Habacuque e Isaías.",
+    "evidence": [
+      "Habacuque 2:14",
+      "Isaías 11:9"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-02-ai-dos-opressores-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:18–20, ídolos de ouro e prata ainda podem ensinar e salvar como o Senhor no templo.",
+    "prompt": "Em Habacuque 2:18–20, ídolos de ouro e prata ainda podem ensinar e salvar como o Senhor no templo.",
+    "cue": "Em Habacuque 2:18–20, ídolos de ouro e prata ainda podem ensinar e salvar como o Senhor no templo.",
+    "verseRef": "Habacuque 2:18",
+    "passageText": "De que vale a imagem esculpida, criada pelo seu artífice e a imagem fundida, que ensina a falsidade para que o artífice confie na sua obra, fazendo ídolos que não falam?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fazendo ídolos que não falam",
+    "feedbackCorrect": "Ídolos não falam e não têm fôlego; só o Senhor está no templo.",
+    "feedbackWrong": {
+      "true": "2:18–19 nega valor e fôlego aos ídolos; 2:20 aponta o Senhor."
+    },
+    "hint": "Veja se o ídolo fala e o que 2:20 afirma do Senhor.",
+    "learningObjective": "Interpretar a impotência dos ídolos perante o Senhor.",
+    "evidence": [
+      "Habacuque 2:18–20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-02-ai-dos-opressores-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:20, toque o trecho que mostra onde o Senhor está.",
+    "prompt": "Em Habacuque 2:20, toque o trecho que mostra onde o Senhor está.",
+    "cue": "Em Habacuque 2:20, toque o trecho que mostra onde o Senhor está.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "santo templo"
+      },
+      {
+        "id": "b",
+        "text": "toda a terra"
+      },
+      {
+        "id": "c",
+        "text": "silêncio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em seu santo templo",
+    "feedbackCorrect": "O Senhor está em seu santo templo — presença viva, não ídolo mudo.",
+    "feedbackWrong": {
+      "b": "\"Toda a terra\" deve calar-se, não é onde o Senhor está.",
+      "c": "\"Silêncio\" é a resposta da terra, não o lugar do Senhor."
+    },
+    "hint": "Procure o lugar depois de \"está em\".",
+    "learningObjective": "Sustentar com o texto a presença do Senhor no templo.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-02-ai-dos-opressores-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Habacuque 2:9–20 sustenta sobre opressão e presença de Deus?",
+    "prompt": "Que leitura Habacuque 2:9–20 sustenta sobre opressão e presença de Deus?",
+    "cue": "Que leitura Habacuque 2:9–20 sustenta sobre opressão e presença de Deus?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ídolos de ouro salvam como o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor no templo exige silêncio; ídolos e opressão caem"
+      },
+      {
+        "id": "c",
+        "text": "Os ais só atingem nações estrangeiras, nunca a ganância"
+      },
+      {
+        "id": "d",
+        "text": "Diante do Senhor a terra deve negociar em voz alta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que toda a terra permaneça em silêncio diante dele",
+    "feedbackCorrect": "Deus condena opressão e ídolos; a terra cala-se diante do Senhor no templo.",
+    "feedbackWrong": {
+      "a": "Ídolos não falam e não têm fôlego.",
+      "c": "O texto condena bens mal adquiridos e cidade com sangue.",
+      "d": "2:20 manda silêncio, não negociação ruidosa."
+    },
+    "hint": "Una os ais, a crítica aos ídolos e o fecho de 2:20.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-02-ai-dos-opressores-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o chamado a calar-se diante do Senhor?",
+    "prompt": "Qual sequência revela o chamado a calar-se diante do Senhor?",
+    "cue": "Qual sequência revela o chamado a calar-se diante do Senhor?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque: o Senhor no templo, terra em silêncio"
+      },
+      {
+        "id": "b",
+        "text": "O Salmo: o Senhor no santo templo"
+      },
+      {
+        "id": "c",
+        "text": "Outro Salmo: aquietai-vos e sabei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Mas o Senhor está em seu santo templo",
+    "feedbackCorrect": "Habacuque aponta o templo; o Salmo ecoa; outro Salmo manda aquietar-se.",
+    "feedbackWrong": {
+      "default": "Siga: Habacuque 2:20, Salmos 11:4 e Salmos 46:10."
+    },
+    "hint": "Parta de Habacuque 2:20 e avance na Escritura.",
+    "learningObjective": "Ver o silêncio diante de Deus no fio bíblico.",
+    "evidence": [
+      "Habacuque 2:20",
+      "Salmos 11:4",
+      "Salmos 46:10"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-02-ai-dos-opressores-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:20, em que estado a terra deve permanecer diante do Senhor?",
+    "prompt": "Em Habacuque 2:20, em que estado a terra deve permanecer diante do Senhor?",
+    "cue": "Em Habacuque 2:20, em que estado a terra deve permanecer diante do Senhor?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "template": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em ___ diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guerra"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "festa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "permaneça em silêncio diante dele",
+    "feedbackCorrect": "A terra deve permanecer em silêncio diante do Senhor no templo.",
+    "feedbackWrong": {
+      "a": "\"Guerra\" não aparece no mandato de 2:20.",
+      "c": "\"Festa\" não é o estado pedido em 2:20."
+    },
+    "hint": "É a palavra depois de \"permaneça em\".",
+    "learningObjective": "Lembrar o termo que carrega a resposta diante de Deus.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-02-ai-dos-opressores-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-02-ai-dos-opressores",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 2:20 a Salmos 11:4?",
+    "prompt": "O que liga Habacuque 2:20 a Salmos 11:4?",
+    "cue": "O que liga Habacuque 2:20 a Salmos 11:4?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "passageA": {
+      "ref": "Habacuque 2:20",
+      "text": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele."
+    },
+    "passageB": {
+      "ref": "Salmos 11:4",
+      "text": "O Senhor está no seu santo templo; o trono do Senhor está nos céus; os seus olhos estão atentos, e suas pálpebras sondam os filhos dos homens."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Terra sem nenhum juízo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor no santo templo"
+      },
+      {
+        "id": "c",
+        "text": "Ídolos com fôlego vivo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor está em seu santo templo",
+    "feedbackCorrect": "Nos dois textos, o Senhor está no santo templo.",
+    "feedbackWrong": {
+      "a": "Os ais mostram juízo; o templo não anula isso.",
+      "c": "Habacuque nega fôlego aos ídolos."
+    },
+    "hint": "Compare o lugar onde o Senhor está.",
+    "learningObjective": "Ligar a presença no templo em Habacuque e nos Salmos.",
+    "evidence": [
+      "Habacuque 2:20",
+      "Salmos 11:4"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-03-ainda-assim-me-alegrarei-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 3:18, o profeta se alegra no Senhor e exulta no Deus da sua salvação.",
+    "prompt": "Em Habacuque 3:18, o profeta se alegra no Senhor e exulta no Deus da sua salvação.",
+    "cue": "Em Habacuque 3:18, o profeta se alegra no Senhor e exulta no Deus da sua salvação.",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Contudo, ele se alegra no Senhor — a alegria não depende da colheita.",
+    "feedbackWrong": {
+      "false": "Releia 3:18: \"eu me alegro no Senhor; exulto no Deus da minha salvação\"."
+    },
+    "hint": "Veja o verbo depois de \"Contudo\".",
+    "learningObjective": "Observar a alegria declarada no Senhor.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-03-ainda-assim-me-alegrarei-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 3:17, toque a árvore que pode não florescer.",
+    "prompt": "Em Habacuque 3:17, toque a árvore que pode não florescer.",
+    "cue": "Em Habacuque 3:17, toque a árvore que pode não florescer.",
+    "verseRef": "Habacuque 3:17",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais:",
+    "options": [
+      {
+        "id": "a",
+        "text": "videira"
+      },
+      {
+        "id": "b",
+        "text": "figueira"
+      },
+      {
+        "id": "c",
+        "text": "campos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a figueira não floresça",
+    "feedbackCorrect": "A figueira pode não florescer — e ainda assim a fé permanece.",
+    "feedbackWrong": {
+      "a": "A videira vem depois; a primeira imagem é outra árvore.",
+      "c": "\"Campos\" aparecem depois; comece pela árvore do início."
+    },
+    "hint": "É a primeira planta nomeada no versículo.",
+    "learningObjective": "Identificar a figueira no quadro da falta.",
+    "evidence": [
+      "Habacuque 3:17"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-03-ainda-assim-me-alegrarei-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 3:19, o que o Senhor Deus é para o profeta?",
+    "prompt": "Segundo Habacuque 3:19, o que o Senhor Deus é para o profeta?",
+    "cue": "Segundo Habacuque 3:19, o que o Senhor Deus é para o profeta?",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O gado nos currais"
+      },
+      {
+        "id": "b",
+        "text": "O produto da oliveira"
+      },
+      {
+        "id": "c",
+        "text": "A figueira florescendo"
+      },
+      {
+        "id": "d",
+        "text": "A sua fortaleza"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O Senhor Deus é a minha fortaleza",
+    "feedbackCorrect": "O Senhor Deus é a fortaleza dele — não o gado nos currais.",
+    "feedbackWrong": {
+      "a": "O gado pode faltar; 3:19 aponta outra fortaleza.",
+      "b": "A oliveira pode falhar em 3:17; a fortaleza é o Senhor.",
+      "c": "A figueira pode não florescer; a fortaleza é o Senhor."
+    },
+    "hint": "Leia a primeira afirmação do versículo.",
+    "learningObjective": "Observar quem é a fortaleza do profeta.",
+    "evidence": [
+      "Habacuque 3:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-03-ainda-assim-me-alegrarei-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 3:18–19 na ordem do texto.",
+    "prompt": "Monte Habacuque 3:18–19 na ordem do texto.",
+    "cue": "Monte Habacuque 3:18–19 na ordem do texto.",
+    "verseRef": "Habacuque 3:18–19",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação. O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contudo, eu me alegro no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "exulto no Deus da minha salvação"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor Deus é a minha fortaleza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "Alegria no Senhor; depois a fortaleza e os pés como de corças.",
+    "feedbackWrong": {
+      "default": "Comece por \"Contudo\"; a fortaleza abre 3:19."
+    },
+    "hint": "Comece pelo \"Contudo\" de 3:18.",
+    "learningObjective": "Reconhecer a sequência de Habacuque 3:18–19.",
+    "evidence": [
+      "Habacuque 3:18–19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-03-ainda-assim-me-alegrarei-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 3:19, o Senhor Deus é a quê do profeta?",
+    "prompt": "Em Habacuque 3:19, o Senhor Deus é a quê do profeta?",
+    "cue": "Em Habacuque 3:19, o Senhor Deus é a quê do profeta?",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "template": "O Senhor Deus é a minha ___, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "figueira"
+      },
+      {
+        "id": "b",
+        "text": "fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "malhada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é a minha fortaleza",
+    "feedbackCorrect": "Ele é a fortaleza: segurança firme quando o campo falha.",
+    "feedbackWrong": {
+      "a": "A figueira pode falhar; não é o título de 3:19.",
+      "c": "\"Malhada\" aparece na falta de 3:17, não como título do Senhor."
+    },
+    "hint": "É a palavra depois de \"minha\".",
+    "learningObjective": "Lembrar o título dado ao Senhor em 3:19.",
+    "evidence": [
+      "Habacuque 3:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-03-ainda-assim-me-alegrarei-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:18",
+      "text": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Figueira, videira e rebanho podem faltar; a fé ainda se alegra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria só com colheita"
+      },
+      {
+        "id": "b",
+        "text": "Fé sem nenhum tremor"
+      },
+      {
+        "id": "c",
+        "text": "Alegria apesar da falta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "Mesmo na falta, a alegria se ancora no Senhor.",
+    "feedbackWrong": {
+      "a": "3:17–18 mostra alegria sem colheita.",
+      "b": "3:16 descreve tremor antes da alegria."
+    },
+    "hint": "Ligue o \"Contudo\" ao quadro de 3:17.",
+    "learningObjective": "Ligar a alegria à falta descrita antes.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-03-ainda-assim-me-alegrarei-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 3:17–18, o contraste \"Contudo\" liga a falta total à alegria no Senhor.",
+    "prompt": "Em Habacuque 3:17–18, o contraste \"Contudo\" liga a falta total à alegria no Senhor.",
+    "cue": "Em Habacuque 3:17–18, o contraste \"Contudo\" liga a falta total à alegria no Senhor.",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "\"Contudo\" marca a virada: falta no campo, alegria no Senhor.",
+    "feedbackWrong": {
+      "false": "Releia o elo entre 3:17 e 3:18: a falta, contudo a alegria."
+    },
+    "hint": "Veja a primeira palavra de 3:18.",
+    "learningObjective": "Compreender o contraste entre falta e alegria.",
+    "evidence": [
+      "Habacuque 3:17–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-03-ainda-assim-me-alegrarei-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 3:18, toque a palavra que marca o contraste com a falta anterior.",
+    "prompt": "Em Habacuque 3:18, toque a palavra que marca o contraste com a falta anterior.",
+    "cue": "Em Habacuque 3:18, toque a palavra que marca o contraste com a falta anterior.",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contudo"
+      },
+      {
+        "id": "b",
+        "text": "salvação"
+      },
+      {
+        "id": "c",
+        "text": "exulto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "\"Contudo\" vira a página: sem fruto, ainda assim alegria.",
+    "feedbackWrong": {
+      "b": "\"Salvação\" nomeia a Deus, não o contraste gramatical.",
+      "c": "\"Exulto\" é a ação da fé, não o marcador do contraste."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 3:18.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-03-ainda-assim-me-alegrarei-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Habacuque 3:16–18 relaciona tremor e alegria?",
+    "prompt": "Como Habacuque 3:16–18 relaciona tremor e alegria?",
+    "cue": "Como Habacuque 3:16–18 relaciona tremor e alegria?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O tremor cancela qualquer alegria possível"
+      },
+      {
+        "id": "b",
+        "text": "Só se alegra porque nada faltou nos campos"
+      },
+      {
+        "id": "c",
+        "text": "Treme e espera, mas ainda se alegra no Senhor"
+      },
+      {
+        "id": "d",
+        "text": "A alegria vem do gado que enche os currais"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "O profeta treme e espera; ainda assim escolhe alegrar-se no Senhor.",
+    "feedbackWrong": {
+      "a": "3:18 declara alegria depois do tremor.",
+      "b": "3:17 descreve falta; a alegria vem depois do \"Contudo\".",
+      "d": "O gado pode faltar; a alegria é no Senhor."
+    },
+    "hint": "Una o íntimo agitado de 3:16 ao \"Contudo\" de 3:18.",
+    "learningObjective": "Relacionar o tremor à alegria que permanece.",
+    "evidence": [
+      "Habacuque 3:16–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-03-ainda-assim-me-alegrarei-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Habacuque 3:14–19?",
+    "prompt": "Como avança a cena em Habacuque 3:14–19?",
+    "cue": "Como avança a cena em Habacuque 3:14–19?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O profeta treme e espera em silêncio"
+      },
+      {
+        "id": "b",
+        "text": "Quadro da falta total nos campos"
+      },
+      {
+        "id": "c",
+        "text": "Ainda assim alegria e pés firmes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Ação de Deus; tremor; falta; ainda assim alegria e pés firmes.",
+    "feedbackWrong": {
+      "default": "Tremor primeiro; alegria e pés firmes por último."
+    },
+    "hint": "Comece pela ação divina; a alegria fecha.",
+    "learningObjective": "Seguir o movimento do juízo à confiança.",
+    "evidence": [
+      "Habacuque 3:16–19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-03-ainda-assim-me-alegrarei-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 3:16, o que o íntimo do profeta fez ao ouvir?",
+    "prompt": "Em Habacuque 3:16, o que o íntimo do profeta fez ao ouvir?",
+    "cue": "Em Habacuque 3:16, o que o íntimo do profeta fez ao ouvir?",
+    "verseRef": "Habacuque 3:16",
+    "passageText": "Ouvindo isso, meu íntimo se agitou; meus lábios tremeram ao ouvir sua voz; a podridão invadiu meus ossos, e estremeci interiormente; em silêncio, devo esperar o dia da angústia, que virá contra o povo que nos acomete.",
+    "template": "Ouvindo isso, meu íntimo se ___; meus lábios tremeram ao ouvir sua voz; a podridão invadiu meus ossos, e estremeci interiormente; em silêncio, devo esperar o dia da angústia, que virá contra o povo que nos acomete.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cantou"
+      },
+      {
+        "id": "b",
+        "text": "agitou"
+      },
+      {
+        "id": "c",
+        "text": "descansou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "meu íntimo se agitou",
+    "feedbackCorrect": "O íntimo se agitou: a fé treme antes de se alegrar.",
+    "feedbackWrong": {
+      "a": "\"Cantou\" não descreve o íntimo em 3:16.",
+      "c": "\"Descansou\" não aparece; o texto fala de agitação."
+    },
+    "hint": "É o verbo depois de \"íntimo se\".",
+    "learningObjective": "Lembrar o verbo que marca o tremor.",
+    "evidence": [
+      "Habacuque 3:16"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-03-ainda-assim-me-alegrarei-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+    "prompt": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+    "cue": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:18",
+      "text": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:4",
+      "text": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria no Senhor sempre"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio sem nenhuma fé"
+      },
+      {
+        "id": "c",
+        "text": "Alegria só na colheita"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Nos dois textos, a alegria se ancora no Senhor, não nas circunstâncias.",
+    "feedbackWrong": {
+      "b": "Os textos falam de alegria, não de fé vazia.",
+      "c": "Habacuque se alegra na falta; Paulo manda alegrar-se sempre."
+    },
+    "hint": "Compare o objeto da alegria.",
+    "learningObjective": "Relacionar a alegria no Senhor em Habacuque e em Paulo.",
+    "evidence": [
+      "Habacuque 3:18",
+      "Filipenses 4:4"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-03-ainda-assim-me-alegrarei-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Habacuque 3:17–19, a alegria do profeta depende de a figueira florescer e o gado encher os currais.",
+    "prompt": "Em Habacuque 3:17–19, a alegria do profeta depende de a figueira florescer e o gado encher os currais.",
+    "cue": "Em Habacuque 3:17–19, a alegria do profeta depende de a figueira florescer e o gado encher os currais.",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "A falta é total; a alegria está no Senhor, não na colheita.",
+    "feedbackWrong": {
+      "true": "3:17 lista a falta; 3:18 declara alegria no Senhor mesmo assim."
+    },
+    "hint": "Compare 3:17 com o \"Contudo\" de 3:18.",
+    "learningObjective": "Interpretar a alegria desancorada da prosperidade.",
+    "evidence": [
+      "Habacuque 3:17–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-03-ainda-assim-me-alegrarei-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 3:19, toque o trecho que mostra quem é a segurança do profeta.",
+    "prompt": "Em Habacuque 3:19, toque o trecho que mostra quem é a segurança do profeta.",
+    "cue": "Em Habacuque 3:19, toque o trecho que mostra quem é a segurança do profeta.",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "instrumentos de cordas"
+      },
+      {
+        "id": "b",
+        "text": "minha fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "mestre de canto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor Deus é a minha fortaleza",
+    "feedbackCorrect": "A fortaleza é o Senhor Deus, não o rebanho.",
+    "feedbackWrong": {
+      "a": "\"Instrumentos de cordas\" fecham a rubrica musical, não a segurança.",
+      "c": "\"Mestre de canto\" é rubrica litúrgica, não a fortaleza."
+    },
+    "hint": "Procure o título depois de \"é a minha\".",
+    "learningObjective": "Sustentar com o texto a fortaleza no Senhor.",
+    "evidence": [
+      "Habacuque 3:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-03-ainda-assim-me-alegrarei-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Habacuque 3:14–19 sustenta sobre a fé na crise?",
+    "prompt": "Que leitura Habacuque 3:14–19 sustenta sobre a fé na crise?",
+    "cue": "Que leitura Habacuque 3:14–19 sustenta sobre a fé na crise?",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé se alegra no Senhor mesmo na falta"
+      },
+      {
+        "id": "b",
+        "text": "A fortaleza é o gado nos currais"
+      },
+      {
+        "id": "c",
+        "text": "A alegria só vale se a figueira florescer"
+      },
+      {
+        "id": "d",
+        "text": "O profeta não treme nem espera angústia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "A fé treme, vê a falta e ainda assim se alegra no Senhor, sua fortaleza.",
+    "feedbackWrong": {
+      "b": "3:19 chama o Senhor de fortaleza.",
+      "c": "3:17–18 mostra alegria na falta.",
+      "d": "3:16 descreve tremor e espera."
+    },
+    "hint": "Una tremor, falta e o \"Contudo\".",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Habacuque 3:17–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-03-ainda-assim-me-alegrarei-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela a alegria firme que começa em Habacuque 3:18?",
+    "prompt": "Qual sequência revela a alegria firme que começa em Habacuque 3:18?",
+    "cue": "Qual sequência revela a alegria firme que começa em Habacuque 3:18?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque: alegria no Senhor na falta"
+      },
+      {
+        "id": "b",
+        "text": "Paulo: alegria no Senhor sempre"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo: Deus fortaleza do coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Habacuque se alegra; Paulo ecoa; o Salmo aponta Deus como fortaleza.",
+    "feedbackWrong": {
+      "default": "Siga: Habacuque 3:18, Filipenses 4:4 e Salmos 73:26."
+    },
+    "hint": "Parta de Habacuque e avance na Escritura.",
+    "learningObjective": "Ver a alegria no Senhor no fio bíblico.",
+    "evidence": [
+      "Habacuque 3:18",
+      "Filipenses 4:4",
+      "Salmos 73:26"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-03-ainda-assim-me-alegrarei-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 3:19, a quais animais os pés do profeta são comparados?",
+    "prompt": "Em Habacuque 3:19, a quais animais os pés do profeta são comparados?",
+    "cue": "Em Habacuque 3:19, a quais animais os pés do profeta são comparados?",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "template": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das ___ e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "corças"
+      },
+      {
+        "id": "b",
+        "text": "leopardos"
+      },
+      {
+        "id": "c",
+        "text": "águas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "meus pés sejam como os das corças",
+    "feedbackCorrect": "Os pés serão como os das corças: firmeza dada pelo Senhor.",
+    "feedbackWrong": {
+      "b": "\"Leopardos\" não aparecem em 3:19.",
+      "c": "\"Águas\" estão em 3:15; a comparação dos pés é outra."
+    },
+    "hint": "É a comparação depois de \"como os das\".",
+    "learningObjective": "Lembrar a imagem teológica dos pés firmes.",
+    "evidence": [
+      "Habacuque 3:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-03-ainda-assim-me-alegrarei-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-03-ainda-assim-me-alegrarei",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 3:19 a Salmos 18:33?",
+    "prompt": "O que liga Habacuque 3:19 a Salmos 18:33?",
+    "cue": "O que liga Habacuque 3:19 a Salmos 18:33?",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "passageA": {
+      "ref": "Habacuque 3:19",
+      "text": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas."
+    },
+    "passageB": {
+      "ref": "Salmos 18:33",
+      "text": "Ele deu aos meus pés a ligeireza das corças e me firmou nas minhas alturas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Figueira sempre florida"
+      },
+      {
+        "id": "b",
+        "text": "Gado eterno nos currais"
+      },
+      {
+        "id": "c",
+        "text": "Pés como de corças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "meus pés sejam como os das corças",
+    "feedbackCorrect": "Nos dois textos, Deus dá pés firmes como os das corças.",
+    "feedbackWrong": {
+      "a": "Habacuque contempla a figueira sem flor.",
+      "b": "O texto admite gado ausente nos currais."
+    },
+    "hint": "Compare a imagem dos pés.",
+    "learningObjective": "Ligar os pés como de corças em Habacuque e no Salmo.",
+    "evidence": [
+      "Habacuque 3:19",
+      "Salmos 18:33"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Habacuque 3:18, o profeta se alegra no Senhor.",
+    "prompt": "Em Habacuque 3:18, o profeta se alegra no Senhor.",
+    "cue": "Em Habacuque 3:18, o profeta se alegra no Senhor.",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Mesmo após a falta, ele se alegra no Senhor.",
+    "feedbackWrong": {
+      "false": "Releia 3:18: eu me alegro no Senhor."
+    },
+    "hint": "Veja o verbo após \"Contudo\".",
+    "learningObjective": "Observar a alegria do profeta.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 1:6, toque a nação que Deus suscita.",
+    "prompt": "Em Habacuque 1:6, toque a nação que Deus suscita.",
+    "cue": "Em Habacuque 1:6, toque a nação que Deus suscita.",
+    "verseRef": "Habacuque 1:6",
+    "passageText": "Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "moradas"
+      },
+      {
+        "id": "b",
+        "text": "caldeus"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Deus suscita os caldeus.",
+    "feedbackWrong": {
+      "a": "\"Moradas\" é o que eles tomam, não a nação.",
+      "c": "\"Terra\" é a extensão do avanço."
+    },
+    "hint": "Procure o nome do povo suscitado.",
+    "learningObjective": "Identificar a nação do juízo.",
+    "evidence": [
+      "Habacuque 1:6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Habacuque 2:20, onde está o Senhor?",
+    "prompt": "Segundo Habacuque 2:20, onde está o Senhor?",
+    "cue": "Segundo Habacuque 2:20, onde está o Senhor?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausente da terra"
+      },
+      {
+        "id": "b",
+        "text": "Em seu santo templo"
+      },
+      {
+        "id": "c",
+        "text": "Só entre os caldeus"
+      },
+      {
+        "id": "d",
+        "text": "No curral das ovelhas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor está em seu santo templo",
+    "feedbackCorrect": "Ele está em seu santo templo.",
+    "feedbackWrong": {
+      "a": "O Senhor está presente no templo.",
+      "c": "O texto aponta o santo templo.",
+      "d": "O curral aparece em 3:17, não em 2:20."
+    },
+    "hint": "Veja o lugar mencionado no versículo.",
+    "learningObjective": "Observar onde o Senhor está.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 3:17–18 na ordem do texto.",
+    "prompt": "Monte Habacuque 3:17–18 na ordem do texto.",
+    "cue": "Monte Habacuque 3:17–18 na ordem do texto.",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora a figueira não floresça"
+      },
+      {
+        "id": "b",
+        "text": "nem haja fruto na videira"
+      },
+      {
+        "id": "c",
+        "text": "Contudo, eu me alegro no Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "Falta na figueira e na videira; contudo alegria no Senhor.",
+    "feedbackWrong": {
+      "default": "Figueira primeiro; Contudo fecha."
+    },
+    "hint": "Comece por Contudo.",
+    "learningObjective": "Reconhecer a sequência de 3:18.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Habacuque 3:19, que palavra diz o que o Senhor Deus é para o profeta?",
+    "prompt": "Em Habacuque 3:19, que palavra diz o que o Senhor Deus é para o profeta?",
+    "cue": "Em Habacuque 3:19, que palavra diz o que o Senhor Deus é para o profeta?",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "template": "O Senhor Deus é a minha ___, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ruína"
+      },
+      {
+        "id": "b",
+        "text": "fortaleza"
+      },
+      {
+        "id": "c",
+        "text": "dúvida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor Deus é a minha fortaleza",
+    "feedbackCorrect": "Ele é a fortaleza do profeta.",
+    "feedbackWrong": {
+      "a": "\"Ruína\" não é o que o Senhor é em 3:19.",
+      "c": "\"Dúvida\" não aparece nessa frase."
+    },
+    "hint": "É o substantivo de força.",
+    "learningObjective": "Lembrar a palavra da força.",
+    "evidence": [
+      "Habacuque 3:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+    "prompt": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+    "cue": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:18",
+      "text": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A etapa termina com fé que se alegra apesar da figueira sem fruto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria apesar da falta"
+      },
+      {
+        "id": "b",
+        "text": "Festa só com fartura"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem nenhuma fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "A fé se alegra no Senhor mesmo quando a terra falta.",
+    "feedbackWrong": {
+      "b": "O texto alegra-se na falta, não só na fartura.",
+      "c": "Há alegria e exultação explícitas."
+    },
+    "hint": "Ligue 3:17 e 3:18.",
+    "learningObjective": "Ligar alegria e falta.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-07",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Habacuque 2:20, toque o que a terra deve fazer diante dele.",
+    "prompt": "Em Habacuque 2:20, toque o que a terra deve fazer diante dele.",
+    "cue": "Em Habacuque 2:20, toque o que a terra deve fazer diante dele.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "silêncio"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "permaneça em silêncio diante dele",
+    "feedbackCorrect": "A terra deve permanecer em silêncio.",
+    "feedbackWrong": {
+      "b": "O Senhor é quem está presente; a terra se cala.",
+      "c": "O templo é o lugar do Senhor, não a atitude da terra."
+    },
+    "hint": "Procure a atitude pedida à terra.",
+    "learningObjective": "Identificar o silêncio da terra.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-sem-hqc-boss-1-08",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Habacuque 2:20 na ordem do texto.",
+    "prompt": "Monte Habacuque 2:20 na ordem do texto.",
+    "cue": "Monte Habacuque 2:20 na ordem do texto.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas o Senhor está em seu santo templo"
+      },
+      {
+        "id": "b",
+        "text": "que toda a terra permaneça em silêncio"
+      },
+      {
+        "id": "c",
+        "text": "diante dele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor está em seu santo templo",
+    "feedbackCorrect": "Mas o Senhor no templo; a terra em silêncio.",
+    "feedbackWrong": {
+      "default": "O templo abre; diante dele fecha."
+    },
+    "hint": "Comece por Mas.",
+    "learningObjective": "Reconhecer a sequência de 2:20.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Habacuque 3:17–18, a alegria do profeta depende de a figueira florescer.",
+    "prompt": "Em Habacuque 3:17–18, a alegria do profeta depende de a figueira florescer.",
+    "cue": "Em Habacuque 3:17–18, a alegria do profeta depende de a figueira florescer.",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "Ele se alegra contudo, mesmo sem figueira.",
+    "feedbackWrong": {
+      "true": "Releia o contraste: falta em 3:17, alegria em 3:18."
+    },
+    "hint": "Veja a palavra Contudo.",
+    "learningObjective": "Compreender alegria independente da colheita.",
+    "evidence": [
+      "Habacuque 3:17–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 3:18, toque a palavra que marca a virada após a falta.",
+    "prompt": "Em Habacuque 3:18, toque a palavra que marca a virada após a falta.",
+    "cue": "Em Habacuque 3:18, toque a palavra que marca a virada após a falta.",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exulto"
+      },
+      {
+        "id": "b",
+        "text": "Contudo"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "\"Contudo\" marca a virada da fé.",
+    "feedbackWrong": {
+      "a": "\"Exulto\" é a ação; Contudo marca a virada.",
+      "c": "\"Salvação\" fecha a frase, não marca a virada."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Habacuque 1:5–6 e 3:17–19 se relacionam nesta etapa?",
+    "prompt": "Como Habacuque 1:5–6 e 3:17–19 se relacionam nesta etapa?",
+    "cue": "Como Habacuque 1:5–6 e 3:17–19 se relacionam nesta etapa?",
+    "verseRef": "Habacuque 1:5–6",
+    "passageText": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os caldeus cancelam toda confiança"
+      },
+      {
+        "id": "b",
+        "text": "Só há silêncio, nunca alegria"
+      },
+      {
+        "id": "c",
+        "text": "A falta prova que Deus não age"
+      },
+      {
+        "id": "d",
+        "text": "Obra espantosa e fé que ainda se alegra"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "suscito os caldeus",
+    "feedbackCorrect": "Deus age de modos espantosos; a fé termina alegre nele apesar da falta.",
+    "feedbackWrong": {
+      "a": "O livro termina em alegria e fortaleza.",
+      "b": "3:18 fala de alegria e exultação.",
+      "c": "Deus mesmo anuncia a obra e sustenta a fé."
+    },
+    "hint": "Ligue a obra com os caldeus ao Contudo de 3:18.",
+    "learningObjective": "Relacionar juízo espantoso e fé confiante.",
+    "evidence": [
+      "Habacuque 1:5–6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move a etapa de Habacuque?",
+    "prompt": "Como se move a etapa de Habacuque?",
+    "cue": "Como se move a etapa de Habacuque?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus anuncia obra espantosa com os caldeus"
+      },
+      {
+        "id": "b",
+        "text": "A terra se cala diante do santo templo"
+      },
+      {
+        "id": "c",
+        "text": "A fé se alegra no Senhor apesar da falta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "Obra espantosa; silêncio no templo; alegria na falta.",
+    "feedbackWrong": {
+      "default": "Caldeus primeiro; a alegria fecha."
+    },
+    "hint": "Comece pelos caldeus.",
+    "learningObjective": "Seguir o arco da queixa à confiança.",
+    "evidence": [
+      "Habacuque 3:17–19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Habacuque 3:18, que verbo expressa a alegria do profeta?",
+    "prompt": "Em Habacuque 3:18, que verbo expressa a alegria do profeta?",
+    "cue": "Em Habacuque 3:18, que verbo expressa a alegria do profeta?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "template": "Contudo, eu me ___ no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alegro"
+      },
+      {
+        "id": "b",
+        "text": "calarei"
+      },
+      {
+        "id": "c",
+        "text": "escondo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Ele se alegra no Senhor.",
+    "feedbackWrong": {
+      "b": "\"Calarei\" é o oposto da alegria.",
+      "c": "\"Escondo\" não é o verbo de 3:18."
+    },
+    "hint": "É o verbo logo após \"eu me\".",
+    "learningObjective": "Lembrar o verbo da alegria.",
+    "evidence": [
+      "Habacuque 3:18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+    "prompt": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+    "cue": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "passageA": {
+      "ref": "Habacuque 3:18",
+      "text": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:4",
+      "text": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria só na fartura"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio sem esperança"
+      },
+      {
+        "id": "c",
+        "text": "Alegria no Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Nos dois textos, a alegria está no Senhor, não na circunstância.",
+    "feedbackWrong": {
+      "a": "Os textos enraízam a alegria no Senhor.",
+      "b": "Há alegria explícita, não só silêncio."
+    },
+    "hint": "Compare alegria e Senhor.",
+    "learningObjective": "Relacionar Habacuque a Filipenses.",
+    "evidence": [
+      "Habacuque 3:18",
+      "Filipenses 4:4"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-07",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos mudos.",
+    "prompt": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos mudos.",
+    "cue": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos mudos.",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "santo"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas o Senhor está em seu santo templo",
+    "feedbackCorrect": "\"Mas\" introduz o Senhor vivo no templo.",
+    "feedbackWrong": {
+      "b": "\"Santo\" descreve o templo.",
+      "c": "\"Terra\" é quem deve silenciar."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o contraste em 2:20.",
+    "evidence": [
+      "Habacuque 2:20"
+    ]
+  },
+  {
+    "id": "habacuque-cap-cam-hqc-boss-1-08",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como Habacuque 3:17–19 encadeia falta, virada e força?",
+    "prompt": "Como Habacuque 3:17–19 encadeia falta, virada e força?",
+    "cue": "Como Habacuque 3:17–19 encadeia falta, virada e força?",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A terra não dá fruto nem rebanho"
+      },
+      {
+        "id": "b",
+        "text": "Contudo há alegria no Senhor"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor é fortaleza que firma os pés"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor Deus é a minha fortaleza",
+    "feedbackCorrect": "Falta; contudo alegria; fortaleza que firma os pés.",
+    "feedbackWrong": {
+      "default": "Falta primeiro; a fortaleza fecha."
+    },
+    "hint": "Comece pela figueira.",
+    "learningObjective": "Compreender a lógica de 3:17–19.",
+    "evidence": [
+      "Habacuque 3:17–19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-01",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Habacuque 3:17–18, a alegria do profeta só começa depois que a figueira volta a florescer.",
+    "prompt": "Em Habacuque 3:17–18, a alegria do profeta só começa depois que a figueira volta a florescer.",
+    "cue": "Em Habacuque 3:17–18, a alegria do profeta só começa depois que a figueira volta a florescer.",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "A alegria vem contudo, ainda com a figueira sem flor.",
+    "feedbackWrong": {
+      "true": "Releia 3:17–18: a alegria vem na falta, não depois da colheita."
+    },
+    "hint": "Veja se a figueira já floresceu quando ele se alegra.",
+    "learningObjective": "Interpretar a alegria na falta.",
+    "evidence": [
+      "Habacuque 3:17–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-02",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 3:19, toque o trecho que sustenta a força do profeta.",
+    "prompt": "Em Habacuque 3:19, toque o trecho que sustenta a força do profeta.",
+    "cue": "Em Habacuque 3:19, toque o trecho que sustenta a força do profeta.",
+    "verseRef": "Habacuque 3:19",
+    "passageText": "O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "minha fortaleza"
+      },
+      {
+        "id": "b",
+        "text": "instrumentos"
+      },
+      {
+        "id": "c",
+        "text": "corças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a minha fortaleza",
+    "feedbackCorrect": "O Senhor Deus é a minha fortaleza.",
+    "feedbackWrong": {
+      "b": "Instrumentos fecham a rubrica musical.",
+      "c": "Corças ilustram os pés; a força é a fortaleza."
+    },
+    "hint": "Procure o que o Senhor é para ele.",
+    "learningObjective": "Sustentar com o texto a fonte da força.",
+    "evidence": [
+      "Habacuque 3:19"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-03",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a etapa de Habacuque sustenta sobre a fé?",
+    "prompt": "Que leitura a etapa de Habacuque sustenta sobre a fé?",
+    "cue": "Que leitura a etapa de Habacuque sustenta sobre a fé?",
+    "verseRef": "Habacuque 3:17–18",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais: Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé ignora o juízo dos caldeus"
+      },
+      {
+        "id": "b",
+        "text": "A fé pergunta a Deus e termina alegre nele"
+      },
+      {
+        "id": "c",
+        "text": "A fé só confia quando a colheita sobra"
+      },
+      {
+        "id": "d",
+        "text": "A fé se cala e nunca se alegra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Contudo, eu me alegro no Senhor",
+    "feedbackCorrect": "A fé pergunta, vê juízo espantoso e ainda se alegra no Senhor.",
+    "feedbackWrong": {
+      "a": "1:6 enfrenta o juízo dos caldeus.",
+      "c": "3:17–18 alegra-se na falta.",
+      "d": "Há silêncio reverente e também alegria."
+    },
+    "hint": "Ligue 1:5–6, 2:20 e 3:18.",
+    "learningObjective": "Escolher a interpretação do arco da fé.",
+    "evidence": [
+      "Habacuque 3:17–18"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-04",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra alegria no Senhor na Escritura?",
+    "prompt": "Qual sequência mostra alegria no Senhor na Escritura?",
+    "cue": "Qual sequência mostra alegria no Senhor na Escritura?",
+    "verseRef": "Habacuque 3:18",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Habacuque se alegra no Senhor na falta"
+      },
+      {
+        "id": "b",
+        "text": "O Salmo confessa Deus como porção"
+      },
+      {
+        "id": "c",
+        "text": "Paulo manda alegrar-se sempre no Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Habacuque se alegra; o Salmo confessa porção em Deus; Paulo manda alegrar-se.",
+    "feedbackWrong": {
+      "default": "Siga: Habacuque 3:18, Salmos 73:26 e Filipenses 4:4."
+    },
+    "hint": "Parta de Habacuque.",
+    "learningObjective": "Ver a alegria de Habacuque no fio bíblico.",
+    "evidence": [
+      "Habacuque 3:18",
+      "Salmos 73:26",
+      "Filipenses 4:4"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-05",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Habacuque 2:14, que palavra a terra receberá em plenitude?",
+    "prompt": "Em Habacuque 2:14, que palavra a terra receberá em plenitude?",
+    "cue": "Em Habacuque 2:14, que palavra a terra receberá em plenitude?",
+    "verseRef": "Habacuque 2:14",
+    "passageText": "Porque a terra se encherá do conhecimento da glória do Senhor, como as águas cobrem o mar.",
+    "template": "Porque a terra se encherá do ___ da glória do Senhor, como as águas cobrem o mar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esquecimento"
+      },
+      {
+        "id": "b",
+        "text": "silêncio"
+      },
+      {
+        "id": "c",
+        "text": "conhecimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conhecimento da glória do Senhor",
+    "feedbackCorrect": "A terra se encherá do conhecimento da glória.",
+    "feedbackWrong": {
+      "a": "\"Esquecimento\" é o oposto.",
+      "b": "\"Silêncio\" está em 2:20, não nesta frase."
+    },
+    "hint": "É o substantivo do que enche a terra.",
+    "learningObjective": "Lembrar o termo da glória anunciada.",
+    "evidence": [
+      "Habacuque 1:6"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-06",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Habacuque 2:20 a Isaías 6:1–3?",
+    "prompt": "O que liga Habacuque 2:20 a Isaías 6:1–3?",
+    "cue": "O que liga Habacuque 2:20 a Isaías 6:1–3?",
+    "verseRef": "Habacuque 2:20",
+    "passageText": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele.",
+    "passageA": {
+      "ref": "Habacuque 2:20",
+      "text": "Mas o Senhor está em seu santo templo; que toda a terra permaneça em silêncio diante dele."
+    },
+    "passageB": {
+      "ref": "Isaías 6:1–3"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Glória do Senhor no templo"
+      },
+      {
+        "id": "b",
+        "text": "Ídolos falando no santuário"
+      },
+      {
+        "id": "c",
+        "text": "Templo vazio para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor está em seu santo templo",
+    "feedbackCorrect": "Nos dois textos, o Senhor no templo chama a reverência diante da sua glória.",
+    "feedbackWrong": {
+      "b": "Habacuque contrapõe o Senhor vivo aos ídolos.",
+      "c": "Os textos afirmam presença, não vazio."
+    },
+    "hint": "Compare templo e presença santa.",
+    "learningObjective": "Ligar o templo de Habacuque ao de Isaías.",
+    "evidence": [
+      "Habacuque 2:20",
+      "Isaías 6:1–3"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-07",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Habacuque 3:17, toque a árvore que não floresce.",
+    "prompt": "Em Habacuque 3:17, toque a árvore que não floresce.",
+    "cue": "Em Habacuque 3:17, toque a árvore que não floresce.",
+    "verseRef": "Habacuque 3:17",
+    "passageText": "Embora a figueira não floresça, nem haja fruto na videira, ainda que o produto da oliveira falhe e os campos não produzam mantimento; as ovelhas da malhada sejam arrebatadas, e não haja gado nos currais:",
+    "options": [
+      {
+        "id": "a",
+        "text": "mantimento"
+      },
+      {
+        "id": "b",
+        "text": "currais"
+      },
+      {
+        "id": "c",
+        "text": "figueira"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a figueira não floresça",
+    "feedbackCorrect": "A figueira não floresce.",
+    "feedbackWrong": {
+      "a": "Mantimento é o que os campos não produzem.",
+      "b": "Os currais aparecem no fim, sem gado."
+    },
+    "hint": "Procure a primeira planta do versículo.",
+    "learningObjective": "Sustentar com o texto a imagem da falta.",
+    "evidence": [
+      "Habacuque 3:17"
+    ]
+  },
+  {
+    "id": "habacuque-cap-pro-hqc-boss-1-08",
+    "trail": "habacuque-cap",
+    "section": "hqc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual lógica une juízo, silêncio e confiança nesta travessia?",
+    "prompt": "Qual lógica une juízo, silêncio e confiança nesta travessia?",
+    "cue": "Qual lógica une juízo, silêncio e confiança nesta travessia?",
+    "verseRef": "Habacuque 3:18–19",
+    "passageText": "Contudo, eu me alegro no Senhor; exulto no Deus da minha salvação. O Senhor Deus é a minha fortaleza, e fará com que meus pés sejam como os das corças e me fará andar altaneiramente. Para o mestre de canto, com os instrumentos de cordas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus suscita juízo que espanta"
+      },
+      {
+        "id": "b",
+        "text": "A terra se cala diante do templo"
+      },
+      {
+        "id": "c",
+        "text": "A fé se alegra e acha fortaleza nele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "eu me alegro no Senhor",
+    "feedbackCorrect": "Juízo espantoso; reverência no templo; confiança alegre.",
+    "feedbackWrong": {
+      "default": "Juízo primeiro; a confiança fecha."
+    },
+    "hint": "Comece pela obra com os caldeus.",
+    "learningObjective": "Encadear o sentido da travessia.",
+    "evidence": [
+      "Habacuque 1:6",
+      "Habacuque 2:20",
+      "Habacuque 3:18"
+    ]
+  }
+]

@@ -8,6 +8,7 @@ import 'package:purchases_flutter/purchases_flutter.dart';
 
 import '../utils/guest_gate.dart';
 import '../l10n/app_language.dart';
+import '../services/referral_rewards_service.dart';
 import '../services/plus_log.dart';
 import '../services/analytics_service.dart';
 import '../services/progress_service.dart';
@@ -1047,6 +1048,25 @@ class _YourPlan extends StatelessWidget {
             const SizedBox(height: 6),
             Text(
               l10n.paywallManageHint,
+              textAlign: TextAlign.center,
+              style: AppTypography.body(size: 11, color: a.textFaint),
+            ),
+          ],
+          // Convite que vira assinatura: 1 mês (guardado, para quem assina).
+          const SizedBox(height: AppSpace.md),
+          Text(
+            l10n.referralInviteLine,
+            textAlign: TextAlign.center,
+            style: AppTypography.body(
+              size: 12,
+              weight: FontWeight.w700,
+              color: AppRoles.reward,
+            ),
+          ),
+          if (ReferralRewardsService.instance.banked > 0) ...[
+            const SizedBox(height: 4),
+            Text(
+              l10n.referralBankedLine(ReferralRewardsService.instance.banked),
               textAlign: TextAlign.center,
               style: AppTypography.body(size: 11, color: a.textFaint),
             ),

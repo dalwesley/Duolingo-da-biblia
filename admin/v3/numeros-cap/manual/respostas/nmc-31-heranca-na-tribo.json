@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Números 36:1–6",
+    "passages": [
+      {
+        "ref": "Números 36:1–6"
+      },
+      {
+        "ref": "Números 36:7–9"
+      }
+    ],
+    "context": "Cena de Herança na tribo: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Herança na tribo",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então chegaram os cabeças das casas paternas das.",
+        "evidenceRef": "Números 36:1",
+        "evidenceSpan": "Então chegaram os cabeças das casas paternas das"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 36:2",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "E se elas se casarem com algum dos.",
+        "evidenceRef": "Números 36:3",
+        "evidenceSpan": "E se elas se casarem com algum dos"
+      },
+      {
+        "text": "Quando chegar o ano do jubileu dos filhos.",
+        "evidenceRef": "Números 36:4",
+        "evidenceSpan": "Quando chegar o ano do jubileu dos filhos"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Números 36:5",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Esta é a palavra que o Senhor mandou.",
+        "evidenceRef": "Números 36:6",
+        "evidenceSpan": "Esta é a palavra que o Senhor mandou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então chegaram os cabeças das casas",
+        "evidenceRef": "Números 36:1"
+      },
+      {
+        "label": "E disseram o senhor ordenou",
+        "evidenceRef": "Números 36:2"
+      },
+      {
+        "label": "E se elas se casarem",
+        "evidenceRef": "Números 36:3"
+      },
+      {
+        "label": "Quando chegar o ano do jubileu",
+        "evidenceRef": "Números 36:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 36:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Números 36:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 36:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 2:14",
+        "bridge": "Doutrina de Balaão"
+      },
+      {
+        "ref": "Josué 20:2–3",
+        "bridge": "Cidades de refúgio"
+      },
+      {
+        "ref": "Deuteronômio 10:8",
+        "bridge": "Levi separado para servir"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A herança permanece na tribo: justiça às filhas sem perder a ordem da terra.",
+    "anchorQuestion": "O que Números 36:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 36:1, o texto inclui Então chegaram os cabeças das casas paternas das.",
+      "verseRef": "Números 36:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então chegaram os cabeças das casas paternas das",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 36:1 afirma.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 36:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Números 36:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "chegaram"
+        },
+        {
+          "id": "c",
+          "text": "cabeças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 36:3, o que o texto apresenta com clareza.",
+      "verseRef": "Números 36:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 36:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 36:2 na ordem do texto.",
+      "verseRef": "Números 36:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "E disseram"
+        },
+        {
+          "id": "b",
+          "text": "ordenou que esta terra"
+        },
+        {
+          "id": "c",
+          "text": "fosse dada ao meu senhor por sorte"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E disseram",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Números 36:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 36:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 36:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "chegar"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "voltar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chegar",
+      "feedbackCorrect": "A palavra do versículo é chegar.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 36:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 36:1 comunica que se liga a este contexto.",
+      "verseRef": "Números 36:1",
+      "passageA": {
+        "ref": "Números 36:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Herança na tribo: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 36:1, a palavra Então liga ideias no fluxo do texto.",
+      "verseRef": "Números 36:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 36:1 afirma.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 36:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Números 36:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "chegaram"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "cabeças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chegaram",
+      "feedbackCorrect": "O versículo destaca chegaram.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Números 36:4, o que o texto apresenta com clareza.",
+      "verseRef": "Números 36:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O trecho registra o fato central com clareza"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando chegar o ano do jubileu dos filhos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 36:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Números 36:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então chegaram os cabeças das casas"
+        },
+        {
+          "id": "b",
+          "text": "E disseram o senhor ordenou"
+        },
+        {
+          "id": "c",
+          "text": "E se elas se casarem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 36:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 36:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "elas"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "chegaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "elas",
+      "feedbackCorrect": "A palavra do versículo é elas.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 36:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 36:1 a Apocalipse 2:14.",
+      "verseRef": "Números 36:1",
+      "passageA": {
+        "ref": "Números 36:1"
+      },
+      "passageB": {
+        "ref": "Apocalipse 2:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Doutrina de Balaão"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Números 36:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Assim",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 36:9 afirma.",
+      "evidence": [
+        "Números 36:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 36:6, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Números 36:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esta"
+        },
+        {
+          "id": "b",
+          "text": "palavra"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "O versículo destaca Esta.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 36:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Números 36:5, o que o texto apresenta com clareza.",
+      "verseRef": "Números 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que então, Moisés deu ordem aos filhos de Israel, conforme"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 36:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Números 36:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 36:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "chegaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés",
+      "feedbackCorrect": "A palavra do versículo é Moisés.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 36:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 36:1 a Josué 20:2–3.",
+      "verseRef": "Números 36:1",
+      "passageA": {
+        "ref": "Números 36:1"
+      },
+      "passageB": {
+        "ref": "Josué 20:2–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    }
+  ]
+}

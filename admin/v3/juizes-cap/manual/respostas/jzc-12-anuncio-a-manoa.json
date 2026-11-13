@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 13:2–14",
+    "passages": [
+      {
+        "ref": "Juízes 13:2–14"
+      }
+    ],
+    "context": "O anjo anuncia a Manoá e à mulher estéril um filho nazireu que começará a livrar Israel dos filisteus.",
+    "keyword": "nazireu",
+    "keywordGloss": "Consagrado a Deus desde o ventre, sem navalha.",
+    "focusQuestion": "Onde o Senhor já pediu consagração antes mesmo do resultado?",
+    "reflectionPrompts": [
+      "Estéril que concebe",
+      "Nazireu desde o ventre",
+      "Abstinência da mãe"
+    ],
+    "facts": [
+      {
+        "text": "A mulher de Manoá era estéril.",
+        "evidenceRef": "Juízes 13:2",
+        "evidenceSpan": "sua mulher era estéril e não tinha filhos"
+      },
+      {
+        "text": "O anjo promete conceber e dar à luz.",
+        "evidenceRef": "Juízes 13:3",
+        "evidenceSpan": "porém conceberás e darás à luz um filho"
+      },
+      {
+        "text": "Não passará navalha sobre a cabeça.",
+        "evidenceRef": "Juízes 13:5",
+        "evidenceSpan": "sobre cuja cabeça não passará navalha"
+      },
+      {
+        "text": "O menino será nazireu consagrado a Deus.",
+        "evidenceRef": "Juízes 13:5",
+        "evidenceSpan": "o menino será nazireu consagrado a Deus"
+      },
+      {
+        "text": "Ele começará a livrar Israel dos filisteus.",
+        "evidenceRef": "Juízes 13:5",
+        "evidenceSpan": "ele começará a livrar Israel do poder dos filisteus"
+      },
+      {
+        "text": "Manoá ora para o homem de Deus voltar.",
+        "evidenceRef": "Juízes 13:8",
+        "evidenceSpan": "o homem de Deus que enviaste venha outra vez"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "nazireu",
+        "gloss": "Consagrado a Deus desde o ventre."
+      },
+      {
+        "term": "navalha",
+        "gloss": "Não passará sobre a cabeça do menino."
+      },
+      {
+        "term": "estéril",
+        "gloss": "Condição da mãe antes da promessa."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Anúncio à mulher",
+        "evidenceRef": "Juízes 13:2–5"
+      },
+      {
+        "label": "Relato a Manoá e oração",
+        "evidenceRef": "Juízes 13:6–8"
+      },
+      {
+        "label": "Retorno do anjo e regras",
+        "evidenceRef": "Juízes 13:9–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "É estéril; porém conceberás.",
+        "marker": "porém",
+        "evidenceRef": "Juízes 13:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Não bebas pois será nazireu.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 13:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Apareceu à mulher; porém Manoá não estava.",
+        "marker": "porém",
+        "evidenceRef": "Juízes 13:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 6:2",
+        "bridge": "Voto de nazireu"
+      },
+      {
+        "ref": "1 Samuel 1:11",
+        "bridge": "Filho dedicado ao Senhor"
+      },
+      {
+        "ref": "Lucas 1:13",
+        "bridge": "Anúncio a estéril"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A mãe não tem regras.",
+        "why": "Não beba vinho nem impuro."
+      },
+      {
+        "text": "Sansão não é consagrado.",
+        "why": "Será nazireu desde o ventre."
+      },
+      {
+        "text": "Não há missão de livramento.",
+        "why": "Começará a livrar Israel."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 13:5, o que o menino será?",
+    "centralInsight": "Sansão será nazireu do Senhor: a mãe guarda o voto antes mesmo do nascimento."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 13:5, o menino será nazireu consagrado a Deus.",
+      "verseRef": "Juízes 13:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "o menino será nazireu consagrado a Deus",
+      "feedbackCorrect": "Nazireu.",
+      "feedbackWrong": {
+        "false": "O texto afirma."
+      },
+      "hint": "Veja o título.",
+      "learningObjective": "Observar o nazireu.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 13:5, toque o que não passará.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "navalha"
+        },
+        {
+          "id": "b",
+          "text": "filisteus"
+        },
+        {
+          "id": "c",
+          "text": "ventre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não passará navalha",
+      "feedbackCorrect": "Navalha.",
+      "feedbackWrong": {
+        "b": "Filisteus são o alvo.",
+        "c": "Ventre é o início."
+      },
+      "hint": "Veja a cabeça.",
+      "learningObjective": "Identificar navalha.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 13:2, a mulher de Manoá:",
+      "verseRef": "Juízes 13:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Era estéril"
+        },
+        {
+          "id": "b",
+          "text": "Tinha muitos filhos"
+        },
+        {
+          "id": "c",
+          "text": "Era de Timna"
+        },
+        {
+          "id": "d",
+          "text": "Era filisteia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sua mulher era estéril e não tinha filhos",
+      "feedbackCorrect": "Estéril.",
+      "feedbackWrong": {
+        "b": "Não tinha filhos.",
+        "c": "Não é Timna.",
+        "d": "Não é filisteia."
+      },
+      "hint": "Leia a condição.",
+      "learningObjective": "Reconhecer a esterilidade.",
+      "evidence": [
+        "Juízes 13:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 13:5 na ordem do texto.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "não passará navalha"
+        },
+        {
+          "id": "b",
+          "text": "o menino será nazireu consagrado a Deus"
+        },
+        {
+          "id": "c",
+          "text": "ele começará a livrar Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele começará a livrar Israel do poder dos filisteus",
+      "feedbackCorrect": "Navalha, nazireu e missão.",
+      "feedbackWrong": {
+        "default": "Comece pela navalha."
+      },
+      "hint": "Qual a missão?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 13:5, complete: o menino será ___.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "nazireu"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o menino será nazireu consagrado a Deus",
+      "feedbackCorrect": "Nazireu.",
+      "feedbackWrong": {
+        "b": "Não é rei.",
+        "c": "Não é sacerdote."
+      },
+      "hint": "Veja o título.",
+      "learningObjective": "Lembrar nazireu.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 13:8 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 13:8",
+      "passageA": {
+        "ref": "Juízes 13:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Manoá pede ensino sobre o menino prometido."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração por instrução"
+        },
+        {
+          "id": "b",
+          "text": "Recusa do anjo"
+        },
+        {
+          "id": "c",
+          "text": "Sem filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nos ensine o que devemos fazer com o menino",
+      "feedbackCorrect": "Pedido de ensino.",
+      "feedbackWrong": {
+        "b": "Há anjo.",
+        "c": "Há filho."
+      },
+      "hint": "O que Manoá pede?",
+      "learningObjective": "Ligar oração e anúncio.",
+      "evidence": [
+        "Juízes 13:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 13:3, o anjo ignora a esterilidade e não promete filho.",
+      "verseRef": "Juízes 13:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém conceberás e darás à luz um filho",
+      "feedbackCorrect": "Há promessa.",
+      "feedbackWrong": {
+        "true": "O porém introduz a promessa."
+      },
+      "hint": "Leia o porém.",
+      "learningObjective": "Ver a promessa.",
+      "evidence": [
+        "Juízes 13:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 13:3, toque o marcador de contraste.",
+      "verseRef": "Juízes 13:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "estéril"
+        },
+        {
+          "id": "c",
+          "text": "filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém conceberás e darás à luz um filho",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Estéril é o início.",
+        "c": "Filho é a promessa."
+      },
+      "hint": "Procure após nunca tiveste.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 13:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 13:5 faz?",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não bebas pois será nazireu"
+        },
+        {
+          "id": "b",
+          "text": "Beba pois não há voto"
+        },
+        {
+          "id": "c",
+          "text": "Corte pois não há missão"
+        },
+        {
+          "id": "d",
+          "text": "Ignore pois é só símbolo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o menino será nazireu consagrado a Deus",
+      "feedbackCorrect": "Causa das regras.",
+      "feedbackWrong": {
+        "b": "Há voto.",
+        "c": "Há missão.",
+        "d": "Há regras."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do anúncio.",
+      "verseRef": "Juízes 13:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio à mulher"
+        },
+        {
+          "id": "b",
+          "text": "Relato a Manoá e oração"
+        },
+        {
+          "id": "c",
+          "text": "Retorno do anjo e regras"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sua mulher era estéril e não tinha filhos",
+      "feedbackCorrect": "Anúncio, oração e regras.",
+      "feedbackWrong": {
+        "default": "Comece pela mulher."
+      },
+      "hint": "O que fecha as regras?",
+      "learningObjective": "Ordenar o anúncio",
+      "evidence": [
+        "Juízes 13:2",
+        "Juízes 13:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 13:4, complete: não bebas vinho nem bebida ___.",
+      "verseRef": "Juízes 13:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "forte"
+        },
+        {
+          "id": "b",
+          "text": "doce"
+        },
+        {
+          "id": "c",
+          "text": "fria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não bebas vinho nem bebida forte",
+      "feedbackCorrect": "Forte.",
+      "feedbackWrong": {
+        "b": "Não é doce.",
+        "c": "Não é fria."
+      },
+      "hint": "Veja o complemento.",
+      "learningObjective": "Lembrar forte.",
+      "evidence": [
+        "Juízes 13:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 13:5 a Números 6:2?",
+      "verseRef": "Juízes 13:5",
+      "passageA": {
+        "ref": "Juízes 13:5"
+      },
+      "passageB": {
+        "ref": "Números 6:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voto de nazireu"
+        },
+        {
+          "id": "b",
+          "text": "Reinado de Dã"
+        },
+        {
+          "id": "c",
+          "text": "Culto a Dagom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o menino será nazireu consagrado a Deus",
+      "feedbackCorrect": "Nazireado.",
+      "feedbackWrong": {
+        "b": "Não é reinado.",
+        "c": "Não é Dagom."
+      },
+      "hint": "Compare o nazireu.",
+      "learningObjective": "Ligar a Números.",
+      "evidence": [
+        "Juízes 13:5",
+        "Números 6:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 13:5, a consagração começa só depois da idade adulta.",
+      "verseRef": "Juízes 13:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "desde o ventre de sua mãe",
+      "feedbackCorrect": "Desde o ventre.",
+      "feedbackWrong": {
+        "true": "Desde o ventre."
+      },
+      "hint": "Leia o desde.",
+      "learningObjective": "Avaliar o alcance.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 13:5, toque o início da consagração.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "ventre"
+        },
+        {
+          "id": "b",
+          "text": "filisteus"
+        },
+        {
+          "id": "c",
+          "text": "navalha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desde o ventre de sua mãe",
+      "feedbackCorrect": "Ventre.",
+      "feedbackWrong": {
+        "b": "Filisteus são o alvo.",
+        "c": "Navalha é a marca."
+      },
+      "hint": "Veja o desde.",
+      "learningObjective": "Tocar o ventre.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une esterilidade e missão?",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do ventre estéril nasce o nazireu que começa a livrar"
+        },
+        {
+          "id": "b",
+          "text": "Sem filho não há Deus"
+        },
+        {
+          "id": "c",
+          "text": "A mãe ignora as regras"
+        },
+        {
+          "id": "d",
+          "text": "Só Manoá recebe o anúncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele começará a livrar Israel do poder dos filisteus",
+      "feedbackCorrect": "Promessa e missão.",
+      "feedbackWrong": {
+        "b": "Há filho.",
+        "c": "Há regras.",
+        "d": "Há anúncio à mulher."
+      },
+      "hint": "Una ventre e livrar.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da consagração.",
+      "verseRef": "Juízes 13:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa à estéril"
+        },
+        {
+          "id": "b",
+          "text": "Nazireu desde o ventre"
+        },
+        {
+          "id": "c",
+          "text": "Mãe guarda as ordens"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tudo o que lhe ordenei manterá",
+      "feedbackCorrect": "Promessa, nazireu e guarda.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa."
+      },
+      "hint": "O que a mãe mantém?",
+      "learningObjective": "Encadear a consagração",
+      "evidence": [
+        "Juízes 13:3",
+        "Juízes 13:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 13:2, complete: sua mulher era ___.",
+      "verseRef": "Juízes 13:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "estéril"
+        },
+        {
+          "id": "b",
+          "text": "viúva"
+        },
+        {
+          "id": "c",
+          "text": "filisteia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sua mulher era estéril e não tinha filhos",
+      "feedbackCorrect": "Estéril.",
+      "feedbackWrong": {
+        "b": "Não é viúva.",
+        "c": "Não é filisteia."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar estéril.",
+      "evidence": [
+        "Juízes 13:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 13:3 a Lucas 1:13?",
+      "verseRef": "Juízes 13:3",
+      "passageA": {
+        "ref": "Juízes 13:3"
+      },
+      "passageB": {
+        "ref": "Lucas 1:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio a estéril"
+        },
+        {
+          "id": "b",
+          "text": "Sem filho prometido"
+        },
+        {
+          "id": "c",
+          "text": "Anjo calado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém conceberás e darás à luz um filho",
+      "feedbackCorrect": "Anúncio de filho.",
+      "feedbackWrong": {
+        "b": "Há filho.",
+        "c": "Há anjo."
+      },
+      "hint": "Compare o anúncio.",
+      "learningObjective": "Ligar a Lucas.",
+      "evidence": [
+        "Juízes 13:3",
+        "Lucas 1:13"
+      ]
+    }
+  ]
+}

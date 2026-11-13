@@ -1,0 +1,518 @@
+{
+  "study": {
+    "passageRef": "Romanos 14:1–6",
+    "passages": [
+      { "ref": "Romanos 14:1–6" },
+      { "ref": "Romanos 14:7–9" }
+    ],
+    "context": "Na igreja em Roma, havia diferenças sobre comida e dias especiais. Paulo pede que quem é firme na fé acolha quem é mais frágil, sem discussões, e lembra que todos respondem ao mesmo Senhor.",
+    "keyword": "Acolher",
+    "keywordGloss": "Receber o outro como Deus já o recebeu, sem fazer dele um adversário.",
+    "focusQuestion": "Em que ponto você tem julgado alguém por uma escolha que essa pessoa faz diante do Senhor?",
+    "reflectionPrompts": [
+      "Acolher sem disputa",
+      "O Senhor sustenta o servo",
+      "Do Senhor, na vida e na morte"
+    ],
+    "facts": [
+      {
+        "text": "Paulo manda receber quem é fraco na fé, sem criar disputas.",
+        "evidenceRef": "Romanos 14:1",
+        "evidenceSpan": "Recebam aquele que é fraco na fé, mas não para suscitar disputas e opiniões"
+      },
+      {
+        "text": "O débil na fé come apenas legumes.",
+        "evidenceRef": "Romanos 14:2",
+        "evidenceSpan": "o débil na fé come apenas legumes"
+      },
+      {
+        "text": "Deus já acolheu a pessoa que o outro quer julgar ou menosprezar.",
+        "evidenceRef": "Romanos 14:3",
+        "evidenceSpan": "porque Deus o acolheu"
+      },
+      {
+        "text": "Paulo pergunta quem somos para julgar o servo de outra pessoa.",
+        "evidenceRef": "Romanos 14:4",
+        "evidenceSpan": "Quem é você para julgar o servo alheio"
+      },
+      {
+        "text": "Na vida e na morte, somos do Senhor.",
+        "evidenceRef": "Romanos 14:8",
+        "evidenceSpan": "tanto na vida como na morte, somos do Senhor"
+      },
+      {
+        "text": "Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.",
+        "evidenceRef": "Romanos 14:9",
+        "evidenceSpan": "Cristo morreu e ressuscitou para ser Senhor tanto dos mortos quanto dos vivos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "acolheu",
+        "gloss": "Deus recebeu a pessoa como sua; por isso ninguém tem o direito de rejeitá-la."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Aquele a quem cada servo responde e que o sustenta de pé."
+      },
+      {
+        "term": "ressuscitou",
+        "gloss": "Cristo venceu a morte e, por isso, é Senhor dos mortos e dos vivos."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acolher o fraco sem disputas",
+        "evidenceRef": "Romanos 14:1"
+      },
+      {
+        "label": "Nem desprezar nem julgar o outro",
+        "evidenceRef": "Romanos 14:3"
+      },
+      {
+        "label": "Deus já acolheu esse irmão",
+        "evidenceRef": "Romanos 14:3"
+      },
+      {
+        "label": "O Senhor sustenta o servo de pé",
+        "evidenceRef": "Romanos 14:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Quem come e quem não come não devem se desprezar, porque Deus acolheu a pessoa.",
+        "marker": "porque",
+        "evidenceRef": "Romanos 14:3"
+      },
+      {
+        "kind": "causa",
+        "text": "O servo permanece de pé porque o Senhor é poderoso para sustentá-lo.",
+        "marker": "pois",
+        "evidenceRef": "Romanos 14:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Quem come age para o Senhor porque dá graças a Deus.",
+        "marker": "pois",
+        "evidenceRef": "Romanos 14:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 7:1",
+        "bridge": "Julgar o outro não nos cabe"
+      },
+      {
+        "ref": "1 Coríntios 8:9–13",
+        "bridge": "Cuidar de quem é frágil"
+      },
+      {
+        "ref": "Colossenses 2:16",
+        "bridge": "Comida e dias não justificam julgar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Acolher o fraco na fé é convencê-lo, em debates, a pensar como nós.",
+        "why": "Romanos 14:1 manda receber o fraco, mas não para suscitar disputas e opiniões."
+      },
+      {
+        "text": "Cada cristão é dono de si e responde só à própria consciência.",
+        "why": "Romanos 14:7–8 diz que nenhum de nós vive para si mesmo: vivemos e morremos para o Senhor."
+      },
+      {
+        "text": "Quem segue o costume mais rigoroso pertence mais ao Senhor.",
+        "why": "Em Romanos 14:6, quem distingue e quem não distingue agem, os dois, para o Senhor."
+      }
+    ],
+    "centralInsight": "Não menospreze nem julgue: vivemos e morremos para o Senhor.",
+    "anchorQuestion": "Segundo Romanos 14:3, por que quem come e quem não come não devem se julgar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Romanos 14:2, quem é débil na fé come apenas legumes.",
+      "verseRef": "Romanos 14:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "o débil na fé come apenas legumes",
+      "feedbackCorrect": "Paulo diz que o débil na fé come apenas legumes, enquanto outro crê poder comer de tudo.",
+      "feedbackWrong": {
+        "false": "Releia Romanos 14:2: é o débil na fé que come apenas legumes."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Observar o que Paulo diz sobre o costume de quem é débil na fé.",
+      "evidence": ["Romanos 14:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Romanos 14:4, toque a pessoa a quem Paulo pergunta com que direito julga.",
+      "verseRef": "Romanos 14:4",
+      "options": [
+        { "id": "a", "text": "o servo" },
+        { "id": "b", "text": "você" },
+        { "id": "c", "text": "o Senhor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Quem é você para julgar o servo alheio",
+      "feedbackCorrect": "Paulo fala direto com quem julga: quem é você para julgar o servo de outro?",
+      "feedbackWrong": {
+        "a": "O servo é quem está sendo julgado, não quem julga.",
+        "c": "O Senhor é o dono do servo; a pergunta é feita a quem julga."
+      },
+      "hint": "Procure a palavra que fala com o leitor.",
+      "learningObjective": "Identificar a quem Paulo dirige a pergunta sobre julgar.",
+      "evidence": ["Romanos 14:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Romanos 14:1, como tratar quem é fraco na fé?",
+      "verseRef": "Romanos 14:1",
+      "options": [
+        { "id": "a", "text": "Corrigir cada opinião dele em público" },
+        { "id": "b", "text": "Manter distância até que ele mude" },
+        { "id": "c", "text": "Acolhê-lo, sem transformar o encontro em briga" },
+        { "id": "d", "text": "Deixar que ele resolva tudo sozinho" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Recebam aquele que é fraco na fé, mas não para suscitar disputas e opiniões",
+      "feedbackCorrect": "Paulo manda receber o fraco na fé, sem fazer do encontro um campo de briga.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: receber não é para suscitar disputas e opiniões.",
+        "b": "Paulo manda receber essa pessoa, não se afastar dela.",
+        "d": "Receber é abrir espaço ao outro, não deixá-lo sozinho."
+      },
+      "hint": "Veja o verbo que abre o versículo.",
+      "learningObjective": "Observar como Paulo manda tratar quem é fraco na fé.",
+      "evidence": ["Romanos 14:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Romanos 14:3 na ordem do texto.",
+      "verseRef": "Romanos 14:3",
+      "options": [
+        { "id": "a", "text": "Aquele que come não menospreze o que não come" },
+        { "id": "b", "text": "e o que não come não julgue o que come" },
+        { "id": "c", "text": "porque Deus o acolheu" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "porque Deus o acolheu",
+      "feedbackCorrect": "É a sequência do versículo: não menosprezar, não julgar e, por fim, o motivo.",
+      "feedbackWrong": {
+        "default": "O motivo vem no fim: Deus o acolheu. Antes vêm as duas ordens, menosprezar e julgar."
+      },
+      "hint": "O versículo termina com o motivo.",
+      "learningObjective": "Reconhecer a sequência de Romanos 14:3.",
+      "evidence": ["Romanos 14:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Romanos 14:1, o que não se deve suscitar ao receber o fraco na fé?",
+      "verseRef": "Romanos 14:1",
+      "options": [
+        { "id": "a", "text": "dúvidas" },
+        { "id": "b", "text": "disputas" },
+        { "id": "c", "text": "queixas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para suscitar disputas e opiniões",
+      "feedbackCorrect": "Paulo pede acolhimento sem disputas: receber o outro não é ocasião para brigar.",
+      "feedbackWrong": {
+        "a": "O texto fala de disputas e opiniões, não de dúvidas.",
+        "c": "Paulo não fala de queixas, e sim de disputas e opiniões."
+      },
+      "hint": "Pense no que Paulo não quer que o encontro vire.",
+      "learningObjective": "Lembrar a palavra que descreve o que o acolhimento evita.",
+      "evidence": ["Romanos 14:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Romanos 14:3 comunica que se liga a este contexto?",
+      "verseRef": "Romanos 14:3",
+      "passageA": {
+        "ref": "Romanos 14:3",
+        "text": "porque Deus o acolheu"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem é julgado ou menosprezado por uma escolha já foi acolhido por Deus."
+      },
+      "options": [
+        { "id": "a", "text": "Quem julga decide quem é aceito" },
+        { "id": "b", "text": "Só quem se abstém é acolhido" },
+        { "id": "c", "text": "Deus já acolheu o julgado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "porque Deus o acolheu",
+      "feedbackCorrect": "Quem Deus acolheu não pode ser rejeitado por nós; é por isso que não devemos julgar.",
+      "feedbackWrong": {
+        "a": "Quem aceita a pessoa é Deus, não quem a julga.",
+        "b": "O texto não faz da abstinência a condição para ser acolhido."
+      },
+      "hint": "Veja quem tomou a iniciativa de acolher.",
+      "learningObjective": "Ligar Romanos 14:3 à ideia de que Deus já acolheu a pessoa julgada.",
+      "evidence": ["Romanos 14:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Romanos 14:4, o servo permanece de pé porque o Senhor o sustenta, e não porque os outros o aprovam.",
+      "verseRef": "Romanos 14:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois o Senhor é poderoso para sustentá-lo",
+      "feedbackCorrect": "O \"pois\" dá o motivo: quem sustenta o servo é o Senhor, não a aprovação de outros.",
+      "feedbackWrong": {
+        "false": "Releia o fim de Romanos 14:4: o Senhor é poderoso para sustentá-lo."
+      },
+      "hint": "Repare no motivo dado no fim do versículo.",
+      "learningObjective": "Compreender de onde vem a firmeza do servo.",
+      "evidence": ["Romanos 14:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Romanos 14:3, toque a palavra que dá o motivo para não julgar.",
+      "verseRef": "Romanos 14:3",
+      "options": [
+        { "id": "a", "text": "menospreze" },
+        { "id": "b", "text": "porque" },
+        { "id": "c", "text": "julgue" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "porque Deus o acolheu",
+      "feedbackCorrect": "\"Porque\" abre a razão: não julgue, pois Deus já acolheu essa pessoa.",
+      "feedbackWrong": {
+        "a": "\"Menospreze\" é a atitude que Paulo proíbe, não o motivo.",
+        "c": "\"Julgue\" também é a atitude proibida; o motivo vem depois."
+      },
+      "hint": "Procure a palavra que introduz a razão.",
+      "learningObjective": "Reconhecer a palavra que liga a ordem ao seu motivo.",
+      "evidence": ["Romanos 14:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Romanos 14:5–6 liga dias e alimentos ao Senhor?",
+      "verseRef": "Romanos 14:5–6",
+      "options": [
+        { "id": "a", "text": "Quem distingue ou não distingue pode agir para o Senhor" },
+        { "id": "b", "text": "Só quem guarda o costume mais rigoroso honra o Senhor" },
+        { "id": "c", "text": "Dias e alimentos não têm relação alguma com Deus" },
+        { "id": "d", "text": "O Senhor aceita só quem pensa igual ao grupo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que come, para o Senhor come, pois dá graças a Deus",
+      "feedbackCorrect": "Quem distingue e quem não distingue agem para o Senhor, e os dois dão graças a Deus.",
+      "feedbackWrong": {
+        "b": "O texto põe os dois lados diante do Senhor, sem eleger o mais rigoroso.",
+        "c": "Paulo liga justamente essas escolhas ao Senhor: \"para o Senhor o faz\".",
+        "d": "Paulo pede que cada um tenha opinião bem definida, não que todos pensem igual."
+      },
+      "hint": "Veja para quem cada pessoa age, nos dois lados.",
+      "learningObjective": "Compreender a relação entre escolhas diferentes e o Senhor.",
+      "evidence": ["Romanos 14:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como Paulo avança em Romanos 14:3–4?",
+      "verseRef": "Romanos 14:3–4",
+      "options": [
+        { "id": "a", "text": "Nem desprezar nem julgar o outro" },
+        { "id": "b", "text": "Deus já acolheu esse irmão" },
+        { "id": "c", "text": "O Senhor sustenta o servo de pé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "porque Deus o acolheu",
+      "feedbackCorrect": "Primeiro a ordem de não julgar, depois o motivo e, por fim, quem sustenta o servo.",
+      "feedbackWrong": {
+        "default": "O motivo vem logo após a ordem; quem sustenta o servo aparece só no versículo 4."
+      },
+      "hint": "A frase sobre o servo está no versículo 4.",
+      "learningObjective": "Compreender o movimento do argumento de Romanos 14:3–4.",
+      "evidence": ["Romanos 14:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Romanos 14:6, que palavra explica por que quem come age para o Senhor?",
+      "verseRef": "Romanos 14:6",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "pois" },
+        { "id": "c", "text": "quando" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pois dá graças a Deus",
+      "feedbackCorrect": "\"Pois\" liga o gesto ao motivo: quem come age para o Senhor porque dá graças a Deus.",
+      "feedbackWrong": {
+        "a": "\"Mas\" marcaria oposição, e aqui há uma razão.",
+        "c": "\"Quando\" marca tempo; o texto dá o motivo, não o momento."
+      },
+      "hint": "A frase mostra a razão de agir para o Senhor.",
+      "learningObjective": "Lembrar a palavra que carrega a relação de causa.",
+      "evidence": ["Romanos 14:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Romanos 14:4 a Mateus 7:1?",
+      "verseRef": "Romanos 14:4",
+      "passageA": {
+        "ref": "Romanos 14:4",
+        "text": "Quem é você para julgar o servo alheio"
+      },
+      "passageB": {
+        "ref": "Mateus 7:1"
+      },
+      "options": [
+        { "id": "a", "text": "Julgar vale só entre líderes" },
+        { "id": "b", "text": "Julgar cabe a quem é firme" },
+        { "id": "c", "text": "Julgar o outro não nos cabe" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Quem é você para julgar o servo alheio",
+      "evidence": ["Romanos 14:4", "Mateus 7:1"],
+      "feedbackCorrect": "Nos dois textos, julgar o outro é tomar um lugar que não é nosso.",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos limita o aviso a líderes; ele vale para todos.",
+        "b": "Ser firme na fé não dá o direito de julgar o servo de outro."
+      },
+      "hint": "Compare o que os dois textos dizem sobre julgar.",
+      "learningObjective": "Relacionar o aviso de Paulo ao aviso de Jesus sobre julgar."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Romanos 14:9, o senhorio de Cristo termina com a morte de cada pessoa.",
+      "verseRef": "Romanos 14:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Senhor tanto dos mortos quanto dos vivos",
+      "feedbackCorrect": "Cristo é Senhor dos mortos e dos vivos: a morte não encerra o senhorio dele.",
+      "feedbackWrong": {
+        "true": "Romanos 14:9 diz que Cristo é Senhor tanto dos mortos quanto dos vivos."
+      },
+      "hint": "Veja a quem Cristo é Senhor, no fim do versículo.",
+      "learningObjective": "Interpretar o alcance do senhorio de Cristo.",
+      "evidence": ["Romanos 14:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Romanos 14:8, toque o trecho que mostra a quem pertencemos.",
+      "verseRef": "Romanos 14:8",
+      "options": [
+        { "id": "a", "text": "se vivemos" },
+        { "id": "b", "text": "somos do Senhor" },
+        { "id": "c", "text": "se morremos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Assim, tanto na vida como na morte, somos do Senhor",
+      "feedbackCorrect": "O versículo conclui que, na vida e na morte, somos do Senhor.",
+      "feedbackWrong": {
+        "a": "\"Se vivemos\" só abre uma das condições; a conclusão vem no fim.",
+        "c": "\"Se morremos\" é a outra condição; quem somos aparece na conclusão."
+      },
+      "hint": "Procure a conclusão que começa com \"Assim\".",
+      "learningObjective": "Sustentar com o texto que pertencemos ao Senhor.",
+      "evidence": ["Romanos 14:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Romanos 14:8–9 sustenta sobre quem crê?",
+      "verseRef": "Romanos 14:8–9",
+      "options": [
+        { "id": "a", "text": "Cada cristão é dono de si e responde só à própria consciência" },
+        { "id": "b", "text": "Quem segue o costume mais rigoroso pertence mais ao Senhor" },
+        { "id": "c", "text": "Na vida e na morte, pertencemos a Cristo, Senhor dos vivos e dos mortos" },
+        { "id": "d", "text": "Acolher o fraco é convencê-lo em debates a pensar como nós" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Assim, tanto na vida como na morte, somos do Senhor",
+      "feedbackCorrect": "Cristo morreu e ressuscitou para ser Senhor: por isso somos dele na vida e na morte.",
+      "feedbackWrong": {
+        "a": "Nenhum de nós vive para si mesmo (14:7): vivemos e morremos para o Senhor.",
+        "b": "O texto não compara costumes: na vida e na morte, todos são do Senhor.",
+        "d": "Acolher é receber sem disputas; Romanos 14:1 recusa o debate para vencer o outro."
+      },
+      "hint": "Compare cada opção com o que Paulo diz sobre vida e morte.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre pertencer ao Senhor.",
+      "evidence": ["Romanos 14:8–9", "Romanos 14:7", "Romanos 14:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o argumento de Romanos 14:8–9?",
+      "verseRef": "Romanos 14:8–9",
+      "options": [
+        { "id": "a", "text": "Vivemos e morremos para o Senhor" },
+        { "id": "b", "text": "Na vida e na morte, somos dele" },
+        { "id": "c", "text": "Cristo morreu e ressuscitou para ser Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "foi exatamente para esse propósito que Cristo morreu e ressuscitou",
+      "evidence": ["Romanos 14:8", "Romanos 14:9"],
+      "feedbackCorrect": "Paulo afirma que somos do Senhor e dá a base: Cristo morreu e ressuscitou para ser Senhor.",
+      "feedbackWrong": {
+        "default": "Primeiro vem o que vivemos para o Senhor; a base, a obra de Cristo, vem no versículo 9."
+      },
+      "hint": "A obra de Cristo é a base e aparece no último versículo.",
+      "learningObjective": "Seguir a lógica que liga pertencer ao Senhor à obra de Cristo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Romanos 14:9, que verbo mostra o que Cristo fez depois de morrer, para ser Senhor?",
+      "verseRef": "Romanos 14:9",
+      "options": [
+        { "id": "a", "text": "reinou" },
+        { "id": "b", "text": "voltou" },
+        { "id": "c", "text": "ressuscitou" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Cristo morreu e ressuscitou para ser Senhor",
+      "feedbackCorrect": "Cristo morreu e ressuscitou: por isso é Senhor tanto dos mortos quanto dos vivos.",
+      "feedbackWrong": {
+        "a": "O texto diz que ele ressuscitou para ser Senhor, não que apenas reinou.",
+        "b": "O verbo do texto é mais forte: Cristo venceu a morte, ele ressuscitou."
+      },
+      "hint": "É o verbo que vem logo depois de \"morreu\".",
+      "learningObjective": "Lembrar o termo que sustenta o senhorio de Cristo.",
+      "evidence": ["Romanos 14:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Romanos 14:1 a 1 Coríntios 8:9–13?",
+      "verseRef": "Romanos 14:1",
+      "passageA": {
+        "ref": "Romanos 14:1"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 8:9–13"
+      },
+      "options": [
+        { "id": "a", "text": "Cuidar de quem é frágil" },
+        { "id": "b", "text": "Mostrar quem tem mais conhecimento" },
+        { "id": "c", "text": "Impor o costume do mais forte" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Recebam aquele que é fraco na fé",
+      "evidence": ["Romanos 14:1", "1 Coríntios 8:9–13"],
+      "feedbackCorrect": "Nos dois textos, quem é firme na fé cuida de quem é frágil, em vez de impor o seu jeito.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos faz do conhecimento motivo de orgulho; pedem cuidado.",
+        "c": "Os dois textos pedem o contrário: acolher e cuidar do mais frágil."
+      },
+      "hint": "Veja como os dois textos tratam quem é mais frágil.",
+      "learningObjective": "Ligar o acolhimento de Romanos 14 ao cuidado pedido em 1 Coríntios 8."
+    }
+  ]
+}

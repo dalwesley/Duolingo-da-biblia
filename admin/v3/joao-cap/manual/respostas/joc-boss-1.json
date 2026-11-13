@@ -1,0 +1,632 @@
+{
+  "study": {
+    "passageRef": "João 3:16–21",
+    "passages": [
+      { "ref": "João 3:16–21" },
+      { "ref": "João 1:36–41" },
+      { "ref": "João 2:3–8" },
+      { "ref": "João 4:9–14" },
+      { "ref": "João 5:3–8" }
+    ],
+    "context": "Esta travessia revisa João 1 a 5. Discípulos encontram Jesus e chamam o irmão. Em Caná o vinho acaba. Jesus fala do amor de Deus, oferece água à samaritana e, em Betesda, dirige a palavra a um enfermo.",
+    "keyword": "vida eterna",
+    "keywordGloss": "O dom prometido a quem crê no Filho e a quem bebe da água que Jesus dá.",
+    "focusQuestion": "Quando a sede volta ou a espera parece longa demais, a quem você tem recorrido?",
+    "reflectionPrompts": [
+      "O convite para ver",
+      "O amor que entrega o Filho",
+      "A palavra que levanta"
+    ],
+    "facts": [
+      {
+        "text": "André encontra Simão e lhe diz que já encontraram o Messias.",
+        "evidenceRef": "João 1:41",
+        "evidenceSpan": "Já encontramos o Messias"
+      },
+      {
+        "text": "Jesus manda encher as talhas de água, e elas ficam completamente cheias.",
+        "evidenceRef": "João 2:7",
+        "evidenceSpan": "Encham essas talhas de água"
+      },
+      {
+        "text": "Deus amou o mundo e deu o seu Filho unigênito.",
+        "evidenceRef": "João 3:16",
+        "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito"
+      },
+      {
+        "text": "Deus enviou o Filho para que o mundo fosse salvo, não para condená-lo.",
+        "evidenceRef": "João 3:17",
+        "evidenceSpan": "não para que condenasse o mundo, mas para que o mundo fosse salvo"
+      },
+      {
+        "text": "Quem bebe da água que Jesus dá nunca mais terá sede.",
+        "evidenceRef": "João 4:14",
+        "evidenceSpan": "nunca mais terá sede"
+      },
+      {
+        "text": "Jesus manda o enfermo levantar-se, tomar a cama e andar.",
+        "evidenceRef": "João 5:8",
+        "evidenceSpan": "Levanta-te, toma a tua cama e anda"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Messias",
+        "gloss": "O título que André anuncia a Simão: o Cristo, aquele que eles encontraram."
+      },
+      {
+        "term": "água viva",
+        "gloss": "A água que Jesus oferece, diferente da água do poço, que mata a sede."
+      },
+      {
+        "term": "vida eterna",
+        "gloss": "A vida que Deus dá a quem crê no Filho e a quem bebe da água de Jesus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Discípulos seguem Jesus e anunciam o Messias",
+        "evidenceRef": "João 1:37–41"
+      },
+      {
+        "label": "Em Caná as talhas são cheias de água",
+        "evidenceRef": "João 2:6–7"
+      },
+      {
+        "label": "Deus entrega o Filho para salvar o mundo",
+        "evidenceRef": "João 3:16–17"
+      },
+      {
+        "label": "Jesus dá uma ordem ao enfermo",
+        "evidenceRef": "João 5:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Deus deu o Filho para que quem crê não pereça, mas tenha a vida eterna.",
+        "marker": "para",
+        "evidenceRef": "João 3:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "A água do poço deixa a sede voltar; a água que Jesus dá não deixa sede outra vez.",
+        "marker": "Mas",
+        "evidenceRef": "João 4:14"
+      },
+      {
+        "kind": "causa",
+        "text": "Os homens amaram as trevas porque as suas obras eram más.",
+        "marker": "porque",
+        "evidenceRef": "João 3:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 João 4:9",
+        "bridge": "Deus enviou o Filho unigênito"
+      },
+      {
+        "ref": "Romanos 5:8",
+        "bridge": "Amor de Deus em Cristo"
+      },
+      {
+        "ref": "João 7:37–38",
+        "bridge": "Água viva no interior"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus manda o enfermo esperar alguém que o coloque no tanque.",
+        "why": "Quem descreve essa espera é o enfermo. Jesus responde com outra ordem: levantar, tomar a cama e andar (5:8)."
+      },
+      {
+        "text": "Jesus só age depois que o anjo agita a água.",
+        "why": "A agitação aparece na espera da multidão (5:4). Em 5:8 Jesus não espera o anjo; ele dá uma ordem ao homem."
+      },
+      {
+        "text": "Jesus recusa ajudar o homem, porque ele não tem quem o leve.",
+        "why": "Jesus não recusa. Diante de quem diz que não tem ninguém, ele manda o homem levantar e andar (5:8)."
+      }
+    ],
+    "centralInsight": "Em Jesus, Deus vem morar entre nós",
+    "anchorQuestion": "Para que Deus enviou o Filho ao mundo, segundo João 3:17?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 1:41, André avisou Simão que eles ainda procuravam o Messias.",
+      "verseRef": "João 1:41",
+      "correctOptionId": "false",
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "André não fala de uma busca aberta. Ele anuncia que já encontraram o Messias.",
+      "feedbackWrong": {
+        "true": "A fala está no passado: já encontraram o Messias, não seguem procurando."
+      },
+      "hint": "Leia a frase que André diz a Simão.",
+      "learningObjective": "Observar o anúncio de André ao encontrar o irmão.",
+      "evidence": ["João 1:41"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 1:36, toque o título que João dá a Jesus.",
+      "verseRef": "João 1:36",
+      "options": [
+        { "id": "a", "text": "Jesus passar" },
+        { "id": "b", "text": "Cordeiro de Deus" },
+        { "id": "c", "text": "Ao ver" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Eis o Cordeiro de Deus",
+      "feedbackCorrect": "Ao ver Jesus passar, João exclama o título Cordeiro de Deus.",
+      "feedbackWrong": {
+        "a": "Isso é o que João vê, não o título que ele exclama.",
+        "c": "A abertura só marca o momento. O título vem na exclamação."
+      },
+      "hint": "Ouça a exclamação no fim do versículo.",
+      "learningObjective": "Identificar o título que João proclama a respeito de Jesus.",
+      "evidence": ["João 1:36"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 2:1, onde aconteceu o casamento?",
+      "verseRef": "João 2:1",
+      "options": [
+        { "id": "a", "text": "Em Caná da Galiléia" },
+        { "id": "b", "text": "Em Jerusalém, na festa" },
+        { "id": "c", "text": "Junto ao tanque de Betesda" },
+        { "id": "d", "text": "No poço deixado por Jacó" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "houve um casamento em Caná da Galiléia",
+      "feedbackCorrect": "O casamento foi em Caná da Galiléia, e a mãe de Jesus estava ali.",
+      "feedbackWrong": {
+        "b": "Jerusalém e a festa aparecem em João 5, não neste casamento.",
+        "c": "Betesda é o tanque de João 5, não o lugar do casamento.",
+        "d": "O poço de Jacó aparece em João 4, na conversa com a samaritana."
+      },
+      "hint": "Leia o lugar nomeado no início do versículo.",
+      "learningObjective": "Localizar o casamento no relato de Caná.",
+      "evidence": ["João 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 5:8 na ordem do texto.",
+      "verseRef": "João 5:8",
+      "options": [
+        { "id": "a", "text": "Jesus lhe disse" },
+        { "id": "b", "text": "Levanta-te" },
+        { "id": "c", "text": "toma a tua cama e anda" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "Jesus fala, manda levantar e completa a ordem com a cama e o andar.",
+      "feedbackWrong": {
+        "default": "Comece por quem fala. Depois vem levantar, e então a cama e o andar."
+      },
+      "hint": "O versículo começa com quem fala.",
+      "learningObjective": "Reconhecer a sequência da ordem de Jesus ao enfermo.",
+      "evidence": ["João 5:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 2:3, o que tinha acabado na festa?",
+      "verseRef": "João 2:3",
+      "options": [
+        { "id": "a", "text": "pão" },
+        { "id": "b", "text": "vinho" },
+        { "id": "c", "text": "azeite" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tendo acabado o vinho",
+      "feedbackCorrect": "A mãe avisa Jesus que o vinho acabou. Esse é o problema da festa.",
+      "feedbackWrong": {
+        "a": "O versículo não fala de pão. O que acabou é outra coisa.",
+        "c": "Não é azeite. A mãe nomeia a bebida que faltou na festa."
+      },
+      "hint": "A mãe diz a Jesus o que eles não têm mais.",
+      "learningObjective": "Lembrar o que faltou no casamento em Caná.",
+      "evidence": ["João 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 4:14 comunica que se liga a este contexto?",
+      "verseRef": "João 4:14",
+      "passageA": { "ref": "João 4:14" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus oferece uma água que acaba com a sede e se torna fonte em quem bebe."
+      },
+      "options": [
+        { "id": "a", "text": "Vinho servido na festa" },
+        { "id": "b", "text": "Cura junto ao tanque" },
+        { "id": "c", "text": "Água que mata a sede" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "nunca mais terá sede",
+      "feedbackCorrect": "A água que Jesus dá acaba com a sede e se torna fonte em quem bebe.",
+      "feedbackWrong": {
+        "a": "O vinho é o problema de Caná, não o dom descrito neste versículo.",
+        "b": "O tanque de Betesda é outra cena. Aqui Jesus fala da água que ele dá."
+      },
+      "hint": "Compare o versículo com o fato ao lado.",
+      "learningObjective": "Ligar João 4:14 ao dom da água que Jesus oferece.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 5:2, toque o nome hebraico do tanque.",
+      "verseRef": "João 5:2",
+      "options": [
+        { "id": "a", "text": "Betesda" },
+        { "id": "b", "text": "Jerusalém" },
+        { "id": "c", "text": "Ovelhas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamado em hebraico Betesda",
+      "feedbackCorrect": "O tanque, perto da Porta das Ovelhas, chama-se Betesda em hebraico.",
+      "feedbackWrong": {
+        "b": "Jerusalém é a cidade. O nome hebraico do tanque vem depois.",
+        "c": "Ovelhas é o nome da porta, não do tanque."
+      },
+      "hint": "Procure a palavra depois de hebraico.",
+      "learningObjective": "Identificar o nome do tanque em Jerusalém.",
+      "evidence": ["João 5:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 3:16 na ordem do texto.",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "Deus amou o mundo de tal maneira" },
+        { "id": "b", "text": "deu o seu Filho unigênito" },
+        { "id": "c", "text": "tenha a vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "deu o seu Filho unigênito",
+      "feedbackCorrect": "Deus ama, dá o Filho e, no fim, oferece a vida eterna a quem crê.",
+      "feedbackWrong": {
+        "default": "Comece pelo amor de Deus. O dom do Filho vem antes da vida eterna."
+      },
+      "hint": "O versículo abre com a atitude de Deus.",
+      "learningObjective": "Reconhecer a sequência de João 3:16.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 3:17, Deus enviou o Filho ao mundo para que o mundo fosse salvo por intermédio dele.",
+      "verseRef": "João 3:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que o mundo fosse salvo por intermédio dele",
+      "feedbackCorrect": "O propósito do envio está declarado: o mundo salvo por meio do Filho.",
+      "feedbackWrong": {
+        "false": "O versículo nega a condenação como fim e afirma a salvação do mundo."
+      },
+      "hint": "Veja o propósito na segunda metade do versículo.",
+      "learningObjective": "Compreender o propósito do envio do Filho ao mundo.",
+      "evidence": ["João 3:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 4:14, toque a expressão que marca o contraste com a sede que volta.",
+      "verseRef": "João 4:14",
+      "options": [
+        { "id": "a", "text": "nunca mais" },
+        { "id": "b", "text": "pelo contrário" },
+        { "id": "c", "text": "vida eterna" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pelo contrário",
+      "feedbackCorrect": "Pelo contrário marca a virada: a água de Jesus não deixa a sede voltar.",
+      "feedbackWrong": {
+        "a": "Nunca mais diz o resultado, não é a expressão que marca o contraste.",
+        "c": "Vida eterna é o horizonte da fonte, não o marcador do contraste."
+      },
+      "hint": "A expressão fica no meio, entre a sede e a fonte.",
+      "learningObjective": "Reconhecer o marcador do contraste entre as duas águas.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação a fala da mãe em João 2:5 tem com Jesus?",
+      "verseRef": "João 2:5",
+      "options": [
+        { "id": "a", "text": "Ela orienta os serventes a obedecer a Jesus" },
+        { "id": "b", "text": "Ela pede vinho novo aos serventes" },
+        { "id": "c", "text": "Ela encerra a festa naquele momento" },
+        { "id": "d", "text": "Ela manda Jesus embora de Caná" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Façam tudo o que ele lhes disser",
+      "feedbackCorrect": "A mãe aponta os serventes para a palavra de Jesus: obedeçam ao que ele disser.",
+      "feedbackWrong": {
+        "b": "Ela não pede vinho aos serventes. Ela os manda obedecer a Jesus.",
+        "c": "Nada no versículo encerra a festa. A ordem é obedecer.",
+        "d": "Ela não manda Jesus embora. Ela conduz os serventes à obediência."
+      },
+      "hint": "Leia a ordem que a mãe dá aos serventes.",
+      "learningObjective": "Relacionar a fala da mãe com a obediência à palavra de Jesus.",
+      "evidence": ["João 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a ordem destes movimentos de João 1 a João 3?",
+      "verseRef": "João 1:41",
+      "options": [
+        { "id": "a", "text": "Discípulos seguem Jesus e anunciam o Messias" },
+        { "id": "b", "text": "Em Caná as talhas são cheias de água" },
+        { "id": "c", "text": "Deus entrega o Filho para salvar o mundo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "Primeiro o anúncio do Messias, depois as talhas em Caná, então o Filho dado ao mundo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos capítulos: discípulos, Caná, o dom do Filho."
+      },
+      "hint": "Comece pelo encontro dos primeiros discípulos.",
+      "learningObjective": "Compreender a sequência dos movimentos de João 1 a João 3.",
+      "evidence": ["João 1:41", "João 2:7", "João 3:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 3:16, que verbo diz a atitude de Deus diante do mundo?",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "criou" },
+        { "id": "b", "text": "amou" },
+        { "id": "c", "text": "julgou" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Deus amou o mundo",
+      "feedbackCorrect": "O verbo amou abre o versículo e explica por que Deus deu o Filho.",
+      "feedbackWrong": {
+        "a": "Este versículo não fala da criação do mundo. O verbo nomeia outra atitude.",
+        "c": "O juízo entra nos versículos seguintes. Aqui a atitude de Deus é outra."
+      },
+      "hint": "Olhe o primeiro verbo depois do nome de Deus.",
+      "learningObjective": "Reconhecer o verbo que liga Deus ao mundo em João 3:16.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 3:16 a 1 João 4:9?",
+      "verseRef": "João 3:16",
+      "passageA": { "ref": "João 3:16" },
+      "passageB": { "ref": "1 João 4:9" },
+      "options": [
+        { "id": "a", "text": "Deus enviou o Filho unigênito" },
+        { "id": "b", "text": "O mundo condena o Filho" },
+        { "id": "c", "text": "O amor nasce no homem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deu o seu Filho unigênito",
+      "feedbackCorrect": "Os dois textos afirmam o mesmo dom: Deus enviou o Filho unigênito.",
+      "feedbackWrong": {
+        "b": "João 3:17 diz que o Filho não veio para condenar o mundo.",
+        "c": "A carta mostra o amor partindo de Deus, não do homem."
+      },
+      "hint": "Compare o que cada texto diz sobre o envio.",
+      "learningObjective": "Relacionar o dom do Filho em João 3:16 com 1 João 4:9.",
+      "evidence": ["João 3:16", "1 João 4:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 3:19, toque a palavra que introduz o motivo do amor pelas trevas.",
+      "verseRef": "João 3:19",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "trevas" },
+        { "id": "c", "text": "luz" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque as suas obras eram más",
+      "feedbackCorrect": "Porque introduz a causa: as obras eram más, e eles amaram as trevas.",
+      "feedbackWrong": {
+        "b": "Trevas é o que eles amaram, não a palavra que dá o motivo.",
+        "c": "A luz é o que veio ao mundo, não a causa do amor pelas trevas."
+      },
+      "hint": "Olhe a última oração, junto das obras.",
+      "learningObjective": "Reconhecer a palavra que marca a causa em João 3:19.",
+      "evidence": ["João 3:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a ordem do encontro em Betesda?",
+      "verseRef": "João 5:6–7",
+      "options": [
+        { "id": "a", "text": "Jesus vê o homem enfermo há muito tempo" },
+        { "id": "b", "text": "O homem explica que ninguém o ajuda" },
+        { "id": "c", "text": "Jesus ordena que ele se levante e ande" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "há muito tempo",
+      "feedbackCorrect": "Jesus vê a longa espera, ouve a falta de ajuda e então dá a ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo olhar de Jesus. A ordem de levantar fecha o encontro."
+      },
+      "hint": "Comece pelo que Jesus percebe ao ver o homem.",
+      "learningObjective": "Compreender os passos do encontro junto ao tanque.",
+      "evidence": ["João 5:6", "João 5:7", "João 5:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 5:7–8, Jesus manda o enfermo esperar alguém que o coloque no tanque.",
+      "verseRef": "João 5:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "Jesus não manda esperar o tanque. A resposta dele é levantar, tomar a cama e andar.",
+      "feedbackWrong": {
+        "true": "Quem fala em esperar alguém é o enfermo. Jesus responde com outra ordem."
+      },
+      "hint": "Compare o pedido do enfermo com a frase de Jesus.",
+      "learningObjective": "Rejeitar a leitura de que Jesus apenas confirma a espera no tanque.",
+      "evidence": ["João 5:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 3:16, toque quem pode receber a vida eterna.",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "Filho unigênito" },
+        { "id": "b", "text": "o mundo" },
+        { "id": "c", "text": "todo aquele" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "todo aquele que nele crê",
+      "feedbackCorrect": "A vida eterna alcança todo aquele que crê, não um grupo fechado.",
+      "feedbackWrong": {
+        "a": "O Filho é o dom de Deus, não quem recebe a vida eterna.",
+        "b": "O mundo é amado. Quem recebe a vida é quem crê."
+      },
+      "hint": "A frase de propósito vem depois de unigênito.",
+      "learningObjective": "Sustentar com o texto o alcance de quem recebe a vida eterna.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 5:7–8 sustenta sobre a resposta de Jesus ao enfermo?",
+      "verseRef": "João 5:7–8",
+      "options": [
+        { "id": "a", "text": "Jesus responde com uma ordem, não com o tanque" },
+        { "id": "b", "text": "A cura depende de alguém colocar o homem na água" },
+        { "id": "c", "text": "O anjo precisa agitar a água antes de Jesus agir" },
+        { "id": "d", "text": "Jesus recusa ajudar quem não tem quem o leve" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "Jesus não entra no esquema do tanque. Ele responde com uma ordem direta.",
+      "feedbackWrong": {
+        "b": "Esse é o relato do enfermo, não a resposta de Jesus.",
+        "c": "O anjo está na espera do povo. Jesus não condiciona a ordem a isso.",
+        "d": "Jesus não recusa. Ele dirige uma ordem clara ao homem."
+      },
+      "hint": "Compare a queixa do enfermo com a frase final de Jesus.",
+      "learningObjective": "Escolher a leitura que o diálogo em Betesda sustenta.",
+      "evidence": ["João 5:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o amor de Deus em João 3:16 ao testemunho de 1 João?",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "Deus ama o mundo e dá o Filho" },
+        { "id": "b", "text": "Cristo morre por nós ainda pecadores" },
+        { "id": "c", "text": "O Pai envia o Filho para vivermos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito",
+      "feedbackCorrect": "O amor dá o Filho, a morte mostra esse amor, e o envio traz a vida.",
+      "feedbackWrong": {
+        "default": "Siga João, depois Romanos, depois a carta de João."
+      },
+      "hint": "Comece pelo dom descrito em João 3:16.",
+      "learningObjective": "Encadear o amor de João 3:16 com Romanos 5:8 e 1 João 4:9.",
+      "evidence": ["João 3:16", "Romanos 5:8", "1 João 4:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 1:41, que título André diz que eles já encontraram?",
+      "verseRef": "João 1:41",
+      "options": [
+        { "id": "a", "text": "rei" },
+        { "id": "b", "text": "Messias" },
+        { "id": "c", "text": "profeta" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Já encontramos o Messias",
+      "feedbackCorrect": "André nomeia o Messias, e o texto explica que esse título é o Cristo.",
+      "feedbackWrong": {
+        "a": "André não diz rei. O título que ele anuncia é outro.",
+        "c": "Profeta não é a palavra de André neste versículo."
+      },
+      "hint": "Veja o título antes do parêntese que traduz.",
+      "learningObjective": "Lembrar o título que carrega o anúncio de André.",
+      "evidence": ["João 1:41"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 4:14 a João 7:37–38?",
+      "verseRef": "João 4:14",
+      "passageA": { "ref": "João 4:14" },
+      "passageB": { "ref": "João 7:37–38" },
+      "options": [
+        { "id": "a", "text": "Sede que o poço resolve" },
+        { "id": "b", "text": "Água viva no interior" },
+        { "id": "c", "text": "Festa sem vinho em Caná" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "será nele uma fonte a jorrar para a vida eterna",
+      "feedbackCorrect": "Nos dois textos, a água que Jesus dá brota no interior de quem crê.",
+      "feedbackWrong": {
+        "a": "O poço não resolve a sede para sempre, como Jesus acaba de dizer.",
+        "c": "Caná é outra cena. Aqui a ponte é a água que fica na pessoa."
+      },
+      "hint": "Leia o convite de Jesus no grande dia da festa.",
+      "learningObjective": "Ligar a fonte de João 4:14 aos rios de água viva em João 7.",
+      "evidence": ["João 4:14", "João 7:37–38"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 5:6, toque o trecho que mostra a longa espera do enfermo.",
+      "verseRef": "João 5:6",
+      "options": [
+        { "id": "a", "text": "vendo-o deitado" },
+        { "id": "b", "text": "há muito tempo" },
+        { "id": "c", "text": "ser curado" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sabendo que ele estava assim há muito tempo",
+      "feedbackCorrect": "Jesus já sabe que o homem está assim há muito tempo, antes de perguntar.",
+      "feedbackWrong": {
+        "a": "Isso mostra a posição do homem, não a duração da espera.",
+        "c": "Essa é a pergunta de Jesus, não o tempo da enfermidade."
+      },
+      "hint": "Jesus já conhece a duração daquela condição.",
+      "learningObjective": "Localizar o trecho que mostra Jesus conhecendo a longa espera.",
+      "evidence": ["João 5:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a resposta de Jesus quando o vinho acaba?",
+      "verseRef": "João 2:7",
+      "options": [
+        { "id": "a", "text": "A mãe avisa que o vinho acabou" },
+        { "id": "b", "text": "Jesus diz que a sua hora ainda não chegou" },
+        { "id": "c", "text": "Jesus manda encher as talhas de água" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Encham essas talhas de água",
+      "feedbackCorrect": "A mãe avisa, Jesus fala da hora, e em seguida manda encher as talhas.",
+      "feedbackWrong": {
+        "default": "Comece pelo aviso da mãe. A ordem de encher as talhas vem por último."
+      },
+      "hint": "O aviso da mãe abre a cena da falta.",
+      "learningObjective": "Interpretar a sequência da resposta de Jesus à falta de vinho.",
+      "evidence": ["João 2:3", "João 2:4", "João 2:7"]
+    }
+  ]
+}

@@ -25,6 +25,7 @@ import '../widgets/near_rewards_card.dart';
 import '../widgets/pilgrim_identity_card.dart';
 import '../widgets/pilgrim_profile_sections.dart';
 import '../widgets/profile_plus_cards.dart';
+import '../widgets/room_pilot_cards.dart';
 import '../widgets/profile_privacy.dart';
 import '../widgets/portrait_picker_sheet.dart';
 import '../widgets/profile_hero.dart';
@@ -234,7 +235,8 @@ class _MeScreenState extends State<MeScreen> {
           playDates: progress.playDates,
           streak: progress.streak,
           goal: progress.settings.streakGoal,
-          showHistory: plusOpen,
+          // Histórico da sequência é de todos (11/2026).
+          showHistory: true,
           onPlusHistory: () => Navigator.of(context).push(
             MaterialPageRoute<void>(
               builder: (_) => const PaywallScreen(source: 'profile_trend'),
@@ -250,6 +252,10 @@ class _MeScreenState extends State<MeScreen> {
       ),
       // Quase lá: medalha, selo ou álbum a poucos passos (some se nada).
       pad(const NearRewardsCard()),
+      if (progress.groupSealWeeks.isNotEmpty) ...[
+        const SizedBox(height: AppSpace.md),
+        pad(GroupSealsCard(count: progress.groupSealWeeks.length)),
+      ],
     ];
 
     if (_caravanLoading) {
@@ -294,8 +300,8 @@ class _MeScreenState extends State<MeScreen> {
 
     body.addAll([
       const SizedBox(height: AppSpace.section),
-      // Meu estudo (Peregrino+): acerto, ponto forte, reforço e erros.
-      pad(plusOpen ? const ProfileAccuracyCard() : const ProfilePlusTeaser()),
+      // Meu estudo: evolução, acerto e erros (todos); gesto e reforço (Plus).
+      pad(ProfileAccuracyCard(plusOpen: plusOpen)),
       const SizedBox(height: AppSpace.md),
       // Na Palavra numa linha; favoritos, anotações e compartilhados abrem
       // numa folha.

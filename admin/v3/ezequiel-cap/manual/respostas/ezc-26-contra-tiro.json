@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 26:1–6",
+    "passages": [
+      {
+        "ref": "Ezequiel 26:1–6"
+      }
+    ],
+    "context": "Tiro se alegra com a queda de Jerusalém; o Senhor traz nações como ondas e a torna rocha nua.",
+    "keyword": "Tiro",
+    "keywordGloss": "Cidade marítima que espera lucrar com a ruína de Jerusalém e será despojo.",
+    "focusQuestion": "Quando o rival cai, você calcula lucro ou teme a Deus?",
+    "reflectionPrompts": [
+      "O ai de Tiro",
+      "Nações como ondas",
+      "Rocha nua"
+    ],
+    "facts": [
+      {
+        "text": "Tiro disse que enriquecerá porque Jerusalém está devastada.",
+        "evidenceRef": "Ezequiel 26:2",
+        "evidenceSpan": "eu me tornarei rico, pois ela está devastada"
+      },
+      {
+        "text": "O Senhor está contra Tiro e fará subir muitas nações.",
+        "evidenceRef": "Ezequiel 26:3",
+        "evidenceSpan": "Eis que estou contra você, ó Tiro, e farei subir contra você muitas nações"
+      },
+      {
+        "text": "Tiro se tornará rocha nua.",
+        "evidenceRef": "Ezequiel 26:4",
+        "evidenceSpan": "a tornarei em uma rocha nua"
+      },
+      {
+        "text": "No meio do mar será lugar de enxugar redes.",
+        "evidenceRef": "Ezequiel 26:5",
+        "evidenceSpan": "será um lugar de enxugar as redes"
+      },
+      {
+        "text": "As filhas no campo serão mortas à espada.",
+        "evidenceRef": "Ezequiel 26:6",
+        "evidenceSpan": "suas filhas que estiverem no campo serão mortas à espada"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Tiro",
+        "gloss": "Cidade que zomba de Jerusalém e enfrenta o Senhor."
+      },
+      {
+        "term": "nações",
+        "gloss": "Instrumento do juízo, como ondas do mar."
+      },
+      {
+        "term": "rocha",
+        "gloss": "Estado final de Tiro após a destruição."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Declaração de Tiro",
+        "evidenceRef": "Ezequiel 26:1–2"
+      },
+      {
+        "label": "O Senhor contra Tiro",
+        "evidenceRef": "Ezequiel 26:3"
+      },
+      {
+        "label": "Rocha nua e redes",
+        "evidenceRef": "Ezequiel 26:4–5"
+      },
+      {
+        "label": "Filhas e reconhecimento",
+        "evidenceRef": "Ezequiel 26:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Porque Tiro se alegrou, o Senhor sobe contra ela.",
+        "marker": "Portanto",
+        "evidenceRef": "Ezequiel 26:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ela esperava riqueza; será despojo e rocha nua.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 26:4"
+      },
+      {
+        "kind": "propósito",
+        "text": "O juízo faz saber que ele é o Senhor.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 26:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 23:1–3",
+        "bridge": "Lamento sobre Tiro"
+      },
+      {
+        "ref": "Zacarias 9:3–4",
+        "bridge": "Tiro derrubada"
+      },
+      {
+        "ref": "Amós 1:9–10",
+        "bridge": "Fogo sobre Tiro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Tiro lamenta a queda de Jerusalém.",
+        "why": "Ela celebra o lucro na devastação."
+      },
+      {
+        "text": "O Senhor poupa os muros de Tiro.",
+        "why": "Tornará Tiro em rocha nua."
+      },
+      {
+        "text": "Tiro só enfrenta uma nação fraca.",
+        "why": "Muitas nações sobem como ondas."
+      }
+    ],
+    "centralInsight": "Quem lucra com a ruína de Jerusalém vira rocha nua.",
+    "anchorQuestion": "O que o Senhor fará de Tiro em Ezequiel 26:4?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 26:2, Tiro disse que se tornaria rica porque Jerusalém está devastada.",
+      "verseRef": "Ezequiel 26:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "eu me tornarei rico, pois ela está devastada",
+      "feedbackCorrect": "Tiro calcula lucro na ruína.",
+      "feedbackWrong": {
+        "false": "O versículo liga riqueza à devastação."
+      },
+      "hint": "Veja o fim da declaração.",
+      "learningObjective": "Identificar a alegria de Tiro.",
+      "evidence": [
+        "Ezequiel 26:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 26:3, toque contra quem o Senhor está.",
+      "verseRef": "Ezequiel 26:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "ó Tiro"
+        },
+        {
+          "id": "b",
+          "text": "muitas nações"
+        },
+        {
+          "id": "c",
+          "text": "suas ondas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que estou contra você, ó Tiro",
+      "feedbackCorrect": "O alvo é Tiro.",
+      "feedbackWrong": {
+        "b": "São o instrumento.",
+        "c": "É a comparação."
+      },
+      "hint": "Procure o vocativo.",
+      "learningObjective": "Identificar o alvo.",
+      "evidence": [
+        "Ezequiel 26:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 26:4, em que Tiro será tornada?",
+      "verseRef": "Ezequiel 26:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em uma rocha nua"
+        },
+        {
+          "id": "b",
+          "text": "Em um jardim fértil"
+        },
+        {
+          "id": "c",
+          "text": "Em um trono eterno"
+        },
+        {
+          "id": "d",
+          "text": "Em um templo novo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tornarei em uma rocha nua",
+      "feedbackCorrect": "O fim é a rocha nua.",
+      "feedbackWrong": {
+        "b": "Não há jardim.",
+        "c": "Não há trono.",
+        "d": "Não há templo novo."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Reconhecer o destino.",
+      "evidence": [
+        "Ezequiel 26:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 26:4 na ordem do texto.",
+      "verseRef": "Ezequiel 26:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Destruirei os muros de Tiro"
+        },
+        {
+          "id": "b",
+          "text": "e derrubarei as suas torres"
+        },
+        {
+          "id": "c",
+          "text": "eu varrerei o seu pó e a tornarei em uma rocha nua"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Destruirei os muros de Tiro e derrubarei as suas torres",
+      "feedbackCorrect": "Muros, torres e rocha.",
+      "feedbackWrong": {
+        "default": "Comece pelos muros."
+      },
+      "hint": "Comece pelos muros.",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Ezequiel 26:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 26:4, a tornarei em uma rocha ___.",
+      "verseRef": "Ezequiel 26:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "nua"
+        },
+        {
+          "id": "b",
+          "text": "alta"
+        },
+        {
+          "id": "c",
+          "text": "dourada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tornarei em uma rocha nua",
+      "feedbackCorrect": "O adjetivo é nua.",
+      "feedbackWrong": {
+        "b": "Não é alta.",
+        "c": "Não é dourada."
+      },
+      "hint": "Veja o adjetivo.",
+      "learningObjective": "Lembrar o estado final.",
+      "evidence": [
+        "Ezequiel 26:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 26:2 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 26:2",
+      "passageA": {
+        "ref": "Ezequiel 26:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Tiro celebra a queda de Jerusalém e espera enriquecer; o Senhor a julga."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lucro na ruína"
+        },
+        {
+          "id": "b",
+          "text": "Redes no mar"
+        },
+        {
+          "id": "c",
+          "text": "Filhas no campo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu me tornarei rico, pois ela está devastada",
+      "feedbackCorrect": "O lucro na ruína abre o juízo.",
+      "feedbackWrong": {
+        "b": "As redes são o resultado.",
+        "c": "As filhas aparecem no fim."
+      },
+      "hint": "Compare a declaração.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 26:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 26:3, o Senhor está a favor de Tiro e afasta as nações.",
+      "verseRef": "Ezequiel 26:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eis que estou contra você, ó Tiro, e farei subir contra você muitas nações",
+      "feedbackCorrect": "Ele está contra Tiro.",
+      "feedbackWrong": {
+        "true": "O texto diz que está contra."
+      },
+      "hint": "Veja a posição do Senhor.",
+      "learningObjective": "Perceber o juízo.",
+      "evidence": [
+        "Ezequiel 26:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 26:3, toque a palavra que marca o resultado.",
+      "verseRef": "Ezequiel 26:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto"
+        },
+        {
+          "id": "b",
+          "text": "ondas"
+        },
+        {
+          "id": "c",
+          "text": "nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, assim diz o Senhor Deus",
+      "feedbackCorrect": "\"Portanto\" introduz o juízo.",
+      "feedbackWrong": {
+        "b": "É a comparação.",
+        "c": "É o instrumento."
+      },
+      "hint": "Procure a abertura.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 26:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 26:2 e 26:5 se relacionam?",
+      "verseRef": "Ezequiel 26:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem esperava riqueza vira lugar de redes"
+        },
+        {
+          "id": "b",
+          "text": "Tiro enriquece e permanece intacta"
+        },
+        {
+          "id": "c",
+          "text": "As redes celebram o lucro"
+        },
+        {
+          "id": "d",
+          "text": "Jerusalém reconstrói Tiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu me tornarei rico, pois ela está devastada",
+      "feedbackCorrect": "A riqueza esperada vira redes.",
+      "feedbackWrong": {
+        "b": "Ela será rocha nua.",
+        "c": "As redes marcam desolação.",
+        "d": "Não há reconstrução."
+      },
+      "hint": "Una lucro e destino.",
+      "learningObjective": "Relacionar ganância e juízo.",
+      "evidence": [
+        "Ezequiel 26:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 26?",
+      "verseRef": "Ezequiel 26:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tiro celebra a queda de Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor sobe nações contra ela"
+        },
+        {
+          "id": "c",
+          "text": "Vira rocha nua e despojo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a tornarei em uma rocha nua",
+      "feedbackCorrect": "Celebração → juízo → desolação.",
+      "feedbackWrong": {
+        "default": "Comece na celebração."
+      },
+      "hint": "Comece na celebração.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 26:2",
+        "Ezequiel 26:3",
+        "Ezequiel 26:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 26:5, será um lugar de enxugar as ___.",
+      "verseRef": "Ezequiel 26:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "redes"
+        },
+        {
+          "id": "b",
+          "text": "coroas"
+        },
+        {
+          "id": "c",
+          "text": "velas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será um lugar de enxugar as redes",
+      "feedbackCorrect": "A palavra é redes.",
+      "feedbackWrong": {
+        "b": "Não são coroas.",
+        "c": "Não são velas."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar a imagem.",
+      "evidence": [
+        "Ezequiel 26:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 26:3–4 a Zacarias 9:3–4?",
+      "verseRef": "Ezequiel 26:3",
+      "passageA": {
+        "ref": "Ezequiel 26:3"
+      },
+      "passageB": {
+        "ref": "Zacarias 9:3–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tiro derrubada"
+        },
+        {
+          "id": "b",
+          "text": "Amom zombando"
+        },
+        {
+          "id": "c",
+          "text": "Crocodilo no rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Destruirei os muros de Tiro",
+      "feedbackCorrect": "Nos dois, Tiro é derrubada.",
+      "feedbackWrong": {
+        "b": "Amom está noutra cena.",
+        "c": "O crocodilo é o Egito."
+      },
+      "hint": "Compare o juízo.",
+      "learningObjective": "Relacionar a Zacarias.",
+      "evidence": [
+        "Ezequiel 26:3",
+        "Ezequiel 26:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 26:4–5, Tiro permanece com muros altos e nunca vira despojo.",
+      "verseRef": "Ezequiel 26:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "a tornarei em uma rocha nua",
+      "feedbackCorrect": "Ela vira rocha nua.",
+      "feedbackWrong": {
+        "true": "O texto fala de rocha nua."
+      },
+      "hint": "Veja o fim de 26:4.",
+      "learningObjective": "Rejeitar a leitura que poupa.",
+      "evidence": [
+        "Ezequiel 26:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 26:5, toque o trecho que mostra o uso final no mar.",
+      "verseRef": "Ezequiel 26:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "enxugar as redes"
+        },
+        {
+          "id": "b",
+          "text": "diz o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "para as nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será um lugar de enxugar as redes",
+      "feedbackCorrect": "O uso final é enxugar redes.",
+      "feedbackWrong": {
+        "b": "É a fórmula divina.",
+        "c": "Aponta o despojo."
+      },
+      "hint": "Procure o que o lugar será.",
+      "learningObjective": "Tocar a imagem final.",
+      "evidence": [
+        "Ezequiel 26:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 26 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 26:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lucrar com a ruína de Jerusalém traz juízo do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Tiro é recompensada por sua declaração"
+        },
+        {
+          "id": "c",
+          "text": "As nações protegem os muros de Tiro"
+        },
+        {
+          "id": "d",
+          "text": "A porta dos povos nunca se quebra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu me tornarei rico, pois ela está devastada",
+      "feedbackCorrect": "A ganância na ruína atrai juízo.",
+      "feedbackWrong": {
+        "b": "Há juízo, não recompensa.",
+        "c": "As nações sobem contra ela.",
+        "d": "Tiro mesma diz que a porta está quebrada."
+      },
+      "hint": "Una declaração e juízo.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 26:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do juízo sobre Tiro.",
+      "verseRef": "Ezequiel 26:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tiro celebra o lucro na ruína"
+        },
+        {
+          "id": "b",
+          "text": "Nações sobem como ondas"
+        },
+        {
+          "id": "c",
+          "text": "Tiro vira rocha nua e redes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "será um lugar de enxugar as redes",
+      "feedbackCorrect": "Celebração → ondas → desolação.",
+      "feedbackWrong": {
+        "default": "Comece na celebração."
+      },
+      "hint": "Comece na celebração.",
+      "learningObjective": "Encadear o juízo.",
+      "evidence": [
+        "Ezequiel 26:2",
+        "Ezequiel 26:3",
+        "Ezequiel 26:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 26:3, farei subir contra você muitas ___.",
+      "verseRef": "Ezequiel 26:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "nações"
+        },
+        {
+          "id": "b",
+          "text": "festas"
+        },
+        {
+          "id": "c",
+          "text": "ofertas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farei subir contra você muitas nações",
+      "feedbackCorrect": "O instrumento são nações.",
+      "feedbackWrong": {
+        "b": "Não são festas.",
+        "c": "Não são ofertas."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o instrumento.",
+      "evidence": [
+        "Ezequiel 26:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 26:2 a Isaías 23:1–3?",
+      "verseRef": "Ezequiel 26:2",
+      "passageA": {
+        "ref": "Ezequiel 26:2"
+      },
+      "passageB": {
+        "ref": "Isaías 23:1–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lamento sobre Tiro"
+        },
+        {
+          "id": "b",
+          "text": "Curral de Amom"
+        },
+        {
+          "id": "c",
+          "text": "Dia do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tiro declarou a respeito de Jerusalém",
+      "feedbackCorrect": "Nos dois, Tiro entra no oráculo.",
+      "feedbackWrong": {
+        "b": "Amom está noutra cena.",
+        "c": "O Egito está noutra cena."
+      },
+      "hint": "Compare o foco em Tiro.",
+      "learningObjective": "Ligar a Isaías.",
+      "evidence": [
+        "Ezequiel 26:2"
+      ]
+    }
+  ]
+}

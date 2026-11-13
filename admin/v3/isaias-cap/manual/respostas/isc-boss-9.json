@@ -1,0 +1,908 @@
+{
+  "study": {
+    "passageRef": "Isaías 49:1–6",
+    "passages": [
+      {
+        "ref": "Isaías 49:1–6"
+      }
+    ],
+    "context": "Neste trecho, a palavra do Senhor alcança o povo com juízo e esperança. Observe o que o texto afirma antes de interpretar.",
+    "keyword": "Ouçam-me",
+    "keywordGloss": "Termo do trecho ligado ao sentido da cena.",
+    "focusQuestion": "O que este trecho pede de você diante do Senhor?",
+    "reflectionPrompts": [
+      "Ouvir a palavra",
+      "Confiar no Senhor",
+      "Responder com fé"
+    ],
+    "facts": [
+      {
+        "text": "Em Isaías 49:1, o texto registra: Ouçam-me, terras do mar, e vocês, povos distantes,.",
+        "evidenceRef": "Isaías 49:1",
+        "evidenceSpan": "Ouçam-me, terras do mar, e vocês, povos distantes,"
+      },
+      {
+        "text": "Em Isaías 49:2, o texto registra: E fez da minha boca uma espada afiada;.",
+        "evidenceRef": "Isaías 49:2",
+        "evidenceSpan": "E fez da minha boca uma espada afiada;"
+      },
+      {
+        "text": "Em Isaías 49:3, o texto registra: E ele me disse: Tu és meu servo,.",
+        "evidenceRef": "Isaías 49:3",
+        "evidenceSpan": "E ele me disse: Tu és meu servo,"
+      },
+      {
+        "text": "Em Isaías 49:4, o texto registra: Todavia, eu disse: Debalde trabalhei, e gastei minhas.",
+        "evidenceRef": "Isaías 49:4",
+        "evidenceSpan": "Todavia, eu disse: Debalde trabalhei, e gastei minhas"
+      },
+      {
+        "text": "Em Isaías 49:5, o texto registra: E agora diz o Senhor, que me formou.",
+        "evidenceRef": "Isaías 49:5",
+        "evidenceSpan": "E agora diz o Senhor, que me formou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Ouçam-me",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "terras",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "vocês",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ouçam-me terras vocês povos",
+        "evidenceRef": "Isaías 49:1"
+      },
+      {
+        "label": "boca espada afiada sombra",
+        "evidenceRef": "Isaías 49:2"
+      },
+      {
+        "label": "servo Israel meio quem",
+        "evidenceRef": "Isaías 49:3"
+      },
+      {
+        "label": "Todavia Debalde trabalhei gastei",
+        "evidenceRef": "Isaías 49:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Relação de causa presente em Isaías 49:5.",
+        "marker": "mas",
+        "evidenceRef": "Isaías 49:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Relação de contraste presente em Isaías 49:6.",
+        "marker": "para que",
+        "evidenceRef": "Isaías 49:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Relação de resultado presente em Isaías 49:3.",
+        "marker": null,
+        "evidenceRef": "Isaías 49:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio"
+      },
+      {
+        "ref": "Jeremias 1:19",
+        "bridge": "Eu estou contigo"
+      },
+      {
+        "ref": "Mateus 5:6",
+        "bridge": "Fome de justiça"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não exige mudança concreta de vida.",
+        "why": "A palavra do Senhor chama a ouvir e agir."
+      },
+      {
+        "text": "A mensagem vale só para lideranças, nunca para o povo.",
+        "why": "O endereço do texto alcança o povo e a cidade."
+      },
+      {
+        "text": "O Senhor anuncia sem compromisso com o cumprimento.",
+        "why": "O texto liga a palavra de Deus ao que Ele faz."
+      }
+    ],
+    "centralInsight": "O servo sofre para trazer salvação e misericórdia",
+    "anchorQuestion": "O que Isaías 49:1 afirma de modo claro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 49:1, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Isaías 49:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ouçam-me, terras do mar, e vocês, povos distantes, escutem! O",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Isaías 49:1.",
+      "evidence": [
+        "Isaías 49:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 49:2, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 49:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "boca"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "afiada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a minha boca uma esp",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 49:2.",
+      "evidence": [
+        "Isaías 49:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 49:3, qual leitura o texto sustenta?",
+      "verseRef": "Isaías 49:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "E ele me disse: Tu és meu"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E ele me disse: Tu és meu",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Isaías 49:3.",
+      "evidence": [
+        "Isaías 49:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Isaías 49:4.",
+      "verseRef": "Isaías 49:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia, eu disse: Debalde trabalhei"
+        },
+        {
+          "id": "b",
+          "text": "e gastei minhas forças em vão; contudo"
+        },
+        {
+          "id": "c",
+          "text": "meu direito está diante do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todavia, eu disse: Debalde trabalhei, e gastei min",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 49:4.",
+      "evidence": [
+        "Isaías 49:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 49:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Isaías 49:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "agora"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "formou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E agora diz o Sen",
+      "feedbackCorrect": "A palavra do texto é agora.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Isaías 49:5.",
+      "evidence": [
+        "Isaías 49:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 49:6 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 49:6",
+      "passageA": {
+        "ref": "Isaías 49:6",
+        "text": "Disse ainda: Pouco é que você seja meu servo, para restaurar as tribos de Jacó e"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor dirige a palavra ao seu povo neste trecho."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Sem chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse ainda: Pouco é que você seja meu servo, para",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Isaías 49:6.",
+      "evidence": [
+        "Isaías 49:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 49:1, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 49:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouçam-me"
+        },
+        {
+          "id": "b",
+          "text": "terras"
+        },
+        {
+          "id": "c",
+          "text": "vocês"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouçam-me, terras",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 49:1.",
+      "evidence": [
+        "Isaías 49:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Isaías 49:2.",
+      "verseRef": "Isaías 49:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "E fez da minha boca uma espada afiada"
+        },
+        {
+          "id": "b",
+          "text": "com a sombra da sua mão me escondeu"
+        },
+        {
+          "id": "c",
+          "text": "Ele me moldou como uma flecha polida e me guardou em sua aljava"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E fez da minha boca uma espada afiada; com a sombr",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 49:2.",
+      "evidence": [
+        "Isaías 49:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 49:3, o texto inclui a ideia de E ele me disse, Tu és.",
+      "verseRef": "Isaías 49:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "E ele me disse: Tu és meu servo, Israel, por",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Isaías 49:3.",
+      "evidence": [
+        "Isaías 49:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 49:4, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 49:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia"
+        },
+        {
+          "id": "b",
+          "text": "Debalde"
+        },
+        {
+          "id": "c",
+          "text": "trabalhei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todavia, eu dis",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 49:4.",
+      "evidence": [
+        "Isaías 49:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Isaías 49:5, qual leitura o texto sustenta?",
+      "verseRef": "Isaías 49:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E agora diz o Senhor, que me formou",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Isaías 49:5.",
+      "evidence": [
+        "Isaías 49:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento de Isaías 49:6.",
+      "verseRef": "Isaías 49:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pouco você seja servo"
+        },
+        {
+          "id": "b",
+          "text": "restaurar tribos Jacó trazer"
+        },
+        {
+          "id": "c",
+          "text": "você seja salvação confins"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse ainda: Pouco é que você seja meu servo, para",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 49:6.",
+      "evidence": [
+        "Isaías 49:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 49:1, qual palavra completa o sentido do versículo?",
+      "verseRef": "Isaías 49:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "terras"
+        },
+        {
+          "id": "b",
+          "text": "vocês"
+        },
+        {
+          "id": "c",
+          "text": "povos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouçam-me, terras do mar, e",
+      "feedbackCorrect": "A palavra do texto é terras.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Isaías 49:1.",
+      "evidence": [
+        "Isaías 49:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 49:2 a Salmos 46:1?",
+      "verseRef": "Isaías 49:2",
+      "passageA": {
+        "ref": "Isaías 49:2",
+        "text": "E fez da minha boca uma espada afiada; com a sombra da sua mão me escondeu; Ele "
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E fez da minha boca uma espada afiada; com a sombr",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Isaías 49:2.",
+      "evidence": [
+        "Isaías 49:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 49:3, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 49:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "servo"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "meio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "és meu servo, Israel",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 49:3.",
+      "evidence": [
+        "Isaías 49:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene as partes de Isaías 49:4 no modo caminhada.",
+      "verseRef": "Isaías 49:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia Debalde trabalhei"
+        },
+        {
+          "id": "b",
+          "text": "gastei minhas forças contudo"
+        },
+        {
+          "id": "c",
+          "text": "direito está diante Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todavia, eu disse: Debalde trabalhei, e gastei min",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 49:4.",
+      "evidence": [
+        "Isaías 49:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Isaías 49:5, o texto inclui a ideia de E agora diz o Senhor, que.",
+      "verseRef": "Isaías 49:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "E agora diz o Senhor, que me formou desde o",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Isaías 49:5.",
+      "evidence": [
+        "Isaías 49:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 49:6, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 49:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pouco"
+        },
+        {
+          "id": "b",
+          "text": "você"
+        },
+        {
+          "id": "c",
+          "text": "seja"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda: Pouco é que v",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 49:6.",
+      "evidence": [
+        "Isaías 49:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Isaías 49:1, qual leitura o texto sustenta?",
+      "verseRef": "Isaías 49:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouçam-me, terras do mar, e vocês, povos distantes,",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Isaías 49:1.",
+      "evidence": [
+        "Isaías 49:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene as partes de Isaías 49:2 no modo profundezas.",
+      "verseRef": "Isaías 49:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "boca espada afiada"
+        },
+        {
+          "id": "b",
+          "text": "sombra escondeu"
+        },
+        {
+          "id": "c",
+          "text": "moldou flecha polida guardou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E fez da minha boca uma espada afiada; com a sombr",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 49:2.",
+      "evidence": [
+        "Isaías 49:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 49:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Isaías 49:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "meio"
+        },
+        {
+          "id": "c",
+          "text": "quem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu servo, Israel, por meio",
+      "feedbackCorrect": "A palavra do texto é Israel.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Isaías 49:3.",
+      "evidence": [
+        "Isaías 49:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 49:4 a Jeremias 1:19?",
+      "verseRef": "Isaías 49:4",
+      "passageA": {
+        "ref": "Isaías 49:4",
+        "text": "Todavia, eu disse: Debalde trabalhei, e gastei minhas forças em vão; contudo, me"
+      },
+      "passageB": {
+        "ref": "Jeremias 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu estou contigo"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todavia, eu disse: Debalde trabalhei, e gastei min",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Isaías 49:4.",
+      "evidence": [
+        "Isaías 49:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 49:5, toque a expressão pedida no versículo.",
+      "verseRef": "Isaías 49:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "formou"
+        },
+        {
+          "id": "c",
+          "text": "desde"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a diz o Senhor, que me",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Isaías 49:5.",
+      "evidence": [
+        "Isaías 49:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene as partes de Isaías 49:6 no modo profundezas.",
+      "verseRef": "Isaías 49:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pouco você seja servo (1)"
+        },
+        {
+          "id": "b",
+          "text": "restaurar tribos Jacó trazer (2)"
+        },
+        {
+          "id": "c",
+          "text": "você seja salvação confins (3)"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse ainda: Pouco é que você seja meu servo, para",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Isaías 49:6.",
+      "evidence": [
+        "Isaías 49:6"
+      ]
+    }
+  ]
+}

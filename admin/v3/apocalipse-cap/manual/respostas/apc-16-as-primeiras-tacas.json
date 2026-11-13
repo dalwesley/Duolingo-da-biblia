@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 16:1–6",
+    "passages": [
+      {
+        "ref": "Apocalipse 16:1–6"
+      },
+      {
+        "ref": "Apocalipse 16:7"
+      }
+    ],
+    "context": "Do santuário sai a ordem: derramai as sete taças. As primeiras atingem terra, mar e águas; o altar responde que os juízos são verdadeiros e justos.",
+    "keyword": "taças",
+    "keywordGloss": "As taças da cólera de Deus derramadas sobre a terra, o mar e as águas.",
+    "focusQuestion": "Quando o juízo parece duro, o que o texto diz sobre a justiça de Deus?",
+    "reflectionPrompts": [
+      "Voz do santuário",
+      "Águas em sangue",
+      "Justos julgamentos"
+    ],
+    "facts": [
+      {
+        "text": "Uma grande voz do santuário manda os sete anjos derramar as taças da cólera de Deus.",
+        "evidenceRef": "Apocalipse 16:1",
+        "evidenceSpan": "Ide e derramai pela terra as sete taças da cólera de Deus"
+      },
+      {
+        "text": "O primeiro anjo derramou a taça sobre a terra e vieram úlceras sobre os que tinham o sinal da besta.",
+        "evidenceRef": "Apocalipse 16:2",
+        "evidenceSpan": "vieram sobre os homens que tinham o sinal da besta e adoravam a sua imagem úlceras malignas e perniciosas"
+      },
+      {
+        "text": "O segundo anjo derramou a taça no mar, e este se tornou em sangue como de morto.",
+        "evidenceRef": "Apocalipse 16:3",
+        "evidenceSpan": "este se tornou em sangue como de morto"
+      },
+      {
+        "text": "O terceiro anjo derramou a taça sobre os rios e as fontes, e elas se tornaram em sangue.",
+        "evidenceRef": "Apocalipse 16:4",
+        "evidenceSpan": "elas se tornaram em sangue"
+      },
+      {
+        "text": "Eles derramaram o sangue dos santos e dos profetas; por isso receberam sangue para beber.",
+        "evidenceRef": "Apocalipse 16:6",
+        "evidenceSpan": "derramaram o sangue dos santos e dos profetas; por isso, tu lhes deste a beber sangue"
+      },
+      {
+        "text": "Uma voz do altar proclama que os julgamentos do Senhor são verdadeiros e justos.",
+        "evidenceRef": "Apocalipse 16:7",
+        "evidenceSpan": "verdadeiros e justos são os teus julgamentos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cólera",
+        "gloss": "A ira de Deus derramada nas sete taças sobre a terra."
+      },
+      {
+        "term": "julgamentos",
+        "gloss": "O que a voz do altar declara verdadeiros e justos."
+      },
+      {
+        "term": "sangue",
+        "gloss": "O que as águas se tornam e o que é dado a beber em resposta ao sangue dos santos."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A voz manda derramar as taças",
+        "evidenceRef": "Apocalipse 16:1"
+      },
+      {
+        "label": "Taça sobre a terra e o mar",
+        "evidenceRef": "Apocalipse 16:2–3"
+      },
+      {
+        "label": "Águas em sangue e resposta justa",
+        "evidenceRef": "Apocalipse 16:4–6"
+      },
+      {
+        "label": "O altar confirma os julgamentos",
+        "evidenceRef": "Apocalipse 16:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Porque derramaram o sangue dos santos, Deus lhes deu sangue a beber.",
+        "marker": "por isso",
+        "evidenceRef": "Apocalipse 16:6"
+      },
+      {
+        "kind": "causa",
+        "text": "Justo és Tu, pois julgaste estas coisas.",
+        "marker": "pois",
+        "evidenceRef": "Apocalipse 16:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da terra, o segundo anjo derrama a taça no mar.",
+        "marker": null,
+        "evidenceRef": "Apocalipse 16:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 15:7",
+        "bridge": "Taças cheias da cólera"
+      },
+      {
+        "ref": "Êxodo 7:20",
+        "bridge": "Águas tornadas em sangue"
+      },
+      {
+        "ref": "Apocalipse 6:10",
+        "bridge": "Clamor sob o altar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "As taças caem sobre inocentes sem relação com a besta.",
+        "why": "O primeiro juízo atinge os que tinham o sinal da besta e adoravam a imagem."
+      },
+      {
+        "text": "O juízo das águas em sangue não tem razão no texto.",
+        "why": "Porque derramaram o sangue dos santos e dos profetas, receberam sangue a beber."
+      },
+      {
+        "text": "A voz do altar questiona a justiça de Deus.",
+        "why": "Ela proclama: verdadeiros e justos são os teus julgamentos."
+      }
+    ],
+    "centralInsight": "Justo és Tu; verdadeiros e justos são os teus julgamentos.",
+    "anchorQuestion": "Por que o texto diz que deram sangue a beber a esses homens?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 16:1, a voz do santuário manda os anjos derramar as sete taças da cólera de Deus.",
+      "verseRef": "Apocalipse 16:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ide e derramai pela terra as sete taças da cólera de Deus",
+      "feedbackCorrect": "A ordem é clara: derramai as sete taças da cólera de Deus.",
+      "feedbackWrong": {
+        "false": "O versículo traz exatamente essa ordem aos sete anjos."
+      },
+      "hint": "Olhe o que a voz manda fazer.",
+      "learningObjective": "Observar a ordem que sai do santuário.",
+      "evidence": [
+        "Apocalipse 16:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 16:3, toque no que o mar se tornou.",
+      "verseRef": "Apocalipse 16:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "segundo anjo"
+        },
+        {
+          "id": "c",
+          "text": "ser vivente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este se tornou em sangue como de morto",
+      "feedbackCorrect": "O mar se tornou em sangue como de morto.",
+      "feedbackWrong": {
+        "b": "O segundo anjo é quem derrama; o resultado é o sangue.",
+        "c": "Ser vivente morre no mar; o mar se torna sangue."
+      },
+      "hint": "Procure no que o mar se tornou.",
+      "learningObjective": "Identificar o resultado da segunda taça.",
+      "evidence": [
+        "Apocalipse 16:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 16:2, sobre quem vieram as úlceras?",
+      "verseRef": "Apocalipse 16:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sobre os que tinham o sinal da besta e adoravam a imagem"
+        },
+        {
+          "id": "b",
+          "text": "Sobre todos os anjos do santuário"
+        },
+        {
+          "id": "c",
+          "text": "Só sobre os marinheiros do mar"
+        },
+        {
+          "id": "d",
+          "text": "Sobre os santos e os profetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homens que tinham o sinal da besta e adoravam a sua imagem",
+      "feedbackCorrect": "As úlceras atingem quem tem o sinal e adora a imagem.",
+      "feedbackWrong": {
+        "b": "Os anjos derramam; não recebem as úlceras.",
+        "c": "O alvo desta taça é a terra e esses homens, não só marinheiros.",
+        "d": "Santos e profetas são mencionados depois como vítimas do sangue derramado."
+      },
+      "hint": "Veja quem recebe as úlceras no versículo.",
+      "learningObjective": "Observar o alvo da primeira taça.",
+      "evidence": [
+        "Apocalipse 16:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 16:4–5 na ordem do texto.",
+      "verseRef": "Apocalipse 16:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "o terceiro anjo derramou a sua taça"
+        },
+        {
+          "id": "b",
+          "text": "elas se tornaram em sangue"
+        },
+        {
+          "id": "c",
+          "text": "Justo és Tu, ó Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "derramou a sua taça sobre os rios e as fontes das águas",
+      "feedbackCorrect": "Primeiro o derramar, depois o sangue, depois a declaração de justiça.",
+      "feedbackWrong": {
+        "default": "Comece pelo derramar da taça; a justiça vem depois."
+      },
+      "hint": "A sequência começa com o terceiro anjo.",
+      "learningObjective": "Reconhecer a ordem de 16:4–5.",
+      "evidence": [
+        "Apocalipse 16:4–5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 16:1, a voz manda derramar as sete taças da quê de Deus?",
+      "verseRef": "Apocalipse 16:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "cólera"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "chuva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "taças da cólera de Deus",
+      "feedbackCorrect": "As taças são da cólera de Deus.",
+      "feedbackWrong": {
+        "b": "Paz não aparece; o termo é cólera.",
+        "c": "Chuva não aparece; o termo é cólera."
+      },
+      "hint": "Veja de que são as taças.",
+      "learningObjective": "Lembrar o conteúdo das taças.",
+      "evidence": [
+        "Apocalipse 16:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 16:7 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 16:7",
+      "passageA": {
+        "ref": "Apocalipse 16:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A voz do altar confirma que os julgamentos de Deus são verdadeiros e justos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Julgamentos verdadeiros e justos"
+        },
+        {
+          "id": "b",
+          "text": "Úlceras sem motivo"
+        },
+        {
+          "id": "c",
+          "text": "O mar permanece limpo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "verdadeiros e justos são os teus julgamentos",
+      "feedbackCorrect": "O altar responde afirmando a justiça dos julgamentos.",
+      "feedbackWrong": {
+        "b": "O texto dá razão ao juízo; não fala em úlceras sem motivo.",
+        "c": "O mar se tornou sangue; não permanece limpo."
+      },
+      "hint": "Leia o que a voz do altar proclama.",
+      "learningObjective": "Ligar 16:7 à confirmação da justiça.",
+      "evidence": [
+        "Apocalipse 16:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 16:6, Deus lhes deu sangue a beber porque eles pouparam o sangue dos santos.",
+      "verseRef": "Apocalipse 16:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "derramaram o sangue dos santos e dos profetas; por isso, tu lhes deste a beber sangue",
+      "feedbackCorrect": "A razão é o contrário: eles derramaram esse sangue.",
+      "feedbackWrong": {
+        "true": "O versículo diz que derramaram o sangue; por isso receberam sangue a beber."
+      },
+      "hint": "Leia a razão antes de por isso.",
+      "learningObjective": "Compreender a razão do sangue a beber.",
+      "evidence": [
+        "Apocalipse 16:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 16:6, toque as palavras que marcam o resultado do sangue derramado.",
+      "verseRef": "Apocalipse 16:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "por isso"
+        },
+        {
+          "id": "b",
+          "text": "santos"
+        },
+        {
+          "id": "c",
+          "text": "profetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por isso, tu lhes deste a beber sangue",
+      "feedbackCorrect": "Por isso introduz o resultado: sangue a beber.",
+      "feedbackWrong": {
+        "b": "Santos nomeia as vítimas; o resultado está em por isso.",
+        "c": "Profetas também nomeia as vítimas; o resultado está em por isso."
+      },
+      "hint": "Procure a expressão entre o crime e a resposta.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": [
+        "Apocalipse 16:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que a relação de Apocalipse 16:5–6 mostra sobre o juízo?",
+      "verseRef": "Apocalipse 16:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O juízo responde ao sangue que eles derramaram"
+        },
+        {
+          "id": "b",
+          "text": "O juízo cai sem nenhuma razão no texto"
+        },
+        {
+          "id": "c",
+          "text": "O juízo poupa quem adorava a besta"
+        },
+        {
+          "id": "d",
+          "text": "O juízo só atinge os anjos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por isso, tu lhes deste a beber sangue, pois são dignos disso",
+      "feedbackCorrect": "O por isso liga o crime ao sangue dado a beber.",
+      "feedbackWrong": {
+        "b": "O texto dá a razão: derramaram o sangue dos santos.",
+        "c": "A primeira taça atinge quem tinha o sinal da besta.",
+        "d": "Os anjos derramam; não são o alvo do sangue a beber."
+      },
+      "hint": "Compare o que eles fizeram com o que receberam.",
+      "learningObjective": "Relacionar crime e resposta no juízo.",
+      "evidence": [
+        "Apocalipse 16:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o derramar das taças?",
+      "verseRef": "Apocalipse 16:1–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A voz manda derramar as taças"
+        },
+        {
+          "id": "b",
+          "text": "Taça sobre a terra e o mar"
+        },
+        {
+          "id": "c",
+          "text": "Águas em sangue e resposta justa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ide e derramai pela terra as sete taças",
+      "feedbackCorrect": "A ordem abre; terra e mar vêm; as águas e a resposta fecham este bloco.",
+      "feedbackWrong": {
+        "default": "Comece pela voz do santuário."
+      },
+      "hint": "A cena começa com a ordem do santuário.",
+      "learningObjective": "Ordenar os movimentos das primeiras taças.",
+      "evidence": [
+        "Apocalipse 16:1–4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 16:5, Justo és Tu, ó Senhor, pois julgaste estas quê?",
+      "verseRef": "Apocalipse 16:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "coisas"
+        },
+        {
+          "id": "b",
+          "text": "nuvens"
+        },
+        {
+          "id": "c",
+          "text": "harpas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois julgaste estas coisas",
+      "feedbackCorrect": "A razão da justiça é que ele julgou estas coisas.",
+      "feedbackWrong": {
+        "b": "Nuvens não aparece.",
+        "c": "Harpas não aparece nesta cena."
+      },
+      "hint": "Veja o objeto do verbo julgaste.",
+      "learningObjective": "Lembrar a palavra que carrega o objeto do juízo.",
+      "evidence": [
+        "Apocalipse 16:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 16:1 a Apocalipse 15:7?",
+      "verseRef": "Apocalipse 16:1",
+      "passageA": {
+        "ref": "Apocalipse 16:1",
+        "text": "as sete taças da cólera de Deus"
+      },
+      "passageB": {
+        "ref": "Apocalipse 15:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Taças cheias da cólera"
+        },
+        {
+          "id": "b",
+          "text": "O mar tornado sangue"
+        },
+        {
+          "id": "c",
+          "text": "Úlceras malignas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sete taças da cólera de Deus",
+      "feedbackCorrect": "Em 15:7 as taças são dadas; em 16:1 a voz manda derramá-las.",
+      "feedbackWrong": {
+        "b": "O mar está em 16:3; a ponte com 15:7 são as taças.",
+        "c": "As úlceras estão em 16:2; a ponte são as taças."
+      },
+      "hint": "Compare o que os anjos recebem e derramam.",
+      "learningObjective": "Ligar as taças de 15:7 à ordem de 16:1.",
+      "evidence": [
+        "Apocalipse 16:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Apocalipse 16:7, a voz do altar declara que os julgamentos do Senhor são duvidosos e injustos.",
+      "verseRef": "Apocalipse 16:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "verdadeiros e justos são os teus julgamentos",
+      "feedbackCorrect": "A voz afirma o contrário: verdadeiros e justos.",
+      "feedbackWrong": {
+        "true": "O versículo diz verdadeiros e justos, não duvidosos."
+      },
+      "hint": "Leia o que a voz proclama no fim.",
+      "learningObjective": "Interpretar a avaliação do altar.",
+      "evidence": [
+        "Apocalipse 16:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 16:7, toque o trecho que sustenta a justiça dos julgamentos.",
+      "verseRef": "Apocalipse 16:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "verdadeiros e justos"
+        },
+        {
+          "id": "b",
+          "text": "altar"
+        },
+        {
+          "id": "c",
+          "text": "voz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "verdadeiros e justos são os teus julgamentos",
+      "feedbackCorrect": "A leitura sustentável está em verdadeiros e justos.",
+      "feedbackWrong": {
+        "b": "Altar localiza a voz; o juízo está nos adjetivos.",
+        "c": "Voz é quem fala; o conteúdo está nos adjetivos."
+      },
+      "hint": "Procure os adjetivos dos julgamentos.",
+      "learningObjective": "Tocar o trecho que afirma a justiça.",
+      "evidence": [
+        "Apocalipse 16:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Apocalipse 16:6 sustenta melhor?",
+      "verseRef": "Apocalipse 16:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sangue a beber responde ao sangue que derramaram"
+        },
+        {
+          "id": "b",
+          "text": "O juízo ignora o sangue dos santos"
+        },
+        {
+          "id": "c",
+          "text": "Eles recebem sangue porque pouparam os profetas"
+        },
+        {
+          "id": "d",
+          "text": "O texto nega qualquer dignidade do juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por isso, tu lhes deste a beber sangue, pois são dignos disso",
+      "feedbackCorrect": "O por isso e o pois sustentam a resposta proporcional.",
+      "feedbackWrong": {
+        "b": "O juízo parte do sangue derramado dos santos.",
+        "c": "Eles derramaram, não pouparam.",
+        "d": "O texto diz que são dignos disso."
+      },
+      "hint": "Veja a ligação entre derramaram e beber.",
+      "learningObjective": "Escolher a leitura sustentável do juízo.",
+      "evidence": [
+        "Apocalipse 16:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento Apocalipse 16 sustenta?",
+      "verseRef": "Apocalipse 16:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "As taças são derramadas"
+        },
+        {
+          "id": "b",
+          "text": "O sangue responde ao crime"
+        },
+        {
+          "id": "c",
+          "text": "O altar confirma a justiça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "derramai pela terra as sete taças",
+      "feedbackCorrect": "O derramar abre; a razão do sangue vem; o altar fecha.",
+      "feedbackWrong": {
+        "default": "Comece pelo derramar; a confirmação do altar vem por último."
+      },
+      "hint": "A ordem do santuário vem antes da resposta do altar.",
+      "learningObjective": "Encadear derramar, resposta e confirmação.",
+      "evidence": [
+        "Apocalipse 16:1–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 16:7, verdadeiros e justos são os teus quê?",
+      "verseRef": "Apocalipse 16:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "julgamentos"
+        },
+        {
+          "id": "b",
+          "text": "pilotos"
+        },
+        {
+          "id": "c",
+          "text": "mercadores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "teus julgamentos",
+      "feedbackCorrect": "O termo teológico aqui é julgamentos.",
+      "feedbackWrong": {
+        "b": "Pilotos não aparece nesta cena.",
+        "c": "Mercadores aparecem em Babilônia, não aqui."
+      },
+      "hint": "Veja o substantivo no fim da proclamação.",
+      "learningObjective": "Lembrar o termo que a voz do altar afirma.",
+      "evidence": [
+        "Apocalipse 16:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 16:7 a Apocalipse 6:10?",
+      "verseRef": "Apocalipse 16:7",
+      "passageA": {
+        "ref": "Apocalipse 16:7",
+        "text": "voz do altar"
+      },
+      "passageB": {
+        "ref": "Apocalipse 6:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor sob o altar"
+        },
+        {
+          "id": "b",
+          "text": "Úlceras da primeira taça"
+        },
+        {
+          "id": "c",
+          "text": "Mar tornado sangue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voz do altar",
+      "feedbackCorrect": "Em 6:10 as almas clamam; em 16:7 a voz do altar confirma a justiça.",
+      "feedbackWrong": {
+        "b": "As úlceras estão em 16:2; a ponte com 6:10 é o altar.",
+        "c": "O mar está em 16:3; a ponte é o altar."
+      },
+      "hint": "Compare o lugar de onde vem a voz.",
+      "learningObjective": "Ligar a voz do altar ao clamor de 6:10.",
+      "evidence": [
+        "Apocalipse 16:7"
+      ]
+    }
+  ]
+}

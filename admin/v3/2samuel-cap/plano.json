@@ -1,0 +1,228 @@
+{
+  "slug": "2samuel-cap",
+  "prefix": "s2c",
+  "book": "2 Samuel",
+  "chapters": 24,
+  "title": "2 Samuel",
+  "description": "2 Samuel capítulo a capítulo: Davi rei, a aliança, o pecado e as consequências.",
+  "icon": "👑",
+  "color": "#6A8EAE",
+  "order": 13,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["samuel"],
+  "modules": [
+    {
+      "title": "Davi rei · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "2 Samuel 1:17–27",
+          "title": "Como caíram os valentes",
+          "intro": "Davi lamenta Saul e Jônatas com um cântico de dor.",
+          "insight": "Davi chora o inimigo e o amigo: o amor a Jônatas e o respeito a Saul marcados no lamento.",
+          "objective": "Lamentar com dignidade"
+        },
+        {
+          "ref": "2 Samuel 2:1–7",
+          "title": "Ungido em Hebrom",
+          "intro": "Davi pergunta ao Senhor e sobe a Hebrom; Judá o unge rei.",
+          "insight": "Davi sobe só depois de ouvir o Senhor e abençoa quem sepultou Saul.",
+          "objective": "Subir ouvindo a Deus"
+        },
+        {
+          "ref": "2 Samuel 3:26–34",
+          "title": "O sangue de Abner",
+          "intro": "Joabe mata Abner à traição, e Davi se declara inocente.",
+          "insight": "Davi chora Abner em público: o rei não compactua com a vingança de Joabe.",
+          "objective": "Não compactuar com o crime"
+        },
+        {
+          "ref": "2 Samuel 4:5–12",
+          "title": "Justiça em Hebrom",
+          "intro": "Recabe e Baana matam Isbosete e levam a cabeça a Davi.",
+          "insight": "Davi não recompensa assassinato: castiga quem mata um justo em sua cama.",
+          "objective": "Rejeitar o sangue injusto"
+        },
+        {
+          "ref": "2 Samuel 5:1–10",
+          "title": "Rei sobre Israel",
+          "intro": "As tribos vêm a Hebrom, ungindo Davi, e ele toma a fortaleza de Sião.",
+          "insight": "Davi se fortalece porque o Senhor dos Exércitos está com ele.",
+          "objective": "Reinar com o Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Davi rei",
+        "intro": "Revise o lamento, Hebrom, Abner, Isbosete e a unção sobre todo Israel.",
+        "insight": "O Senhor estabelece Davi sem precisar do crime alheio"
+      }
+    },
+    {
+      "title": "Arca e aliança · cap. 6–10",
+      "scenes": [
+        {
+          "ref": "2 Samuel 6:12–19",
+          "title": "Dançando diante do Senhor",
+          "intro": "Davi traz a arca com alegria e dança com todas as forças.",
+          "insight": "Davi se alegra diante do Senhor; Mical despreza, mas o culto não se cala.",
+          "objective": "Alegrar-se na presença"
+        },
+        {
+          "ref": "2 Samuel 7:8–16",
+          "chapters": "7–8",
+          "title": "Casa e trono eternos",
+          "intro": "O Senhor responde ao desejo de Davi de construir um templo.",
+          "insight": "Deus promete a Davi casa, descendência e trono firmados para sempre.",
+          "objective": "Confiar na aliança"
+        },
+        {
+          "ref": "2 Samuel 9:1–8",
+          "title": "Bondade a Mefibosete",
+          "intro": "Davi procura alguém da casa de Saul para fazer bem por amor a Jônatas.",
+          "insight": "A bondade de Deus chega ao aleijado: Mefibosete come à mesa do rei.",
+          "objective": "Fazer o bem por amor"
+        },
+        {
+          "ref": "2 Samuel 10:9–14",
+          "title": "Joabe e a batalha",
+          "intro": "Quando Amom e a Síria cercam, Joabe anima o povo a ser forte.",
+          "insight": "Seja forte: o Senhor fará o que bem lhe parecer — coragem com confiança.",
+          "objective": "Ser forte e confiar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Arca e aliança",
+        "intro": "Revise a arca, a promessa a Davi, Mefibosete e a batalha de Joabe.",
+        "insight": "O reinado de Davi se firma na presença e na promessa de Deus"
+      }
+    },
+    {
+      "title": "Pecado e consequências · cap. 11–14",
+      "scenes": [
+        {
+          "ref": "2 Samuel 11:2–13",
+          "title": "O olhar na cobertura",
+          "intro": "Enquanto Joabe luta, Davi fica em Jerusalém e vê Bate-Seba.",
+          "insight": "O desejo abre a porta ao adultério e à mentira: Davi tenta esconder o pecado.",
+          "objective": "Guardar o olhar"
+        },
+        {
+          "ref": "2 Samuel 12:1–10",
+          "title": "A ovelha do pobre",
+          "intro": "Natã conta uma parábola, e Davi condena o homem sem saber que é ele.",
+          "insight": "Tu és o homem: o Senhor vê o que se esconde e confronta o pecado do rei.",
+          "objective": "Ouvir a correção"
+        },
+        {
+          "ref": "2 Samuel 13:19–29",
+          "title": "Absalão espera",
+          "intro": "Depois da violência contra Tamar, Absalão prepara a vingança contra Amnom.",
+          "insight": "Pecado não tratado gera mais sangue: a casa de Davi se desfaz por dentro.",
+          "objective": "Não alimentar a vingança"
+        },
+        {
+          "ref": "2 Samuel 14:21–33",
+          "title": "Absalão de volta",
+          "intro": "Davi permite a volta de Absalão, mas a reconciliação fica incompleta.",
+          "insight": "Voltar sem verdadeiro encontro deixa feridas abertas e ambição crescendo.",
+          "objective": "Reconciliar de verdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Pecado e consequências",
+        "intro": "Revise Bate-Seba, Natã, Amnom e Tamar, e a volta de Absalão.",
+        "insight": "O pecado do rei abre rachaduras que se espalham pela casa"
+      }
+    },
+    {
+      "title": "Absalão · cap. 15–19",
+      "scenes": [
+        {
+          "ref": "2 Samuel 15:13–23",
+          "title": "Fuga de Jerusalém",
+          "intro": "Absalão rouba o coração do povo, e Davi sai da cidade chorando.",
+          "insight": "Davi foge, mas entrega o resultado ao Senhor: se achar favor, voltará.",
+          "objective": "Entregar o trono a Deus"
+        },
+        {
+          "ref": "2 Samuel 16:5–14",
+          "title": "As pedras de Simei",
+          "intro": "Simei amaldiçoa Davi na fuga, e Abisai quer matá-lo.",
+          "insight": "Davi recebe a maldição em silêncio: talvez o Senhor olhe a minha aflição.",
+          "objective": "Suportar a ofensa"
+        },
+        {
+          "ref": "2 Samuel 17:5–14",
+          "title": "Conselho frustrado",
+          "intro": "Husai confronta o plano de Aitofel, e Absalão escolhe mal.",
+          "insight": "O Senhor frustra o bom conselho de Aitofel para trazer o mal sobre Absalão.",
+          "objective": "Deus governa o conselho"
+        },
+        {
+          "ref": "2 Samuel 18:9–17",
+          "title": "Absalão no carvalho",
+          "intro": "Absalão fica preso nos ramos, e Joabe o mata contra a ordem do rei.",
+          "insight": "A revolta termina no bosque: o filho do rei cai, e Israel foge.",
+          "objective": "O fim da revolta"
+        },
+        {
+          "ref": "2 Samuel 19:1–8",
+          "title": "Vitória em luto",
+          "intro": "Davi chora Absalão, e Joabe o confronta para que volte ao povo.",
+          "insight": "O rei precisa se levantar: o luto privado não pode abandonar quem o salvou.",
+          "objective": "Levantar-se pelo povo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Absalão",
+        "intro": "Revise a fuga, Simei, Husai, a morte de Absalão e o luto de Davi.",
+        "insight": "Deus restaura o rei, mas a dor do filho marca a volta"
+      }
+    },
+    {
+      "title": "Crise e restauração · cap. 20–24",
+      "scenes": [
+        {
+          "ref": "2 Samuel 20:1–10",
+          "title": "Seba e a espada",
+          "intro": "Seba toca a trombeta contra Davi, e Joabe mata Amasa no caminho.",
+          "insight": "Nova divisão nasce depressa: a espada de Joabe outra vez decide à força.",
+          "objective": "Cuidar da unidade"
+        },
+        {
+          "ref": "2 Samuel 21:1–9",
+          "title": "Fome e os gibeonitas",
+          "intro": "Há fome três anos, e o Senhor aponta a culpa de sangue de Saul.",
+          "insight": "Davi busca reparar o juramento quebrado: a justiça adiada ainda pesa.",
+          "objective": "Reparar a culpa"
+        },
+        {
+          "ref": "2 Samuel 22:1–7",
+          "title": "O Senhor é a minha rocha",
+          "intro": "Davi canta o livramento do Senhor de todos os seus inimigos.",
+          "insight": "Na angústia Davi clama, e do templo o Senhor ouve a sua voz.",
+          "objective": "Louvar o libertador"
+        },
+        {
+          "ref": "2 Samuel 23:1–7",
+          "title": "Últimas palavras",
+          "intro": "Davi fala como ungido e salmista: o justo reina no temor de Deus.",
+          "insight": "Deus fez com Davi um pacto eterno, bem fundamentado e seguro.",
+          "objective": "Lembrar a aliança"
+        },
+        {
+          "ref": "2 Samuel 24:10–19",
+          "title": "Caiamos nas mãos do Senhor",
+          "intro": "Depois do censo, Davi se arrepende e escolhe cair nas misericórdias de Deus.",
+          "insight": "Melhor cair nas mãos do Senhor do que nas dos homens: Ele é misericordioso.",
+          "objective": "Escolher a misericórdia"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Crise e restauração",
+        "intro": "Revise Seba, os gibeonitas, o cântico, as últimas palavras e o censo.",
+        "insight": "Até no fim, Davi aprende a cair nas mãos misericordiosas do Senhor"
+      }
+    }
+  ]
+}

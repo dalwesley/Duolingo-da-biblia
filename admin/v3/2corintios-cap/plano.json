@@ -1,0 +1,147 @@
+{
+  "slug": "2corintios-cap",
+  "prefix": "c2c",
+  "book": "2 Coríntios",
+  "chapters": 13,
+  "title": "2 Coríntios",
+  "description": "2 Coríntios capítulo a capítulo: consolação, ministério e força na fraqueza.",
+  "icon": "🩹",
+  "color": "#E67E22",
+  "order": 62,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["corintios"],
+  "modules": [
+    {
+      "title": "Consolação e ministério · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "2 Coríntios 1:3–11",
+          "title": "Deus de toda consolação",
+          "intro": "Paulo começa bendizendo o Pai que consola em toda tribulação.",
+          "insight": "Deus consola para que também consolamos outros; a esperança está nele, que ressuscita os mortos.",
+          "objective": "Consolar como Deus consola"
+        },
+        {
+          "ref": "2 Coríntios 2:5–11",
+          "title": "Perdoar e confortar",
+          "intro": "Há dor na igreja por causa de alguém, e Paulo pede medida certa.",
+          "insight": "O excesso de tristeza não pode vencer: perdoar e confortar é também vencer as ciladas de Satanás.",
+          "objective": "Perdoar de coração"
+        },
+        {
+          "ref": "2 Coríntios 3:4–12",
+          "title": "Ministério do Espírito",
+          "intro": "A capacidade do ministério não vem de Paulo, mas de Deus.",
+          "insight": "O ministério do Espírito é mais glorioso que o da letra: onde está o Espírito do Senhor, aí há liberdade.",
+          "objective": "Servir pelo Espírito"
+        },
+        {
+          "ref": "2 Coríntios 4:7–15",
+          "title": "Tesouro em vasos de barro",
+          "intro": "O tesouro do evangelho está em vasos frágeis, para a excelência ser de Deus.",
+          "insight": "Afligidos, mas não destruídos: a vida de Jesus se manifesta no corpo mortal dos servos.",
+          "objective": "Mostrar a vida de Jesus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Consolação e ministério",
+        "intro": "Revise a consolação de Deus, o perdão, o ministério do Espírito e o tesouro em vasos de barro.",
+        "insight": "O ministério flui da consolação e da força de Deus na fraqueza"
+      }
+    },
+    {
+      "title": "Reconciliação e pureza · cap. 5–7",
+      "scenes": [
+        {
+          "ref": "2 Coríntios 5:14–21",
+          "title": "Nova criatura",
+          "intro": "O amor de Cristo constrange: ele morreu por todos, para que vivamos para ele.",
+          "insight": "Se alguém está em Cristo, é nova criatura; Deus nos reconciliou consigo e nos deu o ministério da reconciliação.",
+          "objective": "Viver reconciliado"
+        },
+        {
+          "ref": "2 Coríntios 6:11–18",
+          "title": "Não se prendam a descrentes",
+          "intro": "Paulo abre o coração e chama a igreja a sair do meio da impureza.",
+          "insight": "Não há acordo entre luz e trevas: o Senhor habita no seu povo e chama: sejais separados.",
+          "objective": "Separar-se para o Senhor"
+        },
+        {
+          "ref": "2 Coríntios 7:5–13",
+          "title": "Tristeza segundo Deus",
+          "intro": "Paulo lembra a angústia e a alegria que veio com a chegada de Tito.",
+          "insight": "A tristeza segundo Deus produz arrependimento para a salvação; a do mundo produz morte.",
+          "objective": "Arrepender-se de verdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Reconciliação e pureza",
+        "intro": "Revise a nova criatura, a separação santa e a tristeza que leva ao arrependimento.",
+        "insight": "Reconciliados com Deus, vivemos em pureza e arrependimento verdadeiro"
+      }
+    },
+    {
+      "title": "Generosidade e autoridade · cap. 8–10",
+      "scenes": [
+        {
+          "ref": "2 Coríntios 8:1–9",
+          "title": "A graça de dar",
+          "intro": "As igrejas da Macedônia deram com abundância mesmo na pobreza.",
+          "insight": "Jesus, sendo rico, se fez pobre por nós: a generosidade imita a graça dele.",
+          "objective": "Dar com alegria"
+        },
+        {
+          "ref": "2 Coríntios 9:6–15",
+          "title": "Quem semeia com alegria",
+          "intro": "Paulo fala da oferta e da semeadura generosa diante de Deus.",
+          "insight": "Deus ama quem dá com alegria; ele multiplica a semente e faz abundar a graça em toda boa obra.",
+          "objective": "Semear com generosidade"
+        },
+        {
+          "ref": "2 Coríntios 10:3–12",
+          "title": "Armas espirituais",
+          "intro": "Paulo defende o ministério sem guerra segundo a carne.",
+          "insight": "As armas da nossa milícia são poderosas em Deus para destruir fortalezas e pensamentos altivos.",
+          "objective": "Lutar com armas de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Generosidade e autoridade",
+        "intro": "Revise a graça de dar, a semeadura alegre e as armas espirituais do ministério.",
+        "insight": "A autoridade cristã serve com generosidade e luta no Espírito"
+      }
+    },
+    {
+      "title": "Fraqueza e prova · cap. 11–13",
+      "scenes": [
+        {
+          "ref": "2 Coríntios 11:23–30",
+          "title": "Gloriar-se nas fraquezas",
+          "intro": "Paulo lista trabalhos, perigos e cuidados para mostrar o que é gloriar-se no Senhor.",
+          "insight": "Se é preciso gloriar-se, Paulo se gloria nas coisas que mostram a sua fraqueza.",
+          "objective": "Gloriar-se na fraqueza"
+        },
+        {
+          "ref": "2 Coríntios 12:14–21",
+          "title": "Não busco o que é vosso",
+          "intro": "Paulo diz que virá outra vez e não quer ser peso: busca as pessoas, não os bens.",
+          "insight": "Os pais juntam para os filhos; o apóstolo gasta-se por eles e teme achar pecado sem arrependimento.",
+          "objective": "Buscar pessoas, não bens"
+        },
+        {
+          "ref": "2 Coríntios 13:3–11",
+          "title": "Examinem-se a si mesmos",
+          "intro": "Paulo fecha a carta pedindo exame e restauração antes da visita.",
+          "insight": "Examinem-se: Cristo está em vocês, a não ser que sejam réprobos; o Senhor é poderoso em nós.",
+          "objective": "Examinar a própria fé"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fraqueza e prova",
+        "intro": "Revise a glória na fraqueza, o cuidado pastoral e o exame da fé.",
+        "insight": "A força de Cristo se aperfeiçoa na fraqueza dos seus servos"
+      }
+    }
+  ]
+}

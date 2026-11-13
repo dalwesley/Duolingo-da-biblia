@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 3:26–34",
+    "passages": [
+      {
+        "ref": "2 Samuel 3:26–34"
+      }
+    ],
+    "context": "Abner volta em paz, mas Joabe o chama de volta e o mata. Davi se declara inocente e chora Abner em público.",
+    "keyword": "inocente",
+    "keywordGloss": "Davi se declara limpo diante do Senhor quanto ao sangue de Abner.",
+    "focusQuestion": "Você deixa clara a diferença entre justiça e vingança pessoal?",
+    "reflectionPrompts": [
+      "Joabe mata Abner",
+      "Davi se declara inocente",
+      "Pranto público"
+    ],
+    "facts": [
+      {
+        "text": "Joabe fez Abner retornar sem que Davi soubesse.",
+        "evidenceRef": "2 Samuel 3:26",
+        "evidenceSpan": "sem que Davi soubesse"
+      },
+      {
+        "text": "Joabe feriu Abner no abdômen e ele morreu.",
+        "evidenceRef": "2 Samuel 3:27",
+        "evidenceSpan": "ali o feriu no abdômen, e ele morreu"
+      },
+      {
+        "text": "Davi se declara inocente quanto ao sangue de Abner.",
+        "evidenceRef": "2 Samuel 3:28",
+        "evidenceSpan": "Sou inocente, eu e meu reino"
+      },
+      {
+        "text": "Joabe e Abisai mataram Abner por Asael.",
+        "evidenceRef": "2 Samuel 3:30",
+        "evidenceSpan": "Joabe e seu irmão Abisai mataram Abner"
+      },
+      {
+        "text": "Davi manda rasgar vestes e prantear diante de Abner.",
+        "evidenceRef": "2 Samuel 3:31",
+        "evidenceSpan": "Rasguem as suas vestes, cingam-se de panos de saco"
+      },
+      {
+        "text": "O rei chorou junto à sepultura de Abner.",
+        "evidenceRef": "2 Samuel 3:32",
+        "evidenceSpan": "o rei levantou a voz e chorou junto à sepultura de Abner"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "inocente",
+        "gloss": "Davi se separa publicamente do crime de Joabe."
+      },
+      {
+        "term": "prantear",
+        "gloss": "Luto que Davi ordena e segue no féretro."
+      },
+      {
+        "term": "Abner",
+        "gloss": "O comandante morto à traição na porta de Hebrom."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Joabe chama Abner de volta e o mata",
+        "evidenceRef": "2 Samuel 3:26–27"
+      },
+      {
+        "label": "Davi se declara inocente e amaldiçoa Joabe",
+        "evidenceRef": "2 Samuel 3:28–30"
+      },
+      {
+        "label": "Ordem de luto e sepultura em Hebrom",
+        "evidenceRef": "2 Samuel 3:31–32"
+      },
+      {
+        "label": "Lamento real sobre a morte injusta",
+        "evidenceRef": "2 Samuel 3:33–34"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Abner morre por conta da vingança do sangue de Asael.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 3:27"
+      },
+      {
+        "kind": "causa",
+        "text": "Mataram Abner, pois ele havia assassinado Asael.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 3:30"
+      },
+      {
+        "kind": "contraste",
+        "text": "Joabe age às escondidas; Davi chora em público.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 3:26"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 2:22–23",
+        "bridge": "Asael morto por Abner"
+      },
+      {
+        "ref": "Deuteronômio 19:11–12",
+        "bridge": "Homicídio com ódio"
+      },
+      {
+        "ref": "Salmos 26:6",
+        "bridge": "Mãos inocentes"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Davi ordenou a morte de Abner.",
+        "why": "Joabe age sem que Davi soubesse; o rei se declara inocente."
+      },
+      {
+        "text": "Davi celebra a morte de Abner em silêncio.",
+        "why": "Ele manda prantear e chora junto à sepultura."
+      },
+      {
+        "text": "Abner morreu em batalha justa e aberta.",
+        "why": "Foi ferido em segredo no interior da porta."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 3:28, como Davi se declara diante do Senhor?",
+    "centralInsight": "Davi chora Abner em público: o rei não compactua com a vingança de Joabe."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 3:26, Joabe fez Abner retornar sem que Davi soubesse.",
+      "verseRef": "2 Samuel 3:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "sem que Davi soubesse",
+      "feedbackCorrect": "Joabe age às escondidas.",
+      "feedbackWrong": {
+        "false": "O verso diz sem que Davi soubesse."
+      },
+      "hint": "Veja o fim do verso.",
+      "learningObjective": "Observar o segredo.",
+      "evidence": [
+        "2 Samuel 3:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 3:27, toque onde Joabe fere Abner.",
+      "verseRef": "2 Samuel 3:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abner"
+        },
+        {
+          "id": "b",
+          "text": "retornar"
+        },
+        {
+          "id": "c",
+          "text": "Hebrom"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "retornar",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o golpe.",
+      "evidence": [
+        "2 Samuel 3:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 3:28, o que Davi declara?",
+      "verseRef": "2 Samuel 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que é inocente quanto ao sangue de Abner"
+        },
+        {
+          "id": "b",
+          "text": "Que ordenou a morte"
+        },
+        {
+          "id": "c",
+          "text": "Que Joabe está limpo"
+        },
+        {
+          "id": "d",
+          "text": "Que Abner merecia morrer"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou inocente, eu e meu reino",
+      "feedbackCorrect": "Inocência pública.",
+      "feedbackWrong": {
+        "b": "Ele não ordenou.",
+        "c": "Ele culpa Joabe.",
+        "d": "Ele lamenta."
+      },
+      "hint": "Leia a declaração.",
+      "learningObjective": "Reconhecer a inocência.",
+      "evidence": [
+        "2 Samuel 3:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 3:31 na ordem do texto.",
+      "verseRef": "2 Samuel 3:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rasguem as suas vestes"
+        },
+        {
+          "id": "b",
+          "text": "cingam-se de panos de saco"
+        },
+        {
+          "id": "c",
+          "text": "vão prantear diante de Abner"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rasguem as suas vestes, cingam-se de panos de saco",
+      "feedbackCorrect": "Vestes, saco e pranto.",
+      "feedbackWrong": {
+        "default": "Comece pelas vestes."
+      },
+      "hint": "O que pedem depois?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 3:31"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 3:28, complete: Sou ___, eu e meu reino.",
+      "verseRef": "2 Samuel 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "inocente"
+        },
+        {
+          "id": "b",
+          "text": "culpado"
+        },
+        {
+          "id": "c",
+          "text": "omisso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou inocente, eu e meu reino",
+      "feedbackCorrect": "Inocente.",
+      "feedbackWrong": {
+        "b": "Não é culpado.",
+        "c": "Não é omisso."
+      },
+      "hint": "Veja a declaração.",
+      "learningObjective": "Lembrar inocente.",
+      "evidence": [
+        "2 Samuel 3:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 3:32 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 3:32",
+      "passageA": {
+        "ref": "2 Samuel 3:32"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Davi chora Abner em público e se distancia do crime."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Choro junto à sepultura"
+        },
+        {
+          "id": "b",
+          "text": "Festa pela morte"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio do rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei levantou a voz e chorou junto à sepultura de Abner",
+      "feedbackCorrect": "Há pranto público.",
+      "feedbackWrong": {
+        "b": "Há choro.",
+        "c": "O rei chora."
+      },
+      "hint": "O que o rei faz?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 3:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 3:30, Joabe e Abisai mataram Abner sem qualquer motivo ligado a Asael.",
+      "verseRef": "2 Samuel 3:30",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois ele havia assassinado Asael, seu irmão",
+      "feedbackCorrect": "O pois liga à morte de Asael.",
+      "feedbackWrong": {
+        "true": "Leia o pois."
+      },
+      "hint": "Veja a causa.",
+      "learningObjective": "Ver a causa da vingança.",
+      "evidence": [
+        "2 Samuel 3:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 3:30, toque o marcador de causa.",
+      "verseRef": "2 Samuel 3:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "irmão"
+        },
+        {
+          "id": "b",
+          "text": "Joabe"
+        },
+        {
+          "id": "c",
+          "text": "Abisai"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Joabe",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "2 Samuel 3:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 3:26–28 destaca?",
+      "verseRef": "2 Samuel 3:26–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crime oculto de Joabe contra a inocência pública de Davi"
+        },
+        {
+          "id": "b",
+          "text": "Acordo aberto entre Davi e Joabe"
+        },
+        {
+          "id": "c",
+          "text": "Julgamento justo na porta"
+        },
+        {
+          "id": "d",
+          "text": "Abner morto em batalha campal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem que Davi soubesse",
+      "feedbackCorrect": "Segredo versus inocência.",
+      "feedbackWrong": {
+        "b": "Não há acordo.",
+        "c": "Há traição.",
+        "d": "Foi no interior da porta."
+      },
+      "hint": "Compare Joabe e Davi.",
+      "learningObjective": "Compreender o contraste.",
+      "evidence": [
+        "2 Samuel 3:26–27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 3:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joabe chama Abner de volta e o mata"
+        },
+        {
+          "id": "b",
+          "text": "Davi se declara inocente e amaldiçoa Joabe"
+        },
+        {
+          "id": "c",
+          "text": "Ordem de luto e sepultura em Hebrom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sem que Davi soubesse",
+      "feedbackCorrect": "Crime, inocência e luto.",
+      "feedbackWrong": {
+        "default": "Comece pelo crime."
+      },
+      "hint": "O que vem depois da declaração?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 3:26",
+        "2 Samuel 3:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 3:31, complete: vão ___ diante de Abner.",
+      "verseRef": "2 Samuel 3:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "prantear"
+        },
+        {
+          "id": "b",
+          "text": "cantar"
+        },
+        {
+          "id": "c",
+          "text": "calar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vão prantear diante de Abner",
+      "feedbackCorrect": "Prantear.",
+      "feedbackWrong": {
+        "b": "Não é cantar.",
+        "c": "Não é calar."
+      },
+      "hint": "Veja a ordem.",
+      "learningObjective": "Lembrar prantear.",
+      "evidence": [
+        "2 Samuel 3:31"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 3:30 a 2 Samuel 2:22–23?",
+      "verseRef": "2 Samuel 3:30",
+      "passageA": {
+        "ref": "2 Samuel 3:30"
+      },
+      "passageB": {
+        "ref": "2 Samuel 2:22–23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Asael morto por Abner"
+        },
+        {
+          "id": "b",
+          "text": "Abner morto por Asael"
+        },
+        {
+          "id": "c",
+          "text": "Paz entre os irmãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois ele havia assassinado Asael, seu irmão",
+      "feedbackCorrect": "A vingança liga às cenas.",
+      "feedbackWrong": {
+        "b": "Asael morreu antes.",
+        "c": "Há vingança."
+      },
+      "hint": "Compare Asael.",
+      "learningObjective": "Ligar à morte de Asael.",
+      "evidence": [
+        "2 Samuel 3:30",
+        "2 Samuel 2:22–23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 3:28–32, Davi se declara inocente e chora Abner em público.",
+      "verseRef": "2 Samuel 3:28",
+      "correctOptionId": "true",
+      "evidenceSpan": "Sou inocente, eu e meu reino",
+      "feedbackCorrect": "Inocência e pranto juntos.",
+      "feedbackWrong": {
+        "false": "Há declaração clara."
+      },
+      "hint": "Veja a declaração.",
+      "learningObjective": "Avaliar a distância do crime.",
+      "evidence": [
+        "2 Samuel 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 3:34, toque o que sustenta a injustiça da queda.",
+      "verseRef": "2 Samuel 3:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "estavam"
+        },
+        {
+          "id": "b",
+          "text": "mãos"
+        },
+        {
+          "id": "c",
+          "text": "atadas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mãos",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar grilhões.",
+      "evidence": [
+        "2 Samuel 3:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une o crime de Joabe e o pranto de Davi?",
+      "verseRef": "2 Samuel 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rei não compactua com a vingança e chora em público"
+        },
+        {
+          "id": "b",
+          "text": "Davi ordenou o assassinato em segredo"
+        },
+        {
+          "id": "c",
+          "text": "O luto esconde a culpa do rei"
+        },
+        {
+          "id": "d",
+          "text": "Abner caiu em guerra justa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou inocente, eu e meu reino",
+      "feedbackCorrect": "Distância do crime.",
+      "feedbackWrong": {
+        "b": "Joabe agiu sem Davi.",
+        "c": "O pranto é público.",
+        "d": "Caiu diante dos maus."
+      },
+      "hint": "Una inocência e pranto.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da distância do crime.",
+      "verseRef": "2 Samuel 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crime oculto de Joabe"
+        },
+        {
+          "id": "b",
+          "text": "Declaração de inocência"
+        },
+        {
+          "id": "c",
+          "text": "Pranto público por Abner"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sou inocente, eu e meu reino",
+      "feedbackCorrect": "Crime, inocência e pranto.",
+      "feedbackWrong": {
+        "default": "Comece pelo crime."
+      },
+      "hint": "O que fecha a cena?",
+      "learningObjective": "Encadear a dignidade.",
+      "evidence": [
+        "2 Samuel 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 3:33, complete: Será que Abner teve que morrer como um ___?",
+      "verseRef": "2 Samuel 3:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "vilão"
+        },
+        {
+          "id": "b",
+          "text": "herói"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "morrer como um vilão",
+      "feedbackCorrect": "Vilão.",
+      "feedbackWrong": {
+        "b": "Não é herói.",
+        "c": "Não é rei."
+      },
+      "hint": "Veja a pergunta do lamento.",
+      "learningObjective": "Lembrar vilão.",
+      "evidence": [
+        "2 Samuel 3:33"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 3:28 a Salmos 26:6?",
+      "verseRef": "2 Samuel 3:28",
+      "passageA": {
+        "ref": "2 Samuel 3:28"
+      },
+      "passageB": {
+        "ref": "Salmos 26:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mãos inocentes"
+        },
+        {
+          "id": "b",
+          "text": "Culpa compartilhada"
+        },
+        {
+          "id": "c",
+          "text": "Vingança celebrada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou inocente, eu e meu reino",
+      "feedbackCorrect": "Inocência diante de Deus.",
+      "feedbackWrong": {
+        "b": "Ele se declara limpo.",
+        "c": "Há luto, não festa."
+      },
+      "hint": "Compare a inocência.",
+      "learningObjective": "Ligar à inocência.",
+      "evidence": [
+        "2 Samuel 3:28",
+        "Salmos 26:6"
+      ]
+    }
+  ]
+}

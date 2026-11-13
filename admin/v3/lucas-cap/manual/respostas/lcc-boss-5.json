@@ -1,0 +1,632 @@
+{
+  "study": {
+    "passageRef": "Lucas 24:30–35",
+    "passages": [
+      { "ref": "Lucas 24:30–35" },
+      { "ref": "Lucas 20:21–26" },
+      { "ref": "Lucas 21:1–6" },
+      { "ref": "Lucas 22:40–45" },
+      { "ref": "Lucas 23:38–43" }
+    ],
+    "context": "Esta travessia revisa o tributo a César, a oferta da viúva, a oração no monte, a promessa na cruz e a mesa em Emaús. Os relatos vão da pergunta sobre o tributo até o reconhecimento à mesa.",
+    "keyword": "Entrega",
+    "keywordGloss": "Entregar é dar a Deus o que é dele e aceitar a vontade do Pai.",
+    "focusQuestion": "Quando a obediência custa caro, você entrega a própria vontade ou tenta segurar o cálice?",
+    "reflectionPrompts": [
+      "César e Deus",
+      "O sustento da viúva",
+      "O pão partido"
+    ],
+    "facts": [
+      {
+        "text": "Jesus manda dar a César o que é de César e a Deus o que é de Deus.",
+        "evidenceRef": "Lucas 20:25",
+        "evidenceSpan": "Deem, pois, a César o que é de César e a Deus o que é de Deus."
+      },
+      {
+        "text": "Jesus diz que a viúva pobre deu mais do que todos.",
+        "evidenceRef": "Lucas 21:3",
+        "evidenceSpan": "esta viúva pobre deu mais do que todos"
+      },
+      {
+        "text": "A viúva, da sua pobreza, deu tudo o que possuía, o seu sustento.",
+        "evidenceRef": "Lucas 21:4",
+        "evidenceSpan": "da sua pobreza, deu tudo o que possuía, o seu sustento"
+      },
+      {
+        "text": "Jesus pede que a vontade do Pai prevaleça sobre a dele.",
+        "evidenceRef": "Lucas 22:42",
+        "evidenceSpan": "não se faça a minha vontade, mas a tua"
+      },
+      {
+        "text": "Jesus diz que hoje o homem estará com ele no Paraíso.",
+        "evidenceRef": "Lucas 23:43",
+        "evidenceSpan": "hoje estarás comigo no Paraíso"
+      },
+      {
+        "text": "Os onze anunciam que o Senhor ressuscitou e apareceu a Simão.",
+        "evidenceRef": "Lucas 24:34",
+        "evidenceSpan": "o Senhor ressuscitou e já se apresentou a Simão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cálice",
+        "gloss": "A vontade do Pai que Jesus pede para afastar e, ainda assim, aceita."
+      },
+      {
+        "term": "Paraíso",
+        "gloss": "O lugar da promessa de Jesus ao homem na cruz: companhia com ele naquele dia."
+      },
+      {
+        "term": "ressuscitou",
+        "gloss": "O anúncio dos onze: o Senhor venceu a morte e apareceu a Simão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus separa César e Deus",
+        "evidenceRef": "Lucas 20:25"
+      },
+      {
+        "label": "A viúva dá o sustento inteiro",
+        "evidenceRef": "Lucas 21:4"
+      },
+      {
+        "label": "Jesus aceita o cálice do Pai",
+        "evidenceRef": "Lucas 22:42"
+      },
+      {
+        "label": "O pão revela o Senhor vivo",
+        "evidenceRef": "Lucas 24:30–31"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jesus pede que o cálice passe e, na mesma frase, entrega a decisão à vontade do Pai.",
+        "marker": "entretanto",
+        "evidenceRef": "Lucas 22:42"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os outros deram do que sobrava; a viúva deu tudo a partir da pobreza.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 21:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois do pão, os olhos se abrem e eles reconhecem Jesus.",
+        "marker": "Então",
+        "evidenceRef": "Lucas 24:31"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Marcos 12:17",
+        "bridge": "César e Deus"
+      },
+      {
+        "ref": "Marcos 14:36",
+        "bridge": "Cálice e vontade"
+      },
+      {
+        "ref": "Atos 2:32",
+        "bridge": "Jesus ressuscitado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus manda entregar a César também o que pertence a Deus.",
+        "why": "A frase separa as duas partes: a César o que é de César, e a Deus o que é de Deus."
+      },
+      {
+        "text": "A viúva deu menos do que os ricos, porque as moedas eram pequenas.",
+        "why": "Jesus diz que ela deu mais do que todos: da pobreza, entregou tudo, o sustento."
+      },
+      {
+        "text": "Os dois de Emaús reconhecem Jesus ainda no caminho, antes de chegar à mesa.",
+        "why": "Os olhos se abrem à mesa, depois que ele parte o pão; o ardor do caminho eles só recordam em seguida."
+      }
+    ],
+    "centralInsight": "Jesus se entrega e vive",
+    "anchorQuestion": "O que Jesus prometeu ao homem na cruz que pediu para ser lembrado?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 21:3, Jesus afirma que a viúva pobre deu mais do que todos.",
+      "verseRef": "Lucas 21:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "esta viúva pobre deu mais do que todos",
+      "feedbackCorrect": "Jesus declara que a oferta dela foi maior que a de todos os outros.",
+      "feedbackWrong": {
+        "false": "O versículo diz que esta viúva pobre deu mais do que todos."
+      },
+      "hint": "Ouça o julgamento de Jesus sobre a oferta dela.",
+      "learningObjective": "Observar o julgamento de Jesus sobre a oferta da viúva.",
+      "evidence": ["Lucas 21:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 20:24, toque de quem são a efígie e a inscrição.",
+      "verseRef": "Lucas 20:24",
+      "options": [
+        { "id": "a", "text": "denário" },
+        { "id": "b", "text": "efígie" },
+        { "id": "c", "text": "César" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "É de César",
+      "feedbackCorrect": "A resposta deles nomeia o dono da imagem e da inscrição.",
+      "feedbackWrong": {
+        "a": "O denário é a moeda pedida; o dono da imagem vem na resposta.",
+        "b": "A efígie é o que está na moeda; o dono vem na resposta deles."
+      },
+      "hint": "A resposta deles nomeia o dono, no fim do versículo.",
+      "learningObjective": "Identificar de quem são a imagem e a inscrição na moeda.",
+      "evidence": ["Lucas 20:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 22:40, o que Jesus pediu aos discípulos ao chegar?",
+      "verseRef": "Lucas 22:40",
+      "options": [
+        { "id": "a", "text": "Que orassem para não cair em tentação" },
+        { "id": "b", "text": "Que dormissem até ele terminar" },
+        { "id": "c", "text": "Que voltassem na mesma hora" },
+        { "id": "d", "text": "Que levassem o cálice ao anjo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Orem para que não caiam em tentação",
+      "feedbackCorrect": "Ao chegar ao lugar, Jesus pede que orem para não cair em tentação.",
+      "feedbackWrong": {
+        "b": "O sono aparece depois; aqui o pedido é oração contra a tentação.",
+        "c": "O texto não manda voltar; manda orar naquele lugar.",
+        "d": "O cálice entra na oração de Jesus; o pedido aos discípulos é outro."
+      },
+      "hint": "Leia a frase que Jesus diz ao chegar ao lugar.",
+      "learningObjective": "Observar o pedido de Jesus aos discípulos no monte.",
+      "evidence": ["Lucas 22:40"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 22:44 na ordem do texto.",
+      "verseRef": "Lucas 22:44",
+      "options": [
+        { "id": "a", "text": "E, em agonia, orava mais intensamente" },
+        { "id": "b", "text": "Seu suor se tornou como gotas de sangue" },
+        { "id": "c", "text": "caindo sobre a terra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "em agonia, orava mais intensamente",
+      "feedbackCorrect": "A agonia intensifica a oração, e o suor cai à terra como sangue.",
+      "feedbackWrong": {
+        "default": "Comece pela agonia da oração; a queda à terra fecha o versículo."
+      },
+      "hint": "O versículo começa pelo modo da oração.",
+      "learningObjective": "Reconhecer a sequência de Lucas 22:44.",
+      "evidence": ["Lucas 22:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 21:2, o que a viúva pobre lançou ali?",
+      "verseRef": "Lucas 21:2",
+      "options": [
+        { "id": "a", "text": "pedras" },
+        { "id": "b", "text": "moedas" },
+        { "id": "c", "text": "pães" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "duas pequenas moedas",
+      "feedbackCorrect": "Ela lança ali duas pequenas moedas, e Jesus observa o gesto.",
+      "feedbackWrong": {
+        "a": "O versículo fala em moedas lançadas ali, não em pedras.",
+        "c": "O pão aparece em Emaús; neste versículo ela lança moedas."
+      },
+      "hint": "Veja o que vem depois de duas pequenas.",
+      "learningObjective": "Lembrar o que a viúva lançou no gazofilácio.",
+      "evidence": ["Lucas 21:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 20:25 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 20:25",
+      "passageA": { "ref": "Lucas 20:25" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus separa o que cabe a César do que cabe a Deus."
+      },
+      "options": [
+        { "id": "a", "text": "Império leva tudo" },
+        { "id": "b", "text": "Partilha entre ambos" },
+        { "id": "c", "text": "Multidão define o valor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a César o que é de César e a Deus o que é de Deus",
+      "feedbackCorrect": "A frase reparte: a César o que é dele, e a Deus o que é de Deus.",
+      "feedbackWrong": {
+        "a": "César não recebe tudo; a frase reserva a Deus o que é de Deus.",
+        "c": "A multidão não define o valor; Jesus é quem faz a partilha."
+      },
+      "hint": "Veja os dois nomes que recebem o que é deles.",
+      "learningObjective": "Ligar Lucas 20:25 à distinção entre César e Deus.",
+      "evidence": ["Lucas 20:25"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 23:38, toque o título escrito na inscrição acima dele.",
+      "verseRef": "Lucas 23:38",
+      "options": [
+        { "id": "a", "text": "REI DOS JUDEUS" },
+        { "id": "b", "text": "gregas" },
+        { "id": "c", "text": "romanas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ESTE É O REI DOS JUDEUS",
+      "feedbackCorrect": "A inscrição acima dele traz o título em letras de três línguas.",
+      "feedbackWrong": {
+        "b": "Gregas é uma das línguas da inscrição, não o título.",
+        "c": "Romanas é uma das línguas da inscrição, não o título."
+      },
+      "hint": "Olhe as palavras em maiúsculas no fim do versículo.",
+      "learningObjective": "Observar o título escrito na inscrição acima de Jesus.",
+      "evidence": ["Lucas 23:38"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 24:30 na ordem do texto.",
+      "verseRef": "Lucas 24:30",
+      "options": [
+        { "id": "a", "text": "E aconteceu que, estando eles à mesa" },
+        { "id": "b", "text": "tomou o pão, abençoou-o" },
+        { "id": "c", "text": "partiu-o e lhes deu" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tomou o pão, abençoou-o, partiu-o e lhes deu",
+      "feedbackCorrect": "À mesa, Jesus toma o pão, abençoa, parte e dá aos dois.",
+      "feedbackWrong": {
+        "default": "Comece pela mesa; o dar do pão fecha o versículo."
+      },
+      "hint": "O versículo começa com eles à mesa.",
+      "learningObjective": "Reconhecer a sequência de Lucas 24:30.",
+      "evidence": ["Lucas 24:30"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 22:42, Jesus pede que prevaleça a vontade dele, e não a do Pai.",
+      "verseRef": "Lucas 22:42",
+      "correctOptionId": "false",
+      "evidenceSpan": "não se faça a minha vontade, mas a tua",
+      "feedbackCorrect": "Ele pede o contrário: a vontade que prevalece é a do Pai.",
+      "feedbackWrong": {
+        "true": "A frase final inverte o pedido: a vontade que fica é a do Pai."
+      },
+      "hint": "Leia a frase que vem depois de entretanto.",
+      "learningObjective": "Compreender o contraste entre a vontade de Jesus e a do Pai.",
+      "evidence": ["Lucas 22:42"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 24:31, toque a palavra que marca o passo seguinte no relato.",
+      "verseRef": "Lucas 24:31",
+      "options": [
+        { "id": "a", "text": "olhos" },
+        { "id": "b", "text": "Então" },
+        { "id": "c", "text": "desapareceu" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Então, os olhos deles foram abertos",
+      "feedbackCorrect": "Então abre o passo seguinte: os olhos se abrem e eles o reconhecem.",
+      "feedbackWrong": {
+        "a": "Olhos é o que se abre; a palavra do passo está antes.",
+        "c": "Desapareceu vem depois do reconhecimento; não abre o versículo."
+      },
+      "hint": "Ela abre o versículo, antes dos olhos.",
+      "learningObjective": "Reconhecer a palavra que marca o resultado depois do pão.",
+      "evidence": ["Lucas 24:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Lucas 21:4 mostra entre a viúva e os outros?",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "Os dois grupos deram a mesma quantia" },
+        { "id": "b", "text": "Ela deu tudo e eles deram da sobra" },
+        { "id": "c", "text": "Ela deu menos por causa das moedas" },
+        { "id": "d", "text": "A oferta dela ficou sem valor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "deram como oferta do que lhes sobrava",
+      "feedbackCorrect": "Os outros deram da sobra; ela, da pobreza, deu tudo o que possuía.",
+      "feedbackWrong": {
+        "a": "As ofertas não ficam iguais: um lado deu da sobra, ela deu tudo.",
+        "c": "O tamanho das moedas não é a medida; ela deu o sustento inteiro.",
+        "d": "A oferta dela não perde valor; Jesus a coloca acima das outras."
+      },
+      "hint": "Compare a origem da oferta dela com a dos outros.",
+      "learningObjective": "Relacionar a oferta da viúva com a oferta feita da sobra.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência dos gestos desta etapa?",
+      "verseRef": "Lucas 20:25",
+      "options": [
+        { "id": "a", "text": "Jesus separa César e Deus" },
+        { "id": "b", "text": "Jesus aceita o cálice do Pai" },
+        { "id": "c", "text": "O pão revela o Senhor vivo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a Deus o que é de Deus",
+      "feedbackCorrect": "O diálogo sobre César abre a etapa; o cálice vem no monte; o pão fecha em Emaús.",
+      "feedbackWrong": {
+        "default": "Comece pela resposta sobre César; o pão de Emaús fecha a sequência."
+      },
+      "hint": "Siga a etapa: o tributo, o monte, depois a mesa.",
+      "learningObjective": "Compreender a sequência dos gestos centrais desta etapa.",
+      "evidence": ["Lucas 20:25", "Lucas 22:42", "Lucas 24:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 21:4, da qual condição a viúva deu tudo o que possuía?",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "riqueza" },
+        { "id": "b", "text": "doença" },
+        { "id": "c", "text": "pobreza" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "da sua pobreza, deu tudo o que possuía",
+      "feedbackCorrect": "Da pobreza ela deu tudo, o sustento, e não apenas o que sobrava.",
+      "feedbackWrong": {
+        "a": "Riqueza é o lado dos outros, que deram do que sobrava.",
+        "b": "O texto não fala em doença; nomeia a condição de onde ela deu."
+      },
+      "hint": "Veja a condição nomeada antes de ela dar tudo.",
+      "learningObjective": "Lembrar a condição de onde a viúva fez a oferta.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 22:42 a Marcos 14:36?",
+      "verseRef": "Lucas 22:42",
+      "passageA": { "ref": "Lucas 22:42" },
+      "passageB": { "ref": "Marcos 14:36" },
+      "options": [
+        { "id": "a", "text": "Fuga do monte" },
+        { "id": "b", "text": "Sono na tristeza" },
+        { "id": "c", "text": "Vontade do Pai" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não se faça a minha vontade, mas a tua",
+      "feedbackCorrect": "Os dois relatos fecham a oração na vontade do Pai, não na de Jesus.",
+      "feedbackWrong": {
+        "a": "O texto pede permanência na oração, não saída do monte.",
+        "b": "O sono é dos discípulos; a ponte entre os relatos é a oração."
+      },
+      "hint": "Compare o pedido final de Jesus nos dois relatos.",
+      "learningObjective": "Relacionar a oração de Lucas 22:42 com a de Marcos 14:36.",
+      "evidence": ["Lucas 22:42", "Marcos 14:36"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 23:43, toque a palavra que marca quando a promessa vale.",
+      "verseRef": "Lucas 23:43",
+      "options": [
+        { "id": "a", "text": "hoje" },
+        { "id": "b", "text": "verdade" },
+        { "id": "c", "text": "comigo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "Hoje situa a promessa naquele dia, não só num reino distante.",
+      "feedbackWrong": {
+        "b": "Verdade abre o juramento de Jesus; o tempo da promessa vem depois.",
+        "c": "Comigo indica a companhia; o tempo da promessa é outra palavra."
+      },
+      "hint": "Ela fica entre o juramento e o lugar nomeado no fim.",
+      "learningObjective": "Reconhecer a palavra que situa no tempo a promessa da cruz.",
+      "evidence": ["Lucas 23:43"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência do reconhecimento em Lucas 24:30–31?",
+      "verseRef": "Lucas 24:30–31",
+      "options": [
+        { "id": "a", "text": "Jesus toma o pão à mesa" },
+        { "id": "b", "text": "Ele abençoa, parte e dá" },
+        { "id": "c", "text": "Os olhos se abrem e o reconhecem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tomou o pão, abençoou-o, partiu-o e lhes deu",
+      "feedbackCorrect": "Jesus toma o pão, abençoa e dá; então os olhos se abrem e eles o reconhecem.",
+      "feedbackWrong": {
+        "default": "O pão vem primeiro; o reconhecimento fecha o movimento."
+      },
+      "hint": "Comece pelo que Jesus faz com o pão.",
+      "learningObjective": "Compreender os passos do reconhecimento à mesa.",
+      "evidence": ["Lucas 24:30", "Lucas 24:31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 21:3–4, Jesus mede a oferta pelo que a viúva entrega de si, não pelo tamanho das moedas.",
+      "verseRef": "Lucas 21:3–4",
+      "correctOptionId": "true",
+      "evidenceSpan": "deu tudo o que possuía, o seu sustento",
+      "feedbackCorrect": "Ele diz que ela deu mais, e o versículo seguinte mostra que deu o sustento inteiro.",
+      "feedbackWrong": {
+        "false": "As moedas são pequenas; a medida é o que ela deu de si."
+      },
+      "hint": "Compare o julgamento de Jesus com o que ela entregou.",
+      "learningObjective": "Interpretar a medida da oferta segundo o que a viúva entrega.",
+      "evidence": ["Lucas 21:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 22:42, toque o pronome da vontade que deve se cumprir.",
+      "verseRef": "Lucas 22:42",
+      "options": [
+        { "id": "a", "text": "cálice" },
+        { "id": "b", "text": "minha" },
+        { "id": "c", "text": "tua" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "mas a tua",
+      "feedbackCorrect": "A vontade que deve se cumprir é a do Pai, no pronome final.",
+      "feedbackWrong": {
+        "a": "O cálice é o que ele pede para afastar; não é o pronome da vontade.",
+        "b": "Minha é a vontade que ele pede que não se faça."
+      },
+      "hint": "Olhe o pronome no fim da frase, depois do contraste.",
+      "learningObjective": "Localizar a palavra que sustenta a entrega à vontade do Pai.",
+      "evidence": ["Lucas 22:42"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 24:30–31 sustenta sobre o reconhecimento?",
+      "verseRef": "Lucas 24:30–31",
+      "options": [
+        { "id": "a", "text": "O reconhecimento ocorre ainda no caminho" },
+        { "id": "b", "text": "O pão some e por isso ele desaparece" },
+        { "id": "c", "text": "Eles o reconhecem ao partir do pão" },
+        { "id": "d", "text": "Os olhos se fecham ao sentar à mesa" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "os olhos deles foram abertos e o reconheceram",
+      "feedbackCorrect": "À mesa ele parte o pão; então os olhos se abrem e eles o reconhecem.",
+      "feedbackWrong": {
+        "a": "O caminho eles só recordam depois; o reconhecimento ocorre à mesa.",
+        "b": "O pão é partido e dado; o sumiço é de Jesus, da vista deles.",
+        "d": "Os olhos se abrem à mesa; não se fecham quando ele se senta."
+      },
+      "hint": "Veja o que acontece com os olhos depois do gesto à mesa.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o reconhecimento.",
+      "evidence": ["Lucas 24:30–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a entrega de Jesus até ele ser reconhecido vivo?",
+      "verseRef": "Lucas 22:42",
+      "options": [
+        { "id": "a", "text": "Jesus aceita a vontade do Pai" },
+        { "id": "b", "text": "Na cruz ele promete companhia hoje" },
+        { "id": "c", "text": "No pão partido ele é reconhecido vivo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não se faça a minha vontade, mas a tua",
+      "feedbackCorrect": "A vontade do Pai no monte, a promessa na cruz e o reconhecimento no pão seguem juntos.",
+      "feedbackWrong": {
+        "default": "Comece pela oração no monte; o pão partido fecha."
+      },
+      "hint": "Siga o relato: o monte, a cruz, depois a mesa.",
+      "learningObjective": "Ver a entrega no monte, a promessa na cruz e o reconhecimento no pão.",
+      "evidence": ["Lucas 22:42", "Lucas 23:43", "Lucas 24:31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 23:43, em que lugar Jesus disse que o homem estaria com ele?",
+      "verseRef": "Lucas 23:43",
+      "options": [
+        { "id": "a", "text": "Paraíso" },
+        { "id": "b", "text": "templo" },
+        { "id": "c", "text": "abismo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "Jesus nomeia o lugar da companhia: naquele dia, com ele, no Paraíso.",
+      "feedbackWrong": {
+        "b": "O templo aparece na fala sobre as pedras; a promessa nomeia outro lugar.",
+        "c": "O texto não fala em abismo; nomeia o lugar da companhia com Jesus."
+      },
+      "hint": "A fala de Jesus nomeia o lugar no fim do versículo.",
+      "learningObjective": "Lembrar o lugar da promessa de Jesus ao homem na cruz.",
+      "evidence": ["Lucas 23:43"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 24:34 a Atos 2:32?",
+      "verseRef": "Lucas 24:34",
+      "passageA": { "ref": "Lucas 24:34" },
+      "passageB": { "ref": "Atos 2:32" },
+      "options": [
+        { "id": "a", "text": "Testemunho só de Simão" },
+        { "id": "b", "text": "Jesus ressuscitado" },
+        { "id": "c", "text": "Mesa ainda posta" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Senhor ressuscitou",
+      "feedbackCorrect": "Lucas anuncia que o Senhor ressuscitou; Pedro diz que Deus ressuscitou Jesus.",
+      "feedbackWrong": {
+        "a": "Simão é um dos que viram; Atos fala de testemunhas do mesmo fato.",
+        "c": "A mesa é o lugar do reconhecimento; a ponte é a ressurreição anunciada."
+      },
+      "hint": "Compare o que os dois textos anunciam sobre Jesus.",
+      "learningObjective": "Ligar o anúncio de Lucas 24:34 ao testemunho de Atos 2:32.",
+      "evidence": ["Lucas 24:34", "Atos 2:32"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 24:34, toque o verbo que diz o que houve com o Senhor.",
+      "verseRef": "Lucas 24:34",
+      "options": [
+        { "id": "a", "text": "Verdadeiramente" },
+        { "id": "b", "text": "ressuscitou" },
+        { "id": "c", "text": "Simão" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Senhor ressuscitou",
+      "feedbackCorrect": "Ressuscitou é o verbo do anúncio: o Senhor venceu a morte.",
+      "feedbackWrong": {
+        "a": "Verdadeiramente reforça o anúncio; não é o verbo do que houve.",
+        "c": "Simão é quem recebeu a aparição; o verbo está antes do nome dele."
+      },
+      "hint": "É o verbo entre o nome do Senhor e Simão.",
+      "learningObjective": "Localizar o verbo que sustenta o anúncio de que o Senhor vive.",
+      "evidence": ["Lucas 24:34"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a promessa feita na cruz?",
+      "verseRef": "Lucas 23:42–43",
+      "options": [
+        { "id": "a", "text": "O homem pede lembrança no reino" },
+        { "id": "b", "text": "Jesus responde naquela mesma hora" },
+        { "id": "c", "text": "A promessa vale ainda naquele dia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "O pedido no reino recebe resposta imediata: companhia com Jesus naquele dia.",
+      "feedbackWrong": {
+        "default": "O pedido vem primeiro; o dia da promessa fecha."
+      },
+      "hint": "Comece pelo que o homem pede a Jesus.",
+      "learningObjective": "Interpretar a sequência do pedido na cruz e da promessa de Jesus.",
+      "evidence": ["Lucas 23:42", "Lucas 23:43"]
+    }
+  ]
+}

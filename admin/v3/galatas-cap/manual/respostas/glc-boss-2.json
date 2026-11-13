@@ -1,0 +1,916 @@
+{
+  "study": {
+    "passageRef": "Gálatas 4:4–9",
+    "passages": [
+      {
+        "ref": "Gálatas 4:4–11"
+      },
+      {
+        "ref": "Gálatas 5:13–18"
+      },
+      {
+        "ref": "Gálatas 6:1–10"
+      }
+    ],
+    "context": "Esta Travessia revisa a filiação e herança, a liberdade que serve no amor e o cuidado mútuo que semeia para o Espírito.",
+    "keyword": "amor",
+    "keywordGloss": "Serviço da liberdade e cumprimento da lei de Cristo nas cargas uns dos outros.",
+    "focusQuestion": "Onde você precisa viver como filho livre que serve e carrega cargas?",
+    "reflectionPrompts": [
+      "Filhos e herdeiros",
+      "Liberdade para amar",
+      "Levar as cargas"
+    ],
+    "facts": [
+      {
+        "text": "Deus enviou o Filho para a adoção de filhos.",
+        "evidenceRef": "Gálatas 4:5",
+        "evidenceSpan": "recebêssemos a adoção de filhos"
+      },
+      {
+        "text": "O Espírito clama Aba, Pai; somos herdeiros.",
+        "evidenceRef": "Gálatas 4:6",
+        "evidenceSpan": "que clama: Aba, Pai"
+      },
+      {
+        "text": "Foram chamados à liberdade; sejam servos pelo amor.",
+        "evidenceRef": "Gálatas 5:13",
+        "evidenceSpan": "servos uns dos outros, pelo amor"
+      },
+      {
+        "text": "Andem no Espírito e não satisfarão a carne.",
+        "evidenceRef": "Gálatas 5:16",
+        "evidenceSpan": "andem no Espírito e jamais satisfarão os desejos da carne"
+      },
+      {
+        "text": "Levem as cargas uns dos outros.",
+        "evidenceRef": "Gálatas 6:2",
+        "evidenceSpan": "Levem as cargas uns dos outros"
+      },
+      {
+        "text": "Quem semeia para o Espírito colhe vida eterna.",
+        "evidenceRef": "Gálatas 6:8",
+        "evidenceSpan": "do Espírito colherá vida eterna"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "filhos",
+        "gloss": "Adotados; o Espírito clama Aba, Pai."
+      },
+      {
+        "term": "liberdade",
+        "gloss": "Chamado que serve pelo amor, não à carne."
+      },
+      {
+        "term": "cargas",
+        "gloss": "Pesos mútuos que cumprem a lei de Cristo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Filhos e herdeiros pelo Filho",
+        "evidenceRef": "Gálatas 4:4–7"
+      },
+      {
+        "label": "Liberdade que serve no amor",
+        "evidenceRef": "Gálatas 5:13–14"
+      },
+      {
+        "label": "Andar no Espírito",
+        "evidenceRef": "Gálatas 5:16–18"
+      },
+      {
+        "label": "Cargas e semeadura no Espírito",
+        "evidenceRef": "Gálatas 6:2–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Já não escravo, mas filho e herdeiro.",
+        "marker": "mas",
+        "evidenceRef": "Gálatas 4:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Liberdade; porém não para a carne.",
+        "marker": "porém",
+        "evidenceRef": "Gálatas 5:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Levar cargas cumpre a lei de Cristo.",
+        "marker": "assim",
+        "evidenceRef": "Gálatas 6:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 8:15",
+        "bridge": "Aba, Pai"
+      },
+      {
+        "ref": "Romanos 13:8",
+        "bridge": "Amar cumpre a lei"
+      },
+      {
+        "ref": "2 Coríntios 9:6",
+        "bridge": "Quem semeia colhe"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Voltar aos rudimentos aperfeiçoa a filiação.",
+        "why": "Paulo teme que o esforço tenha sido em vão."
+      },
+      {
+        "text": "Liberdade autoriza a carne.",
+        "why": "Não usem a liberdade como oportunidade para a carne."
+      },
+      {
+        "text": "Restaurar o caído é com dureza.",
+        "why": "O texto manda espírito de brandura."
+      }
+    ],
+    "centralInsight": "Filhos livres servem no amor e semeiam para o Espírito",
+    "anchorQuestion": "Como o bloco une filiação, liberdade e cuidado mútuo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Gálatas 4:7, já não é escravo, mas filho e herdeiro por Cristo.",
+      "verseRef": "Gálatas 4:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "já não é mais escravo, mas filho",
+      "feedbackCorrect": "A identidade é filho e herdeiro.",
+      "feedbackWrong": {
+        "false": "Releia o contraste do versículo."
+      },
+      "hint": "Olhe o mas.",
+      "learningObjective": "Relembrar filho e herdeiro.",
+      "evidence": [
+        "Gálatas 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 5:13, toque o meio do serviço mútuo.",
+      "verseRef": "Gálatas 5:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "carne"
+        },
+        {
+          "id": "c",
+          "text": "irmãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servos uns dos outros, pelo amor",
+      "feedbackCorrect": "O serviço é pelo amor.",
+      "feedbackWrong": {
+        "b": "Carne é a oportunidade proibida.",
+        "c": "Irmãos nomeia os leitores."
+      },
+      "hint": "Veja o meio do serviço.",
+      "learningObjective": "Identificar o amor no serviço.",
+      "evidence": [
+        "Gálatas 5:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gálatas 6:8, o que colhe quem semeia para o Espírito?",
+      "verseRef": "Gálatas 6:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vida eterna"
+        },
+        {
+          "id": "b",
+          "text": "Corrupção"
+        },
+        {
+          "id": "c",
+          "text": "Escravidão"
+        },
+        {
+          "id": "d",
+          "text": "Rudimentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do Espírito colherá vida eterna",
+      "feedbackCorrect": "A colheita do Espírito é vida eterna.",
+      "feedbackWrong": {
+        "b": "Corrupção é da carne.",
+        "c": "Escravidão é o passado.",
+        "d": "Rudimentos são o retorno temido."
+      },
+      "hint": "Leia o fim do contraste.",
+      "learningObjective": "Relembrar a colheita do Espírito.",
+      "evidence": [
+        "Gálatas 6:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 4:4–5 na ordem do texto.",
+      "verseRef": "Gálatas 4:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus enviou o seu Filho, nascido de mulher, nascido sob a lei"
+        },
+        {
+          "id": "b",
+          "text": "Para resgatar os que estavam sob a lei"
+        },
+        {
+          "id": "c",
+          "text": "a fim de que recebêssemos a adoção de filhos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Para resgatar os que estavam sob a lei",
+      "feedbackCorrect": "Envio, resgate e adoção.",
+      "feedbackWrong": {
+        "default": "Comece pelo envio."
+      },
+      "hint": "Siga 4:4–5.",
+      "learningObjective": "Seguir a ordem do envio.",
+      "evidence": [
+        "Gálatas 4:4–5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gálatas 6:2, complete: Levem as ___ uns dos outros.",
+      "verseRef": "Gálatas 6:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "cargas"
+        },
+        {
+          "id": "b",
+          "text": "estações"
+        },
+        {
+          "id": "c",
+          "text": "rudimentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levem as cargas uns dos outros",
+      "feedbackCorrect": "Cargas é o cuidado mútuo.",
+      "feedbackWrong": {
+        "b": "Estações são o retorno temido.",
+        "c": "Rudimentos são fracos e pobres."
+      },
+      "hint": "Veja o objeto de Levem.",
+      "learningObjective": "Lembrar a palavra cargas.",
+      "evidence": [
+        "Gálatas 6:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gálatas 5:13 comunica que se liga a este contexto?",
+      "verseRef": "Gálatas 5:13",
+      "passageA": {
+        "ref": "Gálatas 5:13"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Filhos livres servem no amor e semeiam para o Espírito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Servos uns aos outros pelo amor"
+        },
+        {
+          "id": "b",
+          "text": "Oportunidade para a carne"
+        },
+        {
+          "id": "c",
+          "text": "Guardar dias e anos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servos uns dos outros, pelo amor",
+      "feedbackCorrect": "A liberdade vira serviço pelo amor.",
+      "feedbackWrong": {
+        "b": "Carne é proibida.",
+        "c": "Guardar dias é o temor."
+      },
+      "hint": "Ligue liberdade e serviço.",
+      "learningObjective": "Ligar o contexto ao serviço no amor.",
+      "evidence": [
+        "Gálatas 5:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 4:6, toque o que o Espírito clama.",
+      "verseRef": "Gálatas 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aba"
+        },
+        {
+          "id": "b",
+          "text": "coração"
+        },
+        {
+          "id": "c",
+          "text": "lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que clama: Aba, Pai",
+      "feedbackCorrect": "O Espírito clama Aba, Pai.",
+      "feedbackWrong": {
+        "b": "Coração é onde ele é enviado.",
+        "c": "Lei é o domínio do passado."
+      },
+      "hint": "Veja a palavra após clama.",
+      "learningObjective": "Identificar o clamor Aba.",
+      "evidence": [
+        "Gálatas 4:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 5:13–14 na ordem do texto.",
+      "verseRef": "Gálatas 5:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "foram chamados à liberdade"
+        },
+        {
+          "id": "b",
+          "text": "não usem essa liberdade como oportunidade para a carne"
+        },
+        {
+          "id": "c",
+          "text": "Ame o seu próximo como a si mesmo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "foram chamados à liberdade",
+      "feedbackCorrect": "Chamado, limite e amor.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "hint": "Siga 5:13–14.",
+      "learningObjective": "Seguir a ordem da liberdade.",
+      "evidence": [
+        "Gálatas 5:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gálatas 5:13, o porém autoriza a liberdade para a carne.",
+      "verseRef": "Gálatas 5:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém, não usem essa liberdade como oportunidade para a carne",
+      "feedbackCorrect": "O porém introduz a proibição.",
+      "feedbackWrong": {
+        "true": "O texto diz não usem."
+      },
+      "hint": "Leia o que o porém introduz.",
+      "learningObjective": "Ver o contraste da liberdade.",
+      "evidence": [
+        "Gálatas 5:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 5:13, toque a palavra que marca o limite da liberdade.",
+      "verseRef": "Gálatas 5:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "chamados"
+        },
+        {
+          "id": "c",
+          "text": "antes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, não usem essa liberdade",
+      "feedbackCorrect": "O porém marca o limite.",
+      "feedbackWrong": {
+        "b": "Chamados introduz o status.",
+        "c": "Antes introduz o serviço."
+      },
+      "hint": "Procure a conjunção do limite.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Gálatas 5:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Gálatas 4:6–7 estabelece entre filiação e Espírito?",
+      "verseRef": "Gálatas 4:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por serem filhos, Deus envia o Espírito que clama Aba"
+        },
+        {
+          "id": "b",
+          "text": "O Espírito torna escravos"
+        },
+        {
+          "id": "c",
+          "text": "Herdeiro dispensa o Espírito"
+        },
+        {
+          "id": "d",
+          "text": "Aba prova mérito da lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por serem filhos, Deus enviou ao nosso coração o Espírito",
+      "feedbackCorrect": "A filiação precede o Espírito.",
+      "feedbackWrong": {
+        "b": "Filhos, não escravos.",
+        "c": "Herdeiro segue a filiação.",
+        "d": "Aba não é mérito da lei."
+      },
+      "hint": "Leia a causa por serem filhos.",
+      "learningObjective": "Relacionar filiação e Espírito.",
+      "evidence": [
+        "Gálatas 4:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "Gálatas 4:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos confirmados pelo Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Liberdade vira serviço no amor"
+        },
+        {
+          "id": "c",
+          "text": "Cargas mútuas e semeadura no Espírito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "já não é mais escravo, mas filho",
+      "feedbackCorrect": "Filiação, liberdade e então cargas.",
+      "feedbackWrong": {
+        "default": "Comece pela filiação."
+      },
+      "hint": "Pense no fluxo do bloco.",
+      "learningObjective": "Ordenar o bloco.",
+      "evidence": [
+        "Gálatas 4:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gálatas 6:8, complete a conjunção do contraste: ___ aquele que semeia para o Espírito.",
+      "verseRef": "Gálatas 6:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "pois"
+        },
+        {
+          "id": "c",
+          "text": "assim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas aquele que semeia para o Espírito",
+      "feedbackCorrect": "O mas introduz a semeadura para o Espírito.",
+      "feedbackWrong": {
+        "b": "Pois abre a regra geral.",
+        "c": "Assim aparece em 6:2."
+      },
+      "hint": "Veja a conjunção do segundo lado.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": [
+        "Gálatas 6:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gálatas 4:6 a Romanos 8:15?",
+      "verseRef": "Gálatas 4:6",
+      "passageA": {
+        "ref": "Gálatas 4:6"
+      },
+      "passageB": {
+        "ref": "Romanos 8:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito de adoção: Aba"
+        },
+        {
+          "id": "b",
+          "text": "Semeadura da carne"
+        },
+        {
+          "id": "c",
+          "text": "Guardar estações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que clama: Aba, Pai",
+      "feedbackCorrect": "Ambos ligam o Espírito ao clamor Aba.",
+      "feedbackWrong": {
+        "b": "Carne colhe corrupção.",
+        "c": "Estações são o retorno."
+      },
+      "hint": "Compare o clamor Aba.",
+      "learningObjective": "Ligar o Espírito de adoção.",
+      "evidence": [
+        "Gálatas 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 6:2, toque a palavra que marca o resultado de levar cargas.",
+      "verseRef": "Gálatas 6:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "assim"
+        },
+        {
+          "id": "b",
+          "text": "Levem"
+        },
+        {
+          "id": "c",
+          "text": "Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e, assim, estarão cumprindo a lei de Cristo",
+      "feedbackCorrect": "O assim liga cargas ao cumprimento.",
+      "feedbackWrong": {
+        "b": "Levem é o mando.",
+        "c": "Cristo nomeia a lei."
+      },
+      "hint": "Procure o marcador do resultado.",
+      "learningObjective": "Tocar o marcador de resultado.",
+      "evidence": [
+        "Gálatas 6:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do andar no Espírito.",
+      "verseRef": "Gálatas 5:16–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andem no Espírito contra a carne"
+        },
+        {
+          "id": "b",
+          "text": "Carne e Espírito em conflito"
+        },
+        {
+          "id": "c",
+          "text": "Guiados pelo Espírito, não sob a lei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "guiados pelo Espírito, não estão sob a lei",
+      "feedbackCorrect": "Andar, conflito e então a guia.",
+      "feedbackWrong": {
+        "default": "Comece pelo andar."
+      },
+      "hint": "Siga 5:16–18.",
+      "learningObjective": "Ordenar o andar no Espírito.",
+      "evidence": [
+        "Gálatas 5:16–18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo o bloco, voltar aos rudimentos e usar a liberdade para a carne aperfeiçoam a filiação.",
+      "verseRef": "Gálatas 5:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "não usem essa liberdade como oportunidade para a carne",
+      "feedbackCorrect": "Rudimentos e carne são avisos, não progresso.",
+      "feedbackWrong": {
+        "true": "O texto rejeita rudimentos e carne."
+      },
+      "hint": "Una 4:9 e 5:13.",
+      "learningObjective": "Avaliar a leitura errada do progresso.",
+      "evidence": [
+        "Gálatas 5:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 6:1, toque o trecho que sustenta o modo da restauração.",
+      "verseRef": "Gálatas 6:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "brandura"
+        },
+        {
+          "id": "b",
+          "text": "falta"
+        },
+        {
+          "id": "c",
+          "text": "tentados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "restaurá-lo com espírito de brandura",
+      "feedbackCorrect": "Brandura sustenta o modo certo.",
+      "feedbackWrong": {
+        "b": "Falta é o problema.",
+        "c": "Tentados é o risco."
+      },
+      "hint": "Veja o modo de restaurar.",
+      "learningObjective": "Tocar o trecho da brandura.",
+      "evidence": [
+        "Gálatas 6:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura o bloco sustenta melhor?",
+      "verseRef": "Gálatas 5:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos livres servem no amor e semeiam no Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Escravidão sob rudimentos é madura"
+        },
+        {
+          "id": "c",
+          "text": "Liberdade autoriza a carne"
+        },
+        {
+          "id": "d",
+          "text": "Cargas anulam a lei de Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servos uns dos outros, pelo amor",
+      "feedbackCorrect": "Filiação, liberdade e cargas no Espírito formam o bloco.",
+      "feedbackWrong": {
+        "b": "Rudimentos são fracos.",
+        "c": "Carne é proibida.",
+        "d": "Cargas cumprem a lei de Cristo."
+      },
+      "hint": "Una filiação, liberdade e cargas.",
+      "learningObjective": "Escolher a interpretação do bloco.",
+      "evidence": [
+        "Gálatas 5:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do bloco.",
+      "verseRef": "Gálatas 6:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adoção com clamor Aba, Pai"
+        },
+        {
+          "id": "b",
+          "text": "Livres para servir pelo amor"
+        },
+        {
+          "id": "c",
+          "text": "Cargas mútuas e colheita no Espírito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Levem as cargas uns dos outros",
+      "feedbackCorrect": "Adoção, liberdade e então a semeadura.",
+      "feedbackWrong": {
+        "default": "A semeadura fecha."
+      },
+      "hint": "Siga o arco do bloco.",
+      "learningObjective": "Encadear adoção, liberdade e semeadura.",
+      "evidence": [
+        "Gálatas 6:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gálatas 4:7, complete: também é ___ de Deus por meio de Cristo.",
+      "verseRef": "Gálatas 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "herdeiro"
+        },
+        {
+          "id": "b",
+          "text": "escravo"
+        },
+        {
+          "id": "c",
+          "text": "rudimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "também é herdeiro de Deus por meio de Cristo",
+      "feedbackCorrect": "Herdeiro completa a filiação.",
+      "feedbackWrong": {
+        "b": "Escravo é o passado.",
+        "c": "Rudimento é o retorno."
+      },
+      "hint": "Veja o que o filho também é.",
+      "learningObjective": "Lembrar o termo herdeiro.",
+      "evidence": [
+        "Gálatas 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gálatas 5:14 a Romanos 13:8?",
+      "verseRef": "Gálatas 5:14",
+      "passageA": {
+        "ref": "Gálatas 5:14"
+      },
+      "passageB": {
+        "ref": "Romanos 13:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar cumpre a lei"
+        },
+        {
+          "id": "b",
+          "text": "Colheita da carne"
+        },
+        {
+          "id": "c",
+          "text": "Guardar meses"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ame o seu próximo como a si mesmo",
+      "feedbackCorrect": "Ambos ligam amor e cumprimento da lei.",
+      "feedbackWrong": {
+        "b": "Carne colhe corrupção.",
+        "c": "Meses são o retorno."
+      },
+      "hint": "Compare amor e lei.",
+      "learningObjective": "Ligar o amor que cumpre a lei.",
+      "evidence": [
+        "Gálatas 5:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 4:9, toque o trecho que sustenta o erro de voltar atrás.",
+      "verseRef": "Gálatas 4:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "rudimentos fracos"
+        },
+        {
+          "id": "b",
+          "text": "conhecendo"
+        },
+        {
+          "id": "c",
+          "text": "melhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rudimentos fracos e pobres",
+      "feedbackCorrect": "Rudimentos fracos nomeia o retorno.",
+      "feedbackWrong": {
+        "b": "Conhecendo descreve o presente.",
+        "c": "Melhor corrige a frase."
+      },
+      "hint": "Veja o objeto de voltando.",
+      "learningObjective": "Tocar o trecho do retorno.",
+      "evidence": [
+        "Gálatas 4:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do cuidado até a colheita.",
+      "verseRef": "Gálatas 6:1–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Restaurar com brandura"
+        },
+        {
+          "id": "b",
+          "text": "Levar as cargas uns dos outros"
+        },
+        {
+          "id": "c",
+          "text": "Semear para o Espírito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "do Espírito colherá vida eterna",
+      "feedbackCorrect": "Brandura, cargas e semeadura.",
+      "feedbackWrong": {
+        "default": "A semeadura fecha."
+      },
+      "hint": "Siga 6:1–8.",
+      "learningObjective": "Encadear brandura, cargas e semeadura.",
+      "evidence": [
+        "Gálatas 6:1–8"
+      ]
+    }
+  ]
+}

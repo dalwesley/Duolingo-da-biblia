@@ -1,0 +1,717 @@
+{
+  "study": {
+    "passageRef": "Daniel 6:10–15",
+    "passages": [
+      {
+        "ref": "Daniel 6:10–15"
+      },
+      {
+        "ref": "Daniel 6:16–18"
+      }
+    ],
+    "context": "Inimigos conseguem um edito: quem orar a outro que não o rei irá à cova dos leões. Daniel sabe do decreto e mantém a oração como antes.",
+    "keyword": "orava",
+    "keywordGloss": "A prática fiel de Daniel: três vezes ao dia, de joelhos, diante de Deus.",
+    "focusQuestion": "Que hábito de oração você manteria mesmo sob pressão de uma lei contrária?",
+    "reflectionPrompts": [
+      "Janelas abertas",
+      "Três vezes ao dia",
+      "Deus que livra"
+    ],
+    "facts": [
+      {
+        "text": "Daniel sabia que a ordem fora assinada e voltou para casa.",
+        "evidenceRef": "Daniel 6:10",
+        "evidenceSpan": "ao saber que a ordem havia sido assinada, voltou para sua casa"
+      },
+      {
+        "text": "Havia janelas abertas voltadas para Jerusalém.",
+        "evidenceRef": "Daniel 6:10",
+        "evidenceSpan": "havia janelas abertas voltadas para Jerusalém"
+      },
+      {
+        "text": "Três vezes ao dia se punha de joelhos, orava e dava graças.",
+        "evidenceRef": "Daniel 6:10",
+        "evidenceSpan": "três vezes ao dia se punha de joelhos, orava e dava graças"
+      },
+      {
+        "text": "Homens encontraram Daniel orando e o acusaram ao rei.",
+        "evidenceRef": "Daniel 6:11",
+        "evidenceSpan": "encontraram Daniel orando e suplicando diante de seu Deus"
+      },
+      {
+        "text": "O rei ficou penalizado e tentou libertar Daniel até o pôr do sol.",
+        "evidenceRef": "Daniel 6:14",
+        "evidenceSpan": "se empenhou firmemente em seu coração para libertar Daniel"
+      },
+      {
+        "text": "O rei lançou Daniel na cova e disse que seu Deus o livre.",
+        "evidenceRef": "Daniel 6:16",
+        "evidenceSpan": "O teu Deus, a quem tu serves continuamente, que ele te livre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "orava",
+        "gloss": "Ação fiel de Daniel diante de Deus, três vezes ao dia."
+      },
+      {
+        "term": "janelas",
+        "gloss": "Abertas para Jerusalém: sinal da orientação da oração."
+      },
+      {
+        "term": "cova",
+        "gloss": "O destino do edito: a cova dos leões."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Daniel ora como costumava",
+        "evidenceRef": "Daniel 6:10"
+      },
+      {
+        "label": "Acusação perante o rei",
+        "evidenceRef": "Daniel 6:11–13"
+      },
+      {
+        "label": "Rei tenta libertar sem sucesso",
+        "evidenceRef": "Daniel 6:14–15"
+      },
+      {
+        "label": "Cova, selo e noite sem sono",
+        "evidenceRef": "Daniel 6:16–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Daniel sabe do edito, mas ora como costumava.",
+        "marker": null,
+        "evidenceRef": "Daniel 6:10"
+      },
+      {
+        "kind": "causa",
+        "text": "Acusam Daniel porque ele não faz caso do interdito e ora.",
+        "marker": "antes",
+        "evidenceRef": "Daniel 6:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "O rei, penalizado, trabalha até o pôr do sol para salvá-lo.",
+        "marker": null,
+        "evidenceRef": "Daniel 6:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 55:17",
+        "bridge": "Orar de tarde e manhã"
+      },
+      {
+        "ref": "Atos 5:29",
+        "bridge": "Obedecer a Deus antes"
+      },
+      {
+        "ref": "1 Tessalonicenses 5:17",
+        "bridge": "Orar sem cessar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Daniel parou de orar quando soube do decreto.",
+        "why": "6:10: sabendo da ordem, ora como costumava."
+      },
+      {
+        "text": "O rei ficou indiferente à condenação de Daniel.",
+        "why": "6:14: ficou penalizado e tentou libertá-lo."
+      },
+      {
+        "text": "Daniel orava em segredo, com janelas fechadas.",
+        "why": "6:10: janelas abertas voltadas para Jerusalém."
+      }
+    ],
+    "centralInsight": "A fidelidade na oração não muda por causa de leis humanas.",
+    "anchorQuestion": "Segundo Daniel 6:10, quantas vezes ao dia Daniel orava?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 6:10, Daniel orava três vezes ao dia de joelhos, como costumava.",
+      "verseRef": "Daniel 6:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "três vezes ao dia se punha de joelhos, orava e dava graças",
+      "feedbackCorrect": "Ele mantém a prática: três vezes ao dia, de joelhos.",
+      "feedbackWrong": {
+        "false": "Releia 6:10: três vezes ao dia."
+      },
+      "hint": "Veja a frequência da oração.",
+      "learningObjective": "Observar a prática fiel de Daniel.",
+      "evidence": [
+        "Daniel 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 6:10, toque para onde as janelas estavam voltadas.",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "janelas abertas voltadas para Jerusalém",
+      "feedbackCorrect": "As janelas estavam voltadas para Jerusalém.",
+      "hint": "Procure o destino das janelas.",
+      "learningObjective": "Identificar a orientação da oração.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "ordem"
+        },
+        {
+          "id": "c",
+          "text": "joelhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Ordem\" é o edito, não o destino das janelas.",
+        "c": "\"Joelhos\" descreve a postura, não o destino."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 6:16, o que o rei deseja que o Deus de Daniel faça?",
+      "verseRef": "Daniel 6:16",
+      "evidenceSpan": "O teu Deus, a quem tu serves continuamente, que ele te livre",
+      "feedbackCorrect": "O rei deseja que o Deus de Daniel o livre.",
+      "hint": "Veja a fala do rei na cova.",
+      "learningObjective": "Observar a esperança do rei.",
+      "evidence": [
+        "Daniel 6:16"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Que o abandone"
+        },
+        {
+          "id": "b",
+          "text": "Que o livre"
+        },
+        {
+          "id": "c",
+          "text": "Que cale a oração"
+        },
+        {
+          "id": "d",
+          "text": "Que mude a lei"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O rei pede livramento, não abandono.",
+        "c": "Não há pedido para calar a oração.",
+        "d": "A lei não se pode mudar (6:15)."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 6:10 na ordem do texto.",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "três vezes ao dia se punha de joelhos, orava e dava graças",
+      "feedbackCorrect": "Saber do edito, janelas a Jerusalém, orar como costumava.",
+      "hint": "Comece pelo saber da ordem.",
+      "learningObjective": "Reconhecer a sequência de 6:10.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "ao saber que a ordem havia sido assinada, voltou para sua casa"
+        },
+        {
+          "id": "b",
+          "text": "havia janelas abertas voltadas para Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "três vezes ao dia se punha de joelhos, orava e dava graças"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo saber; a oração fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 6:10, que verbo descreve a ação principal de Daniel diante de Deus?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "orava e dava graças diante de seu Deus",
+      "feedbackCorrect": "Ele orava e dava graças diante de seu Deus.",
+      "hint": "É o verbo da petição.",
+      "learningObjective": "Lembrar a ação central.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fugia"
+        },
+        {
+          "id": "b",
+          "text": "orava"
+        },
+        {
+          "id": "c",
+          "text": "calava"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "Ele volta para orar, não foge.",
+        "c": "Ele ora, não se cala."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 6:10 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "Mesmo com o edito, a oração continua como antes.",
+      "hint": "Compare o saber do decreto e a prática.",
+      "learningObjective": "Ligar a oração contínua ao decreto.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "passageA": {
+        "ref": "Daniel 6:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Daniel conhece o edito e mantém a oração três vezes ao dia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração sem mudar o hábito"
+        },
+        {
+          "id": "b",
+          "text": "Fuga imediata da cidade"
+        },
+        {
+          "id": "c",
+          "text": "Adoração só ao rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ele volta para casa e ora.",
+        "c": "Ele ora a Deus, não ao rei."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 6:14, o rei ficou indiferente e não tentou libertar Daniel.",
+      "verseRef": "Daniel 6:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "o rei ficou muito penalizado e se empenhou firmemente em seu coração para libertar Daniel",
+      "feedbackCorrect": "O rei ficou penalizado e tentou libertá-lo.",
+      "feedbackWrong": {
+        "true": "Releia 6:14: ele se empenhou para libertar."
+      },
+      "hint": "Veja a reação do rei.",
+      "learningObjective": "Compreender o esforço do rei.",
+      "evidence": [
+        "Daniel 6:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 6:13, toque a palavra que marca o contraste com o interdito.",
+      "verseRef": "Daniel 6:13",
+      "evidenceSpan": "antes, três vezes por dia, ele se dedica à sua oração",
+      "feedbackCorrect": "\"Antes\" marca: em vez do edito, ele ora.",
+      "hint": "Procure o contraste perto da menção da oração.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Daniel 6:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "antes"
+        },
+        {
+          "id": "b",
+          "text": "exilados"
+        },
+        {
+          "id": "c",
+          "text": "interdito"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Exilados\" identifica a origem, não o contraste.",
+        "c": "\"Interdito\" é o que ele não observa."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 6:10–13 relaciona o edito e a oração?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "ao saber que a ordem havia sido assinada",
+      "feedbackCorrect": "Sabendo do edito, Daniel ora como costumava; por isso é acusado.",
+      "hint": "Compare o saber e a prática.",
+      "learningObjective": "Relacionar edito e fidelidade.",
+      "evidence": [
+        "Daniel 6:10",
+        "Daniel 6:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O saber do edito não interrompe a oração"
+        },
+        {
+          "id": "b",
+          "text": "Daniel para de orar ao saber do edito"
+        },
+        {
+          "id": "c",
+          "text": "O edito manda orar três vezes"
+        },
+        {
+          "id": "d",
+          "text": "Daniel ignora Jerusalém nas janelas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "6:10 mostra continuidade.",
+        "c": "O edito proíbe petição a outro.",
+        "d": "As janelas estão voltadas para Jerusalém."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 6:10–18?",
+      "verseRef": "Daniel 6:10–18",
+      "evidenceSpan": "O teu Deus, a quem tu serves continuamente, que ele te livre",
+      "feedbackCorrect": "Oração fiel, acusação, esforço do rei, cova e noite sem sono.",
+      "hint": "Comece pela oração.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": [
+        "Daniel 6:10–18"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel ora como costumava"
+        },
+        {
+          "id": "b",
+          "text": "Acusação e esforço do rei"
+        },
+        {
+          "id": "c",
+          "text": "Cova dos leões e noite em jejum"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela oração; a cova fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 6:16, que lugar recebe Daniel por ordem do rei?",
+      "verseRef": "Daniel 6:16",
+      "evidenceSpan": "o lançou na cova dos leões",
+      "feedbackCorrect": "Daniel é lançado na cova dos leões.",
+      "hint": "É o destino nomeado no versículo.",
+      "learningObjective": "Lembrar o lugar da sentença.",
+      "evidence": [
+        "Daniel 6:16"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "templo"
+        },
+        {
+          "id": "b",
+          "text": "cova"
+        },
+        {
+          "id": "c",
+          "text": "trono"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "Não é o templo em 6:16.",
+        "c": "Não é o trono em 6:16."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 6:10 a Atos 5:29?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "orava e dava graças diante de seu Deus, como costumava fazer",
+      "feedbackCorrect": "Daniel obedece a Deus antes do edito; Atos: obedecer a Deus antes dos homens.",
+      "hint": "Compare a prioridade da obediência.",
+      "learningObjective": "Relacionar oração fiel e obedecer a Deus.",
+      "evidence": [
+        "Daniel 6:10",
+        "Atos 5:29"
+      ],
+      "passageA": {
+        "ref": "Daniel 6:10"
+      },
+      "passageB": {
+        "ref": "Atos 5:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Obedecer a Deus antes"
+        },
+        {
+          "id": "b",
+          "text": "Temer só a lei humana"
+        },
+        {
+          "id": "c",
+          "text": "Calar toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos priorizam Deus.",
+        "c": "Daniel continua orando."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 6:10–18, a fidelidade na oração muda por causa da lei dos medos e persas.",
+      "verseRef": "Daniel 6:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "Ele ora como costumava, apesar do edito.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 6:10."
+      },
+      "hint": "Veja a expressão \"como costumava\".",
+      "learningObjective": "Interpretar a constância da oração.",
+      "evidence": [
+        "Daniel 6:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 6:10, toque o trecho que mostra a continuidade do hábito.",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "\"Como costumava fazer\" sustenta a continuidade.",
+      "hint": "Procure a expressão final.",
+      "learningObjective": "Sustentar a continuidade da oração.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "costumava"
+        },
+        {
+          "id": "b",
+          "text": "assinada"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Assinada\" refere-se à ordem, não ao hábito.",
+        "c": "\"Graças\" é parte da oração, não o marcador de hábito."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 6:10–18 sustenta sobre a oração sob pressão?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "A fidelidade na oração permanece mesmo sob lei hostil.",
+      "hint": "Compare cada opção com 6:10 e 6:16.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A oração fiel permanece sob pressão da lei"
+        },
+        {
+          "id": "b",
+          "text": "A lei humana cancela o dever de orar"
+        },
+        {
+          "id": "c",
+          "text": "Daniel só ora quando o rei aprova"
+        },
+        {
+          "id": "d",
+          "text": "A cova prova que Deus abandonou Daniel"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Daniel ora apesar da lei.",
+        "c": "Ele ora contra o edito.",
+        "d": "O rei mesmo espera que Deus o livre."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da oração perseverante?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "três vezes ao dia se punha de joelhos, orava e dava graças",
+      "feedbackCorrect": "Salmos ora ao longo do dia; Daniel mantém três vezes; Paulo manda orar sem cessar.",
+      "hint": "Parta dos Salmos.",
+      "learningObjective": "Ver a oração no fio bíblico.",
+      "evidence": [
+        "Salmos 55:17",
+        "Daniel 6:10",
+        "1 Tessalonicenses 5:17"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Salmos: orar de tarde e manhã"
+        },
+        {
+          "id": "b",
+          "text": "Daniel: três vezes ao dia como costumava"
+        },
+        {
+          "id": "c",
+          "text": "Paulo: orar sem cessar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Salmos 55, Daniel 6 e 1 Tessalonicenses 5."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 6:10, que palavra nomeia as aberturas voltadas a Jerusalém?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "havia janelas abertas voltadas para Jerusalém",
+      "feedbackCorrect": "Janelas abertas: termo que marca a orientação da oração.",
+      "hint": "É o que estava aberto no quarto.",
+      "learningObjective": "Lembrar o termo da orientação.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "janelas"
+        },
+        {
+          "id": "b",
+          "text": "portões"
+        },
+        {
+          "id": "c",
+          "text": "muralhas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz janelas, não portões.",
+        "c": "O texto diz janelas, não muralhas."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 6:10 a 1 Tessalonicenses 5:17?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "três vezes ao dia se punha de joelhos, orava e dava graças",
+      "feedbackCorrect": "Nos dois textos, a oração é prática contínua.",
+      "hint": "Compare a constância da oração.",
+      "learningObjective": "Ligar a oração diária ao orar sem cessar.",
+      "evidence": [
+        "Daniel 6:10",
+        "1 Tessalonicenses 5:17"
+      ],
+      "passageA": {
+        "ref": "Daniel 6:10"
+      },
+      "passageB": {
+        "ref": "1 Tessalonicenses 5:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orar sem desistir"
+        },
+        {
+          "id": "b",
+          "text": "Orar só em festa"
+        },
+        {
+          "id": "c",
+          "text": "Calar diante do rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos apontam constância, não só festa.",
+        "c": "Daniel ora; não se cala."
+      }
+    }
+  ]
+}

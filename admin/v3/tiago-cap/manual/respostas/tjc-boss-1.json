@@ -1,0 +1,624 @@
+{
+  "study": {
+    "passageRef": "Tiago 1:2–5",
+    "passages": [
+      { "ref": "Tiago 1:2–5" },
+      { "ref": "Tiago 1:6–8" },
+      { "ref": "Tiago 2:1–9" },
+      { "ref": "Tiago 3:13–18" },
+      { "ref": "Tiago 4:7–12" },
+      { "ref": "Tiago 5:7–12" }
+    ],
+    "context": "Esta Travessia revisa Tiago 1–5: alegria na prova, fé sem acepção, sabedoria do alto, humildade perante Deus e paciência até a vinda do Senhor.",
+    "keyword": "fé",
+    "keywordGloss": "Confiança que se vê no caráter, nas relações e na espera paciente.",
+    "focusQuestion": "Em qual destes frutos — perseverança, amor sem favoritismo, mansidão, humildade ou paciência — você mais precisa crescer?",
+    "reflectionPrompts": [
+      "Fé que persevera",
+      "Amor sem acepção",
+      "Espera até a vinda"
+    ],
+    "facts": [
+      {
+        "text": "A provação da fé confirmada gera perseverança.",
+        "evidenceRef": "Tiago 1:3",
+        "evidenceSpan": "gera perseverança"
+      },
+      {
+        "text": "Fazer acepção de pessoas é pecado.",
+        "evidenceRef": "Tiago 2:9",
+        "evidenceSpan": "fazeis acepção de pessoas, cometeis pecado"
+      },
+      {
+        "text": "A sabedoria do alto é, primeiramente, pura e depois pacífica.",
+        "evidenceRef": "Tiago 3:17",
+        "evidenceSpan": "primeiramente, pura; depois, pacífica"
+      },
+      {
+        "text": "Quem se humilha na presença do Senhor será exaltado.",
+        "evidenceRef": "Tiago 4:10",
+        "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará"
+      },
+      {
+        "text": "Os irmãos devem ser pacientes até a vinda do Senhor.",
+        "evidenceRef": "Tiago 5:7",
+        "evidenceSpan": "sejam pacientes até a vinda do Senhor"
+      },
+      {
+        "text": "Quem resiste ao diabo o vê fugir.",
+        "evidenceRef": "Tiago 4:7",
+        "evidenceSpan": "resistam ao diabo, e ele fugirá de vós"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "perseverança",
+        "gloss": "Firmeza que a fé confirmada produz debaixo da prova."
+      },
+      {
+        "term": "mansidão",
+        "gloss": "Fruto da sabedoria que se mostra em boas ações."
+      },
+      {
+        "term": "paciência",
+        "gloss": "Espera firme até a vinda do Senhor, como o lavrador aguarda o fruto."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A prova gera perseverança e pedido com fé",
+        "evidenceRef": "Tiago 1:2–8"
+      },
+      {
+        "label": "A fé rejeita acepção e ama o próximo",
+        "evidenceRef": "Tiago 2:1–9"
+      },
+      {
+        "label": "A sabedoria do alto promove a paz",
+        "evidenceRef": "Tiago 3:13–18"
+      },
+      {
+        "label": "Sujeição, humildade e paciência até a vinda",
+        "evidenceRef": "Tiago 4:7–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "A fé confirmada na prova produz perseverança.",
+        "marker": "gera",
+        "evidenceRef": "Tiago 1:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deus dá sabedoria livremente, mas o pedido deve vir com fé, sem hesitar.",
+        "marker": "porém",
+        "evidenceRef": "Tiago 1:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "Não se queixem uns dos outros para que não sejam julgados.",
+        "marker": "para que",
+        "evidenceRef": "Tiago 5:9"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Romanos 5:3–4", "bridge": "Tribulação produz perseverança" },
+      { "ref": "Atos 10:34", "bridge": "Deus não faz acepção" },
+      { "ref": "1 Pedro 5:6", "bridge": "Humilhar-se traz exaltação" }
+    ],
+    "misreadings": [
+      {
+        "text": "Alegria na prova significa negar a dor do sofrimento.",
+        "why": "A alegria vem do que a prova produz: perseverança (1:3), não de fingir que não dói."
+      },
+      {
+        "text": "Preferir o rico na reunião é só organização, não pecado.",
+        "why": "Tiago 2:9 chama a acepção de pessoas de pecado."
+      },
+      {
+        "text": "Sabedoria verdadeira se prova só por discurso brilhante.",
+        "why": "Tiago 3:13–17 liga sabedoria a boas ações, mansidão e paz, não a discurso."
+      }
+    ],
+    "centralInsight": "A fé verdadeira se mostra no caráter e nas relações",
+    "anchorQuestion": "O que, segundo Tiago, mostra que a fé é verdadeira nas relações e no caráter?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Tiago 2:9, fazer acepção de pessoas não é pecado.",
+      "verseRef": "Tiago 2:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "fazeis acepção de pessoas, cometeis pecado",
+      "feedbackCorrect": "O versículo diz que acepção de pessoas é pecado.",
+      "feedbackWrong": {
+        "true": "Releia Tiago 2:9: fazer acepção de pessoas é cometer pecado."
+      },
+      "hint": "Veja o que Tiago chama de pecado no versículo.",
+      "learningObjective": "Observar que acepção de pessoas é pecado.",
+      "evidence": ["Tiago 2:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+      "verseRef": "Tiago 1:3",
+      "options": [
+        { "id": "a", "text": "perseverança" },
+        { "id": "b", "text": "provação" },
+        { "id": "c", "text": "confirmada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "A provação da fé confirmada gera perseverança.",
+      "feedbackWrong": {
+        "b": "A provação é o que gera; ela não é o fruto.",
+        "c": "Confirmada descreve a fé, não o que ela gera."
+      },
+      "hint": "Procure a palavra que fecha o versículo.",
+      "learningObjective": "Identificar o fruto da fé confirmada.",
+      "evidence": ["Tiago 1:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Tiago 4:7, o que acontece quando se resiste ao diabo?",
+      "verseRef": "Tiago 4:7",
+      "options": [
+        { "id": "a", "text": "Ele foge" },
+        { "id": "b", "text": "Ele se aproxima mais" },
+        { "id": "c", "text": "Ele se torna amigo" },
+        { "id": "d", "text": "Ele muda de nome" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "resistam ao diabo, e ele fugirá de vós",
+      "feedbackCorrect": "Ao resistir, o diabo foge.",
+      "feedbackWrong": {
+        "b": "O texto diz que ele foge, não que se aproxima.",
+        "c": "Não há amizade: o texto fala de resistência e fuga.",
+        "d": "O versículo não fala de mudar de nome."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar o resultado de resistir ao diabo.",
+      "evidence": ["Tiago 4:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Tiago 1:2 na ordem do texto.",
+      "verseRef": "Tiago 1:2",
+      "options": [
+        { "id": "a", "text": "Meus irmãos" },
+        { "id": "b", "text": "considerem como um motivo de grande alegria" },
+        { "id": "c", "text": "o passarem por diversas provações" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "considerem como um motivo de grande alegria o passarem por diversas provações",
+      "feedbackCorrect": "Primeiro o chamado aos irmãos, depois a alegria e, por fim, as provações.",
+      "feedbackWrong": {
+        "default": "Comece por \"Meus irmãos\"; as provações fecham o versículo."
+      },
+      "hint": "O versículo abre com o chamado aos irmãos.",
+      "learningObjective": "Seguir a ordem de Tiago 1:2.",
+      "evidence": ["Tiago 1:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Tiago 1:5, o que quem carece deve pedir a Deus?",
+      "verseRef": "Tiago 1:5",
+      "options": [
+        { "id": "a", "text": "riqueza" },
+        { "id": "b", "text": "sabedoria" },
+        { "id": "c", "text": "honra" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "carece de sabedoria, peça-a a Deus",
+      "feedbackCorrect": "Quem carece de sabedoria deve pedi-la a Deus.",
+      "feedbackWrong": {
+        "a": "O pedido do versículo não é por riqueza.",
+        "c": "O pedido do versículo não é por honra."
+      },
+      "hint": "Pense no que falta a quem não sabe atravessar a prova.",
+      "learningObjective": "Lembrar o que pedir a Deus em 1:5.",
+      "evidence": ["Tiago 1:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Tiago 5:7 comunica que se liga a este contexto?",
+      "verseRef": "Tiago 5:7",
+      "passageA": { "ref": "Tiago 5:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A Travessia revisa prova, acepção, sabedoria, humildade e a espera paciente até a vinda."
+      },
+      "options": [
+        { "id": "a", "text": "Paciência até a vinda" },
+        { "id": "b", "text": "Fuga de toda espera" },
+        { "id": "c", "text": "Pressa sem firmeza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sejam pacientes até a vinda do Senhor",
+      "feedbackCorrect": "Tiago chama à paciência até a vinda do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto manda esperar, não fugir da espera.",
+        "c": "O lavrador e a vinda pedem paciência, não pressa."
+      },
+      "hint": "Veja até quando os irmãos devem ser pacientes.",
+      "learningObjective": "Ligar o contexto da Travessia à paciência até a vinda.",
+      "evidence": ["Tiago 5:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Tiago 2:6, toque a quem os irmãos menosprezaram.",
+      "verseRef": "Tiago 2:6",
+      "options": [
+        { "id": "a", "text": "pobre" },
+        { "id": "b", "text": "ricos" },
+        { "id": "c", "text": "tribunais" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vós menosprezastes o pobre",
+      "feedbackCorrect": "Eles menosprezaram o pobre.",
+      "feedbackWrong": {
+        "b": "Os ricos oprimem; não são quem foi menosprezado.",
+        "c": "Tribunais são para onde os ricos arrastam, não quem foi menosprezado."
+      },
+      "hint": "Procure quem foi menosprezado no começo do versículo.",
+      "learningObjective": "Identificar quem foi menosprezado na reunião.",
+      "evidence": ["Tiago 2:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Tiago 3:15 na ordem do texto.",
+      "verseRef": "Tiago 3:15",
+      "options": [
+        { "id": "a", "text": "Essa sabedoria não vem do alto" },
+        { "id": "b", "text": "antes, é terrena" },
+        { "id": "c", "text": "animal e demoníaca" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca",
+      "feedbackCorrect": "Primeiro a origem negada, depois o contraste e a descrição tripla.",
+      "feedbackWrong": {
+        "default": "Comece pela origem; \"animal e demoníaca\" fecha o versículo."
+      },
+      "hint": "O versículo abre negando a origem.",
+      "learningObjective": "Seguir a ordem que descreve a sabedoria terrena.",
+      "evidence": ["Tiago 3:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Tiago 1:6, o pedido a Deus pode vir com hesitar e ainda assim ser pedido com fé.",
+      "verseRef": "Tiago 1:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Peça-a, porém, com fé, sem hesitar",
+      "feedbackCorrect": "O contraste é claro: pedir com fé e sem hesitar.",
+      "feedbackWrong": {
+        "true": "Releia 1:6: o pedido com fé exclui o hesitar."
+      },
+      "hint": "Compare \"com fé\" e \"sem hesitar\".",
+      "learningObjective": "Ver o contraste entre fé e hesitar no pedido.",
+      "evidence": ["Tiago 1:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Tiago 1:6, toque a palavra que marca o contraste no pedido a Deus.",
+      "verseRef": "Tiago 1:6",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "pois" },
+        { "id": "c", "text": "onda" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Peça-a, porém, com fé",
+      "feedbackCorrect": "O \"porém\" marca o contraste: Deus dá, mas o pedido exige fé.",
+      "feedbackWrong": {
+        "b": "\"Pois\" introduz a razão da advertência, não o contraste.",
+        "c": "\"Onda\" é a imagem de quem duvida, não o marcador."
+      },
+      "hint": "Procure a palavra logo após \"Peça-a\".",
+      "learningObjective": "Reconhecer o marcador de contraste no pedido.",
+      "evidence": ["Tiago 1:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Tiago 5:9 relaciona a queixa entre irmãos e o julgamento?",
+      "verseRef": "Tiago 5:9",
+      "options": [
+        { "id": "a", "text": "Não queixem para não serem julgados" },
+        { "id": "b", "text": "Queixem para acelerar o julgamento" },
+        { "id": "c", "text": "Queixem só em silêncio, sem risco" },
+        { "id": "d", "text": "O juiz está longe e não ouve queixas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não se queixem uns dos outros, para que não sejam julgados",
+      "feedbackCorrect": "A finalidade é clara: não queixar para não ser julgado.",
+      "feedbackWrong": {
+        "b": "O texto proíbe a queixa, não a incentiva.",
+        "c": "Não há queixa segura: o risco é ser julgado.",
+        "d": "O juiz está às portas, não longe."
+      },
+      "hint": "Leia a finalidade depois de \"para que\".",
+      "learningObjective": "Relacionar a queixa entre irmãos ao risco de julgamento.",
+      "evidence": ["Tiago 5:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o arco da fé em Tiago 1–3?",
+      "verseRef": "Tiago 1:2–3",
+      "options": [
+        { "id": "a", "text": "A prova gera perseverança e pedido com fé" },
+        { "id": "b", "text": "A fé rejeita acepção e ama o próximo" },
+        { "id": "c", "text": "A sabedoria do alto promove a paz" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "Primeiro a prova, depois o amor sem acepção e, por fim, a sabedoria pacífica.",
+      "feedbackWrong": {
+        "default": "Comece pela prova; a sabedoria do alto fecha o arco."
+      },
+      "hint": "Siga a ordem dos capítulos 1, 2 e 3.",
+      "learningObjective": "Compreender o movimento da fé em Tiago 1–3.",
+      "evidence": ["Tiago 1:2–3", "Tiago 2:8–9", "Tiago 3:17–18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Tiago 1:3, que verbo liga a fé confirmada ao seu fruto?",
+      "verseRef": "Tiago 1:3",
+      "options": [
+        { "id": "a", "text": "impede" },
+        { "id": "b", "text": "gera" },
+        { "id": "c", "text": "atrasa" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "O verbo mostra o resultado: a fé confirmada gera perseverança.",
+      "feedbackWrong": {
+        "a": "O texto não diz que a fé impede o fruto.",
+        "c": "O texto não fala de atraso; fala de produção."
+      },
+      "hint": "É o verbo entre a fé confirmada e a perseverança.",
+      "learningObjective": "Lembrar o verbo que marca o resultado da prova.",
+      "evidence": ["Tiago 1:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+      "verseRef": "Tiago 1:3",
+      "passageA": { "ref": "Tiago 1:3" },
+      "passageB": { "ref": "Romanos 5:3–4" },
+      "options": [
+        { "id": "a", "text": "Tribulação produz perseverança" },
+        { "id": "b", "text": "A prova apaga a esperança" },
+        { "id": "c", "text": "Só o fácil fortalece a fé" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "Nos dois textos, a tribulação ou prova produz perseverança.",
+      "feedbackWrong": {
+        "b": "Nos dois textos, a prova fortalece, não apaga a esperança.",
+        "c": "Os dois textos tratam da prova, não do que é fácil."
+      },
+      "hint": "Compare o que a tribulação ou prova produz.",
+      "learningObjective": "Relacionar a perseverança em Tiago e em Romanos.",
+      "evidence": ["Tiago 1:3", "Romanos 5:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Tiago 2:6, toque a palavra que marca a virada contra o desprezo ao pobre.",
+      "verseRef": "Tiago 2:6",
+      "options": [
+        { "id": "a", "text": "Entretanto" },
+        { "id": "b", "text": "oprimem" },
+        { "id": "c", "text": "tribunais" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, vós menosprezastes o pobre",
+      "feedbackCorrect": "\"Entretanto\" marca a virada: Deus escolheu os pobres, mas eles os menosprezaram.",
+      "feedbackWrong": {
+        "b": "\"Oprimem\" descreve a ação dos ricos, não a virada do argumento.",
+        "c": "\"Tribunais\" é o destino, não o marcador da virada."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador que introduz o contraste em 2:6.",
+      "evidence": ["Tiago 2:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeia a resposta humilde e paciente em Tiago 4–5?",
+      "verseRef": "Tiago 4:7–8",
+      "options": [
+        { "id": "a", "text": "Sujeição a Deus faz o diabo fugir" },
+        { "id": "b", "text": "Humildade perante o Senhor traz exaltação" },
+        { "id": "c", "text": "Paciência espera a vinda do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Sujeitem-se, portanto, a Deus",
+      "feedbackCorrect": "Primeiro a sujeição, depois a humildade exaltada e, por fim, a paciência.",
+      "feedbackWrong": {
+        "default": "Comece pela sujeição; a paciência até a vinda fecha o arco."
+      },
+      "hint": "Siga a ordem de Tiago 4 e depois 5.",
+      "learningObjective": "Compreender o movimento da humildade à paciência.",
+      "evidence": ["Tiago 4:7–10", "Tiago 5:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Tiago 3:13–17, a sabedoria verdadeira se mostra em boas ações e mansidão, e não só em discurso.",
+      "verseRef": "Tiago 3:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+      "feedbackCorrect": "O sábio mostra mansidão por boas ações, não por discurso vazio.",
+      "feedbackWrong": {
+        "false": "Releia 3:13: a sabedoria se mostra em boas ações e mansidão."
+      },
+      "hint": "Veja como o sábio deve \"mostrar\" a sabedoria.",
+      "learningObjective": "Interpretar o que sustenta a sabedoria verdadeira.",
+      "evidence": ["Tiago 3:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Tiago 1:5, toque o trecho que sustenta que Deus dá sabedoria sem repreender.",
+      "verseRef": "Tiago 1:5",
+      "options": [
+        { "id": "a", "text": "livremente" },
+        { "id": "b", "text": "carece" },
+        { "id": "c", "text": "algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a todos concede livremente e não censura",
+      "feedbackCorrect": "\"Livremente\" sustenta a dádiva generosa, sem censura.",
+      "feedbackWrong": {
+        "b": "\"Carece\" descreve a falta, não o jeito de Deus dar.",
+        "c": "\"Algum\" só introduz a condição, não a generosidade."
+      },
+      "hint": "Procure como Deus concede a todos.",
+      "learningObjective": "Sustentar com o texto a generosidade de Deus ao dar.",
+      "evidence": ["Tiago 1:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o arco de Tiago sustenta sobre a fé verdadeira?",
+      "verseRef": "Tiago 2:8–9",
+      "options": [
+        { "id": "a", "text": "A fé se mostra no caráter e nas relações" },
+        { "id": "b", "text": "A fé basta como discurso, sem amor" },
+        { "id": "c", "text": "Preferir o rico na reunião é só organização" },
+        { "id": "d", "text": "A sabedoria se prova só por eloquência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Amarás o teu próximo como a ti mesmo",
+      "feedbackCorrect": "A lei real e a rejeição da acepção mostram fé que se vê nas relações.",
+      "feedbackWrong": {
+        "b": "Tiago liga fé a amor concreto, não a discurso só.",
+        "c": "A acepção de pessoas é chamada de pecado.",
+        "d": "A sabedoria do alto se mostra em mansidão e paz."
+      },
+      "hint": "Compare cada opção com a lei real e a acepção.",
+      "learningObjective": "Escolher a leitura que o arco de Tiago sustenta.",
+      "evidence": ["Tiago 2:8–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio bíblico da prova que fortalece?",
+      "verseRef": "Tiago 1:2–3",
+      "options": [
+        { "id": "a", "text": "Tiago pede alegria porque a prova gera perseverança" },
+        { "id": "b", "text": "Paulo glória nas tribulações que produzem perseverança" },
+        { "id": "c", "text": "Pedro diz que a fé provada vale mais que o ouro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "Tiago, Paulo e Pedro ligam a prova à fé que amadurece.",
+      "feedbackWrong": {
+        "default": "Siga a Bíblia: Tiago 1, Romanos 5 e 1 Pedro 1."
+      },
+      "hint": "Parta de Tiago e avance a Paulo e Pedro.",
+      "learningObjective": "Ver a prova como fio que atravessa a Bíblia.",
+      "evidence": ["Tiago 1:2–3", "Romanos 5:3–4", "1 Pedro 1:6–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Tiago 3:13, que fruto da sabedoria se mostra nas boas ações?",
+      "verseRef": "Tiago 3:13",
+      "options": [
+        { "id": "a", "text": "soberba" },
+        { "id": "b", "text": "mansidão" },
+        { "id": "c", "text": "inveja" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a mansidão que é fruto da sabedoria",
+      "feedbackCorrect": "A mansidão é o fruto da sabedoria mostrado em boas ações.",
+      "feedbackWrong": {
+        "a": "Soberba não é fruto da sabedoria do alto.",
+        "c": "Inveja aparece na sabedoria terrena, não no fruto do alto."
+      },
+      "hint": "É o que o sábio deve mostrar por meio das ações.",
+      "learningObjective": "Lembrar o termo que carrega o fruto da sabedoria.",
+      "evidence": ["Tiago 3:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Tiago 4:10 a 1 Pedro 5:6?",
+      "verseRef": "Tiago 4:10",
+      "passageA": { "ref": "Tiago 4:10" },
+      "passageB": { "ref": "1 Pedro 5:6" },
+      "options": [
+        { "id": "a", "text": "Humilhar-se traz exaltação" },
+        { "id": "b", "text": "Orgulho garante promoção" },
+        { "id": "c", "text": "Deus exalta os soberbos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+      "feedbackCorrect": "Nos dois textos, a humildade perante Deus leva à exaltação.",
+      "feedbackWrong": {
+        "b": "Os dois textos exaltam a humildade, não o orgulho.",
+        "c": "Deus exalta os humildes, não os soberbos."
+      },
+      "hint": "Compare o que Deus faz a quem se humilha.",
+      "learningObjective": "Ligar a humildade de Tiago à de Pedro.",
+      "evidence": ["Tiago 4:10", "1 Pedro 5:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Tiago 4:10, toque o trecho que sustenta a promessa a quem se humilha.",
+      "verseRef": "Tiago 4:10",
+      "options": [
+        { "id": "a", "text": "exaltará" },
+        { "id": "b", "text": "presença" },
+        { "id": "c", "text": "Humilhem-se" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e ele os exaltará",
+      "feedbackCorrect": "A promessa é: o Senhor exaltará quem se humilha.",
+      "feedbackWrong": {
+        "b": "\"Presença\" é o lugar da humilhação, não a promessa.",
+        "c": "\"Humilhem-se\" é o chamado, não a promessa."
+      },
+      "hint": "Procure o verbo que fecha o versículo.",
+      "learningObjective": "Sustentar com o texto a promessa da exaltação.",
+      "evidence": ["Tiago 4:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio bíblico da humildade exaltada?",
+      "verseRef": "Tiago 4:10",
+      "options": [
+        { "id": "a", "text": "Tiago chama a humilhar-se perante o Senhor" },
+        { "id": "b", "text": "Pedro manda humilhar-se sob a mão de Deus" },
+        { "id": "c", "text": "Jesus promete exaltação a quem se humilha" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+      "feedbackCorrect": "Tiago, Pedro e Jesus ligam humildade e exaltação.",
+      "feedbackWrong": {
+        "default": "Siga a Bíblia: Tiago 4:10, 1 Pedro 5:6 e Mateus 23:12."
+      },
+      "hint": "Parta de Tiago e avance a Pedro e a Jesus.",
+      "learningObjective": "Ver a humildade exaltada como fio bíblico.",
+      "evidence": ["Tiago 4:10", "1 Pedro 5:6", "Mateus 23:12"]
+    }
+  ]
+}

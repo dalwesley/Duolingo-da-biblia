@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 26:5–10",
+  "passages": [
+   {
+    "ref": "Jó 26:5–10"
+   },
+   {
+    "ref": "Jó 26:11–14"
+   }
+  ],
+  "context": "Após a fala curta de Bildade, Jó canta o poder de Deus sobre o abismo e as nuvens.",
+  "keyword": "Bordas dos caminhos",
+  "keywordGloss": "Mesmo o trovão ouvido é só a beira das obras de Deus.",
+  "focusQuestion": "Você trata o pouco que entende de Deus como se fosse o todo?",
+  "reflectionPrompts": [
+   "Sheol nu",
+   "Terra sobre o nada",
+   "Trovão do poder"
+  ],
+  "facts": [
+   {
+    "text": "O Sheol está nu diante de Deus.",
+    "evidenceRef": "Jó 26:6",
+    "evidenceSpan": "O Sheol está nu diante dele"
+   },
+   {
+    "text": "Deus faz a terra pairar sobre o nada.",
+    "evidenceRef": "Jó 26:7",
+    "evidenceSpan": "faz a terra pairar sobre o nada"
+   },
+   {
+    "text": "Deus prende as águas em densas nuvens.",
+    "evidenceRef": "Jó 26:8",
+    "evidenceSpan": "prende as águas em densas nuvens"
+   },
+   {
+    "text": "Com a força Deus fende o mar.",
+    "evidenceRef": "Jó 26:12",
+    "evidenceSpan": "Com a sua força fende o mar"
+   },
+   {
+    "text": "Isso são apenas as bordas de seus caminhos.",
+    "evidenceRef": "Jó 26:14",
+    "evidenceSpan": "apenas as bordas de seus caminhos"
+   },
+   {
+    "text": "Quem poderá compreender o trovão do seu poder?",
+    "evidenceRef": "Jó 26:14",
+    "evidenceSpan": "o trovão de seu poder"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Sheol",
+    "gloss": "O lugar dos mortos, nu diante de Deus."
+   },
+   {
+    "term": "bordas",
+    "gloss": "A beira dos caminhos de Deus que o homem ouve."
+   },
+   {
+    "term": "trovão",
+    "gloss": "Imagem do poder que ninguém compreende por completo."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Sheol e abismo nu diante de Deus",
+    "evidenceRef": "Jó 26:5–6"
+   },
+   {
+    "label": "Terra, nuvens e círculo das águas",
+    "evidenceRef": "Jó 26:7–10"
+   },
+   {
+    "label": "Colunas, mar e serpente",
+    "evidenceRef": "Jó 26:11–13"
+   },
+   {
+    "label": "Só as bordas e o trovão do poder",
+    "evidenceRef": "Jó 26:14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Ouviu-se um sussurro; mas quem compreende o trovão?",
+    "marker": "Mas",
+    "evidenceRef": "Jó 26:14"
+   },
+   {
+    "kind": "resultado",
+    "text": "Eis que isso são apenas as bordas.",
+    "marker": "Eis",
+    "evidenceRef": "Jó 26:14"
+   },
+   {
+    "kind": "contraste",
+    "text": "Prende as águas; mas as nuvens não se rasgam.",
+    "marker": "mas",
+    "evidenceRef": "Jó 26:8"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 104:5–6",
+    "bridge": "Terra fundada por Deus"
+   },
+   {
+    "ref": "Isaías 40:12",
+    "bridge": "Quem mediu as águas"
+   },
+   {
+    "ref": "Romanos 11:33",
+    "bridge": "Inescrutáveis os juízos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó descreve o poder de Deus como algo que o homem esgota.",
+    "why": "26:14 fala só das bordas."
+   },
+   {
+    "text": "O Sheol está oculto até para Deus.",
+    "why": "26:6 diz que está nu diante dele."
+   },
+   {
+    "text": "Não há trovão do poder neste texto.",
+    "why": "26:14 pergunta pelo trovão."
+   }
+  ],
+  "centralInsight": "Mesmo o trovão das obras de Deus é só a beira dos seus caminhos.",
+  "anchorQuestion": "O que Jó diz que são as obras descritas, segundo Jó 26:14?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 26:14, as obras descritas são apenas as bordas dos caminhos de Deus.",
+   "verseRef": "Jó 26:14",
+   "correctOptionId": "true",
+   "evidenceSpan": "apenas as bordas de seus caminhos",
+   "feedbackCorrect": "Mesmo o ouvido é só a beira.",
+   "feedbackWrong": {
+    "false": "Releia o início de 26:14."
+   },
+   "hint": "Veja o que Eis que introduz.",
+   "learningObjective": "Observar as bordas.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 26:6, toque como o Sheol está diante de Deus.",
+   "verseRef": "Jó 26:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "nu"
+    },
+    {
+     "id": "b",
+     "text": "Sheol"
+    },
+    {
+     "id": "c",
+     "text": "abismo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Sheol está nu diante dele",
+   "feedbackCorrect": "O Sheol está nu.",
+   "feedbackWrong": {
+    "b": "Sheol é o sujeito.",
+    "c": "Abismo é o que não tem cobertura."
+   },
+   "hint": "Veja o predicado.",
+   "learningObjective": "Identificar o estado do Sheol.",
+   "evidence": [
+    "Jó 26:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 26:7, sobre o que a terra paira?",
+   "verseRef": "Jó 26:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sobre o nada"
+    },
+    {
+     "id": "b",
+     "text": "Sobre colunas humanas"
+    },
+    {
+     "id": "c",
+     "text": "Sobre o Sheol"
+    },
+    {
+     "id": "d",
+     "text": "Sobre o trovão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pairar sobre o nada",
+   "feedbackCorrect": "A terra paira sobre o nada.",
+   "feedbackWrong": {
+    "b": "Não há colunas humanas.",
+    "c": "Sheol está em 26:6.",
+    "d": "Trovão está em 26:14."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a terra.",
+   "evidence": [
+    "Jó 26:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 26:14 na ordem do texto.",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que isso são apenas as bordas de seus caminhos"
+    },
+    {
+     "id": "b",
+     "text": "Que sussurro tão leve temos ouvido dele"
+    },
+    {
+     "id": "c",
+     "text": "Mas quem poderá compreender o trovão de seu poder?"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "apenas as bordas de seus caminhos",
+   "feedbackCorrect": "Bordas, sussurro e trovão.",
+   "feedbackWrong": {
+    "default": "Comece por Eis que."
+   },
+   "hint": "Comece por Eis que.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 26:7, o que Deus faz a terra fazer sobre o nada?",
+   "verseRef": "Jó 26:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "pairar"
+    },
+    {
+     "id": "b",
+     "text": "bordas"
+    },
+    {
+     "id": "c",
+     "text": "trovão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "faz a terra pairar sobre o nada",
+   "feedbackCorrect": "A palavra é pairar.",
+   "feedbackWrong": {
+    "b": "Bordas está em 26:14.",
+    "c": "Trovão está em 26:14."
+   },
+   "hint": "Veja o verbo.",
+   "learningObjective": "Lembrar o verbo.",
+   "evidence": [
+    "Jó 26:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 26:14 comunica que se liga a este contexto?",
+   "verseRef": "Jó 26:14",
+   "passageA": {
+    "ref": "Jó 26:14"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Mesmo o trovão ouvido é só a beira das obras de Deus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Poder que não se esgota"
+    },
+    {
+     "id": "b",
+     "text": "Domínio humano total"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio sem obras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o trovão de seu poder",
+   "feedbackCorrect": "Há sussurro; o poder ultrapassa.",
+   "feedbackWrong": {
+    "b": "Ninguém compreende o trovão.",
+    "c": "Há obras e sussurro."
+   },
+   "hint": "Pense no trovão.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 26:8–12, Deus prende as águas e com a força fende o mar.",
+   "verseRef": "Jó 26:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "prende as águas em densas nuvens",
+   "feedbackCorrect": "Águas presas e mar fendido.",
+   "feedbackWrong": {
+    "false": "Una 26:8 e 26:12."
+   },
+   "hint": "Veja águas e mar.",
+   "learningObjective": "Compreender o poder.",
+   "evidence": [
+    "Jó 26:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 26:14, toque a palavra que marca o contraste com o sussurro.",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mas"
+    },
+    {
+     "id": "b",
+     "text": "sussurro"
+    },
+    {
+     "id": "c",
+     "text": "bordas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mas quem poderá compreender",
+   "feedbackCorrect": "Mas introduz o contraste.",
+   "feedbackWrong": {
+    "b": "Sussurro é o que se ouviu.",
+    "c": "Bordas são o alcance limitado."
+   },
+   "hint": "Procure o marcador.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 26:14 se relaciona com 26:5–13?",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Relativiza o catálogo: tudo isso é só a beira"
+    },
+    {
+     "id": "b",
+     "text": "Nega que o Sheol esteja nu"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que o homem compreende o trovão"
+    },
+    {
+     "id": "d",
+     "text": "Diz que não há obras de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "apenas as bordas de seus caminhos",
+   "feedbackCorrect": "O catálogo termina em humildade.",
+   "feedbackWrong": {
+    "b": "26:6 afirma o Sheol nu.",
+    "c": "26:14 pergunta quem compreende.",
+    "d": "Há obras listadas."
+   },
+   "hint": "Veja o Eis que.",
+   "learningObjective": "Relacionar catálogo e bordas.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o hino em 26:5–14?",
+   "verseRef": "Jó 26:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sheol e abismo diante de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Terra, nuvens e mar sob o poder"
+    },
+    {
+     "id": "c",
+     "text": "Só as bordas e o trovão"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O Sheol está nu diante dele",
+   "feedbackCorrect": "Abismo, criação e bordas.",
+   "feedbackWrong": {
+    "default": "Comece pelo Sheol."
+   },
+   "hint": "Pense: Sheol → criação → bordas.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 26:5–6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 26:12, o que Deus fende com a sua força?",
+   "verseRef": "Jó 26:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "mar"
+    },
+    {
+     "id": "b",
+     "text": "Sheol"
+    },
+    {
+     "id": "c",
+     "text": "pairar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fende o mar",
+   "feedbackCorrect": "A palavra é mar.",
+   "feedbackWrong": {
+    "b": "Sheol está em 26:6.",
+    "c": "Pairar está em 26:7."
+   },
+   "hint": "Veja o objeto de fende.",
+   "learningObjective": "Lembrar o mar.",
+   "evidence": [
+    "Jó 26:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 26:7 a Salmos 104:5–6?",
+   "verseRef": "Jó 26:7",
+   "passageA": {
+    "ref": "Jó 26:7"
+   },
+   "passageB": {
+    "ref": "Salmos 104:5–6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Terra fundada por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "faz a terra pairar sobre o nada",
+   "feedbackCorrect": "Nos dois textos, Deus sustenta a terra.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a terra.",
+   "learningObjective": "Relacionar Jó ao Salmo.",
+   "evidence": [
+    "Jó 26:7",
+    "Salmos 104:5–6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 26:5–14 sustenta que o homem esgota o conhecimento das obras de Deus.",
+   "verseRef": "Jó 26:14",
+   "correctOptionId": "false",
+   "evidenceSpan": "apenas as bordas de seus caminhos",
+   "feedbackCorrect": "Só se ouviu a beira; o trovão ultrapassa.",
+   "feedbackWrong": {
+    "true": "Releia 26:14."
+   },
+   "hint": "Veja bordas e trovão.",
+   "learningObjective": "Interpretar a beira do poder.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 26:14, toque o trecho que nomeia o alcance limitado.",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "seus caminhos"
+    },
+    {
+     "id": "b",
+     "text": "sussurro tão leve"
+    },
+    {
+     "id": "c",
+     "text": "Eis que"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "apenas as bordas de seus caminhos",
+   "feedbackCorrect": "As bordas limitam o ouvido.",
+   "feedbackWrong": {
+    "b": "Sussurro é o que se ouviu.",
+    "c": "Eis que introduz a declaração."
+   },
+   "hint": "Veja o objeto de apenas.",
+   "learningObjective": "Sustentar a leitura das bordas.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 26:5–14 sustenta?",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mesmo o trovão é só a beira dos caminhos de Deus"
+    },
+    {
+     "id": "b",
+     "text": "O Sheol está oculto a Deus"
+    },
+    {
+     "id": "c",
+     "text": "O homem compreende todo o poder"
+    },
+    {
+     "id": "d",
+     "text": "Não há obras de Deus no mar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o trovão de seu poder",
+   "feedbackCorrect": "Bordas e trovão sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "26:6 diz que está nu.",
+    "c": "26:14 pergunta quem compreende.",
+    "d": "26:12 fende o mar."
+   },
+   "hint": "Una 26:6 e 26:14.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o poder que não se esgota?",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó ouve só as bordas dos caminhos"
+    },
+    {
+     "id": "b",
+     "text": "Isaías pergunta quem mediu as águas"
+    },
+    {
+     "id": "c",
+     "text": "Paulo fala de juízos inescrutáveis"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "apenas as bordas de seus caminhos",
+   "feedbackCorrect": "O fio vai de Jó a Isaías e a Romanos.",
+   "feedbackWrong": {
+    "default": "Comece por Jó."
+   },
+   "hint": "Siga: Jó → Isaías → Romanos.",
+   "learningObjective": "Ver o fio do poder.",
+   "evidence": [
+    "Jó 26:14",
+    "Isaías 40:12",
+    "Romanos 11:33"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 26:14, o que ninguém poderá compreender por completo?",
+   "verseRef": "Jó 26:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "trovão"
+    },
+    {
+     "id": "b",
+     "text": "nu"
+    },
+    {
+     "id": "c",
+     "text": "pairar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o trovão de seu poder",
+   "feedbackCorrect": "O termo é trovão.",
+   "feedbackWrong": {
+    "b": "Nu está em 26:6.",
+    "c": "Pairar está em 26:7."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 26:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 26:14 a Romanos 11:33?",
+   "verseRef": "Jó 26:14",
+   "passageA": {
+    "ref": "Jó 26:14"
+   },
+   "passageB": {
+    "ref": "Romanos 11:33"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Inescrutáveis os juízos"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de terras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o trovão de seu poder",
+   "feedbackCorrect": "Nos dois textos, o poder de Deus ultrapassa.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare o limite humano.",
+   "learningObjective": "Ligar Jó a Romanos.",
+   "evidence": [
+    "Jó 26:14",
+    "Romanos 11:33"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,717 @@
+{
+  "study": {
+    "passageRef": "1 Timóteo 4:1–6",
+    "passages": [
+      {
+        "ref": "1 Timóteo 4:1–6"
+      },
+      {
+        "ref": "1 Timóteo 4:7–10"
+      }
+    ],
+    "context": "Paulo alerta sobre apostasia e regras falsas, e chama Timóteo a exercitar-se na piedade, proveitosa para a vida presente e futura.",
+    "keyword": "piedade",
+    "keywordGloss": "Exercício proveitoso com promessa da vida presente e da futura.",
+    "focusQuestion": "O que compete com a piedade no seu treino diário?",
+    "reflectionPrompts": [
+      "Rejeitar fábulas",
+      "Exercitar a piedade",
+      "Esperança no Deus vivo"
+    ],
+    "facts": [
+      {
+        "text": "Alguns apostatarão da fé.",
+        "evidenceRef": "1 Timóteo 4:1",
+        "evidenceSpan": "alguns apostatarão da fé"
+      },
+      {
+        "text": "Proíbem casamento e alimentos.",
+        "evidenceRef": "1 Timóteo 4:3",
+        "evidenceSpan": "proibindo o casamento e ordenando a abstinência de alimentos"
+      },
+      {
+        "text": "Tudo o que Deus criou é bom.",
+        "evidenceRef": "1 Timóteo 4:4",
+        "evidenceSpan": "tudo o que Deus criou é bom"
+      },
+      {
+        "text": "Exercitar-se na piedade.",
+        "evidenceRef": "1 Timóteo 4:7",
+        "evidenceSpan": "exercita-te pessoalmente na piedade"
+      },
+      {
+        "text": "A piedade é proveitosa em todas as coisas.",
+        "evidenceRef": "1 Timóteo 4:8",
+        "evidenceSpan": "a piedade é proveitosa em todas as coisas"
+      },
+      {
+        "text": "Esperança no Deus vivo, Salvador.",
+        "evidenceRef": "1 Timóteo 4:10",
+        "evidenceSpan": "temos colocado nossa esperança no Deus vivo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "piedade",
+        "gloss": "Exercício com promessa de vida presente e futura."
+      },
+      {
+        "term": "fábulas",
+        "gloss": "Histórias a rejeitar em favor da piedade."
+      },
+      {
+        "term": "esperança",
+        "gloss": "Pousada no Deus vivo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Alerta de apostasia",
+        "evidenceRef": "1 Timóteo 4:1"
+      },
+      {
+        "label": "Criação boa com ações de graças",
+        "evidenceRef": "1 Timóteo 4:4"
+      },
+      {
+        "label": "Exercitar-se na piedade",
+        "evidenceRef": "1 Timóteo 4:7"
+      },
+      {
+        "label": "Esperança no Deus vivo",
+        "evidenceRef": "1 Timóteo 4:10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Exercício físico pouco; piedade em tudo.",
+        "marker": "mas",
+        "evidenceRef": "1 Timóteo 4:8"
+      },
+      {
+        "kind": "causa",
+        "text": "Tudo é bom se recebido com ações de graças.",
+        "marker": "Porque",
+        "evidenceRef": "1 Timóteo 4:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Labutam porque esperam no Deus vivo.",
+        "marker": "pois",
+        "evidenceRef": "1 Timóteo 4:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Pedro 1:3",
+        "bridge": "Tudo para a piedade"
+      },
+      {
+        "ref": "1 Timóteo 6:6",
+        "bridge": "Piedade com contentamento"
+      },
+      {
+        "ref": "Gênesis 1:31",
+        "bridge": "Criação boa"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Regras que proíbem casamento são a verdadeira piedade.",
+        "why": "São ensinos a rejeitar; a criação é boa."
+      },
+      {
+        "text": "Exercício físico supera a piedade.",
+        "why": "A piedade é proveitosa em todas as coisas."
+      },
+      {
+        "text": "Sem esperança no Deus vivo.",
+        "why": "A esperança está nele."
+      }
+    ],
+    "centralInsight": "A piedade para tudo é proveitosa, tendo a promessa da vida presente e da futura.",
+    "anchorQuestion": "Segundo 1 Timóteo 4:8, o que a piedade traz?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 4:8, a piedade é proveitosa em todas as coisas.",
+      "verseRef": "1 Timóteo 4:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "Proveitosa.",
+      "feedbackWrong": {
+        "false": "Releia a piedade."
+      },
+      "hint": "Olhe o contraste.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 4:7, toque o que Timóteo deve exercitar.",
+      "verseRef": "1 Timóteo 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "piedade"
+        },
+        {
+          "id": "b",
+          "text": "fábulas"
+        },
+        {
+          "id": "c",
+          "text": "histórias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exercita-te pessoalmente na piedade",
+      "feedbackCorrect": "Piedade.",
+      "feedbackWrong": {
+        "b": "Rejeitar.",
+        "c": "Rejeitar."
+      },
+      "hint": "O objeto.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Timóteo 4:4, o que dizer da criação?",
+      "verseRef": "1 Timóteo 4:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo o que Deus criou é bom"
+        },
+        {
+          "id": "b",
+          "text": "Nada é bom"
+        },
+        {
+          "id": "c",
+          "text": "Alimentos são sempre maus"
+        },
+        {
+          "id": "d",
+          "text": "Casamento é proibido por Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo o que Deus criou é bom",
+      "feedbackCorrect": "Criação boa.",
+      "feedbackWrong": {
+        "b": "É bom.",
+        "c": "Com graças.",
+        "d": "Proibição é falsa."
+      },
+      "hint": "Leia.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 4:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 4:8 na ordem do texto.",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o exercício físico tem pouco valor"
+        },
+        {
+          "id": "b",
+          "text": "mas a piedade é proveitosa em todas as coisas"
+        },
+        {
+          "id": "c",
+          "text": "pois traz a promessa da vida que agora é e da que há de ser"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "Contraste e promessa.",
+      "feedbackWrong": {
+        "default": "Comece pelo exercício físico."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Timóteo 4:10, esperança no Deus ___.",
+      "verseRef": "1 Timóteo 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "vivo"
+        },
+        {
+          "id": "b",
+          "text": "morto"
+        },
+        {
+          "id": "c",
+          "text": "distante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esperança no Deus vivo",
+      "feedbackCorrect": "Vivo.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Qual Deus.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 4:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Timóteo 4:8 comunica que se liga a este contexto?",
+      "verseRef": "1 Timóteo 4:8",
+      "passageA": {
+        "ref": "1 Timóteo 4:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A piedade vale mais que o treino do corpo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade proveitosa"
+        },
+        {
+          "id": "b",
+          "text": "Só o corpo importa"
+        },
+        {
+          "id": "c",
+          "text": "Sem promessa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "Piedade.",
+      "feedbackWrong": {
+        "b": "Pouco valor.",
+        "c": "Há promessa."
+      },
+      "hint": "O contraste.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 4:8, o exercício físico tem mais valor que a piedade.",
+      "verseRef": "1 Timóteo 4:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "o exercício físico tem pouco valor, mas a piedade é proveitosa",
+      "feedbackCorrect": "O contraste inverte.",
+      "feedbackWrong": {
+        "true": "Releia o mas."
+      },
+      "hint": "Repare no mas.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 4:8, toque a palavra do contraste.",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "pouco"
+        },
+        {
+          "id": "c",
+          "text": "vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a piedade é proveitosa",
+      "feedbackCorrect": "Mas.",
+      "feedbackWrong": {
+        "b": "Do físico.",
+        "c": "Da promessa."
+      },
+      "hint": "A conjunção.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Timóteo 4:7–8 se relacionam?",
+      "verseRef": "1 Timóteo 4:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejeitar fábulas e exercitar a piedade proveitosa"
+        },
+        {
+          "id": "b",
+          "text": "Abraçar fábulas"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar a piedade"
+        },
+        {
+          "id": "d",
+          "text": "Só treinar o corpo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exercita-te pessoalmente na piedade",
+      "feedbackCorrect": "Fábulas fora; piedade dentro.",
+      "feedbackWrong": {
+        "b": "Rejeita.",
+        "c": "Há exercício.",
+        "d": "Pouco valor."
+      },
+      "hint": "Una.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 4:7–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Timóteo 4:1–10?",
+      "verseRef": "1 Timóteo 4:1–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alerta de apostasia"
+        },
+        {
+          "id": "b",
+          "text": "Afirmar a criação boa"
+        },
+        {
+          "id": "c",
+          "text": "Exercitar a piedade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "exercita-te pessoalmente na piedade",
+      "feedbackCorrect": "Alerta, criação e piedade.",
+      "feedbackWrong": {
+        "default": "Comece pelo alerta."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 4:1",
+        "1 Timóteo 4:4",
+        "1 Timóteo 4:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Timóteo 4:8, a piedade é ___ em todas as coisas.",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "proveitosa"
+        },
+        {
+          "id": "b",
+          "text": "inútil"
+        },
+        {
+          "id": "c",
+          "text": "opcional"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "A piedade é proveitosa em todas as coisas.",
+      "feedbackWrong": {
+        "b": "O texto diz o contrário.",
+        "c": "O contraste com o exercício físico mostra o valor da piedade."
+      },
+      "hint": "Toque o adjetivo da piedade.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 4:8 a 1 Timóteo 6:6?",
+      "verseRef": "1 Timóteo 4:8",
+      "passageA": {
+        "ref": "1 Timóteo 4:8"
+      },
+      "passageB": {
+        "ref": "1 Timóteo 6:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade proveitosa"
+        },
+        {
+          "id": "b",
+          "text": "Piedade inútil"
+        },
+        {
+          "id": "c",
+          "text": "Só riqueza"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "Piedade.",
+      "feedbackWrong": {
+        "b": "É proveitosa.",
+        "c": "Há contentamento depois."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 4:8",
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Timóteo 4 une rejeição de ensinos falsos e esperança no Deus vivo pela piedade.",
+      "verseRef": "1 Timóteo 4:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "temos colocado nossa esperança no Deus vivo",
+      "feedbackCorrect": "Piedade e esperança.",
+      "feedbackWrong": {
+        "false": "Una 4:7–10."
+      },
+      "hint": "Veja a esperança.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Timóteo 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 4:10, toque em quem está a esperança.",
+      "verseRef": "1 Timóteo 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus vivo"
+        },
+        {
+          "id": "b",
+          "text": "esperança"
+        },
+        {
+          "id": "c",
+          "text": "fiéis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esperança no Deus vivo",
+      "feedbackCorrect": "Deus vivo.",
+      "feedbackWrong": {
+        "b": "Esperança é o que se colocou; o alvo é outra pessoa.",
+        "c": "Fiéis são o grupo especial, não o objeto da esperança."
+      },
+      "hint": "Em quem.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade com promessa supera regras falsas e o mero físico"
+        },
+        {
+          "id": "b",
+          "text": "Proibir casamento é o centro"
+        },
+        {
+          "id": "c",
+          "text": "Sem esperança"
+        },
+        {
+          "id": "d",
+          "text": "Fábulas bastam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "traz a promessa da vida que agora é e da que há de ser",
+      "feedbackCorrect": "Piedade promissora.",
+      "feedbackWrong": {
+        "b": "É falso.",
+        "c": "Há esperança.",
+        "d": "Rejeitar."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Timóteo 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejeitar fábulas"
+        },
+        {
+          "id": "b",
+          "text": "Treinar a piedade"
+        },
+        {
+          "id": "c",
+          "text": "Esperar no Deus vivo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "esperança no Deus vivo",
+      "feedbackCorrect": "Rejeição, exercício e esperança.",
+      "feedbackWrong": {
+        "default": "Comece pelas fábulas."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 4:7",
+        "1 Timóteo 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Timóteo 4:8, a piedade traz a ___ da vida.",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "promessa"
+        },
+        {
+          "id": "b",
+          "text": "perda"
+        },
+        {
+          "id": "c",
+          "text": "dúvida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "traz a promessa da vida",
+      "feedbackCorrect": "Promessa.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "O que traz.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 4:4 a Gênesis 1:31?",
+      "verseRef": "1 Timóteo 4:4",
+      "passageA": {
+        "ref": "1 Timóteo 4:4"
+      },
+      "passageB": {
+        "ref": "Gênesis 1:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Criação boa"
+        },
+        {
+          "id": "b",
+          "text": "Criação má"
+        },
+        {
+          "id": "c",
+          "text": "Sem graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo o que Deus criou é bom",
+      "feedbackCorrect": "Criação boa.",
+      "feedbackWrong": {
+        "b": "É bom.",
+        "c": "Há graças."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 4:4",
+        "Gênesis 1:31"
+      ]
+    }
+  ]
+}

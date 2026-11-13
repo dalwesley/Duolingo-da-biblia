@@ -1,0 +1,78 @@
+{
+  "slug": "habacuque-cap",
+  "title": "Habacuque",
+  "description": "Habacuque capítulo a capítulo: da dúvida à confiança no Senhor.",
+  "icon": "🙏",
+  "color": "#8A7A5A",
+  "order": 42,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Da queixa à confiança · cap. 1–3",
+      "icon": "zap",
+      "section": "Habacuque",
+      "missions": [
+        {
+          "slug": "hqc-01-olhai-entre-as-nacoes",
+          "title": "Olhai entre as nações",
+          "subtitle": "Habacuque 1:5–13",
+          "intro": "O Senhor responde à queixa de Habacuque levantando os caldeus.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Habacuque 1:5–13",
+          "hookVerse": "Vejam entre as nações, olhem, maravilhem-se e fiquem perplexos, pois estou realizando em seus dias uma obra tão grandiosa que vocês não crerão mesmo que alguém a declare Pois eis que suscito os caldeus, uma nação amarga e impetuosa, que avança pela extensão da terra para apoderar-se de moradas que não lhe pertencem.",
+          "hookNote": "Deus age de modos que espantam, e o justo luta para entender o seu governo.",
+          "centralInsight": "Deus age de modos que espantam, e o justo luta para entender o seu governo.",
+          "objective": "Confiar no governo de Deus"
+        },
+        {
+          "slug": "hqc-02-ai-dos-opressores",
+          "title": "Ai dos opressores",
+          "subtitle": "Habacuque 2:9–20",
+          "intro": "Habacuque ouve ais contra a ganância, a violência e os ídolos mudos.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Habacuque 2:9–20",
+          "hookVerse": "Ai daquele que acumula bens mal adquiridos em sua casa, para erguer nas alturas seu abrigo, a fim de livrar-se das garras do mal! Desonra maquinaste para a tua casa; ao destruir muitos povos, pecaste contra a tua alma.",
+          "hookNote": "O Senhor está no seu santo templo: cale-se diante dele toda a terra.",
+          "centralInsight": "O Senhor está no seu santo templo: cale-se diante dele toda a terra.",
+          "objective": "Calar-se diante do Senhor"
+        },
+        {
+          "slug": "hqc-03-ainda-assim-me-alegrarei",
+          "title": "Ainda assim me alegrarei",
+          "subtitle": "Habacuque 3:14–19",
+          "intro": "Mesmo sem figos, vinhas nem rebanho, Habacuque escolhe alegrar-se no Senhor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Habacuque 3:14–19",
+          "hookVerse": "Tu traspassaste com os teus cajados a cabeça dos guerreiros do inimigo; eles avançam tempestuosos para me destruir; regozijam-se, como se estivessem prontos para devorar o pobre às ocultas. Marchas com os teus cavalos pelo mar, pela massa de grandes águas.",
+          "hookNote": "A fé se alegra no Senhor mesmo quando a figueira não floresce e o rebanho falta.",
+          "centralInsight": "A fé se alegra no Senhor mesmo quando a figueira não floresce e o rebanho falta.",
+          "objective": "Alegrar-se no Senhor"
+        },
+        {
+          "slug": "hqc-boss-1",
+          "title": "Travessia: Da queixa à confiança",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a resposta de Deus, os ais e a alegria que permanece.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Da queixa à confiança",
+          "hookVerse": "Revise a resposta de Deus, os ais e a alegria que permanece.",
+          "hookNote": "Revise a resposta de Deus, os ais e a alegria que permanece.",
+          "centralInsight": "A fé pergunta a Deus e termina confiante nele",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

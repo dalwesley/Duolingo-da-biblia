@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Êxodo 12:21–26",
+    "passages": [
+      {
+        "ref": "Êxodo 12:21–28"
+      }
+    ],
+    "context": "Moisés ordena imolar a Páscoa e marcar as portas com sangue. O Senhor passa por cima e o povo obedece.",
+    "keyword": "Sangue",
+    "keywordGloss": "Sinal na porta: o Senhor passa por cima e o Destruidor não entra.",
+    "focusQuestion": "O que significa para você estar marcado pela proteção de Deus?",
+    "reflectionPrompts": [
+      "Sangue na porta",
+      "Passar por cima",
+      "Obediência do povo"
+    ],
+    "facts": [
+      {
+        "text": "Moisés manda tomar cordeiros e imolar a Páscoa.",
+        "evidenceRef": "Êxodo 12:21",
+        "evidenceSpan": "imolem a Páscoa"
+      },
+      {
+        "text": "O sangue marca a verga e as ombreiras da porta.",
+        "evidenceRef": "Êxodo 12:22",
+        "evidenceSpan": "marque a verga da porta e suas ombreiras"
+      },
+      {
+        "text": "Quando o Senhor vir o sangue, passará por aquela porta.",
+        "evidenceRef": "Êxodo 12:23",
+        "evidenceSpan": "o Senhor passará por aquela porta"
+      },
+      {
+        "text": "O Destruidor não entrará nas casas marcadas.",
+        "evidenceRef": "Êxodo 12:23",
+        "evidenceSpan": "não permitirá que o Destruidor entre"
+      },
+      {
+        "text": "O povo se inclinou, adorou e procedeu conforme a ordem.",
+        "evidenceRef": "Êxodo 12:27",
+        "evidenceSpan": "o povo se inclinou e adorou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sangue",
+        "gloss": "Sinal nas portas que faz o Senhor passar por cima."
+      },
+      {
+        "term": "Páscoa",
+        "gloss": "Sacrifício e rito que Israel deve preservar."
+      },
+      {
+        "term": "Destruidor",
+        "gloss": "Aquele a quem o Senhor impede de entrar nas casas marcadas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de imolar a Páscoa",
+        "evidenceRef": "Êxodo 12:21"
+      },
+      {
+        "label": "Marcar a porta com sangue",
+        "evidenceRef": "Êxodo 12:22"
+      },
+      {
+        "label": "O Senhor passa por cima",
+        "evidenceRef": "Êxodo 12:23"
+      },
+      {
+        "label": "Estatuto e obediência do povo",
+        "evidenceRef": "Êxodo 12:24–28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O Senhor fere o Egito; porém, ao ver o sangue, passa por cima.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 12:23"
+      },
+      {
+        "kind": "propósito",
+        "text": "Ninguém saia até pela manhã para ficar sob a proteção.",
+        "marker": null,
+        "evidenceRef": "Êxodo 12:22"
+      },
+      {
+        "kind": "resultado",
+        "text": "O povo se inclina, adora e procede conforme a ordem.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 12:27"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 11:28",
+        "bridge": "Páscoa pela fé"
+      },
+      {
+        "ref": "1 Coríntios 5:7",
+        "bridge": "Cristo nossa Páscoa"
+      },
+      {
+        "ref": "1 Pedro 1:19",
+        "bridge": "Sangue precioso"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O sangue é só decoração da festa.",
+        "why": "É sinal que impede o Destruidor de entrar."
+      },
+      {
+        "text": "Bastava matar o cordeiro sem marcar a porta.",
+        "why": "O texto exige marcar verga e ombreiras."
+      },
+      {
+        "text": "O povo hesitou e não obedeceu.",
+        "why": "Realizaram conforme o Senhor ordenou."
+      }
+    ],
+    "centralInsight": "O sangue é sinal: o Senhor passa por cima da casa marcada e não deixa o destruidor entrar.",
+    "anchorQuestion": "O que o Senhor faz quando vê o sangue na porta?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O Senhor, ao ver o sangue na porta, passará por ela e não permitirá que o Destruidor entre.",
+      "verseRef": "Êxodo 12:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor passará por aquela porta e não permitirá que o Destruidor entre",
+      "feedbackCorrect": "O sangue é sinal de proteção.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 12:23: Ele passa e impede o Destruidor."
+      },
+      "hint": "O que o Senhor faz ao ver o sangue?",
+      "learningObjective": "Observar a proteção pelo sangue.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 12:22, toque o que se molha no sangue da bacia.",
+      "verseRef": "Êxodo 12:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "hissopo"
+        },
+        {
+          "id": "b",
+          "text": "manhã"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ramo de hissopo",
+      "feedbackCorrect": "Um ramo de hissopo molha-se no sangue.",
+      "feedbackWrong": {
+        "b": "Manhã é o limite de sair.",
+        "c": "Casa é o lugar; o instrumento é hissopo."
+      },
+      "hint": "O ramo nomeado no versículo.",
+      "learningObjective": "Identificar o instrumento do sinal.",
+      "evidence": [
+        "Êxodo 12:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 12:21, o que Moisés manda imolar?",
+      "verseRef": "Êxodo 12:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Páscoa"
+        },
+        {
+          "id": "b",
+          "text": "Um bezerro de ouro"
+        },
+        {
+          "id": "c",
+          "text": "Os magos do Egito"
+        },
+        {
+          "id": "d",
+          "text": "Os carros de Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "imolem a Páscoa",
+      "feedbackCorrect": "Tomem cordeiros e imolem a Páscoa.",
+      "feedbackWrong": {
+        "b": "Não há bezerro aqui.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "hint": "Fim da ordem de Moisés.",
+      "learningObjective": "Observar a ordem da Páscoa.",
+      "evidence": [
+        "Êxodo 12:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 12:23 na ordem do texto.",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o Senhor passará para ferir os egípcios"
+        },
+        {
+          "id": "b",
+          "text": "porém, quando vir o sangue na verga da porta"
+        },
+        {
+          "id": "c",
+          "text": "o Senhor passará por aquela porta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "quando vir o sangue",
+      "feedbackCorrect": "Juízo, porém sangue, então passar por cima.",
+      "feedbackWrong": {
+        "default": "Comece pelo passar para ferir."
+      },
+      "hint": "O \"porém\" fica no meio.",
+      "learningObjective": "Reconhecer a sequência de 12:23.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 12:22, o que marca a verga e as ombreiras?",
+      "verseRef": "Êxodo 12:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "óleo"
+        },
+        {
+          "id": "c",
+          "text": "vinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "marque a verga da porta e suas ombreiras com o sangue",
+      "feedbackCorrect": "O sangue da bacia marca a porta.",
+      "feedbackWrong": {
+        "b": "Não é óleo.",
+        "c": "Não é vinho."
+      },
+      "hint": "O que está na bacia?",
+      "learningObjective": "Lembrar o sinal na porta.",
+      "evidence": [
+        "Êxodo 12:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 12:23 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 12:23",
+      "passageA": {
+        "ref": "Êxodo 12:23"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel deve marcar as portas na noite da Páscoa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue protege a casa"
+        },
+        {
+          "id": "b",
+          "text": "Sangue é só símbolo vazio"
+        },
+        {
+          "id": "c",
+          "text": "Todos saem à noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não permitirá que o Destruidor entre",
+      "feedbackCorrect": "Ao ver o sangue, o Senhor protege a casa.",
+      "feedbackWrong": {
+        "b": "O sinal tem efeito concreto.",
+        "c": "Ninguém deve sair até de manhã."
+      },
+      "hint": "O que o sangue impede?",
+      "learningObjective": "Ligar marca e proteção.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 12:23, o Senhor fere o Egito e, ao ver o sangue, também deixa o Destruidor entrar nas casas marcadas.",
+      "verseRef": "Êxodo 12:23",
+      "correctOptionId": "false",
+      "evidenceSpan": "não permitirá que o Destruidor entre em suas casas",
+      "feedbackCorrect": "O \"porém\" marca proteção: Ele não permite a entrada.",
+      "feedbackWrong": {
+        "true": "Releia: não permitirá que o Destruidor entre."
+      },
+      "hint": "O que Ele não permite?",
+      "learningObjective": "Compreender o contraste juízo–proteção.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 12:23, toque a palavra que marca o contraste com o ferir os egípcios.",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "egípcios"
+        },
+        {
+          "id": "c",
+          "text": "casas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, quando vir o sangue",
+      "feedbackCorrect": "\"Porém\" vira a cena do juízo à proteção.",
+      "feedbackWrong": {
+        "b": "Egípcios são o alvo do juízo.",
+        "c": "Casas são protegidas; o marcador é porém."
+      },
+      "hint": "Palavra curta após ferir.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 12:27 liga a Páscoa ao que Deus fez?",
+      "verseRef": "Êxodo 12:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passou por cima das casas e livrou as nossas casas"
+        },
+        {
+          "id": "b",
+          "text": "Esqueceu Israel no Egito"
+        },
+        {
+          "id": "c",
+          "text": "Puniu as casas marcadas"
+        },
+        {
+          "id": "d",
+          "text": "Pediu ouro em troca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "passou por cima das casas dos filhos de Israel",
+      "feedbackCorrect": "A Páscoa lembra o passar por cima e o livramento.",
+      "feedbackWrong": {
+        "b": "Ele livrou as casas.",
+        "c": "Ele protegeu as marcadas.",
+        "d": "Não é troca de ouro aqui."
+      },
+      "hint": "A resposta aos filhos.",
+      "learningObjective": "Relacionar rito e livramento.",
+      "evidence": [
+        "Êxodo 12:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 12:21–28?",
+      "verseRef": "Êxodo 12:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordena-se imolar a Páscoa"
+        },
+        {
+          "id": "b",
+          "text": "O sangue marca a porta"
+        },
+        {
+          "id": "c",
+          "text": "O povo obedece e adora"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "imolem a Páscoa",
+      "feedbackCorrect": "Ordem, sinal e obediência.",
+      "feedbackWrong": {
+        "default": "A obediência vem depois do sinal."
+      },
+      "hint": "Comece pela ordem de Moisés.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "Êxodo 12:21",
+        "Êxodo 12:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 12:23, quem o Senhor não permitirá que entre?",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Destruidor"
+        },
+        {
+          "id": "b",
+          "text": "ancião"
+        },
+        {
+          "id": "c",
+          "text": "cordeiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não permitirá que o Destruidor entre",
+      "feedbackCorrect": "O Destruidor é barrado nas casas marcadas.",
+      "feedbackWrong": {
+        "b": "Não é ancião.",
+        "c": "Cordeiro é o sacrifício."
+      },
+      "hint": "Quem é impedido de entrar?",
+      "learningObjective": "Lembrar o nome da ameaça.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 12:23 a Hebreus 11:28?",
+      "verseRef": "Êxodo 12:23",
+      "passageA": {
+        "ref": "Êxodo 12:23"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Páscoa pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Lei no Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Queda de Jericó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando vir o sangue",
+      "feedbackCorrect": "Hebreus lê a Páscoa como ato de fé.",
+      "feedbackWrong": {
+        "b": "Não é o tema.",
+        "c": "Outra história."
+      },
+      "hint": "Como Hebreus lembra este rito?",
+      "learningObjective": "Relacionar Páscoa e fé.",
+      "evidence": [
+        "Êxodo 12:23",
+        "Hebreus 11:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 12:21–28 sustenta que o sangue marcado é o sinal pelo qual o Senhor protege seu povo no juízo.",
+      "verseRef": "Êxodo 12:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "quando vir o sangue na verga da porta",
+      "feedbackCorrect": "Ver o sangue e passar por cima é o centro do texto.",
+      "feedbackWrong": {
+        "false": "O texto une sangue visto e proteção."
+      },
+      "hint": "O que o Senhor vê na porta?",
+      "learningObjective": "Interpretar o sinal do sangue.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 12:23, toque o trecho que mostra o que o Senhor vê.",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "o sangue"
+        },
+        {
+          "id": "b",
+          "text": "egípcios"
+        },
+        {
+          "id": "c",
+          "text": "casas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando vir o sangue",
+      "feedbackCorrect": "Ele vê o sangue na verga e nas ombreiras.",
+      "feedbackWrong": {
+        "b": "Egípcios são feridos; Ele vê o sangue.",
+        "c": "Casas são o lugar; o visto é o sangue."
+      },
+      "hint": "Objeto de \"vir\".",
+      "learningObjective": "Sustentar o sinal no texto.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 12:21–28 sustenta sobre a Páscoa?",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obedecer ao sinal do sangue traz proteção no juízo"
+        },
+        {
+          "id": "b",
+          "text": "Bastava intenção sem marcar a porta"
+        },
+        {
+          "id": "c",
+          "text": "O povo ignorou a ordem de Moisés"
+        },
+        {
+          "id": "d",
+          "text": "O Destruidor entrou em toda casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não permitirá que o Destruidor entre",
+      "feedbackCorrect": "Marca, proteção e obediência andam juntas.",
+      "feedbackWrong": {
+        "b": "A marca é exigida.",
+        "c": "Eles procederam conforme a ordem.",
+        "d": "Ele não entra nas marcadas."
+      },
+      "hint": "Una 12:23 e 12:28.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Êxodo 12:23",
+        "Êxodo 12:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do sangue protetor?",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sangue marca a porta no Egito"
+        },
+        {
+          "id": "b",
+          "text": "Hebreus celebra a Páscoa pela fé"
+        },
+        {
+          "id": "c",
+          "text": "Paulo chama Cristo nossa Páscoa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o sangue",
+      "evidence": [
+        "Êxodo 12:23",
+        "Hebreus 11:28",
+        "1 Coríntios 5:7"
+      ],
+      "feedbackCorrect": "Do sinal no Egito à fé e a Cristo.",
+      "feedbackWrong": {
+        "default": "Comece pelo Êxodo."
+      },
+      "hint": "Ordem da história bíblica.",
+      "learningObjective": "Ver o fio da Páscoa."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 12:27, que sacrifício se explica aos filhos?",
+      "verseRef": "Êxodo 12:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Páscoa"
+        },
+        {
+          "id": "b",
+          "text": "jejum"
+        },
+        {
+          "id": "c",
+          "text": "dízimo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o sacrifício da Páscoa",
+      "feedbackCorrect": "O rito se chama sacrifício da Páscoa ao SENHOR.",
+      "feedbackWrong": {
+        "b": "Não é jejum.",
+        "c": "Não é dízimo."
+      },
+      "hint": "Nome do sacrifício.",
+      "learningObjective": "Lembrar o termo da cena.",
+      "evidence": [
+        "Êxodo 12:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 12:23 a 1 Pedro 1:19?",
+      "verseRef": "Êxodo 12:23",
+      "passageA": {
+        "ref": "Êxodo 12:23"
+      },
+      "passageB": {
+        "ref": "1 Pedro 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue precioso protege"
+        },
+        {
+          "id": "b",
+          "text": "Construção do templo"
+        },
+        {
+          "id": "c",
+          "text": "Lista de pragas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando vir o sangue",
+      "feedbackCorrect": "Pedro ecoa o valor do sangue que livra.",
+      "feedbackWrong": {
+        "b": "Não é o tema.",
+        "c": "Não é lista."
+      },
+      "hint": "O que une os dois textos?",
+      "learningObjective": "Ligar sangue no Êxodo e em Pedro.",
+      "evidence": [
+        "Êxodo 12:23",
+        "1 Pedro 1:19"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,926 @@
+{
+  "study": {
+    "passageRef": "1 Reis 22:34–38",
+    "passages": [
+      {
+        "ref": "1 Reis 19:9–18"
+      },
+      {
+        "ref": "1 Reis 20:31–43"
+      },
+      {
+        "ref": "1 Reis 21:17–24"
+      },
+      {
+        "ref": "1 Reis 22:29–38"
+      }
+    ],
+    "context": "Esta travessia revisa Elias no Horebe, Acabe liberando Ben-Hadade, o juízo por Nabote e a flecha que cumpre a palavra em Samaria.",
+    "keyword": "palavra",
+    "keywordGloss": "A palavra do Senhor que chama Elias, julga a aliança ilegítima, anuncia sangue e se cumpre no fim de Acabe.",
+    "focusQuestion": "Onde você ainda tenta negociar ou se disfarçar diante de uma palavra já dita?",
+    "reflectionPrompts": [
+      "Cicio e missão",
+      "Vida por vida",
+      "Palavra cumprida"
+    ],
+    "facts": [
+      {
+        "text": "Depois do fogo ouviu-se um cicio tranquilo e suave.",
+        "evidenceRef": "1 Reis 19:12",
+        "evidenceSpan": "ouviu-se um cicio tranquilo e suave"
+      },
+      {
+        "text": "Ainda restam sete mil que não se dobraram a Baal.",
+        "evidenceRef": "1 Reis 19:18",
+        "evidenceSpan": "Ainda deixei em Israel sete mil"
+      },
+      {
+        "text": "Acabe faz aliança e despede Ben-Hadade.",
+        "evidenceRef": "1 Reis 20:34",
+        "evidenceSpan": "fez com ele uma aliança e o despediu"
+      },
+      {
+        "text": "No lugar do sangue de Nabote, os cães lamberão o de Acabe.",
+        "evidenceRef": "1 Reis 21:19",
+        "evidenceSpan": "os cães lamberão o teu sangue, o teu mesmo"
+      },
+      {
+        "text": "Uma flecha ao acaso fere o rei disfarçado.",
+        "evidenceRef": "1 Reis 22:34",
+        "evidenceSpan": "atirando ao acaso, feriu o rei de Israel"
+      },
+      {
+        "text": "Os cães lamberam o sangue conforme a palavra do Senhor.",
+        "evidenceRef": "1 Reis 22:38",
+        "evidenceSpan": "conforme a palavra que o Senhor tinha dito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cicio",
+        "gloss": "O sussurro suave em que Elias reconhece a presença do Senhor."
+      },
+      {
+        "term": "aliança",
+        "gloss": "O pacto com que Acabe libera o condenado."
+      },
+      {
+        "term": "acaso",
+        "gloss": "O tiro que alcança Acabe e cumpre o juízo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Voz suave e sete mil fiéis",
+        "evidenceRef": "1 Reis 19:12–18"
+      },
+      {
+        "label": "Aliança ilegítima e sentença",
+        "evidenceRef": "1 Reis 20:34–42"
+      },
+      {
+        "label": "Sangue de Nabote e juízo",
+        "evidenceRef": "1 Reis 21:19–23"
+      },
+      {
+        "label": "Flecha, morte e cumprimento",
+        "evidenceRef": "1 Reis 22:34–38"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O Senhor passou no vento; contudo não estava nele.",
+        "marker": "contudo",
+        "evidenceRef": "1 Reis 19:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por libertar o condenado, a vida de Acabe será em lugar da dele.",
+        "marker": "Por",
+        "evidenceRef": "1 Reis 20:42"
+      },
+      {
+        "kind": "resultado",
+        "text": "Os cães lambem o sangue conforme a palavra do Senhor.",
+        "marker": "conforme",
+        "evidenceRef": "1 Reis 22:38"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 15:22",
+        "bridge": "Obedecer vale mais"
+      },
+      {
+        "ref": "2 Reis 9:36",
+        "bridge": "Cães e Jezabel em Jezreel"
+      },
+      {
+        "ref": "Isaías 55:11",
+        "bridge": "A palavra não volta vazia"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor se manifesta sobretudo no vento, no terremoto e no fogo.",
+        "why": "O texto diz que o Senhor não estava nesses sinais; veio o cicio suave."
+      },
+      {
+        "text": "Poupar Ben-Hadade é misericórdia que o Senhor aprova.",
+        "why": "O Senhor condena a liberação: vida por vida."
+      },
+      {
+        "text": "O disfarce e a flecha ao acaso mostram que a morte de Acabe foi só sorte.",
+        "why": "O fim declara cumprimento da palavra do Senhor."
+      }
+    ],
+    "anchorQuestion": "Segundo 1 Reis 22:38, o que os cães fizeram conforme a palavra do Senhor?",
+    "centralInsight": "O Senhor corrige, julga a injustiça e cumpre a sua palavra"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 19 —18, o Senhor deixou em Israel sete mil que não se dobraram a Baal.",
+      "verseRef": "1 Reis 19:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ainda deixei em Israel sete mil",
+      "feedbackCorrect": "Há resto fiel: sete mil joelhos.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja quantos o Senhor deixou.",
+      "learningObjective": "Observar os sete mil.",
+      "evidence": [
+        "1 Reis 19:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 19:12, toque o que se ouviu depois do fogo.",
+      "verseRef": "1 Reis 19:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "terremoto"
+        },
+        {
+          "id": "b",
+          "text": "após"
+        },
+        {
+          "id": "c",
+          "text": "veio"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "após",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o cicio.",
+      "evidence": [
+        "1 Reis 19:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 20:34, o que Acabe fez com Ben-Hadade?",
+      "verseRef": "1 Reis 20:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fez aliança e o despediu"
+        },
+        {
+          "id": "b",
+          "text": "Mandou matá-lo na hora"
+        },
+        {
+          "id": "c",
+          "text": "Enviou-o a Elias no Horebe"
+        },
+        {
+          "id": "d",
+          "text": "Deu-lhe a vinha de Nabote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez com ele uma aliança e o despediu",
+      "feedbackCorrect": "Aliança e despedida são explícitas.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar a aliança.",
+      "evidence": [
+        "1 Reis 20:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 22:34 na ordem do texto.",
+      "verseRef": "1 Reis 22:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "um homem armou o arco de forma descuidada"
+        },
+        {
+          "id": "b",
+          "text": "atirando ao acaso, feriu o rei de Israel"
+        },
+        {
+          "id": "c",
+          "text": "me leva para fora do combate, porque estou gravemente ferido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "atirando ao acaso, feriu o rei de Israel",
+      "feedbackCorrect": "Arco, flecha e retirada.",
+      "feedbackWrong": {
+        "default": "Comece pelo homem que arma o arco."
+      },
+      "hint": "Quem age primeiro?",
+      "learningObjective": "Seguir a ordem do verso.",
+      "evidence": [
+        "1 Reis 22:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 21:19, complete: os cães lamberão o teu ___.",
+      "verseRef": "1 Reis 21:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "carro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os cães lamberão o teu sangue, o teu mesmo",
+      "feedbackCorrect": "Sangue por sangue no mesmo lugar.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que os cães lamberão?",
+      "learningObjective": "Lembrar o sangue anunciado.",
+      "evidence": [
+        "1 Reis 21:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 22:38 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 22:38",
+      "passageA": {
+        "ref": "1 Reis 22:38"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O juízo anunciado sobre Acabe chega ao fim quando os cães lambem o sangue."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra cumprida no sangue"
+        },
+        {
+          "id": "b",
+          "text": "Disfarce que salva Acabe"
+        },
+        {
+          "id": "c",
+          "text": "Aliança sem qualquer juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Os cães confirmam a palavra.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a frase conforme a palavra.",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 20:32, toque como Acabe chama Ben-Hadade.",
+      "verseRef": "1 Reis 20:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacos"
+        },
+        {
+          "id": "b",
+          "text": "cingiram"
+        },
+        {
+          "id": "c",
+          "text": "cintura"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cingiram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Observar o tratamento de irmão.",
+      "evidence": [
+        "1 Reis 20:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 19:12 na ordem do texto.",
+      "verseRef": "1 Reis 19:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "E, após o terremoto, veio um fogo"
+        },
+        {
+          "id": "b",
+          "text": "mas o Senhor não estava no fogo"
+        },
+        {
+          "id": "c",
+          "text": "e, depois do fogo, ouviu-se um cicio tranquilo e suave"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ouviu-se um cicio tranquilo e suave",
+      "feedbackCorrect": "Fogo, ausência e cicio.",
+      "feedbackWrong": {
+        "default": "Comece pelo fogo após o terremoto."
+      },
+      "hint": "O cicio fecha o verso.",
+      "learningObjective": "Reconhecer a sequência do cicio.",
+      "evidence": [
+        "1 Reis 19:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 19 —11, o contudo indica que o Senhor estava presente dentro do vento forte.",
+      "verseRef": "1 Reis 19:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "contudo, o Senhor não estava no vento",
+      "feedbackCorrect": "O contudo marca o contraste: o Senhor não estava no vento.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o que segue o contudo.",
+      "learningObjective": "Compreender o contraste do contudo.",
+      "evidence": [
+        "1 Reis 19:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 22:38, toque o marcador que liga o sangue à palavra do Senhor.",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "carruagem"
+        },
+        {
+          "id": "b",
+          "text": "lavarem"
+        },
+        {
+          "id": "c",
+          "text": "tanque"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lavarem",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o conforme.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 1 Reis 20:42 faz entre libertar o condenado e o destino de Acabe?",
+      "verseRef": "1 Reis 20:42",
+      "options": [
+        {
+          "id": "a",
+          "text": "Resultado: sua vida será em lugar da do liberado"
+        },
+        {
+          "id": "b",
+          "text": "Recompensa: o Senhor aplaude a aliança"
+        },
+        {
+          "id": "c",
+          "text": "Esquecimento: o caso fica sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Troca: Ben-Hadade herda Samaria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tua vida será em lugar da sua vida",
+      "feedbackCorrect": "Por libertar, a vida de Acabe responde.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a troca anunciada.",
+      "learningObjective": "Ver o resultado da liberação.",
+      "evidence": [
+        "1 Reis 20:42"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da etapa até o cumprimento.",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voz suave e sete mil fiéis"
+        },
+        {
+          "id": "b",
+          "text": "Sangue de Nabote e juízo"
+        },
+        {
+          "id": "c",
+          "text": "Flecha, morte e cumprimento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Horebe, Nabote e Samaria.",
+      "feedbackWrong": {
+        "default": "Comece pelo Horebe; feche com a flecha."
+      },
+      "hint": "O que abre o bloco?",
+      "learningObjective": "Ordenar a estrutura do bloco.",
+      "evidence": [
+        "1 Reis 19:12",
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 21:20, complete: ___ te vendeste para fazer o que é mal.",
+      "verseRef": "1 Reis 21:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "então"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois te vendeste para fazer o que é mal",
+      "feedbackCorrect": "Pois marca a causa do encontro.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Palavra da causa na resposta de Elias.",
+      "learningObjective": "Lembrar o pois.",
+      "evidence": [
+        "1 Reis 21:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 20:42 a 1 Samuel 15:22?",
+      "verseRef": "1 Reis 20:42",
+      "passageA": {
+        "ref": "1 Reis 20:42"
+      },
+      "passageB": {
+        "ref": "1 Samuel 15:22"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Obedecer vale mais"
+        },
+        {
+          "id": "b",
+          "text": "Clemência acima de tudo"
+        },
+        {
+          "id": "c",
+          "text": "Aliança cancela juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por teres libertado das mãos o homem que eu havia condenado",
+      "feedbackCorrect": "Nos dois casos, obediência supera o gesto conveniente.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare obediência e desobediência.",
+      "learningObjective": "Ligar juízo e obediência.",
+      "evidence": [
+        "1 Reis 20:42",
+        "1 Samuel 15:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 22:30, toque o marcador de contraste entre Acabe e Josafá.",
+      "verseRef": "1 Reis 22:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "Josafá"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o porém do disfarce.",
+      "evidence": [
+        "1 Reis 22:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os passos da aliança até a sentença.",
+      "verseRef": "1 Reis 20:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acabe chama Ben-Hadade de irmão"
+        },
+        {
+          "id": "b",
+          "text": "Faz aliança e o despede"
+        },
+        {
+          "id": "c",
+          "text": "Ouve a sentença vida por vida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "fez com ele uma aliança e o despediu",
+      "feedbackCorrect": "Irmão, aliança e sentença.",
+      "feedbackWrong": {
+        "default": "Comece pelo tratamento de irmão."
+      },
+      "hint": "O que Acabe diz antes de liberar?",
+      "learningObjective": "Ordenar juízo após a aliança.",
+      "evidence": [
+        "1 Reis 20:32",
+        "1 Reis 20:42"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 19–22, o Senhor corrige Elias, julga a injustiça de Acabe e cumpre a palavra sobre o sangue.",
+      "verseRef": "1 Reis 22:38",
+      "correctOptionId": "true",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Correção, juízo e cumprimento atravessam o bloco.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Una Horebe, Nabote e Samaria.",
+      "learningObjective": "Avaliar a leitura do bloco.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 22:34, toque o termo que sustenta o tiro aparentemente casual.",
+      "verseRef": "1 Reis 22:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "armou"
+        },
+        {
+          "id": "b",
+          "text": "homem"
+        },
+        {
+          "id": "c",
+          "text": "arco"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "homem",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o acaso.",
+      "evidence": [
+        "1 Reis 22:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une cicio, aliança e flecha neste bloco?",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor fala, julga e cumpre a palavra"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor só aparece no fogo e no vento"
+        },
+        {
+          "id": "c",
+          "text": "Poupar Ben-Hadade cancela todo juízo"
+        },
+        {
+          "id": "d",
+          "text": "O disfarce impede o cumprimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Do cicio à flecha, a palavra governa a história.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una correção, juízo e cumprimento.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "1 Reis 22:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da palavra que não falha.",
+      "verseRef": "1 Reis 22:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio do sangue de Acabe"
+        },
+        {
+          "id": "b",
+          "text": "Cães cumprem a palavra em Samaria"
+        },
+        {
+          "id": "c",
+          "text": "A palavra não volta vazia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "conforme a palavra que o Senhor tinha dito",
+      "feedbackCorrect": "Anúncio, cumprimento e eco em Isaías.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio; feche com Isaías."
+      },
+      "hint": "Siga 1 Reis 21, 22 e Isaías.",
+      "learningObjective": "Encadear anúncio e cumprimento.",
+      "evidence": [
+        "1 Reis 21:19",
+        "1 Reis 22:38",
+        "Isaías 55:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 20:34, complete: fez com ele uma ___.",
+      "verseRef": "1 Reis 20:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "oração"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez com ele uma aliança",
+      "feedbackCorrect": "Aliança é o termo da liberação ilegítima.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que Acabe faz com Ben-Hadade?",
+      "learningObjective": "Lembrar a aliança.",
+      "evidence": [
+        "1 Reis 20:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 21:23 a 2 Reis 9:36?",
+      "verseRef": "1 Reis 21:23",
+      "passageA": {
+        "ref": "1 Reis 21:23"
+      },
+      "passageB": {
+        "ref": "2 Reis 9:36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cães e Jezabel em Jezreel"
+        },
+        {
+          "id": "b",
+          "text": "Perdão público a Jezabel"
+        },
+        {
+          "id": "c",
+          "text": "Exílio pacífico da rainha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os cães devorarão Jezabel dentro dos muros de Jezreel",
+      "feedbackCorrect": "O anúncio se cumpre com os cães em Jezreel.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare Jezabel e os cães.",
+      "learningObjective": "Ligar anúncio e cumprimento.",
+      "evidence": [
+        "1 Reis 21:23",
+        "2 Reis 9:36"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 20:42, toque o ato que sustenta a sentença contra Acabe.",
+      "verseRef": "1 Reis 20:42",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "teres"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o ato julgado.",
+      "evidence": [
+        "1 Reis 20:42"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o caminho da presença à sentença cumprida.",
+      "verseRef": "1 Reis 19:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elias ouve o cicio e recebe missão"
+        },
+        {
+          "id": "b",
+          "text": "Acabe libera o condenado e toma a vinha"
+        },
+        {
+          "id": "c",
+          "text": "A flecha cumpre a palavra em Samaria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ouviu-se um cicio tranquilo e suave",
+      "feedbackCorrect": "Presença, injustiça e cumprimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo cicio; feche com a flecha."
+      },
+      "hint": "Siga Horebe, Acabe e Samaria.",
+      "learningObjective": "Encadear o arco do bloco.",
+      "evidence": [
+        "1 Reis 19:12",
+        "1 Reis 22:38"
+      ]
+    }
+  ]
+}

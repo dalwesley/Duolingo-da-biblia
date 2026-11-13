@@ -1,0 +1,632 @@
+{
+  "study": {
+    "passageRef": "Jonas 1:9–14",
+    "passages": [
+      { "ref": "Jonas 1:9–14" },
+      { "ref": "Jonas 1:15–16" },
+      { "ref": "Jonas 2:1–10" },
+      { "ref": "Jonas 3:1–10" },
+      { "ref": "Jonas 4:1–10" }
+    ],
+    "context": "Nesta travessia, revise a fuga no mar, a oração no peixe, o arrependimento de Nínive e a planta que ensina misericórdia a Jonas.",
+    "keyword": "misericórdia",
+    "keywordGloss": "O Senhor se arrepende do mal e ensina Jonas a ter compaixão.",
+    "focusQuestion": "Onde você resiste à misericórdia de Deus por outros, como Jonas resistiu a Nínive?",
+    "reflectionPrompts": [
+      "Fuga e tempestade",
+      "Salvação do Senhor",
+      "Compaixão pela cidade"
+    ],
+    "facts": [
+      {
+        "text": "Jonas declara que teme o Senhor, que fez o mar e a terra.",
+        "evidenceRef": "Jonas 1:9",
+        "evidenceSpan": "Sou hebreu e temo o Senhor, o Deus do céu, que fez o mar e a terra"
+      },
+      {
+        "text": "A sorte caiu sobre Jonas; ele pede para ser lançado ao mar.",
+        "evidenceRef": "Jonas 1:7",
+        "evidenceSpan": "e a sorte caiu sobre Jonas"
+      },
+      {
+        "text": "Do ventre do peixe, Jonas ora: a salvação pertence ao Senhor.",
+        "evidenceRef": "Jonas 2:9",
+        "evidenceSpan": "Ao SENHOR pertence a salvação!"
+      },
+      {
+        "text": "Nínive crê, jejua e se converte; Deus se arrepende do mal anunciado.",
+        "evidenceRef": "Jonas 3:10",
+        "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez"
+      },
+      {
+        "text": "Jonas se irou porque sabia que Deus é clemente e misericordioso.",
+        "evidenceRef": "Jonas 4:2",
+        "evidenceSpan": "pois sabia que Tu és Deus clemente, e misericordioso"
+      },
+      {
+        "text": "O Senhor fez surgir uma planta para sombra e enviou um verme que a secou.",
+        "evidenceRef": "Jonas 4:6–7",
+        "evidenceSpan": "E o Senhor Deus fez surgir uma planta"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "salvação",
+        "gloss": "O que Jonas confessa: a salvação pertence ao Senhor."
+      },
+      {
+        "term": "misericordioso",
+        "gloss": "Atributo de Deus que Jonas conhecia e temia ver aplicado a Nínive."
+      },
+      {
+        "term": "compaixão",
+        "gloss": "O que Jonas teve pela planta e o Senhor tem pela cidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fuga exposta e mar acalmado",
+        "evidenceRef": "Jonas 1:7–15"
+      },
+      {
+        "label": "Oração no peixe e salvação",
+        "evidenceRef": "Jonas 2:1–10"
+      },
+      {
+        "label": "Pregação e arrependimento de Nínive",
+        "evidenceRef": "Jonas 3:1–10"
+      },
+      {
+        "label": "Planta, ira e lição de misericórdia",
+        "evidenceRef": "Jonas 4:1–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A tempestade atinge o navio por causa de Jonas.",
+        "marker": "pois",
+        "evidenceRef": "Jonas 1:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os homens remam para salvar Jonas, porém o mar cresce.",
+        "marker": "porém",
+        "evidenceRef": "Jonas 1:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Deus vê a conversão de Nínive e se arrepende do mal.",
+        "marker": null,
+        "evidenceRef": "Jonas 3:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 34:6",
+        "bridge": "Deus clemente e misericordioso"
+      },
+      {
+        "ref": "Mateus 12:40",
+        "bridge": "Jonas no ventre três dias"
+      },
+      {
+        "ref": "Lucas 11:32",
+        "bridge": "Nínive se arrependeu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jonas foge porque não conhece o caráter de Deus.",
+        "why": "Em 4:2 ele confessa que fugiu justamente porque sabia que Deus é misericordioso."
+      },
+      {
+        "text": "Nínive se salva sem arrependimento real.",
+        "why": "3:5–10 mostram fé, jejum, conversão do mau caminho e Deus se arrependendo do mal."
+      },
+      {
+        "text": "A planta é só conforto; não ensina nada sobre a cidade.",
+        "why": "Em 4:10 o Senhor compara a compaixão de Jonas pela planta com a sua pela cidade."
+      }
+    ],
+    "centralInsight": "A misericórdia de Deus é maior do que a nossa vontade de fugir",
+    "anchorQuestion": "Como o livro de Jonas liga fuga, salvação e misericórdia até Nínive?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Jonas 1:7, a sorte lançada pelos marinheiros caiu sobre Jonas.",
+      "verseRef": "Jonas 1:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "e a sorte caiu sobre Jonas",
+      "feedbackCorrect": "As sortes apontam Jonas como causa do mal no navio.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 1:7: a sorte caiu sobre Jonas."
+      },
+      "hint": "Veja o resultado das sortes no fim do versículo.",
+      "learningObjective": "Observar que a sorte identifica Jonas.",
+      "evidence": ["Jonas 1:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jonas 1:9, toque o que Jonas diz temer.",
+      "verseRef": "Jonas 1:9",
+      "options": [
+        { "id": "a", "text": "o Senhor" },
+        { "id": "b", "text": "o mar" },
+        { "id": "c", "text": "a terra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou hebreu e temo o Senhor",
+      "feedbackCorrect": "Jonas confessa: teme o Senhor, o Deus do céu.",
+      "feedbackWrong": {
+        "b": "O mar é obra de Deus; Jonas diz temer o Senhor.",
+        "c": "A terra também é obra; o temor declarado é ao Senhor."
+      },
+      "hint": "Leia o objeto do verbo \"temo\".",
+      "learningObjective": "Identificar a quem Jonas diz temer.",
+      "evidence": ["Jonas 1:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Jonas 3:5, o que os habitantes de Nínive fizeram ao crer em Deus?",
+      "verseRef": "Jonas 3:5",
+      "options": [
+        { "id": "a", "text": "Proclamaram jejum e se vestiram de panos de saco" },
+        { "id": "b", "text": "Expulsaram Jonas da cidade" },
+        { "id": "c", "text": "Ignoraram a mensagem e seguiram festas" },
+        { "id": "d", "text": "Pediram mais quarenta dias de prazo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os habitantes de Nínive creram em Deus, proclamaram um jejum e se vestiram de panos de saco",
+      "feedbackCorrect": "Creram, jejuaram e se vestiram de saco, do maior ao menor.",
+      "feedbackWrong": {
+        "b": "O texto não fala de expulsão; fala de fé e jejum.",
+        "c": "Há resposta coletiva de fé, não de festa.",
+        "d": "A mensagem é de quarenta dias; a resposta é jejum."
+      },
+      "hint": "Veja o que segue a fé em Deus.",
+      "learningObjective": "Observar a resposta de Nínive.",
+      "evidence": ["Jonas 3:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Jonas 1:15 na ordem do texto.",
+      "verseRef": "Jonas 1:15",
+      "options": [
+        { "id": "a", "text": "E levantaram Jonas" },
+        { "id": "b", "text": "e o lançaram ao mar" },
+        { "id": "c", "text": "e o mar se acalmou de sua fúria" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "e o mar se acalmou de sua fúria",
+      "feedbackCorrect": "Jonas é levantado, lançado, e o mar se acalma.",
+      "feedbackWrong": {
+        "default": "Comece por levantar Jonas; o mar se acalma no fim."
+      },
+      "hint": "O versículo começa com o que fizeram a Jonas.",
+      "learningObjective": "Reconhecer a sequência de 1:15.",
+      "evidence": ["Jonas 1:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Jonas 2:9, a quem pertence a salvação, segundo Jonas?",
+      "verseRef": "Jonas 2:9",
+      "options": [
+        { "id": "a", "text": "SENHOR" },
+        { "id": "b", "text": "peixe" },
+        { "id": "c", "text": "navio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ao SENHOR pertence a salvação!",
+      "feedbackCorrect": "Do ventre do peixe, Jonas confessa: a salvação é do Senhor.",
+      "feedbackWrong": {
+        "b": "O peixe obedece; a salvação pertence ao Senhor.",
+        "c": "O navio não aparece nesta confissão."
+      },
+      "hint": "Leia a última frase do versículo.",
+      "learningObjective": "Lembrar a quem pertence a salvação.",
+      "evidence": ["Jonas 2:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Jonas 4:2 comunica que se liga a este contexto?",
+      "verseRef": "Jonas 4:2",
+      "passageA": { "ref": "Jonas 4:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jonas foge porque conhece a misericórdia de Deus e teme vê-la alcançar Nínive."
+      },
+      "options": [
+        { "id": "a", "text": "Fuga por causa da misericórdia" },
+        { "id": "b", "text": "Fuga por ignorância de Deus" },
+        { "id": "c", "text": "Fuga por temor do mar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso",
+      "feedbackCorrect": "Jonas foge porque sabe que Deus é clemente e misericordioso.",
+      "feedbackWrong": {
+        "b": "Ele foge justamente porque conhece o caráter de Deus.",
+        "c": "O motivo confessado é a misericórdia, não o mar."
+      },
+      "hint": "Veja o \"pois sabia\" na oração de Jonas.",
+      "learningObjective": "Ligar 4:2 à fuga motivada pela misericórdia.",
+      "evidence": ["Jonas 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jonas 4:6, toque o que o Senhor Deus fez surgir sobre Jonas.",
+      "verseRef": "Jonas 4:6",
+      "options": [
+        { "id": "a", "text": "uma planta" },
+        { "id": "b", "text": "sombra" },
+        { "id": "c", "text": "desconforto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E o Senhor Deus fez surgir uma planta",
+      "feedbackCorrect": "Deus faz surgir uma planta para sombra e alívio.",
+      "feedbackWrong": {
+        "b": "\"Sombra\" é o efeito da planta, não o que Deus fez surgir.",
+        "c": "\"Desconforto\" é o que a planta alivia, não o que surge."
+      },
+      "hint": "Leia o objeto de \"fez surgir\".",
+      "learningObjective": "Identificar a planta enviada por Deus.",
+      "evidence": ["Jonas 4:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Jonas 2:10 na ordem do texto.",
+      "verseRef": "Jonas 2:10",
+      "options": [
+        { "id": "a", "text": "Então o Senhor falou ao peixe" },
+        { "id": "b", "text": "e ele vomitou a Jonas" },
+        { "id": "c", "text": "na terra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "e ele vomitou a Jonas na terra",
+      "feedbackCorrect": "O Senhor fala; o peixe vomita Jonas na terra.",
+      "feedbackWrong": {
+        "default": "Comece pela fala do Senhor ao peixe."
+      },
+      "hint": "O versículo começa com \"Então\".",
+      "learningObjective": "Reconhecer a sequência de 2:10.",
+      "evidence": ["Jonas 2:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Jonas 1:13, os homens abandonam Jonas de imediato, sem tentar remar de volta à terra.",
+      "verseRef": "Jonas 1:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os homens, porém, remavam, esforçando-se para levar o navio de volta à terra",
+      "feedbackCorrect": "Eles remam com esforço; o \"porém\" marca a tentativa antes do lançamento.",
+      "feedbackWrong": {
+        "true": "Releia 1:13: eles remavam para voltar à terra."
+      },
+      "hint": "Veja o que os homens fazem apesar da tempestade.",
+      "learningObjective": "Compreender o contraste do esforço dos marinheiros.",
+      "evidence": ["Jonas 1:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jonas 1:13, toque a palavra que marca o contraste com o pedido de Jonas.",
+      "verseRef": "Jonas 1:13",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "navio" },
+        { "id": "c", "text": "tempestuoso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os homens, porém, remavam",
+      "feedbackCorrect": "\"Porém\" mostra que, em vez de lançá-lo logo, remam.",
+      "feedbackWrong": {
+        "b": "\"Navio\" é o objeto do esforço, não o contraste.",
+        "c": "\"Tempestuoso\" descreve o mar, não o contraste."
+      },
+      "hint": "Procure a palavra curta após \"Os homens\".",
+      "learningObjective": "Reconhecer o marcador de contraste em 1:13.",
+      "evidence": ["Jonas 1:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Jonas 3:10 se relaciona com a pregação de Jonas 3:4?",
+      "verseRef": "Jonas 3:4",
+      "options": [
+        { "id": "a", "text": "Deus se arrepende do mal porque o povo se converte" },
+        { "id": "b", "text": "Deus destrói Nínive apesar do jejum" },
+        { "id": "c", "text": "A mensagem de quarenta dias é cancelada sem resposta" },
+        { "id": "d", "text": "Jonas se alegra e celebra a misericórdia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ainda quarenta dias, e Nínive será subvertida",
+      "feedbackCorrect": "A ameaça de subversão encontra conversão; Deus não faz o mal anunciado.",
+      "feedbackWrong": {
+        "b": "3:10 diz que Deus se arrepende e não o faz.",
+        "c": "Há resposta coletiva e mudança divina.",
+        "d": "Em 4:1 Jonas se irou, não se alegrou."
+      },
+      "hint": "Compare o anúncio de 3:4 com o desfecho de 3:10.",
+      "learningObjective": "Relacionar pregação, conversão e arrependimento de Deus.",
+      "evidence": ["Jonas 3:4", "Jonas 3:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa fuga e misericórdia em Jonas?",
+      "verseRef": "Jonas 1:15",
+      "options": [
+        { "id": "a", "text": "Fuga exposta e mar acalmado" },
+        { "id": "b", "text": "Oração no peixe e salvação" },
+        { "id": "c", "text": "Pregação, arrependimento e lição da planta" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "e o mar se acalmou de sua fúria",
+      "feedbackCorrect": "Do mar à oração, depois Nínive e a planta.",
+      "feedbackWrong": {
+        "default": "Comece pela fuga no mar; a planta fecha a etapa."
+      },
+      "hint": "Siga a ordem das cenas da etapa.",
+      "learningObjective": "Seguir o arco da etapa.",
+      "evidence": ["Jonas 1:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Jonas 3:10, que verbo descreve a resposta de Deus ao ver a conversão de Nínive?",
+      "verseRef": "Jonas 3:10",
+      "options": [
+        { "id": "a", "text": "arrependeu" },
+        { "id": "b", "text": "destruiu" },
+        { "id": "c", "text": "esqueciu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+      "feedbackCorrect": "Deus se arrepende do mal anunciado e não o faz.",
+      "feedbackWrong": {
+        "b": "O texto diz que ele não fez o mal anunciado.",
+        "c": "Há arrependimento ativo, não esquecimento."
+      },
+      "hint": "Veja o que Deus fez após ver as obras deles.",
+      "learningObjective": "Lembrar a resposta divina à conversão.",
+      "evidence": ["Jonas 3:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Jonas 4:2 a Êxodo 34:6?",
+      "verseRef": "Jonas 4:2",
+      "passageA": { "ref": "Jonas 4:2" },
+      "passageB": { "ref": "Êxodo 34:6" },
+      "options": [
+        { "id": "a", "text": "Deus clemente e misericordioso" },
+        { "id": "b", "text": "Deus só de juízo seco" },
+        { "id": "c", "text": "Deus desconhecido de Jonas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade",
+      "evidence": ["Jonas 4:2", "Êxodo 34:6"],
+      "feedbackCorrect": "Jonas ecoa a revelação do Sinai: Deus clemente e misericordioso.",
+      "feedbackWrong": {
+        "b": "Os dois textos destacam clemência e misericórdia.",
+        "c": "Jonas confessa que já sabia desse caráter."
+      },
+      "hint": "Compare os atributos de Deus nos dois textos.",
+      "learningObjective": "Relacionar a confissão de Jonas a Êxodo 34:6."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jonas 4:2, toque a palavra que liga a fuga ao conhecimento do caráter de Deus.",
+      "verseRef": "Jonas 4:2",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "Társis" },
+        { "id": "c", "text": "palavra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fugindo para Társis, pois sabia que Tu és Deus clemente",
+      "feedbackCorrect": "\"Pois\" liga a fuga ao que Jonas já sabia de Deus.",
+      "feedbackWrong": {
+        "b": "\"Társis\" é o destino; a ligação causal vem depois.",
+        "c": "\"Palavra\" abre a oração; não marca a causa da fuga."
+      },
+      "hint": "Procure a palavra antes de \"sabia\".",
+      "learningObjective": "Reconhecer o marcador causal em 4:2.",
+      "evidence": ["Jonas 4:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os movimentos após a pregação em Nínive?",
+      "verseRef": "Jonas 3:10",
+      "options": [
+        { "id": "a", "text": "Pregação e arrependimento de Nínive" },
+        { "id": "b", "text": "Deus se arrepende do mal anunciado" },
+        { "id": "c", "text": "Jonas se irou e recebe a lição da planta" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+      "feedbackCorrect": "Conversão, misericórdia divina e então a ira de Jonas.",
+      "feedbackWrong": {
+        "default": "Comece pela resposta de Nínive; a planta fecha."
+      },
+      "hint": "A ira de Jonas vem depois da misericórdia de Deus.",
+      "learningObjective": "Relacionar Nínive, misericórdia e a planta.",
+      "evidence": ["Jonas 3:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Jonas 4:2 e 4:10, a etapa mostra que Jonas conhece a misericórdia de Deus e precisa aprender a mesma compaixão pela cidade.",
+      "verseRef": "Jonas 4:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois sabia que Tu és Deus clemente, e misericordioso",
+      "feedbackCorrect": "Jonas sabe quem Deus é; a planta o confronta a ter compaixão.",
+      "feedbackWrong": {
+        "false": "Una 4:2 (ele sabia) com 4:10 (compaixão pela planta e pela cidade)."
+      },
+      "hint": "Compare o que Jonas sabia com a pergunta sobre a planta.",
+      "learningObjective": "Interpretar a etapa como lição de misericórdia.",
+      "evidence": ["Jonas 4:2", "Jonas 4:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jonas 4:10, toque o trecho que sustenta a lição sobre a cidade.",
+      "verseRef": "Jonas 4:10",
+      "options": [
+        { "id": "a", "text": "compaixão" },
+        { "id": "b", "text": "trabalho" },
+        { "id": "c", "text": "noite" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Você teve compaixão da planta",
+      "feedbackCorrect": "\"Compaixão\" é o ponto: Jonas a teve pela planta; Deus a tem pela cidade.",
+      "feedbackWrong": {
+        "b": "\"Trabalho\" descreve o custo da planta, não a lição central.",
+        "c": "\"Noite\" marca o tempo da planta, não a lição."
+      },
+      "hint": "Procure o que Jonas teve em relação à planta.",
+      "learningObjective": "Sustentar com o texto a lição da compaixão.",
+      "evidence": ["Jonas 4:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa de Jonas sustenta sobre a misericórdia de Deus?",
+      "verseRef": "Jonas 4:2",
+      "options": [
+        { "id": "a", "text": "Deus é misericordioso e ensina Jonas a ter compaixão" },
+        { "id": "b", "text": "Jonas foge porque não conhece o caráter de Deus" },
+        { "id": "c", "text": "Nínive se salva sem qualquer arrependimento" },
+        { "id": "d", "text": "A planta não ensina nada sobre a cidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és Deus clemente, e misericordioso",
+      "feedbackCorrect": "Do mar a Nínive e à planta, a misericórdia é maior que a fuga de Jonas.",
+      "feedbackWrong": {
+        "b": "4:2 mostra que ele foge porque conhece Deus.",
+        "c": "3:5–10 mostram fé, jejum e conversão.",
+        "d": "4:10 liga a planta à compaixão pela cidade."
+      },
+      "hint": "Una 4:2, 3:10 e 4:10.",
+      "learningObjective": "Escolher a interpretação do arco da etapa.",
+      "evidence": ["Jonas 4:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o sinal de Jonas e o arrependimento na Escritura?",
+      "verseRef": "Jonas 2:1",
+      "options": [
+        { "id": "a", "text": "Jonas ora do ventre do peixe" },
+        { "id": "b", "text": "Jesus aponta o sinal de Jonas" },
+        { "id": "c", "text": "Nínive é lembrada como exemplo de arrependimento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe",
+      "evidence": ["Jonas 2:1", "Mateus 12:40", "Lucas 11:32"],
+      "feedbackCorrect": "Do peixe ao sinal no evangelho e ao exemplo de Nínive.",
+      "feedbackWrong": {
+        "default": "Siga: Jonas 2, Mateus 12 e Lucas 11."
+      },
+      "hint": "Parta da oração no peixe.",
+      "learningObjective": "Ver Jonas e Nínive no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Jonas 4:2, que palavra nomeia o Deus que Jonas conhecia e temia ver perdoar Nínive?",
+      "verseRef": "Jonas 4:2",
+      "options": [
+        { "id": "a", "text": "misericordioso" },
+        { "id": "b", "text": "distante" },
+        { "id": "c", "text": "injusto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és Deus clemente, e misericordioso",
+      "feedbackCorrect": "Jonas confessa: Deus é clemente e misericordioso.",
+      "feedbackWrong": {
+        "b": "O texto não chama Deus de distante.",
+        "c": "Jonas afirma misericórdia, não injustiça."
+      },
+      "hint": "Veja o segundo atributo após \"clemente\".",
+      "learningObjective": "Lembrar o termo teológico da confissão de Jonas.",
+      "evidence": ["Jonas 4:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Jonas 3:5 a Lucas 11:32?",
+      "verseRef": "Jonas 3:5",
+      "passageA": { "ref": "Jonas 3:5" },
+      "passageB": { "ref": "Lucas 11:32" },
+      "options": [
+        { "id": "a", "text": "Nínive se arrependeu" },
+        { "id": "b", "text": "Nínive ignorou a mensagem" },
+        { "id": "c", "text": "Só Jonas se arrependeu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os habitantes de Nínive creram em Deus",
+      "evidence": ["Jonas 3:5", "Lucas 11:32"],
+      "feedbackCorrect": "Jesus aponta Nínive como povo que se arrependeu diante da pregação.",
+      "feedbackWrong": {
+        "b": "Os dois textos afirmam resposta de arrependimento.",
+        "c": "O foco é a cidade que creu e se arrependeu."
+      },
+      "hint": "Compare a resposta de Nínive nos dois textos.",
+      "learningObjective": "Ligar o arrependimento de Nínive a Lucas 11:32."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jonas 2:9, toque o trecho que sustenta de quem vem a salvação.",
+      "verseRef": "Jonas 2:9",
+      "options": [
+        { "id": "a", "text": "salvação" },
+        { "id": "b", "text": "sacrifício" },
+        { "id": "c", "text": "gratidão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ao SENHOR pertence a salvação!",
+      "feedbackCorrect": "\"Salvação\" é o que pertence ao Senhor, não ao esforço de Jonas.",
+      "feedbackWrong": {
+        "b": "\"Sacrifício\" é a oferta de Jonas; a salvação é do Senhor.",
+        "c": "\"Gratidão\" descreve o tipo de sacrifício, não a origem da salvação."
+      },
+      "hint": "Leia a última frase do versículo.",
+      "learningObjective": "Sustentar com o texto a origem da salvação.",
+      "evidence": ["Jonas 2:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência resume o chamado da etapa de Jonas?",
+      "verseRef": "Jonas 3:10",
+      "options": [
+        { "id": "a", "text": "Confessar a fuga e a tempestade por causa própria" },
+        { "id": "b", "text": "Receber salvação e anunciar a mensagem" },
+        { "id": "c", "text": "Aprender a misericórdia que Deus tem pela cidade" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "e Deus se arrependeu do mal que havia dito que lhes faria, e não o fez",
+      "feedbackCorrect": "Da fuga à salvação, até a lição de misericórdia.",
+      "feedbackWrong": {
+        "default": "Comece pela fuga; a misericórdia fecha."
+      },
+      "hint": "Siga o arco: fuga, salvação, misericórdia.",
+      "learningObjective": "Encadear as respostas da etapa.",
+      "evidence": ["Jonas 3:10"]
+    }
+  ]
+}

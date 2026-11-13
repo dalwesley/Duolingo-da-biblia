@@ -1,0 +1,40 @@
+{
+  "slug": "ageu-cap",
+  "prefix": "agc",
+  "book": "Ageu",
+  "chapters": 2,
+  "title": "Ageu",
+  "description": "Ageu capítulo a capítulo: priorizar a casa do Senhor.",
+  "icon": "🏛️",
+  "color": "#C4A040",
+  "order": 44,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": ["ageu"],
+  "modules": [
+    {
+      "title": "Reconstruir a casa · cap. 1–2",
+      "scenes": [
+        {
+          "ref": "Ageu 1:1–11",
+          "title": "Tempo de construir",
+          "intro": "O povo diz que ainda não é tempo de reedificar a casa, e o Senhor responde.",
+          "insight": "Enquanto cada um corre para a própria casa, a casa do Senhor fica em ruínas.",
+          "objective": "Priorizar a casa do Senhor"
+        },
+        {
+          "ref": "Ageu 2:10–19",
+          "title": "Do dia em diante",
+          "intro": "Ageu pergunta aos sacerdotes sobre o puro e o impuro e anuncia bênção.",
+          "insight": "A partir do dia em que o alicerce é posto, o Senhor promete abençoar.",
+          "objective": "Obediência que traz bênção"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Reconstruir a casa",
+        "intro": "Revise o chamado a priorizar o templo e a bênção que começa no alicerce.",
+        "insight": "Quem põe a casa do Senhor em primeiro lugar encontra a bênção dele"
+      }
+    }
+  ]
+}

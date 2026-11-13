@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Oséias 13:4–9",
+    "passages": [
+      {
+        "ref": "Oséias 13:4–9"
+      }
+    ],
+    "context": "Não há Salvador além do Senhor; ainda assim Efraim se exaltou e esqueceu.",
+    "keyword": "SENHOR",
+    "keywordGloss": "Palavra-chave do trecho em Eu sou o teu Deus.",
+    "focusQuestion": "Onde esta palavra de Oséias encontra a sua vida agora?",
+    "reflectionPrompts": [
+      "Eu sou o SENHOR, seu Deus, desde a",
+      "Eu te conheci no deserto, em uma terra",
+      "por isso, se esqueceram de mim"
+    ],
+    "facts": [
+      {
+        "text": "Eu sou o SENHOR, seu Deus, desde a terra do Egito.",
+        "evidenceRef": "Oséias 13:4",
+        "evidenceSpan": "Eu sou o SENHOR, seu Deus, desde a terra do Egito"
+      },
+      {
+        "text": "Eu te conheci no deserto, em uma terra árida e seca.",
+        "evidenceRef": "Oséias 13:5",
+        "evidenceSpan": "Eu te conheci no deserto, em uma terra árida e seca"
+      },
+      {
+        "text": "Quando tinham pasto, eles se fartaram, e o coração deles se ensoberbeceu.",
+        "evidenceRef": "Oséias 13:6",
+        "evidenceSpan": "Quando tinham pasto, eles se fartaram, e o coração deles se ensoberbeceu"
+      },
+      {
+        "text": "Portanto, serei para eles como um leão.",
+        "evidenceRef": "Oséias 13:7",
+        "evidenceSpan": "Portanto, serei para eles como um leão"
+      },
+      {
+        "text": "ali os devorarei como um leão e as feras do campo os despedaçarão.",
+        "evidenceRef": "Oséias 13:8",
+        "evidenceSpan": "ali os devorarei como um leão e as feras do campo os despedaçarão"
+      },
+      {
+        "text": "A tua ruína, ó Israel, vem de ti, e só de mim vem o teu socorro.",
+        "evidenceRef": "Oséias 13:9",
+        "evidenceSpan": "A tua ruína, ó Israel, vem de ti, e só de mim vem o teu socorro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SENHOR",
+        "gloss": "Palavra-chave do trecho em Eu sou o teu Deus."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra-chave do trecho em Eu sou o teu Deus."
+      },
+      {
+        "term": "Egito",
+        "gloss": "Palavra-chave do trecho em Eu sou o teu Deus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Eu sou o SENHOR, seu Deus, desde a terra do Egito",
+        "evidenceRef": "Oséias 13:4"
+      },
+      {
+        "label": "Eu te conheci no deserto, em uma terra árida e",
+        "evidenceRef": "Oséias 13:5"
+      },
+      {
+        "label": "por isso, se esqueceram de mim",
+        "evidenceRef": "Oséias 13:6"
+      },
+      {
+        "label": "Portanto, serei para eles como um leão",
+        "evidenceRef": "Oséias 13:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Eu sou o SENHOR, seu Deus, desde a terra do Egito",
+        "marker": "portanto",
+        "evidenceRef": "Oséias 13:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto, serei para eles como um leão",
+        "marker": "Portanto",
+        "evidenceRef": "Oséias 13:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quando tinham pasto, eles se fartaram, e o coração deles se ensoberbeceu",
+        "marker": null,
+        "evidenceRef": "Oséias 13:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 3:1",
+        "bridge": "Volta da esposa"
+      },
+      {
+        "ref": "Romanos 9:25",
+        "bridge": "Povo chamado de novo"
+      },
+      {
+        "ref": "Lucas 15:18",
+        "bridge": "Voltar ao pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O texto não exige resposta prática.",
+        "why": "A cena chama a ouvir e voltar ao Senhor."
+      },
+      {
+        "text": "O juízo apaga qualquer esperança.",
+        "why": "Há convite e promessa no bloco da trilha."
+      },
+      {
+        "text": "Os ídolos são fonte real das bênçãos.",
+        "why": "O Senhor é quem dá o necessário."
+      }
+    ],
+    "centralInsight": "Do poder da sepultura eu os remirei; ó morte, onde estão as tuas pestes?",
+    "anchorQuestion": "Segundo Oséias 13:4, o que o texto destaca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Oséias 13:4, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 13:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu sou o SENHOR, seu Deus, desde a terra do Egito",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler semente em Oséias 13:4.",
+      "evidence": [
+        "Oséias 13:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Oséias 13:4, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 13:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "sou"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sou",
+      "feedbackCorrect": "O texto traz \"sou\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 13:4.",
+      "evidence": [
+        "Oséias 13:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Oséias 13:5, o que o texto afirma?",
+      "verseRef": "Oséias 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu te conheci no deserto, em uma terra árida e seca"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu te conheci no deserto, em uma terra árida e seca",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 13:5.",
+      "evidence": [
+        "Oséias 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o versículo na ordem do texto. (Oséias 13:5)",
+      "verseRef": "Oséias 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu te conheci"
+        },
+        {
+          "id": "b",
+          "text": "no deserto, em uma"
+        },
+        {
+          "id": "c",
+          "text": "terra árida e seca."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu te conheci",
+      "feedbackCorrect": "A ordem segue o versículo.",
+      "feedbackWrong": {
+        "default": "Comece pelo início do verso."
+      },
+      "hint": "Siga a ordem das palavras no palco.",
+      "learningObjective": "Ordenar Oséias 13:5.",
+      "evidence": [
+        "Oséias 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Oséias 13:6, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 13:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "tinham"
+        },
+        {
+          "id": "b",
+          "text": "sou"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tinham",
+      "feedbackCorrect": "A palavra do texto é \"tinham\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 13:6.",
+      "evidence": [
+        "Oséias 13:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Oséias 13:4 comunica que se liga a este contexto?",
+      "verseRef": "Oséias 13:4",
+      "passageA": {
+        "ref": "Oséias 13:4"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Não há Salvador além do Senhor; ainda assim Efraim se exaltou e esqueceu."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a voltar"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou o SENHOR, seu Deus, desde a terra do Egito",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 13:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Oséias 13:6, quando tinham pasto, eles se fartaram, e o coração deles se ensoberbeceu.",
+      "verseRef": "Oséias 13:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Quando tinham pasto, eles se fartaram, e o coração deles se ensoberbeceu",
+      "feedbackCorrect": "O texto confirma.",
+      "feedbackWrong": {
+        "false": "O versículo confirma a afirmação."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler caminhada em Oséias 13:6.",
+      "evidence": [
+        "Oséias 13:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Oséias 13:6, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 13:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "pasto"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "tinham"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pasto",
+      "feedbackCorrect": "O texto traz \"pasto\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 13:6.",
+      "evidence": [
+        "Oséias 13:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Oséias 13:7, o que o texto afirma?",
+      "verseRef": "Oséias 13:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto e serei"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, serei para eles como um leão",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 13:7.",
+      "evidence": [
+        "Oséias 13:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento desta cena. (Oséias 13:7)",
+      "verseRef": "Oséias 13:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto e serei"
+        },
+        {
+          "id": "b",
+          "text": "ursa e roubada"
+        },
+        {
+          "id": "c",
+          "text": "ruína e Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Portanto, serei para eles como um leão",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 13:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Oséias 13:8, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 13:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "ursa"
+        },
+        {
+          "id": "b",
+          "text": "tinham"
+        },
+        {
+          "id": "c",
+          "text": "pasto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ursa",
+      "feedbackCorrect": "A palavra do texto é \"ursa\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 13:8.",
+      "evidence": [
+        "Oséias 13:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Oséias 13:6 a Romanos 9:25?",
+      "verseRef": "Oséias 13:6",
+      "passageA": {
+        "ref": "Oséias 13:6"
+      },
+      "passageB": {
+        "ref": "Romanos 9:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo chamado de novo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando tinham pasto, eles se fartaram, e o coração deles se ensoberbeceu",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 13:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Oséias 13:8, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 13:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "ali os devorarei como um leão e as feras do campo os despedaçarão",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler profundezas em Oséias 13:8.",
+      "evidence": [
+        "Oséias 13:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Oséias 13:8, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 13:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "roubada"
+        },
+        {
+          "id": "b",
+          "text": "Como"
+        },
+        {
+          "id": "c",
+          "text": "ursa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "roubada",
+      "feedbackCorrect": "O texto traz \"roubada\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 13:8.",
+      "evidence": [
+        "Oséias 13:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Oséias 13:9, o que o texto afirma?",
+      "verseRef": "Oséias 13:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "ruína e Israel"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A tua ruína, ó Israel, vem de ti, e só de mim vem o teu socorro",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 13:9.",
+      "evidence": [
+        "Oséias 13:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica que o texto sustenta. (Oséias 13:9)",
+      "verseRef": "Oséias 13:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "está e agora"
+        },
+        {
+          "id": "b",
+          "text": "dei e rei"
+        },
+        {
+          "id": "c",
+          "text": "iniquidade e Efraim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A tua ruína, ó Israel, vem de ti, e só de mim vem o teu socorro",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 13:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Oséias 13:10, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 13:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "está"
+        },
+        {
+          "id": "b",
+          "text": "ursa"
+        },
+        {
+          "id": "c",
+          "text": "roubada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "está",
+      "feedbackCorrect": "A palavra do texto é \"está\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 13:10.",
+      "evidence": [
+        "Oséias 13:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Oséias 13:8 a Lucas 15:18?",
+      "verseRef": "Oséias 13:8",
+      "passageA": {
+        "ref": "Oséias 13:8"
+      },
+      "passageB": {
+        "ref": "Lucas 15:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voltar ao pai"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali os devorarei como um leão e as feras do campo os despedaçarão",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 13:8"
+      ]
+    }
+  ]
+}

@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Planos — STWAY</title>
-  <meta name="description" content="A Bíblia é grátis no STWAY. O Peregrino+ abre as trilhas por tema, as estações, os planos guiados e a revisão da semana. Assine pelo site ou pelo app." />
+  <meta name="description" content="A Bíblia é grátis no STWAY. O Peregrino+ abre as trilhas por tema, as estações, os planos guiados e várias trilhas ao mesmo tempo. Assine pelo site ou pelo app." />
   <meta name="theme-color" content="#040910" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Planos — STWAY" />
@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=loja2" />
+  <link rel="stylesheet" href="/styles.css?v=ios1" />
 </head>
 <body>
   <div class="cosmos" aria-hidden="true"></div>
@@ -67,7 +67,7 @@
           <span class="plan-note">para sempre</span>
         </div>
         <a class="btn btn-ghost plan-cta" data-store href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-        <span class="btn btn-soon plan-cta" aria-disabled="true">iOS em breve</span>
+        <button type="button" class="btn btn-soon plan-cta" data-ios-waitlist>Baixe para iOS</button>
         <p class="plan-list-head">O que está incluso</p>
         <ul class="plan-list">
           <li><strong>A Bíblia, livro a livro</strong><span>Tradução Brasileira, com busca, versículos guardados e leitura sem internet.</span></li>
@@ -75,6 +75,7 @@
           <li><strong>Hebraico e grego por baixo da palavra</strong><span>Toque a palavra e veja o Strong.</span></li>
           <li><strong>Plano da Bíblia inteira</strong><span>Com lembrete diário de leitura.</span></li>
           <li><strong>Liga e Caravana</strong><span>Caminhe junto com quem está na mesma estrada.</span></li>
+          <li><strong>Sua leitura crescendo</strong><span>Revisão da semana, erros explicados com o porquê e a evolução do seu acerto, semana a semana.</span></li>
         </ul>
       </article>
 
@@ -97,14 +98,12 @@
           <li><strong>Trilhas por tema</strong><span>Sermão do Monte, A Promessa, Oração, Família, História da Igreja e outras rotas — inteiras desde a 1ª cena.</span></li>
           <li><strong>Postal animado</strong><span>A revelação do seu postal em vídeo, pronta para o status e os stories.</span></li>
           <li><strong>Trilhas da estação</strong><span>O Advento, e as próximas estações quando chegarem: uma cena por dia e a revisão de cada semana.</span></li>
-          <li><strong>Revisão da semana</strong><span>Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.</span></li>
           <li><strong>Planos de leitura</strong><span>Os Evangelhos em 30 dias, o Novo Testamento em 90 e outros caminhos.</span></li>
-          <li><strong>Seus dias</strong><span>Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.</span></li>
           <li><strong>O que você mais erra</strong><span>Você vê onde tropeça. Depois, um treino só daquilo.</span></li>
-          <li><strong>Erros explicados</strong><span>Cada erro fica guardado, com a resposta certa e o porquê.</span></li>
           <li><strong>Selo de Peregrino</strong><span>Um selo exclusivo no seu perfil e na Caravana.</span></li>
           <li><strong>Reconhecimento</strong><span>Veja quem reconheceu a sua jornada e as suas medalhas.</span></li>
         </ul>
+        <p class="plan-referral"><strong>Convide e ganhe 1 mês.</strong> Quem entrar pelo seu convite e assinar o Peregrino+ te dá 1 mês de Plus. Já assina? O mês fica guardado para depois.</p>
       </article>
 
       <!-- Igrejas -->
@@ -171,6 +170,10 @@
         <p>Quem assinou pelo site cancela pelo link do e-mail de recibo, a qualquer momento. Quem assinou pelo app cancela na App Store ou no Google Play. O acesso segue até o fim do período pago.</p>
       </details>
       <details>
+        <summary>Convidei alguém que assinou. O que eu ganho?</summary>
+        <p>1 mês de Peregrino+. Vale para quem entrou pelo seu convite de companhia, de grupo ou de passe de trilha e pagou a assinatura (o teste grátis sozinho não conta). Se você ainda não assina, o mês começa na hora; se já assina, ele fica guardado e entra quando a sua assinatura acabar. Até 12 meses por ano. Veja as regras nos <a href="/termos">Termos</a>.</p>
+      </details>
+      <details>
         <summary>Já assino pelo app. Preciso fazer algo?</summary>
         <p>Não. Sua assinatura continua na loja do celular. Não assine de novo pelo site.</p>
       </details>
@@ -207,7 +210,7 @@
       <nav class="footer-col" aria-label="Participe">
         <h2>Participe</h2>
         <a href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-        <span class="footer-soon">iOS em breve</span>
+        <button type="button" class="footer-soon" data-ios-waitlist>Baixe para iOS</button>
         <a href="/#contato">Para igrejas</a>
         <a href="/#contato">Imprensa</a>
         <a href="/#contato">Fale conosco</a>
@@ -228,5 +231,6 @@
     </div>
   </footer>
   <script src="/planos/planos.js?v=2" defer></script>
+  <script src="/ios-waitlist.js?v=2" defer></script>
 </body>
 </html>

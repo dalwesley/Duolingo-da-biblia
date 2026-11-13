@@ -43,7 +43,19 @@ class AppearanceStyle {
   final AppearanceLook look;
   final DayPhase phase;
 
-  const AppearanceStyle({required this.look, required this.phase});
+  /// Tom do lugar — a cor da aba onde a tela mora (o mesmo da pílula ativa
+  /// do nav). Nulo fora das abas (rotas empurradas, sheets) e em Hoje.
+  final Color? placeTint;
+
+  const AppearanceStyle({
+    required this.look,
+    required this.phase,
+    this.placeTint,
+  });
+
+  /// O mesmo look, dentro de uma aba de tom [tint].
+  AppearanceStyle withPlace(Color? tint) =>
+      AppearanceStyle(look: look, phase: phase, placeTint: tint);
 
   // Tintas do papel claro, puxadas para o azul da trilha (não cinza).
   static const _inkSecondaryLight = Color(0xFF365474);
@@ -62,6 +74,11 @@ class AppearanceStyle {
     AppearanceLook.afternoon => const Color(0xFFCADDF2),
     AppearanceLook.night => AppRoles.chrome,
   };
+
+  /// Estrutura da tela (filete do título, rótulo, aba interna, ícone sem
+  /// significado próprio): o tom do lugar, ou [chrome] fora das abas.
+  /// Ícone com significado (modo, sequência, risco) pede o próprio papel.
+  Color get place => placeTint == null ? chrome : ink(placeTint!);
 
   /// Seleção no chrome: contorno claro no escuro; azul da marca no papel.
   Color get selected => onDark ? AppRoles.selected : AppColors.primary;
@@ -241,6 +258,7 @@ class Appearance extends InheritedWidget {
   bool updateShouldNotify(Appearance oldWidget) =>
       oldWidget.style.look != style.look ||
       oldWidget.style.phase != style.phase ||
+      oldWidget.style.placeTint != style.placeTint ||
       oldWidget.mode != mode;
 }
 

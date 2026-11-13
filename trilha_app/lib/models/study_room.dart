@@ -1,6 +1,7 @@
 import '../l10n/l10n_global.dart';
 import '../widgets/cinematic_icon.dart';
 import 'portrait_style.dart';
+import 'room_plan.dart';
 
 /// Teto de pessoas por grupo (plano grátis). A function
 /// `onRoomMemberCreate` também corta quem passar disso.
@@ -104,6 +105,64 @@ class RoomStudy {
   }
 }
 
+/// Leitura da Bíblia que o líder marcou para a semana: capítulos
+/// [from]..[to] de um livro (abreviação do leitor, ex. "Jo").
+class RoomReading {
+  final String bookAbbrev;
+  final String bookName;
+  final int from;
+  final int to;
+
+  /// Segunda-feira (YYYY-MM-DD) da semana da leitura.
+  final String week;
+
+  const RoomReading({
+    required this.bookAbbrev,
+    required this.bookName,
+    required this.from,
+    required this.to,
+    required this.week,
+  });
+
+  static const maxChapters = 10;
+
+  int get chapters => to - from + 1;
+
+  /// "João 1–3" ou "João 1".
+  String get label => from == to ? '$bookName $from' : '$bookName $from–$to';
+
+  /// Referência que o leitor abre (1º capítulo).
+  String get openRef => '$bookName $from';
+
+  bool isForWeek(String weekKey) => week == weekKey;
+
+  Map<String, dynamic> toMap() => {
+    'bookAbbrev': bookAbbrev,
+    'bookName': bookName,
+    'from': from,
+    'to': to,
+    'week': week,
+  };
+
+  static RoomReading? fromMap(Object? raw) {
+    if (raw is! Map) return null;
+    final abbrev = (raw['bookAbbrev'] as String?)?.trim() ?? '';
+    final name = (raw['bookName'] as String?)?.trim() ?? '';
+    final week = (raw['week'] as String?)?.trim() ?? '';
+    final from = (raw['from'] as num?)?.toInt() ?? 0;
+    final to = (raw['to'] as num?)?.toInt() ?? 0;
+    if (abbrev.isEmpty || name.isEmpty || week.isEmpty) return null;
+    if (from < 1 || to < from || to - from >= maxChapters) return null;
+    return RoomReading(
+      bookAbbrev: abbrev,
+      bookName: name,
+      from: from,
+      to: to,
+      week: week,
+    );
+  }
+}
+
 /// Sala privada de caminhada — grupo fechado por código de convite.
 class StudyRoom {
   final String code;
@@ -119,6 +178,16 @@ class StudyRoom {
   /// Estudo marcado pelo líder. Vale só na semana gravada em [RoomStudy.week].
   final RoomStudy? study;
 
+  /// Leitura da Bíblia marcada pelo líder para a semana.
+  final RoomReading? reading;
+
+  /// Grupo do piloto de líderes: abre mesmo com `groups_enabled` desligado.
+  final bool pilot;
+
+  /// Propósito do grupo (início e fim escolhidos pelo líder). Enquanto
+  /// existe, toma o lugar do estudo e da leitura da semana.
+  final RoomPlan? plan;
+
   const StudyRoom({
     required this.code,
     required this.name,
@@ -128,12 +197,18 @@ class StudyRoom {
     this.kind = RoomKind.celula,
     this.weeklyGoalSteps,
     this.study,
+    this.reading,
+    this.pilot = false,
+    this.plan,
   });
 
   bool isOwner(String? uid) => uid != null && uid == ownerId;
 
   RoomStudy? studyFor(String weekKey) =>
       study != null && study!.isForWeek(weekKey) ? study : null;
+
+  RoomReading? readingFor(String weekKey) =>
+      reading != null && reading!.isForWeek(weekKey) ? reading : null;
 
   StudyRoom copyWith({
     String? name,
@@ -144,6 +219,10 @@ class StudyRoom {
     bool clearGoal = false,
     RoomStudy? study,
     bool clearStudy = false,
+    RoomReading? reading,
+    bool clearReading = false,
+    RoomPlan? plan,
+    bool clearPlan = false,
   }) {
     return StudyRoom(
       code: code,
@@ -156,6 +235,9 @@ class StudyRoom {
           ? null
           : (weeklyGoalSteps ?? this.weeklyGoalSteps),
       study: clearStudy ? null : (study ?? this.study),
+      reading: clearReading ? null : (reading ?? this.reading),
+      pilot: pilot,
+      plan: clearPlan ? null : (plan ?? this.plan),
     );
   }
 
@@ -184,6 +266,9 @@ class StudyRoom {
       kind: RoomKind.fromKey(data['kind'] as String?),
       weeklyGoalSteps: (data['weeklyGoalSteps'] as num?)?.toInt(),
       study: RoomStudy.fromMap(data['study']),
+      reading: RoomReading.fromMap(data['reading']),
+      pilot: data['pilot'] == true,
+      plan: RoomPlan.fromMap(data['plan']),
     );
   }
 }
@@ -205,6 +290,21 @@ class RoomMember {
   /// Dias (1 = seg … 7 = dom) em que estudou nesta semana.
   final List<int> weekDays;
 
+  /// Capítulos da leitura da semana já lidos (vale com [readingWeek]).
+  final int readingDone;
+  final String? readingWeek;
+
+  /// Semanas em que ganhou o selo "Fiel na semana" neste grupo.
+  final List<String> sealWeeks;
+
+  /// Pontos de acerto acima das semanas anteriores ([growthWeek]). Só a
+  /// variação vai para o grupo, nunca o acerto.
+  final int? growthPts;
+  final String? growthWeek;
+
+  /// O que fez no propósito do grupo (vale com o id do propósito atual).
+  final PlanProgress? plan;
+
   const RoomMember({
     required this.uid,
     required this.name,
@@ -215,7 +315,22 @@ class RoomMember {
     this.portraitStyle = PortraitStyle.photo,
     this.studyDone,
     this.weekDays = const [],
+    this.readingDone = 0,
+    this.readingWeek,
+    this.sealWeeks = const [],
+    this.growthPts,
+    this.growthWeek,
+    this.plan,
   });
+
+  /// Crescimento na semana [week] (ou `null`).
+  int? growthFor(String week) => growthWeek == week ? growthPts : null;
+
+  /// Capítulos lidos de [reading] (0 se a marca é de outra semana).
+  int readingDoneFor(RoomReading? reading) =>
+      reading != null && readingWeek == reading.week
+      ? readingDone.clamp(0, reading.chapters)
+      : 0;
 
   bool get walkedThisWeek => steps > 0 || weekDays.isNotEmpty;
 
@@ -275,6 +390,9 @@ class RoomInvite {
   final String? toPhotoUrl;
   final RoomInviteStatus status;
 
+  /// Convite de um grupo do piloto (abre Grupos para quem recebe).
+  final bool pilot;
+
   const RoomInvite({
     required this.id,
     required this.roomCode,
@@ -287,6 +405,7 @@ class RoomInvite {
     required this.status,
     this.fromPhotoUrl,
     this.toPhotoUrl,
+    this.pilot = false,
   });
 
   bool get isPending => status == RoomInviteStatus.pending;
@@ -306,6 +425,7 @@ class RoomInvite {
     status: status ?? this.status,
     fromPhotoUrl: fromPhotoUrl,
     toPhotoUrl: toPhotoUrl,
+    pilot: pilot,
   );
 
   static RoomInvite? fromDoc(String id, Map<String, dynamic> data) {
@@ -336,6 +456,7 @@ class RoomInvite {
       toName: toName.isEmpty ? L10n.current.cornerSomeone : toName,
       toPhotoUrl: (data['toPhotoUrl'] as String?)?.trim(),
       status: status,
+      pilot: data['pilot'] == true,
     );
   }
 }

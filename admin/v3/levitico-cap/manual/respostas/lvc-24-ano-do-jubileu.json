@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Levítico 25:8–13",
+    "passages": [
+      {
+        "ref": "Levítico 25:8–13"
+      },
+      {
+        "ref": "Levítico 25:14–17"
+      }
+    ],
+    "context": "Cena de Ano do jubileu: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Ano do jubileu",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Contarás.",
+        "evidenceRef": "Levítico 25:8",
+        "evidenceSpan": "Contarás"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Levítico 25:9",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Santificareis o quinquagésimo ano e proclamareis liberdade na.",
+        "evidenceRef": "Levítico 25:10",
+        "evidenceSpan": "Santificareis o quinquagésimo ano e proclamareis liberdade na"
+      },
+      {
+        "text": "No.",
+        "evidenceRef": "Levítico 25:11",
+        "evidenceSpan": "No"
+      },
+      {
+        "text": "Porque.",
+        "evidenceRef": "Levítico 25:12",
+        "evidenceSpan": "Porque"
+      },
+      {
+        "text": "Neste.",
+        "evidenceRef": "Levítico 25:13",
+        "evidenceSpan": "Neste"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "jubileu",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Contarás sete semanas de anos sete",
+        "evidenceRef": "Levítico 25:8"
+      },
+      {
+        "label": "Então no mês sétimo no décimo",
+        "evidenceRef": "Levítico 25:9"
+      },
+      {
+        "label": "Santificareis o quinquagésimo ano e proclamareis",
+        "evidenceRef": "Levítico 25:10"
+      },
+      {
+        "label": "No quinquagésimo ano será para vós",
+        "evidenceRef": "Levítico 25:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Levítico 25:9"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"nem\".",
+        "marker": "nem",
+        "evidenceRef": "Levítico 25:11"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Porque\".",
+        "marker": "Porque",
+        "evidenceRef": "Levítico 25:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 22:39",
+        "bridge": "Amar o próximo"
+      },
+      {
+        "ref": "Hebreus 13:11",
+        "bridge": "Queima fora do acampamento"
+      },
+      {
+        "ref": "João 1:29",
+        "bridge": "Cordeiro que tira o pecado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A terra é do Senhor; o jubileu impede que a opressão dure para sempre.",
+    "anchorQuestion": "O que Levítico 25:8 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 25:8, o texto inclui Contarás.",
+      "verseRef": "Levítico 25:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 25:8 afirma.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 25:8, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 25:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarás"
+        },
+        {
+          "id": "b",
+          "text": "sete"
+        },
+        {
+          "id": "c",
+          "text": "semanas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "O versículo destaca Contarás.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 25:10, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 25:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santificareis o quinquagésimo ano e proclamareis liberdade na"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Santificareis o quinquagésimo ano e proclamareis liberdade na",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 25:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 25:9 na ordem do texto.",
+      "verseRef": "Levítico 25:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "no décimo dia"
+        },
+        {
+          "id": "c",
+          "text": "mês"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 25:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 25:11, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 25:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "quinquagésimo"
+        },
+        {
+          "id": "b",
+          "text": "Contarás"
+        },
+        {
+          "id": "c",
+          "text": "sete"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quinquagésimo",
+      "feedbackCorrect": "A palavra do versículo é quinquagésimo.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 25:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 25:8 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 25:8",
+      "passageA": {
+        "ref": "Levítico 25:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Ano do jubileu: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 25:9, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Levítico 25:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 25:9 afirma.",
+      "evidence": [
+        "Levítico 25:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 25:9, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 25:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "mês"
+        },
+        {
+          "id": "c",
+          "text": "sétimo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 25:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 25:11, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 25:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra no"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 25:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 25:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarás sete semanas de anos sete"
+        },
+        {
+          "id": "b",
+          "text": "Então no mês sétimo no décimo"
+        },
+        {
+          "id": "c",
+          "text": "Santificareis o quinquagésimo ano e proclamareis"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 25:10, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 25:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santificareis"
+        },
+        {
+          "id": "b",
+          "text": "Contarás"
+        },
+        {
+          "id": "c",
+          "text": "sete"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Santificareis",
+      "feedbackCorrect": "A palavra do versículo é Santificareis.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 25:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 25:8 a Mateus 22:39.",
+      "verseRef": "Levítico 25:8",
+      "passageA": {
+        "ref": "Levítico 25:8"
+      },
+      "passageB": {
+        "ref": "Mateus 22:39"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar o próximo"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 25:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ninguém",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 25:17 afirma.",
+      "evidence": [
+        "Levítico 25:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 25:13, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 25:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neste"
+        },
+        {
+          "id": "b",
+          "text": "ano"
+        },
+        {
+          "id": "c",
+          "text": "jubileu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Neste",
+      "feedbackCorrect": "O versículo destaca Neste.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 25:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 25:12, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 25:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra porque"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 25:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 25:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 25:12, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 25:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "jubileu"
+        },
+        {
+          "id": "b",
+          "text": "Contarás"
+        },
+        {
+          "id": "c",
+          "text": "sete"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "jubileu",
+      "feedbackCorrect": "A palavra do versículo é jubileu.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 25:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 25:8 a Hebreus 13:11.",
+      "verseRef": "Levítico 25:8",
+      "passageA": {
+        "ref": "Levítico 25:8"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Queima fora do acampamento"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    }
+  ]
+}

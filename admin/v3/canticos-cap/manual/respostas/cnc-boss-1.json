@@ -1,0 +1,919 @@
+{
+  "study": {
+    "passageRef": "Cantares 4:7–10",
+    "passages": [
+      {
+        "ref": "Cantares 1:9–16"
+      },
+      {
+        "ref": "Cantares 2:1–10"
+      },
+      {
+        "ref": "Cantares 3:6–11"
+      },
+      {
+        "ref": "Cantares 4:7–10"
+      }
+    ],
+    "context": "Esta Travessia revisa o bloco do desejo e encontro: nomear a beleza, esperar o tempo do amor, celebrar em público e elogiar sem reserva.",
+    "keyword": "nomear",
+    "keywordGloss": "O amor fiel vê, nomeia e celebra o outro.",
+    "focusQuestion": "O que você precisa nomear com generosidade em quem ama?",
+    "reflectionPrompts": [
+      "Nomear a beleza",
+      "Tempo do amor",
+      "Celebrar em público"
+    ],
+    "facts": [
+      {
+        "text": "Ele compara a amada às éguas dos carros de Faraó.",
+        "evidenceRef": "Cantares 1:9",
+        "evidenceSpan": "Comparo-te, ó querida minha, às éguas dos carros de Faraó"
+      },
+      {
+        "text": "Ela é a rosa de Sarom, o lírio dos vales.",
+        "evidenceRef": "Cantares 2:1",
+        "evidenceSpan": "Eu sou a rosa de Sarom, o lírio dos vales"
+      },
+      {
+        "text": "Não se deve despertar o amor até que este queira.",
+        "evidenceRef": "Cantares 2:7",
+        "evidenceSpan": "que não acordeis nem desperteis o amor até que este queira"
+      },
+      {
+        "text": "O amado chama: Levanta-te, querida minha, formosa minha, e vem.",
+        "evidenceRef": "Cantares 2:10",
+        "evidenceSpan": "Levanta-te, querida minha, formosa minha, e vem"
+      },
+      {
+        "text": "As filhas de Sião contemplam Salomão no dia do desposório.",
+        "evidenceRef": "Cantares 3:11",
+        "evidenceSpan": "no dia do seu desposório, no dia da alegria do seu coração"
+      },
+      {
+        "text": "Tu és toda formosa, amada minha, e em ti não há defeito.",
+        "evidenceRef": "Cantares 4:7",
+        "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "formosa",
+        "gloss": "A beleza nomeada sem vergonha."
+      },
+      {
+        "term": "desposório",
+        "gloss": "A celebração pública da aliança."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amor nomeia a beleza",
+        "evidenceRef": "Cantares 1:9–15"
+      },
+      {
+        "label": "A voz chama no tempo certo",
+        "evidenceRef": "Cantares 2:7–10"
+      },
+      {
+        "label": "O cortejo celebra em público",
+        "evidenceRef": "Cantares 3:6–11"
+      },
+      {
+        "label": "O elogio declara sem defeito",
+        "evidenceRef": "Cantares 4:7–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Não despertar o amor até que este queira.",
+        "marker": "até que",
+        "evidenceRef": "Cantares 2:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Um olhar captura o coração do amado.",
+        "marker": null,
+        "evidenceRef": "Cantares 4:9"
+      },
+      {
+        "kind": "contraste",
+        "text": "O amor é mais precioso do que o vinho.",
+        "marker": null,
+        "evidenceRef": "Cantares 4:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 5:25–27",
+        "bridge": "Apresentar sem mancha"
+      },
+      {
+        "ref": "Provérbios 5:18–19",
+        "bridge": "Alegrar-se com a esposa"
+      },
+      {
+        "ref": "Salmos 45:13–15",
+        "bridge": "A noiva entra com alegria"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Nomear a beleza do outro é sempre vaidade pecaminosa.",
+        "why": "O bloco celebra o elogio generoso e público."
+      },
+      {
+        "text": "O amor santo ignora tempo e testemunhas.",
+        "why": "Há conjuro do tempo e cortejo público."
+      },
+      {
+        "text": "Elogiar detalhes prova superficialidade.",
+        "why": "O olhar atento responde com generosidade."
+      }
+    ],
+    "centralInsight": "O amor fiel vê, nomeia e celebra o outro",
+    "anchorQuestion": "Segundo Cantares 4:7, o que há de defeito nela?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 4:7, em ti não há defeito.",
+      "verseRef": "Cantares 4:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "em ti não há defeito",
+      "feedbackCorrect": "O elogio declara ausência de defeito.",
+      "feedbackWrong": {
+        "false": "Releia 4:7: não há defeito."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar o elogio sem defeito.",
+      "evidence": [
+        "Cantares 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 2:1, toque como ela se nomeia.",
+      "verseRef": "Cantares 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "rosa de Sarom"
+        },
+        {
+          "id": "b",
+          "text": "espinhos"
+        },
+        {
+          "id": "c",
+          "text": "donzelas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou a rosa de Sarom",
+      "feedbackCorrect": "Ela se chama rosa de Sarom.",
+      "feedbackWrong": {
+        "b": "Espinhos aparecem em 2:2.",
+        "c": "Donzelas aparecem em 2:2."
+      },
+      "hint": "Veja o primeiro nome.",
+      "learningObjective": "Identificar a rosa de Sarom.",
+      "evidence": [
+        "Cantares 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 1:9, a que ele a compara?",
+      "verseRef": "Cantares 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Às éguas dos carros de Faraó"
+        },
+        {
+          "id": "b",
+          "text": "Às colunas de fumo"
+        },
+        {
+          "id": "c",
+          "text": "À torre de Davi"
+        },
+        {
+          "id": "d",
+          "text": "Ao monte da mirra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "às éguas dos carros de Faraó",
+      "feedbackCorrect": "A comparação é com as éguas de Faraó.",
+      "feedbackWrong": {
+        "b": "Colunas de fumo estão em 3:6.",
+        "c": "Torre está em 4:4.",
+        "d": "Mirra está em 4:6."
+      },
+      "hint": "Leia a comparação do versículo.",
+      "learningObjective": "Reconhecer a comparação inicial.",
+      "evidence": [
+        "Cantares 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 4:7 na ordem do texto.",
+      "verseRef": "Cantares 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu és toda formosa"
+        },
+        {
+          "id": "b",
+          "text": "amada minha"
+        },
+        {
+          "id": "c",
+          "text": "não há defeito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito",
+      "feedbackCorrect": "Formosa → amada → sem defeito.",
+      "feedbackWrong": {
+        "default": "Comece por toda formosa; defeito fecha."
+      },
+      "hint": "Siga formosa → amada → defeito.",
+      "learningObjective": "Seguir a ordem do elogio.",
+      "evidence": [
+        "Cantares 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 3:11, que dia as filhas devem contemplar?",
+      "verseRef": "Cantares 3:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "desposório"
+        },
+        {
+          "id": "b",
+          "text": "colheita"
+        },
+        {
+          "id": "c",
+          "text": "batalha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia do seu desposório",
+      "feedbackCorrect": "É o dia do desposório.",
+      "feedbackWrong": {
+        "b": "O texto diz desposório.",
+        "c": "O texto diz desposório."
+      },
+      "hint": "Veja o dia da alegria.",
+      "learningObjective": "Lembrar o desposório.",
+      "evidence": [
+        "Cantares 3:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 4:7 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 4:7",
+      "passageA": {
+        "ref": "Cantares 4:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amor fiel vê, nomeia e celebra o outro."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nomear sem reserva"
+        },
+        {
+          "id": "b",
+          "text": "Calar toda beleza"
+        },
+        {
+          "id": "c",
+          "text": "Esconder o elogio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és toda formosa, amada minha",
+      "feedbackCorrect": "O elogio completo nomeia e celebra.",
+      "feedbackWrong": {
+        "b": "Há nomeação clara.",
+        "c": "Há celebração aberta."
+      },
+      "hint": "Veja o tom do versículo.",
+      "learningObjective": "Ligar o contexto ao nomear.",
+      "evidence": [
+        "Cantares 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 2:8, toque de quem é a voz anunciada.",
+      "verseRef": "Cantares 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu amado"
+        },
+        {
+          "id": "b",
+          "text": "montes"
+        },
+        {
+          "id": "c",
+          "text": "outeiros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A voz do meu amado",
+      "feedbackCorrect": "A voz do meu amado: a presença se anuncia antes de chegar.",
+      "feedbackWrong": {
+        "b": "\"Montes\" é o cenário do salto, não de quem fala.",
+        "c": "\"Outeiros\" também descreve o caminho, não a voz."
+      },
+      "hint": "Veja o início do versículo.",
+      "learningObjective": "Tocar o convite e vem.",
+      "evidence": [
+        "Cantares 2:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o chamado de Cantares 2:10.",
+      "verseRef": "Cantares 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levanta-te, querida minha"
+        },
+        {
+          "id": "b",
+          "text": "formosa minha"
+        },
+        {
+          "id": "c",
+          "text": "e vem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Levanta-te, querida minha, formosa minha, e vem",
+      "feedbackCorrect": "Levanta → formosa → vem.",
+      "feedbackWrong": {
+        "default": "Comece por Levanta-te; vem fecha."
+      },
+      "hint": "Siga levantar → formosa → vem.",
+      "learningObjective": "Ordenar o chamado do amado.",
+      "evidence": [
+        "Cantares 2:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 2:7, deve-se despertar o amor antes que este queira.",
+      "verseRef": "Cantares 2:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "não acordeis nem desperteis o amor até que este queira",
+      "feedbackCorrect": "O conjuro pede esperar até que o amor queira.",
+      "feedbackWrong": {
+        "true": "Releia 2:7: até que este queira."
+      },
+      "hint": "Veja o limite do conjuro.",
+      "learningObjective": "Ver o tempo do amor.",
+      "evidence": [
+        "Cantares 2:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 2:7, toque o limite temporal do conjuro.",
+      "verseRef": "Cantares 2:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "até que"
+        },
+        {
+          "id": "b",
+          "text": "gazelas"
+        },
+        {
+          "id": "c",
+          "text": "cervas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "até que este queira",
+      "feedbackCorrect": "\"Até que\" marca o tempo.",
+      "feedbackWrong": {
+        "b": "Gazelas são o juramento.",
+        "c": "Cervas são o juramento."
+      },
+      "hint": "Ache o marcador do tempo.",
+      "learningObjective": "Tocar o até que.",
+      "evidence": [
+        "Cantares 2:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 3:11 estabelece com a celebração pública?",
+      "verseRef": "Cantares 3:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sião contempla o dia do desposório com alegria"
+        },
+        {
+          "id": "b",
+          "text": "O amor deve ficar só no esconderijo"
+        },
+        {
+          "id": "c",
+          "text": "Não há testemunhas no texto"
+        },
+        {
+          "id": "d",
+          "text": "A coroa é escondida da mãe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia do seu desposório, no dia da alegria do seu coração",
+      "feedbackCorrect": "Há chamada pública e alegria compartilhada.",
+      "feedbackWrong": {
+        "b": "Há saída e contemplação.",
+        "c": "Há filhas de Sião.",
+        "d": "A mãe pôs a coroa."
+      },
+      "hint": "Veja quem contempla e o que celebra.",
+      "learningObjective": "Relacionar desposório e público.",
+      "evidence": [
+        "Cantares 3:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco 1–4.",
+      "verseRef": "Cantares 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor nomeia a beleza"
+        },
+        {
+          "id": "b",
+          "text": "A voz chama no tempo certo"
+        },
+        {
+          "id": "c",
+          "text": "O cortejo celebra em público"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Levanta-te, querida minha, formosa minha, e vem",
+      "feedbackCorrect": "Nomear → chamar → celebrar.",
+      "feedbackWrong": {
+        "default": "Comece pelo nomear; o cortejo fecha."
+      },
+      "hint": "Siga nomear → chamar → celebrar.",
+      "learningObjective": "Ordenar a estrutura do bloco.",
+      "evidence": [
+        "Cantares 1:15",
+        "Cantares 2:10",
+        "Cantares 3:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 3:7, quantos valentes cercam a liteira?",
+      "verseRef": "Cantares 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "sessenta"
+        },
+        {
+          "id": "b",
+          "text": "doze"
+        },
+        {
+          "id": "c",
+          "text": "mil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sessenta valentes",
+      "feedbackCorrect": "São sessenta valentes.",
+      "feedbackWrong": {
+        "b": "O texto diz sessenta.",
+        "c": "O texto diz sessenta."
+      },
+      "hint": "Veja o número ao redor da liteira.",
+      "learningObjective": "Lembrar os sessenta valentes.",
+      "evidence": [
+        "Cantares 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 4:7 a Efésios 5:25–27?",
+      "verseRef": "Cantares 4:7",
+      "passageA": {
+        "ref": "Cantares 4:7"
+      },
+      "passageB": {
+        "ref": "Efésios 5:25–27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Apresentar sem mancha"
+        },
+        {
+          "id": "b",
+          "text": "Esconder a beleza"
+        },
+        {
+          "id": "c",
+          "text": "Negar qualquer elogio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em ti não há defeito",
+      "feedbackCorrect": "Os dois textos falam de apresentar sem mancha/defeito.",
+      "feedbackWrong": {
+        "b": "Há elogio aberto.",
+        "c": "Há celebração."
+      },
+      "hint": "Compare sem defeito e sem mancha.",
+      "learningObjective": "Ligar o elogio a Efésios 5.",
+      "evidence": [
+        "Cantares 4:7",
+        "Efésios 5:25–27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 4:10, toque o que supera o vinho.",
+      "verseRef": "Cantares 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "teu amor"
+        },
+        {
+          "id": "b",
+          "text": "especiarias"
+        },
+        {
+          "id": "c",
+          "text": "perfumes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mais precioso é o teu amor do que o vinho",
+      "feedbackCorrect": "O amor supera o vinho.",
+      "feedbackWrong": {
+        "b": "Especiarias fecham a comparação dos aromas.",
+        "c": "Perfumes são elogiados à parte."
+      },
+      "hint": "Veja o que é mais precioso.",
+      "learningObjective": "Tocar o amor mais precioso.",
+      "evidence": [
+        "Cantares 4:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o contraste de Cantares 4:10.",
+      "verseRef": "Cantares 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quão belo é o teu amor"
+        },
+        {
+          "id": "b",
+          "text": "mais precioso"
+        },
+        {
+          "id": "c",
+          "text": "do que o vinho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quanto mais precioso é o teu amor do que o vinho",
+      "feedbackCorrect": "Amor → mais precioso → vinho.",
+      "feedbackWrong": {
+        "default": "Comece pelo amor; o vinho fecha."
+      },
+      "hint": "Siga amor → precioso → vinho.",
+      "learningObjective": "Ordenar a comparação do amor.",
+      "evidence": [
+        "Cantares 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 1–4 ensina que nomear a beleza do outro é sempre vaidade pecaminosa.",
+      "verseRef": "Cantares 4:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Tu és toda formosa, amada minha",
+      "feedbackCorrect": "O bloco celebra o elogio generoso.",
+      "feedbackWrong": {
+        "true": "O tom do texto é celebração, não condenação."
+      },
+      "hint": "Veja o tom dos elogios do bloco.",
+      "learningObjective": "Rejeitar a leitura que condena o elogio.",
+      "evidence": [
+        "Cantares 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 4:9, toque o que capturou o coração.",
+      "verseRef": "Cantares 4:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "único olhar"
+        },
+        {
+          "id": "b",
+          "text": "Líbano"
+        },
+        {
+          "id": "c",
+          "text": "leopardos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "capturaste-me com um único olhar teu",
+      "feedbackCorrect": "Um único olhar capturou o coração.",
+      "feedbackWrong": {
+        "b": "Líbano está em 4:8.",
+        "c": "Leopardos estão em 4:8."
+      },
+      "hint": "Veja com o que ela o capturou.",
+      "learningObjective": "Sustentar o poder do olhar.",
+      "evidence": [
+        "Cantares 4:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o bloco 1–4 sustenta sobre o amor fiel?",
+      "verseRef": "Cantares 4:7–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor fiel vê, nomeia e celebra o outro"
+        },
+        {
+          "id": "b",
+          "text": "O amor fiel cala toda beleza"
+        },
+        {
+          "id": "c",
+          "text": "O amor fiel ignora tempo e testemunhas"
+        },
+        {
+          "id": "d",
+          "text": "O amor fiel evita qualquer elogio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito",
+      "feedbackCorrect": "Nomeação, tempo, cortejo e elogio sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "Há muitos elogios.",
+        "c": "Há conjuro do tempo e cortejo.",
+        "d": "Há celebração clara."
+      },
+      "hint": "Una nomear, tempo e celebrar.",
+      "learningObjective": "Escolher a interpretação do bloco.",
+      "evidence": [
+        "Cantares 4:7–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do ver ao celebrar?",
+      "verseRef": "Cantares 4:7–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amado nomeia a beleza detalhe a detalhe"
+        },
+        {
+          "id": "b",
+          "text": "O coração é arrebatado por um olhar"
+        },
+        {
+          "id": "c",
+          "text": "O amor é declarado mais precioso que o vinho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mais precioso é o teu amor do que o vinho",
+      "feedbackCorrect": "Nomear → arrebatar → valorizar.",
+      "feedbackWrong": {
+        "default": "Comece pelo nomear; o vinho fecha."
+      },
+      "hint": "Siga nomear → olhar → valor.",
+      "learningObjective": "Ver o encadeamento do elogio.",
+      "evidence": [
+        "Cantares 4:7–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 4:8, que termo nomeia a amada no convite?",
+      "verseRef": "Cantares 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "noiva"
+        },
+        {
+          "id": "b",
+          "text": "torre"
+        },
+        {
+          "id": "c",
+          "text": "gazela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ó minha noiva",
+      "feedbackCorrect": "O termo do convite é noiva.",
+      "feedbackWrong": {
+        "b": "Torre está em 4:4.",
+        "c": "Gazela está em 4:5."
+      },
+      "hint": "Veja o vocativo do Líbano.",
+      "learningObjective": "Lembrar o termo noiva.",
+      "evidence": [
+        "Cantares 4:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 3:11 a Salmos 45:13–15?",
+      "verseRef": "Cantares 3:11",
+      "passageA": {
+        "ref": "Cantares 3:11"
+      },
+      "passageB": {
+        "ref": "Salmos 45:13–15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A noiva entra com alegria"
+        },
+        {
+          "id": "b",
+          "text": "Esconder o cortejo"
+        },
+        {
+          "id": "c",
+          "text": "Calar toda festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia da alegria do seu coração",
+      "feedbackCorrect": "Os dois textos celebram a entrada alegre da união.",
+      "feedbackWrong": {
+        "b": "Há contemplação pública.",
+        "c": "Há alegria do coração."
+      },
+      "hint": "Compare a alegria pública.",
+      "learningObjective": "Ligar o desposório ao Salmo 45.",
+      "evidence": [
+        "Cantares 3:11",
+        "Salmos 45:13–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 1:15, toque a repetição do elogio.",
+      "verseRef": "Cantares 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "és formosa"
+        },
+        {
+          "id": "b",
+          "text": "pombas"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que tu és formosa, ó querida minha, eis que tu és formosa",
+      "feedbackCorrect": "A repetição está em és formosa.",
+      "feedbackWrong": {
+        "b": "Pombas descrevem os olhos.",
+        "c": "Olhos recebem a comparação."
+      },
+      "hint": "Ache o que se repete.",
+      "learningObjective": "Tocar a repetição do elogio.",
+      "evidence": [
+        "Cantares 1:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a celebração pública de Cantares 3:6–11.",
+      "verseRef": "Cantares 3:6–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a pergunta do deserto"
+        },
+        {
+          "id": "b",
+          "text": "A liteira aparece com valentes"
+        },
+        {
+          "id": "c",
+          "text": "Sião contempla o desposório"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "no dia do seu desposório",
+      "feedbackCorrect": "Pergunta → liteira → desposório.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta; o desposório fecha."
+      },
+      "hint": "Siga pergunta → liteira → desposório.",
+      "learningObjective": "Ordenar o cortejo público.",
+      "evidence": [
+        "Cantares 3:6–11"
+      ]
+    }
+  ]
+}

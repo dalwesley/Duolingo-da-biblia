@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Eclesiastes 9:7–12",
+    "passages": [{ "ref": "Eclesiastes 9:7–12" }],
+    "context": "O Pregador manda comer com alegria, amar a esposa e trabalhar com força, porque a morte chega de súbito e o tempo não favorece só os velozes.",
+    "keyword": "seu tempo",
+    "keywordGloss": "A hora que o homem não conhece: a calamidade pode sobrevir de forma repentina.",
+    "focusQuestion": "Que dom simples você ainda adia como se a morte avisasse a hora?",
+    "reflectionPrompts": ["Pão com alegria", "Fazer com força", "Tempo e acaso"],
+    "facts": [
+      {
+        "text": "Coma com alegria o pão e beba com prazer o vinho, pois Deus já se agrada das suas obras.",
+        "evidenceRef": "Eclesiastes 9:7",
+        "evidenceSpan": "coma com alegria o seu pão e beba com prazer o seu vinho"
+      },
+      {
+        "text": "Aproveite a vida com a mulher que ama: essa é a sua porção.",
+        "evidenceRef": "Eclesiastes 9:9",
+        "evidenceSpan": "porque essa é a sua porção nesta vida"
+      },
+      {
+        "text": "Tudo o que te vier à mão, faze-o conforme as tuas forças.",
+        "evidenceRef": "Eclesiastes 9:10",
+        "evidenceSpan": "faze-o conforme as tuas forças"
+      },
+      {
+        "text": "No além não há obra, nem projetos, nem conhecimento, nem sabedoria.",
+        "evidenceRef": "Eclesiastes 9:10",
+        "evidenceSpan": "não há obra, nem projetos, nem conhecimento, nem sabedoria alguma"
+      },
+      {
+        "text": "A corrida não é para os velozes, nem a luta para os fortes; tudo depende do tempo e do acaso.",
+        "evidenceRef": "Eclesiastes 9:11",
+        "evidenceSpan": "tudo depende do tempo e do acaso"
+      },
+      {
+        "text": "O homem não conhece o seu tempo; a calamidade pode vir de forma repentina.",
+        "evidenceRef": "Eclesiastes 9:12",
+        "evidenceSpan": "o homem não conhece o seu tempo"
+      }
+    ],
+    "keyTerms": [
+      { "term": "porção", "gloss": "O que Deus dá nesta vida: alegria simples e companhia amada." },
+      { "term": "forças", "gloss": "O empenho pedido enquanto ainda há obra a fazer." },
+      { "term": "acaso", "gloss": "O que, com o tempo, mostra que o resultado não obedece só à força." }
+    ],
+    "structure": [
+      { "label": "Receba o pão e o vinho com alegria", "evidenceRef": "Eclesiastes 9:7–8" },
+      { "label": "Aproveite a porção com quem ama", "evidenceRef": "Eclesiastes 9:9" },
+      { "label": "Faça com força enquanto é dia", "evidenceRef": "Eclesiastes 9:10" },
+      { "label": "O tempo e o acaso escapam ao controle", "evidenceRef": "Eclesiastes 9:11–12" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Coma com alegria, pois Deus já se agrada das suas obras.",
+        "marker": "pois",
+        "evidenceRef": "Eclesiastes 9:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Faça com força, porque no além não há obra.",
+        "marker": "porque",
+        "evidenceRef": "Eclesiastes 9:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não vence só o veloz ou o forte; tudo depende do tempo e do acaso.",
+        "marker": "mas",
+        "evidenceRef": "Eclesiastes 9:11"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Tiago 4:13–14", "bridge": "Não sabem o que será amanhã" },
+      { "ref": "João 9:4", "bridge": "Trabalhar enquanto é dia" },
+      { "ref": "Eclesiastes 2:24", "bridge": "Desfrutar vem da mão de Deus" }
+    ],
+    "misreadings": [
+      {
+        "text": "Como a morte vem, não vale a pena trabalhar nem amar.",
+        "why": "9:7–10 mandam alegrar-se, amar e fazer com força."
+      },
+      {
+        "text": "Os velozes e os fortes sempre vencem debaixo do sol.",
+        "why": "9:11 diz que a corrida não é para os velozes."
+      },
+      {
+        "text": "O homem conhece bem a hora da sua calamidade.",
+        "why": "9:12: o homem não conhece o seu tempo."
+      }
+    ],
+    "centralInsight": "Enquanto é dia, receba o simples como dom — a morte não avisa a hora.",
+    "anchorQuestion": "Segundo Eclesiastes 9:12, o homem conhece o seu tempo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Eclesiastes 9:12, o homem não conhece o seu tempo.",
+      "verseRef": "Eclesiastes 9:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "o homem não conhece o seu tempo",
+      "feedbackCorrect": "O texto afirma: o homem não conhece o seu tempo.",
+      "feedbackWrong": { "false": "Releia 9:12: ele não conhece o seu tempo." },
+      "hint": "Veja o que o homem não conhece.",
+      "learningObjective": "Observar que o homem não conhece seu tempo.",
+      "evidence": ["Eclesiastes 9:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 9:7, toque o que se deve comer com alegria.",
+      "verseRef": "Eclesiastes 9:7",
+      "options": [
+        { "id": "a", "text": "seu pão" },
+        { "id": "b", "text": "suas obras" },
+        { "id": "c", "text": "seu vinho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coma com alegria o seu pão",
+      "feedbackCorrect": "É o pão que se come com alegria.",
+      "feedbackWrong": {
+        "b": "As obras são o motivo do agrado de Deus.",
+        "c": "O vinho se bebe com prazer; a pergunta é sobre comer."
+      },
+      "hint": "Veja o objeto de \"coma\".",
+      "learningObjective": "Identificar o pão comido com alegria.",
+      "evidence": ["Eclesiastes 9:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Eclesiastes 9:10, como se deve fazer o que vier à mão?",
+      "verseRef": "Eclesiastes 9:10",
+      "options": [
+        { "id": "a", "text": "Conforme as tuas forças" },
+        { "id": "b", "text": "Só se o vento estiver perfeito" },
+        { "id": "c", "text": "Deixando para o além" },
+        { "id": "d", "text": "Sem qualquer empenho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faze-o conforme as tuas forças",
+      "feedbackCorrect": "Faça conforme as tuas forças.",
+      "feedbackWrong": {
+        "b": "O texto manda fazer, não esperar condição ideal.",
+        "c": "No além não há obra.",
+        "d": "O verbo é fazer com força."
+      },
+      "hint": "Leia a ordem sobre as forças.",
+      "learningObjective": "Reconhecer o fazer com força.",
+      "evidence": ["Eclesiastes 9:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Eclesiastes 9:7 na ordem do texto.",
+      "verseRef": "Eclesiastes 9:7",
+      "options": [
+        { "id": "a", "text": "Vá, pois, coma com alegria o seu pão" },
+        { "id": "b", "text": "e beba com prazer o seu vinho" },
+        { "id": "c", "text": "pois Deus já se agrada das suas obras" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "coma com alegria o seu pão e beba com prazer o seu vinho",
+      "feedbackCorrect": "Primeiro o pão; depois o vinho; por fim o agrado de Deus.",
+      "feedbackWrong": { "default": "Comece pelo pão; o agrado de Deus fecha." },
+      "hint": "Siga pão → vinho → Deus.",
+      "learningObjective": "Seguir a ordem literal do convite.",
+      "evidence": ["Eclesiastes 9:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Eclesiastes 9:11, tudo depende do tempo e do quê?",
+      "verseRef": "Eclesiastes 9:11",
+      "options": [
+        { "id": "a", "text": "acaso" },
+        { "id": "b", "text": "medo" },
+        { "id": "c", "text": "orgulho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo depende do tempo e do acaso",
+      "feedbackCorrect": "Tudo depende do tempo e do acaso.",
+      "feedbackWrong": {
+        "b": "O texto não fala de medo aqui.",
+        "c": "Não é orgulho: é acaso."
+      },
+      "hint": "Veja o par do tempo no fim.",
+      "learningObjective": "Lembrar a palavra do acaso.",
+      "evidence": ["Eclesiastes 9:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Eclesiastes 9:7 comunica que se liga a este contexto?",
+      "verseRef": "Eclesiastes 9:7",
+      "passageA": { "ref": "Eclesiastes 9:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Enquanto é dia, o Pregador manda receber o simples como dom de Deus."
+      },
+      "options": [
+        { "id": "a", "text": "Pão e vinho com alegria" },
+        { "id": "b", "text": "Recusa de todo prazer" },
+        { "id": "c", "text": "Espera sem qualquer ação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coma com alegria o seu pão e beba com prazer o seu vinho",
+      "feedbackCorrect": "O contexto do dom simples aparece no pão e no vinho com alegria.",
+      "feedbackWrong": {
+        "b": "O texto manda alegrar-se.",
+        "c": "Há ordem de ir e comer."
+      },
+      "hint": "Veja o que se come e se bebe.",
+      "learningObjective": "Ligar o contexto ao dom simples.",
+      "evidence": ["Eclesiastes 9:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Eclesiastes 9:10, deve-se fazer com força porque no além ainda há muita obra.",
+      "verseRef": "Eclesiastes 9:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque no além, para onde vais, não há obra",
+      "feedbackCorrect": "A causa é o oposto: no além não há obra.",
+      "feedbackWrong": { "true": "O texto diz que no além não há obra." },
+      "hint": "Leia o que há — ou não há — no além.",
+      "learningObjective": "Ver a causa do fazer com força.",
+      "evidence": ["Eclesiastes 9:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 9:11, toque a palavra que marca o contraste com velozes e fortes.",
+      "verseRef": "Eclesiastes 9:11",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "velozes" },
+        { "id": "c", "text": "sábios" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas tudo depende do tempo e do acaso",
+      "feedbackCorrect": "O \"mas\" introduz tempo e acaso contra a lógica da força.",
+      "feedbackWrong": {
+        "b": "Velozes são o exemplo; o contraste é outra palavra.",
+        "c": "Sábios entram na lista; o marcador é \"mas\"."
+      },
+      "hint": "Ache a palavra antes de \"tudo depende\".",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["Eclesiastes 9:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Eclesiastes 9:7 marca com a palavra \"pois\"?",
+      "verseRef": "Eclesiastes 9:7",
+      "options": [
+        { "id": "a", "text": "Alegre-se no pão porque Deus já se agrada das obras" },
+        { "id": "b", "text": "Alegre-se no pão porque a morte nunca chega" },
+        { "id": "c", "text": "Alegre-se no pão porque o acaso favorece sempre" },
+        { "id": "d", "text": "Alegre-se no pão porque não há porção nesta vida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois Deus já se agrada das suas obras",
+      "feedbackCorrect": "O \"pois\" dá a causa: Deus já se agrada das obras.",
+      "feedbackWrong": {
+        "b": "9:12 fala da calamidade repentina.",
+        "c": "9:11 relativiza o controle humano.",
+        "d": "9:9 fala da porção nesta vida."
+      },
+      "hint": "Leia o segundo \"pois\" do versículo.",
+      "learningObjective": "Ligar a alegria ao agrado de Deus.",
+      "evidence": ["Eclesiastes 9:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Eclesiastes 9:7–12.",
+      "verseRef": "Eclesiastes 9:10–11",
+      "options": [
+        { "id": "a", "text": "Receba o pão e o vinho com alegria" },
+        { "id": "b", "text": "Faça com força enquanto é dia" },
+        { "id": "c", "text": "O tempo e o acaso escapam ao controle" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tudo depende do tempo e do acaso",
+      "feedbackCorrect": "Do dom simples ao trabalho e, por fim, ao limite do tempo.",
+      "feedbackWrong": { "default": "Comece pelo pão; o acaso fecha." },
+      "hint": "Siga alegria → força → tempo.",
+      "learningObjective": "Ordenar a estrutura do dia presente.",
+      "evidence": ["Eclesiastes 9:7–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Eclesiastes 9:10, que palavra introduz a razão do fazer com força?",
+      "verseRef": "Eclesiastes 9:10",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "embora" },
+        { "id": "c", "text": "quando" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque no além, para onde vais, não há obra",
+      "feedbackCorrect": "\"Porque\" carrega a razão: no além não há obra.",
+      "feedbackWrong": {
+        "b": "O texto não usa \"embora\" aqui.",
+        "c": "Não é \"quando\": é \"porque\"."
+      },
+      "hint": "Veja a palavra antes de \"no além\".",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": ["Eclesiastes 9:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 9:10 a João 9:4?",
+      "verseRef": "Eclesiastes 9:10",
+      "passageA": { "ref": "Eclesiastes 9:10" },
+      "passageB": { "ref": "João 9:4" },
+      "options": [
+        { "id": "a", "text": "Trabalhar enquanto é dia" },
+        { "id": "b", "text": "Esperar a noite para agir" },
+        { "id": "c", "text": "Deixar a obra para o além" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faze-o conforme as tuas forças",
+      "feedbackCorrect": "Os dois textos pedem agir enquanto ainda há tempo.",
+      "feedbackWrong": {
+        "b": "Ambos apontam para o dia da obra.",
+        "c": "No além não há obra."
+      },
+      "hint": "Compare o fazer com força e o trabalhar de dia.",
+      "learningObjective": "Ligar o fazer com força ao trabalho enquanto é dia.",
+      "evidence": ["Eclesiastes 9:10", "João 9:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Eclesiastes 9:11–12 ensina que o homem conhece bem a hora da sua calamidade.",
+      "verseRef": "Eclesiastes 9:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "o homem não conhece o seu tempo",
+      "feedbackCorrect": "Ele não conhece o seu tempo; a calamidade pode ser repentina.",
+      "feedbackWrong": { "true": "O texto diz que o homem não conhece o seu tempo." },
+      "hint": "Veja o que o homem não conhece.",
+      "learningObjective": "Rejeitar a leitura de controle da hora.",
+      "evidence": ["Eclesiastes 9:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 9:12, toque o trecho que sustenta a ignorância da hora.",
+      "verseRef": "Eclesiastes 9:12",
+      "options": [
+        { "id": "a", "text": "não conhece" },
+        { "id": "b", "text": "os peixes" },
+        { "id": "c", "text": "os pássaros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem não conhece o seu tempo",
+      "feedbackCorrect": "A sustentação está em \"não conhece\" o seu tempo.",
+      "feedbackWrong": {
+        "b": "Os peixes são a imagem; a tese é não conhecer.",
+        "c": "Os pássaros ilustram; a tese é outra."
+      },
+      "hint": "Comece pela afirmação sobre o homem.",
+      "learningObjective": "Sustentar com o texto a ignorância da hora.",
+      "evidence": ["Eclesiastes 9:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Eclesiastes 9:7–12 sustenta sobre o dia presente?",
+      "verseRef": "Eclesiastes 9:10–12",
+      "options": [
+        { "id": "a", "text": "Receba o simples e aja com força; a morte não avisa" },
+        { "id": "b", "text": "Adie o prazer porque a morte nunca chega" },
+        { "id": "c", "text": "Só os velozes e fortes merecem o pão" },
+        { "id": "d", "text": "No além ainda há projetos e sabedoria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem não conhece o seu tempo",
+      "feedbackCorrect": "Alegria, força e a hora desconhecida sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "O texto manda alegrar-se agora.",
+        "c": "9:11 nega essa lógica.",
+        "d": "9:10 diz que no além não há obra."
+      },
+      "hint": "Una 9:7–10 com 9:12.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Eclesiastes 9:10–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do dom à hora desconhecida?",
+      "verseRef": "Eclesiastes 9:11–12",
+      "options": [
+        { "id": "a", "text": "Receba pão e vinho como dom" },
+        { "id": "b", "text": "Faça com força o que vier à mão" },
+        { "id": "c", "text": "A calamidade pode vir de súbito" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "quando ela lhes sobrevier de forma repentina",
+      "feedbackCorrect": "Do dom ao trabalho e à hora que não se conhece.",
+      "feedbackWrong": { "default": "Comece pelo dom; a calamidade fecha." },
+      "hint": "Siga dom → força → hora.",
+      "learningObjective": "Ver o encadeamento até a hora desconhecida.",
+      "evidence": ["Eclesiastes 9:7–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Eclesiastes 9:9, que termo nomeia o que Deus deu nesta vida?",
+      "verseRef": "Eclesiastes 9:9",
+      "options": [
+        { "id": "a", "text": "porção" },
+        { "id": "b", "text": "coroa" },
+        { "id": "c", "text": "torre" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "essa é a sua porção nesta vida",
+      "feedbackCorrect": "Porção é o termo do que Deus deu nesta vida.",
+      "feedbackWrong": {
+        "b": "O texto não fala de coroa aqui.",
+        "c": "Não é torre: é porção."
+      },
+      "hint": "Veja o que \"essa\" é nesta vida.",
+      "learningObjective": "Lembrar o termo da porção dada.",
+      "evidence": ["Eclesiastes 9:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 9:12 a Tiago 4:13–14?",
+      "verseRef": "Eclesiastes 9:12",
+      "passageA": { "ref": "Eclesiastes 9:12" },
+      "passageB": { "ref": "Tiago 4:13–14" },
+      "options": [
+        { "id": "a", "text": "Não sabem o que será amanhã" },
+        { "id": "b", "text": "Conhecem toda a sua hora" },
+        { "id": "c", "text": "A vida humana é eterna aqui" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem não conhece o seu tempo",
+      "feedbackCorrect": "Os dois textos afirmam a ignorância do dia seguinte.",
+      "feedbackWrong": {
+        "b": "Ambos negam esse conhecimento.",
+        "c": "Tiago e Eclesiastes apontam a fragilidade."
+      },
+      "hint": "Compare o tempo desconhecido com o amanhã incerto.",
+      "learningObjective": "Ligar o tempo desconhecido ao ensino de Tiago.",
+      "evidence": ["Eclesiastes 9:12", "Tiago 4:13–14"]
+    }
+  ]
+}

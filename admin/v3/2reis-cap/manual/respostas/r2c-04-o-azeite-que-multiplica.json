@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Reis 4:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 4:1–7"
+      }
+    ],
+    "context": "A viúva de um discípulo dos profetas tem dívida e risco de perder os filhos. Eliseu manda pedir vasilhas vazias; o azeite corre até não haver mais vasos.",
+    "keyword": "azeite",
+    "keywordGloss": "O pouco que a viúva tem e que o Senhor multiplica até cobrir a dívida.",
+    "focusQuestion": "Quando só resta uma botija, você esconde a escassez ou abre espaço para a provisão?",
+    "reflectionPrompts": [
+      "Botija única",
+      "Vasilhas vazias",
+      "Dívida paga"
+    ],
+    "facts": [
+      {
+        "text": "A viúva clamou: o credor queria levar seus dois filhos como escravos.",
+        "evidenceRef": "2 Reis 4:1",
+        "evidenceSpan": "o credor chegou para levar meus dois filhos"
+      },
+      {
+        "text": "Ela só tinha em casa uma botija de azeite.",
+        "evidenceRef": "2 Reis 4:2",
+        "evidenceSpan": "exceto uma botija de azeite"
+      },
+      {
+        "text": "Eliseu mandou pedir vasilhas vazias aos vizinhos, não em pouca quantidade.",
+        "evidenceRef": "2 Reis 4:3",
+        "evidenceSpan": "vasilhas vazias, não em pouca quantidade"
+      },
+      {
+        "text": "Ela fechou a porta e derramou o azeite nos vasos.",
+        "evidenceRef": "2 Reis 4:5",
+        "evidenceSpan": "fechou a porta sobre si e sobre seus filhos"
+      },
+      {
+        "text": "Quando não havia mais vasos, o azeite cessou.",
+        "evidenceRef": "2 Reis 4:6",
+        "evidenceSpan": "Não há mais vasos. E o azeite cessou"
+      },
+      {
+        "text": "Eliseu mandou vender o azeite, pagar a dívida e viver do que sobrasse.",
+        "evidenceRef": "2 Reis 4:7",
+        "evidenceSpan": "venda o azeite, pague sua dívida"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "azeite",
+        "gloss": "O pouco que multiplica enquanto houver vasilha vazia."
+      },
+      {
+        "term": "vasilhas",
+        "gloss": "O espaço de fé que a viúva pede emprestado aos vizinhos."
+      },
+      {
+        "term": "dívida",
+        "gloss": "O peso que o Senhor cobre com o azeite vendido."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Clamor da viúva e a botija única",
+        "evidenceRef": "2 Reis 4:1–2"
+      },
+      {
+        "label": "Ordem de pedir vasilhas vazias",
+        "evidenceRef": "2 Reis 4:3–4"
+      },
+      {
+        "label": "Derramar até o azeite cessar",
+        "evidenceRef": "2 Reis 4:5–6"
+      },
+      {
+        "label": "Vender, pagar e viver do restante",
+        "evidenceRef": "2 Reis 4:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Quando não há mais vasos, o azeite cessa.",
+        "marker": "Porém",
+        "evidenceRef": "2 Reis 4:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "Ela se afasta, fecha a porta, os filhos trazem vasos e ela enche.",
+        "marker": "Então",
+        "evidenceRef": "2 Reis 4:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "Vender o azeite para pagar a dívida e viver do que sobrar.",
+        "marker": null,
+        "evidenceRef": "2 Reis 4:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 17:14",
+        "bridge": "Azeite da viúva de Sarepta"
+      },
+      {
+        "ref": "Lucas 4:25–26",
+        "bridge": "Jesus lembra a viúva"
+      },
+      {
+        "ref": "Filipenses 4:19",
+        "bridge": "Deus supre toda necessidade"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O milagre depende de a viúva já ter muitas vasilhas em casa.",
+        "why": "Ela só tem uma botija; as vasilhas vazias são pedidas aos vizinhos."
+      },
+      {
+        "text": "O azeite parou porque Deus se cansou de dar.",
+        "why": "O texto liga a cessação à falta de vasos: não há mais recipientes."
+      },
+      {
+        "text": "Eliseu manda guardar o azeite sem pagar a dívida.",
+        "why": "Ele manda vender, pagar a dívida e viver do que sobrar."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Reis 4:6, quando o azeite cessou?",
+    "centralInsight": "Enquanto houver vasilha, o azeite corre: o Senhor cobre a dívida da viúva."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 4 —2, a viúva disse que em casa só tinha uma botija de azeite.",
+      "verseRef": "2 Reis 4:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "exceto uma botija de azeite",
+      "feedbackCorrect": "Só restava uma botija.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "O que ela tem em casa?",
+      "learningObjective": "Observar a botija única.",
+      "evidence": [
+        "2 Reis 4:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 4:3, toque o que Eliseu manda pedir aos vizinhos.",
+      "verseRef": "2 Reis 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "peça"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "emprestadas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar as vasilhas vazias.",
+      "evidence": [
+        "2 Reis 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 4:1, o que o credor queria fazer?",
+      "verseRef": "2 Reis 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levar os dois filhos como escravos"
+        },
+        {
+          "id": "b",
+          "text": "Perdoar toda a dívida na hora"
+        },
+        {
+          "id": "c",
+          "text": "Comprar a casa da viúva"
+        },
+        {
+          "id": "d",
+          "text": "Ungir os filhos como profetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levar meus dois filhos e torná-los seus escravos",
+      "feedbackCorrect": "A dívida ameaçava a liberdade dos filhos.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que o credor chegou para fazer?",
+      "learningObjective": "Observar a ameaça da dívida.",
+      "evidence": [
+        "2 Reis 4:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 4:6 na ordem do texto.",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "quando os vasos estavam cheios, ela disse a seu filho"
+        },
+        {
+          "id": "b",
+          "text": "Traze-me mais um vaso. Porém, ele respondeu"
+        },
+        {
+          "id": "c",
+          "text": "Não há mais vasos. E o azeite cessou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não há mais vasos. E o azeite cessou",
+      "feedbackCorrect": "Cheios, pedido e cessação.",
+      "feedbackWrong": {
+        "default": "Comece pelos vasos cheios."
+      },
+      "hint": "O que ela pede ao filho?",
+      "learningObjective": "Seguir a ordem da cessação.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 4:2, complete: exceto uma botija de ___.",
+      "verseRef": "2 Reis 4:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "azeite"
+        },
+        {
+          "id": "b",
+          "text": "farinha"
+        },
+        {
+          "id": "c",
+          "text": "vinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exceto uma botija de azeite",
+      "feedbackCorrect": "Só restava azeite.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que há na botija?",
+      "learningObjective": "Lembrar o azeite.",
+      "evidence": [
+        "2 Reis 4:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 4:7 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 4:7",
+      "passageA": {
+        "ref": "2 Reis 4:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O milagre não termina no enchimento: cobre a dívida e sustenta a casa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vender e pagar a dívida"
+        },
+        {
+          "id": "b",
+          "text": "Guardar o azeite intacto"
+        },
+        {
+          "id": "c",
+          "text": "Devolver as vasilhas vazias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "venda o azeite, pague sua dívida",
+      "feedbackCorrect": "Vender, pagar e viver do restante.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que Eliseu manda fazer com o azeite?",
+      "learningObjective": "Ligar o milagre ao pagamento.",
+      "evidence": [
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 4 —6, o azeite cessou enquanto ainda havia muitos vasos vazios.",
+      "verseRef": "2 Reis 4:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não há mais vasos. E o azeite cessou",
+      "feedbackCorrect": "O azeite cessa quando não há mais vasos.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "O que o filho responde antes da cessação?",
+      "learningObjective": "Ver a relação vasos e azeite.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 4:6, toque a palavra que marca o contraste com o pedido de mais um vaso.",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "vasos"
+        },
+        {
+          "id": "b",
+          "text": "ocorreu"
+        },
+        {
+          "id": "c",
+          "text": "estavam"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ocorreu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 4:6 se relaciona com a multiplicação do azeite?",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O fluxo dura enquanto houver recipiente"
+        },
+        {
+          "id": "b",
+          "text": "O azeite para por cansaço divino"
+        },
+        {
+          "id": "c",
+          "text": "Ela já tinha muitas vasilhas em casa"
+        },
+        {
+          "id": "d",
+          "text": "O filho impede o milagre de propósito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não há mais vasos. E o azeite cessou",
+      "feedbackCorrect": "Sem vaso, o azeite cessa.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que acontece logo após \"não há mais vasos\"?",
+      "learningObjective": "Relacionar recipientes e provisão.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena do azeite?",
+      "verseRef": "2 Reis 4:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor da viúva e a botija única"
+        },
+        {
+          "id": "b",
+          "text": "Ordem de pedir vasilhas vazias"
+        },
+        {
+          "id": "c",
+          "text": "Derramar até o azeite cessar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E o azeite cessou",
+      "feedbackCorrect": "Clamor, preparação e enchimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "O que vem antes de pedir vasilhas?",
+      "learningObjective": "Ordenar os movimentos da cena.",
+      "evidence": [
+        "2 Reis 4:1",
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 4:6, complete: Não há mais vasos. E o azeite ___.",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "cessou"
+        },
+        {
+          "id": "b",
+          "text": "aumentou"
+        },
+        {
+          "id": "c",
+          "text": "ferveu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E o azeite cessou",
+      "feedbackCorrect": "A provisão para quando faltam vasos.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que o azeite fez?",
+      "learningObjective": "Lembrar a cessação.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 4:2 a 1 Reis 17:14?",
+      "verseRef": "2 Reis 4:2",
+      "passageA": {
+        "ref": "2 Reis 4:2"
+      },
+      "passageB": {
+        "ref": "1 Reis 17:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Azeite da viúva de Sarepta"
+        },
+        {
+          "id": "b",
+          "text": "Fogo sobre o Carmelo"
+        },
+        {
+          "id": "c",
+          "text": "Jordão dividido ao meio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma botija de azeite",
+      "feedbackCorrect": "Duas viúvas, pouco azeite e provisão de Deus.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o pouco azeite de outra viúva.",
+      "learningObjective": "Relacionar as duas provisões.",
+      "evidence": [
+        "2 Reis 4:2",
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 4 —7, Eliseu manda a viúva guardar o azeite sem pagar a dívida.",
+      "verseRef": "2 Reis 4:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "venda o azeite, pague sua dívida",
+      "feedbackCorrect": "Ele manda vender e pagar; o restante sustenta a casa.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "O que ele manda fazer com o azeite?",
+      "learningObjective": "Corrigir a leitura do desfecho.",
+      "evidence": [
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 4:7, toque o que deve ser pago com a venda.",
+      "verseRef": "2 Reis 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "saber"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "saber",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar o propósito do milagre.",
+      "evidence": [
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 4:1–7 sustenta sobre a provisão?",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enquanto houver vasilha, o Senhor multiplica o pouco"
+        },
+        {
+          "id": "b",
+          "text": "O milagre exige estoque grande em casa"
+        },
+        {
+          "id": "c",
+          "text": "O azeite para porque Deus se cansa"
+        },
+        {
+          "id": "d",
+          "text": "Eliseu manda não pagar a dívida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não há mais vasos. E o azeite cessou",
+      "feedbackCorrect": "O limite são as vasilhas; o Senhor cobre a dívida.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una botija, vasos e dívida.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da provisão da viúva.",
+      "verseRef": "2 Reis 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor sob ameaça da dívida"
+        },
+        {
+          "id": "b",
+          "text": "Vasilhas vazias se enchem de azeite"
+        },
+        {
+          "id": "c",
+          "text": "Venda, pagamento e sustento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pague sua dívida e você e seus filhos viverão",
+      "feedbackCorrect": "Necessidade, milagre e restituição.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "O que vem antes de encher?",
+      "learningObjective": "Encadear clamor e provisão.",
+      "evidence": [
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 4:3, complete: peça emprestadas ___ a todos os seus vizinhos.",
+      "verseRef": "2 Reis 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "vasilhas"
+        },
+        {
+          "id": "b",
+          "text": "moedas"
+        },
+        {
+          "id": "c",
+          "text": "ovelhas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "peça emprestadas vasilhas a todos os seus vizinhos",
+      "feedbackCorrect": "Vasilhas são o espaço da multiplicação.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que pedir emprestado?",
+      "learningObjective": "Lembrar o termo vasilhas.",
+      "evidence": [
+        "2 Reis 4:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 4:7 a Filipenses 4:19?",
+      "verseRef": "2 Reis 4:7",
+      "passageA": {
+        "ref": "2 Reis 4:7"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus supre toda necessidade"
+        },
+        {
+          "id": "b",
+          "text": "Riqueza sem trabalho"
+        },
+        {
+          "id": "c",
+          "text": "Dívida sem pagamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você e seus filhos viverão do que sobrar",
+      "feedbackCorrect": "A provisão cobre a dívida e sustenta a vida.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare necessidade e provisão.",
+      "learningObjective": "Ligar o milagre ao cuidado de Deus.",
+      "evidence": [
+        "2 Reis 4:7",
+        "Filipenses 4:19"
+      ]
+    }
+  ]
+}

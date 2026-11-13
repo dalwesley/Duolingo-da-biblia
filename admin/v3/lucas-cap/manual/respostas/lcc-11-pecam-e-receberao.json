@@ -1,0 +1,493 @@
+{
+  "study": {
+    "passageRef": "Lucas 11:9–13",
+    "passages": [
+      { "ref": "Lucas 11:9–13" },
+      { "ref": "Lucas 11:5–8" }
+    ],
+    "context": "Jesus acabou de ensinar os discípulos a orar. Em seguida, conta de um homem que, à meia-noite, vai pedir três pães a um amigo. A história abre o ensino sobre pedir, buscar e bater.",
+    "keyword": "pedir",
+    "keywordGloss": "Pedir é a oração que Jesus manda fazer, com a certeza de que há resposta.",
+    "focusQuestion": "Quando você ora, pede como quem confia no Pai ou como quem teme receber algo ruim?",
+    "reflectionPrompts": [
+      "O pedido à meia-noite",
+      "Pedir, buscar e bater",
+      "O Pai e o dom"
+    ],
+    "facts": [
+      {
+        "text": "O homem pede três pães a um amigo à meia-noite.",
+        "evidenceRef": "Lucas 11:5",
+        "evidenceSpan": "ao procurá-lo à meia-noite, lhe dirá: Amigo, empresta-me três pães"
+      },
+      {
+        "text": "Quem pede não tem nada para oferecer ao amigo que chegou de viagem.",
+        "evidenceRef": "Lucas 11:6",
+        "evidenceSpan": "um amigo meu chegou à minha casa, vindo de viagem, e eu não tenho nada para lhe oferecer"
+      },
+      {
+        "text": "O homem de dentro diz que a porta já está fechada e que os filhos estão na cama.",
+        "evidenceRef": "Lucas 11:7",
+        "evidenceSpan": "a porta já está fechada, e meus filhos estão comigo na cama"
+      },
+      {
+        "text": "Ele se levantará por causa da importunação e dará tudo o que for necessário.",
+        "evidenceRef": "Lucas 11:8",
+        "evidenceSpan": "levantará, todavia, por causa da importunação, e lhe dará tudo o que necessitar"
+      },
+      {
+        "text": "Jesus manda pedir, buscar e bater, e anuncia que a porta se abrirá.",
+        "evidenceRef": "Lucas 11:9",
+        "evidenceSpan": "Peçam, e será-lhes dado; busquem e encontrarão; batam, e a porta se abrirá"
+      },
+      {
+        "text": "O Pai celestial dará o Espírito Santo àqueles que o pedirem.",
+        "evidenceRef": "Lucas 11:13",
+        "evidenceSpan": "o Pai celestial dará o Espírito Santo àqueles que o pedirem"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "importunação",
+        "gloss": "Insistência do pedido, pela qual o homem se levanta e dá o que falta."
+      },
+      {
+        "term": "Espírito Santo",
+        "gloss": "Dom que Jesus diz que o Pai celestial dará a quem pedir."
+      },
+      {
+        "term": "Pai celestial",
+        "gloss": "Pai que, no argumento, supera os pais humanos ao dar o Espírito Santo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amigo é procurado à meia-noite",
+        "evidenceRef": "Lucas 11:5"
+      },
+      {
+        "label": "A importunação obtém o necessário",
+        "evidenceRef": "Lucas 11:8"
+      },
+      {
+        "label": "O Pai dá o Espírito a quem pede",
+        "evidenceRef": "Lucas 11:13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Se a amizade não o levanta, a importunação, todavia, o faz dar tudo o que falta.",
+        "marker": "todavia",
+        "evidenceRef": "Lucas 11:8"
+      },
+      {
+        "kind": "causa",
+        "text": "Jesus manda pedir, buscar e bater, pois quem pede recebe, quem busca encontra e a quem bate se abre.",
+        "marker": "Pois",
+        "evidenceRef": "Lucas 11:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "De pais que sabem dar boas dádivas, o texto sobe ao Pai, que dará o Espírito Santo.",
+        "marker": "quanto mais",
+        "evidenceRef": "Lucas 11:13"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Mateus 7:7", "bridge": "Pedir, buscar e bater" },
+      { "ref": "Mateus 7:11", "bridge": "Quanto mais o Pai dá" },
+      { "ref": "Lucas 18:1", "bridge": "Orar sem desanimar" }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus é como o amigo de dentro: só responde quando a insistência o cansa.",
+        "why": "O amigo é o caso menor. Jesus passa ao Pai, que dará o Espírito Santo a quem pedir, sem a recusa da porta fechada."
+      },
+      {
+        "text": "Pedir garante qualquer coisa, até o que faria mal a quem pede.",
+        "why": "Os exemplos são pão, peixe e ovo, não pedra, cobra ou escorpião. O dom nomeado é o Espírito Santo."
+      },
+      {
+        "text": "Os ouvintes são maus, logo o Pai celestial dá menos do que um pai humano.",
+        "why": "O texto vai no sentido oposto: se até eles sabem dar boas dádivas, quanto mais o Pai dará o Espírito Santo."
+      }
+    ],
+    "centralInsight": "O Pai do céu dá o Espírito Santo a quem pede.",
+    "anchorQuestion": "O que o Pai celestial dará àqueles que o pedirem?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 11:8, o homem se levanta e dá o necessário por ser amigo.",
+      "verseRef": "Lucas 11:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "se não se levantar para dar a ele por ser seu amigo, levantará, todavia, por causa da importunação",
+      "feedbackCorrect": "A amizade não é o motivo. Ele se levanta por causa da importunação.",
+      "feedbackWrong": {
+        "true": "A frase nega esse motivo. Se a amizade não o levanta, a importunação o faz dar."
+      },
+      "hint": "Observe o motivo citado no fim da frase.",
+      "learningObjective": "Observar que a importunação, não a amizade, é o motivo de ele dar.",
+      "evidence": ["Lucas 11:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 11:5, toque o que o homem pede emprestado.",
+      "verseRef": "Lucas 11:5",
+      "options": [
+        { "id": "a", "text": "um amigo" },
+        { "id": "b", "text": "três pães" },
+        { "id": "c", "text": "meia-noite" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "empresta-me três pães",
+      "feedbackCorrect": "O pedido da meia-noite é concreto: três pães emprestados.",
+      "feedbackWrong": {
+        "a": "O amigo é a quem ele recorre, não o que ele pede emprestado.",
+        "c": "Meia-noite marca a hora do pedido, não o objeto."
+      },
+      "hint": "Veja o objeto do pedido de empréstimo.",
+      "learningObjective": "Identificar o que é pedido na história da meia-noite.",
+      "evidence": ["Lucas 11:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 11:7, o que o homem alega para não se levantar?",
+      "verseRef": "Lucas 11:7",
+      "options": [
+        { "id": "a", "text": "Não conhece a pessoa que bate à porta" },
+        { "id": "b", "text": "A porta está fechada e os filhos estão na cama" },
+        { "id": "c", "text": "Não há pão guardado dentro da casa" },
+        { "id": "d", "text": "Jesus mandou recusar pedido feito de noite" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a porta já está fechada, e meus filhos estão comigo na cama",
+      "feedbackCorrect": "Ele alega a porta fechada e os filhos já deitados com ele.",
+      "feedbackWrong": {
+        "a": "O texto não fala em desconhecimento. Ele reclama da importunação.",
+        "c": "A falta de pão está no pedido de fora, não nesta recusa.",
+        "d": "Jesus não manda recusar. Quem alega isso é o homem de dentro."
+      },
+      "hint": "Leia os motivos ditos de dentro da casa.",
+      "learningObjective": "Identificar a alegação de quem não quer se levantar.",
+      "evidence": ["Lucas 11:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 11:9 na ordem do texto.",
+      "verseRef": "Lucas 11:9",
+      "options": [
+        { "id": "a", "text": "Peçam, e será-lhes dado" },
+        { "id": "b", "text": "busquem e encontrarão" },
+        { "id": "c", "text": "batam, e a porta se abrirá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Peçam, e será-lhes dado; busquem e encontrarão; batam, e a porta se abrirá",
+      "feedbackCorrect": "A frase segue pedir, buscar e bater, cada um com sua promessa.",
+      "feedbackWrong": {
+        "default": "Comece por Peçam. Buscar vem no meio. Bater fecha o versículo."
+      },
+      "hint": "O versículo abre com o verbo pedir.",
+      "learningObjective": "Reconhecer a ordem de pedir, buscar e bater em Lucas 11:9.",
+      "evidence": ["Lucas 11:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 11:5, quantos pães o homem pede emprestado?",
+      "verseRef": "Lucas 11:5",
+      "options": [
+        { "id": "a", "text": "dois" },
+        { "id": "b", "text": "cinco" },
+        { "id": "c", "text": "três" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "empresta-me três pães",
+      "feedbackCorrect": "O pedido é preciso: três pães para quem chegou de viagem.",
+      "feedbackWrong": {
+        "a": "Dois não aparece no versículo. O número dito é outro.",
+        "b": "Cinco não aparece. O homem pede um número menor."
+      },
+      "hint": "Conte os pães no pedido de empréstimo.",
+      "learningObjective": "Lembrar a quantidade de pães pedida na história.",
+      "evidence": ["Lucas 11:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que liga Lucas 11:6 a este contexto?",
+      "verseRef": "Lucas 11:6",
+      "passageA": { "ref": "Lucas 11:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Um amigo chegou de viagem e não há nada em casa para oferecer."
+      },
+      "options": [
+        { "id": "a", "text": "Nada para oferecer" },
+        { "id": "b", "text": "Filhos já na cama" },
+        { "id": "c", "text": "Pai que dá o Espírito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu não tenho nada para lhe oferecer",
+      "feedbackCorrect": "O versículo explica o aperto: chegou visita e não há o que pôr à mesa.",
+      "feedbackWrong": {
+        "b": "Os filhos na cama aparecem na recusa seguinte, não neste aperto.",
+        "c": "O Pai e o Espírito vêm no fim do ensino, não neste pedido."
+      },
+      "hint": "Veja o que falta na casa quando a visita chega.",
+      "learningObjective": "Ligar o pedido de pão à falta de algo para oferecer.",
+      "evidence": ["Lucas 11:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 11:9–10, receber, encontrar e a porta aberta são o resultado de pedir, buscar e bater.",
+      "verseRef": "Lucas 11:9–10",
+      "correctOptionId": "true",
+      "evidenceSpan": "todo aquele que pede recebe; quem busca encontra; e a quem bate, abrir-se-lhe-á",
+      "feedbackCorrect": "Cada ação tem um resultado: quem pede recebe, quem busca encontra, a quem bate se abre.",
+      "feedbackWrong": {
+        "false": "Releia o versículo 10: quem pede recebe, quem busca encontra, e a quem bate se abre."
+      },
+      "hint": "Acompanhe cada verbo de ação até o que ele produz.",
+      "learningObjective": "Compreender que receber, encontrar e a porta aberta resultam de pedir, buscar e bater.",
+      "evidence": ["Lucas 11:9–10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 11:8, toque a palavra que marca o contraste com a amizade.",
+      "verseRef": "Lucas 11:8",
+      "options": [
+        { "id": "a", "text": "todavia" },
+        { "id": "b", "text": "amigo" },
+        { "id": "c", "text": "necessitar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantará, todavia, por causa da importunação",
+      "feedbackCorrect": "Todavia vira o motivo: não é a amizade, é a importunação.",
+      "feedbackWrong": {
+        "b": "Amigo nomeia o laço que não basta. O contraste vem na palavra seguinte.",
+        "c": "Necessitar diz o que ele dará, não o contraste entre os motivos."
+      },
+      "hint": "Procure a palavra curta entre vírgulas, depois de levantará.",
+      "learningObjective": "Reconhecer o marcador que contrapõe amizade e importunação.",
+      "evidence": ["Lucas 11:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Lucas 11:13 traça entre os pais e o Pai celestial?",
+      "verseRef": "Lucas 11:13",
+      "options": [
+        { "id": "a", "text": "Pais maus superam o Pai na hora de dar" },
+        { "id": "b", "text": "Se pais maus dão o que é bom, o Pai ainda mais dará o Espírito" },
+        { "id": "c", "text": "O Pai pode dar pedra ou cobra num pedido ruim" },
+        { "id": "d", "text": "O Pai dorme e só atende quem insiste muito" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "quanto mais o Pai celestial dará o Espírito Santo",
+      "feedbackCorrect": "O quanto mais sobe dos pais humanos ao Pai, que dá o Espírito Santo.",
+      "feedbackWrong": {
+        "a": "O argumento não diminui o Pai. Ele dá além do que pais maus sabem dar.",
+        "c": "Pedra e cobra são o que um pai não dá. O Pai dá o Espírito Santo.",
+        "d": "Quem está na cama é o amigo da parábola, não o Pai celestial."
+      },
+      "hint": "Observe a comparação que começa em quanto mais.",
+      "learningObjective": "Compreender a comparação entre pais humanos e o Pai celestial.",
+      "evidence": ["Lucas 11:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência deste ensino, do pedido ao dom?",
+      "verseRef": "Lucas 11:5",
+      "options": [
+        { "id": "a", "text": "O amigo é procurado à meia-noite" },
+        { "id": "b", "text": "A importunação obtém o necessário" },
+        { "id": "c", "text": "O Pai dá o Espírito a quem pede" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ao procurá-lo à meia-noite",
+      "feedbackCorrect": "A cena vai do pedido noturno à insistência e termina no dom do Pai.",
+      "feedbackWrong": {
+        "default": "Comece pela meia-noite. A insistência vem depois. O dom do Pai fecha."
+      },
+      "hint": "Siga a história: primeiro o pedido, por último o Pai.",
+      "learningObjective": "Compreender os três movimentos do ensino sobre a oração.",
+      "evidence": ["Lucas 11:5", "Lucas 11:8", "Lucas 11:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 11:8, o que o faz se levantar e dar o que falta?",
+      "verseRef": "Lucas 11:8",
+      "options": [
+        { "id": "a", "text": "importunação" },
+        { "id": "b", "text": "amizade" },
+        { "id": "c", "text": "viagem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa da importunação",
+      "feedbackCorrect": "Ele se levanta por causa da importunação, não por ser amigo.",
+      "feedbackWrong": {
+        "b": "A amizade é o motivo que o texto diz não bastar para ele se levantar.",
+        "c": "A viagem explica a visita, não o motivo de ele sair da cama."
+      },
+      "hint": "Olhe o motivo citado logo depois de todavia.",
+      "learningObjective": "Lembrar o motivo que leva o homem a dar o que falta.",
+      "evidence": ["Lucas 11:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 11:9 a Mateus 7:7?",
+      "verseRef": "Lucas 11:9",
+      "passageA": { "ref": "Lucas 11:9" },
+      "passageB": { "ref": "Mateus 7:7" },
+      "options": [
+        { "id": "a", "text": "A porta fechada à noite" },
+        { "id": "b", "text": "Pedir, buscar e bater" },
+        { "id": "c", "text": "Ovo no lugar do pão" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Peçam, e será-lhes dado; busquem e encontrarão; batam, e a porta se abrirá",
+      "feedbackCorrect": "Os dois textos mandam pedir, buscar e bater, com a porta que se abre.",
+      "feedbackWrong": {
+        "a": "A porta fechada à noite é a parábola anterior, não o dito de Mateus.",
+        "c": "Ovo e pão estão na comparação dos pais, ausente em Mateus 7:7."
+      },
+      "hint": "Compare os três verbos que abrem os dois versículos.",
+      "learningObjective": "Relacionar o chamado de Lucas 11:9 ao mesmo chamado em Mateus 7:7.",
+      "evidence": ["Lucas 11:9", "Mateus 7:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 11:11–12, as perguntas de Jesus sustentam que um pai não troca o pedido do filho por pedra, cobra ou escorpião.",
+      "verseRef": "Lucas 11:11–12",
+      "correctOptionId": "true",
+      "evidenceSpan": "lhe dará uma pedra? Ou se pedir peixe, lhe dará uma cobra em lugar de peixe? Ou, se lhe pedir um ovo, dará ele um escorpião",
+      "feedbackCorrect": "As perguntas esperam um não. Pai nenhum troca o pedido por pedra, cobra ou escorpião.",
+      "feedbackWrong": {
+        "false": "O texto não sugere que o pai faria isso. As perguntas levam a responder que não."
+      },
+      "hint": "Pense na resposta que as perguntas de Jesus esperam.",
+      "learningObjective": "Interpretar as perguntas sobre pão, peixe e ovo como recusa do que fere.",
+      "evidence": ["Lucas 11:11–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 11:13, toque o que o Pai dará a quem pedir.",
+      "verseRef": "Lucas 11:13",
+      "options": [
+        { "id": "a", "text": "boas dádivas" },
+        { "id": "b", "text": "seus filhos" },
+        { "id": "c", "text": "Espírito Santo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "dará o Espírito Santo àqueles que o pedirem",
+      "feedbackCorrect": "O dom que Jesus nomeia não é objeto: é o Espírito Santo.",
+      "feedbackWrong": {
+        "a": "Boas dádivas são o que pais humanos sabem dar. O Pai dará o Espírito Santo.",
+        "b": "Seus filhos indica quem recebe dos pais, não o dom do Pai."
+      },
+      "hint": "Veja o dom nomeado depois de dará o.",
+      "learningObjective": "Localizar o dom que o texto atribui ao Pai celestial.",
+      "evidence": ["Lucas 11:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 11:7–8 sustenta sobre o homem que está dentro?",
+      "verseRef": "Lucas 11:7–8",
+      "options": [
+        { "id": "a", "text": "A recusa inicial cede quando a insistência continua" },
+        { "id": "b", "text": "Deus é o vizinho e só atende depois de cansar" },
+        { "id": "c", "text": "A porta fechada encerra o pedido sem mudança" },
+        { "id": "d", "text": "Os filhos na cama anulam o pedido feito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantará, todavia, por causa da importunação, e lhe dará tudo o que necessitar",
+      "feedbackCorrect": "Ele recusa de início, mas a importunação o faz dar o que falta.",
+      "feedbackWrong": {
+        "b": "O vizinho é o caso menor. Jesus não diz que o Pai age por cansaço.",
+        "c": "A recusa não é a última palavra. Ele se levanta e dá o necessário.",
+        "d": "Os filhos explicam a desculpa inicial, não o fim da história."
+      },
+      "hint": "Compare a desculpa do versículo 7 com o desfecho do 8.",
+      "learningObjective": "Distinguir a recusa inicial do desfecho causado pela importunação.",
+      "evidence": ["Lucas 11:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do argumento de Jesus?",
+      "verseRef": "Lucas 11:8",
+      "options": [
+        { "id": "a", "text": "Até um amigo relutante acaba cedendo" },
+        { "id": "b", "text": "Pedir, buscar e bater têm resposta" },
+        { "id": "c", "text": "O dom maior é o Espírito Santo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "por causa da importunação, e lhe dará tudo o que necessitar",
+      "feedbackCorrect": "O argumento sobe do amigo que cede ao chamado de pedir e ao Espírito.",
+      "feedbackWrong": {
+        "default": "Comece pelo amigo que cede. O chamado vem no meio. O Espírito fecha."
+      },
+      "hint": "Siga do exemplo menor até o dom que Jesus nomeia.",
+      "learningObjective": "Acompanhar o argumento desde o amigo relutante até o dom do Pai.",
+      "evidence": ["Lucas 11:8", "Lucas 11:9", "Lucas 11:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 11:13, que Pai dará o Espírito Santo a quem pedir?",
+      "verseRef": "Lucas 11:13",
+      "options": [
+        { "id": "a", "text": "terreno" },
+        { "id": "b", "text": "celestial" },
+        { "id": "c", "text": "relutante" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Pai celestial dará o Espírito Santo",
+      "feedbackCorrect": "O contraste é com pais humanos: quem dá o Espírito é o Pai celestial.",
+      "feedbackWrong": {
+        "a": "Terreno caberia aos pais da comparação. O texto diz Pai celestial.",
+        "c": "Relutante descreve o amigo da parábola, não o Pai deste versículo."
+      },
+      "hint": "Observe o adjetivo que acompanha a palavra Pai.",
+      "learningObjective": "Lembrar o termo que distingue o Pai que dá o Espírito Santo.",
+      "evidence": ["Lucas 11:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 11:13 a Mateus 7:11?",
+      "verseRef": "Lucas 11:13",
+      "passageA": { "ref": "Lucas 11:13" },
+      "passageB": { "ref": "Mateus 7:11" },
+      "options": [
+        { "id": "a", "text": "Vizinho que não se levanta" },
+        { "id": "b", "text": "Pedido feito à meia-noite" },
+        { "id": "c", "text": "Quanto mais o Pai dá" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "quanto mais o Pai celestial dará o Espírito Santo",
+      "feedbackCorrect": "Nos dois, o Pai dá além do que pais maus sabem dar aos filhos.",
+      "feedbackWrong": {
+        "a": "O vizinho que não quer se levantar não aparece em Mateus 7:11.",
+        "b": "A meia-noite abre a parábola. Mateus 7:11 fala de pais e do Pai."
+      },
+      "hint": "Compare a subida do argumento nos dois textos.",
+      "learningObjective": "Ligar o argumento de Lucas 11:13 ao mesmo argumento em Mateus 7:11.",
+      "evidence": ["Lucas 11:13", "Mateus 7:11"]
+    }
+  ]
+}

@@ -1,0 +1,923 @@
+{
+  "study": {
+    "passageRef": "1 Tessalonicenses 4:13–18",
+    "passages": [
+      {
+        "ref": "1 Tessalonicenses 4:13–18"
+      },
+      {
+        "ref": "1 Tessalonicenses 5:12–17"
+      },
+      {
+        "ref": "1 Tessalonicenses 5:18–22"
+      }
+    ],
+    "context": "Este desafio revisa a esperança da vinda e a vida vigilante e grata da igreja.",
+    "keyword": "esperança",
+    "keywordGloss": "Sustenta o luto e molda a vigilância até o Senhor.",
+    "focusQuestion": "Sua esperança está virando vigilância e gratidão?",
+    "reflectionPrompts": [
+      "Mortos em Cristo",
+      "Sempre com o Senhor",
+      "Graças em tudo"
+    ],
+    "facts": [
+      {
+        "text": "Não luto como sem esperança.",
+        "evidenceRef": "1 Tessalonicenses 4:13",
+        "evidenceSpan": "que não têm esperança"
+      },
+      {
+        "text": "Mortos em Cristo ressuscitam primeiro.",
+        "evidenceRef": "1 Tessalonicenses 4:16",
+        "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro"
+      },
+      {
+        "text": "Para sempre com o Senhor.",
+        "evidenceRef": "1 Tessalonicenses 4:17",
+        "evidenceSpan": "permaneceremos para sempre com o Senhor"
+      },
+      {
+        "text": "Regozijar, orar, dar graças.",
+        "evidenceRef": "1 Tessalonicenses 5:16",
+        "evidenceSpan": "Regozijem-se sempre"
+      },
+      {
+        "text": "Em tudo dai graças.",
+        "evidenceRef": "1 Tessalonicenses 5:18",
+        "evidenceSpan": "Em tudo, dai graças"
+      },
+      {
+        "text": "Examinar e reter o bem.",
+        "evidenceRef": "1 Tessalonicenses 5:21",
+        "evidenceSpan": "retende o que é bom"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "esperança",
+        "gloss": "Contraste com os demais."
+      },
+      {
+        "term": "dai graças",
+        "gloss": "Vontade de Deus em Cristo."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Com quem permanecerão para sempre."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Esperança no luto",
+        "evidenceRef": "1 Tessalonicenses 4:13"
+      },
+      {
+        "label": "Ressurreição e encontro",
+        "evidenceRef": "1 Tessalonicenses 4:16"
+      },
+      {
+        "label": "Cuidado comunitário",
+        "evidenceRef": "1 Tessalonicenses 5:14"
+      },
+      {
+        "label": "Vontade: graças em tudo",
+        "evidenceRef": "1 Tessalonicenses 5:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Fé em Jesus fundamenta a esperança.",
+        "marker": "Porque",
+        "evidenceRef": "1 Tessalonicenses 4:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não mal por mal; o bem.",
+        "marker": "pelo contrário",
+        "evidenceRef": "1 Tessalonicenses 5:15"
+      },
+      {
+        "kind": "causa",
+        "text": "Graças porque é a vontade de Deus.",
+        "marker": "pois",
+        "evidenceRef": "1 Tessalonicenses 5:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 15:52",
+        "bridge": "Trombeta e ressurreição"
+      },
+      {
+        "ref": "Filipenses 4:4–6",
+        "bridge": "Alegria e oração"
+      },
+      {
+        "ref": "Efésios 5:20",
+        "bridge": "Graças em tudo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Sem esperança no luto.",
+        "why": "Há contraste explícito."
+      },
+      {
+        "text": "Gratidão só no culto.",
+        "why": "Em tudo."
+      },
+      {
+        "text": "Aceitar tudo sem examinar.",
+        "why": "Examinai e retende o bom."
+      }
+    ],
+    "centralInsight": "A esperança do Senhor molda uma igreja vigilante e grata",
+    "anchorQuestion": "O que 1 Tessalonicenses 5:18 chama de vontade de Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Tessalonicenses 4:13, devem entristecer-se como os sem esperança.",
+      "verseRef": "1 Tessalonicenses 4:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "para que não se entristeçam como os demais, que não têm esperança",
+      "feedbackCorrect": "Não como os demais.",
+      "feedbackWrong": {
+        "true": "Releia o para que."
+      },
+      "hint": "Olhe o para que.",
+      "learningObjective": "Observar o luto.",
+      "evidence": [
+        "1 Tessalonicenses 4:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+      "verseRef": "1 Tessalonicenses 4:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "mortos em Cristo"
+        },
+        {
+          "id": "b",
+          "text": "arcanjo"
+        },
+        {
+          "id": "c",
+          "text": "trombeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+      "feedbackCorrect": "Mortos em Cristo.",
+      "feedbackWrong": {
+        "b": "Voz.",
+        "c": "Sinal."
+      },
+      "hint": "Quem ressuscita.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Tessalonicenses 4:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Tessalonicenses 5:18, o que é a vontade de Deus?",
+      "verseRef": "1 Tessalonicenses 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dar graças em tudo"
+        },
+        {
+          "id": "b",
+          "text": "Retribuir mal"
+        },
+        {
+          "id": "c",
+          "text": "Apagar o Espírito"
+        },
+        {
+          "id": "d",
+          "text": "Desprezar líderes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Em tudo, dai graças, pois esta é a vontade de Deus",
+      "feedbackCorrect": "Graças em tudo.",
+      "feedbackWrong": {
+        "b": "Proibido.",
+        "c": "Proibido.",
+        "d": "Há apreço."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Observar a vontade.",
+      "evidence": [
+        "1 Tessalonicenses 5:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+      "verseRef": "1 Tessalonicenses 5:16–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Regozijem-se sempre"
+        },
+        {
+          "id": "b",
+          "text": "Orem"
+        },
+        {
+          "id": "c",
+          "text": "sem parar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Regozijem-se sempre. Orem sem parar.",
+      "feedbackCorrect": "Tríade.",
+      "feedbackWrong": {
+        "default": "Comece pelo regozijo; a oração vem em seguida."
+      },
+      "hint": "Siga a tríade.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Tessalonicenses 5:16–18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+      "verseRef": "1 Tessalonicenses 4:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "arcanjo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneceremos para sempre com o Senhor",
+      "feedbackCorrect": "Com o Senhor.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Com quem.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Tessalonicenses 4:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+      "verseRef": "1 Tessalonicenses 4:13",
+      "passageA": {
+        "ref": "1 Tessalonicenses 4:13"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Luto cristão com esperança."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luto com esperança"
+        },
+        {
+          "id": "b",
+          "text": "Sem esperança"
+        },
+        {
+          "id": "c",
+          "text": "Proibir choro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que não têm esperança",
+      "feedbackCorrect": "Contraste da esperança.",
+      "feedbackWrong": {
+        "b": "É o dos demais.",
+        "c": "Regula o modo."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Tessalonicenses 4:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 5:17, toque o verbo da ordem.",
+      "verseRef": "1 Tessalonicenses 5:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Orem"
+        },
+        {
+          "id": "b",
+          "text": "parar"
+        },
+        {
+          "id": "c",
+          "text": "sem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Orem sem parar",
+      "feedbackCorrect": "Orem.",
+      "feedbackWrong": {
+        "b": "Negação.",
+        "c": "Modo."
+      },
+      "hint": "O verbo.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Tessalonicenses 5:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+      "verseRef": "1 Tessalonicenses 4:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "o mesmo Senhor descerá dos céus"
+        },
+        {
+          "id": "b",
+          "text": "com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus"
+        },
+        {
+          "id": "c",
+          "text": "e os mortos em Cristo ressuscitarão primeiro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+      "feedbackCorrect": "Descida e ressurreição.",
+      "feedbackWrong": {
+        "default": "Comece pelo Senhor."
+      },
+      "hint": "Comece pela descida.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Tessalonicenses 4:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Tessalonicenses 4:14, a fé em Jesus fundamenta a esperança pelos que dormem.",
+      "verseRef": "1 Tessalonicenses 4:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porque, se cremos que Jesus morreu e ressuscitou",
+      "feedbackCorrect": "Porque liga.",
+      "feedbackWrong": {
+        "false": "Releia o Porque."
+      },
+      "hint": "Repare no Porque.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Tessalonicenses 4:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 5:15, toque o marcador de contraste.",
+      "verseRef": "1 Tessalonicenses 5:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "pelo contrário"
+        },
+        {
+          "id": "b",
+          "text": "cuidado"
+        },
+        {
+          "id": "c",
+          "text": "todos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo contrário, busquem sempre o bem",
+      "feedbackCorrect": "Pelo contrário.",
+      "feedbackWrong": {
+        "b": "Aviso.",
+        "c": "Alcance."
+      },
+      "hint": "A expressão.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Tessalonicenses 5:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+      "verseRef": "1 Tessalonicenses 4:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vivos não precedem; mortos ressuscitam primeiro"
+        },
+        {
+          "id": "b",
+          "text": "Vivos passam na frente"
+        },
+        {
+          "id": "c",
+          "text": "Sem ressurreição"
+        },
+        {
+          "id": "d",
+          "text": "Sem trombeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+      "feedbackCorrect": "Ordem clara.",
+      "feedbackWrong": {
+        "b": "Sem precedência.",
+        "c": "Há.",
+        "d": "Há."
+      },
+      "hint": "Una.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Tessalonicenses 4:15–16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança esperança e vigilância?",
+      "verseRef": "1 Tessalonicenses 4:16–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mortos ressuscitam"
+        },
+        {
+          "id": "b",
+          "text": "Encontro com o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Viver em gratidão vigilante"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Em tudo, dai graças",
+      "feedbackCorrect": "Ressurreição, encontro e vida vigilante.",
+      "feedbackWrong": {
+        "default": "Comece pelos mortos."
+      },
+      "hint": "Siga o arco.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Tessalonicenses 4:16",
+        "1 Tessalonicenses 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 5:18, Em tudo, dai graças, ___ esta é a vontade.",
+      "verseRef": "1 Tessalonicenses 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "nunca"
+        },
+        {
+          "id": "c",
+          "text": "talvez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois esta é a vontade de Deus",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "A ligação.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Tessalonicenses 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+      "verseRef": "1 Tessalonicenses 4:16",
+      "passageA": {
+        "ref": "1 Tessalonicenses 4:16"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 15:52"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Trombeta e ressurreição"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio"
+        },
+        {
+          "id": "c",
+          "text": "Sem mudança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com a trombeta de Deus",
+      "feedbackCorrect": "Trombeta.",
+      "feedbackWrong": {
+        "b": "Há trombeta.",
+        "c": "Há ressurreição."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Tessalonicenses 4:16",
+        "1 Coríntios 15:52"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 4:14, toque o marcador de causa.",
+      "verseRef": "1 Tessalonicenses 4:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "assim"
+        },
+        {
+          "id": "c",
+          "text": "dormem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque, se cremos",
+      "feedbackCorrect": "Porque.",
+      "feedbackWrong": {
+        "b": "Resultado.",
+        "c": "Falecido."
+      },
+      "hint": "Abertura.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Tessalonicenses 4:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Tessalonicenses 5:14–18?",
+      "verseRef": "1 Tessalonicenses 5:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuidar dos fracos"
+        },
+        {
+          "id": "b",
+          "text": "Não retribuir o mal"
+        },
+        {
+          "id": "c",
+          "text": "Alegria, oração e gratidão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Em tudo, dai graças",
+      "feedbackCorrect": "Cuidado e vontade de Deus.",
+      "feedbackWrong": {
+        "default": "Comece pelo cuidado."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Tessalonicenses 5:14–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O bloco 4–5 reduz a esperança a sentimento sem ressurreição nem vigilância.",
+      "verseRef": "1 Tessalonicenses 4:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+      "feedbackCorrect": "Há ressurreição e vida vigilante.",
+      "feedbackWrong": {
+        "true": "Releia 4:16 e 5:16–18."
+      },
+      "hint": "Una ressurreição e tríade.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Tessalonicenses 4:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 4:17, toque a duração.",
+      "verseRef": "1 Tessalonicenses 4:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "para sempre"
+        },
+        {
+          "id": "b",
+          "text": "nuvens"
+        },
+        {
+          "id": "c",
+          "text": "ares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneceremos para sempre com o Senhor",
+      "feedbackCorrect": "Para sempre.",
+      "feedbackWrong": {
+        "b": "Cenário.",
+        "c": "Lugar."
+      },
+      "hint": "Duração.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Tessalonicenses 4:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o desafio sustenta?",
+      "verseRef": "1 Tessalonicenses 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esperança da vinda e igreja vigilante e grata"
+        },
+        {
+          "id": "b",
+          "text": "Luto sem esperança"
+        },
+        {
+          "id": "c",
+          "text": "Sem gratidão"
+        },
+        {
+          "id": "d",
+          "text": "Sem cuidado mútuo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Em tudo, dai graças, pois esta é a vontade de Deus",
+      "feedbackCorrect": "Esperança e vigilância.",
+      "feedbackWrong": {
+        "b": "Há esperança.",
+        "c": "Há graças.",
+        "d": "Há cuidado."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Tessalonicenses 5:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Tessalonicenses 4:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus ressuscitou"
+        },
+        {
+          "id": "b",
+          "text": "Mortos se levantam"
+        },
+        {
+          "id": "c",
+          "text": "Igreja vigia e dá graças"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Em tudo, dai graças",
+      "feedbackCorrect": "Cristo, ressurreição e vigilância.",
+      "feedbackWrong": {
+        "default": "Comece por Jesus."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Tessalonicenses 4:14",
+        "1 Tessalonicenses 4:16",
+        "1 Tessalonicenses 5:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 5:21, retende o que é ___.",
+      "verseRef": "1 Tessalonicenses 5:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "bom"
+        },
+        {
+          "id": "b",
+          "text": "mau"
+        },
+        {
+          "id": "c",
+          "text": "falso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "retende o que é bom",
+      "feedbackCorrect": "O bom.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Objeto.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Tessalonicenses 5:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+      "verseRef": "1 Tessalonicenses 5:16–17",
+      "passageA": {
+        "ref": "1 Tessalonicenses 5:16–17"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:4–6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria e oração"
+        },
+        {
+          "id": "b",
+          "text": "Ansiedade"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Regozijem-se sempre. Orem sem parar",
+      "feedbackCorrect": "Alegria e oração.",
+      "feedbackWrong": {
+        "b": "Há alegria.",
+        "c": "Há orar."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Tessalonicenses 5:16–17",
+        "Filipenses 4:4–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 5:21, toque o verbo do exame.",
+      "verseRef": "1 Tessalonicenses 5:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Examinai"
+        },
+        {
+          "id": "b",
+          "text": "retende"
+        },
+        {
+          "id": "c",
+          "text": "todas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Examinai todas as coisas",
+      "feedbackCorrect": "O discernimento começa por examinar todas as coisas.",
+      "feedbackWrong": {
+        "b": "Retende vem depois do exame.",
+        "c": "Todas marca o alcance, não o verbo."
+      },
+      "hint": "Toque o primeiro verbo do versículo.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Tessalonicenses 5:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga esperança e vigilância?",
+      "verseRef": "1 Tessalonicenses 4:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confortar com a esperança"
+        },
+        {
+          "id": "b",
+          "text": "Honrar e cuidar na igreja"
+        },
+        {
+          "id": "c",
+          "text": "Dar graças em tudo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Em tudo, dai graças",
+      "feedbackCorrect": "Conforto, cuidado e gratidão.",
+      "feedbackWrong": {
+        "default": "Comece pelo conforto."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Tessalonicenses 4:18",
+        "1 Tessalonicenses 5:12",
+        "1 Tessalonicenses 5:18"
+      ]
+    }
+  ]
+}

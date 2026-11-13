@@ -1,0 +1,721 @@
+{
+ "study": {
+  "passageRef": "Provérbios 25:11–16",
+  "passages": [
+   {
+    "ref": "Provérbios 25:11–16"
+   },
+   {
+    "ref": "Provérbios 25:17–22"
+   }
+  ],
+  "context": "Palavra a tempo, correção ao ouvido atento, língua branda e pão ao inimigo: imagens de sabedoria que desarma.",
+  "keyword": "Tempo",
+  "keywordGloss": "A palavra dita a seu tempo vale como maçãs de ouro em salvas de prata.",
+  "focusQuestion": "Sua última palavra difícil veio no tempo certo ou fora de hora?",
+  "reflectionPrompts": [
+   "Maçãs de ouro",
+   "Língua branda",
+   "Pão ao inimigo"
+  ],
+  "facts": [
+   {
+    "text": "A palavra dita a seu tempo é como maçãs de ouro em salvas de prata.",
+    "evidenceRef": "Provérbios 25:11",
+    "evidenceSpan": "a palavra dita a seu tempo"
+   },
+   {
+    "text": "O sábio que corrige o ouvido atento é como joias preciosas.",
+    "evidenceRef": "Provérbios 25:12",
+    "evidenceSpan": "o sábio que corrige o ouvido atento"
+   },
+   {
+    "text": "A língua branda quebranta os ossos.",
+    "evidenceRef": "Provérbios 25:15",
+    "evidenceSpan": "a língua branda quebranta os ossos"
+   },
+   {
+    "text": "Se o inimigo tiver fome, dê-lhe pão.",
+    "evidenceRef": "Provérbios 25:21",
+    "evidenceSpan": "dá-lhe pão para comer"
+   },
+   {
+    "text": "O Senhor recompensará quem amontoa brasas com o bem.",
+    "evidenceRef": "Provérbios 25:22",
+    "evidenceSpan": "o Senhor te recompensará"
+   },
+   {
+    "text": "Falso testemunho é como martelo, espada e flecha afiada.",
+    "evidenceRef": "Provérbios 25:18",
+    "evidenceSpan": "martelo, uma espada e uma flecha afiada"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "tempo",
+    "gloss": "Momento em que a palavra se torna preciosa como ouro."
+   },
+   {
+    "term": "longanimidade",
+    "gloss": "Paciência que persuade até o príncipe."
+   },
+   {
+    "term": "brasas",
+    "gloss": "Imagem do efeito de alimentar o inimigo com bem."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Palavra e correção preciosas",
+    "evidenceRef": "Provérbios 25:11–12"
+   },
+   {
+    "label": "Mensageiro, jactância e língua branda",
+    "evidenceRef": "Provérbios 25:13–15"
+   },
+   {
+    "label": "Limites do mel e do próximo",
+    "evidenceRef": "Provérbios 25:16–17"
+   },
+   {
+    "label": "Dano, aflição e bem ao inimigo",
+    "evidenceRef": "Provérbios 25:18–22"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Pois assim amontoarás brasas e o Senhor recompensará.",
+    "marker": "Pois",
+    "evidenceRef": "Provérbios 25:22"
+   },
+   {
+    "kind": "contraste",
+    "text": "Língua branda vs ossos que ela quebranta.",
+    "marker": null,
+    "evidenceRef": "Provérbios 25:15"
+   },
+   {
+    "kind": "sequência",
+    "text": "Fome do inimigo → pão → brasas → recompensa.",
+    "marker": null,
+    "evidenceRef": "Provérbios 25:21"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 12:20",
+    "bridge": "Pão e água ao inimigo"
+   },
+   {
+    "ref": "Colossenses 4:6",
+    "bridge": "Palavra temperada com sal"
+   },
+   {
+    "ref": "Provérbios 15:1",
+    "bridge": "Resposta branda desvia a ira"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Qualquer palavra vale ouro, mesmo fora de hora.",
+    "why": "25:11 exige a palavra dita a seu tempo."
+   },
+   {
+    "text": "O inimigo faminto deve ser ignorado.",
+    "why": "25:21 manda dar pão e água."
+   },
+   {
+    "text": "Língua branda nunca muda nada duro.",
+    "why": "25:15 diz que ela quebranta os ossos."
+   }
+  ],
+  "centralInsight": "Palavra no tempo certo e bem ao inimigo: sabedoria que desarma.",
+  "anchorQuestion": "A que Provérbios 25:11 compara a palavra dita a seu tempo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 25:11, a palavra dita fora de hora é comparada a maçãs de ouro.",
+   "verseRef": "Provérbios 25:11",
+   "correctOptionId": "false",
+   "evidenceSpan": "a palavra dita a seu tempo",
+   "feedbackCorrect": "A comparação vale para a palavra dita a seu tempo.",
+   "feedbackWrong": {
+    "true": "Releia 25:11: a seu tempo."
+   },
+   "hint": "Veja a condição da comparação.",
+   "learningObjective": "Observar o papel do tempo.",
+   "evidence": [
+    "Provérbios 25:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 25:11, toque o que é comparado a maçãs de ouro.",
+   "verseRef": "Provérbios 25:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "a palavra"
+    },
+    {
+     "id": "b",
+     "text": "salvas"
+    },
+    {
+     "id": "c",
+     "text": "prata"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "assim é a palavra dita a seu tempo",
+   "feedbackCorrect": "O comparado é a palavra dita a seu tempo.",
+   "feedbackWrong": {
+    "b": "Salvas são o suporte da imagem.",
+    "c": "Prata descreve as salvas."
+   },
+   "hint": "O que vem após assim é.",
+   "learningObjective": "Identificar o valor da palavra.",
+   "evidence": [
+    "Provérbios 25:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 25:21, o que fazer se o inimigo tiver fome?",
+   "verseRef": "Provérbios 25:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Dar-lhe pão para comer"
+    },
+    {
+     "id": "b",
+     "text": "Negar-lhe água"
+    },
+    {
+     "id": "c",
+     "text": "Entoar canções ao aflito"
+    },
+    {
+     "id": "d",
+     "text": "Levantar falso testemunho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "dá-lhe pão para comer",
+   "feedbackCorrect": "O mandato é dar pão e, se sede, água.",
+   "feedbackWrong": {
+    "b": "Também manda dar água.",
+    "c": "25:20 critica canções ao aflito.",
+    "d": "25:18 condena o falso testemunho."
+   },
+   "hint": "Verbo após Se o teu inimigo.",
+   "learningObjective": "Observar o bem ao inimigo.",
+   "evidence": [
+    "Provérbios 25:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 25:11 na ordem do texto.",
+   "verseRef": "Provérbios 25:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Como maçãs de ouro em salvas de prata"
+    },
+    {
+     "id": "b",
+     "text": "assim é a palavra"
+    },
+    {
+     "id": "c",
+     "text": "dita a seu tempo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "maçãs de ouro em salvas de prata",
+   "feedbackCorrect": "Imagem, comparação e condição do tempo.",
+   "feedbackWrong": {
+    "default": "Comece pelas maçãs de ouro."
+   },
+   "hint": "O versículo abre com Como.",
+   "learningObjective": "Seguir a ordem da comparação.",
+   "evidence": [
+    "Provérbios 25:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 25:15, a língua branda quebranta os quê?",
+   "verseRef": "Provérbios 25:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "ossos"
+    },
+    {
+     "id": "b",
+     "text": "nuvens"
+    },
+    {
+     "id": "c",
+     "text": "martelos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quebranta os ossos",
+   "feedbackCorrect": "A língua branda quebranta os ossos.",
+   "feedbackWrong": {
+    "b": "Nuvens aparecem na jactância.",
+    "c": "Martelo é imagem do falso testemunho."
+   },
+   "hint": "Objeto do verbo quebranta.",
+   "learningObjective": "Lembrar o efeito da língua branda.",
+   "evidence": [
+    "Provérbios 25:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 25:11 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 25:11",
+   "passageA": {
+    "ref": "Provérbios 25:11",
+    "text": "a palavra dita a seu tempo"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Palavra no tempo certo desarma e edifica."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra sem hora"
+    },
+    {
+     "id": "b",
+     "text": "Tempo torna preciosa"
+    },
+    {
+     "id": "c",
+     "text": "Ouro sem sentido"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "a palavra dita a seu tempo",
+   "feedbackCorrect": "O tempo certo liga o verso ao valor da palavra.",
+   "feedbackWrong": {
+    "a": "O texto exige o tempo certo.",
+    "c": "A imagem aponta valor real."
+   },
+   "hint": "Pense no papel do tempo.",
+   "learningObjective": "Ligar 25:11 ao tempo certo.",
+   "evidence": [
+    "Provérbios 25:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 25:22, o bem ao inimigo resulta em brasas e na recompensa do Senhor.",
+   "verseRef": "Provérbios 25:22",
+   "correctOptionId": "true",
+   "evidenceSpan": "o Senhor te recompensará",
+   "feedbackCorrect": "\"Pois assim\" liga o pão às brasas e à recompensa.",
+   "feedbackWrong": {
+    "false": "Releia 25:22: o Senhor te recompensará."
+   },
+   "hint": "Veja Pois e o resultado.",
+   "learningObjective": "Compreender o resultado do bem.",
+   "evidence": [
+    "Provérbios 25:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 25:22, toque a palavra que marca o resultado do bem.",
+   "verseRef": "Provérbios 25:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pois"
+    },
+    {
+     "id": "b",
+     "text": "brasas"
+    },
+    {
+     "id": "c",
+     "text": "Senhor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pois assim amontoarás brasas vivas",
+   "feedbackCorrect": "\"Pois\" introduz o resultado.",
+   "feedbackWrong": {
+    "b": "Brasas são o efeito descrito.",
+    "c": "Senhor é quem recompensa."
+   },
+   "hint": "Palavra que abre o versículo.",
+   "learningObjective": "Reconhecer o marcador de resultado.",
+   "evidence": [
+    "Provérbios 25:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 25:21–22 estabelece com o inimigo?",
+   "verseRef": "Provérbios 25:21–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Bem ao inimigo leva a brasas e recompensa"
+    },
+    {
+     "id": "b",
+     "text": "Fome do inimigo deve ser explorada"
+    },
+    {
+     "id": "c",
+     "text": "Água ao inimigo cancela a recompensa"
+    },
+    {
+     "id": "d",
+     "text": "Brasas significam vingança pessoal"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Senhor te recompensará",
+   "feedbackCorrect": "Dar pão e água desemboca nas brasas e na recompensa do Senhor.",
+   "feedbackWrong": {
+    "b": "O texto manda alimentar, não explorar.",
+    "c": "Água faz parte do bem.",
+    "d": "Quem recompensa é o Senhor."
+   },
+   "hint": "Una o pão ao Pois assim.",
+   "learningObjective": "Relacionar bem e resultado.",
+   "evidence": [
+    "Provérbios 25:21",
+    "Provérbios 25:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o ensino em Provérbios 25:11–22?",
+   "verseRef": "Provérbios 25:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra e correção preciosas"
+    },
+    {
+     "id": "b",
+     "text": "Língua branda e limites"
+    },
+    {
+     "id": "c",
+     "text": "Bem ao inimigo e recompensa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a palavra dita a seu tempo",
+   "feedbackCorrect": "Da palavra preciosa ao bem que o Senhor recompensa.",
+   "feedbackWrong": {
+    "default": "Comece pela palavra a tempo."
+   },
+   "hint": "O fim fala de pão e recompensa.",
+   "learningObjective": "Compreender o movimento do trecho.",
+   "evidence": [
+    "Provérbios 25:11",
+    "Provérbios 25:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 25:22, o Senhor te quê?",
+   "verseRef": "Provérbios 25:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "recompensará"
+    },
+    {
+     "id": "b",
+     "text": "esquecerá"
+    },
+    {
+     "id": "c",
+     "text": "condenará"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Senhor te recompensará",
+   "feedbackCorrect": "O Senhor te recompensará.",
+   "feedbackWrong": {
+    "b": "Não esquece; recompensa.",
+    "c": "Não condena; recompensa."
+   },
+   "hint": "Verbo final do versículo.",
+   "learningObjective": "Lembrar a recompensa do Senhor.",
+   "evidence": [
+    "Provérbios 25:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 25:21 a Romanos 12:20?",
+   "verseRef": "Provérbios 25:21",
+   "passageA": {
+    "ref": "Provérbios 25:21",
+    "text": "dá-lhe pão para comer"
+   },
+   "passageB": {
+    "ref": "Romanos 12:20"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pão e água ao inimigo"
+    },
+    {
+     "id": "b",
+     "text": "Vingança imediata"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio absoluto"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "dá-lhe pão para comer",
+   "feedbackCorrect": "Paulo cita o mesmo gesto de alimentar o inimigo.",
+   "feedbackWrong": {
+    "b": "O texto aponta bem, não vingança própria.",
+    "c": "Há ação: dar pão e água."
+   },
+   "hint": "Compare o gesto com o inimigo.",
+   "learningObjective": "Cruzar o bem ao inimigo.",
+   "evidence": [
+    "Provérbios 25:21",
+    "Romanos 12:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 25:11, qualquer frase vale ouro, mesmo dita fora de hora.",
+   "verseRef": "Provérbios 25:11",
+   "correctOptionId": "false",
+   "evidenceSpan": "a palavra dita a seu tempo",
+   "feedbackCorrect": "O valor está na palavra a seu tempo, não em qualquer hora.",
+   "feedbackWrong": {
+    "true": "Releia 25:11: a seu tempo."
+   },
+   "hint": "Veja a condição da imagem.",
+   "learningObjective": "Corrigir a leitura sem tempo.",
+   "evidence": [
+    "Provérbios 25:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 25:15, toque o trecho que sustenta o poder da brandura.",
+   "verseRef": "Provérbios 25:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "quebranta os ossos"
+    },
+    {
+     "id": "b",
+     "text": "príncipe"
+    },
+    {
+     "id": "c",
+     "text": "longanimidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a língua branda quebranta os ossos",
+   "feedbackCorrect": "A língua branda quebranta os ossos.",
+   "feedbackWrong": {
+    "b": "O príncipe é persuadido pela longanimidade.",
+    "c": "Longanimidade persuade; o toque pede o efeito da língua."
+   },
+   "hint": "Efeito atribuído à língua branda.",
+   "learningObjective": "Sustentar a leitura da brandura.",
+   "evidence": [
+    "Provérbios 25:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 25:11–15 e 21–22 sustenta?",
+   "verseRef": "Provérbios 25:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra a tempo e bem ao inimigo desarmam"
+    },
+    {
+     "id": "b",
+     "text": "Só força bruta persuade o príncipe"
+    },
+    {
+     "id": "c",
+     "text": "Ignorar o inimigo faminto é sabedoria"
+    },
+    {
+     "id": "d",
+     "text": "Falso testemunho edifica o próximo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a palavra dita a seu tempo",
+   "feedbackCorrect": "Tempo certo, língua branda e pão ao inimigo formam a sabedoria que desarma.",
+   "feedbackWrong": {
+    "b": "25:15 aponta longanimidade e língua branda.",
+    "c": "25:21 manda dar pão.",
+    "d": "25:18 condena o falso testemunho."
+   },
+   "hint": "Una tempo, brandura e pão.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 25:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da palavra que desarma?",
+   "verseRef": "Provérbios 25:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra dita a seu tempo"
+    },
+    {
+     "id": "b",
+     "text": "Paulo manda pão ao inimigo"
+    },
+    {
+     "id": "c",
+     "text": "Resposta branda desvia a ira"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a palavra dita a seu tempo",
+   "feedbackCorrect": "Da palavra a tempo ao bem em Romanos e à resposta branda.",
+   "feedbackWrong": {
+    "default": "Comece por 25:11."
+   },
+   "hint": "De Provérbios ao eco e à brandura.",
+   "learningObjective": "Ver o tema atravessar a Bíblia.",
+   "evidence": [
+    "Provérbios 25:11",
+    "Romanos 12:20",
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 25:15, com o quê se persuade o príncipe?",
+   "verseRef": "Provérbios 25:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "longanimidade"
+    },
+    {
+     "id": "b",
+     "text": "pressa"
+    },
+    {
+     "id": "c",
+     "text": "grito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Com a longanimidade se persuade o príncipe",
+   "feedbackCorrect": "O termo é longanimidade.",
+   "feedbackWrong": {
+    "b": "Não é pressa; é longanimidade.",
+    "c": "Não é grito; é longanimidade."
+   },
+   "hint": "Meio pelo qual se persuade.",
+   "learningObjective": "Lembrar o termo da persuasão.",
+   "evidence": [
+    "Provérbios 25:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 25:15 a Provérbios 15:1?",
+   "verseRef": "Provérbios 25:15",
+   "passageA": {
+    "ref": "Provérbios 25:15",
+    "text": "a língua branda quebranta os ossos"
+   },
+   "passageB": {
+    "ref": "Provérbios 15:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Resposta branda desvia a ira"
+    },
+    {
+     "id": "b",
+     "text": "Grito quebra ossos"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio sempre pior"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a língua branda quebranta os ossos",
+   "feedbackCorrect": "Nos dois textos a brandura tem força real.",
+   "feedbackWrong": {
+    "b": "É a língua branda, não o grito.",
+    "c": "A brandura age, não o silêncio vazio."
+   },
+   "hint": "Compare o papel da brandura.",
+   "learningObjective": "Ligar língua branda à resposta branda.",
+   "evidence": [
+    "Provérbios 25:15",
+    "Provérbios 15:1"
+   ]
+  }
+ ]
+}

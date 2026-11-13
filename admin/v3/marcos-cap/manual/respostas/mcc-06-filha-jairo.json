@@ -1,0 +1,721 @@
+{
+  "study": {
+    "passageRef": "Marcos 5:35–40",
+    "passages": [
+      {
+        "ref": "Marcos 5:35–40"
+      },
+      {
+        "ref": "Marcos 5:41–43"
+      }
+    ],
+    "context": "Jairo havia procurado Jesus porque sua filha estava à beira da morte. Enquanto Jesus ainda falava com outra pessoa, chegam mensageiros trazendo a notícia de que a menina morreu.",
+    "keyword": "Crer",
+    "keywordGloss": "No momento em que a notícia parece encerrar toda esperança, Jesus chama Jairo a confiar nele.",
+    "focusQuestion": "Quando uma notícia parece acabar com suas esperanças, o que significa continuar confiando em Jesus?",
+    "reflectionPrompts": [
+      "A notícia inesperada",
+      "Confiar sem ver saída",
+      "A autoridade de Jesus"
+    ],
+    "facts": [
+      {
+        "text": "Os mensageiros informaram que a filha de Jairo havia morrido.",
+        "evidenceRef": "Marcos 5:35",
+        "evidenceSpan": "Sua filha já morreu"
+      },
+      {
+        "text": "Jesus ouviu a notícia e orientou Jairo a não temer e crer.",
+        "evidenceRef": "Marcos 5:36",
+        "evidenceSpan": "Não temas, crê somente"
+      },
+      {
+        "text": "Jesus permitiu que apenas Pedro, Tiago e João o acompanhassem.",
+        "evidenceRef": "Marcos 5:37",
+        "evidenceSpan": "exceto Pedro, Tiago e João, irmão de Tiago"
+      },
+      {
+        "text": "Na casa, Jesus encontrou pessoas chorando e lamentando.",
+        "evidenceRef": "Marcos 5:38",
+        "evidenceSpan": "aqueles que choravam e os que pranteavam muito"
+      },
+      {
+        "text": "As pessoas riram de Jesus quando ele falou sobre a menina.",
+        "evidenceRef": "Marcos 5:40",
+        "evidenceSpan": "E riam-se dele"
+      },
+      {
+        "text": "Jesus tomou a menina pela mão e ordenou que se levantasse.",
+        "evidenceRef": "Marcos 5:41",
+        "evidenceSpan": "tomando pela mão a menina"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "crê",
+        "gloss": "Chamado de Jesus à confiança de Jairo mesmo diante da notícia da morte."
+      },
+      {
+        "term": "levanta-te",
+        "gloss": "Ordem de Jesus à menina, demonstrando sua autoridade sobre a morte."
+      },
+      {
+        "term": "admirados",
+        "gloss": "Reação de todos diante do que aconteceu quando a menina se levantou."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A notícia da morte interrompe o caminho",
+        "evidenceRef": "Marcos 5:35"
+      },
+      {
+        "label": "Jesus chama Jairo à confiança",
+        "evidenceRef": "Marcos 5:36"
+      },
+      {
+        "label": "Jesus entra na casa em meio ao lamento",
+        "evidenceRef": "Marcos 5:38–40"
+      },
+      {
+        "label": "Jesus levanta a menina e orienta a família",
+        "evidenceRef": "Marcos 5:41–43"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Enquanto Jesus ainda falava, os mensageiros chegaram com a notícia da morte.",
+        "marker": "Enquanto",
+        "evidenceRef": "Marcos 5:35"
+      },
+      {
+        "kind": "contraste",
+        "text": "A notícia dos mensageiros desencoraja a esperança, mas Jesus responde chamando Jairo à confiança.",
+        "marker": null,
+        "evidenceRef": "Marcos 5:36"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois da ordem de Jesus, a menina se levantou e começou a andar.",
+        "marker": "imediatamente",
+        "evidenceRef": "Marcos 5:42"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 11:25",
+        "bridge": "Jesus tem autoridade sobre a morte"
+      },
+      {
+        "ref": "Lucas 8:50",
+        "bridge": "Não temer, mas crer"
+      },
+      {
+        "ref": "1 Coríntios 15:54–55",
+        "bridge": "Vitória sobre a morte"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus afirma que a menina estava apenas dormindo no sentido comum, sem ter morrido.",
+        "why": "Os mensageiros anunciam sua morte, e a reação de riso mostra que os presentes não entenderam a fala de Jesus como uma descrição comum do sono."
+      },
+      {
+        "text": "A fé de Jairo foi uma garantia de que nada difícil aconteceria.",
+        "why": "A notícia da morte chega mesmo depois de Jairo procurar Jesus; o chamado à fé acontece justamente diante dessa notícia."
+      },
+      {
+        "text": "A ressurreição da menina foi apenas uma experiência espiritual, sem mudança física.",
+        "why": "O relato diz que ela se levantou, começou a andar e recebeu a orientação de que lhe dessem de comer."
+      }
+    ],
+    "centralInsight": "Quando a notícia diz “acabou”, Jesus diz: “Não tenha medo; somente creia.”",
+    "anchorQuestion": "O que Jesus disse a Jairo quando recebeu a notícia de que sua filha havia morrido?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Marcos 5:35, os mensageiros chegaram dizendo que a filha de Jairo já havia morrido.",
+      "verseRef": "Marcos 5:35",
+      "correctOptionId": "true",
+      "evidenceSpan": "Sua filha já morreu",
+      "feedbackCorrect": "Os mensageiros comunicam diretamente a morte da menina.",
+      "feedbackWrong": {
+        "false": "O anúncio dos que vieram da casa de Jairo é justamente que a menina morreu."
+      },
+      "hint": "Observe o que os mensageiros dizem ao chegar.",
+      "learningObjective": "Identificar a notícia que chega enquanto Jesus ainda falava.",
+      "evidence": [
+        "Marcos 5:35"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Marcos 5:36, toque a quem Jesus disse para não temer.",
+      "verseRef": "Marcos 5:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus"
+        },
+        {
+          "id": "b",
+          "text": "chefe da sinagoga"
+        },
+        {
+          "id": "c",
+          "text": "Não temas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse ao chefe da sinagoga",
+      "feedbackCorrect": "Jesus dirige essas palavras ao pai da menina, Jairo.",
+      "feedbackWrong": {
+        "a": "Jesus é quem fala; procure a quem ele se dirige.",
+        "c": "\"Não temas\" é o que Jesus diz, não a quem diz."
+      },
+      "hint": "Procure a pessoa a quem Jesus dirige suas palavras.",
+      "learningObjective": "Identificar o destinatário da orientação de Jesus.",
+      "evidence": [
+        "Marcos 5:36"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Quem Jesus permitiu que o acompanhasse até a casa de Jairo?",
+      "verseRef": "Marcos 5:37",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todos os discípulos que estavam por perto"
+        },
+        {
+          "id": "b",
+          "text": "Pedro, Tiago e João"
+        },
+        {
+          "id": "c",
+          "text": "Apenas Jairo e os mensageiros"
+        },
+        {
+          "id": "d",
+          "text": "Os que estavam chorando na casa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "exceto Pedro, Tiago e João, irmão de Tiago",
+      "feedbackCorrect": "O relato destaca três discípulos que acompanharam Jesus.",
+      "feedbackWrong": {
+        "a": "Jesus não permitiu que todos o acompanhassem; o texto nomeia três.",
+        "c": "Jairo não é apresentado como o único acompanhante além dos mensageiros.",
+        "d": "Os que choravam estavam na casa, não foram escolhidos como acompanhantes."
+      },
+      "hint": "Observe os nomes mencionados no fim do versículo.",
+      "learningObjective": "Reconhecer quem acompanhou Jesus até a casa.",
+      "evidence": [
+        "Marcos 5:37"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Marcos 5:35 na ordem em que a notícia é apresentada.",
+      "verseRef": "Marcos 5:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enquanto ele ainda falava"
+        },
+        {
+          "id": "b",
+          "text": "alguns da casa do chefe da sinagoga chegaram"
+        },
+        {
+          "id": "c",
+          "text": "dizendo: Sua filha já morreu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Enquanto ele ainda falava",
+      "feedbackCorrect": "A fala de Jesus ainda acontecia quando os mensageiros chegaram e deram a notícia.",
+      "feedbackWrong": {
+        "default": "Comece com Jesus ainda falando; depois chegam os mensageiros e anunciam a morte."
+      },
+      "hint": "Observe como o versículo começa e o que acontece em seguida.",
+      "learningObjective": "Reconhecer a sequência dos acontecimentos em Marcos 5:35.",
+      "evidence": [
+        "Marcos 5:35"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Marcos 5:37, Jesus permitiu que o acompanhassem Pedro, Tiago e ___.",
+      "verseRef": "Marcos 5:37",
+      "options": [
+        {
+          "id": "a",
+          "text": "André"
+        },
+        {
+          "id": "b",
+          "text": "João"
+        },
+        {
+          "id": "c",
+          "text": "Filipe"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Pedro, Tiago e João",
+      "feedbackCorrect": "João é o terceiro discípulo citado entre os acompanhantes.",
+      "feedbackWrong": {
+        "a": "André não aparece na lista de acompanhantes deste versículo.",
+        "c": "Filipe não é mencionado entre os três escolhidos."
+      },
+      "hint": "Confira a lista dos três discípulos no versículo.",
+      "learningObjective": "Recordar os nomes dos discípulos que acompanharam Jesus.",
+      "evidence": [
+        "Marcos 5:37"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Marcos 5:35 comunica que se liga a este contexto?",
+      "verseRef": "Marcos 5:35",
+      "passageA": {
+        "ref": "Marcos 5:35"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jairo havia procurado Jesus porque sua filha estava à beira da morte."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A notícia da morte"
+        },
+        {
+          "id": "b",
+          "text": "A escolha dos discípulos"
+        },
+        {
+          "id": "c",
+          "text": "A chegada à casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sua filha já morreu",
+      "feedbackCorrect": "A notícia recebida por Jairo confirma a gravidade da situação da filha.",
+      "feedbackWrong": {
+        "b": "A escolha dos acompanhantes acontece depois, em outro movimento da narrativa.",
+        "c": "A chegada à casa é narrada nos versículos seguintes."
+      },
+      "hint": "Observe o que os mensageiros comunicam ao pai.",
+      "learningObjective": "Relacionar a notícia recebida com a situação que levou Jairo a procurar Jesus.",
+      "evidence": [
+        "Marcos 5:35"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Marcos 5:35–36, a notícia da morte da menina leva Jesus a interromper o caminho e voltar para casa.",
+      "verseRef": "Marcos 5:35–36",
+      "correctOptionId": "false",
+      "evidenceSpan": "disse ao chefe da sinagoga: Não temas, crê somente",
+      "feedbackCorrect": "Jesus responde à notícia encorajando Jairo; não há relato de que tenha voltado atrás.",
+      "feedbackWrong": {
+        "true": "O texto registra uma orientação de Jesus a Jairo, não uma mudança de direção."
+      },
+      "hint": "Veja qual é a reação de Jesus ao ouvir a notícia.",
+      "learningObjective": "Compreender a resposta de Jesus diante da notícia da morte.",
+      "evidence": [
+        "Marcos 5:35–36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Marcos 5:36, toque a palavra que expressa a orientação de Jesus diante da notícia.",
+      "verseRef": "Marcos 5:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "somente"
+        },
+        {
+          "id": "b",
+          "text": "crê"
+        },
+        {
+          "id": "c",
+          "text": "ouvir"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não temas, crê somente",
+      "feedbackCorrect": "O verbo resume a orientação de Jesus a Jairo diante da notícia.",
+      "feedbackWrong": {
+        "a": "A palavra limita a orientação, mas não expressa a ação principal.",
+        "c": "Ouvir aparece na narração, mas não é a orientação dada por Jesus."
+      },
+      "hint": "Procure o verbo que expressa a resposta esperada de Jairo.",
+      "learningObjective": "Reconhecer a ação que Jesus pede a Jairo diante da notícia.",
+      "evidence": [
+        "Marcos 5:36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como a fala de Jesus em Marcos 5:36 se relaciona com a notícia de Marcos 5:35?",
+      "verseRef": "Marcos 5:35–36",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus responde ao desespero com um chamado à confiança."
+        },
+        {
+          "id": "b",
+          "text": "Jesus confirma que não há mais nada a fazer."
+        },
+        {
+          "id": "c",
+          "text": "Jesus responsabiliza Jairo pela morte da menina."
+        },
+        {
+          "id": "d",
+          "text": "Jesus manda os mensageiros voltarem sem ele."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não temas, crê somente",
+      "feedbackCorrect": "Diante da notícia que parece encerrar a esperança, Jesus chama Jairo a crer.",
+      "feedbackWrong": {
+        "b": "Jesus não encerra a possibilidade de agir; chama Jairo à confiança.",
+        "c": "Não há acusação contra Jairo no que Jesus diz.",
+        "d": "O texto não registra essa ordem aos mensageiros."
+      },
+      "hint": "Compare o anúncio dos mensageiros com a resposta de Jesus.",
+      "learningObjective": "Compreender o contraste entre a notícia recebida e a resposta de Jesus.",
+      "evidence": [
+        "Marcos 5:35",
+        "Marcos 5:36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança desde a chegada dos mensageiros até a entrada na casa?",
+      "verseRef": "Marcos 5:35–38",
+      "options": [
+        {
+          "id": "a",
+          "text": "A notícia da morte interrompe a conversa"
+        },
+        {
+          "id": "b",
+          "text": "Jesus chama Jairo à confiança"
+        },
+        {
+          "id": "c",
+          "text": "Jesus chega à casa e encontra o lamento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ao chegarem à casa do chefe da sinagoga",
+      "feedbackCorrect": "A notícia chega, Jesus orienta Jairo e, depois, eles encontram o lamento na casa.",
+      "feedbackWrong": {
+        "default": "Siga o caminho narrativo: notícia, resposta de Jesus e chegada à casa."
+      },
+      "hint": "A chegada à casa acontece depois da conversa com Jairo.",
+      "learningObjective": "Compreender a progressão da narrativa após a notícia da morte.",
+      "evidence": [
+        "Marcos 5:35",
+        "Marcos 5:36",
+        "Marcos 5:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Marcos 5:42, a menina se levantou e começou a ___ imediatamente.",
+      "verseRef": "Marcos 5:42",
+      "options": [
+        {
+          "id": "a",
+          "text": "andar"
+        },
+        {
+          "id": "b",
+          "text": "cantar"
+        },
+        {
+          "id": "c",
+          "text": "correr"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "começou a andar",
+      "feedbackCorrect": "O relato destaca que a menina voltou a andar logo depois de se levantar.",
+      "feedbackWrong": {
+        "b": "O texto não menciona que ela começou a cantar.",
+        "c": "A ação descrita é andar, não correr."
+      },
+      "hint": "Observe o que ela fez depois de se levantar.",
+      "learningObjective": "Recordar a ação da menina após a ordem de Jesus.",
+      "evidence": [
+        "Marcos 5:42"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Marcos 5:36 a Lucas 8:50?",
+      "verseRef": "Marcos 5:36",
+      "passageA": {
+        "ref": "Marcos 5:36"
+      },
+      "passageB": {
+        "ref": "Lucas 8:50"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A confiança diante da notícia"
+        },
+        {
+          "id": "b",
+          "text": "A escolha dos acompanhantes"
+        },
+        {
+          "id": "c",
+          "text": "O alimento após a cura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não temas, crê somente",
+      "feedbackCorrect": "Nos dois relatos, Jesus chama Jairo a não temer e a crer.",
+      "feedbackWrong": {
+        "b": "A escolha dos acompanhantes não é o tema ligado nesses versículos.",
+        "c": "A orientação sobre o alimento aparece no fim do relato de Marcos."
+      },
+      "hint": "Compare o que Jesus diz a Jairo nos dois relatos.",
+      "learningObjective": "Relacionar os relatos de Marcos e Lucas pelo chamado de Jesus à fé.",
+      "evidence": [
+        "Marcos 5:36",
+        "Lucas 8:50"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Marcos 5:39, Jesus explica que a menina não estava morta, mas apenas dormindo no sentido comum da palavra.",
+      "verseRef": "Marcos 5:39",
+      "correctOptionId": "false",
+      "evidenceSpan": "A menina não está morta, mas dorme",
+      "feedbackCorrect": "A narrativa apresenta a morte como real; a fala de Jesus aponta para o que ele está prestes a fazer.",
+      "feedbackWrong": {
+        "true": "Os mensageiros já anunciaram a morte, e a reação dos presentes reforça a gravidade da situação."
+      },
+      "hint": "Leia a fala de Jesus junto com o anúncio dos mensageiros.",
+      "learningObjective": "Interpretar a fala de Jesus à luz do contexto da narrativa.",
+      "evidence": [
+        "Marcos 5:35",
+        "Marcos 5:39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Marcos 5:41, toque o trecho que mostra a autoridade de Jesus ao falar com a menina.",
+      "verseRef": "Marcos 5:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "pela mão"
+        },
+        {
+          "id": "b",
+          "text": "Talita cumi"
+        },
+        {
+          "id": "c",
+          "text": "Menininha"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Talita cumi! — que, traduzido, significa: Menininha, eu te ordeno, levanta-te",
+      "feedbackCorrect": "A expressão é traduzida como uma ordem direta para que a menina se levante.",
+      "feedbackWrong": {
+        "a": "O gesto de tomar pela mão acompanha a ordem, mas não é a fala de autoridade.",
+        "c": "A palavra faz parte da tradução, mas não é a expressão original destacada."
+      },
+      "hint": "Procure as palavras pronunciadas por Jesus antes da tradução.",
+      "learningObjective": "Identificar a fala de Jesus que ordena à menina que se levante.",
+      "evidence": [
+        "Marcos 5:41"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual interpretação melhor explica a reação das pessoas quando Jesus fala sobre a menina?",
+      "verseRef": "Marcos 5:39–40",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elas não compreendem o que Jesus está prestes a realizar."
+        },
+        {
+          "id": "b",
+          "text": "Elas já sabem que a menina voltará a viver."
+        },
+        {
+          "id": "c",
+          "text": "Elas acreditam que a menina está apenas descansando."
+        },
+        {
+          "id": "d",
+          "text": "Elas estão rindo porque Jesus desistiu de ajudar."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E riam-se dele",
+      "feedbackCorrect": "O riso revela que os presentes não reconhecem o que Jesus está prestes a fazer.",
+      "feedbackWrong": {
+        "b": "O texto não mostra que as pessoas esperavam a menina voltar a viver.",
+        "c": "O riso indica que não aceitaram a fala de Jesus como uma explicação comum.",
+        "d": "Jesus não desiste; ele continua e entra onde a menina estava."
+      },
+      "hint": "Considere a reação das pessoas diante da fala de Jesus.",
+      "learningObjective": "Interpretar a reação dos presentes diante da autoridade de Jesus.",
+      "evidence": [
+        "Marcos 5:39",
+        "Marcos 5:40"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra como a autoridade de Jesus se manifesta na casa de Jairo?",
+      "verseRef": "Marcos 5:40–42",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus afasta os que zombam dele"
+        },
+        {
+          "id": "b",
+          "text": "Jesus toma a menina pela mão e ordena que se levante"
+        },
+        {
+          "id": "c",
+          "text": "A menina se levanta e começa a andar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "imediatamente, a menina se levantou",
+      "feedbackCorrect": "Jesus prepara o ambiente, dá a ordem e a menina se levanta imediatamente.",
+      "feedbackWrong": {
+        "default": "A ordem de Jesus vem antes de a menina se levantar."
+      },
+      "hint": "Observe o que Jesus faz antes de falar com a menina e o que acontece depois.",
+      "learningObjective": "Interpretar a sequência que demonstra a autoridade de Jesus sobre a morte.",
+      "evidence": [
+        "Marcos 5:40",
+        "Marcos 5:41",
+        "Marcos 5:42"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Marcos 5:41, Jesus ordena à menina que ___.",
+      "verseRef": "Marcos 5:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "levanta-te"
+        },
+        {
+          "id": "b",
+          "text": "aproxima-te"
+        },
+        {
+          "id": "c",
+          "text": "esconde-te"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te ordeno, levanta-te",
+      "feedbackCorrect": "A ordem de Jesus é para que a menina se levante, e ela obedece imediatamente.",
+      "feedbackWrong": {
+        "b": "Jesus não pede que ela se aproxime; ela está deitada.",
+        "c": "Não há ordem para que a menina se esconda."
+      },
+      "hint": "Observe o verbo final da fala de Jesus.",
+      "learningObjective": "Recordar a ordem que expressa a autoridade de Jesus sobre a morte.",
+      "evidence": [
+        "Marcos 5:41"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Marcos 5:41 a João 11:25?",
+      "verseRef": "Marcos 5:41",
+      "passageA": {
+        "ref": "Marcos 5:41"
+      },
+      "passageB": {
+        "ref": "João 11:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus, ressurreição e vida"
+        },
+        {
+          "id": "b",
+          "text": "A menina recebe alimento"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos acompanham Jesus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te ordeno, levanta-te",
+      "feedbackCorrect": "A ordem à menina revela a autoridade de Jesus sobre a morte, tema declarado em João.",
+      "feedbackWrong": {
+        "b": "O alimento aparece depois, mas não é o tema de João 11:25.",
+        "c": "O acompanhamento dos discípulos não expressa a ligação central entre os textos."
+      },
+      "hint": "Compare a ordem de Jesus com o que ele declara sobre si mesmo.",
+      "learningObjective": "Relacionar a ação de Jesus em Marcos com sua declaração sobre a ressurreição e a vida.",
+      "evidence": [
+        "Marcos 5:41",
+        "João 11:25"
+      ]
+    }
+  ]
+}

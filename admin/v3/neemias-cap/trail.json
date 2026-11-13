@@ -1,0 +1,183 @@
+{
+  "slug": "neemias-cap",
+  "title": "Neemias",
+  "description": "Neemias capítulo a capítulo: muros, oposição, Lei e um povo que se renova.",
+  "icon": "🛡️",
+  "color": "#6A8E5A",
+  "order": 17,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "O muro sob oposição · cap. 1–6",
+      "icon": "zap",
+      "section": "Neemias",
+      "missions": [
+        {
+          "slug": "nec-01-vamos-edificar",
+          "title": "Vamos edificar",
+          "subtitle": "Neemias 2:11–20",
+          "intro": "Neemias inspeciona os muros de noite e chama o povo à obra.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 2:11–20",
+          "hookVerse": "Cheguei a Jerusalém, onde permaneci por três dias. E à noite levantei-me, acompanhado de alguns homens; não revelei a ninguém o que o meu Deus havia colocado em meu coração para fazer em Jerusalém. Não havia comigo nenhum animal, exceto aquele em que eu montava.",
+          "hookNote": "A boa mão do meu Deus está sobre mim: levantemo-nos e edifiquemos.",
+          "centralInsight": "A boa mão do meu Deus está sobre mim: levantemo-nos e edifiquemos.",
+          "objective": "Levantar-se para edificar"
+        },
+        {
+          "slug": "nec-02-edificam-apesar-do-escarnio",
+          "title": "Edificam apesar do escárnio",
+          "subtitle": "Neemias 4:1–6",
+          "intro": "Sambalate e Tobias zombam; o povo continua a obra com o coração disposto.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 4:1–6",
+          "hookVerse": "E aconteceu que, ao ouvir Sanballate que estávamos edificando o muro, ficou furioso e se indignou bastante; e zombou dos judeus. E falou na presença de seus irmãos e do exército de Samaria, e disse: O que fazem esses fracos judeus? Conseguirão fazer isso? Sacrificarão? Completarão a obra em um só dia? Renascerão, acaso, das pedras queimadas os montões de pó?",
+          "hookNote": "Zombam do muro fraco, mas o povo tem ânimo para trabalhar e o muro se fecha.",
+          "centralInsight": "Zombam do muro fraco, mas o povo tem ânimo para trabalhar e o muro se fecha.",
+          "objective": "Trabalhar sob zombaria"
+        },
+        {
+          "slug": "nec-03-basta-de-usura",
+          "title": "Basta de usura",
+          "subtitle": "Neemias 5:6–13",
+          "intro": "Neemias se ira contra os nobres que exploram os irmãos pobres.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 5:6–13",
+          "hookVerse": "Ouvindo eu, portanto, o seu clamor e estas palavras, fiquei muito aborrecido. E refleti em meu coração após isso; confrontei os nobres e os magistrados, e lhes disse: \"Vocês estão cobrando juros de cada um de seus irmãos.\" E convoquei contra eles um grande ajuntamento.",
+          "hookNote": "Deixai a usura: restituí campos e casas; o povo diz amém e louva o Senhor.",
+          "centralInsight": "Deixai a usura: restituí campos e casas; o povo diz amém e louva o Senhor.",
+          "objective": "Fazer justiça ao irmão"
+        },
+        {
+          "slug": "nec-04-intrigas-no-caminho",
+          "title": "Intrigas no caminho",
+          "subtitle": "Neemias 6:1–9",
+          "intro": "Inimigos chamam Neemias para se encontrar; ele percebe que querem fazer-lhe mal.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 6:1–9",
+          "hookVerse": "Sucedendo isso, ao ouvirem Sambalate, Tobias, Gesém, o árabe e o restante de nossos inimigos que eu havia edificado o muro e que nele já não havia brecha alguma, embora até aquele momento eu ainda não tivesse colocado as portas nos portais; Sambalate e Gesém enviaram uma mensagem dizendo: \"Vem, encontra-te conosco nas aldeias do vale de Ono.\" Contudo, eles pretendiam me fazer mal.",
+          "hookNote": "Estou fazendo uma grande obra: não posso descer. Ó Deus, fortalece as minhas mãos.",
+          "centralInsight": "Estou fazendo uma grande obra: não posso descer. Ó Deus, fortalece as minhas mãos.",
+          "objective": "Não descer da obra"
+        },
+        {
+          "slug": "nec-boss-1",
+          "title": "Travessia: O muro sob oposição",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a decisão de edificar, o escárnio, a justiça interna e as intrigas externas.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: O muro sob oposição",
+          "hookVerse": "Revise a decisão de edificar, o escárnio, a justiça interna e as intrigas externas.",
+          "hookNote": "Revise a decisão de edificar, o escárnio, a justiça interna e as intrigas externas.",
+          "centralInsight": "A obra do Senhor avança com mão firme e coração justo",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Lei e renovação · cap. 7–13",
+      "icon": "zap",
+      "section": "Neemias",
+      "missions": [
+        {
+          "slug": "nec-05-deus-poe-no-coracao",
+          "title": "Deus põe no coração",
+          "subtitle": "Neemias 7:5–12",
+          "intro": "Deus move Neemias a reunir o povo e a registrar quem voltou do cativeiro.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 7:5–12",
+          "hookVerse": "Então, meu Deus colocou no meu coração que eu reunisse os nobres, os magistrados e o povo para registrar as genealogias. Encontrei o livro da genealogia dos que subiram primeiro, e nele estava escrito: Estes são os filhos da província que subiram do cativeiro, dentre os exilados que Nabucodonosor, rei da Babilônia, havia levado e voltaram para Jerusalém e para Judá, cada um para a sua cidade.",
+          "hookNote": "Meu Deus pôs no meu coração reunir o povo e achar o livro dos que subiram primeiro.",
+          "centralInsight": "Meu Deus pôs no meu coração reunir o povo e achar o livro dos que subiram primeiro.",
+          "objective": "Obedecer ao impulso de Deus"
+        },
+        {
+          "slug": "nec-06-tu-so-es-senhor",
+          "title": "Tu só és Senhor",
+          "subtitle": "Neemias 9:5–15",
+          "intro": "Depois da Lei, o povo confessa a história de Deus desde a criação até o deserto.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 9:5–15",
+          "hookVerse": "E os levitas, Jesua, Cadmiel, Bani, Hasabneias, Serebias, Hodias, Sebanias e Petaías disseram: \"Levantem-se e bendigam ao SENHOR, seu Deus, de eternidade a eternidade; e que o nome da sua glória seja exaltado acima de toda bênção e louvor.\" Somente Tu és SENHOR; Tu fizeste os céus, os céus dos céus e todo o seu exército; a terra e tudo o que nela há; os mares e tudo o que neles há, e Tu preservas a todos com vida; e o exército dos céus Te adora.",
+          "hookNote": "Tu só és Senhor: fizeste os céus e a terra e guiaste o povo com nuvem, fogo e maná.",
+          "centralInsight": "Tu só és Senhor: fizeste os céus e a terra e guiaste o povo com nuvem, fogo e maná.",
+          "objective": "Confessar quem Deus é"
+        },
+        {
+          "slug": "nec-07-pacto-por-escrito",
+          "title": "Pacto por escrito",
+          "subtitle": "Neemias 10:28–39",
+          "intro": "O povo se separa dos povos e jura andar na Lei do Senhor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 10:28–39",
+          "hookVerse": "E o restante do povo, os sacerdotes, os levitas, os porteiros, os cantores, os netineus, todos os que se separaram dos povos das terras para a Lei de Deus, suas mulheres, seus filhos e suas filhas, todos os que tinham sabedoria e entendimento. Os nobres entre eles se comprometeram firmemente estabelecendo um voto e um juramento de que seguiriam a Lei de Deus, a qual foi dada por intermédio de Moisés, servo de Deus, e que guardariam e cumpririam todos os mandamentos do Senhor, nosso Deus, assim como Seus juízos e Seus estatutos;",
+          "hookNote": "Entramos em juramento: não deixaremos a casa do nosso Deus.",
+          "centralInsight": "Entramos em juramento: não deixaremos a casa do nosso Deus.",
+          "objective": "Comprometer-se com a Lei"
+        },
+        {
+          "slug": "nec-08-dedicacao-com-alegria",
+          "title": "Dedicação com alegria",
+          "subtitle": "Neemias 12:27–36",
+          "intro": "Na dedicação dos muros, levitas e cantores se reúnem com júbilo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 12:27–36",
+          "hookVerse": "E na dedicação dos muros de Jerusalém, buscaram os levitas de todas as suas cidades para que se reunissem a fim de realizar a dedicação com alegria, louvores, cânticos, címbalos, alaúdes e harpas. E assim, os filhos dos cantores se reuniram, tanto da campina ao redor de Jerusalém quanto das aldeias dos netofatitas.",
+          "hookNote": "Buscaram os levitas para a dedicação com alegria, louvores e instrumentos.",
+          "centralInsight": "Buscaram os levitas para a dedicação com alegria, louvores e instrumentos.",
+          "objective": "Dedicar a obra com louvor"
+        },
+        {
+          "slug": "nec-09-guardar-o-sabado",
+          "title": "Guardar o sábado",
+          "subtitle": "Neemias 13:15–22",
+          "intro": "Neemias vê comércio no sábado e fecha as portas de Jerusalém.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Neemias 13:15–22",
+          "hookVerse": "Nos dias em que vi em Judá aqueles que pisavam lagares no sábado e traziam trigo carregado sobre os jumentos, além de vinho, uvas, figos e toda sorte de cargas, que levavam a Jerusalém no dia de sábado; protestei contra eles por venderem mantimentos naquele dia. Também havia tírios morando ali, que traziam peixes e toda sorte de mercadorias, e no sábado vendiam aos filhos de Judá em Jerusalém.",
+          "hookNote": "Santificai o dia de sábado: fechei as portas para que não haja carga no dia santo.",
+          "centralInsight": "Santificai o dia de sábado: fechei as portas para que não haja carga no dia santo.",
+          "objective": "Honrar o dia santo"
+        },
+        {
+          "slug": "nec-boss-2",
+          "title": "Travessia: Lei e renovação",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise o registro do povo, a confissão, o pacto, a dedicação e o cuidado com o sábado.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Lei e renovação",
+          "hookVerse": "Revise o registro do povo, a confissão, o pacto, a dedicação e o cuidado com o sábado.",
+          "hookNote": "Revise o registro do povo, a confissão, o pacto, a dedicação e o cuidado com o sábado.",
+          "centralInsight": "Muro pronto pede povo renovado na Lei e no culto",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

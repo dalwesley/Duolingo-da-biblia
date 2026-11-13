@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "1 Reis 2:1–4",
+    "passages": [
+      {
+        "ref": "1 Reis 2:1–12"
+      }
+    ],
+    "context": "Davi está perto da morte. Entrega a Salomão o trono com uma ordem clara: guardar os preceitos do Senhor para prosperar e manter a sucessão.",
+    "keyword": "preceitos",
+    "keywordGloss": "Os mandamentos do Senhor que Salomão deve guardar para andar nos caminhos de Deus.",
+    "focusQuestion": "Sua força começa na obediência ou na própria vontade?",
+    "reflectionPrompts": [
+      "Guarda os preceitos",
+      "Caminho e prosperidade",
+      "Trono confirmado"
+    ],
+    "facts": [
+      {
+        "text": "Davi deu instruções a Salomão perto da morte.",
+        "evidenceRef": "1 Reis 2:1",
+        "evidenceSpan": "deu instruções a seu filho Salomão"
+      },
+      {
+        "text": "Manda Salomão esforçar-se e ser homem.",
+        "evidenceRef": "1 Reis 2:2",
+        "evidenceSpan": "Esforça-te e sê homem!"
+      },
+      {
+        "text": "Deve guardar os preceitos do Senhor conforme a Lei de Moisés.",
+        "evidenceRef": "1 Reis 2:3",
+        "evidenceSpan": "guarda os preceitos do SENHOR, teu Deus"
+      },
+      {
+        "text": "A prosperidade depende de guardar os preceitos.",
+        "evidenceRef": "1 Reis 2:3",
+        "evidenceSpan": "para que prosperes em tudo o que fizeres"
+      },
+      {
+        "text": "Se os filhos guardarem o caminho, nunca faltará sucessor ao trono.",
+        "evidenceRef": "1 Reis 2:4",
+        "evidenceSpan": "nunca te faltará um sucessor ao trono de Israel"
+      },
+      {
+        "text": "Salomão se assentou no trono e o reino se fortificou.",
+        "evidenceRef": "1 Reis 2:12",
+        "evidenceSpan": "Salomão se assentou no trono de Davi, seu pai"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "preceitos",
+        "gloss": "Ordens do Senhor que Davi manda Salomão guardar."
+      },
+      {
+        "term": "prosperes",
+        "gloss": "Resultado prometido a quem anda nos caminhos do Senhor."
+      },
+      {
+        "term": "fidelidade",
+        "gloss": "Andar diante de Deus de todo o coração e de toda a alma."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Davi instrui Salomão perto da morte",
+        "evidenceRef": "1 Reis 2:1–2"
+      },
+      {
+        "label": "Ordem de guardar os preceitos",
+        "evidenceRef": "1 Reis 2:3–4"
+      },
+      {
+        "label": "Ordens sobre Joabe, Barzilai e Simei",
+        "evidenceRef": "1 Reis 2:5–9"
+      },
+      {
+        "label": "Morte de Davi e trono fortalecido",
+        "evidenceRef": "1 Reis 2:10–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Guardar os preceitos para prosperar em tudo.",
+        "marker": "para que",
+        "evidenceRef": "1 Reis 2:3"
+      },
+      {
+        "kind": "propósito",
+        "text": "Guardar o caminho para o Senhor confirmar a palavra sobre o trono.",
+        "marker": "Para que",
+        "evidenceRef": "1 Reis 2:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Benevolência a Barzilai; juízo a Joabe e Simei.",
+        "marker": "Entretanto",
+        "evidenceRef": "1 Reis 2:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 17:18–19",
+        "bridge": "Rei e a Lei"
+      },
+      {
+        "ref": "Josué 1:7–8",
+        "bridge": "Força na obediência"
+      },
+      {
+        "ref": "Salmos 1:1–3",
+        "bridge": "Prosperar na lei"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A força do rei vem só da espada, sem a lei.",
+        "why": "Davi liga esforço a guardar os preceitos do Senhor."
+      },
+      {
+        "text": "O trono permanece mesmo se os filhos abandonarem o caminho.",
+        "why": "A confirmação depende de guardarem o caminho com fidelidade."
+      },
+      {
+        "text": "Davi só fala de vingança e ignora a lei.",
+        "why": "O centro das instruções é guardar preceitos e prosperar."
+      }
+    ],
+    "centralInsight": "Força de rei começa na obediência: guardar a lei para prosperar no caminho.",
+    "anchorQuestion": "O que Davi manda Salomão guardar em 1 Reis 2:3?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 2 —3, Davi manda Salomão guardar os preceitos do Senhor.",
+      "verseRef": "1 Reis 2:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "guarda os preceitos do SENHOR, teu Deus",
+      "feedbackCorrect": "O centro da ordem é guardar os preceitos.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o verbo inicial.",
+      "learningObjective": "Observar a ordem de guardar.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 2:2, toque o que Davi pede a Salomão.",
+      "verseRef": "1 Reis 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "Esforça"
+        },
+        {
+          "id": "c",
+          "text": "estou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Esforça",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o esforço pedido.",
+      "evidence": [
+        "1 Reis 2:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 2:3, para que Salomão deve guardar os preceitos?",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que prospere em tudo o que fizer"
+        },
+        {
+          "id": "b",
+          "text": "Para abandonar a Lei de Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Para evitar o trono de Israel"
+        },
+        {
+          "id": "d",
+          "text": "Para servir só a Joabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que prosperes em tudo o que fizeres",
+      "feedbackCorrect": "Guardar leva a prosperar.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o para que.",
+      "learningObjective": "Notar o propósito da obediência.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 2:3 na ordem do texto.",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "E guarda os preceitos do SENHOR, teu Deus"
+        },
+        {
+          "id": "b",
+          "text": "para andares nos seus caminhos"
+        },
+        {
+          "id": "c",
+          "text": "para que prosperes em tudo o que fizeres"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "guarda os preceitos do SENHOR, teu Deus",
+      "feedbackCorrect": "Guardar, andar e prosperar.",
+      "feedbackWrong": {
+        "default": "Comece por guardar."
+      },
+      "hint": "O que abre o verso?",
+      "learningObjective": "Seguir a ordem do verso.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 2:3, complete: guarda os ___ do SENHOR.",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "preceitos"
+        },
+        {
+          "id": "b",
+          "text": "inimigos"
+        },
+        {
+          "id": "c",
+          "text": "tesouros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guarda os preceitos do SENHOR",
+      "feedbackCorrect": "Preceitos.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que deve guardar?",
+      "learningObjective": "Lembrar preceitos.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 2:3 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 2:3",
+      "passageA": {
+        "ref": "1 Reis 2:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Davi entrega o trono com ordem de obedecer ao Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Obediência para prosperar"
+        },
+        {
+          "id": "b",
+          "text": "Reino sem lei"
+        },
+        {
+          "id": "c",
+          "text": "Fuga da Lei de Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que prosperes em tudo o que fizeres",
+      "feedbackCorrect": "A força começa na obediência.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Ligue ordem e trono.",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 2 —4, o Senhor confirma a palavra mesmo se os filhos abandonarem o caminho.",
+      "verseRef": "1 Reis 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Se seus filhos guardarem o seu caminho",
+      "feedbackCorrect": "A confirmação depende de guardarem o caminho.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe a condição.",
+      "learningObjective": "Ver a condição do trono.",
+      "evidence": [
+        "1 Reis 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 2:3, toque o marcador de propósito da prosperidade.",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "guarda"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "guarda",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o propósito.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 2:3–4 liga obediência e trono?",
+      "verseRef": "1 Reis 2:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guardar o caminho confirma a palavra sobre o sucessor"
+        },
+        {
+          "id": "b",
+          "text": "O trono independe da fidelidade"
+        },
+        {
+          "id": "c",
+          "text": "Prosperar anula a Lei de Moisés"
+        },
+        {
+          "id": "d",
+          "text": "Só Joabe garante a sucessão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca te faltará um sucessor ao trono de Israel",
+      "feedbackCorrect": "Obediência e trono caminham juntos.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una os dois para que.",
+      "learningObjective": "Relacionar lei e trono.",
+      "evidence": [
+        "1 Reis 2:3–4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avançam as instruções de Davi?",
+      "verseRef": "1 Reis 2:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi instrui Salomão perto da morte"
+        },
+        {
+          "id": "b",
+          "text": "Ordem de guardar os preceitos"
+        },
+        {
+          "id": "c",
+          "text": "Morte de Davi e trono fortalecido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "deu instruções a seu filho Salomão",
+      "feedbackCorrect": "Instrução, lei e trono.",
+      "feedbackWrong": {
+        "default": "Comece pelas instruções."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "1 Reis 2:1",
+        "1 Reis 2:3",
+        "1 Reis 2:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 2:3, complete: ___ prosperes em tudo.",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "sem que"
+        },
+        {
+          "id": "c",
+          "text": "ainda que"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que prosperes em tudo o que fizeres",
+      "feedbackCorrect": "Para que marca o propósito.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Palavra do propósito.",
+      "learningObjective": "Lembrar para que.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 2:3 a Josué 1:7–8?",
+      "verseRef": "1 Reis 2:3",
+      "passageA": {
+        "ref": "1 Reis 2:3"
+      },
+      "passageB": {
+        "ref": "Josué 1:7–8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Força na obediência"
+        },
+        {
+          "id": "b",
+          "text": "Reino sem lei"
+        },
+        {
+          "id": "c",
+          "text": "Fuga da palavra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guarda os preceitos do SENHOR, teu Deus",
+      "feedbackCorrect": "Nos dois, força vem de guardar a lei.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a ordem.",
+      "learningObjective": "Ligar a Josué.",
+      "evidence": [
+        "1 Reis 2:3",
+        "Josué 1:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 2 —1–4, a força do novo rei começa na obediência aos preceitos do Senhor.",
+      "verseRef": "1 Reis 2:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "guarda os preceitos do SENHOR, teu Deus",
+      "feedbackCorrect": "Esforço e guarda da lei abrem o reinado.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Una versos 2 e 3.",
+      "learningObjective": "Interpretar a força do rei.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 2:3, toque o trecho que sustenta a medida da obediência.",
+      "verseRef": "1 Reis 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lei de Moisés"
+        },
+        {
+          "id": "b",
+          "text": "estatutos"
+        },
+        {
+          "id": "c",
+          "text": "testemunhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme está escrito na Lei de Moisés",
+      "feedbackCorrect": "A Lei de Moisés é a medida.",
+      "feedbackWrong": {
+        "b": "Estatutos fazem parte da lista.",
+        "c": "Testemunhos também estão na lista."
+      },
+      "hint": "Onde está escrito o padrão?",
+      "learningObjective": "Tocar a Lei de Moisés.",
+      "evidence": [
+        "1 Reis 2:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Reis 2:1–4 sustenta?",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Força de rei começa na obediência à lei"
+        },
+        {
+          "id": "b",
+          "text": "O trono permanece sem fidelidade"
+        },
+        {
+          "id": "c",
+          "text": "A Lei de Moisés é opcional ao rei"
+        },
+        {
+          "id": "d",
+          "text": "Só a vingança garante prosperidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que prosperes em tudo o que fizeres",
+      "feedbackCorrect": "Obediência e prosperidade andam juntas.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja o centro das instruções.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da sucessão fiel.",
+      "verseRef": "1 Reis 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guardar os preceitos do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Andar com fidelidade diante dele"
+        },
+        {
+          "id": "c",
+          "text": "Trono com sucessor confirmado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "nunca te faltará um sucessor ao trono de Israel",
+      "feedbackCorrect": "Guardar, fidelidade e trono.",
+      "feedbackWrong": {
+        "default": "Comece por guardar."
+      },
+      "hint": "O que precede o trono?",
+      "learningObjective": "Encadear fidelidade e trono.",
+      "evidence": [
+        "1 Reis 2:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 2:3, complete: para que ___ em tudo o que fizeres.",
+      "verseRef": "1 Reis 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "prosperes"
+        },
+        {
+          "id": "b",
+          "text": "fujas"
+        },
+        {
+          "id": "c",
+          "text": "pares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que prosperes em tudo o que fizeres",
+      "feedbackCorrect": "Prosperes é o fruto de guardar.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Resultado de guardar.",
+      "learningObjective": "Lembrar prosperes.",
+      "evidence": [
+        "1 Reis 2:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 2:3 a Deuteronômio 17:18–19?",
+      "verseRef": "1 Reis 2:3",
+      "passageA": {
+        "ref": "1 Reis 2:3"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 17:18–19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rei e a Lei"
+        },
+        {
+          "id": "b",
+          "text": "Rei sem Escritura"
+        },
+        {
+          "id": "c",
+          "text": "Trono contra Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme está escrito na Lei de Moisés",
+      "feedbackCorrect": "O rei deve viver pela Lei.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare rei e lei.",
+      "learningObjective": "Ligar ao ideal do rei.",
+      "evidence": [
+        "1 Reis 2:3",
+        "Deuteronômio 17:18–19"
+      ]
+    }
+  ]
+}

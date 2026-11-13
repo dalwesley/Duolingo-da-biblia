@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 6:11–24",
+    "passages": [
+      {
+        "ref": "Juízes 6:11–24"
+      }
+    ],
+    "context": "O anjo encontra Gideão no lagar. O menor do clã é enviado a livrar Israel; o sinal do fogo confirma, e Gideão ergue o altar O Senhor É Paz.",
+    "keyword": "valoroso",
+    "keywordGloss": "Como o Senhor chama Gideão antes da vitória.",
+    "focusQuestion": "Onde o Senhor já te chamou valoroso apesar do medo?",
+    "reflectionPrompts": [
+      "No lagar",
+      "Porquanto eu hei de ser contigo",
+      "O Senhor É Paz"
+    ],
+    "facts": [
+      {
+        "text": "Gideão malhava o trigo no lagar.",
+        "evidenceRef": "Juízes 6:11",
+        "evidenceSpan": "estava malhando o trigo no lagar"
+      },
+      {
+        "text": "O anjo disse: O Senhor está contigo, homem valoroso.",
+        "evidenceRef": "Juízes 6:12",
+        "evidenceSpan": "O Senhor está contigo, homem valoroso"
+      },
+      {
+        "text": "Gideão se chama o menor na casa do pai.",
+        "evidenceRef": "Juízes 6:15",
+        "evidenceSpan": "eu o menor na casa de meu pai"
+      },
+      {
+        "text": "O Senhor promete ser com ele.",
+        "evidenceRef": "Juízes 6:16",
+        "evidenceSpan": "Porquanto eu hei de ser contigo"
+      },
+      {
+        "text": "Fogo da penha consumiu a oferta.",
+        "evidenceRef": "Juízes 6:21",
+        "evidenceSpan": "subiu fogo da penha e consumiu a carne"
+      },
+      {
+        "text": "Gideão chamou o altar O Senhor É Paz.",
+        "evidenceRef": "Juízes 6:24",
+        "evidenceSpan": "O Senhor É Paz"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "lagar",
+        "gloss": "Lugar escondido onde Gideão trabalha."
+      },
+      {
+        "term": "valoroso",
+        "gloss": "Nome que o Senhor dá a Gideão."
+      },
+      {
+        "term": "sinal",
+        "gloss": "Pedido de Gideão para confirmar a voz."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Encontro no lagar",
+        "evidenceRef": "Juízes 6:11–13"
+      },
+      {
+        "label": "Envio e objeção",
+        "evidenceRef": "Juízes 6:14–16"
+      },
+      {
+        "label": "Sinal, fogo e altar",
+        "evidenceRef": "Juízes 6:17–24"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porquanto eu hei de ser contigo, tu ferirás.",
+        "marker": "Porquanto",
+        "evidenceRef": "Juízes 6:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Viu o Anjo; porém o Senhor fala paz.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 6:23"
+      },
+      {
+        "kind": "propósito",
+        "text": "Malhava no lagar a fim de proteger o trigo.",
+        "marker": "a fim de",
+        "evidenceRef": "Juízes 6:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 3:12",
+        "bridge": "Eu serei contigo"
+      },
+      {
+        "ref": "Isaías 41:10",
+        "bridge": "Não temas, eu sou contigo"
+      },
+      {
+        "ref": "Romanos 8:31",
+        "bridge": "Se Deus é por nós"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Gideão já se via valoroso.",
+        "why": "Chama-se o menor da casa."
+      },
+      {
+        "text": "O Senhor não envia Gideão.",
+        "why": "Porventura não te enviei eu?"
+      },
+      {
+        "text": "Não há sinal.",
+        "why": "O fogo consome a oferta."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 6:12, como o anjo chama Gideão?",
+    "centralInsight": "O Senhor está com Gideão: o menor do clã é enviado a livrar Israel de Midiã."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 6:12, o anjo diz que o Senhor está com Gideão, homem valoroso.",
+      "verseRef": "Juízes 6:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor está contigo, homem valoroso",
+      "feedbackCorrect": "Valoroso.",
+      "feedbackWrong": {
+        "false": "O texto traz a saudação."
+      },
+      "hint": "Veja a saudação.",
+      "learningObjective": "Observar o chamado.",
+      "evidence": [
+        "Juízes 6:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 6:11, toque onde Gideão trabalhava.",
+      "verseRef": "Juízes 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "lagar"
+        },
+        {
+          "id": "b",
+          "text": "carvalho"
+        },
+        {
+          "id": "c",
+          "text": "Ofra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "malhando o trigo no lagar",
+      "feedbackCorrect": "Lagar.",
+      "feedbackWrong": {
+        "b": "Carvalho é o lugar do anjo.",
+        "c": "Ofra é a terra."
+      },
+      "hint": "Veja o lugar do trigo.",
+      "learningObjective": "Identificar o lagar.",
+      "evidence": [
+        "Juízes 6:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 6:15, Gideão se descreve como:",
+      "verseRef": "Juízes 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O menor na casa do pai"
+        },
+        {
+          "id": "b",
+          "text": "O maior de Manassés"
+        },
+        {
+          "id": "c",
+          "text": "Rei de Midiã"
+        },
+        {
+          "id": "d",
+          "text": "Anjo do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu o menor na casa de meu pai",
+      "feedbackCorrect": "O menor.",
+      "feedbackWrong": {
+        "b": "Não é o maior.",
+        "c": "Não é rei.",
+        "d": "Não é anjo."
+      },
+      "hint": "Leia a autoimagem.",
+      "learningObjective": "Reconhecer a humildade.",
+      "evidence": [
+        "Juízes 6:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 6:12 na ordem do texto.",
+      "verseRef": "Juízes 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "o anjo do Senhor lhe apareceu"
+        },
+        {
+          "id": "b",
+          "text": "e disse"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor está contigo, homem valoroso"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O Senhor está contigo, homem valoroso",
+      "feedbackCorrect": "Aparição, fala e saudação.",
+      "feedbackWrong": {
+        "default": "Comece pelo anjo."
+      },
+      "hint": "Como o chama?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 6:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 6:24, complete: o chamou de \"O Senhor É ___\".",
+      "verseRef": "Juízes 6:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz"
+        },
+        {
+          "id": "b",
+          "text": "Fogo"
+        },
+        {
+          "id": "c",
+          "text": "Medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor É Paz",
+      "feedbackCorrect": "Paz.",
+      "feedbackWrong": {
+        "b": "Não é Fogo.",
+        "c": "Não é Medo."
+      },
+      "hint": "Veja o nome.",
+      "learningObjective": "Lembrar Paz.",
+      "evidence": [
+        "Juízes 6:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 6:14 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 6:14",
+      "passageA": {
+        "ref": "Juízes 6:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor envia Gideão a livrar Israel de Midiã."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Envio para livrar"
+        },
+        {
+          "id": "b",
+          "text": "Recusa sem missão"
+        },
+        {
+          "id": "c",
+          "text": "Só o anjo fala"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "livrarás a Israel da mão dos midianitas",
+      "feedbackCorrect": "Missão de livrar.",
+      "feedbackWrong": {
+        "b": "Há missão.",
+        "c": "O Senhor fala."
+      },
+      "hint": "Qual a missão?",
+      "learningObjective": "Ligar envio e livramento.",
+      "evidence": [
+        "Juízes 6:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 6:16, Gideão ferirá Midiã porque o Senhor será com ele.",
+      "verseRef": "Juízes 6:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porquanto eu hei de ser contigo",
+      "feedbackCorrect": "Causa da vitória.",
+      "feedbackWrong": {
+        "false": "O Porquanto liga presença e vitória."
+      },
+      "hint": "Leia o Porquanto.",
+      "learningObjective": "Ver a causa.",
+      "evidence": [
+        "Juízes 6:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 6:16, toque o marcador de causa.",
+      "verseRef": "Juízes 6:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porquanto"
+        },
+        {
+          "id": "b",
+          "text": "midianitas"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto eu hei de ser contigo",
+      "feedbackCorrect": "Porquanto.",
+      "feedbackWrong": {
+        "b": "Midianitas são o alvo.",
+        "c": "Homem fecha a imagem."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Juízes 6:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 6:23 faz?",
+      "verseRef": "Juízes 6:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medo da visão; porém o Senhor fala paz"
+        },
+        {
+          "id": "b",
+          "text": "Fuga; porém o anjo some"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio; porém Gideão reina"
+        },
+        {
+          "id": "d",
+          "text": "Ira; porém Midiã louva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém o Senhor lhe disse: A paz seja com você",
+      "feedbackCorrect": "Contraste com paz.",
+      "feedbackWrong": {
+        "b": "Há paz.",
+        "c": "Há medo.",
+        "d": "Há Senhor."
+      },
+      "hint": "Leia o Porém.",
+      "learningObjective": "Compreender o contraste.",
+      "evidence": [
+        "Juízes 6:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do encontro.",
+      "verseRef": "Juízes 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encontro no lagar"
+        },
+        {
+          "id": "b",
+          "text": "Envio e objeção"
+        },
+        {
+          "id": "c",
+          "text": "Sinal, fogo e altar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "malhando o trigo no lagar",
+      "feedbackCorrect": "Lagar, envio e altar.",
+      "feedbackWrong": {
+        "default": "Comece no lagar."
+      },
+      "hint": "O que fecha o altar?",
+      "learningObjective": "Ordenar o encontro",
+      "evidence": [
+        "Juízes 6:11",
+        "Juízes 6:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 6:12, complete: O Senhor está contigo, homem ___.",
+      "verseRef": "Juízes 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "valoroso"
+        },
+        {
+          "id": "b",
+          "text": "tímido"
+        },
+        {
+          "id": "c",
+          "text": "ausente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem valoroso",
+      "feedbackCorrect": "Valoroso.",
+      "feedbackWrong": {
+        "b": "Não é tímido.",
+        "c": "Não é ausente."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar valoroso.",
+      "evidence": [
+        "Juízes 6:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 6:16 a Êxodo 3:12?",
+      "verseRef": "Juízes 6:16",
+      "passageA": {
+        "ref": "Juízes 6:16"
+      },
+      "passageB": {
+        "ref": "Êxodo 3:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu serei contigo"
+        },
+        {
+          "id": "b",
+          "text": "Vai sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Sem missão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto eu hei de ser contigo",
+      "feedbackCorrect": "Presença prometida.",
+      "feedbackWrong": {
+        "b": "Não vai só.",
+        "c": "Há missão."
+      },
+      "hint": "Compare a presença.",
+      "learningObjective": "Ligar ao Êxodo.",
+      "evidence": [
+        "Juízes 6:16",
+        "Êxodo 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 6:15, ser o menor impede o Senhor de enviar Gideão.",
+      "verseRef": "Juízes 6:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "eu o menor na casa de meu pai",
+      "feedbackCorrect": "Mesmo assim é enviado.",
+      "feedbackWrong": {
+        "true": "O envio vem em 6:14."
+      },
+      "hint": "Compare com o envio.",
+      "learningObjective": "Avaliar a objeção.",
+      "evidence": [
+        "Juízes 6:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 6:21, toque o que subiu da penha.",
+      "verseRef": "Juízes 6:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "cajado"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então subiu fogo da penha",
+      "feedbackCorrect": "Fogo.",
+      "feedbackWrong": {
+        "b": "Cajado toca.",
+        "c": "Carne é consumida."
+      },
+      "hint": "Veja o que sobe.",
+      "learningObjective": "Tocar o fogo.",
+      "evidence": [
+        "Juízes 6:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une fraqueza de Gideão e presença do Senhor?",
+      "verseRef": "Juízes 6:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porquanto o Senhor é com ele, o menor livra"
+        },
+        {
+          "id": "b",
+          "text": "Só o maior livra"
+        },
+        {
+          "id": "c",
+          "text": "Sem sinal não há Senhor"
+        },
+        {
+          "id": "d",
+          "text": "O lagar cancela o envio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto eu hei de ser contigo",
+      "feedbackCorrect": "Presença sustenta.",
+      "feedbackWrong": {
+        "b": "Há menor.",
+        "c": "Há sinal.",
+        "d": "Há envio."
+      },
+      "hint": "Una menor e presença.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 6:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da vocação.",
+      "verseRef": "Juízes 6:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado no lagar"
+        },
+        {
+          "id": "b",
+          "text": "Promessa de presença"
+        },
+        {
+          "id": "c",
+          "text": "Altar O Senhor É Paz"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O Senhor É Paz",
+      "feedbackCorrect": "Chamado, presença e paz.",
+      "feedbackWrong": {
+        "default": "Comece no lagar."
+      },
+      "hint": "O que nomeia o altar?",
+      "learningObjective": "Encadear a vocação",
+      "evidence": [
+        "Juízes 6:12",
+        "Juízes 6:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 6:15, complete: eu o ___ na casa de meu pai.",
+      "verseRef": "Juízes 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "menor"
+        },
+        {
+          "id": "b",
+          "text": "maior"
+        },
+        {
+          "id": "c",
+          "text": "único"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu o menor na casa de meu pai",
+      "feedbackCorrect": "Menor.",
+      "feedbackWrong": {
+        "b": "Não é maior.",
+        "c": "Não é único."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar menor.",
+      "evidence": [
+        "Juízes 6:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 6:23 a Isaías 41:10?",
+      "verseRef": "Juízes 6:23",
+      "passageA": {
+        "ref": "Juízes 6:23"
+      },
+      "passageB": {
+        "ref": "Isaías 41:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não temas, eu sou contigo"
+        },
+        {
+          "id": "b",
+          "text": "Fuja do anjo"
+        },
+        {
+          "id": "c",
+          "text": "Recuse a paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não tema; você não morrerá",
+      "feedbackCorrect": "Não temas.",
+      "feedbackWrong": {
+        "b": "Não é fuga.",
+        "c": "Há paz."
+      },
+      "hint": "Compare o não temas.",
+      "learningObjective": "Ligar a Isaías.",
+      "evidence": [
+        "Juízes 6:23",
+        "Isaías 41:10"
+      ]
+    }
+  ]
+}

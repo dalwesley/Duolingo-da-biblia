@@ -1,0 +1,510 @@
+{
+  "study": {
+    "passageRef": "Miqueias 2:1–6",
+    "passages": [
+      {
+        "ref": "Miqueias 2:1–6"
+      },
+      {
+        "ref": "Miqueias 2:7–8"
+      }
+    ],
+    "context": "Miquéias denuncia quem planeja o mal na cama e toma campos e casas. O Senhor trama juízo; falsos profetas tentam silenciar o aviso.",
+    "keyword": "maquinam",
+    "keywordGloss": "Planejar o mal de propósito e executá-lo com poder.",
+    "focusQuestion": "Você usa poder para servir o próximo ou para tomar o que é dele?",
+    "reflectionPrompts": [
+      "Mal na cama",
+      "Campos tomados",
+      "Senhor trama"
+    ],
+    "facts": [
+      {
+        "text": "Há quem imagina a iniquidade e maquina o mal nas camas.",
+        "evidenceRef": "Miqueias 2:1",
+        "evidenceSpan": "imaginam a iniquidade e maquinam o mal"
+      },
+      {
+        "text": "Ao amanhecer realizam o mal, pois o poder está em suas mãos.",
+        "evidenceRef": "Miqueias 2:1",
+        "evidenceSpan": "Ao amanhecer o realizam, pois o poder está em suas mãos"
+      },
+      {
+        "text": "Cobiçam campos e casas e praticam violência contra a herança.",
+        "evidenceRef": "Miqueias 2:2",
+        "evidenceSpan": "Cobiçam campos e os tomam, casas e se apossam delas"
+      },
+      {
+        "text": "O Senhor está tramando um mal contra essa família.",
+        "evidenceRef": "Miqueias 2:3",
+        "evidenceSpan": "Eis que estou tramando um mal contra esta família"
+      },
+      {
+        "text": "Falsos profetas pedem que não se profetize desse modo.",
+        "evidenceRef": "Miqueias 2:6",
+        "evidenceSpan": "Não profetizem, vocês que profetizam"
+      },
+      {
+        "text": "O povo se levantou como inimigo e rouba a capa de quem ia seguro.",
+        "evidenceRef": "Miqueias 2:8",
+        "evidenceSpan": "vocês roubais a capa daqueles que transitavam seguros"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "maquinam",
+        "gloss": "Planejar o mal de propósito antes de executá-lo."
+      },
+      {
+        "term": "tramando",
+        "gloss": "O Senhor prepara juízo contra a família opressora."
+      },
+      {
+        "term": "herança",
+        "gloss": "A porção da pessoa que a violência tenta tomar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ai aos que maquinam o mal",
+        "evidenceRef": "Miqueias 2:1"
+      },
+      {
+        "label": "Violência contra campos e casas",
+        "evidenceRef": "Miqueias 2:2"
+      },
+      {
+        "label": "O Senhor trama juízo",
+        "evidenceRef": "Miqueias 2:3–4"
+      },
+      {
+        "label": "Profetas e povo como inimigo",
+        "evidenceRef": "Miqueias 2:6–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Realizam o mal ao amanhecer porque o poder está em suas mãos.",
+        "marker": "pois",
+        "evidenceRef": "Miqueias 2:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso o Senhor trama um mal contra essa família.",
+        "marker": "Portanto",
+        "evidenceRef": "Miqueias 2:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "As palavras do Senhor fazem bem ao que anda retamente, mas o povo age como inimigo.",
+        "marker": "Mas",
+        "evidenceRef": "Miqueias 2:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 5:8",
+        "bridge": "Ai aos que juntam casas"
+      },
+      {
+        "ref": "Amós 5:11",
+        "bridge": "Opressão e casas tomadas"
+      },
+      {
+        "ref": "Provérbios 6:18",
+        "bridge": "Coração que trama o mal"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Só o ato público importa; planejar o mal na cama não conta.",
+        "why": "2:1 condena imaginar e maquinar o mal antes de realizá-lo."
+      },
+      {
+        "text": "O Senhor não responde à opressão com juízo.",
+        "why": "2:3 diz que o Senhor está tramando um mal contra essa família."
+      },
+      {
+        "text": "Os profetas certos pedem silêncio sobre a desgraça.",
+        "why": "2:6 mostra quem quer silenciar o aviso, não a voz verdadeira."
+      }
+    ],
+    "centralInsight": "O Senhor trama o mal contra quem toma casas e heranças pela força.",
+    "anchorQuestion": "Segundo Miqueias 2:3, o que o Senhor está tramando?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 2:1, os opressores maquinam o mal nas camas e o realizam ao amanhecer.",
+      "verseRef": "Miqueias 2:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "em suas camas, imaginam a iniquidade e maquinam o mal",
+      "feedbackCorrect": "O texto une o plano na cama e a execução ao amanhecer.",
+      "feedbackWrong": {
+        "false": "Releia 2:1: maquinam na cama e realizam ao amanhecer."
+      },
+      "hint": "Veja onde imaginam e quando realizam.",
+      "learningObjective": "Observar o plano e a execução do mal.",
+      "evidence": ["Miqueias 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 2:2, toque o que cobiçam e tomam primeiro.",
+      "verseRef": "Miqueias 2:2",
+      "evidenceSpan": "Cobiçam campos e os tomam",
+      "feedbackCorrect": "Cobiçam campos e os tomam.",
+      "hint": "É o primeiro objeto após Cobiçam.",
+      "learningObjective": "Identificar o alvo da cobiça.",
+      "evidence": ["Miqueias 2:2"],
+      "options": [
+        { "id": "a", "text": "campos" },
+        { "id": "b", "text": "herança" },
+        { "id": "c", "text": "homem" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A herança aparece no fim; o primeiro alvo é campos.",
+        "c": "O homem é a vítima; o que tomam primeiro são campos."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 2:3, o que o Senhor está tramando?",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "estou tramando um mal contra esta família",
+      "feedbackCorrect": "O Senhor trama um mal contra essa família.",
+      "hint": "Veja o que segue \"Eis que estou\".",
+      "learningObjective": "Observar a resposta do Senhor à opressão.",
+      "evidence": ["Miqueias 2:3"],
+      "options": [
+        { "id": "a", "text": "Um mal contra esta família" },
+        { "id": "b", "text": "Um prêmio aos opressores" },
+        { "id": "c", "text": "Uma festa sem juízo" },
+        { "id": "d", "text": "Um silêncio total em Sião" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de mal tramado, não de prêmio.",
+        "c": "O tempo será difícil, não uma festa.",
+        "d": "O texto não anuncia silêncio total."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 2:1 na ordem do texto.",
+      "verseRef": "Miqueias 2:1",
+      "evidenceSpan": "imaginam a iniquidade e maquinam o mal",
+      "feedbackCorrect": "Ai; plano na cama; execução ao amanhecer pelo poder.",
+      "hint": "Comece pelo ai daqueles.",
+      "learningObjective": "Reconhecer a sequência do ai.",
+      "evidence": ["Miqueias 2:1"],
+      "options": [
+        { "id": "a", "text": "Ai daqueles que, em suas camas, imaginam a iniquidade" },
+        { "id": "b", "text": "e maquinam o mal" },
+        { "id": "c", "text": "Ao amanhecer o realizam, pois o poder está em suas mãos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Primeiro o plano na cama; a execução vem ao amanhecer."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 2:2, contra o que praticam violência além da casa?",
+      "verseRef": "Miqueias 2:2",
+      "evidenceSpan": "contra uma pessoa e sua herança",
+      "feedbackCorrect": "Praticam violência contra a pessoa e sua herança.",
+      "hint": "É a última palavra do versículo.",
+      "learningObjective": "Lembrar o alvo final da violência.",
+      "evidence": ["Miqueias 2:2"],
+      "options": [
+        { "id": "a", "text": "herança" },
+        { "id": "b", "text": "festa" },
+        { "id": "c", "text": "música" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Festa\" não aparece em 2:2.",
+        "c": "\"Música\" não aparece em 2:2."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 2:3 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "estou tramando um mal contra esta família",
+      "feedbackCorrect": "Quem toma casas pela força encontra o Senhor tramando juízo.",
+      "hint": "Veja o que o Senhor declara fazer.",
+      "learningObjective": "Ligar a opressão ao juízo tramado.",
+      "evidence": ["Miqueias 2:3"],
+      "passageA": { "ref": "Miqueias 2:3" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor responde com juízo a quem toma casas e heranças pela força."
+      },
+      "options": [
+        { "id": "a", "text": "Juízo contra a opressão" },
+        { "id": "b", "text": "Prêmio aos violentos" },
+        { "id": "c", "text": "Silêncio sobre o roubo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O Senhor trama mal, não prêmio.",
+        "c": "O texto denuncia, não silencia o roubo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 2:1, realizam o mal ao amanhecer porque lhes falta qualquer poder.",
+      "verseRef": "Miqueias 2:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois o poder está em suas mãos",
+      "feedbackCorrect": "O marcador \"pois\" liga a execução ao poder que têm.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 2:1: o poder está em suas mãos."
+      },
+      "hint": "Veja a razão após \"pois\".",
+      "learningObjective": "Compreender a causa da execução do mal.",
+      "evidence": ["Miqueias 2:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 2:1, toque a palavra que marca a razão da execução.",
+      "verseRef": "Miqueias 2:1",
+      "evidenceSpan": "pois o poder está em suas mãos",
+      "feedbackCorrect": "\"Pois\" introduz a razão: o poder está em suas mãos.",
+      "hint": "Procure a palavra curta antes de \"o poder\".",
+      "learningObjective": "Reconhecer o marcador de causa em 2:1.",
+      "evidence": ["Miqueias 2:1"],
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "camas" },
+        { "id": "c", "text": "amanhecer" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Camas\" é o lugar do plano, não o marcador da razão.",
+        "c": "\"Amanhecer\" é o tempo da execução."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 2:1–3 liga o poder dos opressores e a resposta do Senhor?",
+      "verseRef": "Miqueias 2:1–3",
+      "evidenceSpan": "Portanto, assim diz o Senhor: Eis que estou tramando um mal",
+      "feedbackCorrect": "Porque usam o poder para o mal, o Senhor trama juízo contra eles.",
+      "hint": "Una o \"pois\" de 2:1 ao \"Portanto\" de 2:3.",
+      "learningObjective": "Relacionar opressão pelo poder e juízo divino.",
+      "evidence": ["Miqueias 2:1–3"],
+      "options": [
+        { "id": "a", "text": "O poder usado para o mal provoca o juízo tramado" },
+        { "id": "b", "text": "O Senhor ignora quem tem poder nas mãos" },
+        { "id": "c", "text": "O poder dos opressores cancela qualquer juízo" },
+        { "id": "d", "text": "Só a noite importa; o amanhecer não conta" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "2:3 mostra o Senhor respondendo com juízo.",
+        "c": "O juízo é anunciado justamente contra essa família.",
+        "d": "2:1 une a noite do plano ao amanhecer da execução."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Miqueias 2:1–8?",
+      "verseRef": "Miqueias 2:1–3",
+      "evidenceSpan": "estou tramando um mal contra esta família",
+      "feedbackCorrect": "Ai e plano; violência; juízo do Senhor; resistência dos profetas.",
+      "hint": "Comece pelo ai aos que maquinam.",
+      "learningObjective": "Seguir o movimento da denúncia ao juízo.",
+      "evidence": ["Miqueias 2:1–3"],
+      "options": [
+        { "id": "a", "text": "Ai aos que maquinam o mal" },
+        { "id": "b", "text": "Violência contra campos e casas" },
+        { "id": "c", "text": "O Senhor trama juízo contra a família" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Ai primeiro; o juízo do Senhor vem depois da violência."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 2:3, que palavra marca o início da resposta do Senhor?",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "Portanto, assim diz o Senhor",
+      "feedbackCorrect": "\"Portanto\" abre o juízo tramado pelo Senhor.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado em 2:3.",
+      "evidence": ["Miqueias 2:3"],
+      "options": [
+        { "id": "a", "text": "Talvez" },
+        { "id": "b", "text": "Portanto" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Talvez\" não abre 2:3.",
+        "c": "\"Nunca\" não aparece em 2:3."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 2:2 a Isaías 5:8?",
+      "verseRef": "Miqueias 2:2",
+      "evidenceSpan": "Cobiçam campos e os tomam, casas e se apossam delas",
+      "feedbackCorrect": "Nos dois textos, há ai contra quem junta casas e campos pela força.",
+      "hint": "Compare cobiça de casas e campos.",
+      "learningObjective": "Relacionar a opressão de Miquéias à de Isaías.",
+      "evidence": ["Miqueias 2:2", "Isaías 5:8"],
+      "passageA": { "ref": "Miqueias 2:2" },
+      "passageB": { "ref": "Isaías 5:8" },
+      "options": [
+        { "id": "a", "text": "Ai aos que juntam casas" },
+        { "id": "b", "text": "Bênção sem nenhum limite" },
+        { "id": "c", "text": "Partilha justa das terras" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos denunciam, não abençoam a cobiça.",
+        "c": "Os textos mostram tomada, não partilha justa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 2:1–3, planejar o mal na cama é irrelevante, pois o Senhor só julga atos públicos sem ligação com o plano.",
+      "verseRef": "Miqueias 2:1–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "imaginam a iniquidade e maquinam o mal",
+      "feedbackCorrect": "O ai começa no plano; o Senhor trama juízo contra essa família.",
+      "feedbackWrong": {
+        "true": "Releia 2:1–3: o plano na cama entra no ai e no juízo."
+      },
+      "hint": "Veja se 2:1 condena só o ato ou também o plano.",
+      "learningObjective": "Interpretar o alcance do juízo até o plano do mal.",
+      "evidence": ["Miqueias 2:1–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 2:3, toque o verbo que mostra a ação do Senhor contra a família.",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "estou tramando um mal",
+      "feedbackCorrect": "O verbo é tramando: o Senhor prepara o juízo.",
+      "hint": "Procure o verbo após \"estou\".",
+      "learningObjective": "Sustentar com o texto a ação do Senhor.",
+      "evidence": ["Miqueias 2:3"],
+      "options": [
+        { "id": "a", "text": "tramando" },
+        { "id": "b", "text": "família" },
+        { "id": "c", "text": "orgulho" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Família\" é o alvo, não a ação do Senhor.",
+        "c": "\"Orgulho\" descreve o que não andarão, não o verbo divino."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Miqueias 2:1–8 sustenta sobre a opressão?",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "estou tramando um mal contra esta família",
+      "feedbackCorrect": "Quem toma herança pela força enfrenta o juízo que o Senhor trama.",
+      "hint": "Compare cada opção com 2:1–3 e 2:6.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Miqueias 2:3"],
+      "options": [
+        { "id": "a", "text": "O Senhor julga quem toma casas e heranças pela força" },
+        { "id": "b", "text": "Planejar o mal na cama não tem peso algum" },
+        { "id": "c", "text": "Os falsos profetas pedem o anúncio certo do juízo" },
+        { "id": "d", "text": "O poder nas mãos isenta de qualquer juízo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "2:1 começa condenando o plano na cama.",
+        "c": "2:6 mostra quem quer silenciar o aviso.",
+        "d": "2:3 trama juízo justamente contra essa família."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra juízo contra a opressão na Escritura?",
+      "verseRef": "Miqueias 2:2",
+      "evidenceSpan": "Cobiçam campos e os tomam",
+      "feedbackCorrect": "Miquéias denuncia; Isaías dá ai; Amós aponta casas tomadas.",
+      "hint": "Parta de Miqueias 2.",
+      "learningObjective": "Ver a denúncia da opressão no fio bíblico.",
+      "evidence": ["Miqueias 2:2", "Isaías 5:8", "Amós 5:11"],
+      "options": [
+        { "id": "a", "text": "Miquéias denuncia quem toma campos e casas" },
+        { "id": "b", "text": "Isaías dá ai aos que juntam casa a casa" },
+        { "id": "c", "text": "Amós aponta opressão e casas tomadas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 2, Isaías 5:8 e Amós 5:11."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 2:1, que verbo mostra o plano deliberado do mal?",
+      "verseRef": "Miqueias 2:1",
+      "evidenceSpan": "maquinam o mal",
+      "feedbackCorrect": "O verbo que carrega o plano é maquinam.",
+      "hint": "É o verbo ligado a \"o mal\" no ai.",
+      "learningObjective": "Lembrar o termo do plano deliberado.",
+      "evidence": ["Miqueias 2:1"],
+      "options": [
+        { "id": "a", "text": "esquecem" },
+        { "id": "b", "text": "maquinam" },
+        { "id": "c", "text": "ignoram" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Esquecem\" não descreve o plano em 2:1.",
+        "c": "\"Ignoram\" não é o verbo do ai."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 2:1 a Provérbios 6:18?",
+      "verseRef": "Miqueias 2:1",
+      "evidenceSpan": "maquinam o mal",
+      "feedbackCorrect": "Nos dois textos, o coração que trama o mal é condenado.",
+      "hint": "Compare o planejamento do mal.",
+      "learningObjective": "Ligar o maquinar de Miquéias ao de Provérbios.",
+      "evidence": ["Miqueias 2:1", "Provérbios 6:18"],
+      "passageA": { "ref": "Miqueias 2:1" },
+      "passageB": { "ref": "Provérbios 6:18" },
+      "options": [
+        { "id": "a", "text": "Coração que trama o mal" },
+        { "id": "b", "text": "Plano inocente e neutro" },
+        { "id": "c", "text": "Poder sem nenhuma culpa" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos condenam o plano do mal.",
+        "c": "O poder não cancela a culpa no texto."
+      }
+    }
+  ]
+}

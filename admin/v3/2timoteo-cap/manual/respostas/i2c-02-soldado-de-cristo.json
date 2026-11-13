@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "2 Timóteo 2:3–4",
+    "passages": [
+      {
+        "ref": "2 Timóteo 2:1–10"
+      }
+    ],
+    "context": "Paulo exorta Timóteo a fortalecer-se na graça e a sofrer como soldado. Usa imagens de soldado, atleta e lavrador para falar de fidelidade.",
+    "keyword": "soldado",
+    "keywordGloss": "Quem milita sob Cristo: sofre aflições e não se envolve nos assuntos desta vida.",
+    "focusQuestion": "Onde você tem se envolvido em assuntos que afastam do que agrada a Cristo?",
+    "reflectionPrompts": [
+      "Fortaleça-se na graça",
+      "Bom soldado",
+      "Palavra sem algemas"
+    ],
+    "facts": [
+      {
+        "text": "Timóteo deve fortificar-se na graça que está em Cristo Jesus.",
+        "evidenceRef": "2 Timóteo 2:1",
+        "evidenceSpan": "Fortifica-te, pois, meu filho, na graça que está em Cristo Jesus"
+      },
+      {
+        "text": "O que Timóteo ouviu de Paulo deve ser confiado a homens fiéis.",
+        "evidenceRef": "2 Timóteo 2:2",
+        "evidenceSpan": "isso confia a homens fiéis e também idôneos para instruir a outros"
+      },
+      {
+        "text": "Timóteo deve participar das aflições como bom soldado de Cristo.",
+        "evidenceRef": "2 Timóteo 2:3",
+        "evidenceSpan": "Participa, portanto, das aflições como um bom soldado de Cristo Jesus"
+      },
+      {
+        "text": "Ninguém que milita se envolve em assuntos desta vida.",
+        "evidenceRef": "2 Timóteo 2:4",
+        "evidenceSpan": "Ninguém que milita se envolve em assuntos desta vida"
+      },
+      {
+        "text": "Paulo sofre algemas, mas a palavra de Deus não está algemada.",
+        "evidenceRef": "2 Timóteo 2:9",
+        "evidenceSpan": "a palavra de Deus não está algemada"
+      },
+      {
+        "text": "Paulo tudo suporta por amor dos eleitos, para que obtenham a salvação.",
+        "evidenceRef": "2 Timóteo 2:10",
+        "evidenceSpan": "tudo suporto por amor dos eleitos, para que também eles obtenham a salvação"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "soldado",
+        "gloss": "Imagem de quem sofre aflições sob Cristo e busca agradar quem o recrutou."
+      },
+      {
+        "term": "algemada",
+        "gloss": "Paulo está preso; a palavra de Deus, não."
+      },
+      {
+        "term": "eleitos",
+        "gloss": "Aqueles por quem Paulo sofre, para que obtenham a salvação em Cristo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fortaleça-se e confie o ensino a fiéis",
+        "evidenceRef": "2 Timóteo 2:1–2"
+      },
+      {
+        "label": "Sofra como soldado, atleta e lavrador",
+        "evidenceRef": "2 Timóteo 2:3–6"
+      },
+      {
+        "label": "Lembre-se de Cristo ressuscitado",
+        "evidenceRef": "2 Timóteo 2:7–8"
+      },
+      {
+        "label": "Paulo sofre; a palavra não está presa",
+        "evidenceRef": "2 Timóteo 2:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O soldado não se envolve nos assuntos da vida para agradar a quem o recrutou.",
+        "marker": "pois",
+        "evidenceRef": "2 Timóteo 2:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Paulo está algemado como malfeitor; a palavra de Deus não está algemada.",
+        "marker": "contudo",
+        "evidenceRef": "2 Timóteo 2:9"
+      },
+      {
+        "kind": "propósito",
+        "text": "Paulo tudo suporta para que os eleitos obtenham a salvação em Cristo.",
+        "marker": "para que",
+        "evidenceRef": "2 Timóteo 2:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 9:24–25",
+        "bridge": "Atleta e coroa"
+      },
+      {
+        "ref": "Filipenses 1:12–14",
+        "bridge": "Prisão avança o evangelho"
+      },
+      {
+        "ref": "Efésios 6:10–11",
+        "bridge": "Fortaleçam-se no Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O soldado de Cristo deve evitar qualquer sofrimento.",
+        "why": "Paulo manda participar das aflições como bom soldado."
+      },
+      {
+        "text": "A palavra de Deus ficou presa quando Paulo foi algemado.",
+        "why": "O texto diz o contrário: a palavra não está algemada."
+      },
+      {
+        "text": "Timóteo deve guardar o ensino só para si, sem passar adiante.",
+        "why": "Paulo manda confiar o que ouviu a homens fiéis que instruam outros."
+      }
+    ],
+    "centralInsight": "Nenhum soldado se envolve em negócios da vida; se morrermos com ele, também com ele viveremos.",
+    "anchorQuestion": "Por que o soldado não se envolve em assuntos desta vida, segundo 2 Timóteo 2:4?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Timóteo 2:4, o soldado se envolve livremente em assuntos desta vida para agradar a todos.",
+      "verseRef": "2 Timóteo 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ninguém que milita se envolve em assuntos desta vida",
+      "feedbackCorrect": "O texto nega o envolvimento: o objetivo é agradar a quem o recrutou.",
+      "feedbackWrong": {
+        "true": "Leia o começo: ninguém que milita se envolve nesses assuntos."
+      },
+      "hint": "Veja o que o soldado não faz.",
+      "learningObjective": "Observar a disciplina do soldado quanto aos assuntos da vida.",
+      "evidence": [
+        "2 Timóteo 2:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Timóteo 2:3, toque com quem Timóteo deve participar das aflições.",
+      "verseRef": "2 Timóteo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "bom soldado"
+        },
+        {
+          "id": "b",
+          "text": "portanto"
+        },
+        {
+          "id": "c",
+          "text": "aflições"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como um bom soldado de Cristo Jesus",
+      "feedbackCorrect": "A comparação é clara: participar das aflições como bom soldado.",
+      "feedbackWrong": {
+        "b": "Portanto liga a conclusão; a pergunta pede a comparação.",
+        "c": "Aflições é o que se sofre, não com quem se compara."
+      },
+      "hint": "Procure a imagem militar.",
+      "learningObjective": "Identificar a imagem do bom soldado.",
+      "evidence": [
+        "2 Timóteo 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Timóteo 2:1, onde Timóteo deve fortificar-se?",
+      "verseRef": "2 Timóteo 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Na graça que está em Cristo Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Na própria força e reputação"
+        },
+        {
+          "id": "c",
+          "text": "Nos assuntos desta vida"
+        },
+        {
+          "id": "d",
+          "text": "Nas algemas de Paulo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na graça que está em Cristo Jesus",
+      "feedbackCorrect": "A força vem da graça em Cristo, não de recursos próprios.",
+      "feedbackWrong": {
+        "b": "O texto aponta a graça em Cristo.",
+        "c": "Isso é o que o soldado evita.",
+        "d": "As algemas vêm depois; aqui é a graça."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Registrar o lugar do fortalecimento: a graça.",
+      "evidence": [
+        "2 Timóteo 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Timóteo 2:3 na ordem do texto.",
+      "verseRef": "2 Timóteo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Participa, portanto, das aflições"
+        },
+        {
+          "id": "b",
+          "text": "como um bom soldado"
+        },
+        {
+          "id": "c",
+          "text": "de Cristo Jesus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Participa, portanto, das aflições como um bom soldado",
+      "feedbackCorrect": "Primeiro a ordem de participar; depois a comparação com o soldado.",
+      "feedbackWrong": {
+        "default": "Comece por Participa; a comparação vem em seguida."
+      },
+      "hint": "O versículo abre com Participa.",
+      "learningObjective": "Reconhecer a ordem de 2 Timóteo 2:3.",
+      "evidence": [
+        "2 Timóteo 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Timóteo 2:9, a palavra de Deus não está ___.",
+      "verseRef": "2 Timóteo 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "algemada"
+        },
+        {
+          "id": "b",
+          "text": "viva"
+        },
+        {
+          "id": "c",
+          "text": "clara"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a palavra de Deus não está algemada",
+      "feedbackCorrect": "Paulo está preso; a palavra, não.",
+      "feedbackWrong": {
+        "b": "O contraste do versículo é com algemas.",
+        "c": "A palavra-chave é algemada."
+      },
+      "hint": "Compare com as algemas de Paulo.",
+      "learningObjective": "Lembrar que a palavra não está algemada.",
+      "evidence": [
+        "2 Timóteo 2:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Timóteo 2:4 comunica que se liga a este contexto?",
+      "verseRef": "2 Timóteo 2:4",
+      "passageA": {
+        "ref": "2 Timóteo 2:4"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O soldado evita assuntos da vida para agradar a quem o recrutou."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Foco em agradar o recruta"
+        },
+        {
+          "id": "b",
+          "text": "Negócios sem disciplina"
+        },
+        {
+          "id": "c",
+          "text": "Militar sem objetivo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o seu objetivo é agradar àquele que o recrutou",
+      "feedbackCorrect": "O objetivo do que milita é agradar quem o chamou à batalha.",
+      "feedbackWrong": {
+        "b": "O texto nega o envolvimento sem foco.",
+        "c": "Há objetivo claro: agradar ao recruta."
+      },
+      "hint": "Veja o objetivo do soldado.",
+      "learningObjective": "Ligar o versículo ao foco do soldado.",
+      "evidence": [
+        "2 Timóteo 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Timóteo 2:9, Paulo está algemado e, por isso, a palavra de Deus também fica algemada.",
+      "verseRef": "2 Timóteo 2:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "contudo, a palavra de Deus não está algemada",
+      "feedbackCorrect": "O contudo marca o contraste: Paulo preso, palavra livre.",
+      "feedbackWrong": {
+        "true": "O texto opõe as algemas de Paulo à liberdade da palavra."
+      },
+      "hint": "Repare no contudo.",
+      "learningObjective": "Compreender o contraste entre Paulo e a palavra.",
+      "evidence": [
+        "2 Timóteo 2:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Timóteo 2:9, toque a palavra que marca o contraste com as algemas.",
+      "verseRef": "2 Timóteo 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "contudo"
+        },
+        {
+          "id": "b",
+          "text": "malfeitor"
+        },
+        {
+          "id": "c",
+          "text": "sofrendo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contudo, a palavra de Deus não está algemada",
+      "feedbackCorrect": "\"Contudo\" vira a página: a palavra não está presa.",
+      "feedbackWrong": {
+        "b": "Malfeitor descreve como Paulo é tratado, não o contraste.",
+        "c": "Sofrendo descreve Paulo; o contraste vem depois."
+      },
+      "hint": "Procure o conector da virada.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Timóteo 2:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Timóteo 2:4 explica a disciplina do soldado?",
+      "verseRef": "2 Timóteo 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Evita assuntos da vida para agradar quem o recrutou"
+        },
+        {
+          "id": "b",
+          "text": "Busca prosperar nos negócios da vida"
+        },
+        {
+          "id": "c",
+          "text": "Milita sem qualquer objetivo definido"
+        },
+        {
+          "id": "d",
+          "text": "Recruta outros para assuntos civis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o seu objetivo é agradar àquele que o recrutou para a batalha",
+      "feedbackCorrect": "O pois liga a abstinência ao objetivo de agradar ao recruta.",
+      "feedbackWrong": {
+        "b": "O texto nega esse envolvimento.",
+        "c": "Há objetivo claro.",
+        "d": "O foco é agradar a quem recrutou."
+      },
+      "hint": "Una o que ele não faz ao motivo.",
+      "learningObjective": "Relacionar abstinência e propósito.",
+      "evidence": [
+        "2 Timóteo 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em 2 Timóteo 2:3–4?",
+      "verseRef": "2 Timóteo 2:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem: participe das aflições como soldado"
+        },
+        {
+          "id": "b",
+          "text": "Regra: quem milita não se envolve na vida"
+        },
+        {
+          "id": "c",
+          "text": "Motivo: agradar a quem o recrutou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ninguém que milita se envolve em assuntos desta vida",
+      "feedbackCorrect": "Primeiro a ordem de sofrer; depois a regra; por fim o motivo.",
+      "feedbackWrong": {
+        "default": "Siga: ordem → regra → motivo."
+      },
+      "hint": "O pois de 2:4 fecha o motivo.",
+      "learningObjective": "Ver o movimento do soldado ao propósito.",
+      "evidence": [
+        "2 Timóteo 2:3–4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Timóteo 2:10, Paulo tudo suporta por amor dos ___.",
+      "verseRef": "2 Timóteo 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "eleitos"
+        },
+        {
+          "id": "b",
+          "text": "inimigos"
+        },
+        {
+          "id": "c",
+          "text": "juízes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo suporto por amor dos eleitos",
+      "feedbackCorrect": "O sofrimento tem destinatário: os eleitos e a salvação deles.",
+      "feedbackWrong": {
+        "b": "O texto fala dos eleitos.",
+        "c": "Não são juízes; são os eleitos."
+      },
+      "hint": "Por amor de quem ele suporta?",
+      "learningObjective": "Lembrar a palavra eleitos.",
+      "evidence": [
+        "2 Timóteo 2:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Timóteo 2:9 a Filipenses 1:12–14?",
+      "verseRef": "2 Timóteo 2:9",
+      "passageA": {
+        "ref": "2 Timóteo 2:9"
+      },
+      "passageB": {
+        "ref": "Filipenses 1:12–13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Prisão trava o evangelho"
+        },
+        {
+          "id": "b",
+          "text": "Prisão e palavra livre"
+        },
+        {
+          "id": "c",
+          "text": "Evangelho só sem cadeias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a palavra de Deus não está algemada",
+      "feedbackCorrect": "Nos dois textos, a prisão de Paulo não prende a palavra.",
+      "feedbackWrong": {
+        "a": "Ambos mostram o contrário.",
+        "c": "O elo é a liberdade da palavra na prisão."
+      },
+      "hint": "Compare prisão e avanço da palavra.",
+      "learningObjective": "Relacionar os textos sobre prisão e evangelho.",
+      "evidence": [
+        "2 Timóteo 2:9",
+        "Filipenses 1:12–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Timóteo 2:10 apresenta o sofrimento de Paulo como meio para que os eleitos obtenham a salvação em Cristo.",
+      "verseRef": "2 Timóteo 2:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que também eles obtenham a salvação que está em Cristo Jesus",
+      "feedbackCorrect": "O para que liga o sofrimento ao benefício dos eleitos.",
+      "feedbackWrong": {
+        "false": "O versículo declara o propósito: salvação dos eleitos."
+      },
+      "hint": "Veja o para que no fim.",
+      "learningObjective": "Interpretar o propósito do sofrimento de Paulo.",
+      "evidence": [
+        "2 Timóteo 2:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Timóteo 2:10, toque o trecho que sustenta o propósito do sofrimento.",
+      "verseRef": "2 Timóteo 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "Portanto"
+        },
+        {
+          "id": "c",
+          "text": "tudo suporto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que também eles obtenham a salvação",
+      "feedbackCorrect": "\"Para que\" marca o propósito: salvação dos eleitos.",
+      "feedbackWrong": {
+        "b": "Portanto abre a conclusão; o propósito vem depois.",
+        "c": "Isso nomeia a ação; a pergunta pede o propósito."
+      },
+      "hint": "Procure o marcador de finalidade.",
+      "learningObjective": "Sustentar a leitura do propósito com o texto.",
+      "evidence": [
+        "2 Timóteo 2:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Timóteo 2:3–4 sustenta?",
+      "verseRef": "2 Timóteo 2:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fidelidade a Cristo inclui sofrer e não se dispersar"
+        },
+        {
+          "id": "b",
+          "text": "O soldado deve evitar qualquer aflição"
+        },
+        {
+          "id": "c",
+          "text": "Assuntos da vida são o alvo do milício"
+        },
+        {
+          "id": "d",
+          "text": "Agradar a Cristo é opcional no combate"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Participa, portanto, das aflições como um bom soldado",
+      "feedbackCorrect": "Participar das aflições e agradar ao recruta definem a fidelidade.",
+      "feedbackWrong": {
+        "b": "O texto manda participar das aflições.",
+        "c": "O texto nega esse envolvimento.",
+        "d": "O objetivo é agradar a quem recrutou."
+      },
+      "hint": "Una aflições e objetivo do soldado.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "2 Timóteo 2:3–4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da fidelidade neste trecho?",
+      "verseRef": "2 Timóteo 2:8–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrar Cristo ressuscitado"
+        },
+        {
+          "id": "b",
+          "text": "Sofre Paulo; a palavra segue livre"
+        },
+        {
+          "id": "c",
+          "text": "Suportar tudo pelos eleitos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Lembre-se de Jesus Cristo, ressuscitado dentre os mortos",
+      "feedbackCorrect": "Cristo → prisão sem prender a palavra → sofrer pelos eleitos.",
+      "feedbackWrong": {
+        "default": "Comece pela memória de Cristo; depois a prisão; por fim os eleitos."
+      },
+      "hint": "Pense: centro, custo, propósito.",
+      "learningObjective": "Ver o encadeamento Cristo–sofrimento–eleitos.",
+      "evidence": [
+        "2 Timóteo 2:8–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Timóteo 2:3, Timóteo deve sofrer como bom ___.",
+      "verseRef": "2 Timóteo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "soldado"
+        },
+        {
+          "id": "b",
+          "text": "mercador"
+        },
+        {
+          "id": "c",
+          "text": "juiz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como um bom soldado de Cristo Jesus",
+      "feedbackCorrect": "O termo-chave da cena é soldado.",
+      "feedbackWrong": {
+        "b": "A imagem não é comercial.",
+        "c": "A imagem é militar."
+      },
+      "hint": "Qual imagem Paulo usa?",
+      "learningObjective": "Lembrar o termo soldado.",
+      "evidence": [
+        "2 Timóteo 2:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Timóteo 2:5 a 1 Coríntios 9:24–25?",
+      "verseRef": "2 Timóteo 2:5",
+      "passageA": {
+        "ref": "2 Timóteo 2:5"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 9:24–25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Corrida sem regras"
+        },
+        {
+          "id": "b",
+          "text": "Atleta e coroa"
+        },
+        {
+          "id": "c",
+          "text": "Coroa sem esforço"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não é coroado se não o fizer de acordo com as normas",
+      "feedbackCorrect": "Nos dois textos, o atleta compete com disciplina rumo à coroa.",
+      "feedbackWrong": {
+        "a": "Ambos exigem normas ou domínio.",
+        "c": "A coroa exige competir bem."
+      },
+      "hint": "Compare as imagens de disciplina e prêmio.",
+      "learningObjective": "Ligar as imagens atléticas.",
+      "evidence": [
+        "2 Timóteo 2:5",
+        "1 Coríntios 9:24–25"
+      ]
+    }
+  ]
+}

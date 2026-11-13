@@ -1,0 +1,486 @@
+{
+  "study": {
+    "passageRef": "Ageu 1:4–9",
+    "passages": [
+      { "ref": "Ageu 1:4–9" },
+      { "ref": "Ageu 1:2" },
+      { "ref": "Ageu 1:10–11" }
+    ],
+    "context": "Depois do exílio, o povo em Judá reconstruiu suas casas, mas a Casa do Senhor ficou em ruínas. Por Ageu, o Senhor confronta essa prioridade e chama a construir.",
+    "keyword": "ruínas",
+    "keywordGloss": "O estado da Casa do Senhor enquanto o povo cuida só da própria casa.",
+    "focusQuestion": "O que na sua vida está bem cuidado enquanto a Casa do Senhor fica em segundo plano?",
+    "reflectionPrompts": [
+      "Prioridade invertida",
+      "Considerar os caminhos",
+      "Casa em ruínas"
+    ],
+    "facts": [
+      {
+        "text": "O povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+        "evidenceRef": "Ageu 1:2",
+        "evidenceSpan": "Não veio ainda o tempo"
+      },
+      {
+        "text": "O Senhor pergunta se é tempo de habitar em casas apaineladas enquanto a casa permanece em ruínas.",
+        "evidenceRef": "Ageu 1:4",
+        "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas"
+      },
+      {
+        "text": "O Senhor manda considerar os caminhos.",
+        "evidenceRef": "Ageu 1:5",
+        "evidenceSpan": "Considerai os vossos caminhos"
+      },
+      {
+        "text": "Semear muito e colher pouco marca o esforço sem fruto.",
+        "evidenceRef": "Ageu 1:6",
+        "evidenceSpan": "Semeiam muito, mas colhem pouco"
+      },
+      {
+        "text": "O Senhor manda subir ao monte, trazer madeira e construir a casa.",
+        "evidenceRef": "Ageu 1:8",
+        "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa"
+      },
+      {
+        "text": "A escassez vem porque a casa do Senhor permanece em ruínas enquanto cada um corre para a própria casa.",
+        "evidenceRef": "Ageu 1:9",
+        "evidenceSpan": "por causa da minha casa, que permanece em ruínas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ruínas",
+        "gloss": "Estado da Casa do Senhor enquanto o povo cuida só de si."
+      },
+      {
+        "term": "Considerai",
+        "gloss": "Chamado a olhar com atenção os próprios caminhos."
+      },
+      {
+        "term": "construam",
+        "gloss": "Ação concreta pedida: reedificar a Casa do Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O povo adia a obra da Casa",
+        "evidenceRef": "Ageu 1:2"
+      },
+      {
+        "label": "O Senhor confronta casas boas e templo em ruínas",
+        "evidenceRef": "Ageu 1:4"
+      },
+      {
+        "label": "Esforço sem fruto e chamado a refletir",
+        "evidenceRef": "Ageu 1:5–7"
+      },
+      {
+        "label": "Ordem de construir e razão da escassez",
+        "evidenceRef": "Ageu 1:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Casas apaineladas do povo contrastam com a Casa do Senhor em ruínas.",
+        "marker": "enquanto",
+        "evidenceRef": "Ageu 1:4"
+      },
+      {
+        "kind": "causa",
+        "text": "A escassez acontece por causa da casa do Senhor que permanece em ruínas.",
+        "marker": "por causa",
+        "evidenceRef": "Ageu 1:9"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso os céus se fecham e a terra não produz frutos.",
+        "marker": "Por isso",
+        "evidenceRef": "Ageu 1:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Mateus 6:33", "bridge": "Buscar primeiro o Reino" },
+      { "ref": "1 Reis 8:17–18", "bridge": "Desejo de edificar a Casa" },
+      { "ref": "Esdras 5:1–2", "bridge": "Ageu anima a reconstrução" }
+    ],
+    "misreadings": [
+      {
+        "text": "O povo só esperava o momento certo; não havia culpa.",
+        "why": "O Senhor confronta a desculpa: há tempo para casas apaineladas, não para a Casa dele."
+      },
+      {
+        "text": "A escassez veio por azar climático, sem ligação com a prioridade.",
+        "why": "Ageu 1:9–10 liga a falta ao descuido com a casa do Senhor."
+      },
+      {
+        "text": "Bastava orar; construir a casa não era necessário.",
+        "why": "Em 1:8 o Senhor manda subir, trazer madeira e construir."
+      }
+    ],
+    "centralInsight": "Enquanto cada um corre para a própria casa, a casa do Senhor fica em ruínas.",
+    "anchorQuestion": "Segundo Ageu 1:9, por que o Senhor soprou sobre o pouco que o povo alcançou?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ageu 1:2, o povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+      "verseRef": "Ageu 1:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não veio ainda o tempo",
+      "feedbackCorrect": "O povo afirma que o tempo de edificar a Casa ainda não chegou.",
+      "feedbackWrong": { "false": "Releia 1:2: o povo diz que o tempo ainda não veio." },
+      "hint": "Veja o que este povo diz sobre o tempo.",
+      "learningObjective": "Observar a desculpa do povo sobre o tempo.",
+      "evidence": ["Ageu 1:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:4, toque o tipo de casas em que o povo habita.",
+      "verseRef": "Ageu 1:4",
+      "evidenceSpan": "casas apaineladas",
+      "feedbackCorrect": "O povo habita em casas apaineladas, enquanto a Casa fica em ruínas.",
+      "hint": "Procure o adjetivo das casas do povo.",
+      "learningObjective": "Identificar como o texto descreve as casas do povo.",
+      "evidence": ["Ageu 1:4"],
+      "options": [
+        { "id": "a", "text": "casas apaineladas" },
+        { "id": "b", "text": "esta casa" },
+        { "id": "c", "text": "em ruínas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Esta casa\" é a do Senhor, não o tipo das casas do povo.",
+        "c": "\"Em ruínas\" descreve a Casa do Senhor, não as do povo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ageu 1:6, o que acontece com quem recebe salário?",
+      "verseRef": "Ageu 1:6",
+      "evidenceSpan": "recebe-o em um saquitel furado",
+      "feedbackCorrect": "O salário entra num saquitel furado: o ganho não segura.",
+      "hint": "Veja a imagem do saquitel no fim do versículo.",
+      "learningObjective": "Observar a imagem do salário que não permanece.",
+      "evidence": ["Ageu 1:6"],
+      "options": [
+        { "id": "a", "text": "Guarda o salário em casa segura" },
+        { "id": "b", "text": "Recebe o salário em saquitel furado" },
+        { "id": "c", "text": "Devolve o salário ao templo" },
+        { "id": "d", "text": "Multiplica o salário com juros" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto não fala de casa segura para o salário.",
+        "c": "O versículo não fala de devolver o salário ao templo.",
+        "d": "O texto descreve perda, não multiplicação."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ageu 1:8 na ordem do texto.",
+      "verseRef": "Ageu 1:8",
+      "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa",
+      "feedbackCorrect": "A ordem é subir, trazer madeira e construir a casa.",
+      "hint": "O versículo começa com o verbo de subir.",
+      "learningObjective": "Reconhecer a sequência do chamado a construir.",
+      "evidence": ["Ageu 1:8"],
+      "options": [
+        { "id": "a", "text": "Subam ao monte" },
+        { "id": "b", "text": "tragam madeira e construam a casa" },
+        { "id": "c", "text": "dela me agradarei e serei glorificado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo monte; a glória fecha o versículo." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ageu 1:5, que verbo o Senhor usa ao mandar olhar os caminhos?",
+      "verseRef": "Ageu 1:5",
+      "evidenceSpan": "Considerai os vossos caminhos",
+      "feedbackCorrect": "O Senhor manda: Considerai os vossos caminhos.",
+      "hint": "É o primeiro verbo do mandato no versículo.",
+      "learningObjective": "Lembrar o verbo do chamado a refletir.",
+      "evidence": ["Ageu 1:5"],
+      "options": [
+        { "id": "a", "text": "Fugi" },
+        { "id": "b", "text": "Considerai" },
+        { "id": "c", "text": "Cantai" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Fugi\" não aparece em 1:5; o Senhor pede outra ação.",
+        "c": "\"Cantai\" não aparece em 1:5; o Senhor pede outra ação."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ageu 1:9 comunica que se liga a este contexto?",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "enquanto cada um de vós corre para a sua própria casa",
+      "feedbackCorrect": "Cada um corre para si enquanto a Casa do Senhor fica em ruínas.",
+      "hint": "Compare a casa do povo com a casa do Senhor.",
+      "learningObjective": "Ligar Ageu 1:9 à prioridade invertida.",
+      "evidence": ["Ageu 1:9"],
+      "passageA": { "ref": "Ageu 1:9" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O povo reconstruiu casas próprias e deixou a Casa do Senhor em ruínas."
+      },
+      "options": [
+        { "id": "a", "text": "Prioridade só no próprio lar" },
+        { "id": "b", "text": "Festa no templo restaurado" },
+        { "id": "c", "text": "Viagem de volta ao exílio" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de ruínas, não de festa no templo.",
+        "c": "O texto não fala de volta ao exílio."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ageu 1:9, a escassez acontece porque a casa do Senhor permanece em ruínas.",
+      "verseRef": "Ageu 1:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "O Senhor explica a falta: é por causa da casa dele em ruínas.",
+      "feedbackWrong": { "false": "Releia a pergunta \"Por que isso?\" e a resposta em 1:9." },
+      "hint": "Veja a resposta do Senhor à pergunta \"Por que isso?\".",
+      "learningObjective": "Compreender a causa da escassez no texto.",
+      "evidence": ["Ageu 1:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:4, toque a palavra que marca o contraste entre as casas.",
+      "verseRef": "Ageu 1:4",
+      "evidenceSpan": "enquanto esta casa permanece em ruínas",
+      "feedbackCorrect": "\"Enquanto\" marca o contraste: casas boas e Casa em ruínas.",
+      "hint": "É a palavra que liga as duas situações no versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 1:4.",
+      "evidence": ["Ageu 1:4"],
+      "options": [
+        { "id": "a", "text": "tempo" },
+        { "id": "b", "text": "enquanto" },
+        { "id": "c", "text": "habitar" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Tempo\" abre a pergunta, não marca o contraste.",
+        "c": "\"Habitar\" é a ação do povo, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ageu 1:4–9 relaciona o conforto do povo com a Casa do Senhor?",
+      "verseRef": "Ageu 1:4–5",
+      "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas",
+      "feedbackCorrect": "O conforto próprio avança enquanto a Casa do Senhor fica abandonada.",
+      "hint": "Compare as casas do povo com a casa mencionada depois.",
+      "learningObjective": "Relacionar o conforto do povo ao abandono da Casa.",
+      "evidence": ["Ageu 1:4–5"],
+      "options": [
+        { "id": "a", "text": "O conforto próprio avança e a Casa fica em ruínas" },
+        { "id": "b", "text": "O povo e o templo prosperam juntos" },
+        { "id": "c", "text": "Só o templo tem madeira; as casas não" },
+        { "id": "d", "text": "O Senhor elogia o luxo das casas do povo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto mostra contraste, não prosperidade conjunta.",
+        "c": "O Senhor manda trazer madeira para a Casa, não para as casas.",
+        "d": "O Senhor confronta, não elogia o luxo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o argumento de Ageu 1:4–9?",
+      "verseRef": "Ageu 1:4–9",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "Confronta o conforto, manda refletir, ordena construir e explica a falta.",
+      "hint": "Comece pelo confronto das casas.",
+      "learningObjective": "Seguir o movimento do argumento no trecho.",
+      "evidence": ["Ageu 1:4–9"],
+      "options": [
+        { "id": "a", "text": "O Senhor confronta casas boas e templo em ruínas" },
+        { "id": "b", "text": "Manda considerar os caminhos e construir a casa" },
+        { "id": "c", "text": "Explica a escassez pelo abandono da Casa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Confronto primeiro; a razão da escassez vem por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ageu 1:9, que verbo descreve a ação do Senhor sobre o pouco alcançado?",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "eu soprei sobre ele",
+      "feedbackCorrect": "O Senhor diz: \"eu soprei sobre ele\" — o pouco não ficou.",
+      "hint": "É o verbo da ação do Senhor sobre o que trouxeram.",
+      "learningObjective": "Lembrar o verbo que marca a ação do Senhor na escassez.",
+      "evidence": ["Ageu 1:9"],
+      "options": [
+        { "id": "a", "text": "guardei" },
+        { "id": "b", "text": "soprei" },
+        { "id": "c", "text": "multipliquei" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Guardei\" sugeriria preservação; o texto fala de soprar sobre o pouco.",
+        "c": "\"Multipliquei\" sugeriria aumento; o texto fala de soprar sobre o pouco."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ageu 1:9 a Mateus 6:33?",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "Nos dois textos, buscar primeiro o que é de Deus muda o resto.",
+      "hint": "Compare o que fica em primeiro lugar.",
+      "learningObjective": "Relacionar a prioridade da Casa ao buscar primeiro o Reino.",
+      "evidence": ["Ageu 1:9", "Mateus 6:33"],
+      "passageA": { "ref": "Ageu 1:9" },
+      "passageB": { "ref": "Mateus 6:33" },
+      "options": [
+        { "id": "a", "text": "Buscar primeiro o de Deus" },
+        { "id": "b", "text": "Acumular madeira e ouro" },
+        { "id": "c", "text": "Adiar toda decisão de fé" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos ensina acumular madeira e ouro como prioridade.",
+        "c": "Os textos chamam a agir com a prioridade certa, não a adiar."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ageu 1:4–9, o Senhor aceita que a Casa espere enquanto o povo cuida só das próprias casas.",
+      "verseRef": "Ageu 1:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas?",
+      "feedbackCorrect": "A pergunta retórica confronta a prioridade; o Senhor não aceita o adiamento.",
+      "feedbackWrong": { "true": "A pergunta em 1:4 confronta, não autoriza, o adiamento." },
+      "hint": "Leia o tom da pergunta em 1:4.",
+      "learningObjective": "Interpretar o confronto do Senhor sobre prioridades.",
+      "evidence": ["Ageu 1:4–5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:9, toque o trecho que mostra cada um correndo para si.",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "cada um de vós corre para a sua própria casa",
+      "feedbackCorrect": "Cada um corre para a própria casa: prioridade centrada em si.",
+      "hint": "Procure o verbo de correr no fim do versículo.",
+      "learningObjective": "Sustentar com o texto a prioridade centrada em si.",
+      "evidence": ["Ageu 1:9"],
+      "options": [
+        { "id": "a", "text": "própria casa" },
+        { "id": "b", "text": "minha casa" },
+        { "id": "c", "text": "pouco alcançastes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Minha casa\" é a do Senhor, não o destino da corrida do povo.",
+        "c": "\"Pouco alcançastes\" descreve o resultado, não a corrida."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Ageu 1:4–9 sustenta sobre a escassez do povo?",
+      "verseRef": "Ageu 1:9–10",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "A falta está ligada ao abandono da Casa do Senhor, não ao acaso.",
+      "hint": "Compare cada opção com a resposta \"Por que isso?\".",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a escassez.",
+      "evidence": ["Ageu 1:9–10"],
+      "options": [
+        { "id": "a", "text": "A escassez denuncia o abandono da Casa do Senhor" },
+        { "id": "b", "text": "A escassez prova que o Senhor rejeitou Israel para sempre" },
+        { "id": "c", "text": "A escassez não tem relação com as escolhas do povo" },
+        { "id": "d", "text": "A escassez vem só de inimigos externos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O Senhor chama a construir e se agradar da Casa, não anuncia rejeição final.",
+        "c": "O texto liga a falta às prioridades do povo.",
+        "d": "O texto aponta a casa em ruínas e os céus fechados, não só inimigos."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o chamado bíblico a priorizar a Casa de Deus?",
+      "verseRef": "Ageu 1:8–9",
+      "evidenceSpan": "construam a casa; dela me agradarei e serei glorificado",
+      "feedbackCorrect": "Ageu manda construir; a Casa desejada ecoa em Salomão; Jesus manda buscar primeiro o Reino.",
+      "hint": "Parta de Ageu e avance na Escritura.",
+      "learningObjective": "Ver o chamado de Ageu no fio bíblico da prioridade.",
+      "evidence": ["Ageu 1:8", "1 Reis 8:17–18", "Mateus 6:33"],
+      "options": [
+        { "id": "a", "text": "Ageu manda construir a Casa do Senhor" },
+        { "id": "b", "text": "Salomão lembra o desejo de edificar a Casa" },
+        { "id": "c", "text": "Jesus manda buscar primeiro o Reino de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Ageu 1:8, 1 Reis 8 e Mateus 6:33." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ageu 1:9, que palavra descreve o estado da Casa do Senhor?",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "minha casa, que permanece em ruínas",
+      "feedbackCorrect": "A Casa permanece em ruínas: esse é o estado que o Senhor denuncia.",
+      "hint": "É a palavra que descreve o estado da casa dele.",
+      "learningObjective": "Lembrar o termo que carrega o sentido do abandono.",
+      "evidence": ["Ageu 1:9"],
+      "options": [
+        { "id": "a", "text": "festa" },
+        { "id": "b", "text": "ruínas" },
+        { "id": "c", "text": "paz" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Festa\" não descreve a Casa em 1:9.",
+        "c": "\"Paz\" não descreve a Casa em 1:9."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ageu 1:8 a Esdras 5:1–2?",
+      "verseRef": "Ageu 1:8",
+      "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa",
+      "feedbackCorrect": "Em Esdras, Ageu anima a retomada da obra; em 1:8 o Senhor manda construir.",
+      "hint": "Veja o papel de Ageu na reconstrução.",
+      "learningObjective": "Ligar o mandato de construir à obra retomada em Esdras.",
+      "evidence": ["Ageu 1:8", "Esdras 5:1–2"],
+      "passageA": { "ref": "Ageu 1:8" },
+      "passageB": { "ref": "Esdras 5:1–2" },
+      "options": [
+        { "id": "a", "text": "Profeta anima a reconstrução" },
+        { "id": "b", "text": "Fim definitivo do templo" },
+        { "id": "c", "text": "Exílio forçado a Babilônia" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos apontam construção, não fim do templo.",
+        "c": "O cenário é de retorno e obra, não de novo exílio."
+      }
+    }
+  ]
+}

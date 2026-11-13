@@ -5,6 +5,7 @@ import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/walk_companion.dart';
+import '../services/referral_rewards_service.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/companion_service.dart';
@@ -100,9 +101,26 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     final active = _index == index && _routeCurrent;
     return ShellTabScope(
       active: active,
-      child: TickerMode(enabled: active, child: child),
+      child: TickerMode(
+        enabled: active,
+        child: Appearance(
+          style: Appearance.of(context).withPlace(_placeTint(index)),
+          mode: context.read<ProgressService>().settings.appearanceMode,
+          child: child,
+        ),
+      ),
     );
   }
+
+  /// Tom de cada aba dentro da tela — o mesmo da pílula ativa do nav.
+  /// Hoje fica neutro: a lâmpada é vizinha do ouro de ação e recompensa.
+  static Color? _placeTint(int index) => switch (index) {
+    1 => AppRoles.navTrails,
+    2 => AppRoles.navBible,
+    3 => AppRoles.navTogether,
+    4 => AppRoles.navSettings,
+    _ => null,
+  };
 
   String _languageCode = 'pt';
   bool _routeCurrent = true;
@@ -228,6 +246,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       );
       unawaited(RemoteConfigService.instance.init());
       _onBackendChanged();
+      unawaited(_checkReferralReward());
       final pending = NotificationService.instance.takePendingAction();
       if (pending != null) {
         WidgetsBinding.instance.addPostFrameCallback((_) {
@@ -407,6 +426,28 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
     }
   }
 
+  /// Alguém assinou o Peregrino+ por um convite desta pessoa: avisa uma
+  /// vez por mês ganho (functions/referral.js grava o saldo).
+  Future<void> _checkReferralReward() async {
+    final uid = context.read<BackendService>().uid;
+    final reward = await ReferralRewardsService.instance.refresh(uid);
+    if (!mounted || reward == null) return;
+    final l10n = context.l10n;
+    final named = reward.name.trim().isNotEmpty;
+    final message = reward.kept
+        ? (named
+              ? l10n.referralRewardKept(reward.name)
+              : l10n.referralRewardKeptAnon)
+        : (named
+              ? l10n.referralRewardGranted(reward.name)
+              : l10n.referralRewardGrantedAnon);
+    if (!reward.kept) {
+      // O mês promocional entra pelo RevenueCat: relê o entitlement.
+      unawaited(context.read<SubscriptionService>().refreshCustomerInfo());
+    }
+    showAppToastFor(context, message: message, glyph: CinematicGlyph.gift);
+  }
+
   Future<void> _syncCompanionAndCelebrateReferral(
     ProgressService progress,
   ) async {
@@ -456,6 +497,7 @@ class _MainShellState extends State<MainShell> with WidgetsBindingObserver {
       _syncReminders();
       // Outro aparelho pode ter avançado na nuvem enquanto este ficou aberto.
       unawaited(_syncCloudOnResume());
+      unawaited(_checkReferralReward());
     }
   }
 

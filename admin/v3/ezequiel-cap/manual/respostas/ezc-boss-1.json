@@ -1,0 +1,633 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 2:1–6",
+    "passages": [
+      { "ref": "Ezequiel 1:4–9" },
+      { "ref": "Ezequiel 2:1–6" },
+      { "ref": "Ezequiel 3:4–9" },
+      { "ref": "Ezequiel 4:1–6" },
+      { "ref": "Ezequiel 5:1–6" },
+      { "ref": "Ezequiel 6:1–6" }
+    ],
+    "context": "Esta travessia reúne a visão da glória, o envio ao povo rebelde, o fortalecimento do profeta, o tijolo sitiado, o cabelo dividido e o juízo contra os montes.",
+    "keyword": "casa rebelde",
+    "keywordGloss": "O povo a quem a glória envia o profeta: resistente, mas ainda destinatário da palavra e do sinal.",
+    "focusQuestion": "Quando a glória do Senhor te chama a falar a quem resiste, o que você faz?",
+    "reflectionPrompts": [
+      "A glória que chama",
+      "Enviado aos rebeldes",
+      "Sinais de juízo"
+    ],
+    "facts": [
+      {
+        "text": "Do meio da nuvem saía a semelhança de quatro seres viventes.",
+        "evidenceRef": "Ezequiel 1:5",
+        "evidenceSpan": "saía a semelhança de quatro seres viventes"
+      },
+      {
+        "text": "O Espírito entrou em Ezequiel e o levantou em pé.",
+        "evidenceRef": "Ezequiel 2:2",
+        "evidenceSpan": "o Espírito entrou em mim enquanto falava comigo, e me levantou em pé"
+      },
+      {
+        "text": "A casa de Israel não ouvirá, pois não deseja ouvir o Senhor.",
+        "evidenceRef": "Ezequiel 3:7",
+        "evidenceSpan": "a casa de Israel não te ouvirá pois não deseja ouvir a Mim"
+      },
+      {
+        "text": "Ezequiel grava Jerusalém num tijolo e a cerca como sinal.",
+        "evidenceRef": "Ezequiel 4:1",
+        "evidenceSpan": "pega um tijolo e coloca-o diante de ti. Nele, grava a cidade de Jerusalém"
+      },
+      {
+        "text": "Jerusalém foi colocada no centro das nações.",
+        "evidenceRef": "Ezequiel 5:5",
+        "evidenceSpan": "Esta é Jerusalém, que coloquei no centro das nações"
+      },
+      {
+        "text": "O Senhor trará a espada e destruirá os altos dos montes.",
+        "evidenceRef": "Ezequiel 6:3",
+        "evidenceSpan": "trarei a espada sobre vocês e destruirei os seus altos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "seres viventes",
+        "gloss": "Figuras da visão da glória, com rostos e asas."
+      },
+      {
+        "term": "iniquidade",
+        "gloss": "O peso do pecado que o profeta carrega nos dias deitados."
+      },
+      {
+        "term": "altos",
+        "gloss": "Lugares de culto idólatra que o juízo do Senhor destrói."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A glória se revela com seres viventes",
+        "evidenceRef": "Ezequiel 1:4–6"
+      },
+      {
+        "label": "O profeta é levantado e enviado",
+        "evidenceRef": "Ezequiel 2:1–3"
+      },
+      {
+        "label": "Sinais do tijolo e do cabelo",
+        "evidenceRef": "Ezequiel 4:1–3"
+      },
+      {
+        "label": "Juízo sobre Jerusalém e os montes",
+        "evidenceRef": "Ezequiel 5:5–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Israel não ouve o profeta porque não deseja ouvir o Senhor.",
+        "marker": "pois",
+        "evidenceRef": "Ezequiel 3:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Jerusalém, posta no centro, porém se tornou mais ímpia que as nações.",
+        "marker": "porém",
+        "evidenceRef": "Ezequiel 5:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Espírito levanta o profeta e o põe em pé para ouvir e ser enviado.",
+        "marker": "Então",
+        "evidenceRef": "Ezequiel 2:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 6:8–9",
+        "bridge": "Enviado a povo duro"
+      },
+      {
+        "ref": "Jeremias 1:7–8",
+        "bridge": "Não temer ao falar"
+      },
+      {
+        "ref": "Apocalipse 4:7–8",
+        "bridge": "Quatro seres ao redor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A visão da glória dispensa o envio a um povo rebelde.",
+        "why": "Depois da visão, o Espírito o põe em pé e o Senhor o envia às nações rebeldes."
+      },
+      {
+        "text": "Os sinais do tijolo e do cabelo são só teatro sem juízo real.",
+        "why": "O tijolo é sinal para a casa, e o cabelo aponta fogo, espada e vento."
+      },
+      {
+        "text": "Jerusalém foi pior porque nunca teve lugar privilegiado.",
+        "why": "O Senhor a colocou no centro das nações; a culpa é a rebeldia maior."
+      }
+    ],
+    "centralInsight": "A glória chama e envia a um povo rebelde",
+    "anchorQuestion": "A quem Ezequiel é enviado em Ezequiel 2:3?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 1:6, cada ser vivente tinha quatro rostos e também quatro asas.",
+      "verseRef": "Ezequiel 1:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "quatro rostos e também quatro asas",
+      "feedbackCorrect": "O versículo afirma quatro rostos e quatro asas em cada ser.",
+      "feedbackWrong": {
+        "false": "O texto diz que cada um tinha quatro rostos e quatro asas."
+      },
+      "hint": "Conte o que o versículo atribui a cada ser.",
+      "learningObjective": "Identificar a descrição básica dos seres viventes.",
+      "evidence": ["Ezequiel 1:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 2:3, toque a quem o Senhor envia o filho do homem.",
+      "verseRef": "Ezequiel 2:3",
+      "options": [
+        { "id": "a", "text": "filhos de Israel" },
+        { "id": "b", "text": "Filho do homem" },
+        { "id": "c", "text": "este dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te envio aos filhos de Israel, às nações rebeldes",
+      "feedbackCorrect": "O envio é aos filhos de Israel, às nações rebeldes.",
+      "feedbackWrong": {
+        "b": "É o vocativo do enviado, não o destino.",
+        "c": "Indica o tempo da prevaricação, não o destinatário."
+      },
+      "hint": "Procure a quem ele é enviado.",
+      "learningObjective": "Identificar o destinatário do envio.",
+      "evidence": ["Ezequiel 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 4:1, o que Ezequiel deve gravar no tijolo?",
+      "verseRef": "Ezequiel 4:1",
+      "options": [
+        { "id": "a", "text": "A cidade de Jerusalém" },
+        { "id": "b", "text": "O nome de Babilônia" },
+        { "id": "c", "text": "Uma lista de reis" },
+        { "id": "d", "text": "O mapa do Egito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nele, grava a cidade de Jerusalém",
+      "feedbackCorrect": "No tijolo se grava a cidade de Jerusalém.",
+      "feedbackWrong": {
+        "b": "O texto manda gravar Jerusalém, não Babilônia.",
+        "c": "Não há lista de reis neste versículo.",
+        "d": "O Egito não aparece neste sinal."
+      },
+      "hint": "Leia o fim do versículo sobre o que se grava.",
+      "learningObjective": "Reconhecer o conteúdo do sinal no tijolo.",
+      "evidence": ["Ezequiel 4:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 1:4 na ordem do texto.",
+      "verseRef": "Ezequiel 1:4",
+      "options": [
+        { "id": "a", "text": "um vento tempestuoso vinha do norte" },
+        { "id": "b", "text": "uma grande nuvem com fogo se revolvendo dentro dela" },
+        { "id": "c", "text": "e um resplendor ao seu redor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "um vento tempestuoso vinha do norte, uma grande nuvem com fogo",
+      "feedbackCorrect": "Primeiro o vento do norte, depois a nuvem com fogo e o resplendor.",
+      "feedbackWrong": {
+        "default": "Comece pelo vento do norte; o resplendor fecha a sequência."
+      },
+      "hint": "Siga as imagens depois de \"eis que\".",
+      "learningObjective": "Reconhecer a ordem das imagens da visão.",
+      "evidence": ["Ezequiel 1:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 5:5, Esta é ___, que coloquei no centro das nações.",
+      "verseRef": "Ezequiel 5:5",
+      "options": [
+        { "id": "a", "text": "Jerusalém" },
+        { "id": "b", "text": "Babilônia" },
+        { "id": "c", "text": "Nínive" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta é Jerusalém, que coloquei no centro das nações",
+      "feedbackCorrect": "A cidade no centro é Jerusalém.",
+      "feedbackWrong": {
+        "b": "O texto nomeia Jerusalém, não Babilônia.",
+        "c": "A cidade nomeada é Jerusalém."
+      },
+      "hint": "Veja o nome depois de \"Esta é\".",
+      "learningObjective": "Lembrar a cidade posta no centro.",
+      "evidence": ["Ezequiel 5:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 2:2 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 2:2",
+      "passageA": { "ref": "Ezequiel 2:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A glória chama: o Espírito põe o profeta em pé para ouvir e ser enviado."
+      },
+      "options": [
+        { "id": "a", "text": "Espírito que levanta" },
+        { "id": "b", "text": "Cabelo ao vento" },
+        { "id": "c", "text": "Altares desolados" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito entrou em mim enquanto falava comigo, e me levantou em pé",
+      "feedbackCorrect": "O versículo liga o contexto ao Espírito que põe o profeta em pé.",
+      "feedbackWrong": {
+        "b": "O cabelo ao vento está em Ezequiel 5.",
+        "c": "Os altares desolados estão em Ezequiel 6."
+      },
+      "hint": "Veja quem entra e levanta o profeta.",
+      "learningObjective": "Ligar o levantar do Espírito ao contexto da travessia.",
+      "evidence": ["Ezequiel 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 6:3, toque o que o Senhor destruirá.",
+      "verseRef": "Ezequiel 6:3",
+      "options": [
+        { "id": "a", "text": "os seus altos" },
+        { "id": "b", "text": "aos outeiros" },
+        { "id": "c", "text": "aos vales" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "destruirei os seus altos",
+      "feedbackCorrect": "O objeto da destruição é os altos.",
+      "feedbackWrong": {
+        "b": "Os outeiros ouvem a palavra; o destruído são os altos.",
+        "c": "Os vales são destinatários, não o alvo destruído."
+      },
+      "hint": "Procure o objeto de \"destruirei\".",
+      "learningObjective": "Identificar o alvo do juízo nos montes.",
+      "evidence": ["Ezequiel 6:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte a ordem do sinal do cabelo em Ezequiel 5:2.",
+      "verseRef": "Ezequiel 5:2",
+      "options": [
+        { "id": "a", "text": "Queimarás um terço no fogo, no meio da cidade" },
+        { "id": "b", "text": "tomarás outro terço e o ferirás com a espada ao redor da cidade" },
+        { "id": "c", "text": "e o restante espalharás ao vento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Queimarás um terço no fogo, no meio da cidade",
+      "feedbackCorrect": "A ordem do sinal é fogo, espada e vento.",
+      "feedbackWrong": {
+        "default": "Comece pelo terço no fogo; o vento fecha."
+      },
+      "hint": "Siga as três ações do versículo.",
+      "learningObjective": "Reconhecer a sequência das três partes do cabelo.",
+      "evidence": ["Ezequiel 5:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 3:7, a casa de Israel não ouvirá o profeta porque não deseja ouvir o Senhor.",
+      "verseRef": "Ezequiel 3:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "não te ouvirá pois não deseja ouvir a Mim",
+      "feedbackCorrect": "A causa da recusa ao profeta é a recusa ao Senhor.",
+      "feedbackWrong": {
+        "false": "O versículo liga a recusa ao desejo de não ouvir a Mim."
+      },
+      "hint": "Leia a palavra \"pois\" e o motivo.",
+      "learningObjective": "Compreender a causa da recusa de Israel.",
+      "evidence": ["Ezequiel 3:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 5:6, toque a palavra que marca o contraste com o lugar de Jerusalém.",
+      "verseRef": "Ezequiel 5:6",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "nações" },
+        { "id": "c", "text": "terras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ela, porém, se tornou mais ímpia",
+      "feedbackCorrect": "\"Porém\" marca o contraste entre o centro e a impiedade maior.",
+      "feedbackWrong": {
+        "b": "\"Nações\" entra na comparação, não marca o contraste.",
+        "c": "\"Terras\" situa o redor; o contraste está em \"porém\"."
+      },
+      "hint": "Procure a palavra depois de \"Ela\".",
+      "learningObjective": "Tocar o marcador de contraste sobre Jerusalém.",
+      "evidence": ["Ezequiel 5:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 2:2 se relaciona com o envio que vem em seguida?",
+      "verseRef": "Ezequiel 2:2",
+      "options": [
+        { "id": "a", "text": "O Espírito o põe em pé para ouvir antes de ser enviado" },
+        { "id": "b", "text": "O Espírito o afasta para não falar ao povo" },
+        { "id": "c", "text": "Ele se levanta sozinho, sem o Espírito" },
+        { "id": "d", "text": "O levantar cancela qualquer envio posterior" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito entrou em mim enquanto falava comigo, e me levantou em pé e eu ouvi",
+      "feedbackCorrect": "O Espírito o levanta e ele ouve; o envio vem sobre essa preparação.",
+      "feedbackWrong": {
+        "b": "O Espírito o prepara para ouvir, não para calar.",
+        "c": "O texto diz que o Espírito o levantou.",
+        "d": "O levantar prepara o envio, não o cancela."
+      },
+      "hint": "Veja a sequência entrar, levantar e ouvir.",
+      "learningObjective": "Compreender a relação entre o Espírito e o envio.",
+      "evidence": ["Ezequiel 2:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a etapa avança da visão ao juízo nos montes?",
+      "verseRef": "Ezequiel 1:5",
+      "options": [
+        { "id": "a", "text": "A glória se revela com seres viventes" },
+        { "id": "b", "text": "O profeta é levantado e enviado" },
+        { "id": "c", "text": "Juízo sobre Jerusalém e os montes" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "saía a semelhança de quatro seres viventes",
+      "feedbackCorrect": "A visão abre; o envio segue; o juízo fecha a etapa.",
+      "feedbackWrong": {
+        "default": "Comece pela glória; o juízo nos montes fecha."
+      },
+      "hint": "Pense em visão, envio e juízo.",
+      "learningObjective": "Ordenar os movimentos principais da etapa.",
+      "evidence": ["Ezequiel 1:5", "Ezequiel 2:2–3", "Ezequiel 5:5", "Ezequiel 6:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 3:7, a casa de Israel não te ouvirá ___ não deseja ouvir a Mim.",
+      "verseRef": "Ezequiel 3:7",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "embora" },
+        { "id": "c", "text": "nunca" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não te ouvirá pois não deseja ouvir a Mim",
+      "feedbackCorrect": "\"Pois\" carrega a causa da recusa ao profeta.",
+      "feedbackWrong": {
+        "b": "O texto usa \"pois\", não \"embora\".",
+        "c": "A palavra que liga a causa é \"pois\"."
+      },
+      "hint": "Veja a palavra curta entre as duas frases.",
+      "learningObjective": "Lembrar o marcador de causa na recusa.",
+      "evidence": ["Ezequiel 3:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 2:6 a Jeremias 1:7–8?",
+      "verseRef": "Ezequiel 2:6",
+      "passageA": { "ref": "Ezequiel 2:6" },
+      "passageB": { "ref": "Jeremias 1:7–8" },
+      "options": [
+        { "id": "a", "text": "Não temer ao falar" },
+        { "id": "b", "text": "Tijolo com aríetes" },
+        { "id": "c", "text": "Cabelo em três partes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não os temas nem tenhas medo das suas palavras",
+      "feedbackCorrect": "Nos dois chamados, o enviado recebe ordem de não temer.",
+      "feedbackWrong": {
+        "b": "O tijolo está em Ezequiel 4.",
+        "c": "O cabelo está em Ezequiel 5."
+      },
+      "hint": "Compare a ordem de não temer nos dois textos.",
+      "learningObjective": "Relacionar o chamado de Ezequiel ao de Jeremias.",
+      "evidence": ["Ezequiel 2:6", "Jeremias 1:7–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 4:6, toque a palavra que marca a sequência após os dias de Israel.",
+      "verseRef": "Ezequiel 4:6",
+      "options": [
+        { "id": "a", "text": "Quando" },
+        { "id": "b", "text": "quarenta" },
+        { "id": "c", "text": "Judá" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando tiveres cumprido estes dias",
+      "feedbackCorrect": "\"Quando\" marca a virada para o lado direito e Judá.",
+      "feedbackWrong": {
+        "b": "\"Quarenta\" é o número de dias, não o marcador.",
+        "c": "\"Judá\" é o destino do sinal; a sequência está em \"Quando\"."
+      },
+      "hint": "Procure a palavra que abre o versículo.",
+      "learningObjective": "Tocar o marcador de sequência entre Israel e Judá.",
+      "evidence": ["Ezequiel 4:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os sinais do corpo do profeta nesta etapa.",
+      "verseRef": "Ezequiel 4:1",
+      "options": [
+        { "id": "a", "text": "Jerusalém gravada e cercada no tijolo" },
+        { "id": "b", "text": "Dias deitado pela iniquidade" },
+        { "id": "c", "text": "Cabelo dividido em fogo, espada e vento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "grava a cidade de Jerusalém",
+      "feedbackCorrect": "O tijolo abre; os dias seguem; o cabelo fecha os sinais.",
+      "feedbackWrong": {
+        "default": "Comece pelo tijolo; o cabelo fecha os sinais."
+      },
+      "hint": "Siga a ordem dos capítulos 4 e 5.",
+      "learningObjective": "Ordenar os sinais corporais da etapa.",
+      "evidence": ["Ezequiel 4:1", "Ezequiel 4:4–5", "Ezequiel 5:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 5:5–6, Jerusalém foi mais ímpia porque nunca teve lugar privilegiado entre as nações.",
+      "verseRef": "Ezequiel 5:5–6",
+      "correctOptionId": "false",
+      "evidenceSpan": "se tornou mais ímpia do que as nações",
+      "feedbackCorrect": "Ela foi posta no centro; a culpa é a rebeldia maior, não a falta de lugar.",
+      "feedbackWrong": {
+        "true": "O Senhor a colocou no centro; mesmo assim ela se tornou mais ímpia."
+      },
+      "hint": "Compare o centro de 5:5 com o \"mais ímpia\" de 5:6.",
+      "learningObjective": "Interpretar a culpa à luz do privilégio.",
+      "evidence": ["Ezequiel 5:5–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 3:9, toque o trecho que sustenta a firmeza dada ao profeta.",
+      "verseRef": "Ezequiel 3:9",
+      "options": [
+        { "id": "a", "text": "como diamante" },
+        { "id": "b", "text": "casa rebelde" },
+        { "id": "c", "text": "não os temas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fiz como diamante a tua testa",
+      "feedbackCorrect": "\"Como diamante\" sustenta a firmeza dada à testa do profeta.",
+      "feedbackWrong": {
+        "b": "Descreve o povo, não a firmeza dada.",
+        "c": "É a ordem de atitude; a imagem da firmeza é o diamante."
+      },
+      "hint": "Procure a comparação feita com a testa.",
+      "learningObjective": "Sustentar com o texto o fortalecimento do profeta.",
+      "evidence": ["Ezequiel 3:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura desta etapa o conjunto dos textos sustenta melhor?",
+      "verseRef": "Ezequiel 2:3",
+      "options": [
+        { "id": "a", "text": "A glória chama e envia o profeta a um povo rebelde" },
+        { "id": "b", "text": "A visão dispensa qualquer envio ao povo" },
+        { "id": "c", "text": "Os sinais do tijolo e do cabelo não apontam juízo" },
+        { "id": "d", "text": "Jerusalém nunca teve lugar entre as nações" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te envio aos filhos de Israel, às nações rebeldes",
+      "feedbackCorrect": "A etapa une visão, envio e juízo sobre um povo rebelde.",
+      "feedbackWrong": {
+        "b": "Depois da visão vem o envio explícito.",
+        "c": "Tijolo e cabelo são sinais de juízo.",
+        "d": "Ela foi colocada no centro das nações."
+      },
+      "hint": "Una a visão, o envio e os sinais de juízo.",
+      "learningObjective": "Escolher a interpretação que une a etapa.",
+      "evidence": ["Ezequiel 2:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento teológico da etapa.",
+      "verseRef": "Ezequiel 1:4",
+      "options": [
+        { "id": "a", "text": "A glória se revela ao profeta" },
+        { "id": "b", "text": "Ele é enviado a um povo rebelde" },
+        { "id": "c", "text": "Sinais e juízo caem sobre a casa e os montes" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "um vento tempestuoso vinha do norte",
+      "feedbackCorrect": "A glória abre; o envio segue; o juízo fecha a etapa.",
+      "feedbackWrong": {
+        "default": "Comece pela glória; o juízo fecha."
+      },
+      "hint": "Pense em revelação, missão e juízo.",
+      "learningObjective": "Encadear o sentido teológico da etapa.",
+      "evidence": ["Ezequiel 1:4", "Ezequiel 2:3", "Ezequiel 4:1", "Ezequiel 6:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 4:4, ele põe a ___ da casa de Israel sobre o lado esquerdo.",
+      "verseRef": "Ezequiel 4:4",
+      "options": [
+        { "id": "a", "text": "iniquidade" },
+        { "id": "b", "text": "coroa" },
+        { "id": "c", "text": "oferta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "põe a iniquidade da casa de Israel sobre ele",
+      "feedbackCorrect": "\"Iniquidade\" carrega o sentido teológico do sinal dos dias.",
+      "feedbackWrong": {
+        "b": "O texto não fala de coroa neste gesto.",
+        "c": "O que ele põe sobre si é a iniquidade."
+      },
+      "hint": "Veja o que ele põe sobre o lado esquerdo.",
+      "learningObjective": "Lembrar o termo teológico do peso carregado.",
+      "evidence": ["Ezequiel 4:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 1:5–6 a Apocalipse 4:7–8?",
+      "verseRef": "Ezequiel 1:5–6",
+      "passageA": { "ref": "Ezequiel 1:5–6" },
+      "passageB": { "ref": "Apocalipse 4:7–8" },
+      "options": [
+        { "id": "a", "text": "Quatro seres ao redor" },
+        { "id": "b", "text": "Tijolo sitiado" },
+        { "id": "c", "text": "Cabelo ao vento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quatro rostos e também quatro asas",
+      "feedbackCorrect": "Os dois textos descrevem quatro seres ligados à glória de Deus.",
+      "feedbackWrong": {
+        "b": "O tijolo está em Ezequiel 4.",
+        "c": "O cabelo ao vento está em Ezequiel 5."
+      },
+      "hint": "Compare os seres descritos nos dois textos.",
+      "learningObjective": "Ligar os seres de Ezequiel aos de Apocalipse.",
+      "evidence": ["Ezequiel 1:5–6", "Apocalipse 4:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 6:4, toque o trecho que sustenta o juízo junto aos santuários.",
+      "verseRef": "Ezequiel 6:4",
+      "options": [
+        { "id": "a", "text": "seus ídolos" },
+        { "id": "b", "text": "imagens de incenso" },
+        { "id": "c", "text": "ficarão desolados" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "diante dos seus ídolos",
+      "feedbackCorrect": "\"Seus ídolos\" une a morte ao lugar do culto falso.",
+      "feedbackWrong": {
+        "b": "As imagens são quebradas; o trecho que une morte e culto é outro.",
+        "c": "Descreve os altares; a união com os ídolos está no fim."
+      },
+      "hint": "Procure diante de quem os mortos são arremessados.",
+      "learningObjective": "Sustentar com o texto o juízo junto aos ídolos.",
+      "evidence": ["Ezequiel 6:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do privilégio e do juízo sobre Jerusalém.",
+      "verseRef": "Ezequiel 5:5–6",
+      "options": [
+        { "id": "a", "text": "Jerusalém recebe lugar no centro das nações" },
+        { "id": "b", "text": "Ela se torna mais ímpia e rejeita os estatutos" },
+        { "id": "c", "text": "O juízo cai sobre a cidade e seus montes" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "coloquei no centro das nações",
+      "feedbackCorrect": "O privilégio precede a rebeldia; o juízo fecha o arco.",
+      "feedbackWrong": {
+        "default": "Comece pelo centro; o juízo fecha."
+      },
+      "hint": "Pense em privilégio, rebeldia e juízo.",
+      "learningObjective": "Encadear privilégio e juízo sobre Jerusalém.",
+      "evidence": ["Ezequiel 5:5–6", "Ezequiel 6:3–4"]
+    }
+  ]
+}

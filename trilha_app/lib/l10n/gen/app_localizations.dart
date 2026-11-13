@@ -1093,7 +1093,7 @@ abstract class AppLocalizations {
   /// No description provided for @categoryPanoramaBlurb.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia como uma história só, da criação à nova criação. Antes de entrar livro a livro, esta trilha mostra o arco, a ordem dos livros e o lugar de cada parte.'**
+  /// **'Os pontos altos de cada livro em poucas cenas. Para conhecer o livro inteiro antes de ir capítulo a capítulo.'**
   String get categoryPanoramaBlurb;
 
   /// No description provided for @categoryPanoramaTitle.
@@ -4207,7 +4207,7 @@ abstract class AppLocalizations {
   /// No description provided for @groupDaysAway.
   ///
   /// In pt, this message translates to:
-  /// **'{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}'**
+  /// **'{count, plural, =1{1 dia sem caminhar} other{{count} dias sem caminhar}}'**
   String groupDaysAway(int count);
 
   /// No description provided for @groupEmptyLeaderBody.
@@ -4447,7 +4447,7 @@ abstract class AppLocalizations {
   /// No description provided for @groupSeatIdle.
   ///
   /// In pt, this message translates to:
-  /// **'ainda não estudou nesta semana'**
+  /// **'ainda não caminhou nesta semana'**
   String get groupSeatIdle;
 
   /// No description provided for @groupSeatMakeLeader.
@@ -4465,7 +4465,7 @@ abstract class AppLocalizations {
   /// No description provided for @groupSeatNever.
   ///
   /// In pt, this message translates to:
-  /// **'ainda não estudou'**
+  /// **'ainda não caminhou'**
   String get groupSeatNever;
 
   /// No description provided for @groupSeatSteps.
@@ -4489,7 +4489,7 @@ abstract class AppLocalizations {
   /// No description provided for @groupSeatToday.
   ///
   /// In pt, this message translates to:
-  /// **'estudou hoje'**
+  /// **'caminhou hoje'**
   String get groupSeatToday;
 
   /// No description provided for @groupSeatViewProfile.
@@ -4501,7 +4501,7 @@ abstract class AppLocalizations {
   /// No description provided for @groupSeatWeek.
   ///
   /// In pt, this message translates to:
-  /// **'estudou nesta semana'**
+  /// **'caminhou nesta semana'**
   String get groupSeatWeek;
 
   /// No description provided for @groupSetupKindLabel.
@@ -4522,29 +4522,29 @@ abstract class AppLocalizations {
   /// **'Nome'**
   String get groupSetupNameLabel;
 
-  /// No description provided for @groupStudyAgain.
+  /// No description provided for @groupStudyDoneTapAgain.
   ///
   /// In pt, this message translates to:
-  /// **'Você já fez · Estudar de novo'**
-  String get groupStudyAgain;
-
-  /// No description provided for @groupStudyCta.
-  ///
-  /// In pt, this message translates to:
-  /// **'Estudar com o grupo'**
-  String get groupStudyCta;
-
-  /// No description provided for @groupStudyDoneCount.
-  ///
-  /// In pt, this message translates to:
-  /// **'{done} de {total} já fizeram'**
-  String groupStudyDoneCount(int done, int total);
+  /// **'Você já fez · toque para rever'**
+  String get groupStudyDoneTapAgain;
 
   /// No description provided for @groupStudySwap.
   ///
   /// In pt, this message translates to:
   /// **'Trocar'**
   String get groupStudySwap;
+
+  /// No description provided for @groupStudyTapToOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque para estudar'**
+  String get groupStudyTapToOpen;
+
+  /// No description provided for @groupStudyTrailLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{trail} · cena {n} de {total}'**
+  String groupStudyTrailLine(String trail, int n, int total);
 
   /// No description provided for @groupWeekStudy.
   ///
@@ -6109,7 +6109,7 @@ abstract class AppLocalizations {
   /// Share text a friend sends; casual friend voice.
   ///
   /// In pt, this message translates to:
-  /// **'Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem estudou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}'**
+  /// **'Entra no grupo \"{name}\" no Stway.\nToque ou aponte a câmera:\n{url}\n\nCódigo: {code}\n\nA lista mostra quem caminhou nesta semana.\n\nAinda não tem o app? Baixe: {storeUrl}'**
   String juntosRoomShareText(
     String name,
     String url,
@@ -9243,6 +9243,30 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Tem 1 erro para reforçar. Um reforço curto firma o que você viu.} other{Tem {count} erros para reforçar. Um reforço curto firma o que você viu.}}'**
   String notifMistakesBody(int count);
 
+  /// No description provided for @notifPlanDayBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{title}: o grupo começa o dia junto.'**
+  String notifPlanDayBody(String title);
+
+  /// No description provided for @notifPlanDayTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} de {total} abriu'**
+  String notifPlanDayTitle(int n, int total);
+
+  /// No description provided for @notifPlanEveningBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{title}: ainda dá tempo de cumprir hoje.'**
+  String notifPlanEveningBody(String title);
+
+  /// No description provided for @notifPlanEveningTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Falta o dia {n} do propósito'**
+  String notifPlanEveningTitle(int n);
+
   /// No description provided for @notifPracticeTitle.
   ///
   /// In pt, this message translates to:
@@ -10041,12 +10065,6 @@ abstract class AppLocalizations {
   /// **'Selo de Peregrino'**
   String get paywallPerkBadgeTitle;
 
-  /// No description provided for @paywallPerkExplainBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Cada erro fica guardado, com a resposta certa e o porquê.'**
-  String get paywallPerkExplainBody;
-
   /// No description provided for @paywallPerkGiftBody.
   ///
   /// In pt, this message translates to:
@@ -10131,18 +10149,6 @@ abstract class AppLocalizations {
   /// **'Trilhas da estação'**
   String get paywallPerkSeasonTitle;
 
-  /// No description provided for @paywallPerkStreakBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Sua sequência, os dias desta semana e como você caminhou nos últimos três meses.'**
-  String get paywallPerkStreakBody;
-
-  /// No description provided for @paywallPerkStreakTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Seus dias'**
-  String get paywallPerkStreakTitle;
-
   /// No description provided for @paywallPerkThemesBody.
   ///
   /// In pt, this message translates to:
@@ -10154,18 +10160,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Trilhas por tema'**
   String get paywallPerkThemesTitle;
-
-  /// No description provided for @paywallPerkWeeklyBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Uma vez por semana, você revê o que aprendeu. As perguntas começam pelo que errou.'**
-  String get paywallPerkWeeklyBody;
-
-  /// No description provided for @paywallPerkWeeklyTitle.
-  ///
-  /// In pt, this message translates to:
-  /// **'Revisão da semana'**
-  String get paywallPerkWeeklyTitle;
 
   /// No description provided for @paywallPitch.
   ///
@@ -10671,6 +10665,84 @@ abstract class AppLocalizations {
   /// **'Já lidos'**
   String get planAlreadyRead;
 
+  /// No description provided for @planAnswerCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responder'**
+  String get planAnswerCta;
+
+  /// No description provided for @planAnswerDelete.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apagar'**
+  String get planAnswerDelete;
+
+  /// No description provided for @planAnswerDeleteBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ela some para todo o grupo.'**
+  String get planAnswerDeleteBody;
+
+  /// No description provided for @planAnswerDeleteTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Apagar esta resposta?'**
+  String get planAnswerDeleteTitle;
+
+  /// No description provided for @planAnswerEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém mais respondeu ainda.'**
+  String get planAnswerEmpty;
+
+  /// No description provided for @planAnswerError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para enviar. Tente de novo.'**
+  String get planAnswerError;
+
+  /// No description provided for @planAnswerHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque e segure uma resposta para denunciar ou apagar.'**
+  String get planAnswerHint;
+
+  /// No description provided for @planAnswerSaved.
+  ///
+  /// In pt, this message translates to:
+  /// **'Resposta enviada.'**
+  String get planAnswerSaved;
+
+  /// No description provided for @planAnswerSend.
+  ///
+  /// In pt, this message translates to:
+  /// **'Enviar'**
+  String get planAnswerSend;
+
+  /// No description provided for @planAnswerSheetHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escreva em poucas linhas. Só o grupo vê.'**
+  String get planAnswerSheetHint;
+
+  /// No description provided for @planAnswersCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{Ninguém respondeu ainda.} =1{1 pessoa já respondeu.} other{{count} pessoas já responderam.}}'**
+  String planAnswersCount(int count);
+
+  /// No description provided for @planAnswersLocked.
+  ///
+  /// In pt, this message translates to:
+  /// **'Responda para ver o que o grupo escreveu.'**
+  String get planAnswersLocked;
+
+  /// No description provided for @planAnswersTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Respostas do dia {n}'**
+  String planAnswersTitle(int n);
+
   /// No description provided for @planApproxDays.
   ///
   /// In pt, this message translates to:
@@ -10701,6 +10773,12 @@ abstract class AppLocalizations {
   /// **'No seu ritmo'**
   String get planAtYourPace;
 
+  /// No description provided for @planAutoTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'{what} em {count} dias'**
+  String planAutoTitle(String what, int count);
+
   /// No description provided for @planBibleFinished.
   ///
   /// In pt, this message translates to:
@@ -10725,11 +10803,77 @@ abstract class AppLocalizations {
   /// **'{minutes} min hoje · {order}'**
   String planCardToday(int minutes, String order);
 
+  /// No description provided for @planCatchUpHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia para recuperar} other{{count} dias para recuperar}}'**
+  String planCatchUpHint(int count);
+
+  /// No description provided for @planCatchUpTag.
+  ///
+  /// In pt, this message translates to:
+  /// **'Recuperar'**
+  String get planCatchUpTag;
+
+  /// No description provided for @planChain.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Corrente de 1 dia} other{Corrente de {count} dias}}'**
+  String planChain(int count);
+
+  /// No description provided for @planChainBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quando metade do grupo cumpre o dia na data, a corrente cresce.'**
+  String get planChainBody;
+
+  /// No description provided for @planChainZero.
+  ///
+  /// In pt, this message translates to:
+  /// **'Comece a corrente'**
+  String get planChainZero;
+
   /// No description provided for @planChaptersSkipped.
   ///
   /// In pt, this message translates to:
   /// **'{count, plural, =1{1 capítulo pulado} other{{count} capítulos pulados}}'**
   String planChaptersSkipped(int count);
+
+  /// No description provided for @planCloseReveal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechar e revelar'**
+  String get planCloseReveal;
+
+  /// No description provided for @planClosing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechando…'**
+  String get planClosing;
+
+  /// No description provided for @planClosingBannerTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O propósito do grupo foi fechado'**
+  String get planClosingBannerTitle;
+
+  /// No description provided for @planDateRange.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia} other{{count} dias}} · {from} a {to}'**
+  String planDateRange(int count, String from, String to);
+
+  /// No description provided for @planDayDate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} · {date}'**
+  String planDayDate(int n, String date);
+
+  /// No description provided for @planDayDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia {n} feito'**
+  String planDayDone(int n);
 
   /// No description provided for @planDayDoneToast.
   ///
@@ -10737,17 +10881,251 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{Leitura do dia concluída · 1 capítulo} other{Leitura do dia concluída · {count} capítulos}}'**
   String planDayDoneToast(int count);
 
+  /// No description provided for @planDayEditNote.
+  ///
+  /// In pt, this message translates to:
+  /// **'Recado de quem conduz (opcional)'**
+  String get planDayEditNote;
+
+  /// No description provided for @planDayEditQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta'**
+  String get planDayEditQuestion;
+
+  /// Day row in the plan editor when the day has nothing.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sem cena nem capítulo neste dia'**
+  String get planDayEmpty;
+
+  /// Day row in the plan editor: the leader's note for that day.
+  ///
+  /// In pt, this message translates to:
+  /// **'Recado: {text}'**
+  String planDayNoteLine(String text);
+
   /// No description provided for @planDayNumber.
   ///
   /// In pt, this message translates to:
   /// **'Dia {day}'**
   String planDayNumber(int day);
 
+  /// Day row in the plan editor: the question of that day.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta: {text}'**
+  String planDayQuestionLine(String text);
+
   /// No description provided for @planDone.
   ///
   /// In pt, this message translates to:
   /// **'Feito'**
   String get planDone;
+
+  /// No description provided for @planEditorCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =0{Nenhum dia no período} =1{1 dia com algo para fazer} other{{count} dias com algo para fazer}}'**
+  String planEditorCount(int count);
+
+  /// No description provided for @planEditorDayOpen.
+  ///
+  /// In pt, this message translates to:
+  /// **'Já abriu'**
+  String get planEditorDayOpen;
+
+  /// No description provided for @planEditorDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia} other{{count} dias}}'**
+  String planEditorDays(int count);
+
+  /// No description provided for @planEditorDuration.
+  ///
+  /// In pt, this message translates to:
+  /// **'Duração'**
+  String get planEditorDuration;
+
+  /// No description provided for @planEditorDurationBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quantas semanas o grupo caminha junto. Você escolhe o dia de começar; o fim fecha a última semana.'**
+  String get planEditorDurationBody;
+
+  /// No description provided for @planEditorEnd.
+  ///
+  /// In pt, this message translates to:
+  /// **'Termina'**
+  String get planEditorEnd;
+
+  /// No description provided for @planEditorHideDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esconder os dias'**
+  String get planEditorHideDays;
+
+  /// No description provided for @planEditorHowLong.
+  ///
+  /// In pt, this message translates to:
+  /// **'Por quanto tempo'**
+  String get planEditorHowLong;
+
+  /// No description provided for @planEditorNameDefault.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito de {count} dias'**
+  String planEditorNameDefault(int count);
+
+  /// No description provided for @planEditorNeedContent.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha a cena da trilha ou o capítulo da Bíblia para começar.'**
+  String get planEditorNeedContent;
+
+  /// No description provided for @planEditorQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta do dia'**
+  String get planEditorQuestion;
+
+  /// No description provided for @planEditorReadingEnds.
+  ///
+  /// In pt, this message translates to:
+  /// **'O livro acaba no dia {n}; depois, sem capítulo.'**
+  String planEditorReadingEnds(int n);
+
+  /// No description provided for @planEditorReadingPreview.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dia 1: {first} · último dia: {last}'**
+  String planEditorReadingPreview(String first, String last);
+
+  /// No description provided for @planEditorRename.
+  ///
+  /// In pt, this message translates to:
+  /// **'Editar o nome'**
+  String get planEditorRename;
+
+  /// No description provided for @planEditorRestHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Toque num dia para deixá-lo de descanso: nele não abre nada.'**
+  String get planEditorRestHint;
+
+  /// No description provided for @planEditorRestShort.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dias da semana com propósito'**
+  String get planEditorRestShort;
+
+  /// No description provided for @planEditorSave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Salvar'**
+  String get planEditorSave;
+
+  /// No description provided for @planEditorSaveError.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para salvar o propósito.'**
+  String get planEditorSaveError;
+
+  /// No description provided for @planEditorSaveNew.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar o propósito'**
+  String get planEditorSaveNew;
+
+  /// No description provided for @planEditorSaved.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito salvo. O grupo já vê.'**
+  String get planEditorSaved;
+
+  /// No description provided for @planEditorShowDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver a pergunta de cada dia ({count})'**
+  String planEditorShowDays(int count);
+
+  /// No description provided for @planEditorStart.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começa'**
+  String get planEditorStart;
+
+  /// No description provided for @planEditorTitleEdit.
+  ///
+  /// In pt, this message translates to:
+  /// **'Editar propósito'**
+  String get planEditorTitleEdit;
+
+  /// No description provided for @planEditorTitleNew.
+  ///
+  /// In pt, this message translates to:
+  /// **'Novo propósito'**
+  String get planEditorTitleNew;
+
+  /// No description provided for @planEditorWeeks.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 semana} other{{count} semanas}}'**
+  String planEditorWeeks(int count);
+
+  /// No description provided for @planEditorWhatDaily.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que o grupo faz todo dia'**
+  String get planEditorWhatDaily;
+
+  /// No description provided for @planEmptyCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Criar o propósito'**
+  String get planEmptyCta;
+
+  /// No description provided for @planEmptyLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito do grupo'**
+  String get planEmptyLabel;
+
+  /// No description provided for @planEmptyLeaderBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha a trilha, o livro e as datas. Todo dia o grupo recebe uma cena, um capítulo e uma pergunta.'**
+  String get planEmptyLeaderBody;
+
+  /// No description provided for @planEmptyLeaderTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual será o propósito do grupo?'**
+  String get planEmptyLeaderTitle;
+
+  /// No description provided for @planEmptyMemberBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{leader} escolhe a trilha, o livro e as datas. Depois, o dia de cada um aparece aqui.'**
+  String planEmptyMemberBody(String leader);
+
+  /// No description provided for @planEmptyMemberTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O propósito ainda não começou'**
+  String get planEmptyMemberTitle;
+
+  /// No description provided for @planEndBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Os dias que faltam somem e o propósito termina hoje. O que o grupo já fez continua contado.'**
+  String get planEndBody;
+
+  /// No description provided for @planEndConfirm.
+  ///
+  /// In pt, this message translates to:
+  /// **'Encerrar'**
+  String get planEndConfirm;
 
   /// No description provided for @planEndConfirmAction.
   ///
@@ -10773,6 +11151,12 @@ abstract class AppLocalizations {
   /// **'Encerrar plano'**
   String get planEndCta;
 
+  /// No description provided for @planEndTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Encerrar o propósito?'**
+  String get planEndTitle;
+
   /// No description provided for @planEstimate.
   ///
   /// In pt, this message translates to:
@@ -10784,6 +11168,120 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Plano concluído'**
   String get planFinished;
+
+  /// No description provided for @planFirstDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'No dia 1: {items}'**
+  String planFirstDay(String items);
+
+  /// Countdown label until the plan ends (end of the last day).
+  ///
+  /// In pt, this message translates to:
+  /// **'Termina em'**
+  String get planHearthEnds;
+
+  /// Header of the group card (people + countdown) while a plan exists.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo no propósito'**
+  String get planHearthLabel;
+
+  /// Countdown label until the plan starts.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começa em'**
+  String get planHearthStarts;
+
+  /// No description provided for @planInviteBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você escolhe quando começa e quando termina. Todo dia o grupo recebe algo para fazer junto: um capítulo, uma cena e uma pergunta.'**
+  String get planInviteBody;
+
+  /// No description provided for @planInviteTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Criar um propósito'**
+  String get planInviteTitle;
+
+  /// No description provided for @planItemManual.
+  ///
+  /// In pt, this message translates to:
+  /// **'Marcar o dia como feito'**
+  String get planItemManual;
+
+  /// No description provided for @planItemManualBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje é só você e Deus. Marque quando terminar.'**
+  String get planItemManualBody;
+
+  /// No description provided for @planItemQuestion.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pergunta do dia'**
+  String get planItemQuestion;
+
+  /// No description provided for @planItemRead.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ler {ref}'**
+  String planItemRead(String ref);
+
+  /// No description provided for @planItemScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cena: {title}'**
+  String planItemScene(String title);
+
+  /// No description provided for @planJoin.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estou dentro'**
+  String get planJoin;
+
+  /// No description provided for @planJoined.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você está dentro'**
+  String get planJoined;
+
+  /// No description provided for @planJoinedCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} de {total} estão dentro'**
+  String planJoinedCount(int count, int total);
+
+  /// No description provided for @planJoinedToast.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você está dentro. O dia 1 abre {when}.'**
+  String planJoinedToast(String when);
+
+  /// No description provided for @planLabelDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito · Dia {n} de {total}'**
+  String planLabelDay(int n, int total);
+
+  /// No description provided for @planLabelEnded.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito encerrado'**
+  String get planLabelEnded;
+
+  /// No description provided for @planLabelStartsIn.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =0{Propósito · começa hoje} =1{Propósito · começa amanhã} other{Propósito · começa em {days} dias}}'**
+  String planLabelStartsIn(int days);
+
+  /// No description provided for @planLastDayDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Era o último dia do propósito.'**
+  String get planLastDayDone;
 
   /// No description provided for @planLockedGuidedBody.
   ///
@@ -10797,17 +11295,53 @@ abstract class AppLocalizations {
   /// **'Marcar leitura do dia'**
   String get planMarkDayRead;
 
+  /// No description provided for @planMenuCreate.
+  ///
+  /// In pt, this message translates to:
+  /// **'Criar propósito'**
+  String get planMenuCreate;
+
+  /// No description provided for @planMenuEdit.
+  ///
+  /// In pt, this message translates to:
+  /// **'Editar propósito'**
+  String get planMenuEdit;
+
+  /// No description provided for @planMenuEnd.
+  ///
+  /// In pt, this message translates to:
+  /// **'Encerrar o propósito'**
+  String get planMenuEnd;
+
   /// No description provided for @planMinutes.
   ///
   /// In pt, this message translates to:
   /// **'{minutes} min'**
   String planMinutes(int minutes);
 
+  /// No description provided for @planNextOpens.
+  ///
+  /// In pt, this message translates to:
+  /// **'O dia {n} abre {when}.'**
+  String planNextOpens(int n, String when);
+
   /// No description provided for @planNextReading.
   ///
   /// In pt, this message translates to:
   /// **'Próxima leitura'**
   String get planNextReading;
+
+  /// Body of the not-started dialog; date is the short start date.
+  ///
+  /// In pt, this message translates to:
+  /// **'{days, plural, =1{Começa amanhã, {date}.} other{Começa em {days} dias, {date}.}} No primeiro dia, a cena e o capítulo do grupo aparecem aqui.'**
+  String planNotStartedBody(int days, String date);
+
+  /// Anan dialog when someone taps to study before the group's plan starts.
+  ///
+  /// In pt, this message translates to:
+  /// **'O propósito ainda não começou'**
+  String get planNotStartedTitle;
 
   /// No description provided for @planOrderAlphabetical.
   ///
@@ -10851,6 +11385,42 @@ abstract class AppLocalizations {
   /// **'Capítulos pendentes'**
   String get planPendingChapters;
 
+  /// No description provided for @planPerDay.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count} por dia'**
+  String planPerDay(int count);
+
+  /// No description provided for @planPickReadingChapter.
+  ///
+  /// In pt, this message translates to:
+  /// **'Capítulo'**
+  String get planPickReadingChapter;
+
+  /// No description provided for @planPickReadingSave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar aqui'**
+  String get planPickReadingSave;
+
+  /// No description provided for @planPickReadingSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo lê em sequência a partir daqui.'**
+  String get planPickReadingSubtitle;
+
+  /// No description provided for @planPickReadingTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Livro e capítulo de partida'**
+  String get planPickReadingTitle;
+
+  /// No description provided for @planPickSceneTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cena de partida'**
+  String get planPickSceneTitle;
+
   /// No description provided for @planPortionMeta.
   ///
   /// In pt, this message translates to:
@@ -10868,6 +11438,84 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'{percent}% do plano'**
   String planProgressGuided(int percent);
+
+  /// No description provided for @planPulseDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} já cumpriram o dia {n}'**
+  String planPulseDone(int done, int total, int n);
+
+  /// No description provided for @planPulseNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ninguém cumpriu o dia {n} ainda. Seja o primeiro.'**
+  String planPulseNone(int n);
+
+  /// No description provided for @planPulseTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje no grupo'**
+  String get planPulseTitle;
+
+  /// No description provided for @planQ1.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que {ref} mostra sobre quem Deus é?'**
+  String planQ1(String ref);
+
+  /// No description provided for @planQ10.
+  ///
+  /// In pt, this message translates to:
+  /// **'Que promessa ou aviso aparece em {ref}?'**
+  String planQ10(String ref);
+
+  /// No description provided for @planQ2.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual frase de {ref} ficou com você hoje?'**
+  String planQ2(String ref);
+
+  /// No description provided for @planQ3.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que {ref} pede de você nesta semana?'**
+  String planQ3(String ref);
+
+  /// No description provided for @planQ4.
+  ///
+  /// In pt, this message translates to:
+  /// **'Onde você se vê em {ref}?'**
+  String planQ4(String ref);
+
+  /// No description provided for @planQ5.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que surpreendeu você em {ref}?'**
+  String planQ5(String ref);
+
+  /// No description provided for @planQ6.
+  ///
+  /// In pt, this message translates to:
+  /// **'Pelo que {ref} faz você agradecer?'**
+  String planQ6(String ref);
+
+  /// No description provided for @planQ7.
+  ///
+  /// In pt, this message translates to:
+  /// **'Que pergunta você levaria ao grupo sobre {ref}?'**
+  String planQ7(String ref);
+
+  /// No description provided for @planQ8.
+  ///
+  /// In pt, this message translates to:
+  /// **'Como {ref} aponta para Jesus?'**
+  String planQ8(String ref);
+
+  /// No description provided for @planQ9.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que você quer pedir a Deus depois de ler {ref}?'**
+  String planQ9(String ref);
 
   /// No description provided for @planReadingDays.
   ///
@@ -10905,6 +11553,84 @@ abstract class AppLocalizations {
   /// **'Desligado'**
   String get planReminderOff;
 
+  /// No description provided for @planRestToday.
+  ///
+  /// In pt, this message translates to:
+  /// **'Hoje é dia de descanso'**
+  String get planRestToday;
+
+  /// No description provided for @planReveal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver a revelação'**
+  String get planReveal;
+
+  /// No description provided for @planRevealConstantBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cumpriu mais dias na data certa.'**
+  String get planRevealConstantBody;
+
+  /// No description provided for @planRevealEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito · {room}'**
+  String planRevealEyebrow(String room);
+
+  /// No description provided for @planRevealFaithfulBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cumpriram todos os dias. Cada um ganha o selo.'**
+  String get planRevealFaithfulBody;
+
+  /// No description provided for @planRevealFaithfulNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desta vez ninguém cumpriu todos os dias. O próximo propósito é uma nova chance.'**
+  String get planRevealFaithfulNone;
+
+  /// No description provided for @planRevealFaithfulTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fiéis no propósito'**
+  String get planRevealFaithfulTitle;
+
+  /// No description provided for @planRevealGroupPct.
+  ///
+  /// In pt, this message translates to:
+  /// **'dos dias do propósito, o grupo cumpriu junto'**
+  String get planRevealGroupPct;
+
+  /// No description provided for @planRevealYourSeal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você ganhou o selo Fiel. Ele fica ao lado do seu nome no grupo.'**
+  String get planRevealYourSeal;
+
+  /// Person sheet stat label: days of the plan this person closed (value like 5/21).
+  ///
+  /// In pt, this message translates to:
+  /// **'Dias do propósito'**
+  String get planSeatDays;
+
+  /// Person sheet: tapped 'I'm in' on the group's plan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dentro'**
+  String get planSeatIn;
+
+  /// Person sheet stat label before the plan starts (value says if they're in).
+  ///
+  /// In pt, this message translates to:
+  /// **'Propósito'**
+  String get planSeatLabel;
+
+  /// Person sheet: hasn't tapped 'I'm in' yet.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ainda não'**
+  String get planSeatNotIn;
+
   /// No description provided for @planSectionOrder.
   ///
   /// In pt, this message translates to:
@@ -10935,11 +11661,113 @@ abstract class AppLocalizations {
   /// **'{count, plural, =1{1 capítulo já lido foi pulado} other{{count} capítulos já lidos foram pulados}}'**
   String planSkippedChaptersToast(int count);
 
+  /// No description provided for @planSourcePick.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolher'**
+  String get planSourcePick;
+
+  /// No description provided for @planSourceQuestionBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Abra os dias para ver cada uma e trocar a que quiser.'**
+  String get planSourceQuestionBody;
+
+  /// No description provided for @planSourceQuestionNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha a cena ou o capítulo: a pergunta sai deles.'**
+  String get planSourceQuestionNone;
+
+  /// Question of the day card body when the toggle is off.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desligada: o grupo faz a cena e lê o capítulo, sem pergunta para responder.'**
+  String get planSourceQuestionOff;
+
+  /// No description provided for @planSourceReading.
+  ///
+  /// In pt, this message translates to:
+  /// **'Capítulo da Bíblia'**
+  String get planSourceReading;
+
+  /// No description provided for @planSourceReadingEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo ainda não tem leitura. Escolha um livro e o capítulo de partida.'**
+  String get planSourceReadingEmpty;
+
+  /// No description provided for @planSourceReadingFrom.
+  ///
+  /// In pt, this message translates to:
+  /// **'{book}, a partir do capítulo {from}'**
+  String planSourceReadingFrom(String book, int from);
+
+  /// No description provided for @planSourceRemove.
+  ///
+  /// In pt, this message translates to:
+  /// **'Tirar'**
+  String get planSourceRemove;
+
+  /// No description provided for @planSourceScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cena da trilha'**
+  String get planSourceScene;
+
+  /// No description provided for @planSourceSceneCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'Uma cena por dia: {scenes} de {days} dias têm cena.'**
+  String planSourceSceneCount(int scenes, int days);
+
+  /// No description provided for @planSourceSceneEmpty.
+  ///
+  /// In pt, this message translates to:
+  /// **'O grupo ainda não tem estudo. Escolha a cena de partida da trilha.'**
+  String get planSourceSceneEmpty;
+
+  /// No description provided for @planSourceSceneFrom.
+  ///
+  /// In pt, this message translates to:
+  /// **'{trail} · a partir de “{title}”'**
+  String planSourceSceneFrom(String trail, String title);
+
+  /// No description provided for @planStartAnother.
+  ///
+  /// In pt, this message translates to:
+  /// **'Começar outro propósito'**
+  String get planStartAnother;
+
   /// No description provided for @planStartCta.
   ///
   /// In pt, this message translates to:
   /// **'Começar plano · {minutes} min/dia'**
   String planStartCta(int minutes);
+
+  /// No description provided for @planSuggestGeneral.
+  ///
+  /// In pt, this message translates to:
+  /// **'Geral'**
+  String get planSuggestGeneral;
+
+  /// No description provided for @planSuggestLife.
+  ///
+  /// In pt, this message translates to:
+  /// **'Para a vida'**
+  String get planSuggestLife;
+
+  /// No description provided for @planSuggestText.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sobre o texto'**
+  String get planSuggestText;
+
+  /// No description provided for @planSuggestTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sugestões'**
+  String get planSuggestTitle;
 
   /// No description provided for @planSwitchBody.
   ///
@@ -10970,6 +11798,24 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Porção de hoje concluída. Volte amanhã — ou continue explorando a Bíblia livremente.'**
   String get planTodayDoneBody;
+
+  /// No description provided for @planTomorrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'amanhã'**
+  String get planTomorrow;
+
+  /// No description provided for @planWaitReveal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem conduz vai revelar como o grupo foi.'**
+  String get planWaitReveal;
+
+  /// No description provided for @planYouDid.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você cumpriu {done} de {total} dias'**
+  String planYouDid(int done, int total);
 
   /// No description provided for @plansCatalogBody.
   ///
@@ -11090,6 +11936,12 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Continua grátis, sempre'**
   String get plusNoticeFreeHeader;
+
+  /// No description provided for @plusNoticeFreeLearning.
+  ///
+  /// In pt, this message translates to:
+  /// **'Revisão da semana, erros explicados e a evolução da sua leitura'**
+  String get plusNoticeFreeLearning;
 
   /// No description provided for @plusNoticeFreeScenes.
   ///
@@ -11445,6 +12297,30 @@ abstract class AppLocalizations {
   /// **'dias por semana'**
   String get profileDaysPerWeek;
 
+  /// No description provided for @profileGroupSealsBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ganhos nos fechamentos do seu grupo, nas semanas em que você fez tudo o que o líder marcou.'**
+  String get profileGroupSealsBody;
+
+  /// No description provided for @profileGrowthSteady.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua leitura está firme: {pct}% de acerto em {mode}.'**
+  String profileGrowthSteady(String mode, int pct);
+
+  /// No description provided for @profileGrowthUp.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sua leitura cresceu: em {mode}, você acertava {from}% e agora acerta {to}%.'**
+  String profileGrowthUp(String mode, int from, int to);
+
+  /// No description provided for @profileGrowthWaiting.
+  ///
+  /// In pt, this message translates to:
+  /// **'Continue caminhando: em algumas semanas, aqui aparece como a sua leitura cresceu.'**
+  String get profileGrowthWaiting;
+
   /// No description provided for @profileInTheWord.
   ///
   /// In pt, this message translates to:
@@ -11535,11 +12411,17 @@ abstract class AppLocalizations {
   /// **'Abrir {ref}'**
   String profileOpenRef(String ref);
 
-  /// No description provided for @profilePlusTeaserTitle.
+  /// No description provided for @profilePlusGestureNudge.
   ///
   /// In pt, this message translates to:
-  /// **'Seu Peregrino+'**
-  String get profilePlusTeaserTitle;
+  /// **'Ponto forte, o que reforçar e o treino na medida são do Peregrino+.'**
+  String get profilePlusGestureNudge;
+
+  /// No description provided for @profilePlusGestureNudgeCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Conhecer'**
+  String get profilePlusGestureNudgeCta;
 
   /// No description provided for @profilePrivacyHiddenSemantics.
   ///
@@ -12699,6 +13581,42 @@ abstract class AppLocalizations {
   /// **'Sua cena'**
   String get recognitionYourScene;
 
+  /// No description provided for @referralBankedLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 mês de Plus guardado por convites} other{{count} meses de Plus guardados por convites}}'**
+  String referralBankedLine(int count);
+
+  /// No description provided for @referralInviteLine.
+  ///
+  /// In pt, this message translates to:
+  /// **'Se a pessoa assinar o Peregrino+, você ganha 1 mês de Plus.'**
+  String get referralInviteLine;
+
+  /// No description provided for @referralRewardGranted.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} assinou o Peregrino+ pelo seu convite. Você ganhou 1 mês de Plus!'**
+  String referralRewardGranted(String name);
+
+  /// No description provided for @referralRewardGrantedAnon.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguém assinou o Peregrino+ pelo seu convite. Você ganhou 1 mês de Plus!'**
+  String get referralRewardGrantedAnon;
+
+  /// No description provided for @referralRewardKept.
+  ///
+  /// In pt, this message translates to:
+  /// **'{name} assinou o Peregrino+ pelo seu convite. Seu mês ganho fica guardado para quando o seu Plus acabar.'**
+  String referralRewardKept(String name);
+
+  /// No description provided for @referralRewardKeptAnon.
+  ///
+  /// In pt, this message translates to:
+  /// **'Alguém assinou o Peregrino+ pelo seu convite. Seu mês ganho fica guardado para quando o seu Plus acabar.'**
+  String get referralRewardKeptAnon;
+
   /// No description provided for @reinforceCta.
   ///
   /// In pt, this message translates to:
@@ -12939,6 +13857,54 @@ abstract class AppLocalizations {
   /// **'A revisão de hoje já foi feita — esta fica para amanhã.'**
   String get reviewSlotTaken;
 
+  /// No description provided for @roomCloseWeek.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechar a semana e revelar'**
+  String get roomCloseWeek;
+
+  /// No description provided for @roomCloseWeekBusy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechando…'**
+  String get roomCloseWeekBusy;
+
+  /// No description provided for @roomCloseWeekConfirmBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem fez tudo até agora ganha o selo. Você pode fechar de novo antes de domingo se mais gente terminar.'**
+  String get roomCloseWeekConfirmBody;
+
+  /// No description provided for @roomCloseWeekConfirmTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechar a semana agora?'**
+  String get roomCloseWeekConfirmTitle;
+
+  /// No description provided for @roomCloseWeekFailed.
+  ///
+  /// In pt, this message translates to:
+  /// **'Não deu para fechar a semana. Tente de novo.'**
+  String get roomCloseWeekFailed;
+
+  /// No description provided for @roomCloseWeekHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Faça na reunião: o grupo vê junto quem foi fiel na semana.'**
+  String get roomCloseWeekHint;
+
+  /// No description provided for @roomClosingBannerBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja como o grupo foi e quem ganhou o selo.'**
+  String get roomClosingBannerBody;
+
+  /// No description provided for @roomClosingBannerTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'A semana do grupo foi fechada'**
+  String get roomClosingBannerTitle;
+
   /// No description provided for @roomErrorCreate.
   ///
   /// In pt, this message translates to:
@@ -13059,6 +14025,24 @@ abstract class AppLocalizations {
   /// **'Responsável'**
   String get roomLeaderFamilia;
 
+  /// No description provided for @roomLeaderWeekDays.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 dia} other{{count} dias}}'**
+  String roomLeaderWeekDays(int count);
+
+  /// No description provided for @roomLeaderWeekScene.
+  ///
+  /// In pt, this message translates to:
+  /// **'cena'**
+  String get roomLeaderWeekScene;
+
+  /// No description provided for @roomLeaderWeekTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acompanhamento da semana'**
+  String get roomLeaderWeekTitle;
+
   /// No description provided for @roomNameHintAmigos.
   ///
   /// In pt, this message translates to:
@@ -13088,6 +14072,210 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Ex.: Família Souza'**
   String get roomNameHintFamilia;
+
+  /// No description provided for @roomReadingBook.
+  ///
+  /// In pt, this message translates to:
+  /// **'Livro'**
+  String get roomReadingBook;
+
+  /// No description provided for @roomReadingChange.
+  ///
+  /// In pt, this message translates to:
+  /// **'Trocar'**
+  String get roomReadingChange;
+
+  /// No description provided for @roomReadingDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leitura feita nesta semana · toque para reler'**
+  String get roomReadingDone;
+
+  /// No description provided for @roomReadingFrom.
+  ///
+  /// In pt, this message translates to:
+  /// **'Do capítulo'**
+  String get roomReadingFrom;
+
+  /// No description provided for @roomReadingLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leitura da semana'**
+  String get roomReadingLabel;
+
+  /// No description provided for @roomReadingOrOther.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ou escolha outro texto'**
+  String get roomReadingOrOther;
+
+  /// No description provided for @roomReadingPickBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha capítulos da Bíblia para o grupo ler até a reunião.'**
+  String get roomReadingPickBody;
+
+  /// No description provided for @roomReadingPickTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Marcar a leitura da semana'**
+  String get roomReadingPickTitle;
+
+  /// No description provided for @roomReadingPickerSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Até {max} capítulos de um livro.'**
+  String roomReadingPickerSubtitle(int max);
+
+  /// No description provided for @roomReadingProgressTap.
+  ///
+  /// In pt, this message translates to:
+  /// **'{done} de {total} lidos nesta semana · toque para ler'**
+  String roomReadingProgressTap(int done, int total);
+
+  /// No description provided for @roomReadingSameAsStudy.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mesmo texto do estudo'**
+  String get roomReadingSameAsStudy;
+
+  /// No description provided for @roomReadingSameAsStudyBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'{reading} — a passagem de “{study}”. O grupo lê o capítulo e faz a cena.'**
+  String roomReadingSameAsStudyBody(String reading, String study);
+
+  /// No description provided for @roomReadingSave.
+  ///
+  /// In pt, this message translates to:
+  /// **'Marcar para o grupo'**
+  String get roomReadingSave;
+
+  /// No description provided for @roomReadingSaved.
+  ///
+  /// In pt, this message translates to:
+  /// **'Leitura marcada para o grupo'**
+  String get roomReadingSaved;
+
+  /// No description provided for @roomReadingTo.
+  ///
+  /// In pt, this message translates to:
+  /// **'Até o capítulo'**
+  String get roomReadingTo;
+
+  /// No description provided for @roomReadingTooFast.
+  ///
+  /// In pt, this message translates to:
+  /// **'Capítulo marcado. Para contar na leitura do grupo, leia com calma (uns {minutes} min) ou ouça o áudio, e conclua de novo.'**
+  String roomReadingTooFast(int minutes);
+
+  /// No description provided for @roomRevealAgain.
+  ///
+  /// In pt, this message translates to:
+  /// **'Ver a revelação de novo'**
+  String get roomRevealAgain;
+
+  /// No description provided for @roomRevealConstantBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Esteve com a Palavra o maior número de dias.'**
+  String get roomRevealConstantBody;
+
+  /// No description provided for @roomRevealConstantTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Mais constante'**
+  String get roomRevealConstantTitle;
+
+  /// No description provided for @roomRevealDone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Amém'**
+  String get roomRevealDone;
+
+  /// No description provided for @roomRevealEyebrow.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fechamento · {room}'**
+  String roomRevealEyebrow(String room);
+
+  /// No description provided for @roomRevealFaithfulBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fizeram tudo o que o líder marcou. Cada um ganha o selo.'**
+  String get roomRevealFaithfulBody;
+
+  /// No description provided for @roomRevealFaithfulNone.
+  ///
+  /// In pt, this message translates to:
+  /// **'Desta vez ninguém completou tudo. A próxima semana começa segunda.'**
+  String get roomRevealFaithfulNone;
+
+  /// No description provided for @roomRevealFaithfulTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Fiéis na semana'**
+  String get roomRevealFaithfulTitle;
+
+  /// No description provided for @roomRevealGiftCta.
+  ///
+  /// In pt, this message translates to:
+  /// **'Dar um passe de trilha a alguém'**
+  String get roomRevealGiftCta;
+
+  /// No description provided for @roomRevealGiftHint.
+  ///
+  /// In pt, this message translates to:
+  /// **'Seu passe do mês libera uma trilha do Peregrino+ inteira para quem você escolher.'**
+  String get roomRevealGiftHint;
+
+  /// No description provided for @roomRevealGiftPickBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha a trilha. Depois envie o link para quem você quer premiar.'**
+  String get roomRevealGiftPickBody;
+
+  /// No description provided for @roomRevealGiftPickTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Qual trilha?'**
+  String get roomRevealGiftPickTitle;
+
+  /// No description provided for @roomRevealGroupPct.
+  ///
+  /// In pt, this message translates to:
+  /// **'do que o líder marcou, o grupo fez junto'**
+  String get roomRevealGroupPct;
+
+  /// No description provided for @roomRevealGrownBody.
+  ///
+  /// In pt, this message translates to:
+  /// **'Acertou mais nesta semana do que nas próprias semanas anteriores.'**
+  String get roomRevealGrownBody;
+
+  /// No description provided for @roomRevealGrownTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Quem mais cresceu'**
+  String get roomRevealGrownTitle;
+
+  /// No description provided for @roomRevealTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'A semana do grupo'**
+  String get roomRevealTitle;
+
+  /// No description provided for @roomRevealYourSeal.
+  ///
+  /// In pt, this message translates to:
+  /// **'Você ganhou o selo Fiel na semana. Ele fica ao lado do seu nome no grupo.'**
+  String get roomRevealYourSeal;
+
+  /// No description provided for @roomSealCount.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{1 selo Fiel na semana} other{{count} selos Fiel na semana}}'**
+  String roomSealCount(int count);
 
   /// No description provided for @roomStudyFallbackTitle.
   ///
@@ -14745,6 +15933,36 @@ abstract class AppLocalizations {
   /// **'Apoiador'**
   String get supporterBadge;
 
+  /// No description provided for @takeawaysReviewLabel.
+  ///
+  /// In pt, this message translates to:
+  /// **'Para rever'**
+  String get takeawaysReviewLabel;
+
+  /// No description provided for @takeawaysRow.
+  ///
+  /// In pt, this message translates to:
+  /// **'{count, plural, =1{Você encontrou 1 coisa no texto} other{Você encontrou {count} coisas no texto}}'**
+  String takeawaysRow(int count);
+
+  /// No description provided for @takeawaysRowReviewOnly.
+  ///
+  /// In pt, this message translates to:
+  /// **'Veja o que rever no texto'**
+  String get takeawaysRowReviewOnly;
+
+  /// No description provided for @takeawaysSubtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Cada frase vem de uma pergunta que você respondeu. Toque para abrir o versículo.'**
+  String get takeawaysSubtitle;
+
+  /// No description provided for @takeawaysTitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'O que você viu no texto'**
+  String get takeawaysTitle;
+
   /// No description provided for @tomorrowDayOf.
   ///
   /// In pt, this message translates to:
@@ -14988,7 +16206,7 @@ abstract class AppLocalizations {
   /// No description provided for @trailsDoorIntroBible.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia inteira, livro a livro. O Antigo Testamento guarda a promessa; o Novo mostra o cumprimento em Jesus. Cada livro é uma trilha.'**
+  /// **'A Bíblia inteira, livro a livro. O Antigo Testamento guarda a promessa; o Novo mostra o cumprimento em Jesus. No Panorama, os pontos altos de cada livro em poucas cenas.'**
   String get trailsDoorIntroBible;
 
   /// No description provided for @trailsDoorIntroHowItWorks.
@@ -15018,7 +16236,7 @@ abstract class AppLocalizations {
   /// No description provided for @trailsDoorIntroThemes.
   ///
   /// In pt, this message translates to:
-  /// **'A Bíblia lida por fios, não por livros: o panorama da história, as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.'**
+  /// **'A Bíblia lida por fios, não por livros: as pessoas que a carregam, as promessas e o cumprimento, os grandes temas e as parábolas. Cada trilha segue um fio por vários livros.'**
   String get trailsDoorIntroThemes;
 
   /// No description provided for @trailsDownloading.
@@ -15054,7 +16272,7 @@ abstract class AppLocalizations {
   /// No description provided for @trailsHubBibleBody.
   ///
   /// In pt, this message translates to:
-  /// **'Antigo e Novo Testamento.'**
+  /// **'Antigo e Novo Testamento, e o Panorama.'**
   String get trailsHubBibleBody;
 
   /// No description provided for @trailsHubStudy.
@@ -15078,7 +16296,7 @@ abstract class AppLocalizations {
   /// No description provided for @trailsHubThemesBody.
   ///
   /// In pt, this message translates to:
-  /// **'Sabedoria, panorama e os fios da Bíblia.'**
+  /// **'Sabedoria e os fios da Bíblia.'**
   String get trailsHubThemesBody;
 
   /// No description provided for @trailsInProgress.
@@ -15663,6 +16881,42 @@ abstract class AppLocalizations {
   /// **'Acenar'**
   String get waveCta;
 
+  /// Wave message: encouragement.
+  ///
+  /// In pt, this message translates to:
+  /// **'Força, o grupo está com você'**
+  String get waveKindCheer;
+
+  /// Wave message: missing them.
+  ///
+  /// In pt, this message translates to:
+  /// **'Sentimos sua falta'**
+  String get waveKindMiss;
+
+  /// Wave message: invite into the group plan.
+  ///
+  /// In pt, this message translates to:
+  /// **'Entra no propósito com a gente?'**
+  String get waveKindPlan;
+
+  /// Wave message: prayer support.
+  ///
+  /// In pt, this message translates to:
+  /// **'Estou orando por você'**
+  String get waveKindPray;
+
+  /// Wave message: default call to study.
+  ///
+  /// In pt, this message translates to:
+  /// **'Vem estudar com o grupo'**
+  String get waveKindStudy;
+
+  /// Wave picker subtitle.
+  ///
+  /// In pt, this message translates to:
+  /// **'Escolha o recado. Chega como notificação para {name}.'**
+  String waveSheetSubtitle(String name);
+
   /// No description provided for @webRedeemDone.
   ///
   /// In pt, this message translates to:
@@ -15752,12 +17006,6 @@ abstract class AppLocalizations {
   /// In pt, this message translates to:
   /// **'Não achei as perguntas destas cenas no aparelho. Tente de novo com internet.'**
   String get weeklyReviewNoQuestions;
-
-  /// No description provided for @weeklyReviewPlusBody.
-  ///
-  /// In pt, this message translates to:
-  /// **'Com o Peregrino+, você revê o que cada cena ensinou e responde 3 perguntas.'**
-  String get weeklyReviewPlusBody;
 
   /// No description provided for @weeklyReviewPreparing.
   ///

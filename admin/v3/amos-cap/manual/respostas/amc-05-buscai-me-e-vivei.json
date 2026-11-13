@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 5:4–9",
+    "passages": [
+      { "ref": "Amós 5:4–9" },
+      { "ref": "Amós 5:10–15" }
+    ],
+    "context": "No meio do lamento, o Senhor chama Israel a buscá-lo e viver, e a odiar o mal estabelecendo juízo na porta.",
+    "keyword": "Busquem-me",
+    "keywordGloss": "O convite do Senhor: procurar a ele, e não Betel, para ter vida.",
+    "focusQuestion": "Onde você ainda busca atalhos religiosos em vez de buscar o Senhor e o bem?",
+    "reflectionPrompts": [
+      "Busquem-me e vivam",
+      "Odeiem o mal",
+      "Juízo na porta"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor diz à casa de Israel: busquem-me e terão vida.",
+        "evidenceRef": "Amós 5:4",
+        "evidenceSpan": "Busquem-me e terão vida"
+      },
+      {
+        "text": "Não devem buscar Betel nem ir a Gilgal.",
+        "evidenceRef": "Amós 5:5",
+        "evidenceSpan": "Não busquem Betel, não vão a Gilgal"
+      },
+      {
+        "text": "Na porta, desconsideram quem os reprova.",
+        "evidenceRef": "Amós 5:10",
+        "evidenceSpan": "desconsideram quem os reprova"
+      },
+      {
+        "text": "Oprimem os pobres e exigem tributos de trigo.",
+        "evidenceRef": "Amós 5:11",
+        "evidenceSpan": "oprimem os pobres e exigem deles tributos de trigo"
+      },
+      {
+        "text": "Devem buscar o bem e não o mal para viver.",
+        "evidenceRef": "Amós 5:14",
+        "evidenceSpan": "Busquem o bem e não o mal, para que vivam"
+      },
+      {
+        "text": "Devem aborrecer o mal, amar o bem e estabelecer o juízo na porta.",
+        "evidenceRef": "Amós 5:15",
+        "evidenceSpan": "Aborreçam o mal, e amem o bem; estabeleçam o juízo na porta"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Busquem-me",
+        "gloss": "O convite do Senhor à casa de Israel para achar vida nele."
+      },
+      {
+        "term": "juízo",
+        "gloss": "A justiça que deve ser estabelecida na porta da cidade."
+      },
+      {
+        "term": "bem",
+        "gloss": "O que o Senhor manda buscar no lugar do mal."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Convite: busquem o Senhor e vivam",
+        "evidenceRef": "Amós 5:4–6"
+      },
+      {
+        "label": "Acusação: juízo pervertido e pobres oprimidos",
+        "evidenceRef": "Amós 5:7–12"
+      },
+      {
+        "label": "Chamado: amem o bem e o juízo na porta",
+        "evidenceRef": "Amós 5:14–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Busquem o bem e não o mal, para que vivam.",
+        "marker": "para que",
+        "evidenceRef": "Amós 5:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto, por oprimirem os pobres, não habitarão nas casas que edificaram.",
+        "marker": "Portanto",
+        "evidenceRef": "Amós 5:11"
+      },
+      {
+        "kind": "contraste",
+        "text": "Edificaram casas de pedra lavrada, mas não habitarão nelas.",
+        "marker": "mas",
+        "evidenceRef": "Amós 5:11"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 55:6–7", "bridge": "Buscar o Senhor" },
+      { "ref": "Miquéias 6:8", "bridge": "Fazer juízo" },
+      { "ref": "Romanos 12:9", "bridge": "Aborrecer o mal" }
+    ],
+    "misreadings": [
+      {
+        "text": "Bastava ir a Betel e Gilgal para achar vida.",
+        "why": "5:4–5 manda buscar o Senhor e proíbe buscar Betel e Gilgal."
+      },
+      {
+        "text": "Oprimir pobres não entra neste chamado.",
+        "why": "5:11–12 denuncia opressão, tributos e rejeição dos necessitados."
+      },
+      {
+        "text": "Basta dizer que o Senhor está conosco, sem buscar o bem.",
+        "why": "5:14 liga a presença afirmada ao buscar o bem e não o mal."
+      }
+    ],
+    "centralInsight": "Odeiem o mal, amem o bem e estabeleçam o juízo na porta.",
+    "anchorQuestion": "Segundo Amós 5:4, o que o Senhor promete a quem o busca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 5:4, o Senhor diz à casa de Israel que o busquem e terão vida.",
+      "verseRef": "Amós 5:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "O convite é direto: busquem o Senhor e terão vida.",
+      "feedbackWrong": { "false": "Releia 5:4: Busquem-me e terão vida." },
+      "hint": "Veja o que o Senhor promete a quem o busca.",
+      "learningObjective": "Observar o convite a buscar o Senhor.",
+      "evidence": ["Amós 5:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 5:5, toque o primeiro lugar que não devem buscar.",
+      "verseRef": "Amós 5:5",
+      "evidenceSpan": "Não busquem Betel",
+      "feedbackCorrect": "Não busquem Betel; Gilgal e Berseba também caem.",
+      "hint": "Leia o começo da proibição.",
+      "learningObjective": "Identificar o culto proibido.",
+      "evidence": ["Amós 5:5"],
+      "options": [
+        { "id": "a", "text": "Betel" },
+        { "id": "b", "text": "vida" },
+        { "id": "c", "text": "casa" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Vida\" é a promessa de quem busca o Senhor.",
+        "c": "\"Casa\" não é o santuário proibido aqui."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 5:15, o que devem estabelecer na porta?",
+      "verseRef": "Amós 5:15",
+      "evidenceSpan": "estabeleçam o juízo na porta",
+      "feedbackCorrect": "Aborreçam o mal, amem o bem e estabeleçam o juízo na porta.",
+      "hint": "Veja o que se estabelece na porta.",
+      "learningObjective": "Observar o chamado ao juízo na porta.",
+      "evidence": ["Amós 5:15"],
+      "options": [
+        { "id": "a", "text": "O juízo" },
+        { "id": "b", "text": "Um mercado de trigo" },
+        { "id": "c", "text": "Um altar a Betel" },
+        { "id": "d", "text": "Festas sem juízo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto manda juízo, não comércio.",
+        "c": "Betel é o lugar a não buscar.",
+        "d": "O chamado é ao juízo, não a festas vazias."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 5:15 na ordem do texto.",
+      "verseRef": "Amós 5:15",
+      "evidenceSpan": "Aborreçam o mal, e amem o bem",
+      "feedbackCorrect": "Odiar o mal, amar o bem e estabelecer o juízo na porta.",
+      "hint": "Comece por aborrecer o mal.",
+      "learningObjective": "Reconhecer a sequência de Amós 5:15.",
+      "evidence": ["Amós 5:15"],
+      "options": [
+        { "id": "a", "text": "Aborreçam o mal, e amem o bem" },
+        { "id": "b", "text": "estabeleçam o juízo na porta" },
+        { "id": "c", "text": "talvez o Senhor, o Deus dos Exércitos, tenha compaixão" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo mal e o bem; a compaixão fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 5:14, o que devem buscar no lugar do mal?",
+      "verseRef": "Amós 5:14",
+      "evidenceSpan": "Busquem o bem e não o mal",
+      "feedbackCorrect": "Busquem o bem e não o mal, para que vivam.",
+      "hint": "É o oposto do mal no versículo.",
+      "learningObjective": "Lembrar o que se deve buscar.",
+      "evidence": ["Amós 5:14"],
+      "options": [
+        { "id": "a", "text": "bem" },
+        { "id": "b", "text": "Betel" },
+        { "id": "c", "text": "ouro" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Betel é o lugar a não buscar.",
+        "c": "\"Ouro\" não aparece no chamado."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 5:4 comunica que se liga a este contexto?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "A vida vem de buscar o Senhor, não os santuários vazios.",
+      "hint": "Ligue o convite à promessa de vida.",
+      "learningObjective": "Ligar busca e vida.",
+      "evidence": ["Amós 5:4"],
+      "passageA": { "ref": "Amós 5:4" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor convida Israel a buscá-lo para ter vida."
+      },
+      "options": [
+        { "id": "a", "text": "Busca que traz vida" },
+        { "id": "b", "text": "Betel como fonte de vida" },
+        { "id": "c", "text": "Vida sem buscar o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:5 proíbe buscar Betel.",
+        "c": "A vida está ligada a buscá-lo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 5:14, buscar o bem e não o mal não tem nenhum propósito anunciado no texto.",
+      "verseRef": "Amós 5:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "para que vivam",
+      "feedbackCorrect": "O propósito é claro: para que vivam, e o Senhor esteja convosco.",
+      "feedbackWrong": { "true": "Releia \"para que vivam\" em Amós 5:14." },
+      "hint": "Procure a expressão de propósito.",
+      "learningObjective": "Compreender o propósito de buscar o bem.",
+      "evidence": ["Amós 5:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 5:14, toque as palavras que marcam o propósito de buscar o bem.",
+      "verseRef": "Amós 5:14",
+      "evidenceSpan": "para que vivam",
+      "feedbackCorrect": "\"Para que\" introduz o propósito: viver.",
+      "hint": "São as duas palavras antes de \"vivam\".",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": ["Amós 5:14"],
+      "options": [
+        { "id": "a", "text": "para que" },
+        { "id": "b", "text": "Busquem" },
+        { "id": "c", "text": "Exércitos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Busquem\" é a ordem, não o marcador de propósito.",
+        "c": "\"Exércitos\" faz parte do nome do Senhor."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 5:11 relaciona a opressão aos pobres e o futuro das casas?",
+      "verseRef": "Amós 5:11",
+      "evidenceSpan": "edificaram casas de pedra lavrada, mas não habitarão nelas",
+      "feedbackCorrect": "Por oprimirem os pobres, edificam e não habitarão.",
+      "hint": "Una o \"Portanto\" ao contraste \"mas não\".",
+      "learningObjective": "Relacionar opressão e perda das casas.",
+      "evidence": ["Amós 5:11"],
+      "options": [
+        { "id": "a", "text": "Oprimem e por isso não habitarão o que edificaram" },
+        { "id": "b", "text": "A opressão garante casas eternas" },
+        { "id": "c", "text": "Edificar pedra lava o pecado" },
+        { "id": "d", "text": "Os pobres pedem tributo aos ricos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto anuncia que não habitarão.",
+        "c": "Casas de pedra não apagam a opressão.",
+        "d": "São os ricos que exigem tributo dos pobres."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 5:4–15?",
+      "verseRef": "Amós 5:4–15",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Convite, acusação e chamado ao bem e ao juízo.",
+      "hint": "Comece pelo convite a buscar o Senhor.",
+      "learningObjective": "Seguir o movimento do oráculo.",
+      "evidence": ["Amós 5:4–15"],
+      "options": [
+        { "id": "a", "text": "Convite: busquem o Senhor e vivam" },
+        { "id": "b", "text": "Acusação: juízo pervertido e pobres oprimidos" },
+        { "id": "c", "text": "Chamado: amem o bem e o juízo na porta" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Convite primeiro; juízo na porta por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 5:11, que palavra introduz o resultado da opressão?",
+      "verseRef": "Amós 5:11",
+      "evidenceSpan": "Portanto, visto que vocês oprimem os pobres",
+      "feedbackCorrect": "\"Portanto\" liga a opressão à perda das casas e do vinho.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": ["Amós 5:11"],
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "Talvez" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Talvez\" aparece em 5:15, não aqui.",
+        "c": "\"Nunca\" não abre o versículo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 5:15 a Miquéias 6:8?",
+      "verseRef": "Amós 5:15",
+      "evidenceSpan": "estabeleçam o juízo na porta",
+      "feedbackCorrect": "Nos dois textos, o Senhor pede juízo vivo, não só culto.",
+      "hint": "Compare o chamado ao juízo e ao bem.",
+      "learningObjective": "Relacionar juízo em Amós e Miquéias.",
+      "evidence": ["Amós 5:15", "Miquéias 6:8"],
+      "passageA": { "ref": "Amós 5:15" },
+      "passageB": { "ref": "Miquéias 6:8" },
+      "options": [
+        { "id": "a", "text": "Fazer juízo e amar a misericórdia" },
+        { "id": "b", "text": "Culto em Betel sem juízo" },
+        { "id": "c", "text": "Oprimir pobres com tributo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos pedem juízo, não Betel vazio.",
+        "c": "A opressão é o contrário do chamado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 5:4–15, bastava ir a Betel e Gilgal para achar vida.",
+      "verseRef": "Amós 5:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não busquem Betel, não vão a Gilgal",
+      "feedbackCorrect": "A vida está em buscar o Senhor; Betel e Gilgal são rejeitados.",
+      "feedbackWrong": { "true": "5:4–5 opõe buscar o Senhor a buscar Betel." },
+      "hint": "Compare 5:4 com a proibição de 5:5.",
+      "learningObjective": "Interpretar o contraste entre Senhor e santuários.",
+      "evidence": ["Amós 5:4–5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 5:15, toque o trecho que mostra o que estabelecer na porta.",
+      "verseRef": "Amós 5:15",
+      "evidenceSpan": "estabeleçam o juízo na porta",
+      "feedbackCorrect": "O juízo na porta é a prática do bem pedido.",
+      "hint": "Procure o que se estabelece.",
+      "learningObjective": "Sustentar com o texto o juízo na porta.",
+      "evidence": ["Amós 5:15"],
+      "options": [
+        { "id": "a", "text": "juízo" },
+        { "id": "b", "text": "José" },
+        { "id": "c", "text": "compaixão" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "José é o remanescente; o que se estabelece é o juízo.",
+        "c": "A compaixão é esperança do Senhor, não o que estabelecem."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 5:4–15 sustenta sobre buscar o Senhor?",
+      "verseRef": "Amós 5:14–15",
+      "evidenceSpan": "Aborreçam o mal, e amem o bem",
+      "feedbackCorrect": "Buscar o Senhor é odiar o mal, amar o bem e fazer juízo.",
+      "hint": "Una 5:4 ao chamado de 5:14–15.",
+      "learningObjective": "Escolher a interpretação do chamado.",
+      "evidence": ["Amós 5:14–15"],
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor é amar o bem e estabelecer juízo" },
+        { "id": "b", "text": "Bastava ir a Betel e Gilgal para achar vida" },
+        { "id": "c", "text": "Oprimir pobres não entra neste chamado" },
+        { "id": "d", "text": "Basta afirmar que o Senhor está conosco" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:5 proíbe Betel e Gilgal.",
+        "c": "5:11–12 denuncia a opressão.",
+        "d": "5:14 liga a presença ao buscar o bem."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho de buscar o Senhor na Escritura?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Amós chama; Isaías e Paulo ecoam buscar e aborrecer o mal.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o fio de buscar o Senhor e o bem.",
+      "evidence": ["Amós 5:4", "Isaías 55:6–7", "Romanos 12:9"],
+      "options": [
+        { "id": "a", "text": "Amós: busquem-me e terão vida" },
+        { "id": "b", "text": "Isaías: busquem o Senhor enquanto há tempo" },
+        { "id": "c", "text": "Paulo: aborreçam o mal e apeguem-se ao bem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 5, Isaías 55 e Romanos 12." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 5:4, qual é o primeiro verbo do convite do Senhor?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "\"Busquem-me\": a vida começa por procurar o Senhor.",
+      "hint": "É o verbo com hífen no convite.",
+      "learningObjective": "Lembrar o termo central do convite.",
+      "evidence": ["Amós 5:4"],
+      "options": [
+        { "id": "a", "text": "Busquem-me" },
+        { "id": "b", "text": "Fugi" },
+        { "id": "c", "text": "Esqueçam" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto manda buscar, não fugir.",
+        "c": "\"Esqueçam\" contradiz o convite."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 5:4 a Isaías 55:6–7?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Nos dois textos, buscar o Senhor enquanto há tempo traz vida.",
+      "hint": "Compare o chamado a buscar o Senhor.",
+      "learningObjective": "Ligar o convite de Amós a Isaías.",
+      "evidence": ["Amós 5:4", "Isaías 55:6–7"],
+      "passageA": { "ref": "Amós 5:4" },
+      "passageB": { "ref": "Isaías 55:6–7" },
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor enquanto há tempo" },
+        { "id": "b", "text": "Buscar só Betel e Gilgal" },
+        { "id": "c", "text": "Vida sem retorno a Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Amós proíbe esses santuários.",
+        "c": "Os textos ligam busca e vida."
+      }
+    }
+  ]
+}

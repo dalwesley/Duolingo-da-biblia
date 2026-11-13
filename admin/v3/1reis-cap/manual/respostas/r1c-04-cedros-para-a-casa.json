@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "1 Reis 5:3–7",
+    "passages": [
+      {
+        "ref": "1 Reis 5:1–12"
+      }
+    ],
+    "context": "Em paz, Salomão pede a Hirão cedros do Líbano para edificar a casa do Senhor — obra que Davi não pôde fazer por causa das guerras.",
+    "keyword": "edificar",
+    "keywordGloss": "Levantar uma casa para o nome do Senhor no tempo de descanso.",
+    "focusQuestion": "Você usa tempos de paz para construir o que glorifica o Senhor?",
+    "reflectionPrompts": [
+      "Descanso concedido",
+      "Cedros do Líbano",
+      "Aliança e paz"
+    ],
+    "facts": [
+      {
+        "text": "Hirão enviou servos a Salomão porque soube da unção.",
+        "evidenceRef": "1 Reis 5:1",
+        "evidenceSpan": "Hirão, rei de Tiro, enviou seus servos a Salomão"
+      },
+      {
+        "text": "Davi não pôde edificar a casa por causa das guerras.",
+        "evidenceRef": "1 Reis 5:3",
+        "evidenceSpan": "não pôde edificar uma casa ao nome do Senhor"
+      },
+      {
+        "text": "O Senhor concedeu descanso a Salomão de todas as partes.",
+        "evidenceRef": "1 Reis 5:4",
+        "evidenceSpan": "me tem concedido descanso de todas as partes"
+      },
+      {
+        "text": "Salomão pretende edificar uma casa para o nome do Senhor.",
+        "evidenceRef": "1 Reis 5:5",
+        "evidenceSpan": "edificar uma casa para o nome do Senhor"
+      },
+      {
+        "text": "Pede que cortem cedros do Líbano.",
+        "evidenceRef": "1 Reis 5:6",
+        "evidenceSpan": "mande que cortem cedros do Líbano"
+      },
+      {
+        "text": "Houve paz entre Hirão e Salomão, e firmaram aliança.",
+        "evidenceRef": "1 Reis 5:12",
+        "evidenceSpan": "houve paz entre Hirão e Salomão, e os dois firmaram uma aliança"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "edificar",
+        "gloss": "Construir a casa para o nome do Senhor."
+      },
+      {
+        "term": "descanso",
+        "gloss": "Paz que o Senhor concede para a obra do templo."
+      },
+      {
+        "term": "cedros",
+        "gloss": "Madeira do Líbano pedida a Hirão para a casa."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Hirão saúda o novo rei",
+        "evidenceRef": "1 Reis 5:1–2"
+      },
+      {
+        "label": "Salomão explica a paz e o plano do templo",
+        "evidenceRef": "1 Reis 5:3–6"
+      },
+      {
+        "label": "Hirão alegra-se e aceita fornecer madeira",
+        "evidenceRef": "1 Reis 5:7–10"
+      },
+      {
+        "label": "Troca de provisões, sabedoria e aliança",
+        "evidenceRef": "1 Reis 5:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Davi não edificou por causa das guerras.",
+        "marker": "por causa",
+        "evidenceRef": "1 Reis 5:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Hirão alegra-se e bendiz o Senhor pelo filho sábio.",
+        "marker": null,
+        "evidenceRef": "1 Reis 5:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Com sabedoria concedida, há paz e aliança entre os reis.",
+        "marker": null,
+        "evidenceRef": "1 Reis 5:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 7:12–13",
+        "bridge": "Filho edificará a casa"
+      },
+      {
+        "ref": "1 Crônicas 22:9–10",
+        "bridge": "Homem de descanso"
+      },
+      {
+        "ref": "Salmos 127:1",
+        "bridge": "Senhor edifica a casa"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Davi não edificou por falta de vontade.",
+        "why": "O texto aponta as guerras que o envolveram."
+      },
+      {
+        "text": "Salomão constrói em meio a batalhas contínuas.",
+        "why": "O Senhor lhe concedeu descanso de todas as partes."
+      },
+      {
+        "text": "Hirão recusa ajudar com a madeira.",
+        "why": "Fica alegre e fornece cedro e cipreste."
+      }
+    ],
+    "centralInsight": "Em tempo de paz, Salomão prepara o templo que Davi não pôde construir.",
+    "anchorQuestion": "Por que Davi não pôde edificar a casa do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 5 —4, o Senhor concedeu a Salomão descanso de todas as partes.",
+      "verseRef": "1 Reis 5:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "me tem concedido descanso de todas as partes",
+      "feedbackCorrect": "Há descanso, sem adversário.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o descanso.",
+      "learningObjective": "Observar a paz concedida.",
+      "evidence": [
+        "1 Reis 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 5:6, toque o que Salomão pede que cortem.",
+      "verseRef": "1 Reis 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "mande"
+        },
+        {
+          "id": "b",
+          "text": "Agora"
+        },
+        {
+          "id": "c",
+          "text": "cortem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Agora",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar os cedros.",
+      "evidence": [
+        "1 Reis 5:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 5:3, por que Davi não pôde edificar a casa?",
+      "verseRef": "1 Reis 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por causa das guerras que o envolveram"
+        },
+        {
+          "id": "b",
+          "text": "Porque rejeitou o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Porque Hirão negou madeira"
+        },
+        {
+          "id": "d",
+          "text": "Porque não havia trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa das guerras que o envolveram",
+      "feedbackCorrect": "As guerras impediram a obra.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o por causa.",
+      "learningObjective": "Notar o impedimento de Davi.",
+      "evidence": [
+        "1 Reis 5:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 5:4–5 na ordem do texto.",
+      "verseRef": "1 Reis 5:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agora, o Senhor, meu Deus, me tem concedido descanso"
+        },
+        {
+          "id": "b",
+          "text": "não há adversário, nem mau encontro"
+        },
+        {
+          "id": "c",
+          "text": "tenho a intenção de edificar uma casa para o nome do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "me tem concedido descanso de todas as partes",
+      "feedbackCorrect": "Descanso, paz e intenção de edificar.",
+      "feedbackWrong": {
+        "default": "Comece pelo descanso."
+      },
+      "hint": "O que o Senhor concedeu?",
+      "learningObjective": "Seguir paz e plano.",
+      "evidence": [
+        "1 Reis 5:4–5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 5:5, complete: intenção de ___ uma casa.",
+      "verseRef": "1 Reis 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "edificar"
+        },
+        {
+          "id": "b",
+          "text": "destruir"
+        },
+        {
+          "id": "c",
+          "text": "vender"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "intenção de edificar uma casa",
+      "feedbackCorrect": "Edificar.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Qual a intenção?",
+      "learningObjective": "Lembrar edificar.",
+      "evidence": [
+        "1 Reis 5:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 5:5 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 5:5",
+      "passageA": {
+        "ref": "1 Reis 5:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Em paz, Salomão prepara a casa do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Plano de edificar o templo"
+        },
+        {
+          "id": "b",
+          "text": "Plano de guerra contínua"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de construir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "edificar uma casa para o nome do Senhor",
+      "feedbackCorrect": "A paz abre espaço à obra.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Qual a intenção?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "1 Reis 5:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 5 —3, Davi não edificou porque Hirão se recusou a ajudar.",
+      "verseRef": "1 Reis 5:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "por causa das guerras que o envolveram",
+      "feedbackCorrect": "A causa são as guerras, não a recusa de Hirão.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe a causa.",
+      "learningObjective": "Ver o impedimento real.",
+      "evidence": [
+        "1 Reis 5:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 5:3, toque o trecho que marca a causa.",
+      "verseRef": "1 Reis 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "sabes"
+        },
+        {
+          "id": "c",
+          "text": "pôde"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sabes",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar por causa.",
+      "evidence": [
+        "1 Reis 5:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 5:4–5 liga descanso e templo?",
+      "verseRef": "1 Reis 5:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A paz concedida abre espaço para edificar"
+        },
+        {
+          "id": "b",
+          "text": "A guerra continua durante a obra"
+        },
+        {
+          "id": "c",
+          "text": "O descanso impede qualquer construção"
+        },
+        {
+          "id": "d",
+          "text": "Só Davi edificaria em paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me tem concedido descanso de todas as partes",
+      "feedbackCorrect": "Descanso e intenção de edificar se seguem.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una descanso e intenção.",
+      "learningObjective": "Relacionar paz e obra.",
+      "evidence": [
+        "1 Reis 5:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o acordo com Hirão?",
+      "verseRef": "1 Reis 5:5–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salomão explica a paz e o plano do templo"
+        },
+        {
+          "id": "b",
+          "text": "Hirão alegra-se e aceita fornecer madeira"
+        },
+        {
+          "id": "c",
+          "text": "Troca de provisões, sabedoria e aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Bendito seja, hoje, o SENHOR",
+      "feedbackCorrect": "Plano, madeira e aliança.",
+      "feedbackWrong": {
+        "default": "Comece pelo plano."
+      },
+      "hint": "O que precede a alegria de Hirão?",
+      "learningObjective": "Ordenar o acordo.",
+      "evidence": [
+        "1 Reis 5:5",
+        "1 Reis 5:7",
+        "1 Reis 5:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 5:3, complete: por causa das ___ que o envolveram.",
+      "verseRef": "1 Reis 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "guerras"
+        },
+        {
+          "id": "b",
+          "text": "festas"
+        },
+        {
+          "id": "c",
+          "text": "viagens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa das guerras que o envolveram",
+      "feedbackCorrect": "As guerras impediram Davi.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que o envolveu?",
+      "learningObjective": "Lembrar guerras.",
+      "evidence": [
+        "1 Reis 5:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 5:5 a 2 Samuel 7:12–13?",
+      "verseRef": "1 Reis 5:5",
+      "passageA": {
+        "ref": "1 Reis 5:5"
+      },
+      "passageB": {
+        "ref": "2 Samuel 7:12–13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Filho edificará a casa"
+        },
+        {
+          "id": "b",
+          "text": "Davi edificará sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Templo sem promessa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Teu filho, que porei em teu lugar no teu trono, este edificará",
+      "feedbackCorrect": "A promessa se cumpre no filho.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a promessa.",
+      "learningObjective": "Ligar à aliança.",
+      "evidence": [
+        "1 Reis 5:5",
+        "2 Samuel 7:12–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 5 —1–12, o tempo de paz serve para preparar a casa do Senhor.",
+      "verseRef": "1 Reis 5:4–5",
+      "correctOptionId": "true",
+      "evidenceSpan": "intenção de edificar uma casa para o nome do Senhor",
+      "feedbackCorrect": "Descanso e edificação andam juntos.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Una 5:4 e 5:5.",
+      "learningObjective": "Interpretar a paz.",
+      "evidence": [
+        "1 Reis 5:4–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 5:4, toque o que o Senhor concedeu a Salomão.",
+      "verseRef": "1 Reis 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "concedido"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar descanso.",
+      "evidence": [
+        "1 Reis 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Reis 5:1–12 sustenta?",
+      "verseRef": "1 Reis 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em paz, Salomão prepara o templo que Davi não pôde"
+        },
+        {
+          "id": "b",
+          "text": "Davi falhou por preguiça"
+        },
+        {
+          "id": "c",
+          "text": "Hirão impede a obra do templo"
+        },
+        {
+          "id": "d",
+          "text": "A aliança anula a casa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este edificará uma casa ao meu nome",
+      "feedbackCorrect": "Paz e promessa convergem na obra.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una descanso e promessa.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 Reis 5:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da casa do Senhor.",
+      "verseRef": "1 Reis 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guerras impedem Davi de edificar"
+        },
+        {
+          "id": "b",
+          "text": "Senhor concede descanso a Salomão"
+        },
+        {
+          "id": "c",
+          "text": "Salomão prepara madeira e aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "edificar uma casa para o nome do Senhor",
+      "feedbackCorrect": "Guerra, descanso e preparação.",
+      "feedbackWrong": {
+        "default": "Comece pelo impedimento."
+      },
+      "hint": "O que precede o descanso?",
+      "learningObjective": "Encadear a obra.",
+      "evidence": [
+        "1 Reis 5:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 5:12, complete: os dois firmaram uma ___.",
+      "verseRef": "1 Reis 5:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "divisão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os dois firmaram uma aliança",
+      "feedbackCorrect": "Aliança fecha o acordo.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que firmaram?",
+      "learningObjective": "Lembrar aliança.",
+      "evidence": [
+        "1 Reis 5:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 5:4 a 1 Crônicas 22:9–10?",
+      "verseRef": "1 Reis 5:4",
+      "passageA": {
+        "ref": "1 Reis 5:4"
+      },
+      "passageB": {
+        "ref": "1 Crônicas 22:9–10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Homem de descanso"
+        },
+        {
+          "id": "b",
+          "text": "Homem de guerra"
+        },
+        {
+          "id": "c",
+          "text": "Templo proibido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me tem concedido descanso de todas as partes",
+      "feedbackCorrect": "Salomão é o homem de descanso.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o descanso.",
+      "learningObjective": "Ligar à promessa.",
+      "evidence": [
+        "1 Reis 5:4",
+        "1 Crônicas 22:9–10"
+      ]
+    }
+  ]
+}

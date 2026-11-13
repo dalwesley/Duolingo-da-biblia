@@ -1,0 +1,915 @@
+{
+  "study": {
+    "slug": "s1c-04-a-arca-capturada",
+    "passageRef": "1 Samuel 4:10–18",
+    "passageText": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel. A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos. Então, um homem de Benjamim correu das fileiras da batalha e, no mesmo dia, chegou a Siló; ele estava com as vestes rasgadas e terra sobre a cabeça. E, ao chegar, viu que Eli estava sentado numa cadeira, à beira do caminho, pois seu coração tremia pela arca de Deus. Quando aquele homem anunciou isso na cidade, toda a cidade prorrompeu em gritos. E Eli, ouvindo os gritos, perguntou: Que alvoroço é este? Então, aquele homem se apressou e veio dar as notícias a Eli. Eli tinha noventa e oito anos; seus olhos estavam cegos e já não podia ver. E aquele homem disse a Eli: Eu sou o que vim das fileiras; porque hoje mesmo fugi delas. Eli perguntou: Que aconteceu, meu filho? Então, o mensageiro respondeu e disse: \"Israel fugiu diante dos filisteus, e houve grande morticínio entre o povo. Além disso, seus dois filhos, Hofni e Finéias, foram mortos, e a arca de Deus foi tomada.\" E aconteceu que, ao fazer menção da arca de Deus, Eli caiu para trás, da cadeira, junto ao portão, e quebrou o pescoço, morrendo, pois já era um homem idoso e pesado; e havia julgado Israel durante quarenta anos.",
+    "passages": [
+      {
+        "ref": "1 Samuel 4:10–18",
+        "text": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel. A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos. Então, um homem de Benjamim correu das fileiras da batalha e, no mesmo dia, chegou a Siló; ele estava com as vestes rasgadas e terra sobre a cabeça. E, ao chegar, viu que Eli estava sentado numa cadeira, à beira do caminho, pois seu coração tremia pela arca de Deus. Quando aquele homem anunciou isso na cidade, toda a cidade prorrompeu em gritos. E Eli, ouvindo os gritos, perguntou: Que alvoroço é este? Então, aquele homem se apressou e veio dar as notícias a Eli. Eli tinha noventa e oito anos; seus olhos estavam cegos e já não podia ver. E aquele homem disse a Eli: Eu sou o que vim das fileiras; porque hoje mesmo fugi delas. Eli perguntou: Que aconteceu, meu filho? Então, o mensageiro respondeu e disse: \"Israel fugiu diante dos filisteus, e houve grande morticínio entre o povo. Além disso, seus dois filhos, Hofni e Finéias, foram mortos, e a arca de Deus foi tomada.\" E aconteceu que, ao fazer menção da arca de Deus, Eli caiu para trás, da cadeira, junto ao portão, e quebrou o pescoço, morrendo, pois já era um homem idoso e pesado; e havia julgado Israel durante quarenta anos."
+      }
+    ],
+    "context": "Israel leva a arca à batalha; os filisteus vencem, a arca é tomada e Eli morre ao ouvir.",
+    "keyword": "capturada",
+    "keywordGloss": "A arca de Deus cai em mãos inimigas; sem o Senhor, o objeto não salva.",
+    "focusQuestion": "Onde você trata a presença de Deus como amuleto?",
+    "reflectionPrompts": [
+      "Derrota de Israel",
+      "Arca tomada",
+      "Queda de Eli"
+    ],
+    "facts": [
+      {
+        "text": "Israel foi derrotado e caíram trinta mil.",
+        "evidenceRef": "1 Samuel 4:10",
+        "evidenceSpan": "caíram trinta mil homens de pé de Israel"
+      },
+      {
+        "text": "A arca de Deus foi capturada.",
+        "evidenceRef": "1 Samuel 4:11",
+        "evidenceSpan": "A arca de Deus foi capturada"
+      },
+      {
+        "text": "Hofni e Finéias foram mortos.",
+        "evidenceRef": "1 Samuel 4:11",
+        "evidenceSpan": "Hofni e Finéias, foram mortos"
+      },
+      {
+        "text": "Eli tremia pela arca de Deus.",
+        "evidenceRef": "1 Samuel 4:13",
+        "evidenceSpan": "seu coração tremia pela arca de Deus"
+      },
+      {
+        "text": "O mensageiro anuncia fuga, morticínio e arca tomada.",
+        "evidenceRef": "1 Samuel 4:17",
+        "evidenceSpan": "a arca de Deus foi tomada"
+      },
+      {
+        "text": "Ao ouvir da arca, Eli cai e morre.",
+        "evidenceRef": "1 Samuel 4:18",
+        "evidenceSpan": "ao fazer menção da arca de Deus, Eli caiu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "capturada",
+        "gloss": "A arca cai em mãos filisteias."
+      },
+      {
+        "term": "tremia",
+        "gloss": "O coração de Eli estava pela arca."
+      },
+      {
+        "term": "morticínio",
+        "gloss": "A grande matança anunciada ao povo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Derrota e captura da arca",
+        "evidenceRef": "1 Samuel 4:10–11"
+      },
+      {
+        "label": "Mensageiro chega a Siló",
+        "evidenceRef": "1 Samuel 4:12–16"
+      },
+      {
+        "label": "Notícia completa e morte de Eli",
+        "evidenceRef": "1 Samuel 4:17–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Então os filisteus enfrentam; Israel é derrotado.",
+        "marker": "Então",
+        "evidenceRef": "1 Samuel 4:10"
+      },
+      {
+        "kind": "causa",
+        "text": "Eli cai ao fazer menção da arca.",
+        "marker": "ao",
+        "evidenceRef": "1 Samuel 4:18"
+      },
+      {
+        "kind": "sequência",
+        "text": "Fuga, morticínio, filhos mortos e arca tomada.",
+        "marker": "Além disso",
+        "evidenceRef": "1 Samuel 4:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 7:4",
+        "bridge": "Não confiar no templo",
+        "text": "Não confiem em palavras enganosas dizendo: \"Este é o Templo do Senhor! O Templo do Senhor! O Templo do Senhor!\""
+      },
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Confiar no nome do Senhor",
+        "text": "Uns confiam em carros, outros em cavalos; mas nós nos gloriaremos no nome do Senhor, nosso Deus."
+      },
+      {
+        "ref": "1 Samuel 2:34",
+        "bridge": "Sinal nos dois filhos",
+        "text": "Este será o sinal para você: o que sucederá a teus dois filhos, Hofni e Finéias: ambos morrerão no mesmo dia."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A arca garante vitória automática.",
+        "why": "Israel perde e a arca é capturada."
+      },
+      {
+        "text": "Eli morre ao ouvir só da derrota do povo.",
+        "why": "Cai ao fazer menção da arca de Deus."
+      },
+      {
+        "text": "Hofni e Finéias sobrevivem à batalha.",
+        "why": "O texto diz que foram mortos."
+      }
+    ],
+    "centralInsight": "Sem o Senhor, a arca não salva: a derrota revela um povo e uma casa em crise.",
+    "anchorQuestion": "Segundo 1 Samuel 4:18, o que faz Eli cair da cadeira?",
+    "relatedVerses": [
+      {
+        "reference": "Jeremias 7:4",
+        "reason": "Não confiar no templo"
+      },
+      {
+        "reference": "Salmos 20:7",
+        "reason": "Confiar no nome do Senhor"
+      },
+      {
+        "reference": "1 Samuel 2:34",
+        "reason": "Sinal nos dois filhos"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "1samuel-cap-sem-s1c-04-a-arca-capturada-01",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em 1 Samuel 4:11, a arca de Deus foi capturada e Hofni e Finéias foram mortos.",
+      "prompt": "Em 1 Samuel 4:11, a arca de Deus foi capturada e Hofni e Finéias foram mortos.",
+      "cue": "Em 1 Samuel 4:11, a arca de Deus foi capturada e Hofni e Finéias foram mortos.",
+      "verseRef": "1 Samuel 4:11",
+      "passageText": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos",
+      "feedbackCorrect": "Arca e filhos caem juntos.",
+      "feedbackWrong": {
+        "false": "O versículo afirma os dois fatos."
+      },
+      "hint": "Leia o versículo inteiro.",
+      "learningObjective": "Observar a dupla perda.",
+      "evidence": [
+        "1 Samuel 4:11"
+      ]
+    },
+    {
+      "id": "1samuel-cap-sem-s1c-04-a-arca-capturada-02",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em 1 Samuel 4:13, toque pelo que o coração de Eli tremia.",
+      "prompt": "Em 1 Samuel 4:13, toque pelo que o coração de Eli tremia.",
+      "cue": "Em 1 Samuel 4:13, toque pelo que o coração de Eli tremia.",
+      "verseRef": "1 Samuel 4:13",
+      "passageText": "E, ao chegar, viu que Eli estava sentado numa cadeira, à beira do caminho, pois seu coração tremia pela arca de Deus. Quando aquele homem anunciou isso na cidade, toda a cidade prorrompeu em gritos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "arca de Deus"
+        },
+        {
+          "id": "b",
+          "text": "cadeira"
+        },
+        {
+          "id": "c",
+          "text": "cidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "seu coração tremia pela arca de Deus",
+      "feedbackCorrect": "Tremia pela arca.",
+      "feedbackWrong": {
+        "b": "Cadeira é onde senta.",
+        "c": "Cidade grita depois."
+      },
+      "hint": "Veja o motivo do tremor.",
+      "learningObjective": "Identificar a preocupação de Eli.",
+      "evidence": [
+        "1 Samuel 4:13"
+      ]
+    },
+    {
+      "id": "1samuel-cap-sem-s1c-04-a-arca-capturada-03",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo 1 Samuel 4:10, quantos homens de pé de Israel caíram?",
+      "prompt": "Segundo 1 Samuel 4:10, quantos homens de pé de Israel caíram?",
+      "cue": "Segundo 1 Samuel 4:10, quantos homens de pé de Israel caíram?",
+      "verseRef": "1 Samuel 4:10",
+      "passageText": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura que o texto sustenta"
+        },
+        {
+          "id": "b",
+          "text": "Que nada acontece neste trecho"
+        },
+        {
+          "id": "c",
+          "text": "Que o Senhor está ausente"
+        },
+        {
+          "id": "d",
+          "text": "Que o povo permanece indiferente"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "caíram trinta mil homens de pé de Israel",
+      "feedbackCorrect": "Trinta mil.",
+      "feedbackWrong": {
+        "b": "É trinta mil.",
+        "c": "É trinta mil.",
+        "d": "É trinta mil."
+      },
+      "hint": "Leia o número.",
+      "learningObjective": "Observar a escala da derrota.",
+      "evidence": [
+        "1 Samuel 4:10"
+      ]
+    },
+    {
+      "id": "1samuel-cap-sem-s1c-04-a-arca-capturada-04",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte 1 Samuel 4:11 na ordem do texto.",
+      "prompt": "Monte 1 Samuel 4:11 na ordem do texto.",
+      "cue": "Monte 1 Samuel 4:11 na ordem do texto.",
+      "verseRef": "1 Samuel 4:11",
+      "passageText": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A arca de Deus foi capturada"
+        },
+        {
+          "id": "b",
+          "text": "e os dois filhos de Eli, Hofni e Finéias"
+        },
+        {
+          "id": "c",
+          "text": "foram mortos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "foram mortos",
+      "feedbackCorrect": "Arca primeiro; depois os filhos.",
+      "feedbackWrong": {
+        "default": "Comece pela arca."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "1 Samuel 4:11"
+      ]
+    },
+    {
+      "id": "1samuel-cap-sem-s1c-04-a-arca-capturada-05",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em 1 Samuel 4:11, complete: A arca de Deus foi ___.",
+      "prompt": "Em 1 Samuel 4:11, complete: A arca de Deus foi ___.",
+      "cue": "Em 1 Samuel 4:11, complete: A arca de Deus foi ___.",
+      "verseRef": "1 Samuel 4:11",
+      "passageText": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "template": "A arca de Deus foi ___ e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "capturada"
+        },
+        {
+          "id": "b",
+          "text": "escondida"
+        },
+        {
+          "id": "c",
+          "text": "restaurada"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "A arca de Deus foi capturada",
+      "feedbackCorrect": "Capturada.",
+      "feedbackWrong": {
+        "b": "Não é escondida.",
+        "c": "Não é restaurada."
+      },
+      "hint": "O verbo da arca.",
+      "learningObjective": "Lembrar a captura.",
+      "evidence": [
+        "1 Samuel 4:11"
+      ]
+    },
+    {
+      "id": "1samuel-cap-sem-s1c-04-a-arca-capturada-06",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que 1 Samuel 4:17 comunica que se liga a este contexto?",
+      "prompt": "O que 1 Samuel 4:17 comunica que se liga a este contexto?",
+      "cue": "O que 1 Samuel 4:17 comunica que se liga a este contexto?",
+      "verseRef": "1 Samuel 4:17",
+      "passageText": "Então, o mensageiro respondeu e disse: \"Israel fugiu diante dos filisteus, e houve grande morticínio entre o povo. Além disso, seus dois filhos, Hofni e Finéias, foram mortos, e a arca de Deus foi tomada.\"",
+      "passageA": {
+        "ref": "1 Samuel 4:17",
+        "text": "Então, o mensageiro respondeu e disse: \"Israel fugiu diante dos filisteus, e houve grande morticínio entre o povo. Além disso, seus dois filhos, Hofni e Finéias, foram mortos, e a arca de Deus foi tomada.\""
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A notícia junta derrota, mortes e a arca tomada."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Arca tomada na derrota"
+        },
+        {
+          "id": "b",
+          "text": "Vitória de Israel"
+        },
+        {
+          "id": "c",
+          "text": "Filhos salvos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "a arca de Deus foi tomada",
+      "feedbackCorrect": "A arca foi tomada.",
+      "feedbackWrong": {
+        "b": "Israel fugiu.",
+        "c": "Filhos mortos."
+      },
+      "hint": "Veja o fim da notícia.",
+      "learningObjective": "Ligar notícia e crise.",
+      "evidence": [
+        "1 Samuel 4:17"
+      ]
+    },
+    {
+      "id": "1samuel-cap-cam-s1c-04-a-arca-capturada-01",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em 1 Samuel 4:18, Eli cai ao ouvir apenas que Israel fugiu, antes de ouvir da arca.",
+      "prompt": "Em 1 Samuel 4:18, Eli cai ao ouvir apenas que Israel fugiu, antes de ouvir da arca.",
+      "cue": "Em 1 Samuel 4:18, Eli cai ao ouvir apenas que Israel fugiu, antes de ouvir da arca.",
+      "verseRef": "1 Samuel 4:18",
+      "passageText": "E aconteceu que, ao fazer menção da arca de Deus, Eli caiu para trás, da cadeira, junto ao portão, e quebrou o pescoço, morrendo, pois já era um homem idoso e pesado; e havia julgado Israel durante quarenta anos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "ao fazer menção da arca de Deus, Eli caiu",
+      "feedbackCorrect": "A menção da arca provoca a queda.",
+      "feedbackWrong": {
+        "true": "O gatilho é a menção da arca."
+      },
+      "hint": "Veja o gatilho da queda.",
+      "learningObjective": "Ver a causa da queda.",
+      "evidence": [
+        "1 Samuel 4:18"
+      ]
+    },
+    {
+      "id": "1samuel-cap-cam-s1c-04-a-arca-capturada-02",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em 1 Samuel 4:10, toque a palavra que marca o início da batalha narrada.",
+      "prompt": "Em 1 Samuel 4:10, toque a palavra que marca o início da batalha narrada.",
+      "cue": "Em 1 Samuel 4:10, toque a palavra que marca o início da batalha narrada.",
+      "verseRef": "1 Samuel 4:10",
+      "passageText": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "tenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Então, os filisteus enfrentaram batalha",
+      "feedbackCorrect": "Então abre o resultado.",
+      "feedbackWrong": {
+        "b": "Israel é derrotado.",
+        "c": "Tenda é para onde fogem."
+      },
+      "hint": "Primeira palavra.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "1 Samuel 4:10"
+      ]
+    },
+    {
+      "id": "1samuel-cap-cam-s1c-04-a-arca-capturada-03",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação 1 Samuel 4:18 faz entre a arca e a morte de Eli?",
+      "prompt": "Que relação 1 Samuel 4:18 faz entre a arca e a morte de Eli?",
+      "cue": "Que relação 1 Samuel 4:18 faz entre a arca e a morte de Eli?",
+      "verseRef": "1 Samuel 4:18",
+      "passageText": "E aconteceu que, ao fazer menção da arca de Deus, Eli caiu para trás, da cadeira, junto ao portão, e quebrou o pescoço, morrendo, pois já era um homem idoso e pesado; e havia julgado Israel durante quarenta anos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao mencionar a arca, Eli cai e morre"
+        },
+        {
+          "id": "b",
+          "text": "Eli morre antes de ouvir da arca"
+        },
+        {
+          "id": "c",
+          "text": "A arca é restaurada e Eli se levanta"
+        },
+        {
+          "id": "d",
+          "text": "Eli cai só ao ouvir dos trinta mil"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "ao fazer menção da arca de Deus, Eli caiu",
+      "feedbackCorrect": "A arca é o gatilho.",
+      "feedbackWrong": {
+        "b": "A menção vem antes.",
+        "c": "Não há restauração.",
+        "d": "O texto aponta a arca."
+      },
+      "hint": "Leia o ao fazer menção.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "1 Samuel 4:18"
+      ]
+    },
+    {
+      "id": "1samuel-cap-cam-s1c-04-a-arca-capturada-04",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos da cena.",
+      "prompt": "Ordene os movimentos da cena.",
+      "cue": "Ordene os movimentos da cena.",
+      "verseRef": "1 Samuel 4:18",
+      "passageText": "E aconteceu que, ao fazer menção da arca de Deus, Eli caiu para trás, da cadeira, junto ao portão, e quebrou o pescoço, morrendo, pois já era um homem idoso e pesado; e havia julgado Israel durante quarenta anos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Derrota e captura da arca"
+        },
+        {
+          "id": "b",
+          "text": "Mensageiro chega a Siló"
+        },
+        {
+          "id": "c",
+          "text": "Notícia completa e morte de Eli"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Eli caiu para trás",
+      "feedbackCorrect": "Derrota, mensagem e queda.",
+      "feedbackWrong": {
+        "default": "Comece pela derrota."
+      },
+      "hint": "O que fecha a cena?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "1 Samuel 4:10",
+        "1 Samuel 4:18"
+      ]
+    },
+    {
+      "id": "1samuel-cap-cam-s1c-04-a-arca-capturada-05",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em 1 Samuel 4:13, complete: seu coração ___ pela arca de Deus.",
+      "prompt": "Em 1 Samuel 4:13, complete: seu coração ___ pela arca de Deus.",
+      "cue": "Em 1 Samuel 4:13, complete: seu coração ___ pela arca de Deus.",
+      "verseRef": "1 Samuel 4:13",
+      "passageText": "E, ao chegar, viu que Eli estava sentado numa cadeira, à beira do caminho, pois seu coração tremia pela arca de Deus. Quando aquele homem anunciou isso na cidade, toda a cidade prorrompeu em gritos.",
+      "template": "E, ao chegar, viu que Eli estava sentado numa cadeira, à beira do caminho, pois seu coração ___ pela arca de Deus. Quando aquele homem anunciou isso na cidade, toda a cidade prorrompeu em gritos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "tremia"
+        },
+        {
+          "id": "b",
+          "text": "cantava"
+        },
+        {
+          "id": "c",
+          "text": "dormia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "seu coração tremia pela arca de Deus",
+      "feedbackCorrect": "Tremia marca a angústia.",
+      "feedbackWrong": {
+        "b": "Não cantava.",
+        "c": "Não dormia."
+      },
+      "hint": "O verbo do coração.",
+      "learningObjective": "Lembrar a angústia de Eli.",
+      "evidence": [
+        "1 Samuel 4:13"
+      ]
+    },
+    {
+      "id": "1samuel-cap-cam-s1c-04-a-arca-capturada-06",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga 1 Samuel 4:11 a Jeremias 7:4?",
+      "prompt": "O que liga 1 Samuel 4:11 a Jeremias 7:4?",
+      "cue": "O que liga 1 Samuel 4:11 a Jeremias 7:4?",
+      "verseRef": "1 Samuel 4:11",
+      "passageText": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "passageA": {
+        "ref": "1 Samuel 4:11",
+        "text": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos."
+      },
+      "passageB": {
+        "ref": "Jeremias 7:4",
+        "text": "Não confiem em palavras enganosas dizendo: \"Este é o Templo do Senhor! O Templo do Senhor! O Templo do Senhor!\""
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não confiar no templo"
+        },
+        {
+          "id": "b",
+          "text": "Arca garante vitória"
+        },
+        {
+          "id": "c",
+          "text": "Objeto salva sozinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "A arca de Deus foi capturada",
+      "feedbackCorrect": "Símbolo sem fidelidade não salva.",
+      "feedbackWrong": {
+        "b": "A arca foi capturada.",
+        "c": "Há derrota."
+      },
+      "hint": "Compare confiança e queda.",
+      "learningObjective": "Ligar a Jeremias.",
+      "evidence": [
+        "1 Samuel 4:11",
+        "Jeremias 7:4"
+      ]
+    },
+    {
+      "id": "1samuel-cap-pro-s1c-04-a-arca-capturada-01",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em 1 Samuel 4:10–11, a presença da arca na batalha impede a derrota de Israel.",
+      "prompt": "Em 1 Samuel 4:10–11, a presença da arca na batalha impede a derrota de Israel.",
+      "cue": "Em 1 Samuel 4:10–11, a presença da arca na batalha impede a derrota de Israel.",
+      "verseRef": "1 Samuel 4:10–11",
+      "passageText": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel. A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Israel foi derrotado",
+      "feedbackCorrect": "A arca não impede a derrota.",
+      "feedbackWrong": {
+        "true": "Israel é derrotado e a arca capturada."
+      },
+      "hint": "Veja o resultado da batalha.",
+      "learningObjective": "Interpretar o limite do amuleto.",
+      "evidence": [
+        "1 Samuel 4:10–11"
+      ]
+    },
+    {
+      "id": "1samuel-cap-pro-s1c-04-a-arca-capturada-02",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em 1 Samuel 4:18, toque o trecho que mostra o gatilho da morte de Eli.",
+      "prompt": "Em 1 Samuel 4:18, toque o trecho que mostra o gatilho da morte de Eli.",
+      "cue": "Em 1 Samuel 4:18, toque o trecho que mostra o gatilho da morte de Eli.",
+      "verseRef": "1 Samuel 4:18",
+      "passageText": "E aconteceu que, ao fazer menção da arca de Deus, Eli caiu para trás, da cadeira, junto ao portão, e quebrou o pescoço, morrendo, pois já era um homem idoso e pesado; e havia julgado Israel durante quarenta anos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "menção da arca"
+        },
+        {
+          "id": "b",
+          "text": "quarenta anos"
+        },
+        {
+          "id": "c",
+          "text": "portão"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "ao fazer menção da arca de Deus",
+      "feedbackCorrect": "A menção da arca.",
+      "feedbackWrong": {
+        "b": "Quarenta anos é o juízo.",
+        "c": "Portão é o lugar."
+      },
+      "hint": "O que provoca a queda?",
+      "learningObjective": "Sustentar o gatilho.",
+      "evidence": [
+        "1 Samuel 4:18"
+      ]
+    },
+    {
+      "id": "1samuel-cap-pro-s1c-04-a-arca-capturada-03",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura 1 Samuel 4:10–18 sustenta sobre a arca?",
+      "prompt": "Que leitura 1 Samuel 4:10–18 sustenta sobre a arca?",
+      "cue": "Que leitura 1 Samuel 4:10–18 sustenta sobre a arca?",
+      "verseRef": "1 Samuel 4:10–11",
+      "passageText": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel. A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem o Senhor, a arca não salva o povo"
+        },
+        {
+          "id": "b",
+          "text": "A arca garante vitória automática"
+        },
+        {
+          "id": "c",
+          "text": "Hofni e Finéias sobrevivem"
+        },
+        {
+          "id": "d",
+          "text": "Eli morre só pela derrota numérica"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "A arca de Deus foi capturada",
+      "feedbackCorrect": "Objeto sem fidelidade não salva.",
+      "feedbackWrong": {
+        "b": "Há derrota.",
+        "c": "Foram mortos.",
+        "d": "O gatilho é a arca."
+      },
+      "hint": "Compare expectativa e resultado.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 Samuel 4:10–11"
+      ]
+    },
+    {
+      "id": "1samuel-cap-pro-s1c-04-a-arca-capturada-04",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o risco de confiar no símbolo sem Deus?",
+      "prompt": "Qual sequência revela o risco de confiar no símbolo sem Deus?",
+      "cue": "Qual sequência revela o risco de confiar no símbolo sem Deus?",
+      "verseRef": "1 Samuel 4:11",
+      "passageText": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel perde a arca na batalha"
+        },
+        {
+          "id": "b",
+          "text": "Não confiar nas palavras mentirosas do templo"
+        },
+        {
+          "id": "c",
+          "text": "Alguns confiam em carros; nós no Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "A arca de Deus foi capturada",
+      "feedbackCorrect": "Captura, aviso e confiança certa.",
+      "feedbackWrong": {
+        "default": "Siga Samuel, Jeremias e Salmo."
+      },
+      "hint": "Siga a ordem bíblica.",
+      "learningObjective": "Ver o fio da confiança.",
+      "evidence": [
+        "1 Samuel 4:11",
+        "Jeremias 7:4",
+        "Salmos 20:7"
+      ]
+    },
+    {
+      "id": "1samuel-cap-pro-s1c-04-a-arca-capturada-05",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em 1 Samuel 4:17, complete: houve grande ___ entre o povo.",
+      "prompt": "Em 1 Samuel 4:17, complete: houve grande ___ entre o povo.",
+      "cue": "Em 1 Samuel 4:17, complete: houve grande ___ entre o povo.",
+      "verseRef": "1 Samuel 4:17",
+      "passageText": "Então, o mensageiro respondeu e disse: \"Israel fugiu diante dos filisteus, e houve grande morticínio entre o povo. Além disso, seus dois filhos, Hofni e Finéias, foram mortos, e a arca de Deus foi tomada.\"",
+      "template": "Então, o mensageiro respondeu e disse: \"Israel fugiu diante dos filisteus, e houve grande ___ entre o povo. Além disso, seus dois filhos, Hofni e Finéias, foram mortos, e a arca de Deus foi tomada.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "morticínio"
+        },
+        {
+          "id": "b",
+          "text": "louvor"
+        },
+        {
+          "id": "c",
+          "text": "jejum"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "houve grande morticínio entre o povo",
+      "feedbackCorrect": "Morticínio nomeia a crise.",
+      "feedbackWrong": {
+        "b": "Não é louvor.",
+        "c": "Não é jejum."
+      },
+      "hint": "A palavra da matança.",
+      "learningObjective": "Lembrar o termo da derrota.",
+      "evidence": [
+        "1 Samuel 4:17"
+      ]
+    },
+    {
+      "id": "1samuel-cap-pro-s1c-04-a-arca-capturada-06",
+      "trail": "1samuel-cap",
+      "section": "s1c-04-a-arca-capturada",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga 1 Samuel 4:11 a Salmos 20:7?",
+      "prompt": "O que liga 1 Samuel 4:11 a Salmos 20:7?",
+      "cue": "O que liga 1 Samuel 4:11 a Salmos 20:7?",
+      "verseRef": "1 Samuel 4:11",
+      "passageText": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos.",
+      "passageA": {
+        "ref": "1 Samuel 4:11",
+        "text": "A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos."
+      },
+      "passageB": {
+        "ref": "Salmos 20:7",
+        "text": "Uns confiam em carros, outros em cavalos; mas nós nos gloriaremos no nome do Senhor, nosso Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiar no nome do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Confiar só na arca"
+        },
+        {
+          "id": "c",
+          "text": "Vitória pelo objeto sagrado"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "A arca de Deus foi capturada",
+      "feedbackCorrect": "O nome do Senhor, não o objeto.",
+      "feedbackWrong": {
+        "b": "A arca cai.",
+        "c": "Há derrota."
+      },
+      "hint": "Compare o objeto e o nome.",
+      "learningObjective": "Ligar ao Salmo.",
+      "evidence": [
+        "1 Samuel 4:11",
+        "Salmos 20:7"
+      ]
+    }
+  ]
+}

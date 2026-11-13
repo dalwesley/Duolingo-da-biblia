@@ -4,10 +4,15 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../l10n/l10n_global.dart';
+import '../models/room_plan.dart';
+import '../models/room_week.dart';
 import '../models/study_room.dart';
+import '../utils/reading_growth.dart';
 import 'backend_service.dart';
 import 'league_service.dart';
 import 'moderation_service.dart';
+import 'analytics_service.dart';
+import 'notification_service.dart';
 import 'progress_service.dart';
 
 /// Orquestra salas privadas: código local + sync Firebase via [BackendService].
@@ -29,6 +34,17 @@ class RoomService extends ChangeNotifier {
 
   /// A sala salva não abriu por falha de rede (o código continua guardado).
   bool loadFailed = false;
+
+  /// Líder do piloto (`users/{uid}.groupsPilot`): cria grupo mesmo com
+  /// `groups_enabled` desligado. Os grupos dele nascem `pilot`.
+  bool pilotLeader = false;
+
+  /// Último fechamento da semana do grupo ativo (a revelação).
+  RoomClosing? latestClosing;
+
+  /// Fechamentos já vistos neste aparelho ("CÓDIGO@semana").
+  Set<String> _seenClosings = const {};
+  static const _keySeenClosings = 'roomClosingsSeen';
   bool _loaded = false;
   StreamSubscription<QuerySnapshot<Map<String, dynamic>>>? _inviteSub;
   String? _listeningUid;
@@ -72,14 +88,349 @@ class RoomService extends ChangeNotifier {
   /// Estudo marcado para a semana corrente (ou `null`).
   RoomStudy? get currentStudy => activeRoom?.studyFor(LeagueService.weekKey());
 
+  /// Leitura da Bíblia marcada para a semana corrente (ou `null`).
+  RoomReading? get currentReading =>
+      activeRoom?.readingFor(LeagueService.weekKey());
+
+  /// Grupos abertos para esta pessoa: a chave geral, ou o piloto (líder do
+  /// piloto ou membro de um grupo do piloto).
+  bool groupsOpen(bool groupsFlag) =>
+      groupsFlag ||
+      pilotLeader ||
+      (activeRoom?.pilot ?? false) ||
+      incoming.any((i) => i.pilot);
+
+  /// Criar grupo: a chave geral ou líder do piloto.
+  bool canCreate(bool groupsFlag) => groupsFlag || pilotLeader;
+
+  /// Participação da semana (lista do líder e fechamento).
+  RoomWeek get week => RoomWeek.of(
+    members: members,
+    study: currentStudy,
+    reading: currentReading,
+    week: LeagueService.weekKey(),
+  );
+
+  // ───────────── Propósito do grupo ─────────────
+
+  /// Propósito do grupo (próximo, em curso ou terminado e não trocado).
+  RoomPlan? get plan => activeRoom?.plan;
+
+  /// Contas do grupo no propósito (null sem propósito).
+  PlanGroup? get planGroup {
+    final p = plan;
+    return p == null ? null : PlanGroup(p, members);
+  }
+
+  /// Meu progresso no propósito atual (vazio se ainda não comecei).
+  PlanProgress? get myPlan {
+    final p = plan;
+    if (p == null) return null;
+    final mine = members.where((m) => m.isUser).firstOrNull?.plan;
+    return mine != null && mine.planId == p.id
+        ? mine
+        : PlanProgress(planId: p.id);
+  }
+
+  /// Respostas carregadas por dia ("planId_n").
+  final Map<String, List<PlanAnswer>> _answers = {};
+  final Set<String> _answersLoading = {};
+
+  List<PlanAnswer>? answersFor(int day) {
+    final p = plan;
+    if (p == null) return null;
+    final list = _answers[PlanAnswer.dayKey(p.id, day)];
+    if (list == null) return null;
+    return [
+      for (final a in list)
+        if (!ModerationService.instance.isBlocked(a.uid)) a,
+    ];
+  }
+
+  bool answersLoading(int day) {
+    final p = plan;
+    return p != null && _answersLoading.contains(PlanAnswer.dayKey(p.id, day));
+  }
+
+  Future<void> loadAnswers(int day, {bool force = false}) async {
+    final room = activeRoom;
+    final p = plan;
+    if (room == null || p == null || !backend.isActive) return;
+    final key = PlanAnswer.dayKey(p.id, day);
+    if (_answersLoading.contains(key)) return;
+    if (!force && _answers.containsKey(key)) return;
+    _answersLoading.add(key);
+    notifyListeners();
+    final list = await backend.fetchRoomPlanAnswers(room.code, p.id, day);
+    _answersLoading.remove(key);
+    _answers[key] = list;
+    notifyListeners();
+  }
+
+  /// O que já foi feito de cada coisa do dia.
+  static ({bool reading, bool scene, bool question}) dayItems(
+    RoomPlan plan,
+    PlanDay day,
+    PlanProgress mine,
+    ProgressService progress,
+  ) {
+    final r = day.reading;
+    return (
+      reading:
+          r == null ||
+          progress.chaptersReadSince(r.bookAbbrev, r.from, r.to, plan.start) >=
+              r.chapters,
+      scene:
+          day.scene == null ||
+          // Feita no período do propósito (refazer vale), não antes.
+          progress.sceneDoneSince(day.scene!.slug, plan.start),
+      question: !day.hasQuestion || mine.answered.contains(day.n),
+    );
+  }
+
+  static bool dayComplete(
+    RoomPlan plan,
+    PlanDay day,
+    PlanProgress mine,
+    ProgressService progress,
+  ) {
+    if (day.isManual) return mine.done.containsKey(day.n);
+    final items = dayItems(plan, day, mine, progress);
+    return items.reading && items.scene && items.question;
+  }
+
+  /// Grava no meu membro os dias que fechei (capítulos lidos, cena feita,
+  /// pergunta respondida). Dia feito depois da data conta como recuperado.
+  Future<void> syncPlan(ProgressService progress) async {
+    final room = activeRoom;
+    final p = plan;
+    final mine = myPlan;
+    if (room == null || p == null || mine == null || !backend.isActive) {
+      await _syncPlanReminders(progress);
+      return;
+    }
+    final today = planYmd(DateTime.now());
+    final done = {...mine.done};
+    var changed = false;
+    for (final d in p.openDays()) {
+      if (done.containsKey(d.n) || d.isManual) continue;
+      if (dayComplete(p, d, mine, progress)) {
+        done[d.n] = today;
+        changed = true;
+        unawaited(
+          AnalyticsService.instance.logEvent('group_plan_day_done', {
+            'day': d.n,
+            'late': d.date.compareTo(today) < 0 ? 1 : 0,
+          }),
+        );
+      }
+    }
+    if (changed) await _writePlan(room.code, mine.copyWith(done: done));
+    await _syncPlanReminders(progress);
+  }
+
+  Future<void> _syncPlanReminders(ProgressService progress) async {
+    final p = plan;
+    final mine = myPlan;
+    final live = p != null && p.phase() != PlanPhase.ended;
+    await NotificationService.instance.syncGroupPlan(
+      plan: live ? p : null,
+      done: mine?.done.keys.toSet() ?? const {},
+      enabled:
+          progress.notificationsPrompted && progress.settings.notifications,
+    );
+  }
+
+  Future<bool> _writePlan(String code, PlanProgress next) async {
+    final ok = await backend.setRoomPlanProgress(code, next);
+    if (!ok) return false;
+    final uid = backend.uid;
+    members = [
+      for (final m in members)
+        if (m.uid == uid) _withPlan(m, next) else m,
+    ];
+    notifyListeners();
+    return true;
+  }
+
+  static RoomMember _withPlan(RoomMember m, PlanProgress plan) => RoomMember(
+    uid: m.uid,
+    name: m.name,
+    steps: m.steps,
+    isUser: m.isUser,
+    lastWalk: m.lastWalk,
+    photoUrl: m.photoUrl,
+    portraitStyle: m.portraitStyle,
+    studyDone: m.studyDone,
+    weekDays: m.weekDays,
+    readingDone: m.readingDone,
+    readingWeek: m.readingWeek,
+    sealWeeks: m.sealWeeks,
+    growthPts: m.growthPts,
+    growthWeek: m.growthWeek,
+    plan: plan,
+  );
+
+  /// "Estou dentro": a pessoa assume o propósito antes de começar.
+  Future<bool> joinPlan() async {
+    final room = activeRoom;
+    final mine = myPlan;
+    if (room == null || mine == null) return false;
+    if (mine.joined) return true;
+    final ok = await _writePlan(room.code, mine.copyWith(joined: true));
+    if (ok) {
+      unawaited(AnalyticsService.instance.logEvent('group_plan_join'));
+    }
+    return ok;
+  }
+
+  /// Dia sem capítulo, cena nem pergunta: a pessoa marca à mão.
+  Future<bool> markManualDay(PlanDay day, ProgressService progress) async {
+    final room = activeRoom;
+    final mine = myPlan;
+    if (room == null || mine == null || !day.isManual) return false;
+    final ok = await _writePlan(
+      room.code,
+      mine.copyWith(
+        joined: true,
+        done: {...mine.done, day.n: planYmd(DateTime.now())},
+      ),
+    );
+    if (ok) await _syncPlanReminders(progress);
+    return ok;
+  }
+
+  /// Responde a pergunta do dia. Depois as respostas do grupo aparecem.
+  Future<bool> answerDay(
+    PlanDay day,
+    String text,
+    ProgressService progress,
+  ) async {
+    final room = activeRoom;
+    final p = plan;
+    final mine = myPlan;
+    if (room == null || p == null || mine == null) return false;
+    final ok = await backend.saveRoomPlanAnswer(
+      code: room.code,
+      planId: p.id,
+      day: day.n,
+      name: progress.publicUserName,
+      text: text,
+    );
+    if (!ok) return false;
+    unawaited(
+      AnalyticsService.instance.logEvent('group_plan_answer', {'day': day.n}),
+    );
+    await _writePlan(
+      room.code,
+      mine.copyWith(joined: true, answered: {...mine.answered, day.n}),
+    );
+    await syncPlan(progress);
+    await loadAnswers(day.n, force: true);
+    return true;
+  }
+
+  /// Apaga uma resposta (a minha, ou qualquer uma se sou o líder).
+  Future<bool> deleteAnswer(int day, PlanAnswer answer) async {
+    final room = activeRoom;
+    final p = plan;
+    if (room == null || p == null) return false;
+    final ok = await backend.deleteRoomPlanAnswer(
+      code: room.code,
+      planId: p.id,
+      day: day,
+      uid: answer.uid,
+    );
+    if (!ok) return false;
+    final key = PlanAnswer.dayKey(p.id, day);
+    _answers[key] = [
+      for (final a in _answers[key] ?? const <PlanAnswer>[])
+        if (a.uid != answer.uid) a,
+    ];
+    notifyListeners();
+    return true;
+  }
+
+  /// Líder grava (ou tira, com `null`) o propósito do grupo.
+  Future<bool> setPlan(RoomPlan? next) async {
+    final previous = plan;
+    final ok = await _updateRoom(
+      {'plan': next?.toMap()},
+      (r) =>
+          next == null ? r.copyWith(clearPlan: true) : r.copyWith(plan: next),
+    );
+    if (ok && next != null && previous?.id != next.id) {
+      unawaited(
+        AnalyticsService.instance.logEvent('group_plan_created', {
+          'days': next.total,
+          'reading': next.days.any((d) => d.reading != null) ? 1 : 0,
+          'scene': next.days.any((d) => d.scene != null) ? 1 : 0,
+          'question': next.days.any((d) => d.hasQuestion) ? 1 : 0,
+        }),
+      );
+    }
+    return ok;
+  }
+
+  /// Líder fecha o propósito: grava o fechamento (revelação) com id = fim.
+  Future<RoomClosing?> closePlan() async {
+    final room = activeRoom;
+    final group = planGroup;
+    if (room == null || group == null || !room.isOwner(backend.uid)) {
+      return null;
+    }
+    final closing = group.close();
+    final ok = await backend.saveRoomClosing(room.code, closing);
+    if (!ok) return null;
+    latestClosing = closing;
+    notifyListeners();
+    return closing;
+  }
+
+  /// O propósito atual já foi fechado (há revelação dele).
+  bool get planClosed {
+    final p = plan;
+    final c = latestClosing;
+    return p != null && c != null && c.isPlan && c.week == p.end;
+  }
+
+  /// Fechamento que esta pessoa ainda não viu (só o da semana corrente ou
+  /// da anterior — revelação velha não volta).
+  RoomClosing? get unseenClosing {
+    final c = latestClosing;
+    final code = activeRoom?.code;
+    if (c == null || code == null) return null;
+    if (_seenClosings.contains('$code@${c.week}')) return null;
+    if (c.isPlan) {
+      // Propósito: a data é o fim; vale por duas semanas depois dele.
+      final end = parsePlanYmd(c.week);
+      if (end == null) return null;
+      return DateTime.now().difference(end).inDays <= 14 ? c : null;
+    }
+    final current = LeagueService.weekKey();
+    final previous = LeagueService.weekKey(
+      DateTime.now().subtract(const Duration(days: 7)),
+    );
+    return c.week == current || c.week == previous ? c : null;
+  }
+
   /// Grupo que tem [missionSlug] como estudo desta semana, ou `null`. Se
   /// o líder tem o Peregrino+, a cena abre para o grupo inteiro.
-  StudyRoom? roomStudying(String missionSlug) =>
-      currentStudy?.missionSlug == missionSlug ? activeRoom : null;
+  StudyRoom? roomStudying(String missionSlug) {
+    if (currentStudy?.missionSlug == missionSlug) return activeRoom;
+    // Cena de um dia do propósito que já abriu.
+    final p = plan;
+    if (p != null && p.openDays().any((d) => d.scene?.slug == missionSlug)) {
+      return activeRoom;
+    }
+    return null;
+  }
 
   Future<void> init() async {
     final prefs = await SharedPreferences.getInstance();
     final code = prefs.getString(_keyActiveCode);
+    _seenClosings = (prefs.getStringList(_keySeenClosings) ?? const []).toSet();
+    unawaited(_loadPilot());
     _loaded = true;
     ensureInviteListener();
     if (code != null && code.isNotEmpty && backend.isActive) {
@@ -145,10 +496,28 @@ class RoomService extends ChangeNotifier {
     super.dispose();
   }
 
+  Future<void> _loadPilot() async {
+    if (!backend.isActive) return;
+    final pilot = await backend.fetchGroupsPilot();
+    if (pilot == pilotLeader) return;
+    pilotLeader = pilot;
+    notifyListeners();
+  }
+
+  /// O grupo do código é do piloto? (link de convite com a chave desligada)
+  Future<bool> isPilotRoom(String code) async {
+    try {
+      return (await backend.fetchRoom(code))?.pilot ?? false;
+    } catch (_) {
+      return false;
+    }
+  }
+
   /// Recarrega a sala ativa (útil depois que o backend fica disponível).
   Future<void> syncIfNeeded() async {
     ensureInviteListener();
     if (!backend.isActive) return;
+    unawaited(_loadPilot());
     final prefs = await SharedPreferences.getInstance();
     final code = prefs.getString(_keyActiveCode);
     if (code == null || code.isEmpty) return;
@@ -208,6 +577,7 @@ class RoomService extends ChangeNotifier {
       playDates: progress.playDates,
       kind: kind,
       weeklyGoalSteps: weeklyGoalSteps,
+      pilot: pilotLeader,
     );
     loading = false;
     if (room == null) {
@@ -301,9 +671,11 @@ class RoomService extends ChangeNotifier {
     final results = await Future.wait([
       backend.fetchRoomMembers(code),
       backend.fetchRoomNudgedToday(code),
+      backend.fetchLatestRoomClosing(code),
     ]);
     members = results[0] as List<RoomMember>;
     nudgedToday = results[1] as Set<String>;
+    latestClosing = results[2] as RoomClosing?;
     loading = false;
     notifyListeners();
   }
@@ -320,12 +692,106 @@ class RoomService extends ChangeNotifier {
     final room = activeRoom;
     final study = currentStudy;
     if (room == null || study == null || !backend.isActive) return;
-    if (!progress.completedMissions.contains(study.missionSlug)) return;
+    // Só conta a cena feita nesta semana do estudo (refazer vale); quem fez
+    // meses antes precisa fazer de novo.
+    if (!progress.sceneDoneSince(study.missionSlug, study.week)) return;
     final key = RoomMember.studyDoneKey(study);
     final me = members.where((m) => m.isUser).firstOrNull;
     if (me?.studyDone == key) return;
     final ok = await backend.markRoomStudyDone(room.code, key);
     if (ok) await refreshMembers();
+  }
+
+  /// Grava no membro quantos capítulos da leitura da semana a pessoa leu
+  /// (lidos nesta semana). Chamado junto com [syncStudyDone].
+  Future<void> syncReading(ProgressService progress) async {
+    final room = activeRoom;
+    final reading = currentReading;
+    if (room == null || reading == null || !backend.isActive) return;
+    final done = progress.chaptersReadSince(
+      reading.bookAbbrev,
+      reading.from,
+      reading.to,
+      reading.week,
+    );
+    final me = members.where((m) => m.isUser).firstOrNull;
+    if (me != null && me.readingDoneFor(reading) == done) return;
+    final ok = await backend.markRoomReading(room.code, reading.week, done);
+    if (ok) await refreshMembers();
+  }
+
+  /// Grava no membro o crescimento do acerto nesta semana ("quem mais
+  /// cresceu" no fechamento). Sem dados suficientes, não grava nada.
+  Future<void> syncGrowth(ProgressService progress) async {
+    final room = activeRoom;
+    if (room == null || !backend.isActive) return;
+    final week = LeagueService.weekKey();
+    final pts = ReadingGrowth.weekDelta(
+      correct: progress.weekAnswerCorrect,
+      total: progress.weekAnswerTotal,
+      week: ReadingGrowth.weekKey(DateTime.now()),
+    );
+    if (pts == null) return;
+    final me = members.where((m) => m.isUser).firstOrNull;
+    if (me != null && me.growthFor(week) == pts) return;
+    final ok = await backend.markRoomGrowth(room.code, week, pts);
+    if (ok) await refreshMembers();
+  }
+
+  /// Líder marca (ou tira, com `null`) a leitura da semana.
+  Future<bool> setReading(RoomReading? reading) {
+    return _updateRoom(
+      {'reading': reading?.toMap()},
+      (r) => reading == null
+          ? r.copyWith(clearReading: true)
+          : r.copyWith(reading: reading),
+    );
+  }
+
+  /// Líder fecha a semana corrente: grava o fechamento para a revelação.
+  Future<RoomClosing?> closeWeek() async {
+    final room = activeRoom;
+    if (room == null || !room.isOwner(backend.uid)) return null;
+    final closing = week.close(week: LeagueService.weekKey());
+    final ok = await backend.saveRoomClosing(room.code, closing);
+    if (!ok) return null;
+    latestClosing = closing;
+    notifyListeners();
+    return closing;
+  }
+
+  /// A revelação foi vista neste aparelho.
+  Future<void> markClosingSeen(RoomClosing closing) async {
+    final code = activeRoom?.code;
+    if (code == null) return;
+    _seenClosings = {..._seenClosings, '$code@${closing.week}'};
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setStringList(_keySeenClosings, _seenClosings.toList());
+    notifyListeners();
+  }
+
+  /// Quem ficou entre os fiéis guarda o selo da semana no próprio membro
+  /// (aparece no grupo) e no progresso (aparece no Perfil).
+  Future<bool> claimSeal(RoomClosing closing, ProgressService progress) async {
+    final code = activeRoom?.code;
+    final uid = backend.uid;
+    if (code == null || uid == null || !closing.faithful.contains(uid)) {
+      return false;
+    }
+    await progress.addGroupSeals(['$code@${closing.week}']);
+    final me = members.where((m) => m.isUser).firstOrNull;
+    if (me != null && me.sealWeeks.contains(closing.week)) return true;
+    final ok = await backend.claimRoomSeal(code, closing.week);
+    if (ok) await refreshMembers();
+    return ok;
+  }
+
+  /// Selos ganhos neste grupo em outro aparelho chegam ao Perfil.
+  Future<void> syncSeals(ProgressService progress) async {
+    final code = activeRoom?.code;
+    final me = members.where((m) => m.isUser).firstOrNull;
+    if (code == null || me == null || me.sealWeeks.isEmpty) return;
+    await progress.addGroupSeals([for (final w in me.sealWeeks) '$code@$w']);
   }
 
   Future<bool> _updateRoom(
@@ -398,6 +864,7 @@ class RoomService extends ChangeNotifier {
       toUid: toUid,
       toName: toName,
       toPhotoUrl: toPhotoUrl,
+      pilot: room.pilot,
     );
     if (!ok) {
       lastError = L10n.current.cornerSendFailed;
@@ -416,6 +883,7 @@ class RoomService extends ChangeNotifier {
       status: RoomInviteStatus.pending,
       fromPhotoUrl: backend.userPhotoUrl,
       toPhotoUrl: toPhotoUrl,
+      pilot: room.pilot,
     );
     invites = [
       for (final existing in invites)
@@ -463,7 +931,11 @@ class RoomService extends ChangeNotifier {
     return true;
   }
 
-  Future<bool> nudge(RoomMember member, ProgressService progress) async {
+  Future<bool> nudge(
+    RoomMember member,
+    ProgressService progress, {
+    String? kind,
+  }) async {
     final room = activeRoom;
     if (room == null || !backend.isActive) return false;
     final ok = await backend.sendRoomNudge(
@@ -471,6 +943,7 @@ class RoomService extends ChangeNotifier {
       toUid: member.uid,
       fromName: progress.publicUserName,
       roomName: room.name,
+      kind: kind,
     );
     if (ok) {
       nudgedToday = {...nudgedToday, member.uid};
@@ -488,6 +961,7 @@ class RoomService extends ChangeNotifier {
     activeRoom = null;
     members = const [];
     nudgedToday = const {};
+    latestClosing = null;
     lastError = null;
     await _persistCode(null, progress: progress);
     notifyListeners();
@@ -516,6 +990,7 @@ class RoomService extends ChangeNotifier {
     activeRoom = null;
     members = const [];
     nudgedToday = const {};
+    latestClosing = null;
     lastError = null;
     await _persistCode(null, progress: progress);
     notifyListeners();

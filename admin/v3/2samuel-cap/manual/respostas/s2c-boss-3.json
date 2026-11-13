@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 12:7–10",
+    "passages": [
+      {
+        "ref": "2 Samuel 11:2–13"
+      },
+      {
+        "ref": "2 Samuel 12:1–10"
+      },
+      {
+        "ref": "2 Samuel 13:19–29"
+      },
+      {
+        "ref": "2 Samuel 14:21–33"
+      }
+    ],
+    "context": "Esta Travessia revisa pecado e consequências: o olhar, a parábola, o ódio de Absalão e a volta sem encontro.",
+    "keyword": "espada",
+    "keywordGloss": "Consequência anunciada que corta a casa de Davi por dentro.",
+    "focusQuestion": "Que pecado escondido ainda precisa de confronto verdadeiro?",
+    "reflectionPrompts": [
+      "Olhar e mentira",
+      "Tu és o homem",
+      "Espada na casa"
+    ],
+    "facts": [
+      {
+        "text": "Davi viu Bate-Seba do terraço.",
+        "evidenceRef": "2 Samuel 11:2",
+        "evidenceSpan": "viu, do terraço, uma mulher"
+      },
+      {
+        "text": "Natã diz: Tu és o homem.",
+        "evidenceRef": "2 Samuel 12:7",
+        "evidenceSpan": "Tu és o homem"
+      },
+      {
+        "text": "A espada não se afastará da casa de Davi.",
+        "evidenceRef": "2 Samuel 12:10",
+        "evidenceSpan": "a espada não se afastará da tua casa"
+      },
+      {
+        "text": "Absalão odiava Amnom.",
+        "evidenceRef": "2 Samuel 13:22",
+        "evidenceSpan": "Absalão odiava Amnom"
+      },
+      {
+        "text": "Absalão volta e não vê a face do rei.",
+        "evidenceRef": "2 Samuel 14:24",
+        "evidenceSpan": "não vejas a minha face"
+      },
+      {
+        "text": "Urias não desceu para sua casa.",
+        "evidenceRef": "2 Samuel 11:9",
+        "evidenceSpan": "não desceu para sua casa"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "espada",
+        "gloss": "Juízo que permanece na casa."
+      },
+      {
+        "term": "homem",
+        "gloss": "Identidade revelada por Natã."
+      },
+      {
+        "term": "face",
+        "gloss": "Encontro negado a Absalão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Olhar, adultério e mentira",
+        "evidenceRef": "2 Samuel 11:2–13"
+      },
+      {
+        "label": "Parábola e Tu és o homem",
+        "evidenceRef": "2 Samuel 12:1–10"
+      },
+      {
+        "label": "Ódio e morte de Amnom",
+        "evidenceRef": "2 Samuel 13:19–29"
+      },
+      {
+        "label": "Volta sem verdadeiro encontro",
+        "evidenceRef": "2 Samuel 14:21–33"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Pedido a Urias; porém ele não desce.",
+        "marker": "porém",
+        "evidenceRef": "2 Samuel 11:9"
+      },
+      {
+        "kind": "causa",
+        "text": "Espada porque Davi desprezou o Senhor.",
+        "marker": "porque",
+        "evidenceRef": "2 Samuel 12:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Rico tem muito; Mas o pobre só uma cordeirinha.",
+        "marker": "Mas",
+        "evidenceRef": "2 Samuel 12:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 51:1–4",
+        "bridge": "Confissão após o confronto"
+      },
+      {
+        "ref": "Gálatas 6:7",
+        "bridge": "O que se semeia se colhe"
+      },
+      {
+        "ref": "Números 32:23",
+        "bridge": "O pecado acha o culpado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O pecado de Davi fica sem consequência.",
+        "why": "A espada é anunciada na casa."
+      },
+      {
+        "text": "Absalão age por justiça plena do rei.",
+        "why": "Há ódio silencioso e assassinato próprio."
+      },
+      {
+        "text": "A volta de Absalão cura tudo.",
+        "why": "Há anos sem ver a face."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 12:10, o que não se afastará da casa de Davi?",
+    "centralInsight": "O pecado do rei abre rachaduras que se espalham pela casa"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 12:10, a espada se afastará logo da casa de Davi.",
+      "verseRef": "2 Samuel 12:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "a espada não se afastará da tua casa",
+      "feedbackCorrect": "Ela não se afastará.",
+      "feedbackWrong": {
+        "true": "Leia o anúncio."
+      },
+      "hint": "Veja a espada.",
+      "learningObjective": "Observar a consequência.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 11:2, toque de onde Davi olhou.",
+      "verseRef": "2 Samuel 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "cair"
+        },
+        {
+          "id": "b",
+          "text": "aconteceu"
+        },
+        {
+          "id": "c",
+          "text": "tarde"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "aconteceu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar terraço.",
+      "evidence": [
+        "2 Samuel 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 12:7, o que Natã diz?",
+      "verseRef": "2 Samuel 12:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu és o homem"
+        },
+        {
+          "id": "b",
+          "text": "Tu és inocente"
+        },
+        {
+          "id": "c",
+          "text": "Tu és Absalão"
+        },
+        {
+          "id": "d",
+          "text": "Tu és Urias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és o homem",
+      "feedbackCorrect": "Confronto.",
+      "feedbackWrong": {
+        "b": "Há acusação.",
+        "c": "Há Davi.",
+        "d": "Há rei."
+      },
+      "hint": "Leia a frase.",
+      "learningObjective": "Reconhecer o confronto.",
+      "evidence": [
+        "2 Samuel 12:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 14:24 na ordem do texto.",
+      "verseRef": "2 Samuel 14:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retorna para a tua casa"
+        },
+        {
+          "id": "b",
+          "text": "e não vejas a minha face"
+        },
+        {
+          "id": "c",
+          "text": "Absalão voltou para sua casa e não viu a face do rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Ordem e distância.",
+      "feedbackWrong": {
+        "default": "Comece pelo retorno."
+      },
+      "hint": "O que é negado?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 11:5, complete: Estou ___.",
+      "verseRef": "2 Samuel 11:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "grávida"
+        },
+        {
+          "id": "b",
+          "text": "livre"
+        },
+        {
+          "id": "c",
+          "text": "ausente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estou grávida",
+      "feedbackCorrect": "Grávida.",
+      "feedbackWrong": {
+        "b": "Não é livre.",
+        "c": "Não é ausente."
+      },
+      "hint": "Veja o recado.",
+      "learningObjective": "Lembrar grávida.",
+      "evidence": [
+        "2 Samuel 11:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 12:7 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 12:7",
+      "passageA": {
+        "ref": "2 Samuel 12:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor confronta o pecado do rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu és o homem"
+        },
+        {
+          "id": "b",
+          "text": "Davi é absolvido"
+        },
+        {
+          "id": "c",
+          "text": "Natã se cala"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és o homem",
+      "feedbackCorrect": "Confronto.",
+      "feedbackWrong": {
+        "b": "Há acusação.",
+        "c": "Há palavra."
+      },
+      "hint": "O que Natã diz?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 12:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 13:22, toque o que Absalão sentia.",
+      "verseRef": "2 Samuel 13:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absalão"
+        },
+        {
+          "id": "b",
+          "text": "Porém"
+        },
+        {
+          "id": "c",
+          "text": "falou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar odiava.",
+      "evidence": [
+        "2 Samuel 13:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 12:10 na ordem do texto.",
+      "verseRef": "2 Samuel 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "a espada não se afastará da tua casa"
+        },
+        {
+          "id": "b",
+          "text": "porque me desprezaste"
+        },
+        {
+          "id": "c",
+          "text": "e tomaste a mulher de Urias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a espada não se afastará da tua casa",
+      "feedbackCorrect": "Espada e causa.",
+      "feedbackWrong": {
+        "default": "Comece pela espada."
+      },
+      "hint": "Por quê?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 11:9, o porém mostra Urias obedecendo de imediato.",
+      "verseRef": "2 Samuel 11:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Urias, porém, se deitou à porta",
+      "feedbackCorrect": "O porém introduz a recusa.",
+      "feedbackWrong": {
+        "true": "Leia o porém."
+      },
+      "hint": "Veja Urias.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "2 Samuel 11:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 12:3, toque o marcador de contraste.",
+      "verseRef": "2 Samuel 12:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "possuía"
+        },
+        {
+          "id": "b",
+          "text": "pobre"
+        },
+        {
+          "id": "c",
+          "text": "nada"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pobre",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o Mas.",
+      "evidence": [
+        "2 Samuel 12:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 12:10 faz?",
+      "verseRef": "2 Samuel 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espada porque Davi desprezou o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Espada como bênção"
+        },
+        {
+          "id": "c",
+          "text": "Perdão sem custo"
+        },
+        {
+          "id": "d",
+          "text": "Silêncio sobre Bate-Seba"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque me desprezaste",
+      "feedbackCorrect": "Causa.",
+      "feedbackWrong": {
+        "b": "Há juízo.",
+        "c": "Há anúncio.",
+        "d": "Há mulher tomada."
+      },
+      "hint": "Leia o porque.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "2 Samuel 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Olhar, adultério e mentira"
+        },
+        {
+          "id": "b",
+          "text": "Parábola e Tu és o homem"
+        },
+        {
+          "id": "c",
+          "text": "Ódio e morte de Amnom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "viu, do terraço, uma mulher",
+      "feedbackCorrect": "Olhar, confronto e ódio.",
+      "feedbackWrong": {
+        "default": "Comece pelo olhar."
+      },
+      "hint": "O que segue o confronto?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 11:2",
+        "2 Samuel 13:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 12:5, complete: o ___ é digno de morte.",
+      "verseRef": "2 Samuel 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "pobre"
+        },
+        {
+          "id": "c",
+          "text": "anjo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem é digno de morte",
+      "feedbackCorrect": "Homem.",
+      "feedbackWrong": {
+        "b": "Não é pobre.",
+        "c": "Não é anjo."
+      },
+      "hint": "Quem Davi condena?",
+      "learningObjective": "Lembrar homem.",
+      "evidence": [
+        "2 Samuel 12:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 12:10 a Gálatas 6:7?",
+      "verseRef": "2 Samuel 12:10",
+      "passageA": {
+        "ref": "2 Samuel 12:10"
+      },
+      "passageB": {
+        "ref": "Gálatas 6:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O que se semeia se colhe"
+        },
+        {
+          "id": "b",
+          "text": "Semeadura sem colheita"
+        },
+        {
+          "id": "c",
+          "text": "Espada sem causa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a espada não se afastará da tua casa",
+      "feedbackCorrect": "Consequência.",
+      "feedbackWrong": {
+        "b": "Há colheita.",
+        "c": "Há causa."
+      },
+      "hint": "Compare a colheita.",
+      "learningObjective": "Ligar à consequência.",
+      "evidence": [
+        "2 Samuel 12:10",
+        "Gálatas 6:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 11:9, toque o marcador de contraste.",
+      "verseRef": "2 Samuel 11:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "deitou"
+        },
+        {
+          "id": "b",
+          "text": "Urias"
+        },
+        {
+          "id": "c",
+          "text": "porta"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Urias",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o porém.",
+      "evidence": [
+        "2 Samuel 11:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene pecado e rachadura.",
+      "verseRef": "2 Samuel 12:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confronto de Natã"
+        },
+        {
+          "id": "b",
+          "text": "Espada na casa"
+        },
+        {
+          "id": "c",
+          "text": "Ódio que mata na família"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tu és o homem",
+      "feedbackCorrect": "Confronto, espada e ódio.",
+      "feedbackWrong": {
+        "default": "Comece pelo confronto."
+      },
+      "hint": "O que se espalha?",
+      "learningObjective": "Ordenar a rachadura.",
+      "evidence": [
+        "2 Samuel 12:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 11–14, o pecado do rei abre rachaduras que se espalham pela casa.",
+      "verseRef": "2 Samuel 12:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "a espada não se afastará da tua casa",
+      "feedbackCorrect": "Espada e casa.",
+      "feedbackWrong": {
+        "false": "Há anúncio cumprido na trama."
+      },
+      "hint": "Veja a espada.",
+      "learningObjective": "Avaliar a leitura.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 14:24, toque o que Absalão não vê.",
+      "verseRef": "2 Samuel 14:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retorna"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar face.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une olhar, confronto e espada?",
+      "verseRef": "2 Samuel 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pecado escondido gera rachaduras na casa"
+        },
+        {
+          "id": "b",
+          "text": "O pecado some sem custo"
+        },
+        {
+          "id": "c",
+          "text": "Absalão cura tudo"
+        },
+        {
+          "id": "d",
+          "text": "Urias anula a parábola"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a espada não se afastará da tua casa",
+      "feedbackCorrect": "Rachadura anunciada.",
+      "feedbackWrong": {
+        "b": "Há espada.",
+        "c": "Há ódio.",
+        "d": "Há confronto."
+      },
+      "hint": "Una os fios.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento das consequências.",
+      "verseRef": "2 Samuel 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pecado escondido"
+        },
+        {
+          "id": "b",
+          "text": "Confronto e espada"
+        },
+        {
+          "id": "c",
+          "text": "Ódio e distância na casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a espada não se afastará da tua casa",
+      "feedbackCorrect": "Pecado, espada e casa.",
+      "feedbackWrong": {
+        "default": "Comece pelo pecado."
+      },
+      "hint": "O que se espalha?",
+      "learningObjective": "Encadear consequências.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 14:33, complete: o rei o ___.",
+      "verseRef": "2 Samuel 14:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "beijou"
+        },
+        {
+          "id": "b",
+          "text": "expulsou"
+        },
+        {
+          "id": "c",
+          "text": "matou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei o beijou",
+      "feedbackCorrect": "Beijou.",
+      "feedbackWrong": {
+        "b": "Não é expulsou.",
+        "c": "Não é matou."
+      },
+      "hint": "O que o rei faz?",
+      "learningObjective": "Lembrar beijou.",
+      "evidence": [
+        "2 Samuel 14:33"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 12:7 a Salmos 51:1–4?",
+      "verseRef": "2 Samuel 12:7",
+      "passageA": {
+        "ref": "2 Samuel 12:7"
+      },
+      "passageB": {
+        "ref": "Salmos 51:1–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confissão após o confronto"
+        },
+        {
+          "id": "b",
+          "text": "Orgulho sem confissão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio de Natã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és o homem",
+      "feedbackCorrect": "Confronto e confissão.",
+      "feedbackWrong": {
+        "b": "Há culpa.",
+        "c": "Há confronto."
+      },
+      "hint": "Compare a confissão.",
+      "learningObjective": "Ligar ao salmo.",
+      "evidence": [
+        "2 Samuel 12:7",
+        "Salmos 51:1–4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 12:10, toque o que não se afastará.",
+      "verseRef": "2 Samuel 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "espada"
+        },
+        {
+          "id": "b",
+          "text": "Agora"
+        },
+        {
+          "id": "c",
+          "text": "afastará"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Agora",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar espada.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da Travessia.",
+      "verseRef": "2 Samuel 12:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desejo e mentira"
+        },
+        {
+          "id": "b",
+          "text": "Tu és o homem"
+        },
+        {
+          "id": "c",
+          "text": "Rachaduras na casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tu és o homem",
+      "feedbackCorrect": "Desejo, confronto e rachaduras.",
+      "feedbackWrong": {
+        "default": "Comece pelo desejo."
+      },
+      "hint": "O que se abre na casa?",
+      "learningObjective": "Encadear a Travessia.",
+      "evidence": [
+        "2 Samuel 12:7"
+      ]
+    }
+  ]
+}

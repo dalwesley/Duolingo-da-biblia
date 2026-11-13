@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Oséias 5:1–6",
+    "passages": [
+      {
+        "ref": "Oséias 5:1–6"
+      }
+    ],
+    "context": "Sacerdotes, casa de Israel e rei são chamados a ouvir: o juízo é contra eles.",
+    "keyword": "Ouçam",
+    "keywordGloss": "Palavra-chave do trecho em Ouvi isto, sacerdotes.",
+    "focusQuestion": "Onde esta palavra de Oséias encontra a sua vida agora?",
+    "reflectionPrompts": [
+      "Ouçam isto, ó sacerdotes",
+      "E, ao sacrificarem animais de forma",
+      "Conheço a Efraim, e Israel não me é"
+    ],
+    "facts": [
+      {
+        "text": "Ouçam isto, ó sacerdotes.",
+        "evidenceRef": "Oséias 5:1",
+        "evidenceSpan": "Ouçam isto, ó sacerdotes"
+      },
+      {
+        "text": "E, ao sacrificarem animais de forma inadequada, se corromperam, mas eu.",
+        "evidenceRef": "Oséias 5:2",
+        "evidenceSpan": "E, ao sacrificarem animais de forma inadequada, se corromperam, mas eu"
+      },
+      {
+        "text": "Conheço a Efraim, e Israel não me é oculto.",
+        "evidenceRef": "Oséias 5:3",
+        "evidenceSpan": "Conheço a Efraim, e Israel não me é oculto"
+      },
+      {
+        "text": "Não desejam ajustar seu proceder para voltarem para o seu Deus, pois um.",
+        "evidenceRef": "Oséias 5:4",
+        "evidenceSpan": "Não desejam ajustar seu proceder para voltarem para o seu Deus, pois um"
+      },
+      {
+        "text": "A soberania de Israel o acusará claramente.",
+        "evidenceRef": "Oséias 5:5",
+        "evidenceSpan": "A soberania de Israel o acusará claramente"
+      },
+      {
+        "text": "Ele se afastou deles.",
+        "evidenceRef": "Oséias 5:6",
+        "evidenceSpan": "Ele se afastou deles"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Ouçam",
+        "gloss": "Palavra-chave do trecho em Ouvi isto, sacerdotes."
+      },
+      {
+        "term": "Israel",
+        "gloss": "Palavra-chave do trecho em Ouvi isto, sacerdotes."
+      },
+      {
+        "term": "Mispá",
+        "gloss": "Palavra-chave do trecho em Ouvi isto, sacerdotes."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ouçam isto, ó sacerdotes",
+        "evidenceRef": "Oséias 5:1"
+      },
+      {
+        "label": "E, ao sacrificarem animais de forma inadequada,",
+        "evidenceRef": "Oséias 5:2"
+      },
+      {
+        "label": "Conheço a Efraim, e Israel não me é oculto",
+        "evidenceRef": "Oséias 5:3"
+      },
+      {
+        "label": "Não desejam ajustar seu proceder para voltarem",
+        "evidenceRef": "Oséias 5:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Ouçam isto, ó sacerdotes",
+        "marker": "pois",
+        "evidenceRef": "Oséias 5:1"
+      },
+      {
+        "kind": "contraste",
+        "text": "E, ao sacrificarem animais de forma inadequada, se corromperam, mas eu castigarei a todos",
+        "marker": "mas",
+        "evidenceRef": "Oséias 5:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Conheço a Efraim, e Israel não me é oculto",
+        "marker": "porque",
+        "evidenceRef": "Oséias 5:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 3:1",
+        "bridge": "Volta da esposa"
+      },
+      {
+        "ref": "Romanos 9:25",
+        "bridge": "Povo chamado de novo"
+      },
+      {
+        "ref": "Lucas 15:18",
+        "bridge": "Voltar ao pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O texto não exige resposta prática.",
+        "why": "A cena chama a ouvir e voltar ao Senhor."
+      },
+      {
+        "text": "O juízo apaga qualquer esperança.",
+        "why": "Há convite e promessa no bloco da trilha."
+      },
+      {
+        "text": "Os ídolos são fonte real das bênçãos.",
+        "why": "O Senhor é quem dá o necessário."
+      }
+    ],
+    "centralInsight": "Eles buscam o Senhor, mas não o acham: ele se retirou deles.",
+    "anchorQuestion": "Segundo Oséias 5:1, o que o texto destaca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Oséias 5:1, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 5:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ouçam isto, ó sacerdotes",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler semente em Oséias 5:1.",
+      "evidence": [
+        "Oséias 5:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Oséias 5:1, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouçam"
+        },
+        {
+          "id": "b",
+          "text": "isto"
+        },
+        {
+          "id": "c",
+          "text": "sacerdotes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouçam",
+      "feedbackCorrect": "O texto traz \"Ouçam\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 5:1.",
+      "evidence": [
+        "Oséias 5:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Oséias 5:2, o que o texto afirma?",
+      "verseRef": "Oséias 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leitura que o texto não sustenta"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E, ao sacrificarem animais de forma inadequada, se corromperam, mas eu",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 5:2.",
+      "evidence": [
+        "Oséias 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o versículo na ordem do texto. (Oséias 5:2)",
+      "verseRef": "Oséias 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "E, ao sacrificarem animais"
+        },
+        {
+          "id": "b",
+          "text": "de forma inadequada, se corromperam"
+        },
+        {
+          "id": "c",
+          "text": "mas eu castigarei a todos eles."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E, ao sacrificarem animais",
+      "feedbackCorrect": "A ordem segue o versículo.",
+      "feedbackWrong": {
+        "default": "Comece pelo início do verso."
+      },
+      "hint": "Siga a ordem das palavras no palco.",
+      "learningObjective": "Ordenar Oséias 5:2.",
+      "evidence": [
+        "Oséias 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Oséias 5:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conheço"
+        },
+        {
+          "id": "b",
+          "text": "Ouçam"
+        },
+        {
+          "id": "c",
+          "text": "sacerdotes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Conheço",
+      "feedbackCorrect": "A palavra do texto é \"Conheço\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 5:3.",
+      "evidence": [
+        "Oséias 5:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Oséias 5:1 comunica que se liga a este contexto?",
+      "verseRef": "Oséias 5:1",
+      "passageA": {
+        "ref": "Oséias 5:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sacerdotes, casa de Israel e rei são chamados a ouvir: o juízo é contra eles."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a voltar"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouçam isto, ó sacerdotes",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 5:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Oséias 5:3, conheço a Efraim, e Israel não me é oculto.",
+      "verseRef": "Oséias 5:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Conheço a Efraim, e Israel não me é oculto",
+      "feedbackCorrect": "O texto confirma.",
+      "feedbackWrong": {
+        "false": "O versículo confirma a afirmação."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler caminhada em Oséias 5:3.",
+      "evidence": [
+        "Oséias 5:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Oséias 5:3, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Efraim"
+        },
+        {
+          "id": "b",
+          "text": "Conheço"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Efraim",
+      "feedbackCorrect": "O texto traz \"Efraim\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 5:3.",
+      "evidence": [
+        "Oséias 5:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Oséias 5:4, o que o texto afirma?",
+      "verseRef": "Oséias 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "desejam e ajustar"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não desejam ajustar seu proceder para voltarem para o seu Deus, pois um",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 5:4.",
+      "evidence": [
+        "Oséias 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento desta cena. (Oséias 5:4)",
+      "verseRef": "Oséias 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "desejam e ajustar"
+        },
+        {
+          "id": "b",
+          "text": "soberania e Israel"
+        },
+        {
+          "id": "c",
+          "text": "irão e rebanhos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não desejam ajustar seu proceder para voltarem para o seu Deus, pois um",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Oséias 5:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "soberania"
+        },
+        {
+          "id": "b",
+          "text": "Conheço"
+        },
+        {
+          "id": "c",
+          "text": "Efraim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "soberania",
+      "feedbackCorrect": "A palavra do texto é \"soberania\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 5:5.",
+      "evidence": [
+        "Oséias 5:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Oséias 5:3 a Romanos 9:25?",
+      "verseRef": "Oséias 5:3",
+      "passageA": {
+        "ref": "Oséias 5:3"
+      },
+      "passageB": {
+        "ref": "Romanos 9:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo chamado de novo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Conheço a Efraim, e Israel não me é oculto",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 5:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Oséias 5:5, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 5:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "A soberania de Israel o acusará claramente",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler profundezas em Oséias 5:5.",
+      "evidence": [
+        "Oséias 5:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Oséias 5:5, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "soberania"
+        },
+        {
+          "id": "c",
+          "text": "acusará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto traz \"Israel\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 5:5.",
+      "evidence": [
+        "Oséias 5:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Oséias 5:6, o que o texto afirma?",
+      "verseRef": "Oséias 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "irão e rebanhos"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele se afastou deles",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 5:6.",
+      "evidence": [
+        "Oséias 5:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica que o texto sustenta. (Oséias 5:6)",
+      "verseRef": "Oséias 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agiram e traiçoeiramente"
+        },
+        {
+          "id": "b",
+          "text": "Ouçam e sacerdotes"
+        },
+        {
+          "id": "c",
+          "text": "sacrificarem e animais"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele se afastou deles",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 5:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Oséias 5:7, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agiram"
+        },
+        {
+          "id": "b",
+          "text": "soberania"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Agiram",
+      "feedbackCorrect": "A palavra do texto é \"Agiram\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 5:7.",
+      "evidence": [
+        "Oséias 5:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Oséias 5:5 a Lucas 15:18?",
+      "verseRef": "Oséias 5:5",
+      "passageA": {
+        "ref": "Oséias 5:5"
+      },
+      "passageB": {
+        "ref": "Lucas 15:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voltar ao pai"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A soberania de Israel o acusará claramente",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 5:5"
+      ]
+    }
+  ]
+}

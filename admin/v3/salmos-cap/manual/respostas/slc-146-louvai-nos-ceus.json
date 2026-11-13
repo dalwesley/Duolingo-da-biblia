@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Salmos 148:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 148:1–6"
+      },
+      {
+        "ref": "Salmos 148:7–12"
+      }
+    ],
+    "context": "Louvai ao Senhor desde os céus; louvai-o, sol e lua, monstros marinhos, reis e povos.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Louvai nos céus",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Louvem ao Senhor.",
+        "evidenceRef": "Salmos 148:1",
+        "evidenceSpan": "Louvem ao Senhor"
+      },
+      {
+        "text": "Louvem-no, todos os seus anjos; louvem-no, todas as suas legiões celestes.",
+        "evidenceRef": "Salmos 148:2",
+        "evidenceSpan": "Louvem-no"
+      },
+      {
+        "text": "Louvem-no, sol e lua; louvem-no, todas as estrelas brilhantes.",
+        "evidenceRef": "Salmos 148:3",
+        "evidenceSpan": "Louvem-no"
+      },
+      {
+        "text": "Louvem-no, céus dos céus e as águas que estão acima do firmamento.",
+        "evidenceRef": "Salmos 148:4",
+        "evidenceSpan": "Louvem-no"
+      },
+      {
+        "text": "Louvem o nome do Senhor.",
+        "evidenceRef": "Salmos 148:5",
+        "evidenceSpan": "Louvem o nome do Senhor"
+      },
+      {
+        "text": "Ele os estabeleceu para sempre.",
+        "evidenceRef": "Salmos 148:6",
+        "evidenceSpan": "Ele os estabeleceu para sempre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Louvem",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "desde",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Louvem ao senhor louvem ao senhor",
+        "evidenceRef": "Salmos 148:1"
+      },
+      {
+        "label": "Louvem-no todos os seus anjos louvem-no",
+        "evidenceRef": "Salmos 148:2"
+      },
+      {
+        "label": "Louvem-no sol e lua louvem-no todas",
+        "evidenceRef": "Salmos 148:3"
+      },
+      {
+        "label": "Louvem-no céus dos céus e as",
+        "evidenceRef": "Salmos 148:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 148:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "O salmo avança na oração e no argumento.",
+        "marker": null,
+        "evidenceRef": "Salmos 148:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 90:1",
+        "bridge": "Morada em todas as gerações"
+      },
+      {
+        "ref": "Salmos 121:2",
+        "bridge": "Socorro vem do Senhor"
+      },
+      {
+        "ref": "Mateus 5:3",
+        "bridge": "Bem-aventurados os humildes"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Criação inteira no coro: o nome dele é exaltado sobre a terra e os céus."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Criação inteira no coro: o nome dele é exaltado sobre a terra e os céus.",
+    "anchorQuestion": "O que Salmos 148:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 148:1, louvem ao Senhor.",
+      "verseRef": "Salmos 148:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Louvem ao Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 148:1 afirma.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 148:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 148:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "desde"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "O versículo destaca «Louvem».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 148:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 148:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem-no"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem-no",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 148:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 148:1 na ordem do texto.",
+      "verseRef": "Salmos 148:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem ao Senhor! Louvem"
+        },
+        {
+          "id": "b",
+          "text": "ao Senhor desde"
+        },
+        {
+          "id": "c",
+          "text": "céus, louvem-no nas regiões celestes."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Louvem ao",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 148:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 148:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem-no"
+        },
+        {
+          "id": "b",
+          "text": "-no"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem-no",
+      "feedbackCorrect": "A palavra do versículo é «Louvem-no».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 148:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 148:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 148:1",
+      "passageA": {
+        "ref": "Salmos 148:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Louvai ao Senhor desde os céus; louvai-o, sol e lua, monstros marinhos, reis e povos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 148:5, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 148:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 148:5 afirma.",
+      "evidence": [
+        "Salmos 148:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 148:5, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 148:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 148:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 148:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 148:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem-no",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 148:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 148:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem ao senhor louvem ao senhor"
+        },
+        {
+          "id": "b",
+          "text": "Louvem-no todos os seus anjos louvem-no"
+        },
+        {
+          "id": "c",
+          "text": "Louvem-no sol e lua louvem-no todas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 148:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 148:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "todas"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todas",
+      "feedbackCorrect": "A palavra do versículo é «todas».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 148:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 148:1 a Salmos 90:1.",
+      "verseRef": "Salmos 148:1",
+      "passageA": {
+        "ref": "Salmos 148:1"
+      },
+      "passageB": {
+        "ref": "Salmos 90:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Morada em todas as gerações"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 148:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Jovens",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 148:12 afirma.",
+      "evidence": [
+        "Salmos 148:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 148:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 148:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jovens"
+        },
+        {
+          "id": "b",
+          "text": "donzelas"
+        },
+        {
+          "id": "c",
+          "text": "idosos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jovens",
+      "feedbackCorrect": "O versículo destaca «Jovens».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 148:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 148:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 148:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem o nome do Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 148:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 148:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 148:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 148:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "nome"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nome",
+      "feedbackCorrect": "A palavra do versículo é «nome».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 148:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 148:1 a Salmos 121:2.",
+      "verseRef": "Salmos 148:1",
+      "passageA": {
+        "ref": "Salmos 148:1"
+      },
+      "passageB": {
+        "ref": "Salmos 121:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Socorro vem do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 148:1"
+      ]
+    }
+  ]
+}

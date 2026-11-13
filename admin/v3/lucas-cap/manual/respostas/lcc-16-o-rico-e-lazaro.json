@@ -1,0 +1,494 @@
+{
+  "study": {
+    "passageRef": "Lucas 16:19–24",
+    "passages": [
+      { "ref": "Lucas 16:19–24" },
+      { "ref": "Lucas 16:25–30" },
+      { "ref": "Lucas 16:31" }
+    ],
+    "context": "Jesus conta esta história a pessoas apegadas ao dinheiro. Um rico se veste com luxo e faz festa todos os dias. Um mendigo cheio de chagas fica à porta dele, à espera do que cai da mesa.",
+    "keyword": "ouçam",
+    "keywordGloss": "É o pedido de Abraão: que os irmãos escutem Moisés e os Profetas.",
+    "focusQuestion": "Quando a Palavra já está ao seu alcance, o que você ainda espera para ouvir?",
+    "reflectionPrompts": [
+      "Festa de um lado",
+      "Chagas à porta",
+      "Hora de ouvir"
+    ],
+    "facts": [
+      {
+        "text": "O rico se vestia de púrpura e de linho finíssimo.",
+        "evidenceRef": "Lucas 16:19",
+        "evidenceSpan": "se vestia de púrpura e de linho finíssimo"
+      },
+      {
+        "text": "Lázaro, mendigo cheio de chagas, jazia à porta do rico.",
+        "evidenceRef": "Lucas 16:20",
+        "evidenceSpan": "um certo mendigo, chamado Lázaro, cheio de chagas, que jazia à porta"
+      },
+      {
+        "text": "Lázaro desejava alimentar-se das migalhas da mesa do rico.",
+        "evidenceRef": "Lucas 16:21",
+        "evidenceSpan": "desejava alimentar-se das migalhas que caíam da mesa do rico"
+      },
+      {
+        "text": "O mendigo morreu e foi levado pelos anjos para o seio de Abraão.",
+        "evidenceRef": "Lucas 16:22",
+        "evidenceSpan": "o mendigo morreu e foi levado pelos anjos para o seio de Abraão"
+      },
+      {
+        "text": "Está estabelecido um grande abismo entre os dois lados.",
+        "evidenceRef": "Lucas 16:26",
+        "evidenceSpan": "está estabelecido um grande abismo entre nós e vós"
+      },
+      {
+        "text": "Abraão diz que eles têm Moisés e os Profetas e que os ouçam.",
+        "evidenceRef": "Lucas 16:29",
+        "evidenceSpan": "Eles têm Moisés e os Profetas; que os ouçam"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "abismo",
+        "gloss": "Distância fixa entre os dois lados; quem quer passar não consegue."
+      },
+      {
+        "term": "ouçam",
+        "gloss": "O verbo de Abraão: os irmãos devem escutar Moisés e os Profetas."
+      },
+      {
+        "term": "Lázaro",
+        "gloss": "O mendigo cheio de chagas, levado pelos anjos ao seio de Abraão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Rico em festa e mendigo à porta",
+        "evidenceRef": "Lucas 16:19–21"
+      },
+      {
+        "label": "A morte inverte e fixa o abismo",
+        "evidenceRef": "Lucas 16:22–26"
+      },
+      {
+        "label": "Abraão aponta Moisés e os Profetas",
+        "evidenceRef": "Lucas 16:29–31"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O rico recebeu os bens na vida e Lázaro os males; agora Lázaro está consolado e o rico, em tormentos.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 16:25"
+      },
+      {
+        "kind": "causa",
+        "text": "O rico implora que Lázaro vá à casa do pai porque tem cinco irmãos.",
+        "marker": "Pois",
+        "evidenceRef": "Lucas 16:28"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se não ouvem Moisés e os Profetas, tampouco se deixam persuadir, ainda que alguém ressuscite.",
+        "marker": "tampouco",
+        "evidenceRef": "Lucas 16:31"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 6:24", "bridge": "Consolação já recebida" },
+      { "ref": "Deuteronômio 5:1", "bridge": "Moisés manda ouvir" },
+      { "ref": "Provérbios 21:13", "bridge": "Clamor do pobre ignorado" }
+    ],
+    "misreadings": [
+      {
+        "text": "Lázaro foi consolado só por ser pobre, e o rico atormentado só por ser rico.",
+        "why": "Abraão lembra bens e males, mas o fecho cobra ouvir Moisés e os Profetas. O texto não diz que a pobreza, por si, salva."
+      },
+      {
+        "text": "Se um morto fosse até os cinco irmãos, eles se arrependeriam.",
+        "why": "Quem diz isso é o rico. Abraão responde que, se não ouvem Moisés e os Profetas, tampouco se deixarão persuadir."
+      },
+      {
+        "text": "O grande abismo ainda pode ser atravessado se o pedido for sincero.",
+        "why": "O texto diz que o abismo está estabelecido e que ninguém passa, nem de um lado nem do outro."
+      }
+    ],
+    "centralInsight": "A vida é o tempo de ouvir a Palavra; depois, o abismo não se atravessa.",
+    "anchorQuestion": "O que Abraão diz que os irmãos do rico já têm?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 16:22, o mendigo morreu e foi levado pelos anjos para o seio de Abraão.",
+      "verseRef": "Lucas 16:22",
+      "correctOptionId": "true",
+      "evidenceSpan": "o mendigo morreu e foi levado pelos anjos para o seio de Abraão",
+      "feedbackCorrect": "O texto diz que o mendigo morreu e os anjos o levaram ao seio de Abraão.",
+      "feedbackWrong": {
+        "false": "Releia o meio de Lucas 16:22: o mendigo morreu e foi levado pelos anjos."
+      },
+      "hint": "Veja o destino do mendigo depois que ele morre.",
+      "learningObjective": "Observar o que acontece com o mendigo depois da morte.",
+      "evidence": ["Lucas 16:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 16:20, toque o nome do mendigo que jazia à porta.",
+      "verseRef": "Lucas 16:20",
+      "options": [
+        { "id": "a", "text": "Lázaro" },
+        { "id": "b", "text": "mendigo" },
+        { "id": "c", "text": "chagas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamado Lázaro",
+      "feedbackCorrect": "O mendigo que jaz à porta tem nome: Lázaro.",
+      "feedbackWrong": {
+        "b": "Mendigo indica a condição, não o nome.",
+        "c": "Chagas descrevem as feridas, não dão o nome."
+      },
+      "hint": "Procure o nome próprio no meio do versículo.",
+      "learningObjective": "Identificar o nome do mendigo à porta do rico.",
+      "evidence": ["Lucas 16:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 16:21, o que o mendigo desejava da mesa do rico?",
+      "verseRef": "Lucas 16:21",
+      "options": [
+        { "id": "a", "text": "As migalhas que caíam da mesa" },
+        { "id": "b", "text": "As roupas de festa do rico" },
+        { "id": "c", "text": "Um gole de água na chama" },
+        { "id": "d", "text": "O seio de Abraão ainda em vida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desejava alimentar-se das migalhas que caíam da mesa do rico",
+      "feedbackCorrect": "Ele desejava as migalhas que caíam da mesa do rico.",
+      "feedbackWrong": {
+        "b": "As roupas são do rico; o desejo dele era o que caía da mesa.",
+        "c": "A água na chama é o pedido posterior do rico.",
+        "d": "O seio de Abraão vem depois da morte, não à mesa."
+      },
+      "hint": "Leia o verbo desejava no começo do versículo.",
+      "learningObjective": "Reconhecer o que Lázaro desejava da mesa do rico.",
+      "evidence": ["Lucas 16:21"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 16:22 na ordem do texto.",
+      "verseRef": "Lucas 16:22",
+      "options": [
+        { "id": "a", "text": "E aconteceu que o mendigo morreu" },
+        { "id": "b", "text": "foi levado pelos anjos para o seio de Abraão" },
+        { "id": "c", "text": "igualmente morreu também o rico e foi sepultado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "E aconteceu que o mendigo morreu",
+      "feedbackCorrect": "A frase vai da morte do mendigo ao sepultamento do rico.",
+      "feedbackWrong": {
+        "default": "Comece pela morte do mendigo; o rico sepultado fecha o versículo."
+      },
+      "hint": "O versículo começa pelo que ocorre com o mendigo.",
+      "learningObjective": "Reconhecer a sequência de Lucas 16:22.",
+      "evidence": ["Lucas 16:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 16:19, de que o rico se vestia, junto com a púrpura?",
+      "verseRef": "Lucas 16:19",
+      "options": [
+        { "id": "a", "text": "linho" },
+        { "id": "b", "text": "ouro" },
+        { "id": "c", "text": "veludo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de linho finíssimo",
+      "feedbackCorrect": "Com a púrpura, o rico se vestia de linho finíssimo.",
+      "feedbackWrong": {
+        "b": "Ouro não está no versículo; o tecido citado é outro.",
+        "c": "Veludo não está no versículo; o tecido citado é outro."
+      },
+      "hint": "Veja o tecido nomeado logo depois da púrpura.",
+      "learningObjective": "Lembrar o tecido fino com que o rico se vestia.",
+      "evidence": ["Lucas 16:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 16:19 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 16:19",
+      "passageA": { "ref": "Lucas 16:19" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Um rico vive em festa todos os dias, vestido com luxo."
+      },
+      "options": [
+        { "id": "a", "text": "Festa diária do rico" },
+        { "id": "b", "text": "Mendigo levado por anjos" },
+        { "id": "c", "text": "Pedido de água na chama" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todos os dias, se regalava esplendidamente",
+      "feedbackCorrect": "O versículo mostra o rico em festa esplêndida todos os dias.",
+      "feedbackWrong": {
+        "b": "Os anjos só aparecem depois da morte do mendigo.",
+        "c": "O pedido de água surge no tormento, não nesta festa."
+      },
+      "hint": "Veja como o rico vive cada dia.",
+      "learningObjective": "Ligar Lucas 16:19 à festa diária do rico.",
+      "evidence": ["Lucas 16:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 16:31, Abraão afirma que alguém ressuscitado persuadiria os cinco irmãos.",
+      "verseRef": "Lucas 16:31",
+      "correctOptionId": "false",
+      "evidenceSpan": "tampouco se deixarão persuadir, ainda que alguém ressuscite dentre os mortos",
+      "feedbackCorrect": "Abraão diz o oposto: sem ouvir, tampouco há persuasão.",
+      "feedbackWrong": {
+        "true": "Essa frase é o pedido do rico. Abraão responde que não."
+      },
+      "hint": "Compare o desejo do rico com a frase de Abraão.",
+      "learningObjective": "Compreender que Abraão nega a persuasão por um morto.",
+      "evidence": ["Lucas 16:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 16:25, toque a palavra que marca o contraste entre a vida passada e o agora.",
+      "verseRef": "Lucas 16:25",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "Filho" },
+        { "id": "c", "text": "consolado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora, porém",
+      "feedbackCorrect": "Porém marca a virada entre os bens da vida e o agora.",
+      "feedbackWrong": {
+        "b": "Filho é só o tratamento; o contraste está noutra palavra.",
+        "c": "Consolado descreve Lázaro; não é a palavra da virada."
+      },
+      "hint": "Ache a palavra curta posta entre vírgulas.",
+      "learningObjective": "Reconhecer o marcador do contraste em Lucas 16:25.",
+      "evidence": ["Lucas 16:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que Lucas 16:25 mostra sobre os bens do rico e o agora?",
+      "verseRef": "Lucas 16:25",
+      "options": [
+        { "id": "a", "text": "Teve bens na vida e agora sofre" },
+        { "id": "b", "text": "Passou fome na vida e agora festa" },
+        { "id": "c", "text": "Mantém os mesmos bens depois da morte" },
+        { "id": "d", "text": "Lázaro lhe devolve os bens da vida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "recebeste os teus bens em tua vida",
+      "feedbackCorrect": "Na vida ele recebeu os bens; agora está em tormentos.",
+      "feedbackWrong": {
+        "b": "Os males da vida foram de Lázaro, não do rico.",
+        "c": "O agora não repete o conforto; ele está em tormentos.",
+        "d": "Lázaro não devolve bens; Abraão fala de consolo e tormento."
+      },
+      "hint": "Ouça o que Abraão manda o rico lembrar.",
+      "learningObjective": "Relacionar os bens recebidos na vida com o tormento de agora.",
+      "evidence": ["Lucas 16:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da cena, da festa na terra ao fecho?",
+      "verseRef": "Lucas 16:19–20",
+      "options": [
+        { "id": "a", "text": "Rico em festa e mendigo à porta" },
+        { "id": "b", "text": "A morte inverte e fixa o abismo" },
+        { "id": "c", "text": "Abraão aponta Moisés e os Profetas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "se vestia de púrpura e de linho finíssimo",
+      "feedbackCorrect": "A cena passa da porta à morte e termina no ouvir.",
+      "feedbackWrong": {
+        "default": "Abra pela festa e pela porta; o ouvir é o fecho."
+      },
+      "hint": "A vida dos dois abre; o fecho pede ouvir.",
+      "learningObjective": "Compreender os três movimentos da história.",
+      "evidence": ["Lucas 16:19–21", "Lucas 16:22–26", "Lucas 16:29–31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 16:26, o que está estabelecido entre os dois lados?",
+      "verseRef": "Lucas 16:26",
+      "options": [
+        { "id": "a", "text": "abismo" },
+        { "id": "b", "text": "caminho" },
+        { "id": "c", "text": "muro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um grande abismo",
+      "feedbackCorrect": "Entre os dois lados está estabelecido um grande abismo.",
+      "feedbackWrong": {
+        "b": "Não é caminho. O texto fala de um grande abismo.",
+        "c": "Não é muro. O texto fala de um grande abismo."
+      },
+      "hint": "Veja o substantivo que vem depois de grande.",
+      "learningObjective": "Lembrar o que separa os dois lados depois da morte.",
+      "evidence": ["Lucas 16:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 16:24–25 a Lucas 6:24?",
+      "verseRef": "Lucas 16:24–25",
+      "passageA": { "ref": "Lucas 16:24–25" },
+      "passageB": { "ref": "Lucas 6:24" },
+      "options": [
+        { "id": "a", "text": "Consolação já recebida" },
+        { "id": "b", "text": "Anjos levam todo rico" },
+        { "id": "c", "text": "Pobreza apaga a culpa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "recebeste os teus bens em tua vida",
+      "feedbackCorrect": "Os dois textos falam de consolo que o rico já teve em vida.",
+      "feedbackWrong": {
+        "b": "Os anjos levam o mendigo, não qualquer rico.",
+        "c": "Nenhum dos textos trata a pobreza como fim da culpa."
+      },
+      "hint": "Veja o que os ricos já receberam em vida.",
+      "learningObjective": "Relacionar os bens da vida com a consolação já recebida.",
+      "evidence": ["Lucas 16:24–25", "Lucas 6:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 16:31, não ouvir Moisés e os Profetas impede a persuasão, ainda que alguém ressuscite.",
+      "verseRef": "Lucas 16:31",
+      "correctOptionId": "true",
+      "evidenceSpan": "Se não ouvem a Moisés e aos Profetas, tampouco se deixarão persuadir",
+      "feedbackCorrect": "Sem ouvir Moisés e os Profetas, nem um morto persuade.",
+      "feedbackWrong": {
+        "false": "O fecho nega a persuasão quando Moisés e os Profetas não são ouvidos."
+      },
+      "hint": "Leia a condição que Abraão põe antes do morto.",
+      "learningObjective": "Interpretar o fecho: sem ouvir, um morto não persuade.",
+      "evidence": ["Lucas 16:31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 16:29, toque quem Abraão diz que os irmãos já têm para ouvir.",
+      "verseRef": "Lucas 16:29",
+      "options": [
+        { "id": "a", "text": "Moisés" },
+        { "id": "b", "text": "respondeu" },
+        { "id": "c", "text": "Eles" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles têm Moisés",
+      "feedbackCorrect": "Abraão aponta Moisés, com os Profetas, como o que eles já têm.",
+      "feedbackWrong": {
+        "b": "Respondeu só marca a fala; não é quem eles têm.",
+        "c": "Eles são os irmãos, não aquilo que os irmãos já têm."
+      },
+      "hint": "Veja o nome que vem ao lado dos Profetas.",
+      "learningObjective": "Localizar quem Abraão diz que os irmãos já têm.",
+      "evidence": ["Lucas 16:29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 16:30–31 sustenta sobre os irmãos do rico?",
+      "verseRef": "Lucas 16:30–31",
+      "options": [
+        { "id": "a", "text": "Ouvir Moisés e os Profetas é o caminho" },
+        { "id": "b", "text": "Um morto que volte basta para arrepender" },
+        { "id": "c", "text": "A pobreza por si garante o consolo" },
+        { "id": "d", "text": "O abismo cede a um pedido sincero" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se não ouvem a Moisés e aos Profetas, tampouco se deixarão persuadir",
+      "feedbackCorrect": "O caminho sustentado é ouvir Moisés e os Profetas.",
+      "feedbackWrong": {
+        "b": "O rico espera um morto; Abraão diz que isso não persuade.",
+        "c": "O texto não afirma que a pobreza, sozinha, traz o consolo.",
+        "d": "O abismo permanece; um pedido sincero não o abre."
+      },
+      "hint": "Compare cada opção com a resposta final de Abraão.",
+      "learningObjective": "Escolher a leitura que o fecho da história sustenta.",
+      "evidence": ["Lucas 16:30–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica do argumento no fecho da história?",
+      "verseRef": "Lucas 16:30–31",
+      "options": [
+        { "id": "a", "text": "Os irmãos já têm Moisés e os Profetas" },
+        { "id": "b", "text": "Abraão manda que eles os ouçam" },
+        { "id": "c", "text": "Sem ouvir, ninguém se deixa persuadir" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ainda que alguém ressuscite dentre os mortos",
+      "feedbackCorrect": "Eles já têm a palavra; sem ouvir, um morto não persuade.",
+      "feedbackWrong": {
+        "default": "Comece pelo que os irmãos já têm; a persuasão negada fecha."
+      },
+      "hint": "O que eles já possuem vem antes do fecho.",
+      "learningObjective": "Acompanhar a lógica do fecho, do que já têm à persuasão negada.",
+      "evidence": ["Lucas 16:29", "Lucas 16:31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 16:29, o que Abraão manda que façam com Moisés e os Profetas?",
+      "verseRef": "Lucas 16:29",
+      "options": [
+        { "id": "a", "text": "ouçam" },
+        { "id": "b", "text": "sigam" },
+        { "id": "c", "text": "temam" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que os ouçam",
+      "feedbackCorrect": "Abraão não pede outro sinal. Ele manda que os ouçam.",
+      "feedbackWrong": {
+        "b": "Seguir não é o verbo da frase. Abraão diz que os ouçam.",
+        "c": "Temer não aparece. O verbo de Abraão é ouçam."
+      },
+      "hint": "Veja o verbo no fim da resposta de Abraão.",
+      "learningObjective": "Lembrar o verbo com que Abraão fecha o caminho dos irmãos.",
+      "evidence": ["Lucas 16:29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 16:31 a Deuteronômio 5:1?",
+      "verseRef": "Lucas 16:31",
+      "passageA": { "ref": "Lucas 16:31" },
+      "passageB": { "ref": "Deuteronômio 5:1" },
+      "options": [
+        { "id": "a", "text": "Moisés manda ouvir" },
+        { "id": "b", "text": "Um morto convence a casa" },
+        { "id": "c", "text": "A festa decide o destino" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não ouvem a Moisés e aos Profetas",
+      "feedbackCorrect": "Moisés já chama Israel a ouvir, e Abraão aponta de volta para isso.",
+      "feedbackWrong": {
+        "b": "Abraão nega que um morto convença quem não ouve.",
+        "c": "A festa abre a cena. O fecho é sobre ouvir Moisés."
+      },
+      "hint": "Compare o convite de Moisés com o fecho de Abraão.",
+      "learningObjective": "Ligar o fecho de Abraão ao chamado de Moisés para ouvir.",
+      "evidence": ["Lucas 16:31", "Deuteronômio 5:1"]
+    }
+  ]
+}

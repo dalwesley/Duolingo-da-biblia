@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Naum 2:5–10",
+    "passages": [
+      { "ref": "Naum 2:5–10" },
+      { "ref": "Naum 2:1–4" }
+    ],
+    "context": "Nínive, potência que saqueava outras, é cercada. Carros, escudos e pânico enchem as ruas; o juízo anunciado se concretiza na cidade.",
+    "keyword": "saqueiem",
+    "keywordGloss": "Ordem que inverte o destino de Nínive: a saqueadora é saqueada.",
+    "focusQuestion": "Onde você confia em força própria que o Senhor pode esvaziar num instante?",
+    "reflectionPrompts": [
+      "Cidade cercada",
+      "Palácio arrasado",
+      "Vazia e desolada"
+    ],
+    "facts": [
+      {
+        "text": "O destruidor avança contra Nínive.",
+        "evidenceRef": "Naum 2:1",
+        "evidenceSpan": "O destruidor avança contra você, ó Nínive!"
+      },
+      {
+        "text": "O Senhor restaurará a glória de Jacó e de Israel.",
+        "evidenceRef": "Naum 2:2",
+        "evidenceSpan": "o Senhor restaurará a glória de Jacó, assim como a glória de Israel"
+      },
+      {
+        "text": "As comportas do rio se abrirão e o palácio será arrasado.",
+        "evidenceRef": "Naum 2:6",
+        "evidenceSpan": "As comportas do rio se abrirão, e o palácio será arrasado"
+      },
+      {
+        "text": "A cidade-rainha será despida e levada em cativeiro.",
+        "evidenceRef": "Naum 2:7",
+        "evidenceSpan": "a cidade-rainha será despida e levada em cativeiro"
+      },
+      {
+        "text": "Ordena-se saquear a prata e o ouro de Nínive.",
+        "evidenceRef": "Naum 2:9",
+        "evidenceSpan": "Saqueiem a prata, saqueiem o ouro"
+      },
+      {
+        "text": "A cidade ficará vazia, desolada e exaurida.",
+        "evidenceRef": "Naum 2:10",
+        "evidenceSpan": "Vazia desolada e exaurida ficará"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "palácio",
+        "gloss": "Símbolo do poder de Nínive que o juízo arrasa."
+      },
+      {
+        "term": "saqueiem",
+        "gloss": "Ordem que inverte o papel: a saqueadora é saqueada."
+      },
+      {
+        "term": "Vazia",
+        "gloss": "Resultado final: a cidade temida fica sem nada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Alerta e restauração de Jacó",
+        "evidenceRef": "Naum 2:1–2"
+      },
+      {
+        "label": "Exército e carros na cidade",
+        "evidenceRef": "Naum 2:3–5"
+      },
+      {
+        "label": "Rio abre e palácio cai",
+        "evidenceRef": "Naum 2:6–7"
+      },
+      {
+        "label": "Fuga, saque e ruína",
+        "evidenceRef": "Naum 2:8–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O destruidor avança porque o Senhor restaurará a glória de Jacó.",
+        "marker": "Porque",
+        "evidenceRef": "Naum 2:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ele se lembrará dos valentes, mas eles tropeçarão.",
+        "marker": "mas",
+        "evidenceRef": "Naum 2:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Nínive era como tanque de águas; agora fogem e ninguém se volta.",
+        "marker": "mas",
+        "evidenceRef": "Naum 2:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Sofonias 2:13",
+        "bridge": "Nínive feita desolação"
+      },
+      {
+        "ref": "Apocalipse 18:2",
+        "bridge": "Queda da cidade opressora"
+      },
+      {
+        "ref": "Isaías 10:12",
+        "bridge": "Juízo sobre a Assíria"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os valentes de Nínive garantem a vitória sem tropeço.",
+        "why": "2:5 diz que eles tropeçarão e acharão o inimigo preparado."
+      },
+      {
+        "text": "Nínive permanece cheia como tanque de águas até o fim.",
+        "why": "2:8–10 mostra fuga, saque e cidade vazia e desolada."
+      },
+      {
+        "text": "O Senhor restaura Nínive, não Jacó.",
+        "why": "2:2 diz que o Senhor restaurará a glória de Jacó e de Israel."
+      }
+    ],
+    "centralInsight": "Nínive, antes temida, é esvaziada: o juízo do Senhor não falha.",
+    "anchorQuestion": "Segundo Naum 2:10, como ficará Nínive depois do ataque?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Naum 2:6, as comportas do rio se abrirão e o palácio será arrasado.",
+      "verseRef": "Naum 2:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "As comportas do rio se abrirão, e o palácio será arrasado",
+      "feedbackCorrect": "O versículo une a abertura do rio e a queda do palácio.",
+      "feedbackWrong": {
+        "false": "Releia 2:6: comportas se abrem e o palácio é arrasado."
+      },
+      "hint": "Veja o que acontece com o rio e o palácio.",
+      "learningObjective": "Observar a queda do palácio em 2:6.",
+      "evidence": ["Naum 2:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Naum 2:6, toque o que será arrasado.",
+      "verseRef": "Naum 2:6",
+      "options": [
+        { "id": "a", "text": "palácio" },
+        { "id": "b", "text": "rio" },
+        { "id": "c", "text": "comportas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o palácio será arrasado",
+      "feedbackCorrect": "O que cai é o palácio, símbolo do poder da cidade.",
+      "feedbackWrong": {
+        "b": "O rio abre as comportas; o que é arrasado vem depois.",
+        "c": "As comportas se abrem; o alvo do arrasar é outro."
+      },
+      "hint": "Procure o substantivo no fim do versículo.",
+      "learningObjective": "Identificar o que o juízo arrasa.",
+      "evidence": ["Naum 2:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Naum 2:9, o que se manda saquear em Nínive?",
+      "verseRef": "Naum 2:9",
+      "options": [
+        { "id": "a", "text": "A prata e o ouro" },
+        { "id": "b", "text": "Só as videiras de Jacó" },
+        { "id": "c", "text": "Apenas os carros das praças" },
+        { "id": "d", "text": "Somente as muralhas do rio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
+      "feedbackCorrect": "O texto manda saquear prata e ouro: os tesouros não se acabam.",
+      "feedbackWrong": {
+        "b": "As videiras aparecem em 2:2 como o que os saqueadores destruíram.",
+        "c": "Os carros descrevem o ataque; o saque é de prata e ouro.",
+        "d": "O rio abre comportas; o saque é dos tesouros."
+      },
+      "hint": "Leia os dois objetos do verbo saquear.",
+      "learningObjective": "Observar o que é saqueado em Nínive.",
+      "evidence": ["Naum 2:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Naum 2:9 na ordem do texto.",
+      "verseRef": "Naum 2:9",
+      "options": [
+        { "id": "a", "text": "Saqueiem a prata, saqueiem o ouro" },
+        { "id": "b", "text": "pois os tesouros não se acabam" },
+        { "id": "c", "text": "há uma profusão de todo tipo de objetos desejáveis" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
+      "feedbackCorrect": "Primeiro a ordem de saquear; depois a abundância dos tesouros.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem de saquear; a profusão fecha."
+      },
+      "hint": "O versículo começa com o verbo saquear.",
+      "learningObjective": "Reconhecer a sequência de 2:9.",
+      "evidence": ["Naum 2:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Naum 2:10, que palavra abre a descrição do estado final da cidade?",
+      "verseRef": "Naum 2:10",
+      "options": [
+        { "id": "a", "text": "Cheia" },
+        { "id": "b", "text": "Vazia" },
+        { "id": "c", "text": "Segura" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Vazia desolada e exaurida ficará",
+      "feedbackCorrect": "A cidade temida fica vazia, desolada e exaurida.",
+      "feedbackWrong": {
+        "a": "O texto não diz cheia; começa com vazia.",
+        "c": "Segura é o oposto do pânico descrito no versículo."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o estado final de Nínive.",
+      "evidence": ["Naum 2:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Naum 2:2 comunica que se liga a este contexto?",
+      "verseRef": "Naum 2:2",
+      "passageA": { "ref": "Naum 2:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Enquanto Nínive cai, o Senhor restaura a glória do seu povo."
+      },
+      "options": [
+        { "id": "a", "text": "Restauração da glória de Jacó" },
+        { "id": "b", "text": "Vitória garantida de Nínive" },
+        { "id": "c", "text": "Fim de todo juízo divino" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor restaurará a glória de Jacó",
+      "feedbackCorrect": "O ataque a Nínive serve à restauração de Jacó e Israel.",
+      "feedbackWrong": {
+        "b": "Nínive é o alvo do destruidor, não a vitoriosa.",
+        "c": "O texto anuncia juízo sobre a cidade, não o fim do juízo."
+      },
+      "hint": "Veja o que o Senhor fará por Jacó.",
+      "learningObjective": "Ligar a queda de Nínive à restauração de Jacó.",
+      "evidence": ["Naum 2:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Naum 2:5, os valentes de Nínive avançam sem tropeçar até o muro.",
+      "verseRef": "Naum 2:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas eles tropeçarão em seu caminho",
+      "feedbackCorrect": "O \"mas\" marca o contraste: ele se lembra deles, mas eles tropeçam.",
+      "feedbackWrong": {
+        "true": "Releia 2:5: eles tropeçarão e acharão o inimigo preparado."
+      },
+      "hint": "Repare na palavra que muda o rumo dos valentes.",
+      "learningObjective": "Compreender o contraste sobre os valentes.",
+      "evidence": ["Naum 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Naum 2:5, toque a palavra que marca o contraste após lembrar os valentes.",
+      "verseRef": "Naum 2:5",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "valentes" },
+        { "id": "c", "text": "muro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas eles tropeçarão em seu caminho",
+      "feedbackCorrect": "\"Mas\" vira a cena: lembrar os valentes não evita o tropeço.",
+      "feedbackWrong": {
+        "b": "\"Valentes\" é o sujeito; o contraste vem na palavra curta.",
+        "c": "\"Muro\" é o destino; o contraste já veio antes."
+      },
+      "hint": "Procure a palavra curta depois da vírgula.",
+      "learningObjective": "Reconhecer o marcador de contraste em 2:5.",
+      "evidence": ["Naum 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Naum 2:8 se relaciona com o passado de Nínive?",
+      "verseRef": "Naum 2:8",
+      "options": [
+        { "id": "a", "text": "Era como tanque de águas; agora fogem e ninguém volta" },
+        { "id": "b", "text": "Sempre foi vazia e agora se enche de forças" },
+        { "id": "c", "text": "Nunca teve águas e por isso não tem defesa" },
+        { "id": "d", "text": "Continua cheia e ninguém consegue sair" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tem sido como um tanque de águas; mas, agora, fogem",
+      "feedbackCorrect": "O contraste é claro: abundância antiga, fuga presente.",
+      "feedbackWrong": {
+        "b": "O texto diz o contrário: era cheia e agora fogem.",
+        "c": "O texto compara a cidade a um tanque de águas.",
+        "d": "Agora fogem; ninguém se volta ao chamado."
+      },
+      "hint": "Compare \"tem sido\" com \"agora\".",
+      "learningObjective": "Relacionar o passado abundante com a fuga atual.",
+      "evidence": ["Naum 2:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Naum 2:6–10?",
+      "verseRef": "Naum 2:6–7",
+      "options": [
+        { "id": "a", "text": "O rio abre e o palácio é arrasado" },
+        { "id": "b", "text": "A cidade-rainha vai ao cativeiro" },
+        { "id": "c", "text": "Vem o saque e a cidade fica vazia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "As comportas do rio se abrirão, e o palácio será arrasado",
+      "feedbackCorrect": "Primeiro a brecha; depois o cativeiro; por fim o saque e o vazio.",
+      "feedbackWrong": {
+        "default": "Comece pelo rio e o palácio; o vazio fecha."
+      },
+      "hint": "A abertura do rio vem antes do saque.",
+      "learningObjective": "Compreender o avanço da queda de Nínive.",
+      "evidence": ["Naum 2:6–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Naum 2:5, que verbo descreve o que acontece com os valentes no caminho?",
+      "verseRef": "Naum 2:5",
+      "options": [
+        { "id": "a", "text": "vencerão" },
+        { "id": "b", "text": "tropeçarão" },
+        { "id": "c", "text": "descansarão" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas eles tropeçarão em seu caminho",
+      "feedbackCorrect": "Eles tropeçarão: a força lembrada não impede a queda.",
+      "feedbackWrong": {
+        "a": "O texto não fala de vitória dos valentes aqui.",
+        "c": "Não há descanso; há tropeço e inimigo preparado."
+      },
+      "hint": "É o verbo depois do \"mas\".",
+      "learningObjective": "Lembrar a ação que marca o fracasso dos valentes.",
+      "evidence": ["Naum 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Naum 2:10 a Sofonias 2:13?",
+      "verseRef": "Naum 2:10",
+      "passageA": { "ref": "Naum 2:10" },
+      "passageB": { "ref": "Sofonias 2:13" },
+      "options": [
+        { "id": "a", "text": "Nínive feita desolação" },
+        { "id": "b", "text": "Nínive eternamente segura" },
+        { "id": "c", "text": "Nínive sem qualquer juízo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vazia desolada e exaurida ficará",
+      "feedbackCorrect": "Os dois textos apontam Nínive desolada pelo juízo do Senhor.",
+      "feedbackWrong": {
+        "b": "Ambos anunciam ruína, não segurança eterna.",
+        "c": "Sofonias e Naum anunciam juízo sobre a cidade."
+      },
+      "hint": "Compare o destino de Nínive nos dois textos.",
+      "learningObjective": "Relacionar Naum e Sofonias sobre Nínive.",
+      "evidence": ["Naum 2:10", "Sofonias 2:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Naum 2:8–10, Nínive permanece cheia e segura como tanque de águas.",
+      "verseRef": "Naum 2:8–9",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas, agora, fogem",
+      "feedbackCorrect": "O passado de abundância cede à fuga, ao saque e ao vazio.",
+      "feedbackWrong": {
+        "true": "Releia 2:8–10: agora fogem; a cidade fica vazia e desolada."
+      },
+      "hint": "Compare o tanque de águas com o que vem depois.",
+      "learningObjective": "Interpretar a inversão do destino de Nínive.",
+      "evidence": ["Naum 2:8–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Naum 2:10, toque o trecho que mostra o estado final da cidade.",
+      "verseRef": "Naum 2:10",
+      "options": [
+        { "id": "a", "text": "exaurida ficará" },
+        { "id": "b", "text": "joelhos tremem" },
+        { "id": "c", "text": "rostos de todos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vazia desolada e exaurida ficará",
+      "feedbackCorrect": "O veredito da cidade é: vazia, desolada e exaurida.",
+      "feedbackWrong": {
+        "b": "Os joelhos descrevem o pânico das pessoas, não o estado da cidade.",
+        "c": "Os rostos mostram o medo; o estado da cidade está no começo."
+      },
+      "hint": "Olhe o começo do versículo.",
+      "learningObjective": "Sustentar com o texto o esvaziamento de Nínive.",
+      "evidence": ["Naum 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Naum 2:1–10 sustenta sobre o juízo de Nínive?",
+      "verseRef": "Naum 2:10",
+      "options": [
+        { "id": "a", "text": "A cidade temida é esvaziada; o juízo do Senhor não falha" },
+        { "id": "b", "text": "Os valentes garantem que Nínive nunca cai" },
+        { "id": "c", "text": "O Senhor restaura Nínive em vez de Jacó" },
+        { "id": "d", "text": "O saque é só imagem; a cidade continua cheia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vazia desolada e exaurida ficará",
+      "feedbackCorrect": "Do alerta à ruína, o texto mostra Nínive esvaziada de fato.",
+      "feedbackWrong": {
+        "b": "Os valentes tropeçam e acham o inimigo preparado.",
+        "c": "2:2 fala da restauração de Jacó, não de Nínive.",
+        "d": "2:9–10 descreve saque real e cidade vazia."
+      },
+      "hint": "Ligue o começo do ataque ao fim vazio.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o juízo.",
+      "evidence": ["Naum 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o juízo sobre a cidade opressora na Escritura?",
+      "verseRef": "Naum 2:10",
+      "options": [
+        { "id": "a", "text": "Naum mostra Nínive vazia e desolada" },
+        { "id": "b", "text": "Sofonias anuncia Nínive feita desolação" },
+        { "id": "c", "text": "Apocalipse ecoa a queda da cidade opressora" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Vazia desolada e exaurida ficará",
+      "evidence": ["Naum 2:10", "Sofonias 2:13", "Apocalipse 18:2"],
+      "feedbackCorrect": "O juízo sobre a cidade violenta ecoa de Naum a Sofonias e ao Apocalipse.",
+      "feedbackWrong": {
+        "default": "Siga: Naum 2:10, Sofonias 2:13 e Apocalipse 18:2."
+      },
+      "hint": "Parta de Naum e avance na Escritura.",
+      "learningObjective": "Ver a queda de Nínive no fio bíblico do juízo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Naum 2:9, que verbo no imperativo abre a ordem sobre os tesouros?",
+      "verseRef": "Naum 2:9",
+      "options": [
+        { "id": "a", "text": "guardem" },
+        { "id": "b", "text": "saqueiem" },
+        { "id": "c", "text": "escondam" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
+      "feedbackCorrect": "\"Saqueiem\" inverte o papel: a saqueadora é saqueada.",
+      "feedbackWrong": {
+        "a": "Não há ordem de guardar; o verbo é de saque.",
+        "c": "O texto manda saquear, não esconder."
+      },
+      "hint": "É o verbo repetido no começo do versículo.",
+      "learningObjective": "Lembrar o termo que carrega a inversão do juízo.",
+      "evidence": ["Naum 2:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Naum 2:10 a Apocalipse 18:2?",
+      "verseRef": "Naum 2:10",
+      "passageA": { "ref": "Naum 2:10" },
+      "passageB": { "ref": "Apocalipse 18:2" },
+      "options": [
+        { "id": "a", "text": "Queda da cidade opressora" },
+        { "id": "b", "text": "Vitória eterna da cidade" },
+        { "id": "c", "text": "Ausência de qualquer juízo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vazia desolada e exaurida ficará",
+      "feedbackCorrect": "Nos dois textos, a cidade que oprimia cai sob o juízo de Deus.",
+      "feedbackWrong": {
+        "b": "Ambos anunciam queda, não vitória eterna.",
+        "c": "O juízo é o tema comum dos dois trechos."
+      },
+      "hint": "Compare o destino da cidade em cada texto.",
+      "learningObjective": "Ligar a queda de Nínive à queda da cidade no Apocalipse.",
+      "evidence": ["Naum 2:10", "Apocalipse 18:2"]
+    }
+  ]
+}

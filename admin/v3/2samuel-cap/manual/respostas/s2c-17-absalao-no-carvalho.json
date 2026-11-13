@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 18:9–14",
+    "passages": [
+      {
+        "ref": "2 Samuel 18:9–14"
+      }
+    ],
+    "context": "Absalão fica preso nos ramos, e Joabe o mata contra a ordem do rei.",
+    "keyword": "Davi",
+    "keywordGloss": "Palavra que ajuda a ler 2 Samuel 18:9–14.",
+    "focusQuestion": "O que este trecho pede de você diante de Davi?",
+    "reflectionPrompts": [
+      "O fim da revolta",
+      "Coração",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 18:9 registra: em um mulo, encontrou-se com os homens de.",
+        "evidenceRef": "2 Samuel 18:9",
+        "evidenceSpan": "em um mulo, encontrou-se com os homens de"
+      },
+      {
+        "text": "O texto em 18:10 registra: homem viu isso e avisou a Joabe, dizendo:.",
+        "evidenceRef": "2 Samuel 18:10",
+        "evidenceSpan": "homem viu isso e avisou a Joabe, dizendo:"
+      },
+      {
+        "text": "O texto em 18:11 registra: ao mensageiro \"Por que você não o feriu.",
+        "evidenceRef": "2 Samuel 18:11",
+        "evidenceSpan": "ao mensageiro \"Por que você não o feriu"
+      },
+      {
+        "text": "O texto em 18:12 registra: aquele homem a Joabe: Mesmo que eu tivesse.",
+        "evidenceRef": "2 Samuel 18:12",
+        "evidenceSpan": "aquele homem a Joabe: Mesmo que eu tivesse"
+      },
+      {
+        "text": "O texto em 18:13 registra: tivesse agido traiçoeiramente contra a vida dele, nada.",
+        "evidenceRef": "2 Samuel 18:13",
+        "evidenceSpan": "tivesse agido traiçoeiramente contra a vida dele, nada"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Davi",
+        "gloss": "Termo central do trecho em 2 Samuel 18:9–14."
+      },
+      {
+        "term": "Absalão",
+        "gloss": "Termo central do trecho em 2 Samuel 18:9–14."
+      },
+      {
+        "term": "montado",
+        "gloss": "Termo central do trecho em 2 Samuel 18:9–14."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Abertura em 9",
+        "evidenceRef": "2 Samuel 18:9–10"
+      },
+      {
+        "label": "Desenvolvimento do relato",
+        "evidenceRef": "2 Samuel 18:11–12"
+      },
+      {
+        "label": "Virada do trecho",
+        "evidenceRef": "2 Samuel 18:13–14"
+      },
+      {
+        "label": "Desfecho do episódio",
+        "evidenceRef": "2 Samuel 18:15–16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 18:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto marca a relação com \"porém\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 18:12"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 18:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 16:7",
+        "bridge": "O Senhor vê o coração"
+      },
+      {
+        "ref": "Josué 1:9",
+        "bridge": "Esforça-te e coragem"
+      },
+      {
+        "ref": "1 João 1:9",
+        "bridge": "Confessar e limpar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho celebra o pecado como se fosse virtude.",
+        "why": "O texto registra o fato e suas consequências sem elogiar o erro."
+      },
+      {
+        "text": "Nada neste relato revela o caráter de Deus.",
+        "why": "O Senhor aparece no contexto julgando, livrando ou falando."
+      },
+      {
+        "text": "Os personagens agem sem qualquer escolha moral.",
+        "why": "Há decisões explícitas que o narrador registra."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 18:9, o que o texto destaca no início?",
+    "centralInsight": "A revolta termina no bosque: o filho do rei cai, e Israel foge."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 18:9, o texto menciona — em um mulo, encontrou-se com os homens de.",
+      "verseRef": "2 Samuel 18:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "em um mulo, encontrou-se com os homens de",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 18:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 18:10, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Samuel 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "avisou"
+        },
+        {
+          "id": "b",
+          "text": "isso"
+        },
+        {
+          "id": "c",
+          "text": "dizendo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "isso",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 18:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 18:11, o que o texto afirma?",
+      "verseRef": "2 Samuel 18:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Registra-se o fato: ao mensageiro \"Por que você não o feriu"
+        },
+        {
+          "id": "b",
+          "text": "O texto omite qualquer ação"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O narrador se recusa a contar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ao mensageiro \"Por que você não o feriu",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 18:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 18:9 na ordem do texto.",
+      "verseRef": "2 Samuel 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absalão, montado em"
+        },
+        {
+          "id": "b",
+          "text": "mulo, encontrou-se com os homens de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Ao passar debaixo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Absalão, montado em",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 18:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 18:13, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 18:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "tivesse"
+        },
+        {
+          "id": "b",
+          "text": "agido"
+        },
+        {
+          "id": "c",
+          "text": "traiçoeiramente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tivesse",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 18:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 18:14 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 18:14",
+      "passageA": {
+        "ref": "2 Samuel 18:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A revolta termina no bosque: o filho do rei cai, e Israel foge."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato e sentido"
+        },
+        {
+          "id": "b",
+          "text": "Contradição total"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio do texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Joabe disse: Não quero",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 18:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 18:15, o relato elimina qualquer relação de causa ou sequência.",
+      "verseRef": "2 Samuel 18:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "dez jovens que portavam",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 18:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 18:16, toque a palavra que marca a relação no relato.",
+      "verseRef": "2 Samuel 18:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "trombeta"
+        },
+        {
+          "id": "b",
+          "text": "tocou"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tocou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 18:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 18:17 evidencia no fluxo do relato?",
+      "verseRef": "2 Samuel 18:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há sequência e consequências no relato"
+        },
+        {
+          "id": "b",
+          "text": "O texto congela sem qualquer avanço"
+        },
+        {
+          "id": "c",
+          "text": "Só há listas sem ação"
+        },
+        {
+          "id": "d",
+          "text": "O narrador apaga os personagens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levaram Absalão, e o",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 18:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abertura em 9"
+        },
+        {
+          "id": "b",
+          "text": "Desenvolvimento do relato"
+        },
+        {
+          "id": "c",
+          "text": "Virada do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "montado em um mulo",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 18:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 18:10, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 18:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 18:11 a 1 Samuel 16:7?",
+      "verseRef": "2 Samuel 18:11",
+      "passageA": {
+        "ref": "2 Samuel 18:11"
+      },
+      "passageB": {
+        "ref": "1 Samuel 16:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor vê o coração"
+        },
+        {
+          "id": "b",
+          "text": "Negação do tema"
+        },
+        {
+          "id": "c",
+          "text": "Assunto alheio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse ao mensageiro \"Por",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 18:11",
+        "1 Samuel 16:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 18:12, a melhor leitura é tratar o pecado como virtude do rei.",
+      "verseRef": "2 Samuel 18:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém, aquele homem a",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 18:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 18:13, toque o trecho que sustenta a leitura do episódio.",
+      "verseRef": "2 Samuel 18:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "traiçoeiramente"
+        },
+        {
+          "id": "b",
+          "text": "agido"
+        },
+        {
+          "id": "c",
+          "text": "contra"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "agido",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 18:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor respeita 2 Samuel 18:14?",
+      "verseRef": "2 Samuel 18:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A revolta termina no bosque: o filho do rei cai, e Israel foge."
+        },
+        {
+          "id": "b",
+          "text": "O pecado é apresentado como modelo"
+        },
+        {
+          "id": "c",
+          "text": "Deus está ausente do episódio"
+        },
+        {
+          "id": "d",
+          "text": "O texto não pede nenhuma resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Joabe disse: Não quero",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 18:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do episódio.",
+      "verseRef": "2 Samuel 18:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato apresenta a crise"
+        },
+        {
+          "id": "b",
+          "text": "Vem a confrontação ou decisão"
+        },
+        {
+          "id": "c",
+          "text": "Surge o desfecho do episódio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "dez jovens que portavam",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 18:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 18:16, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 18:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joabe"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "tocou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Joabe",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 18:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 18:17 a Josué 1:9?",
+      "verseRef": "2 Samuel 18:17",
+      "passageA": {
+        "ref": "2 Samuel 18:17"
+      },
+      "passageB": {
+        "ref": "Josué 1:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Esforça-te e coragem"
+        },
+        {
+          "id": "b",
+          "text": "Tema invertido"
+        },
+        {
+          "id": "c",
+          "text": "Sem ligação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levaram Absalão, e o",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 18:17",
+        "Josué 1:9"
+      ]
+    }
+  ]
+}

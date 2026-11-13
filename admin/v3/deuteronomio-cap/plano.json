@@ -1,0 +1,318 @@
+{
+  "slug": "deuteronomio-cap",
+  "prefix": "dtc",
+  "book": "Deuteronômio",
+  "chapters": 34,
+  "title": "Deuteronômio",
+  "description": "Deuteronômio capítulo a capítulo: Moisés chama o povo a amar e obedecer ao Senhor.",
+  "icon": "📜",
+  "color": "#8B7355",
+  "order": 6,
+  "realm": "antigo-testamento",
+  "category": "pentateuco",
+  "avoidTrails": ["deuteronomio"],
+  "modules": [
+    {
+      "title": "Recordar a jornada · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 1:19–28",
+          "title": "Medo em Cades",
+          "intro": "Moisés lembra a ida a Cades-Barneia e como o povo se acovardou diante dos anaquins.",
+          "insight": "O relato dos espias fez o coração derreter; a incredulidade esqueceu o Senhor.",
+          "objective": "Não derreter de medo"
+        },
+        {
+          "ref": "Deuteronômio 2:1–7",
+          "title": "Passai por Edom",
+          "intro": "O Senhor manda rodear Seir e não brigar com os filhos de Esaú: ele lhes deu aquela terra.",
+          "insight": "Deus também deu terra a outros povos; Israel não toma o que não lhe cabe.",
+          "objective": "Respeitar o que Deus deu"
+        },
+        {
+          "ref": "Deuteronômio 3:18–22",
+          "title": "Josué à frente",
+          "intro": "Moisés manda os homens de guerra ajudar os irmãos e anima Josué a não temer.",
+          "insight": "O Senhor pelejará por vós: Josué herda a coragem da presença de Deus.",
+          "objective": "Não temer: Deus peleja"
+        },
+        {
+          "ref": "Deuteronômio 4:32–40",
+          "title": "Há outro Deus?",
+          "intro": "Moisés pergunta se já houve povo que ouviu a voz de Deus no fogo e ficou vivo.",
+          "insight": "Só o Senhor é Deus; por isso guarda os estatutos e herda a terra.",
+          "objective": "Só o Senhor é Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Recordar a jornada",
+        "intro": "Revise Cades, Edom, Josué e o Deus único.",
+        "insight": "Lembrar a jornada fortalece a fé no único Deus"
+      }
+    },
+    {
+      "title": "Aliança e coração · cap. 5–8",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 5:6–15",
+          "title": "Eu sou o Senhor",
+          "intro": "Moisés repete as dez palavras: do Egito ao sábado, do nome aos pais.",
+          "insight": "O Deus que libertou do Egito pede amor exclusivo e descanso santo.",
+          "objective": "Ouvir de novo a lei"
+        },
+        {
+          "ref": "Deuteronômio 6:10–19",
+          "title": "Quando entrares na terra",
+          "intro": "Casas cheias, cisternas e oliveiras prontas: Moisés avisa para não esquecer o Senhor.",
+          "insight": "A prosperidade esquece fácil; o povo deve temer e servir só a ele.",
+          "objective": "Não esquecer na fartura"
+        },
+        {
+          "ref": "Deuteronômio 7:6–11",
+          "title": "Povo santo",
+          "intro": "O Senhor escolheu Israel não por ser maior, mas por amor e pelo juramento aos pais.",
+          "insight": "A escolha é graça: por isso guardai o mandamento do Deus fiel.",
+          "objective": "Escolhidos por amor"
+        },
+        {
+          "ref": "Deuteronômio 8:3–10",
+          "title": "Nem só de pão",
+          "intro": "O Senhor humilhou e sustentou com maná para ensinar de que vive o homem.",
+          "insight": "O povo vive de toda palavra que sai da boca do Senhor, não só de pão.",
+          "objective": "Viver da palavra de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Aliança e coração",
+        "intro": "Revise as dez palavras, a fartura, a escolha e o maná.",
+        "insight": "Amar o Senhor é lembrar quem libertou e sustenta"
+      }
+    },
+    {
+      "title": "Coração e culto · cap. 9–12",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 9:7–16",
+          "title": "Lembra-te de Horebe",
+          "intro": "Moisés lembra o bezerro: o povo se corrompeu depressa, e as tábuas se quebraram.",
+          "insight": "A terra não vem por justiça própria; a história é de rebelião e misericórdia.",
+          "objective": "Não esquecer a rebelião"
+        },
+        {
+          "ref": "Deuteronômio 10:1–5",
+          "title": "Novas tábuas",
+          "intro": "Moisés sobe de novo com tábuas; Deus escreve as palavras e elas ficam na arca.",
+          "insight": "Depois da queda, o Senhor escreve de novo e guarda a palavra no meio do povo.",
+          "objective": "A palavra guardada de novo"
+        },
+        {
+          "ref": "Deuteronômio 11:18–25",
+          "title": "Palavras na mão e na porta",
+          "intro": "Moisés manda pôr as palavras no coração, nas mãos, nos olhos e nas portas.",
+          "insight": "A lei vive no cotidiano da casa; assim o Senhor expulsa os inimigos.",
+          "objective": "Lei no cotidiano"
+        },
+        {
+          "ref": "Deuteronômio 12:1–7",
+          "title": "O lugar que o Senhor escolher",
+          "intro": "Israel destruirá os altares das nações e buscará o lugar do nome do Senhor.",
+          "insight": "O culto não se espalha em qualquer outeiro: o Senhor escolhe onde pôr o nome.",
+          "objective": "Culto no lugar de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Coração e culto",
+        "intro": "Revise Horebe, as tábuas, as palavras na casa e o lugar do culto.",
+        "insight": "O coração e o culto pertencem só ao Senhor"
+      }
+    },
+    {
+      "title": "Povo distinto · cap. 13–17",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 13:1–5",
+          "title": "Profeta que desvia",
+          "intro": "Mesmo com sinal que se cumpre, se o profeta empurrar a outros deuses, não se ouça.",
+          "insight": "O teste final é a fidelidade ao Senhor, não só o milagre.",
+          "objective": "Fidelidade acima do sinal"
+        },
+        {
+          "ref": "Deuteronômio 14:22–29",
+          "title": "O dízimo e a festa",
+          "intro": "O dízimo se come perante o Senhor, e a cada três anos fica para o levita e o pobre.",
+          "insight": "Adorar inclui festa e partilha com quem não tem porção própria.",
+          "objective": "Dízimo que partilha"
+        },
+        {
+          "ref": "Deuteronômio 15:7–11",
+          "title": "Não endureças o coração",
+          "intro": "Se houver pobre entre vós, abre a mão e empresta o suficiente.",
+          "insight": "O Senhor manda generosidade livre; sempre haverá pobre na terra.",
+          "objective": "Abrir a mão ao pobre"
+        },
+        {
+          "ref": "Deuteronômio 16:13–20",
+          "title": "Festa e juízes",
+          "intro": "Depois da festa das cabanas, Moisés manda pôr juízes nas portas, sem suborno.",
+          "insight": "Celebrar ao Senhor e fazer justiça reta andam juntos na terra prometida.",
+          "objective": "Festa e justiça reta"
+        },
+        {
+          "ref": "Deuteronômio 17:14–20",
+          "title": "O rei e a lei",
+          "intro": "Se o povo quiser rei, ele não multiplicará cavalos, mulheres nem ouro, e lerá a lei.",
+          "insight": "O rei vive sob a mesma lei: o coração não deve se elevar sobre os irmãos.",
+          "objective": "Rei sob a lei de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Povo distinto",
+        "intro": "Revise o falso profeta, o dízimo, o pobre, o juiz e o rei.",
+        "insight": "Um povo santo vive fiel, generoso e justo"
+      }
+    },
+    {
+      "title": "Profeta e justiça · cap. 18–22",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 18:9–14",
+          "title": "Sem adivinhação",
+          "intro": "Quando entrarem na terra, não imitem quem consulta mortos ou lê sortes.",
+          "insight": "O Senhor abomina essas práticas; Israel deve ser íntegro com o seu Deus.",
+          "objective": "Íntegros com o Senhor"
+        },
+        {
+          "ref": "Deuteronômio 19:15–21",
+          "title": "Duas ou três testemunhas",
+          "intro": "Uma só testemunha não basta; a falsa testemunha recebe o mal que queria fazer.",
+          "insight": "A justiça protege da mentira e remove o mal do meio do povo.",
+          "objective": "Verdade no tribunal"
+        },
+        {
+          "ref": "Deuteronômio 20:1–9",
+          "title": "Não temais na guerra",
+          "intro": "O sacerdote anima o povo: o Senhor vai convosco; depois os oficiais liberam os medrosos.",
+          "insight": "A guerra de Israel começa com confiança no Senhor, não com pressão sobre o medo.",
+          "objective": "Coragem que vem de Deus"
+        },
+        {
+          "ref": "Deuteronômio 21:18–23",
+          "title": "Filho rebelde e madeira",
+          "intro": "O filho contumaz vai aos anciãos; e o enforcado não fica de noite no madeiro.",
+          "insight": "A rebelião grave se trata em público, e a terra não se contamina com o corpo.",
+          "objective": "Ordem que protege a terra"
+        },
+        {
+          "ref": "Deuteronômio 22:1–8",
+          "title": "O boi do irmão",
+          "intro": "Se vires o boi ou a roupa do irmão perdidos, não te esquivas; também fazes parapeito no teto.",
+          "insight": "Amar o próximo é devolver o que se perde e prevenir a queda na casa.",
+          "objective": "Cuidar do irmão"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Profeta e justiça",
+        "intro": "Revise a adivinhação, as testemunhas, a guerra, a ordem e o cuidado.",
+        "insight": "A justiça do Senhor toca culto, tribunal e rua"
+      }
+    },
+    {
+      "title": "Aliança renovada · cap. 23–27",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 23:19–25",
+          "title": "Juros e voto",
+          "intro": "Não se cobra juro do irmão; o voto ao Senhor se cumpre, e se pode comer uvas do próximo com limite.",
+          "insight": "A solidariedade e a palavra dada marcam a vida econômica do povo.",
+          "objective": "Palavra e solidariedade"
+        },
+        {
+          "ref": "Deuteronômio 24:10–15",
+          "title": "O penhor e o salário",
+          "intro": "Não se entra na casa do pobre pelo penhor; o salário do diarista se paga no dia.",
+          "insight": "O Senhor ouve o clamor de quem espera o salário e o manto de noite.",
+          "objective": "Não explorar o trabalhador"
+        },
+        {
+          "ref": "Deuteronômio 25:13–19",
+          "title": "Pesos justos",
+          "intro": "Não haja na bolsa peso grande e pequeno; lembre-se de Amaleque.",
+          "insight": "Honestidade no comércio é vida diante do Senhor; a injustiça de Amaleque não se esquece.",
+          "objective": "Pesos e medidas justas"
+        },
+        {
+          "ref": "Deuteronômio 26:1–11",
+          "title": "As primícias",
+          "intro": "Ao entrar na terra, o israelita traz as primícias e conta a história do Egito.",
+          "insight": "A oferta vem com memória: o Senhor nos tirou e nos deu esta terra.",
+          "objective": "Oferecer com memória"
+        },
+        {
+          "ref": "Deuteronômio 27:1–8",
+          "title": "Pedras caiadas",
+          "intro": "No dia em que passarem o Jordão, levantarão pedras com a lei escrita bem clara.",
+          "insight": "A aliança fica visível na terra nova: a lei se lê em público.",
+          "objective": "Lei escrita à vista"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Aliança renovada",
+        "intro": "Revise juros, penhor, pesos, primícias e as pedras.",
+        "insight": "A aliança molda o bolso, o trabalho e a memória"
+      }
+    },
+    {
+      "title": "Vida ou morte · cap. 28–34",
+      "scenes": [
+        {
+          "ref": "Deuteronômio 28:1–10",
+          "title": "Bênçãos que alcançam",
+          "intro": "Se ouvirdes a voz do Senhor, as bênçãos vos alcançarão na cidade e no campo.",
+          "insight": "A obediência traz bênção até as nações verem que o povo leva o nome do Senhor.",
+          "objective": "Bênção na obediência"
+        },
+        {
+          "ref": "Deuteronômio 29:10–18",
+          "title": "Todos na aliança",
+          "intro": "Chefes, crianças, estrangeiros e lenhadores entram na aliança; ninguém se desvie em secreto.",
+          "insight": "A aliança inclui a todos; o coração que se vira a outros deuses engana a si mesmo.",
+          "objective": "Aliança para todos"
+        },
+        {
+          "ref": "Deuteronômio 30:1–5",
+          "title": "Quando vos converterdes",
+          "intro": "Mesmo depois da dispersão, se o povo voltar ao Senhor, ele os reunirá de novo.",
+          "insight": "O Senhor restaura quem se volta a ele de todo o coração, de onde estiver.",
+          "objective": "Voltar e ser reunido"
+        },
+        {
+          "ref": "Deuteronômio 31:12–23",
+          "title": "Lede esta lei",
+          "intro": "A cada sete anos a lei se lê ao povo; Josué é comissionado, e Deus anuncia a rebelião futura.",
+          "insight": "A lei precisa ser ouvida por todos, e Josué recebe a mesma ordem: sê forte.",
+          "objective": "Lei lida em público"
+        },
+        {
+          "ref": "Deuteronômio 32:7–14",
+          "title": "Lembra-te dos dias",
+          "intro": "O cântico chama a lembrar como o Senhor achou o povo no deserto e o guardou.",
+          "insight": "O Senhor cercou, cuidou e guardou Israel como a pupila do olho.",
+          "objective": "Lembrar o cuidado de Deus"
+        },
+        {
+          "ref": "Deuteronômio 34:1–4",
+          "chapters": "33–34",
+          "title": "A terra vista de longe",
+          "intro": "Moisés sobe ao Pisga; o Senhor mostra toda a terra e lembra o juramento aos pais.",
+          "insight": "Moisés vê a promessa cumprida à vista, mesmo sem entrar nela.",
+          "objective": "Ver a promessa de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Vida ou morte",
+        "intro": "Revise a bênção, a aliança, a volta, a lei, o cântico e o Pisga.",
+        "insight": "Escolher o Senhor é vida até o limiar da terra"
+      }
+    }
+  ]
+}

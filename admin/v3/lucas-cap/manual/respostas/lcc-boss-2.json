@@ -1,0 +1,632 @@
+{
+  "study": {
+    "passageRef": "Lucas 9:57–62",
+    "passages": [
+      { "ref": "Lucas 9:57–62" },
+      { "ref": "Lucas 5:3–8" },
+      { "ref": "Lucas 6:37–42" },
+      { "ref": "Lucas 7:44–49" },
+      { "ref": "Lucas 8:21–26" }
+    ],
+    "context": "Esta travessia revisa a pesca no lago, a trave no olho, a mulher na casa de Simão, a tempestade no barco e três homens chamados a seguir Jesus. Cada cena põe alguém diante dele.",
+    "keyword": "Reino",
+    "keywordGloss": "O Reino é o anúncio que Jesus pede para levar agora, sem voltar o olhar ao que ficou atrás.",
+    "focusQuestion": "Quando Jesus chama, o que você ainda quer deixar resolvido antes de segui-lo?",
+    "reflectionPrompts": [
+      "A palavra e a rede",
+      "O perdão e o amor",
+      "O arado sem volta"
+    ],
+    "facts": [
+      {
+        "text": "Simão diz que lançará a rede sob a palavra de Jesus, depois de nada apanhar na noite.",
+        "evidenceRef": "Lucas 5:5",
+        "evidenceSpan": "nada apanhamos, mas, sob tua palavra lançarei a rede"
+      },
+      {
+        "text": "Simão Pedro se prostra aos pés de Jesus e se diz pecador.",
+        "evidenceRef": "Lucas 5:8",
+        "evidenceSpan": "prostrou-se aos pés de Jesus, dizendo: Senhor, retira-te de mim, pois sou pecador"
+      },
+      {
+        "text": "Jesus manda tirar primeiro a trave do próprio olho e só então ver com clareza.",
+        "evidenceRef": "Lucas 6:42",
+        "evidenceSpan": "tire primeiro a trave do seu olho e, então, verá claramente"
+      },
+      {
+        "text": "Jesus declara à mulher que os pecados dela estão perdoados.",
+        "evidenceRef": "Lucas 7:48",
+        "evidenceSpan": "Os teus pecados estão perdoados"
+      },
+      {
+        "text": "Jesus repreende o vento e a fúria das águas, e tudo cessa.",
+        "evidenceRef": "Lucas 8:24",
+        "evidenceSpan": "repreendeu o vento e a fúria das águas; e tudo cessou"
+      },
+      {
+        "text": "Quem põe a mão no arado e olha para trás não é apto para o Reino de Deus.",
+        "evidenceRef": "Lucas 9:62",
+        "evidenceSpan": "olha para trás é apto para o Reino de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Reino",
+        "gloss": "O anúncio que Jesus manda levar agora, e para o qual olhar para trás torna a pessoa inapta."
+      },
+      {
+        "term": "perdoados",
+        "gloss": "Jesus não fica no elogio do gesto: declara que os pecados da mulher estão perdoados."
+      },
+      {
+        "term": "praticam",
+        "gloss": "Ouvir a palavra de Deus e vivê-la é o que Jesus usa para nomear sua família."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A palavra de Jesus enche as redes",
+        "evidenceRef": "Lucas 5:4–6"
+      },
+      {
+        "label": "O perdão se mostra em grande amor",
+        "evidenceRef": "Lucas 7:47"
+      },
+      {
+        "label": "Vento e águas obedecem a Jesus",
+        "evidenceRef": "Lucas 8:24–25"
+      },
+      {
+        "label": "Seguir pede não olhar para trás",
+        "evidenceRef": "Lucas 9:62"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A noite não rendeu peixe, mas Simão lança a rede sob a palavra de Jesus.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 5:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Simão não deu água para os pés, porém a mulher os regou com lágrimas.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 7:44"
+      },
+      {
+        "kind": "causa",
+        "text": "Os muitos pecados dela foram perdoados porque ela amou muito.",
+        "marker": "porque",
+        "evidenceRef": "Lucas 7:47"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 8:26",
+        "bridge": "Jesus acalma vento e mar"
+      },
+      {
+        "ref": "Mateus 7:5",
+        "bridge": "Primeiro o próprio olho"
+      },
+      {
+        "ref": "Mateus 8:20",
+        "bridge": "Sem lugar para reclinar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A visão clara para ajudar o irmão vem antes de tirar a própria trave.",
+        "why": "Jesus manda tirar primeiro a trave; só então a pessoa verá com clareza para ajudar."
+      },
+      {
+        "text": "Jesus elogia o gesto da mulher, mas não declara os pecados dela perdoados.",
+        "why": "Ele afirma que os muitos pecados foram perdoados e diz à mulher que os pecados dela estão perdoados."
+      },
+      {
+        "text": "Quem quer seguir pode primeiro resolver a casa e a família, e só então partir.",
+        "why": "Jesus não aceita a espera: manda anunciar o Reino e diz que olhar para trás tira a aptidão."
+      }
+    ],
+    "centralInsight": "O Reino chega perto e pede uma resposta",
+    "anchorQuestion": "O que Jesus disse sobre quem põe a mão no arado e olha para trás?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 5:6, a pesca rendeu uma grande quantidade de peixes.",
+      "verseRef": "Lucas 5:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "apanharam uma grande quantidade de peixes",
+      "feedbackCorrect": "Ao lançarem as redes, eles apanharam uma grande quantidade de peixes.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a pesca abundante: uma grande quantidade de peixes."
+      },
+      "hint": "Leia o que acontece logo que eles lançam.",
+      "learningObjective": "Observar o resultado da pesca depois da ordem de Jesus.",
+      "evidence": ["Lucas 5:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 5:8, toque quem se prostrou ao ver o que aconteceu.",
+      "verseRef": "Lucas 5:8",
+      "options": [
+        { "id": "a", "text": "Jesus" },
+        { "id": "b", "text": "Simão Pedro" },
+        { "id": "c", "text": "pecador" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Simão Pedro, ao ver isso, prostrou-se",
+      "feedbackCorrect": "Quem se prostra ao ver a pesca é Simão Pedro.",
+      "feedbackWrong": {
+        "a": "Jesus é aquele aos pés de quem ele cai, não quem se prostra.",
+        "c": "Pecador é o que ele declara ser, não o sujeito do gesto."
+      },
+      "hint": "Veja quem pratica o gesto no início do versículo.",
+      "learningObjective": "Identificar quem se prostra diante de Jesus depois da pesca.",
+      "evidence": ["Lucas 5:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 7:48, o que Jesus declara à mulher?",
+      "verseRef": "Lucas 7:48",
+      "options": [
+        { "id": "a", "text": "Que os pecados dela já receberam perdão" },
+        { "id": "b", "text": "Que a dívida dela continua sem saída" },
+        { "id": "c", "text": "Que o perfume encerra o assunto sozinho" },
+        { "id": "d", "text": "Que ela deve repetir o gesto amanhã" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os teus pecados estão perdoados",
+      "feedbackCorrect": "Jesus fala à mulher e anuncia que os pecados dela estão perdoados.",
+      "feedbackWrong": {
+        "b": "A fala não deixa a dívida aberta: ele anuncia perdão.",
+        "c": "O perfume aparece antes; nesta fala o assunto são os pecados.",
+        "d": "Jesus não marca outro gesto para amanhã; ele anuncia perdão."
+      },
+      "hint": "Leia a frase que Jesus dirige a ela.",
+      "learningObjective": "Observar o que Jesus declara à mulher sobre os pecados dela.",
+      "evidence": ["Lucas 7:48"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 9:58 na ordem do texto.",
+      "verseRef": "Lucas 9:58",
+      "options": [
+        { "id": "a", "text": "As raposas têm seus covis" },
+        { "id": "b", "text": "as aves do céu, ninhos" },
+        { "id": "c", "text": "o Filho do Homem não tem onde reclinar a cabeça" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "As raposas têm seus covis",
+      "feedbackCorrect": "A fala vai das raposas às aves e, no fim, ao Filho do Homem.",
+      "feedbackWrong": {
+        "default": "Comece pelas raposas, siga pelas aves e termine no Filho do Homem."
+      },
+      "hint": "A resposta de Jesus começa pelos animais.",
+      "learningObjective": "Reconhecer a sequência da resposta de Jesus em Lucas 9:58.",
+      "evidence": ["Lucas 9:58"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 5:4, o que Simão deve lançar ao ir para o largo?",
+      "verseRef": "Lucas 5:4",
+      "options": [
+        { "id": "a", "text": "linhas" },
+        { "id": "b", "text": "redes" },
+        { "id": "c", "text": "iscas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lance suas redes para pescar",
+      "feedbackCorrect": "Jesus manda lançar as redes: a pesca nasce da ordem dele.",
+      "feedbackWrong": {
+        "a": "O texto não fala em linhas; o objeto da ordem são as redes.",
+        "c": "O versículo não cita iscas; ele manda lançar as redes."
+      },
+      "hint": "Olhe o objeto citado no fim da ordem.",
+      "learningObjective": "Lembrar o que Jesus manda Simão lançar para pescar.",
+      "evidence": ["Lucas 5:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 5:5 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 5:5",
+      "passageA": { "ref": "Lucas 5:5" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois de uma noite sem peixe, Simão lança a rede sob a palavra de Jesus."
+      },
+      "options": [
+        { "id": "a", "text": "A noite farta já bastava" },
+        { "id": "b", "text": "A rede fica na praia" },
+        { "id": "c", "text": "Lançar a rede pela palavra" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "sob tua palavra lançarei a rede",
+      "feedbackCorrect": "A noite veio vazia; a rede desce porque Simão recebe a palavra.",
+      "feedbackWrong": {
+        "a": "Ele mesmo diz que a noite inteira não rendeu peixe.",
+        "b": "A rede não fica na praia: ele diz que vai lançá-la."
+      },
+      "hint": "Compare a noite vazia com o que Simão decide fazer.",
+      "learningObjective": "Ligar Lucas 5:5 à obediência de Simão sob a palavra de Jesus.",
+      "evidence": ["Lucas 5:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 6:41, toque o que a pessoa observa no olho alheio.",
+      "verseRef": "Lucas 6:41",
+      "options": [
+        { "id": "a", "text": "trave" },
+        { "id": "b", "text": "irmão" },
+        { "id": "c", "text": "cisco" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "observa o cisco que está no olho do seu irmão",
+      "feedbackCorrect": "O que ela observa no olho do outro é o cisco, miúdo diante da trave.",
+      "feedbackWrong": {
+        "a": "A trave está no próprio olho, não no olho que a pessoa observa.",
+        "b": "O irmão é o dono do olho; o objeto observado tem outro nome."
+      },
+      "hint": "Leia o objeto pequeno nomeado na fala de Jesus.",
+      "learningObjective": "Observar o que a pessoa nota no olho do irmão.",
+      "evidence": ["Lucas 6:41"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 8:25 na ordem do texto.",
+      "verseRef": "Lucas 8:25",
+      "options": [
+        { "id": "a", "text": "Onde está a vossa fé" },
+        { "id": "b", "text": "possuídos de temor e admiração" },
+        { "id": "c", "text": "até aos ventos e às ondas manda" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Onde está a vossa fé",
+      "feedbackCorrect": "Jesus pergunta pela fé; o temor vem depois, e então a pergunta sobre quem manda.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta de Jesus; o temor vem antes da fala sobre os ventos."
+      },
+      "hint": "O versículo abre com uma pergunta de Jesus.",
+      "learningObjective": "Reconhecer a sequência de Lucas 8:25.",
+      "evidence": ["Lucas 8:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 6:42, ver com clareza para ajudar o irmão vem antes de tirar a própria trave.",
+      "verseRef": "Lucas 6:42",
+      "correctOptionId": "false",
+      "evidenceSpan": "tire primeiro a trave do seu olho e, então, verá claramente",
+      "feedbackCorrect": "A ordem é a inversa: primeiro sai a trave, e então a visão fica clara.",
+      "feedbackWrong": {
+        "true": "O texto põe a trave primeiro; a visão clara só vem depois."
+      },
+      "hint": "Veja o que vem primeiro e o que só acontece depois.",
+      "learningObjective": "Compreender a ordem entre tirar a trave e ver com clareza.",
+      "evidence": ["Lucas 6:42"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 7:44, toque a palavra que marca o contraste entre Simão e a mulher.",
+      "verseRef": "Lucas 7:44",
+      "options": [
+        { "id": "a", "text": "água" },
+        { "id": "b", "text": "lágrimas" },
+        { "id": "c", "text": "porém" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "esta, porém, regou os meus pés com lágrimas",
+      "feedbackCorrect": "Porém marca a virada: o que faltou em Simão, a mulher fez.",
+      "feedbackWrong": {
+        "a": "Água é o que Simão não ofereceu, não a palavra do contraste.",
+        "b": "Lágrimas descrevem o gesto dela; a virada está na palavra curta."
+      },
+      "hint": "Procure a palavra curta que separa os dois gestos.",
+      "learningObjective": "Reconhecer o marcador de contraste entre Simão e a mulher.",
+      "evidence": ["Lucas 7:44"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Lucas 5:5 mostra entre a noite sem peixe e a rede?",
+      "verseRef": "Lucas 5:5",
+      "options": [
+        { "id": "a", "text": "A noite farta já garantia o lançar da rede" },
+        { "id": "b", "text": "A rede fica guardada até outra ocasião" },
+        { "id": "c", "text": "A noite falhou, mas a rede desce sob a palavra" },
+        { "id": "d", "text": "Os sócios decidem o rumo sem ouvir ninguém" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "nada apanhamos, mas, sob tua palavra lançarei a rede",
+      "feedbackCorrect": "A noite não rendeu peixe, mas a rede desce sob a palavra de Jesus.",
+      "feedbackWrong": {
+        "a": "Ele diz que trabalharam a noite toda e nada apanharam.",
+        "b": "A rede não fica guardada: ele afirma que vai lançá-la.",
+        "d": "Quem decide o lançar é Simão, sob a palavra que recebeu."
+      },
+      "hint": "Veja o que a noite rendeu e o que ele decide mesmo assim.",
+      "learningObjective": "Relacionar a noite vazia com o lançar da rede sob a palavra.",
+      "evidence": ["Lucas 5:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual sequência liga a pesca, a tempestade e o seguir?",
+      "verseRef": "Lucas 5:6",
+      "options": [
+        { "id": "a", "text": "A palavra de Jesus enche as redes" },
+        { "id": "b", "text": "Vento e águas obedecem a Jesus" },
+        { "id": "c", "text": "Seguir pede não olhar para trás" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "apanharam uma grande quantidade de peixes",
+      "feedbackCorrect": "A palavra enche as redes, o vento obedece, e seguir não olha para trás.",
+      "feedbackWrong": {
+        "default": "Comece pela pesca, passe pela tempestade e termine no seguir."
+      },
+      "hint": "Siga a ordem dos capítulos: pesca, lago, caminho.",
+      "learningObjective": "Compreender três movimentos do bloco, da pesca ao seguir.",
+      "evidence": ["Lucas 5:6", "Lucas 8:24", "Lucas 9:62"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 7:47, que palavra liga o perdão dela ao amor?",
+      "verseRef": "Lucas 7:47",
+      "options": [
+        { "id": "a", "text": "embora" },
+        { "id": "b", "text": "quando" },
+        { "id": "c", "text": "porque" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "porque ela amou muito",
+      "feedbackCorrect": "Porque liga as partes: os muitos pecados foram perdoados, e ela amou muito.",
+      "feedbackWrong": {
+        "a": "Embora marcaria concessão; o texto apresenta uma causa.",
+        "b": "Quando marcaria tempo; aqui uma coisa explica a outra."
+      },
+      "hint": "Veja a palavra entre o perdão e o amor dela.",
+      "learningObjective": "Reconhecer a palavra que liga o perdão ao amor da mulher.",
+      "evidence": ["Lucas 7:47"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 8:24 a Mateus 8:26?",
+      "verseRef": "Lucas 8:24",
+      "passageA": { "ref": "Lucas 8:24" },
+      "passageB": { "ref": "Mateus 8:26" },
+      "options": [
+        { "id": "a", "text": "Jesus acalma vento e mar" },
+        { "id": "b", "text": "O medo conduz o barco" },
+        { "id": "c", "text": "A tripulação vence o lago" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "repreendeu o vento e a fúria das águas",
+      "feedbackCorrect": "Nos dois textos, Jesus age sobre vento e águas, e vem a calmaria.",
+      "feedbackWrong": {
+        "b": "O medo aparece na cena, mas quem age sobre o vento é Jesus.",
+        "c": "A tripulação pede socorro; a calmaria nasce da ação dele."
+      },
+      "hint": "Veja quem age sobre o vento no outro texto.",
+      "learningObjective": "Relacionar a calmaria em Lucas com o relato de Mateus.",
+      "evidence": ["Lucas 8:24", "Mateus 8:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 8:25, toque o que os ventos e as ondas fazem diante de Jesus.",
+      "verseRef": "Lucas 8:25",
+      "options": [
+        { "id": "a", "text": "obedecem" },
+        { "id": "b", "text": "manda" },
+        { "id": "c", "text": "temor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e eles lhe obedecem",
+      "feedbackCorrect": "O espanto deles reconhece o fato: ventos e ondas lhe obedecem.",
+      "feedbackWrong": {
+        "b": "Mandar é o que ele faz; o verbo pedido é a resposta deles.",
+        "c": "Temor descreve o estado deles, não o que vento e onda fazem."
+      },
+      "hint": "Leia o último verbo da pergunta que eles fazem.",
+      "learningObjective": "Identificar a resposta dos ventos e das ondas à ordem de Jesus.",
+      "evidence": ["Lucas 8:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual sequência Lucas 9:59–60 apresenta no chamado?",
+      "verseRef": "Lucas 9:59–60",
+      "options": [
+        { "id": "a", "text": "Jesus chama o homem a segui-lo" },
+        { "id": "b", "text": "O homem pede tempo para sepultar" },
+        { "id": "c", "text": "Jesus manda anunciar o Reino" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "vai e anuncia o reino de Deus",
+      "feedbackCorrect": "Jesus chama, o homem pede espera, e a resposta é anunciar o Reino.",
+      "feedbackWrong": {
+        "default": "O chamado vem primeiro; o anúncio do Reino fecha a fala de Jesus."
+      },
+      "hint": "Comece pelo convite e termine na ordem que Jesus dá.",
+      "learningObjective": "Compreender os passos do chamado em Lucas 9:59–60.",
+      "evidence": ["Lucas 9:59–60"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 5:8, Simão pede que Jesus se retire ao se reconhecer pecador.",
+      "verseRef": "Lucas 5:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Senhor, retira-te de mim, pois sou pecador",
+      "feedbackCorrect": "O pedido de afastamento nasce do reconhecimento: ele se diz pecador.",
+      "feedbackWrong": {
+        "false": "A frase une as duas coisas: ele pede afastamento e se diz pecador."
+      },
+      "hint": "Leia o motivo que vem junto do pedido de afastamento.",
+      "learningObjective": "Interpretar o pedido de Simão como reconhecimento de pecado.",
+      "evidence": ["Lucas 5:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 7:48, toque o que Jesus afirma sobre os pecados da mulher.",
+      "verseRef": "Lucas 7:48",
+      "options": [
+        { "id": "a", "text": "disse à" },
+        { "id": "b", "text": "estão perdoados" },
+        { "id": "c", "text": "à mulher" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Os teus pecados estão perdoados",
+      "feedbackCorrect": "Jesus não fica no elogio: declara que os pecados dela estão perdoados.",
+      "feedbackWrong": {
+        "a": "Isso é o narrador apresentando a fala, não o conteúdo dela.",
+        "c": "Ela é quem recebe a fala; o conteúdo está no que ele afirma."
+      },
+      "hint": "Leia a frase final da fala dirigida a ela.",
+      "learningObjective": "Sustentar com o texto que Jesus declara o perdão dos pecados.",
+      "evidence": ["Lucas 7:48"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 9:62 sustenta sobre quem olha para trás?",
+      "verseRef": "Lucas 9:62",
+      "options": [
+        { "id": "a", "text": "Quem olha para trás perde a aptidão para seguir" },
+        { "id": "b", "text": "Resolver a casa inteira vem antes de partir" },
+        { "id": "c", "text": "Olhar para trás confirma o preparo do discípulo" },
+        { "id": "d", "text": "A espera deixa o discípulo mais apto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "olha para trás é apto para o Reino de Deus",
+      "feedbackCorrect": "Jesus é direto: quem olha para trás não está apto para o Reino.",
+      "feedbackWrong": {
+        "b": "Aos que pedem espera, Jesus responde com o anúncio, sem adiar a partida.",
+        "c": "Olhar para trás não confirma preparo; o texto diz que a pessoa não está apta.",
+        "d": "A espera não aumenta a aptidão; olhar para trás a tira."
+      },
+      "hint": "Leia o que Jesus diz de quem olha para trás.",
+      "learningObjective": "Escolher a leitura que Lucas 9:62 sustenta sobre seguir.",
+      "evidence": ["Lucas 9:62"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o custo de seguir nestes encontros?",
+      "verseRef": "Lucas 9:58",
+      "options": [
+        { "id": "a", "text": "Seguir não oferece um pouso fácil" },
+        { "id": "b", "text": "O anúncio pedido não aceita demora" },
+        { "id": "c", "text": "Olhar para trás tira a aptidão" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não tem onde reclinar a cabeça",
+      "feedbackCorrect": "Seguir não tem pouso fácil, não aceita demora e não olha para trás.",
+      "feedbackWrong": {
+        "default": "Comece pelo pouso, passe pela demora e termine no olhar para trás."
+      },
+      "hint": "Siga os três encontros na ordem do capítulo.",
+      "learningObjective": "Interpretar o custo de seguir na sequência dos três encontros.",
+      "evidence": ["Lucas 9:58", "Lucas 9:60", "Lucas 9:62"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 8:21, o que fazem com a palavra aqueles que Jesus chama de família?",
+      "verseRef": "Lucas 8:21",
+      "options": [
+        { "id": "a", "text": "decoram" },
+        { "id": "b", "text": "praticam" },
+        { "id": "c", "text": "escondem" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ouvem a palavra de Deus e a praticam",
+      "feedbackCorrect": "O verbo final é praticam: ouvir a palavra e vivê-la.",
+      "feedbackWrong": {
+        "a": "Decorar não aparece; o verbo final é praticar a palavra.",
+        "c": "Esconder é o contrário do que Jesus descreve no fim do versículo."
+      },
+      "hint": "Veja o último verbo do versículo.",
+      "learningObjective": "Lembrar o verbo que define a família de Jesus neste versículo.",
+      "evidence": ["Lucas 8:21"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 6:42 a Mateus 7:5?",
+      "verseRef": "Lucas 6:42",
+      "passageA": { "ref": "Lucas 6:42" },
+      "passageB": { "ref": "Mateus 7:5" },
+      "options": [
+        { "id": "a", "text": "O cego deve guiar outro" },
+        { "id": "b", "text": "Limpar o próprio olho primeiro" },
+        { "id": "c", "text": "O cisco alheio basta sempre" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tire primeiro a trave do seu olho",
+      "feedbackCorrect": "Os dois textos pedem o mesmo passo: tirar primeiro o que está no próprio olho.",
+      "feedbackWrong": {
+        "a": "O cego que guia outro é outra imagem; aqui o passo é limpar o próprio olho.",
+        "c": "O cisco alheio não basta; os dois textos começam pelo próprio olho."
+      },
+      "hint": "Compare o que os dois textos mandam fazer primeiro.",
+      "learningObjective": "Ligar o ensino da trave em Lucas ao mesmo ensino em Mateus.",
+      "evidence": ["Lucas 6:42", "Mateus 7:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 8:21, toque quem Jesus identifica como sua família.",
+      "verseRef": "Lucas 8:21",
+      "options": [
+        { "id": "a", "text": "Minha mãe" },
+        { "id": "b", "text": "palavra de Deus" },
+        { "id": "c", "text": "aqueles que ouvem" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "são aqueles que ouvem a palavra de Deus e a praticam",
+      "feedbackCorrect": "A família, nesta fala, são os que ouvem a palavra e a praticam.",
+      "feedbackWrong": {
+        "a": "Minha mãe abre a frase, mas o grupo que ele nomeia vem depois.",
+        "b": "A palavra é o que esse grupo ouve, não o grupo em si."
+      },
+      "hint": "Leia quem ele define depois de falar em mãe e irmãos.",
+      "learningObjective": "Sustentar com o texto quem Jesus chama de mãe e de irmãos.",
+      "evidence": ["Lucas 8:21"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho até o perdão da mulher?",
+      "verseRef": "Lucas 7:47–48",
+      "options": [
+        { "id": "a", "text": "Simão recusa os gestos de acolhida" },
+        { "id": "b", "text": "A mulher honra com lágrimas e bálsamo" },
+        { "id": "c", "text": "Jesus anuncia perdão à mulher" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "os muitos pecados dela foram perdoados",
+      "feedbackCorrect": "Simão fica aquém, a mulher honra, e Jesus anuncia o perdão.",
+      "feedbackWrong": {
+        "default": "Comece pela falta de Simão, passe pela honra dela e termine no perdão."
+      },
+      "hint": "Siga da casa de Simão até a frase final de Jesus.",
+      "learningObjective": "Interpretar o caminho do relato até a declaração de perdão.",
+      "evidence": ["Lucas 7:44", "Lucas 7:46", "Lucas 7:47"]
+    }
+  ]
+}

@@ -1,0 +1,476 @@
+{
+  "study": {
+    "passageRef": "Amós 3:9–14",
+    "passages": [
+      { "ref": "Amós 3:9–14" },
+      { "ref": "Amós 3:15" }
+    ],
+    "context": "As nações são convocadas a ver a opressão em Samaria. Quem acumula violência nos palácios encontra inimigo, saque e casas destruídas.",
+    "keyword": "violência",
+    "keywordGloss": "O que Israel armazena nos palácios em vez do que é justo.",
+    "focusQuestion": "O que você está acumulando nas \"fortalezas\" da sua vida: justiça ou violência?",
+    "reflectionPrompts": [
+      "Tumultos em Samaria",
+      "Palácios saqueados",
+      "Casas de marfim"
+    ],
+    "facts": [
+      {
+        "text": "As nações devem reunir-se sobre os montes de Samaria e ver tumultos e opressões.",
+        "evidenceRef": "Amós 3:9",
+        "evidenceSpan": "Reúnam-se sobre os montes de Samaria e vejam os grandes tumultos"
+      },
+      {
+        "text": "Israel não sabe fazer o que é justo e armazena violência nos palácios.",
+        "evidenceRef": "Amós 3:10",
+        "evidenceSpan": "armazenando nos seus palácios a violência e a devastação"
+      },
+      {
+        "text": "Um inimigo cercará a terra e saqueará os palácios.",
+        "evidenceRef": "Amós 3:11",
+        "evidenceSpan": "Um inimigo virá e cercará a tua terra"
+      },
+      {
+        "text": "O Senhor visitará os altares de Betel e cortará os chifres do altar.",
+        "evidenceRef": "Amós 3:14",
+        "evidenceSpan": "também visitarei os altares de Betel"
+      },
+      {
+        "text": "Casas de inverno, verão e marfim serão destruídas.",
+        "evidenceRef": "Amós 3:15",
+        "evidenceSpan": "as casas de marfim perecerão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "violência",
+        "gloss": "O que Israel armazena nos palácios."
+      },
+      {
+        "term": "fortalezas",
+        "gloss": "O que o inimigo derrubará no juízo."
+      },
+      {
+        "term": "marfim",
+        "gloss": "Símbolo do luxo das casas que perecerão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Testemunhas veem opressão em Samaria",
+        "evidenceRef": "Amós 3:9–10"
+      },
+      {
+        "label": "Inimigo cerca e saqueia palácios",
+        "evidenceRef": "Amós 3:11–12"
+      },
+      {
+        "label": "Juízo sobre Betel e casas de luxo",
+        "evidenceRef": "Amós 3:13–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Há tumultos porque Israel não sabe fazer o que é justo.",
+        "marker": "Porque",
+        "evidenceRef": "Amós 3:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto um inimigo cercará a terra e saqueará os palácios.",
+        "marker": "Portanto",
+        "evidenceRef": "Amós 3:11"
+      },
+      {
+        "kind": "propósito",
+        "text": "No dia da punição o Senhor também visitará os altares de Betel.",
+        "marker": "também",
+        "evidenceRef": "Amós 3:14"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 5:8–9", "bridge": "Casas grandes vazias" },
+      { "ref": "Miqueias 3:9–12", "bridge": "Sião edificada com sangue" },
+      { "ref": "Tiago 5:1–4", "bridge": "Riqueza injusta clama" }
+    ],
+    "misreadings": [
+      {
+        "text": "Acumular violência nos palácios não tem consequência.",
+        "why": "3:11 anuncia inimigo, cerco e saque."
+      },
+      {
+        "text": "Só o culto em Betel importa; as casas ficam de fora.",
+        "why": "3:14–15 julga altares e casas de marfim."
+      },
+      {
+        "text": "As nações não devem ver o pecado de Samaria.",
+        "why": "3:9 convoca Asdode e Egito a testemunhar."
+      }
+    ],
+    "centralInsight": "Quem acumula violência e despojo nas fortalezas encontra o Senhor contra si.",
+    "anchorQuestion": "Segundo Amós 3:10, o que Israel armazena nos palácios?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 3:10, Israel armazena nos palácios a violência e a devastação.",
+      "verseRef": "Amós 3:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "armazenando nos seus palácios a violência e a devastação",
+      "feedbackCorrect": "Em vez do justo, os palácios guardam violência.",
+      "feedbackWrong": { "false": "Releia o fim de 3:10: violência e devastação." },
+      "hint": "Veja o que está sendo armazenado.",
+      "learningObjective": "Observar o que Israel armazena.",
+      "evidence": ["Amós 3:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 3:11, toque quem virá contra a terra.",
+      "verseRef": "Amós 3:11",
+      "evidenceSpan": "Um inimigo virá e cercará a tua terra",
+      "feedbackCorrect": "Um inimigo virá, cercará e saqueará.",
+      "hint": "Procure o sujeito no início da sentença do Senhor.",
+      "learningObjective": "Identificar o inimigo anunciado.",
+      "evidence": ["Amós 3:11"],
+      "options": [
+        { "id": "a", "text": "inimigo" },
+        { "id": "b", "text": "fortalezas" },
+        { "id": "c", "text": "palácios" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As fortalezas serão derrubadas, não quem vem.",
+        "c": "Os palácios serão saqueados, não quem vem."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 3:15, o que acontecerá às casas de marfim?",
+      "verseRef": "Amós 3:15",
+      "evidenceSpan": "as casas de marfim perecerão",
+      "feedbackCorrect": "As casas de marfim perecerão; as grandes casas serão destruídas.",
+      "hint": "Veja o verbo ligado às casas de marfim.",
+      "learningObjective": "Observar o fim do luxo anunciado.",
+      "evidence": ["Amós 3:15"],
+      "options": [
+        { "id": "a", "text": "Perecerão" },
+        { "id": "b", "text": "Serão ampliadas" },
+        { "id": "c", "text": "Ficarão isentas" },
+        { "id": "d", "text": "Virarão templos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto anuncia destruição, não ampliação.",
+        "c": "Não há isenção para as casas de luxo.",
+        "d": "Não se tornam templos; perecem."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 3:11 na ordem do texto.",
+      "verseRef": "Amós 3:11",
+      "evidenceSpan": "Um inimigo virá e cercará a tua terra",
+      "feedbackCorrect": "Inimigo vem; cerca a terra; fortalezas caem e palácios são saqueados.",
+      "hint": "Comece pelo inimigo que virá.",
+      "learningObjective": "Reconhecer a sequência do juízo em 3:11.",
+      "evidence": ["Amós 3:11"],
+      "options": [
+        { "id": "a", "text": "Um inimigo virá e cercará a tua terra" },
+        { "id": "b", "text": "derrubará as tuas fortalezas" },
+        { "id": "c", "text": "e os teus palácios serão saqueados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo inimigo; o saque fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 3:10, o que Israel armazena nos palácios além da devastação?",
+      "verseRef": "Amós 3:10",
+      "evidenceSpan": "armazenando nos seus palácios a violência e a devastação",
+      "feedbackCorrect": "Armazena violência e devastação.",
+      "hint": "É a palavra antes de \"e a devastação\".",
+      "learningObjective": "Lembrar o que enche os palácios.",
+      "evidence": ["Amós 3:10"],
+      "options": [
+        { "id": "a", "text": "violência" },
+        { "id": "b", "text": "justiça" },
+        { "id": "c", "text": "paz" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que não sabem fazer o justo.",
+        "c": "\"Paz\" não é o que armazenam."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 3:10 comunica que se liga a este contexto?",
+      "verseRef": "Amós 3:10",
+      "evidenceSpan": "armazenando nos seus palácios a violência",
+      "feedbackCorrect": "Acumular violência nas fortalezas chama o Senhor contra si.",
+      "hint": "Ligue o armazenamento ao juízo que vem.",
+      "learningObjective": "Ligar a violência acumulada ao juízo.",
+      "evidence": ["Amós 3:10"],
+      "passageA": { "ref": "Amós 3:10" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem acumula violência nas fortalezas encontra o Senhor contra si."
+      },
+      "options": [
+        { "id": "a", "text": "Violência chama juízo" },
+        { "id": "b", "text": "Palácios sem consequência" },
+        { "id": "c", "text": "Luxo sempre protegido" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "3:11 anuncia saque dos palácios.",
+        "c": "As casas de marfim perecerão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 3:11, por causa da violência um inimigo cercará a terra e saqueará os palácios.",
+      "verseRef": "Amós 3:10–11",
+      "correctOptionId": "true",
+      "evidenceSpan": "Portanto, assim diz o Senhor Deus: Um inimigo virá",
+      "feedbackCorrect": "O \"Portanto\" liga a violência armazenada ao inimigo que vem.",
+      "feedbackWrong": { "false": "Releia o \"Portanto\" de 3:11 após 3:10." },
+      "hint": "Veja a palavra que liga 3:10 a 3:11.",
+      "learningObjective": "Compreender o resultado da violência acumulada.",
+      "evidence": ["Amós 3:10–11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 3:11, toque a palavra que marca o resultado da violência.",
+      "verseRef": "Amós 3:11",
+      "evidenceSpan": "Portanto, assim diz o Senhor Deus",
+      "feedbackCorrect": "\"Portanto\" introduz o juízo como resultado.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": ["Amós 3:11"],
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "inimigo" },
+        { "id": "c", "text": "terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Inimigo\" é o agente do juízo, não o marcador.",
+        "c": "\"Terra\" é o que será cercada, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 3:9–15 relaciona opressão interna e juízo externo?",
+      "verseRef": "Amós 3:9–11",
+      "evidenceSpan": "os teus palácios serão saqueados",
+      "feedbackCorrect": "A opressão vista em Samaria traz inimigo, saque e casas destruídas.",
+      "hint": "Ligue tumultos, violência e o \"Portanto\".",
+      "learningObjective": "Relacionar opressão e juízo no trecho.",
+      "evidence": ["Amós 3:9–11"],
+      "options": [
+        { "id": "a", "text": "A opressão interna traz inimigo e saque" },
+        { "id": "b", "text": "A opressão fica sem testemunha nem juízo" },
+        { "id": "c", "text": "Só Betel é julgado; os palácios ficam" },
+        { "id": "d", "text": "As nações não devem olhar Samaria" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As nações são convocadas e o inimigo vem.",
+        "c": "3:15 destrói também as casas de luxo.",
+        "d": "3:9 manda Asdode e Egito verem."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 3:9–15?",
+      "verseRef": "Amós 3:9–15",
+      "evidenceSpan": "as casas de marfim perecerão",
+      "feedbackCorrect": "Testemunhas veem; inimigo saqueia; Betel e casas caem.",
+      "hint": "Comece pelas testemunhas; as casas fecham.",
+      "learningObjective": "Seguir o movimento do oráculo.",
+      "evidence": ["Amós 3:9–15"],
+      "options": [
+        { "id": "a", "text": "Testemunhas veem opressão em Samaria" },
+        { "id": "b", "text": "Inimigo cerca e saqueia palácios" },
+        { "id": "c", "text": "Juízo sobre Betel e casas de luxo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Testemunhas primeiro; casas de luxo por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 3:11, o que o inimigo derrubará?",
+      "verseRef": "Amós 3:11",
+      "evidenceSpan": "derrubará as tuas fortalezas",
+      "feedbackCorrect": "Derrubará as fortalezas; os palácios serão saqueados.",
+      "hint": "É a palavra depois de \"derrubará as tuas\".",
+      "learningObjective": "Lembrar o alvo do derrube.",
+      "evidence": ["Amós 3:11"],
+      "options": [
+        { "id": "a", "text": "fortalezas" },
+        { "id": "b", "text": "nuvens" },
+        { "id": "c", "text": "rios" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Nuvens\" não aparece em 3:11.",
+        "c": "\"Rios\" não é o que se derruba aqui."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 3:15 a Isaías 5:8–9?",
+      "verseRef": "Amós 3:15",
+      "evidenceSpan": "as grandes casas serão destruídas",
+      "feedbackCorrect": "Nos dois textos, casas grandes ligadas à injustiça não ficam de pé.",
+      "hint": "Compare o fim das casas grandes.",
+      "learningObjective": "Relacionar casas de luxo em Amós e Isaías.",
+      "evidence": ["Amós 3:15", "Isaías 5:8–9"],
+      "passageA": { "ref": "Amós 3:15" },
+      "passageB": { "ref": "Isaías 5:8–9" },
+      "options": [
+        { "id": "a", "text": "Casas grandes vazias" },
+        { "id": "b", "text": "Luxo sem nenhum juízo" },
+        { "id": "c", "text": "Palácios eternamente firmes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam juízo sobre o luxo injusto.",
+        "c": "As casas serão destruídas."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 3:9–15, acumular violência nos palácios não tem consequência.",
+      "verseRef": "Amós 3:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "os teus palácios serão saqueados",
+      "feedbackCorrect": "O inimigo cerca, derruba fortalezas e saqueia palácios.",
+      "feedbackWrong": { "true": "3:11–15 mostra saque e casas destruídas." },
+      "hint": "Veja o destino dos palácios e das casas.",
+      "learningObjective": "Interpretar a consequência da violência acumulada.",
+      "evidence": ["Amós 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 3:15, toque o material que nomeia as casas que perecerão.",
+      "verseRef": "Amós 3:15",
+      "evidenceSpan": "as casas de marfim perecerão",
+      "feedbackCorrect": "Casas de marfim: luxo que perece no juízo.",
+      "hint": "Procure o material das casas no meio do versículo.",
+      "learningObjective": "Sustentar o juízo sobre o luxo com o texto.",
+      "evidence": ["Amós 3:15"],
+      "options": [
+        { "id": "a", "text": "marfim" },
+        { "id": "b", "text": "inverno" },
+        { "id": "c", "text": "verão" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Inverno\" nomeia a estação da casa, não o material que perece.",
+        "c": "\"Verão\" nomeia a outra casa, não o material."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 3:9–15 sustenta sobre violência e luxo?",
+      "verseRef": "Amós 3:10–15",
+      "evidenceSpan": "armazenando nos seus palácios a violência",
+      "feedbackCorrect": "Quem acumula violência nas fortalezas encontra o Senhor contra si.",
+      "hint": "Una armazenamento, inimigo e casas de marfim.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Amós 3:10–15"],
+      "options": [
+        { "id": "a", "text": "Violência acumulada traz o Senhor contra as fortalezas" },
+        { "id": "b", "text": "Violência nos palácios não tem consequência" },
+        { "id": "c", "text": "Só o culto importa; casas ficam de fora" },
+        { "id": "d", "text": "As nações não devem ver Samaria" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há inimigo, saque e destruição.",
+        "c": "3:15 julga também as casas.",
+        "d": "3:9 convoca testemunhas."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra juízo sobre riqueza injusta na Escritura?",
+      "verseRef": "Amós 3:15",
+      "evidenceSpan": "as grandes casas serão destruídas",
+      "feedbackCorrect": "Amós derruba casas; Isaías e Tiago ecoam o juízo sobre luxo injusto.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o juízo do luxo injusto no fio bíblico.",
+      "evidence": ["Amós 3:15", "Isaías 5:8–9", "Tiago 5:1–4"],
+      "options": [
+        { "id": "a", "text": "Amós: casas de marfim perecem" },
+        { "id": "b", "text": "Isaías: casas grandes ficam vazias" },
+        { "id": "c", "text": "Tiago: riqueza injusta clama" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 3, Isaías 5 e Tiago 5." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 3:10, o que se armazena nos palácios além da violência?",
+      "verseRef": "Amós 3:10",
+      "evidenceSpan": "a violência e a devastação",
+      "feedbackCorrect": "Violência e devastação enchem os palácios.",
+      "hint": "É a palavra depois de \"e a\".",
+      "learningObjective": "Lembrar o segundo termo do armazenamento injusto.",
+      "evidence": ["Amós 3:10"],
+      "options": [
+        { "id": "a", "text": "devastação" },
+        { "id": "b", "text": "barro" },
+        { "id": "c", "text": "palha" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Barro\" não aparece em 3:10.",
+        "c": "\"Palha\" não é o que se armazena."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 3:10 a Miqueias 3:9–12?",
+      "verseRef": "Amós 3:10",
+      "evidenceSpan": "armazenando nos seus palácios a violência",
+      "feedbackCorrect": "Nos dois textos, violência edificada/armazenada chama juízo sobre a cidade.",
+      "hint": "Compare violência e juízo urbano.",
+      "learningObjective": "Ligar a violência de Amós à de Miqueias.",
+      "evidence": ["Amós 3:10", "Miqueias 3:9–12"],
+      "passageA": { "ref": "Amós 3:10" },
+      "passageB": { "ref": "Miqueias 3:9–12" },
+      "options": [
+        { "id": "a", "text": "Sião edificada com sangue" },
+        { "id": "b", "text": "Violência sem juízo algum" },
+        { "id": "c", "text": "Palácios sempre seguros" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam juízo.",
+        "c": "Fortalezas e casas caem."
+      }
+    }
+  ]
+}

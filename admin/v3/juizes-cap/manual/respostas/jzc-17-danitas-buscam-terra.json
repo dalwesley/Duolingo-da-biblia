@@ -1,0 +1,705 @@
+{
+  "study": {
+    "passageRef": "Juízes 18:1–10",
+    "passages": [
+      {
+        "ref": "Juízes 18:1–10"
+      }
+    ],
+    "context": "Sem rei, Dã busca herança; cinco espias chegam à casa de Mica, consultam o levita e acham Laís segura.",
+    "keyword": "herança",
+    "keywordGloss": "Porção que Dã ainda não tinha recebido entre as tribos.",
+    "focusQuestion": "Onde a busca de “lugar” vira oportunismo sem justiça?",
+    "reflectionPrompts": [
+      "Sem rei",
+      "Consulta ao levita",
+      "Laís segura"
+    ],
+    "facts": [
+      {
+        "text": "Não havia rei em Israel.",
+        "evidenceRef": "Juízes 18:1",
+        "evidenceSpan": "não havia rei em Israel"
+      },
+      {
+        "text": "Dã enviou cinco homens para espionar a terra.",
+        "evidenceRef": "Juízes 18:2",
+        "evidenceSpan": "enviaram cinco homens valentes"
+      },
+      {
+        "text": "O jovem levita era sacerdote assalariado de Mica.",
+        "evidenceRef": "Juízes 18:4",
+        "evidenceSpan": "ele me assalariou, e eu sou seu sacerdote"
+      },
+      {
+        "text": "O sacerdote disse que fossem em paz.",
+        "evidenceRef": "Juízes 18:6",
+        "evidenceSpan": "Vão em paz"
+      },
+      {
+        "text": "Laís vivia segura, em paz e confiada.",
+        "evidenceRef": "Juízes 18:7",
+        "evidenceSpan": "estava seguro, segundo o costume dos sidônios, em paz e confiado"
+      },
+      {
+        "text": "Disseram que a terra era muito boa.",
+        "evidenceRef": "Juízes 18:9",
+        "evidenceSpan": "ela é muito boa"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "herança",
+        "gloss": "O que Dã ainda buscava para habitar."
+      },
+      {
+        "term": "sacerdote",
+        "gloss": "O levita assalariado na casa de Mica."
+      },
+      {
+        "term": "Laís",
+        "gloss": "Cidade segura vista pelos espias."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Dã busca herança",
+        "evidenceRef": "Juízes 18:1–2"
+      },
+      {
+        "label": "Consulta na casa de Mica",
+        "evidenceRef": "Juízes 18:3–6"
+      },
+      {
+        "label": "Laís e o relatório",
+        "evidenceRef": "Juízes 18:7–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Buscam herança pois não haviam recebido sorte.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 18:1"
+      },
+      {
+        "kind": "propósito",
+        "text": "Consultam a Deus para saber se o caminho prosperará.",
+        "marker": "para que",
+        "evidenceRef": "Juízes 18:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Terra boa; porém o povo está parado.",
+        "marker": null,
+        "evidenceRef": "Juízes 18:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Juízes 17:6",
+        "bridge": "Sem rei cada um"
+      },
+      {
+        "ref": "Números 13:30",
+        "bridge": "Subamos e tomemos"
+      },
+      {
+        "ref": "Provérbios 14:12",
+        "bridge": "Caminho que parece direito"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Havia rei em Israel naquele tempo.",
+        "why": "O texto diz que não havia rei."
+      },
+      {
+        "text": "O levita recusou a consulta.",
+        "why": "Disse: Vão em paz."
+      },
+      {
+        "text": "Laís era uma cidade oprimida e armada.",
+        "why": "Estavam seguros, em paz e confiados."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 18:1, o que Dã buscava?",
+    "centralInsight": "Sem rei, cada um busca o seu caminho: a conquista vira oportunismo."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "feedbackCorrect": "Sem rei.",
+      "hint": "Leia o começo.",
+      "learningObjective": "Observar a ausência de rei.",
+      "question": "Em Juízes 18:1, não havia rei em Israel.",
+      "verseRef": "Juízes 18:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackWrong": {
+        "false": "O texto afirma a ausência de rei."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "Herança.",
+      "hint": "O que buscavam para habitar?",
+      "learningObjective": "Identificar a herança.",
+      "question": "Em Juízes 18:1, toque o que Dã buscava.",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "herança"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "sorte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "buscava para si uma herança onde habitar",
+      "feedbackWrong": {
+        "b": "Rei falta no tempo.",
+        "c": "Sorte é o que faltou."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "feedbackCorrect": "Cinco valentes.",
+      "hint": "Conte os enviados.",
+      "learningObjective": "Contar os espias.",
+      "question": "Segundo Juízes 18:2, quantos homens Dã enviou?",
+      "verseRef": "Juízes 18:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cinco homens valentes"
+        },
+        {
+          "id": "b",
+          "text": "Doze espias"
+        },
+        {
+          "id": "c",
+          "text": "Três levitas"
+        },
+        {
+          "id": "d",
+          "text": "Dez anciãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram cinco homens valentes",
+      "feedbackWrong": {
+        "b": "Não são doze.",
+        "c": "Não são três.",
+        "d": "Não são dez."
+      },
+      "evidence": [
+        "Juízes 18:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Rei, busca e herança.",
+      "hint": "O que falta no início?",
+      "learningObjective": "Seguir a ordem.",
+      "question": "Monte Juízes 18:1 na ordem do texto.",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "não havia rei em Israel"
+        },
+        {
+          "id": "b",
+          "text": "a tribo dos danitas buscava"
+        },
+        {
+          "id": "c",
+          "text": "uma herança onde habitar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackWrong": {
+        "default": "Comece pela ausência de rei."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "feedbackCorrect": "Paz.",
+      "hint": "Veja a resposta do sacerdote.",
+      "learningObjective": "Lembrar paz.",
+      "question": "Em Juízes 18:6, complete: Vão em ___.",
+      "verseRef": "Juízes 18:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "paz"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vão em paz",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "Não é silêncio."
+      },
+      "evidence": [
+        "Juízes 18:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "feedbackCorrect": "Laís segura.",
+      "hint": "Como vivia o povo?",
+      "learningObjective": "Ligar Laís ao relatório.",
+      "question": "O que Juízes 18:7 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 18:7",
+      "passageA": {
+        "ref": "Juízes 18:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os espias acham Laís segura e confiada."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo em paz"
+        },
+        {
+          "id": "b",
+          "text": "Cidade sitiada"
+        },
+        {
+          "id": "c",
+          "text": "Rei presente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em paz e confiado",
+      "feedbackWrong": {
+        "b": "Não há sítio.",
+        "c": "Não há rei."
+      },
+      "evidence": [
+        "Juízes 18:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "feedbackCorrect": "Consulta com propósito.",
+      "hint": "Leia o para que.",
+      "learningObjective": "Ver o propósito.",
+      "question": "Em Juízes 18:5, os espias pedem consulta para saber se o caminho prosperará.",
+      "verseRef": "Juízes 18:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que possamos saber se o caminho que estamos seguindo prosperará",
+      "feedbackWrong": {
+        "false": "O para que marca o propósito."
+      },
+      "evidence": [
+        "Juízes 18:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "Para que.",
+      "hint": "Procure o propósito.",
+      "learningObjective": "Tocar o propósito.",
+      "question": "Em Juízes 18:5, toque o marcador de propósito.",
+      "verseRef": "Juízes 18:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "Consulte"
+        },
+        {
+          "id": "c",
+          "text": "caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que possamos saber",
+      "feedbackWrong": {
+        "b": "Consulte é o pedido.",
+        "c": "Caminho é o objeto."
+      },
+      "evidence": [
+        "Juízes 18:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "feedbackCorrect": "Herança e causa.",
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "question": "Que relação Juízes 18:1 faz?",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buscam herança pois não receberam sorte"
+        },
+        {
+          "id": "b",
+          "text": "Têm rei pois já há herança"
+        },
+        {
+          "id": "c",
+          "text": "Param pois Laís é má"
+        },
+        {
+          "id": "d",
+          "text": "Recusam pois o levita manda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois até aquele dia não havia recebido sorte",
+      "feedbackWrong": {
+        "b": "Não há rei.",
+        "c": "Laís é boa.",
+        "d": "Não recusam."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Busca, consulta e Laís.",
+      "hint": "O que vem depois da consulta?",
+      "learningObjective": "Ordenar o relato",
+      "question": "Ordene os movimentos do relato.",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dã busca herança"
+        },
+        {
+          "id": "b",
+          "text": "Consulta na casa de Mica"
+        },
+        {
+          "id": "c",
+          "text": "Laís e o relatório"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackWrong": {
+        "default": "Comece pela busca."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "feedbackCorrect": "Boa.",
+      "hint": "Veja o julgamento da terra.",
+      "learningObjective": "Lembrar boa.",
+      "question": "Em Juízes 18:9, complete: ela é muito ___.",
+      "verseRef": "Juízes 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "boa"
+        },
+        {
+          "id": "b",
+          "text": "fria"
+        },
+        {
+          "id": "c",
+          "text": "pobre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela é muito boa",
+      "feedbackWrong": {
+        "b": "Não é fria.",
+        "c": "Não é pobre."
+      },
+      "evidence": [
+        "Juízes 18:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "feedbackCorrect": "Mesmo refrão.",
+      "hint": "Compare o refrão.",
+      "learningObjective": "Ligar ao refrão.",
+      "question": "O que liga Juízes 18:1 a Juízes 17:6?",
+      "verseRef": "Juízes 18:1",
+      "passageA": {
+        "ref": "Juízes 18:1"
+      },
+      "passageB": {
+        "ref": "Juízes 17:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem rei cada um"
+        },
+        {
+          "id": "b",
+          "text": "Rei em Sião"
+        },
+        {
+          "id": "c",
+          "text": "Sorte já dada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackWrong": {
+        "b": "Não há rei.",
+        "c": "Falta sorte."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "feedbackCorrect": "Há pressa de tomar posse.",
+      "hint": "Veja a urgência.",
+      "learningObjective": "Avaliar o oportunismo.",
+      "question": "Em Juízes 18:9–10, o relatório mostra só justiça santa, sem oportunismo.",
+      "verseRef": "Juízes 18:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não se demorem em ir tomar posse da terra",
+      "feedbackWrong": {
+        "true": "O tom é conquista imediata."
+      },
+      "evidence": [
+        "Juízes 18:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "Deus.",
+      "hint": "Quem entregou?",
+      "learningObjective": "Tocar Deus.",
+      "question": "Em Juízes 18:10, toque quem entregou o lugar.",
+      "verseRef": "Juízes 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "lugar"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois Deus a entregou a vocês",
+      "feedbackWrong": {
+        "b": "Lugar descreve o destino.",
+        "c": "Terra é o que foi dado."
+      },
+      "evidence": [
+        "Juízes 18:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "feedbackCorrect": "Busca sem rei.",
+      "hint": "Una refrão e relatório.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "question": "Qual leitura melhor une busca e oportunismo?",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem rei, a busca de herança vira conquista fácil"
+        },
+        {
+          "id": "b",
+          "text": "O levita impede a viagem"
+        },
+        {
+          "id": "c",
+          "text": "Laís pede guerra justa"
+        },
+        {
+          "id": "d",
+          "text": "Dã já tinha sorte plena"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "buscava para si uma herança onde habitar",
+      "feedbackWrong": {
+        "b": "O levita abençoa.",
+        "c": "Laís está segura.",
+        "d": "Falta sorte."
+      },
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Busca, consulta e presa.",
+      "hint": "O que Laís se torna?",
+      "learningObjective": "Encadear o risco",
+      "question": "Ordene o encadeamento do oportunismo.",
+      "verseRef": "Juízes 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem rei, Dã busca"
+        },
+        {
+          "id": "b",
+          "text": "Consulta e paz"
+        },
+        {
+          "id": "c",
+          "text": "Laís vira presa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ela é muito boa",
+      "feedbackWrong": {
+        "default": "Comece sem rei."
+      },
+      "evidence": [
+        "Juízes 18:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "feedbackCorrect": "Sacerdote.",
+      "hint": "Veja o ofício.",
+      "learningObjective": "Lembrar sacerdote.",
+      "question": "Em Juízes 18:4, complete: eu sou seu ___.",
+      "verseRef": "Juízes 18:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "juiz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu sou seu sacerdote",
+      "feedbackWrong": {
+        "b": "Não é rei.",
+        "c": "Não é juiz."
+      },
+      "evidence": [
+        "Juízes 18:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "feedbackCorrect": "Urge subir.",
+      "hint": "Compare a urgência.",
+      "learningObjective": "Ligar a Números.",
+      "question": "O que liga Juízes 18:9 a Números 13:30?",
+      "verseRef": "Juízes 18:9",
+      "passageA": {
+        "ref": "Juízes 18:9"
+      },
+      "passageB": {
+        "ref": "Números 13:30"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Subamos e tomemos"
+        },
+        {
+          "id": "b",
+          "text": "Fiquemos parados"
+        },
+        {
+          "id": "c",
+          "text": "Voltemos ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levantem-se e subamos contra eles",
+      "feedbackWrong": {
+        "b": "O texto cobra urgência.",
+        "c": "Não voltam."
+      },
+      "evidence": [
+        "Juízes 18:9"
+      ]
+    }
+  ]
+}

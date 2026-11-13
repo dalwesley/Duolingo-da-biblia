@@ -1,0 +1,915 @@
+{
+  "study": {
+    "passageRef": "Rute 1:6–7",
+    "passages": [
+      {
+        "ref": "Rute 1:6–7"
+      },
+      {
+        "ref": "Rute 2:13–17"
+      },
+      {
+        "ref": "Rute 3:1–5"
+      },
+      {
+        "ref": "Rute 4:1–6"
+      }
+    ],
+    "context": "Cena de Travessia: Lealdade e redenção: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Lealdade e",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então.",
+        "evidenceRef": "Rute 1:6",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Porém.",
+        "evidenceRef": "Rute 1:11",
+        "evidenceSpan": "Porém"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Rute 2:13",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "E ela permaneceu colhendo naquele campo até o.",
+        "evidenceRef": "Rute 2:17",
+        "evidenceSpan": "E ela permaneceu colhendo naquele campo até o"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Rute 3:1",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Rute.",
+        "evidenceRef": "Rute 3:5",
+        "evidenceSpan": "Rute"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Rute",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Noemi",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então ela se preparou com suas",
+        "evidenceRef": "Rute 1:6"
+      },
+      {
+        "label": "Porém noemi disse voltem minhas filhas",
+        "evidenceRef": "Rute 1:11"
+      },
+      {
+        "label": "E disse ela que eu encontre",
+        "evidenceRef": "Rute 2:13"
+      },
+      {
+        "label": "E ela permaneceu colhendo naquele campo",
+        "evidenceRef": "Rute 2:17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Rute 1:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Porém\".",
+        "marker": "Porém",
+        "evidenceRef": "Rute 1:11"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Rute 2:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 25:5",
+        "bridge": "Dever do resgatador"
+      },
+      {
+        "ref": "Gênesis 2:24",
+        "bridge": "Unir-se e permanecer"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Lealdade e redenção restauram a casa sob o olhar do Senhor",
+    "anchorQuestion": "O que Rute 1:6 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Rute 1:6, o texto inclui Então.",
+      "verseRef": "Rute 1:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Rute 1:6 afirma.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Rute 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "ela"
+        },
+        {
+          "id": "c",
+          "text": "preparou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Rute 2:13, o que o texto apresenta com clareza.",
+      "verseRef": "Rute 2:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Rute 2:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Rute 1:11 na ordem do texto.",
+      "verseRef": "Rute 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém Noemi disse"
+        },
+        {
+          "id": "b",
+          "text": "minhas filhas"
+        },
+        {
+          "id": "c",
+          "text": "iriam comigo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porém Noemi disse",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Rute 1:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Rute 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "permaneceu"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "ela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneceu",
+      "feedbackCorrect": "A palavra do versículo é permaneceu.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Rute 2:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Rute 1:6 comunica que se liga a este contexto.",
+      "verseRef": "Rute 1:6",
+      "passageA": {
+        "ref": "Rute 1:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Lealdade e redenção: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Rute 4:1, toque outra palavra central do trecho.",
+      "verseRef": "Rute 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boaz"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "subiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Boaz",
+      "feedbackCorrect": "O trecho destaca Boaz.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Rute 4:10 na ordem correta do texto.",
+      "verseRef": "Rute 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "esposa Rute"
+        },
+        {
+          "id": "b",
+          "text": "que era esposa"
+        },
+        {
+          "id": "c",
+          "text": "Malom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "esposa Rute",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Rute 4:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+      "verseRef": "Rute 1:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Rute 1:6 afirma.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+      "verseRef": "Rute 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "ela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+      "verseRef": "Rute 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Rute 2:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Rute 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então ela se preparou com suas"
+        },
+        {
+          "id": "b",
+          "text": "Porém noemi disse voltem minhas filhas"
+        },
+        {
+          "id": "c",
+          "text": "E disse ela que eu encontre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Rute 2:13, complete a palavra que o texto usa com peso.",
+      "verseRef": "Rute 2:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "ela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "A palavra do versículo é disse.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Rute 2:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+      "verseRef": "Rute 1:6",
+      "passageA": {
+        "ref": "Rute 1:6"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 25:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dever do resgatador"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Rute 4:6, toque outra palavra central do trecho.",
+      "verseRef": "Rute 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "resgatador"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "resgatador",
+      "feedbackCorrect": "O trecho destaca resgatador.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Rute 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os passos deste trecho do bloco.",
+      "verseRef": "Rute 1:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A tensão do bloco aparece"
+        },
+        {
+          "id": "b",
+          "text": "Alguém decide e age com firmeza"
+        },
+        {
+          "id": "c",
+          "text": "O desfecho do bloco chega"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Rute 1:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Rute 1:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Rute 1:7 afirma.",
+      "evidence": [
+        "Rute 1:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Rute 3:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Rute 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rute"
+        },
+        {
+          "id": "b",
+          "text": "respondeu"
+        },
+        {
+          "id": "c",
+          "text": "Tudo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rute",
+      "feedbackCorrect": "O versículo destaca Rute.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Rute 3:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Rute 3:1, o que o texto apresenta com clareza.",
+      "verseRef": "Rute 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Rute 3:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Rute 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Rute 3:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Rute 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Noemi"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "ela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Noemi",
+      "feedbackCorrect": "A palavra do versículo é Noemi.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Rute 3:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Rute 1:6 a Gênesis 2:24.",
+      "verseRef": "Rute 1:6",
+      "passageA": {
+        "ref": "Rute 1:6"
+      },
+      "passageB": {
+        "ref": "Gênesis 2:24"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Unir-se e permanecer"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Rute 1:6, toque outra palavra central do trecho.",
+      "verseRef": "Rute 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "ela"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "se"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela",
+      "feedbackCorrect": "O trecho destaca ela.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Rute 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Encadeie a lógica deste trecho do bloco.",
+      "verseRef": "Rute 1:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "O risco ou o desafio se mostra"
+        },
+        {
+          "id": "b",
+          "text": "A resposta fiel entra em cena"
+        },
+        {
+          "id": "c",
+          "text": "O plano chega ao seu termo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Rute 1:8"
+      ]
+    }
+  ]
+}

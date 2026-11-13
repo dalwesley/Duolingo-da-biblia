@@ -1,0 +1,937 @@
+{
+  "study": {
+    "passageRef": "Daniel 5:1–6",
+    "passages": [
+      {
+        "ref": "Daniel 5:1–6"
+      },
+      {
+        "ref": "Daniel 6:10–15"
+      },
+      {
+        "ref": "Daniel 6:16–18"
+      },
+      {
+        "ref": "Daniel 7:9–14"
+      },
+      {
+        "ref": "Daniel 8:15–20"
+      },
+      {
+        "ref": "Daniel 8:21–26"
+      }
+    ],
+    "context": "Revise a escrita na parede, a oração na cova, o Filho do homem e a visão explicada por Gabriel.",
+    "keyword": "domínio",
+    "keywordGloss": "O governo eterno do Filho do homem, acima dos reinos que passam.",
+    "focusQuestion": "O que muda quando reinos humanos passam e o domínio eterno permanece?",
+    "reflectionPrompts": [
+      "Escrita e juízo",
+      "Oração fiel",
+      "Reino eterno"
+    ],
+    "facts": [
+      {
+        "text": "Dedos escreveram na parede do palácio.",
+        "evidenceRef": "Daniel 5:5",
+        "evidenceSpan": "apareceram dedos de uma mão humana, que escreviam"
+      },
+      {
+        "text": "Daniel orava três vezes ao dia como costumava.",
+        "evidenceRef": "Daniel 6:10",
+        "evidenceSpan": "três vezes ao dia se punha de joelhos, orava e dava graças"
+      },
+      {
+        "text": "Foi dado domínio eterno ao Filho do homem.",
+        "evidenceRef": "Daniel 7:14",
+        "evidenceSpan": "seu domínio é um domínio eterno, que não passará"
+      },
+      {
+        "text": "A visão é verdadeira e para dias distantes.",
+        "evidenceRef": "Daniel 8:26",
+        "evidenceSpan": "é verdadeira; mas tu, encerra a visão, pois se refere a dias ainda muito distantes"
+      },
+      {
+        "text": "Gabriel dá a entender a visão.",
+        "evidenceRef": "Daniel 8:16",
+        "evidenceSpan": "Gabriel, dá a entender esta visão"
+      },
+      {
+        "text": "O rei deseja que o Deus de Daniel o livre.",
+        "evidenceRef": "Daniel 6:16",
+        "evidenceSpan": "O teu Deus, a quem tu serves continuamente, que ele te livre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "domínio",
+        "gloss": "Governo eterno do Filho do homem."
+      },
+      {
+        "term": "orava",
+        "gloss": "Prática fiel de Daniel sob o edito."
+      },
+      {
+        "term": "verdadeira",
+        "gloss": "Qualidade da visão anunciada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Escrita e terror",
+        "evidenceRef": "Daniel 5:1–9"
+      },
+      {
+        "label": "Oração e cova",
+        "evidenceRef": "Daniel 6:10–18"
+      },
+      {
+        "label": "Filho do homem",
+        "evidenceRef": "Daniel 7:9–14"
+      },
+      {
+        "label": "Visão explicada",
+        "evidenceRef": "Daniel 8:15–26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Sábios não leem; Deus julga.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 5:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Edito contra oração; Daniel ora como antes.",
+        "marker": null,
+        "evidenceRef": "Daniel 6:10"
+      },
+      {
+        "kind": "propósito",
+        "text": "Domínio para que todos o sirvam.",
+        "marker": "para que",
+        "evidenceRef": "Daniel 7:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 26:64",
+        "bridge": "Filho do homem nas nuvens"
+      },
+      {
+        "ref": "Atos 5:29",
+        "bridge": "Obedecer a Deus antes"
+      },
+      {
+        "ref": "2 Pedro 1:19",
+        "bridge": "Palavra profética firme"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A oração deve parar sob leis hostis.",
+        "why": "6:10: Daniel ora como costumava."
+      },
+      {
+        "text": "O domínio do Filho do homem passa logo.",
+        "why": "7:14: domínio eterno."
+      },
+      {
+        "text": "A visão é falsa.",
+        "why": "8:26: é verdadeira."
+      }
+    ],
+    "centralInsight": "Reinos passam; a oração fiel e o domínio do Filho do homem permanecem.",
+    "anchorQuestion": "O que Daniel 5–8 mostra sobre juízo, oração e Reino?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 5:8, os sábios leram a inscrição com facilidade.",
+      "verseRef": "Daniel 5:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "não puderam ler a inscrição nem informar ao rei sua interpretação",
+      "feedbackCorrect": "Eles não puderam ler.",
+      "feedbackWrong": {
+        "true": "Releia 5:8."
+      },
+      "hint": "Veja o resultado dos sábios.",
+      "learningObjective": "Revisar a escrita na parede.",
+      "evidence": [
+        "Daniel 5:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 6:10, toque para onde as janelas estavam voltadas.",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "janelas abertas voltadas para Jerusalém",
+      "feedbackCorrect": "Voltadas para Jerusalém.",
+      "hint": "Procure o destino das janelas.",
+      "learningObjective": "Revisar a oração de Daniel.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "ordem"
+        },
+        {
+          "id": "c",
+          "text": "joelhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É o edito.",
+        "c": "É a postura."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 7:14, o domínio dado é:",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu domínio é um domínio eterno, que não passará",
+      "feedbackCorrect": "É um domínio eterno.",
+      "hint": "Veja a duração.",
+      "learningObjective": "Revisar o Filho do homem.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Temporário"
+        },
+        {
+          "id": "b",
+          "text": "Eterno"
+        },
+        {
+          "id": "c",
+          "text": "Só para Babilônia"
+        },
+        {
+          "id": "d",
+          "text": "Só para magos"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "É eterno.",
+        "c": "Para todos os povos.",
+        "d": "Não é dos magos."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 8:26 na ordem do texto.",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira; mas tu, encerra a visão",
+      "feedbackCorrect": "Visão verdadeira; encerra; dias distantes.",
+      "hint": "Comece pela verdade da visão.",
+      "learningObjective": "Revisar a visão explicada.",
+      "evidence": [
+        "Daniel 8:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "E a visão da tarde e da manhã, que foi anunciada, é verdadeira"
+        },
+        {
+          "id": "b",
+          "text": "mas tu, encerra a visão"
+        },
+        {
+          "id": "c",
+          "text": "pois se refere a dias ainda muito distantes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela verdade."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 5:5, o que apareceu escrevendo?",
+      "verseRef": "Daniel 5:5",
+      "evidenceSpan": "apareceram dedos de uma mão humana, que escreviam",
+      "feedbackCorrect": "Dedos de uma mão humana.",
+      "hint": "É o que apareceu.",
+      "learningObjective": "Revisar a mão na parede.",
+      "evidence": [
+        "Daniel 5:5"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "dedos"
+        },
+        {
+          "id": "b",
+          "text": "tronos"
+        },
+        {
+          "id": "c",
+          "text": "livros"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Tronos em 7:9.",
+        "c": "Livros em 7:10."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 6:10 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "Na etapa, oração e revelação permanecem sob pressão.",
+      "hint": "Compare o hábito e a pressão.",
+      "learningObjective": "Revisar a constância.",
+      "evidence": [
+        "Daniel 6:10"
+      ],
+      "passageA": {
+        "ref": "Daniel 6:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Reinos e oração: escrita, leões, Filho do homem e visão explicada."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração sem mudar o hábito"
+        },
+        {
+          "id": "b",
+          "text": "Fuga do decreto"
+        },
+        {
+          "id": "c",
+          "text": "Adoração só ao rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ele ora, não foge.",
+        "c": "Ele ora a Deus."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 7:13, toque com o que vinha o Filho do homem.",
+      "verseRef": "Daniel 7:13",
+      "evidenceSpan": "vinha com as nuvens do céu",
+      "feedbackCorrect": "Com as nuvens do céu.",
+      "hint": "Procure o acompanhamento.",
+      "learningObjective": "Revisar a chegada.",
+      "evidence": [
+        "Daniel 7:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "nuvens"
+        },
+        {
+          "id": "b",
+          "text": "visões"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É o quadro.",
+        "c": "É a figura."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 5:5 na ordem do texto.",
+      "verseRef": "Daniel 5:5",
+      "evidenceSpan": "apareceram dedos de uma mão humana, que escreviam",
+      "feedbackCorrect": "Dedos, parede, rei vê.",
+      "hint": "Comece pelos dedos.",
+      "learningObjective": "Revisar a escrita.",
+      "evidence": [
+        "Daniel 5:5"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "apareceram dedos de uma mão humana, que escreviam"
+        },
+        {
+          "id": "b",
+          "text": "diante do candelabro, na superfície da parede do palácio real"
+        },
+        {
+          "id": "c",
+          "text": "e o rei via os dedos que estavam escrevendo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelos dedos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 6:10, Daniel ora como costumava mesmo sabendo do edito.",
+      "verseRef": "Daniel 6:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "Ele mantém o hábito.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 6:10."
+      },
+      "hint": "Veja a continuidade.",
+      "learningObjective": "Compreender a oração sob pressão.",
+      "evidence": [
+        "Daniel 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 5:8, toque a palavra que marca o contraste.",
+      "verseRef": "Daniel 5:8",
+      "evidenceSpan": "mas não puderam ler a inscrição",
+      "feedbackCorrect": "\"Mas\" marca a incapacidade.",
+      "hint": "Procure o contraste.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "Daniel 5:8"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "sábios"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "São os agentes.",
+        "c": "É o destinatário."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 7:12–14 relaciona os animais e o Filho do homem?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu domínio é um domínio eterno, que não passará",
+      "feedbackCorrect": "Animais perdem domínio; o Filho do homem recebe eterno.",
+      "hint": "Compare o que se tira e o que se dá.",
+      "learningObjective": "Relacionar juízo e reino.",
+      "evidence": [
+        "Daniel 7:12",
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Animais perdem; o Filho do homem recebe eterno"
+        },
+        {
+          "id": "b",
+          "text": "Todos os domínios são iguais"
+        },
+        {
+          "id": "c",
+          "text": "Só animais recebem eterno"
+        },
+        {
+          "id": "d",
+          "text": "Não há domínio dado"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há distinção.",
+        "c": "Aos animais tira-se.",
+        "d": "Foi-lhe dado."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a etapa Reinos e oração?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "Foi-lhe dado domínio, glória e reino",
+      "feedbackCorrect": "Escrita e terror; oração e cova; Filho do homem; visão verdadeira.",
+      "hint": "Comece pela escrita.",
+      "learningObjective": "Seguir o arco da etapa.",
+      "evidence": [
+        "Daniel 5:5",
+        "Daniel 6:10",
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Escrita na parede e terror do rei"
+        },
+        {
+          "id": "b",
+          "text": "Oração fiel e cova dos leões"
+        },
+        {
+          "id": "c",
+          "text": "Filho do homem e visão verdadeira"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela escrita."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 8:17, a visão se refere ao tempo do quê?",
+      "verseRef": "Daniel 8:17",
+      "evidenceSpan": "essa visão se refere ao tempo do fim",
+      "feedbackCorrect": "Ao tempo do fim.",
+      "hint": "É o horizonte da visão.",
+      "learningObjective": "Lembrar o horizonte.",
+      "evidence": [
+        "Daniel 8:17"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fim"
+        },
+        {
+          "id": "b",
+          "text": "início"
+        },
+        {
+          "id": "c",
+          "text": "meio"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é início.",
+        "c": "Não é meio."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 7:13 a Mateus 26:64?",
+      "verseRef": "Daniel 7:13",
+      "evidenceSpan": "vinha com as nuvens do céu alguém semelhante a um filho do homem",
+      "feedbackCorrect": "Jesus aplica a si o Filho do homem nas nuvens.",
+      "hint": "Compare nuvens e Filho do homem.",
+      "learningObjective": "Relacionar Daniel e Jesus.",
+      "evidence": [
+        "Daniel 7:13",
+        "Mateus 26:64"
+      ],
+      "passageA": {
+        "ref": "Daniel 7:13"
+      },
+      "passageB": {
+        "ref": "Mateus 26:64"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Filho do homem nas nuvens"
+        },
+        {
+          "id": "b",
+          "text": "Animal eterno"
+        },
+        {
+          "id": "c",
+          "text": "Trono vazio"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O foco é o Filho do homem.",
+        "c": "Há Ancião e juízo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 6:13, toque a palavra de contraste sobre a oração.",
+      "verseRef": "Daniel 6:13",
+      "evidenceSpan": "antes, três vezes por dia",
+      "feedbackCorrect": "\"Antes\" marca a prioridade da oração.",
+      "hint": "Procure o contraste perto da oração.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "Daniel 6:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "antes"
+        },
+        {
+          "id": "b",
+          "text": "exilados"
+        },
+        {
+          "id": "c",
+          "text": "interdito"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É a origem.",
+        "c": "É o edito."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se relacionam oração e revelação nesta etapa?",
+      "verseRef": "Daniel 6:10",
+      "evidenceSpan": "orava e dava graças diante de seu Deus",
+      "feedbackCorrect": "Daniel ora; o Filho do homem recebe domínio; a visão é verdadeira.",
+      "hint": "Comece pela oração.",
+      "learningObjective": "Relacionar oração e revelação.",
+      "evidence": [
+        "Daniel 6:10",
+        "Daniel 7:14",
+        "Daniel 8:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel ora como costumava"
+        },
+        {
+          "id": "b",
+          "text": "O Filho do homem recebe domínio eterno"
+        },
+        {
+          "id": "c",
+          "text": "A visão explicada é verdadeira"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela oração."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 5–8, leis humanas cancelam a oração e o domínio eterno.",
+      "verseRef": "Daniel 6:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "como costumava fazer",
+      "feedbackCorrect": "A oração permanece; o domínio eterno é do Filho do homem.",
+      "feedbackWrong": {
+        "true": "Compare 6:10 e 7:14."
+      },
+      "hint": "Veja oração e domínio.",
+      "learningObjective": "Interpretar a etapa.",
+      "evidence": [
+        "Daniel 6:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 8:26, toque a qualidade da visão.",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira",
+      "feedbackCorrect": "A visão é verdadeira.",
+      "hint": "Procure o adjetivo.",
+      "learningObjective": "Sustentar a veracidade.",
+      "evidence": [
+        "Daniel 8:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "verdadeira"
+        },
+        {
+          "id": "b",
+          "text": "tarde"
+        },
+        {
+          "id": "c",
+          "text": "manhã"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Parte do nome.",
+        "c": "Parte do nome."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa sustenta sobre reinos e oração?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu reino não será destruído",
+      "feedbackCorrect": "Sob reinos humanos, Deus julga, ouve a oração e dá domínio eterno.",
+      "hint": "Compare as cenas da etapa.",
+      "learningObjective": "Interpretar o arco.",
+      "evidence": [
+        "Daniel 7:14",
+        "Daniel 8:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus julga reinos e dá domínio eterno"
+        },
+        {
+          "id": "b",
+          "text": "A oração deve parar sob pressão"
+        },
+        {
+          "id": "c",
+          "text": "A visão é falsa"
+        },
+        {
+          "id": "d",
+          "text": "O Filho do homem não recebe reino"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Daniel ora.",
+        "c": "8:26: verdadeira.",
+        "d": "7:14: foi-lhe dado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência resume o fio da etapa?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu domínio é um domínio eterno",
+      "feedbackCorrect": "Juízo na parede; oração fiel; domínio eterno.",
+      "hint": "Comece pelo juízo.",
+      "learningObjective": "Ver o arco teológico.",
+      "evidence": [
+        "Daniel 5:5",
+        "Daniel 6:10",
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo escrito na parede"
+        },
+        {
+          "id": "b",
+          "text": "Oração fiel sob o edito"
+        },
+        {
+          "id": "c",
+          "text": "Domínio eterno do Filho do homem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo juízo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 7:14, que palavra nomeia o governo eterno?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "Foi-lhe dado domínio, glória e reino",
+      "feedbackCorrect": "Domínio.",
+      "hint": "É a primeira palavra do dom.",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "domínio"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "exílio"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "Não é exílio."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 8:26 a 2 Pedro 1:19?",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira",
+      "feedbackCorrect": "Nos dois textos, a palavra revelada é firme.",
+      "hint": "Compare a qualidade da revelação.",
+      "learningObjective": "Ligar visão e palavra profética.",
+      "evidence": [
+        "Daniel 8:26",
+        "2 Pedro 1:19"
+      ],
+      "passageA": {
+        "ref": "Daniel 8:26"
+      },
+      "passageB": {
+        "ref": "2 Pedro 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra revelada firme"
+        },
+        {
+          "id": "b",
+          "text": "Visão descartável"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É verdadeira.",
+        "c": "Há palavra."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 5:6, toque o trecho do terror físico.",
+      "verseRef": "Daniel 5:6",
+      "evidenceSpan": "seus joelhos batiam um contra o outro",
+      "feedbackCorrect": "Os joelhos batiam.",
+      "hint": "Procure a ação dos joelhos.",
+      "learningObjective": "Sustentar o terror.",
+      "evidence": [
+        "Daniel 5:6"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "joelhos batiam"
+        },
+        {
+          "id": "b",
+          "text": "sábios"
+        },
+        {
+          "id": "c",
+          "text": "púrpura"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Vêm depois.",
+        "c": "É a recompensa prometida."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga juízo, oração e Reino?",
+      "verseRef": "Daniel 6:16",
+      "evidenceSpan": "O teu Deus, a quem tu serves continuamente, que ele te livre",
+      "feedbackCorrect": "Escrita julga; oração confia; o Filho do homem reina.",
+      "hint": "Comece pelo juízo.",
+      "learningObjective": "Ver o fio da etapa.",
+      "evidence": [
+        "Daniel 5:5",
+        "Daniel 6:16",
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A mão escreve o juízo"
+        },
+        {
+          "id": "b",
+          "text": "Daniel ora e é lançado na cova"
+        },
+        {
+          "id": "c",
+          "text": "O Filho do homem recebe o reino"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo juízo."
+      }
+    }
+  ]
+}

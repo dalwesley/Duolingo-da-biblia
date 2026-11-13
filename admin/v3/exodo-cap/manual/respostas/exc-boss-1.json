@@ -1,0 +1,934 @@
+{
+  "study": {
+    "passageRef": "Êxodo 5:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 1:15–20"
+      },
+      {
+        "ref": "Êxodo 2:1–6"
+      },
+      {
+        "ref": "Êxodo 3:15–20"
+      },
+      {
+        "ref": "Êxodo 4:1–6"
+      },
+      {
+        "ref": "Êxodo 5:1–6"
+      },
+      {
+        "ref": "Êxodo 6:2–7"
+      }
+    ],
+    "context": "Este desafio revisa a opressão e o chamado: parteiras, cesto, nome, sinais, Faraó e a promessa do Senhor.",
+    "keyword": "Libertar",
+    "keywordGloss": "Deus ouve o clamor e chama para tirar Israel do Egito.",
+    "focusQuestion": "Onde você ainda precisa crer que o Senhor vê a opressão e chama para libertar?",
+    "reflectionPrompts": [
+      "Temor a Deus",
+      "Sinais para crer",
+      "Eu sou o Senhor"
+    ],
+    "facts": [
+      {
+        "text": "As parteiras temeram a Deus e deixaram viver os meninos.",
+        "evidenceRef": "Êxodo 1:17",
+        "evidenceSpan": "temeram a Deus e não agiram conforme a ordem"
+      },
+      {
+        "text": "O menino foi posto num cesto entre os juncos.",
+        "evidenceRef": "Êxodo 2:3",
+        "evidenceSpan": "largou-o entre os juncos à beira do rio"
+      },
+      {
+        "text": "O Senhor é o nome eterno de Deus.",
+        "evidenceRef": "Êxodo 3:15",
+        "evidenceSpan": "este é o meu nome eternamente"
+      },
+      {
+        "text": "Os sinais são para que creiam que o Senhor apareceu.",
+        "evidenceRef": "Êxodo 4:5",
+        "evidenceSpan": "Para que creiam que o Senhor"
+      },
+      {
+        "text": "Faraó diz que não conhece o Senhor.",
+        "evidenceRef": "Êxodo 5:2",
+        "evidenceSpan": "Não conheço o Senhor"
+      },
+      {
+        "text": "Deus promete libertar e tomar Israel por povo.",
+        "evidenceRef": "Êxodo 6:6",
+        "evidenceSpan": "vos libertarei das cargas do Egito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "temeram",
+        "gloss": "Respeito a Deus que guia as parteiras."
+      },
+      {
+        "term": "bordão",
+        "gloss": "Sinal na mão de Moisés."
+      },
+      {
+        "term": "aliança",
+        "gloss": "Compromisso lembrado na promessa de libertação."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Parteiras temem e salvam",
+        "evidenceRef": "Êxodo 1:15–20"
+      },
+      {
+        "label": "Cesto e chamado pelo nome",
+        "evidenceRef": "Êxodo 2:1–6"
+      },
+      {
+        "label": "Sinais e confronto com Faraó",
+        "evidenceRef": "Êxodo 4:1–5"
+      },
+      {
+        "label": "Promessa: eu sou o Senhor",
+        "evidenceRef": "Êxodo 6:2–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Parteiras temem a Deus, não a ordem do rei.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 1:17"
+      },
+      {
+        "kind": "propósito",
+        "text": "Sinais para que creiam.",
+        "marker": "Para que",
+        "evidenceRef": "Êxodo 4:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso libertará com braço poderoso.",
+        "marker": "Portanto",
+        "evidenceRef": "Êxodo 6:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 7:34",
+        "bridge": "Deus ouviu a opressão"
+      },
+      {
+        "ref": "Hebreus 11:23",
+        "bridge": "Pais de Moisés temeram"
+      },
+      {
+        "ref": "João 20:31",
+        "bridge": "Sinais para crer"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Faraó já conhecia o Senhor desde o início.",
+        "why": "Ele declara: Não conheço o Senhor."
+      },
+      {
+        "text": "Os sinais eram só para Moisés se gabar.",
+        "why": "O propósito é para que creiam."
+      },
+      {
+        "text": "A libertação depende só da força de Israel.",
+        "why": "O Senhor promete libertar com braço poderoso."
+      }
+    ],
+    "centralInsight": "Deus ouve o clamor e chama para libertar",
+    "anchorQuestion": "O que une as parteiras, os sinais e a promessa em Êxodo 1–6?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "As parteiras temeram a Deus e não agiram conforme a ordem do rei do Egito.",
+      "verseRef": "Êxodo 1:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "temeram a Deus e não agiram conforme a ordem",
+      "feedbackCorrect": "O temor a Deus guiou a desobediência justa.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 1:17: elas temeram a Deus."
+      },
+      "hint": "A quem elas temeram?",
+      "learningObjective": "Rever o temor das parteiras.",
+      "evidence": [
+        "Êxodo 1:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 1:15, toque o primeiro nome das parteiras.",
+      "verseRef": "Êxodo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sifrá"
+        },
+        {
+          "id": "b",
+          "text": "Puá"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se chamava Sifrá",
+      "feedbackCorrect": "Sifrá é a primeira nomeada.",
+      "feedbackWrong": {
+        "b": "Puá é a segunda.",
+        "c": "O rei falou; o nome é Sifrá."
+      },
+      "hint": "Dois nomes próprios no versículo.",
+      "learningObjective": "Identificar as parteiras.",
+      "evidence": [
+        "Êxodo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 5:2, o que Faraó disse sobre o Senhor?",
+      "verseRef": "Êxodo 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não conheço o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Já o sirvo de coração"
+        },
+        {
+          "id": "c",
+          "text": "Ele é meu aliado"
+        },
+        {
+          "id": "d",
+          "text": "Israel pode partir hoje"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "A rejeição é explícita.",
+      "feedbackWrong": {
+        "b": "Ele rejeita.",
+        "c": "Não.",
+        "d": "Ele não deixa ir."
+      },
+      "hint": "A frase de recusa.",
+      "learningObjective": "Rever a resposta de Faraó.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 4:3 na ordem do texto.",
+      "verseRef": "Êxodo 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse-lhe: \"Lance-a ao chão.\""
+        },
+        {
+          "id": "b",
+          "text": "Ele a lançou ao chão e se transformou em uma serpente"
+        },
+        {
+          "id": "c",
+          "text": "e Moisés fugiu dela"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se transformou em uma serpente",
+      "feedbackCorrect": "Ordem, transformação e fuga.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem de lançar."
+      },
+      "hint": "A fuga vem por último.",
+      "learningObjective": "Rever o primeiro sinal.",
+      "evidence": [
+        "Êxodo 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 4:2, o que Moisés tinha na mão?",
+      "verseRef": "Êxodo 4:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "bordão"
+        },
+        {
+          "id": "b",
+          "text": "livro"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Um bordão",
+      "feedbackCorrect": "Ele respondeu: um bordão.",
+      "feedbackWrong": {
+        "b": "Não é livro.",
+        "c": "Não é ouro."
+      },
+      "hint": "Resposta de Moisés.",
+      "learningObjective": "Lembrar o objeto do sinal.",
+      "evidence": [
+        "Êxodo 4:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 6:6 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 6:6",
+      "passageA": {
+        "ref": "Êxodo 6:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel geme sob as cargas do Egito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor promete libertar"
+        },
+        {
+          "id": "b",
+          "text": "Israel vence sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Faraó já se rendeu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vos libertarei das cargas do Egito",
+      "feedbackCorrect": "A promessa responde à opressão.",
+      "feedbackWrong": {
+        "b": "Quem liberta é o Senhor.",
+        "c": "Ainda não."
+      },
+      "hint": "Compare gemidos e promessa.",
+      "learningObjective": "Ligar opressão e promessa.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 2:3, toque onde o cesto foi largado.",
+      "verseRef": "Êxodo 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "entre os juncos"
+        },
+        {
+          "id": "b",
+          "text": "betume"
+        },
+        {
+          "id": "c",
+          "text": "piche"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "largou-o entre os juncos à beira do rio",
+      "feedbackCorrect": "O cesto ficou entre os juncos à beira do rio.",
+      "feedbackWrong": {
+        "b": "Betume impermeabiliza.",
+        "c": "Piche impermeabiliza."
+      },
+      "hint": "Lugar no fim da frase.",
+      "learningObjective": "Rever o cesto no rio.",
+      "evidence": [
+        "Êxodo 2:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 6:6 na ordem do texto.",
+      "verseRef": "Êxodo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto, diga aos filhos de Israel: Eu sou o SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "e vos libertarei das cargas do Egito"
+        },
+        {
+          "id": "c",
+          "text": "e vos resgatarei com braço poderoso"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vos libertarei das cargas do Egito",
+      "feedbackCorrect": "Identidade, libertação e resgate.",
+      "feedbackWrong": {
+        "default": "Comece por Eu sou o SENHOR."
+      },
+      "hint": "A frase abre com Portanto.",
+      "learningObjective": "Rever a promessa de libertação.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 4:5, os sinais servem para que o povo creia que o Senhor apareceu a Moisés.",
+      "verseRef": "Êxodo 4:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Para que creiam que o Senhor",
+      "feedbackCorrect": "O propósito declarado é a fé.",
+      "feedbackWrong": {
+        "false": "Releia: Para que creiam."
+      },
+      "hint": "Leia o \"Para que\".",
+      "learningObjective": "Compreender o propósito dos sinais.",
+      "evidence": [
+        "Êxodo 4:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 1:17, toque a palavra que marca o contraste com a ordem do rei.",
+      "verseRef": "Êxodo 1:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "antes"
+        },
+        {
+          "id": "c",
+          "text": "meninos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As parteiras, porém, temeram",
+      "feedbackCorrect": "\"Porém\" vira a cena para o temor a Deus.",
+      "feedbackWrong": {
+        "b": "Antes introduz a ação.",
+        "c": "Meninos são salvos; o marcador é porém."
+      },
+      "hint": "Palavra curta após parteiras.",
+      "learningObjective": "Reconhecer o contraste.",
+      "evidence": [
+        "Êxodo 1:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 6:7 liga ser povo e conhecer o Senhor?",
+      "verseRef": "Êxodo 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomados por povo, saberão que Ele os tira"
+        },
+        {
+          "id": "b",
+          "text": "Só conhecerão depois de conquistar Canaã"
+        },
+        {
+          "id": "c",
+          "text": "O conhecimento vem de Faraó"
+        },
+        {
+          "id": "d",
+          "text": "Ser povo dispensa conhecer a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabereis que eu sou o Senhor vosso Deus",
+      "feedbackCorrect": "A relação povo–Deus inclui saber quem os tira.",
+      "feedbackWrong": {
+        "b": "O saber liga-se à saída.",
+        "c": "Não.",
+        "d": "O texto une povo e conhecimento."
+      },
+      "hint": "Leia o \"sabereis\".",
+      "learningObjective": "Relacionar aliança e conhecimento.",
+      "evidence": [
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco da opressão ao chamado?",
+      "verseRef": "Êxodo 1:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parteiras temem a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Deus dá sinais a Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Faraó rejeita o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temeram a Deus",
+      "feedbackCorrect": "Temor, sinais e rejeição de Faraó.",
+      "feedbackWrong": {
+        "default": "Comece pelas parteiras."
+      },
+      "hint": "Faraó vem depois dos sinais.",
+      "learningObjective": "Compreender o arco do bloco.",
+      "evidence": [
+        "Êxodo 1:17",
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 4:5, o que os sinais querem que o povo faça?",
+      "verseRef": "Êxodo 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "creiam"
+        },
+        {
+          "id": "b",
+          "text": "fugir"
+        },
+        {
+          "id": "c",
+          "text": "calar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que creiam",
+      "feedbackCorrect": "Para que creiam que o Senhor apareceu.",
+      "feedbackWrong": {
+        "b": "O verbo é creiam.",
+        "c": "Não é calar."
+      },
+      "hint": "Verbo após \"Para que\".",
+      "learningObjective": "Lembrar o verbo do propósito.",
+      "evidence": [
+        "Êxodo 4:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 1:17 a Hebreus 11:23?",
+      "verseRef": "Êxodo 1:17",
+      "passageA": {
+        "ref": "Êxodo 1:17"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor a Deus na opressão"
+        },
+        {
+          "id": "b",
+          "text": "Fuga imediata do Egito"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram a Deus",
+      "feedbackCorrect": "Parteiras e pais de Moisés: temor sob ameaça.",
+      "feedbackWrong": {
+        "b": "Ainda não é a fuga.",
+        "c": "Não há aliança com Faraó."
+      },
+      "hint": "O que une os dois textos?",
+      "learningObjective": "Relacionar temor sob opressão.",
+      "evidence": [
+        "Êxodo 1:17",
+        "Hebreus 11:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 4:5, toque as palavras que marcam o propósito dos sinais.",
+      "verseRef": "Êxodo 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "Abraão"
+        },
+        {
+          "id": "c",
+          "text": "apareceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que creiam",
+      "feedbackCorrect": "\"Para que\" introduz o objetivo.",
+      "feedbackWrong": {
+        "b": "Abraão nomeia o Deus.",
+        "c": "É o conteúdo da fé."
+      },
+      "hint": "Começo do versículo.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Êxodo 4:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avançam as promessas em Êxodo 6:6–7?",
+      "verseRef": "Êxodo 6:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Libertar das cargas"
+        },
+        {
+          "id": "b",
+          "text": "Resgatar com braço poderoso"
+        },
+        {
+          "id": "c",
+          "text": "Tomar Israel por povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu vos tomarei por meu povo",
+      "feedbackCorrect": "Libertar, resgatar e relacionar.",
+      "feedbackWrong": {
+        "default": "Ser povo vem depois do resgate."
+      },
+      "hint": "A relação povo–Deus fecha.",
+      "learningObjective": "Compreender a ordem das promessas.",
+      "evidence": [
+        "Êxodo 6:6",
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 1–6 ensina que Faraó conhecia o Senhor e só fingia rejeitá-lo.",
+      "verseRef": "Êxodo 5:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não conheço o Senhor e não deixarei Israel ir",
+      "feedbackCorrect": "A declaração é de não conhecer o Senhor.",
+      "feedbackWrong": {
+        "true": "Releia Êxodo 5:2."
+      },
+      "hint": "O que Faraó declara?",
+      "learningObjective": "Corrigir leitura sobre Faraó.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 6:7, toque o trecho que mostra o que Deus toma Israel para ser.",
+      "verseRef": "Êxodo 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu povo"
+        },
+        {
+          "id": "b",
+          "text": "cargas"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu vos tomarei por meu povo",
+      "feedbackCorrect": "Ele toma Israel por seu povo.",
+      "feedbackWrong": {
+        "b": "Cargas são o que deixam.",
+        "c": "Egito é a origem."
+      },
+      "hint": "Por meu ___.",
+      "learningObjective": "Sustentar a relação povo–Deus.",
+      "evidence": [
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o bloco Êxodo 1–6 sustenta?",
+      "verseRef": "Êxodo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus ouve, chama e promete libertar apesar da rejeição"
+        },
+        {
+          "id": "b",
+          "text": "A libertação depende só de Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Faraó já era aliado do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Sinais não têm propósito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vos libertarei das cargas do Egito",
+      "feedbackCorrect": "Do temor das parteiras à promessa: Deus age.",
+      "feedbackWrong": {
+        "b": "O Senhor liberta.",
+        "c": "Ele não conhece o Senhor.",
+        "d": "Sinais são para crer."
+      },
+      "hint": "Una 1:17, 4:5 e 6:6.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "Êxodo 6:6",
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da libertação?",
+      "verseRef": "Êxodo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus promete libertar Israel"
+        },
+        {
+          "id": "b",
+          "text": "Estêvão lembra que Deus ouviu a opressão"
+        },
+        {
+          "id": "c",
+          "text": "João registra sinais para crer"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vos libertarei",
+      "feedbackCorrect": "Da promessa à memória e aos sinais da fé.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa em Êxodo 6."
+      },
+      "hint": "Ordem da história bíblica.",
+      "learningObjective": "Ver o fio da libertação.",
+      "evidence": [
+        "Êxodo 6:6",
+        "Atos 7:34",
+        "João 20:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 3:15, o que é o nome de Deus eternamente?",
+      "verseRef": "Êxodo 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "nome"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este é o meu nome eternamente",
+      "feedbackCorrect": "Este é o meu nome eternamente.",
+      "feedbackWrong": {
+        "b": "Não é trono.",
+        "c": "Não é templo."
+      },
+      "hint": "Meu ___ eternamente.",
+      "learningObjective": "Lembrar a revelação do nome.",
+      "evidence": [
+        "Êxodo 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 4:5 a João 20:31?",
+      "verseRef": "Êxodo 4:5",
+      "passageA": {
+        "ref": "Êxodo 4:5"
+      },
+      "passageB": {
+        "ref": "João 20:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sinais para crer"
+        },
+        {
+          "id": "b",
+          "text": "Lei no Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Queda de Jericó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que creiam",
+      "feedbackCorrect": "Nos dois, sinais apontam para a fé.",
+      "feedbackWrong": {
+        "b": "Não é o tema.",
+        "c": "Outra história."
+      },
+      "hint": "Objetivo comum dos sinais?",
+      "learningObjective": "Ligar sinais em Êxodo e João.",
+      "evidence": [
+        "Êxodo 4:5",
+        "João 20:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 5:2, toque o trecho da recusa de Faraó sobre conhecer a Deus.",
+      "verseRef": "Êxodo 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não conheço"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "voz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "A frase-chave é: Não conheço o Senhor.",
+      "feedbackWrong": {
+        "b": "Israel é quem ele não deixa ir.",
+        "c": "Voz é o que ele não ouve."
+      },
+      "hint": "Começo da segunda frase.",
+      "learningObjective": "Sustentar a rejeição no texto.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência une temor, sinais e promessa?",
+      "verseRef": "Êxodo 1:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parteiras temem a Deus acima do rei"
+        },
+        {
+          "id": "b",
+          "text": "Sinais são dados para gerar fé"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor promete libertar o povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temeram a Deus",
+      "feedbackCorrect": "Temor, fé pelos sinais e promessa de libertação.",
+      "feedbackWrong": {
+        "default": "Comece pelas parteiras."
+      },
+      "hint": "A promessa fecha o arco.",
+      "learningObjective": "Unir os eixos do bloco.",
+      "evidence": [
+        "Êxodo 1:17",
+        "Êxodo 4:5",
+        "Êxodo 6:6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "Deuteronômio 18:9–12",
+    "passages": [
+      {
+        "ref": "Deuteronômio 18:9–12"
+      },
+      {
+        "ref": "Deuteronômio 19:15–18"
+      },
+      {
+        "ref": "Deuteronômio 20:1–5"
+      },
+      {
+        "ref": "Deuteronômio 21:18–21"
+      },
+      {
+        "ref": "Deuteronômio 22:1–5"
+      }
+    ],
+    "context": "Cena de Travessia: Profeta e justiça: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Profeta e justiça",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Quando.",
+        "evidenceRef": "Deuteronômio 18:9",
+        "evidenceSpan": "Quando"
+      },
+      {
+        "text": "Pois todo aquele que pratica tais coisas é.",
+        "evidenceRef": "Deuteronômio 18:12",
+        "evidenceSpan": "Pois todo aquele que pratica tais coisas é"
+      },
+      {
+        "text": "Não se levantará uma única testemunha contra ninguém.",
+        "evidenceRef": "Deuteronômio 19:15",
+        "evidenceSpan": "Não se levantará uma única testemunha contra ninguém"
+      },
+      {
+        "text": "Os.",
+        "evidenceRef": "Deuteronômio 19:18",
+        "evidenceSpan": "Os"
+      },
+      {
+        "text": "Quando saíres para a batalha contra os teus.",
+        "evidenceRef": "Deuteronômio 20:1",
+        "evidenceSpan": "Quando saíres para a batalha contra os teus"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Deuteronômio 20:5",
+        "evidenceSpan": "Então"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Quando entrares na terra",
+        "evidenceRef": "Deuteronômio 18:9"
+      },
+      {
+        "label": "Pois todo aquele que pratica tais",
+        "evidenceRef": "Deuteronômio 18:12"
+      },
+      {
+        "label": "Não se levantará uma única testemunha",
+        "evidenceRef": "Deuteronômio 19:15"
+      },
+      {
+        "label": "Os juízes farão uma investigação cuidadosa",
+        "evidenceRef": "Deuteronômio 19:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Deuteronômio 18:9"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Deuteronômio 18:12"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Deuteronômio 20:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 10:6–8",
+        "bridge": "A palavra está perto"
+      },
+      {
+        "ref": "Salmos 119:11",
+        "bridge": "Palavra no coração"
+      },
+      {
+        "ref": "Atos 3:22",
+        "bridge": "Profeta como Moisés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A justiça do Senhor toca culto, tribunal e rua",
+    "anchorQuestion": "O que Deuteronômio 18:9 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Deuteronômio 18:9, o texto inclui Quando.",
+      "verseRef": "Deuteronômio 18:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 18:9 afirma.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 18:9, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Deuteronômio 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "entrares"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entrares",
+      "feedbackCorrect": "O versículo destaca entrares.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 19:15, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 19:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto deixa claro: não se levantará uma única testemunha contra ninguém"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não se levantará uma única testemunha contra ninguém",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 19:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 18:12 na ordem do texto.",
+      "verseRef": "Deuteronômio 18:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois todo aquele"
+        },
+        {
+          "id": "b",
+          "text": "pratica tais coisas é"
+        },
+        {
+          "id": "c",
+          "text": "abominação ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Pois todo aquele",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Deuteronômio 18:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Deuteronômio 19:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 19:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "juízes"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "entrares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "juízes",
+      "feedbackCorrect": "A palavra do versículo é juízes.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 19:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Deuteronômio 18:9 comunica que se liga a este contexto.",
+      "verseRef": "Deuteronômio 18:9",
+      "passageA": {
+        "ref": "Deuteronômio 18:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Profeta e justiça: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 21:18, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 21:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "alguém"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "tiver"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "alguém",
+      "feedbackCorrect": "O trecho destaca alguém.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 21:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 22:1 na ordem do texto.",
+      "verseRef": "Deuteronômio 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se você encontrar"
+        },
+        {
+          "id": "b",
+          "text": "boi ou a ovelha"
+        },
+        {
+          "id": "c",
+          "text": "do seu irmão perdidos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se você encontrar",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 22:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Deuteronômio 18:9, a palavra Quando liga ideias no fluxo do texto.",
+      "verseRef": "Deuteronômio 18:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 18:9 afirma.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 18:9, toque a palavra que marca a relação no texto.",
+      "verseRef": "Deuteronômio 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quando"
+        },
+        {
+          "id": "b",
+          "text": "entrares"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo destaca Quando.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 19:18, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 19:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: os juízes farão uma investigação cuidadosa"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os juízes farão uma investigação cuidadosa; se a testemunha",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 19:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Deuteronômio 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quando entrares na terra"
+        },
+        {
+          "id": "b",
+          "text": "Pois todo aquele que pratica tais"
+        },
+        {
+          "id": "c",
+          "text": "Não se levantará uma única testemunha"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Deuteronômio 19:15, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 19:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantará"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "entrares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantará",
+      "feedbackCorrect": "A palavra do versículo é levantará.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 19:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 18:9 a Romanos 10:6–8.",
+      "verseRef": "Deuteronômio 18:9",
+      "passageA": {
+        "ref": "Deuteronômio 18:9"
+      },
+      "passageB": {
+        "ref": "Romanos 10:6–8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A palavra está perto"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 21:21, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 21:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "todos"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "os"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todos",
+      "feedbackCorrect": "O trecho destaca todos.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 21:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Deuteronômio 22:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 22:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Deuteronômio 22:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 22:5 afirma.",
+      "evidence": [
+        "Deuteronômio 22:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 20:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Deuteronômio 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "oficiais"
+        },
+        {
+          "id": "c",
+          "text": "falarão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 20:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 20:1, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que quando saíres para a batalha contra os teus inimigos e vires"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando saíres para a batalha contra os teus",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 20:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Deuteronômio 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Deuteronômio 20:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "saíres"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "entrares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saíres",
+      "feedbackCorrect": "A palavra do versículo é saíres.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 20:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 18:9 a Salmos 119:11.",
+      "verseRef": "Deuteronômio 18:9",
+      "passageA": {
+        "ref": "Deuteronômio 18:9"
+      },
+      "passageB": {
+        "ref": "Salmos 119:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra no coração"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 22:1, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "você"
+        },
+        {
+          "id": "b",
+          "text": "Se"
+        },
+        {
+          "id": "c",
+          "text": "encontrar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você",
+      "feedbackCorrect": "O trecho destaca você.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento ligado a Deuteronômio 18:9.",
+      "verseRef": "Deuteronômio 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 18:9"
+      ]
+    }
+  ]
+}

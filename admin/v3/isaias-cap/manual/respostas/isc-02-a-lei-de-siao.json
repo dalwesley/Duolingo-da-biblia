@@ -1,0 +1,454 @@
+{
+  "study": {
+    "passageRef": "Isaías 2:1–6",
+    "passages": [{ "ref": "Isaías 2:1–6" }],
+    "context": "Isaías vê o futuro do monte do Senhor elevado acima dos montes: povos sobem para aprender, e a guerra cede à paz. Em seguida, o contraste: a casa de Jacó foi desamparada por corrupção.",
+    "keyword": "Sião",
+    "keywordGloss": "O monte de onde sairá a lei e a palavra do Senhor para as nações.",
+    "focusQuestion": "Você anda na luz do Senhor ou ainda aprende os caminhos da guerra e da corrupção?",
+    "reflectionPrompts": ["Monte elevado", "Lei de Sião", "Luz do Senhor"],
+    "facts": [
+      {
+        "text": "A visão de Isaías, filho de Amós, é a respeito de Judá e Jerusalém.",
+        "evidenceRef": "Isaías 2:1",
+        "evidenceSpan": "a respeito de Judá e Jerusalém"
+      },
+      {
+        "text": "Nos últimos dias o monte da casa do Senhor será estabelecido no cimo dos montes.",
+        "evidenceRef": "Isaías 2:2",
+        "evidenceSpan": "o monte da casa do Senhor será estabelecido no cimo dos montes"
+      },
+      {
+        "text": "Muitos povos dirão: subamos ao monte do Senhor para que ele ensine seus caminhos.",
+        "evidenceRef": "Isaías 2:3",
+        "evidenceSpan": "Venham, subamos ao monte do Senhor"
+      },
+      {
+        "text": "De Sião sairá a lei, e a palavra do Senhor de Jerusalém.",
+        "evidenceRef": "Isaías 2:3",
+        "evidenceSpan": "pois de Sião sairá a lei, e a palavra do Senhor, de Jerusalém"
+      },
+      {
+        "text": "As nações transformarão espadas em relhas e não aprenderão mais a guerra.",
+        "evidenceRef": "Isaías 2:4",
+        "evidenceSpan": "transformarão suas espadas em relhas de arados"
+      },
+      {
+        "text": "A casa de Jacó é chamada a caminhar na luz do Senhor.",
+        "evidenceRef": "Isaías 2:5",
+        "evidenceSpan": "caminhemos na luz do SENHOR"
+      }
+    ],
+    "keyTerms": [
+      { "term": "Sião", "gloss": "Origem da lei e da palavra do Senhor para os povos." },
+      { "term": "relhas", "gloss": "Peças de arado: imagem da espada transformada em trabalho pacífico." },
+      { "term": "luz", "gloss": "O caminho a que a casa de Jacó é convidada a caminhar." }
+    ],
+    "structure": [
+      { "label": "Visão sobre Judá e Jerusalém", "evidenceRef": "Isaías 2:1" },
+      { "label": "Monte elevado e povos afluindo", "evidenceRef": "Isaías 2:2–3" },
+      { "label": "Julgamento que desarma a guerra", "evidenceRef": "Isaías 2:4" },
+      { "label": "Convite à luz e contraste da corrupção", "evidenceRef": "Isaías 2:5–6" }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Os povos sobem para que o Senhor ensine seus caminhos e andem em suas veredas.",
+        "marker": "para que",
+        "evidenceRef": "Isaías 2:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois do julgamento, as nações transformam armas em ferramentas e deixam de aprender a guerra.",
+        "marker": null,
+        "evidenceRef": "Isaías 2:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "O Senhor desamparou o povo porque se encheram de corrupção, apesar do convite à luz.",
+        "marker": "porém",
+        "evidenceRef": "Isaías 2:6"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Miqueias 4:1–3", "bridge": "Mesma visão do monte" },
+      { "ref": "Salmos 122:1", "bridge": "Subir à casa do Senhor" },
+      { "ref": "Apocalipse 21:24", "bridge": "Nações andam na luz" }
+    ],
+    "misreadings": [
+      {
+        "text": "A paz das nações vem sem o julgamento e o ensino do Senhor.",
+        "why": "O texto liga o desarme ao julgamento e à lei que sai de Sião."
+      },
+      {
+        "text": "A visão anula o chamado presente à casa de Jacó.",
+        "why": "O v.5 chama a caminhar agora na luz do Senhor."
+      },
+      {
+        "text": "A casa de Jacó já vive essa paz; não há contraste no capítulo.",
+        "why": "O v.6 mostra o povo desamparado por corrupção e agouros."
+      }
+    ],
+    "centralInsight": "De Sião sairá a lei, e a palavra do Senhor de Jerusalém.",
+    "anchorQuestion": "De onde Isaías 2:3 diz que sairá a lei e a palavra do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 2:4, as nações aprenderão ainda mais a guerra depois do julgamento do Senhor.",
+      "verseRef": "Isaías 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "nem aprenderão mais a guerra",
+      "feedbackCorrect": "O texto diz o contrário: não aprenderão mais a guerra.",
+      "feedbackWrong": { "true": "Leia o fim do versículo: nem aprenderão mais a guerra." },
+      "hint": "Veja a última cláusula do versículo.",
+      "learningObjective": "Observar o fim da aprendizagem da guerra.",
+      "evidence": ["Isaías 2:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 2:3, toque o lugar de onde sairá a lei.",
+      "verseRef": "Isaías 2:3",
+      "options": [
+        { "id": "a", "text": "Sião" },
+        { "id": "b", "text": "povos" },
+        { "id": "c", "text": "veredas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois de Sião sairá a lei",
+      "feedbackCorrect": "A lei sai de Sião; a palavra do Senhor, de Jerusalém.",
+      "feedbackWrong": {
+        "b": "Os povos sobem para aprender; a lei sai de Sião.",
+        "c": "Veredas são o caminho a andar, não a origem da lei."
+      },
+      "hint": "Procure \"de … sairá a lei\".",
+      "learningObjective": "Identificar a origem da lei no texto.",
+      "evidence": ["Isaías 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 2:2, onde será estabelecido o monte da casa do Senhor?",
+      "verseRef": "Isaías 2:2",
+      "options": [
+        { "id": "a", "text": "No cimo dos montes" },
+        { "id": "b", "text": "No fundo dos vales" },
+        { "id": "c", "text": "Fora de Judá e Jerusalém" },
+        { "id": "d", "text": "Somente entre os filisteus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será estabelecido no cimo dos montes",
+      "feedbackCorrect": "O monte será estabelecido no cimo e se elevará sobre os outeiros.",
+      "feedbackWrong": {
+        "b": "O texto fala de cimo dos montes, não de vales.",
+        "c": "A visão é a respeito de Judá e Jerusalém.",
+        "d": "Os filisteus aparecem no contraste do v.6, não aqui."
+      },
+      "hint": "Leia onde o monte será estabelecido.",
+      "learningObjective": "Localizar a elevação do monte do Senhor.",
+      "evidence": ["Isaías 2:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 2:4 na ordem do texto.",
+      "verseRef": "Isaías 2:4",
+      "options": [
+        { "id": "a", "text": "Ele julgará entre os povos e corrigirá muitas nações" },
+        { "id": "b", "text": "estas transformarão suas espadas em relhas de arados" },
+        { "id": "c", "text": "nem aprenderão mais a guerra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ele julgará entre os povos e corrigirá muitas nações",
+      "feedbackCorrect": "Primeiro o julgamento, depois a transformação das armas, enfim o fim da guerra.",
+      "feedbackWrong": { "default": "Comece pelo julgamento; a guerra some no fim." },
+      "hint": "O versículo começa com \"Ele julgará\".",
+      "learningObjective": "Reconhecer a sequência do desarme.",
+      "evidence": ["Isaías 2:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 2:5, a casa de Jacó é chamada a caminhar na quê do Senhor?",
+      "verseRef": "Isaías 2:5",
+      "options": [
+        { "id": "a", "text": "luz" },
+        { "id": "b", "text": "guerra" },
+        { "id": "c", "text": "corrupção" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "caminhemos na luz do SENHOR",
+      "feedbackCorrect": "O convite é caminhar na luz do Senhor.",
+      "feedbackWrong": {
+        "b": "A guerra é o que as nações deixarão de aprender.",
+        "c": "A corrupção aparece no contraste do v.6."
+      },
+      "hint": "Veja o fim do versículo 5.",
+      "learningObjective": "Lembrar o convite à luz.",
+      "evidence": ["Isaías 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 2:3 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 2:3",
+      "passageA": { "ref": "Isaías 2:3", "text": "pois de Sião sairá a lei" },
+      "passageB": { "ref": "Contexto", "text": "Os povos sobem para aprender os caminhos do Senhor." },
+      "options": [
+        { "id": "a", "text": "Lei que sai de Sião" },
+        { "id": "b", "text": "Guerra eternizada" },
+        { "id": "c", "text": "Povos sem ensino" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois de Sião sairá a lei",
+      "feedbackCorrect": "A afluência dos povos se liga à lei que sai de Sião.",
+      "feedbackWrong": {
+        "b": "O texto aponta para o fim da guerra.",
+        "c": "Os povos sobem justamente para serem ensinados."
+      },
+      "hint": "Veja de onde sai o ensino.",
+      "learningObjective": "Ligar a lei de Sião à afluência dos povos.",
+      "evidence": ["Isaías 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 2:3, os povos sobem ao monte do Senhor para que ele lhes ensine os seus caminhos.",
+      "verseRef": "Isaías 2:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que ele nos ensine os seus caminhos",
+      "feedbackCorrect": "O propósito da subida é o ensino dos caminhos do Senhor.",
+      "feedbackWrong": { "false": "O texto traz o \"para que\" do ensino logo após o convite a subir." },
+      "hint": "Procure a cláusula de propósito.",
+      "learningObjective": "Compreender o propósito da subida dos povos.",
+      "evidence": ["Isaías 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 2:3, toque as palavras que marcam o propósito da subida.",
+      "verseRef": "Isaías 2:3",
+      "options": [
+        { "id": "a", "text": "para que" },
+        { "id": "b", "text": "Muitos povos" },
+        { "id": "c", "text": "de Jerusalém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que ele nos ensine os seus caminhos",
+      "feedbackCorrect": "\"Para que\" introduz o propósito: ser ensinados.",
+      "feedbackWrong": {
+        "b": "Nomeia quem sobe, não o propósito.",
+        "c": "Indica a origem da palavra, não o propósito da subida."
+      },
+      "hint": "São duas palavras antes de \"ele nos ensine\".",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": ["Isaías 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 2:4 se relaciona com o ensino de Sião?",
+      "verseRef": "Isaías 2:4",
+      "options": [
+        { "id": "a", "text": "O julgamento desarma as nações e encerra a guerra" },
+        { "id": "b", "text": "As nações sobem para fabricar mais espadas" },
+        { "id": "c", "text": "O Senhor deixa as nações sem correção" },
+        { "id": "d", "text": "A guerra continua como escola permanente" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estas transformarão suas espadas em relhas de arados",
+      "feedbackCorrect": "Julgar e corrigir leva à transformação das armas e ao fim da guerra.",
+      "feedbackWrong": {
+        "b": "Espadas viram relhas, não se multiplicam.",
+        "c": "Ele julgará e corrigirá muitas nações.",
+        "d": "O texto diz que não aprenderão mais a guerra."
+      },
+      "hint": "Veja o que acontece às espadas.",
+      "learningObjective": "Relacionar julgamento e paz.",
+      "evidence": ["Isaías 2:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 2:2–5?",
+      "verseRef": "Isaías 2:2–5",
+      "options": [
+        { "id": "a", "text": "O monte do Senhor é elevado" },
+        { "id": "b", "text": "Os povos sobem para aprender a lei" },
+        { "id": "c", "text": "A casa de Jacó é chamada à luz" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "caminhemos na luz do SENHOR",
+      "feedbackCorrect": "Elevação, afluência dos povos e convite à casa de Jacó.",
+      "feedbackWrong": { "default": "O convite à luz fecha o movimento depois dos povos." },
+      "hint": "A casa de Jacó é chamada por último.",
+      "learningObjective": "Ver o movimento do monte à luz.",
+      "evidence": ["Isaías 2:2–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 2:6, qual palavra marca o contraste com o convite à luz?",
+      "verseRef": "Isaías 2:6",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "luz" },
+        { "id": "c", "text": "Sião" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu, porém, desamparaste o teu povo",
+      "feedbackCorrect": "\"Porém\" introduz o contraste: o povo foi desamparado por corrupção.",
+      "feedbackWrong": {
+        "b": "Luz pertence ao convite do v.5.",
+        "c": "Sião é a origem da lei, não o marcador do contraste."
+      },
+      "hint": "É a palavra entre vírgulas no início.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": ["Isaías 2:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 2:2–3 a Miqueias 4:1–3?",
+      "verseRef": "Isaías 2:2–3",
+      "passageA": { "ref": "Isaías 2:2", "text": "o monte da casa do Senhor será estabelecido no cimo dos montes" },
+      "passageB": { "ref": "Miqueias 4:1–3" },
+      "options": [
+        { "id": "a", "text": "Mesma visão do monte" },
+        { "id": "b", "text": "Guerra sem fim" },
+        { "id": "c", "text": "Lei que some" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o monte da casa do Senhor será estabelecido no cimo dos montes",
+      "feedbackCorrect": "Miqueias ecoa a mesma visão: monte elevado, povos e paz.",
+      "feedbackWrong": {
+        "b": "Ambos apontam para o fim da guerra.",
+        "c": "Nos dois textos a lei sai de Sião."
+      },
+      "hint": "Compare a elevação do monte nos dois profetas.",
+      "learningObjective": "Ligar Isaías a Miqueias na visão de Sião.",
+      "evidence": ["Isaías 2:2–3", "Miqueias 4:1–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 2:4–5 apresenta a paz das nações e dispensa qualquer chamado presente à casa de Jacó.",
+      "verseRef": "Isaías 2:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Venham, ó casa de Jacó, e caminhemos na luz do SENHOR",
+      "feedbackCorrect": "A visão da paz vem com o convite: caminhemos na luz do Senhor.",
+      "feedbackWrong": { "true": "O v.5 chama Jacó a caminhar na luz logo após o desarme das nações." },
+      "hint": "Leia o convite logo depois do fim da guerra.",
+      "learningObjective": "Interpretar visão futura e chamado presente juntos.",
+      "evidence": ["Isaías 2:4–5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 2:4, toque o trecho que mostra o fim do aprendizado da guerra.",
+      "verseRef": "Isaías 2:4",
+      "options": [
+        { "id": "a", "text": "nem aprenderão mais" },
+        { "id": "b", "text": "julgará entre" },
+        { "id": "c", "text": "muitas nações" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem aprenderão mais a guerra",
+      "feedbackCorrect": "A frase fecha a visão: a guerra deixa de ser escola.",
+      "feedbackWrong": {
+        "b": "Julgar é o meio; o fim da guerra vem depois.",
+        "c": "Nações são corrigidas; o fim da guerra está no fechamento."
+      },
+      "hint": "Olhe a última ação negada no versículo.",
+      "learningObjective": "Sustentar com o texto o fim da guerra.",
+      "evidence": ["Isaías 2:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 2:3–6 sustenta?",
+      "verseRef": "Isaías 2:3–6",
+      "options": [
+        { "id": "a", "text": "A lei sai de Sião, mas Jacó ainda pode estar corrupto" },
+        { "id": "b", "text": "Jacó já vive a paz; não há tensão no texto" },
+        { "id": "c", "text": "Os povos sobem sem precisar de ensino" },
+        { "id": "d", "text": "A corrupção anula a visão do monte" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu, porém, desamparaste o teu povo",
+      "feedbackCorrect": "A visão da lei de Sião convive com o contraste da corrupção de Jacó.",
+      "feedbackWrong": {
+        "b": "O v.6 mostra desamparo por corrupção.",
+        "c": "Eles sobem para serem ensinados.",
+        "d": "O contraste denuncia o povo; não cancela a visão."
+      },
+      "hint": "Segure o \"porém\" do v.6 junto com a lei de Sião.",
+      "learningObjective": "Segurar visão e contraste sem apagar nenhum.",
+      "evidence": ["Isaías 2:3–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a lei de Sião ao fim da guerra na Escritura?",
+      "verseRef": "Isaías 2:3",
+      "options": [
+        { "id": "a", "text": "De Sião sai a lei aos povos" },
+        { "id": "b", "text": "Miqueias repete o monte e a paz" },
+        { "id": "c", "text": "As nações andam na luz da cidade" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "pois de Sião sairá a lei",
+      "evidence": ["Isaías 2:3", "Miqueias 4:1–3", "Apocalipse 21:24"],
+      "feedbackCorrect": "A lei de Sião ecoa em Miqueias e aponta à luz das nações.",
+      "feedbackWrong": { "default": "Comece por Isaías; depois Miqueias; enfim Apocalipse." },
+      "hint": "Siga a ordem: profeta, eco, consumação.",
+      "learningObjective": "Encadear Sião, paz e luz das nações."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 2:3, de Sião sairá a quê?",
+      "verseRef": "Isaías 2:3",
+      "options": [
+        { "id": "a", "text": "lei" },
+        { "id": "b", "text": "guerra" },
+        { "id": "c", "text": "corrupção" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois de Sião sairá a lei",
+      "feedbackCorrect": "O termo que carrega a cena é a lei que sai de Sião.",
+      "feedbackWrong": {
+        "b": "A guerra é o que as nações deixarão de aprender.",
+        "c": "A corrupção descreve o povo no v.6, não o que sai de Sião."
+      },
+      "hint": "É o substantivo depois de \"sairá a\".",
+      "learningObjective": "Lembrar o termo teológico central da cena.",
+      "evidence": ["Isaías 2:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 2:5 a Apocalipse 21:24?",
+      "verseRef": "Isaías 2:5",
+      "passageA": { "ref": "Isaías 2:5", "text": "caminhemos na luz do SENHOR" },
+      "passageB": { "ref": "Apocalipse 21:24" },
+      "options": [
+        { "id": "a", "text": "Nações andam na luz" },
+        { "id": "b", "text": "Guerra como meta" },
+        { "id": "c", "text": "Escuridão permanente" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "caminhemos na luz do SENHOR",
+      "feedbackCorrect": "O convite à luz de Jacó ecoa nas nações que andam na luz.",
+      "feedbackWrong": {
+        "b": "Ambos apontam para luz, não para guerra.",
+        "c": "O tema compartilhado é caminhar na luz."
+      },
+      "hint": "Compare a palavra \"luz\" nos dois textos.",
+      "learningObjective": "Ligar o convite de Isaías à luz das nações.",
+      "evidence": ["Isaías 2:5", "Apocalipse 21:24"]
+    }
+  ]
+}

@@ -1,0 +1,474 @@
+{
+  "slug": "jeremias-cap",
+  "prefix": "jrc",
+  "book": "Jeremias",
+  "chapters": 52,
+  "title": "Jeremias",
+  "description": "Jeremias capítulo a capítulo: o chamado a voltar antes da queda de Jerusalém.",
+  "icon": "💧",
+  "color": "#5B8FA8",
+  "order": 31,
+  "realm": "antigo-testamento",
+  "category": "profetas-maiores",
+  "avoidTrails": [
+    "jeremias"
+  ],
+  "modules": [
+    {
+      "title": "Chamado e contenda · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Jeremias 1:9–19",
+          "title": "Profeta às nações",
+          "intro": "O Senhor toca a boca de Jeremias e o põe sobre as nações.",
+          "insight": "Não temas diante deles, porque eu sou contigo para te livrar, diz o Senhor.",
+          "objective": "Coragem no chamado"
+        },
+        {
+          "ref": "Jeremias 2:1–9",
+          "title": "O amor do noivado",
+          "intro": "O Senhor lembra o amor do noivado de Israel no deserto e pergunta o que achou de iniquidade nele.",
+          "insight": "Que injustiça acharam em mim os vossos pais, para se alongarem de mim?",
+          "objective": "Não abandonar o Senhor"
+        },
+        {
+          "ref": "Jeremias 3:12–18",
+          "title": "Volta, ó rebelde",
+          "intro": "Vai e apregoa estas palavras: volta, ó rebelde Israel, que não farei cair a minha ira sobre ti.",
+          "insight": "Eu vos tomarei, um de uma cidade e dois de uma família, e vos trarei a Sião.",
+          "objective": "Voltar ao Senhor"
+        },
+        {
+          "ref": "Jeremias 4:1–8",
+          "title": "Circuncidai o coração",
+          "intro": "Se voltares, ó Israel, volta para mim; circuncidai o vosso coração.",
+          "insight": "Lavai o vosso coração da malícia, ó Jerusalém, para que sejais salvos.",
+          "objective": "Coração limpo"
+        },
+        {
+          "ref": "Jeremias 5:1–9",
+          "title": "Buscai um homem",
+          "intro": "Dai voltas pelas ruas de Jerusalém: se achardes um homem que pratique a justiça.",
+          "insight": "Como hei de perdoar-te por isto? Teus filhos me deixaram e juraram pelos que não são deuses.",
+          "objective": "Buscar quem pratique justiça"
+        },
+        {
+          "ref": "Jeremias 6:13–20",
+          "title": "Paz, paz",
+          "intro": "Desde o menor até o maior, todos se dão à avareza; curam a ferida do meu povo levianamente.",
+          "insight": "Assim diz o Senhor: ponde-vos nos caminhos e vede; e perguntai pelas veredas antigas.",
+          "objective": "Perguntar pelas veredas antigas"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Chamado e contenda",
+        "intro": "Revise o chamado, o noivado, a volta, o coração, o justo e as veredas.",
+        "insight": "Deus chama a voltar com coração limpo"
+      }
+    },
+    {
+      "title": "Templo e lágrimas · cap. 7–12",
+      "scenes": [
+        {
+          "ref": "Jeremias 7:1–11",
+          "title": "Templo de ladrões",
+          "intro": "Jeremias fica à porta da casa do Senhor: não confieis em palavras mentirosas.",
+          "insight": "É este casa, sobre o qual se invoca o meu nome, uma caverna de salteadores?",
+          "objective": "Não confiar em aparência"
+        },
+        {
+          "ref": "Jeremias 8:4–11",
+          "title": "Por que se afastam?",
+          "intro": "Por que se afastou este povo de Jerusalém com um afastamento contínuo?",
+          "insight": "Não se envergonham, nem sequer sabem envergonhar-se; por isso cairão.",
+          "objective": "Envergonhar-se do pecado"
+        },
+        {
+          "ref": "Jeremias 9:17–24",
+          "title": "Pranto e glória",
+          "intro": "Chamem as pranteadoras; o Senhor diz em que o homem deve se gloriar.",
+          "insight": "Nisto se glorie quem se gloriar: em me conhecer e saber que eu sou o Senhor.",
+          "objective": "Conhecer o Senhor"
+        },
+        {
+          "ref": "Jeremias 10:1–10",
+          "title": "Ídolos mudos",
+          "intro": "Não aprendais o caminho das nações; o ídolo é madeira e não pode falar.",
+          "insight": "Mas o Senhor é o Deus verdadeiro; ele é o Deus vivo e o Rei eterno.",
+          "objective": "O Deus vivo"
+        },
+        {
+          "ref": "Jeremias 11:1–10",
+          "title": "Ouvi os termos",
+          "intro": "Ouvi os termos desta aliança e cumpri-os; os pais não ouviram.",
+          "insight": "Tornaram às iniquidades de seus primeiros pais, que recusaram ouvir as minhas palavras.",
+          "objective": "Guardar a aliança"
+        },
+        {
+          "ref": "Jeremias 12:1–7",
+          "title": "Por que prosperam?",
+          "intro": "Justo serias, ó Senhor, ainda que eu pleiteasse contigo; por que prospera o caminho dos ímpios?",
+          "insight": "Se te fatigas correndo com peões, como poderás competir com cavalos?",
+          "objective": "Confiar no justo juízo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Templo e lágrimas",
+        "intro": "Revise o templo, o afastamento, a glória, os ídolos, a aliança e a pergunta.",
+        "insight": "Conhecer o Senhor vale mais que aparência e força"
+      }
+    },
+    {
+      "title": "Sinais e seca · cap. 13–18",
+      "scenes": [
+        {
+          "ref": "Jeremias 13:1–11",
+          "title": "O cinto de linho",
+          "intro": "Jeremias compra um cinto, o esconde no Eufrates e o acha apodrecido.",
+          "insight": "Assim farei apodrecer a soberba de Judá e a grande soberba de Jerusalém.",
+          "objective": "Soberba que apodrece"
+        },
+        {
+          "ref": "Jeremias 14:7–12",
+          "title": "Age por amor do teu nome",
+          "intro": "Embora as nossas iniquidades testifiquem contra nós, ó Senhor, age por amor do teu nome.",
+          "insight": "Não ores por este povo para bem; eu não os ouvirei quando clamarem.",
+          "objective": "Clamar pelo nome do Senhor"
+        },
+        {
+          "ref": "Jeremias 15:15–21",
+          "title": "A tua palavra foi achada",
+          "intro": "Jeremias lamenta; o Senhor promete restaurá-lo se ele voltar.",
+          "insight": "As tuas palavras foram achadas, e eu as comi; a tua palavra foi para mim o gozo.",
+          "objective": "Comer a palavra"
+        },
+        {
+          "ref": "Jeremias 16:14–21",
+          "title": "Novamente os trarei",
+          "intro": "Dias vêm em que não se dirá mais: vive o Senhor que tirou do Egito.",
+          "insight": "Portanto eis que os farei conhecer desta vez a minha mão e a minha força.",
+          "objective": "Conhecer a mão do Senhor"
+        },
+        {
+          "ref": "Jeremias 17:5–14",
+          "title": "Maldito e bendito",
+          "intro": "Maldito o homem que confia no homem; bendito o que confia no Senhor.",
+          "insight": "Bendito o homem que confia no Senhor, e cuja esperança é o Senhor.",
+          "objective": "Confiar no Senhor"
+        },
+        {
+          "ref": "Jeremias 18:1–12",
+          "title": "O oleiro",
+          "intro": "Jeremias vai à casa do oleiro e vê o vaso refeito da mesma massa.",
+          "insight": "Como o barro na mão do oleiro, assim sois vós na minha mão, ó casa de Israel.",
+          "objective": "Barro na mão de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sinais e seca",
+        "intro": "Revise o cinto, o clamor, a palavra, a volta, a confiança e o oleiro.",
+        "insight": "Deus molda e chama a confiar nele"
+      }
+    },
+    {
+      "title": "Vasos e pastores · cap. 19–24",
+      "scenes": [
+        {
+          "ref": "Jeremias 19:1–9",
+          "title": "O vaso quebrado",
+          "intro": "Jeremias compra um vaso de oleiro e o quebra perante os anciãos.",
+          "insight": "Assim quebrarei este povo e esta cidade, como se quebra o vaso do oleiro.",
+          "objective": "Juízo que quebra"
+        },
+        {
+          "ref": "Jeremias 20:7–13",
+          "title": "Seduziste-me",
+          "intro": "Jeremias confessa a luta interior: a palavra é um fogo no coração.",
+          "insight": "Há no meu coração como um fogo abrasador; estou cansado de sofrer e não posso mais.",
+          "objective": "A palavra que queima"
+        },
+        {
+          "ref": "Jeremias 21:1–10",
+          "title": "O caminho da vida",
+          "intro": "Zedequias pede a Jeremias; o Senhor oferece o caminho da vida e o da morte.",
+          "insight": "Eis que ponho diante de vós o caminho da vida e o caminho da morte.",
+          "objective": "Escolher o caminho da vida"
+        },
+        {
+          "ref": "Jeremias 22:1–9",
+          "title": "Fazei juízo",
+          "intro": "Desce à casa do rei de Judá e dize: fazei juízo e justiça.",
+          "insight": "Se deveras cumprirdes esta palavra, entrarão pelas portas desta casa reis.",
+          "objective": "Juízo e justiça na porta"
+        },
+        {
+          "ref": "Jeremias 23:1–8",
+          "title": "Pastores que destroem",
+          "intro": "Ai dos pastores que destroem e dispersam as ovelhas do meu pasto!",
+          "insight": "Eu mesmo recolherei o restante das minhas ovelhas e levantarei sobre elas pastores.",
+          "objective": "O Senhor pastoreia"
+        },
+        {
+          "ref": "Jeremias 24:1–10",
+          "title": "Dois cestos de figos",
+          "intro": "O Senhor mostra dois cestos de figos: bons e ruins, depois do cativeiro.",
+          "insight": "Como estes figos bons, assim conhecerei os do cativeiro de Judá para bem.",
+          "objective": "Figos bons no cativeiro"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Vasos e pastores",
+        "intro": "Revise o vaso, o fogo, os caminhos, a justiça, os pastores e os figos.",
+        "insight": "Deus juíza líderes e guarda um remanescente"
+      }
+    },
+    {
+      "title": "Cálice e jugo · cap. 25–30",
+      "scenes": [
+        {
+          "ref": "Jeremias 25:1–11",
+          "title": "Setenta anos",
+          "intro": "Durante vinte e três anos Jeremias falou, e não ouviram; virão setenta anos de cativeiro.",
+          "insight": "Toda esta terra será em desolação; e estas nações servirão ao rei de Babilônia setenta anos.",
+          "objective": "O tempo do juízo"
+        },
+        {
+          "ref": "Jeremias 26:1–9",
+          "title": "Não omitas palavra",
+          "intro": "No princípio do reinado de Jeoaquim, Jeremias deve falar no átrio do templo.",
+          "insight": "Talvez ouçam e se convertam; se não, farei desta casa como Siló.",
+          "objective": "Falar sem omitir"
+        },
+        {
+          "ref": "Jeremias 27:1–11",
+          "title": "O jugo de madeira",
+          "intro": "Jeremias põe um jugo no pescoço e envia palavra às nações: servi o rei de Babilônia.",
+          "insight": "A nação e o reino que não servirem Nabucodonosor, eu visitarei aquela nação.",
+          "objective": "Submeter-se ao juízo"
+        },
+        {
+          "ref": "Jeremias 28:1–9",
+          "title": "Hananias e a paz",
+          "intro": "Hananias quebra o jugo e anuncia paz em dois anos; Jeremias responde com cautela.",
+          "insight": "O profeta que profetizar paz será conhecido quando a sua palavra se cumprir.",
+          "objective": "Discernir a palavra"
+        },
+        {
+          "ref": "Jeremias 29:4–14",
+          "title": "Buscai a paz da cidade",
+          "intro": "Carta aos cativos: edificai casas, buscai a paz da cidade e orai por ela.",
+          "insight": "Eu bem sei os pensamentos que penso de vós; pensamentos de paz e não de mal.",
+          "objective": "Buscar a Deus de todo o coração"
+        },
+        {
+          "ref": "Jeremias 30:1–11",
+          "title": "Eu te restaurarei",
+          "intro": "Escreve num livro todas as palavras; eis que dias vêm, e eu restaurarei o meu povo.",
+          "insight": "Porque eu sou contigo, diz o Senhor, para te salvar; farei uma consumação em todas as nações.",
+          "objective": "Restauração prometida"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cálice e jugo",
+        "intro": "Revise os setenta anos, Siló, o jugo, Hananias, a carta e a restauração.",
+        "insight": "No juízo, Deus guarda planos de paz"
+      }
+    },
+    {
+      "title": "Nova aliança · cap. 31–36",
+      "scenes": [
+        {
+          "ref": "Jeremias 31:31–37",
+          "title": "Nova aliança",
+          "intro": "Eis que dias vêm, diz o Senhor, em que farei uma nova aliança com Israel e Judá.",
+          "insight": "Porei a minha lei no seu interior e a escreverei no seu coração.",
+          "objective": "Lei no coração"
+        },
+        {
+          "ref": "Jeremias 32:6–15",
+          "title": "O campo em Anatote",
+          "intro": "Jeremias compra um campo enquanto a cidade está sitiada, como sinal de esperança.",
+          "insight": "Ainda se comprarão casas, campos e vinhas nesta terra.",
+          "objective": "Esperança no sítio"
+        },
+        {
+          "ref": "Jeremias 33:1–11",
+          "title": "Clama a mim",
+          "intro": "Clama a mim, e responder-te-ei e anunciar-te-ei coisas grandes e firmes.",
+          "insight": "Trarei o cativeiro de Judá e de Israel e os edificarei como ao princípio.",
+          "objective": "Clamar e ser respondido"
+        },
+        {
+          "ref": "Jeremias 34:8–17",
+          "title": "A liberdade quebrada",
+          "intro": "Zedequias faz pacto de libertar os escravos hebreus e depois os toma de volta.",
+          "insight": "Não me obedecestes em proclamar a liberdade; eis que eu vos proclamo liberdade, diz o Senhor.",
+          "objective": "Cumprir a liberdade prometida"
+        },
+        {
+          "ref": "Jeremias 35:1–10",
+          "title": "Os recabitas",
+          "intro": "Os recabitas recusam vinho por causa do mandamento do pai; Judá não ouviu a Deus.",
+          "insight": "As palavras de Jonadabe foram guardadas; este povo não me obedeceu.",
+          "objective": "Obediência que ensina"
+        },
+        {
+          "ref": "Jeremias 36:1–10",
+          "title": "O rolo queimado",
+          "intro": "Baruque escreve as palavras de Jeremias e as lê; o rei queima o rolo.",
+          "insight": "Toma outro rolo e escreve nele todas as palavras primeiras que estavam no primeiro.",
+          "objective": "A palavra que permanece"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Nova aliança",
+        "intro": "Revise a nova aliança, o campo, o clamor, a liberdade, os recabitas e o rolo.",
+        "insight": "Deus escreve a lei no coração e guarda a sua palavra"
+      }
+    },
+    {
+      "title": "Cercado e caído · cap. 37–42",
+      "scenes": [
+        {
+          "ref": "Jeremias 37:1–10",
+          "title": "Não vos enganeis",
+          "intro": "Zedequias pede oração; o Senhor avisa: não vos enganeis, dizendo: os caldeus certamente se retirarão.",
+          "insight": "Ainda que ferísseis a todo o exército dos caldeus, levantariam cada um na sua tenda.",
+          "objective": "Não se enganar no juízo"
+        },
+        {
+          "ref": "Jeremias 38:4–13",
+          "title": "Na cisterna",
+          "intro": "Jeremias é lançado na cisterna; Ebede-Meleque o tira com trapos e cordas.",
+          "insight": "O rei manda tirar Jeremias da cisterna, antes que morra.",
+          "objective": "Livramento inesperado"
+        },
+        {
+          "ref": "Jeremias 39:1–10",
+          "title": "A queda da cidade",
+          "intro": "No nono ano de Zedequias, Nabucodonosor cerca Jerusalém; a cidade é tomada.",
+          "insight": "Os caldeus queimaram a casa do rei e as casas do povo e derrubaram os muros.",
+          "objective": "O juízo cumprido"
+        },
+        {
+          "ref": "Jeremias 40:1–6",
+          "title": "Jeremias livre",
+          "intro": "Nabuzaradã solta Jeremias e lhe dá escolha: ir a Babilônia ou ficar com Gedalias.",
+          "insight": "Eis que te solto hoje das cadeias que estavam sobre as tuas mãos.",
+          "objective": "Liberdade no meio da ruína"
+        },
+        {
+          "ref": "Jeremias 41:1–10",
+          "title": "O assassinato de Gedalias",
+          "intro": "Ismael mata Gedalias e muitos com ele em Mispa, depois da queda.",
+          "insight": "Ismael, filho de Netanias, feriu a Gedalias, a quem o rei de Babilônia havia nomeado.",
+          "objective": "Violência após a queda"
+        },
+        {
+          "ref": "Jeremias 42:1–12",
+          "title": "Pedi por nós",
+          "intro": "O remanescente pede a Jeremias que ore; promete ouvir a voz do Senhor.",
+          "insight": "Se de todo voltardes a habitar nesta terra, então vos edificarei e não vos destruirei.",
+          "objective": "Ouvir depois de pedir"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cercado e caído",
+        "intro": "Revise o engano, a cisterna, a queda, a liberdade, Gedalias e a oração.",
+        "insight": "Mesmo na queda, Deus guarda e fala ao remanescente"
+      }
+    },
+    {
+      "title": "Egito e nações · cap. 43–48",
+      "scenes": [
+        {
+          "ref": "Jeremias 43:1–7",
+          "title": "Não ouviram",
+          "intro": "Azarias e Joanã acusam Jeremias de mentira e levam o povo ao Egito.",
+          "insight": "Não obedeceram à voz do Senhor, para ficarem na terra de Judá.",
+          "objective": "Obedecer depois de ouvir"
+        },
+        {
+          "ref": "Jeremias 44:1–10",
+          "title": "No Egito ainda",
+          "intro": "A palavra vem aos judeus no Egito: por que fazeis este grande mal contra vós mesmos?",
+          "insight": "Não se humilharam até ao dia de hoje, nem temeram, nem andaram na minha lei.",
+          "objective": "Humilhar-se de verdade"
+        },
+        {
+          "ref": "Jeremias 46:1–10",
+          "title": "Sobre o Egito",
+          "intro": "A palavra do Senhor sobre as nações: o Egito sobe como o Nilo, mas o dia do Senhor chega.",
+          "insight": "Este é o dia do Senhor, Deus dos Exércitos, dia de vingança, para se vingar dos seus adversários.",
+          "objective": "O dia sobre o Egito",
+          "chapters": "45–46"
+        },
+        {
+          "ref": "Jeremias 47:1–7",
+          "title": "Sobre os filisteus",
+          "intro": "A palavra sobre os filisteus, antes que Faraó ferisse Gaza.",
+          "insight": "Ai! Espada do Senhor, até quando não te aquietarás? Volta para a tua bainha.",
+          "objective": "A espada do Senhor"
+        },
+        {
+          "ref": "Jeremias 48:1–10",
+          "title": "Sobre Moabe",
+          "intro": "Ai de Nebo, porque foi destruída! O louvor de Moabe já não é mais.",
+          "insight": "Maldito aquele que faz a obra do Senhor relaxadamente; e maldito o que retém a sua espada do sangue.",
+          "objective": "Não relaxar a obra"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Egito e nações",
+        "intro": "Revise a desobediência, o Egito, o dia, os filisteus e Moabe.",
+        "insight": "Desobedecer leva ao juízo; as nações também respondem a Deus"
+      }
+    },
+    {
+      "title": "Babilônia e o fim · cap. 49–52",
+      "scenes": [
+        {
+          "ref": "Jeremias 49:1–11",
+          "title": "Sobre Amom",
+          "intro": "Sobre os filhos de Amom: por isso os dias vêm, diz o Senhor, em que farei ouvir o alarido de guerra.",
+          "insight": "Depois disso farei voltar o cativeiro dos filhos de Amom, diz o Senhor.",
+          "objective": "Juízo e restauração"
+        },
+        {
+          "ref": "Jeremias 50:1–10",
+          "title": "Caiu Babilônia",
+          "intro": "Anunciai entre as nações: Babilônia é tomada; Bel ficou envergonhado.",
+          "insight": "Fugi do meio de Babilônia, e saí da terra dos caldeus, e sede como os bodes diante do rebanho.",
+          "objective": "Sair de Babilônia"
+        },
+        {
+          "ref": "Jeremias 51:5–15",
+          "title": "O Senhor não abandonou",
+          "intro": "Porque Israel não ficou viúvo, nem Judá, do seu Deus, do Senhor dos Exércitos.",
+          "insight": "O Senhor dos Exércitos jurou pela sua alma: Eu certamente te encherei de homens.",
+          "objective": "Deus não abandonou"
+        },
+        {
+          "ref": "Jeremias 51:45–53",
+          "title": "Sai do meio dela",
+          "intro": "Sai do meio dela, ó povo meu, e livre cada um a sua alma do ardor da ira do Senhor.",
+          "insight": "Babilônia cairá; o céu e a terra jubilarão sobre ela.",
+          "objective": "Sair e livrar a alma",
+          "chapters": "51–51"
+        },
+        {
+          "ref": "Jeremias 52:1–11",
+          "title": "Zedequias cego",
+          "intro": "Zedequias reinou onze anos; fugiu, foi preso, viu matar os filhos e foi cegado.",
+          "insight": "O rei de Babilônia matou os filhos de Zedequias; cegou os olhos de Zedequias e o levou a Babilônia.",
+          "objective": "O fim do rei rebelde"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Babilônia e o fim",
+        "intro": "Revise Amom, a queda de Babilônia, a fidelidade de Deus, a saída e Zedequias.",
+        "insight": "Deus juíza Babilônia e não abandona o seu povo"
+      }
+    }
+  ]
+}

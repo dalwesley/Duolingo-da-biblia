@@ -1,0 +1,5060 @@
+[
+  {
+    "id": "filipenses-cap-sem-flc-01-obra-comecada-01",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 1:6, aquele que iniciou a boa obra a aperfeiçoará até o Dia de Cristo Jesus.",
+    "prompt": "Em Filipenses 1:6, aquele que iniciou a boa obra a aperfeiçoará até o Dia de Cristo Jesus.",
+    "cue": "Em Filipenses 1:6, aquele que iniciou a boa obra a aperfeiçoará até o Dia de Cristo Jesus.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Deus completa a obra até o Dia.",
+    "feedbackWrong": {
+      "false": "Releia a convicção."
+    },
+    "hint": "Olhe o verbo aperfeiçoará.",
+    "learningObjective": "Observar a obra completada.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-01-obra-comecada-02",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 1:5, toque o objeto da colaboração.",
+    "prompt": "Em Filipenses 1:5, toque o objeto da colaboração.",
+    "cue": "Em Filipenses 1:5, toque o objeto da colaboração.",
+    "verseRef": "Filipenses 1:5",
+    "passageText": "Pela sua colaboração no evangelho, desde o primeiro dia até agora.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dia"
+      },
+      {
+        "id": "b",
+        "text": "evangelho"
+      },
+      {
+        "id": "c",
+        "text": "agora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "colaboração no evangelho",
+    "feedbackCorrect": "Colaboração no evangelho.",
+    "feedbackWrong": {
+      "a": "Dia marca o início.",
+      "c": "Agora marca a continuidade."
+    },
+    "hint": "Veja o complemento no.",
+    "learningObjective": "Identificar o evangelho.",
+    "evidence": [
+      "Filipenses 1:5"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-01-obra-comecada-03",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 1:11, de que devem estar cheios?",
+    "prompt": "Segundo Filipenses 1:11, de que devem estar cheios?",
+    "cue": "Segundo Filipenses 1:11, de que devem estar cheios?",
+    "verseRef": "Filipenses 1:11",
+    "passageText": "Cheios do fruto de justiça, que é por meio de Jesus Cristo, para a glória e louvor de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só memória sem oração"
+      },
+      {
+        "id": "b",
+        "text": "Amor sem conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "Fruto de justiça por meio de Jesus Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Algemas sem graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cheios do fruto de justiça, que é por meio de Jesus Cristo",
+    "feedbackCorrect": "Fruto de justiça em Cristo.",
+    "feedbackWrong": {
+      "a": "Há oração.",
+      "b": "Amor com conhecimento.",
+      "d": "Há graça."
+    },
+    "hint": "Leia o versículo.",
+    "learningObjective": "Ver o fruto de justiça.",
+    "evidence": [
+      "Filipenses 1:11"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-01-obra-comecada-04",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 1:5–6 na ordem do texto.",
+    "prompt": "Monte Filipenses 1:5–6 na ordem do texto.",
+    "cue": "Monte Filipenses 1:5–6 na ordem do texto.",
+    "verseRef": "Filipenses 1:5–6",
+    "passageText": "Pela sua colaboração no evangelho, desde o primeiro dia até agora. Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pela sua colaboração no evangelho, desde o primeiro dia até agora"
+      },
+      {
+        "id": "b",
+        "text": "Estou plenamente convicto de que aquele que iniciou a boa obra"
+      },
+      {
+        "id": "c",
+        "text": "a aperfeiçoará até o Dia de Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Colaboração, convicção e aperfeiçoamento.",
+    "feedbackWrong": {
+      "default": "Comece pela colaboração."
+    },
+    "hint": "Siga 1:5–6.",
+    "learningObjective": "Seguir a ordem da obra.",
+    "evidence": [
+      "Filipenses 1:5–6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-01-obra-comecada-05",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 1:6, complete: iniciou a boa ___.",
+    "prompt": "Em Filipenses 1:6, complete: iniciou a boa ___.",
+    "cue": "Em Filipenses 1:6, complete: iniciou a boa ___.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "template": "Estou plenamente convicto de que aquele que iniciou a boa ___ em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "memória"
+      },
+      {
+        "id": "c",
+        "text": "algema"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "iniciou a boa obra",
+    "feedbackCorrect": "Obra é o que Deus iniciou.",
+    "feedbackWrong": {
+      "b": "Memória em 1:3.",
+      "c": "Algemas aparecem em 1:7."
+    },
+    "hint": "Veja o objeto de iniciou.",
+    "learningObjective": "Lembrar a palavra obra.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-01-obra-comecada-06",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 1:6",
+      "text": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Paulo agradece a igreja colaboradora e confia que Deus completa a obra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obra só humana"
+      },
+      {
+        "id": "b",
+        "text": "Fim da colaboração"
+      },
+      {
+        "id": "c",
+        "text": "Deus aperfeiçoa a obra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Deus completa o que começou.",
+    "feedbackWrong": {
+      "a": "Ele iniciou.",
+      "b": "A colaboração continua."
+    },
+    "hint": "Ligue colaboração e obra.",
+    "learningObjective": "Ligar o contexto à obra.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-01-obra-comecada-01",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 1:5–6, a colaboração no evangelho sustenta a convicção de que Deus completa a obra.",
+    "prompt": "Em Filipenses 1:5–6, a colaboração no evangelho sustenta a convicção de que Deus completa a obra.",
+    "cue": "Em Filipenses 1:5–6, a colaboração no evangelho sustenta a convicção de que Deus completa a obra.",
+    "verseRef": "Filipenses 1:5–6",
+    "passageText": "Pela sua colaboração no evangelho, desde o primeiro dia até agora. Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Pela sua colaboração no evangelho",
+    "feedbackCorrect": "A colaboração liga-se à convicção da obra.",
+    "feedbackWrong": {
+      "false": "O Pela introduz a causa da alegria e da confiança."
+    },
+    "hint": "Olhe a ligação 1:5–6.",
+    "learningObjective": "Ver colaboração e obra.",
+    "evidence": [
+      "Filipenses 1:5–6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-01-obra-comecada-02",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+    "prompt": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+    "cue": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+    "verseRef": "Filipenses 1:5",
+    "passageText": "Pela sua colaboração no evangelho, desde o primeiro dia até agora.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desde"
+      },
+      {
+        "id": "b",
+        "text": "Pela"
+      },
+      {
+        "id": "c",
+        "text": "agora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pela sua colaboração no evangelho",
+    "feedbackCorrect": "Pela marca a causa.",
+    "feedbackWrong": {
+      "a": "Desde marca o início.",
+      "c": "Agora a continuidade."
+    },
+    "hint": "Procure a preposição inicial.",
+    "learningObjective": "Tocar o marcador de causa.",
+    "evidence": [
+      "Filipenses 1:5"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-01-obra-comecada-03",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação Filipenses 1:9–10 estabelece entre amor e aprovação?",
+    "prompt": "Qual relação Filipenses 1:9–10 estabelece entre amor e aprovação?",
+    "cue": "Qual relação Filipenses 1:9–10 estabelece entre amor e aprovação?",
+    "verseRef": "Filipenses 1:9–10",
+    "passageText": "E também faço esta oração: que o amor de vocês aumente mais e mais em pleno conhecimento e em toda a percepção. Para que aprovem as coisas excelentes, para que sejam sinceros e inculpáveis até o Dia de Cristo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor dispensa percepção"
+      },
+      {
+        "id": "b",
+        "text": "Aprovação anula o amor"
+      },
+      {
+        "id": "c",
+        "text": "Conhecimento exclui o Dia"
+      },
+      {
+        "id": "d",
+        "text": "Amor que cresce mira aprovar as coisas excelentes"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Para que aprovem as coisas excelentes",
+    "feedbackCorrect": "Amor com conhecimento mira a aprovação.",
+    "feedbackWrong": {
+      "a": "Há percepção.",
+      "b": "Amor aumenta.",
+      "c": "Há Dia de Cristo."
+    },
+    "hint": "Una 1:9 e 1:10.",
+    "learningObjective": "Relacionar amor e aprovação.",
+    "evidence": [
+      "Filipenses 1:9–10"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-01-obra-comecada-04",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ação de graças e oração com alegria"
+      },
+      {
+        "id": "b",
+        "text": "Convicção: Deus completa a obra"
+      },
+      {
+        "id": "c",
+        "text": "Oração pelo amor e fruto de justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Graças, obra e oração pelo amor.",
+    "feedbackWrong": {
+      "default": "Comece pelas graças."
+    },
+    "hint": "Pense no fluxo.",
+    "learningObjective": "Ordenar graças, obra e amor.",
+    "evidence": [
+      "Filipenses 1:3–11"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-01-obra-comecada-05",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 1:10, complete: ___ que aprovem as coisas excelentes.",
+    "prompt": "Em Filipenses 1:10, complete: ___ que aprovem as coisas excelentes.",
+    "cue": "Em Filipenses 1:10, complete: ___ que aprovem as coisas excelentes.",
+    "verseRef": "Filipenses 1:10",
+    "passageText": "Para que aprovem as coisas excelentes, para que sejam sinceros e inculpáveis até o Dia de Cristo;",
+    "template": "___ que aprovem as coisas excelentes, para que sejam sinceros e inculpáveis até o Dia de Cristo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois"
+      },
+      {
+        "id": "b",
+        "text": "Pela"
+      },
+      {
+        "id": "c",
+        "text": "Para"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Para que aprovem as coisas excelentes",
+    "feedbackCorrect": "Para que marca o propósito.",
+    "feedbackWrong": {
+      "a": "Pois aparece em 1:8.",
+      "b": "Pela é de 1:5."
+    },
+    "hint": "Veja a finalidade.",
+    "learningObjective": "Lembrar o marcador de propósito.",
+    "evidence": [
+      "Filipenses 1:10"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-01-obra-comecada-06",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+    "prompt": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+    "cue": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 1:6",
+      "text": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "1 Tessalonicenses 5:24",
+      "text": "Fiel é aquele que os chama, e ele também o realizará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só esforço humano"
+      },
+      {
+        "id": "b",
+        "text": "Fim da graça"
+      },
+      {
+        "id": "c",
+        "text": "Deus completa o que começa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Ambos confiam na fidelidade de Deus.",
+    "feedbackWrong": {
+      "a": "Deus iniciou.",
+      "b": "Há graça compartilhada."
+    },
+    "hint": "Compare quem completa.",
+    "learningObjective": "Ligar a fidelidade de Deus.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-01-obra-comecada-01",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo Filipenses 1:6, a boa obra depende só do esforço humano até o Dia.",
+    "prompt": "Segundo Filipenses 1:6, a boa obra depende só do esforço humano até o Dia.",
+    "cue": "Segundo Filipenses 1:6, a boa obra depende só do esforço humano até o Dia.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "aquele que iniciou a boa obra em vocês a aperfeiçoará",
+    "feedbackCorrect": "Quem inicia e aperfeiçoa é Deus.",
+    "feedbackWrong": {
+      "true": "O sujeito é aquele que iniciou."
+    },
+    "hint": "Leia o sujeito do verbo.",
+    "learningObjective": "Avaliar a leitura da obra.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-01-obra-comecada-02",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 1:6, toque o trecho que sustenta quem completa a obra.",
+    "prompt": "Em Filipenses 1:6, toque o trecho que sustenta quem completa a obra.",
+    "cue": "Em Filipenses 1:6, toque o trecho que sustenta quem completa a obra.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocês"
+      },
+      {
+        "id": "b",
+        "text": "aperfeiçoará"
+      },
+      {
+        "id": "c",
+        "text": "convicto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Aperfeiçoará sustenta a ação de Deus.",
+    "feedbackWrong": {
+      "a": "Vocês recebem a obra.",
+      "c": "Convicto é Paulo."
+    },
+    "hint": "Veja o verbo da conclusão.",
+    "learningObjective": "Tocar o trecho do aperfeiçoar.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-01-obra-comecada-03",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Qual leitura Filipenses 1:3–11 sustenta melhor?",
+    "prompt": "Qual leitura Filipenses 1:3–11 sustenta melhor?",
+    "cue": "Qual leitura Filipenses 1:3–11 sustenta melhor?",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça exclui colaboração"
+      },
+      {
+        "id": "b",
+        "text": "Deus completa a obra; o amor cresce até o fruto"
+      },
+      {
+        "id": "c",
+        "text": "A obra já acabou no primeiro dia"
+      },
+      {
+        "id": "d",
+        "text": "Amor sem conhecimento basta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Obra de Deus e amor que cresce.",
+    "feedbackWrong": {
+      "a": "Há colaboração e graça.",
+      "c": "Colaboração continua.",
+      "d": "Amor com conhecimento."
+    },
+    "hint": "Una obra e amor.",
+    "learningObjective": "Escolher a interpretação.",
+    "evidence": [
+      "Filipenses 1:3–11"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-01-obra-comecada-04",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene a lógica até o fruto.",
+    "prompt": "Ordene a lógica até o fruto.",
+    "cue": "Ordene a lógica até o fruto.",
+    "verseRef": "Filipenses 1:11",
+    "passageText": "Cheios do fruto de justiça, que é por meio de Jesus Cristo, para a glória e louvor de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus aperfeiçoa a boa obra"
+      },
+      {
+        "id": "b",
+        "text": "Amor cresce em conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "Fruto de justiça para glória de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cheios do fruto de justiça",
+    "feedbackCorrect": "Obra, amor e fruto.",
+    "feedbackWrong": {
+      "default": "O fruto fecha."
+    },
+    "hint": "Siga até 1:11.",
+    "learningObjective": "Encadear obra, amor e fruto.",
+    "evidence": [
+      "Filipenses 1:6–11"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-01-obra-comecada-05",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 1:9, complete: que o ___ de vocês aumente mais e mais.",
+    "prompt": "Em Filipenses 1:9, complete: que o ___ de vocês aumente mais e mais.",
+    "cue": "Em Filipenses 1:9, complete: que o ___ de vocês aumente mais e mais.",
+    "verseRef": "Filipenses 1:9",
+    "passageText": "E também faço esta oração: que o amor de vocês aumente mais e mais em pleno conhecimento e em toda a percepção.",
+    "template": "E também faço esta oração: que o ___ de vocês aumente mais e mais em pleno conhecimento e em toda a percepção.",
+    "options": [
+      {
+        "id": "a",
+        "text": "algema"
+      },
+      {
+        "id": "b",
+        "text": "evangelho"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que o amor de vocês aumente mais e mais",
+    "feedbackCorrect": "Amor é o que deve aumentar em conhecimento.",
+    "feedbackWrong": {
+      "a": "Algemas aparecem em 1:7.",
+      "b": "Evangelho é o campo da colaboração."
+    },
+    "hint": "Veja o sujeito do aumente.",
+    "learningObjective": "Lembrar o termo amor.",
+    "evidence": [
+      "Filipenses 1:9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-01-obra-comecada-06",
+    "trail": "filipenses-cap",
+    "section": "flc-01-obra-comecada",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 1:6 a Hebreus 12:2?",
+    "prompt": "O que liga Filipenses 1:6 a Hebreus 12:2?",
+    "cue": "O que liga Filipenses 1:6 a Hebreus 12:2?",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 1:6",
+      "text": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Hebreus 12:2",
+      "text": "Olhando firmemente para Jesus, o autor e consumador da fé, que, pela alegria que lhe estava proposta, suportou a cruz, não fazendo caso da ignomínia, e está assentado à direita do trono de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus leva a obra ao fim"
+      },
+      {
+        "id": "b",
+        "text": "Fim da oração"
+      },
+      {
+        "id": "c",
+        "text": "Só memória humana"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Ambos apontam quem leva a fé ao fim.",
+    "feedbackWrong": {
+      "b": "Há memória com graças.",
+      "c": "Há oração contínua."
+    },
+    "hint": "Compare quem completa.",
+    "learningObjective": "Ligar o consumar da obra.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-02-resplandecer-como-luzes-01",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 2:15, resplandeceis como luzes no mundo.",
+    "prompt": "Em Filipenses 2:15, resplandeceis como luzes no mundo.",
+    "cue": "Em Filipenses 2:15, resplandeceis como luzes no mundo.",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "São luzes no mundo.",
+    "feedbackWrong": {
+      "false": "Releia o fim do versículo."
+    },
+    "hint": "Olhe a comparação.",
+    "learningObjective": "Observar as luzes.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-02-resplandecer-como-luzes-02",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 2:14, toque o que não deve haver.",
+    "prompt": "Em Filipenses 2:14, toque o que não deve haver.",
+    "cue": "Em Filipenses 2:14, toque o que não deve haver.",
+    "verseRef": "Filipenses 2:14",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas;",
+    "options": [
+      {
+        "id": "a",
+        "text": "murmurações"
+      },
+      {
+        "id": "b",
+        "text": "Fazei"
+      },
+      {
+        "id": "c",
+        "text": "coisas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem murmurações nem contendas",
+    "feedbackCorrect": "Sem murmurações nem contendas.",
+    "feedbackWrong": {
+      "b": "Fazei é o mando.",
+      "c": "Coisas é o objeto de Fazei."
+    },
+    "hint": "Veja o que é excluído.",
+    "learningObjective": "Identificar murmurações.",
+    "evidence": [
+      "Filipenses 2:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-02-resplandecer-como-luzes-03",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 2:13, quem atua neles?",
+    "prompt": "Segundo Filipenses 2:13, quem atua neles?",
+    "cue": "Segundo Filipenses 2:13, quem atua neles?",
+    "verseRef": "Filipenses 2:13",
+    "passageText": "Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só a murmuração"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "Só a ausência de Paulo"
+      },
+      {
+        "id": "d",
+        "text": "Só a geração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus é quem atua em vós",
+    "feedbackCorrect": "Deus atua para o querer e o realizar.",
+    "feedbackWrong": {
+      "a": "Murmuração é proibida.",
+      "c": "Há ausência, mas Deus atua.",
+      "d": "A geração é o meio."
+    },
+    "hint": "Leia o sujeito.",
+    "learningObjective": "Ver quem atua.",
+    "evidence": [
+      "Filipenses 2:13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-02-resplandecer-como-luzes-04",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 2:14–15 na ordem do texto.",
+    "prompt": "Monte Filipenses 2:14–15 na ordem do texto.",
+    "cue": "Monte Filipenses 2:14–15 na ordem do texto.",
+    "verseRef": "Filipenses 2:14–15",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas; Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fazei todas as coisas sem murmurações nem contendas"
+      },
+      {
+        "id": "b",
+        "text": "Para que sejais irrepreensíveis e sinceros"
+      },
+      {
+        "id": "c",
+        "text": "resplandeceis como luzes no mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Sem murmuração, irrepreensíveis e luzes.",
+    "feedbackWrong": {
+      "default": "Comece pelo mando."
+    },
+    "hint": "Siga 2:14–15.",
+    "learningObjective": "Seguir até as luzes.",
+    "evidence": [
+      "Filipenses 2:14–15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-02-resplandecer-como-luzes-05",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 2:15, complete: como ___ no mundo.",
+    "prompt": "Em Filipenses 2:15, complete: como ___ no mundo.",
+    "cue": "Em Filipenses 2:15, complete: como ___ no mundo.",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "template": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como ___ no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "murmurações"
+      },
+      {
+        "id": "b",
+        "text": "contendas"
+      },
+      {
+        "id": "c",
+        "text": "luzes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como luzes no mundo",
+    "feedbackCorrect": "Luzes é a imagem.",
+    "feedbackWrong": {
+      "a": "Murmurações são proibidas.",
+      "b": "Contendas também."
+    },
+    "hint": "Veja a comparação.",
+    "learningObjective": "Lembrar luzes.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-02-resplandecer-como-luzes-06",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 2:15 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:15 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:15 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "passageA": {
+      "ref": "Filipenses 2:15",
+      "text": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus atua; a igreja brilha sem murmuração, retendo a palavra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Murmurações como brilho"
+      },
+      {
+        "id": "b",
+        "text": "Palavra abandonada"
+      },
+      {
+        "id": "c",
+        "text": "Luzes no mundo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "O brilho responde ao agir de Deus.",
+    "feedbackWrong": {
+      "a": "Murmuração é excluída.",
+      "b": "Há palavra da vida."
+    },
+    "hint": "Ligue luzes e contexto.",
+    "learningObjective": "Ligar o contexto às luzes.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-02-resplandecer-como-luzes-01",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 2:13, o Porque mostra que desenvolver a salvação exclui a ação de Deus.",
+    "prompt": "Em Filipenses 2:13, o Porque mostra que desenvolver a salvação exclui a ação de Deus.",
+    "cue": "Em Filipenses 2:13, o Porque mostra que desenvolver a salvação exclui a ação de Deus.",
+    "verseRef": "Filipenses 2:13",
+    "passageText": "Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Deus é quem atua em vós",
+    "feedbackCorrect": "O Porque explica: Deus atua.",
+    "feedbackWrong": {
+      "true": "Deus atua no querer e realizar."
+    },
+    "hint": "Leia o Porque.",
+    "learningObjective": "Ver a causa divina.",
+    "evidence": [
+      "Filipenses 2:13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-02-resplandecer-como-luzes-02",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:13, toque a palavra que marca a causa.",
+    "prompt": "Em Filipenses 2:13, toque a palavra que marca a causa.",
+    "cue": "Em Filipenses 2:13, toque a palavra que marca a causa.",
+    "verseRef": "Filipenses 2:13",
+    "passageText": "Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "vontade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porque Deus é quem atua em vós",
+    "feedbackCorrect": "Porque marca a causa.",
+    "feedbackWrong": {
+      "a": "Deus é quem atua.",
+      "c": "Vontade é a medida."
+    },
+    "hint": "Procure a conjunção inicial.",
+    "learningObjective": "Tocar o marcador de causa.",
+    "evidence": [
+      "Filipenses 2:13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-02-resplandecer-como-luzes-03",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação Filipenses 2:12–15 estabelece entre Deus atuar e ser luz?",
+    "prompt": "Qual relação Filipenses 2:12–15 estabelece entre Deus atuar e ser luz?",
+    "cue": "Qual relação Filipenses 2:12–15 estabelece entre Deus atuar e ser luz?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus atua; eles desenvolvem sem murmuração e brilham"
+      },
+      {
+        "id": "b",
+        "text": "Murmuração produz luz"
+      },
+      {
+        "id": "c",
+        "text": "Deus atua só na presença de Paulo"
+      },
+      {
+        "id": "d",
+        "text": "Luz dispensa temor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Atuação divina e brilho sem murmuração.",
+    "feedbackWrong": {
+      "b": "Murmuração é excluída.",
+      "c": "Há ausência e presença.",
+      "d": "Há temor e tremor."
+    },
+    "hint": "Una 2:13 e 2:15.",
+    "learningObjective": "Relacionar atuação e luz.",
+    "evidence": [
+      "Filipenses 2:12–15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-02-resplandecer-como-luzes-04",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "Filipenses 2:16",
+    "passageText": "Preservando a palavra da vida, para que, no dia de Cristo, eu me glorie de que não corri nem me esforcei em vão,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desenvolver a salvação; Deus atua"
+      },
+      {
+        "id": "b",
+        "text": "Sem murmurações nem contendas"
+      },
+      {
+        "id": "c",
+        "text": "Luzes que preservam a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Preservando a palavra da vida",
+    "feedbackCorrect": "Salvação, sem murmuração e luzes.",
+    "feedbackWrong": {
+      "default": "Comece pelo desenvolver."
+    },
+    "hint": "Pense no fluxo.",
+    "learningObjective": "Ordenar salvação, mando e luzes.",
+    "evidence": [
+      "Filipenses 2:12–16"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-02-resplandecer-como-luzes-05",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 2:12, complete: desenvolvei a vossa ___.",
+    "prompt": "Em Filipenses 2:12, complete: desenvolvei a vossa ___.",
+    "cue": "Em Filipenses 2:12, complete: desenvolvei a vossa ___.",
+    "verseRef": "Filipenses 2:12",
+    "passageText": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa salvação com temor e tremor;",
+    "template": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa ___ com temor e tremor;",
+    "options": [
+      {
+        "id": "a",
+        "text": "geração"
+      },
+      {
+        "id": "b",
+        "text": "murmuração"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "desenvolvei a vossa salvação",
+    "feedbackCorrect": "Salvação é o objeto.",
+    "feedbackWrong": {
+      "a": "Geração é o meio.",
+      "b": "Murmuração é proibida."
+    },
+    "hint": "Veja o objeto de desenvolvei.",
+    "learningObjective": "Lembrar salvação.",
+    "evidence": [
+      "Filipenses 2:12"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-02-resplandecer-como-luzes-06",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 2:15 a Mateus 5:14?",
+    "prompt": "O que liga Filipenses 2:15 a Mateus 5:14?",
+    "cue": "O que liga Filipenses 2:15 a Mateus 5:14?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "passageA": {
+      "ref": "Filipenses 2:15",
+      "text": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo."
+    },
+    "passageB": {
+      "ref": "Mateus 5:14",
+      "text": "Vocês são a luz do mundo. Não se pode ocultar a cidade que está situada sobre um monte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Libação de Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Murmurações"
+      },
+      {
+        "id": "c",
+        "text": "Luz no mundo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Ambos chamam o povo de luz.",
+    "feedbackWrong": {
+      "a": "Libação é de Paulo.",
+      "b": "Murmuração é excluída."
+    },
+    "hint": "Compare a luz.",
+    "learningObjective": "Ligar a luz do mundo.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-02-resplandecer-como-luzes-01",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo Filipenses 2:13–15, murmurações são compatíveis com resplandecer como luzes.",
+    "prompt": "Segundo Filipenses 2:13–15, murmurações são compatíveis com resplandecer como luzes.",
+    "cue": "Segundo Filipenses 2:13–15, murmurações são compatíveis com resplandecer como luzes.",
+    "verseRef": "Filipenses 2:14",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sem murmurações nem contendas",
+    "feedbackCorrect": "Sem murmurações para serem luzes.",
+    "feedbackWrong": {
+      "true": "O caminho das luzes exclui murmuração."
+    },
+    "hint": "Una 2:14 e 2:15.",
+    "learningObjective": "Avaliar a leitura das luzes.",
+    "evidence": [
+      "Filipenses 2:13–15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-02-resplandecer-como-luzes-02",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:16, toque o trecho que sustenta o que preservar.",
+    "prompt": "Em Filipenses 2:16, toque o trecho que sustenta o que preservar.",
+    "cue": "Em Filipenses 2:16, toque o trecho que sustenta o que preservar.",
+    "verseRef": "Filipenses 2:16",
+    "passageText": "Preservando a palavra da vida, para que, no dia de Cristo, eu me glorie de que não corri nem me esforcei em vão,",
+    "options": [
+      {
+        "id": "a",
+        "text": "dia de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "corri"
+      },
+      {
+        "id": "c",
+        "text": "palavra da vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Preservando a palavra da vida",
+    "feedbackCorrect": "Palavra da vida sustenta o que preservar.",
+    "feedbackWrong": {
+      "a": "Dia é o horizonte.",
+      "b": "Corri é de Paulo."
+    },
+    "hint": "Veja o objeto de Preservando.",
+    "learningObjective": "Tocar a palavra da vida.",
+    "evidence": [
+      "Filipenses 2:16"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-02-resplandecer-como-luzes-03",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Qual leitura Filipenses 2:12–18 sustenta melhor?",
+    "prompt": "Qual leitura Filipenses 2:12–18 sustenta melhor?",
+    "cue": "Qual leitura Filipenses 2:12–18 sustenta melhor?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus atua; brilham sem murmuração, retendo a palavra"
+      },
+      {
+        "id": "b",
+        "text": "Luz com contendas"
+      },
+      {
+        "id": "c",
+        "text": "Salvação sem temor"
+      },
+      {
+        "id": "d",
+        "text": "Alegria sem serviço"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Atuação, luz e palavra.",
+    "feedbackWrong": {
+      "b": "Sem contendas.",
+      "c": "Há temor.",
+      "d": "Há alegria no serviço."
+    },
+    "hint": "Una o fio.",
+    "learningObjective": "Escolher a interpretação.",
+    "evidence": [
+      "Filipenses 2:12–18"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-02-resplandecer-como-luzes-04",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene a lógica até a palavra.",
+    "prompt": "Ordene a lógica até a palavra.",
+    "cue": "Ordene a lógica até a palavra.",
+    "verseRef": "Filipenses 2:16",
+    "passageText": "Preservando a palavra da vida, para que, no dia de Cristo, eu me glorie de que não corri nem me esforcei em vão,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus atua no querer e realizar"
+      },
+      {
+        "id": "b",
+        "text": "Fazer tudo sem murmuração"
+      },
+      {
+        "id": "c",
+        "text": "Resplandecer preservando a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Preservando a palavra da vida",
+    "feedbackCorrect": "Atuação, mando e palavra.",
+    "feedbackWrong": {
+      "default": "A palavra fecha."
+    },
+    "hint": "Siga até 2:16.",
+    "learningObjective": "Encadear atuação, mando e palavra.",
+    "evidence": [
+      "Filipenses 2:12–16"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-02-resplandecer-como-luzes-05",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:16, complete: Preservando a ___ da vida.",
+    "prompt": "Em Filipenses 2:16, complete: Preservando a ___ da vida.",
+    "cue": "Em Filipenses 2:16, complete: Preservando a ___ da vida.",
+    "verseRef": "Filipenses 2:16",
+    "passageText": "Preservando a palavra da vida, para que, no dia de Cristo, eu me glorie de que não corri nem me esforcei em vão,",
+    "template": "Preservando a ___ da vida, para que, no dia de Cristo, eu me glorie de que não corri nem me esforcei em vão,",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "murmurações"
+      },
+      {
+        "id": "c",
+        "text": "contendas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Preservando a palavra da vida",
+    "feedbackCorrect": "Palavra da vida é o que preservar.",
+    "feedbackWrong": {
+      "b": "Murmurações são excluídas.",
+      "c": "Contendas também."
+    },
+    "hint": "Veja o objeto de Preservando.",
+    "learningObjective": "Lembrar a palavra da vida.",
+    "evidence": [
+      "Filipenses 2:16"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-02-resplandecer-como-luzes-06",
+    "trail": "filipenses-cap",
+    "section": "flc-02-resplandecer-como-luzes",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 2:15 a 1 Pedro 2:12?",
+    "prompt": "O que liga Filipenses 2:15 a 1 Pedro 2:12?",
+    "cue": "O que liga Filipenses 2:15 a 1 Pedro 2:12?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "passageA": {
+      "ref": "Filipenses 2:15",
+      "text": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo."
+    },
+    "passageB": {
+      "ref": "1 Pedro 2:12",
+      "text": "Mantenham um comportamento exemplar entre os gentios, para que, naquilo que falam contra vocês como se fossem malfeitores, glorifiquem a Deus no dia da visitação, observando as boas obras que realizarem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Murmurações"
+      },
+      {
+        "id": "b",
+        "text": "Brilhar entre os povos"
+      },
+      {
+        "id": "c",
+        "text": "Libação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Ambos apontam testemunho visível no mundo.",
+    "feedbackWrong": {
+      "a": "Murmuração é excluída.",
+      "c": "Libação é de Paulo."
+    },
+    "hint": "Compare o testemunho.",
+    "learningObjective": "Ligar o brilho entre os povos.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-03-tudo-como-perda-01",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+    "prompt": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+    "cue": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "considerei perda por amor a Cristo",
+    "feedbackCorrect": "Lucro virou perda por Cristo.",
+    "feedbackWrong": {
+      "false": "Releia o versículo."
+    },
+    "hint": "Olhe o contraste lucro/perda.",
+    "learningObjective": "Observar a perda por Cristo.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-03-tudo-como-perda-02",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 3:14, toque para onde ele prossegue.",
+    "prompt": "Em Filipenses 3:14, toque para onde ele prossegue.",
+    "cue": "Em Filipenses 3:14, toque para onde ele prossegue.",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vocação"
+      },
+      {
+        "id": "b",
+        "text": "alvo"
+      },
+      {
+        "id": "c",
+        "text": "prêmio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "prossigo para o alvo",
+    "feedbackCorrect": "Para o alvo.",
+    "feedbackWrong": {
+      "a": "Vocação nomeia o prêmio.",
+      "c": "Prêmio qualifica o alvo."
+    },
+    "hint": "Veja o complemento de prossigo para.",
+    "learningObjective": "Identificar o alvo.",
+    "evidence": [
+      "Filipenses 3:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-03-tudo-como-perda-03",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 3:9, que justiça ele quer?",
+    "prompt": "Segundo Filipenses 3:9, que justiça ele quer?",
+    "cue": "Segundo Filipenses 3:9, que justiça ele quer?",
+    "verseRef": "Filipenses 3:9",
+    "passageText": "e seja encontrado nele, não tendo a minha própria justiça que provém da lei, mas aquela que é mediante a fé em Cristo, a justiça que vem de Deus, baseada na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A do lucro humano"
+      },
+      {
+        "id": "b",
+        "text": "A do refugo"
+      },
+      {
+        "id": "c",
+        "text": "A própria da lei"
+      },
+      {
+        "id": "d",
+        "text": "A que vem de Deus, baseada na fé"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "a justiça que vem de Deus, baseada na fé",
+    "feedbackCorrect": "Justiça de Deus pela fé.",
+    "feedbackWrong": {
+      "a": "Lucro virou perda.",
+      "b": "Refugo é o que perdeu.",
+      "c": "Não a da lei."
+    },
+    "hint": "Leia o contraste.",
+    "learningObjective": "Ver a justiça pela fé.",
+    "evidence": [
+      "Filipenses 3:9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-03-tudo-como-perda-04",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 3:7–8 na ordem do texto.",
+    "prompt": "Monte Filipenses 3:7–8 na ordem do texto.",
+    "cue": "Monte Filipenses 3:7–8 na ordem do texto.",
+    "verseRef": "Filipenses 3:7–8",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo. Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o que para mim era lucro, considerei perda por amor a Cristo"
+      },
+      {
+        "id": "b",
+        "text": "considero como perda todas as coisas"
+      },
+      {
+        "id": "c",
+        "text": "para ganhar a Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Perda, todas as coisas e ganhar Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelo lucro virado perda."
+    },
+    "hint": "Siga 3:7–8.",
+    "learningObjective": "Seguir até ganhar Cristo.",
+    "evidence": [
+      "Filipenses 3:7–8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-03-tudo-como-perda-05",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 3:7, complete: considerei ___ por amor a Cristo.",
+    "prompt": "Em Filipenses 3:7, complete: considerei ___ por amor a Cristo.",
+    "cue": "Em Filipenses 3:7, complete: considerei ___ por amor a Cristo.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "template": "Mas o que para mim era lucro, considerei ___ por amor a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "lucro"
+      },
+      {
+        "id": "c",
+        "text": "perda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "considerei perda por amor a Cristo",
+    "feedbackCorrect": "Perda é o novo cálculo.",
+    "feedbackWrong": {
+      "a": "Lei aparece em 3:9.",
+      "b": "Lucro era o passado."
+    },
+    "hint": "Veja o objeto de considerei.",
+    "learningObjective": "Lembrar perda.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-03-tudo-como-perda-06",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 3:8 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 3:8 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 3:8 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "passageA": {
+      "ref": "Filipenses 3:8",
+      "text": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Conhecer Cristo vale mais que todo lucro; Paulo prossegue ao alvo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo perda para ganhar Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Perfeição já alcançada"
+      },
+      {
+        "id": "c",
+        "text": "Lucro como meta final"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Ganhar Cristo é o alvo do cálculo.",
+    "feedbackWrong": {
+      "b": "Ainda não é perfeito.",
+      "c": "Lucro virou perda."
+    },
+    "hint": "Ligue perda e ganho.",
+    "learningObjective": "Ligar o contexto a ganhar Cristo.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-03-tudo-como-perda-01",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 3:7, o Mas mantém o lucro humano como meta final.",
+    "prompt": "Em Filipenses 3:7, o Mas mantém o lucro humano como meta final.",
+    "cue": "Em Filipenses 3:7, o Mas mantém o lucro humano como meta final.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "considerei perda por amor a Cristo",
+    "feedbackCorrect": "O Mas vira lucro em perda.",
+    "feedbackWrong": {
+      "true": "A meta passa a ser Cristo."
+    },
+    "hint": "Leia o Mas.",
+    "learningObjective": "Ver o contraste.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-03-tudo-como-perda-02",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+    "prompt": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+    "cue": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lucro"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "Mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Mas o que para mim era lucro",
+    "feedbackCorrect": "O Mas marca a virada.",
+    "feedbackWrong": {
+      "a": "Lucro é o passado.",
+      "b": "Amor a Cristo motiva."
+    },
+    "hint": "Procure a conjunção inicial.",
+    "learningObjective": "Tocar o contraste.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-03-tudo-como-perda-03",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+    "prompt": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+    "cue": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O prêmio já foi totalmente tomado"
+      },
+      {
+        "id": "b",
+        "text": "Perfeição dispensa o alvo"
+      },
+      {
+        "id": "c",
+        "text": "Ainda não perfeito; por isso prossigo ao alvo"
+      },
+      {
+        "id": "d",
+        "text": "Esquecer o futuro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "prossigo para o alvo",
+    "feedbackCorrect": "Não perfeito; prossigo.",
+    "feedbackWrong": {
+      "a": "Ainda não alcançou.",
+      "b": "Há prosseguir.",
+      "d": "Avança para o que está diante."
+    },
+    "hint": "Una 3:12 e 3:14.",
+    "learningObjective": "Relacionar perfeição e alvo.",
+    "evidence": [
+      "Filipenses 3:12–14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-03-tudo-como-perda-04",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lucro virado perda por Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Justiça pela fé; conhecer Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Alvo e prêmio da vocação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "prossigo para o alvo",
+    "feedbackCorrect": "Perda, justiça e alvo.",
+    "feedbackWrong": {
+      "default": "Comece pela perda."
+    },
+    "hint": "Pense no fluxo.",
+    "learningObjective": "Ordenar perda, fé e alvo.",
+    "evidence": [
+      "Filipenses 3:7–8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-03-tudo-como-perda-05",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 3:8, complete: para ___ a Cristo.",
+    "prompt": "Em Filipenses 3:8, complete: para ___ a Cristo.",
+    "cue": "Em Filipenses 3:8, complete: para ___ a Cristo.",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "template": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ___ a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ganhar"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "lucro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Ganhar Cristo é o fim da perda.",
+    "feedbackWrong": {
+      "b": "Lei aparece em 3:9.",
+      "c": "Lucro era o passado."
+    },
+    "hint": "Veja o verbo do propósito final.",
+    "learningObjective": "Lembrar o verbo ganhar.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-03-tudo-como-perda-06",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 3:9 a Romanos 3:22?",
+    "prompt": "O que liga Filipenses 3:9 a Romanos 3:22?",
+    "cue": "O que liga Filipenses 3:9 a Romanos 3:22?",
+    "verseRef": "Filipenses 3:9",
+    "passageText": "e seja encontrado nele, não tendo a minha própria justiça que provém da lei, mas aquela que é mediante a fé em Cristo, a justiça que vem de Deus, baseada na fé.",
+    "passageA": {
+      "ref": "Filipenses 3:9",
+      "text": "e seja encontrado nele, não tendo a minha própria justiça que provém da lei, mas aquela que é mediante a fé em Cristo, a justiça que vem de Deus, baseada na fé."
+    },
+    "passageB": {
+      "ref": "Romanos 3:22",
+      "text": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lucro da lei"
+      },
+      {
+        "id": "b",
+        "text": "Justiça pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Perfeição já plena"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a justiça que vem de Deus, baseada na fé",
+    "feedbackCorrect": "Ambos apontam justiça pela fé.",
+    "feedbackWrong": {
+      "a": "Lei não justifica.",
+      "c": "Ainda prossigue."
+    },
+    "hint": "Compare a justiça.",
+    "learningObjective": "Ligar a justiça pela fé.",
+    "evidence": [
+      "Filipenses 3:9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-03-tudo-como-perda-01",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo Filipenses 3:12, Paulo já atingiu a perfeição e parou.",
+    "prompt": "Segundo Filipenses 3:12, Paulo já atingiu a perfeição e parou.",
+    "cue": "Segundo Filipenses 3:12, Paulo já atingiu a perfeição e parou.",
+    "verseRef": "Filipenses 3:12",
+    "passageText": "Não que eu já tenha recebido ou que já tenha atingido a perfeição; mas prossigo para conquistar aquilo para o que também fui conquistado por Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não que eu já tenha recebido ou que já tenha atingido a perfeição",
+    "feedbackCorrect": "Ele nega a perfeição alcançada e prossegue.",
+    "feedbackWrong": {
+      "true": "O texto nega a chegada plena."
+    },
+    "hint": "Leia a negação.",
+    "learningObjective": "Avaliar a leitura da perfeição.",
+    "evidence": [
+      "Filipenses 3:12"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-03-tudo-como-perda-02",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 3:12, toque o trecho que sustenta a ação contínua.",
+    "prompt": "Em Filipenses 3:12, toque o trecho que sustenta a ação contínua.",
+    "cue": "Em Filipenses 3:12, toque o trecho que sustenta a ação contínua.",
+    "verseRef": "Filipenses 3:12",
+    "passageText": "Não que eu já tenha recebido ou que já tenha atingido a perfeição; mas prossigo para conquistar aquilo para o que também fui conquistado por Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "recebido"
+      },
+      {
+        "id": "b",
+        "text": "perfeição"
+      },
+      {
+        "id": "c",
+        "text": "prossigo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas prossigo para conquistar",
+    "feedbackCorrect": "Prossigo sustenta a continuidade.",
+    "feedbackWrong": {
+      "a": "Recebido é o que nega.",
+      "b": "Perfeição é o que não atingiu."
+    },
+    "hint": "Veja o verbo depois de mas.",
+    "learningObjective": "Tocar o prosseguir.",
+    "evidence": [
+      "Filipenses 3:12"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-03-tudo-como-perda-03",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Qual leitura Filipenses 3:7–14 sustenta melhor?",
+    "prompt": "Qual leitura Filipenses 3:7–14 sustenta melhor?",
+    "cue": "Qual leitura Filipenses 3:7–14 sustenta melhor?",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo vale mais; prossigo ao prêmio pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Lucro humano é o alvo"
+      },
+      {
+        "id": "c",
+        "text": "Justiça só pela lei"
+      },
+      {
+        "id": "d",
+        "text": "Perfeição já plena"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Perda, fé e alvo.",
+    "feedbackWrong": {
+      "b": "Lucro virou perda.",
+      "c": "Justiça pela fé.",
+      "d": "Ainda não perfeito."
+    },
+    "hint": "Una perda e alvo.",
+    "learningObjective": "Escolher a interpretação.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-03-tudo-como-perda-04",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene a lógica até o prêmio.",
+    "prompt": "Ordene a lógica até o prêmio.",
+    "cue": "Ordene a lógica até o prêmio.",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Contar tudo como perda por Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ser achado na justiça que vem da fé"
+      },
+      {
+        "id": "c",
+        "text": "Correr ao prêmio da vocação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Perda, fé e prêmio.",
+    "feedbackWrong": {
+      "default": "O prêmio fecha."
+    },
+    "hint": "Siga o arco.",
+    "learningObjective": "Encadear perda, fé e prêmio.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-03-tudo-como-perda-05",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 3:8, complete: as considero como ___.",
+    "prompt": "Em Filipenses 3:8, complete: as considero como ___.",
+    "cue": "Em Filipenses 3:8, complete: as considero como ___.",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "template": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como ___, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "refugo"
+      },
+      {
+        "id": "b",
+        "text": "alvo"
+      },
+      {
+        "id": "c",
+        "text": "prêmio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as considero como refugo",
+    "feedbackCorrect": "Refugo nomeia o valor do antigo lucro.",
+    "feedbackWrong": {
+      "b": "Alvo é a meta.",
+      "c": "Prêmio é o que busca."
+    },
+    "hint": "Veja como ele nomeia o que perdeu.",
+    "learningObjective": "Lembrar o termo refugo.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-03-tudo-como-perda-06",
+    "trail": "filipenses-cap",
+    "section": "flc-03-tudo-como-perda",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 3:14 a 1 Coríntios 9:24?",
+    "prompt": "O que liga Filipenses 3:14 a 1 Coríntios 9:24?",
+    "cue": "O que liga Filipenses 3:14 a 1 Coríntios 9:24?",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 3:14",
+      "text": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 9:24",
+      "text": "Não sabeis que os que correm no estádio, todos correm, mas apenas um recebe o prêmio? Correi de tal maneira que o alcanceis."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Correr para o prêmio"
+      },
+      {
+        "id": "b",
+        "text": "Perfeição já plena"
+      },
+      {
+        "id": "c",
+        "text": "Lucro da lei"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "prossigo para o alvo, para o prêmio",
+    "feedbackCorrect": "Ambos apontam correr ao prêmio.",
+    "feedbackWrong": {
+      "b": "Ainda prossigue.",
+      "c": "Lei não é o prêmio."
+    },
+    "hint": "Compare o prêmio.",
+    "learningObjective": "Ligar o correr ao prêmio.",
+    "evidence": [
+      "Filipenses 3:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-04-alegrai-vos-no-senhor-01",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 4:4, devem alegrar-se sempre no Senhor.",
+    "prompt": "Em Filipenses 4:4, devem alegrar-se sempre no Senhor.",
+    "cue": "Em Filipenses 4:4, devem alegrar-se sempre no Senhor.",
+    "verseRef": "Filipenses 4:4",
+    "passageText": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Alegrem-se sempre no Senhor",
+    "feedbackCorrect": "Alegria no Senhor, repetida.",
+    "feedbackWrong": {
+      "false": "Releia o mando."
+    },
+    "hint": "Olhe o sempre.",
+    "learningObjective": "Observar a alegria.",
+    "evidence": [
+      "Filipenses 4:4"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-04-alegrai-vos-no-senhor-02",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 4:7, toque o que protegerá o coração.",
+    "prompt": "Em Filipenses 4:7, toque o que protegerá o coração.",
+    "cue": "Em Filipenses 4:7, toque o que protegerá o coração.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "mente"
+      },
+      {
+        "id": "c",
+        "text": "compreensão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a paz de Deus",
+    "feedbackCorrect": "A paz de Deus protege.",
+    "feedbackWrong": {
+      "b": "Mente também é protegida.",
+      "c": "Compreensão é o que ultrapassa."
+    },
+    "hint": "Veja o sujeito de protegerá.",
+    "learningObjective": "Identificar a paz.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-04-alegrai-vos-no-senhor-03",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 4:6, o que fazer em vez da ansiedade?",
+    "prompt": "Segundo Filipenses 4:6, o que fazer em vez da ansiedade?",
+    "cue": "Segundo Filipenses 4:6, o que fazer em vez da ansiedade?",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Apresentar petições com ações de graças"
+      },
+      {
+        "id": "b",
+        "text": "Esquecer o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Desistir da oração"
+      },
+      {
+        "id": "d",
+        "text": "Guardar tudo em silêncio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças",
+    "feedbackCorrect": "Oração com graças.",
+    "feedbackWrong": {
+      "b": "Senhor está próximo.",
+      "c": "Há oração.",
+      "d": "Há apresentação."
+    },
+    "hint": "Leia o porém.",
+    "learningObjective": "Ver a oração no lugar da ansiedade.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-04-alegrai-vos-no-senhor-04",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 4:4–5 na ordem do texto.",
+    "prompt": "Monte Filipenses 4:4–5 na ordem do texto.",
+    "cue": "Monte Filipenses 4:4–5 na ordem do texto.",
+    "verseRef": "Filipenses 4:4–5",
+    "passageText": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se. Seja a sua moderação conhecida de todos. O Senhor está próximo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegrem-se sempre no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "novamente digo: alegrem-se"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor está próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Alegrem-se sempre no Senhor",
+    "feedbackCorrect": "Ansiedade, oração e paz.",
+    "feedbackWrong": {
+      "default": "Comece pela ansiedade."
+    },
+    "hint": "Siga 4:6–7.",
+    "learningObjective": "Seguir até a paz.",
+    "evidence": [
+      "Filipenses 4:4–5"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-04-alegrai-vos-no-senhor-05",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 4:6, complete: com ações de ___.",
+    "prompt": "Em Filipenses 4:6, complete: com ações de ___.",
+    "cue": "Em Filipenses 4:6, complete: com ações de ___.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "template": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "graças"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "ansiedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "com ações de graças",
+    "feedbackCorrect": "Ações de graças acompanham as petições.",
+    "feedbackWrong": {
+      "b": "Paz é o resultado.",
+      "c": "Ansiedade é o que deixar."
+    },
+    "hint": "Veja o complemento final das petições.",
+    "learningObjective": "Lembrar ações de graças.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-04-alegrai-vos-no-senhor-06",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "passageA": {
+      "ref": "Filipenses 4:6",
+      "text": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Alegria no Senhor e oração no lugar da ansiedade, com a paz que guarda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz sem Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Ansiedade como mando"
+      },
+      {
+        "id": "c",
+        "text": "Oração com ações de graças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com ações de graças",
+    "feedbackCorrect": "Oração com graças responde à ansiedade.",
+    "feedbackWrong": {
+      "a": "Paz em Cristo.",
+      "b": "Ansiedade é rejeitada."
+    },
+    "hint": "Ligue oração e contexto.",
+    "learningObjective": "Ligar o contexto à oração.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-04-alegrai-vos-no-senhor-01",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 4:6, o porém liga a saída da ansiedade à oração com ações de graças.",
+    "prompt": "Em Filipenses 4:6, o porém liga a saída da ansiedade à oração com ações de graças.",
+    "cue": "Em Filipenses 4:6, o porém liga a saída da ansiedade à oração com ações de graças.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "em tudo, porém, apresentem suas petições a Deus",
+    "feedbackCorrect": "O porém introduz a oração.",
+    "feedbackWrong": {
+      "false": "Ansiedade cede lugar à petição."
+    },
+    "hint": "Olhe o porém.",
+    "learningObjective": "Ver o contraste da oração.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-04-alegrai-vos-no-senhor-02",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+    "prompt": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+    "cue": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "nada"
+      },
+      {
+        "id": "c",
+        "text": "oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em tudo, porém, apresentem suas petições",
+    "feedbackCorrect": "O porém marca a virada.",
+    "feedbackWrong": {
+      "b": "Nada qualifica a ansiedade.",
+      "c": "Oração é o meio."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Tocar o contraste.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-04-alegrai-vos-no-senhor-03",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação Filipenses 4:6–9 estabelece entre paz e prática?",
+    "prompt": "Qual relação Filipenses 4:6–9 estabelece entre paz e prática?",
+    "cue": "Qual relação Filipenses 4:6–9 estabelece entre paz e prática?",
+    "verseRef": "Filipenses 4:9",
+    "passageText": "O que também aprendestes, recebestes, ouvistes e vistes em mim, isso praticai; e o Deus da paz será convosco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oração traz paz; prática mantém o Deus da paz"
+      },
+      {
+        "id": "b",
+        "text": "Ansiedade produz paz"
+      },
+      {
+        "id": "c",
+        "text": "Paz dispensa prática"
+      },
+      {
+        "id": "d",
+        "text": "Pensar basta sem orar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "isso praticai; e o Deus da paz será convosco",
+    "feedbackCorrect": "Paz e prática juntas.",
+    "feedbackWrong": {
+      "b": "Ansiedade é rejeitada.",
+      "c": "Há prática.",
+      "d": "Há oração."
+    },
+    "hint": "Una 4:7 e 4:9.",
+    "learningObjective": "Relacionar paz e prática.",
+    "evidence": [
+      "Filipenses 4:6–9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-04-alegrai-vos-no-senhor-04",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "Filipenses 4:9",
+    "passageText": "O que também aprendestes, recebestes, ouvistes e vistes em mim, isso praticai; e o Deus da paz será convosco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria e moderação; Senhor próximo"
+      },
+      {
+        "id": "b",
+        "text": "Oração no lugar da ansiedade"
+      },
+      {
+        "id": "c",
+        "text": "Paz que guarda; pensamentos e prática"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Deus da paz será convosco",
+    "feedbackCorrect": "Alegria, oração e paz.",
+    "feedbackWrong": {
+      "default": "Comece pela alegria."
+    },
+    "hint": "Pense no fluxo.",
+    "learningObjective": "Ordenar alegria, oração e paz.",
+    "evidence": [
+      "Filipenses 4:4–9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-04-alegrai-vos-no-senhor-05",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+    "prompt": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+    "cue": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "template": "E a paz de Deus, que ultrapassa toda ___, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "compreensão"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que ultrapassa toda compreensão",
+    "feedbackCorrect": "Compreensão é o que a paz ultrapassa.",
+    "feedbackWrong": {
+      "b": "Porém marca a virada.",
+      "c": "Oração é o meio."
+    },
+    "hint": "Veja o que a paz ultrapassa.",
+    "learningObjective": "Lembrar compreensão.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-04-alegrai-vos-no-senhor-06",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 4:6 a Mateus 6:25?",
+    "prompt": "O que liga Filipenses 4:6 a Mateus 6:25?",
+    "cue": "O que liga Filipenses 4:6 a Mateus 6:25?",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "passageA": {
+      "ref": "Filipenses 4:6",
+      "text": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças."
+    },
+    "passageB": {
+      "ref": "Mateus 6:25",
+      "text": "Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz sem oração"
+      },
+      {
+        "id": "b",
+        "text": "Não andeis ansiosos"
+      },
+      {
+        "id": "c",
+        "text": "Pensamentos vazios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não estejam ansiosos por nada",
+    "feedbackCorrect": "Ambos rejeitam a ansiedade.",
+    "feedbackWrong": {
+      "a": "Há oração.",
+      "c": "Há o que pensar."
+    },
+    "hint": "Compare a ansiedade.",
+    "learningObjective": "Ligar o não ansiosos.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-04-alegrai-vos-no-senhor-01",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo Filipenses 4:6–7, a paz de Deus cabe toda na compreensão humana.",
+    "prompt": "Segundo Filipenses 4:6–7, a paz de Deus cabe toda na compreensão humana.",
+    "cue": "Segundo Filipenses 4:6–7, a paz de Deus cabe toda na compreensão humana.",
+    "verseRef": "Filipenses 4:6–7",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças. E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a paz de Deus, que ultrapassa toda compreensão",
+    "feedbackCorrect": "A paz ultrapassa a compreensão.",
+    "feedbackWrong": {
+      "true": "O texto diz que ultrapassa."
+    },
+    "hint": "Leia a descrição da paz.",
+    "learningObjective": "Avaliar a leitura da paz.",
+    "evidence": [
+      "Filipenses 4:6–7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-04-alegrai-vos-no-senhor-02",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+    "prompt": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+    "cue": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "protegerá"
+      },
+      {
+        "id": "b",
+        "text": "coração"
+      },
+      {
+        "id": "c",
+        "text": "ultrapassa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que ultrapassa toda compreensão",
+    "feedbackCorrect": "Ultrapassa sustenta o alcance.",
+    "feedbackWrong": {
+      "a": "Protegerá é a ação.",
+      "b": "Coração é o objeto."
+    },
+    "hint": "Veja o verbo do alcance.",
+    "learningObjective": "Tocar o ultrapassar.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-04-alegrai-vos-no-senhor-03",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Qual leitura Filipenses 4:4–10 sustenta melhor?",
+    "prompt": "Qual leitura Filipenses 4:4–10 sustenta melhor?",
+    "cue": "Qual leitura Filipenses 4:4–10 sustenta melhor?",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pensar sem praticar"
+      },
+      {
+        "id": "b",
+        "text": "Paz sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Alegria, oração e prática sob a paz de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Ansiedade como virtude"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a paz de Deus, que ultrapassa toda compreensão, protegerá",
+    "feedbackCorrect": "Alegria, oração, paz e prática.",
+    "feedbackWrong": {
+      "a": "Há prática.",
+      "b": "Paz em Cristo.",
+      "d": "Ansiedade é rejeitada."
+    },
+    "hint": "Una o fio.",
+    "learningObjective": "Escolher a interpretação.",
+    "evidence": [
+      "Filipenses 4:4–10"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-04-alegrai-vos-no-senhor-04",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene a lógica até o Deus da paz.",
+    "prompt": "Ordene a lógica até o Deus da paz.",
+    "cue": "Ordene a lógica até o Deus da paz.",
+    "verseRef": "Filipenses 4:9",
+    "passageText": "O que também aprendestes, recebestes, ouvistes e vistes em mim, isso praticai; e o Deus da paz será convosco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegrai-vos no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Orai em vez de ansiedade"
+      },
+      {
+        "id": "c",
+        "text": "Paz guarda; praticai o aprendido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Deus da paz será convosco",
+    "feedbackCorrect": "Alegria, oração e prática.",
+    "feedbackWrong": {
+      "default": "A prática fecha."
+    },
+    "hint": "Siga até 4:9.",
+    "learningObjective": "Encadear alegria, oração e prática.",
+    "evidence": [
+      "Filipenses 4:4–9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-04-alegrai-vos-no-senhor-05",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:4, complete: ___ sempre no Senhor.",
+    "prompt": "Em Filipenses 4:4, complete: ___ sempre no Senhor.",
+    "cue": "Em Filipenses 4:4, complete: ___ sempre no Senhor.",
+    "verseRef": "Filipenses 4:4",
+    "passageText": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se.",
+    "template": "___ sempre no Senhor; novamente digo: alegrem-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ansiosos"
+      },
+      {
+        "id": "b",
+        "text": "Silenciosos"
+      },
+      {
+        "id": "c",
+        "text": "Alegrem-se"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Alegrem-se sempre no Senhor",
+    "feedbackCorrect": "Alegrem-se é o mando.",
+    "feedbackWrong": {
+      "a": "Ansiosos é rejeitado.",
+      "b": "Silêncio não é o mando."
+    },
+    "hint": "Veja o verbo inicial.",
+    "learningObjective": "Lembrar alegrem-se.",
+    "evidence": [
+      "Filipenses 4:4"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-04-alegrai-vos-no-senhor-06",
+    "trail": "filipenses-cap",
+    "section": "flc-04-alegrai-vos-no-senhor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 4:7 a Colossenses 3:15?",
+    "prompt": "O que liga Filipenses 4:7 a Colossenses 3:15?",
+    "cue": "O que liga Filipenses 4:7 a Colossenses 3:15?",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 4:7",
+      "text": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "Colossenses 3:15",
+      "text": "E que a paz de Cristo reine em seus corações, à qual vocês também foram chamados em um só corpo; e sejam gratos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecimento de Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Paz no coração"
+      },
+      {
+        "id": "c",
+        "text": "Ansiedade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "protegerá o seu coração e a sua mente",
+    "feedbackCorrect": "Ambos apontam a paz no coração.",
+    "feedbackWrong": {
+      "a": "Há lembrança solidária.",
+      "c": "Ansiedade é rejeitada."
+    },
+    "hint": "Compare a paz.",
+    "learningObjective": "Ligar a paz no coração.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-01",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 1:6, Deus aperfeiçoará a boa obra até o Dia de Cristo.",
+    "prompt": "Em Filipenses 1:6, Deus aperfeiçoará a boa obra até o Dia de Cristo.",
+    "cue": "Em Filipenses 1:6, Deus aperfeiçoará a boa obra até o Dia de Cristo.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Deus completa a obra.",
+    "feedbackWrong": {
+      "false": "Releia a convicção."
+    },
+    "hint": "Olhe aperfeiçoará.",
+    "learningObjective": "Relembrar a obra.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-02",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 2:15, toque a imagem da igreja.",
+    "prompt": "Em Filipenses 2:15, toque a imagem da igreja.",
+    "cue": "Em Filipenses 2:15, toque a imagem da igreja.",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luzes"
+      },
+      {
+        "id": "b",
+        "text": "geração"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Luzes no mundo.",
+    "feedbackWrong": {
+      "b": "Geração é o meio.",
+      "c": "Mundo é o lugar."
+    },
+    "hint": "Veja a comparação.",
+    "learningObjective": "Identificar luzes.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-03",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 2:14, como fazer todas as coisas?",
+    "prompt": "Segundo Filipenses 2:14, como fazer todas as coisas?",
+    "cue": "Segundo Filipenses 2:14, como fazer todas as coisas?",
+    "verseRef": "Filipenses 2:14",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem a palavra"
+      },
+      {
+        "id": "b",
+        "text": "Com murmurações"
+      },
+      {
+        "id": "c",
+        "text": "Sem murmurações nem contendas"
+      },
+      {
+        "id": "d",
+        "text": "Só na presença de Paulo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sem murmurações nem contendas",
+    "feedbackCorrect": "Sem murmurações.",
+    "feedbackWrong": {
+      "a": "Há palavra.",
+      "b": "Murmuração é excluída.",
+      "d": "Há ausência."
+    },
+    "hint": "Leia o mando.",
+    "learningObjective": "Ver o sem murmuração.",
+    "evidence": [
+      "Filipenses 2:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-04",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 1:5–6 na ordem do texto.",
+    "prompt": "Monte Filipenses 1:5–6 na ordem do texto.",
+    "cue": "Monte Filipenses 1:5–6 na ordem do texto.",
+    "verseRef": "Filipenses 1:5–6",
+    "passageText": "Pela sua colaboração no evangelho, desde o primeiro dia até agora. Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pela sua colaboração no evangelho"
+      },
+      {
+        "id": "b",
+        "text": "aquele que iniciou a boa obra"
+      },
+      {
+        "id": "c",
+        "text": "a aperfeiçoará até o Dia de Cristo Jesus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Colaboração, início e aperfeiçoamento.",
+    "feedbackWrong": {
+      "default": "Comece pela colaboração."
+    },
+    "hint": "Siga 1:5–6.",
+    "learningObjective": "Seguir a obra.",
+    "evidence": [
+      "Filipenses 1:5–6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-05",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 1:6, complete: a boa ___.",
+    "prompt": "Em Filipenses 1:6, complete: a boa ___.",
+    "cue": "Em Filipenses 1:6, complete: a boa ___.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "template": "Estou plenamente convicto de que aquele que iniciou a boa ___ em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "luz"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "murmuração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a boa obra",
+    "feedbackCorrect": "Obra é o termo.",
+    "feedbackWrong": {
+      "a": "Luz é de 2:15.",
+      "c": "Murmuração é excluída."
+    },
+    "hint": "Veja o objeto.",
+    "learningObjective": "Lembrar obra.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-06",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 2:15 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 2:15 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 2:15 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "passageA": {
+      "ref": "Filipenses 2:15",
+      "text": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Deus completa a obra e faz a igreja brilhar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Obra só humana"
+      },
+      {
+        "id": "b",
+        "text": "Murmurações como brilho"
+      },
+      {
+        "id": "c",
+        "text": "Luzes no mundo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "O brilho responde à obra de Deus.",
+    "feedbackWrong": {
+      "a": "Deus aperfeiçoa.",
+      "b": "Murmuração é excluída."
+    },
+    "hint": "Ligue luzes ao bloco.",
+    "learningObjective": "Ligar o contexto às luzes.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-07",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 2:13, toque quem atua.",
+    "prompt": "Em Filipenses 2:13, toque quem atua.",
+    "cue": "Em Filipenses 2:13, toque quem atua.",
+    "verseRef": "Filipenses 2:13",
+    "passageText": "Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vontade"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "realizar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus é quem atua em vós",
+    "feedbackCorrect": "Deus atua.",
+    "feedbackWrong": {
+      "a": "Vontade é a medida.",
+      "c": "Realizar é o efeito."
+    },
+    "hint": "Veja o sujeito.",
+    "learningObjective": "Identificar Deus.",
+    "evidence": [
+      "Filipenses 2:13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-1-08",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 2:14–15 na ordem do texto.",
+    "prompt": "Monte Filipenses 2:14–15 na ordem do texto.",
+    "cue": "Monte Filipenses 2:14–15 na ordem do texto.",
+    "verseRef": "Filipenses 2:14–15",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas; Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fazei todas as coisas sem murmurações nem contendas"
+      },
+      {
+        "id": "b",
+        "text": "Para que sejais irrepreensíveis e sinceros"
+      },
+      {
+        "id": "c",
+        "text": "resplandeceis como luzes no mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Mando, propósito e luzes.",
+    "feedbackWrong": {
+      "default": "Comece pelo mando."
+    },
+    "hint": "Siga 2:14–15.",
+    "learningObjective": "Seguir até as luzes.",
+    "evidence": [
+      "Filipenses 2:14–15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-01",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 2:13, o Porque mostra que Deus atua neles para o querer e o realizar.",
+    "prompt": "Em Filipenses 2:13, o Porque mostra que Deus atua neles para o querer e o realizar.",
+    "cue": "Em Filipenses 2:13, o Porque mostra que Deus atua neles para o querer e o realizar.",
+    "verseRef": "Filipenses 2:13",
+    "passageText": "Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deus é quem atua em vós tanto para o querer quanto para o realizar",
+    "feedbackCorrect": "Deus atua no querer e realizar.",
+    "feedbackWrong": {
+      "false": "O Porque explica a atuação."
+    },
+    "hint": "Olhe o Porque.",
+    "learningObjective": "Ver a causa divina.",
+    "evidence": [
+      "Filipenses 2:13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-02",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 2:13, toque a palavra que marca a causa.",
+    "prompt": "Em Filipenses 2:13, toque a palavra que marca a causa.",
+    "cue": "Em Filipenses 2:13, toque a palavra que marca a causa.",
+    "verseRef": "Filipenses 2:13",
+    "passageText": "Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque"
+      },
+      {
+        "id": "b",
+        "text": "vontade"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Porque Deus é quem atua em vós",
+    "feedbackCorrect": "Porque marca a causa.",
+    "feedbackWrong": {
+      "b": "Vontade é a medida.",
+      "c": "Deus é quem atua."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Tocar a causa.",
+    "evidence": [
+      "Filipenses 2:13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-03",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação Filipenses 2:13–15 estabelece entre Deus atuar e ser luz?",
+    "prompt": "Qual relação Filipenses 2:13–15 estabelece entre Deus atuar e ser luz?",
+    "cue": "Qual relação Filipenses 2:13–15 estabelece entre Deus atuar e ser luz?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus atua; eles brilham sem murmuração"
+      },
+      {
+        "id": "b",
+        "text": "Atuação exclui brilho"
+      },
+      {
+        "id": "c",
+        "text": "Luz dispensa a atuação"
+      },
+      {
+        "id": "d",
+        "text": "Murmuração aperfeiçoa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Atuação e brilho juntos.",
+    "feedbackWrong": {
+      "b": "Há atuação e brilho.",
+      "c": "Há luzes.",
+      "d": "Sem murmuração."
+    },
+    "hint": "Una atuação e luzes.",
+    "learningObjective": "Relacionar atuação e luzes.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-04",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do bloco em rótulos.",
+    "prompt": "Ordene os movimentos do bloco em rótulos.",
+    "cue": "Ordene os movimentos do bloco em rótulos.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus aperfeiçoa a boa obra"
+      },
+      {
+        "id": "b",
+        "text": "Deus atua no querer e realizar"
+      },
+      {
+        "id": "c",
+        "text": "Igreja brilha sem murmuração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Obra, atuação e brilho.",
+    "feedbackWrong": {
+      "default": "Comece pela obra."
+    },
+    "hint": "Pense no arco.",
+    "learningObjective": "Ordenar o bloco.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-05",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 2:12, complete: desenvolvei a vossa ___.",
+    "prompt": "Em Filipenses 2:12, complete: desenvolvei a vossa ___.",
+    "cue": "Em Filipenses 2:12, complete: desenvolvei a vossa ___.",
+    "verseRef": "Filipenses 2:12",
+    "passageText": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa salvação com temor e tremor;",
+    "template": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa ___ com temor e tremor;",
+    "options": [
+      {
+        "id": "a",
+        "text": "obra"
+      },
+      {
+        "id": "b",
+        "text": "salvação"
+      },
+      {
+        "id": "c",
+        "text": "luzes"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "desenvolvei a vossa salvação",
+    "feedbackCorrect": "Salvação é o objeto.",
+    "feedbackWrong": {
+      "a": "Obra é de 1:6.",
+      "c": "Luzes é de 2:15."
+    },
+    "hint": "Veja o objeto de desenvolvei.",
+    "learningObjective": "Lembrar salvação.",
+    "evidence": [
+      "Filipenses 2:12"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-06",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+    "prompt": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+    "cue": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "passageA": {
+      "ref": "Filipenses 1:6",
+      "text": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus."
+    },
+    "passageB": {
+      "ref": "1 Tessalonicenses 5:24",
+      "text": "Fiel é aquele que os chama, e ele também o realizará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim da colaboração"
+      },
+      {
+        "id": "b",
+        "text": "Deus completa o chamado"
+      },
+      {
+        "id": "c",
+        "text": "Só murmuração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Ambos confiam na fidelidade de Deus.",
+    "feedbackWrong": {
+      "a": "Há colaboração.",
+      "c": "Murmuração é excluída."
+    },
+    "hint": "Compare quem completa.",
+    "learningObjective": "Ligar a fidelidade.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-07",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+    "prompt": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+    "cue": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+    "verseRef": "Filipenses 1:5",
+    "passageText": "Pela sua colaboração no evangelho, desde o primeiro dia até agora.",
+    "options": [
+      {
+        "id": "a",
+        "text": "agora"
+      },
+      {
+        "id": "b",
+        "text": "Pela"
+      },
+      {
+        "id": "c",
+        "text": "desde"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pela sua colaboração no evangelho",
+    "feedbackCorrect": "Pela marca a causa.",
+    "feedbackWrong": {
+      "a": "Agora a continuidade.",
+      "c": "Desde o início."
+    },
+    "hint": "Procure a preposição.",
+    "learningObjective": "Tocar a causa.",
+    "evidence": [
+      "Filipenses 1:5"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-1-08",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos da salvação desenvolvida.",
+    "prompt": "Ordene os movimentos da salvação desenvolvida.",
+    "cue": "Ordene os movimentos da salvação desenvolvida.",
+    "verseRef": "Filipenses 2:12–13",
+    "passageText": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa salvação com temor e tremor; Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Desenvolvei a salvação com temor"
+      },
+      {
+        "id": "b",
+        "text": "Deus atua no querer"
+      },
+      {
+        "id": "c",
+        "text": "Deus atua no realizar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é quem atua em vós",
+    "feedbackCorrect": "Desenvolver e atuação divina.",
+    "feedbackWrong": {
+      "default": "Comece pelo mando."
+    },
+    "hint": "Siga 2:12–13.",
+    "learningObjective": "Ordenar o desenvolver.",
+    "evidence": [
+      "Filipenses 2:12–13"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-01",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo Filipenses 2:14–15, murmurações são compatíveis com ser luzes.",
+    "prompt": "Segundo Filipenses 2:14–15, murmurações são compatíveis com ser luzes.",
+    "cue": "Segundo Filipenses 2:14–15, murmurações são compatíveis com ser luzes.",
+    "verseRef": "Filipenses 2:14–15",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas; Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "sem murmurações nem contendas",
+    "feedbackCorrect": "Sem murmurações para serem luzes.",
+    "feedbackWrong": {
+      "true": "O caminho das luzes exclui murmuração."
+    },
+    "hint": "Una 2:14 e 2:15.",
+    "learningObjective": "Avaliar a leitura das luzes.",
+    "evidence": [
+      "Filipenses 2:14–15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-02",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:16, toque o que preservar.",
+    "prompt": "Em Filipenses 2:16, toque o que preservar.",
+    "cue": "Em Filipenses 2:16, toque o que preservar.",
+    "verseRef": "Filipenses 2:16",
+    "passageText": "Preservando a palavra da vida, para que, no dia de Cristo, eu me glorie de que não corri nem me esforcei em vão,",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavra"
+      },
+      {
+        "id": "b",
+        "text": "dia"
+      },
+      {
+        "id": "c",
+        "text": "vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Preservando a palavra da vida",
+    "feedbackCorrect": "Palavra da vida.",
+    "feedbackWrong": {
+      "b": "Dia é o horizonte de Paulo.",
+      "c": "Vida qualifica a palavra."
+    },
+    "hint": "Veja o objeto.",
+    "learningObjective": "Tocar a palavra.",
+    "evidence": [
+      "Filipenses 2:16"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-03",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Qual leitura o bloco sustenta melhor?",
+    "prompt": "Qual leitura o bloco sustenta melhor?",
+    "cue": "Qual leitura o bloco sustenta melhor?",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Atuação só na presença de Paulo"
+      },
+      {
+        "id": "b",
+        "text": "Deus completa a obra; a igreja brilha sem murmuração"
+      },
+      {
+        "id": "c",
+        "text": "Luz com contendas"
+      },
+      {
+        "id": "d",
+        "text": "Obra só humana"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Obra e brilho.",
+    "feedbackWrong": {
+      "a": "Há ausência também.",
+      "c": "Sem contendas.",
+      "d": "Deus inicia."
+    },
+    "hint": "Una obra e luzes.",
+    "learningObjective": "Escolher a interpretação.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-04",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene a lógica do bloco em rótulos.",
+    "prompt": "Ordene a lógica do bloco em rótulos.",
+    "cue": "Ordene a lógica do bloco em rótulos.",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confiança na obra que Deus completa"
+      },
+      {
+        "id": "b",
+        "text": "Atuação divina no querer e realizar"
+      },
+      {
+        "id": "c",
+        "text": "Brilho sem murmuração, com a palavra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Obra, atuação e brilho.",
+    "feedbackWrong": {
+      "default": "Comece pela confiança."
+    },
+    "hint": "Pense no arco.",
+    "learningObjective": "Encadear o bloco.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-05",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 2:14, complete: sem ___ nem contendas.",
+    "prompt": "Em Filipenses 2:14, complete: sem ___ nem contendas.",
+    "cue": "Em Filipenses 2:14, complete: sem ___ nem contendas.",
+    "verseRef": "Filipenses 2:14",
+    "passageText": "Fazei todas as coisas sem murmurações nem contendas;",
+    "template": "Fazei todas as coisas sem ___ nem contendas;",
+    "options": [
+      {
+        "id": "a",
+        "text": "murmurações"
+      },
+      {
+        "id": "b",
+        "text": "obra"
+      },
+      {
+        "id": "c",
+        "text": "luzes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem murmurações nem contendas",
+    "feedbackCorrect": "Murmurações é o excluído.",
+    "feedbackWrong": {
+      "b": "Obra é de 1:6.",
+      "c": "Luzes é a imagem."
+    },
+    "hint": "Veja o primeiro excluído.",
+    "learningObjective": "Lembrar murmurações.",
+    "evidence": [
+      "Filipenses 2:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-06",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 2:15 a Mateus 5:14?",
+    "prompt": "O que liga Filipenses 2:15 a Mateus 5:14?",
+    "cue": "O que liga Filipenses 2:15 a Mateus 5:14?",
+    "verseRef": "Filipenses 2:15",
+    "passageText": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo.",
+    "passageA": {
+      "ref": "Filipenses 2:15",
+      "text": "Para que sejais irrepreensíveis e sinceros, filhos de Deus inculpáveis no meio de uma geração pervertida e corrupta, na qual resplandeceis como luzes no mundo."
+    },
+    "passageB": {
+      "ref": "Mateus 5:14",
+      "text": "Vocês são a luz do mundo. Não se pode ocultar a cidade que está situada sobre um monte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Algemas"
+      },
+      {
+        "id": "b",
+        "text": "Luz no mundo"
+      },
+      {
+        "id": "c",
+        "text": "Murmurações"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "resplandeceis como luzes no mundo",
+    "feedbackCorrect": "Ambos chamam o povo de luz.",
+    "feedbackWrong": {
+      "a": "Algemas são de Paulo.",
+      "c": "Murmuração é excluída."
+    },
+    "hint": "Compare a luz.",
+    "learningObjective": "Ligar a luz do mundo.",
+    "evidence": [
+      "Filipenses 2:15"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-07",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 1:6, toque o verbo da conclusão.",
+    "prompt": "Em Filipenses 1:6, toque o verbo da conclusão.",
+    "cue": "Em Filipenses 1:6, toque o verbo da conclusão.",
+    "verseRef": "Filipenses 1:6",
+    "passageText": "Estou plenamente convicto de que aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "convicto"
+      },
+      {
+        "id": "b",
+        "text": "iniciou"
+      },
+      {
+        "id": "c",
+        "text": "aperfeiçoará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+    "feedbackCorrect": "Aperfeiçoará.",
+    "feedbackWrong": {
+      "a": "Convicto é Paulo.",
+      "b": "Iniciou é o começo."
+    },
+    "hint": "Veja o verbo futuro.",
+    "learningObjective": "Tocar o aperfeiçoar.",
+    "evidence": [
+      "Filipenses 1:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-1-08",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene os movimentos da oração pelo amor.",
+    "prompt": "Ordene os movimentos da oração pelo amor.",
+    "cue": "Ordene os movimentos da oração pelo amor.",
+    "verseRef": "Filipenses 1:11",
+    "passageText": "Cheios do fruto de justiça, que é por meio de Jesus Cristo, para a glória e louvor de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor aumente em conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "Aprovem as coisas excelentes"
+      },
+      {
+        "id": "c",
+        "text": "Cheios do fruto de justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cheios do fruto de justiça",
+    "feedbackCorrect": "Amor, aprovação e fruto.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor."
+    },
+    "hint": "Siga 1:9–11.",
+    "learningObjective": "Ordenar até o fruto.",
+    "evidence": [
+      "Filipenses 1:9–11"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-01",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+    "prompt": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+    "cue": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "considerei perda por amor a Cristo",
+    "feedbackCorrect": "Lucro virou perda.",
+    "feedbackWrong": {
+      "false": "Releia o versículo."
+    },
+    "hint": "Olhe lucro e perda.",
+    "learningObjective": "Relembrar a perda.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-02",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 4:7, toque o que protegerá o coração.",
+    "prompt": "Em Filipenses 4:7, toque o que protegerá o coração.",
+    "cue": "Em Filipenses 4:7, toque o que protegerá o coração.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "compreensão"
+      },
+      {
+        "id": "c",
+        "text": "mente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a paz de Deus",
+    "feedbackCorrect": "A paz de Deus.",
+    "feedbackWrong": {
+      "b": "Compreensão é o que ultrapassa.",
+      "c": "Mente também é protegida."
+    },
+    "hint": "Veja o sujeito.",
+    "learningObjective": "Identificar a paz.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-03",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Filipenses 3:14, para onde ele prossegue?",
+    "prompt": "Segundo Filipenses 3:14, para onde ele prossegue?",
+    "cue": "Segundo Filipenses 3:14, para onde ele prossegue?",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para a perfeição já plena"
+      },
+      {
+        "id": "b",
+        "text": "Para a ansiedade"
+      },
+      {
+        "id": "c",
+        "text": "Para o alvo e o prêmio"
+      },
+      {
+        "id": "d",
+        "text": "Para o lucro antigo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "prossigo para o alvo, para o prêmio",
+    "feedbackCorrect": "Alvo e prêmio.",
+    "feedbackWrong": {
+      "a": "Ainda não é perfeito.",
+      "b": "Ansiedade é rejeitada.",
+      "d": "Lucro virou perda."
+    },
+    "hint": "Leia o fim.",
+    "learningObjective": "Ver o alvo.",
+    "evidence": [
+      "Filipenses 3:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-04",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 3:7–8 na ordem do texto.",
+    "prompt": "Monte Filipenses 3:7–8 na ordem do texto.",
+    "cue": "Monte Filipenses 3:7–8 na ordem do texto.",
+    "verseRef": "Filipenses 3:7–8",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo. Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "considerei perda por amor a Cristo"
+      },
+      {
+        "id": "b",
+        "text": "considero como perda todas as coisas"
+      },
+      {
+        "id": "c",
+        "text": "para ganhar a Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Perda, todas as coisas e ganho.",
+    "feedbackWrong": {
+      "default": "Comece pela perda."
+    },
+    "hint": "Siga 3:7–8.",
+    "learningObjective": "Seguir até ganhar Cristo.",
+    "evidence": [
+      "Filipenses 3:7–8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-05",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Filipenses 3:14, complete: prossigo para o ___.",
+    "prompt": "Em Filipenses 3:14, complete: prossigo para o ___.",
+    "cue": "Em Filipenses 3:14, complete: prossigo para o ___.",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "template": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o ___, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lucro"
+      },
+      {
+        "id": "b",
+        "text": "alvo"
+      },
+      {
+        "id": "c",
+        "text": "ansiedade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "prossigo para o alvo",
+    "feedbackCorrect": "Alvo é a meta.",
+    "feedbackWrong": {
+      "a": "Lucro virou perda.",
+      "c": "Ansiedade é rejeitada."
+    },
+    "hint": "Veja o complemento.",
+    "learningObjective": "Lembrar alvo.",
+    "evidence": [
+      "Filipenses 3:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-06",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+    "prompt": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+    "cue": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "passageA": {
+      "ref": "Filipenses 4:6",
+      "text": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cristo é o ganho e a paz no meio da ansiedade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ansiedade como mando"
+      },
+      {
+        "id": "b",
+        "text": "Lucro como meta"
+      },
+      {
+        "id": "c",
+        "text": "Oração com ações de graças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "com ações de graças",
+    "feedbackCorrect": "Oração responde à ansiedade no bloco.",
+    "feedbackWrong": {
+      "a": "Ansiedade é rejeitada.",
+      "b": "Lucro virou perda."
+    },
+    "hint": "Ligue oração ao bloco.",
+    "learningObjective": "Ligar o contexto à oração.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-07",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Filipenses 3:14, toque o prêmio da vocação.",
+    "prompt": "Em Filipenses 3:14, toque o prêmio da vocação.",
+    "cue": "Em Filipenses 3:14, toque o prêmio da vocação.",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prêmio"
+      },
+      {
+        "id": "b",
+        "text": "alvo"
+      },
+      {
+        "id": "c",
+        "text": "vocação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para o prêmio da soberana vocação",
+    "feedbackCorrect": "Prêmio.",
+    "feedbackWrong": {
+      "b": "Alvo é a meta.",
+      "c": "Vocação qualifica o prêmio."
+    },
+    "hint": "Veja o complemento do alvo.",
+    "learningObjective": "Identificar o prêmio.",
+    "evidence": [
+      "Filipenses 3:14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-sem-flc-boss-2-08",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Filipenses 4:4–5 na ordem do texto.",
+    "prompt": "Monte Filipenses 4:4–5 na ordem do texto.",
+    "cue": "Monte Filipenses 4:4–5 na ordem do texto.",
+    "verseRef": "Filipenses 4:4–5",
+    "passageText": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se. Seja a sua moderação conhecida de todos. O Senhor está próximo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegrem-se sempre no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "novamente digo: alegrem-se"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor está próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Alegrem-se sempre no Senhor",
+    "feedbackCorrect": "Alegria repetida e proximidade.",
+    "feedbackWrong": {
+      "default": "Comece pela alegria."
+    },
+    "hint": "Siga 4:4–5.",
+    "learningObjective": "Seguir a alegria.",
+    "evidence": [
+      "Filipenses 4:4–5"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-01",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Filipenses 4:6, o porém autoriza permanecer na ansiedade sem orar.",
+    "prompt": "Em Filipenses 4:6, o porém autoriza permanecer na ansiedade sem orar.",
+    "cue": "Em Filipenses 4:6, o porém autoriza permanecer na ansiedade sem orar.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "em tudo, porém, apresentem suas petições a Deus",
+    "feedbackCorrect": "O porém introduz a oração.",
+    "feedbackWrong": {
+      "true": "A saída é orar."
+    },
+    "hint": "Leia o porém.",
+    "learningObjective": "Ver o contraste.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-02",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+    "prompt": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+    "cue": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nada"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "oração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "em tudo, porém, apresentem suas petições",
+    "feedbackCorrect": "O porém marca a virada.",
+    "feedbackWrong": {
+      "a": "Nada qualifica a ansiedade.",
+      "c": "Oração é o meio."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Tocar o contraste.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-03",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+    "prompt": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+    "cue": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+    "verseRef": "Filipenses 3:14",
+    "passageText": "Uma coisa faço: esquecendo-me das coisas que ficaram para trás e avançando para as que estão adiante, prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquecer o futuro"
+      },
+      {
+        "id": "b",
+        "text": "O prêmio já foi tomado por completo"
+      },
+      {
+        "id": "c",
+        "text": "Perfeição dispensa o alvo"
+      },
+      {
+        "id": "d",
+        "text": "Ainda não perfeito; por isso prossigo ao alvo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "prossigo para o alvo",
+    "feedbackCorrect": "Não perfeito; prossigo.",
+    "feedbackWrong": {
+      "a": "Avança para o diante.",
+      "b": "Ainda não alcançou.",
+      "c": "Há prosseguir."
+    },
+    "hint": "Una 3:12 e 3:14.",
+    "learningObjective": "Relacionar perfeição e alvo.",
+    "evidence": [
+      "Filipenses 3:12–14"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-04",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do bloco em rótulos.",
+    "prompt": "Ordene os movimentos do bloco em rótulos.",
+    "cue": "Ordene os movimentos do bloco em rótulos.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lucro virado perda por Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Prosseguir ao alvo pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Oração e paz no lugar da ansiedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "considerei perda por amor a Cristo",
+    "feedbackCorrect": "Perda, alvo e paz.",
+    "feedbackWrong": {
+      "default": "Comece pela perda."
+    },
+    "hint": "Pense no arco.",
+    "learningObjective": "Ordenar o bloco.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-05",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+    "prompt": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+    "cue": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "template": "E a paz de Deus, que ultrapassa toda ___, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "alvo"
+      },
+      {
+        "id": "b",
+        "text": "compreensão"
+      },
+      {
+        "id": "c",
+        "text": "perda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que ultrapassa toda compreensão",
+    "feedbackCorrect": "Compreensão é o que a paz ultrapassa.",
+    "feedbackWrong": {
+      "a": "Alvo é de 3:14.",
+      "c": "Perda é de 3:7."
+    },
+    "hint": "Veja o que ultrapassa.",
+    "learningObjective": "Lembrar compreensão.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-06",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Filipenses 3:9 a Romanos 3:22?",
+    "prompt": "O que liga Filipenses 3:9 a Romanos 3:22?",
+    "cue": "O que liga Filipenses 3:9 a Romanos 3:22?",
+    "verseRef": "Filipenses 3:9",
+    "passageText": "e seja encontrado nele, não tendo a minha própria justiça que provém da lei, mas aquela que é mediante a fé em Cristo, a justiça que vem de Deus, baseada na fé.",
+    "passageA": {
+      "ref": "Filipenses 3:9",
+      "text": "e seja encontrado nele, não tendo a minha própria justiça que provém da lei, mas aquela que é mediante a fé em Cristo, a justiça que vem de Deus, baseada na fé."
+    },
+    "passageB": {
+      "ref": "Romanos 3:22",
+      "text": "Isto é, a justiça de Deus por meio da fé em Jesus Cristo, para todos e sobre todos os que creem, pois não há distinção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Justiça pela fé"
+      },
+      {
+        "id": "b",
+        "text": "Lucro da lei"
+      },
+      {
+        "id": "c",
+        "text": "Ansiedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a justiça que vem de Deus, baseada na fé",
+    "feedbackCorrect": "Ambos apontam justiça pela fé.",
+    "feedbackWrong": {
+      "b": "Lei não justifica.",
+      "c": "Ansiedade é de 4:6."
+    },
+    "hint": "Compare a justiça.",
+    "learningObjective": "Ligar a justiça pela fé.",
+    "evidence": [
+      "Filipenses 3:9"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-07",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+    "prompt": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+    "cue": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+    "verseRef": "Filipenses 3:7",
+    "passageText": "Mas o que para mim era lucro, considerei perda por amor a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "lucro"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas o que para mim era lucro",
+    "feedbackCorrect": "O Mas marca a virada.",
+    "feedbackWrong": {
+      "b": "Lucro é o passado.",
+      "c": "Amor a Cristo motiva."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Tocar o contraste.",
+    "evidence": [
+      "Filipenses 3:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-cam-flc-boss-2-08",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos até a paz.",
+    "prompt": "Ordene os movimentos até a paz.",
+    "cue": "Ordene os movimentos até a paz.",
+    "verseRef": "Filipenses 4:6–7",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças. E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não estejam ansiosos por nada"
+      },
+      {
+        "id": "b",
+        "text": "Apresentem petições com ações de graças"
+      },
+      {
+        "id": "c",
+        "text": "A paz de Deus protegerá coração e mente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a paz de Deus, que ultrapassa toda compreensão, protegerá",
+    "feedbackCorrect": "Ansiedade, oração e paz.",
+    "feedbackWrong": {
+      "default": "Comece pela ansiedade."
+    },
+    "hint": "Siga 4:6–7.",
+    "learningObjective": "Ordenar até a paz.",
+    "evidence": [
+      "Filipenses 4:6–7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-01",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo Filipenses 4:7, a paz de Deus cabe toda na compreensão humana.",
+    "prompt": "Segundo Filipenses 4:7, a paz de Deus cabe toda na compreensão humana.",
+    "cue": "Segundo Filipenses 4:7, a paz de Deus cabe toda na compreensão humana.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "que ultrapassa toda compreensão",
+    "feedbackCorrect": "A paz ultrapassa.",
+    "feedbackWrong": {
+      "true": "O texto diz que ultrapassa."
+    },
+    "hint": "Leia a descrição.",
+    "learningObjective": "Avaliar a leitura da paz.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-02",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+    "prompt": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+    "cue": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+    "verseRef": "Filipenses 4:7",
+    "passageText": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ultrapassa"
+      },
+      {
+        "id": "b",
+        "text": "protegerá"
+      },
+      {
+        "id": "c",
+        "text": "coração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que ultrapassa toda compreensão",
+    "feedbackCorrect": "Ultrapassa sustenta o alcance.",
+    "feedbackWrong": {
+      "b": "Protegerá é a ação.",
+      "c": "Coração é o objeto."
+    },
+    "hint": "Veja o verbo.",
+    "learningObjective": "Tocar o ultrapassar.",
+    "evidence": [
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-03",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Qual leitura o bloco sustenta melhor?",
+    "prompt": "Qual leitura o bloco sustenta melhor?",
+    "cue": "Qual leitura o bloco sustenta melhor?",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ansiedade como virtude"
+      },
+      {
+        "id": "b",
+        "text": "Perfeição já plena"
+      },
+      {
+        "id": "c",
+        "text": "Cristo é o ganho; a paz guarda pela oração"
+      },
+      {
+        "id": "d",
+        "text": "Lucro humano é o alvo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para ganhar a Cristo",
+    "feedbackCorrect": "Ganho e paz.",
+    "feedbackWrong": {
+      "a": "Ansiedade é rejeitada.",
+      "b": "Ainda prossigue.",
+      "d": "Lucro virou perda."
+    },
+    "hint": "Una ganho e paz.",
+    "learningObjective": "Escolher a interpretação.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-04",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene a lógica do bloco em rótulos.",
+    "prompt": "Ordene a lógica do bloco em rótulos.",
+    "cue": "Ordene a lógica do bloco em rótulos.",
+    "verseRef": "Filipenses 4:4",
+    "passageText": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tudo perda para ganhar Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Correr ao prêmio da vocação"
+      },
+      {
+        "id": "c",
+        "text": "Orar e viver sob a paz de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Alegrem-se sempre no Senhor",
+    "feedbackCorrect": "Perda, prêmio e paz.",
+    "feedbackWrong": {
+      "default": "Comece pela perda."
+    },
+    "hint": "Pense no arco.",
+    "learningObjective": "Encadear o bloco.",
+    "evidence": [
+      "Filipenses 4:4"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-05",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Filipenses 3:8, complete: as considero como ___.",
+    "prompt": "Em Filipenses 3:8, complete: as considero como ___.",
+    "cue": "Em Filipenses 3:8, complete: as considero como ___.",
+    "verseRef": "Filipenses 3:8",
+    "passageText": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+    "template": "Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como ___, para ganhar a Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "refugo"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "alvo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "as considero como refugo",
+    "feedbackCorrect": "Refugo nomeia o antigo lucro.",
+    "feedbackWrong": {
+      "b": "Paz é de 4:7.",
+      "c": "Alvo é de 3:14."
+    },
+    "hint": "Veja como ele nomeia o perdido.",
+    "learningObjective": "Lembrar refugo.",
+    "evidence": [
+      "Filipenses 3:8"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-06",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Filipenses 4:6 a Mateus 6:25?",
+    "prompt": "O que liga Filipenses 4:6 a Mateus 6:25?",
+    "cue": "O que liga Filipenses 4:6 a Mateus 6:25?",
+    "verseRef": "Filipenses 4:6",
+    "passageText": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças.",
+    "passageA": {
+      "ref": "Filipenses 4:6",
+      "text": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças."
+    },
+    "passageB": {
+      "ref": "Mateus 6:25",
+      "text": "Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes?"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lucro da lei"
+      },
+      {
+        "id": "b",
+        "text": "Perfeição plena"
+      },
+      {
+        "id": "c",
+        "text": "Não andeis ansiosos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Não estejam ansiosos por nada",
+    "feedbackCorrect": "Ambos rejeitam a ansiedade.",
+    "feedbackWrong": {
+      "a": "Lei não é o tema.",
+      "b": "Ainda prossigue."
+    },
+    "hint": "Compare a ansiedade.",
+    "learningObjective": "Ligar o não ansiosos.",
+    "evidence": [
+      "Filipenses 4:6"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-07",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Filipenses 3:12, toque o verbo da continuidade.",
+    "prompt": "Em Filipenses 3:12, toque o verbo da continuidade.",
+    "cue": "Em Filipenses 3:12, toque o verbo da continuidade.",
+    "verseRef": "Filipenses 3:12",
+    "passageText": "Não que eu já tenha recebido ou que já tenha atingido a perfeição; mas prossigo para conquistar aquilo para o que também fui conquistado por Cristo Jesus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "prossigo"
+      },
+      {
+        "id": "b",
+        "text": "recebido"
+      },
+      {
+        "id": "c",
+        "text": "perfeição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas prossigo para conquistar",
+    "feedbackCorrect": "Prossigo.",
+    "feedbackWrong": {
+      "b": "Recebido é negado.",
+      "c": "Perfeição não atingida."
+    },
+    "hint": "Veja o verbo depois de mas.",
+    "learningObjective": "Tocar o prosseguir.",
+    "evidence": [
+      "Filipenses 3:12"
+    ]
+  },
+  {
+    "id": "filipenses-cap-pro-flc-boss-2-08",
+    "trail": "filipenses-cap",
+    "section": "flc-boss-2",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Ordene os movimentos até o Deus da paz.",
+    "prompt": "Ordene os movimentos até o Deus da paz.",
+    "cue": "Ordene os movimentos até o Deus da paz.",
+    "verseRef": "Filipenses 4:8–9",
+    "passageText": "Finalmente, irmãos, tudo o que é verdadeiro, tudo o que é respeitável, tudo o que é justo, tudo o que é puro, tudo o que é amável, tudo o que é de boa fama, se há alguma virtude e se existe algo digno de louvor, que isso ocupe os seus pensamentos. O que também aprendestes, recebestes, ouvistes e vistes em mim, isso praticai; e o Deus da paz será convosco.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pensar no que é verdadeiro e puro"
+      },
+      {
+        "id": "b",
+        "text": "Praticar o que aprenderam"
+      },
+      {
+        "id": "c",
+        "text": "O Deus da paz será convosco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Deus da paz será convosco",
+    "feedbackCorrect": "Pensar, praticar e paz.",
+    "feedbackWrong": {
+      "default": "A paz fecha."
+    },
+    "hint": "Siga 4:8–9.",
+    "learningObjective": "Ordenar até o Deus da paz.",
+    "evidence": [
+      "Filipenses 4:8–9"
+    ]
+  }
+]

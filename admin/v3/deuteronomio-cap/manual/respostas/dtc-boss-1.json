@@ -1,0 +1,919 @@
+{
+  "study": {
+    "passageRef": "Deuteronômio 1:19–20",
+    "passages": [
+      {
+        "ref": "Deuteronômio 1:19–20"
+      },
+      {
+        "ref": "Deuteronômio 2:1–4"
+      },
+      {
+        "ref": "Deuteronômio 3:15–20"
+      },
+      {
+        "ref": "Deuteronômio 4:32–36"
+      }
+    ],
+    "context": "Cena de Travessia: Recordar a jornada: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Recordar a",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então.",
+        "evidenceRef": "Deuteronômio 1:19",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Deuteronômio 1:24",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Então nos viramos e seguimos para o deserto.",
+        "evidenceRef": "Deuteronômio 2:1",
+        "evidenceSpan": "Então nos viramos e seguimos para o deserto"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Deuteronômio 2:4",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "E dei Gileade a Maquir.",
+        "evidenceRef": "Deuteronômio 3:15",
+        "evidenceSpan": "E dei Gileade a Maquir"
+      },
+      {
+        "text": "Até que o Senhor dê descanso a seus.",
+        "evidenceRef": "Deuteronômio 3:20",
+        "evidenceSpan": "Até que o Senhor dê descanso a seus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então partimos de horebe e caminhamos",
+        "evidenceRef": "Deuteronômio 1:19"
+      },
+      {
+        "label": "E foram se subiram à região",
+        "evidenceRef": "Deuteronômio 1:24"
+      },
+      {
+        "label": "Então nos viramos e seguimos",
+        "evidenceRef": "Deuteronômio 2:1"
+      },
+      {
+        "label": "E ordena ao povo dizendo vocês",
+        "evidenceRef": "Deuteronômio 2:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Deuteronômio 1:19"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Deuteronômio 2:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"então\".",
+        "marker": "então",
+        "evidenceRef": "Deuteronômio 3:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 119:11",
+        "bridge": "Palavra no coração"
+      },
+      {
+        "ref": "Atos 3:22",
+        "bridge": "Profeta como Moisés"
+      },
+      {
+        "ref": "Êxodo 20:2–3",
+        "bridge": "Eu sou o Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Lembrar a jornada fortalece a fé no único Deus",
+    "anchorQuestion": "O que Deuteronômio 1:19 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Deuteronômio 1:19, o texto inclui Então.",
+      "verseRef": "Deuteronômio 1:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 1:19 afirma.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 1:19, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Deuteronômio 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "partimos"
+        },
+        {
+          "id": "c",
+          "text": "Horebe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 2:1, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 1:24 na ordem do texto.",
+      "verseRef": "Deuteronômio 1:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "E foram"
+        },
+        {
+          "id": "b",
+          "text": "à região montanhosa"
+        },
+        {
+          "id": "c",
+          "text": "espiando a terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E foram",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Deuteronômio 1:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Deuteronômio 2:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordena"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "partimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ordena",
+      "feedbackCorrect": "A palavra do versículo é ordena.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 2:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Deuteronômio 1:19 comunica que se liga a este contexto.",
+      "verseRef": "Deuteronômio 1:19",
+      "passageA": {
+        "ref": "Deuteronômio 1:19"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Recordar a jornada: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 4:32, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 4:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pergunta"
+        },
+        {
+          "id": "b",
+          "text": "pois"
+        },
+        {
+          "id": "c",
+          "text": "agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "O trecho destaca Pergunta.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 1:19 na ordem do texto.",
+      "verseRef": "Deuteronômio 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "e caminhamos por todo"
+        },
+        {
+          "id": "c",
+          "text": "aquele grande e terrível deserto que vistes pela estrada da região"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Deuteronômio 1:19, a palavra Então liga ideias no fluxo do texto.",
+      "verseRef": "Deuteronômio 1:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 1:19 afirma.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 1:19, toque a palavra que marca a relação no texto.",
+      "verseRef": "Deuteronômio 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "partimos"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Horebe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "partimos",
+      "feedbackCorrect": "O versículo destaca partimos.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 2:4, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: ordena ao povo, dizendo: Vocês passarão pelos limites"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E ordena ao povo, dizendo: Vocês passarão pelos limites",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Deuteronômio 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então partimos de horebe e caminhamos"
+        },
+        {
+          "id": "b",
+          "text": "E foram se subiram à região"
+        },
+        {
+          "id": "c",
+          "text": "Então nos viramos e seguimos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Deuteronômio 2:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "viramos"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "partimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "viramos",
+      "feedbackCorrect": "A palavra do versículo é viramos.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 2:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 1:19 a Salmos 119:11.",
+      "verseRef": "Deuteronômio 1:19",
+      "passageA": {
+        "ref": "Deuteronômio 1:19"
+      },
+      "passageB": {
+        "ref": "Salmos 119:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra no coração"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 4:36, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 4:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "céus"
+        },
+        {
+          "id": "b",
+          "text": "Dos"
+        },
+        {
+          "id": "c",
+          "text": "ele"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "céus",
+      "feedbackCorrect": "O trecho destaca céus.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 4:36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Deuteronômio 1:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 1:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Deuteronômio 1:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 1:20 afirma.",
+      "evidence": [
+        "Deuteronômio 1:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 3:20, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Deuteronômio 3:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "descanso"
+        },
+        {
+          "id": "c",
+          "text": "seus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca Senhor.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 3:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 3:15, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: dei Gileade a Maquir"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E dei Gileade a Maquir.",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Deuteronômio 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Deuteronômio 3:15, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gileade"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "partimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Gileade",
+      "feedbackCorrect": "A palavra do versículo é Gileade.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 1:19 a Atos 3:22.",
+      "verseRef": "Deuteronômio 1:19",
+      "passageA": {
+        "ref": "Deuteronômio 1:19"
+      },
+      "passageB": {
+        "ref": "Atos 3:22"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Profeta como Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 1:19, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horebe"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "partimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Horebe",
+      "feedbackCorrect": "O trecho destaca Horebe.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 1:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento ligado a Deuteronômio 1:21.",
+      "verseRef": "Deuteronômio 1:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 1:21"
+      ]
+    }
+  ]
+}

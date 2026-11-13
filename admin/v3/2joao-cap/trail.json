@@ -1,0 +1,50 @@
+{
+  "slug": "2joao-cap",
+  "title": "2 João",
+  "description": "2 João capítulo a capítulo: verdade, amor e cuidado com o engano.",
+  "icon": "💌",
+  "color": "#00897B",
+  "order": 76,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Verdade e cuidado · cap. 1",
+      "icon": "zap",
+      "section": "2 João",
+      "missions": [
+        {
+          "slug": "j2c-01-nao-recebais-o-enganador",
+          "title": "Não recebais o enganador",
+          "subtitle": "2 João 1:10–13",
+          "intro": "João fecha a carta curta alertando sobre quem não traz a doutrina de Cristo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "2 João 1:10–13",
+          "hookVerse": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas. Pois quem o acolhe torna-se cúmplice de suas más obras.",
+          "hookNote": "Quem não permanece na doutrina de Cristo não tem a Deus; não o recebais em casa.",
+          "centralInsight": "Quem não permanece na doutrina de Cristo não tem a Deus; não o recebais em casa.",
+          "objective": "Guardar a doutrina de Cristo"
+        },
+        {
+          "slug": "j2c-boss-1",
+          "title": "Travessia: Verdade e cuidado",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o alerta contra quem não traz a doutrina de Cristo.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Verdade e cuidado",
+          "hookVerse": "Revise o alerta contra quem não traz a doutrina de Cristo.",
+          "hookNote": "Revise o alerta contra quem não traz a doutrina de Cristo.",
+          "centralInsight": "Amar a verdade é também recusar o engano",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

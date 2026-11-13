@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 35:5–10",
+  "passages": [
+   {
+    "ref": "Jó 35:5–10"
+   },
+   {
+    "ref": "Jó 35:11–14"
+   }
+  ],
+  "context": "Eliú leva Jó a olhar para cima: o pecado e a justiça do homem não tornam Deus refém — e ainda assim a causa do aflito fica diante dele.",
+  "keyword": "Olhe para os céus",
+  "keywordGloss": "Convite a contemplar a altura de Deus antes de medir o valor do nosso bem ou mal.",
+  "focusQuestion": "Você trata Deus como alguém a quem seu bem ou mal pode chantagear?",
+  "reflectionPrompts": [
+   "Altura de Deus",
+   "Bem sem chantagem",
+   "Causa diante dele"
+  ],
+  "facts": [
+   {
+    "text": "Eliú manda olhar para os céus e contemplar as nuvens.",
+    "evidenceRef": "Jó 35:5",
+    "evidenceSpan": "Olhe para os céus e veja"
+   },
+   {
+    "text": "O pecado do homem não causa mal a Deus.",
+    "evidenceRef": "Jó 35:6",
+    "evidenceSpan": "Se pecares, que mal causarás a Ele?"
+   },
+   {
+    "text": "A justiça do homem não dá nada a Deus.",
+    "evidenceRef": "Jó 35:7",
+    "evidenceSpan": "Se você é justo, o que pode lhe dar?"
+   },
+   {
+    "text": "A impiedade prejudica o próprio homem.",
+    "evidenceRef": "Jó 35:8",
+    "evidenceSpan": "A tua impiedade apenas prejudica a ti mesmo"
+   },
+   {
+    "text": "Os oprimidos clamam por causa das opressões.",
+    "evidenceRef": "Jó 35:9",
+    "evidenceSpan": "os oprimidos clamam e gritam por socorro"
+   },
+   {
+    "text": "A causa de Jó está diante de Deus; ele deve esperar nele.",
+    "evidenceRef": "Jó 35:14",
+    "evidenceSpan": "a sua causa está diante dele"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "céus",
+    "gloss": "O horizonte que lembra a altura e a independência de Deus."
+   },
+   {
+    "term": "impiedade",
+    "gloss": "O mal que prejudica o próprio homem, não chantageia Deus."
+   },
+   {
+    "term": "causa",
+    "gloss": "A questão de Jó que permanece diante de Deus enquanto ele espera."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Convite a olhar para os céus",
+    "evidenceRef": "Jó 35:5"
+   },
+   {
+    "label": "Pecado e justiça não tornam Deus refém",
+    "evidenceRef": "Jó 35:6–8"
+   },
+   {
+    "label": "Oprimidos clamam; falta perguntar por Deus",
+    "evidenceRef": "Jó 35:9–13"
+   },
+   {
+    "label": "A causa está diante de Deus: espere nele",
+    "evidenceRef": "Jó 35:14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Os oprimidos clamam, porém ninguém pergunta onde está Deus.",
+    "marker": "Porém",
+    "evidenceRef": "Jó 35:10"
+   },
+   {
+    "kind": "causa",
+    "text": "Clamam, mas Ele não responde, em razão da arrogância dos ímpios.",
+    "marker": "em razão",
+    "evidenceRef": "Jó 35:12"
+   },
+   {
+    "kind": "resultado",
+    "text": "Como a causa está diante dele, Jó deve esperar nele.",
+    "marker": "por isso",
+    "evidenceRef": "Jó 35:14"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 121:1–2",
+    "bridge": "Olhar aos montes e ao Senhor"
+   },
+   {
+    "ref": "Atos 17:25",
+    "bridge": "Deus não é servido por mãos"
+   },
+   {
+    "ref": "Salmos 37:7",
+    "bridge": "Esperar quieto no Senhor"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus não se importa com o aflito.",
+    "why": "35:14 diz que a causa está diante dele e manda esperar nele."
+   },
+   {
+    "text": "Nossa justiça enriquece a Deus.",
+    "why": "35:7 pergunta o que o justo pode dar a Ele."
+   },
+   {
+    "text": "O pecado humano diminui o poder de Deus.",
+    "why": "35:6 pergunta que mal o pecado causaria a Ele."
+   }
+  ],
+  "centralInsight": "Deus não é refém do nosso bem ou mal — e mesmo assim ouve o aflito.",
+  "anchorQuestion": "Para onde Eliú manda Jó olhar em Jó 35:5?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 35:5, Eliú manda Jó olhar para os céus e contemplar as nuvens.",
+   "verseRef": "Jó 35:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "Olhe para os céus e veja",
+   "feedbackCorrect": "O convite abre o trecho: olhar para cima.",
+   "feedbackWrong": {
+    "false": "Releia 35:5: olhe para os céus e contemple as nuvens."
+   },
+   "hint": "Veja o começo do versículo.",
+   "learningObjective": "Observar o convite de Eliú.",
+   "evidence": [
+    "Jó 35:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 35:5, toque para onde Jó deve olhar.",
+   "verseRef": "Jó 35:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "céus"
+    },
+    {
+     "id": "b",
+     "text": "nuvens"
+    },
+    {
+     "id": "c",
+     "text": "você"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Olhe para os céus e veja",
+   "feedbackCorrect": "O primeiro alvo do olhar são os céus.",
+   "feedbackWrong": {
+    "b": "As nuvens vêm na segunda ordem.",
+    "c": "\"Você\" é o ouvinte, não o alvo."
+   },
+   "hint": "Veja o objeto do verbo \"Olhe\".",
+   "learningObjective": "Identificar o alvo do olhar.",
+   "evidence": [
+    "Jó 35:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 35:8, a quem a impiedade prejudica?",
+   "verseRef": "Jó 35:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "A ti mesmo"
+    },
+    {
+     "id": "b",
+     "text": "Somente a Deus"
+    },
+    {
+     "id": "c",
+     "text": "Aos anjos"
+    },
+    {
+     "id": "d",
+     "text": "Aos reis distantes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A tua impiedade apenas prejudica a ti mesmo",
+   "feedbackCorrect": "A impiedade prejudica o próprio homem.",
+   "feedbackWrong": {
+    "b": "O texto diz \"a ti mesmo\".",
+    "c": "Não há anjos no versículo.",
+    "d": "Não se fala de reis distantes."
+   },
+   "hint": "Leia a primeira metade do versículo.",
+   "learningObjective": "Observar o alcance da impiedade.",
+   "evidence": [
+    "Jó 35:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 35:5 na ordem do texto.",
+   "verseRef": "Jó 35:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Olhe para os céus e veja"
+    },
+    {
+     "id": "b",
+     "text": "contemple as nuvens"
+    },
+    {
+     "id": "c",
+     "text": "que estão acima de você."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Olhe para os céus e veja",
+   "feedbackCorrect": "Primeiro os céus; depois as nuvens acima.",
+   "feedbackWrong": {
+    "default": "Comece por \"Olhe\"; o \"acima de você\" fecha."
+   },
+   "hint": "Comece pelo verbo \"Olhe\".",
+   "learningObjective": "Reconhecer a sequência de 35:5.",
+   "evidence": [
+    "Jó 35:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 35:14, o que está diante de Deus?",
+   "verseRef": "Jó 35:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "causa"
+    },
+    {
+     "id": "b",
+     "text": "nuvem"
+    },
+    {
+     "id": "c",
+     "text": "altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a sua causa está diante dele",
+   "feedbackCorrect": "A causa de Jó permanece diante de Deus.",
+   "feedbackWrong": {
+    "b": "\"Nuvem\" não está neste versículo.",
+    "c": "Não há \"altar\" no versículo."
+   },
+   "hint": "Veja o que está diante dele.",
+   "learningObjective": "Lembrar o que permanece diante de Deus.",
+   "evidence": [
+    "Jó 35:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 35:5 comunica que se liga a este contexto?",
+   "verseRef": "Jó 35:5",
+   "passageA": {
+    "ref": "Jó 35:5"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Eliú convida Jó a contemplar a altura de Deus antes de medir o valor do bem ou do mal humano."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Altura que relativiza o homem"
+    },
+    {
+     "id": "b",
+     "text": "Vitória militar imediata"
+    },
+    {
+     "id": "c",
+     "text": "Lista de reis de Edom"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Olhe para os céus e veja",
+   "feedbackCorrect": "Olhar para cima coloca o homem no tamanho certo.",
+   "feedbackWrong": {
+    "b": "Não há vitória militar.",
+    "c": "Não há lista de reis."
+   },
+   "hint": "Pense no que o olhar para cima faz.",
+   "learningObjective": "Ligar o convite ao contexto.",
+   "evidence": [
+    "Jó 35:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 35:10, todos os oprimidos perguntam onde está Deus que os fez.",
+   "verseRef": "Jó 35:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "Porém ninguém pergunta: Onde está Deus",
+   "feedbackCorrect": "O \"Porém\" marca que ninguém pergunta por Deus.",
+   "feedbackWrong": {
+    "true": "35:10 diz que ninguém pergunta: Onde está Deus."
+   },
+   "hint": "Veja o que vem depois de \"Porém\".",
+   "learningObjective": "Compreender o contraste do clamor.",
+   "evidence": [
+    "Jó 35:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 35:10, toque a palavra que marca o contraste com o clamor.",
+   "verseRef": "Jó 35:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porém"
+    },
+    {
+     "id": "b",
+     "text": "Deus"
+    },
+    {
+     "id": "c",
+     "text": "noite"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porém ninguém pergunta",
+   "feedbackCorrect": "\"Porém\" introduz o contraste.",
+   "feedbackWrong": {
+    "b": "\"Deus\" é quem falta na pergunta.",
+    "c": "\"Noite\" fecha a frase sobre hinos."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Jó 35:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 35:6–7 se relaciona com o olhar aos céus?",
+   "verseRef": "Jó 35:5–7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra que bem e mal humanos não tornam Deus refém"
+    },
+    {
+     "id": "b",
+     "text": "Afirma que o pecado enfraquece Deus"
+    },
+    {
+     "id": "c",
+     "text": "Diz que a justiça humana enriquece Deus"
+    },
+    {
+     "id": "d",
+     "text": "Nega qualquer valor à contemplação"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se pecares, que mal causarás a Ele?",
+   "feedbackCorrect": "As perguntas de 35:6–7 explicam a altura vista em 35:5.",
+   "feedbackWrong": {
+    "b": "35:6 pergunta que mal o pecado causaria a Ele.",
+    "c": "35:7 pergunta o que o justo pode dar.",
+    "d": "O olhar aos céus abre o argumento."
+   },
+   "hint": "Leia as perguntas sobre pecar e ser justo.",
+   "learningObjective": "Relacionar altura e independência de Deus.",
+   "evidence": [
+    "Jó 35:5–7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o argumento de Eliú em 35:5–14?",
+   "verseRef": "Jó 35:5–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Convite a olhar para os céus"
+    },
+    {
+     "id": "b",
+     "text": "Bem e mal não chantageiam Deus"
+    },
+    {
+     "id": "c",
+     "text": "A causa está diante dele: espere"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a sua causa está diante dele",
+   "feedbackCorrect": "O fio vai da contemplação à independência de Deus e à espera.",
+   "feedbackWrong": {
+    "default": "Comece pelo olhar; a espera fecha."
+   },
+   "hint": "Pense: olhar → independência → espera.",
+   "learningObjective": "Compreender a estrutura do trecho.",
+   "evidence": [
+    "Jó 35:5–14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 35:8, o que a impiedade prejudica?",
+   "verseRef": "Jó 35:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "ti"
+    },
+    {
+     "id": "b",
+     "text": "céus"
+    },
+    {
+     "id": "c",
+     "text": "nuvens"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "prejudica a ti mesmo",
+   "feedbackCorrect": "A palavra aponta para o próprio homem.",
+   "feedbackWrong": {
+    "b": "\"Céus\" está em 35:5.",
+    "c": "\"Nuvens\" está em 35:5."
+   },
+   "hint": "Veja o pronome depois de \"prejudica\".",
+   "learningObjective": "Lembrar o alvo da impiedade.",
+   "evidence": [
+    "Jó 35:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 35:5 a Salmos 121:1–2?",
+   "verseRef": "Jó 35:5",
+   "passageA": {
+    "ref": "Jó 35:5"
+   },
+   "passageB": {
+    "ref": "Salmos 121:1–2"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Olhar aos montes e ao Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Lista de sacrifícios"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de cidades"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Olhe para os céus e veja",
+   "feedbackCorrect": "Nos dois textos, o olhar para cima leva a Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de sacrifícios.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare o movimento do olhar.",
+   "learningObjective": "Relacionar o convite ao Salmo.",
+   "evidence": [
+    "Jó 35:5",
+    "Salmos 121:1–2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 35:5–14 sustenta que Deus não é refém do bem ou mal humano, e ainda assim a causa do aflito fica diante dele.",
+   "verseRef": "Jó 35:5–14",
+   "correctOptionId": "true",
+   "evidenceSpan": "a sua causa está diante dele",
+   "feedbackCorrect": "Independência de Deus e presença da causa: as duas coisas estão no trecho.",
+   "feedbackWrong": {
+    "false": "Una 35:6–7 com 35:14."
+   },
+   "hint": "Compare o meio e o fim do trecho.",
+   "learningObjective": "Interpretar independência e cuidado juntos.",
+   "evidence": [
+    "Jó 35:5–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 35:14, toque o trecho que sustenta a espera no Senhor.",
+   "verseRef": "Jó 35:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "espere nele"
+    },
+    {
+     "id": "b",
+     "text": "não o vê"
+    },
+    {
+     "id": "c",
+     "text": "gritos vazios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por isso, espere nele",
+   "feedbackCorrect": "A ordem final é esperar nele.",
+   "feedbackWrong": {
+    "b": "Isso descreve a queixa, não a ordem.",
+    "c": "Isso está em 35:13."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Sustentar a leitura da espera.",
+   "evidence": [
+    "Jó 35:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 35:5–14 sustenta?",
+   "verseRef": "Jó 35:5–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus não é refém do nosso bem ou mal, e ainda ouve o aflito"
+    },
+    {
+     "id": "b",
+     "text": "Deus depende da nossa justiça para existir"
+    },
+    {
+     "id": "c",
+     "text": "O clamor do oprimido nunca chega diante de Deus"
+    },
+    {
+     "id": "d",
+     "text": "Olhar para os céus prova que Deus está ausente"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a sua causa está diante dele",
+   "feedbackCorrect": "Altura de Deus e causa diante dele sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "35:7 nega que demos algo a Ele.",
+    "c": "35:14 diz que a causa está diante dele.",
+    "d": "O olhar é convite, não ausência."
+   },
+   "hint": "Una 35:5 e 35:14.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 35:5–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o olhar que leva à espera?",
+   "verseRef": "Jó 35:5–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eliú manda olhar para os céus"
+    },
+    {
+     "id": "b",
+     "text": "O salmista ergue os olhos ao Senhor"
+    },
+    {
+     "id": "c",
+     "text": "O justo espera quieto no Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "espere nele",
+   "feedbackCorrect": "O fio vai do olhar de Eliú ao Salmo 121 e à espera do Salmo 37.",
+   "feedbackWrong": {
+    "default": "Comece pelo olhar; a espera quieta fecha."
+   },
+   "hint": "Siga: olhar → montes → espera.",
+   "learningObjective": "Ver o fio do olhar e da espera.",
+   "evidence": [
+    "Jó 35:5",
+    "Salmos 121:1–2",
+    "Salmos 37:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 35:14, o que Eliú manda Jó fazer nele?",
+   "verseRef": "Jó 35:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "espere"
+    },
+    {
+     "id": "b",
+     "text": "fuja"
+    },
+    {
+     "id": "c",
+     "text": "acuse"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por isso, espere nele",
+   "feedbackCorrect": "O termo da postura é espere.",
+   "feedbackWrong": {
+    "b": "O texto não manda fugir.",
+    "c": "O texto não manda acusar."
+   },
+   "hint": "Veja o verbo final.",
+   "learningObjective": "Lembrar o termo da postura diante de Deus.",
+   "evidence": [
+    "Jó 35:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 35:7 a Atos 17:25?",
+   "verseRef": "Jó 35:7",
+   "passageA": {
+    "ref": "Jó 35:7"
+   },
+   "passageB": {
+    "ref": "Atos 17:25"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus não é servido por mãos"
+    },
+    {
+     "id": "b",
+     "text": "Templo sem altar"
+    },
+    {
+     "id": "c",
+     "text": "Lista de filósofos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o que pode lhe dar?",
+   "feedbackCorrect": "Nos dois textos, Deus não precisa do que o homem oferece.",
+   "feedbackWrong": {
+    "b": "Não se fala de altar aqui.",
+    "c": "Não há lista de filósofos."
+   },
+   "hint": "Compare o que o homem pode dar a Deus.",
+   "learningObjective": "Ligar Eliú a Atos.",
+   "evidence": [
+    "Jó 35:7",
+    "Atos 17:25"
+   ]
+  }
+ ]
+}

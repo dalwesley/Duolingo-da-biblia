@@ -20,6 +20,7 @@ O ChatGPT só escreve; `v3_manual.mjs` prepara o que colar e confere o que volto
 ```bash
 node scripts/v3_manual.mjs kit                        # uma vez: v3/_chatgpt/ para um Projeto do ChatGPT
 node scripts/v3_manual.mjs pedidos --trail rute       # v3/rute/manual/pedidos/<nn>-<cena>.txt
+node scripts/v3_manual.mjs pedidos --trail rute --completo  # cada pedido já leva instruções, especificação e exemplo (sem Projeto nem arquivos no ChatGPT)
 # cole cada pedido numa conversa nova do Projeto; salve a resposta em v3/rute/manual/respostas/<cena>.json
 node scripts/v3_manual.mjs conferir --trail rute      # válidas → cenas/; as outras → manual/correcoes/<cena>.txt
 # cole a correção na mesma conversa, salve por cima e confira de novo

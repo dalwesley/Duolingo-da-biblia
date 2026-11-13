@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 21:7–12",
+  "passages": [
+   {
+    "ref": "Jó 21:7–12"
+   },
+   {
+    "ref": "Jó 21:13–16"
+   }
+  ],
+  "context": "Jó aponta o que os amigos omitem: há ímpios que envelhecem em paz e poder.",
+  "keyword": "Por que prosperam",
+  "keywordGloss": "A pergunta de Jó que quebra o esquema fácil de culpa e dor.",
+  "focusQuestion": "Você já usou prosperidade ou dor como prova de inocência ou culpa?",
+  "reflectionPrompts": [
+   "Ímpios que vivem",
+   "Casas em paz",
+   "Conselho longe"
+  ],
+  "facts": [
+   {
+    "text": "Jó pergunta por que os ímpios vivem e envelhecem.",
+    "evidenceRef": "Jó 21:7",
+    "evidenceSpan": "Por que os ímpios vivem e envelhecem"
+   },
+   {
+    "text": "As casas dos ímpios têm paz, sem temor.",
+    "evidenceRef": "Jó 21:9",
+    "evidenceSpan": "As suas casas têm paz, sem temor"
+   },
+   {
+    "text": "Na prosperidade, eles desfrutam de seus dias.",
+    "evidenceRef": "Jó 21:13",
+    "evidenceSpan": "Na prosperidade, eles desfrutam de seus dias"
+   },
+   {
+    "text": "Eles pedem que Deus se afaste deles.",
+    "evidenceRef": "Jó 21:14",
+    "evidenceSpan": "Afaste-se de nós"
+   },
+   {
+    "text": "A prosperidade deles não vem de suas próprias mãos.",
+    "evidenceRef": "Jó 21:16",
+    "evidenceSpan": "a prosperidade deles não vem de suas próprias mãos"
+   },
+   {
+    "text": "Jó quer longe o conselho dos ímpios.",
+    "evidenceRef": "Jó 21:16",
+    "evidenceSpan": "esteja longe de mim o conselho dos ímpios"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "ímpios",
+    "gloss": "Os que Jó vê viver e envelhecer em poder."
+   },
+   {
+    "term": "prosperidade",
+    "gloss": "O bem-estar que não prova inocência."
+   },
+   {
+    "term": "conselho",
+    "gloss": "O que Jó rejeita dos ímpios."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pergunta: por que os ímpios vivem",
+    "evidenceRef": "Jó 21:7–8"
+   },
+   {
+    "label": "Casas em paz e festa",
+    "evidenceRef": "Jó 21:9–12"
+   },
+   {
+    "label": "Prosperidade e rejeição de Deus",
+    "evidenceRef": "Jó 21:13–15"
+   },
+   {
+    "label": "Prosperidade não vem das mãos deles",
+    "evidenceRef": "Jó 21:16"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Há paz sem temor; contudo rejeitam a Deus.",
+    "marker": null,
+    "evidenceRef": "Jó 21:9"
+   },
+   {
+    "kind": "contraste",
+    "text": "Prosperam; porém a prosperidade não vem das mãos deles.",
+    "marker": "porém",
+    "evidenceRef": "Jó 21:16"
+   },
+   {
+    "kind": "resultado",
+    "text": "E, no entanto, dizem a Deus que se afaste.",
+    "marker": "no entanto",
+    "evidenceRef": "Jó 21:14"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 73:3",
+    "bridge": "Inveja dos arrogantes"
+   },
+   {
+    "ref": "Jeremias 12:1",
+    "bridge": "Por que prosperam os ímpios"
+   },
+   {
+    "ref": "Lucas 6:24",
+    "bridge": "Ai dos ricos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Todo ímpio sofre cedo e perde a paz.",
+    "why": "21:7–9 mostra ímpios que vivem em paz."
+   },
+   {
+    "text": "A prosperidade prova que Deus os aprova.",
+    "why": "21:14–16 mostra rejeição e origem outra."
+   },
+   {
+    "text": "Jó admira e segue o conselho dos ímpios.",
+    "why": "21:16 pede distância do conselho."
+   }
+  ],
+  "centralInsight": "A realidade quebra o esquema fácil: prosperidade não prova inocência, nem dor prova culpa.",
+  "anchorQuestion": "O que Jó pergunta sobre os ímpios em Jó 21:7?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 21:7, Jó pergunta por que os ímpios vivem e envelhecem.",
+   "verseRef": "Jó 21:7",
+   "correctOptionId": "true",
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "A pergunta abre o argumento de Jó.",
+   "feedbackWrong": {
+    "false": "Releia o início de 21:7."
+   },
+   "hint": "Veja a pergunta inicial.",
+   "learningObjective": "Observar a pergunta de Jó.",
+   "evidence": [
+    "Jó 21:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 21:9, toque o que as casas dos ímpios têm.",
+   "verseRef": "Jó 21:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "paz"
+    },
+    {
+     "id": "b",
+     "text": "temor"
+    },
+    {
+     "id": "c",
+     "text": "vara"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "As suas casas têm paz",
+   "feedbackCorrect": "As casas têm paz.",
+   "feedbackWrong": {
+    "b": "O texto diz sem temor.",
+    "c": "A vara de Deus não está sobre eles."
+   },
+   "hint": "Veja o objeto de têm.",
+   "learningObjective": "Identificar a paz das casas.",
+   "evidence": [
+    "Jó 21:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 21:7, o que ainda acontece com os ímpios?",
+   "verseRef": "Jó 21:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Tornam-se mais poderosos"
+    },
+    {
+     "id": "b",
+     "text": "Perdem logo a força"
+    },
+    {
+     "id": "c",
+     "text": "Somem sem descendência"
+    },
+    {
+     "id": "d",
+     "text": "Vivem só um dia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ainda se tornam mais poderosos",
+   "feedbackCorrect": "Eles ainda se tornam mais poderosos.",
+   "feedbackWrong": {
+    "b": "O texto fala de poder.",
+    "c": "21:8 fala de descendência.",
+    "d": "O texto fala de envelhecer."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar o poder dos ímpios.",
+   "evidence": [
+    "Jó 21:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 21:9 na ordem do texto.",
+   "verseRef": "Jó 21:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "As suas casas têm paz, sem temor"
+    },
+    {
+     "id": "b",
+     "text": "e a vara de Deus"
+    },
+    {
+     "id": "c",
+     "text": "não está sobre eles."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "As suas casas têm paz, sem temor",
+   "feedbackCorrect": "Paz sem temor; sem vara.",
+   "feedbackWrong": {
+    "default": "Comece pelas casas."
+   },
+   "hint": "Comece por As suas casas.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 21:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 21:13, em que eles desfrutam de seus dias?",
+   "verseRef": "Jó 21:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "prosperidade"
+    },
+    {
+     "id": "b",
+     "text": "temor"
+    },
+    {
+     "id": "c",
+     "text": "vara"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Na prosperidade, eles desfrutam",
+   "feedbackCorrect": "A palavra é prosperidade.",
+   "feedbackWrong": {
+    "b": "Temor está em 21:9.",
+    "c": "Vara está em 21:9."
+   },
+   "hint": "Veja o início do versículo.",
+   "learningObjective": "Lembrar a prosperidade.",
+   "evidence": [
+    "Jó 21:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 21:7 comunica que se liga a este contexto?",
+   "verseRef": "Jó 21:7",
+   "passageA": {
+    "ref": "Jó 21:7"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jó aponta ímpios que envelhecem em paz e poder."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Esquema que não fecha"
+    },
+    {
+     "id": "b",
+     "text": "Culpa sempre punida"
+    },
+    {
+     "id": "c",
+     "text": "Paz só dos justos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "A pergunta quebra o esquema fácil.",
+   "feedbackWrong": {
+    "b": "Jó mostra exceções.",
+    "c": "21:9 mostra paz dos ímpios."
+   },
+   "hint": "Pense no que a pergunta quebra.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 21:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 21:14–16, os ímpios pedem a presença de Deus e Jó admira o conselho deles.",
+   "verseRef": "Jó 21:14–15",
+   "correctOptionId": "false",
+   "evidenceSpan": "Afaste-se de nós",
+   "feedbackCorrect": "Pedem distância; Jó rejeita o conselho.",
+   "feedbackWrong": {
+    "true": "Compare 21:14 e 21:16."
+   },
+   "hint": "Veja o pedido e o conselho.",
+   "learningObjective": "Compreender a rejeição.",
+   "evidence": [
+    "Jó 21:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 21:16, toque a palavra que marca o contraste sobre a prosperidade.",
+   "verseRef": "Jó 21:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "porém"
+    },
+    {
+     "id": "b",
+     "text": "mãos"
+    },
+    {
+     "id": "c",
+     "text": "conselho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Veja, porém, que a prosperidade",
+   "feedbackCorrect": "Porém introduz o contraste.",
+   "feedbackWrong": {
+    "b": "Mãos são a origem negada.",
+    "c": "Conselho é o que Jó rejeita."
+   },
+   "hint": "Procure o marcador.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 21:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 21:16 se relaciona com 21:7–9?",
+   "verseRef": "Jó 21:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "Admite a prosperidade, mas nega que prove inocência"
+    },
+    {
+     "id": "b",
+     "text": "Nega que os ímpios vivam em paz"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que a vara de Deus está sobre eles"
+    },
+    {
+     "id": "d",
+     "text": "Diz que Jó segue o conselho dos ímpios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a prosperidade deles não vem de suas próprias mãos",
+   "feedbackCorrect": "Há prosperidade; ela não fecha o esquema.",
+   "feedbackWrong": {
+    "b": "21:7–9 afirma paz e vida.",
+    "c": "21:9 diz que a vara não está.",
+    "d": "21:16 pede distância."
+   },
+   "hint": "Una a pergunta e o porém.",
+   "learningObjective": "Relacionar prosperidade e juízo.",
+   "evidence": [
+    "Jó 21:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o argumento de Jó em 21:7–16?",
+   "verseRef": "Jó 21:7–8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pergunta por que os ímpios vivem"
+    },
+    {
+     "id": "b",
+     "text": "Mostra casas em paz e festa"
+    },
+    {
+     "id": "c",
+     "text": "Rejeita o conselho dos ímpios"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "Pergunta, retrato e rejeição.",
+   "feedbackWrong": {
+    "default": "Comece pela pergunta."
+   },
+   "hint": "Pense: pergunta → paz → rejeição.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 21:7–8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 21:16, o que Jó quer longe de si?",
+   "verseRef": "Jó 21:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "conselho"
+    },
+    {
+     "id": "b",
+     "text": "paz"
+    },
+    {
+     "id": "c",
+     "text": "harpa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "esteja longe de mim o conselho",
+   "feedbackCorrect": "A palavra é conselho.",
+   "feedbackWrong": {
+    "b": "Paz está em 21:9.",
+    "c": "Harpa está em 21:12."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar a rejeição.",
+   "evidence": [
+    "Jó 21:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 21:7 a Salmos 73:3?",
+   "verseRef": "Jó 21:7",
+   "passageA": {
+    "ref": "Jó 21:7"
+   },
+   "passageB": {
+    "ref": "Salmos 73:3"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Inveja dos arrogantes"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "Nos dois textos, a prosperidade dos ímpios inquieta.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a inquietação.",
+   "learningObjective": "Relacionar Jó ao Salmo.",
+   "evidence": [
+    "Jó 21:7",
+    "Salmos 73:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 21:7–16 sustenta que prosperidade prova inocência e dor prova culpa.",
+   "verseRef": "Jó 21:7",
+   "correctOptionId": "false",
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "A realidade quebra esse esquema fácil.",
+   "feedbackWrong": {
+    "true": "Una 21:7 e 21:16."
+   },
+   "hint": "Veja o que a pergunta quebra.",
+   "learningObjective": "Interpretar o esquema quebrado.",
+   "evidence": [
+    "Jó 21:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 21:16, toque o trecho que nega a origem da prosperidade.",
+   "verseRef": "Jó 21:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "próprias mãos"
+    },
+    {
+     "id": "b",
+     "text": "conselho dos ímpios"
+    },
+    {
+     "id": "c",
+     "text": "Veja, porém"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não vem de suas próprias mãos",
+   "feedbackCorrect": "Não vem das próprias mãos.",
+   "feedbackWrong": {
+    "b": "Conselho é o que Jó rejeita.",
+    "c": "Veja, porém introduz o contraste."
+   },
+   "hint": "Veja a origem negada.",
+   "learningObjective": "Sustentar a leitura da prosperidade.",
+   "evidence": [
+    "Jó 21:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 21:7–16 sustenta?",
+   "verseRef": "Jó 21:7–8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prosperidade não prova inocência, nem dor prova culpa"
+    },
+    {
+     "id": "b",
+     "text": "Todo ímpio perde a paz cedo"
+    },
+    {
+     "id": "c",
+     "text": "A vara de Deus sempre está sobre os ímpios"
+    },
+    {
+     "id": "d",
+     "text": "Jó segue o conselho dos ímpios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "A pergunta e o porém sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "21:7–9 mostra o contrário.",
+    "c": "21:9 diz que a vara não está.",
+    "d": "21:16 rejeita o conselho."
+   },
+   "hint": "Una 21:7 e 21:16.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 21:7–8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra a inquietação com os ímpios?",
+   "verseRef": "Jó 21:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó pergunta por que os ímpios prosperam"
+    },
+    {
+     "id": "b",
+     "text": "O salmista quase tropeça de inveja"
+    },
+    {
+     "id": "c",
+     "text": "Jeremias pergunta o mesmo a Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "O fio vai de Jó ao Salmo e a Jeremias.",
+   "feedbackWrong": {
+    "default": "Comece por Jó."
+   },
+   "hint": "Siga: Jó → Salmo → Jeremias.",
+   "learningObjective": "Ver o fio da pergunta.",
+   "evidence": [
+    "Jó 21:7",
+    "Salmos 73:3",
+    "Jeremias 12:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 21:7, o que os ímpios ainda fazem além de viver?",
+   "verseRef": "Jó 21:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "envelhecem"
+    },
+    {
+     "id": "b",
+     "text": "conselho"
+    },
+    {
+     "id": "c",
+     "text": "prosperidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vivem e envelhecem",
+   "feedbackCorrect": "O termo é envelhecem.",
+   "feedbackWrong": {
+    "b": "Conselho está em 21:16.",
+    "c": "Prosperidade está em 21:13."
+   },
+   "hint": "Veja o segundo verbo.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 21:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 21:7 a Jeremias 12:1?",
+   "verseRef": "Jó 21:7",
+   "passageA": {
+    "ref": "Jó 21:7"
+   },
+   "passageB": {
+    "ref": "Jeremias 12:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Por que prosperam os ímpios"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de terras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "Nos dois textos, a pergunta inquieta o justo.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare a pergunta.",
+   "learningObjective": "Ligar Jó a Jeremias.",
+   "evidence": [
+    "Jó 21:7",
+    "Jeremias 12:1"
+   ]
+  }
+ ]
+}

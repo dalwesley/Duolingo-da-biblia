@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Daniel 4:28–33",
+    "passages": [
+      { "ref": "Daniel 4:28–33" },
+      { "ref": "Daniel 4:34–37" }
+    ],
+    "context": "Depois do sonho da árvore, Nabucodonosor ainda se gloria na grande Babilônia. A sentença anunciada se cumpre até ele reconhecer o domínio do Altíssimo.",
+    "keyword": "soberba",
+    "keywordGloss": "A postura que Deus tem poder de humilhar — o rei aprende isso na própria pele.",
+    "focusQuestion": "Onde a sua segurança ainda soa como \"eu edifiquei\" em vez de reconhecer o Altíssimo?",
+    "reflectionPrompts": [
+      "Glória própria",
+      "Domínio do Altíssimo",
+      "Humilhar a soberba"
+    ],
+    "facts": [
+      {
+        "text": "Ao cabo de doze meses, o rei passeava pelo terraço do palácio.",
+        "evidenceRef": "Daniel 4:29",
+        "evidenceSpan": "Ao cabo de doze meses, enquanto passeava pelo terraço"
+      },
+      {
+        "text": "O rei atribuiu a grande Babilônia ao poder de sua força e à glória de sua majestade.",
+        "evidenceRef": "Daniel 4:30",
+        "evidenceSpan": "com o poder de minha força e para a glória de minha majestade"
+      },
+      {
+        "text": "Uma voz do céu anunciou que o reino já passou dele.",
+        "evidenceRef": "Daniel 4:31",
+        "evidenceSpan": "Já passou de ti o teu reino"
+      },
+      {
+        "text": "Ele passou a comer erva como os bois até crescerem cabelos como penas da águia.",
+        "evidenceRef": "Daniel 4:33",
+        "evidenceSpan": "passando a comer erva como os bois"
+      },
+      {
+        "text": "Ao fim, levantou os olhos ao céu e o entendimento voltou.",
+        "evidenceRef": "Daniel 4:34",
+        "evidenceSpan": "levantei os meus olhos ao céu e tornou-me a vir o entendimento"
+      },
+      {
+        "text": "Ele louva o Rei do céu, que humilha os que se conduzem com soberba.",
+        "evidenceRef": "Daniel 4:37",
+        "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "soberba",
+        "gloss": "Postura que o Rei do céu tem poder de humilhar."
+      },
+      {
+        "term": "Altíssimo",
+        "gloss": "Aquele cujo domínio o rei precisa aprender a reconhecer."
+      },
+      {
+        "term": "domínio",
+        "gloss": "O governo do Altíssimo sobre o reino dos homens."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jactância no terraço de Babilônia",
+        "evidenceRef": "Daniel 4:28–30"
+      },
+      {
+        "label": "Voz do céu e sentença",
+        "evidenceRef": "Daniel 4:31–32"
+      },
+      {
+        "label": "Cumprimento entre os animais",
+        "evidenceRef": "Daniel 4:33"
+      },
+      {
+        "label": "Entendimento restaurado e louvor",
+        "evidenceRef": "Daniel 4:34–37"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Ainda a palavra na boca; então a voz desce do céu.",
+        "marker": "quando",
+        "evidenceRef": "Daniel 4:31"
+      },
+      {
+        "kind": "propósito",
+        "text": "A humilhação dura até que ele aprenda o domínio do Altíssimo.",
+        "marker": "até que",
+        "evidenceRef": "Daniel 4:32"
+      },
+      {
+        "kind": "resultado",
+        "text": "Naquela mesma hora cumpriu-se a palavra sobre Nabucodonosor.",
+        "marker": null,
+        "evidenceRef": "Daniel 4:33"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Provérbios 16:18", "bridge": "Soberba precede a queda" },
+      { "ref": "Tiago 4:6", "bridge": "Deus resiste ao soberbo" },
+      { "ref": "Lucas 1:52", "bridge": "Derruba os poderosos" }
+    ],
+    "misreadings": [
+      {
+        "text": "O rei só teve um sonho estranho; nada se cumpriu de fato.",
+        "why": "4:33 diz que naquela mesma hora cumpriu-se a palavra."
+      },
+      {
+        "text": "Nabucodonosor nunca reconheceu o Altíssimo depois.",
+        "why": "4:34–37 registra entendimento restaurado e louvor ao Rei do céu."
+      },
+      {
+        "text": "A soberba do rei foi elogiável como liderança forte.",
+        "why": "4:37 conclui que Deus humilha os que se conduzem com soberba."
+      }
+    ],
+    "centralInsight": "Os que andam na soberba, Deus pode humilhar; ele faz segundo a sua vontade.",
+    "anchorQuestion": "Segundo Daniel 4:37, o que Deus tem poder de fazer aos soberbos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 4:30, Nabucodonosor atribui a grande Babilônia ao poder de sua força.",
+      "verseRef": "Daniel 4:30",
+      "correctOptionId": "true",
+      "evidenceSpan": "com o poder de minha força e para a glória de minha majestade",
+      "feedbackCorrect": "O rei se gloria: eu edifiquei com o poder de minha força.",
+      "feedbackWrong": { "false": "Releia 4:30: ele fala do poder de sua força." },
+      "hint": "Veja a quem ele atribui a construção.",
+      "learningObjective": "Observar a jactância do rei.",
+      "evidence": ["Daniel 4:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 4:31, toque o que já passou do rei.",
+      "verseRef": "Daniel 4:31",
+      "evidenceSpan": "Já passou de ti o teu reino",
+      "feedbackCorrect": "A voz anuncia: já passou de ti o teu reino.",
+      "hint": "Procure o que a voz diz que passou.",
+      "learningObjective": "Identificar a sentença sobre o reino.",
+      "evidence": ["Daniel 4:31"],
+      "options": [
+        { "id": "a", "text": "teu reino" },
+        { "id": "b", "text": "uma voz" },
+        { "id": "c", "text": "do céu" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Uma voz\" anuncia; o que passa é o reino.",
+        "c": "\"Do céu\" indica origem da voz, não o que passou."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 4:33, o que Nabucodonosor passou a comer?",
+      "verseRef": "Daniel 4:33",
+      "evidenceSpan": "passando a comer erva como os bois",
+      "feedbackCorrect": "Ele passou a comer erva como os bois.",
+      "hint": "Veja a comparação com os animais.",
+      "learningObjective": "Observar o cumprimento da sentença.",
+      "evidence": ["Daniel 4:33"],
+      "options": [
+        { "id": "a", "text": "Iguarias da mesa real" },
+        { "id": "b", "text": "Erva como os bois" },
+        { "id": "c", "text": "Pão do templo" },
+        { "id": "d", "text": "Frutos do jardim" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto o põe entre os animais, não na mesa real.",
+        "c": "Não há pão do templo neste versículo.",
+        "d": "O texto fala de erva, como os bois."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 4:30 na ordem do texto.",
+      "verseRef": "Daniel 4:30",
+      "evidenceSpan": "Não é esta a grande Babilônia que eu edifiquei",
+      "feedbackCorrect": "Babilônia que eu edifiquei, com minha força, para minha majestade.",
+      "hint": "Comece pela pergunta sobre Babilônia.",
+      "learningObjective": "Reconhecer a sequência da jactância.",
+      "evidence": ["Daniel 4:30"],
+      "options": [
+        { "id": "a", "text": "Não é esta a grande Babilônia que eu edifiquei" },
+        { "id": "b", "text": "para a casa real, com o poder de minha força" },
+        { "id": "c", "text": "e para a glória de minha majestade?" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela Babilônia; a majestade fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 4:37, o que Deus tem poder para fazer aos soberbos?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Ele tem poder para humilhar os que se conduzem com soberba.",
+      "hint": "É o verbo da ação sobre os soberbos.",
+      "learningObjective": "Lembrar a ação de Deus sobre a soberba.",
+      "evidence": ["Daniel 4:37"],
+      "options": [
+        { "id": "a", "text": "elogiar" },
+        { "id": "b", "text": "humilhar" },
+        { "id": "c", "text": "coroar" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto não fala de elogiar soberbos.",
+        "c": "O texto fala de humilhar, não de coroar."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 4:30 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 4:30",
+      "evidenceSpan": "com o poder de minha força e para a glória de minha majestade",
+      "feedbackCorrect": "A jactância do rei prepara a sentença que o humilha.",
+      "hint": "Veja a quem ele atribui a glória.",
+      "learningObjective": "Ligar a jactância ao julgamento que vem.",
+      "evidence": ["Daniel 4:30"],
+      "passageA": { "ref": "Daniel 4:30" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Nabucodonosor se gloria na obra própria antes de ser humilhado."
+      },
+      "options": [
+        { "id": "a", "text": "Glória atribuída a si" },
+        { "id": "b", "text": "Louvor imediato ao Altíssimo" },
+        { "id": "c", "text": "Abdicação voluntária do trono" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O louvor ao Altíssimo vem depois, em 4:34–37.",
+        "c": "O reino lhe é tirado, não abdicação voluntária."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 4:32, a humilhação termina antes de ele aprender o domínio do Altíssimo.",
+      "verseRef": "Daniel 4:32",
+      "correctOptionId": "false",
+      "evidenceSpan": "até que aprendas que o Altíssimo tem domínio sobre o reino dos homens",
+      "feedbackCorrect": "A sentença dura até que ele aprenda o domínio do Altíssimo.",
+      "feedbackWrong": { "true": "Releia 4:32: \"até que aprendas\"." },
+      "hint": "Veja a expressão \"até que\".",
+      "learningObjective": "Compreender o propósito da humilhação.",
+      "evidence": ["Daniel 4:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 4:32, toque a expressão que marca o limite da sentença.",
+      "verseRef": "Daniel 4:32",
+      "evidenceSpan": "até que aprendas que o Altíssimo tem domínio",
+      "feedbackCorrect": "\"Até que\" marca o propósito: aprender o domínio do Altíssimo.",
+      "hint": "É a expressão antes de \"aprendas\".",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": ["Daniel 4:32"],
+      "options": [
+        { "id": "a", "text": "até que" },
+        { "id": "b", "text": "ervas" },
+        { "id": "c", "text": "bois" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Ervas\" descreve o alimento, não o limite.",
+        "c": "\"Bois\" é comparação, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 4:30–32 relaciona a jactância e a sentença?",
+      "verseRef": "Daniel 4:30–31",
+      "evidenceSpan": "Estava ainda a palavra na boca do rei, quando uma voz desceu do céu",
+      "feedbackCorrect": "Ainda na boca a jactância, a voz anuncia: o reino passou.",
+      "hint": "Veja o momento em que a voz desce.",
+      "learningObjective": "Relacionar a palavra soberba à sentença imediata.",
+      "evidence": ["Daniel 4:30–31"],
+      "options": [
+        { "id": "a", "text": "A jactância é interrompida pela voz do céu" },
+        { "id": "b", "text": "O céu elogia a força do rei" },
+        { "id": "c", "text": "A sentença só viria muitos anos depois" },
+        { "id": "d", "text": "O rei cala e nada acontece" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A voz anuncia perda do reino, não elogio.",
+        "c": "4:33: naquela mesma hora cumpriu-se.",
+        "d": "A voz fala enquanto a palavra ainda está na boca."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 4:28–37?",
+      "verseRef": "Daniel 4:28–37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Jactância, sentença, cumprimento animal, louvor restaurado.",
+      "hint": "Comece pelo terraço.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": ["Daniel 4:28–37"],
+      "options": [
+        { "id": "a", "text": "Jactância no terraço de Babilônia" },
+        { "id": "b", "text": "Sentença cumprida entre os animais" },
+        { "id": "c", "text": "Entendimento restaurado e louvor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela jactância; o louvor fecha." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 4:32, que título marca quem tem domínio sobre o reino?",
+      "verseRef": "Daniel 4:32",
+      "evidenceSpan": "o Altíssimo tem domínio sobre o reino dos homens",
+      "feedbackCorrect": "O Altíssimo tem domínio sobre o reino dos homens.",
+      "hint": "É o título de quem governa o reino.",
+      "learningObjective": "Lembrar quem detém o domínio.",
+      "evidence": ["Daniel 4:32"],
+      "options": [
+        { "id": "a", "text": "Altíssimo" },
+        { "id": "b", "text": "sátrapa" },
+        { "id": "c", "text": "adivinho" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Sátrapa\" não é quem tem o domínio em 4:32.",
+        "c": "\"Adivinho\" não aparece em 4:32."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 4:37 a Provérbios 16:18?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Nos dois textos, a soberba encontra queda e humilhação.",
+      "hint": "Compare soberba e consequência.",
+      "learningObjective": "Relacionar a soberba em Daniel e em Provérbios.",
+      "evidence": ["Daniel 4:37", "Provérbios 16:18"],
+      "passageA": { "ref": "Daniel 4:37" },
+      "passageB": { "ref": "Provérbios 16:18" },
+      "options": [
+        { "id": "a", "text": "Soberba precede a queda" },
+        { "id": "b", "text": "Soberba garante o trono" },
+        { "id": "c", "text": "Humildade é fraqueza" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos ligam soberba a humilhação, não a garantia.",
+        "c": "O contraste é com soberba, não com humildade fraca."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 4:34–37, Nabucodonosor permanece sem reconhecer o Altíssimo depois da humilhação.",
+      "verseRef": "Daniel 4:34–37",
+      "correctOptionId": "false",
+      "evidenceSpan": "bendisse o Altíssimo, louvei e glorifiquei ao que vive para sempre",
+      "feedbackCorrect": "Ele bendiz o Altíssimo e louva o Rei do céu.",
+      "feedbackWrong": { "true": "Releia 4:34 e 4:37: há louvor explícito." },
+      "hint": "Veja o que ele faz ao fim daqueles dias.",
+      "learningObjective": "Interpretar o reconhecimento após a humilhação.",
+      "evidence": ["Daniel 4:34", "Daniel 4:37"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 4:37, toque o trecho que nomeia a postura que Deus humilha.",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "os que se conduzem com soberba",
+      "feedbackCorrect": "Deus humilha os que se conduzem com soberba.",
+      "hint": "Procure a palavra da postura no fim.",
+      "learningObjective": "Sustentar com o texto o alvo da humilhação.",
+      "evidence": ["Daniel 4:37"],
+      "options": [
+        { "id": "a", "text": "soberba" },
+        { "id": "b", "text": "caminhos" },
+        { "id": "c", "text": "obras" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Caminhos\" são justos; a postura humilhada é a soberba.",
+        "c": "\"Obras\" são verdadeiras; a postura humilhada é a soberba."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 4:28–37 sustenta sobre o poder e a soberba?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "O Rei do céu governa e pode humilhar a soberba humana.",
+      "hint": "Compare cada opção com 4:32 e 4:37.",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": ["Daniel 4:37"],
+      "options": [
+        { "id": "a", "text": "Deus pode humilhar quem se conduz com soberba" },
+        { "id": "b", "text": "A soberba do rei foi aprovada como virtude" },
+        { "id": "c", "text": "O domínio humano é absoluto e sem limite" },
+        { "id": "d", "text": "O Altíssimo não age no reino dos homens" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "4:37 condena a soberba.",
+        "c": "4:32: o Altíssimo dá o reino a quem quiser.",
+        "d": "O texto afirma o domínio do Altíssimo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da soberba humilhada?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Provérbios avisa; Daniel mostra a queda; Tiago confirma a resistência de Deus.",
+      "hint": "Parta do aviso e avance.",
+      "learningObjective": "Ver Nabucodonosor no fio bíblico da soberba.",
+      "evidence": ["Provérbios 16:18", "Daniel 4:37", "Tiago 4:6"],
+      "options": [
+        { "id": "a", "text": "Provérbios: soberba precede a queda" },
+        { "id": "b", "text": "Daniel: Deus humilha os soberbos" },
+        { "id": "c", "text": "Tiago: Deus resiste ao soberbo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Provérbios 16, Daniel 4 e Tiago 4." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 4:32, que palavra nomeia o governo do Altíssimo?",
+      "verseRef": "Daniel 4:32",
+      "evidenceSpan": "o Altíssimo tem domínio sobre o reino dos homens",
+      "feedbackCorrect": "O Altíssimo tem domínio — termo que carrega o sentido da cena.",
+      "hint": "É o que o Altíssimo tem sobre o reino.",
+      "learningObjective": "Lembrar o termo-chave do governo divino.",
+      "evidence": ["Daniel 4:32"],
+      "options": [
+        { "id": "a", "text": "domínio" },
+        { "id": "b", "text": "acaso" },
+        { "id": "c", "text": "medo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Acaso\" não é o que 4:32 afirma.",
+        "c": "\"Medo\" não nomeia o governo em 4:32."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 4:37 a Lucas 1:52?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Nos dois textos, Deus derruba ou humilha os poderosos soberbos.",
+      "hint": "Compare a ação de Deus sobre os altos.",
+      "learningObjective": "Ligar a humilhação em Daniel ao cântico de Lucas.",
+      "evidence": ["Daniel 4:37", "Lucas 1:52"],
+      "passageA": { "ref": "Daniel 4:37" },
+      "passageB": { "ref": "Lucas 1:52" },
+      "options": [
+        { "id": "a", "text": "Deus humilha os altos" },
+        { "id": "b", "text": "Deus ignora a soberba" },
+        { "id": "c", "text": "Reis mandam no céu" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram ação contra a soberba.",
+        "c": "O foco é o governo de Deus, não o dos reis."
+      }
+    }
+  ]
+}

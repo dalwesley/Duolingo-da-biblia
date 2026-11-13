@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "2 Tessalonicenses 2:6–14",
+    "passages": [
+      {
+        "ref": "2 Tessalonicenses 2:6–10"
+      },
+      {
+        "ref": "2 Tessalonicenses 2:11–14"
+      }
+    ],
+    "context": "O mistério da iniquidade já opera, mas Deus escolheu os amados para salvação pela santificação e fé na verdade.",
+    "keyword": "verdade",
+    "keywordGloss": "A fé na verdade e o amor da verdade guardam os eleitos.",
+    "focusQuestion": "Onde você precisa permanecer firme na verdade?",
+    "reflectionPrompts": [
+      "Mistério da iniquidade",
+      "Amor da verdade",
+      "Escolhidos para salvação"
+    ],
+    "facts": [
+      {
+        "text": "O mistério da iniquidade já está em ação.",
+        "evidenceRef": "2 Tessalonicenses 2:7",
+        "evidenceSpan": "o mistério da iniquidade já está em ação"
+      },
+      {
+        "text": "O Senhor Jesus matará o ímpio com o sopro de sua boca.",
+        "evidenceRef": "2 Tessalonicenses 2:8",
+        "evidenceSpan": "a quem o Senhor Jesus matará com o sopro de sua boca"
+      },
+      {
+        "text": "A vinda do ímpio é segundo a eficácia de Satanás.",
+        "evidenceRef": "2 Tessalonicenses 2:9",
+        "evidenceSpan": "segundo a eficácia de Satanás"
+      },
+      {
+        "text": "Perecem os que não acolheram o amor da verdade.",
+        "evidenceRef": "2 Tessalonicenses 2:10",
+        "evidenceSpan": "não acolheram o amor da verdade para serem salvos"
+      },
+      {
+        "text": "Deus escolheu desde o princípio para a salvação.",
+        "evidenceRef": "2 Tessalonicenses 2:13",
+        "evidenceSpan": "Deus os escolheu desde o princípio para a salvação"
+      },
+      {
+        "text": "Pelo evangelho chamou para alcançarem a glória.",
+        "evidenceRef": "2 Tessalonicenses 2:14",
+        "evidenceSpan": "ele vos chamou a fim de que alcanceis a glória"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "iniquidade",
+        "gloss": "Mistério já em ação até o afastamento do que detém."
+      },
+      {
+        "term": "verdade",
+        "gloss": "Amor e fé na verdade que salvam."
+      },
+      {
+        "term": "salvação",
+        "gloss": "Escolha desde o princípio com santificação do Espírito."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O que detém",
+        "evidenceRef": "2 Tessalonicenses 2:6–8"
+      },
+      {
+        "label": "Engano e juízo",
+        "evidenceRef": "2 Tessalonicenses 2:9–12"
+      },
+      {
+        "label": "Escolha e chamado",
+        "evidenceRef": "2 Tessalonicenses 2:13–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O mistério já opera porque ainda não foi revelado o ímpio.",
+        "marker": "Porque",
+        "evidenceRef": "2 Tessalonicenses 2:7"
+      },
+      {
+        "kind": "propósito",
+        "text": "Há freio para que a revelação seja no tempo certo.",
+        "marker": "para que",
+        "evidenceRef": "2 Tessalonicenses 2:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "O chamado pelo evangelho é para alcançarem a glória.",
+        "marker": "a fim de que",
+        "evidenceRef": "2 Tessalonicenses 2:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 8:32",
+        "bridge": "A verdade liberta"
+      },
+      {
+        "ref": "Efésios 1:4",
+        "bridge": "Escolhidos em Cristo"
+      },
+      {
+        "ref": "1 Pedro 1:2",
+        "bridge": "Santificação do Espírito"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O ímpio já reina sem freio algum.",
+        "why": "Há aquele que agora o detém até ser afastado."
+      },
+      {
+        "text": "A salvação independe da verdade.",
+        "why": "A escolha é pela santificação e fé na verdade."
+      },
+      {
+        "text": "Sinais bastam para garantir salvação.",
+        "why": "Sinais podem ser da mentira; salva o amor da verdade."
+      }
+    ],
+    "centralInsight": "Deus escolheu-vos para a salvação pela santificação do Espírito e fé na verdade: permanecei firmes.",
+    "anchorQuestion": "Como o amor da verdade sustenta sua firmeza hoje?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "learningObjective": "Ver a iniquidade em ação",
+      "evidence": [
+        "2 Tessalonicenses 2:7"
+      ],
+      "question": "Em 2 Tessalonicenses 2:7, o mistério da iniquidade já está em ação.",
+      "verseRef": "2 Tessalonicenses 2:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "o mistério da iniquidade já está em ação",
+      "feedbackCorrect": "O mistério já está em ação.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a ação presente."
+      },
+      "hint": "Leia a frase do mistério."
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "learningObjective": "Localizar o ímpio",
+      "evidence": [
+        "2 Tessalonicenses 2:8"
+      ],
+      "question": "Em 2 Tessalonicenses 2:8, toque quem será revelado.",
+      "verseRef": "2 Tessalonicenses 2:8",
+      "correctOptionId": "a",
+      "evidenceSpan": "será revelado o ímpio",
+      "options": [
+        {
+          "id": "a",
+          "text": "ímpio"
+        },
+        {
+          "id": "b",
+          "text": "sopro"
+        },
+        {
+          "id": "c",
+          "text": "esplendor"
+        }
+      ],
+      "feedbackCorrect": "Então será revelado o ímpio.",
+      "feedbackWrong": {
+        "b": "Sopro é o meio da destruição.",
+        "c": "Esplendor marca a vinda do Senhor."
+      },
+      "hint": "Toque o revelado."
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "learningObjective": "Ver o amor da verdade",
+      "evidence": [
+        "2 Tessalonicenses 2:10"
+      ],
+      "question": "Segundo 2 Tessalonicenses 2:10, por que perecem?",
+      "verseRef": "2 Tessalonicenses 2:10",
+      "correctOptionId": "a",
+      "evidenceSpan": "porque não acolheram o amor da verdade para serem salvos",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não acolheram o amor da verdade"
+        },
+        {
+          "id": "b",
+          "text": "Acolheram demais a verdade"
+        },
+        {
+          "id": "c",
+          "text": "Falta de sinais"
+        },
+        {
+          "id": "d",
+          "text": "Excesso de santificação"
+        }
+      ],
+      "feedbackCorrect": "Perecem por não acolher o amor da verdade.",
+      "feedbackWrong": {
+        "b": "O problema é a falta de acolhida.",
+        "c": "Sinais da mentira enganam.",
+        "d": "A santificação é da salvação."
+      },
+      "hint": "O que faltou acolher?"
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "learningObjective": "Ordenar a derrota do ímpio",
+      "evidence": [
+        "2 Tessalonicenses 2:8"
+      ],
+      "question": "Monte 2 Tessalonicenses 2:8 na ordem do texto.",
+      "verseRef": "2 Tessalonicenses 2:8",
+      "evidenceSpan": "será revelado o ímpio, a quem o Senhor Jesus matará",
+      "options": [
+        {
+          "id": "a",
+          "text": "E então será revelado o ímpio"
+        },
+        {
+          "id": "b",
+          "text": "a quem o Senhor Jesus matará com o sopro de sua boca"
+        },
+        {
+          "id": "c",
+          "text": "e destruirá pelo esplendor de sua vinda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pela revelação do ímpio."
+      },
+      "hint": "Siga revelação e destruição."
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "learningObjective": "Completar a iniquidade",
+      "evidence": [
+        "2 Tessalonicenses 2:7"
+      ],
+      "question": "Em 2 Tessalonicenses 2:7, o mistério da ___ já está em ação.",
+      "verseRef": "2 Tessalonicenses 2:7",
+      "correctOptionId": "a",
+      "evidenceSpan": "o mistério da iniquidade já está em ação",
+      "options": [
+        {
+          "id": "a",
+          "text": "iniquidade"
+        },
+        {
+          "id": "b",
+          "text": "salvação"
+        },
+        {
+          "id": "c",
+          "text": "glória"
+        }
+      ],
+      "feedbackCorrect": "É o mistério da iniquidade.",
+      "feedbackWrong": {
+        "b": "Salvação vem depois, nos vv.13–14.",
+        "c": "Glória é o alvo do chamado."
+      },
+      "hint": "Toque o mistério."
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "learningObjective": "Ligar escolha e salvação",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "O que 2 Tessalonicenses 2:13 comunica neste contexto?",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus os escolheu desde o princípio para a salvação",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escolha para salvação"
+        },
+        {
+          "id": "b",
+          "text": "Escolha para a mentira"
+        },
+        {
+          "id": "c",
+          "text": "Salvação sem Espírito"
+        }
+      ],
+      "feedbackCorrect": "Deus escolheu para salvação pela santificação e fé.",
+      "feedbackWrong": {
+        "b": "A escolha é para salvação.",
+        "c": "Há santificação do Espírito."
+      },
+      "hint": "Ligue escolha e salvação.",
+      "passageA": {
+        "ref": "2 Tessalonicenses 2:13"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O mistério da iniquidade já opera, mas Deus escolheu os amados para salvação pela santificação e fé na verdade."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "learningObjective": "Ver a derrota do ímpio",
+      "evidence": [
+        "2 Tessalonicenses 2:8"
+      ],
+      "question": "Em 2 Tessalonicenses 2:8, o Senhor Jesus deixa o ímpio intacto.",
+      "verseRef": "2 Tessalonicenses 2:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "matará com o sopro de sua boca",
+      "feedbackCorrect": "Ele matará e destruirá o ímpio.",
+      "feedbackWrong": {
+        "true": "O texto afirma destruição pelo Senhor."
+      },
+      "hint": "Leia a ação do Senhor."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "learningObjective": "Ver a eficácia de Satanás",
+      "evidence": [
+        "2 Tessalonicenses 2:9"
+      ],
+      "question": "Em 2 Tessalonicenses 2:9, toque a origem da eficácia da vinda do ímpio.",
+      "verseRef": "2 Tessalonicenses 2:9",
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo a eficácia de Satanás",
+      "options": [
+        {
+          "id": "a",
+          "text": "Satanás"
+        },
+        {
+          "id": "b",
+          "text": "sinais"
+        },
+        {
+          "id": "c",
+          "text": "mentira"
+        }
+      ],
+      "feedbackCorrect": "A vinda é segundo a eficácia de Satanás.",
+      "feedbackWrong": {
+        "b": "Sinais acompanham a mentira.",
+        "c": "Mentira descreve os prodígios."
+      },
+      "hint": "Toque a origem do poder."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "learningObjective": "Relacionar escolha e firmeza",
+      "evidence": [
+        "2 Tessalonicenses 2:13–14"
+      ],
+      "question": "Como 2 Tessalonicenses 2:13–14 se relaciona com a firmeza?",
+      "verseRef": "2 Tessalonicenses 2:13–14",
+      "correctOptionId": "a",
+      "evidenceSpan": "fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escolhidos e chamados para a glória na verdade"
+        },
+        {
+          "id": "b",
+          "text": "Chamados para a mentira"
+        },
+        {
+          "id": "c",
+          "text": "Sem evangelho"
+        },
+        {
+          "id": "d",
+          "text": "Sem santificação"
+        }
+      ],
+      "feedbackCorrect": "A escolha e o chamado firmam na verdade e na glória.",
+      "feedbackWrong": {
+        "b": "O chamado é pelo evangelho.",
+        "c": "O evangelho é o meio.",
+        "d": "Há santificação do Espírito."
+      },
+      "hint": "O que sustenta a firmeza?"
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "learningObjective": "Ver o arco do capítulo",
+      "evidence": [
+        "2 Tessalonicenses 2:7–14"
+      ],
+      "question": "Como avança 2 Tessalonicenses 2:7–14?",
+      "verseRef": "2 Tessalonicenses 2:13–14",
+      "evidenceSpan": "mistério da iniquidade já está em ação",
+      "options": [
+        {
+          "id": "a",
+          "text": "Iniquidade já em ação"
+        },
+        {
+          "id": "b",
+          "text": "Ímpio revelado e destruído"
+        },
+        {
+          "id": "c",
+          "text": "Escolha para salvação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pela iniquidade; feche na escolha."
+      },
+      "hint": "Siga o contraste."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "learningObjective": "Completar a salvação",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "Em 2 Tessalonicenses 2:13, Deus os escolheu desde o princípio para a ___.",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "para a salvação, pela santificação do Espírito",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvação"
+        },
+        {
+          "id": "b",
+          "text": "mentira"
+        },
+        {
+          "id": "c",
+          "text": "iniquidade"
+        }
+      ],
+      "feedbackCorrect": "A escolha é para a salvação.",
+      "feedbackWrong": {
+        "b": "Mentira é o que os perdidos creem.",
+        "c": "Iniquidade é o mistério contrário."
+      },
+      "hint": "Toque o alvo da escolha."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "learningObjective": "Ligar santificação",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "O que liga 2 Tessalonicenses 2:13 a 1 Pedro 1:2?",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "pela santificação do Espírito e fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santificação do Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Espírito da mentira"
+        },
+        {
+          "id": "c",
+          "text": "Salvação sem fé"
+        }
+      ],
+      "feedbackCorrect": "Ambos ligam eleição e santificação do Espírito.",
+      "feedbackWrong": {
+        "b": "É o Espírito que santifica.",
+        "c": "Há fé na verdade."
+      },
+      "hint": "Nomeie a ponte.",
+      "passageB": {
+        "ref": "1 Pedro 1:2"
+      },
+      "passageA": {
+        "ref": "2 Tessalonicenses 2:13"
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "learningObjective": "Sintetizar a firmeza",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "2 Tessalonicenses 2:6–14 chama a permanecer firmes na verdade frente ao engano.",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "fé na verdade",
+      "feedbackCorrect": "A salvação vem com fé na verdade.",
+      "feedbackWrong": {
+        "false": "O texto opõe verdade e mentira."
+      },
+      "hint": "Veja o contraste final."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "learningObjective": "Tocar o evangelho",
+      "evidence": [
+        "2 Tessalonicenses 2:14"
+      ],
+      "question": "Em 2 Tessalonicenses 2:14, toque o meio do chamado.",
+      "verseRef": "2 Tessalonicenses 2:14",
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio do nosso evangelho",
+      "options": [
+        {
+          "id": "a",
+          "text": "evangelho"
+        },
+        {
+          "id": "b",
+          "text": "glória"
+        },
+        {
+          "id": "c",
+          "text": "chamou"
+        }
+      ],
+      "feedbackCorrect": "O chamado é por meio do evangelho.",
+      "feedbackWrong": {
+        "b": "Glória é o alvo.",
+        "c": "Chamou é o verbo, não o meio."
+      },
+      "hint": "Toque o meio."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "learningObjective": "Interpretar verdade e engano",
+      "evidence": [
+        "2 Tessalonicenses 2:10"
+      ],
+      "question": "Que leitura 2 Tessalonicenses 2:6–14 sustenta?",
+      "verseRef": "2 Tessalonicenses 2:10",
+      "correctOptionId": "a",
+      "evidenceSpan": "não acolheram o amor da verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "A verdade acolhida guarda; a rejeitada entrega ao engano"
+        },
+        {
+          "id": "b",
+          "text": "Sinais bastam para salvar"
+        },
+        {
+          "id": "c",
+          "text": "Iniquidade é só futura"
+        },
+        {
+          "id": "d",
+          "text": "Chamado sem glória"
+        }
+      ],
+      "feedbackCorrect": "Acolher a verdade salva; rejeitá-la entrega ao erro.",
+      "feedbackWrong": {
+        "b": "Sinais podem ser da mentira.",
+        "c": "O mistério já está em ação.",
+        "d": "O chamado visa a glória."
+      },
+      "hint": "O que decide o destino?"
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "learningObjective": "Ordenar o fio",
+      "evidence": [
+        "2 Tessalonicenses 2:6–14"
+      ],
+      "question": "Qual sequência revela o fio da cena?",
+      "verseRef": "2 Tessalonicenses 2:13–14",
+      "evidenceSpan": "fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "O que detém e o ímpio"
+        },
+        {
+          "id": "b",
+          "text": "Engano da mentira"
+        },
+        {
+          "id": "c",
+          "text": "Escolha e chamado na verdade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pelo freio; feche no chamado."
+      },
+      "hint": "Siga o contraste."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "learningObjective": "Completar a glória",
+      "evidence": [
+        "2 Tessalonicenses 2:14"
+      ],
+      "question": "Em 2 Tessalonicenses 2:14, ele vos chamou a fim de que alcanceis a ___.",
+      "verseRef": "2 Tessalonicenses 2:14",
+      "correctOptionId": "a",
+      "evidenceSpan": "alcanceis a glória de nosso Senhor Jesus Cristo",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "mentira"
+        },
+        {
+          "id": "c",
+          "text": "iniquidade"
+        }
+      ],
+      "feedbackCorrect": "O alvo do chamado é a glória.",
+      "feedbackWrong": {
+        "b": "Mentira é o contrário.",
+        "c": "Iniquidade é o mistério oposto."
+      },
+      "hint": "Toque o alvo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "learningObjective": "Ligar verdade e liberdade",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "O que liga 2 Tessalonicenses 2:13 a João 8:32?",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verdade que liberta"
+        },
+        {
+          "id": "b",
+          "text": "Verdade opcional"
+        },
+        {
+          "id": "c",
+          "text": "Fé na mentira"
+        }
+      ],
+      "feedbackCorrect": "Ambos exaltam a verdade que salva e liberta.",
+      "feedbackWrong": {
+        "b": "A verdade é essencial.",
+        "c": "A fé é na verdade."
+      },
+      "hint": "Nomeie a ponte.",
+      "passageB": {
+        "ref": "João 8:32"
+      },
+      "passageA": {
+        "ref": "2 Tessalonicenses 2:13"
+      }
+    }
+  ]
+}

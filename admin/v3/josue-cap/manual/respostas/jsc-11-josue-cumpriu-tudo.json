@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 11:15–20",
+    "passages": [
+      {
+        "ref": "Josué 11:15–23"
+      }
+    ],
+    "context": "Josué cumpre tudo o que o Senhor ordenou a Moisés; conquista a terra e ela repousa da guerra.",
+    "keyword": "cumpriu",
+    "keywordGloss": "Josué não deixou de lado nenhuma palavra do Senhor.",
+    "focusQuestion": "O que ainda falta cumprir do que o Senhor já ordenou a você?",
+    "reflectionPrompts": [
+      "Nenhuma palavra de lado",
+      "Terra tomada",
+      "Repouso da guerra"
+    ],
+    "facts": [
+      {
+        "text": "Josué cumpriu tudo o que o Senhor ordenou a Moisés, sem deixar nenhuma palavra.",
+        "evidenceRef": "Josué 11:15",
+        "evidenceSpan": "Josué cumpriu tudo o que o Senhor havia ordenado a Moisés, sem deixar de lado nenhuma palavra"
+      },
+      {
+        "text": "Josué tomou toda aquela terra, montanhas, Neguebe e planícies.",
+        "evidenceRef": "Josué 11:16",
+        "evidenceSpan": "Josué tomou toda aquela terra"
+      },
+      {
+        "text": "Josué lutou contra todos esses reis por muito tempo.",
+        "evidenceRef": "Josué 11:18",
+        "evidenceSpan": "Josué lutou contra todos esses reis por muito tempo"
+      },
+      {
+        "text": "Só Gibeão fez aliança; as demais foram conquistadas na guerra.",
+        "evidenceRef": "Josué 11:19",
+        "evidenceSpan": "exceto os heveus, moradores de Gibeão"
+      },
+      {
+        "text": "O endurecimento dos corações vinha do Senhor.",
+        "evidenceRef": "Josué 11:20",
+        "evidenceSpan": "Pois vinha do Senhor o endurecimento dos corações deles"
+      },
+      {
+        "text": "Josué deu a terra em herança e a terra repousou da guerra.",
+        "evidenceRef": "Josué 11:23",
+        "evidenceSpan": "a terra repousou da guerra"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cumpriu",
+        "gloss": "Obediência total à ordem transmitida por Moisés."
+      },
+      {
+        "term": "herança",
+        "gloss": "A terra repartida às tribos."
+      },
+      {
+        "term": "repousou",
+        "gloss": "A terra descansou da guerra."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Josué cumpre toda a ordem",
+        "evidenceRef": "Josué 11:15"
+      },
+      {
+        "label": "Toma a terra e derrota reis",
+        "evidenceRef": "Josué 11:16–18"
+      },
+      {
+        "label": "Gibeão é a exceção da aliança",
+        "evidenceRef": "Josué 11:19–20"
+      },
+      {
+        "label": "Herança e repouso da guerra",
+        "evidenceRef": "Josué 11:21–23"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Como o Senhor ordenou a Moisés, assim Moisés a Josué.",
+        "marker": "Como",
+        "evidenceRef": "Josué 11:15"
+      },
+      {
+        "kind": "propósito",
+        "text": "Endurecimento para saírem à guerra e serem destruídos.",
+        "marker": "a fim de",
+        "evidenceRef": "Josué 11:20"
+      },
+      {
+        "kind": "resultado",
+        "text": "Assim Josué tomou a terra e ela repousou.",
+        "marker": "Assim",
+        "evidenceRef": "Josué 11:23"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 31:7–8",
+        "bridge": "Josué deve cumprir"
+      },
+      {
+        "ref": "Hebreus 4:8–9",
+        "bridge": "Repouso além de Josué"
+      },
+      {
+        "ref": "Josué 21:43–45",
+        "bridge": "Nenhuma palavra falhou"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Josué deixou de lado várias ordens do Senhor.",
+        "why": "Cumpriu tudo, sem deixar nenhuma palavra."
+      },
+      {
+        "text": "Todas as cidades fizeram aliança como Gibeão.",
+        "why": "Nenhuma outra fez aliança; só Gibeão."
+      },
+      {
+        "text": "A terra nunca repousou da guerra.",
+        "why": "O texto diz que a terra repousou da guerra."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 11:23, o que aconteceu com a terra após a herança?",
+    "centralInsight": "Josué não deixou de lado nenhuma palavra do Senhor; a terra teve descanso."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 11:15, Josué cumpriu tudo o que o Senhor ordenou a Moisés, sem deixar nenhuma palavra.",
+      "verseRef": "Josué 11:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "sem deixar de lado nenhuma palavra",
+      "feedbackCorrect": "A obediência é total.",
+      "feedbackWrong": {
+        "false": "O texto diz que cumpriu tudo."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar a obediência completa.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 11:23, toque o que a terra fez da guerra.",
+      "verseRef": "Josué 11:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "repousou"
+        },
+        {
+          "id": "b",
+          "text": "herança"
+        },
+        {
+          "id": "c",
+          "text": "tribos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "A terra repousou da guerra.",
+      "feedbackWrong": {
+        "b": "Herança é a doação.",
+        "c": "Tribos recebem; a terra repousou."
+      },
+      "hint": "Veja o verbo final.",
+      "learningObjective": "Identificar o repouso da terra.",
+      "evidence": [
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 11:19, quem fez aliança com Israel?",
+      "verseRef": "Josué 11:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Só os heveus de Gibeão"
+        },
+        {
+          "id": "b",
+          "text": "Todas as cidades"
+        },
+        {
+          "id": "c",
+          "text": "Ninguém"
+        },
+        {
+          "id": "d",
+          "text": "Só os anaquins"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exceto os heveus, moradores de Gibeão",
+      "feedbackCorrect": "Só Gibeão fez aliança.",
+      "feedbackWrong": {
+        "b": "As demais foram à guerra.",
+        "c": "Houve uma exceção.",
+        "d": "Anaquins foram exterminados."
+      },
+      "hint": "Leia a exceção.",
+      "learningObjective": "Reconhecer a exceção de Gibeão.",
+      "evidence": [
+        "Josué 11:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 11:15 na ordem do texto.",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como o Senhor havia ordenado a Moisés"
+        },
+        {
+          "id": "b",
+          "text": "assim Moisés ordenou a Josué"
+        },
+        {
+          "id": "c",
+          "text": "e Josué cumpriu tudo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Josué cumpriu tudo o que o Senhor havia ordenado a Moisés",
+      "feedbackCorrect": "Cadeia: Senhor, Moisés, Josué.",
+      "feedbackWrong": {
+        "default": "Comece pelo Senhor."
+      },
+      "hint": "Quem ordena primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 11:15, complete: Josué ___ tudo o que o Senhor havia ordenado.",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "cumpriu"
+        },
+        {
+          "id": "b",
+          "text": "adiou"
+        },
+        {
+          "id": "c",
+          "text": "esqueceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Josué cumpriu tudo",
+      "feedbackCorrect": "Ele cumpriu.",
+      "feedbackWrong": {
+        "b": "Não adiou.",
+        "c": "O verbo é cumpriu."
+      },
+      "hint": "Veja o verbo de Josué.",
+      "learningObjective": "Lembrar que ele cumpriu.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 11:23 comunica que se liga a este contexto?",
+      "verseRef": "Josué 11:23",
+      "passageA": {
+        "ref": "Josué 11:23"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Josué termina a conquista das cidades e reis."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Terra em herança e repouso"
+        },
+        {
+          "id": "b",
+          "text": "Guerra sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Nenhuma herança dada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "A conquista fecha em herança e repouso.",
+      "feedbackWrong": {
+        "b": "Há repouso.",
+        "c": "Há herança."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Ligar a conquista ao repouso.",
+      "evidence": [
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 11:20, o endurecimento dos corações vinha das nações, sem qualquer ação do Senhor.",
+      "verseRef": "Josué 11:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois vinha do Senhor o endurecimento dos corações deles",
+      "feedbackCorrect": "O texto diz que o endurecimento vinha do Senhor.",
+      "feedbackWrong": {
+        "true": "Releia 11:20: vinha do Senhor o endurecimento."
+      },
+      "hint": "Veja de quem vinha o endurecimento.",
+      "learningObjective": "Ver a causa do endurecimento.",
+      "evidence": [
+        "Josué 11:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 11:20, toque a palavra que marca a causa do endurecimento.",
+      "verseRef": "Josué 11:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois vinha do Senhor o endurecimento",
+      "feedbackCorrect": "Pois introduz a explicação.",
+      "feedbackWrong": {
+        "b": "Guerra é o encontro.",
+        "c": "Moisés recebe a ordem; a marca é Pois."
+      },
+      "hint": "Olhe a primeira palavra.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Josué 11:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Josué 11:15 mostra na cadeia de ordens?",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor a Moisés; Moisés a Josué; Josué cumpre"
+        },
+        {
+          "id": "b",
+          "text": "Josué ordena a Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Moisés ignora o Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Josué altera a ordem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim Moisés ordenou a Josué; e Josué cumpriu",
+      "feedbackCorrect": "A transmissão é fiel.",
+      "feedbackWrong": {
+        "b": "A ordem desce do Senhor.",
+        "c": "Moisés transmite.",
+        "d": "Josué cumpre tudo."
+      },
+      "hint": "Siga o Como e o assim.",
+      "learningObjective": "Compreender a cadeia de obediência.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 11:15–23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué cumpre toda a ordem"
+        },
+        {
+          "id": "b",
+          "text": "Toma a terra e derrota reis"
+        },
+        {
+          "id": "c",
+          "text": "Herança e repouso da guerra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Josué cumpriu tudo",
+      "feedbackCorrect": "Cumprir, tomar e repousar.",
+      "feedbackWrong": {
+        "default": "Comece pelo cumprimento."
+      },
+      "hint": "O que abre o trecho?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 11:15",
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 11:23, complete: a terra repousou da ___.",
+      "verseRef": "Josué 11:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "guerra"
+        },
+        {
+          "id": "b",
+          "text": "chuva"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "Repousou da guerra.",
+      "feedbackWrong": {
+        "b": "Não é chuva: o texto diz guerra.",
+        "c": "A palavra é guerra."
+      },
+      "hint": "Veja o complemento de repousou.",
+      "learningObjective": "Lembrar de que a terra repousou.",
+      "evidence": [
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 11:15 a Josué 21:45?",
+      "verseRef": "Josué 11:15",
+      "passageA": {
+        "ref": "Josué 11:15"
+      },
+      "passageB": {
+        "ref": "Josué 21:45"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nenhuma palavra falhou"
+        },
+        {
+          "id": "b",
+          "text": "Muitas ordens ignoradas"
+        },
+        {
+          "id": "c",
+          "text": "Repouso sem herança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem deixar de lado nenhuma palavra",
+      "feedbackCorrect": "Nos dois textos nenhuma palavra falha.",
+      "feedbackWrong": {
+        "b": "O elo é a palavra cumprida.",
+        "c": "Há cumprimento total."
+      },
+      "hint": "Compare nenhuma palavra.",
+      "learningObjective": "Ligar o cumprimento à fidelidade.",
+      "evidence": [
+        "Josué 11:15",
+        "Josué 21:45"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 11:15–23, cumprir tudo e o repouso sustentam que a conquista depende da fidelidade à palavra do Senhor.",
+      "verseRef": "Josué 11:15–23",
+      "correctOptionId": "true",
+      "evidenceSpan": "Josué cumpriu tudo o que o Senhor havia ordenado a Moisés",
+      "feedbackCorrect": "Obediência e repouso fecham o quadro.",
+      "feedbackWrong": {
+        "false": "O texto une cumprimento e repouso."
+      },
+      "hint": "Una 11:15 e 11:23.",
+      "learningObjective": "Avaliar a leitura do cumprimento.",
+      "evidence": [
+        "Josué 11:15–23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 11:15, toque o trecho que sustenta a totalidade da obediência.",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "nenhuma palavra"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "servo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem deixar de lado nenhuma palavra",
+      "feedbackCorrect": "Nenhuma palavra marca a totalidade.",
+      "feedbackWrong": {
+        "b": "Moisés transmite.",
+        "c": "Servo descreve Moisés."
+      },
+      "hint": "Veja o que não ficou de lado.",
+      "learningObjective": "Tocar o que sustenta a obediência total.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 11:15–23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué não deixa de lado nenhuma palavra; a terra repousa"
+        },
+        {
+          "id": "b",
+          "text": "A conquista ignora as ordens de Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Só Gibeão importa; o resto é falha"
+        },
+        {
+          "id": "d",
+          "text": "O repouso nega qualquer guerra prévia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "Cumprimento gera herança e repouso.",
+      "feedbackWrong": {
+        "b": "Ele cumpriu tudo.",
+        "c": "Gibeão é exceção, não o todo.",
+        "d": "Houve guerra longa antes do repouso."
+      },
+      "hint": "Una cumprir e repousar.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 11:15–23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da fidelidade à terra.",
+      "verseRef": "Josué 11:15–23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra do Senhor cumprida por Josué"
+        },
+        {
+          "id": "b",
+          "text": "Terra tomada e dada em herança"
+        },
+        {
+          "id": "c",
+          "text": "Repouso da guerra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sem deixar de lado nenhuma palavra",
+      "feedbackCorrect": "Palavra, herança e repouso.",
+      "feedbackWrong": {
+        "default": "Comece pela palavra cumprida."
+      },
+      "hint": "O que vem antes da herança?",
+      "learningObjective": "Encadear fidelidade e repouso",
+      "evidence": [
+        "Josué 11:15",
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 11:23, complete: Josué a deu em ___.",
+      "verseRef": "Josué 11:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "herança"
+        },
+        {
+          "id": "b",
+          "text": "exílio"
+        },
+        {
+          "id": "c",
+          "text": "empréstimo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a deu em herança aos filhos de Israel",
+      "feedbackCorrect": "Deu em herança.",
+      "feedbackWrong": {
+        "b": "Não é exílio.",
+        "c": "A palavra é herança."
+      },
+      "hint": "Veja o substantivo da doação.",
+      "learningObjective": "Lembrar o termo herança.",
+      "evidence": [
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 11:23 a Hebreus 4:8–9?",
+      "verseRef": "Josué 11:23",
+      "passageA": {
+        "ref": "Josué 11:23"
+      },
+      "passageB": {
+        "ref": "Hebreus 4:8–9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Repouso além de Josué"
+        },
+        {
+          "id": "b",
+          "text": "Guerra eterna sem pausa"
+        },
+        {
+          "id": "c",
+          "text": "Herança só militar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "Hebreus aponta um repouso maior.",
+      "feedbackWrong": {
+        "b": "O elo é o repouso.",
+        "c": "Há mais que guerra."
+      },
+      "hint": "Pense no descanso anunciado.",
+      "learningObjective": "Ligar o repouso a Hebreus.",
+      "evidence": [
+        "Josué 11:23",
+        "Hebreus 4:8–9"
+      ]
+    }
+  ]
+}

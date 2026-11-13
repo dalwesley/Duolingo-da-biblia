@@ -1,0 +1,5078 @@
+[
+  {
+    "id": "colossenses-cap-sem-clc-01-reconciliados-para-serem-santos-01",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Colossenses 1:21, Paulo diz que Deus agora os reconciliou.",
+    "prompt": "Em Colossenses 1:21, Paulo diz que Deus agora os reconciliou.",
+    "cue": "Em Colossenses 1:21, Paulo diz que Deus agora os reconciliou.",
+    "verseRef": "Colossenses 1:21",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "O contraste é claro: outrora inimigos, agora reconciliados.",
+    "feedbackWrong": {
+      "false": "Releia o fim do versículo: agora os reconciliou."
+    },
+    "hint": "Olhe o contraste com \"outrora\".",
+    "learningObjective": "Observar a reconciliação anunciada no texto.",
+    "evidence": [
+      "Colossenses 1:21"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-01-reconciliados-para-serem-santos-02",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 1:22, toque o meio pelo qual Cristo reconciliou.",
+    "prompt": "Em Colossenses 1:22, toque o meio pelo qual Cristo reconciliou.",
+    "cue": "Em Colossenses 1:22, toque o meio pelo qual Cristo reconciliou.",
+    "verseRef": "Colossenses 1:22",
+    "passageText": "no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "santos"
+      },
+      {
+        "id": "b",
+        "text": "sua morte"
+      },
+      {
+        "id": "c",
+        "text": "sem culpa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio da sua morte",
+    "feedbackCorrect": "A reconciliação acontece por meio da morte de Cristo.",
+    "feedbackWrong": {
+      "a": "\"Santos\" é o resultado da apresentação, não o meio.",
+      "c": "\"Sem culpa\" descreve o alvo, não o meio da reconciliação."
+    },
+    "hint": "Procure a expressão \"por meio\".",
+    "learningObjective": "Identificar a morte de Cristo como meio da reconciliação.",
+    "evidence": [
+      "Colossenses 1:22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-01-reconciliados-para-serem-santos-03",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Colossenses 1:22, com que propósito Cristo reconcilia?",
+    "prompt": "Segundo Colossenses 1:22, com que propósito Cristo reconcilia?",
+    "cue": "Segundo Colossenses 1:22, com que propósito Cristo reconcilia?",
+    "verseRef": "Colossenses 1:22",
+    "passageText": "no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para torná-los juízes das nações agora"
+      },
+      {
+        "id": "b",
+        "text": "Para exigir obras que apaguem o passado"
+      },
+      {
+        "id": "c",
+        "text": "Para apresentá-los santos e sem culpa diante dele"
+      },
+      {
+        "id": "d",
+        "text": "Para afastá-los dos gentios da igreja"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "feedbackCorrect": "O alvo da reconciliação é apresentá-los santos diante dele.",
+    "feedbackWrong": {
+      "a": "O texto fala de apresentação diante dele, não de juízo das nações.",
+      "b": "O texto aponta para a apresentação santa, não para autoexpiação.",
+      "d": "Não há exclusão de gentios; o mistério os inclui."
+    },
+    "hint": "Leia a cláusula que começa com \"para\".",
+    "learningObjective": "Observar o propósito da reconciliação.",
+    "evidence": [
+      "Colossenses 1:22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-01-reconciliados-para-serem-santos-04",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 1:21 na ordem do texto.",
+    "prompt": "Monte Colossenses 1:21 na ordem do texto.",
+    "cue": "Monte Colossenses 1:21 na ordem do texto.",
+    "verseRef": "Colossenses 1:21",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E a vocês, que outrora eram estranhos e inimigos"
+      },
+      {
+        "id": "b",
+        "text": "no entendimento por causa de suas obras malignas"
+      },
+      {
+        "id": "c",
+        "text": "agora os reconciliou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "Primeiro o passado hostil; depois a reconciliação presente.",
+    "feedbackWrong": {
+      "default": "Comece pelo outrora; a reconciliação fecha o versículo."
+    },
+    "hint": "O versículo começa pelo passado deles.",
+    "learningObjective": "Reconhecer a sequência de Colossenses 1:21.",
+    "evidence": [
+      "Colossenses 1:21"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-01-reconciliados-para-serem-santos-05",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Colossenses 1:27, o mistério entre os gentios é Cristo em vocês, a ___ da glória.",
+    "prompt": "Em Colossenses 1:27, o mistério entre os gentios é Cristo em vocês, a ___ da glória.",
+    "cue": "Em Colossenses 1:27, o mistério entre os gentios é Cristo em vocês, a ___ da glória.",
+    "verseRef": "Colossenses 1:27",
+    "passageText": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "template": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a ___ da glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "esperança"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Cristo em vocês, a esperança da glória",
+    "feedbackCorrect": "O mistério é Cristo em vocês, a esperança da glória.",
+    "feedbackWrong": {
+      "a": "Sabedoria aparece no anúncio; aqui o termo é esperança.",
+      "c": "Há \"riqueza da glória\" antes, mas o mistério se define como esperança."
+    },
+    "hint": "Veja como o mistério é nomeado no fim do versículo.",
+    "learningObjective": "Lembrar a definição do mistério no texto.",
+    "evidence": [
+      "Colossenses 1:27"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-01-reconciliados-para-serem-santos-06",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+    "verseRef": "Colossenses 1:21",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou.",
+    "passageA": {
+      "ref": "Colossenses 1:21",
+      "text": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Eram estranhos e inimigos; agora Deus os reconciliou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inimizade sem mudança"
+      },
+      {
+        "id": "b",
+        "text": "Só obras apagam culpa"
+      },
+      {
+        "id": "c",
+        "text": "De inimigos a reconciliados"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "O texto marca a virada: outrora inimigos, agora reconciliados.",
+    "feedbackWrong": {
+      "a": "O \"agora\" mostra mudança real, não inimizade permanente.",
+      "b": "A reconciliação é ação de Deus, não mérito das obras."
+    },
+    "hint": "Compare \"outrora\" com \"agora\".",
+    "learningObjective": "Ligar o versículo à virada da reconciliação.",
+    "evidence": [
+      "Colossenses 1:21"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-01-reconciliados-para-serem-santos-01",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Colossenses 1:23, permanecer firmes na fé é opcional depois da reconciliação.",
+    "prompt": "Em Colossenses 1:23, permanecer firmes na fé é opcional depois da reconciliação.",
+    "cue": "Em Colossenses 1:23, permanecer firmes na fé é opcional depois da reconciliação.",
+    "verseRef": "Colossenses 1:23",
+    "passageText": "Se, porém, permanecerem alicerçados e firmes na fé, não se afastando da esperança do evangelho que ouviram, o qual foi proclamado a toda criatura debaixo do céu, e do qual eu, Paulo, me tornei ministro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Se, porém, permanecerem alicerçados e firmes na fé",
+    "feedbackCorrect": "O \"se, porém\" marca condição: precisam permanecer firmes.",
+    "feedbackWrong": {
+      "true": "Releia: a apresentação santa vem com o permanecer firmes."
+    },
+    "hint": "Repare na palavra que abre a condição.",
+    "learningObjective": "Compreender a condição de permanecer na fé.",
+    "evidence": [
+      "Colossenses 1:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-01-reconciliados-para-serem-santos-02",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+    "prompt": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+    "cue": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+    "verseRef": "Colossenses 1:23",
+    "passageText": "Se, porém, permanecerem alicerçados e firmes na fé, não se afastando da esperança do evangelho que ouviram, o qual foi proclamado a toda criatura debaixo do céu, e do qual eu, Paulo, me tornei ministro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "evangelho"
+      },
+      {
+        "id": "b",
+        "text": "criatura"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Se, porém, permanecerem",
+    "feedbackCorrect": "\"Porém\" introduz a condição: permanecer alicerçados e firmes.",
+    "feedbackWrong": {
+      "a": "\"Evangelho\" é o conteúdo da esperança, não o marcador.",
+      "b": "\"Criatura\" aparece no alcance do evangelho, não na condição."
+    },
+    "hint": "Procure a partícula depois de \"Se\".",
+    "learningObjective": "Reconhecer o marcador da condição.",
+    "evidence": [
+      "Colossenses 1:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-01-reconciliados-para-serem-santos-03",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Colossenses 1:22 se relaciona com a morte de Cristo?",
+    "prompt": "Como Colossenses 1:22 se relaciona com a morte de Cristo?",
+    "cue": "Como Colossenses 1:22 se relaciona com a morte de Cristo?",
+    "verseRef": "Colossenses 1:22",
+    "passageText": "no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "A morte afasta os gentios da reconciliação"
+      },
+      {
+        "id": "b",
+        "text": "A morte é o meio que visa apresentá-los santos"
+      },
+      {
+        "id": "c",
+        "text": "A morte só ilustra um exemplo ético a imitar"
+      },
+      {
+        "id": "d",
+        "text": "A morte cancela a necessidade de santidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio da sua morte, para apresentar-vos diante dele santos",
+    "feedbackCorrect": "Meio e propósito juntos: morte para apresentação santa.",
+    "feedbackWrong": {
+      "a": "O mistério inclui os gentios; não os afasta.",
+      "c": "O texto fala de meio eficaz, não só de exemplo.",
+      "d": "O alvo é santos e sem culpa, não permissão para o pecado."
+    },
+    "hint": "Una \"por meio\" e \"para\".",
+    "learningObjective": "Relacionar meio e propósito na reconciliação.",
+    "evidence": [
+      "Colossenses 1:22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-01-reconciliados-para-serem-santos-04",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Colossenses 1:21–23?",
+    "prompt": "Como avança o argumento em Colossenses 1:21–23?",
+    "cue": "Como avança o argumento em Colossenses 1:21–23?",
+    "verseRef": "Colossenses 1:21–22",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "Eram estranhos e inimigos"
+      },
+      {
+        "id": "b",
+        "text": "São reconciliados pela morte"
+      },
+      {
+        "id": "c",
+        "text": "Devem permanecer firmes na fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "Passado hostil, reconciliação e chamada a permanecer.",
+    "feedbackWrong": {
+      "default": "Comece pelo outrora; a firmeza vem depois da reconciliação."
+    },
+    "hint": "Siga: passado, reconciliação, condição.",
+    "learningObjective": "Compreender o movimento do argumento.",
+    "evidence": [
+      "Colossenses 1:21–22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-01-reconciliados-para-serem-santos-05",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Colossenses 1:22, a reconciliação visa apresentar-vos diante dele ___.",
+    "prompt": "Em Colossenses 1:22, a reconciliação visa apresentar-vos diante dele ___.",
+    "cue": "Em Colossenses 1:22, a reconciliação visa apresentar-vos diante dele ___.",
+    "verseRef": "Colossenses 1:22",
+    "passageText": "no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "template": "no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele ___, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "livres"
+      },
+      {
+        "id": "b",
+        "text": "santos"
+      },
+      {
+        "id": "c",
+        "text": "ricos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para apresentar-vos diante dele santos",
+    "feedbackCorrect": "O alvo é apresentação santa, irrepreensível e sem culpa.",
+    "feedbackWrong": {
+      "a": "A palavra do propósito é \"santos\", não \"livres\".",
+      "c": "O texto não fala de riqueza material aqui."
+    },
+    "hint": "Veja o primeiro adjetivo depois de \"diante dele\".",
+    "learningObjective": "Lembrar o alvo da apresentação.",
+    "evidence": [
+      "Colossenses 1:22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-01-reconciliados-para-serem-santos-06",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+    "prompt": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+    "cue": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+    "verseRef": "Colossenses 1:21–22",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "passageA": {
+      "ref": "Colossenses 1:21–22",
+      "text": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa"
+    },
+    "passageB": {
+      "ref": "Romanos 5:10",
+      "text": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inimizade permanente"
+      },
+      {
+        "id": "b",
+        "text": "Reconciliados pela morte"
+      },
+      {
+        "id": "c",
+        "text": "Salvos sem Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "por meio da sua morte",
+    "feedbackCorrect": "Nos dois textos, inimigos são reconciliados pela morte de Cristo.",
+    "feedbackWrong": {
+      "a": "Os textos anunciam mudança, não inimizade eterna.",
+      "c": "A reconciliação é em Cristo, não sem ele."
+    },
+    "hint": "Compare o que a morte de Cristo faz nos dois trechos.",
+    "learningObjective": "Relacionar a reconciliação em Colossenses e Romanos.",
+    "evidence": [
+      "Colossenses 1:21–22",
+      "Romanos 5:10"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-01-reconciliados-para-serem-santos-01",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Colossenses 1:27 apresenta o mistério como Cristo em vocês, a esperança da glória, entre os gentios.",
+    "prompt": "Colossenses 1:27 apresenta o mistério como Cristo em vocês, a esperança da glória, entre os gentios.",
+    "cue": "Colossenses 1:27 apresenta o mistério como Cristo em vocês, a esperança da glória, entre os gentios.",
+    "verseRef": "Colossenses 1:27",
+    "passageText": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Cristo em vocês, a esperança da glória",
+    "feedbackCorrect": "O mistério revelado aos santos é Cristo presente nos gentios.",
+    "feedbackWrong": {
+      "false": "Releia: o mistério entre os gentios é Cristo em vocês."
+    },
+    "hint": "Veja como o mistério é definido no versículo.",
+    "learningObjective": "Interpretar o mistério como Cristo nos gentios.",
+    "evidence": [
+      "Colossenses 1:27"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-01-reconciliados-para-serem-santos-02",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 1:27, toque o trecho que nomeia o conteúdo do mistério.",
+    "prompt": "Em Colossenses 1:27, toque o trecho que nomeia o conteúdo do mistério.",
+    "cue": "Em Colossenses 1:27, toque o trecho que nomeia o conteúdo do mistério.",
+    "verseRef": "Colossenses 1:26–27",
+    "passageText": "O mistério que esteve oculto por séculos e gerações, mas que agora se manifestou aos seus santos; Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo em vocês"
+      },
+      {
+        "id": "b",
+        "text": "seus santos"
+      },
+      {
+        "id": "c",
+        "text": "os gentios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que é Cristo em vocês, a esperança da glória",
+    "feedbackCorrect": "O mistério se define assim: Cristo em vocês, esperança da glória.",
+    "feedbackWrong": {
+      "b": "Os santos recebem a revelação; o conteúdo é Cristo em vocês.",
+      "c": "Os gentios são o âmbito; o conteúdo é Cristo em vocês."
+    },
+    "hint": "Procure a cláusula explicativa \"que é\".",
+    "learningObjective": "Sustentar a definição do mistério no texto.",
+    "evidence": [
+      "Colossenses 1:27"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-01-reconciliados-para-serem-santos-03",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Colossenses 1:21–23 sustenta sobre a reconciliação?",
+    "prompt": "Que leitura Colossenses 1:21–23 sustenta sobre a reconciliação?",
+    "cue": "Que leitura Colossenses 1:21–23 sustenta sobre a reconciliação?",
+    "verseRef": "Colossenses 1:21–22",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mudança só de humor, sem custo na cruz"
+      },
+      {
+        "id": "b",
+        "text": "Reconciliação que dispensa permanecer na fé"
+      },
+      {
+        "id": "c",
+        "text": "De inimigos a santos, pela morte, com firmeza na fé"
+      },
+      {
+        "id": "d",
+        "text": "Salvação restrita a quem nunca foi inimigo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "O texto une passado hostil, morte reconciliadora e chamada a permanecer.",
+    "feedbackWrong": {
+      "a": "Há corpo e morte reais no centro da reconciliação.",
+      "b": "O \"se, porém\" exige permanecer firmes.",
+      "d": "O texto parte justamente de quem era inimigo."
+    },
+    "hint": "Una outrora, morte e permanecer.",
+    "learningObjective": "Escolher a leitura que o texto sustenta.",
+    "evidence": [
+      "Colossenses 1:21–22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-01-reconciliados-para-serem-santos-04",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da reconciliação até o anúncio?",
+    "prompt": "Qual sequência revela o fio da reconciliação até o anúncio?",
+    "cue": "Qual sequência revela o fio da reconciliação até o anúncio?",
+    "verseRef": "Colossenses 1:27–28",
+    "passageText": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória. A quem anunciamos, advertindo e ensinando a todo homem em toda a sabedoria, para que apresentemos todo homem perfeito em Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus revela Cristo nos gentios"
+      },
+      {
+        "id": "b",
+        "text": "Paulo anuncia advertindo e ensinando"
+      },
+      {
+        "id": "c",
+        "text": "O alvo é apresentar todo homem perfeito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que apresentemos todo homem perfeito em Cristo",
+    "feedbackCorrect": "Revelação, anúncio e apresentação perfeita em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelo mistério revelado; o alvo fecha o anúncio."
+    },
+    "hint": "Siga: mistério → anúncio → apresentação.",
+    "learningObjective": "Ver o encadeamento do mistério ao anúncio.",
+    "evidence": [
+      "Colossenses 1:27–28"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-01-reconciliados-para-serem-santos-05",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+    "prompt": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+    "cue": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+    "verseRef": "Colossenses 1:26",
+    "passageText": "O mistério que esteve oculto por séculos e gerações, mas que agora se manifestou aos seus santos;",
+    "template": "O ___ que esteve oculto por séculos e gerações, mas que agora se manifestou aos seus santos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "mistério"
+      },
+      {
+        "id": "b",
+        "text": "império"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O mistério que esteve oculto",
+    "feedbackCorrect": "É o mistério oculto por séculos que agora se manifesta.",
+    "feedbackWrong": {
+      "b": "Não há \"império\"; o termo é mistério.",
+      "c": "O texto não fala de templo aqui; fala de mistério."
+    },
+    "hint": "É a palavra que abre o versículo.",
+    "learningObjective": "Lembrar o termo teológico central do trecho.",
+    "evidence": [
+      "Colossenses 1:26"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-01-reconciliados-para-serem-santos-06",
+    "trail": "colossenses-cap",
+    "section": "clc-01-reconciliados-para-serem-santos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Colossenses 1:27 a Efésios 3:6?",
+    "prompt": "O que liga Colossenses 1:27 a Efésios 3:6?",
+    "cue": "O que liga Colossenses 1:27 a Efésios 3:6?",
+    "verseRef": "Colossenses 1:27",
+    "passageText": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "passageA": {
+      "ref": "Colossenses 1:27",
+      "text": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória."
+    },
+    "passageB": {
+      "ref": "Efésios 3:6",
+      "text": "Isto é, que os gentios são co-herdeiros, membros do mesmo corpo e co-participantes da promessa em Cristo Jesus, por meio do evangelho;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Exclusão dos gentios"
+      },
+      {
+        "id": "b",
+        "text": "Lei sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Gentios no mistério"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "deste mistério entre os gentios",
+    "feedbackCorrect": "Nos dois textos, o mistério inclui os gentios em Cristo.",
+    "feedbackWrong": {
+      "a": "Os textos incluem os gentios, não os excluem.",
+      "b": "O mistério aponta para Cristo, não para lei sem ele."
+    },
+    "hint": "Nomeie a ponte entre o texto e o contexto ligado.",
+    "learningObjective": "Ligar o mistério de Colossenses ao de Efésios.",
+    "evidence": [
+      "Colossenses 1:27",
+      "Efésios 3:6"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-02-nao-vos-julgue-ninguem-01",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Colossenses 2:16, Paulo permite que alguém julgue os crentes por comida ou sábados.",
+    "prompt": "Em Colossenses 2:16, Paulo permite que alguém julgue os crentes por comida ou sábados.",
+    "cue": "Em Colossenses 2:16, Paulo permite que alguém julgue os crentes por comida ou sábados.",
+    "verseRef": "Colossenses 2:16",
+    "passageText": "Portanto, ninguém vos julgue por causa do que comeis ou bebeis, ou em relação aos dias de festa, às luas novas ou aos sábados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ninguém vos julgue por causa do que comeis ou bebeis",
+    "feedbackCorrect": "O texto manda: ninguém vos julgue por comida, bebida ou dias.",
+    "feedbackWrong": {
+      "true": "Releia: ninguém vos julgue por causa do que comeis ou bebeis."
+    },
+    "hint": "Olhe o verbo no começo do versículo.",
+    "learningObjective": "Observar a proibição de juízo ritual.",
+    "evidence": [
+      "Colossenses 2:16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-02-nao-vos-julgue-ninguem-02",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 2:17, toque o que as festas e sábados são em relação ao que viria.",
+    "prompt": "Em Colossenses 2:17, toque o que as festas e sábados são em relação ao que viria.",
+    "cue": "Em Colossenses 2:17, toque o que as festas e sábados são em relação ao que viria.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sombras"
+      },
+      {
+        "id": "b",
+        "text": "corpo"
+      },
+      {
+        "id": "c",
+        "text": "Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "São apenas sombras das coisas que estavam por vir",
+    "feedbackCorrect": "Festas e sábados são apenas sombras; a realidade é Cristo.",
+    "feedbackWrong": {
+      "b": "O corpo é a realidade, não o que as festas são.",
+      "c": "Cristo é o corpo; as festas são sombras."
+    },
+    "hint": "Procure o que o texto diz que elas são.",
+    "learningObjective": "Identificar festas como sombras.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-02-nao-vos-julgue-ninguem-03",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Colossenses 2:17, o que é o corpo em contraste com as sombras?",
+    "prompt": "Segundo Colossenses 2:17, o que é o corpo em contraste com as sombras?",
+    "cue": "Segundo Colossenses 2:17, o que é o corpo em contraste com as sombras?",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É o culto aos anjos"
+      },
+      {
+        "id": "b",
+        "text": "É de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "É a severidade contra o corpo"
+      },
+      {
+        "id": "d",
+        "text": "É a lista de ordenanças"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "As sombras apontam; o corpo, a realidade, é de Cristo.",
+    "feedbackWrong": {
+      "a": "Culto aos anjos é rejeitado no texto seguinte.",
+      "c": "Severidade aparece depois como aparência sem valor.",
+      "d": "Ordenanças são o que Paulo questiona."
+    },
+    "hint": "Leia a segunda metade do versículo.",
+    "learningObjective": "Observar que a realidade é Cristo.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-02-nao-vos-julgue-ninguem-04",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 2:17 na ordem do texto.",
+    "prompt": "Monte Colossenses 2:17 na ordem do texto.",
+    "cue": "Monte Colossenses 2:17 na ordem do texto.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "São apenas sombras das coisas que estavam por vir"
+      },
+      {
+        "id": "b",
+        "text": "mas o corpo"
+      },
+      {
+        "id": "c",
+        "text": "é de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "Primeiro as sombras; depois o contraste: o corpo é de Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelas sombras; Cristo fecha o contraste."
+    },
+    "hint": "O versículo começa pelas sombras.",
+    "learningObjective": "Reconhecer a sequência de Colossenses 2:17.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-02-nao-vos-julgue-ninguem-05",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Colossenses 2:20, Paulo pergunta por que se sujeitam a ___.",
+    "prompt": "Em Colossenses 2:20, Paulo pergunta por que se sujeitam a ___.",
+    "cue": "Em Colossenses 2:20, Paulo pergunta por que se sujeitam a ___.",
+    "verseRef": "Colossenses 2:20",
+    "passageText": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ordenanças?",
+    "template": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "promessas"
+      },
+      {
+        "id": "b",
+        "text": "igrejas"
+      },
+      {
+        "id": "c",
+        "text": "ordenanças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vos sujeitais a ordenanças",
+    "feedbackCorrect": "Mortos com Cristo, não devem sujeitar-se a ordenanças.",
+    "feedbackWrong": {
+      "a": "O texto fala de ordenanças, não de promessas.",
+      "b": "A palavra no fim é ordenanças."
+    },
+    "hint": "Veja o fim da pergunta de Paulo.",
+    "learningObjective": "Lembrar o que não devem aceitar.",
+    "evidence": [
+      "Colossenses 2:20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-02-nao-vos-julgue-ninguem-06",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Colossenses 2:17 comunica que se liga a este contexto?",
+    "prompt": "O que Colossenses 2:17 comunica que se liga a este contexto?",
+    "cue": "O que Colossenses 2:17 comunica que se liga a este contexto?",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "passageA": {
+      "ref": "Colossenses 2:17",
+      "text": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Rituais apontam; a realidade plena é Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sábados são a realidade"
+      },
+      {
+        "id": "b",
+        "text": "Anjos substituem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Sombras apontam a Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "São apenas sombras das coisas que estavam por vir",
+    "feedbackCorrect": "As festas são sombras; o corpo é de Cristo.",
+    "feedbackWrong": {
+      "a": "Sábados estão entre as sombras, não na realidade.",
+      "b": "O texto rejeita culto que não retém a cabeça."
+    },
+    "hint": "Compare sombra e corpo no versículo.",
+    "learningObjective": "Ligar o versículo à realidade em Cristo.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-02-nao-vos-julgue-ninguem-01",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Colossenses 2:17, as festas e sábados são sombras, e o corpo, a realidade, é de Cristo.",
+    "prompt": "Em Colossenses 2:17, as festas e sábados são sombras, e o corpo, a realidade, é de Cristo.",
+    "cue": "Em Colossenses 2:17, as festas e sábados são sombras, e o corpo, a realidade, é de Cristo.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo",
+    "feedbackCorrect": "O contraste é claro: sombras apontam; o corpo é de Cristo.",
+    "feedbackWrong": {
+      "false": "Releia o mas: o corpo é de Cristo."
+    },
+    "hint": "Repare na palavra que marca o contraste.",
+    "learningObjective": "Compreender o contraste sombra/corpo.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-02-nao-vos-julgue-ninguem-02",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 2:17, toque a palavra que marca o contraste com as sombras.",
+    "prompt": "Em Colossenses 2:17, toque a palavra que marca o contraste com as sombras.",
+    "cue": "Em Colossenses 2:17, toque a palavra que marca o contraste com as sombras.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "apenas"
+      },
+      {
+        "id": "c",
+        "text": "vir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "\"Mas\" vira a página: sombras de um lado, Cristo do outro.",
+    "feedbackWrong": {
+      "b": "\"Apenas\" reduz as sombras; o contraste é \"mas\".",
+      "c": "\"Vir\" fala do futuro apontado, não do contraste."
+    },
+    "hint": "Procure a conjunção antes de \"o corpo\".",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-02-nao-vos-julgue-ninguem-03",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Colossenses 2:20 se relaciona com ter morrido com Cristo?",
+    "prompt": "Como Colossenses 2:20 se relaciona com ter morrido com Cristo?",
+    "cue": "Como Colossenses 2:20 se relaciona com ter morrido com Cristo?",
+    "verseRef": "Colossenses 2:20",
+    "passageText": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ordenanças?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Morrer com Cristo exige mais listas de \"não toques\""
+      },
+      {
+        "id": "b",
+        "text": "Morrer com Cristo torna sujeição a ordenanças incoerente"
+      },
+      {
+        "id": "c",
+        "text": "Morrer com Cristo obriga culto aos anjos"
+      },
+      {
+        "id": "d",
+        "text": "Morrer com Cristo anula qualquer sabedoria prática"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se vocês morreram com Cristo em relação aos rudimentos do mundo, por que",
+    "feedbackCorrect": "A morte com Cristo questiona a sujeição a ordenanças mundanas.",
+    "feedbackWrong": {
+      "a": "\"Não toques\" é o exemplo do que Paulo rejeita.",
+      "c": "Culto aos anjos é criticado, não exigido.",
+      "d": "O texto rejeita ordenanças, não a sabedoria em Cristo."
+    },
+    "hint": "Una a condição \"se morreram\" com a pergunta \"por que\".",
+    "learningObjective": "Relacionar morte com Cristo e liberdade de ordenanças.",
+    "evidence": [
+      "Colossenses 2:20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-02-nao-vos-julgue-ninguem-04",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Colossenses 2:16–19?",
+    "prompt": "Como avança o argumento em Colossenses 2:16–19?",
+    "cue": "Como avança o argumento em Colossenses 2:16–19?",
+    "verseRef": "Colossenses 2:19",
+    "passageText": "E não retendo a cabeça, da qual todo o corpo, suprido e bem vinculado por suas juntas e ligamentos, cresce o crescimento que é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém julgue por rituais"
+      },
+      {
+        "id": "b",
+        "text": "Rituais são sombras de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "O corpo cresce retendo a cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cresce o crescimento que é de Deus",
+    "feedbackCorrect": "Do juízo ritual à sombra, e então ao crescimento em Cristo.",
+    "feedbackWrong": {
+      "default": "Comece pelo juízo; o crescimento em Cristo vem por último."
+    },
+    "hint": "Siga: juízo → sombras → cabeça.",
+    "learningObjective": "Compreender o movimento do argumento.",
+    "evidence": [
+      "Colossenses 2:16–17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-02-nao-vos-julgue-ninguem-05",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Colossenses 2:23, as regras não têm valor algum contra a satisfação da ___.",
+    "prompt": "Em Colossenses 2:23, as regras não têm valor algum contra a satisfação da ___.",
+    "cue": "Em Colossenses 2:23, as regras não têm valor algum contra a satisfação da ___.",
+    "verseRef": "Colossenses 2:23",
+    "passageText": "Elas têm, de fato, uma aparência de sabedoria, como culto a si mesmas, humildade e severidade no tratamento do corpo; porém, não têm valor algum contra a satisfação da carne.",
+    "template": "Elas têm, de fato, uma aparência de sabedoria, como culto a si mesmas, humildade e severidade no tratamento do corpo; porém, não têm valor algum contra a satisfação da ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lei"
+      },
+      {
+        "id": "b",
+        "text": "alma"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não têm valor algum contra a satisfação da carne",
+    "feedbackCorrect": "Aparência de sabedoria não vence a satisfação da carne.",
+    "feedbackWrong": {
+      "a": "O termo final é carne, não lei.",
+      "b": "O texto diz carne."
+    },
+    "hint": "Veja a última palavra da crítica.",
+    "learningObjective": "Lembrar a ineficácia das regras contra a carne.",
+    "evidence": [
+      "Colossenses 2:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-02-nao-vos-julgue-ninguem-06",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+    "prompt": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+    "cue": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "passageA": {
+      "ref": "Colossenses 2:17",
+      "text": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo."
+    },
+    "passageB": {
+      "ref": "Hebreus 10:1",
+      "text": "Porque a lei tem apenas a sombra dos bens vindouros, e não a imagem real das coisas, nunca, pelos mesmos sacrifícios que são oferecidos continuamente a cada ano, pode aperfeiçoar os que se aproximam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sombra como salvação"
+      },
+      {
+        "id": "b",
+        "text": "Cristo como sombra"
+      },
+      {
+        "id": "c",
+        "text": "Lei como sombra"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "São apenas sombras das coisas que estavam por vir",
+    "feedbackCorrect": "Nos dois textos, o ritual aponta como sombra para a realidade.",
+    "feedbackWrong": {
+      "a": "A sombra não salva; aponta para Cristo.",
+      "b": "Cristo é o corpo, não a sombra."
+    },
+    "hint": "Compare o uso de \"sombra\" nos dois trechos.",
+    "learningObjective": "Relacionar sombra ritual em Colossenses e Hebreus.",
+    "evidence": [
+      "Colossenses 2:17",
+      "Hebreus 10:1"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-02-nao-vos-julgue-ninguem-01",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Colossenses 2:23 ensina que severidade no corpo e aparência de sabedoria vencem a sensualidade.",
+    "prompt": "Colossenses 2:23 ensina que severidade no corpo e aparência de sabedoria vencem a sensualidade.",
+    "cue": "Colossenses 2:23 ensina que severidade no corpo e aparência de sabedoria vencem a sensualidade.",
+    "verseRef": "Colossenses 2:23",
+    "passageText": "Elas têm, de fato, uma aparência de sabedoria, como culto a si mesmas, humildade e severidade no tratamento do corpo; porém, não têm valor algum contra a satisfação da carne.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "porém, não têm valor algum contra a satisfação da carne",
+    "feedbackCorrect": "O \"porém\" desmonta a aparência: não têm valor contra a carne.",
+    "feedbackWrong": {
+      "true": "Releia o fim: não têm valor algum contra a satisfação da carne."
+    },
+    "hint": "Veja o que o texto diz depois da aparência de sabedoria.",
+    "learningObjective": "Interpretar a ineficácia do legalismo ascético.",
+    "evidence": [
+      "Colossenses 2:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-02-nao-vos-julgue-ninguem-02",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 2:19, toque o trecho que mostra de quem o corpo não deve se apartar.",
+    "prompt": "Em Colossenses 2:19, toque o trecho que mostra de quem o corpo não deve se apartar.",
+    "cue": "Em Colossenses 2:19, toque o trecho que mostra de quem o corpo não deve se apartar.",
+    "verseRef": "Colossenses 2:19",
+    "passageText": "E não retendo a cabeça, da qual todo o corpo, suprido e bem vinculado por suas juntas e ligamentos, cresce o crescimento que é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a cabeça"
+      },
+      {
+        "id": "b",
+        "text": "juntas"
+      },
+      {
+        "id": "c",
+        "text": "ligamentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E não retendo a cabeça",
+    "feedbackCorrect": "O problema é não reter a cabeça: Cristo.",
+    "feedbackWrong": {
+      "b": "Juntas ligam o corpo; a fonte é a cabeça.",
+      "c": "Ligamentos vinculam; quem falta é a cabeça."
+    },
+    "hint": "Procure o que não estão retendo.",
+    "learningObjective": "Sustentar que o crescimento depende de Cristo-cabeça.",
+    "evidence": [
+      "Colossenses 2:19"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-02-nao-vos-julgue-ninguem-03",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Colossenses 2:16–23 sustenta sobre regras religiosas?",
+    "prompt": "Que leitura Colossenses 2:16–23 sustenta sobre regras religiosas?",
+    "cue": "Que leitura Colossenses 2:16–23 sustenta sobre regras religiosas?",
+    "verseRef": "Colossenses 2:23",
+    "passageText": "Elas têm, de fato, uma aparência de sabedoria, como culto a si mesmas, humildade e severidade no tratamento do corpo; porém, não têm valor algum contra a satisfação da carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Têm aparência, mas sem valor contra a carne; Cristo é a realidade"
+      },
+      {
+        "id": "b",
+        "text": "São o caminho superior para vencer o pecado"
+      },
+      {
+        "id": "c",
+        "text": "Tornam o culto aos anjos necessário"
+      },
+      {
+        "id": "d",
+        "text": "Substituem Cristo como centro da vida cristã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não têm valor algum contra a satisfação da carne",
+    "feedbackCorrect": "Aparência sem poder; a realidade e o crescimento estão em Cristo.",
+    "feedbackWrong": {
+      "b": "O texto nega valor contra a carne.",
+      "c": "Culto aos anjos é rejeitado.",
+      "d": "Paulo combate justamente essa substituição."
+    },
+    "hint": "Una sombra, cabeça e o \"porém\" final.",
+    "learningObjective": "Escolher a leitura que o texto sustenta.",
+    "evidence": [
+      "Colossenses 2:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-02-nao-vos-julgue-ninguem-04",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da liberdade em Cristo?",
+    "prompt": "Qual sequência revela o fio da liberdade em Cristo?",
+    "cue": "Qual sequência revela o fio da liberdade em Cristo?",
+    "verseRef": "Colossenses 2:20",
+    "passageText": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ordenanças?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Morrem com Cristo aos rudimentos"
+      },
+      {
+        "id": "b",
+        "text": "Não se sujeitam a ordenanças"
+      },
+      {
+        "id": "c",
+        "text": "Crescem retendo a cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se vocês morreram com Cristo",
+    "feedbackCorrect": "Morte com Cristo, liberdade de regras e crescimento na cabeça.",
+    "feedbackWrong": {
+      "default": "Comece pela morte com Cristo; o crescimento fecha."
+    },
+    "hint": "Siga: morte → liberdade → crescimento.",
+    "learningObjective": "Ver o encadeamento da liberdade em Cristo.",
+    "evidence": [
+      "Colossenses 2:19–20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-02-nao-vos-julgue-ninguem-05",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Colossenses 2:17, o corpo, a realidade, é de ___.",
+    "prompt": "Em Colossenses 2:17, o corpo, a realidade, é de ___.",
+    "cue": "Em Colossenses 2:17, o corpo, a realidade, é de ___.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "template": "São apenas sombras das coisas que estavam por vir; mas o corpo é de ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "homens"
+      },
+      {
+        "id": "b",
+        "text": "Cristo"
+      },
+      {
+        "id": "c",
+        "text": "anjos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "A realidade por trás das sombras é Cristo.",
+    "feedbackWrong": {
+      "a": "Preceitos de homens perecem; o corpo é de Cristo.",
+      "c": "Anjos não são o corpo; Cristo é."
+    },
+    "hint": "Veja o fim do contraste.",
+    "learningObjective": "Lembrar o termo que carrega a realidade.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-02-nao-vos-julgue-ninguem-06",
+    "trail": "colossenses-cap",
+    "section": "clc-02-nao-vos-julgue-ninguem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Colossenses 2:19 a Efésios 4:15–16?",
+    "prompt": "O que liga Colossenses 2:19 a Efésios 4:15–16?",
+    "cue": "O que liga Colossenses 2:19 a Efésios 4:15–16?",
+    "verseRef": "Colossenses 2:19",
+    "passageText": "E não retendo a cabeça, da qual todo o corpo, suprido e bem vinculado por suas juntas e ligamentos, cresce o crescimento que é de Deus.",
+    "passageA": {
+      "ref": "Colossenses 2:19",
+      "text": "E não retendo a cabeça, da qual todo o corpo, suprido e bem vinculado por suas juntas e ligamentos, cresce o crescimento que é de Deus."
+    },
+    "passageB": {
+      "ref": "Efésios 4:15–16",
+      "text": "Antes, seguindo a verdade com amor, cresçamos em tudo naquele que é a cabeça, Cristo. Do qual todo o corpo, bem ajustado e consolidado por meio de todas as articulações, segundo a justa cooperação de cada parte, promove o crescimento do corpo para a edificação de si mesmo em amor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto aos anjos"
+      },
+      {
+        "id": "b",
+        "text": "Ordenanças do mundo"
+      },
+      {
+        "id": "c",
+        "text": "Crescimento da cabeça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cresce o crescimento que é de Deus",
+    "feedbackCorrect": "Nos dois textos, o corpo cresce a partir de Cristo, a cabeça.",
+    "feedbackWrong": {
+      "a": "Culto aos anjos é o erro criticado.",
+      "b": "Ordenanças são rejeitadas, não o elo."
+    },
+    "hint": "Compare cabeça e crescimento nos dois trechos.",
+    "learningObjective": "Ligar o crescimento em Colossenses e Efésios.",
+    "evidence": [
+      "Colossenses 2:19",
+      "Efésios 4:15–16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-03-revesti-vos-de-amor-01",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Colossenses 3:14, Paulo coloca o amor abaixo das outras virtudes da lista.",
+    "prompt": "Em Colossenses 3:14, Paulo coloca o amor abaixo das outras virtudes da lista.",
+    "cue": "Em Colossenses 3:14, Paulo coloca o amor abaixo das outras virtudes da lista.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+    "feedbackCorrect": "O texto diz o contrário: acima de tudo, revesti-vos de amor.",
+    "feedbackWrong": {
+      "true": "Releia: acima de tudo, revesti-vos de amor."
+    },
+    "hint": "Olhe as primeiras palavras do versículo.",
+    "learningObjective": "Observar o lugar do amor no texto.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-03-revesti-vos-de-amor-02",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 3:14, toque o que o amor é.",
+    "prompt": "Em Colossenses 3:14, toque o que o amor é.",
+    "cue": "Em Colossenses 3:14, toque o que o amor é.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vínculo da perfeição"
+      },
+      {
+        "id": "b",
+        "text": "revesti-vos"
+      },
+      {
+        "id": "c",
+        "text": "Acima de tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "amor que é o vínculo da perfeição",
+    "feedbackCorrect": "O amor é o vínculo da perfeição.",
+    "feedbackWrong": {
+      "b": "\"Revesti-vos\" é o verbo; a definição vem depois.",
+      "c": "\"Acima de tudo\" marca a prioridade, não o que o amor é."
+    },
+    "hint": "Procure a explicação depois de \"amor\".",
+    "learningObjective": "Identificar o amor como vínculo da perfeição.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-03-revesti-vos-de-amor-03",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Colossenses 3:13, qual é o modelo do perdão mútuo?",
+    "prompt": "Segundo Colossenses 3:13, qual é o modelo do perdão mútuo?",
+    "cue": "Segundo Colossenses 3:13, qual é o modelo do perdão mútuo?",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Assim como a paz romana ordena"
+      },
+      {
+        "id": "b",
+        "text": "Assim como o Senhor vos perdoou"
+      },
+      {
+        "id": "c",
+        "text": "Assim como a lei de Moisés exige"
+      },
+      {
+        "id": "d",
+        "text": "Assim como o ofensor pedir primeiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assim como o Senhor vos perdoou, assim também perdoai-vos",
+    "feedbackCorrect": "O perdão mútuo espelha o perdão do Senhor.",
+    "feedbackWrong": {
+      "a": "Não há menção à paz romana.",
+      "c": "O modelo é o Senhor, não a lei.",
+      "d": "O texto não condiciona ao pedido do ofensor."
+    },
+    "hint": "Leia a comparação no fim do versículo.",
+    "learningObjective": "Observar o modelo do perdão.",
+    "evidence": [
+      "Colossenses 3:13"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-03-revesti-vos-de-amor-04",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 3:14 na ordem do texto.",
+    "prompt": "Monte Colossenses 3:14 na ordem do texto.",
+    "cue": "Monte Colossenses 3:14 na ordem do texto.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acima de tudo"
+      },
+      {
+        "id": "b",
+        "text": "revesti-vos de amor"
+      },
+      {
+        "id": "c",
+        "text": "que é o vínculo da perfeição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+    "feedbackCorrect": "Prioridade, vestimenta e definição do amor.",
+    "feedbackWrong": {
+      "default": "Comece por \"Acima de tudo\"; a definição fecha."
+    },
+    "hint": "O versículo começa pela prioridade.",
+    "learningObjective": "Reconhecer a sequência de Colossenses 3:14.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-03-revesti-vos-de-amor-05",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Colossenses 3:15, que a ___ de Cristo reine em seus corações.",
+    "prompt": "Em Colossenses 3:15, que a ___ de Cristo reine em seus corações.",
+    "cue": "Em Colossenses 3:15, que a ___ de Cristo reine em seus corações.",
+    "verseRef": "Colossenses 3:15",
+    "passageText": "E que a paz de Cristo reine em seus corações, à qual vocês também foram chamados em um só corpo; e sejam gratos.",
+    "template": "E que a ___ de Cristo reine em seus corações, à qual vocês também foram chamados em um só corpo; e sejam gratos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "lei"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que a paz de Cristo reine em seus corações",
+    "feedbackCorrect": "É a paz de Cristo que deve reinar nos corações.",
+    "feedbackWrong": {
+      "a": "O texto fala de paz, não de ira.",
+      "b": "A palavra é paz, não lei."
+    },
+    "hint": "Veja o que deve reinar nos corações.",
+    "learningObjective": "Lembrar a paz de Cristo no corpo.",
+    "evidence": [
+      "Colossenses 3:15"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-03-revesti-vos-de-amor-06",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+    "prompt": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "passageA": {
+      "ref": "Colossenses 3:14",
+      "text": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "As virtudes se unem quando o amor fica por cima de tudo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor é opcional"
+      },
+      {
+        "id": "b",
+        "text": "Amor une em perfeição"
+      },
+      {
+        "id": "c",
+        "text": "Só humildade basta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "amor que é o vínculo da perfeição",
+    "feedbackCorrect": "O amor é o vínculo que aperfeiçoa o restante.",
+    "feedbackWrong": {
+      "a": "O texto coloca o amor acima de tudo.",
+      "c": "Humildade está na lista; o vínculo é o amor."
+    },
+    "hint": "Veja como o amor é definido.",
+    "learningObjective": "Ligar o amor ao vínculo da perfeição.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-03-revesti-vos-de-amor-01",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Colossenses 3:13, o perdão mútuo segue o perdão que o Senhor já concedeu.",
+    "prompt": "Em Colossenses 3:13, o perdão mútuo segue o perdão que o Senhor já concedeu.",
+    "cue": "Em Colossenses 3:13, o perdão mútuo segue o perdão que o Senhor já concedeu.",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "assim como o Senhor vos perdoou, assim também perdoai-vos",
+    "feedbackCorrect": "O \"assim como\" marca a causa-modelo: o Senhor perdoou; portanto perdoai.",
+    "feedbackWrong": {
+      "false": "Releia a comparação: assim como o Senhor vos perdoou."
+    },
+    "hint": "Repare na expressão \"assim como\".",
+    "learningObjective": "Compreender a relação entre perdão recebido e oferecido.",
+    "evidence": [
+      "Colossenses 3:13"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-03-revesti-vos-de-amor-02",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 3:13, toque a expressão que marca o modelo do perdão.",
+    "prompt": "Em Colossenses 3:13, toque a expressão que marca o modelo do perdão.",
+    "cue": "Em Colossenses 3:13, toque a expressão que marca o modelo do perdão.",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim como"
+      },
+      {
+        "id": "b",
+        "text": "queixa"
+      },
+      {
+        "id": "c",
+        "text": "uns aos outros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim como o Senhor vos perdoou",
+    "feedbackCorrect": "\"Assim como\" liga o perdão deles ao do Senhor.",
+    "feedbackWrong": {
+      "b": "\"Queixa\" é o conflito; o modelo é \"assim como\".",
+      "c": "Descreve o alvo mútuo, não o modelo."
+    },
+    "hint": "Procure a comparação no fim.",
+    "learningObjective": "Reconhecer o marcador de relação.",
+    "evidence": [
+      "Colossenses 3:13"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-03-revesti-vos-de-amor-03",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Colossenses 3:12 se relaciona com serem eleitos?",
+    "prompt": "Como Colossenses 3:12 se relaciona com serem eleitos?",
+    "cue": "Como Colossenses 3:12 se relaciona com serem eleitos?",
+    "verseRef": "Colossenses 3:12",
+    "passageText": "Revesti-vos, portanto, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia, bondade, humildade, mansidão e longanimidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "As virtudes servem para merecer a eleição"
+      },
+      {
+        "id": "b",
+        "text": "Porque são eleitos, devem revestir-se dessas virtudes"
+      },
+      {
+        "id": "c",
+        "text": "A eleição cancela humildade e mansidão"
+      },
+      {
+        "id": "d",
+        "text": "Porque são eleitos, as virtudes são desnecessárias"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Revesti-vos, portanto, como eleitos de Deus",
+    "feedbackCorrect": "O \"portanto\" e o \"como eleitos\" pedem vestes coerentes com o chamado.",
+    "feedbackWrong": {
+      "a": "A eleição é o ponto de partida, não o prêmio das virtudes.",
+      "c": "Humildade e mansidão estão na lista.",
+      "d": "O texto manda revestir-se, não dispensar."
+    },
+    "hint": "Una \"portanto\" e \"como eleitos\".",
+    "learningObjective": "Relacionar identidade e conduta.",
+    "evidence": [
+      "Colossenses 3:12"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-03-revesti-vos-de-amor-04",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Colossenses 3:12–15?",
+    "prompt": "Como avança a cena em Colossenses 3:12–15?",
+    "cue": "Como avança a cena em Colossenses 3:12–15?",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revestir misericórdia e humildade"
+      },
+      {
+        "id": "b",
+        "text": "Perdoar como o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Colocar o amor acima de tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+    "feedbackCorrect": "Virtudes, perdão e, por cima, o amor.",
+    "feedbackWrong": {
+      "default": "Comece pelas virtudes; o amor fecha por cima."
+    },
+    "hint": "Siga a ordem do parágrafo.",
+    "learningObjective": "Compreender o movimento das vestes.",
+    "evidence": [
+      "Colossenses 3:12–14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-03-revesti-vos-de-amor-05",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Colossenses 3:12, revesti-vos, ___, como eleitos de Deus.",
+    "prompt": "Em Colossenses 3:12, revesti-vos, ___, como eleitos de Deus.",
+    "cue": "Em Colossenses 3:12, revesti-vos, ___, como eleitos de Deus.",
+    "verseRef": "Colossenses 3:12",
+    "passageText": "Revesti-vos, portanto, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia, bondade, humildade, mansidão e longanimidade.",
+    "template": "Revesti-vos, ___, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia, bondade, humildade, mansidão e longanimidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "portanto"
+      },
+      {
+        "id": "b",
+        "text": "jamais"
+      },
+      {
+        "id": "c",
+        "text": "apenas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Revesti-vos, portanto, como eleitos de Deus",
+    "feedbackCorrect": "\"Portanto\" liga a identidade eleita à conduta.",
+    "feedbackWrong": {
+      "b": "Não é \"jamais\"; a palavra é portanto.",
+      "c": "Não é \"apenas\"; a palavra é portanto."
+    },
+    "hint": "Procure a palavra entre vírgulas.",
+    "learningObjective": "Lembrar o marcador que liga eleição e vestes.",
+    "evidence": [
+      "Colossenses 3:12"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-03-revesti-vos-de-amor-06",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Colossenses 3:13 a Efésios 4:32?",
+    "prompt": "O que liga Colossenses 3:13 a Efésios 4:32?",
+    "cue": "O que liga Colossenses 3:13 a Efésios 4:32?",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "passageA": {
+      "ref": "Colossenses 3:13",
+      "text": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos."
+    },
+    "passageB": {
+      "ref": "Efésios 4:32",
+      "text": "Antes sejam uns para com os outros bondosos e compassivos, perdoando-se mutuamente, assim como Deus, em Cristo, os perdoou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar a queixa"
+      },
+      {
+        "id": "b",
+        "text": "Perdoar como Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Perdoar só uma vez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "assim como o Senhor vos perdoou",
+    "feedbackCorrect": "Nos dois textos, o perdão mútuo espelha o de Cristo.",
+    "feedbackWrong": {
+      "a": "O texto manda perdoar a queixa, não guardá-la.",
+      "c": "O modelo é o perdão do Senhor, sem esse limite."
+    },
+    "hint": "Compare o modelo do perdão nos dois trechos.",
+    "learningObjective": "Relacionar o perdão em Colossenses e Efésios.",
+    "evidence": [
+      "Colossenses 3:13",
+      "Efésios 4:32"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-03-revesti-vos-de-amor-01",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Colossenses 3:16–17 apresenta a vida nova só como sentimento interno, sem palavra, cântico ou nome de Jesus.",
+    "prompt": "Colossenses 3:16–17 apresenta a vida nova só como sentimento interno, sem palavra, cântico ou nome de Jesus.",
+    "cue": "Colossenses 3:16–17 apresenta a vida nova só como sentimento interno, sem palavra, cântico ou nome de Jesus.",
+    "verseRef": "Colossenses 3:16–17",
+    "passageText": "Que a palavra de Cristo habite ricamente em vós, ensinando e aconselhando-vos mutuamente em toda a sabedoria, louvando a Deus com salmos, hinos e cânticos espirituais, cantando com gratidão em vosso coração. E tudo o que fizerem, seja em palavras ou em ações, façam em nome do Senhor Jesus, agradecendo a Deus Pai por intermédio dele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós",
+    "feedbackCorrect": "Há palavra habitando, cânticos e tudo em nome de Jesus.",
+    "feedbackWrong": {
+      "true": "Releia: palavra, cânticos e nome do Senhor Jesus."
+    },
+    "hint": "Veja o que deve habitar e em cujo nome agir.",
+    "learningObjective": "Interpretar a vida nova como palavra e ação em Jesus.",
+    "evidence": [
+      "Colossenses 3:16–17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-03-revesti-vos-de-amor-02",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 3:16, toque o trecho que mostra o que deve habitar ricamente.",
+    "prompt": "Em Colossenses 3:16, toque o trecho que mostra o que deve habitar ricamente.",
+    "cue": "Em Colossenses 3:16, toque o trecho que mostra o que deve habitar ricamente.",
+    "verseRef": "Colossenses 3:16",
+    "passageText": "Que a palavra de Cristo habite ricamente em vós, ensinando e aconselhando-vos mutuamente em toda a sabedoria, louvando a Deus com salmos, hinos e cânticos espirituais, cantando com gratidão em vosso coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gratidão"
+      },
+      {
+        "id": "b",
+        "text": "salmos"
+      },
+      {
+        "id": "c",
+        "text": "palavra de Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós",
+    "feedbackCorrect": "É a palavra de Cristo que deve habitar ricamente.",
+    "feedbackWrong": {
+      "a": "Gratidão acompanha o cântico; o sujeito é a palavra.",
+      "b": "Salmos são forma de louvor; o que habita é a palavra."
+    },
+    "hint": "Procure o sujeito de \"habite\".",
+    "learningObjective": "Sustentar a centralidade da palavra de Cristo.",
+    "evidence": [
+      "Colossenses 3:16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-03-revesti-vos-de-amor-03",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Colossenses 3:12–17 sustenta sobre a vida da igreja?",
+    "prompt": "Que leitura Colossenses 3:12–17 sustenta sobre a vida da igreja?",
+    "cue": "Que leitura Colossenses 3:12–17 sustenta sobre a vida da igreja?",
+    "verseRef": "Colossenses 3:14–15",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição. E que a paz de Cristo reine em seus corações, à qual vocês também foram chamados em um só corpo; e sejam gratos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O nome de Jesus vale só para cultos, não para ações"
+      },
+      {
+        "id": "b",
+        "text": "Amor, paz e palavra unem o corpo em nome de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Eleitos não precisam revestir-se de nada"
+      },
+      {
+        "id": "d",
+        "text": "Virtudes dispensam perdão e gratidão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "revesti-vos de amor que é o vínculo da perfeição",
+    "feedbackCorrect": "O parágrafo une vestes, amor, paz, palavra e nome de Jesus.",
+    "feedbackWrong": {
+      "a": "Tudo em palavras ou ações é em nome de Jesus.",
+      "c": "O texto manda revestir-se justamente como eleitos.",
+      "d": "Perdão e gratidão estão explícitos."
+    },
+    "hint": "Una amor, paz e o \"tudo\" do versículo 17.",
+    "learningObjective": "Escolher a leitura que o texto sustenta.",
+    "evidence": [
+      "Colossenses 3:14–15"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-03-revesti-vos-de-amor-04",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do perdão ao amor?",
+    "prompt": "Qual sequência revela o fio do perdão ao amor?",
+    "cue": "Qual sequência revela o fio do perdão ao amor?",
+    "verseRef": "Colossenses 3:13–14",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos. Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor perdoa o povo"
+      },
+      {
+        "id": "b",
+        "text": "O povo se perdoa mutuamente"
+      },
+      {
+        "id": "c",
+        "text": "O amor cobre como vínculo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim como o Senhor vos perdoou",
+    "feedbackCorrect": "Do perdão de Cristo ao mútuo, e então ao amor que une.",
+    "feedbackWrong": {
+      "default": "Comece pelo Senhor; o amor fecha por cima."
+    },
+    "hint": "Siga: Senhor → mútuo → amor.",
+    "learningObjective": "Ver o encadeamento do perdão ao amor.",
+    "evidence": [
+      "Colossenses 3:13–14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-03-revesti-vos-de-amor-05",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+    "prompt": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+    "cue": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "template": "Acima de tudo, revesti-vos de amor que é o ___ da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "peso"
+      },
+      {
+        "id": "b",
+        "text": "vínculo"
+      },
+      {
+        "id": "c",
+        "text": "fim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "amor que é o vínculo da perfeição",
+    "feedbackCorrect": "O termo teológico da cena é vínculo da perfeição.",
+    "feedbackWrong": {
+      "a": "Não é peso; é vínculo.",
+      "c": "A palavra é vínculo."
+    },
+    "hint": "Veja a definição depois de \"amor\".",
+    "learningObjective": "Lembrar o termo que carrega o sentido do amor.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-03-revesti-vos-de-amor-06",
+    "trail": "colossenses-cap",
+    "section": "clc-03-revesti-vos-de-amor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Colossenses 3:15 a Filipenses 4:7?",
+    "prompt": "O que liga Colossenses 3:15 a Filipenses 4:7?",
+    "cue": "O que liga Colossenses 3:15 a Filipenses 4:7?",
+    "verseRef": "Colossenses 3:15",
+    "passageText": "E que a paz de Cristo reine em seus corações, à qual vocês também foram chamados em um só corpo; e sejam gratos.",
+    "passageA": {
+      "ref": "Colossenses 3:15",
+      "text": "E que a paz de Cristo reine em seus corações, à qual vocês também foram chamados em um só corpo; e sejam gratos."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:7",
+      "text": "E a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente em Cristo Jesus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ansiedade no comando"
+      },
+      {
+        "id": "b",
+        "text": "Paz só no culto"
+      },
+      {
+        "id": "c",
+        "text": "Paz no coração"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que a paz de Cristo reine em seus corações",
+    "feedbackCorrect": "Nos dois textos, a paz de Cristo/Deus guarda o coração.",
+    "feedbackWrong": {
+      "a": "A paz reina; não a ansiedade.",
+      "b": "A paz é nos corações, não só no culto."
+    },
+    "hint": "Compare o que reina ou guarda o coração.",
+    "learningObjective": "Ligar a paz de Cristo em Colossenses e Filipenses.",
+    "evidence": [
+      "Colossenses 3:15",
+      "Filipenses 4:7"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-04-orar-e-aproveitar-o-01",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Colossenses 4:2, Paulo manda perseverar na oração, vigiando com gratidão.",
+    "prompt": "Em Colossenses 4:2, Paulo manda perseverar na oração, vigiando com gratidão.",
+    "cue": "Em Colossenses 4:2, Paulo manda perseverar na oração, vigiando com gratidão.",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Perseverem na oração, vigiando com gratidão",
+    "feedbackCorrect": "O versículo une perseverança, vigilância e gratidão na oração.",
+    "feedbackWrong": {
+      "false": "Releia: perseverem na oração, vigiando com gratidão."
+    },
+    "hint": "Olhe o versículo inteiro.",
+    "learningObjective": "Observar o chamado à oração perseverante.",
+    "evidence": [
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-04-orar-e-aproveitar-o-02",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 4:3, toque o que Paulo pede que Deus abra.",
+    "prompt": "Em Colossenses 4:3, toque o que Paulo pede que Deus abra.",
+    "cue": "Em Colossenses 4:3, toque o que Paulo pede que Deus abra.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "mistério"
+      },
+      {
+        "id": "b",
+        "text": "uma porta"
+      },
+      {
+        "id": "c",
+        "text": "algemado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que Deus nos abra uma porta para a palavra",
+    "feedbackCorrect": "Ele pede uma porta para a palavra.",
+    "feedbackWrong": {
+      "a": "O mistério é o conteúdo; o pedido é a porta.",
+      "c": "Algemado descreve Paulo; o pedido é a porta."
+    },
+    "hint": "Procure o que Deus deve abrir.",
+    "learningObjective": "Identificar o pedido de porta para a palavra.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-04-orar-e-aproveitar-o-03",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Colossenses 4:5, o que fazer em relação aos de fora?",
+    "prompt": "Segundo Colossenses 4:5, o que fazer em relação aos de fora?",
+    "cue": "Segundo Colossenses 4:5, o que fazer em relação aos de fora?",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar com sabedoria e aproveitar oportunidades"
+      },
+      {
+        "id": "b",
+        "text": "Evitar qualquer conversa com eles"
+      },
+      {
+        "id": "c",
+        "text": "Exigir que entrem na igreja primeiro"
+      },
+      {
+        "id": "d",
+        "text": "Julgá-los por comida e sábados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades",
+    "feedbackCorrect": "Sabedoria e aproveitamento do tempo diante dos de fora.",
+    "feedbackWrong": {
+      "b": "O texto manda aproveitar oportunidades, não sumir.",
+      "c": "Não há essa exigência no versículo.",
+      "d": "Isso é o erro combatido no capítulo 2."
+    },
+    "hint": "Leia as duas ordens do versículo.",
+    "learningObjective": "Observar a postura com os de fora.",
+    "evidence": [
+      "Colossenses 4:5"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-04-orar-e-aproveitar-o-04",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 4:2 na ordem do texto.",
+    "prompt": "Monte Colossenses 4:2 na ordem do texto.",
+    "cue": "Monte Colossenses 4:2 na ordem do texto.",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverem na oração"
+      },
+      {
+        "id": "b",
+        "text": "vigiando"
+      },
+      {
+        "id": "c",
+        "text": "com gratidão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Perseverem na oração, vigiando com gratidão",
+    "feedbackCorrect": "Perseverar, vigiar e agradecer na oração.",
+    "feedbackWrong": {
+      "default": "Comece por perseverar; a gratidão fecha."
+    },
+    "hint": "O versículo começa pelo verbo perseverar.",
+    "learningObjective": "Reconhecer a sequência de Colossenses 4:2.",
+    "evidence": [
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-04-orar-e-aproveitar-o-05",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Colossenses 4:6, a palavra deve ser temperada com ___.",
+    "prompt": "Em Colossenses 4:6, a palavra deve ser temperada com ___.",
+    "cue": "Em Colossenses 4:6, a palavra deve ser temperada com ___.",
+    "verseRef": "Colossenses 4:6",
+    "passageText": "Que a vossa palavra seja sempre agradável, temperada com sal, para saberdes como deveis responder a cada um.",
+    "template": "Que a vossa palavra seja sempre agradável, temperada com ___, para saberdes como deveis responder a cada um.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sal"
+      },
+      {
+        "id": "b",
+        "text": "mel"
+      },
+      {
+        "id": "c",
+        "text": "vinho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "temperada com sal",
+    "feedbackCorrect": "A palavra agradável é temperada com sal.",
+    "feedbackWrong": {
+      "b": "O texto diz sal, não mel.",
+      "c": "A palavra é sal."
+    },
+    "hint": "Veja o tempero da palavra.",
+    "learningObjective": "Lembrar o tempero da palavra.",
+    "evidence": [
+      "Colossenses 4:6"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-04-orar-e-aproveitar-o-06",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Colossenses 4:2 comunica que se liga a este contexto?",
+    "prompt": "O que Colossenses 4:2 comunica que se liga a este contexto?",
+    "cue": "O que Colossenses 4:2 comunica que se liga a este contexto?",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "passageA": {
+      "ref": "Colossenses 4:2",
+      "text": "Perseverem na oração, vigiando com gratidão."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A vida nova persevera em oração vigilante e grata."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orar com vigilância grata"
+      },
+      {
+        "id": "b",
+        "text": "Deixar de vigiar"
+      },
+      {
+        "id": "c",
+        "text": "Orar só em crise"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Perseverem na oração, vigiando com gratidão",
+    "feedbackCorrect": "Perseverar, vigiar e agradecer formam a oração pedida.",
+    "feedbackWrong": {
+      "b": "O texto manda vigiar.",
+      "c": "O verbo é perseverar, não orar só na crise."
+    },
+    "hint": "Una os três verbos/ideias do versículo.",
+    "learningObjective": "Ligar o versículo à oração perseverante.",
+    "evidence": [
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-04-orar-e-aproveitar-o-01",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Colossenses 4:3, Paulo pede oração só por alívio das algemas, sem pedir porta para a palavra.",
+    "prompt": "Em Colossenses 4:3, Paulo pede oração só por alívio das algemas, sem pedir porta para a palavra.",
+    "cue": "Em Colossenses 4:3, Paulo pede oração só por alívio das algemas, sem pedir porta para a palavra.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que Deus nos abra uma porta para a palavra",
+    "feedbackCorrect": "O \"para que\" marca o propósito: porta para anunciar o mistério.",
+    "feedbackWrong": {
+      "true": "Releia o propósito: porta para a palavra, o mistério de Cristo."
+    },
+    "hint": "Repare na expressão \"para que\".",
+    "learningObjective": "Compreender o propósito da intercessão.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-04-orar-e-aproveitar-o-02",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 4:3, toque a expressão que marca o propósito da oração.",
+    "prompt": "Em Colossenses 4:3, toque a expressão que marca o propósito da oração.",
+    "cue": "Em Colossenses 4:3, toque a expressão que marca o propósito da oração.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "algemado"
+      },
+      {
+        "id": "b",
+        "text": "para que"
+      },
+      {
+        "id": "c",
+        "text": "também"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que Deus nos abra uma porta",
+    "feedbackCorrect": "\"Para que\" introduz o alvo da oração.",
+    "feedbackWrong": {
+      "a": "Descreve a situação de Paulo, não o marcador.",
+      "c": "\"Também\" só amplia o pedido; o propósito é \"para que\"."
+    },
+    "hint": "Procure a expressão de finalidade.",
+    "learningObjective": "Reconhecer o marcador de propósito.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-04-orar-e-aproveitar-o-03",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Colossenses 4:6 se relaciona com responder a cada um?",
+    "prompt": "Como Colossenses 4:6 se relaciona com responder a cada um?",
+    "cue": "Como Colossenses 4:6 se relaciona com responder a cada um?",
+    "verseRef": "Colossenses 4:6",
+    "passageText": "Que a vossa palavra seja sempre agradável, temperada com sal, para saberdes como deveis responder a cada um.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Basta falar duro para calar os de fora"
+      },
+      {
+        "id": "b",
+        "text": "Palavra agradável e com sal prepara a resposta certa"
+      },
+      {
+        "id": "c",
+        "text": "Só se responde dentro da igreja"
+      },
+      {
+        "id": "d",
+        "text": "Não é preciso saber responder a ninguém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para saberdes como deveis responder a cada um",
+    "feedbackCorrect": "O tempero da palavra visa saber responder a cada um.",
+    "feedbackWrong": {
+      "a": "O texto pede palavra agradável, temperada.",
+      "c": "A relação é com os de fora e com cada um.",
+      "d": "O propósito é saber responder."
+    },
+    "hint": "Leia a finalidade no fim do versículo.",
+    "learningObjective": "Relacionar tom da palavra e resposta.",
+    "evidence": [
+      "Colossenses 4:6"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-04-orar-e-aproveitar-o-04",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o pedido em Colossenses 4:2–5?",
+    "prompt": "Como avança o pedido em Colossenses 4:2–5?",
+    "cue": "Como avança o pedido em Colossenses 4:2–5?",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverar na oração grata"
+      },
+      {
+        "id": "b",
+        "text": "Pedir porta para a palavra"
+      },
+      {
+        "id": "c",
+        "text": "Andar com sabedoria fora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Andem com sabedoria em relação aos que estão fora",
+    "feedbackCorrect": "Oração, intercessão pela palavra e sabedoria pública.",
+    "feedbackWrong": {
+      "default": "Comece pela oração; a sabedoria com os de fora vem depois."
+    },
+    "hint": "Siga: orar → porta → sabedoria.",
+    "learningObjective": "Compreender o movimento do fechamento.",
+    "evidence": [
+      "Colossenses 4:2–3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-04-orar-e-aproveitar-o-05",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Colossenses 4:5, aproveitem as ___.",
+    "prompt": "Em Colossenses 4:5, aproveitem as ___.",
+    "cue": "Em Colossenses 4:5, aproveitem as ___.",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "template": "Andem com sabedoria em relação aos que estão fora; aproveitem as ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "riquezas"
+      },
+      {
+        "id": "b",
+        "text": "oportunidades"
+      },
+      {
+        "id": "c",
+        "text": "queixas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "aproveitem as oportunidades",
+    "feedbackCorrect": "Com sabedoria, aproveitam as oportunidades.",
+    "feedbackWrong": {
+      "a": "Não é riquezas; é oportunidades.",
+      "c": "A palavra é oportunidades."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Lembrar o que aproveitar com os de fora.",
+    "evidence": [
+      "Colossenses 4:5"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-04-orar-e-aproveitar-o-06",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Colossenses 4:5 a Efésios 5:15–16?",
+    "prompt": "O que liga Colossenses 4:5 a Efésios 5:15–16?",
+    "cue": "O que liga Colossenses 4:5 a Efésios 5:15–16?",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "passageA": {
+      "ref": "Colossenses 4:5",
+      "text": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades."
+    },
+    "passageB": {
+      "ref": "Efésios 5:15–16",
+      "text": "Portanto, vejam cuidadosamente como vocês andam, não como insensatos, mas como sábios. Remindo o tempo, pois os dias são maus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perder o tempo"
+      },
+      {
+        "id": "b",
+        "text": "Remir o tempo"
+      },
+      {
+        "id": "c",
+        "text": "Fugir dos de fora"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "aproveitem as oportunidades",
+    "feedbackCorrect": "Nos dois textos, a sabedoria aproveita/remi o tempo.",
+    "feedbackWrong": {
+      "a": "O chamado é aproveitar, não perder.",
+      "c": "Há relação sábia com os de fora, não fuga."
+    },
+    "hint": "Compare sabedoria e tempo/oportunidade.",
+    "learningObjective": "Relacionar remir o tempo em Paulo.",
+    "evidence": [
+      "Colossenses 4:5",
+      "Efésios 5:15–16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-04-orar-e-aproveitar-o-01",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Colossenses 4:3–4 mostra Paulo pedindo oração para anunciar o mistério com clareza, mesmo algemado.",
+    "prompt": "Colossenses 4:3–4 mostra Paulo pedindo oração para anunciar o mistério com clareza, mesmo algemado.",
+    "cue": "Colossenses 4:3–4 mostra Paulo pedindo oração para anunciar o mistério com clareza, mesmo algemado.",
+    "verseRef": "Colossenses 4:3–4",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado; Para que eu o manifeste de maneira clara, como devo fazer.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "falar do mistério de Cristo, pelo qual também estou algemado",
+    "feedbackCorrect": "Algemado, ele ainda pede porta e clareza para o mistério.",
+    "feedbackWrong": {
+      "false": "Releia: mistério de Cristo, pelo qual estou algemado."
+    },
+    "hint": "Veja o conteúdo e a situação de Paulo.",
+    "learningObjective": "Interpretar a missão da palavra sob prisão.",
+    "evidence": [
+      "Colossenses 4:3–4"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-04-orar-e-aproveitar-o-02",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 4:3, toque o trecho que nomeia o conteúdo a anunciar.",
+    "prompt": "Em Colossenses 4:3, toque o trecho que nomeia o conteúdo a anunciar.",
+    "cue": "Em Colossenses 4:3, toque o trecho que nomeia o conteúdo a anunciar.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orando também"
+      },
+      {
+        "id": "b",
+        "text": "mistério de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "uma porta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "falar do mistério de Cristo",
+    "feedbackCorrect": "O conteúdo da porta aberta é o mistério de Cristo.",
+    "feedbackWrong": {
+      "a": "É o início do pedido, não o conteúdo.",
+      "c": "A porta é o meio; o conteúdo é o mistério."
+    },
+    "hint": "Procure o que ele quer falar.",
+    "learningObjective": "Sustentar o conteúdo da missão.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-04-orar-e-aproveitar-o-03",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Colossenses 4:2–6 sustenta sobre a vida pública da igreja?",
+    "prompt": "Que leitura Colossenses 4:2–6 sustenta sobre a vida pública da igreja?",
+    "cue": "Que leitura Colossenses 4:2–6 sustenta sobre a vida pública da igreja?",
+    "verseRef": "Colossenses 4:5–6",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades. Que a vossa palavra seja sempre agradável, temperada com sal, para saberdes como deveis responder a cada um.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Depende só de Tíquico, sem oração"
+      },
+      {
+        "id": "b",
+        "text": "Anuncia sem clareza e sem tempero"
+      },
+      {
+        "id": "c",
+        "text": "Ora, pede porta à palavra e fala com sabedoria aos de fora"
+      },
+      {
+        "id": "d",
+        "text": "Só ora em silêncio e evita os de fora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Andem com sabedoria em relação aos que estão fora",
+    "feedbackCorrect": "Oração, palavra e sabedoria pública formam o fechamento.",
+    "feedbackWrong": {
+      "a": "Tíquico informa; a oração continua central.",
+      "b": "Paulo pede clareza e palavra temperada.",
+      "d": "Há aproveitar oportunidades e responder."
+    },
+    "hint": "Una oração, porta e sabedoria com os de fora.",
+    "learningObjective": "Escolher a leitura que o texto sustenta.",
+    "evidence": [
+      "Colossenses 4:5–6"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-04-orar-e-aproveitar-o-04",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da palavra anunciada?",
+    "prompt": "Qual sequência revela o fio da palavra anunciada?",
+    "cue": "Qual sequência revela o fio da palavra anunciada?",
+    "verseRef": "Colossenses 4:3–4",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado; Para que eu o manifeste de maneira clara, como devo fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A igreja ora por porta"
+      },
+      {
+        "id": "b",
+        "text": "Deus abre caminho à palavra"
+      },
+      {
+        "id": "c",
+        "text": "O mistério é manifesto com clareza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Para que eu o manifeste de maneira clara",
+    "feedbackCorrect": "Oração, porta e manifestação clara do mistério.",
+    "feedbackWrong": {
+      "default": "Comece pela oração; a clareza é o alvo."
+    },
+    "hint": "Siga: orar → porta → clareza.",
+    "learningObjective": "Ver o encadeamento da intercessão à palavra.",
+    "evidence": [
+      "Colossenses 4:3–4"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-04-orar-e-aproveitar-o-05",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Colossenses 4:3, Paulo quer falar do ___ de Cristo.",
+    "prompt": "Em Colossenses 4:3, Paulo quer falar do ___ de Cristo.",
+    "cue": "Em Colossenses 4:3, Paulo quer falar do ___ de Cristo.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "template": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do ___ de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "império"
+      },
+      {
+        "id": "b",
+        "text": "mistério"
+      },
+      {
+        "id": "c",
+        "text": "templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "falar do mistério de Cristo",
+    "feedbackCorrect": "O termo que carrega a mensagem é mistério de Cristo.",
+    "feedbackWrong": {
+      "a": "A palavra é mistério.",
+      "c": "Não é templo; é mistério."
+    },
+    "hint": "Veja o objeto de \"falar\".",
+    "learningObjective": "Lembrar o termo teológico da mensagem.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-04-orar-e-aproveitar-o-06",
+    "trail": "colossenses-cap",
+    "section": "clc-04-orar-e-aproveitar-o",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Colossenses 4:3 a Efésios 6:18–19?",
+    "prompt": "O que liga Colossenses 4:3 a Efésios 6:18–19?",
+    "cue": "O que liga Colossenses 4:3 a Efésios 6:18–19?",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "passageA": {
+      "ref": "Colossenses 4:3",
+      "text": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;"
+    },
+    "passageB": {
+      "ref": "Efésios 6:18–19",
+      "text": "Orando em todo o tempo com toda oração e súplica, no Espírito e vigiando com toda perseverança e súplica por todos os santos. E também por mim, para que me seja dada, no abrir da minha boca, a palavra, para com intrepidez fazer conhecido o mistério do evangelho."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Calar a palavra"
+      },
+      {
+        "id": "b",
+        "text": "Orar pela palavra"
+      },
+      {
+        "id": "c",
+        "text": "Orar só por si"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Orando também por nós, para que Deus nos abra uma porta",
+    "feedbackCorrect": "Nos dois textos, Paulo pede oração para anunciar a palavra.",
+    "feedbackWrong": {
+      "a": "O pedido é porta e fala, não silêncio.",
+      "c": "Ele pede oração por nós, pela missão."
+    },
+    "hint": "Compare o pedido de oração pela proclamação.",
+    "learningObjective": "Ligar a intercessão pela palavra em Paulo.",
+    "evidence": [
+      "Colossenses 4:3",
+      "Efésios 6:18–19"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-01",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Colossenses 1:21, Deus agora os reconciliou.",
+    "prompt": "Em Colossenses 1:21, Deus agora os reconciliou.",
+    "cue": "Em Colossenses 1:21, Deus agora os reconciliou.",
+    "verseRef": "Colossenses 1:21",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "O contraste fecha com a reconciliação presente.",
+    "feedbackWrong": {
+      "false": "Releia o fim: agora os reconciliou."
+    },
+    "hint": "Olhe o contraste com outrora.",
+    "learningObjective": "Observar a reconciliação.",
+    "evidence": [
+      "Colossenses 1:21"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-02",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 1:22, toque o meio da reconciliação.",
+    "prompt": "Em Colossenses 1:22, toque o meio da reconciliação.",
+    "cue": "Em Colossenses 1:22, toque o meio da reconciliação.",
+    "verseRef": "Colossenses 1:22",
+    "passageText": "no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "sem culpa"
+      },
+      {
+        "id": "b",
+        "text": "santos"
+      },
+      {
+        "id": "c",
+        "text": "sua morte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por meio da sua morte",
+    "feedbackCorrect": "A morte de Cristo é o meio.",
+    "feedbackWrong": {
+      "a": "Sem culpa é o alvo.",
+      "b": "Santos é o alvo."
+    },
+    "hint": "Procure \"por meio\".",
+    "learningObjective": "Identificar o meio.",
+    "evidence": [
+      "Colossenses 1:22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-03",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Colossenses 2:17, o que é o corpo?",
+    "prompt": "Segundo Colossenses 2:17, o que é o corpo?",
+    "cue": "Segundo Colossenses 2:17, o que é o corpo?",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "É de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "É a sombra dos sábados"
+      },
+      {
+        "id": "c",
+        "text": "É a lista de ordenanças"
+      },
+      {
+        "id": "d",
+        "text": "É o culto aos anjos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "A realidade é Cristo.",
+    "feedbackWrong": {
+      "b": "Sábados são sombras.",
+      "c": "Ordenanças são questionadas.",
+      "d": "Anjos são rejeitados."
+    },
+    "hint": "Leia o contraste.",
+    "learningObjective": "Observar a realidade em Cristo.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-04",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 2:17 na ordem do texto.",
+    "prompt": "Monte Colossenses 2:17 na ordem do texto.",
+    "cue": "Monte Colossenses 2:17 na ordem do texto.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "São apenas sombras das coisas que estavam por vir"
+      },
+      {
+        "id": "b",
+        "text": "mas o corpo"
+      },
+      {
+        "id": "c",
+        "text": "é de Cristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "Sombras primeiro; Cristo fecha.",
+    "feedbackWrong": {
+      "default": "Comece pelas sombras."
+    },
+    "hint": "O versículo começa pelas sombras.",
+    "learningObjective": "Reconhecer a sequência.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-05",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Colossenses 1:27, Cristo em vocês é a ___ da glória.",
+    "prompt": "Em Colossenses 1:27, Cristo em vocês é a ___ da glória.",
+    "cue": "Em Colossenses 1:27, Cristo em vocês é a ___ da glória.",
+    "verseRef": "Colossenses 1:27",
+    "passageText": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "template": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a ___ da glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ordenança"
+      },
+      {
+        "id": "b",
+        "text": "sombra"
+      },
+      {
+        "id": "c",
+        "text": "esperança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cristo em vocês, a esperança da glória",
+    "feedbackCorrect": "O mistério é Cristo em vocês, a esperança da glória.",
+    "feedbackWrong": {
+      "a": "Ordenança é rejeitada.",
+      "b": "Sombra é do cap. 2."
+    },
+    "hint": "Veja a definição do mistério.",
+    "learningObjective": "Lembrar a esperança da glória.",
+    "evidence": [
+      "Colossenses 1:27"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-06",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+    "prompt": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+    "cue": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+    "verseRef": "Colossenses 1:21",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou.",
+    "passageA": {
+      "ref": "Colossenses 1:21",
+      "text": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "De inimigos a reconciliados em Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só regras salvam"
+      },
+      {
+        "id": "b",
+        "text": "De inimigos a reconciliados"
+      },
+      {
+        "id": "c",
+        "text": "Inimizade permanente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "A virada é a reconciliação.",
+    "feedbackWrong": {
+      "a": "A reconciliação é de Deus.",
+      "c": "O agora muda o passado."
+    },
+    "hint": "Compare outrora e agora.",
+    "learningObjective": "Ligar à reconciliação.",
+    "evidence": [
+      "Colossenses 1:21"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-07",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 2:16, toque o que ninguém deve fazer por causa de comida ou sábados.",
+    "prompt": "Em Colossenses 2:16, toque o que ninguém deve fazer por causa de comida ou sábados.",
+    "cue": "Em Colossenses 2:16, toque o que ninguém deve fazer por causa de comida ou sábados.",
+    "verseRef": "Colossenses 2:16",
+    "passageText": "Portanto, ninguém vos julgue por causa do que comeis ou bebeis, ou em relação aos dias de festa, às luas novas ou aos sábados.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sábados"
+      },
+      {
+        "id": "b",
+        "text": "julgue"
+      },
+      {
+        "id": "c",
+        "text": "comeis"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ninguém vos julgue",
+    "feedbackCorrect": "Ninguém vos julgue por rituais.",
+    "feedbackWrong": {
+      "a": "Sábados são o tema do juízo.",
+      "c": "Comida é o tema do juízo."
+    },
+    "hint": "Procure o verbo principal.",
+    "learningObjective": "Identificar a proibição de juízo.",
+    "evidence": [
+      "Colossenses 2:16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-1-08",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 1:21 na ordem do texto.",
+    "prompt": "Monte Colossenses 1:21 na ordem do texto.",
+    "cue": "Monte Colossenses 1:21 na ordem do texto.",
+    "verseRef": "Colossenses 1:21",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E a vocês, que outrora eram estranhos e inimigos"
+      },
+      {
+        "id": "b",
+        "text": "no entendimento por causa de suas obras malignas"
+      },
+      {
+        "id": "c",
+        "text": "agora os reconciliou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "Passado hostil e reconciliação.",
+    "feedbackWrong": {
+      "default": "Comece pelo outrora."
+    },
+    "hint": "Comece pelo passado.",
+    "learningObjective": "Reconhecer Colossenses 1:21.",
+    "evidence": [
+      "Colossenses 1:21"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-01",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Colossenses 2:17, as festas são a realidade e Cristo é só sombra.",
+    "prompt": "Em Colossenses 2:17, as festas são a realidade e Cristo é só sombra.",
+    "cue": "Em Colossenses 2:17, as festas são a realidade e Cristo é só sombra.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo",
+    "feedbackCorrect": "O contraste inverte: sombras apontam; o corpo é de Cristo.",
+    "feedbackWrong": {
+      "true": "Releia o mas: o corpo é de Cristo."
+    },
+    "hint": "Repare no contraste.",
+    "learningObjective": "Compreender sombra e corpo.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-02",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 2:17, toque a palavra que marca o contraste.",
+    "prompt": "Em Colossenses 2:17, toque a palavra que marca o contraste.",
+    "cue": "Em Colossenses 2:17, toque a palavra que marca o contraste.",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vir"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "apenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "Mas introduz a realidade.",
+    "feedbackWrong": {
+      "a": "Vir aponta o futuro.",
+      "c": "Apenas reduz as sombras."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "Colossenses 2:17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-03",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Colossenses 2:20 se relaciona com morrer com Cristo?",
+    "prompt": "Como Colossenses 2:20 se relaciona com morrer com Cristo?",
+    "cue": "Como Colossenses 2:20 se relaciona com morrer com Cristo?",
+    "verseRef": "Colossenses 2:20",
+    "passageText": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ordenanças?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cancela a cabeça Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Torna sujeição a ordenanças incoerente"
+      },
+      {
+        "id": "c",
+        "text": "Obriga culto aos anjos"
+      },
+      {
+        "id": "d",
+        "text": "Exige mais listas de não toques"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se vocês morreram com Cristo em relação aos rudimentos do mundo, por que",
+    "feedbackCorrect": "A morte com Cristo questiona as ordenanças.",
+    "feedbackWrong": {
+      "a": "É preciso reter a cabeça.",
+      "c": "Anjos são rejeitados.",
+      "d": "Não toques é o erro."
+    },
+    "hint": "Una se morreram e por que.",
+    "learningObjective": "Relacionar morte e liberdade.",
+    "evidence": [
+      "Colossenses 2:20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-04",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento de Colossenses 1–2?",
+    "prompt": "Como avança o argumento de Colossenses 1–2?",
+    "cue": "Como avança o argumento de Colossenses 1–2?",
+    "verseRef": "Colossenses 1:21–22",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconciliados pela morte"
+      },
+      {
+        "id": "b",
+        "text": "Cristo revelado nos gentios"
+      },
+      {
+        "id": "c",
+        "text": "Livres de juízos rituais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora os reconciliou",
+    "feedbackCorrect": "Reconciliação, mistério e liberdade.",
+    "feedbackWrong": {
+      "default": "Comece pela reconciliação."
+    },
+    "hint": "Siga a ordem do bloco.",
+    "learningObjective": "Compreender o arco do desafio.",
+    "evidence": [
+      "Colossenses 1:21–22"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-05",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Colossenses 2:20, por que vos sujeitais a ___?",
+    "prompt": "Em Colossenses 2:20, por que vos sujeitais a ___?",
+    "cue": "Em Colossenses 2:20, por que vos sujeitais a ___?",
+    "verseRef": "Colossenses 2:20",
+    "passageText": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ordenanças?",
+    "template": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ___?",
+    "options": [
+      {
+        "id": "a",
+        "text": "mistérios"
+      },
+      {
+        "id": "b",
+        "text": "ordenanças"
+      },
+      {
+        "id": "c",
+        "text": "esperanças"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "vos sujeitais a ordenanças",
+    "feedbackCorrect": "A pergunta desafia a sujeição a ordenanças.",
+    "feedbackWrong": {
+      "a": "Mistério é revelado, não ordenança.",
+      "c": "Não é esperanças."
+    },
+    "hint": "Veja o fim da pergunta.",
+    "learningObjective": "Lembrar ordenanças.",
+    "evidence": [
+      "Colossenses 2:20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-06",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+    "prompt": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+    "cue": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "passageA": {
+      "ref": "Colossenses 2:17",
+      "text": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo."
+    },
+    "passageB": {
+      "ref": "Hebreus 10:1",
+      "text": "Porque a lei tem apenas a sombra dos bens vindouros, e não a imagem real das coisas, nunca, pelos mesmos sacrifícios que são oferecidos continuamente a cada ano, pode aperfeiçoar os que se aproximam."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Cristo como sombra"
+      },
+      {
+        "id": "b",
+        "text": "Lei como sombra"
+      },
+      {
+        "id": "c",
+        "text": "Sombra como salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "São apenas sombras das coisas que estavam por vir",
+    "feedbackCorrect": "Ritual aponta; Cristo é a realidade.",
+    "feedbackWrong": {
+      "a": "Cristo é o corpo.",
+      "c": "Sombra não salva."
+    },
+    "hint": "Compare sombra.",
+    "learningObjective": "Relacionar sombra ritual.",
+    "evidence": [
+      "Colossenses 2:17",
+      "Hebreus 10:1"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-07",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+    "prompt": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+    "cue": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+    "verseRef": "Colossenses 1:23",
+    "passageText": "Se, porém, permanecerem alicerçados e firmes na fé, não se afastando da esperança do evangelho que ouviram, o qual foi proclamado a toda criatura debaixo do céu, e do qual eu, Paulo, me tornei ministro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ministro"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Se, porém, permanecerem",
+    "feedbackCorrect": "Porém introduz a condição.",
+    "feedbackWrong": {
+      "a": "Ministro é Paulo.",
+      "c": "Evangelho é o conteúdo."
+    },
+    "hint": "Procure após Se.",
+    "learningObjective": "Reconhecer a condição.",
+    "evidence": [
+      "Colossenses 1:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-1-08",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Colossenses 2:16–19?",
+    "prompt": "Como avança Colossenses 2:16–19?",
+    "cue": "Como avança Colossenses 2:16–19?",
+    "verseRef": "Colossenses 2:19",
+    "passageText": "E não retendo a cabeça, da qual todo o corpo, suprido e bem vinculado por suas juntas e ligamentos, cresce o crescimento que é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ninguém julgue por rituais"
+      },
+      {
+        "id": "b",
+        "text": "Rituais são sombras"
+      },
+      {
+        "id": "c",
+        "text": "O corpo cresce na cabeça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cresce o crescimento que é de Deus",
+    "feedbackCorrect": "Juízo, sombra e crescimento.",
+    "feedbackWrong": {
+      "default": "Comece pelo juízo."
+    },
+    "hint": "Siga juízo → sombra → cabeça.",
+    "learningObjective": "Compreender o movimento.",
+    "evidence": [
+      "Colossenses 2:16–17"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-01",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Colossenses 1:27 e 2:17 juntos sustentam que Cristo é a esperança e a realidade, não sombras ou regras.",
+    "prompt": "Colossenses 1:27 e 2:17 juntos sustentam que Cristo é a esperança e a realidade, não sombras ou regras.",
+    "cue": "Colossenses 1:27 e 2:17 juntos sustentam que Cristo é a esperança e a realidade, não sombras ou regras.",
+    "verseRef": "Colossenses 1:27",
+    "passageText": "Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Cristo em vocês, a esperança da glória",
+    "feedbackCorrect": "Cristo preenche mistério e realidade; sombras e ordenanças não.",
+    "feedbackWrong": {
+      "false": "Una esperança da glória e corpo de Cristo."
+    },
+    "hint": "Pense no centro dos dois capítulos.",
+    "learningObjective": "Interpretar Cristo como centro.",
+    "evidence": [
+      "Colossenses 1:27"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-02",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 2:19, toque o trecho que mostra de quem não se deve apartar.",
+    "prompt": "Em Colossenses 2:19, toque o trecho que mostra de quem não se deve apartar.",
+    "cue": "Em Colossenses 2:19, toque o trecho que mostra de quem não se deve apartar.",
+    "verseRef": "Colossenses 2:19",
+    "passageText": "E não retendo a cabeça, da qual todo o corpo, suprido e bem vinculado por suas juntas e ligamentos, cresce o crescimento que é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a cabeça"
+      },
+      {
+        "id": "b",
+        "text": "ligamentos"
+      },
+      {
+        "id": "c",
+        "text": "juntas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E não retendo a cabeça",
+    "feedbackCorrect": "A cabeça é Cristo.",
+    "feedbackWrong": {
+      "b": "Ligamentos vinculam.",
+      "c": "Juntas ligam."
+    },
+    "hint": "Procure o que não retêm.",
+    "learningObjective": "Sustentar Cristo-cabeça.",
+    "evidence": [
+      "Colossenses 2:19"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-03",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o bloco Colossenses 1–2 sustenta?",
+    "prompt": "Que leitura o bloco Colossenses 1–2 sustenta?",
+    "cue": "Que leitura o bloco Colossenses 1–2 sustenta?",
+    "verseRef": "Colossenses 2:23",
+    "passageText": "Elas têm, de fato, uma aparência de sabedoria, como culto a si mesmas, humildade e severidade no tratamento do corpo; porém, não têm valor algum contra a satisfação da carne.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo por sábados é essencial"
+      },
+      {
+        "id": "b",
+        "text": "Cristo basta; regras têm aparência sem poder"
+      },
+      {
+        "id": "c",
+        "text": "Gentios ficam fora do mistério"
+      },
+      {
+        "id": "d",
+        "text": "Regras vencem a carne melhor que Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não têm valor algum contra a satisfação da carne",
+    "feedbackCorrect": "Cristo reconcilia e basta; regras não vencem a carne.",
+    "feedbackWrong": {
+      "a": "Ninguém julgue.",
+      "c": "Mistério inclui gentios.",
+      "d": "O texto nega valor."
+    },
+    "hint": "Una reconciliação e crítica às regras.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "Colossenses 2:23"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-04",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da liberdade em Cristo?",
+    "prompt": "Qual sequência revela o fio da liberdade em Cristo?",
+    "cue": "Qual sequência revela o fio da liberdade em Cristo?",
+    "verseRef": "Colossenses 2:20",
+    "passageText": "Portanto, se vocês morreram com Cristo em relação aos rudimentos do mundo, por que, como se ainda estivessem vivendo no mundo, vos sujeitais a ordenanças?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz pelo sangue da cruz"
+      },
+      {
+        "id": "b",
+        "text": "Morrem aos rudimentos"
+      },
+      {
+        "id": "c",
+        "text": "Não se sujeitam a ordenanças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se vocês morreram com Cristo",
+    "feedbackCorrect": "Reconciliação, morte aos rudimentos e liberdade.",
+    "feedbackWrong": {
+      "default": "Comece pela reconciliação."
+    },
+    "hint": "Siga o arco do bloco.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "Colossenses 1:22",
+      "Colossenses 2:20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-05",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+    "prompt": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+    "cue": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+    "verseRef": "Colossenses 1:26",
+    "passageText": "O mistério que esteve oculto por séculos e gerações, mas que agora se manifestou aos seus santos;",
+    "template": "O ___ que esteve oculto por séculos e gerações, mas que agora se manifestou aos seus santos;",
+    "options": [
+      {
+        "id": "a",
+        "text": "templo"
+      },
+      {
+        "id": "b",
+        "text": "mistério"
+      },
+      {
+        "id": "c",
+        "text": "império"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O mistério que esteve oculto",
+    "feedbackCorrect": "É o mistério revelado.",
+    "feedbackWrong": {
+      "a": "Não é templo.",
+      "c": "Não é império."
+    },
+    "hint": "Palavra que abre o versículo.",
+    "learningObjective": "Lembrar o mistério.",
+    "evidence": [
+      "Colossenses 1:26"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-06",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+    "prompt": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+    "cue": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+    "verseRef": "Colossenses 1:21–22",
+    "passageText": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+    "passageA": {
+      "ref": "Colossenses 1:21–22",
+      "text": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa"
+    },
+    "passageB": {
+      "ref": "Romanos 5:10",
+      "text": "Pois, se quando éramos inimigos, fomos reconciliados com Deus pela morte de seu Filho, quanto mais, agora que já fomos reconciliados, seremos salvos por sua vida;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconciliados pela morte"
+      },
+      {
+        "id": "b",
+        "text": "Salvos sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Inimizade eterna"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "por meio da sua morte",
+    "feedbackCorrect": "Inimigos reconciliados pela morte.",
+    "feedbackWrong": {
+      "b": "É em Cristo.",
+      "c": "Há reconciliação."
+    },
+    "hint": "Compare a morte reconciliadora.",
+    "learningObjective": "Ligar reconciliação.",
+    "evidence": [
+      "Colossenses 1:21–22",
+      "Romanos 5:10"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-07",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 1:27, toque o trecho que nomeia o mistério.",
+    "prompt": "Em Colossenses 1:27, toque o trecho que nomeia o mistério.",
+    "cue": "Em Colossenses 1:27, toque o trecho que nomeia o mistério.",
+    "verseRef": "Colossenses 1:26–27",
+    "passageText": "O mistério que esteve oculto por séculos e gerações, mas que agora se manifestou aos seus santos; Aos quais Deus quis fazer conhecer qual é a riqueza da glória deste mistério entre os gentios, que é Cristo em vocês, a esperança da glória.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seus santos"
+      },
+      {
+        "id": "b",
+        "text": "Cristo em vocês"
+      },
+      {
+        "id": "c",
+        "text": "os gentios"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que é Cristo em vocês, a esperança da glória",
+    "feedbackCorrect": "O mistério é Cristo em vocês.",
+    "feedbackWrong": {
+      "a": "Santos recebem.",
+      "c": "Gentios são o âmbito."
+    },
+    "hint": "Procure \"que é\".",
+    "learningObjective": "Sustentar a definição.",
+    "evidence": [
+      "Colossenses 1:27"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-1-08",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência liga sombra e liberdade?",
+    "prompt": "Qual sequência liga sombra e liberdade?",
+    "cue": "Qual sequência liga sombra e liberdade?",
+    "verseRef": "Colossenses 2:17",
+    "passageText": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sombra do que virá"
+      },
+      {
+        "id": "b",
+        "text": "O corpo é de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Ordenanças perdem o poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas o corpo é de Cristo",
+    "feedbackCorrect": "Sombra, Cristo e queda das ordenanças.",
+    "feedbackWrong": {
+      "default": "Comece pelas sombras."
+    },
+    "hint": "Siga sombra → Cristo → liberdade.",
+    "learningObjective": "Ver o fio da liberdade.",
+    "evidence": [
+      "Colossenses 2:17",
+      "Colossenses 2:20"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-01",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Colossenses 3:14, Paulo coloca o amor abaixo das demais virtudes.",
+    "prompt": "Em Colossenses 3:14, Paulo coloca o amor abaixo das demais virtudes.",
+    "cue": "Em Colossenses 3:14, Paulo coloca o amor abaixo das demais virtudes.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+    "feedbackCorrect": "O texto diz acima de tudo, revesti-vos de amor.",
+    "feedbackWrong": {
+      "true": "Releia: acima de tudo."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar o lugar do amor.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-02",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 3:14, toque o que o amor é.",
+    "prompt": "Em Colossenses 3:14, toque o que o amor é.",
+    "cue": "Em Colossenses 3:14, toque o que o amor é.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "revesti-vos"
+      },
+      {
+        "id": "b",
+        "text": "vínculo da perfeição"
+      },
+      {
+        "id": "c",
+        "text": "Acima de tudo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "amor que é o vínculo da perfeição",
+    "feedbackCorrect": "O amor é o vínculo da perfeição.",
+    "feedbackWrong": {
+      "a": "É o verbo.",
+      "c": "Marca prioridade."
+    },
+    "hint": "Procure a definição.",
+    "learningObjective": "Identificar o vínculo.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-03",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Colossenses 4:5, o que fazer com os de fora?",
+    "prompt": "Segundo Colossenses 4:5, o que fazer com os de fora?",
+    "cue": "Segundo Colossenses 4:5, o que fazer com os de fora?",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar com sabedoria e aproveitar oportunidades"
+      },
+      {
+        "id": "b",
+        "text": "Julgá-los por sábados"
+      },
+      {
+        "id": "c",
+        "text": "Exigir entrada imediata"
+      },
+      {
+        "id": "d",
+        "text": "Evitar qualquer contato"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades",
+    "feedbackCorrect": "Sabedoria e oportunidades.",
+    "feedbackWrong": {
+      "b": "Erro do cap. 2.",
+      "c": "Não está no texto.",
+      "d": "Há aproveitar."
+    },
+    "hint": "Leia as duas ordens.",
+    "learningObjective": "Observar a postura pública.",
+    "evidence": [
+      "Colossenses 4:5"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-04",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 3:14 na ordem do texto.",
+    "prompt": "Monte Colossenses 3:14 na ordem do texto.",
+    "cue": "Monte Colossenses 3:14 na ordem do texto.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acima de tudo"
+      },
+      {
+        "id": "b",
+        "text": "revesti-vos de amor"
+      },
+      {
+        "id": "c",
+        "text": "que é o vínculo da perfeição"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+    "feedbackCorrect": "Prioridade, vestimenta e definição.",
+    "feedbackWrong": {
+      "default": "Comece por Acima de tudo."
+    },
+    "hint": "Comece pela prioridade.",
+    "learningObjective": "Reconhecer 3:14.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-05",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Colossenses 4:2, perseverem na ___, vigiando com gratidão.",
+    "prompt": "Em Colossenses 4:2, perseverem na ___, vigiando com gratidão.",
+    "cue": "Em Colossenses 4:2, perseverem na ___, vigiando com gratidão.",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "template": "Perseverem na ___, vigiando com gratidão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "queixa"
+      },
+      {
+        "id": "b",
+        "text": "oração"
+      },
+      {
+        "id": "c",
+        "text": "fuga"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Perseverem na oração, vigiando com gratidão",
+    "feedbackCorrect": "A oração une vigilância e gratidão.",
+    "feedbackWrong": {
+      "a": "Não é queixa.",
+      "c": "Não é fuga."
+    },
+    "hint": "Veja o objeto de perseverar.",
+    "learningObjective": "Lembrar a oração.",
+    "evidence": [
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-06",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+    "prompt": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+    "cue": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "passageA": {
+      "ref": "Colossenses 3:14",
+      "text": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A vida nova se veste de amor como vínculo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só regras bastam"
+      },
+      {
+        "id": "b",
+        "text": "Amor une em perfeição"
+      },
+      {
+        "id": "c",
+        "text": "Amor é opcional"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "amor que é o vínculo da perfeição",
+    "feedbackCorrect": "O amor une.",
+    "feedbackWrong": {
+      "a": "Regras não são o vínculo.",
+      "c": "Está acima de tudo."
+    },
+    "hint": "Veja a definição.",
+    "learningObjective": "Ligar ao amor.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-07",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Colossenses 4:3, toque o que Deus deve abrir.",
+    "prompt": "Em Colossenses 4:3, toque o que Deus deve abrir.",
+    "cue": "Em Colossenses 4:3, toque o que Deus deve abrir.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "uma porta"
+      },
+      {
+        "id": "b",
+        "text": "algemado"
+      },
+      {
+        "id": "c",
+        "text": "mistério"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que Deus nos abra uma porta para a palavra",
+    "feedbackCorrect": "Porta para a palavra.",
+    "feedbackWrong": {
+      "b": "Situação de Paulo.",
+      "c": "Conteúdo."
+    },
+    "hint": "Procure o que abrir.",
+    "learningObjective": "Identificar a porta.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-sem-clc-boss-2-08",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Colossenses 4:2 na ordem do texto.",
+    "prompt": "Monte Colossenses 4:2 na ordem do texto.",
+    "cue": "Monte Colossenses 4:2 na ordem do texto.",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverem na oração"
+      },
+      {
+        "id": "b",
+        "text": "vigiando"
+      },
+      {
+        "id": "c",
+        "text": "com gratidão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Perseverem na oração, vigiando com gratidão",
+    "feedbackCorrect": "Perseverar, vigiar, agradecer.",
+    "feedbackWrong": {
+      "default": "Comece por perseverar."
+    },
+    "hint": "Comece pelo verbo.",
+    "learningObjective": "Reconhecer 4:2.",
+    "evidence": [
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-01",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Colossenses 3:13, o perdão mútuo segue o perdão do Senhor.",
+    "prompt": "Em Colossenses 3:13, o perdão mútuo segue o perdão do Senhor.",
+    "cue": "Em Colossenses 3:13, o perdão mútuo segue o perdão do Senhor.",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "assim como o Senhor vos perdoou, assim também perdoai-vos",
+    "feedbackCorrect": "O assim como marca o modelo.",
+    "feedbackWrong": {
+      "false": "Releia a comparação."
+    },
+    "hint": "Repare em assim como.",
+    "learningObjective": "Compreender o perdão.",
+    "evidence": [
+      "Colossenses 3:13"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-02",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 3:13, toque a expressão que marca o modelo.",
+    "prompt": "Em Colossenses 3:13, toque a expressão que marca o modelo.",
+    "cue": "Em Colossenses 3:13, toque a expressão que marca o modelo.",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "queixa"
+      },
+      {
+        "id": "b",
+        "text": "Suportai-vos"
+      },
+      {
+        "id": "c",
+        "text": "assim como"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "assim como o Senhor vos perdoou",
+    "feedbackCorrect": "Modelo do Senhor.",
+    "feedbackWrong": {
+      "a": "É o conflito.",
+      "b": "É o início."
+    },
+    "hint": "Procure a comparação.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "Colossenses 3:13"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-03",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Colossenses 4:3 se relaciona com a oração?",
+    "prompt": "Como Colossenses 4:3 se relaciona com a oração?",
+    "cue": "Como Colossenses 4:3 se relaciona com a oração?",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oram para abrir porta à palavra"
+      },
+      {
+        "id": "b",
+        "text": "Oram só por conforto pessoal"
+      },
+      {
+        "id": "c",
+        "text": "Oram para fechar a missão"
+      },
+      {
+        "id": "d",
+        "text": "Oram contra Tíquico"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que Deus nos abra uma porta para a palavra",
+    "feedbackCorrect": "Propósito: porta para a palavra.",
+    "feedbackWrong": {
+      "b": "Há porta para a palavra.",
+      "c": "É para falar.",
+      "d": "Tíquico é enviado."
+    },
+    "hint": "Veja o para que.",
+    "learningObjective": "Relacionar oração e missão.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-04",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Colossenses 3–4?",
+    "prompt": "Como avança Colossenses 3–4?",
+    "cue": "Como avança Colossenses 3–4?",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Revestir-se de amor"
+      },
+      {
+        "id": "b",
+        "text": "Deixar a paz reinar"
+      },
+      {
+        "id": "c",
+        "text": "Perseverar na oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Perseverem na oração, vigiando com gratidão",
+    "feedbackCorrect": "Amor, paz e oração.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor."
+    },
+    "hint": "Siga amor → paz → oração.",
+    "learningObjective": "Compreender o arco.",
+    "evidence": [
+      "Colossenses 3:14",
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-05",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Colossenses 3:12, revesti-vos, ___, como eleitos.",
+    "prompt": "Em Colossenses 3:12, revesti-vos, ___, como eleitos.",
+    "cue": "Em Colossenses 3:12, revesti-vos, ___, como eleitos.",
+    "verseRef": "Colossenses 3:12",
+    "passageText": "Revesti-vos, portanto, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia, bondade, humildade, mansidão e longanimidade.",
+    "template": "Revesti-vos, ___, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia, bondade, humildade, mansidão e longanimidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "jamais"
+      },
+      {
+        "id": "b",
+        "text": "portanto"
+      },
+      {
+        "id": "c",
+        "text": "apenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Revesti-vos, portanto, como eleitos de Deus",
+    "feedbackCorrect": "Portanto liga identidade e vestes.",
+    "feedbackWrong": {
+      "a": "Não é jamais.",
+      "c": "Não é apenas."
+    },
+    "hint": "Palavra entre vírgulas.",
+    "learningObjective": "Lembrar o marcador.",
+    "evidence": [
+      "Colossenses 3:12"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-06",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Colossenses 3:13 a Efésios 4:32?",
+    "prompt": "O que liga Colossenses 3:13 a Efésios 4:32?",
+    "cue": "O que liga Colossenses 3:13 a Efésios 4:32?",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "passageA": {
+      "ref": "Colossenses 3:13",
+      "text": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos."
+    },
+    "passageB": {
+      "ref": "Efésios 4:32",
+      "text": "Antes sejam uns para com os outros bondosos e compassivos, perdoando-se mutuamente, assim como Deus, em Cristo, os perdoou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perdoar como Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Perdoar sem modelo"
+      },
+      {
+        "id": "c",
+        "text": "Guardar a queixa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "assim como o Senhor vos perdoou",
+    "feedbackCorrect": "Perdão no modelo de Cristo.",
+    "feedbackWrong": {
+      "b": "Há modelo.",
+      "c": "O texto manda perdoar."
+    },
+    "hint": "Compare o modelo.",
+    "learningObjective": "Relacionar perdão.",
+    "evidence": [
+      "Colossenses 3:13",
+      "Efésios 4:32"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-07",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Colossenses 4:6, toque o tempero da palavra.",
+    "prompt": "Em Colossenses 4:6, toque o tempero da palavra.",
+    "cue": "Em Colossenses 4:6, toque o tempero da palavra.",
+    "verseRef": "Colossenses 4:6",
+    "passageText": "Que a vossa palavra seja sempre agradável, temperada com sal, para saberdes como deveis responder a cada um.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sal"
+      },
+      {
+        "id": "b",
+        "text": "agradável"
+      },
+      {
+        "id": "c",
+        "text": "responder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "temperada com sal",
+    "feedbackCorrect": "Temperada com sal.",
+    "feedbackWrong": {
+      "b": "É o tom geral.",
+      "c": "É o propósito."
+    },
+    "hint": "Procure o tempero.",
+    "learningObjective": "Reconhecer o sal.",
+    "evidence": [
+      "Colossenses 4:6"
+    ]
+  },
+  {
+    "id": "colossenses-cap-cam-clc-boss-2-08",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Colossenses 4:2–5?",
+    "prompt": "Como avança Colossenses 4:2–5?",
+    "cue": "Como avança Colossenses 4:2–5?",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Perseverar na oração"
+      },
+      {
+        "id": "b",
+        "text": "Pedir porta para a palavra"
+      },
+      {
+        "id": "c",
+        "text": "Andar com sabedoria fora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Andem com sabedoria em relação aos que estão fora",
+    "feedbackCorrect": "Oração, porta e sabedoria.",
+    "feedbackWrong": {
+      "default": "Comece pela oração."
+    },
+    "hint": "Siga orar → porta → fora.",
+    "learningObjective": "Compreender o fechamento.",
+    "evidence": [
+      "Colossenses 4:2–3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-01",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Colossenses 3–4 reduz a vida nova a sentimento interno, sem amor prático, oração ou palavra.",
+    "prompt": "Colossenses 3–4 reduz a vida nova a sentimento interno, sem amor prático, oração ou palavra.",
+    "cue": "Colossenses 3–4 reduz a vida nova a sentimento interno, sem amor prático, oração ou palavra.",
+    "verseRef": "Colossenses 3:16",
+    "passageText": "Que a palavra de Cristo habite ricamente em vós, ensinando e aconselhando-vos mutuamente em toda a sabedoria, louvando a Deus com salmos, hinos e cânticos espirituais, cantando com gratidão em vosso coração.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós",
+    "feedbackCorrect": "Há amor, paz, palavra, oração e nome de Jesus.",
+    "feedbackWrong": {
+      "true": "Releia palavra, oração e vestes."
+    },
+    "hint": "Veja o que habita e o que se veste.",
+    "learningObjective": "Interpretar a vida nova completa.",
+    "evidence": [
+      "Colossenses 3:16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-02",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 3:16, toque o que deve habitar ricamente.",
+    "prompt": "Em Colossenses 3:16, toque o que deve habitar ricamente.",
+    "cue": "Em Colossenses 3:16, toque o que deve habitar ricamente.",
+    "verseRef": "Colossenses 3:16",
+    "passageText": "Que a palavra de Cristo habite ricamente em vós, ensinando e aconselhando-vos mutuamente em toda a sabedoria, louvando a Deus com salmos, hinos e cânticos espirituais, cantando com gratidão em vosso coração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "salmos"
+      },
+      {
+        "id": "b",
+        "text": "palavra de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "gratidão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós",
+    "feedbackCorrect": "A palavra de Cristo habita.",
+    "feedbackWrong": {
+      "a": "Forma de louvor.",
+      "c": "Acompanha o cântico."
+    },
+    "hint": "Sujeito de habite.",
+    "learningObjective": "Sustentar a palavra.",
+    "evidence": [
+      "Colossenses 3:16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-03",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Colossenses 3–4 sustenta?",
+    "prompt": "Que leitura Colossenses 3–4 sustenta?",
+    "cue": "Que leitura Colossenses 3–4 sustenta?",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignorar os de fora"
+      },
+      {
+        "id": "b",
+        "text": "Amar, orar e falar com sabedoria em nome de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Só regras externas bastam"
+      },
+      {
+        "id": "d",
+        "text": "Virtudes sem perdão nem oração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+    "feedbackCorrect": "Amor, oração e sabedoria pública.",
+    "feedbackWrong": {
+      "a": "Há sabedoria com os de fora.",
+      "c": "Há palavra e nome de Jesus.",
+      "d": "Há perdão e oração."
+    },
+    "hint": "Una amor e oração.",
+    "learningObjective": "Escolher a leitura.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-04",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da vida nova?",
+    "prompt": "Qual sequência revela o fio da vida nova?",
+    "cue": "Qual sequência revela o fio da vida nova?",
+    "verseRef": "Colossenses 4:2",
+    "passageText": "Perseverem na oração, vigiando com gratidão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor como vínculo perfeito"
+      },
+      {
+        "id": "b",
+        "text": "Deixar a palavra habitar"
+      },
+      {
+        "id": "c",
+        "text": "Orar e aproveitar o tempo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Perseverem na oração",
+    "feedbackCorrect": "Amor, palavra e missão orante.",
+    "feedbackWrong": {
+      "default": "Comece pelo amor."
+    },
+    "hint": "Siga amor → palavra → oração.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "Colossenses 3:14",
+      "Colossenses 3:16",
+      "Colossenses 4:2"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-05",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+    "prompt": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+    "cue": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+    "verseRef": "Colossenses 3:14",
+    "passageText": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição.",
+    "template": "Acima de tudo, revesti-vos de amor que é o ___ da perfeição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fim"
+      },
+      {
+        "id": "b",
+        "text": "vínculo"
+      },
+      {
+        "id": "c",
+        "text": "peso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "amor que é o vínculo da perfeição",
+    "feedbackCorrect": "Vínculo da perfeição.",
+    "feedbackWrong": {
+      "a": "É vínculo.",
+      "c": "Não é peso."
+    },
+    "hint": "Definição do amor.",
+    "learningObjective": "Lembrar o termo.",
+    "evidence": [
+      "Colossenses 3:14"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-06",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Colossenses 4:5 a Efésios 5:15–16?",
+    "prompt": "O que liga Colossenses 4:5 a Efésios 5:15–16?",
+    "cue": "O que liga Colossenses 4:5 a Efésios 5:15–16?",
+    "verseRef": "Colossenses 4:5",
+    "passageText": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades.",
+    "passageA": {
+      "ref": "Colossenses 4:5",
+      "text": "Andem com sabedoria em relação aos que estão fora; aproveitem as oportunidades."
+    },
+    "passageB": {
+      "ref": "Efésios 5:15–16",
+      "text": "Portanto, vejam cuidadosamente como vocês andam, não como insensatos, mas como sábios. Remindo o tempo, pois os dias são maus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fugir dos de fora"
+      },
+      {
+        "id": "b",
+        "text": "Remir o tempo"
+      },
+      {
+        "id": "c",
+        "text": "Perder o tempo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "aproveitem as oportunidades",
+    "feedbackCorrect": "Sabedoria remindo o tempo.",
+    "feedbackWrong": {
+      "a": "Há relação sábia.",
+      "c": "É aproveitar."
+    },
+    "hint": "Compare tempo/oportunidade.",
+    "learningObjective": "Ligar remir o tempo.",
+    "evidence": [
+      "Colossenses 4:5",
+      "Efésios 5:15–16"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-07",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Colossenses 4:3, toque o conteúdo a anunciar.",
+    "prompt": "Em Colossenses 4:3, toque o conteúdo a anunciar.",
+    "cue": "Em Colossenses 4:3, toque o conteúdo a anunciar.",
+    "verseRef": "Colossenses 4:3",
+    "passageText": "Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Orando também"
+      },
+      {
+        "id": "b",
+        "text": "mistério de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "uma porta"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "falar do mistério de Cristo",
+    "feedbackCorrect": "Mistério de Cristo.",
+    "feedbackWrong": {
+      "a": "É o pedido.",
+      "c": "É o meio."
+    },
+    "hint": "O que ele quer falar.",
+    "learningObjective": "Sustentar o conteúdo.",
+    "evidence": [
+      "Colossenses 4:3"
+    ]
+  },
+  {
+    "id": "colossenses-cap-pro-clc-boss-2-08",
+    "trail": "colossenses-cap",
+    "section": "clc-boss-2",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência liga perdão e missão?",
+    "prompt": "Qual sequência liga perdão e missão?",
+    "cue": "Qual sequência liga perdão e missão?",
+    "verseRef": "Colossenses 3:13",
+    "passageText": "Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor perdoa"
+      },
+      {
+        "id": "b",
+        "text": "A igreja se perdoa e ama"
+      },
+      {
+        "id": "c",
+        "text": "Ora e fala com os de fora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim como o Senhor vos perdoou",
+    "feedbackCorrect": "Perdão, amor e missão.",
+    "feedbackWrong": {
+      "default": "Comece pelo Senhor."
+    },
+    "hint": "Siga Senhor → igreja → missão.",
+    "learningObjective": "Ver o fio completo.",
+    "evidence": [
+      "Colossenses 3:13",
+      "Colossenses 4:5"
+    ]
+  }
+]

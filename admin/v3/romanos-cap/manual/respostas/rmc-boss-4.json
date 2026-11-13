@@ -1,0 +1,633 @@
+{
+  "study": {
+    "passageRef": "Romanos 15:1–6",
+    "passages": [
+      { "ref": "Romanos 15:1–6" },
+      { "ref": "Romanos 13:8–14" },
+      { "ref": "Romanos 14:1–9" },
+      { "ref": "Romanos 15:7" },
+      { "ref": "Romanos 16:17–20" },
+      { "ref": "Romanos 16:25–26" }
+    ],
+    "context": "Esta Travessia revisa a vida em comunidade: o amor que cumpre a lei, o acolhimento do fraco, o suporte mútuo à semelhança de Cristo e o Deus que firma a igreja e esmaga o mal.",
+    "keyword": "graça que acolhe",
+    "keywordGloss": "A graça recebida de Cristo vira amor concreto: acolher, suportar e servir uns aos outros.",
+    "focusQuestion": "A quem você pode acolher ou servir hoje, assim como Cristo recebeu você?",
+    "reflectionPrompts": [
+      "O amor cumpre a lei",
+      "Cristo nos recebeu",
+      "Deus nos firma juntos"
+    ],
+    "facts": [
+      {
+        "text": "Quem ama o próximo tem cumprido a lei.",
+        "evidenceRef": "Romanos 13:8",
+        "evidenceSpan": "quem ama o próximo tem cumprido a lei"
+      },
+      {
+        "text": "Deus acolheu tanto quem come quanto quem não come.",
+        "evidenceRef": "Romanos 14:3",
+        "evidenceSpan": "porque Deus o acolheu"
+      },
+      {
+        "text": "Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.",
+        "evidenceRef": "Romanos 14:9",
+        "evidenceSpan": "Cristo morreu e ressuscitou"
+      },
+      {
+        "text": "Os cristãos devem receber uns aos outros como Cristo os recebeu.",
+        "evidenceRef": "Romanos 15:7",
+        "evidenceSpan": "recebei-vos uns aos outros, assim como Cristo nos recebeu"
+      },
+      {
+        "text": "A graça de nosso Senhor Jesus Cristo esteja com a igreja.",
+        "evidenceRef": "Romanos 16:20",
+        "evidenceSpan": "A graça de nosso Senhor Jesus Cristo esteja convosco"
+      },
+      {
+        "text": "Deus é poderoso para firmar os crentes segundo o evangelho.",
+        "evidenceRef": "Romanos 16:25",
+        "evidenceSpan": "àquele que é poderoso para firmá-los"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "amor",
+        "gloss": "O que cumpre a lei: não faz o mal ao próximo e resume os mandamentos."
+      },
+      {
+        "term": "acolheu",
+        "gloss": "Deus já recebeu o irmão fraco ou forte; por isso ninguém deve menosprezá-lo nem julgá-lo."
+      },
+      {
+        "term": "graça",
+        "gloss": "O favor de Cristo que sustenta a igreja em meio às divisões e ao mal."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amor cumpre toda a lei",
+        "evidenceRef": "Romanos 13:8–10"
+      },
+      {
+        "label": "Deus acolhe o fraco e o forte",
+        "evidenceRef": "Romanos 14:3–4"
+      },
+      {
+        "label": "Cristo nos recebeu, e nós a outros",
+        "evidenceRef": "Romanos 15:5–7"
+      },
+      {
+        "label": "O Deus poderoso firma a igreja",
+        "evidenceRef": "Romanos 16:25–26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Não se menospreza nem se julga o irmão, porque Deus o acolheu.",
+        "marker": "porque",
+        "evidenceRef": "Romanos 14:3"
+      },
+      {
+        "kind": "propósito",
+        "text": "Agradar ao próximo tem uma finalidade: a edificação dele.",
+        "marker": "para",
+        "evidenceRef": "Romanos 15:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Sábios no que é bom, mas ingênuos no que é mal.",
+        "marker": "mas",
+        "evidenceRef": "Romanos 16:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gálatas 5:14",
+        "bridge": "A lei se cumpre no amor"
+      },
+      {
+        "ref": "Filipenses 2:4",
+        "bridge": "Olhar pelo bem do outro"
+      },
+      {
+        "ref": "Judas 1:24",
+        "bridge": "Deus guarda e sustenta os seus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Se o amor cumpre a lei, os mandamentos já não importam.",
+        "why": "Paulo cita os mandamentos e diz que o amor os resume e não faz o mal (13:9–10): cumprir não é descartar."
+      },
+      {
+        "text": "Acolher o fraco é discutir opiniões até ele concordar.",
+        "why": "Paulo manda receber o fraco, mas não para suscitar disputas e opiniões (14:1)."
+      },
+      {
+        "text": "Os fortes podem agradar a si mesmos, pois sua fé é firme.",
+        "why": "Os fortes devem suportar os fracos e seguir Cristo, que não se agradou a si mesmo (15:1–3)."
+      }
+    ],
+    "centralInsight": "A graça se mostra no amor que acolhe e serve juntos",
+    "anchorQuestion": "Segundo Romanos 15:7, como os cristãos devem receber uns aos outros?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Romanos 14:2, quem crê poder comer de tudo é o fraco na fé, e o outro come só legumes.",
+      "verseRef": "Romanos 14:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "o débil na fé come apenas legumes",
+      "feedbackCorrect": "Quem come apenas legumes é o débil na fé; o outro crê poder comer de tudo.",
+      "feedbackWrong": {
+        "true": "Releia 14:2: o débil na fé é quem come apenas legumes."
+      },
+      "hint": "Compare quem come de tudo e quem come legumes.",
+      "learningObjective": "Observar quem come de tudo e quem come só legumes.",
+      "evidence": ["Romanos 14:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Romanos 13:10, toque o que o amor não faz ao próximo.",
+      "verseRef": "Romanos 13:10",
+      "options": [
+        { "id": "a", "text": "o cumprimento" },
+        { "id": "b", "text": "o mal" },
+        { "id": "c", "text": "ao próximo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O amor não faz o mal ao próximo",
+      "feedbackCorrect": "O amor não faz o mal ao próximo: por isso ele é o cumprimento da lei.",
+      "feedbackWrong": {
+        "a": "O cumprimento da lei é o amor; não é o que o amor deixa de fazer.",
+        "c": "Ao próximo indica quem recebe o amor, não o que o amor evita."
+      },
+      "hint": "Leia o começo do versículo, depois de não faz.",
+      "learningObjective": "Observar o que o amor não faz.",
+      "evidence": ["Romanos 13:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Romanos 15:3, quem não se agradou a si mesmo?",
+      "verseRef": "Romanos 15:3",
+      "options": [
+        { "id": "a", "text": "Paulo, o autor da carta" },
+        { "id": "b", "text": "Cristo" },
+        { "id": "c", "text": "Timóteo, cooperador de Paulo" },
+        { "id": "d", "text": "Os profetas antigos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Cristo não se agradou a si mesmo",
+      "feedbackCorrect": "Cristo não se agradou a si mesmo e carregou as injúrias que eram de outros.",
+      "feedbackWrong": {
+        "a": "Paulo escreve a carta, mas o versículo diz isso de Cristo.",
+        "c": "Timóteo não é citado em 15:3; o exemplo ali é Cristo.",
+        "d": "Os profetas não são citados em 15:3; o exemplo é o próprio Cristo."
+      },
+      "hint": "Veja quem é o sujeito no começo do versículo.",
+      "learningObjective": "Observar quem não se agradou a si mesmo.",
+      "evidence": ["Romanos 15:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Romanos 13:12 na ordem do texto.",
+      "verseRef": "Romanos 13:12",
+      "options": [
+        { "id": "a", "text": "A noite já passou, e o dia está se aproximando" },
+        { "id": "b", "text": "Portanto, abandonemos as obras das trevas" },
+        { "id": "c", "text": "e revistamo-nos das armas da luz" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "abandonemos as obras das trevas",
+      "feedbackCorrect": "O dia se aproxima; por isso largamos as trevas e vestimos as armas da luz.",
+      "feedbackWrong": {
+        "default": "Comece pela noite que passou; as armas da luz fecham o versículo."
+      },
+      "hint": "O versículo abre com a noite e o dia.",
+      "learningObjective": "Reconhecer a sequência de Romanos 13:12.",
+      "evidence": ["Romanos 13:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Romanos 14:9, que palavra completa: Cristo morreu e ___ para ser Senhor de todos?",
+      "verseRef": "Romanos 14:9",
+      "options": [
+        { "id": "a", "text": "ressuscitou" },
+        { "id": "b", "text": "ascendeu" },
+        { "id": "c", "text": "reinou" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cristo morreu e ressuscitou",
+      "feedbackCorrect": "Cristo morreu e ressuscitou para ser Senhor dos mortos e dos vivos.",
+      "feedbackWrong": {
+        "b": "O versículo não fala de subida ao céu, mas do que veio depois da morte.",
+        "c": "Reinar é o resultado; o versículo cita antes o que aconteceu após a morte."
+      },
+      "hint": "Pense no que Cristo viveu depois de morrer.",
+      "learningObjective": "Lembrar o que Cristo fez para ser Senhor.",
+      "evidence": ["Romanos 14:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Romanos 13:9 comunica que se liga a este contexto?",
+      "verseRef": "Romanos 13:9",
+      "options": [
+        { "id": "a", "text": "Os mandamentos valem só para fortes" },
+        { "id": "b", "text": "O amor resume os mandamentos" },
+        { "id": "c", "text": "A lei fica de lado" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tudo se resume nesta palavra: Amarás o teu próximo como a ti mesmo",
+      "passageA": { "ref": "Romanos 13:9" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem ama o próximo cumpre a lei, pois o amor reúne todos os mandamentos."
+      },
+      "feedbackCorrect": "Paulo lista mandamentos e os resume numa palavra: amarás o teu próximo.",
+      "feedbackWrong": {
+        "a": "O texto não limita os mandamentos aos fortes; ele os resume no amor.",
+        "c": "A lei não é deixada de lado: o amor a resume e a cumpre."
+      },
+      "hint": "Veja a palavra que reúne os mandamentos no fim.",
+      "learningObjective": "Ligar Romanos 13:9 ao amor que resume a lei.",
+      "evidence": ["Romanos 13:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Romanos 16:20, toque quem esmagará Satanás.",
+      "verseRef": "Romanos 16:20",
+      "options": [
+        { "id": "a", "text": "Satanás" },
+        { "id": "b", "text": "Deus da paz" },
+        { "id": "c", "text": "vossos pés" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Deus da paz, em breve, esmagará",
+      "feedbackCorrect": "É o Deus da paz quem esmagará Satanás: a vitória vem dele.",
+      "feedbackWrong": {
+        "a": "Satanás é quem será esmagado, não quem esmaga.",
+        "c": "Os pés indicam onde ele será esmagado, não quem age."
+      },
+      "hint": "Procure o sujeito do verbo esmagar.",
+      "learningObjective": "Observar quem esmaga Satanás.",
+      "evidence": ["Romanos 16:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Romanos 16:17 na ordem do texto.",
+      "verseRef": "Romanos 16:17",
+      "options": [
+        { "id": "a", "text": "E rogo a vocês, irmãos" },
+        { "id": "b", "text": "que estejam atentos àqueles que provocam divisões e escândalos" },
+        { "id": "c", "text": "em desacordo com a doutrina que vocês aprenderam" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "que provocam divisões e escândalos",
+      "feedbackCorrect": "Paulo pede atenção a quem causa divisões contrárias à doutrina aprendida.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido de Paulo; a doutrina aprendida aparece no fim."
+      },
+      "hint": "O versículo começa com um pedido aos irmãos.",
+      "learningObjective": "Reconhecer a sequência de Romanos 16:17.",
+      "evidence": ["Romanos 16:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Romanos 14:3, quem come pode menosprezar quem não come, porque Deus o acolheu.",
+      "verseRef": "Romanos 14:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque Deus o acolheu",
+      "feedbackCorrect": "Como Deus acolheu o outro, ninguém deve menosprezá-lo nem julgá-lo.",
+      "feedbackWrong": {
+        "true": "Releia 14:3: o acolhimento de Deus é o motivo para não menosprezar."
+      },
+      "hint": "Veja o que o porque do versículo explica.",
+      "learningObjective": "Compreender a causa de não menosprezar nem julgar.",
+      "evidence": ["Romanos 14:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Romanos 15:7, toque a palavra que conclui o que veio antes.",
+      "verseRef": "Romanos 15:7",
+      "options": [
+        { "id": "a", "text": "recebei-vos" },
+        { "id": "b", "text": "Portanto" },
+        { "id": "c", "text": "glória" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Portanto, recebei-vos uns aos outros",
+      "feedbackCorrect": "Portanto liga o pedido de receber uns aos outros ao que Paulo disse antes.",
+      "feedbackWrong": {
+        "a": "Recebei-vos é a ordem de Paulo, não a palavra que a liga ao anterior.",
+        "c": "Glória diz para que recebemos, não conclui o que veio antes."
+      },
+      "hint": "Procure a palavra que abre o versículo.",
+      "learningObjective": "Reconhecer o marcador de conclusão em Romanos 15:7.",
+      "evidence": ["Romanos 15:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Romanos 16:18 explica o pedido de Romanos 16:17?",
+      "verseRef": "Romanos 16:17–18",
+      "options": [
+        { "id": "a", "text": "Eles são fracos na fé e precisam ser acolhidos" },
+        { "id": "b", "text": "Eles buscam o próprio proveito e enganam com palavras suaves" },
+        { "id": "c", "text": "Eles ensinam a Escritura com rigor excessivo" },
+        { "id": "d", "text": "Eles recusam a obediência e deixam a igreja" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não servem a Cristo, nosso Senhor, mas ao seu próprio ventre",
+      "feedbackCorrect": "Quem divide serve ao próprio ventre e engana os incautos com lisonjas.",
+      "feedbackWrong": {
+        "a": "O fraco na fé deve ser acolhido (14:1); aqui são os que causam divisões.",
+        "c": "O texto não fala de rigor, mas de lisonjas e de servir ao próprio ventre.",
+        "d": "O motivo dado é que eles não servem a Cristo, e não que saíram da igreja."
+      },
+      "hint": "Leia o que vem depois de Porque tais pessoas.",
+      "learningObjective": "Relacionar o motivo de 16:18 com o pedido de 16:17.",
+      "evidence": ["Romanos 16:17", "Romanos 16:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeia o fecho de Romanos 16:25–26?",
+      "verseRef": "Romanos 16:25–26",
+      "options": [
+        { "id": "a", "text": "Deus é poderoso para firmar os crentes" },
+        { "id": "b", "text": "O mistério guardado em silêncio é revelado" },
+        { "id": "c", "text": "A fé que obedece chega a todas as nações" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "àquele que é poderoso para firmá-los",
+      "feedbackCorrect": "Deus firma, revela o que estava oculto e leva a obediência da fé às nações.",
+      "feedbackWrong": {
+        "default": "Comece por Deus que firma; o alcance às nações fecha o trecho."
+      },
+      "hint": "O trecho começa com quem é poderoso.",
+      "learningObjective": "Compreender os movimentos do fecho da carta.",
+      "evidence": ["Romanos 16:25", "Romanos 16:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Romanos 13:9, que palavra mostra que todos os mandamentos se reúnem no amor?",
+      "verseRef": "Romanos 13:9",
+      "options": [
+        { "id": "a", "text": "resume" },
+        { "id": "b", "text": "separa" },
+        { "id": "c", "text": "substitui" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo se resume nesta palavra",
+      "feedbackCorrect": "Tudo se resume em amar o próximo: os mandamentos se reúnem numa palavra.",
+      "feedbackWrong": {
+        "b": "Os mandamentos não são separados: eles se reúnem na palavra do amor.",
+        "c": "O amor não substitui os mandamentos; ele os resume e cumpre."
+      },
+      "hint": "Pense no verbo que junta tudo numa só palavra.",
+      "learningObjective": "Compreender que o amor reúne os mandamentos.",
+      "evidence": ["Romanos 13:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Romanos 13:10 a Gálatas 5:14?",
+      "verseRef": "Romanos 13:10",
+      "options": [
+        { "id": "a", "text": "A lei é anulada pela liberdade" },
+        { "id": "b", "text": "O amor vem das obras" },
+        { "id": "c", "text": "A lei se cumpre no amor" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o cumprimento da lei é o amor",
+      "passageA": { "ref": "Romanos 13:10" },
+      "passageB": { "ref": "Gálatas 5:14" },
+      "feedbackCorrect": "Paulo diz o mesmo nas duas cartas: toda a lei se cumpre no amor ao próximo.",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos anula a lei: os dois a veem cumprida no amor.",
+        "b": "É o contrário: o amor cumpre a lei, e não depende dela para existir."
+      },
+      "hint": "Compare o que cumpre a lei nos dois textos.",
+      "learningObjective": "Relacionar o amor que cumpre a lei em Romanos e Gálatas.",
+      "evidence": ["Romanos 13:10", "Gálatas 5:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Romanos 15:2, toque o propósito de agradar ao próximo.",
+      "verseRef": "Romanos 15:2",
+      "options": [
+        { "id": "a", "text": "agrade" },
+        { "id": "b", "text": "ao próximo" },
+        { "id": "c", "text": "edificação" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para a sua edificação",
+      "feedbackCorrect": "Agradar ao próximo tem uma meta: a edificação dele.",
+      "feedbackWrong": {
+        "a": "Agrade é a ação pedida; a meta vem depois do para.",
+        "b": "Ao próximo diz quem é agradado, não o propósito."
+      },
+      "hint": "Procure o que vem depois de para a sua.",
+      "learningObjective": "Compreender o propósito de agradar ao próximo.",
+      "evidence": ["Romanos 15:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento de Romanos 14:8–9?",
+      "verseRef": "Romanos 14:8–9",
+      "options": [
+        { "id": "a", "text": "Vivemos e morremos para o Senhor" },
+        { "id": "b", "text": "Na vida e na morte, pertencemos a ele" },
+        { "id": "c", "text": "Cristo venceu a morte para ser Senhor de todos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "somos do Senhor",
+      "feedbackCorrect": "Vivemos para o Senhor, pertencemos a ele, e Cristo é a base disso.",
+      "feedbackWrong": {
+        "default": "Comece por viver e morrer para o Senhor; Cristo fecha a razão."
+      },
+      "hint": "O versículo 9 diz por que somos do Senhor.",
+      "learningObjective": "Compreender por que pertencemos ao Senhor.",
+      "evidence": ["Romanos 14:8", "Romanos 14:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Romanos 15:3, Cristo não se agradou a si mesmo, e isso é o modelo para os fortes suportarem os fracos.",
+      "verseRef": "Romanos 15:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cristo não se agradou a si mesmo",
+      "feedbackCorrect": "Cristo deu o exemplo: não buscou o próprio agrado, e os fortes o seguem ao servir.",
+      "feedbackWrong": {
+        "false": "Paulo liga 15:1 a 15:3: os fortes seguem Cristo, que não se agradou a si mesmo."
+      },
+      "hint": "Ligue o versículo ao pedido feito aos fortes em 15:1.",
+      "learningObjective": "Interpretar Cristo como modelo de quem serve.",
+      "evidence": ["Romanos 15:3", "Romanos 15:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Romanos 13:8, toque o trecho que mostra a única dívida que permanece.",
+      "verseRef": "Romanos 13:8",
+      "options": [
+        { "id": "a", "text": "devendo nada" },
+        { "id": "b", "text": "exceto o amor" },
+        { "id": "c", "text": "tem cumprido" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "exceto o amor que têm uns pelos outros",
+      "feedbackCorrect": "O amor é a dívida que nunca se quita: sempre há mais a dar uns aos outros.",
+      "feedbackWrong": {
+        "a": "Devendo nada fala das dívidas que se quitam; a exceção vem logo depois.",
+        "c": "Tem cumprido descreve o resultado de amar, não a dívida que permanece."
+      },
+      "hint": "Procure a exceção na frase sobre dívidas.",
+      "learningObjective": "Sustentar com o texto que o amor é dívida permanente.",
+      "evidence": ["Romanos 13:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Romanos 14:5–6 sustenta sobre dias e alimentos?",
+      "verseRef": "Romanos 14:5–6",
+      "options": [
+        { "id": "a", "text": "Dias e comidas decidem quem Deus aceita" },
+        { "id": "b", "text": "Quem pensa diferente deve ser corrigido até concordar" },
+        { "id": "c", "text": "Cada um pode agir para o Senhor, com convicção e gratidão" },
+        { "id": "d", "text": "Só a prática dos fortes honra o Senhor" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para o Senhor o faz",
+      "feedbackCorrect": "Em pontos de consciência, cada um age para o Senhor e dá graças a Deus.",
+      "feedbackWrong": {
+        "a": "O texto mostra que Deus acolheu quem come e quem não come, e não que a comida decide.",
+        "b": "Paulo pede convicção própria, não correção até haver concordância.",
+        "d": "Tanto quem distingue os dias quanto quem não distingue age para o Senhor."
+      },
+      "hint": "Veja para quem cada pessoa age nos dois versículos.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre diferenças de consciência.",
+      "evidence": ["Romanos 14:5", "Romanos 14:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do acolhimento em Cristo na Bíblia?",
+      "verseRef": "Romanos 15:7",
+      "options": [
+        { "id": "a", "text": "Cristo nos recebeu para a glória de Deus" },
+        { "id": "b", "text": "Cada um olha também pelos interesses dos outros" },
+        { "id": "c", "text": "Deus é poderoso para nos guardar de tropeços" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "assim como Cristo nos recebeu para a glória de Deus",
+      "feedbackCorrect": "Cristo nos recebe, passamos a servir os outros, e Deus nos guarda até o fim.",
+      "feedbackWrong": {
+        "default": "Siga a Bíblia: Rm 15:7, depois Fp 2:4 e por fim Jd 1:24."
+      },
+      "hint": "Siga a ordem: Romanos, Filipenses, Judas.",
+      "learningObjective": "Ver o acolhimento como fio que atravessa as cartas.",
+      "evidence": ["Romanos 15:7", "Filipenses 2:4", "Judas 1:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Romanos 16:26, que termo nomeia o que vem da fé entre todas as nações?",
+      "verseRef": "Romanos 16:26",
+      "options": [
+        { "id": "a", "text": "esperança" },
+        { "id": "b", "text": "obediência" },
+        { "id": "c", "text": "alegria" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para a obediência que vem da fé",
+      "feedbackCorrect": "A fé verdadeira se mostra em obediência, e o evangelho chega a todas as nações.",
+      "feedbackWrong": {
+        "a": "A esperança aparece em 15:4; aqui o texto fala do que vem da fé.",
+        "c": "A alegria não é citada em 16:26; o termo é o resultado da fé."
+      },
+      "hint": "Procure o que a fé produz, segundo o fim do versículo.",
+      "learningObjective": "Lembrar o termo que resume o fruto da fé.",
+      "evidence": ["Romanos 16:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Romanos 15:1–2 a Filipenses 2:4?",
+      "verseRef": "Romanos 15:1–2",
+      "options": [
+        { "id": "a", "text": "Cuidar só dos próprios interesses" },
+        { "id": "b", "text": "Agradar a todos para ganhar favor" },
+        { "id": "c", "text": "Olhar pelo bem do outro" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Cada um de nós agrade ao próximo",
+      "passageA": { "ref": "Romanos 15:1–2" },
+      "passageB": { "ref": "Filipenses 2:4" },
+      "feedbackCorrect": "Nos dois textos, o forte e o crente olham para o bem do outro, e não só para si.",
+      "feedbackWrong": {
+        "a": "Os dois textos dizem o oposto: não nos agradamos a nós mesmos.",
+        "b": "O alvo é a edificação do próximo, não ganhar favor."
+      },
+      "hint": "Compare para quem o crente deve olhar nos dois textos.",
+      "learningObjective": "Ligar o suporte dos fortes ao cuidado com o outro em Filipenses.",
+      "evidence": ["Romanos 15:1", "Romanos 15:2", "Filipenses 2:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Romanos 16:19, toque a palavra que mostra como Paulo quer que a igreja lide com o mal.",
+      "verseRef": "Romanos 16:19",
+      "options": [
+        { "id": "a", "text": "sábios" },
+        { "id": "b", "text": "obediência" },
+        { "id": "c", "text": "ingênuos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "mas ingênuos no que é mal",
+      "feedbackCorrect": "Paulo quer a igreja sábia no bem e ingênua no mal, sem se envolver nele.",
+      "feedbackWrong": {
+        "a": "Sábios vale para o que é bom; para o mal, Paulo pede outra atitude.",
+        "b": "A obediência é elogiada, mas não é a atitude pedida diante do mal."
+      },
+      "hint": "Procure o contraste que vem depois de mas.",
+      "learningObjective": "Sustentar com o texto a atitude diante do mal.",
+      "evidence": ["Romanos 16:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a promessa de vitória sobre o mal na Bíblia?",
+      "verseRef": "Romanos 16:20",
+      "options": [
+        { "id": "a", "text": "Deus promete ferir a serpente pela descendência da mulher" },
+        { "id": "b", "text": "O Deus da paz esmagará Satanás sob os pés da igreja" },
+        { "id": "c", "text": "O diabo é lançado no lago de fogo para sempre" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esmagará debaixo dos vossos pés a Satanás",
+      "feedbackCorrect": "A promessa dada no Éden se confirma na igreja e se completa no fim dos tempos.",
+      "feedbackWrong": {
+        "default": "Siga a Bíblia: Gn 3:15, depois Rm 16:20 e por fim Ap 20:10."
+      },
+      "hint": "Siga a ordem: Gênesis, Romanos, Apocalipse.",
+      "learningObjective": "Ver a vitória sobre o mal como promessa que atravessa a Bíblia.",
+      "evidence": ["Gênesis 3:15", "Romanos 16:20", "Apocalipse 20:10"]
+    }
+  ]
+}

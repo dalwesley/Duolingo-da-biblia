@@ -1,0 +1,928 @@
+{
+  "study": {
+    "passageRef": "Juízes 18:1–6",
+    "passages": [
+      {
+        "ref": "Juízes 17:7–13"
+      },
+      {
+        "ref": "Juízes 18:1–10"
+      },
+      {
+        "ref": "Juízes 19:22–29"
+      },
+      {
+        "ref": "Juízes 20:18–28"
+      },
+      {
+        "ref": "Juízes 21:1–12"
+      }
+    ],
+    "context": "Esta Travessia revisa o caos sem rei: culto particular, Dã, Gibeá, guerra e juramento em Mispá.",
+    "keyword": "rei",
+    "keywordGloss": "Ausência que marca aqueles dias em Israel.",
+    "focusQuestion": "Onde cada um faz o que parece certo e o mal se espalha?",
+    "reflectionPrompts": [
+      "Levita particular",
+      "Sem rei",
+      "Falta uma tribo"
+    ],
+    "facts": [
+      {
+        "text": "Mica diz que o Senhor lhe fará bem.",
+        "evidenceRef": "Juízes 17:13",
+        "evidenceSpan": "o SENHOR me fará o bem"
+      },
+      {
+        "text": "Não havia rei em Israel.",
+        "evidenceRef": "Juízes 18:1",
+        "evidenceSpan": "não havia rei em Israel"
+      },
+      {
+        "text": "Filhos de Belial cercaram a casa.",
+        "evidenceRef": "Juízes 19:22",
+        "evidenceSpan": "filhos de Belial, cercaram a casa"
+      },
+      {
+        "text": "Consultaram a Deus em Betel.",
+        "evidenceRef": "Juízes 20:18",
+        "evidenceSpan": "consultaram a Deus"
+      },
+      {
+        "text": "Juraram em Mispá.",
+        "evidenceRef": "Juízes 21:1",
+        "evidenceSpan": "um juramento em Mispá"
+      },
+      {
+        "text": "Falta uma tribo.",
+        "evidenceRef": "Juízes 21:3",
+        "evidenceSpan": "que hoje falta uma tribo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "levita",
+        "gloss": "Sacerdote particular de Mica."
+      },
+      {
+        "term": "Belial",
+        "gloss": "Homens do crime em Gibeá."
+      },
+      {
+        "term": "juramento",
+        "gloss": "Promessa que parte o povo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Culto particular",
+        "evidenceRef": "Juízes 17:7–13"
+      },
+      {
+        "label": "Dã sem rei",
+        "evidenceRef": "Juízes 18:1–6"
+      },
+      {
+        "label": "Crime em Gibeá",
+        "evidenceRef": "Juízes 19:22–29"
+      },
+      {
+        "label": "Juramento e falta",
+        "evidenceRef": "Juízes 21:1–3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Far-me-á bem pois tenho um levita.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 17:13"
+      },
+      {
+        "kind": "causa",
+        "text": "Buscava herança pois não recebera sorte.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 18:1"
+      },
+      {
+        "kind": "causa",
+        "text": "Que faremos pois juramos.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 21:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Juízes 17:6",
+        "bridge": "Não o que parece certo"
+      },
+      {
+        "ref": "Deuteronômio 12:8",
+        "bridge": "Rejeitaram o Senhor rei"
+      },
+      {
+        "ref": "Romanos 12:9",
+        "bridge": "Mente reprovada e desordem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Havia rei em Israel.",
+        "why": "Não havia rei."
+      },
+      {
+        "text": "O crime foi pequeno.",
+        "why": "Despedaçou em doze partes."
+      },
+      {
+        "text": "O juramento cura tudo.",
+        "why": "Deixa falta de tribo."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 18:1, o que não havia em Israel?",
+    "centralInsight": "Sem o Senhor como rei, cada um faz o que parece certo e o mal se espalha"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 18:1, não havia rei em Israel.",
+      "verseRef": "Juízes 18:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackCorrect": "Sem rei.",
+      "feedbackWrong": {
+        "false": "O texto afirma."
+      },
+      "hint": "Veja o início.",
+      "learningObjective": "Observar a ausência.",
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 17:10, toque o ofício pedido.",
+      "verseRef": "Juízes 17:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "prata"
+        },
+        {
+          "id": "c",
+          "text": "vestuário"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sê-me por pai e sacerdote",
+      "feedbackCorrect": "Sacerdote.",
+      "feedbackWrong": {
+        "b": "Prata é o pagamento.",
+        "c": "Vestuário é o sustento."
+      },
+      "hint": "Veja o pedido.",
+      "learningObjective": "Identificar sacerdote.",
+      "evidence": [
+        "Juízes 17:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 19:22, quem cercou a casa?",
+      "verseRef": "Juízes 19:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos de Belial"
+        },
+        {
+          "id": "b",
+          "text": "Anciãos de Betel"
+        },
+        {
+          "id": "c",
+          "text": "Danitas"
+        },
+        {
+          "id": "d",
+          "text": "Levita de Mica"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "filhos de Belial, cercaram a casa",
+      "feedbackCorrect": "Belial.",
+      "feedbackWrong": {
+        "b": "Não são anciãos.",
+        "c": "Não são danitas.",
+        "d": "Não é o levita."
+      },
+      "hint": "Leia quem cerca.",
+      "learningObjective": "Reconhecer Belial.",
+      "evidence": [
+        "Juízes 19:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 18:1 na ordem do texto.",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "não havia rei em Israel"
+        },
+        {
+          "id": "b",
+          "text": "a tribo dos danitas buscava para si uma herança"
+        },
+        {
+          "id": "c",
+          "text": "não havia recebido sorte"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "buscava para si uma herança onde habitar",
+      "feedbackCorrect": "Sem rei, busca e falta.",
+      "feedbackWrong": {
+        "default": "Comece pela ausência."
+      },
+      "hint": "O que ainda falta?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 21:3, complete: hoje falta uma ___.",
+      "verseRef": "Juízes 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "tribo"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que hoje falta uma tribo",
+      "feedbackCorrect": "Tribo.",
+      "feedbackWrong": {
+        "b": "Não é cidade.",
+        "c": "Não é arca."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar tribo.",
+      "evidence": [
+        "Juízes 21:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 20:18 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 20:18",
+      "passageA": {
+        "ref": "Juízes 20:18"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Mesmo no caos, Israel consulta a Deus em Betel."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Consultam a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Sem consulta"
+        },
+        {
+          "id": "c",
+          "text": "Rei manda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "consultaram a Deus",
+      "feedbackCorrect": "Consulta.",
+      "feedbackWrong": {
+        "b": "Há consulta.",
+        "c": "Não há rei."
+      },
+      "hint": "O que fazem em Betel?",
+      "learningObjective": "Ligar caos e consulta.",
+      "evidence": [
+        "Juízes 20:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 21:1, toque o lugar do juramento.",
+      "verseRef": "Juízes 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mispá"
+        },
+        {
+          "id": "b",
+          "text": "filha"
+        },
+        {
+          "id": "c",
+          "text": "benjamitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um juramento em Mispá",
+      "feedbackCorrect": "Mispá.",
+      "feedbackWrong": {
+        "b": "Filha é o objeto.",
+        "c": "Benjamitas são o alvo."
+      },
+      "hint": "Veja o lugar.",
+      "learningObjective": "Tocar Mispá.",
+      "evidence": [
+        "Juízes 21:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 17:13 na ordem do texto.",
+      "verseRef": "Juízes 17:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agora sei"
+        },
+        {
+          "id": "b",
+          "text": "que o SENHOR me fará o bem"
+        },
+        {
+          "id": "c",
+          "text": "pois tenho um levita como sacerdote"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pois tenho um levita como sacerdote",
+      "feedbackCorrect": "Saber, bem e causa.",
+      "feedbackWrong": {
+        "default": "Comece pelo Agora."
+      },
+      "hint": "Qual a causa?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 17:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 17:13, Mica prova pela Lei que o culto doméstico é o padrão de Deus.",
+      "verseRef": "Juízes 17:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois tenho um levita como sacerdote",
+      "feedbackCorrect": "É a lógica de Mica.",
+      "feedbackWrong": {
+        "true": "Religião sob medida."
+      },
+      "hint": "Leia a causa.",
+      "learningObjective": "Ver a lógica.",
+      "evidence": [
+        "Juízes 17:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 17:13, toque o marcador de causa.",
+      "verseRef": "Juízes 17:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "bem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois tenho um levita como sacerdote",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "SENHOR fará.",
+        "c": "Bem é o objeto."
+      },
+      "hint": "Olhe a causa.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "Juízes 17:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 21:7 faz?",
+      "verseRef": "Juízes 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que faremos pois juramos"
+        },
+        {
+          "id": "b",
+          "text": "Ignore pois não há voto"
+        },
+        {
+          "id": "c",
+          "text": "Fuja pois há rei"
+        },
+        {
+          "id": "d",
+          "text": "Cale pois Siló manda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois juramos ao Senhor que não daremos nossas filhas",
+      "feedbackCorrect": "Causa do impasse.",
+      "feedbackWrong": {
+        "b": "Há voto.",
+        "c": "Não há rei.",
+        "d": "Siló recebe depois."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Culto particular"
+        },
+        {
+          "id": "b",
+          "text": "Busca sem rei"
+        },
+        {
+          "id": "c",
+          "text": "Juramento e falta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackCorrect": "Culto, vácuo e juramento.",
+      "feedbackWrong": {
+        "default": "Comece pelo culto."
+      },
+      "hint": "O que fecha a falta?",
+      "learningObjective": "Ordenar o bloco",
+      "evidence": [
+        "Juízes 17:13",
+        "Juízes 21:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 21:7, o que não daremos?",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "filhas"
+        },
+        {
+          "id": "b",
+          "text": "filhos"
+        },
+        {
+          "id": "c",
+          "text": "terras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não daremos nossas filhas",
+      "feedbackCorrect": "Filhas.",
+      "feedbackWrong": {
+        "b": "Não são filhos.",
+        "c": "Não são terras."
+      },
+      "hint": "Veja o ausente.",
+      "learningObjective": "Lembrar rei.",
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 18:1 a Juízes 17:6?",
+      "verseRef": "Juízes 18:1",
+      "passageA": {
+        "ref": "Juízes 18:1"
+      },
+      "passageB": {
+        "ref": "Juízes 17:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cada um fazia o que queria"
+        },
+        {
+          "id": "b",
+          "text": "Havia rei justo"
+        },
+        {
+          "id": "c",
+          "text": "Sem busca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackCorrect": "Sem rei.",
+      "feedbackWrong": {
+        "b": "Não há rei.",
+        "c": "Há busca."
+      },
+      "hint": "Compare a ausência.",
+      "learningObjective": "Ligar ao refrão.",
+      "evidence": [
+        "Juízes 18:1",
+        "Juízes 17:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 19:23, toque o que não façais.",
+      "verseRef": "Juízes 19:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "loucura"
+        },
+        {
+          "id": "b",
+          "text": "mal"
+        },
+        {
+          "id": "c",
+          "text": "proteção"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não façais tal loucura",
+      "feedbackCorrect": "Loucura.",
+      "feedbackWrong": {
+        "b": "Mal é o pedido geral.",
+        "c": "Proteção é o motivo."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Tocar loucura.",
+      "evidence": [
+        "Juízes 19:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene crime e consulta.",
+      "verseRef": "Juízes 19:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cerco de Belial"
+        },
+        {
+          "id": "b",
+          "text": "Consulta em Betel"
+        },
+        {
+          "id": "c",
+          "text": "Assembleia em Mispá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "filhos de Belial, cercaram a casa",
+      "feedbackCorrect": "Crime, consulta e assembleia.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco."
+      },
+      "hint": "O que fecha Mispá?",
+      "learningObjective": "Ordenar crime e consulta",
+      "evidence": [
+        "Juízes 19:22",
+        "Juízes 21:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 21:3, o juramento deixa Israel sem falta de tribo.",
+      "verseRef": "Juízes 21:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "que hoje falta uma tribo",
+      "feedbackCorrect": "Há falta.",
+      "feedbackWrong": {
+        "true": "Falta uma tribo."
+      },
+      "hint": "Leia a pergunta.",
+      "learningObjective": "Avaliar o custo.",
+      "evidence": [
+        "Juízes 21:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 21:8, toque a cidade ausente.",
+      "verseRef": "Juízes 21:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jabes-Gileade"
+        },
+        {
+          "id": "b",
+          "text": "Mispá"
+        },
+        {
+          "id": "c",
+          "text": "acampamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém de Jabes-Gileade veio ao acampamento",
+      "feedbackCorrect": "Jabes-Gileade.",
+      "feedbackWrong": {
+        "b": "Mispá é a assembleia.",
+        "c": "Acampamento é o destino."
+      },
+      "hint": "Veja quem não veio.",
+      "learningObjective": "Tocar Jabes-Gileade.",
+      "evidence": [
+        "Juízes 21:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une ausência de rei e mal?",
+      "verseRef": "Juízes 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem o Senhor como rei, cada um faz o que parece certo"
+        },
+        {
+          "id": "b",
+          "text": "Sem rei não há pecado"
+        },
+        {
+          "id": "c",
+          "text": "Belial obedece a Lei"
+        },
+        {
+          "id": "d",
+          "text": "O levita governa bem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não havia rei em Israel",
+      "feedbackCorrect": "Vácuo e mal.",
+      "feedbackWrong": {
+        "b": "Há pecado.",
+        "c": "Belial agride.",
+        "d": "Culto sob medida."
+      },
+      "hint": "Una 18:1 e 19:22.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 18:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do caos.",
+      "verseRef": "Juízes 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Culto sob medida"
+        },
+        {
+          "id": "b",
+          "text": "Violência em Gibeá"
+        },
+        {
+          "id": "c",
+          "text": "Tribo em falta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que hoje falta uma tribo",
+      "feedbackCorrect": "Culto, crime e falta.",
+      "feedbackWrong": {
+        "default": "Comece pelo culto."
+      },
+      "hint": "O que falta?",
+      "learningObjective": "Encadear o caos",
+      "evidence": [
+        "Juízes 17:13",
+        "Juízes 21:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 17:13, complete: o SENHOR me fará o ___.",
+      "verseRef": "Juízes 17:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "bem"
+        },
+        {
+          "id": "b",
+          "text": "mal"
+        },
+        {
+          "id": "c",
+          "text": "silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR me fará o bem",
+      "feedbackCorrect": "Bem.",
+      "feedbackWrong": {
+        "b": "Não é mal.",
+        "c": "Não é silêncio."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar bem.",
+      "evidence": [
+        "Juízes 17:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 19:22 a Romanos 12:9?",
+      "verseRef": "Juízes 19:22",
+      "passageA": {
+        "ref": "Juízes 19:22"
+      },
+      "passageB": {
+        "ref": "Romanos 12:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aborrecei o mal"
+        },
+        {
+          "id": "b",
+          "text": "Aprovai o crime"
+        },
+        {
+          "id": "c",
+          "text": "Calai o horror"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "filhos de Belial, cercaram a casa",
+      "feedbackCorrect": "Aborrecer o mal.",
+      "feedbackWrong": {
+        "b": "Não aprovar.",
+        "c": "Não calar."
+      },
+      "hint": "Compare o mal.",
+      "learningObjective": "Ligar a Romanos.",
+      "evidence": [
+        "Juízes 19:22",
+        "Romanos 12:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 20:18, toque quem sobe primeiro.",
+      "verseRef": "Juízes 20:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá"
+        },
+        {
+          "id": "b",
+          "text": "Betel"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Judá subirá primeiro",
+      "feedbackCorrect": "Judá.",
+      "feedbackWrong": {
+        "b": "Betel é o lugar.",
+        "c": "Deus é consultado."
+      },
+      "hint": "Veja a resposta.",
+      "learningObjective": "Tocar Judá.",
+      "evidence": [
+        "Juízes 20:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene remendo e dor.",
+      "verseRef": "Juízes 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voto em Mispá"
+        },
+        {
+          "id": "b",
+          "text": "Jabes ausente"
+        },
+        {
+          "id": "c",
+          "text": "Tribo faltando"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "um juramento em Mispá",
+      "feedbackCorrect": "Voto, ausência e falta.",
+      "feedbackWrong": {
+        "default": "Comece pelo juramento."
+      },
+      "hint": "O que falta?",
+      "learningObjective": "Encadear remendo e dor",
+      "evidence": [
+        "Juízes 21:1",
+        "Juízes 21:3"
+      ]
+    }
+  ]
+}

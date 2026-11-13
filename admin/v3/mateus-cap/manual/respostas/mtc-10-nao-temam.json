@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "Mateus 10:26–31",
+    "passages": [
+      {
+        "ref": "Mateus 10:26–31"
+      }
+    ],
+    "context": "Jesus envia os doze e já falou de oposição. Neste trecho, ele trata da mensagem ouvida em particular e do temor que pode calar quem anuncia.",
+    "keyword": "não temam",
+    "keywordGloss": "É a ordem de Jesus aos doze diante da oposição que pode acompanhar o anúncio.",
+    "focusQuestion": "Quando o medo de anunciar apertar, em que cuidado do Pai você se apoia?",
+    "reflectionPrompts": [
+      "O que sai do segredo",
+      "O temor que importa",
+      "O valor de cada um"
+    ],
+    "facts": [
+      {
+        "text": "Nada há encoberto que não venha a ser revelado.",
+        "evidenceRef": "Mateus 10:26",
+        "evidenceSpan": "nada há encoberto que não venha a ser revelado"
+      },
+      {
+        "text": "Quem mata o corpo não pode matar a alma.",
+        "evidenceRef": "Mateus 10:28",
+        "evidenceSpan": "não podem matar a alma"
+      },
+      {
+        "text": "Dois pardais se vendem por um asse.",
+        "evidenceRef": "Mateus 10:29",
+        "evidenceSpan": "dois pardais por um asse"
+      },
+      {
+        "text": "Nenhum pardal cai em terra sem o consentimento do Pai.",
+        "evidenceRef": "Mateus 10:29",
+        "evidenceSpan": "nenhum deles cairá em terra sem o consentimento do seu Pai"
+      },
+      {
+        "text": "Todos os cabelos da cabeça estão contados.",
+        "evidenceRef": "Mateus 10:30",
+        "evidenceSpan": "todos os cabelos da sua cabeça estão contados"
+      },
+      {
+        "text": "Os discípulos são de muito mais valor do que muitos pardais.",
+        "evidenceRef": "Mateus 10:31",
+        "evidenceSpan": "vocês são de muito mais valor do que muitos pardais"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "alma",
+        "gloss": "É o que quem mata o corpo não consegue destruir."
+      },
+      {
+        "term": "pardais",
+        "gloss": "Aves de pouco preço que, ainda assim, não caem sem o Pai."
+      },
+      {
+        "term": "medo",
+        "gloss": "É o que Jesus manda deixar, porque o valor deles é maior."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O oculto não fica escondido",
+        "evidenceRef": "Mateus 10:26"
+      },
+      {
+        "label": "A mensagem recebida se anuncia",
+        "evidenceRef": "Mateus 10:27"
+      },
+      {
+        "label": "Quem mata o corpo não alcança a alma",
+        "evidenceRef": "Mateus 10:28"
+      },
+      {
+        "label": "O Pai mostra o valor dos seus",
+        "evidenceRef": "Mateus 10:31"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O que Jesus diz em segredo tem por fim ser proclamado em plena luz.",
+        "marker": "proclamai",
+        "evidenceRef": "Mateus 10:27"
+      },
+      {
+        "kind": "contraste",
+        "text": "Quem mata o corpo é posto em contraste com quem pode fazer perecer alma e corpo.",
+        "marker": "mas",
+        "evidenceRef": "Mateus 10:28"
+      },
+      {
+        "kind": "causa",
+        "text": "O valor maior que o dos pardais é a causa da ordem de não ter medo.",
+        "marker": "pois",
+        "evidenceRef": "Mateus 10:31"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 12:6",
+        "bridge": "Cuidado até no pardal"
+      },
+      {
+        "ref": "Lucas 12:4–5",
+        "bridge": "Temor a quem pode mais"
+      },
+      {
+        "ref": "Mateus 6:26",
+        "bridge": "Mais valor que as aves"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus manda temer quem persegue, porque essa pessoa pode destruir a alma.",
+        "why": "Ele diz para não temer quem mata o corpo, pois não pode matar a alma."
+      },
+      {
+        "text": "Corpo e alma perecem juntos nas mãos de quem mata o corpo.",
+        "why": "O texto separa as duas coisas: matam o corpo, mas não podem matar a alma."
+      },
+      {
+        "text": "O aviso sobre o inferno é uma ameaça contra quem anuncia.",
+        "why": "O inferno aparece para dizer a quem temer, não para condenar o anúncio."
+      }
+    ],
+    "centralInsight": "Quem é enviado por Jesus não precisa temer: até os cabelos da cabeça estão contados.",
+    "anchorQuestion": "O que Mateus 10:31 apresenta como razão para não ter medo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 10:30, só alguns cabelos da cabeça estão contados.",
+      "verseRef": "Mateus 10:30",
+      "correctOptionId": "false",
+      "evidenceSpan": "todos os cabelos da sua cabeça estão contados",
+      "feedbackCorrect": "O versículo não limita a conta. Todos os cabelos da cabeça estão contados.",
+      "feedbackWrong": {
+        "true": "Releia Mateus 10:30. Todos os cabelos da cabeça estão contados, não só alguns."
+      },
+      "hint": "Olhe o que o versículo diz que está contado.",
+      "learningObjective": "Observar que os cabelos da cabeça estão contados.",
+      "evidence": [
+        "Mateus 10:30"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 10:29, toque o que se vende por um asse.",
+      "verseRef": "Mateus 10:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "um asse"
+        },
+        {
+          "id": "b",
+          "text": "dois pardais"
+        },
+        {
+          "id": "c",
+          "text": "seu Pai"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "dois pardais por um asse",
+      "feedbackCorrect": "O texto diz que dois pardais se vendem por um asse.",
+      "feedbackWrong": {
+        "a": "O asse é o preço, não o que está à venda.",
+        "c": "O Pai é quem consente na queda, não o que se vende."
+      },
+      "hint": "A primeira frase diz o que custa esse preço.",
+      "learningObjective": "Identificar o que o texto diz que se vende por um asse.",
+      "evidence": [
+        "Mateus 10:29"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 10:26, o que acontece com o que está encoberto?",
+      "verseRef": "Mateus 10:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Continua escondido para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Será trazido à luz"
+        },
+        {
+          "id": "c",
+          "text": "Fica restrito aos doze"
+        },
+        {
+          "id": "d",
+          "text": "Perde importância com o tempo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "nada há encoberto que não venha a ser revelado",
+      "feedbackCorrect": "O encoberto não permanece oculto: o texto diz que ele vem a ser revelado.",
+      "feedbackWrong": {
+        "a": "O versículo nega que o encoberto permaneça escondido.",
+        "c": "O texto não limita a revelação ao grupo dos doze.",
+        "d": "O assunto é revelação, não perda de importância."
+      },
+      "hint": "Leia o que o texto diz que não deixa de ocorrer.",
+      "learningObjective": "Observar o destino do que está encoberto.",
+      "evidence": [
+        "Mateus 10:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 10:26 na ordem do texto.",
+      "verseRef": "Mateus 10:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto, não os temais"
+        },
+        {
+          "id": "b",
+          "text": "pois nada há encoberto que não venha a ser revelado"
+        },
+        {
+          "id": "c",
+          "text": "nem oculto, que não venha a ser conhecido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Portanto, não os temais",
+      "feedbackCorrect": "A frase vai da ordem de não temer ao que será revelado e conhecido.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem de não temer; o que será conhecido vem no fim."
+      },
+      "hint": "A primeira parte é a ordem; a revelação vem em seguida.",
+      "learningObjective": "Reconhecer a sequência de Mateus 10:26.",
+      "evidence": [
+        "Mateus 10:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 10:28, o que quem mata o corpo não pode matar?",
+      "verseRef": "Mateus 10:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "alma"
+        },
+        {
+          "id": "b",
+          "text": "vida"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não podem matar a alma",
+      "feedbackCorrect": "Quem mata o corpo não pode matar a alma: o limite está dito no texto.",
+      "feedbackWrong": {
+        "b": "A palavra do versículo é alma, não vida.",
+        "c": "O texto não diz carne; diz que não podem matar a alma."
+      },
+      "hint": "É o que fica fora do alcance de quem mata o corpo.",
+      "learningObjective": "Lembrar o que quem mata o corpo não pode destruir.",
+      "evidence": [
+        "Mateus 10:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 10:27 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 10:27",
+      "passageA": {
+        "ref": "Mateus 10:27"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os doze ouviram Jesus de perto e agora são enviados a falar em público."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Silêncio até o fim"
+        },
+        {
+          "id": "b",
+          "text": "Do segredo ao anúncio"
+        },
+        {
+          "id": "c",
+          "text": "Medo que guarda a fala"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "proclamai em plena luz",
+      "feedbackCorrect": "O que foi dito em segredo deve ser proclamado: o envio torna a palavra pública.",
+      "feedbackWrong": {
+        "a": "O texto não pede silêncio permanente; manda proclamar em plena luz.",
+        "c": "O medo não é a ponte; a ponte é o anúncio do que foi dito em segredo."
+      },
+      "hint": "Veja o que deve acontecer com a palavra ouvida em particular.",
+      "learningObjective": "Ligar o dito em segredo ao anúncio público de quem é enviado.",
+      "evidence": [
+        "Mateus 10:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 10:31, os discípulos devem ter medo porque valem menos do que os pardais.",
+      "verseRef": "Mateus 10:31",
+      "correctOptionId": "false",
+      "evidenceSpan": "vocês são de muito mais valor do que muitos pardais",
+      "feedbackCorrect": "O pois dá a causa real: eles valem mais, e por isso não devem ter medo.",
+      "feedbackWrong": {
+        "true": "A comparação está invertida: eles valem muito mais, e a ordem é não ter medo."
+      },
+      "hint": "Observe a comparação que vem logo depois da ordem.",
+      "learningObjective": "Compreender a causa que Mateus 10:31 dá para não ter medo.",
+      "evidence": [
+        "Mateus 10:31"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 10:26, toque a palavra que liga esta fala ao que veio antes.",
+      "verseRef": "Mateus 10:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "encoberto"
+        },
+        {
+          "id": "b",
+          "text": "Portanto"
+        },
+        {
+          "id": "c",
+          "text": "revelado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Portanto, não os temais",
+      "feedbackCorrect": "Portanto amarra esta ordem ao aviso anterior: por isso, não os temais.",
+      "feedbackWrong": {
+        "a": "Encoberto é o que será revelado, não o elo com o que veio antes.",
+        "c": "Revelado diz o destino do oculto, não a ligação com o aviso anterior."
+      },
+      "hint": "É a primeira palavra e puxa o que Jesus já tinha dito.",
+      "learningObjective": "Reconhecer a palavra que liga esta fala ao aviso anterior.",
+      "evidence": [
+        "Mateus 10:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que Mateus 10:28 contrapõe a quem mata o corpo?",
+      "verseRef": "Mateus 10:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alguém capaz de atingir alma e corpo"
+        },
+        {
+          "id": "b",
+          "text": "Um grupo que destrói apenas a alma"
+        },
+        {
+          "id": "c",
+          "text": "Os pardais que caem sem o Pai saber"
+        },
+        {
+          "id": "d",
+          "text": "O segredo que não deve ser anunciado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aquele que pode fazer perecer no inferno tanto a alma como o corpo",
+      "feedbackCorrect": "O mas separa quem mata o corpo de quem pode fazer perecer alma e corpo.",
+      "feedbackWrong": {
+        "b": "Quem mata o corpo não mata a alma; o texto não fala de um grupo assim.",
+        "c": "Os pardais vêm no versículo seguinte e não são o contraste desta frase.",
+        "d": "O segredo está em Mateus 10:27; aqui o contraste é sobre quem temer."
+      },
+      "hint": "Olhe quem a frase manda temer depois de falar de quem mata o corpo.",
+      "learningObjective": "Compreender o contraste entre quem mata o corpo e quem pode mais.",
+      "evidence": [
+        "Mateus 10:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência do recado até o limite de quem persegue?",
+      "verseRef": "Mateus 10:26–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "O oculto não fica escondido"
+        },
+        {
+          "id": "b",
+          "text": "A mensagem recebida se anuncia"
+        },
+        {
+          "id": "c",
+          "text": "Quem mata o corpo não alcança a alma"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "nada há encoberto que não venha a ser revelado",
+      "feedbackCorrect": "O recado vai do oculto revelado ao anúncio e, então, ao limite de quem mata.",
+      "feedbackWrong": {
+        "default": "Comece pelo que não fica escondido; o limite de quem mata vem depois."
+      },
+      "hint": "O anúncio fica no meio, entre o oculto e quem mata o corpo.",
+      "learningObjective": "Compreender os movimentos do recado até o limite de quem persegue.",
+      "evidence": [
+        "Mateus 10:26",
+        "Mateus 10:27",
+        "Mateus 10:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 10:29, nenhum pardal cai em terra sem o quê do Pai?",
+      "verseRef": "Mateus 10:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "conhecimento"
+        },
+        {
+          "id": "b",
+          "text": "consentimento"
+        },
+        {
+          "id": "c",
+          "text": "mandamento"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sem o consentimento do seu Pai",
+      "feedbackCorrect": "Nenhum pardal cai sem o consentimento do Pai: a queda não fica fora dele.",
+      "feedbackWrong": {
+        "a": "O texto não fala em conhecimento aqui; fala em consentimento.",
+        "c": "Não é um mandamento de queda; é o consentimento do Pai."
+      },
+      "hint": "Leia a condição sem a qual o pardal não cai.",
+      "learningObjective": "Lembrar a palavra que liga a queda do pardal ao Pai.",
+      "evidence": [
+        "Mateus 10:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 10:29 a Lucas 12:6?",
+      "verseRef": "Mateus 10:29",
+      "passageA": {
+        "ref": "Mateus 10:29"
+      },
+      "passageB": {
+        "ref": "Lucas 12:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Queda fora do alcance"
+        },
+        {
+          "id": "b",
+          "text": "Preço que encerra o caso"
+        },
+        {
+          "id": "c",
+          "text": "Cuidado até no pardal"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "nenhum deles cairá em terra sem o consentimento do seu Pai",
+      "feedbackCorrect": "Lucas diz que nenhum pardal é esquecido; Mateus, que nenhum cai sem o Pai.",
+      "feedbackWrong": {
+        "a": "Os dois textos põem o pardal sob o cuidado de Deus, não fora dele.",
+        "b": "O preço só mostra que o pardal é barato; o cuidado continua."
+      },
+      "hint": "Compare o que acontece com o pardal diante de Deus nos dois textos.",
+      "learningObjective": "Relacionar o pardal de Mateus 10:29 ao cuidado descrito em Lucas 12:6.",
+      "evidence": [
+        "Mateus 10:29",
+        "Lucas 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Mateus 10:29–30 sustenta que o pardal e os cabelos do discípulo estão sob o cuidado do Pai.",
+      "verseRef": "Mateus 10:29–30",
+      "correctOptionId": "true",
+      "evidenceSpan": "nenhum deles cairá em terra sem o consentimento do seu Pai",
+      "feedbackCorrect": "O Pai consente na queda do pardal e conta os cabelos: o cuidado alcança os dois.",
+      "feedbackWrong": {
+        "false": "O preço baixo não afasta o Pai; o pardal não cai sem ele, e os cabelos estão contados."
+      },
+      "hint": "Veja o que o texto afirma sobre a queda do pardal e sobre a cabeça.",
+      "learningObjective": "Interpretar o pardal e os cabelos como cuidado do Pai com quem é enviado.",
+      "evidence": [
+        "Mateus 10:29–30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 10:31, toque o que mostra o valor dos discípulos diante dos pardais.",
+      "verseRef": "Mateus 10:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "tenham medo"
+        },
+        {
+          "id": "b",
+          "text": "muitos pardais"
+        },
+        {
+          "id": "c",
+          "text": "muito mais valor"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "vocês são de muito mais valor",
+      "feedbackCorrect": "Eles são de muito mais valor: essa é a medida que o texto põe acima dos pardais.",
+      "feedbackWrong": {
+        "a": "Ter medo é a ordem que se nega, não a frase que diz o valor deles.",
+        "b": "Os pardais são a comparação; a medida do valor está ao lado."
+      },
+      "hint": "Procure a frase que mede o valor deles, não a ordem nem as aves.",
+      "learningObjective": "Localizar no texto o que sustenta o valor dos discípulos.",
+      "evidence": [
+        "Mateus 10:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 10:28 sustenta sobre o temor?",
+      "verseRef": "Mateus 10:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "O medo dos homens não é o temor que Jesus pede"
+        },
+        {
+          "id": "b",
+          "text": "Jesus manda temer quem persegue e mata"
+        },
+        {
+          "id": "c",
+          "text": "Corpo e alma morrem juntos diante dos homens"
+        },
+        {
+          "id": "d",
+          "text": "O inferno ameaça quem anuncia a mensagem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não temam aqueles que matam o corpo",
+      "feedbackCorrect": "Jesus afasta o medo de quem mata o corpo e reserva o temor a quem pode mais.",
+      "feedbackWrong": {
+        "b": "A ordem é não temer quem mata o corpo; essa pessoa não pode matar a alma.",
+        "c": "O texto separa as duas: matam o corpo, mas não podem matar a alma.",
+        "d": "O inferno diz a quem temer, não condena quem anuncia a mensagem."
+      },
+      "hint": "Compare a ordem de não temer com quem a frase manda temer depois.",
+      "learningObjective": "Escolher a leitura do temor que Mateus 10:28 sustenta.",
+      "evidence": [
+        "Mateus 10:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento Mateus 10:29–30 constrói até a ordem seguinte?",
+      "verseRef": "Mateus 10:29–30",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Pai não perde o pardal de vista"
+        },
+        {
+          "id": "b",
+          "text": "O discípulo é conhecido em detalhe"
+        },
+        {
+          "id": "c",
+          "text": "Esse cuidado sustenta a coragem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "nenhum deles cairá em terra sem o consentimento do seu Pai",
+      "feedbackCorrect": "Do pardal ao cabelo contado, o cuidado do Pai sustenta a coragem de quem é enviado.",
+      "feedbackWrong": {
+        "default": "Comece pelo pardal sob o Pai; a coragem de quem é enviado vem no fim."
+      },
+      "hint": "O pardal vem primeiro; a coragem é o ponto de chegada.",
+      "learningObjective": "Interpretar a lógica que vai do pardal ao fim do temor.",
+      "evidence": [
+        "Mateus 10:29",
+        "Mateus 10:30",
+        "Mateus 10:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 10:31, o que Jesus diz que os discípulos não tenham?",
+      "verseRef": "Mateus 10:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "pressa"
+        },
+        {
+          "id": "b",
+          "text": "dúvida"
+        },
+        {
+          "id": "c",
+          "text": "medo"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Não tenham medo",
+      "feedbackCorrect": "Medo é o que Jesus afasta: eles não precisam tê-lo, pelo valor que têm.",
+      "feedbackWrong": {
+        "a": "O texto não fala de pressa; a ordem é não ter medo.",
+        "b": "Não é dúvida que Jesus nomeia; é o medo."
+      },
+      "hint": "É o sentimento que a primeira frase manda deixar.",
+      "learningObjective": "Lembrar o termo que carrega a ordem de Jesus aos enviados.",
+      "evidence": [
+        "Mateus 10:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 10:28 a Lucas 12:4–5?",
+      "verseRef": "Mateus 10:28",
+      "passageA": {
+        "ref": "Mateus 10:28"
+      },
+      "passageB": {
+        "ref": "Lucas 12:4–5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temer quem mata o corpo"
+        },
+        {
+          "id": "b",
+          "text": "Temor a quem pode mais"
+        },
+        {
+          "id": "c",
+          "text": "Medo de quem anuncia"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "temam, antes, aquele que pode fazer perecer",
+      "feedbackCorrect": "Os dois textos desviam o temor de quem mata o corpo para quem pode mais.",
+      "feedbackWrong": {
+        "a": "Quem mata o corpo é justamente quem os textos mandam não temer.",
+        "c": "O anúncio não é a ponte; os dois textos dizem a quem o temor cabe."
+      },
+      "hint": "Veja a quem os dois textos mandam temer de fato.",
+      "learningObjective": "Ligar o temor de Mateus 10:28 ao mesmo ensino em Lucas 12:4–5.",
+      "evidence": [
+        "Mateus 10:28",
+        "Lucas 12:4–5"
+      ]
+    }
+  ]
+}

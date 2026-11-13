@@ -1,0 +1,33 @@
+{
+  "slug": "filemom-cap",
+  "prefix": "fmc",
+  "book": "Filemom",
+  "chapters": 1,
+  "title": "Filemom",
+  "description": "Filemom capítulo a capítulo: amor, comunhão e confiança no Senhor entre irmãos.",
+  "icon": "🤝",
+  "color": "#5D6D7E",
+  "order": 70,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["filemom"],
+  "modules": [
+    {
+      "title": "Amor e confiança · cap. 1",
+      "scenes": [
+        {
+          "ref": "Filemom 1:1–6",
+          "title": "Fé que se torna eficaz",
+          "intro": "Paulo, prisioneiro, escreve a Filemom e agradece o amor e a fé dele.",
+          "insight": "A comunhão da fé se torna eficaz no conhecimento de todo o bem que há em nós por Cristo.",
+          "objective": "Viver a comunhão da fé"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Amor e confiança",
+        "intro": "Revise a fé e o amor que tornam a comunhão eficaz em Cristo.",
+        "insight": "A fé compartilhada produz o bem em Cristo Jesus"
+      }
+    }
+  ]
+}

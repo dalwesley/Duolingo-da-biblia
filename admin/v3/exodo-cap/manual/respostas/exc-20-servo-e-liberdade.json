@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 21:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 21:1–11"
+      }
+    ],
+    "context": "Depois da lei, vêm estatutos: o escravo hebreu serve seis anos e no sétimo sai livre; há também regras para a escrava.",
+    "keyword": "Livre",
+    "keywordGloss": "No sétimo ano o escravo hebreu sai livre, sem custo.",
+    "focusQuestion": "Onde você precisa tratar o outro com a dignidade que a lei de Deus exige?",
+    "reflectionPrompts": [
+      "Seis anos",
+      "Sétimo livre",
+      "Orelha furada"
+    ],
+    "facts": [
+      {
+        "text": "O escravo hebreu serve seis anos e no sétimo sai livre.",
+        "evidenceRef": "Êxodo 21:2",
+        "evidenceSpan": "servirá por seis anos; mas, no sétimo ano, ele sairá livre"
+      },
+      {
+        "text": "Se entrou solteiro, sai sozinho; se casado, a esposa sai com ele.",
+        "evidenceRef": "Êxodo 21:3",
+        "evidenceSpan": "Se entrou solteiro, sairá sozinho; se era casado, sua esposa sairá com ele"
+      },
+      {
+        "text": "O escravo pode declarar que ama o senhor e não quer ficar livre.",
+        "evidenceRef": "Êxodo 21:5",
+        "evidenceSpan": "Eu amo o meu senhor, a minha esposa e os meus filhos; não quero ficar livre"
+      },
+      {
+        "text": "Então o senhor fura a orelha e ele serve para sempre.",
+        "evidenceRef": "Êxodo 21:6",
+        "evidenceSpan": "lhe furará a orelha com uma sovela; e ele o servirá para sempre"
+      },
+      {
+        "text": "Se não fizer as três coisas à escrava, ela sai livre.",
+        "evidenceRef": "Êxodo 21:11",
+        "evidenceSpan": "se não lhe fizer estas três coisas, sairá livre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "livre",
+        "gloss": "Saída sem custo no sétimo ano."
+      },
+      {
+        "term": "sovela",
+        "gloss": "Instrumento que fura a orelha do servo permanente."
+      },
+      {
+        "term": "estatutos",
+        "gloss": "Regras que Moisés deve propor ao povo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Hebreu serve seis anos e sai livre",
+        "evidenceRef": "Êxodo 21:1–2"
+      },
+      {
+        "label": "Família e saída",
+        "evidenceRef": "Êxodo 21:3–4"
+      },
+      {
+        "label": "Servo que escolhe ficar",
+        "evidenceRef": "Êxodo 21:5–6"
+      },
+      {
+        "label": "Proteção da escrava",
+        "evidenceRef": "Êxodo 21:7–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Serve seis anos, mas no sétimo sai livre.",
+        "marker": "mas",
+        "evidenceRef": "Êxodo 21:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se declarar amor e recusar liberdade, serve para sempre.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 21:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se não fizer as três coisas, ela sai livre.",
+        "marker": "Mas",
+        "evidenceRef": "Êxodo 21:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 15:12",
+        "bridge": "Liberdade no sétimo"
+      },
+      {
+        "ref": "Jeremias 34:14",
+        "bridge": "Soltar o hebreu"
+      },
+      {
+        "ref": "1 Coríntios 7:21",
+        "bridge": "Usar a liberdade"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O escravo hebreu nunca podia sair.",
+        "why": "No sétimo ano sai livre sem custo."
+      },
+      {
+        "text": "A escrava não tinha nenhuma proteção.",
+        "why": "Há regras de resgate, dignidade e saída livre."
+      },
+      {
+        "text": "Furar a orelha era castigo aleatório.",
+        "why": "É o sinal de quem escolhe servir para sempre."
+      }
+    ],
+    "centralInsight": "Até a servidão tem limite e dignidade diante do Senhor.",
+    "anchorQuestion": "Em que ano o escravo hebreu saía livre?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O escravo hebreu servirá por seis anos e no sétimo sairá livre.",
+      "verseRef": "Êxodo 21:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "servirá por seis anos; mas, no sétimo ano, ele sairá livre",
+      "feedbackCorrect": "Seis anos de serviço; liberdade no sétimo.",
+      "feedbackWrong": {
+        "false": "Releia: no sétimo ano, ele sairá livre."
+      },
+      "hint": "Veja os anos e a saída.",
+      "learningObjective": "Observar o limite da servidão.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 21:2, toque a palavra que nomeia a saída do sétimo ano.",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "livre"
+        },
+        {
+          "id": "b",
+          "text": "comprar"
+        },
+        {
+          "id": "c",
+          "text": "hebreu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "No sétimo ele sai livre.",
+      "feedbackWrong": {
+        "b": "\"comprar\" abre a lei; a saída é livre.",
+        "c": "\"hebreu\" identifica; a palavra é livre."
+      },
+      "hint": "Veja o adjetivo da saída.",
+      "learningObjective": "Identificar a liberdade.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 21:6, o que o senhor faz na orelha do escravo que fica?",
+      "verseRef": "Êxodo 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fura com uma sovela"
+        },
+        {
+          "id": "b",
+          "text": "Cola um anel de ouro"
+        },
+        {
+          "id": "c",
+          "text": "Corta o cabelo"
+        },
+        {
+          "id": "d",
+          "text": "Lava com óleo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lhe furará a orelha com uma sovela",
+      "feedbackCorrect": "Fura a orelha com uma sovela.",
+      "feedbackWrong": {
+        "b": "Não há anel no texto.",
+        "c": "A ação é furar a orelha.",
+        "d": "O instrumento é a sovela."
+      },
+      "hint": "Leia o gesto na porta.",
+      "learningObjective": "Observar o sinal do servo permanente.",
+      "evidence": [
+        "Êxodo 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 21:2 na ordem do texto.",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se você comprar um escravo hebreu"
+        },
+        {
+          "id": "b",
+          "text": "ele servirá por seis anos"
+        },
+        {
+          "id": "c",
+          "text": "mas, no sétimo ano, ele sairá livre sem custo algum"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "Compra, serviço e liberdade na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pela compra do escravo."
+      },
+      "hint": "O versículo começa com Se você comprar.",
+      "learningObjective": "Reconhecer a ordem de 21:2.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 21:6, com que instrumento o senhor fura a orelha?",
+      "verseRef": "Êxodo 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sovela"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "martelo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "furará a orelha com uma sovela",
+      "feedbackCorrect": "O instrumento é uma sovela.",
+      "feedbackWrong": {
+        "b": "Não é espada.",
+        "c": "O texto diz sovela."
+      },
+      "hint": "Veja o instrumento nomeado.",
+      "learningObjective": "Lembrar a sovela.",
+      "evidence": [
+        "Êxodo 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 21:2 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 21:2",
+      "passageA": {
+        "ref": "Êxodo 21:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os estatutos limitam a servidão e abrem caminho à liberdade."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Limite e liberdade"
+        },
+        {
+          "id": "b",
+          "text": "Escravidão eterna"
+        },
+        {
+          "id": "c",
+          "text": "Sem lei alguma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no sétimo ano, ele sairá livre",
+      "feedbackCorrect": "O sétimo ano marca limite e liberdade.",
+      "feedbackWrong": {
+        "b": "O texto abre saída livre.",
+        "c": "Há estatutos claros."
+      },
+      "hint": "Compare anos e saída.",
+      "learningObjective": "Ligar estatuto e dignidade.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 21:2, o escravo hebreu sai livre no sétimo ano mediante alto pagamento.",
+      "verseRef": "Êxodo 21:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "sairá livre sem custo algum",
+      "feedbackCorrect": "Sai livre sem custo algum.",
+      "feedbackWrong": {
+        "true": "Releia: sem custo algum."
+      },
+      "hint": "Há custo na saída?",
+      "learningObjective": "Compreender a liberdade sem custo.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 21:2, toque a palavra que marca o contraste entre servir e sair.",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "anos"
+        },
+        {
+          "id": "c",
+          "text": "custo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servirá por seis anos; mas, no sétimo ano",
+      "feedbackCorrect": "\"Mas\" vira a cena: do serviço à liberdade.",
+      "feedbackWrong": {
+        "b": "\"anos\" mede o tempo; o contraste é mas.",
+        "c": "\"custo\" fecha; o marcador é mas."
+      },
+      "hint": "Procure a palavra entre seis e sétimo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 21:5–6 liga a declaração do escravo ao serviço permanente?",
+      "verseRef": "Êxodo 21:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se ama e não quer livre, fura a orelha e serve sempre"
+        },
+        {
+          "id": "b",
+          "text": "Se ama, sai no terceiro ano"
+        },
+        {
+          "id": "c",
+          "text": "Se declara, paga o dobro e foge"
+        },
+        {
+          "id": "d",
+          "text": "Se ama, vira juiz do povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele o servirá para sempre",
+      "feedbackCorrect": "Amor declarado leva ao sinal e ao serviço para sempre.",
+      "feedbackWrong": {
+        "b": "Não há saída no terceiro ano neste caso.",
+        "c": "Não há fuga paga aqui.",
+        "d": "O resultado é servir para sempre."
+      },
+      "hint": "Una a fala e o gesto na porta.",
+      "learningObjective": "Relacionar escolha e sinal.",
+      "evidence": [
+        "Êxodo 21:5",
+        "Êxodo 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avançam os estatutos em Êxodo 21:1–11?",
+      "verseRef": "Êxodo 21:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hebreu serve e sai livre no sétimo"
+        },
+        {
+          "id": "b",
+          "text": "Quem ama pode ficar para sempre"
+        },
+        {
+          "id": "c",
+          "text": "A escrava tem proteção e saída"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "Liberdade, escolha permanente e proteção da escrava.",
+      "feedbackWrong": {
+        "default": "Comece pela liberdade no sétimo."
+      },
+      "hint": "Siga hebreu, escolha e escrava.",
+      "learningObjective": "Compreender o movimento da lei.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Êxodo 21:6",
+        "Êxodo 21:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 21:6, até quando ele servirá após o sinal?",
+      "verseRef": "Êxodo 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sempre"
+        },
+        {
+          "id": "b",
+          "text": "nunca"
+        },
+        {
+          "id": "c",
+          "text": "hoje"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele o servirá para sempre",
+      "feedbackCorrect": "Serve para sempre após o sinal.",
+      "feedbackWrong": {
+        "b": "O texto diz para sempre.",
+        "c": "Não é só hoje."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Lembrar a duração do serviço.",
+      "evidence": [
+        "Êxodo 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 21:2 a Deuteronômio 15:12?",
+      "verseRef": "Êxodo 21:2",
+      "passageA": {
+        "ref": "Êxodo 21:2"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 15:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Liberdade no sétimo"
+        },
+        {
+          "id": "b",
+          "text": "Bezerro de ouro"
+        },
+        {
+          "id": "c",
+          "text": "Pragas no Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no sétimo ano, ele sairá livre",
+      "feedbackCorrect": "Os dois textos mandam soltar no sétimo ano.",
+      "feedbackWrong": {
+        "b": "O elo é a liberdade.",
+        "c": "As pragas não são o tema."
+      },
+      "hint": "Compare o sétimo ano.",
+      "learningObjective": "Relacionar Êxodo e Deuteronômio.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Deuteronômio 15:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 21:1–11 sustenta que a lei trata a servidão sem nenhum limite nem dignidade.",
+      "verseRef": "Êxodo 21:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "no sétimo ano, ele sairá livre sem custo algum",
+      "feedbackCorrect": "Há limite de anos, saída livre e proteção da escrava.",
+      "feedbackWrong": {
+        "true": "O texto marca liberdade e salvaguardas."
+      },
+      "hint": "Veja sétimo ano e regras da escrava.",
+      "learningObjective": "Interpretar dignidade na lei.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Êxodo 21:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 21:11, toque o trecho que marca a ausência de pagamento na saída.",
+      "verseRef": "Êxodo 21:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "retribuição"
+        },
+        {
+          "id": "b",
+          "text": "dinheiro"
+        },
+        {
+          "id": "c",
+          "text": "três"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem receber retribuição nem pagamento em dinheiro",
+      "feedbackCorrect": "Sai livre sem receber retribuição.",
+      "feedbackWrong": {
+        "b": "\"dinheiro\" acompanha; o termo pedido é retribuição.",
+        "c": "\"três\" são as coisas; o trecho é retribuição."
+      },
+      "hint": "Veja o que ela não recebe.",
+      "learningObjective": "Sustentar a saída sem pagamento.",
+      "evidence": [
+        "Êxodo 21:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 21:1–11 sustenta sobre esses estatutos?",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Servidão tem limite e a pessoa tem dignidade"
+        },
+        {
+          "id": "b",
+          "text": "Ninguém jamais sai livre"
+        },
+        {
+          "id": "c",
+          "text": "A escrava não tem salvaguarda"
+        },
+        {
+          "id": "d",
+          "text": "O sinal na orelha é sem escolha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sairá livre sem custo algum",
+      "feedbackCorrect": "Anos limitados e proteções mostram dignidade.",
+      "feedbackWrong": {
+        "b": "O sétimo ano traz liberdade.",
+        "c": "Há regras claras de proteção.",
+        "d": "O sinal segue a declaração voluntária."
+      },
+      "hint": "Una liberdade e proteção.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a liberdade do servo à Escritura?",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O estatuto solta o hebreu no sétimo"
+        },
+        {
+          "id": "b",
+          "text": "Deuteronômio repete a liberdade"
+        },
+        {
+          "id": "c",
+          "text": "Jeremias cobra soltar o hebreu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "Da lei à repetição e à cobrança dos profetas.",
+      "feedbackWrong": {
+        "default": "Comece por Êxodo; depois Deuteronômio e Jeremias."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver a liberdade ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Deuteronômio 15:12",
+        "Jeremias 34:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 21:1, que termo nomeia o que Moisés deve propor?",
+      "verseRef": "Êxodo 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "estatutos"
+        },
+        {
+          "id": "b",
+          "text": "canções"
+        },
+        {
+          "id": "c",
+          "text": "impostos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estes são os estatutos que você lhes proporá",
+      "feedbackCorrect": "O termo é estatutos.",
+      "feedbackWrong": {
+        "b": "Não são canções.",
+        "c": "O texto fala de estatutos."
+      },
+      "hint": "Veja o sujeito da frase de abertura.",
+      "learningObjective": "Lembrar o termo da lei civil.",
+      "evidence": [
+        "Êxodo 21:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 21:2 a Jeremias 34:14?",
+      "verseRef": "Êxodo 21:2",
+      "passageA": {
+        "ref": "Êxodo 21:2"
+      },
+      "passageB": {
+        "ref": "Jeremias 34:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Soltar o hebreu"
+        },
+        {
+          "id": "b",
+          "text": "Construir o templo"
+        },
+        {
+          "id": "c",
+          "text": "Ungir um rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "Jeremias cobra a mesma soltura do hebreu.",
+      "feedbackWrong": {
+        "b": "O elo é a liberdade do servo.",
+        "c": "Não é sobre unção real."
+      },
+      "hint": "Compare a soltura no sétimo.",
+      "learningObjective": "Ligar estatuto e profetas.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Jeremias 34:14"
+      ]
+    }
+  ]
+}

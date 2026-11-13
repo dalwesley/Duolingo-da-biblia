@@ -1,0 +1,482 @@
+{
+  "study": {
+    "passageRef": "Sofonias 2:1–6",
+    "passages": [
+      { "ref": "Sofonias 2:1–6" },
+      { "ref": "Sofonias 2:7" }
+    ],
+    "context": "Antes que chegue o dia da ira, Sofonias chama a nação sem pudor a reunir-se e os mansos a buscar o Senhor, a justiça e a mansidão.",
+    "keyword": "busquem",
+    "keywordGloss": "Chamado urgente a procurar o Senhor, a justiça e a mansidão antes do dia da ira.",
+    "focusQuestion": "Antes que o dia aperte, o que você está buscando de verdade?",
+    "reflectionPrompts": [
+      "Antes da ira",
+      "Justiça e mansidão",
+      "Abrigo possível"
+    ],
+    "facts": [
+      {
+        "text": "A nação sem pudor é chamada a reunir-se.",
+        "evidenceRef": "Sofonias 2:1",
+        "evidenceSpan": "Reúnam-se, sim, reúnam-se, ó nação que não tem pudor"
+      },
+      {
+        "text": "O chamado vem antes que venha o dia da ira do Senhor.",
+        "evidenceRef": "Sofonias 2:2",
+        "evidenceSpan": "antes que venha a vocês o dia da ira do Senhor"
+      },
+      {
+        "text": "Os mansos da terra devem buscar o Senhor, a justiça e a mansidão.",
+        "evidenceRef": "Sofonias 2:3",
+        "evidenceSpan": "busquem a justiça, busquem a mansidão"
+      },
+      {
+        "text": "Gaza será desamparada e Ascalom ficará deserta.",
+        "evidenceRef": "Sofonias 2:4",
+        "evidenceSpan": "Gaza será desamparada, Ascalom ficará deserta"
+      },
+      {
+        "text": "A palavra do Senhor será contra a costa dos filisteus.",
+        "evidenceRef": "Sofonias 2:5",
+        "evidenceSpan": "A palavra do Senhor será contra vocês, ó Canaã, terra dos filisteus"
+      },
+      {
+        "text": "O restante de Judá pastará e o Senhor lhes restituirá o que perderam.",
+        "evidenceRef": "Sofonias 2:7",
+        "evidenceSpan": "o Senhor, seu Deus, atentará para eles e lhes restituirá o que perderam"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "busquem",
+        "gloss": "Ação urgente pedida aos mansos: procurar o Senhor e a justiça."
+      },
+      {
+        "term": "mansidão",
+        "gloss": "Atitude que, junto com a justiça, pode achar abrigo no dia da ira."
+      },
+      {
+        "term": "abrigo",
+        "gloss": "Possibilidade de proteção no dia da ira para quem busca."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado à nação sem pudor",
+        "evidenceRef": "Sofonias 2:1–2"
+      },
+      {
+        "label": "Busca dos mansos por justiça e mansidão",
+        "evidenceRef": "Sofonias 2:3"
+      },
+      {
+        "label": "Juízo sobre as cidades filisteias",
+        "evidenceRef": "Sofonias 2:4–5"
+      },
+      {
+        "label": "Costa vira pasto e Judá é restituída",
+        "evidenceRef": "Sofonias 2:6–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Buscar justiça e mansidão pode trazer abrigo no dia da ira.",
+        "marker": "porventura",
+        "evidenceRef": "Sofonias 2:3"
+      },
+      {
+        "kind": "causa",
+        "text": "O juízo das cidades filisteias explica o chamado urgente.",
+        "marker": "Porque",
+        "evidenceRef": "Sofonias 2:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois do juízo, a costa vira pastagem e Judá é restaurada.",
+        "marker": null,
+        "evidenceRef": "Sofonias 2:6–7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 55:6", "bridge": "Buscar o Senhor enquanto perto" },
+      { "ref": "Amós 5:14–15", "bridge": "Buscar o bem e a justiça" },
+      { "ref": "Salmos 34:14", "bridge": "Buscar a paz com mansidão" }
+    ],
+    "misreadings": [
+      {
+        "text": "O abrigo no dia da ira é garantido sem busca.",
+        "why": "2:3 liga o abrigo à busca de justiça e mansidão, e diz \"porventura\"."
+      },
+      {
+        "text": "O juízo só atinge Judá; as nações vizinhas ficam de fora.",
+        "why": "2:4–5 anuncia juízo sobre Gaza, Ascalom e os filisteus."
+      },
+      {
+        "text": "Depois do juízo, nada resta para Judá.",
+        "why": "2:7 diz que o restante de Judá pastará e será restituído."
+      }
+    ],
+    "centralInsight": "Buscar o Senhor, a justiça e a humildade pode esconder no dia da ira.",
+    "anchorQuestion": "Segundo Sofonias 2:3, o que os mansos devem buscar além do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Sofonias 2:3, o abrigo no dia da ira é prometido sem qualquer condição.",
+      "verseRef": "Sofonias 2:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "porventura, vocês poderão encontrar abrigo no dia da ira do Senhor",
+      "feedbackCorrect": "O texto diz \"porventura\": o abrigo está ligado à busca, sem garantia automática.",
+      "feedbackWrong": { "true": "Releia o fim de 2:3: o abrigo vem com \"porventura\", após a busca." },
+      "hint": "Olhe a palavra que introduz a possibilidade de abrigo.",
+      "learningObjective": "Observar que o abrigo não é automático.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Sofonias 2:3, toque quem é chamado a buscar o Senhor.",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "mansos da terra" },
+        { "id": "b", "text": "dia da ira" },
+        { "id": "c", "text": "sua justiça" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todos vocês, os mansos da terra",
+      "feedbackCorrect": "O chamado é aos mansos da terra, que praticam a justiça.",
+      "feedbackWrong": {
+        "b": "O dia da ira é o horizonte, não quem busca.",
+        "c": "A justiça é o que se pratica e se busca, não quem é chamado."
+      },
+      "hint": "Procure o grupo nomeado logo após \"todos vocês\".",
+      "learningObjective": "Identificar os mansos como destinatários do chamado.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Sofonias 2:4, o que acontecerá com Gaza e Ascalom?",
+      "verseRef": "Sofonias 2:4",
+      "options": [
+        { "id": "a", "text": "Gaza será desamparada e Ascalom ficará deserta" },
+        { "id": "b", "text": "Ambas serão poupadas por causa de Judá" },
+        { "id": "c", "text": "Gaza e Ascalom receberão o restante de Judá" },
+        { "id": "d", "text": "As duas cidades se unirão contra Ecrom" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Gaza será desamparada, Ascalom ficará deserta",
+      "feedbackCorrect": "O versículo anuncia desamparo e desertificação dessas cidades.",
+      "feedbackWrong": {
+        "b": "O texto anuncia juízo, não isenção.",
+        "c": "A restituição a Judá aparece depois, em 2:7.",
+        "d": "Não há aliança; há juízo sobre cada cidade."
+      },
+      "hint": "Leia o destino nomeado para cada cidade.",
+      "learningObjective": "Observar o juízo sobre as cidades filisteias.",
+      "evidence": ["Sofonias 2:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Sofonias 2:3 na ordem do texto.",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "Busquem ao Senhor, todos vocês, os mansos da terra" },
+        { "id": "b", "text": "busquem a justiça, busquem a mansidão" },
+        { "id": "c", "text": "porventura, vocês poderão encontrar abrigo no dia da ira do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Busquem ao Senhor, todos vocês, os mansos da terra",
+      "feedbackCorrect": "Primeiro buscar o Senhor, depois justiça e mansidão, e então a possibilidade de abrigo.",
+      "feedbackWrong": { "default": "Comece pelo chamado aos mansos; o abrigo fecha o versículo." },
+      "hint": "O versículo começa com o verbo de busca.",
+      "learningObjective": "Reconhecer a sequência de Sofonias 2:3.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Sofonias 2:3, o que os mansos devem buscar junto com a justiça?",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "riqueza" },
+        { "id": "b", "text": "mansidão" },
+        { "id": "c", "text": "vingança" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "busquem a justiça, busquem a mansidão",
+      "feedbackCorrect": "O texto manda buscar a justiça e a mansidão.",
+      "feedbackWrong": {
+        "a": "Não há busca de riqueza neste versículo.",
+        "c": "O chamado é a mansidão, não a vingança."
+      },
+      "hint": "Veja o segundo objeto do verbo \"busquem\".",
+      "learningObjective": "Lembrar o que se busca além da justiça.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Sofonias 2:3 comunica que se liga a este contexto?",
+      "verseRef": "Sofonias 2:3",
+      "passageA": { "ref": "Sofonias 2:3" },
+      "passageB": { "ref": "Contexto", "text": "Antes do dia da ira, há um chamado urgente a buscar o Senhor." },
+      "options": [
+        { "id": "a", "text": "Busca antes da ira" },
+        { "id": "b", "text": "Abrigo sem condição" },
+        { "id": "c", "text": "Juízo só para filisteus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Busquem ao Senhor, todos vocês, os mansos da terra",
+      "feedbackCorrect": "O versículo une busca urgente e possibilidade de abrigo no dia da ira.",
+      "feedbackWrong": {
+        "b": "O abrigo vem com \"porventura\", após a busca.",
+        "c": "2:3 fala aos mansos; o juízo filisteu vem depois."
+      },
+      "hint": "Veja o tempo do chamado em relação ao dia.",
+      "learningObjective": "Ligar 2:3 ao chamado antes da ira.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Sofonias 2:3, a busca de justiça e mansidão aparece ligada à possibilidade de abrigo no dia da ira.",
+      "verseRef": "Sofonias 2:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "busquem a justiça, busquem a mansidão; porventura, vocês poderão encontrar abrigo",
+      "feedbackCorrect": "O texto encadeia a busca e, em seguida, a possibilidade de abrigo.",
+      "feedbackWrong": { "false": "Releia 2:3: depois da busca vem o \"porventura\" do abrigo." },
+      "hint": "Veja o que vem depois dos dois \"busquem\".",
+      "learningObjective": "Compreender a relação entre busca e abrigo.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Sofonias 2:3, toque a palavra que marca a possibilidade, não a certeza, do abrigo.",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "busquem" },
+        { "id": "b", "text": "porventura" },
+        { "id": "c", "text": "mansidão" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "porventura, vocês poderão encontrar abrigo",
+      "feedbackCorrect": "\"Porventura\" marca possibilidade, não garantia automática.",
+      "feedbackWrong": {
+        "a": "\"Busquem\" é o mandato; a possibilidade vem depois.",
+        "c": "\"Mansidão\" é o que se busca, não o marcador de possibilidade."
+      },
+      "hint": "Procure a palavra que introduz o resultado possível.",
+      "learningObjective": "Reconhecer o marcador de possibilidade em 2:3.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Sofonias 2:4–5 se relaciona com o chamado de Sofonias 2:3?",
+      "verseRef": "Sofonias 2:3–4",
+      "options": [
+        { "id": "a", "text": "Mostra o juízo próximo que torna a busca urgente" },
+        { "id": "b", "text": "Cancela o chamado aos mansos da terra" },
+        { "id": "c", "text": "Promete abrigo automático às cidades filisteias" },
+        { "id": "d", "text": "Desloca o dia da ira só para Judá" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque Gaza será desamparada",
+      "feedbackCorrect": "O \"Porque\" liga o juízo das cidades à urgência do chamado anterior.",
+      "feedbackWrong": {
+        "b": "O juízo não cancela o chamado; reforça a urgência.",
+        "c": "As cidades recebem juízo, não abrigo.",
+        "d": "2:4–5 aponta as cidades filisteias, não só Judá."
+      },
+      "hint": "Veja a palavra que abre 2:4.",
+      "learningObjective": "Relacionar o juízo filisteu à urgência da busca.",
+      "evidence": ["Sofonias 2:3", "Sofonias 2:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Sofonias 2:1–7?",
+      "verseRef": "Sofonias 2:1–2",
+      "options": [
+        { "id": "a", "text": "Chamado à nação sem pudor" },
+        { "id": "b", "text": "Busca dos mansos por justiça e mansidão" },
+        { "id": "c", "text": "Juízo filisteu e restauração de Judá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Reúnam-se, sim, reúnam-se, ó nação que não tem pudor",
+      "feedbackCorrect": "O texto vai do chamado urgente à busca, e então ao juízo e à restituição.",
+      "feedbackWrong": { "default": "Comece pela nação sem pudor; a restituição vem no fim." },
+      "hint": "Siga: chamado, busca, juízo e restauração.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": ["Sofonias 2:1", "Sofonias 2:3", "Sofonias 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Sofonias 2:4, que palavra abre a ligação com o chamado anterior?",
+      "verseRef": "Sofonias 2:4",
+      "options": [
+        { "id": "a", "text": "Porém" },
+        { "id": "b", "text": "Porque" },
+        { "id": "c", "text": "Então" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Porque Gaza será desamparada",
+      "feedbackCorrect": "\"Porque\" introduz a razão do juízo que reforça a urgência.",
+      "feedbackWrong": {
+        "a": "O versículo não começa com contraste; começa com causa.",
+        "c": "Não é sequência com \"Então\"; é causa com \"Porque\"."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de causa em 2:4.",
+      "evidence": ["Sofonias 2:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Sofonias 2:3 a Isaías 55:6?",
+      "verseRef": "Sofonias 2:3",
+      "passageA": { "ref": "Sofonias 2:3" },
+      "passageB": { "ref": "Isaías 55:6" },
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor enquanto perto" },
+        { "id": "b", "text": "Adiar a busca sem risco" },
+        { "id": "c", "text": "Abrigo garantido a todos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Busquem ao Senhor, todos vocês, os mansos da terra",
+      "evidence": ["Sofonias 2:3", "Isaías 55:6"],
+      "feedbackCorrect": "Nos dois textos, há urgência: buscar o Senhor enquanto ainda é tempo.",
+      "feedbackWrong": {
+        "b": "Os dois textos pressionam a busca agora, não o adiamento.",
+        "c": "Sofonias fala em \"porventura\"; não há garantia universal."
+      },
+      "hint": "Compare o tempo da busca nos dois trechos.",
+      "learningObjective": "Relacionar a urgência de buscar o Senhor."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Sofonias 2:3–7 ensina que o juízo sobre as nações apaga qualquer futuro para o restante de Judá.",
+      "verseRef": "Sofonias 2:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Senhor, seu Deus, atentará para eles e lhes restituirá o que perderam",
+      "feedbackCorrect": "Depois do juízo, o restante de Judá pastará e será restituído.",
+      "feedbackWrong": { "true": "Releia 2:7: o Senhor atenta e restituirá o que perderam." },
+      "hint": "Veja o que acontece com o restante da casa de Judá.",
+      "learningObjective": "Interpretar juízo e restauração juntos.",
+      "evidence": ["Sofonias 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Sofonias 2:7, toque o trecho que mostra a restauração de Judá.",
+      "verseRef": "Sofonias 2:7",
+      "options": [
+        { "id": "a", "text": "casas de Ascalom" },
+        { "id": "b", "text": "restituirá" },
+        { "id": "c", "text": "ao entardecer" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lhes restituirá o que perderam",
+      "feedbackCorrect": "O Senhor atentará para eles e lhes restituirá o que perderam.",
+      "feedbackWrong": {
+        "a": "As casas de Ascalom são o lugar; a restauração está no verbo final.",
+        "c": "\"Ao entardecer\" marca tempo, não a restituição."
+      },
+      "hint": "Procure o verbo da ação do Senhor no fim.",
+      "learningObjective": "Sustentar com o texto a restituição de Judá.",
+      "evidence": ["Sofonias 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Sofonias 2:3–7 sustenta?",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor pode abrir abrigo; o juízo não anula a restauração" },
+        { "id": "b", "text": "O abrigo no dia da ira é garantido sem busca" },
+        { "id": "c", "text": "Só Judá é julgada; as nações ficam de fora" },
+        { "id": "d", "text": "Depois do juízo, nada resta para Judá" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porventura, vocês poderão encontrar abrigo no dia da ira do Senhor",
+      "feedbackCorrect": "A busca pode trazer abrigo, e 2:7 mostra restituição ao restante de Judá.",
+      "feedbackWrong": {
+        "b": "2:3 usa \"porventura\" após o chamado a buscar.",
+        "c": "2:4–5 julga as cidades filisteias.",
+        "d": "2:7 promete restituição ao restante de Judá."
+      },
+      "hint": "Una o \"porventura\" de 2:3 com a restituição de 2:7.",
+      "learningObjective": "Escolher a leitura que une busca, juízo e restauração.",
+      "evidence": ["Sofonias 2:3", "Sofonias 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio de buscar o Senhor que começa em Sofonias 2:3?",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "Sofonias chama a buscar o Senhor e a justiça" },
+        { "id": "b", "text": "Isaías manda buscar o Senhor enquanto está perto" },
+        { "id": "c", "text": "Amós une buscar o bem e amar a justiça" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Busquem ao Senhor, todos vocês, os mansos da terra",
+      "evidence": ["Sofonias 2:3", "Isaías 55:6", "Amós 5:14–15"],
+      "feedbackCorrect": "O chamado de Sofonias ecoa a urgência de Isaías e a justiça de Amós.",
+      "feedbackWrong": { "default": "Comece em Sofonias; depois Isaías e Amós." },
+      "hint": "Siga Sofonias, Isaías e Amós.",
+      "learningObjective": "Ver a busca ao Senhor como fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Sofonias 2:3, que verbo resume o chamado aos mansos?",
+      "verseRef": "Sofonias 2:3",
+      "options": [
+        { "id": "a", "text": "fujam" },
+        { "id": "b", "text": "busquem" },
+        { "id": "c", "text": "calem" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Busquem ao Senhor, todos vocês, os mansos da terra",
+      "feedbackCorrect": "O verbo que carrega a cena é \"busquem\": o Senhor, a justiça e a mansidão.",
+      "feedbackWrong": {
+        "a": "O texto não manda fugir; manda buscar.",
+        "c": "Não há ordem de silêncio aqui; há ordem de buscar."
+      },
+      "hint": "É o verbo repetido no versículo.",
+      "learningObjective": "Lembrar o termo teológico da busca.",
+      "evidence": ["Sofonias 2:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Sofonias 2:3 a Amós 5:14–15?",
+      "verseRef": "Sofonias 2:3",
+      "passageA": { "ref": "Sofonias 2:3" },
+      "passageB": { "ref": "Amós 5:14–15" },
+      "options": [
+        { "id": "a", "text": "Buscar o bem e a justiça" },
+        { "id": "b", "text": "Rejeitar a mansidão" },
+        { "id": "c", "text": "Adorar só em Gaza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "busquem a justiça, busquem a mansidão",
+      "evidence": ["Sofonias 2:3", "Amós 5:14–15"],
+      "feedbackCorrect": "Os dois profetas unem busca ao Senhor com a prática da justiça.",
+      "feedbackWrong": {
+        "b": "Sofonias manda buscar a mansidão, não rejeitá-la.",
+        "c": "Gaza aparece no juízo, não como centro de culto."
+      },
+      "hint": "Compare o que se deve buscar nos dois textos.",
+      "learningObjective": "Ligar a busca de justiça em Sofonias e Amós."
+    }
+  ]
+}

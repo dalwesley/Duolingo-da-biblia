@@ -1,0 +1,183 @@
+{
+  "slug": "esdras-cap",
+  "title": "Esdras",
+  "description": "Esdras capítulo a capítulo: a volta do exílio, a casa de Deus e a reforma do povo.",
+  "icon": "🧱",
+  "color": "#7A8E5A",
+  "order": 16,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Volta e oposição · cap. 1–6",
+      "icon": "zap",
+      "section": "Esdras",
+      "missions": [
+        {
+          "slug": "esc-01-o-povo-que-voltou",
+          "title": "O povo que voltou",
+          "subtitle": "Esdras 2:64–70",
+          "intro": "Depois do decreto, a lista termina com o número dos que voltaram e suas ofertas.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 2:64–70",
+          "hookVerse": "Toda esta congregação reunida era de quarenta e dois mil trezentos e sessenta. Além dos seus servos e servas, que eram sete mil trezentos e trinta e sete; contavam-se também duzentos e quarenta e cinco cantores e cantoras.",
+          "hookNote": "A congregação voltou do cativeiro e deu ofertas voluntárias para a casa de Deus.",
+          "centralInsight": "A congregação voltou do cativeiro e deu ofertas voluntárias para a casa de Deus.",
+          "objective": "Voltar e ofertar de vontade"
+        },
+        {
+          "slug": "esc-02-altar-e-alicerces",
+          "title": "Altar e alicerces",
+          "subtitle": "Esdras 3:1–9",
+          "intro": "O povo se reúne como um só homem, levanta o altar e começa a casa.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 3:1–9",
+          "hookVerse": "E aconteceu que, quando chegou o sétimo mês, e os filhos de Israel já estavam nas suas cidades, o povo se reuniu como um só homem em Jerusalém. E Jesua, filho de Jozadaque, e seus irmãos, os sacerdotes, e Zorobabel, filho de Sealtiel, e seus irmãos, ergueram o altar do Deus de Israel, para que sobre ele oferecessem holocaustos, conforme está escrito na Lei de Moisés, homem de Deus.",
+          "hookNote": "Edificaram o altar no seu lugar e ofereceram holocaustos, mesmo com medo dos povos.",
+          "centralInsight": "Edificaram o altar no seu lugar e ofereceram holocaustos, mesmo com medo dos povos.",
+          "objective": "Adorar apesar do medo"
+        },
+        {
+          "slug": "esc-03-o-povo-da-terra",
+          "title": "O povo da terra",
+          "subtitle": "Esdras 4:4–12",
+          "intro": "Vizinhos desanimam a obra e escrevem ao rei contra Jerusalém.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 4:4–12",
+          "hookVerse": "Então, o povo da terra desanimou os judeus inquietando-os na construção. E alugaram conselheiros contra eles, para frustrarem o seu plano, todos os dias de Ciro, rei da Pérsia, até o reinado de Dario, rei da Pérsia.",
+          "hookNote": "O povo da terra inquieta os judeus e trama para frustrar a construção da casa.",
+          "centralInsight": "O povo da terra inquieta os judeus e trama para frustrar a construção da casa.",
+          "objective": "Não desanimar na obra"
+        },
+        {
+          "slug": "esc-04-profetas-animam",
+          "title": "Profetas animam",
+          "subtitle": "Esdras 5:1–6",
+          "intro": "Ageu e Zacarias profetizam; Zorobabel e Jesua voltam a edificar.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 5:1–6",
+          "hookVerse": "E Ageu e Zacarias, filho de Ido, profetas, profetizaram aos judeus que estavam em Judá e em Jerusalém, em nome do Deus de Israel, cujo Espírito estava com eles. Então, se levantaram Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e começaram a edificar a Casa de Deus, a qual está em Jerusalém; e com eles os referidos profetas de Deus, que os ajudavam.",
+          "hookNote": "Pela palavra dos profetas, o povo se levanta e a boa mão de Deus está sobre a obra.",
+          "centralInsight": "Pela palavra dos profetas, o povo se levanta e a boa mão de Deus está sobre a obra.",
+          "objective": "Ouvir e edificar de novo"
+        },
+        {
+          "slug": "esc-05-casa-dedicada",
+          "title": "Casa dedicada",
+          "subtitle": "Esdras 6:13–22",
+          "intro": "Com a ordem de Dario, a casa é terminada e dedicada com alegria.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 6:13–22",
+          "hookVerse": "Então, Tatenai, o governador daquela região além do Eufrates, Setar-Bozenai e seus companheiros realizaram isso de forma pontual conforme a ordem do rei Dario. E os anciãos dos judeus continuavam a edificar e prosperar em decorrência do que haviam profetizado Ageu e Zacarias, filho de Iddo. Construíram a casa e a concluíram de acordo com o mandado do Deus de Israel e conforme o decreto de Ciro, Dario e Artaxerxes, reis da Pérsia.",
+          "hookNote": "Acabaram a casa por ordem do Deus de Israel e dos reis; celebraram com alegria a Páscoa.",
+          "centralInsight": "Acabaram a casa por ordem do Deus de Israel e dos reis; celebraram com alegria a Páscoa.",
+          "objective": "Terminar e celebrar"
+        },
+        {
+          "slug": "esc-boss-1",
+          "title": "Travessia: Volta e oposição",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a volta do povo, o altar, a oposição, os profetas e a dedicação da casa.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Volta e oposição",
+          "hookVerse": "Revise a volta do povo, o altar, a oposição, os profetas e a dedicação da casa.",
+          "hookNote": "Revise a volta do povo, o altar, a oposição, os profetas e a dedicação da casa.",
+          "centralInsight": "Deus traz o povo de volta e sustenta a obra até o fim",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Esdras e a reforma · cap. 7–10",
+      "icon": "zap",
+      "section": "Esdras",
+      "missions": [
+        {
+          "slug": "esc-06-mao-do-rei-e",
+          "title": "Mão do rei e de Deus",
+          "subtitle": "Esdras 7:16–24",
+          "intro": "A carta do rei manda prata, ouro e liberdade para o culto em Jerusalém.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 7:16–24",
+          "hookVerse": "E toda a prata e o ouro que você encontrar em toda a província da Babilônia, juntamente com as ofertas voluntárias do povo e dos sacerdotes, que forem oferecidas espontaneamente, para a casa do seu Deus, que se encontra em Jerusalém. Portanto, com este dinheiro, você diligentemente comprará novilhos, carneiros e cordeiros, juntamente com suas ofertas de manjares e libações, e os oferecerá sobre o altar da casa de seu Deus, que se encontra em Jerusalém.",
+          "hookNote": "Tudo o que o Deus do céu ordenar, fazei-o com diligência para a casa dele.",
+          "centralInsight": "Tudo o que o Deus do céu ordenar, fazei-o com diligência para a casa dele.",
+          "objective": "Servir a casa com diligência"
+        },
+        {
+          "slug": "esc-07-jejum-no-caminho",
+          "title": "Jejum no caminho",
+          "subtitle": "Esdras 8:21–30",
+          "intro": "Esdras proclama jejum junto ao rio e confia os utensílios aos sacerdotes.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 8:21–30",
+          "hookVerse": "Então, declarei ali um jejum junto ao rio Ahava para nos humilharmos diante do nosso Deus, a fim de lhe pedirmos uma jornada favorável para nós, para nossos filhos e para todos os nossos bens. Porque me envergonhei de pedir ao rei soldados e cavaleiros para nos defenderem do inimigo no caminho, pois já havíamos falado ao rei, afirmando: A boa mão do nosso Deus está sobre todos os que o buscam, para o seu bem; mas a sua força e a sua ira, contra todos os que o abandonam.",
+          "hookNote": "Jejuamos para buscar a Deus; a sua boa mão nos livrou no caminho.",
+          "centralInsight": "Jejuamos para buscar a Deus; a sua boa mão nos livrou no caminho.",
+          "objective": "Jejuar e confiar a Deus"
+        },
+        {
+          "slug": "esc-08-oracao-de-vergonha",
+          "title": "Oração de vergonha",
+          "subtitle": "Esdras 9:5–15",
+          "intro": "Esdras rasga as vestes e confessa a culpa do povo diante de Deus.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 9:5–15",
+          "hookVerse": "E, ao cair da tarde, levantei-me da minha humilhação após ter rasgado minhas vestes e meu manto e coloquei-me de joelhos estendendo minhas mãos ao SENHOR meu Deus. E disse: Meu Deus! Estou envergonhado e confuso por levantar a Ti a face, pois as nossas iniquidades se multiplicaram sobre a nossa cabeça, e a nossa culpa cresceu até aos céus.",
+          "hookNote": "Ó Deus meu, estou envergonhado: somos menos que as misericórdias que nos deste.",
+          "centralInsight": "Ó Deus meu, estou envergonhado: somos menos que as misericórdias que nos deste.",
+          "objective": "Confessar a culpa do povo"
+        },
+        {
+          "slug": "esc-09-pacto-de-reforma",
+          "title": "Pacto de reforma",
+          "subtitle": "Esdras 10:1–12",
+          "intro": "Enquanto Esdras ora, uma grande assembleia se une para pôr fora o pecado.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Esdras 10:1–12",
+          "hookVerse": "Enquanto Esdras orava e fazia confissão, chorando e prostrando-se diante da Casa de Deus, ajuntou-se a ele uma grande congregação de homens, mulheres e crianças; pois o povo chorava com grande choro. Então, Secanias, filho de Jeiel, um dos filhos de Elão, tomou a palavra e disse a Esdras: Temos transgredido contra o nosso Deus, pois nos temos casado com mulheres estrangeiras de outros povos, mas, a respeito disso, ainda há esperança para Israel.",
+          "hookNote": "Ainda há esperança: façamos aliança e apartemos das mulheres estrangeiras.",
+          "centralInsight": "Ainda há esperança: façamos aliança e apartemos das mulheres estrangeiras.",
+          "objective": "Apartar-se e reformar"
+        },
+        {
+          "slug": "esc-boss-2",
+          "title": "Travessia: Esdras e a reforma",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise a carta do rei, o jejum no caminho, a confissão e o pacto do povo.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Esdras e a reforma",
+          "hookVerse": "Revise a carta do rei, o jejum no caminho, a confissão e o pacto do povo.",
+          "hookNote": "Revise a carta do rei, o jejum no caminho, a confissão e o pacto do povo.",
+          "centralInsight": "A restauração da casa pede também um povo que se volta da culpa",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

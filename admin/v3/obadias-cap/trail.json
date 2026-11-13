@@ -1,0 +1,50 @@
+{
+  "slug": "obadias-cap",
+  "title": "Obadias",
+  "description": "Obadias capítulo a capítulo: o orgulho de Edom e o dia do Senhor.",
+  "icon": "🏔️",
+  "color": "#7A6B4F",
+  "order": 38,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Edom e o dia do Senhor · cap. 1",
+      "icon": "zap",
+      "section": "Obadias",
+      "missions": [
+        {
+          "slug": "obc-01-o-dia-do-senhor",
+          "title": "O dia do Senhor",
+          "subtitle": "Obadias 1:8–16",
+          "intro": "O Senhor anuncia juízo sobre Edom por causa da violência contra o irmão Jacó.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Obadias 1:8–16",
+          "hookVerse": "Não acontecerá, naquele dia, diz o Senhor, que farei perecer os sábios de Edom e a sabedoria do monte de Esaú? E os teus valentes, ó Temã, estarão atemorizados, e cada um que se encontra na montanha de Esaú será exterminado pela matança.",
+          "hookNote": "O dia do Senhor alcança as nações: como fizeram, assim será feito a elas.",
+          "centralInsight": "O dia do Senhor alcança as nações: como fizeram, assim será feito a elas.",
+          "objective": "Não se alegrar com a queda do irmão"
+        },
+        {
+          "slug": "obc-boss-1",
+          "title": "Travessia: Edom e o dia do Senhor",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o juízo sobre o orgulho de Edom e o dia do Senhor.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Edom e o dia do Senhor",
+          "hookVerse": "Revise o juízo sobre o orgulho de Edom e o dia do Senhor.",
+          "hookNote": "Revise o juízo sobre o orgulho de Edom e o dia do Senhor.",
+          "centralInsight": "Deus juíza o orgulho e a violência contra o irmão",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+{
+  "study": {
+    "slug": "jzc-05-cantico-de-debora",
+    "passageRef": "Juízes 5:1–11",
+    "passageText": "Naquele dia, Débora e Baraque, filho de Abinoam, cantaram, dizendo: Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor! Ouçam, reis, prestem atenção, príncipes: eu, eu mesma cantarei ao Senhor; salmodiarei ao Senhor, Deus de Israel. Senhor, ao sair de Seir e marchar do campo de Edom, a terra tremeu; os céus gotejaram, sim, até as nuvens derramaram águas. Os montes tremiam diante do Senhor, e até o Sinai se movia diante do Senhor, Deus de Israel. Nos dias de Samgar, filho de Anath, e nos dias de Jael, as caravanas cessaram; os viajantes tomavam caminhos tortuosos. As aldeias em Israel ficaram desertas até que eu, Débora, me levantei como mãe em Israel. Escolhiam deuses novos; então, a guerra estava às portas; não se via escudo nem lança entre quarenta mil em Israel. Meu coração se inclina para os líderes de Israel, que se ofereceram voluntariamente entre o povo; louvem ao SENHOR. Vós que cavalgais jumentas brancas, que vos assentais em juízo e que andais pelo caminho, falai disto. Dentre os locais onde se ouvem os estalos dos arqueiros, junto às fontes de água, ali se proclamam os atos de justiça do SENHOR, as justiças que Ele realizou em suas aldeias em Israel; então, o povo do SENHOR podia descer ao seu lar.",
+    "passages": [
+      {
+        "ref": "Juízes 5:1–11",
+        "text": "Naquele dia, Débora e Baraque, filho de Abinoam, cantaram, dizendo: Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor! Ouçam, reis, prestem atenção, príncipes: eu, eu mesma cantarei ao Senhor; salmodiarei ao Senhor, Deus de Israel. Senhor, ao sair de Seir e marchar do campo de Edom, a terra tremeu; os céus gotejaram, sim, até as nuvens derramaram águas. Os montes tremiam diante do Senhor, e até o Sinai se movia diante do Senhor, Deus de Israel. Nos dias de Samgar, filho de Anath, e nos dias de Jael, as caravanas cessaram; os viajantes tomavam caminhos tortuosos. As aldeias em Israel ficaram desertas até que eu, Débora, me levantei como mãe em Israel. Escolhiam deuses novos; então, a guerra estava às portas; não se via escudo nem lança entre quarenta mil em Israel. Meu coração se inclina para os líderes de Israel, que se ofereceram voluntariamente entre o povo; louvem ao SENHOR. Vós que cavalgais jumentas brancas, que vos assentais em juízo e que andais pelo caminho, falai disto. Dentre os locais onde se ouvem os estalos dos arqueiros, junto às fontes de água, ali se proclamam os atos de justiça do SENHOR, as justiças que Ele realizou em suas aldeias em Israel; então, o povo do SENHOR podia descer ao seu lar."
+      }
+    ],
+    "context": "Débora e Baraque cantam: líderes e povo se oferecem; o Senhor vem de Seir; Débora se levanta como mãe; proclamam-se as justiças do Senhor.",
+    "keyword": "ofereceu",
+    "keywordGloss": "Povo que se apresenta de bom grado ao Senhor.",
+    "focusQuestion": "Onde você precisa se oferecer de bom grado ao Senhor?",
+    "reflectionPrompts": [
+      "Bendizei",
+      "Mãe em Israel",
+      "Justiças do Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Débora e Baraque cantaram naquele dia.",
+        "evidenceRef": "Juízes 5:1",
+        "evidenceSpan": "Débora e Baraque, filho de Abinoam, cantaram"
+      },
+      {
+        "text": "O povo se ofereceu de bom grado.",
+        "evidenceRef": "Juízes 5:2",
+        "evidenceSpan": "o povo se ofereceu de bom grado"
+      },
+      {
+        "text": "Os montes tremiam diante do Senhor.",
+        "evidenceRef": "Juízes 5:5",
+        "evidenceSpan": "Os montes tremiam diante do Senhor"
+      },
+      {
+        "text": "Débora se levantou como mãe em Israel.",
+        "evidenceRef": "Juízes 5:7",
+        "evidenceSpan": "me levantei como mãe em Israel"
+      },
+      {
+        "text": "Líderes se ofereceram voluntariamente.",
+        "evidenceRef": "Juízes 5:9",
+        "evidenceSpan": "que se ofereceram voluntariamente entre o povo"
+      },
+      {
+        "text": "Proclamam-se os atos de justiça do Senhor.",
+        "evidenceRef": "Juízes 5:11",
+        "evidenceSpan": "ali se proclamam os atos de justiça do SENHOR"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Bendizei",
+        "gloss": "Chamado a louvar o Senhor pelo livramento."
+      },
+      {
+        "term": "mãe em Israel",
+        "gloss": "Papel de Débora no levantar do povo."
+      },
+      {
+        "term": "justiças",
+        "gloss": "Atos do Senhor proclamados junto às fontes."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cântico e oferta do povo",
+        "evidenceRef": "Juízes 5:1–3"
+      },
+      {
+        "label": "Teofania e dias difíceis",
+        "evidenceRef": "Juízes 5:4–8"
+      },
+      {
+        "label": "Líderes e justiças proclamadas",
+        "evidenceRef": "Juízes 5:9–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Por isso líderes e povo; bendizei.",
+        "marker": "Por isso",
+        "evidenceRef": "Juízes 5:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "Escolhiam deuses; então guerra às portas.",
+        "marker": "então",
+        "evidenceRef": "Juízes 5:8"
+      },
+      {
+        "kind": "sequência",
+        "text": "Proclamam justiças; então o povo desce ao lar.",
+        "marker": "então",
+        "evidenceRef": "Juízes 5:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 15:1",
+        "bridge": "Cântico após o livramento",
+        "text": "Então, Moisés e os filhos de Israel entoaram este cântico ao Senhor, e disseram: Cantarei ao Senhor, porque triunfou gloriosamente; lançou no mar o cavalo e o seu cavaleiro."
+      },
+      {
+        "ref": "Salmos 68:7–8",
+        "bridge": "Senhor sai e terra treme",
+        "text": "Ó Deus, quando saías à frente do teu povo, ao avançares pelo deserto, (selá). A terra tremeu e os céus gotejaram diante de Deus; até o próprio Sinai se abalou na presença do Senhor, o Deus de Israel."
+      },
+      {
+        "ref": "Romanos 12:1",
+        "bridge": "Oferecer-se a Deus",
+        "text": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O cântico ignora o Senhor.",
+        "why": "Bendizei ao Senhor abre o canto."
+      },
+      {
+        "text": "Débora não tem papel no livramento.",
+        "why": "Levanta-se como mãe em Israel."
+      },
+      {
+        "text": "Não há justiças a proclamar.",
+        "why": "Proclamam-se junto às fontes."
+      }
+    ],
+    "centralInsight": "Bendizei o Senhor: quando o povo se oferece, há livramento e justiça nas portas.",
+    "anchorQuestion": "Segundo Juízes 5:2, o que o povo fez de bom grado?",
+    "relatedVerses": [
+      {
+        "reference": "Êxodo 15:1",
+        "reason": "Cântico após o livramento"
+      },
+      {
+        "reference": "Salmos 68:7–8",
+        "reason": "Senhor sai e terra treme"
+      },
+      {
+        "reference": "Romanos 12:1",
+        "reason": "Oferecer-se a Deus"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "juizes-cap-sem-jzc-05-cantico-de-debora-01",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Juízes 5:2, o povo se ofereceu de bom grado.",
+      "prompt": "Em Juízes 5:2, o povo se ofereceu de bom grado.",
+      "cue": "Em Juízes 5:2, o povo se ofereceu de bom grado.",
+      "verseRef": "Juízes 5:2",
+      "passageText": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "o povo se ofereceu de bom grado",
+      "feedbackCorrect": "Oferta do povo.",
+      "feedbackWrong": {
+        "false": "O texto afirma a oferta."
+      },
+      "hint": "Veja o povo.",
+      "learningObjective": "Observar a oferta.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-05-cantico-de-debora-02",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Juízes 5:7, toque o papel de Débora.",
+      "prompt": "Em Juízes 5:7, toque o papel de Débora.",
+      "cue": "Em Juízes 5:7, toque o papel de Débora.",
+      "verseRef": "Juízes 5:7",
+      "passageText": "As aldeias em Israel ficaram desertas até que eu, Débora, me levantei como mãe em Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mãe em Israel"
+        },
+        {
+          "id": "b",
+          "text": "aldeias"
+        },
+        {
+          "id": "c",
+          "text": "Débora"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "me levantei como mãe em Israel",
+      "feedbackCorrect": "Mãe em Israel.",
+      "feedbackWrong": {
+        "b": "Aldeias ficaram desertas.",
+        "c": "Débora é quem fala."
+      },
+      "hint": "Veja a comparação.",
+      "learningObjective": "Identificar o papel.",
+      "evidence": [
+        "Juízes 5:7"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-05-cantico-de-debora-03",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Juízes 5:1, quem cantou?",
+      "prompt": "Segundo Juízes 5:1, quem cantou?",
+      "cue": "Segundo Juízes 5:1, quem cantou?",
+      "verseRef": "Juízes 5:1",
+      "passageText": "Naquele dia, Débora e Baraque, filho de Abinoam, cantaram, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Débora e Baraque"
+        },
+        {
+          "id": "b",
+          "text": "Só Sísera"
+        },
+        {
+          "id": "c",
+          "text": "Só Jael"
+        },
+        {
+          "id": "d",
+          "text": "Só Jabim"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Débora e Baraque, filho de Abinoam, cantaram",
+      "feedbackCorrect": "Débora e Baraque.",
+      "feedbackWrong": {
+        "b": "Não é Sísera.",
+        "c": "Não é só Jael.",
+        "d": "Não é Jabim."
+      },
+      "hint": "Leia os sujeitos.",
+      "learningObjective": "Reconhecer os cantores.",
+      "evidence": [
+        "Juízes 5:1"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-05-cantico-de-debora-04",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Juízes 5:2 na ordem do texto.",
+      "prompt": "Monte Juízes 5:2 na ordem do texto.",
+      "cue": "Monte Juízes 5:2 na ordem do texto.",
+      "verseRef": "Juízes 5:2",
+      "passageText": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!",
+      "options": [
+        {
+          "id": "a",
+          "text": "os líderes tomaram a dianteira em Israel"
+        },
+        {
+          "id": "b",
+          "text": "o povo se ofereceu de bom grado"
+        },
+        {
+          "id": "c",
+          "text": "Bendizei ao Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Bendizei ao Senhor",
+      "feedbackCorrect": "Líderes, povo e louvor.",
+      "feedbackWrong": {
+        "default": "Comece pelos líderes."
+      },
+      "hint": "O que fecha o verso?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-05-cantico-de-debora-05",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Juízes 5:11, complete: ali se proclamam os atos de ___ do SENHOR.",
+      "prompt": "Em Juízes 5:11, complete: ali se proclamam os atos de ___ do SENHOR.",
+      "cue": "Em Juízes 5:11, complete: ali se proclamam os atos de ___ do SENHOR.",
+      "verseRef": "Juízes 5:11",
+      "passageText": "Dentre os locais onde se ouvem os estalos dos arqueiros, junto às fontes de água, ali se proclamam os atos de justiça do SENHOR, as justiças que Ele realizou em suas aldeias em Israel; então, o povo do SENHOR podia descer ao seu lar.",
+      "template": "Dentre os locais onde se ouvem os estalos dos arqueiros, junto às fontes de água, ali se proclamam os atos de ___ do SENHOR, as justiças que Ele realizou em suas aldeias em Israel; então, o povo do SENHOR podia descer ao seu lar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "justiça"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "os atos de justiça do SENHOR",
+      "feedbackCorrect": "Justiça.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "Não é medo."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar justiça.",
+      "evidence": [
+        "Juízes 5:11"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-05-cantico-de-debora-06",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Juízes 5:5 comunica que se liga a este contexto?",
+      "prompt": "O que Juízes 5:5 comunica que se liga a este contexto?",
+      "cue": "O que Juízes 5:5 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 5:5",
+      "passageText": "Os montes tremiam diante do Senhor, e até o Sinai se movia diante do Senhor, Deus de Israel.",
+      "passageA": {
+        "ref": "Juízes 5:5",
+        "text": "Os montes tremiam diante do Senhor, e até o Sinai se movia diante do Senhor, Deus de Israel."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O cântico celebra a presença poderosa do Senhor que faz tremer os montes."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Montes diante do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Povo sem louvor"
+        },
+        {
+          "id": "c",
+          "text": "Sísera no trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Os montes tremiam diante do Senhor",
+      "feedbackCorrect": "Teofania.",
+      "feedbackWrong": {
+        "b": "Há louvor.",
+        "c": "Sísera caiu."
+      },
+      "hint": "O que tremia?",
+      "learningObjective": "Ligar teofania e cântico.",
+      "evidence": [
+        "Juízes 5:5"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-05-cantico-de-debora-01",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Juízes 5:2, líderes e povo se oferecem; por isso bendizei ao Senhor.",
+      "prompt": "Em Juízes 5:2, líderes e povo se oferecem; por isso bendizei ao Senhor.",
+      "cue": "Em Juízes 5:2, líderes e povo se oferecem; por isso bendizei ao Senhor.",
+      "verseRef": "Juízes 5:2",
+      "passageText": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Por isso, os líderes tomaram a dianteira",
+      "feedbackCorrect": "Oferta e louvor.",
+      "feedbackWrong": {
+        "false": "O Por isso abre o verso."
+      },
+      "hint": "Leia o Por isso.",
+      "learningObjective": "Ver a causa do louvor.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-05-cantico-de-debora-02",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Juízes 5:2, toque o marcador de causa.",
+      "prompt": "Em Juízes 5:2, toque o marcador de causa.",
+      "cue": "Em Juízes 5:2, toque o marcador de causa.",
+      "verseRef": "Juízes 5:2",
+      "passageText": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso"
+        },
+        {
+          "id": "b",
+          "text": "líderes"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Por isso, os líderes tomaram a dianteira",
+      "feedbackCorrect": "Por isso.",
+      "feedbackWrong": {
+        "b": "Líderes agem.",
+        "c": "Povo se oferece."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-05-cantico-de-debora-03",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação Juízes 5:8 faz?",
+      "prompt": "Que relação Juízes 5:8 faz?",
+      "cue": "Que relação Juízes 5:8 faz?",
+      "verseRef": "Juízes 5:8",
+      "passageText": "Escolhiam deuses novos; então, a guerra estava às portas; não se via escudo nem lança entre quarenta mil em Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deuses novos; então guerra às portas"
+        },
+        {
+          "id": "b",
+          "text": "Fidelidade; então paz total"
+        },
+        {
+          "id": "c",
+          "text": "Sem deuses; então escudos"
+        },
+        {
+          "id": "d",
+          "text": "Louvor; então Sísera reina"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Escolhiam deuses novos; então, a guerra estava às portas",
+      "feedbackCorrect": "Deuses e guerra.",
+      "feedbackWrong": {
+        "b": "Há guerra.",
+        "c": "Há falta de armas.",
+        "d": "Sísera cai."
+      },
+      "hint": "Leia o então.",
+      "learningObjective": "Compreender a sequência.",
+      "evidence": [
+        "Juízes 5:8"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-05-cantico-de-debora-04",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos do cântico.",
+      "prompt": "Ordene os movimentos do cântico.",
+      "cue": "Ordene os movimentos do cântico.",
+      "verseRef": "Juízes 5:1",
+      "passageText": "Naquele dia, Débora e Baraque, filho de Abinoam, cantaram, dizendo:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cântico e oferta do povo"
+        },
+        {
+          "id": "b",
+          "text": "Teofania e dias difíceis"
+        },
+        {
+          "id": "c",
+          "text": "Líderes e justiças proclamadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Débora e Baraque, filho de Abinoam, cantaram",
+      "feedbackCorrect": "Canto, teofania e justiças.",
+      "feedbackWrong": {
+        "default": "Comece pelo cântico."
+      },
+      "hint": "O que fecha com justiças?",
+      "learningObjective": "Ordenar o cântico",
+      "evidence": [
+        "Juízes 5:1",
+        "Juízes 5:11"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-05-cantico-de-debora-05",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Juízes 5:9, complete: que se ofereceram ___ entre o povo.",
+      "prompt": "Em Juízes 5:9, complete: que se ofereceram ___ entre o povo.",
+      "cue": "Em Juízes 5:9, complete: que se ofereceram ___ entre o povo.",
+      "verseRef": "Juízes 5:9",
+      "passageText": "Meu coração se inclina para os líderes de Israel, que se ofereceram voluntariamente entre o povo; louvem ao SENHOR.",
+      "template": "Meu coração se inclina para os líderes de Israel, que se ofereceram ___ entre o povo; louvem ao SENHOR.",
+      "options": [
+        {
+          "id": "a",
+          "text": "voluntariamente"
+        },
+        {
+          "id": "b",
+          "text": "à força"
+        },
+        {
+          "id": "c",
+          "text": "em silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "que se ofereceram voluntariamente entre o povo",
+      "feedbackCorrect": "Voluntariamente.",
+      "feedbackWrong": {
+        "b": "Não é à força.",
+        "c": "Não é em silêncio."
+      },
+      "hint": "Veja o advérbio.",
+      "learningObjective": "Lembrar voluntariamente.",
+      "evidence": [
+        "Juízes 5:9"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-05-cantico-de-debora-06",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Juízes 5:1 a Êxodo 15:1?",
+      "prompt": "O que liga Juízes 5:1 a Êxodo 15:1?",
+      "cue": "O que liga Juízes 5:1 a Êxodo 15:1?",
+      "verseRef": "Juízes 5:1",
+      "passageText": "Naquele dia, Débora e Baraque, filho de Abinoam, cantaram, dizendo:",
+      "passageA": {
+        "ref": "Juízes 5:1",
+        "text": "Naquele dia, Débora e Baraque, filho de Abinoam, cantaram, dizendo:"
+      },
+      "passageB": {
+        "ref": "Êxodo 15:1",
+        "text": "Então, Moisés e os filhos de Israel entoaram este cântico ao Senhor, e disseram: Cantarei ao Senhor, porque triunfou gloriosamente; lançou no mar o cavalo e o seu cavaleiro."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cântico após o livramento"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio após a guerra"
+        },
+        {
+          "id": "c",
+          "text": "Lamento sem causa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Débora e Baraque, filho de Abinoam, cantaram",
+      "feedbackCorrect": "Cântico de vitória.",
+      "feedbackWrong": {
+        "b": "Há canto.",
+        "c": "Há causa."
+      },
+      "hint": "Compare o cântico.",
+      "learningObjective": "Ligar ao Êxodo.",
+      "evidence": [
+        "Juízes 5:1",
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-05-cantico-de-debora-01",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Juízes 5:7, Débora se apresenta como espectadora sem papel no livramento.",
+      "prompt": "Em Juízes 5:7, Débora se apresenta como espectadora sem papel no livramento.",
+      "cue": "Em Juízes 5:7, Débora se apresenta como espectadora sem papel no livramento.",
+      "verseRef": "Juízes 5:7",
+      "passageText": "As aldeias em Israel ficaram desertas até que eu, Débora, me levantei como mãe em Israel.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "me levantei como mãe em Israel",
+      "feedbackCorrect": "Ela se levanta.",
+      "feedbackWrong": {
+        "true": "Mãe em Israel."
+      },
+      "hint": "Leia o papel.",
+      "learningObjective": "Avaliar o papel de Débora.",
+      "evidence": [
+        "Juízes 5:7"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-05-cantico-de-debora-02",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Juízes 5:11, toque o que se proclama.",
+      "prompt": "Em Juízes 5:11, toque o que se proclama.",
+      "cue": "Em Juízes 5:11, toque o que se proclama.",
+      "verseRef": "Juízes 5:10–11",
+      "passageText": "Vós que cavalgais jumentas brancas, que vos assentais em juízo e que andais pelo caminho, falai disto. Dentre os locais onde se ouvem os estalos dos arqueiros, junto às fontes de água, ali se proclamam os atos de justiça do SENHOR, as justiças que Ele realizou em suas aldeias em Israel; então, o povo do SENHOR podia descer ao seu lar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "atos de justiça"
+        },
+        {
+          "id": "b",
+          "text": "estalos"
+        },
+        {
+          "id": "c",
+          "text": "jumentas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "ali se proclamam os atos de justiça do SENHOR",
+      "feedbackCorrect": "Atos de justiça.",
+      "feedbackWrong": {
+        "b": "Estalos situam o lugar.",
+        "c": "Jumentas são outro verso."
+      },
+      "hint": "Veja o que se proclama.",
+      "learningObjective": "Tocar as justiças.",
+      "evidence": [
+        "Juízes 5:11"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-05-cantico-de-debora-03",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Qual leitura melhor une oferta do povo e louvor?",
+      "prompt": "Qual leitura melhor une oferta do povo e louvor?",
+      "cue": "Qual leitura melhor une oferta do povo e louvor?",
+      "verseRef": "Juízes 5:2",
+      "passageText": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quando o povo se oferece, bendizei ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Oferta dispensa o louvor"
+        },
+        {
+          "id": "c",
+          "text": "Só reis devem cantar"
+        },
+        {
+          "id": "d",
+          "text": "Sem líderes não há pecado"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o povo se ofereceu de bom grado. Bendizei ao Senhor",
+      "feedbackCorrect": "Oferta e bendizei.",
+      "feedbackWrong": {
+        "b": "Há louvor.",
+        "c": "Há povo.",
+        "d": "Há líderes."
+      },
+      "hint": "Una oferta e bendizei.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-05-cantico-de-debora-04",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene o encadeamento do louvor.",
+      "prompt": "Ordene o encadeamento do louvor.",
+      "cue": "Ordene o encadeamento do louvor.",
+      "verseRef": "Juízes 5:11",
+      "passageText": "Dentre os locais onde se ouvem os estalos dos arqueiros, junto às fontes de água, ali se proclamam os atos de justiça do SENHOR, as justiças que Ele realizou em suas aldeias em Israel; então, o povo do SENHOR podia descer ao seu lar.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo se oferece"
+        },
+        {
+          "id": "b",
+          "text": "Débora se levanta"
+        },
+        {
+          "id": "c",
+          "text": "Justiças são proclamadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "ali se proclamam os atos de justiça do SENHOR",
+      "feedbackCorrect": "Oferta, mãe e justiças.",
+      "feedbackWrong": {
+        "default": "Comece pela oferta."
+      },
+      "hint": "O que se proclama?",
+      "learningObjective": "Encadear o louvor",
+      "evidence": [
+        "Juízes 5:2",
+        "Juízes 5:11"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-05-cantico-de-debora-05",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Juízes 5:5, complete: Os montes tremiam diante do ___.",
+      "prompt": "Em Juízes 5:5, complete: Os montes tremiam diante do ___.",
+      "cue": "Em Juízes 5:5, complete: Os montes tremiam diante do ___.",
+      "verseRef": "Juízes 5:5",
+      "passageText": "Os montes tremiam diante do Senhor, e até o Sinai se movia diante do Senhor, Deus de Israel.",
+      "template": "Os montes tremiam diante do ___, e até o Sinai se movia diante do Senhor, Deus de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Os montes tremiam diante do Senhor",
+      "feedbackCorrect": "Senhor.",
+      "feedbackWrong": {
+        "b": "Não é o rei.",
+        "c": "Não é o povo."
+      },
+      "hint": "Veja perante quem.",
+      "learningObjective": "Lembrar o Senhor.",
+      "evidence": [
+        "Juízes 5:5"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-05-cantico-de-debora-06",
+      "trail": "juizes-cap",
+      "section": "jzc-05-cantico-de-debora",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Juízes 5:2 a Romanos 12:1?",
+      "prompt": "O que liga Juízes 5:2 a Romanos 12:1?",
+      "cue": "O que liga Juízes 5:2 a Romanos 12:1?",
+      "verseRef": "Juízes 5:2",
+      "passageText": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!",
+      "passageA": {
+        "ref": "Juízes 5:2",
+        "text": "Por isso, os líderes tomaram a dianteira em Israel, e o povo se ofereceu de bom grado. Bendizei ao Senhor!"
+      },
+      "passageB": {
+        "ref": "Romanos 12:1",
+        "text": "Rogo a vocês, irmãos, pelas misericórdias de Deus, que apresentem os seus corpos como sacrifício vivo, santo e aceitável a Deus, que é o seu culto racional."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oferecer-se a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Calar o louvor"
+        },
+        {
+          "id": "c",
+          "text": "Servir a Baal"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o povo se ofereceu de bom grado",
+      "feedbackCorrect": "Oferta.",
+      "feedbackWrong": {
+        "b": "Há louvor.",
+        "c": "Não é Baal."
+      },
+      "hint": "Compare a oferta.",
+      "learningObjective": "Ligar a Romanos.",
+      "evidence": [
+        "Juízes 5:2",
+        "Romanos 12:1"
+      ]
+    }
+  ]
+}

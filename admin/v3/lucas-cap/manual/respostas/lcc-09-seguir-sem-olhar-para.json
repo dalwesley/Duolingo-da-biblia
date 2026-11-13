@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Lucas 9:57–62",
+    "passages": [
+      {
+        "ref": "Lucas 9:57–62"
+      }
+    ],
+    "context": "Jesus vai pelo caminho com os discípulos. Três pessoas falam em acompanhá-lo. Uma oferece ir a qualquer lugar. As outras duas pedem para tratar de um assunto de família antes.",
+    "keyword": "seguir",
+    "keywordGloss": "No relato, seguir é partir com Jesus na hora, sem pôr outra tarefa na frente.",
+    "focusQuestion": "O que você ainda quer resolver antes de seguir Jesus?",
+    "reflectionPrompts": [
+      "Sem lugar para reclinar",
+      "O pedido de ir primeiro",
+      "A mão no arado"
+    ],
+    "facts": [
+      {
+        "text": "Um homem diz que seguirá Jesus para onde quer que ele vá.",
+        "evidenceRef": "Lucas 9:57",
+        "evidenceSpan": "eu te seguirei para onde quer que vás"
+      },
+      {
+        "text": "Jesus diz que o Filho do Homem não tem onde reclinar a cabeça.",
+        "evidenceRef": "Lucas 9:58",
+        "evidenceSpan": "o Filho do Homem não tem onde reclinar a cabeça"
+      },
+      {
+        "text": "Outro homem pede para sepultar o pai antes de seguir.",
+        "evidenceRef": "Lucas 9:59",
+        "evidenceSpan": "permite-me que eu vá primeiro sepultar meu pai"
+      },
+      {
+        "text": "Jesus manda esse homem ir e anunciar o reino de Deus.",
+        "evidenceRef": "Lucas 9:60",
+        "evidenceSpan": "vai e anuncia o reino de Deus"
+      },
+      {
+        "text": "Um terceiro pede para despedir-se da família antes de seguir.",
+        "evidenceRef": "Lucas 9:61",
+        "evidenceSpan": "permite-me primeiro despedir-me dos que são da minha família"
+      },
+      {
+        "text": "Jesus diz que ninguém com a mão no arado que olha para trás é apto para o Reino de Deus.",
+        "evidenceRef": "Lucas 9:62",
+        "evidenceSpan": "Ninguém que, ao colocar a mão no arado, olha para trás é apto para o Reino de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "seguirei",
+        "gloss": "Oferta dita em voz alta: a pessoa afirma que irá com Jesus, ainda sem ter partido."
+      },
+      {
+        "term": "arado",
+        "gloss": "Imagem do trabalho já começado, do qual o olhar não deve voltar."
+      },
+      {
+        "term": "apto",
+        "gloss": "Condição para o Reino que Jesus nega a quem olha para trás."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Um homem oferece seguir a qualquer lugar",
+        "evidenceRef": "Lucas 9:57"
+      },
+      {
+        "label": "Dois pedem licença para resolver antes",
+        "evidenceRef": "Lucas 9:59–61"
+      },
+      {
+        "label": "Olhar para trás tira a aptidão",
+        "evidenceRef": "Lucas 9:62"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Raposas e aves têm onde ficar, mas o Filho do Homem não tem onde reclinar a cabeça.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 9:58"
+      },
+      {
+        "kind": "contraste",
+        "text": "O homem quer ir sepultar primeiro, porém Jesus o manda anunciar o reino.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 9:60"
+      },
+      {
+        "kind": "resultado",
+        "text": "Colocar a mão no arado e olhar para trás deixa a pessoa fora da aptidão para o Reino de Deus.",
+        "marker": null,
+        "evidenceRef": "Lucas 9:62"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 8:20",
+        "bridge": "Filho do Homem sem abrigo"
+      },
+      {
+        "ref": "Lucas 14:33",
+        "bridge": "Discipulado exige renúncia"
+      },
+      {
+        "ref": "Lucas 9:23",
+        "bridge": "Seguir custa negar-se"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A imagem do arado só descreve o trabalho no campo, sem falar de seguir.",
+        "why": "Jesus diz isso a quem pede despedir-se primeiro. O arado responde ao adiamento, não a uma aula de lavoura."
+      },
+      {
+        "text": "Despedir-se da família primeiro é o que torna a pessoa apta para o Reino.",
+        "why": "O homem pede a despedida, e Jesus responde que quem olha para trás não é apto."
+      },
+      {
+        "text": "Quem olha para trás continua apto, desde que a intenção de seguir seja sincera.",
+        "why": "O texto não abre essa exceção. Diz que ninguém nessa condição é apto para o Reino de Deus."
+      }
+    ],
+    "centralInsight": "Seguir Jesus não espera o momento ideal: quem põe a mão no arado não olha para trás.",
+    "anchorQuestion": "O que Jesus afirma sobre quem coloca a mão no arado e olha para trás?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 9:59, Jesus pede ao homem que vá primeiro sepultar o pai.",
+      "verseRef": "Lucas 9:59",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas ele respondeu: Senhor, permite-me que eu vá primeiro sepultar meu pai",
+      "feedbackCorrect": "O pedido de sepultar primeiro sai do homem. Jesus tinha dito Segue-me.",
+      "feedbackWrong": {
+        "true": "Quem pede licença para sepultar o pai é o homem, na resposta dele."
+      },
+      "hint": "Veja quem fala logo depois de Segue-me.",
+      "learningObjective": "Observar que o pedido de sepultar o pai parte do homem, não de Jesus.",
+      "evidence": [
+        "Lucas 9:59"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 9:57, toque quem oferece seguir para qualquer lugar.",
+      "verseRef": "Lucas 9:57",
+      "options": [
+        {
+          "id": "a",
+          "text": "um homem"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "eles"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um homem lhe disse: Senhor, eu te seguirei",
+      "feedbackCorrect": "Quem toma a palavra e oferece seguir é um homem no caminho.",
+      "feedbackWrong": {
+        "b": "Senhor é o tratamento dirigido a Jesus, não quem faz a oferta.",
+        "c": "Eles são o grupo que caminhava. Quem fala é outra pessoa."
+      },
+      "hint": "Procure quem toma a palavra no meio do versículo.",
+      "learningObjective": "Identificar quem oferece seguir Jesus no caminho.",
+      "evidence": [
+        "Lucas 9:57"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 9:58, o que Jesus diz sobre o Filho do Homem?",
+      "verseRef": "Lucas 9:58",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele tem covil como as raposas"
+        },
+        {
+          "id": "b",
+          "text": "Ele tem ninho como as aves"
+        },
+        {
+          "id": "c",
+          "text": "Ele não tem onde reclinar a cabeça"
+        },
+        {
+          "id": "d",
+          "text": "Ele pede licença para o enterro"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o Filho do Homem não tem onde reclinar a cabeça",
+      "feedbackCorrect": "Jesus diz que o Filho do Homem não tem onde reclinar a cabeça.",
+      "feedbackWrong": {
+        "a": "Os covis são das raposas, citados como contraste, não como bem dele.",
+        "b": "Os ninhos são das aves. O Filho do Homem fica sem lugar assim.",
+        "d": "O enterro do pai surge no diálogo seguinte, com outra pessoa."
+      },
+      "hint": "Leia o que vem depois da comparação com os animais.",
+      "learningObjective": "Observar o que Jesus diz que falta ao Filho do Homem.",
+      "evidence": [
+        "Lucas 9:58"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 9:62 na ordem do texto.",
+      "verseRef": "Lucas 9:62",
+      "options": [
+        {
+          "id": "a",
+          "text": "ao colocar a mão no arado"
+        },
+        {
+          "id": "b",
+          "text": "olha para trás"
+        },
+        {
+          "id": "c",
+          "text": "é apto para o Reino de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ao colocar a mão no arado, olha para trás é apto para o Reino de Deus",
+      "feedbackCorrect": "A frase vai da mão no arado ao olhar para trás e, então, à aptidão.",
+      "feedbackWrong": {
+        "default": "Siga o versículo: primeiro a mão no arado, depois o olhar, no fim a aptidão."
+      },
+      "hint": "A imagem começa pelo gesto com a mão.",
+      "learningObjective": "Reconhecer a sequência da frase de Jesus em Lucas 9:62.",
+      "evidence": [
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 9:62, em que a pessoa coloca a mão?",
+      "verseRef": "Lucas 9:62",
+      "options": [
+        {
+          "id": "a",
+          "text": "ninho"
+        },
+        {
+          "id": "b",
+          "text": "arado"
+        },
+        {
+          "id": "c",
+          "text": "covil"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ao colocar a mão no arado",
+      "feedbackCorrect": "A mão vai ao arado. Essa imagem fecha a resposta de Jesus.",
+      "feedbackWrong": {
+        "a": "Ninho aparece com as aves, em outro versículo. Aqui a mão vai ao arado.",
+        "c": "Covil é das raposas, no versículo anterior. Não é onde a mão é posta."
+      },
+      "hint": "Veja o objeto nomeado depois da mão.",
+      "learningObjective": "Lembrar a imagem concreta com que Jesus fecha o diálogo.",
+      "evidence": [
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 9:57 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 9:57",
+      "passageA": {
+        "ref": "Lucas 9:57"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No caminho, um homem oferece seguir Jesus para onde ele for."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oferta de seguir Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Falta de um abrigo"
+        },
+        {
+          "id": "c",
+          "text": "Pedido de despedida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te seguirei para onde quer que vás",
+      "feedbackCorrect": "O homem se oferece para seguir Jesus a qualquer lugar do caminho.",
+      "feedbackWrong": {
+        "b": "A falta de abrigo vem na resposta de Jesus, no versículo seguinte.",
+        "c": "A despedida aparece mais adiante, na fala de outra pessoa."
+      },
+      "hint": "Leia o que o homem promete fazer.",
+      "learningObjective": "Ligar a fala de Lucas 9:57 à oferta de seguir no caminho.",
+      "evidence": [
+        "Lucas 9:57"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 9:58, o texto contrapõe o lugar dos animais à falta de lugar do Filho do Homem.",
+      "verseRef": "Lucas 9:58",
+      "correctOptionId": "true",
+      "evidenceSpan": "mas o Filho do Homem não tem onde reclinar a cabeça",
+      "feedbackCorrect": "O mas marca o contraste: animais têm abrigo, o Filho do Homem não tem onde reclinar a cabeça.",
+      "feedbackWrong": {
+        "false": "Releia o mas: covis e ninhos ficam com os animais, não com o Filho do Homem."
+      },
+      "hint": "Repare na palavra curta que vira a comparação.",
+      "learningObjective": "Compreender o contraste entre o abrigo dos animais e a falta de lugar do Filho do Homem.",
+      "evidence": [
+        "Lucas 9:58"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 9:60, toque a palavra que marca o contraste na ordem de Jesus.",
+      "verseRef": "Lucas 9:60",
+      "options": [
+        {
+          "id": "a",
+          "text": "mortos"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "Deixa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tu, porém, vai e anuncia o reino de Deus",
+      "feedbackCorrect": "Porém vira a frase: os mortos sepultam os mortos, e este homem deve anunciar o reino.",
+      "feedbackWrong": {
+        "a": "Mortos nomeia quem sepulta. O contraste da ordem aparece na palavra seguinte.",
+        "c": "Deixa abre o mandamento. A virada entre as duas tarefas vem depois."
+      },
+      "hint": "Busque a palavra entre vírgulas, depois de tu.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na ordem de Jesus.",
+      "evidence": [
+        "Lucas 9:60"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Lucas 9:60 estabelece com o pedido de ir primeiro?",
+      "verseRef": "Lucas 9:59–60",
+      "options": [
+        {
+          "id": "a",
+          "text": "O anúncio do reino toma o lugar do adiamento"
+        },
+        {
+          "id": "b",
+          "text": "O sepultamento fica antes do chamado"
+        },
+        {
+          "id": "c",
+          "text": "A família deve ir junto no trajeto"
+        },
+        {
+          "id": "d",
+          "text": "Jesus aceita o pedido e aguarda a volta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tu, porém, vai e anuncia o reino de Deus",
+      "feedbackCorrect": "Jesus não aceita ir primeiro. Manda anunciar o reino no lugar do adiamento.",
+      "feedbackWrong": {
+        "b": "O texto não põe o enterro antes. Jesus desvia o homem para o anúncio.",
+        "c": "Nada indica que a família deva ir junto. A ordem é para este homem.",
+        "d": "Jesus não diz que espera a volta. A resposta troca o primeiro passo."
+      },
+      "hint": "Observe o que Jesus manda fazer na segunda parte da frase.",
+      "learningObjective": "Relacionar o pedido de ir primeiro com a ordem de anunciar o reino.",
+      "evidence": [
+        "Lucas 9:59–60"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Lucas 9:57–62?",
+      "verseRef": "Lucas 9:57–58",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um homem oferece seguir a qualquer lugar"
+        },
+        {
+          "id": "b",
+          "text": "Dois pedem licença para resolver antes"
+        },
+        {
+          "id": "c",
+          "text": "Olhar para trás tira a aptidão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eu te seguirei para onde quer que vás",
+      "feedbackCorrect": "A cena abre na oferta, passa pelos pedidos de ir primeiro e fecha no aviso.",
+      "feedbackWrong": {
+        "default": "Comece pela oferta de seguir. Os pedidos vêm no meio. O aviso fecha."
+      },
+      "hint": "O primeiro movimento é a oferta no caminho.",
+      "learningObjective": "Compreender os três movimentos do diálogo no caminho.",
+      "evidence": [
+        "Lucas 9:57",
+        "Lucas 9:59–61",
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 9:60, o que o homem deve fazer com o reino de Deus?",
+      "verseRef": "Lucas 9:60",
+      "options": [
+        {
+          "id": "a",
+          "text": "esconde"
+        },
+        {
+          "id": "b",
+          "text": "recusa"
+        },
+        {
+          "id": "c",
+          "text": "anuncia"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "vai e anuncia o reino de Deus",
+      "feedbackCorrect": "O verbo da ordem é anunciar. Jesus manda ir e tornar o reino conhecido.",
+      "feedbackWrong": {
+        "a": "Jesus não manda esconder o reino. A ordem é torná-lo conhecido.",
+        "b": "Recusar o reino inverteria a ordem. Jesus manda que ele o torne conhecido."
+      },
+      "hint": "Leia o verbo que segue a palavra vai.",
+      "learningObjective": "Identificar a ação que Jesus põe no lugar do adiamento.",
+      "evidence": [
+        "Lucas 9:60"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 9:58 a Mateus 8:20?",
+      "verseRef": "Lucas 9:58",
+      "passageA": {
+        "ref": "Lucas 9:58"
+      },
+      "passageB": {
+        "ref": "Mateus 8:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Raposas que anunciam o reino"
+        },
+        {
+          "id": "b",
+          "text": "Filho do Homem sem abrigo"
+        },
+        {
+          "id": "c",
+          "text": "Aves com lugar no trajeto"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Filho do Homem não tem onde reclinar a cabeça",
+      "feedbackCorrect": "Mateus registra a mesma frase: o Filho do Homem não tem onde reclinar a cabeça.",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos põe as raposas a anunciar o reino.",
+        "c": "As aves têm ninhos, mas não recebem lugar no trajeto de Jesus."
+      },
+      "hint": "Compare a frase final dos dois versículos.",
+      "learningObjective": "Relacionar Lucas 9:58 ao mesmo dito de Jesus em Mateus 8:20.",
+      "evidence": [
+        "Lucas 9:58",
+        "Mateus 8:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 9:62, quem olha para trás com a mão no arado continua apto para o Reino de Deus.",
+      "verseRef": "Lucas 9:62",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ninguém que, ao colocar a mão no arado, olha para trás é apto para o Reino de Deus",
+      "feedbackCorrect": "O texto diz o contrário: ninguém nessa condição é apto para o Reino de Deus.",
+      "feedbackWrong": {
+        "true": "A frase começa com Ninguém. Olhar para trás não preserva a aptidão."
+      },
+      "hint": "Observe como a resposta de Jesus começa.",
+      "learningObjective": "Rejeitar a leitura de que olhar para trás ainda deixa a pessoa apta.",
+      "evidence": [
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 9:62, toque o que a pessoa faz com o olhar e perde a aptidão.",
+      "verseRef": "Lucas 9:62",
+      "options": [
+        {
+          "id": "a",
+          "text": "mão no arado"
+        },
+        {
+          "id": "b",
+          "text": "Reino de Deus"
+        },
+        {
+          "id": "c",
+          "text": "olha para trás"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "olha para trás é apto para o Reino de Deus",
+      "feedbackCorrect": "O que tira a aptidão é o olhar para trás, com a mão já no arado.",
+      "feedbackWrong": {
+        "a": "A mão no arado descreve o começo. A perda da aptidão vem do gesto seguinte.",
+        "b": "O Reino é o horizonte da frase, não o que torna alguém inapto."
+      },
+      "hint": "A mão já está no trabalho. Veja o que o olhar faz em seguida.",
+      "learningObjective": "Localizar o gesto que sustenta a leitura sobre a perda da aptidão.",
+      "evidence": [
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 9:61–62 sustenta sobre o pedido de despedida?",
+      "verseRef": "Lucas 9:61–62",
+      "options": [
+        {
+          "id": "a",
+          "text": "Olhar para trás tira a aptidão para o Reino"
+        },
+        {
+          "id": "b",
+          "text": "O arado só descreve o serviço no campo"
+        },
+        {
+          "id": "c",
+          "text": "Despedir-se primeiro deixa a pessoa apta"
+        },
+        {
+          "id": "d",
+          "text": "A intenção sincera basta mesmo olhando atrás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "olha para trás é apto para o Reino de Deus",
+      "feedbackCorrect": "Jesus liga o olhar para trás à perda da aptidão para o Reino.",
+      "feedbackWrong": {
+        "b": "A imagem responde a um pedido de despedida, não a uma aula de lavoura.",
+        "c": "Despedir-se primeiro é o pedido recusado, não o que torna alguém apto.",
+        "d": "O texto não abre exceção para intenção. Ninguém nessa condição é apto."
+      },
+      "hint": "Compare o pedido de despedida com a imagem que Jesus usa.",
+      "learningObjective": "Escolher a leitura que o diálogo sustenta sobre olhar para trás.",
+      "evidence": [
+        "Lucas 9:61–62"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica Lucas 9:61–62 apresenta sobre seguir?",
+      "verseRef": "Lucas 9:61–62",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem pede despedir-se da família"
+        },
+        {
+          "id": "b",
+          "text": "Jesus responde com a imagem do arado"
+        },
+        {
+          "id": "c",
+          "text": "Essa pessoa não fica apta ao Reino"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "permite-me primeiro despedir-me dos que são da minha família",
+      "feedbackCorrect": "O pedido de despedida recebe a imagem do arado e a conclusão sobre a aptidão.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido. A imagem de Jesus vem depois. A aptidão fecha."
+      },
+      "hint": "O diálogo abre com o que o homem pede.",
+      "learningObjective": "Interpretar o encadeamento entre o pedido de despedida e a imagem do arado.",
+      "evidence": [
+        "Lucas 9:61",
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 9:62, que condição Jesus liga ao Reino de Deus?",
+      "verseRef": "Lucas 9:62",
+      "options": [
+        {
+          "id": "a",
+          "text": "útil"
+        },
+        {
+          "id": "b",
+          "text": "apto"
+        },
+        {
+          "id": "c",
+          "text": "pronto"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "é apto para o Reino de Deus",
+      "feedbackCorrect": "Apto é a condição que Jesus nega a quem olha para trás.",
+      "feedbackWrong": {
+        "a": "O texto não fala em útil. A palavra é a condição para o Reino.",
+        "c": "Pronto não aparece. Jesus fala de quem é, ou não, apto."
+      },
+      "hint": "Veja a palavra que liga a pessoa ao Reino.",
+      "learningObjective": "Lembrar o termo que carrega a condição para o Reino de Deus.",
+      "evidence": [
+        "Lucas 9:62"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 9:61–62 a Lucas 14:33?",
+      "verseRef": "Lucas 9:61–62",
+      "passageA": {
+        "ref": "Lucas 9:61–62"
+      },
+      "passageB": {
+        "ref": "Lucas 14:33"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Basta prometer para depois"
+        },
+        {
+          "id": "b",
+          "text": "A família autoriza a ida"
+        },
+        {
+          "id": "c",
+          "text": "Seguir exige renúncia"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "olha para trás é apto para o Reino de Deus",
+      "feedbackCorrect": "Nos dois textos, seguir Jesus pede deixar o que ainda prende a pessoa.",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos aceita prometer agora e resolver o resto depois.",
+        "b": "Lucas não diz que a família autoriza a ida. O pedido de despedida é recusado."
+      },
+      "hint": "Leia a condição de Lucas 14 para ser discípulo.",
+      "learningObjective": "Ligar o aviso do arado à exigência de renúncia para ser discípulo.",
+      "evidence": [
+        "Lucas 9:61–62",
+        "Lucas 14:33"
+      ]
+    }
+  ]
+}

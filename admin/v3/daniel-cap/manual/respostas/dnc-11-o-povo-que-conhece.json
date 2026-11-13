@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Daniel 11:30–35",
+    "passages": [
+      {
+        "ref": "Daniel 11:30–35"
+      }
+    ],
+    "context": "A visão descreve um rei que se indigna contra o santo pacto, profana o santuário e usa lisonjas. Em contraste, o povo que conhece a Deus se torna forte.",
+    "keyword": "conhece",
+    "keywordGloss": "O povo que conhece ao seu Deus — e por isso se torna forte.",
+    "focusQuestion": "O que muda quando conhecer a Deus é a fonte da sua força sob pressão?",
+    "reflectionPrompts": [
+      "Santo pacto",
+      "Povo que conhece",
+      "Provados até o fim"
+    ],
+    "facts": [
+      {
+        "text": "O rei se indigna contra o santo pacto.",
+        "evidenceRef": "Daniel 11:30",
+        "evidenceSpan": "indignando-se contra o santo pacto"
+      },
+      {
+        "text": "Forças profanarão o santuário e estabelecerão a abominação desoladora.",
+        "evidenceRef": "Daniel 11:31",
+        "evidenceSpan": "profanarão o santuário, a nossa fortaleza"
+      },
+      {
+        "text": "O povo que conhece ao seu Deus se tornará forte e realizará grandes feitos.",
+        "evidenceRef": "Daniel 11:32",
+        "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte e realizará grandes feitos"
+      },
+      {
+        "text": "Os sábios ensinarão a muitos, mas cairão por algum tempo.",
+        "evidenceRef": "Daniel 11:33",
+        "evidenceSpan": "Os sábios entre o povo ensinarão a muitos; contudo, cairão"
+      },
+      {
+        "text": "Ao caírem, receberão pequeno socorro; muitos se ajuntarão com lisonjas.",
+        "evidenceRef": "Daniel 11:34",
+        "evidenceSpan": "receberão um pequeno socorro"
+      },
+      {
+        "text": "Alguns sábios cairão para serem provados até o fim do tempo.",
+        "evidenceRef": "Daniel 11:35",
+        "evidenceSpan": "para serem provados, purificados e esclarecidos, até o fim do tempo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "conhece",
+        "gloss": "Relação com Deus que torna o povo forte."
+      },
+      {
+        "term": "sábios",
+        "gloss": "Os que ensinam a muitos e também são provados."
+      },
+      {
+        "term": "pacto",
+        "gloss": "O santo pacto contra o qual o rei se indigna."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Indignação contra o pacto",
+        "evidenceRef": "Daniel 11:30"
+      },
+      {
+        "label": "Profanação do santuário",
+        "evidenceRef": "Daniel 11:31"
+      },
+      {
+        "label": "Povo que conhece se fortalece",
+        "evidenceRef": "Daniel 11:32"
+      },
+      {
+        "label": "Sábios ensinam, caem e são provados",
+        "evidenceRef": "Daniel 11:33–35"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Lisonjas pervertem os do pacto; mas o povo que conhece se torna forte.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 11:32"
+      },
+      {
+        "kind": "contraste",
+        "text": "Sábios ensinam; contudo, cairão.",
+        "marker": "contudo",
+        "evidenceRef": "Daniel 11:33"
+      },
+      {
+        "kind": "propósito",
+        "text": "Caem para serem provados, purificados e esclarecidos.",
+        "marker": "para",
+        "evidenceRef": "Daniel 11:35"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 9:24",
+        "bridge": "Gloriar-se em conhecer a Deus"
+      },
+      {
+        "ref": "Oséias 6:3",
+        "bridge": "Conhecer o Senhor"
+      },
+      {
+        "ref": "João 17:3",
+        "bridge": "Vida eterna: conhecer a Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Conhecer a Deus não muda nada sob perseguição.",
+        "why": "11:32: o povo que conhece se torna forte e realiza feitos."
+      },
+      {
+        "text": "Os sábios nunca sofrem nem caem.",
+        "why": "11:33–35: cairão e serão provados."
+      },
+      {
+        "text": "O rei protege o santo pacto.",
+        "why": "11:30–31: indigna-se e forças profanam o santuário."
+      }
+    ],
+    "centralInsight": "Conhecer a Deus dá força mesmo quando muitos tropeçam e são provados.",
+    "anchorQuestion": "Segundo Daniel 11:32, o que acontece ao povo que conhece ao seu Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 11:32, o povo que conhece ao seu Deus se tornará forte.",
+      "verseRef": "Daniel 11:32",
+      "correctOptionId": "true",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte e realizará grandes feitos",
+      "feedbackCorrect": "O texto afirma força e feitos para quem conhece a Deus.",
+      "feedbackWrong": {
+        "false": "Releia 11:32."
+      },
+      "hint": "Veja o que acontece ao povo que conhece.",
+      "learningObjective": "Observar a força de quem conhece.",
+      "evidence": [
+        "Daniel 11:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 11:31, toque o que será profanado.",
+      "verseRef": "Daniel 11:31",
+      "evidenceSpan": "profanarão o santuário, a nossa fortaleza",
+      "feedbackCorrect": "Profanarão o santuário.",
+      "hint": "Procure o objeto da profanação.",
+      "learningObjective": "Identificar o alvo da profanação.",
+      "evidence": [
+        "Daniel 11:31"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "santuário"
+        },
+        {
+          "id": "b",
+          "text": "navios"
+        },
+        {
+          "id": "c",
+          "text": "Quitim"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Navios\" estão em 11:30.",
+        "c": "\"Quitim\" está em 11:30."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 11:33, o que os sábios farão?",
+      "verseRef": "Daniel 11:33",
+      "evidenceSpan": "Os sábios entre o povo ensinarão a muitos",
+      "feedbackCorrect": "Eles ensinarão a muitos.",
+      "hint": "Veja a ação dos sábios.",
+      "learningObjective": "Observar o ensino dos sábios.",
+      "evidence": [
+        "Daniel 11:33"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensinarão a muitos"
+        },
+        {
+          "id": "b",
+          "text": "Abandonarão o pacto"
+        },
+        {
+          "id": "c",
+          "text": "Estabelecerão a abominação"
+        },
+        {
+          "id": "d",
+          "text": "Calarão para sempre"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Isso descreve outros.",
+        "c": "Isso descreve as forças.",
+        "d": "Eles ensinam, não calam."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 11:32 na ordem do texto.",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "mas o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Lisonjas aos violadores; mas o povo que conhece se fortalece.",
+      "hint": "Comece pelos que violam.",
+      "learningObjective": "Reconhecer a sequência de 11:32.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Aos que violam o pacto, ele usará lisonjas para perverter"
+        },
+        {
+          "id": "b",
+          "text": "mas o povo que conhece ao seu Deus se tornará forte"
+        },
+        {
+          "id": "c",
+          "text": "e realizará grandes feitos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelas lisonjas; os feitos fecham."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 11:32, que verbo descreve o povo que conhece a Deus?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus",
+      "feedbackCorrect": "O povo que conhece ao seu Deus.",
+      "hint": "É o verbo da relação com Deus.",
+      "learningObjective": "Lembrar o verbo-chave.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "conhece"
+        },
+        {
+          "id": "b",
+          "text": "esquece"
+        },
+        {
+          "id": "c",
+          "text": "odeia"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é esquece.",
+        "c": "Não é odeia."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 11:32 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Sob pressão do pacto violado, conhecer a Deus gera força.",
+      "hint": "Compare pressão e força.",
+      "learningObjective": "Ligar o conhecimento de Deus à força.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "passageA": {
+        "ref": "Daniel 11:32"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Há profanação e lisonjas; o povo que conhece a Deus se fortalece."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Conhecer a Deus fortalece"
+        },
+        {
+          "id": "b",
+          "text": "Lisonjas salvam o pacto"
+        },
+        {
+          "id": "c",
+          "text": "Sábios nunca caem"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Lisonjas pervertem.",
+        "c": "11:33–35: cairão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 11:32, há contraste entre os pervertidos por lisonjas e o povo que conhece a Deus.",
+      "verseRef": "Daniel 11:32",
+      "correctOptionId": "true",
+      "evidenceSpan": "mas o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "\"Mas\" marca o contraste com os que violam o pacto.",
+      "feedbackWrong": {
+        "false": "Releia o \"mas\" em 11:32."
+      },
+      "hint": "Veja o contraste no versículo.",
+      "learningObjective": "Compreender o contraste do povo.",
+      "evidence": [
+        "Daniel 11:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 11:32, toque a palavra que marca o contraste.",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "mas o povo que conhece ao seu Deus",
+      "feedbackCorrect": "\"Mas\" marca a virada para o povo que conhece.",
+      "hint": "Procure o contraste no meio do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "lisonjas"
+        },
+        {
+          "id": "c",
+          "text": "pacto"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Lisonjas\" é a ferramenta de perversão.",
+        "c": "\"Pacto\" é o que se viola."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 11:33–35 relaciona o ensino dos sábios e a queda?",
+      "verseRef": "Daniel 11:33–35",
+      "evidenceSpan": "para serem provados, purificados e esclarecidos",
+      "feedbackCorrect": "Eles ensinam e também caem para serem provados até o fim.",
+      "hint": "Compare ensino e propósito da queda.",
+      "learningObjective": "Relacionar ensino e prova.",
+      "evidence": [
+        "Daniel 11:33–35"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensinam, caem e são provados até o fim"
+        },
+        {
+          "id": "b",
+          "text": "Ensinam e nunca sofrem"
+        },
+        {
+          "id": "c",
+          "text": "Caem porque não conhecem a Deus"
+        },
+        {
+          "id": "d",
+          "text": "A prova cancela todo ensino"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "11:33: cairão.",
+        "c": "O povo que conhece está em 11:32.",
+        "d": "O ensino continua no quadro."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 11:30–35?",
+      "verseRef": "Daniel 11:30–35",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Indignação, profanação, povo forte, sábios provados.",
+      "hint": "Comece pela indignação.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": [
+        "Daniel 11:30–35"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Indignação contra o santo pacto"
+        },
+        {
+          "id": "b",
+          "text": "Profanação e povo que conhece se fortalece"
+        },
+        {
+          "id": "c",
+          "text": "Sábios ensinam, caem e são provados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela indignação; a prova fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 11:33, que palavra marca o contraste após o ensino?",
+      "verseRef": "Daniel 11:33",
+      "evidenceSpan": "ensinarão a muitos; contudo, cairão",
+      "feedbackCorrect": "\"Contudo\" marca: ensinam, mas cairão.",
+      "hint": "É o contraste depois do ensino.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": [
+        "Daniel 11:33"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "contudo"
+        },
+        {
+          "id": "b",
+          "text": "sempre"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é \"sempre\".",
+        "c": "Não é \"nunca\"."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 11:32 a Jeremias 9:24?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Nos dois textos, conhecer a Deus é o centro da glória/força.",
+      "hint": "Compare o conhecer a Deus.",
+      "learningObjective": "Relacionar força e glória no conhecimento.",
+      "evidence": [
+        "Daniel 11:32",
+        "Jeremias 9:24"
+      ],
+      "passageA": {
+        "ref": "Daniel 11:32"
+      },
+      "passageB": {
+        "ref": "Jeremias 9:24"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gloriar-se em conhecer a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ignorar o conhecimento de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Força só por lisonjas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos exaltam conhecer a Deus.",
+        "c": "Lisonjas pervertem."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 11:30–35, conhecer a Deus é irrelevante diante da abominação e das lisonjas.",
+      "verseRef": "Daniel 11:32",
+      "correctOptionId": "false",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte e realizará grandes feitos",
+      "feedbackCorrect": "O contraste central é o povo que conhece e se fortalece.",
+      "feedbackWrong": {
+        "true": "Releia 11:32."
+      },
+      "hint": "Veja o papel de conhecer a Deus.",
+      "learningObjective": "Interpretar o conhecimento como força.",
+      "evidence": [
+        "Daniel 11:32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 11:35, toque o trecho que mostra o propósito da queda dos sábios.",
+      "verseRef": "Daniel 11:35",
+      "evidenceSpan": "para serem provados, purificados e esclarecidos",
+      "feedbackCorrect": "Caem para serem provados, purificados e esclarecidos.",
+      "hint": "Procure o propósito após a queda.",
+      "learningObjective": "Sustentar o propósito da prova.",
+      "evidence": [
+        "Daniel 11:35"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "provados"
+        },
+        {
+          "id": "b",
+          "text": "sábios"
+        },
+        {
+          "id": "c",
+          "text": "tempo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Sábios\" são quem cai; o propósito é serem provados.",
+        "c": "\"Tempo\" é o horizonte; o propósito é a prova."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 11:30–35 sustenta sobre conhecer a Deus?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Conhecer a Deus dá força mesmo sob profanação e prova.",
+      "hint": "Compare cada opção com 11:32–35.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Conhecer a Deus fortalece sob pressão"
+        },
+        {
+          "id": "b",
+          "text": "Só lisonjas dão força ao povo"
+        },
+        {
+          "id": "c",
+          "text": "Os sábios nunca são provados"
+        },
+        {
+          "id": "d",
+          "text": "O pacto santo não sofre ataque"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Lisonjas pervertem.",
+        "c": "11:35: serão provados.",
+        "d": "Há indignação e profanação."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio de conhecer a Deus?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Jeremias glória-se; Oséias chama a conhecer; Daniel mostra força; João define a vida eterna.",
+      "hint": "Parta de Jeremias.",
+      "learningObjective": "Ver o conhecimento no fio bíblico.",
+      "evidence": [
+        "Jeremias 9:24",
+        "Daniel 11:32",
+        "João 17:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeremias: gloriar-se em conhecer a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Daniel: o povo que conhece se torna forte"
+        },
+        {
+          "id": "c",
+          "text": "João: vida eterna é conhecer a Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Jeremias 9, Daniel 11 e João 17."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 11:33, que palavra nomeia os que ensinam a muitos?",
+      "verseRef": "Daniel 11:33",
+      "evidenceSpan": "Os sábios entre o povo ensinarão a muitos",
+      "feedbackCorrect": "Os sábios ensinam a muitos.",
+      "hint": "É o sujeito do ensino.",
+      "learningObjective": "Lembrar o termo dos mestres.",
+      "evidence": [
+        "Daniel 11:33"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "sábios"
+        },
+        {
+          "id": "b",
+          "text": "navios"
+        },
+        {
+          "id": "c",
+          "text": "forças"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é navios.",
+        "c": "Forças profanam em 11:31."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 11:32 a João 17:3?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus",
+      "feedbackCorrect": "Nos dois textos, conhecer a Deus está no centro da vida/força.",
+      "hint": "Compare o tema central dos dois textos.",
+      "learningObjective": "Ligar força e vida eterna no conhecimento.",
+      "evidence": [
+        "Daniel 11:32",
+        "João 17:3"
+      ],
+      "passageA": {
+        "ref": "Daniel 11:32"
+      },
+      "passageB": {
+        "ref": "João 17:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Conhecer a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ignorar o Santo"
+        },
+        {
+          "id": "c",
+          "text": "Confiar em lisonjas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos exaltam o conhecimento.",
+        "c": "Lisonjas pervertem."
+      }
+    }
+  ]
+}

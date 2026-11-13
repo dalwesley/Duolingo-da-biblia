@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "João 14:15–20",
+    "passages": [
+      { "ref": "João 14:15–20" },
+      { "ref": "João 14:21" }
+    ],
+    "context": "Jesus está com os discípulos na noite da despedida. Ele já disse que vai para o Pai, e estas palavras são para quem fica.",
+    "keyword": "Consolador",
+    "keywordGloss": "Aquele que Jesus pede ao Pai para estar com os discípulos para sempre.",
+    "focusQuestion": "O que o seu amor a Jesus tem guardado na prática?",
+    "reflectionPrompts": [
+      "O amor que guarda",
+      "O Consolador pedido",
+      "A promessa de voltar"
+    ],
+    "facts": [
+      {
+        "text": "Quem ama Jesus guardará os mandamentos dele.",
+        "evidenceRef": "João 14:15",
+        "evidenceSpan": "Se vós me amais, guardareis os meus mandamentos"
+      },
+      {
+        "text": "Jesus pedirá ao Pai, e o Pai dará outro Consolador.",
+        "evidenceRef": "João 14:16",
+        "evidenceSpan": "eu pedirei ao Pai, e Ele vos dará outro Consolador"
+      },
+      {
+        "text": "O mundo não pode receber o Espírito da verdade.",
+        "evidenceRef": "João 14:17",
+        "evidenceSpan": "O Espírito da verdade, que o mundo não pode receber"
+      },
+      {
+        "text": "Os discípulos conhecem o Espírito, pois ele habita com eles.",
+        "evidenceRef": "João 14:17",
+        "evidenceSpan": "vós o conheceis, pois ele habita convosco"
+      },
+      {
+        "text": "Jesus diz que não deixará os discípulos órfãos e que voltará.",
+        "evidenceRef": "João 14:18",
+        "evidenceSpan": "Não os deixarei órfãos, voltarei para vocês"
+      },
+      {
+        "text": "Quem tem os mandamentos de Jesus e os guarda é quem o ama.",
+        "evidenceRef": "João 14:21",
+        "evidenceSpan": "Aquele que tem os meus mandamentos e os guarda, esse é o que me ama"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Consolador",
+        "gloss": "Aquele que o Pai dará, a pedido de Jesus, para estar com os discípulos para sempre."
+      },
+      {
+        "term": "órfãos",
+        "gloss": "A condição que Jesus recusa para os discípulos na despedida."
+      },
+      {
+        "term": "mandamentos",
+        "gloss": "O que quem ama Jesus guarda, segundo as palavras dele."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus pede o Consolador ao Pai",
+        "evidenceRef": "João 14:16"
+      },
+      {
+        "label": "O dom permanece para sempre",
+        "evidenceRef": "João 14:16"
+      },
+      {
+        "label": "Os discípulos conhecem o Espírito",
+        "evidenceRef": "João 14:17"
+      },
+      {
+        "label": "Jesus não os deixa órfãos",
+        "evidenceRef": "João 14:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jesus pede ao Pai outro Consolador para que ele esteja com os discípulos para sempre.",
+        "marker": "para",
+        "evidenceRef": "João 14:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "O mundo não conhece o Espírito, mas os discípulos o conhecem.",
+        "marker": "mas",
+        "evidenceRef": "João 14:17"
+      },
+      {
+        "kind": "causa",
+        "text": "Os discípulos viverão porque Jesus vive.",
+        "marker": "porque",
+        "evidenceRef": "João 14:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 15:10",
+        "bridge": "Guardar é permanecer no amor"
+      },
+      {
+        "ref": "João 15:26",
+        "bridge": "Testemunho sobre Jesus"
+      },
+      {
+        "ref": "Gálatas 4:6",
+        "bridge": "Filhos pelo Espírito enviado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O mundo já conhece o Espírito da verdade; a única barreira é que ainda não o vê.",
+        "why": "O versículo nega as duas coisas juntas: o mundo não o vê, nem o conhece."
+      },
+      {
+        "text": "O outro Consolador toma o lugar de Jesus, e por isso Jesus não volta aos discípulos.",
+        "why": "No mesmo discurso, Jesus diz que voltará para eles. O Consolador não cancela essa palavra."
+      },
+      {
+        "text": "Não ficar órfão significa que Jesus nunca se ausenta dos discípulos.",
+        "why": "Ele diz que voltará, e voltar supõe uma partida. A promessa é não deixá-los órfãos, não apagar a saída."
+      }
+    ],
+    "centralInsight": "Quem ama Jesus guarda a palavra dele e não fica órfão: o Espírito vem.",
+    "anchorQuestion": "O que Jesus diz que pedirá ao Pai para os discípulos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 14:21, quem tem os mandamentos de Jesus e os guarda é quem o ama.",
+      "verseRef": "João 14:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "Aquele que tem os meus mandamentos e os guarda, esse é o que me ama",
+      "feedbackCorrect": "O versículo define quem ama: é quem tem os mandamentos de Jesus e os guarda.",
+      "feedbackWrong": {
+        "false": "O texto não separa as coisas: quem guarda os mandamentos é quem o ama."
+      },
+      "hint": "Veja a frase que define quem ama.",
+      "learningObjective": "Observar que guardar os mandamentos é o sinal de amar Jesus.",
+      "evidence": ["João 14:21"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 14:16, toque a quem Jesus diz que pedirá.",
+      "verseRef": "João 14:16",
+      "options": [
+        { "id": "a", "text": "vos" },
+        { "id": "b", "text": "Pai" },
+        { "id": "c", "text": "Consolador" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pedirei ao Pai",
+      "feedbackCorrect": "Jesus pede ao Pai. O Pai é quem dará o outro Consolador.",
+      "feedbackWrong": {
+        "a": "A palavra vos nomeia os discípulos. O pedido de Jesus é ao Pai.",
+        "c": "O Consolador é o dom. Jesus pede ao Pai, não ao Consolador."
+      },
+      "hint": "Olhe a quem o pedido é dirigido.",
+      "learningObjective": "Identificar a quem Jesus dirige o pedido.",
+      "evidence": ["João 14:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 14:17, qual é a situação do mundo diante do Espírito da verdade?",
+      "verseRef": "João 14:17",
+      "options": [
+        { "id": "a", "text": "O mundo não consegue receber o Espírito" },
+        { "id": "b", "text": "O mundo já conhece o Espírito de perto" },
+        { "id": "c", "text": "O mundo o recebe antes dos discípulos" },
+        { "id": "d", "text": "O mundo é quem envia o Espírito ao Pai" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o mundo não pode receber",
+      "feedbackCorrect": "O texto diz que o mundo não pode receber o Espírito da verdade.",
+      "feedbackWrong": {
+        "b": "O mundo não o vê e também não o conhece. Não há conhecimento prévio.",
+        "c": "Quem o conhece são os discípulos. O mundo não pode recebê-lo.",
+        "d": "A direção é outra: Jesus pede ao Pai, e o Pai é quem dá."
+      },
+      "hint": "Leia o que o mundo não pode fazer.",
+      "learningObjective": "Observar que o mundo não pode receber o Espírito da verdade.",
+      "evidence": ["João 14:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 14:16 na ordem do texto.",
+      "verseRef": "João 14:16",
+      "options": [
+        { "id": "a", "text": "E eu pedirei ao Pai" },
+        { "id": "b", "text": "Ele vos dará outro Consolador" },
+        { "id": "c", "text": "para que esteja convosco para sempre" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "E eu pedirei ao Pai",
+      "feedbackCorrect": "A ordem é o pedido, o dom do Pai e a permanência para sempre.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido de Jesus ao Pai. O para sempre fecha o versículo."
+      },
+      "hint": "O versículo começa pelo pedido de Jesus.",
+      "learningObjective": "Reconhecer a sequência do pedido, do dom e da permanência.",
+      "evidence": ["João 14:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 14:18, o que Jesus diz que os discípulos não serão?",
+      "verseRef": "João 14:18",
+      "options": [
+        { "id": "a", "text": "sozinhos" },
+        { "id": "b", "text": "desamparados" },
+        { "id": "c", "text": "órfãos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Não os deixarei órfãos",
+      "feedbackCorrect": "A palavra do texto é órfãos: Jesus não os deixará nessa condição.",
+      "feedbackWrong": {
+        "a": "Sozinhos é uma ideia próxima, mas o versículo diz órfãos.",
+        "b": "Desamparados não é a palavra usada. O texto diz órfãos."
+      },
+      "hint": "Veja a palavra logo depois de deixarei.",
+      "learningObjective": "Lembrar a condição que Jesus recusa para os discípulos.",
+      "evidence": ["João 14:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 14:18 comunica que se liga a este contexto?",
+      "verseRef": "João 14:18",
+      "passageA": { "ref": "João 14:18" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na despedida, a partida de Jesus podia deixar os discípulos sem apoio."
+      },
+      "options": [
+        { "id": "a", "text": "A partida é abandono final" },
+        { "id": "b", "text": "Ele não os deixa órfãos" },
+        { "id": "c", "text": "O mundo cuida deles agora" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não os deixarei órfãos",
+      "feedbackCorrect": "Diante da partida, Jesus recusa deixá-los órfãos e diz que voltará.",
+      "feedbackWrong": {
+        "a": "A partida não é o fim: ele diz que voltará e que não os deixará órfãos.",
+        "c": "Quem fala em ficar com eles é Jesus, não o mundo."
+      },
+      "hint": "Veja o que Jesus recusa fazer com eles.",
+      "learningObjective": "Ligar a promessa de João 14:18 ao temor da partida.",
+      "evidence": ["João 14:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 14:16, o outro Consolador fica com os discípulos somente até Jesus voltar.",
+      "verseRef": "João 14:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "para que esteja convosco para sempre",
+      "feedbackCorrect": "O pedido é para sempre. O versículo não limita o Consolador até a volta.",
+      "feedbackWrong": {
+        "true": "Para sempre não é um prazo até a volta. O texto não encurta a promessa."
+      },
+      "hint": "Olhe até quando o Consolador deve ficar.",
+      "learningObjective": "Compreender que o propósito da promessa é uma presença sem prazo.",
+      "evidence": ["João 14:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 14:17, toque a palavra que opõe o mundo aos discípulos.",
+      "verseRef": "João 14:17",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "pois" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas vós o conheceis",
+      "feedbackCorrect": "Mas vira o assunto: o mundo não conhece, os discípulos conhecem.",
+      "feedbackWrong": {
+        "a": "Porque explica por que o mundo não recebe. A oposição vem em mas.",
+        "c": "Pois explica por que os discípulos conhecem. A oposição é mas."
+      },
+      "hint": "Procure a virada entre o mundo e vós.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste no versículo.",
+      "evidence": ["João 14:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação João 14:19 mostra entre a vida de Jesus e a dos discípulos?",
+      "verseRef": "João 14:19",
+      "options": [
+        { "id": "a", "text": "O mundo viverá no lugar dos discípulos" },
+        { "id": "b", "text": "A partida encerra a vida deles" },
+        { "id": "c", "text": "Eles viverão porque Jesus vive" },
+        { "id": "d", "text": "Eles vivem só enquanto o mundo o vê" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "porque eu vivo, vocês também viverão",
+      "feedbackCorrect": "A causa está no porque: ele vive, e por isso eles também viverão.",
+      "feedbackWrong": {
+        "a": "O mundo deixa de vê-lo. Quem viverá, no texto, são os discípulos.",
+        "b": "A partida não encerra a vida deles. Porque ele vive, eles viverão.",
+        "d": "O mundo não o verá mais, e mesmo assim os discípulos viverão."
+      },
+      "hint": "Leia a frase que liga o eu vivo ao viverão.",
+      "learningObjective": "Relacionar a vida de Jesus com a vida dos discípulos.",
+      "evidence": ["João 14:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a promessa em João 14:16–17?",
+      "verseRef": "João 14:16–17",
+      "options": [
+        { "id": "a", "text": "Jesus pede o Consolador ao Pai" },
+        { "id": "b", "text": "O dom permanece para sempre" },
+        { "id": "c", "text": "Os discípulos conhecem o Espírito" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ele vos dará outro Consolador",
+      "feedbackCorrect": "Primeiro o pedido, depois a permanência, e então o conhecimento dos discípulos.",
+      "feedbackWrong": {
+        "default": "O pedido ao Pai abre a cena. O conhecimento dos discípulos vem depois."
+      },
+      "hint": "Comece pelo que Jesus fará junto ao Pai.",
+      "learningObjective": "Acompanhar o movimento do pedido à permanência e ao conhecimento.",
+      "evidence": ["João 14:16–17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 14:15, o que quem ama Jesus fará com os mandamentos dele?",
+      "verseRef": "João 14:15",
+      "options": [
+        { "id": "a", "text": "guardareis" },
+        { "id": "b", "text": "esquecereis" },
+        { "id": "c", "text": "mudareis" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guardareis os meus mandamentos",
+      "feedbackCorrect": "O amor, no texto, se mostra neste verbo: guardareis os mandamentos.",
+      "feedbackWrong": {
+        "b": "Esquecer inverteria a frase. Quem ama guardará os mandamentos.",
+        "c": "O verbo não é mudar. O texto liga o amor a guardar."
+      },
+      "hint": "Veja o verbo entre o amor e os mandamentos.",
+      "learningObjective": "Lembrar o verbo que liga o amor aos mandamentos.",
+      "evidence": ["João 14:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 14:15 a João 15:10?",
+      "verseRef": "João 14:15",
+      "passageA": { "ref": "João 14:15" },
+      "passageB": { "ref": "João 15:10" },
+      "options": [
+        { "id": "a", "text": "A lei cancela o amor" },
+        { "id": "b", "text": "O mundo guarda primeiro" },
+        { "id": "c", "text": "Amor e mandamentos juntos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Se vós me amais, guardareis os meus mandamentos",
+      "feedbackCorrect": "Nos dois textos, amar e guardar os mandamentos permanecem juntos.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois cancela o amor. Guardar é o caminho de permanecer nele.",
+        "b": "Os dois textos falam dos discípulos, não de o mundo guardar antes."
+      },
+      "hint": "Compare o que o amor pede nos dois textos.",
+      "learningObjective": "Relacionar o amor e os mandamentos em João 14 e João 15.",
+      "evidence": ["João 14:15", "João 15:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "João 14:17 sustenta que o mundo conhece o Espírito da verdade, embora não o veja.",
+      "verseRef": "João 14:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque não o vê, nem o conhece",
+      "feedbackCorrect": "O texto nega as duas coisas: o mundo não vê o Espírito e também não o conhece.",
+      "feedbackWrong": {
+        "true": "Não é só falta de visão. Depois de não o vê, o versículo diz nem o conhece."
+      },
+      "hint": "Leia o que vem depois de não o vê.",
+      "learningObjective": "Recusar a leitura de que o mundo já conhece o Espírito.",
+      "evidence": ["João 14:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 14:17, toque quem habita com os discípulos.",
+      "verseRef": "João 14:17",
+      "options": [
+        { "id": "a", "text": "o mundo" },
+        { "id": "b", "text": "Espírito da verdade" },
+        { "id": "c", "text": "vós" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ele habita convosco e estará em vós",
+      "feedbackCorrect": "O Espírito da verdade é quem habita com os discípulos e estará neles.",
+      "feedbackWrong": {
+        "a": "O mundo não pode receber o Espírito. Quem habita com eles é o Espírito.",
+        "c": "Vós são os discípulos. Quem habita com eles é o Espírito da verdade."
+      },
+      "hint": "Procure o nome que abre o versículo.",
+      "learningObjective": "Sustentar com o texto quem permanece com os discípulos.",
+      "evidence": ["João 14:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 14:17–18 sustenta sobre os discípulos?",
+      "verseRef": "João 14:17–18",
+      "options": [
+        { "id": "a", "text": "O Consolador toma o lugar e Jesus não volta" },
+        { "id": "b", "text": "O Espírito está com eles e eles não ficam órfãos" },
+        { "id": "c", "text": "O mundo conhece o Espírito e apenas não o vê" },
+        { "id": "d", "text": "Jesus nunca se ausenta, e assim não há órfãos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não os deixarei órfãos",
+      "feedbackCorrect": "O Espírito habita com eles, e Jesus diz que não os deixará órfãos.",
+      "feedbackWrong": {
+        "a": "O Consolador não cancela a volta. No versículo seguinte, Jesus diz que voltará.",
+        "c": "O mundo não o vê e também não o conhece. As duas faltas vêm juntas.",
+        "d": "Voltar supõe uma partida. A promessa não diz que Jesus nunca se ausenta."
+      },
+      "hint": "Junte o que o Espírito faz com a frase sobre órfãos.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a saída de Jesus.",
+      "evidence": ["João 14:17–18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência João 14:20–21 apresenta?",
+      "verseRef": "João 14:20–21",
+      "options": [
+        { "id": "a", "text": "Eles saberão que estão em Jesus" },
+        { "id": "b", "text": "Guardar mandamentos mostra o amor" },
+        { "id": "c", "text": "O Pai ama quem ama Jesus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esse é o que me ama",
+      "feedbackCorrect": "Primeiro a união, depois o amor que guarda, e então o amor do Pai.",
+      "feedbackWrong": {
+        "default": "Comece pelo que eles saberão naquele dia. O amor do Pai vem no fim."
+      },
+      "hint": "Comece pelo que eles saberão naquele dia.",
+      "learningObjective": "Acompanhar o argumento da união ao amor do Pai.",
+      "evidence": ["João 14:20–21"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 14:16, que nome recebe aquele que o Pai dará?",
+      "verseRef": "João 14:16",
+      "options": [
+        { "id": "a", "text": "amigo" },
+        { "id": "b", "text": "Consolador" },
+        { "id": "c", "text": "mestre" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ele vos dará outro Consolador",
+      "feedbackCorrect": "O nome do texto é Consolador: o dom que fica com eles para sempre.",
+      "feedbackWrong": {
+        "a": "Amigo caberia na frase, mas não é o nome que Jesus usa aqui.",
+        "c": "Mestre não é o título deste versículo. O texto diz Consolador."
+      },
+      "hint": "Veja o título logo depois de outro.",
+      "learningObjective": "Lembrar o nome que carrega a promessa de João 14:16.",
+      "evidence": ["João 14:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 14:18 a Gálatas 4:6?",
+      "verseRef": "João 14:18",
+      "passageA": { "ref": "João 14:18" },
+      "passageB": { "ref": "Gálatas 4:6" },
+      "options": [
+        { "id": "a", "text": "Filhos que recebem o Espírito" },
+        { "id": "b", "text": "Medo no lugar do Pai" },
+        { "id": "c", "text": "A volta fica cancelada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não os deixarei órfãos",
+      "feedbackCorrect": "Não ficar órfão encontra eco em filhos que recebem o Espírito.",
+      "feedbackWrong": {
+        "b": "Gálatas fala de filhos e do Espírito no coração, não do medo no lugar do Pai.",
+        "c": "João 14:18 diz que Jesus voltará. A volta não é cancelada."
+      },
+      "hint": "Compare a condição dos discípulos nos dois textos.",
+      "learningObjective": "Ligar a promessa de não ficarem órfãos ao Espírito dado aos filhos.",
+      "evidence": ["João 14:18", "Gálatas 4:6"]
+    }
+  ]
+}

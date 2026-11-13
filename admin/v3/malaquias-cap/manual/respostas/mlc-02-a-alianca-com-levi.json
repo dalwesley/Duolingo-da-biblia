@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Malaquias 2:4–9",
+    "passages": [
+      { "ref": "Malaquias 2:4–9" },
+      { "ref": "Malaquias 2:10–12" }
+    ],
+    "context": "Depois de denunciar as ofertas ruins, o Senhor lembra a aliança com Levi: o sacerdote deveria guardar o conhecimento. Em vez disso, desviou o povo e violou a aliança.",
+    "keyword": "aliança",
+    "keywordGloss": "O pacto de vida e paz que o Senhor fez com Levi e que os sacerdotes violaram.",
+    "focusQuestion": "Quem recebe de você instrução: a verdade do Senhor ou um caminho que faz tropeçar?",
+    "reflectionPrompts": [
+      "Lábios que guardam",
+      "Mensageiro do Senhor",
+      "Aliança violada"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor enviou o mandamento para que a aliança permaneça com Levi.",
+        "evidenceRef": "Malaquias 2:4",
+        "evidenceSpan": "para que minha aliança permaneça com Levi"
+      },
+      {
+        "text": "O pacto com Levi foi de vida e de paz, para que ele temesse o Senhor.",
+        "evidenceRef": "Malaquias 2:5",
+        "evidenceSpan": "Meu pacto com ele foi de vida e de paz"
+      },
+      {
+        "text": "A verdadeira instrução estava na boca de Levi; ele afastou muitos da iniquidade.",
+        "evidenceRef": "Malaquias 2:6",
+        "evidenceSpan": "A verdadeira instrução estava em sua boca"
+      },
+      {
+        "text": "Os lábios do sacerdote devem guardar o conhecimento; ele é mensageiro do Senhor.",
+        "evidenceRef": "Malaquias 2:7",
+        "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento"
+      },
+      {
+        "text": "Os sacerdotes se desviaram e fizeram muitos tropeçarem; violaram a aliança de Levi.",
+        "evidenceRef": "Malaquias 2:8",
+        "evidenceSpan": "fizeram muitos tropeçarem; violaram a aliança de Levi"
+      },
+      {
+        "text": "Judá profanou o santuário e se casou com adoradora de deus estranho.",
+        "evidenceRef": "Malaquias 2:11",
+        "evidenceSpan": "se casou com uma adoradora de deus estranho"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "mensageiro",
+        "gloss": "O sacerdote como enviado que deve trazer a instrução do Senhor."
+      },
+      {
+        "term": "conhecimento",
+        "gloss": "O que os lábios do sacerdote devem guardar e ensinar."
+      },
+      {
+        "term": "aliança",
+        "gloss": "O pacto com Levi que os sacerdotes violaram."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Mandamento para a aliança com Levi permanecer",
+        "evidenceRef": "Malaquias 2:4"
+      },
+      {
+        "label": "Pacto de vida, paz e temor",
+        "evidenceRef": "Malaquias 2:5"
+      },
+      {
+        "label": "Instrução verdadeira e sacerdócio fiel",
+        "evidenceRef": "Malaquias 2:6–7"
+      },
+      {
+        "label": "Desvio, tropeço do povo e julgamento",
+        "evidenceRef": "Malaquias 2:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O pacto de vida e paz foi dado para que Levi temesse o Senhor.",
+        "marker": "para",
+        "evidenceRef": "Malaquias 2:5"
+      },
+      {
+        "kind": "causa",
+        "text": "Por causa da instrução errada, muitos tropeçaram.",
+        "marker": "por causa",
+        "evidenceRef": "Malaquias 2:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por não guardarem os caminhos, o Senhor os fez desprezíveis diante do povo.",
+        "marker": "Por isso",
+        "evidenceRef": "Malaquias 2:9"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Deuteronômio 33:10", "bridge": "Ensinar os juízos" },
+      { "ref": "Oséias 4:6", "bridge": "Povo sem conhecimento" },
+      { "ref": "Tiago 3:1", "bridge": "Maior juízo aos mestres" }
+    ],
+    "misreadings": [
+      {
+        "text": "O sacerdócio é só ritual; o ensino não importa.",
+        "why": "O texto diz que os lábios devem guardar o conhecimento e buscar a instrução."
+      },
+      {
+        "text": "O povo tropeça por acaso, sem ligação com a instrução dos sacerdotes.",
+        "why": "O Senhor liga o tropeço à instrução deles e à aliança violada."
+      },
+      {
+        "text": "A deslealdade matrimonial não tem relação com a aliança.",
+        "why": "Judá profana o santuário ao casar-se com adoradora de deus estranho."
+      }
+    ],
+    "centralInsight": "O sacerdote é mensageiro do Senhor: sem fidelidade, o povo tropeça.",
+    "anchorQuestion": "O que Malaquias 2:7 diz que os lábios do sacerdote devem guardar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Malaquias 2:7, os lábios do sacerdote devem guardar o conhecimento.",
+      "verseRef": "Malaquias 2:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento",
+      "feedbackCorrect": "O texto afirma: os lábios do sacerdote devem guardar o conhecimento.",
+      "feedbackWrong": {
+        "false": "Releia o começo de 2:7: os lábios devem guardar o conhecimento."
+      },
+      "hint": "Olhe o começo do versículo.",
+      "learningObjective": "Observar a tarefa dos lábios do sacerdote.",
+      "evidence": ["Malaquias 2:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+      "verseRef": "Malaquias 2:7",
+      "options": [
+        { "id": "a", "text": "conhecimento" },
+        { "id": "b", "text": "mensageiro" },
+        { "id": "c", "text": "instrução" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ele é o mensageiro do Senhor dos Exércitos",
+      "feedbackCorrect": "O sacerdote é o mensageiro do Senhor dos Exércitos.",
+      "feedbackWrong": {
+        "a": "\"Conhecimento\" é o que os lábios guardam, não o título do sacerdote.",
+        "c": "\"Instrução\" é o que se busca na boca dele; o título é mensageiro."
+      },
+      "hint": "Veja o fim do versículo, depois de \"pois\".",
+      "learningObjective": "Identificar o título do sacerdote no texto.",
+      "evidence": ["Malaquias 2:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Malaquias 2:5, de que foi o pacto do Senhor com Levi?",
+      "verseRef": "Malaquias 2:5",
+      "options": [
+        { "id": "a", "text": "De riqueza e poder" },
+        { "id": "b", "text": "De vida e de paz" },
+        { "id": "c", "text": "De guerra e conquista" },
+        { "id": "d", "text": "De silêncio e isolamento" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Meu pacto com ele foi de vida e de paz",
+      "feedbackCorrect": "O pacto foi de vida e de paz, para que Levi temesse o Senhor.",
+      "feedbackWrong": {
+        "a": "O texto fala de vida e paz, não de riqueza.",
+        "c": "Não há guerra neste pacto; há vida e paz.",
+        "d": "Levi andou com o Senhor; o pacto não é de isolamento."
+      },
+      "hint": "Leia as duas palavras que descrevem o pacto.",
+      "learningObjective": "Observar o conteúdo do pacto com Levi.",
+      "evidence": ["Malaquias 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Malaquias 2:8 na ordem do texto.",
+      "verseRef": "Malaquias 2:8",
+      "options": [
+        { "id": "a", "text": "Vocês se desviaram do caminho" },
+        { "id": "b", "text": "por causa de sua instrução, fizeram muitos tropeçarem" },
+        { "id": "c", "text": "violaram a aliança de Levi" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "violaram a aliança de Levi",
+      "feedbackCorrect": "Desvio, tropeço do povo e violação da aliança, nessa ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo desvio do caminho; a aliança vem no fim."
+      },
+      "hint": "O versículo começa com o desvio de vocês.",
+      "learningObjective": "Reconhecer a sequência de Malaquias 2:8.",
+      "evidence": ["Malaquias 2:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Malaquias 2:6, o que estava na boca de Levi?",
+      "verseRef": "Malaquias 2:6",
+      "options": [
+        { "id": "a", "text": "verdadeira" },
+        { "id": "b", "text": "injustiça" },
+        { "id": "c", "text": "iniquidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A verdadeira instrução estava em sua boca",
+      "feedbackCorrect": "A verdadeira instrução estava na boca dele; a injustiça não se encontrou nos lábios.",
+      "feedbackWrong": {
+        "b": "A injustiça não se encontrou nos lábios; o que estava na boca era a instrução verdadeira.",
+        "c": "Ele afastou muitos da iniquidade; não a tinha na boca."
+      },
+      "hint": "Leia a primeira frase do versículo.",
+      "learningObjective": "Lembrar o que caracterizava a boca de Levi.",
+      "evidence": ["Malaquias 2:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Malaquias 2:7 comunica que se liga a este contexto?",
+      "verseRef": "Malaquias 2:7",
+      "passageA": { "ref": "Malaquias 2:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O sacerdote deve guardar e transmitir o conhecimento do Senhor."
+      },
+      "options": [
+        { "id": "a", "text": "Sacerdócio só ritual" },
+        { "id": "b", "text": "Lábios guardam conhecimento" },
+        { "id": "c", "text": "Povo ensina o sacerdote" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento",
+      "feedbackCorrect": "Os lábios guardam o conhecimento; da boca se busca a instrução.",
+      "feedbackWrong": {
+        "a": "O texto enfatiza conhecimento e instrução, não só ritual.",
+        "c": "É da boca do sacerdote que se busca a instrução."
+      },
+      "hint": "Veja o que os lábios devem fazer.",
+      "learningObjective": "Ligar 2:7 à tarefa de ensinar.",
+      "evidence": ["Malaquias 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Malaquias 2:8, a instrução dos sacerdotes ajudou o povo a andar firme na aliança.",
+      "verseRef": "Malaquias 2:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "por causa de sua instrução, fizeram muitos tropeçarem",
+      "feedbackCorrect": "Foi por causa da instrução deles que muitos tropeçaram.",
+      "feedbackWrong": {
+        "true": "Releia: por causa da instrução deles, muitos tropeçaram."
+      },
+      "hint": "Veja o efeito da instrução sobre o povo.",
+      "learningObjective": "Compreender a causa do tropeço do povo.",
+      "evidence": ["Malaquias 2:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+      "verseRef": "Malaquias 2:8",
+      "options": [
+        { "id": "a", "text": "por causa" },
+        { "id": "b", "text": "caminho" },
+        { "id": "c", "text": "aliança" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa de sua instrução",
+      "feedbackCorrect": "\"Por causa\" liga a instrução deles ao tropeço de muitos.",
+      "feedbackWrong": {
+        "b": "\"Caminho\" é de onde se desviaram; a causa do tropeço vem depois.",
+        "c": "\"Aliança\" é o que violaram; a causa marcada é \"por causa\"."
+      },
+      "hint": "Procure as duas palavras antes de \"de sua instrução\".",
+      "learningObjective": "Reconhecer o marcador de causa no texto.",
+      "evidence": ["Malaquias 2:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Malaquias 2:9 se relaciona com Malaquias 2:8?",
+      "verseRef": "Malaquias 2:8–9",
+      "options": [
+        { "id": "a", "text": "O Senhor os honra apesar da aliança violada" },
+        { "id": "b", "text": "O desvio leva o Senhor a fazê-los desprezíveis" },
+        { "id": "c", "text": "O povo é culpado; os sacerdotes ficam isentos" },
+        { "id": "d", "text": "A lei parcial corrije o tropeço do povo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu os fiz desprezíveis e indignos diante de todo o povo",
+      "feedbackCorrect": "\"Por isso\" liga o desvio ao julgamento: desprezíveis diante do povo.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: foram feitos desprezíveis.",
+        "c": "O julgamento cai sobre os sacerdotes que se desviaram.",
+        "d": "A parcialidade na lei é parte da acusação, não a correção."
+      },
+      "hint": "Veja a expressão \"Por isso\" no início de 2:9.",
+      "learningObjective": "Relacionar desvio e julgamento.",
+      "evidence": ["Malaquias 2:8–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o trecho em Malaquias 2:4–7?",
+      "verseRef": "Malaquias 2:4–5",
+      "options": [
+        { "id": "a", "text": "Mandamento para a aliança permanecer" },
+        { "id": "b", "text": "Pacto de vida, paz e temor" },
+        { "id": "c", "text": "Instrução verdadeira nos lábios" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "para que minha aliança permaneça com Levi",
+      "feedbackCorrect": "Primeiro o mandamento, depois o pacto, e então a instrução fiel.",
+      "feedbackWrong": {
+        "default": "Comece pelo mandamento de 2:4; a instrução vem em 2:6–7."
+      },
+      "hint": "Siga a ordem: mandamento, pacto, boca fiel.",
+      "learningObjective": "Compreender o movimento do ideal sacerdotal.",
+      "evidence": ["Malaquias 2:4", "Malaquias 2:5", "Malaquias 2:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Malaquias 2:9, que expressão introduz o resultado do desvio?",
+      "verseRef": "Malaquias 2:9",
+      "options": [
+        { "id": "a", "text": "Talvez" },
+        { "id": "b", "text": "Porém" },
+        { "id": "c", "text": "também" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Por isso, também eu os fiz desprezíveis",
+      "feedbackCorrect": "\"Também\" marca a resposta do Senhor: ele os fez desprezíveis.",
+      "feedbackWrong": {
+        "a": "Não há dúvida no texto; o Senhor age.",
+        "b": "O marcador de resultado aqui é \"Por isso, também\", não \"Porém\"."
+      },
+      "hint": "Veja a palavra depois de \"Por isso,\" no início.",
+      "learningObjective": "Compreender o marcador do julgamento.",
+      "evidence": ["Malaquias 2:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+      "verseRef": "Malaquias 2:7",
+      "passageA": { "ref": "Malaquias 2:7" },
+      "passageB": { "ref": "Deuteronômio 33:10" },
+      "options": [
+        { "id": "a", "text": "Ensinar os juízos" },
+        { "id": "b", "text": "Guardar só o templo" },
+        { "id": "c", "text": "Silêncio dos lábios" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "da sua boca devem buscar a instrução",
+      "evidence": ["Malaquias 2:7", "Deuteronômio 33:10"],
+      "feedbackCorrect": "Nos dois textos, Levi ensina: juízos, conhecimento e instrução.",
+      "feedbackWrong": {
+        "b": "O foco é ensinar, não só cuidar do prédio.",
+        "c": "Os lábios devem guardar e transmitir, não calar."
+      },
+      "hint": "Compare a tarefa de ensinar em cada texto.",
+      "learningObjective": "Relacionar o mensageiro de Malaquias à bênção de Levi."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Malaquias 2:7–8, a fidelidade do mensageiro não afeta o caminho do povo.",
+      "verseRef": "Malaquias 2:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "fizeram muitos tropeçarem",
+      "feedbackCorrect": "Sem fidelidade, a instrução faz muitos tropeçarem.",
+      "feedbackWrong": {
+        "true": "O texto liga a instrução deles ao tropeço de muitos."
+      },
+      "hint": "Veja o efeito descrito em 2:8.",
+      "learningObjective": "Interpretar o impacto do mensageiro sobre o povo.",
+      "evidence": ["Malaquias 2:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Malaquias 2:7, toque o que os lábios do sacerdote devem guardar.",
+      "verseRef": "Malaquias 2:7",
+      "options": [
+        { "id": "a", "text": "lábios" },
+        { "id": "b", "text": "conhecimento" },
+        { "id": "c", "text": "buscar" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento",
+      "feedbackCorrect": "Guardar o conhecimento sustenta o ofício de mensageiro do Senhor.",
+      "feedbackWrong": {
+        "a": "\"Lábios\" são quem guarda; o que se guarda é o conhecimento.",
+        "c": "\"Buscar\" é o que o povo faz na boca do sacerdote."
+      },
+      "hint": "Veja o objeto do verbo \"guardar\".",
+      "learningObjective": "Sustentar com o texto a tarefa de guardar o conhecimento.",
+      "evidence": ["Malaquias 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Malaquias 2:7–9 sustenta sobre o ensino sacerdotal?",
+      "verseRef": "Malaquias 2:8–9",
+      "options": [
+        { "id": "a", "text": "Sem fidelidade do mensageiro, o povo tropeça" },
+        { "id": "b", "text": "O ensino é opcional; só o ritual importa" },
+        { "id": "c", "text": "O povo tropeça sem ligação com os sacerdotes" },
+        { "id": "d", "text": "Parcialidade na lei honra a aliança de Levi" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fizeram muitos tropeçarem; violaram a aliança de Levi",
+      "feedbackCorrect": "Instrução torta e aliança violada fazem o povo cair.",
+      "feedbackWrong": {
+        "b": "O texto centra conhecimento e instrução nos lábios.",
+        "c": "O tropeço vem \"por causa de sua instrução\".",
+        "d": "A parcialidade é motivo de desprezo, não de honra."
+      },
+      "hint": "Una o ideal de 2:7 ao resultado de 2:8–9.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Malaquias 2:8–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do ensino fiel na Bíblia?",
+      "verseRef": "Malaquias 2:7",
+      "options": [
+        { "id": "a", "text": "Levi deve ensinar os juízos de Deus" },
+        { "id": "b", "text": "O sacerdote guarda o conhecimento" },
+        { "id": "c", "text": "Mestres serão julgados com maior rigor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ele é o mensageiro do Senhor dos Exércitos",
+      "evidence": ["Deuteronômio 33:10", "Malaquias 2:7", "Tiago 3:1"],
+      "feedbackCorrect": "Do chamado de Levi ao aviso aos mestres, ensinar é responsabilidade diante de Deus.",
+      "feedbackWrong": {
+        "default": "Siga a história: Deuteronômio, Malaquias e Tiago."
+      },
+      "hint": "Siga a ordem: lei, profeta e carta.",
+      "learningObjective": "Ver o ensino fiel como fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Malaquias 2:8, que palavra nomeia o pacto que os sacerdotes violaram?",
+      "verseRef": "Malaquias 2:8",
+      "options": [
+        { "id": "a", "text": "templo" },
+        { "id": "b", "text": "aliança" },
+        { "id": "c", "text": "nação" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "violaram a aliança de Levi",
+      "feedbackCorrect": "Violaram a aliança de Levi: o pacto de vida e paz foi quebrado.",
+      "feedbackWrong": {
+        "a": "Não há \"templo\" neste versículo; a palavra é aliança.",
+        "c": "O texto não fala de nação aqui; fala da aliança de Levi."
+      },
+      "hint": "Veja o que foi violado no fim do versículo.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": ["Malaquias 2:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Malaquias 2:8 a Oséias 4:6?",
+      "verseRef": "Malaquias 2:8",
+      "passageA": { "ref": "Malaquias 2:8" },
+      "passageB": { "ref": "Oséias 4:6" },
+      "options": [
+        { "id": "a", "text": "Povo sem conhecimento" },
+        { "id": "b", "text": "Prosperidade sem ensino" },
+        { "id": "c", "text": "Aliança sem responsabilidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa de sua instrução, fizeram muitos tropeçarem",
+      "evidence": ["Malaquias 2:8", "Oséias 4:6"],
+      "feedbackCorrect": "Nos dois textos, falta ou distorção do conhecimento destrói o povo.",
+      "feedbackWrong": {
+        "b": "O tema é conhecimento e instrução, não prosperidade.",
+        "c": "A aliança violaada traz juízo, não isenção."
+      },
+      "hint": "Compare o efeito da falta de conhecimento fiel.",
+      "learningObjective": "Ligar o tropeço em Malaquias à ruína em Oséias."
+    }
+  ]
+}

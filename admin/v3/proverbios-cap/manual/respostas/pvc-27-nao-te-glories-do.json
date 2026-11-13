@@ -1,0 +1,721 @@
+{
+ "study": {
+  "passageRef": "Provérbios 27:1–6",
+  "passages": [
+   {
+    "ref": "Provérbios 27:1–6"
+   },
+   {
+    "ref": "Provérbios 27:7–12"
+   }
+  ],
+  "context": "Não se glorie do amanhã; prefira a repreensão direta e as feridas fiéis do amigo ao beijo enganoso de quem odeia.",
+  "keyword": "Amigo",
+  "keywordGloss": "Quem fere com fidelidade vale mais que o beijo enganoso.",
+  "focusQuestion": "Você tem recebido feridas fiéis ou só beijos que agradam?",
+  "reflectionPrompts": [
+   "Dia de amanhã",
+   "Feridas fiéis",
+   "Conselho cordial"
+  ],
+  "facts": [
+   {
+    "text": "Não se glorie do dia de amanhã, pois não sabe o que o futuro revelará.",
+    "evidenceRef": "Provérbios 27:1",
+    "evidenceSpan": "Não se glorie do dia de amanhã"
+   },
+   {
+    "text": "Melhor é a repreensão direta do que o amor encoberto.",
+    "evidenceRef": "Provérbios 27:5",
+    "evidenceSpan": "Melhor é a repreensão direta"
+   },
+   {
+    "text": "Fiéis são as feridas de quem ama; beijos de quem odeia são enganosos.",
+    "evidenceRef": "Provérbios 27:6",
+    "evidenceSpan": "Fiéis são as feridas causadas por quem ama"
+   },
+   {
+    "text": "O conselho cordial de um amigo traz doçura à alma.",
+    "evidenceRef": "Provérbios 27:9",
+    "evidenceSpan": "o conselho cordial de um amigo"
+   },
+   {
+    "text": "O prudente vê o mal e se retira.",
+    "evidenceRef": "Provérbios 27:12",
+    "evidenceSpan": "O prudente vê o mal e se retira"
+   },
+   {
+    "text": "Que outro te louve, e não a tua boca.",
+    "evidenceRef": "Provérbios 27:2",
+    "evidenceSpan": "Que outro te louve e não a tua boca"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "repreensão",
+    "gloss": "Correção direta melhor que amor escondido."
+   },
+   {
+    "term": "feridas",
+    "gloss": "Marcas fiéis de quem ama de verdade."
+   },
+   {
+    "term": "prudente",
+    "gloss": "Quem vê o mal e se retira, ao contrário dos ingênuos."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Sem glória do amanhã nem autoelogio",
+    "evidenceRef": "Provérbios 27:1–2"
+   },
+   {
+    "label": "Peso da ira e da inveja",
+    "evidenceRef": "Provérbios 27:3–4"
+   },
+   {
+    "label": "Repreensão e feridas fiéis",
+    "evidenceRef": "Provérbios 27:5–6"
+   },
+   {
+    "label": "Amigo, vizinho e prudência",
+    "evidenceRef": "Provérbios 27:7–12"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Pois você não sabe o que o futuro revelará.",
+    "marker": "pois",
+    "evidenceRef": "Provérbios 27:1"
+   },
+   {
+    "kind": "contraste",
+    "text": "Feridas fiéis vs beijos enganosos.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 27:6"
+   },
+   {
+    "kind": "contraste",
+    "text": "Repreensão direta vs amor encoberto.",
+    "marker": null,
+    "evidenceRef": "Provérbios 27:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Tiago 4:14",
+    "bridge": "Incerteza do amanhã"
+   },
+   {
+    "ref": "Gálatas 2:11",
+    "bridge": "Repreensão franca"
+   },
+   {
+    "ref": "Provérbios 17:17",
+    "bridge": "O amigo ama em todo o"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Planejar o amanhã com jactância é sabedoria.",
+    "why": "27:1 proíbe gloriar-se do dia de amanhã."
+   },
+   {
+    "text": "Amor encoberto vale mais que repreensão.",
+    "why": "27:5 diz que a repreensão direta é melhor."
+   },
+   {
+    "text": "Beijos de quem odeia são confiáveis.",
+    "why": "27:6 chama esses beijos de enganosos."
+   }
+  ],
+  "centralInsight": "Humildade sobre o futuro e ferida leal do amigo valem mais que beijo do inimigo.",
+  "anchorQuestion": "O que Provérbios 27:6 diz sobre as feridas de quem ama?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 27:1, deve-se gloriar-se do dia de amanhã.",
+   "verseRef": "Provérbios 27:1",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não se glorie do dia de amanhã",
+   "feedbackCorrect": "O texto manda não se gloriar do amanhã.",
+   "feedbackWrong": {
+    "true": "Releia 27:1: Não se glorie."
+   },
+   "hint": "Veja o verbo de comando.",
+   "learningObjective": "Observar o aviso sobre o amanhã.",
+   "evidence": [
+    "Provérbios 27:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 27:1, toque o que não se deve gloriar.",
+   "verseRef": "Provérbios 27:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "dia de amanhã"
+    },
+    {
+     "id": "b",
+     "text": "futuro"
+    },
+    {
+     "id": "c",
+     "text": "você"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não se glorie do dia de amanhã",
+   "feedbackCorrect": "O objeto é o dia de amanhã.",
+   "feedbackWrong": {
+    "b": "Futuro explica a razão.",
+    "c": "Você é o sujeito implícito."
+   },
+   "hint": "Objeto após Não se glorie.",
+   "learningObjective": "Identificar o alvo da jactância.",
+   "evidence": [
+    "Provérbios 27:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 27:5, o que é melhor que o amor encoberto?",
+   "verseRef": "Provérbios 27:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "A repreensão direta"
+    },
+    {
+     "id": "b",
+     "text": "A ira do insensato"
+    },
+    {
+     "id": "c",
+     "text": "Os beijos de quem odeia"
+    },
+    {
+     "id": "d",
+     "text": "A inveja"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Melhor é a repreensão direta",
+   "feedbackCorrect": "A repreensão direta é melhor que o amor encoberto.",
+   "feedbackWrong": {
+    "b": "A ira é peso, não o melhor.",
+    "c": "Beijos de quem odeia são enganosos.",
+    "d": "A inveja é irresistível no verso 4."
+   },
+   "hint": "Primeiro termo da comparação Melhor.",
+   "learningObjective": "Observar o valor da repreensão.",
+   "evidence": [
+    "Provérbios 27:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 27:1 na ordem do texto.",
+   "verseRef": "Provérbios 27:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não se glorie do dia de amanhã"
+    },
+    {
+     "id": "b",
+     "text": "pois você não sabe"
+    },
+    {
+     "id": "c",
+     "text": "o que o futuro revelará"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Não se glorie do dia de amanhã",
+   "feedbackCorrect": "Proibição e razão da incerteza.",
+   "feedbackWrong": {
+    "default": "Comece pelo Não se glorie."
+   },
+   "hint": "O versículo abre com Não.",
+   "learningObjective": "Seguir a ordem do aviso.",
+   "evidence": [
+    "Provérbios 27:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 27:6, fiéis são as quê causadas por quem ama?",
+   "verseRef": "Provérbios 27:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "feridas"
+    },
+    {
+     "id": "b",
+     "text": "beijos"
+    },
+    {
+     "id": "c",
+     "text": "pedras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Fiéis são as feridas",
+   "feedbackCorrect": "As feridas de quem ama são fiéis.",
+   "feedbackWrong": {
+    "b": "Beijos de quem odeia são enganosos.",
+    "c": "Pedra aparece no peso de 27:3."
+   },
+   "hint": "Sujeito após Fiéis são.",
+   "learningObjective": "Lembrar as feridas fiéis.",
+   "evidence": [
+    "Provérbios 27:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 27:6 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 27:6",
+   "passageA": {
+    "ref": "Provérbios 27:6",
+    "text": "Fiéis são as feridas causadas por quem ama"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Ferida leal do amigo vale mais que beijo falso."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Beijo sempre melhor"
+    },
+    {
+     "id": "b",
+     "text": "Ferida leal edifica"
+    },
+    {
+     "id": "c",
+     "text": "Ódio sincero salva"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Fiéis são as feridas causadas por quem ama",
+   "feedbackCorrect": "As feridas fiéis ligam o verso ao amigo leal.",
+   "feedbackWrong": {
+    "a": "Beijos de quem odeia enganam.",
+    "c": "Quem odeia engana com beijos."
+   },
+   "hint": "Pense no valor da correção leal.",
+   "learningObjective": "Ligar 27:6 ao amigo fiel.",
+   "evidence": [
+    "Provérbios 27:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 27:5, o amor encoberto é apresentado como superior à repreensão direta.",
+   "verseRef": "Provérbios 27:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "Melhor é a repreensão direta do que o amor encoberto",
+   "feedbackCorrect": "O texto põe a repreensão acima do amor encoberto.",
+   "feedbackWrong": {
+    "true": "Releia 27:5: Melhor é a repreensão."
+   },
+   "hint": "Compare os dois termos.",
+   "learningObjective": "Compreender o contraste da correção.",
+   "evidence": [
+    "Provérbios 27:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 27:1, toque a palavra que marca a razão do aviso.",
+   "verseRef": "Provérbios 27:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "pois"
+    },
+    {
+     "id": "b",
+     "text": "amanhã"
+    },
+    {
+     "id": "c",
+     "text": "futuro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pois você não sabe",
+   "feedbackCorrect": "\"Pois\" introduz a razão.",
+   "feedbackWrong": {
+    "b": "Amanhã é o objeto da glória.",
+    "c": "Futuro completa a razão."
+   },
+   "hint": "Marcador no meio do verso.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Provérbios 27:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 27:6 estabelece entre amigo e inimigo?",
+   "verseRef": "Provérbios 27:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Contraste entre feridas fiéis e beijos enganosos"
+    },
+    {
+     "id": "b",
+     "text": "Igualdade entre amar e odiar"
+    },
+    {
+     "id": "c",
+     "text": "Beijos de quem odeia são fiéis"
+    },
+    {
+     "id": "d",
+     "text": "Feridas de quem ama são enganosas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Fiéis são as feridas causadas por quem ama",
+   "feedbackCorrect": "O mas opõe feridas fiéis a beijos enganosos.",
+   "feedbackWrong": {
+    "b": "Há contraste claro.",
+    "c": "Beijos de quem odeia enganam.",
+    "d": "Feridas de quem ama são fiéis."
+   },
+   "hint": "Leia o mas no meio.",
+   "learningObjective": "Relacionar ferida e beijo.",
+   "evidence": [
+    "Provérbios 27:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o ensino em Provérbios 27:1–12?",
+   "verseRef": "Provérbios 27:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sem glória do amanhã nem autoelogio"
+    },
+    {
+     "id": "b",
+     "text": "Repreensão e feridas fiéis"
+    },
+    {
+     "id": "c",
+     "text": "Amigo, vizinho e prudência"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Não se glorie do dia de amanhã",
+   "feedbackCorrect": "Da humildade do futuro à lealdade do amigo.",
+   "feedbackWrong": {
+    "default": "Comece pelo amanhã."
+   },
+   "hint": "O fim fala do prudente.",
+   "learningObjective": "Compreender o movimento do trecho.",
+   "evidence": [
+    "Provérbios 27:1",
+    "Provérbios 27:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 27:1, você não sabe o que o quê revelará?",
+   "verseRef": "Provérbios 27:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "futuro"
+    },
+    {
+     "id": "b",
+     "text": "amigo"
+    },
+    {
+     "id": "c",
+     "text": "óleo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o que o futuro revelará",
+   "feedbackCorrect": "Você não sabe o que o futuro revelará.",
+   "feedbackWrong": {
+    "b": "Não é amigo; é futuro.",
+    "c": "Óleo aparece em 27:9."
+   },
+   "hint": "Objeto do revelará.",
+   "learningObjective": "Lembrar a incerteza do futuro.",
+   "evidence": [
+    "Provérbios 27:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 27:1 a Tiago 4:14?",
+   "verseRef": "Provérbios 27:1",
+   "passageA": {
+    "ref": "Provérbios 27:1",
+    "text": "pois você não sabe o que o futuro revelará"
+   },
+   "passageB": {
+    "ref": "Tiago 4:14"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Não sabeis o dia de amanhã"
+    },
+    {
+     "id": "b",
+     "text": "Gloriai-vos do futuro"
+    },
+    {
+     "id": "c",
+     "text": "Ignore o amigo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pois você não sabe",
+   "feedbackCorrect": "Os dois textos cortam a jactância sobre o amanhã.",
+   "feedbackWrong": {
+    "b": "Ambos proíbem a glória.",
+    "c": "O tema aqui é o futuro incerto."
+   },
+   "hint": "Compare a incerteza do amanhã.",
+   "learningObjective": "Cruzar o aviso do amanhã.",
+   "evidence": [
+    "Provérbios 27:1",
+    "Tiago 4:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 27:6, as feridas de quem ama são fiéis, e os beijos de quem odeia são enganosos.",
+   "verseRef": "Provérbios 27:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "Fiéis são as feridas causadas por quem ama",
+   "feedbackCorrect": "O contraste sustenta a leitura das feridas fiéis.",
+   "feedbackWrong": {
+    "false": "Releia 27:6: feridas fiéis; beijos enganosos."
+   },
+   "hint": "Veja o contraste feridas/beijos.",
+   "learningObjective": "Sustentar a leitura do amigo leal.",
+   "evidence": [
+    "Provérbios 27:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 27:6, toque o trecho que sustenta a fidelidade da correção.",
+   "verseRef": "Provérbios 27:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fiéis são"
+    },
+    {
+     "id": "b",
+     "text": "beijos"
+    },
+    {
+     "id": "c",
+     "text": "odeia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Fiéis são as feridas causadas por quem ama",
+   "feedbackCorrect": "Fiéis são as feridas de quem ama.",
+   "feedbackWrong": {
+    "b": "Beijos de quem odeia enganam.",
+    "c": "Odeia descreve a fonte dos beijos."
+   },
+   "hint": "Abertura do contraste.",
+   "learningObjective": "Sustentar as feridas fiéis.",
+   "evidence": [
+    "Provérbios 27:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 27:1–6 sustenta?",
+   "verseRef": "Provérbios 27:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Humildade no futuro e correção leal do amigo"
+    },
+    {
+     "id": "b",
+     "text": "Gloriar-se do amanhã edifica"
+    },
+    {
+     "id": "c",
+     "text": "Amor encoberto supera a repreensão"
+    },
+    {
+     "id": "d",
+     "text": "Beijos de quem odeia são seguros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Melhor é a repreensão direta",
+   "feedbackCorrect": "Sem jactância do amanhã e com feridas fiéis: essa é a leitura. ",
+   "feedbackWrong": {
+    "b": "27:1 proíbe a glória.",
+    "c": "27:5 prefere a repreensão.",
+    "d": "27:6 chama os beijos de enganosos."
+   },
+   "hint": "Una 27:1 a 27:5–6.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 27:5",
+    "Provérbios 27:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da humildade e da correção?",
+   "verseRef": "Provérbios 27:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não se glorie do amanhã"
+    },
+    {
+     "id": "b",
+     "text": "Tiago lembra a incerteza do amanhã"
+    },
+    {
+     "id": "c",
+     "text": "Paulo repreende Pedro com franqueza"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Não se glorie do dia de amanhã",
+   "feedbackCorrect": "Do aviso do amanhã a Tiago e à repreensão franca.",
+   "feedbackWrong": {
+    "default": "Comece por 27:1."
+   },
+   "hint": "De Provérbios a Tiago e Gálatas.",
+   "learningObjective": "Ver o tema atravessar a Bíblia.",
+   "evidence": [
+    "Provérbios 27:1",
+    "Tiago 4:14",
+    "Gálatas 2:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 27:5, o que é melhor que o amor encoberto?",
+   "verseRef": "Provérbios 27:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "repreensão"
+    },
+    {
+     "id": "b",
+     "text": "inveja"
+    },
+    {
+     "id": "c",
+     "text": "fúria"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Melhor é a repreensão direta",
+   "feedbackCorrect": "O termo é a repreensão.",
+   "feedbackWrong": {
+    "b": "Inveja aparece em 27:4.",
+    "c": "Fúria aparece em 27:4."
+   },
+   "hint": "Primeiro bem da comparação.",
+   "learningObjective": "Lembrar o termo da correção.",
+   "evidence": [
+    "Provérbios 27:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 27:6 a Provérbios 17:17?",
+   "verseRef": "Provérbios 27:6",
+   "passageA": {
+    "ref": "Provérbios 27:6",
+    "text": "Fiéis são as feridas causadas por quem ama"
+   },
+   "passageB": {
+    "ref": "Provérbios 17:17"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amigo ama sempre"
+    },
+    {
+     "id": "b",
+     "text": "Beijo do inimigo basta"
+    },
+    {
+     "id": "c",
+     "text": "Amanhã é certo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Fiéis são as feridas causadas por quem ama",
+   "feedbackCorrect": "Nos dois textos o amigo verdadeiro ama de modo leal.",
+   "feedbackWrong": {
+    "b": "Beijos de quem odeia enganam.",
+    "c": "O amanhã é incerto em 27:1."
+   },
+   "hint": "Compare a lealdade do amigo.",
+   "learningObjective": "Ligar feridas fiéis ao amigo que ama.",
+   "evidence": [
+    "Provérbios 27:6",
+    "Provérbios 17:17"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 15:14–19",
+  "passages": [
+   {
+    "ref": "Jó 15:14–19"
+   },
+   {
+    "ref": "Jó 15:20–25"
+   }
+  ],
+  "context": "No segundo ciclo, Elifaz aperta o cerco: o homem é impuro e o ímpio é atormentado — teologia que vira ataque.",
+  "keyword": "Estendeu a mão",
+  "keywordGloss": "Elifaz descreve o ímpio como quem desafia a Deus — e aponta a acusação para Jó.",
+  "focusQuestion": "Quando a teologia vira ataque, você ainda deixa espaço para o sofredor respirar?",
+  "reflectionPrompts": [
+   "Teologia que aperta",
+   "Ímpio atormentado",
+   "Ataque sem ar"
+  ],
+  "facts": [
+   {
+    "text": "Elifaz pergunta o que é o homem para se tornar puro.",
+    "evidenceRef": "Jó 15:14",
+    "evidenceSpan": "Que é o homem, para que se torne puro?"
+   },
+   {
+    "text": "Deus não confia em seus santos.",
+    "evidenceRef": "Jó 15:15",
+    "evidenceSpan": "Deus não confia em seus santos"
+   },
+   {
+    "text": "O homem bebe a iniquidade como água.",
+    "evidenceRef": "Jó 15:16",
+    "evidenceSpan": "bebe a iniquidade como água"
+   },
+   {
+    "text": "Todos os dias o ímpio é atormentado.",
+    "evidenceRef": "Jó 15:20",
+    "evidenceSpan": "Todos os dias o ímpio é atormentado"
+   },
+   {
+    "text": "A angústia e a tribulação aterrorizam o ímpio.",
+    "evidenceRef": "Jó 15:24",
+    "evidenceSpan": "A angústia e a tribulação o aterrorizam"
+   },
+   {
+    "text": "O ímpio estendeu a mão contra Deus.",
+    "evidenceRef": "Jó 15:25",
+    "evidenceSpan": "estendeu a mão contra Deus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "iniquidade",
+    "gloss": "O mal que Elifaz diz que o homem bebe como água."
+   },
+   {
+    "term": "ímpio",
+    "gloss": "Retrato que Elifaz pinta e aplica como acusação."
+   },
+   {
+    "term": "angústia",
+    "gloss": "O que aterroriza quem, segundo Elifaz, desafiou a Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Elifaz declara a impureza do homem",
+    "evidenceRef": "Jó 15:14–16"
+   },
+   {
+    "label": "Elifaz cita a tradição dos sábios",
+    "evidenceRef": "Jó 15:17–19"
+   },
+   {
+    "label": "Retrato do ímpio atormentado",
+    "evidenceRef": "Jó 15:20–24"
+   },
+   {
+    "label": "Causa: estendeu a mão contra Deus",
+    "evidenceRef": "Jó 15:25"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A angústia prevalece porque ele estendeu a mão contra Deus.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 15:25"
+   },
+   {
+    "kind": "contraste",
+    "text": "Quanto menos o homem, se nem os céus são puros.",
+    "marker": "Quanto menos",
+    "evidenceRef": "Jó 15:16"
+   },
+   {
+    "kind": "resultado",
+    "text": "O ímpio não crê que voltará das trevas.",
+    "marker": null,
+    "evidenceRef": "Jó 15:22"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Romanos 3:10",
+    "bridge": "Ninguém é justo"
+   },
+   {
+    "ref": "Salmos 14:3",
+    "bridge": "Todos se desviaram"
+   },
+   {
+    "ref": "Tiago 1:19",
+    "bridge": "Pronto para ouvir"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Elifaz só consola, sem acusar.",
+    "why": "O retrato do ímpio aperta o cerco sobre Jó."
+   },
+   {
+    "text": "O texto prova que Jó estendeu a mão contra Deus.",
+    "why": "É a acusação de Elifaz; o livro ainda julgará os amigos."
+   },
+   {
+    "text": "Toda teologia dura é sempre falsa.",
+    "why": "Elifaz acerta a impureza e erra ao transformar isso em ataque cego."
+   }
+  ],
+  "centralInsight": "Quando a teologia vira ataque, o sofredor fica sem espaço para respirar.",
+  "anchorQuestion": "O que o ímpio estendeu contra Deus, segundo Elifaz em Jó 15:25?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 15:25, Elifaz diz que o ímpio estendeu a mão contra Deus.",
+   "verseRef": "Jó 15:25",
+   "correctOptionId": "true",
+   "evidenceSpan": "estendeu a mão contra Deus",
+   "feedbackCorrect": "Elifaz fecha o retrato com a mão estendida contra Deus.",
+   "feedbackWrong": {
+    "false": "Releia 15:25."
+   },
+   "hint": "Veja o fim do retrato.",
+   "learningObjective": "Observar a acusação de Elifaz.",
+   "evidence": [
+    "Jó 15:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 15:16, toque o que o homem bebe como água.",
+   "verseRef": "Jó 15:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "iniquidade"
+    },
+    {
+     "id": "b",
+     "text": "água"
+    },
+    {
+     "id": "c",
+     "text": "homem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "bebe a iniquidade como água",
+   "feedbackCorrect": "O homem bebe a iniquidade.",
+   "feedbackWrong": {
+    "b": "Água é a comparação.",
+    "c": "Homem é quem bebe."
+   },
+   "hint": "Veja o objeto de bebe.",
+   "learningObjective": "Identificar o que se bebe.",
+   "evidence": [
+    "Jó 15:16"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 15:20, o que acontece ao ímpio todos os dias?",
+   "verseRef": "Jó 15:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "É atormentado"
+    },
+    {
+     "id": "b",
+     "text": "É exaltado"
+    },
+    {
+     "id": "c",
+     "text": "É esquecido"
+    },
+    {
+     "id": "d",
+     "text": "É coroado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Todos os dias o ímpio é atormentado",
+   "feedbackCorrect": "O ímpio é atormentado todos os dias.",
+   "feedbackWrong": {
+    "b": "O texto fala de tormento.",
+    "c": "Não diz esquecido.",
+    "d": "Não diz coroado."
+   },
+   "hint": "Leia o começo do versículo.",
+   "learningObjective": "Observar o tormento do ímpio.",
+   "evidence": [
+    "Jó 15:20"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 15:14 na ordem do texto.",
+   "verseRef": "Jó 15:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Que é o homem, para que se torne puro?"
+    },
+    {
+     "id": "b",
+     "text": "E o que nasce da mulher"
+    },
+    {
+     "id": "c",
+     "text": "para que seja justo?"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Que é o homem, para que se torne puro?",
+   "feedbackCorrect": "Primeiro a pureza; depois a justiça.",
+   "feedbackWrong": {
+    "default": "Comece pela pergunta sobre o homem."
+   },
+   "hint": "Comece por Que é o homem.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 15:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 15:24, o que aterroriza o ímpio junto com a tribulação?",
+   "verseRef": "Jó 15:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "angústia"
+    },
+    {
+     "id": "b",
+     "text": "paz"
+    },
+    {
+     "id": "c",
+     "text": "júbilo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A angústia e a tribulação o aterrorizam",
+   "feedbackCorrect": "A palavra é angústia.",
+   "feedbackWrong": {
+    "b": "Não há paz no versículo.",
+    "c": "Não há júbilo no versículo."
+   },
+   "hint": "Veja o primeiro sujeito.",
+   "learningObjective": "Lembrar o que aterroriza.",
+   "evidence": [
+    "Jó 15:24"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 15:25 comunica que se liga a este contexto?",
+   "verseRef": "Jó 15:25",
+   "passageA": {
+    "ref": "Jó 15:25"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Elifaz aperta o cerco: a teologia do ímpio vira ataque contra Jó."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Teologia que vira ataque"
+    },
+    {
+     "id": "b",
+     "text": "Consolo sem acusação"
+    },
+    {
+     "id": "c",
+     "text": "Vitória fácil de Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "estendeu a mão contra Deus",
+   "feedbackCorrect": "A mão estendida é a ponta do ataque.",
+   "feedbackWrong": {
+    "b": "Não há consolo puro aqui.",
+    "c": "Não há vitória fácil."
+   },
+   "hint": "Pense no alvo da acusação.",
+   "learningObjective": "Ligar o versículo ao ataque.",
+   "evidence": [
+    "Jó 15:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 15:16, Elifaz afirma que o homem é mais puro que os céus.",
+   "verseRef": "Jó 15:15–16",
+   "correctOptionId": "false",
+   "evidenceSpan": "Quanto menos o homem",
+   "feedbackCorrect": "O quanto menos mostra o homem abaixo dos céus.",
+   "feedbackWrong": {
+    "true": "Releia 15:15–16."
+   },
+   "hint": "Compare céus e homem.",
+   "learningObjective": "Compreender o contraste.",
+   "evidence": [
+    "Jó 15:15–16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 15:25, toque a palavra que marca a causa do tormento.",
+   "verseRef": "Jó 15:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "mão"
+    },
+    {
+     "id": "c",
+     "text": "Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque estendeu a mão",
+   "feedbackCorrect": "Porque introduz a causa.",
+   "feedbackWrong": {
+    "b": "Mão é o que foi estendido.",
+    "c": "Deus é contra quem a mão se estende."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Jó 15:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 15:20–25 se relaciona com 15:14–16?",
+   "verseRef": "Jó 15:14–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Aplica a impureza humana ao retrato acusador do ímpio"
+    },
+    {
+     "id": "b",
+     "text": "Nega que o homem beba iniquidade"
+    },
+    {
+     "id": "c",
+     "text": "Consola Jó sem qualquer ataque"
+    },
+    {
+     "id": "d",
+     "text": "Afirma que o ímpio nunca sofre"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Todos os dias o ímpio é atormentado",
+   "feedbackCorrect": "Da impureza geral ao retrato que aperta Jó.",
+   "feedbackWrong": {
+    "b": "15:16 afirma a iniquidade.",
+    "c": "O tom é de ataque.",
+    "d": "15:20 fala de tormento."
+   },
+   "hint": "Una o começo e o fim.",
+   "learningObjective": "Relacionar impureza e ataque.",
+   "evidence": [
+    "Jó 15:14–25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o discurso de Elifaz em 15:14–25?",
+   "verseRef": "Jó 15:14–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Declara a impureza do homem"
+    },
+    {
+     "id": "b",
+     "text": "Retrata o ímpio atormentado"
+    },
+    {
+     "id": "c",
+     "text": "Acusa quem estendeu a mão contra Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "estendeu a mão contra Deus",
+   "feedbackCorrect": "Impureza, retrato e acusação.",
+   "feedbackWrong": {
+    "default": "Comece pela impureza."
+   },
+   "hint": "Pense: impureza → retrato → acusação.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 15:14–25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 15:25, o que o ímpio estendeu contra Deus?",
+   "verseRef": "Jó 15:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "mão"
+    },
+    {
+     "id": "b",
+     "text": "paz"
+    },
+    {
+     "id": "c",
+     "text": "altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "estendeu a mão contra Deus",
+   "feedbackCorrect": "A palavra é mão.",
+   "feedbackWrong": {
+    "b": "Não há paz.",
+    "c": "Não há altar."
+   },
+   "hint": "Veja o objeto de estendeu.",
+   "learningObjective": "Lembrar o gesto da acusação.",
+   "evidence": [
+    "Jó 15:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 15:14 a Romanos 3:10?",
+   "verseRef": "Jó 15:14",
+   "passageA": {
+    "ref": "Jó 15:14"
+   },
+   "passageB": {
+    "ref": "Romanos 3:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ninguém é justo"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem véu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que seja justo?",
+   "feedbackCorrect": "Nos dois textos, a justiça humana é questionada.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a pergunta sobre justiça.",
+   "learningObjective": "Relacionar Elifaz a Romanos.",
+   "evidence": [
+    "Jó 15:14",
+    "Romanos 3:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 15:14–25 sustenta que Elifaz só oferece consolo, sem transformar teologia em ataque.",
+   "verseRef": "Jó 15:20–25",
+   "correctOptionId": "false",
+   "evidenceSpan": "estendeu a mão contra Deus",
+   "feedbackCorrect": "O retrato do ímpio e a mão estendida apertam o cerco.",
+   "feedbackWrong": {
+    "true": "O fim do trecho é acusação."
+   },
+   "hint": "Veja o tom de 15:20–25.",
+   "learningObjective": "Interpretar a teologia como ataque.",
+   "evidence": [
+    "Jó 15:20–25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 15:16, toque o trecho que sustenta a gravidade da impureza.",
+   "verseRef": "Jó 15:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "como água"
+    },
+    {
+     "id": "b",
+     "text": "Quanto menos"
+    },
+    {
+     "id": "c",
+     "text": "corrupto"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "bebe a iniquidade como água",
+   "feedbackCorrect": "Beber como água sustenta a gravidade.",
+   "feedbackWrong": {
+    "b": "Quanto menos introduz a comparação.",
+    "c": "Corrupto descreve o homem."
+   },
+   "hint": "Veja a comparação do beber.",
+   "learningObjective": "Sustentar a leitura da impureza.",
+   "evidence": [
+    "Jó 15:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 15:14–25 sustenta?",
+   "verseRef": "Jó 15:14–25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quando a teologia vira ataque, o sofredor fica sem ar"
+    },
+    {
+     "id": "b",
+     "text": "Elifaz prova que Jó é inocente"
+    },
+    {
+     "id": "c",
+     "text": "O ímpio nunca é atormentado"
+    },
+    {
+     "id": "d",
+     "text": "A tradição dos sábios absolve Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "estendeu a mão contra Deus",
+   "feedbackCorrect": "O cerco do discurso sustenta essa leitura.",
+   "feedbackWrong": {
+    "b": "O tom é de acusação.",
+    "c": "15:20 fala de tormento.",
+    "d": "A tradição é usada para apertar."
+   },
+   "hint": "Una impureza e acusação.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 15:14–25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra pureza humana questionada?",
+   "verseRef": "Jó 15:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elifaz pergunta como o homem seria justo"
+    },
+    {
+     "id": "b",
+     "text": "Paulo declara que não há justo"
+    },
+    {
+     "id": "c",
+     "text": "O salmista diz que todos se desviaram"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "para que seja justo?",
+   "feedbackCorrect": "O fio vai de Elifaz a Romanos e ao Salmo.",
+   "feedbackWrong": {
+    "default": "Comece por Elifaz."
+   },
+   "hint": "Siga: Elifaz → Paulo → Salmo.",
+   "learningObjective": "Ver o fio da impureza.",
+   "evidence": [
+    "Jó 15:14",
+    "Romanos 3:10",
+    "Salmos 14:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 15:16, além de abominável, como o homem é descrito?",
+   "verseRef": "Jó 15:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "corrupto"
+    },
+    {
+     "id": "b",
+     "text": "puro"
+    },
+    {
+     "id": "c",
+     "text": "santo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "abominável e corrupto",
+   "feedbackCorrect": "O termo é corrupto.",
+   "feedbackWrong": {
+    "b": "O texto não diz puro.",
+    "c": "O texto não diz santo."
+   },
+   "hint": "Veja o segundo adjetivo.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 15:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 15:17 a Tiago 1:19?",
+   "verseRef": "Jó 15:17",
+   "passageA": {
+    "ref": "Jó 15:17"
+   },
+   "passageB": {
+    "ref": "Tiago 1:19"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pronto para ouvir"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de terras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ouça-me, e eu te mostrarei",
+   "feedbackCorrect": "Nos dois textos, ouvir vem antes de falar.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare o pedido de ouvir.",
+   "learningObjective": "Ligar o ouvir a Tiago.",
+   "evidence": [
+    "Jó 15:17",
+    "Tiago 1:19"
+   ]
+  }
+ ]
+}

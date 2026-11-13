@@ -1,0 +1,293 @@
+{
+  "slug": "1samuel-cap",
+  "prefix": "s1c",
+  "book": "1 Samuel",
+  "chapters": 31,
+  "title": "1 Samuel",
+  "description": "1 Samuel capítulo a capítulo: Samuel, Saul e a subida de Davi.",
+  "icon": "👑",
+  "color": "#6A8EAE",
+  "order": 13,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["samuel"],
+  "modules": [
+    {
+      "title": "Samuel e a arca · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "1 Samuel 1:24–28",
+          "title": "O menino no templo",
+          "intro": "Ana leva o filho que pediu ao Senhor e o apresenta em Siló.",
+          "insight": "Ana devolve ao Senhor o filho que Ele lhe deu: a vida consagrada começa na gratidão.",
+          "objective": "Consagrar ao Senhor"
+        },
+        {
+          "ref": "1 Samuel 2:1–10",
+          "title": "O cântico de Ana",
+          "intro": "Ana ora e louva o Deus que humilha e exalta.",
+          "insight": "O Senhor pesa os feitos, guarda os fiéis e não deixa o homem triunfar só pela força.",
+          "objective": "Louvar quem exalta"
+        },
+        {
+          "ref": "1 Samuel 3:11–18",
+          "title": "A palavra difícil",
+          "intro": "O Senhor fala a Samuel sobre o juízo da casa de Eli.",
+          "insight": "Samuel conta tudo a Eli, e Eli reconhece: é o Senhor; faça o que for justo.",
+          "objective": "Não ocultar a palavra"
+        },
+        {
+          "ref": "1 Samuel 4:10–18",
+          "title": "A arca capturada",
+          "intro": "Israel perde a batalha, a arca é tomada e Eli cai ao ouvir a notícia.",
+          "insight": "Sem o Senhor, a arca não salva: a derrota revela um povo e uma casa em crise.",
+          "objective": "Não tratar Deus como amuleto"
+        },
+        {
+          "ref": "1 Samuel 5:1–7",
+          "title": "Dagom cai",
+          "intro": "Os filisteus colocam a arca na casa de Dagom e descobrem quem é o Deus de Israel.",
+          "insight": "Diante da arca do Senhor, o ídolo cai e a mão de Deus pesa sobre quem o desafia.",
+          "objective": "Só o Senhor é Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Samuel e a arca",
+        "intro": "Revise a consagração de Samuel, o cântico de Ana, a palavra a Eli, a derrota e Dagom caído.",
+        "insight": "O Senhor fala, julga e mostra que nenhum ídolo se compara a Ele"
+      }
+    },
+    {
+      "title": "Volta e pedido de rei · cap. 6–10",
+      "scenes": [
+        {
+          "ref": "1 Samuel 6:13–19",
+          "title": "A arca em Bete-Semes",
+          "intro": "A arca volta a Israel, e o povo se alegra — mas também aprende o temor do Senhor.",
+          "insight": "Alegria e temor juntos: a arca do Senhor não se trata com leveza.",
+          "objective": "Temer a presença de Deus"
+        },
+        {
+          "ref": "1 Samuel 7:3–12",
+          "title": "Até aqui nos ajudou",
+          "intro": "Samuel chama Israel a deixar os ídolos e clamar ao Senhor em Mispá.",
+          "insight": "Quando o povo se volta ao Senhor, Ele troveja e livra; Ebenézer marca a ajuda até aqui.",
+          "objective": "Voltar só ao Senhor"
+        },
+        {
+          "ref": "1 Samuel 8:10–18",
+          "title": "O costume do rei",
+          "intro": "Samuel descreve ao povo o que um rei humano fará com filhos, terras e rebanhos.",
+          "insight": "Pedir um rei tem preço: o povo clama depois, mas o Senhor não ouve naquele dia.",
+          "objective": "Pesar o pedido de rei"
+        },
+        {
+          "ref": "1 Samuel 9:15–24",
+          "title": "O homem de Benjamim",
+          "intro": "O Senhor prepara Samuel para encontrar Saul e honrá-lo à mesa.",
+          "insight": "Antes que Saul chegue, o Senhor já escolheu quem ungirá por príncipe sobre Israel.",
+          "objective": "Deus prepara o encontro"
+        },
+        {
+          "ref": "1 Samuel 10:9–16",
+          "title": "Coração mudado",
+          "intro": "Sinais se cumprem, o Espírito se apossa de Saul, e ele profetiza entre os profetas.",
+          "insight": "Deus muda o coração de Saul, mas ele ainda esconde o assunto do reino.",
+          "objective": "Receber o que Deus muda"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Volta e pedido de rei",
+        "intro": "Revise a volta da arca, Ebenézer, o aviso sobre o rei, o encontro com Saul e o coração mudado.",
+        "insight": "Israel pede rei, e o Senhor conduz a história mesmo assim"
+      }
+    },
+    {
+      "title": "Saul no trono · cap. 11–15",
+      "scenes": [
+        {
+          "ref": "1 Samuel 11:5–13",
+          "title": "Socorro a Jabes",
+          "intro": "Saul ouve o choro do povo e o Espírito de Deus o impulsiona a salvar Jabes-Gileade.",
+          "insight": "O Senhor dá grande livramento, e Saul recusa matar quem antes o rejeitava.",
+          "objective": "Livrar o oprimido"
+        },
+        {
+          "ref": "1 Samuel 12:13–22",
+          "title": "Não vos desvieis",
+          "intro": "Samuel entrega o rei pedido e chama o povo a temer e servir ao Senhor.",
+          "insight": "Mesmo após o mal do pedido, o Senhor não abandona o povo por causa do seu nome.",
+          "objective": "Servir de todo o coração"
+        },
+        {
+          "ref": "1 Samuel 13:1–7",
+          "title": "Medo em Gilgal",
+          "intro": "Jônatas fere a guarnição, os filisteus avançam, e Israel se esconde angustiado.",
+          "insight": "Quando a pressão cresce, o povo foge e o temor toma conta do acampamento.",
+          "objective": "Enfrentar a pressão"
+        },
+        {
+          "ref": "1 Samuel 14:24–30",
+          "title": "O juramento de Saul",
+          "intro": "Saul faz o povo jurar não comer, e Jônatas prova mel sem saber.",
+          "insight": "Um voto precipitado cansa o povo e atrapalha a vitória que Deus dava.",
+          "objective": "Não jurar sem pensar"
+        },
+        {
+          "ref": "1 Samuel 15:22–29",
+          "title": "Obedecer é melhor",
+          "intro": "Samuel confronta Saul: sacrifício não substitui obediência.",
+          "insight": "Rebeldia é como feitiçaria: rejeitar a palavra do Senhor é ser rejeitado como rei.",
+          "objective": "Obedecer à palavra"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Saul no trono",
+        "intro": "Revise Jabes, o aviso de Samuel, o medo em Gilgal, o juramento precipitado e a rejeição de Saul.",
+        "insight": "Reinar sem ouvir o Senhor leva à rejeição"
+      }
+    },
+    {
+      "title": "Davi entra em cena · cap. 16–20",
+      "scenes": [
+        {
+          "ref": "1 Samuel 16:1–7",
+          "title": "O Senhor vê o coração",
+          "intro": "Samuel vai a Belém, e o Senhor corrige o olhar humano sobre os filhos de Jessé.",
+          "insight": "O homem observa o exterior, mas o Senhor contempla o coração.",
+          "objective": "Olhar como o Senhor"
+        },
+        {
+          "ref": "1 Samuel 17:32–40",
+          "title": "Cinco pedras lisas",
+          "intro": "Davi se oferece a Saul e conta como o Senhor o livrou do leão e do urso.",
+          "insight": "Davi confia no mesmo Senhor e vai ao filisteu com cajado, funda e pedras do ribeiro.",
+          "objective": "Confiar no livramento"
+        },
+        {
+          "ref": "1 Samuel 18:1–9",
+          "title": "Aliança e ciúme",
+          "intro": "Jônatas ama Davi como a si mesmo, enquanto as canções do povo inflamam Saul.",
+          "insight": "Amizade fiel e inveja nascem no mesmo dia: Saul deixa de olhar Davi com bons olhos.",
+          "objective": "Fidelidade sem inveja"
+        },
+        {
+          "ref": "1 Samuel 19:8–17",
+          "title": "Fuga pela janela",
+          "intro": "Saul tenta matar Davi, e Mical o ajuda a escapar de noite.",
+          "insight": "Quando a perseguição aperta, Deus usa até a casa de Saul para guardar Davi.",
+          "objective": "Guardar a vida dada"
+        },
+        {
+          "ref": "1 Samuel 20:30–42",
+          "title": "Vai em paz",
+          "intro": "A ira de Saul explode contra Jônatas, e a aliança com Davi se confirma na despedida.",
+          "insight": "Jônatas escolhe a fidelidade a Davi e ao Senhor acima do trono do pai.",
+          "objective": "Honrar a aliança"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Davi entra em cena",
+        "intro": "Revise o olhar do Senhor, a confiança de Davi, a aliança com Jônatas, a fuga e a despedida.",
+        "insight": "Deus levanta Davi e firma amizades fiéis no meio da crise"
+      }
+    },
+    {
+      "title": "Davi perseguido · cap. 21–25",
+      "scenes": [
+        {
+          "ref": "1 Samuel 21:1–9",
+          "title": "Pão e espada em Nobe",
+          "intro": "Davi chega ao sacerdote Aimeleque pedindo pão e arma.",
+          "insight": "Em fuga, Davi recebe o pão sagrado e a espada de Golias — provisão no caminho.",
+          "objective": "Provisão na fuga"
+        },
+        {
+          "ref": "1 Samuel 22:11–19",
+          "title": "A matança em Nobe",
+          "intro": "Saul acusa os sacerdotes e ordena a morte; só Doegue obedece.",
+          "insight": "A paranoia de Saul derrama sangue inocente contra os sacerdotes do Senhor.",
+          "objective": "Não ferir os inocentes"
+        },
+        {
+          "ref": "1 Samuel 23:7–14",
+          "title": "Consulta em Queila",
+          "intro": "Saul cerca Queila, e Davi pergunta ao Senhor se a cidade o entregará.",
+          "insight": "Davi ouve o Senhor, sai a tempo, e Deus não o entrega nas mãos de Saul.",
+          "objective": "Consultar antes de agir"
+        },
+        {
+          "ref": "1 Samuel 24:4–12",
+          "title": "A orla do manto",
+          "intro": "Na caverna, Davi pode matar Saul, mas corta só a orla do manto.",
+          "insight": "Davi não estende a mão contra o ungido do Senhor; deixa a vingança com Deus.",
+          "objective": "Respeitar o ungido"
+        },
+        {
+          "ref": "1 Samuel 25:23–31",
+          "title": "A sabedoria de Abigail",
+          "intro": "Abigail encontra Davi e o impede de derramar sangue por causa de Nabal.",
+          "insight": "O Senhor usa Abigail para deter a vingança e guardar o futuro de Davi.",
+          "objective": "Frear a vingança"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Davi perseguido",
+        "intro": "Revise Nobe, a matança, Queila, a caverna e Abigail.",
+        "insight": "Mesmo perseguido, Davi aprende a confiar e a não se vingar"
+      }
+    },
+    {
+      "title": "O fim de Saul · cap. 26–31",
+      "scenes": [
+        {
+          "ref": "1 Samuel 26:7–16",
+          "title": "Lança e bilha",
+          "intro": "De novo Davi encontra Saul dormindo e leva a lança e a bilha de água.",
+          "insight": "Davi prova de novo que não matará o ungido: o Senhor decide o tempo de Saul.",
+          "objective": "Esperar o tempo de Deus"
+        },
+        {
+          "ref": "1 Samuel 27:1–7",
+          "title": "Davi em Gate",
+          "intro": "Cansado de fugir, Davi busca refúgio com Aquis e recebe Ziclague.",
+          "insight": "O medo leva Davi à terra dos filisteus, e Saul para de persegui-lo.",
+          "objective": "Caminhos sob pressão"
+        },
+        {
+          "ref": "1 Samuel 28:7–15",
+          "title": "A médium de En-Dor",
+          "intro": "Sem resposta de Deus, Saul busca uma médium para falar com Samuel.",
+          "insight": "Quando Deus se cala, Saul busca atalhos proibidos e encontra só angústia.",
+          "objective": "Não buscar atalhos"
+        },
+        {
+          "ref": "1 Samuel 29:3–11",
+          "title": "Rejeitado na batalha",
+          "intro": "Os príncipes filisteus não aceitam Davi na guerra, e Aquis o manda embora.",
+          "insight": "Deus fecha a porta da batalha errada e livra Davi de lutar contra Israel.",
+          "objective": "Portas que Deus fecha"
+        },
+        {
+          "ref": "1 Samuel 30:1–8",
+          "title": "Fortaleceu-se no Senhor",
+          "intro": "Ziclague queima, as famílias são levadas, e o povo fala em apedrejar Davi.",
+          "insight": "No fundo do poço, Davi se fortalece no Senhor e pergunta se deve perseguir.",
+          "objective": "Fortalecer-se no Senhor"
+        },
+        {
+          "ref": "1 Samuel 31:1–7",
+          "title": "Gilboa",
+          "intro": "Os filisteus vencem; Jônatas cai, e Saul se lança sobre a própria espada.",
+          "insight": "O reinado de Saul termina em Gilboa: sem o Senhor, a coroa não segura.",
+          "objective": "O fim sem o Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: O fim de Saul",
+        "intro": "Revise a segunda poupança de Saul, Gate, En-Dor, a rejeição filisteia, Ziclague e Gilboa.",
+        "insight": "Enquanto Saul cai, Davi aprende a se fortalecer no Senhor"
+      }
+    }
+  ]
+}

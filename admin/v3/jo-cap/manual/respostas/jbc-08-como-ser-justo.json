@@ -1,0 +1,367 @@
+{
+ "study": {
+  "passageRef": "Jó 9:2–7",
+  "passages": [{ "ref": "Jó 9:1–12" }],
+  "context": "Jó responde a Bildade. Admite a grandeza de Deus e pergunta como o homem pode ser justo diante dele.",
+  "keyword": "justo",
+  "keywordGloss": "A pergunta de Jó: como o homem pode ser justo diante de Deus?",
+  "focusQuestion": "Diante da grandeza de Deus, você tenta empatar com Ele ou se curva?",
+  "reflectionPrompts": ["Justo diante de Deus", "Poder que move montes", "Ele passa e não se vê"],
+  "facts": [
+   { "text": "Jó pergunta como o homem pode ser justo diante de Deus.", "evidenceRef": "Jó 9:2", "evidenceSpan": "como pode o homem ser justo diante de Deus?" },
+   { "text": "Quem discute com Deus não responde a uma de mil coisas.", "evidenceRef": "Jó 9:3", "evidenceSpan": "não conseguirá responder a uma de mil coisas" },
+   { "text": "Deus é sábio de coração e grande em poder.", "evidenceRef": "Jó 9:4", "evidenceSpan": "Ele é sábio de coração e grande em poder" },
+   { "text": "Deus remove as montanhas sem que o percebam.", "evidenceRef": "Jó 9:5", "evidenceSpan": "remove as montanhas sem que o percebam" },
+   { "text": "Deus realiza grandes feitos que não podemos compreender.", "evidenceRef": "Jó 9:10", "evidenceSpan": "grandes feitos que não podemos compreender" },
+   { "text": "Deus passa diante de Jó, e Jó não o vê.", "evidenceRef": "Jó 9:11", "evidenceSpan": "Ele passa diante de mim, e eu não o vejo" }
+  ],
+  "keyTerms": [
+   { "term": "justo", "gloss": "A questão central: justiça humana diante de Deus." },
+   { "term": "poder", "gloss": "A grandeza de Deus que Jó reconhece." },
+   { "term": "maravilhas", "gloss": "Feitos de Deus que são incontáveis." }
+  ],
+  "structure": [
+   { "label": "Pergunta sobre ser justo diante de Deus", "evidenceRef": "Jó 9:2–3" },
+   { "label": "Sabedoria e poder de Deus", "evidenceRef": "Jó 9:4" },
+   { "label": "Obras na criação e nos céus", "evidenceRef": "Jó 9:5–10" },
+   { "label": "Deus passa e ninguém o detém", "evidenceRef": "Jó 9:11–12" }
+  ],
+  "relations": [
+   { "kind": "causa", "text": "Jó admite a regra porque pergunta como o homem pode ser justo diante de Deus.", "marker": "porque", "evidenceRef": "Jó 9:2" },
+   { "kind": "resultado", "text": "Quem se opõe a Deus não encontra paz.", "marker": null, "evidenceRef": "Jó 9:4" },
+   { "kind": "contraste", "text": "Deus passa diante de Jó; Jó, porém, não o vê nem o percebe.", "marker": null, "evidenceRef": "Jó 9:11" }
+  ],
+  "crossRefs": [
+   { "ref": "Romanos 3:20", "bridge": "Ninguém justo perante Deus" },
+   { "ref": "Isaías 40:26", "bridge": "Criador das estrelas" },
+   { "ref": "Salmos 115:3", "bridge": "Deus faz o que quer" }
+  ],
+  "misreadings": [
+   { "text": "Jó nega que Deus exista, pois não o vê.", "why": "Ele afirma que Deus passa e age; a questão é não perceber, não negar." },
+   { "text": "Reconhecer o poder de Deus anula toda oração e clamor.", "why": "Jó continua falando a Deus e defendendo seus caminhos depois." },
+   { "text": "Ser justo diante de Deus é fácil se o homem se esforçar bastante.", "why": "Jó pergunta justamente como isso seria possível." }
+  ],
+  "centralInsight": "Diante do Santo, Jó sabe que não há tribunal humano capaz de empatar com Deus.",
+  "anchorQuestion": "O que Jó pergunta em Jó 9:2 sobre o homem e Deus?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 9:5, Jó diz que Deus remove as montanhas sem que o percebam.",
+   "verseRef": "Jó 9:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "remove as montanhas sem que o percebam",
+   "feedbackCorrect": "O poder de Deus move montanhas sem ser percebido.",
+   "feedbackWrong": { "false": "Releia 9:5: Ele remove as montanhas sem que o percebam." },
+   "hint": "Veja o que Ele faz às montanhas.",
+   "learningObjective": "Observar o poder de Deus na criação.",
+   "evidence": ["Jó 9:5"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 9:2, toque o que Jó pergunta se o homem pode ser diante de Deus.",
+   "verseRef": "Jó 9:2",
+   "options": [
+    { "id": "a", "text": "justo" },
+    { "id": "b", "text": "verdade" },
+    { "id": "c", "text": "homem" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como pode o homem ser justo diante de Deus?",
+   "feedbackCorrect": "A pergunta gira em torno de ser justo diante de Deus.",
+   "feedbackWrong": { "b": "\"Verdade\" abre o versículo; a pergunta é sobre ser justo.", "c": "\"Homem\" é o sujeito; o predicado perguntado é justo." },
+   "hint": "Procure o adjetivo depois de \"ser\".",
+   "learningObjective": "Identificar a pergunta central de Jó.",
+   "evidence": ["Jó 9:2"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 9:3, quantas coisas quem discute com Deus consegue responder?",
+   "verseRef": "Jó 9:3",
+   "options": [
+    { "id": "a", "text": "Nem uma de mil" },
+    { "id": "b", "text": "Todas as mil" },
+    { "id": "c", "text": "Apenas as fáceis" },
+    { "id": "d", "text": "As que os amigos ensinam" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não conseguirá responder a uma de mil coisas",
+   "feedbackCorrect": "O descompasso é total: nem uma de mil.",
+   "feedbackWrong": { "b": "O texto diz o contrário.", "c": "Não há distinção de fáceis.", "d": "Não há amigos neste versículo." },
+   "hint": "Fim do versículo.",
+   "learningObjective": "Registrar o limite de quem discute com Deus.",
+   "evidence": ["Jó 9:3"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Ordene as peças de Jó 9:11 na ordem do texto.",
+   "verseRef": "Jó 9:11",
+   "options": [
+    { "id": "a", "text": "Ele passa diante de mim, e eu não o vejo" },
+    { "id": "b", "text": "segue à minha frente" },
+    { "id": "c", "text": "e eu não o percebo" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Ele passa diante de mim, e eu não o vejo",
+   "feedbackCorrect": "Passa sem ser visto; segue sem ser percebido.",
+   "feedbackWrong": { "default": "Comece por \"Ele passa diante de mim\"." },
+   "hint": "O versículo abre com \"Eis que Ele passa\".",
+   "learningObjective": "Seguir a ordem literal de 9:11.",
+   "evidence": ["Jó 9:11"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 9:4, que palavra nomeia o que Deus tem além de ser sábio de coração?",
+   "verseRef": "Jó 9:4",
+   "options": [
+    { "id": "a", "text": "poder" },
+    { "id": "b", "text": "medo" },
+    { "id": "c", "text": "ouro" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sábio de coração e grande em poder",
+   "feedbackCorrect": "Sabedoria e poder andam juntos na descrição.",
+   "feedbackWrong": { "b": "Não há medo neste atributo.", "c": "O texto fala de poder, não de ouro." },
+   "hint": "Fim da primeira frase.",
+   "learningObjective": "Lembrar o atributo do poder.",
+   "evidence": ["Jó 9:4"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 9:2 comunica que se liga a este contexto?",
+   "verseRef": "Jó 9:2",
+   "passageA": { "ref": "Jó 9:2", "text": "como pode o homem ser justo diante de Deus?" },
+   "passageB": { "ref": "Contexto", "text": "Diante do Santo, não há tribunal humano que empate com Deus." },
+   "options": [
+    { "id": "a", "text": "Justiça humana limitada" },
+    { "id": "b", "text": "Vitória fácil no tribunal" },
+    { "id": "c", "text": "Deus como réu" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como pode o homem ser justo diante de Deus?",
+   "feedbackCorrect": "A pergunta já admite o limite humano.",
+   "feedbackWrong": { "b": "Não há vitória fácil neste versículo.", "c": "Jó não coloca Deus no banco dos réus aqui." },
+   "hint": "Pense no que a pergunta admite.",
+   "learningObjective": "Ligar o versículo ao insight da cena.",
+   "evidence": ["Jó 9:2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 9:2, Jó liga o que admite à pergunta sobre como o homem pode ser justo diante de Deus.",
+   "verseRef": "Jó 9:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "eu sei que assim é; porque, como pode o homem ser justo diante de Deus?",
+   "feedbackCorrect": "O \"porque\" une a admissão à pergunta sobre a justiça.",
+   "feedbackWrong": { "false": "Releia: sei que assim é; porque, como pode o homem ser justo…" },
+   "hint": "Ache a palavra que liga as duas frases.",
+   "learningObjective": "Compreender a relação de causa em 9:2.",
+   "evidence": ["Jó 9:2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 9:2, toque a palavra que marca a razão da admissão de Jó.",
+   "verseRef": "Jó 9:2",
+   "options": [
+    { "id": "a", "text": "porque" },
+    { "id": "b", "text": "verdade" },
+    { "id": "c", "text": "homem" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque, como pode o homem ser justo diante de Deus?",
+   "feedbackCorrect": "\"Porque\" introduz a razão da admissão.",
+   "feedbackWrong": { "b": "\"Verdade\" abre o versículo; o marcador é \"porque\".", "c": "\"Homem\" é o sujeito da pergunta." },
+   "hint": "Depois de \"assim é;\".",
+   "learningObjective": "Tocar o marcador de causa.",
+   "evidence": ["Jó 9:2"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Qual relação Jó 9:11–12 mostra entre a presença de Deus e o homem?",
+   "verseRef": "Jó 9:11–12",
+   "options": [
+    { "id": "a", "text": "Deus age e passa; o homem não o detém nem o percebe" },
+    { "id": "b", "text": "O homem controla quando Deus passa" },
+    { "id": "c", "text": "Deus só age se o homem o enxergar" },
+    { "id": "d", "text": "Jó vê Deus claramente a cada passo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem poderá impedi-lo?",
+   "feedbackCorrect": "Passa sem ser visto; arrebata sem ser impedido.",
+   "feedbackWrong": { "b": "Ninguém impede Deus.", "c": "Ele age mesmo sem ser percebido.", "d": "Jó diz que não o vê." },
+   "hint": "Una 9:11 com a pergunta de 9:12.",
+   "learningObjective": "Compreender a relação presença × impotência humana.",
+   "evidence": ["Jó 9:11", "Jó 9:12"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Ordene os movimentos do argumento de Jó.",
+   "verseRef": "Jó 9:2–12",
+   "options": [
+    { "id": "a", "text": "Pergunta sobre ser justo diante de Deus" },
+    { "id": "b", "text": "Obras na criação e nos céus" },
+    { "id": "c", "text": "Deus passa e ninguém o detém" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "como pode o homem ser justo diante de Deus?",
+   "feedbackCorrect": "Pergunta, obras, passagem irresistível.",
+   "feedbackWrong": { "default": "Comece pela pergunta de 9:2." },
+   "hint": "Siga a ordem do discurso.",
+   "learningObjective": "Ordenar a estrutura do argumento.",
+   "evidence": ["Jó 9:2", "Jó 9:5", "Jó 9:12"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 9:10, que palavra nomeia os feitos incontáveis de Deus?",
+   "verseRef": "Jó 9:10",
+   "options": [
+    { "id": "a", "text": "maravilhas" },
+    { "id": "b", "text": "falhas" },
+    { "id": "c", "text": "acaso" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "maravilhas que são incontáveis",
+   "feedbackCorrect": "\"Maravilhas\" carrega a ação incompreensível de Deus.",
+   "feedbackWrong": { "b": "Não há falhas neste versículo.", "c": "O texto fala de maravilhas, não de acaso." },
+   "hint": "Segunda metade do versículo.",
+   "learningObjective": "Lembrar a palavra que carrega as obras.",
+   "evidence": ["Jó 9:10"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 9:2 a Romanos 3:20?",
+   "verseRef": "Jó 9:2",
+   "passageA": { "ref": "Jó 9:2", "text": "como pode o homem ser justo diante de Deus?" },
+   "passageB": { "ref": "Romanos 3:20" },
+   "options": [
+    { "id": "a", "text": "Ninguém justo perante Deus" },
+    { "id": "b", "text": "Lei que salva sozinha" },
+    { "id": "c", "text": "Festa do tribunal" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como pode o homem ser justo diante de Deus?",
+   "feedbackCorrect": "Os dois textos enfrentam a justiça humana diante de Deus.",
+   "feedbackWrong": { "b": "Romanos nega justificação pela lei.", "c": "Não há festa neste paralelo." },
+   "hint": "Pense no limite da justiça humana.",
+   "learningObjective": "Cruzar a pergunta de Jó com Romanos.",
+   "evidence": ["Jó 9:2"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 9:11, Jó afirma que Deus não existe, porque ele não o vê.",
+   "verseRef": "Jó 9:11",
+   "correctOptionId": "false",
+   "evidenceSpan": "Ele passa diante de mim, e eu não o vejo",
+   "feedbackCorrect": "Jó afirma que Deus passa; o problema é não perceber, não negar.",
+   "feedbackWrong": { "true": "Ele diz que Deus passa; não nega a existência." },
+   "hint": "Veja o sujeito de \"passa\".",
+   "learningObjective": "Rejeitar a leitura de negação de Deus.",
+   "evidence": ["Jó 9:11"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 9:12, toque o trecho que sustenta que ninguém detém a ação de Deus.",
+   "verseRef": "Jó 9:12",
+   "options": [
+    { "id": "a", "text": "Quem poderá impedi-lo" },
+    { "id": "b", "text": "a presa" },
+    { "id": "c", "text": "Eis que" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem poderá impedi-lo?",
+   "feedbackCorrect": "A pergunta retórica sustenta que ninguém o impede.",
+   "feedbackWrong": { "b": "\"Presa\" é o objeto; a pergunta é sobre impedir.", "c": "\"Eis que\" só introduz a cena." },
+   "hint": "Meio do versículo.",
+   "learningObjective": "Tocar a evidência da soberania irresistível.",
+   "evidence": ["Jó 9:12"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Qual leitura o trecho sustenta melhor?",
+   "verseRef": "Jó 9:2–12",
+   "options": [
+    { "id": "a", "text": "Diante de Deus não há tribunal humano que empate" },
+    { "id": "b", "text": "O homem vence Deus se estudar bastante" },
+    { "id": "c", "text": "Deus só existe quando Jó o enxerga" },
+    { "id": "d", "text": "Discutir com Deus é fácil e seguro" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem se opôs a Ele e encontrou paz?",
+   "feedbackCorrect": "Pergunta, poder e passagem apontam para o descompasso.",
+   "feedbackWrong": { "b": "Nem uma de mil respostas.", "c": "Deus passa mesmo sem ser visto.", "d": "Quem se opõe não encontra paz." },
+   "hint": "Una 9:2–4 com 9:12.",
+   "learningObjective": "Escolher a interpretação sustentável.",
+   "evidence": ["Jó 9:2", "Jó 9:4", "Jó 9:12"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Ordene a lógica do reconhecimento de Jó.",
+   "verseRef": "Jó 9:2–12",
+   "options": [
+    { "id": "a", "text": "Admitir o limite de ser justo diante de Deus" },
+    { "id": "b", "text": "Reconhecer o poder que move a criação" },
+    { "id": "c", "text": "Confessar que ninguém impede a ação divina" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Quem poderá impedi-lo?",
+   "feedbackCorrect": "Limite, poder, irresistibilidade.",
+   "feedbackWrong": { "default": "Comece pela pergunta de 9:2." },
+   "hint": "Da pergunta à criação, depois a 9:12.",
+   "learningObjective": "Encadear a lógica do reconhecimento.",
+   "evidence": ["Jó 9:2", "Jó 9:5", "Jó 9:12"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 9:4, que palavra completa a frase \"sábio de ___\"?",
+   "verseRef": "Jó 9:4",
+   "options": [
+    { "id": "a", "text": "coração" },
+    { "id": "b", "text": "ouro" },
+    { "id": "c", "text": "medo" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ele é sábio de coração e grande em poder",
+   "feedbackCorrect": "\"Coração\" carrega a sabedoria profunda de Deus.",
+   "feedbackWrong": { "b": "Não há ouro neste atributo.", "c": "O texto fala de coração, não de medo." },
+   "hint": "Depois de \"sábio de\".",
+   "learningObjective": "Lembrar o termo que carrega a sabedoria divina.",
+   "evidence": ["Jó 9:4"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 9:12 a Salmos 115:3?",
+   "verseRef": "Jó 9:12",
+   "passageA": { "ref": "Jó 9:12", "text": "Quem lhe dirá: O que estás fazendo?" },
+   "passageB": { "ref": "Salmos 115:3" },
+   "options": [
+    { "id": "a", "text": "Deus faz o que quer" },
+    { "id": "b", "text": "Homem manda em Deus" },
+    { "id": "c", "text": "Céu vazio" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem lhe dirá: O que estás fazendo?",
+   "feedbackCorrect": "Ambos afirmam a soberania de Deus sem contestação humana.",
+   "feedbackWrong": { "b": "O texto pergunta quem ousaria mandar.", "c": "Não há céu vazio neste paralelo." },
+   "hint": "Pense em quem pode questionar o que Deus faz.",
+   "learningObjective": "Cruzar a soberania em Jó e nos Salmos.",
+   "evidence": ["Jó 9:12"]
+  }
+ ]
+}

@@ -1,0 +1,932 @@
+{
+  "study": {
+    "passageRef": "Êxodo 25:17–22",
+    "passages": [
+      {
+        "ref": "Êxodo 25:17–22"
+      },
+      {
+        "ref": "Êxodo 26:30–37"
+      },
+      {
+        "ref": "Êxodo 28:1–12"
+      },
+      {
+        "ref": "Êxodo 29:38–46"
+      },
+      {
+        "ref": "Êxodo 31:12–18"
+      }
+    ],
+    "context": "Esta travessia revisa o santuário: propiciatório, modelo, Arão, culto diário e sábado.",
+    "keyword": "Santuário",
+    "keywordGloss": "Deus quer habitar no meio do povo santificado.",
+    "focusQuestion": "O que em você precisa voltar ao centro: o encontro com o Senhor?",
+    "reflectionPrompts": [
+      "Encontro no propiciatório",
+      "Conforme o modelo",
+      "Habitar no meio"
+    ],
+    "facts": [
+      {
+        "text": "Ali Deus se encontra e fala do alto do propiciatório.",
+        "evidenceRef": "Êxodo 25:22",
+        "evidenceSpan": "ali me encontrarei com você"
+      },
+      {
+        "text": "O tabernáculo se levanta conforme o modelo do monte.",
+        "evidenceRef": "Êxodo 26:30",
+        "evidenceSpan": "de acordo com o modelo"
+      },
+      {
+        "text": "Arão leva os nomes de Israel sobre os ombros diante do SENHOR.",
+        "evidenceRef": "Êxodo 28:12",
+        "evidenceSpan": "levará os nomes deles sobre ambos os ombros"
+      },
+      {
+        "text": "Deus habitará no meio dos filhos de Israel.",
+        "evidenceRef": "Êxodo 29:45",
+        "evidenceSpan": "habitarei no meio dos filhos de Israel"
+      },
+      {
+        "text": "O sábado é sinal entre o Senhor e Israel.",
+        "evidenceRef": "Êxodo 31:13",
+        "evidenceSpan": "é um sinal entre mim e vós"
+      },
+      {
+        "text": "As tábuas foram escritas pelo dedo de Deus.",
+        "evidenceRef": "Êxodo 31:18",
+        "evidenceSpan": "escritas pelo dedo de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "propiciatório",
+        "gloss": "Lugar do encontro e da fala de Deus."
+      },
+      {
+        "term": "modelo",
+        "gloss": "Padrão mostrado no monte."
+      },
+      {
+        "term": "sinal",
+        "gloss": "O sábado entre o Senhor e Israel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Propiciatório e encontro",
+        "evidenceRef": "Êxodo 25:17–22"
+      },
+      {
+        "label": "Modelo e véu",
+        "evidenceRef": "Êxodo 26:30–33"
+      },
+      {
+        "label": "Arão e o culto contínuo",
+        "evidenceRef": "Êxodo 28:1–12"
+      },
+      {
+        "label": "Sábado e tábuas",
+        "evidenceRef": "Êxodo 31:12–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O sábado é sinal para saberem que o Senhor santifica.",
+        "marker": "para",
+        "evidenceRef": "Êxodo 31:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ali Deus se encontra e fala a Israel.",
+        "marker": "ali",
+        "evidenceRef": "Êxodo 25:22"
+      },
+      {
+        "kind": "propósito",
+        "text": "O véu faz separação entre os lugares santos.",
+        "marker": "separação",
+        "evidenceRef": "Êxodo 26:33"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 9:5",
+        "bridge": "Querubins sobre o propiciatório"
+      },
+      {
+        "ref": "Hebreus 8:5",
+        "bridge": "Fazer conforme o modelo"
+      },
+      {
+        "ref": "Apocalipse 21:3",
+        "bridge": "Deus habitará com os homens"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O santuário é invenção humana sem modelo.",
+        "why": "Deve seguir o modelo mostrado no monte."
+      },
+      {
+        "text": "Deus não quer habitar no meio do povo.",
+        "why": "Ele promete habitarei no meio."
+      },
+      {
+        "text": "O sábado não se liga à aliança.",
+        "why": "É sinal e aliança perpétua."
+      }
+    ],
+    "centralInsight": "Deus quer habitar no meio do povo santificado",
+    "anchorQuestion": "Onde Deus promete encontrar-se e falar a Moisés?"
+  },
+  "questions": [
+    {
+      "type": "true_false",
+      "question": "O propiciatório ficaria sob a arca, nunca sobre ela.",
+      "verseRef": "Êxodo 25:21",
+      "correctOptionId": "false",
+      "evidenceSpan": "colocarás o propiciatório sobre a arca",
+      "feedbackCorrect": "O propiciatório vai sobre a arca.",
+      "feedbackWrong": {
+        "true": "Releia: sobre a arca."
+      },
+      "hint": "Onde se coloca o propiciatório?",
+      "learningObjective": "Observar a posição do propiciatório.",
+      "evidence": [
+        "Êxodo 25:21"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "find_in_text",
+      "question": "Em Êxodo 26:30, toque a palavra que nomeia o padrão do monte.",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "modelo"
+        },
+        {
+          "id": "b",
+          "text": "monte"
+        },
+        {
+          "id": "c",
+          "text": "tabernáculo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo",
+      "feedbackCorrect": "O padrão é o modelo.",
+      "feedbackWrong": {
+        "b": "Monte é o lugar.",
+        "c": "Tabernáculo é o que se levanta."
+      },
+      "hint": "O que foi mostrado no monte?",
+      "learningObjective": "Identificar o modelo.",
+      "evidence": [
+        "Êxodo 26:30"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "choice",
+      "question": "Segundo Êxodo 29:45, o que Deus promete?",
+      "verseRef": "Êxodo 29:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "Habitar no meio de Israel e ser o seu Deus"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar o acampamento"
+        },
+        {
+          "id": "c",
+          "text": "Ficar só no Egito"
+        },
+        {
+          "id": "d",
+          "text": "Esquecer o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Ele habitará no meio deles.",
+      "feedbackWrong": {
+        "b": "Há habitação.",
+        "c": "Não fica no Egito.",
+        "d": "Será o seu Deus."
+      },
+      "hint": "Leia a promessa.",
+      "learningObjective": "Observar a habitação.",
+      "evidence": [
+        "Êxodo 29:45"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "order",
+      "question": "Monte Êxodo 25:22 na ordem do texto.",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "E ali me encontrarei com você"
+        },
+        {
+          "id": "b",
+          "text": "e, do alto do propiciatório, entre os dois querubins"
+        },
+        {
+          "id": "c",
+          "text": "falarei tudo o que eu lhe ordenar para os filhos de Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Encontro, lugar, fala.",
+      "feedbackWrong": {
+        "default": "Comece pelo encontro."
+      },
+      "hint": "O versículo começa com E ali.",
+      "learningObjective": "Reconhecer Êxodo 25:22.",
+      "evidence": [
+        "Êxodo 25:22"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "complete",
+      "question": "Em Êxodo 31:13, o sábado é um ___ entre o Senhor e Israel.",
+      "verseRef": "Êxodo 31:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "sinal"
+        },
+        {
+          "id": "b",
+          "text": "muro"
+        },
+        {
+          "id": "c",
+          "text": "jogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é um sinal entre mim e vós",
+      "feedbackCorrect": "É um sinal.",
+      "feedbackWrong": {
+        "b": "Não é muro.",
+        "c": "O termo é sinal."
+      },
+      "hint": "É um ___.",
+      "learningObjective": "Lembrar o sinal.",
+      "evidence": [
+        "Êxodo 31:13"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "connect",
+      "question": "O que Êxodo 25:22 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 25:22",
+      "passageA": {
+        "ref": "Êxodo 25:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus quer habitar e falar no meio do povo santificado."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Encontro sobre o propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio eterno"
+        },
+        {
+          "id": "c",
+          "text": "Arca vazia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Ali Ele se encontra e fala.",
+      "feedbackWrong": {
+        "b": "Há fala.",
+        "c": "Há encontro."
+      },
+      "hint": "Compare encontro e habitação.",
+      "learningObjective": "Ligar encontro e santuário.",
+      "evidence": [
+        "Êxodo 25:22"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "find_in_text",
+      "question": "Em Êxodo 28:12, toque o que Arão levará sobre os ombros.",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "nomes"
+        },
+        {
+          "id": "b",
+          "text": "ombreiras"
+        },
+        {
+          "id": "c",
+          "text": "memória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levará os nomes deles sobre ambos os ombros",
+      "feedbackCorrect": "Leva os nomes sobre os ombros.",
+      "feedbackWrong": {
+        "b": "Ombreiras sustentam.",
+        "c": "Memória é o fim."
+      },
+      "hint": "O que vai sobre os ombros?",
+      "learningObjective": "Identificar os nomes.",
+      "evidence": [
+        "Êxodo 28:12"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "order",
+      "question": "Monte Êxodo 31:18 na ordem do texto.",
+      "verseRef": "Êxodo 31:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "deu a Moisés as duas tábuas do Testemunho"
+        },
+        {
+          "id": "b",
+          "text": "tábuas de pedra"
+        },
+        {
+          "id": "c",
+          "text": "escritas pelo dedo de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "escritas pelo dedo de Deus",
+      "feedbackCorrect": "Tábuas, pedra, dedo de Deus.",
+      "feedbackWrong": {
+        "default": "Comece por deu a Moisés."
+      },
+      "hint": "O fim do versículo marca quem escreveu.",
+      "learningObjective": "Reconhecer Êxodo 31:18.",
+      "evidence": [
+        "Êxodo 31:18"
+      ],
+      "difficulty": "semente"
+    },
+    {
+      "type": "true_false",
+      "question": "Em Êxodo 26:33, o véu une o Santo Lugar e o Santo dos Santos sem separação.",
+      "verseRef": "Êxodo 26:33",
+      "correctOptionId": "false",
+      "evidenceSpan": "esse véu fará separação",
+      "feedbackCorrect": "O véu faz separação.",
+      "feedbackWrong": {
+        "true": "Releia: fará separação."
+      },
+      "hint": "O que o véu fará?",
+      "learningObjective": "Compreender a separação.",
+      "evidence": [
+        "Êxodo 26:33"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "find_in_text",
+      "question": "Em Êxodo 31:13, toque a palavra que introduz o propósito do sinal.",
+      "verseRef": "Êxodo 31:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "para"
+        },
+        {
+          "id": "b",
+          "text": "sinal"
+        },
+        {
+          "id": "c",
+          "text": "sábados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que saibam que eu sou o Senhor",
+      "feedbackCorrect": "\"Para\" introduz o propósito.",
+      "feedbackWrong": {
+        "b": "Sinal é o nome.",
+        "c": "Sábados é o que se guarda."
+      },
+      "hint": "Qual palavra precede \"que saibam\"?",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "Êxodo 31:13"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "choice",
+      "question": "Como Êxodo 25:22 liga o propiciatório à ação de Deus?",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ali Ele se encontra e fala o que ordenar"
+        },
+        {
+          "id": "b",
+          "text": "Ali o povo inventa deuses"
+        },
+        {
+          "id": "c",
+          "text": "Ali Moisés se cala para sempre"
+        },
+        {
+          "id": "d",
+          "text": "Ali os querubins substituem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Encontro e fala no propiciatório.",
+      "feedbackWrong": {
+        "b": "Não há invenção de deuses.",
+        "c": "Deus fala.",
+        "d": "Deus fala."
+      },
+      "hint": "O que Deus faz ali?",
+      "learningObjective": "Relacionar lugar e fala.",
+      "evidence": [
+        "Êxodo 25:22"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "order",
+      "question": "Como avança a revisão do santuário?",
+      "verseRef": "Êxodo 25:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Propiciatório e encontro"
+        },
+        {
+          "id": "b",
+          "text": "Modelo e véu"
+        },
+        {
+          "id": "c",
+          "text": "Sábado e tábuas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Encontro, modelo, sinal.",
+      "feedbackWrong": {
+        "default": "Comece pelo propiciatório."
+      },
+      "hint": "Primeiro o encontro; no fim o sábado.",
+      "learningObjective": "Compreender o bloco.",
+      "evidence": [
+        "Êxodo 25:22",
+        "Êxodo 26:30",
+        "Êxodo 31:13"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "complete",
+      "question": "Em Êxodo 26:33, o véu fará ___ entre os lugares.",
+      "verseRef": "Êxodo 26:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "separação"
+        },
+        {
+          "id": "b",
+          "text": "mistura"
+        },
+        {
+          "id": "c",
+          "text": "venda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fará separação",
+      "feedbackCorrect": "Fará separação.",
+      "feedbackWrong": {
+        "b": "Não mistura.",
+        "c": "O termo é separação."
+      },
+      "hint": "Fará ___.",
+      "learningObjective": "Lembrar a função do véu.",
+      "evidence": [
+        "Êxodo 26:33"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "connect",
+      "question": "O que liga Êxodo 26:30 a Hebreus 8:5?",
+      "verseRef": "Êxodo 26:30",
+      "passageA": {
+        "ref": "Êxodo 26:30"
+      },
+      "passageB": {
+        "ref": "Hebreus 8:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazer conforme o modelo"
+        },
+        {
+          "id": "b",
+          "text": "Quebrar as tábuas"
+        },
+        {
+          "id": "c",
+          "text": "Recusar o monte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo",
+      "feedbackCorrect": "Hebreus cita o modelo do monte.",
+      "feedbackWrong": {
+        "b": "O elo é o modelo.",
+        "c": "O modelo foi mostrado no monte."
+      },
+      "hint": "Que ordem Hebreus lembra?",
+      "learningObjective": "Relacionar modelo.",
+      "evidence": [
+        "Êxodo 26:30",
+        "Hebreus 8:5"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "find_in_text",
+      "question": "Em Êxodo 29:46, toque o verbo do propósito de tirar do Egito.",
+      "verseRef": "Êxodo 29:46",
+      "options": [
+        {
+          "id": "a",
+          "text": "habitar"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para habitar no meio deles",
+      "feedbackCorrect": "O propósito é habitar no meio deles.",
+      "feedbackWrong": {
+        "b": "Egito é a origem.",
+        "c": "Senhor é quem age."
+      },
+      "hint": "Qual verbo segue \"para\"?",
+      "learningObjective": "Tocar o propósito.",
+      "evidence": [
+        "Êxodo 29:46"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "order",
+      "question": "Monte a ordem: encontro, sacerdócio, culto contínuo.",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encontro no propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "Arão leva os nomes"
+        },
+        {
+          "id": "c",
+          "text": "Holocausto contínuo à porta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Encontro, sacerdote, culto.",
+      "feedbackWrong": {
+        "default": "Comece pelo encontro."
+      },
+      "hint": "Siga a ordem do bloco.",
+      "learningObjective": "Ordenar o fio do santuário.",
+      "evidence": [
+        "Êxodo 25:22",
+        "Êxodo 28:12",
+        "Êxodo 29:42"
+      ],
+      "difficulty": "caminhada"
+    },
+    {
+      "type": "true_false",
+      "question": "Êxodo 25–31 sustenta que Deus quer habitar e falar no meio do povo, com santuário conforme o seu modelo.",
+      "verseRef": "Êxodo 29:45",
+      "correctOptionId": "true",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Habitação, modelo e encontro se unem.",
+      "feedbackWrong": {
+        "false": "O texto une habitação e modelo."
+      },
+      "hint": "Una habitarei e modelo.",
+      "learningObjective": "Interpretar o alvo do santuário.",
+      "evidence": [
+        "Êxodo 29:45",
+        "Êxodo 26:30"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "find_in_text",
+      "question": "Em Êxodo 25:22, toque o trecho que promete o encontro.",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "me encontrarei"
+        },
+        {
+          "id": "b",
+          "text": "querubins"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "\"Me encontrarei\" marca a promessa.",
+      "feedbackWrong": {
+        "b": "Querubins marcam o lugar.",
+        "c": "Israel recebe a ordem."
+      },
+      "hint": "Qual verbo promete o encontro?",
+      "learningObjective": "Sustentar o encontro.",
+      "evidence": [
+        "Êxodo 25:22"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "choice",
+      "question": "Que leitura esta travessia sustenta sobre o santuário?",
+      "verseRef": "Êxodo 29:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus quer habitar no meio do povo santificado"
+        },
+        {
+          "id": "b",
+          "text": "O povo inventa o culto sozinho"
+        },
+        {
+          "id": "c",
+          "text": "O sábado não importa à aliança"
+        },
+        {
+          "id": "d",
+          "text": "Arão serve sem levar o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Habitação é o centro.",
+      "feedbackWrong": {
+        "b": "Há modelo dado.",
+        "c": "O sábado é sinal.",
+        "d": "Arão leva os nomes."
+      },
+      "hint": "Una habitarei, modelo e sinal.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Êxodo 29:45"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "order",
+      "question": "Qual sequência liga o santuário à Escritura?",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus fala do propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "O modelo governa a obra"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus lembra querubins e modelo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Fala, modelo, eco em Hebreus.",
+      "feedbackWrong": {
+        "default": "Comece pelo propiciatório."
+      },
+      "hint": "Siga a revelação.",
+      "learningObjective": "Ver o fio do santuário.",
+      "evidence": [
+        "Êxodo 25:22",
+        "Êxodo 26:30",
+        "Hebreus 9:5"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "complete",
+      "question": "Em Êxodo 29:45, Deus diz: ___ no meio dos filhos de Israel.",
+      "verseRef": "Êxodo 29:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "habitarei"
+        },
+        {
+          "id": "b",
+          "text": "fugirei"
+        },
+        {
+          "id": "c",
+          "text": "calarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Habitarei no meio deles.",
+      "feedbackWrong": {
+        "b": "Não fugirá.",
+        "c": "O verbo é habitarei."
+      },
+      "hint": "O verbo da promessa.",
+      "learningObjective": "Lembrar habitarei.",
+      "evidence": [
+        "Êxodo 29:45"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "connect",
+      "question": "O que liga Êxodo 29:45 a Apocalipse 21:3?",
+      "verseRef": "Êxodo 29:45",
+      "passageA": {
+        "ref": "Êxodo 29:45"
+      },
+      "passageB": {
+        "ref": "Apocalipse 21:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus habita com o povo"
+        },
+        {
+          "id": "b",
+          "text": "Templo vazio"
+        },
+        {
+          "id": "c",
+          "text": "Fuga do Egito só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Habitação une os textos.",
+      "feedbackWrong": {
+        "b": "Há habitação.",
+        "c": "O elo é habitar."
+      },
+      "hint": "O que Deus faz com o povo?",
+      "learningObjective": "Ligar habitação.",
+      "evidence": [
+        "Êxodo 29:45",
+        "Apocalipse 21:3"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "find_in_text",
+      "question": "Em Êxodo 31:18, toque o trecho que marca a origem da escrita.",
+      "verseRef": "Êxodo 31:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "dedo de Deus"
+        },
+        {
+          "id": "b",
+          "text": "monte Sinai"
+        },
+        {
+          "id": "c",
+          "text": "duas tábuas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "escritas pelo dedo de Deus",
+      "feedbackCorrect": "Escritas pelo dedo de Deus.",
+      "feedbackWrong": {
+        "b": "Monte é o lugar.",
+        "c": "Tábuas são o suporte."
+      },
+      "hint": "Quem escreveu?",
+      "learningObjective": "Sustentar a origem divina.",
+      "evidence": [
+        "Êxodo 31:18"
+      ],
+      "difficulty": "profundezas"
+    },
+    {
+      "type": "order",
+      "question": "Monte a lógica: sinal, santificação, tábuas.",
+      "verseRef": "Êxodo 31:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sábado como sinal"
+        },
+        {
+          "id": "b",
+          "text": "Para saberem que o Senhor santifica"
+        },
+        {
+          "id": "c",
+          "text": "Tábuas pelo dedo de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "é um sinal entre mim e vós",
+      "feedbackCorrect": "Sinal, santificação, palavra.",
+      "feedbackWrong": {
+        "default": "Comece pelo sinal."
+      },
+      "hint": "Siga Êxodo 31.",
+      "learningObjective": "Ordenar sinal e palavra.",
+      "evidence": [
+        "Êxodo 31:13",
+        "Êxodo 31:18"
+      ],
+      "difficulty": "profundezas"
+    }
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "slug": "oseias-cap",
+  "prefix": "osc",
+  "book": "Oséias",
+  "chapters": 14,
+  "title": "Oséias",
+  "description": "Oséias capítulo a capítulo: o amor fiel do Senhor a um povo infiel.",
+  "icon": "💞",
+  "color": "#C9947E",
+  "order": 35,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": [
+    "oseias"
+  ],
+  "modules": [
+    {
+      "title": "Amor e infidelidade · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "Oséias 1:6–11",
+          "title": "Lo-Ruama e Lo-Ami",
+          "intro": "Os filhos de Oséias recebem nomes que anunciam juízo e, depois, restauração.",
+          "insight": "Onde se disse Não-meu-povo, se dirá Filhos do Deus vivo.",
+          "objective": "De não-povo a filhos"
+        },
+        {
+          "ref": "Oséias 2:2–10",
+          "title": "Contendei com vossa mãe",
+          "intro": "Oséias chama os filhos a confrontar a mãe que corre atrás dos amantes.",
+          "insight": "Israel atribui aos ídolos o pão e o vinho que o Senhor dava.",
+          "objective": "Reconhecer a fonte das bênçãos"
+        },
+        {
+          "ref": "Oséias 4:1–9",
+          "title": "Amor e conhecimento",
+          "intro": "O Senhor manda amar de novo e depois contende: falta verdade e conhecimento.",
+          "insight": "O amor de Deus persiste, mas o povo é destruído por falta de conhecimento.",
+          "objective": "Conhecer o Senhor",
+          "chapters": "3–4"
+        },
+        {
+          "ref": "Oséias 5:1–7",
+          "title": "Ouvi isto, sacerdotes",
+          "intro": "Sacerdotes, casa de Israel e rei são chamados a ouvir: o juízo é contra eles.",
+          "insight": "Eles buscam o Senhor, mas não o acham: ele se retirou deles.",
+          "objective": "Buscar de verdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Amor e infidelidade",
+        "intro": "Revise os nomes, a contenda, o conhecimento e o juízo.",
+        "insight": "O Senhor ama com fidelidade e confronta quem o abandona"
+      }
+    },
+    {
+      "title": "Voltar ao Senhor · cap. 6–10",
+      "scenes": [
+        {
+          "ref": "Oséias 6:1–6",
+          "title": "Vinde, e tornemos",
+          "intro": "Há um convite a voltar: ele despedaçou e curará; quer misericórdia, não sacrifício.",
+          "insight": "O Senhor quer misericórdia e o conhecimento de Deus, mais do que holocaustos.",
+          "objective": "Misericórdia e conhecimento"
+        },
+        {
+          "ref": "Oséias 7:1–7",
+          "title": "O forno do coração",
+          "intro": "Quando Deus quer curar Israel, se descobrem a iniquidade de Efraim e a fraude.",
+          "insight": "O coração queima como forno: reis caem, e ninguém clama ao Senhor.",
+          "objective": "Clamar em vez de conspirar"
+        },
+        {
+          "ref": "Oséias 8:1–7",
+          "title": "Semearam vento",
+          "intro": "A trombeta soa: Israel rejeitou o bem e fez ídolos; semearam vento.",
+          "insight": "Quem semeia vento colhe tempestade; um ídolo feito por mãos não é Deus.",
+          "objective": "Não semear vento"
+        },
+        {
+          "ref": "Oséias 9:1–7",
+          "title": "Não te alegres, Israel",
+          "intro": "Israel se alegrou como os povos, mas a colheita e o vinho falharão.",
+          "insight": "Os dias da visitação chegaram; o profeta é tido por louco por causa da iniquidade.",
+          "objective": "Levar a sério a visitação"
+        },
+        {
+          "ref": "Oséias 10:9–15",
+          "title": "Semeai em justiça",
+          "intro": "Oséias chama a semear justiça e a buscar o Senhor até que ele venha.",
+          "insight": "Semeai para vós em justiça, colhei segundo a misericórdia; é tempo de buscar o Senhor.",
+          "objective": "Semear justiça"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Voltar ao Senhor",
+        "intro": "Revise o convite a voltar, o forno, o vento, a visitação e a semeadura.",
+        "insight": "Voltar ao Senhor é semear justiça e conhecer a misericórdia"
+      }
+    },
+    {
+      "title": "Amor que não desiste · cap. 11–14",
+      "scenes": [
+        {
+          "ref": "Oséias 11:1–9",
+          "title": "Quando Israel era menino",
+          "intro": "O Senhor lembra que amou Israel desde menino e não consegue entregar Efraim.",
+          "insight": "O meu coração está comovido: não executarei o furor da minha ira.",
+          "objective": "O amor compassivo de Deus"
+        },
+        {
+          "ref": "Oséias 12:2–8",
+          "title": "Jacó e a luta",
+          "intro": "O Senhor tem contenda com Judá e lembra a luta de Jacó com o anjo.",
+          "insight": "Volta para o teu Deus; guarda a misericórdia e o juízo e espera nele continuamente.",
+          "objective": "Voltar, guardar e esperar"
+        },
+        {
+          "ref": "Oséias 13:4–14",
+          "title": "Eu sou o teu Deus",
+          "intro": "Não há Salvador além do Senhor; ainda assim Efraim se exaltou e esqueceu.",
+          "insight": "Do poder da sepultura eu os remirei; ó morte, onde estão as tuas pestes?",
+          "objective": "Só o Senhor salva"
+        },
+        {
+          "ref": "Oséias 14:1–9",
+          "title": "Cura das tuas rebeliões",
+          "intro": "Oséias fecha com um chamado a voltar: toma contigo palavras e volta ao Senhor.",
+          "insight": "Eu sararei a sua infidelidade, eu voluntariamente os amarei.",
+          "objective": "Voltar com palavras sinceras"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Amor que não desiste",
+        "intro": "Revise o amor de pai, Jacó, o Salvador e a cura das rebeliões.",
+        "insight": "O amor de Deus cura a infidelidade de quem volta a ele"
+      }
+    }
+  ]
+}

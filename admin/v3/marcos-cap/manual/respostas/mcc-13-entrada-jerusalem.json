@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Marcos 11:7–10",
+    "passages": [
+      {
+        "ref": "Marcos 11:7–10"
+      },
+      {
+        "ref": "Marcos 11:1–6"
+      }
+    ],
+    "context": "Jesus se aproxima de Jerusalém e envia dois discípulos para buscar um jumentinho. Depois de cumprir a orientação, eles o levam até Jesus, que entra na cidade enquanto o povo o aclama.",
+    "keyword": "Hosana",
+    "keywordGloss": "Uma aclamação que expressa louvor e celebra a chegada daquele que vem em nome do Senhor.",
+    "focusQuestion": "Como você recebe Jesus: reconhecendo seu Reino ou esperando que ele corresponda às suas próprias expectativas?",
+    "reflectionPrompts": [
+      "A obediência dos discípulos",
+      "A chegada do Rei",
+      "O louvor do povo"
+    ],
+    "facts": [
+      {
+        "text": "Jesus enviou dois discípulos quando se aproximava de Jerusalém.",
+        "evidenceRef": "Marcos 11:1",
+        "evidenceSpan": "Jesus enviou dois de seus discípulos"
+      },
+      {
+        "text": "O jumentinho encontrado estava preso e ainda não havia sido montado.",
+        "evidenceRef": "Marcos 11:2",
+        "evidenceSpan": "preso um jumentinho, no qual ainda ninguém montou"
+      },
+      {
+        "text": "Os discípulos encontraram o jumentinho junto ao portão e o desprenderam.",
+        "evidenceRef": "Marcos 11:4",
+        "evidenceSpan": "junto ao portão, fora da rua, e o desprenderam"
+      },
+      {
+        "text": "Jesus montou no jumentinho depois que os discípulos colocaram seus vestidos sobre ele.",
+        "evidenceRef": "Marcos 11:7",
+        "evidenceSpan": "colocaram sobre ele os seus vestidos, e Jesus montou sobre ele"
+      },
+      {
+        "text": "Muitas pessoas estenderam vestes e espalharam ramos pelo caminho.",
+        "evidenceRef": "Marcos 11:8",
+        "evidenceSpan": "Muitos estendiam suas vestes no caminho, e outros cortavam ramos dos campos e os espalhavam pelo trajeto"
+      },
+      {
+        "text": "A multidão aclamou aquele que vinha em nome do Senhor e o reino de Davi.",
+        "evidenceRef": "Marcos 11:9–10",
+        "evidenceSpan": "Bendito o reino que vem, o reino de nosso pai Davi!"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "jumentinho",
+        "gloss": "O animal escolhido para a entrada de Jesus em Jerusalém, destacando o caráter humilde de sua chegada."
+      },
+      {
+        "term": "Hosana",
+        "gloss": "Aclamação de louvor dirigida àquele que vem em nome do Senhor."
+      },
+      {
+        "term": "Bendito",
+        "gloss": "Palavra de reconhecimento e louvor dirigida a quem chega em nome do Senhor e ao reino que vem."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus envia dois discípulos para buscar o jumentinho",
+        "evidenceRef": "Marcos 11:1–3"
+      },
+      {
+        "label": "Os discípulos cumprem a orientação de Jesus",
+        "evidenceRef": "Marcos 11:4–6"
+      },
+      {
+        "label": "Jesus entra em Jerusalém montado no jumentinho",
+        "evidenceRef": "Marcos 11:7–8"
+      },
+      {
+        "label": "A multidão aclama Jesus e o reino que vem",
+        "evidenceRef": "Marcos 11:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Os discípulos explicam o que Jesus havia ordenado e, então, são autorizados a levar o jumentinho.",
+        "marker": "então",
+        "evidenceRef": "Marcos 11:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Embora alguns questionem a ação dos discípulos, eles respondem conforme a orientação de Jesus.",
+        "marker": "porém",
+        "evidenceRef": "Marcos 11:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois que Jesus monta no jumentinho, o povo prepara o caminho e o aclama.",
+        "marker": "E",
+        "evidenceRef": "Marcos 11:7–9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Zacarias 9:9",
+        "bridge": "O Rei chega montado num jumento"
+      },
+      {
+        "ref": "Salmos 118:25–26",
+        "bridge": "A aclamação de Hosana"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus entra em Jerusalém como um governante que demonstra poder por meio de imponência e força.",
+        "why": "A cena destaca o jumentinho, não um animal de guerra, e apresenta uma chegada marcada pela humildade."
+      },
+      {
+        "text": "A multidão está apenas celebrando uma chegada comum, sem reconhecer Jesus como Rei.",
+        "why": "As aclamações mencionam aquele que vem em nome do Senhor e o reino de Davi."
+      },
+      {
+        "text": "Os ramos e as vestes foram colocados sobre o jumentinho para preparar a montaria.",
+        "why": "O texto distingue os vestidos colocados sobre o animal das vestes e dos ramos espalhados pelo caminho."
+      }
+    ],
+    "centralInsight": "Jesus é recebido como Rei, mas sua entrada humilde redefine a imagem de poder.",
+    "anchorQuestion": "Em que animal Jesus entrou em Jerusalém, segundo Marcos 11:7?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Marcos 11:1, Jesus enviou dois discípulos quando se aproximava de Jerusalém.",
+      "verseRef": "Marcos 11:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Jesus enviou dois de seus discípulos",
+      "feedbackCorrect": "O versículo registra que Jesus enviou dois discípulos enquanto se aproximava da cidade.",
+      "feedbackWrong": {
+        "false": "O texto informa que Jesus enviou dois de seus discípulos."
+      },
+      "hint": "Observe o final do versículo e conte quantos discípulos foram enviados.",
+      "learningObjective": "Identificar quem Jesus enviou ao se aproximar de Jerusalém.",
+      "evidence": [
+        "Marcos 11:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Marcos 11:2, toque o animal que os discípulos deveriam buscar.",
+      "verseRef": "Marcos 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "aldeia"
+        },
+        {
+          "id": "b",
+          "text": "jumentinho"
+        },
+        {
+          "id": "c",
+          "text": "discípulos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "preso um jumentinho",
+      "feedbackCorrect": "Jesus orientou os discípulos a buscar um jumentinho que estava preso.",
+      "feedbackWrong": {
+        "a": "A aldeia é o lugar para onde Jesus os enviou, não o animal procurado.",
+        "c": "Os discípulos receberam a ordem; o animal que deveriam buscar é outro."
+      },
+      "hint": "Procure o nome do animal mencionado na orientação.",
+      "learningObjective": "Localizar o animal que Jesus mandou buscar.",
+      "evidence": [
+        "Marcos 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que os discípulos encontraram quando chegaram ao local indicado por Jesus?",
+      "verseRef": "Marcos 11:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um jumentinho preso junto ao portão"
+        },
+        {
+          "id": "b",
+          "text": "Uma multidão reunida diante da aldeia"
+        },
+        {
+          "id": "c",
+          "text": "Um cavalo preparado para a viagem"
+        },
+        {
+          "id": "d",
+          "text": "Um jumentinho já conduzido por seu dono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Encontraram o jumentinho preso, junto ao portão",
+      "feedbackCorrect": "Os discípulos encontraram exatamente o jumentinho preso, conforme Jesus havia dito.",
+      "feedbackWrong": {
+        "b": "O versículo menciona o jumentinho, não uma multidão reunida.",
+        "c": "O animal encontrado era um jumentinho, não um cavalo.",
+        "d": "O jumentinho estava preso e foi desprendido pelos discípulos."
+      },
+      "hint": "Compare o que Jesus anunciou com o que os discípulos encontraram.",
+      "learningObjective": "Reconhecer o cumprimento da orientação dada por Jesus.",
+      "evidence": [
+        "Marcos 11:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Organize a sequência de Marcos 11:7 conforme o texto.",
+      "verseRef": "Marcos 11:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "trouxeram o jumentinho a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "colocaram sobre ele os seus vestidos"
+        },
+        {
+          "id": "c",
+          "text": "Jesus montou sobre ele"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "trouxeram o jumentinho a Jesus",
+      "feedbackCorrect": "Primeiro levaram o animal a Jesus, depois colocaram os vestidos e ele montou.",
+      "feedbackWrong": {
+        "default": "Observe a ordem das ações no versículo: levar, colocar os vestidos e montar."
+      },
+      "hint": "Siga a sequência das ações narradas no versículo.",
+      "learningObjective": "Reconhecer a sequência dos acontecimentos em Marcos 11:7.",
+      "evidence": [
+        "Marcos 11:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Marcos 11:3, complete a explicação que os discípulos deveriam dar: o Senhor ___ dele.",
+      "verseRef": "Marcos 11:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "precisa"
+        },
+        {
+          "id": "b",
+          "text": "devolverá"
+        },
+        {
+          "id": "c",
+          "text": "enviou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor precisa dele",
+      "feedbackCorrect": "A orientação era dizer que o Senhor precisava do jumentinho e logo o devolveria.",
+      "feedbackWrong": {
+        "b": "O versículo diz que o Senhor logo o devolveria, mas essa não é a palavra da lacuna.",
+        "c": "Jesus enviou os discípulos; a explicação sobre o animal usa outro verbo."
+      },
+      "hint": "Leia a justificativa que os discípulos deveriam apresentar.",
+      "learningObjective": "Recordar a explicação dada por Jesus sobre o uso do jumentinho.",
+      "evidence": [
+        "Marcos 11:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Marcos 11:8 comunica que se liga a este contexto?",
+      "verseRef": "Marcos 11:8",
+      "passageA": {
+        "ref": "Marcos 11:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus entra em Jerusalém montado no jumentinho, enquanto o povo prepara o caminho diante dele."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A preparação do caminho"
+        },
+        {
+          "id": "b",
+          "text": "A busca pelo animal"
+        },
+        {
+          "id": "c",
+          "text": "A ordem aos discípulos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Muitos estendiam suas vestes no caminho",
+      "feedbackCorrect": "As vestes e os ramos espalhados pelo trajeto mostram como o povo preparou o caminho para Jesus.",
+      "feedbackWrong": {
+        "b": "A busca pelo jumentinho aparece antes, nos versículos 2 a 4.",
+        "c": "A ordem aos discípulos está no início da narrativa, não neste versículo."
+      },
+      "hint": "Observe o que as pessoas fizeram no trajeto por onde Jesus passava.",
+      "learningObjective": "Relacionar a atitude do povo à preparação do caminho para Jesus.",
+      "evidence": [
+        "Marcos 11:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Marcos 11:6, os discípulos explicaram o que Jesus havia ordenado, e então foram autorizados a levar o jumentinho.",
+      "verseRef": "Marcos 11:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "e então os deixaram ir",
+      "feedbackCorrect": "A explicação dos discípulos é seguida pela autorização para prosseguir com o que Jesus ordenou.",
+      "feedbackWrong": {
+        "false": "O versículo diz que eles explicaram a ordem de Jesus e então foram deixados ir."
+      },
+      "hint": "Observe o que aconteceu depois que os discípulos responderam.",
+      "learningObjective": "Compreender a sequência entre a resposta dos discípulos e a autorização para partir.",
+      "evidence": [
+        "Marcos 11:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Marcos 11:6, toque a palavra que marca o que aconteceu depois da explicação dos discípulos.",
+      "verseRef": "Marcos 11:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "então"
+        },
+        {
+          "id": "c",
+          "text": "ordenado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "e então os deixaram ir",
+      "feedbackCorrect": "A palavra marca a sequência: depois da explicação, os discípulos puderam seguir.",
+      "feedbackWrong": {
+        "a": "Essa palavra introduz a oposição à fala anterior, não a sequência da autorização.",
+        "c": "Essa palavra identifica o que Jesus havia determinado, não o que aconteceu depois."
+      },
+      "hint": "Procure a palavra que introduz o acontecimento seguinte.",
+      "learningObjective": "Identificar o marcador de sequência na narrativa.",
+      "evidence": [
+        "Marcos 11:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como a reação do povo em Marcos 11:8–9 se relaciona com a chegada de Jesus?",
+      "verseRef": "Marcos 11:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo prepara o caminho e aclama aquele que chega."
+        },
+        {
+          "id": "b",
+          "text": "O povo impede a passagem e questiona a presença de Jesus."
+        },
+        {
+          "id": "c",
+          "text": "O povo busca outro animal para substituir o jumentinho."
+        },
+        {
+          "id": "d",
+          "text": "O povo abandona o caminho e deixa Jesus entrar sozinho."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E aqueles que iam à frente dele, assim como os que o seguiam, clamavam",
+      "feedbackCorrect": "As pessoas preparam o trajeto e expressam sua aclamação enquanto Jesus entra na cidade.",
+      "feedbackWrong": {
+        "b": "O texto relata que as pessoas espalharam vestes e ramos e clamaram por Jesus.",
+        "c": "O jumentinho já havia sido levado a Jesus e ele estava montado nele.",
+        "d": "A multidão aparece tanto à frente quanto seguindo Jesus."
+      },
+      "hint": "Relacione as ações do povo no caminho com as palavras que ele proclama.",
+      "learningObjective": "Compreender como a preparação do caminho e a aclamação acompanham a entrada de Jesus.",
+      "evidence": [
+        "Marcos 11:8–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Organize os movimentos da narrativa de acordo com a sequência apresentada em Marcos 11:1–6.",
+      "verseRef": "Marcos 11:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus envia dois discípulos para buscar o jumentinho"
+        },
+        {
+          "id": "b",
+          "text": "Os discípulos encontram o animal e o desprendem"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos explicam a ordem e recebem autorização"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Jesus enviou dois de seus discípulos",
+      "feedbackCorrect": "A narrativa passa do envio à busca do animal e termina com a autorização para levá-lo.",
+      "feedbackWrong": {
+        "default": "Acompanhe a sequência: envio, encontro do jumentinho e resposta aos que questionaram."
+      },
+      "hint": "Comece pela iniciativa de Jesus e siga o que os discípulos fizeram.",
+      "learningObjective": "Compreender o encadeamento da missão dada aos dois discípulos.",
+      "evidence": [
+        "Marcos 11:1–2",
+        "Marcos 11:4",
+        "Marcos 11:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Marcos 11:6, complete: eles disseram o que Jesus havia ___.",
+      "verseRef": "Marcos 11:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "encontrado"
+        },
+        {
+          "id": "b",
+          "text": "ordenado"
+        },
+        {
+          "id": "c",
+          "text": "espalhado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o que Jesus havia ordenado",
+      "feedbackCorrect": "Os discípulos responderam conforme a instrução que Jesus havia dado a eles.",
+      "feedbackWrong": {
+        "a": "O encontro do jumentinho é narrado antes; aqui os discípulos explicam a ordem recebida.",
+        "c": "O texto fala de espalhar ramos em outro momento da entrada."
+      },
+      "hint": "Observe o verbo que descreve a instrução recebida de Jesus.",
+      "learningObjective": "Reconhecer a relação entre a instrução de Jesus e a resposta dos discípulos.",
+      "evidence": [
+        "Marcos 11:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Marcos 11:9 a Salmos 118:25–26?",
+      "verseRef": "Marcos 11:9",
+      "passageA": {
+        "ref": "Marcos 11:9"
+      },
+      "passageB": {
+        "ref": "Salmos 118:25–26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A aclamação de Hosana"
+        },
+        {
+          "id": "b",
+          "text": "A busca pelo jumentinho"
+        },
+        {
+          "id": "c",
+          "text": "A preparação dos discípulos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Hosana! Bendito aquele que vem em nome do Senhor!",
+      "feedbackCorrect": "A aclamação de Marcos retoma palavras de louvor presentes no Salmo 118.",
+      "feedbackWrong": {
+        "b": "A busca pelo jumentinho pertence à preparação da entrada, não à ligação entre esses textos.",
+        "c": "O tema comum é a aclamação, não a preparação dos discípulos."
+      },
+      "hint": "Compare as palavras de louvor proclamadas nos dois textos.",
+      "learningObjective": "Relacionar a aclamação da entrada de Jesus com o louvor registrado nos Salmos.",
+      "evidence": [
+        "Marcos 11:9",
+        "Salmos 118:25–26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Marcos 11:7–8, os ramos dos campos foram colocados sobre o jumentinho antes de Jesus montar.",
+      "verseRef": "Marcos 11:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "outros cortavam ramos dos campos e os espalhavam pelo trajeto",
+      "feedbackCorrect": "O texto distingue os vestidos colocados sobre o animal dos ramos espalhados pelo caminho.",
+      "feedbackWrong": {
+        "true": "Os ramos foram espalhados pelo trajeto; os vestidos foram colocados sobre o jumentinho."
+      },
+      "hint": "Compare o que foi colocado sobre o animal com o que foi espalhado pelo caminho.",
+      "learningObjective": "Interpretar corretamente a diferença entre a preparação da montaria e a preparação do caminho.",
+      "evidence": [
+        "Marcos 11:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Marcos 11:9, toque o trecho que identifica em nome de quem Jesus vem.",
+      "verseRef": "Marcos 11:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hosana!"
+        },
+        {
+          "id": "b",
+          "text": "Bendito aquele"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "em nome do Senhor",
+      "feedbackCorrect": "A aclamação identifica aquele que vem como alguém que chega em nome do Senhor.",
+      "feedbackWrong": {
+        "a": "Hosana é a aclamação de louvor, mas não identifica em nome de quem ele vem.",
+        "b": "Essa expressão introduz a bênção, mas a identificação aparece na continuação."
+      },
+      "hint": "Procure a expressão que completa a declaração sobre aquele que vem.",
+      "learningObjective": "Localizar no texto a expressão que identifica a autoridade em cujo nome Jesus vem.",
+      "evidence": [
+        "Marcos 11:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual interpretação melhor relaciona a entrada de Jesus com a imagem do Rei anunciada em Zacarias 9:9?",
+      "verseRef": "Marcos 11:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus chega como Rei, mas sua entrada é marcada pela humildade."
+        },
+        {
+          "id": "b",
+          "text": "Jesus demonstra sua realeza por meio de uma montaria de guerra."
+        },
+        {
+          "id": "c",
+          "text": "Jesus evita qualquer reconhecimento público de sua chegada."
+        },
+        {
+          "id": "d",
+          "text": "Jesus entra como governante que exige que o povo prepare sua autoridade."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus montou sobre ele",
+      "feedbackCorrect": "O jumentinho e a aclamação do povo apresentam a chegada do Rei em uma cena marcada pela humildade.",
+      "feedbackWrong": {
+        "b": "A cena apresenta um jumentinho, não uma montaria de guerra.",
+        "c": "O povo espalha vestes e ramos e aclama Jesus publicamente.",
+        "d": "O texto mostra o povo preparando o caminho, mas não Jesus exigindo reconhecimento."
+      },
+      "hint": "Considere o animal escolhido e a maneira como o povo recebe Jesus.",
+      "learningObjective": "Interpretar a entrada de Jesus como a chegada do Rei em uma postura humilde.",
+      "evidence": [
+        "Marcos 11:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Organize o argumento apresentado pela cena de Marcos 11:8–9 sobre a chegada de Jesus.",
+      "verseRef": "Marcos 11:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo prepara o caminho com vestes e ramos"
+        },
+        {
+          "id": "b",
+          "text": "A multidão aclama aquele que vem em nome do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "O louvor reconhece a chegada do reino"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E aqueles que iam à frente dele, assim como os que o seguiam, clamavam",
+      "feedbackCorrect": "A preparação do caminho acompanha a aclamação, que se amplia para celebrar o reino que vem.",
+      "feedbackWrong": {
+        "default": "Observe como a cena passa das ações no caminho para as palavras de aclamação e seu conteúdo."
+      },
+      "hint": "Siga o movimento da cena: preparação, aclamação e reconhecimento do reino.",
+      "learningObjective": "Interpretar o encadeamento entre a preparação do caminho e o reconhecimento do Rei.",
+      "evidence": [
+        "Marcos 11:8–9",
+        "Marcos 11:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Marcos 11:10, qual palavra identifica o reino anunciado como pertencente ao pai de Jesus na aclamação do povo?",
+      "verseRef": "Marcos 11:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o reino de nosso pai Davi",
+      "feedbackCorrect": "A multidão associa o reino que vem à linhagem de Davi em sua aclamação.",
+      "feedbackWrong": {
+        "b": "O Senhor aparece na aclamação anterior, em Marcos 11:9, mas não completa essa expressão.",
+        "c": "Jerusalém é o destino da entrada, não o nome mencionado na declaração sobre o reino."
+      },
+      "hint": "Leia a expressão que vem depois de “nosso pai”.",
+      "learningObjective": "Identificar a referência a Davi na aclamação sobre o reino.",
+      "evidence": [
+        "Marcos 11:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Marcos 11:7 a Zacarias 9:9?",
+      "verseRef": "Marcos 11:7",
+      "passageA": {
+        "ref": "Marcos 11:7"
+      },
+      "passageB": {
+        "ref": "Zacarias 9:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Rei chega montado num jumento"
+        },
+        {
+          "id": "b",
+          "text": "A multidão espalha ramos"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos recebem uma ordem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus montou sobre ele",
+      "feedbackCorrect": "Zacarias anuncia um Rei humilde montado num jumento, imagem que se relaciona à entrada de Jesus.",
+      "feedbackWrong": {
+        "b": "Os ramos aparecem na narrativa de Marcos, mas não são o ponto de ligação com Zacarias 9:9.",
+        "c": "A ordem aos discípulos prepara a cena, mas não é o tema compartilhado pelos dois textos."
+      },
+      "hint": "Compare a montaria mencionada nos dois textos.",
+      "learningObjective": "Relacionar a entrada de Jesus à imagem do Rei humilde anunciada por Zacarias.",
+      "evidence": [
+        "Marcos 11:7",
+        "Zacarias 9:9"
+      ]
+    }
+  ]
+}

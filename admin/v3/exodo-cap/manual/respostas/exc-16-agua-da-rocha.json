@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 17:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 17:1–7"
+      }
+    ],
+    "context": "Em Refidim não havia água. O povo contende com Moisés; o Senhor manda ferir a rocha em Horebe.",
+    "keyword": "Rocha",
+    "keywordGloss": "O Senhor dá água da rocha mesmo quando o povo pergunta se Ele está no meio deles.",
+    "focusQuestion": "Quando a sede aperta, você contende com Deus ou clama a Ele?",
+    "reflectionPrompts": [
+      "Sede em Refidim",
+      "Água da rocha",
+      "Meribá e Massá"
+    ],
+    "facts": [
+      {
+        "text": "Não havia água em Refidim para o povo beber.",
+        "evidenceRef": "Êxodo 17:1",
+        "evidenceSpan": "não havia ali água para o povo beber"
+      },
+      {
+        "text": "O povo contendeu com Moisés pedindo água.",
+        "evidenceRef": "Êxodo 17:2",
+        "evidenceSpan": "o povo contendeu com Moisés e disse: Dê-nos água"
+      },
+      {
+        "text": "Moisés clamou ao Senhor temendo ser apedrejado.",
+        "evidenceRef": "Êxodo 17:4",
+        "evidenceSpan": "Moisés clamou ao Senhor"
+      },
+      {
+        "text": "O Senhor mandou ferir a rocha em Horebe.",
+        "evidenceRef": "Êxodo 17:6",
+        "evidenceSpan": "você a ferirá e dela sairá água"
+      },
+      {
+        "text": "O lugar foi chamado Meribá e Massá.",
+        "evidenceRef": "Êxodo 17:7",
+        "evidenceSpan": "chamou o nome daquele lugar Meribá e Massá"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "rocha",
+        "gloss": "Em Horebe, ferida, dela sai água para o povo."
+      },
+      {
+        "term": "Meribá",
+        "gloss": "Nome do lugar por causa da contenda."
+      },
+      {
+        "term": "Massá",
+        "gloss": "Nome do lugar porque tentaram ao Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sede e contenda em Refidim",
+        "evidenceRef": "Êxodo 17:1–3"
+      },
+      {
+        "label": "Moisés clama ao Senhor",
+        "evidenceRef": "Êxodo 17:4"
+      },
+      {
+        "label": "Água sai da rocha em Horebe",
+        "evidenceRef": "Êxodo 17:5–6"
+      },
+      {
+        "label": "O lugar se chama Meribá e Massá",
+        "evidenceRef": "Êxodo 17:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O nome Massá vem porque tentaram ao Senhor.",
+        "marker": "porque",
+        "evidenceRef": "Êxodo 17:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "O povo contende; Moisés clama ao Senhor.",
+        "marker": null,
+        "evidenceRef": "Êxodo 17:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ferida a rocha, sai água e o povo bebe.",
+        "marker": null,
+        "evidenceRef": "Êxodo 17:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 10:4",
+        "bridge": "Rocha era Cristo"
+      },
+      {
+        "ref": "Salmos 95:8–9",
+        "bridge": "Não endureçam em Meribá"
+      },
+      {
+        "ref": "Números 20:8",
+        "bridge": "Água da rocha de novo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Moisés inventou a água sem ordem do Senhor.",
+        "why": "O Senhor ordena ferir a rocha; Moisés obedece."
+      },
+      {
+        "text": "O povo confiou sem perguntar se o Senhor estava no meio.",
+        "why": "Eles tentaram: está o Senhor no meio de nós ou não?"
+      },
+      {
+        "text": "Meribá celebra a fé do povo.",
+        "why": "Meribá e Massá marcam contenda e tentação."
+      }
+    ],
+    "centralInsight": "O Senhor dá água mesmo quando o povo pergunta se ele está no meio deles.",
+    "anchorQuestion": "Por que o lugar se chamou Meribá e Massá?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Refidim não havia água para o povo beber.",
+      "verseRef": "Êxodo 17:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "não havia ali água para o povo beber",
+      "feedbackCorrect": "O texto diz: não havia ali água para o povo beber.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 17:1: não havia água."
+      },
+      "hint": "Veja a falta no acampamento.",
+      "learningObjective": "Observar a sede em Refidim.",
+      "evidence": [
+        "Êxodo 17:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 17:6, toque de onde sairia a água.",
+      "verseRef": "Êxodo 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "rocha"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "anciãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dela sairá água",
+      "feedbackCorrect": "A água sairia da rocha em Horebe.",
+      "feedbackWrong": {
+        "b": "O povo bebe; a fonte é a rocha.",
+        "c": "Os anciãos veem; a fonte é a rocha."
+      },
+      "hint": "Veja o que Moisés feriria.",
+      "learningObjective": "Identificar a rocha.",
+      "evidence": [
+        "Êxodo 17:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 17:4, o que Moisés temia que o povo fizesse?",
+      "verseRef": "Êxodo 17:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apedrejá-lo"
+        },
+        {
+          "id": "b",
+          "text": "Coroá-lo rei"
+        },
+        {
+          "id": "c",
+          "text": "Construir um altar"
+        },
+        {
+          "id": "d",
+          "text": "Voltar só com Arão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Em breve, irão me apedrejar",
+      "feedbackCorrect": "Moisés clama: em breve irão me apedrejar.",
+      "feedbackWrong": {
+        "b": "O medo é apedrejamento, não coroação.",
+        "c": "Não é altar neste verso.",
+        "d": "O temor é ser apedrejado."
+      },
+      "hint": "Leia o temor no clamor.",
+      "learningObjective": "Observar o medo de Moisés.",
+      "evidence": [
+        "Êxodo 17:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 17:6 na ordem do texto.",
+      "verseRef": "Êxodo 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que estarei ali diante de você, sobre a rocha em Horeb"
+        },
+        {
+          "id": "b",
+          "text": "você a ferirá e dela sairá água"
+        },
+        {
+          "id": "c",
+          "text": "e o povo beberá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "você a ferirá e dela sairá água",
+      "feedbackCorrect": "Presença, golpe na rocha, água para o povo.",
+      "feedbackWrong": {
+        "default": "Comece pela presença sobre a rocha."
+      },
+      "hint": "O Senhor fala primeiro de estar ali.",
+      "learningObjective": "Reconhecer a ordem de 17:6.",
+      "evidence": [
+        "Êxodo 17:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 17:7, qual nome marca a contenda?",
+      "verseRef": "Êxodo 17:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Meribá"
+        },
+        {
+          "id": "b",
+          "text": "Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Gósen"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meribá e Massá",
+      "feedbackCorrect": "Meribá nomeia a contenda do povo.",
+      "feedbackWrong": {
+        "b": "Sinai não é o nome aqui.",
+        "c": "Gósen não aparece neste verso."
+      },
+      "hint": "Veja o primeiro nome do lugar.",
+      "learningObjective": "Lembrar o nome Meribá.",
+      "evidence": [
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 17:6 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 17:6",
+      "passageA": {
+        "ref": "Êxodo 17:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sem água em Refidim, o Senhor responde com água da rocha."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Provisão na sede"
+        },
+        {
+          "id": "b",
+          "text": "Vitória no mar"
+        },
+        {
+          "id": "c",
+          "text": "Lei no monte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dela sairá água, e o povo beberá",
+      "feedbackCorrect": "A rocha responde à sede do povo.",
+      "feedbackWrong": {
+        "b": "Aqui o tema é água, não o mar.",
+        "c": "A lei no Sinai vem depois."
+      },
+      "hint": "Compare a falta e o dom.",
+      "learningObjective": "Ligar a rocha à sede.",
+      "evidence": [
+        "Êxodo 17:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 17:2, Moisés diz que o povo estava tentando ao Senhor.",
+      "verseRef": "Êxodo 17:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Por que estais tentando ao Senhor",
+      "feedbackCorrect": "Moisés liga a contenda à tentação ao Senhor.",
+      "feedbackWrong": {
+        "false": "Releia: por que estais tentando ao Senhor?"
+      },
+      "hint": "Veja a segunda pergunta de Moisés.",
+      "learningObjective": "Compreender a contenda como tentação.",
+      "evidence": [
+        "Êxodo 17:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 17:7, toque a palavra que marca a causa dos nomes.",
+      "verseRef": "Êxodo 17:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "contenda"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque tentaram ao Senhor",
+      "feedbackCorrect": "\"Porque\" explica Massá: tentaram ao Senhor.",
+      "feedbackWrong": {
+        "b": "Contenda explica Meribá; o marcador é porque.",
+        "c": "Filhos nomeia o povo; o marcador é porque."
+      },
+      "hint": "Procure o marcador da causa.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 17:7 liga os nomes do lugar à pergunta do povo?",
+      "verseRef": "Êxodo 17:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tentaram perguntando se o Senhor estava no meio deles"
+        },
+        {
+          "id": "b",
+          "text": "Cantaram porque o Senhor os abandonou"
+        },
+        {
+          "id": "c",
+          "text": "Nomearam o lugar por causa da chuva"
+        },
+        {
+          "id": "d",
+          "text": "Esqueceram Meribá de propósito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Está o Senhor no meio de nós ou não",
+      "feedbackCorrect": "A pergunta de dúvida explica Massá.",
+      "feedbackWrong": {
+        "b": "Não há cântico de abandono aqui.",
+        "c": "Os nomes vêm de contenda e tentação.",
+        "d": "O texto explica os nomes, não os esconde."
+      },
+      "hint": "Leia a pergunta no fim do verso.",
+      "learningObjective": "Relacionar nomes e tentação.",
+      "evidence": [
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 17:1–7?",
+      "verseRef": "Êxodo 17:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há sede e contenda em Refidim"
+        },
+        {
+          "id": "b",
+          "text": "Moisés clama e fere a rocha"
+        },
+        {
+          "id": "c",
+          "text": "O lugar se chama Meribá e Massá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não havia ali água para o povo beber",
+      "feedbackCorrect": "Sede, provisão, memória da tentação.",
+      "feedbackWrong": {
+        "default": "Comece pela sede; os nomes fecham."
+      },
+      "hint": "Siga sede, água e nomes.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Êxodo 17:1",
+        "Êxodo 17:6",
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 17:7, que nome marca a tentação?",
+      "verseRef": "Êxodo 17:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Massá"
+        },
+        {
+          "id": "b",
+          "text": "Canaã"
+        },
+        {
+          "id": "c",
+          "text": "Éden"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meribá e Massá",
+      "feedbackCorrect": "Massá marca a tentação ao Senhor.",
+      "feedbackWrong": {
+        "b": "Canaã não é o nome aqui.",
+        "c": "Éden não aparece neste verso."
+      },
+      "hint": "Veja o segundo nome do lugar.",
+      "learningObjective": "Lembrar Massá.",
+      "evidence": [
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 17:7 a Salmos 95:8–9?",
+      "verseRef": "Êxodo 17:7",
+      "passageA": {
+        "ref": "Êxodo 17:7"
+      },
+      "passageB": {
+        "ref": "Salmos 95:8–9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não endurecer em Meribá"
+        },
+        {
+          "id": "b",
+          "text": "Construir o tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "Ungir um rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meribá e Massá",
+      "feedbackCorrect": "O Salmo lembra Meribá e a tentação no deserto.",
+      "feedbackWrong": {
+        "b": "O elo é Meribá, não o tabernáculo.",
+        "c": "Não há unção real nestes textos."
+      },
+      "hint": "Que lugar o Salmo nomeia?",
+      "learningObjective": "Relacionar Meribá ao Salmo.",
+      "evidence": [
+        "Êxodo 17:7",
+        "Salmos 95:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 17:1–7 sustenta que o Senhor abandona o povo quando eles perguntam se Ele está no meio deles.",
+      "verseRef": "Êxodo 17:6–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "dela sairá água, e o povo beberá",
+      "feedbackCorrect": "Mesmo na dúvida, o Senhor dá água da rocha.",
+      "feedbackWrong": {
+        "true": "O texto mostra provisão, não abandono."
+      },
+      "hint": "Compare a pergunta do povo e a água.",
+      "learningObjective": "Interpretar a provisão na dúvida.",
+      "evidence": [
+        "Êxodo 17:6",
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 17:7, toque o trecho que sustenta a dúvida do povo.",
+      "verseRef": "Êxodo 17:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "meio"
+        },
+        {
+          "id": "b",
+          "text": "Massá"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Está o Senhor no meio de nós ou não",
+      "feedbackCorrect": "A pergunta é se o Senhor está no meio deles.",
+      "feedbackWrong": {
+        "b": "Massá é o nome; a dúvida fala do meio.",
+        "c": "Israel nomeia o povo; a dúvida é o meio."
+      },
+      "hint": "Leia a pergunta final.",
+      "learningObjective": "Sustentar a leitura da tentação.",
+      "evidence": [
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 17:6–7 sustenta?",
+      "verseRef": "Êxodo 17:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor prove mesmo quando o povo tenta"
+        },
+        {
+          "id": "b",
+          "text": "A água prova que Moisés é maior que o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Meribá celebra a fé perfeita de Israel"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor se recusa a dar água"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dela sairá água",
+      "feedbackCorrect": "Há tentação e, ainda assim, água da rocha.",
+      "feedbackWrong": {
+        "b": "A água vem da ordem do Senhor.",
+        "c": "Meribá marca contenda, não fé perfeita.",
+        "d": "O Senhor manda sair água."
+      },
+      "hint": "Una a dúvida e o dom.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 17:6",
+        "Êxodo 17:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a rocha à Escritura?",
+      "verseRef": "Êxodo 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Água sai da rocha em Horebe"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo alerta contra Meribá"
+        },
+        {
+          "id": "c",
+          "text": "Paulo diz que a rocha era Cristo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sobre a rocha em Horeb",
+      "feedbackCorrect": "Da rocha ao Salmo e a Cristo na leitura de Paulo.",
+      "feedbackWrong": {
+        "default": "Comece pela rocha; depois Salmo e Paulo."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver a rocha ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 17:6",
+        "Salmos 95:8–9",
+        "1 Coríntios 10:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 17:6, que verbo ordena a ação sobre a rocha?",
+      "verseRef": "Êxodo 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "ferirá"
+        },
+        {
+          "id": "b",
+          "text": "venderá"
+        },
+        {
+          "id": "c",
+          "text": "esconderá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você a ferirá e dela sairá água",
+      "feedbackCorrect": "O Senhor manda: você a ferirá.",
+      "feedbackWrong": {
+        "b": "Não é venda.",
+        "c": "A ordem é ferir."
+      },
+      "hint": "Veja o verbo da ordem.",
+      "learningObjective": "Lembrar o verbo da provisão.",
+      "evidence": [
+        "Êxodo 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 17:6 a 1 Coríntios 10:4?",
+      "verseRef": "Êxodo 17:6",
+      "passageA": {
+        "ref": "Êxodo 17:6"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 10:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rocha e Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Maná e codorniz"
+        },
+        {
+          "id": "c",
+          "text": "Sangue e hissopo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sobre a rocha em Horeb",
+      "feedbackCorrect": "Paulo lê a rocha espiritual como Cristo.",
+      "feedbackWrong": {
+        "b": "O elo é a rocha, não o maná.",
+        "c": "A páscoa não é o tema aqui."
+      },
+      "hint": "Que pedra Paulo nomeia?",
+      "learningObjective": "Ligar a rocha a Cristo.",
+      "evidence": [
+        "Êxodo 17:6",
+        "1 Coríntios 10:4"
+      ]
+    }
+  ]
+}

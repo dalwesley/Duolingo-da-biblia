@@ -1,0 +1,275 @@
+{
+  "roomReadingPickTitle": {
+    "pt": "Marcar a leitura da semana",
+    "en": "Set this week's reading",
+    "es": "Marcar la lectura de la semana"
+  },
+  "roomReadingPickBody": {
+    "pt": "Escolha capítulos da Bíblia para o grupo ler até a reunião.",
+    "en": "Pick Bible chapters for the group to read before you meet.",
+    "es": "Elige capítulos de la Biblia para que el grupo lea antes de la reunión."
+  },
+  "roomReadingPickerSubtitle": {
+    "pt": "Até {max} capítulos de um livro.",
+    "en": "Up to {max} chapters from one book.",
+    "es": "Hasta {max} capítulos de un libro.",
+    "placeholders": {
+      "max": "int"
+    }
+  },
+  "roomReadingLabel": {
+    "pt": "Leitura da semana",
+    "en": "This week's reading",
+    "es": "Lectura de la semana"
+  },
+  "roomReadingChange": {
+    "pt": "Trocar",
+    "en": "Change",
+    "es": "Cambiar"
+  },
+  "roomReadingDone": {
+    "pt": "Leitura feita nesta semana · toque para reler",
+    "en": "Reading done this week · tap to read again",
+    "es": "Lectura hecha esta semana · toca para releer"
+  },
+  "roomReadingBook": {
+    "pt": "Livro",
+    "en": "Book",
+    "es": "Libro"
+  },
+  "roomReadingFrom": {
+    "pt": "Do capítulo",
+    "en": "From chapter",
+    "es": "Del capítulo"
+  },
+  "roomReadingTo": {
+    "pt": "Até o capítulo",
+    "en": "To chapter",
+    "es": "Hasta el capítulo"
+  },
+  "roomReadingSave": {
+    "pt": "Marcar para o grupo",
+    "en": "Set for the group",
+    "es": "Marcar para el grupo"
+  },
+  "roomReadingSaved": {
+    "pt": "Leitura marcada para o grupo",
+    "en": "Reading set for the group",
+    "es": "Lectura marcada para el grupo"
+  },
+  "roomLeaderWeekTitle": {
+    "pt": "Acompanhamento da semana",
+    "en": "Weekly check-in",
+    "es": "Seguimiento de la semana"
+  },
+  "roomLeaderWeekScene": {
+    "pt": "cena",
+    "en": "scene",
+    "es": "escena"
+  },
+  "roomLeaderWeekDays": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
+    "en": "{count, plural, =1{1 day} other{{count} days}}",
+    "es": "{count, plural, =1{1 día} other{{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "roomCloseWeek": {
+    "pt": "Fechar a semana e revelar",
+    "en": "Close the week and reveal",
+    "es": "Cerrar la semana y revelar"
+  },
+  "roomCloseWeekBusy": {
+    "pt": "Fechando…",
+    "en": "Closing…",
+    "es": "Cerrando…"
+  },
+  "roomCloseWeekHint": {
+    "pt": "Faça na reunião: o grupo vê junto quem foi fiel na semana.",
+    "en": "Do it at the meeting: the group sees together who was faithful this week.",
+    "es": "Hazlo en la reunión: el grupo ve junto quién fue fiel esta semana."
+  },
+  "roomCloseWeekConfirmTitle": {
+    "pt": "Fechar a semana agora?",
+    "en": "Close the week now?",
+    "es": "¿Cerrar la semana ahora?"
+  },
+  "roomCloseWeekConfirmBody": {
+    "pt": "Quem fez tudo até agora ganha o selo. Você pode fechar de novo antes de domingo se mais gente terminar.",
+    "en": "Whoever did everything so far gets the seal. You can close again before Sunday if more people finish.",
+    "es": "Quien hizo todo hasta ahora gana el sello. Puedes cerrar otra vez antes del domingo si más gente termina."
+  },
+  "roomCloseWeekFailed": {
+    "pt": "Não deu para fechar a semana. Tente de novo.",
+    "en": "Couldn't close the week. Try again.",
+    "es": "No se pudo cerrar la semana. Inténtalo de nuevo."
+  },
+  "roomRevealAgain": {
+    "pt": "Ver a revelação de novo",
+    "en": "See the reveal again",
+    "es": "Ver la revelación otra vez"
+  },
+  "roomClosingBannerTitle": {
+    "pt": "A semana do grupo foi fechada",
+    "en": "The group week was closed",
+    "es": "Se cerró la semana del grupo"
+  },
+  "roomClosingBannerBody": {
+    "pt": "Veja como o grupo foi e quem ganhou o selo.",
+    "en": "See how the group did and who earned the seal.",
+    "es": "Mira cómo le fue al grupo y quién ganó el sello."
+  },
+  "roomRevealEyebrow": {
+    "pt": "Fechamento · {room}",
+    "en": "Week close · {room}",
+    "es": "Cierre · {room}",
+    "placeholders": {
+      "room": "String"
+    }
+  },
+  "roomRevealTitle": {
+    "pt": "A semana do grupo",
+    "en": "The group's week",
+    "es": "La semana del grupo"
+  },
+  "roomRevealGroupPct": {
+    "pt": "do que o líder marcou, o grupo fez junto",
+    "en": "of what the leader set, the group did together",
+    "es": "de lo que marcó el líder, el grupo hizo junto"
+  },
+  "roomRevealFaithfulTitle": {
+    "pt": "Fiéis na semana",
+    "en": "Faithful this week",
+    "es": "Fieles en la semana"
+  },
+  "roomRevealFaithfulBody": {
+    "pt": "Fizeram tudo o que o líder marcou. Cada um ganha o selo.",
+    "en": "They did everything the leader set. Each one earns the seal.",
+    "es": "Hicieron todo lo que marcó el líder. Cada uno gana el sello."
+  },
+  "roomRevealFaithfulNone": {
+    "pt": "Desta vez ninguém completou tudo. A próxima semana começa segunda.",
+    "en": "No one finished everything this time. Next week starts Monday.",
+    "es": "Esta vez nadie completó todo. La próxima semana empieza el lunes."
+  },
+  "roomRevealConstantTitle": {
+    "pt": "Mais constante",
+    "en": "Most consistent",
+    "es": "Más constante"
+  },
+  "roomRevealConstantBody": {
+    "pt": "Esteve com a Palavra o maior número de dias.",
+    "en": "Spent the most days with the Word.",
+    "es": "Estuvo con la Palabra la mayor cantidad de días."
+  },
+  "roomRevealYourSeal": {
+    "pt": "Você ganhou o selo Fiel na semana. Ele fica ao lado do seu nome no grupo.",
+    "en": "You earned the Faithful this week seal. It shows next to your name in the group.",
+    "es": "Ganaste el sello Fiel en la semana. Aparece junto a tu nombre en el grupo."
+  },
+  "roomRevealGiftCta": {
+    "pt": "Dar um passe de trilha a alguém",
+    "en": "Give someone a trail pass",
+    "es": "Dar un pase de sendero a alguien"
+  },
+  "roomRevealGiftHint": {
+    "pt": "Seu passe do mês libera uma trilha do Peregrino+ inteira para quem você escolher.",
+    "en": "Your monthly pass unlocks a whole Pilgrim+ trail for whoever you choose.",
+    "es": "Tu pase del mes abre un sendero de Peregrino+ completo para quien elijas."
+  },
+  "roomRevealGiftPickTitle": {
+    "pt": "Qual trilha?",
+    "en": "Which trail?",
+    "es": "¿Qué sendero?"
+  },
+  "roomRevealGiftPickBody": {
+    "pt": "Escolha a trilha. Depois envie o link para quem você quer premiar.",
+    "en": "Pick the trail. Then send the link to whoever you want to reward.",
+    "es": "Elige el sendero. Después envía el enlace a quien quieras premiar."
+  },
+  "roomRevealDone": {
+    "pt": "Amém",
+    "en": "Amen",
+    "es": "Amén"
+  },
+  "roomSealCount": {
+    "pt": "{count, plural, =1{1 selo Fiel na semana} other{{count} selos Fiel na semana}}",
+    "en": "{count, plural, =1{1 Faithful seal} other{{count} Faithful seals}}",
+    "es": "{count, plural, =1{1 sello Fiel} other{{count} sellos Fiel}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "profileGroupSealsBody": {
+    "pt": "Ganhos nos fechamentos do seu grupo, nas semanas em que você fez tudo o que o líder marcou.",
+    "en": "Earned at your group's week close, in weeks you did everything the leader set.",
+    "es": "Ganados en el cierre de tu grupo, en las semanas en que hiciste todo lo que marcó el líder."
+  },
+  "roomRevealGrownTitle": {
+    "pt": "Quem mais cresceu",
+    "en": "Grew the most",
+    "es": "Quien más creció"
+  },
+  "roomRevealGrownBody": {
+    "pt": "Acertou mais nesta semana do que nas próprias semanas anteriores.",
+    "en": "Got more right this week than in their own previous weeks.",
+    "es": "Acertó más esta semana que en sus propias semanas anteriores."
+  },
+  "roomReadingTooFast": {
+    "pt": "Capítulo marcado. Para contar na leitura do grupo, leia com calma (uns {minutes} min) ou ouça o áudio, e conclua de novo.",
+    "en": "Chapter marked. To count for the group reading, read it calmly (about {minutes} min) or listen to the audio, then finish again.",
+    "es": "Capítulo marcado. Para contar en la lectura del grupo, léelo con calma (unos {minutes} min) o escucha el audio, y termínalo otra vez.",
+    "placeholders": {
+      "minutes": "int"
+    }
+  },
+  "roomReadingSameAsStudy": {
+    "pt": "Mesmo texto do estudo",
+    "en": "Same text as the study",
+    "es": "El mismo texto del estudio"
+  },
+  "roomReadingSameAsStudyBody": {
+    "pt": "{reading} — a passagem de “{study}”. O grupo lê o capítulo e faz a cena.",
+    "en": "{reading} — the passage of “{study}”. The group reads the chapter and does the scene.",
+    "es": "{reading} — el pasaje de “{study}”. El grupo lee el capítulo y hace la escena.",
+    "placeholders": {
+      "reading": "String",
+      "study": "String"
+    }
+  },
+  "roomReadingOrOther": {
+    "pt": "Ou escolha outro texto",
+    "en": "Or pick another text",
+    "es": "O elige otro texto"
+  },
+  "groupStudyTrailLine": {
+    "pt": "{trail} · cena {n} de {total}",
+    "en": "{trail} · scene {n} of {total}",
+    "es": "{trail} · escena {n} de {total}",
+    "placeholders": {
+      "trail": "String",
+      "n": "int",
+      "total": "int"
+    }
+  },
+  "groupStudyTapToOpen": {
+    "pt": "Toque para estudar",
+    "en": "Tap to study",
+    "es": "Toca para estudiar"
+  },
+  "groupStudyDoneTapAgain": {
+    "pt": "Você já fez · toque para rever",
+    "en": "You've done it · tap to review",
+    "es": "Ya la hiciste · toca para repasar"
+  },
+  "roomReadingProgressTap": {
+    "pt": "{done} de {total} lidos nesta semana · toque para ler",
+    "en": "{done} of {total} read this week · tap to read",
+    "es": "{done} de {total} leídos esta semana · toca para leer",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  }
+}

@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 6:1–6",
+    "passages": [
+      { "ref": "Amós 6:1–6" },
+      { "ref": "Amós 6:7–8" }
+    ],
+    "context": "Amós denuncia quem vive à vontade em Sião e Samaria, deitado em camas de marfim, sem se afligir com a ruína de José.",
+    "keyword": "ruína de José",
+    "keywordGloss": "A queda do povo que os confortáveis ignoram enquanto festejam.",
+    "focusQuestion": "O conforto de hoje te impede de sentir a dor do povo de Deus?",
+    "reflectionPrompts": [
+      "À vontade em Sião",
+      "Camas de marfim",
+      "Ruína de José"
+    ],
+    "facts": [
+      {
+        "text": "Há ai sobre quem está à vontade em Sião e seguro em Samaria.",
+        "evidenceRef": "Amós 6:1",
+        "evidenceSpan": "Ai dos que estão à vontade em Sião"
+      },
+      {
+        "text": "Pensam estar longe o dia mau e aproximam o trono da violência.",
+        "evidenceRef": "Amós 6:3",
+        "evidenceSpan": "pensam estar longe o dia mau e fazem que se aproxime o trono da violência"
+      },
+      {
+        "text": "Repousam em camas de marfim e se deliciam com cordeiros.",
+        "evidenceRef": "Amós 6:4",
+        "evidenceSpan": "repousam em camas de marfim"
+      },
+      {
+        "text": "Bebem vinho em taças e se ungem com o melhor óleo.",
+        "evidenceRef": "Amós 6:6",
+        "evidenceSpan": "bebem vinho em taças e se ungem com o melhor óleo"
+      },
+      {
+        "text": "Não se afligem com a ruína de José.",
+        "evidenceRef": "Amós 6:6",
+        "evidenceSpan": "não se afligem com a ruína de José"
+      },
+      {
+        "text": "O Senhor jurou abominar a soberba de Jacó e odiar seus castelos.",
+        "evidenceRef": "Amós 6:8",
+        "evidenceSpan": "Abomino a soberba de Jacó e odeio os seus castelos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "camas de marfim",
+        "gloss": "Símbolo do luxo de quem repousa sem se importar com José."
+      },
+      {
+        "term": "ruína de José",
+        "gloss": "A queda do povo que os confortáveis não choram."
+      },
+      {
+        "term": "soberba",
+        "gloss": "O orgulho de Jacó que o Senhor abomina."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ai aos seguros em Sião e Samaria",
+        "evidenceRef": "Amós 6:1–3"
+      },
+      {
+        "label": "Luxo sem dor pela ruína de José",
+        "evidenceRef": "Amós 6:4–6"
+      },
+      {
+        "label": "Cativeiro e juramento contra a soberba",
+        "evidenceRef": "Amós 6:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Ungem-se com o melhor óleo, mas não se afligem com a ruína de José.",
+        "marker": "mas",
+        "evidenceRef": "Amós 6:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto, irão em cativeiro entre os primeiros.",
+        "marker": "Portanto",
+        "evidenceRef": "Amós 6:7"
+      },
+      {
+        "kind": "causa",
+        "text": "O conforto sem dor atrai o juramento do Senhor contra a soberba.",
+        "marker": null,
+        "evidenceRef": "Amós 6:8"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 16:19–21", "bridge": "Luxo cego à miséria" },
+      { "ref": "Isaías 5:11–12", "bridge": "Festas sem olhar a Deus" },
+      { "ref": "Tiago 5:5", "bridge": "Prazeres sem compaixão" }
+    ],
+    "misreadings": [
+      {
+        "text": "O luxo em si é louvado; o problema é só a falta de música.",
+        "why": "6:4–6 liga o luxo à indiferença pela ruína de José."
+      },
+      {
+        "text": "O dia mau está longe e não há risco nenhum.",
+        "why": "6:3 denuncia quem pensa isso e aproxima a violência."
+      },
+      {
+        "text": "O Senhor aprova a soberba e os castelos de Jacó.",
+        "why": "6:8: Abomino a soberba de Jacó e odeio os seus castelos."
+      }
+    ],
+    "centralInsight": "O conforto sem dor pelo povo de José atrai o juramento do Senhor.",
+    "anchorQuestion": "Segundo Amós 6:6, com o que os confortáveis não se afligem?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 6:1, há um ai sobre os que estão à vontade em Sião.",
+      "verseRef": "Amós 6:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ai dos que estão à vontade em Sião",
+      "feedbackCorrect": "O oráculo abre com ai aos seguros em Sião e Samaria.",
+      "feedbackWrong": { "false": "Releia o começo de Amós 6:1." },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Observar o ai aos confortáveis.",
+      "evidence": ["Amós 6:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 6:4, toque sobre o que repousam.",
+      "verseRef": "Amós 6:4",
+      "evidenceSpan": "repousam em camas de marfim",
+      "feedbackCorrect": "Repousam em camas de marfim e se estendem nos leitos.",
+      "hint": "Procure o material das camas.",
+      "learningObjective": "Identificar o luxo denunciado.",
+      "evidence": ["Amós 6:4"],
+      "options": [
+        { "id": "a", "text": "camas de marfim" },
+        { "id": "b", "text": "cordeiros" },
+        { "id": "c", "text": "bezerros" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Cordeiros são a comida, não o lugar do repouso.",
+        "c": "Bezerros alimentados são o banquete, não as camas."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 6:6, com o que não se afligem?",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "Bebem e se ungem, mas não se afligem com a ruína de José.",
+      "hint": "Leia o contraste no fim do versículo.",
+      "learningObjective": "Observar a indiferença pela ruína.",
+      "evidence": ["Amós 6:6"],
+      "options": [
+        { "id": "a", "text": "A ruína de José" },
+        { "id": "b", "text": "A falta de vinho nas taças" },
+        { "id": "c", "text": "A ausência de óleo" },
+        { "id": "d", "text": "A falta de liras" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Eles bebem vinho em taças.",
+        "c": "Ungem-se com o melhor óleo.",
+        "d": "Cantam ao som da lira."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 6:6 na ordem do texto.",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "Vinho e óleo primeiro; a indiferença por José fecha.",
+      "hint": "Comece pelo vinho nas taças.",
+      "learningObjective": "Reconhecer a sequência de Amós 6:6.",
+      "evidence": ["Amós 6:6"],
+      "options": [
+        { "id": "a", "text": "que bebem vinho em taças" },
+        { "id": "b", "text": "e se ungem com o melhor óleo" },
+        { "id": "c", "text": "mas não se afligem com a ruína de José" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo vinho; a ruína de José fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 6:8, o que o Senhor abomina de Jacó?",
+      "verseRef": "Amós 6:8",
+      "evidenceSpan": "Abomino a soberba de Jacó",
+      "feedbackCorrect": "Abomina a soberba de Jacó e odeia os castelos.",
+      "hint": "É o que ele abomina.",
+      "learningObjective": "Lembrar o alvo do juramento.",
+      "evidence": ["Amós 6:8"],
+      "options": [
+        { "id": "a", "text": "soberba" },
+        { "id": "b", "text": "humildade" },
+        { "id": "c", "text": "misericórdia" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto acusa soberba, não humildade.",
+        "c": "\"Misericórdia\" não é o que ele abomina."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 6:6 comunica que se liga a este contexto?",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "O luxo sem dor pelo povo atrai o juízo anunciado.",
+      "hint": "Ligue o banquete à indiferença.",
+      "learningObjective": "Ligar conforto e indiferença.",
+      "evidence": ["Amós 6:6"],
+      "passageA": { "ref": "Amós 6:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os confortáveis festejam sem se afligir com a ruína de José."
+      },
+      "options": [
+        { "id": "a", "text": "Luxo sem dor por José" },
+        { "id": "b", "text": "Festa que cura a ruína" },
+        { "id": "c", "text": "Óleo que traz arrependimento" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A festa ignora a ruína; não a cura.",
+        "c": "O óleo marca luxo, não arrependimento."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 6:6, ungir-se com o melhor óleo vem junto com aflição sincera pela ruína de José.",
+      "verseRef": "Amós 6:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não se afligem com a ruína de José",
+      "feedbackCorrect": "O \"mas\" marca o contraste: luxo sem aflição por José.",
+      "feedbackWrong": { "true": "Releia o contraste no fim de Amós 6:6." },
+      "hint": "Procure a palavra que vira o versículo.",
+      "learningObjective": "Compreender o contraste luxo/indiferença.",
+      "evidence": ["Amós 6:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 6:6, toque a palavra que marca o contraste com o luxo.",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "mas não se afligem com a ruína de José",
+      "feedbackCorrect": "\"Mas\" introduz a indiferença pela ruína de José.",
+      "hint": "É a palavra curta antes de \"não se afligem\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Amós 6:6"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "vinho" },
+        { "id": "c", "text": "óleo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Vinho\" descreve o luxo, não o contraste.",
+        "c": "\"Óleo\" é parte do banquete, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 6:6–7 relaciona o luxo e o destino desses ricos?",
+      "verseRef": "Amós 6:6–7",
+      "evidenceSpan": "irão em cativeiro entre os primeiros que forem levados",
+      "feedbackCorrect": "Porque não se afligem, irão cativos entre os primeiros.",
+      "hint": "Una o \"mas\" de 6:6 ao \"Portanto\" de 6:7.",
+      "learningObjective": "Relacionar indiferença e cativeiro.",
+      "evidence": ["Amós 6:6–7"],
+      "options": [
+        { "id": "a", "text": "A indiferença pela ruína leva ao cativeiro" },
+        { "id": "b", "text": "O luxo garante proteção eterna" },
+        { "id": "c", "text": "O cativeiro premia quem se aflige" },
+        { "id": "d", "text": "As festas continuam sem interrupção" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "6:7 anuncia cativeiro, não proteção.",
+        "c": "Quem não se aflige é levado primeiro.",
+        "d": "As festas dos desenfreados cessarão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 6:1–8?",
+      "verseRef": "Amós 6:1–8",
+      "evidenceSpan": "Abomino a soberba de Jacó",
+      "feedbackCorrect": "Ai, luxo sem dor, depois cativeiro e juramento.",
+      "hint": "Comece pelo ai aos seguros.",
+      "learningObjective": "Seguir o movimento do oráculo.",
+      "evidence": ["Amós 6:1–8"],
+      "options": [
+        { "id": "a", "text": "Ai aos seguros em Sião e Samaria" },
+        { "id": "b", "text": "Luxo sem dor pela ruína de José" },
+        { "id": "c", "text": "Cativeiro e juramento contra a soberba" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Ai primeiro; juramento por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 6:7, que palavra introduz o resultado do luxo sem dor?",
+      "verseRef": "Amós 6:7",
+      "evidenceSpan": "Portanto, agora irão em cativeiro",
+      "feedbackCorrect": "\"Portanto\" liga a indiferença ao cativeiro.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": ["Amós 6:7"],
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "Talvez" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Talvez\" não abre o juízo.",
+        "c": "\"Nunca\" contradiz o anúncio."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 6:6 a Isaías 5:11–12?",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "Nos dois textos, festas e vinho cegam para a obra de Deus.",
+      "hint": "Compare festas sem olhar o que importa.",
+      "learningObjective": "Relacionar o luxo cego em Amós e Isaías.",
+      "evidence": ["Amós 6:6", "Isaías 5:11–12"],
+      "passageA": { "ref": "Amós 6:6" },
+      "passageB": { "ref": "Isaías 5:11–12" },
+      "options": [
+        { "id": "a", "text": "Festas sem olhar a Deus" },
+        { "id": "b", "text": "Jejum coletivo sincero" },
+        { "id": "c", "text": "Cativeiro já cancelado" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos denunciam festas, não jejum.",
+        "c": "O juízo ainda é anunciado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 6:8, o Senhor jura abominar a soberba de Jacó e odiar os seus castelos.",
+      "verseRef": "Amós 6:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Abomino a soberba de Jacó e odeio os seus castelos",
+      "feedbackCorrect": "O juramento é claro: soberba abominada e castelos odiados.",
+      "feedbackWrong": { "false": "Releia o juramento de Amós 6:8." },
+      "hint": "Veja o que o Senhor diz abominar e odiar.",
+      "learningObjective": "Interpretar o juramento contra a soberba.",
+      "evidence": ["Amós 6:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 6:8, toque o que o Senhor odeia além da soberba.",
+      "verseRef": "Amós 6:8",
+      "evidenceSpan": "odeio os seus castelos",
+      "feedbackCorrect": "Odeia os castelos de Jacó e abandonará a cidade.",
+      "hint": "Procure o objeto de \"odeio\".",
+      "learningObjective": "Sustentar com o texto o ódio aos castelos.",
+      "evidence": ["Amós 6:8"],
+      "options": [
+        { "id": "a", "text": "castelos" },
+        { "id": "b", "text": "cidade" },
+        { "id": "c", "text": "SENHOR" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A cidade será abandonada; o ódio nomeia os castelos.",
+        "c": "\"SENHOR\" é quem jura, não o alvo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 6:1–8 sustenta sobre o conforto?",
+      "verseRef": "Amós 6:6–8",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "Conforto sem dor pelo povo atrai o juramento do Senhor.",
+      "hint": "Una luxo, indiferença e o juramento.",
+      "learningObjective": "Escolher a interpretação do oráculo.",
+      "evidence": ["Amós 6:6–8"],
+      "options": [
+        { "id": "a", "text": "Conforto sem dor por José atrai o juízo" },
+        { "id": "b", "text": "O luxo em si é louvado sem crítica" },
+        { "id": "c", "text": "O dia mau está longe e sem risco" },
+        { "id": "d", "text": "O Senhor aprova a soberba de Jacó" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O luxo é ligado à indiferença e ao cativeiro.",
+        "c": "6:3 denuncia quem pensa isso.",
+        "d": "6:8 abomina a soberba."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o luxo cego na Escritura?",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "Amós denuncia; Isaías e Tiago ecoam o prazer sem temor.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o fio do luxo sem dor na Bíblia.",
+      "evidence": ["Amós 6:6", "Isaías 5:11–12", "Tiago 5:5"],
+      "options": [
+        { "id": "a", "text": "Amós: luxo sem dor por José" },
+        { "id": "b", "text": "Isaías: festas sem olhar a obra de Deus" },
+        { "id": "c", "text": "Tiago: viveram em prazeres na terra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 6, Isaías 5 e Tiago 5." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 6:6, de quem é a ruína que eles ignoram?",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "A ruína de José é o povo que eles não choram.",
+      "hint": "É o nome no fim do versículo.",
+      "learningObjective": "Lembrar o termo do povo ignorado.",
+      "evidence": ["Amós 6:6"],
+      "options": [
+        { "id": "a", "text": "José" },
+        { "id": "b", "text": "Edom" },
+        { "id": "c", "text": "Egito" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Edom não aparece neste versículo.",
+        "c": "Egito não é o povo nomeado aqui."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 6:4 a Lucas 16:19–21?",
+      "verseRef": "Amós 6:4",
+      "evidenceSpan": "repousam em camas de marfim",
+      "feedbackCorrect": "Nos dois textos, luxo cego à miséria do próximo.",
+      "hint": "Compare o rico que se deleita e ignora.",
+      "learningObjective": "Ligar o luxo de Amós ao rico de Lucas.",
+      "evidence": ["Amós 6:4", "Lucas 16:19–21"],
+      "passageA": { "ref": "Amós 6:4" },
+      "passageB": { "ref": "Lucas 16:19–21" },
+      "options": [
+        { "id": "a", "text": "Luxo cego à miséria" },
+        { "id": "b", "text": "Pobreza como única virtude" },
+        { "id": "c", "text": "Festas que salvam o povo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O problema é a indiferença, não a riqueza sozinha.",
+        "c": "As festas ignoram a ruína."
+      }
+    }
+  ]
+}

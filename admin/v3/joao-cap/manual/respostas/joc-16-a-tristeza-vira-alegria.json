@@ -1,0 +1,498 @@
+{
+  "study": {
+    "passageRef": "João 16:20–24",
+    "passages": [
+      { "ref": "João 16:20–24" },
+      { "ref": "João 16:17–19" },
+      { "ref": "João 16:25–27" }
+    ],
+    "context": "Na noite da despedida, Jesus falou de um pouco em que os discípulos não o veriam e de ir para o Pai. Eles repetem a frase entre si e não entendem. Ele percebe a dúvida e passa a responder.",
+    "keyword": "alegria",
+    "keywordGloss": "É o que nasce da tristeza dos discípulos e que ninguém poderá tirar.",
+    "focusQuestion": "O que essa promessa muda no seu olhar quando a tristeza parece sem saída?",
+    "reflectionPrompts": [
+      "O choro e o mundo",
+      "A dor que passa",
+      "A alegria que fica"
+    ],
+    "facts": [
+      {
+        "text": "Os discípulos dizem que não entendem o que Jesus quer dizer.",
+        "evidenceRef": "João 16:18",
+        "evidenceSpan": "Não entendemos o que ele quer dizer."
+      },
+      {
+        "text": "Eles chorarão e lamentarão, mas o mundo se alegrará.",
+        "evidenceRef": "João 16:20",
+        "evidenceSpan": "chorareis e lamentareis, mas o mundo se alegrará"
+      },
+      {
+        "text": "A tristeza deles se converterá em alegria.",
+        "evidenceRef": "João 16:20",
+        "evidenceSpan": "a vossa tristeza se converterá em alegria"
+      },
+      {
+        "text": "Depois do parto, a mulher já não se lembra da aflição.",
+        "evidenceRef": "João 16:21",
+        "evidenceSpan": "já não se lembra da aflição"
+      },
+      {
+        "text": "Ninguém poderá tirar a alegria dos discípulos.",
+        "evidenceRef": "João 16:22",
+        "evidenceSpan": "a vossa alegria ninguém poderá tirar"
+      },
+      {
+        "text": "Até agora eles não pediram nada em nome de Jesus, e devem pedir para que a alegria seja cheia.",
+        "evidenceRef": "João 16:24",
+        "evidenceSpan": "Até agora vocês não pediram nada em meu nome; peçam e receberão para que a alegria de vocês seja cheia."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "alegria",
+        "gloss": "O que nasce da tristeza dos discípulos e que ninguém poderá tirar."
+      },
+      {
+        "term": "tristeza",
+        "gloss": "O que os discípulos sentem agora e o que a mulher sente na hora do parto."
+      },
+      {
+        "term": "nome",
+        "gloss": "É em nome de Jesus que eles passam a pedir ao Pai, para a alegria ficar cheia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A dúvida sobre o sentido do pouco",
+        "evidenceRef": "João 16:18"
+      },
+      {
+        "label": "O choro deles contrasta com a alegria do mundo",
+        "evidenceRef": "João 16:20"
+      },
+      {
+        "label": "A tristeza anunciada se converte em alegria",
+        "evidenceRef": "João 16:20"
+      },
+      {
+        "label": "O parto mostra a aflição que passa",
+        "evidenceRef": "João 16:21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Eles choram e lamentam, mas o mundo se alegrará.",
+        "marker": "mas",
+        "evidenceRef": "João 16:20"
+      },
+      {
+        "kind": "contraste",
+        "text": "Eles ficarão tristes, porém essa tristeza se converterá em alegria.",
+        "marker": "porém",
+        "evidenceRef": "João 16:20"
+      },
+      {
+        "kind": "contraste",
+        "text": "Agora eles têm tristeza, mas em breve o coração se alegra e essa alegria ninguém tira.",
+        "marker": "mas",
+        "evidenceRef": "João 16:22"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 15:11", "bridge": "Alegria completa nos discípulos" },
+      { "ref": "João 20:20", "bridge": "Alegria ao ver o Senhor" },
+      { "ref": "Salmos 30:5", "bridge": "O choro cede à alegria" }
+    ],
+    "misreadings": [
+      {
+        "text": "Depois do parto, a mulher continua lembrando a aflição.",
+        "why": "O texto diz que ela já não se lembra da aflição, pelo prazer de ter trazido um homem ao mundo."
+      },
+      {
+        "text": "Alguém poderá tirar a alegria prometida aos discípulos.",
+        "why": "Jesus diz que a alegria deles ninguém poderá tirar."
+      },
+      {
+        "text": "A tristeza de agora é o fim e não tem virada para a alegria.",
+        "why": "Eles têm tristeza agora, mas em breve o coração se alegrará, e essa alegria fica com eles."
+      }
+    ],
+    "centralInsight": "A tristeza dos discípulos vira uma alegria que ninguém pode tirar.",
+    "anchorQuestion": "O que Jesus diz que acontece com a tristeza dos discípulos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 16:24, os discípulos ainda não tinham pedido nada em nome de Jesus.",
+      "verseRef": "João 16:24",
+      "correctOptionId": "true",
+      "evidenceSpan": "Até agora vocês não pediram nada em meu nome",
+      "feedbackCorrect": "O versículo abre dizendo que até agora eles não pediram nada em nome dele.",
+      "feedbackWrong": {
+        "false": "Releia o começo de João 16:24: até agora eles não tinham pedido em nome dele."
+      },
+      "hint": "Olhe a primeira frase do versículo.",
+      "learningObjective": "Observar que até então eles não tinham pedido em nome de Jesus.",
+      "evidence": ["João 16:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 16:20, toque quem se alegrará enquanto os discípulos choram.",
+      "verseRef": "João 16:20",
+      "options": [
+        { "id": "a", "text": "vos digo" },
+        { "id": "b", "text": "o mundo" },
+        { "id": "c", "text": "vossa tristeza" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o mundo se alegrará",
+      "feedbackCorrect": "Quem se alegra nessa hora é o mundo; os discípulos choram e lamentam.",
+      "feedbackWrong": {
+        "a": "\"Vos digo\" só abre a fala de Jesus; não diz quem se alegra.",
+        "c": "A tristeza é o que eles sentem, não quem se alegra nessa hora."
+      },
+      "hint": "Procure quem faz a ação de se alegrar.",
+      "learningObjective": "Identificar quem se alegra enquanto os discípulos choram.",
+      "evidence": ["João 16:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que os discípulos admitem em João 16:18?",
+      "verseRef": "João 16:18",
+      "options": [
+        { "id": "a", "text": "Não entendem o que Jesus quer dizer" },
+        { "id": "b", "text": "Já conhecem a hora da volta dele" },
+        { "id": "c", "text": "Já pedem ao Pai em nome de Jesus" },
+        { "id": "d", "text": "Festejam com o mundo a despedida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não entendemos o que ele quer dizer.",
+      "feedbackCorrect": "Eles mesmos dizem que não entendem o que Jesus quer dizer.",
+      "feedbackWrong": {
+        "b": "O texto mostra o contrário: eles não entendem a frase.",
+        "c": "Pedir em nome de Jesus vem depois; aqui eles só confessam a dúvida.",
+        "d": "Eles estão confusos, não em festa; a fala é de quem não entendeu."
+      },
+      "hint": "Olhe a frase depois da pergunta deles.",
+      "learningObjective": "Reconhecer que os discípulos não entendem a frase de Jesus.",
+      "evidence": ["João 16:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 16:21 na ordem do texto.",
+      "verseRef": "João 16:21",
+      "options": [
+        { "id": "a", "text": "A mulher, quando está para dar à luz, tem tristeza" },
+        { "id": "b", "text": "após ter dado à luz o menino" },
+        { "id": "c", "text": "já não se lembra da aflição" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "A mulher, quando está para dar à luz, tem tristeza",
+      "feedbackCorrect": "A mulher tem tristeza, dá à luz o menino e já não lembra a aflição.",
+      "feedbackWrong": {
+        "default": "Comece pela tristeza da mulher; o esquecer da aflição vem no fim."
+      },
+      "hint": "O versículo começa pela mulher.",
+      "learningObjective": "Seguir a ordem da imagem do parto em João 16:21.",
+      "evidence": ["João 16:21"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 16:20, que verbo vem ao lado de chorareis?",
+      "verseRef": "João 16:20",
+      "options": [
+        { "id": "a", "text": "fugireis" },
+        { "id": "b", "text": "lamentareis" },
+        { "id": "c", "text": "calareis" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chorareis e lamentareis",
+      "feedbackCorrect": "Eles chorarão e lamentarão; os dois verbos andam juntos na frase.",
+      "feedbackWrong": {
+        "a": "Fugir não está nessa frase; o verbo ao lado de chorareis é outro.",
+        "c": "Calar não aparece aí; a frase junta o choro a outro verbo."
+      },
+      "hint": "Olhe o verbo que fecha a dupla com chorareis.",
+      "learningObjective": "Lembrar o verbo que acompanha o choro dos discípulos.",
+      "evidence": ["João 16:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 16:22 comunica que se liga a este contexto?",
+      "verseRef": "João 16:22",
+      "passageA": { "ref": "João 16:22" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A tristeza de agora não é o ponto final dos discípulos."
+      },
+      "options": [
+        { "id": "a", "text": "Tristeza sem saída agora" },
+        { "id": "b", "text": "Alegria que ninguém tira" },
+        { "id": "c", "text": "Só um reencontro breve" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a vossa alegria ninguém poderá tirar",
+      "feedbackCorrect": "O versículo termina numa alegria que eles não vão perder.",
+      "feedbackWrong": {
+        "a": "O contexto nega uma tristeza sem saída; o versículo abre outra saída.",
+        "c": "O versículo não reduz a promessa a um encontro que passa logo."
+      },
+      "hint": "Veja o que o fim do versículo promete.",
+      "learningObjective": "Ligar João 16:22 à ideia de que a tristeza de agora não é o fim.",
+      "evidence": ["João 16:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 16:20, o mundo chorará e lamentará junto com os discípulos.",
+      "verseRef": "João 16:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "chorareis e lamentareis, mas o mundo se alegrará",
+      "feedbackCorrect": "Quem chora e lamenta são os discípulos; o mundo se alegrará.",
+      "feedbackWrong": {
+        "true": "O versículo separa os dois: eles choram e lamentam, e o mundo se alegra."
+      },
+      "hint": "Veja quem pratica cada ação no versículo.",
+      "learningObjective": "Compreender o contraste entre o choro dos discípulos e a alegria do mundo.",
+      "evidence": ["João 16:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 16:20, toque a palavra que marca a virada da tristeza.",
+      "verseRef": "João 16:20",
+      "options": [
+        { "id": "a", "text": "verdade" },
+        { "id": "b", "text": "tristes" },
+        { "id": "c", "text": "porém" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "tristes, porém",
+      "feedbackCorrect": "Essa palavra vira a frase: a tristeza deles se converte em alegria.",
+      "feedbackWrong": {
+        "a": "\"Verdade\" só reforça a fala; não é a palavra que vira a tristeza.",
+        "b": "\"Tristes\" é o estado deles; a virada vem na palavra seguinte."
+      },
+      "hint": "Fica entre tristes e a frase que vem em seguida.",
+      "learningObjective": "Reconhecer a palavra que marca a virada da tristeza.",
+      "evidence": ["João 16:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como João 16:22 liga a tristeza de agora ao que vem depois?",
+      "verseRef": "João 16:22",
+      "options": [
+        { "id": "a", "text": "A tristeza de agora cancela qualquer alegria futura" },
+        { "id": "b", "text": "A tristeza de agora cede a uma alegria que fica" },
+        { "id": "c", "text": "O reencontro só aprofunda a tristeza do coração" },
+        { "id": "d", "text": "A alegria vem e some se alguém quiser tirá-la" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tendes tristeza; mas em breve vos verei novamente, e o vosso coração se alegrará",
+      "feedbackCorrect": "Agora há tristeza, mas em breve o coração se alegra e essa alegria fica.",
+      "feedbackWrong": {
+        "a": "O texto não apaga a alegria; a tristeza de agora dá lugar a ela.",
+        "c": "O reencontro não aumenta a tristeza; ele alegra o coração.",
+        "d": "A alegria de que Jesus fala não fica à mercê de quem quiser tirá-la."
+      },
+      "hint": "Ligue o agora da tristeza ao que ele diz que vem depois.",
+      "learningObjective": "Relacionar a tristeza de agora com a alegria que vem depois.",
+      "evidence": ["João 16:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a resposta de Jesus em João 16:20–21?",
+      "verseRef": "João 16:20–21",
+      "options": [
+        { "id": "a", "text": "O choro deles contrasta com a alegria do mundo" },
+        { "id": "b", "text": "A tristeza anunciada se converte em alegria" },
+        { "id": "c", "text": "O parto mostra a aflição que passa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a vossa tristeza se converterá em alegria",
+      "feedbackCorrect": "O texto vai do choro diante do mundo à virada e, então, ao parto.",
+      "feedbackWrong": {
+        "default": "Siga a fala: primeiro o mundo, depois a virada, por fim o parto."
+      },
+      "hint": "A imagem do parto chega depois da promessa.",
+      "learningObjective": "Ordenar os movimentos da resposta de Jesus em João 16:20–21.",
+      "evidence": ["João 16:20–21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 16:24, como fica a alegria de quem pede e recebe?",
+      "verseRef": "João 16:24",
+      "options": [
+        { "id": "a", "text": "pouca" },
+        { "id": "b", "text": "fraca" },
+        { "id": "c", "text": "cheia" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "a alegria de vocês seja cheia",
+      "feedbackCorrect": "Eles pedem e recebem para que a alegria deles seja cheia.",
+      "feedbackWrong": {
+        "a": "O versículo não diz que a alegria fica pouca; o fim da frase é outro.",
+        "b": "Fraca não é a palavra; olhe como a frase descreve a alegria."
+      },
+      "hint": "Olhe a última palavra do versículo.",
+      "learningObjective": "Lembrar como fica a alegria de quem pede e recebe.",
+      "evidence": ["João 16:24"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 16:24 a João 15:11?",
+      "verseRef": "João 16:24",
+      "passageA": { "ref": "João 16:24" },
+      "passageB": { "ref": "João 15:11" },
+      "options": [
+        { "id": "a", "text": "Tristeza que não passa" },
+        { "id": "b", "text": "Festa só do mundo" },
+        { "id": "c", "text": "Alegria completa nos discípulos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para que a alegria de vocês seja cheia",
+      "feedbackCorrect": "Nos dois textos, Jesus quer a alegria dos discípulos completa.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois trata de uma tristeza que fica para sempre.",
+        "b": "A ponte não é a festa do mundo; os dois falam da alegria deles."
+      },
+      "hint": "Compare o fim de cada texto.",
+      "learningObjective": "Ligar o pedido de João 16:24 à alegria de que João 15:11 fala.",
+      "evidence": ["João 16:24", "João 15:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 16:22, a alegria prometida aos discípulos é uma alegria que permanece.",
+      "verseRef": "João 16:21–22",
+      "correctOptionId": "true",
+      "evidenceSpan": "a vossa alegria ninguém poderá tirar",
+      "feedbackCorrect": "O reencontro alegra o coração, e essa alegria fica com os discípulos.",
+      "feedbackWrong": {
+        "false": "Não é uma alegria que passa logo; o versículo a deixa com eles."
+      },
+      "hint": "Olhe o fim do versículo, depois do coração.",
+      "learningObjective": "Sustentar que a alegria prometida permanece com os discípulos.",
+      "evidence": ["João 16:21–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 16:22, toque o que mostra que a alegria dos discípulos permanece.",
+      "verseRef": "João 16:22",
+      "options": [
+        { "id": "a", "text": "agora" },
+        { "id": "b", "text": "ninguém" },
+        { "id": "c", "text": "breve" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "alegria ninguém poderá tirar",
+      "feedbackCorrect": "Essa palavra mostra que a alegria não fica na mão de outra pessoa.",
+      "feedbackWrong": {
+        "a": "\"Agora\" marca a tristeza do momento, não o que a faz permanecer.",
+        "c": "\"Breve\" diz que o reencontro vem logo, não que a alegria fica."
+      },
+      "hint": "Olhe as palavras finais da frase.",
+      "learningObjective": "Localizar no texto o que mostra que essa alegria permanece.",
+      "evidence": ["João 16:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 16:21–22 sustenta sobre a dor dos discípulos?",
+      "verseRef": "João 16:21–22",
+      "options": [
+        { "id": "a", "text": "É uma dor de parto que a mulher nunca esquece" },
+        { "id": "b", "text": "É uma alegria que alguém ainda pode tirar" },
+        { "id": "c", "text": "É uma dor que passa e deixa uma alegria firme" },
+        { "id": "d", "text": "É uma tristeza atual que não tem virada" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "a vossa alegria ninguém poderá tirar",
+      "feedbackCorrect": "A dor passa, como no parto, e a alegria que nasce fica com eles.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: depois do parto ela já não lembra a aflição.",
+        "b": "O versículo afirma que essa alegria não poderá ser tirada.",
+        "d": "Há virada: agora há tristeza, mas em breve o coração se alegra."
+      },
+      "hint": "Junte a imagem do parto ao que ele diz da alegria.",
+      "learningObjective": "Escolher a leitura que o parto e a promessa sustentam.",
+      "evidence": ["João 16:21–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho da alegria de João 16:22?",
+      "verseRef": "João 16:22",
+      "options": [
+        { "id": "a", "text": "Jesus anuncia a tristeza do momento" },
+        { "id": "b", "text": "O reencontro com Jesus alegra o coração" },
+        { "id": "c", "text": "Essa alegria permanece com os discípulos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o vosso coração se alegrará",
+      "feedbackCorrect": "A fala vai da tristeza de agora ao reencontro e à alegria que fica.",
+      "feedbackWrong": {
+        "default": "Comece pela tristeza de agora; a alegria que fica é o desfecho."
+      },
+      "hint": "A tristeza de agora é o primeiro passo.",
+      "learningObjective": "Ordenar o caminho da tristeza até a alegria que fica.",
+      "evidence": ["João 16:22", "João 20:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 16:20, em que a tristeza dos discípulos se converterá?",
+      "verseRef": "João 16:20",
+      "options": [
+        { "id": "a", "text": "luto" },
+        { "id": "b", "text": "alegria" },
+        { "id": "c", "text": "pranto" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "se converterá em alegria",
+      "feedbackCorrect": "A tristeza se converterá em alegria: é o termo que rege a cena.",
+      "feedbackWrong": {
+        "a": "Luto seria continuar na dor; o versículo muda o rumo da frase.",
+        "c": "Pranto não é o destino; a frase termina em outra palavra."
+      },
+      "hint": "É a última palavra do versículo.",
+      "learningObjective": "Lembrar o termo em que a tristeza dos discípulos se converte.",
+      "evidence": ["João 16:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 16:22 a João 20:20?",
+      "verseRef": "João 16:22",
+      "passageA": { "ref": "João 16:22" },
+      "passageB": { "ref": "João 20:20" },
+      "options": [
+        { "id": "a", "text": "A mulher esquece a aflição" },
+        { "id": "b", "text": "Alegria ao ver o Senhor" },
+        { "id": "c", "text": "O mundo festeja a ausência" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o vosso coração se alegrará",
+      "feedbackCorrect": "Em João 20:20 eles se alegram ao ver o Senhor, como a promessa dizia.",
+      "feedbackWrong": {
+        "a": "O parto explica a dor que passa; não é o que liga os dois textos.",
+        "c": "Nenhum dos dois fala da festa do mundo; os dois falam de ver e se alegrar."
+      },
+      "hint": "Veja a reação dos discípulos quando o encontram.",
+      "learningObjective": "Ligar a promessa de ver Jesus de novo à alegria de João 20:20.",
+      "evidence": ["João 16:22", "João 20:20"]
+    }
+  ]
+}

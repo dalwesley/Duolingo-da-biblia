@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Cantares 3:6–11",
+    "passages": [{ "ref": "Cantares 3:6–11" }],
+    "context": "Uma pergunta sobe do deserto: quem é esta? Em seguida aparece a liteira de Salomão, com valentes, e o dia do desposório em alegria pública.",
+    "keyword": "desposório",
+    "keywordGloss": "O dia da união celebrada: coroa, testemunhas e alegria do coração.",
+    "focusQuestion": "O seu amor precisa de mais testemunhas honestas e menos esconderijo?",
+    "reflectionPrompts": ["Cortejo público", "Guarda atenta", "Dia da alegria"],
+    "facts": [
+      {
+        "text": "Alguém sobe do deserto como colunas de fumo, perfumada de mirra e incenso.",
+        "evidenceRef": "Cantares 3:6",
+        "evidenceSpan": "Quem é esta que sobe do deserto, como colunas de fumo"
+      },
+      {
+        "text": "Ao redor da liteira de Salomão estão sessenta valentes de Israel.",
+        "evidenceRef": "Cantares 3:7",
+        "evidenceSpan": "Eis a liteira de Salomão; ao seu redor estão sessenta valentes"
+      },
+      {
+        "text": "Os valentes estão armados e com a espada à cintura por causa dos temores da noite.",
+        "evidenceRef": "Cantares 3:8",
+        "evidenceSpan": "cada um com a espada à cintura, por causa dos temores da noite"
+      },
+      {
+        "text": "Salomão fez um palanquim de madeira do Líbano.",
+        "evidenceRef": "Cantares 3:9",
+        "evidenceSpan": "um palanquim de madeira do Líbano"
+      },
+      {
+        "text": "O interior do palanquim está ornado com amor pelas filhas de Jerusalém.",
+        "evidenceRef": "Cantares 3:10",
+        "evidenceSpan": "o interior todo ornado com amor, pelas filhas de Jerusalém"
+      },
+      {
+        "text": "As filhas de Sião devem contemplar Salomão no dia do seu desposório.",
+        "evidenceRef": "Cantares 3:11",
+        "evidenceSpan": "no dia do seu desposório, no dia da alegria do seu coração"
+      }
+    ],
+    "keyTerms": [
+      { "term": "desposório", "gloss": "O dia da união celebrada com coroa e alegria pública." },
+      { "term": "liteira", "gloss": "O cortejo real que carrega a presença do rei." },
+      { "term": "valentes", "gloss": "A guarda armada que cerca a liteira na noite." }
+    ],
+    "structure": [
+      { "label": "Surge a pergunta perfumada do deserto", "evidenceRef": "Cantares 3:6" },
+      { "label": "A liteira aparece cercada de valentes", "evidenceRef": "Cantares 3:7–8" },
+      { "label": "O palanquim é feito e ornado com amor", "evidenceRef": "Cantares 3:9–10" },
+      { "label": "Sião contempla o dia do desposório", "evidenceRef": "Cantares 3:11" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Cada valente leva a espada à cintura por causa dos temores da noite.",
+        "marker": "por causa",
+        "evidenceRef": "Cantares 3:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "As filhas de Sião são chamadas a sair para contemplar o rei no desposório.",
+        "marker": null,
+        "evidenceRef": "Cantares 3:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "O interior ornado com amor aponta a participação das filhas de Jerusalém.",
+        "marker": null,
+        "evidenceRef": "Cantares 3:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 45:13–15", "bridge": "A noiva entra com alegria" },
+      { "ref": "João 2:1–2", "bridge": "Bodas celebradas em público" },
+      { "ref": "Apocalipse 19:7", "bridge": "Alegria das bodas do Cordeiro" }
+    ],
+    "misreadings": [
+      {
+        "text": "O amor verdadeiro deve ficar só no esconderijo, sem testemunhas.",
+        "why": "A cena é pública: liteira, valentes, filhas de Sião e dia do desposório."
+      },
+      {
+        "text": "O cortejo é só luxo vazio, sem alegria do coração.",
+        "why": "3:11 chama o dia de alegria do coração."
+      },
+      {
+        "text": "Não há risco nem cuidado no caminho do amor.",
+        "why": "3:8 fala dos temores da noite e da espada à cintura."
+      }
+    ],
+    "centralInsight": "O amor celebrado em público tem cortejo, testemunhas e alegria compartilhada.",
+    "anchorQuestion": "Em Cantares 3:11, que dia as filhas de Sião devem contemplar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 3:7, ao redor da liteira de Salomão estão sessenta valentes.",
+      "verseRef": "Cantares 3:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "ao seu redor estão sessenta valentes",
+      "feedbackCorrect": "O texto conta sessenta valentes ao redor da liteira.",
+      "feedbackWrong": { "false": "Releia 3:7: são sessenta valentes ao redor." },
+      "hint": "Veja o número ao redor da liteira.",
+      "learningObjective": "Observar a guarda ao redor da liteira.",
+      "evidence": ["Cantares 3:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 3:9, toque o que Salomão fez de madeira do Líbano.",
+      "verseRef": "Cantares 3:9",
+      "options": [
+        { "id": "a", "text": "palanquim" },
+        { "id": "b", "text": "Líbano" },
+        { "id": "c", "text": "madeira" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um palanquim de madeira do Líbano",
+      "feedbackCorrect": "Ele fez um palanquim de madeira do Líbano.",
+      "feedbackWrong": {
+        "b": "Líbano é a origem da madeira, não o objeto feito.",
+        "c": "Madeira é o material; o objeto é o palanquim."
+      },
+      "hint": "Procure o objeto que o rei fez.",
+      "learningObjective": "Identificar o palanquim feito por Salomão.",
+      "evidence": ["Cantares 3:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 3:11, o que a mãe pôs em Salomão no desposório?",
+      "verseRef": "Cantares 3:11",
+      "options": [
+        { "id": "a", "text": "A coroa" },
+        { "id": "b", "text": "A espada" },
+        { "id": "c", "text": "O palanquim" },
+        { "id": "d", "text": "O incenso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com a coroa que sua mãe lhe pôs no dia do seu desposório",
+      "feedbackCorrect": "A mãe lhe pôs a coroa no dia do desposório.",
+      "feedbackWrong": {
+        "b": "A espada está com os valentes em 3:8.",
+        "c": "O palanquim foi feito pelo rei em 3:9.",
+        "d": "O incenso aparece na subida de 3:6."
+      },
+      "hint": "Veja o que a mãe lhe pôs.",
+      "learningObjective": "Reconhecer a coroa no dia do desposório.",
+      "evidence": ["Cantares 3:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 3:11 na ordem do texto.",
+      "verseRef": "Cantares 3:11",
+      "options": [
+        { "id": "a", "text": "Saí, ó filhas de Sião, e contemplai o rei Salomão" },
+        { "id": "b", "text": "com a coroa que sua mãe lhe pôs" },
+        { "id": "c", "text": "no dia do seu desposório" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Saí, ó filhas de Sião, e contemplai o rei Salomão com a coroa que sua mãe lhe pôs no dia do seu desposório",
+      "feedbackCorrect": "Primeiro o chamado a contemplar; depois a coroa; por fim o dia.",
+      "feedbackWrong": { "default": "Comece pelo chamado às filhas de Sião." },
+      "hint": "Siga: chamado, coroa, dia.",
+      "learningObjective": "Seguir a ordem literal do versículo do desposório.",
+      "evidence": ["Cantares 3:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 3:7, o que de Salomão aparece com valentes ao redor?",
+      "verseRef": "Cantares 3:7",
+      "options": [
+        { "id": "a", "text": "liteira" },
+        { "id": "b", "text": "torre" },
+        { "id": "c", "text": "vinha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis a liteira de Salomão",
+      "feedbackCorrect": "É a liteira de Salomão cercada pelos valentes.",
+      "feedbackWrong": {
+        "b": "O texto não fala de torre neste versículo.",
+        "c": "Não é vinha: é liteira."
+      },
+      "hint": "Veja o que o versículo apresenta com \"Eis\".",
+      "learningObjective": "Lembrar a palavra-chave do cortejo.",
+      "evidence": ["Cantares 3:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 3:11 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 3:11",
+      "passageA": { "ref": "Cantares 3:11" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amor desta cena é celebrado com cortejo, guarda e testemunhas públicas."
+      },
+      "options": [
+        { "id": "a", "text": "Convite público à contemplação" },
+        { "id": "b", "text": "Ordem de esconder o rei" },
+        { "id": "c", "text": "Proibição de qualquer alegria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Saí, ó filhas de Sião, e contemplai o rei Salomão",
+      "feedbackCorrect": "O contexto público aparece no convite: saí e contemplai.",
+      "feedbackWrong": {
+        "b": "O texto chama a contemplar, não a esconder.",
+        "c": "O dia é chamado de alegria do coração."
+      },
+      "hint": "Veja o que as filhas de Sião devem fazer.",
+      "learningObjective": "Ligar o contexto público ao convite de contemplar.",
+      "evidence": ["Cantares 3:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 3:8, os valentes levam a espada à cintura por causa dos temores da noite.",
+      "verseRef": "Cantares 3:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "por causa dos temores da noite",
+      "feedbackCorrect": "A causa está explícita: os temores da noite.",
+      "feedbackWrong": { "false": "Releia o fim de 3:8: a razão é os temores da noite." },
+      "hint": "Procure a expressão \"por causa\".",
+      "learningObjective": "Ver a causa da guarda armada.",
+      "evidence": ["Cantares 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 3:8, toque as palavras que marcam a causa da espada.",
+      "verseRef": "Cantares 3:8",
+      "options": [
+        { "id": "a", "text": "por causa" },
+        { "id": "b", "text": "na guerra" },
+        { "id": "c", "text": "suas espadas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa dos temores da noite",
+      "feedbackCorrect": "\"Por causa\" marca a razão da espada à cintura.",
+      "feedbackWrong": {
+        "b": "Isso descreve a habilidade, e não a causa imediata.",
+        "c": "As espadas são o meio; a causa vem no fim."
+      },
+      "hint": "Ache a expressão perto dos temores da noite.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": ["Cantares 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 3:8 estabelece entre a espada e a noite?",
+      "verseRef": "Cantares 3:8",
+      "options": [
+        { "id": "a", "text": "A espada está à cintura por causa dos temores da noite" },
+        { "id": "b", "text": "A noite elimina qualquer necessidade de guarda" },
+        { "id": "c", "text": "A espada serve só para enfeite do cortejo" },
+        { "id": "d", "text": "Os valentes dormem sem qualquer cuidado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cada um com a espada à cintura, por causa dos temores da noite",
+      "feedbackCorrect": "A guarda armada responde aos temores da noite.",
+      "feedbackWrong": {
+        "b": "O texto liga a noite justamente à necessidade de guarda.",
+        "c": "Há causa real: temores da noite.",
+        "d": "Eles estão armados e destros na guerra."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Relacionar a guarda aos temores da noite.",
+      "evidence": ["Cantares 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 3:6–11.",
+      "verseRef": "Cantares 3:9–10",
+      "options": [
+        { "id": "a", "text": "Surge a pergunta perfumada do deserto" },
+        { "id": "b", "text": "A liteira aparece cercada de valentes" },
+        { "id": "c", "text": "Sião contempla o dia do desposório" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "no dia do seu desposório",
+      "feedbackCorrect": "Da pergunta do deserto ao cortejo e, por fim, ao dia público.",
+      "feedbackWrong": { "default": "Comece pela pergunta de 3:6; o desposório fecha a cena." },
+      "hint": "Siga a ordem da cena do deserto ao dia.",
+      "learningObjective": "Ordenar a estrutura do cortejo.",
+      "evidence": ["Cantares 3:6–11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 3:8, que expressão introduz a razão da espada?",
+      "verseRef": "Cantares 3:8",
+      "options": [
+        { "id": "a", "text": "causa" },
+        { "id": "b", "text": "apesar" },
+        { "id": "c", "text": "exceto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa dos temores da noite",
+      "feedbackCorrect": "A razão entra com \"por causa\".",
+      "feedbackWrong": {
+        "b": "O texto não usa \"apesar\".",
+        "c": "O texto não usa \"exceto\"."
+      },
+      "hint": "Complete a expressão \"por ___ dos temores\".",
+      "learningObjective": "Lembrar a palavra que carrega a causa.",
+      "evidence": ["Cantares 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 3:11 a Apocalipse 19:7?",
+      "verseRef": "Cantares 3:11",
+      "passageA": { "ref": "Cantares 3:11" },
+      "passageB": { "ref": "Apocalipse 19:7" },
+      "options": [
+        { "id": "a", "text": "Alegria das bodas celebradas" },
+        { "id": "b", "text": "Silêncio total no casamento" },
+        { "id": "c", "text": "Ausência de qualquer testemunha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia da alegria do seu coração",
+      "feedbackCorrect": "Os dois textos celebram a alegria das bodas.",
+      "feedbackWrong": {
+        "b": "Há alegria explícita, não silêncio.",
+        "c": "Há filhas de Sião chamadas a contemplar."
+      },
+      "hint": "Compare a alegria do desposório com as bodas.",
+      "learningObjective": "Ligar o desposório à alegria das bodas.",
+      "evidence": ["Cantares 3:11", "Apocalipse 19:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 3:6–11 apresenta o amor só como segredo privado, sem testemunhas.",
+      "verseRef": "Cantares 3:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "Saí, ó filhas de Sião, e contemplai o rei Salomão",
+      "feedbackCorrect": "A cena é pública: filhas de Sião são chamadas a contemplar.",
+      "feedbackWrong": { "true": "O texto chama testemunhas a sair e contemplar." },
+      "hint": "Veja a quem o versículo 11 se dirige.",
+      "learningObjective": "Rejeitar a leitura de amor só escondido.",
+      "evidence": ["Cantares 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 3:11, toque o trecho que sustenta a alegria do dia.",
+      "verseRef": "Cantares 3:11",
+      "options": [
+        { "id": "a", "text": "alegria" },
+        { "id": "b", "text": "filhas de Sião" },
+        { "id": "c", "text": "sua mãe" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia da alegria do seu coração",
+      "feedbackCorrect": "O dia é nomeado como alegria do coração.",
+      "feedbackWrong": {
+        "b": "As filhas são testemunhas; a alegria está no fim.",
+        "c": "A mãe põe a coroa; a alegria nomeia o dia."
+      },
+      "hint": "Leia as últimas palavras do versículo.",
+      "learningObjective": "Sustentar com o texto a alegria do desposório.",
+      "evidence": ["Cantares 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 3:6–11 sustenta sobre o amor?",
+      "verseRef": "Cantares 3:10–11",
+      "options": [
+        { "id": "a", "text": "O amor celebrado tem cortejo, testemunhas e alegria" },
+        { "id": "b", "text": "O amor verdadeiro evita qualquer olhar público" },
+        { "id": "c", "text": "O desposório é dia de medo sem alegria" },
+        { "id": "d", "text": "Não há guarda nem cuidado no caminho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia do seu desposório, no dia da alegria do seu coração",
+      "feedbackCorrect": "Cortejo, filhas de Sião e alegria do coração sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "Há convite público a contemplar.",
+        "c": "O texto chama o dia de alegria do coração.",
+        "d": "Há valentes armados por causa da noite."
+      },
+      "hint": "Una liteira, filhas de Sião e o dia do desposório.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Cantares 3:10–11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do cortejo à alegria?",
+      "verseRef": "Cantares 3:10–11",
+      "options": [
+        { "id": "a", "text": "A liteira sobe com guarda atenta" },
+        { "id": "b", "text": "O palanquim é ornado com amor" },
+        { "id": "c", "text": "Sião contempla a alegria do desposório" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "no dia da alegria do seu coração",
+      "feedbackCorrect": "Do cortejo guardado ao ornamento e, por fim, à alegria pública.",
+      "feedbackWrong": { "default": "Comece pela liteira com guarda; a alegria fecha o dia." },
+      "hint": "Siga guarda → ornamento → contemplação.",
+      "learningObjective": "Ver o encadeamento do cortejo à alegria.",
+      "evidence": ["Cantares 3:7–11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 3:11, que termo nomeia o dia da união celebrada?",
+      "verseRef": "Cantares 3:11",
+      "options": [
+        { "id": "a", "text": "desposório" },
+        { "id": "b", "text": "luto" },
+        { "id": "c", "text": "exílio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia do seu desposório",
+      "feedbackCorrect": "O termo é desposório: o dia da união celebrada.",
+      "feedbackWrong": {
+        "b": "O texto fala de alegria, não de luto.",
+        "c": "Não é exílio: é desposório."
+      },
+      "hint": "Veja o dia ligado à coroa da mãe.",
+      "learningObjective": "Lembrar o termo central do dia celebrado.",
+      "evidence": ["Cantares 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 3:11 a João 2:1–2?",
+      "verseRef": "Cantares 3:11",
+      "passageA": { "ref": "Cantares 3:11" },
+      "passageB": { "ref": "João 2:1–2" },
+      "options": [
+        { "id": "a", "text": "Bodas celebradas em público" },
+        { "id": "b", "text": "Casamento sem qualquer conviva" },
+        { "id": "c", "text": "União escondida sem festa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no dia do seu desposório, no dia da alegria do seu coração",
+      "feedbackCorrect": "Os dois textos mostram união celebrada diante de testemunhas.",
+      "feedbackWrong": {
+        "b": "Há filhas de Sião e, em João, convivas.",
+        "c": "Há festa e alegria explícitas."
+      },
+      "hint": "Compare o caráter público das bodas.",
+      "learningObjective": "Ligar o desposório às bodas de Caná.",
+      "evidence": ["Cantares 3:11", "João 2:1–2"]
+    }
+  ]
+}

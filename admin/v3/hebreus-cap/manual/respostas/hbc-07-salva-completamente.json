@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Hebreus 7:23–28",
+    "passages": [
+      {
+        "ref": "Hebreus 7:23–28"
+      }
+    ],
+    "context": "No Antigo Testamento, o povo dependia de sacerdotes que morriam e precisavam ser substituídos. A carta compara esse sistema ao sacerdócio de Jesus para mostrar o que significa se aproximar de Deus por meio dele.",
+    "keyword": "Completamente",
+    "keywordGloss": "A salvação que Jesus dá não deixa nada pela metade e não depende de sucessores.",
+    "focusQuestion": "Você se aproxima de Deus confiando no que Jesus já fez, ou ainda tenta completar a obra por conta própria?",
+    "reflectionPrompts": [
+      "Sacerdote que permanece",
+      "Salvação sem remendos",
+      "Uma vez por todas"
+    ],
+    "facts": [
+      {
+        "text": "Os sacerdotes antigos eram muitos porque a morte os impedia de continuar.",
+        "evidenceRef": "Hebreus 7:23",
+        "evidenceSpan": "a morte os impedia de continuar"
+      },
+      {
+        "text": "O sacerdócio de Jesus não muda, porque ele permanece para sempre.",
+        "evidenceRef": "Hebreus 7:24",
+        "evidenceSpan": "possui um sacerdócio que não muda"
+      },
+      {
+        "text": "Jesus pode salvar completamente os que se aproximam de Deus por meio dele.",
+        "evidenceRef": "Hebreus 7:25",
+        "evidenceSpan": "pode salvar completamente aqueles que se aproximam de Deus por meio dele"
+      },
+      {
+        "text": "Jesus vive sempre para interceder pelos que se aproximam.",
+        "evidenceRef": "Hebreus 7:25",
+        "evidenceSpan": "vivendo sempre para interceder por eles"
+      },
+      {
+        "text": "Jesus ofereceu a si mesmo uma vez por todas.",
+        "evidenceRef": "Hebreus 7:27",
+        "evidenceSpan": "Ele fez isso uma vez por todas"
+      },
+      {
+        "text": "A palavra do juramento constitui o Filho perfeito para sempre.",
+        "evidenceRef": "Hebreus 7:28",
+        "evidenceSpan": "constitui o Filho, perfeito para sempre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "interceder",
+        "gloss": "Falar em favor de alguém diante de Deus, o que Jesus faz sempre."
+      },
+      {
+        "term": "completamente",
+        "gloss": "Sem deixar falta: o alcance da salvação que Jesus dá."
+      },
+      {
+        "term": "juramento",
+        "gloss": "A palavra solene de Deus que constitui o Filho como sacerdote perfeito."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sacerdotes que a morte interrompia",
+        "evidenceRef": "Hebreus 7:23"
+      },
+      {
+        "label": "Sacerdote que permanece e intercede",
+        "evidenceRef": "Hebreus 7:24–25"
+      },
+      {
+        "label": "Sumo sacerdote santo e sacrifício único",
+        "evidenceRef": "Hebreus 7:26–27"
+      },
+      {
+        "label": "O Filho constituído perfeito pelo juramento",
+        "evidenceRef": "Hebreus 7:28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Havia muitos sacerdotes porque a morte os impedia de continuar.",
+        "marker": "pois",
+        "evidenceRef": "Hebreus 7:23"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os antigos morriam; este permanece para sempre.",
+        "marker": "Mas",
+        "evidenceRef": "Hebreus 7:24"
+      },
+      {
+        "kind": "resultado",
+        "text": "Como ele permanece, pode salvar completamente os que se aproximam de Deus.",
+        "marker": "Portanto",
+        "evidenceRef": "Hebreus 7:25"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 8:34",
+        "bridge": "Cristo intercede por nós"
+      },
+      {
+        "ref": "Hebreus 10:10",
+        "bridge": "Oferta única e suficiente"
+      },
+      {
+        "ref": "1 João 2:1",
+        "bridge": "Advogado diante do Pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus precisa oferecer sacrifícios todo dia pelos pecados do povo.",
+        "why": "Ele fez isso uma vez por todas, ao se oferecer a si mesmo (7:27)."
+      },
+      {
+        "text": "A salvação por ele é parcial e precisa de outros sacerdotes.",
+        "why": "Ele pode salvar completamente, vivendo sempre para interceder (7:25)."
+      },
+      {
+        "text": "O sacerdócio de Jesus acaba, como o dos antigos, quando ele morre.",
+        "why": "Ele permanece para sempre e possui um sacerdócio que não muda (7:24)."
+      }
+    ],
+    "centralInsight": "Jesus pode salvar completamente os que se aproximam de Deus por meio dele.",
+    "anchorQuestion": "Segundo Hebreus 7:25, o que Jesus vive sempre fazendo por quem se aproxima de Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Hebreus 7:23, os antigos sacerdotes eram poucos, pois nenhum deles morria.",
+      "verseRef": "Hebreus 7:23",
+      "correctOptionId": "false",
+      "evidenceSpan": "a morte os impedia de continuar",
+      "feedbackCorrect": "Eram muitos sacerdotes, pois a morte os impedia de continuar.",
+      "feedbackWrong": {
+        "true": "O texto diz que eram em maior número, porque a morte os impedia de continuar."
+      },
+      "hint": "Veja o motivo dado depois de pois.",
+      "learningObjective": "Observar por que os antigos sacerdotes eram muitos.",
+      "evidence": [
+        "Hebreus 7:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Hebreus 7:26, toque como o sumo sacerdote está em relação aos pecadores.",
+      "verseRef": "Hebreus 7:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "separado"
+        },
+        {
+          "id": "b",
+          "text": "santo"
+        },
+        {
+          "id": "c",
+          "text": "céus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "separado dos pecadores",
+      "feedbackCorrect": "O sumo sacerdote é separado dos pecadores.",
+      "feedbackWrong": {
+        "b": "Santo descreve o caráter dele, não a relação com os pecadores.",
+        "c": "Os céus indicam sua altura, não a relação com os pecadores."
+      },
+      "hint": "Veja a palavra antes de dos pecadores.",
+      "learningObjective": "Identificar a posição do sumo sacerdote diante dos pecadores.",
+      "evidence": [
+        "Hebreus 7:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Hebreus 7:25, o que Jesus vive sempre fazendo?",
+      "verseRef": "Hebreus 7:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intercedendo pelos que se aproximam"
+        },
+        {
+          "id": "b",
+          "text": "Oferecendo sacrifícios diários"
+        },
+        {
+          "id": "c",
+          "text": "Ensinando a lei de Moisés"
+        },
+        {
+          "id": "d",
+          "text": "Julgando os pecadores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vivendo sempre para interceder por eles",
+      "feedbackCorrect": "Jesus vive sempre para interceder pelos que se aproximam de Deus.",
+      "feedbackWrong": {
+        "b": "Sacrifícios diários eram dos antigos; ele se ofereceu uma vez.",
+        "c": "O versículo fala de interceder, não de ensinar a lei.",
+        "d": "O texto diz que ele intercede, não que julga os pecadores."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar o que Jesus faz sempre.",
+      "evidence": [
+        "Hebreus 7:25"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Hebreus 7:26 na ordem do texto.",
+      "verseRef": "Hebreus 7:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque nos convinha um sumo sacerdote como este"
+        },
+        {
+          "id": "b",
+          "text": "santo, inculpável, sem mácula"
+        },
+        {
+          "id": "c",
+          "text": "separado dos pecadores e feito mais alto do que os céus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "santo, inculpável, sem mácula",
+      "feedbackCorrect": "Primeiro a necessidade, depois o caráter dele e por fim sua posição.",
+      "feedbackWrong": {
+        "default": "O versículo começa com a necessidade; a altura dos céus fecha."
+      },
+      "hint": "O versículo começa com por que ele nos convinha.",
+      "learningObjective": "Reconhecer a sequência de Hebreus 7:26.",
+      "evidence": [
+        "Hebreus 7:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Hebreus 7:24, o que Jesus possui que não muda?",
+      "verseRef": "Hebreus 7:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdócio"
+        },
+        {
+          "id": "b",
+          "text": "reino"
+        },
+        {
+          "id": "c",
+          "text": "nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "possui um sacerdócio que não muda",
+      "feedbackCorrect": "Como permanece para sempre, Jesus possui um sacerdócio que não muda.",
+      "feedbackWrong": {
+        "b": "Reino não é a palavra do texto; ele fala de sacerdócio.",
+        "c": "Nome não aparece aqui; o que não muda é o sacerdócio."
+      },
+      "hint": "Pense no ofício que a cena inteira compara.",
+      "learningObjective": "Lembrar o que não muda em Jesus.",
+      "evidence": [
+        "Hebreus 7:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Hebreus 7:24 comunica que se liga a este contexto?",
+      "verseRef": "Hebreus 7:24",
+      "passageA": {
+        "ref": "Hebreus 7:24",
+        "text": "porque permanece para sempre, possui um sacerdócio que não muda"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os sacerdotes antigos morriam; este permanece para sempre."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacerdócio que não acaba"
+        },
+        {
+          "id": "b",
+          "text": "Sacerdócio passado de pai a filho"
+        },
+        {
+          "id": "c",
+          "text": "Sacerdócio interrompido pela morte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque permanece para sempre, possui um sacerdócio que não muda",
+      "feedbackCorrect": "Diferente dos antigos, ele permanece, e seu sacerdócio não muda.",
+      "feedbackWrong": {
+        "b": "O texto não fala de sucessão familiar, mas de permanência.",
+        "c": "A morte interrompia os antigos, não este."
+      },
+      "hint": "Compare quem permanece e quem morria.",
+      "learningObjective": "Ligar o versículo ao contraste com os sacerdotes antigos.",
+      "evidence": [
+        "Hebreus 7:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Hebreus 7:28, a lei constitui o Filho perfeito, e o juramento constitui sacerdotes fracos.",
+      "verseRef": "Hebreus 7:28",
+      "correctOptionId": "false",
+      "evidenceSpan": "a lei constitui sumos sacerdotes a homens sujeitos à fraqueza, mas a palavra do juramento",
+      "feedbackCorrect": "O contraste é o inverso: a lei constitui homens fracos, e o juramento constitui o Filho.",
+      "feedbackWrong": {
+        "true": "É o contrário: a lei constitui homens fracos, e o juramento constitui o Filho."
+      },
+      "hint": "Veja o que vem antes e depois da palavra mas.",
+      "learningObjective": "Compreender o contraste entre a lei e o juramento.",
+      "evidence": [
+        "Hebreus 7:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Hebreus 7:24, toque a palavra que marca o contraste com os sacerdotes que morriam.",
+      "verseRef": "Hebreus 7:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "este"
+        },
+        {
+          "id": "c",
+          "text": "porque"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas este, porque permanece para sempre",
+      "feedbackCorrect": "Mas vira a frase: depois dos que morriam, vem aquele que permanece.",
+      "feedbackWrong": {
+        "b": "Este aponta para Jesus, mas não marca o contraste.",
+        "c": "Porque dá a razão, não o contraste."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Hebreus 7:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Hebreus 7:23–24 contrasta Jesus com os sacerdotes antigos?",
+      "verseRef": "Hebreus 7:23–24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eles passavam com a morte; ele permanece e seu sacerdócio não muda"
+        },
+        {
+          "id": "b",
+          "text": "Eles eram poucos e ele é apenas mais um"
+        },
+        {
+          "id": "c",
+          "text": "Ele também depende de sucessores para continuar"
+        },
+        {
+          "id": "d",
+          "text": "Eles permaneciam para sempre, mas ele não"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas este, porque permanece para sempre",
+      "feedbackCorrect": "A morte interrompia os antigos; Jesus permanece e seu sacerdócio não muda.",
+      "feedbackWrong": {
+        "b": "O texto diz que eles eram em maior número, não poucos.",
+        "c": "Ele permanece para sempre; não precisa de sucessores.",
+        "d": "É o inverso: os antigos eram impedidos pela morte, e ele permanece."
+      },
+      "hint": "Una a morte dos antigos à permanência dele.",
+      "learningObjective": "Compreender a diferença entre os sacerdócios.",
+      "evidence": [
+        "Hebreus 7:23–24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Hebreus 7:26–27.",
+      "verseRef": "Hebreus 7:26–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sumo sacerdote santo e separado dos pecadores"
+        },
+        {
+          "id": "b",
+          "text": "Sem necessidade de sacrifícios diários"
+        },
+        {
+          "id": "c",
+          "text": "Ofereceu-se a si mesmo uma vez por todas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porque nos convinha um sumo sacerdote como este",
+      "feedbackCorrect": "Primeiro quem ele é, depois o que não precisa fazer, por fim o que fez.",
+      "feedbackWrong": {
+        "default": "Comece por quem ele é; o que ele fez uma vez fecha o trecho."
+      },
+      "hint": "Pense: quem ele é, o que dispensa, o que fez.",
+      "learningObjective": "Ordenar os movimentos do trecho.",
+      "evidence": [
+        "Hebreus 7:26–27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Hebreus 7:27, com que frequência os antigos sumos sacerdotes precisavam oferecer sacrifícios?",
+      "verseRef": "Hebreus 7:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "diariamente"
+        },
+        {
+          "id": "b",
+          "text": "raramente"
+        },
+        {
+          "id": "c",
+          "text": "anualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de oferecer diariamente sacrifícios",
+      "feedbackCorrect": "Os antigos precisavam oferecer diariamente; Jesus se ofereceu uma vez por todas.",
+      "feedbackWrong": {
+        "b": "Raramente não é a palavra do texto; eles ofereciam diariamente.",
+        "c": "Anualmente não aparece aqui; o texto fala de oferecer diariamente."
+      },
+      "hint": "Veja o advérbio antes de sacrifícios.",
+      "learningObjective": "Lembrar a frequência dos sacrifícios antigos.",
+      "evidence": [
+        "Hebreus 7:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Hebreus 7:25 a Romanos 8:34?",
+      "verseRef": "Hebreus 7:25",
+      "passageA": {
+        "ref": "Hebreus 7:25",
+        "text": "vivendo sempre para interceder por eles"
+      },
+      "passageB": {
+        "ref": "Romanos 8:34"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo intercede por nós"
+        },
+        {
+          "id": "b",
+          "text": "Cristo só acusa os pecadores"
+        },
+        {
+          "id": "c",
+          "text": "Cristo deixou de interceder"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vivendo sempre para interceder por eles",
+      "feedbackCorrect": "Nos dois textos, Cristo intercede por quem é dele.",
+      "feedbackWrong": {
+        "b": "Nos textos, Cristo intercede, e não acusa.",
+        "c": "Os dois textos afirmam que ele continua intercedendo."
+      },
+      "hint": "Compare o que Cristo faz por quem é dele.",
+      "learningObjective": "Ligar a intercessão de Cristo em Hebreus e em Romanos.",
+      "evidence": [
+        "Hebreus 7:25",
+        "Romanos 8:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Hebreus 7:27 mostra que o sacrifício de Jesus não precisa ser repetido, porque ele se ofereceu uma vez por todas.",
+      "verseRef": "Hebreus 7:27",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ele fez isso uma vez por todas, ao se oferecer a si mesmo",
+      "feedbackCorrect": "Ele se ofereceu a si mesmo uma vez por todas, sem repetir o sacrifício.",
+      "feedbackWrong": {
+        "false": "O texto diz que ele fez isso uma vez por todas, ao se oferecer a si mesmo."
+      },
+      "hint": "Veja quantas vezes ele se ofereceu.",
+      "learningObjective": "Sustentar que o sacrifício de Jesus é único.",
+      "evidence": [
+        "Hebreus 7:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Hebreus 7:25, toque o trecho que sustenta que a salvação por Jesus é completa.",
+      "verseRef": "Hebreus 7:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvar completamente"
+        },
+        {
+          "id": "b",
+          "text": "por meio dele"
+        },
+        {
+          "id": "c",
+          "text": "sempre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pode salvar completamente",
+      "feedbackCorrect": "O texto diz que ele pode salvar completamente os que se aproximam.",
+      "feedbackWrong": {
+        "b": "Por meio dele mostra o caminho de acesso, não a extensão da salvação.",
+        "c": "Sempre fala da intercessão contínua, não da extensão da salvação."
+      },
+      "hint": "Procure a expressão que diz até onde vai a salvação.",
+      "learningObjective": "Sustentar com o texto a salvação completa.",
+      "evidence": [
+        "Hebreus 7:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Hebreus 7:25 sustenta sobre a salvação por meio de Jesus?",
+      "verseRef": "Hebreus 7:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "É completa e sustentada pela intercessão contínua dele"
+        },
+        {
+          "id": "b",
+          "text": "Precisa ser completada por outros sacerdotes"
+        },
+        {
+          "id": "c",
+          "text": "Vale só enquanto durar a vida do sacerdote"
+        },
+        {
+          "id": "d",
+          "text": "Depende de sacrifícios diários repetidos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pode salvar completamente aqueles que se aproximam de Deus por meio dele",
+      "feedbackCorrect": "Ele salva completamente e vive sempre para interceder, sem precisar de substitutos.",
+      "feedbackWrong": {
+        "b": "O texto diz que ele salva completamente, sem precisar de outros.",
+        "c": "Ele vive sempre; sua intercessão não termina com a vida de um sacerdote.",
+        "d": "Ele se ofereceu uma vez por todas, sem repetir sacrifícios."
+      },
+      "hint": "Una o alcance da salvação à intercessão que não para.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Hebreus 7:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do argumento sobre o sacerdócio.",
+      "verseRef": "Hebreus 7:24–25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os sacerdotes antigos morriam e se sucediam"
+        },
+        {
+          "id": "b",
+          "text": "Jesus permanece e intercede sempre por nós"
+        },
+        {
+          "id": "c",
+          "text": "O juramento constitui o Filho perfeito para sempre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pode salvar completamente aqueles que se aproximam de Deus por meio dele",
+      "feedbackCorrect": "Os antigos passavam, Jesus permanece e intercede, e o juramento o faz perfeito para sempre.",
+      "feedbackWrong": {
+        "default": "Siga o fio: antigos, Jesus que permanece, Filho perfeito."
+      },
+      "hint": "Siga o fio: sacerdotes que morriam, Jesus, Filho perfeito.",
+      "learningObjective": "Encadear o argumento sobre o sacerdócio de Jesus.",
+      "evidence": [
+        "Hebreus 7:23",
+        "Hebreus 7:24–25",
+        "Hebreus 7:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Hebreus 7:28, a palavra de quê constitui o Filho, perfeito para sempre?",
+      "verseRef": "Hebreus 7:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "juramento"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a palavra do juramento",
+      "feedbackCorrect": "A palavra do juramento, posterior à lei, constitui o Filho perfeito para sempre.",
+      "feedbackWrong": {
+        "b": "Profeta não é o termo do texto; a palavra é a do juramento.",
+        "c": "Sacerdote não aparece aqui; a palavra é a do juramento."
+      },
+      "hint": "Pense no que veio depois da lei.",
+      "learningObjective": "Lembrar o termo que carrega o sentido do argumento.",
+      "evidence": [
+        "Hebreus 7:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Hebreus 7:27 a Hebreus 10:10?",
+      "verseRef": "Hebreus 7:27",
+      "passageA": {
+        "ref": "Hebreus 7:27",
+        "text": "Ele fez isso uma vez por todas"
+      },
+      "passageB": {
+        "ref": "Hebreus 10:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício único e suficiente"
+        },
+        {
+          "id": "b",
+          "text": "Sacrifícios repetidos a cada ano"
+        },
+        {
+          "id": "c",
+          "text": "Sacrifício dos antigos sacerdotes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele fez isso uma vez por todas",
+      "feedbackCorrect": "Os dois textos afirmam que o sacrifício de Cristo foi feito uma só vez.",
+      "feedbackWrong": {
+        "b": "Os dois textos mostram que não há repetição anual.",
+        "c": "Os antigos sacerdotes repetiam; os textos falam de Cristo."
+      },
+      "hint": "Compare quantas vezes a oferta é feita nos dois textos.",
+      "learningObjective": "Ligar a oferta única de Cristo em dois trechos de Hebreus.",
+      "evidence": [
+        "Hebreus 7:27",
+        "Hebreus 10:10"
+      ]
+    }
+  ]
+}

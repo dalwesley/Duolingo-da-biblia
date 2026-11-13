@@ -1,0 +1,4835 @@
+[
+  {
+    "id": "tiago-cap-sem-tjc-01-alegria-na-prova-01",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 1:2, os irmãos devem considerar as diversas provações como motivo de grande alegria.",
+    "prompt": "Em Tiago 1:2, os irmãos devem considerar as diversas provações como motivo de grande alegria.",
+    "cue": "Em Tiago 1:2, os irmãos devem considerar as diversas provações como motivo de grande alegria.",
+    "verseRef": "Tiago 1:2",
+    "passageText": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "considerem como um motivo de grande alegria",
+    "feedbackCorrect": "O versículo manda ver as provações como motivo de grande alegria.",
+    "feedbackWrong": {
+      "false": "Releia o começo: Tiago pede alegria, e não tristeza, diante das provações."
+    },
+    "hint": "Veja o que Tiago pede que os irmãos considerem.",
+    "learningObjective": "Observar que Tiago pede alegria diante das provações.",
+    "evidence": [
+      "Tiago 1:2"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-01-alegria-na-prova-02",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+    "prompt": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+    "cue": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perseverança"
+      },
+      {
+        "id": "b",
+        "text": "provação"
+      },
+      {
+        "id": "c",
+        "text": "confirmada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "A provação da fé confirmada gera perseverança.",
+    "feedbackWrong": {
+      "b": "A provação é o que gera algo; ela não é o que nasce dela.",
+      "c": "Confirmada descreve a fé provada, e não o que ela gera."
+    },
+    "hint": "Procure a palavra que fecha o versículo.",
+    "learningObjective": "Identificar o que a provação da fé produz.",
+    "evidence": [
+      "Tiago 1:3"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-01-alegria-na-prova-03",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 1:5, como Deus age com quem pede sabedoria?",
+    "prompt": "Segundo Tiago 1:5, como Deus age com quem pede sabedoria?",
+    "cue": "Segundo Tiago 1:5, como Deus age com quem pede sabedoria?",
+    "verseRef": "Tiago 1:5",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dá a todos com generosidade, sem censurar"
+      },
+      {
+        "id": "b",
+        "text": "Dá apenas aos mais antigos na fé"
+      },
+      {
+        "id": "c",
+        "text": "Dá depois de repreender o pedido"
+      },
+      {
+        "id": "d",
+        "text": "Dá só a quem já é sábio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que a todos concede livremente e não censura",
+    "feedbackCorrect": "Deus concede a todos livremente e não censura quem pede.",
+    "feedbackWrong": {
+      "b": "A concessão é para todos, sem separar os mais antigos.",
+      "c": "Deus não censura: ele concede livremente.",
+      "d": "O texto trata de quem carece de sabedoria, e não de quem já a tem."
+    },
+    "hint": "Olhe como o versículo descreve o jeito de Deus dar.",
+    "learningObjective": "Reconhecer a generosidade de Deus ao dar sabedoria.",
+    "evidence": [
+      "Tiago 1:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-01-alegria-na-prova-04",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte o início de Tiago 1:6 na ordem do texto.",
+    "prompt": "Monte o início de Tiago 1:6 na ordem do texto.",
+    "cue": "Monte o início de Tiago 1:6 na ordem do texto.",
+    "verseRef": "Tiago 1:6",
+    "passageText": "Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Peça-a, porém, com fé"
+      },
+      {
+        "id": "b",
+        "text": "sem hesitar"
+      },
+      {
+        "id": "c",
+        "text": "quem duvida é semelhante à onda do mar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Peça-a, porém, com fé, sem hesitar",
+    "feedbackCorrect": "Primeiro o pedido com fé, depois a ordem de não hesitar e, por fim, a imagem de quem duvida.",
+    "feedbackWrong": {
+      "default": "Comece pelo pedido com fé; a imagem da onda vem por último."
+    },
+    "hint": "O versículo abre com o pedido e fecha com a imagem.",
+    "learningObjective": "Seguir a ordem do texto sobre pedir com fé.",
+    "evidence": [
+      "Tiago 1:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-01-alegria-na-prova-05",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 1:6, quem duvida é semelhante a que parte do mar?",
+    "prompt": "Em Tiago 1:6, quem duvida é semelhante a que parte do mar?",
+    "cue": "Em Tiago 1:6, quem duvida é semelhante a que parte do mar?",
+    "verseRef": "Tiago 1:6",
+    "passageText": "Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "template": "Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à ___ do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "onda"
+      },
+      {
+        "id": "b",
+        "text": "ilha"
+      },
+      {
+        "id": "c",
+        "text": "areia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "quem duvida é semelhante à onda do mar",
+    "feedbackCorrect": "A imagem é a da onda do mar, levada e agitada pelo vento.",
+    "feedbackWrong": {
+      "b": "A ilha não se move; a imagem do texto é de algo agitado.",
+      "c": "A areia fica parada; o texto usa algo que o vento agita."
+    },
+    "hint": "Pense na água do mar movida pelo vento.",
+    "learningObjective": "Lembrar a imagem de quem duvida.",
+    "evidence": [
+      "Tiago 1:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-01-alegria-na-prova-06",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 1:2 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 1:2 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 1:2 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 1:2",
+    "passageText": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações.",
+    "passageA": {
+      "ref": "Tiago 1:2",
+      "text": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os irmãos de Tiago passam por diversas provações, e ele os ensina a olhar para elas de outro modo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga de toda dificuldade"
+      },
+      {
+        "id": "b",
+        "text": "Alegria diante das provações"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio diante do sofrimento"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "considerem como um motivo de grande alegria",
+    "feedbackCorrect": "Diante das provações, Tiago pede que se considere tudo motivo de grande alegria.",
+    "feedbackWrong": {
+      "a": "Tiago não manda fugir: manda passar pelas provações com outro olhar.",
+      "c": "O versículo pede alegria, e não silêncio."
+    },
+    "hint": "Veja o que Tiago manda fazer com as provações.",
+    "learningObjective": "Ligar o contexto das provações ao pedido de alegria.",
+    "evidence": [
+      "Tiago 1:2"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-01-alegria-na-prova-01",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 1:4, a perseverança deve completar sua obra para que os irmãos sejam perfeitos e íntegros.",
+    "prompt": "Em Tiago 1:4, a perseverança deve completar sua obra para que os irmãos sejam perfeitos e íntegros.",
+    "cue": "Em Tiago 1:4, a perseverança deve completar sua obra para que os irmãos sejam perfeitos e íntegros.",
+    "verseRef": "Tiago 1:4",
+    "passageText": "Tenha, pois, a perseverança a sua obra completa, para que sejais perfeitos e íntegros, em nada deficientes.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que sejais perfeitos e íntegros",
+    "feedbackCorrect": "A obra da perseverança tem um fim: tornar perfeitos e íntegros.",
+    "feedbackWrong": {
+      "false": "O versículo liga a obra completa da perseverança ao amadurecimento."
+    },
+    "hint": "Leia a finalidade que vem depois da obra completa.",
+    "learningObjective": "Ver o propósito da perseverança.",
+    "evidence": [
+      "Tiago 1:4"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-01-alegria-na-prova-02",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 1:6, toque a palavra que marca o contraste com o pedido a Deus.",
+    "prompt": "Em Tiago 1:6, toque a palavra que marca o contraste com o pedido a Deus.",
+    "cue": "Em Tiago 1:6, toque a palavra que marca o contraste com o pedido a Deus.",
+    "verseRef": "Tiago 1:6",
+    "passageText": "Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "duvida"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Peça-a, porém, com fé",
+    "feedbackCorrect": "O \"porém\" contrasta: Deus dá livremente, mas o pedido deve vir com fé.",
+    "feedbackWrong": {
+      "a": "Duvida nomeia o erro, e não a palavra que vira o argumento.",
+      "c": "O \"pois\" introduz a razão da advertência, e não o contraste."
+    },
+    "hint": "Procure a palavra entre vírgulas, logo no começo.",
+    "learningObjective": "Tocar o marcador de contraste do versículo.",
+    "evidence": [
+      "Tiago 1:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-01-alegria-na-prova-03",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Que relação Tiago 1:5–6 estabelece entre o dom de Deus e o pedido?",
+    "prompt": "Que relação Tiago 1:5–6 estabelece entre o dom de Deus e o pedido?",
+    "cue": "Que relação Tiago 1:5–6 estabelece entre o dom de Deus e o pedido?",
+    "verseRef": "Tiago 1:5–6",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida. Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus dá com generosidade, mas o pedido deve vir sem dúvida"
+      },
+      {
+        "id": "b",
+        "text": "Deus só dá a quem já mostrou ter sabedoria"
+      },
+      {
+        "id": "c",
+        "text": "A fé torna desnecessário pedir a Deus"
+      },
+      {
+        "id": "d",
+        "text": "A dúvida deixa o pedido mais sincero"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Peça-a, porém, com fé, sem hesitar",
+    "feedbackCorrect": "Deus dá livremente, e o pedido deve vir com fé, sem hesitar.",
+    "feedbackWrong": {
+      "b": "Deus concede a todos que carecem, e não só a quem já é sábio.",
+      "c": "O texto manda pedir: a fé acompanha o pedido, não o dispensa.",
+      "d": "O texto compara a dúvida a uma onda agitada, e não a sinceridade."
+    },
+    "hint": "Ligue o que Deus faz em 1:5 ao que se espera de quem pede.",
+    "learningObjective": "Relacionar a generosidade de Deus com a fé de quem pede.",
+    "evidence": [
+      "Tiago 1:5–6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-01-alegria-na-prova-04",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos de Tiago 1:3–4.",
+    "prompt": "Ordene os movimentos de Tiago 1:3–4.",
+    "cue": "Ordene os movimentos de Tiago 1:3–4.",
+    "verseRef": "Tiago 1:3–4",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança. Tenha, pois, a perseverança a sua obra completa, para que sejais perfeitos e íntegros, em nada deficientes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé provada gera perseverança"
+      },
+      {
+        "id": "b",
+        "text": "A perseverança completa a sua obra"
+      },
+      {
+        "id": "c",
+        "text": "O fim é ser íntegro e sem deficiência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Tenha, pois, a perseverança a sua obra completa",
+    "feedbackCorrect": "A prova gera perseverança, que completa sua obra e leva à integridade.",
+    "feedbackWrong": {
+      "default": "Comece pela prova da fé; o fim da obra vem por último."
+    },
+    "hint": "Siga o caminho: prova, perseverança, resultado.",
+    "learningObjective": "Ordenar os passos do amadurecimento pela prova.",
+    "evidence": [
+      "Tiago 1:3–4"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-01-alegria-na-prova-05",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 1:3, que verbo liga a provação da fé à perseverança?",
+    "prompt": "Em Tiago 1:3, que verbo liga a provação da fé à perseverança?",
+    "cue": "Em Tiago 1:3, que verbo liga a provação da fé à perseverança?",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "template": "Sabendo que a provação da sua fé, uma vez confirmada, ___ perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gera"
+      },
+      {
+        "id": "b",
+        "text": "evita"
+      },
+      {
+        "id": "c",
+        "text": "destrói"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "A provação confirmada \"gera\" perseverança: é a relação de causa do versículo.",
+    "feedbackWrong": {
+      "b": "A prova não evita a perseverança: ela a produz.",
+      "c": "O texto diz o contrário: a prova constrói perseverança."
+    },
+    "hint": "Veja o verbo que une a prova ao seu resultado.",
+    "learningObjective": "Lembrar o verbo que carrega a relação de causa.",
+    "evidence": [
+      "Tiago 1:3"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-01-alegria-na-prova-06",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+    "prompt": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+    "cue": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "passageA": {
+      "ref": "Tiago 1:3",
+      "text": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança."
+    },
+    "passageB": {
+      "ref": "Romanos 5:3–4",
+      "text": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A prova produz orgulho"
+      },
+      {
+        "id": "b",
+        "text": "A prova produz perseverança"
+      },
+      {
+        "id": "c",
+        "text": "A prova revela o castigo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "Tiago e Paulo dizem o mesmo: a tribulação produz perseverança.",
+    "feedbackWrong": {
+      "a": "Nenhum dos textos fala de orgulho; ambos falam de perseverança.",
+      "c": "Os textos mostram a prova como caminho de crescimento, e não castigo."
+    },
+    "hint": "Compare o que a prova produz nos dois textos.",
+    "learningObjective": "Ligar Tiago 1:3 ao ensino de Paulo sobre a tribulação.",
+    "evidence": [
+      "Tiago 1:3",
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-01-alegria-na-prova-01",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Tiago 1:5–6 ensina que Deus dá sabedoria só a quem prova que a merece.",
+    "prompt": "Tiago 1:5–6 ensina que Deus dá sabedoria só a quem prova que a merece.",
+    "cue": "Tiago 1:5–6 ensina que Deus dá sabedoria só a quem prova que a merece.",
+    "verseRef": "Tiago 1:5–6",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida. Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "que a todos concede livremente e não censura",
+    "feedbackCorrect": "A sabedoria é dom: Deus concede a todos livremente e não censura.",
+    "feedbackWrong": {
+      "true": "O texto diz o contrário: Deus concede livremente e não censura quem pede."
+    },
+    "hint": "Veja como o versículo 5 descreve o jeito de Deus dar.",
+    "learningObjective": "Rejeitar a leitura de que a sabedoria é prêmio por mérito.",
+    "evidence": [
+      "Tiago 1:5–6"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-01-alegria-na-prova-02",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 1:8, toque o trecho que mostra onde está a divisão de quem hesita.",
+    "prompt": "Em Tiago 1:8, toque o trecho que mostra onde está a divisão de quem hesita.",
+    "cue": "Em Tiago 1:8, toque o trecho que mostra onde está a divisão de quem hesita.",
+    "verseRef": "Tiago 1:8",
+    "passageText": "O homem de coração dividido é inconstante em todos os seus caminhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seus caminhos"
+      },
+      {
+        "id": "b",
+        "text": "coração dividido"
+      },
+      {
+        "id": "c",
+        "text": "inconstante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O homem de coração dividido é inconstante",
+    "feedbackCorrect": "A divisão está no coração: por dentro, ele não se firma em Deus.",
+    "feedbackWrong": {
+      "a": "Os caminhos mostram os efeitos de fora, e não a divisão interior.",
+      "c": "Inconstante é o resultado da divisão, e não o lugar dela."
+    },
+    "hint": "Procure a parte de dentro da pessoa, e não o resultado.",
+    "learningObjective": "Sustentar com o texto que a dúvida é uma divisão interior.",
+    "evidence": [
+      "Tiago 1:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-01-alegria-na-prova-03",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 1:2–3 sustenta sobre a alegria na prova?",
+    "prompt": "Que leitura Tiago 1:2–3 sustenta sobre a alegria na prova?",
+    "cue": "Que leitura Tiago 1:2–3 sustenta sobre a alegria na prova?",
+    "verseRef": "Tiago 1:2–3",
+    "passageText": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações. Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A alegria nasce do que a prova produz, e não da dor"
+      },
+      {
+        "id": "b",
+        "text": "A alegria dispensa a perseverança"
+      },
+      {
+        "id": "c",
+        "text": "O cristão deve fingir que a dor não existe"
+      },
+      {
+        "id": "d",
+        "text": "A prova é castigo e deve ser evitada a todo custo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a provação da sua fé, uma vez confirmada, gera perseverança",
+    "feedbackCorrect": "A alegria olha para o fruto: a prova da fé gera perseverança.",
+    "feedbackWrong": {
+      "b": "A alegria vem justamente do que a perseverança vai produzir.",
+      "c": "Tiago não manda negar a dor; manda olhar o que a prova produz.",
+      "d": "O texto não fala de castigo, mas de uma fé provada que gera perseverança."
+    },
+    "hint": "Pergunte por que a alegria é possível, segundo 1:3.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a alegria na prova.",
+    "evidence": [
+      "Tiago 1:2–3"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-01-alegria-na-prova-04",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o caminho da prova até a esperança?",
+    "prompt": "Qual sequência mostra o caminho da prova até a esperança?",
+    "cue": "Qual sequência mostra o caminho da prova até a esperança?",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A prova da fé gera perseverança"
+      },
+      {
+        "id": "b",
+        "text": "A perseverança produz experiência"
+      },
+      {
+        "id": "c",
+        "text": "A experiência produz esperança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "Tiago começa o fio que Paulo continua: perseverança, experiência e esperança.",
+    "feedbackWrong": {
+      "default": "Siga o fio: a prova (Tg 1:3) leva à perseverança, e esta à esperança (Rm 5:4)."
+    },
+    "hint": "Comece pela prova e termine no que ela deixa de esperança.",
+    "learningObjective": "Ver Tiago 1:3 como início de um encadeamento que Paulo completa.",
+    "evidence": [
+      "Tiago 1:3",
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-01-alegria-na-prova-05",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 1:5, que termo nomeia o que falta e deve ser pedido a Deus?",
+    "prompt": "Em Tiago 1:5, que termo nomeia o que falta e deve ser pedido a Deus?",
+    "cue": "Em Tiago 1:5, que termo nomeia o que falta e deve ser pedido a Deus?",
+    "verseRef": "Tiago 1:5",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "template": "E, se algum de vocês carece de ___, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "riqueza"
+      },
+      {
+        "id": "b",
+        "text": "paciência"
+      },
+      {
+        "id": "c",
+        "text": "sabedoria"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "carece de sabedoria",
+    "feedbackCorrect": "Sabedoria é o que falta e o que Deus concede livremente a quem pede.",
+    "feedbackWrong": {
+      "a": "O texto não fala de riqueza: o pedido é por algo que Deus dá sem censurar.",
+      "b": "Paciência é fruto da prova, mas o que se pede neste versículo é outra coisa."
+    },
+    "hint": "Veja o que o versículo diz que Deus concede livremente.",
+    "learningObjective": "Lembrar o termo que carrega o pedido central da cena.",
+    "evidence": [
+      "Tiago 1:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-01-alegria-na-prova-06",
+    "trail": "tiago-cap",
+    "section": "tjc-01-alegria-na-prova",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 1:5 a Provérbios 2:6?",
+    "prompt": "O que liga Tiago 1:5 a Provérbios 2:6?",
+    "cue": "O que liga Tiago 1:5 a Provérbios 2:6?",
+    "verseRef": "Tiago 1:5",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "passageA": {
+      "ref": "Tiago 1:5",
+      "text": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida."
+    },
+    "passageB": {
+      "ref": "Provérbios 2:6",
+      "text": "Porque o Senhor é quem concede a sabedoria; é da Sua boca que provêm o conhecimento e o entendimento."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é a fonte da sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "A sabedoria se conquista pelo esforço"
+      },
+      {
+        "id": "c",
+        "text": "A sabedoria vem da experiência humana"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "peça-a a Deus, que a todos concede livremente",
+    "feedbackCorrect": "Nos dois textos, a sabedoria vem de Deus, que a concede.",
+    "feedbackWrong": {
+      "b": "Em ambos, a sabedoria é concedida por Deus, e não conquistada.",
+      "c": "Os dois textos apontam para Deus, e não para a experiência humana."
+    },
+    "hint": "Compare quem concede a sabedoria nos dois textos.",
+    "learningObjective": "Ligar o pedido de sabedoria de Tiago ao ensino de Provérbios.",
+    "evidence": [
+      "Tiago 1:5",
+      "Provérbios 2:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-02-sem-acepcao-01",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 2:2, entram na reunião um homem com anéis de ouro e um pobre com roupas esfarrapadas.",
+    "prompt": "Em Tiago 2:2, entram na reunião um homem com anéis de ouro e um pobre com roupas esfarrapadas.",
+    "cue": "Em Tiago 2:2, entram na reunião um homem com anéis de ouro e um pobre com roupas esfarrapadas.",
+    "verseRef": "Tiago 2:2",
+    "passageText": "Porque, se em vosso encontro entrar algum homem com anéis de ouro e vestes luxuosas, e também entrar um pobre com roupas esfarrapadas,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "um pobre com roupas esfarrapadas",
+    "feedbackCorrect": "Tiago monta a cena com dois visitantes: um homem rico e um pobre.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: entram os dois, o homem com anéis de ouro e o pobre."
+    },
+    "hint": "Veja quem entra no encontro e como cada um está vestido.",
+    "learningObjective": "Observar quem entra na reunião.",
+    "evidence": [
+      "Tiago 2:2"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-02-sem-acepcao-02",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 2:3, toque o lugar oferecido ao homem que veste roupas luxuosas.",
+    "prompt": "Em Tiago 2:3, toque o lugar oferecido ao homem que veste roupas luxuosas.",
+    "cue": "Em Tiago 2:3, toque o lugar oferecido ao homem que veste roupas luxuosas.",
+    "verseRef": "Tiago 2:3",
+    "passageText": "E prestardes atenção àquele que veste roupas luxuosas e disserdes: \"Senta-te aqui em um lugar de honra\"; e disserdes ao pobre: \"Tu, fica ali em pé ou senta-te aqui embaixo do estrado dos meus pés\".",
+    "options": [
+      {
+        "id": "a",
+        "text": "lugar de honra"
+      },
+      {
+        "id": "b",
+        "text": "em pé"
+      },
+      {
+        "id": "c",
+        "text": "estrado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Senta-te aqui em um lugar de honra",
+    "feedbackCorrect": "O rico ouve: \"Senta-te aqui em um lugar de honra\".",
+    "feedbackWrong": {
+      "b": "Ficar em pé é o que se diz ao pobre, e não ao rico.",
+      "c": "O estrado dos pés é o lugar sugerido ao pobre."
+    },
+    "hint": "Procure o convite feito a quem veste roupas luxuosas.",
+    "learningObjective": "Identificar o lugar dado ao rico.",
+    "evidence": [
+      "Tiago 2:3"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-02-sem-acepcao-03",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 2:5, quem Deus escolheu para serem ricos na fé?",
+    "prompt": "Segundo Tiago 2:5, quem Deus escolheu para serem ricos na fé?",
+    "cue": "Segundo Tiago 2:5, quem Deus escolheu para serem ricos na fé?",
+    "verseRef": "Tiago 2:5",
+    "passageText": "Meus amados irmãos, ouvi: acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé e herdeiros do reino que prometeu àqueles que o amam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os ricos da reunião"
+      },
+      {
+        "id": "b",
+        "text": "Os que usam anéis de ouro"
+      },
+      {
+        "id": "c",
+        "text": "Os pobres deste mundo"
+      },
+      {
+        "id": "d",
+        "text": "Os juízes da cidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Deus não escolheu os pobres deste mundo",
+    "feedbackCorrect": "Deus escolheu os pobres deste mundo para serem ricos na fé.",
+    "feedbackWrong": {
+      "a": "A escolha de Deus recai sobre os pobres, e não sobre os ricos.",
+      "b": "Os anéis de ouro descrevem o visitante rico de 2:2, não os escolhidos.",
+      "d": "Os juízes aparecem em 2:4 como quem distingue, e não como escolhidos."
+    },
+    "hint": "Veja o objeto do verbo escolher na pergunta de Tiago.",
+    "learningObjective": "Reconhecer quem Deus escolheu, segundo Tiago.",
+    "evidence": [
+      "Tiago 2:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-02-sem-acepcao-04",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte o começo de Tiago 2:5 na ordem do texto.",
+    "prompt": "Monte o começo de Tiago 2:5 na ordem do texto.",
+    "cue": "Monte o começo de Tiago 2:5 na ordem do texto.",
+    "verseRef": "Tiago 2:5",
+    "passageText": "Meus amados irmãos, ouvi: acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé e herdeiros do reino que prometeu àqueles que o amam?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meus amados irmãos, ouvi"
+      },
+      {
+        "id": "b",
+        "text": "acaso Deus não escolheu os pobres deste mundo"
+      },
+      {
+        "id": "c",
+        "text": "para que se tornem ricos na fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé",
+    "feedbackCorrect": "Tiago chama a atenção, pergunta quem Deus escolheu e diz para quê.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado aos irmãos; o fim da escolha vem por último."
+    },
+    "hint": "O versículo abre com um chamado e fecha com o fim da escolha.",
+    "learningObjective": "Seguir a ordem do texto sobre a escolha de Deus.",
+    "evidence": [
+      "Tiago 2:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-02-sem-acepcao-05",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 2:8, que lei os irmãos devem observar, conforme a Escritura?",
+    "prompt": "Em Tiago 2:8, que lei os irmãos devem observar, conforme a Escritura?",
+    "cue": "Em Tiago 2:8, que lei os irmãos devem observar, conforme a Escritura?",
+    "verseRef": "Tiago 2:8",
+    "passageText": "Se, porém, vós estais observando a lei real, conforme a Escritura: \"Amarás o teu próximo como a ti mesmo,\" fazeis bem.",
+    "template": "Se, porém, vós estais observando a lei ___, conforme a Escritura: \"Amarás o teu próximo como a ti mesmo,\" fazeis bem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "real"
+      },
+      {
+        "id": "b",
+        "text": "nova"
+      },
+      {
+        "id": "c",
+        "text": "antiga"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "observando a lei real",
+    "feedbackCorrect": "O texto chama de lei real o mandamento de amar o próximo.",
+    "feedbackWrong": {
+      "b": "Tiago não fala de uma lei nova, mas da lei que a Escritura já ensina.",
+      "c": "O texto não usa esse nome: fala da lei que a Escritura cita."
+    },
+    "hint": "Veja o adjetivo que acompanha a palavra lei.",
+    "learningObjective": "Lembrar o nome que Tiago dá à lei do amor.",
+    "evidence": [
+      "Tiago 2:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-02-sem-acepcao-06",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 2:1 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 2:1 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 2:1 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 2:1",
+    "passageText": "Meus irmãos, não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas.",
+    "passageA": {
+      "ref": "Tiago 2:1",
+      "text": "Meus irmãos, não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A reunião dos irmãos recebe visitantes ricos e pobres, e o tratamento dado a cada um revela a fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Honra só a quem tem posses"
+      },
+      {
+        "id": "b",
+        "text": "Atenção só aos mais velhos"
+      },
+      {
+        "id": "c",
+        "text": "Fé sem acepção de pessoas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sem fazer acepção de pessoas",
+    "feedbackCorrect": "Tiago liga a fé em Cristo ao modo de tratar todos, sem acepção.",
+    "feedbackWrong": {
+      "a": "Honrar só quem tem posses é justamente o que Tiago condena.",
+      "b": "O texto fala de ricos e pobres, e não de idade."
+    },
+    "hint": "Veja como o versículo termina a ordem sobre a fé.",
+    "learningObjective": "Ligar o contexto da reunião à ordem de Tiago 2:1.",
+    "evidence": [
+      "Tiago 2:1"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-02-sem-acepcao-01",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 2:5, Deus escolheu os ricos deste mundo para que se tornem ricos na fé.",
+    "prompt": "Em Tiago 2:5, Deus escolheu os ricos deste mundo para que se tornem ricos na fé.",
+    "cue": "Em Tiago 2:5, Deus escolheu os ricos deste mundo para que se tornem ricos na fé.",
+    "verseRef": "Tiago 2:5",
+    "passageText": "Meus amados irmãos, ouvi: acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé e herdeiros do reino que prometeu àqueles que o amam?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "escolheu os pobres deste mundo para que se tornem ricos na fé",
+    "feedbackCorrect": "Deus escolheu os pobres deste mundo para serem ricos na fé.",
+    "feedbackWrong": {
+      "true": "Releia o versículo: quem Deus escolheu foram os pobres, e não os ricos."
+    },
+    "hint": "Compare quem é escolhido com quem a reunião estava honrando.",
+    "learningObjective": "Ver o propósito da escolha de Deus.",
+    "evidence": [
+      "Tiago 2:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-02-sem-acepcao-02",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 2:6, toque a palavra que marca o contraste com a escolha de Deus.",
+    "prompt": "Em Tiago 2:6, toque a palavra que marca o contraste com a escolha de Deus.",
+    "cue": "Em Tiago 2:6, toque a palavra que marca o contraste com a escolha de Deus.",
+    "verseRef": "Tiago 2:6",
+    "passageText": "Entretanto, vós menosprezastes o pobre. Não são os ricos que vos oprimem e não são eles que vos arrastam para os tribunais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entretanto"
+      },
+      {
+        "id": "b",
+        "text": "tribunais"
+      },
+      {
+        "id": "c",
+        "text": "pobre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Entretanto, vós menosprezastes o pobre",
+    "feedbackCorrect": "O \"Entretanto\" vira o argumento: Deus escolheu, mas vocês menosprezaram.",
+    "feedbackWrong": {
+      "b": "Os tribunais mostram o que os ricos fazem, e não o contraste.",
+      "c": "Pobre nomeia quem é menosprezado, e não a virada do argumento."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Tocar o marcador de contraste entre a escolha de Deus e a atitude dos irmãos.",
+    "evidence": [
+      "Tiago 2:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-02-sem-acepcao-03",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Que relação Tiago 2:3–4 estabelece entre o tratamento dado e o julgamento?",
+    "prompt": "Que relação Tiago 2:3–4 estabelece entre o tratamento dado e o julgamento?",
+    "cue": "Que relação Tiago 2:3–4 estabelece entre o tratamento dado e o julgamento?",
+    "verseRef": "Tiago 2:3–4",
+    "passageText": "E prestardes atenção àquele que veste roupas luxuosas e disserdes: \"Senta-te aqui em um lugar de honra\"; e disserdes ao pobre: \"Tu, fica ali em pé ou senta-te aqui embaixo do estrado dos meus pés\". Não fizestes distinção entre vós mesmos e não vos tornastes juízes tomados de pensamentos pervertidos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O pobre merece menos atenção por não contribuir"
+      },
+      {
+        "id": "b",
+        "text": "Tratar rico e pobre de modo desigual é julgar com maus critérios"
+      },
+      {
+        "id": "c",
+        "text": "Distinguir as pessoas mostra bom discernimento"
+      },
+      {
+        "id": "d",
+        "text": "O tratamento diferente é apenas questão de cortesia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não fizestes distinção entre vós mesmos e não vos tornastes juízes",
+    "feedbackCorrect": "Quem distingue por aparência se torna juiz com pensamentos pervertidos.",
+    "feedbackWrong": {
+      "a": "O texto não mede o valor da pessoa pela contribuição.",
+      "c": "O texto chama esses juízes de tomados de pensamentos pervertidos.",
+      "d": "Tiago trata isso como julgamento mau, e não como simples cortesia."
+    },
+    "hint": "Ligue o lugar dado a cada um ao que Tiago diz que eles se tornaram.",
+    "learningObjective": "Relacionar o tratamento desigual ao julgamento.",
+    "evidence": [
+      "Tiago 2:3–4"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-02-sem-acepcao-04",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos de Tiago 2:8–9.",
+    "prompt": "Ordene os movimentos de Tiago 2:8–9.",
+    "cue": "Ordene os movimentos de Tiago 2:8–9.",
+    "verseRef": "Tiago 2:8–9",
+    "passageText": "Se, porém, vós estais observando a lei real, conforme a Escritura: \"Amarás o teu próximo como a ti mesmo,\" fazeis bem. Se, porém, fazeis acepção de pessoas, cometeis pecado, sendo arguidos pela lei como transgressores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei real manda amar o próximo"
+      },
+      {
+        "id": "b",
+        "text": "Quem a observa faz bem"
+      },
+      {
+        "id": "c",
+        "text": "Quem faz acepção peca e é transgressor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Se, porém, fazeis acepção de pessoas, cometeis pecado",
+    "feedbackCorrect": "A lei do amor vem primeiro; observá-la é fazer bem; quebrá-la é pecar.",
+    "feedbackWrong": {
+      "default": "Comece pela lei real; a consequência de ignorá-la vem por último."
+    },
+    "hint": "Siga o caminho: a lei, quem a cumpre, quem a quebra.",
+    "learningObjective": "Ordenar o argumento sobre a lei real.",
+    "evidence": [
+      "Tiago 2:8–9"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-02-sem-acepcao-05",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 2:6, que ação os irmãos fizeram com o pobre, contrária à escolha de Deus?",
+    "prompt": "Em Tiago 2:6, que ação os irmãos fizeram com o pobre, contrária à escolha de Deus?",
+    "cue": "Em Tiago 2:6, que ação os irmãos fizeram com o pobre, contrária à escolha de Deus?",
+    "verseRef": "Tiago 2:6",
+    "passageText": "Entretanto, vós menosprezastes o pobre. Não são os ricos que vos oprimem e não são eles que vos arrastam para os tribunais?",
+    "template": "Entretanto, vós ___ o pobre. Não são os ricos que vos oprimem e não são eles que vos arrastam para os tribunais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "acolhestes"
+      },
+      {
+        "id": "b",
+        "text": "ouvistes"
+      },
+      {
+        "id": "c",
+        "text": "menosprezastes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vós menosprezastes o pobre",
+    "feedbackCorrect": "Deus escolheu os pobres, mas os irmãos os menosprezaram.",
+    "feedbackWrong": {
+      "a": "Acolher seria o oposto do que Tiago denuncia no versículo.",
+      "b": "O texto fala de desprezo, e não de ouvir o pobre."
+    },
+    "hint": "Veja o verbo que vem depois de vós e contradiz a escolha de Deus.",
+    "learningObjective": "Lembrar a ação que muda a cena.",
+    "evidence": [
+      "Tiago 2:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-02-sem-acepcao-06",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 2:8 a Levítico 19:18?",
+    "prompt": "O que liga Tiago 2:8 a Levítico 19:18?",
+    "cue": "O que liga Tiago 2:8 a Levítico 19:18?",
+    "verseRef": "Tiago 2:8",
+    "passageText": "Se, porém, vós estais observando a lei real, conforme a Escritura: \"Amarás o teu próximo como a ti mesmo,\" fazeis bem.",
+    "passageA": {
+      "ref": "Tiago 2:8",
+      "text": "Se, porém, vós estais observando a lei real, conforme a Escritura: \"Amarás o teu próximo como a ti mesmo,\" fazeis bem."
+    },
+    "passageB": {
+      "ref": "Levítico 19:18",
+      "text": "Não te vingarás, nem alimentarás ira contra os filhos do teu povo; amarás o teu próximo como a ti mesmo. Eu sou o SENHOR."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O mandamento de amar o próximo"
+      },
+      {
+        "id": "b",
+        "text": "A partilha da terra prometida"
+      },
+      {
+        "id": "c",
+        "text": "O culto no templo de Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Amarás o teu próximo como a ti mesmo",
+    "feedbackCorrect": "Tiago cita Levítico: amar o próximo como a si mesmo é a lei real.",
+    "feedbackWrong": {
+      "b": "A partilha da terra não liga os textos; ambos falam de amar o próximo.",
+      "c": "O culto no templo não aparece nos dois textos; o tema é o próximo."
+    },
+    "hint": "Veja a frase que Tiago diz tirar da Escritura.",
+    "learningObjective": "Ligar a lei real de Tiago à sua origem em Levítico.",
+    "evidence": [
+      "Tiago 2:8",
+      "Levítico 19:18"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-02-sem-acepcao-01",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 2:9, fazer acepção de pessoas é apenas uma falha de etiqueta, e não pecado.",
+    "prompt": "Em Tiago 2:9, fazer acepção de pessoas é apenas uma falha de etiqueta, e não pecado.",
+    "cue": "Em Tiago 2:9, fazer acepção de pessoas é apenas uma falha de etiqueta, e não pecado.",
+    "verseRef": "Tiago 2:9",
+    "passageText": "Se, porém, fazeis acepção de pessoas, cometeis pecado, sendo arguidos pela lei como transgressores.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fazeis acepção de pessoas, cometeis pecado",
+    "feedbackCorrect": "Tiago chama a acepção de pecado e diz que a lei acusa como transgressores.",
+    "feedbackWrong": {
+      "true": "O texto diz o contrário: fazer acepção de pessoas é cometer pecado."
+    },
+    "hint": "Veja o que o versículo diz que se comete ao fazer acepção.",
+    "learningObjective": "Rejeitar a leitura que reduz a acepção a uma falha de etiqueta.",
+    "evidence": [
+      "Tiago 2:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-02-sem-acepcao-02",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 2:9, toque a palavra que diz como a lei classifica quem faz acepção.",
+    "prompt": "Em Tiago 2:9, toque a palavra que diz como a lei classifica quem faz acepção.",
+    "cue": "Em Tiago 2:9, toque a palavra que diz como a lei classifica quem faz acepção.",
+    "verseRef": "Tiago 2:9",
+    "passageText": "Se, porém, fazeis acepção de pessoas, cometeis pecado, sendo arguidos pela lei como transgressores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pessoas"
+      },
+      {
+        "id": "b",
+        "text": "transgressores"
+      },
+      {
+        "id": "c",
+        "text": "lei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sendo arguidos pela lei como transgressores",
+    "feedbackCorrect": "A lei acusa quem faz acepção como transgressor: a falha é contra a lei.",
+    "feedbackWrong": {
+      "a": "Pessoas é o alvo da acepção, e não a classificação dada por ela.",
+      "c": "A lei é quem acusa; o rótulo que ela dá vem depois."
+    },
+    "hint": "Procure o rótulo que fecha o versículo.",
+    "learningObjective": "Sustentar com o texto que a acepção é transgressão.",
+    "evidence": [
+      "Tiago 2:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-02-sem-acepcao-03",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 2:1 sustenta sobre a fé em Cristo e o trato com as pessoas?",
+    "prompt": "Que leitura Tiago 2:1 sustenta sobre a fé em Cristo e o trato com as pessoas?",
+    "cue": "Que leitura Tiago 2:1 sustenta sobre a fé em Cristo e o trato com as pessoas?",
+    "verseRef": "Tiago 2:1",
+    "passageText": "Meus irmãos, não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A acepção só é grave quando causa prejuízo material"
+      },
+      {
+        "id": "b",
+        "text": "Crer em Cristo, Senhor da glória, exclui tratar pessoas por posição"
+      },
+      {
+        "id": "c",
+        "text": "A fé em Cristo é assunto privado, sem efeito na reunião"
+      },
+      {
+        "id": "d",
+        "text": "Dar mais honra a quem tem mais é sabedoria prática"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas",
+    "feedbackCorrect": "A fé no Senhor da glória não se vive junto com acepção de pessoas.",
+    "feedbackWrong": {
+      "a": "O texto não mede a acepção pelo prejuízo material.",
+      "c": "Tiago liga a fé em Cristo ao modo de tratar as pessoas na reunião.",
+      "d": "O versículo trata essa preferência como contrária à fé em Cristo."
+    },
+    "hint": "Una o título de Cristo ao que a fé não pode fazer.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre fé e acepção.",
+    "evidence": [
+      "Tiago 2:1"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-02-sem-acepcao-04",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do argumento de Tiago sobre os pobres e a lei?",
+    "prompt": "Qual sequência mostra a lógica do argumento de Tiago sobre os pobres e a lei?",
+    "cue": "Qual sequência mostra a lógica do argumento de Tiago sobre os pobres e a lei?",
+    "verseRef": "Tiago 2:5–6",
+    "passageText": "Meus amados irmãos, ouvi: acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé e herdeiros do reino que prometeu àqueles que o amam? Entretanto, vós menosprezastes o pobre. Não são os ricos que vos oprimem e não são eles que vos arrastam para os tribunais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus escolhe os pobres como herdeiros do reino"
+      },
+      {
+        "id": "b",
+        "text": "Menosprezar o pobre contradiz a escolha de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Amar o próximo como a si mesmo cumpre a lei real"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Entretanto, vós menosprezastes o pobre",
+    "feedbackCorrect": "A escolha de Deus mostra o erro do menosprezo, e a lei do amor corrige a conduta.",
+    "feedbackWrong": {
+      "default": "Siga o argumento: a escolha de Deus (2:5), o erro (2:6) e a lei do amor (2:8)."
+    },
+    "hint": "Comece pelo que Deus fez, depois pelo erro, e termine na lei.",
+    "learningObjective": "Encadear a escolha de Deus, o erro dos irmãos e a lei do amor.",
+    "evidence": [
+      "Tiago 2:5–6",
+      "Tiago 2:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-02-sem-acepcao-05",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 2:1, que termo nomeia o que não combina com a fé em Cristo?",
+    "prompt": "Em Tiago 2:1, que termo nomeia o que não combina com a fé em Cristo?",
+    "cue": "Em Tiago 2:1, que termo nomeia o que não combina com a fé em Cristo?",
+    "verseRef": "Tiago 2:1",
+    "passageText": "Meus irmãos, não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas.",
+    "template": "Meus irmãos, não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer ___ de pessoas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "acepção"
+      },
+      {
+        "id": "b",
+        "text": "menção"
+      },
+      {
+        "id": "c",
+        "text": "exceção"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem fazer acepção de pessoas",
+    "feedbackCorrect": "Acepção de pessoas é o termo central: preferir alguém pela posição.",
+    "feedbackWrong": {
+      "b": "Menção não aparece no versículo; o termo é outro.",
+      "c": "O texto não fala de abrir exceção, mas de preferir pessoas por posição."
+    },
+    "hint": "Veja o que o versículo manda não fazer com as pessoas.",
+    "learningObjective": "Lembrar o termo que carrega o sentido central da cena.",
+    "evidence": [
+      "Tiago 2:1"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-02-sem-acepcao-06",
+    "trail": "tiago-cap",
+    "section": "tjc-02-sem-acepcao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 2:5 a Lucas 6:20?",
+    "prompt": "O que liga Tiago 2:5 a Lucas 6:20?",
+    "cue": "O que liga Tiago 2:5 a Lucas 6:20?",
+    "verseRef": "Tiago 2:5",
+    "passageText": "Meus amados irmãos, ouvi: acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé e herdeiros do reino que prometeu àqueles que o amam?",
+    "passageA": {
+      "ref": "Tiago 2:5",
+      "text": "Meus amados irmãos, ouvi: acaso Deus não escolheu os pobres deste mundo para que se tornem ricos na fé e herdeiros do reino que prometeu àqueles que o amam?"
+    },
+    "passageB": {
+      "ref": "Lucas 6:20",
+      "text": "E, erguendo os olhos para os seus discípulos, disse-lhes: Bem-aventurados sois vós, os pobres, porque vosso é o reino de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "O reino é dos pobres"
+      },
+      {
+        "id": "b",
+        "text": "O reino exige riqueza antes"
+      },
+      {
+        "id": "c",
+        "text": "O reino é dos ricos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "herdeiros do reino que prometeu",
+    "feedbackCorrect": "Tiago ecoa Jesus: o reino é dos pobres, escolhidos por Deus.",
+    "feedbackWrong": {
+      "b": "Nenhum dos textos exige riqueza; Deus a dá em fé aos pobres.",
+      "c": "Os dois textos dizem o contrário: o reino é dos pobres."
+    },
+    "hint": "Compare quem recebe o reino nos dois textos.",
+    "learningObjective": "Ligar a escolha dos pobres em Tiago ao ensino de Jesus.",
+    "evidence": [
+      "Tiago 2:5",
+      "Lucas 6:20"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-03-sabedoria-do-alto-01",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 3:14, quem tem inveja amarga e contendas no coração não deve se gloriar disso.",
+    "prompt": "Em Tiago 3:14, quem tem inveja amarga e contendas no coração não deve se gloriar disso.",
+    "cue": "Em Tiago 3:14, quem tem inveja amarga e contendas no coração não deve se gloriar disso.",
+    "verseRef": "Tiago 3:14",
+    "passageText": "Mas, se vocês têm inveja amarga e contendas no coração, não se gloriem disso, nem mintam contra a verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não se gloriem disso",
+    "feedbackCorrect": "Tiago diz que inveja amarga e contendas não são motivo de glória.",
+    "feedbackWrong": {
+      "false": "Releia o versículo: quem tem inveja e contendas não deve se gloriar disso."
+    },
+    "hint": "Veja o que Tiago manda não fazer com a inveja e as contendas.",
+    "learningObjective": "Observar o que Tiago diz sobre inveja e contendas.",
+    "evidence": [
+      "Tiago 3:14"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-03-sabedoria-do-alto-02",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 3:13, toque o que o sábio deve mostrar por meio de suas boas ações.",
+    "prompt": "Em Tiago 3:13, toque o que o sábio deve mostrar por meio de suas boas ações.",
+    "cue": "Em Tiago 3:13, toque o que o sábio deve mostrar por meio de suas boas ações.",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "entendido"
+      },
+      {
+        "id": "b",
+        "text": "mansidão"
+      },
+      {
+        "id": "c",
+        "text": "ações"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "O sábio mostra a mansidão por meio de suas boas ações.",
+    "feedbackWrong": {
+      "a": "Entendido descreve o sábio, e não o que ele deve mostrar.",
+      "c": "As ações são o meio de mostrar, e não o que é mostrado."
+    },
+    "hint": "Procure o que o versículo chama de fruto da sabedoria.",
+    "learningObjective": "Identificar o que o sábio mostra pelas ações.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-03-sabedoria-do-alto-03",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 3:15, de onde não vem a sabedoria que gera inveja e contendas?",
+    "prompt": "Segundo Tiago 3:15, de onde não vem a sabedoria que gera inveja e contendas?",
+    "cue": "Segundo Tiago 3:15, de onde não vem a sabedoria que gera inveja e contendas?",
+    "verseRef": "Tiago 3:15",
+    "passageText": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dos mestres da lei"
+      },
+      {
+        "id": "b",
+        "text": "Da experiência dos pobres"
+      },
+      {
+        "id": "c",
+        "text": "Do alto"
+      },
+      {
+        "id": "d",
+        "text": "Da tradição dos antigos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Essa sabedoria não vem do alto",
+    "feedbackCorrect": "O texto diz que essa sabedoria não vem do alto.",
+    "feedbackWrong": {
+      "a": "Os mestres da lei não aparecem no versículo.",
+      "b": "A experiência dos pobres não é citada; o texto fala de origem.",
+      "d": "O versículo não fala de tradição dos antigos, mas de uma origem que não é do alto."
+    },
+    "hint": "Veja a negação logo no começo do versículo.",
+    "learningObjective": "Reconhecer de onde essa sabedoria não vem.",
+    "evidence": [
+      "Tiago 3:15"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-03-sabedoria-do-alto-04",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte o começo de Tiago 3:16 na ordem do texto.",
+    "prompt": "Monte o começo de Tiago 3:16 na ordem do texto.",
+    "cue": "Monte o começo de Tiago 3:16 na ordem do texto.",
+    "verseRef": "Tiago 3:16",
+    "passageText": "Pois, onde há inveja e sentimento faccioso, ali há confusão e toda espécie de coisas más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois, onde há inveja e sentimento faccioso"
+      },
+      {
+        "id": "b",
+        "text": "ali há confusão"
+      },
+      {
+        "id": "c",
+        "text": "toda espécie de coisas más"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "onde há inveja e sentimento faccioso, ali há confusão e toda espécie de coisas más",
+    "feedbackCorrect": "Primeiro o lugar da inveja, depois a confusão e, por fim, as coisas más.",
+    "feedbackWrong": {
+      "default": "Comece pela inveja e pelo espírito faccioso; os efeitos vêm depois."
+    },
+    "hint": "O versículo abre com a causa e termina com os efeitos.",
+    "learningObjective": "Seguir a ordem do texto sobre inveja e confusão.",
+    "evidence": [
+      "Tiago 3:16"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-03-sabedoria-do-alto-05",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 3:17, o que a sabedoria do alto é, primeiramente?",
+    "prompt": "Em Tiago 3:17, o que a sabedoria do alto é, primeiramente?",
+    "cue": "Em Tiago 3:17, o que a sabedoria do alto é, primeiramente?",
+    "verseRef": "Tiago 3:17",
+    "passageText": "A sabedoria que vem do alto é, primeiramente, pura; depois, pacífica, indulgente, tratável, repleta de misericórdia e de bons frutos, imparcial e sem fingimento",
+    "template": "A sabedoria que vem do alto é, primeiramente, ___; depois, pacífica, indulgente, tratável, repleta de misericórdia e de bons frutos, imparcial e sem fingimento",
+    "options": [
+      {
+        "id": "a",
+        "text": "rica"
+      },
+      {
+        "id": "b",
+        "text": "veloz"
+      },
+      {
+        "id": "c",
+        "text": "pura"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A sabedoria que vem do alto é, primeiramente, pura",
+    "feedbackCorrect": "A primeira marca da sabedoria do alto é a pureza.",
+    "feedbackWrong": {
+      "a": "Riqueza não é traço da sabedoria do alto no versículo.",
+      "b": "Velocidade não aparece na lista de traços do versículo."
+    },
+    "hint": "Veja a primeira característica da lista.",
+    "learningObjective": "Lembrar a primeira marca da sabedoria do alto.",
+    "evidence": [
+      "Tiago 3:17"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-03-sabedoria-do-alto-06",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 3:13 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 3:13 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 3:13 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "passageA": {
+      "ref": "Tiago 3:13",
+      "text": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Tiago pergunta quem é sábio entre os irmãos e mostra como reconhecer a sabedoria verdadeira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sabedoria mostrada em boas ações"
+      },
+      {
+        "id": "b",
+        "text": "Sabedoria provada só por palavras"
+      },
+      {
+        "id": "c",
+        "text": "Sabedoria guardada em segredo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mostre por meio de suas boas ações",
+    "feedbackCorrect": "Tiago responde à pergunta mandando mostrar a sabedoria em boas ações.",
+    "feedbackWrong": {
+      "b": "Tiago pede ações, e não palavras, como prova da sabedoria.",
+      "c": "O versículo manda mostrar a sabedoria, e não escondê-la."
+    },
+    "hint": "Veja o que Tiago manda fazer depois de perguntar quem é sábio.",
+    "learningObjective": "Ligar o contexto da pergunta ao modo de mostrar a sabedoria.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-03-sabedoria-do-alto-01",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 3:16, onde há inveja e sentimento faccioso, ali há paz e toda espécie de coisas boas.",
+    "prompt": "Em Tiago 3:16, onde há inveja e sentimento faccioso, ali há paz e toda espécie de coisas boas.",
+    "cue": "Em Tiago 3:16, onde há inveja e sentimento faccioso, ali há paz e toda espécie de coisas boas.",
+    "verseRef": "Tiago 3:16",
+    "passageText": "Pois, onde há inveja e sentimento faccioso, ali há confusão e toda espécie de coisas más.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ali há confusão e toda espécie de coisas más",
+    "feedbackCorrect": "Onde há inveja e sentimento faccioso, o texto vê confusão e coisas más.",
+    "feedbackWrong": {
+      "true": "O versículo diz o contrário: a inveja traz confusão e coisas más."
+    },
+    "hint": "Veja o que o versículo diz que existe onde há inveja.",
+    "learningObjective": "Ver a relação de causa entre inveja e confusão.",
+    "evidence": [
+      "Tiago 3:16"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-03-sabedoria-do-alto-02",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 3:14, toque a palavra que marca o contraste com a mansidão do versículo anterior.",
+    "prompt": "Em Tiago 3:14, toque a palavra que marca o contraste com a mansidão do versículo anterior.",
+    "cue": "Em Tiago 3:14, toque a palavra que marca o contraste com a mansidão do versículo anterior.",
+    "verseRef": "Tiago 3:14",
+    "passageText": "Mas, se vocês têm inveja amarga e contendas no coração, não se gloriem disso, nem mintam contra a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inveja"
+      },
+      {
+        "id": "b",
+        "text": "Mas"
+      },
+      {
+        "id": "c",
+        "text": "verdade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Mas, se vocês têm inveja amarga",
+    "feedbackCorrect": "O \"Mas\" vira o argumento: da mansidão para a inveja e as contendas.",
+    "feedbackWrong": {
+      "a": "A inveja é o que o contraste revela, e não a palavra que o marca.",
+      "c": "A verdade aparece no fim, e não na virada do argumento."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Tocar o marcador de contraste entre mansidão e inveja.",
+    "evidence": [
+      "Tiago 3:14"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-03-sabedoria-do-alto-03",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Que relação Tiago 3:16 estabelece entre a inveja e a vida em comum?",
+    "prompt": "Que relação Tiago 3:16 estabelece entre a inveja e a vida em comum?",
+    "cue": "Que relação Tiago 3:16 estabelece entre a inveja e a vida em comum?",
+    "verseRef": "Tiago 3:16",
+    "passageText": "Pois, onde há inveja e sentimento faccioso, ali há confusão e toda espécie de coisas más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A confusão é que dá origem à inveja"
+      },
+      {
+        "id": "b",
+        "text": "A inveja ajuda a comunidade a crescer"
+      },
+      {
+        "id": "c",
+        "text": "A inveja só prejudica quem a sente"
+      },
+      {
+        "id": "d",
+        "text": "A inveja e o espírito faccioso produzem desordem e maldade"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "onde há inveja e sentimento faccioso, ali há confusão",
+    "feedbackCorrect": "A inveja e o sentimento faccioso são a causa da confusão e das coisas más.",
+    "feedbackWrong": {
+      "a": "A ordem é inversa: a inveja vem antes e produz a confusão.",
+      "b": "O texto mostra o oposto: onde há inveja, há confusão.",
+      "c": "O texto fala de confusão e coisas más ao redor, e não só de quem inveja."
+    },
+    "hint": "Veja o que existe \"ali\", onde há inveja.",
+    "learningObjective": "Relacionar a inveja aos seus efeitos na comunidade.",
+    "evidence": [
+      "Tiago 3:16"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-03-sabedoria-do-alto-04",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos de Tiago 3:17–18.",
+    "prompt": "Ordene os movimentos de Tiago 3:17–18.",
+    "cue": "Ordene os movimentos de Tiago 3:17–18.",
+    "verseRef": "Tiago 3:17–18",
+    "passageText": "A sabedoria que vem do alto é, primeiramente, pura; depois, pacífica, indulgente, tratável, repleta de misericórdia e de bons frutos, imparcial e sem fingimento O fruto da justiça é semeado em paz para os que promovem a paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Primeiro, a pureza"
+      },
+      {
+        "id": "b",
+        "text": "Depois, a paz e a misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "No fim, o fruto da justiça em paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "primeiramente, pura; depois, pacífica",
+    "feedbackCorrect": "A sabedoria do alto começa pura, vira paz e misericórdia e termina em justiça.",
+    "feedbackWrong": {
+      "default": "Siga a ordem do texto: primeiro a pureza; o fruto da justiça fecha."
+    },
+    "hint": "Os marcadores primeiramente e depois mostram a ordem.",
+    "learningObjective": "Ordenar os traços da sabedoria do alto até o seu fruto.",
+    "evidence": [
+      "Tiago 3:17–18"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-03-sabedoria-do-alto-05",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 3:18, o que se faz com o fruto da justiça, em paz?",
+    "prompt": "Em Tiago 3:18, o que se faz com o fruto da justiça, em paz?",
+    "cue": "Em Tiago 3:18, o que se faz com o fruto da justiça, em paz?",
+    "verseRef": "Tiago 3:18",
+    "passageText": "O fruto da justiça é semeado em paz para os que promovem a paz.",
+    "template": "O fruto da justiça é ___ em paz para os que promovem a paz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "semeado"
+      },
+      {
+        "id": "b",
+        "text": "vendido"
+      },
+      {
+        "id": "c",
+        "text": "colhido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O fruto da justiça é semeado em paz",
+    "feedbackCorrect": "O fruto da justiça é semeado em paz: a paz é o solo onde ele nasce.",
+    "feedbackWrong": {
+      "b": "Vender não aparece: o fruto da justiça é semeado.",
+      "c": "A colheita viria depois; o versículo fala do começo, o plantio."
+    },
+    "hint": "Pense no verbo que descreve o começo de uma plantação.",
+    "learningObjective": "Lembrar a ação que liga a paz ao fruto da justiça.",
+    "evidence": [
+      "Tiago 3:18"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-03-sabedoria-do-alto-06",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 3:18 a Mateus 5:9?",
+    "prompt": "O que liga Tiago 3:18 a Mateus 5:9?",
+    "cue": "O que liga Tiago 3:18 a Mateus 5:9?",
+    "verseRef": "Tiago 3:18",
+    "passageText": "O fruto da justiça é semeado em paz para os que promovem a paz.",
+    "passageA": {
+      "ref": "Tiago 3:18",
+      "text": "O fruto da justiça é semeado em paz para os que promovem a paz."
+    },
+    "passageB": {
+      "ref": "Mateus 5:9",
+      "text": "Bem-aventurados os pacificadores, porque serão chamados filhos de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paz como fuga da justiça"
+      },
+      {
+        "id": "b",
+        "text": "Paz só para os fortes"
+      },
+      {
+        "id": "c",
+        "text": "Bênção para quem promove a paz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para os que promovem a paz",
+    "feedbackCorrect": "Tiago e Jesus ligam a paz a uma recompensa para quem a promove.",
+    "feedbackWrong": {
+      "a": "Em Tiago, a paz é o solo da justiça, e não fuga dela.",
+      "b": "Nenhum dos textos limita a paz aos fortes; falam de quem a promove."
+    },
+    "hint": "Compare o que os dois textos dizem de quem promove a paz.",
+    "learningObjective": "Ligar o fruto da paz em Tiago à bem-aventurança de Jesus.",
+    "evidence": [
+      "Tiago 3:18",
+      "Mateus 5:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-03-sabedoria-do-alto-01",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 3:13–14, a verdadeira sabedoria se mostra em boas ações e mansidão, e não em inveja e contendas.",
+    "prompt": "Em Tiago 3:13–14, a verdadeira sabedoria se mostra em boas ações e mansidão, e não em inveja e contendas.",
+    "cue": "Em Tiago 3:13–14, a verdadeira sabedoria se mostra em boas ações e mansidão, e não em inveja e contendas.",
+    "verseRef": "Tiago 3:13–14",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria. Mas, se vocês têm inveja amarga e contendas no coração, não se gloriem disso, nem mintam contra a verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "A sabedoria se prova pela mansidão nas ações, e não pela inveja.",
+    "feedbackWrong": {
+      "false": "O texto liga a sabedoria às boas ações e à mansidão, e a inveja a outra coisa."
+    },
+    "hint": "Compare o que 3:13 manda mostrar com o que 3:14 condena.",
+    "learningObjective": "Avaliar a leitura sustentável sobre onde a sabedoria se mostra.",
+    "evidence": [
+      "Tiago 3:13–14"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-03-sabedoria-do-alto-02",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 3:17, toque a palavra que sustenta que a sabedoria do alto não faz favoritismo.",
+    "prompt": "Em Tiago 3:17, toque a palavra que sustenta que a sabedoria do alto não faz favoritismo.",
+    "cue": "Em Tiago 3:17, toque a palavra que sustenta que a sabedoria do alto não faz favoritismo.",
+    "verseRef": "Tiago 3:17",
+    "passageText": "A sabedoria que vem do alto é, primeiramente, pura; depois, pacífica, indulgente, tratável, repleta de misericórdia e de bons frutos, imparcial e sem fingimento",
+    "options": [
+      {
+        "id": "a",
+        "text": "tratável"
+      },
+      {
+        "id": "b",
+        "text": "imparcial"
+      },
+      {
+        "id": "c",
+        "text": "indulgente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "imparcial e sem fingimento",
+    "feedbackCorrect": "Imparcial diz que a sabedoria do alto não separa as pessoas por aparência.",
+    "feedbackWrong": {
+      "a": "Tratável diz que ela é aberta à correção, e não que não faz favoritismo.",
+      "c": "Indulgente fala de benignidade, e não de ausência de favoritismo."
+    },
+    "hint": "Procure a palavra que descreve quem não toma partido.",
+    "learningObjective": "Sustentar com o texto que a sabedoria do alto é sem favoritismo.",
+    "evidence": [
+      "Tiago 3:17"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-03-sabedoria-do-alto-03",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 3:15–16 sustenta sobre a inveja e a sabedoria?",
+    "prompt": "Que leitura Tiago 3:15–16 sustenta sobre a inveja e a sabedoria?",
+    "cue": "Que leitura Tiago 3:15–16 sustenta sobre a inveja e a sabedoria?",
+    "verseRef": "Tiago 3:15–16",
+    "passageText": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca. Pois, onde há inveja e sentimento faccioso, ali há confusão e toda espécie de coisas más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inveja e espírito faccioso mostram uma sabedoria que não é de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Toda sabedoria vem do alto, mesmo com contendas"
+      },
+      {
+        "id": "c",
+        "text": "A inveja é sinal de zelo por uma boa causa"
+      },
+      {
+        "id": "d",
+        "text": "A confusão é só falta de organização"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca",
+    "feedbackCorrect": "O texto diz que essa sabedoria não vem do alto e que seu fruto é a confusão.",
+    "feedbackWrong": {
+      "b": "Tiago diz expressamente que essa sabedoria não vem do alto.",
+      "c": "O versículo liga a inveja à confusão e ao mal, e não ao zelo.",
+      "d": "O texto liga a confusão à inveja e ao espírito faccioso."
+    },
+    "hint": "Ligue a origem da sabedoria ao seu fruto.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a falsa sabedoria.",
+    "evidence": [
+      "Tiago 3:15–16"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-03-sabedoria-do-alto-04",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do argumento de Tiago sobre as duas sabedorias?",
+    "prompt": "Qual sequência mostra a lógica do argumento de Tiago sobre as duas sabedorias?",
+    "cue": "Qual sequência mostra a lógica do argumento de Tiago sobre as duas sabedorias?",
+    "verseRef": "Tiago 3:15–16",
+    "passageText": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca. Pois, onde há inveja e sentimento faccioso, ali há confusão e toda espécie de coisas más.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Inveja e contenda não são sinal de sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "Essa sabedoria é terrena e gera confusão"
+      },
+      {
+        "id": "c",
+        "text": "A sabedoria do alto semeia paz e justiça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca",
+    "feedbackCorrect": "Tiago nega que a inveja seja sabedoria, mostra seu fruto e aponta a sabedoria do alto.",
+    "feedbackWrong": {
+      "default": "Siga o argumento: a falsa sabedoria (3:14–16) e depois a do alto (3:17–18)."
+    },
+    "hint": "Comece pelo que não é sabedoria e termine no que é.",
+    "learningObjective": "Encadear o argumento de Tiago sobre as duas sabedorias.",
+    "evidence": [
+      "Tiago 3:14",
+      "Tiago 3:15–16",
+      "Tiago 3:17–18"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-03-sabedoria-do-alto-05",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 3:15, que termo fecha a descrição da sabedoria que não vem do alto?",
+    "prompt": "Em Tiago 3:15, que termo fecha a descrição da sabedoria que não vem do alto?",
+    "cue": "Em Tiago 3:15, que termo fecha a descrição da sabedoria que não vem do alto?",
+    "verseRef": "Tiago 3:15",
+    "passageText": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca.",
+    "template": "Essa sabedoria não vem do alto; antes, é terrena, animal e ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "humana"
+      },
+      {
+        "id": "b",
+        "text": "demoníaca"
+      },
+      {
+        "id": "c",
+        "text": "espiritual"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "é terrena, animal e demoníaca",
+    "feedbackCorrect": "Tiago a descreve como terrena, animal e demoníaca: sua origem não é Deus.",
+    "feedbackWrong": {
+      "a": "O texto vai além de humana: aponta uma origem contrária a Deus.",
+      "c": "Espiritual diria o contrário: o texto nega que ela venha do alto."
+    },
+    "hint": "Veja a última palavra da lista no versículo.",
+    "learningObjective": "Lembrar o termo que mostra a gravidade dessa sabedoria.",
+    "evidence": [
+      "Tiago 3:15"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-03-sabedoria-do-alto-06",
+    "trail": "tiago-cap",
+    "section": "tjc-03-sabedoria-do-alto",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 3:17 a Gálatas 5:22–23?",
+    "prompt": "O que liga Tiago 3:17 a Gálatas 5:22–23?",
+    "cue": "O que liga Tiago 3:17 a Gálatas 5:22–23?",
+    "verseRef": "Tiago 3:17",
+    "passageText": "A sabedoria que vem do alto é, primeiramente, pura; depois, pacífica, indulgente, tratável, repleta de misericórdia e de bons frutos, imparcial e sem fingimento",
+    "passageA": {
+      "ref": "Tiago 3:17",
+      "text": "A sabedoria que vem do alto é, primeiramente, pura; depois, pacífica, indulgente, tratável, repleta de misericórdia e de bons frutos, imparcial e sem fingimento"
+    },
+    "passageB": {
+      "ref": "Gálatas 5:22–23",
+      "text": "Mas o fruto do Espírito é amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade, mansidão e autocontrole. Contra essas coisas não existe lei."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Frutos que dispensam o caráter"
+      },
+      {
+        "id": "b",
+        "text": "Frutos que revelam o Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Frutos que provam o esforço humano"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "repleta de misericórdia e de bons frutos",
+    "feedbackCorrect": "Nos dois textos, o caráter mostra a obra de Deus: os frutos revelam a origem.",
+    "feedbackWrong": {
+      "a": "Os frutos são justamente o caráter que aparece na vida.",
+      "c": "Os textos descrevem frutos de Deus, e não conquistas humanas."
+    },
+    "hint": "Compare o que os dois textos listam como frutos.",
+    "learningObjective": "Ligar os traços da sabedoria do alto ao fruto do Espírito.",
+    "evidence": [
+      "Tiago 3:17",
+      "Gálatas 5:22–23"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-04-aproximem-se-de-deus-01",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 4:7, quem resiste ao diabo o vê se aproximar.",
+    "prompt": "Em Tiago 4:7, quem resiste ao diabo o vê se aproximar.",
+    "cue": "Em Tiago 4:7, quem resiste ao diabo o vê se aproximar.",
+    "verseRef": "Tiago 4:7",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "resistam ao diabo, e ele fugirá de vós",
+    "feedbackCorrect": "O diabo fugirá de quem lhe resiste, segundo o versículo.",
+    "feedbackWrong": {
+      "true": "Releia o fim do versículo: o diabo foge, e não se aproxima."
+    },
+    "hint": "Veja o que acontece com o diabo no fim do versículo.",
+    "learningObjective": "Observar o que acontece quando se resiste ao diabo.",
+    "evidence": [
+      "Tiago 4:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-04-aproximem-se-de-deus-02",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 4:9, toque a palavra em que o riso deve se converter.",
+    "prompt": "Em Tiago 4:9, toque a palavra em que o riso deve se converter.",
+    "cue": "Em Tiago 4:9, toque a palavra em que o riso deve se converter.",
+    "verseRef": "Tiago 4:9",
+    "passageText": "Afligi-vos, lamentai e chorai; converta-se o vosso riso em pranto e a vossa alegria em tristeza.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pranto"
+      },
+      {
+        "id": "b",
+        "text": "alegria"
+      },
+      {
+        "id": "c",
+        "text": "tristeza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "converta-se o vosso riso em pranto",
+    "feedbackCorrect": "O riso se converte em pranto; a alegria, em tristeza.",
+    "feedbackWrong": {
+      "b": "A alegria é o que se converte em tristeza, e não o destino do riso.",
+      "c": "A tristeza é no que a alegria se converte, e não o riso."
+    },
+    "hint": "Procure o que vem depois de converta-se o vosso riso.",
+    "learningObjective": "Identificar em que o riso se converte.",
+    "evidence": [
+      "Tiago 4:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-04-aproximem-se-de-deus-03",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 4:10, o que o Senhor fará com quem se humilha?",
+    "prompt": "Segundo Tiago 4:10, o que o Senhor fará com quem se humilha?",
+    "cue": "Segundo Tiago 4:10, o que o Senhor fará com quem se humilha?",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele o fará esperar em silêncio"
+      },
+      {
+        "id": "b",
+        "text": "Ele o porá à prova outra vez"
+      },
+      {
+        "id": "c",
+        "text": "Ele o exaltará"
+      },
+      {
+        "id": "d",
+        "text": "Ele o deixará sozinho"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+    "feedbackCorrect": "Quem se humilha na presença do Senhor é exaltado por ele.",
+    "feedbackWrong": {
+      "a": "O versículo promete uma ação do Senhor, e não silêncio.",
+      "b": "O texto não fala de nova prova, mas de exaltação.",
+      "d": "O versículo promete o contrário: o Senhor o levanta."
+    },
+    "hint": "Veja a promessa que vem depois da ordem de se humilhar.",
+    "learningObjective": "Reconhecer a promessa feita a quem se humilha.",
+    "evidence": [
+      "Tiago 4:10"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-04-aproximem-se-de-deus-04",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 4:7 na ordem do texto.",
+    "prompt": "Monte Tiago 4:7 na ordem do texto.",
+    "cue": "Monte Tiago 4:7 na ordem do texto.",
+    "verseRef": "Tiago 4:7",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sujeitem-se, portanto, a Deus"
+      },
+      {
+        "id": "b",
+        "text": "mas resistam ao diabo"
+      },
+      {
+        "id": "c",
+        "text": "e ele fugirá de vós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós",
+    "feedbackCorrect": "Primeiro a sujeição a Deus, depois a resistência e, por fim, a fuga do diabo.",
+    "feedbackWrong": {
+      "default": "Comece pela sujeição a Deus; a fuga do diabo vem por último."
+    },
+    "hint": "O versículo abre com a ordem a Deus e fecha com o resultado.",
+    "learningObjective": "Seguir a ordem do texto sobre sujeição e resistência.",
+    "evidence": [
+      "Tiago 4:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-04-aproximem-se-de-deus-05",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 4:10, na presença de quem os irmãos devem se humilhar?",
+    "prompt": "Em Tiago 4:10, na presença de quem os irmãos devem se humilhar?",
+    "cue": "Em Tiago 4:10, na presença de quem os irmãos devem se humilhar?",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "template": "Humilhem-se na presença do ___, e ele os exaltará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "rei"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Humilhem-se na presença do Senhor",
+    "feedbackCorrect": "A humildade é diante do Senhor, que exalta.",
+    "feedbackWrong": {
+      "a": "O texto não manda humilhar-se diante do mundo, mas diante de Deus.",
+      "c": "Nenhum rei aparece no versículo; a presença é a do Senhor."
+    },
+    "hint": "Veja o título de quem exaltará os humildes.",
+    "learningObjective": "Lembrar diante de quem Tiago manda se humilhar.",
+    "evidence": [
+      "Tiago 4:10"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-04-aproximem-se-de-deus-06",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 4:8 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 4:8 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 4:8 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 4:8",
+    "passageText": "Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações.",
+    "passageA": {
+      "ref": "Tiago 4:8",
+      "text": "Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Tiago chama os irmãos a se voltarem para Deus e a deixarem o orgulho e a divisão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aproximar-se de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Afastar-se dos irmãos"
+      },
+      {
+        "id": "c",
+        "text": "Esperar de braços cruzados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aproximem-se de Deus, e Ele se aproximará de vocês",
+    "feedbackCorrect": "O chamado de Tiago é para se aproximar de Deus, que também se aproxima.",
+    "feedbackWrong": {
+      "b": "O versículo manda ir a Deus, e não se afastar dos irmãos.",
+      "c": "Tiago pede ação: aproximar-se e purificar as mãos."
+    },
+    "hint": "Veja o primeiro pedido do versículo.",
+    "learningObjective": "Ligar o contexto de volta a Deus ao chamado de Tiago 4:8.",
+    "evidence": [
+      "Tiago 4:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-04-aproximem-se-de-deus-01",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 4:11, quem fala mal do irmão ou o julga fala mal da lei e a julga.",
+    "prompt": "Em Tiago 4:11, quem fala mal do irmão ou o julga fala mal da lei e a julga.",
+    "cue": "Em Tiago 4:11, quem fala mal do irmão ou o julga fala mal da lei e a julga.",
+    "verseRef": "Tiago 4:11",
+    "passageText": "Irmãos, não falem mal uns dos outros. Aquele que fala mal do irmão ou julga seu irmão fala mal da lei e a julga; ora, se julgas a lei, não és observador da lei, mas juiz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "fala mal da lei e a julga",
+    "feedbackCorrect": "Julgar o irmão é, no fundo, julgar a lei de Deus.",
+    "feedbackWrong": {
+      "false": "O versículo diz que quem julga o irmão fala mal da lei e a julga."
+    },
+    "hint": "Veja o que acontece com a lei quando se julga o irmão.",
+    "learningObjective": "Ver a relação entre julgar o irmão e julgar a lei.",
+    "evidence": [
+      "Tiago 4:11"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-04-aproximem-se-de-deus-02",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 4:12, toque a palavra que marca a virada da afirmação sobre Deus para a pergunta ao leitor.",
+    "prompt": "Em Tiago 4:12, toque a palavra que marca a virada da afirmação sobre Deus para a pergunta ao leitor.",
+    "cue": "Em Tiago 4:12, toque a palavra que marca a virada da afirmação sobre Deus para a pergunta ao leitor.",
+    "verseRef": "Tiago 4:12",
+    "passageText": "Há apenas um Legislador e Juiz, aquele que pode salvar e fazer perecer; mas quem és tu para julgar o próximo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "próximo"
+      },
+      {
+        "id": "c",
+        "text": "salvar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas quem és tu para julgar o próximo",
+    "feedbackCorrect": "O \"mas\" vira do poder de Deus para a pergunta a quem julga.",
+    "feedbackWrong": {
+      "b": "Próximo é quem se julga, e não a palavra que marca a virada.",
+      "c": "Salvar descreve o poder do Juiz, e não a virada do argumento."
+    },
+    "hint": "Procure a palavra que abre a pergunta, depois do ponto e vírgula.",
+    "learningObjective": "Tocar o marcador de contraste do versículo.",
+    "evidence": [
+      "Tiago 4:12"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-04-aproximem-se-de-deus-03",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Que relação Tiago 4:11–12 estabelece entre julgar o irmão e o lugar de Deus?",
+    "prompt": "Que relação Tiago 4:11–12 estabelece entre julgar o irmão e o lugar de Deus?",
+    "cue": "Que relação Tiago 4:11–12 estabelece entre julgar o irmão e o lugar de Deus?",
+    "verseRef": "Tiago 4:11–12",
+    "passageText": "Irmãos, não falem mal uns dos outros. Aquele que fala mal do irmão ou julga seu irmão fala mal da lei e a julga; ora, se julgas a lei, não és observador da lei, mas juiz. Há apenas um Legislador e Juiz, aquele que pode salvar e fazer perecer; mas quem és tu para julgar o próximo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O julgamento do irmão não afeta a lei"
+      },
+      {
+        "id": "b",
+        "text": "Julgar o irmão é uma forma de obedecer à lei"
+      },
+      {
+        "id": "c",
+        "text": "Deus delega o julgamento aos irmãos mais firmes"
+      },
+      {
+        "id": "d",
+        "text": "Quem julga o irmão ocupa o lugar do único Juiz"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "se julgas a lei, não és observador da lei, mas juiz",
+    "feedbackCorrect": "Quem julga passa de observador da lei a juiz, lugar que só Deus ocupa.",
+    "feedbackWrong": {
+      "a": "Julgar o irmão é falar mal da lei, segundo o texto.",
+      "b": "O versículo diz o contrário: quem julga deixa de observar a lei.",
+      "c": "O texto fala de um só Legislador e Juiz, e não de irmãos juízes."
+    },
+    "hint": "Compare o título de quem julga com o título de Deus.",
+    "learningObjective": "Relacionar o julgamento do irmão ao lugar que é só de Deus.",
+    "evidence": [
+      "Tiago 4:11–12"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-04-aproximem-se-de-deus-04",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos de Tiago 4:7–8.",
+    "prompt": "Ordene os movimentos de Tiago 4:7–8.",
+    "cue": "Ordene os movimentos de Tiago 4:7–8.",
+    "verseRef": "Tiago 4:7–8",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós. Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sujeitar-se a Deus e resistir ao diabo"
+      },
+      {
+        "id": "b",
+        "text": "Aproximar-se de Deus e purificar o coração"
+      },
+      {
+        "id": "c",
+        "text": "Deus se aproxima de quem o busca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aproximem-se de Deus, e Ele se aproximará de vocês",
+    "feedbackCorrect": "A sujeição vem primeiro; depois a aproximação; então Deus se aproxima.",
+    "feedbackWrong": {
+      "default": "Comece pela sujeição a Deus; a resposta de Deus fecha o movimento."
+    },
+    "hint": "Siga o caminho: sujeitar-se, aproximar-se, receber a resposta.",
+    "learningObjective": "Ordenar os passos de volta a Deus.",
+    "evidence": [
+      "Tiago 4:7–8"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-04-aproximem-se-de-deus-05",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 4:7, que verbo manda enfrentar o diabo?",
+    "prompt": "Em Tiago 4:7, que verbo manda enfrentar o diabo?",
+    "cue": "Em Tiago 4:7, que verbo manda enfrentar o diabo?",
+    "verseRef": "Tiago 4:7",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós.",
+    "template": "Sujeitem-se, portanto, a Deus; mas ___ ao diabo, e ele fugirá de vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obedeçam"
+      },
+      {
+        "id": "b",
+        "text": "sirvam"
+      },
+      {
+        "id": "c",
+        "text": "resistam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas resistam ao diabo",
+    "feedbackCorrect": "A ordem é resistir: o diabo foge de quem se sujeita a Deus e lhe resiste.",
+    "feedbackWrong": {
+      "a": "Obedecer ao diabo seria o oposto do que o versículo manda.",
+      "b": "Servir ao diabo contradiz a ordem do texto."
+    },
+    "hint": "Veja a ação que vem depois do mas.",
+    "learningObjective": "Lembrar o verbo que carrega a ação contra o diabo.",
+    "evidence": [
+      "Tiago 4:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-04-aproximem-se-de-deus-06",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 4:8 a Zacarias 1:3?",
+    "prompt": "O que liga Tiago 4:8 a Zacarias 1:3?",
+    "cue": "O que liga Tiago 4:8 a Zacarias 1:3?",
+    "verseRef": "Tiago 4:8",
+    "passageText": "Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações.",
+    "passageA": {
+      "ref": "Tiago 4:8",
+      "text": "Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações."
+    },
+    "passageB": {
+      "ref": "Zacarias 1:3",
+      "text": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor dos Exércitos, e eu me tornarei a vocês, diz o Senhor dos Exércitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus responde a quem se volta"
+      },
+      {
+        "id": "b",
+        "text": "Deus só ouve os perfeitos"
+      },
+      {
+        "id": "c",
+        "text": "Deus se afasta de quem erra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aproximem-se de Deus, e Ele se aproximará de vocês",
+    "feedbackCorrect": "Nos dois textos, quando o povo se volta a Deus, Deus se volta a ele.",
+    "feedbackWrong": {
+      "b": "Os textos chamam pecadores a voltar, e não só os perfeitos.",
+      "c": "Os dois textos mostram Deus vindo ao encontro de quem se volta."
+    },
+    "hint": "Compare o que Deus faz depois do chamado nos dois textos.",
+    "learningObjective": "Ligar o convite de Tiago ao chamado de Zacarias.",
+    "evidence": [
+      "Tiago 4:8",
+      "Zacarias 1:3"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-04-aproximem-se-de-deus-01",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Tiago 4:11 ensina que julgar o irmão é uma forma de cumprir a lei.",
+    "prompt": "Tiago 4:11 ensina que julgar o irmão é uma forma de cumprir a lei.",
+    "cue": "Tiago 4:11 ensina que julgar o irmão é uma forma de cumprir a lei.",
+    "verseRef": "Tiago 4:11",
+    "passageText": "Irmãos, não falem mal uns dos outros. Aquele que fala mal do irmão ou julga seu irmão fala mal da lei e a julga; ora, se julgas a lei, não és observador da lei, mas juiz.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "se julgas a lei, não és observador da lei, mas juiz",
+    "feedbackCorrect": "Quem julga o irmão deixa de ser observador da lei e se põe como juiz.",
+    "feedbackWrong": {
+      "true": "O versículo diz o contrário: quem julga deixa de observar a lei."
+    },
+    "hint": "Veja que papel o versículo dá a quem julga o irmão.",
+    "learningObjective": "Rejeitar a leitura de que julgar o irmão cumpre a lei.",
+    "evidence": [
+      "Tiago 4:11"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-04-aproximem-se-de-deus-02",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 4:11, toque a palavra que mostra o papel assumido por quem julga a lei.",
+    "prompt": "Em Tiago 4:11, toque a palavra que mostra o papel assumido por quem julga a lei.",
+    "cue": "Em Tiago 4:11, toque a palavra que mostra o papel assumido por quem julga a lei.",
+    "verseRef": "Tiago 4:11",
+    "passageText": "Irmãos, não falem mal uns dos outros. Aquele que fala mal do irmão ou julga seu irmão fala mal da lei e a julga; ora, se julgas a lei, não és observador da lei, mas juiz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "observador"
+      },
+      {
+        "id": "b",
+        "text": "juiz"
+      },
+      {
+        "id": "c",
+        "text": "irmão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não és observador da lei, mas juiz",
+    "feedbackCorrect": "Quem julga a lei deixa de ser observador e se faz juiz.",
+    "feedbackWrong": {
+      "a": "Observador é o papel que a pessoa perde ao julgar.",
+      "c": "Irmão é quem é julgado, e não o papel de quem julga."
+    },
+    "hint": "Veja a última palavra do versículo.",
+    "learningObjective": "Sustentar com o texto que o julgador ocupa lugar de juiz.",
+    "evidence": [
+      "Tiago 4:11"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-04-aproximem-se-de-deus-03",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 4:7–8 sustenta sobre a vida diante de Deus?",
+    "prompt": "Que leitura Tiago 4:7–8 sustenta sobre a vida diante de Deus?",
+    "cue": "Que leitura Tiago 4:7–8 sustenta sobre a vida diante de Deus?",
+    "verseRef": "Tiago 4:7–8",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós. Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aproximar-se de Deus é opcional para quem resiste"
+      },
+      {
+        "id": "b",
+        "text": "Resistir ao diabo dispensa a sujeição a Deus"
+      },
+      {
+        "id": "c",
+        "text": "A vida com Deus une sujeição, resistência ao mal e aproximação"
+      },
+      {
+        "id": "d",
+        "text": "Deus só se aproxima de quem já é puro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo",
+    "feedbackCorrect": "A resistência nasce da sujeição, e a aproximação a Deus a sustenta.",
+    "feedbackWrong": {
+      "a": "O chamado a se aproximar de Deus faz parte da mesma ordem.",
+      "b": "O texto começa com a sujeição a Deus: é dela que nasce a resistência.",
+      "d": "O texto convida pecadores a se aproximarem, e Deus responde."
+    },
+    "hint": "Una as três ordens dos dois versículos.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a vida diante de Deus.",
+    "evidence": [
+      "Tiago 4:7–8"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-04-aproximem-se-de-deus-04",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o caminho da humildade na Bíblia?",
+    "prompt": "Qual sequência mostra o caminho da humildade na Bíblia?",
+    "cue": "Qual sequência mostra o caminho da humildade na Bíblia?",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus concede graça aos humildes"
+      },
+      {
+        "id": "b",
+        "text": "Os irmãos devem se humilhar diante do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "No tempo oportuno, Deus exalta quem se humilha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+    "feedbackCorrect": "Deus dá graça aos humildes; por isso a ordem de se humilhar, e a exaltação a seu tempo.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Provérbios 3:34, Tiago 4:10 e 1 Pedro 5:6."
+    },
+    "hint": "Comece pelo que Deus faz com os humildes.",
+    "learningObjective": "Ver Tiago 4:10 dentro de um ensino que atravessa a Bíblia.",
+    "evidence": [
+      "Tiago 4:10",
+      "Provérbios 3:34",
+      "1 Pedro 5:5–6"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-04-aproximem-se-de-deus-05",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 4:12, que termo nomeia quem dá a lei e pode julgar?",
+    "prompt": "Em Tiago 4:12, que termo nomeia quem dá a lei e pode julgar?",
+    "cue": "Em Tiago 4:12, que termo nomeia quem dá a lei e pode julgar?",
+    "verseRef": "Tiago 4:12",
+    "passageText": "Há apenas um Legislador e Juiz, aquele que pode salvar e fazer perecer; mas quem és tu para julgar o próximo?",
+    "template": "Há apenas um ___ e Juiz, aquele que pode salvar e fazer perecer; mas quem és tu para julgar o próximo?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mestre"
+      },
+      {
+        "id": "b",
+        "text": "Legislador"
+      },
+      {
+        "id": "c",
+        "text": "Pastor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Há apenas um Legislador e Juiz",
+    "feedbackCorrect": "Só quem dá a lei é Legislador, e por isso só ele pode julgar.",
+    "feedbackWrong": {
+      "a": "Mestre ensina a lei, mas o texto fala de quem a dá.",
+      "c": "Pastor cuida do rebanho; o título do versículo é outro."
+    },
+    "hint": "Veja o título que vem antes de \"e Juiz\".",
+    "learningObjective": "Lembrar o termo que carrega a autoridade de Deus sobre a lei.",
+    "evidence": [
+      "Tiago 4:12"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-04-aproximem-se-de-deus-06",
+    "trail": "tiago-cap",
+    "section": "tjc-04-aproximem-se-de-deus",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 4:10 a 1 Pedro 5:5–6?",
+    "prompt": "O que liga Tiago 4:10 a 1 Pedro 5:5–6?",
+    "cue": "O que liga Tiago 4:10 a 1 Pedro 5:5–6?",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "passageA": {
+      "ref": "Tiago 4:10",
+      "text": "Humilhem-se na presença do Senhor, e ele os exaltará."
+    },
+    "passageB": {
+      "ref": "1 Pedro 5:5–6",
+      "text": "Da mesma forma, vocês, jovens: sejam submissos aos mais velhos; e todos se submetam uns aos outros, revestindo-se de humildade, porque Deus resiste aos soberbos, mas concede a sua graça aos humildes. Humilhem-se, portanto, sob a poderosa mão de Deus, para que ele, no tempo oportuno, os exalte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orgulho que Deus recompensa"
+      },
+      {
+        "id": "b",
+        "text": "Humildade que Deus exalta"
+      },
+      {
+        "id": "c",
+        "text": "Força própria que vence o mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+    "feedbackCorrect": "Pedro repete Tiago: quem se humilha diante de Deus é por ele exaltado.",
+    "feedbackWrong": {
+      "a": "Pedro diz que Deus resiste aos soberbos e concede graça aos humildes.",
+      "c": "Nos dois textos, a vitória vem de Deus, e não da força própria."
+    },
+    "hint": "Compare o que Deus faz com quem se humilha nos dois textos.",
+    "learningObjective": "Ligar a promessa de Tiago ao ensino de Pedro sobre a humildade.",
+    "evidence": [
+      "Tiago 4:10",
+      "1 Pedro 5:5–6"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-05-paciencia-ate-a-vinda-01",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 5:7, o lavrador aguarda com pressa o precioso fruto da terra.",
+    "prompt": "Em Tiago 5:7, o lavrador aguarda com pressa o precioso fruto da terra.",
+    "cue": "Em Tiago 5:7, o lavrador aguarda com pressa o precioso fruto da terra.",
+    "verseRef": "Tiago 5:7",
+    "passageText": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o lavrador aguarda com paciência o precioso fruto da terra",
+    "feedbackCorrect": "O lavrador aguarda com paciência, e não com pressa, o fruto da terra.",
+    "feedbackWrong": {
+      "true": "Releia o versículo: o lavrador aguarda com paciência o fruto da terra."
+    },
+    "hint": "Veja como o versículo descreve o jeito de esperar do lavrador.",
+    "learningObjective": "Observar como o lavrador espera.",
+    "evidence": [
+      "Tiago 5:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-05-paciencia-ate-a-vinda-02",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 5:10, toque quem Tiago dá como exemplo de sofrimento e paciência.",
+    "prompt": "Em Tiago 5:10, toque quem Tiago dá como exemplo de sofrimento e paciência.",
+    "cue": "Em Tiago 5:10, toque quem Tiago dá como exemplo de sofrimento e paciência.",
+    "verseRef": "Tiago 5:10",
+    "passageText": "Meus irmãos, tomem como exemplo de sofrimento e paciência os profetas, que falaram em nome do Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "profetas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tomem como exemplo de sofrimento e paciência os profetas",
+    "feedbackCorrect": "Os profetas são o exemplo de sofrimento e paciência.",
+    "feedbackWrong": {
+      "a": "Os irmãos são quem recebe a ordem, e não o exemplo.",
+      "b": "O Senhor é aquele em cujo nome os profetas falaram, e não o exemplo citado."
+    },
+    "hint": "Veja quem Tiago manda tomar como exemplo.",
+    "learningObjective": "Identificar quem serve de exemplo de paciência.",
+    "evidence": [
+      "Tiago 5:10"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-05-paciencia-ate-a-vinda-03",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 5:11, de quem os irmãos ouviram falar a paciência?",
+    "prompt": "Segundo Tiago 5:11, de quem os irmãos ouviram falar a paciência?",
+    "cue": "Segundo Tiago 5:11, de quem os irmãos ouviram falar a paciência?",
+    "verseRef": "Tiago 5:11",
+    "passageText": "Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De Jó"
+      },
+      {
+        "id": "b",
+        "text": "De Moisés"
+      },
+      {
+        "id": "c",
+        "text": "De Davi"
+      },
+      {
+        "id": "d",
+        "text": "De Abraão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Vocês ouviram da paciência de Jó",
+    "feedbackCorrect": "Os irmãos ouviram da paciência de Jó e viram o fim que o Senhor lhe deu.",
+    "feedbackWrong": {
+      "b": "Moisés não é citado aqui; Tiago fala da paciência de Jó.",
+      "c": "Davi não aparece no versículo; o exemplo é Jó.",
+      "d": "Abraão não aparece no versículo; o exemplo citado é outro."
+    },
+    "hint": "Veja o nome ligado à paciência no versículo.",
+    "learningObjective": "Reconhecer o exemplo de paciência citado por Tiago.",
+    "evidence": [
+      "Tiago 5:11"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-05-paciencia-ate-a-vinda-04",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 5:8 na ordem do texto.",
+    "prompt": "Monte Tiago 5:8 na ordem do texto.",
+    "cue": "Monte Tiago 5:8 na ordem do texto.",
+    "verseRef": "Tiago 5:8",
+    "passageText": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sejam também pacientes"
+      },
+      {
+        "id": "b",
+        "text": "fortaleçam os corações"
+      },
+      {
+        "id": "c",
+        "text": "pois a vinda do Senhor está próxima"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima",
+    "feedbackCorrect": "Primeiro a ordem de ser paciente, depois a de fortalecer, e então o motivo.",
+    "feedbackWrong": {
+      "default": "Comece pela ordem de ser paciente; o motivo vem por último."
+    },
+    "hint": "O versículo abre com as ordens e fecha com o motivo.",
+    "learningObjective": "Seguir a ordem do texto sobre paciência e esperança.",
+    "evidence": [
+      "Tiago 5:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-05-paciencia-ate-a-vinda-05",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 5:9, onde o juiz está?",
+    "prompt": "Em Tiago 5:9, onde o juiz está?",
+    "cue": "Em Tiago 5:9, onde o juiz está?",
+    "verseRef": "Tiago 5:9",
+    "passageText": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. O juiz está às portas.",
+    "template": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. O juiz está às ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "costas"
+      },
+      {
+        "id": "b",
+        "text": "portas"
+      },
+      {
+        "id": "c",
+        "text": "mãos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O juiz está às portas",
+    "feedbackCorrect": "O juiz está às portas: o julgamento está perto.",
+    "feedbackWrong": {
+      "a": "O versículo não fala de costas; a imagem é a de algo que está chegando.",
+      "c": "A imagem do versículo não é a das mãos, mas a de um lugar de entrada."
+    },
+    "hint": "Veja como termina o versículo.",
+    "learningObjective": "Lembrar a imagem que Tiago usa para o juiz.",
+    "evidence": [
+      "Tiago 5:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-05-paciencia-ate-a-vinda-06",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 5:7 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 5:7 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 5:7 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 5:7",
+    "passageText": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas.",
+    "passageA": {
+      "ref": "Tiago 5:7",
+      "text": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Os irmãos sofrem e esperam, e Tiago os anima a aguardar a vinda do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paciência até a vinda do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Queixa contra quem demora"
+      },
+      {
+        "id": "c",
+        "text": "Pressa em ver resultados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sejam pacientes até a vinda do Senhor",
+    "feedbackCorrect": "Tiago responde ao sofrimento com paciência até a vinda do Senhor.",
+    "feedbackWrong": {
+      "b": "Tiago pede paciência, e não queixa, enquanto se espera.",
+      "c": "O versículo manda esperar com paciência, e não apressar resultados."
+    },
+    "hint": "Veja a primeira ordem do versículo.",
+    "learningObjective": "Ligar o contexto de espera ao pedido de paciência.",
+    "evidence": [
+      "Tiago 5:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-05-paciencia-ate-a-vinda-01",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 5:8, os irmãos devem fortalecer os corações porque a vinda do Senhor está próxima.",
+    "prompt": "Em Tiago 5:8, os irmãos devem fortalecer os corações porque a vinda do Senhor está próxima.",
+    "cue": "Em Tiago 5:8, os irmãos devem fortalecer os corações porque a vinda do Senhor está próxima.",
+    "verseRef": "Tiago 5:8",
+    "passageText": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "fortaleçam os corações, pois a vinda do Senhor está próxima",
+    "feedbackCorrect": "A proximidade da vinda do Senhor é o motivo para fortalecer os corações.",
+    "feedbackWrong": {
+      "false": "O \"pois\" dá o motivo: a vinda do Senhor está próxima."
+    },
+    "hint": "Veja a palavra que introduz o motivo da ordem.",
+    "learningObjective": "Ver a relação de causa entre a ordem e a vinda do Senhor.",
+    "evidence": [
+      "Tiago 5:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-05-paciencia-ate-a-vinda-02",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 5:12, toque a palavra que marca a virada do assunto da paciência para a palavra dos irmãos.",
+    "prompt": "Em Tiago 5:12, toque a palavra que marca a virada do assunto da paciência para a palavra dos irmãos.",
+    "cue": "Em Tiago 5:12, toque a palavra que marca a virada do assunto da paciência para a palavra dos irmãos.",
+    "verseRef": "Tiago 5:12",
+    "passageText": "Mas, acima de tudo, irmãos, não jurem nem pelo céu, nem pela terra, nem façam qualquer outro juramento; que a palavra de vocês seja \"sim\", \"sim\" e \"não\", \"não\", para que não caíam em juízo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "juramento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas, acima de tudo, irmãos",
+    "feedbackCorrect": "O \"Mas\" vira o assunto: depois da paciência, a palavra sincera.",
+    "feedbackWrong": {
+      "b": "Irmãos é a palavra com que Tiago chama quem lê, e não a que vira o assunto.",
+      "c": "Juramento nomeia o que se proíbe, e não a virada do assunto."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Tocar o marcador que muda o assunto da cena.",
+    "evidence": [
+      "Tiago 5:12"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-05-paciencia-ate-a-vinda-03",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Que relação Tiago 5:9 estabelece entre queixar-se e o julgamento?",
+    "prompt": "Que relação Tiago 5:9 estabelece entre queixar-se e o julgamento?",
+    "cue": "Que relação Tiago 5:9 estabelece entre queixar-se e o julgamento?",
+    "verseRef": "Tiago 5:9",
+    "passageText": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. O juiz está às portas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A queixa é a forma de apressar o juiz"
+      },
+      {
+        "id": "b",
+        "text": "Queixar-se dos outros protege do julgamento"
+      },
+      {
+        "id": "c",
+        "text": "Queixar-se dos outros expõe quem se queixa ao julgamento"
+      },
+      {
+        "id": "d",
+        "text": "O julgamento só vem sobre quem não reclama"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não se queixem uns dos outros, para que não sejam julgados",
+    "feedbackCorrect": "A queixa contra o irmão traz julgamento sobre quem se queixa.",
+    "feedbackWrong": {
+      "a": "Tiago não apresenta a queixa como meio de apressar o juiz.",
+      "b": "O versículo diz o contrário: não se queixar é o que evita o julgamento.",
+      "d": "O texto ordena não se queixar justamente para não ser julgado."
+    },
+    "hint": "Ligue a ordem de não se queixar ao motivo que vem depois.",
+    "learningObjective": "Relacionar a queixa ao julgamento.",
+    "evidence": [
+      "Tiago 5:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-05-paciencia-ate-a-vinda-04",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos de Tiago 5:10–11.",
+    "prompt": "Ordene os movimentos de Tiago 5:10–11.",
+    "cue": "Ordene os movimentos de Tiago 5:10–11.",
+    "verseRef": "Tiago 5:10–11",
+    "passageText": "Meus irmãos, tomem como exemplo de sofrimento e paciência os profetas, que falaram em nome do Senhor. Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os profetas sofreram e foram pacientes"
+      },
+      {
+        "id": "b",
+        "text": "Quem perseverou é considerado feliz"
+      },
+      {
+        "id": "c",
+        "text": "O fim de Jó mostra a misericórdia do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tomem como exemplo de sofrimento e paciência os profetas",
+    "feedbackCorrect": "Os profetas abrem o exemplo, os firmes são felizes, e Jó mostra o fim.",
+    "feedbackWrong": {
+      "default": "Comece pelos profetas; o fim dado a Jó fecha o argumento."
+    },
+    "hint": "Siga o caminho: o exemplo, a bem-aventurança, o caso de Jó.",
+    "learningObjective": "Ordenar os exemplos de firmeza do trecho.",
+    "evidence": [
+      "Tiago 5:10–11"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-05-paciencia-ate-a-vinda-05",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 5:8, por que fortalecer os corações? Porque a vinda do Senhor está o quê?",
+    "prompt": "Em Tiago 5:8, por que fortalecer os corações? Porque a vinda do Senhor está o quê?",
+    "cue": "Em Tiago 5:8, por que fortalecer os corações? Porque a vinda do Senhor está o quê?",
+    "verseRef": "Tiago 5:8",
+    "passageText": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima.",
+    "template": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "distante"
+      },
+      {
+        "id": "b",
+        "text": "próxima"
+      },
+      {
+        "id": "c",
+        "text": "atrasada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a vinda do Senhor está próxima",
+    "feedbackCorrect": "A vinda do Senhor está próxima: esse é o motivo da esperança firme.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário: a vinda do Senhor está perto.",
+      "c": "Tiago não fala de atraso, mas de proximidade."
+    },
+    "hint": "Veja a palavra que dá o motivo para fortalecer o coração.",
+    "learningObjective": "Lembrar a palavra que carrega o motivo da paciência.",
+    "evidence": [
+      "Tiago 5:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-05-paciencia-ate-a-vinda-06",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 5:8 a Hebreus 10:37?",
+    "prompt": "O que liga Tiago 5:8 a Hebreus 10:37?",
+    "cue": "O que liga Tiago 5:8 a Hebreus 10:37?",
+    "verseRef": "Tiago 5:8",
+    "passageText": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima.",
+    "passageA": {
+      "ref": "Tiago 5:8",
+      "text": "Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima."
+    },
+    "passageB": {
+      "ref": "Hebreus 10:37",
+      "text": "Pois, ainda em breve aquele que vem virá e não se atrasará."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A vinda do Senhor é certa"
+      },
+      {
+        "id": "b",
+        "text": "A vinda do Senhor é incerta"
+      },
+      {
+        "id": "c",
+        "text": "A vinda do Senhor já passou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a vinda do Senhor está próxima",
+    "feedbackCorrect": "Os dois textos garantem: o Senhor vem e não se atrasará.",
+    "feedbackWrong": {
+      "b": "Os textos afirmam a vinda com firmeza, e não a deixam incerta.",
+      "c": "Os dois textos olham para a vinda como algo que ainda virá."
+    },
+    "hint": "Compare o que os dois textos afirmam sobre a vinda.",
+    "learningObjective": "Ligar a esperança de Tiago à promessa de Hebreus.",
+    "evidence": [
+      "Tiago 5:8",
+      "Hebreus 10:37"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-05-paciencia-ate-a-vinda-01",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 5:7–8, a paciência pedida tem por base a vinda do Senhor, e não a mera resignação.",
+    "prompt": "Em Tiago 5:7–8, a paciência pedida tem por base a vinda do Senhor, e não a mera resignação.",
+    "cue": "Em Tiago 5:7–8, a paciência pedida tem por base a vinda do Senhor, e não a mera resignação.",
+    "verseRef": "Tiago 5:7–8",
+    "passageText": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas. Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "sejam pacientes até a vinda do Senhor",
+    "feedbackCorrect": "A paciência é esperança: ela vai até a vinda do Senhor, que está próxima.",
+    "feedbackWrong": {
+      "false": "Tiago liga a paciência à vinda do Senhor, e não a um conformismo sem esperança."
+    },
+    "hint": "Veja até quando Tiago manda ser paciente.",
+    "learningObjective": "Avaliar a leitura sustentável da paciência como esperança.",
+    "evidence": [
+      "Tiago 5:7–8"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-05-paciencia-ate-a-vinda-02",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 5:11, toque o trecho que sustenta que o Senhor trata com ternura quem sofre.",
+    "prompt": "Em Tiago 5:11, toque o trecho que sustenta que o Senhor trata com ternura quem sofre.",
+    "cue": "Em Tiago 5:11, toque o trecho que sustenta que o Senhor trata com ternura quem sofre.",
+    "verseRef": "Tiago 5:11",
+    "passageText": "Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terna misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "paciência de Jó"
+      },
+      {
+        "id": "c",
+        "text": "felizes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor é cheio de terna misericórdia e compassivo",
+    "feedbackCorrect": "O Senhor é cheio de terna misericórdia: ele trata com ternura quem sofre.",
+    "feedbackWrong": {
+      "b": "A paciência de Jó é o exemplo, e não o que diz como o Senhor é.",
+      "c": "Felizes são os que perseveraram, e não a descrição do coração do Senhor."
+    },
+    "hint": "Procure como o versículo descreve o coração do Senhor.",
+    "learningObjective": "Sustentar com o texto que o Senhor é misericordioso com quem sofre.",
+    "evidence": [
+      "Tiago 5:11"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-05-paciencia-ate-a-vinda-03",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tiago 5:12 sustenta sobre a palavra dos irmãos?",
+    "prompt": "Que leitura Tiago 5:12 sustenta sobre a palavra dos irmãos?",
+    "cue": "Que leitura Tiago 5:12 sustenta sobre a palavra dos irmãos?",
+    "verseRef": "Tiago 5:12",
+    "passageText": "Mas, acima de tudo, irmãos, não jurem nem pelo céu, nem pela terra, nem façam qualquer outro juramento; que a palavra de vocês seja \"sim\", \"sim\" e \"não\", \"não\", para que não caíam em juízo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A palavra simples e honesta basta para ser confiável"
+      },
+      {
+        "id": "b",
+        "text": "A palavra pode mudar se ninguém estiver ouvindo"
+      },
+      {
+        "id": "c",
+        "text": "Promessas solenes tornam a palavra mais confiável"
+      },
+      {
+        "id": "d",
+        "text": "Jurar pelo céu é permitido em assuntos graves"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "que a palavra de vocês seja \"sim\", \"sim\" e \"não\", \"não\"",
+    "feedbackCorrect": "Sim, sim e não, não: a verdade da palavra dispensa garantias extras.",
+    "feedbackWrong": {
+      "b": "A palavra deve ser a mesma sempre, ou se cai em juízo.",
+      "c": "Tiago manda o contrário: basta o sim ser sim e o não ser não.",
+      "d": "O versículo proíbe jurar pelo céu, pela terra ou por qualquer outra coisa."
+    },
+    "hint": "Veja como o versículo diz que a palavra deve ser.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta sobre a palavra honesta.",
+    "evidence": [
+      "Tiago 5:12"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-05-paciencia-ate-a-vinda-04",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do argumento de Tiago em 5:7–12?",
+    "prompt": "Qual sequência mostra a lógica do argumento de Tiago em 5:7–12?",
+    "cue": "Qual sequência mostra a lógica do argumento de Tiago em 5:7–12?",
+    "verseRef": "Tiago 5:9",
+    "passageText": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. O juiz está às portas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor virá, e o lavrador espera com paciência"
+      },
+      {
+        "id": "b",
+        "text": "Por isso, os irmãos não devem se queixar uns dos outros"
+      },
+      {
+        "id": "c",
+        "text": "E a palavra deles deve ser simples: sim ou não"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não se queixem uns dos outros, para que não sejam julgados",
+    "feedbackCorrect": "A espera paciente molda a conduta entre irmãos e, por fim, a palavra.",
+    "feedbackWrong": {
+      "default": "Siga o argumento: a espera (5:7–8), a conduta entre irmãos (5:9) e a palavra (5:12)."
+    },
+    "hint": "Comece pela espera e termine na palavra dita.",
+    "learningObjective": "Encadear a espera, a conduta e a palavra do trecho.",
+    "evidence": [
+      "Tiago 5:7–8",
+      "Tiago 5:9",
+      "Tiago 5:12"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-05-paciencia-ate-a-vinda-05",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 5:12, que termo nomeia o que os irmãos não devem fazer, nem pelo céu nem pela terra?",
+    "prompt": "Em Tiago 5:12, que termo nomeia o que os irmãos não devem fazer, nem pelo céu nem pela terra?",
+    "cue": "Em Tiago 5:12, que termo nomeia o que os irmãos não devem fazer, nem pelo céu nem pela terra?",
+    "verseRef": "Tiago 5:12",
+    "passageText": "Mas, acima de tudo, irmãos, não jurem nem pelo céu, nem pela terra, nem façam qualquer outro juramento; que a palavra de vocês seja \"sim\", \"sim\" e \"não\", \"não\", para que não caíam em juízo.",
+    "template": "Mas, acima de tudo, irmãos, não jurem nem pelo céu, nem pela terra, nem façam qualquer outro ___; que a palavra de vocês seja \"sim\", \"sim\" e \"não\", \"não\", para que não caíam em juízo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "juramento"
+      },
+      {
+        "id": "b",
+        "text": "pedido"
+      },
+      {
+        "id": "c",
+        "text": "testemunho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nem façam qualquer outro juramento",
+    "feedbackCorrect": "Tiago proíbe o juramento: a palavra simples dispensa garantias extras.",
+    "feedbackWrong": {
+      "b": "Pedir a Deus é bom; o que o versículo proíbe é outra coisa.",
+      "c": "Dar testemunho não é proibido; o termo do versículo é outro."
+    },
+    "hint": "Veja o que o versículo proíbe fazer pelo céu e pela terra.",
+    "learningObjective": "Lembrar o termo que carrega a ordem sobre a palavra honesta.",
+    "evidence": [
+      "Tiago 5:12"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-05-paciencia-ate-a-vinda-06",
+    "trail": "tiago-cap",
+    "section": "tjc-05-paciencia-ate-a-vinda",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 5:11 a Salmos 103:8?",
+    "prompt": "O que liga Tiago 5:11 a Salmos 103:8?",
+    "cue": "O que liga Tiago 5:11 a Salmos 103:8?",
+    "verseRef": "Tiago 5:11",
+    "passageText": "Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo.",
+    "passageA": {
+      "ref": "Tiago 5:11",
+      "text": "Eis que consideramos felizes os que perseveraram firmes. Vocês ouviram da paciência de Jó e viram qual foi o fim que o Senhor lhe deu; porque o Senhor é cheio de terna misericórdia e compassivo."
+    },
+    "passageB": {
+      "ref": "Salmos 103:8",
+      "text": "O Senhor é misericordioso e compassivo; é longânimo e assaz benigno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é misericordioso e compassivo"
+      },
+      {
+        "id": "b",
+        "text": "Deus responde só aos fortes"
+      },
+      {
+        "id": "c",
+        "text": "Deus é indiferente ao sofrimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor é cheio de terna misericórdia e compassivo",
+    "feedbackCorrect": "Tiago ecoa o Salmo: o Senhor é misericordioso e compassivo com os seus.",
+    "feedbackWrong": {
+      "b": "Nenhum dos textos limita a compaixão do Senhor aos fortes.",
+      "c": "Os dois textos dizem o contrário: o Senhor é compassivo."
+    },
+    "hint": "Compare como os dois textos descrevem o Senhor.",
+    "learningObjective": "Ligar a descrição do Senhor em Tiago ao Salmo 103.",
+    "evidence": [
+      "Tiago 5:11",
+      "Salmos 103:8"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-01",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tiago 2:9, fazer acepção de pessoas não é pecado.",
+    "prompt": "Em Tiago 2:9, fazer acepção de pessoas não é pecado.",
+    "cue": "Em Tiago 2:9, fazer acepção de pessoas não é pecado.",
+    "verseRef": "Tiago 2:9",
+    "passageText": "Se, porém, fazeis acepção de pessoas, cometeis pecado, sendo arguidos pela lei como transgressores.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fazeis acepção de pessoas, cometeis pecado",
+    "feedbackCorrect": "O versículo diz que acepção de pessoas é pecado.",
+    "feedbackWrong": {
+      "true": "Releia Tiago 2:9: fazer acepção de pessoas é cometer pecado."
+    },
+    "hint": "Veja o que Tiago chama de pecado no versículo.",
+    "learningObjective": "Observar que acepção de pessoas é pecado.",
+    "evidence": [
+      "Tiago 2:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-02",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+    "prompt": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+    "cue": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "provação"
+      },
+      {
+        "id": "b",
+        "text": "perseverança"
+      },
+      {
+        "id": "c",
+        "text": "confirmada"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "A provação da fé confirmada gera perseverança.",
+    "feedbackWrong": {
+      "a": "A provação é o que gera; ela não é o fruto.",
+      "c": "Confirmada descreve a fé, não o que ela gera."
+    },
+    "hint": "Procure a palavra que fecha o versículo.",
+    "learningObjective": "Identificar o fruto da fé confirmada.",
+    "evidence": [
+      "Tiago 1:3"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-03",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tiago 4:7, o que acontece quando se resiste ao diabo?",
+    "prompt": "Segundo Tiago 4:7, o que acontece quando se resiste ao diabo?",
+    "cue": "Segundo Tiago 4:7, o que acontece quando se resiste ao diabo?",
+    "verseRef": "Tiago 4:7",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele muda de nome"
+      },
+      {
+        "id": "b",
+        "text": "Ele se torna amigo"
+      },
+      {
+        "id": "c",
+        "text": "Ele foge"
+      },
+      {
+        "id": "d",
+        "text": "Ele se aproxima mais"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "resistam ao diabo, e ele fugirá de vós",
+    "feedbackCorrect": "Ao resistir, o diabo foge.",
+    "feedbackWrong": {
+      "a": "O versículo não fala de mudar de nome.",
+      "b": "Não há amizade: o texto fala de resistência e fuga.",
+      "d": "O texto diz que ele foge, não que se aproxima."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar o resultado de resistir ao diabo.",
+    "evidence": [
+      "Tiago 4:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-04",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 1:2 na ordem do texto.",
+    "prompt": "Monte Tiago 1:2 na ordem do texto.",
+    "cue": "Monte Tiago 1:2 na ordem do texto.",
+    "verseRef": "Tiago 1:2",
+    "passageText": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Meus irmãos"
+      },
+      {
+        "id": "b",
+        "text": "considerem como um motivo de grande alegria"
+      },
+      {
+        "id": "c",
+        "text": "o passarem por diversas provações"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "considerem como um motivo de grande alegria o passarem por diversas provações",
+    "feedbackCorrect": "Primeiro o chamado aos irmãos, depois a alegria e, por fim, as provações.",
+    "feedbackWrong": {
+      "default": "Comece por \"Meus irmãos\"; as provações fecham o versículo."
+    },
+    "hint": "O versículo abre com o chamado aos irmãos.",
+    "learningObjective": "Seguir a ordem de Tiago 1:2.",
+    "evidence": [
+      "Tiago 1:2"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-05",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tiago 1:5, o que quem carece deve pedir a Deus?",
+    "prompt": "Em Tiago 1:5, o que quem carece deve pedir a Deus?",
+    "cue": "Em Tiago 1:5, o que quem carece deve pedir a Deus?",
+    "verseRef": "Tiago 1:5",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "template": "E, se algum de vocês carece de ___, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sabedoria"
+      },
+      {
+        "id": "b",
+        "text": "honra"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "carece de sabedoria, peça-a a Deus",
+    "feedbackCorrect": "Quem carece de sabedoria deve pedi-la a Deus.",
+    "feedbackWrong": {
+      "b": "O pedido do versículo não é por honra.",
+      "c": "O pedido do versículo não é por riqueza."
+    },
+    "hint": "Pense no que falta a quem não sabe atravessar a prova.",
+    "learningObjective": "Lembrar o que pedir a Deus em 1:5.",
+    "evidence": [
+      "Tiago 1:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-06",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tiago 5:7 comunica que se liga a este contexto?",
+    "prompt": "O que Tiago 5:7 comunica que se liga a este contexto?",
+    "cue": "O que Tiago 5:7 comunica que se liga a este contexto?",
+    "verseRef": "Tiago 5:7",
+    "passageText": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas.",
+    "passageA": {
+      "ref": "Tiago 5:7",
+      "text": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Travessia revisa prova, acepção, sabedoria, humildade e a espera paciente até a vinda."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Paciência até a vinda"
+      },
+      {
+        "id": "b",
+        "text": "Pressa sem firmeza"
+      },
+      {
+        "id": "c",
+        "text": "Fuga de toda espera"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sejam pacientes até a vinda do Senhor",
+    "feedbackCorrect": "Tiago chama à paciência até a vinda do Senhor.",
+    "feedbackWrong": {
+      "b": "O lavrador e a vinda pedem paciência, não pressa.",
+      "c": "O texto manda esperar, não fugir da espera."
+    },
+    "hint": "Veja até quando os irmãos devem ser pacientes.",
+    "learningObjective": "Ligar o contexto da Travessia à paciência até a vinda.",
+    "evidence": [
+      "Tiago 5:7"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-07",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tiago 2:6, toque a quem os irmãos menosprezaram.",
+    "prompt": "Em Tiago 2:6, toque a quem os irmãos menosprezaram.",
+    "cue": "Em Tiago 2:6, toque a quem os irmãos menosprezaram.",
+    "verseRef": "Tiago 2:6",
+    "passageText": "Entretanto, vós menosprezastes o pobre. Não são os ricos que vos oprimem e não são eles que vos arrastam para os tribunais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "tribunais"
+      },
+      {
+        "id": "b",
+        "text": "ricos"
+      },
+      {
+        "id": "c",
+        "text": "pobre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vós menosprezastes o pobre",
+    "feedbackCorrect": "Eles menosprezaram o pobre.",
+    "feedbackWrong": {
+      "a": "Tribunais são para onde os ricos arrastam, não quem foi menosprezado.",
+      "b": "Os ricos oprimem; não são quem foi menosprezado."
+    },
+    "hint": "Procure quem foi menosprezado no começo do versículo.",
+    "learningObjective": "Identificar quem foi menosprezado na reunião.",
+    "evidence": [
+      "Tiago 2:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-sem-tjc-boss-1-08",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tiago 3:15 na ordem do texto.",
+    "prompt": "Monte Tiago 3:15 na ordem do texto.",
+    "cue": "Monte Tiago 3:15 na ordem do texto.",
+    "verseRef": "Tiago 3:15",
+    "passageText": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Essa sabedoria não vem do alto"
+      },
+      {
+        "id": "b",
+        "text": "antes, é terrena"
+      },
+      {
+        "id": "c",
+        "text": "animal e demoníaca"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Essa sabedoria não vem do alto; antes, é terrena, animal e demoníaca",
+    "feedbackCorrect": "Primeiro a origem negada, depois o contraste e a descrição tripla.",
+    "feedbackWrong": {
+      "default": "Comece pela origem; \"animal e demoníaca\" fecha o versículo."
+    },
+    "hint": "O versículo abre negando a origem.",
+    "learningObjective": "Seguir a ordem que descreve a sabedoria terrena.",
+    "evidence": [
+      "Tiago 3:15"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-01",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tiago 1:6, o pedido a Deus pode vir com hesitar e ainda assim ser pedido com fé.",
+    "prompt": "Em Tiago 1:6, o pedido a Deus pode vir com hesitar e ainda assim ser pedido com fé.",
+    "cue": "Em Tiago 1:6, o pedido a Deus pode vir com hesitar e ainda assim ser pedido com fé.",
+    "verseRef": "Tiago 1:6",
+    "passageText": "Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Peça-a, porém, com fé, sem hesitar",
+    "feedbackCorrect": "O contraste é claro: pedir com fé e sem hesitar.",
+    "feedbackWrong": {
+      "true": "Releia 1:6: o pedido com fé exclui o hesitar."
+    },
+    "hint": "Compare \"com fé\" e \"sem hesitar\".",
+    "learningObjective": "Ver o contraste entre fé e hesitar no pedido.",
+    "evidence": [
+      "Tiago 1:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-02",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 1:6, toque a palavra que marca o contraste no pedido a Deus.",
+    "prompt": "Em Tiago 1:6, toque a palavra que marca o contraste no pedido a Deus.",
+    "cue": "Em Tiago 1:6, toque a palavra que marca o contraste no pedido a Deus.",
+    "verseRef": "Tiago 1:6",
+    "passageText": "Peça-a, porém, com fé, sem hesitar; pois quem duvida é semelhante à onda do mar, levada e agitada pelo vento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "onda"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Peça-a, porém, com fé",
+    "feedbackCorrect": "O \"porém\" marca o contraste: Deus dá, mas o pedido exige fé.",
+    "feedbackWrong": {
+      "a": "\"Onda\" é a imagem de quem duvida, não o marcador.",
+      "b": "\"Pois\" introduz a razão da advertência, não o contraste."
+    },
+    "hint": "Procure a palavra logo após \"Peça-a\".",
+    "learningObjective": "Reconhecer o marcador de contraste no pedido.",
+    "evidence": [
+      "Tiago 1:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-03",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tiago 5:9 relaciona a queixa entre irmãos e o julgamento?",
+    "prompt": "Como Tiago 5:9 relaciona a queixa entre irmãos e o julgamento?",
+    "cue": "Como Tiago 5:9 relaciona a queixa entre irmãos e o julgamento?",
+    "verseRef": "Tiago 5:9",
+    "passageText": "Irmãos, não se queixem uns dos outros, para que não sejam julgados. O juiz está às portas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Queixem só em silêncio, sem risco"
+      },
+      {
+        "id": "b",
+        "text": "Queixem para acelerar o julgamento"
+      },
+      {
+        "id": "c",
+        "text": "Não queixem para não serem julgados"
+      },
+      {
+        "id": "d",
+        "text": "O juiz está longe e não ouve queixas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não se queixem uns dos outros, para que não sejam julgados",
+    "feedbackCorrect": "A finalidade é clara: não queixar para não ser julgado.",
+    "feedbackWrong": {
+      "a": "Não há queixa segura: o risco é ser julgado.",
+      "b": "O texto proíbe a queixa, não a incentiva.",
+      "d": "O juiz está às portas, não longe."
+    },
+    "hint": "Leia a finalidade depois de \"para que\".",
+    "learningObjective": "Relacionar a queixa entre irmãos ao risco de julgamento.",
+    "evidence": [
+      "Tiago 5:9"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-04",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o arco da fé em Tiago 1–3?",
+    "prompt": "Como avança o arco da fé em Tiago 1–3?",
+    "cue": "Como avança o arco da fé em Tiago 1–3?",
+    "verseRef": "Tiago 1:2–3",
+    "passageText": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações. Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A prova gera perseverança e pedido com fé"
+      },
+      {
+        "id": "b",
+        "text": "A fé rejeita acepção e ama o próximo"
+      },
+      {
+        "id": "c",
+        "text": "A sabedoria do alto promove a paz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "Primeiro a prova, depois o amor sem acepção e, por fim, a sabedoria pacífica.",
+    "feedbackWrong": {
+      "default": "Comece pela prova; a sabedoria do alto fecha o arco."
+    },
+    "hint": "Siga a ordem dos capítulos 1, 2 e 3.",
+    "learningObjective": "Compreender o movimento da fé em Tiago 1–3.",
+    "evidence": [
+      "Tiago 1:2–3",
+      "Tiago 2:8–9",
+      "Tiago 3:17–18"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-05",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tiago 1:3, que verbo liga a fé confirmada ao seu fruto?",
+    "prompt": "Em Tiago 1:3, que verbo liga a fé confirmada ao seu fruto?",
+    "cue": "Em Tiago 1:3, que verbo liga a fé confirmada ao seu fruto?",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "template": "Sabendo que a provação da sua fé, uma vez confirmada, ___ perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "impede"
+      },
+      {
+        "id": "b",
+        "text": "gera"
+      },
+      {
+        "id": "c",
+        "text": "atrasa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "O verbo mostra o resultado: a fé confirmada gera perseverança.",
+    "feedbackWrong": {
+      "a": "O texto não diz que a fé impede o fruto.",
+      "c": "O texto não fala de atraso; fala de produção."
+    },
+    "hint": "É o verbo entre a fé confirmada e a perseverança.",
+    "learningObjective": "Lembrar o verbo que marca o resultado da prova.",
+    "evidence": [
+      "Tiago 1:3"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-06",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+    "prompt": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+    "cue": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+    "verseRef": "Tiago 1:3",
+    "passageText": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "passageA": {
+      "ref": "Tiago 1:3",
+      "text": "Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança."
+    },
+    "passageB": {
+      "ref": "Romanos 5:3–4",
+      "text": "E não somente isto, mas também nos gloriamos nas próprias tribulações, sabendo que a tribulação produz perseverança; E a perseverança, experiência; e a experiência, esperança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A prova apaga a esperança"
+      },
+      {
+        "id": "b",
+        "text": "Tribulação produz perseverança"
+      },
+      {
+        "id": "c",
+        "text": "Só o fácil fortalece a fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "Nos dois textos, a tribulação ou prova produz perseverança.",
+    "feedbackWrong": {
+      "a": "Nos dois textos, a prova fortalece, não apaga a esperança.",
+      "c": "Os dois textos tratam da prova, não do que é fácil."
+    },
+    "hint": "Compare o que a tribulação ou prova produz.",
+    "learningObjective": "Relacionar a perseverança em Tiago e em Romanos.",
+    "evidence": [
+      "Tiago 1:3",
+      "Romanos 5:3–4"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-07",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tiago 2:6, toque a palavra que marca a virada contra o desprezo ao pobre.",
+    "prompt": "Em Tiago 2:6, toque a palavra que marca a virada contra o desprezo ao pobre.",
+    "cue": "Em Tiago 2:6, toque a palavra que marca a virada contra o desprezo ao pobre.",
+    "verseRef": "Tiago 2:6",
+    "passageText": "Entretanto, vós menosprezastes o pobre. Não são os ricos que vos oprimem e não são eles que vos arrastam para os tribunais?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entretanto"
+      },
+      {
+        "id": "b",
+        "text": "oprimem"
+      },
+      {
+        "id": "c",
+        "text": "tribunais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Entretanto, vós menosprezastes o pobre",
+    "feedbackCorrect": "\"Entretanto\" marca a virada: Deus escolheu os pobres, mas eles os menosprezaram.",
+    "feedbackWrong": {
+      "b": "\"Oprimem\" descreve a ação dos ricos, não a virada do argumento.",
+      "c": "\"Tribunais\" é o destino, não o marcador da virada."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador que introduz o contraste em 2:6.",
+    "evidence": [
+      "Tiago 2:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-cam-tjc-boss-1-08",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeia a resposta humilde e paciente em Tiago 4–5?",
+    "prompt": "Como se encadeia a resposta humilde e paciente em Tiago 4–5?",
+    "cue": "Como se encadeia a resposta humilde e paciente em Tiago 4–5?",
+    "verseRef": "Tiago 4:7–8",
+    "passageText": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós. Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sujeição a Deus faz o diabo fugir"
+      },
+      {
+        "id": "b",
+        "text": "Humildade perante o Senhor traz exaltação"
+      },
+      {
+        "id": "c",
+        "text": "Paciência espera a vinda do Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Sujeitem-se, portanto, a Deus",
+    "feedbackCorrect": "Primeiro a sujeição, depois a humildade exaltada e, por fim, a paciência.",
+    "feedbackWrong": {
+      "default": "Comece pela sujeição; a paciência até a vinda fecha o arco."
+    },
+    "hint": "Siga a ordem de Tiago 4 e depois 5.",
+    "learningObjective": "Compreender o movimento da humildade à paciência.",
+    "evidence": [
+      "Tiago 4:7–10",
+      "Tiago 5:7–8"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-01",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Tiago 3:13–17, a sabedoria verdadeira se mostra em boas ações e mansidão, e não só em discurso.",
+    "prompt": "Em Tiago 3:13–17, a sabedoria verdadeira se mostra em boas ações e mansidão, e não só em discurso.",
+    "cue": "Em Tiago 3:13–17, a sabedoria verdadeira se mostra em boas ações e mansidão, e não só em discurso.",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "O sábio mostra mansidão por boas ações, não por discurso vazio.",
+    "feedbackWrong": {
+      "false": "Releia 3:13: a sabedoria se mostra em boas ações e mansidão."
+    },
+    "hint": "Veja como o sábio deve \"mostrar\" a sabedoria.",
+    "learningObjective": "Interpretar o que sustenta a sabedoria verdadeira.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-02",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 1:5, toque o trecho que sustenta que Deus dá sabedoria sem repreender.",
+    "prompt": "Em Tiago 1:5, toque o trecho que sustenta que Deus dá sabedoria sem repreender.",
+    "cue": "Em Tiago 1:5, toque o trecho que sustenta que Deus dá sabedoria sem repreender.",
+    "verseRef": "Tiago 1:5",
+    "passageText": "E, se algum de vocês carece de sabedoria, peça-a a Deus, que a todos concede livremente e não censura, e ela lhe será oferecida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carece"
+      },
+      {
+        "id": "b",
+        "text": "livremente"
+      },
+      {
+        "id": "c",
+        "text": "algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "a todos concede livremente e não censura",
+    "feedbackCorrect": "\"Livremente\" sustenta a dádiva generosa, sem censura.",
+    "feedbackWrong": {
+      "a": "\"Carece\" descreve a falta, não o jeito de Deus dar.",
+      "c": "\"Algum\" só introduz a condição, não a generosidade."
+    },
+    "hint": "Procure como Deus concede a todos.",
+    "learningObjective": "Sustentar com o texto a generosidade de Deus ao dar.",
+    "evidence": [
+      "Tiago 1:5"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-03",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o arco de Tiago sustenta sobre a fé verdadeira?",
+    "prompt": "Que leitura o arco de Tiago sustenta sobre a fé verdadeira?",
+    "cue": "Que leitura o arco de Tiago sustenta sobre a fé verdadeira?",
+    "verseRef": "Tiago 2:8–9",
+    "passageText": "Se, porém, vós estais observando a lei real, conforme a Escritura: \"Amarás o teu próximo como a ti mesmo,\" fazeis bem. Se, porém, fazeis acepção de pessoas, cometeis pecado, sendo arguidos pela lei como transgressores.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fé se mostra no caráter e nas relações"
+      },
+      {
+        "id": "b",
+        "text": "Preferir o rico na reunião é só organização"
+      },
+      {
+        "id": "c",
+        "text": "A fé basta como discurso, sem amor"
+      },
+      {
+        "id": "d",
+        "text": "A sabedoria se prova só por eloquência"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Amarás o teu próximo como a ti mesmo",
+    "feedbackCorrect": "A lei real e a rejeição da acepção mostram fé que se vê nas relações.",
+    "feedbackWrong": {
+      "b": "A acepção de pessoas é chamada de pecado.",
+      "c": "Tiago liga fé a amor concreto, não a discurso só.",
+      "d": "A sabedoria do alto se mostra em mansidão e paz."
+    },
+    "hint": "Compare cada opção com a lei real e a acepção.",
+    "learningObjective": "Escolher a leitura que o arco de Tiago sustenta.",
+    "evidence": [
+      "Tiago 2:8–9"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-04",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio bíblico da prova que fortalece?",
+    "prompt": "Qual sequência revela o fio bíblico da prova que fortalece?",
+    "cue": "Qual sequência revela o fio bíblico da prova que fortalece?",
+    "verseRef": "Tiago 1:2–3",
+    "passageText": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações. Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiago pede alegria porque a prova gera perseverança"
+      },
+      {
+        "id": "b",
+        "text": "Paulo glória nas tribulações que produzem perseverança"
+      },
+      {
+        "id": "c",
+        "text": "Pedro diz que a fé provada vale mais que o ouro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "gera perseverança",
+    "feedbackCorrect": "Tiago, Paulo e Pedro ligam a prova à fé que amadurece.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Tiago 1, Romanos 5 e 1 Pedro 1."
+    },
+    "hint": "Parta de Tiago e avance a Paulo e Pedro.",
+    "learningObjective": "Ver a prova como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Tiago 1:2–3",
+      "Romanos 5:3–4",
+      "1 Pedro 1:6–7"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-05",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tiago 3:13, que fruto da sabedoria se mostra nas boas ações?",
+    "prompt": "Em Tiago 3:13, que fruto da sabedoria se mostra nas boas ações?",
+    "cue": "Em Tiago 3:13, que fruto da sabedoria se mostra nas boas ações?",
+    "verseRef": "Tiago 3:13",
+    "passageText": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria.",
+    "template": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a ___ que é fruto da sabedoria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mansidão"
+      },
+      {
+        "id": "b",
+        "text": "inveja"
+      },
+      {
+        "id": "c",
+        "text": "soberba"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a mansidão que é fruto da sabedoria",
+    "feedbackCorrect": "A mansidão é o fruto da sabedoria mostrado em boas ações.",
+    "feedbackWrong": {
+      "b": "Inveja aparece na sabedoria terrena, não no fruto do alto.",
+      "c": "Soberba não é fruto da sabedoria do alto."
+    },
+    "hint": "É o que o sábio deve mostrar por meio das ações.",
+    "learningObjective": "Lembrar o termo que carrega o fruto da sabedoria.",
+    "evidence": [
+      "Tiago 3:13"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-06",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tiago 4:10 a 1 Pedro 5:6?",
+    "prompt": "O que liga Tiago 4:10 a 1 Pedro 5:6?",
+    "cue": "O que liga Tiago 4:10 a 1 Pedro 5:6?",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "passageA": {
+      "ref": "Tiago 4:10",
+      "text": "Humilhem-se na presença do Senhor, e ele os exaltará."
+    },
+    "passageB": {
+      "ref": "1 Pedro 5:6",
+      "text": "Humilhem-se, portanto, sob a poderosa mão de Deus, para que ele, no tempo oportuno, os exalte."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Humilhar-se traz exaltação"
+      },
+      {
+        "id": "b",
+        "text": "Orgulho garante promoção"
+      },
+      {
+        "id": "c",
+        "text": "Deus exalta os soberbos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+    "feedbackCorrect": "Nos dois textos, a humildade perante Deus leva à exaltação.",
+    "feedbackWrong": {
+      "b": "Os dois textos exaltam a humildade, não o orgulho.",
+      "c": "Deus exalta os humildes, não os soberbos."
+    },
+    "hint": "Compare o que Deus faz a quem se humilha.",
+    "learningObjective": "Ligar a humildade de Tiago à de Pedro.",
+    "evidence": [
+      "Tiago 4:10",
+      "1 Pedro 5:6"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-07",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tiago 4:10, toque o trecho que sustenta a promessa a quem se humilha.",
+    "prompt": "Em Tiago 4:10, toque o trecho que sustenta a promessa a quem se humilha.",
+    "cue": "Em Tiago 4:10, toque o trecho que sustenta a promessa a quem se humilha.",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exaltará"
+      },
+      {
+        "id": "b",
+        "text": "Humilhem-se"
+      },
+      {
+        "id": "c",
+        "text": "presença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "e ele os exaltará",
+    "feedbackCorrect": "A promessa é: o Senhor exaltará quem se humilha.",
+    "feedbackWrong": {
+      "b": "\"Humilhem-se\" é o chamado, não a promessa.",
+      "c": "\"Presença\" é o lugar da humilhação, não a promessa."
+    },
+    "hint": "Procure o verbo que fecha o versículo.",
+    "learningObjective": "Sustentar com o texto a promessa da exaltação.",
+    "evidence": [
+      "Tiago 4:10"
+    ]
+  },
+  {
+    "id": "tiago-cap-pro-tjc-boss-1-08",
+    "trail": "tiago-cap",
+    "section": "tjc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio bíblico da humildade exaltada?",
+    "prompt": "Qual sequência revela o fio bíblico da humildade exaltada?",
+    "cue": "Qual sequência revela o fio bíblico da humildade exaltada?",
+    "verseRef": "Tiago 4:10",
+    "passageText": "Humilhem-se na presença do Senhor, e ele os exaltará.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Tiago chama a humilhar-se perante o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Pedro manda humilhar-se sob a mão de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Jesus promete exaltação a quem se humilha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Humilhem-se na presença do Senhor, e ele os exaltará",
+    "feedbackCorrect": "Tiago, Pedro e Jesus ligam humildade e exaltação.",
+    "feedbackWrong": {
+      "default": "Siga a Bíblia: Tiago 4:10, 1 Pedro 5:6 e Mateus 23:12."
+    },
+    "hint": "Parta de Tiago e avance a Pedro e a Jesus.",
+    "learningObjective": "Ver a humildade exaltada como fio bíblico.",
+    "evidence": [
+      "Tiago 4:10",
+      "1 Pedro 5:6",
+      "Mateus 23:12"
+    ]
+  }
+]

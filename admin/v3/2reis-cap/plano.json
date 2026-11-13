@@ -1,0 +1,245 @@
+{
+  "slug": "2reis-cap",
+  "prefix": "r2c",
+  "book": "2 Reis",
+  "chapters": 25,
+  "title": "2 Reis",
+  "description": "2 Reis capítulo a capítulo: Eliseu, Jeú, a queda de Samaria e de Jerusalém.",
+  "icon": "🏛️",
+  "color": "#8E6A5A",
+  "order": 14,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["reis"],
+  "modules": [
+    {
+      "title": "Elias e Eliseu · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "2 Reis 1:9–16",
+          "title": "Fogo do céu",
+          "intro": "O rei manda capitães buscar Elias, e o fogo do céu responde.",
+          "insight": "Há um Deus em Israel: quem despreza o seu profeta encontra juízo.",
+          "objective": "Respeitar o profeta"
+        },
+        {
+          "ref": "2 Reis 2:1–11",
+          "title": "Carro de fogo",
+          "intro": "Eliseu acompanha Elias até o Jordão e pede porção dobrada do espírito.",
+          "insight": "Elias sobe num redemoinho: o Senhor leva o seu servo e continua a obra.",
+          "objective": "Seguir até o fim"
+        },
+        {
+          "ref": "2 Reis 3:9–20",
+          "title": "Água no deserto",
+          "intro": "Três reis sem água buscam Eliseu, e o Senhor promete vales cheios.",
+          "insight": "Sem vento nem chuva visível, o Senhor enche os vales e entrega a vitória.",
+          "objective": "Confiar na provisão"
+        },
+        {
+          "ref": "2 Reis 4:1–7",
+          "title": "O azeite que multiplica",
+          "intro": "Uma viúva de profeta tem dívidas, e Eliseu manda pedir vasilhas vazias.",
+          "insight": "Enquanto houver vasilha, o azeite corre: o Senhor cobre a dívida da viúva.",
+          "objective": "Encher as vasilhas"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Elias e Eliseu",
+        "intro": "Revise o fogo sobre os capitães, a subida de Elias, a água no deserto e o azeite.",
+        "insight": "O Senhor sustenta o seu povo pela palavra dos profetas"
+      }
+    },
+    {
+      "title": "Sinais de Eliseu · cap. 5–8",
+      "scenes": [
+        {
+          "ref": "2 Reis 5:8–14",
+          "title": "Naamã no Jordão",
+          "intro": "Eliseu manda o leproso sírio lavar-se sete vezes no Jordão.",
+          "insight": "A cura vem pela obediência simples: Naamã desce, lava-se e a carne se renova.",
+          "objective": "Obedecer com humildade"
+        },
+        {
+          "ref": "2 Reis 6:15–23",
+          "title": "Carros de fogo",
+          "intro": "O moço de Eliseu teme o exército sírio, até ter os olhos abertos.",
+          "insight": "Mais são os que estão conosco: o Senhor cerca os seus com proteção invisível.",
+          "objective": "Ver o que Deus vê"
+        },
+        {
+          "ref": "2 Reis 7:1–9",
+          "title": "Boas-novas à porta",
+          "intro": "Em meio à fome do cerco, Eliseu anuncia abundância, e quatro leprosos descobrem o acampamento vazio.",
+          "insight": "Não é dia de calar: quem acha livramento precisa anunciar ao povo.",
+          "objective": "Anunciar o livramento"
+        },
+        {
+          "ref": "2 Reis 8:7–15",
+          "title": "Hazael e a lágrima",
+          "intro": "Eliseu chora diante de Hazael, sabendo o mal que ele fará a Israel.",
+          "insight": "O profeta vê o futuro cruel e chora: o Senhor revela, e o coração humano responde.",
+          "objective": "Chorar o mal que vem"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sinais de Eliseu",
+        "intro": "Revise Naamã, os carros de fogo, os leprosos e Hazael.",
+        "insight": "Deus cura, protege, livra e também anuncia juízos duros"
+      }
+    },
+    {
+      "title": "Jeú e Judá · cap. 9–12",
+      "scenes": [
+        {
+          "ref": "2 Reis 9:1–13",
+          "title": "Jeú ungido",
+          "intro": "Um discípulo de Eliseu unge Jeú em segredo e foge.",
+          "insight": "O Senhor levanta Jeú para cumprir o juízo sobre a casa de Acabe.",
+          "objective": "A unção que cumpre juízo"
+        },
+        {
+          "ref": "2 Reis 10:18–28",
+          "title": "Baal destruído",
+          "intro": "Jeú reúne os servos de Baal com um estratagema e acaba com o culto.",
+          "insight": "Jeú elimina Baal de Israel, mas o zelo ainda precisa de um coração íntegro.",
+          "objective": "Derrubar os ídolos"
+        },
+        {
+          "ref": "2 Reis 11:1–12",
+          "title": "Joás escondido",
+          "intro": "Atalia mata a descendência real, mas Joás é escondido no templo.",
+          "insight": "O Senhor guarda a lâmpada de Davi: o menino é ungido enquanto Atalia grita traição.",
+          "objective": "Guardar a linhagem"
+        },
+        {
+          "ref": "2 Reis 12:1–10",
+          "title": "Reparar a casa",
+          "intro": "Joás manda os sacerdotes usar o dinheiro das ofertas para reparar o templo.",
+          "insight": "O rei cuida da casa do Senhor: a restauração começa com responsabilidade.",
+          "objective": "Reparar a casa de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Jeú e Judá",
+        "intro": "Revise a unção de Jeú, a queda de Baal, Joás escondido e o reparo do templo.",
+        "insight": "Deus julga a idolatria e preserva a casa de Davi"
+      }
+    },
+    {
+      "title": "Declínio do norte · cap. 13–17",
+      "scenes": [
+        {
+          "ref": "2 Reis 13:14–21",
+          "title": "Flechas da vitória",
+          "intro": "Eliseu, doente de morte, manda o rei de Israel atirar flechas pela janela.",
+          "insight": "Até no fim, Eliseu aponta vitória: a fé tímida limita o livramento.",
+          "objective": "Não atirar pouco"
+        },
+        {
+          "ref": "2 Reis 14:1–7",
+          "chapters": "14–15",
+          "title": "Amazias em Judá",
+          "intro": "Amazias faz o que é reto, porém não como Davi, e vence Edom.",
+          "insight": "Há retidão parcial: o Senhor ainda dá vitória, mas o coração fica pela metade.",
+          "objective": "Retidão sem reserva"
+        },
+        {
+          "ref": "2 Reis 16:5–12",
+          "title": "O altar de Acaz",
+          "intro": "Acaz busca ajuda da Assíria e copia um altar estrangeiro.",
+          "insight": "Pedir socorro aos ímpios e mudar o culto: Acaz troca a confiança no Senhor.",
+          "objective": "Não copiar ídolos"
+        },
+        {
+          "ref": "2 Reis 17:1–6",
+          "title": "Samaria cai",
+          "intro": "Oseias é o último rei; a Assíria cerca Samaria e leva Israel.",
+          "insight": "Depois de muito aviso, a cidade cai e o povo vai para o exílio.",
+          "objective": "O fim do norte"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Declínio do norte",
+        "intro": "Revise as flechas de Eliseu, Amazias, o altar de Acaz e a queda de Samaria.",
+        "insight": "A desobediência prolongada termina em exílio"
+      }
+    },
+    {
+      "title": "Ezequias · cap. 18–21",
+      "scenes": [
+        {
+          "ref": "2 Reis 18:1–8",
+          "title": "Ezequias confia",
+          "intro": "Ezequias remove os altos, quebra a serpente de bronze e confia no Senhor.",
+          "insight": "Não houve rei como ele em Judá: apegou-se ao Senhor e guardou os mandamentos.",
+          "objective": "Apegar-se ao Senhor"
+        },
+        {
+          "ref": "2 Reis 19:32–37",
+          "title": "O anjo no acampamento",
+          "intro": "O Senhor responde à oração de Ezequias contra a Assíria.",
+          "insight": "O anjo do Senhor fere o acampamento: Senaqueribe volta e cai em sua terra.",
+          "objective": "Deus defende Sião"
+        },
+        {
+          "ref": "2 Reis 20:1–11",
+          "title": "Quinze anos a mais",
+          "intro": "Ezequias adoece de morte, ora, e o Senhor acrescenta anos à sua vida.",
+          "insight": "O Senhor ouve a oração e confirma o sinal com a sombra que volta atrás.",
+          "objective": "Orar na doença"
+        },
+        {
+          "ref": "2 Reis 21:1–9",
+          "title": "Manassés desvia",
+          "intro": "Manassés reconstrói os altos e faz Judá pecar mais que as nações.",
+          "insight": "Um rei pode desfazer reformas: idolatria volta e o Senhor anuncia juízo.",
+          "objective": "Não desfazer o bem"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Ezequias",
+        "intro": "Revise a confiança de Ezequias, o livramento, a doença e o desvio de Manassés.",
+        "insight": "Fidelidade traz livramento; a idolatria seguinte prepara a queda"
+      }
+    },
+    {
+      "title": "Queda de Jerusalém · cap. 22–25",
+      "scenes": [
+        {
+          "ref": "2 Reis 22:8–13",
+          "title": "O livro achado",
+          "intro": "O sacerdote acha o livro da lei, e o rei rasga as vestes ao ouvi-lo.",
+          "insight": "A palavra reencontrada abala o rei: Judá precisa ouvir o que estava perdido.",
+          "objective": "Ouvir a lei de novo"
+        },
+        {
+          "ref": "2 Reis 23:1–8",
+          "title": "Josias limpa a terra",
+          "intro": "Josias lê a aliança perante o povo e remove os ídolos de Judá.",
+          "insight": "Reforma começa na palavra pública e segue até os altos e os ídolos.",
+          "objective": "Renovar a aliança"
+        },
+        {
+          "ref": "2 Reis 24:10–17",
+          "title": "A primeira leva",
+          "intro": "Nabucodonosor cerca Jerusalém e leva cativos e utensílios do templo.",
+          "insight": "O juízo chega em etapas: o rei, os nobres e os tesouros saem da cidade.",
+          "objective": "O juízo começa"
+        },
+        {
+          "ref": "2 Reis 25:1–12",
+          "title": "Jerusalém cai",
+          "intro": "Após longo cerco, a cidade é tomada, o templo queima, e o povo vai ao exílio.",
+          "insight": "A cidade santa cai: sem ouvir o Senhor, nem muro nem templo seguram.",
+          "objective": "A queda de Judá"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Queda de Jerusalém",
+        "intro": "Revise o livro da lei, a reforma de Josias, a primeira leva e a queda final.",
+        "insight": "A palavra pode renovar, mas a rebeldia persistente leva ao exílio"
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "slug": "ageu-cap",
+  "title": "Ageu",
+  "description": "Ageu capítulo a capítulo: priorizar a casa do Senhor.",
+  "icon": "🏛️",
+  "color": "#C4A040",
+  "order": 44,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Reconstruir a casa · cap. 1–2",
+      "icon": "zap",
+      "section": "Ageu",
+      "missions": [
+        {
+          "slug": "agc-01-tempo-de-construir",
+          "title": "Tempo de construir",
+          "subtitle": "Ageu 1:1–11",
+          "intro": "O povo diz que ainda não é tempo de reedificar a casa, e o Senhor responde.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ageu 1:1–11",
+          "hookVerse": "No segundo ano do rei Dario, no sexto mês, no primeiro dia do mês, veio a palavra do SENHOR por intermédio do profeta Ageu a Zorobabel, filho de Salatiel, governador de Judá, e a Josué, filho de Jozadaque, o sumo sacerdote, dizendo: Assim fala o Senhor dos Exércitos: Este povo diz: Não veio ainda o tempo, o tempo em que a Casa do Senhor deve ser edificada.",
+          "hookNote": "Enquanto cada um corre para a própria casa, a casa do Senhor fica em ruínas.",
+          "centralInsight": "Enquanto cada um corre para a própria casa, a casa do Senhor fica em ruínas.",
+          "objective": "Priorizar a casa do Senhor"
+        },
+        {
+          "slug": "agc-02-do-dia-em-diante",
+          "title": "Do dia em diante",
+          "subtitle": "Ageu 2:10–19",
+          "intro": "Ageu pergunta aos sacerdotes sobre o puro e o impuro e anuncia bênção.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Ageu 2:10–19",
+          "hookVerse": "No vigésimo quarto dia do nono mês, no segundo ano de Dario, a palavra do Senhor veio por intermédio do profeta Ageu, dizendo: Assim diz o SENHOR dos Exércitos: Pergunte agora aos sacerdotes a respeito da lei, dizendo:",
+          "hookNote": "A partir do dia em que o alicerce é posto, o Senhor promete abençoar.",
+          "centralInsight": "A partir do dia em que o alicerce é posto, o Senhor promete abençoar.",
+          "objective": "Obediência que traz bênção"
+        },
+        {
+          "slug": "agc-boss-1",
+          "title": "Travessia: Reconstruir a casa",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o chamado a priorizar o templo e a bênção que começa no alicerce.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Reconstruir a casa",
+          "hookVerse": "Revise o chamado a priorizar o templo e a bênção que começa no alicerce.",
+          "hookNote": "Revise o chamado a priorizar o templo e a bênção que começa no alicerce.",
+          "centralInsight": "Quem põe a casa do Senhor em primeiro lugar encontra a bênção dele",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

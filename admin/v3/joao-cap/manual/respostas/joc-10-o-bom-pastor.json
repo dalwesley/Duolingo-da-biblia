@@ -1,0 +1,498 @@
+{
+  "study": {
+    "passageRef": "João 10:11–16",
+    "passages": [
+      { "ref": "João 10:11–16" },
+      { "ref": "João 10:17–18" }
+    ],
+    "context": "Jesus vinha falando da porta das ovelhas. Neste trecho ele se compara a um pastor e descreve o que faz por elas, ao lado de quem está ali só por pagamento.",
+    "keyword": "bom Pastor",
+    "keywordGloss": "É o nome com que Jesus se apresenta: pastor que cuida de verdade, e não quem trabalha só por pagamento.",
+    "focusQuestion": "Quando cuidar de alguém custa caro, você permanece ou procura uma saída?",
+    "reflectionPrompts": [
+      "A vida pelas ovelhas",
+      "Quem foge no perigo",
+      "Um só rebanho"
+    ],
+    "facts": [
+      {
+        "text": "Jesus diz que é o bom Pastor.",
+        "evidenceRef": "João 10:11",
+        "evidenceSpan": "Eu sou o bom Pastor"
+      },
+      {
+        "text": "O bom Pastor entrega a vida pelas ovelhas.",
+        "evidenceRef": "João 10:11",
+        "evidenceSpan": "entrega a sua vida pelas ovelhas"
+      },
+      {
+        "text": "O mercenário abandona as ovelhas e foge.",
+        "evidenceRef": "João 10:12",
+        "evidenceSpan": "abandona as ovelhas e foge"
+      },
+      {
+        "text": "Jesus conhece as suas ovelhas, e elas o conhecem.",
+        "evidenceRef": "João 10:14",
+        "evidenceSpan": "conheço as minhas ovelhas, e elas me conhecem"
+      },
+      {
+        "text": "Jesus tem outras ovelhas fora deste aprisco.",
+        "evidenceRef": "João 10:16",
+        "evidenceSpan": "outras ovelhas, que não pertencem a este aprisco"
+      },
+      {
+        "text": "Ninguém tira a vida de Jesus; ele a dá espontaneamente.",
+        "evidenceRef": "João 10:18",
+        "evidenceSpan": "Ninguém a tira de mim; pelo contrário, eu espontaneamente a dou de mim mesmo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "bom Pastor",
+        "gloss": "O nome com que Jesus se apresenta neste trecho, distinto de quem não é pastor."
+      },
+      {
+        "term": "mercenário",
+        "gloss": "Quem não é pastor, não tem as ovelhas como suas e foge quando o lobo chega."
+      },
+      {
+        "term": "espontaneamente",
+        "gloss": "Sem coação: Jesus entrega a vida por decisão própria, e ninguém a tira dele."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Pastor se apresenta e entrega a vida",
+        "evidenceRef": "João 10:11"
+      },
+      {
+        "label": "O mercenário vê o perigo e sai",
+        "evidenceRef": "João 10:12"
+      },
+      {
+        "label": "As ovelhas ficam nas mãos do lobo",
+        "evidenceRef": "João 10:12"
+      },
+      {
+        "label": "A vida dada volta por autoridade",
+        "evidenceRef": "João 10:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O bom Pastor entrega a vida; o mercenário, ao ver o lobo, abandona as ovelhas e foge.",
+        "marker": "Mas",
+        "evidenceRef": "João 10:12"
+      },
+      {
+        "kind": "causa",
+        "text": "O mercenário foge porque não se preocupa com as ovelhas.",
+        "marker": "pois",
+        "evidenceRef": "João 10:13"
+      },
+      {
+        "kind": "propósito",
+        "text": "Jesus dá a vida para a reassumir, e não para perdê-la de vez.",
+        "marker": "para",
+        "evidenceRef": "João 10:17"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 15:13", "bridge": "Amor que entrega a vida" },
+      { "ref": "Hebreus 13:20", "bridge": "Pastor trazido dentre os mortos" },
+      { "ref": "Ezequiel 34:23", "bridge": "Um só pastor prometido" }
+    ],
+    "misreadings": [
+      {
+        "text": "Alguém tira a vida de Jesus contra a vontade dele.",
+        "why": "Ele diz que ninguém a tira e que a dá espontaneamente, de si mesmo."
+      },
+      {
+        "text": "Jesus entrega a vida e não tem como retomá-la.",
+        "why": "Ele dá a vida para a reassumir e declara ter poder para reavê-la."
+      },
+      {
+        "text": "O Pai ama Jesus porque ele evita entregar a vida.",
+        "why": "O Pai o ama porque ele dá a vida para a reassumir, não porque recua."
+      }
+    ],
+    "centralInsight": "O bom pastor conhece as ovelhas e dá a vida por elas.",
+    "anchorQuestion": "O que o bom Pastor faz pelas ovelhas em João 10:11?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 10:11, o bom Pastor entrega a sua vida pelas ovelhas.",
+      "verseRef": "João 10:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "entrega a sua vida pelas ovelhas",
+      "feedbackCorrect": "O versículo diz que o bom Pastor entrega a sua vida pelas ovelhas.",
+      "feedbackWrong": {
+        "false": "A frase está no versículo: ele entrega a vida pelas ovelhas."
+      },
+      "hint": "Olhe o que o bom Pastor faz no fim do versículo.",
+      "learningObjective": "Observar que o bom Pastor entrega a vida pelas ovelhas.",
+      "evidence": ["João 10:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 10:12, toque quem abandona as ovelhas e foge.",
+      "verseRef": "João 10:12",
+      "options": [
+        { "id": "a", "text": "o lobo" },
+        { "id": "b", "text": "o mercenário" },
+        { "id": "c", "text": "as ovelhas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "abandona as ovelhas e foge",
+      "feedbackCorrect": "Quem abandona as ovelhas e foge é o mercenário.",
+      "feedbackWrong": {
+        "a": "O lobo arrebata e dispersa; quem foge é outro.",
+        "c": "As ovelhas são deixadas; quem foge está no início."
+      },
+      "hint": "Procure quem vê o lobo e sai.",
+      "learningObjective": "Identificar quem abandona as ovelhas diante do lobo.",
+      "evidence": ["João 10:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 10:14, o que Jesus diz das suas ovelhas?",
+      "verseRef": "João 10:14",
+      "options": [
+        { "id": "a", "text": "Ele as conhece, e elas o conhecem" },
+        { "id": "b", "text": "Elas ainda não ouviram a voz dele" },
+        { "id": "c", "text": "Elas pertencem ao mercenário" },
+        { "id": "d", "text": "Elas ficam fora deste aprisco" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conheço as minhas ovelhas, e elas me conhecem",
+      "feedbackCorrect": "Ele conhece as suas ovelhas, e elas também o conhecem.",
+      "feedbackWrong": {
+        "b": "Quem ainda vai ouvir a voz são as outras ovelhas, não estas.",
+        "c": "As ovelhas não pertencem ao mercenário; Jesus as chama de suas.",
+        "d": "Fora deste aprisco estão outras ovelhas; estas ele já conhece."
+      },
+      "hint": "Leia a frase depois do ponto e vírgula.",
+      "learningObjective": "Observar o conhecimento mútuo entre Jesus e as ovelhas.",
+      "evidence": ["João 10:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 10:16 na ordem do texto.",
+      "verseRef": "João 10:16",
+      "options": [
+        { "id": "a", "text": "Ainda tenho outras ovelhas, que não pertencem a este aprisco" },
+        { "id": "b", "text": "é necessário que eu as conduza" },
+        { "id": "c", "text": "haverá um só rebanho e um só Pastor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ainda tenho outras ovelhas",
+      "feedbackCorrect": "A ordem segue o versículo: outras ovelhas, a condução e um só rebanho.",
+      "feedbackWrong": {
+        "default": "Comece pelas outras ovelhas; o um só rebanho fecha o versículo."
+      },
+      "hint": "A primeira frase fala de outras ovelhas.",
+      "learningObjective": "Reconhecer a sequência de João 10:16.",
+      "evidence": ["João 10:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 10:11, o que o bom Pastor entrega pelas ovelhas?",
+      "verseRef": "João 10:11",
+      "options": [
+        { "id": "a", "text": "voz" },
+        { "id": "b", "text": "casa" },
+        { "id": "c", "text": "vida" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "entrega a sua vida pelas ovelhas",
+      "feedbackCorrect": "Ele entrega a sua vida: é isso que o bom Pastor dá pelas ovelhas.",
+      "feedbackWrong": {
+        "a": "Voz caberia na frase, mas o versículo nomeia outra coisa.",
+        "b": "Casa caberia na gramática. O texto fala do que ele entrega de si."
+      },
+      "hint": "Olhe o substantivo logo depois de sua.",
+      "learningObjective": "Lembrar o que o bom Pastor entrega pelas ovelhas.",
+      "evidence": ["João 10:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 10:15 comunica que se liga a este contexto?",
+      "verseRef": "João 10:15",
+      "passageA": { "ref": "João 10:15" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem é pastor de verdade não abandona as ovelhas no perigo."
+      },
+      "options": [
+        { "id": "a", "text": "O pastor foge do perigo" },
+        { "id": "b", "text": "Ele entrega a vida" },
+        { "id": "c", "text": "As ovelhas salvam o pastor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "dou a minha vida pelas ovelhas",
+      "feedbackCorrect": "Entregar a vida é o cuidado que não abandona as ovelhas no perigo.",
+      "feedbackWrong": {
+        "a": "Quem foge é o mercenário; o bom Pastor entrega a vida.",
+        "c": "As ovelhas não salvam o pastor; ele é quem entrega a vida por elas."
+      },
+      "hint": "Veja o que ele faz pelas ovelhas no fim do versículo.",
+      "learningObjective": "Ligar a vida entregue ao cuidado que não abandona as ovelhas.",
+      "evidence": ["João 10:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 10:12–13, o mercenário foge porque o lobo é mais forte do que ele.",
+      "verseRef": "João 10:12–13",
+      "correctOptionId": "false",
+      "evidenceSpan": "não se preocupa com as ovelhas",
+      "feedbackCorrect": "O motivo declarado é outro: ele é mercenário e não se preocupa com as ovelhas.",
+      "feedbackWrong": {
+        "true": "O texto não fala de força; diz que ele não se preocupa com as ovelhas."
+      },
+      "hint": "Olhe a explicação que João 10:13 dá para a fuga.",
+      "learningObjective": "Compreender a causa que o texto dá para a fuga do mercenário.",
+      "evidence": ["João 10:12–13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 10:12, toque a palavra que marca o contraste com o bom Pastor.",
+      "verseRef": "João 10:12",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "então" },
+        { "id": "c", "text": "quem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas o mercenário",
+      "feedbackCorrect": "Mas abre o contraste: o mercenário não age como o bom Pastor.",
+      "feedbackWrong": {
+        "b": "Então marca o que o lobo faz depois, não o contraste inicial.",
+        "c": "Quem só liga a frase; a marca do contraste é a primeira palavra."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste entre pastor e mercenário.",
+      "evidence": ["João 10:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como João 10:12 se relaciona com o pastor de João 10:11?",
+      "verseRef": "João 10:11–12",
+      "options": [
+        { "id": "a", "text": "Apresenta o lobo como dono das ovelhas" },
+        { "id": "b", "text": "Repete a mesma ação do bom Pastor" },
+        { "id": "c", "text": "Contrasta quem entrega a vida com quem foge" },
+        { "id": "d", "text": "Descreve o salário combinado com o mercenário" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "abandona as ovelhas e foge",
+      "feedbackCorrect": "O Mas separa os dois: um entrega a vida, o outro abandona e foge.",
+      "feedbackWrong": {
+        "a": "O lobo arrebata as ovelhas; o texto não o chama de dono.",
+        "b": "O mercenário foge; isso é o oposto do que o bom Pastor faz.",
+        "d": "O versículo não descreve salário; descreve a fuga diante do lobo."
+      },
+      "hint": "Repare na palavra que abre João 10:12.",
+      "learningObjective": "Relacionar a entrega da vida com a fuga do mercenário.",
+      "evidence": ["João 10:11–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em João 10:11–12?",
+      "verseRef": "João 10:11–12",
+      "options": [
+        { "id": "a", "text": "O Pastor se apresenta e entrega a vida" },
+        { "id": "b", "text": "O mercenário vê o perigo e sai" },
+        { "id": "c", "text": "As ovelhas ficam nas mãos do lobo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o lobo as arrebata e as dispersa",
+      "feedbackCorrect": "Primeiro a entrega da vida, depois a fuga, e então o lobo age.",
+      "feedbackWrong": {
+        "default": "A apresentação vem antes; a fuga fica no meio e o lobo age no fim."
+      },
+      "hint": "O lobo só entra em cena por último.",
+      "learningObjective": "Compreender o movimento do pastor fiel ao ataque do lobo.",
+      "evidence": ["João 10:11–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 10:13, que palavra apresenta o motivo da fuga?",
+      "verseRef": "João 10:13",
+      "options": [
+        { "id": "a", "text": "quando" },
+        { "id": "b", "text": "pois" },
+        { "id": "c", "text": "porque" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pois é mercenário",
+      "feedbackCorrect": "Pois dá o motivo: ele é mercenário e não se preocupa com as ovelhas.",
+      "feedbackWrong": {
+        "a": "Quando marcaria tempo; aqui o texto explica a causa da fuga.",
+        "c": "Porque também daria motivo, mas a palavra do versículo é outra."
+      },
+      "hint": "É a palavra curta logo após a vírgula.",
+      "learningObjective": "Reconhecer a palavra que apresenta a causa da fuga.",
+      "evidence": ["João 10:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 10:11 a João 15:13?",
+      "verseRef": "João 10:11",
+      "passageA": { "ref": "João 10:11" },
+      "passageB": { "ref": "João 15:13" },
+      "options": [
+        { "id": "a", "text": "Fuga diante do lobo" },
+        { "id": "b", "text": "Pagamento pelo serviço" },
+        { "id": "c", "text": "Amor que entrega a vida" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "entrega a sua vida pelas ovelhas",
+      "feedbackCorrect": "Nos dois textos, entregar a vida é o sinal do amor maior.",
+      "feedbackWrong": {
+        "a": "A fuga é do mercenário; o laço entre os textos é a vida entregue.",
+        "b": "Nenhum dos dois fala de pagamento; falam de entregar a vida."
+      },
+      "hint": "Compare o que é dado nos dois textos.",
+      "learningObjective": "Relacionar a vida entregue pelo pastor ao amor que dá a vida.",
+      "evidence": ["João 10:11", "João 15:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 10:17, o Pai ama Jesus porque ele dá a vida para a reassumir.",
+      "verseRef": "João 10:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Pai me ama, porque eu dou a minha vida para a reassumir",
+      "feedbackCorrect": "O Pai o ama porque ele dá a vida para a reassumir, não por outro motivo.",
+      "feedbackWrong": {
+        "false": "O versículo liga o amor do Pai à vida que Jesus dá para reassumir."
+      },
+      "hint": "Olhe o motivo declarado depois da vírgula.",
+      "learningObjective": "Interpretar o amor do Pai como resposta à vida que Jesus entrega.",
+      "evidence": ["João 10:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 10:18, toque o trecho que mostra Jesus retomando a vida entregue.",
+      "verseRef": "João 10:18",
+      "options": [
+        { "id": "a", "text": "Ninguém" },
+        { "id": "b", "text": "reavê-la" },
+        { "id": "c", "text": "meu Pai" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "poder para reavê-la",
+      "feedbackCorrect": "Reavê-la é o poder de tomar de novo a vida que ele entregou.",
+      "feedbackWrong": {
+        "a": "Ninguém a tira: isso nega que outro a arranque, não que ele a retome.",
+        "c": "O Pai dá o mandamento; o poder de retomar a vida está antes."
+      },
+      "hint": "Procure o verbo no fim da frase sobre o poder.",
+      "learningObjective": "Sustentar com o texto que Jesus pode retomar a vida entregue.",
+      "evidence": ["João 10:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 10:17–18 sustenta sobre a vida que Jesus entrega?",
+      "verseRef": "João 10:17–18",
+      "options": [
+        { "id": "a", "text": "Alguém a tira dele contra a sua vontade" },
+        { "id": "b", "text": "Ele a dá por vontade própria e pode retomá-la" },
+        { "id": "c", "text": "Ele a entrega e não tem como retomá-la" },
+        { "id": "d", "text": "O Pai o ama porque ele evita essa entrega" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu espontaneamente a dou de mim mesmo",
+      "feedbackCorrect": "Ele a dá de si mesmo e tem poder para reavê-la; ninguém a tira.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: ninguém a tira; ele a dá de si mesmo.",
+        "c": "Ele dá a vida para a reassumir e tem poder para reavê-la.",
+        "d": "O Pai o ama porque ele dá a vida, não porque evita a morte."
+      },
+      "hint": "Veja se a entrega é forçada e se ela tem volta.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a vida entregue.",
+      "evidence": ["João 10:17–18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual a lógica da vida entregue em João 10:17–18?",
+      "verseRef": "João 10:17–18",
+      "options": [
+        { "id": "a", "text": "Jesus dá a vida para reassumi-la" },
+        { "id": "b", "text": "Ninguém a arranca e ele a oferece" },
+        { "id": "c", "text": "Ele pode entregar e também reaver" },
+        { "id": "d", "text": "Esse caminho é ordem do Pai" }
+      ],
+      "correctOrder": ["a", "b", "c", "d"],
+      "evidenceSpan": "eu dou a minha vida para a reassumir",
+      "feedbackCorrect": "Ele dá a vida, ninguém a tira, ele pode reavê-la, e o Pai ordena.",
+      "feedbackWrong": {
+        "default": "Siga o texto: a entrega, a liberdade, o poder de reaver e o Pai."
+      },
+      "hint": "O mandamento do Pai fecha o trecho.",
+      "learningObjective": "Acompanhar a lógica da vida entregue e reassumida.",
+      "evidence": ["João 10:17–18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 10:18, de que modo Jesus diz que entrega a vida?",
+      "verseRef": "João 10:18",
+      "options": [
+        { "id": "a", "text": "agora" },
+        { "id": "b", "text": "também" },
+        { "id": "c", "text": "espontaneamente" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "eu espontaneamente a dou de mim mesmo",
+      "feedbackCorrect": "Espontaneamente: a entrega nasce dele, e ninguém a arranca.",
+      "feedbackWrong": {
+        "a": "Agora marcaria o momento; o texto fala do modo livre da entrega.",
+        "b": "Também somaria outra ação; o advérbio do versículo é outro."
+      },
+      "hint": "É o advérbio colocado entre eu e a dou.",
+      "learningObjective": "Lembrar o termo que mostra a entrega livre da vida.",
+      "evidence": ["João 10:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 10:17 a Hebreus 13:20?",
+      "verseRef": "João 10:17",
+      "passageA": { "ref": "João 10:17" },
+      "passageB": { "ref": "Hebreus 13:20" },
+      "options": [
+        { "id": "a", "text": "O Pastor volta a viver" },
+        { "id": "b", "text": "Ovelhas sem nenhum pastor" },
+        { "id": "c", "text": "Fuga que salva o rebanho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dou a minha vida para a reassumir",
+      "feedbackCorrect": "Ele dá a vida para reassumi-la; Hebreus fala do Pastor trazido da morte.",
+      "feedbackWrong": {
+        "b": "Os dois textos apresentam um Pastor, não um rebanho abandonado.",
+        "c": "A fuga não liga os textos; o laço é a vida que o Pastor retoma."
+      },
+      "hint": "Veja o que acontece com a vida que ele dá.",
+      "learningObjective": "Ligar a vida reassumida ao Pastor trazido da morte.",
+      "evidence": ["João 10:17", "Hebreus 13:20"]
+    }
+  ]
+}

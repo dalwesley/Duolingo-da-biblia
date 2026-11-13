@@ -1,0 +1,54 @@
+{
+  "slug": "jonas-cap",
+  "prefix": "jnc",
+  "book": "Jonas",
+  "chapters": 4,
+  "title": "Jonas",
+  "description": "Jonas capítulo a capítulo: a misericórdia do Senhor que alcança até Nínive.",
+  "icon": "🐋",
+  "color": "#5B8FA8",
+  "order": 39,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": ["jonas"],
+  "modules": [
+    {
+      "title": "Fuga e misericórdia · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Jonas 1:7–16",
+          "title": "A sorte cai sobre Jonas",
+          "intro": "No meio da tempestade, os marinheiros descobrem que Jonas foge do Senhor.",
+          "insight": "Fugir do Senhor põe outros em risco, e até pagãos temem o Deus de Jonas.",
+          "objective": "Não fugir do Senhor"
+        },
+        {
+          "ref": "Jonas 2:1–10",
+          "title": "Oração no peixe",
+          "intro": "Do ventre do peixe, Jonas ora ao Senhor e lembra o templo santo.",
+          "insight": "Na angústia, Jonas clama: a salvação vem do Senhor.",
+          "objective": "Clamar na angústia"
+        },
+        {
+          "ref": "Jonas 3:1–10",
+          "title": "Nínive se arrepende",
+          "intro": "Jonas prega, e a cidade inteira, do rei ao povo, se volta do seu mau caminho.",
+          "insight": "Quando o povo se arrepende, Deus se arrepende do mal que anunciara.",
+          "objective": "Arrependimento que Deus ouve"
+        },
+        {
+          "ref": "Jonas 4:1–11",
+          "title": "A planta e a cidade",
+          "intro": "Jonas se ira com a misericórdia de Deus, e o Senhor usa uma planta para ensinar.",
+          "insight": "O Senhor tem compaixão de uma grande cidade; Jonas precisa aprender a mesma misericórdia.",
+          "objective": "Compartilhar a misericórdia de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fuga e misericórdia",
+        "intro": "Revise a fuga, a oração, o arrependimento de Nínive e a planta.",
+        "insight": "A misericórdia de Deus é maior do que a nossa vontade de fugir"
+      }
+    }
+  ]
+}

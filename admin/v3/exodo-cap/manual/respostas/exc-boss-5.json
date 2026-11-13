@@ -1,0 +1,926 @@
+{
+  "study": {
+    "passageRef": "Êxodo 21:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 21:1–10"
+      },
+      {
+        "ref": "Êxodo 22:21–27"
+      },
+      {
+        "ref": "Êxodo 23:1–9"
+      },
+      {
+        "ref": "Êxodo 24:3–11"
+      }
+    ],
+    "context": "Esta Travessia revisa a dignidade do servo, a proteção do fraco, a justiça limpa e o sangue da aliança.",
+    "keyword": "Aliança",
+    "keywordGloss": "Pacto que pede justiça e se sela com sangue.",
+    "focusQuestion": "Onde a aliança com o Senhor está pedindo justiça concreta de você?",
+    "reflectionPrompts": [
+      "Servo e liberdade",
+      "Clamor do fraco",
+      "Sangue da aliança"
+    ],
+    "facts": [
+      {
+        "text": "O escravo hebreu sai livre no sétimo ano.",
+        "evidenceRef": "Êxodo 21:2",
+        "evidenceSpan": "no sétimo ano, ele sairá livre"
+      },
+      {
+        "text": "Não se deve oprimir o forasteiro.",
+        "evidenceRef": "Êxodo 22:21",
+        "evidenceSpan": "Não afligirás nem oprimirás o forasteiro"
+      },
+      {
+        "text": "Não se deve seguir a multidão para o mal.",
+        "evidenceRef": "Êxodo 23:2",
+        "evidenceSpan": "Não seguirás a multidão para praticar o mal"
+      },
+      {
+        "text": "Moisés chama o sangue aspergido de sangue da aliança.",
+        "evidenceRef": "Êxodo 24:8",
+        "evidenceSpan": "Eis aqui o sangue da aliança"
+      },
+      {
+        "text": "Eles viram a Deus e comeram e beberam.",
+        "evidenceRef": "Êxodo 24:11",
+        "evidenceSpan": "eles viram a Deus e comeram e beberam"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "livre",
+        "gloss": "Saída sem custo no sétimo ano."
+      },
+      {
+        "term": "suborno",
+        "gloss": "Presente que cega e perverte a justiça."
+      },
+      {
+        "term": "aliança",
+        "gloss": "Pacto selado com sangue."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Servo com limite e dignidade",
+        "evidenceRef": "Êxodo 21:1–10"
+      },
+      {
+        "label": "Proteção do forasteiro e do fraco",
+        "evidenceRef": "Êxodo 22:21–27"
+      },
+      {
+        "label": "Justiça acima da maioria",
+        "evidenceRef": "Êxodo 23:1–9"
+      },
+      {
+        "label": "Sangue da aliança e comunhão",
+        "evidenceRef": "Êxodo 24:3–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Serve seis anos, mas no sétimo sai livre.",
+        "marker": "mas",
+        "evidenceRef": "Êxodo 21:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Não oprimir o forasteiro, pois foram forasteiros no Egito.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 22:21"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deus não estende a mão; porém eles veem e comem.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 24:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 9:19–20",
+        "bridge": "Sangue da aliança"
+      },
+      {
+        "ref": "Mateus 26:28",
+        "bridge": "Novo sangue da aliança"
+      },
+      {
+        "ref": "Tiago 1:27",
+        "bridge": "Órfãos e viúvas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A maioria define o que é justo.",
+        "why": "É proibido seguir a multidão no mal."
+      },
+      {
+        "text": "Oprimir o fraco não tem resposta divina.",
+        "why": "Deus ouve o clamor e sua ira se acende."
+      },
+      {
+        "text": "A aliança foi só palavras, sem sangue.",
+        "why": "Moisés asperge e nomeia o sangue da aliança."
+      }
+    ],
+    "centralInsight": "A aliança pede justiça e compromisso com o Senhor",
+    "anchorQuestion": "O que Moisés chamou o sangue aspergido sobre o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O escravo hebreu servirá seis anos e no sétimo sairá livre.",
+      "verseRef": "Êxodo 21:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "servirá por seis anos; mas, no sétimo ano, ele sairá livre",
+      "feedbackCorrect": "Seis anos de serviço; liberdade no sétimo.",
+      "feedbackWrong": {
+        "false": "Releia: no sétimo ano, ele sairá livre."
+      },
+      "hint": "Veja os anos e a saída.",
+      "learningObjective": "Observar o limite da servidão.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 21:2, toque a palavra da saída no sétimo ano.",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "livre"
+        },
+        {
+          "id": "b",
+          "text": "hebreu"
+        },
+        {
+          "id": "c",
+          "text": "anos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "Ele sai livre sem custo.",
+      "feedbackWrong": {
+        "b": "Hebreu identifica; a saída é livre.",
+        "c": "Anos medem o tempo; a palavra é livre."
+      },
+      "hint": "Veja o adjetivo da saída.",
+      "learningObjective": "Identificar a liberdade.",
+      "evidence": [
+        "Êxodo 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 22:22, a quem não se deve afligir?",
+      "verseRef": "Êxodo 22:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "A viúva e o órfão"
+        },
+        {
+          "id": "b",
+          "text": "Só o rei"
+        },
+        {
+          "id": "c",
+          "text": "Os soldados"
+        },
+        {
+          "id": "d",
+          "text": "Os mercadores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A viúva e o órfão não afligirás",
+      "feedbackCorrect": "Viúva e órfão estão protegidos.",
+      "feedbackWrong": {
+        "b": "Não é só o rei.",
+        "c": "O texto fala de viúva e órfão.",
+        "d": "O alvo são os fracos."
+      },
+      "hint": "Leia quem não afligirás.",
+      "learningObjective": "Observar a proteção dos fracos.",
+      "evidence": [
+        "Êxodo 22:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 23:2 na ordem do texto.",
+      "verseRef": "Êxodo 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não seguirás a multidão para praticar o mal"
+        },
+        {
+          "id": "b",
+          "text": "nem numa demanda perverterás o direito"
+        },
+        {
+          "id": "c",
+          "text": "inclinando-te para a maioria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "Mal, direito e maioria na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece por Não seguirás."
+      },
+      "hint": "O versículo começa com Não seguirás.",
+      "learningObjective": "Reconhecer a ordem de 23:2.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 21:6, com que instrumento se fura a orelha?",
+      "verseRef": "Êxodo 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sovela"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "martelo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "furará a orelha com uma sovela",
+      "feedbackCorrect": "O instrumento é uma sovela.",
+      "feedbackWrong": {
+        "b": "Não é espada.",
+        "c": "O texto diz sovela."
+      },
+      "hint": "Veja o instrumento nomeado.",
+      "learningObjective": "Lembrar a sovela.",
+      "evidence": [
+        "Êxodo 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 24:8 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 24:8",
+      "passageA": {
+        "ref": "Êxodo 24:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A aliança pede justiça e se sela com sangue."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue sela a aliança"
+        },
+        {
+          "id": "b",
+          "text": "Fuga do monte"
+        },
+        {
+          "id": "c",
+          "text": "Bezerro de ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "O sangue aspergido sela a aliança.",
+      "feedbackWrong": {
+        "b": "O texto sela, não foge.",
+        "c": "O bezerro não está nesta cena."
+      },
+      "hint": "Compare o gesto e o nome.",
+      "learningObjective": "Ligar sangue e pacto.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 22:21, toque quem não se deve oprimir.",
+      "verseRef": "Êxodo 22:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "forasteiro"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "O forasteiro não deve ser oprimido.",
+      "feedbackWrong": {
+        "b": "Egito é a memória.",
+        "c": "Terra situa o Egito; o alvo é forasteiro."
+      },
+      "hint": "Veja o objeto da proibição.",
+      "learningObjective": "Identificar o forasteiro.",
+      "evidence": [
+        "Êxodo 22:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 24:8 na ordem do texto.",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, Moisés tomou aquele sangue"
+        },
+        {
+          "id": "b",
+          "text": "e o aspergiu sobre o povo"
+        },
+        {
+          "id": "c",
+          "text": "e disse: Eis aqui o sangue da aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Tomar, aspergir e declarar.",
+      "feedbackWrong": {
+        "default": "Comece por Então, Moisés tomou."
+      },
+      "hint": "O versículo começa com Então.",
+      "learningObjective": "Reconhecer a ordem do sangue.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 23:2, inclinando-se à maioria sempre se garante o direito justo.",
+      "verseRef": "Êxodo 23:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "nem numa demanda perverterás o direito, inclinando-te para a maioria",
+      "feedbackCorrect": "Inclinar-se à maioria pode perverter o direito.",
+      "feedbackWrong": {
+        "true": "Releia: não perverter o direito inclinando-se à maioria."
+      },
+      "hint": "Veja o que a inclinação pode fazer.",
+      "learningObjective": "Compreender o risco da maioria.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 23:2, toque a quem não se deve seguir no mal.",
+      "verseRef": "Êxodo 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "multidão"
+        },
+        {
+          "id": "b",
+          "text": "demanda"
+        },
+        {
+          "id": "c",
+          "text": "direito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "Não seguir a multidão no mal.",
+      "feedbackWrong": {
+        "b": "Demanda é o juízo.",
+        "c": "Direito se protege; a pressão é a multidão."
+      },
+      "hint": "Veja a quem não seguir.",
+      "learningObjective": "Reconhecer a multidão.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 22:23–24 liga o clamor do aflito à resposta de Deus?",
+      "verseRef": "Êxodo 22:23–24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele ouve e sua ira se acende"
+        },
+        {
+          "id": "b",
+          "text": "Ele ignora o clamor"
+        },
+        {
+          "id": "c",
+          "text": "Ele premia quem oprime"
+        },
+        {
+          "id": "d",
+          "text": "Ele pede juros ao pobre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu certamente ouvirei o clamor deles",
+      "feedbackCorrect": "Ouvir o clamor acende a ira.",
+      "feedbackWrong": {
+        "b": "Ele ouvirá.",
+        "c": "A ira vem contra o opressor.",
+        "d": "Juros ao pobre são proibidos."
+      },
+      "hint": "Una ouvir e ira.",
+      "learningObjective": "Relacionar clamor e juízo.",
+      "evidence": [
+        "Êxodo 22:23",
+        "Êxodo 22:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança esta Travessia da lei à aliança?",
+      "verseRef": "Êxodo 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Servidão com limite e dignidade"
+        },
+        {
+          "id": "b",
+          "text": "Justiça que não segue a maioria"
+        },
+        {
+          "id": "c",
+          "text": "Sangue sela a aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele sairá livre sem custo algum",
+      "feedbackCorrect": "Dignidade, justiça e aliança.",
+      "feedbackWrong": {
+        "default": "Comece pela liberdade do servo."
+      },
+      "hint": "Siga servo, justiça e sangue.",
+      "learningObjective": "Compreender o arco da etapa.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Êxodo 23:2",
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 22:23, que termo nomeia o grito que Deus ouve?",
+      "verseRef": "Êxodo 22:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamor"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "cântico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ouvirei o clamor deles",
+      "feedbackCorrect": "O termo é clamor.",
+      "feedbackWrong": {
+        "b": "Não é silêncio.",
+        "c": "O texto fala de clamor."
+      },
+      "hint": "Veja o objeto de ouvirei.",
+      "learningObjective": "Lembrar o clamor.",
+      "evidence": [
+        "Êxodo 22:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 24:8 a Hebreus 9:19–20?",
+      "verseRef": "Êxodo 24:8",
+      "passageA": {
+        "ref": "Êxodo 24:8"
+      },
+      "passageB": {
+        "ref": "Hebreus 9:19–20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue da aliança"
+        },
+        {
+          "id": "b",
+          "text": "Maná no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Coluna de fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Hebreus retoma o sangue da aliança.",
+      "feedbackWrong": {
+        "b": "O elo é o sangue.",
+        "c": "A coluna não é o tema."
+      },
+      "hint": "Compare a frase sobre o sangue.",
+      "learningObjective": "Relacionar Êxodo e Hebreus.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Hebreus 9:19–20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 23:8, toque a palavra que marca o motivo de rejeitar o suborno.",
+      "verseRef": "Êxodo 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "aceitarás"
+        },
+        {
+          "id": "c",
+          "text": "palavras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não aceitarás suborno, pois o suborno cega",
+      "feedbackCorrect": "\"Pois\" introduz o dano do suborno.",
+      "feedbackWrong": {
+        "b": "Aceitarás é a proibição.",
+        "c": "Palavras sofrem o efeito; o marcador é pois."
+      },
+      "hint": "Procure a palavra após suborno.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual lógica une proteção e pacto?",
+      "verseRef": "Êxodo 22:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proteger o forasteiro e o fraco"
+        },
+        {
+          "id": "b",
+          "text": "Não seguir a maioria no mal"
+        },
+        {
+          "id": "c",
+          "text": "Selar a aliança com sangue"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "Proteção, justiça e sangue da aliança.",
+      "feedbackWrong": {
+        "default": "Comece pelo forasteiro."
+      },
+      "hint": "Siga proteção, justiça e sangue.",
+      "learningObjective": "Compreender a lógica da etapa.",
+      "evidence": [
+        "Êxodo 22:21",
+        "Êxodo 23:2",
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 21–24 sustenta que a aliança dispensa justiça ao fraco e ao estrangeiro.",
+      "verseRef": "Êxodo 22:21–22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "A aliança exige justiça ao forasteiro, viúva e órfão.",
+      "feedbackWrong": {
+        "true": "A lei protege o fraco dentro da aliança."
+      },
+      "hint": "Veja forasteiro, viúva e órfão.",
+      "learningObjective": "Interpretar aliança e justiça.",
+      "evidence": [
+        "Êxodo 22:21",
+        "Êxodo 22:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 24:8, toque o termo que nomeia o sangue aspergido.",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "palavras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "É o sangue da aliança.",
+      "feedbackWrong": {
+        "b": "Povo recebe; o nome é aliança.",
+        "c": "Palavras fecham; o nome é aliança."
+      },
+      "hint": "Veja o nome dado ao sangue.",
+      "learningObjective": "Sustentar o nome da aliança.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura esta Travessia sustenta?",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "A aliança pede justiça e compromisso selado com sangue"
+        },
+        {
+          "id": "b",
+          "text": "Justiça se curva à maioria"
+        },
+        {
+          "id": "c",
+          "text": "O fraco pode ser oprimido sem risco"
+        },
+        {
+          "id": "d",
+          "text": "O sangue da aliança é só metáfora vazia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Justiça ao fraco e sangue do pacto andam juntos.",
+      "feedbackWrong": {
+        "b": "É proibido seguir a multidão no mal.",
+        "c": "Deus ouve o clamor.",
+        "d": "Há aspersão real e declaração."
+      },
+      "hint": "Una justiça e sangue.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a aliança à Escritura?",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés declara o sangue da aliança"
+        },
+        {
+          "id": "b",
+          "text": "Hebreus retoma a aspersão"
+        },
+        {
+          "id": "c",
+          "text": "Jesus fala do sangue da nova aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Do Sinai a Hebreus e à ceia.",
+      "feedbackWrong": {
+        "default": "Comece por Moisés."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver a aliança ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Hebreus 9:19–20",
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 23:8, o que não se deve aceitar?",
+      "verseRef": "Êxodo 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "suborno"
+        },
+        {
+          "id": "b",
+          "text": "conselho"
+        },
+        {
+          "id": "c",
+          "text": "louvor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não aceitarás suborno",
+      "feedbackCorrect": "É proibido aceitar suborno.",
+      "feedbackWrong": {
+        "b": "Não é conselho.",
+        "c": "O objeto é suborno."
+      },
+      "hint": "Veja o objeto de Não aceitarás.",
+      "learningObjective": "Lembrar o suborno.",
+      "evidence": [
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 24:8 a Mateus 26:28?",
+      "verseRef": "Êxodo 24:8",
+      "passageA": {
+        "ref": "Êxodo 24:8"
+      },
+      "passageB": {
+        "ref": "Mateus 26:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue da aliança"
+        },
+        {
+          "id": "b",
+          "text": "Água da rocha"
+        },
+        {
+          "id": "c",
+          "text": "Pão do céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Jesus retoma a linguagem do sangue da aliança.",
+      "feedbackWrong": {
+        "b": "O elo é o sangue.",
+        "c": "O pão não é o tema deste elo."
+      },
+      "hint": "Compare a frase sobre o sangue.",
+      "learningObjective": "Ligar Sinai e a ceia.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 24:11, toque o trecho que sustenta a comunhão.",
+      "verseRef": "Êxodo 24:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "comeram"
+        },
+        {
+          "id": "b",
+          "text": "mão"
+        },
+        {
+          "id": "c",
+          "text": "escolhidos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles viram a Deus e comeram e beberam",
+      "feedbackCorrect": "Eles comeram e beberam perante Deus.",
+      "feedbackWrong": {
+        "b": "A mão não se estendeu.",
+        "c": "Escolhidos são quem; o trecho é comeram."
+      },
+      "hint": "Veja o que fizeram depois de ver.",
+      "learningObjective": "Sustentar a comunhão.",
+      "evidence": [
+        "Êxodo 24:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual fio une dignidade, justiça e pacto?",
+      "verseRef": "Êxodo 24:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A lei limita a servidão"
+        },
+        {
+          "id": "b",
+          "text": "A justiça protege o fraco"
+        },
+        {
+          "id": "c",
+          "text": "O sangue sela e eles comem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eles viram a Deus e comeram e beberam",
+      "feedbackCorrect": "Dignidade, justiça e comunhão da aliança.",
+      "feedbackWrong": {
+        "default": "Comece pela servidão limitada."
+      },
+      "hint": "Siga servo, fraco e sangue.",
+      "learningObjective": "Ver o fio da Travessia.",
+      "evidence": [
+        "Êxodo 21:2",
+        "Êxodo 22:21",
+        "Êxodo 24:8"
+      ]
+    }
+  ]
+}

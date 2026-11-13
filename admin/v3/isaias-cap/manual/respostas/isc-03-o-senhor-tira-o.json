@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Isaías 3:1–6",
+    "passages": [
+      { "ref": "Isaías 3:1–6" },
+      { "ref": "Isaías 3:7–10" }
+    ],
+    "context": "O Senhor remove de Jerusalém e Judá o sustento e a liderança. Sem apoio, o povo se oprime, e até quem tem um manto recusa governar a ruína. Ainda assim, há palavra aos justos.",
+    "keyword": "sustento",
+    "keywordGloss": "O apoio de pão, água e líderes que o Senhor remove de Judá.",
+    "focusQuestion": "Quando a estrutura cai, você ainda confia no Senhor que diz bem ao justo?",
+    "reflectionPrompts": ["Sustento removido", "Opressão mútua", "Bem ao justo"],
+    "facts": [
+      {
+        "text": "O Senhor, Deus dos Exércitos, removerá de Jerusalém e Judá o sustento e o apoio.",
+        "evidenceRef": "Isaías 3:1",
+        "evidenceSpan": "removerá de Jerusalém e de Judá o sustento e o apoio"
+      },
+      {
+        "text": "Serão removidos o valente, o guerreiro, o juiz, o profeta e o ancião.",
+        "evidenceRef": "Isaías 3:2",
+        "evidenceSpan": "ao valente, ao guerreiro e ao juiz"
+      },
+      {
+        "text": "O Senhor dará meninos como príncipes, e crianças governarão.",
+        "evidenceRef": "Isaías 3:4",
+        "evidenceSpan": "lhes darei meninos como príncipes"
+      },
+      {
+        "text": "O povo oprimirá uns aos outros; o jovem se atreverá contra o idoso.",
+        "evidenceRef": "Isaías 3:5",
+        "evidenceSpan": "O povo oprimirá uns aos outros"
+      },
+      {
+        "text": "Jerusalém está arruinada e Judá caiu porque língua e obras estão contra o Senhor.",
+        "evidenceRef": "Isaías 3:8",
+        "evidenceSpan": "pois sua língua e suas obras estão contra o Senhor"
+      },
+      {
+        "text": "Deve-se dizer aos justos que lhes irá bem, pois comerão do fruto das suas ações.",
+        "evidenceRef": "Isaías 3:10",
+        "evidenceSpan": "Dizei aos justos que lhes irá bem"
+      }
+    ],
+    "keyTerms": [
+      { "term": "sustento", "gloss": "Pão, água e apoios humanos que o Senhor remove." },
+      { "term": "justos", "gloss": "Aqueles a quem se deve anunciar que lhes irá bem." },
+      { "term": "arruinada", "gloss": "Estado de Jerusalém por desafiar a presença do Senhor." }
+    ],
+    "structure": [
+      { "label": "Remoção do sustento e dos líderes", "evidenceRef": "Isaías 3:1–3" },
+      { "label": "Governo frágil e opressão mútua", "evidenceRef": "Isaías 3:4–5" },
+      { "label": "Recusa de governar a ruína", "evidenceRef": "Isaías 3:6–7" },
+      { "label": "Causa da queda e palavra aos justos", "evidenceRef": "Isaías 3:8–10" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Jerusalém e Judá caíram porque língua e obras estão contra o Senhor.",
+        "marker": "pois",
+        "evidenceRef": "Isaías 3:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Sem líderes maduros, o povo oprime uns aos outros.",
+        "marker": null,
+        "evidenceRef": "Isaías 3:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Aos justos se diz que lhes irá bem, enquanto o pecado de Sodoma traz ai.",
+        "marker": null,
+        "evidenceRef": "Isaías 3:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Levítico 26:26", "bridge": "Quebra do sustento de pão" },
+      { "ref": "Salmos 1:3", "bridge": "Justo come do fruto" },
+      { "ref": "Romanos 2:6", "bridge": "Deus paga segundo obras" }
+    ],
+    "misreadings": [
+      {
+        "text": "A ruína é acaso; o texto não liga queda e pecado.",
+        "why": "O v.8 dá a causa: língua e obras contra o Senhor."
+      },
+      {
+        "text": "Não há esperança nenhuma para ninguém em Judá.",
+        "why": "O v.10 manda dizer aos justos que lhes irá bem."
+      },
+      {
+        "text": "Ter um manto já basta para governar bem a ruína.",
+        "why": "O chamado a ser príncipe é recusado: não há pão nem veste."
+      }
+    ],
+    "centralInsight": "Dizei ao justo que bem lhe irá; ai do ímpio! Mal lhe irá.",
+    "anchorQuestion": "O que Isaías 3:10 manda dizer aos justos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 3:1, o Senhor removerá de Jerusalém e de Judá o sustento e o apoio.",
+      "verseRef": "Isaías 3:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "removerá de Jerusalém e de Judá o sustento e o apoio",
+      "feedbackCorrect": "O versículo abre com a remoção do sustento e do apoio.",
+      "feedbackWrong": { "false": "O texto afirma a remoção do sustento e do apoio." },
+      "hint": "Veja o verbo principal depois de \"Eis que\".",
+      "learningObjective": "Observar a remoção do sustento.",
+      "evidence": ["Isaías 3:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 3:10, toque a quem se deve dizer que lhes irá bem.",
+      "verseRef": "Isaías 3:10",
+      "options": [
+        { "id": "a", "text": "justos" },
+        { "id": "b", "text": "ações" },
+        { "id": "c", "text": "fruto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Dizei aos justos que lhes irá bem",
+      "feedbackCorrect": "A palavra de ânimo é dirigida aos justos.",
+      "feedbackWrong": {
+        "b": "Ações explicam o fruto; o destinatário são os justos.",
+        "c": "Fruto é o resultado; o alvo da fala são os justos."
+      },
+      "hint": "Veja a quem o verbo \"dizei\" se dirige.",
+      "learningObjective": "Identificar o destinatário da promessa.",
+      "evidence": ["Isaías 3:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 3:4, quem o Senhor dará como príncipes?",
+      "verseRef": "Isaías 3:4",
+      "options": [
+        { "id": "a", "text": "Meninos" },
+        { "id": "b", "text": "Anciãos experientes" },
+        { "id": "c", "text": "Profetas fiéis" },
+        { "id": "d", "text": "Capitães de cinquenta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lhes darei meninos como príncipes",
+      "feedbackCorrect": "O juízo inclui líderes imaturos: meninos como príncipes.",
+      "feedbackWrong": {
+        "b": "O ancião está entre os removidos (v.2).",
+        "c": "O profeta também está na lista removida.",
+        "d": "O capitão de cinquenta é removido (v.3)."
+      },
+      "hint": "Leia quem será dado como príncipe.",
+      "learningObjective": "Notar a troca de liderança.",
+      "evidence": ["Isaías 3:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 3:5 na ordem do texto.",
+      "verseRef": "Isaías 3:5",
+      "options": [
+        { "id": "a", "text": "O povo oprimirá uns aos outros" },
+        { "id": "b", "text": "cada um se voltará contra seu próximo" },
+        { "id": "c", "text": "o jovem se atreverá contra o idoso" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O povo oprimirá uns aos outros",
+      "feedbackCorrect": "Opressão geral, depois próximo contra próximo, enfim jovem contra idoso.",
+      "feedbackWrong": { "default": "Comece pela opressão do povo." },
+      "hint": "O versículo começa com \"O povo\".",
+      "learningObjective": "Reconhecer a ordem da opressão.",
+      "evidence": ["Isaías 3:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 3:1, o Senhor removerá o sustento e o quê?",
+      "verseRef": "Isaías 3:1",
+      "options": [
+        { "id": "a", "text": "apoio" },
+        { "id": "b", "text": "justos" },
+        { "id": "c", "text": "fruto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o sustento e o apoio",
+      "feedbackCorrect": "Sustento e apoio são removidos juntos.",
+      "feedbackWrong": {
+        "b": "Aos justos se anuncia bem no v.10.",
+        "c": "Fruto aparece na promessa aos justos."
+      },
+      "hint": "O par com \"sustento e o\".",
+      "learningObjective": "Lembrar o par removido.",
+      "evidence": ["Isaías 3:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 3:1 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 3:1",
+      "passageA": { "ref": "Isaías 3:1", "text": "removerá de Jerusalém e de Judá o sustento e o apoio" },
+      "passageB": { "ref": "Contexto", "text": "Sem pão, água e líderes, a cidade caminha para a ruína." },
+      "options": [
+        { "id": "a", "text": "Sustento humano removido" },
+        { "id": "b", "text": "Abundância garantida" },
+        { "id": "c", "text": "Liderança reforçada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "removerá de Jerusalém e de Judá o sustento e o apoio",
+      "feedbackCorrect": "A cena começa com a remoção do que sustenta a cidade.",
+      "feedbackWrong": {
+        "b": "O texto fala de remoção, não de abundância.",
+        "c": "Os líderes estão na lista do que se remove."
+      },
+      "hint": "Veja o que o Senhor remove.",
+      "learningObjective": "Ligar a remoção ao contexto da ruína.",
+      "evidence": ["Isaías 3:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 3:8, Jerusalém e Judá caem sem o texto apontar causa.",
+      "verseRef": "Isaías 3:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois sua língua e suas obras estão contra o Senhor",
+      "feedbackCorrect": "O \"pois\" marca a causa: língua e obras contra o Senhor.",
+      "feedbackWrong": { "true": "O versículo explica a queda com \"pois\"." },
+      "hint": "Procure a palavra que introduz a razão.",
+      "learningObjective": "Compreender a causa da queda.",
+      "evidence": ["Isaías 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 3:8, toque a palavra que marca a causa da ruína.",
+      "verseRef": "Isaías 3:8",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "Jerusalém" },
+        { "id": "c", "text": "gloriosa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois sua língua e suas obras estão contra o Senhor",
+      "feedbackCorrect": "\"Pois\" liga a ruína à língua e às obras contra o Senhor.",
+      "feedbackWrong": {
+        "b": "Nomeia a cidade; a causa vem depois.",
+        "c": "Descreve a presença; não marca a causa."
+      },
+      "hint": "É a conjunção antes de \"sua língua\".",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": ["Isaías 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 3:4–5 se relaciona com a remoção dos líderes?",
+      "verseRef": "Isaías 3:4–5",
+      "options": [
+        { "id": "a", "text": "Liderança imatura abre espaço à opressão mútua" },
+        { "id": "b", "text": "Meninos príncipes trazem paz imediata" },
+        { "id": "c", "text": "O povo deixa de se oprimir" },
+        { "id": "d", "text": "O idoso passa a governar com firmeza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O povo oprimirá uns aos outros",
+      "feedbackCorrect": "Depois de meninos como príncipes, o povo oprime uns aos outros.",
+      "feedbackWrong": {
+        "b": "O texto segue com opressão, não com paz.",
+        "c": "O versículo afirma a opressão mútua.",
+        "d": "O jovem se atreve contra o idoso."
+      },
+      "hint": "Leia o que acontece depois dos meninos príncipes.",
+      "learningObjective": "Relacionar liderança frágil e opressão.",
+      "evidence": ["Isaías 3:4–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento de Isaías 3:1–5?",
+      "verseRef": "Isaías 3:1–5",
+      "options": [
+        { "id": "a", "text": "O Senhor remove sustento e líderes" },
+        { "id": "b", "text": "Meninos são dados como príncipes" },
+        { "id": "c", "text": "O povo oprime uns aos outros" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O povo oprimirá uns aos outros",
+      "feedbackCorrect": "Remoção, governo imaturo e opressão formam a sequência.",
+      "feedbackWrong": { "default": "A opressão vem depois da troca de líderes." },
+      "hint": "A remoção abre a cena.",
+      "learningObjective": "Ver a progressão do juízo social.",
+      "evidence": ["Isaías 3:1–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 3:10, os justos comerão do quê das suas ações?",
+      "verseRef": "Isaías 3:10",
+      "options": [
+        { "id": "a", "text": "fruto" },
+        { "id": "b", "text": "sustento" },
+        { "id": "c", "text": "manto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois comerão do fruto das suas ações",
+      "feedbackCorrect": "O bem aos justos se explica pelo fruto das ações.",
+      "feedbackWrong": {
+        "b": "Sustento é o que foi removido no início.",
+        "c": "Manto aparece na cena da recusa de governar."
+      },
+      "hint": "Veja o que eles comerão.",
+      "learningObjective": "Lembrar a palavra que liga bem e ações.",
+      "evidence": ["Isaías 3:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 3:10 a Salmos 1:3?",
+      "verseRef": "Isaías 3:10",
+      "passageA": { "ref": "Isaías 3:10", "text": "pois comerão do fruto das suas ações" },
+      "passageB": { "ref": "Salmos 1:3" },
+      "options": [
+        { "id": "a", "text": "Justo come do fruto" },
+        { "id": "b", "text": "Ímpio sem consequência" },
+        { "id": "c", "text": "Ruína sem causa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois comerão do fruto das suas ações",
+      "feedbackCorrect": "Nos dois textos o justo está ligado ao fruto do seu caminho.",
+      "feedbackWrong": {
+        "b": "Isaías também tem ai sobre quem faz mal a si.",
+        "c": "A causa da ruína está no v.8."
+      },
+      "hint": "Compare a imagem do fruto.",
+      "learningObjective": "Ligar a promessa aos justos ao Salmo 1.",
+      "evidence": ["Isaías 3:10", "Salmos 1:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 3:8–10 sustenta que a ruína tem causa ética e que ainda assim há palavra de bem aos justos.",
+      "verseRef": "Isaías 3:8–10",
+      "correctOptionId": "true",
+      "evidenceSpan": "Dizei aos justos que lhes irá bem",
+      "feedbackCorrect": "Causa da queda e promessa aos justos convivem no mesmo trecho.",
+      "feedbackWrong": { "false": "O texto dá a causa no v.8 e a palavra aos justos no v.10." },
+      "hint": "Segure a causa e o \"dizei aos justos\".",
+      "learningObjective": "Interpretar juízo e esperança juntos.",
+      "evidence": ["Isaías 3:8–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 3:9, toque a comparação com a cidade cujo pecado é proclamado sem encobrir.",
+      "verseRef": "Isaías 3:9",
+      "options": [
+        { "id": "a", "text": "Sodoma" },
+        { "id": "b", "text": "rostos" },
+        { "id": "c", "text": "almas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "proclamam seus pecados como Sodoma",
+      "feedbackCorrect": "O pecado é proclamado como Sodoma, sem encobrir.",
+      "feedbackWrong": {
+        "b": "Rostos testificam; a comparação é com Sodoma.",
+        "c": "Almas recebem o ai; a comparação é Sodoma."
+      },
+      "hint": "É o nome próprio da comparação.",
+      "learningObjective": "Tocar a comparação do pecado aberto.",
+      "evidence": ["Isaías 3:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 3:6–10 sustenta sobre a ruína?",
+      "verseRef": "Isaías 3:6–10",
+      "options": [
+        { "id": "a", "text": "A ruína assusta até quem é chamado a governar, mas o justo ainda ouve bem" },
+        { "id": "b", "text": "Qualquer manto já resolve o governo da cidade" },
+        { "id": "c", "text": "Não há diferença entre justo e quem peca como Sodoma" },
+        { "id": "d", "text": "A queda não tem ligação com língua e obras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não me coloquem como príncipe do povo",
+      "feedbackCorrect": "A recusa de governar mostra o peso da ruína; o v.10 ainda fala aos justos.",
+      "feedbackWrong": {
+        "b": "O chamado é recusado por falta de pão e veste.",
+        "c": "Há ai e há palavra de bem aos justos.",
+        "d": "O v.8 liga queda a língua e obras."
+      },
+      "hint": "Compare a recusa do príncipe com o v.10.",
+      "learningObjective": "Escolher a leitura que o trecho sustenta.",
+      "evidence": ["Isaías 3:6–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o sustento removido ao fruto do justo?",
+      "verseRef": "Isaías 3:1",
+      "options": [
+        { "id": "a", "text": "O Senhor remove o sustento de Judá" },
+        { "id": "b", "text": "A lei já avisava a quebra do pão" },
+        { "id": "c", "text": "Deus paga a cada um segundo as obras" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "todo o sustento de pão",
+      "evidence": ["Isaías 3:1", "Levítico 26:26", "Romanos 2:6"],
+      "feedbackCorrect": "A remoção ecoa a aliança e aponta ao juízo segundo as obras.",
+      "feedbackWrong": { "default": "Comece por Isaías; depois a lei; enfim Romanos." },
+      "hint": "Siga: juízo em Judá, eco da lei, princípio no NT.",
+      "learningObjective": "Encadear sustento, aliança e retribuição."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 3:8, Judá e Jerusalém estão contra o Senhor com língua e quê?",
+      "verseRef": "Isaías 3:8",
+      "options": [
+        { "id": "a", "text": "obras" },
+        { "id": "b", "text": "manto" },
+        { "id": "c", "text": "pão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sua língua e suas obras estão contra o Senhor",
+      "feedbackCorrect": "O termo que carrega a acusação junto com a língua é obras.",
+      "feedbackWrong": {
+        "b": "Manto aparece na cena do príncipe recusado.",
+        "c": "Pão é parte do sustento removido."
+      },
+      "hint": "O par com \"língua e suas\".",
+      "learningObjective": "Lembrar o termo da acusação ética.",
+      "evidence": ["Isaías 3:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 3:1 a Levítico 26:26?",
+      "verseRef": "Isaías 3:1",
+      "passageA": { "ref": "Isaías 3:1", "text": "todo o sustento de pão e todo o sustento de água" },
+      "passageB": { "ref": "Levítico 26:26" },
+      "options": [
+        { "id": "a", "text": "Quebra do sustento de pão" },
+        { "id": "b", "text": "Festa sem juízo" },
+        { "id": "c", "text": "Abundância da aliança" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo o sustento de pão",
+      "feedbackCorrect": "A remoção do pão em Isaías ecoa a quebra do sustento na aliança.",
+      "feedbackWrong": {
+        "b": "O tema aqui é sustento, não festa.",
+        "c": "Os dois textos falam de falta, não de fartura."
+      },
+      "hint": "Compare o pão removido.",
+      "learningObjective": "Ligar o juízo de Isaías à aliança.",
+      "evidence": ["Isaías 3:1", "Levítico 26:26"]
+    }
+  ]
+}

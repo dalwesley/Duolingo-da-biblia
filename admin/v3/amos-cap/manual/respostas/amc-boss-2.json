@@ -1,0 +1,605 @@
+{
+  "study": {
+    "passageRef": "Amós 5:4–9",
+    "passages": [
+      { "ref": "Amós 5:4–15" },
+      { "ref": "Amós 6:1–8" },
+      { "ref": "Amós 7:1–9" },
+      { "ref": "Amós 8:4–12" },
+      { "ref": "Amós 9:8–15" }
+    ],
+    "context": "Esta travessia revisa o chamado a buscar o Senhor, o ai dos confortáveis, as três visões, a fome da palavra e a restauração da tenda de Davi.",
+    "keyword": "Busquem-me",
+    "keywordGloss": "O convite do Senhor: buscar a ele e o bem; no fim, ele restaura.",
+    "focusQuestion": "Você busca o Senhor e o bem, ou vive à vontade até o prumo cair?",
+    "reflectionPrompts": [
+      "Busquem e vivam",
+      "Ruína de José",
+      "Tenda restaurada"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor diz: Busquem-me e terão vida.",
+        "evidenceRef": "Amós 5:4",
+        "evidenceSpan": "Busquem-me e terão vida"
+      },
+      {
+        "text": "Os confortáveis não se afligem com a ruína de José.",
+        "evidenceRef": "Amós 6:6",
+        "evidenceSpan": "não se afligem com a ruína de José"
+      },
+      {
+        "text": "Após a intercessão, o Senhor se arrepende do juízo dos gafanhotos.",
+        "evidenceRef": "Amós 7:3",
+        "evidenceSpan": "o Senhor se arrependeu disso. Isso não acontecerá"
+      },
+      {
+        "text": "Colocará o prumo no meio de Israel e jamais passará.",
+        "evidenceRef": "Amós 7:8",
+        "evidenceSpan": "colocarei o prumo no meio do meu povo de Israel, e jamais passarei por ele"
+      },
+      {
+        "text": "Enviará fome de ouvir as palavras do Senhor.",
+        "evidenceRef": "Amós 8:11",
+        "evidenceSpan": "enviarei fome sobre a terra, não de pão, nem sede de água, mas de ouvir as palavras do Senhor"
+      },
+      {
+        "text": "Levantará a tenda caída de Davi e plantará o povo na terra.",
+        "evidenceRef": "Amós 9:11",
+        "evidenceSpan": "levantarei a tenda caída de Davi"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Busquem-me",
+        "gloss": "O convite do Senhor que traz vida."
+      },
+      {
+        "term": "prumo",
+        "gloss": "A medida do juízo que não se detém mais."
+      },
+      {
+        "term": "tenda",
+        "gloss": "A casa de Davi que o Senhor promete levantar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Convite a buscar o Senhor e o bem",
+        "evidenceRef": "Amós 5:4–15"
+      },
+      {
+        "label": "Ai ao conforto sem dor por José",
+        "evidenceRef": "Amós 6:1–8"
+      },
+      {
+        "label": "Visões, intercessão e prumo",
+        "evidenceRef": "Amós 7:1–8"
+      },
+      {
+        "label": "Fome da palavra e tenda restaurada",
+        "evidenceRef": "Amós 9:8–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Busquem o bem para que vivam.",
+        "marker": "para que",
+        "evidenceRef": "Amós 5:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ungem-se com óleo, mas não se afligem com a ruína de José.",
+        "marker": "mas",
+        "evidenceRef": "Amós 6:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Amós intercede; então o Senhor se arrepende.",
+        "marker": "Então",
+        "evidenceRef": "Amós 7:3"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 55:6–7", "bridge": "Buscar o Senhor enquanto há tempo" },
+      { "ref": "Atos 15:16–17", "bridge": "Tiago cita a tenda de Davi" },
+      { "ref": "Mateus 4:4", "bridge": "Viver da palavra, não só pão" }
+    ],
+    "misreadings": [
+      {
+        "text": "Bastava ir a Betel para achar vida.",
+        "why": "5:4–5 manda buscar o Senhor e proíbe Betel."
+      },
+      {
+        "text": "A fome anunciada é só falta de pão.",
+        "why": "8:11: não de pão, mas de ouvir as palavras do Senhor."
+      },
+      {
+        "text": "A tenda de Davi permanece caída para sempre.",
+        "why": "9:11: levantarei a tenda caída de Davi."
+      }
+    ],
+    "centralInsight": "Buscar o Senhor é amar o bem; no fim, ele restaura",
+    "anchorQuestion": "Segundo Amós 5:4, o que o Senhor promete a quem o busca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 5:4, o Senhor manda a casa de Israel buscá-lo para ter vida.",
+      "verseRef": "Amós 5:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "O convite abre a etapa: buscar o Senhor traz vida.",
+      "feedbackWrong": { "false": "Releia Amós 5:4. Busquem-me e terão vida." },
+      "hint": "Veja o convite e a promessa.",
+      "learningObjective": "Observar o convite a buscar o Senhor.",
+      "evidence": ["Amós 5:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 6:6, toque com o que não se afligem.",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "não se afligem com a ruína de José",
+      "feedbackCorrect": "Não se afligem com a ruína de José.",
+      "hint": "Procure o nome no fim do versículo.",
+      "learningObjective": "Identificar a indiferença por José.",
+      "evidence": ["Amós 6:6"],
+      "options": [
+        { "id": "a", "text": "ruína de José" },
+        { "id": "b", "text": "melhor óleo" },
+        { "id": "c", "text": "vinho" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O óleo é o luxo; a indiferença é por José.",
+        "c": "O vinho marca o banquete, não a dor ignorada."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 7:8, o que o Senhor colocará no meio de Israel?",
+      "verseRef": "Amós 7:8",
+      "evidenceSpan": "colocarei o prumo no meio do meu povo de Israel",
+      "feedbackCorrect": "Colocará o prumo e jamais passará por ele.",
+      "hint": "Veja a resposta de Amós e a decisão do Senhor.",
+      "learningObjective": "Observar a visão do prumo.",
+      "evidence": ["Amós 7:8"],
+      "options": [
+        { "id": "a", "text": "Um prumo" },
+        { "id": "b", "text": "Uma festa" },
+        { "id": "c", "text": "Uma cama de marfim" },
+        { "id": "d", "text": "Um celeiro aberto" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Festas não são o objeto desta visão.",
+        "c": "Camas de marfim aparecem no capítulo 6.",
+        "d": "Celeiros aparecem no capítulo 8."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 8:11 na ordem do texto.",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "enviarei fome sobre a terra",
+      "feedbackCorrect": "Vêm dias de fome: não de pão, mas de ouvir a palavra.",
+      "hint": "Comece pelo anúncio dos dias.",
+      "learningObjective": "Reconhecer a sequência da fome.",
+      "evidence": ["Amós 8:11"],
+      "options": [
+        { "id": "a", "text": "Eis que vêm dias, diz o Senhor Deus" },
+        { "id": "b", "text": "em que enviarei fome sobre a terra" },
+        { "id": "c", "text": "não de pão, nem sede de água, mas de ouvir as palavras do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelos dias; a palavra fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 9:11, o que o Senhor levantará?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Levantará a tenda caída de Davi.",
+      "hint": "É o objeto de \"levantarei\".",
+      "learningObjective": "Lembrar a promessa da tenda.",
+      "evidence": ["Amós 9:11"],
+      "options": [
+        { "id": "a", "text": "tenda" },
+        { "id": "b", "text": "fortaleza" },
+        { "id": "c", "text": "prumo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é uma fortaleza; é a tenda de Davi.",
+        "c": "O prumo é da visão do capítulo 7."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 5:4 comunica que se liga a este contexto?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Buscar o Senhor é o caminho da vida nesta etapa.",
+      "hint": "Ligue o convite à vida prometida.",
+      "learningObjective": "Ligar busca e vida.",
+      "evidence": ["Amós 5:4"],
+      "passageA": { "ref": "Amós 5:4" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Buscar o Senhor é amar o bem; no fim, ele restaura."
+      },
+      "options": [
+        { "id": "a", "text": "Busca que traz vida" },
+        { "id": "b", "text": "Betel como fonte de vida" },
+        { "id": "c", "text": "Vida sem buscar o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:5 proíbe buscar Betel.",
+        "c": "A vida está ligada a buscá-lo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 5:5, toque o primeiro lugar que não devem buscar.",
+      "verseRef": "Amós 5:5",
+      "evidenceSpan": "Não busquem Betel",
+      "feedbackCorrect": "Não busquem Betel; Gilgal também cairá.",
+      "hint": "Leia o começo da proibição.",
+      "learningObjective": "Identificar o culto proibido.",
+      "evidence": ["Amós 5:5"],
+      "options": [
+        { "id": "a", "text": "Betel" },
+        { "id": "b", "text": "vida" },
+        { "id": "c", "text": "casa" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Vida\" é a promessa de quem busca o Senhor.",
+        "c": "\"Casa\" não é o santuário proibido aqui."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 9:15 na ordem do texto.",
+      "verseRef": "Amós 9:15",
+      "evidenceSpan": "não serão mais arrancados dela",
+      "feedbackCorrect": "Plantio na terra e segurança sem novo arrancamento.",
+      "hint": "Comece pelo plantio.",
+      "learningObjective": "Reconhecer a sequência da restauração final.",
+      "evidence": ["Amós 9:15"],
+      "options": [
+        { "id": "a", "text": "E eu os plantarei na sua terra" },
+        { "id": "b", "text": "e não serão mais arrancados dela" },
+        { "id": "c", "text": "a terra que lhes dei, diz o Senhor, seu Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo plantio; a terra dada fecha." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 6:6, ungir-se com o melhor óleo vem junto com aflição sincera pela ruína de José.",
+      "verseRef": "Amós 6:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não se afligem com a ruína de José",
+      "feedbackCorrect": "O \"mas\" marca o contraste: luxo sem dor por José.",
+      "feedbackWrong": { "true": "Releia o contraste no fim de Amós 6:6." },
+      "hint": "Procure a palavra que vira o versículo.",
+      "learningObjective": "Compreender o contraste luxo/indiferença.",
+      "evidence": ["Amós 6:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 7:3, toque a palavra que marca a sequência após a intercessão.",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "Então, o Senhor se arrependeu disso",
+      "feedbackCorrect": "\"Então\" introduz o arrependimento do Senhor.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de sequência.",
+      "evidence": ["Amós 7:3"],
+      "options": [
+        { "id": "a", "text": "Então" },
+        { "id": "b", "text": "Senhor" },
+        { "id": "c", "text": "disse" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Senhor\" é quem se arrepende, não o marcador.",
+        "c": "\"Disse\" fecha a frase."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 5:14 se relaciona com o chamado da etapa?",
+      "verseRef": "Amós 5:14",
+      "evidenceSpan": "Busquem o bem e não o mal, para que vivam",
+      "feedbackCorrect": "Buscar o Senhor se traduz em buscar o bem para viver.",
+      "hint": "Una 5:4 e 5:14.",
+      "learningObjective": "Relacionar busca do Senhor e busca do bem.",
+      "evidence": ["Amós 5:14"],
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor é buscar o bem para viver" },
+        { "id": "b", "text": "Bastava ir a Betel para achar vida" },
+        { "id": "c", "text": "O mal pode ser buscado sem consequência" },
+        { "id": "d", "text": "A vida não depende de buscar o bem" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:5 proíbe Betel.",
+        "c": "O chamado é a odiar o mal.",
+        "d": "5:14 liga o bem à vida."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco revisado nesta travessia?",
+      "verseRef": "Amós 5:4–5",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Convite, conforto cego, visões e restauração.",
+      "hint": "Comece pelo convite a buscar.",
+      "learningObjective": "Seguir o movimento da etapa 2.",
+      "evidence": ["Amós 5:4–5"],
+      "options": [
+        { "id": "a", "text": "Convite a buscar o Senhor e o bem" },
+        { "id": "b", "text": "Ai ao conforto sem dor por José" },
+        { "id": "c", "text": "Fome da palavra e tenda restaurada" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Convite primeiro; restauração por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 5:14, que expressão marca o propósito de buscar o bem?",
+      "verseRef": "Amós 5:14",
+      "evidenceSpan": "para que vivam",
+      "feedbackCorrect": "\"Para que\" introduz o propósito: viver.",
+      "hint": "São as duas palavras antes de \"vivam\".",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": ["Amós 5:14"],
+      "options": [
+        { "id": "a", "text": "para que" },
+        { "id": "b", "text": "por acaso" },
+        { "id": "c", "text": "sem que" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Por acaso\" não marca propósito.",
+        "c": "\"Sem que\" não é o texto."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 5:4 a Isaías 55:6–7?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Nos dois textos, buscar o Senhor enquanto há tempo traz vida.",
+      "hint": "Compare o chamado a buscar o Senhor.",
+      "learningObjective": "Relacionar o convite de Amós a Isaías.",
+      "evidence": ["Amós 5:4", "Isaías 55:6–7"],
+      "passageA": { "ref": "Amós 5:4" },
+      "passageB": { "ref": "Isaías 55:6–7" },
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor enquanto há tempo" },
+        { "id": "b", "text": "Buscar só Betel e Gilgal" },
+        { "id": "c", "text": "Vida sem retorno a Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Amós proíbe esses santuários.",
+        "c": "Os textos ligam busca e vida."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 6:6, toque a palavra que marca o contraste com o luxo.",
+      "verseRef": "Amós 6:6",
+      "evidenceSpan": "mas não se afligem com a ruína de José",
+      "feedbackCorrect": "\"Mas\" introduz a indiferença pela ruína.",
+      "hint": "É a palavra curta antes de \"não se afligem\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Amós 6:6"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "óleo" },
+        { "id": "c", "text": "taças" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Óleo\" descreve o luxo, não o contraste.",
+        "c": "\"Taças\" fazem parte do banquete."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os passos de Amós 7:2–3?",
+      "verseRef": "Amós 7:2–3",
+      "evidenceSpan": "o Senhor se arrependeu disso",
+      "feedbackCorrect": "Amós pede; então o Senhor se arrepende.",
+      "hint": "A intercessão vem antes do arrependimento.",
+      "learningObjective": "Compreender causa e resultado da intercessão.",
+      "evidence": ["Amós 7:2–3"],
+      "options": [
+        { "id": "a", "text": "Amós pede perdão por Jacó pequeno" },
+        { "id": "b", "text": "O Senhor se arrepende do juízo" },
+        { "id": "c", "text": "Isso não acontecerá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Pedido primeiro; \"não acontecerá\" fecha." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 9:11, o Senhor promete levantar a tenda caída de Davi.",
+      "verseRef": "Amós 9:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "No fim da etapa, a restauração da casa de Davi é prometida.",
+      "feedbackWrong": { "false": "Releia Amós 9:11: levantarei a tenda caída." },
+      "hint": "Veja o verbo principal da promessa.",
+      "learningObjective": "Interpretar a restauração final.",
+      "evidence": ["Amós 9:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 8:11, toque o trecho que mostra de que será a fome.",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "A fome é de ouvir as palavras do Senhor.",
+      "hint": "Procure o substantivo no fim do contraste.",
+      "learningObjective": "Sustentar a fome da palavra com o texto.",
+      "evidence": ["Amós 8:11"],
+      "options": [
+        { "id": "a", "text": "palavras" },
+        { "id": "b", "text": "pão" },
+        { "id": "c", "text": "água" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Pão\" é o que a fome não é.",
+        "c": "\"Água\" também é negada."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 5–9 sustenta sobre buscar o Senhor?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Buscar o Senhor é amar o bem; no fim, ele restaura.",
+      "hint": "Una convite, juízo e restauração.",
+      "learningObjective": "Escolher a interpretação da etapa.",
+      "evidence": ["Amós 5:4"],
+      "options": [
+        { "id": "a", "text": "Buscar o Senhor é amar o bem; no fim, ele restaura" },
+        { "id": "b", "text": "Bastava ir a Betel para achar vida" },
+        { "id": "c", "text": "A fome anunciada é só falta de pão" },
+        { "id": "d", "text": "A tenda de Davi permanece caída" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:5 proíbe Betel.",
+        "c": "8:11 fala de ouvir a palavra.",
+        "d": "9:11 promete levantá-la."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela buscar o Senhor e a restauração na Escritura?",
+      "verseRef": "Amós 5:4",
+      "evidenceSpan": "Busquem-me e terão vida",
+      "feedbackCorrect": "Amós chama; Isaías e Atos ecoam busca e restauração.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o fio da etapa na Bíblia.",
+      "evidence": ["Amós 5:4", "Isaías 55:6–7", "Atos 15:16–17"],
+      "options": [
+        { "id": "a", "text": "Amós: busquem-me e terão vida" },
+        { "id": "b", "text": "Isaías: busquem o Senhor enquanto há tempo" },
+        { "id": "c", "text": "Atos: Tiago cita a tenda de Davi" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 5, Isaías 55 e Atos 15." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 7:8, o que o Senhor colocará no meio do seu povo?",
+      "verseRef": "Amós 7:8",
+      "evidenceSpan": "colocarei o prumo no meio do meu povo de Israel",
+      "feedbackCorrect": "O prumo marca o juízo que não se detém mais.",
+      "hint": "É o objeto que Amós viu.",
+      "learningObjective": "Lembrar o termo do juízo medido.",
+      "evidence": ["Amós 7:8"],
+      "options": [
+        { "id": "a", "text": "prumo" },
+        { "id": "b", "text": "altar" },
+        { "id": "c", "text": "trono" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é um altar; é o prumo.",
+        "c": "O trono da violência aparece no capítulo 6."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 9:11 a Atos 15:16–17?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Tiago cita Amós: a tenda de Davi se levanta para as nações.",
+      "hint": "Veja como o NT lê esta promessa.",
+      "learningObjective": "Ligar a tenda de Davi à leitura de Atos.",
+      "evidence": ["Amós 9:11", "Atos 15:16–17"],
+      "passageA": { "ref": "Amós 9:11" },
+      "passageB": { "ref": "Atos 15:16–17" },
+      "options": [
+        { "id": "a", "text": "Tiago cita a tenda de Davi" },
+        { "id": "b", "text": "Tenda caída sem cumprimento" },
+        { "id": "c", "text": "Promessa só para Edom" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Atos trata como cumprimento em curso.",
+        "c": "A promessa alcança as nações."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 9:15, toque o trecho que mostra a segurança final do povo.",
+      "verseRef": "Amós 9:15",
+      "evidenceSpan": "não serão mais arrancados dela",
+      "feedbackCorrect": "Plantados na terra, não serão mais arrancados.",
+      "hint": "Procure o verbo depois de \"não serão mais\".",
+      "learningObjective": "Sustentar a segurança na terra.",
+      "evidence": ["Amós 9:15"],
+      "options": [
+        { "id": "a", "text": "arrancados" },
+        { "id": "b", "text": "terra" },
+        { "id": "c", "text": "Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Terra\" é o lugar; a segurança está em não serem arrancados.",
+        "c": "\"Deus\" fala; o verbo da segurança é outro."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a urgência da palavra e o pão na Escritura?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "Amós anuncia fome da palavra; Jesus afirma viver dela.",
+      "hint": "Parta de Amós e avance a Mateus.",
+      "learningObjective": "Ver o fio da palavra que sustenta.",
+      "evidence": ["Amós 8:11", "Mateus 4:4"],
+      "options": [
+        { "id": "a", "text": "Amós: fome de ouvir a palavra" },
+        { "id": "b", "text": "Jesus: nem só de pão vive o homem" },
+        { "id": "c", "text": "A palavra sustenta mais que o pão" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 8 e Mateus 4; a síntese fecha." }
+    }
+  ]
+}

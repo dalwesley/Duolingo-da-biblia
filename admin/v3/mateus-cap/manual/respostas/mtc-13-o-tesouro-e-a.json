@@ -1,0 +1,510 @@
+{
+  "study": {
+    "passageRef": "Mateus 13:44–46",
+    "passages": [
+      {
+        "ref": "Mateus 13:44–46"
+      },
+      {
+        "ref": "Mateus 13:47–50"
+      }
+    ],
+    "context": "Jesus conta parábolas do reino dos céus no meio de Mateus 13. Depois do trigo e do joio, vêm três imagens curtas: um tesouro no campo, um negociante em busca de pérolas e uma rede lançada ao mar.",
+    "keyword": "tesouro",
+    "keywordGloss": "No texto, o reino dos céus é como um tesouro oculto no campo, um bem pelo qual o homem vende tudo.",
+    "focusQuestion": "O que você ainda segura quando o reino dos céus pesa mais do que isso?",
+    "reflectionPrompts": [
+      "O tesouro no campo",
+      "A pérola e a venda",
+      "A rede na praia"
+    ],
+    "facts": [
+      {
+        "text": "O reino dos céus é comparado a um tesouro oculto no campo.",
+        "evidenceRef": "Mateus 13:44",
+        "evidenceSpan": "O reino dos céus é semelhante a um tesouro oculto no campo"
+      },
+      {
+        "text": "Transbordante de alegria, o homem vende tudo o que tem e compra aquele campo.",
+        "evidenceRef": "Mateus 13:44",
+        "evidenceSpan": "transbordante de alegria, vai, vende tudo o que tem e compra aquele campo"
+      },
+      {
+        "text": "O reino dos céus é comparado a um negociante que busca boas pérolas.",
+        "evidenceRef": "Mateus 13:45",
+        "evidenceSpan": "um negociante que busca boas pérolas"
+      },
+      {
+        "text": "Ao encontrar uma pérola de grande valor, o negociante vendeu tudo e a comprou.",
+        "evidenceRef": "Mateus 13:46",
+        "evidenceSpan": "ao encontrar uma pérola de grande valor, vendeu tudo o que possuía e a comprou"
+      },
+      {
+        "text": "Os pescadores escolhem os bons para os cestos e descartam os ruins.",
+        "evidenceRef": "Mateus 13:48",
+        "evidenceSpan": "escolhem os bons para os cestos e descartam os ruins"
+      },
+      {
+        "text": "Na consumação do século, os anjos separarão os ímpios dos justos.",
+        "evidenceRef": "Mateus 13:49",
+        "evidenceSpan": "os anjos virão e separarão os ímpios dos justos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "tesouro",
+        "gloss": "Bem oculto no campo, imagem do reino dos céus pela qual o homem vende tudo."
+      },
+      {
+        "term": "pérola",
+        "gloss": "Bem de grande valor que o negociante compra depois de vender tudo o que possui."
+      },
+      {
+        "term": "alegria",
+        "gloss": "O ânimo de quem acha o tesouro e vai vender tudo para comprar o campo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O tesouro do campo é comprado",
+        "evidenceRef": "Mateus 13:44"
+      },
+      {
+        "label": "A pérola de valor é adquirida",
+        "evidenceRef": "Mateus 13:46"
+      },
+      {
+        "label": "A rede cheia passa pela escolha",
+        "evidenceRef": "Mateus 13:48"
+      },
+      {
+        "label": "Anjos separam ímpios e justos",
+        "evidenceRef": "Mateus 13:49"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Ao encontrar a pérola de grande valor, o negociante vende tudo o que possui e a compra.",
+        "marker": null,
+        "evidenceRef": "Mateus 13:46"
+      },
+      {
+        "kind": "contraste",
+        "text": "Na praia, os bons vão para os cestos e os ruins são descartados.",
+        "marker": null,
+        "evidenceRef": "Mateus 13:48"
+      },
+      {
+        "kind": "resultado",
+        "text": "A escolha da rede aponta para a separação que os anjos farão na consumação do século.",
+        "marker": "Assim",
+        "evidenceRef": "Mateus 13:49"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 6:33",
+        "bridge": "Reino em primeiro lugar"
+      },
+      {
+        "ref": "Lucas 14:33",
+        "bridge": "Renunciar a tudo"
+      },
+      {
+        "ref": "Mateus 8:12",
+        "bridge": "Choro e ranger"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A parábola ensina a esconder o tesouro para enganar o dono do campo.",
+        "why": "O relato destaca a alegria e a compra do campo. O ponto é o valor do reino, não um golpe."
+      },
+      {
+        "text": "Vender tudo é só perda, e o relato não fala em alegria.",
+        "why": "O homem vai transbordante de alegria vender tudo o que tem e comprar aquele campo."
+      },
+      {
+        "text": "O reino dos céus se compra com dinheiro, como quem paga um preço em moedas.",
+        "why": "Tesouro e pérola mostram o valor do reino. A resposta é abrir mão do que se tem, não um pagamento a Deus."
+      }
+    ],
+    "centralInsight": "O Reino vale mais que tudo, e quem o encontra deixa tudo com alegria.",
+    "anchorQuestion": "Com que atitude o homem vende tudo e compra o campo do tesouro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 13:45, o reino dos céus é semelhante a um negociante que busca boas pérolas.",
+      "verseRef": "Mateus 13:45",
+      "correctOptionId": "true",
+      "evidenceSpan": "um negociante que busca boas pérolas",
+      "feedbackCorrect": "O versículo compara o reino dos céus a um negociante que busca boas pérolas.",
+      "feedbackWrong": {
+        "false": "Releia Mateus 13:45. O reino dos céus é semelhante a esse negociante."
+      },
+      "hint": "Olhe a comparação que o versículo faz.",
+      "learningObjective": "Reconhecer a imagem do negociante que busca boas pérolas.",
+      "evidence": ["Mateus 13:45"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 13:44, toque o que estava oculto no campo.",
+      "verseRef": "Mateus 13:44",
+      "options": [
+        {"id": "a", "text": "um homem"},
+        {"id": "b", "text": "tesouro oculto"},
+        {"id": "c", "text": "aquele campo"}
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "um tesouro oculto no campo",
+      "feedbackCorrect": "O bem escondido no campo é o tesouro que o homem achou.",
+      "feedbackWrong": {
+        "a": "O homem é quem acha. O bem escondido é outro.",
+        "c": "O campo é o lugar que ele compra depois."
+      },
+      "hint": "Procure o bem que o texto diz estar escondido.",
+      "learningObjective": "Identificar o que estava oculto no campo.",
+      "evidence": ["Mateus 13:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 13:48, o que os pescadores fazem na praia?",
+      "verseRef": "Mateus 13:48",
+      "options": [
+        {"id": "a", "text": "Separam os bons nos cestos e descartam os ruins"},
+        {"id": "b", "text": "Guardam os ruins e devolvem os bons ao mar"},
+        {"id": "c", "text": "Vendem a rede cheia e compram um campo"},
+        {"id": "d", "text": "Entregam todos os peixes aos anjos ali"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "escolhem os bons para os cestos e descartam os ruins",
+      "feedbackCorrect": "Na praia, os bons vão para os cestos e os ruins são descartados.",
+      "feedbackWrong": {
+        "b": "O texto guarda os bons nos cestos e descarta os ruins.",
+        "c": "A venda do campo está na parábola do tesouro, não nesta cena da rede.",
+        "d": "Os anjos aparecem na explicação seguinte, não nesta escolha da praia."
+      },
+      "hint": "Veja o destino dos bons e o dos ruins.",
+      "learningObjective": "Observar a escolha dos peixes na praia.",
+      "evidence": ["Mateus 13:48"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 13:44 na ordem do texto.",
+      "verseRef": "Mateus 13:44",
+      "options": [
+        {"id": "a", "text": "O reino dos céus é semelhante a um tesouro oculto no campo"},
+        {"id": "b", "text": "o qual um homem, tendo-o achado, escondeu"},
+        {"id": "c", "text": "vende tudo o que tem e compra aquele campo"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O reino dos céus é semelhante a um tesouro oculto no campo",
+      "feedbackCorrect": "O versículo vai do tesouro achado ao homem que vende tudo e compra o campo.",
+      "feedbackWrong": {
+        "default": "Comece pelo tesouro no campo. A venda e a compra fecham o versículo."
+      },
+      "hint": "A frase começa pela comparação com o tesouro.",
+      "learningObjective": "Reconhecer a sequência de Mateus 13:44.",
+      "evidence": ["Mateus 13:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 13:44, o homem vai vender tudo transbordante de quê?",
+      "verseRef": "Mateus 13:44",
+      "options": [
+        {"id": "a", "text": "tristeza"},
+        {"id": "b", "text": "alegria"},
+        {"id": "c", "text": "medo"}
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "transbordante de alegria",
+      "feedbackCorrect": "Ele vai transbordante de alegria vender tudo e comprar o campo.",
+      "feedbackWrong": {
+        "a": "O texto nomeia alegria, não tristeza, nesse momento.",
+        "c": "O sentimento escrito ali é outro. Ele vai vender com alegria."
+      },
+      "hint": "Veja o sentimento nomeado antes de ele ir.",
+      "learningObjective": "Lembrar o ânimo de quem vende tudo pelo campo.",
+      "evidence": ["Mateus 13:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 13:47 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 13:47",
+      "passageA": {"ref": "Mateus 13:47"},
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus também compara o reino dos céus a uma rede no mar."
+      },
+      "options": [
+        {"id": "a", "text": "Imagem da rede"},
+        {"id": "b", "text": "Compra do campo"},
+        {"id": "c", "text": "Busca da pérola"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma rede lançada ao mar",
+      "feedbackCorrect": "O versículo compara o reino a uma rede lançada ao mar.",
+      "feedbackWrong": {
+        "b": "A compra do campo está na parábola do tesouro.",
+        "c": "A busca da pérola é a comparação anterior."
+      },
+      "hint": "Veja com o que o reino é comparado aqui.",
+      "learningObjective": "Ligar Mateus 13:47 à imagem da rede no mar.",
+      "evidence": ["Mateus 13:47"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 13:48, os pescadores guardam os ruins nos cestos e descartam os bons.",
+      "verseRef": "Mateus 13:48",
+      "correctOptionId": "false",
+      "evidenceSpan": "escolhem os bons para os cestos e descartam os ruins",
+      "feedbackCorrect": "O contraste é o inverso: os bons ficam nos cestos e os ruins saem.",
+      "feedbackWrong": {
+        "true": "O versículo põe os bons nos cestos e descarta os ruins."
+      },
+      "hint": "Compare o destino dos bons com o dos ruins.",
+      "learningObjective": "Compreender o contraste entre os peixes bons e os ruins.",
+      "evidence": ["Mateus 13:48"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 13:49, toque a palavra que marca o desfecho da parábola da rede.",
+      "verseRef": "Mateus 13:49",
+      "options": [
+        {"id": "a", "text": "Assim"},
+        {"id": "b", "text": "anjos"},
+        {"id": "c", "text": "justos"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim será",
+      "feedbackCorrect": "Assim abre a explicação e liga a rede ao que virá depois.",
+      "feedbackWrong": {
+        "b": "Anjos são quem age no desfecho. A palavra que o anuncia vem antes.",
+        "c": "Justos nomeiam um dos grupos, não o elo com a rede."
+      },
+      "hint": "Procure o termo que abre o versículo e aplica a rede.",
+      "learningObjective": "Reconhecer a palavra que aplica a parábola da rede.",
+      "evidence": ["Mateus 13:49"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que sequência Mateus 13:46 mostra depois que o negociante acha a pérola?",
+      "verseRef": "Mateus 13:46",
+      "options": [
+        {"id": "a", "text": "Ele guarda a pérola e segue com todos os bens"},
+        {"id": "b", "text": "Achar a pérola termina na venda de tudo"},
+        {"id": "c", "text": "A rede o faz devolver a pérola achada"},
+        {"id": "d", "text": "Os anjos compram a pérola no lugar dele"}
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vendeu tudo o que possuía e a comprou",
+      "feedbackCorrect": "Depois do achado, ele vende tudo o que possui e compra a pérola.",
+      "feedbackWrong": {
+        "a": "Ele não fica com os bens. Vende tudo o que possui.",
+        "c": "A rede é outra parábola. Aqui ele compra a pérola.",
+        "d": "Quem vende e compra é o negociante, não os anjos."
+      },
+      "hint": "Siga o que ele faz com os bens depois do achado.",
+      "learningObjective": "Relacionar o achado da pérola com a venda de tudo.",
+      "evidence": ["Mateus 13:46"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança do tesouro até a escolha da rede?",
+      "verseRef": "Mateus 13:44",
+      "options": [
+        {"id": "a", "text": "O tesouro do campo é comprado"},
+        {"id": "b", "text": "A pérola de valor é adquirida"},
+        {"id": "c", "text": "A rede cheia passa pela escolha"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "vende tudo o que tem e compra aquele campo",
+      "feedbackCorrect": "O relato passa do campo comprado à pérola e, depois, à escolha na praia.",
+      "feedbackWrong": {
+        "default": "Comece no campo, passe pela pérola e termine na escolha da rede."
+      },
+      "hint": "A primeira imagem é o tesouro. A rede vem por último.",
+      "learningObjective": "Compreender os três movimentos do tesouro à rede.",
+      "evidence": ["Mateus 13:44", "Mateus 13:46", "Mateus 13:48"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 13:46, o que o negociante fez com tudo o que possuía?",
+      "verseRef": "Mateus 13:46",
+      "options": [
+        {"id": "a", "text": "guardou"},
+        {"id": "b", "text": "escondeu"},
+        {"id": "c", "text": "vendeu"}
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "vendeu tudo o que possuía",
+      "feedbackCorrect": "Ao achar a pérola, ele vendeu tudo o que possuía e a comprou.",
+      "feedbackWrong": {
+        "a": "Ele não guarda os bens. O verbo é o da venda.",
+        "b": "Esconder o achado está na parábola do tesouro. Aqui ele vende."
+      },
+      "hint": "O verbo vem logo depois do valor da pérola.",
+      "learningObjective": "Identificar a ação que segue o achado da pérola.",
+      "evidence": ["Mateus 13:46"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 13:44 a Lucas 14:33?",
+      "verseRef": "Mateus 13:44",
+      "passageA": {"ref": "Mateus 13:44"},
+      "passageB": {"ref": "Lucas 14:33"},
+      "options": [
+        {"id": "a", "text": "Triagem feita na praia"},
+        {"id": "b", "text": "Abrir mão de tudo"},
+        {"id": "c", "text": "Fornalha para os ímpios"}
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vende tudo o que tem",
+      "feedbackCorrect": "Lucas pede renunciar a tudo. O homem vende tudo o que tem pelo campo.",
+      "feedbackWrong": {
+        "a": "A triagem da rede não é o elo com Lucas 14:33.",
+        "c": "A fornalha está no fim da rede, não nesse convite a deixar os bens."
+      },
+      "hint": "Compare o que acontece com os bens nos dois textos.",
+      "learningObjective": "Relacionar a venda de tudo em Mateus 13:44 ao chamado de Lucas 14:33.",
+      "evidence": ["Mateus 13:44", "Lucas 14:33"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Mateus 13:49 reserva aos anjos a separação dos ímpios e dos justos na consumação do século.",
+      "verseRef": "Mateus 13:49",
+      "correctOptionId": "true",
+      "evidenceSpan": "os anjos virão e separarão os ímpios dos justos",
+      "feedbackCorrect": "O texto situa a separação na consumação do século e a entrega aos anjos.",
+      "feedbackWrong": {
+        "false": "O versículo diz que os anjos virão separar ímpios e justos na consumação do século."
+      },
+      "hint": "Veja quem age e em que momento o texto situa a cena.",
+      "learningObjective": "Interpretar a separação como obra dos anjos na consumação do século.",
+      "evidence": ["Mateus 13:49"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 13:46, toque o trecho que mostra o peso da pérola encontrada.",
+      "verseRef": "Mateus 13:46",
+      "options": [
+        {"id": "a", "text": "grande valor"},
+        {"id": "b", "text": "a comprou"},
+        {"id": "c", "text": "o que possuía"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma pérola de grande valor",
+      "feedbackCorrect": "Grande valor é o que mede a pérola e explica a venda de tudo.",
+      "feedbackWrong": {
+        "b": "Comprar é a resposta dele. O peso da pérola está nas palavras anteriores.",
+        "c": "Isso nomeia os bens que ele tinha, não o peso da pérola."
+      },
+      "hint": "Procure o que mede a pérola, não o que ele fez depois.",
+      "learningObjective": "Localizar o trecho que sustenta o valor da pérola.",
+      "evidence": ["Mateus 13:46"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 13:44 sustenta sobre vender tudo pelo tesouro?",
+      "verseRef": "Mateus 13:44",
+      "options": [
+        {"id": "a", "text": "A alegria mostra que o reino vale mais que os bens"},
+        {"id": "b", "text": "O texto ensina um golpe contra o dono do campo"},
+        {"id": "c", "text": "Vender tudo é perda triste, sem alegria"},
+        {"id": "d", "text": "O reino se compra com um pagamento em moedas"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transbordante de alegria, vai, vende tudo o que tem",
+      "feedbackCorrect": "A alegria e a venda de tudo mostram um bem que vale mais que o resto.",
+      "feedbackWrong": {
+        "b": "O foco é a alegria e o valor, não uma aula de fraude.",
+        "c": "O homem vai transbordante de alegria. A venda não é perda sem ânimo.",
+        "d": "A cena é imagem de valor. Não descreve um pagamento em moedas a Deus."
+      },
+      "hint": "Compare cada leitura com o ânimo e a venda no versículo.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o valor do reino.",
+      "evidence": ["Mateus 13:44"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento estas parábolas sustentam?",
+      "verseRef": "Mateus 13:44",
+      "options": [
+        {"id": "a", "text": "O reino vale mais que os bens"},
+        {"id": "b", "text": "Quem acha deixa tudo com alegria"},
+        {"id": "c", "text": "No fim anjos separam os grupos"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "transbordante de alegria",
+      "feedbackCorrect": "O valor do reino leva à entrega alegre, e o fim separa os dois grupos.",
+      "feedbackWrong": {
+        "default": "Parta do valor, siga pela entrega alegre e termine na separação."
+      },
+      "hint": "O achado vem primeiro. A separação é o desfecho.",
+      "learningObjective": "Encadear o valor do reino, a entrega alegre e a separação final.",
+      "evidence": ["Mateus 13:44", "Mateus 13:46", "Mateus 13:49"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 13:46, que bem de grande valor o negociante encontrou?",
+      "verseRef": "Mateus 13:46",
+      "options": [
+        {"id": "a", "text": "rede"},
+        {"id": "b", "text": "pérola"},
+        {"id": "c", "text": "moeda"}
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "uma pérola de grande valor",
+      "feedbackCorrect": "A pérola de grande valor é o bem pelo qual ele vende tudo.",
+      "feedbackWrong": {
+        "a": "A rede é a parábola seguinte. Aqui o bem achado é outro.",
+        "c": "O texto não fala em moeda. Nomeia uma pérola de grande valor."
+      },
+      "hint": "É o objeto que ele encontra e compra.",
+      "learningObjective": "Lembrar o termo que carrega o valor nessa parábola.",
+      "evidence": ["Mateus 13:46"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 13:50 a Mateus 8:12?",
+      "verseRef": "Mateus 13:50",
+      "passageA": {"ref": "Mateus 13:50"},
+      "passageB": {"ref": "Mateus 8:12"},
+      "options": [
+        {"id": "a", "text": "Compra alegre do campo"},
+        {"id": "b", "text": "Negociante e a pérola"},
+        {"id": "c", "text": "Choro e ranger de dentes"}
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "choro e ranger de dentes",
+      "feedbackCorrect": "Os dois textos fecham com choro e ranger de dentes.",
+      "feedbackWrong": {
+        "a": "A compra do campo é outra parábola, não o elo com Mateus 8:12.",
+        "b": "O negociante não aparece em Mateus 8:12."
+      },
+      "hint": "Compare o desfecho que os dois textos anunciam.",
+      "learningObjective": "Ligar o desfecho de Mateus 13:50 à mesma imagem em Mateus 8:12.",
+      "evidence": ["Mateus 13:50", "Mateus 8:12"]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "slug": "jonas-cap",
+  "title": "Jonas",
+  "description": "Jonas capítulo a capítulo: a misericórdia do Senhor que alcança até Nínive.",
+  "icon": "🐋",
+  "color": "#5B8FA8",
+  "order": 39,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Fuga e misericórdia · cap. 1–4",
+      "icon": "zap",
+      "section": "Jonas",
+      "missions": [
+        {
+          "slug": "jnc-01-a-sorte-cai-sobre",
+          "title": "A sorte cai sobre Jonas",
+          "subtitle": "Jonas 1:7–16",
+          "intro": "No meio da tempestade, os marinheiros descobrem que Jonas foge do Senhor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Jonas 1:7–16",
+          "hookVerse": "E cada um dizia ao seu companheiro: Vinde, lancemos sortes, para que saibamos por causa de quem nos sobreveio este mal. E lançaram sortes, e a sorte caiu sobre Jonas. Então, lhe disseram: Declara-nos agora, por causa de quem nos sobreveio este mal. Qual é a tua ocupação? De onde vens? Qual é a tua terra? E de que povo és?",
+          "hookNote": "Fugir do Senhor põe outros em risco, e até pagãos temem o Deus de Jonas.",
+          "centralInsight": "Fugir do Senhor põe outros em risco, e até pagãos temem o Deus de Jonas.",
+          "objective": "Não fugir do Senhor"
+        },
+        {
+          "slug": "jnc-02-oracao-no-peixe",
+          "title": "Oração no peixe",
+          "subtitle": "Jonas 2:1–10",
+          "intro": "Do ventre do peixe, Jonas ora ao Senhor e lembra o templo santo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Jonas 2:1–10",
+          "hookVerse": "Jonas orou ao SENHOR, seu Deus, do ventre do peixe. E disse: Na minha angústia, clamei ao Senhor, e ele me respondeu; do ventre do abismo, gritei, e tu ouviste a minha voz.",
+          "hookNote": "Na angústia, Jonas clama: a salvação vem do Senhor.",
+          "centralInsight": "Na angústia, Jonas clama: a salvação vem do Senhor.",
+          "objective": "Clamar na angústia"
+        },
+        {
+          "slug": "jnc-03-ninive-se-arrepende",
+          "title": "Nínive se arrepende",
+          "subtitle": "Jonas 3:1–10",
+          "intro": "Jonas prega, e a cidade inteira, do rei ao povo, se volta do seu mau caminho.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Jonas 3:1–10",
+          "hookVerse": "E a palavra do Senhor veio a Jonas pela segunda vez, dizendo: Levante-se, vá à grande cidade de Nínive e anuncie contra ela a mensagem que eu te ordeno.",
+          "hookNote": "Quando o povo se arrepende, Deus se arrepende do mal que anunciara.",
+          "centralInsight": "Quando o povo se arrepende, Deus se arrepende do mal que anunciara.",
+          "objective": "Arrependimento que Deus ouve"
+        },
+        {
+          "slug": "jnc-04-a-planta-e-a",
+          "title": "A planta e a cidade",
+          "subtitle": "Jonas 4:1–11",
+          "intro": "Jonas se ira com a misericórdia de Deus, e o Senhor usa uma planta para ensinar.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Jonas 4:1–11",
+          "hookVerse": "E Jonas ficou extremamente desgostoso com isso e se irou grandemente. E orou ao Senhor e disse: Ah! Senhor! Não foi isso a palavra que eu disse, estando eu ainda na minha terra? Por isso, me antecipei, fugindo para Társis, pois sabia que Tu és Deus clemente, e misericordioso, tardio em irar-se, e grande em benignidade, e que Te arrependes do mal.",
+          "hookNote": "O Senhor tem compaixão de uma grande cidade; Jonas precisa aprender a mesma misericórdia.",
+          "centralInsight": "O Senhor tem compaixão de uma grande cidade; Jonas precisa aprender a mesma misericórdia.",
+          "objective": "Compartilhar a misericórdia de Deus"
+        },
+        {
+          "slug": "jnc-boss-1",
+          "title": "Travessia: Fuga e misericórdia",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a fuga, a oração, o arrependimento de Nínive e a planta.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Fuga e misericórdia",
+          "hookVerse": "Revise a fuga, a oração, o arrependimento de Nínive e a planta.",
+          "hookNote": "Revise a fuga, a oração, o arrependimento de Nínive e a planta.",
+          "centralInsight": "A misericórdia de Deus é maior do que a nossa vontade de fugir",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

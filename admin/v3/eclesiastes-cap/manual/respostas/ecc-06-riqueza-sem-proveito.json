@@ -1,0 +1,460 @@
+{
+  "study": {
+    "passageRef": "Eclesiastes 6:1–6",
+    "passages": [
+      { "ref": "Eclesiastes 6:1–6" },
+      { "ref": "Eclesiastes 6:7–9" }
+    ],
+    "context": "O Pregador vê um mal debaixo do sol: riquezas sem poder de usufruir, desejo que não se farta e a vantagem do que os olhos veem.",
+    "keyword": "usufruir",
+    "keywordGloss": "O poder de saborear o que se tem — sem isso, a riqueza vira aflição.",
+    "focusQuestion": "Onde você acumula sem conseguir saborear o que Deus já deu?",
+    "reflectionPrompts": ["Ter sem saborear", "Apetite sem fim", "Vista dos olhos"],
+    "facts": [
+      {
+        "text": "Há quem receba riquezas, bens e honra, mas Deus não lhe concede poder para usufruir.",
+        "evidenceRef": "Eclesiastes 6:2",
+        "evidenceSpan": "Deus não lhe concede o poder para usufruir disso"
+      },
+      {
+        "text": "Um estranho é quem consome o que aquele homem não usufrui.",
+        "evidenceRef": "Eclesiastes 6:2",
+        "evidenceSpan": "sendo um estranho quem o consome"
+      },
+      {
+        "text": "Melhor é o nascido morto do que quem não se fartou do bem nem teve sepultura.",
+        "evidenceRef": "Eclesiastes 6:3",
+        "evidenceSpan": "Melhor é o nascido morto do que aquele homem"
+      },
+      {
+        "text": "Todo o trabalho do homem é para a boca, e o apetite nunca se satisfaz.",
+        "evidenceRef": "Eclesiastes 6:7",
+        "evidenceSpan": "nunca se satisfaz o seu apetite"
+      },
+      {
+        "text": "Melhor é a vista dos olhos do que o vaguear da alma.",
+        "evidenceRef": "Eclesiastes 6:9",
+        "evidenceSpan": "Melhor é a vista dos olhos do que o vaguear da alma"
+      },
+      {
+        "text": "Isso também é vaidade e correr atrás do vento.",
+        "evidenceRef": "Eclesiastes 6:9",
+        "evidenceSpan": "também isso é vaidade e correr atrás do vento"
+      }
+    ],
+    "keyTerms": [
+      { "term": "usufruir", "gloss": "Saborear de fato o que se recebeu; sem isso a riqueza aflige." },
+      { "term": "apetite", "gloss": "O desejo que o trabalho alimenta e nunca satisfaz sozinho." },
+      { "term": "vista", "gloss": "O que se vê e se recebe no presente, melhor que vaguear." }
+    ],
+    "structure": [
+      { "label": "Riqueza sem poder de usufruir", "evidenceRef": "Eclesiastes 6:1–2" },
+      { "label": "Vida longa sem fartar-se do bem", "evidenceRef": "Eclesiastes 6:3–6" },
+      { "label": "O apetite nunca se satisfaz", "evidenceRef": "Eclesiastes 6:7–8" },
+      { "label": "Melhor a vista dos olhos que o vaguear", "evidenceRef": "Eclesiastes 6:9" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Deus deu riquezas; porém não concede o poder de usufruir.",
+        "marker": "porém",
+        "evidenceRef": "Eclesiastes 6:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O trabalho é para a boca; no entanto o apetite nunca se satisfaz.",
+        "marker": "no entanto",
+        "evidenceRef": "Eclesiastes 6:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Vaguear da alma sem se contentar é vaidade e correr atrás do vento.",
+        "marker": null,
+        "evidenceRef": "Eclesiastes 6:9"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 12:19–20", "bridge": "Riqueza sem vida segura" },
+      { "ref": "1 Timóteo 6:6–8", "bridge": "Contentamento com o suficiente" },
+      { "ref": "Eclesiastes 2:24", "bridge": "Desfrutar vem da mão de Deus" }
+    ],
+    "misreadings": [
+      {
+        "text": "Ter muito já garante alegria automática.",
+        "why": "6:2 mostra riquezas sem poder de usufruir."
+      },
+      {
+        "text": "O apetite humano se farta só com mais trabalho.",
+        "why": "6:7 diz que o apetite nunca se satisfaz."
+      },
+      {
+        "text": "Vaguear da alma é melhor que a vista dos olhos.",
+        "why": "6:9 afirma o contrário: melhor a vista dos olhos."
+      }
+    ],
+    "centralInsight": "Ter sem saborear é vaidade: o desejo sem freio nunca se farta.",
+    "anchorQuestion": "Segundo Eclesiastes 6:9, o que é melhor do que o vaguear da alma?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Eclesiastes 6:2, Deus pode dar riquezas e ainda assim não conceder o poder de usufruir.",
+      "verseRef": "Eclesiastes 6:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Deus não lhe concede o poder para usufruir disso",
+      "feedbackCorrect": "O texto separa ter e poder saborear.",
+      "feedbackWrong": { "false": "Releia 6:2: falta o poder para usufruir." },
+      "hint": "Veja o que Deus não concede depois de dar riquezas.",
+      "learningObjective": "Observar a diferença entre ter e usufruir.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 6:9, toque o que é melhor do que o vaguear da alma.",
+      "verseRef": "Eclesiastes 6:9",
+      "options": [
+        { "id": "a", "text": "vista dos olhos" },
+        { "id": "b", "text": "atrás do vento" },
+        { "id": "c", "text": "também isso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Melhor é a vista dos olhos",
+      "feedbackCorrect": "Melhor é a vista dos olhos do que o vaguear da alma.",
+      "feedbackWrong": {
+        "b": "Correr atrás do vento é a vaidade final, não o melhor.",
+        "c": "Isso introduz a avaliação; o melhor é a vista."
+      },
+      "hint": "Veja o que o versículo chama de melhor.",
+      "learningObjective": "Identificar a vista dos olhos como o melhor.",
+      "evidence": ["Eclesiastes 6:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Eclesiastes 6:7, o que nunca se satisfaz?",
+      "verseRef": "Eclesiastes 6:7",
+      "options": [
+        { "id": "a", "text": "O apetite" },
+        { "id": "b", "text": "O estranho" },
+        { "id": "c", "text": "O nascido morto" },
+        { "id": "d", "text": "O sol" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca se satisfaz o seu apetite",
+      "feedbackCorrect": "O apetite nunca se satisfaz.",
+      "feedbackWrong": {
+        "b": "O estranho aparece em 6:2.",
+        "c": "O nascido morto está em 6:3.",
+        "d": "O sol não é o sujeito aqui."
+      },
+      "hint": "Leia o fim do versículo sobre a boca.",
+      "learningObjective": "Reconhecer o apetite que não se farta.",
+      "evidence": ["Eclesiastes 6:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Eclesiastes 6:9 na ordem do texto.",
+      "verseRef": "Eclesiastes 6:9",
+      "options": [
+        { "id": "a", "text": "Melhor é a vista dos olhos" },
+        { "id": "b", "text": "do que o vaguear da alma" },
+        { "id": "c", "text": "também isso é vaidade e correr atrás do vento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Melhor é a vista dos olhos do que o vaguear da alma",
+      "feedbackCorrect": "Primeiro o melhor; depois a comparação; por fim a vaidade.",
+      "feedbackWrong": { "default": "Comece pela vista dos olhos; o vento fecha." },
+      "hint": "Siga melhor → comparação → vaidade.",
+      "learningObjective": "Seguir a ordem literal de 6:9.",
+      "evidence": ["Eclesiastes 6:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Eclesiastes 6:7, o que nunca se satisfaz?",
+      "verseRef": "Eclesiastes 6:7",
+      "options": [
+        { "id": "a", "text": "apetite" },
+        { "id": "b", "text": "estranho" },
+        { "id": "c", "text": "sepultura" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca se satisfaz o seu apetite",
+      "feedbackCorrect": "O apetite nunca se satisfaz.",
+      "feedbackWrong": {
+        "b": "Estranho não é o sujeito deste versículo.",
+        "c": "Sepultura aparece em 6:3."
+      },
+      "hint": "Veja o sujeito de \"nunca se satisfaz\".",
+      "learningObjective": "Lembrar a palavra do desejo sem freio.",
+      "evidence": ["Eclesiastes 6:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Eclesiastes 6:2 comunica que se liga a este contexto?",
+      "verseRef": "Eclesiastes 6:2",
+      "passageA": { "ref": "Eclesiastes 6:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Pregador observa quem tem muito e ainda assim não consegue saborear."
+      },
+      "options": [
+        { "id": "a", "text": "Riqueza sem poder de usufruir" },
+        { "id": "b", "text": "Riqueza que sempre alegra" },
+        { "id": "c", "text": "Pobreza como único mal" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus não lhe concede o poder para usufruir disso",
+      "feedbackCorrect": "O contexto do mal aparece na riqueza sem usufruto.",
+      "feedbackWrong": {
+        "b": "O texto mostra aflição, não alegria automática.",
+        "c": "O mal aqui é ter sem saborear."
+      },
+      "hint": "Veja o que falta além das riquezas.",
+      "learningObjective": "Ligar o contexto à riqueza sem usufruto.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Eclesiastes 6:2, Deus deu riquezas; porém concede sempre o poder de usufruir.",
+      "verseRef": "Eclesiastes 6:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém, Deus não lhe concede o poder para usufruir disso",
+      "feedbackCorrect": "O \"porém\" marca o contraste: falta o poder de usufruir.",
+      "feedbackWrong": { "true": "O texto diz que Deus não concede esse poder." },
+      "hint": "Procure a palavra \"porém\".",
+      "learningObjective": "Ver o contraste entre ter e usufruir.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 6:2, toque a palavra que marca o contraste com as riquezas dadas.",
+      "verseRef": "Eclesiastes 6:2",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "honra" },
+        { "id": "c", "text": "estranho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, Deus não lhe concede o poder",
+      "feedbackCorrect": "\"Porém\" introduz a falta do poder de usufruir.",
+      "feedbackWrong": {
+        "b": "Honra faz parte do que foi dado, não do contraste.",
+        "c": "Estranho é quem consome; o marcador é outra palavra."
+      },
+      "hint": "Ache a palavra entre vírgulas no meio do versículo.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Eclesiastes 6:7 marca com \"no entanto\"?",
+      "verseRef": "Eclesiastes 6:7",
+      "options": [
+        { "id": "a", "text": "O trabalho alimenta a boca, mas o apetite não se farta" },
+        { "id": "b", "text": "O trabalho acaba com todo desejo" },
+        { "id": "c", "text": "O apetite se satisfaz só com riqueza" },
+        { "id": "d", "text": "A boca não precisa de trabalho algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no entanto, nunca se satisfaz o seu apetite",
+      "feedbackCorrect": "O contraste: trabalho para a boca, apetite sem satisfação.",
+      "feedbackWrong": {
+        "b": "O texto diz que o apetite nunca se satisfaz.",
+        "c": "A satisfação não vem automática da riqueza.",
+        "d": "O trabalho é para a boca."
+      },
+      "hint": "Leia o que vem depois de \"no entanto\".",
+      "learningObjective": "Relacionar trabalho e apetite insatisfatório.",
+      "evidence": ["Eclesiastes 6:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Eclesiastes 6:1–9.",
+      "verseRef": "Eclesiastes 6:7–9",
+      "options": [
+        { "id": "a", "text": "Riqueza sem poder de usufruir" },
+        { "id": "b", "text": "O apetite nunca se satisfaz" },
+        { "id": "c", "text": "Melhor a vista dos olhos que o vaguear" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Melhor é a vista dos olhos do que o vaguear da alma",
+      "feedbackCorrect": "Do ter sem saborear ao apetite e, por fim, à vista dos olhos.",
+      "feedbackWrong": { "default": "Comece pela riqueza sem usufruto; a vista fecha." },
+      "hint": "Siga ter → apetite → vista.",
+      "learningObjective": "Ordenar a estrutura do mal observado.",
+      "evidence": ["Eclesiastes 6:1–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Eclesiastes 6:7, que expressão marca o contraste com o trabalho da boca?",
+      "verseRef": "Eclesiastes 6:7",
+      "options": [
+        { "id": "a", "text": "entretanto" },
+        { "id": "b", "text": "embora" },
+        { "id": "c", "text": "no entanto" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "no entanto, nunca se satisfaz o seu apetite",
+      "feedbackCorrect": "\"No entanto\" carrega o contraste: o apetite não se farta.",
+      "feedbackWrong": {
+        "a": "O texto usa \"no entanto\", e não \"entretanto\".",
+        "b": "O texto não usa \"embora\" neste ponto."
+      },
+      "hint": "Veja a expressão antes de \"nunca se satisfaz\".",
+      "learningObjective": "Lembrar o marcador de contraste do apetite.",
+      "evidence": ["Eclesiastes 6:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 6:9 a 1 Timóteo 6:6–8?",
+      "verseRef": "Eclesiastes 6:9",
+      "passageA": { "ref": "Eclesiastes 6:9" },
+      "passageB": { "ref": "1 Timóteo 6:6–8" },
+      "options": [
+        { "id": "a", "text": "Contentamento com o suficiente" },
+        { "id": "b", "text": "Vaguear sem qualquer freio" },
+        { "id": "c", "text": "Acumular sem jamais olhar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Melhor é a vista dos olhos do que o vaguear da alma",
+      "feedbackCorrect": "Os dois textos valorizam contentar-se com o que se tem.",
+      "feedbackWrong": {
+        "b": "Eclesiastes prefere a vista ao vaguear.",
+        "c": "O ponto é receber o que os olhos veem."
+      },
+      "hint": "Compare a vista dos olhos com o contentamento.",
+      "learningObjective": "Ligar a vista dos olhos ao contentamento.",
+      "evidence": ["Eclesiastes 6:9", "1 Timóteo 6:6–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Eclesiastes 6:2–9 ensina que ter muito já garante alegria automática.",
+      "verseRef": "Eclesiastes 6:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Isso também é vaidade e uma grave aflição",
+      "feedbackCorrect": "Ter sem usufruir é chamado de vaidade e grave aflição.",
+      "feedbackWrong": { "true": "O texto chama isso de vaidade e aflição, não de alegria." },
+      "hint": "Veja como o versículo avalia o caso.",
+      "learningObjective": "Rejeitar a leitura de alegria automática pela riqueza.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 6:2, toque o trecho que sustenta a falta de sabor na riqueza.",
+      "verseRef": "Eclesiastes 6:2",
+      "options": [
+        { "id": "a", "text": "poder para usufruir" },
+        { "id": "b", "text": "bens e honra" },
+        { "id": "c", "text": "alma deseja" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o poder para usufruir disso",
+      "feedbackCorrect": "O que falta é o poder para usufruir.",
+      "feedbackWrong": {
+        "b": "Bens e honra foram dados; falta o usufruto.",
+        "c": "O desejo está presente; falta o poder de saborear."
+      },
+      "hint": "Veja o que Deus não concede.",
+      "learningObjective": "Sustentar com o texto a falta de usufruto.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Eclesiastes 6:1–9 sustenta sobre desejo e posse?",
+      "verseRef": "Eclesiastes 6:7–9",
+      "options": [
+        { "id": "a", "text": "Ter sem saborear é vaidade; o desejo sem freio não se farta" },
+        { "id": "b", "text": "Mais trabalho sempre satisfaz o apetite" },
+        { "id": "c", "text": "Vaguear da alma é melhor que a vista" },
+        { "id": "d", "text": "Riqueza sem usufruto ainda é plena alegria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca se satisfaz o seu apetite",
+      "feedbackCorrect": "Apetite insatisfatório e vista dos olhos sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "6:7 diz que o apetite nunca se satisfaz.",
+        "c": "6:9 prefere a vista dos olhos.",
+        "d": "6:2 chama isso de aflição."
+      },
+      "hint": "Una 6:2, 6:7 e 6:9.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Eclesiastes 6:7–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do ter ao contentamento?",
+      "verseRef": "Eclesiastes 6:8–9",
+      "options": [
+        { "id": "a", "text": "Riqueza chega sem poder de saborear" },
+        { "id": "b", "text": "O apetite continua sem se fartar" },
+        { "id": "c", "text": "Melhor receber o que os olhos veem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Melhor é a vista dos olhos do que o vaguear da alma",
+      "feedbackCorrect": "Do ter vazio ao apetite e, por fim, à vista que contenta.",
+      "feedbackWrong": { "default": "Comece pela riqueza sem usufruto; a vista fecha." },
+      "hint": "Siga ter → apetite → vista.",
+      "learningObjective": "Ver o encadeamento até o contentamento.",
+      "evidence": ["Eclesiastes 6:2–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Eclesiastes 6:2, que termo nomeia o poder que falta para saborear?",
+      "verseRef": "Eclesiastes 6:2",
+      "options": [
+        { "id": "a", "text": "usufruir" },
+        { "id": "b", "text": "acumular" },
+        { "id": "c", "text": "vender" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o poder para usufruir disso",
+      "feedbackCorrect": "Usufruir é o termo do poder de saborear o que se tem.",
+      "feedbackWrong": {
+        "b": "Ele já acumula; falta usufruir.",
+        "c": "O texto não fala de vender."
+      },
+      "hint": "Veja o verbo depois de \"poder para\".",
+      "learningObjective": "Lembrar o termo central do saborear.",
+      "evidence": ["Eclesiastes 6:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 6:2 a Lucas 12:19–20?",
+      "verseRef": "Eclesiastes 6:2",
+      "passageA": { "ref": "Eclesiastes 6:2" },
+      "passageB": { "ref": "Lucas 12:19–20" },
+      "options": [
+        { "id": "a", "text": "Riqueza sem vida segura" },
+        { "id": "b", "text": "Riqueza que salva sozinha" },
+        { "id": "c", "text": "Alegria garantida pelo celeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus não lhe concede o poder para usufruir disso",
+      "feedbackCorrect": "Os dois textos mostram riqueza que não garante a vida saboreada.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos trata a riqueza como salvação.",
+        "c": "Ambos questionam a segurança do acúmulo."
+      },
+      "hint": "Compare ter muito e ainda assim perder o usufruto.",
+      "learningObjective": "Ligar a riqueza sem usufruto à parábola do rico.",
+      "evidence": ["Eclesiastes 6:2", "Lucas 12:19–20"]
+    }
+  ]
+}

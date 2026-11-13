@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 143:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 143:1–6"
+      },
+      {
+        "ref": "Salmos 143:7–12"
+      }
+    ],
+    "context": "Ouve, Senhor, a minha oração; não entres em juízo com o teu servo. Ensina-me a fazer a tua vontade.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Ouve a minha oração",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Senhor, atende à minha oração; dá ouvidos às minhas súplicas. Responde-me, de acordo com a tua fide…",
+        "evidenceRef": "Salmos 143:1",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "E não entre em juízo com o teu.",
+        "evidenceRef": "Salmos 143:2",
+        "evidenceSpan": "E não entre em juízo com o teu"
+      },
+      {
+        "text": "Pois o inimigo tem perseguido a minha alma.",
+        "evidenceRef": "Salmos 143:3",
+        "evidenceSpan": "Pois o inimigo tem perseguido a minha alma"
+      },
+      {
+        "text": "Por isso, meu espírito se enfraquece dentro de mim, e meu coração se vê perturbado.",
+        "evidenceRef": "Salmos 143:4",
+        "evidenceSpan": "Por isso"
+      },
+      {
+        "text": "Lembro-me dos dias de antigamente.",
+        "evidenceRef": "Salmos 143:5",
+        "evidenceSpan": "Lembro-me dos dias de antigamente"
+      },
+      {
+        "text": "Estendo minhas mãos a ti.",
+        "evidenceRef": "Salmos 143:6",
+        "evidenceSpan": "Estendo minhas mãos a ti"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "atende",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Senhor atende à minha oração dá",
+        "evidenceRef": "Salmos 143:1"
+      },
+      {
+        "label": "E não entre em juízo com",
+        "evidenceRef": "Salmos 143:2"
+      },
+      {
+        "label": "Pois o inimigo tem perseguido a",
+        "evidenceRef": "Salmos 143:3"
+      },
+      {
+        "label": "Por isso meu espírito se enfraquece",
+        "evidenceRef": "Salmos 143:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 143:2"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 143:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Por isso\".",
+        "marker": "Por isso",
+        "evidenceRef": "Salmos 143:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      },
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Espírito desfalecido e sede de Deus: o servo pede caminho pela manhã."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Espírito desfalecido e sede de Deus: o servo pede caminho pela manhã.",
+    "anchorQuestion": "O que Salmos 143:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 143:1, senhor.",
+      "verseRef": "Salmos 143:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 143:1 afirma.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 143:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 143:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "atende"
+        },
+        {
+          "id": "c",
+          "text": "minha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 143:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 143:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois o inimigo tem perseguido a minha alma"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois o inimigo tem perseguido a minha alma",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 143:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 143:1 na ordem do texto.",
+      "verseRef": "Salmos 143:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "atende"
+        },
+        {
+          "id": "c",
+          "text": "à"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 143:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 143:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "isso"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "atende"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso",
+      "feedbackCorrect": "A palavra do versículo é «isso».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 143:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 143:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 143:1",
+      "passageA": {
+        "ref": "Salmos 143:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ouve, Senhor, a minha oração; não entres em juízo com o teu servo. Ensina-me a fazer a tua vontade."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 143:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 143:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 143:2 afirma.",
+      "evidence": [
+        "Salmos 143:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 143:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 143:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "não"
+        },
+        {
+          "id": "b",
+          "text": "entre"
+        },
+        {
+          "id": "c",
+          "text": "juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 143:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 143:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 143:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 143:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 143:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor atende à minha oração dá"
+        },
+        {
+          "id": "b",
+          "text": "E não entre em juízo"
+        },
+        {
+          "id": "c",
+          "text": "Pois o inimigo tem perseguido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 143:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 143:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "inimigo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "atende"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "inimigo",
+      "feedbackCorrect": "A palavra do versículo é «inimigo».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 143:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 143:1 a 2 Coríntios 1:3.",
+      "verseRef": "Salmos 143:1",
+      "passageA": {
+        "ref": "Salmos 143:1"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus de toda consolação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 143:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 143:12 afirma.",
+      "evidence": [
+        "Salmos 143:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 143:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 143:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "por"
+        },
+        {
+          "id": "b",
+          "text": "tua"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por",
+      "feedbackCorrect": "O versículo destaca «tua».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 143:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 143:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 143:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembro-me dos dias de antigamente",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 143:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 143:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 143:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 143:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembro-me"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "atende"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembro-me",
+      "feedbackCorrect": "A palavra do versículo é «Lembro-me».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 143:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 143:1 a Salmos 46:1.",
+      "verseRef": "Salmos 143:1",
+      "passageA": {
+        "ref": "Salmos 143:1"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 143:1"
+      ]
+    }
+  ]
+}

@@ -11,6 +11,8 @@ import '../firebase_options.dart';
 import '../l10n/l10n_global.dart';
 import '../models/pilgrim_medal_catalog.dart';
 import '../models/recognition.dart';
+import '../models/room_week.dart';
+import '../models/room_plan.dart';
 import '../models/study_room.dart';
 import '../models/trail_gift.dart';
 import '../models/companion_invite.dart';
@@ -867,6 +869,9 @@ class BackendService extends ChangeNotifier {
     'trailAnswerTotal',
     'domainAnswerCorrect',
     'domainAnswerTotal',
+    'weekAnswerCorrect',
+    'weekAnswerTotal',
+    'bibleChapterReadOn',
     'missionCompletedOn',
     'postcardsOn',
     'postcardRefs',
@@ -1459,6 +1464,7 @@ class BackendService extends ChangeNotifier {
     List<String> playDates = const [],
     RoomKind kind = RoomKind.celula,
     int? weeklyGoalSteps,
+    bool pilot = false,
   }) async {
     if (!isActive) return null;
     final trimmed = name.trim();
@@ -1479,6 +1485,8 @@ class BackendService extends ChangeNotifier {
               'createdAt': FieldValue.serverTimestamp(),
               if (weeklyGoalSteps != null && weeklyGoalSteps > 0)
                 'weeklyGoalSteps': weeklyGoalSteps,
+              // Regra: só nasce piloto se users/{uid}.groupsPilot.
+              if (pilot) 'pilot': true,
             });
           });
         } on StateError {
@@ -1641,6 +1649,217 @@ class BackendService extends ChangeNotifier {
     }
   }
 
+  /// Grava no próprio membro quantos capítulos da leitura da semana leu.
+  Future<bool> markRoomReading(String code, String week, int done) =>
+      _mergeOwnRoomMember(code, {'readingWeek': week, 'readingDone': done});
+
+  /// Crescimento do acerto na semana (só a variação, em pontos).
+  Future<bool> markRoomGrowth(String code, String week, int pts) =>
+      _mergeOwnRoomMember(code, {'growthWeek': week, 'growthPts': pts});
+
+  /// Selo "Fiel na semana": o próprio membro guarda a semana (idempotente).
+  Future<bool> claimRoomSeal(String code, String week) =>
+      _mergeOwnRoomMember(code, {
+        'sealWeeks': FieldValue.arrayUnion([week]),
+      });
+
+  Future<bool> _mergeOwnRoomMember(
+    String code,
+    Map<String, Object> fields,
+  ) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      final ref = _db.doc('rooms/$normalized/members/$_uid');
+      final doc = await ref.get();
+      final data = doc.data();
+      if (!doc.exists || data == null) return false;
+      // A regra do membro exige o placar no mesmo write.
+      final xp = data['xp'] ?? data['steps'] ?? 0;
+      await ref.set({
+        'xp': xp,
+        'steps': xp,
+        ...fields,
+      }, SetOptions(merge: true));
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao gravar membro da sala: $e');
+      return false;
+    }
+  }
+
+  /// Progresso no propósito do grupo: o campo `plan` do próprio membro é
+  /// trocado inteiro (dias de outro propósito não sobram).
+  Future<bool> setRoomPlanProgress(String code, PlanProgress progress) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      final ref = _db.doc('rooms/$normalized/members/$_uid');
+      final doc = await ref.get();
+      final data = doc.data();
+      if (!doc.exists || data == null) return false;
+      // A regra do membro exige o placar no mesmo write.
+      final xp = data['xp'] ?? data['steps'] ?? 0;
+      await ref.set({
+        'xp': xp,
+        'steps': xp,
+        'plan': progress.toMap(),
+      }, SetOptions(mergeFields: ['xp', 'steps', 'plan']));
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao gravar propósito do membro: $e');
+      return false;
+    }
+  }
+
+  /// Resposta à pergunta do dia do propósito (uma por pessoa por dia).
+  Future<bool> saveRoomPlanAnswer({
+    required String code,
+    required String planId,
+    required int day,
+    required String name,
+    required String text,
+  }) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    final photo = userPhotoUrl?.trim();
+    try {
+      await _db
+          .doc(
+            'rooms/$normalized/answers/${PlanAnswer.dayKey(planId, day)}'
+            '/by/$_uid',
+          )
+          .set({
+            'uid': _uid,
+            'name': name.trim().isEmpty
+                ? L10n.current.cornerSomeone
+                : name.trim(),
+            'text': text.trim(),
+            'planId': planId,
+            'day': day,
+            'at': FieldValue.serverTimestamp(),
+            if (photo != null && photo.isNotEmpty) 'photoUrl': photo,
+          });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao gravar resposta do propósito: $e');
+      return false;
+    }
+  }
+
+  Future<List<PlanAnswer>> fetchRoomPlanAnswers(
+    String code,
+    String planId,
+    int day,
+  ) async {
+    if (!isActive) return const [];
+    final normalized = code.trim().toUpperCase();
+    try {
+      final snap = await _db
+          .collection(
+            'rooms/$normalized/answers/${PlanAnswer.dayKey(planId, day)}/by',
+          )
+          .limit(60)
+          .get();
+      final list = <PlanAnswer>[];
+      for (final d in snap.docs) {
+        final text = (d.data()['text'] as String?)?.trim() ?? '';
+        if (text.isEmpty) continue;
+        DateTime? at;
+        try {
+          at = (d.data()['at'] as Timestamp?)?.toDate();
+        } catch (_) {}
+        list.add(
+          PlanAnswer(
+            uid: d.id,
+            name: ProgressService.displayName(d.data()['name'] as String?),
+            text: text,
+            photoUrl: _readPhotoUrl(d.data()),
+            at: at,
+          ),
+        );
+      }
+      list.sort(
+        (a, b) => (a.at ?? DateTime(2100)).compareTo(b.at ?? DateTime(2100)),
+      );
+      return list;
+    } catch (e) {
+      debugPrint('Falha ao ler respostas do propósito: $e');
+      return const [];
+    }
+  }
+
+  /// Apaga uma resposta (a própria, ou qualquer uma se for o líder).
+  Future<bool> deleteRoomPlanAnswer({
+    required String code,
+    required String planId,
+    required int day,
+    required String uid,
+  }) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      await _db
+          .doc(
+            'rooms/$normalized/answers/${PlanAnswer.dayKey(planId, day)}'
+            '/by/$uid',
+          )
+          .delete();
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao apagar resposta do propósito: $e');
+      return false;
+    }
+  }
+
+  /// Líder fecha a semana: um doc por semana em `rooms/{code}/closings`.
+  Future<bool> saveRoomClosing(String code, RoomClosing closing) async {
+    if (!isActive) return false;
+    final normalized = code.trim().toUpperCase();
+    try {
+      await _db.doc('rooms/$normalized/closings/${closing.week}').set({
+        ...closing.toMap(),
+        'closedBy': _uid,
+        'closedAt': FieldValue.serverTimestamp(),
+      });
+      return true;
+    } catch (e) {
+      debugPrint('Falha ao fechar a semana do grupo: $e');
+      return false;
+    }
+  }
+
+  /// Último fechamento do grupo (ou null).
+  Future<RoomClosing?> fetchLatestRoomClosing(String code) async {
+    if (!isActive) return null;
+    final normalized = code.trim().toUpperCase();
+    try {
+      final snap = await _db
+          .collection('rooms/$normalized/closings')
+          .orderBy('week', descending: true)
+          .limit(1)
+          .get();
+      if (snap.docs.isEmpty) return null;
+      return RoomClosing.fromMap(snap.docs.first.data());
+    } catch (e) {
+      debugPrint('Falha ao ler fechamento do grupo: $e');
+      return null;
+    }
+  }
+
+  /// Líder do piloto de grupos (`users/{uid}.groupsPilot`, gravado pelo
+  /// painel): cria grupo mesmo com `groups_enabled` desligado.
+  Future<bool> fetchGroupsPilot() async {
+    if (!isActive) return false;
+    try {
+      final doc = await _db.doc('users/$_uid').get();
+      return doc.data()?['groupsPilot'] == true;
+    } catch (e) {
+      debugPrint('Falha ao ler piloto de grupos: $e');
+      return false;
+    }
+  }
+
   /// Chama alguém do grupo para estudar. Um chamado por pessoa por dia
   /// (o doc é por destinatário). Push sai pela function `onRoomNudge`.
   Future<bool> sendRoomNudge({
@@ -1648,6 +1867,7 @@ class BackendService extends ChangeNotifier {
     required String toUid,
     required String fromName,
     required String roomName,
+    String? kind,
   }) async {
     if (!isActive || toUid == _uid) return false;
     final normalized = code.trim().toUpperCase();
@@ -1662,6 +1882,8 @@ class BackendService extends ChangeNotifier {
             ? L10n.current.cornerSomeone
             : fromName.trim(),
         'roomName': roomName,
+        // Recado pronto (RoomWaveKind); a function escolhe o texto.
+        'kind': ?kind,
         'day': today,
         'at': FieldValue.serverTimestamp(),
       });
@@ -1682,6 +1904,7 @@ class BackendService extends ChangeNotifier {
     required String toUid,
     required String toName,
     String? toPhotoUrl,
+    bool pilot = false,
   }) async {
     if (!isActive || toUid.isEmpty || toUid == _uid) return false;
     final normalized = code.trim().toUpperCase();
@@ -1706,6 +1929,8 @@ class BackendService extends ChangeNotifier {
         if (photo != null && photo.isNotEmpty) 'fromPhotoUrl': photo,
         if (toPhotoUrl != null && toPhotoUrl.trim().isNotEmpty)
           'toPhotoUrl': toPhotoUrl.trim(),
+        // Grupo do piloto: o convite aparece mesmo com os grupos fechados.
+        if (pilot) 'pilot': true,
       });
       return true;
     } catch (e) {
@@ -1779,6 +2004,15 @@ class BackendService extends ChangeNotifier {
             portraitStyle: _readPortraitStyle(d.data()) ?? PortraitStyle.photo,
             studyDone: d.data()['studyDone'] as String?,
             weekDays: _readWeekDays(d.data(), week),
+            readingDone: (d.data()['readingDone'] as num?)?.toInt() ?? 0,
+            readingWeek: d.data()['readingWeek'] as String?,
+            sealWeeks: [
+              for (final w in (d.data()['sealWeeks'] as List?) ?? const [])
+                if (w is String) w,
+            ],
+            growthPts: (d.data()['growthPts'] as num?)?.toInt(),
+            growthWeek: d.data()['growthWeek'] as String?,
+            plan: PlanProgress.fromMap(d.data()['plan']),
           ),
       ];
       members.sort((a, b) => b.steps.compareTo(a.steps));

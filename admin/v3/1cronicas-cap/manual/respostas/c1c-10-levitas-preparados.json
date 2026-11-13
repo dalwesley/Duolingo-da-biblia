@@ -1,0 +1,704 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 15:3–11",
+    "passages": [
+      {
+        "ref": "1 Crônicas 15:3–11"
+      }
+    ],
+    "context": "Depois do episódio de Uzá, Davi prepara o transporte da arca: convoca Israel, reúne filhos de Arão e levitas, e chama Zadoque e Abiatar.",
+    "keyword": "levitas",
+    "keywordGloss": "São reunidos com os filhos de Arão para o serviço de trazer a arca.",
+    "focusQuestion": "Que preparação santa você tem adiado por pressa?",
+    "reflectionPrompts": [
+      "Arca a Jerusalém",
+      "Filhos de Arão",
+      "Zadoque e Abiatar"
+    ],
+    "facts": [
+      {
+        "text": "Davi convocou todo o Israel em Jerusalém para trazer a arca do SENHOR.",
+        "evidenceRef": "1 Crônicas 15:3",
+        "evidenceSpan": "para trazer a arca do SENHOR ao lugar que Ele havia preparado"
+      },
+      {
+        "text": "Davi reuniu os filhos de Arão e os levitas.",
+        "evidenceRef": "1 Crônicas 15:4",
+        "evidenceSpan": "reuniu os filhos de Arão e os levitas"
+      },
+      {
+        "text": "Dos filhos de Coat, Uriel era o chefe, com cento e vinte irmãos.",
+        "evidenceRef": "1 Crônicas 15:5",
+        "evidenceSpan": "Uriel, que era o chefe e seus irmãos cento e vinte"
+      },
+      {
+        "text": "Davi convocou os sacerdotes Zadoque e Abiatar.",
+        "evidenceRef": "1 Crônicas 15:11",
+        "evidenceSpan": "convocou os sacerdotes Zadoque e Abiatar"
+      },
+      {
+        "text": "Também convocou os levitas Uriel, Asaías, Joel, Semaías, Eliel e Aminadabe.",
+        "evidenceRef": "1 Crônicas 15:11",
+        "evidenceSpan": "e os levitas Uriel, Asaías, Joel, Semaías, Eliel e Aminadabe"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "levitas",
+        "gloss": "Reunidos com os filhos de Arão para o serviço da arca."
+      },
+      {
+        "term": "Arão",
+        "gloss": "Seus filhos são reunidos por Davi junto com os levitas."
+      },
+      {
+        "term": "Zadoque",
+        "gloss": "Sacerdote convocado com Abiatar para o serviço."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Davi convoca Israel para trazer a arca",
+        "evidenceRef": "1 Crônicas 15:3"
+      },
+      {
+        "label": "Reúne filhos de Arão e famílias levíticas",
+        "evidenceRef": "1 Crônicas 15:4–10"
+      },
+      {
+        "label": "Convoca sacerdotes e chefes levitas",
+        "evidenceRef": "1 Crônicas 15:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Convoca Israel para trazer a arca ao lugar preparado.",
+        "marker": "para",
+        "evidenceRef": "1 Crônicas 15:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois de reunir as famílias, convoca sacerdotes e chefes.",
+        "marker": "Então",
+        "evidenceRef": "1 Crônicas 15:11"
+      },
+      {
+        "kind": "sequência",
+        "text": "Primeiro reúne Arão e levitas; depois nomeia os chefes.",
+        "marker": null,
+        "evidenceRef": "1 Crônicas 15:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 4:15",
+        "bridge": "Levitas carregam as coisas santas"
+      },
+      {
+        "ref": "1 Crônicas 13:10",
+        "bridge": "Uzá ferido ao tocar a arca"
+      },
+      {
+        "ref": "2 Samuel 6:13",
+        "bridge": "Arca levada com cuidado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Qualquer um podia carregar a arca sem preparação.",
+        "why": "Davi reúne especificamente filhos de Arão e levitas."
+      },
+      {
+        "text": "Davi dispensa sacerdotes neste transporte.",
+        "why": "Ele convoca Zadoque e Abiatar."
+      },
+      {
+        "text": "A arca volta sem lugar preparado.",
+        "why": "O lugar já havia sido preparado."
+      }
+    ],
+    "centralInsight": "Só os escolhidos carregam a arca: Davi prepara sacerdotes e levitas para o serviço.",
+    "anchorQuestion": "Quem 1 Crônicas 15:4 diz que Davi reuniu para o serviço da arca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 15 —4, Davi reuniu apenas soldados, sem levitas.",
+      "verseRef": "1 Crônicas 15:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "reuniu os filhos de Arão e os levitas",
+      "feedbackCorrect": "Ele reuniu filhos de Arão e levitas.",
+      "feedbackWrong": {
+        "true": "Releia 15:4."
+      },
+      "hint": "Veja quem foi reunido.",
+      "learningObjective": "Observar quem Davi reuniu.",
+      "evidence": [
+        "1 Crônicas 15:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 15:11, toque um dos sacerdotes convocados.",
+      "verseRef": "1 Crônicas 15:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "convocou"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "sacerdotes"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar Zadoque.",
+      "evidence": [
+        "1 Crônicas 15:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 15:3, para que Davi convocou Israel em Jerusalém?",
+      "verseRef": "1 Crônicas 15:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para trazer a arca do SENHOR ao lugar preparado"
+        },
+        {
+          "id": "b",
+          "text": "Para ungir Saul de novo"
+        },
+        {
+          "id": "c",
+          "text": "Para destruir o templo"
+        },
+        {
+          "id": "d",
+          "text": "Para fugir dos filisteus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para trazer a arca do SENHOR ao lugar que Ele havia preparado",
+      "feedbackCorrect": "O propósito é trazer a arca.",
+      "feedbackWrong": {
+        "b": "Não há unção de Saul aqui.",
+        "c": "Não há destruição.",
+        "d": "Não é fuga."
+      },
+      "hint": "Leia o propósito da convocação.",
+      "learningObjective": "Identificar o propósito.",
+      "evidence": [
+        "1 Crônicas 15:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 15:4 na ordem do texto.",
+      "verseRef": "1 Crônicas 15:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Davi reuniu"
+        },
+        {
+          "id": "b",
+          "text": "os filhos de Arão"
+        },
+        {
+          "id": "c",
+          "text": "e os levitas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "reuniu os filhos de Arão e os levitas",
+      "feedbackCorrect": "Davi, Arão e levitas.",
+      "feedbackWrong": {
+        "default": "Comece por Davi."
+      },
+      "hint": "O versículo começa com Davi.",
+      "learningObjective": "Reconhecer a ordem de 15:4.",
+      "evidence": [
+        "1 Crônicas 15:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 15:4, Davi reuniu os filhos de Arão e os _____.",
+      "verseRef": "1 Crônicas 15:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "filisteus"
+        },
+        {
+          "id": "b",
+          "text": "levitas"
+        },
+        {
+          "id": "c",
+          "text": "moabitas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "e os levitas",
+      "feedbackCorrect": "Levitas são reunidos com os filhos de Arão.",
+      "feedbackWrong": {
+        "a": "Não são filisteus.",
+        "c": "Não são moabitas."
+      },
+      "hint": "Veja o segundo grupo reunido.",
+      "learningObjective": "Lembrar os levitas.",
+      "evidence": [
+        "1 Crônicas 15:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 15:3 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 15:3",
+      "passageA": {
+        "ref": "1 Crônicas 15:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Davi prepara o transporte da arca com o povo e o lugar pronto."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Arca ao lugar preparado"
+        },
+        {
+          "id": "b",
+          "text": "Arca sem nenhum lugar"
+        },
+        {
+          "id": "c",
+          "text": "Israel dispensado da arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ao lugar que Ele havia preparado",
+      "feedbackCorrect": "O lugar preparado sustenta a preparação.",
+      "feedbackWrong": {
+        "b": "O lugar já estava preparado.",
+        "c": "Israel é convocado."
+      },
+      "hint": "Veja o destino da arca.",
+      "learningObjective": "Ligar à preparação.",
+      "evidence": [
+        "1 Crônicas 15:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 15 —3, Davi convoca Israel sem finalidade declarada.",
+      "verseRef": "1 Crônicas 15:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "para trazer a arca do SENHOR",
+      "feedbackCorrect": "Para marca o propósito: trazer a arca.",
+      "feedbackWrong": {
+        "true": "Releia a finalidade."
+      },
+      "hint": "Procure a palavra para.",
+      "learningObjective": "Compreender o propósito.",
+      "evidence": [
+        "1 Crônicas 15:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 15:3, toque a palavra que marca o propósito da convocação.",
+      "verseRef": "1 Crônicas 15:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "convocou"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "convocou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "1 Crônicas 15:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 15:11 se relaciona com 15:4?",
+      "verseRef": "1 Crônicas 15:4–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois de reunir as famílias, convoca sacerdotes e chefes"
+        },
+        {
+          "id": "b",
+          "text": "Dispensa Arão e os levitas"
+        },
+        {
+          "id": "c",
+          "text": "Substitui a arca por ídolos"
+        },
+        {
+          "id": "d",
+          "text": "Cancela a convocação de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "convocou os sacerdotes Zadoque e Abiatar",
+      "feedbackCorrect": "A sequência vai da reunião geral à convocação nomeada.",
+      "feedbackWrong": {
+        "b": "Ele os reúne e convoca.",
+        "c": "O alvo é a arca.",
+        "d": "Israel já fora convocado."
+      },
+      "hint": "Veja o que Então introduz.",
+      "learningObjective": "Relacionar reunião e convocação.",
+      "evidence": [
+        "1 Crônicas 15:4–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Crônicas 15:3–11?",
+      "verseRef": "1 Crônicas 15:3–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel é convocado para a arca"
+        },
+        {
+          "id": "b",
+          "text": "Famílias levíticas são reunidas"
+        },
+        {
+          "id": "c",
+          "text": "Sacerdotes e chefes são convocados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "convocou os sacerdotes Zadoque e Abiatar",
+      "feedbackCorrect": "Povo, famílias e líderes.",
+      "feedbackWrong": {
+        "default": "Os nomes fecham a cena."
+      },
+      "hint": "Siga a ordem do trecho.",
+      "learningObjective": "Compreender a preparação.",
+      "evidence": [
+        "1 Crônicas 15:3–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 15:11, a palavra _____ introduz a convocação dos sacerdotes.",
+      "verseRef": "1 Crônicas 15:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Nunca"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Então Davi convocou os sacerdotes",
+      "feedbackCorrect": "Então marca a sequência.",
+      "feedbackWrong": {
+        "a": "Não é Porém.",
+        "c": "Não é Nunca."
+      },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de sequência.",
+      "evidence": [
+        "1 Crônicas 15:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 15:4 a Números 4:15?",
+      "verseRef": "1 Crônicas 15:4",
+      "passageA": {
+        "ref": "1 Crônicas 15:4"
+      },
+      "passageB": {
+        "ref": "Números 4:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levitas no serviço santo"
+        },
+        {
+          "id": "b",
+          "text": "Filisteus na arca"
+        },
+        {
+          "id": "c",
+          "text": "Exílio sem culto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reuniu os filhos de Arão e os levitas",
+      "feedbackCorrect": "Os dois ligam levitas ao serviço das coisas santas.",
+      "feedbackWrong": {
+        "b": "Não são filisteus.",
+        "c": "Não é exílio."
+      },
+      "hint": "Compare quem serve o santo.",
+      "learningObjective": "Relacionar Crônicas a Números.",
+      "evidence": [
+        "1 Crônicas 15:4",
+        "Números 4:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Crônicas 15 —3–11 apresenta o transporte da arca como serviço preparado com sacerdotes e levitas.",
+      "verseRef": "1 Crônicas 15:3–11",
+      "correctOptionId": "true",
+      "evidenceSpan": "reuniu os filhos de Arão e os levitas",
+      "feedbackCorrect": "A preparação com os escolhidos sustenta a leitura.",
+      "feedbackWrong": {
+        "false": "Veja quem Davi reúne e convoca."
+      },
+      "hint": "Una 15:4 e 15:11.",
+      "learningObjective": "Interpretar a preparação santa.",
+      "evidence": [
+        "1 Crônicas 15:3–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 15:3, toque o trecho que sustenta o destino preparado da arca.",
+      "verseRef": "1 Crônicas 15:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "trazer"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar o lugar preparado.",
+      "evidence": [
+        "1 Crônicas 15:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Crônicas 15:3–11 sustenta?",
+      "verseRef": "1 Crônicas 15:3–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A arca exige preparação com os escolhidos para o serviço"
+        },
+        {
+          "id": "b",
+          "text": "Qualquer um carrega a arca sem ordem"
+        },
+        {
+          "id": "c",
+          "text": "Sacerdotes são dispensados do transporte"
+        },
+        {
+          "id": "d",
+          "text": "Davi age sem reunir o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reuniu os filhos de Arão e os levitas",
+      "feedbackCorrect": "Convocação, famílias e sacerdotes formam a leitura.",
+      "feedbackWrong": {
+        "b": "Há escolha explícita de Arão e levitas.",
+        "c": "Zadoque e Abiatar são convocados.",
+        "d": "Todo Israel é convocado."
+      },
+      "hint": "Una convocação e nomes.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "1 Crônicas 15:3–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o cuidado com a arca?",
+      "verseRef": "1 Crônicas 15:3–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uzá mostra o perigo do zelo sem ordem"
+        },
+        {
+          "id": "b",
+          "text": "Davi prepara levitas e sacerdotes"
+        },
+        {
+          "id": "c",
+          "text": "A arca é trazida com o povo reunido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para trazer a arca do SENHOR",
+      "feedbackCorrect": "Juízo anterior, preparação e transporte.",
+      "feedbackWrong": {
+        "default": "Comece pelo episódio de Uzá."
+      },
+      "hint": "Siga a história.",
+      "learningObjective": "Encadear cuidado com a arca.",
+      "evidence": [
+        "1 Crônicas 13:10",
+        "1 Crônicas 15:4",
+        "1 Crônicas 15:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 15:11, Davi convocou os sacerdotes Zadoque e _____.",
+      "verseRef": "1 Crônicas 15:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saul"
+        },
+        {
+          "id": "b",
+          "text": "Abiatar"
+        },
+        {
+          "id": "c",
+          "text": "Joabe"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Zadoque e Abiatar",
+      "feedbackCorrect": "Abiatar é o outro sacerdote nomeado.",
+      "feedbackWrong": {
+        "a": "Não é Saul.",
+        "c": "Não é Joabe."
+      },
+      "hint": "Veja o segundo sacerdote.",
+      "learningObjective": "Lembrar Abiatar.",
+      "evidence": [
+        "1 Crônicas 15:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 15:3 a 1 Crônicas 13:10?",
+      "verseRef": "1 Crônicas 15:3",
+      "passageA": {
+        "ref": "1 Crônicas 15:3"
+      },
+      "passageB": {
+        "ref": "1 Crônicas 13:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Arca santa exige cuidado"
+        },
+        {
+          "id": "b",
+          "text": "Fim de todo culto"
+        },
+        {
+          "id": "c",
+          "text": "Vitória sem preparação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para trazer a arca do SENHOR",
+      "feedbackCorrect": "O juízo sobre Uzá explica a preparação cuidadosa.",
+      "feedbackWrong": {
+        "b": "O culto continua.",
+        "c": "Há preparação explícita."
+      },
+      "hint": "Compare o cuidado com a arca.",
+      "learningObjective": "Ligar preparação ao juízo anterior.",
+      "evidence": [
+        "1 Crônicas 15:3",
+        "1 Crônicas 13:10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Êxodo 3:15–20",
+    "passages": [
+      {
+        "ref": "Êxodo 3:15–22"
+      }
+    ],
+    "context": "No monte, Deus chama Moisés. O povo está no Egito; Moisés deve dizer quem o envia e o que Faraó fará.",
+    "keyword": "SENHOR",
+    "keywordGloss": "O nome pelo qual Deus quer ser lembrado de geração em geração.",
+    "focusQuestion": "Que nome de Deus você precisa lembrar quando a missão parece grande demais?",
+    "reflectionPrompts": [
+      "Nome eterno",
+      "Mão poderosa",
+      "Não de mãos vazias"
+    ],
+    "facts": [
+      {
+        "text": "Deus manda Moisés dizer: o SENHOR, o Deus dos pais, me enviou.",
+        "evidenceRef": "Êxodo 3:15",
+        "evidenceSpan": "O SENHOR, o Deus de vossos pais"
+      },
+      {
+        "text": "Este é o nome de Deus eternamente.",
+        "evidenceRef": "Êxodo 3:15",
+        "evidenceSpan": "este é o meu nome eternamente"
+      },
+      {
+        "text": "Deus promete fazer o povo subir da aflição do Egito.",
+        "evidenceRef": "Êxodo 3:17",
+        "evidenceSpan": "Farei vocês subir da aflição do Egito"
+      },
+      {
+        "text": "Deus sabe que o rei não deixará ir sem mão poderosa.",
+        "evidenceRef": "Êxodo 3:19",
+        "evidenceSpan": "não vos deixará ir, a menos que seja forçado por uma mão poderosa"
+      },
+      {
+        "text": "O povo não sairá de mãos vazias.",
+        "evidenceRef": "Êxodo 3:21",
+        "evidenceSpan": "não sairão de mãos vazias"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SENHOR",
+        "gloss": "O nome com que Deus se apresenta aos pais e às gerações."
+      },
+      {
+        "term": "mão poderosa",
+        "gloss": "A força com que Deus fará Faraó deixar o povo ir."
+      },
+      {
+        "term": "maravilhas",
+        "gloss": "As obras com que Deus ferirá o Egito."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus revela o nome eterno",
+        "evidenceRef": "Êxodo 3:15"
+      },
+      {
+        "label": "Moisés deve reunir os anciãos",
+        "evidenceRef": "Êxodo 3:16–17"
+      },
+      {
+        "label": "Pedido a Faraó e recusa prevista",
+        "evidenceRef": "Êxodo 3:18–19"
+      },
+      {
+        "label": "Mão de Deus e favor ao sair",
+        "evidenceRef": "Êxodo 3:20–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Deus sabe que o rei não deixará ir, a menos que seja forçado.",
+        "marker": "entretanto",
+        "evidenceRef": "Êxodo 3:19"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso Deus estenderá a mão e ferirá o Egito.",
+        "marker": "Portanto",
+        "evidenceRef": "Êxodo 3:20"
+      },
+      {
+        "kind": "propósito",
+        "text": "O pedido a Faraó é para sacrificar ao Senhor no deserto.",
+        "marker": "a fim de",
+        "evidenceRef": "Êxodo 3:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 22:32",
+        "bridge": "Deus de Abraão vivo"
+      },
+      {
+        "ref": "Atos 7:32–34",
+        "bridge": "Deus envia Moisés"
+      },
+      {
+        "ref": "Hebreus 11:27",
+        "bridge": "Moisés perseverou vendo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus espera que Faraó concorde de boa vontade.",
+        "why": "Ele já sabe que só a mão poderosa fará o rei ceder."
+      },
+      {
+        "text": "O nome do Senhor é só para aquela geração.",
+        "why": "Ele diz: nome eternamente, de geração em geração."
+      },
+      {
+        "text": "O povo sairá pobre e humilhado.",
+        "why": "Deus promete favor e que não sairão de mãos vazias."
+      }
+    ],
+    "centralInsight": "O Senhor, o Deus dos pais, envia Moisés e promete tirar o povo com mão forte.",
+    "anchorQuestion": "Qual nome Deus manda Moisés dizer aos filhos de Israel?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Deus diz que o SENHOR, o Deus dos pais, é o seu nome eternamente.",
+      "verseRef": "Êxodo 3:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "este é o meu nome eternamente",
+      "feedbackCorrect": "Ele declara: este é o meu nome eternamente, de geração em geração.",
+      "feedbackWrong": {
+        "false": "Releia o fim de Êxodo 3:15: nome eternamente."
+      },
+      "hint": "Olhe o que Deus diz sobre o seu nome.",
+      "learningObjective": "Observar a declaração do nome eterno.",
+      "evidence": [
+        "Êxodo 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 3:15, toque o nome com que Deus se apresenta.",
+      "verseRef": "Êxodo 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O SENHOR, o Deus de vossos pais",
+      "feedbackCorrect": "O SENHOR é o nome que deve ser dito aos filhos de Israel.",
+      "feedbackWrong": {
+        "a": "Moisés é quem ouve; o nome é o SENHOR.",
+        "c": "Israel recebe a mensagem; o nome é o SENHOR."
+      },
+      "hint": "Quem Deus manda Moisés nomear aos pais?",
+      "learningObjective": "Identificar o nome SENHOR.",
+      "evidence": [
+        "Êxodo 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 3:21, como o povo sairá do Egito?",
+      "verseRef": "Êxodo 3:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Despojados e pobres"
+        },
+        {
+          "id": "b",
+          "text": "Não de mãos vazias"
+        },
+        {
+          "id": "c",
+          "text": "Sem nenhum favor"
+        },
+        {
+          "id": "d",
+          "text": "Só com o que Faraó der de graça"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não sairão de mãos vazias",
+      "feedbackCorrect": "Deus concede favor; não sairão de mãos vazias.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: não de mãos vazias.",
+        "c": "Há favor diante dos egípcios.",
+        "d": "O favor vem de Deus; as mulheres pedirão joias."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar a promessa de não sair vazio.",
+      "evidence": [
+        "Êxodo 3:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 3:19–20 na ordem do texto.",
+      "verseRef": "Êxodo 3:19–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu sei, entretanto, que o rei do Egito não vos deixará ir"
+        },
+        {
+          "id": "b",
+          "text": "a menos que seja forçado por uma mão poderosa"
+        },
+        {
+          "id": "c",
+          "text": "Portanto, estenderei minha mão e ferirei o Egito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "estenderei minha mão e ferirei o Egito",
+      "feedbackCorrect": "Recusa prevista, condição da mão, então a ação de Deus.",
+      "feedbackWrong": {
+        "default": "Comece pelo que Deus sabe sobre o rei."
+      },
+      "hint": "A mão de Deus vem depois da recusa.",
+      "learningObjective": "Reconhecer a sequência recusa–mão.",
+      "evidence": [
+        "Êxodo 3:19–20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 3:20, com o que Deus ferirá o Egito?",
+      "verseRef": "Êxodo 3:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "exércitos"
+        },
+        {
+          "id": "b",
+          "text": "maravilhas"
+        },
+        {
+          "id": "c",
+          "text": "palavras"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "com todas as minhas maravilhas",
+      "feedbackCorrect": "Ele ferirá o Egito com todas as suas maravilhas.",
+      "feedbackWrong": {
+        "a": "O texto fala de maravilhas, não de exércitos aqui.",
+        "c": "São maravilhas no meio do Egito."
+      },
+      "hint": "O que Deus fará no meio do Egito?",
+      "learningObjective": "Lembrar as maravilhas.",
+      "evidence": [
+        "Êxodo 3:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 3:15 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 3:15",
+      "passageA": {
+        "ref": "Êxodo 3:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Moisés deve dizer aos israelitas quem o envia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O SENHOR envia Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Moisés escolhe o próprio nome"
+        },
+        {
+          "id": "c",
+          "text": "Os pais inventam o nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me enviou a vocês",
+      "feedbackCorrect": "O SENHOR, Deus dos pais, é quem envia Moisés.",
+      "feedbackWrong": {
+        "b": "Deus dá o nome e a mensagem.",
+        "c": "O nome vem de Deus, não dos pais."
+      },
+      "hint": "Quem fala: me enviou a vocês?",
+      "learningObjective": "Ligar o nome ao envio.",
+      "evidence": [
+        "Êxodo 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 3:19, Deus espera que o rei do Egito deixe o povo ir sem pressão.",
+      "verseRef": "Êxodo 3:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "não vos deixará ir, a menos que seja forçado por uma mão poderosa",
+      "feedbackCorrect": "Deus já sabe: só a mão poderosa fará o rei ceder.",
+      "feedbackWrong": {
+        "true": "Releia: não deixará ir a menos que seja forçado."
+      },
+      "hint": "Veja a condição que Deus menciona.",
+      "learningObjective": "Compreender a previsão da recusa.",
+      "evidence": [
+        "Êxodo 3:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 3:19, toque a palavra que marca o contraste no saber de Deus.",
+      "verseRef": "Êxodo 3:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "sei"
+        },
+        {
+          "id": "b",
+          "text": "entretanto"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Eu sei, entretanto, que o rei",
+      "feedbackCorrect": "\"Entretanto\" introduz a recusa prevista do rei.",
+      "feedbackWrong": {
+        "a": "\"Sei\" é o verbo; o contraste é \"entretanto\".",
+        "c": "\"Rei\" é o sujeito da recusa, não o marcador."
+      },
+      "hint": "Palavra entre vírgulas após \"sei\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 3:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 3:20 se relaciona com a recusa do rei em 3:19?",
+      "verseRef": "Êxodo 3:19–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso Deus estenderá a mão e ferirá o Egito"
+        },
+        {
+          "id": "b",
+          "text": "Por isso Moisés deve desistir da missão"
+        },
+        {
+          "id": "c",
+          "text": "Por isso o povo deve negociar sozinho"
+        },
+        {
+          "id": "d",
+          "text": "Por isso Deus muda o nome revelado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, estenderei minha mão",
+      "feedbackCorrect": "\"Portanto\" liga a recusa à ação da mão de Deus.",
+      "feedbackWrong": {
+        "b": "Deus não cancela o envio; age com poder.",
+        "c": "A ação é de Deus, não só do povo.",
+        "d": "O nome já foi dado; a mão vem a seguir."
+      },
+      "hint": "Repare na palavra \"Portanto\".",
+      "learningObjective": "Relacionar recusa e mão poderosa.",
+      "evidence": [
+        "Êxodo 3:19–20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a promessa em Êxodo 3:19–21?",
+      "verseRef": "Êxodo 3:19–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rei não deixará ir sem mão poderosa"
+        },
+        {
+          "id": "b",
+          "text": "Deus estenderá a mão e ferirá o Egito"
+        },
+        {
+          "id": "c",
+          "text": "O povo sairá com favor, não vazio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não sairão de mãos vazias",
+      "feedbackCorrect": "Recusa, maravilhas, favor na saída.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa do rei."
+      },
+      "hint": "A saída com favor é o fim.",
+      "learningObjective": "Compreender o movimento da promessa.",
+      "evidence": [
+        "Êxodo 3:19–21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 3:20, que palavra liga a ação de Deus à recusa do rei?",
+      "verseRef": "Êxodo 3:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Talvez"
+        },
+        {
+          "id": "b",
+          "text": "Portanto"
+        },
+        {
+          "id": "c",
+          "text": "Nunca"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Portanto, estenderei minha mão",
+      "feedbackCorrect": "\"Portanto\" mostra o resultado: Deus age.",
+      "feedbackWrong": {
+        "a": "Não há dúvida; há consequência.",
+        "c": "A palavra do texto é Portanto."
+      },
+      "hint": "Primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": [
+        "Êxodo 3:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 3:15 a Mateus 22:32?",
+      "verseRef": "Êxodo 3:15",
+      "passageA": {
+        "ref": "Êxodo 3:15"
+      },
+      "passageB": {
+        "ref": "Mateus 22:32"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus de Abraão vivo"
+        },
+        {
+          "id": "b",
+          "text": "Anjos no monte Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Templo de Jerusalém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Deus de Abraão, o Deus de Isaque",
+      "feedbackCorrect": "Jesus cita o Deus de Abraão como Deus de vivos.",
+      "feedbackWrong": {
+        "b": "Mateus 22:32 fala dos patriarcas, não de anjos.",
+        "c": "O tema é o Deus dos pais, não o templo."
+      },
+      "hint": "Quais nomes de pais aparecem nos dois?",
+      "learningObjective": "Relacionar o Deus dos pais no NT.",
+      "evidence": [
+        "Êxodo 3:15",
+        "Mateus 22:32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 3:15–20 sustenta que o Senhor envia Moisés com nome eterno e age com mão poderosa diante da recusa de Faraó.",
+      "verseRef": "Êxodo 3:15–20",
+      "correctOptionId": "true",
+      "evidenceSpan": "estenderei minha mão e ferirei o Egito",
+      "feedbackCorrect": "Nome eterno, envio claro e mão poderosa diante da recusa.",
+      "feedbackWrong": {
+        "false": "O texto une nome, envio e mão contra a recusa."
+      },
+      "hint": "Una o nome em 3:15 e a mão em 3:20.",
+      "learningObjective": "Interpretar envio e poder juntos.",
+      "evidence": [
+        "Êxodo 3:15",
+        "Êxodo 3:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 3:15, toque o trecho que mostra a duração do nome.",
+      "verseRef": "Êxodo 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "me enviou"
+        },
+        {
+          "id": "b",
+          "text": "eternamente"
+        },
+        {
+          "id": "c",
+          "text": "filhos de Israel"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "este é o meu nome eternamente",
+      "feedbackCorrect": "O nome é eternamente, de geração em geração.",
+      "feedbackWrong": {
+        "a": "\"Me enviou\" é a missão; a duração é eternamente.",
+        "c": "Os filhos recebem; a duração está em eternamente."
+      },
+      "hint": "Quanto tempo dura o nome?",
+      "learningObjective": "Sustentar a eternidade do nome.",
+      "evidence": [
+        "Êxodo 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 3:15–21 sustenta sobre a saída do Egito?",
+      "verseRef": "Êxodo 3:15–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus envia, prevê a recusa e tira com poder e favor"
+        },
+        {
+          "id": "b",
+          "text": "Faraó cederá de boa vontade sem sinais"
+        },
+        {
+          "id": "c",
+          "text": "O nome do Senhor vale só para Moisés"
+        },
+        {
+          "id": "d",
+          "text": "O povo sairá pobre e sem favor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não sairão de mãos vazias",
+      "feedbackCorrect": "Envio, recusa prevista, maravilhas e favor na saída.",
+      "feedbackWrong": {
+        "b": "Deus já sabe que só a mão poderosa fará ceder.",
+        "c": "O nome é eternamente, de geração em geração.",
+        "d": "Há favor; não sairão de mãos vazias."
+      },
+      "hint": "Una nome, mão e favor.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Êxodo 3:19–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do envio de Moisés?",
+      "verseRef": "Êxodo 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus revela o nome e envia Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Atos retoma o Deus que envia Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus celebra a perseverança de Moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "me enviou a vocês",
+      "evidence": [
+        "Êxodo 3:15",
+        "Atos 7:32–34",
+        "Hebreus 11:27"
+      ],
+      "feedbackCorrect": "Do nome no monte à memória em Atos e à fé em Hebreus.",
+      "feedbackWrong": {
+        "default": "Comece por Êxodo; depois Atos e Hebreus."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver o envio atravessar a Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 3:19, por qual mão o rei será forçado?",
+      "verseRef": "Êxodo 3:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "humana"
+        },
+        {
+          "id": "b",
+          "text": "poderosa"
+        },
+        {
+          "id": "c",
+          "text": "estrangeira"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "forçado por uma mão poderosa",
+      "feedbackCorrect": "Só uma mão poderosa fará o rei deixar ir.",
+      "feedbackWrong": {
+        "a": "O texto diz mão poderosa.",
+        "c": "Não é mão estrangeira; é poderosa."
+      },
+      "hint": "Qual adjetivo descreve a mão?",
+      "learningObjective": "Lembrar o termo da força de Deus.",
+      "evidence": [
+        "Êxodo 3:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 3:15 a Atos 7:32–34?",
+      "verseRef": "Êxodo 3:15",
+      "passageA": {
+        "ref": "Êxodo 3:15"
+      },
+      "passageB": {
+        "ref": "Atos 7:32–34"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus envia Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Construção do tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "Queda de Jericó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me enviou a vocês",
+      "feedbackCorrect": "Atos retoma o Deus dos pais que envia Moisés.",
+      "feedbackWrong": {
+        "b": "Ainda não é o tabernáculo neste elo.",
+        "c": "Jericó é outra história."
+      },
+      "hint": "O que Deus faz com Moisés nos dois textos?",
+      "learningObjective": "Ligar o envio em Êxodo e Atos.",
+      "evidence": [
+        "Êxodo 3:15",
+        "Atos 7:32–34"
+      ]
+    }
+  ]
+}

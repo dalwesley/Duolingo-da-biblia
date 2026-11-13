@@ -1,0 +1,721 @@
+{
+  "study": {
+    "passageRef": "Lucas 5:5–10",
+    "passages": [
+      {
+        "ref": "Lucas 5:5–10"
+      },
+      {
+        "ref": "Lucas 5:1–4"
+      },
+      {
+        "ref": "Lucas 5:11"
+      }
+    ],
+    "context": "Jesus estava à margem do lago de Genesaré, e a multidão o apertava para ouvir a palavra de Deus. Simão trabalhava na pesca com os parceiros, e os barcos estavam na beira do lago.",
+    "keyword": "palavra",
+    "keywordGloss": "Na fala de Simão, a palavra de Jesus é o motivo para lançar a rede depois da noite vazia.",
+    "focusQuestion": "Quando a sua experiência diz que não vale a pena, você obedece à palavra de Jesus?",
+    "reflectionPrompts": [
+      "A noite no lago",
+      "A rede sob a palavra",
+      "O pecador chamado"
+    ],
+    "facts": [
+      {
+        "text": "Os pescadores tinham desembarcado e lavavam as redes.",
+        "evidenceRef": "Lucas 5:2",
+        "evidenceSpan": "havendo desembarcado, lavavam as redes"
+      },
+      {
+        "text": "Jesus manda Simão ir para o largo e lançar as redes.",
+        "evidenceRef": "Lucas 5:4",
+        "evidenceSpan": "Vá para o largo e lance suas redes para pescar"
+      },
+      {
+        "text": "Simão diz que a noite inteira nada apanhou e que lançará a rede sob a palavra.",
+        "evidenceRef": "Lucas 5:5",
+        "evidenceSpan": "trabalhamos a noite toda e nada apanhamos, mas, sob tua palavra lançarei a rede"
+      },
+      {
+        "text": "Ao fazerem o que foi pedido, apanharam uma grande quantidade de peixes.",
+        "evidenceRef": "Lucas 5:6",
+        "evidenceSpan": "ao fazerem isso, apanharam uma grande quantidade de peixes"
+      },
+      {
+        "text": "Simão Pedro se prostra aos pés de Jesus e se declara pecador.",
+        "evidenceRef": "Lucas 5:8",
+        "evidenceSpan": "Senhor, retira-te de mim, pois sou pecador"
+      },
+      {
+        "text": "Jesus diz a Simão que ele será pescador de homens.",
+        "evidenceRef": "Lucas 5:10",
+        "evidenceSpan": "de agora em diante você será pescador de homens"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "palavra",
+        "gloss": "É o motivo que Simão dá para lançar a rede depois da noite sem resultado."
+      },
+      {
+        "term": "pecador",
+        "gloss": "É o nome que Simão dá a si mesmo ao ver o que Jesus fez na pesca."
+      },
+      {
+        "term": "pescador de homens",
+        "gloss": "É o ofício novo que Jesus anuncia a Simão, no lugar da pesca de peixes."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus ensina do barco de Simão",
+        "evidenceRef": "Lucas 5:3"
+      },
+      {
+        "label": "Simão lança a rede sob a palavra",
+        "evidenceRef": "Lucas 5:5"
+      },
+      {
+        "label": "A pesca enche os dois barcos",
+        "evidenceRef": "Lucas 5:6–7"
+      },
+      {
+        "label": "Pedro confessa o pecado e segue",
+        "evidenceRef": "Lucas 5:8–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Simão relata a noite sem peixe e, em contraste, lança a rede sob a palavra de Jesus.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 5:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao lançarem a rede como Jesus pediu, apanham uma grande quantidade de peixes.",
+        "marker": "ao fazerem isso",
+        "evidenceRef": "Lucas 5:6"
+      },
+      {
+        "kind": "causa",
+        "text": "A grande quantidade de peixes causa o espanto de Pedro e dos companheiros.",
+        "marker": "Pois",
+        "evidenceRef": "Lucas 5:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 4:19",
+        "bridge": "Chamado para pescar gente"
+      },
+      {
+        "ref": "João 21:6",
+        "bridge": "A palavra enche a rede"
+      },
+      {
+        "ref": "Marcos 1:18",
+        "bridge": "Deixaram as redes"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Pedro pede que Jesus se afaste porque recusa o chamado.",
+        "why": "Ele se declara pecador. Em seguida deixa tudo e segue Jesus."
+      },
+      {
+        "text": "Pedro reage só com medo da pesca, sem se reconhecer pecador.",
+        "why": "O motivo da fala está explícito: ele diz que é pecador."
+      },
+      {
+        "text": "A grande quantidade de peixes veio do esforço da noite de trabalho.",
+        "why": "Simão diz que a noite não deu nada. A quantidade aparece ao lançarem a rede sob a palavra."
+      }
+    ],
+    "centralInsight": "Diante do poder de Jesus, Pedro se vê pecador, e Jesus o chama para pescar gente.",
+    "anchorQuestion": "O que Jesus disse que Simão seria de agora em diante?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 5:2, os pescadores lavavam as redes dentro dos barcos, no meio do lago.",
+      "verseRef": "Lucas 5:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "havendo desembarcado, lavavam as redes",
+      "feedbackCorrect": "Eles já tinham desembarcado. Os barcos estavam parados, e eles lavavam as redes.",
+      "feedbackWrong": {
+        "true": "Os barcos estavam parados na beira. Os pescadores já haviam saído e lavavam as redes."
+      },
+      "hint": "Veja onde estavam os pescadores e o que faziam com as redes.",
+      "learningObjective": "Observar que os pescadores já tinham desembarcado e lavavam as redes.",
+      "evidence": [
+        "Lucas 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 5:8, toque quem se prostrou diante de Jesus.",
+      "verseRef": "Lucas 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "aos pés"
+        },
+        {
+          "id": "b",
+          "text": "Simão Pedro"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Simão Pedro, ao ver isso, prostrou-se",
+      "feedbackCorrect": "Quem se prostra aos pés de Jesus é Simão Pedro, ao ver a pesca.",
+      "feedbackWrong": {
+        "a": "A expressão marca o lugar da postura.",
+        "c": "Senhor é o tratamento de Jesus na fala de Pedro."
+      },
+      "hint": "Procure o nome de quem cai diante de Jesus.",
+      "learningObjective": "Identificar quem se prostra diante de Jesus depois da pesca.",
+      "evidence": [
+        "Lucas 5:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 5:4, o que Jesus mandou Simão fazer?",
+      "verseRef": "Lucas 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ir para o largo e lançar as redes para pescar"
+        },
+        {
+          "id": "b",
+          "text": "Continuar na praia lavando as redes"
+        },
+        {
+          "id": "c",
+          "text": "Ensinar a multidão no lugar de Jesus"
+        },
+        {
+          "id": "d",
+          "text": "Afastar o barco só um pouco da praia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vá para o largo e lance suas redes para pescar",
+      "feedbackCorrect": "Jesus manda Simão ir para o largo e lançar as redes para pescar.",
+      "feedbackWrong": {
+        "b": "Lavar as redes é a cena anterior. A ordem agora é lançar as redes no largo.",
+        "c": "Quem ensinava do barco era Jesus. A ordem a Simão é ir pescar.",
+        "d": "Afastar um pouco da praia foi o pedido para ensinar. A ordem seguinte é ir para o largo."
+      },
+      "hint": "Leia a ordem que Jesus dá a Simão no fim do ensino.",
+      "learningObjective": "Identificar a ordem de Jesus para Simão lançar as redes no largo.",
+      "evidence": [
+        "Lucas 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte a fala de Simão em Lucas 5:5 na ordem do texto.",
+      "verseRef": "Lucas 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mestre, trabalhamos a noite toda"
+        },
+        {
+          "id": "b",
+          "text": "e nada apanhamos"
+        },
+        {
+          "id": "c",
+          "text": "sob tua palavra lançarei a rede"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mestre, trabalhamos a noite toda e nada apanhamos",
+      "feedbackCorrect": "A fala vai da noite vazia ao lançar da rede sob a palavra.",
+      "feedbackWrong": {
+        "default": "Comece pela noite de trabalho. O lançar da rede fecha a fala."
+      },
+      "hint": "A fala começa pelo tratamento Mestre.",
+      "learningObjective": "Reconhecer a ordem da resposta de Simão em Lucas 5:5.",
+      "evidence": [
+        "Lucas 5:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 5:5, sob que base Simão diz que lançará a rede?",
+      "verseRef": "Lucas 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "sorte"
+        },
+        {
+          "id": "b",
+          "text": "palavra"
+        },
+        {
+          "id": "c",
+          "text": "força"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sob tua palavra lançarei a rede",
+      "feedbackCorrect": "Simão lança a rede sob a palavra de Jesus, depois da noite sem peixe.",
+      "feedbackWrong": {
+        "a": "Sorte não entra na fala. A base que Simão nomeia é a palavra.",
+        "c": "A noite de esforço ficou vazia. Simão apoia o lançar na palavra."
+      },
+      "hint": "Olhe o termo que vem logo depois de sob tua.",
+      "learningObjective": "Lembrar a base concreta sobre a qual Simão lança a rede.",
+      "evidence": [
+        "Lucas 5:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 5:5 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 5:5",
+      "passageA": {
+        "ref": "Lucas 5:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Simão passou a noite no lago e, ainda assim, lançou a rede."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança na noite longa"
+        },
+        {
+          "id": "b",
+          "text": "Obediência à palavra dita"
+        },
+        {
+          "id": "c",
+          "text": "Cansaço que impede o passo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sob tua palavra lançarei a rede",
+      "feedbackCorrect": "A noite ficou vazia. Simão lança a rede sob a palavra de Jesus.",
+      "feedbackWrong": {
+        "a": "A noite é o relato do que falhou. O lançar se apoia na palavra.",
+        "c": "O cansaço da noite fica no relato. Ele ainda assim lança a rede."
+      },
+      "hint": "Veja em nome de que Simão decide lançar a rede.",
+      "learningObjective": "Ligar a fala de Simão ao fato de ele agir pela palavra de Jesus.",
+      "evidence": [
+        "Lucas 5:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 5:6, a grande quantidade de peixes veio antes de Simão lançar a rede.",
+      "verseRef": "Lucas 5:5–6",
+      "correctOptionId": "false",
+      "evidenceSpan": "ao fazerem isso, apanharam uma grande quantidade de peixes",
+      "feedbackCorrect": "A quantidade vem depois. Ao fazerem o que Jesus mandou, eles apanharam os peixes.",
+      "feedbackWrong": {
+        "true": "A expressão ao fazerem isso coloca a pesca depois do lançar da rede."
+      },
+      "hint": "Leia a frase que apresenta a quantidade de peixes.",
+      "learningObjective": "Compreender que a grande pesca resulta de lançar a rede como Jesus mandou.",
+      "evidence": [
+        "Lucas 5:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 5:5, toque a palavra que marca o contraste na fala de Simão.",
+      "verseRef": "Lucas 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "nada"
+        },
+        {
+          "id": "c",
+          "text": "Mestre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nada apanhamos, mas, sob tua palavra",
+      "feedbackCorrect": "Mas vira a fala: a noite foi vazia, e ele lançará a rede.",
+      "feedbackWrong": {
+        "b": "Nada descreve o resultado da noite de trabalho.",
+        "c": "Mestre é o tratamento que abre a fala."
+      },
+      "hint": "Procure o termo breve que muda a direção da fala.",
+      "learningObjective": "Reconhecer o marcador de contraste na resposta de Simão.",
+      "evidence": [
+        "Lucas 5:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Lucas 5:6 mostra entre o gesto de lançar a rede e os peixes?",
+      "verseRef": "Lucas 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazer o que foi pedido resulta na grande pesca"
+        },
+        {
+          "id": "b",
+          "text": "Os peixes já enchiam a rede antes do gesto"
+        },
+        {
+          "id": "c",
+          "text": "A ruptura das redes impede a pesca"
+        },
+        {
+          "id": "d",
+          "text": "O outro barco é quem traz os peixes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ao fazerem isso, apanharam uma grande quantidade de peixes",
+      "feedbackCorrect": "Ao fazerem isso, a rede se enche. O gesto pedido produz a grande pesca.",
+      "feedbackWrong": {
+        "b": "O texto coloca a quantidade depois do gesto de lançar.",
+        "c": "As redes se rompem pela quantidade apanhada.",
+        "d": "Os companheiros entram depois, para ajudar com a pesca já feita."
+      },
+      "hint": "Leia o que acontece logo depois de fazerem isso.",
+      "learningObjective": "Relacionar o lançar da rede com a grande quantidade de peixes.",
+      "evidence": [
+        "Lucas 5:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança do lançar da rede até Pedro seguir?",
+      "verseRef": "Lucas 5:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simão lança a rede sob a palavra"
+        },
+        {
+          "id": "b",
+          "text": "A pesca enche os dois barcos"
+        },
+        {
+          "id": "c",
+          "text": "Pedro confessa o pecado e segue"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "encheram ambos os barcos",
+      "feedbackCorrect": "A palavra leva à pesca abundante. Depois Pedro confessa e segue.",
+      "feedbackWrong": {
+        "default": "O lançar abre o caminho. A confissão e o seguir fecham a cena."
+      },
+      "hint": "O seguir de Pedro é o ponto de chegada.",
+      "learningObjective": "Compreender os movimentos da obediência até a resposta de Pedro.",
+      "evidence": [
+        "Lucas 5:5",
+        "Lucas 5:6–7",
+        "Lucas 5:8–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 5:9, o que tomou conta de Pedro e dos companheiros?",
+      "verseRef": "Lucas 5:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "cansaço"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "espanto"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o espanto tomou conta dele",
+      "feedbackCorrect": "O espanto toma conta deles à vista da grande quantidade de peixes.",
+      "feedbackWrong": {
+        "a": "O versículo nomeia o espanto diante da quantidade de peixes.",
+        "b": "O que toma conta deles, no versículo, é o espanto."
+      },
+      "hint": "Leia o sentimento nomeado no meio do versículo.",
+      "learningObjective": "Identificar o efeito da grande pesca sobre Pedro e os companheiros.",
+      "evidence": [
+        "Lucas 5:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 5:10 a Mateus 4:19?",
+      "verseRef": "Lucas 5:10",
+      "passageA": {
+        "ref": "Lucas 5:10"
+      },
+      "passageB": {
+        "ref": "Mateus 4:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensino só na beira"
+        },
+        {
+          "id": "b",
+          "text": "Sociedade com Zebedeu"
+        },
+        {
+          "id": "c",
+          "text": "Chamado para pescar gente"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "você será pescador de homens",
+      "feedbackCorrect": "Nos dois textos Jesus chama pescadores para reunir pessoas.",
+      "feedbackWrong": {
+        "a": "O ensino na beira abre Lucas 5. O elo entre os textos é o novo ofício.",
+        "b": "Tiago e João aparecem como sócios. O elo é o chamado para pescar gente."
+      },
+      "hint": "Compare o ofício que Jesus anuncia nos dois textos.",
+      "learningObjective": "Relacionar o chamado de Lucas 5:10 ao chamado em Mateus 4:19.",
+      "evidence": [
+        "Lucas 5:10",
+        "Mateus 4:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 5:8, Simão Pedro se reconhece pecador ao ver o que aconteceu.",
+      "verseRef": "Lucas 5:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "ao ver isso, prostrou-se aos pés de Jesus, dizendo: Senhor, retira-te de mim, pois sou pecador",
+      "feedbackCorrect": "Pedro se prostra ao ver a pesca e declara que é pecador.",
+      "feedbackWrong": {
+        "false": "A fala de Pedro o declara pecador, aos pés de Jesus."
+      },
+      "hint": "Leia o que Pedro declara na fala aos pés de Jesus.",
+      "learningObjective": "Interpretar a fala de Pedro como reconhecimento do próprio pecado.",
+      "evidence": [
+        "Lucas 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 5:10, toque o trecho em que Jesus define o novo ofício de Simão.",
+      "verseRef": "Lucas 5:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "filhos de Zebedeu"
+        },
+        {
+          "id": "b",
+          "text": "pescador de homens"
+        },
+        {
+          "id": "c",
+          "text": "Não temas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "você será pescador de homens",
+      "feedbackCorrect": "Jesus define o novo ofício na frase pescador de homens.",
+      "feedbackWrong": {
+        "a": "Tiago e João, filhos de Zebedeu, são os sócios ali presentes.",
+        "c": "Não temas afasta o medo. O ofício vem na frase seguinte."
+      },
+      "hint": "Olhe o que Jesus diz que Simão será daqui para frente.",
+      "learningObjective": "Localizar o trecho em que Jesus anuncia o novo ofício de Simão.",
+      "evidence": [
+        "Lucas 5:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o relato sustenta sobre Pedro diante da pesca?",
+      "verseRef": "Lucas 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele se reconhece pecador ao ver o que Jesus fez"
+        },
+        {
+          "id": "b",
+          "text": "Ele recusa o chamado e manda Jesus embora"
+        },
+        {
+          "id": "c",
+          "text": "Ele sente só medo, sem se ver pecador"
+        },
+        {
+          "id": "d",
+          "text": "A pesca grande premia o esforço da noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois sou pecador",
+      "feedbackCorrect": "Ao ver a pesca, Pedro se prostra e declara que é pecador.",
+      "feedbackWrong": {
+        "b": "A fala confessa pecado. O pedido de afastamento nasce dessa confissão.",
+        "c": "A frase de Pedro afirma que ele é pecador.",
+        "d": "Simão diz que a noite não deu nada. A quantidade vem sob a palavra."
+      },
+      "hint": "Compare cada leitura com a frase final de Pedro.",
+      "learningObjective": "Escolher a leitura da reação de Pedro que o versículo sustenta.",
+      "evidence": [
+        "Lucas 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do chamado nesta cena?",
+      "verseRef": "Lucas 5:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A noite no lago termina sem peixe"
+        },
+        {
+          "id": "b",
+          "text": "O poder de Jesus leva Pedro à confissão"
+        },
+        {
+          "id": "c",
+          "text": "O chamado muda o rumo de Simão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "deixaram tudo e o seguiram",
+      "feedbackCorrect": "A noite vazia, a confissão e o novo rumo mostram o caminho do chamado.",
+      "feedbackWrong": {
+        "default": "A noite sem peixe abre o caminho. O novo rumo de Simão vem no fim."
+      },
+      "hint": "O novo rumo de Simão é o ponto final.",
+      "learningObjective": "Encadear a noite vazia, a confissão e o chamado de Simão.",
+      "evidence": [
+        "Lucas 5:5",
+        "Lucas 5:8",
+        "Lucas 5:10–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 5:8, que termo Simão usa para se descrever?",
+      "verseRef": "Lucas 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mestre"
+        },
+        {
+          "id": "b",
+          "text": "justo"
+        },
+        {
+          "id": "c",
+          "text": "pecador"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "pois sou pecador",
+      "feedbackCorrect": "Simão se descreve com o termo pecador, aos pés de Jesus.",
+      "feedbackWrong": {
+        "a": "Mestre é o nome que Simão dá a Jesus na fala anterior.",
+        "b": "O termo com que Simão se descreve nessa fala é pecador."
+      },
+      "hint": "Leia como Simão se nomeia na fala.",
+      "learningObjective": "Lembrar o termo com que Simão se descreve diante de Jesus.",
+      "evidence": [
+        "Lucas 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 5:6 a João 21:6?",
+      "verseRef": "Lucas 5:6",
+      "passageA": {
+        "ref": "Lucas 5:6"
+      },
+      "passageB": {
+        "ref": "João 21:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A noite vazia basta"
+        },
+        {
+          "id": "b",
+          "text": "A palavra enche a rede"
+        },
+        {
+          "id": "c",
+          "text": "Redes lavadas na praia"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "apanharam uma grande quantidade de peixes",
+      "feedbackCorrect": "Nos dois relatos, a palavra de Jesus enche a rede.",
+      "feedbackWrong": {
+        "a": "A noite sem peixe é o contraste. A rede se enche quando Jesus fala.",
+        "c": "Lavar as redes abre a cena. O elo é a rede que se enche."
+      },
+      "hint": "Compare o que ocorre quando a rede é lançada por uma ordem.",
+      "learningObjective": "Ligar a pesca de Lucas 5:6 à pesca pela palavra em João 21:6.",
+      "evidence": [
+        "Lucas 5:6",
+        "João 21:6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Mateus 7:24–29",
+    "passages": [
+      {
+        "ref": "Mateus 7:24–29"
+      }
+    ],
+    "context": "Jesus chega ao fim do Sermão do Monte, diante da multidão. Ele descreve dois homens que edificam uma casa e enfrentam a mesma chuva, os mesmos rios e os mesmos ventos.",
+    "keyword": "rocha",
+    "keywordGloss": "Rocha é o fundamento de quem ouve as palavras de Jesus e as coloca em prática.",
+    "focusQuestion": "O que você tem ouvido de Jesus e ainda não colocou em prática?",
+    "reflectionPrompts": [
+      "Ouvir e praticar",
+      "A mesma tempestade",
+      "A autoridade de Jesus"
+    ],
+    "facts": [
+      {
+        "text": "Quem ouve as palavras de Jesus e as coloca em prática é comparado a um homem prudente.",
+        "evidenceRef": "Mateus 7:24",
+        "evidenceSpan": "que ouve estas minhas palavras e as coloca em prática será comparado a um homem prudente"
+      },
+      {
+        "text": "A tempestade investiu contra a casa, mas ela não caiu, porque estava edificada sobre a rocha.",
+        "evidenceRef": "Mateus 7:25",
+        "evidenceSpan": "investiram com ímpeto contra aquela casa, mas ela não caiu, porque estava edificada sobre a rocha"
+      },
+      {
+        "text": "Quem ouve as palavras e não as pratica é comparado a um homem insensato.",
+        "evidenceRef": "Mateus 7:26",
+        "evidenceSpan": "ouve estas minhas palavras e não as pratica será comparado a um homem insensato"
+      },
+      {
+        "text": "A casa atacada desabou, e grande foi a sua ruína.",
+        "evidenceRef": "Mateus 7:27",
+        "evidenceSpan": "ela desabou, sendo grande a sua ruína"
+      },
+      {
+        "text": "Ao terminar o discurso, a multidão se maravilhou com o ensinamento de Jesus.",
+        "evidenceRef": "Mateus 7:28",
+        "evidenceSpan": "a multidão se maravilhou com seu ensinamento"
+      },
+      {
+        "text": "Jesus ensinava com uma autoridade genuína, e não como os escribas.",
+        "evidenceRef": "Mateus 7:29",
+        "evidenceSpan": "os ensinava com uma autoridade genuína e não como os escribas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "prática",
+        "gloss": "É colocar em ação as palavras ouvidas, e não apenas escutá-las."
+      },
+      {
+        "term": "rocha",
+        "gloss": "É o fundamento firme da casa que permanece quando a tempestade chega."
+      },
+      {
+        "term": "autoridade",
+        "gloss": "É o modo como Jesus ensinava, diferente do ensino dos escribas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O prudente edifica sobre a rocha",
+        "evidenceRef": "Mateus 7:24"
+      },
+      {
+        "label": "A tempestade não derruba essa casa",
+        "evidenceRef": "Mateus 7:25"
+      },
+      {
+        "label": "O insensato edifica e a casa cai",
+        "evidenceRef": "Mateus 7:26–27"
+      },
+      {
+        "label": "A multidão nota a autoridade de Jesus",
+        "evidenceRef": "Mateus 7:28–29"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A casa não caiu porque estava edificada sobre a rocha.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 7:25"
+      },
+      {
+        "kind": "contraste",
+        "text": "A tempestade investe contra a casa, mas ela não caiu.",
+        "marker": "mas",
+        "evidenceRef": "Mateus 7:25"
+      },
+      {
+        "kind": "resultado",
+        "text": "A casa de quem não pratica desabou, e a ruína foi grande.",
+        "marker": "desabou",
+        "evidenceRef": "Mateus 7:27"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 6:47–48",
+        "bridge": "Quem ouve e pratica"
+      },
+      {
+        "ref": "Tiago 1:22",
+        "bridge": "Praticantes da palavra"
+      },
+      {
+        "ref": "Lucas 6:49",
+        "bridge": "Quem não pratica cai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Basta ouvir as palavras de Jesus; colocá-las em prática é um passo opcional.",
+        "why": "O prudente ouve e pratica. Quem ouve e não pratica é chamado de insensato."
+      },
+      {
+        "text": "A casa sobre a rocha não passa pela tempestade; só a da areia é atingida.",
+        "why": "Chuva, rios e ventos investem contra a casa da rocha, e a da areia também é atacada."
+      },
+      {
+        "text": "A multidão se maravilhou porque Jesus ensinava como os escribas.",
+        "why": "O texto diz que ele ensinava com autoridade genuína, e não como os escribas."
+      }
+    ],
+    "centralInsight": "Ouvir Jesus e praticar o que ele diz é construir sobre a rocha.",
+    "anchorQuestion": "Por que a casa edificada sobre a rocha não caiu?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 7:24, quem ouve as palavras de Jesus e as coloca em prática é comparado a um homem insensato.",
+      "verseRef": "Mateus 7:24",
+      "correctOptionId": "false",
+      "evidenceSpan": "ouve estas minhas palavras e as coloca em prática será comparado a um homem prudente",
+      "feedbackCorrect": "O insensato vem depois. Aqui, ouvir e praticar é comparado ao homem prudente.",
+      "feedbackWrong": {
+        "true": "Mateus 7:24 compara quem ouve e pratica ao homem prudente, não ao insensato."
+      },
+      "hint": "Veja a quem o versículo compara quem ouve e pratica.",
+      "learningObjective": "Observar que praticar as palavras de Jesus é o que o texto chama de prudência.",
+      "evidence": [
+        "Mateus 7:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 7:24, toque o chão sobre o qual o homem prudente edificou a casa.",
+      "verseRef": "Mateus 7:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "minhas palavras"
+        },
+        {
+          "id": "b",
+          "text": "rocha"
+        },
+        {
+          "id": "c",
+          "text": "homem prudente"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "edificou sua casa sobre a rocha",
+      "feedbackCorrect": "O chão da casa do prudente é a rocha, no fim do versículo.",
+      "feedbackWrong": {
+        "a": "As palavras são o que ele ouve; o chão da casa está no fim.",
+        "c": "Homem prudente é quem constrói, não o lugar da casa."
+      },
+      "hint": "Procure o lugar da construção no fim da frase.",
+      "learningObjective": "Identificar o chão da casa do homem prudente.",
+      "evidence": [
+        "Mateus 7:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 7:28, o que a multidão fez quando Jesus terminou o discurso?",
+      "verseRef": "Mateus 7:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maravilhou-se com o ensinamento dele"
+        },
+        {
+          "id": "b",
+          "text": "Pediu que o sermão recomeçasse na hora"
+        },
+        {
+          "id": "c",
+          "text": "Saiu antes de ouvir o fim do discurso"
+        },
+        {
+          "id": "d",
+          "text": "Repetiu o ensino do mesmo modo que os escribas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a multidão se maravilhou com seu ensinamento",
+      "feedbackCorrect": "Ao terminar o discurso, a multidão se maravilhou com o ensinamento.",
+      "feedbackWrong": {
+        "b": "O texto não fala em recomeçar o sermão; fala em maravilhar-se.",
+        "c": "A multidão ficou até o fim e se maravilhou com o ensinamento.",
+        "d": "Quem reage aqui é a multidão; os escribas entram no versículo seguinte."
+      },
+      "hint": "Olhe a reação da multidão depois do discurso.",
+      "learningObjective": "Observar a reação da multidão ao fim do discurso.",
+      "evidence": [
+        "Mateus 7:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o que aconteceu com a casa da rocha em Mateus 7:25, na ordem do texto.",
+      "verseRef": "Mateus 7:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "E desceu a chuva, transbordaram os rios"
+        },
+        {
+          "id": "b",
+          "text": "sopraram os ventos e investiram com ímpeto contra aquela casa"
+        },
+        {
+          "id": "c",
+          "text": "ela não caiu, porque estava edificada sobre a rocha"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E desceu a chuva, transbordaram os rios",
+      "feedbackCorrect": "A cena vai da chuva ao ímpeto contra a casa, que não cai por causa da rocha.",
+      "feedbackWrong": {
+        "default": "Comece pela chuva e pelos rios; a casa que permanece vem no fim."
+      },
+      "hint": "O versículo abre com a chuva.",
+      "learningObjective": "Reconhecer a ordem da tempestade e do resultado na casa da rocha.",
+      "evidence": [
+        "Mateus 7:25"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 7:26, como o texto chama quem ouve as palavras e não as pratica?",
+      "verseRef": "Mateus 7:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "sábio"
+        },
+        {
+          "id": "b",
+          "text": "insensato"
+        },
+        {
+          "id": "c",
+          "text": "prudente"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "será comparado a um homem insensato",
+      "feedbackCorrect": "Quem ouve e não pratica é comparado a um homem insensato.",
+      "feedbackWrong": {
+        "a": "O texto não chama esse homem de sábio; chama de insensato.",
+        "c": "Prudente é quem ouve e pratica, não quem deixa de praticar."
+      },
+      "hint": "Veja o adjetivo ligado a homem nesse versículo.",
+      "learningObjective": "Lembrar como o texto chama quem ouve e não pratica.",
+      "evidence": [
+        "Mateus 7:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 7:25 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 7:25",
+      "passageA": {
+        "ref": "Mateus 7:25"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Dois construtores enfrentam a mesma chuva, os mesmos rios e os mesmos ventos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A tempestade não chegou"
+        },
+        {
+          "id": "b",
+          "text": "A casa firme permanece"
+        },
+        {
+          "id": "c",
+          "text": "Os escribas se admiram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ela não caiu, porque estava edificada sobre a rocha",
+      "feedbackCorrect": "Na mesma tempestade, a casa sobre a rocha não caiu.",
+      "feedbackWrong": {
+        "a": "A chuva, os rios e os ventos investiram contra aquela casa.",
+        "c": "Os escribas surgem no fim do capítulo, não nessa comparação."
+      },
+      "hint": "Veja o que o versículo diz que aconteceu com a casa.",
+      "learningObjective": "Ligar a casa que permanece ao fato de as duas enfrentarem a tempestade.",
+      "evidence": [
+        "Mateus 7:25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 7:25, a casa não caiu porque a chuva, os rios e os ventos não chegaram até ela.",
+      "verseRef": "Mateus 7:25",
+      "correctOptionId": "false",
+      "evidenceSpan": "investiram com ímpeto contra aquela casa, mas ela não caiu",
+      "feedbackCorrect": "A tempestade chegou. A casa não caiu porque estava sobre a rocha.",
+      "feedbackWrong": {
+        "true": "Chuva, rios e ventos investiram contra a casa. Ela ficou de pé pela rocha."
+      },
+      "hint": "Veja se a tempestade alcançou a casa ou parou antes.",
+      "learningObjective": "Compreender que a casa permaneceu apesar da tempestade, e não por ter sido poupada.",
+      "evidence": [
+        "Mateus 7:25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 7:25, toque o trecho que diz por que a casa não caiu.",
+      "verseRef": "Mateus 7:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "desceu a chuva"
+        },
+        {
+          "id": "b",
+          "text": "porque estava edificada"
+        },
+        {
+          "id": "c",
+          "text": "contra aquela casa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não caiu, porque estava edificada sobre a rocha",
+      "feedbackCorrect": "Ela não caiu porque estava edificada sobre a rocha.",
+      "feedbackWrong": {
+        "a": "A chuva é o que desceu, não o motivo de a casa permanecer.",
+        "c": "Esse trecho diz onde a tempestade bateu, não a causa."
+      },
+      "hint": "O motivo está no fim, depois de a casa permanecer de pé.",
+      "learningObjective": "Reconhecer o trecho que dá a causa de a casa não ter caído.",
+      "evidence": [
+        "Mateus 7:25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Mateus 7:26–27 mostra entre ouvir sem praticar e a casa?",
+      "verseRef": "Mateus 7:26–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem não pratica mantém a casa firme para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Quem não pratica constrói sem firmeza, e a casa cai"
+        },
+        {
+          "id": "c",
+          "text": "Quem não pratica vê a tempestade passar ao largo"
+        },
+        {
+          "id": "d",
+          "text": "Quem não pratica termina igual a quem praticou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ela desabou, sendo grande a sua ruína",
+      "feedbackCorrect": "Ouvir sem praticar é construir sem firmeza, e a casa desaba.",
+      "feedbackWrong": {
+        "a": "A casa firme é a de quem pratica; quem não pratica vê a casa cair.",
+        "c": "A tempestade não passa ao largo: os ventos atacaram a casa.",
+        "d": "Os fins diferem: uma casa permanece e a outra desaba."
+      },
+      "hint": "Ligue o que ele faz com as palavras ao fim da casa.",
+      "learningObjective": "Relacionar ouvir sem praticar com a queda da casa.",
+      "evidence": [
+        "Mateus 7:26–27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência dos dois construtores neste discurso?",
+      "verseRef": "Mateus 7:24–25",
+      "options": [
+        {
+          "id": "a",
+          "text": "O prudente edifica sobre a rocha"
+        },
+        {
+          "id": "b",
+          "text": "A tempestade não derruba essa casa"
+        },
+        {
+          "id": "c",
+          "text": "O insensato edifica e a casa cai"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "edificou sua casa sobre a rocha",
+      "feedbackCorrect": "O discurso vai do prudente que permanece ao insensato cuja casa cai.",
+      "feedbackWrong": {
+        "default": "Comece por quem edifica na rocha; a queda do insensato vem depois."
+      },
+      "hint": "O primeiro construtor é quem pratica as palavras.",
+      "learningObjective": "Compreender os três movimentos da comparação entre os dois homens.",
+      "evidence": [
+        "Mateus 7:24",
+        "Mateus 7:25",
+        "Mateus 7:26–27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 7:27, que palavra nomeia o fim daquela casa?",
+      "verseRef": "Mateus 7:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "ruína"
+        },
+        {
+          "id": "c",
+          "text": "queda"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sendo grande a sua ruína",
+      "feedbackCorrect": "O texto chama o fim dessa casa de ruína, e diz que ela foi grande.",
+      "feedbackWrong": {
+        "a": "Não é glória: o versículo nomeia uma ruína grande.",
+        "c": "Queda se aproxima, mas a palavra do texto é ruína."
+      },
+      "hint": "Veja como o versículo nomeia o fim da casa.",
+      "learningObjective": "Lembrar a palavra que nomeia o resultado de ouvir sem praticar.",
+      "evidence": [
+        "Mateus 7:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 7:24 a Lucas 6:47–48?",
+      "verseRef": "Mateus 7:24",
+      "passageA": {
+        "ref": "Mateus 7:24"
+      },
+      "passageB": {
+        "ref": "Lucas 6:47–48"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem ouve e pratica"
+        },
+        {
+          "id": "b",
+          "text": "Escapar da tempestade"
+        },
+        {
+          "id": "c",
+          "text": "Ensinar como os escribas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ouve estas minhas palavras e as coloca em prática",
+      "feedbackCorrect": "Nos dois textos, ouvir e praticar é firmar a casa na rocha.",
+      "feedbackWrong": {
+        "b": "A tempestade chega nos dois relatos; praticar é que firma a casa.",
+        "c": "Os escribas não entram nesse paralelo; o elo é ouvir e praticar."
+      },
+      "hint": "Compare o que cada texto diz de quem ouve as palavras.",
+      "learningObjective": "Relacionar o construtor prudente de Mateus ao paralelo de Lucas.",
+      "evidence": [
+        "Mateus 7:24",
+        "Lucas 6:47–48"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 7:25, a rocha não afasta a tempestade da casa, mas é o motivo de ela não cair.",
+      "verseRef": "Mateus 7:25",
+      "correctOptionId": "true",
+      "evidenceSpan": "investiram com ímpeto contra aquela casa, mas ela não caiu, porque estava edificada sobre a rocha",
+      "feedbackCorrect": "A tempestade chega à casa, e ela permanece por estar na rocha.",
+      "feedbackWrong": {
+        "false": "O versículo põe a tempestade contra a casa e liga o ficar de pé à rocha."
+      },
+      "hint": "Veja se a tempestade chega à casa e o que vem depois.",
+      "learningObjective": "Interpretar a rocha como o que sustenta a casa na tempestade, não como fuga dela.",
+      "evidence": [
+        "Mateus 7:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 7:29, toque o traço do ensino de Jesus que o texto contrapõe aos escribas.",
+      "verseRef": "Mateus 7:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "os ensinava"
+        },
+        {
+          "id": "b",
+          "text": "os escribas"
+        },
+        {
+          "id": "c",
+          "text": "autoridade genuína"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "com uma autoridade genuína",
+      "feedbackCorrect": "Jesus ensinava com autoridade genuína, não como os escribas.",
+      "feedbackWrong": {
+        "a": "Ensinar é a ação; o traço que o texto destaca é a autoridade genuína.",
+        "b": "Os escribas são o contraste, não o traço que distingue Jesus."
+      },
+      "hint": "Procure a qualidade do ensino, não o grupo citado.",
+      "learningObjective": "Localizar o traço que sustenta a diferença entre Jesus e os escribas.",
+      "evidence": [
+        "Mateus 7:29"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 7:24–25 sustenta sobre ouvir as palavras de Jesus?",
+      "verseRef": "Mateus 7:24–25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazer o que ele diz é edificar a casa na rocha"
+        },
+        {
+          "id": "b",
+          "text": "Basta ouvir; obedecer pode ficar para depois"
+        },
+        {
+          "id": "c",
+          "text": "A rocha evita que a tempestade chegue à casa"
+        },
+        {
+          "id": "d",
+          "text": "O prudente é quem constrói sem ter ouvido Jesus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ouve estas minhas palavras e as coloca em prática",
+      "feedbackCorrect": "O texto une o fazer ao chão da casa: quem vive as palavras edifica na rocha.",
+      "feedbackWrong": {
+        "b": "Quem só ouve, sem praticar, é o insensato, não o prudente.",
+        "c": "A chuva, os rios e os ventos investiram contra a casa da rocha.",
+        "d": "O prudente é quem ouve as palavras de Jesus e as pratica."
+      },
+      "hint": "Una o que o homem faz com as palavras ao chão da casa.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre ouvir e praticar.",
+      "evidence": [
+        "Mateus 7:24–25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica da queda em Mateus 7:26–27?",
+      "verseRef": "Mateus 7:26–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alguém ouve as palavras e não as vive"
+        },
+        {
+          "id": "b",
+          "text": "A casa é edificada sem fundamento firme"
+        },
+        {
+          "id": "c",
+          "text": "A tempestade chega e a ruína é grande"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não as pratica será comparado a um homem insensato",
+      "feedbackCorrect": "Ouvir sem viver as palavras deixa a casa sem firmeza, e a ruína fecha a cena.",
+      "feedbackWrong": {
+        "default": "Comece em quem ouve e não vive o que ouviu; a ruína é o desfecho."
+      },
+      "hint": "Parta do que o homem faz com as palavras ouvidas.",
+      "learningObjective": "Interpretar a queda como desfecho de ouvir sem praticar.",
+      "evidence": [
+        "Mateus 7:26–27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 7:24, o homem prudente ouve as palavras e as coloca em quê?",
+      "verseRef": "Mateus 7:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "ação"
+        },
+        {
+          "id": "b",
+          "text": "prática"
+        },
+        {
+          "id": "c",
+          "text": "dúvida"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "as coloca em prática",
+      "feedbackCorrect": "Colocar em prática é o sentido da cena: ouvir e fazer o que Jesus disse.",
+      "feedbackWrong": {
+        "a": "O versículo não diz ação; diz que ele coloca as palavras em prática.",
+        "c": "Não é dúvida: a palavra que o prudente vive é prática."
+      },
+      "hint": "Veja o que ele faz com as palavras, além de ouvi-las.",
+      "learningObjective": "Lembrar o termo que carrega o sentido de ouvir e fazer.",
+      "evidence": [
+        "Mateus 7:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 7:26 a Tiago 1:22?",
+      "verseRef": "Mateus 7:26",
+      "passageA": {
+        "ref": "Mateus 7:26"
+      },
+      "passageB": {
+        "ref": "Tiago 1:22"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A casa livre da chuva"
+        },
+        {
+          "id": "b",
+          "text": "Praticantes da palavra"
+        },
+        {
+          "id": "c",
+          "text": "Autoridade dos escribas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ouve estas minhas palavras e não as pratica",
+      "feedbackCorrect": "Tiago pede praticantes da palavra; Mateus chama insensato quem não pratica.",
+      "feedbackWrong": {
+        "a": "A chuva chega às duas casas; o elo aqui é praticar a palavra.",
+        "c": "A autoridade fecha o capítulo; o elo com Tiago é a prática."
+      },
+      "hint": "Compare o que os dois textos pedem a quem ouve.",
+      "learningObjective": "Ligar quem ouve e não pratica ao chamado para ser praticante da palavra.",
+      "evidence": [
+        "Mateus 7:26",
+        "Tiago 1:22"
+      ]
+    }
+  ]
+}

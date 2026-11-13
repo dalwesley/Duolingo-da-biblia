@@ -1,0 +1,701 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 22:1–6",
+    "passages": [
+      {
+        "ref": "2 Samuel 22:1–6"
+      }
+    ],
+    "context": "Davi canta o livramento do Senhor de todos os seus inimigos.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra que ajuda a ler 2 Samuel 22:1–6.",
+    "focusQuestion": "O que este trecho pede de você diante de Senhor?",
+    "reflectionPrompts": [
+      "Louvar o libertador",
+      "Coração",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 22:1 registra: falou ao Senhor as palavras deste cântico, no.",
+        "evidenceRef": "2 Samuel 22:1",
+        "evidenceSpan": "falou ao Senhor as palavras deste cântico, no"
+      },
+      {
+        "text": "O texto em 22:2 registra: O Senhor é a minha rocha, meu refúgio.",
+        "evidenceRef": "2 Samuel 22:2",
+        "evidenceSpan": "O Senhor é a minha rocha, meu refúgio"
+      },
+      {
+        "text": "O texto em 22:3 registra: o meu rochedo, nele confiarei; meu escudo e.",
+        "evidenceRef": "2 Samuel 22:3",
+        "evidenceSpan": "o meu rochedo, nele confiarei; meu escudo e"
+      },
+      {
+        "text": "O texto em 22:4 registra: Senhor, que é digno de ser louvado, e.",
+        "evidenceRef": "2 Samuel 22:4",
+        "evidenceSpan": "Senhor, que é digno de ser louvado, e"
+      },
+      {
+        "text": "O texto em 22:5 registra: da morte me cercaram; as torrentes de impiedade.",
+        "evidenceRef": "2 Samuel 22:5",
+        "evidenceSpan": "da morte me cercaram; as torrentes de impiedade"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Termo central do trecho em 2 Samuel 22:1–6."
+      },
+      {
+        "term": "Davi",
+        "gloss": "Termo central do trecho em 2 Samuel 22:1–6."
+      },
+      {
+        "term": "falou",
+        "gloss": "Termo central do trecho em 2 Samuel 22:1–6."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Abertura em 1",
+        "evidenceRef": "2 Samuel 22:1"
+      },
+      {
+        "label": "Desenvolvimento do relato",
+        "evidenceRef": "2 Samuel 22:2"
+      },
+      {
+        "label": "Virada do trecho",
+        "evidenceRef": "2 Samuel 22:3"
+      },
+      {
+        "label": "Desfecho do episódio",
+        "evidenceRef": "2 Samuel 22:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 22:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O relato avança em sequência.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 22:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 16:7",
+        "bridge": "O Senhor vê o coração"
+      },
+      {
+        "ref": "Josué 1:9",
+        "bridge": "Esforça-te e coragem"
+      },
+      {
+        "ref": "1 João 1:9",
+        "bridge": "Confessar e limpar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho celebra o pecado como se fosse virtude.",
+        "why": "O texto registra o fato e suas consequências sem elogiar o erro."
+      },
+      {
+        "text": "Nada neste relato revela o caráter de Deus.",
+        "why": "O Senhor aparece no contexto julgando, livrando ou falando."
+      },
+      {
+        "text": "Os personagens agem sem qualquer escolha moral.",
+        "why": "Há decisões explícitas que o narrador registra."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 22:1, o que o texto destaca no início?",
+    "centralInsight": "Na angústia Davi clama, e do templo o Senhor ouve a sua voz."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 22:1, o texto menciona — falou ao Senhor as palavras deste cântico, no.",
+      "verseRef": "2 Samuel 22:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "falou ao Senhor as palavras deste cântico, no",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 22:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 22:2, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Samuel 22:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "minha"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 22:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 22:3, o que Davi diz sobre Deus?",
+      "verseRef": "2 Samuel 22:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "É o rochedo em quem confia e o seu escudo"
+        },
+        {
+          "id": "b",
+          "text": "Abandonou Davi no meio da batalha"
+        },
+        {
+          "id": "c",
+          "text": "Preferiu Saul em lugar de Davi"
+        },
+        {
+          "id": "d",
+          "text": "Calou-se diante dos inimigos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "meu rochedo, nele confiarei",
+      "feedbackCorrect": "Deus é o rochedo e o escudo de Davi.",
+      "feedbackWrong": {
+        "b": "O cântico afirma confiança, não abandono.",
+        "c": "Saul não é o tema deste verso.",
+        "d": "Davi celebra salvação, não silêncio."
+      },
+      "hint": "Quem é o rochedo do cântico?",
+      "learningObjective": "Identificar a confiança de Davi.",
+      "evidence": [
+        "2 Samuel 22:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 22:1 na ordem do texto.",
+      "verseRef": "2 Samuel 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi então falou ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "as palavras deste cântico"
+        },
+        {
+          "id": "c",
+          "text": "no dia em que o Senhor o livrou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Davi então falou ao Senhor",
+      "feedbackCorrect": "Ordem do texto.",
+      "feedbackWrong": {
+        "default": "Siga o versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar o texto.",
+      "evidence": [
+        "2 Samuel 22:1"
+      ],
+      "correctAnswer": "a,b,c"
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 22:5, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 22:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "ondas"
+        },
+        {
+          "id": "b",
+          "text": "morte"
+        },
+        {
+          "id": "c",
+          "text": "cercaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ondas",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 22:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 22:6 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 22:6",
+      "passageA": {
+        "ref": "2 Samuel 22:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na angústia Davi clama, e do templo o Senhor ouve a sua voz."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato e sentido"
+        },
+        {
+          "id": "b",
+          "text": "Contradição total"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio do texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "infernais me cingiram; laços",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 22:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 22:7, o relato elimina qualquer relação de causa ou sequência.",
+      "verseRef": "2 Samuel 22:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "minha angústia, invoquei o",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 22:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 22:1, toque a palavra que marca a relação no relato.",
+      "verseRef": "2 Samuel 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "falou"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 22:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 22:2–3 evidencia no fluxo do relato?",
+      "verseRef": "2 Samuel 22:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há sequência e consequências no relato"
+        },
+        {
+          "id": "b",
+          "text": "O texto congela sem qualquer avanço"
+        },
+        {
+          "id": "c",
+          "text": "Só há listas sem ação"
+        },
+        {
+          "id": "d",
+          "text": "O narrador apaga os personagens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse: O Senhor é",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 22:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 22:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abertura em 1"
+        },
+        {
+          "id": "b",
+          "text": "Desenvolvimento do relato"
+        },
+        {
+          "id": "c",
+          "text": "Virada do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "é o meu rochedo",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 22:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 22:4, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 22:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invocarei"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "digno"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Invocarei",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 22:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 22:5 a 1 Samuel 16:7?",
+      "verseRef": "2 Samuel 22:5",
+      "passageA": {
+        "ref": "2 Samuel 22:5"
+      },
+      "passageB": {
+        "ref": "1 Samuel 16:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor vê o coração"
+        },
+        {
+          "id": "b",
+          "text": "Negação do tema"
+        },
+        {
+          "id": "c",
+          "text": "Assunto alheio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ondas da morte me",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 22:5",
+        "1 Samuel 16:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 22:6, a melhor leitura é tratar o pecado como virtude do rei.",
+      "verseRef": "2 Samuel 22:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "infernais me cingiram; laços",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 22:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 22:7, toque o trecho que sustenta a leitura do episódio.",
+      "verseRef": "2 Samuel 22:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "angústia"
+        },
+        {
+          "id": "b",
+          "text": "minha"
+        },
+        {
+          "id": "c",
+          "text": "invoquei"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "minha",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 22:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor respeita 2 Samuel 22:1?",
+      "verseRef": "2 Samuel 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Na angústia Davi clama, e do templo o Senhor ouve a sua voz."
+        },
+        {
+          "id": "b",
+          "text": "O pecado é apresentado como modelo"
+        },
+        {
+          "id": "c",
+          "text": "Deus está ausente do episódio"
+        },
+        {
+          "id": "d",
+          "text": "O texto não pede nenhuma resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então falou ao Senhor",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do episódio.",
+      "verseRef": "2 Samuel 22:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato apresenta a crise"
+        },
+        {
+          "id": "b",
+          "text": "Vem a confrontação ou decisão"
+        },
+        {
+          "id": "c",
+          "text": "Surge o desfecho do episódio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "disse: O Senhor é",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 22:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 22:3, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 22:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "rochedo"
+        },
+        {
+          "id": "c",
+          "text": "nele"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 22:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 22:4 a Josué 1:9?",
+      "verseRef": "2 Samuel 22:4",
+      "passageA": {
+        "ref": "2 Samuel 22:4"
+      },
+      "passageB": {
+        "ref": "Josué 1:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Esforça-te e coragem"
+        },
+        {
+          "id": "b",
+          "text": "Tema invertido"
+        },
+        {
+          "id": "c",
+          "text": "Sem ligação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor, que é",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 22:4",
+        "Josué 1:9"
+      ]
+    }
+  ]
+}

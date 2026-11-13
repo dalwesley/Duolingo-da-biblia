@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Salmos 144:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 144:1–6"
+      },
+      {
+        "ref": "Salmos 144:7–10"
+      }
+    ],
+    "context": "Bendito seja o Senhor, a minha rocha; o homem é como um sopro. Livra-me e dá prosperidade ao povo.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Bendito seja o Senhor",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Bendito seja o Senhor.",
+        "evidenceRef": "Salmos 144:1",
+        "evidenceSpan": "Bendito seja o Senhor"
+      },
+      {
+        "text": "Senhor, eu te louvo por tua misericórdia e força; tu és meu alto refúgio e meu libertador, meu escu…",
+        "evidenceRef": "Salmos 144:2",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "Senhor, que é o homem para que o conheças? E o filho do homem, para que o consideres?",
+        "evidenceRef": "Salmos 144:3",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "O homem é como a vaidade.",
+        "evidenceRef": "Salmos 144:4",
+        "evidenceSpan": "O homem é como a vaidade"
+      },
+      {
+        "text": "Senhor, abaixa os céus e desce; toca os montes, e fumegarão.",
+        "evidenceRef": "Salmos 144:5",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "Lança os teus relâmpagos e dispersa os meus.",
+        "evidenceRef": "Salmos 144:6",
+        "evidenceSpan": "Lança os teus relâmpagos e dispersa os meus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Bendito",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Bendito seja o senhor minha rocha",
+        "evidenceRef": "Salmos 144:1"
+      },
+      {
+        "label": "Senhor eu te louvo por tua",
+        "evidenceRef": "Salmos 144:2"
+      },
+      {
+        "label": "Senhor que é o homem para",
+        "evidenceRef": "Salmos 144:3"
+      },
+      {
+        "label": "O homem é como a vaidade",
+        "evidenceRef": "Salmos 144:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": null,
+        "evidenceRef": "Salmos 144:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Salmos 144:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é pastor"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Deus treina as mãos para a guerra e enche os celeiros — e o povo é feliz."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Deus treina as mãos para a guerra e enche os celeiros — e o povo é feliz.",
+    "anchorQuestion": "O que Salmos 144:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 144:1, bendito seja o Senhor.",
+      "verseRef": "Salmos 144:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Bendito seja o Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 144:1 afirma.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 144:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 144:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bendito"
+        },
+        {
+          "id": "b",
+          "text": "seja"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "O versículo destaca «Bendito».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 144:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 144:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor conhece o homem e o considera"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 144:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 144:1 na ordem do texto.",
+      "verseRef": "Salmos 144:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bendito"
+        },
+        {
+          "id": "b",
+          "text": "seja"
+        },
+        {
+          "id": "c",
+          "text": "o"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 144:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 144:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "Bendito"
+        },
+        {
+          "id": "c",
+          "text": "seja"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem",
+      "feedbackCorrect": "A palavra do versículo é «homem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 144:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 144:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 144:1",
+      "passageA": {
+        "ref": "Salmos 144:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Bendito seja o Senhor, a minha rocha; o homem é como um sopro. Livra-me e dá prosperidade ao povo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 144:2, o marcador Se une ideias no fluxo do texto.",
+      "verseRef": "Salmos 144:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 144:2 afirma.",
+      "evidence": [
+        "Salmos 144:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 144:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 144:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "louvo"
+        },
+        {
+          "id": "c",
+          "text": "por"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 144:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 144:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 144:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O homem é como a vaidade",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 144:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 144:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bendito seja o senhor minha rocha"
+        },
+        {
+          "id": "b",
+          "text": "Senhor eu te louvo por tua"
+        },
+        {
+          "id": "c",
+          "text": "Senhor que é o homem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 144:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 144:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "que"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "é"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que",
+      "feedbackCorrect": "A palavra do versículo é «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 144:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 144:1 a Salmos 23:1.",
+      "verseRef": "Salmos 144:1",
+      "passageA": {
+        "ref": "Salmos 144:1"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 144:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Tu",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 144:10 afirma.",
+      "evidence": [
+        "Salmos 144:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 144:10, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 144:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "concedes"
+        },
+        {
+          "id": "b",
+          "text": "Tu"
+        },
+        {
+          "id": "c",
+          "text": "vitória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "concedes",
+      "feedbackCorrect": "O versículo destaca «concedes».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 144:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 144:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 144:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 144:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 144:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 144:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 144:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "abaixa"
+        },
+        {
+          "id": "b",
+          "text": "Bendito"
+        },
+        {
+          "id": "c",
+          "text": "seja"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abaixa",
+      "feedbackCorrect": "A palavra do versículo é «abaixa».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 144:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 144:1 a Salmos 51:10.",
+      "verseRef": "Salmos 144:1",
+      "passageA": {
+        "ref": "Salmos 144:1"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendito",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 144:1"
+      ]
+    }
+  ]
+}

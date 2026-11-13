@@ -1,0 +1,133 @@
+{
+  "slug": "daniel-cap",
+  "prefix": "dnc",
+  "book": "Daniel",
+  "chapters": 12,
+  "title": "Daniel",
+  "description": "Daniel capítulo a capítulo: fidelidade no exílio e o Reino que não passa.",
+  "icon": "🦁",
+  "color": "#C4A040",
+  "order": 34,
+  "realm": "antigo-testamento",
+  "category": "profetas-maiores",
+  "avoidTrails": [
+    "daniel",
+    "periodo-intertestamentario"
+  ],
+  "modules": [
+    {
+      "title": "Fidelidade na corte · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Daniel 1:15–21",
+          "title": "Dez dias depois",
+          "intro": "Depois da prova da comida, Daniel e os amigos aparecem melhores que todos.",
+          "insight": "Deus dá saber e inteligência a quem permanece fiel no exílio.",
+          "objective": "Fidelidade no exílio"
+        },
+        {
+          "ref": "Daniel 2:19–28",
+          "title": "Há um Deus no céu",
+          "intro": "O mistério é revelado a Daniel numa visão de noite, e ele bendiz a Deus.",
+          "insight": "Há um Deus no céu que revela os mistérios; a sabedoria não vem do rei.",
+          "objective": "Deus revela mistérios"
+        },
+        {
+          "ref": "Daniel 3:19–28",
+          "title": "Na fornalha",
+          "intro": "Os três amigos são lançados na fornalha, e um quarto homem aparece com eles.",
+          "insight": "O Deus a quem servem os livra; o fogo não tem poder sobre quem nele confia.",
+          "objective": "Fidelidade no fogo"
+        },
+        {
+          "ref": "Daniel 4:28–37",
+          "title": "Nabucodonosor humilhado",
+          "intro": "A sentença se cumpre: o rei perde a razão até reconhecer o domínio do Altíssimo.",
+          "insight": "Os que andam na soberba, Deus pode humilhar; ele faz segundo a sua vontade.",
+          "objective": "Humilhar-se perante o Altíssimo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fidelidade na corte",
+        "intro": "Revise a prova da comida, o mistério, a fornalha e a humilhação do rei.",
+        "insight": "No exílio, Deus sustenta os fiéis e humilha os soberbos"
+      }
+    },
+    {
+      "title": "Reinos e oração · cap. 5–8",
+      "scenes": [
+        {
+          "ref": "Daniel 5:1–9",
+          "title": "A escrita na parede",
+          "intro": "Belsazar bebe nos vasos do templo, e dedos de mão escrevem na parede.",
+          "insight": "Profanar o que é santo traz terror: a mão de Deus escreve o juízo.",
+          "objective": "Não profanar o santo"
+        },
+        {
+          "ref": "Daniel 6:10–18",
+          "title": "Janelas abertas",
+          "intro": "Sabendo do decreto, Daniel continua orando três vezes ao dia, como antes.",
+          "insight": "A fidelidade na oração não muda por causa de leis humanas.",
+          "objective": "Orar sem desistir"
+        },
+        {
+          "ref": "Daniel 7:9–14",
+          "title": "O Filho do homem",
+          "intro": "Daniel vê o Ancião de dias e alguém como filho do homem recebendo o domínio.",
+          "insight": "O domínio eterno é dado ao Filho do homem; todos os povos o servirão.",
+          "objective": "O Reino eterno do Filho"
+        },
+        {
+          "ref": "Daniel 8:15–26",
+          "title": "A visão explicada",
+          "intro": "Gabriel explica a Daniel a visão do carneiro e do bode e dos dias futuros.",
+          "insight": "Deus explica o que há de vir; a visão é verdadeira e para dias distantes.",
+          "objective": "Confiar na palavra revelada"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Reinos e oração",
+        "intro": "Revise a escrita, as janelas, o Filho do homem e a visão explicada.",
+        "insight": "Deus juíza reis e entrega o Reino eterno ao Filho do homem"
+      }
+    },
+    {
+      "title": "Confissão e fim · cap. 9–12",
+      "scenes": [
+        {
+          "ref": "Daniel 9:16–27",
+          "title": "Setenta semanas",
+          "intro": "Daniel confessa e pede; Gabriel chega com palavra sobre setenta semanas.",
+          "insight": "Deus responde a oração com um plano que leva ao Messias e ao fim do pecado.",
+          "objective": "Deus responde a oração"
+        },
+        {
+          "ref": "Daniel 10:10–19",
+          "title": "Não temas, Daniel",
+          "intro": "Uma mão toca Daniel e uma voz o anima a receber as palavras enviadas.",
+          "insight": "Desde o primeiro dia em que Daniel se pôs a entender, as suas palavras foram ouvidas.",
+          "objective": "Ser ouvido desde o primeiro dia"
+        },
+        {
+          "ref": "Daniel 11:30–35",
+          "title": "O povo que conhece",
+          "intro": "No meio da opressão, o povo que conhece ao seu Deus se tornará forte.",
+          "insight": "Conhecer a Deus dá força mesmo quando muitos tropeçam e são provados.",
+          "objective": "Conhecer a Deus e ser forte"
+        },
+        {
+          "ref": "Daniel 12:1–10",
+          "title": "Os que dormem despertarão",
+          "intro": "Miguel se levanta; muitos que dormem no pó da terra acordarão.",
+          "insight": "Os sábios resplandecerão; quem é sábio entenderá no tempo do fim.",
+          "objective": "Esperar a ressurreição"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Confissão e fim",
+        "intro": "Revise as semanas, o ânimo, o povo forte e a ressurreição.",
+        "insight": "Quem conhece a Deus ora, resiste e espera a ressurreição"
+      }
+    }
+  ]
+}

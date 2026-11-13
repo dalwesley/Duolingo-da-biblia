@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Mateus 27:45–50",
+    "passages": [
+      {
+        "ref": "Mateus 27:45–50"
+      },
+      {
+        "ref": "Mateus 27:51–54"
+      }
+    ],
+    "context": "Jesus está na cruz desde a hora sexta. Trevas cobrem a terra até a nona, e quem está perto ouve o clamor. Alguns falam de Elias. O relato segue até o instante em que ele entrega o espírito.",
+    "keyword": "Filho de Deus",
+    "keywordGloss": "Título que o centurião e os que guardavam Jesus confessam, com grande temor, diante do que viram.",
+    "focusQuestion": "Diante da morte de Jesus, o que você confessa sobre quem ele é?",
+    "reflectionPrompts": [
+      "As trevas na cruz",
+      "O espírito entregue",
+      "A confissão da guarda"
+    ],
+    "facts": [
+      {
+        "text": "A partir da sexta hora, trevas cobriram toda a terra até a nona hora.",
+        "evidenceRef": "Mateus 27:45",
+        "evidenceSpan": "trevas cobriram toda a terra até a nona hora"
+      },
+      {
+        "text": "Por volta da hora nona, Jesus exclamou em alta voz.",
+        "evidenceRef": "Mateus 27:46",
+        "evidenceSpan": "Jesus exclamou em alta voz"
+      },
+      {
+        "text": "Jesus, gritando novamente com grande voz, entregou o espírito.",
+        "evidenceRef": "Mateus 27:50",
+        "evidenceSpan": "gritando novamente com grande voz, entregou o espírito"
+      },
+      {
+        "text": "O véu do santuário se rasgou em duas partes, de alto a baixo.",
+        "evidenceRef": "Mateus 27:51",
+        "evidenceSpan": "o véu do santuário se rasgou em duas partes de alto a baixo"
+      },
+      {
+        "text": "A entrada na cidade santa ocorre após a ressurreição de Jesus.",
+        "evidenceRef": "Mateus 27:53",
+        "evidenceSpan": "após a ressurreição de Jesus"
+      },
+      {
+        "text": "O centurião e os que guardavam Jesus disseram que este era o Filho de Deus.",
+        "evidenceRef": "Mateus 27:54",
+        "evidenceSpan": "Verdadeiramente, este era o Filho de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "véu",
+        "gloss": "A cortina do santuário, rasgada de alto a baixo quando Jesus entrega o espírito."
+      },
+      {
+        "term": "espírito",
+        "gloss": "O que Jesus entrega ao morrer, num segundo grito de grande voz."
+      },
+      {
+        "term": "Filho de Deus",
+        "gloss": "Título que o centurião e os que guardavam Jesus confessam com grande temor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Trevas cobrem a terra até a nona hora",
+        "evidenceRef": "Mateus 27:45"
+      },
+      {
+        "label": "Jesus clama e entrega o espírito",
+        "evidenceRef": "Mateus 27:46–50"
+      },
+      {
+        "label": "Sinais no santuário e confissão da guarda",
+        "evidenceRef": "Mateus 27:51–54"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "As trevas duram até a nona hora, e por volta dessa hora Jesus exclama em alta voz.",
+        "marker": "até",
+        "evidenceRef": "Mateus 27:45–46"
+      },
+      {
+        "kind": "contraste",
+        "text": "Um dá vinagre a Jesus, mas os outros, porém, preferem esperar para ver se Elias vem.",
+        "marker": "porém",
+        "evidenceRef": "Mateus 27:48–49"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao perceberem o terremoto e o que se passava, a guarda teme e confessa o Filho de Deus.",
+        "marker": "perceberem",
+        "evidenceRef": "Mateus 27:54"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 22:1",
+        "bridge": "Mesmo clamor a Deus"
+      },
+      {
+        "ref": "Marcos 15:39",
+        "bridge": "Confissão do Filho de Deus"
+      },
+      {
+        "ref": "Lucas 23:45",
+        "bridge": "Trevas e véu rasgado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus pedia a Elias, e os que estavam ali ouviram o nome certo.",
+        "why": "As palavras de Jesus são Meu Deus, meu Deus. A fala sobre Elias é o que alguns disseram ao ouvir, não o clamor em si."
+      },
+      {
+        "text": "Os santos ressuscitados entraram na cidade santa antes da ressurreição de Jesus.",
+        "why": "Mateus 27:53 coloca a saída dos sepulcros e a entrada na cidade após a ressurreição de Jesus."
+      },
+      {
+        "text": "O centurião zombou ao dizer que Jesus era o Filho de Deus.",
+        "why": "O texto fala em grande temor diante do terremoto e do que se passava, e a frase começa com Verdadeiramente."
+      }
+    ],
+    "centralInsight": "Na morte de Jesus, o véu se rasga e até os soldados reconhecem o Filho de Deus.",
+    "anchorQuestion": "O que o centurião e os que guardavam Jesus disseram ao perceber o terremoto?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 27:45, trevas cobriram só Jerusalém até a nona hora.",
+      "verseRef": "Mateus 27:45",
+      "correctOptionId": "false",
+      "evidenceSpan": "trevas cobriram toda a terra até a nona hora",
+      "feedbackCorrect": "O alcance não é só Jerusalém. Trevas cobriram toda a terra até a nona hora.",
+      "feedbackWrong": {
+        "true": "O versículo fala de toda a terra, não só de Jerusalém."
+      },
+      "hint": "Leia o que cobre a terra nesse intervalo.",
+      "learningObjective": "Observar a duração das trevas sobre a terra.",
+      "evidence": [
+        "Mateus 27:45"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 27:54, toque quem guardava Jesus junto com os demais.",
+      "verseRef": "Mateus 27:54",
+      "options": [
+        {
+          "id": "a",
+          "text": "terremoto"
+        },
+        {
+          "id": "b",
+          "text": "centurião"
+        },
+        {
+          "id": "c",
+          "text": "grande temor"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o centurião e os que estavam com ele guardando a Jesus",
+      "feedbackCorrect": "O centurião é a pessoa nomeada entre os que guardavam Jesus.",
+      "feedbackWrong": {
+        "a": "O terremoto é o que eles percebem, não quem guardava.",
+        "c": "Grande temor é o que sentiram, não quem montava guarda."
+      },
+      "hint": "A pessoa nomeada abre o versículo.",
+      "learningObjective": "Identificar quem guardava Jesus na cena final.",
+      "evidence": [
+        "Mateus 27:54"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 27:51, o que ocorreu com o véu do santuário?",
+      "verseRef": "Mateus 27:51",
+      "options": [
+        {
+          "id": "a",
+          "text": "O véu permaneceu fechado sobre o santuário"
+        },
+        {
+          "id": "b",
+          "text": "Os guardas retiraram o véu e o levaram"
+        },
+        {
+          "id": "c",
+          "text": "O véu caiu quando as rochas se fenderam"
+        },
+        {
+          "id": "d",
+          "text": "O véu se rasgou em duas partes, de alto a baixo"
+        }
+      ],
+      "correctOptionId": "d",
+      "evidenceSpan": "o véu do santuário se rasgou em duas partes de alto a baixo",
+      "feedbackCorrect": "O véu do santuário se rasgou em duas partes, de alto a baixo.",
+      "feedbackWrong": {
+        "a": "O texto não diz que o véu ficou fechado. Ele se rasgou.",
+        "b": "Quem age sobre o véu não são os guardas. O véu se rasga.",
+        "c": "As rochas se fendem à parte. O véu se rasga de alto a baixo."
+      },
+      "hint": "Veja o que o versículo diz logo após citar o véu.",
+      "learningObjective": "Observar o que o texto afirma sobre o véu do santuário.",
+      "evidence": [
+        "Mateus 27:51"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 27:51 na ordem do texto.",
+      "verseRef": "Mateus 27:51",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que o véu do santuário"
+        },
+        {
+          "id": "b",
+          "text": "se rasgou em duas partes de alto a baixo"
+        },
+        {
+          "id": "c",
+          "text": "tremeu a terra, e as rochas se fenderam"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o véu do santuário se rasgou em duas partes de alto a baixo",
+      "feedbackCorrect": "A frase vai do véu rasgado ao tremor da terra e às rochas.",
+      "feedbackWrong": {
+        "default": "Comece pelo véu. O tremor da terra e as rochas vêm no fim."
+      },
+      "hint": "A primeira peça nomeia o véu do santuário.",
+      "learningObjective": "Reconhecer a sequência de Mateus 27:51.",
+      "evidence": [
+        "Mateus 27:51"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 27:45, o que cobriu toda a terra até a nona hora?",
+      "verseRef": "Mateus 27:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "rochas"
+        },
+        {
+          "id": "b",
+          "text": "nuvens"
+        },
+        {
+          "id": "c",
+          "text": "trevas"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "trevas cobriram toda a terra",
+      "feedbackCorrect": "Trevas são o que cobre toda a terra até a nona hora.",
+      "feedbackWrong": {
+        "a": "As rochas se fendem mais adiante. Aqui outro sujeito cobre a terra.",
+        "b": "O texto não fala em nuvens. O sujeito do verbo está no versículo."
+      },
+      "hint": "É o sujeito que pratica a ação de cobrir a terra.",
+      "learningObjective": "Lembrar o que cobriu a terra da hora sexta à nona.",
+      "evidence": [
+        "Mateus 27:45"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 27:50 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 27:50",
+      "passageA": {
+        "ref": "Mateus 27:50"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus entrega o espírito com grande voz. Elias não o salva."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Elias vem salvá-lo"
+        },
+        {
+          "id": "b",
+          "text": "Jesus entrega o espírito"
+        },
+        {
+          "id": "c",
+          "text": "Trevas cobrem o véu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "entregou o espírito",
+      "feedbackCorrect": "Jesus não é salvo por Elias. Ele mesmo entrega o espírito.",
+      "feedbackWrong": {
+        "a": "Os outros querem ver se Elias vem, mas o texto não diz que ele vem.",
+        "c": "As trevas estão na cena, mas não rompem o véu neste versículo."
+      },
+      "hint": "Veja a ação de Jesus no fim do versículo.",
+      "learningObjective": "Ligar a entrega do espírito ao fato de que Elias não salva Jesus.",
+      "evidence": [
+        "Mateus 27:50"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 27:54, o centurião e os que guardavam Jesus temeram ao perceber o terremoto e o que se passava.",
+      "verseRef": "Mateus 27:54",
+      "correctOptionId": "true",
+      "evidenceSpan": "ao perceberem o terremoto e tudo o que se passava, ficaram possuídos de grande temor",
+      "feedbackCorrect": "O temor vem quando eles percebem o terremoto e tudo o que se passava.",
+      "feedbackWrong": {
+        "false": "O versículo liga o grande temor ao que eles percebem no terremoto."
+      },
+      "hint": "Veja o que acontece ao perceberem o terremoto.",
+      "learningObjective": "Compreender o temor da guarda como resultado do que ela percebe.",
+      "evidence": [
+        "Mateus 27:54"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 27:49, toque a palavra que marca o contraste na fala.",
+      "verseRef": "Mateus 27:49",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "diziam"
+        },
+        {
+          "id": "c",
+          "text": "Elias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os outros, porém, diziam",
+      "feedbackCorrect": "Porém marca o contraste entre quem agiu e a fala dos outros.",
+      "feedbackWrong": {
+        "b": "Diziam só introduz a fala. O contraste está na palavra anterior.",
+        "c": "Elias é o nome na espera deles, não o marcador do contraste."
+      },
+      "hint": "Procure a palavra curta entre vírgulas.",
+      "learningObjective": "Reconhecer o marcador de contraste em Mateus 27:49.",
+      "evidence": [
+        "Mateus 27:49"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Mateus 27:50–51 relaciona a morte de Jesus e o véu?",
+      "verseRef": "Mateus 27:50–51",
+      "options": [
+        {
+          "id": "a",
+          "text": "O véu se rasga muito antes do grito final"
+        },
+        {
+          "id": "b",
+          "text": "O véu se rasga logo após a entrega do espírito"
+        },
+        {
+          "id": "c",
+          "text": "Elias rasga o véu para salvar Jesus"
+        },
+        {
+          "id": "d",
+          "text": "Os guardas cortam o véu com as mãos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Eis que o véu do santuário se rasgou",
+      "feedbackCorrect": "Logo depois que Jesus entrega o espírito, o véu do santuário se rasga.",
+      "feedbackWrong": {
+        "a": "O véu aparece depois do grito final, não horas antes.",
+        "c": "O texto não atribui o rasgo a Elias. O véu se rasga.",
+        "d": "Nada indica que os guardas cortaram o véu com as mãos."
+      },
+      "hint": "Compare a ordem do grito final e do véu.",
+      "learningObjective": "Relacionar a entrega do espírito ao rasgo do véu.",
+      "evidence": [
+        "Mateus 27:50–51"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança de Mateus 27:45 até a confissão?",
+      "verseRef": "Mateus 27:45–46",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trevas cobrem a terra até a nona hora"
+        },
+        {
+          "id": "b",
+          "text": "Jesus clama e entrega o espírito"
+        },
+        {
+          "id": "c",
+          "text": "Sinais no santuário e confissão da guarda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "trevas cobriram toda a terra até a nona hora",
+      "feedbackCorrect": "A cena passa das trevas ao espírito entregue e à confissão da guarda.",
+      "feedbackWrong": {
+        "default": "As trevas abrem a cena. A confissão da guarda vem no fim."
+      },
+      "hint": "O primeiro movimento ainda é a hora das trevas.",
+      "learningObjective": "Compreender os três movimentos principais do relato.",
+      "evidence": [
+        "Mateus 27:45",
+        "Mateus 27:46–50",
+        "Mateus 27:51–54"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 27:51, qual verbo diz o que ocorreu ao véu?",
+      "verseRef": "Mateus 27:51",
+      "options": [
+        {
+          "id": "a",
+          "text": "rasgou"
+        },
+        {
+          "id": "b",
+          "text": "partiu"
+        },
+        {
+          "id": "c",
+          "text": "rompeu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o véu do santuário se rasgou",
+      "feedbackCorrect": "O véu do santuário se rasga em duas partes, de alto a baixo.",
+      "feedbackWrong": {
+        "b": "Partiu não aparece no versículo. O verbo do véu é outro.",
+        "c": "Rompeu não aparece. O verbo do véu vem logo antes das duas partes."
+      },
+      "hint": "Observe o verbo do véu antes das duas partes.",
+      "learningObjective": "Lembrar o verbo que descreve o que ocorre ao véu.",
+      "evidence": [
+        "Mateus 27:51"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 27:46 a Salmos 22:1?",
+      "verseRef": "Mateus 27:46",
+      "passageA": {
+        "ref": "Mateus 27:46"
+      },
+      "passageB": {
+        "ref": "Salmos 22:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesmo clamor a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Elias no meio do salmo"
+        },
+        {
+          "id": "c",
+          "text": "Véu rasgado no salmo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu Deus, meu Deus, por que me desamparaste?",
+      "feedbackCorrect": "Jesus exclama as mesmas palavras que abrem o salmo.",
+      "feedbackWrong": {
+        "b": "O salmo não nomeia Elias. O clamor é dirigido a Deus.",
+        "c": "O salmo citado não fala do véu. Fala do clamor."
+      },
+      "hint": "Compare o clamor de Jesus com o início do salmo.",
+      "learningObjective": "Relacionar o clamor de Jesus às palavras de Salmos 22:1.",
+      "evidence": [
+        "Mateus 27:46",
+        "Salmos 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 27:53, os santos entraram na cidade santa antes da ressurreição de Jesus.",
+      "verseRef": "Mateus 27:53",
+      "correctOptionId": "false",
+      "evidenceSpan": "após a ressurreição de Jesus",
+      "feedbackCorrect": "O texto situa a entrada na cidade santa após a ressurreição de Jesus.",
+      "feedbackWrong": {
+        "true": "A expressão do versículo é após a ressurreição, não antes."
+      },
+      "hint": "Procure a expressão de tempo no versículo.",
+      "learningObjective": "Rejeitar a leitura que adianta a entrada dos santos na cidade.",
+      "evidence": [
+        "Mateus 27:53"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 27:54, toque a palavra da fala deles que marca reconhecimento sincero.",
+      "verseRef": "Mateus 27:54",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verdadeiramente"
+        },
+        {
+          "id": "b",
+          "text": "terremoto"
+        },
+        {
+          "id": "c",
+          "text": "guardando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Verdadeiramente, este era o Filho de Deus",
+      "feedbackCorrect": "Verdadeiramente abre a frase e marca reconhecimento, não zombaria.",
+      "feedbackWrong": {
+        "b": "O terremoto é o que eles veem. A confissão vem na frase seguinte.",
+        "c": "Guardando indica a função deles, não o tom da frase."
+      },
+      "hint": "Ela é a primeira palavra da frase que eles disseram.",
+      "learningObjective": "Localizar a palavra que sustenta a confissão como reconhecimento.",
+      "evidence": [
+        "Mateus 27:54"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Mateus 27:53–54 o texto sustenta?",
+      "verseRef": "Mateus 27:53–54",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os santos aparecem depois, e a guarda confessa com temor"
+        },
+        {
+          "id": "b",
+          "text": "Os santos entram na cidade antes da ressurreição"
+        },
+        {
+          "id": "c",
+          "text": "O centurião zomba ao chamar Jesus de Filho"
+        },
+        {
+          "id": "d",
+          "text": "Elias salva Jesus e faz parar o terremoto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "após a ressurreição de Jesus",
+      "feedbackCorrect": "Os santos entram depois da ressurreição, e a guarda confessa com temor.",
+      "feedbackWrong": {
+        "b": "O texto diz após a ressurreição, não antes.",
+        "c": "O relato fala em grande temor e em reconhecimento verdadeiro.",
+        "d": "Elias não salva Jesus nem acalma o terremoto nesse relato."
+      },
+      "hint": "Leia o tempo da entrada na cidade e o tom da guarda.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre os santos e a guarda.",
+      "evidence": [
+        "Mateus 27:53–54"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica leva das trevas na cruz até a confissão?",
+      "verseRef": "Mateus 27:50–51",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trevas marcam as horas na cruz"
+        },
+        {
+          "id": "b",
+          "text": "Jesus entrega o espírito com um grito"
+        },
+        {
+          "id": "c",
+          "text": "Sinais e temor levam à confissão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "entregou o espírito",
+      "feedbackCorrect": "O relato sai das trevas, passa pela morte e chega à confissão.",
+      "feedbackWrong": {
+        "default": "As trevas vêm primeiro. A confissão fecha o encadeamento."
+      },
+      "hint": "O grito da morte fica entre as trevas e a confissão.",
+      "learningObjective": "Interpretar o caminho das trevas na cruz até a confissão da guarda.",
+      "evidence": [
+        "Mateus 27:45",
+        "Mateus 27:50",
+        "Mateus 27:54"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 27:50, o que Jesus entregou ao morrer?",
+      "verseRef": "Mateus 27:50",
+      "options": [
+        {
+          "id": "a",
+          "text": "corpo"
+        },
+        {
+          "id": "b",
+          "text": "espírito"
+        },
+        {
+          "id": "c",
+          "text": "sopro"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "entregou o espírito",
+      "feedbackCorrect": "Jesus entrega o espírito com um grito de grande voz.",
+      "feedbackWrong": {
+        "a": "O versículo não diz que Jesus entregou o corpo. A palavra é outra.",
+        "c": "Sopro não está na frase. Veja o substantivo depois de entregou o."
+      },
+      "hint": "A palavra fica no fim, depois do verbo entregar.",
+      "learningObjective": "Lembrar o termo que nomeia o que Jesus entrega na morte.",
+      "evidence": [
+        "Mateus 27:50"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 27:54 a Marcos 15:39?",
+      "verseRef": "Mateus 27:54",
+      "passageA": {
+        "ref": "Mateus 27:54"
+      },
+      "passageB": {
+        "ref": "Marcos 15:39"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Zombaria diante da morte"
+        },
+        {
+          "id": "b",
+          "text": "Elias liberta a guarda"
+        },
+        {
+          "id": "c",
+          "text": "Confissão do Filho de Deus"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "este era o Filho de Deus",
+      "feedbackCorrect": "Os dois relatos trazem a confissão de que Jesus é o Filho de Deus.",
+      "feedbackWrong": {
+        "a": "Os dois textos registram reconhecimento, não zombaria.",
+        "b": "Nenhum dos dois versículos diz que Elias liberta a guarda."
+      },
+      "hint": "Veja que título os dois relatos dão a Jesus.",
+      "learningObjective": "Ligar a confissão do centurião em Mateus à confissão em Marcos.",
+      "evidence": [
+        "Mateus 27:54",
+        "Marcos 15:39"
+      ]
+    }
+  ]
+}

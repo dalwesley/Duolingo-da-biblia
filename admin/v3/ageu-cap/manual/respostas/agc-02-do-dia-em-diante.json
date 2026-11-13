@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Ageu 2:14–19",
+    "passages": [
+      { "ref": "Ageu 2:14–19" },
+      { "ref": "Ageu 2:10–13" }
+    ],
+    "context": "Ageu consulta os sacerdotes sobre puro e impuro e aplica a lição ao povo. Depois aponta o passado de escassez e anuncia bênção a partir do dia do alicerce.",
+    "keyword": "abençoarei",
+    "keywordGloss": "Promessa do Senhor de abençoar a partir do dia em que o templo é fundado.",
+    "focusQuestion": "Que passo de obediência você precisa dar para viver \"desde este dia\" sob a bênção de Deus?",
+    "reflectionPrompts": [
+      "Puro e impuro",
+      "Desde este dia",
+      "Bênção no alicerce"
+    ],
+    "facts": [
+      {
+        "text": "Carne santa na orla do vestido não torna sagrado o que toca.",
+        "evidenceRef": "Ageu 2:12",
+        "evidenceSpan": "Os sacerdotes responderam: Não"
+      },
+      {
+        "text": "Quem está impuro por um cadáver contamina o que toca.",
+        "evidenceRef": "Ageu 2:13",
+        "evidenceSpan": "Ficará imunda"
+      },
+      {
+        "text": "O Senhor aplica isso ao povo: a obra das mãos e as ofertas são imundas.",
+        "evidenceRef": "Ageu 2:14",
+        "evidenceSpan": "tudo o que ali oferecem é imundo"
+      },
+      {
+        "text": "O Senhor feriu a obra das mãos, e o povo não se voltou para ele.",
+        "evidenceRef": "Ageu 2:17",
+        "evidenceSpan": "não houve quem se voltasse para mim"
+      },
+      {
+        "text": "Devem considerar desde o dia em que se fundou o templo do Senhor.",
+        "evidenceRef": "Ageu 2:18",
+        "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR"
+      },
+      {
+        "text": "Desde este dia o Senhor promete abençoar.",
+        "evidenceRef": "Ageu 2:19",
+        "evidenceSpan": "desde este dia, Eu vos abençoarei"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "imundo",
+        "gloss": "Estado das ofertas e da obra enquanto o povo vive longe do Senhor."
+      },
+      {
+        "term": "fundou",
+        "gloss": "O dia em que o alicerce do templo é posto."
+      },
+      {
+        "term": "abençoarei",
+        "gloss": "Promessa do Senhor a partir daquele dia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Perguntas aos sacerdotes sobre santo e impuro",
+        "evidenceRef": "Ageu 2:11–13"
+      },
+      {
+        "label": "Aplicação: o povo e suas ofertas estão imundos",
+        "evidenceRef": "Ageu 2:14"
+      },
+      {
+        "label": "Lembrete da escassez passada",
+        "evidenceRef": "Ageu 2:15–17"
+      },
+      {
+        "label": "Bênção desde o dia do alicerce",
+        "evidenceRef": "Ageu 2:18–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "A impureza do povo torna imunda toda a obra das mãos e as ofertas.",
+        "marker": "assim",
+        "evidenceRef": "Ageu 2:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "O Senhor feriu a obra, contudo ninguém se voltou para ele.",
+        "marker": "contudo",
+        "evidenceRef": "Ageu 2:17"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da fundação do templo, o Senhor promete abençoar desde aquele dia.",
+        "marker": "desde",
+        "evidenceRef": "Ageu 2:19"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Zacarias 8:9–12", "bridge": "Força e bênção na obra" },
+      { "ref": "Malaquias 3:10", "bridge": "Bênção após obediência" },
+      { "ref": "Ageu 1:8", "bridge": "Chamado a construir a Casa" }
+    ],
+    "misreadings": [
+      {
+        "text": "Basta tocar o santo para tornar santo o resto da vida.",
+        "why": "Os sacerdotes respondem que a orla com carne santa não santifica o que toca."
+      },
+      {
+        "text": "A bênção de 2:19 não depende de nenhuma mudança prática.",
+        "why": "A promessa vem ligada ao dia em que se fundou o templo."
+      },
+      {
+        "text": "O povo já se voltava para o Senhor durante as pragas.",
+        "why": "Em 2:17 o Senhor diz que não houve quem se voltasse para ele."
+      }
+    ],
+    "centralInsight": "A partir do dia em que o alicerce é posto, o Senhor promete abençoar.",
+    "anchorQuestion": "Segundo Ageu 2:19, o que o Senhor promete fazer desde este dia?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ageu 2:12, os sacerdotes dizem que a orla com carne santa torna sagrado o mantimento tocado.",
+      "verseRef": "Ageu 2:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os sacerdotes responderam: Não",
+      "feedbackCorrect": "Os sacerdotes respondem \"Não\": o santo não se transmite assim.",
+      "feedbackWrong": { "true": "Releia o fim de 2:12: os sacerdotes responderam Não." },
+      "hint": "Veja a resposta dos sacerdotes no fim do versículo.",
+      "learningObjective": "Observar a resposta dos sacerdotes sobre o santo.",
+      "evidence": ["Ageu 2:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ageu 2:13, toque o que os sacerdotes dizem sobre o tocado pelo impuro.",
+      "verseRef": "Ageu 2:13",
+      "evidenceSpan": "Ficará imunda",
+      "feedbackCorrect": "Os sacerdotes afirmam: Ficará imunda.",
+      "hint": "Procure a resposta final dos sacerdotes.",
+      "learningObjective": "Identificar a resposta sobre impureza.",
+      "evidence": ["Ageu 2:13"],
+      "options": [
+        { "id": "a", "text": "cadáver" },
+        { "id": "b", "text": "Ficará imunda" },
+        { "id": "c", "text": "sacerdotes" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Cadáver\" é a causa da impureza, não a resposta final.",
+        "c": "\"Sacerdotes\" são quem responde, não o conteúdo da resposta."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ageu 2:19, o que o Senhor promete desde este dia?",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "O Senhor promete: desde este dia, Eu vos abençoarei.",
+      "hint": "Leia a última frase do versículo.",
+      "learningObjective": "Observar a promessa ligada a este dia.",
+      "evidence": ["Ageu 2:19"],
+      "options": [
+        { "id": "a", "text": "Abençoar o povo desde este dia" },
+        { "id": "b", "text": "Fechar de novo os céus" },
+        { "id": "c", "text": "Enviar outro exílio" },
+        { "id": "d", "text": "Tirar a videira da terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O versículo anuncia bênção, não novo fechamento.",
+        "c": "O versículo não fala de exílio.",
+        "d": "O texto fala de frutos futuros sob bênção, não de arrancar a videira."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ageu 2:19 na ordem do texto.",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Primeiro a falta nos celeiros e árvores; depois a promessa de bênção.",
+      "hint": "O versículo começa com o celeiro.",
+      "learningObjective": "Reconhecer a sequência de Ageu 2:19.",
+      "evidence": ["Ageu 2:19"],
+      "options": [
+        { "id": "a", "text": "Já não há sementes no celeiro" },
+        { "id": "b", "text": "A videira, a figueira, a romeira e a oliveira não têm dado seus frutos" },
+        { "id": "c", "text": "mas, desde este dia, Eu vos abençoarei" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Celeiro e árvores primeiro; a bênção fecha o versículo." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ageu 2:19, que verbo o Senhor usa na promessa desde este dia?",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "Eu vos abençoarei",
+      "feedbackCorrect": "O Senhor promete: Eu vos abençoarei.",
+      "hint": "É o verbo da última frase.",
+      "learningObjective": "Lembrar o verbo da promessa.",
+      "evidence": ["Ageu 2:19"],
+      "options": [
+        { "id": "a", "text": "julgarei" },
+        { "id": "b", "text": "abençoarei" },
+        { "id": "c", "text": "esquecerei" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Julgarei\" não é o verbo da promessa em 2:19.",
+        "c": "\"Esquecerei\" não é o verbo da promessa em 2:19."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ageu 2:18 comunica que se liga a este contexto?",
+      "verseRef": "Ageu 2:18",
+      "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR",
+      "feedbackCorrect": "O marco da bênção é o dia em que o templo foi fundado.",
+      "hint": "Veja o dia que deve ser considerado.",
+      "learningObjective": "Ligar 2:18 ao marco do alicerce.",
+      "evidence": ["Ageu 2:18"],
+      "passageA": { "ref": "Ageu 2:18" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A bênção anunciada começa no dia em que o alicerce do templo é posto."
+      },
+      "options": [
+        { "id": "a", "text": "Marco do alicerce do templo" },
+        { "id": "b", "text": "Fim de toda a lei" },
+        { "id": "c", "text": "Volta imediata ao Egito" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto não anuncia o fim da lei.",
+        "c": "O texto não fala de volta ao Egito."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ageu 2:17, mesmo depois das pragas, o povo se voltou para o Senhor.",
+      "verseRef": "Ageu 2:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "não houve quem se voltasse para mim",
+      "feedbackCorrect": "O Senhor diz que não houve quem se voltasse para ele.",
+      "feedbackWrong": { "true": "Releia o fim de 2:17: não houve quem se voltasse." },
+      "hint": "Veja se alguém se voltou após as pragas.",
+      "learningObjective": "Compreender a resposta do povo às pragas.",
+      "evidence": ["Ageu 2:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ageu 2:17, toque a palavra que marca o contraste após as pragas.",
+      "verseRef": "Ageu 2:17",
+      "evidenceSpan": "contudo, entre vocês não houve quem se voltasse para mim",
+      "feedbackCorrect": "\"Contudo\" marca o contraste: houve praga, mas não houve volta.",
+      "hint": "É a palavra que introduz o \"não houve\".",
+      "learningObjective": "Reconhecer o marcador de contraste em 2:17.",
+      "evidence": ["Ageu 2:17"],
+      "options": [
+        { "id": "a", "text": "queimaduras" },
+        { "id": "b", "text": "contudo" },
+        { "id": "c", "text": "saraiva" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Queimaduras\" é uma das pragas, não o marcador.",
+        "c": "\"Saraiva\" é uma das pragas, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ageu 2:14 aplica a lição do puro e do impuro ao povo?",
+      "verseRef": "Ageu 2:14",
+      "evidenceSpan": "tudo o que ali oferecem é imundo",
+      "feedbackCorrect": "Como a impureza contamina, assim o povo e suas ofertas estão imundos.",
+      "hint": "Veja o que o Senhor diz da obra e das ofertas.",
+      "learningObjective": "Relacionar a lei do impuro à situação do povo.",
+      "evidence": ["Ageu 2:14"],
+      "options": [
+        { "id": "a", "text": "O povo e suas ofertas estão imundos perante o Senhor" },
+        { "id": "b", "text": "O povo já santificou tudo o que toca" },
+        { "id": "c", "text": "As ofertas do povo limpam a nação inteira" },
+        { "id": "d", "text": "Só os sacerdotes estão imundos, não o povo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que a obra e as ofertas são imundas.",
+        "c": "O texto não diz que as ofertas limpam a nação.",
+        "d": "O Senhor aplica a palavra a este povo e esta nação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeia Ageu 2:14–19?",
+      "verseRef": "Ageu 2:14–19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Primeiro a impureza, depois a memória da escassez, enfim a bênção no alicerce.",
+      "hint": "Comece pela aplicação ao povo.",
+      "learningObjective": "Seguir o movimento de 2:14–19.",
+      "evidence": ["Ageu 2:14–19"],
+      "options": [
+        { "id": "a", "text": "O povo e suas ofertas são declarados imundos" },
+        { "id": "b", "text": "O Senhor lembra a escassez e a falta de volta" },
+        { "id": "c", "text": "Promete abençoar desde o dia do alicerce" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Impureza primeiro; a bênção fecha o trecho." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ageu 2:17, que verbo descreve o que ninguém fez diante do Senhor?",
+      "verseRef": "Ageu 2:17",
+      "evidenceSpan": "não houve quem se voltasse para mim",
+      "feedbackCorrect": "Ninguém se voltasse para o Senhor: a volta faltou.",
+      "hint": "É o verbo da volta que não aconteceu.",
+      "learningObjective": "Lembrar o verbo da resposta que faltou.",
+      "evidence": ["Ageu 2:17"],
+      "options": [
+        { "id": "a", "text": "escondesse" },
+        { "id": "b", "text": "voltasse" },
+        { "id": "c", "text": "alegrasse" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Escondesse\" não é o verbo da falta em 2:17.",
+        "c": "\"Alegrasse\" não é o verbo da falta em 2:17."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ageu 2:19 a Malaquias 3:10?",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Nos dois textos, a bênção do Senhor responde à obediência prática.",
+      "hint": "Compare bênção e resposta do Senhor.",
+      "learningObjective": "Relacionar a bênção de Ageu à de Malaquias.",
+      "evidence": ["Ageu 2:19", "Malaquias 3:10"],
+      "passageA": { "ref": "Ageu 2:19" },
+      "passageB": { "ref": "Malaquias 3:10" },
+      "options": [
+        { "id": "a", "text": "Bênção após obediência" },
+        { "id": "b", "text": "Fim de toda prometida" },
+        { "id": "c", "text": "Castigo sem aviso prévio" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam bênção, não fim das promessas.",
+        "c": "Os textos ligam bênção à resposta do povo, não castigo surpresa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ageu 2:18–19, a bênção anunciada começa no dia em que se fundou o templo do Senhor.",
+      "verseRef": "Ageu 2:18–19",
+      "correctOptionId": "true",
+      "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR",
+      "feedbackCorrect": "O marco é o dia da fundação; desde este dia o Senhor abençoa.",
+      "feedbackWrong": { "false": "Releia 2:18–19: o dia da fundação é o marco da bênção." },
+      "hint": "Veja o dia que deve ser considerado em 2:18.",
+      "learningObjective": "Interpretar o marco da promessa de bênção.",
+      "evidence": ["Ageu 2:18–19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ageu 2:14, toque o trecho que mostra o estado das ofertas do povo.",
+      "verseRef": "Ageu 2:14",
+      "evidenceSpan": "tudo o que ali oferecem é imundo",
+      "feedbackCorrect": "Tudo o que oferecem é imundo: a impureza alcança as ofertas.",
+      "hint": "Procure o que o Senhor diz das ofertas.",
+      "learningObjective": "Sustentar com o texto o estado das ofertas.",
+      "evidence": ["Ageu 2:14"],
+      "options": [
+        { "id": "a", "text": "é imundo" },
+        { "id": "b", "text": "esta nação" },
+        { "id": "c", "text": "Ageu prosseguiu" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Esta nação\" é o sujeito da aplicação, não o estado das ofertas.",
+        "c": "\"Ageu prosseguiu\" introduz a fala, não descreve as ofertas."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Ageu 2:12–19 sustenta sobre santidade e bênção?",
+      "verseRef": "Ageu 2:14",
+      "evidenceSpan": "Assim é este povo, e assim é esta nação perante mim",
+      "feedbackCorrect": "Contato superficial com o santo não limpa a vida; a bênção vem com a obra retomada.",
+      "hint": "Ligue a lição dos sacerdotes à promessa do alicerce.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Ageu 2:14"],
+      "options": [
+        { "id": "a", "text": "Santo de empréstimo não limpa; bênção segue a obra retomada" },
+        { "id": "b", "text": "Qualquer toque no santo já santifica o povo inteiro" },
+        { "id": "c", "text": "A bênção vem sem relação com o templo" },
+        { "id": "d", "text": "Só o passado de escassez importa, não o dia do alicerce" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os sacerdotes dizem que o santo na orla não santifica o tocado.",
+        "c": "A bênção está ligada ao dia da fundação do templo.",
+        "d": "O Senhor manda considerar justamente o dia do alicerce."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra bênção ligada à obra da Casa?",
+      "verseRef": "Ageu 2:18–19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Ageu liga bênção ao alicerce; Zacarias anima a obra; Malaquias liga bênção à obediência.",
+      "hint": "Parta de Ageu e avance nos profetas.",
+      "learningObjective": "Ver a bênção de Ageu no fio dos profetas.",
+      "evidence": ["Ageu 2:19", "Zacarias 8:9–12", "Malaquias 3:10"],
+      "options": [
+        { "id": "a", "text": "Ageu liga a bênção ao dia do alicerce" },
+        { "id": "b", "text": "Zacarias anima a mão forte na obra" },
+        { "id": "c", "text": "Malaquias liga bênção à obediência prática" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Ageu 2:19, Zacarias 8 e Malaquias 3:10." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ageu 2:14, que palavra resume o estado das ofertas do povo?",
+      "verseRef": "Ageu 2:14",
+      "evidenceSpan": "tudo o que ali oferecem é imundo",
+      "feedbackCorrect": "As ofertas são imundas: a palavra carrega o diagnóstico do Senhor.",
+      "hint": "É o adjetivo no fim da frase sobre as ofertas.",
+      "learningObjective": "Lembrar o termo que carrega o diagnóstico.",
+      "evidence": ["Ageu 2:14"],
+      "options": [
+        { "id": "a", "text": "puro" },
+        { "id": "b", "text": "imundo" },
+        { "id": "c", "text": "doce" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Puro\" é o oposto do diagnóstico em 2:14.",
+        "c": "\"Doce\" não aparece no diagnóstico das ofertas."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ageu 2:18–19 a Zacarias 8:9–12?",
+      "verseRef": "Ageu 2:18–19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Nos dois textos, a retomada da obra da Casa vem com promessa de bênção.",
+      "hint": "Compare obra do templo e bênção.",
+      "learningObjective": "Ligar a bênção de Ageu ao ânimo de Zacarias na obra.",
+      "evidence": ["Ageu 2:18–19", "Zacarias 8:9–12"],
+      "passageA": { "ref": "Ageu 2:19" },
+      "passageB": { "ref": "Zacarias 8:9–12" },
+      "options": [
+        { "id": "a", "text": "Força e bênção na obra" },
+        { "id": "b", "text": "Abandono final de Sião" },
+        { "id": "c", "text": "Proibição de construir" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos animam a obra e prometem bênção, não abandono.",
+        "c": "Os textos apontam construção, não proibição."
+      }
+    }
+  ]
+}

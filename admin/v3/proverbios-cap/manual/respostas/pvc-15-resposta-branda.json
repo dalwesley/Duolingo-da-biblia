@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Provérbios 15:1–5",
+  "passages": [
+   {
+    "ref": "Provérbios 15:1–5"
+   },
+   {
+    "ref": "Provérbios 15:6–9"
+   }
+  ],
+  "context": "Tom e coração importam: resposta suave desvia a ira; o Senhor vê maus e bons; oração dos justos o contenta.",
+  "keyword": "Brandura",
+  "keywordGloss": "A resposta suave desvia a ira; a palavra dura provoca furor.",
+  "focusQuestion": "Sua última resposta difícil foi suave ou dura?",
+  "reflectionPrompts": [
+   "Resposta suave",
+   "Olhos do Senhor",
+   "Oração dos justos"
+  ],
+  "facts": [
+   {
+    "text": "A resposta suave desvia a ira.",
+    "evidenceRef": "Provérbios 15:1",
+    "evidenceSpan": "A resposta suave desvia a ira"
+   },
+   {
+    "text": "A palavra dura provoca o furor.",
+    "evidenceRef": "Provérbios 15:1",
+    "evidenceSpan": "a palavra dura provoca o furor"
+   },
+   {
+    "text": "Os olhos do Senhor estão em toda parte.",
+    "evidenceRef": "Provérbios 15:3",
+    "evidenceSpan": "Os olhos do Senhor estão em toda parte"
+   },
+   {
+    "text": "A língua serena é árvore de vida.",
+    "evidenceRef": "Provérbios 15:4",
+    "evidenceSpan": "A língua serena é árvore de vida"
+   },
+   {
+    "text": "O sacrifício dos ímpios é abominável ao Senhor.",
+    "evidenceRef": "Provérbios 15:8",
+    "evidenceSpan": "O sacrifício dos ímpios é abominável ao Senhor"
+   },
+   {
+    "text": "A oração dos justos é o contentamento do Senhor.",
+    "evidenceRef": "Provérbios 15:8",
+    "evidenceSpan": "a oração dos justos é o seu contentamento"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "suave",
+    "gloss": "Qualidade da resposta que desvia a ira."
+   },
+   {
+    "term": "repreensão",
+    "gloss": "Quem a ouve alcança a prudência."
+   },
+   {
+    "term": "contentamento",
+    "gloss": "O que a oração dos justos é para o Senhor."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Resposta e língua",
+    "evidenceRef": "Provérbios 15:1–2"
+   },
+   {
+    "label": "Olhos do Senhor e língua serena",
+    "evidenceRef": "Provérbios 15:3–4"
+   },
+   {
+    "label": "Correção e casa",
+    "evidenceRef": "Provérbios 15:5–6"
+   },
+   {
+    "label": "Lábios, sacrifício e caminho",
+    "evidenceRef": "Provérbios 15:7–9"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Resposta suave desvia; palavra dura provoca.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 15:1"
+   },
+   {
+    "kind": "contraste",
+    "text": "Sacrifício ímpio abomina; oração justa contenta.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 15:8"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quem ouve a repreensão alcança a prudência.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 15:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Tiago 1:19",
+    "bridge": "Lento para falar"
+   },
+   {
+    "ref": "Efésios 4:29",
+    "bridge": "Palavra que edifica"
+   },
+   {
+    "ref": "Salmos 34:15",
+    "bridge": "Olhos do Senhor sobre justos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O tom da resposta não muda a ira do outro.",
+    "why": "15:1 diz que a resposta suave desvia a ira e a dura provoca furor."
+   },
+   {
+    "text": "Deus não vê o que se passa em toda parte.",
+    "why": "15:3 diz que os olhos do Senhor estão em toda parte."
+   },
+   {
+    "text": "Sacrifício ímpio e oração justa têm o mesmo valor.",
+    "why": "15:8 chama o sacrifício de abominável e a oração de contentamento."
+   }
+  ],
+  "centralInsight": "Tom e coração importam: brandura desarma, e Deus ouve o reto.",
+  "anchorQuestion": "Segundo Provérbios 15:1, o que a resposta suave faz com a ira?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 15:1, a palavra dura desvia a ira.",
+   "verseRef": "Provérbios 15:1",
+   "correctOptionId": "false",
+   "evidenceSpan": "a palavra dura provoca o furor",
+   "feedbackCorrect": "A dura provoca furor; quem desvia a ira é a suave.",
+   "feedbackWrong": {
+    "true": "Releia 15:1: a palavra dura provoca o furor."
+   },
+   "hint": "Veja o efeito da palavra dura.",
+   "learningObjective": "Observar o efeito do tom.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 15:1, toque o que a resposta suave desvia.",
+   "verseRef": "Provérbios 15:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "a ira"
+    },
+    {
+     "id": "b",
+     "text": "o furor"
+    },
+    {
+     "id": "c",
+     "text": "palavra dura"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "A resposta suave desvia a ira.",
+   "feedbackWrong": {
+    "b": "Furor é o que a palavra dura provoca.",
+    "c": "Palavra dura é o contraste."
+   },
+   "hint": "Objeto de desvia.",
+   "learningObjective": "Identificar o que a brandura desvia.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 15:3, onde estão os olhos do Senhor?",
+   "verseRef": "Provérbios 15:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Em toda parte"
+    },
+    {
+     "id": "b",
+     "text": "Só sobre os bons"
+    },
+    {
+     "id": "c",
+     "text": "Apenas no templo"
+    },
+    {
+     "id": "d",
+     "text": "Longe dos maus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os olhos do Senhor estão em toda parte",
+   "feedbackCorrect": "Estão em toda parte, contemplando maus e bons.",
+   "feedbackWrong": {
+    "b": "Contemplam também os maus.",
+    "c": "O texto diz em toda parte.",
+    "d": "Ele contempla os maus também."
+   },
+   "hint": "Complemento de estão.",
+   "learningObjective": "Observar o alcance do olhar de Deus.",
+   "evidence": [
+    "Provérbios 15:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 15:1 na ordem do texto.",
+   "verseRef": "Provérbios 15:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "A resposta suave desvia a ira"
+    },
+    {
+     "id": "b",
+     "text": "mas a palavra dura"
+    },
+    {
+     "id": "c",
+     "text": "provoca o furor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "Primeiro a suave; depois a dura e o furor.",
+   "feedbackWrong": {
+    "default": "Comece pela resposta suave."
+   },
+   "hint": "O versículo abre com A resposta suave.",
+   "learningObjective": "Seguir a ordem do contraste.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 15:4, a língua serena é árvore de quê?",
+   "verseRef": "Provérbios 15:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "vida"
+    },
+    {
+     "id": "b",
+     "text": "ira"
+    },
+    {
+     "id": "c",
+     "text": "furor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "é árvore de vida",
+   "feedbackCorrect": "A língua serena é árvore de vida.",
+   "feedbackWrong": {
+    "b": "Ira é o que a suave desvia.",
+    "c": "Furor é da palavra dura."
+   },
+   "hint": "Palavra após \"árvore de\".",
+   "learningObjective": "Lembrar a imagem da língua serena.",
+   "evidence": [
+    "Provérbios 15:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 15:1 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 15:1",
+   "passageA": {
+    "ref": "Provérbios 15:1",
+    "text": "A resposta suave desvia a ira"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O tom da fala desarma ou inflam a ira."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Brandura desarma a ira"
+    },
+    {
+     "id": "b",
+     "text": "Dureza como paz"
+    },
+    {
+     "id": "c",
+     "text": "Tom sem efeito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "A resposta suave liga o versículo ao tema da brandura.",
+   "feedbackWrong": {
+    "b": "Dureza provoca furor.",
+    "c": "Há efeito claro no tom."
+   },
+   "hint": "Veja o que a suave faz.",
+   "learningObjective": "Ligar 15:1 à brandura.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 15:8, o sacrifício dos ímpios é apresentado como o contentamento do Senhor.",
+   "verseRef": "Provérbios 15:8",
+   "correctOptionId": "false",
+   "evidenceSpan": "O sacrifício dos ímpios é abominável ao Senhor",
+   "feedbackCorrect": "É abominável; o contentamento é a oração dos justos.",
+   "feedbackWrong": {
+    "true": "Releia 15:8: o sacrifício é abominável."
+   },
+   "hint": "Veja o predicado do sacrifício dos ímpios.",
+   "learningObjective": "Compreender o contraste sacrifício–oração.",
+   "evidence": [
+    "Provérbios 15:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 15:1, toque a palavra que marca o contraste.",
+   "verseRef": "Provérbios 15:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "mas"
+    },
+    {
+     "id": "b",
+     "text": "suave"
+    },
+    {
+     "id": "c",
+     "text": "desvia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas a palavra dura provoca o furor",
+   "feedbackCorrect": "\"Mas\" introduz a palavra dura.",
+   "feedbackWrong": {
+    "b": "Suave é o primeiro polo.",
+    "c": "Desvia é a ação da suave."
+   },
+   "hint": "Palavra curta no meio.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 15:8 estabelece entre culto e coração?",
+   "verseRef": "Provérbios 15:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sacrifício ímpio abomina; oração justa contenta"
+    },
+    {
+     "id": "b",
+     "text": "Qualquer culto agrada igualmente"
+    },
+    {
+     "id": "c",
+     "text": "Oração dos justos é abominável"
+    },
+    {
+     "id": "d",
+     "text": "Deus ignora sacrifício e oração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a oração dos justos é o seu contentamento",
+   "feedbackCorrect": "O contraste une juízo e contentamento ao culto verdadeiro.",
+   "feedbackWrong": {
+    "b": "Há diferença clara.",
+    "c": "Oração justa contenta.",
+    "d": "Há juízo explícito."
+   },
+   "hint": "Compare as duas metades.",
+   "learningObjective": "Relacionar culto e contentamento.",
+   "evidence": [
+    "Provérbios 15:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Provérbios 15:1–9?",
+   "verseRef": "Provérbios 15:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Resposta e língua"
+    },
+    {
+     "id": "b",
+     "text": "Olhos do Senhor e língua serena"
+    },
+    {
+     "id": "c",
+     "text": "Lábios, sacrifício e caminho"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "Do tom ao olhar de Deus, e fecha com oração e caminho.",
+   "feedbackWrong": {
+    "default": "Comece pela resposta; o caminho fecha."
+   },
+   "hint": "O fim fala do caminho do ímpio e da justiça.",
+   "learningObjective": "Compreender o movimento do trecho.",
+   "evidence": [
+    "Provérbios 15:1",
+    "Provérbios 15:3",
+    "Provérbios 15:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 15:8, a oração dos justos é o seu quê?",
+   "verseRef": "Provérbios 15:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "contentamento"
+    },
+    {
+     "id": "b",
+     "text": "abominável"
+    },
+    {
+     "id": "c",
+     "text": "furor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "é o seu contentamento",
+   "feedbackCorrect": "\"Contentamento\" carrega o prazer de Deus na oração justa.",
+   "feedbackWrong": {
+    "b": "Abominável é o sacrifício dos ímpios.",
+    "c": "Furor é da palavra dura."
+   },
+   "hint": "Palavra final do versículo.",
+   "learningObjective": "Lembrar o termo do prazer de Deus.",
+   "evidence": [
+    "Provérbios 15:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 15:1 a Tiago 1:19?",
+   "verseRef": "Provérbios 15:1",
+   "passageA": {
+    "ref": "Provérbios 15:1"
+   },
+   "passageB": {
+    "ref": "Tiago 1:19"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Lento para falar"
+    },
+    {
+     "id": "b",
+     "text": "Dureza como virtude"
+    },
+    {
+     "id": "c",
+     "text": "Ira sem causa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "Brandura e lentidão para falar apontam o mesmo cuidado.",
+   "feedbackWrong": {
+    "b": "Dureza provoca furor.",
+    "c": "Há causa: o tom da resposta."
+   },
+   "hint": "Compare o cuidado com a fala.",
+   "learningObjective": "Cruzar brandura e lentidão.",
+   "evidence": [
+    "Provérbios 15:1",
+    "Tiago 1:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 15:1 e 15:8, tom brando e oração justa são apresentados como caminhos que agradam e desarmam.",
+   "verseRef": "Provérbios 15:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "Brandura desvia a ira; oração justa contenta ao Senhor.",
+   "feedbackWrong": {
+    "false": "Releia 15:1 e 15:8: suave desvia; oração contenta."
+   },
+   "hint": "Una resposta suave e oração dos justos.",
+   "learningObjective": "Confirmar a leitura sobre tom e oração.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 15:8, toque o trecho que sustenta o prazer de Deus na oração.",
+   "verseRef": "Provérbios 15:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "seu contentamento"
+    },
+    {
+     "id": "b",
+     "text": "sacrifício"
+    },
+    {
+     "id": "c",
+     "text": "ímpios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a oração dos justos é o seu contentamento",
+   "feedbackCorrect": "A oração dos justos é o contentamento do Senhor.",
+   "feedbackWrong": {
+    "b": "Sacrifício dos ímpios é abominável.",
+    "c": "Ímpios são o contraste."
+   },
+   "hint": "Predicado da segunda metade.",
+   "learningObjective": "Sustentar o contentamento de Deus.",
+   "evidence": [
+    "Provérbios 15:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 15:1–9 sustenta?",
+   "verseRef": "Provérbios 15:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Tom e coração importam diante do Senhor que vê tudo"
+    },
+    {
+     "id": "b",
+     "text": "O tom da fala nunca muda a ira"
+    },
+    {
+     "id": "c",
+     "text": "Deus não contempla maus e bons"
+    },
+    {
+     "id": "d",
+     "text": "Sacrifício ímpio contenta a Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "Brandura, olhar de Deus e oração justa percorrem o trecho.",
+   "feedbackWrong": {
+    "b": "15:1 mostra efeito claro.",
+    "c": "15:3 diz que contempla maus e bons.",
+    "d": "15:8 chama o sacrifício de abominável."
+   },
+   "hint": "Una tom, olhos e oração.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 15:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da fala branda?",
+   "verseRef": "Provérbios 15:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Escolher a resposta suave"
+    },
+    {
+     "id": "b",
+     "text": "Desviar a ira que sobe"
+    },
+    {
+     "id": "c",
+     "text": "Evitar a palavra dura que agita"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "A resposta suave desvia a ira",
+   "feedbackCorrect": "Da brandura em Provérbios a Tiago e Efésios.",
+   "feedbackWrong": {
+    "default": "Comece por 15:1; depois Tiago 1:19 e Efésios 4:29."
+   },
+   "hint": "Da brandura à lentidão e à edificação.",
+   "learningObjective": "Ver o fio da fala branda.",
+   "evidence": [
+    "Provérbios 15:1",
+    "Tiago 1:19",
+    "Efésios 4:29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 15:5, quem ouve a repreensão alcança a quê?",
+   "verseRef": "Provérbios 15:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "prudência"
+    },
+    {
+     "id": "b",
+     "text": "ira"
+    },
+    {
+     "id": "c",
+     "text": "furor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "alcança a prudência",
+   "feedbackCorrect": "Ouvir a repreensão alcança a prudência.",
+   "feedbackWrong": {
+    "b": "Ira é o que a suave desvia.",
+    "c": "Furor é da palavra dura."
+   },
+   "hint": "Objeto de alcança.",
+   "learningObjective": "Lembrar o fruto de ouvir a repreensão.",
+   "evidence": [
+    "Provérbios 15:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 15:3 a Salmos 34:15?",
+   "verseRef": "Provérbios 15:3",
+   "passageA": {
+    "ref": "Provérbios 15:3"
+   },
+   "passageB": {
+    "ref": "Salmos 34:15"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Olhos do Senhor sobre justos"
+    },
+    {
+     "id": "b",
+     "text": "Deus sem olhar"
+    },
+    {
+     "id": "c",
+     "text": "Olhos só sobre maus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os olhos do Senhor estão em toda parte",
+   "feedbackCorrect": "Os dois textos afirmam o olhar do Senhor.",
+   "feedbackWrong": {
+    "b": "Há olhar em toda parte.",
+    "c": "Ele contempla também os bons."
+   },
+   "hint": "Compare o olhar do Senhor.",
+   "learningObjective": "Ligar o olhar de Deus nos dois textos.",
+   "evidence": [
+    "Provérbios 15:3",
+    "Salmos 34:15"
+   ]
+  }
+ ]
+}

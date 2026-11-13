@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "1 Coríntios 3:5–10",
+    "passages": [
+      { "ref": "1 Coríntios 3:5–10" },
+      { "ref": "1 Coríntios 3:11–15" }
+    ],
+    "context": "Em Corinto, partidos em torno de Paulo e Apolo. Paulo responde: servos plantam e regam, mas só Deus dá o crescimento; o fundamento é Jesus Cristo.",
+    "keyword": "crescimento",
+    "keywordGloss": "O que nem quem planta nem quem rega produz: só Deus concede o crescimento.",
+    "focusQuestion": "Você tem dado a servos humanos o lugar que só Deus tem no crescimento?",
+    "reflectionPrompts": [
+      "Servos, não rivais",
+      "Deus dá o crescimento",
+      "Fundamento Cristo"
+    ],
+    "facts": [
+      {
+        "text": "Paulo e Apolo são servos pelos quais os coríntios creram.",
+        "evidenceRef": "1 Coríntios 3:5",
+        "evidenceSpan": "senão servos através dos quais vocês creram"
+      },
+      {
+        "text": "Paulo plantou, Apolo regou, e Deus deu o crescimento.",
+        "evidenceRef": "1 Coríntios 3:6",
+        "evidenceSpan": "Eu plantei, Apolo regou; mas foi Deus quem deu o crescimento"
+      },
+      {
+        "text": "Nem quem planta nem quem rega é algo; Deus concede o crescimento.",
+        "evidenceRef": "1 Coríntios 3:7",
+        "evidenceSpan": "nem quem planta nem quem rega é algo, mas sim Deus"
+      },
+      {
+        "text": "Os coríntios são lavoura e edifício de Deus.",
+        "evidenceRef": "1 Coríntios 3:9",
+        "evidenceSpan": "vós sois a lavoura e o edifício de Deus"
+      },
+      {
+        "text": "Ninguém pode estabelecer outro fundamento além de Jesus Cristo.",
+        "evidenceRef": "1 Coríntios 3:11",
+        "evidenceSpan": "ninguém pode estabelecer outro fundamento além do que já foi estabelecido, que é Jesus Cristo"
+      },
+      {
+        "text": "A obra de cada um será testada pelo fogo.",
+        "evidenceRef": "1 Coríntios 3:13",
+        "evidenceSpan": "pelo fogo será testada"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "crescimento",
+        "gloss": "O que só Deus concede; planta e rega não bastam."
+      },
+      {
+        "term": "fundamento",
+        "gloss": "A base já lançada: Jesus Cristo, sem substituto."
+      },
+      {
+        "term": "cooperadores",
+        "gloss": "Paulo e Apolo trabalham com Deus, não no lugar dele."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Paulo e Apolo são só servos",
+        "evidenceRef": "1 Coríntios 3:5"
+      },
+      {
+        "label": "Um planta, outro rega, Deus cresce",
+        "evidenceRef": "1 Coríntios 3:6–7"
+      },
+      {
+        "label": "O fundamento único é Cristo",
+        "evidenceRef": "1 Coríntios 3:10–11"
+      },
+      {
+        "label": "A obra será provada pelo fogo",
+        "evidenceRef": "1 Coríntios 3:12–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Paulo plantou e Apolo regou, mas foi Deus quem deu o crescimento.",
+        "marker": "mas",
+        "evidenceRef": "1 Coríntios 3:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso nem quem planta nem quem rega é algo, e sim Deus.",
+        "marker": "Assim",
+        "evidenceRef": "1 Coríntios 3:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Ninguém põe outro fundamento porque o que já foi estabelecido é Jesus Cristo.",
+        "marker": "Porque",
+        "evidenceRef": "1 Coríntios 3:11"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 15:5", "bridge": "Sem Cristo nada podem" },
+      { "ref": "Efésios 2:20", "bridge": "Cristo como pedra angular" },
+      { "ref": "Isaías 28:16", "bridge": "Pedra angular em Sião" }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo e Apolo competem: o crescimento depende de quem é melhor líder.",
+        "why": "O texto os chama de servos e um; só Deus dá o crescimento."
+      },
+      {
+        "text": "Qualquer fundamento serve, desde que a obra seja sincera.",
+        "why": "Ninguém pode estabelecer outro fundamento além de Jesus Cristo."
+      },
+      {
+        "text": "Se a obra queimar, a pessoa também se perde.",
+        "why": "O texto diz que a pessoa será salva como que através do fogo, ainda que a obra sofra dano."
+      }
+    ],
+    "centralInsight": "O único fundamento é Jesus Cristo; a obra de cada um será provada pelo fogo.",
+    "anchorQuestion": "Quem 1 Coríntios 3:6 diz que deu o crescimento?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 3:6, Paulo plantou, Apolo regou, e Deus deu o crescimento.",
+      "verseRef": "1 Coríntios 3:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu plantei, Apolo regou; mas foi Deus quem deu o crescimento",
+      "feedbackCorrect": "O versículo divide as tarefas e reserva o crescimento a Deus.",
+      "feedbackWrong": {
+        "false": "Releia: Paulo planta, Apolo rega, Deus dá o crescimento."
+      },
+      "hint": "Veja quem faz cada ação no versículo.",
+      "learningObjective": "Observar quem planta, quem rega e quem faz crescer.",
+      "evidence": ["1 Coríntios 3:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 3:5, toque o que Paulo e Apolo são.",
+      "verseRef": "1 Coríntios 3:5",
+      "options": [
+        { "id": "a", "text": "servos" },
+        { "id": "b", "text": "Senhor" },
+        { "id": "c", "text": "Apolo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "senão servos através dos quais vocês creram",
+      "feedbackCorrect": "Eles são servos pelos quais os coríntios creram.",
+      "feedbackWrong": {
+        "b": "Senhor é quem concedeu a cada um, não o que Paulo e Apolo são.",
+        "c": "Apolo é um dos nomes; a função comum é servos."
+      },
+      "hint": "Veja a palavra depois de senão.",
+      "learningObjective": "Identificar Paulo e Apolo como servos.",
+      "evidence": ["1 Coríntios 3:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Coríntios 3:11, qual é o fundamento já estabelecido?",
+      "verseRef": "1 Coríntios 3:11",
+      "options": [
+        { "id": "a", "text": "Jesus Cristo" },
+        { "id": "b", "text": "Apolo" },
+        { "id": "c", "text": "A sabedoria humana" },
+        { "id": "d", "text": "O fogo do dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Jesus Cristo",
+      "feedbackCorrect": "O fundamento já estabelecido é Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "Apolo é servo e regador, não o fundamento.",
+        "c": "Sabedoria humana não aparece como fundamento aqui.",
+        "d": "O fogo testa a obra, não é o fundamento."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Reconhecer Jesus Cristo como único fundamento.",
+      "evidence": ["1 Coríntios 3:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 3:6 na ordem do texto.",
+      "verseRef": "1 Coríntios 3:6",
+      "options": [
+        { "id": "a", "text": "Eu plantei" },
+        { "id": "b", "text": "Apolo regou" },
+        { "id": "c", "text": "mas foi Deus quem deu o crescimento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eu plantei, Apolo regou; mas foi Deus quem deu o crescimento",
+      "feedbackCorrect": "Plantar, regar e, por fim, o crescimento que vem de Deus.",
+      "feedbackWrong": {
+        "default": "Comece com Eu plantei; Deus fecha a frase."
+      },
+      "hint": "A primeira pessoa abre o versículo.",
+      "learningObjective": "Seguir a ordem das ações no versículo 6.",
+      "evidence": ["1 Coríntios 3:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Coríntios 3:9, complete: vós sois a lavoura e o ___ de Deus.",
+      "verseRef": "1 Coríntios 3:9",
+      "options": [
+        { "id": "a", "text": "edifício" },
+        { "id": "b", "text": "tribunal" },
+        { "id": "c", "text": "mercado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vós sois a lavoura e o edifício de Deus",
+      "feedbackCorrect": "Os coríntios são lavoura e edifício de Deus.",
+      "feedbackWrong": {
+        "b": "Tribunal não está neste versículo.",
+        "c": "Mercado não está no texto."
+      },
+      "hint": "Veja a segunda imagem depois de lavoura.",
+      "learningObjective": "Lembrar a imagem do edifício de Deus.",
+      "evidence": ["1 Coríntios 3:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Coríntios 3:6 comunica que se liga a este contexto?",
+      "verseRef": "1 Coríntios 3:6",
+      "passageA": { "ref": "1 Coríntios 3:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Corinto se dividia em torno de nomes; Paulo lembra que servos só plantam e regam."
+      },
+      "options": [
+        { "id": "a", "text": "Deus dá o crescimento" },
+        { "id": "b", "text": "Apolo é o fundamento" },
+        { "id": "c", "text": "Paulo dispensa Apolo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas foi Deus quem deu o crescimento",
+      "feedbackCorrect": "Diante dos partidos, o crescimento fica com Deus, não com o líder.",
+      "feedbackWrong": {
+        "b": "O fundamento é Cristo, não Apolo.",
+        "c": "Paulo e Apolo aparecem juntos como servos."
+      },
+      "hint": "Veja quem fecha a frase depois de mas.",
+      "learningObjective": "Ligar o contexto dos partidos ao crescimento que vem de Deus.",
+      "evidence": ["1 Coríntios 3:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 3:6–7, o contraste mostra que quem planta e quem rega são o centro do crescimento.",
+      "verseRef": "1 Coríntios 3:6–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "nem quem planta nem quem rega é algo, mas sim Deus",
+      "feedbackCorrect": "O contraste reserva o crescimento a Deus; plantador e regador não são algo.",
+      "feedbackWrong": {
+        "true": "O texto diz que nem quem planta nem quem rega é algo, mas sim Deus."
+      },
+      "hint": "Leia o mas e o assim do argumento.",
+      "learningObjective": "Ver o contraste que tira o centro dos servos.",
+      "evidence": ["1 Coríntios 3:6–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 3:6, toque a palavra que marca o contraste entre o trabalho dos servos e o crescimento.",
+      "verseRef": "1 Coríntios 3:6",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "plantei" },
+        { "id": "c", "text": "regou" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas foi Deus quem deu o crescimento",
+      "feedbackCorrect": "Mas introduz a virada: o crescimento vem de Deus.",
+      "feedbackWrong": {
+        "b": "Plantei é a ação de Paulo, não o marcador do contraste.",
+        "c": "Regou é a ação de Apolo; a marca é mas."
+      },
+      "hint": "Procure a conjunção antes de foi Deus.",
+      "learningObjective": "Tocar o marcador de contraste no versículo 6.",
+      "evidence": ["1 Coríntios 3:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação 1 Coríntios 3:10–11 estabelece sobre o edificar?",
+      "verseRef": "1 Coríntios 3:10–11",
+      "options": [
+        { "id": "a", "text": "Só se edifica sobre o fundamento já lançado: Cristo" },
+        { "id": "b", "text": "Cada um pode trocar o fundamento à vontade" },
+        { "id": "c", "text": "O construtor prudente dispensa fundamento" },
+        { "id": "d", "text": "Apolo lançou um fundamento rival ao de Paulo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém pode estabelecer outro fundamento além do que já foi estabelecido, que é Jesus Cristo",
+      "feedbackCorrect": "Há um fundamento único; o cuidado é como se edifica sobre ele.",
+      "feedbackWrong": {
+        "b": "O texto proíbe outro fundamento.",
+        "c": "Paulo lançou o fundamento; ninguém edifica sem ele.",
+        "d": "Não há fundamento rival: o único é Jesus Cristo."
+      },
+      "hint": "Leia a causa introduzida por Porque no v.11.",
+      "learningObjective": "Relacionar o edificar ao fundamento único.",
+      "evidence": ["1 Coríntios 3:10–11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do argumento em 1 Coríntios 3:5–13.",
+      "verseRef": "1 Coríntios 3:5–7",
+      "options": [
+        { "id": "a", "text": "Paulo e Apolo são só servos" },
+        { "id": "b", "text": "Um planta, outro rega, Deus cresce" },
+        { "id": "c", "text": "O fundamento único é Cristo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "senão servos através dos quais vocês creram",
+      "feedbackCorrect": "Servos, depois o crescimento de Deus, então o fundamento Cristo.",
+      "feedbackWrong": {
+        "default": "Comece pelos servos; o fundamento vem depois da imagem da obra."
+      },
+      "hint": "Siga de 3:5 até o lançar do fundamento.",
+      "learningObjective": "Ordenar os movimentos do argumento da cena.",
+      "evidence": ["1 Coríntios 3:5–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Coríntios 3:7, complete a conclusão: ___ quem planta nem quem rega é algo.",
+      "verseRef": "1 Coríntios 3:7",
+      "options": [
+        { "id": "a", "text": "nem" },
+        { "id": "b", "text": "só" },
+        { "id": "c", "text": "já" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem quem planta nem quem rega é algo",
+      "feedbackCorrect": "A conclusão reduz planta e rega: nem um nem outro é algo.",
+      "feedbackWrong": {
+        "b": "Só não abre essa frase; a palavra é nem.",
+        "c": "Já não está nesse trecho."
+      },
+      "hint": "Veja a palavra repetida antes de quem planta e quem rega.",
+      "learningObjective": "Lembrar a palavra que carrega a redução dos servos.",
+      "evidence": ["1 Coríntios 3:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 3:11 a Efésios 2:20?",
+      "verseRef": "1 Coríntios 3:11",
+      "passageA": { "ref": "1 Coríntios 3:11" },
+      "passageB": { "ref": "Efésios 2:20" },
+      "options": [
+        { "id": "a", "text": "Cristo como fundamento" },
+        { "id": "b", "text": "Fogo que prova a obra" },
+        { "id": "c", "text": "Apolo como pedra angular" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Jesus Cristo",
+      "feedbackCorrect": "Nos dois textos, Jesus Cristo é a base da edificação.",
+      "feedbackWrong": {
+        "b": "O fogo aparece em 3:13, não em Efésios 2:20.",
+        "c": "A pedra angular é Cristo, não Apolo."
+      },
+      "hint": "Compare quem é a base da casa.",
+      "learningObjective": "Ligar o fundamento Cristo à pedra angular.",
+      "evidence": ["1 Coríntios 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo 1 Coríntios 3:11–15, a obra pode sofrer dano no fogo, mas isso não anula o fundamento Cristo.",
+      "verseRef": "1 Coríntios 3:11–15",
+      "correctOptionId": "true",
+      "evidenceSpan": "ninguém pode estabelecer outro fundamento além do que já foi estabelecido, que é Jesus Cristo",
+      "feedbackCorrect": "O fundamento permanece Cristo; o fogo prova a obra edificada sobre ele.",
+      "feedbackWrong": {
+        "false": "O texto separa fundamento (Cristo) e obra (que o fogo testa)."
+      },
+      "hint": "Separe o v.11 do teste da obra nos versículos seguintes.",
+      "learningObjective": "Sustentar a leitura que distingue fundamento e obra.",
+      "evidence": ["1 Coríntios 3:11–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 3:11, toque o trecho que sustenta que o fundamento é Jesus Cristo.",
+      "verseRef": "1 Coríntios 3:11",
+      "options": [
+        { "id": "a", "text": "Jesus Cristo" },
+        { "id": "b", "text": "outro fundamento" },
+        { "id": "c", "text": "ninguém pode" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Jesus Cristo",
+      "feedbackCorrect": "O versículo identifica o fundamento estabelecido: Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "Outro fundamento é o que ninguém pode estabelecer.",
+        "c": "Ninguém pode introduz a proibição, não o nome do fundamento."
+      },
+      "hint": "Veja a identificação no fim do versículo.",
+      "learningObjective": "Tocar o trecho que nomeia o fundamento.",
+      "evidence": ["1 Coríntios 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura 1 Coríntios 3:5–7 sustenta melhor?",
+      "verseRef": "1 Coríntios 3:5–7",
+      "options": [
+        { "id": "a", "text": "Líderes são servos; o crescimento pertence a Deus" },
+        { "id": "b", "text": "O melhor líder garante sozinho o crescimento" },
+        { "id": "c", "text": "Plantar e regar tornam o servo o centro" },
+        { "id": "d", "text": "Apolo substitui Deus no crescimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas sim Deus, que é quem concede o crescimento",
+      "feedbackCorrect": "Servos plantam e regam; só Deus concede o crescimento.",
+      "feedbackWrong": {
+        "b": "Nem quem planta nem quem rega é algo.",
+        "c": "O texto reduz o papel dos servos, não os coloca no centro.",
+        "d": "Deus, não Apolo, concede o crescimento."
+      },
+      "hint": "Veja quem o texto chama de algo.",
+      "learningObjective": "Escolher a interpretação que honra Deus no crescimento.",
+      "evidence": ["1 Coríntios 3:5–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da edificação no argumento.",
+      "verseRef": "1 Coríntios 3:10–13",
+      "options": [
+        { "id": "a", "text": "Lança-se o fundamento Cristo" },
+        { "id": "b", "text": "Outros edificam com materiais diversos" },
+        { "id": "c", "text": "O dia prova a obra pelo fogo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "pelo fogo será testada",
+      "feedbackCorrect": "Fundamento, edificação e prova pelo fogo nessa ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo fundamento; o fogo vem por último."
+      },
+      "hint": "Siga de 3:10–11 até 3:13.",
+      "learningObjective": "Encadear fundamento, obra e prova.",
+      "evidence": ["1 Coríntios 3:10–13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Coríntios 3:11, complete o termo da base: ninguém pode estabelecer outro ___.",
+      "verseRef": "1 Coríntios 3:11",
+      "options": [
+        { "id": "a", "text": "fundamento" },
+        { "id": "b", "text": "galardão" },
+        { "id": "c", "text": "fermento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém pode estabelecer outro fundamento",
+      "feedbackCorrect": "O termo da base inegociável é fundamento: Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "Galardão aparece no v.8, não aqui.",
+        "c": "Fermento não está neste capítulo do pedido."
+      },
+      "hint": "Veja o substantivo depois de outro.",
+      "learningObjective": "Lembrar o termo teológico do fundamento único.",
+      "evidence": ["1 Coríntios 3:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 3:7 a João 15:5?",
+      "verseRef": "1 Coríntios 3:7",
+      "passageA": { "ref": "1 Coríntios 3:7" },
+      "passageB": { "ref": "João 15:5" },
+      "options": [
+        { "id": "a", "text": "Sem Deus nada é algo" },
+        { "id": "b", "text": "Fogo que prova materiais" },
+        { "id": "c", "text": "Partidos em torno de Apolo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem quem planta nem quem rega é algo, mas sim Deus",
+      "feedbackCorrect": "Nos dois textos, o fruto e o crescimento dependem de permanecer em Deus/Cristo.",
+      "feedbackWrong": {
+        "b": "O fogo não aparece em João 15:5.",
+        "c": "Partidos são o problema local, não a ponte."
+      },
+      "hint": "Compare a dependência do crescimento/fruto.",
+      "learningObjective": "Ligar o crescimento de Deus ao permanecer em Cristo.",
+      "evidence": ["1 Coríntios 3:7"]
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "João 9:2–7",
+    "passages": [
+      { "ref": "João 9:2–7" },
+      { "ref": "João 9:1" }
+    ],
+    "context": "No caminho, Jesus vê um homem cego desde o nascimento. Os discípulos perguntam se a culpa é dele ou dos pais. O que ele responde, e o que faz em seguida, muda o rumo da conversa.",
+    "keyword": "Luz do mundo",
+    "keywordGloss": "Nome que Jesus dá a si mesmo enquanto permanece no mundo.",
+    "focusQuestion": "Quando você encontra o sofrimento de alguém, qual é a sua primeira pergunta?",
+    "reflectionPrompts": [
+      "A pergunta pelo culpado",
+      "A resposta que vira o rumo",
+      "O homem que passa a ver"
+    ],
+    "facts": [
+      {
+        "text": "Jesus avistou um homem que era cego de nascença.",
+        "evidenceRef": "João 9:1",
+        "evidenceSpan": "Jesus avistou um homem que era cego de nascença"
+      },
+      {
+        "text": "Os discípulos perguntaram quem pecou, ele ou seus pais.",
+        "evidenceRef": "João 9:2",
+        "evidenceSpan": "quem pecou, ele ou seus pais"
+      },
+      {
+        "text": "Jesus disse que nem ele nem seus pais pecaram.",
+        "evidenceRef": "João 9:3",
+        "evidenceSpan": "Nem ele pecou, nem seus pais"
+      },
+      {
+        "text": "Jesus disse que isso ocorreu para que se manifestem nele as obras de Deus.",
+        "evidenceRef": "João 9:3",
+        "evidenceSpan": "para que se manifestem nele as obras de Deus"
+      },
+      {
+        "text": "Enquanto permanece no mundo, Jesus diz que é a luz do mundo.",
+        "evidenceRef": "João 9:5",
+        "evidenceSpan": "sou a luz do mundo"
+      },
+      {
+        "text": "O homem foi, lavou-se e voltou a ver.",
+        "evidenceRef": "João 9:7",
+        "evidenceSpan": "Ele foi, lavou-se e voltou a ver"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "nascença",
+        "gloss": "A cegueira vinha desde o nascimento, não de um acidente depois."
+      },
+      {
+        "term": "Siloé",
+        "gloss": "Tanque para onde Jesus envia o homem; o nome significa Enviado."
+      },
+      {
+        "term": "luz",
+        "gloss": "Jesus se nomeia assim enquanto permanece no mundo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Os discípulos perguntam quem pecou",
+        "evidenceRef": "João 9:2"
+      },
+      {
+        "label": "Jesus nega a culpa do homem e dos pais",
+        "evidenceRef": "João 9:3"
+      },
+      {
+        "label": "A cegueira fica a serviço da obra de Deus",
+        "evidenceRef": "João 9:3"
+      },
+      {
+        "label": "O homem obedece e passa a ver",
+        "evidenceRef": "João 9:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os discípulos perguntam quem pecou; Jesus nega as duas culpas e vira a resposta.",
+        "marker": "mas",
+        "evidenceRef": "João 9:3"
+      },
+      {
+        "kind": "propósito",
+        "text": "A cegueira ocorreu para que se manifestem nele as obras de Deus, não como castigo.",
+        "marker": "para",
+        "evidenceRef": "João 9:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "As obras cabem enquanto é dia; a noite vem depois, e então ninguém pode trabalhar.",
+        "marker": "enquanto",
+        "evidenceRef": "João 9:4"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 35:5", "bridge": "Olhos dos cegos abertos" },
+      { "ref": "João 8:12", "bridge": "Jesus é a luz" },
+      { "ref": "João 12:35", "bridge": "Andar enquanto há luz" }
+    ],
+    "misreadings": [
+      {
+        "text": "A cegueira prova que o homem ou seus pais pecaram.",
+        "why": "Jesus diz que nem ele pecou, nem seus pais. O que se manifesta são as obras de Deus."
+      },
+      {
+        "text": "Jesus apenas explica a cegueira e não age sobre o homem.",
+        "why": "Depois da fala, ele faz lodo, põe nos olhos e manda lavar. O homem volta a ver."
+      },
+      {
+        "text": "A luz do mundo, nesse trecho, é o tanque de Siloé.",
+        "why": "Quem diz sou a luz do mundo é Jesus, enquanto permanece no mundo. Siloé é o tanque para onde o homem vai."
+      }
+    ],
+    "centralInsight": "Jesus é a luz do mundo, e a cegueira vira lugar para a obra de Deus.",
+    "anchorQuestion": "O que Jesus respondeu sobre quem pecou, e o que ele disse ser enquanto está no mundo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 9:1, Jesus avistou um homem que era cego de nascença.",
+      "verseRef": "João 9:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Jesus avistou um homem que era cego de nascença",
+      "feedbackCorrect": "O versículo diz que Jesus avistou um homem cego de nascença.",
+      "feedbackWrong": {
+        "false": "João 9:1 afirma que Jesus avistou um homem que era cego de nascença."
+      },
+      "hint": "Olhe quem Jesus encontra ao passar.",
+      "learningObjective": "Observar que Jesus avistou um homem cego de nascença.",
+      "evidence": ["João 9:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 9:2, toque quem fez a pergunta a Jesus.",
+      "verseRef": "João 9:2",
+      "options": [
+        { "id": "a", "text": "Mestre" },
+        { "id": "b", "text": "seus discípulos" },
+        { "id": "c", "text": "seus pais" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os seus discípulos lhe perguntaram",
+      "feedbackCorrect": "Quem pergunta são os discípulos; os pais só entram na pergunta.",
+      "feedbackWrong": {
+        "a": "Mestre é como eles chamam Jesus, não quem faz a pergunta.",
+        "c": "Os pais são o assunto da pergunta, não quem pergunta."
+      },
+      "hint": "Olhe o sujeito do verbo perguntaram.",
+      "learningObjective": "Identificar quem fez a pergunta a Jesus.",
+      "evidence": ["João 9:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 9:7, o que o homem fez ao receber a ordem?",
+      "verseRef": "João 9:7",
+      "options": [
+        { "id": "a", "text": "Ficou onde estava e continuou cego" },
+        { "id": "b", "text": "Pediu que Jesus lavasse os olhos dele" },
+        { "id": "c", "text": "Foi, lavou-se e passou a enxergar" },
+        { "id": "d", "text": "Esperou a noite para descer ao tanque" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Ele foi, lavou-se e voltou a ver",
+      "feedbackCorrect": "Ele obedeceu: foi, lavou-se no tanque e voltou a ver.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: ele foi, lavou-se e voltou a ver.",
+        "b": "Quem se lava é o próprio homem, no tanque, não Jesus nele.",
+        "d": "A ordem é para ir logo. A noite está em outro versículo."
+      },
+      "hint": "Leia o que ele fez depois da ordem.",
+      "learningObjective": "Observar a obediência do homem e o que aconteceu em seguida.",
+      "evidence": ["João 9:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 9:6 na ordem do texto.",
+      "verseRef": "João 9:6",
+      "options": [
+        { "id": "a", "text": "cuspiu na terra" },
+        { "id": "b", "text": "fez lodo com a saliva" },
+        { "id": "c", "text": "aplicou-o aos olhos do cego" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "cuspiu na terra, fez lodo com a saliva",
+      "feedbackCorrect": "É a ordem do versículo: cuspir, fazer o lodo e pôr nos olhos.",
+      "feedbackWrong": {
+        "default": "Comece pelo cuspe na terra; os olhos são o último passo."
+      },
+      "hint": "A frase anda da terra para os olhos.",
+      "learningObjective": "Reconhecer a sequência dos gestos de Jesus em João 9:6.",
+      "evidence": ["João 9:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 9:6, o que Jesus fez com a saliva?",
+      "verseRef": "João 9:6",
+      "options": [
+        { "id": "a", "text": "lama" },
+        { "id": "b", "text": "lodo" },
+        { "id": "c", "text": "barro" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fez lodo com a saliva",
+      "feedbackCorrect": "Ele fez lodo com a saliva e aplicou aos olhos do cego.",
+      "feedbackWrong": {
+        "a": "Lama é parecido, mas a palavra do versículo é lodo.",
+        "c": "Barro é a ideia, mas a palavra do versículo é lodo."
+      },
+      "hint": "Está no meio da frase, entre a terra e os olhos.",
+      "learningObjective": "Lembrar a palavra concreta do que Jesus fez com a saliva.",
+      "evidence": ["João 9:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 9:3 comunica que se liga a este contexto?",
+      "verseRef": "João 9:3",
+      "passageA": { "ref": "João 9:3" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A cegueira daquele homem é o lugar em que as obras de Deus se manifestam."
+      },
+      "options": [
+        { "id": "a", "text": "Castigo pelo pecado dos pais" },
+        { "id": "b", "text": "Obra de Deus na cegueira" },
+        { "id": "c", "text": "Culpa só do homem cego" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que se manifestem nele as obras de Deus",
+      "feedbackCorrect": "Jesus nega a culpa e diz que a cegueira manifesta a obra de Deus.",
+      "feedbackWrong": {
+        "a": "Ele diz que os pais não pecaram; o fim é a obra de Deus.",
+        "c": "Nem o homem pecou. O propósito não é a culpa dele."
+      },
+      "hint": "Veja com que fim Jesus diz que isso ocorreu.",
+      "learningObjective": "Ligar João 9:3 ao fato de que a cegueira manifesta a obra de Deus.",
+      "evidence": ["João 9:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 9:4, Jesus afirma que a noite já chegou e que ninguém pode mais trabalhar.",
+      "verseRef": "João 9:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "enquanto é dia; a noite vem",
+      "feedbackCorrect": "A noite ainda vem. Enquanto é dia, é preciso fazer as obras.",
+      "feedbackWrong": {
+        "true": "O texto não diz que a noite já chegou. Ela vem, e o trabalho é agora."
+      },
+      "hint": "Compare o agora do dia com o momento em que ninguém trabalha.",
+      "learningObjective": "Compreender que a noite ainda vem e a obra cabe enquanto é dia.",
+      "evidence": ["João 9:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 9:3, toque a palavra que marca o contraste na resposta de Jesus.",
+      "verseRef": "João 9:3",
+      "options": [
+        { "id": "a", "text": "pecou" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "ocorreu" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas isso ocorreu",
+      "feedbackCorrect": "A palavra mas vira a frase: não foi o pecado, e sim a obra de Deus.",
+      "feedbackWrong": {
+        "a": "Pecou é o tema da pergunta; o contraste vem na palavra seguinte.",
+        "c": "Ocorreu só registra o fato; a virada está na palavra anterior."
+      },
+      "hint": "É a palavra curta depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na resposta de Jesus.",
+      "evidence": ["João 9:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como a resposta de João 9:3 se relaciona com a pergunta dos discípulos?",
+      "verseRef": "João 9:2–3",
+      "options": [
+        { "id": "a", "text": "Nega o pecado dos dois e aponta a obra de Deus" },
+        { "id": "b", "text": "Confirma que os pais causaram a cegueira do filho" },
+        { "id": "c", "text": "Deixa a causa em aberto até o homem se lavar" },
+        { "id": "d", "text": "Diz que só o homem pecou, e os pais não" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nem ele pecou, nem seus pais",
+      "feedbackCorrect": "Ele nega as duas culpas e aponta as obras de Deus.",
+      "feedbackWrong": {
+        "b": "Ele diz que os pais também não pecaram.",
+        "c": "A causa não fica em aberto: o propósito já vem na resposta.",
+        "d": "A resposta livra os dois, o homem e os pais."
+      },
+      "hint": "Veja o que Jesus nega antes de dizer o fim disso.",
+      "learningObjective": "Relacionar a pergunta dos discípulos com a resposta de Jesus.",
+      "evidence": ["João 9:2–3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o diálogo em João 9:2–3?",
+      "verseRef": "João 9:2–3",
+      "options": [
+        { "id": "a", "text": "Os discípulos perguntam quem pecou" },
+        { "id": "b", "text": "Jesus nega a culpa do homem e dos pais" },
+        { "id": "c", "text": "A cegueira fica a serviço da obra de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "para que se manifestem nele as obras de Deus",
+      "feedbackCorrect": "Primeiro a pergunta, depois a negação, e então o propósito.",
+      "feedbackWrong": {
+        "default": "A pergunta abre; a negação vem antes do propósito."
+      },
+      "hint": "Quem fala primeiro são os discípulos.",
+      "learningObjective": "Compreender o movimento da pergunta ao propósito da cegueira.",
+      "evidence": ["João 9:2–3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 9:3, o que deve ocorrer com as obras de Deus naquele homem?",
+      "verseRef": "João 9:3",
+      "options": [
+        { "id": "a", "text": "revelem" },
+        { "id": "b", "text": "escondam" },
+        { "id": "c", "text": "manifestem" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para que se manifestem nele as obras de Deus",
+      "feedbackCorrect": "Elas se manifestem nele: esse é o propósito que Jesus declara.",
+      "feedbackWrong": {
+        "a": "Revelar é próximo, mas a palavra do texto é outra.",
+        "b": "O texto diz o contrário: as obras devem aparecer, não se esconder."
+      },
+      "hint": "É o verbo que está entre se e nele.",
+      "learningObjective": "Compreender o verbo que carrega o propósito da cegueira.",
+      "evidence": ["João 9:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 9:7 a Isaías 35:5?",
+      "verseRef": "João 9:7",
+      "passageA": { "ref": "João 9:7" },
+      "passageB": { "ref": "Isaías 35:5" },
+      "options": [
+        { "id": "a", "text": "Olhos de cego se abrem" },
+        { "id": "b", "text": "O tanque age sem Jesus" },
+        { "id": "c", "text": "A noite fecha a vista" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltou a ver",
+      "feedbackCorrect": "Nos dois textos, olhos que não viam passam a ver.",
+      "feedbackWrong": {
+        "b": "O homem obedece a Jesus; o tanque não age sozinho.",
+        "c": "A noite não fecha a vista aqui. Ele volta a ver."
+      },
+      "hint": "Compare o que acontece com a vista nos dois textos.",
+      "learningObjective": "Relacionar o homem que voltou a ver com a promessa de olhos abertos.",
+      "evidence": ["João 9:7", "Isaías 35:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 9:5, a luz do mundo é o tanque de Siloé, e não Jesus.",
+      "verseRef": "João 9:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "sou a luz do mundo",
+      "feedbackCorrect": "Quem fala é Jesus: enquanto permanece no mundo, ele é a luz.",
+      "feedbackWrong": {
+        "true": "O versículo não cita o tanque. Quem diz sou a luz do mundo é Jesus."
+      },
+      "hint": "Veja quem fala na primeira pessoa.",
+      "learningObjective": "Rejeitar a leitura que troca Jesus pelo tanque como luz do mundo.",
+      "evidence": ["João 9:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 9:6, toque onde Jesus aplicou o lodo.",
+      "verseRef": "João 9:6",
+      "options": [
+        { "id": "a", "text": "na terra" },
+        { "id": "b", "text": "com a saliva" },
+        { "id": "c", "text": "aos olhos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "aplicou-o aos olhos do cego",
+      "feedbackCorrect": "Ele aplicou o lodo aos olhos do cego, não na terra.",
+      "feedbackWrong": {
+        "a": "Na terra ele cuspiu; o lodo foi parar nos olhos.",
+        "b": "A saliva entra no lodo; o lugar em que ele o põe são os olhos."
+      },
+      "hint": "Veja em que parte do corpo o lodo foi posto.",
+      "learningObjective": "Sustentar com o texto que Jesus age nos olhos do cego.",
+      "evidence": ["João 9:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 9:3 sustenta sobre a cegueira desse homem?",
+      "verseRef": "João 9:3",
+      "options": [
+        { "id": "a", "text": "Ela é o lugar em que a obra de Deus aparece" },
+        { "id": "b", "text": "Ela prova o pecado do homem ou dos pais" },
+        { "id": "c", "text": "O que aparece nela é a culpa dos pais" },
+        { "id": "d", "text": "Jesus fala da obra, mas ela não se dá nele" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que se manifestem nele as obras de Deus",
+      "feedbackCorrect": "O fim que ele declara é este: as obras de Deus se manifestem nele.",
+      "feedbackWrong": {
+        "b": "Ele nega esse pecado: nem o homem nem os pais pecaram.",
+        "c": "O que se manifesta nele são as obras de Deus, não a culpa.",
+        "d": "O texto diz que as obras se manifestam nele, não que falham."
+      },
+      "hint": "Leia o fim que Jesus dá para o que ocorreu.",
+      "learningObjective": "Escolher a leitura da cegueira que João 9:3 sustenta.",
+      "evidence": ["João 9:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica a fala de Jesus segue em João 9:4–5?",
+      "verseRef": "João 9:4–5",
+      "options": [
+        { "id": "a", "text": "Há obras a fazer enquanto ainda é dia" },
+        { "id": "b", "text": "A noite chega e o trabalho acaba" },
+        { "id": "c", "text": "Jesus é a luz enquanto está no mundo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "sou a luz do mundo",
+      "feedbackCorrect": "Enquanto é dia, a obra cabe; Jesus é a luz nesse tempo.",
+      "feedbackWrong": {
+        "default": "O dia vem primeiro; a frase sobre a luz fecha a fala."
+      },
+      "hint": "Siga a ordem das duas frases de Jesus.",
+      "learningObjective": "Ordenar a lógica que une o dia, a noite e a luz.",
+      "evidence": ["João 9:4", "João 9:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 9:5, o que Jesus diz que é enquanto permanece no mundo?",
+      "verseRef": "João 9:5",
+      "options": [
+        { "id": "a", "text": "paz" },
+        { "id": "b", "text": "luz" },
+        { "id": "c", "text": "vida" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sou a luz do mundo",
+      "feedbackCorrect": "Ele diz que é a luz do mundo enquanto permanece nele.",
+      "feedbackWrong": {
+        "a": "Paz caberia na frase, mas a palavra do versículo é outra.",
+        "c": "Vida é outro título; neste versículo a palavra é outra."
+      },
+      "hint": "É o substantivo no centro da frase de Jesus.",
+      "learningObjective": "Lembrar o termo com que Jesus se nomeia enquanto está no mundo.",
+      "evidence": ["João 9:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 9:5 a João 8:12?",
+      "verseRef": "João 9:5",
+      "passageA": { "ref": "João 9:5" },
+      "passageB": { "ref": "João 8:12" },
+      "options": [
+        { "id": "a", "text": "Dois tanques de cura" },
+        { "id": "b", "text": "A noite sem nenhuma obra" },
+        { "id": "c", "text": "Jesus se diz a luz" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "sou a luz do mundo",
+      "feedbackCorrect": "Nos dois textos Jesus afirma que ele é a luz do mundo.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois versículos fala de tanque.",
+        "b": "A noite não é o elo. Os dois falam de quem é a luz."
+      },
+      "hint": "Compare o que Jesus afirma sobre si nos dois textos.",
+      "learningObjective": "Ligar a palavra de João 9:5 à mesma declaração em João 8:12.",
+      "evidence": ["João 9:5", "João 8:12"]
+    }
+  ]
+}

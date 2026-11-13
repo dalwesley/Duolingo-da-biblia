@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Deuteronômio 4:32–37",
+    "passages": [
+      {
+        "ref": "Deuteronômio 4:32–37"
+      },
+      {
+        "ref": "Deuteronômio 4:38–40"
+      }
+    ],
+    "context": "Cena de Há outro Deus?: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Há outro Deus?",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Pergunta.",
+        "evidenceRef": "Deuteronômio 4:32",
+        "evidenceSpan": "Pergunta"
+      },
+      {
+        "text": "Ou algum povo ouviu a voz de Deus.",
+        "evidenceRef": "Deuteronômio 4:33",
+        "evidenceSpan": "Ou algum povo ouviu a voz de Deus"
+      },
+      {
+        "text": "Ou se algum deus intentou conquistar para si.",
+        "evidenceRef": "Deuteronômio 4:34",
+        "evidenceSpan": "Ou se algum deus intentou conquistar para si"
+      },
+      {
+        "text": "A ti te foi demonstrado para que soubesses.",
+        "evidenceRef": "Deuteronômio 4:35",
+        "evidenceSpan": "A ti te foi demonstrado para que soubesses"
+      },
+      {
+        "text": "Dos céus ele fez ouvir a sua voz.",
+        "evidenceRef": "Deuteronômio 4:36",
+        "evidenceSpan": "Dos céus ele fez ouvir a sua voz"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Deuteronômio 4:37",
+        "evidenceSpan": "E"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pergunta pois agora aos tempos passados",
+        "evidenceRef": "Deuteronômio 4:32"
+      },
+      {
+        "label": "Ou algum povo ouviu a voz",
+        "evidenceRef": "Deuteronômio 4:33"
+      },
+      {
+        "label": "Ou se algum deus intentou conquistar",
+        "evidenceRef": "Deuteronômio 4:34"
+      },
+      {
+        "label": "A ti te foi demonstrado",
+        "evidenceRef": "Deuteronômio 4:35"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Deuteronômio 4:32"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Deuteronômio 4:35"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Deuteronômio 4:40"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 22:37",
+        "bridge": "Amar a Deus de todo o"
+      },
+      {
+        "ref": "Josué 1:7–8",
+        "bridge": "Meditar na lei"
+      },
+      {
+        "ref": "João 5:46",
+        "bridge": "Moisés escreveu de mim"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Só o Senhor é Deus; por isso guarda os estatutos e herda a terra.",
+    "anchorQuestion": "O que Deuteronômio 4:32 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Deuteronômio 4:32, o texto inclui Pergunta.",
+      "verseRef": "Deuteronômio 4:32",
+      "correctOptionId": "true",
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 4:32 afirma.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 4:32, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Deuteronômio 4:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pergunta"
+        },
+        {
+          "id": "b",
+          "text": "agora"
+        },
+        {
+          "id": "c",
+          "text": "tempos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "O versículo destaca Pergunta.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 4:34, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 4:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto deixa claro: ou se algum deus intentou conquistar para si um povo do meio"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ou se algum deus intentou conquistar para si",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 4:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 4:33 na ordem do texto.",
+      "verseRef": "Deuteronômio 4:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ou algum povo ouviu"
+        },
+        {
+          "id": "b",
+          "text": "a voz de Deus"
+        },
+        {
+          "id": "c",
+          "text": "falando do meio do fogo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ou algum povo ouviu",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Deuteronômio 4:33"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Deuteronômio 4:35, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 4:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "demonstrado"
+        },
+        {
+          "id": "b",
+          "text": "Pergunta"
+        },
+        {
+          "id": "c",
+          "text": "pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "demonstrado",
+      "feedbackCorrect": "A palavra do versículo é demonstrado.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 4:35"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Deuteronômio 4:32 comunica que se liga a este contexto.",
+      "verseRef": "Deuteronômio 4:32",
+      "passageA": {
+        "ref": "Deuteronômio 4:32"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Há outro Deus?: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Deuteronômio 4:32, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Deuteronômio 4:32",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 4:32 afirma.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 4:32, toque a palavra que marca a relação no texto.",
+      "verseRef": "Deuteronômio 4:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Pergunta"
+        },
+        {
+          "id": "c",
+          "text": "agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 4:35, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 4:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que a ti te foi demonstrado para que soubesses que o Senhor é Deus"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A ti te foi demonstrado para que soubesses",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 4:35"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Deuteronômio 4:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pergunta pois agora aos tempos passados"
+        },
+        {
+          "id": "b",
+          "text": "Ou algum povo ouviu a voz"
+        },
+        {
+          "id": "c",
+          "text": "Ou se algum deus intentou conquistar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Deuteronômio 4:34, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 4:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "algum"
+        },
+        {
+          "id": "b",
+          "text": "Pergunta"
+        },
+        {
+          "id": "c",
+          "text": "pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "algum",
+      "feedbackCorrect": "A palavra do versículo é algum.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 4:34"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 4:32 a Mateus 22:37.",
+      "verseRef": "Deuteronômio 4:32",
+      "passageA": {
+        "ref": "Deuteronômio 4:32"
+      },
+      "passageB": {
+        "ref": "Mateus 22:37"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar a Deus de coração"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Deuteronômio 4:40",
+      "correctOptionId": "false",
+      "evidenceSpan": "Guarda",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 4:40 afirma.",
+      "evidence": [
+        "Deuteronômio 4:40"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 4:37, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Deuteronômio 4:37",
+      "options": [
+        {
+          "id": "a",
+          "text": "ter"
+        },
+        {
+          "id": "b",
+          "text": "amado"
+        },
+        {
+          "id": "c",
+          "text": "teus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ter",
+      "feedbackCorrect": "O versículo destaca ter.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 4:37"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 4:36, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 4:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que dos céus ele fez ouvir a sua voz, para te ensinar"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Dos céus ele fez ouvir a sua voz",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 4:36"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Deuteronômio 4:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Deuteronômio 4:36, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 4:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "céus"
+        },
+        {
+          "id": "b",
+          "text": "Pergunta"
+        },
+        {
+          "id": "c",
+          "text": "pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "céus",
+      "feedbackCorrect": "A palavra do versículo é céus.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 4:36"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 4:32 a Josué 1:7–8.",
+      "verseRef": "Deuteronômio 4:32",
+      "passageA": {
+        "ref": "Deuteronômio 4:32"
+      },
+      "passageB": {
+        "ref": "Josué 1:7–8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Meditar na lei"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pergunta",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 4:32"
+      ]
+    }
+  ]
+}

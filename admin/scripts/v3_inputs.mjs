@@ -62,6 +62,28 @@ function collectVerses(ranges) {
   return out;
 }
 
+/**
+ * Desafio: reparte o teto entre as cenas do bloco (cada faixa contribui com
+ * os primeiros versos), para a última cena não ficar de fora do pacote.
+ */
+function collectVersesEven(ranges) {
+  if (!ranges.length) return [];
+  const share = Math.max(4, Math.floor(MAX_VERSES / ranges.length));
+  const seen = new Set();
+  const out = [];
+  for (const r of ranges) {
+    let taken = 0;
+    for (const v of versesOf(r)) {
+      if (taken >= share || out.length >= MAX_VERSES) break;
+      if (seen.has(v.ref)) continue;
+      seen.add(v.ref);
+      out.push(v);
+      taken++;
+    }
+  }
+  return out;
+}
+
 export function buildInputs(trailSlug) {
   const trail = loadTrail(trailSlug);
   const studies = readJson(join(APP_DATA, 'mission_studies.json')).studies || {};
@@ -117,7 +139,7 @@ export function buildInputs(trailSlug) {
           ? pool.map((e) => ({ slug: e.slug, title: e.title, centralInsight: e.centralInsight, ref: e.refs[0] || null }))
           : [],
         ranges: ranges.map((r) => r.ref),
-        verses: collectVerses(ranges),
+        verses: boss ? collectVersesEven(ranges) : collectVerses(ranges),
       };
       packets.push(packet);
       if (!boss) {

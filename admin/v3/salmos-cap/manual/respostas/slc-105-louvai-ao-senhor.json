@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 107:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 107:1–6"
+      },
+      {
+        "ref": "Salmos 107:7–9"
+      }
+    ],
+    "context": "Louvai ao Senhor, porque ele é bom; clamaram na angústia, e ele os livrou. Quem é sábio observe.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Louvai ao Senhor",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Rendei graças ao Senhor.",
+        "evidenceRef": "Salmos 107:1",
+        "evidenceSpan": "Rendei graças ao Senhor"
+      },
+      {
+        "text": "Digam os redimidos do Senhor.",
+        "evidenceRef": "Salmos 107:2",
+        "evidenceSpan": "Digam os redimidos do Senhor"
+      },
+      {
+        "text": "E aqueles que congregou das terras do Oriente.",
+        "evidenceRef": "Salmos 107:3",
+        "evidenceSpan": "E aqueles que congregou das terras do Oriente"
+      },
+      {
+        "text": "Andaram perdidos pelo deserto.",
+        "evidenceRef": "Salmos 107:4",
+        "evidenceSpan": "Andaram perdidos pelo deserto"
+      },
+      {
+        "text": "Famintos e sedentos.",
+        "evidenceRef": "Salmos 107:5",
+        "evidenceSpan": "Famintos e sedentos"
+      },
+      {
+        "text": "Então, na sua angústia, clamaram ao Senhor, e Ele os livrou de suas tribulações.",
+        "evidenceRef": "Salmos 107:6",
+        "evidenceSpan": "Então"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Rendei",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "graças",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Rendei graças ao senhor porque ele",
+        "evidenceRef": "Salmos 107:1"
+      },
+      {
+        "label": "Digam os redimidos do senhor aqueles",
+        "evidenceRef": "Salmos 107:2"
+      },
+      {
+        "label": "E aqueles que congregou das terras",
+        "evidenceRef": "Salmos 107:3"
+      },
+      {
+        "label": "Andaram perdidos pelo deserto por caminhos",
+        "evidenceRef": "Salmos 107:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 107:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Salmos 107:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Salmos 107:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      },
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Deserto, prisão, doença e mar: Deus livra — e o sábio presta atenção."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Deserto, prisão, doença e mar: Deus livra — e o sábio presta atenção.",
+    "anchorQuestion": "O que Salmos 107:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 107:1, rendei graças ao Senhor.",
+      "verseRef": "Salmos 107:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Rendei graças ao Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 107:1 afirma.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 107:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 107:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei"
+        },
+        {
+          "id": "b",
+          "text": "graças"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "O versículo destaca «Rendei».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 107:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 107:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "E aqueles que congregou das terras do Oriente"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E aqueles que congregou das terras do Oriente",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 107:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 107:1 na ordem do texto.",
+      "verseRef": "Salmos 107:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei graças ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "porque ele é bom"
+        },
+        {
+          "id": "c",
+          "text": "a sua misericórdia permanece para sempre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rendei graças ao Senhor",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 107:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 107:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andaram"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Andaram",
+      "feedbackCorrect": "A palavra do versículo é «Andaram».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 107:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 107:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 107:1",
+      "passageA": {
+        "ref": "Salmos 107:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Louvai ao Senhor, porque ele é bom; clamaram na angústia, e ele os livrou. Quem é sábio observe."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 107:1, o marcador porque une ideias no fluxo do texto.",
+      "verseRef": "Salmos 107:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 107:1 afirma.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 107:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 107:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo destaca «porque».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 107:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 107:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Andaram perdidos pelo deserto",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 107:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 107:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei graças ao senhor porque ele"
+        },
+        {
+          "id": "b",
+          "text": "Digam os redimidos do senhor aqueles"
+        },
+        {
+          "id": "c",
+          "text": "E aqueles que congregou das terras"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 107:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 107:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "aqueles"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aqueles",
+      "feedbackCorrect": "A palavra do versículo é «aqueles».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 107:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 107:1 a 2 Coríntios 1:3.",
+      "verseRef": "Salmos 107:1",
+      "passageA": {
+        "ref": "Salmos 107:1"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus de toda consolação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 107:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 107:9 afirma.",
+      "evidence": [
+        "Salmos 107:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 107:9, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 107:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "saciou"
+        },
+        {
+          "id": "b",
+          "text": "alma"
+        },
+        {
+          "id": "c",
+          "text": "sedenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saciou",
+      "feedbackCorrect": "O versículo destaca «saciou».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 107:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 107:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 107:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Famintos e sedentos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 107:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 107:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 107:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 107:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Famintos"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Famintos",
+      "feedbackCorrect": "A palavra do versículo é «Famintos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 107:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 107:1 a Salmos 46:1.",
+      "verseRef": "Salmos 107:1",
+      "passageA": {
+        "ref": "Salmos 107:1"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 107:1"
+      ]
+    }
+  ]
+}

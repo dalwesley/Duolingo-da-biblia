@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Êxodo 34:1–9",
+    "passages": [
+      {
+        "ref": "Êxodo 34:1–9"
+      }
+    ],
+    "context": "Moisés sobe de novo com tábuas novas. O Senhor passa e proclama que é compassivo e justo.",
+    "keyword": "Compassivo",
+    "keywordGloss": "O Senhor se proclama compassivo, clemente e grande em misericórdia.",
+    "focusQuestion": "Como a misericórdia e a justiça de Deus moldam o seu pedido de perdão?",
+    "reflectionPrompts": [
+      "Novas tábuas",
+      "Nome proclamado",
+      "Perdoa a iniquidade"
+    ],
+    "facts": [
+      {
+        "text": "Moisés deve lavrar duas tábuas como as primeiras; Deus escreverá as mesmas palavras.",
+        "evidenceRef": "Êxodo 34:1",
+        "evidenceSpan": "Lavra duas tábuas de pedra, como as primeiras"
+      },
+      {
+        "text": "O Senhor desceu na nuvem e proclamou o nome do Senhor.",
+        "evidenceRef": "Êxodo 34:5",
+        "evidenceSpan": "proclamou o nome do Senhor"
+      },
+      {
+        "text": "O Senhor é compassivo, clemente, longânime e grande em misericórdia.",
+        "evidenceRef": "Êxodo 34:6",
+        "evidenceSpan": "compassivo, clemente, longânime"
+      },
+      {
+        "text": "Ele perdoa a iniquidade e não inocenta o culpado.",
+        "evidenceRef": "Êxodo 34:7",
+        "evidenceSpan": "que perdoa a iniquidade"
+      },
+      {
+        "text": "Moisés se prostrou e pediu perdão e companhia no meio do povo.",
+        "evidenceRef": "Êxodo 34:8",
+        "evidenceSpan": "Moisés inclinou-se até o chão e se prostrou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "compassivo",
+        "gloss": "Caráter do Senhor proclamado diante de Moisés."
+      },
+      {
+        "term": "iniquidade",
+        "gloss": "O que o Senhor perdoa, sem inocentar o culpado."
+      },
+      {
+        "term": "tábuas",
+        "gloss": "Pedras novas com as mesmas palavras das primeiras."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Novas tábuas e subida ao monte",
+        "evidenceRef": "Êxodo 34:1–4"
+      },
+      {
+        "label": "Proclamação do nome",
+        "evidenceRef": "Êxodo 34:5–6"
+      },
+      {
+        "label": "Misericórdia e justiça",
+        "evidenceRef": "Êxodo 34:7"
+      },
+      {
+        "label": "Adoração e pedido de Moisés",
+        "evidenceRef": "Êxodo 34:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Perdoa a iniquidade e não inocenta o culpado.",
+        "marker": "não",
+        "evidenceRef": "Êxodo 34:7"
+      },
+      {
+        "kind": "sequência",
+        "text": "Passando o Senhor, exclamou o próprio nome.",
+        "marker": "passando",
+        "evidenceRef": "Êxodo 34:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Diante da proclamação, Moisés se prostrou.",
+        "marker": "imediatamente",
+        "evidenceRef": "Êxodo 34:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 86:15",
+        "bridge": "Deus compassivo e misericordioso"
+      },
+      {
+        "ref": "Números 14:18",
+        "bridge": "Perdoa iniquidade e não inocenta"
+      },
+      {
+        "ref": "Joel 2:13",
+        "bridge": "Compassivo e longânime"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus só é misericordioso e nunca trata o culpado.",
+        "why": "Ele não inocenta o culpado."
+      },
+      {
+        "text": "As novas tábuas trazem palavras diferentes das primeiras.",
+        "why": "São as mesmas palavras das primeiras."
+      },
+      {
+        "text": "Moisés ficou em pé indiferente à proclamação.",
+        "why": "Ele se inclinou e se prostrou."
+      }
+    ],
+    "centralInsight": "O Senhor perdoa iniquidade e não tem por inocente o culpado; Moisés adora.",
+    "anchorQuestion": "Como o Senhor se descreve ao passar diante de Moisés?"
+  },
+  "questions": [
+    {
+      "question": "O Senhor mandou lavrar duas tábuas como as primeiras e disse que escreveria as mesmas palavras.",
+      "verseRef": "Êxodo 34:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "eu escreverei nelas as mesmas palavras",
+      "feedbackCorrect": "As mesmas palavras das primeiras tábuas.",
+      "feedbackWrong": {
+        "false": "Releia: as mesmas palavras que estavam nas primeiras."
+      },
+      "hint": "Compare com as primeiras tábuas.",
+      "learningObjective": "Observar as novas tábuas.",
+      "evidence": [
+        "Êxodo 34:1"
+      ],
+      "difficulty": "semente",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 34:6, toque o primeiro adjetivo com que o Senhor se proclama.",
+      "verseRef": "Êxodo 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "compassivo"
+        },
+        {
+          "id": "b",
+          "text": "longânime"
+        },
+        {
+          "id": "c",
+          "text": "fidelidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é compassivo, clemente, longânime",
+      "feedbackCorrect": "O primeiro adjetivo é compassivo.",
+      "feedbackWrong": {
+        "b": "Longânime vem depois.",
+        "c": "Fidelidade fecha a lista."
+      },
+      "hint": "A lista começa com que palavra?",
+      "learningObjective": "Identificar compassivo.",
+      "evidence": [
+        "Êxodo 34:6"
+      ],
+      "difficulty": "semente",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Segundo Êxodo 34:8, o que Moisés fez imediatamente?",
+      "verseRef": "Êxodo 34:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inclinou-se até o chão e se prostrou"
+        },
+        {
+          "id": "b",
+          "text": "Quebrou as novas tábuas"
+        },
+        {
+          "id": "c",
+          "text": "Voltou ao Egito"
+        },
+        {
+          "id": "d",
+          "text": "Calou-se sem adorar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés inclinou-se até o chão e se prostrou",
+      "feedbackCorrect": "Ele se inclinou e se prostrou.",
+      "feedbackWrong": {
+        "b": "Não quebrou as tábuas aqui.",
+        "c": "Não voltou ao Egito.",
+        "d": "Ele adorou."
+      },
+      "hint": "Leia a reação imediata.",
+      "learningObjective": "Observar a adoração de Moisés.",
+      "evidence": [
+        "Êxodo 34:8"
+      ],
+      "difficulty": "semente",
+      "type": "choice"
+    },
+    {
+      "question": "Monte Êxodo 34:6 na ordem do texto.",
+      "verseRef": "Êxodo 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "passando o Senhor por diante dele"
+        },
+        {
+          "id": "b",
+          "text": "exclamou: \"O Senhor, o Senhor Deus"
+        },
+        {
+          "id": "c",
+          "text": "é compassivo, clemente, longânime"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "passando o Senhor por diante dele",
+      "feedbackCorrect": "Passa, exclama o nome, descreve o caráter.",
+      "feedbackWrong": {
+        "default": "Comece por passando o Senhor."
+      },
+      "hint": "O versículo começa com a passagem.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 34:6.",
+      "evidence": [
+        "Êxodo 34:6"
+      ],
+      "difficulty": "semente",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 34:7, o que o Senhor perdoa?",
+      "verseRef": "Êxodo 34:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "iniquidade"
+        },
+        {
+          "id": "b",
+          "text": "obediência"
+        },
+        {
+          "id": "c",
+          "text": "aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que perdoa a iniquidade",
+      "feedbackCorrect": "Ele perdoa a iniquidade, a transgressão e o pecado.",
+      "feedbackWrong": {
+        "b": "Não é obediência.",
+        "c": "O texto diz iniquidade."
+      },
+      "hint": "Que perdoa a ___.",
+      "learningObjective": "Lembrar o que é perdoado.",
+      "evidence": [
+        "Êxodo 34:7"
+      ],
+      "difficulty": "semente",
+      "type": "complete"
+    },
+    {
+      "question": "O que Êxodo 34:6 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 34:6",
+      "passageA": {
+        "ref": "Êxodo 34:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Moisés sobe com tábuas novas; o Senhor passa e se proclama."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Caráter misericordioso de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total no monte"
+        },
+        {
+          "id": "c",
+          "text": "Rejeição de Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "compassivo, clemente, longânime",
+      "feedbackCorrect": "A proclamação revela o caráter compassivo.",
+      "feedbackWrong": {
+        "b": "Há proclamação, não silêncio.",
+        "c": "Moisés é atendido e adora."
+      },
+      "hint": "Compare a subida e a proclamação.",
+      "learningObjective": "Ligar novas tábuas e caráter de Deus.",
+      "evidence": [
+        "Êxodo 34:6"
+      ],
+      "difficulty": "semente",
+      "type": "connect"
+    },
+    {
+      "question": "Em Êxodo 34:7, o Senhor perdoa a iniquidade e também inocenta sempre o culpado.",
+      "verseRef": "Êxodo 34:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "que não inocenta o culpado",
+      "feedbackCorrect": "Ele perdoa e, ao mesmo tempo, não inocenta o culpado.",
+      "feedbackWrong": {
+        "true": "Releia: não inocenta o culpado."
+      },
+      "hint": "Veja a frase após o perdão.",
+      "learningObjective": "Compreender misericórdia e justiça.",
+      "evidence": [
+        "Êxodo 34:7"
+      ],
+      "difficulty": "caminhada",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 34:7, toque a palavra que marca a recusa de inocentar o culpado.",
+      "verseRef": "Êxodo 34:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "não"
+        },
+        {
+          "id": "b",
+          "text": "perdoa"
+        },
+        {
+          "id": "c",
+          "text": "gerações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que não inocenta o culpado",
+      "feedbackCorrect": "\"Não\" marca o contraste com a inocência do culpado.",
+      "feedbackWrong": {
+        "b": "Perdoa é a misericórdia; o contraste é não.",
+        "c": "Gerações fala do alcance."
+      },
+      "hint": "Qual palavra precede \"inocenta\"?",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Êxodo 34:7"
+      ],
+      "difficulty": "caminhada",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Como Êxodo 34:6–7 une misericórdia e justiça?",
+      "verseRef": "Êxodo 34:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perdoa iniquidade e não inocenta o culpado"
+        },
+        {
+          "id": "b",
+          "text": "Só castiga, sem qualquer perdão"
+        },
+        {
+          "id": "c",
+          "text": "Só perdoa e apaga toda justiça"
+        },
+        {
+          "id": "d",
+          "text": "Deixa Moisés descrever a Deus sozinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que perdoa a iniquidade",
+      "feedbackCorrect": "O próprio Senhor une perdão e não inocentar o culpado.",
+      "feedbackWrong": {
+        "b": "Há perdão declarado.",
+        "c": "Há justiça: não inocenta.",
+        "d": "Deus mesmo se proclama."
+      },
+      "hint": "Leia perdão e \"não inocenta\" juntos.",
+      "learningObjective": "Relacionar misericórdia e justiça.",
+      "evidence": [
+        "Êxodo 34:6",
+        "Êxodo 34:7"
+      ],
+      "difficulty": "caminhada",
+      "type": "choice"
+    },
+    {
+      "question": "Como avança Êxodo 34:1–9?",
+      "verseRef": "Êxodo 34:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Novas tábuas e subida ao monte"
+        },
+        {
+          "id": "b",
+          "text": "Proclamação do nome compassivo"
+        },
+        {
+          "id": "c",
+          "text": "Adoração e pedido de Moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Lavra duas tábuas de pedra",
+      "feedbackCorrect": "Tábuas, proclamação, adoração.",
+      "feedbackWrong": {
+        "default": "Comece pelas tábuas; a adoração vem por último."
+      },
+      "hint": "Primeiro as tábuas; no fim a prostração.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 34:1–9"
+      ],
+      "difficulty": "caminhada",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 34:5, o que o Senhor proclamou?",
+      "verseRef": "Êxodo 34:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "nome"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "proclamou o nome do Senhor",
+      "feedbackCorrect": "Ele proclamou o nome do Senhor.",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "O texto diz nome."
+      },
+      "hint": "Proclamou o ___ do Senhor.",
+      "learningObjective": "Lembrar a proclamação do nome.",
+      "evidence": [
+        "Êxodo 34:5"
+      ],
+      "difficulty": "caminhada",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 34:6 a Salmos 86:15?",
+      "verseRef": "Êxodo 34:6",
+      "passageA": {
+        "ref": "Êxodo 34:6"
+      },
+      "passageB": {
+        "ref": "Salmos 86:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus compassivo e misericordioso"
+        },
+        {
+          "id": "b",
+          "text": "Deus distante e mudo"
+        },
+        {
+          "id": "c",
+          "text": "Deus só juiz sem graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "compassivo, clemente, longânime",
+      "feedbackCorrect": "O salmo ecoa o Deus compassivo de Êxodo 34.",
+      "feedbackWrong": {
+        "b": "Há proclamação do caráter.",
+        "c": "Há misericórdia declarada."
+      },
+      "hint": "Que adjetivos os textos compartilham?",
+      "learningObjective": "Relacionar Êxodo e o salmo.",
+      "evidence": [
+        "Êxodo 34:6",
+        "Salmos 86:15"
+      ],
+      "difficulty": "caminhada",
+      "type": "connect"
+    },
+    {
+      "question": "Êxodo 34:6–9 sustenta que conhecer o nome do Senhor leva a adorar e pedir perdão, sem negar a justiça divina.",
+      "verseRef": "Êxodo 34:6–7",
+      "correctOptionId": "true",
+      "evidenceSpan": "que não inocenta o culpado",
+      "feedbackCorrect": "Proclamação, justiça e adoração caminham juntas.",
+      "feedbackWrong": {
+        "false": "O texto une caráter, justiça e prostração."
+      },
+      "hint": "Una a proclamação e a prostração.",
+      "learningObjective": "Interpretar nome, misericórdia e justiça.",
+      "evidence": [
+        "Êxodo 34:6",
+        "Êxodo 34:8"
+      ],
+      "difficulty": "profundezas",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 34:8, toque o verbo que mostra a adoração de Moisés.",
+      "verseRef": "Êxodo 34:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "prostrou"
+        },
+        {
+          "id": "b",
+          "text": "imediatamente"
+        },
+        {
+          "id": "c",
+          "text": "chão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se prostrou",
+      "feedbackCorrect": "Ele se prostrou diante do Senhor.",
+      "feedbackWrong": {
+        "b": "Imediatamente marca o tempo.",
+        "c": "Chão é o lugar; o verbo é prostrou."
+      },
+      "hint": "O que ele fez no fim?",
+      "learningObjective": "Sustentar a adoração no texto.",
+      "evidence": [
+        "Êxodo 34:8"
+      ],
+      "difficulty": "profundezas",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Que leitura Êxodo 34:6–7 sustenta sobre Deus?",
+      "verseRef": "Êxodo 34:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "É misericordioso e justo ao mesmo tempo"
+        },
+        {
+          "id": "b",
+          "text": "Só castiga sem jamais perdoar"
+        },
+        {
+          "id": "c",
+          "text": "Só perdoa e nunca julga o culpado"
+        },
+        {
+          "id": "d",
+          "text": "Permanece desconhecido após a proclamação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que perdoa a iniquidade",
+      "feedbackCorrect": "Misericórdia e não inocentar o culpado coexistem.",
+      "feedbackWrong": {
+        "b": "Há perdão.",
+        "c": "Há justiça.",
+        "d": "Ele se proclama."
+      },
+      "hint": "Leia perdão e culpado juntos.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 34:6",
+        "Êxodo 34:7"
+      ],
+      "difficulty": "profundezas",
+      "type": "choice"
+    },
+    {
+      "question": "Qual sequência liga a proclamação à Escritura?",
+      "verseRef": "Êxodo 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor se proclama compassivo"
+        },
+        {
+          "id": "b",
+          "text": "Moisés se prostrou e pediu perdão"
+        },
+        {
+          "id": "c",
+          "text": "O salmo ecoa o Deus misericordioso"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "compassivo, clemente, longânime",
+      "feedbackCorrect": "Proclamação, adoração, eco no salmo.",
+      "feedbackWrong": {
+        "default": "Comece pela proclamação; o salmo vem por último."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o fio do caráter de Deus.",
+      "evidence": [
+        "Êxodo 34:6",
+        "Êxodo 34:8",
+        "Salmos 86:15"
+      ],
+      "difficulty": "profundezas",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 34:6, além de compassivo, o Senhor é ___?",
+      "verseRef": "Êxodo 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "clemente"
+        },
+        {
+          "id": "b",
+          "text": "ausente"
+        },
+        {
+          "id": "c",
+          "text": "mudo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "compassivo, clemente, longânime",
+      "feedbackCorrect": "A lista segue: clemente e longânime.",
+      "feedbackWrong": {
+        "b": "Não é ausente.",
+        "c": "Ele se proclama."
+      },
+      "hint": "O segundo adjetivo da lista.",
+      "learningObjective": "Lembrar o termo do caráter.",
+      "evidence": [
+        "Êxodo 34:6"
+      ],
+      "difficulty": "profundezas",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 34:6 a Joel 2:13?",
+      "verseRef": "Êxodo 34:6",
+      "passageA": {
+        "ref": "Êxodo 34:6"
+      },
+      "passageB": {
+        "ref": "Joel 2:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Compassivo e longânime"
+        },
+        {
+          "id": "b",
+          "text": "Bezerro de ouro"
+        },
+        {
+          "id": "c",
+          "text": "Tábuas quebradas só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "compassivo, clemente, longânime",
+      "feedbackCorrect": "Joel retoma o Deus compassivo e longânime.",
+      "feedbackWrong": {
+        "b": "O elo é o caráter de Deus.",
+        "c": "O elo não é só as tábuas."
+      },
+      "hint": "Que adjetivos Joel ecoa?",
+      "learningObjective": "Ligar Êxodo e Joel no caráter de Deus.",
+      "evidence": [
+        "Êxodo 34:6",
+        "Joel 2:13"
+      ],
+      "difficulty": "profundezas",
+      "type": "connect"
+    }
+  ]
+}

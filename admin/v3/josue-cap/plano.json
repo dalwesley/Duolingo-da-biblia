@@ -1,0 +1,187 @@
+{
+  "slug": "josue-cap",
+  "prefix": "jsc",
+  "book": "Josué",
+  "chapters": 24,
+  "title": "Josué",
+  "description": "Josué capítulo a capítulo: a entrada na terra, a conquista e a aliança renovada.",
+  "icon": "⚔️",
+  "color": "#5D8A66",
+  "order": 10,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["josue"],
+  "modules": [
+    {
+      "title": "Entrada · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Josué 1:10–18",
+          "title": "Ordens de Josué",
+          "intro": "Após a morte de Moisés, Josué prepara o povo para atravessar o Jordão em três dias.",
+          "insight": "O povo promete ouvir Josué como ouviu Moisés, se o Senhor estiver com ele.",
+          "objective": "Obedecer e atravessar"
+        },
+        {
+          "ref": "Josué 2:1–8",
+          "title": "Raabe esconde os espias",
+          "intro": "Josué envia dois homens a Jericó; eles entram na casa de Raabe, e o rei manda buscá-los.",
+          "insight": "Raabe esconde os espias no telhado e desvia os perseguidores com coragem.",
+          "objective": "Acolher os enviados"
+        },
+        {
+          "ref": "Josué 3:1–11",
+          "title": "A arca na frente",
+          "intro": "O povo acampa junto ao Jordão e recebe ordem de seguir a arca da aliança.",
+          "insight": "A arca do Senhor de toda a terra vai à frente: o Deus vivo está no meio do povo.",
+          "objective": "Seguir a arca"
+        },
+        {
+          "ref": "Josué 4:1–9",
+          "title": "Doze pedras",
+          "intro": "Depois da travessia, o Senhor manda tirar doze pedras do meio do Jordão.",
+          "insight": "As pedras são memorial: quando os filhos perguntarem, contarão o que o Senhor fez.",
+          "objective": "Lembrar o que o Senhor fez"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Entrada",
+        "intro": "Revise as ordens de Josué, Raabe, a arca no Jordão e as pedras de memória.",
+        "insight": "O Senhor abre caminho e pede memória e obediência"
+      }
+    },
+    {
+      "title": "Conquista · cap. 5–9",
+      "scenes": [
+        {
+          "ref": "Josué 5:10–15",
+          "title": "Páscoa e o príncipe",
+          "intro": "Em Gilgal o povo celebra a Páscoa; o maná cessa, e Josué encontra um homem de espada nua.",
+          "insight": "O príncipe do exército do Senhor manda Josué tirar as sandálias: o lugar é santo.",
+          "objective": "Reconhecer o santo"
+        },
+        {
+          "ref": "Josué 6:6–15",
+          "title": "Sete trombetas",
+          "intro": "Josué manda os sacerdotes levar a arca e tocar trombetas ao redor de Jericó.",
+          "insight": "Por seis dias o povo marcha em silêncio; no sétimo dia, sete voltas com as trombetas.",
+          "objective": "Obedecer o plano do Senhor"
+        },
+        {
+          "ref": "Josué 7:1–9",
+          "title": "Derrota em Ai",
+          "intro": "Israel prevarica nas coisas consagradas; em Ai os homens fogem e Josué se prostra.",
+          "insight": "Sem o Senhor, o povo volta as costas; Josué pergunta por que a derrota veio.",
+          "objective": "Não esconder o pecado"
+        },
+        {
+          "ref": "Josué 8:30–35",
+          "title": "Altar no Ebal",
+          "intro": "Depois de Ai, Josué edifica um altar no monte Ebal e lê a lei diante de todo o povo.",
+          "insight": "Todo o povo ouve a lei: bênção e maldição, como Moisés havia ordenado.",
+          "objective": "Ouvir toda a lei"
+        },
+        {
+          "ref": "Josué 9:3–15",
+          "title": "Engano de Gibeão",
+          "intro": "Os gibeonitas fingem vir de longe com pães mofados e pedem aliança a Israel.",
+          "insight": "Israel jura pelo Senhor sem consultar; a aliança feita não pode ser quebrada.",
+          "objective": "Consultar antes de jurar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Conquista",
+        "intro": "Revise a Páscoa, a marcha em Jericó, a derrota em Ai, o altar e o engodo de Gibeão.",
+        "insight": "Vitória e queda dependem de ouvir e temer o Senhor"
+      }
+    },
+    {
+      "title": "Vitória e herança · cap. 10–17",
+      "scenes": [
+        {
+          "ref": "Josué 10:6–14",
+          "title": "Sol em Gibeão",
+          "intro": "Gibeão pede socorro; Josué sobe, e o Senhor luta com pedras e com o sol parado.",
+          "insight": "O Senhor entregou os inimigos e ouviu a voz de um homem: o sol se deteve em Gibeão.",
+          "objective": "O Senhor luta por Israel"
+        },
+        {
+          "ref": "Josué 11:15–23",
+          "chapters": "11–12",
+          "title": "Josué cumpriu tudo",
+          "intro": "Como Moisés ordenou, Josué cumpre a conquista; a terra descansa da guerra.",
+          "insight": "Josué não deixou de lado nenhuma palavra do Senhor; a terra teve descanso.",
+          "objective": "Cumprir sem omitir"
+        },
+        {
+          "ref": "Josué 14:6–15",
+          "chapters": "13–14",
+          "title": "Calebe pede Hebrom",
+          "intro": "Calebe lembra a promessa de Moisés e pede a montanha que o Senhor lhe jurou.",
+          "insight": "Aos oitenta e cinco anos, Calebe ainda confia: o Senhor o guardou vivo para a herança.",
+          "objective": "Pedir a herança prometida"
+        },
+        {
+          "ref": "Josué 17:14–18",
+          "chapters": "15–17",
+          "title": "Um quinhão só",
+          "intro": "Os filhos de José reclamam de uma sorte pequena e temem os cananeus de carros de ferro.",
+          "insight": "Josué manda subir ao bosque e expulsar: o Senhor já os abençoou como grande povo.",
+          "objective": "Tomar a herança com coragem"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Vitória e herança",
+        "intro": "Revise o sol em Gibeão, a conquista cumprida, Calebe e o quinhão de José.",
+        "insight": "O Senhor dá a terra; o povo precisa tomar posse com fé"
+      }
+    },
+    {
+      "title": "Repouso e aliança · cap. 18–24",
+      "scenes": [
+        {
+          "ref": "Josué 18:1–10",
+          "chapters": "18–19",
+          "title": "A tenda em Siló",
+          "intro": "A congregação arma a tenda em Siló; ainda faltam sete tribos para receber sorte.",
+          "insight": "Josué manda mapear a terra e lançar sortes diante do Senhor em Siló.",
+          "objective": "Completar a partilha"
+        },
+        {
+          "ref": "Josué 20:1–9",
+          "chapters": "20–21",
+          "title": "Cidades de refúgio",
+          "intro": "O Senhor manda separar cidades onde o homicida sem intenção possa fugir.",
+          "insight": "O refúgio guarda a vida até o juízo: justiça e misericórdia na terra dada.",
+          "objective": "Abrir lugar de refúgio"
+        },
+        {
+          "ref": "Josué 22:10–20",
+          "title": "Altar junto ao Jordão",
+          "intro": "As tribos do oriente edificam um altar grande; as outras temem quebra da aliança.",
+          "insight": "Antes de guerrear, Israel pergunta: o altar pode ser testemunho, não rebelião.",
+          "objective": "Esclarecer antes de julgar"
+        },
+        {
+          "ref": "Josué 23:1–11",
+          "title": "Josué já velho",
+          "intro": "Com descanso na terra, Josué velho convoca Israel e lembra o que o Senhor fez.",
+          "insight": "Apeguem-se ao Senhor e amem-no: ele lutou por vocês; não se misturem aos povos.",
+          "objective": "Apegar-se ao Senhor"
+        },
+        {
+          "ref": "Josué 24:1–13",
+          "title": "História em Siquém",
+          "intro": "Em Siquém, Josué conta a história desde Abraão até a terra dada de graça.",
+          "insight": "O Senhor tirou, guiou e deu a terra: Israel não conquistou com espada própria.",
+          "objective": "Lembrar a graça do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Repouso e aliança",
+        "intro": "Revise Siló, as cidades de refúgio, o altar, a exortação e a história em Siquém.",
+        "insight": "A terra é dom do Senhor; a aliança pede memória e fidelidade"
+      }
+    }
+  ]
+}

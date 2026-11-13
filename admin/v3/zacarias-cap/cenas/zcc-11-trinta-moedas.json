@@ -1,0 +1,914 @@
+{
+  "study": {
+    "slug": "zcc-11-trinta-moedas",
+    "passageRef": "Zacarias 11:4–9",
+    "passageText": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas. Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles. Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas. E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim. E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima.",
+    "passages": [
+      {
+        "ref": "Zacarias 11:4–9",
+        "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas. Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles. Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas. E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim. E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima."
+      }
+    ],
+    "context": "Zacarias pastoreia o rebanho e é avaliado em trinta moedas de prata.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra-chave do trecho em Trinta moedas.",
+    "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+    "reflectionPrompts": [
+      "Assim diz o Senhor, meu Deus: Apascenta",
+      "Cujos proprietários as matam e não se",
+      "Não terei mais compaixão dos habitantes"
+    ],
+    "facts": [
+      {
+        "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate.",
+        "evidenceRef": "Zacarias 11:4",
+        "evidenceSpan": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate"
+      },
+      {
+        "text": "Cujos proprietários as matam e não se sentem culpados.",
+        "evidenceRef": "Zacarias 11:5",
+        "evidenceSpan": "Cujos proprietários as matam e não se sentem culpados"
+      },
+      {
+        "text": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor.",
+        "evidenceRef": "Zacarias 11:6",
+        "evidenceSpan": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor"
+      },
+      {
+        "text": "tomei para mim duas varas: uma chamei de Graça e a outra de União.",
+        "evidenceRef": "Zacarias 11:7",
+        "evidenceSpan": "tomei para mim duas varas: uma chamei de Graça e a outra de União"
+      },
+      {
+        "text": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou.",
+        "evidenceRef": "Zacarias 11:8",
+        "evidenceSpan": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou"
+      },
+      {
+        "text": "E eu disse: Não apascentarei mais vocês.",
+        "evidenceRef": "Zacarias 11:9",
+        "evidenceSpan": "E eu disse: Não apascentarei mais vocês"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra-chave do trecho em Trinta moedas."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra-chave do trecho em Trinta moedas."
+      },
+      {
+        "term": "Apascenta",
+        "gloss": "Palavra-chave do trecho em Trinta moedas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Assim diz o Senhor, meu Deus: Apascenta as",
+        "evidenceRef": "Zacarias 11:4"
+      },
+      {
+        "label": "Cujos proprietários as matam e não se sentem",
+        "evidenceRef": "Zacarias 11:5"
+      },
+      {
+        "label": "Não terei mais compaixão dos habitantes desta",
+        "evidenceRef": "Zacarias 11:6"
+      },
+      {
+        "label": "e cuidei das ovelhas",
+        "evidenceRef": "Zacarias 11:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+        "marker": "Assim",
+        "evidenceRef": "Zacarias 11:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Cujos proprietários as matam e não se sentem culpados",
+        "marker": "porque",
+        "evidenceRef": "Zacarias 11:5"
+      },
+      {
+        "kind": "causa",
+        "text": "Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas",
+        "marker": "pois",
+        "evidenceRef": "Zacarias 11:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Ageu 2:4–5",
+        "bridge": "Ânimo na obra",
+        "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+      },
+      {
+        "ref": "Apocalipse 1:7",
+        "bridge": "Olharão para ele",
+        "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+      },
+      {
+        "ref": "Mateus 21:5",
+        "bridge": "Rei no jumentinho",
+        "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O texto não exige resposta prática.",
+        "why": "A cena chama a ouvir e voltar ao Senhor."
+      },
+      {
+        "text": "O juízo apaga qualquer esperança.",
+        "why": "Há convite e promessa no bloco da trilha."
+      },
+      {
+        "text": "Os ídolos são fonte real das bênçãos.",
+        "why": "O Senhor é quem dá o necessário."
+      }
+    ],
+    "centralInsight": "O preço vil pago ao pastor é lançado ao oleiro, na casa do Senhor.",
+    "anchorQuestion": "Segundo Zacarias 11:4, o que o texto destaca?",
+    "relatedVerses": [
+      {
+        "reference": "Ageu 2:4–5",
+        "reason": "Ânimo na obra"
+      },
+      {
+        "reference": "Apocalipse 1:7",
+        "reason": "Olharão para ele"
+      },
+      {
+        "reference": "Mateus 21:5",
+        "reason": "Rei no jumentinho"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "zacarias-cap-sem-zcc-11-trinta-moedas-01",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Zacarias 11:4, assim diz o Senhor, meu Deus — Apascenta as ovelhas que estão destinadas ao abate.",
+      "prompt": "Em Zacarias 11:4, assim diz o Senhor, meu Deus — Apascenta as ovelhas que estão destinadas ao abate.",
+      "cue": "Em Zacarias 11:4, assim diz o Senhor, meu Deus — Apascenta as ovelhas que estão destinadas ao abate.",
+      "verseRef": "Zacarias 11:4",
+      "passageText": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+      "feedbackCorrect": "O texto confirma.",
+      "feedbackWrong": {
+        "false": "O versículo confirma a afirmação."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler semente em Zacarias 11:4.",
+      "evidence": [
+        "Zacarias 11:4"
+      ]
+    },
+    {
+      "id": "zacarias-cap-sem-zcc-11-trinta-moedas-02",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Zacarias 11:4, toque o trecho que o texto destaca.",
+      "prompt": "Em Zacarias 11:4, toque o trecho que o texto destaca.",
+      "cue": "Em Zacarias 11:4, toque o trecho que o texto destaca.",
+      "verseRef": "Zacarias 11:4",
+      "passageText": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Assim"
+        },
+        {
+          "id": "c",
+          "text": "diz"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "diz",
+      "feedbackCorrect": "O texto traz \"diz\".",
+      "feedbackWrong": {
+        "a": "Outra parte do verso.",
+        "b": "Olhe de novo o versículo."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Zacarias 11:4.",
+      "evidence": [
+        "Zacarias 11:4"
+      ]
+    },
+    {
+      "id": "zacarias-cap-sem-zcc-11-trinta-moedas-03",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Zacarias 11:5, o que o texto afirma?",
+      "prompt": "Segundo Zacarias 11:5, o que o texto afirma?",
+      "cue": "Segundo Zacarias 11:5, o que o texto afirma?",
+      "verseRef": "Zacarias 11:5",
+      "passageText": "Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cujos proprietários as matam e não se sentem culpados"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Cujos proprietários as matam e não se sentem culpados",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Zacarias 11:5.",
+      "evidence": [
+        "Zacarias 11:5"
+      ]
+    },
+    {
+      "id": "zacarias-cap-sem-zcc-11-trinta-moedas-04",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte o versículo na ordem do texto. (Zacarias 11:5)",
+      "prompt": "Monte o versículo na ordem do texto. (Zacarias 11:5)",
+      "cue": "Monte o versículo na ordem do texto. (Zacarias 11:5)",
+      "verseRef": "Zacarias 11:5",
+      "passageText": "Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cujos proprietários as matam e não se sentem culpados"
+        },
+        {
+          "id": "b",
+          "text": "e cujos vendedores dizem: Louvado seja o Senhor, porque me"
+        },
+        {
+          "id": "c",
+          "text": "tornei rico, e os seus pastores não têm compaixão delas."
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Cujos proprietários as matam e não se sentem culpados",
+      "feedbackCorrect": "A ordem segue o versículo.",
+      "feedbackWrong": {
+        "default": "Comece pelo início do verso."
+      },
+      "hint": "Siga a ordem das palavras no palco.",
+      "learningObjective": "Ordenar Zacarias 11:5.",
+      "evidence": [
+        "Zacarias 11:5"
+      ]
+    },
+    {
+      "id": "zacarias-cap-sem-zcc-11-trinta-moedas-05",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Zacarias 11:6, qual palavra completa o sentido do versículo?",
+      "prompt": "Em Zacarias 11:6, qual palavra completa o sentido do versículo?",
+      "cue": "Em Zacarias 11:6, qual palavra completa o sentido do versículo?",
+      "verseRef": "Zacarias 11:6",
+      "passageText": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles.",
+      "template": "Não ___ mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "diz"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "terei"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "terei",
+      "feedbackCorrect": "A palavra do texto é \"terei\".",
+      "feedbackWrong": {
+        "a": "Não é essa a palavra do versículo.",
+        "b": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Zacarias 11:6.",
+      "evidence": [
+        "Zacarias 11:6"
+      ]
+    },
+    {
+      "id": "zacarias-cap-sem-zcc-11-trinta-moedas-06",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Zacarias 11:4 comunica que se liga a este contexto?",
+      "prompt": "O que Zacarias 11:4 comunica que se liga a este contexto?",
+      "cue": "O que Zacarias 11:4 comunica que se liga a este contexto?",
+      "verseRef": "Zacarias 11:4",
+      "passageText": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+      "passageA": {
+        "ref": "Zacarias 11:4",
+        "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Zacarias pastoreia o rebanho e é avaliado em trinta moedas de prata."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Louvor à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Chamado a voltar"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "a": "Há palavra e ação de Deus.",
+        "b": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Zacarias 11:4"
+      ]
+    },
+    {
+      "id": "zacarias-cap-cam-zcc-11-trinta-moedas-01",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Zacarias 11:6, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "prompt": "Em Zacarias 11:6, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "cue": "Em Zacarias 11:6, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Zacarias 11:6",
+      "passageText": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler caminhada em Zacarias 11:6.",
+      "evidence": [
+        "Zacarias 11:6"
+      ]
+    },
+    {
+      "id": "zacarias-cap-cam-zcc-11-trinta-moedas-02",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Zacarias 11:6, toque o trecho que o texto destaca.",
+      "prompt": "Em Zacarias 11:6, toque o trecho que o texto destaca.",
+      "cue": "Em Zacarias 11:6, toque o trecho que o texto destaca.",
+      "verseRef": "Zacarias 11:6",
+      "passageText": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "habitantes"
+        },
+        {
+          "id": "b",
+          "text": "terei"
+        },
+        {
+          "id": "c",
+          "text": "compaixão"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "compaixão",
+      "feedbackCorrect": "O texto traz \"compaixão\".",
+      "feedbackWrong": {
+        "a": "Outra parte do verso.",
+        "b": "Olhe de novo o versículo."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Zacarias 11:6.",
+      "evidence": [
+        "Zacarias 11:6"
+      ]
+    },
+    {
+      "id": "zacarias-cap-cam-zcc-11-trinta-moedas-03",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Segundo Zacarias 11:7, o que o texto afirma?",
+      "prompt": "Segundo Zacarias 11:7, o que o texto afirma?",
+      "cue": "Segundo Zacarias 11:7, o que o texto afirma?",
+      "verseRef": "Zacarias 11:7",
+      "passageText": "Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apascentava e ovelhas"
+        },
+        {
+          "id": "b",
+          "text": "Ausência completa do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Elogio sem reserva à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "tomei para mim duas varas: uma chamei de Graça e a outra de União",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Há palavra do Senhor.",
+        "c": "O trecho fala com clareza.",
+        "d": "Isso não está no texto."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Zacarias 11:7.",
+      "evidence": [
+        "Zacarias 11:7"
+      ]
+    },
+    {
+      "id": "zacarias-cap-cam-zcc-11-trinta-moedas-04",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene o movimento desta cena. (Zacarias 11:7)",
+      "prompt": "Ordene o movimento desta cena. (Zacarias 11:7)",
+      "cue": "Ordene o movimento desta cena. (Zacarias 11:7)",
+      "verseRef": "Zacarias 11:7",
+      "passageText": "Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apascentava e ovelhas"
+        },
+        {
+          "id": "b",
+          "text": "exterminarei e pastores"
+        },
+        {
+          "id": "c",
+          "text": "disse e apascentarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "tomei para mim duas varas: uma chamei de Graça e a outra de União",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Zacarias 11:7"
+      ]
+    },
+    {
+      "id": "zacarias-cap-cam-zcc-11-trinta-moedas-05",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Zacarias 11:8, qual palavra completa o sentido do versículo?",
+      "prompt": "Em Zacarias 11:8, qual palavra completa o sentido do versículo?",
+      "cue": "Em Zacarias 11:8, qual palavra completa o sentido do versículo?",
+      "verseRef": "Zacarias 11:8",
+      "passageText": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim.",
+      "template": "E ___ os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim.",
+      "options": [
+        {
+          "id": "a",
+          "text": "terei"
+        },
+        {
+          "id": "b",
+          "text": "exterminarei"
+        },
+        {
+          "id": "c",
+          "text": "compaixão"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "exterminarei",
+      "feedbackCorrect": "A palavra do texto é \"exterminarei\".",
+      "feedbackWrong": {
+        "a": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Zacarias 11:8.",
+      "evidence": [
+        "Zacarias 11:8"
+      ]
+    },
+    {
+      "id": "zacarias-cap-cam-zcc-11-trinta-moedas-06",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Zacarias 11:6 a Apocalipse 1:7?",
+      "prompt": "O que liga Zacarias 11:6 a Apocalipse 1:7?",
+      "cue": "O que liga Zacarias 11:6 a Apocalipse 1:7?",
+      "verseRef": "Zacarias 11:6",
+      "passageText": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles.",
+      "passageA": {
+        "ref": "Zacarias 11:6",
+        "text": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles."
+      },
+      "passageB": {
+        "ref": "Apocalipse 1:7",
+        "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvor à idolatria"
+        },
+        {
+          "id": "b",
+          "text": "Olharão para ele"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total de Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "a": "O texto não louva ídolos.",
+        "c": "Há palavra e ação de Deus."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Zacarias 11:6"
+      ]
+    },
+    {
+      "id": "zacarias-cap-pro-zcc-11-trinta-moedas-01",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Zacarias 11:8, e exterminarei os seus pastores em um único mês pois a minha alma se angustiou.",
+      "prompt": "Em Zacarias 11:8, e exterminarei os seus pastores em um único mês pois a minha alma se angustiou.",
+      "cue": "Em Zacarias 11:8, e exterminarei os seus pastores em um único mês pois a minha alma se angustiou.",
+      "verseRef": "Zacarias 11:8",
+      "passageText": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou",
+      "feedbackCorrect": "O texto confirma.",
+      "feedbackWrong": {
+        "false": "O versículo confirma a afirmação."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler profundezas em Zacarias 11:8.",
+      "evidence": [
+        "Zacarias 11:8"
+      ]
+    },
+    {
+      "id": "zacarias-cap-pro-zcc-11-trinta-moedas-02",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Zacarias 11:8, toque o trecho que o texto destaca.",
+      "prompt": "Em Zacarias 11:8, toque o trecho que o texto destaca.",
+      "cue": "Em Zacarias 11:8, toque o trecho que o texto destaca.",
+      "verseRef": "Zacarias 11:8",
+      "passageText": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim.",
+      "options": [
+        {
+          "id": "a",
+          "text": "exterminarei"
+        },
+        {
+          "id": "b",
+          "text": "seus"
+        },
+        {
+          "id": "c",
+          "text": "pastores"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "pastores",
+      "feedbackCorrect": "O texto traz \"pastores\".",
+      "feedbackWrong": {
+        "a": "Olhe de novo o versículo.",
+        "b": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Zacarias 11:8.",
+      "evidence": [
+        "Zacarias 11:8"
+      ]
+    },
+    {
+      "id": "zacarias-cap-pro-zcc-11-trinta-moedas-03",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Segundo Zacarias 11:9, o que o texto afirma?",
+      "prompt": "Segundo Zacarias 11:9, o que o texto afirma?",
+      "cue": "Segundo Zacarias 11:9, o que o texto afirma?",
+      "verseRef": "Zacarias 11:9",
+      "passageText": "E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ausência completa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "c",
+          "text": "disse e apascentarei"
+        },
+        {
+          "id": "d",
+          "text": "Elogio sem reserva à idolatria"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "E eu disse: Não apascentarei mais vocês",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "a": "Há palavra do Senhor.",
+        "b": "O trecho fala com clareza.",
+        "d": "Isso não está no texto."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Zacarias 11:9.",
+      "evidence": [
+        "Zacarias 11:9"
+      ]
+    },
+    {
+      "id": "zacarias-cap-pro-zcc-11-trinta-moedas-04",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene a lógica que o texto sustenta. (Zacarias 11:9)",
+      "prompt": "Ordene a lógica que o texto sustenta. (Zacarias 11:9)",
+      "cue": "Ordene a lógica que o texto sustenta. (Zacarias 11:9)",
+      "verseRef": "Zacarias 11:9",
+      "passageText": "E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quebrei e vara"
+        },
+        {
+          "id": "b",
+          "text": "naquele e dia"
+        },
+        {
+          "id": "c",
+          "text": "disse e vos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "E eu disse: Não apascentarei mais vocês",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Zacarias 11:9"
+      ]
+    },
+    {
+      "id": "zacarias-cap-pro-zcc-11-trinta-moedas-05",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Zacarias 11:10, qual palavra completa o sentido do versículo?",
+      "prompt": "Em Zacarias 11:10, qual palavra completa o sentido do versículo?",
+      "cue": "Em Zacarias 11:10, qual palavra completa o sentido do versículo?",
+      "verseRef": "Zacarias 11:10",
+      "passageText": "Quebrei a minha vara chamada Graça para anular a aliança que estabeleci com todos os povos.",
+      "template": "___ a minha vara chamada Graça para anular a aliança que estabeleci com todos os povos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quebrei"
+        },
+        {
+          "id": "b",
+          "text": "exterminarei"
+        },
+        {
+          "id": "c",
+          "text": "pastores"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Quebrei",
+      "feedbackCorrect": "A palavra do texto é \"Quebrei\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Zacarias 11:10.",
+      "evidence": [
+        "Zacarias 11:10"
+      ]
+    },
+    {
+      "id": "zacarias-cap-pro-zcc-11-trinta-moedas-06",
+      "trail": "zacarias-cap",
+      "section": "zcc-11-trinta-moedas",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Zacarias 11:8 a Mateus 21:5?",
+      "prompt": "O que liga Zacarias 11:8 a Mateus 21:5?",
+      "cue": "O que liga Zacarias 11:8 a Mateus 21:5?",
+      "verseRef": "Zacarias 11:8",
+      "passageText": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim.",
+      "passageA": {
+        "ref": "Zacarias 11:8",
+        "text": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim."
+      },
+      "passageB": {
+        "ref": "Mateus 21:5",
+        "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvor à idolatria"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Rei no jumentinho"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "a": "O texto não louva ídolos.",
+        "b": "Há palavra e ação de Deus."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Zacarias 11:8"
+      ]
+    }
+  ]
+}

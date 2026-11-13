@@ -1,0 +1,92 @@
+{
+  "slug": "malaquias-cap",
+  "title": "Malaquias",
+  "description": "Malaquias capítulo a capítulo: o amor do Senhor e o chamado a voltar a ele.",
+  "icon": "📜",
+  "color": "#5A9E8E",
+  "order": 46,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Voltai a mim · cap. 1–4",
+      "icon": "zap",
+      "section": "Malaquias",
+      "missions": [
+        {
+          "slug": "mlc-01-ofertas-desprezadas",
+          "title": "Ofertas desprezadas",
+          "subtitle": "Malaquias 1:6–14",
+          "intro": "O Senhor pergunta onde está a honra devida ao Pai e ao Senhor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Malaquias 1:6–14",
+          "hookVerse": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\" Ofereceis sobre o meu altar pão imundo e perguntais: \"Em que te havemos profanado?\" Na afirmação de que a mesa do SENHOR é desprezível.",
+          "hookNote": "Desprezar a mesa do Senhor com ofertas ruins é desprezar o seu nome.",
+          "centralInsight": "Desprezar a mesa do Senhor com ofertas ruins é desprezar o seu nome.",
+          "objective": "Honrar o nome do Senhor"
+        },
+        {
+          "slug": "mlc-02-a-alianca-com-levi",
+          "title": "A aliança com Levi",
+          "subtitle": "Malaquias 2:4–12",
+          "intro": "Os sacerdotes quebraram a aliança; seus lábios deveriam guardar o conhecimento.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Malaquias 2:4–12",
+          "hookVerse": "Então, vocês saberão que eu lhes enviei este mandamento, para que minha aliança permaneça com Levi, diz o Senhor dos Exércitos. Meu pacto com ele foi de vida e de paz; eu as lhe concedi para que ele me temesse; ele me temeu e tremeu por causa do meu nome.",
+          "hookNote": "O sacerdote é mensageiro do Senhor: sem fidelidade, o povo tropeça.",
+          "centralInsight": "O sacerdote é mensageiro do Senhor: sem fidelidade, o povo tropeça.",
+          "objective": "Guardar e ensinar a aliança"
+        },
+        {
+          "slug": "mlc-03-voltai-a-mim",
+          "title": "Voltai a mim",
+          "subtitle": "Malaquias 3:6–12",
+          "intro": "O Senhor convida o povo a voltar e fala dos dízimos e da bênção das janelas do céu.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Malaquias 3:6–12",
+          "hookVerse": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos. Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+          "hookNote": "Voltar ao Senhor inclui fidelidade no que é dele; ele promete abrir as janelas do céu.",
+          "centralInsight": "Voltar ao Senhor inclui fidelidade no que é dele; ele promete abrir as janelas do céu.",
+          "objective": "Voltar e ser fiel"
+        },
+        {
+          "slug": "mlc-04-o-sol-da-justica",
+          "title": "O sol da justiça",
+          "subtitle": "Malaquias 4:1–6",
+          "intro": "O dia vem como fornalha para os soberbos e como sol da justiça para os que temem.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Malaquias 4:1–6",
+          "hookVerse": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo. Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+          "hookNote": "Para quem teme o nome do Senhor, nasce o sol da justiça com cura nas suas asas.",
+          "centralInsight": "Para quem teme o nome do Senhor, nasce o sol da justiça com cura nas suas asas.",
+          "objective": "Temer o nome do Senhor"
+        },
+        {
+          "slug": "mlc-boss-1",
+          "title": "Travessia: Voltai a mim",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise as ofertas, a aliança, o retorno e o sol da justiça.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Voltai a mim",
+          "hookVerse": "Revise as ofertas, a aliança, o retorno e o sol da justiça.",
+          "hookNote": "Revise as ofertas, a aliança, o retorno e o sol da justiça.",
+          "centralInsight": "O Senhor ama o seu povo e chama a voltar com fidelidade",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

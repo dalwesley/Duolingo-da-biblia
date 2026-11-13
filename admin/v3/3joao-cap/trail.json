@@ -1,0 +1,50 @@
+{
+  "slug": "3joao-cap",
+  "title": "3 João",
+  "description": "3 João capítulo a capítulo: hospitalidade, verdade e o bem na igreja.",
+  "icon": "💌",
+  "color": "#26A69A",
+  "order": 76,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Hospitalidade e verdade · cap. 1",
+      "icon": "zap",
+      "section": "3 João",
+      "missions": [
+        {
+          "slug": "j3c-01-cooperadores-da-verdade",
+          "title": "Cooperadores da verdade",
+          "subtitle": "3 João 1:5–11",
+          "intro": "João louva Gaio por acolher os irmãos e confronta quem ama ser o primeiro.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "3 João 1:5–11",
+          "hookVerse": "Amado, você age fielmente em tudo o que faz pelos irmãos, e o faz mesmo quando em relação aos estrangeiros. Testemunharam perante a igreja sobre o teu amor; se os receber de maneira digna de Deus, estarás fazendo uma boa ação.",
+          "hookNote": "Somos cooperadores da verdade quando acolhemos; não imiteis o mal, mas o bem.",
+          "centralInsight": "Somos cooperadores da verdade quando acolhemos; não imiteis o mal, mas o bem.",
+          "objective": "Cooperar com a verdade"
+        },
+        {
+          "slug": "j3c-boss-1",
+          "title": "Travessia: Hospitalidade e verdade",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a hospitalidade que coopera com a verdade e a recusa do mal.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Hospitalidade e verdade",
+          "hookVerse": "Revise a hospitalidade que coopera com a verdade e a recusa do mal.",
+          "hookNote": "Revise a hospitalidade que coopera com a verdade e a recusa do mal.",
+          "centralInsight": "Quem faz o bem é de Deus",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,697 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 34:14–21",
+    "passages": [
+      {
+        "ref": "2 Crônicas 34:14–21"
+      }
+    ],
+    "context": "Hilquias acha o Livro da Lei; Josias rasga as vestes ao ouvir as palavras. Ouvir e temer a Lei",
+    "keyword": "retirar",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Livro da Lei",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Crônicas 34:14 afirma: E, ao se retirar o dinheiro que havia sido trazido à.",
+        "evidenceRef": "2 Crônicas 34:14",
+        "evidenceSpan": "E, ao se retirar o dinheiro que havia sido trazido à"
+      },
+      {
+        "text": "O texto em 2 Crônicas 34:16 afirma: E Safã levou o livro ao rei e lhe deu relatório.",
+        "evidenceRef": "2 Crônicas 34:16",
+        "evidenceSpan": "E Safã levou o livro ao rei e lhe deu relatório"
+      },
+      {
+        "text": "O texto em 2 Crônicas 34:19 afirma: O rei, ao ouvir as palavras da lei, rasgou suas vestes..",
+        "evidenceRef": "2 Crônicas 34:19",
+        "evidenceSpan": "O rei, ao ouvir as palavras da lei, rasgou suas vestes."
+      },
+      {
+        "text": "O texto em 2 Crônicas 34:21 afirma: Vão, consultem o Senhor por mim e pelos que ainda.",
+        "evidenceRef": "2 Crônicas 34:21",
+        "evidenceSpan": "Vão, consultem o Senhor por mim e pelos que ainda"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "retirar",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "dinheiro",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "trazido",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "2 Crônicas 34:14"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "2 Crônicas 34:16"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "2 Crônicas 34:21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 2 Crônicas 34:19.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 34:19"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 2 Crônicas 34:21.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 34:21"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 2 Crônicas 34:14 a 2 Crônicas 34:21.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 34:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "Grande é a ira do Senhor porque nossos pais não guardaram a palavra deste livro.",
+    "anchorQuestion": "O que 2 Crônicas 34:14–21 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 34:14 aparece a palavra retirar",
+      "verseRef": "2 Crônicas 34:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "E, ao se retirar o dinheiro que havia sido",
+      "feedbackCorrect": "O versículo traz \"retirar\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia 2 Crônicas 34:14: a palavra está no versículo."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 34:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 34:14, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Crônicas 34:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "dinheiro"
+        },
+        {
+          "id": "b",
+          "text": "que"
+        },
+        {
+          "id": "c",
+          "text": "havia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dinheiro",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 34:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 34:16, o que o texto destaca?",
+      "verseRef": "2 Crônicas 34:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de E Safã no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Safã levou o livro ao rei e lhe deu",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "O texto nomeia pessoas e ações.",
+        "c": "Não há essa proibição aqui.",
+        "d": "Isso não é o que o versículo diz."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "2 Crônicas 34:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 34:14 na ordem do texto.",
+      "verseRef": "2 Crônicas 34:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "retirar"
+        },
+        {
+          "id": "b",
+          "text": "dinheiro"
+        },
+        {
+          "id": "c",
+          "text": "trazido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "retirar",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "2 Crônicas 34:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 34:16, que palavra importante o texto usa?",
+      "verseRef": "2 Crônicas 34:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "levou"
+        },
+        {
+          "id": "b",
+          "text": "Safã"
+        },
+        {
+          "id": "c",
+          "text": "livro"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E Safã levou o livro ao rei e lhe deu relatório",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 34:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 34:14 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 34:14",
+      "passageA": {
+        "ref": "2 Crônicas 34:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Hilquias acha o Livro da Lei; Josias rasga as vestes ao ouvir as palavras."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tema da passagem"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E, ao se retirar o dinheiro que havia",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "O texto afirma, não nega tudo.",
+        "c": "Há nomes e ações no trecho."
+      },
+      "hint": "Compare os dois textos com atenção.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "2 Crônicas 34:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 34:19 aparece a palavra ouvir",
+      "verseRef": "2 Crônicas 34:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "O rei, ao ouvir as palavras da lei, rasgou suas",
+      "feedbackCorrect": "O versículo traz \"ouvir\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia 2 Crônicas 34:19: a palavra está no versículo."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 34:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 34:21, toque a palavra que marca a relação no texto.",
+      "verseRef": "2 Crônicas 34:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vão"
+        },
+        {
+          "id": "b",
+          "text": "consultem"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vão",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 34:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 34:19 se relaciona com o restante do trecho?",
+      "verseRef": "2 Crônicas 34:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O rei, ao ouvir as palavras da lei, rasgou",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "O texto continua a mesma cena.",
+        "c": "Continuamos no mesmo livro.",
+        "d": "O trecho registra a ação divina ou humana."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "2 Crônicas 34:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "2 Crônicas 34:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Safã levou o livro ao rei e lhe deu",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 34:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 34:19, que palavra carrega a relação ou a ação?",
+      "verseRef": "2 Crônicas 34:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "palavras"
+        },
+        {
+          "id": "b",
+          "text": "ouvir"
+        },
+        {
+          "id": "c",
+          "text": "rasgou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O rei, ao ouvir as palavras da lei, rasgou suas vestes.",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 34:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 34:16 a Salmos 23:1?",
+      "verseRef": "2 Crônicas 34:16",
+      "passageA": {
+        "ref": "2 Crônicas 34:16"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Safã levou o livro ao rei e lhe deu",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "O vínculo é de fé, não de negação.",
+        "c": "Não é o fim da oração."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "2 Crônicas 34:16",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 34:21 o nome Vão está ausente do versículo",
+      "verseRef": "2 Crônicas 34:21",
+      "correctOptionId": "false",
+      "evidenceSpan": "Vão",
+      "feedbackCorrect": "O versículo contém \"Vão\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 34:21: \"Vão\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 34:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 34:21, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "2 Crônicas 34:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "consultem"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "por"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "consultem",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 34:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "2 Crônicas 34:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grande é a ira do Senhor porque nossos pais não guardaram a palavra deste livro."
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vão, consultem o Senhor por mim e pelos que",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "O trecho registra a ação de Deus.",
+        "c": "O texto não elogia a idolatria.",
+        "d": "Há falhas e juízos no relato bíblico."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "2 Crônicas 34:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "2 Crônicas 34:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vão, consultem o Senhor por mim e",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 34:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 34:14, que termo carrega o sentido da cena?",
+      "verseRef": "2 Crônicas 34:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "dinheiro"
+        },
+        {
+          "id": "b",
+          "text": "retirar"
+        },
+        {
+          "id": "c",
+          "text": "trazido"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E, ao se retirar o dinheiro que havia sido",
+      "feedbackCorrect": "O termo \"retirar\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Esse não é o termo central aqui.",
+        "c": "Esse não é o termo central aqui."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "2 Crônicas 34:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 34:21 a Salmos 46:1?",
+      "verseRef": "2 Crônicas 34:21",
+      "passageA": {
+        "ref": "2 Crônicas 34:21"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vão, consultem o Senhor por mim e",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "O vínculo aponta esperança, não recusa.",
+        "c": "Não é culto idólatra."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "2 Crônicas 34:21",
+        "Salmos 46:1"
+      ]
+    }
+  ]
+}

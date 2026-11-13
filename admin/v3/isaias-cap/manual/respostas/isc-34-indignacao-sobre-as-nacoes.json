@@ -1,0 +1,722 @@
+{
+  "study": {
+    "passageRef": "Isaías 34:1–6",
+    "passages": [
+      {
+        "ref": "Isaías 34:1–6"
+      },
+      {
+        "ref": "Isaías 34:7–8"
+      }
+    ],
+    "context": "O Senhor convoca as nações: sua indignação cai sobre os exércitos; a espada desce sobre Edom, e há dia de vingança pela causa de Sião.",
+    "keyword": "indignação",
+    "keywordGloss": "O furor do Senhor contra todas as nações e seus exércitos.",
+    "focusQuestion": "Você escuta o chamado às nações ou ignora o dia da vingança do Senhor?",
+    "reflectionPrompts": [
+      "Nações convocadas",
+      "Espada sobre Edom",
+      "Vingança por Sião"
+    ],
+    "facts": [
+      {
+        "text": "As nações e os povos são chamados a ouvir.",
+        "evidenceRef": "Isaías 34:1",
+        "evidenceSpan": "Cheguem-se, nações, para ouvir, e vós, povos, escutai"
+      },
+      {
+        "text": "A indignação do Senhor está contra todas as nações.",
+        "evidenceRef": "Isaías 34:2",
+        "evidenceSpan": "a indignação do Senhor está contra todas as nações"
+      },
+      {
+        "text": "Os céus se enrolarão como um pergaminho.",
+        "evidenceRef": "Isaías 34:4",
+        "evidenceSpan": "os céus se enrolarão como um pergaminho"
+      },
+      {
+        "text": "A espada descerá sobre Edom.",
+        "evidenceRef": "Isaías 34:5",
+        "evidenceSpan": "ela descerá sobre Edom"
+      },
+      {
+        "text": "O Senhor tem um sacrifício em Bozra.",
+        "evidenceRef": "Isaías 34:6",
+        "evidenceSpan": "o Senhor tem um sacrifício em Bozra"
+      },
+      {
+        "text": "Será o dia da vingança do Senhor pela causa de Sião.",
+        "evidenceRef": "Isaías 34:8",
+        "evidenceSpan": "será o dia da vingança do Senhor, o ano de retribuições pela causa de Sião"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "indignação",
+        "gloss": "O furor do Senhor contra as nações e seus exércitos."
+      },
+      {
+        "term": "Edom",
+        "gloss": "Alvo da espada e da matança anunciadas."
+      },
+      {
+        "term": "vingança",
+        "gloss": "O dia do Senhor pela causa de Sião."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Convocação das nações",
+        "evidenceRef": "Isaías 34:1"
+      },
+      {
+        "label": "Indignação e furor",
+        "evidenceRef": "Isaías 34:2–4"
+      },
+      {
+        "label": "Espada sobre Edom e Bozra",
+        "evidenceRef": "Isaías 34:5–6"
+      },
+      {
+        "label": "Dia de vingança por Sião",
+        "evidenceRef": "Isaías 34:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "As nações são chamadas porque a indignação está contra elas.",
+        "marker": "Porque",
+        "evidenceRef": "Isaías 34:2"
+      },
+      {
+        "kind": "causa",
+        "text": "A espada desce sobre Edom porque se embriagou nos céus.",
+        "marker": "Porque",
+        "evidenceRef": "Isaías 34:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "Há dia de vingança pela causa de Sião.",
+        "marker": "Porque",
+        "evidenceRef": "Isaías 34:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Obadias 1:15",
+        "bridge": "Dia do Senhor sobre Edom"
+      },
+      {
+        "ref": "Apocalipse 6:14",
+        "bridge": "Céu enrolado como pergaminho"
+      },
+      {
+        "ref": "Isaías 63:1",
+        "bridge": "Vindo de Edom e Bozra"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A indignação poupa todas as nações.",
+        "why": "O v.2 diz contra todas as nações."
+      },
+      {
+        "text": "Edom é poupado; a espada não desce.",
+        "why": "Os vv.5–6 anunciam espada e matança sobre Edom."
+      },
+      {
+        "text": "A vingança não tem relação com Sião.",
+        "why": "O v.8 fala de retribuições pela causa de Sião."
+      }
+    ],
+    "centralInsight": "Porque o Senhor tem um dia de vingança, um ano de retribuições pela contenda de Sião.",
+    "anchorQuestion": "Segundo Isaías 34:8, pela causa de quem é o dia da vingança?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 34:2, a indignação do Senhor está contra todas as nações.",
+      "verseRef": "Isaías 34:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "a indignação do Senhor está contra todas as nações",
+      "feedbackCorrect": "O furor alcança todas as nações e seus exércitos.",
+      "feedbackWrong": {
+        "false": "Leia: contra todas as nações."
+      },
+      "hint": "Veja o alcance da indignação.",
+      "learningObjective": "Observar o alcance do juízo.",
+      "evidence": [
+        "Isaías 34:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 34:5, toque o povo sobre o qual a espada descerá.",
+      "verseRef": "Isaías 34:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Edom"
+        },
+        {
+          "id": "b",
+          "text": "céus"
+        },
+        {
+          "id": "c",
+          "text": "espada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela descerá sobre Edom",
+      "feedbackCorrect": "A espada descerá sobre Edom.",
+      "feedbackWrong": {
+        "b": "Céus é onde a espada se embriagou.",
+        "c": "Espada é o instrumento, não o alvo."
+      },
+      "hint": "Veja sobre quem a espada desce.",
+      "learningObjective": "Identificar o alvo Edom.",
+      "evidence": [
+        "Isaías 34:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 34:4, como os céus se enrolarão?",
+      "verseRef": "Isaías 34:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como um pergaminho"
+        },
+        {
+          "id": "b",
+          "text": "Como um manto real"
+        },
+        {
+          "id": "c",
+          "text": "Como uma nuvem leve"
+        },
+        {
+          "id": "d",
+          "text": "Como um escudo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os céus se enrolarão como um pergaminho",
+      "feedbackCorrect": "A imagem é de pergaminho enrolado.",
+      "feedbackWrong": {
+        "b": "Não é manto.",
+        "c": "Não é nuvem.",
+        "d": "Não é escudo."
+      },
+      "hint": "Leia a comparação dos céus.",
+      "learningObjective": "Notar a imagem cósmica.",
+      "evidence": [
+        "Isaías 34:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 34:1 na ordem do texto.",
+      "verseRef": "Isaías 34:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cheguem-se, nações, para ouvir"
+        },
+        {
+          "id": "b",
+          "text": "e vós, povos, escutai"
+        },
+        {
+          "id": "c",
+          "text": "ouça a terra e sua plenitude"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cheguem-se, nações, para ouvir, e vós, povos, escutai; ouça a terra e sua plenitude",
+      "feedbackCorrect": "Nações, povos e terra são convocados nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece por Cheguem-se, nações."
+      },
+      "hint": "O versículo abre com Cheguem-se.",
+      "learningObjective": "Seguir a ordem da convocação.",
+      "evidence": [
+        "Isaías 34:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 34:8, será o dia da ___ do Senhor.",
+      "verseRef": "Isaías 34:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "vingança"
+        },
+        {
+          "id": "b",
+          "text": "aliança"
+        },
+        {
+          "id": "c",
+          "text": "colheita"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será o dia da vingança do Senhor",
+      "feedbackCorrect": "Vingança nomeia o dia do Senhor.",
+      "feedbackWrong": {
+        "b": "Aliança não é o termo aqui.",
+        "c": "Colheita não aparece."
+      },
+      "hint": "Veja o dia da… do Senhor.",
+      "learningObjective": "Lembrar o nome do dia.",
+      "evidence": [
+        "Isaías 34:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 34:8 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 34:8",
+      "passageA": {
+        "ref": "Isaías 34:8",
+        "text": "será o dia da vingança do Senhor, o ano de retribuições pela causa de Sião"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A indignação sobre as nações serve à causa de Sião."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vingança pela causa de Sião"
+        },
+        {
+          "id": "b",
+          "text": "Paz eterna para Edom"
+        },
+        {
+          "id": "c",
+          "text": "Indignação sem motivo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o ano de retribuições pela causa de Sião",
+      "feedbackCorrect": "O dia e o ano servem à causa de Sião.",
+      "feedbackWrong": {
+        "b": "Edom recebe a espada.",
+        "c": "Há causa explícita: Sião."
+      },
+      "hint": "Veja pela causa de.",
+      "learningObjective": "Ligar a vingança ao contexto.",
+      "evidence": [
+        "Isaías 34:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 34:2, as nações são convocadas sem qualquer razão no texto.",
+      "verseRef": "Isaías 34:1–2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porque a indignação do Senhor está contra todas as nações",
+      "feedbackCorrect": "O Porque liga a convocação à indignação.",
+      "feedbackWrong": {
+        "true": "O v.2 começa com Porque."
+      },
+      "hint": "Veja a primeira palavra do versículo 2.",
+      "learningObjective": "Compreender a causa da convocação.",
+      "evidence": [
+        "Isaías 34:1–2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 34:2, toque a palavra que introduz a razão da convocação.",
+      "verseRef": "Isaías 34:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "matança"
+        },
+        {
+          "id": "c",
+          "text": "exército"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque a indignação do Senhor está contra todas as nações",
+      "feedbackCorrect": "Porque marca a causa da convocação.",
+      "feedbackWrong": {
+        "b": "Matança é o destino.",
+        "c": "Exército é o alvo."
+      },
+      "hint": "É a primeira palavra.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Isaías 34:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 34:5–8 relaciona Edom e Sião?",
+      "verseRef": "Isaías 34:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A espada cai sobre Edom no dia de vingança pela causa de Sião"
+        },
+        {
+          "id": "b",
+          "text": "Sião e Edom recebem a mesma bênção"
+        },
+        {
+          "id": "c",
+          "text": "Edom é poupado por amor a Sião"
+        },
+        {
+          "id": "d",
+          "text": "Não há ligação entre Edom e Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela descerá sobre Edom",
+      "feedbackCorrect": "Edom é alvo; Sião é a causa da retribuição.",
+      "feedbackWrong": {
+        "b": "Edom recebe matança.",
+        "c": "A espada desce sobre Edom.",
+        "d": "O v.8 liga à causa de Sião."
+      },
+      "hint": "Una o alvo Edom à causa de Sião.",
+      "learningObjective": "Relacionar juízo e causa.",
+      "evidence": [
+        "Isaías 34:5",
+        "Isaías 34:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 34:1–8?",
+      "verseRef": "Isaías 34:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convocação das nações"
+        },
+        {
+          "id": "b",
+          "text": "Espada sobre Edom e Bozra"
+        },
+        {
+          "id": "c",
+          "text": "Dia de vingança por Sião"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cheguem-se, nações, para ouvir",
+      "feedbackCorrect": "Da convocação à espada e à vingança por Sião.",
+      "feedbackWrong": {
+        "default": "Comece pela convocação; a vingança fecha."
+      },
+      "hint": "A vingança vem por último.",
+      "learningObjective": "Ver a progressão do juízo.",
+      "evidence": [
+        "Isaías 34:1",
+        "Isaías 34:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 34:6, o Senhor tem um sacrifício em ___.",
+      "verseRef": "Isaías 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bozra"
+        },
+        {
+          "id": "b",
+          "text": "Sião"
+        },
+        {
+          "id": "c",
+          "text": "Laquis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor tem um sacrifício em Bozra",
+      "feedbackCorrect": "Bozra é o lugar do sacrifício anunciado.",
+      "feedbackWrong": {
+        "b": "Sião é a causa, não o local aqui.",
+        "c": "Laquis não aparece neste capítulo."
+      },
+      "hint": "Veja o lugar do sacrifício.",
+      "learningObjective": "Lembrar o lugar Bozra.",
+      "evidence": [
+        "Isaías 34:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 34:4 a Apocalipse 6:14?",
+      "verseRef": "Isaías 34:4",
+      "passageA": {
+        "ref": "Isaías 34:4",
+        "text": "os céus se enrolarão como um pergaminho"
+      },
+      "passageB": {
+        "ref": "Apocalipse 6:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Céu enrolado como pergaminho"
+        },
+        {
+          "id": "b",
+          "text": "Paz sem juízo"
+        },
+        {
+          "id": "c",
+          "text": "Só chuva suave"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os céus se enrolarão como um pergaminho",
+      "feedbackCorrect": "A mesma imagem cósmica ecoa no Apocalipse.",
+      "feedbackWrong": {
+        "b": "Os dois textos falam de juízo.",
+        "c": "A imagem é de céus enrolados."
+      },
+      "hint": "Compare a imagem do céu.",
+      "learningObjective": "Ligar a imagem ao Apocalipse.",
+      "evidence": [
+        "Isaías 34:4",
+        "Apocalipse 6:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 34:5–8 sustenta que a espada sobre Edom e o dia de vingança pela causa de Sião pertencem ao mesmo juízo.",
+      "verseRef": "Isaías 34:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "ela descerá sobre Edom",
+      "feedbackCorrect": "O alvo Edom e a causa Sião formam um só dia de vingança.",
+      "feedbackWrong": {
+        "false": "O v.8 interpreta o juízo como causa de Sião."
+      },
+      "hint": "Una Edom e a causa de Sião.",
+      "learningObjective": "Interpretar Edom e Sião juntos.",
+      "evidence": [
+        "Isaías 34:5",
+        "Isaías 34:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 34:8, toque por causa de quem vem a indignação.",
+      "verseRef": "Isaías 34:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sião"
+        },
+        {
+          "id": "b",
+          "text": "vingança"
+        },
+        {
+          "id": "c",
+          "text": "retribuições"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela causa de Sião",
+      "feedbackCorrect": "A causa explícita é Sião.",
+      "feedbackWrong": {
+        "b": "Vingança nomeia o dia.",
+        "c": "Retribuições são o ano."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Sustentar a causa de Sião.",
+      "evidence": [
+        "Isaías 34:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 34:1–8 sustenta?",
+      "verseRef": "Isaías 34:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor julga as nações e Edom pela causa de Sião"
+        },
+        {
+          "id": "b",
+          "text": "As nações são só espectadoras sem juízo"
+        },
+        {
+          "id": "c",
+          "text": "Edom escapa da espada do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Não há dia de vingança anunciado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a indignação do Senhor está contra todas as nações",
+      "feedbackCorrect": "Convocação, espada e vingança por Sião formam o arco.",
+      "feedbackWrong": {
+        "b": "Há indignação e matança.",
+        "c": "A espada desce sobre Edom.",
+        "d": "O v.8 anuncia o dia."
+      },
+      "hint": "Una indignação, Edom e Sião.",
+      "learningObjective": "Escolher a leitura do juízo.",
+      "evidence": [
+        "Isaías 34:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o juízo de Edom na Escritura?",
+      "verseRef": "Isaías 34:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A espada desce sobre Edom"
+        },
+        {
+          "id": "b",
+          "text": "O dia do Senhor sobre Edom"
+        },
+        {
+          "id": "c",
+          "text": "O vencedor vem de Edom e Bozra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ela descerá sobre Edom",
+      "evidence": [
+        "Isaías 34:5",
+        "Obadias 1:15",
+        "Isaías 63:1"
+      ],
+      "feedbackCorrect": "De Isaías 34 a Obadias e ao eco de Isaías 63.",
+      "feedbackWrong": {
+        "default": "Comece pela espada; depois Obadias; enfim Isaías 63."
+      },
+      "hint": "Siga Edom → dia → Bozra.",
+      "learningObjective": "Encadear o juízo de Edom."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 34:2, a ___ do Senhor está contra todas as nações.",
+      "verseRef": "Isaías 34:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "indignação"
+        },
+        {
+          "id": "b",
+          "text": "misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a indignação do Senhor está contra todas as nações",
+      "feedbackCorrect": "Indignação é o termo do juízo.",
+      "feedbackWrong": {
+        "b": "Misericórdia não é o termo aqui.",
+        "c": "Aliança não aparece."
+      },
+      "hint": "Veja o sujeito da frase contra as nações.",
+      "learningObjective": "Lembrar o termo do furor.",
+      "evidence": [
+        "Isaías 34:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 34:5 a Obadias 1:15?",
+      "verseRef": "Isaías 34:5",
+      "passageA": {
+        "ref": "Isaías 34:5",
+        "text": "ela descerá sobre Edom"
+      },
+      "passageB": {
+        "ref": "Obadias 1:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dia do Senhor sobre Edom"
+        },
+        {
+          "id": "b",
+          "text": "Paz eterna em Edom"
+        },
+        {
+          "id": "c",
+          "text": "Edom como salvador"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela descerá sobre Edom",
+      "feedbackCorrect": "Os dois anunciam o dia do Senhor contra Edom.",
+      "feedbackWrong": {
+        "b": "Há juízo, não paz eterna.",
+        "c": "Edom é alvo, não salvador."
+      },
+      "hint": "Compare Edom e o dia.",
+      "learningObjective": "Ligar Isaías a Obadias.",
+      "evidence": [
+        "Isaías 34:5",
+        "Obadias 1:15"
+      ]
+    }
+  ]
+}

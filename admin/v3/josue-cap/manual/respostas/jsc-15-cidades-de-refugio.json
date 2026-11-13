@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 20:1–6",
+    "passages": [
+      {
+        "ref": "Josué 20:1–9"
+      }
+    ],
+    "context": "O Senhor manda separar cidades de refúgio para o homicida sem intenção, até o juízo da congregação.",
+    "keyword": "refúgio",
+    "keywordGloss": "Cidade que guarda a vida do homicida involuntário até o juízo.",
+    "focusQuestion": "Onde você precisa de um lugar que guarde a vida até que a justiça seja ouvida?",
+    "reflectionPrompts": [
+      "Cidades de refúgio",
+      "Vingador do sangue",
+      "Até o juízo"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor mandou separar cidades de refúgio.",
+        "evidenceRef": "Josué 20:2",
+        "evidenceSpan": "Separem para vocês as cidades de refúgio"
+      },
+      {
+        "text": "O homicida sem intenção pode fugir para ali.",
+        "evidenceRef": "Josué 20:3",
+        "evidenceSpan": "o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali"
+      },
+      {
+        "text": "Ele expõe suas razões aos anciãos à porta da cidade.",
+        "evidenceRef": "Josué 20:4",
+        "evidenceSpan": "pôr-se-á à porta da cidade e exporá suas razões aos ouvidos dos anciãos"
+      },
+      {
+        "text": "Não entregarão o homicida ao vingador do sangue.",
+        "evidenceRef": "Josué 20:5",
+        "evidenceSpan": "não entregarão nas mãos dele o homicida"
+      },
+      {
+        "text": "Habitará até ser julgado ou até a morte do sumo sacerdote.",
+        "evidenceRef": "Josué 20:6",
+        "evidenceSpan": "até que seja julgado pela congregação ou até a morte do sumo sacerdote"
+      },
+      {
+        "text": "As cidades servem a Israel e ao estrangeiro.",
+        "evidenceRef": "Josué 20:9",
+        "evidenceSpan": "para todos os filhos de Israel e para o estrangeiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "refúgio",
+        "gloss": "Abrigo legal para quem matou sem intenção."
+      },
+      {
+        "term": "vingador",
+        "gloss": "Parente que busca sangue; a cidade protege do alcance dele."
+      },
+      {
+        "term": "Para que",
+        "gloss": "Marca o propósito das cidades de refúgio."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de separar cidades",
+        "evidenceRef": "Josué 20:1–2"
+      },
+      {
+        "label": "Propósito: fugir o homicida sem intenção",
+        "evidenceRef": "Josué 20:3"
+      },
+      {
+        "label": "Procedimento à porta e proteção",
+        "evidenceRef": "Josué 20:4–6"
+      },
+      {
+        "label": "Lista das cidades e alcance",
+        "evidenceRef": "Josué 20:7–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Separem cidades para que o homicida sem intenção fuja.",
+        "marker": "Para que",
+        "evidenceRef": "Josué 20:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Não entregam porque feriu sem intenção.",
+        "marker": "pois",
+        "evidenceRef": "Josué 20:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Habita até o juízo ou a morte do sumo sacerdote.",
+        "marker": null,
+        "evidenceRef": "Josué 20:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 35:11–12",
+        "bridge": "Cidades de refúgio ordenadas"
+      },
+      {
+        "ref": "Deuteronômio 19:4–5",
+        "bridge": "Homicídio sem intenção"
+      },
+      {
+        "ref": "Hebreus 6:18",
+        "bridge": "Refúgio e esperança"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O refúgio serve a qualquer assassino de propósito.",
+        "why": "É para quem matou por engano, sem intenção."
+      },
+      {
+        "text": "A cidade entrega o fugitivo ao vingador na porta.",
+        "why": "Não entregarão nas mãos dele."
+      },
+      {
+        "text": "Só israelitas podem usar as cidades.",
+        "why": "Também o estrangeiro que habitava entre eles."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 20:3, quem pode fugir para as cidades de refúgio?",
+    "centralInsight": "O refúgio guarda a vida até o juízo: justiça e misericórdia na terra dada."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 20:2, Israel deve separar cidades de refúgio.",
+      "verseRef": "Josué 20:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Separem para vocês as cidades de refúgio",
+      "feedbackCorrect": "A ordem é separar cidades de refúgio.",
+      "feedbackWrong": {
+        "false": "O texto manda separar cidades de refúgio."
+      },
+      "hint": "Veja a ordem.",
+      "learningObjective": "Observar a ordem das cidades.",
+      "evidence": [
+        "Josué 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 20:3, toque o que o homicida sem intenção pode fazer.",
+      "verseRef": "Josué 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "fugir"
+        },
+        {
+          "id": "b",
+          "text": "engano"
+        },
+        {
+          "id": "c",
+          "text": "pessoa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Pode fugir para ali.",
+      "feedbackWrong": {
+        "b": "Engano descreve o modo.",
+        "c": "Pessoa é a vítima."
+      },
+      "hint": "Veja o verbo do propósito.",
+      "learningObjective": "Identificar a fuga.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 20:5, o que a cidade não fará?",
+      "verseRef": "Josué 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entregar o homicida ao vingador"
+        },
+        {
+          "id": "b",
+          "text": "Ouvir o fugitivo"
+        },
+        {
+          "id": "c",
+          "text": "Abrir a porta"
+        },
+        {
+          "id": "d",
+          "text": "Julgar nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não entregarão nas mãos dele o homicida",
+      "feedbackCorrect": "Não entregam ao vingador.",
+      "feedbackWrong": {
+        "b": "Há exposição aos anciãos.",
+        "c": "A porta recebe.",
+        "d": "Há juízo da congregação."
+      },
+      "hint": "Leia a proibição.",
+      "learningObjective": "Reconhecer a proteção.",
+      "evidence": [
+        "Josué 20:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 20:3 na ordem do texto.",
+      "verseRef": "Josué 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que o homicida que, por engano"
+        },
+        {
+          "id": "b",
+          "text": "matar alguma pessoa sem intenção"
+        },
+        {
+          "id": "c",
+          "text": "possa fugir para ali"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Propósito e refúgio.",
+      "feedbackWrong": {
+        "default": "Comece pelo Para que."
+      },
+      "hint": "O que abre o versículo?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 20:2, complete: Separem para vocês as cidades de ___.",
+      "verseRef": "Josué 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "refúgio"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cidades de refúgio",
+      "feedbackCorrect": "Cidades de refúgio.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "A palavra é refúgio."
+      },
+      "hint": "Veja o complemento de cidades.",
+      "learningObjective": "Lembrar refúgio.",
+      "evidence": [
+        "Josué 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 20:3 comunica que se liga a este contexto?",
+      "verseRef": "Josué 20:3",
+      "passageA": {
+        "ref": "Josué 20:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor manda preparar lugares na terra dada."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fuga para preservar a vida"
+        },
+        {
+          "id": "b",
+          "text": "Vingança imediata na porta"
+        },
+        {
+          "id": "c",
+          "text": "Exílio forçado ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "O refúgio guarda a vida.",
+      "feedbackWrong": {
+        "b": "Não é vingança imediata.",
+        "c": "Não é exílio ao Egito."
+      },
+      "hint": "Veja o propósito.",
+      "learningObjective": "Ligar a ordem ao refúgio.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 20:3, as cidades existem para punir de imediato todo homicida.",
+      "verseRef": "Josué 20:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir",
+      "feedbackCorrect": "O propósito é fuga e refúgio, não punição imediata.",
+      "feedbackWrong": {
+        "true": "O Para que aponta para a fuga."
+      },
+      "hint": "Leia o Para que.",
+      "learningObjective": "Ver o propósito do refúgio.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 20:3, toque a expressão que marca o propósito das cidades.",
+      "verseRef": "Josué 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "engano"
+        },
+        {
+          "id": "c",
+          "text": "refúgio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que o homicida",
+      "feedbackCorrect": "Para que introduz o propósito.",
+      "feedbackWrong": {
+        "b": "Engano descreve o ato.",
+        "c": "Refúgio é o resultado."
+      },
+      "hint": "Olhe o início do versículo.",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre proteção e juízo?",
+      "verseRef": "Josué 20:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Protege agora; julga depois a congregação"
+        },
+        {
+          "id": "b",
+          "text": "Entrega já ao vingador"
+        },
+        {
+          "id": "c",
+          "text": "Liberta sem qualquer juízo"
+        },
+        {
+          "id": "d",
+          "text": "Expulsa o estrangeiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "Proteção temporária até o juízo.",
+      "feedbackWrong": {
+        "b": "Não entregam ao vingador.",
+        "c": "Há juízo.",
+        "d": "O estrangeiro também entra."
+      },
+      "hint": "Leia até que.",
+      "learningObjective": "Compreender proteção e juízo.",
+      "evidence": [
+        "Josué 20:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 20:1–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem de separar cidades"
+        },
+        {
+          "id": "b",
+          "text": "Propósito: fugir o homicida sem intenção"
+        },
+        {
+          "id": "c",
+          "text": "Lista das cidades e alcance"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Separem para vocês as cidades de refúgio",
+      "feedbackCorrect": "Ordem, propósito e lista.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem."
+      },
+      "hint": "O que o Senhor manda primeiro?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 20:1",
+        "Josué 20:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 20:5, complete: não entregarão nas mãos dele o ___.",
+      "verseRef": "Josué 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "homicida"
+        },
+        {
+          "id": "b",
+          "text": "vingador"
+        },
+        {
+          "id": "c",
+          "text": "ancião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não entregarão nas mãos dele o homicida",
+      "feedbackCorrect": "O homicida.",
+      "feedbackWrong": {
+        "b": "Vingador é quem alcança.",
+        "c": "A palavra é homicida."
+      },
+      "hint": "Veja o objeto de entregarão.",
+      "learningObjective": "Lembrar quem é protegido.",
+      "evidence": [
+        "Josué 20:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 20:3 a Números 35:11–12?",
+      "verseRef": "Josué 20:3",
+      "passageA": {
+        "ref": "Josué 20:3"
+      },
+      "passageB": {
+        "ref": "Números 35:11–12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio ordenadas"
+        },
+        {
+          "id": "b",
+          "text": "Vingança sem limite"
+        },
+        {
+          "id": "c",
+          "text": "Altar em vez de cidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Nos dois textos há fuga para refúgio.",
+      "feedbackWrong": {
+        "b": "O elo é o refúgio.",
+        "c": "Há proteção."
+      },
+      "hint": "Compare a ordem do refúgio.",
+      "learningObjective": "Ligar a Josué a Números.",
+      "evidence": [
+        "Josué 20:3",
+        "Números 35:11–12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 20:3–6, o refúgio até o juízo sustenta justiça e misericórdia na terra dada.",
+      "verseRef": "Josué 20:3–6",
+      "correctOptionId": "true",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "Proteção e juízo juntos.",
+      "feedbackWrong": {
+        "false": "O texto une fuga e juízo."
+      },
+      "hint": "Una 20:3 e 20:6.",
+      "learningObjective": "Avaliar a leitura do refúgio.",
+      "evidence": [
+        "Josué 20:3–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 20:6, toque o trecho que sustenta o limite da permanência.",
+      "verseRef": "Josué 20:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "julgado"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "habitará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "O juízo limita a estadia.",
+      "feedbackWrong": {
+        "b": "Cidade é o lugar.",
+        "c": "Habitará é a ação."
+      },
+      "hint": "Veja o até que.",
+      "learningObjective": "Tocar o que sustenta o limite.",
+      "evidence": [
+        "Josué 20:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 20:1–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O refúgio guarda a vida até o juízo"
+        },
+        {
+          "id": "b",
+          "text": "O refúgio cancela qualquer juízo"
+        },
+        {
+          "id": "c",
+          "text": "Só o vingador decide na porta"
+        },
+        {
+          "id": "d",
+          "text": "Estrangeiros ficam de fora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "Misericórdia com juízo.",
+      "feedbackWrong": {
+        "b": "Há juízo.",
+        "c": "A cidade não entrega ao vingador.",
+        "d": "O estrangeiro entra."
+      },
+      "hint": "Una fuga e juízo.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 20:1–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do refúgio.",
+      "verseRef": "Josué 20:3–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Homicida sem intenção foge"
+        },
+        {
+          "id": "b",
+          "text": "Anciãos ouvem e protegem"
+        },
+        {
+          "id": "c",
+          "text": "Permanece até o juízo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Fuga, acolhida e juízo.",
+      "feedbackWrong": {
+        "default": "Comece pela fuga."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Encadear misericórdia e juízo",
+      "evidence": [
+        "Josué 20:3",
+        "Josué 20:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 20:5, complete: se o ___ do sangue o alcançar.",
+      "verseRef": "Josué 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "vingador"
+        },
+        {
+          "id": "b",
+          "text": "sacerdote"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se o vingador do sangue o alcançar",
+      "feedbackCorrect": "Vingador.",
+      "feedbackWrong": {
+        "b": "Não é sacerdote.",
+        "c": "A palavra é vingador."
+      },
+      "hint": "Veja quem alcança.",
+      "learningObjective": "Lembrar o termo vingador.",
+      "evidence": [
+        "Josué 20:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 20:9 a Hebreus 6:18?",
+      "verseRef": "Josué 20:9",
+      "passageA": {
+        "ref": "Josué 20:9"
+      },
+      "passageB": {
+        "ref": "Hebreus 6:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e esperança"
+        },
+        {
+          "id": "b",
+          "text": "Vingança sem abrigo"
+        },
+        {
+          "id": "c",
+          "text": "Juízo sem misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para todos os filhos de Israel e para o estrangeiro",
+      "feedbackCorrect": "O tema do refúgio ecoa na esperança.",
+      "feedbackWrong": {
+        "b": "O elo é refúgio.",
+        "c": "Há abrigo."
+      },
+      "hint": "Pense em buscar refúgio.",
+      "learningObjective": "Ligar as cidades a Hebreus.",
+      "evidence": [
+        "Josué 20:9",
+        "Hebreus 6:18"
+      ]
+    }
+  ]
+}

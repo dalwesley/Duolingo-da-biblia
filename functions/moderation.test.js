@@ -115,6 +115,26 @@ test('aviso sem push fica no histórico', async () => {
   assert.equal(db.log[0].details.message, 'Troque seu nome, por favor.');
 });
 
+test('emails devolve o e-mail do Auth e ignora uid repetido ou vazio', async () => {
+  const db = fakeDb(seed);
+  const auth = fakeAuth();
+  auth.getUsers = async (ids) => ({
+    users: ids.map(({ uid }) => ({ uid, email: uid === 'u2' ? '' : `${uid}@x.com` })),
+    notFound: [],
+  });
+  const r = await M.moderate(deps(db, auth), admin, { action: 'emails', uids: ['u1', 'u2', 'u1', ''] });
+  assert.deepEqual(r.emails, { u1: 'u1@x.com' });
+  assert.equal(db.log.length, 0);
+});
+
+test('editor não lista e-mails', async () => {
+  const db = fakeDb(seed);
+  await assert.rejects(
+    M.moderate(deps(db, fakeAuth()), { uid: 'ed' }, { action: 'emails', uids: ['u1'] }),
+    { code: 'permission-denied' },
+  );
+});
+
 test('info não exige motivo e devolve o Auth', async () => {
   const db = fakeDb(seed);
   const r = await M.moderate(deps(db, fakeAuth()), admin, { uid: 'u1', action: 'info' });

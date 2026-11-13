@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Daniel 8:15–20",
+    "passages": [
+      {
+        "ref": "Daniel 8:15–20"
+      },
+      {
+        "ref": "Daniel 8:21–26"
+      }
+    ],
+    "context": "Daniel vê a visão do carneiro e do bode e busca entendê-la. Gabriel é enviado para explicar o sentido e o tempo do fim.",
+    "keyword": "visão",
+    "keywordGloss": "O que Daniel viu e que Gabriel interpreta como verdadeira e para dias distantes.",
+    "focusQuestion": "Quando Deus explica o que você não entende, você confia mesmo que seja para dias distantes?",
+    "reflectionPrompts": [
+      "Gabriel explica",
+      "Tempo do fim",
+      "Visão verdadeira"
+    ],
+    "facts": [
+      {
+        "text": "Daniel buscou entender a visão e viu um ser com aparência de homem.",
+        "evidenceRef": "Daniel 8:15",
+        "evidenceSpan": "busquei entendê-la"
+      },
+      {
+        "text": "Uma voz mandou Gabriel dar a entender a visão.",
+        "evidenceRef": "Daniel 8:16",
+        "evidenceSpan": "Gabriel, dá a entender esta visão"
+      },
+      {
+        "text": "A visão se refere ao tempo do fim.",
+        "evidenceRef": "Daniel 8:17",
+        "evidenceSpan": "essa visão se refere ao tempo do fim"
+      },
+      {
+        "text": "O carneiro com dois chifres representa os reis da Média e da Pérsia.",
+        "evidenceRef": "Daniel 8:20",
+        "evidenceSpan": "representa os reis da Média e da Pérsia"
+      },
+      {
+        "text": "O bode peludo é o rei da Grécia.",
+        "evidenceRef": "Daniel 8:21",
+        "evidenceSpan": "o bode peludo é o rei da Grécia"
+      },
+      {
+        "text": "A visão da tarde e da manhã é verdadeira e para dias distantes.",
+        "evidenceRef": "Daniel 8:26",
+        "evidenceSpan": "é verdadeira; mas tu, encerra a visão, pois se refere a dias ainda muito distantes"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "visão",
+        "gloss": "O que Daniel viu e que deve ser entendido e encerrado."
+      },
+      {
+        "term": "Gabriel",
+        "gloss": "O enviado que dá a entender a visão."
+      },
+      {
+        "term": "verdadeira",
+        "gloss": "Qualidade da visão anunciada, mesmo para dias distantes."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Daniel busca entender",
+        "evidenceRef": "Daniel 8:15–16"
+      },
+      {
+        "label": "Gabriel explica o tempo do fim",
+        "evidenceRef": "Daniel 8:17–19"
+      },
+      {
+        "label": "Carneiro e bode interpretados",
+        "evidenceRef": "Daniel 8:20–22"
+      },
+      {
+        "label": "Rei feroz e visão verdadeira",
+        "evidenceRef": "Daniel 8:23–26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Daniel cai amedrontado; mas Gabriel o faz entender.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 8:17"
+      },
+      {
+        "kind": "causa",
+        "text": "Gabriel explica porque a visão se refere ao tempo determinado do fim.",
+        "marker": "porque",
+        "evidenceRef": "Daniel 8:19"
+      },
+      {
+        "kind": "contraste",
+        "text": "A visão é verdadeira; mas deve ser encerrada para dias distantes.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 8:26"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 1:19",
+        "bridge": "Gabriel anunciando de Deus"
+      },
+      {
+        "ref": "Apocalipse 1:1",
+        "bridge": "Deus revela o futuro"
+      },
+      {
+        "ref": "2 Pedro 1:19",
+        "bridge": "Palavra profética firme"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A visão não tem interpretação; Daniel deve inventar o sentido.",
+        "why": "8:16: Gabriel é mandado a dar a entender."
+      },
+      {
+        "text": "A visão é falsa ou só simbólica sem verdade.",
+        "why": "8:26: a visão é verdadeira."
+      },
+      {
+        "text": "Tudo se cumpriria imediatamente nos dias de Daniel.",
+        "why": "8:26: refere-se a dias ainda muito distantes."
+      }
+    ],
+    "centralInsight": "Deus explica o que há de vir; a visão é verdadeira e para dias distantes.",
+    "anchorQuestion": "Segundo Daniel 8:26, a visão anunciada é verdadeira?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 8:26, a visão da tarde e da manhã é verdadeira.",
+      "verseRef": "Daniel 8:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "é verdadeira",
+      "feedbackCorrect": "O texto afirma: a visão anunciada é verdadeira.",
+      "feedbackWrong": {
+        "false": "Releia 8:26: é verdadeira."
+      },
+      "hint": "Veja a qualidade da visão.",
+      "learningObjective": "Observar a veracidade da visão.",
+      "evidence": [
+        "Daniel 8:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 8:16, toque quem deve dar a entender a visão.",
+      "verseRef": "Daniel 8:16",
+      "evidenceSpan": "Gabriel, dá a entender esta visão",
+      "feedbackCorrect": "Gabriel deve dar a entender a visão.",
+      "hint": "Procure o nome chamado pela voz.",
+      "learningObjective": "Identificar o intérprete.",
+      "evidence": [
+        "Daniel 8:16"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gabriel"
+        },
+        {
+          "id": "b",
+          "text": "Ulai"
+        },
+        {
+          "id": "c",
+          "text": "visão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Ulai\" é o lugar da voz.",
+        "c": "\"Visão\" é o objeto, não quem interpreta."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 8:20, o que o carneiro representa?",
+      "verseRef": "Daniel 8:20",
+      "evidenceSpan": "representa os reis da Média e da Pérsia",
+      "feedbackCorrect": "O carneiro representa os reis da Média e da Pérsia.",
+      "hint": "Veja a interpretação do carneiro.",
+      "learningObjective": "Observar o sentido do carneiro.",
+      "evidence": [
+        "Daniel 8:20"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Os reis da Média e da Pérsia"
+        },
+        {
+          "id": "b",
+          "text": "O rei da Grécia"
+        },
+        {
+          "id": "c",
+          "text": "O povo santo"
+        },
+        {
+          "id": "d",
+          "text": "O Príncipe dos príncipes"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A Grécia é o bode (8:21).",
+        "c": "O povo santo aparece depois.",
+        "d": "O Príncipe aparece em 8:25."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 8:17 na ordem do texto.",
+      "verseRef": "Daniel 8:17",
+      "evidenceSpan": "pois essa visão se refere ao tempo do fim",
+      "feedbackCorrect": "Aproximação, medo, e a visão quanto ao tempo do fim.",
+      "hint": "Comece pela aproximação.",
+      "learningObjective": "Reconhecer a sequência de 8:17.",
+      "evidence": [
+        "Daniel 8:17"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele se aproximou de onde eu estava"
+        },
+        {
+          "id": "b",
+          "text": "fiquei amedrontado e prostrei-me com o rosto em terra"
+        },
+        {
+          "id": "c",
+          "text": "essa visão se refere ao tempo do fim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela aproximação; o tempo do fim fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 8:21, que animal é o rei da Grécia?",
+      "verseRef": "Daniel 8:21",
+      "evidenceSpan": "o bode peludo é o rei da Grécia",
+      "feedbackCorrect": "O bode peludo é o rei da Grécia.",
+      "hint": "É o animal interpretado no versículo.",
+      "learningObjective": "Lembrar o símbolo da Grécia.",
+      "evidence": [
+        "Daniel 8:21"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "bode"
+        },
+        {
+          "id": "b",
+          "text": "carneiro"
+        },
+        {
+          "id": "c",
+          "text": "leão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O carneiro é Média e Pérsia.",
+        "c": "\"Leão\" não aparece em 8:21."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 8:16 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 8:16",
+      "evidenceSpan": "Gabriel, dá a entender esta visão",
+      "feedbackCorrect": "Deus envia Gabriel para explicar o que Daniel busca entender.",
+      "hint": "Compare a busca de Daniel e a ordem a Gabriel.",
+      "learningObjective": "Ligar a explicação ao pedido de entendimento.",
+      "evidence": [
+        "Daniel 8:16"
+      ],
+      "passageA": {
+        "ref": "Daniel 8:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Daniel busca entender a visão; Gabriel é enviado para explicar."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus manda explicar a visão"
+        },
+        {
+          "id": "b",
+          "text": "Daniel inventa o sentido"
+        },
+        {
+          "id": "c",
+          "text": "A visão fica sem intérprete"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Gabriel interpreta, não Daniel sozinho.",
+        "c": "Há ordem explícita a Gabriel."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 8:17, a visão se refere ao começo da história de Israel, não ao tempo do fim.",
+      "verseRef": "Daniel 8:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "essa visão se refere ao tempo do fim",
+      "feedbackCorrect": "Gabriel diz: a visão se refere ao tempo do fim.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 8:17."
+      },
+      "hint": "Veja a que tempo a visão se refere.",
+      "learningObjective": "Compreender o horizonte da visão.",
+      "evidence": [
+        "Daniel 8:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 8:17, toque a palavra que marca o contraste antes da explicação.",
+      "verseRef": "Daniel 8:17",
+      "evidenceSpan": "mas ele me disse",
+      "feedbackCorrect": "\"Mas\" marca a virada: do medo à explicação.",
+      "hint": "Procure o contraste perto da fala de Gabriel.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Daniel 8:17"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "rosto"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Rosto\" descreve a postura.",
+        "c": "\"Terra\" descreve o lugar da prostração."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 8:15–19 relaciona o medo de Daniel e a explicação?",
+      "verseRef": "Daniel 8:17–18",
+      "evidenceSpan": "ele, porém, me tocou e me fez levantar",
+      "feedbackCorrect": "Daniel cai amedrontado; Gabriel o toca, levanta e explica o fim.",
+      "hint": "Compare a queda e o toque.",
+      "learningObjective": "Relacionar medo e revelação.",
+      "evidence": [
+        "Daniel 8:17–19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Gabriel levanta Daniel e explica o tempo do fim"
+        },
+        {
+          "id": "b",
+          "text": "Daniel explica sozinho sem ajuda"
+        },
+        {
+          "id": "c",
+          "text": "Gabriel se cala diante do medo"
+        },
+        {
+          "id": "d",
+          "text": "A visão é cancelada por causa do medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Gabriel é mandado a dar a entender.",
+        "c": "Ele fala e toca.",
+        "d": "A visão continua sendo explicada."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 8:15–26?",
+      "verseRef": "Daniel 8:15–26",
+      "evidenceSpan": "é verdadeira; mas tu, encerra a visão",
+      "feedbackCorrect": "Busca, explicação do fim, reinos, visão verdadeira para dias distantes.",
+      "hint": "Comece pela busca.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": [
+        "Daniel 8:15–26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel busca e Gabriel é enviado"
+        },
+        {
+          "id": "b",
+          "text": "Carneiro e bode interpretados"
+        },
+        {
+          "id": "c",
+          "text": "Visão verdadeira para dias distantes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela busca; a visão verdadeira fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 8:19, que palavra marca a razão da explicação?",
+      "verseRef": "Daniel 8:19",
+      "evidenceSpan": "porque esta visão se refere ao tempo determinado do fim",
+      "feedbackCorrect": "\"Porque\" introduz a razão: a visão é do fim.",
+      "hint": "É a palavra que introduz a razão.",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": [
+        "Daniel 8:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "embora"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é \"embora\" em 8:19.",
+        "c": "Não é \"nunca\" em 8:19."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 8:16 a Lucas 1:19?",
+      "verseRef": "Daniel 8:16",
+      "evidenceSpan": "Gabriel, dá a entender esta visão",
+      "feedbackCorrect": "Nos dois textos, Gabriel traz mensagem de Deus a entender.",
+      "hint": "Compare o papel de Gabriel.",
+      "learningObjective": "Relacionar Gabriel em Daniel e em Lucas.",
+      "evidence": [
+        "Daniel 8:16",
+        "Lucas 1:19"
+      ],
+      "passageA": {
+        "ref": "Daniel 8:16"
+      },
+      "passageB": {
+        "ref": "Lucas 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gabriel anunciando de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Gabriel calado para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Visão sem mensageiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Gabriel fala e anuncia.",
+        "c": "Há mensageiro explícito."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 8:26, a visão verdadeira se refere a dias ainda muito distantes.",
+      "verseRef": "Daniel 8:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois se refere a dias ainda muito distantes",
+      "feedbackCorrect": "É verdadeira e para dias distantes.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 8:26."
+      },
+      "hint": "Veja o horizonte temporal.",
+      "learningObjective": "Interpretar a visão como verdadeira e futura.",
+      "evidence": [
+        "Daniel 8:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 8:26, toque o trecho que afirma a qualidade da visão.",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira",
+      "feedbackCorrect": "A visão anunciada é verdadeira.",
+      "hint": "Procure o adjetivo da visão.",
+      "learningObjective": "Sustentar a veracidade da visão.",
+      "evidence": [
+        "Daniel 8:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "verdadeira"
+        },
+        {
+          "id": "b",
+          "text": "tarde"
+        },
+        {
+          "id": "c",
+          "text": "manhã"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Tarde\" faz parte do nome da visão.",
+        "c": "\"Manhã\" faz parte do nome da visão."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 8:15–26 sustenta sobre a revelação?",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira; mas tu, encerra a visão, pois se refere a dias ainda muito distantes",
+      "feedbackCorrect": "Deus explica uma visão verdadeira, mesmo quando o cumprimento é distante.",
+      "hint": "Compare cada opção com 8:16 e 8:26.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Daniel 8:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus explica visão verdadeira para dias distantes"
+        },
+        {
+          "id": "b",
+          "text": "A visão é falsa e deve ser descartada"
+        },
+        {
+          "id": "c",
+          "text": "Só magos podem interpretar a visão"
+        },
+        {
+          "id": "d",
+          "text": "Daniel não precisa de intérprete"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "8:26 diz que é verdadeira.",
+        "c": "Gabriel interpreta.",
+        "d": "Ele busca e recebe explicação."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da revelação confiável?",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira",
+      "feedbackCorrect": "Gabriel anuncia; Apocalipse revela o que há de vir; Pedro afirma a palavra profética firme.",
+      "hint": "Parta de Daniel.",
+      "learningObjective": "Ver a visão no fio da revelação.",
+      "evidence": [
+        "Daniel 8:26",
+        "Apocalipse 1:1",
+        "2 Pedro 1:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel: visão verdadeira explicada"
+        },
+        {
+          "id": "b",
+          "text": "Apocalipse: Deus revela o que há de vir"
+        },
+        {
+          "id": "c",
+          "text": "Pedro: palavra profética firme"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Daniel 8, Apocalipse 1 e 2 Pedro 1."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 8:15, que palavra nomeia o que Daniel busca entender?",
+      "verseRef": "Daniel 8:15",
+      "evidenceSpan": "ao ter visto a visão, busquei entendê-la",
+      "feedbackCorrect": "Ele busca entender a visão.",
+      "hint": "É o objeto da busca.",
+      "learningObjective": "Lembrar o termo-chave da cena.",
+      "evidence": [
+        "Daniel 8:15"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "visão"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "coroa"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é guerra em 8:15.",
+        "c": "Não é coroa em 8:15."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 8:26 a 2 Pedro 1:19?",
+      "verseRef": "Daniel 8:26",
+      "evidenceSpan": "é verdadeira",
+      "feedbackCorrect": "Nos dois textos, a palavra revelada é firme e verdadeira.",
+      "hint": "Compare a qualidade da revelação.",
+      "learningObjective": "Ligar a visão verdadeira à palavra profética firme.",
+      "evidence": [
+        "Daniel 8:26",
+        "2 Pedro 1:19"
+      ],
+      "passageA": {
+        "ref": "Daniel 8:26"
+      },
+      "passageB": {
+        "ref": "2 Pedro 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra revelada firme"
+        },
+        {
+          "id": "b",
+          "text": "Visão descartável"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam verdade e firmeza.",
+        "c": "Há palavra anunciada."
+      }
+    }
+  ]
+}

@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Jó 13:13–18",
+  "passages": [
+   {
+    "ref": "Jó 13:13–22"
+   }
+  ],
+  "context": "Jó pede silêncio aos amigos. Declara que, mesmo que Deus o mate, nele esperará — e quer defender seus caminhos diante dele.",
+  "keyword": "esperarei",
+  "keywordGloss": "A confiança de Jó que permanece mesmo diante da morte.",
+  "focusQuestion": "Sua confiança em Deus depende de entender, ou permanece mesmo sem respostas?",
+  "reflectionPrompts": [
+   "Silêncio dos amigos",
+   "Esperar nele",
+   "Falar face a face"
+  ],
+  "facts": [
+   {
+    "text": "Jó manda os amigos calarem-se diante dele.",
+    "evidenceRef": "Jó 13:13",
+    "evidenceSpan": "Cale-se diante de mim, e eu falarei"
+   },
+   {
+    "text": "Ainda que Deus o mate, Jó esperará nele.",
+    "evidenceRef": "Jó 13:15",
+    "evidenceSpan": "Ainda que ele me mate ainda assim esperarei nele"
+   },
+   {
+    "text": "Ele defenderá seus caminhos diante de Deus.",
+    "evidenceRef": "Jó 13:15",
+    "evidenceSpan": "defenderei os meus caminhos diante dele"
+   },
+   {
+    "text": "Isso será a sua salvação, pois o ímpio não virá perante Deus.",
+    "evidenceRef": "Jó 13:16",
+    "evidenceSpan": "isso será a minha salvação"
+   },
+   {
+    "text": "Ele pede que Deus afaste a mão e não cause pavor.",
+    "evidenceRef": "Jó 13:21",
+    "evidenceSpan": "Afaste sua mão de sobre mim"
+   },
+   {
+    "text": "Quer que Deus o interpele ou que o deixe falar e responder.",
+    "evidenceRef": "Jó 13:22",
+    "evidenceSpan": "Interpela-me, e eu responderei"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "esperarei",
+    "gloss": "Confiança que Jó mantém mesmo sob ameaça de morte."
+   },
+   {
+    "term": "salvação",
+    "gloss": "O que Jó espera do próprio ato de se apresentar a Deus."
+   },
+   {
+    "term": "justificado",
+    "gloss": "A certeza de Jó de que sua causa será reconhecida."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pedido de silêncio e risco assumido",
+    "evidenceRef": "Jó 13:13–14"
+   },
+   {
+    "label": "Esperança mesmo na morte",
+    "evidenceRef": "Jó 13:15–16"
+   },
+   {
+    "label": "Certeza da causa e da defesa",
+    "evidenceRef": "Jó 13:17–19"
+   },
+   {
+    "label": "Condições para falar com Deus",
+    "evidenceRef": "Jó 13:20–22"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Ainda que Deus o mate, ainda assim esperará nele; porém defenderá seus caminhos.",
+    "marker": "porém",
+    "evidenceRef": "Jó 13:15"
+   },
+   {
+    "kind": "causa",
+    "text": "Isso será salvação porque o ímpio não virá perante Deus.",
+    "marker": "pois",
+    "evidenceRef": "Jó 13:16"
+   },
+   {
+    "kind": "resultado",
+    "text": "Se se calasse agora, perderia o espírito.",
+    "marker": "Se",
+    "evidenceRef": "Jó 13:19"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 23:4",
+    "bridge": "Confiança na sombra"
+   },
+   {
+    "ref": "Habacuque 3:17–18",
+    "bridge": "Alegrar-se sem colheita"
+   },
+   {
+    "ref": "Hebreus 11:6",
+    "bridge": "Crer e se aproximar"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó desiste de Deus e só quer morrer em silêncio.",
+    "why": "Ele diz que esperará nele e quer falar diante de Deus."
+   },
+   {
+    "text": "Esperar nele significa não fazer pergunta alguma.",
+    "why": "No mesmo verso ele defende seus caminhos e depois pede diálogo."
+   },
+   {
+    "text": "Jó tem certeza de culpa e só pede castigo.",
+    "why": "Ele está certo de que será justificado e quer apresentar a causa."
+   }
+  ],
+  "centralInsight": "A confiança de Jó não depende de entender: ele quer falar com Deus face a face.",
+  "anchorQuestion": "O que Jó diz que fará ainda que Deus o mate?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 13:15, Jó declara que, ainda que Deus o mate, ainda assim esperará nele.",
+   "verseRef": "Jó 13:15",
+   "correctOptionId": "true",
+   "evidenceSpan": "Ainda que ele me mate ainda assim esperarei nele",
+   "feedbackCorrect": "A confiança permanece mesmo diante da morte.",
+   "feedbackWrong": {
+    "false": "Releia 13:15: ainda assim esperarei nele."
+   },
+   "hint": "Veja o que ele faz mesmo diante da morte.",
+   "learningObjective": "Observar a declaração de confiança de Jó.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 13:13, toque o que Jó manda os amigos fazerem.",
+   "verseRef": "Jó 13:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "falarei"
+    },
+    {
+     "id": "b",
+     "text": "Cale-se"
+    },
+    {
+     "id": "c",
+     "text": "venha"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Cale-se diante de mim",
+   "feedbackCorrect": "Jó pede silêncio para poder falar.",
+   "feedbackWrong": {
+    "a": "\"Falarei\" é o que Jó fará, não o pedido aos amigos.",
+    "c": "\"Venha\" fala do que pode acontecer a ele."
+   },
+   "hint": "Primeira ordem do versículo.",
+   "learningObjective": "Identificar o pedido de silêncio.",
+   "evidence": [
+    "Jó 13:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 13:18, do que Jó está certo?",
+   "verseRef": "Jó 13:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "De que será condenado sem defesa"
+    },
+    {
+     "id": "b",
+     "text": "De que será justificado"
+    },
+    {
+     "id": "c",
+     "text": "De que os amigos falavam certo"
+    },
+    {
+     "id": "d",
+     "text": "De que Deus nunca o ouvirá"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "estou certo de que serei justificado",
+   "feedbackCorrect": "Ele já comprovou a causa e está certo da justificação.",
+   "feedbackWrong": {
+    "a": "Ele espera justificação, não condenação sem defesa.",
+    "c": "Ele pede silêncio aos amigos.",
+    "d": "Ele quer falar perante Deus."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a certeza da causa de Jó.",
+   "evidence": [
+    "Jó 13:18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 13:15 na ordem do texto.",
+   "verseRef": "Jó 13:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ainda que ele me mate ainda assim esperarei nele"
+    },
+    {
+     "id": "b",
+     "text": "porém, defenderei os meus caminhos"
+    },
+    {
+     "id": "c",
+     "text": "diante dele"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Ainda que ele me mate ainda assim esperarei nele",
+   "feedbackCorrect": "Primeiro a esperança; depois a defesa dos caminhos diante de Deus.",
+   "feedbackWrong": {
+    "default": "A esperança vem antes da defesa."
+   },
+   "hint": "O versículo começa com \"Ainda que\".",
+   "learningObjective": "Seguir a sequência de Jó 13:15.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 13:15, o que Jó diz que fará ainda que Deus o mate?",
+   "verseRef": "Jó 13:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "fugirei"
+    },
+    {
+     "id": "b",
+     "text": "esperarei"
+    },
+    {
+     "id": "c",
+     "text": "negarei"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "Esperarei nele: a confiança não depende de sobreviver.",
+   "feedbackWrong": {
+    "a": "Ele não fala em fugir.",
+    "c": "Ele não nega a Deus."
+   },
+   "hint": "Verbo da confiança no meio do verso.",
+   "learningObjective": "Lembrar o verbo da confiança.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 13:15 comunica que se liga a este contexto?",
+   "verseRef": "Jó 13:15",
+   "passageA": {
+    "ref": "Jó 13:15",
+    "text": "ainda assim esperarei nele"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jó confia em Deus mesmo sem entender a dor."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Fé só com respostas"
+    },
+    {
+     "id": "b",
+     "text": "Confiança sem entender"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio eterno"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "A esperança permanece mesmo diante da morte.",
+   "feedbackWrong": {
+    "a": "Ele espera sem ter todas as respostas.",
+    "c": "Ele quer falar, não calar para sempre."
+   },
+   "hint": "Pense no que permanece sem explicação.",
+   "learningObjective": "Ligar o versículo à confiança sem entendimento.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 13:15, Jó abandona toda defesa dos seus caminhos depois de dizer que esperará em Deus.",
+   "verseRef": "Jó 13:15",
+   "correctOptionId": "false",
+   "evidenceSpan": "porém, defenderei os meus caminhos diante dele",
+   "feedbackCorrect": "O \"porém\" acrescenta a defesa: esperar e defender caminham juntos.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 13:15: ele defenderá os caminhos diante dele."
+   },
+   "hint": "Veja o que vem depois de \"esperarei nele\".",
+   "learningObjective": "Compreender o contraste entre esperar e defender.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 13:15, toque a palavra que liga a esperança à defesa dos caminhos.",
+   "verseRef": "Jó 13:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "mate"
+    },
+    {
+     "id": "b",
+     "text": "porém"
+    },
+    {
+     "id": "c",
+     "text": "caminhos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "porém, defenderei os meus caminhos",
+   "feedbackCorrect": "\"Porém\" une confiança e defesa no mesmo movimento.",
+   "feedbackWrong": {
+    "a": "\"Mate\" é a hipótese, não a ligação.",
+    "c": "\"Caminhos\" é o objeto da defesa."
+   },
+   "hint": "Procure a palavra curta antes de \"defenderei\".",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 13:16 relaciona a salvação e o ímpio?",
+   "verseRef": "Jó 13:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "A salvação vem porque o ímpio não se apresenta a Deus"
+    },
+    {
+     "id": "b",
+     "text": "O ímpio e o justo têm a mesma salvação automática"
+    },
+    {
+     "id": "c",
+     "text": "Jó diz que a salvação é impossível"
+    },
+    {
+     "id": "d",
+     "text": "Só o ímpio pode falar perante Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pois o ímpio não virá perante d'Ele",
+   "feedbackCorrect": "Apresentar-se a Deus é, para Jó, sinal de salvação, não de impiedade.",
+   "feedbackWrong": {
+    "b": "Ele distingue o ímpio de quem se apresenta.",
+    "c": "Ele chama isso de salvação.",
+    "d": "O ímpio não virá perante Deus."
+   },
+   "hint": "Leia a razão depois de \"pois\".",
+   "learningObjective": "Compreender a lógica da salvação em 13:16.",
+   "evidence": [
+    "Jó 13:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o pedido de Jó em Jó 13:20–22?",
+   "verseRef": "Jó 13:20–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pede duas condições para não se ocultar"
+    },
+    {
+     "id": "b",
+     "text": "Pede que Deus afaste a mão e o terror"
+    },
+    {
+     "id": "c",
+     "text": "Oferece diálogo: interpelar ou responder"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Concede-me apenas duas coisas",
+   "feedbackCorrect": "Condições, alívio do terror e então o diálogo face a face.",
+   "feedbackWrong": {
+    "default": "O diálogo fecha; as duas coisas abrem o pedido."
+   },
+   "hint": "O diálogo vem depois do alívio.",
+   "learningObjective": "Compreender o movimento do pedido.",
+   "evidence": [
+    "Jó 13:20",
+    "Jó 13:21",
+    "Jó 13:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 13:16, que palavra Jó usa para o fruto de se apresentar a Deus?",
+   "verseRef": "Jó 13:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "ruína"
+    },
+    {
+     "id": "b",
+     "text": "salvação"
+    },
+    {
+     "id": "c",
+     "text": "dúvida"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "isso será a minha salvação",
+   "feedbackCorrect": "Salvação: apresentar-se a Deus é, para Jó, caminho de vida.",
+   "feedbackWrong": {
+    "a": "Ele não chama isso de ruína.",
+    "c": "A palavra é de certeza, não de dúvida."
+   },
+   "hint": "O que \"isso\" será para ele.",
+   "learningObjective": "Lembrar o termo da esperança.",
+   "evidence": [
+    "Jó 13:16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 13:15 a Salmos 23:4?",
+   "verseRef": "Jó 13:15",
+   "passageA": {
+    "ref": "Jó 13:15",
+    "text": "ainda assim esperarei nele"
+   },
+   "passageB": {
+    "ref": "Salmos 23:4"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Confiança na sombra"
+    },
+    {
+     "id": "b",
+     "text": "Fé só na prosperidade"
+    },
+    {
+     "id": "c",
+     "text": "Abandono total de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "Nos dois textos, a confiança permanece no vale e na ameaça de morte.",
+   "feedbackWrong": {
+    "b": "Os dois falam de presença na escuridão.",
+    "c": "Ambos afirmam confiança, não abandono."
+   },
+   "hint": "Compare a confiança sob ameaça.",
+   "learningObjective": "Cruzar a confiança de Jó com o salmo.",
+   "evidence": [
+    "Jó 13:15",
+    "Salmos 23:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 13:15–22, Jó mostra uma fé que espera em Deus e ainda insiste em falar com ele face a face.",
+   "verseRef": "Jó 13:15",
+   "correctOptionId": "true",
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "Esperar e dialogar: a confiança não cala a busca de Deus.",
+   "feedbackWrong": {
+    "false": "Ele espera nele e depois pede interpelação e resposta."
+   },
+   "hint": "Una 13:15 com o pedido de 13:22.",
+   "learningObjective": "Interpretar fé como confiança e diálogo.",
+   "evidence": [
+    "Jó 13:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 13:22, toque o trecho que mostra o diálogo que Jó deseja.",
+   "verseRef": "Jó 13:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Interpela-me"
+    },
+    {
+     "id": "b",
+     "text": "responderei"
+    },
+    {
+     "id": "c",
+     "text": "deixa-me"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Interpela-me, e eu responderei",
+   "feedbackCorrect": "\"Interpela-me\" abre o diálogo face a face que Jó busca.",
+   "feedbackWrong": {
+    "b": "\"Responderei\" é a reação; o pedido começa com interpelar.",
+    "c": "\"Deixa-me\" é a segunda alternativa do diálogo."
+   },
+   "hint": "Primeira ordem do versículo.",
+   "learningObjective": "Sustentar o desejo de diálogo.",
+   "evidence": [
+    "Jó 13:22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 13:15–22 sustenta sobre a confiança de Jó?",
+   "verseRef": "Jó 13:15–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele confia sem depender de entender e quer falar com Deus"
+    },
+    {
+     "id": "b",
+     "text": "Ele desiste de Deus e só pede a morte"
+    },
+    {
+     "id": "c",
+     "text": "Ele aceita culpar-se para silenciar a dor"
+    },
+    {
+     "id": "d",
+     "text": "Ele evita qualquer aproximação de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "Esperança e defesa diante de Deus: fé que não foge do encontro.",
+   "feedbackWrong": {
+    "b": "Ele espera nele e pede diálogo.",
+    "c": "Ele está certo de ser justificado.",
+    "d": "Ele pede para não se ocultar da presença."
+   },
+   "hint": "Una esperança, defesa e o pedido de 13:22.",
+   "learningObjective": "Escolher a leitura da fé dialogante.",
+   "evidence": [
+    "Jó 13:15",
+    "Jó 13:22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra a confiança que permanece na Bíblia?",
+   "verseRef": "Jó 13:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó espera em Deus ainda que o matem"
+    },
+    {
+     "id": "b",
+     "text": "Habacuque se alegra mesmo sem colheita"
+    },
+    {
+     "id": "c",
+     "text": "Quem se aproxima de Deus precisa crer"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "De Jó a Habacuque e Hebreus: a fé permanece e se aproxima.",
+   "feedbackWrong": {
+    "default": "Siga a Bíblia: Jó 13:15, Habacuque 3:17–18 e Hebreus 11:6."
+   },
+   "hint": "Do lamento de Jó ao louvor e à fé que se aproxima.",
+   "learningObjective": "Ver o fio da confiança na Escritura.",
+   "evidence": [
+    "Jó 13:15",
+    "Habacuque 3:17–18",
+    "Hebreus 11:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 13:18, do que Jó está certo a respeito de sua causa?",
+   "verseRef": "Jó 13:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "condenado"
+    },
+    {
+     "id": "b",
+     "text": "justificado"
+    },
+    {
+     "id": "c",
+     "text": "esquecido"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "estou certo de que serei justificado",
+   "feedbackCorrect": "Justificado: a certeza sustenta a ousadia de falar com Deus.",
+   "feedbackWrong": {
+    "a": "Ele não espera condenação.",
+    "c": "Ele não fala em ser esquecido."
+   },
+   "hint": "Fim do versículo, depois de \"certo de que\".",
+   "learningObjective": "Lembrar o termo da certeza de Jó.",
+   "evidence": [
+    "Jó 13:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 13:15 a Habacuque 3:17–18?",
+   "verseRef": "Jó 13:15",
+   "passageA": {
+    "ref": "Jó 13:15",
+    "text": "ainda assim esperarei nele"
+   },
+   "passageB": {
+    "ref": "Habacuque 3:17–18"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Alegrar-se sem colheita"
+    },
+    {
+     "id": "b",
+     "text": "Fé só com fartura"
+    },
+    {
+     "id": "c",
+     "text": "Louvor sem Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ainda assim esperarei nele",
+   "feedbackCorrect": "Os dois textos confiam e louvam mesmo sem alívio visível.",
+   "feedbackWrong": {
+    "b": "Os dois falam de fé na falta.",
+    "c": "O louvor é a Deus, não sem ele."
+   },
+   "hint": "Compare a confiança sem circunstância favorável.",
+   "learningObjective": "Ligar a esperança de Jó ao louvor de Habacuque.",
+   "evidence": [
+    "Jó 13:15",
+    "Habacuque 3:17–18"
+   ]
+  }
+ ]
+}

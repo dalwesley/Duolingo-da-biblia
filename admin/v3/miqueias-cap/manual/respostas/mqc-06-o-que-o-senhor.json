@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Miqueias 6:3–8",
+    "passages": [
+      { "ref": "Miqueias 6:1–2" },
+      { "ref": "Miqueias 6:3–8" }
+    ],
+    "context": "O Senhor chama montes a ouvir a contenda com o povo. Lembra o êxodo e declara o que exige: justiça, misericórdia e andar humildemente com Deus.",
+    "keyword": "exige",
+    "keywordGloss": "O que o Senhor pede de fato, além de holocaustos.",
+    "focusQuestion": "O que pesa mais na sua vida: rituais ou justiça, misericórdia e humildade?",
+    "reflectionPrompts": [
+      "Contenda do Senhor",
+      "Lembrar o êxodo",
+      "Justiça e misericórdia"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor tem controvérsia com o seu povo e entrará em juízo com Israel.",
+        "evidenceRef": "Miqueias 6:2",
+        "evidenceSpan": "o Senhor tem uma controvérsia com o seu povo"
+      },
+      {
+        "text": "Ele pergunta ao povo em que o causou desconforto.",
+        "evidenceRef": "Miqueias 6:3",
+        "evidenceSpan": "Em que te causei desconforto? Responde-me"
+      },
+      {
+        "text": "Tirou o povo do Egito e enviou Moisés, Arão e Miriã.",
+        "evidenceRef": "Miqueias 6:4",
+        "evidenceSpan": "eu te fiz sair da terra do Egito"
+      },
+      {
+        "text": "O povo pergunta com que se apresentará ao Senhor.",
+        "evidenceRef": "Miqueias 6:6",
+        "evidenceSpan": "Com que me apresentarei ao Senhor"
+      },
+      {
+        "text": "Já foi declarado o que é bom.",
+        "evidenceRef": "Miqueias 6:8",
+        "evidenceSpan": "Já te foi declarado, ó homem, o que é bom"
+      },
+      {
+        "text": "O SENHOR exige praticar justiça, amar misericórdia e andar humildemente.",
+        "evidenceRef": "Miqueias 6:8",
+        "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justiça",
+        "gloss": "Prática que o Senhor exige do homem."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "Amor que o Senhor pede junto com a justiça."
+      },
+      {
+        "term": "humildemente",
+        "gloss": "Modo de andar com Deus, sem orgulho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado aos montes e contenda",
+        "evidenceRef": "Miqueias 6:1–2"
+      },
+      {
+        "label": "Pergunta e memória do êxodo",
+        "evidenceRef": "Miqueias 6:3–5"
+      },
+      {
+        "label": "Ofertas e dúvida do povo",
+        "evidenceRef": "Miqueias 6:6–7"
+      },
+      {
+        "label": "O que o Senhor exige",
+        "evidenceRef": "Miqueias 6:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Os montes devem ouvir porque o Senhor tem controvérsia com o povo.",
+        "marker": "porque",
+        "evidenceRef": "Miqueias 6:2"
+      },
+      {
+        "kind": "propósito",
+        "text": "Lembrar Balaque e Balaão para conhecer os atos de justiça do Senhor.",
+        "marker": "para que",
+        "evidenceRef": "Miqueias 6:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não bastam milhares de ofertas; o Senhor exige justiça e misericórdia.",
+        "marker": null,
+        "evidenceRef": "Miqueias 6:7–8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 10:12",
+        "bridge": "Temer e andar com Deus"
+      },
+      {
+        "ref": "Oséias 6:6",
+        "bridge": "Misericórdia, não só sacrifício"
+      },
+      {
+        "ref": "Mateus 23:23",
+        "bridge": "Justiça, misericórdia e fé"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor se agrada sobretudo de milhares de holocaustos.",
+        "why": "6:7–8 relativiza ofertas e declara justiça, misericórdia e humildade."
+      },
+      {
+        "text": "O povo não tem memória de salvação para responder a Deus.",
+        "why": "6:4–5 lembra Egito, Moisés e os atos de justiça do Senhor."
+      },
+      {
+        "text": "Andar com Deus é opcional se houver rituais suficientes.",
+        "why": "6:8 exige andar humildemente com o Deus."
+      }
+    ],
+    "centralInsight": "Ele pediu que se faça justiça, se ame a misericórdia e se ande humildemente com Deus.",
+    "anchorQuestion": "Segundo Miqueias 6:8, o que o SENHOR exige?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 6:8, o SENHOR exige praticar a justiça, amar a misericórdia e andar humildemente com Deus.",
+      "verseRef": "Miqueias 6:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "O versículo resume o pedido do Senhor nesses três verbos.",
+      "feedbackWrong": {
+        "false": "Releia 6:8: justiça, misericórdia e andar humildemente."
+      },
+      "hint": "Veja os três pedidos após \"exige de ti\".",
+      "learningObjective": "Observar o que o Senhor exige.",
+      "evidence": ["Miqueias 6:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 6:4, toque de onde o Senhor fez o povo sair.",
+      "verseRef": "Miqueias 6:4",
+      "evidenceSpan": "eu te fiz sair da terra do Egito",
+      "feedbackCorrect": "Fez sair da terra do Egito.",
+      "hint": "Procure o lugar após \"terra do\".",
+      "learningObjective": "Identificar o êxodo na memória do Senhor.",
+      "evidence": ["Miqueias 6:4"],
+      "options": [
+        { "id": "a", "text": "Egito" },
+        { "id": "b", "text": "Miriã" },
+        { "id": "c", "text": "Arão" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Miriã foi enviada à frente, não o lugar da saída.",
+        "c": "Arão também foi enviado; o lugar é o Egito."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 6:2, o que o Senhor tem com o seu povo?",
+      "verseRef": "Miqueias 6:2",
+      "evidenceSpan": "o Senhor tem uma controvérsia com o seu povo",
+      "feedbackCorrect": "Tem uma controvérsia e entrará em juízo com Israel.",
+      "hint": "Veja o que o Senhor tem com o povo.",
+      "learningObjective": "Observar a contenda divina.",
+      "evidence": ["Miqueias 6:2"],
+      "options": [
+        { "id": "a", "text": "Uma controvérsia" },
+        { "id": "b", "text": "Uma festa sem juízo" },
+        { "id": "c", "text": "Um silêncio total" },
+        { "id": "d", "text": "Uma aliança com Moabe" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de controvérsia e juízo.",
+        "c": "Os montes são chamados a ouvir.",
+        "d": "Moabe aparece na memória de 6:5, não como aliança."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 6:8 na ordem do texto.",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "O que é bom; o que o SENHOR exige; justiça, misericórdia e humildade.",
+      "hint": "Comece pelo que já foi declarado.",
+      "learningObjective": "Reconhecer a sequência de 6:8.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "Já te foi declarado, ó homem, o que é bom" },
+        { "id": "b", "text": "e o que o SENHOR exige de ti" },
+        { "id": "c", "text": "é que pratiques a justiça, ames a misericórdia e andes humildemente" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Declaração primeiro; os três pedidos fecham."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 6:8, que prática o SENHOR exige primeiro?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça",
+      "feedbackCorrect": "Exige que pratiques a justiça.",
+      "hint": "É o primeiro substantivo após pratiques.",
+      "learningObjective": "Lembrar a primeira exigência.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "justiça" },
+        { "id": "b", "text": "guerra" },
+        { "id": "c", "text": "riqueza" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Guerra\" não é a exigência de 6:8.",
+        "c": "\"Riqueza\" não aparece no pedido."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 6:8 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "O Senhor pede justiça, misericórdia e humildade, não só ofertas.",
+      "hint": "Veja o trio de exigências.",
+      "learningObjective": "Ligar 6:8 ao pedido central da cena.",
+      "evidence": ["Miqueias 6:8"],
+      "passageA": { "ref": "Miqueias 6:8" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na contenda com o povo, o Senhor declara o que realmente exige."
+      },
+      "options": [
+        { "id": "a", "text": "Justiça, misericórdia e humildade" },
+        { "id": "b", "text": "Só holocaustos sem ética" },
+        { "id": "c", "text": "Silêncio diante da contenda" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "6:7–8 relativiza ofertas sem essas práticas.",
+        "c": "O Senhor exige resposta prática."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 6:2, os montes devem ouvir porque o Senhor tem controvérsia com o seu povo.",
+      "verseRef": "Miqueias 6:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque o Senhor tem uma controvérsia com o seu povo",
+      "feedbackCorrect": "\"Porque\" liga o chamado à controvérsia divina.",
+      "feedbackWrong": {
+        "false": "Releia 6:2: porque o Senhor tem controvérsia com o povo."
+      },
+      "hint": "Veja a razão após \"porque\".",
+      "learningObjective": "Compreender a causa do chamado aos montes.",
+      "evidence": ["Miqueias 6:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 6:2, toque a palavra que marca a razão do chamado.",
+      "verseRef": "Miqueias 6:2",
+      "evidenceSpan": "porque o Senhor tem uma controvérsia",
+      "feedbackCorrect": "\"Porque\" introduz a controvérsia como razão.",
+      "hint": "É a palavra antes de \"o Senhor tem\".",
+      "learningObjective": "Reconhecer o marcador de causa em 6:2.",
+      "evidence": ["Miqueias 6:2"],
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "montes" },
+        { "id": "c", "text": "terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Montes são os ouvintes, não o marcador.",
+        "c": "Terra é o cenário dos fundamentos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 6:6–8 liga ofertas e o pedido do Senhor?",
+      "verseRef": "Miqueias 6:6–8",
+      "evidenceSpan": "o que o SENHOR exige de ti",
+      "feedbackCorrect": "Ofertas não bastam; o Senhor exige justiça, misericórdia e humildade.",
+      "hint": "Compare a pergunta de 6:6–7 com a resposta de 6:8.",
+      "learningObjective": "Relacionar ritual e exigência ética.",
+      "evidence": ["Miqueias 6:6–8"],
+      "options": [
+        { "id": "a", "text": "Ofertas não substituem justiça, misericórdia e humildade" },
+        { "id": "b", "text": "Milhares de carneiros cancelam o pedido ético" },
+        { "id": "c", "text": "Andar com Deus é opcional se houver azeite" },
+        { "id": "d", "text": "O Senhor só quer holocaustos sem justiça" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "6:7 questiona milhares de carneiros.",
+        "c": "6:8 exige andar humildemente.",
+        "d": "6:8 declara o trio ético."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Miqueias 6:1–8?",
+      "verseRef": "Miqueias 6:2–4",
+      "evidenceSpan": "eu te fiz sair da terra do Egito",
+      "feedbackCorrect": "Contenda; memória do êxodo; dúvida das ofertas; o que Deus exige.",
+      "hint": "Comece pela controvérsia.",
+      "learningObjective": "Seguir o movimento da contenda ao pedido.",
+      "evidence": ["Miqueias 6:2–4"],
+      "options": [
+        { "id": "a", "text": "O Senhor abre contenda com o povo" },
+        { "id": "b", "text": "Lembra o êxodo e seus atos" },
+        { "id": "c", "text": "Declara justiça, misericórdia e humildade" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Contenda primeiro; 6:8 fecha o movimento."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 6:5, que expressão marca o propósito de lembrar Balaque?",
+      "verseRef": "Miqueias 6:5",
+      "evidenceSpan": "para que conheças os atos de justiça do Senhor",
+      "feedbackCorrect": "\"Para\" introduz o propósito: conhecer os atos de justiça.",
+      "hint": "São as duas primeiras palavras do propósito final.",
+      "learningObjective": "Lembrar o marcador de propósito em 6:5.",
+      "evidence": ["Miqueias 6:5"],
+      "options": [
+        { "id": "a", "text": "para" },
+        { "id": "b", "text": "nunca" },
+        { "id": "c", "text": "acaso" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Nunca\" não marca o propósito.",
+        "c": "\"Acaso\" não aparece nesse fim."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 6:8 a Oséias 6:6?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "ames a misericórdia",
+      "feedbackCorrect": "Nos dois textos, misericórdia pesa mais que só sacrifício.",
+      "hint": "Compare misericórdia e culto.",
+      "learningObjective": "Relacionar misericórdia em Miquéias e Oséias.",
+      "evidence": ["Miqueias 6:8", "Oséias 6:6"],
+      "passageA": { "ref": "Miqueias 6:8" },
+      "passageB": { "ref": "Oséias 6:6" },
+      "options": [
+        { "id": "a", "text": "Misericórdia, não só sacrifício" },
+        { "id": "b", "text": "Só holocaustos bastam" },
+        { "id": "c", "text": "Culto sem nenhuma ética" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos relativizam ofertas isoladas.",
+        "c": "A ética é exigida."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 6:6–8, milhares de carneiros e ribeiros de azeite substituem justiça, misericórdia e humildade.",
+      "verseRef": "Miqueias 6:6–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "o que o SENHOR exige de ti é que pratiques a justiça",
+      "feedbackCorrect": "6:7 questiona as ofertas; 6:8 declara o que de fato se exige.",
+      "feedbackWrong": {
+        "true": "Releia 6:7–8: ofertas não cancelam o trio exigido."
+      },
+      "hint": "Compare a pergunta de 6:7 com a resposta de 6:8.",
+      "learningObjective": "Interpretar o limite das ofertas sem ética.",
+      "evidence": ["Miqueias 6:6–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 6:8, toque o advérbio que mostra o modo de andar com Deus.",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "andes humildemente com o teu Deus",
+      "feedbackCorrect": "O modo é humildemente.",
+      "hint": "Procure o advérbio ligado a andes.",
+      "learningObjective": "Sustentar o modo do caminhar com Deus.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "humildemente" },
+        { "id": "b", "text": "homem" },
+        { "id": "c", "text": "bom" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Homem é o destinatário, não o modo.",
+        "c": "Bom descreve o que foi declarado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Miqueias 6:1–8 sustenta sobre o pedido de Deus?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "Deus lembra a salvação e exige vida justa, misericordiosa e humilde.",
+      "hint": "Una 6:4–5 a 6:8.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "Deus exige justiça, misericórdia e andar humilde" },
+        { "id": "b", "text": "Só rituais bastam sem mudança de vida" },
+        { "id": "c", "text": "O êxodo não importa para a contenda" },
+        { "id": "d", "text": "Andar com Deus é opcional" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "6:7–8 relativiza rituais isolados.",
+        "c": "6:4–5 traz a memória do êxodo.",
+        "d": "6:8 exige andar humildemente."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o pedido de Deus na Escritura?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia",
+      "feedbackCorrect": "Miquéias resume; Oséias aponta misericórdia; Jesus ecoa o essencial.",
+      "hint": "Parta de Miqueias 6:8.",
+      "learningObjective": "Ver o pedido de Deus no fio bíblico.",
+      "evidence": ["Miqueias 6:8", "Oséias 6:6", "Mateus 23:23"],
+      "options": [
+        { "id": "a", "text": "Miquéias declara justiça, misericórdia e humildade" },
+        { "id": "b", "text": "Oséias prefere misericórdia a só sacrifício" },
+        { "id": "c", "text": "Jesus aponta justiça, misericórdia e fé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 6:8, Oséias 6:6 e Mateus 23:23."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 6:8, que palavra o SENHOR pede para amar?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "ames a misericórdia",
+      "feedbackCorrect": "Pede amar a misericórdia.",
+      "hint": "É o substantivo após \"ames a\".",
+      "learningObjective": "Lembrar o termo central da misericórdia.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "vingança" },
+        { "id": "b", "text": "misericórdia" },
+        { "id": "c", "text": "ganância" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Vingança\" não é o pedido de 6:8.",
+        "c": "\"Ganância\" não aparece no versículo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 6:8 a Mateus 23:23?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia",
+      "feedbackCorrect": "Nos dois textos, justiça e misericórdia são o peso maior.",
+      "hint": "Compare o essencial da prática.",
+      "learningObjective": "Ligar Miquéias ao essencial que Jesus aponta.",
+      "evidence": ["Miqueias 6:8", "Mateus 23:23"],
+      "passageA": { "ref": "Miqueias 6:8" },
+      "passageB": { "ref": "Mateus 23:23" },
+      "options": [
+        { "id": "a", "text": "Justiça, misericórdia e fé" },
+        { "id": "b", "text": "Só dízimo sem ética" },
+        { "id": "c", "text": "Culto vazio de misericórdia" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos priorizam o essencial ético.",
+        "c": "Misericórdia é exigida."
+      }
+    }
+  ]
+}

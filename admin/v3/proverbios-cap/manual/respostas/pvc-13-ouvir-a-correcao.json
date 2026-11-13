@@ -1,0 +1,720 @@
+{
+  "study": {
+    "passageRef": "Provérbios 13:1–6",
+    "passages": [
+      {
+        "ref": "Provérbios 13:1–6"
+      },
+      {
+        "ref": "Provérbios 13:7–12"
+      }
+    ],
+    "context": "O capítulo une ouvir a instrução, controlar a boca, rejeitar a soberba e esperar o desejo cumprido como árvore de vida.",
+    "keyword": "Instrução",
+    "keywordGloss": "O que o filho sábio ouve do pai; o zombador ignora a repreensão.",
+    "focusQuestion": "Quando a correção chega, você ouve ou zomba?",
+    "reflectionPrompts": [
+      "Ouvir a instrução",
+      "Controlar a boca",
+      "Desejo realizado"
+    ],
+    "facts": [
+      {
+        "text": "O filho sábio ouve a instrução do pai.",
+        "evidenceRef": "Provérbios 13:1",
+        "evidenceSpan": "O filho sábio ouve a instrução do pai"
+      },
+      {
+        "text": "Quem controla a boca preserva a sua alma.",
+        "evidenceRef": "Provérbios 13:3",
+        "evidenceSpan": "Quem controla a boca preserva a sua alma"
+      },
+      {
+        "text": "O justo aborrece a palavra falsa.",
+        "evidenceRef": "Provérbios 13:5",
+        "evidenceSpan": "O justo aborrece a palavra falsa"
+      },
+      {
+        "text": "A soberba apenas gera contendas.",
+        "evidenceRef": "Provérbios 13:10",
+        "evidenceSpan": "A soberba apenas gera contendas"
+      },
+      {
+        "text": "A esperança adiada faz adoecer o coração.",
+        "evidenceRef": "Provérbios 13:12",
+        "evidenceSpan": "A esperança adiada faz adoecer o coração"
+      },
+      {
+        "text": "O desejo realizado é árvore de vida.",
+        "evidenceRef": "Provérbios 13:12",
+        "evidenceSpan": "o desejo realizado é árvore de vida"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "instrução",
+        "gloss": "O que o filho sábio ouve; o zombador rejeita a repreensão."
+      },
+      {
+        "term": "soberba",
+        "gloss": "O que apenas gera contendas."
+      },
+      {
+        "term": "esperança",
+        "gloss": "Quando adiada, adoecer o coração; realizada, é vida."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ouvir e controlar a boca",
+        "evidenceRef": "Provérbios 13:1–3"
+      },
+      {
+        "label": "Diligência e justiça",
+        "evidenceRef": "Provérbios 13:4–6"
+      },
+      {
+        "label": "Aparência, luz e soberba",
+        "evidenceRef": "Provérbios 13:7–10"
+      },
+      {
+        "label": "Riqueza e desejo cumprido",
+        "evidenceRef": "Provérbios 13:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Filho sábio ouve; zombador ignora a repreensão.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 13:1"
+      },
+      {
+        "kind": "contraste",
+        "text": "Soberba gera contendas; conselho dá sabedoria.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 13:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Esperança adiada adoece; desejo realizado é vida.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 13:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 12:11",
+        "bridge": "Correção depois dá fruto"
+      },
+      {
+        "ref": "Tiago 1:19",
+        "bridge": "Pronto para ouvir"
+      },
+      {
+        "ref": "Salmos 1:3",
+        "bridge": "Árvore plantada e fruto"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Zombar da repreensão é sinal de maturidade.",
+        "why": "13:1 contrapõe o filho sábio que ouve ao zombador que não presta atenção."
+      },
+      {
+        "text": "Abrir demais os lábios nunca traz prejuízo.",
+        "why": "13:3 diz que quem abre excessivamente os lábios se arruína."
+      },
+      {
+        "text": "Esperança adiada fortalece sempre o coração.",
+        "why": "13:12 diz que a esperança adiada faz adoecer o coração."
+      }
+    ],
+    "centralInsight": "Ouvidos abertos e desejo cumprido: sabedoria também é esperar bem.",
+    "anchorQuestion": "Segundo Provérbios 13:12, o que é o desejo realizado?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Provérbios 13:1, o zombador presta atenção à repreensão.",
+      "verseRef": "Provérbios 13:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "o zombador não presta atenção à repreensão",
+      "feedbackCorrect": "O zombador não presta atenção; quem ouve é o filho sábio.",
+      "feedbackWrong": {
+        "true": "Releia 13:1: o zombador não presta atenção."
+      },
+      "hint": "Veja o que o zombador faz com a repreensão.",
+      "learningObjective": "Observar a resposta do zombador.",
+      "evidence": [
+        "Provérbios 13:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Provérbios 13:12, toque o que o desejo realizado é.",
+      "verseRef": "Provérbios 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "árvore de vida"
+        },
+        {
+          "id": "b",
+          "text": "coração"
+        },
+        {
+          "id": "c",
+          "text": "esperança adiada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o desejo realizado é árvore de vida",
+      "feedbackCorrect": "O desejo realizado é árvore de vida.",
+      "feedbackWrong": {
+        "b": "Coração é o que a esperança adiada adoece.",
+        "c": "Esperança adiada é o contraste."
+      },
+      "hint": "Imagem após \"é\".",
+      "learningObjective": "Identificar a imagem do desejo cumprido.",
+      "evidence": [
+        "Provérbios 13:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Provérbios 13:3, o que faz quem controla a boca?",
+      "verseRef": "Provérbios 13:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preserva a sua alma"
+        },
+        {
+          "id": "b",
+          "text": "Se arruína"
+        },
+        {
+          "id": "c",
+          "text": "Gera só contendas"
+        },
+        {
+          "id": "d",
+          "text": "Ignora a instrução"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quem controla a boca preserva a sua alma",
+      "feedbackCorrect": "Controlar a boca preserva a alma.",
+      "feedbackWrong": {
+        "b": "Arruinar-se é de quem abre demais os lábios.",
+        "c": "Contendas vêm da soberba em 13:10.",
+        "d": "Ignorar é do zombador."
+      },
+      "hint": "Resultado da primeira metade.",
+      "learningObjective": "Observar o fruto do controle da boca.",
+      "evidence": [
+        "Provérbios 13:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Provérbios 13:12 na ordem do texto.",
+      "verseRef": "Provérbios 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A esperança adiada faz adoecer o coração"
+        },
+        {
+          "id": "b",
+          "text": "mas o desejo realizado"
+        },
+        {
+          "id": "c",
+          "text": "é árvore de vida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A esperança adiada faz adoecer o coração",
+      "feedbackCorrect": "Primeiro a espera que adoece; depois a árvore de vida.",
+      "feedbackWrong": {
+        "default": "Comece pela esperança adiada."
+      },
+      "hint": "O versículo abre com a esperança.",
+      "learningObjective": "Seguir a ordem do contraste.",
+      "evidence": [
+        "Provérbios 13:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Provérbios 13:10, a soberba apenas gera o quê?",
+      "verseRef": "Provérbios 13:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "contendas"
+        },
+        {
+          "id": "b",
+          "text": "sabedoria"
+        },
+        {
+          "id": "c",
+          "text": "instrução"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A soberba apenas gera contendas",
+      "feedbackCorrect": "A soberba apenas gera contendas.",
+      "feedbackWrong": {
+        "b": "Sabedoria vem do conselho dos sábios.",
+        "c": "Instrução é o que o filho sábio ouve."
+      },
+      "hint": "Objeto de gera.",
+      "learningObjective": "Lembrar o fruto da soberba.",
+      "evidence": [
+        "Provérbios 13:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Provérbios 13:1 comunica que se liga a este contexto?",
+      "verseRef": "Provérbios 13:1",
+      "passageA": {
+        "ref": "Provérbios 13:1",
+        "text": "O filho sábio ouve a instrução do pai"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sabedoria começa ouvindo a correção."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir a instrução do pai"
+        },
+        {
+          "id": "b",
+          "text": "Zombar como virtude"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem aprendizado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O filho sábio ouve a instrução do pai",
+      "feedbackCorrect": "Ouvir a instrução liga o versículo ao tema da cena.",
+      "feedbackWrong": {
+        "b": "Zombar é o contraste negativo.",
+        "c": "Há escuta ativa do filho sábio."
+      },
+      "hint": "Veja o que o filho sábio faz.",
+      "learningObjective": "Ligar 13:1 à correção.",
+      "evidence": [
+        "Provérbios 13:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Provérbios 13:10, a soberba é apresentada como caminho que oferece sabedoria sem contenda.",
+      "verseRef": "Provérbios 13:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "A soberba apenas gera contendas",
+      "feedbackCorrect": "Ela gera contendas; a sabedoria vem do conselho.",
+      "feedbackWrong": {
+        "true": "Releia 13:10: a soberba apenas gera contendas."
+      },
+      "hint": "Veja o que a soberba gera.",
+      "learningObjective": "Compreender o contraste soberba–conselho.",
+      "evidence": [
+        "Provérbios 13:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Provérbios 13:12, toque a palavra que marca o contraste.",
+      "verseRef": "Provérbios 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "adiada"
+        },
+        {
+          "id": "c",
+          "text": "coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas o desejo realizado é árvore de vida",
+      "feedbackCorrect": "\"Mas\" introduz o desejo realizado.",
+      "feedbackWrong": {
+        "b": "Adiada descreve a esperança.",
+        "c": "Coração é o que adoece."
+      },
+      "hint": "Palavra curta no meio.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Provérbios 13:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Provérbios 13:12 estabelece entre espera e desejo?",
+      "verseRef": "Provérbios 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espera adiada adoece; desejo cumprido é vida"
+        },
+        {
+          "id": "b",
+          "text": "Espera adiada sempre fortalece"
+        },
+        {
+          "id": "c",
+          "text": "Desejo cumprido é só doença"
+        },
+        {
+          "id": "d",
+          "text": "Não há diferença entre os dois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o desejo realizado é árvore de vida",
+      "feedbackCorrect": "O contraste une espera dolorosa e desejo que dá vida.",
+      "feedbackWrong": {
+        "b": "O texto diz que adoece o coração.",
+        "c": "Desejo cumprido é árvore de vida.",
+        "d": "Há contraste claro."
+      },
+      "hint": "Compare as duas metades.",
+      "learningObjective": "Relacionar esperança e desejo.",
+      "evidence": [
+        "Provérbios 13:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança Provérbios 13:1–12?",
+      "verseRef": "Provérbios 13:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir e controlar a boca"
+        },
+        {
+          "id": "b",
+          "text": "Aparência, luz e soberba"
+        },
+        {
+          "id": "c",
+          "text": "Riqueza e desejo cumprido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O filho sábio ouve a instrução do pai",
+      "feedbackCorrect": "Do ouvir à soberba, e fecha com o desejo cumprido.",
+      "feedbackWrong": {
+        "default": "Comece pelo ouvir; o desejo fecha."
+      },
+      "hint": "O fim fala de árvore de vida.",
+      "learningObjective": "Compreender o movimento do capítulo.",
+      "evidence": [
+        "Provérbios 13:1",
+        "Provérbios 13:10",
+        "Provérbios 13:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Provérbios 13:1, que verbo diz a ação do filho sábio?",
+      "verseRef": "Provérbios 13:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouve"
+        },
+        {
+          "id": "b",
+          "text": "zomba"
+        },
+        {
+          "id": "c",
+          "text": "arruína"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O filho sábio ouve a instrução do pai",
+      "feedbackCorrect": "\"Ouve\" carrega a relação com a instrução.",
+      "feedbackWrong": {
+        "b": "Zombar é do outro polo.",
+        "c": "Arruinar-se é de quem abre demais a boca."
+      },
+      "hint": "Verbo da primeira metade.",
+      "learningObjective": "Lembrar a ação do filho sábio.",
+      "evidence": [
+        "Provérbios 13:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Provérbios 13:1 a Tiago 1:19?",
+      "verseRef": "Provérbios 13:1",
+      "passageA": {
+        "ref": "Provérbios 13:1"
+      },
+      "passageB": {
+        "ref": "Tiago 1:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pronto para ouvir"
+        },
+        {
+          "id": "b",
+          "text": "Zombar da repreensão"
+        },
+        {
+          "id": "c",
+          "text": "Falar sem escuta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O filho sábio ouve a instrução do pai",
+      "feedbackCorrect": "Ouvir a instrução e ser pronto para ouvir se encontram.",
+      "feedbackWrong": {
+        "b": "Zombar é o contraste negativo.",
+        "c": "Os dois textos valorizam a escuta."
+      },
+      "hint": "Compare o valor de ouvir.",
+      "learningObjective": "Cruzar instrução e prontidão para ouvir.",
+      "evidence": [
+        "Provérbios 13:1",
+        "Tiago 1:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Provérbios 13:1–3, ouvir a instrução e controlar a boca são apresentados como caminhos que preservam.",
+      "verseRef": "Provérbios 13:1–3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Quem controla a boca preserva a sua alma",
+      "feedbackCorrect": "Ouvir e controlar a boca preservam; zombar e falar demais arruínam.",
+      "feedbackWrong": {
+        "false": "Releia 13:1 e 13:3: ouvir e controlar preservam."
+      },
+      "hint": "Una o filho sábio e quem controla a boca.",
+      "learningObjective": "Confirmar a leitura sobre ouvir e boca.",
+      "evidence": [
+        "Provérbios 13:1",
+        "Provérbios 13:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Provérbios 13:3, toque o trecho que sustenta o risco de falar demais.",
+      "verseRef": "Provérbios 13:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "se arruína"
+        },
+        {
+          "id": "b",
+          "text": "preserva"
+        },
+        {
+          "id": "c",
+          "text": "alma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quem abre excessivamente os lábios se arruína",
+      "feedbackCorrect": "Abrir demais os lábios leva à ruína.",
+      "feedbackWrong": {
+        "b": "Preservar é de quem controla a boca.",
+        "c": "Alma é o que se preserva ao controlar."
+      },
+      "hint": "Resultado da segunda metade.",
+      "learningObjective": "Sustentar o risco da boca aberta.",
+      "evidence": [
+        "Provérbios 13:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Provérbios 13 sustenta?",
+      "verseRef": "Provérbios 13:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir correção e esperar bem são caminhos de sabedoria"
+        },
+        {
+          "id": "b",
+          "text": "Zombar da repreensão é sabedoria madura"
+        },
+        {
+          "id": "c",
+          "text": "Soberba elimina contendas"
+        },
+        {
+          "id": "d",
+          "text": "Esperança adiada nunca afeta o coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O filho sábio ouve a instrução do pai",
+      "feedbackCorrect": "Ouvir, controlar a boca e esperar bem percorrem o capítulo.",
+      "feedbackWrong": {
+        "b": "13:1 condena o zombador.",
+        "c": "13:10 diz que soberba gera contendas.",
+        "d": "13:12 diz que adoece o coração."
+      },
+      "hint": "Una ouvir e desejo cumprido.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Provérbios 13:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da correção e da vida?",
+      "verseRef": "Provérbios 13:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O filho sábio ouve a instrução"
+        },
+        {
+          "id": "b",
+          "text": "Tiago manda ser pronto para ouvir"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus diz que a correção dá fruto"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O filho sábio ouve a instrução do pai",
+      "feedbackCorrect": "Da instrução em Provérbios a Tiago e Hebreus.",
+      "feedbackWrong": {
+        "default": "Comece por 13:1; depois Tiago 1:19 e Hebreus 12:11."
+      },
+      "hint": "Do ouvir à prontidão e ao fruto da correção.",
+      "learningObjective": "Ver o fio da correção.",
+      "evidence": [
+        "Provérbios 13:1",
+        "Tiago 1:19",
+        "Hebreus 12:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Provérbios 13:12, que verbo diz o efeito da esperança adiada?",
+      "verseRef": "Provérbios 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "adoecer"
+        },
+        {
+          "id": "b",
+          "text": "preserva"
+        },
+        {
+          "id": "c",
+          "text": "ouve"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A esperança adiada faz adoecer o coração",
+      "feedbackCorrect": "\"Adoecer\" carrega o peso da espera prolongada.",
+      "feedbackWrong": {
+        "b": "Preservar é de quem controla a boca.",
+        "c": "Ouvir é do filho sábio."
+      },
+      "hint": "Verbo após \"faz\".",
+      "learningObjective": "Lembrar o efeito da espera adiada.",
+      "evidence": [
+        "Provérbios 13:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Provérbios 13:12 a Salmos 1:3?",
+      "verseRef": "Provérbios 13:12",
+      "passageA": {
+        "ref": "Provérbios 13:12"
+      },
+      "passageB": {
+        "ref": "Salmos 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Árvore plantada e fruto"
+        },
+        {
+          "id": "b",
+          "text": "Espera como ruína eterna"
+        },
+        {
+          "id": "c",
+          "text": "Desejo sem vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o desejo realizado é árvore de vida",
+      "feedbackCorrect": "Árvore de vida e árvore plantada falam de fruto e vida.",
+      "feedbackWrong": {
+        "b": "Há também desejo realizado que dá vida.",
+        "c": "O texto chama o desejo de árvore de vida."
+      },
+      "hint": "Compare a imagem da árvore.",
+      "learningObjective": "Ligar desejo cumprido e árvore.",
+      "evidence": [
+        "Provérbios 13:12",
+        "Salmos 1:3"
+      ]
+    }
+  ]
+}

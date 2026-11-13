@@ -20,7 +20,6 @@ import '../widgets/cloud_mascot.dart';
 import '../widgets/immersive_background.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
-import 'paywall_screen.dart';
 
 /// "Seus erros explicados" (Peregrino+): página do perfil com os erros
 /// guardados — a pergunta, a resposta certa e o porquê de cada uma.
@@ -41,18 +40,7 @@ class _ExplainedErrorsScreenState extends State<ExplainedErrorsScreen> {
   @override
   void initState() {
     super.initState();
-    // Gate na tela, não só no cartão que a abre.
-    if (!context.read<SubscriptionService>().plusFeaturesOpen) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        if (!mounted) return;
-        Navigator.of(context).pushReplacement(
-          MaterialPageRoute<void>(
-            builder: (_) => const PaywallScreen(source: 'explained_errors'),
-          ),
-        );
-      });
-      return;
-    }
+    // Erros explicados são de todos (aprender é grátis, 11/2026).
     AnalyticsService.instance.logPlusFeatureOpen(
       feature: 'explained_errors',
       hasPlus: context.read<SubscriptionService>().hasPlus,

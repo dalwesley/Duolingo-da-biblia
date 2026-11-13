@@ -1,0 +1,922 @@
+{
+  "study": {
+    "slug": "atc-07-o-ceu-e-o",
+    "passageRef": "Atos 7:44–49",
+    "passageText": "Estava entre nossos pais, no deserto, o tabernáculo do Testemunho, conforme determinou aquele que disse a Moisés que o fizesse segundo o modelo que havia visto. Os nossos pais, recebendo-o também, o levaram com Josué quando tomaram posse das nações que Deus expulsou da presença deles, até os dias de Davi. Achou graça diante de Deus e pediu que pudesse achar morada para o Deus de Jacó. Salomão foi quem edificou a casa para Ele. Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta: O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+    "passages": [
+      {
+        "ref": "Atos 7:44–49",
+        "text": "Estava entre nossos pais, no deserto, o tabernáculo do Testemunho, conforme determinou aquele que disse a Moisés que o fizesse segundo o modelo que havia visto. Os nossos pais, recebendo-o também, o levaram com Josué quando tomaram posse das nações que Deus expulsou da presença deles, até os dias de Davi. Achou graça diante de Deus e pediu que pudesse achar morada para o Deus de Jacó. Salomão foi quem edificou a casa para Ele. Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta: O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?"
+      },
+      {
+        "ref": "Atos 7:50",
+        "text": "Não foi, por acaso, a minha mão que fez todas essas coisas?"
+      }
+    ],
+    "context": "Estêvão, acusado diante do conselho, relembra a história de Israel: a tenda no deserto, a casa de Salomão e a palavra do profeta sobre o Deus que não cabe em templo.",
+    "keyword": "Altíssimo",
+    "keywordGloss": "Deus não habita em templos feitos por mãos humanas: o céu é o seu trono.",
+    "focusQuestion": "Onde você tenta \"encaixar\" Deus em algo menor do que ele é?",
+    "reflectionPrompts": [
+      "Deus maior que o templo",
+      "Céu como trono",
+      "Mãos humanas limitadas"
+    ],
+    "facts": [
+      {
+        "text": "No deserto estava o tabernáculo do Testemunho, feito segundo o modelo mostrado a Moisés.",
+        "evidenceRef": "Atos 7:44",
+        "evidenceSpan": "o tabernáculo do Testemunho"
+      },
+      {
+        "text": "Os pais o levaram com Josué até os dias de Davi.",
+        "evidenceRef": "Atos 7:45",
+        "evidenceSpan": "o levaram com Josué"
+      },
+      {
+        "text": "Davi pediu morada para o Deus de Jacó.",
+        "evidenceRef": "Atos 7:46",
+        "evidenceSpan": "pediu que pudesse achar morada para o Deus de Jacó"
+      },
+      {
+        "text": "Salomão edificou a casa para Ele.",
+        "evidenceRef": "Atos 7:47",
+        "evidenceSpan": "Salomão foi quem edificou a casa para Ele"
+      },
+      {
+        "text": "O Altíssimo não habita em templos construídos por mãos humanas.",
+        "evidenceRef": "Atos 7:48",
+        "evidenceSpan": "o Altíssimo não habita em templos construídos por mãos humanas"
+      },
+      {
+        "text": "O céu é o trono de Deus e a terra o estrado dos seus pés.",
+        "evidenceRef": "Atos 7:49",
+        "evidenceSpan": "O céu é o meu trono, e a terra é o estrado dos meus pés"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Altíssimo",
+        "gloss": "Título que lembra: Deus está acima de qualquer casa feita por mãos."
+      },
+      {
+        "term": "tabernáculo",
+        "gloss": "A tenda do Testemunho no deserto, segundo o modelo dado a Moisés."
+      },
+      {
+        "term": "trono",
+        "gloss": "O céu é o lugar do governo de Deus, não um prédio humano."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A tenda no deserto segundo o modelo",
+        "evidenceRef": "Atos 7:44"
+      },
+      {
+        "label": "A tenda chega até Davi",
+        "evidenceRef": "Atos 7:45–46"
+      },
+      {
+        "label": "Salomão edifica a casa",
+        "evidenceRef": "Atos 7:47"
+      },
+      {
+        "label": "O Altíssimo não cabe em templo humano",
+        "evidenceRef": "Atos 7:48–49"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Salomão edifica a casa; entretanto, o Altíssimo não habita em templos de mãos.",
+        "marker": "Entretanto",
+        "evidenceRef": "Atos 7:47–48"
+      },
+      {
+        "kind": "propósito",
+        "text": "Moisés deve fazer a tenda segundo o modelo que havia visto.",
+        "marker": "segundo",
+        "evidenceRef": "Atos 7:44"
+      },
+      {
+        "kind": "resultado",
+        "text": "A citação profética conclui: a mão de Deus fez todas essas coisas.",
+        "marker": "Não foi",
+        "evidenceRef": "Atos 7:50"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 66:1",
+        "bridge": "Céu é trono de Deus",
+        "text": "Assim diz o Senhor: Os céus são o meu trono, e a terra é o estrado dos meus pés. Que casa me edificareis? E qual é o lugar do meu repouso?"
+      },
+      {
+        "ref": "1 Reis 8:27",
+        "bridge": "Céus não contêm a Deus",
+        "text": "Mas será que, de fato, Deus habitará na terra? Eis que os céus e até o céu dos céus não te podem conter, quanto menos esta casa que eu edifiquei."
+      },
+      {
+        "ref": "Êxodo 25:40",
+        "bridge": "Fazer segundo o modelo",
+        "text": "Atente, pois, para que faça tudo conforme o modelo que te foi mostrado no monte."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus fica preso dentro do templo feito por Salomão.",
+        "why": "Estêvão cita que o Altíssimo não habita em templos feitos por mãos."
+      },
+      {
+        "text": "A tenda e o templo foram ideias humanas sem ordem de Deus.",
+        "why": "A tenda segue o modelo mostrado a Moisés; Salomão edifica a casa."
+      },
+      {
+        "text": "Deus não se importa com a terra, só com o céu distante.",
+        "why": "A terra é o estrado dos seus pés: ele governa também aqui."
+      }
+    ],
+    "centralInsight": "Deus não cabe em templo feito por mãos: o céu é o seu trono.",
+    "anchorQuestion": "Segundo Atos 7:48–49, onde o Altíssimo diz que está o seu trono?",
+    "relatedVerses": [
+      {
+        "reference": "Isaías 66:1",
+        "reason": "Céu é trono de Deus"
+      },
+      {
+        "reference": "1 Reis 8:27",
+        "reason": "Céus não contêm a Deus"
+      },
+      {
+        "reference": "Êxodo 25:40",
+        "reason": "Fazer segundo o modelo"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "atos-cap-sem-atc-07-o-ceu-e-o-01",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Atos 7:47, foi Davi quem edificou a casa para Deus.",
+      "prompt": "Em Atos 7:47, foi Davi quem edificou a casa para Deus.",
+      "cue": "Em Atos 7:47, foi Davi quem edificou a casa para Deus.",
+      "verseRef": "Atos 7:47",
+      "passageText": "Salomão foi quem edificou a casa para Ele.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Salomão foi quem edificou a casa para Ele",
+      "feedbackCorrect": "Davi pediu; quem edificou a casa foi Salomão.",
+      "feedbackWrong": {
+        "true": "Releia Atos 7:47: Salomão foi quem edificou a casa."
+      },
+      "hint": "Compare 7:46 com 7:47.",
+      "learningObjective": "Observar quem edificou a casa.",
+      "evidence": [
+        "Atos 7:47"
+      ]
+    },
+    {
+      "id": "atos-cap-sem-atc-07-o-ceu-e-o-02",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Atos 7:49, toque o que Deus chama de seu trono.",
+      "prompt": "Em Atos 7:49, toque o que Deus chama de seu trono.",
+      "cue": "Em Atos 7:49, toque o que Deus chama de seu trono.",
+      "verseRef": "Atos 7:49",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "a terra"
+        },
+        {
+          "id": "b",
+          "text": "O céu"
+        },
+        {
+          "id": "c",
+          "text": "meu descanso"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "O céu é o meu trono",
+      "feedbackCorrect": "O céu é o trono; a terra é só o estrado dos pés.",
+      "feedbackWrong": {
+        "a": "A terra é o estrado dos pés, não o trono.",
+        "c": "\"Meu descanso\" é pergunta de Deus, não o trono."
+      },
+      "hint": "Olhe a primeira afirmação do versículo.",
+      "learningObjective": "Identificar o trono de Deus no texto.",
+      "evidence": [
+        "Atos 7:49"
+      ]
+    },
+    {
+      "id": "atos-cap-sem-atc-07-o-ceu-e-o-03",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Atos 7:48, onde o Altíssimo não habita?",
+      "prompt": "Segundo Atos 7:48, onde o Altíssimo não habita?",
+      "cue": "Segundo Atos 7:48, onde o Altíssimo não habita?",
+      "verseRef": "Atos 7:48",
+      "passageText": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Somente entre os povos estrangeiros"
+        },
+        {
+          "id": "b",
+          "text": "Em qualquer lugar da criação"
+        },
+        {
+          "id": "c",
+          "text": "No céu, segundo o profeta"
+        },
+        {
+          "id": "d",
+          "text": "Em templos construídos por mãos humanas"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "não habita em templos construídos por mãos humanas",
+      "feedbackCorrect": "O Altíssimo não fica contido em templo feito por mãos.",
+      "feedbackWrong": {
+        "a": "Não é questão de estrangeiros; é sobre templos humanos.",
+        "b": "O texto não nega a criação; nega templos de mãos.",
+        "c": "O céu é o trono; a negação é sobre templos humanos."
+      },
+      "hint": "Leia o que vem depois de \"não habita\".",
+      "learningObjective": "Observar a negação sobre o templo humano.",
+      "evidence": [
+        "Atos 7:48"
+      ]
+    },
+    {
+      "id": "atos-cap-sem-atc-07-o-ceu-e-o-04",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Atos 7:49 na ordem do texto.",
+      "prompt": "Monte Atos 7:49 na ordem do texto.",
+      "cue": "Monte Atos 7:49 na ordem do texto.",
+      "verseRef": "Atos 7:49",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O céu é o meu trono"
+        },
+        {
+          "id": "b",
+          "text": "e a terra é o estrado dos meus pés"
+        },
+        {
+          "id": "c",
+          "text": "que casa me edificareis, diz o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "O céu é o meu trono",
+      "feedbackCorrect": "Trono, estrado e a pergunta sobre a casa edificada.",
+      "feedbackWrong": {
+        "default": "Comece pelo céu como trono; a pergunta sobre a casa vem depois."
+      },
+      "hint": "O versículo começa com o céu.",
+      "learningObjective": "Reconhecer a sequência da citação.",
+      "evidence": [
+        "Atos 7:49"
+      ]
+    },
+    {
+      "id": "atos-cap-sem-atc-07-o-ceu-e-o-05",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Atos 7:47, quem edificou a casa para Ele?",
+      "prompt": "Em Atos 7:47, quem edificou a casa para Ele?",
+      "cue": "Em Atos 7:47, quem edificou a casa para Ele?",
+      "verseRef": "Atos 7:47",
+      "passageText": "Salomão foi quem edificou a casa para Ele.",
+      "template": "___ foi quem edificou a casa para Ele.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salomão"
+        },
+        {
+          "id": "b",
+          "text": "Josué"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Salomão foi quem edificou a casa para Ele",
+      "feedbackCorrect": "Salomão edificou a casa; Davi apenas pedira morada.",
+      "feedbackWrong": {
+        "b": "Josué levou a tenda; quem edificou a casa foi Salomão.",
+        "c": "Moisés recebeu o modelo da tenda; a casa é de Salomão."
+      },
+      "hint": "É o nome que abre o versículo.",
+      "learningObjective": "Lembrar quem edificou a casa.",
+      "evidence": [
+        "Atos 7:47"
+      ]
+    },
+    {
+      "id": "atos-cap-sem-atc-07-o-ceu-e-o-06",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Atos 7:48 comunica que se liga a este contexto?",
+      "prompt": "O que Atos 7:48 comunica que se liga a este contexto?",
+      "cue": "O que Atos 7:48 comunica que se liga a este contexto?",
+      "verseRef": "Atos 7:48",
+      "passageText": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "passageA": {
+        "ref": "Atos 7:48",
+        "text": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Estêvão lembra que Deus não cabe em templo feito por mãos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus maior que o templo"
+        },
+        {
+          "id": "b",
+          "text": "Mãos limitam a Deus"
+        },
+        {
+          "id": "c",
+          "text": "Deus mora só no prédio"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o Altíssimo não habita em templos construídos por mãos humanas",
+      "feedbackCorrect": "O Altíssimo não fica preso a templo construído por mãos.",
+      "feedbackWrong": {
+        "b": "Mãos edificam casas; não limitam o Altíssimo.",
+        "c": "O texto nega justamente essa leitura."
+      },
+      "hint": "Veja o que o Altíssimo não faz.",
+      "learningObjective": "Ligar a cena à grandeza de Deus.",
+      "evidence": [
+        "Atos 7:48"
+      ]
+    },
+    {
+      "id": "atos-cap-cam-atc-07-o-ceu-e-o-01",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Atos 7:47–48, depois de Salomão edificar a casa, o texto afirma que o Altíssimo passa a habitar preso nela.",
+      "prompt": "Em Atos 7:47–48, depois de Salomão edificar a casa, o texto afirma que o Altíssimo passa a habitar preso nela.",
+      "cue": "Em Atos 7:47–48, depois de Salomão edificar a casa, o texto afirma que o Altíssimo passa a habitar preso nela.",
+      "verseRef": "Atos 7:47–48",
+      "passageText": "Salomão foi quem edificou a casa para Ele. Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas",
+      "feedbackCorrect": "O \"Entretanto\" marca o contraste: a casa existe, mas Deus não fica preso nela.",
+      "feedbackWrong": {
+        "true": "Releia 7:48: o Altíssimo não habita em templos de mãos."
+      },
+      "hint": "Repare na palavra que liga 7:47 a 7:48.",
+      "learningObjective": "Compreender o contraste casa versus Altíssimo.",
+      "evidence": [
+        "Atos 7:47–48"
+      ]
+    },
+    {
+      "id": "atos-cap-cam-atc-07-o-ceu-e-o-02",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Atos 7:48, toque a palavra que marca o contraste com a casa de Salomão.",
+      "prompt": "Em Atos 7:48, toque a palavra que marca o contraste com a casa de Salomão.",
+      "cue": "Em Atos 7:48, toque a palavra que marca o contraste com a casa de Salomão.",
+      "verseRef": "Atos 7:48",
+      "passageText": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Altíssimo"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "Entretanto"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Entretanto, o Altíssimo não habita",
+      "feedbackCorrect": "\"Entretanto\" vira a página: há casa, mas Deus não cabe nela.",
+      "feedbackWrong": {
+        "a": "\"Altíssimo\" é quem não habita; o marcador é \"Entretanto\".",
+        "b": "O profeta é citado depois; o contraste abre o versículo."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Atos 7:48"
+      ]
+    },
+    {
+      "id": "atos-cap-cam-atc-07-o-ceu-e-o-03",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Atos 7:49 se relaciona com Atos 7:48?",
+      "prompt": "Como Atos 7:49 se relaciona com Atos 7:48?",
+      "cue": "Como Atos 7:49 se relaciona com Atos 7:48?",
+      "verseRef": "Atos 7:48–49",
+      "passageText": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta: O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A citação explica por que Deus não cabe em templo humano"
+        },
+        {
+          "id": "b",
+          "text": "A citação manda demolir toda casa de oração"
+        },
+        {
+          "id": "c",
+          "text": "A citação anula a história da tenda e de Salomão"
+        },
+        {
+          "id": "d",
+          "text": "A citação prova que Deus abandona a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "O céu é o meu trono, e a terra é o estrado dos meus pés",
+      "feedbackCorrect": "Se o céu é o trono, templo de mãos não contém o Altíssimo.",
+      "feedbackWrong": {
+        "b": "O texto questiona a pretensão de conter Deus, não manda demolir.",
+        "c": "A história é narrada; a citação corrige a idolatria do prédio.",
+        "d": "A terra é o estrado dos pés: Deus governa aqui também."
+      },
+      "hint": "Leia a citação como apoio ao \"não habita\".",
+      "learningObjective": "Relacionar a citação à negação do templo.",
+      "evidence": [
+        "Atos 7:48–49"
+      ]
+    },
+    {
+      "id": "atos-cap-cam-atc-07-o-ceu-e-o-04",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a cena em Atos 7:44–49?",
+      "prompt": "Como avança a cena em Atos 7:44–49?",
+      "cue": "Como avança a cena em Atos 7:44–49?",
+      "verseRef": "Atos 7:47–48",
+      "passageText": "Salomão foi quem edificou a casa para Ele. Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A tenda no deserto segundo o modelo"
+        },
+        {
+          "id": "b",
+          "text": "Salomão edifica a casa"
+        },
+        {
+          "id": "c",
+          "text": "O Altíssimo não cabe em templo humano"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "o Altíssimo não habita em templos construídos por mãos humanas",
+      "feedbackCorrect": "Da tenda à casa, e então à correção: Deus é maior.",
+      "feedbackWrong": {
+        "default": "A negação sobre o templo vem depois da casa de Salomão."
+      },
+      "hint": "Comece pelo tabernáculo no deserto.",
+      "learningObjective": "Compreender o movimento até a citação.",
+      "evidence": [
+        "Atos 7:44–49"
+      ]
+    },
+    {
+      "id": "atos-cap-cam-atc-07-o-ceu-e-o-05",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Atos 7:44, segundo que critério Moisés deveria fazer o tabernáculo?",
+      "prompt": "Em Atos 7:44, segundo que critério Moisés deveria fazer o tabernáculo?",
+      "cue": "Em Atos 7:44, segundo que critério Moisés deveria fazer o tabernáculo?",
+      "verseRef": "Atos 7:44",
+      "passageText": "Estava entre nossos pais, no deserto, o tabernáculo do Testemunho, conforme determinou aquele que disse a Moisés que o fizesse segundo o modelo que havia visto.",
+      "template": "Estava entre nossos pais, no deserto, o tabernáculo do Testemunho, conforme determinou aquele que disse a Moisés que o fizesse segundo o ___ que havia visto.",
+      "options": [
+        {
+          "id": "a",
+          "text": "modelo"
+        },
+        {
+          "id": "b",
+          "text": "capricho"
+        },
+        {
+          "id": "c",
+          "text": "sorte"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "segundo o modelo que havia visto",
+      "feedbackCorrect": "\"Modelo\" marca a ordem: a tenda segue o que Moisés viu.",
+      "feedbackWrong": {
+        "b": "Não é capricho: é o modelo mostrado.",
+        "c": "Não é sorte: é o modelo que havia visto."
+      },
+      "hint": "Olhe a palavra após \"segundo o\".",
+      "learningObjective": "Perceber a palavra que liga a tenda à ordem divina.",
+      "evidence": [
+        "Atos 7:44"
+      ]
+    },
+    {
+      "id": "atos-cap-cam-atc-07-o-ceu-e-o-06",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Atos 7:49 a Isaías 66:1?",
+      "prompt": "O que liga Atos 7:49 a Isaías 66:1?",
+      "cue": "O que liga Atos 7:49 a Isaías 66:1?",
+      "verseRef": "Atos 7:49",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "passageA": {
+        "ref": "Atos 7:49",
+        "text": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?"
+      },
+      "passageB": {
+        "ref": "Isaías 66:1",
+        "text": "Assim diz o Senhor: Os céus são o meu trono, e a terra é o estrado dos meus pés. Que casa me edificareis? E qual é o lugar do meu repouso?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus cabe num templo"
+        },
+        {
+          "id": "b",
+          "text": "Céu é trono de Deus"
+        },
+        {
+          "id": "c",
+          "text": "A terra não importa"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "O céu é o meu trono",
+      "feedbackCorrect": "Estêvão cita Isaías: o céu é o trono; que casa conteria Deus?",
+      "feedbackWrong": {
+        "a": "Os dois textos questionam a casa que conteria Deus.",
+        "c": "A terra é o estrado dos pés: está sob o governo dele."
+      },
+      "hint": "Compare a imagem do trono.",
+      "learningObjective": "Relacionar Atos 7:49 a Isaías 66:1.",
+      "evidence": [
+        "Atos 7:49",
+        "Isaías 66:1"
+      ]
+    },
+    {
+      "id": "atos-cap-pro-atc-07-o-ceu-e-o-01",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Atos 7:48–50 apresenta o Altíssimo como Deus cuja mão fez todas as coisas, e que não fica contido em templo de mãos humanas.",
+      "prompt": "Atos 7:48–50 apresenta o Altíssimo como Deus cuja mão fez todas as coisas, e que não fica contido em templo de mãos humanas.",
+      "cue": "Atos 7:48–50 apresenta o Altíssimo como Deus cuja mão fez todas as coisas, e que não fica contido em templo de mãos humanas.",
+      "verseRef": "Atos 7:49–50",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso? Não foi, por acaso, a minha mão que fez todas essas coisas?",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Não foi, por acaso, a minha mão que fez todas essas coisas?",
+      "feedbackCorrect": "Deus fez todas as coisas: templo algum o contém.",
+      "feedbackWrong": {
+        "false": "7:48–50 unem a negação do templo à mão criadora de Deus."
+      },
+      "hint": "Una 7:48 com a pergunta de 7:50.",
+      "learningObjective": "Interpretar a grandeza de Deus além do templo.",
+      "evidence": [
+        "Atos 7:48–50"
+      ]
+    },
+    {
+      "id": "atos-cap-pro-atc-07-o-ceu-e-o-02",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Atos 7:48, toque o título que destaca a grandeza de Deus acima do templo.",
+      "prompt": "Em Atos 7:48, toque o título que destaca a grandeza de Deus acima do templo.",
+      "cue": "Em Atos 7:48, toque o título que destaca a grandeza de Deus acima do templo.",
+      "verseRef": "Atos 7:48",
+      "passageText": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "options": [
+        {
+          "id": "a",
+          "text": "templos"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "Altíssimo"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o Altíssimo não habita em templos",
+      "feedbackCorrect": "\"Altíssimo\" sustenta a leitura: Deus está acima do prédio.",
+      "feedbackWrong": {
+        "a": "Templos são o que não o contêm.",
+        "b": "O profeta é citado; o título de Deus é Altíssimo."
+      },
+      "hint": "Procure o nome dado a Deus no versículo.",
+      "learningObjective": "Sustentar a leitura com o título Altíssimo.",
+      "evidence": [
+        "Atos 7:48"
+      ]
+    },
+    {
+      "id": "atos-cap-pro-atc-07-o-ceu-e-o-03",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Atos 7:44–50 sustenta sobre Deus e o templo?",
+      "prompt": "Que leitura Atos 7:44–50 sustenta sobre Deus e o templo?",
+      "cue": "Que leitura Atos 7:44–50 sustenta sobre Deus e o templo?",
+      "verseRef": "Atos 7:49",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus fica preso para sempre no templo de Salomão"
+        },
+        {
+          "id": "b",
+          "text": "Deus abandona a terra e só governa o céu distante"
+        },
+        {
+          "id": "c",
+          "text": "A tenda foi invenção humana sem qualquer modelo"
+        },
+        {
+          "id": "d",
+          "text": "Deus ordenou a tenda e a casa, mas não cabe em mãos humanas"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "O céu é o meu trono, e a terra é o estrado dos meus pés",
+      "feedbackCorrect": "Há história de tenda e casa, e correção: o céu é o trono.",
+      "feedbackWrong": {
+        "a": "7:48 nega que o Altíssimo habite em templos de mãos.",
+        "b": "A terra é o estrado dos pés: ele governa também aqui.",
+        "c": "7:44 fala do modelo que Moisés havia visto."
+      },
+      "hint": "Una a história (7:44–47) à citação (7:48–50).",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": [
+        "Atos 7:49"
+      ]
+    },
+    {
+      "id": "atos-cap-pro-atc-07-o-ceu-e-o-04",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o Deus maior que o templo na Bíblia?",
+      "prompt": "Qual sequência revela o Deus maior que o templo na Bíblia?",
+      "cue": "Qual sequência revela o Deus maior que o templo na Bíblia?",
+      "verseRef": "Atos 7:49",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés deve fazer tudo segundo o modelo"
+        },
+        {
+          "id": "b",
+          "text": "Salomão confessa que os céus não contêm a Deus"
+        },
+        {
+          "id": "c",
+          "text": "Estêvão cita o céu como trono do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "O céu é o meu trono",
+      "feedbackCorrect": "Do modelo à confissão de Salomão, até a citação de Estêvão.",
+      "feedbackWrong": {
+        "default": "Siga: Êxodo 25:40, 1 Reis 8:27, Atos 7:49."
+      },
+      "hint": "Comece pelo modelo mostrado a Moisés.",
+      "learningObjective": "Ver a grandeza de Deus como fio bíblico.",
+      "evidence": [
+        "Êxodo 25:40",
+        "1 Reis 8:27",
+        "Atos 7:49"
+      ]
+    },
+    {
+      "id": "atos-cap-pro-atc-07-o-ceu-e-o-05",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Atos 7:49, que palavra nomeia o lugar do governo de Deus?",
+      "prompt": "Em Atos 7:49, que palavra nomeia o lugar do governo de Deus?",
+      "cue": "Em Atos 7:49, que palavra nomeia o lugar do governo de Deus?",
+      "verseRef": "Atos 7:49",
+      "passageText": "O céu é o meu trono, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "template": "O céu é o meu ___, e a terra é o estrado dos meus pés; que casa me edificareis, diz o Senhor, ou qual seria o lugar do meu descanso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "túmulo"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "prisão"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "O céu é o meu trono",
+      "feedbackCorrect": "\"Trono\" carrega o sentido: Deus governa; não está preso ao templo.",
+      "feedbackWrong": {
+        "a": "Não é túmulo: é trono.",
+        "c": "Não é prisão: é trono."
+      },
+      "hint": "É o que o céu é para Deus na citação.",
+      "learningObjective": "Lembrar o termo que marca o governo de Deus.",
+      "evidence": [
+        "Atos 7:49"
+      ]
+    },
+    {
+      "id": "atos-cap-pro-atc-07-o-ceu-e-o-06",
+      "trail": "atos-cap",
+      "section": "atc-07-o-ceu-e-o",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Atos 7:48 a 1 Reis 8:27?",
+      "prompt": "O que liga Atos 7:48 a 1 Reis 8:27?",
+      "cue": "O que liga Atos 7:48 a 1 Reis 8:27?",
+      "verseRef": "Atos 7:48",
+      "passageText": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:",
+      "passageA": {
+        "ref": "Atos 7:48",
+        "text": "Entretanto, o Altíssimo não habita em templos construídos por mãos humanas, como proclama o profeta:"
+      },
+      "passageB": {
+        "ref": "1 Reis 8:27",
+        "text": "Mas será que, de fato, Deus habitará na terra? Eis que os céus e até o céu dos céus não te podem conter, quanto menos esta casa que eu edifiquei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus cabe na casa"
+        },
+        {
+          "id": "b",
+          "text": "Céus não contêm a Deus"
+        },
+        {
+          "id": "c",
+          "text": "Templo limita o Altíssimo"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "o Altíssimo não habita em templos construídos por mãos humanas",
+      "feedbackCorrect": "Salomão já confessava: nem os céus contêm a Deus; Estêvão ecoa.",
+      "feedbackWrong": {
+        "a": "Os dois textos questionam essa pretensão.",
+        "c": "O Altíssimo não é limitado pelo templo."
+      },
+      "hint": "Compare a pergunta de Salomão com a afirmação de Estêvão.",
+      "learningObjective": "Ligar Estêvão à oração de Salomão.",
+      "evidence": [
+        "Atos 7:48",
+        "1 Reis 8:27"
+      ]
+    }
+  ]
+}

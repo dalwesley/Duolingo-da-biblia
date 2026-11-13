@@ -1,0 +1,925 @@
+{
+  "study": {
+    "passageRef": "2 Reis 17:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 13:14–21"
+      },
+      {
+        "ref": "2 Reis 14:1–7"
+      },
+      {
+        "ref": "2 Reis 16:5–12"
+      },
+      {
+        "ref": "2 Reis 17:1–6"
+      }
+    ],
+    "context": "Esta Travessia revisa o declínio do norte: flechas de Eliseu, retidão parcial de Amazias, o altar de Acaz e a queda de Samaria.",
+    "keyword": "Samaria",
+    "keywordGloss": "A capital que cai e marca o fim do reino do norte no exílio.",
+    "focusQuestion": "Onde a desobediência prolongada já está pedindo um fim que você ainda trata como distante?",
+    "reflectionPrompts": [
+      "Fé tímida",
+      "Culto trocado",
+      "Cidade que cai"
+    ],
+    "facts": [
+      {
+        "text": "Eliseu chama a flecha da vitória do Senhor contra os sírios.",
+        "evidenceRef": "2 Reis 13:17",
+        "evidenceSpan": "Esta é a flecha da vitória do Senhor"
+      },
+      {
+        "text": "Jeoás feriu a terra três vezes e cessou.",
+        "evidenceRef": "2 Reis 13:18",
+        "evidenceSpan": "ele a feriu três vezes e cessou"
+      },
+      {
+        "text": "Amazias fez o reto, mas não como Davi.",
+        "evidenceRef": "2 Reis 14:3",
+        "evidenceSpan": "fez o que era reto aos olhos do Senhor, mas não como seu pai Davi"
+      },
+      {
+        "text": "Acaz enviou a planta do altar de Damasco a Urias.",
+        "evidenceRef": "2 Reis 16:10",
+        "evidenceSpan": "enviou ao sacerdote Urias a planta e o modelo"
+      },
+      {
+        "text": "Samaria foi sitiada por três anos.",
+        "evidenceRef": "2 Reis 17:5",
+        "evidenceSpan": "a sitiou por três anos"
+      },
+      {
+        "text": "A Assíria tomou Samaria e transportou Israel.",
+        "evidenceRef": "2 Reis 17:6",
+        "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "vitória",
+        "gloss": "O anúncio de Eliseu que a fé tímida limita."
+      },
+      {
+        "term": "altar",
+        "gloss": "O culto estrangeiro que Acaz copia."
+      },
+      {
+        "term": "Samaria",
+        "gloss": "A capital que cai e marca o exílio do norte."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Flechas e limite da fé tímida",
+        "evidenceRef": "2 Reis 13:17–19"
+      },
+      {
+        "label": "Retidão parcial e altos em Judá",
+        "evidenceRef": "2 Reis 14:3–4"
+      },
+      {
+        "label": "Socorro à Assíria e altar copiado",
+        "evidenceRef": "2 Reis 16:7–12"
+      },
+      {
+        "label": "Cerco, queda e deportação",
+        "evidenceRef": "2 Reis 17:5–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Deveria ferir cinco ou seis vezes; porém agora só três.",
+        "marker": "Porém",
+        "evidenceRef": "2 Reis 13:19"
+      },
+      {
+        "kind": "causa",
+        "text": "Os altos ficam, pois o povo ainda sacrificava neles.",
+        "marker": "pois",
+        "evidenceRef": "2 Reis 14:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque a Assíria sobe, Samaria é sitiada e cai.",
+        "marker": "Porque",
+        "evidenceRef": "2 Reis 17:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Reis 2:12",
+        "bridge": "Clamor ao carro de Israel"
+      },
+      {
+        "ref": "Deuteronômio 28:36",
+        "bridge": "Aviso de exílio cumprido"
+      },
+      {
+        "ref": "Isaías 7:1–2",
+        "bridge": "Cerco contra Acaz"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A fé tímida de Jeoás não muda o alcance da vitória.",
+        "why": "Eliseu limita a três as vitórias porque ele cessou cedo."
+      },
+      {
+        "text": "Acaz confia no Senhor ao pedir ajuda à Assíria.",
+        "why": "Ele se chama servo do rei estrangeiro e copia o altar."
+      },
+      {
+        "text": "Samaria cai, mas Israel permanece na terra.",
+        "why": "O povo é transportado para a Assíria."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Reis 17:6, o que a Assíria fez a Samaria e a Israel?",
+    "centralInsight": "A desobediência prolongada termina em exílio"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 13:18, Jeoás feriu a terra seis vezes sem parar.",
+      "verseRef": "2 Reis 13:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele a feriu três vezes e cessou",
+      "feedbackCorrect": "Foram três vezes, e ele cessou.",
+      "feedbackWrong": {
+        "true": "O verso diz três vezes e cessou."
+      },
+      "hint": "Conte os golpes.",
+      "learningObjective": "Observar os três golpes.",
+      "evidence": [
+        "2 Reis 13:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 13:17, toque o que a flecha anuncia.",
+      "verseRef": "2 Reis 13:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "vitória"
+        },
+        {
+          "id": "b",
+          "text": "janela"
+        },
+        {
+          "id": "c",
+          "text": "Afeca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta é a flecha da vitória do Senhor",
+      "feedbackCorrect": "A flecha da vitória.",
+      "feedbackWrong": {
+        "b": "A janela é o lugar.",
+        "c": "Afeca é o campo."
+      },
+      "hint": "Leia a declaração de Eliseu.",
+      "learningObjective": "Identificar a vitória.",
+      "evidence": [
+        "2 Reis 13:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 14:4, o que não foi removido em Judá?",
+      "verseRef": "2 Reis 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os altos"
+        },
+        {
+          "id": "b",
+          "text": "O templo"
+        },
+        {
+          "id": "c",
+          "text": "O Vale do Sal"
+        },
+        {
+          "id": "d",
+          "text": "O trono de Amazias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os altos não foram removidos",
+      "feedbackCorrect": "Os altos ficaram.",
+      "feedbackWrong": {
+        "b": "O texto fala dos altos.",
+        "c": "O Vale do Sal é de outra cena.",
+        "d": "Amazias reina."
+      },
+      "hint": "Veja o que o povo ainda usava.",
+      "learningObjective": "Notar os altos.",
+      "evidence": [
+        "2 Reis 14:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 17:6 na ordem do texto.",
+      "verseRef": "2 Reis 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "o rei da Assíria tomou Samaria"
+        },
+        {
+          "id": "b",
+          "text": "transportou Israel para a Assíria"
+        },
+        {
+          "id": "c",
+          "text": "os fez habitar em Halah, em Habor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Toma, deporta e faz habitar.",
+      "feedbackWrong": {
+        "default": "Comece pela tomada."
+      },
+      "hint": "O que a Assíria faz primeiro?",
+      "learningObjective": "Seguir a ordem da queda.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 13:17, complete: Abra a janela para o ___.",
+      "verseRef": "2 Reis 13:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "oriente"
+        },
+        {
+          "id": "b",
+          "text": "ocidente"
+        },
+        {
+          "id": "c",
+          "text": "sul"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abra a janela para o oriente",
+      "feedbackCorrect": "Oriente.",
+      "feedbackWrong": {
+        "b": "Não é ocidente.",
+        "c": "Não é sul."
+      },
+      "hint": "Direção da janela.",
+      "learningObjective": "Lembrar oriente.",
+      "evidence": [
+        "2 Reis 13:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 17:6 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 17:6",
+      "passageA": {
+        "ref": "2 Reis 17:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A desobediência prolongada do norte termina em exílio."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Queda e deportação"
+        },
+        {
+          "id": "b",
+          "text": "Vitória sem custo"
+        },
+        {
+          "id": "c",
+          "text": "Trono restaurado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Queda e exílio fecham o bloco.",
+      "feedbackWrong": {
+        "b": "Há perda da terra.",
+        "c": "Há deportação."
+      },
+      "hint": "O que acontece a Israel?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 16:10, toque o que Acaz viu e mandou copiar.",
+      "verseRef": "2 Reis 16:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "altar"
+        },
+        {
+          "id": "b",
+          "text": "Damasco"
+        },
+        {
+          "id": "c",
+          "text": "Urias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vendo ali um altar",
+      "feedbackCorrect": "Um altar.",
+      "feedbackWrong": {
+        "b": "Damasco é o lugar, não o que ele copiou.",
+        "c": "Urias recebe a planta; não é o modelo."
+      },
+      "hint": "O que ele envia a Urias?",
+      "learningObjective": "Identificar o altar.",
+      "evidence": [
+        "2 Reis 16:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 14:3 na ordem do texto.",
+      "verseRef": "2 Reis 14:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "fez o que era reto aos olhos do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "mas não como seu pai Davi"
+        },
+        {
+          "id": "c",
+          "text": "atuou conforme tudo o que fez seu pai Joás"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "fez o que era reto aos olhos do Senhor, mas não como seu pai Davi",
+      "feedbackCorrect": "Reto, não como Davi, como Joás.",
+      "feedbackWrong": {
+        "default": "Comece pelo reto."
+      },
+      "hint": "Qual julgamento vem primeiro?",
+      "learningObjective": "Seguir o julgamento de Amazias.",
+      "evidence": [
+        "2 Reis 14:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 13:19, Eliseu diz que, por ter ferido três vezes, Jeoás consumirá os sírios por completo.",
+      "verseRef": "2 Reis 13:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porém, agora, você ferirá os sírios apenas três vezes",
+      "feedbackCorrect": "O Porém limita o alcance a três.",
+      "feedbackWrong": {
+        "true": "Leia o Porém: apenas três vezes."
+      },
+      "hint": "Olhe o contraste final.",
+      "learningObjective": "Ver o limite dos golpes.",
+      "evidence": [
+        "2 Reis 13:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 13:19, toque o marcador de contraste.",
+      "verseRef": "2 Reis 13:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "assim"
+        },
+        {
+          "id": "c",
+          "text": "agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, agora, você ferirá os sírios apenas três vezes",
+      "feedbackCorrect": "Porém marca o contraste.",
+      "feedbackWrong": {
+        "b": "Assim liga o resultado esperado.",
+        "c": "Agora situa o limite."
+      },
+      "hint": "Procure a virada.",
+      "learningObjective": "Tocar o Porém.",
+      "evidence": [
+        "2 Reis 13:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Reis 14:4 faz entre os altos e o povo?",
+      "verseRef": "2 Reis 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ficam porque o povo ainda sacrificava neles"
+        },
+        {
+          "id": "b",
+          "text": "Somem porque o povo os rejeitou"
+        },
+        {
+          "id": "c",
+          "text": "Ficam sem qualquer causa no texto"
+        },
+        {
+          "id": "d",
+          "text": "O povo nunca usou os altos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o povo ainda sacrificava e queimava incenso nos altos",
+      "feedbackCorrect": "O pois explica a permanência.",
+      "feedbackWrong": {
+        "b": "Não foram removidos.",
+        "c": "Há causa: pois.",
+        "d": "O povo sacrificava."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa dos altos.",
+      "evidence": [
+        "2 Reis 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "2 Reis 17:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flechas e limite da fé tímida"
+        },
+        {
+          "id": "b",
+          "text": "Socorro à Assíria e altar copiado"
+        },
+        {
+          "id": "c",
+          "text": "Cerco, queda e deportação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Flechas, altar e queda.",
+      "feedbackWrong": {
+        "default": "Comece pelas flechas de Eliseu."
+      },
+      "hint": "O que abre o bloco?",
+      "learningObjective": "Ordenar a estrutura do bloco.",
+      "evidence": [
+        "2 Reis 13:17",
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 16:7, complete: Sou teu ___ e teu filho.",
+      "verseRef": "2 Reis 16:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "servo"
+        },
+        {
+          "id": "b",
+          "text": "irmão"
+        },
+        {
+          "id": "c",
+          "text": "aliado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou teu servo e teu filho",
+      "feedbackCorrect": "Servo.",
+      "feedbackWrong": {
+        "b": "Não é irmão.",
+        "c": "A palavra é servo."
+      },
+      "hint": "Como Acaz se apresenta.",
+      "learningObjective": "Lembrar servo.",
+      "evidence": [
+        "2 Reis 16:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 13:14 a 2 Reis 2:12?",
+      "verseRef": "2 Reis 13:14",
+      "passageA": {
+        "ref": "2 Reis 13:14"
+      },
+      "passageB": {
+        "ref": "2 Reis 2:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor ao carro de Israel"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio sem pranto"
+        },
+        {
+          "id": "c",
+          "text": "Festa pela morte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu pai, meu pai! O carro de Israel e seus cavaleiros!",
+      "feedbackCorrect": "O mesmo clamor ecoa.",
+      "feedbackWrong": {
+        "b": "Há pranto.",
+        "c": "Há choro."
+      },
+      "hint": "Compare as palavras do rei.",
+      "learningObjective": "Ligar ao clamor de 2 Reis 2.",
+      "evidence": [
+        "2 Reis 13:14",
+        "2 Reis 2:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 17:4, toque o marcador de resultado.",
+      "verseRef": "2 Reis 17:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso"
+        },
+        {
+          "id": "b",
+          "text": "pois"
+        },
+        {
+          "id": "c",
+          "text": "anualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, o rei da Assíria o encadeou",
+      "feedbackCorrect": "Por isso marca o resultado.",
+      "feedbackWrong": {
+        "b": "Pois explica a conspiração.",
+        "c": "Anualmente descreve o costume."
+      },
+      "hint": "Procure a consequência.",
+      "learningObjective": "Tocar Por isso.",
+      "evidence": [
+        "2 Reis 17:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o caminho de Acaz.",
+      "verseRef": "2 Reis 16:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedido de socorro de Acaz"
+        },
+        {
+          "id": "b",
+          "text": "Cópia do altar de Damasco"
+        },
+        {
+          "id": "c",
+          "text": "Sacrifício no altar novo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sou teu servo e teu filho; vem e livra-me",
+      "feedbackCorrect": "Pedido, cópia e sacrifício.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido de Acaz."
+      },
+      "hint": "O que Acaz faz antes do altar?",
+      "learningObjective": "Ordenar o caminho de Acaz.",
+      "evidence": [
+        "2 Reis 16:7",
+        "2 Reis 16:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 13–17, a desobediência prolongada do norte termina com a tomada de Samaria e o exílio de Israel.",
+      "verseRef": "2 Reis 17:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "A queda fecha o processo do bloco.",
+      "feedbackWrong": {
+        "false": "O verso registra tomada e deportação."
+      },
+      "hint": "Veja o destino de Samaria e de Israel.",
+      "learningObjective": "Sustentar a leitura do exílio.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 17:6, toque o que sustenta o fim do povo na terra.",
+      "verseRef": "2 Reis 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "transportou"
+        },
+        {
+          "id": "b",
+          "text": "nono"
+        },
+        {
+          "id": "c",
+          "text": "Habor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transportou Israel para a Assíria",
+      "feedbackCorrect": "Israel é transportado.",
+      "feedbackWrong": {
+        "b": "Nono marca o ano.",
+        "c": "Habor é destino."
+      },
+      "hint": "O que a Assíria faz a Israel?",
+      "learningObjective": "Tocar a deportação.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une flechas tímidas, altar copiado e Samaria caída?",
+      "verseRef": "2 Reis 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A desobediência prolongada termina em exílio"
+        },
+        {
+          "id": "b",
+          "text": "A fé tímida não limita nada no bloco"
+        },
+        {
+          "id": "c",
+          "text": "Acaz restaura o culto sem mudança"
+        },
+        {
+          "id": "d",
+          "text": "Israel permanece seguro em Samaria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "O bloco fecha no exílio.",
+      "feedbackWrong": {
+        "b": "Eliseu limita a três.",
+        "c": "Há altar estrangeiro.",
+        "d": "Há deportação."
+      },
+      "hint": "Una o processo ao fim.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do declínio.",
+      "verseRef": "2 Reis 17:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé tímida limita a vitória"
+        },
+        {
+          "id": "b",
+          "text": "Culto trocado por altar estrangeiro"
+        },
+        {
+          "id": "c",
+          "text": "Samaria cai e o povo vai ao exílio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Limite, troca e exílio.",
+      "feedbackWrong": {
+        "default": "Comece pela fé tímida."
+      },
+      "hint": "O que vem antes da queda?",
+      "learningObjective": "Encadear o declínio.",
+      "evidence": [
+        "2 Reis 13:19",
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 17:6, complete: transportou Israel para a ___.",
+      "verseRef": "2 Reis 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assíria"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "Babilônia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transportou Israel para a Assíria",
+      "feedbackCorrect": "Assíria.",
+      "feedbackWrong": {
+        "b": "O Egito foi conspiração.",
+        "c": "Não é a Babilônia."
+      },
+      "hint": "Para onde Israel vai.",
+      "learningObjective": "Lembrar Assíria.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 17:6 a Deuteronômio 28:36?",
+      "verseRef": "2 Reis 17:6",
+      "passageA": {
+        "ref": "2 Reis 17:6"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 28:36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aviso de exílio cumprido"
+        },
+        {
+          "id": "b",
+          "text": "Promessa de trono eterno"
+        },
+        {
+          "id": "c",
+          "text": "Paz sem deportação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transportou Israel para a Assíria",
+      "feedbackCorrect": "O exílio cumpre o aviso.",
+      "feedbackWrong": {
+        "b": "Há deportação.",
+        "c": "Há transporte."
+      },
+      "hint": "Compare o destino do povo.",
+      "learningObjective": "Ligar ao aviso da Lei.",
+      "evidence": [
+        "2 Reis 17:6",
+        "Deuteronômio 28:36"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 16:12, toque o que sustenta que Acaz adotou o culto copiado.",
+      "verseRef": "2 Reis 16:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacrificando"
+        },
+        {
+          "id": "b",
+          "text": "Vindo"
+        },
+        {
+          "id": "c",
+          "text": "viu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se aproximou dele, sacrificando sobre ele",
+      "feedbackCorrect": "Ele sacrifica no altar.",
+      "feedbackWrong": {
+        "b": "Vindo só marca a chegada.",
+        "c": "Ver ainda não é cultuar."
+      },
+      "hint": "O que ele faz sobre o altar?",
+      "learningObjective": "Tocar o sacrifício.",
+      "evidence": [
+        "2 Reis 16:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do juízo sobre o norte.",
+      "verseRef": "2 Reis 17:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conspiração e cárcere de Oséias"
+        },
+        {
+          "id": "b",
+          "text": "Cerco de três anos a Samaria"
+        },
+        {
+          "id": "c",
+          "text": "Deportação de Israel à Assíria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos",
+      "feedbackCorrect": "Cárcere, cerco e exílio.",
+      "feedbackWrong": {
+        "default": "Comece pela conspiração."
+      },
+      "hint": "O que vem antes do cerco?",
+      "learningObjective": "Encadear o juízo final.",
+      "evidence": [
+        "2 Reis 17:4",
+        "2 Reis 17:6"
+      ]
+    }
+  ]
+}

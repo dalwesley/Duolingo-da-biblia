@@ -599,7 +599,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get categoryPanoramaBlurb =>
-      'La Biblia como una sola historia, de la creación a la nueva creación. Antes de entrar libro por libro, esta ruta muestra el arco, el orden de los libros y el lugar de cada parte.';
+      'Los puntos altos de cada libro en pocas escenas. Para conocer el libro entero antes de ir capítulo a capítulo.';
 
   @override
   String get categoryPanoramaTitle => 'Panorama';
@@ -2608,8 +2608,8 @@ class AppLocalizationsEs extends AppLocalizations {
     String _temp0 = intl.Intl.pluralLogic(
       count,
       locale: localeName,
-      other: '$count días sin estudiar',
-      one: '1 día sin estudiar',
+      other: '$count días sin caminar',
+      one: '1 día sin caminar',
     );
     return '$_temp0';
   }
@@ -2762,7 +2762,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get groupSeatDaysInWeek => 'Días en la semana';
 
   @override
-  String get groupSeatIdle => 'aún no estudió esta semana';
+  String get groupSeatIdle => 'aún no caminó esta semana';
 
   @override
   String groupSeatMakeLeader(String name) {
@@ -2775,7 +2775,7 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get groupSeatNever => 'aún no estudió';
+  String get groupSeatNever => 'aún no caminó';
 
   @override
   String get groupSeatSteps => 'Pasos';
@@ -2787,13 +2787,13 @@ class AppLocalizationsEs extends AppLocalizations {
   String get groupSeatStudyNotYet => 'Aún no';
 
   @override
-  String get groupSeatToday => 'estudió hoy';
+  String get groupSeatToday => 'caminó hoy';
 
   @override
   String get groupSeatViewProfile => 'Ver perfil';
 
   @override
-  String get groupSeatWeek => 'estudió esta semana';
+  String get groupSeatWeek => 'caminó esta semana';
 
   @override
   String get groupSetupKindLabel => 'Para qué es el grupo';
@@ -2807,18 +2807,18 @@ class AppLocalizationsEs extends AppLocalizations {
   String get groupSetupNameLabel => 'Nombre';
 
   @override
-  String get groupStudyAgain => 'Ya lo hiciste · Estudiar de nuevo';
-
-  @override
-  String get groupStudyCta => 'Estudiar con el grupo';
-
-  @override
-  String groupStudyDoneCount(int done, int total) {
-    return '$done de $total ya lo hicieron';
-  }
+  String get groupStudyDoneTapAgain => 'Ya la hiciste · toca para repasar';
 
   @override
   String get groupStudySwap => 'Cambiar';
+
+  @override
+  String get groupStudyTapToOpen => 'Toca para estudiar';
+
+  @override
+  String groupStudyTrailLine(String trail, int n, int total) {
+    return '$trail · escena $n de $total';
+  }
 
   @override
   String get groupWeekStudy => 'Estudio de la semana';
@@ -3832,7 +3832,7 @@ class AppLocalizationsEs extends AppLocalizations {
     String code,
     String storeUrl,
   ) {
-    return 'Únete al grupo \"$name\" en Stway.\nToca o apunta la cámara:\n$url\n\nCódigo: $code\n\nLa lista muestra quién estudió esta semana.\n\n¿Aún no tienes la app? Descárgala: $storeUrl';
+    return 'Únete al grupo \"$name\" en Stway.\nToca o apunta la cámara:\n$url\n\nCódigo: $code\n\nLa lista muestra quién caminó esta semana.\n\n¿Aún no tienes la app? Descárgala: $storeUrl';
   }
 
   @override
@@ -5820,6 +5820,26 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String notifPlanDayBody(String title) {
+    return '$title: el grupo empieza el día junto.';
+  }
+
+  @override
+  String notifPlanDayTitle(int n, int total) {
+    return 'Abrió el día $n de $total';
+  }
+
+  @override
+  String notifPlanEveningBody(String title) {
+    return '$title: todavía hay tiempo hoy.';
+  }
+
+  @override
+  String notifPlanEveningTitle(int n) {
+    return 'Falta el día $n del propósito';
+  }
+
+  @override
   String get notifPracticeTitle => 'Hora de practicar';
 
   @override
@@ -6348,10 +6368,6 @@ class AppLocalizationsEs extends AppLocalizations {
   String get paywallPerkBadgeTitle => 'Sello de Peregrino';
 
   @override
-  String get paywallPerkExplainBody =>
-      'Cada error queda guardado, con la respuesta correcta y el porqué.';
-
-  @override
   String get paywallPerkGiftBody =>
       'Comparte 1 ruta de Peregrino+ al mes con un amigo. Queda abierta completa para quien la recibe, sin pagar.';
 
@@ -6401,25 +6417,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get paywallPerkSeasonTitle => 'Rutas de temporada';
 
   @override
-  String get paywallPerkStreakBody =>
-      'Tu racha, los días de esta semana y cómo caminaste en los últimos tres meses.';
-
-  @override
-  String get paywallPerkStreakTitle => 'Tus días';
-
-  @override
   String get paywallPerkThemesBody =>
       'Sermón del Monte, La Promesa, Oración, Familia, Historia de la Iglesia y otras rutas — completas desde la 1ª escena.';
 
   @override
   String get paywallPerkThemesTitle => 'Rutas por tema';
-
-  @override
-  String get paywallPerkWeeklyBody =>
-      'Una vez por semana, vuelves a lo que aprendiste. Las preguntas empiezan por lo que fallaste.';
-
-  @override
-  String get paywallPerkWeeklyTitle => 'Repaso de la semana';
 
   @override
   String get paywallPitch =>
@@ -6766,6 +6768,58 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planAlreadyRead => 'Ya leídos';
 
   @override
+  String get planAnswerCta => 'Responder';
+
+  @override
+  String get planAnswerDelete => 'Borrar';
+
+  @override
+  String get planAnswerDeleteBody => 'Desaparece para todo el grupo.';
+
+  @override
+  String get planAnswerDeleteTitle => '¿Borrar esta respuesta?';
+
+  @override
+  String get planAnswerEmpty => 'Nadie más respondió todavía.';
+
+  @override
+  String get planAnswerError => 'No se pudo enviar. Inténtalo de nuevo.';
+
+  @override
+  String get planAnswerHint =>
+      'Mantén pulsada una respuesta para denunciarla o borrarla.';
+
+  @override
+  String get planAnswerSaved => 'Respuesta enviada.';
+
+  @override
+  String get planAnswerSend => 'Enviar';
+
+  @override
+  String get planAnswerSheetHint =>
+      'Escribe pocas líneas. Solo el grupo lo ve.';
+
+  @override
+  String planAnswersCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count personas ya respondieron.',
+      one: '1 persona ya respondió.',
+      zero: 'Nadie respondió todavía.',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planAnswersLocked => 'Responde para ver lo que escribió el grupo.';
+
+  @override
+  String planAnswersTitle(int n) {
+    return 'Respuestas del día $n';
+  }
+
+  @override
   String planApproxDays(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6801,6 +6855,11 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planAtYourPace => 'A tu ritmo';
 
   @override
+  String planAutoTitle(String what, int count) {
+    return '$what en $count días';
+  }
+
+  @override
   String get planBibleFinished => 'Terminaste la Biblia con este plan.';
 
   @override
@@ -6815,6 +6874,38 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String planCatchUpHint(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días para recuperar',
+      one: '1 día para recuperar',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planCatchUpTag => 'Recuperar';
+
+  @override
+  String planChain(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Cadena de $count días',
+      one: 'Cadena de 1 día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planChainBody =>
+      'Cuando la mitad del grupo cumple el día en su fecha, la cadena crece.';
+
+  @override
+  String get planChainZero => 'Empiecen la cadena';
+
+  @override
   String planChaptersSkipped(int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6823,6 +6914,36 @@ class AppLocalizationsEs extends AppLocalizations {
       one: '1 capítulo omitido',
     );
     return '$_temp0';
+  }
+
+  @override
+  String get planCloseReveal => 'Cerrar y revelar';
+
+  @override
+  String get planClosing => 'Cerrando…';
+
+  @override
+  String get planClosingBannerTitle => 'El propósito del grupo fue cerrado';
+
+  @override
+  String planDateRange(int count, String from, String to) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días',
+      one: '1 día',
+    );
+    return '$_temp0 · del $from al $to';
+  }
+
+  @override
+  String planDayDate(int n, String date) {
+    return 'Día $n · $date';
+  }
+
+  @override
+  String planDayDone(int n) {
+    return 'Día $n hecho';
   }
 
   @override
@@ -6837,12 +6958,173 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get planDayEditNote => 'Mensaje de quien guía (opcional)';
+
+  @override
+  String get planDayEditQuestion => 'Pregunta';
+
+  @override
+  String get planDayEmpty => 'Sin escena ni capítulo este día';
+
+  @override
+  String planDayNoteLine(String text) {
+    return 'Mensaje: $text';
+  }
+
+  @override
   String planDayNumber(int day) {
     return 'Día $day';
   }
 
   @override
+  String planDayQuestionLine(String text) {
+    return 'Pregunta: $text';
+  }
+
+  @override
   String get planDone => 'Hecho';
+
+  @override
+  String planEditorCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días con algo para hacer',
+      one: '1 día con algo para hacer',
+      zero: 'Ningún día en el período',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planEditorDayOpen => 'Ya abrió';
+
+  @override
+  String planEditorDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días',
+      one: '1 día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planEditorDuration => 'Duración';
+
+  @override
+  String get planEditorDurationBody =>
+      'Cuántas semanas camina junto el grupo. Tú eliges el día de inicio; el final cierra la última semana.';
+
+  @override
+  String get planEditorEnd => 'Termina';
+
+  @override
+  String get planEditorHideDays => 'Ocultar los días';
+
+  @override
+  String get planEditorHowLong => 'Por cuánto tiempo';
+
+  @override
+  String planEditorNameDefault(int count) {
+    return 'Propósito de $count días';
+  }
+
+  @override
+  String get planEditorNeedContent =>
+      'Elige la escena de la ruta o el capítulo de la Biblia para empezar.';
+
+  @override
+  String get planEditorQuestion => 'Pregunta del día';
+
+  @override
+  String planEditorReadingEnds(int n) {
+    return 'El libro termina el día $n; después, sin capítulo.';
+  }
+
+  @override
+  String planEditorReadingPreview(String first, String last) {
+    return 'Día 1: $first · último día: $last';
+  }
+
+  @override
+  String get planEditorRename => 'Editar el nombre';
+
+  @override
+  String get planEditorRestHint =>
+      'Toca un día para dejarlo de descanso: ese día no abre nada.';
+
+  @override
+  String get planEditorRestShort => 'Días de la semana con propósito';
+
+  @override
+  String get planEditorSave => 'Guardar';
+
+  @override
+  String get planEditorSaveError => 'No se pudo guardar el propósito.';
+
+  @override
+  String get planEditorSaveNew => 'Empezar el propósito';
+
+  @override
+  String get planEditorSaved => 'Propósito guardado. El grupo ya lo ve.';
+
+  @override
+  String planEditorShowDays(int count) {
+    return 'Ver la pregunta de cada día ($count)';
+  }
+
+  @override
+  String get planEditorStart => 'Empieza';
+
+  @override
+  String get planEditorTitleEdit => 'Editar propósito';
+
+  @override
+  String get planEditorTitleNew => 'Nuevo propósito';
+
+  @override
+  String planEditorWeeks(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count semanas',
+      one: '1 semana',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planEditorWhatDaily => 'Lo que el grupo hace cada día';
+
+  @override
+  String get planEmptyCta => 'Crear el propósito';
+
+  @override
+  String get planEmptyLabel => 'Propósito del grupo';
+
+  @override
+  String get planEmptyLeaderBody =>
+      'Elige la ruta, el libro y las fechas. Cada día el grupo recibe una escena, un capítulo y una pregunta.';
+
+  @override
+  String get planEmptyLeaderTitle => '¿Cuál será el propósito del grupo?';
+
+  @override
+  String planEmptyMemberBody(String leader) {
+    return '$leader elige la ruta, el libro y las fechas. Después, el día de cada uno aparece aquí.';
+  }
+
+  @override
+  String get planEmptyMemberTitle => 'El propósito aún no empezó';
+
+  @override
+  String get planEndBody =>
+      'Los días que faltan se quitan y el propósito termina hoy. Lo que el grupo ya hizo sigue contando.';
+
+  @override
+  String get planEndConfirm => 'Terminar';
 
   @override
   String get planEndConfirmAction => 'Terminar';
@@ -6858,10 +7140,93 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planEndCta => 'Terminar el plan';
 
   @override
+  String get planEndTitle => '¿Terminar el propósito?';
+
+  @override
   String get planEstimate => 'Estimación';
 
   @override
   String get planFinished => 'Plan completado';
+
+  @override
+  String planFirstDay(String items) {
+    return 'El día 1: $items';
+  }
+
+  @override
+  String get planHearthEnds => 'Termina en';
+
+  @override
+  String get planHearthLabel => 'El grupo en el propósito';
+
+  @override
+  String get planHearthStarts => 'Empieza en';
+
+  @override
+  String get planInviteBody =>
+      'Tú eliges cuándo empieza y cuándo termina. Cada día el grupo recibe algo para hacer junto: un capítulo, una escena y una pregunta.';
+
+  @override
+  String get planInviteTitle => 'Crear un propósito';
+
+  @override
+  String get planItemManual => 'Marcar el día como hecho';
+
+  @override
+  String get planItemManualBody =>
+      'Hoy es solo tú y Dios. Márcalo cuando termines.';
+
+  @override
+  String get planItemQuestion => 'Pregunta del día';
+
+  @override
+  String planItemRead(String ref) {
+    return 'Leer $ref';
+  }
+
+  @override
+  String planItemScene(String title) {
+    return 'Escena: $title';
+  }
+
+  @override
+  String get planJoin => 'Me apunto';
+
+  @override
+  String get planJoined => 'Estás dentro';
+
+  @override
+  String planJoinedCount(int count, int total) {
+    return '$count de $total están dentro';
+  }
+
+  @override
+  String planJoinedToast(String when) {
+    return 'Estás dentro. El día 1 abre $when.';
+  }
+
+  @override
+  String planLabelDay(int n, int total) {
+    return 'Propósito · Día $n de $total';
+  }
+
+  @override
+  String get planLabelEnded => 'Propósito terminado';
+
+  @override
+  String planLabelStartsIn(int days) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Propósito · empieza en $days días',
+      one: 'Propósito · empieza mañana',
+      zero: 'Propósito · empieza hoy',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get planLastDayDone => 'Era el último día del propósito.';
 
   @override
   String get planLockedGuidedBody =>
@@ -6871,12 +7236,40 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planMarkDayRead => 'Marcar la lectura del día';
 
   @override
+  String get planMenuCreate => 'Crear propósito';
+
+  @override
+  String get planMenuEdit => 'Editar propósito';
+
+  @override
+  String get planMenuEnd => 'Terminar el propósito';
+
+  @override
   String planMinutes(int minutes) {
     return '$minutes min';
   }
 
   @override
+  String planNextOpens(int n, String when) {
+    return 'El día $n abre $when.';
+  }
+
+  @override
   String get planNextReading => 'Próxima lectura';
+
+  @override
+  String planNotStartedBody(int days, String date) {
+    String _temp0 = intl.Intl.pluralLogic(
+      days,
+      locale: localeName,
+      other: 'Empieza en $days días, $date.',
+      one: 'Empieza mañana, $date.',
+    );
+    return '$_temp0 El primer día, la escena y el capítulo del grupo aparecen aquí.';
+  }
+
+  @override
+  String get planNotStartedTitle => 'El propósito aún no empezó';
 
   @override
   String get planOrderAlphabetical => 'Orden alfabético';
@@ -6900,6 +7293,26 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planPendingChapters => 'Capítulos pendientes';
 
   @override
+  String planPerDay(int count) {
+    return '$count por día';
+  }
+
+  @override
+  String get planPickReadingChapter => 'Capítulo';
+
+  @override
+  String get planPickReadingSave => 'Empezar aquí';
+
+  @override
+  String get planPickReadingSubtitle => 'El grupo lee en orden desde aquí.';
+
+  @override
+  String get planPickReadingTitle => 'Libro y capítulo de inicio';
+
+  @override
+  String get planPickSceneTitle => 'Escena de inicio';
+
+  @override
   String planPortionMeta(int minutes, int count) {
     String _temp0 = intl.Intl.pluralLogic(
       count,
@@ -6918,6 +7331,69 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String planProgressGuided(int percent) {
     return '$percent% del plan';
+  }
+
+  @override
+  String planPulseDone(int done, int total, int n) {
+    return '$done de $total ya cumplieron el día $n';
+  }
+
+  @override
+  String planPulseNone(int n) {
+    return 'Nadie cumplió el día $n todavía. Sé el primero.';
+  }
+
+  @override
+  String get planPulseTitle => 'Hoy en el grupo';
+
+  @override
+  String planQ1(String ref) {
+    return '¿Qué muestra $ref sobre quién es Dios?';
+  }
+
+  @override
+  String planQ10(String ref) {
+    return '¿Qué promesa o advertencia aparece en $ref?';
+  }
+
+  @override
+  String planQ2(String ref) {
+    return '¿Qué frase de $ref se quedó contigo hoy?';
+  }
+
+  @override
+  String planQ3(String ref) {
+    return '¿Qué te pide $ref esta semana?';
+  }
+
+  @override
+  String planQ4(String ref) {
+    return '¿Dónde te ves en $ref?';
+  }
+
+  @override
+  String planQ5(String ref) {
+    return '¿Qué te sorprendió en $ref?';
+  }
+
+  @override
+  String planQ6(String ref) {
+    return '¿Por qué te hace agradecer $ref?';
+  }
+
+  @override
+  String planQ7(String ref) {
+    return '¿Qué pregunta llevarías al grupo sobre $ref?';
+  }
+
+  @override
+  String planQ8(String ref) {
+    return '¿Cómo apunta $ref a Jesús?';
+  }
+
+  @override
+  String planQ9(String ref) {
+    return '¿Qué quieres pedirle a Dios después de leer $ref?';
   }
 
   @override
@@ -6950,6 +7426,51 @@ class AppLocalizationsEs extends AppLocalizations {
   String get planReminderOff => 'Apagado';
 
   @override
+  String get planRestToday => 'Hoy es día de descanso';
+
+  @override
+  String get planReveal => 'Ver la revelación';
+
+  @override
+  String get planRevealConstantBody => 'Cumplió más días en su fecha.';
+
+  @override
+  String planRevealEyebrow(String room) {
+    return 'Propósito · $room';
+  }
+
+  @override
+  String get planRevealFaithfulBody =>
+      'Cumplieron todos los días. Cada uno gana el sello.';
+
+  @override
+  String get planRevealFaithfulNone =>
+      'Esta vez nadie cumplió todos los días. El próximo propósito es una nueva oportunidad.';
+
+  @override
+  String get planRevealFaithfulTitle => 'Fieles en el propósito';
+
+  @override
+  String get planRevealGroupPct =>
+      'de los días del propósito, el grupo cumplió junto';
+
+  @override
+  String get planRevealYourSeal =>
+      'Ganaste el sello Fiel. Queda junto a tu nombre en el grupo.';
+
+  @override
+  String get planSeatDays => 'Días del propósito';
+
+  @override
+  String get planSeatIn => 'Dentro';
+
+  @override
+  String get planSeatLabel => 'Propósito';
+
+  @override
+  String get planSeatNotIn => 'Aún no';
+
+  @override
   String get planSectionOrder => 'Orden';
 
   @override
@@ -6974,9 +7495,71 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
+  String get planSourcePick => 'Elegir';
+
+  @override
+  String get planSourceQuestionBody =>
+      'Cada día el grupo responde una pregunta, sacada de la escena del día o, sin escena, del capítulo. Abre los días para ver cada una y cambiar la que quieras.';
+
+  @override
+  String get planSourceQuestionNone =>
+      'Elige la escena o el capítulo: la pregunta sale de ellos.';
+
+  @override
+  String get planSourceQuestionOff =>
+      'Apagada: el grupo hace la escena y lee el capítulo, sin pregunta para responder.';
+
+  @override
+  String get planSourceReading => 'Capítulo de la Biblia';
+
+  @override
+  String get planSourceReadingEmpty =>
+      'El grupo aún no tiene lectura. Elige un libro y el capítulo de inicio.';
+
+  @override
+  String planSourceReadingFrom(String book, int from) {
+    return '$book, desde el capítulo $from';
+  }
+
+  @override
+  String get planSourceRemove => 'Quitar';
+
+  @override
+  String get planSourceScene => 'Escena de la ruta';
+
+  @override
+  String planSourceSceneCount(int scenes, int days) {
+    return 'Una escena por día: $scenes de $days días tienen escena.';
+  }
+
+  @override
+  String get planSourceSceneEmpty =>
+      'El grupo aún no tiene estudio. Elige la escena de inicio de la ruta.';
+
+  @override
+  String planSourceSceneFrom(String trail, String title) {
+    return '$trail · desde “$title”';
+  }
+
+  @override
+  String get planStartAnother => 'Empezar otro propósito';
+
+  @override
   String planStartCta(int minutes) {
     return 'Empezar plan · $minutes min/día';
   }
+
+  @override
+  String get planSuggestGeneral => 'General';
+
+  @override
+  String get planSuggestLife => 'Para la vida';
+
+  @override
+  String get planSuggestText => 'Sobre el texto';
+
+  @override
+  String get planSuggestTitle => 'Sugerencias';
 
   @override
   String get planSwitchBody =>
@@ -6994,6 +7577,17 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get planTodayDoneBody =>
       'Porción de hoy completada. Vuelve mañana — o sigue explorando la Biblia libremente.';
+
+  @override
+  String get planTomorrow => 'mañana';
+
+  @override
+  String get planWaitReveal => 'Quien guía va a revelar cómo le fue al grupo.';
+
+  @override
+  String planYouDid(int done, int total) {
+    return 'Cumpliste $done de $total días';
+  }
 
   @override
   String get plansCatalogBody =>
@@ -7064,6 +7658,10 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get plusNoticeFreeHeader => 'Sigue gratis, siempre';
+
+  @override
+  String get plusNoticeFreeLearning =>
+      'Repaso semanal, errores explicados y cómo crece tu lectura';
 
   @override
   String get plusNoticeFreeScenes =>
@@ -7316,6 +7914,24 @@ class AppLocalizationsEs extends AppLocalizations {
   String get profileDaysPerWeek => 'días por semana';
 
   @override
+  String get profileGroupSealsBody =>
+      'Ganados en el cierre de tu grupo, en las semanas en que hiciste todo lo que marcó el líder.';
+
+  @override
+  String profileGrowthSteady(String mode, int pct) {
+    return 'Tu lectura está firme: $pct% de aciertos en $mode.';
+  }
+
+  @override
+  String profileGrowthUp(String mode, int from, int to) {
+    return 'Tu lectura creció: en $mode acertabas $from% y ahora $to%.';
+  }
+
+  @override
+  String get profileGrowthWaiting =>
+      'Sigue caminando: en unas semanas verás aquí cómo creció tu lectura.';
+
+  @override
   String get profileInTheWord => 'En la Palabra';
 
   @override
@@ -7383,7 +7999,11 @@ class AppLocalizationsEs extends AppLocalizations {
   }
 
   @override
-  String get profilePlusTeaserTitle => 'Tu Peregrino+';
+  String get profilePlusGestureNudge =>
+      'Punto fuerte, qué reforzar y la práctica a medida son de Peregrino+.';
+
+  @override
+  String get profilePlusGestureNudgeCta => 'Conocer';
 
   @override
   String profilePrivacyHiddenSemantics(String label) {
@@ -8119,6 +8739,39 @@ class AppLocalizationsEs extends AppLocalizations {
   String get recognitionYourScene => 'Tu escena';
 
   @override
+  String referralBankedLine(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count meses de Plus guardados por invitaciones',
+      one: '1 mes de Plus guardado por invitaciones',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get referralInviteLine =>
+      'Si la persona se suscribe a Peregrino+, ganas 1 mes de Plus.';
+
+  @override
+  String referralRewardGranted(String name) {
+    return '$name se suscribió a Peregrino+ con tu invitación. ¡Ganaste 1 mes de Plus!';
+  }
+
+  @override
+  String get referralRewardGrantedAnon =>
+      'Alguien se suscribió a Peregrino+ con tu invitación. ¡Ganaste 1 mes de Plus!';
+
+  @override
+  String referralRewardKept(String name) {
+    return '$name se suscribió a Peregrino+ con tu invitación. Tu mes ganado queda guardado para cuando termine tu Plus.';
+  }
+
+  @override
+  String get referralRewardKeptAnon =>
+      'Alguien se suscribió a Peregrino+ con tu invitación. Tu mes ganado queda guardado para cuando termine tu Plus.';
+
+  @override
   String reinforceCta(String gesture) {
     return 'Reforzar $gesture';
   }
@@ -8262,6 +8915,34 @@ class AppLocalizationsEs extends AppLocalizations {
       'El repaso de hoy ya se hizo — este queda para mañana.';
 
   @override
+  String get roomCloseWeek => 'Cerrar la semana y revelar';
+
+  @override
+  String get roomCloseWeekBusy => 'Cerrando…';
+
+  @override
+  String get roomCloseWeekConfirmBody =>
+      'Quien hizo todo hasta ahora gana el sello. Puedes cerrar otra vez antes del domingo si más gente termina.';
+
+  @override
+  String get roomCloseWeekConfirmTitle => '¿Cerrar la semana ahora?';
+
+  @override
+  String get roomCloseWeekFailed =>
+      'No se pudo cerrar la semana. Inténtalo de nuevo.';
+
+  @override
+  String get roomCloseWeekHint =>
+      'Hazlo en la reunión: el grupo ve junto quién fue fiel esta semana.';
+
+  @override
+  String get roomClosingBannerBody =>
+      'Mira cómo le fue al grupo y quién ganó el sello.';
+
+  @override
+  String get roomClosingBannerTitle => 'Se cerró la semana del grupo';
+
+  @override
   String get roomErrorCreate =>
       'No se pudo crear el grupo. Inténtalo de nuevo.';
 
@@ -8328,6 +9009,23 @@ class AppLocalizationsEs extends AppLocalizations {
   String get roomLeaderFamilia => 'Responsable';
 
   @override
+  String roomLeaderWeekDays(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count días',
+      one: '1 día',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get roomLeaderWeekScene => 'escena';
+
+  @override
+  String get roomLeaderWeekTitle => 'Seguimiento de la semana';
+
+  @override
   String get roomNameHintAmigos => 'Ej.: Amigos de la uni';
 
   @override
@@ -8341,6 +9039,135 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get roomNameHintFamilia => 'Ej.: Familia Souza';
+
+  @override
+  String get roomReadingBook => 'Libro';
+
+  @override
+  String get roomReadingChange => 'Cambiar';
+
+  @override
+  String get roomReadingDone => 'Lectura hecha esta semana · toca para releer';
+
+  @override
+  String get roomReadingFrom => 'Del capítulo';
+
+  @override
+  String get roomReadingLabel => 'Lectura de la semana';
+
+  @override
+  String get roomReadingOrOther => 'O elige otro texto';
+
+  @override
+  String get roomReadingPickBody =>
+      'Elige capítulos de la Biblia para que el grupo lea antes de la reunión.';
+
+  @override
+  String get roomReadingPickTitle => 'Marcar la lectura de la semana';
+
+  @override
+  String roomReadingPickerSubtitle(int max) {
+    return 'Hasta $max capítulos de un libro.';
+  }
+
+  @override
+  String roomReadingProgressTap(int done, int total) {
+    return '$done de $total leídos esta semana · toca para leer';
+  }
+
+  @override
+  String get roomReadingSameAsStudy => 'El mismo texto del estudio';
+
+  @override
+  String roomReadingSameAsStudyBody(String reading, String study) {
+    return '$reading — el pasaje de “$study”. El grupo lee el capítulo y hace la escena.';
+  }
+
+  @override
+  String get roomReadingSave => 'Marcar para el grupo';
+
+  @override
+  String get roomReadingSaved => 'Lectura marcada para el grupo';
+
+  @override
+  String get roomReadingTo => 'Hasta el capítulo';
+
+  @override
+  String roomReadingTooFast(int minutes) {
+    return 'Capítulo marcado. Para contar en la lectura del grupo, léelo con calma (unos $minutes min) o escucha el audio, y termínalo otra vez.';
+  }
+
+  @override
+  String get roomRevealAgain => 'Ver la revelación otra vez';
+
+  @override
+  String get roomRevealConstantBody =>
+      'Estuvo con la Palabra la mayor cantidad de días.';
+
+  @override
+  String get roomRevealConstantTitle => 'Más constante';
+
+  @override
+  String get roomRevealDone => 'Amén';
+
+  @override
+  String roomRevealEyebrow(String room) {
+    return 'Cierre · $room';
+  }
+
+  @override
+  String get roomRevealFaithfulBody =>
+      'Hicieron todo lo que marcó el líder. Cada uno gana el sello.';
+
+  @override
+  String get roomRevealFaithfulNone =>
+      'Esta vez nadie completó todo. La próxima semana empieza el lunes.';
+
+  @override
+  String get roomRevealFaithfulTitle => 'Fieles en la semana';
+
+  @override
+  String get roomRevealGiftCta => 'Dar un pase de sendero a alguien';
+
+  @override
+  String get roomRevealGiftHint =>
+      'Tu pase del mes abre un sendero de Peregrino+ completo para quien elijas.';
+
+  @override
+  String get roomRevealGiftPickBody =>
+      'Elige el sendero. Después envía el enlace a quien quieras premiar.';
+
+  @override
+  String get roomRevealGiftPickTitle => '¿Qué sendero?';
+
+  @override
+  String get roomRevealGroupPct =>
+      'de lo que marcó el líder, el grupo hizo junto';
+
+  @override
+  String get roomRevealGrownBody =>
+      'Acertó más esta semana que en sus propias semanas anteriores.';
+
+  @override
+  String get roomRevealGrownTitle => 'Quien más creció';
+
+  @override
+  String get roomRevealTitle => 'La semana del grupo';
+
+  @override
+  String get roomRevealYourSeal =>
+      'Ganaste el sello Fiel en la semana. Aparece junto a tu nombre en el grupo.';
+
+  @override
+  String roomSealCount(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: '$count sellos Fiel',
+      one: '1 sello Fiel',
+    );
+    return '$_temp0';
+  }
 
   @override
   String get roomStudyFallbackTitle => 'Estudio de la semana';
@@ -9404,6 +10231,30 @@ class AppLocalizationsEs extends AppLocalizations {
   String get supporterBadge => 'Apoyo';
 
   @override
+  String get takeawaysReviewLabel => 'Para repasar';
+
+  @override
+  String takeawaysRow(int count) {
+    String _temp0 = intl.Intl.pluralLogic(
+      count,
+      locale: localeName,
+      other: 'Encontraste $count cosas en el texto',
+      one: 'Encontraste 1 cosa en el texto',
+    );
+    return '$_temp0';
+  }
+
+  @override
+  String get takeawaysRowReviewOnly => 'Mira qué repasar en el texto';
+
+  @override
+  String get takeawaysSubtitle =>
+      'Cada frase viene de una pregunta que respondiste. Toca para abrir el versículo.';
+
+  @override
+  String get takeawaysTitle => 'Lo que viste en el texto';
+
+  @override
   String tomorrowDayOf(int streak, int goal) {
     return 'Día $streak de $goal';
   }
@@ -9561,7 +10412,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get trailsDoorIntroBible =>
-      'La Biblia entera, libro a libro. El Antiguo Testamento guarda la promesa; el Nuevo muestra su cumplimiento en Jesús. Cada libro es una ruta.';
+      'La Biblia entera, libro por libro. El Antiguo Testamento guarda la promesa; el Nuevo muestra el cumplimiento en Jesús. En el Panorama, los puntos altos de cada libro en pocas escenas.';
 
   @override
   String get trailsDoorIntroHowItWorks =>
@@ -9580,7 +10431,7 @@ class AppLocalizationsEs extends AppLocalizations {
 
   @override
   String get trailsDoorIntroThemes =>
-      'La Biblia leída por hilos, no por libros: el panorama de la historia, las personas que la cargan, la promesa y su cumplimiento, los grandes temas y las parábolas. Cada ruta sigue un hilo por varios libros.';
+      'La Biblia leída por hilos, no por libros: las personas que la cargan, la promesa y su cumplimiento, los grandes temas y las parábolas. Cada ruta sigue un hilo por varios libros.';
 
   @override
   String get trailsDownloading => 'Descargando…';
@@ -9599,7 +10450,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get trailsHorizonEyebrow => 'En el horizonte';
 
   @override
-  String get trailsHubBibleBody => 'Antiguo y Nuevo Testamento.';
+  String get trailsHubBibleBody => 'Antiguo y Nuevo Testamento, y el Panorama.';
 
   @override
   String get trailsHubStudy => 'Estudio';
@@ -9611,8 +10462,7 @@ class AppLocalizationsEs extends AppLocalizations {
   String get trailsHubThemes => 'Temas';
 
   @override
-  String get trailsHubThemesBody =>
-      'Sabiduría, panorama y los hilos de la Biblia.';
+  String get trailsHubThemesBody => 'Sabiduría y los hilos de la Biblia.';
 
   @override
   String get trailsInProgress => 'En curso';
@@ -10038,6 +10888,26 @@ class AppLocalizationsEs extends AppLocalizations {
   String get waveCta => 'Saludar';
 
   @override
+  String get waveKindCheer => 'Ánimo, el grupo está contigo';
+
+  @override
+  String get waveKindMiss => 'Te extrañamos';
+
+  @override
+  String get waveKindPlan => '¿Entras al propósito con nosotros?';
+
+  @override
+  String get waveKindPray => 'Estoy orando por ti';
+
+  @override
+  String get waveKindStudy => 'Ven a estudiar con el grupo';
+
+  @override
+  String waveSheetSubtitle(String name) {
+    return 'Elige el mensaje. Le llega a $name como notificación.';
+  }
+
+  @override
   String get webRedeemDone =>
       'Peregrino+ activado. La suscripción del sitio ya está en tu cuenta.';
 
@@ -10109,10 +10979,6 @@ class AppLocalizationsEs extends AppLocalizations {
   @override
   String get weeklyReviewNoQuestions =>
       'No encontré las preguntas de estas escenas en el dispositivo. Inténtalo de nuevo con internet.';
-
-  @override
-  String get weeklyReviewPlusBody =>
-      'Con Peregrino+, vuelves a lo que enseñó cada escena y respondes 3 preguntas.';
 
   @override
   String get weeklyReviewPreparing => 'Preparando…';

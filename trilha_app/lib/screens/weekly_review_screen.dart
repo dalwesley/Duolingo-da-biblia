@@ -33,13 +33,9 @@ import '../widgets/today_stage.dart';
 import '../widgets/top_bar.dart';
 import '../widgets/ui_primitives.dart';
 import 'lesson_screen.dart';
-import 'paywall_screen.dart';
 
-/// Revisão da semana (Peregrino+): o "Hoje:" de cada cena feita na semana e
-/// 3 perguntas tiradas delas, de preferência as que a pessoa errou.
-///
-/// Sem Peregrino+, mostra quantas e quais cenas foram — sem os "Hoje:" nem as
-/// perguntas — e leva ao paywall.
+/// Revisão da semana (de todos desde 11/2026): o "Hoje:" de cada cena feita
+/// na semana e 3 perguntas tiradas delas, de preferência as que a pessoa errou.
 class WeeklyReviewScreen extends StatefulWidget {
   const WeeklyReviewScreen({super.key});
 
@@ -97,7 +93,6 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = context.l10n;
-    final hasPlus = context.watch<SubscriptionService>().plusFeaturesOpen;
     final done = context.select(
       (ProgressService p) => p.isWeeklyReviewDone(_week),
     );
@@ -132,12 +127,7 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
                             AppSpace.screen,
                             AppSpace.xl,
                           ),
-                          children: _body(
-                            context,
-                            scenes: scenes,
-                            hasPlus: hasPlus,
-                            done: done,
-                          ),
+                          children: _body(context, scenes: scenes, done: done),
                         ),
                 ),
               ),
@@ -151,7 +141,6 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
   List<Widget> _body(
     BuildContext context, {
     required List<_Scene> scenes,
-    required bool hasPlus,
     required bool done,
   }) {
     final l10n = context.l10n;
@@ -188,9 +177,7 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
                     )
                   : done
                   ? l10n.weeklyReviewDoneBody
-                  : hasPlus
-                  ? l10n.weeklyReviewIntro
-                  : l10n.weeklyReviewPlusBody,
+                  : l10n.weeklyReviewIntro,
               textAlign: TextAlign.center,
               style: AppTypography.body(
                 size: 14,
@@ -202,37 +189,19 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
       ),
       if (!empty) ...[
         const SizedBox(height: AppSpace.xl),
-        if (hasPlus)
-          RelicChapter(title: l10n.weeklyReviewInsightsHeader, divided: false),
-        if (hasPlus) const SizedBox(height: 12),
+        RelicChapter(title: l10n.weeklyReviewInsightsHeader, divided: false),
+        const SizedBox(height: 12),
         for (var i = 0; i < scenes.length; i++)
           Padding(
             padding: const EdgeInsets.only(bottom: 10),
             child: _SceneCard(
               scene: scenes[i],
-              showInsight: hasPlus,
-              onTap: () => hasPlus
-                  ? _openToday(scenes, i)
-                  : Navigator.of(context).push(
-                      MaterialPageRoute(
-                        builder: (_) =>
-                            const PaywallScreen(source: 'weekly_review'),
-                      ),
-                    ),
+              showInsight: true,
+              onTap: () => _openToday(scenes, i),
             ),
           ),
         const SizedBox(height: AppSpace.lg),
-        if (!hasPlus)
-          CopperCta(
-            label: l10n.weeklyReviewSeePlus,
-            expanded: true,
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute(
-                builder: (_) => const PaywallScreen(source: 'weekly_review'),
-              ),
-            ),
-          )
-        else if (!done)
+        if (!done)
           CopperCta(
             label: _starting
                 ? l10n.weeklyReviewPreparing
@@ -277,14 +246,6 @@ class _WeeklyReviewScreenState extends State<WeeklyReviewScreen> {
         context,
         message: context.l10n.reviewSlotTaken,
         face: CloudFace.erro,
-      );
-      return;
-    }
-    if (!context.read<SubscriptionService>().plusFeaturesOpen) {
-      await Navigator.of(context).push(
-        MaterialPageRoute<void>(
-          builder: (_) => const PaywallScreen(source: 'weekly_review'),
-        ),
       );
       return;
     }

@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 10:6–14",
+    "passages": [
+      {
+        "ref": "1 Crônicas 10:6–14"
+      }
+    ],
+    "context": "Saul cai na batalha contra os filisteus. O texto registra a morte da casa, o despojo e a razão teológica: transgressão e necromancia.",
+    "keyword": "transgressão",
+    "keywordGloss": "É a causa da morte de Saul: ele não guardou a palavra do Senhor nem o buscou.",
+    "focusQuestion": "Onde você está tentado a buscar orientação fora do Senhor?",
+    "reflectionPrompts": [
+      "A casa de Saul perece",
+      "Despojo em Gilboa",
+      "Reino transferido a Davi"
+    ],
+    "facts": [
+      {
+        "text": "Saul e seus três filhos morreram; toda a sua casa pereceu com ele.",
+        "evidenceRef": "1 Crônicas 10:6",
+        "evidenceSpan": "morreram Saul e seus três filhos"
+      },
+      {
+        "text": "Os filisteus encontraram Saul e seus filhos caídos no monte Gilboa.",
+        "evidenceRef": "1 Crônicas 10:8",
+        "evidenceSpan": "encontraram Saul e seus filhos caídos no monte Gilboa"
+      },
+      {
+        "text": "Puseram as armas de Saul no templo de seu deus e penduraram a cabeça na casa de Dagom.",
+        "evidenceRef": "1 Crônicas 10:10",
+        "evidenceSpan": "penduraram sua cabeça na casa de Dagom"
+      },
+      {
+        "text": "Saul morreu por causa de sua transgressão contra o Senhor.",
+        "evidenceRef": "1 Crônicas 10:13",
+        "evidenceSpan": "Saul morreu por causa de sua transgressão contra o Senhor"
+      },
+      {
+        "text": "Não buscou ao Senhor; por isso o Senhor o matou e transferiu o reino a Davi.",
+        "evidenceRef": "1 Crônicas 10:14",
+        "evidenceSpan": "o Senhor o matou e transferiu o reino a Davi, filho de Jessé"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "transgressão",
+        "gloss": "Causa da morte de Saul: violar a palavra do Senhor."
+      },
+      {
+        "term": "necromante",
+        "gloss": "Pessoa que Saul consultou em vez de buscar o Senhor."
+      },
+      {
+        "term": "Davi",
+        "gloss": "Filho de Jessé a quem o Senhor transferiu o reino."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Saul e a casa morrem na batalha",
+        "evidenceRef": "1 Crônicas 10:6–7"
+      },
+      {
+        "label": "Filisteus despojam e expõem Saul",
+        "evidenceRef": "1 Crônicas 10:8–10"
+      },
+      {
+        "label": "Jabes sepulta os corpos e jejua",
+        "evidenceRef": "1 Crônicas 10:11–12"
+      },
+      {
+        "label": "O texto explica a transgressão e a transferência do reino",
+        "evidenceRef": "1 Crônicas 10:13–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Saul morreu por causa de sua transgressão contra o Senhor.",
+        "marker": "por causa",
+        "evidenceRef": "1 Crônicas 10:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque não buscou ao Senhor, o Senhor o matou e transferiu o reino a Davi.",
+        "marker": "por isso",
+        "evidenceRef": "1 Crônicas 10:14"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da morte, os filisteus despojam e enviam boas-novas aos ídolos.",
+        "marker": "E",
+        "evidenceRef": "1 Crônicas 10:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 28:7",
+        "bridge": "Saul busca a necromante"
+      },
+      {
+        "ref": "1 Samuel 15:23",
+        "bridge": "Rebelião como feitiçaria"
+      },
+      {
+        "ref": "2 Samuel 5:3",
+        "bridge": "Davi ungido rei sobre Israel"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Saul caiu só por azar militar, sem causa espiritual.",
+        "why": "10:13–14 explicam transgressão, necromante e não buscar o Senhor."
+      },
+      {
+        "text": "Saul buscou ao Senhor até o fim.",
+        "why": "10:14 diz que não buscou ao Senhor."
+      },
+      {
+        "text": "O reino ficou com a casa de Saul após a morte.",
+        "why": "O Senhor transferiu o reino a Davi, filho de Jessé."
+      }
+    ],
+    "centralInsight": "Saul morreu por sua transgressão: não guardou a palavra do Senhor nem o buscou.",
+    "anchorQuestion": "Por que, em 1 Crônicas 10:13–14, Saul morreu e o reino passou a Davi?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 10 —14, Saul buscou ao Senhor até o fim da vida.",
+      "verseRef": "1 Crônicas 10:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "E não buscou ao Senhor",
+      "feedbackCorrect": "O texto afirma o contrário: Saul não buscou ao Senhor.",
+      "feedbackWrong": {
+        "true": "Releia 10:14: ele não buscou ao Senhor."
+      },
+      "hint": "Veja o começo de 10:14.",
+      "learningObjective": "Observar que Saul não buscou ao Senhor.",
+      "evidence": [
+        "1 Crônicas 10:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 10:10, toque onde penduraram a cabeça de Saul.",
+      "verseRef": "1 Crônicas 10:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "armas"
+        },
+        {
+          "id": "b",
+          "text": "puseram"
+        },
+        {
+          "id": "c",
+          "text": "Saul"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "puseram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar a casa de Dagom.",
+      "evidence": [
+        "1 Crônicas 10:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 10:6, o que aconteceu a Saul e seus três filhos?",
+      "verseRef": "1 Crônicas 10:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fugiram para o Egito"
+        },
+        {
+          "id": "b",
+          "text": "Morreram; a casa pereceu com ele"
+        },
+        {
+          "id": "c",
+          "text": "Venceram os filisteus"
+        },
+        {
+          "id": "d",
+          "text": "Reinaram em Hebrom"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "morreram Saul e seus três filhos",
+      "feedbackCorrect": "Saul e os três filhos morreram; a casa pereceu.",
+      "feedbackWrong": {
+        "a": "Não há fuga ao Egito neste versículo.",
+        "c": "Eles morreram; não venceram.",
+        "d": "Hebrom entra depois, com Davi."
+      },
+      "hint": "Leia o que aconteceu a Saul e aos filhos.",
+      "learningObjective": "Identificar a morte da casa de Saul.",
+      "evidence": [
+        "1 Crônicas 10:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 10:13 na ordem do texto.",
+      "verseRef": "1 Crônicas 10:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assim, Saul morreu por causa de sua transgressão contra o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "pois não guardou a palavra do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "e também porque procurou e consultou uma necromante"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Saul morreu por causa de sua transgressão contra o Senhor",
+      "feedbackCorrect": "É a sequência: morte, palavra não guardada e necromante.",
+      "feedbackWrong": {
+        "default": "Comece pela morte; a necromante fecha o versículo."
+      },
+      "hint": "O versículo começa com a morte de Saul.",
+      "learningObjective": "Reconhecer a ordem de 10:13.",
+      "evidence": [
+        "1 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 10:13, Saul morreu por causa de sua o quê?",
+      "verseRef": "1 Crônicas 10:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "vitória"
+        },
+        {
+          "id": "b",
+          "text": "transgressão"
+        },
+        {
+          "id": "c",
+          "text": "aliança"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por causa de sua transgressão contra o Senhor",
+      "feedbackCorrect": "A causa nomeada é a transgressão contra o Senhor.",
+      "feedbackWrong": {
+        "a": "Não foi vitória; foi transgressão.",
+        "c": "O termo do texto é transgressão."
+      },
+      "hint": "Veja a palavra após \"por causa de sua\".",
+      "learningObjective": "Lembrar a causa da morte de Saul.",
+      "evidence": [
+        "1 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 10:14 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 10:14",
+      "passageA": {
+        "ref": "1 Crônicas 10:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Por não buscar o Senhor, Saul perde a vida e o reino passa a Davi."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino transferido a Davi"
+        },
+        {
+          "id": "b",
+          "text": "Saul reinou para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Filisteus ungiram Saul"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transferiu o reino a Davi, filho de Jessé",
+      "feedbackCorrect": "O contexto e o versículo batem: o reino passa a Davi.",
+      "feedbackWrong": {
+        "b": "O texto diz que o Senhor matou Saul e transferiu o reino.",
+        "c": "Quem transfere o reino é o Senhor, a Davi."
+      },
+      "hint": "Veja para quem o reino foi transferido.",
+      "learningObjective": "Ligar a morte de Saul à transferência do reino.",
+      "evidence": [
+        "1 Crônicas 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 10 —13–14, a morte de Saul aparece sem ligação com consultar a necromante.",
+      "verseRef": "1 Crônicas 10:13–14",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque procurou e consultou uma necromante",
+      "feedbackCorrect": "O texto inclui a necromante entre as causas da morte.",
+      "feedbackWrong": {
+        "true": "Releia 10:13: ele consultou uma necromante."
+      },
+      "hint": "Veja o fim de 10:13.",
+      "learningObjective": "Compreender as causas listadas da morte.",
+      "evidence": [
+        "1 Crônicas 10:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 10:14, toque as palavras que marcam o resultado de não buscar o Senhor.",
+      "verseRef": "1 Crônicas 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "buscou"
+        },
+        {
+          "id": "c",
+          "text": "matou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "buscou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": [
+        "1 Crônicas 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 10:14 se relaciona com 10:13?",
+      "verseRef": "1 Crônicas 10:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A transgressão leva à morte e à transferência do reino"
+        },
+        {
+          "id": "b",
+          "text": "Saul é recompensado com mais anos de reinado"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor ignora a necromancia de Saul"
+        },
+        {
+          "id": "d",
+          "text": "Davi perde o reino para a casa de Saul"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor o matou e transferiu o reino a Davi",
+      "feedbackCorrect": "13 dá as causas; 14 mostra o resultado: morte e reino a Davi.",
+      "feedbackWrong": {
+        "b": "O texto fala de morte, não de recompensa.",
+        "c": "A necromante entra na causa.",
+        "d": "O reino vai a Davi, não fica com Saul."
+      },
+      "hint": "Una a causa em 13 ao resultado em 14.",
+      "learningObjective": "Relacionar transgressão e transferência do reino.",
+      "evidence": [
+        "1 Crônicas 10:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Crônicas 10:6–14?",
+      "verseRef": "1 Crônicas 10:6–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saul e a casa morrem na batalha"
+        },
+        {
+          "id": "b",
+          "text": "Filisteus despojam e expõem Saul"
+        },
+        {
+          "id": "c",
+          "text": "O texto explica a transgressão e o reino a Davi"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "transferiu o reino a Davi, filho de Jessé",
+      "feedbackCorrect": "Morte, despojo e explicação teológica fecham a cena.",
+      "feedbackWrong": {
+        "default": "A transferência do reino é o ponto de chegada."
+      },
+      "hint": "A explicação teológica vem no fim.",
+      "learningObjective": "Compreender o arco da queda de Saul.",
+      "evidence": [
+        "1 Crônicas 10:6–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 10:14, que expressão liga o não buscar ao juízo?",
+      "verseRef": "1 Crônicas 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia"
+        },
+        {
+          "id": "b",
+          "text": "isso"
+        },
+        {
+          "id": "c",
+          "text": "embora"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por isso o Senhor o matou",
+      "feedbackCorrect": "\"Isso\" está em \"por isso\", o marcador do resultado.",
+      "feedbackWrong": {
+        "a": "Não é \"Todavia\" neste versículo.",
+        "c": "Não é \"embora\" que liga o juízo."
+      },
+      "hint": "Veja a expressão no meio do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": [
+        "1 Crônicas 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 10:13 a 1 Samuel 28:7?",
+      "verseRef": "1 Crônicas 10:13",
+      "passageA": {
+        "ref": "1 Crônicas 10:13"
+      },
+      "passageB": {
+        "ref": "1 Samuel 28:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Saul busca a necromante"
+        },
+        {
+          "id": "b",
+          "text": "Saul edificou o templo"
+        },
+        {
+          "id": "c",
+          "text": "Saul venceu em Ai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "consultou uma necromante",
+      "feedbackCorrect": "Os dois textos ligam Saul à consulta da necromante.",
+      "feedbackWrong": {
+        "b": "Saul não edifica o templo neste elo.",
+        "c": "Ai não é o tema destes versículos."
+      },
+      "hint": "Compare o que Saul procurou.",
+      "learningObjective": "Relacionar Crônicas a 1 Samuel 28.",
+      "evidence": [
+        "1 Crônicas 10:13",
+        "1 Samuel 28:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Crônicas 10 —13–14 apresenta a queda de Saul como juízo por não guardar a palavra nem buscar o Senhor.",
+      "verseRef": "1 Crônicas 10:13–14",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois não guardou a palavra do Senhor",
+      "feedbackCorrect": "O texto une transgressão, necromante e ausência de busca ao Senhor.",
+      "feedbackWrong": {
+        "false": "O juízo está explícito em 10:13–14."
+      },
+      "hint": "Leia as razões dadas para a morte.",
+      "learningObjective": "Interpretar a queda como juízo teológico.",
+      "evidence": [
+        "1 Crônicas 10:13–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 10:14, toque o trecho que sustenta a transferência do reino.",
+      "verseRef": "1 Crônicas 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "matou"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "transferiu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a transferência do reino.",
+      "evidence": [
+        "1 Crônicas 10:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Crônicas 10:6–14 sustenta?",
+      "verseRef": "1 Crônicas 10:6–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não guardar a palavra e não buscar o Senhor traz juízo"
+        },
+        {
+          "id": "b",
+          "text": "Saul caiu só por azar militar"
+        },
+        {
+          "id": "c",
+          "text": "Saul buscou o Senhor até o fim"
+        },
+        {
+          "id": "d",
+          "text": "O reino ficou com a casa de Saul"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Saul morreu por causa de sua transgressão contra o Senhor",
+      "feedbackCorrect": "O trecho une morte, causas espirituais e reino a Davi.",
+      "feedbackWrong": {
+        "b": "10:13–14 dão causas teológicas.",
+        "c": "10:14 diz que não buscou.",
+        "d": "O reino passou a Davi."
+      },
+      "hint": "Una causa e resultado no fim do capítulo.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "1 Crônicas 10:6–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da queda de Saul ao reinado de Davi?",
+      "verseRef": "1 Crônicas 10:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saul rejeita a palavra e consulta a necromante"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor mata Saul e tira o reino"
+        },
+        {
+          "id": "c",
+          "text": "Davi é ungido rei sobre Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "transferiu o reino a Davi, filho de Jessé",
+      "feedbackCorrect": "Transgressão, juízo e novo rei formam o fio.",
+      "feedbackWrong": {
+        "default": "Comece pela falha de Saul; a unção de Davi fecha."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Encadear juízo e novo rei.",
+      "evidence": [
+        "1 Crônicas 10:13",
+        "1 Crônicas 10:14",
+        "2 Samuel 5:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 10:13, que pessoa Saul consultou além de não guardar a palavra?",
+      "verseRef": "1 Crônicas 10:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "profeta"
+        },
+        {
+          "id": "b",
+          "text": "necromante"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "consultou uma necromante",
+      "feedbackCorrect": "\"Necromante\" carrega a falha de buscar orientação proibida.",
+      "feedbackWrong": {
+        "a": "O texto diz necromante, não profeta.",
+        "c": "Não é sacerdote neste versículo."
+      },
+      "hint": "Veja o último nome do versículo.",
+      "learningObjective": "Lembrar o termo da consulta proibida.",
+      "evidence": [
+        "1 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 10:14 a 2 Samuel 5:3?",
+      "verseRef": "1 Crônicas 10:14",
+      "passageA": {
+        "ref": "1 Crônicas 10:14"
+      },
+      "passageB": {
+        "ref": "2 Samuel 5:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi recebe o reino"
+        },
+        {
+          "id": "b",
+          "text": "Saul reconstrói Gilboa"
+        },
+        {
+          "id": "c",
+          "text": "Filisteus ungidos em Hebrom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transferiu o reino a Davi, filho de Jessé",
+      "feedbackCorrect": "Crônicas anuncia a transferência; Samuel mostra Davi ungido.",
+      "feedbackWrong": {
+        "b": "Não há reconstrução de Gilboa neste elo.",
+        "c": "Quem é ungido é Davi, não os filisteus."
+      },
+      "hint": "Compare o destino do reino.",
+      "learningObjective": "Ligar a transferência a Davi ungido.",
+      "evidence": [
+        "1 Crônicas 10:14",
+        "2 Samuel 5:3"
+      ]
+    }
+  ]
+}

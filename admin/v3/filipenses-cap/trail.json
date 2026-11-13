@@ -1,0 +1,113 @@
+{
+  "slug": "filipenses-cap",
+  "title": "Filipenses",
+  "description": "Filipenses capítulo a capítulo: alegria em Cristo no meio das circunstâncias.",
+  "icon": "🎵",
+  "color": "#27AE60",
+  "order": 65,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Alegria e progresso · cap. 1–2",
+      "icon": "zap",
+      "section": "Filipenses",
+      "missions": [
+        {
+          "slug": "flc-01-obra-comecada",
+          "title": "Obra começada",
+          "subtitle": "Filipenses 1:3–11",
+          "intro": "Paulo agradece e ora pela igreja que tem cooperado no evangelho.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Filipenses 1:3–11",
+          "hookVerse": "Agradeço ao meu Deus por tudo que me vem à memória a respeito de vocês. Sempre orando com alegria faço súplicas por todos vocês em todas as minhas orações.",
+          "hookNote": "Aquele que começou a boa obra a completará até o dia de Cristo Jesus.",
+          "centralInsight": "Aquele que começou a boa obra a completará até o dia de Cristo Jesus.",
+          "objective": "Confiar na obra de Deus"
+        },
+        {
+          "slug": "flc-02-resplandecer-como-luzes",
+          "title": "Resplandecer como luzes",
+          "subtitle": "Filipenses 2:12–18",
+          "intro": "Com temor e tremor, a igreja trabalha a salvação enquanto Deus opera nela.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Filipenses 2:12–18",
+          "hookVerse": "Assim, meus amados, como sempre obedecestes, não somente na minha presença, mas ainda mais agora, na minha ausência, desenvolvei a vossa salvação com temor e tremor; Porque Deus é quem atua em vós tanto para o querer quanto para o realizar, conforme a sua boa vontade.",
+          "hookNote": "Fazei tudo sem murmurações: sois luzes no mundo, retendo a palavra da vida.",
+          "centralInsight": "Fazei tudo sem murmurações: sois luzes no mundo, retendo a palavra da vida.",
+          "objective": "Brilhar sem murmuração"
+        },
+        {
+          "slug": "flc-boss-1",
+          "title": "Travessia: Alegria e progresso",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a obra que Deus completa e o brilho sem murmuração.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Alegria e progresso",
+          "hookVerse": "Revise a obra que Deus completa e o brilho sem murmuração.",
+          "hookNote": "Revise a obra que Deus completa e o brilho sem murmuração.",
+          "centralInsight": "Deus completa a obra e faz a igreja brilhar",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Ganho e paz · cap. 3–4",
+      "icon": "zap",
+      "section": "Filipenses",
+      "missions": [
+        {
+          "slug": "flc-03-tudo-como-perda",
+          "title": "Tudo como perda",
+          "subtitle": "Filipenses 3:7–14",
+          "intro": "O que era ganho para Paulo, ele considera perda por causa de Cristo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Filipenses 3:7–14",
+          "hookVerse": "Mas o que para mim era lucro, considerei perda por amor a Cristo. Sim, em relação a tudo isso, considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus, meu Senhor. Por amor d'Ele, perdi todas essas coisas e as considero como refugo, para ganhar a Cristo.",
+          "hookNote": "Conhecer Cristo vale mais que tudo: prossigo para o alvo, o prêmio da vocação celestial.",
+          "centralInsight": "Conhecer Cristo vale mais que tudo: prossigo para o alvo, o prêmio da vocação celestial.",
+          "objective": "Prosseguir para o alvo"
+        },
+        {
+          "slug": "flc-04-alegrai-vos-no-senhor",
+          "title": "Alegrai-vos no Senhor",
+          "subtitle": "Filipenses 4:4–10",
+          "intro": "Paulo manda alegrar-se, orar e pensar no que é verdadeiro e puro.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Filipenses 4:4–10",
+          "hookVerse": "Alegrem-se sempre no Senhor; novamente digo: alegrem-se. Seja a sua moderação conhecida de todos. O Senhor está próximo.",
+          "hookNote": "Não andeis ansiosos: pela oração a paz de Deus guardará o coração e a mente em Cristo.",
+          "centralInsight": "Não andeis ansiosos: pela oração a paz de Deus guardará o coração e a mente em Cristo.",
+          "objective": "Orar e ter paz"
+        },
+        {
+          "slug": "flc-boss-2",
+          "title": "Travessia: Ganho e paz",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise o ganho de conhecer Cristo e a paz que guarda o coração.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Ganho e paz",
+          "hookVerse": "Revise o ganho de conhecer Cristo e a paz que guarda o coração.",
+          "hookNote": "Revise o ganho de conhecer Cristo e a paz que guarda o coração.",
+          "centralInsight": "Cristo é o ganho e a paz no meio da ansiedade",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

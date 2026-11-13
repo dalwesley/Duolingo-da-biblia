@@ -1,0 +1,720 @@
+{
+  "study": {
+    "passageRef": "2 Reis 25:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 25:1–6"
+      },
+      {
+        "ref": "2 Reis 25:7–12"
+      }
+    ],
+    "context": "Após longo cerco, Jerusalém é arrombada. Zedequias foge, é capturado e cegado. Nebuzaradã queima o templo, derruba os muros e leva o povo; deixa alguns pobres na terra.",
+    "keyword": "Nabucodonosor",
+    "keywordGloss": "O templo e a cidade entregues às chamas: a queda completa de Jerusalém.",
+    "focusQuestion": "Se muro e templo não seguram sem ouvir o Senhor, em que você tem confiado?",
+    "reflectionPrompts": [
+      "Cerco e fome",
+      "Templo em chamas",
+      "Exílio final"
+    ],
+    "facts": [
+      {
+        "text": "Nabucodonosor veio contra Jerusalém e levantou fortificações ao redor.",
+        "evidenceRef": "2 Reis 25:1",
+        "evidenceSpan": "Nabucodonosor, rei da Babilônia, veio contra Jerusalém"
+      },
+      {
+        "text": "A cidade permaneceu sitiada até o décimo primeiro ano de Zedequias.",
+        "evidenceRef": "2 Reis 25:2",
+        "evidenceSpan": "a cidade permaneceu sitiada até o décimo primeiro ano do rei Zedequias"
+      },
+      {
+        "text": "Na fome, não havia pão para o povo da terra.",
+        "evidenceRef": "2 Reis 25:3",
+        "evidenceSpan": "não havia pão para o povo da terra"
+      },
+      {
+        "text": "A cidade foi arrombada e o rei fugiu.",
+        "evidenceRef": "2 Reis 25:4",
+        "evidenceSpan": "Então a cidade foi arrombada"
+      },
+      {
+        "text": "Nebuzaradã queimou a casa do Senhor e a casa do rei.",
+        "evidenceRef": "2 Reis 25:9",
+        "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei"
+      },
+      {
+        "text": "O chefe da guarda deixou alguns dos mais pobres como vinheteiros e lavradores.",
+        "evidenceRef": "2 Reis 25:12",
+        "evidenceSpan": "deixou alguns dos mais pobres da terra para serem vinheteiros e lavradores"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Nabucodonosor",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "Babilônia",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "Jerusalém",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cerco longo e fome na cidade",
+        "evidenceRef": "2 Reis 25:1–3"
+      },
+      {
+        "label": "A cidade cai e Zedequias é capturado",
+        "evidenceRef": "2 Reis 25:4–7"
+      },
+      {
+        "label": "Templo e muros são destruídos",
+        "evidenceRef": "2 Reis 25:8–10"
+      },
+      {
+        "label": "O povo vai ao exílio; pobres ficam",
+        "evidenceRef": "2 Reis 25:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O rei foge, mas o exército dos babilônios o persegue e alcança.",
+        "marker": "Mas",
+        "evidenceRef": "2 Reis 25:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Com a cidade arrombada, os homens de guerra fogem de noite.",
+        "marker": "Então",
+        "evidenceRef": "2 Reis 25:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "A maioria vai cativa; no entanto, alguns pobres ficam na terra.",
+        "marker": "No entanto",
+        "evidenceRef": "2 Reis 25:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 52:12–13",
+        "bridge": "Templo queimado em Jerusalém"
+      },
+      {
+        "ref": "Jeremias 39:8–9",
+        "bridge": "Muros caídos e povo cativo"
+      },
+      {
+        "ref": "Lamentações 1:1",
+        "bridge": "Cidade solitária após a queda"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O templo e os muros resistem intactos ao cerco.",
+        "why": "Nebuzaradã queima a casa do Senhor e derruba os muros."
+      },
+      {
+        "text": "Zedequias escapa com sucesso para o Egito.",
+        "why": "É alcançado nas campinas de Jericó, cegado e levado à Babilônia."
+      },
+      {
+        "text": "Ninguém permanece na terra após a queda.",
+        "why": "O chefe da guarda deixa alguns dos mais pobres como vinheteiros e lavradores."
+      }
+    ],
+    "centralInsight": "A cidade santa cai: sem ouvir o Senhor, nem muro nem templo seguram.",
+    "anchorQuestion": "Quem queimou a casa do Senhor em Jerusalém?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 25:9, Nebuzaradã queimou a casa do Senhor e a casa do rei.",
+      "verseRef": "2 Reis 25:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "O templo e o palácio vão às chamas.",
+      "feedbackWrong": {
+        "false": "Releia 25:9: queimou a casa do Senhor e a casa do rei."
+      },
+      "hint": "Veja o que Nebuzaradã queima.",
+      "learningObjective": "Observar a queima do templo.",
+      "evidence": [
+        "2 Reis 25:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 25:4, toque o que aconteceu com a cidade.",
+      "verseRef": "2 Reis 25:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "foi arrombada"
+        },
+        {
+          "id": "b",
+          "text": "jardim do rei"
+        },
+        {
+          "id": "c",
+          "text": "caminho da Campina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então a cidade foi arrombada",
+      "feedbackCorrect": "A cidade é arrombada; a fuga vem em seguida.",
+      "feedbackWrong": {
+        "b": "O jardim marca o caminho da fuga, não o que sucede à cidade.",
+        "c": "A Campina é a rota do rei; a cidade foi arrombada."
+      },
+      "hint": "Leia a primeira ação do versículo.",
+      "learningObjective": "Identificar a queda da cidade.",
+      "evidence": [
+        "2 Reis 25:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 25:3, o que faltava ao povo durante o cerco?",
+      "verseRef": "2 Reis 25:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pão"
+        },
+        {
+          "id": "b",
+          "text": "Água das cisternas"
+        },
+        {
+          "id": "c",
+          "text": "Ouro do templo"
+        },
+        {
+          "id": "d",
+          "text": "Cavalos de guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não havia pão para o povo da terra",
+      "feedbackCorrect": "A fome aperta: não havia pão.",
+      "feedbackWrong": {
+        "b": "O texto fala de pão, não de água.",
+        "c": "Ouro não é o que falta aqui; falta pão.",
+        "d": "O versículo menciona pão, não cavalos."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar a fome no cerco.",
+      "evidence": [
+        "2 Reis 25:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 25:9 na ordem do texto.",
+      "verseRef": "2 Reis 25:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queimou a casa do SENHOR e a casa do rei"
+        },
+        {
+          "id": "b",
+          "text": "assim como todas as casas de Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "também entregou às chamas todos os edifícios importantes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "Templo, palácio, casas e edifícios importantes vão às chamas.",
+      "feedbackWrong": {
+        "default": "Comece pela casa do Senhor e a casa do rei."
+      },
+      "hint": "O versículo começa pelo templo.",
+      "learningObjective": "Seguir a ordem da queima.",
+      "evidence": [
+        "2 Reis 25:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 25:2, complete: e a cidade permaneceu ___ até o décimo primeiro ano do rei Zedequias.",
+      "verseRef": "2 Reis 25:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "sitiada"
+        },
+        {
+          "id": "b",
+          "text": "vazia"
+        },
+        {
+          "id": "c",
+          "text": "livre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a cidade permaneceu sitiada",
+      "feedbackCorrect": "O cerco dura: a cidade permanece sitiada.",
+      "feedbackWrong": {
+        "b": "Não vazia ainda: sitiada.",
+        "c": "Não livre: sitiada."
+      },
+      "hint": "Qual palavra descreve o estado da cidade?",
+      "learningObjective": "Lembrar a duração do cerco.",
+      "evidence": [
+        "2 Reis 25:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 25:9 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 25:9",
+      "passageA": {
+        "ref": "2 Reis 25:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na queda final, nem o templo escapa às chamas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O templo também cai"
+        },
+        {
+          "id": "b",
+          "text": "O templo fica intacto"
+        },
+        {
+          "id": "c",
+          "text": "Só o palácio queima"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "A casa do Senhor queima junto com a cidade.",
+      "feedbackWrong": {
+        "b": "O texto diz que queimou a casa do Senhor.",
+        "c": "Também a casa do Senhor, não só o palácio."
+      },
+      "hint": "Veja o primeiro edifício nomeado.",
+      "learningObjective": "Ligar a queima ao fim do templo.",
+      "evidence": [
+        "2 Reis 25:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 25:5, o exército dos babilônios perseguiu Zedequias e o alcançou nas campinas de Jericó.",
+      "verseRef": "2 Reis 25:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "perseguiu o rei Zedequias e o alcançou nas campinas de Jericó",
+      "feedbackCorrect": "A fuga falha: o rei é alcançado em Jericó.",
+      "feedbackWrong": {
+        "false": "Releia 25:5: perseguiu e alcançou o rei em Jericó."
+      },
+      "hint": "Veja o que acontece depois da fuga.",
+      "learningObjective": "Compreender o contraste entre fuga e captura.",
+      "evidence": [
+        "2 Reis 25:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 25:5, toque a palavra que marca o contraste com a fuga do rei.",
+      "verseRef": "2 Reis 25:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "Jericó"
+        },
+        {
+          "id": "c",
+          "text": "exército"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas o exército dos babilônios perseguiu",
+      "feedbackCorrect": "\"Mas\" vira a cena: a fuga encontra perseguição.",
+      "feedbackWrong": {
+        "b": "Jericó é o lugar; o contraste começa com \"Mas\".",
+        "c": "\"Exército\" é quem age; o marcador é \"Mas\"."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Reis 25:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 25:12 se relaciona com 2 Reis 25:11?",
+      "verseRef": "2 Reis 25:11–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Muitos vão cativos; no entanto alguns pobres ficam"
+        },
+        {
+          "id": "b",
+          "text": "Todos sem exceção vão à Babilônia"
+        },
+        {
+          "id": "c",
+          "text": "Os pobres são os primeiros a partir"
+        },
+        {
+          "id": "d",
+          "text": "Nebuzaradã deixa os nobres e leva os pobres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deixou alguns dos mais pobres da terra",
+      "feedbackCorrect": "\"No entanto\" marca o contraste: alguns pobres ficam.",
+      "feedbackWrong": {
+        "b": "O texto deixa alguns dos mais pobres na terra.",
+        "c": "Os pobres são quem fica, não quem parte primeiro.",
+        "d": "É o inverso: leva a multidão e deixa pobres."
+      },
+      "hint": "Leia a abertura de 25:12.",
+      "learningObjective": "Relacionar exílio e remanescente pobre.",
+      "evidence": [
+        "2 Reis 25:11–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a queda em 2 Reis 25:1–12?",
+      "verseRef": "2 Reis 25:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cerco longo e fome na cidade"
+        },
+        {
+          "id": "b",
+          "text": "A cidade cai e Zedequias é capturado"
+        },
+        {
+          "id": "c",
+          "text": "Templo queima e o povo vai cativo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "Cerco, queda e destruição: a cidade santa cai por etapas.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco; a queima fecha o movimento."
+      },
+      "hint": "A fome vem antes da fuga.",
+      "learningObjective": "Compreender a sequência da queda.",
+      "evidence": [
+        "2 Reis 25:1",
+        "2 Reis 25:4",
+        "2 Reis 25:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 25:12, complete: o chefe da guarda ___ alguns dos mais pobres da terra.",
+      "verseRef": "2 Reis 25:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "deixou"
+        },
+        {
+          "id": "b",
+          "text": "expulsou"
+        },
+        {
+          "id": "c",
+          "text": "vendeu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deixou alguns dos mais pobres da terra",
+      "feedbackCorrect": "A ação marca o contraste: deixou pobres na terra.",
+      "feedbackWrong": {
+        "b": "Não expulsou: o texto diz deixou.",
+        "c": "Não vendeu: deixou para serem lavradores."
+      },
+      "hint": "Qual verbo descreve o que o chefe faz com os pobres?",
+      "learningObjective": "Lembrar a ação sobre o remanescente pobre.",
+      "evidence": [
+        "2 Reis 25:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 25:9 a Jeremias 52:12–13?",
+      "verseRef": "2 Reis 25:9",
+      "passageA": {
+        "ref": "2 Reis 25:9"
+      },
+      "passageB": {
+        "ref": "Jeremias 52:12–13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Templo queimado em Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Templo reconstruído na hora"
+        },
+        {
+          "id": "c",
+          "text": "Nebuzaradã poupa o templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "Reis e Jeremias relatam a mesma queima do templo.",
+      "feedbackWrong": {
+        "b": "Os dois textos falam de queima, não de reconstrução imediata.",
+        "c": "Nebuzaradã é quem queima, não quem poupa."
+      },
+      "hint": "Compare o destino da casa do Senhor.",
+      "learningObjective": "Relacionar a queima em Reis e Jeremias.",
+      "evidence": [
+        "2 Reis 25:9",
+        "Jeremias 52:12–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 25:4–7, Zedequias escapa com sucesso e vive livre no Egito.",
+      "verseRef": "2 Reis 25:5–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "cegaram Zedequias, ataram-no com duas cadeias de bronze e o levaram para a Babilônia",
+      "feedbackCorrect": "A fuga falha: captura, cegueira e cadeias até a Babilônia.",
+      "feedbackWrong": {
+        "true": "O texto mostra perseguição, sentença e deportação, não liberdade no Egito."
+      },
+      "hint": "Leia o destino final de Zedequias em 25:7.",
+      "learningObjective": "Interpretar o fracasso da fuga do rei.",
+      "evidence": [
+        "2 Reis 25:5",
+        "2 Reis 25:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 25:9, toque o verbo que sustenta a leitura de destruição total do templo.",
+      "verseRef": "2 Reis 25:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queimou"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "edifícios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "\"Queimou\" mostra que nem o templo segura a cidade.",
+      "feedbackWrong": {
+        "b": "Jerusalém é o cenário; o verbo da destruição é \"Queimou\".",
+        "c": "Os edifícios são o alvo; o verbo é \"Queimou\"."
+      },
+      "hint": "Procure o verbo que abre o versículo.",
+      "learningObjective": "Sustentar a destruição do templo com o texto.",
+      "evidence": [
+        "2 Reis 25:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 25:1–12 sustenta sobre Jerusalém?",
+      "verseRef": "2 Reis 25:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem ouvir o Senhor, nem muro nem templo seguram"
+        },
+        {
+          "id": "b",
+          "text": "O templo e os muros resistem intactos"
+        },
+        {
+          "id": "c",
+          "text": "Zedequias escapa livre para o Egito"
+        },
+        {
+          "id": "d",
+          "text": "Ninguém permanece na terra após a queda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "derrubou os muros ao redor de Jerusalém",
+      "feedbackCorrect": "Templo queima e muros caem: a cidade santa não se sustenta sozinha.",
+      "feedbackWrong": {
+        "b": "Queimou o templo e derrubou os muros.",
+        "c": "Zedequias é capturado e levado à Babilônia.",
+        "d": "Alguns dos mais pobres ficam como lavradores."
+      },
+      "hint": "Junte a queima de 25:9 com a queda dos muros em 25:10.",
+      "learningObjective": "Escolher a interpretação da queda da cidade.",
+      "evidence": [
+        "2 Reis 25:9",
+        "2 Reis 25:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da cidade caída?",
+      "verseRef": "2 Reis 25:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nebuzaradã queima a casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Muros caem e o povo vai cativo"
+        },
+        {
+          "id": "c",
+          "text": "A cidade outrora grande fica solitária"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "Da queima ao cativeiro e ao lamento pela cidade vazia.",
+      "feedbackWrong": {
+        "default": "Siga: 2 Reis 25:9, Jeremias 39:8–9, Lamentações 1:1."
+      },
+      "hint": "Comece pela queima do templo.",
+      "learningObjective": "Ver o fio da queda até o lamento.",
+      "evidence": [
+        "2 Reis 25:9",
+        "Jeremias 39:8–9",
+        "Lamentações 1:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 25:10, complete: derrubou os ___ ao redor de Jerusalém.",
+      "verseRef": "2 Reis 25:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "exército"
+        },
+        {
+          "id": "b",
+          "text": "todo"
+        },
+        {
+          "id": "c",
+          "text": "caldeus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "todo",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a do versículo.",
+        "c": "Essa palavra não é a do versículo."
+      },
+      "hint": "Veja a palavra que completa o sentido.",
+      "learningObjective": "Lembrar a queda dos muros.",
+      "evidence": [
+        "2 Reis 25:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 25:9 a Lamentações 1:1?",
+      "verseRef": "2 Reis 25:9",
+      "passageA": {
+        "ref": "2 Reis 25:9"
+      },
+      "passageB": {
+        "ref": "Lamentações 1:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidade solitária após a queda"
+        },
+        {
+          "id": "b",
+          "text": "Cidade mais populosa que nunca"
+        },
+        {
+          "id": "c",
+          "text": "Templo mais glorioso ainda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todas as casas de Jerusalém",
+      "feedbackCorrect": "A queima prepara o lamento: a cidade fica solitária.",
+      "feedbackWrong": {
+        "b": "Lamentações fala de solidão, não de crescimento.",
+        "c": "O templo queima; não fica mais glorioso."
+      },
+      "hint": "Pense no estado da cidade depois da destruição.",
+      "learningObjective": "Ligar a queda ao lamento pela cidade.",
+      "evidence": [
+        "2 Reis 25:9",
+        "Lamentações 1:1"
+      ]
+    }
+  ]
+}

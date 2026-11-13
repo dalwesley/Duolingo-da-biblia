@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "Deuteronômio 23:19–22",
+    "passages": [
+      {
+        "ref": "Deuteronômio 23:19–22"
+      },
+      {
+        "ref": "Deuteronômio 24:10–13"
+      },
+      {
+        "ref": "Deuteronômio 25:13–16"
+      },
+      {
+        "ref": "Deuteronômio 26:1–5"
+      },
+      {
+        "ref": "Deuteronômio 27:1–5"
+      }
+    ],
+    "context": "Cena de Travessia: Aliança renovada: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Aliança renovada",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Não.",
+        "evidenceRef": "Deuteronômio 23:19",
+        "evidenceSpan": "Não"
+      },
+      {
+        "text": "Porém.",
+        "evidenceRef": "Deuteronômio 23:22",
+        "evidenceSpan": "Porém"
+      },
+      {
+        "text": "Quando.",
+        "evidenceRef": "Deuteronômio 24:10",
+        "evidenceSpan": "Quando"
+      },
+      {
+        "text": "Ao.",
+        "evidenceRef": "Deuteronômio 24:13",
+        "evidenceSpan": "Ao"
+      },
+      {
+        "text": "Na.",
+        "evidenceRef": "Deuteronômio 25:13",
+        "evidenceSpan": "Na"
+      },
+      {
+        "text": "Porque.",
+        "evidenceRef": "Deuteronômio 25:16",
+        "evidenceSpan": "Porque"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Não emprestarás a teu irmão",
+        "evidenceRef": "Deuteronômio 23:19"
+      },
+      {
+        "label": "Porém se te abstiveres de fazer",
+        "evidenceRef": "Deuteronômio 23:22"
+      },
+      {
+        "label": "Quando você emprestar algo ao seu",
+        "evidenceRef": "Deuteronômio 24:10"
+      },
+      {
+        "label": "Ao pôr do sol certamente restituirás",
+        "evidenceRef": "Deuteronômio 24:13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Porém\".",
+        "marker": "Porém",
+        "evidenceRef": "Deuteronômio 23:22"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Deuteronômio 24:10"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Deuteronômio 24:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 3:22",
+        "bridge": "Profeta como Moisés"
+      },
+      {
+        "ref": "Êxodo 20:2–3",
+        "bridge": "Eu sou o Senhor"
+      },
+      {
+        "ref": "Romanos 10:6–8",
+        "bridge": "A palavra está perto"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A aliança molda o bolso, o trabalho e a memória",
+    "anchorQuestion": "O que Deuteronômio 23:19 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Deuteronômio 23:19, o texto inclui Não.",
+      "verseRef": "Deuteronômio 23:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 23:19 afirma.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 23:19, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Deuteronômio 23:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "emprestarás"
+        },
+        {
+          "id": "b",
+          "text": "teu"
+        },
+        {
+          "id": "c",
+          "text": "irmão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "emprestarás",
+      "feedbackCorrect": "O versículo destaca emprestarás.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 24:10, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 24:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quando"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 24:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 23:22 na ordem do texto.",
+      "verseRef": "Deuteronômio 23:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "de fazer o voto"
+        },
+        {
+          "id": "c",
+          "text": "não haverá pecado contra ti"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Deuteronômio 23:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Deuteronômio 24:13, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "certamente"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "emprestarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "certamente",
+      "feedbackCorrect": "A palavra do versículo é certamente.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 24:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Deuteronômio 23:19 comunica que se liga a este contexto.",
+      "verseRef": "Deuteronômio 23:19",
+      "passageA": {
+        "ref": "Deuteronômio 23:19"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Aliança renovada: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 26:1, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 26:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "entrar"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "você"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entrar",
+      "feedbackCorrect": "O trecho destaca entrar.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 26:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 27:1 na ordem do texto.",
+      "verseRef": "Deuteronômio 27:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Moisés"
+        },
+        {
+          "id": "b",
+          "text": "anciãos de Israel ordenaram"
+        },
+        {
+          "id": "c",
+          "text": "ao povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Moisés",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 27:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Deuteronômio 23:22, a palavra Porém liga ideias no fluxo do texto.",
+      "verseRef": "Deuteronômio 23:22",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 23:22 afirma.",
+      "evidence": [
+        "Deuteronômio 23:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 23:22, toque a palavra que marca a relação no texto.",
+      "verseRef": "Deuteronômio 23:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "abstiveres"
+        },
+        {
+          "id": "c",
+          "text": "fazer"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O versículo destaca Porém.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 23:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 24:13, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: ao pôr do sol, certamente restituirás a capa para que ele"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ao pôr do sol, certamente restituirás a capa para que ele",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 24:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Deuteronômio 23:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não emprestarás a teu irmão"
+        },
+        {
+          "id": "b",
+          "text": "Porém se te abstiveres de fazer"
+        },
+        {
+          "id": "c",
+          "text": "Quando você emprestar algo ao seu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Deuteronômio 24:10, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 24:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "você"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "emprestarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você",
+      "feedbackCorrect": "A palavra do versículo é você.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 24:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 23:19 a Atos 3:22.",
+      "verseRef": "Deuteronômio 23:19",
+      "passageA": {
+        "ref": "Deuteronômio 23:19"
+      },
+      "passageB": {
+        "ref": "Atos 3:22"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Profeta como Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 26:5, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 26:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "declarará"
+        },
+        {
+          "id": "c",
+          "text": "perante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O trecho destaca Então.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 26:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Deuteronômio 27:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 27:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Deuteronômio 27:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 27:5 afirma.",
+      "evidence": [
+        "Deuteronômio 27:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 25:16, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Deuteronômio 25:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "abominação"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "teu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abominação",
+      "feedbackCorrect": "O versículo destaca abominação.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 25:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 25:13, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 25:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que na sua bolsa, não haverá pesos diferentes, um grande e um pequeno"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Na",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 25:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Deuteronômio 23:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Deuteronômio 25:13, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 25:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "bolsa"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "emprestarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "bolsa",
+      "feedbackCorrect": "A palavra do versículo é bolsa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 25:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 23:19 a Êxodo 20:2–3.",
+      "verseRef": "Deuteronômio 23:19",
+      "passageA": {
+        "ref": "Deuteronômio 23:19"
+      },
+      "passageB": {
+        "ref": "Êxodo 20:2–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu sou o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 27:1, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 27:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "E"
+        },
+        {
+          "id": "c",
+          "text": "os"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés",
+      "feedbackCorrect": "O trecho destaca Moisés.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 27:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento ligado a Deuteronômio 23:19.",
+      "verseRef": "Deuteronômio 23:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 23:19"
+      ]
+    }
+  ]
+}

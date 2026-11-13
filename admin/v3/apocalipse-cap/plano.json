@@ -1,0 +1,220 @@
+{
+  "slug": "apocalipse-cap",
+  "prefix": "apc",
+  "book": "Apocalipse",
+  "chapters": 22,
+  "title": "Apocalipse",
+  "description": "Apocalipse capítulo a capítulo: revelação de Jesus, conflito e nova criação.",
+  "icon": "👑",
+  "color": "#C45C3A",
+  "order": 80,
+  "realm": "novo-testamento",
+  "category": "apocalipse",
+  "avoidTrails": ["apocalipse"],
+  "modules": [
+    {
+      "title": "Cartas e trono · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Apocalipse 1:4–11",
+          "title": "Graça das sete igrejas",
+          "intro": "João escreve às sete igrejas da Ásia com graça e paz daquele que é, que era e que há de vir.",
+          "insight": "Jesus nos ama, nos libertou dos pecados pelo seu sangue e vem com as nuvens.",
+          "objective": "Ouvir a voz do Senhor"
+        },
+        {
+          "ref": "Apocalipse 2:12–17",
+          "title": "Pérgamo sob pressão",
+          "intro": "À igreja em Pérgamo, onde está o trono de Satanás, Cristo fala com a espada afiada.",
+          "insight": "Quem vencer receberá o maná escondido e um nome novo que ninguém conhece.",
+          "objective": "Fidelidade sob pressão"
+        },
+        {
+          "ref": "Apocalipse 3:14–22",
+          "title": "Laodiceia morninha",
+          "intro": "O Amém fala à igreja rica e morninha: nem fria nem quente.",
+          "insight": "Eis que estou à porta e bato: quem abrir, cearei com ele; ao vencedor darei assento no trono.",
+          "objective": "Abrir a porta a Cristo"
+        },
+        {
+          "ref": "Apocalipse 4:1–8",
+          "title": "Porta aberta no céu",
+          "intro": "João vê uma porta aberta no céu e um trono, com alguém assentado.",
+          "insight": "Santo, santo, santo é o Senhor Deus, o Todo-Poderoso, que era, que é e que há de vir.",
+          "objective": "Adorar o que está no trono"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cartas e trono",
+        "intro": "Revise a graça às igrejas, Pérgamo, Laodiceia e o trono no céu.",
+        "insight": "Cristo fala às igrejas e reina no trono"
+      }
+    },
+    {
+      "title": "Cordeiro e juízos · cap. 5–9",
+      "scenes": [
+        {
+          "ref": "Apocalipse 5:1–5",
+          "title": "Quem é digno?",
+          "intro": "Um livro selado está na mão direita do que está no trono, e ninguém podia abri-lo.",
+          "insight": "Não chores: o Leão da tribo de Judá venceu para abrir o livro e os seus sete selos.",
+          "objective": "Confiar no Leão que venceu"
+        },
+        {
+          "ref": "Apocalipse 6:9–17",
+          "title": "Almas debaixo do altar",
+          "intro": "Ao abrir o quinto e o sexto selo, João vê mártires e o grande dia da ira.",
+          "insight": "Até quando, Senhor? Os céus se recolhem, e quem poderá subsistirá diante do Cordeiro?",
+          "objective": "Temer o dia do Cordeiro"
+        },
+        {
+          "ref": "Apocalipse 7:1–5",
+          "title": "Selados na terra",
+          "intro": "Quatro anjos detêm os ventos até que os servos de Deus sejam selados.",
+          "insight": "Não danifiqueis a terra até que selemos na fronte os servos do nosso Deus.",
+          "objective": "Pertencer aos selados"
+        },
+        {
+          "ref": "Apocalipse 8:1–6",
+          "title": "Silêncio e trombetas",
+          "intro": "Quando o sétimo selo foi aberto, houve silêncio no céu; depois as trombetas se preparam.",
+          "insight": "As orações dos santos sobem com o incenso diante de Deus; então soam as trombetas.",
+          "objective": "Orar enquanto Deus age"
+        },
+        {
+          "ref": "Apocalipse 9:13–21",
+          "title": "Sexta trombeta",
+          "intro": "A sexta trombeta solta quatro anjos no Eufrates; ainda assim os homens não se arrependem.",
+          "insight": "Mesmo após pragas terríveis, muitos não se arrependem das obras das suas mãos.",
+          "objective": "Arrepender-se de verdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cordeiro e juízos",
+        "intro": "Revise o livro selado, os mártires, os selados, o silêncio e a sexta trombeta.",
+        "insight": "O Cordeiro abre o juízo; o chamado é ao arrependimento"
+      }
+    },
+    {
+      "title": "Testemunhas e conflito · cap. 10–14",
+      "scenes": [
+        {
+          "ref": "Apocalipse 10:1–7",
+          "title": "O livrinho aberto",
+          "intro": "Um anjo forte desce com um livrinho aberto e jura que não haverá mais demora.",
+          "insight": "Nos dias da voz do sétimo anjo, o mistério de Deus se cumprirá, como ele anunciou.",
+          "objective": "Esperar o cumprimento"
+        },
+        {
+          "ref": "Apocalipse 11:15–19",
+          "title": "O reino do mundo",
+          "intro": "O sétimo anjo toca a trombeta e ouvem-se grandes vozes no céu.",
+          "insight": "O reino do mundo passou a ser de nosso Senhor e do seu Cristo, e ele reinará pelos séculos.",
+          "objective": "Celebrar o reino de Cristo"
+        },
+        {
+          "ref": "Apocalipse 12:7–12",
+          "title": "Guerra no céu",
+          "intro": "Miguel e os seus anjos pelejaram contra o dragão, que foi lançado à terra.",
+          "insight": "Eles o venceram pelo sangue do Cordeiro e pela palavra do seu testemunho.",
+          "objective": "Vencer pelo Cordeiro"
+        },
+        {
+          "ref": "Apocalipse 13:1–8",
+          "title": "A besta do mar",
+          "intro": "João vê uma besta subir do mar; a terra se admira e a adora.",
+          "insight": "Foi-lhe dado fazer guerra aos santos; adore-se só o Cordeiro, não a besta.",
+          "objective": "Não adorar a besta"
+        },
+        {
+          "ref": "Apocalipse 14:6–12",
+          "title": "Evangelho eterno",
+          "intro": "Um anjo anuncia o evangelho eterno e outros anunciam a queda de Babilônia e o juízo.",
+          "insight": "Temei a Deus e dai-lhe glória; aqui está a perseverança dos santos que guardam os mandamentos.",
+          "objective": "Temer a Deus e perseverar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Testemunhas e conflito",
+        "intro": "Revise o livrinho, o reino, a guerra no céu, a besta e o evangelho eterno.",
+        "insight": "No conflito, vencem os que pertencem ao Cordeiro"
+      }
+    },
+    {
+      "title": "Taças e Babilônia · cap. 15–18",
+      "scenes": [
+        {
+          "ref": "Apocalipse 15:1–8",
+          "title": "Cântico de Moisés",
+          "intro": "João vê sete anjos com as últimas pragas e os vencedores cantando junto ao mar de vidro.",
+          "insight": "Grandes e admiráveis são as tuas obras, Senhor Deus Todo-Poderoso; justos e verdadeiros os teus caminhos.",
+          "objective": "Cantar a justiça de Deus"
+        },
+        {
+          "ref": "Apocalipse 16:1–7",
+          "title": "As primeiras taças",
+          "intro": "Uma grande voz manda derramar as taças da ira de Deus sobre a terra.",
+          "insight": "Justo és tu, ó Santo, porque julgaste estas coisas: deram sangue de santos, e sangue lhes deste a beber.",
+          "objective": "Reconhecer o juízo justo"
+        },
+        {
+          "ref": "Apocalipse 17:1–6",
+          "title": "A mulher e a besta",
+          "intro": "Um dos anjos mostra a grande prostituta assentada sobre muitas águas.",
+          "insight": "Sobre a fronte dela há um nome: Mistério, Babilônia a Grande, mãe das prostituições.",
+          "objective": "Discernir Babilônia"
+        },
+        {
+          "ref": "Apocalipse 18:9–17",
+          "title": "Queda de Babilônia",
+          "intro": "Reis e mercadores choram a queda da grande cidade em uma hora.",
+          "insight": "Ai, ai da grande cidade: em uma hora foi assolada tanta riqueza.",
+          "objective": "Não confiar na cidade que cai"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Taças e Babilônia",
+        "intro": "Revise o cântico, as taças, a mulher e a queda de Babilônia.",
+        "insight": "O juízo de Deus é justo; Babilônia não permanece"
+      }
+    },
+    {
+      "title": "Vitória e nova criação · cap. 19–22",
+      "scenes": [
+        {
+          "ref": "Apocalipse 19:11–16",
+          "title": "O Verbo de Deus",
+          "intro": "João vê o céu aberto e um cavaleiro fiel e verdadeiro, chamado Verbo de Deus.",
+          "insight": "No manto e na coxa traz escrito: Rei dos reis e Senhor dos senhores.",
+          "objective": "Seguir o Rei dos reis"
+        },
+        {
+          "ref": "Apocalipse 20:11–15",
+          "title": "O grande trono branco",
+          "intro": "João vê um grande trono branco; livros são abertos e os mortos são julgados.",
+          "insight": "Se alguém não foi achado inscrito no livro da vida, foi lançado no lago de fogo.",
+          "objective": "Viver no livro da vida"
+        },
+        {
+          "ref": "Apocalipse 21:22–27",
+          "title": "Sem templo na cidade",
+          "intro": "Na nova Jerusalém João não vê templo: o Senhor Deus e o Cordeiro são o seu templo.",
+          "insight": "A cidade não precisa de sol: a glória de Deus a ilumina, e a sua lâmpada é o Cordeiro.",
+          "objective": "Habitar na luz do Cordeiro"
+        },
+        {
+          "ref": "Apocalipse 22:1–7",
+          "title": "O rio da vida",
+          "intro": "O anjo mostra o rio da água da vida e a árvore da vida; Jesus promete: venho sem demora.",
+          "insight": "Bem-aventurados os que guardam as palavras da profecia deste livro: eis que venho sem demora.",
+          "objective": "Guardar a profecia e esperar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Vitória e nova criação",
+        "intro": "Revise o Rei, o trono branco, a cidade sem templo e o rio da vida.",
+        "insight": "O Cordeiro vence e faz nova todas as coisas"
+      }
+    }
+  ]
+}

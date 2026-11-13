@@ -1,0 +1,43 @@
+{
+  "slug": "romanos-cap",
+  "prefix": "rmc",
+  "book": "Romanos",
+  "chapters": 16,
+  "title": "Romanos",
+  "description": "Romanos capítulo a capítulo: o evangelho que é poder de Deus para salvar.",
+  "icon": "📜",
+  "color": "#8E44AD",
+  "order": 61,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": [
+    "romanos"
+  ],
+  "modules": [
+    {
+      "title": "Nome da etapa · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Romanos 1:16–17",
+          "title": "Título curto da cena",
+          "intro": "Uma ou duas frases que situam a cena, sem entregar a ideia central.",
+          "insight": "Uma ideia clara, até 140 caracteres, no tom do app.",
+          "objective": "2 a 5 palavras"
+        },
+        {
+          "ref": "Romanos 3:21–26",
+          "chapters": "2–3",
+          "title": "Cena que cobre dois capítulos",
+          "intro": "…",
+          "insight": "…",
+          "objective": "…"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Nome da etapa",
+        "intro": "Revise … (as cenas da etapa).",
+        "insight": "A ideia que une a etapa"
+      }
+    }
+  ]
+}

@@ -1,0 +1,622 @@
+{
+  "study": {
+    "passageRef": "1 Reis 18:36–39",
+    "passages": [
+      { "ref": "1 Reis 15:9–15" },
+      { "ref": "1 Reis 16:29–34" },
+      { "ref": "1 Reis 17:8–16" },
+      { "ref": "1 Reis 18:30–39" }
+    ],
+    "context": "Este desafio revisa Asa em Judá, Acabe e Baal, a viúva de Sarepta e o fogo no Carmelo. Reis se desviam; o Senhor sustenta e se revela pelo profeta.",
+    "keyword": "Senhor",
+    "keywordGloss": "Aquele a quem Asa entrega o coração, a quem Acabe desafia, e a quem o povo confessa no Carmelo.",
+    "focusQuestion": "Quando reis falham e o pouco parece acabar, você ainda confia no Senhor que se revela?",
+    "reflectionPrompts": [
+      "Coração completo",
+      "Provisão na falta",
+      "O Senhor é Deus"
+    ],
+    "facts": [
+      {
+        "text": "Asa fez o reto e o coração foi completamente do Senhor.",
+        "evidenceRef": "1 Reis 15:14",
+        "evidenceSpan": "o coração de Asa foi completamente do SENHOR"
+      },
+      {
+        "text": "Acabe serviu a Baal e o adorou.",
+        "evidenceRef": "1 Reis 16:31",
+        "evidenceSpan": "serviu a Baal e o adorou"
+      },
+      {
+        "text": "Hiel edificou Jericó e perdeu o primogênito e o último.",
+        "evidenceRef": "1 Reis 16:34",
+        "evidenceSpan": "Hiel, o betelita, edificou Jericó"
+      },
+      {
+        "text": "A farinha da panela não se esgotou conforme a palavra.",
+        "evidenceRef": "1 Reis 17:16",
+        "evidenceSpan": "a farinha da panela não se esgotou"
+      },
+      {
+        "text": "Elias restaurou o altar do Senhor em ruínas.",
+        "evidenceRef": "1 Reis 18:30",
+        "evidenceSpan": "restaurou o altar do SENHOR, que estava em ruínas"
+      },
+      {
+        "text": "O povo clamou que o Senhor é Deus.",
+        "evidenceRef": "1 Reis 18:39",
+        "evidenceSpan": "O SENHOR é Deus! O SENHOR é Deus!"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "coração",
+        "gloss": "O centro da fidelidade de Asa diante do Senhor."
+      },
+      {
+        "term": "Baal",
+        "gloss": "O ídolo a quem Acabe serve e que o Carmelo confronta."
+      },
+      {
+        "term": "farinha",
+        "gloss": "O pouco da viúva que o Senhor não deixa acabar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Asa faz o reto com coração fiel",
+        "evidenceRef": "1 Reis 15:11–14"
+      },
+      {
+        "label": "Acabe serve a Baal e Jericó cai sob a palavra",
+        "evidenceRef": "1 Reis 16:31–34"
+      },
+      {
+        "label": "A viúva confia e a farinha não falta",
+        "evidenceRef": "1 Reis 17:12–16"
+      },
+      {
+        "label": "Fogo cai e o povo confessa o Senhor",
+        "evidenceRef": "1 Reis 18:38–39"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os altos de Asa ficam; contudo o coração é do Senhor.",
+        "marker": "contudo",
+        "evidenceRef": "1 Reis 15:14"
+      },
+      {
+        "kind": "causa",
+        "text": "A promessa à viúva vem porque assim diz o Senhor.",
+        "marker": "Porque",
+        "evidenceRef": "1 Reis 17:14"
+      },
+      {
+        "kind": "propósito",
+        "text": "Elias ora para que o povo saiba que o Senhor é Deus.",
+        "marker": "para que",
+        "evidenceRef": "1 Reis 18:37"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Josué 6:26", "bridge": "Maldição sobre Jericó" },
+      { "ref": "Lucas 4:25–26", "bridge": "Viúva de Sarepta no evangelho" },
+      { "ref": "Deuteronômio 6:5", "bridge": "Amar o Senhor de todo coração" }
+    ],
+    "misreadings": [
+      {
+        "text": "Asa e Acabe são avaliados da mesma forma pelo narrador.",
+        "why": "Asa faz o reto; Acabe faz o mal mais do que todos os anteriores."
+      },
+      {
+        "text": "A viúva tinha estoque escondido; o milagre era só aparência.",
+        "why": "Ela confessa um punhado de farinha e um pouco de azeite."
+      },
+      {
+        "text": "O fogo no Carmelo cai sobre um altar seco e fácil.",
+        "why": "A água é derramada três vezes; o rego fica cheio."
+      }
+    ],
+    "centralInsight": "Enquanto reis se desviam, o Senhor sustenta e se revela pelo profeta",
+    "anchorQuestion": "O que o povo exclamou em 1 Reis 18:39, depois do fogo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 16:31, Acabe serviu a Baal e o adorou.",
+      "verseRef": "1 Reis 16:31",
+      "correctOptionId": "true",
+      "evidenceSpan": "serviu a Baal e o adorou",
+      "feedbackCorrect": "O texto nomeia o culto: servir e adorar a Baal.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 16:31: ele serviu a Baal e o adorou."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar o culto de Acabe a Baal.",
+      "evidence": ["1 Reis 16:31"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 15:11, toque o que Asa fez aos olhos do Senhor.",
+      "verseRef": "1 Reis 15:11",
+      "options": [
+        { "id": "a", "text": "reto" },
+        { "id": "b", "text": "Davi" },
+        { "id": "c", "text": "pai" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Asa fez o que era reto aos olhos do SENHOR",
+      "feedbackCorrect": "Asa é avaliado: fez o que era reto.",
+      "feedbackWrong": {
+        "b": "Davi é o modelo, não a ação.",
+        "c": "\"Pai\" liga a Davi; não é o que Asa fez."
+      },
+      "hint": "Procure o adjetivo da avaliação.",
+      "learningObjective": "Identificar a avaliação de Asa.",
+      "evidence": ["1 Reis 15:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 17:9, para onde o Senhor manda Elias?",
+      "verseRef": "1 Reis 17:9",
+      "options": [
+        { "id": "a", "text": "A Sarepta, que pertence a Sidom" },
+        { "id": "b", "text": "A Samaria, casa de Baal" },
+        { "id": "c", "text": "A Jericó, com Hiel" },
+        { "id": "d", "text": "A Jerusalém, ao templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vai a Sarepta, que pertence a Sidom",
+      "feedbackCorrect": "O destino é Sarepta, fora de Israel.",
+      "feedbackWrong": {
+        "b": "Samaria é o centro do culto de Acabe.",
+        "c": "Jericó aparece com Hiel em 16:34.",
+        "d": "Não é Jerusalém neste verso."
+      },
+      "hint": "Leia o nome da cidade na ordem.",
+      "learningObjective": "Observar o envio a Sarepta.",
+      "evidence": ["1 Reis 17:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 18:39 na ordem do texto.",
+      "verseRef": "1 Reis 18:39",
+      "options": [
+        { "id": "a", "text": "quando todo o povo viu isso" },
+        { "id": "b", "text": "caiu com o rosto em terra" },
+        { "id": "c", "text": "exclamou: \"O SENHOR é Deus! O SENHOR é Deus!\"" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O SENHOR é Deus! O SENHOR é Deus!",
+      "feedbackCorrect": "Ver, cair e confessar.",
+      "feedbackWrong": {
+        "default": "Comece pelo que o povo viu."
+      },
+      "hint": "O verso segue o olhar do povo.",
+      "learningObjective": "Reconhecer a sequência da confissão.",
+      "evidence": ["1 Reis 18:39"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 17:14, o que da panela não se acabará?",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        { "id": "a", "text": "farinha" },
+        { "id": "b", "text": "prata" },
+        { "id": "c", "text": "lenha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "feedbackCorrect": "A promessa cai sobre a farinha.",
+      "feedbackWrong": {
+        "b": "Prata não está na promessa de 17:14.",
+        "c": "Lenha aparece na cena; a promessa é a farinha."
+      },
+      "hint": "Veja o que está na panela.",
+      "learningObjective": "Lembrar a provisão prometida.",
+      "evidence": ["1 Reis 17:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 15:14 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 15:14",
+      "passageA": { "ref": "1 Reis 15:14" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Asa permanece fiel ao Senhor mesmo sem remover todos os altos."
+      },
+      "options": [
+        { "id": "a", "text": "Coração de Asa completo ao Senhor" },
+        { "id": "b", "text": "Asa serve a Baal em Samaria" },
+        { "id": "c", "text": "Asa reedifica Jericó" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o coração de Asa foi completamente do SENHOR",
+      "feedbackCorrect": "O verso afirma o coração completo apesar dos altos.",
+      "feedbackWrong": {
+        "b": "Baal é o culto de Acabe, não de Asa.",
+        "c": "Jericó é reedificada nos dias de Acabe."
+      },
+      "hint": "Veja o que foi completamente do Senhor.",
+      "learningObjective": "Ligar o coração de Asa ao contexto.",
+      "evidence": ["1 Reis 15:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 18:38, toque o que caiu e consumiu o holocausto.",
+      "verseRef": "1 Reis 18:38",
+      "options": [
+        { "id": "a", "text": "fogo do SENHOR" },
+        { "id": "b", "text": "rego" },
+        { "id": "c", "text": "lenha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o fogo do SENHOR caiu e consumiu o holocausto",
+      "feedbackCorrect": "É o fogo do Senhor que consome tudo.",
+      "feedbackWrong": {
+        "b": "O rego recebe a água; não cai sobre o altar.",
+        "c": "A lenha é consumida; não é o que cai."
+      },
+      "hint": "Procure o que caiu.",
+      "learningObjective": "Observar o sinal do fogo.",
+      "evidence": ["1 Reis 18:38"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 16:34 na ordem do texto.",
+      "verseRef": "1 Reis 16:34",
+      "options": [
+        { "id": "a", "text": "Hiel, o betelita, edificou Jericó" },
+        { "id": "b", "text": "quando lhe lançou os fundamentos, morreu Abirão" },
+        { "id": "c", "text": "quando lhe pôs as portas, morreu Segube" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Hiel, o betelita, edificou Jericó",
+      "feedbackCorrect": "Fundamentos e portas custam os dois filhos.",
+      "feedbackWrong": {
+        "default": "Comece pela reedificação de Jericó."
+      },
+      "hint": "O verso abre com Hiel edificando.",
+      "learningObjective": "Reconhecer a sequência da maldição.",
+      "evidence": ["1 Reis 16:34"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 15:14, os altos foram removidos e por isso o coração de Asa ficou completo.",
+      "verseRef": "1 Reis 15:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os altos, entretanto, não foram removidos; contudo, o coração de Asa",
+      "feedbackCorrect": "Os altos ficam; o \"contudo\" marca o coração fiel mesmo assim.",
+      "feedbackWrong": {
+        "true": "Releia: os altos não foram removidos; contudo o coração foi do Senhor."
+      },
+      "hint": "Repare em \"entretanto\" e \"contudo\".",
+      "learningObjective": "Compreender o contraste de Asa.",
+      "evidence": ["1 Reis 15:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 17:12, toque a palavra que marca o contraste na resposta da viúva.",
+      "verseRef": "1 Reis 17:12",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "punhado" },
+        { "id": "c", "text": "cavacos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ela, porém, respondeu",
+      "feedbackCorrect": "\"Porém\" introduz a confissão da falta.",
+      "feedbackWrong": {
+        "b": "\"Punhado\" descreve a farinha, não o contraste.",
+        "c": "\"Cavacos\" são a lenha, não o marcador."
+      },
+      "hint": "Procure a palavra após \"Ela\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["1 Reis 17:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 18:37 se relaciona com a confissão de 18:39?",
+      "verseRef": "1 Reis 18:37",
+      "options": [
+        { "id": "a", "text": "A oração pede que o povo saiba; a confissão responde a esse propósito" },
+        { "id": "b", "text": "A oração pede fama para Elias; o povo ignora" },
+        { "id": "c", "text": "A oração cancela o fogo; o povo se cala" },
+        { "id": "d", "text": "A oração é a Baal; o povo confessa Baal" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que este povo saiba que tu, Senhor, és Deus",
+      "feedbackCorrect": "O \"para que\" de Elias se cumpre no grito: o Senhor é Deus.",
+      "feedbackWrong": {
+        "b": "O alvo é o povo saber, não a fama do profeta.",
+        "c": "O fogo cai; o povo exclama.",
+        "d": "A oração é ao Senhor; a confissão também."
+      },
+      "hint": "Compare o \"para que\" com o que o povo exclama.",
+      "learningObjective": "Relacionar oração e confissão no Carmelo.",
+      "evidence": ["1 Reis 18:37"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco de Reis e Elias?",
+      "verseRef": "1 Reis 15:11–12",
+      "options": [
+        { "id": "a", "text": "Asa faz o reto com coração fiel" },
+        { "id": "b", "text": "Acabe serve a Baal em Samaria" },
+        { "id": "c", "text": "O fogo cai e o povo confessa o Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Asa fez o que era reto aos olhos do SENHOR",
+      "feedbackCorrect": "Fidelidade, idolatria e revelação no Carmelo.",
+      "feedbackWrong": {
+        "default": "Comece por Asa; o Carmelo fecha o bloco."
+      },
+      "hint": "Siga a ordem das cenas do bloco.",
+      "learningObjective": "Compreender o arco do bloco.",
+      "evidence": ["1 Reis 15:11–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 18:37, que expressão marca o propósito da oração de Elias?",
+      "verseRef": "1 Reis 18:37",
+      "options": [
+        { "id": "a", "text": "embora" },
+        { "id": "b", "text": "para" },
+        { "id": "c", "text": "depois" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que este povo saiba",
+      "feedbackCorrect": "\"Para\" introduz o propósito: o povo saber.",
+      "feedbackWrong": {
+        "a": "O texto não usa \"embora\".",
+        "c": "\"Depois\" não marca o propósito."
+      },
+      "hint": "Veja a palavra antes de \"que este povo saiba\".",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": ["1 Reis 18:37"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 16:34 a Josué 6:26?",
+      "verseRef": "1 Reis 16:34",
+      "passageA": { "ref": "1 Reis 16:34" },
+      "passageB": { "ref": "Josué 6:26" },
+      "options": [
+        { "id": "a", "text": "Cumprimento da maldição de Jericó" },
+        { "id": "b", "text": "Vitória de Asa em Judá" },
+        { "id": "c", "text": "Provisão da farinha em Sarepta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo a palavra do SENHOR, que falara por intermédio de Josué",
+      "evidence": ["1 Reis 16:34", "Josué 6:26"],
+      "feedbackCorrect": "A morte dos filhos de Hiel cumpre a palavra de Josué.",
+      "feedbackWrong": {
+        "b": "Asa não é o tema de 16:34.",
+        "c": "Sarepta não aparece neste vínculo."
+      },
+      "hint": "Veja por intermédio de quem a palavra fora falada.",
+      "learningObjective": "Relacionar Jericó em Josué e em Acabe."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 15:14, toque a palavra que marca o contraste após os altos.",
+      "verseRef": "1 Reis 15:14",
+      "options": [
+        { "id": "a", "text": "contudo" },
+        { "id": "b", "text": "altos" },
+        { "id": "c", "text": "dias" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contudo, o coração de Asa foi completamente do SENHOR",
+      "feedbackCorrect": "\"Contudo\" vira a página para o coração fiel.",
+      "feedbackWrong": {
+        "b": "\"Altos\" é o que ficou; não marca o contraste seguinte.",
+        "c": "\"Dias\" fecha a frase; não é o marcador."
+      },
+      "hint": "Procure a palavra depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer o contraste de Asa.",
+      "evidence": ["1 Reis 15:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam provisão e revelação neste bloco?",
+      "verseRef": "1 Reis 17:14–15",
+      "options": [
+        { "id": "a", "text": "A viúva confessa a falta e ouve a promessa" },
+        { "id": "b", "text": "A farinha e o azeite não faltam" },
+        { "id": "c", "text": "No Carmelo o povo confessa que o Senhor é Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "feedbackCorrect": "Da falta à provisão, e da provisão à confissão pública.",
+      "feedbackWrong": {
+        "default": "Comece pela viúva; o Carmelo é o desfecho."
+      },
+      "hint": "Sarepta vem antes do Carmelo.",
+      "learningObjective": "Compreender provisão e revelação no bloco.",
+      "evidence": ["1 Reis 17:14–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 18:34–38, o fogo cai sobre um altar seco, sem água derramada.",
+      "verseRef": "1 Reis 18:34–35",
+      "correctOptionId": "false",
+      "evidenceSpan": "o rego também ficou cheio de água",
+      "feedbackCorrect": "A água três vezes enche o rego antes do fogo.",
+      "feedbackWrong": {
+        "true": "Releia 18:34–35: jarros três vezes; o rego fica cheio."
+      },
+      "hint": "Veja quantas vezes a água é derramada.",
+      "learningObjective": "Interpretar a água como prova do milagre.",
+      "evidence": ["1 Reis 18:34–35"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 17:16, toque o trecho que sustenta o cumprimento da promessa.",
+      "verseRef": "1 Reis 17:16",
+      "options": [
+        { "id": "a", "text": "não se esgotou" },
+        { "id": "b", "text": "botija" },
+        { "id": "c", "text": "Elias" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a farinha da panela não se esgotou",
+      "feedbackCorrect": "O cumprimento está no que não se esgotou.",
+      "feedbackWrong": {
+        "b": "A botija é o recipiente; a prova é o verbo.",
+        "c": "Elias é o intermediário; a prova é a farinha."
+      },
+      "hint": "Procure o que aconteceu com a farinha.",
+      "learningObjective": "Sustentar a leitura do cumprimento.",
+      "evidence": ["1 Reis 17:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura este bloco sustenta sobre o Senhor diante de reis e povo?",
+      "verseRef": "1 Reis 18:38–39",
+      "options": [
+        { "id": "a", "text": "Ele sustenta quem confia e se revela para que o povo confesse quem é Deus" },
+        { "id": "b", "text": "Asa e Acabe recebem a mesma avaliação" },
+        { "id": "c", "text": "A viúva fingia pobreza com estoque escondido" },
+        { "id": "d", "text": "O fogo cai sobre altar seco e fácil" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O SENHOR é Deus! O SENHOR é Deus!",
+      "feedbackCorrect": "Provisão em Sarepta e confissão no Carmelo: o Senhor se mostra.",
+      "feedbackWrong": {
+        "b": "Asa faz o reto; Acabe faz o mal em excesso.",
+        "c": "Ela confessa um punhado e um pouco de azeite.",
+        "d": "A água três vezes torna o sinal inequívoco."
+      },
+      "hint": "Una Sarepta e o Carmelo com a avaliação dos reis.",
+      "learningObjective": "Escolher a interpretação do bloco.",
+      "evidence": ["1 Reis 18:38–39"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o coração fiel e a idolatria neste bloco?",
+      "verseRef": "1 Reis 15:14",
+      "options": [
+        { "id": "a", "text": "Amar o Senhor de todo o coração" },
+        { "id": "b", "text": "O coração de Asa é completamente do Senhor" },
+        { "id": "c", "text": "Acabe serve a Baal e o povo depois confessa o Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o coração de Asa foi completamente do SENHOR",
+      "evidence": ["Deuteronômio 6:5", "1 Reis 15:14", "1 Reis 16:31"],
+      "feedbackCorrect": "O mandamento, a fidelidade de Asa e o contraste com Acabe.",
+      "feedbackWrong": {
+        "default": "Comece pelo mandamento; depois Asa; por fim Acabe."
+      },
+      "hint": "Siga: mandamento, Asa, Acabe.",
+      "learningObjective": "Ver coração e idolatria no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 16:31, a quem Acabe serviu e adorou?",
+      "verseRef": "1 Reis 16:31",
+      "options": [
+        { "id": "a", "text": "Baal" },
+        { "id": "b", "text": "Davi" },
+        { "id": "c", "text": "Josué" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serviu a Baal e o adorou",
+      "feedbackCorrect": "Baal resume a idolatria que o bloco confronta.",
+      "feedbackWrong": {
+        "b": "Davi é o modelo de Asa, não o ídolo de Acabe.",
+        "c": "Josué fala a palavra sobre Jericó; não é adorado."
+      },
+      "hint": "É o nome no fim do verso.",
+      "learningObjective": "Lembrar o termo da idolatria do bloco.",
+      "evidence": ["1 Reis 16:31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 17:9 a Lucas 4:25–26?",
+      "verseRef": "1 Reis 17:9",
+      "passageA": { "ref": "1 Reis 17:9" },
+      "passageB": { "ref": "Lucas 4:25–26" },
+      "options": [
+        { "id": "a", "text": "Jesus lembra a viúva de Sarepta" },
+        { "id": "b", "text": "Acabe restaura o altar" },
+        { "id": "c", "text": "Asa remove todos os altos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vai a Sarepta, que pertence a Sidom",
+      "evidence": ["1 Reis 17:9", "Lucas 4:25–26"],
+      "feedbackCorrect": "Jesus retoma o envio de Elias a uma viúva em Sarepta.",
+      "feedbackWrong": {
+        "b": "Quem restaura o altar é Elias no Carmelo.",
+        "c": "Os altos de Asa não foram removidos."
+      },
+      "hint": "Veja quem o evangelho cita desta história.",
+      "learningObjective": "Ligar Sarepta ao ensino de Jesus."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 18:36, toque o trecho que mostra o alvo da oração de Elias.",
+      "verseRef": "1 Reis 18:36",
+      "options": [
+        { "id": "a", "text": "Deus em Israel" },
+        { "id": "b", "text": "oferta de manjares" },
+        { "id": "c", "text": "servo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faça-se hoje conhecido que Tu és Deus em Israel",
+      "feedbackCorrect": "O alvo é Deus ser conhecido em Israel.",
+      "feedbackWrong": {
+        "b": "A oferta marca o horário, não o alvo.",
+        "c": "Elias é servo; o alvo é Deus."
+      },
+      "hint": "Procure o que deve ficar conhecido.",
+      "learningObjective": "Sustentar o propósito da oração.",
+      "evidence": ["1 Reis 18:36"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o cuidado e a revelação do Senhor neste bloco?",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        { "id": "a", "text": "O Senhor promete farinha e azeite à viúva" },
+        { "id": "b", "text": "Jesus lembra a viúva de Sarepta" },
+        { "id": "c", "text": "Amar o Senhor de todo o coração" }
+      ],
+      "correctOrder": ["c", "a", "b"],
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "evidence": ["Deuteronômio 6:5", "1 Reis 17:14", "Lucas 4:25–26"],
+      "feedbackCorrect": "Mandamento, provisão em Sarepta e eco no evangelho.",
+      "feedbackWrong": {
+        "default": "Comece pelo mandamento; depois Sarepta; por fim Lucas."
+      },
+      "hint": "Siga: Deuteronômio, Reis, Lucas.",
+      "learningObjective": "Ver cuidado e revelação no fio bíblico."
+    }
+  ]
+}

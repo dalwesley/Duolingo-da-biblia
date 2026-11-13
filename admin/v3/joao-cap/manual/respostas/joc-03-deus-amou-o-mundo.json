@@ -1,0 +1,493 @@
+{
+  "study": {
+    "passageRef": "João 3:14–19",
+    "passages": [
+      { "ref": "João 3:14–19" },
+      { "ref": "João 3:20–21" }
+    ],
+    "context": "Nicodemos, mestre em Israel, procura Jesus de noite. Na conversa, Jesus retoma o deserto: Moisés levantou uma serpente, e quem olhava para ela vivia.",
+    "keyword": "amou",
+    "keywordGloss": "Amou, no texto, é o amor de Deus que se mostra ao entregar o Filho unigênito.",
+    "focusQuestion": "Quando a luz mostra uma obra que você esconde, você se aproxima ou se afasta?",
+    "reflectionPrompts": [
+      "O Filho levantado",
+      "O amor que entrega",
+      "Chegar à luz"
+    ],
+    "facts": [
+      {
+        "text": "Moisés levantou a serpente no deserto.",
+        "evidenceRef": "João 3:14",
+        "evidenceSpan": "Moisés levantou a serpente no deserto"
+      },
+      {
+        "text": "É necessário que o Filho do Homem seja levantado.",
+        "evidenceRef": "João 3:14",
+        "evidenceSpan": "é necessário que o Filho do Homem seja levantado"
+      },
+      {
+        "text": "Deus amou o mundo e deu o seu Filho unigênito.",
+        "evidenceRef": "João 3:16",
+        "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito"
+      },
+      {
+        "text": "Deus enviou o Filho para que o mundo fosse salvo, não para condená-lo.",
+        "evidenceRef": "João 3:17",
+        "evidenceSpan": "não para que condenasse o mundo, mas para que o mundo fosse salvo"
+      },
+      {
+        "text": "Quem não crê já está julgado.",
+        "evidenceRef": "João 3:18",
+        "evidenceSpan": "quem não crê já está julgado"
+      },
+      {
+        "text": "Os homens amaram mais as trevas do que a luz.",
+        "evidenceRef": "João 3:19",
+        "evidenceSpan": "os homens amaram mais as trevas do que a luz"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "unigênito",
+        "gloss": "É o modo como o texto nomeia o Filho único, a quem Deus entrega por amor."
+      },
+      {
+        "term": "vida eterna",
+        "gloss": "É a vida que quem crê no Filho recebe, em lugar de se perder."
+      },
+      {
+        "term": "trevas",
+        "gloss": "É o que os homens amaram mais do que a luz, porque suas obras eram más."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus anuncia o Filho levantado",
+        "evidenceRef": "João 3:14–15"
+      },
+      {
+        "label": "Deus entrega o Filho para salvar",
+        "evidenceRef": "João 3:16–18"
+      },
+      {
+        "label": "A luz revela a escolha de cada um",
+        "evidenceRef": "João 3:19–21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Deus deu o Filho com um fim: que todo aquele que nele crê tenha a vida eterna.",
+        "marker": "para que",
+        "evidenceRef": "João 3:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "O Filho não foi enviado para condenar o mundo, e sim para que o mundo fosse salvo.",
+        "marker": "mas",
+        "evidenceRef": "João 3:17"
+      },
+      {
+        "kind": "causa",
+        "text": "Os homens amaram mais as trevas porque as suas obras eram más.",
+        "marker": "porque",
+        "evidenceRef": "João 3:19"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Números 21:8–9", "bridge": "Olhar e viver" },
+      { "ref": "1 João 4:9", "bridge": "Amor entrega o Filho" },
+      { "ref": "João 12:32", "bridge": "Levantado da terra" }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus enviou o Filho ao mundo para condenar o mundo.",
+        "why": "João 3:17 diz o contrário: não para condenar, mas para que o mundo fosse salvo por meio dele."
+      },
+      {
+        "text": "Quem não crê só será julgado no futuro; agora ainda não há juízo.",
+        "why": "O texto afirma que quem não crê já está julgado, por não crer no Filho."
+      },
+      {
+        "text": "O amor de Deus pelo mundo dispensa crer no Filho.",
+        "why": "O dom tem endereço: para que todo aquele que nele crê não pereça e tenha a vida eterna."
+      }
+    ],
+    "centralInsight": "Deus amou o mundo e deu o Filho para que quem crê tenha a vida eterna.",
+    "anchorQuestion": "O que Deus fez com o Filho ao amar o mundo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 3:16, Deus amou o mundo e deu o seu Filho unigênito.",
+      "verseRef": "João 3:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito",
+      "feedbackCorrect": "O versículo une o amor de Deus à entrega do Filho unigênito.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o amor de Deus aparece na entrega do Filho."
+      },
+      "hint": "Observe o que Deus fez ao amar o mundo.",
+      "learningObjective": "Reconhecer que o amor de Deus se mostra na entrega do Filho unigênito.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 3:14, toque quem levantou a serpente.",
+      "verseRef": "João 3:14",
+      "options": [
+        { "id": "a", "text": "Moisés" },
+        { "id": "b", "text": "no deserto" },
+        { "id": "c", "text": "Filho do Homem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés levantou a serpente",
+      "feedbackCorrect": "Quem levanta a serpente nesse versículo é Moisés.",
+      "feedbackWrong": {
+        "b": "O deserto é o lugar da cena, não quem fez a ação.",
+        "c": "O Filho do Homem é quem deve ser levantado, não quem levantou a serpente."
+      },
+      "hint": "Procure o nome de quem ergue a serpente.",
+      "learningObjective": "Identificar quem levantou a serpente no deserto.",
+      "evidence": ["João 3:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 3:17, para que Deus enviou o Filho ao mundo?",
+      "verseRef": "João 3:17",
+      "options": [
+        { "id": "a", "text": "Para que o mundo fosse salvo por meio dele" },
+        { "id": "b", "text": "Para que o mundo fosse condenado por ele" },
+        { "id": "c", "text": "Para anular a necessidade de crer nele" },
+        { "id": "d", "text": "Para limitar a salvação a quem já era bom" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que o mundo fosse salvo por intermédio dele",
+      "feedbackCorrect": "O propósito declarado é salvar o mundo por meio do Filho.",
+      "feedbackWrong": {
+        "b": "O texto nega a condenação: o Filho não veio para condenar.",
+        "c": "O envio não cancela a fé; o trecho fala em salvar o mundo.",
+        "d": "O texto fala do mundo, sem limitar o envio a quem já era bom."
+      },
+      "hint": "Leia o fim do versículo, depois da negativa.",
+      "learningObjective": "Identificar o propósito declarado do envio do Filho.",
+      "evidence": ["João 3:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 3:16 na ordem do texto.",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "Porque Deus amou o mundo de tal maneira" },
+        { "id": "b", "text": "deu o seu Filho unigênito" },
+        { "id": "c", "text": "tenha a vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito",
+      "feedbackCorrect": "A frase vai do amor de Deus ao Filho dado e, no fim, à vida.",
+      "feedbackWrong": {
+        "default": "Comece pelo amor de Deus; a vida eterna fecha o versículo."
+      },
+      "hint": "A abertura fala do amor; a vida aparece no fim.",
+      "learningObjective": "Reconhecer a sequência de João 3:16, do amor à vida eterna.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 3:15, que palavra qualifica a vida de quem crê?",
+      "verseRef": "João 3:15",
+      "options": [
+        { "id": "a", "text": "plena" },
+        { "id": "b", "text": "eterna" },
+        { "id": "c", "text": "breve" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tenha a vida eterna",
+      "feedbackCorrect": "Quem crê recebe vida eterna, não uma vida breve nem só plena.",
+      "feedbackWrong": {
+        "a": "Plena não é a palavra do texto; a vida nomeada é eterna.",
+        "c": "O versículo não fala de vida breve; a vida prometida é eterna."
+      },
+      "hint": "Olhe o adjetivo junto de vida, no fim do versículo.",
+      "learningObjective": "Lembrar como o texto nomeia a vida de quem crê.",
+      "evidence": ["João 3:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 3:14 comunica que se liga a este contexto?",
+      "verseRef": "João 3:14",
+      "passageA": { "ref": "João 3:14" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No deserto, Moisés levantou uma serpente, e quem olhava para ela vivia."
+      },
+      "options": [
+        { "id": "a", "text": "Condenação do mundo" },
+        { "id": "b", "text": "Serpente levantada no deserto" },
+        { "id": "c", "text": "Obras feitas em Deus" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Moisés levantou a serpente no deserto",
+      "feedbackCorrect": "Jesus retoma a serpente que Moisés levantou no deserto.",
+      "feedbackWrong": {
+        "a": "A condenação do mundo entra depois; aqui o elo é a serpente.",
+        "c": "Obras em Deus fecham o trecho; o versículo fala da serpente."
+      },
+      "hint": "Lembre o episódio do deserto citado no contexto.",
+      "learningObjective": "Ligar João 3:14 ao episódio da serpente no deserto.",
+      "evidence": ["João 3:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 3:17, Deus enviou seu Filho ao mundo para condenar o mundo.",
+      "verseRef": "João 3:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "não para que condenasse o mundo, mas para que o mundo fosse salvo",
+      "feedbackCorrect": "O contraste nega esse fim: o Filho veio para o mundo ser salvo.",
+      "feedbackWrong": {
+        "true": "O não vem antes: o envio não tem a condenação como finalidade."
+      },
+      "hint": "Repare na negativa que antecede o verbo condenar.",
+      "learningObjective": "Compreender que o envio do Filho contrasta condenação e salvação.",
+      "evidence": ["João 3:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 3:16, toque as palavras que marcam o propósito do dom.",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "de tal" },
+        { "id": "b", "text": "para que" },
+        { "id": "c", "text": "mas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que todo aquele que nele crê",
+      "feedbackCorrect": "Para que abre o propósito do dom: crer e ter a vida eterna.",
+      "feedbackWrong": {
+        "a": "De tal maneira marca a força do amor, não o propósito do dom.",
+        "c": "Mas introduz um contraste no fim, não o propósito do dom."
+      },
+      "hint": "Olhe a expressão de finalidade logo depois do Filho.",
+      "learningObjective": "Reconhecer a expressão que marca o propósito do dom.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Por que, em João 3:19, os homens amaram mais as trevas?",
+      "verseRef": "João 3:19",
+      "options": [
+        { "id": "a", "text": "Porque a luz ainda não tinha vindo" },
+        { "id": "b", "text": "Porque as obras deles eram más" },
+        { "id": "c", "text": "Porque Deus deixou de amar o mundo" },
+        { "id": "d", "text": "Porque crer no Filho já não importava" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "porque as suas obras eram más",
+      "feedbackCorrect": "A causa está no fim: amaram as trevas porque as obras eram más.",
+      "feedbackWrong": {
+        "a": "O versículo diz que a luz veio; ela não estava ausente.",
+        "c": "A causa no versículo são as obras, não um Deus sem amor.",
+        "d": "O trecho não anula o crer; explica a preferência pelas trevas."
+      },
+      "hint": "Leia a explicação no fim do versículo.",
+      "learningObjective": "Relacionar a preferência pelas trevas à causa dada no texto.",
+      "evidence": ["João 3:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o discurso de João 3:14 a 3:21?",
+      "verseRef": "João 3:14–15",
+      "options": [
+        { "id": "a", "text": "Jesus anuncia o Filho levantado" },
+        { "id": "b", "text": "Deus entrega o Filho para salvar" },
+        { "id": "c", "text": "A luz revela a escolha de cada um" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "é necessário que o Filho do Homem seja levantado",
+      "feedbackCorrect": "O discurso sobe do Filho levantado ao dom que salva e à luz.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do trecho: primeiro o Filho, depois o dom, então a luz."
+      },
+      "hint": "O começo fala do Filho levantado; a luz vem no fim.",
+      "learningObjective": "Compreender os três movimentos do discurso de Jesus.",
+      "evidence": ["João 3:14–15", "João 3:16–18", "João 3:19–21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 3:17, o que o mundo seria por intermédio do Filho?",
+      "verseRef": "João 3:17",
+      "options": [
+        { "id": "a", "text": "julgado" },
+        { "id": "b", "text": "esquecido" },
+        { "id": "c", "text": "salvo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o mundo fosse salvo",
+      "feedbackCorrect": "O contraste fecha na salvação: o mundo seria salvo por meio dele.",
+      "feedbackWrong": {
+        "a": "Julgar é o que o texto exclui; o fim anunciado é a salvação.",
+        "b": "Esquecido não cabe na frase; o mundo é alvo de salvação."
+      },
+      "hint": "Veja o verbo no fim, depois da virada da frase.",
+      "learningObjective": "Lembrar o resultado que o texto anuncia para o mundo.",
+      "evidence": ["João 3:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 3:14 a Números 21:8–9?",
+      "verseRef": "João 3:14",
+      "passageA": { "ref": "João 3:14" },
+      "passageB": { "ref": "Números 21:8–9" },
+      "options": [
+        { "id": "a", "text": "Olhar e viver" },
+        { "id": "b", "text": "Condenação sem escape" },
+        { "id": "c", "text": "Obras ocultas nas trevas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantou a serpente no deserto",
+      "feedbackCorrect": "Números mostra vida para quem olha; Jesus parte dessa cena.",
+      "feedbackWrong": {
+        "b": "A condenação não é o elo; quem olhava a serpente vivia.",
+        "c": "Obras ocultas são o fim de João 3, não o elo com Números."
+      },
+      "hint": "Veja o desfecho de quem se voltava à serpente.",
+      "learningObjective": "Relacionar a serpente de João 3:14 à cena de Números.",
+      "evidence": ["João 3:14", "Números 21:8–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "João 3:18 apresenta a falta de fé como juízo já presente.",
+      "verseRef": "João 3:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "quem não crê já está julgado",
+      "feedbackCorrect": "Quem não crê já está julgado: o juízo já alcança essa pessoa.",
+      "feedbackWrong": {
+        "false": "O texto não descreve um juízo distante; quem não crê já está julgado."
+      },
+      "hint": "Observe o tempo do verbo junto de quem não crê.",
+      "learningObjective": "Interpretar o juízo de João 3:18 como já em curso para quem não crê.",
+      "evidence": ["João 3:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 3:20, toque a reação de quem faz o mal diante da luz.",
+      "verseRef": "João 3:20",
+      "options": [
+        { "id": "a", "text": "detesta a luz" },
+        { "id": "b", "text": "pratica o mal" },
+        { "id": "c", "text": "suas obras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "detesta a luz e não se aproxima dela",
+      "feedbackCorrect": "Quem pratica o mal detesta a luz e não se aproxima dela.",
+      "feedbackWrong": {
+        "b": "Praticar o mal descreve a pessoa; a reação à luz é detestar.",
+        "c": "As obras são o que ele esconde; a reação à luz é outra."
+      },
+      "hint": "Procure o verbo da recusa, antes de não se aproximar.",
+      "learningObjective": "Localizar no texto a recusa da luz por quem pratica o mal.",
+      "evidence": ["João 3:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 3:16–17 sustenta sobre o envio do Filho?",
+      "verseRef": "João 3:16–17",
+      "options": [
+        { "id": "a", "text": "O amor entrega o Filho para salvar o mundo" },
+        { "id": "b", "text": "O Filho é enviado para condenar o mundo" },
+        { "id": "c", "text": "Amar o mundo torna crer desnecessário" },
+        { "id": "d", "text": "A vida chega sem o Filho que Deus deu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deu o seu Filho unigênito",
+      "feedbackCorrect": "Amor, dom do Filho e salvação do mundo andam juntos no trecho.",
+      "feedbackWrong": {
+        "b": "João 3:17 nega a condenação como finalidade do envio.",
+        "c": "O amor tem alvo claro: todo aquele que crê no Filho.",
+        "d": "A vida está ligada ao Filho dado, não a um mundo sem esse dom."
+      },
+      "hint": "Junte o gesto do amor com o fim declarado do envio.",
+      "learningObjective": "Escolher a leitura que une amor, dom do Filho e salvação.",
+      "evidence": ["João 3:16–17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica do argumento em João 3:14–15?",
+      "verseRef": "João 3:14–15",
+      "options": [
+        { "id": "a", "text": "Moisés levanta a serpente no deserto" },
+        { "id": "b", "text": "O Filho do Homem é levantado" },
+        { "id": "c", "text": "Quem crê nele tem a vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Moisés levantou a serpente no deserto",
+      "feedbackCorrect": "O argumento compara, levanta o Filho e abre a vida a quem crê.",
+      "feedbackWrong": {
+        "default": "Siga a frase: primeiro a serpente, depois o Filho, então a vida."
+      },
+      "hint": "A comparação abre o trecho; a vida eterna o fecha.",
+      "learningObjective": "Acompanhar a lógica que vai da serpente à vida de quem crê.",
+      "evidence": ["João 3:14–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 3:16, que palavra o texto usa para o Filho que Deus deu?",
+      "verseRef": "João 3:16",
+      "options": [
+        { "id": "a", "text": "unigênito" },
+        { "id": "b", "text": "amado" },
+        { "id": "c", "text": "enviado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seu Filho unigênito",
+      "feedbackCorrect": "Unigênito nomeia o Filho único que Deus entrega por amor.",
+      "feedbackWrong": {
+        "b": "Amado não é o termo do versículo; o texto diz unigênito.",
+        "c": "Enviado aparece no versículo seguinte; aqui o termo é unigênito."
+      },
+      "hint": "Leia o adjetivo colado a Filho nessa frase.",
+      "learningObjective": "Lembrar o termo que nomeia o Filho entregue por Deus.",
+      "evidence": ["João 3:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 3:16 a 1 João 4:9?",
+      "verseRef": "João 3:16",
+      "passageA": { "ref": "João 3:16" },
+      "passageB": { "ref": "1 João 4:9" },
+      "options": [
+        { "id": "a", "text": "Serpente que sara o povo" },
+        { "id": "b", "text": "Juízo só no futuro" },
+        { "id": "c", "text": "Amor entrega o Filho" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito",
+      "feedbackCorrect": "Os dois textos ligam o amor de Deus ao Filho que ele entrega.",
+      "feedbackWrong": {
+        "a": "A serpente explica João 3:14; aqui o elo é o Filho dado por amor.",
+        "b": "Nenhum dos dois adia o juízo; ambos falam do Filho que dá vida."
+      },
+      "hint": "Compare o gesto de Deus com o Filho nos dois textos.",
+      "learningObjective": "Ligar o amor de João 3:16 ao Filho enviado em 1 João 4:9.",
+      "evidence": ["João 3:16", "1 João 4:9"]
+    }
+  ]
+}

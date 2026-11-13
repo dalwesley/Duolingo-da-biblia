@@ -1,0 +1,294 @@
+{
+  "study": {
+    "passageRef": "Êxodo 29:38–43",
+    "passages": [{"ref": "Êxodo 29:38–46"}],
+    "context": "Cada dia, dois cordeiros no altar. Deus promete encontrar-se ali e habitar no meio de Israel.",
+    "keyword": "Contínuo",
+    "keywordGloss": "O holocausto diário, manhã e tarde, perante o Senhor.",
+    "focusQuestion": "O que em sua vida precisa voltar a ser contínuo perante o Senhor?",
+    "reflectionPrompts": ["Dois cordeiros", "Porta da tenda", "Habitar no meio"],
+    "facts": [
+      {"text": "Oferecem-se dois cordeiros de um ano, todos os dias, continuamente.", "evidenceRef": "Êxodo 29:38", "evidenceSpan": "dois cordeiros de um ano, todos os dias, continuamente"},
+      {"text": "Um cordeiro de manhã e o outro ao pôr do sol.", "evidenceRef": "Êxodo 29:39", "evidenceSpan": "pela manhã, e o outro cordeiro oferecerás ao pôr do sol"},
+      {"text": "O holocausto contínuo é à porta da tenda, perante o Senhor.", "evidenceRef": "Êxodo 29:42", "evidenceSpan": "à porta da tenda da congregação, perante o Senhor"},
+      {"text": "Deus habitará no meio dos filhos de Israel e será o seu Deus.", "evidenceRef": "Êxodo 29:45", "evidenceSpan": "habitarei no meio dos filhos de Israel"},
+      {"text": "Eles saberão que o Senhor os tirou do Egito para habitar no meio deles.", "evidenceRef": "Êxodo 29:46", "evidenceSpan": "para habitar no meio deles"}
+    ],
+    "keyTerms": [
+      {"term": "holocausto", "gloss": "Oferta queimada contínua perante o Senhor."},
+      {"term": "habitarei", "gloss": "Promessa de Deus morar no meio do povo."},
+      {"term": "continuamente", "gloss": "Todos os dias, sem interrupção do culto."}
+    ],
+    "structure": [
+      {"label": "Dois cordeiros todos os dias", "evidenceRef": "Êxodo 29:38–41"},
+      {"label": "Encontro à porta da tenda", "evidenceRef": "Êxodo 29:42–43"},
+      {"label": "Consagração da tenda e de Arão", "evidenceRef": "Êxodo 29:44"},
+      {"label": "Deus habita no meio de Israel", "evidenceRef": "Êxodo 29:45–46"}
+    ],
+    "relations": [
+      {"kind": "propósito", "text": "Deus tirou Israel do Egito para habitar no meio deles.", "marker": "para", "evidenceRef": "Êxodo 29:46"},
+      {"kind": "resultado", "text": "Ali Deus se encontra e fala; por sua glória santifica.", "marker": "ali", "evidenceRef": "Êxodo 29:42"},
+      {"kind": "sequência", "text": "Manhã e pôr do sol marcam o ritmo do holocausto.", "marker": "e", "evidenceRef": "Êxodo 29:39"}
+    ],
+    "crossRefs": [
+      {"ref": "Hebreus 10:11", "bridge": "Sacrifícios dia após dia"},
+      {"ref": "Apocalipse 21:3", "bridge": "Deus habitará com os homens"},
+      {"ref": "João 1:14", "bridge": "O Verbo habitou entre nós"}
+    ],
+    "misreadings": [
+      {"text": "O culto diário é opcional quando o povo estiver cansado.", "why": "O texto manda continuamente, todos os dias."},
+      {"text": "Deus só quer sacrifício, sem habitar com o povo.", "why": "Ele promete habitar no meio de Israel."},
+      {"text": "A libertação do Egito não se liga à habitação de Deus.", "why": "O texto une tirar do Egito e habitar no meio deles."}
+    ],
+    "centralInsight": "O culto diário lembra: o Senhor é quem santifica e quer morar com o povo.",
+    "anchorQuestion": "O que Deus promete fazer no meio dos filhos de Israel?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente", "type": "true_false",
+      "question": "Sobre o altar oferecerão um só cordeiro por semana, nunca dois no mesmo dia.",
+      "verseRef": "Êxodo 29:38", "correctOptionId": "false",
+      "evidenceSpan": "dois cordeiros de um ano, todos os dias, continuamente",
+      "feedbackCorrect": "São dois cordeiros todos os dias, continuamente.",
+      "feedbackWrong": {"true": "Releia: dois cordeiros, todos os dias."},
+      "hint": "Quantos cordeiros e com que frequência?",
+      "learningObjective": "Observar o holocausto diário.", "evidence": ["Êxodo 29:38"]
+    },
+    {
+      "difficulty": "semente", "type": "find_in_text",
+      "question": "Em Êxodo 29:39, toque quando se oferece o segundo cordeiro.",
+      "verseRef": "Êxodo 29:39",
+      "options": [{"id": "a", "text": "pôr do sol"}, {"id": "b", "text": "manhã"}, {"id": "c", "text": "cordeiro"}],
+      "correctOptionId": "a", "evidenceSpan": "ao pôr do sol",
+      "feedbackCorrect": "O outro cordeiro se oferece ao pôr do sol.",
+      "feedbackWrong": {"b": "A manhã é do primeiro; o segundo é ao pôr do sol.", "c": "Cordeiro é a oferta; o tempo é o pôr do sol."},
+      "hint": "O fim do versículo marca o horário.",
+      "learningObjective": "Identificar o horário da tarde.", "evidence": ["Êxodo 29:39"]
+    },
+    {
+      "difficulty": "semente", "type": "choice",
+      "question": "Segundo Êxodo 29:45, o que Deus promete a Israel?",
+      "verseRef": "Êxodo 29:45",
+      "options": [
+        {"id": "a", "text": "Habitar no meio deles e ser o seu Deus"},
+        {"id": "b", "text": "Abandonar o acampamento à noite"},
+        {"id": "c", "text": "Ficar só no monte Sinai"},
+        {"id": "d", "text": "Escolher outro povo no Egito"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel e serei o seu Deus",
+      "feedbackCorrect": "Ele habitará no meio deles e será o seu Deus.",
+      "feedbackWrong": {"b": "A promessa é habitar, não abandonar.", "c": "A promessa é no meio de Israel.", "d": "Ele será o Deus de Israel."},
+      "hint": "Leia as duas promessas do versículo.",
+      "learningObjective": "Observar a promessa de habitação.", "evidence": ["Êxodo 29:45"]
+    },
+    {
+      "difficulty": "semente", "type": "order",
+      "question": "Monte Êxodo 29:42 na ordem do texto.",
+      "verseRef": "Êxodo 29:42",
+      "options": [
+        {"id": "a", "text": "Este será o holocausto contínuo por vossas gerações"},
+        {"id": "b", "text": "à porta da tenda da congregação, perante o Senhor"},
+        {"id": "c", "text": "onde Eu me encontrarei contigo, para falar contigo ali"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Este será o holocausto contínuo",
+      "feedbackCorrect": "Oferta contínua, porta da tenda, depois o encontro.",
+      "feedbackWrong": {"default": "Comece pelo holocausto; o encontro vem no fim."},
+      "hint": "O versículo começa com \"Este será\".",
+      "learningObjective": "Reconhecer a sequência de Êxodo 29:42.", "evidence": ["Êxodo 29:42"]
+    },
+    {
+      "difficulty": "semente", "type": "complete",
+      "question": "Em Êxodo 29:38, com que frequência se oferecem os cordeiros?",
+      "verseRef": "Êxodo 29:38",
+      "options": [{"id": "a", "text": "continuamente"}, {"id": "b", "text": "anualmente"}, {"id": "c", "text": "raramente"}],
+      "correctOptionId": "a", "evidenceSpan": "todos os dias, continuamente",
+      "feedbackCorrect": "A oferta é todos os dias, continuamente.",
+      "feedbackWrong": {"b": "Não é só anual.", "c": "O texto diz continuamente."},
+      "hint": "A última palavra do versículo.",
+      "learningObjective": "Lembrar o ritmo contínuo.", "evidence": ["Êxodo 29:38"]
+    },
+    {
+      "difficulty": "semente", "type": "connect",
+      "question": "O que Êxodo 29:45 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 29:45",
+      "passageA": {"ref": "Êxodo 29:45"},
+      "passageB": {"ref": "Contexto", "text": "Cada dia há oferta no altar; Deus quer morar no meio de Israel."},
+      "options": [
+        {"id": "a", "text": "Deus no meio do povo"},
+        {"id": "b", "text": "Deus longe do acampamento"},
+        {"id": "c", "text": "Culto sem presença"}
+      ],
+      "correctOptionId": "a", "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "A promessa une culto e habitação no meio do povo.",
+      "feedbackWrong": {"b": "Ele promete habitar no meio.", "c": "A presença é o centro da promessa."},
+      "hint": "Compare a oferta diária com a promessa de morar.",
+      "learningObjective": "Ligar culto e habitação.", "evidence": ["Êxodo 29:45"]
+    },
+    {
+      "difficulty": "caminhada", "type": "true_false",
+      "question": "Em Êxodo 29:46, Deus tirou Israel do Egito sem intenção de habitar no meio deles.",
+      "verseRef": "Êxodo 29:46", "correctOptionId": "false",
+      "evidenceSpan": "para habitar no meio deles",
+      "feedbackCorrect": "O propósito declarado é habitar no meio deles.",
+      "feedbackWrong": {"true": "Releia: para habitar no meio deles."},
+      "hint": "Veja a palavra \"para\".",
+      "learningObjective": "Compreender o propósito da libertação.", "evidence": ["Êxodo 29:46"]
+    },
+    {
+      "difficulty": "caminhada", "type": "find_in_text",
+      "question": "Em Êxodo 29:46, toque a palavra que marca o propósito de tirar do Egito.",
+      "verseRef": "Êxodo 29:46",
+      "options": [{"id": "a", "text": "para"}, {"id": "b", "text": "Egito"}, {"id": "c", "text": "Senhor"}],
+      "correctOptionId": "a", "evidenceSpan": "para habitar no meio deles",
+      "feedbackCorrect": "\"Para\" introduz o propósito: habitar no meio deles.",
+      "feedbackWrong": {"b": "Egito é a origem; o propósito é habitar.", "c": "Senhor é quem age; o marcador é \"para\"."},
+      "hint": "Qual palavra introduz \"habitar\"?",
+      "learningObjective": "Tocar o marcador de propósito.", "evidence": ["Êxodo 29:46"]
+    },
+    {
+      "difficulty": "caminhada", "type": "choice",
+      "question": "Como Êxodo 29:42 liga o holocausto ao encontro com Deus?",
+      "verseRef": "Êxodo 29:42",
+      "options": [
+        {"id": "a", "text": "Ali Ele se encontra e fala, à porta da tenda"},
+        {"id": "b", "text": "O altar substitui qualquer presença de Deus"},
+        {"id": "c", "text": "O encontro só acontece longe do acampamento"},
+        {"id": "d", "text": "A oferta impede Deus de falar"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "onde Eu me encontrarei contigo, para falar contigo ali",
+      "feedbackCorrect": "À porta da tenda Deus se encontra e fala.",
+      "feedbackWrong": {"b": "Há encontro, não substituição.", "c": "O lugar é a porta da tenda.", "d": "Ele fala ali."},
+      "hint": "Leia o que acontece \"onde\" está o holocausto.",
+      "learningObjective": "Relacionar oferta e encontro.", "evidence": ["Êxodo 29:42"]
+    },
+    {
+      "difficulty": "caminhada", "type": "order",
+      "question": "Como avança Êxodo 29:38–46?",
+      "verseRef": "Êxodo 29:38–39",
+      "options": [
+        {"id": "a", "text": "Dois cordeiros todos os dias"},
+        {"id": "b", "text": "Encontro à porta da tenda"},
+        {"id": "c", "text": "Deus habita no meio de Israel"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "dois cordeiros de um ano, todos os dias",
+      "feedbackCorrect": "Oferta contínua, encontro, depois habitação.",
+      "feedbackWrong": {"default": "Comece pelos cordeiros; a habitação vem no fim."},
+      "hint": "Primeiro o culto; no fim a promessa de morar.",
+      "learningObjective": "Compreender o movimento do trecho.", "evidence": ["Êxodo 29:38–46"]
+    },
+    {
+      "difficulty": "caminhada", "type": "complete",
+      "question": "Em Êxodo 29:42, onde Deus se encontrará para falar?",
+      "verseRef": "Êxodo 29:42",
+      "options": [{"id": "a", "text": "ali"}, {"id": "b", "text": "longe"}, {"id": "c", "text": "nunca"}],
+      "correctOptionId": "a", "evidenceSpan": "para falar contigo ali",
+      "feedbackCorrect": "O encontro e a fala acontecem ali, à porta da tenda.",
+      "feedbackWrong": {"b": "O texto diz ali.", "c": "Ele promete falar ali."},
+      "hint": "A última palavra do versículo.",
+      "learningObjective": "Lembrar o lugar do encontro.", "evidence": ["Êxodo 29:42"]
+    },
+    {
+      "difficulty": "caminhada", "type": "connect",
+      "question": "O que liga Êxodo 29:45 a Apocalipse 21:3?",
+      "verseRef": "Êxodo 29:45",
+      "passageA": {"ref": "Êxodo 29:45"},
+      "passageB": {"ref": "Apocalipse 21:3"},
+      "options": [
+        {"id": "a", "text": "Deus habita com o povo"},
+        {"id": "b", "text": "Templo vazio para sempre"},
+        {"id": "c", "text": "Fuga do Egito só"}
+      ],
+      "correctOptionId": "a", "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Nos dois textos, Deus habita com o seu povo.",
+      "feedbackWrong": {"b": "A promessa é habitação, não vazio.", "c": "O elo é habitar, não só a saída."},
+      "hint": "O que Deus faz \"no meio\" / \"com\" os homens?",
+      "learningObjective": "Relacionar habitação em Êxodo e Apocalipse.", "evidence": ["Êxodo 29:45", "Apocalipse 21:3"]
+    },
+    {
+      "difficulty": "profundezas", "type": "true_false",
+      "question": "Êxodo 29:45–46 sustenta que o alvo da libertação é Deus morar no meio do povo que Ele santifica.",
+      "verseRef": "Êxodo 29:45–46", "correctOptionId": "true",
+      "evidenceSpan": "para habitar no meio deles",
+      "feedbackCorrect": "Tirar do Egito e habitar no meio estão unidos no texto.",
+      "feedbackWrong": {"false": "O texto liga saída do Egito e habitação."},
+      "hint": "Leia o \"para\" de Êxodo 29:46.",
+      "learningObjective": "Interpretar o alvo da libertação.", "evidence": ["Êxodo 29:45", "Êxodo 29:46"]
+    },
+    {
+      "difficulty": "profundezas", "type": "find_in_text",
+      "question": "Em Êxodo 29:45, toque o verbo que promete a presença de Deus.",
+      "verseRef": "Êxodo 29:45",
+      "options": [{"id": "a", "text": "habitarei"}, {"id": "b", "text": "filhos"}, {"id": "c", "text": "Deus"}],
+      "correctOptionId": "a", "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "\"Habitarei\" carrega a promessa de morar no meio.",
+      "feedbackWrong": {"b": "Filhos recebe a promessa; o verbo é habitarei.", "c": "Deus é quem fala; o verbo é habitarei."},
+      "hint": "Qual verbo abre a promessa?",
+      "learningObjective": "Sustentar a leitura com o verbo da presença.", "evidence": ["Êxodo 29:45"]
+    },
+    {
+      "difficulty": "profundezas", "type": "choice",
+      "question": "Que leitura Êxodo 29:38–46 sustenta sobre o culto diário?",
+      "verseRef": "Êxodo 29:45–46",
+      "options": [
+        {"id": "a", "text": "Aponta para o Deus que quer morar com o povo"},
+        {"id": "b", "text": "Serve só para ocupar o tempo dos sacerdotes"},
+        {"id": "c", "text": "Substitui qualquer necessidade de santidade"},
+        {"id": "d", "text": "Prova que Deus permanece no Egito"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "O culto contínuo caminha com a promessa de habitação.",
+      "feedbackWrong": {"b": "Há encontro e habitação, não só rotina.", "c": "Deus santifica Arão e o povo.", "d": "Ele tirou do Egito para habitar no meio."},
+      "hint": "Una holocausto contínuo e \"habitarei\".",
+      "learningObjective": "Escolher a interpretação sustentada.", "evidence": ["Êxodo 29:42", "Êxodo 29:45"]
+    },
+    {
+      "difficulty": "profundezas", "type": "order",
+      "question": "Qual sequência liga o culto contínuo à habitação final?",
+      "verseRef": "Êxodo 29:45",
+      "options": [
+        {"id": "a", "text": "Holocausto contínuo à porta da tenda"},
+        {"id": "b", "text": "Deus promete habitar no meio de Israel"},
+        {"id": "c", "text": "Apocalipse anuncia Deus com os homens"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "Culto, promessa em Êxodo, eco em Apocalipse.",
+      "feedbackWrong": {"default": "Comece pelo holocausto; Apocalipse vem por último."},
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o fio da habitação na Escritura.", "evidence": ["Êxodo 29:42", "Êxodo 29:45", "Apocalipse 21:3"]
+    },
+    {
+      "difficulty": "profundezas", "type": "complete",
+      "question": "Em Êxodo 29:42, qual palavra nomeia a oferta diária?",
+      "verseRef": "Êxodo 29:42",
+      "options": [{"id": "a", "text": "holocausto"}, {"id": "b", "text": "dizimo"}, {"id": "c", "text": "voto"}],
+      "correctOptionId": "a", "evidenceSpan": "Este será o holocausto contínuo",
+      "feedbackCorrect": "A oferta diária se chama holocausto contínuo.",
+      "feedbackWrong": {"b": "Não é dízimo neste versículo.", "c": "O termo é holocausto."},
+      "hint": "A primeira palavra-chave após \"será o\".",
+      "learningObjective": "Lembrar o termo teológico da cena.", "evidence": ["Êxodo 29:42"]
+    },
+    {
+      "difficulty": "profundezas", "type": "connect",
+      "question": "O que liga Êxodo 29:45 a João 1:14?",
+      "verseRef": "Êxodo 29:45",
+      "passageA": {"ref": "Êxodo 29:45"},
+      "passageB": {"ref": "João 1:14"},
+      "options": [
+        {"id": "a", "text": "Deus habita entre nós"},
+        {"id": "b", "text": "Só lei sem presença"},
+        {"id": "c", "text": "Retorno ao Egito"}
+      ],
+      "correctOptionId": "a", "evidenceSpan": "habitarei no meio dos filhos de Israel",
+      "feedbackCorrect": "João ecoa a habitação: o Verbo habitou entre nós.",
+      "feedbackWrong": {"b": "O elo é habitação, não ausência.", "c": "Não há retorno ao Egito nestes textos."},
+      "hint": "Que verbo une Êxodo e João?",
+      "learningObjective": "Ligar habitação em Êxodo e João.", "evidence": ["Êxodo 29:45", "João 1:14"]
+    }
+  ]
+}

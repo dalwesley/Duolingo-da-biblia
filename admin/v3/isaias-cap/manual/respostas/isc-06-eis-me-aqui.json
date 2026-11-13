@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Isaías 6:1–6",
+    "passages": [
+      { "ref": "Isaías 6:1–6" },
+      { "ref": "Isaías 6:7–8" }
+    ],
+    "context": "No ano da morte de Uzias, Isaías vê o Senhor no trono. A santidade o derruba; uma brasa limpa seus lábios; então ele se oferece ao envio.",
+    "keyword": "Eis-me aqui",
+    "keywordGloss": "Resposta pronta ao chamado do Senhor depois da limpeza dos lábios.",
+    "focusQuestion": "Você responde ao chamado antes ou depois de enfrentar a própria impureza?",
+    "reflectionPrompts": ["Trono sublime", "Lábios limpos", "Envia-me"],
+    "facts": [
+      {
+        "text": "No ano da morte de Uzias, Isaías viu o Senhor assentado sobre um alto e sublime trono.",
+        "evidenceRef": "Isaías 6:1",
+        "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono"
+      },
+      {
+        "text": "Os serafins tinham seis asas: cobriam rosto, pés e voavam.",
+        "evidenceRef": "Isaías 6:2",
+        "evidenceSpan": "cada um tinha seis asas"
+      },
+      {
+        "text": "Os serafins proclamavam: Santo, santo, santo é o Senhor dos Exércitos.",
+        "evidenceRef": "Isaías 6:3",
+        "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos"
+      },
+      {
+        "text": "Isaías disse: Ai de mim! Estou perdido! Pois sou homem de lábios impuros.",
+        "evidenceRef": "Isaías 6:5",
+        "evidenceSpan": "Ai de mim! Estou perdido! Pois sou homem de lábios impuros"
+      },
+      {
+        "text": "Um serafim tocou a boca de Isaías com uma brasa do altar.",
+        "evidenceRef": "Isaías 6:6",
+        "evidenceSpan": "trazendo na mão uma brasa viva que havia removido do altar"
+      },
+      {
+        "text": "Isaías respondeu ao Senhor: Eis-me aqui, envia-me a mim.",
+        "evidenceRef": "Isaías 6:8",
+        "evidenceSpan": "Eis-me aqui, envia-me a mim"
+      }
+    ],
+    "keyTerms": [
+      { "term": "Santo", "gloss": "O triplo anúncio dos serafins sobre o Senhor dos Exércitos." },
+      { "term": "brasa", "gloss": "Meio pelo qual a iniquidade é removida e o pecado perdoado." },
+      { "term": "Eis-me aqui", "gloss": "Disponibilidade de Isaías depois da limpeza." }
+    ],
+    "structure": [
+      { "label": "Visão do trono e dos serafins", "evidenceRef": "Isaías 6:1–2" },
+      { "label": "Proclamação da santidade", "evidenceRef": "Isaías 6:3–4" },
+      { "label": "Confissão de lábios impuros", "evidenceRef": "Isaías 6:5" },
+      { "label": "Brasa, perdão e envio", "evidenceRef": "Isaías 6:6–8" }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Diante da visão do Rei, Isaías confessa que está perdido.",
+        "marker": "Então",
+        "evidenceRef": "Isaías 6:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da limpeza, Isaías ouve o chamado e se oferece.",
+        "marker": "Depois",
+        "evidenceRef": "Isaías 6:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "A brasa toca os lábios: iniquidade removida e pecado perdoado.",
+        "marker": null,
+        "evidenceRef": "Isaías 6:7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Apocalipse 4:8", "bridge": "Santo, santo, santo" },
+      { "ref": "João 12:41", "bridge": "Isaías viu a glória" },
+      { "ref": "Romanos 10:15", "bridge": "Quem prega é enviado" }
+    ],
+    "misreadings": [
+      {
+        "text": "Isaías se oferece ao envio antes de qualquer limpeza.",
+        "why": "O \"Depois disso\" do v.8 vem após a brasa e o perdão dos vv.6–7."
+      },
+      {
+        "text": "A visão mostra um Deus distante, sem efeito no profeta.",
+        "why": "Isaías se sente perdido; os umbrais se agitam; a casa se enche de fumaça."
+      },
+      {
+        "text": "Os lábios impuros não importam para o chamado.",
+        "why": "A brasa toca a boca e remove iniquidade antes do envio."
+      }
+    ],
+    "centralInsight": "A quem enviarei? Eis-me aqui, envia-me a mim.",
+    "anchorQuestion": "O que Isaías responde quando o Senhor pergunta a quem enviará?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 6:1, Isaías viu o Senhor assentado sobre um trono baixo e oculto.",
+      "verseRef": "Isaías 6:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+      "feedbackCorrect": "O trono é alto e sublime, não baixo nem oculto.",
+      "feedbackWrong": { "true": "Leia Isaías 6:1: alto e sublime trono." },
+      "hint": "Veja como o trono é descrito.",
+      "learningObjective": "Observar a descrição do trono.",
+      "evidence": ["Isaías 6:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 6:3, toque a palavra tripla que os serafins proclamam.",
+      "verseRef": "Isaías 6:3",
+      "options": [
+        { "id": "a", "text": "Santo" },
+        { "id": "b", "text": "terra" },
+        { "id": "c", "text": "glória" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+      "feedbackCorrect": "O anúncio abre com o triplo Santo.",
+      "feedbackWrong": {
+        "b": "Terra recebe a glória; o anúncio é Santo.",
+        "c": "Glória enche a terra; a proclamação é Santo."
+      },
+      "hint": "É a palavra repetida três vezes.",
+      "learningObjective": "Identificar a proclamação dos serafins.",
+      "evidence": ["Isaías 6:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 6:5, o que Isaías reconhece sobre si?",
+      "verseRef": "Isaías 6:5",
+      "options": [
+        { "id": "a", "text": "Que é homem de lábios impuros" },
+        { "id": "b", "text": "Que já está pronto para o envio" },
+        { "id": "c", "text": "Que os serafins estão impuros" },
+        { "id": "d", "text": "Que o trono está vazio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois sou homem de lábios impuros",
+      "feedbackCorrect": "A confissão é clara: lábios impuros diante do Rei.",
+      "feedbackWrong": {
+        "b": "O envio vem só depois da limpeza.",
+        "c": "Quem se confessa impuro é Isaías.",
+        "d": "Ele viu o Senhor no trono."
+      },
+      "hint": "Leia o que ele diz de si mesmo.",
+      "learningObjective": "Notar a confissão de Isaías.",
+      "evidence": ["Isaías 6:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 6:8 na ordem do texto.",
+      "verseRef": "Isaías 6:8",
+      "options": [
+        { "id": "a", "text": "Depois disso, ouvi a voz do Senhor, dizendo" },
+        { "id": "b", "text": "A quem enviarei, e quem irá por nós?" },
+        { "id": "c", "text": "Então, eu respondi: Eis-me aqui, envia-me a mim" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eis-me aqui, envia-me a mim",
+      "feedbackCorrect": "Primeiro a voz, depois a pergunta, enfim a oferta.",
+      "feedbackWrong": { "default": "Comece por \"Depois disso\"; a resposta fecha." },
+      "hint": "O versículo começa depois da limpeza.",
+      "learningObjective": "Reconhecer a ordem do chamado.",
+      "evidence": ["Isaías 6:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 6:6, o serafim trazia na mão uma ___ viva do altar.",
+      "verseRef": "Isaías 6:6",
+      "options": [
+        { "id": "a", "text": "brasa" },
+        { "id": "b", "text": "fumaça" },
+        { "id": "c", "text": "veste" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trazendo na mão uma brasa viva",
+      "feedbackCorrect": "A brasa viva vem do altar para tocar a boca.",
+      "feedbackWrong": {
+        "b": "Fumaça enche a casa no v.4; aqui é brasa.",
+        "c": "Vestes aparecem no v.1; o serafim traz brasa."
+      },
+      "hint": "O que foi removido do altar com tenaz?",
+      "learningObjective": "Lembrar o meio da limpeza.",
+      "evidence": ["Isaías 6:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 6:8 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 6:8",
+      "passageA": { "ref": "Isaías 6:8", "text": "Eis-me aqui, envia-me a mim" },
+      "passageB": { "ref": "Contexto", "text": "Depois da limpeza, o profeta se oferece ao envio." },
+      "options": [
+        { "id": "a", "text": "Disponível ao chamado" },
+        { "id": "b", "text": "Recusa o envio" },
+        { "id": "c", "text": "Ignora a voz" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis-me aqui, envia-me a mim",
+      "feedbackCorrect": "A resposta é oferta imediata: envia-me.",
+      "feedbackWrong": {
+        "b": "Ele diz envia-me, não se esquiva.",
+        "c": "Ele ouviu e respondeu."
+      },
+      "hint": "Veja a resposta de Isaías.",
+      "learningObjective": "Ligar a oferta ao contexto do chamado.",
+      "evidence": ["Isaías 6:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 6:5, a confissão de Isaías aparece sem ligação com o que ele acabou de ver.",
+      "verseRef": "Isaías 6:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então eu disse: Ai de mim! Estou perdido!",
+      "feedbackCorrect": "O \"Então\" liga a confissão à visão do Rei.",
+      "feedbackWrong": { "true": "O versículo começa com \"Então\": resultado da visão." },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Compreender a confissão como resultado da visão.",
+      "evidence": ["Isaías 6:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 6:5, toque a palavra que marca o resultado da visão.",
+      "verseRef": "Isaías 6:5",
+      "options": [
+        { "id": "a", "text": "Então" },
+        { "id": "b", "text": "impuros" },
+        { "id": "c", "text": "povo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então eu disse: Ai de mim!",
+      "feedbackCorrect": "\"Então\" introduz o que a visão produz nele.",
+      "feedbackWrong": {
+        "b": "Impuros descreve os lábios; o marcador é Então.",
+        "c": "Povo é o contexto; o marcador abre a fala."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de resultado.",
+      "evidence": ["Isaías 6:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 6:6–8 relaciona limpeza e envio?",
+      "verseRef": "Isaías 6:7–8",
+      "options": [
+        { "id": "a", "text": "A oferta vem depois do perdão dos lábios" },
+        { "id": "b", "text": "O envio acontece antes da brasa" },
+        { "id": "c", "text": "A limpeza dispensa qualquer chamado" },
+        { "id": "d", "text": "Isaías se oferece e só depois é limpo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois disso, ouvi a voz do Senhor",
+      "feedbackCorrect": "\"Depois disso\" coloca o chamado após a limpeza.",
+      "feedbackWrong": {
+        "b": "A brasa e o perdão vêm nos vv.6–7.",
+        "c": "Há chamado explícito no v.8.",
+        "d": "A ordem do texto é limpeza e depois oferta."
+      },
+      "hint": "Veja a expressão que abre o v.8.",
+      "learningObjective": "Relacionar limpeza e disponibilidade.",
+      "evidence": ["Isaías 6:7–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 6:1–8?",
+      "verseRef": "Isaías 6:1–2",
+      "options": [
+        { "id": "a", "text": "Visão do trono e dos serafins" },
+        { "id": "b", "text": "Confissão de lábios impuros" },
+        { "id": "c", "text": "Brasa, perdão e envio" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+      "feedbackCorrect": "Ver, confessar, ser limpo e responder.",
+      "feedbackWrong": { "default": "A visão vem primeiro; o envio fecha." },
+      "hint": "Comece pelo que Isaías vê.",
+      "learningObjective": "Ver a progressão da cena.",
+      "evidence": ["Isaías 6:1–2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 6:8, ___ disso, ouvi a voz do Senhor.",
+      "verseRef": "Isaías 6:8",
+      "options": [
+        { "id": "a", "text": "Depois" },
+        { "id": "b", "text": "Antes" },
+        { "id": "c", "text": "Sempre" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois disso, ouvi a voz do Senhor",
+      "feedbackCorrect": "\"Depois\" ordena o chamado após a limpeza.",
+      "feedbackWrong": {
+        "b": "O texto não diz Antes; diz Depois.",
+        "c": "Não é Sempre; é Depois disso."
+      },
+      "hint": "É a palavra que abre o versículo.",
+      "learningObjective": "Lembrar o marcador de sequência do envio.",
+      "evidence": ["Isaías 6:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 6:3 a Apocalipse 4:8?",
+      "verseRef": "Isaías 6:3",
+      "passageA": { "ref": "Isaías 6:3", "text": "Santo, santo, santo é o SENHOR dos Exércitos" },
+      "passageB": { "ref": "Apocalipse 4:8" },
+      "options": [
+        { "id": "a", "text": "Santo, santo, santo" },
+        { "id": "b", "text": "Trono vazio no céu" },
+        { "id": "c", "text": "Sem proclamação alguma" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Santo, santo, santo é o SENHOR dos Exércitos",
+      "feedbackCorrect": "O triplo Santo ecoa do templo à visão celestial.",
+      "feedbackWrong": {
+        "b": "Nos dois textos há trono e proclamação.",
+        "c": "Há proclamação explícita nos dois."
+      },
+      "hint": "Compare a tríplice proclamação.",
+      "learningObjective": "Ligar o Santo de Isaías ao de Apocalipse.",
+      "evidence": ["Isaías 6:3", "Apocalipse 4:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 6:5–8 sustenta que o chamado pode ignorar a impureza dos lábios.",
+      "verseRef": "Isaías 6:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "a tua iniquidade foi removida, e o teu pecado foi perdoado",
+      "feedbackCorrect": "A brasa remove iniquidade antes do \"Eis-me aqui\".",
+      "feedbackWrong": { "true": "O perdão dos lábios precede o envio no texto." },
+      "hint": "Veja o que acontece antes do v.8.",
+      "learningObjective": "Interpretar limpeza como preparo ao envio.",
+      "evidence": ["Isaías 6:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 6:7, toque o trecho que sustenta que o pecado foi tratado.",
+      "verseRef": "Isaías 6:7",
+      "options": [
+        { "id": "a", "text": "pecado foi perdoado" },
+        { "id": "b", "text": "tocou a minha" },
+        { "id": "c", "text": "teus lábios" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tua iniquidade foi removida, e o teu pecado foi perdoado",
+      "feedbackCorrect": "O anúncio fecha com pecado perdoado.",
+      "feedbackWrong": {
+        "b": "O toque é o meio; o resultado é o perdão.",
+        "c": "Lábios são o lugar do toque; o resultado é o perdão."
+      },
+      "hint": "Veja o fim da fala do serafim.",
+      "learningObjective": "Sustentar o perdão com o texto.",
+      "evidence": ["Isaías 6:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 6:1–8 sustenta sobre o chamado?",
+      "verseRef": "Isaías 6:8",
+      "options": [
+        { "id": "a", "text": "Disponibilidade nasce depois de ver, confessar e ser limpo" },
+        { "id": "b", "text": "Basta entusiasmo, sem visão nem limpeza" },
+        { "id": "c", "text": "A santidade de Deus não afeta o profeta" },
+        { "id": "d", "text": "O envio dispensa qualquer confissão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis-me aqui, envia-me a mim",
+      "feedbackCorrect": "A cena inteira prepara o \"Eis-me aqui\".",
+      "feedbackWrong": {
+        "b": "Há visão, confissão e brasa antes da oferta.",
+        "c": "Isaías se sente perdido diante do Rei.",
+        "d": "A confissão e o perdão vêm antes."
+      },
+      "hint": "Siga a ordem da cena até o v.8.",
+      "learningObjective": "Escolher a leitura do arco do chamado.",
+      "evidence": ["Isaías 6:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a visão de Isaías ao envio na Escritura?",
+      "verseRef": "Isaías 6:1",
+      "options": [
+        { "id": "a", "text": "Isaías vê o Senhor no trono" },
+        { "id": "b", "text": "João diz que Isaías viu a glória" },
+        { "id": "c", "text": "Como pregarão se não forem enviados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+      "evidence": ["Isaías 6:1", "João 12:41", "Romanos 10:15"],
+      "feedbackCorrect": "A visão aponta a glória de Cristo e ao envio da pregação.",
+      "feedbackWrong": { "default": "Comece por Isaías; depois João; enfim Romanos." },
+      "hint": "Siga visão → glória → envio.",
+      "learningObjective": "Encadear visão e envio na Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 6:7, a tua ___ foi removida, e o teu pecado foi perdoado.",
+      "verseRef": "Isaías 6:7",
+      "options": [
+        { "id": "a", "text": "iniquidade" },
+        { "id": "b", "text": "fumaça" },
+        { "id": "c", "text": "tenaz" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a tua iniquidade foi removida, e o teu pecado foi perdoado",
+      "feedbackCorrect": "Iniquidade removida e pecado perdoado: o efeito da brasa.",
+      "feedbackWrong": {
+        "b": "Fumaça enche a casa no v.4; aqui é iniquidade.",
+        "c": "Tenaz aparece no v.6; o removido é a iniquidade."
+      },
+      "hint": "O que foi removido junto com o perdão?",
+      "learningObjective": "Lembrar o termo do perdão anunciado.",
+      "evidence": ["Isaías 6:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 6:1 a João 12:41?",
+      "verseRef": "Isaías 6:1",
+      "passageA": { "ref": "Isaías 6:1", "text": "eu vi o Senhor assentado sobre um alto e sublime trono" },
+      "passageB": { "ref": "João 12:41" },
+      "options": [
+        { "id": "a", "text": "Isaías viu a glória" },
+        { "id": "b", "text": "Visão sem sentido" },
+        { "id": "c", "text": "Trono só humano" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vi o Senhor assentado sobre um alto e sublime trono",
+      "feedbackCorrect": "João identifica a visão de Isaías com a glória de Jesus.",
+      "feedbackWrong": {
+        "b": "João dá sentido cristológico à visão.",
+        "c": "O trono é do Senhor, não meramente humano."
+      },
+      "hint": "Veja o que João diz que Isaías viu.",
+      "learningObjective": "Ligar a visão ao testemunho de João.",
+      "evidence": ["Isaías 6:1", "João 12:41"]
+    }
+  ]
+}

@@ -1,0 +1,1784 @@
+[
+  {
+    "id": "3joao-cap-sem-j3c-01-cooperadores-da-verdade-01",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 3 João 1:8, devemos acolher os irmãos a fim de sermos cooperadores da verdade.",
+    "prompt": "Em 3 João 1:8, devemos acolher os irmãos a fim de sermos cooperadores da verdade.",
+    "cue": "Em 3 João 1:8, devemos acolher os irmãos a fim de sermos cooperadores da verdade.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "devemos acolher, a fim de que sejamos cooperadores da verdade",
+    "feedbackCorrect": "O acolher visa a cooperação com a verdade.",
+    "feedbackWrong": {
+      "false": "O propósito é explícito."
+    },
+    "hint": "Leia a frase a fim de que.",
+    "learningObjective": "Observar o propósito do acolher.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-01-cooperadores-da-verdade-02",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 3 João 1:9, toque o que Diótrefes deseja exercer.",
+    "prompt": "Em 3 João 1:9, toque o que Diótrefes deseja exercer.",
+    "cue": "Em 3 João 1:9, toque o que Diótrefes deseja exercer.",
+    "verseRef": "3 João 1:9",
+    "passageText": "Escrevi à igreja; porém Diótrefes, que deseja exercer a primazia entre eles, não nos acolhe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diótrefes"
+      },
+      {
+        "id": "b",
+        "text": "primazia"
+      },
+      {
+        "id": "c",
+        "text": "igreja"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "deseja exercer a primazia entre eles",
+    "feedbackCorrect": "Ele deseja a primazia.",
+    "feedbackWrong": {
+      "a": "Amor descreve Gaio no v.6.",
+      "c": "Igreja é o destinatário da carta."
+    },
+    "hint": "Veja o que deseja exercer.",
+    "learningObjective": "Identificar o desejo de Diótrefes.",
+    "evidence": [
+      "3 João 1:9"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-01-cooperadores-da-verdade-03",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 3 João 1:11, quem é procedente de Deus?",
+    "prompt": "Segundo 3 João 1:11, quem é procedente de Deus?",
+    "cue": "Segundo 3 João 1:11, quem é procedente de Deus?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem impede o acolhimento"
+      },
+      {
+        "id": "b",
+        "text": "Quem deseja só a primazia"
+      },
+      {
+        "id": "c",
+        "text": "Aquele que pratica o bem"
+      },
+      {
+        "id": "d",
+        "text": "Aquele que pratica o mal"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Aquele que pratica o bem é procedente de Deus",
+    "feedbackCorrect": "Praticar o bem marca a procedência de Deus.",
+    "feedbackWrong": {
+      "a": "Impedir é obra de Diótrefes.",
+      "b": "Primazia descreve Diótrefes.",
+      "d": "Quem pratica o mal nunca viu a Deus."
+    },
+    "hint": "Leia a primeira metade do versículo.",
+    "learningObjective": "Reconhecer quem é de Deus.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-01-cooperadores-da-verdade-04",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 3 João 1:8 na ordem do texto.",
+    "prompt": "Monte 3 João 1:8 na ordem do texto.",
+    "cue": "Monte 3 João 1:8 na ordem do texto.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "a esses irmãos devemos acolher"
+      },
+      {
+        "id": "b",
+        "text": "a fim de que sejamos"
+      },
+      {
+        "id": "c",
+        "text": "cooperadores da verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "devemos acolher, a fim de que sejamos cooperadores da verdade",
+    "feedbackCorrect": "Primeiro acolher; depois o propósito de cooperar.",
+    "feedbackWrong": {
+      "default": "Comece com devemos acolher."
+    },
+    "hint": "O propósito fecha o versículo.",
+    "learningObjective": "Seguir a ordem do v.8.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-01-cooperadores-da-verdade-05",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 3 João 1:11, complete: não imite o que é mau, mas sim o que é ___.",
+    "prompt": "Em 3 João 1:11, complete: não imite o que é mau, mas sim o que é ___.",
+    "cue": "Em 3 João 1:11, complete: não imite o que é mau, mas sim o que é ___.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "template": "Amado, não imite o que é mau, mas sim o que é ___. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "primazia"
+      },
+      {
+        "id": "b",
+        "text": "gentios"
+      },
+      {
+        "id": "c",
+        "text": "bom"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas sim o que é bom",
+    "feedbackCorrect": "O chamado é imitar o bem.",
+    "feedbackWrong": {
+      "a": "Primazia é o desejo de Diótrefes.",
+      "b": "Gentios aparecem no v.7."
+    },
+    "hint": "É o oposto de mau.",
+    "learningObjective": "Lembrar o que imitar.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-01-cooperadores-da-verdade-06",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 3 João 1:8 comunica que se liga a este contexto?",
+    "prompt": "O que 3 João 1:8 comunica que se liga a este contexto?",
+    "cue": "O que 3 João 1:8 comunica que se liga a este contexto?",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "passageA": {
+      "ref": "3 João 1:8",
+      "text": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João elogia o acolhimento fiel de Gaio e denuncia Diótrefes, que ama a primazia e impede o bem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Primazia sem acolher"
+      },
+      {
+        "id": "b",
+        "text": "Cooperadores pelo acolher"
+      },
+      {
+        "id": "c",
+        "text": "Imitar o mal"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cooperadores da verdade",
+    "feedbackCorrect": "No contraste com Diótrefes, acolher faz cooperadores da verdade.",
+    "feedbackWrong": {
+      "a": "Primazia descreve Diótrefes.",
+      "c": "Devem imitar o bem."
+    },
+    "hint": "Veja o propósito do acolher.",
+    "learningObjective": "Ligar o contexto à cooperação.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-01-cooperadores-da-verdade-01",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 3 João 1:9, Diótrefes deseja a primazia e por isso acolhe João e os irmãos.",
+    "prompt": "Em 3 João 1:9, Diótrefes deseja a primazia e por isso acolhe João e os irmãos.",
+    "cue": "Em 3 João 1:9, Diótrefes deseja a primazia e por isso acolhe João e os irmãos.",
+    "verseRef": "3 João 1:9",
+    "passageText": "Escrevi à igreja; porém Diótrefes, que deseja exercer a primazia entre eles, não nos acolhe.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "deseja exercer a primazia entre eles, não nos acolhe",
+    "feedbackCorrect": "A primazia vem com a recusa de acolher.",
+    "feedbackWrong": {
+      "true": "Não nos acolhe é o resultado."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Ver a relação primazia-acolher.",
+    "evidence": [
+      "3 João 1:9"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-01-cooperadores-da-verdade-02",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 3 João 1:8, toque o que devemos ser junto aos irmãos.",
+    "prompt": "Em 3 João 1:8, toque o que devemos ser junto aos irmãos.",
+    "cue": "Em 3 João 1:8, toque o que devemos ser junto aos irmãos.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmãos"
+      },
+      {
+        "id": "b",
+        "text": "acolher"
+      },
+      {
+        "id": "c",
+        "text": "cooperadores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sejamos cooperadores da verdade",
+    "feedbackCorrect": "Acolher os irmãos nos torna cooperadores da verdade.",
+    "feedbackWrong": {
+      "a": "Irmãos são os que acolhemos, não o nome da nossa parte.",
+      "b": "Acolher é o meio; o texto aponta o resultado."
+    },
+    "hint": "Toque o nome da parceria na verdade.",
+    "learningObjective": "Tocar o propósito.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-01-cooperadores-da-verdade-03",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 3 João 1:5–11 estabelece?",
+    "prompt": "Qual relação 3 João 1:5–11 estabelece?",
+    "cue": "Qual relação 3 João 1:5–11 estabelece?",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher faz cooperadores; primazia sem acolher imita o mal"
+      },
+      {
+        "id": "b",
+        "text": "Praticar o mal ainda é de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Impedir o acolhimento é boa ação"
+      },
+      {
+        "id": "d",
+        "text": "Primazia prova cooperação com a verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cooperadores da verdade",
+    "feedbackCorrect": "Gaio e Diótrefes ilustram bem e mal no acolher.",
+    "feedbackWrong": {
+      "b": "Quem pratica o mal nunca viu a Deus.",
+      "c": "Impedir é obra de Diótrefes.",
+      "d": "Primazia impede o acolher."
+    },
+    "hint": "Compare Gaio e Diótrefes.",
+    "learningObjective": "Compreender o contraste.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-01-cooperadores-da-verdade-04",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "3 João 1:5–6",
+    "passageText": "Amado, você age fielmente em tudo o que faz pelos irmãos, e o faz mesmo quando em relação aos estrangeiros. Testemunharam perante a igreja sobre o teu amor; se os receber de maneira digna de Deus, estarás fazendo uma boa ação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade de Gaio no acolhimento"
+      },
+      {
+        "id": "b",
+        "text": "Acolher para cooperar com a verdade"
+      },
+      {
+        "id": "c",
+        "text": "Imitar o bem, não o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "você age fielmente em tudo o que faz pelos irmãos",
+    "feedbackCorrect": "Do elogio à cooperação, até o chamado a imitar o bem.",
+    "feedbackWrong": {
+      "default": "Comece por Gaio; o bem fecha."
+    },
+    "hint": "Siga vv.5–6, 8 e 11.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "3 João 1:5",
+      "3 João 1:8",
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-01-cooperadores-da-verdade-05",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 3 João 1:9, complete: porém Diótrefes, que deseja exercer a primazia entre eles, não nos ___.",
+    "prompt": "Em 3 João 1:9, complete: porém Diótrefes, que deseja exercer a primazia entre eles, não nos ___.",
+    "cue": "Em 3 João 1:9, complete: porém Diótrefes, que deseja exercer a primazia entre eles, não nos ___.",
+    "verseRef": "3 João 1:9",
+    "passageText": "Escrevi à igreja; porém Diótrefes, que deseja exercer a primazia entre eles, não nos acolhe.",
+    "template": "Escrevi à igreja; porém Diótrefes, que deseja exercer a primazia entre eles, não nos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "expulsa"
+      },
+      {
+        "id": "b",
+        "text": "escreve"
+      },
+      {
+        "id": "c",
+        "text": "acolhe"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não nos acolhe",
+    "feedbackCorrect": "A primazia vem junto com a recusa de acolher.",
+    "feedbackWrong": {
+      "a": "Expulsando aparece no v.10, sobre outros.",
+      "b": "Escrevi é a ação de João no início."
+    },
+    "hint": "Veja o verbo no fim do versículo.",
+    "learningObjective": "Lembrar o termo do conflito.",
+    "evidence": [
+      "3 João 1:9"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-01-cooperadores-da-verdade-06",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 3 João 1:8 a Mateus 10:40?",
+    "prompt": "O que liga 3 João 1:8 a Mateus 10:40?",
+    "cue": "O que liga 3 João 1:8 a Mateus 10:40?",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "passageA": {
+      "ref": "3 João 1:8",
+      "text": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade."
+    },
+    "passageB": {
+      "ref": "Mateus 10:40",
+      "text": "Quem os recebe, recebe a mim; e quem me recebe, recebe aquele que me enviou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher é cooperar"
+      },
+      {
+        "id": "b",
+        "text": "Primazia na igreja"
+      },
+      {
+        "id": "c",
+        "text": "Impedir os irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "devemos acolher, a fim de que sejamos cooperadores da verdade",
+    "feedbackCorrect": "Acolher os enviados liga-se a cooperar/receber a Cristo.",
+    "feedbackWrong": {
+      "b": "Primazia descreve Diótrefes.",
+      "c": "Impedir é o mal."
+    },
+    "hint": "Compare o acolher dos enviados.",
+    "learningObjective": "Ligar o acolhimento.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-01-cooperadores-da-verdade-01",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 3 João 1:11, quem pratica o bem é procedente de Deus.",
+    "prompt": "Segundo 3 João 1:11, quem pratica o bem é procedente de Deus.",
+    "cue": "Segundo 3 João 1:11, quem pratica o bem é procedente de Deus.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Aquele que pratica o bem é procedente de Deus",
+    "feedbackCorrect": "O bem praticado marca a procedência.",
+    "feedbackWrong": {
+      "false": "O versículo afirma isso."
+    },
+    "hint": "Leia a primeira afirmação.",
+    "learningObjective": "Confirmar a leitura do bem.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-01-cooperadores-da-verdade-02",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 3 João 1:11, toque o que não se deve fazer com o que é mau.",
+    "prompt": "Em 3 João 1:11, toque o que não se deve fazer com o que é mau.",
+    "cue": "Em 3 João 1:11, toque o que não se deve fazer com o que é mau.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "imite"
+      },
+      {
+        "id": "b",
+        "text": "Amado"
+      },
+      {
+        "id": "c",
+        "text": "pratica"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não imite o que é mau",
+    "feedbackCorrect": "O texto manda não imitar o que é mau, e sim o que é bom.",
+    "feedbackWrong": {
+      "b": "Amado é o vocativo, não a ação proibida.",
+      "c": "Pratica aparece depois; a ordem é não imitar o mau."
+    },
+    "hint": "Toque o verbo da proibição.",
+    "learningObjective": "Sustentar o veredito.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-01-cooperadores-da-verdade-03",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 3 João 1:5–11 sustenta?",
+    "prompt": "Que leitura 3 João 1:5–11 sustenta?",
+    "cue": "Que leitura 3 João 1:5–11 sustenta?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cooperar com a verdade dispensa acolher"
+      },
+      {
+        "id": "b",
+        "text": "Acolher a verdade e imitar o bem; recusar a primazia que impede"
+      },
+      {
+        "id": "c",
+        "text": "Praticar o mal ainda vê a Deus"
+      },
+      {
+        "id": "d",
+        "text": "Primazia e impedir acolhimento são de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não imite o que é mau, mas sim o que é bom",
+    "feedbackCorrect": "Gaio, cooperação e imitar o bem formam o padrão.",
+    "feedbackWrong": {
+      "a": "Acolher faz cooperadores.",
+      "c": "Quem pratica o mal nunca viu a Deus.",
+      "d": "Diótrefes é o contraste negativo."
+    },
+    "hint": "Una o v.8 ao v.11.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-01-cooperadores-da-verdade-04",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do acolher ao bem?",
+    "prompt": "Qual sequência mostra o fio do acolher ao bem?",
+    "cue": "Qual sequência mostra o fio do acolher ao bem?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher irmãos e estrangeiros fielmente"
+      },
+      {
+        "id": "b",
+        "text": "Tornar-se cooperador da verdade"
+      },
+      {
+        "id": "c",
+        "text": "Imitar o bem procedente de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele que pratica o bem é procedente de Deus",
+    "feedbackCorrect": "Do acolher à cooperação, até imitar o bem.",
+    "feedbackWrong": {
+      "default": "Comece pelo acolher; o bem fecha."
+    },
+    "hint": "Siga vv.5, 8 e 11.",
+    "learningObjective": "Encadear acolher e bem.",
+    "evidence": [
+      "3 João 1:5",
+      "3 João 1:8",
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-01-cooperadores-da-verdade-05",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 3 João 1:8, complete: a esses irmãos devemos ___.",
+    "prompt": "Em 3 João 1:8, complete: a esses irmãos devemos ___.",
+    "cue": "Em 3 João 1:8, complete: a esses irmãos devemos ___.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "template": "Portanto, a esses irmãos devemos ___, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "acolher"
+      },
+      {
+        "id": "b",
+        "text": "impedir"
+      },
+      {
+        "id": "c",
+        "text": "expulsar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "devemos acolher",
+    "feedbackCorrect": "O verbo do chamado é acolher.",
+    "feedbackWrong": {
+      "b": "Impedir é obra de Diótrefes.",
+      "c": "Expulsar também é obra dele."
+    },
+    "hint": "É o verbo depois de devemos.",
+    "learningObjective": "Lembrar o termo da parceria.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-01-cooperadores-da-verdade-06",
+    "trail": "3joao-cap",
+    "section": "j3c-01-cooperadores-da-verdade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 3 João 1:11 a 1 João 3:10?",
+    "prompt": "O que liga 3 João 1:11 a 1 João 3:10?",
+    "cue": "O que liga 3 João 1:11 a 1 João 3:10?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "passageA": {
+      "ref": "3 João 1:11",
+      "text": "Aquele que pratica o bem é procedente de Deus"
+    },
+    "passageB": {
+      "ref": "1 João 3:10",
+      "text": "Nisto se manifestam os filhos de Deus e os filhos do diabo: todo aquele que não pratica a justiça não procede de Deus, nem aquele que não ama seu irmão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Hospitalidade aos gentios"
+      },
+      {
+        "id": "b",
+        "text": "Primazia na igreja"
+      },
+      {
+        "id": "c",
+        "text": "Bem e mal revelam origem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pratica o bem é procedente de Deus",
+    "feedbackCorrect": "Ambas as cartas ligam prática e procedência.",
+    "feedbackWrong": {
+      "a": "Gentios não são a ponte.",
+      "b": "Primazia não é a ponte."
+    },
+    "hint": "Compare bem/mal e origem.",
+    "learningObjective": "Ligar a procedência.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-01",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 3 João 1:6, receber de maneira digna de Deus é chamada boa ação.",
+    "prompt": "Em 3 João 1:6, receber de maneira digna de Deus é chamada boa ação.",
+    "cue": "Em 3 João 1:6, receber de maneira digna de Deus é chamada boa ação.",
+    "verseRef": "3 João 1:6",
+    "passageText": "Testemunharam perante a igreja sobre o teu amor; se os receber de maneira digna de Deus, estarás fazendo uma boa ação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "estarás fazendo uma boa ação",
+    "feedbackCorrect": "Receber dignamente é boa ação.",
+    "feedbackWrong": {
+      "false": "O versículo afirma isso."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar a avaliação do receber.",
+    "evidence": [
+      "3 João 1:6"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-02",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 3 João 1:8, toque o que nos tornamos ao acolher.",
+    "prompt": "Em 3 João 1:8, toque o que nos tornamos ao acolher.",
+    "cue": "Em 3 João 1:8, toque o que nos tornamos ao acolher.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "verdade"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "cooperadores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "cooperadores da verdade",
+    "feedbackCorrect": "Tornamo-nos cooperadores da verdade.",
+    "feedbackWrong": {
+      "a": "Primazia é o desejo de Diótrefes.",
+      "b": "Gentios não sustentam os missionários."
+    },
+    "hint": "Veja o fim do propósito.",
+    "learningObjective": "Identificar o resultado do acolher.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-03",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 3 João 1:10, além de não receber, o que Diótrefes faz?",
+    "prompt": "Segundo 3 João 1:10, além de não receber, o que Diótrefes faz?",
+    "cue": "Segundo 3 João 1:10, além de não receber, o que Diótrefes faz?",
+    "verseRef": "3 João 1:10",
+    "passageText": "Por isso, quando eu for, trarei à tona as obras que ele pratica, proferindo contra nós palavras maliciosas; e, não satisfeito com isso, nem mesmo recebe os irmãos, além de impedir os que desejam acolhê-los, expulsando-os da igreja.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impede os que desejam acolher e os expulsa"
+      },
+      {
+        "id": "b",
+        "text": "Envia ajuda aos gentios"
+      },
+      {
+        "id": "c",
+        "text": "Imita o bem de Gaio"
+      },
+      {
+        "id": "d",
+        "text": "Acolhe com alegria os irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "impedir os que desejam acolhê-los, expulsando-os da igreja",
+    "feedbackCorrect": "Ele impede e expulsa.",
+    "feedbackWrong": {
+      "b": "Os missionários não recebem dos gentios.",
+      "c": "Ele é o contraste do bem.",
+      "d": "Ele não recebe."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Reconhecer as obras de Diótrefes.",
+    "evidence": [
+      "3 João 1:10"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-04",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 3 João 1:11 na ordem do texto.",
+    "prompt": "Monte 3 João 1:11 na ordem do texto.",
+    "cue": "Monte 3 João 1:11 na ordem do texto.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não imite o que é mau"
+      },
+      {
+        "id": "b",
+        "text": "mas sim o que é bom"
+      },
+      {
+        "id": "c",
+        "text": "Aquele que pratica o bem é procedente de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não imite o que é mau, mas sim o que é bom",
+    "feedbackCorrect": "Primeiro a negação; depois o bem e a procedência.",
+    "feedbackWrong": {
+      "default": "Comece com não imite."
+    },
+    "hint": "O contraste mau/bom abre o versículo.",
+    "learningObjective": "Seguir a ordem do v.11.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-05",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 3 João 1:7, complete: sem receber nada dos ___.",
+    "prompt": "Em 3 João 1:7, complete: sem receber nada dos ___.",
+    "cue": "Em 3 João 1:7, complete: sem receber nada dos ___.",
+    "verseRef": "3 João 1:7",
+    "passageText": "Pois, em nome dele, saíram, sem receber nada dos gentios.",
+    "template": "Pois, em nome dele, saíram, sem receber nada dos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "gentios"
+      },
+      {
+        "id": "b",
+        "text": "estrangeiros"
+      },
+      {
+        "id": "c",
+        "text": "irmãos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "sem receber nada dos gentios",
+    "feedbackCorrect": "Saíram sem receber dos gentios.",
+    "feedbackWrong": {
+      "b": "Estrangeiros são acolhidos por Gaio.",
+      "c": "Irmãos são quem acolhe."
+    },
+    "hint": "É o complemento depois de dos.",
+    "learningObjective": "Lembrar de quem não recebem.",
+    "evidence": [
+      "3 João 1:7"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-06",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 3 João 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que 3 João 1:11 comunica que se liga a este contexto?",
+    "cue": "O que 3 João 1:11 comunica que se liga a este contexto?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "passageA": {
+      "ref": "3 João 1:11",
+      "text": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Travessia contrapõe o acolher de Gaio à primazia de Diótrefes e chama a imitar o bem."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Impedir o acolher"
+      },
+      {
+        "id": "b",
+        "text": "Imitar o bem"
+      },
+      {
+        "id": "c",
+        "text": "Desejar a primazia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas sim o que é bom",
+    "feedbackCorrect": "No contraste, o chamado final é imitar o bem.",
+    "feedbackWrong": {
+      "a": "Impedir é obra de Diótrefes.",
+      "c": "Primazia é o mal ilustrado."
+    },
+    "hint": "Veja o imperativo do versículo.",
+    "learningObjective": "Ligar o contexto ao bem.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-07",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 3 João 1:5, toque a quem Gaio também serve fielmente.",
+    "prompt": "Em 3 João 1:5, toque a quem Gaio também serve fielmente.",
+    "cue": "Em 3 João 1:5, toque a quem Gaio também serve fielmente.",
+    "verseRef": "3 João 1:5",
+    "passageText": "Amado, você age fielmente em tudo o que faz pelos irmãos, e o faz mesmo quando em relação aos estrangeiros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amado"
+      },
+      {
+        "id": "b",
+        "text": "irmãos"
+      },
+      {
+        "id": "c",
+        "text": "estrangeiros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mesmo quando em relação aos estrangeiros",
+    "feedbackCorrect": "Também serve aos estrangeiros.",
+    "feedbackWrong": {
+      "a": "Diótrefes é o contraste.",
+      "b": "Gentios aparecem no v.7."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Identificar o alcance do serviço.",
+    "evidence": [
+      "3 João 1:5"
+    ]
+  },
+  {
+    "id": "3joao-cap-sem-j3c-boss-1-08",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 3 João 1:8 na ordem do texto.",
+    "prompt": "Monte 3 João 1:8 na ordem do texto.",
+    "cue": "Monte 3 João 1:8 na ordem do texto.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Portanto, a esses irmãos devemos acolher"
+      },
+      {
+        "id": "b",
+        "text": "a fim de que sejamos"
+      },
+      {
+        "id": "c",
+        "text": "cooperadores da verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a fim de que sejamos cooperadores da verdade",
+    "feedbackCorrect": "Primeiro acolher; depois cooperar.",
+    "feedbackWrong": {
+      "default": "Comece com Portanto."
+    },
+    "hint": "O propósito fecha.",
+    "learningObjective": "Seguir a ordem do v.8.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-01",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 3 João 1:8–10, acolher e impedir o acolhimento são igualmente cooperadores da verdade.",
+    "prompt": "Em 3 João 1:8–10, acolher e impedir o acolhimento são igualmente cooperadores da verdade.",
+    "cue": "Em 3 João 1:8–10, acolher e impedir o acolhimento são igualmente cooperadores da verdade.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cooperadores da verdade",
+    "feedbackCorrect": "Acolher faz cooperadores; impedir é o contraste mau.",
+    "feedbackWrong": {
+      "true": "O contraste com Diótrefes desmente a igualdade."
+    },
+    "hint": "Compare o v.8 com o v.10.",
+    "learningObjective": "Ver a relação acolher-impedir.",
+    "evidence": [
+      "3 João 1:8"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-02",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 3 João 1:9, toque o marcador do contraste com a carta de João.",
+    "prompt": "Em 3 João 1:9, toque o marcador do contraste com a carta de João.",
+    "cue": "Em 3 João 1:9, toque o marcador do contraste com a carta de João.",
+    "verseRef": "3 João 1:9",
+    "passageText": "Escrevi à igreja; porém Diótrefes, que deseja exercer a primazia entre eles, não nos acolhe.",
+    "options": [
+      {
+        "id": "a",
+        "text": "primazia"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "porém Diótrefes",
+    "feedbackCorrect": "Porém introduz Diótrefes.",
+    "feedbackWrong": {
+      "a": "Primazia é o desejo dele.",
+      "b": "Igreja é o destinatário."
+    },
+    "hint": "Procure a partícula de contraste.",
+    "learningObjective": "Tocar o marcador.",
+    "evidence": [
+      "3 João 1:9"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-03",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 3 João 1:8 e 1:11 estabelecem?",
+    "prompt": "Qual relação 3 João 1:8 e 1:11 estabelecem?",
+    "cue": "Qual relação 3 João 1:8 e 1:11 estabelecem?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Impedir o acolher é imitar o bem"
+      },
+      {
+        "id": "b",
+        "text": "Primazia é a marca dos cooperadores"
+      },
+      {
+        "id": "c",
+        "text": "Cooperar acolhendo e imitar o bem procedem de Deus"
+      },
+      {
+        "id": "d",
+        "text": "Praticar o mal ainda vê a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Aquele que pratica o bem é procedente de Deus",
+    "feedbackCorrect": "Acolher/cooperar e imitar o bem formam o padrão.",
+    "feedbackWrong": {
+      "a": "Impedir é o mal.",
+      "b": "Primazia descreve Diótrefes.",
+      "d": "O mal nunca viu a Deus."
+    },
+    "hint": "Una cooperação e bem.",
+    "learningObjective": "Compreender o padrão.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-04",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos da Travessia.",
+    "prompt": "Ordene os movimentos da Travessia.",
+    "cue": "Ordene os movimentos da Travessia.",
+    "verseRef": "3 João 1:6",
+    "passageText": "Testemunharam perante a igreja sobre o teu amor; se os receber de maneira digna de Deus, estarás fazendo uma boa ação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher dignamente"
+      },
+      {
+        "id": "b",
+        "text": "Expor a primazia que impede"
+      },
+      {
+        "id": "c",
+        "text": "Imitar o bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "estarás fazendo uma boa ação",
+    "feedbackCorrect": "Do acolher à exposição, até imitar o bem.",
+    "feedbackWrong": {
+      "default": "Comece pelo acolher; o bem fecha."
+    },
+    "hint": "Siga 6, 9–10 e 11.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "3 João 1:6",
+      "3 João 1:9",
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-05",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 3 João 1:10, complete: além de impedir os que desejam acolhê-los, ___-os da igreja.",
+    "prompt": "Em 3 João 1:10, complete: além de impedir os que desejam acolhê-los, ___-os da igreja.",
+    "cue": "Em 3 João 1:10, complete: além de impedir os que desejam acolhê-los, ___-os da igreja.",
+    "verseRef": "3 João 1:10",
+    "passageText": "Por isso, quando eu for, trarei à tona as obras que ele pratica, proferindo contra nós palavras maliciosas; e, não satisfeito com isso, nem mesmo recebe os irmãos, além de impedir os que desejam acolhê-los, expulsando-os da igreja.",
+    "template": "Por isso, quando eu for, trarei à tona as obras que ele pratica, proferindo contra nós palavras maliciosas; e, não satisfeito com isso, nem mesmo recebe os irmãos, além de impedir os que desejam acolhê-los, ___-os da igreja.",
+    "options": [
+      {
+        "id": "a",
+        "text": "expulsando"
+      },
+      {
+        "id": "b",
+        "text": "acolhendo"
+      },
+      {
+        "id": "c",
+        "text": "enviando"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "expulsando-os da igreja",
+    "feedbackCorrect": "Ele expulsa da igreja.",
+    "feedbackWrong": {
+      "b": "Ele não acolhe.",
+      "c": "Enviando não está no texto."
+    },
+    "hint": "É o gerúndio no fim.",
+    "learningObjective": "Lembrar a ação final de Diótrefes.",
+    "evidence": [
+      "3 João 1:10"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-06",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 3 João 1:5 a Hebreus 13:2?",
+    "prompt": "O que liga 3 João 1:5 a Hebreus 13:2?",
+    "cue": "O que liga 3 João 1:5 a Hebreus 13:2?",
+    "verseRef": "3 João 1:5",
+    "passageText": "Amado, você age fielmente em tudo o que faz pelos irmãos, e o faz mesmo quando em relação aos estrangeiros.",
+    "passageA": {
+      "ref": "3 João 1:5",
+      "text": "Amado, você age fielmente em tudo o que faz pelos irmãos, e o faz mesmo quando em relação aos estrangeiros."
+    },
+    "passageB": {
+      "ref": "Hebreus 13:2",
+      "text": "Não negligenciem a hospitalidade, pois alguns, ao praticá-la, sem saber, acolheram anjos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Expulsar irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Primazia na igreja"
+      },
+      {
+        "id": "c",
+        "text": "Hospitalidade a estrangeiros"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mesmo quando em relação aos estrangeiros",
+    "feedbackCorrect": "Ambos valorizam acolher estrangeiros.",
+    "feedbackWrong": {
+      "a": "Expulsar é o mal.",
+      "b": "Primazia não é a ponte."
+    },
+    "hint": "Compare o acolher de estrangeiros.",
+    "learningObjective": "Ligar a hospitalidade.",
+    "evidence": [
+      "3 João 1:5"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-07",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 3 João 1:11, toque a palavra que marca o contraste com o mau.",
+    "prompt": "Em 3 João 1:11, toque a palavra que marca o contraste com o mau.",
+    "cue": "Em 3 João 1:11, toque a palavra que marca o contraste com o mau.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "Amado"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas sim o que é bom",
+    "feedbackCorrect": "Mas vira para o bem.",
+    "feedbackWrong": {
+      "b": "Amado é o vocativo.",
+      "c": "Mal é o que se rejeita."
+    },
+    "hint": "Procure a partícula antes de sim.",
+    "learningObjective": "Tocar o contraste.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-cam-j3c-boss-1-08",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene a lógica do bem na carta.",
+    "prompt": "Ordene a lógica do bem na carta.",
+    "cue": "Ordene a lógica do bem na carta.",
+    "verseRef": "3 João 1:8",
+    "passageText": "Portanto, a esses irmãos devemos acolher, a fim de que sejamos cooperadores da verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Servir irmãos e estrangeiros"
+      },
+      {
+        "id": "b",
+        "text": "Cooperar com a verdade pelo acolher"
+      },
+      {
+        "id": "c",
+        "text": "Praticar o bem procedente de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cooperadores da verdade",
+    "feedbackCorrect": "Do serviço à cooperação, até o bem de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo servir; o bem fecha."
+    },
+    "hint": "Siga 5, 8 e 11.",
+    "learningObjective": "Ordenar serviço e bem.",
+    "evidence": [
+      "3 João 1:5",
+      "3 João 1:8",
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-01",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 3 João 1:11, quem pratica o mal ainda assim é procedente de Deus.",
+    "prompt": "Segundo 3 João 1:11, quem pratica o mal ainda assim é procedente de Deus.",
+    "cue": "Segundo 3 João 1:11, quem pratica o mal ainda assim é procedente de Deus.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "quem pratica o mal nunca viu a Deus",
+    "feedbackCorrect": "Quem pratica o mal nunca viu a Deus.",
+    "feedbackWrong": {
+      "true": "O veredito desmente a procedência divina."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Rejeitar a leitura do mal como de Deus.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-02",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 3 João 1:10, toque o trecho que sustenta o que Diótrefes faz aos que querem acolher.",
+    "prompt": "Em 3 João 1:10, toque o trecho que sustenta o que Diótrefes faz aos que querem acolher.",
+    "cue": "Em 3 João 1:10, toque o trecho que sustenta o que Diótrefes faz aos que querem acolher.",
+    "verseRef": "3 João 1:10",
+    "passageText": "Por isso, quando eu for, trarei à tona as obras que ele pratica, proferindo contra nós palavras maliciosas; e, não satisfeito com isso, nem mesmo recebe os irmãos, além de impedir os que desejam acolhê-los, expulsando-os da igreja.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palavras"
+      },
+      {
+        "id": "b",
+        "text": "igreja"
+      },
+      {
+        "id": "c",
+        "text": "impedir"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "impedir os que desejam acolhê-los",
+    "feedbackCorrect": "Ele impede quem deseja acolher.",
+    "feedbackWrong": {
+      "a": "Palavras maliciosas são outra obra.",
+      "b": "Igreja é de onde expulsa."
+    },
+    "hint": "Veja o verbo sobre os que desejam acolher.",
+    "learningObjective": "Sustentar a ação.",
+    "evidence": [
+      "3 João 1:10"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-03",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 3 João 1:5–11 sustenta?",
+    "prompt": "Que leitura 3 João 1:5–11 sustenta?",
+    "cue": "Que leitura 3 João 1:5–11 sustenta?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher e praticar o bem; recusar primazia que impede"
+      },
+      {
+        "id": "b",
+        "text": "O mal ainda vê a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Primazia e expulsão são boas ações"
+      },
+      {
+        "id": "d",
+        "text": "Cooperar dispensa acolher"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não imite o que é mau, mas sim o que é bom",
+    "feedbackCorrect": "Acolher, cooperar e imitar o bem formam o padrão.",
+    "feedbackWrong": {
+      "b": "O mal nunca viu a Deus.",
+      "c": "Diótrefes é o contraste.",
+      "d": "Acolher faz cooperadores."
+    },
+    "hint": "Una Gaio e o v.11.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-04",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do acolher ao veredito?",
+    "prompt": "Qual sequência mostra o fio do acolher ao veredito?",
+    "cue": "Qual sequência mostra o fio do acolher ao veredito?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher dignamente os enviados"
+      },
+      {
+        "id": "b",
+        "text": "Recusar a primazia que impede"
+      },
+      {
+        "id": "c",
+        "text": "Imitar o bem de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Aquele que pratica o bem é procedente de Deus",
+    "feedbackCorrect": "Do acolher à recusa do mal, até imitar o bem.",
+    "feedbackWrong": {
+      "default": "Comece pelo acolher; o bem fecha."
+    },
+    "hint": "Siga 6, 10 e 11.",
+    "learningObjective": "Encadear acolher e veredito.",
+    "evidence": [
+      "3 João 1:6",
+      "3 João 1:10",
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-05",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 3 João 1:11, complete: Aquele que pratica o bem é ___ de Deus.",
+    "prompt": "Em 3 João 1:11, complete: Aquele que pratica o bem é ___ de Deus.",
+    "cue": "Em 3 João 1:11, complete: Aquele que pratica o bem é ___ de Deus.",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "template": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é ___ de Deus; quem pratica o mal nunca viu a Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "procedente"
+      },
+      {
+        "id": "b",
+        "text": "impedidor"
+      },
+      {
+        "id": "c",
+        "text": "primaz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é procedente de Deus",
+    "feedbackCorrect": "O bem marca a procedência de Deus.",
+    "feedbackWrong": {
+      "b": "Impedir é obra de Diótrefes.",
+      "c": "Primazia é o desejo dele."
+    },
+    "hint": "É o adjetivo depois de é.",
+    "learningObjective": "Lembrar o termo da origem.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-06",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 3 João 1:11 a 1 João 3:10?",
+    "prompt": "O que liga 3 João 1:11 a 1 João 3:10?",
+    "cue": "O que liga 3 João 1:11 a 1 João 3:10?",
+    "verseRef": "3 João 1:11",
+    "passageText": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus.",
+    "passageA": {
+      "ref": "3 João 1:11",
+      "text": "Amado, não imite o que é mau, mas sim o que é bom. Aquele que pratica o bem é procedente de Deus; quem pratica o mal nunca viu a Deus."
+    },
+    "passageB": {
+      "ref": "1 João 3:10",
+      "text": "Nisto se manifestam os filhos de Deus e os filhos do diabo: todo aquele que não pratica a justiça não procede de Deus, nem aquele que não ama seu irmão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Expulsar irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Primazia na igreja"
+      },
+      {
+        "id": "c",
+        "text": "Prática revela origem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pratica o bem é procedente de Deus",
+    "feedbackCorrect": "Ambas ligam prática e procedência.",
+    "feedbackWrong": {
+      "a": "Expulsar é o mal.",
+      "b": "Primazia não é a ponte."
+    },
+    "hint": "Compare prática e origem.",
+    "learningObjective": "Ligar a procedência.",
+    "evidence": [
+      "3 João 1:11"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-07",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 3 João 1:6, toque o trecho que sustenta a avaliação do receber.",
+    "prompt": "Em 3 João 1:6, toque o trecho que sustenta a avaliação do receber.",
+    "cue": "Em 3 João 1:6, toque o trecho que sustenta a avaliação do receber.",
+    "verseRef": "3 João 1:6",
+    "passageText": "Testemunharam perante a igreja sobre o teu amor; se os receber de maneira digna de Deus, estarás fazendo uma boa ação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "igreja"
+      },
+      {
+        "id": "b",
+        "text": "amor"
+      },
+      {
+        "id": "c",
+        "text": "boa ação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "estarás fazendo uma boa ação",
+    "feedbackCorrect": "Receber dignamente é boa ação.",
+    "feedbackWrong": {
+      "a": "Igreja é onde testemunharam.",
+      "b": "Amor é o que testemunharam."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Sustentar a avaliação.",
+    "evidence": [
+      "3 João 1:6"
+    ]
+  },
+  {
+    "id": "3joao-cap-pro-j3c-boss-1-08",
+    "trail": "3joao-cap",
+    "section": "j3c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da fidelidade?",
+    "prompt": "Qual sequência revela o caminho da fidelidade?",
+    "cue": "Qual sequência revela o caminho da fidelidade?",
+    "verseRef": "3 João 1:5",
+    "passageText": "Amado, você age fielmente em tudo o que faz pelos irmãos, e o faz mesmo quando em relação aos estrangeiros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agir fielmente pelos irmãos"
+      },
+      {
+        "id": "b",
+        "text": "Tornar-se cooperador da verdade"
+      },
+      {
+        "id": "c",
+        "text": "Imitar o bem e não o mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "você age fielmente em tudo o que faz pelos irmãos",
+    "feedbackCorrect": "Da fidelidade à cooperação, até imitar o bem.",
+    "feedbackWrong": {
+      "default": "Comece pela fidelidade; o bem fecha."
+    },
+    "hint": "Siga 5, 8 e 11.",
+    "learningObjective": "Encadear fidelidade e bem.",
+    "evidence": [
+      "3 João 1:5",
+      "3 João 1:8",
+      "3 João 1:11"
+    ]
+  }
+]

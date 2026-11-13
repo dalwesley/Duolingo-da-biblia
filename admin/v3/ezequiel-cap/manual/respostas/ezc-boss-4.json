@@ -1,0 +1,929 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 19:1–9",
+    "passages": [
+      {
+        "ref": "Ezequiel 19:1–9"
+      },
+      {
+        "ref": "Ezequiel 20:1–12"
+      },
+      {
+        "ref": "Ezequiel 21:1–10"
+      },
+      {
+        "ref": "Ezequiel 22:1–12"
+      },
+      {
+        "ref": "Ezequiel 23:1–10"
+      },
+      {
+        "ref": "Ezequiel 24:15–24"
+      }
+    ],
+    "context": "Esta travessia reúne o lamento dos príncipes, a consulta recusada, a espada afiada, a cidade de sangue, as irmãs e o sinal da esposa.",
+    "keyword": "espada",
+    "keywordGloss": "Juízo desembainhado; afiada, sem retorno à bainha.",
+    "focusQuestion": "Quando o juízo é sério, você ainda deixa Deus ensinar pelo sinal?",
+    "reflectionPrompts": [
+      "Lamento e consulta",
+      "Espada e sangue",
+      "Irmãs e sinal"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor manda levantar lamentação pelos príncipes.",
+        "evidenceRef": "Ezequiel 19:1",
+        "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel"
+      },
+      {
+        "text": "Os anciãos não consultarão o Senhor.",
+        "evidenceRef": "Ezequiel 20:3",
+        "evidenceSpan": "não me consultareis"
+      },
+      {
+        "text": "A espada elimina justo e ímpio.",
+        "evidenceRef": "Ezequiel 21:3",
+        "evidenceSpan": "eliminarei do meio de você tanto o justo quanto o ímpio"
+      },
+      {
+        "text": "Os príncipes intentam derramar sangue.",
+        "evidenceRef": "Ezequiel 22:6",
+        "evidenceSpan": "não intentam outra coisa senão derramar sangue"
+      },
+      {
+        "text": "Samaria é Oolá e Jerusalém é Oolibá.",
+        "evidenceRef": "Ezequiel 23:4",
+        "evidenceSpan": "Samaria é Oolá, e Jerusalém é Oolibá"
+      },
+      {
+        "text": "O Senhor tira a delícia dos olhos sem lamento.",
+        "evidenceRef": "Ezequiel 24:16",
+        "evidenceSpan": "eu tirarei de você a delícia dos teus olhos, mas não lamentarás"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "lamentação",
+        "gloss": "Canto de dor sobre a queda dos príncipes."
+      },
+      {
+        "term": "espada",
+        "gloss": "Juízo desembainhado contra a terra."
+      },
+      {
+        "term": "sangue",
+        "gloss": "Violência dos príncipes na cidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lamento dos príncipes e consulta recusada",
+        "evidenceRef": "Ezequiel 19:1–4"
+      },
+      {
+        "label": "Espada e cidade de sangue",
+        "evidenceRef": "Ezequiel 21:3–6"
+      },
+      {
+        "label": "Irmãs e sinal da esposa",
+        "evidenceRef": "Ezequiel 23:4–5"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A espada julga; o profeta, porém, suspira.",
+        "marker": "porém",
+        "evidenceRef": "Ezequiel 21:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois da chegada dos anciãos, então vem a palavra do Senhor.",
+        "marker": "Então",
+        "evidenceRef": "Ezequiel 20:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Tira a delícia dos olhos, mas ele não lamentará.",
+        "marker": "mas",
+        "evidenceRef": "Ezequiel 24:16"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Reis 17:5–6",
+        "bridge": "Samaria cai à Assíria"
+      },
+      {
+        "ref": "Jeremias 16:5–7",
+        "bridge": "Luto proibido como sinal"
+      },
+      {
+        "ref": "Isaías 1:15",
+        "bridge": "Mãos cheias de sangue"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo desta etapa é leve e a consulta é aceita.",
+        "why": "A consulta é recusada e a espada não será recolhida."
+      },
+      {
+        "text": "Os príncipes são inocentes; só o povo peca.",
+        "why": "Eles intentam derramar sangue segundo o poder."
+      },
+      {
+        "text": "O sinal da esposa não aponta ao juízo vindouro.",
+        "why": "A perda sem luto é gesto que o povo perguntará e deverá compreender."
+      }
+    ],
+    "centralInsight": "O juízo é sério; Deus ainda ensina pelo sinal",
+    "anchorQuestion": "O que os príncipes intentam em Ezequiel 22:6?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 20:3, o Senhor aceita a consulta dos anciãos sem recusa.",
+      "verseRef": "Ezequiel 20:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "não me consultareis",
+      "feedbackCorrect": "A resposta é a recusa jurada: não me consultareis.",
+      "feedbackWrong": {
+        "true": "O versículo termina com não me consultareis."
+      },
+      "hint": "Veja o fim da resposta do Senhor.",
+      "learningObjective": "Identificar a recusa da consulta.",
+      "evidence": [
+        "Ezequiel 20:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 19:1, toque o que se deve levantar.",
+      "verseRef": "Ezequiel 19:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "lamentação"
+        },
+        {
+          "id": "b",
+          "text": "príncipes"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel",
+      "feedbackCorrect": "O que se levanta é uma lamentação.",
+      "feedbackWrong": {
+        "b": "São os destinatários do lamento.",
+        "c": "Nomeia o povo; o objeto levantado é a lamentação."
+      },
+      "hint": "Procure o substantivo depois de \"Levanta uma\".",
+      "learningObjective": "Identificar o gênero do canto.",
+      "evidence": [
+        "Ezequiel 19:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 21:3, quem a espada eliminará?",
+      "verseRef": "Ezequiel 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tanto o justo quanto o ímpio"
+        },
+        {
+          "id": "b",
+          "text": "Só o ímpio"
+        },
+        {
+          "id": "c",
+          "text": "Só o justo"
+        },
+        {
+          "id": "d",
+          "text": "Nenhum habitante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eliminarei do meio de você tanto o justo quanto o ímpio",
+      "feedbackCorrect": "Justo e ímpio entram no juízo da espada.",
+      "feedbackWrong": {
+        "b": "O texto inclui também o justo.",
+        "c": "O texto inclui também o ímpio.",
+        "d": "Há eliminação declarada."
+      },
+      "hint": "Veja a expressão \"tanto... quanto\".",
+      "learningObjective": "Reconhecer o alcance da espada.",
+      "evidence": [
+        "Ezequiel 21:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 23:4 na ordem do texto.",
+      "verseRef": "Ezequiel 23:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os nomes delas eram: Oolá, a mais velha, e Oolibá, sua irmã"
+        },
+        {
+          "id": "b",
+          "text": "elas eram minhas e deram à luz filhos e filhas"
+        },
+        {
+          "id": "c",
+          "text": "Samaria é Oolá, e Jerusalém é Oolibá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Samaria é Oolá, e Jerusalém é Oolibá",
+      "feedbackCorrect": "Nomes, posse e identificação das cidades.",
+      "feedbackWrong": {
+        "default": "Comece pelos nomes; feche na identificação."
+      },
+      "hint": "Comece pelos nomes; feche na identificação.",
+      "learningObjective": "Reconhecer a sequência de identificação.",
+      "evidence": [
+        "Ezequiel 23:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 22:6, os príncipes não intentam outra coisa senão derramar ___.",
+      "verseRef": "Ezequiel 22:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "óleo"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não intentam outra coisa senão derramar sangue",
+      "feedbackCorrect": "A palavra do texto é sangue.",
+      "feedbackWrong": {
+        "b": "Não é óleo: é sangue.",
+        "c": "Não é ouro: é sangue."
+      },
+      "hint": "Veja o objeto de \"derramar\".",
+      "learningObjective": "Lembrar a acusação aos príncipes.",
+      "evidence": [
+        "Ezequiel 22:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 24:16 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 24:16",
+      "passageA": {
+        "ref": "Ezequiel 24:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Nesta etapa o juízo é sério, e Deus ainda ensina pelo sinal do profeta."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Perda sem lamento"
+        },
+        {
+          "id": "b",
+          "text": "Rede das nações"
+        },
+        {
+          "id": "c",
+          "text": "Leão entre leões"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu tirarei de você a delícia dos teus olhos, mas não lamentarás",
+      "feedbackCorrect": "A perda sem luto prepara o sinal do contexto.",
+      "feedbackWrong": {
+        "b": "A rede não está neste versículo.",
+        "c": "A leoa está em Ezequiel 19."
+      },
+      "hint": "Compare a ordem ao tema do sinal.",
+      "learningObjective": "Ligar a perda ao contexto da travessia.",
+      "evidence": [
+        "Ezequiel 24:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 21:2, toque para onde o profeta deve voltar o rosto.",
+      "verseRef": "Ezequiel 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "para Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Filho do homem"
+        },
+        {
+          "id": "c",
+          "text": "os santuários"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "volta o teu rosto para Jerusalém",
+      "feedbackCorrect": "O alvo do rosto é Jerusalém.",
+      "feedbackWrong": {
+        "b": "É o vocativo.",
+        "c": "Contra eles se derramam palavras; o rosto volta a Jerusalém."
+      },
+      "hint": "Procure o lugar depois de \"volta o teu rosto\".",
+      "learningObjective": "Identificar o alvo da profecia.",
+      "evidence": [
+        "Ezequiel 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 19:3 na ordem do texto.",
+      "verseRef": "Ezequiel 19:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fez crescer um de seus filhotes"
+        },
+        {
+          "id": "b",
+          "text": "que se tornou um leãozinho"
+        },
+        {
+          "id": "c",
+          "text": "aprendeu a apanhar a presa e devorou os homens"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fez crescer um de seus filhotes, que se tornou um leãozinho",
+      "feedbackCorrect": "Cresce, vira leãozinho e caça.",
+      "feedbackWrong": {
+        "default": "Comece pelo crescimento; a presa fecha."
+      },
+      "hint": "Siga o que a leoa faz com o filhote.",
+      "learningObjective": "Reconhecer a sequência do filhote.",
+      "evidence": [
+        "Ezequiel 19:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 24:18, à tarde a esposa morreu e na manhã seguinte ele fez o ordenado.",
+      "verseRef": "Ezequiel 24:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "à tarde minha esposa morreu; na manhã seguinte, fiz conforme me foi ordenado",
+      "feedbackCorrect": "A morte ocorre e a obediência segue.",
+      "feedbackWrong": {
+        "false": "O versículo une morte e obediência."
+      },
+      "hint": "Veja a sequência tarde e manhã seguinte.",
+      "learningObjective": "Compreender a obediência do sinal.",
+      "evidence": [
+        "Ezequiel 24:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 21:6, toque a palavra que marca o contraste com a espada.",
+      "verseRef": "Ezequiel 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "suspira"
+        },
+        {
+          "id": "c",
+          "text": "amargura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu, porém, ó filho do homem, suspira",
+      "feedbackCorrect": "\"Porém\" contrapõe o suspiro à espada.",
+      "feedbackWrong": {
+        "b": "É a ação; o marcador vem antes.",
+        "c": "Descreve o modo, não o contraste."
+      },
+      "hint": "Procure a conjunção depois de \"Tu\".",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Ezequiel 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 23:4 e 23:5 se relacionam?",
+      "verseRef": "Ezequiel 23:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Samaria, sendo do Senhor, se entrega aos assírios"
+        },
+        {
+          "id": "b",
+          "text": "Oolá é Jerusalém e permanece fiel"
+        },
+        {
+          "id": "c",
+          "text": "Os assírios libertam Samaria"
+        },
+        {
+          "id": "d",
+          "text": "Oolibá é Samaria no texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Samaria é Oolá, e Jerusalém é Oolibá",
+      "feedbackCorrect": "Oolá/Samaria se entrega aos assírios sendo do Senhor.",
+      "feedbackWrong": {
+        "b": "Oolá é Samaria e se prostitui.",
+        "c": "Ela se deixa levar por eles.",
+        "d": "Oolibá é Jerusalém."
+      },
+      "hint": "Una a identidade à entrega.",
+      "learningObjective": "Relacionar Oolá e os assírios.",
+      "evidence": [
+        "Ezequiel 23:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a etapa avança do lamento ao sinal?",
+      "verseRef": "Ezequiel 19:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lamento dos príncipes e consulta recusada"
+        },
+        {
+          "id": "b",
+          "text": "Espada e cidade de sangue"
+        },
+        {
+          "id": "c",
+          "text": "Irmãs e sinal da esposa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel",
+      "feedbackCorrect": "Lamento → juízo → sinal.",
+      "feedbackWrong": {
+        "default": "Comece pelo lamento; feche no sinal."
+      },
+      "hint": "Pense em lamento, juízo e sinal.",
+      "learningObjective": "Ordenar os movimentos da etapa.",
+      "evidence": [
+        "Ezequiel 19:1",
+        "Ezequiel 21:3",
+        "Ezequiel 24:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 20:3, não me ___.",
+      "verseRef": "Ezequiel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "consultareis"
+        },
+        {
+          "id": "b",
+          "text": "chamareis"
+        },
+        {
+          "id": "c",
+          "text": "louvareis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não me consultareis",
+      "feedbackCorrect": "O verbo da recusa é consultareis.",
+      "feedbackWrong": {
+        "b": "Não é chamar: é consultar.",
+        "c": "Não é louvar: é consultar."
+      },
+      "hint": "Veja o verbo no fim da frase.",
+      "learningObjective": "Lembrar a recusa da consulta.",
+      "evidence": [
+        "Ezequiel 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 22:3 a Isaías 1:15?",
+      "verseRef": "Ezequiel 22:3",
+      "passageA": {
+        "ref": "Ezequiel 22:3"
+      },
+      "passageB": {
+        "ref": "Isaías 1:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mãos cheias de sangue"
+        },
+        {
+          "id": "b",
+          "text": "Consulta dos anciãos"
+        },
+        {
+          "id": "c",
+          "text": "Leoa e filhotes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ai da cidade que derrama sangue no meio dela",
+      "feedbackCorrect": "Nos dois, a cidade é acusada de sangue.",
+      "feedbackWrong": {
+        "b": "A consulta está em Ezequiel 20.",
+        "c": "A leoa está em Ezequiel 19."
+      },
+      "hint": "Compare a acusação de sangue.",
+      "learningObjective": "Relacionar a cidade sanguinária a Isaías.",
+      "evidence": [
+        "Ezequiel 22:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 20:2, toque a palavra que marca a sequência após a chegada dos anciãos.",
+      "verseRef": "Ezequiel 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "palavra"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, chegou até mim a palavra do Senhor",
+      "feedbackCorrect": "\"Então\" marca a sequência da palavra.",
+      "feedbackWrong": {
+        "b": "É o conteúdo, não o marcador.",
+        "c": "Nomeia quem fala; o marcador abre."
+      },
+      "hint": "Procure a palavra que abre o versículo.",
+      "learningObjective": "Tocar o marcador de sequência.",
+      "evidence": [
+        "Ezequiel 20:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os juízos sobre liderança nesta etapa.",
+      "verseRef": "Ezequiel 19:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os filhotes caem na cova das nações"
+        },
+        {
+          "id": "b",
+          "text": "Os príncipes derramam sangue na cidade"
+        },
+        {
+          "id": "c",
+          "text": "Oolá se entrega aos assírios"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "as nações o apanharam na cova que tinham feito",
+      "feedbackCorrect": "Cova → sangue → Assíria.",
+      "feedbackWrong": {
+        "default": "Comece pela cova; feche na Assíria."
+      },
+      "hint": "Siga príncipes, cidade e irmãs.",
+      "learningObjective": "Ordenar juízos sobre liderança.",
+      "evidence": [
+        "Ezequiel 19:4",
+        "Ezequiel 22:6",
+        "Ezequiel 23:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 21:5, o Senhor promete recolher logo a espada desembainhada.",
+      "verseRef": "Ezequiel 21:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "desembainhei a minha espada; jamais a recolherei",
+      "feedbackCorrect": "A declaração é jamais a recolherei.",
+      "feedbackWrong": {
+        "true": "O texto diz jamais a recolherei."
+      },
+      "hint": "Veja o que segue depois de desembainhar.",
+      "learningObjective": "Rejeitar a leitura que abranda o juízo.",
+      "evidence": [
+        "Ezequiel 21:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 24:16, toque o trecho que sustenta a proibição do luto.",
+      "verseRef": "Ezequiel 24:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "não lamentarás"
+        },
+        {
+          "id": "b",
+          "text": "teus olhos"
+        },
+        {
+          "id": "c",
+          "text": "Filho do homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não lamentarás, não chorarás",
+      "feedbackCorrect": "\"Não lamentarás\" sustenta a proibição.",
+      "feedbackWrong": {
+        "b": "É o que se tira, não a proibição.",
+        "c": "É o vocativo."
+      },
+      "hint": "Procure a ordem depois de \"mas\".",
+      "learningObjective": "Sustentar a proibição do luto.",
+      "evidence": [
+        "Ezequiel 24:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura desta etapa o conjunto sustenta melhor?",
+      "verseRef": "Ezequiel 22:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo sério sobre liderança, com sinal que ainda ensina"
+        },
+        {
+          "id": "b",
+          "text": "Consulta aceita e espada recolhida"
+        },
+        {
+          "id": "c",
+          "text": "Príncipes inocentes e povo só culpado"
+        },
+        {
+          "id": "d",
+          "text": "Oolá fiel e sem juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não intentam outra coisa senão derramar sangue",
+      "feedbackCorrect": "A etapa une juízo duro e ensino pelo sinal.",
+      "feedbackWrong": {
+        "b": "A consulta é recusada e a espada não volta.",
+        "c": "Os príncipes são acusados.",
+        "d": "Oolá se entrega aos assírios."
+      },
+      "hint": "Una juízo e sinal.",
+      "learningObjective": "Escolher a interpretação da etapa.",
+      "evidence": [
+        "Ezequiel 22:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica teológica da etapa.",
+      "verseRef": "Ezequiel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A consulta vazia é recusada"
+        },
+        {
+          "id": "b",
+          "text": "Espada e sangue expõem o juízo"
+        },
+        {
+          "id": "c",
+          "text": "O sinal do profeta ainda ensina"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não me consultareis",
+      "feedbackCorrect": "Recusa → juízo → sinal.",
+      "feedbackWrong": {
+        "default": "Comece na recusa; feche no sinal."
+      },
+      "hint": "Pense em recusa, juízo e sinal.",
+      "learningObjective": "Encadear o sentido da etapa.",
+      "evidence": [
+        "Ezequiel 20:3",
+        "Ezequiel 21:3",
+        "Ezequiel 24:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 23:4, Samaria é ___.",
+      "verseRef": "Ezequiel 23:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oolá"
+        },
+        {
+          "id": "b",
+          "text": "Oolibá"
+        },
+        {
+          "id": "c",
+          "text": "Assíria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Samaria é Oolá",
+      "feedbackCorrect": "Samaria corresponde a Oolá.",
+      "feedbackWrong": {
+        "b": "Oolibá é Jerusalém.",
+        "c": "Assíria é o amante."
+      },
+      "hint": "Veja o nome depois de \"Samaria é\".",
+      "learningObjective": "Lembrar a identidade de Oolá.",
+      "evidence": [
+        "Ezequiel 23:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 24:16–17 a Jeremias 16:5–7?",
+      "verseRef": "Ezequiel 24:16–17",
+      "passageA": {
+        "ref": "Ezequiel 24:16–17"
+      },
+      "passageB": {
+        "ref": "Jeremias 16:5–7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luto proibido como sinal"
+        },
+        {
+          "id": "b",
+          "text": "Espada na bainha"
+        },
+        {
+          "id": "c",
+          "text": "Leoa entre leões"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não lamentarás, não chorarás",
+      "feedbackCorrect": "Nos dois, o luto é barrado como sinal.",
+      "feedbackWrong": {
+        "b": "A espada está em Ezequiel 21.",
+        "c": "A leoa está em Ezequiel 19."
+      },
+      "hint": "Compare a proibição do luto.",
+      "learningObjective": "Ligar o sinal a Jeremias.",
+      "evidence": [
+        "Ezequiel 24:16",
+        "Ezequiel 24:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 23:5, toque o trecho que mostra a traição na aliança.",
+      "verseRef": "Ezequiel 23:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "sendo minha"
+        },
+        {
+          "id": "b",
+          "text": "seus vizinhos"
+        },
+        {
+          "id": "c",
+          "text": "seus amantes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se entregou à prostituição sendo minha",
+      "feedbackCorrect": "\"Sendo minha\" situa a traição na aliança.",
+      "feedbackWrong": {
+        "b": "Localiza os assírios.",
+        "c": "Nomeia os parceiros, não a posse."
+      },
+      "hint": "Procure a expressão sobre a quem ela pertencia.",
+      "learningObjective": "Tocar a frase da aliança traída.",
+      "evidence": [
+        "Ezequiel 23:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do sinal da esposa.",
+      "verseRef": "Ezequiel 24:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A delícia dos olhos é tirada sem pranto"
+        },
+        {
+          "id": "b",
+          "text": "O povo pergunta o significado"
+        },
+        {
+          "id": "c",
+          "text": "O gesto aponta ao juízo que virá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não nos dirás o que significam estas coisas que estás fazendo?",
+      "feedbackCorrect": "Perda → pergunta → sentido do sinal.",
+      "feedbackWrong": {
+        "default": "Comece na perda; feche no sentido."
+      },
+      "hint": "Pense em perda, pergunta e sentido.",
+      "learningObjective": "Encadear a lógica do sinal.",
+      "evidence": [
+        "Ezequiel 24:16",
+        "Ezequiel 24:19"
+      ]
+    }
+  ]
+}

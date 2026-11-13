@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 2:8–18",
+    "passages": [
+      {
+        "ref": "Juízes 2:8–18"
+      }
+    ],
+    "context": "Após Josué, nasce uma geração que não conhece o Senhor; o povo serve aos baalins e a mão do Senhor se volta contra eles, até que Ele levanta juízes.",
+    "keyword": "juízes",
+    "keywordGloss": "Libertadores que o Senhor levanta quando o povo clama.",
+    "focusQuestion": "Onde a memória do Senhor precisa voltar a governar sua casa?",
+    "reflectionPrompts": [
+      "Nova geração",
+      "Mão do Senhor",
+      "Juízes levantados"
+    ],
+    "facts": [
+      {
+        "text": "Josué faleceu com cento e dez anos.",
+        "evidenceRef": "Juízes 2:8",
+        "evidenceSpan": "faleceu com a idade de cento e dez anos"
+      },
+      {
+        "text": "A nova geração não conhecia o Senhor.",
+        "evidenceRef": "Juízes 2:10",
+        "evidenceSpan": "não conhecia o Senhor"
+      },
+      {
+        "text": "Israel fez o que era mau e serviu aos baalins.",
+        "evidenceRef": "Juízes 2:11",
+        "evidenceSpan": "fizeram o que era mau aos olhos do SENHOR e serviram aos baalins"
+      },
+      {
+        "text": "A ira do Senhor os entregou aos saqueadores.",
+        "evidenceRef": "Juízes 2:14",
+        "evidenceSpan": "os entregou nas mãos dos saqueadores"
+      },
+      {
+        "text": "O Senhor levantou juízes que os libertaram.",
+        "evidenceRef": "Juízes 2:16",
+        "evidenceSpan": "o Senhor levantou juízes que os libertaram"
+      },
+      {
+        "text": "Quando levantava juízes, o Senhor estava com o juiz.",
+        "evidenceRef": "Juízes 2:18",
+        "evidenceSpan": "o Senhor estava com o juiz"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "baalins",
+        "gloss": "Deuses a quem Israel serviu ao deixar o Senhor."
+      },
+      {
+        "term": "juízes",
+        "gloss": "Libertadores levantados pelo Senhor."
+      },
+      {
+        "term": "compadecia",
+        "gloss": "O Senhor se move pelos gemidos do povo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Morte de Josué e nova geração",
+        "evidenceRef": "Juízes 2:8–10"
+      },
+      {
+        "label": "Apostasia e ira",
+        "evidenceRef": "Juízes 2:11–15"
+      },
+      {
+        "label": "Juízes levantados",
+        "evidenceRef": "Juízes 2:16–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porquanto abandonaram; por isso a ira se acendeu.",
+        "marker": "Porquanto",
+        "evidenceRef": "Juízes 2:13"
+      },
+      {
+        "kind": "contraste",
+        "text": "Levantou juízes; contudo não ouviram.",
+        "marker": "Contudo",
+        "evidenceRef": "Juízes 2:17"
+      },
+      {
+        "kind": "causa",
+        "text": "Livrava pois o Senhor se compadecia.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 2:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 6:12",
+        "bridge": "Não esquecer o Senhor"
+      },
+      {
+        "ref": "Salmos 106:41",
+        "bridge": "Entregues às nações"
+      },
+      {
+        "ref": "Neemias 9:27",
+        "bridge": "Deus dá libertadores"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor abandona sem aviso.",
+        "why": "Age conforme o que havia dito e jurado."
+      },
+      {
+        "text": "Os juízes bastam sem ouvir.",
+        "why": "Contudo não ouviram os juízes."
+      },
+      {
+        "text": "A nova geração conhecia bem o Senhor.",
+        "why": "Não conhecia o Senhor nem as obras."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 2:16, o que o Senhor levantou?",
+    "centralInsight": "Quando deixam o Senhor, a mão dele se volta contra eles, como ele tinha dito."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 2:16, o Senhor levantou juízes que libertaram o povo.",
+      "verseRef": "Juízes 2:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor levantou juízes que os libertaram",
+      "feedbackCorrect": "Levantou juízes.",
+      "feedbackWrong": {
+        "false": "O texto afirma o levantar."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Observar os juízes.",
+      "evidence": [
+        "Juízes 2:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 2:11, toque a quem Israel serviu.",
+      "verseRef": "Juízes 2:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "baalins"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serviram aos baalins",
+      "feedbackCorrect": "Baalins.",
+      "feedbackWrong": {
+        "b": "SENHOR é quem vê.",
+        "c": "Filhos são o sujeito."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Identificar baalins.",
+      "evidence": [
+        "Juízes 2:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 2:10, a nova geração:",
+      "verseRef": "Juízes 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não conhecia o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Conhecia todas as obras"
+        },
+        {
+          "id": "c",
+          "text": "Sepultou Josué em Siló"
+        },
+        {
+          "id": "d",
+          "text": "Serviu só a Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não conhecia o Senhor",
+      "feedbackCorrect": "Não conhecia.",
+      "feedbackWrong": {
+        "b": "Não conhecia.",
+        "c": "Sepultura é outra.",
+        "d": "Não é Moisés."
+      },
+      "hint": "Leia o não.",
+      "learningObjective": "Reconhecer o esquecimento.",
+      "evidence": [
+        "Juízes 2:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 2:11 na ordem do texto.",
+      "verseRef": "Juízes 2:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "os filhos de Israel fizeram o que era mau"
+        },
+        {
+          "id": "b",
+          "text": "aos olhos do SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "e serviram aos baalins"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "fizeram o que era mau aos olhos do SENHOR e serviram aos baalins",
+      "feedbackCorrect": "Mau, olhos e baalins.",
+      "feedbackWrong": {
+        "default": "Comece pelo povo."
+      },
+      "hint": "A quem serviram?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 2:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 2:16, complete: o Senhor levantou ___.",
+      "verseRef": "Juízes 2:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "juízes"
+        },
+        {
+          "id": "b",
+          "text": "reis"
+        },
+        {
+          "id": "c",
+          "text": "baalins"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor levantou juízes que os libertaram",
+      "feedbackCorrect": "Juízes.",
+      "feedbackWrong": {
+        "b": "Não são reis.",
+        "c": "Não são baalins."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar juízes.",
+      "evidence": [
+        "Juízes 2:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 2:18 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 2:18",
+      "passageA": {
+        "ref": "Juízes 2:18"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor levanta juízes e está com eles enquanto livram o povo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor com o juiz"
+        },
+        {
+          "id": "b",
+          "text": "Senhor ausente"
+        },
+        {
+          "id": "c",
+          "text": "Povo sem aflição"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor estava com o juiz",
+      "feedbackCorrect": "Presença no livramento.",
+      "feedbackWrong": {
+        "b": "Há presença.",
+        "c": "Há aflição."
+      },
+      "hint": "Quem estava com o juiz?",
+      "learningObjective": "Ligar presença e juízes.",
+      "evidence": [
+        "Juízes 2:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 2:17, Israel ouviu plenamente os juízes e permaneceu fiel.",
+      "verseRef": "Juízes 2:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "Contudo, não ouviram os seus juízes",
+      "feedbackCorrect": "Não ouviram.",
+      "feedbackWrong": {
+        "true": "O contudo marca a recusa."
+      },
+      "hint": "Leia o contudo.",
+      "learningObjective": "Ver a recusa.",
+      "evidence": [
+        "Juízes 2:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 2:17, toque o marcador de contraste.",
+      "verseRef": "Juízes 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contudo"
+        },
+        {
+          "id": "b",
+          "text": "juízes"
+        },
+        {
+          "id": "c",
+          "text": "deuses"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contudo, não ouviram os seus juízes",
+      "feedbackCorrect": "Contudo.",
+      "feedbackWrong": {
+        "b": "Juízes são os enviados.",
+        "c": "Deuses são o laço."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 2:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 2:14 faz?",
+      "verseRef": "Juízes 2:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandonaram; por isso a ira os entregou"
+        },
+        {
+          "id": "b",
+          "text": "Serviram e foram abençoados"
+        },
+        {
+          "id": "c",
+          "text": "Josué os entregou"
+        },
+        {
+          "id": "d",
+          "text": "Sem causa sofreram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, a ira do Senhor se acendeu",
+      "feedbackCorrect": "Causa e ira.",
+      "feedbackWrong": {
+        "b": "Há causa.",
+        "c": "Não é bênção.",
+        "d": "Não é Josué."
+      },
+      "hint": "Leia o Por isso.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 2:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do ciclo.",
+      "verseRef": "Juízes 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nova geração sem memória"
+        },
+        {
+          "id": "b",
+          "text": "Apostasia e ira"
+        },
+        {
+          "id": "c",
+          "text": "Juízes levantados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não conhecia o Senhor",
+      "feedbackCorrect": "Esquecimento, ira e juízes.",
+      "feedbackWrong": {
+        "default": "Comece pela geração."
+      },
+      "hint": "O que o Senhor levanta?",
+      "learningObjective": "Ordenar o ciclo",
+      "evidence": [
+        "Juízes 2:10",
+        "Juízes 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 2:18, complete: pois o Senhor se ___.",
+      "verseRef": "Juízes 2:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "compadecia"
+        },
+        {
+          "id": "b",
+          "text": "esquecia"
+        },
+        {
+          "id": "c",
+          "text": "alegrava"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o Senhor se compadecia de seus gemidos",
+      "feedbackCorrect": "Compadecia.",
+      "feedbackWrong": {
+        "b": "Não é esquecia.",
+        "c": "Não é alegrava."
+      },
+      "hint": "Veja o pois.",
+      "learningObjective": "Lembrar o compadecimento.",
+      "evidence": [
+        "Juízes 2:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 2:16 a Neemias 9:27?",
+      "verseRef": "Juízes 2:16",
+      "passageA": {
+        "ref": "Juízes 2:16"
+      },
+      "passageB": {
+        "ref": "Neemias 9:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus dá libertadores"
+        },
+        {
+          "id": "b",
+          "text": "Povo sem juízes"
+        },
+        {
+          "id": "c",
+          "text": "Ira sem fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor levantou juízes que os libertaram",
+      "feedbackCorrect": "Libertadores.",
+      "feedbackWrong": {
+        "b": "Há juízes.",
+        "c": "Há livramento."
+      },
+      "hint": "Compare o levantar.",
+      "learningObjective": "Ligar a Neemias.",
+      "evidence": [
+        "Juízes 2:16",
+        "Neemias 9:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 2:15, o mal da mão do Senhor veio sem aviso prévio.",
+      "verseRef": "Juízes 2:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "conforme o Senhor lhes havia dito e jurado",
+      "feedbackCorrect": "Conforme o que dissera.",
+      "feedbackWrong": {
+        "true": "Há palavra prévia."
+      },
+      "hint": "Leia o conforme.",
+      "learningObjective": "Avaliar a fidelidade da palavra.",
+      "evidence": [
+        "Juízes 2:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 2:15, toque o trecho da fidelidade da palavra.",
+      "verseRef": "Juízes 2:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "dito e jurado"
+        },
+        {
+          "id": "b",
+          "text": "grande aflição"
+        },
+        {
+          "id": "c",
+          "text": "mão do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme o Senhor lhes havia dito e jurado",
+      "feedbackCorrect": "Dito e jurado.",
+      "feedbackWrong": {
+        "b": "Aflição é o resultado.",
+        "c": "Mão é o agente."
+      },
+      "hint": "Veja o conforme.",
+      "learningObjective": "Tocar a palavra prévia.",
+      "evidence": [
+        "Juízes 2:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une juízes e coração do Senhor?",
+      "verseRef": "Juízes 2:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele se compadece e está com o juiz"
+        },
+        {
+          "id": "b",
+          "text": "Os juízes substituem o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Sem gemidos não há pecado"
+        },
+        {
+          "id": "d",
+          "text": "A memória da geração basta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o Senhor se compadecia de seus gemidos",
+      "feedbackCorrect": "Compadecimento.",
+      "feedbackWrong": {
+        "b": "Há presença.",
+        "c": "Há pecado.",
+        "d": "Há esquecimento."
+      },
+      "hint": "Una gemidos e juízes.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 2:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do ciclo.",
+      "verseRef": "Juízes 2:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esquecem e provocam"
+        },
+        {
+          "id": "b",
+          "text": "Sofrem a mão do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Recebem juízes por compaixão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor se compadecia de seus gemidos",
+      "feedbackCorrect": "Pecado, juízo e livramento.",
+      "feedbackWrong": {
+        "default": "Comece pelo esquecimento."
+      },
+      "hint": "O que fecha com compaixão?",
+      "learningObjective": "Encadear o ciclo",
+      "evidence": [
+        "Juízes 2:12",
+        "Juízes 2:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 2:10, complete: não conhecia o ___.",
+      "verseRef": "Juízes 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "baal"
+        },
+        {
+          "id": "c",
+          "text": "juiz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não conhecia o Senhor",
+      "feedbackCorrect": "Senhor.",
+      "feedbackWrong": {
+        "b": "Não é baal.",
+        "c": "Não é juiz."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar o Senhor.",
+      "evidence": [
+        "Juízes 2:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 2:12 a Deuteronômio 6:12?",
+      "verseRef": "Juízes 2:12",
+      "passageA": {
+        "ref": "Juízes 2:12"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 6:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não esquecer o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Servir aos baalins"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar o Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deixaram o Senhor, o Deus de seus pais",
+      "feedbackCorrect": "Deixar o Senhor.",
+      "feedbackWrong": {
+        "b": "Não é servir baalins como meta.",
+        "c": "Há memória do Egito."
+      },
+      "hint": "Compare o deixar.",
+      "learningObjective": "Ligar a Deuteronômio.",
+      "evidence": [
+        "Juízes 2:12",
+        "Deuteronômio 6:12"
+      ]
+    }
+  ]
+}

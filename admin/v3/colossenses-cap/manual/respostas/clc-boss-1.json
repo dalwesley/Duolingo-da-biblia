@@ -1,0 +1,923 @@
+{
+  "study": {
+    "passageRef": "Colossenses 1:21–26",
+    "passages": [
+      {
+        "ref": "Colossenses 1:21–26"
+      },
+      {
+        "ref": "Colossenses 1:27–29"
+      },
+      {
+        "ref": "Colossenses 2:16–21"
+      },
+      {
+        "ref": "Colossenses 2:22–23"
+      }
+    ],
+    "context": "Este desafio revisa Colossenses 1–2: reconciliados em Cristo e livres de juízos e ordenanças. Cristo basta: nele há esperança e liberdade.",
+    "keyword": "Cristo",
+    "keywordGloss": "Centro da reconciliação e da realidade que substitui sombras e regras.",
+    "focusQuestion": "Onde você ainda troca Cristo por regra ou sombra?",
+    "reflectionPrompts": [
+      "Reconciliados em Cristo",
+      "Cristo em vós",
+      "Liberdade das ordenanças"
+    ],
+    "facts": [
+      {
+        "text": "Outrora inimigos, agora reconciliados.",
+        "evidenceRef": "Colossenses 1:21",
+        "evidenceSpan": "agora os reconciliou"
+      },
+      {
+        "text": "A reconciliação é por meio da morte de Cristo.",
+        "evidenceRef": "Colossenses 1:22",
+        "evidenceSpan": "por meio da sua morte"
+      },
+      {
+        "text": "O mistério entre os gentios é Cristo em vocês.",
+        "evidenceRef": "Colossenses 1:27",
+        "evidenceSpan": "Cristo em vocês, a esperança da glória"
+      },
+      {
+        "text": "Ninguém julgue por comida ou sábados.",
+        "evidenceRef": "Colossenses 2:16",
+        "evidenceSpan": "ninguém vos julgue por causa do que comeis ou bebeis"
+      },
+      {
+        "text": "Sombras apontam; o corpo é de Cristo.",
+        "evidenceRef": "Colossenses 2:17",
+        "evidenceSpan": "mas o corpo é de Cristo"
+      },
+      {
+        "text": "Ordenanças não têm valor contra a carne.",
+        "evidenceRef": "Colossenses 2:23",
+        "evidenceSpan": "não têm valor algum contra a satisfação da carne"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "reconciliou",
+        "gloss": "Ação de Deus que restaura inimigos pela morte de Cristo."
+      },
+      {
+        "term": "mistério",
+        "gloss": "Cristo nos gentios, esperança da glória."
+      },
+      {
+        "term": "sombras",
+        "gloss": "Rituais que apontam; a realidade é Cristo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Reconciliados pela morte",
+        "evidenceRef": "Colossenses 1:22"
+      },
+      {
+        "label": "Cristo em vós revelado",
+        "evidenceRef": "Colossenses 1:27"
+      },
+      {
+        "label": "Ninguém julgue por rituais",
+        "evidenceRef": "Colossenses 2:16"
+      },
+      {
+        "label": "Reter a cabeça, não regras",
+        "evidenceRef": "Colossenses 2:19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Outrora inimigos; agora reconciliados.",
+        "marker": "agora",
+        "evidenceRef": "Colossenses 1:21"
+      },
+      {
+        "kind": "contraste",
+        "text": "Sombras versus corpo de Cristo.",
+        "marker": "mas",
+        "evidenceRef": "Colossenses 2:17"
+      },
+      {
+        "kind": "resultado",
+        "text": "Mortos com Cristo, não se sujeitam a ordenanças.",
+        "marker": "Portanto",
+        "evidenceRef": "Colossenses 2:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 2:13",
+        "bridge": "Perto pelo sangue"
+      },
+      {
+        "ref": "Hebreus 10:1",
+        "bridge": "Lei como sombra"
+      },
+      {
+        "ref": "Romanos 5:10",
+        "bridge": "Reconciliados pela morte"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Reconciliação sem a cruz.",
+        "why": "O texto liga ao corpo e à morte de Cristo."
+      },
+      {
+        "text": "Regras severas vencem a carne.",
+        "why": "Não têm valor algum contra a satisfação da carne."
+      },
+      {
+        "text": "Gentios ficam fora do mistério.",
+        "why": "O mistério entre os gentios é Cristo em vocês."
+      }
+    ],
+    "centralInsight": "Cristo basta: nele há esperança e liberdade verdadeira",
+    "anchorQuestion": "O que Colossenses 1:27 chama de mistério entre os gentios?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Colossenses 1:21, Deus agora os reconciliou.",
+      "verseRef": "Colossenses 1:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "O contraste fecha com a reconciliação presente.",
+      "feedbackWrong": {
+        "false": "Releia o fim: agora os reconciliou."
+      },
+      "hint": "Olhe o contraste com outrora.",
+      "learningObjective": "Observar a reconciliação.",
+      "evidence": [
+        "Colossenses 1:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Colossenses 1:22, toque o meio da reconciliação.",
+      "verseRef": "Colossenses 1:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua morte"
+        },
+        {
+          "id": "b",
+          "text": "santos"
+        },
+        {
+          "id": "c",
+          "text": "sem culpa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio da sua morte",
+      "feedbackCorrect": "A morte de Cristo é o meio.",
+      "feedbackWrong": {
+        "b": "Santos é o alvo.",
+        "c": "Sem culpa é o alvo."
+      },
+      "hint": "Procure \"por meio\".",
+      "learningObjective": "Identificar o meio.",
+      "evidence": [
+        "Colossenses 1:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Colossenses 2:17, o que é o corpo?",
+      "verseRef": "Colossenses 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "É de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "É o culto aos anjos"
+        },
+        {
+          "id": "c",
+          "text": "É a lista de ordenanças"
+        },
+        {
+          "id": "d",
+          "text": "É a sombra dos sábados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas o corpo é de Cristo",
+      "feedbackCorrect": "A realidade é Cristo.",
+      "feedbackWrong": {
+        "b": "Anjos são rejeitados.",
+        "c": "Ordenanças são questionadas.",
+        "d": "Sábados são sombras."
+      },
+      "hint": "Leia o contraste.",
+      "learningObjective": "Observar a realidade em Cristo.",
+      "evidence": [
+        "Colossenses 2:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Colossenses 2:17 na ordem do texto.",
+      "verseRef": "Colossenses 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "São apenas sombras das coisas que estavam por vir"
+        },
+        {
+          "id": "b",
+          "text": "mas o corpo"
+        },
+        {
+          "id": "c",
+          "text": "é de Cristo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas o corpo é de Cristo",
+      "feedbackCorrect": "Sombras primeiro; Cristo fecha.",
+      "feedbackWrong": {
+        "default": "Comece pelas sombras."
+      },
+      "hint": "O versículo começa pelas sombras.",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Colossenses 2:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Colossenses 1:27, Cristo em vocês é a ___ da glória.",
+      "verseRef": "Colossenses 1:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "esperança"
+        },
+        {
+          "id": "b",
+          "text": "sombra"
+        },
+        {
+          "id": "c",
+          "text": "ordenança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cristo em vocês, a esperança da glória",
+      "feedbackCorrect": "O mistério é Cristo em vocês, a esperança da glória.",
+      "feedbackWrong": {
+        "b": "Sombra é do cap. 2.",
+        "c": "Ordenança é rejeitada."
+      },
+      "hint": "Veja a definição do mistério.",
+      "learningObjective": "Lembrar a esperança da glória.",
+      "evidence": [
+        "Colossenses 1:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Colossenses 1:21 comunica que se liga a este contexto?",
+      "verseRef": "Colossenses 1:21",
+      "passageA": {
+        "ref": "Colossenses 1:21"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "De inimigos a reconciliados em Cristo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "De inimigos a reconciliados"
+        },
+        {
+          "id": "b",
+          "text": "Inimizade permanente"
+        },
+        {
+          "id": "c",
+          "text": "Só regras salvam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "A virada é a reconciliação.",
+      "feedbackWrong": {
+        "b": "O agora muda o passado.",
+        "c": "A reconciliação é de Deus."
+      },
+      "hint": "Compare outrora e agora.",
+      "learningObjective": "Ligar à reconciliação.",
+      "evidence": [
+        "Colossenses 1:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Colossenses 2:16, toque o que ninguém deve fazer por causa de comida ou sábados.",
+      "verseRef": "Colossenses 2:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "julgue"
+        },
+        {
+          "id": "b",
+          "text": "comeis"
+        },
+        {
+          "id": "c",
+          "text": "sábados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém vos julgue",
+      "feedbackCorrect": "Ninguém vos julgue por rituais.",
+      "feedbackWrong": {
+        "b": "Comida é o tema do juízo.",
+        "c": "Sábados são o tema do juízo."
+      },
+      "hint": "Procure o verbo principal.",
+      "learningObjective": "Identificar a proibição de juízo.",
+      "evidence": [
+        "Colossenses 2:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Colossenses 1:21 na ordem do texto.",
+      "verseRef": "Colossenses 1:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "E a vocês, que outrora eram estranhos e inimigos"
+        },
+        {
+          "id": "b",
+          "text": "no entendimento por causa de suas obras malignas"
+        },
+        {
+          "id": "c",
+          "text": "agora os reconciliou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "Passado hostil e reconciliação.",
+      "feedbackWrong": {
+        "default": "Comece pelo outrora."
+      },
+      "hint": "Comece pelo passado.",
+      "learningObjective": "Reconhecer Colossenses 1:21.",
+      "evidence": [
+        "Colossenses 1:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Colossenses 2:17, as festas são a realidade e Cristo é só sombra.",
+      "verseRef": "Colossenses 2:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo",
+      "feedbackCorrect": "O contraste inverte: sombras apontam; o corpo é de Cristo.",
+      "feedbackWrong": {
+        "true": "Releia o mas: o corpo é de Cristo."
+      },
+      "hint": "Repare no contraste.",
+      "learningObjective": "Compreender sombra e corpo.",
+      "evidence": [
+        "Colossenses 2:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Colossenses 2:17, toque a palavra que marca o contraste.",
+      "verseRef": "Colossenses 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "apenas"
+        },
+        {
+          "id": "c",
+          "text": "vir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas o corpo é de Cristo",
+      "feedbackCorrect": "Mas introduz a realidade.",
+      "feedbackWrong": {
+        "b": "Apenas reduz as sombras.",
+        "c": "Vir aponta o futuro."
+      },
+      "hint": "Procure a conjunção.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "Colossenses 2:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Colossenses 2:20 se relaciona com morrer com Cristo?",
+      "verseRef": "Colossenses 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Torna sujeição a ordenanças incoerente"
+        },
+        {
+          "id": "b",
+          "text": "Exige mais listas de não toques"
+        },
+        {
+          "id": "c",
+          "text": "Obriga culto aos anjos"
+        },
+        {
+          "id": "d",
+          "text": "Cancela a cabeça Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se vocês morreram com Cristo em relação aos rudimentos do mundo, por que",
+      "feedbackCorrect": "A morte com Cristo questiona as ordenanças.",
+      "feedbackWrong": {
+        "b": "Não toques é o erro.",
+        "c": "Anjos são rejeitados.",
+        "d": "É preciso reter a cabeça."
+      },
+      "hint": "Una se morreram e por que.",
+      "learningObjective": "Relacionar morte e liberdade.",
+      "evidence": [
+        "Colossenses 2:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento de Colossenses 1–2?",
+      "verseRef": "Colossenses 1:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reconciliados pela morte"
+        },
+        {
+          "id": "b",
+          "text": "Cristo revelado nos gentios"
+        },
+        {
+          "id": "c",
+          "text": "Livres de juízos rituais"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora os reconciliou",
+      "feedbackCorrect": "Reconciliação, mistério e liberdade.",
+      "feedbackWrong": {
+        "default": "Comece pela reconciliação."
+      },
+      "hint": "Siga a ordem do bloco.",
+      "learningObjective": "Compreender o arco do desafio.",
+      "evidence": [
+        "Colossenses 1:21–22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Colossenses 2:20, por que vos sujeitais a ___?",
+      "verseRef": "Colossenses 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordenanças"
+        },
+        {
+          "id": "b",
+          "text": "esperanças"
+        },
+        {
+          "id": "c",
+          "text": "mistérios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vos sujeitais a ordenanças",
+      "feedbackCorrect": "A pergunta desafia a sujeição a ordenanças.",
+      "feedbackWrong": {
+        "b": "Não é esperanças.",
+        "c": "Mistério é revelado, não ordenança."
+      },
+      "hint": "Veja o fim da pergunta.",
+      "learningObjective": "Lembrar ordenanças.",
+      "evidence": [
+        "Colossenses 2:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Colossenses 2:17 a Hebreus 10:1?",
+      "verseRef": "Colossenses 2:17",
+      "passageA": {
+        "ref": "Colossenses 2:17"
+      },
+      "passageB": {
+        "ref": "Hebreus 10:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lei como sombra"
+        },
+        {
+          "id": "b",
+          "text": "Sombra como salvação"
+        },
+        {
+          "id": "c",
+          "text": "Cristo como sombra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "São apenas sombras das coisas que estavam por vir",
+      "feedbackCorrect": "Ritual aponta; Cristo é a realidade.",
+      "feedbackWrong": {
+        "b": "Sombra não salva.",
+        "c": "Cristo é o corpo."
+      },
+      "hint": "Compare sombra.",
+      "learningObjective": "Relacionar sombra ritual.",
+      "evidence": [
+        "Colossenses 2:17",
+        "Hebreus 10:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Colossenses 1:23, toque a palavra que marca a condição de permanecer.",
+      "verseRef": "Colossenses 1:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "evangelho"
+        },
+        {
+          "id": "c",
+          "text": "ministro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se, porém, permanecerem",
+      "feedbackCorrect": "Porém introduz a condição.",
+      "feedbackWrong": {
+        "b": "Evangelho é o conteúdo.",
+        "c": "Ministro é Paulo."
+      },
+      "hint": "Procure após Se.",
+      "learningObjective": "Reconhecer a condição.",
+      "evidence": [
+        "Colossenses 1:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança Colossenses 2:16–19?",
+      "verseRef": "Colossenses 2:16–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ninguém julgue por rituais"
+        },
+        {
+          "id": "b",
+          "text": "Rituais são sombras"
+        },
+        {
+          "id": "c",
+          "text": "O corpo cresce na cabeça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "cresce o crescimento que é de Deus",
+      "feedbackCorrect": "Juízo, sombra e crescimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo juízo."
+      },
+      "hint": "Siga juízo → sombra → cabeça.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "Colossenses 2:16–17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Colossenses 1:27 e 2:17 juntos sustentam que Cristo é a esperança e a realidade, não sombras ou regras.",
+      "verseRef": "Colossenses 1:27",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cristo em vocês, a esperança da glória",
+      "feedbackCorrect": "Cristo preenche mistério e realidade; sombras e ordenanças não.",
+      "feedbackWrong": {
+        "false": "Una esperança da glória e corpo de Cristo."
+      },
+      "hint": "Pense no centro dos dois capítulos.",
+      "learningObjective": "Interpretar Cristo como centro.",
+      "evidence": [
+        "Colossenses 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Colossenses 2:19, toque o trecho que mostra de quem não se deve apartar.",
+      "verseRef": "Colossenses 2:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "a cabeça"
+        },
+        {
+          "id": "b",
+          "text": "juntas"
+        },
+        {
+          "id": "c",
+          "text": "ligamentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E não retendo a cabeça",
+      "feedbackCorrect": "A cabeça é Cristo.",
+      "feedbackWrong": {
+        "b": "Juntas ligam.",
+        "c": "Ligamentos vinculam."
+      },
+      "hint": "Procure o que não retêm.",
+      "learningObjective": "Sustentar Cristo-cabeça.",
+      "evidence": [
+        "Colossenses 2:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o bloco Colossenses 1–2 sustenta?",
+      "verseRef": "Colossenses 2:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo basta; regras têm aparência sem poder"
+        },
+        {
+          "id": "b",
+          "text": "Regras vencem a carne melhor que Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Gentios ficam fora do mistério"
+        },
+        {
+          "id": "d",
+          "text": "Juízo por sábados é essencial"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não têm valor algum contra a satisfação da carne",
+      "feedbackCorrect": "Cristo reconcilia e basta; regras não vencem a carne.",
+      "feedbackWrong": {
+        "b": "O texto nega valor.",
+        "c": "Mistério inclui gentios.",
+        "d": "Ninguém julgue."
+      },
+      "hint": "Una reconciliação e crítica às regras.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Colossenses 2:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da liberdade em Cristo?",
+      "verseRef": "Colossenses 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz pelo sangue da cruz"
+        },
+        {
+          "id": "b",
+          "text": "Morrem aos rudimentos"
+        },
+        {
+          "id": "c",
+          "text": "Não se sujeitam a ordenanças"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se vocês morreram com Cristo",
+      "feedbackCorrect": "Reconciliação, morte aos rudimentos e liberdade.",
+      "feedbackWrong": {
+        "default": "Comece pela reconciliação."
+      },
+      "hint": "Siga o arco do bloco.",
+      "learningObjective": "Ver o encadeamento.",
+      "evidence": [
+        "Colossenses 1:22",
+        "Colossenses 2:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Colossenses 1:26, o que esteve oculto e agora se manifestou?",
+      "verseRef": "Colossenses 1:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "mistério"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "império"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O mistério que esteve oculto",
+      "feedbackCorrect": "É o mistério revelado.",
+      "feedbackWrong": {
+        "b": "Não é templo.",
+        "c": "Não é império."
+      },
+      "hint": "Palavra que abre o versículo.",
+      "learningObjective": "Lembrar o mistério.",
+      "evidence": [
+        "Colossenses 1:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Colossenses 1:21–22 a Romanos 5:10?",
+      "verseRef": "Colossenses 1:21–22",
+      "passageA": {
+        "ref": "Colossenses 1:21–22"
+      },
+      "passageB": {
+        "ref": "Romanos 5:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reconciliados pela morte"
+        },
+        {
+          "id": "b",
+          "text": "Salvos sem Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Inimizade eterna"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio da sua morte",
+      "feedbackCorrect": "Inimigos reconciliados pela morte.",
+      "feedbackWrong": {
+        "b": "É em Cristo.",
+        "c": "Há reconciliação."
+      },
+      "hint": "Compare a morte reconciliadora.",
+      "learningObjective": "Ligar reconciliação.",
+      "evidence": [
+        "Colossenses 1:21–22",
+        "Romanos 5:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Colossenses 1:27, toque o trecho que nomeia o mistério.",
+      "verseRef": "Colossenses 1:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo em vocês"
+        },
+        {
+          "id": "b",
+          "text": "seus santos"
+        },
+        {
+          "id": "c",
+          "text": "os gentios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que é Cristo em vocês, a esperança da glória",
+      "feedbackCorrect": "O mistério é Cristo em vocês.",
+      "feedbackWrong": {
+        "b": "Santos recebem.",
+        "c": "Gentios são o âmbito."
+      },
+      "hint": "Procure \"que é\".",
+      "learningObjective": "Sustentar a definição.",
+      "evidence": [
+        "Colossenses 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga sombra e liberdade?",
+      "verseRef": "Colossenses 2:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sombra do que virá"
+        },
+        {
+          "id": "b",
+          "text": "O corpo é de Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Ordenanças perdem o poder"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas o corpo é de Cristo",
+      "feedbackCorrect": "Sombra, Cristo e queda das ordenanças.",
+      "feedbackWrong": {
+        "default": "Comece pelas sombras."
+      },
+      "hint": "Siga sombra → Cristo → liberdade.",
+      "learningObjective": "Ver o fio da liberdade.",
+      "evidence": [
+        "Colossenses 2:17",
+        "Colossenses 2:20"
+      ]
+    }
+  ]
+}

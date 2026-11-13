@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 11:29–40",
+    "passages": [
+      {
+        "ref": "Juízes 11:29–40"
+      }
+    ],
+    "context": "O Espírito vem sobre Jefté; ele vence Amom, mas o voto precipitado alcança a filha única.",
+    "keyword": "voto",
+    "keywordGloss": "Promessa precipitada que Jefté não pode desfazer.",
+    "focusQuestion": "Onde um voto precipitado precisa dar lugar à obediência sábia?",
+    "reflectionPrompts": [
+      "Espírito e avanço",
+      "Voto na porta",
+      "Filha única"
+    ],
+    "facts": [
+      {
+        "text": "O Espírito do Senhor veio sobre Jefté.",
+        "evidenceRef": "Juízes 11:29",
+        "evidenceSpan": "o Espírito do Senhor veio sobre Jefté"
+      },
+      {
+        "text": "Jefté fez um voto ao Senhor.",
+        "evidenceRef": "Juízes 11:30",
+        "evidenceSpan": "Jefté fez um voto ao SENHOR"
+      },
+      {
+        "text": "O Senhor entregou Amom em suas mãos.",
+        "evidenceRef": "Juízes 11:32",
+        "evidenceSpan": "o Senhor os entregou em suas mãos"
+      },
+      {
+        "text": "A filha saiu ao encontro com adufes.",
+        "evidenceRef": "Juízes 11:34",
+        "evidenceSpan": "sua filha saindo ao seu encontro, com adufes e danças"
+      },
+      {
+        "text": "Ela era única.",
+        "evidenceRef": "Juízes 11:34",
+        "evidenceSpan": "ela era única"
+      },
+      {
+        "text": "As filhas de Israel lamentavam quatro dias.",
+        "evidenceRef": "Juízes 11:40",
+        "evidenceSpan": "por quatro dias, lamentar a filha de Jefté"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "voto",
+        "gloss": "Promessa que Jefté fez antes da batalha."
+      },
+      {
+        "term": "única",
+        "gloss": "A filha que sai ao encontro."
+      },
+      {
+        "term": "holocausto",
+        "gloss": "O que Jefté prometeu oferecer."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Espírito e voto",
+        "evidenceRef": "Juízes 11:29–31"
+      },
+      {
+        "label": "Vitória sobre Amom",
+        "evidenceRef": "Juízes 11:32–33"
+      },
+      {
+        "label": "Encontro e lamento",
+        "evidenceRef": "Juízes 11:34–40"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Se entregares Amom, o que sair será do Senhor.",
+        "marker": "Se",
+        "evidenceRef": "Juízes 11:30"
+      },
+      {
+        "kind": "causa",
+        "text": "Calamidade pois fez voto e não volta atrás.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 11:35"
+      },
+      {
+        "kind": "causa",
+        "text": "Faça o voto pois o Senhor o vingou.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 11:36"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Eclesiastes 5:4",
+        "bridge": "Pague o voto a Deus"
+      },
+      {
+        "ref": "Provérbios 20:25",
+        "bridge": "Laço falar depressa"
+      },
+      {
+        "ref": "Números 30:2",
+        "bridge": "Não profanar a palavra"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O voto não tem custo.",
+        "why": "A filha única sai ao encontro."
+      },
+      {
+        "text": "Jefté luta sem o Espírito.",
+        "why": "O Espírito veio sobre ele."
+      },
+      {
+        "text": "A filha recusa o voto.",
+        "why": "Pede que faça conforme a boca."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 11:34, quem sai ao encontro de Jefté?",
+    "centralInsight": "Jefté vence Amom, mas o voto precipitado traz dor à sua única filha."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 11:34, a filha de Jefté era única.",
+      "verseRef": "Juízes 11:34",
+      "correctOptionId": "true",
+      "evidenceSpan": "ela era única",
+      "feedbackCorrect": "Única.",
+      "feedbackWrong": {
+        "false": "O texto afirma."
+      },
+      "hint": "Veja a descrição.",
+      "learningObjective": "Observar a filha.",
+      "evidence": [
+        "Juízes 11:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 11:30, toque o que Jefté fez.",
+      "verseRef": "Juízes 11:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "voto"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "Amom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jefté fez um voto ao SENHOR",
+      "feedbackCorrect": "Voto.",
+      "feedbackWrong": {
+        "b": "SENHOR recebe o voto.",
+        "c": "Amom é o alvo."
+      },
+      "hint": "Veja o ato.",
+      "learningObjective": "Identificar o voto.",
+      "evidence": [
+        "Juízes 11:30"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 11:32, quem entregou Amom?",
+      "verseRef": "Juízes 11:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Só Jefté"
+        },
+        {
+          "id": "c",
+          "text": "A filha"
+        },
+        {
+          "id": "d",
+          "text": "Mispá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor os entregou em suas mãos",
+      "feedbackCorrect": "O Senhor.",
+      "feedbackWrong": {
+        "b": "Não só Jefté.",
+        "c": "Não a filha.",
+        "d": "Mispá é o lugar."
+      },
+      "hint": "Leia o sujeito.",
+      "learningObjective": "Reconhecer a entrega.",
+      "evidence": [
+        "Juízes 11:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 11:34 na ordem do texto.",
+      "verseRef": "Juízes 11:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jefté viu sua filha saindo ao seu encontro"
+        },
+        {
+          "id": "b",
+          "text": "com adufes e danças"
+        },
+        {
+          "id": "c",
+          "text": "ela era única"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ela era única",
+      "feedbackCorrect": "Encontro, festa e unicidade.",
+      "feedbackWrong": {
+        "default": "Comece pela filha."
+      },
+      "hint": "Como é descrita?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 11:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 11:31, complete: eu o oferecerei em ___.",
+      "verseRef": "Juízes 11:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "holocausto"
+        },
+        {
+          "id": "b",
+          "text": "tributo"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu o oferecerei em holocausto",
+      "feedbackCorrect": "Holocausto.",
+      "feedbackWrong": {
+        "b": "Não é tributo.",
+        "c": "Não é festa."
+      },
+      "hint": "Veja a oferta.",
+      "learningObjective": "Lembrar holocausto.",
+      "evidence": [
+        "Juízes 11:31"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 11:29 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 11:29",
+      "passageA": {
+        "ref": "Juízes 11:29"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Antes do voto, o Espírito do Senhor vem sobre Jefté."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito sobre Jefté"
+        },
+        {
+          "id": "b",
+          "text": "Sem avanço"
+        },
+        {
+          "id": "c",
+          "text": "Filha no campo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor veio sobre Jefté",
+      "feedbackCorrect": "Espírito precede.",
+      "feedbackWrong": {
+        "b": "Há avanço.",
+        "c": "Filha vem depois."
+      },
+      "hint": "O que veio sobre ele?",
+      "learningObjective": "Ligar Espírito e missão.",
+      "evidence": [
+        "Juízes 11:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 11:35, Jefté diz que pode voltar atrás do voto facilmente.",
+      "verseRef": "Juízes 11:35",
+      "correctOptionId": "false",
+      "evidenceSpan": "fiz um voto ao Senhor e não posso voltar atrás",
+      "feedbackCorrect": "Não pode voltar.",
+      "feedbackWrong": {
+        "true": "Não posso voltar atrás."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Ver o peso do voto.",
+      "evidence": [
+        "Juízes 11:35"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 11:35, toque o marcador de causa.",
+      "verseRef": "Juízes 11:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "filha"
+        },
+        {
+          "id": "c",
+          "text": "vestes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois fiz um voto ao Senhor",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "Filha é quem chega.",
+        "c": "Vestes foram rasgadas."
+      },
+      "hint": "Procure após calamidade.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Juízes 11:35"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 11:36 faz?",
+      "verseRef": "Juízes 11:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faça o voto pois o Senhor o vingou"
+        },
+        {
+          "id": "b",
+          "text": "Ignore o voto pois venceu"
+        },
+        {
+          "id": "c",
+          "text": "Fuja pois Amom volta"
+        },
+        {
+          "id": "d",
+          "text": "Cale pois não há filha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o Senhor o vingou dos seus inimigos",
+      "feedbackCorrect": "Causa do cumprimento.",
+      "feedbackWrong": {
+        "b": "Há voto.",
+        "c": "Há vitória.",
+        "d": "Há filha."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 11:36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do relato.",
+      "verseRef": "Juízes 11:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito e voto"
+        },
+        {
+          "id": "b",
+          "text": "Vitória sobre Amom"
+        },
+        {
+          "id": "c",
+          "text": "Encontro e lamento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Espírito do Senhor veio sobre Jefté",
+      "feedbackCorrect": "Espírito, vitória e lamento.",
+      "feedbackWrong": {
+        "default": "Comece pelo Espírito."
+      },
+      "hint": "O que fecha o lamento?",
+      "learningObjective": "Ordenar o relato",
+      "evidence": [
+        "Juízes 11:29",
+        "Juízes 11:40"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 11:34, complete: ela era ___.",
+      "verseRef": "Juízes 11:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "única"
+        },
+        {
+          "id": "b",
+          "text": "casada"
+        },
+        {
+          "id": "c",
+          "text": "ausente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela era única",
+      "feedbackCorrect": "Única.",
+      "feedbackWrong": {
+        "b": "Não é casada.",
+        "c": "Não é ausente."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar única.",
+      "evidence": [
+        "Juízes 11:34"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 11:30 a Eclesiastes 5:4?",
+      "verseRef": "Juízes 11:30",
+      "passageA": {
+        "ref": "Juízes 11:30"
+      },
+      "passageB": {
+        "ref": "Eclesiastes 5:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pague o voto a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ignore o voto"
+        },
+        {
+          "id": "c",
+          "text": "Vote sem pensar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jefté fez um voto ao SENHOR",
+      "feedbackCorrect": "Voto perante Deus.",
+      "feedbackWrong": {
+        "b": "Não ignorar.",
+        "c": "Há peso."
+      },
+      "hint": "Compare o voto.",
+      "learningObjective": "Ligar a Eclesiastes.",
+      "evidence": [
+        "Juízes 11:30",
+        "Eclesiastes 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 11:31, o voto precipitado não alcança a casa de Jefté.",
+      "verseRef": "Juízes 11:31",
+      "correctOptionId": "false",
+      "evidenceSpan": "Aquele que sair da porta da minha casa",
+      "feedbackCorrect": "Alcança quem sair da casa.",
+      "feedbackWrong": {
+        "true": "A porta da casa."
+      },
+      "hint": "Leia o alcance.",
+      "learningObjective": "Avaliar o voto.",
+      "evidence": [
+        "Juízes 11:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 11:34, toque o que a filha traz.",
+      "verseRef": "Juízes 11:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "adufes"
+        },
+        {
+          "id": "b",
+          "text": "filha"
+        },
+        {
+          "id": "c",
+          "text": "Mispá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com adufes e danças",
+      "feedbackCorrect": "Adufes.",
+      "feedbackWrong": {
+        "b": "Filha é quem sai.",
+        "c": "Mispá é o lugar."
+      },
+      "hint": "Veja o acompanhamento.",
+      "learningObjective": "Tocar adufes.",
+      "evidence": [
+        "Juízes 11:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une vitória e voto?",
+      "verseRef": "Juízes 11:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "A vitória veio; o voto precipitado traz calamidade"
+        },
+        {
+          "id": "b",
+          "text": "O voto cancela a vitória do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Sem filha não há custo"
+        },
+        {
+          "id": "d",
+          "text": "O Espírito apaga o voto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você se tornou a causa da minha calamidade",
+      "feedbackCorrect": "Vitória e dor.",
+      "feedbackWrong": {
+        "b": "Há vitória.",
+        "c": "Há custo.",
+        "d": "Há Espírito."
+      },
+      "hint": "Una entrega e calamidade.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 11:35"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da dor.",
+      "verseRef": "Juízes 11:40",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voto antes da batalha"
+        },
+        {
+          "id": "b",
+          "text": "Filha sai ao encontro"
+        },
+        {
+          "id": "c",
+          "text": "Lamento anual em Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "lamentar a filha de Jefté, o gileadita",
+      "feedbackCorrect": "Voto, encontro e lamento.",
+      "feedbackWrong": {
+        "default": "Comece pelo voto."
+      },
+      "hint": "O que Israel lamenta?",
+      "learningObjective": "Encadear a dor",
+      "evidence": [
+        "Juízes 11:30",
+        "Juízes 11:40"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 11:40, complete: por ___ dias, lamentar.",
+      "verseRef": "Juízes 11:40",
+      "options": [
+        {
+          "id": "a",
+          "text": "quatro"
+        },
+        {
+          "id": "b",
+          "text": "sete"
+        },
+        {
+          "id": "c",
+          "text": "dois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por quatro dias, lamentar a filha de Jefté",
+      "feedbackCorrect": "Quatro.",
+      "feedbackWrong": {
+        "b": "Não são sete.",
+        "c": "Dois meses foram o pedido."
+      },
+      "hint": "Veja a duração.",
+      "learningObjective": "Lembrar quatro.",
+      "evidence": [
+        "Juízes 11:40"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 11:35 a Provérbios 20:25?",
+      "verseRef": "Juízes 11:35",
+      "passageA": {
+        "ref": "Juízes 11:35"
+      },
+      "passageB": {
+        "ref": "Provérbios 20:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Laço falar depressa"
+        },
+        {
+          "id": "b",
+          "text": "Voto sem peso"
+        },
+        {
+          "id": "c",
+          "text": "Vitória sem custo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fiz um voto ao Senhor e não posso voltar atrás",
+      "feedbackCorrect": "Voto precipitado.",
+      "feedbackWrong": {
+        "b": "Há peso.",
+        "c": "Há custo."
+      },
+      "hint": "Compare o laço.",
+      "learningObjective": "Ligar a Provérbios.",
+      "evidence": [
+        "Juízes 11:35",
+        "Provérbios 20:25"
+      ]
+    }
+  ]
+}

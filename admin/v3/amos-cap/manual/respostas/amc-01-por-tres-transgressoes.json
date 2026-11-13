@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 1:3–8",
+    "passages": [
+      { "ref": "Amós 1:3–8" },
+      { "ref": "Amós 1:9–10" }
+    ],
+    "context": "Amós abre com oráculos contra as nações vizinhas. Damasco, Gaza e Tiro são julgados por crueldade contra povos indefesos.",
+    "keyword": "transgressões",
+    "keywordGloss": "Pecados acumulados das nações: o Senhor não sustará o castigo.",
+    "focusQuestion": "Onde você vê crueldade contra indefesos que o Senhor não esquece?",
+    "reflectionPrompts": [
+      "Três e quatro",
+      "Trilhos de ferro",
+      "Fogo nos castelos"
+    ],
+    "facts": [
+      {
+        "text": "Por três e quatro transgressões de Damasco, o Senhor não sustará o castigo.",
+        "evidenceRef": "Amós 1:3",
+        "evidenceSpan": "Por três transgressões de Damasco, e por quatro, não sustarei o castigo"
+      },
+      {
+        "text": "Damasco trilhou Gileade com trilhos de ferro.",
+        "evidenceRef": "Amós 1:3",
+        "evidenceSpan": "trilharam Gileade com trilhos de ferro"
+      },
+      {
+        "text": "O Senhor fará arder fogo na casa de Hazael.",
+        "evidenceRef": "Amós 1:4",
+        "evidenceSpan": "farei arder fogo na casa de Hazael"
+      },
+      {
+        "text": "Gaza levou em cativeiro todo o povo para entregar a Edom.",
+        "evidenceRef": "Amós 1:6",
+        "evidenceSpan": "levaram em cativeiro todo o povo, para os entregarem a Edom"
+      },
+      {
+        "text": "Tiro entregou cativos a Edom e não se lembrou da aliança entre irmãos.",
+        "evidenceRef": "Amós 1:9",
+        "evidenceSpan": "entregaram todos os cativos a Edom e não se lembraram da aliança entre irmãos"
+      },
+      {
+        "text": "Fogo consumirá os castelos de Tiro.",
+        "evidenceRef": "Amós 1:10",
+        "evidenceSpan": "farei subir fogo sobre os muros de Tiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "transgressões",
+        "gloss": "Pecados acumulados que o Senhor conta e não ignora."
+      },
+      {
+        "term": "castigo",
+        "gloss": "O juízo que o Senhor não sustará."
+      },
+      {
+        "term": "aliança",
+        "gloss": "O pacto entre irmãos que Tiro esqueceu."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Juízo sobre Damasco por Gileade",
+        "evidenceRef": "Amós 1:3–5"
+      },
+      {
+        "label": "Juízo sobre Gaza e os filisteus",
+        "evidenceRef": "Amós 1:6–8"
+      },
+      {
+        "label": "Juízo sobre Tiro por quebrar a aliança",
+        "evidenceRef": "Amós 1:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O castigo de Damasco vem porque trilharam Gileade com trilhos de ferro.",
+        "marker": "porque",
+        "evidenceRef": "Amós 1:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso o Senhor fará arder fogo na casa de Hazael.",
+        "marker": "Por isso",
+        "evidenceRef": "Amós 1:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Tiro é julgada pois entregou cativos e esqueceu a aliança entre irmãos.",
+        "marker": "pois",
+        "evidenceRef": "Amós 1:9"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Obadias 1:10–11", "bridge": "Violência contra o irmão" },
+      { "ref": "Isaías 17:1–3", "bridge": "Juízo sobre Damasco" },
+      { "ref": "Ezequiel 26:3–4", "bridge": "Fogo contra Tiro" }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor só julga Israel; as nações ficam de fora.",
+        "why": "Amós 1 abre julgando Damasco, Gaza e Tiro."
+      },
+      {
+        "text": "Crueldade contra indefesos não importa a Deus.",
+        "why": "O castigo vem justamente por trilhar Gileade e vender cativos."
+      },
+      {
+        "text": "Quebrar aliança entre irmãos é detalhe sem peso.",
+        "why": "Amós 1:9 cita exatamente o esquecimento da aliança."
+      }
+    ],
+    "centralInsight": "O Senhor não esquece a crueldade das nações contra povos indefesos.",
+    "anchorQuestion": "Segundo Amós 1:3, por que o Senhor não sustará o castigo de Damasco?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 1:3, Damasco trilhou Gileade com trilhos de ferro.",
+      "verseRef": "Amós 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "trilharam Gileade com trilhos de ferro",
+      "feedbackCorrect": "A crueldade contra Gileade é a razão do castigo.",
+      "feedbackWrong": { "false": "Releia o fim de 1:3: trilhos de ferro sobre Gileade." },
+      "hint": "Veja a razão depois de \"porque\".",
+      "learningObjective": "Observar a crueldade de Damasco contra Gileade.",
+      "evidence": ["Amós 1:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 1:3, toque a cidade julgada no oráculo.",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "transgressões de Damasco",
+      "feedbackCorrect": "Damasco é a primeira nação nomeada no oráculo.",
+      "hint": "Procure o nome depois de \"transgressões de\".",
+      "learningObjective": "Identificar Damasco no oráculo.",
+      "evidence": ["Amós 1:3"],
+      "options": [
+        { "id": "a", "text": "Damasco" },
+        { "id": "b", "text": "Gileade" },
+        { "id": "c", "text": "ferro" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Gileade é a vítima, não a cidade julgada no início.",
+        "c": "Ferro descreve os trilhos, não a cidade."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 1:6, o que Gaza fez com o povo?",
+      "verseRef": "Amós 1:6",
+      "evidenceSpan": "levaram em cativeiro todo o povo, para os entregarem a Edom",
+      "feedbackCorrect": "Levaram todo o povo em cativeiro para entregar a Edom.",
+      "hint": "Veja a razão do castigo depois de \"porque\".",
+      "learningObjective": "Observar o crime de Gaza.",
+      "evidence": ["Amós 1:6"],
+      "options": [
+        { "id": "a", "text": "Levaram o povo em cativeiro para Edom" },
+        { "id": "b", "text": "Edificaram o templo em Jerusalém" },
+        { "id": "c", "text": "Plantaram figueiras em Gileade" },
+        { "id": "d", "text": "Assinaram paz com Damasco" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de cativeiro, não de edificar templo.",
+        "c": "Não há plantio de figueiras neste oráculo.",
+        "d": "O trecho não fala de paz com Damasco."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 1:3 na ordem do texto.",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "Assim diz o Senhor: Por três transgressões de Damasco",
+      "feedbackCorrect": "O Senhor fala; conta as transgressões; explica a crueldade.",
+      "hint": "Comece por \"Assim diz o Senhor\".",
+      "learningObjective": "Reconhecer a sequência do oráculo de Damasco.",
+      "evidence": ["Amós 1:3"],
+      "options": [
+        { "id": "a", "text": "Assim diz o Senhor: Por três transgressões de Damasco" },
+        { "id": "b", "text": "e por quatro, não sustarei o castigo" },
+        { "id": "c", "text": "porque trilharam Gileade com trilhos de ferro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela palavra do Senhor; a razão fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 1:3, o que o Senhor não sustará?",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "não sustarei o castigo",
+      "feedbackCorrect": "Ele não sustará o castigo diante das transgressões.",
+      "hint": "É a palavra depois de \"sustarei o\".",
+      "learningObjective": "Lembrar que o castigo não será sustado.",
+      "evidence": ["Amós 1:3"],
+      "options": [
+        { "id": "a", "text": "castigo" },
+        { "id": "b", "text": "banquete" },
+        { "id": "c", "text": "hino" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Banquete\" não aparece em 1:3.",
+        "c": "\"Hino\" não aparece em 1:3."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 1:3 comunica que se liga a este contexto?",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "trilharam Gileade com trilhos de ferro",
+      "feedbackCorrect": "A crueldade contra indefesos chama o juízo que não se susta.",
+      "hint": "Ligue a violência à recusa de sustar o castigo.",
+      "learningObjective": "Ligar a crueldade ao juízo anunciado.",
+      "evidence": ["Amós 1:3"],
+      "passageA": { "ref": "Amós 1:3" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor julga nações por crueldade contra povos indefesos."
+      },
+      "options": [
+        { "id": "a", "text": "Crueldade chama juízo" },
+        { "id": "b", "text": "Violência sem consequência" },
+        { "id": "c", "text": "Castigo sempre sustado" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto anuncia castigo, não impunidade.",
+        "c": "O Senhor diz que não sustará o castigo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 1:3, o castigo de Damasco vem porque trilharam Gileade com trilhos de ferro.",
+      "verseRef": "Amós 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque trilharam Gileade com trilhos de ferro",
+      "feedbackCorrect": "O \"porque\" liga o castigo à crueldade contra Gileade.",
+      "feedbackWrong": { "false": "Releia a razão depois de \"porque\" em 1:3." },
+      "hint": "Procure a palavra que introduz a razão.",
+      "learningObjective": "Compreender a causa do juízo sobre Damasco.",
+      "evidence": ["Amós 1:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 1:4, toque as palavras que marcam o resultado do juízo.",
+      "verseRef": "Amós 1:4",
+      "evidenceSpan": "Por isso, farei arder fogo",
+      "feedbackCorrect": "\"Por isso\" introduz o fogo como resultado do crime.",
+      "hint": "São as duas primeiras palavras do versículo.",
+      "learningObjective": "Reconhecer o marcador de resultado em 1:4.",
+      "evidence": ["Amós 1:4"],
+      "options": [
+        { "id": "a", "text": "Por isso" },
+        { "id": "b", "text": "Hazael" },
+        { "id": "c", "text": "castelos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Hazael\" é o alvo do fogo, não o marcador.",
+        "c": "\"Castelos\" são o que o fogo consome, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 1:3–10 relaciona os crimes das nações ao castigo?",
+      "verseRef": "Amós 1:3–4",
+      "evidenceSpan": "Por isso, farei arder fogo",
+      "feedbackCorrect": "Cada crime (crueldade, cativeiro, aliança quebrada) traz fogo e castigo.",
+      "hint": "Ligue o \"porque/pois\" ao \"Por isso\".",
+      "learningObjective": "Relacionar crime e castigo nos oráculos.",
+      "evidence": ["Amós 1:3–4"],
+      "options": [
+        { "id": "a", "text": "A crueldade gera o fogo do juízo anunciado" },
+        { "id": "b", "text": "Os crimes ficam sem qualquer resposta" },
+        { "id": "c", "text": "Só Israel é julgado nestes versículos" },
+        { "id": "d", "text": "O fogo é só metáfora sem juízo real" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O Senhor diz que não sustará o castigo.",
+        "c": "Damasco, Gaza e Tiro são julgados aqui.",
+        "d": "O texto anuncia fogo que consome castelos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avançam os oráculos em Amós 1:3–10?",
+      "verseRef": "Amós 1:3–10",
+      "evidenceSpan": "Por três transgressões de Tiro",
+      "feedbackCorrect": "Damasco, depois Gaza, depois Tiro — cada um com seu crime.",
+      "hint": "Siga a ordem das cidades nomeadas.",
+      "learningObjective": "Seguir a sequência dos oráculos das nações.",
+      "evidence": ["Amós 1:3–10"],
+      "options": [
+        { "id": "a", "text": "Juízo sobre Damasco por Gileade" },
+        { "id": "b", "text": "Juízo sobre Gaza e os filisteus" },
+        { "id": "c", "text": "Juízo sobre Tiro por quebrar a aliança" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Damasco primeiro; Tiro por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 1:9, do que Tiro não se lembrou?",
+      "verseRef": "Amós 1:9",
+      "evidenceSpan": "não se lembraram da aliança entre irmãos",
+      "feedbackCorrect": "Não se lembraram da aliança entre irmãos.",
+      "hint": "É a palavra depois de \"lembraram da\".",
+      "learningObjective": "Lembrar o termo da aliança quebrada.",
+      "evidence": ["Amós 1:9"],
+      "options": [
+        { "id": "a", "text": "aliança" },
+        { "id": "b", "text": "colheita" },
+        { "id": "c", "text": "muralha" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Colheita\" não aparece em 1:9.",
+        "c": "\"Muralha\" não é o que esqueceram."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 1:9 a Obadias 1:10–11?",
+      "verseRef": "Amós 1:9",
+      "evidenceSpan": "não se lembraram da aliança entre irmãos",
+      "feedbackCorrect": "Nos dois textos, violência contra o irmão/aliança chama juízo.",
+      "hint": "Compare a traição contra o irmão.",
+      "learningObjective": "Relacionar a aliança quebrada à violência em Obadias.",
+      "evidence": ["Amós 1:9", "Obadias 1:10–11"],
+      "passageA": { "ref": "Amós 1:9" },
+      "passageB": { "ref": "Obadias 1:10–11" },
+      "options": [
+        { "id": "a", "text": "Violência contra o irmão" },
+        { "id": "b", "text": "Paz eterna sem juízo" },
+        { "id": "c", "text": "Aliança sempre honrada" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam juízo, não paz sem conta.",
+        "c": "O problema é precisamente a aliança esquecida."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 1:3–10, o Senhor só julga Israel; as nações ficam de fora.",
+      "verseRef": "Amós 1:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Por três transgressões de Damasco",
+      "feedbackCorrect": "O trecho julga Damasco, Gaza e Tiro por crueldade.",
+      "feedbackWrong": { "true": "1:3–10 nomeia nações vizinhas, não só Israel." },
+      "hint": "Veja quais cidades abrem o livro.",
+      "learningObjective": "Interpretar o alcance do juízo sobre as nações.",
+      "evidence": ["Amós 1:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 1:3, toque o trecho que mostra a crueldade contra Gileade.",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "trilharam Gileade com trilhos de ferro",
+      "feedbackCorrect": "Trilhos de ferro sobre Gileade nomeiam a crueldade.",
+      "hint": "Procure a imagem depois de \"porque\".",
+      "learningObjective": "Sustentar a crueldade com o texto.",
+      "evidence": ["Amós 1:3"],
+      "options": [
+        { "id": "a", "text": "trilhos de ferro" },
+        { "id": "b", "text": "Assim diz" },
+        { "id": "c", "text": "não sustarei" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Assim diz\" abre a fórmula, não descreve a crueldade.",
+        "c": "\"Não sustarei\" anuncia o juízo, não o crime."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 1:3–10 sustenta sobre a crueldade das nações?",
+      "verseRef": "Amós 1:3–6",
+      "evidenceSpan": "não sustarei o castigo",
+      "feedbackCorrect": "O Senhor não esquece a crueldade contra povos indefesos.",
+      "hint": "Una Gileade, cativos e aliança esquecida.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Amós 1:3–6"],
+      "options": [
+        { "id": "a", "text": "O Senhor não esquece a crueldade contra indefesos" },
+        { "id": "b", "text": "Crueldade contra indefesos não importa a Deus" },
+        { "id": "c", "text": "Só Israel é julgado nestes oráculos" },
+        { "id": "d", "text": "Quebrar aliança entre irmãos não tem peso" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O castigo vem exatamente por essa crueldade.",
+        "c": "Damasco, Gaza e Tiro são julgados.",
+        "d": "1:9 cita a aliança esquecida como razão."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra juízo sobre nações opressoras na Escritura?",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "não sustarei o castigo",
+      "feedbackCorrect": "Amós julga Damasco; Isaías ecoa; Ezequiel fala contra Tiro.",
+      "hint": "Parta de Amós e avance na Escritura.",
+      "learningObjective": "Ver o juízo das nações no fio bíblico.",
+      "evidence": ["Amós 1:3", "Isaías 17:1–3", "Ezequiel 26:3–4"],
+      "options": [
+        { "id": "a", "text": "Amós anuncia castigo sobre Damasco" },
+        { "id": "b", "text": "Isaías ecoa o juízo sobre Damasco" },
+        { "id": "c", "text": "Ezequiel anuncia juízo contra Tiro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 1, Isaías 17 e Ezequiel 26." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 1:3, que palavra nomeia os pecados acumulados das nações?",
+      "verseRef": "Amós 1:3",
+      "evidenceSpan": "Por três transgressões de Damasco",
+      "feedbackCorrect": "Transgressões é o termo que carrega a conta do Senhor.",
+      "hint": "É a palavra depois de \"três\".",
+      "learningObjective": "Lembrar o termo central do oráculo.",
+      "evidence": ["Amós 1:3"],
+      "options": [
+        { "id": "a", "text": "transgressões" },
+        { "id": "b", "text": "colheitas" },
+        { "id": "c", "text": "festas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Colheitas\" não aparece em 1:3.",
+        "c": "\"Festas\" não é o que o Senhor conta aqui."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 1:10 a Ezequiel 26:3–4?",
+      "verseRef": "Amós 1:10",
+      "evidenceSpan": "farei subir fogo sobre os muros de Tiro",
+      "feedbackCorrect": "Nos dois textos, Tiro enfrenta juízo com fogo/destruição.",
+      "hint": "Compare o destino de Tiro.",
+      "learningObjective": "Ligar o fogo sobre Tiro em Amós e Ezequiel.",
+      "evidence": ["Amós 1:10", "Ezequiel 26:3–4"],
+      "passageA": { "ref": "Amós 1:10" },
+      "passageB": { "ref": "Ezequiel 26:3–4" },
+      "options": [
+        { "id": "a", "text": "Fogo contra Tiro" },
+        { "id": "b", "text": "Tiro sem nenhum juízo" },
+        { "id": "c", "text": "Aliança eternamente firme" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam juízo sobre Tiro.",
+        "c": "O foco é juízo, não aliança firme."
+      }
+    }
+  ]
+}

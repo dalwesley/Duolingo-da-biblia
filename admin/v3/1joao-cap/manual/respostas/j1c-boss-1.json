@@ -1,0 +1,930 @@
+{
+  "study": {
+    "passageRef": "1 João 1:1–5",
+    "passages": [
+      {
+        "ref": "1 João 1:1–5"
+      },
+      {
+        "ref": "1 João 2:1–6"
+      },
+      {
+        "ref": "1 João 3:1–6"
+      },
+      {
+        "ref": "1 João 4:1–6"
+      },
+      {
+        "ref": "1 João 5:1–5"
+      }
+    ],
+    "context": "Esta Travessia revisa 1 João: testemunho e luz, Advogado e obediência, filiação, prova dos espíritos e vitória da fé.",
+    "keyword": "comunhão",
+    "keywordGloss": "Fio da carta: comunhão na luz, obediência, filiação, discernimento e fé vencedora.",
+    "focusQuestion": "Em qual destes fios — luz, Advogado, filiação, discernimento ou fé — você mais precisa crescer?",
+    "reflectionPrompts": [
+      "Andar na luz",
+      "Andar como ele",
+      "Vitória da fé"
+    ],
+    "facts": [
+      {
+        "text": "Deus é luz, e nele não há treva nenhuma.",
+        "evidenceRef": "1 João 1:5",
+        "evidenceSpan": "Deus é luz, e nele não há treva nenhuma"
+      },
+      {
+        "text": "Temos Advogado junto ao Pai, Jesus Cristo, o Justo.",
+        "evidenceRef": "1 João 2:1",
+        "evidenceSpan": "temos um Advogado junto ao Pai, Jesus Cristo, o Justo"
+      },
+      {
+        "text": "Agora somos filhos de Deus.",
+        "evidenceRef": "1 João 3:2",
+        "evidenceSpan": "agora somos filhos de Deus"
+      },
+      {
+        "text": "Todo espírito que confessa Jesus Cristo vindo em carne é de Deus.",
+        "evidenceRef": "1 João 4:2",
+        "evidenceSpan": "Jesus Cristo veio em carne é de Deus"
+      },
+      {
+        "text": "A vitória que vence o mundo é a nossa fé.",
+        "evidenceRef": "1 João 5:4",
+        "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé"
+      },
+      {
+        "text": "Quem diz permanecer nele deve andar como ele andou.",
+        "evidenceRef": "1 João 2:6",
+        "evidenceSpan": "também deve andar assim como ele andou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "luz",
+        "gloss": "Deus é luz; andar na luz traz comunhão e purificação."
+      },
+      {
+        "term": "Advogado",
+        "gloss": "Jesus Cristo, o Justo, junto ao Pai."
+      },
+      {
+        "term": "fé",
+        "gloss": "Vitória que vence o mundo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Testemunho e Deus é luz",
+        "evidenceRef": "1 João 1:1–5"
+      },
+      {
+        "label": "Advogado e andar como ele",
+        "evidenceRef": "1 João 2:1–6"
+      },
+      {
+        "label": "Filhos e permanência",
+        "evidenceRef": "1 João 3:1–6"
+      },
+      {
+        "label": "Provar espíritos e vitória da fé",
+        "evidenceRef": "1 João 4:1–5"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Comunhão falsa anda nas trevas; na luz há purificação.",
+        "marker": "porém",
+        "evidenceRef": "1 João 1:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Já venceram porque maior é quem está neles.",
+        "marker": "pois",
+        "evidenceRef": "1 João 4:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "A fé é a vitória que vence o mundo.",
+        "marker": null,
+        "evidenceRef": "1 João 5:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 8:12",
+        "bridge": "Jesus luz do mundo"
+      },
+      {
+        "ref": "João 14:15",
+        "bridge": "Amar é guardar mandamentos"
+      },
+      {
+        "ref": "João 16:33",
+        "bridge": "Jesus venceu o mundo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Basta dizer comunhão ou conhecimento sem andar na luz ou guardar mandamentos.",
+        "why": "João denuncia a mentira das palavras sem prática."
+      },
+      {
+        "text": "Negar que Jesus veio em carne ainda pode ser de Deus.",
+        "why": "Quem não confessa isso não é de Deus."
+      },
+      {
+        "text": "A vitória sobre o mundo dispensa a fé no Filho.",
+        "why": "A vitória é a fé; vence quem crê que Jesus é o Filho."
+      }
+    ],
+    "centralInsight": "Em Cristo há comunhão, obediência e vitória pela fé",
+    "anchorQuestion": "Qual fio une luz, Advogado, filiação, discernimento e fé em 1 João?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 João 1:5, Deus é luz, mas nele também há treva.",
+      "verseRef": "1 João 1:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "nele não há treva nenhuma",
+      "feedbackCorrect": "Nele não há treva nenhuma.",
+      "feedbackWrong": {
+        "true": "A exclusão é total."
+      },
+      "hint": "Leia o fim da mensagem.",
+      "learningObjective": "Observar a pureza da luz.",
+      "evidence": [
+        "1 João 1:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 João 2:1, toque quem é o Advogado.",
+      "verseRef": "1 João 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus Cristo"
+        },
+        {
+          "id": "b",
+          "text": "filhinhos"
+        },
+        {
+          "id": "c",
+          "text": "mundo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus Cristo, o Justo",
+      "feedbackCorrect": "O Advogado é Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "Filhinhos é o vocativo.",
+        "c": "Mundo aparece no v.2."
+      },
+      "hint": "Veja o nome do Advogado.",
+      "learningObjective": "Identificar o Advogado.",
+      "evidence": [
+        "1 João 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 João 5:4, o que é a vitória que vence o mundo?",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A nossa fé"
+        },
+        {
+          "id": "b",
+          "text": "Andar nas trevas"
+        },
+        {
+          "id": "c",
+          "text": "Negar a carne de Jesus"
+        },
+        {
+          "id": "d",
+          "text": "Mandamentos pesados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "A fé é a vitória.",
+      "feedbackWrong": {
+        "b": "Trevas quebram a comunhão.",
+        "c": "Confessar a carne é de Deus.",
+        "d": "Não são pesados."
+      },
+      "hint": "Leia depois dos dois-pontos.",
+      "learningObjective": "Reconhecer a vitória.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 João 3:2 na ordem do texto.",
+      "verseRef": "1 João 3:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "agora somos filhos de Deus"
+        },
+        {
+          "id": "b",
+          "text": "e ainda não se manifestou"
+        },
+        {
+          "id": "c",
+          "text": "o que haveremos de ser"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser",
+      "feedbackCorrect": "Primeiro a identidade agora; depois o ainda não.",
+      "feedbackWrong": {
+        "default": "Comece com agora somos."
+      },
+      "hint": "O versículo une agora e ainda não.",
+      "learningObjective": "Seguir a ordem do v.2.",
+      "evidence": [
+        "1 João 3:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 João 4:2, complete: Jesus Cristo veio em ___.",
+      "verseRef": "1 João 4:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "carne"
+        },
+        {
+          "id": "b",
+          "text": "treva"
+        },
+        {
+          "id": "c",
+          "text": "erro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus Cristo veio em carne",
+      "feedbackCorrect": "A confissão é veio em carne.",
+      "feedbackWrong": {
+        "b": "Treva é excluída de Deus.",
+        "c": "Erro é o espírito oposto."
+      },
+      "hint": "Veja o fim da confissão.",
+      "learningObjective": "Lembrar a confissão.",
+      "evidence": [
+        "1 João 4:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 João 1:7 comunica que se liga a este contexto?",
+      "verseRef": "1 João 1:7",
+      "passageA": {
+        "ref": "1 João 1:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A Travessia revisa comunhão na luz, Advogado, filiação, discernimento e fé vencedora."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar na luz e purificação"
+        },
+        {
+          "id": "b",
+          "text": "Negar o Advogado"
+        },
+        {
+          "id": "c",
+          "text": "Crer em qualquer espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "andarmos na luz, assim como Ele está na luz",
+      "feedbackCorrect": "No arco da carta, andar na luz abre a comunhão verdadeira.",
+      "feedbackWrong": {
+        "b": "Há Advogado.",
+        "c": "Devem provar os espíritos."
+      },
+      "hint": "Veja a condição Se, porém.",
+      "learningObjective": "Ligar o contexto à luz.",
+      "evidence": [
+        "1 João 1:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 João 5:5, toque o título de Jesus na fé que vence.",
+      "verseRef": "1 João 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filho de Deus"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "vence"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus é o Filho de Deus",
+      "feedbackCorrect": "A fé confessa o Filho de Deus.",
+      "feedbackWrong": {
+        "b": "Anticristo nega a confissão.",
+        "c": "Mundo é o que se vence."
+      },
+      "hint": "Veja o fim da pergunta.",
+      "learningObjective": "Identificar o título.",
+      "evidence": [
+        "1 João 5:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 João 4:4 na ordem do texto.",
+      "verseRef": "1 João 4:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "maior é aquele que está em vocês"
+        },
+        {
+          "id": "b",
+          "text": "do que aquele"
+        },
+        {
+          "id": "c",
+          "text": "que está no mundo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+      "feedbackCorrect": "Primeiro quem está em vocês; depois a comparação com o mundo.",
+      "feedbackWrong": {
+        "default": "Comece com maior é."
+      },
+      "hint": "A comparação fecha o versículo.",
+      "learningObjective": "Seguir a ordem da comparação.",
+      "evidence": [
+        "1 João 4:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 João 2:4, dizer conhecer a Deus sem guardar mandamentos ainda é verdade.",
+      "verseRef": "1 João 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "é mentiroso, e a verdade não está nele",
+      "feedbackCorrect": "Quem diz e não observa é mentiroso.",
+      "feedbackWrong": {
+        "true": "O veredito é mentiroso."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Ver a relação dizer-guardar.",
+      "evidence": [
+        "1 João 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 João 1:7, toque o marcador do contraste com as trevas.",
+      "verseRef": "1 João 1:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "sangue"
+        },
+        {
+          "id": "c",
+          "text": "pecado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se, porém, andarmos na luz",
+      "feedbackCorrect": "Porém vira para a luz.",
+      "feedbackWrong": {
+        "b": "Sangue é o meio da purificação.",
+        "c": "Pecado é o que é purificado."
+      },
+      "hint": "Procure a partícula depois de Se.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "1 João 1:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação 1 João 4:2–3 estabelece?",
+      "verseRef": "1 João 4:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confessar Jesus em carne é de Deus; negar é do anticristo"
+        },
+        {
+          "id": "b",
+          "text": "Negar a carne ainda é de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Confessar e negar são iguais"
+        },
+        {
+          "id": "d",
+          "text": "Não é preciso provar espíritos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo espírito que confessa que Jesus Cristo veio em carne é de Deus",
+      "feedbackCorrect": "O critério divide Deus e anticristo.",
+      "feedbackWrong": {
+        "b": "Não confessar não é de Deus.",
+        "c": "Há contraste.",
+        "d": "Devem provar."
+      },
+      "hint": "Compare os vv.2–3.",
+      "learningObjective": "Compreender o critério.",
+      "evidence": [
+        "1 João 4:2–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da carta.",
+      "verseRef": "1 João 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Testemunho e Deus é luz"
+        },
+        {
+          "id": "b",
+          "text": "Advogado e andar como ele"
+        },
+        {
+          "id": "c",
+          "text": "Provar espíritos e vitória da fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+      "feedbackCorrect": "Da luz ao Advogado, até o discernimento e a fé.",
+      "feedbackWrong": {
+        "default": "Comece pela luz; a fé fecha."
+      },
+      "hint": "Siga o arco da carta.",
+      "learningObjective": "Ordenar o arco.",
+      "evidence": [
+        "1 João 1:5",
+        "1 João 2:1",
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 João 3:2, complete: agora somos ___ de Deus.",
+      "verseRef": "1 João 3:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "filhos"
+        },
+        {
+          "id": "b",
+          "text": "inimigos"
+        },
+        {
+          "id": "c",
+          "text": "trevas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora somos filhos de Deus",
+      "feedbackCorrect": "A identidade presente é filhos.",
+      "feedbackWrong": {
+        "b": "Somos filhos.",
+        "c": "Trevas são rejeitadas."
+      },
+      "hint": "É o substantivo depois de somos.",
+      "learningObjective": "Lembrar a filiação.",
+      "evidence": [
+        "1 João 3:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 João 2:6 a João 14:15?",
+      "verseRef": "1 João 2:6",
+      "passageA": {
+        "ref": "1 João 2:6"
+      },
+      "passageB": {
+        "ref": "João 14:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amor e obediência a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Andar nas trevas"
+        },
+        {
+          "id": "c",
+          "text": "Negar a carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deve andar assim como ele andou",
+      "feedbackCorrect": "Permanecer/amar se prova em andar/obedecer.",
+      "feedbackWrong": {
+        "b": "Trevas são mentira.",
+        "c": "A carne deve ser confessada."
+      },
+      "hint": "Compare o dever prático.",
+      "learningObjective": "Ligar obediência.",
+      "evidence": [
+        "1 João 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 João 5:4, toque o marcador causal da vitória.",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "mundo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque todo aquele que é nascido de Deus vence o mundo",
+      "feedbackCorrect": "Porque abre a causa.",
+      "feedbackWrong": {
+        "b": "Fé é a vitória nomeada.",
+        "c": "Mundo é o que se vence."
+      },
+      "hint": "É a primeira palavra.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene a lógica da filiação à fé.",
+      "verseRef": "1 João 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ser filhos pelo amor do Pai"
+        },
+        {
+          "id": "b",
+          "text": "Provar espíritos pela confissão"
+        },
+        {
+          "id": "c",
+          "text": "Vencer o mundo crendo no Filho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sermos chamados filhos de Deus",
+      "feedbackCorrect": "Da filiação ao discernimento, até a fé vencedora.",
+      "feedbackWrong": {
+        "default": "Comece pelos filhos; a fé fecha."
+      },
+      "hint": "Siga 3:1, 4:2 e 5:4.",
+      "learningObjective": "Ordenar filiação e fé.",
+      "evidence": [
+        "1 João 3:1",
+        "1 João 4:2",
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo 1 João 2:6, quem diz permanecer nele deve andar como ele andou.",
+      "verseRef": "1 João 2:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "também deve andar assim como ele andou",
+      "feedbackCorrect": "A confissão exige o andar de Cristo.",
+      "feedbackWrong": {
+        "false": "O dever é explícito."
+      },
+      "hint": "Leia o dever.",
+      "learningObjective": "Confirmar o permanecer.",
+      "evidence": [
+        "1 João 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas.",
+      "verseRef": "1 João 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "treva nenhuma"
+        },
+        {
+          "id": "b",
+          "text": "mensagem"
+        },
+        {
+          "id": "c",
+          "text": "ouvimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nele não há treva nenhuma",
+      "feedbackCorrect": "Não há treva nenhuma nele.",
+      "feedbackWrong": {
+        "b": "Mensagem introduz o conteúdo.",
+        "c": "Ouvimos descreve a origem da mensagem."
+      },
+      "hint": "Veja o fim da mensagem.",
+      "learningObjective": "Sustentar a pureza.",
+      "evidence": [
+        "1 João 1:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o arco de 1 João sustenta?",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Comunhão na luz, obediência, filiação, discernimento e fé vencedora"
+        },
+        {
+          "id": "b",
+          "text": "Palavras bastam sem andar na luz"
+        },
+        {
+          "id": "c",
+          "text": "Negar a carne ainda é de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Vitória sem fé no Filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "Luz, Advogado, filhos, prova e fé formam o fio.",
+      "feedbackWrong": {
+        "b": "Andar nas trevas é mentir.",
+        "c": "Negar marca o anticristo.",
+        "d": "A fé é a vitória."
+      },
+      "hint": "Una luz, Advogado e fé.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da comunhão à vitória?",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar na luz com o Advogado"
+        },
+        {
+          "id": "b",
+          "text": "Viver como filhos e provar espíritos"
+        },
+        {
+          "id": "c",
+          "text": "A fé que vence o mundo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a nossa fé",
+      "feedbackCorrect": "Da luz ao discernimento, até a fé vencedora.",
+      "feedbackWrong": {
+        "default": "Comece pela luz; a fé fecha."
+      },
+      "hint": "Siga 1:7, 3:1–4:2 e 5:4.",
+      "learningObjective": "Encadear comunhão e vitória.",
+      "evidence": [
+        "1 João 1:7",
+        "1 João 3:1",
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+      "verseRef": "1 João 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "andar"
+        },
+        {
+          "id": "b",
+          "text": "negar"
+        },
+        {
+          "id": "c",
+          "text": "mentir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "também deve andar assim como ele andou",
+      "feedbackCorrect": "O verbo do dever é andar.",
+      "feedbackWrong": {
+        "b": "Negar a carne é erro.",
+        "c": "Mentir descreve a falsa confissão."
+      },
+      "hint": "É o verbo depois de deve.",
+      "learningObjective": "Lembrar o verbo do permanecer.",
+      "evidence": [
+        "1 João 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 João 5:4 a João 16:33?",
+      "verseRef": "1 João 5:4",
+      "passageA": {
+        "ref": "1 João 5:4"
+      },
+      "passageB": {
+        "ref": "João 16:33"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vitória sobre o mundo"
+        },
+        {
+          "id": "b",
+          "text": "Andar nas trevas"
+        },
+        {
+          "id": "c",
+          "text": "Negar o Advogado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vence o mundo",
+      "feedbackCorrect": "Ambos celebram vitória sobre o mundo em Cristo/fé.",
+      "feedbackWrong": {
+        "b": "Trevas são rejeitadas.",
+        "c": "Há Advogado."
+      },
+      "hint": "Compare a vitória.",
+      "learningObjective": "Ligar a vitória.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+      "verseRef": "1 João 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "anticristo"
+        },
+        {
+          "id": "b",
+          "text": "Filhinhos"
+        },
+        {
+          "id": "c",
+          "text": "mundo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este é o espírito do anticristo",
+      "feedbackCorrect": "É o espírito do anticristo.",
+      "feedbackWrong": {
+        "b": "Filhinhos é vocativo no v.4.",
+        "c": "Mundo é onde já está."
+      },
+      "hint": "Veja o que este é.",
+      "learningObjective": "Sustentar a identidade.",
+      "evidence": [
+        "1 João 4:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do testemunho à fé?",
+      "verseRef": "1 João 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Testemunhar a Palavra da vida"
+        },
+        {
+          "id": "b",
+          "text": "Santificar a vida com o Advogado"
+        },
+        {
+          "id": "c",
+          "text": "Crer e vencer o mundo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temos um Advogado junto ao Pai",
+      "feedbackCorrect": "Do testemunho ao Advogado, até a fé vencedora.",
+      "feedbackWrong": {
+        "default": "Comece pelo testemunho; a fé fecha."
+      },
+      "hint": "Siga 1:1, 2:1 e 5:4.",
+      "learningObjective": "Encadear testemunho e fé.",
+      "evidence": [
+        "1 João 1:1",
+        "1 João 2:1",
+        "1 João 5:4"
+      ]
+    }
+  ]
+}

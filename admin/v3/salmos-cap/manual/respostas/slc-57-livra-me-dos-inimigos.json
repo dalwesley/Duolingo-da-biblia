@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 59:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 59:1–6"
+      },
+      {
+        "ref": "Salmos 59:7–12"
+      }
+    ],
+    "context": "Livra-me dos meus inimigos; à noite uivam como cães. Eu cantarei a tua força de manhã.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Livra-me dos inimigos",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Livra-me, ó Deus, dos meus inimigos; coloca-me acima do alcance dos que se levantam contra mim.",
+        "evidenceRef": "Salmos 59:1",
+        "evidenceSpan": "Livra-me"
+      },
+      {
+        "text": "Livra-me dos que praticam a iniquidade e salva-me.",
+        "evidenceRef": "Salmos 59:2",
+        "evidenceSpan": "Livra-me dos que praticam a iniquidade e salva-me"
+      },
+      {
+        "text": "Pois eis que armam ciladas contra a minha.",
+        "evidenceRef": "Salmos 59:3",
+        "evidenceSpan": "Pois eis que armam ciladas contra a minha"
+      },
+      {
+        "text": "Eles correm e se preparam.",
+        "evidenceRef": "Salmos 59:4",
+        "evidenceSpan": "Eles correm e se preparam"
+      },
+      {
+        "text": "Desperta, Senhor Deus dos Exércitos, Deus de Israel; vem visitar todas as nações; não te compadeças…",
+        "evidenceRef": "Salmos 59:5",
+        "evidenceSpan": "Desperta"
+      },
+      {
+        "text": "Ao anoitecer, uivam como cães, à volta da cidade.",
+        "evidenceRef": "Salmos 59:6",
+        "evidenceSpan": "Ao anoitecer"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Livra-me",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Livra-me ó deus dos meus inimigos",
+        "evidenceRef": "Salmos 59:1"
+      },
+      {
+        "label": "Livra-me dos que praticam a iniquidade",
+        "evidenceRef": "Salmos 59:2"
+      },
+      {
+        "label": "Pois eis que armam ciladas contra",
+        "evidenceRef": "Salmos 59:3"
+      },
+      {
+        "label": "Eles correm e se preparam sem",
+        "evidenceRef": "Salmos 59:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 59:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 59:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 59:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      },
+      {
+        "ref": "Salmos 139:14",
+        "bridge": "Feitos de modo admirável"
+      },
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Deus é alto refúgio no dia da angústia; de manhã o louvor sobe."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Deus é alto refúgio no dia da angústia; de manhã o louvor sobe.",
+    "anchorQuestion": "O que Salmos 59:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 59:1, livra-me.",
+      "verseRef": "Salmos 59:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 59:1 afirma.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 59:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 59:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Livra-me"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "meus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "O versículo destaca «Livra-me».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 59:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 59:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois eis que armam ciladas contra a minha"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois eis que armam ciladas contra a minha",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 59:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 59:1 na ordem do texto.",
+      "verseRef": "Salmos 59:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Livra-me"
+        },
+        {
+          "id": "b",
+          "text": "ó"
+        },
+        {
+          "id": "c",
+          "text": "meus inimigos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 59:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 59:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eles"
+        },
+        {
+          "id": "b",
+          "text": "Livra-me"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles",
+      "feedbackCorrect": "A palavra do versículo é «Eles».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 59:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 59:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 59:1",
+      "passageA": {
+        "ref": "Salmos 59:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Livra-me dos meus inimigos; à noite uivam como cães. Eu cantarei a tua força de manhã."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 59:1, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 59:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 59:1 afirma.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 59:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 59:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "Livra-me"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 59:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 59:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles correm e se preparam",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 59:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 59:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Livra-me ó deus dos meus inimigos"
+        },
+        {
+          "id": "b",
+          "text": "Livra-me dos que praticam a iniquidade"
+        },
+        {
+          "id": "c",
+          "text": "Pois eis que armam ciladas contra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 59:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 59:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "armam"
+        },
+        {
+          "id": "b",
+          "text": "Livra-me"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "armam",
+      "feedbackCorrect": "A palavra do versículo é «armam».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 59:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 59:1 a Salmos 103:1.",
+      "verseRef": "Salmos 59:1",
+      "passageA": {
+        "ref": "Salmos 59:1"
+      },
+      "passageB": {
+        "ref": "Salmos 103:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bendize a alma"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 59:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pelo",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 59:12 afirma.",
+      "evidence": [
+        "Salmos 59:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 59:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 59:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pelo"
+        },
+        {
+          "id": "b",
+          "text": "pecado"
+        },
+        {
+          "id": "c",
+          "text": "suas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pelo",
+      "feedbackCorrect": "O versículo destaca «Pelo».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 59:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 59:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 59:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desperta",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 59:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 59:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 59:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 59:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desperta"
+        },
+        {
+          "id": "b",
+          "text": "Livra-me"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desperta",
+      "feedbackCorrect": "A palavra do versículo é «Desperta».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 59:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 59:1 a Salmos 139:14.",
+      "verseRef": "Salmos 59:1",
+      "passageA": {
+        "ref": "Salmos 59:1"
+      },
+      "passageB": {
+        "ref": "Salmos 139:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Feitos de modo admirável"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livra-me",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 59:1"
+      ]
+    }
+  ]
+}

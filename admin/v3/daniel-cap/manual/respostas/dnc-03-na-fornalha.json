@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Daniel 3:23–28",
+    "passages": [
+      { "ref": "Daniel 3:23–28" },
+      { "ref": "Daniel 3:19–22" }
+    ],
+    "context": "Nabucodonosor exige adoração à imagem. Sadraque, Mesaque e Abede-Nego recusam e são lançados na fornalha aquecida sete vezes mais.",
+    "keyword": "fornalha",
+    "keywordGloss": "O fogo extremo em que os três são lançados — e onde o Altíssimo os livra.",
+    "focusQuestion": "Onde a fidelidade a Deus pode custar caro — e ainda assim você permanece?",
+    "reflectionPrompts": [
+      "Fidelidade no fogo",
+      "Quarto no meio",
+      "Fogo sem poder"
+    ],
+    "facts": [
+      {
+        "text": "Nabucodonosor ordenou acender a fornalha sete vezes mais.",
+        "evidenceRef": "Daniel 3:19",
+        "evidenceSpan": "sete vezes mais do que se costumava"
+      },
+      {
+        "text": "As chamas mataram os homens que lançaram os três na fornalha.",
+        "evidenceRef": "Daniel 3:22",
+        "evidenceSpan": "as chamas do fogo mataram os homens que lançaram"
+      },
+      {
+        "text": "O rei viu quatro homens soltos andando no meio do fogo.",
+        "evidenceRef": "Daniel 3:25",
+        "evidenceSpan": "Vejo quatro homens soltos andando no meio do fogo"
+      },
+      {
+        "text": "O aspecto do quarto é semelhante ao de um filho dos deuses.",
+        "evidenceRef": "Daniel 3:25",
+        "evidenceSpan": "semelhante ao de um filho dos deuses"
+      },
+      {
+        "text": "O fogo não teve poder algum sobre os corpos deles.",
+        "evidenceRef": "Daniel 3:27",
+        "evidenceSpan": "o fogo não teve poder algum sobre os corpos deles"
+      },
+      {
+        "text": "Deus enviou seu anjo e livrou seus servos que confiaram nele.",
+        "evidenceRef": "Daniel 3:28",
+        "evidenceSpan": "enviou seu anjo e livrou seus servos, que confiaram nele"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "fornalha",
+        "gloss": "O lugar do julgamento do rei e do livramento de Deus."
+      },
+      {
+        "term": "confiaram",
+        "gloss": "A postura dos três que preferiram o Deus deles à ordem do rei."
+      },
+      {
+        "term": "Altíssimo",
+        "gloss": "Título com que o rei reconhece o Deus dos três."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fúria e fornalha sete vezes mais",
+        "evidenceRef": "Daniel 3:19–21"
+      },
+      {
+        "label": "Lançamento e morte dos executores",
+        "evidenceRef": "Daniel 3:22–23"
+      },
+      {
+        "label": "Quarto homem no meio do fogo",
+        "evidenceRef": "Daniel 3:24–25"
+      },
+      {
+        "label": "Saída intacta e bendito o Deus deles",
+        "evidenceRef": "Daniel 3:26–28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Lançaram três atados; o rei vê quatro soltos sem dano.",
+        "marker": null,
+        "evidenceRef": "Daniel 3:24–25"
+      },
+      {
+        "kind": "resultado",
+        "text": "Como a ordem era urgente e a fornalha intensa, as chamas mataram os executores.",
+        "marker": "como",
+        "evidenceRef": "Daniel 3:22"
+      },
+      {
+        "kind": "causa",
+        "text": "Deus livrou porque eles confiaram nele e não quiseram adorar outro deus.",
+        "marker": "pois",
+        "evidenceRef": "Daniel 3:28"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 43:2", "bridge": "Pelo fogo sem queimar" },
+      { "ref": "Salmos 34:7", "bridge": "Anjo cerca os que temem" },
+      { "ref": "Hebreus 11:34", "bridge": "Apagaram a força do fogo" }
+    ],
+    "misreadings": [
+      {
+        "text": "O fogo era fraco; por isso não queimou.",
+        "why": "3:19 e 3:22 mostram fornalha sete vezes mais e chamas que matam os executores."
+      },
+      {
+        "text": "Os três saíram só porque o rei se arrependeu antes.",
+        "why": "O livramento acontece no fogo; o rei reconhece depois (3:26–28)."
+      },
+      {
+        "text": "Eles obedeceram ao rei e ainda assim foram salvos.",
+        "why": "3:28: não quiseram cumprir a palavra do rei, preferindo seu Deus."
+      }
+    ],
+    "centralInsight": "O Deus a quem servem os livra; o fogo não tem poder sobre quem nele confia.",
+    "anchorQuestion": "Segundo Daniel 3:28, o que Deus enviou para livrar seus servos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 3:25, o rei vê quatro homens soltos andando no meio do fogo.",
+      "verseRef": "Daniel 3:25",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vejo quatro homens soltos andando no meio do fogo",
+      "feedbackCorrect": "O rei declara ver quatro homens soltos no fogo.",
+      "feedbackWrong": { "false": "Releia 3:25: o rei vê quatro, não três." },
+      "hint": "Conte quantos o rei diz ver.",
+      "learningObjective": "Observar a presença do quarto no fogo.",
+      "evidence": ["Daniel 3:25"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 3:19, toque quanto mais a fornalha deveria ser acesa.",
+      "verseRef": "Daniel 3:19",
+      "evidenceSpan": "sete vezes mais do que se costumava",
+      "feedbackCorrect": "A fornalha deveria ser acesa sete vezes mais.",
+      "hint": "Procure o número no mandato do rei.",
+      "learningObjective": "Identificar a intensidade da fornalha.",
+      "evidence": ["Daniel 3:19"],
+      "options": [
+        { "id": "a", "text": "sete vezes" },
+        { "id": "b", "text": "fúria" },
+        { "id": "c", "text": "rosto" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Fúria\" descreve o rei, não a medida do fogo.",
+        "c": "\"Rosto\" descreve a expressão, não a medida."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 3:27, o que o fogo não teve sobre os corpos deles?",
+      "verseRef": "Daniel 3:27",
+      "evidenceSpan": "o fogo não teve poder algum sobre os corpos deles",
+      "feedbackCorrect": "O fogo não teve poder algum sobre os corpos deles.",
+      "hint": "Veja o que os oficiais observam.",
+      "learningObjective": "Observar a impotência do fogo.",
+      "evidence": ["Daniel 3:27"],
+      "options": [
+        { "id": "a", "text": "Cheiro agradável de perfume" },
+        { "id": "b", "text": "Poder algum" },
+        { "id": "c", "text": "Força para aquecer a cidade" },
+        { "id": "d", "text": "Ordem do rei para apagar" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto diz que nem cheiro de fogo passou.",
+        "c": "O foco é o corpo deles, não a cidade.",
+        "d": "Não há ordem para apagar; eles saem intactos."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 3:25 na ordem do texto.",
+      "verseRef": "Daniel 3:25",
+      "evidenceSpan": "Vejo quatro homens soltos andando no meio do fogo",
+      "feedbackCorrect": "Quatro soltos, sem dano, e o aspecto do quarto.",
+      "hint": "Comece pelo que o rei vê.",
+      "learningObjective": "Reconhecer a sequência de 3:25.",
+      "evidence": ["Daniel 3:25"],
+      "options": [
+        { "id": "a", "text": "Vejo quatro homens soltos andando no meio do fogo" },
+        { "id": "b", "text": "e não há nenhum dano neles" },
+        { "id": "c", "text": "o aspecto do quarto é semelhante ao de um filho dos deuses" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelos quatro no fogo; o aspecto fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 3:28, o que Deus enviou para livrar seus servos?",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "enviou seu anjo e livrou seus servos",
+      "feedbackCorrect": "Deus enviou seu anjo e livrou seus servos.",
+      "hint": "É quem foi enviado no versículo.",
+      "learningObjective": "Lembrar o enviado do livramento.",
+      "evidence": ["Daniel 3:28"],
+      "options": [
+        { "id": "a", "text": "exército" },
+        { "id": "b", "text": "anjo" },
+        { "id": "c", "text": "vento" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Exército\" não é o enviado em 3:28.",
+        "c": "\"Vento\" não aparece em 3:28."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 3:28 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "livrou seus servos, que confiaram nele",
+      "feedbackCorrect": "O livramento responde à confiança dos três no fogo.",
+      "hint": "Veja a razão do livramento no versículo.",
+      "learningObjective": "Ligar o livramento à confiança no Altíssimo.",
+      "evidence": ["Daniel 3:28"],
+      "passageA": { "ref": "Daniel 3:28" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os três recusam adorar a imagem e são lançados na fornalha."
+      },
+      "options": [
+        { "id": "a", "text": "Confiança e livramento" },
+        { "id": "b", "text": "Adoração à imagem" },
+        { "id": "c", "text": "Fuga antes do fogo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Eles recusaram adorar a imagem.",
+        "c": "Eles foram lançados no fogo, não fugiram."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 3:22, as chamas mataram os homens que lançaram Sadraque, Mesaque e Abede-Nego.",
+      "verseRef": "Daniel 3:22",
+      "correctOptionId": "true",
+      "evidenceSpan": "as chamas do fogo mataram os homens que lançaram",
+      "feedbackCorrect": "A urgência e o calor matam os executores, não os três.",
+      "feedbackWrong": { "false": "Releia 3:22: as chamas matam quem lançou." },
+      "hint": "Veja quem as chamas matam.",
+      "learningObjective": "Compreender o efeito do fogo sobre os executores.",
+      "evidence": ["Daniel 3:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 3:28, toque a palavra que introduz a razão do livramento.",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "pois não quiseram cumprir a palavra do rei",
+      "feedbackCorrect": "\"Pois\" liga o livramento à confiança e à recusa.",
+      "hint": "É a palavra curta antes de \"não quiseram\".",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": ["Daniel 3:28"],
+      "options": [
+        { "id": "a", "text": "Bendito" },
+        { "id": "b", "text": "pois" },
+        { "id": "c", "text": "exceto" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Bendito\" abre o louvor, não a razão.",
+        "c": "\"Exceto\" fecha a exclusividade do Deus deles."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 3:24–25 relaciona o que lançaram e o que o rei vê?",
+      "verseRef": "Daniel 3:24–25",
+      "evidenceSpan": "Vejo quatro homens soltos andando no meio do fogo",
+      "feedbackCorrect": "Lançaram três atados; o rei vê quatro soltos sem dano.",
+      "hint": "Compare o número e a condição.",
+      "learningObjective": "Relacionar lançamento e visão do rei.",
+      "evidence": ["Daniel 3:24–25"],
+      "options": [
+        { "id": "a", "text": "Três atados viram quatro soltos sem dano" },
+        { "id": "b", "text": "O rei vê só cinzas dos três" },
+        { "id": "c", "text": "Os três saem antes de entrar no fogo" },
+        { "id": "d", "text": "O quarto é um dos executores" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O rei vê homens andando, não cinzas.",
+        "c": "Eles caíram dentro da fornalha (3:23).",
+        "d": "Os executores morreram nas chamas (3:22)."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 3:19–28?",
+      "verseRef": "Daniel 3:19–28",
+      "evidenceSpan": "enviou seu anjo e livrou seus servos",
+      "feedbackCorrect": "Fúria e fornalha, lançamento, quarto no fogo, reconhecimento do Deus deles.",
+      "hint": "Comece pela ordem do rei.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": ["Daniel 3:19–28"],
+      "options": [
+        { "id": "a", "text": "Fúria e fornalha sete vezes mais" },
+        { "id": "b", "text": "Quarto homem no meio do fogo" },
+        { "id": "c", "text": "Saída intacta e bendito o Deus deles" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela fúria; o bendito fecha." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 3:26, que título o rei dá ao Deus dos três?",
+      "verseRef": "Daniel 3:26",
+      "evidenceSpan": "servos do Deus Altíssimo",
+      "feedbackCorrect": "O rei chama o Deus deles de Altíssimo.",
+      "hint": "É o adjetivo do Deus deles no chamado.",
+      "learningObjective": "Lembrar o título reconhecido pelo rei.",
+      "evidence": ["Daniel 3:26"],
+      "options": [
+        { "id": "a", "text": "Altíssimo" },
+        { "id": "b", "text": "Distante" },
+        { "id": "c", "text": "Silencioso" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Distante\" não é o título em 3:26.",
+        "c": "\"Silencioso\" não aparece em 3:26."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 3:27 a Isaías 43:2?",
+      "verseRef": "Daniel 3:27",
+      "evidenceSpan": "o fogo não teve poder algum sobre os corpos deles",
+      "feedbackCorrect": "Nos dois textos, o fogo não consome quem o Senhor guarda.",
+      "hint": "Compare a impotência do fogo.",
+      "learningObjective": "Relacionar o livramento no fogo em Daniel e Isaías.",
+      "evidence": ["Daniel 3:27", "Isaías 43:2"],
+      "passageA": { "ref": "Daniel 3:27" },
+      "passageB": { "ref": "Isaías 43:2" },
+      "options": [
+        { "id": "a", "text": "Fogo sem consumir" },
+        { "id": "b", "text": "Água sem atravessar" },
+        { "id": "c", "text": "Templo em ruínas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O foco aqui é o fogo, não a água.",
+        "c": "Nenhum dos textos fala de templo em ruínas neste elo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 3:28, os três quiseram cumprir a palavra do rei e adorar outro deus.",
+      "verseRef": "Daniel 3:28",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois não quiseram cumprir a palavra do rei",
+      "feedbackCorrect": "Eles não quiseram cumprir a palavra do rei; confiaram no seu Deus.",
+      "feedbackWrong": { "true": "Releia 3:28: não quiseram cumprir a palavra do rei." },
+      "hint": "Veja o que eles não quiseram fazer.",
+      "learningObjective": "Interpretar a recusa fiel dos três.",
+      "evidence": ["Daniel 3:28"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 3:28, toque o trecho que mostra a postura dos servos.",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "que confiaram nele",
+      "feedbackCorrect": "Eles confiaram nele — essa é a postura do livramento.",
+      "hint": "Procure o verbo da confiança.",
+      "learningObjective": "Sustentar com o texto a confiança dos três.",
+      "evidence": ["Daniel 3:28"],
+      "options": [
+        { "id": "a", "text": "confiaram" },
+        { "id": "b", "text": "sátrapas" },
+        { "id": "c", "text": "vestes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Sátrapas\" aparece em 3:27, não como postura deles.",
+        "c": "\"Vestes\" descreve o resultado, não a postura."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 3:19–28 sustenta sobre o fogo e a fé?",
+      "verseRef": "Daniel 3:27–28",
+      "evidenceSpan": "o fogo não teve poder algum sobre os corpos deles",
+      "feedbackCorrect": "O fogo extremo não vence quem confia no Deus que livra.",
+      "hint": "Compare cada opção com 3:27–28.",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": ["Daniel 3:27–28"],
+      "options": [
+        { "id": "a", "text": "A confiança no Deus deles vence o poder do fogo" },
+        { "id": "b", "text": "O fogo era fraco e por isso não queimou" },
+        { "id": "c", "text": "Eles foram salvos por obedecer ao rei" },
+        { "id": "d", "text": "O anjo veio porque eles adoraram a imagem" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A fornalha estava sete vezes mais acesa e matou executores.",
+        "c": "Eles não cumpriram a palavra do rei.",
+        "d": "Eles recusaram adorar outro deus."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do livramento no fogo?",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "enviou seu anjo e livrou seus servos",
+      "feedbackCorrect": "Isaías promete; Daniel mostra o livramento; Hebreus lembra quem apagou a força do fogo.",
+      "hint": "Parta da promessa e avance.",
+      "learningObjective": "Ver a fornalha no fio bíblico do livramento.",
+      "evidence": ["Isaías 43:2", "Daniel 3:28", "Hebreus 11:34"],
+      "options": [
+        { "id": "a", "text": "Isaías: pelo fogo sem ser queimado" },
+        { "id": "b", "text": "Daniel: Deus envia o anjo e livra" },
+        { "id": "c", "text": "Hebreus: apagaram a força do fogo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Isaías 43, Daniel 3 e Hebreus 11." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 3:27, que palavra o fogo não teve sobre os corpos?",
+      "verseRef": "Daniel 3:27",
+      "evidenceSpan": "o fogo não teve poder algum",
+      "feedbackCorrect": "O fogo não teve poder — termo que carrega a impotência do julgamento.",
+      "hint": "É o que o fogo não teve.",
+      "learningObjective": "Lembrar o termo da impotência do fogo.",
+      "evidence": ["Daniel 3:27"],
+      "options": [
+        { "id": "a", "text": "poder" },
+        { "id": "b", "text": "perfume" },
+        { "id": "c", "text": "música" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Perfume\" não é o que 3:27 nega.",
+        "c": "\"Música\" não aparece em 3:27."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 3:28 a Salmos 34:7?",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "enviou seu anjo e livrou seus servos",
+      "feedbackCorrect": "Nos dois textos, o anjo do Senhor está ligado ao livramento.",
+      "hint": "Compare o papel do anjo.",
+      "learningObjective": "Ligar o anjo em Daniel ao anjo que cerca em Salmos.",
+      "evidence": ["Daniel 3:28", "Salmos 34:7"],
+      "passageA": { "ref": "Daniel 3:28" },
+      "passageB": { "ref": "Salmos 34:7" },
+      "options": [
+        { "id": "a", "text": "Anjo e livramento" },
+        { "id": "b", "text": "Exílio sem esperança" },
+        { "id": "c", "text": "Adoração forçada" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos apontam livramento, não desespero.",
+        "c": "Daniel 3 celebra a recusa de adorar outro deus."
+      }
+    }
+  ]
+}

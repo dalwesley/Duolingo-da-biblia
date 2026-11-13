@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 135:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 135:1–6"
+      },
+      {
+        "ref": "Salmos 135:7"
+      }
+    ],
+    "context": "Louvai o nome do Senhor; o nosso Deus está nos céus e faz tudo o que lhe agrada. Ídolos são prata e ouro.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Nosso Deus faz",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Aleluia! Louvai o nome do Senhor; louvai-o, servos do Senhor.",
+        "evidenceRef": "Salmos 135:1",
+        "evidenceSpan": "Aleluia"
+      },
+      {
+        "text": "Vós que assistis na Casa do Senhor.",
+        "evidenceRef": "Salmos 135:2",
+        "evidenceSpan": "Vós que assistis na Casa do Senhor"
+      },
+      {
+        "text": "Louvai ao Senhor.",
+        "evidenceRef": "Salmos 135:3",
+        "evidenceSpan": "Louvai ao Senhor"
+      },
+      {
+        "text": "Porque o Senhor escolheu para si Jacó e.",
+        "evidenceRef": "Salmos 135:4",
+        "evidenceSpan": "Porque o Senhor escolheu para si Jacó e"
+      },
+      {
+        "text": "Pois eu sei que o Senhor é grande.",
+        "evidenceRef": "Salmos 135:5",
+        "evidenceSpan": "Pois eu sei que o Senhor é grande"
+      },
+      {
+        "text": "Tudo o que ao Senhor agradou ele o.",
+        "evidenceRef": "Salmos 135:6",
+        "evidenceSpan": "Tudo o que ao Senhor agradou ele o"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Aleluia",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Aleluia louvai o nome do senhor",
+        "evidenceRef": "Salmos 135:1"
+      },
+      {
+        "label": "Vós que assistis na casa do",
+        "evidenceRef": "Salmos 135:2"
+      },
+      {
+        "label": "Louvai ao senhor porque ele é",
+        "evidenceRef": "Salmos 135:3"
+      },
+      {
+        "label": "Porque o senhor escolheu para si",
+        "evidenceRef": "Salmos 135:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 135:3"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Porque\".",
+        "marker": "Porque",
+        "evidenceRef": "Salmos 135:4"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 135:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças"
+      },
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Lançar o cuidado"
+      },
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Deus escolheu Jacó e fere os ídolos; a casa de Israel louva."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Deus escolheu Jacó e fere os ídolos; a casa de Israel louva.",
+    "anchorQuestion": "O que Salmos 135:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 135:1, aleluia.",
+      "verseRef": "Salmos 135:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 135:1 afirma.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 135:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 135:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aleluia"
+        },
+        {
+          "id": "b",
+          "text": "Louvai"
+        },
+        {
+          "id": "c",
+          "text": "nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "O versículo destaca «Aleluia».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 135:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 135:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvai ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvai ao Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 135:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 135:1 na ordem do texto.",
+      "verseRef": "Salmos 135:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aleluia"
+        },
+        {
+          "id": "b",
+          "text": "o nome"
+        },
+        {
+          "id": "c",
+          "text": "do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 135:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 135:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 135:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 135:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 135:1",
+      "passageA": {
+        "ref": "Salmos 135:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Louvai o nome do Senhor; o nosso Deus está nos céus e faz tudo o que lhe agrada. Ídolos são prata e ouro."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 135:3, o marcador pois une ideias no fluxo do texto.",
+      "verseRef": "Salmos 135:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 135:3 afirma.",
+      "evidence": [
+        "Salmos 135:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 135:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 135:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Louvai"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 135:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 135:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 135:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque o Senhor escolheu para si Jacó e",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 135:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 135:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aleluia louvai o nome do senhor"
+        },
+        {
+          "id": "b",
+          "text": "Vós que assistis na casa"
+        },
+        {
+          "id": "c",
+          "text": "Louvai ao senhor porque ele é"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 135:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 135:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "grande"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "grande",
+      "feedbackCorrect": "A palavra do versículo é «grande».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 135:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 135:1 a Isaías 40:31.",
+      "verseRef": "Salmos 135:1",
+      "passageA": {
+        "ref": "Salmos 135:1"
+      },
+      "passageB": {
+        "ref": "Isaías 40:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Renovam as forças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 135:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Faz",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 135:7 afirma.",
+      "evidence": [
+        "Salmos 135:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 135:7, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 135:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faz"
+        },
+        {
+          "id": "b",
+          "text": "subir"
+        },
+        {
+          "id": "c",
+          "text": "vapores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Faz",
+      "feedbackCorrect": "O versículo destaca «Faz».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 135:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 135:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 135:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois eu sei que o Senhor é grande",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 135:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 135:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 135:5, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 135:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "nosso"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nosso",
+      "feedbackCorrect": "A palavra do versículo é «nosso».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 135:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 135:1 a 1 Pedro 5:7.",
+      "verseRef": "Salmos 135:1",
+      "passageA": {
+        "ref": "Salmos 135:1"
+      },
+      "passageB": {
+        "ref": "1 Pedro 5:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lançar o cuidado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 135:1"
+      ]
+    }
+  ]
+}

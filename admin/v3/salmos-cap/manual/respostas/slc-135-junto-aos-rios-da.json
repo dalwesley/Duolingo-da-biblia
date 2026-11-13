@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 137:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 137:1–6"
+      },
+      {
+        "ref": "Salmos 137:7–9"
+      }
+    ],
+    "context": "Junto aos rios da Babilônia nos sentamos e choramos; como cantaremos em terra estranha?",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Junto aos rios da Babilônia",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Às margens dos rios da Babilônia.",
+        "evidenceRef": "Salmos 137:1",
+        "evidenceSpan": "Às margens dos rios da Babilônia"
+      },
+      {
+        "text": "Nos salgueiros que ali estavam.",
+        "evidenceRef": "Salmos 137:2",
+        "evidenceSpan": "Nos salgueiros que ali estavam"
+      },
+      {
+        "text": "Pois lá, aqueles que nos levaram cativos nos pediam canções, e os nossos opressores nos exigiam ale…",
+        "evidenceRef": "Salmos 137:3",
+        "evidenceSpan": "Pois lá"
+      },
+      {
+        "text": "Como, porém, poderemos entoar o cântico do Senhor em uma terra estrangeira?",
+        "evidenceRef": "Salmos 137:4",
+        "evidenceSpan": "Como"
+      },
+      {
+        "text": "Se eu me esquecer de ti.",
+        "evidenceRef": "Salmos 137:5",
+        "evidenceSpan": "Se eu me esquecer de ti"
+      },
+      {
+        "text": "Se eu não me lembrar de ti.",
+        "evidenceRef": "Salmos 137:6",
+        "evidenceSpan": "Se eu não me lembrar de ti"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "margens",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "rios",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Às margens dos rios da babilônia",
+        "evidenceRef": "Salmos 137:1"
+      },
+      {
+        "label": "Nos salgueiros que ali estavam pendurávamos",
+        "evidenceRef": "Salmos 137:2"
+      },
+      {
+        "label": "Pois lá aqueles que nos levaram",
+        "evidenceRef": "Salmos 137:3"
+      },
+      {
+        "label": "Como porém poderemos entoar o cântico",
+        "evidenceRef": "Salmos 137:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 137:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"porém\".",
+        "marker": "porém",
+        "evidenceRef": "Salmos 137:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": "Se",
+        "evidenceRef": "Salmos 137:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      },
+      {
+        "ref": "João 10:11",
+        "bridge": "Bom Pastor"
+      },
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Exílio e memória de Sião: a dor se recusa a divertir os opressores."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Exílio e memória de Sião: a dor se recusa a divertir os opressores.",
+    "anchorQuestion": "O que Salmos 137:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 137:1, às margens dos rios da Babilônia.",
+      "verseRef": "Salmos 137:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Às margens dos rios da Babilônia",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 137:1 afirma.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 137:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 137:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "margens"
+        },
+        {
+          "id": "b",
+          "text": "rios"
+        },
+        {
+          "id": "c",
+          "text": "Babilônia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "margens",
+      "feedbackCorrect": "O versículo destaca «margens».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 137:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 137:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois lá"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois lá",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 137:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 137:1 na ordem do texto.",
+      "verseRef": "Salmos 137:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Às margens"
+        },
+        {
+          "id": "b",
+          "text": "dos rios"
+        },
+        {
+          "id": "c",
+          "text": "da Babilônia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Às margens",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 137:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 137:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "poderemos"
+        },
+        {
+          "id": "b",
+          "text": "margens"
+        },
+        {
+          "id": "c",
+          "text": "dos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "poderemos",
+      "feedbackCorrect": "A palavra do versículo é «poderemos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 137:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 137:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 137:1",
+      "passageA": {
+        "ref": "Salmos 137:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Junto aos rios da Babilônia nos sentamos e choramos; como cantaremos em terra estranha?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Às",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 137:3, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 137:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 137:3 afirma.",
+      "evidence": [
+        "Salmos 137:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 137:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 137:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois"
+        },
+        {
+          "id": "b",
+          "text": "aqueles"
+        },
+        {
+          "id": "c",
+          "text": "levaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo destaca «Pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 137:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 137:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 137:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 137:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 137:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Às margens dos rios da babilônia"
+        },
+        {
+          "id": "b",
+          "text": "Nos salgueiros que ali estavam pendurávamos"
+        },
+        {
+          "id": "c",
+          "text": "Pois lá aqueles que nos levaram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Às",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 137:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 137:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "esquecer"
+        },
+        {
+          "id": "b",
+          "text": "margens"
+        },
+        {
+          "id": "c",
+          "text": "dos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esquecer",
+      "feedbackCorrect": "A palavra do versículo é «esquecer».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 137:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 137:1 a Hebreus 13:15.",
+      "verseRef": "Salmos 137:1",
+      "passageA": {
+        "ref": "Salmos 137:1"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício de louvor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Às",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 137:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Feliz",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 137:9 afirma.",
+      "evidence": [
+        "Salmos 137:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 137:9, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 137:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feliz"
+        },
+        {
+          "id": "b",
+          "text": "aquele"
+        },
+        {
+          "id": "c",
+          "text": "pegar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Feliz",
+      "feedbackCorrect": "O versículo destaca «Feliz».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 137:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 137:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 137:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se eu me esquecer de ti",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 137:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 137:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Às",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 137:5, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 137:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "margens"
+        },
+        {
+          "id": "c",
+          "text": "dos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jerusalém",
+      "feedbackCorrect": "A palavra do versículo é «Jerusalém».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 137:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 137:1 a João 10:11.",
+      "verseRef": "Salmos 137:1",
+      "passageA": {
+        "ref": "Salmos 137:1"
+      },
+      "passageB": {
+        "ref": "João 10:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bom Pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Às",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 137:1"
+      ]
+    }
+  ]
+}

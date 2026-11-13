@@ -7,6 +7,8 @@ import '../data/postcard_index.dart';
 import '../l10n/app_language.dart';
 import '../models/bible_note.dart';
 import '../services/bible_service.dart';
+import '../services/room_service.dart';
+import '../utils/chapter_read_check.dart';
 import '../services/progress_service.dart';
 import '../services/tts_service.dart';
 import '../theme/app_theme.dart';
@@ -198,7 +200,13 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     _onChapterShown();
   }
 
+  /// Quando o capítulo atual apareceu (conferência da leitura do grupo).
+  DateTime _shownAt = DateTime.now();
+  String? _shownKey;
+
   void _onChapterShown() {
+    _shownAt = DateTime.now();
+    _shownKey = _chapterKey;
     final progress = context.read<ProgressService>();
     _progress = progress;
     unawaited(progress.setLastBibleSpot(_book.abbrev, _chapter, notify: false));
@@ -305,9 +313,37 @@ class _BibleReaderScreenState extends State<BibleReaderScreen> {
     final progress = context.read<ProgressService>();
     final book = _book;
     final chapter = _chapter;
+    final verses = book.chapters[chapter - 1];
+    final attentive = ChapterReadCheck.attentive(
+      verses: verses,
+      open: _shownKey == _chapterKey
+          ? DateTime.now().difference(_shownAt)
+          : Duration.zero,
+      listened: TtsService.instance.sequenceKey == _chapterKey,
+    );
     ActHaptics.success();
-    await progress.recordBibleReading(book.abbrev, chapter);
+    await progress.recordBibleReading(
+      book.abbrev,
+      chapter,
+      attentive: attentive,
+    );
     if (!mounted) return;
+    // Rápido demais e é da leitura do grupo: avisa que não contou lá.
+    final reading = context.read<RoomService>().currentReading;
+    if (!attentive &&
+        reading != null &&
+        reading.bookAbbrev.toLowerCase() == book.abbrev.toLowerCase() &&
+        chapter >= reading.from &&
+        chapter <= reading.to) {
+      final minutes = (ChapterReadCheck.secondsFor(verses) / 60).ceil();
+      await showAppToastFor(
+        context,
+        message: context.l10n.roomReadingTooFast(minutes),
+        glyph: CinematicGlyph.book,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
     final next = _next;
     await showAppToastFor(
       context,
@@ -746,9 +782,24 @@ class _ChapterPageState extends State<_ChapterPage> {
   Widget build(BuildContext context) {
     final reading = widget.reading;
     final verses = _verses;
+    // Capítulo da leitura do grupo vale só se lido nesta semana: o lido
+    // de antes volta a pedir "Concluir capítulo".
+    final group = context.select((RoomService r) => r.currentReading);
+    final inGroup =
+        group != null &&
+        group.bookAbbrev.toLowerCase() == _book.abbrev.toLowerCase() &&
+        widget.chapter >= group.from &&
+        widget.chapter <= group.to;
     final alreadyRead = context.select(
-      (ProgressService p) =>
-          p.hasReadBibleChapter(_book.abbrev, widget.chapter),
+      (ProgressService p) => inGroup
+          ? p.chaptersReadSince(
+                  _book.abbrev,
+                  widget.chapter,
+                  widget.chapter,
+                  group.week,
+                ) >
+                0
+          : p.hasReadBibleChapter(_book.abbrev, widget.chapter),
     );
     final bmSig = context.select((ProgressService p) {
       final prefix = '${_book.abbrev.toLowerCase()}:${widget.chapter}:';

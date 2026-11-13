@@ -1,0 +1,29 @@
+{
+  "profileGrowthUp": {
+    "pt": "Sua leitura cresceu: em {mode}, você acertava {from}% e agora acerta {to}%.",
+    "en": "Your reading grew: in {mode} you got {from}% right, now {to}%.",
+    "es": "Tu lectura creció: en {mode} acertabas {from}% y ahora {to}%.",
+    "placeholders": {"mode": "String", "from": "int", "to": "int"}
+  },
+  "profileGrowthSteady": {
+    "pt": "Sua leitura está firme: {pct}% de acerto em {mode}.",
+    "en": "Your reading is steady: {pct}% right in {mode}.",
+    "es": "Tu lectura está firme: {pct}% de aciertos en {mode}.",
+    "placeholders": {"mode": "String", "pct": "int"}
+  },
+  "profileGrowthWaiting": {
+    "pt": "Continue caminhando: em algumas semanas, aqui aparece como a sua leitura cresceu.",
+    "en": "Keep walking: in a few weeks you'll see here how your reading has grown.",
+    "es": "Sigue caminando: en unas semanas verás aquí cómo creció tu lectura."
+  },
+  "profilePlusGestureNudge": {
+    "pt": "Ponto forte, o que reforçar e o treino na medida são do Peregrino+.",
+    "en": "Strengths, what to reinforce and tailored practice are in Peregrino+.",
+    "es": "Punto fuerte, qué reforzar y la práctica a medida son de Peregrino+."
+  },
+  "profilePlusGestureNudgeCta": {
+    "pt": "Conhecer",
+    "en": "Learn more",
+    "es": "Conocer"
+  }
+}

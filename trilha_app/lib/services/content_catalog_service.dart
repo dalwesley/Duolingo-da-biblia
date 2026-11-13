@@ -28,6 +28,9 @@ class ContentCatalogService {
   static const _fileTrails = 'content_trails.json';
   static const _fileBank = 'content_bank.json';
   static const _fileStudies = 'content_studies.json';
+
+  /// Até quantos estudos em cache voltam sozinhos quando o catálogo muda.
+  static const _studiesRefetchCap = 300;
   static const _fileVerses = 'content_verses.json';
   static const _fileCards = 'content_cards.json';
   static const _fileShelves = 'content_shelves.json';
@@ -74,10 +77,9 @@ class ContentCatalogService {
   /// Shell completo no disco. Inclui os estudos: se a busca deles falhou
   /// uma vez (timeout), a versão já ficava gravada e o app pulava a rede
   /// para sempre — sem contexto, fatos nem "Para aprofundar" nas cenas.
+  // Estudos não entram: vêm por trilha ([ensureStudies]) e podem estar vazios.
   bool get _catalogShellReady =>
-      _hasTrails &&
-      (_difficulties?.isNotEmpty ?? false) &&
-      (_studies?.isNotEmpty ?? false);
+      _hasTrails && (_difficulties?.isNotEmpty ?? false);
 
   /// Sobe a cada lista de trilhas nova (disco ou rede): telas que guardam
   /// a lista (álbum de postais) pedem de novo.
@@ -148,11 +150,102 @@ class ContentCatalogService {
     _verses ??= const {};
   }
 
-  /// Garante perguntas da trilha em memória (pull sob demanda se o banco
-  /// completo ainda não chegou). Usado ao abrir uma lição.
+  /// Garante perguntas e estudos da trilha em memória (pull sob demanda).
+  /// Usado ao abrir uma lição, o mapa da trilha, a revisão etc.
   Future<bool> ensureTrailBank(String trailSlug) async {
     if (trailSlug.isEmpty) return false;
     await _loadDisk();
+    final (ok, _) = await (
+      _ensureTrailQuestions(trailSlug),
+      _ensureTrailStudies(trailSlug),
+    ).wait;
+    return ok;
+  }
+
+  /// Estudos das cenas da trilha (inclui a cena emprestada de outra trilha).
+  Future<void> _ensureTrailStudies(String trailSlug) async {
+    final trail = _trails?.where((t) => t.slug == trailSlug).firstOrNull;
+    if (trail == null) return;
+    await ensureStudies([
+      for (final mod in trail.modules)
+        for (final m in mod.missions) ...{m.slug, m.resolvedBankSection},
+    ]);
+  }
+
+  /// Busca no Firestore os estudos ([slugs]) que ainda não estão em memória.
+  /// Antes vinham todos no refresh do catálogo; com a Bíblia inteira
+  /// capítulo a capítulo passaram de 10 MB, então vêm por trilha.
+  Future<void> ensureStudies(Iterable<String> slugs) async {
+    await _loadDisk();
+    final have = _studies ?? const <String, Map<String, dynamic>>{};
+    final missing = {
+      for (final s in slugs)
+        if (s.isNotEmpty && !have.containsKey(s)) s,
+    }.toList();
+    if (missing.isEmpty) return;
+    if (!await _waitForFirebase()) return;
+    final fetched = <String, Map<String, dynamic>>{};
+    try {
+      final col = FirebaseFirestore.instance.collection(
+        'content_mission_studies',
+      );
+      // `whereIn` aceita até 30 ids por consulta.
+      for (var i = 0; i < missing.length; i += 30) {
+        final chunk = missing.sublist(i, (i + 30).clamp(0, missing.length));
+        final snap = await col
+            .where(FieldPath.documentId, whereIn: chunk)
+            .get(const GetOptions(source: Source.server))
+            .timeout(const Duration(seconds: 25));
+        for (final d in snap.docs) {
+          fetched[d.id] = _jsonSafe(d.data()) as Map<String, dynamic>;
+        }
+      }
+    } catch (e) {
+      debugPrint('ContentCatalog ensureStudies failed: $e');
+    }
+    if (fetched.isEmpty) return;
+    // Mapa novo (não muta): quem guarda índice sobre o cache percebe a troca.
+    _studies = {...?_studies, ...fetched};
+    debugPrint(
+      'ContentCatalog: studies +${fetched.length} (total ${_studies!.length})',
+    );
+    unawaited(_persistStudies());
+  }
+
+  final _chapterIndex = <String, Map<String, dynamic>>{};
+
+  /// Índice capítulo → cenas de um livro (`content_meta/chapters_<livro>`,
+  /// feito por `admin/scripts/build_chapter_index.mjs`). Em memória até o
+  /// app fechar; `null` se não houver ou sem rede.
+  Future<Map<String, dynamic>?> chapterIndex(String bookKey) async {
+    final hit = _chapterIndex[bookKey];
+    if (hit != null) return hit;
+    if (!await _waitForFirebase()) return null;
+    try {
+      final snap = await FirebaseFirestore.instance
+          .collection('content_meta')
+          .doc('chapters_$bookKey')
+          .get()
+          .timeout(const Duration(seconds: 12));
+      final chapters = snap.data()?['chapters'];
+      if (chapters is! Map) return null;
+      return _chapterIndex[bookKey] = Map<String, dynamic>.from(chapters);
+    } catch (e) {
+      debugPrint('ContentCatalog chapterIndex($bookKey) failed: $e');
+      return null;
+    }
+  }
+
+  Future<void> _persistStudies() async {
+    try {
+      final s = _studies;
+      if (s != null) await _writeCacheFile(_fileStudies, await _encodeJson(s));
+    } catch (e) {
+      debugPrint('ContentCatalog studies persist failed: $e');
+    }
+  }
+
+  Future<bool> _ensureTrailQuestions(String trailSlug) async {
     if (_bankQuestions != null &&
         _bankQuestions!.any((q) => q.trailSlug == trailSlug)) {
       return true;
@@ -420,6 +513,7 @@ class ContentCatalogService {
         return;
       }
 
+      var studiesToRefetch = const <String>[];
       final versionChanged =
           force ||
           remoteVersion == null ||
@@ -431,6 +525,10 @@ class ContentCatalogService {
           '(local=$_version remote=$remoteVersion) — '
           'limpa banco antigo; atos sob demanda por trilha',
         );
+        // Estudos que a pessoa já usava voltam frescos depois das trilhas.
+        // Cache antigo com tudo (antes de virem por trilha) não volta inteiro.
+        final held = _studies?.keys.toList() ?? const <String>[];
+        if (held.length <= _studiesRefetchCap) studiesToRefetch = held;
         await _clearBankCaches();
       }
 
@@ -456,7 +554,7 @@ class ContentCatalogService {
 
       // Sem pull de 8k atos no boot — isso OOMava o Firestore no aparelho.
       await _pullDifficulties(db);
-      await _pullStudies(db);
+      if (studiesToRefetch.isNotEmpty) await ensureStudies(studiesToRefetch);
       await _pullVerses(db);
 
       if (remoteVersion != null) {
@@ -536,37 +634,6 @@ class ContentCatalogService {
     }
   }
 
-  Future<void> _pullStudies(FirebaseFirestore db) async {
-    try {
-      const pageSize = 100;
-      final map = <String, Map<String, dynamic>>{};
-      QueryDocumentSnapshot<Map<String, dynamic>>? last;
-      while (true) {
-        Query<Map<String, dynamic>> q = db
-            .collection('content_mission_studies')
-            .orderBy(FieldPath.documentId)
-            .limit(pageSize);
-        if (last != null) q = q.startAfterDocument(last);
-        final snap = await q
-            .get(const GetOptions(source: Source.server))
-            .timeout(const Duration(seconds: 25));
-        if (snap.docs.isEmpty) break;
-        for (final d in snap.docs) {
-          map[d.id] = _jsonSafe(d.data()) as Map<String, dynamic>;
-        }
-        last = snap.docs.last;
-        if (snap.docs.length < pageSize) break;
-        await Future<void>.delayed(const Duration(milliseconds: 20));
-      }
-      if (map.isNotEmpty) {
-        _studies = map;
-        debugPrint('ContentCatalog: studies ${map.length}');
-      }
-    } catch (e) {
-      debugPrint('ContentCatalog studies failed: $e');
-    }
-  }
-
   Future<void> _pullVerses(FirebaseFirestore db) async {
     try {
       final versesDoc = await db
@@ -607,6 +674,7 @@ class ContentCatalogService {
                   'color': t.color,
                   'realm': t.realmId,
                   'category': t.categoryId,
+                  if (t.collectionId != null) 'collection': t.collectionId,
                   'modules': t.modules
                       .map(
                         (m) => {

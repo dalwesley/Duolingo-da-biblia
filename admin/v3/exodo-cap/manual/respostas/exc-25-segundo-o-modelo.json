@@ -1,0 +1,492 @@
+{
+  "study": {
+    "passageRef": "Êxodo 26:30–35",
+    "passages": [
+      {
+        "ref": "Êxodo 26:30–37"
+      }
+    ],
+    "context": "Deus manda levantar o tabernáculo conforme o modelo do monte. O véu separa o Santo Lugar do Santo dos Santos.",
+    "keyword": "Modelo",
+    "keywordGloss": "Padrão mostrado no monte, que Moisés deve seguir ao levantar o tabernáculo.",
+    "focusQuestion": "Onde você tende a improvisar em vez de seguir o que Deus mostrou?",
+    "reflectionPrompts": [
+      "Modelo no monte",
+      "Véu que separa",
+      "Entrada da tenda"
+    ],
+    "facts": [
+      {
+        "text": "O tabernáculo se levanta conforme o modelo mostrado no monte.",
+        "evidenceRef": "Êxodo 26:30",
+        "evidenceSpan": "de acordo com o modelo que te foi mostrado no monte"
+      },
+      {
+        "text": "O véu é de azul, púrpura, carmesim e linho fino, com querubins.",
+        "evidenceRef": "Êxodo 26:31",
+        "evidenceSpan": "véu de estofo azul, e púrpura, e carmesim"
+      },
+      {
+        "text": "O véu separa o Santo Lugar do Santo dos Santos.",
+        "evidenceRef": "Êxodo 26:33",
+        "evidenceSpan": "separação entre o Santo Lugar e o Santo dos Santos"
+      },
+      {
+        "text": "A cobertura do propiciatório fica sobre a arca no Santo dos Santos.",
+        "evidenceRef": "Êxodo 26:34",
+        "evidenceSpan": "cobertura do propiciatório sobre a arca do Testemunho"
+      },
+      {
+        "text": "A entrada da tenda tem cortina obra de bordador.",
+        "evidenceRef": "Êxodo 26:36",
+        "evidenceSpan": "obra de um bordador"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "modelo",
+        "gloss": "Padrão mostrado no monte para levantar o tabernáculo."
+      },
+      {
+        "term": "véu",
+        "gloss": "Tecido que separa o Santo Lugar do Santo dos Santos."
+      },
+      {
+        "term": "Santo dos Santos",
+        "gloss": "Espaço além do véu, onde fica a arca."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Levantar conforme o modelo",
+        "evidenceRef": "Êxodo 26:30"
+      },
+      {
+        "label": "Véu com querubins e colunas",
+        "evidenceRef": "Êxodo 26:31–32"
+      },
+      {
+        "label": "Separação e arca no Santo dos Santos",
+        "evidenceRef": "Êxodo 26:33–34"
+      },
+      {
+        "label": "Mesa, candelabro e entrada",
+        "evidenceRef": "Êxodo 26:35–37"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O véu existe para fazer separação entre os dois lugares santos.",
+        "marker": "separação",
+        "evidenceRef": "Êxodo 26:33"
+      },
+      {
+        "kind": "resultado",
+        "text": "Seguir o modelo leva a levantar o tabernáculo como foi mostrado.",
+        "marker": "de acordo",
+        "evidenceRef": "Êxodo 26:30"
+      },
+      {
+        "kind": "sequência",
+        "text": "Pendura-se o véu e traz-se a arca para dentro.",
+        "marker": "e",
+        "evidenceRef": "Êxodo 26:33"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 8:5",
+        "bridge": "Fazer conforme o modelo"
+      },
+      {
+        "ref": "Hebreus 9:3",
+        "bridge": "Segundo véu e Santo dos Santos"
+      },
+      {
+        "ref": "Atos 7:44",
+        "bridge": "Tabernáculo segundo o modelo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Moisés podia inventar o desenho do santuário.",
+        "why": "O texto manda levantar conforme o modelo mostrado no monte."
+      },
+      {
+        "text": "O véu une o Santo Lugar ao Santo dos Santos sem distinção.",
+        "why": "O véu faz separação entre os dois."
+      },
+      {
+        "text": "A arca fica do lado de fora do véu, junto à mesa.",
+        "why": "A arca vai para dentro do véu, no Santo dos Santos."
+      }
+    ],
+    "centralInsight": "O santuário não é invenção humana: Moisés levanta tudo conforme o modelo.",
+    "anchorQuestion": "Conforme o que Moisés deve levantar o tabernáculo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Moisés deve levantar o tabernáculo inventando um desenho próprio, sem modelo.",
+      "verseRef": "Êxodo 26:30",
+      "correctOptionId": "false",
+      "evidenceSpan": "de acordo com o modelo que te foi mostrado no monte",
+      "feedbackCorrect": "Ele levanta de acordo com o modelo mostrado no monte.",
+      "feedbackWrong": {
+        "true": "Releia: o modelo foi mostrado no monte."
+      },
+      "hint": "Veja a frase \"de acordo com\".",
+      "learningObjective": "Observar que há um modelo dado.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 26:30, toque a palavra que nomeia o padrão a seguir.",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {"id": "a", "text": "modelo"},
+        {"id": "b", "text": "monte"},
+        {"id": "c", "text": "tabernáculo"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo",
+      "feedbackCorrect": "O padrão a seguir é o modelo mostrado no monte.",
+      "feedbackWrong": {
+        "b": "O monte é o lugar; o padrão é o modelo.",
+        "c": "Tabernáculo é o que se levanta; o padrão é o modelo."
+      },
+      "hint": "O que foi mostrado no monte?",
+      "learningObjective": "Identificar a palavra modelo.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 26:33, o que o véu faz?",
+      "verseRef": "Êxodo 26:33",
+      "options": [
+        {"id": "a", "text": "Une o átrio ao acampamento"},
+        {"id": "b", "text": "Faz separação entre o Santo Lugar e o Santo dos Santos"},
+        {"id": "c", "text": "Cobre o altar de bronze"},
+        {"id": "d", "text": "Substitui as tábuas da lei"}
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "esse véu fará separação entre o Santo Lugar e o Santo dos Santos",
+      "feedbackCorrect": "O véu separa o Santo Lugar do Santo dos Santos.",
+      "feedbackWrong": {
+        "a": "O texto fala da separação dos lugares santos.",
+        "c": "Não é o altar de bronze.",
+        "d": "Não substitui as tábuas."
+      },
+      "hint": "Leia o que o véu fará.",
+      "learningObjective": "Observar a função do véu.",
+      "evidence": ["Êxodo 26:33"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 26:30 na ordem do texto.",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {"id": "a", "text": "Levantarás o tabernáculo"},
+        {"id": "b", "text": "de acordo com o modelo"},
+        {"id": "c", "text": "que te foi mostrado no monte"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Levantarás o tabernáculo",
+      "feedbackCorrect": "Levantar, conforme o modelo, mostrado no monte.",
+      "feedbackWrong": {"default": "Comece por levantar o tabernáculo."},
+      "hint": "O versículo começa com Levantarás.",
+      "learningObjective": "Reconhecer a sequência do versículo.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 26:33, o que se traz para dentro do véu?",
+      "verseRef": "Êxodo 26:33",
+      "options": [
+        {"id": "a", "text": "arca"},
+        {"id": "b", "text": "mesa"},
+        {"id": "c", "text": "candelabro"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trarás a arca do Testemunho para dentro do véu",
+      "feedbackCorrect": "A arca do Testemunho vai para dentro do véu.",
+      "feedbackWrong": {
+        "b": "A mesa fica do lado de fora do véu.",
+        "c": "O candelabro fica fora, em frente à mesa."
+      },
+      "hint": "O que entra para o Santo dos Santos?",
+      "learningObjective": "Lembrar o que vai dentro do véu.",
+      "evidence": ["Êxodo 26:33"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 26:30 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 26:30",
+      "passageA": {"ref": "Êxodo 26:30"},
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O tabernáculo e a entrada devem seguir o modelo mostrado no monte."
+      },
+      "options": [
+        {"id": "a", "text": "Construir como Deus mostrou"},
+        {"id": "b", "text": "Inventar o próprio desenho"},
+        {"id": "c", "text": "Ignorar o monte"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo",
+      "feedbackCorrect": "Levantar conforme o modelo é obedecer ao que Deus mostrou.",
+      "feedbackWrong": {
+        "b": "O texto manda seguir o modelo, não inventar.",
+        "c": "O modelo foi mostrado no monte."
+      },
+      "hint": "Compare o contexto com a ordem de levantar.",
+      "learningObjective": "Ligar o modelo à obediência na construção.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 26:33, o véu une o Santo Lugar e o Santo dos Santos sem fazer separação.",
+      "verseRef": "Êxodo 26:33",
+      "correctOptionId": "false",
+      "evidenceSpan": "esse véu fará separação",
+      "feedbackCorrect": "O véu faz separação entre os dois lugares.",
+      "feedbackWrong": {"true": "Releia: o véu fará separação."},
+      "hint": "Que palavra descreve a ação do véu?",
+      "learningObjective": "Compreender a separação que o véu faz.",
+      "evidence": ["Êxodo 26:33"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 26:33, toque a palavra que marca a função do véu.",
+      "verseRef": "Êxodo 26:33",
+      "options": [
+        {"id": "a", "text": "separação"},
+        {"id": "b", "text": "colchetes"},
+        {"id": "c", "text": "Testemunho"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esse véu fará separação",
+      "feedbackCorrect": "\"Separação\" nomeia o que o véu faz entre os lugares.",
+      "feedbackWrong": {
+        "b": "Colchetes sustentam o véu; a função é separação.",
+        "c": "Testemunho está na arca; a função do véu é separação."
+      },
+      "hint": "O que o véu fará entre os lugares?",
+      "learningObjective": "Tocar o marcador da função do véu.",
+      "evidence": ["Êxodo 26:33"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 26:30 liga a obra de Moisés ao que Deus mostrou?",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {"id": "a", "text": "Ele levanta conforme o modelo do monte"},
+        {"id": "b", "text": "Ele altera o modelo para agradar o povo"},
+        {"id": "c", "text": "Ele guarda o modelo sem construir nada"},
+        {"id": "d", "text": "Ele copia templos do Egito"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo que te foi mostrado no monte",
+      "feedbackCorrect": "A relação é de conformidade: modelo mostrado, obra levantada.",
+      "feedbackWrong": {
+        "b": "Não há autorização para alterar.",
+        "c": "A ordem é levantar o tabernáculo.",
+        "d": "O modelo é o do monte, não do Egito."
+      },
+      "hint": "Veja a expressão \"de acordo com\".",
+      "learningObjective": "Relacionar modelo e construção.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a instrução em Êxodo 26:30–35?",
+      "verseRef": "Êxodo 26:30–31",
+      "options": [
+        {"id": "a", "text": "Levantar conforme o modelo"},
+        {"id": "b", "text": "Véu com querubins e colunas"},
+        {"id": "c", "text": "Separação e arca no Santo dos Santos"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Levantarás o tabernáculo",
+      "feedbackCorrect": "Modelo, véu, depois a separação com a arca.",
+      "feedbackWrong": {"default": "Comece pelo modelo; a arca vem depois do véu."},
+      "hint": "Primeiro o modelo; depois o véu.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": ["Êxodo 26:30–35"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 26:33, para onde a arca é trazida em relação ao véu?",
+      "verseRef": "Êxodo 26:33",
+      "options": [
+        {"id": "a", "text": "dentro"},
+        {"id": "b", "text": "longe"},
+        {"id": "c", "text": "fora"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trarás a arca do Testemunho para dentro do véu",
+      "feedbackCorrect": "A arca vai para dentro do véu.",
+      "feedbackWrong": {
+        "b": "O texto diz para dentro do véu.",
+        "c": "Fora fica a mesa; a arca vai para dentro."
+      },
+      "hint": "A frase é \"para ___ do véu\".",
+      "learningObjective": "Lembrar para onde vai a arca.",
+      "evidence": ["Êxodo 26:33"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 26:30 a Hebreus 8:5?",
+      "verseRef": "Êxodo 26:30",
+      "passageA": {"ref": "Êxodo 26:30"},
+      "passageB": {"ref": "Hebreus 8:5"},
+      "options": [
+        {"id": "a", "text": "Fazer conforme o modelo"},
+        {"id": "b", "text": "Quebrar as tábuas"},
+        {"id": "c", "text": "Recusar o monte"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo",
+      "feedbackCorrect": "Hebreus cita a ordem de fazer conforme o modelo do monte.",
+      "feedbackWrong": {
+        "b": "O elo é o modelo, não as tábuas quebradas.",
+        "c": "O modelo foi mostrado no monte."
+      },
+      "hint": "Que ordem Hebreus lembra a Moisés?",
+      "learningObjective": "Relacionar Êxodo e Hebreus no modelo.",
+      "evidence": ["Êxodo 26:30", "Hebreus 8:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 26:30–33 sustenta que o santuário nasce da revelação de Deus, não da criatividade solta de Moisés.",
+      "verseRef": "Êxodo 26:30",
+      "correctOptionId": "true",
+      "evidenceSpan": "de acordo com o modelo que te foi mostrado no monte",
+      "feedbackCorrect": "O modelo mostrado no monte governa toda a obra.",
+      "feedbackWrong": {"false": "O texto amarra a obra ao modelo revelado."},
+      "hint": "Quem mostrou o modelo?",
+      "learningObjective": "Interpretar a origem do santuário.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 26:33, toque o trecho que nomeia o espaço além do véu.",
+      "verseRef": "Êxodo 26:33",
+      "options": [
+        {"id": "a", "text": "Santo dos Santos"},
+        {"id": "b", "text": "Santo Lugar"},
+        {"id": "c", "text": "arca do Testemunho"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Santo Lugar e o Santo dos Santos",
+      "feedbackCorrect": "Além do véu está o Santo dos Santos.",
+      "feedbackWrong": {
+        "b": "O Santo Lugar fica antes do véu.",
+        "c": "A arca fica lá; o nome do espaço é Santo dos Santos."
+      },
+      "hint": "Qual nome vem depois de \"e o\"?",
+      "learningObjective": "Sustentar a leitura do espaço sagrado.",
+      "evidence": ["Êxodo 26:33"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 26:30–33 sustenta sobre o tabernáculo?",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {"id": "a", "text": "Deve seguir o modelo que Deus mostrou"},
+        {"id": "b", "text": "Pode ser redesenhado a cada geração"},
+        {"id": "c", "text": "O véu apaga qualquer distinção sagrada"},
+        {"id": "d", "text": "A arca fica fora para o povo ver"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de acordo com o modelo que te foi mostrado no monte",
+      "feedbackCorrect": "A obra obedece ao modelo revelado no monte.",
+      "feedbackWrong": {
+        "b": "O texto aponta um modelo dado, não redesenho livre.",
+        "c": "O véu faz separação.",
+        "d": "A arca vai para dentro do véu."
+      },
+      "hint": "Una modelo e separação do véu.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": ["Êxodo 26:30", "Êxodo 26:33"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o modelo do monte à leitura cristã?",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {"id": "a", "text": "Moisés recebe o modelo no monte"},
+        {"id": "b", "text": "O véu separa o Santo dos Santos"},
+        {"id": "c", "text": "Hebreus chama isso cópia e sombra"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "modelo que te foi mostrado no monte",
+      "feedbackCorrect": "Modelo, separação, e a leitura de Hebreus.",
+      "feedbackWrong": {"default": "Comece pelo modelo; Hebreus vem por último."},
+      "hint": "Siga a ordem da revelação e da leitura.",
+      "learningObjective": "Ver o fio do modelo na Escritura.",
+      "evidence": ["Êxodo 26:30", "Êxodo 26:33", "Hebreus 8:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 26:30, onde o padrão foi mostrado a Moisés?",
+      "verseRef": "Êxodo 26:30",
+      "options": [
+        {"id": "a", "text": "monte"},
+        {"id": "b", "text": "Egito"},
+        {"id": "c", "text": "vale"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mostrado no monte",
+      "feedbackCorrect": "O padrão foi mostrado no monte.",
+      "feedbackWrong": {
+        "b": "Não foi no Egito.",
+        "c": "O texto diz no monte."
+      },
+      "hint": "No fim do versículo: mostrado no ___",
+      "learningObjective": "Lembrar onde o padrão foi revelado.",
+      "evidence": ["Êxodo 26:30"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 26:33 a Hebreus 9:3?",
+      "verseRef": "Êxodo 26:33",
+      "passageA": {"ref": "Êxodo 26:33"},
+      "passageB": {"ref": "Hebreus 9:3"},
+      "options": [
+        {"id": "a", "text": "Véu e Santo dos Santos"},
+        {"id": "b", "text": "Altar no átrio"},
+        {"id": "c", "text": "Maná no deserto"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Santo dos Santos",
+      "feedbackCorrect": "Hebreus retoma o segundo véu e o Santo dos Santos.",
+      "feedbackWrong": {
+        "b": "O elo é o véu e o Santo dos Santos.",
+        "c": "Maná não é o tema destes textos."
+      },
+      "hint": "Que espaço Hebreus menciona após o véu?",
+      "learningObjective": "Ligar o véu de Êxodo a Hebreus.",
+      "evidence": ["Êxodo 26:33", "Hebreus 9:3"]
+    }
+  ]
+}

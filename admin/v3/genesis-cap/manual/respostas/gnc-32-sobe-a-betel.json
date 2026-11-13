@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 35:1–6",
+    "passages": [
+      {
+        "ref": "Gênesis 35:1–6"
+      },
+      {
+        "ref": "Gênesis 35:7"
+      }
+    ],
+    "context": "Deus manda Jacó subir a Betel; a família guarda os deuses estranhos e constrói um altar.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra que carrega o sentido desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Sobe a Betel",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Deus disse jacó levanta-te sobe betel.",
+        "evidenceRef": "Gênesis 35:1",
+        "evidenceSpan": "faz um altar ao Deus que te apareceu"
+      },
+      {
+        "text": "Jacó disse família todos estavam lançai.",
+        "evidenceRef": "Gênesis 35:2",
+        "evidenceSpan": "Jacó disse à sua família e a todos"
+      },
+      {
+        "text": "Levantemo-nos subamos betel farei ali altar.",
+        "evidenceRef": "Gênesis 35:3",
+        "evidenceSpan": "farei ali um altar ao Deus que me"
+      },
+      {
+        "text": "Entregaram jacó todos deuses estrangeiros tinham.",
+        "evidenceRef": "Gênesis 35:4",
+        "evidenceSpan": "a Jacó todos os deuses estrangeiros que tinham"
+      },
+      {
+        "text": "Tendo partido terror deus apoderou cidades.",
+        "evidenceRef": "Gênesis 35:5",
+        "evidenceSpan": "o terror de Deus se apoderou das cidades"
+      },
+      {
+        "text": "Jacó chegou luz chamada betel terra.",
+        "evidenceRef": "Gênesis 35:6",
+        "evidenceSpan": "ele e todo o povo que o acompanhava"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "disse",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "Jacó",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus disse jacó levanta-te sobe",
+        "evidenceRef": "Gênesis 35:1"
+      },
+      {
+        "label": "Jacó disse família todos estavam",
+        "evidenceRef": "Gênesis 35:2"
+      },
+      {
+        "label": "Levantemo-nos subamos betel farei ali",
+        "evidenceRef": "Gênesis 35:3"
+      },
+      {
+        "label": "Entregaram jacó todos deuses estrangeiros",
+        "evidenceRef": "Gênesis 35:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 35:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 35:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 35:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 32:28",
+        "bridge": "Nome Israel"
+      },
+      {
+        "ref": "Gênesis 28:15",
+        "bridge": "Eu estou contigo"
+      },
+      {
+        "ref": "Gênesis 26:3",
+        "bridge": "Promessa a Isaque"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "Voltar a Betel é deixar os ídolos e cumprir o voto feito no medo."
+      }
+    ],
+    "centralInsight": "Voltar a Betel é deixar os ídolos e cumprir o voto feito no medo.",
+    "anchorQuestion": "O que Gênesis 35:1 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 35:1, faz um altar ao Deus que te apareceu.",
+      "verseRef": "Gênesis 35:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "faz um altar ao Deus que te apareceu",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 35:1 afirma.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 35:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 35:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "Jacó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 35:3, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 35:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há levantemo-nos subamos betel farei no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levantemo-nos e subamos a",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 35:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 35:1 na ordem do texto.",
+      "verseRef": "Gênesis 35:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então Deus disse"
+        },
+        {
+          "id": "b",
+          "text": "a Jacó"
+        },
+        {
+          "id": "c",
+          "text": "Levanta-te"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então Deus disse",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 35:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 35:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "Jacó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 35:1 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 35:1",
+      "passageA": {
+        "ref": "Gênesis 35:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus manda Jacó subir a Betel; a família guarda os deuses estranhos e constrói um altar."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 35:1, o texto trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Gênesis 35:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 35:1 afirma.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 35:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 35:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 35:4, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 35:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 35:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 35:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus disse jacó levanta-te sobe"
+        },
+        {
+          "id": "b",
+          "text": "Jacó disse família todos estavam"
+        },
+        {
+          "id": "c",
+          "text": "Levantemo-nos subamos betel farei ali"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 35:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 35:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levantemo-nos"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levantemo-nos",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 35:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 35:1 a Gênesis 32:28.",
+      "verseRef": "Gênesis 35:1",
+      "passageA": {
+        "ref": "Gênesis 35:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 32:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nome Israel"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 35:1",
+        "Gênesis 32:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 35:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 35:7 afirma.",
+      "evidence": [
+        "Gênesis 35:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 35:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "tendo"
+        },
+        {
+          "id": "b",
+          "text": "partido"
+        },
+        {
+          "id": "c",
+          "text": "terror"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tendo",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 35:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 35:5, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 35:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 35:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 35:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 35:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jacó"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jacó",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 35:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 35:1 a Gênesis 28:15.",
+      "verseRef": "Gênesis 35:1",
+      "passageA": {
+        "ref": "Gênesis 35:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 28:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu estou contigo"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 35:1",
+        "Gênesis 28:15"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,704 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 9:1–9",
+    "passages": [
+      {
+        "ref": "1 Crônicas 9:1–9"
+      }
+    ],
+    "context": "Depois das genealogias, o texto registra o exílio de Judá e os primeiros que voltam a morar nas cidades e em Jerusalém.",
+    "keyword": "exílio",
+    "keywordGloss": "É o cativeiro na Babilônia ao qual Judá foi levado por causa de suas transgressões.",
+    "focusQuestion": "Que transgressão na sua história ainda precisa de retorno e restauração?",
+    "reflectionPrompts": [
+      "Exílio por transgressão",
+      "Os primeiros que voltam",
+      "Nomes em Jerusalém"
+    ],
+    "facts": [
+      {
+        "text": "Todo o Israel foi registrado por genealogias no Livro dos Reis de Israel.",
+        "evidenceRef": "1 Crônicas 9:1",
+        "evidenceSpan": "estão inscritos no Livro dos Reis de Israel"
+      },
+      {
+        "text": "Os de Judá foram levados ao exílio na Babilônia por causa de suas transgressões.",
+        "evidenceRef": "1 Crônicas 9:1",
+        "evidenceSpan": "foram levados ao exílio na Babilônia, por causa de suas transgressões"
+      },
+      {
+        "text": "Os primeiros a voltar foram israelitas, sacerdotes, levitas e servos do templo.",
+        "evidenceRef": "1 Crônicas 9:2",
+        "evidenceSpan": "foram os israelitas, os sacerdotes, os levitas e os servos do templo"
+      },
+      {
+        "text": "Alguns de Judá, Benjamim, Efraim e Manassés habitaram em Jerusalém.",
+        "evidenceRef": "1 Crônicas 9:3",
+        "evidenceSpan": "alguns habitaram em Jerusalém"
+      },
+      {
+        "text": "Os irmãos de Benjamim, conforme suas gerações, eram 956, cabeças de famílias.",
+        "evidenceRef": "1 Crônicas 9:9",
+        "evidenceSpan": "eram novecentos e cinquenta e seis, todos estes homens foram cabeças de famílias"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "exílio",
+        "gloss": "Cativeiro na Babilônia por causa das transgressões de Judá."
+      },
+      {
+        "term": "transgressões",
+        "gloss": "Causa explícita do exílio de Judá."
+      },
+      {
+        "term": "Jerusalém",
+        "gloss": "Cidade onde alguns do remanescente voltam a habitar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Judá vai ao exílio por suas transgressões",
+        "evidenceRef": "1 Crônicas 9:1"
+      },
+      {
+        "label": "Os primeiros habitantes voltam às possessões",
+        "evidenceRef": "1 Crônicas 9:2"
+      },
+      {
+        "label": "Famílias de várias tribos habitam em Jerusalém",
+        "evidenceRef": "1 Crônicas 9:3–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Judá foi ao exílio na Babilônia por causa de suas transgressões.",
+        "marker": "por causa",
+        "evidenceRef": "1 Crônicas 9:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do exílio, os primeiros voltam a morar nas possessões e cidades.",
+        "marker": "voltaram",
+        "evidenceRef": "1 Crônicas 9:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Alguns de Judá, Benjamim, Efraim e Manassés passam a habitar em Jerusalém.",
+        "marker": "habitaram",
+        "evidenceRef": "1 Crônicas 9:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Reis 25:21",
+        "bridge": "Judá levado da sua terra"
+      },
+      {
+        "ref": "Esdras 2:1",
+        "bridge": "Os que voltaram do cativeiro"
+      },
+      {
+        "ref": "Jeremias 29:14",
+        "bridge": "Deus faz voltar do cativeiro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O exílio de Judá foi acaso político, sem causa moral no texto.",
+        "why": "9:1 diz que foi por causa de suas transgressões."
+      },
+      {
+        "text": "Ninguém voltou; a terra ficou vazia para sempre.",
+        "why": "9:2–3 fala dos primeiros que voltaram e habitaram em Jerusalém."
+      },
+      {
+        "text": "Só Judá habitou de novo em Jerusalém; as outras tribos sumiram.",
+        "why": "9:3 inclui Benjamim, Efraim e Manassés."
+      }
+    ],
+    "centralInsight": "Judá foi ao exílio por suas transgressões; Deus ainda traz um remanescente para habitar.",
+    "anchorQuestion": "Por que, em 1 Crônicas 9:1, os de Judá foram levados ao exílio na Babilônia?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 9 —1, os de Judá foram levados ao exílio na Babilônia por causa de suas transgressões.",
+      "verseRef": "1 Crônicas 9:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "foram levados ao exílio na Babilônia, por causa de suas transgressões",
+      "feedbackCorrect": "O texto liga o exílio às transgressões de Judá.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 9:1: o exílio foi por causa das transgressões."
+      },
+      "hint": "Veja a razão dada para o exílio.",
+      "learningObjective": "Observar a causa do exílio de Judá.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 9:2, toque quem está entre os primeiros que voltaram.",
+      "verseRef": "1 Crônicas 9:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "habitantes"
+        },
+        {
+          "id": "b",
+          "text": "primeiros"
+        },
+        {
+          "id": "c",
+          "text": "voltaram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "primeiros",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar os primeiros que voltaram.",
+      "evidence": [
+        "1 Crônicas 9:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 9:3, quem habitou em Jerusalém além dos filhos de Judá?",
+      "verseRef": "1 Crônicas 9:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos de Benjamim, Efraim e Manassés"
+        },
+        {
+          "id": "b",
+          "text": "Somente estrangeiros da Assíria"
+        },
+        {
+          "id": "c",
+          "text": "Apenas os servos de Nabucodonosor"
+        },
+        {
+          "id": "d",
+          "text": "Ninguém além de Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Dos filhos de Judá, dos filhos de Benjamim e dos filhos de Efraim e Manassés",
+      "feedbackCorrect": "O texto inclui Benjamim, Efraim e Manassés com Judá.",
+      "feedbackWrong": {
+        "b": "Não fala de estrangeiros da Assíria habitando ali.",
+        "c": "Não menciona servos de Nabucodonosor neste versículo.",
+        "d": "Outras tribos também habitam em Jerusalém."
+      },
+      "hint": "Leia as tribos listadas no versículo.",
+      "learningObjective": "Identificar quem habitou em Jerusalém.",
+      "evidence": [
+        "1 Crônicas 9:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 9:1 na ordem do texto.",
+      "verseRef": "1 Crônicas 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo o Israel foi registrado por genealogias"
+        },
+        {
+          "id": "b",
+          "text": "estão inscritos no Livro dos Reis de Israel"
+        },
+        {
+          "id": "c",
+          "text": "Os de Judá foram levados ao exílio na Babilônia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo o Israel foi registrado por genealogias",
+      "feedbackCorrect": "Primeiro o registro, depois o livro, e então o exílio de Judá.",
+      "feedbackWrong": {
+        "default": "Comece pelo registro; o exílio fecha o versículo."
+      },
+      "hint": "O versículo começa com o registro de Israel.",
+      "learningObjective": "Reconhecer a ordem de 9:1.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 9:1, Judá foi levado ao exílio na onde?",
+      "verseRef": "1 Crônicas 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Egito"
+        },
+        {
+          "id": "b",
+          "text": "Babilônia"
+        },
+        {
+          "id": "c",
+          "text": "Assíria"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "exílio na Babilônia",
+      "feedbackCorrect": "O destino do exílio de Judá neste versículo é a Babilônia.",
+      "feedbackWrong": {
+        "a": "O texto diz Babilônia, não Egito.",
+        "c": "Aqui o exílio de Judá é na Babilônia."
+      },
+      "hint": "Veja o nome do lugar do exílio.",
+      "learningObjective": "Lembrar o destino do exílio de Judá.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 9:2 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 9:2",
+      "passageA": {
+        "ref": "1 Crônicas 9:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois do exílio, um remanescente volta às possessões e cidades."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Primeiros habitantes que voltaram"
+        },
+        {
+          "id": "b",
+          "text": "Ninguém deixou a Babilônia"
+        },
+        {
+          "id": "c",
+          "text": "Só reis voltaram à terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os primeiros habitantes que voltaram a morar",
+      "feedbackCorrect": "O versículo e o contexto falam dos primeiros que voltaram.",
+      "feedbackWrong": {
+        "b": "O texto afirma que voltaram.",
+        "c": "A lista inclui israelitas, sacerdotes, levitas e servos."
+      },
+      "hint": "Veja quem são os primeiros habitantes.",
+      "learningObjective": "Ligar o versículo ao retorno do remanescente.",
+      "evidence": [
+        "1 Crônicas 9:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 9 —1, o texto apresenta o exílio de Judá sem explicar a causa.",
+      "verseRef": "1 Crônicas 9:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "por causa de suas transgressões",
+      "feedbackCorrect": "\"Por causa\" marca a causa: as transgressões de Judá.",
+      "feedbackWrong": {
+        "true": "O fim de 9:1 dá a causa: as transgressões."
+      },
+      "hint": "Repare na expressão \"por causa\".",
+      "learningObjective": "Compreender a causa declarada do exílio.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 9:1, toque as palavras que marcam a causa do exílio.",
+      "verseRef": "1 Crônicas 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "registrado"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "genealogias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 9:2–3 se relaciona com o exílio de 9:1?",
+      "verseRef": "1 Crônicas 9:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois do exílio, um remanescente volta e habita"
+        },
+        {
+          "id": "b",
+          "text": "O exílio impede qualquer retorno"
+        },
+        {
+          "id": "c",
+          "text": "Só a Babilônia passa a ser a nova capital"
+        },
+        {
+          "id": "d",
+          "text": "As genealogias são apagadas para sempre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os primeiros habitantes que voltaram a morar",
+      "feedbackCorrect": "O texto passa do exílio ao retorno e à habitação em Jerusalém.",
+      "feedbackWrong": {
+        "b": "9:2–3 descreve quem voltou e habitou.",
+        "c": "Jerusalém volta a ser habitada.",
+        "d": "O registro genealógico abre o capítulo."
+      },
+      "hint": "Veja o que acontece depois do exílio.",
+      "learningObjective": "Relacionar exílio e retorno.",
+      "evidence": [
+        "1 Crônicas 9:1–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Crônicas 9:1–3?",
+      "verseRef": "1 Crônicas 9:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá vai ao exílio por suas transgressões"
+        },
+        {
+          "id": "b",
+          "text": "Os primeiros voltam às possessões"
+        },
+        {
+          "id": "c",
+          "text": "Alguns habitam de novo em Jerusalém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "alguns habitaram em Jerusalém",
+      "feedbackCorrect": "Exílio, retorno e habitação em Jerusalém.",
+      "feedbackWrong": {
+        "default": "Comece pelo exílio; Jerusalém fecha o movimento."
+      },
+      "hint": "Jerusalém é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento do exílio ao retorno.",
+      "evidence": [
+        "1 Crônicas 9:1–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 9:1, que expressão introduz a causa do exílio?",
+      "verseRef": "1 Crônicas 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "causa"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "por causa de suas transgressões",
+      "feedbackCorrect": "\"Causa\" está na expressão que explica o exílio.",
+      "feedbackWrong": {
+        "a": "Não é \"Todavia\" que marca a causa aqui.",
+        "b": "\"Então\" não introduz a razão em 9:1."
+      },
+      "hint": "Olhe a expressão que explica o exílio no fim do versículo.",
+      "learningObjective": "Lembrar o marcador causal do versículo.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 9:1 a 2 Reis 25:21?",
+      "verseRef": "1 Crônicas 9:1",
+      "passageA": {
+        "ref": "1 Crônicas 9:1"
+      },
+      "passageB": {
+        "ref": "2 Reis 25:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá levado da sua terra"
+        },
+        {
+          "id": "b",
+          "text": "Vitória definitiva em Ai"
+        },
+        {
+          "id": "c",
+          "text": "Construção do primeiro templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foram levados ao exílio na Babilônia",
+      "evidence": [
+        "1 Crônicas 9:1",
+        "2 Reis 25:21"
+      ],
+      "feedbackCorrect": "Os dois textos registram Judá sendo levado embora.",
+      "feedbackWrong": {
+        "b": "Ai não é o tema destes versículos.",
+        "c": "Aqui o tema é exílio, não construção."
+      },
+      "hint": "Compare o destino de Judá nos dois textos.",
+      "learningObjective": "Relacionar o exílio em Crônicas e em Reis."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Crônicas 9 —1–3 ensina que o exílio apaga para sempre a habitação em Jerusalém.",
+      "verseRef": "1 Crônicas 9:1–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "alguns habitaram em Jerusalém",
+      "feedbackCorrect": "Depois do exílio, o texto mostra quem volta e habita em Jerusalém.",
+      "feedbackWrong": {
+        "true": "9:2–3 descreve retorno e habitação em Jerusalém."
+      },
+      "hint": "Compare o exílio de 9:1 com 9:2–3.",
+      "learningObjective": "Interpretar o remanescente após o juízo.",
+      "evidence": [
+        "1 Crônicas 9:1–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 9:2, toque o trecho que sustenta o retorno após o exílio.",
+      "verseRef": "1 Crônicas 9:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "voltaram"
+        },
+        {
+          "id": "b",
+          "text": "habitantes"
+        },
+        {
+          "id": "c",
+          "text": "morar"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "habitantes",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar com o texto o retorno.",
+      "evidence": [
+        "1 Crônicas 9:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Crônicas 9:1–9 sustenta?",
+      "verseRef": "1 Crônicas 9:1–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transgressão leva ao exílio; Deus ainda traz quem habite"
+        },
+        {
+          "id": "b",
+          "text": "O exílio não tem causa no texto"
+        },
+        {
+          "id": "c",
+          "text": "Ninguém voltou às cidades"
+        },
+        {
+          "id": "d",
+          "text": "Só Judá habita; as outras tribos somem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa de suas transgressões",
+      "feedbackCorrect": "O trecho une juízo por transgressão e retorno do remanescente.",
+      "feedbackWrong": {
+        "b": "9:1 dá a causa: transgressões.",
+        "c": "9:2 fala dos que voltaram.",
+        "d": "9:3 inclui Benjamim, Efraim e Manassés."
+      },
+      "hint": "Una a causa do exílio e o retorno.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "1 Crônicas 9:1–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do exílio ao retorno?",
+      "verseRef": "1 Crônicas 9:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá sofre o juízo do cativeiro"
+        },
+        {
+          "id": "b",
+          "text": "Deus promete reunir do cativeiro"
+        },
+        {
+          "id": "c",
+          "text": "O remanescente mora de novo na terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os primeiros habitantes que voltaram a morar",
+      "evidence": [
+        "1 Crônicas 9:1",
+        "Jeremias 29:14",
+        "1 Crônicas 9:2"
+      ],
+      "feedbackCorrect": "Juízo, promessa e retorno formam o fio.",
+      "feedbackWrong": {
+        "default": "Comece pelo exílio; o retorno fecha."
+      },
+      "hint": "Siga juízo, promessa e cumprimento.",
+      "learningObjective": "Encadear exílio, promessa e retorno."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 9:1, que termo nomeia o cativeiro de Judá?",
+      "verseRef": "1 Crônicas 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "exílio"
+        },
+        {
+          "id": "c",
+          "text": "jubileu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "levados ao exílio na Babilônia",
+      "feedbackCorrect": "\"Exílio\" carrega o juízo e o deslocamento de Judá.",
+      "feedbackWrong": {
+        "a": "O versículo não usa \"aliança\" aqui.",
+        "c": "Não há jubileu neste versículo."
+      },
+      "hint": "Veja a palavra do cativeiro.",
+      "learningObjective": "Lembrar o termo central da cena.",
+      "evidence": [
+        "1 Crônicas 9:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 9:2 a Esdras 2:1?",
+      "verseRef": "1 Crônicas 9:2",
+      "passageA": {
+        "ref": "1 Crônicas 9:2"
+      },
+      "passageB": {
+        "ref": "Esdras 2:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Os que voltaram do cativeiro"
+        },
+        {
+          "id": "b",
+          "text": "Construção da torre de Babel"
+        },
+        {
+          "id": "c",
+          "text": "Ungão de Saul em Mizpá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os primeiros habitantes que voltaram a morar",
+      "evidence": [
+        "1 Crônicas 9:2",
+        "Esdras 2:1"
+      ],
+      "feedbackCorrect": "Os dois textos falam dos que voltaram do cativeiro.",
+      "feedbackWrong": {
+        "b": "Babel não é o tema deste elo.",
+        "c": "Saul não aparece nestes versículos."
+      },
+      "hint": "Compare quem retorna nos dois livros.",
+      "learningObjective": "Ligar o retorno em Crônicas a Esdras."
+    }
+  ]
+}

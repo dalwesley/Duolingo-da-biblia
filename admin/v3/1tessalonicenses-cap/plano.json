@@ -1,0 +1,65 @@
+{
+  "slug": "1tessalonicenses-cap",
+  "prefix": "t1c",
+  "book": "1 Tessalonicenses",
+  "chapters": 5,
+  "title": "1 Tessalonicenses",
+  "description": "1 Tessalonicenses capítulo a capítulo: fé viva, santidade e esperança na vinda do Senhor.",
+  "icon": "🌅",
+  "color": "#F39C12",
+  "order": 67,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["tessalonicenses"],
+  "modules": [
+    {
+      "title": "Fé e cuidado · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "1 Tessalonicenses 2:1–8",
+          "chapters": "1–2",
+          "title": "Ministério como mãe",
+          "intro": "Paulo lembra a entrada ousada e o cuidado terno pela igreja nova.",
+          "insight": "Não buscamos glória humana: como mãe, damos a própria vida; como pai, exortamos a andar dignamente.",
+          "objective": "Cuidar com ternura"
+        },
+        {
+          "ref": "1 Tessalonicenses 3:6–13",
+          "title": "Consolados pela fé",
+          "intro": "Timóteo traz boas notícias da fé e do amor dos tessalonicenses.",
+          "insight": "A fé firme consola o apóstolo; ele ora para que o Senhor faça crescer o amor até a vinda de Jesus.",
+          "objective": "Crescer em fé e amor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fé e cuidado",
+        "intro": "Revise o cuidado pastoral e a fé que consola e cresce.",
+        "insight": "A fé viva se cuida e cresce até a vinda do Senhor"
+      }
+    },
+    {
+      "title": "Esperança e vigilância · cap. 4–5",
+      "scenes": [
+        {
+          "ref": "1 Tessalonicenses 4:13–18",
+          "title": "Não vos entristeçais",
+          "intro": "Alguns dormiram; Paulo não quer que a igreja fique sem esperança.",
+          "insight": "Os mortos em Cristo ressuscitarão; seremos arrebatados para estar sempre com o Senhor.",
+          "objective": "Consolar com a esperança"
+        },
+        {
+          "ref": "1 Tessalonicenses 5:12–22",
+          "title": "Vigiai e dai graças",
+          "intro": "Paulo fecha com pedidos práticos para a vida da igreja.",
+          "insight": "Regozijai-vos sempre, orai sem cessar, dai graças em tudo: esta é a vontade de Deus em Cristo.",
+          "objective": "Orar e dar graças"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Esperança e vigilância",
+        "intro": "Revise a esperança da ressurreição e a vida vigilante da igreja.",
+        "insight": "A esperança do Senhor molda uma igreja vigilante e grata"
+      }
+    }
+  ]
+}

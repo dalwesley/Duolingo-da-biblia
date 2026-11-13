@@ -1,0 +1,926 @@
+{
+  "study": {
+    "passageRef": "Êxodo 35:20–29",
+    "passages": [
+      {
+        "ref": "Êxodo 35:20–29"
+      },
+      {
+        "ref": "Êxodo 36:2–7"
+      },
+      {
+        "ref": "Êxodo 39:32–43"
+      },
+      {
+        "ref": "Êxodo 40:31–38"
+      }
+    ],
+    "context": "Esta travessia revisa a oferta, a generosidade, a obra pronta e a glória que enche.",
+    "keyword": "Glória",
+    "keywordGloss": "Quando o povo obedece, a glória do Senhor habita no meio.",
+    "focusQuestion": "O que falta para a sua oferta e obediência abrirem espaço à glória de Deus?",
+    "reflectionPrompts": [
+      "Coração disposto",
+      "Bastante oferta",
+      "Glória que enche"
+    ],
+    "facts": [
+      {
+        "text": "Homens e mulheres de coração disposto trouxeram oferta.",
+        "evidenceRef": "Êxodo 35:22",
+        "evidenceSpan": "com o coração disposto"
+      },
+      {
+        "text": "O material era suficiente e ainda sobejava.",
+        "evidenceRef": "Êxodo 36:7",
+        "evidenceSpan": "era suficiente para toda a obra a ser realizada e ainda sobejava"
+      },
+      {
+        "text": "Fizeram tudo conforme o Senhor ordenara; Moisés abençoou.",
+        "evidenceRef": "Êxodo 39:43",
+        "evidenceSpan": "Moisés os abençoou"
+      },
+      {
+        "text": "A glória do SENHOR encheu o tabernáculo.",
+        "evidenceRef": "Êxodo 40:34",
+        "evidenceSpan": "a glória do SENHOR encheu o tabernáculo"
+      },
+      {
+        "text": "A nuvem guiava as jornadas de Israel.",
+        "evidenceRef": "Êxodo 40:36",
+        "evidenceSpan": "os filhos de Israel prosseguiam em suas jornadas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "disposto",
+        "gloss": "Coração pronto a ofertar."
+      },
+      {
+        "term": "suficiente",
+        "gloss": "Material bastante para a obra."
+      },
+      {
+        "term": "glória",
+        "gloss": "Presença que enche o tabernáculo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Oferta de coração",
+        "evidenceRef": "Êxodo 35:20–29"
+      },
+      {
+        "label": "Generosidade que sobra",
+        "evidenceRef": "Êxodo 36:2–7"
+      },
+      {
+        "label": "Obra conforme a ordem",
+        "evidenceRef": "Êxodo 39:32–43"
+      },
+      {
+        "label": "Glória que enche e guia",
+        "evidenceRef": "Êxodo 40:31–38"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Viu a obra e então abençoou.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 39:43"
+      },
+      {
+        "kind": "causa",
+        "text": "Moisés não entrava pois a glória enchia.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 40:35"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque havia bastante, pararam de trazer.",
+        "marker": "Porque",
+        "evidenceRef": "Êxodo 36:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 9:7",
+        "bridge": "Dar com alegria"
+      },
+      {
+        "ref": "1 Reis 8:11",
+        "bridge": "Glória enche a Casa"
+      },
+      {
+        "ref": "Apocalipse 21:3",
+        "bridge": "Deus habita com os homens"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A glória veio sem oferta nem obediência.",
+        "why": "Há oferta, obra conforme a ordem e então a glória."
+      },
+      {
+        "text": "O povo trouxe de má vontade e faltou material.",
+        "why": "Trouxeram demais e sobejava."
+      },
+      {
+        "text": "Moisés rejeitou a obra concluída.",
+        "why": "Ele viu e abençoou."
+      }
+    ],
+    "centralInsight": "Quando o povo obedece, a glória do Senhor habita no meio",
+    "anchorQuestion": "O que encheu o tabernáculo quando a nuvem cobriu a tenda?"
+  },
+  "questions": [
+    {
+      "question": "O povo trouxe oferta só por obrigação, nunca de coração disposto.",
+      "verseRef": "Êxodo 35:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "com o coração disposto",
+      "feedbackCorrect": "Trouxeram de coração disposto.",
+      "feedbackWrong": {
+        "true": "Releia: coração disposto."
+      },
+      "hint": "Como estava o coração?",
+      "learningObjective": "Observar o coração disposto.",
+      "evidence": [
+        "Êxodo 35:22"
+      ],
+      "type": "true_false",
+      "difficulty": "semente"
+    },
+    {
+      "question": "Em Êxodo 36:5, toque o que o povo traz em relação ao necessário.",
+      "verseRef": "Êxodo 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "muito mais"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "serviço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "muito mais do que é necessário",
+      "feedbackCorrect": "Muito mais do que o necessário.",
+      "feedbackWrong": {
+        "b": "Moisés ouve.",
+        "c": "Serviço é o destino."
+      },
+      "hint": "Traz ___ ___ do que é necessário.",
+      "learningObjective": "Identificar o excesso.",
+      "evidence": [
+        "Êxodo 36:5"
+      ],
+      "type": "find_in_text",
+      "difficulty": "semente"
+    },
+    {
+      "question": "Segundo Êxodo 39:43, o que Moisés fez após ver a obra?",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os abençoou"
+        },
+        {
+          "id": "b",
+          "text": "Rejeitou a obra"
+        },
+        {
+          "id": "c",
+          "text": "Quebrou o tabernáculo"
+        },
+        {
+          "id": "d",
+          "text": "Voltou ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés os abençoou",
+      "feedbackCorrect": "Moisés os abençoou.",
+      "feedbackWrong": {
+        "b": "Não rejeitou.",
+        "c": "Não quebrou.",
+        "d": "Não voltou."
+      },
+      "hint": "A última ação do versículo.",
+      "learningObjective": "Observar a bênção.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "type": "choice",
+      "difficulty": "semente"
+    },
+    {
+      "difficulty": "semente",
+      "question": "Monte Êxodo 40:38 na ordem do texto.",
+      "verseRef": "Êxodo 40:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "a nuvem do SENHOR repousava de dia sobre o tabernáculo"
+        },
+        {
+          "id": "b",
+          "text": "e à noite havia fogo nele"
+        },
+        {
+          "id": "c",
+          "text": "à vista de toda a casa de Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a nuvem do SENHOR repousava de dia",
+      "feedbackCorrect": "Nuvem, fogo, à vista de Israel.",
+      "feedbackWrong": {
+        "default": "Comece pela nuvem de dia."
+      },
+      "hint": "O versículo começa com a nuvem.",
+      "learningObjective": "Reconhecer Êxodo 40:38.",
+      "evidence": [
+        "Êxodo 40:38"
+      ],
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 35:29, trouxeram oferta ___ ao SENHOR.",
+      "verseRef": "Êxodo 35:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "voluntária"
+        },
+        {
+          "id": "b",
+          "text": "forçada"
+        },
+        {
+          "id": "c",
+          "text": "secreta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "oferta voluntária ao SENHOR",
+      "feedbackCorrect": "Oferta voluntária.",
+      "feedbackWrong": {
+        "b": "Não forçada.",
+        "c": "O termo é voluntária."
+      },
+      "hint": "Oferta ___.",
+      "learningObjective": "Lembrar voluntária.",
+      "evidence": [
+        "Êxodo 35:29"
+      ],
+      "type": "complete",
+      "difficulty": "semente"
+    },
+    {
+      "question": "O que Êxodo 40:34 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 40:34",
+      "passageA": {
+        "ref": "Êxodo 40:34"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quando o povo obedece, a glória do Senhor habita no meio."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Glória que enche a casa"
+        },
+        {
+          "id": "b",
+          "text": "Tenda vazia"
+        },
+        {
+          "id": "c",
+          "text": "Obra rejeitada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do SENHOR encheu o tabernáculo",
+      "feedbackCorrect": "A glória enche após a obra.",
+      "feedbackWrong": {
+        "b": "A glória enche.",
+        "c": "Há bênção e glória."
+      },
+      "hint": "Compare obra e glória.",
+      "learningObjective": "Ligar obediência e glória.",
+      "evidence": [
+        "Êxodo 40:34"
+      ],
+      "type": "connect",
+      "difficulty": "semente"
+    },
+    {
+      "question": "Em Êxodo 39:32, toque o que foi concluída.",
+      "verseRef": "Êxodo 39:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "obra"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi concluída toda a obra",
+      "feedbackCorrect": "Toda a obra foi concluída.",
+      "feedbackWrong": {
+        "b": "Senhor ordenou.",
+        "c": "Moisés recebe."
+      },
+      "hint": "Concluída toda a ___.",
+      "learningObjective": "Identificar a obra.",
+      "evidence": [
+        "Êxodo 39:32"
+      ],
+      "type": "find_in_text",
+      "difficulty": "semente"
+    },
+    {
+      "question": "Monte Êxodo 36:7 na ordem do texto.",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o material que possuíam era suficiente"
+        },
+        {
+          "id": "b",
+          "text": "para toda a obra a ser realizada"
+        },
+        {
+          "id": "c",
+          "text": "e ainda sobejava"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "era suficiente",
+      "feedbackCorrect": "Suficiente, obra, sobejava.",
+      "feedbackWrong": {
+        "default": "Comece por Porque."
+      },
+      "hint": "O versículo começa com Porque.",
+      "learningObjective": "Reconhecer Êxodo 36:7.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "type": "order",
+      "difficulty": "semente"
+    },
+    {
+      "question": "Em Êxodo 36:6, Moisés mandou o povo continuar a trazer sem parar.",
+      "verseRef": "Êxodo 36:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "o povo foi impedido de trazer mais",
+      "feedbackCorrect": "O povo foi impedido de trazer mais.",
+      "feedbackWrong": {
+        "true": "Releia: impedido de trazer mais."
+      },
+      "hint": "O que a proclamação mandou?",
+      "learningObjective": "Compreender a parada.",
+      "evidence": [
+        "Êxodo 36:6"
+      ],
+      "type": "true_false",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Em Êxodo 39:43, toque a palavra que marca o resultado após ver a obra.",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "obra"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, Moisés os abençoou",
+      "feedbackCorrect": "\"Então\" introduz a bênção.",
+      "feedbackWrong": {
+        "b": "Obra é o que viu.",
+        "c": "Senhor ordenou."
+      },
+      "hint": "Antes de Moisés os abençoou.",
+      "learningObjective": "Tocar o resultado.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "type": "find_in_text",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Como Êxodo 35:29 liga coração e ordem do Senhor?",
+      "verseRef": "Êxodo 35:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "O coração dispôs a trazer o que o Senhor ordenara"
+        },
+        {
+          "id": "b",
+          "text": "O coração rejeitou a ordem"
+        },
+        {
+          "id": "c",
+          "text": "Só o material importa"
+        },
+        {
+          "id": "d",
+          "text": "A oferta era ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cujo coração os dispôs para trazerem uma oferta",
+      "feedbackCorrect": "Disposição e ordem caminham juntas.",
+      "feedbackWrong": {
+        "b": "Há disposição.",
+        "c": "O texto destaca o coração.",
+        "d": "A oferta é ao SENHOR."
+      },
+      "hint": "Una coração e ordenado.",
+      "learningObjective": "Relacionar coração e ordem.",
+      "evidence": [
+        "Êxodo 35:29"
+      ],
+      "type": "choice",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Como avança a travessia da obra concluída?",
+      "verseRef": "Êxodo 35:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração disposto traz oferta"
+        },
+        {
+          "id": "b",
+          "text": "Material suficiente e parada"
+        },
+        {
+          "id": "c",
+          "text": "Glória enche o tabernáculo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coração disposto",
+      "feedbackCorrect": "Oferta, suficiência, glória.",
+      "feedbackWrong": {
+        "default": "Comece pelo coração."
+      },
+      "hint": "Primeiro a oferta; no fim a glória.",
+      "learningObjective": "Compreender o bloco.",
+      "evidence": [
+        "Êxodo 35:22",
+        "Êxodo 36:7",
+        "Êxodo 40:34"
+      ],
+      "type": "order",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Em Êxodo 36:7, o material era ___ e ainda sobejava.",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "suficiente"
+        },
+        {
+          "id": "b",
+          "text": "escasso"
+        },
+        {
+          "id": "c",
+          "text": "proibido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era suficiente",
+      "feedbackCorrect": "Era suficiente e ainda sobejava.",
+      "feedbackWrong": {
+        "b": "Não escasso.",
+        "c": "O termo é suficiente."
+      },
+      "hint": "Era ___.",
+      "learningObjective": "Lembrar suficiente.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "type": "complete",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "O que liga Êxodo 35:22 a 2 Coríntios 9:7?",
+      "verseRef": "Êxodo 35:22",
+      "passageA": {
+        "ref": "Êxodo 35:22"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 9:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dar do coração com alegria"
+        },
+        {
+          "id": "b",
+          "text": "Dar só por obrigação"
+        },
+        {
+          "id": "c",
+          "text": "Guardar sem ofertar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coração disposto",
+      "feedbackCorrect": "Coração disposto ecoa o dar alegre.",
+      "feedbackWrong": {
+        "b": "É disposição.",
+        "c": "Há oferta."
+      },
+      "hint": "De onde nasce o dar?",
+      "learningObjective": "Relacionar coração.",
+      "evidence": [
+        "Êxodo 35:22",
+        "2 Coríntios 9:7"
+      ],
+      "type": "connect",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Em Êxodo 40:35, toque a palavra que introduz o motivo de Moisés não entrar.",
+      "verseRef": "Êxodo 40:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "tenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois a nuvem permanecia sobre ela",
+      "feedbackCorrect": "\"Pois\" introduz o motivo.",
+      "feedbackWrong": {
+        "b": "Moisés é quem não entra.",
+        "c": "Tenda é o lugar."
+      },
+      "hint": "Qual palavra precede a nuvem?",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Êxodo 40:35"
+      ],
+      "type": "find_in_text",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Monte a ordem: oferta, suficiência, bênção.",
+      "verseRef": "Êxodo 35:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração disposto oferece"
+        },
+        {
+          "id": "b",
+          "text": "Material suficiente sobeja"
+        },
+        {
+          "id": "c",
+          "text": "Moisés vê e abençoa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coração disposto",
+      "feedbackCorrect": "Oferta, suficiência, bênção.",
+      "feedbackWrong": {
+        "default": "Comece pelo coração."
+      },
+      "hint": "Siga o bloco.",
+      "learningObjective": "Ordenar o fio da obra.",
+      "evidence": [
+        "Êxodo 35:22",
+        "Êxodo 36:7",
+        "Êxodo 39:43"
+      ],
+      "type": "order",
+      "difficulty": "caminhada"
+    },
+    {
+      "question": "Êxodo 35–40 sustenta que, quando o povo obedece de coração, a glória do Senhor habita no meio.",
+      "verseRef": "Êxodo 40:34",
+      "correctOptionId": "true",
+      "evidenceSpan": "a glória do SENHOR encheu o tabernáculo",
+      "feedbackCorrect": "Oferta, obra conforme a ordem e glória que enche.",
+      "feedbackWrong": {
+        "false": "O texto une obediência e glória."
+      },
+      "hint": "Una obra e glória.",
+      "learningObjective": "Interpretar obediência e habitação.",
+      "evidence": [
+        "Êxodo 39:43",
+        "Êxodo 40:34"
+      ],
+      "type": "true_false",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "Em Êxodo 40:34, toque o que cobriu a tenda.",
+      "verseRef": "Êxodo 40:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "nuvem"
+        },
+        {
+          "id": "b",
+          "text": "glória"
+        },
+        {
+          "id": "c",
+          "text": "tabernáculo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a nuvem cobriu a tenda",
+      "feedbackCorrect": "A nuvem cobriu a tenda.",
+      "feedbackWrong": {
+        "b": "A glória encheu.",
+        "c": "Tabernáculo foi enchido."
+      },
+      "hint": "O que cobriu?",
+      "learningObjective": "Sustentar a nuvem.",
+      "evidence": [
+        "Êxodo 40:34"
+      ],
+      "type": "find_in_text",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "Que leitura esta travessia sustenta sobre a obra?",
+      "verseRef": "Êxodo 40:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obediência de coração prepara a habitação da glória"
+        },
+        {
+          "id": "b",
+          "text": "A glória dispensa qualquer oferta"
+        },
+        {
+          "id": "c",
+          "text": "A obra pode ignorar a ordem"
+        },
+        {
+          "id": "d",
+          "text": "Moisés rejeita a obra concluída"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do SENHOR encheu o tabernáculo",
+      "feedbackCorrect": "Coração, conformidade e glória se unem.",
+      "feedbackWrong": {
+        "b": "Há oferta e obra.",
+        "c": "Fizeram conforme a ordem.",
+        "d": "Ele abençoou."
+      },
+      "hint": "Una coração, ordem e glória.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Êxodo 35:29",
+        "Êxodo 40:34"
+      ],
+      "type": "choice",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "Qual sequência liga a obra concluída à Escritura?",
+      "verseRef": "Êxodo 39:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obra conforme o Senhor ordenou"
+        },
+        {
+          "id": "b",
+          "text": "A glória enche o tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "1 Reis ecoa a glória que enche a Casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "conforme o que o Senhor tinha ordenado",
+      "feedbackCorrect": "Obra, glória, eco em Reis.",
+      "feedbackWrong": {
+        "default": "Comece pela obra."
+      },
+      "hint": "Siga a revelação.",
+      "learningObjective": "Ver o fio da glória.",
+      "evidence": [
+        "Êxodo 39:32",
+        "Êxodo 40:34",
+        "1 Reis 8:11"
+      ],
+      "type": "order",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "Em Êxodo 40:34, a glória do SENHOR ___ o tabernáculo.",
+      "verseRef": "Êxodo 40:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "encheu"
+        },
+        {
+          "id": "b",
+          "text": "evitou"
+        },
+        {
+          "id": "c",
+          "text": "vendeu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do SENHOR encheu o tabernáculo",
+      "feedbackCorrect": "Encheu o tabernáculo.",
+      "feedbackWrong": {
+        "b": "Não evitou.",
+        "c": "O verbo é encheu."
+      },
+      "hint": "O que a glória fez?",
+      "learningObjective": "Lembrar encheu.",
+      "evidence": [
+        "Êxodo 40:34"
+      ],
+      "type": "complete",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "O que liga Êxodo 40:34 a Apocalipse 21:3?",
+      "verseRef": "Êxodo 40:34",
+      "passageA": {
+        "ref": "Êxodo 40:34"
+      },
+      "passageB": {
+        "ref": "Apocalipse 21:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus habita com o povo"
+        },
+        {
+          "id": "b",
+          "text": "Tenda abandonada"
+        },
+        {
+          "id": "c",
+          "text": "Glória só no passado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do SENHOR encheu o tabernáculo",
+      "feedbackCorrect": "Habitação de Deus une os textos.",
+      "feedbackWrong": {
+        "b": "Há enchimento.",
+        "c": "Apocalipse aponta habitação."
+      },
+      "hint": "O que Deus faz com o povo?",
+      "learningObjective": "Ligar habitação.",
+      "evidence": [
+        "Êxodo 40:34",
+        "Apocalipse 21:3"
+      ],
+      "type": "connect",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "Em Êxodo 39:42, toque a palavra que marca a conformidade.",
+      "verseRef": "Êxodo 39:42",
+      "options": [
+        {
+          "id": "a",
+          "text": "assim"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "obra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim fizeram os filhos de Israel toda a obra",
+      "feedbackCorrect": "\"Assim\" marca a conformidade.",
+      "feedbackWrong": {
+        "b": "Israel é quem faz.",
+        "c": "Obra é o objeto."
+      },
+      "hint": "A palavra repetida da conformidade.",
+      "learningObjective": "Sustentar a conformidade.",
+      "evidence": [
+        "Êxodo 39:42"
+      ],
+      "type": "find_in_text",
+      "difficulty": "profundezas"
+    },
+    {
+      "question": "Monte a lógica: generosidade, obra, glória.",
+      "verseRef": "Êxodo 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo traz muito mais do necessário"
+        },
+        {
+          "id": "b",
+          "text": "Fazem conforme o Senhor ordenou"
+        },
+        {
+          "id": "c",
+          "text": "A glória do SENHOR enche o tabernáculo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "muito mais do que é necessário",
+      "feedbackCorrect": "Generosidade, obediência, glória.",
+      "feedbackWrong": {
+        "default": "Comece pelo excesso."
+      },
+      "hint": "Siga o bloco final.",
+      "learningObjective": "Ordenar generosidade e glória.",
+      "evidence": [
+        "Êxodo 36:5",
+        "Êxodo 39:42",
+        "Êxodo 40:34"
+      ],
+      "type": "order",
+      "difficulty": "profundezas"
+    }
+  ]
+}

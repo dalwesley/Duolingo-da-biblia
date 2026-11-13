@@ -1,0 +1,708 @@
+{
+ "study": {
+  "passageRef": "Jó 28:20–28",
+  "passages": [
+   {
+    "ref": "Jó 28:20–28"
+   }
+  ],
+  "context": "Jó pergunta onde está a sabedoria. Nem vivo nem abismo a possuem; só Deus a conhece e a declara ao homem.",
+  "keyword": "temor",
+  "keywordGloss": "O princípio da sabedoria que Deus declara ao homem.",
+  "focusQuestion": "Onde você ainda tenta comprar sabedoria em vez de temer o Senhor?",
+  "reflectionPrompts": [
+   "Onde está a sabedoria",
+   "Só Deus conhece",
+   "Temor e entendimento"
+  ],
+  "facts": [
+   {
+    "text": "Jó pergunta de onde vem a sabedoria e onde está a inteligência.",
+    "evidenceRef": "Jó 28:20",
+    "evidenceSpan": "De onde, pois, vem a sabedoria, e onde se encontra o lugar da inteligência?"
+   },
+   {
+    "text": "A sabedoria está oculta aos olhos de todo vivente.",
+    "evidenceRef": "Jó 28:21",
+    "evidenceSpan": "está oculta aos olhos de todo vivente"
+   },
+   {
+    "text": "Deus compreende o caminho da sabedoria e conhece o seu lugar.",
+    "evidenceRef": "Jó 28:23",
+    "evidenceSpan": "Deus compreende o seu caminho, e é Ele quem conhece o seu lugar"
+   },
+   {
+    "text": "Deus determina o peso do vento e a medida das águas.",
+    "evidenceRef": "Jó 28:25",
+    "evidenceSpan": "Ele determina o peso do vento e estabelece a medida das águas"
+   },
+   {
+    "text": "O temor do Senhor é a sabedoria; afastar-se do mal é o entendimento.",
+    "evidenceRef": "Jó 28:28",
+    "evidenceSpan": "o temor do Senhor é a sabedoria, e o afastar-se do mal é o entendimento"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sabedoria",
+    "gloss": "O que não se compra e cujo lugar só Deus conhece."
+   },
+   {
+    "term": "temor",
+    "gloss": "O princípio que Deus declara como sabedoria."
+   },
+   {
+    "term": "entendimento",
+    "gloss": "Afastar-se do mal, segundo a declaração divina."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pergunta pela origem da sabedoria",
+    "evidenceRef": "Jó 28:20–22"
+   },
+   {
+    "label": "Só Deus conhece o caminho",
+    "evidenceRef": "Jó 28:23–27"
+   },
+   {
+    "label": "Declaração: temor e afastamento do mal",
+    "evidenceRef": "Jó 28:28"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Porque está oculta a todo vivente.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 28:21"
+   },
+   {
+    "kind": "causa",
+    "text": "Porque Ele perscruta os confins da terra.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 28:24"
+   },
+   {
+    "kind": "resultado",
+    "text": "Então Ele a viu e a esquadrinhou.",
+    "marker": "Então",
+    "evidenceRef": "Jó 28:27"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Provérbios 1:7",
+    "bridge": "Temor é o princípio"
+   },
+   {
+    "ref": "Provérbios 9:10",
+    "bridge": "Temor e conhecimento"
+   },
+   {
+    "ref": "Tiago 1:5",
+    "bridge": "Pedir sabedoria a Deus"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A sabedoria se compra com esforço humano suficiente.",
+    "why": "O texto a declara oculta aos viventes; só Deus a conhece e a declara."
+   },
+   {
+    "text": "Temer o Senhor é só emoção, sem afastamento do mal.",
+    "why": "O versículo une temor e afastar-se do mal."
+   },
+   {
+    "text": "O abismo já possui a sabedoria plena.",
+    "why": "Destruição e abismo só ouviram a fama, não a possuem."
+   }
+  ],
+  "centralInsight": "A sabedoria não se compra: Deus a vê, e ao homem diz que o princípio é temê-lo.",
+  "anchorQuestion": "O que Jó 28:28 diz que é a sabedoria?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 28:28, o temor do Senhor é a sabedoria.",
+   "verseRef": "Jó 28:28",
+   "correctOptionId": "true",
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "A declaração final é explícita.",
+   "feedbackWrong": {
+    "false": "Releia o início da declaração em 28:28."
+   },
+   "hint": "Primeira metade do versículo.",
+   "learningObjective": "Observar a declaração sobre o temor.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 28:28, toque o que é a sabedoria.",
+   "verseRef": "Jó 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "temor do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "afastar-se"
+    },
+    {
+     "id": "c",
+     "text": "entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "A sabedoria é o temor do Senhor.",
+   "feedbackWrong": {
+    "b": "Faz parte do entendimento.",
+    "c": "É o segundo termo; a sabedoria é o temor."
+   },
+   "hint": "Início da declaração.",
+   "learningObjective": "Tocar a definição da sabedoria.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 28:23, quem conhece o lugar da sabedoria?",
+   "verseRef": "Jó 28:23",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "Todo vivente"
+    },
+    {
+     "id": "c",
+     "text": "As aves do céu"
+    },
+    {
+     "id": "d",
+     "text": "O abismo sozinho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "é Ele quem conhece o seu lugar",
+   "feedbackCorrect": "Só Deus conhece o lugar.",
+   "feedbackWrong": {
+    "b": "Está oculta aos viventes.",
+    "c": "Está encoberta às aves.",
+    "d": "O abismo só ouviu a fama."
+   },
+   "hint": "Quem compreende o caminho.",
+   "learningObjective": "Registrar quem conhece a sabedoria.",
+   "evidence": [
+    "Jó 28:23"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Ordene as peças de Jó 28:28 na ordem do texto.",
+   "verseRef": "Jó 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que o temor do Senhor é a sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "e o afastar-se do mal"
+    },
+    {
+     "id": "c",
+     "text": "é o entendimento"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "Temor, afastamento, entendimento.",
+   "feedbackWrong": {
+    "default": "Siga a ordem do versículo."
+   },
+   "hint": "Comece por \"Eis que\".",
+   "learningObjective": "Seguir a ordem literal.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 28:28, que palavra nomeia o princípio da sabedoria?",
+   "verseRef": "Jó 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "temor"
+    },
+    {
+     "id": "b",
+     "text": "ouro"
+    },
+    {
+     "id": "c",
+     "text": "vento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "A palavra-chave é temor.",
+   "feedbackWrong": {
+    "b": "Não há ouro neste versículo.",
+    "c": "Vento aparece em 28:25."
+   },
+   "hint": "Antes de \"do Senhor\".",
+   "learningObjective": "Lembrar a palavra concreta.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 28:28 comunica que se liga a este contexto?",
+   "verseRef": "Jó 28:28",
+   "passageA": {
+    "ref": "Jó 28:28",
+    "text": "o temor do Senhor é a sabedoria"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A sabedoria não se compra; Deus a declara ao homem."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria que se teme"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria que se compra"
+    },
+    {
+     "id": "c",
+     "text": "Sabedoria das aves"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "O temor é o caminho declarado.",
+   "feedbackWrong": {
+    "b": "O texto não ensina compra.",
+    "c": "Está encoberta às aves."
+   },
+   "hint": "Pense na declaração final.",
+   "learningObjective": "Ligar o versículo ao insight.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 28:21, o \"Porque\" explica que a sabedoria está oculta aos viventes.",
+   "verseRef": "Jó 28:21",
+   "correctOptionId": "true",
+   "evidenceSpan": "Porque está oculta aos olhos de todo vivente",
+   "feedbackCorrect": "A causa da pergunta é a ocultação.",
+   "feedbackWrong": {
+    "false": "Releia o início de 28:21."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Ver a relação de causa.",
+   "evidence": [
+    "Jó 28:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 28:21, toque a palavra que marca a causa da ocultação.",
+   "verseRef": "Jó 28:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "oculta"
+    },
+    {
+     "id": "c",
+     "text": "vivente"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque está oculta aos olhos de todo vivente",
+   "feedbackCorrect": "\"Porque\" marca a causa.",
+   "feedbackWrong": {
+    "b": "É o estado; o marcador é \"Porque\".",
+    "c": "É o sujeito da ocultação."
+   },
+   "hint": "Primeira palavra.",
+   "learningObjective": "Tocar o marcador de causa.",
+   "evidence": [
+    "Jó 28:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Qual relação Jó 28:23–24 estabelece sobre o conhecimento de Deus?",
+   "verseRef": "Jó 28:23–24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele conhece o lugar porque perscruta a terra"
+    },
+    {
+     "id": "b",
+     "text": "Ele ignora o caminho da sabedoria"
+    },
+    {
+     "id": "c",
+     "text": "Só as aves conhecem o lugar"
+    },
+    {
+     "id": "d",
+     "text": "O abismo ensina Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque Ele perscruta até os confins da terra",
+   "feedbackCorrect": "Conhecer e perscrutar se ligam.",
+   "feedbackWrong": {
+    "b": "Ele compreende o caminho.",
+    "c": "Está encoberta às aves.",
+    "d": "O abismo só ouviu a fama."
+   },
+   "hint": "Una 28:23 e 28:24.",
+   "learningObjective": "Compreender causa e conhecimento.",
+   "evidence": [
+    "Jó 28:23",
+    "Jó 28:24"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Ordene os movimentos do poema da sabedoria.",
+   "verseRef": "Jó 28:20–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pergunta pela origem da sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Só Deus conhece o caminho"
+    },
+    {
+     "id": "c",
+     "text": "Declaração: temor e afastamento do mal"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "feedbackCorrect": "Pergunta, conhecimento divino, declaração.",
+   "feedbackWrong": {
+    "default": "Comece pela pergunta."
+   },
+   "hint": "Siga a ordem do trecho.",
+   "learningObjective": "Ordenar a estrutura.",
+   "evidence": [
+    "Jó 28:20",
+    "Jó 28:23",
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 28:27, que palavra marca o momento em que Deus age sobre a sabedoria?",
+   "verseRef": "Jó 28:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então"
+    },
+    {
+     "id": "b",
+     "text": "Nunca"
+    },
+    {
+     "id": "c",
+     "text": "Talvez"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, Ele a viu, a manifestou",
+   "feedbackCorrect": "\"Então\" marca o resultado da ação divina.",
+   "feedbackWrong": {
+    "b": "Não há \"Nunca\".",
+    "c": "O marcador é \"Então\"."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Lembrar o marcador de sequência.",
+   "evidence": [
+    "Jó 28:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 28:28 a Provérbios 1:7?",
+   "verseRef": "Jó 28:28",
+   "passageA": {
+    "ref": "Jó 28:28",
+    "text": "o temor do Senhor é a sabedoria"
+   },
+   "passageB": {
+    "ref": "Provérbios 1:7"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor é o princípio"
+    },
+    {
+     "id": "b",
+     "text": "Festa da colheita"
+    },
+    {
+     "id": "c",
+     "text": "Trono dos anjos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "Ambos ligam temor do Senhor e sabedoria.",
+   "feedbackWrong": {
+    "b": "Não há colheita neste paralelo.",
+    "c": "Não há trono neste cruzamento."
+   },
+   "hint": "Compare o temor do Senhor.",
+   "learningObjective": "Cruzar o princípio da sabedoria.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 28:20–28, a sabedoria se compra com ouro e esforço humano suficiente.",
+   "verseRef": "Jó 28:20–21",
+   "correctOptionId": "false",
+   "evidenceSpan": "está oculta aos olhos de todo vivente",
+   "feedbackCorrect": "Está oculta; só Deus a conhece e a declara.",
+   "feedbackWrong": {
+    "true": "O texto a declara oculta aos viventes, não à venda."
+   },
+   "hint": "Leia 28:21 e 28:23.",
+   "learningObjective": "Rejeitar a leitura de compra.",
+   "evidence": [
+    "Jó 28:21"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 28:28, toque o trecho que sustenta o lado prático do entendimento.",
+   "verseRef": "Jó 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "afastar-se do mal"
+    },
+    {
+     "id": "b",
+     "text": "temor do Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Eis que"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o afastar-se do mal é o entendimento",
+   "feedbackCorrect": "O entendimento é afastar-se do mal.",
+   "feedbackWrong": {
+    "b": "É a sabedoria; o entendimento é o afastamento.",
+    "c": "Abre a frase."
+   },
+   "hint": "Segunda metade do versículo.",
+   "learningObjective": "Tocar a evidência do entendimento.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Qual leitura o trecho sustenta melhor?",
+   "verseRef": "Jó 28:20–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria vem de Deus e começa no temor"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria mora no abismo"
+    },
+    {
+     "id": "c",
+     "text": "Todo vivente já a possui"
+    },
+    {
+     "id": "d",
+     "text": "Aves revelam o caminho completo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "Oculamento, conhecimento divino e declaração se unem.",
+   "feedbackWrong": {
+    "b": "O abismo só ouviu a fama.",
+    "c": "Está oculta aos viventes.",
+    "d": "Está encoberta às aves."
+   },
+   "hint": "Una 28:23 e 28:28.",
+   "learningObjective": "Escolher a interpretação sustentável.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Ordene a lógica do poema.",
+   "verseRef": "Jó 28:20–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confessar que a sabedoria está oculta"
+    },
+    {
+     "id": "b",
+     "text": "Afirmar que só Deus a conhece"
+    },
+    {
+     "id": "c",
+     "text": "Ouvir a declaração do temor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o temor do Senhor é a sabedoria",
+   "feedbackCorrect": "Oculta, conhecida por Deus, declarada.",
+   "feedbackWrong": {
+    "default": "Comece pela ocultação."
+   },
+   "hint": "Da pergunta à declaração.",
+   "learningObjective": "Encadear a lógica.",
+   "evidence": [
+    "Jó 28:21",
+    "Jó 28:23",
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 28:28, que palavra nomeia o que é afastar-se do mal?",
+   "verseRef": "Jó 28:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "entendimento"
+    },
+    {
+     "id": "b",
+     "text": "abismo"
+    },
+    {
+     "id": "c",
+     "text": "relâmpago"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o afastar-se do mal é o entendimento",
+   "feedbackCorrect": "\"Entendimento\" carrega o sentido prático.",
+   "feedbackWrong": {
+    "b": "Abismo aparece antes.",
+    "c": "Relâmpagos estão em 28:26."
+   },
+   "hint": "Última palavra do versículo.",
+   "learningObjective": "Lembrar o termo do entendimento.",
+   "evidence": [
+    "Jó 28:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 28:23 a Tiago 1:5?",
+   "verseRef": "Jó 28:23",
+   "passageA": {
+    "ref": "Jó 28:23",
+    "text": "Deus compreende o seu caminho"
+   },
+   "passageB": {
+    "ref": "Tiago 1:5"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedir sabedoria a Deus"
+    },
+    {
+     "id": "b",
+     "text": "Comprar com ouro"
+    },
+    {
+     "id": "c",
+     "text": "Consultar o abismo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus compreende o seu caminho",
+   "feedbackCorrect": "Só Deus conhece; Tiago manda pedir a Ele.",
+   "feedbackWrong": {
+    "b": "Não há compra neste paralelo.",
+    "c": "O abismo não a possui."
+   },
+   "hint": "Pense em quem tem a sabedoria.",
+   "learningObjective": "Cruzar a fonte da sabedoria.",
+   "evidence": [
+    "Jó 28:23"
+   ]
+  }
+ ]
+}

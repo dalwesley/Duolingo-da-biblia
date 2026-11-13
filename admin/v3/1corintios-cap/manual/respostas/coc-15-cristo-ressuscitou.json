@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "1 Coríntios 15:12–17",
+    "passages": [
+      { "ref": "1 Coríntios 15:12–17" },
+      { "ref": "1 Coríntios 15:18–22" }
+    ],
+    "context": "Em Corinto, alguns negavam a ressurreição dos mortos. Paulo responde partindo do anúncio já feito: Cristo ressuscitou. Se não há ressurreição, a fé e a pregação caem; mas Cristo, de fato, ressuscitou como primícias.",
+    "keyword": "ressuscitou",
+    "keywordGloss": "No texto, o verbo ancora o evangelho: Cristo deixou a morte, e isso decide a fé e a esperança dos que dormem.",
+    "focusQuestion": "Se a sua esperança em Cristo fosse só para esta vida, o que mudaria na forma como você vive hoje?",
+    "reflectionPrompts": [
+      "Se Cristo não ressuscitou",
+      "A fé não é vã",
+      "Primícias dos que dormem"
+    ],
+    "facts": [
+      {
+        "text": "Alguns em Corinto afirmavam que não há ressurreição de mortos.",
+        "evidenceRef": "1 Coríntios 15:12",
+        "evidenceSpan": "alguns de vocês afirmam que não há ressurreição de mortos"
+      },
+      {
+        "text": "Se não há ressurreição de mortos, Cristo também não ressuscitou.",
+        "evidenceRef": "1 Coríntios 15:13",
+        "evidenceSpan": "então, Cristo também não ressuscitou"
+      },
+      {
+        "text": "Se Cristo não ressuscitou, a pregação e a fé são vãs.",
+        "evidenceRef": "1 Coríntios 15:14",
+        "evidenceSpan": "é vã a nossa pregação, e vã também a vossa fé"
+      },
+      {
+        "text": "Se Cristo não ressuscitou, os crentes ainda permanecem nos pecados.",
+        "evidenceRef": "1 Coríntios 15:17",
+        "evidenceSpan": "é vã a sua fé, e vocês ainda permanecem nos seus pecados"
+      },
+      {
+        "text": "Cristo, de fato, ressuscitou dentre os mortos, tornando-se as primícias dos que dormem.",
+        "evidenceRef": "1 Coríntios 15:20",
+        "evidenceSpan": "Cristo ressuscitou dentre os mortos, tornando-se as primícias dos que dormem"
+      },
+      {
+        "text": "Assim como todos morrem em Adão, todos serão ressuscitados em Cristo.",
+        "evidenceRef": "1 Coríntios 15:22",
+        "evidenceSpan": "todos morrem em Adão, assim também todos serão ressuscitados em Cristo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "primícias",
+        "gloss": "O primeiro fruto da colheita: Cristo ressuscitou primeiro, garantindo a colheita dos que dormem."
+      },
+      {
+        "term": "vã",
+        "gloss": "Vazia, sem efeito: assim ficam a pregação e a fé se Cristo não ressuscitou."
+      },
+      {
+        "term": "ressuscitou",
+        "gloss": "Cristo deixou a morte; o verbo é o eixo do argumento e da esperança."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A negação em Corinto e a lógica de Paulo",
+        "evidenceRef": "1 Coríntios 15:12–13"
+      },
+      {
+        "label": "Consequências se Cristo não ressuscitou",
+        "evidenceRef": "1 Coríntios 15:14–19"
+      },
+      {
+        "label": "Mas Cristo ressuscitou como primícias",
+        "evidenceRef": "1 Coríntios 15:20"
+      },
+      {
+        "label": "Morte em Adão, vida em Cristo",
+        "evidenceRef": "1 Coríntios 15:21–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Negar a ressurreição dos mortos implica negar a de Cristo.",
+        "marker": "então",
+        "evidenceRef": "1 Coríntios 15:13"
+      },
+      {
+        "kind": "contraste",
+        "text": "Depois das consequências terríveis, Paulo afirma: mas Cristo ressuscitou.",
+        "marker": "Mas",
+        "evidenceRef": "1 Coríntios 15:20"
+      },
+      {
+        "kind": "resultado",
+        "text": "Sem a ressurreição de Cristo, a fé é vã e os crentes permanecem nos pecados.",
+        "marker": "se",
+        "evidenceRef": "1 Coríntios 15:17"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Romanos 6:9", "bridge": "Cristo não morre mais" },
+      { "ref": "1 Tessalonicenses 4:14", "bridge": "Os que dormem em Jesus" },
+      { "ref": "Romanos 5:12", "bridge": "Morte por um homem" }
+    ],
+    "misreadings": [
+      {
+        "text": "A ressurreição de Cristo basta; a dos mortos é detalhe opcional.",
+        "why": "Paulo liga as duas: se não há ressurreição de mortos, Cristo também não ressuscitou (15:13)."
+      },
+      {
+        "text": "A fé cristã vale mesmo se Cristo não tiver ressuscitado.",
+        "why": "O texto diz: se Cristo não ressuscitou, a fé é vã e os crentes permanecem nos pecados."
+      },
+      {
+        "text": "A esperança em Cristo se limita a esta vida presente.",
+        "why": "Paulo chama isso de miséria; a virada é Cristo ressuscitado como primícias dos que dormem."
+      }
+    ],
+    "centralInsight": "Se Cristo não ressuscitou, a fé é vã; mas ele ressuscitou, primícias dos que dormem.",
+    "anchorQuestion": "Segundo 1 Coríntios 15:20, o que Cristo se tornou ao ressuscitar dentre os mortos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 15:14, se Cristo não ressuscitou, a pregação e a fé continuam firmes e úteis.",
+      "verseRef": "1 Coríntios 15:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "é vã a nossa pregação, e vã também a vossa fé",
+      "feedbackCorrect": "O texto diz o contrário: sem a ressurreição, pregação e fé são vãs.",
+      "feedbackWrong": {
+        "true": "Releia 15:14: sem a ressurreição, a pregação e a fé são vãs."
+      },
+      "hint": "Veja o que Paulo diz da pregação e da fé neste versículo.",
+      "learningObjective": "Observar a consequência imediata se Cristo não ressuscitou.",
+      "evidence": ["1 Coríntios 15:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 15:20, toque quem ressuscitou dentre os mortos.",
+      "verseRef": "1 Coríntios 15:20",
+      "options": [
+        { "id": "a", "text": "os mortos" },
+        { "id": "b", "text": "Cristo" },
+        { "id": "c", "text": "que dormem" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Cristo ressuscitou dentre os mortos",
+      "feedbackCorrect": "O sujeito da virada é Cristo: ele ressuscitou dentre os mortos.",
+      "feedbackWrong": {
+        "a": "\"Os mortos\" dizem de onde ele saiu, não quem ressuscitou.",
+        "c": "\"Que dormem\" descreve os que recebem a esperança; quem ressuscitou é Cristo."
+      },
+      "hint": "Procure o nome próprio no meio do versículo.",
+      "learningObjective": "Identificar Cristo como quem ressuscitou.",
+      "evidence": ["1 Coríntios 15:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Coríntios 15:12, o que alguns em Corinto afirmavam?",
+      "verseRef": "1 Coríntios 15:12",
+      "options": [
+        { "id": "a", "text": "Que Cristo ainda não tinha morrido" },
+        { "id": "b", "text": "Que não há ressurreição de mortos" },
+        { "id": "c", "text": "Que todos já tinham ressuscitado" },
+        { "id": "d", "text": "Que a pregação de Paulo era perfeita" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "afirmam que não há ressurreição de mortos",
+      "feedbackCorrect": "O problema em Corinto é a negação da ressurreição dos mortos.",
+      "feedbackWrong": {
+        "a": "O anúncio parte de Cristo ressuscitado dentre os mortos.",
+        "c": "O texto não diz que todos já ressuscitaram; alguns negam a ressurreição.",
+        "d": "Paulo está confrontando a negação, não elogiando a pregação deles."
+      },
+      "hint": "Leia o fim da pergunta que Paulo faz a eles.",
+      "learningObjective": "Observar a negação que Paulo enfrenta.",
+      "evidence": ["1 Coríntios 15:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 15:14 na ordem do texto.",
+      "verseRef": "1 Coríntios 15:14",
+      "options": [
+        { "id": "a", "text": "E, se Cristo não ressuscitou" },
+        { "id": "b", "text": "é vã a nossa pregação" },
+        { "id": "c", "text": "e vã também a vossa fé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "é vã a nossa pregação, e vã também a vossa fé",
+      "feedbackCorrect": "É a sequência: hipótese, pregação vã e fé vã.",
+      "feedbackWrong": {
+        "default": "Comece pela hipótese sobre Cristo; a fé fecha o versículo."
+      },
+      "hint": "O versículo começa com \"E, se Cristo\".",
+      "learningObjective": "Reconhecer a sequência de 15:14.",
+      "evidence": ["1 Coríntios 15:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Coríntios 15:14, sem a ressurreição, como fica a fé?",
+      "verseRef": "1 Coríntios 15:14",
+      "options": [
+        { "id": "a", "text": "firme" },
+        { "id": "b", "text": "vã" },
+        { "id": "c", "text": "nova" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "e vã também a vossa fé",
+      "feedbackCorrect": "Pregação e fé ficam vãs se Cristo não ressuscitou.",
+      "feedbackWrong": {
+        "a": "O texto não chama a fé de firme neste versículo; chama de vã.",
+        "c": "Não há \"fé nova\" aqui; a palavra é \"vã\"."
+      },
+      "hint": "A mesma palavra descreve a pregação e a fé.",
+      "learningObjective": "Lembrar o adjetivo que Paulo usa para a fé sem ressurreição.",
+      "evidence": ["1 Coríntios 15:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Coríntios 15:20 comunica que se liga a este contexto?",
+      "verseRef": "1 Coríntios 15:20",
+      "passageA": { "ref": "1 Coríntios 15:20" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois de mostrar o desastre se Cristo não ressuscitou, Paulo afirma o fato e a esperança."
+      },
+      "options": [
+        { "id": "a", "text": "Cristo como primícias" },
+        { "id": "b", "text": "Fé só nesta vida" },
+        { "id": "c", "text": "Negação sem consequência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tornando-se as primícias dos que dormem",
+      "feedbackCorrect": "A virada do argumento: Cristo ressuscitou e abre o caminho dos que dormem.",
+      "feedbackWrong": {
+        "b": "15:19 chama isso de miséria; 15:20 aponta além desta vida.",
+        "c": "Os versículos anteriores mostram consequências graves."
+      },
+      "hint": "Veja o que Cristo se torna depois de ressuscitar.",
+      "learningObjective": "Ligar 15:20 à esperança dos que dormem.",
+      "evidence": ["1 Coríntios 15:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 15:13, negar a ressurreição dos mortos não afeta em nada a ressurreição de Cristo.",
+      "verseRef": "1 Coríntios 15:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "então, Cristo também não ressuscitou",
+      "feedbackCorrect": "O \"então\" marca a lógica: sem ressurreição dos mortos, Cristo também não ressuscitou.",
+      "feedbackWrong": {
+        "true": "Releia 15:13: se não há ressurreição de mortos, Cristo também não ressuscitou."
+      },
+      "hint": "Repare na palavra que liga a negação à conclusão sobre Cristo.",
+      "learningObjective": "Compreender a ligação lógica entre as duas ressurreições.",
+      "evidence": ["1 Coríntios 15:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 15:20, toque a palavra que marca o contraste com as consequências anteriores.",
+      "verseRef": "1 Coríntios 15:20",
+      "options": [
+        { "id": "a", "text": "fato" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "dormem" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Mas, de fato, Cristo ressuscitou",
+      "feedbackCorrect": "\"Mas\" vira a página: depois do desastre hipotético, vem a afirmação da ressurreição.",
+      "feedbackWrong": {
+        "a": "\"Fato\" reforça a afirmação; o contraste começa em \"Mas\".",
+        "c": "\"Dormem\" descreve os mortos em Cristo, não o contraste."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 15:20.",
+      "evidence": ["1 Coríntios 15:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Coríntios 15:17 se relaciona com a negação da ressurreição?",
+      "verseRef": "1 Coríntios 15:17",
+      "options": [
+        { "id": "a", "text": "Sem Cristo ressuscitado, a fé é vã e o pecado permanece" },
+        { "id": "b", "text": "A fé basta mesmo sem a ressurreição de Cristo" },
+        { "id": "c", "text": "Os pecados já foram apagados sem a cruz" },
+        { "id": "d", "text": "Só a pregação sofre; a fé fica intacta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é vã a sua fé, e vocês ainda permanecem nos seus pecados",
+      "feedbackCorrect": "Paulo amarra fé vazia e pecado não tratado à ausência da ressurreição.",
+      "feedbackWrong": {
+        "b": "O texto diz que a fé é vã se Cristo não ressuscitou.",
+        "c": "O versículo fala de permanecer nos pecados, não de pecados apagados.",
+        "d": "Em 15:14, pregação e fé são ambas vãs."
+      },
+      "hint": "Veja as duas consequências no mesmo versículo.",
+      "learningObjective": "Relacionar a ausência da ressurreição à fé e ao pecado.",
+      "evidence": ["1 Coríntios 15:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em 1 Coríntios 15:12–20?",
+      "verseRef": "1 Coríntios 15:12–13",
+      "options": [
+        { "id": "a", "text": "A negação em Corinto e a lógica de Paulo" },
+        { "id": "b", "text": "Consequências se Cristo não ressuscitou" },
+        { "id": "c", "text": "Mas Cristo ressuscitou como primícias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "então, Cristo também não ressuscitou",
+      "feedbackCorrect": "Primeiro a lógica da negação, depois as consequências, e então a afirmação.",
+      "feedbackWrong": {
+        "default": "Comece pela negação em Corinto; as primícias vêm depois do \"Mas\"."
+      },
+      "hint": "O movimento vai da hipótese ao \"Mas, de fato\".",
+      "learningObjective": "Compreender o movimento do argumento de Paulo.",
+      "evidence": ["1 Coríntios 15:12", "1 Coríntios 15:14", "1 Coríntios 15:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Coríntios 15:13, se não há ressurreição de mortos, Cristo também não…",
+      "verseRef": "1 Coríntios 15:13",
+      "options": [
+        { "id": "a", "text": "pregou" },
+        { "id": "b", "text": "ressuscitou" },
+        { "id": "c", "text": "morreu" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Cristo também não ressuscitou",
+      "feedbackCorrect": "A lógica é direta: negar a ressurreição dos mortos é negar a de Cristo.",
+      "feedbackWrong": {
+        "a": "O versículo não fala de pregar; fala de ressuscitar.",
+        "c": "Paulo não diz que Cristo não morreu; diz que não ressuscitou."
+      },
+      "hint": "É o verbo que fecha a conclusão depois de \"então\".",
+      "learningObjective": "Lembrar a conclusão lógica de 15:13.",
+      "evidence": ["1 Coríntios 15:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 15:20 a 1 Tessalonicenses 4:14?",
+      "verseRef": "1 Coríntios 15:20",
+      "passageA": { "ref": "1 Coríntios 15:20" },
+      "passageB": { "ref": "1 Tessalonicenses 4:14" },
+      "options": [
+        { "id": "a", "text": "Os que dormem em Jesus" },
+        { "id": "b", "text": "Negação da vida futura" },
+        { "id": "c", "text": "Esperança só nesta vida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as primícias dos que dormem",
+      "feedbackCorrect": "Nos dois textos, a ressurreição de Cristo garante os que dormem nele.",
+      "feedbackWrong": {
+        "b": "Ambos afirmam esperança além da morte, não negação.",
+        "c": "Paulo rejeita a esperança restrita a esta vida (15:19)."
+      },
+      "hint": "Compare o que os dois textos dizem dos que morreram em Cristo.",
+      "learningObjective": "Relacionar as primícias com a esperança dos que dormem.",
+      "evidence": ["1 Coríntios 15:20", "1 Tessalonicenses 4:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 15:12–22, a ressurreição de Cristo e a dos mortos estão ligadas, e negar uma é abalar a outra.",
+      "verseRef": "1 Coríntios 15:12–13",
+      "correctOptionId": "true",
+      "evidenceSpan": "então, Cristo também não ressuscitou",
+      "feedbackCorrect": "Paulo não separa as duas: a fé cristã cai se a ressurreição dos mortos for negada.",
+      "feedbackWrong": {
+        "false": "15:13 amarra as duas: sem ressurreição de mortos, Cristo também não ressuscitou."
+      },
+      "hint": "Veja a conclusão que Paulo tira da negação em Corinto.",
+      "learningObjective": "Interpretar a unidade da ressurreição no argumento de Paulo.",
+      "evidence": ["1 Coríntios 15:12", "1 Coríntios 15:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 15:22, toque o nome que marca o lado da morte no contraste com Cristo.",
+      "verseRef": "1 Coríntios 15:22",
+      "options": [
+        { "id": "a", "text": "todos" },
+        { "id": "b", "text": "Adão" },
+        { "id": "c", "text": "também" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "todos morrem em Adão",
+      "feedbackCorrect": "Em Adão todos morrem; em Cristo todos serão ressuscitados.",
+      "feedbackWrong": {
+        "a": "\"Todos\" aparece nos dois lados; o contraste de nomes é Adão e Cristo.",
+        "c": "\"Também\" liga as metades; o nome do lado da morte é Adão."
+      },
+      "hint": "Procure o nome próprio na primeira metade do versículo.",
+      "learningObjective": "Sustentar com o texto o contraste Adão–Cristo.",
+      "evidence": ["1 Coríntios 15:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Coríntios 15:12–22 sustenta sobre a fé cristã?",
+      "verseRef": "1 Coríntios 15:17",
+      "options": [
+        { "id": "a", "text": "A fé depende da ressurreição real de Cristo" },
+        { "id": "b", "text": "A fé vale mesmo se Cristo não ressuscitou" },
+        { "id": "c", "text": "A esperança cristã se limita a esta vida" },
+        { "id": "d", "text": "A ressurreição dos mortos é detalhe opcional" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é vã a sua fé, e vocês ainda permanecem nos seus pecados",
+      "feedbackCorrect": "Sem Cristo ressuscitado, fé e perdão caem; com ele, há primícias e esperança.",
+      "feedbackWrong": {
+        "b": "15:14 e 15:17 chamam essa fé de vã.",
+        "c": "15:19 chama isso de miséria; 15:20 aponta além.",
+        "d": "15:13 liga a ressurreição dos mortos à de Cristo."
+      },
+      "hint": "Compare as consequências de 15:14–19 com a afirmação de 15:20.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a fé.",
+      "evidence": ["1 Coríntios 15:14", "1 Coríntios 15:17", "1 Coríntios 15:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da ressurreição na Bíblia?",
+      "verseRef": "1 Coríntios 15:20",
+      "options": [
+        { "id": "a", "text": "A morte entrou por um homem" },
+        { "id": "b", "text": "Cristo ressuscitou como primícias" },
+        { "id": "c", "text": "Os que dormem em Jesus serão trazidos com ele" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tornando-se as primícias dos que dormem",
+      "feedbackCorrect": "Da morte em Adão à ressurreição de Cristo e à esperança dos que dormem.",
+      "feedbackWrong": {
+        "default": "Siga: morte (Rm 5:12 / 1 Co 15:21), primícias (1 Co 15:20) e os que dormem (1 Ts 4:14)."
+      },
+      "hint": "Siga a ordem: morte, Cristo, os que dormem.",
+      "learningObjective": "Ver a ressurreição como fio que atravessa a Bíblia.",
+      "evidence": ["1 Coríntios 15:21", "1 Coríntios 15:20", "1 Tessalonicenses 4:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Coríntios 15:20, Cristo ressuscitado se torna as quê dos que dormem?",
+      "verseRef": "1 Coríntios 15:20",
+      "options": [
+        { "id": "a", "text": "testemunhas" },
+        { "id": "b", "text": "primícias" },
+        { "id": "c", "text": "memórias" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tornando-se as primícias dos que dormem",
+      "feedbackCorrect": "O termo carrega a esperança: o primeiro fruto garante a colheita.",
+      "feedbackWrong": {
+        "a": "O texto não diz testemunhas aqui; diz primícias.",
+        "c": "Não há \"memórias\" no versículo; a palavra é primícias."
+      },
+      "hint": "É o termo agrícola depois de \"tornando-se\".",
+      "learningObjective": "Lembrar o termo teológico que carrega a esperança da cena.",
+      "evidence": ["1 Coríntios 15:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 15:21 a Romanos 5:12?",
+      "verseRef": "1 Coríntios 15:21",
+      "passageA": { "ref": "1 Coríntios 15:21" },
+      "passageB": { "ref": "Romanos 5:12" },
+      "options": [
+        { "id": "a", "text": "Morte por um homem" },
+        { "id": "b", "text": "Vida sem origem humana" },
+        { "id": "c", "text": "Pecado sem consequências" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a morte entrou no mundo por meio de um homem",
+      "feedbackCorrect": "Os dois textos ligam a morte à entrada por um homem; Paulo aponta também a vida por um homem.",
+      "feedbackWrong": {
+        "b": "Paulo fala de um homem na morte e na ressurreição.",
+        "c": "Romanos e 1 Coríntios tratam a morte como consequência real."
+      },
+      "hint": "Compare o que cada texto diz sobre a entrada da morte.",
+      "learningObjective": "Ligar a morte em Adão entre as cartas de Paulo.",
+      "evidence": ["1 Coríntios 15:21", "Romanos 5:12"]
+    }
+  ]
+}

@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "1 Timóteo 6:6–11",
+    "passages": [
+      {
+        "ref": "1 Timóteo 6:6–11"
+      },
+      {
+        "ref": "1 Timóteo 6:12–16"
+      }
+    ],
+    "context": "Paulo contrapõe o amor ao dinheiro à piedade com contentamento e chama Timóteo à boa luta da fé.",
+    "keyword": "contentamento",
+    "keywordGloss": "Unido à piedade, é o grande ganho.",
+    "focusQuestion": "O que você precisa fugir e o que precisa perseguir na fé?",
+    "reflectionPrompts": [
+      "Piedade com contentamento",
+      "Fugir do amor ao dinheiro",
+      "Boa luta da fé"
+    ],
+    "facts": [
+      {
+        "text": "Grande ganho: piedade com contentamento.",
+        "evidenceRef": "1 Timóteo 6:6",
+        "evidenceSpan": "piedade unida ao contentamento"
+      },
+      {
+        "text": "Nada trouxemos; nada levaremos.",
+        "evidenceRef": "1 Timóteo 6:7",
+        "evidenceSpan": "nada trouxemos para o mundo"
+      },
+      {
+        "text": "Com sustento e vestuário, estar satisfeitos.",
+        "evidenceRef": "1 Timóteo 6:8",
+        "evidenceSpan": "com isso devemos estar satisfeitos"
+      },
+      {
+        "text": "Desejo de enriquecer leva a tentação e perdição.",
+        "evidenceRef": "1 Timóteo 6:9",
+        "evidenceSpan": "caem em tentação e em laços"
+      },
+      {
+        "text": "Amor ao dinheiro é raiz de males.",
+        "evidenceRef": "1 Timóteo 6:10",
+        "evidenceSpan": "o amor ao dinheiro é a raiz de todos os males"
+      },
+      {
+        "text": "Fugir disso e seguir justiça; lutar a boa luta.",
+        "evidenceRef": "1 Timóteo 6:11",
+        "evidenceSpan": "foge dessas coisas; antes, persegue a justiça"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "contentamento",
+        "gloss": "Parceiro da piedade no grande ganho."
+      },
+      {
+        "term": "fé",
+        "gloss": "Boa luta a combater."
+      },
+      {
+        "term": "dinheiro",
+        "gloss": "Amor a ele desvia da fé."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Piedade com contentamento",
+        "evidenceRef": "1 Timóteo 6:6"
+      },
+      {
+        "label": "Perigo de querer enriquecer",
+        "evidenceRef": "1 Timóteo 6:9"
+      },
+      {
+        "label": "Fugir e perseguir virtudes",
+        "evidenceRef": "1 Timóteo 6:11"
+      },
+      {
+        "label": "Boa luta e vida eterna",
+        "evidenceRef": "1 Timóteo 6:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Nada trouxemos; por isso contentamento.",
+        "marker": "Porque",
+        "evidenceRef": "1 Timóteo 6:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Desejo de enriquecer afoga na perdição.",
+        "marker": null,
+        "evidenceRef": "1 Timóteo 6:9"
+      },
+      {
+        "kind": "contraste",
+        "text": "Foge disso; antes persegue a justiça.",
+        "marker": "antes",
+        "evidenceRef": "1 Timóteo 6:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:5",
+        "bridge": "Contentamento sem avareza"
+      },
+      {
+        "ref": "2 Timóteo 4:7",
+        "bridge": "Boa luta combatida"
+      },
+      {
+        "ref": "Mateus 6:24",
+        "bridge": "Deus ou o dinheiro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O dinheiro em si é a raiz de todos os males.",
+        "why": "É o amor ao dinheiro."
+      },
+      {
+        "text": "Contentamento exclui a luta da fé.",
+        "why": "Há fuga e boa luta."
+      },
+      {
+        "text": "Enriquecer é o grande ganho.",
+        "why": "O grande ganho é piedade com contentamento."
+      }
+    ],
+    "centralInsight": "Foge disso e segue a justiça; luta a boa luta da fé e toma posse da vida eterna.",
+    "anchorQuestion": "Segundo 1 Timóteo 6:6, em que consiste o grande ganho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 6:6, o grande ganho é a piedade unida ao contentamento.",
+      "verseRef": "1 Timóteo 6:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Grande ganho.",
+      "feedbackWrong": {
+        "false": "Releia o ganho."
+      },
+      "hint": "Olhe o versículo.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 6:10, toque o que é raiz de males.",
+      "verseRef": "1 Timóteo 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor ao dinheiro"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "justiça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o amor ao dinheiro é a raiz de todos os males",
+      "feedbackCorrect": "Amor ao dinheiro.",
+      "feedbackWrong": {
+        "b": "Desviam dela.",
+        "c": "Perseguir."
+      },
+      "hint": "A raiz.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Timóteo 6:12, o que Timóteo deve fazer?",
+      "verseRef": "1 Timóteo 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lutar o bom combate da fé"
+        },
+        {
+          "id": "b",
+          "text": "Amar o dinheiro"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar a vida eterna"
+        },
+        {
+          "id": "d",
+          "text": "Fugir da justiça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Boa luta.",
+      "feedbackWrong": {
+        "b": "Fugir.",
+        "c": "Aproveitar.",
+        "d": "Perseguir."
+      },
+      "hint": "Leia.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 6:6–7 na ordem.",
+      "verseRef": "1 Timóteo 6:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O grande ganho consiste, de fato, na piedade unida ao contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Porque nada trouxemos para o mundo"
+        },
+        {
+          "id": "c",
+          "text": "e é claro que nada podemos levar dele"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Ganho e razão.",
+      "feedbackWrong": {
+        "default": "Comece pelo ganho."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 6:6–7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Timóteo 6:11, foge dessas coisas; antes, persegue a ___.",
+      "verseRef": "1 Timóteo 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "justiça"
+        },
+        {
+          "id": "b",
+          "text": "ganância"
+        },
+        {
+          "id": "c",
+          "text": "ruína"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "persegue a justiça",
+      "feedbackCorrect": "Justiça.",
+      "feedbackWrong": {
+        "b": "Fugir.",
+        "c": "Do desejo."
+      },
+      "hint": "O que perseguir.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 6:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Timóteo 6:6 comunica que se liga a este contexto?",
+      "verseRef": "1 Timóteo 6:6",
+      "passageA": {
+        "ref": "1 Timóteo 6:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O verdadeiro ganho não é enriquecer."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade com contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Só enriquecer"
+        },
+        {
+          "id": "c",
+          "text": "Sem ganho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Ganho.",
+      "feedbackWrong": {
+        "b": "É o contraste.",
+        "c": "Há ganho."
+      },
+      "hint": "A definição.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 6:10, o dinheiro em si, e não o amor a ele, é chamado raiz de todos os males.",
+      "verseRef": "1 Timóteo 6:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "o amor ao dinheiro é a raiz de todos os males",
+      "feedbackCorrect": "É o amor.",
+      "feedbackWrong": {
+        "true": "Releia: o amor ao dinheiro."
+      },
+      "hint": "Repare no sujeito.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 6:11, toque a palavra que marca o contraste.",
+      "verseRef": "1 Timóteo 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "antes"
+        },
+        {
+          "id": "b",
+          "text": "foge"
+        },
+        {
+          "id": "c",
+          "text": "tu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes, persegue a justiça",
+      "feedbackCorrect": "Antes.",
+      "feedbackWrong": {
+        "b": "Ação.",
+        "c": "Vocativo."
+      },
+      "hint": "O contraste.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 6:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Timóteo 6:9–11 se relacionam?",
+      "verseRef": "1 Timóteo 6:9–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do perigo de enriquecer à fuga e à justiça"
+        },
+        {
+          "id": "b",
+          "text": "Do contentamento à ganância"
+        },
+        {
+          "id": "c",
+          "text": "Da fé à ruína desejada"
+        },
+        {
+          "id": "d",
+          "text": "Da luta ao amor ao dinheiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foge dessas coisas; antes, persegue a justiça",
+      "feedbackCorrect": "Fuga e perseguição.",
+      "feedbackWrong": {
+        "b": "Há fuga.",
+        "c": "Há luta.",
+        "d": "Há fuga do dinheiro."
+      },
+      "hint": "Una.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 6:9–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Timóteo 6:6–12?",
+      "verseRef": "1 Timóteo 6:6–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade com contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Perigo de querer enriquecer"
+        },
+        {
+          "id": "c",
+          "text": "Boa luta da fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Ganho, perigo e luta.",
+      "feedbackWrong": {
+        "default": "Comece pelo ganho."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 6:6",
+        "1 Timóteo 6:9",
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Timóteo 6:11, antes, ___ a justiça.",
+      "verseRef": "1 Timóteo 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "persegue"
+        },
+        {
+          "id": "b",
+          "text": "foge"
+        },
+        {
+          "id": "c",
+          "text": "esquece"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes, persegue a justiça",
+      "feedbackCorrect": "Depois de fugir, o homem de Deus persegue a justiça.",
+      "feedbackWrong": {
+        "b": "Foge é o primeiro verbo; o complemento é outro.",
+        "c": "O texto manda perseguir, não esquecer."
+      },
+      "hint": "Toque o verbo positivo após o contraste.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 6:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 6:6 a Hebreus 13:5?",
+      "verseRef": "1 Timóteo 6:6",
+      "passageA": {
+        "ref": "1 Timóteo 6:6"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Avareza"
+        },
+        {
+          "id": "c",
+          "text": "Sem piedade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Contentamento.",
+      "feedbackWrong": {
+        "b": "É o oposto.",
+        "c": "Há piedade."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 6:6",
+        "Hebreus 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Timóteo 6:6–16 une contentamento, fuga do amor ao dinheiro e luta pela vida eterna.",
+      "verseRef": "1 Timóteo 6:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Luta o bom combate da fé. Aproveita a vida eterna",
+      "feedbackCorrect": "Contentamento e luta.",
+      "feedbackWrong": {
+        "false": "Una 6:6–12."
+      },
+      "hint": "Veja a luta.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 6:12, toque o que aproveitar.",
+      "verseRef": "1 Timóteo 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "vida eterna"
+        },
+        {
+          "id": "b",
+          "text": "combate"
+        },
+        {
+          "id": "c",
+          "text": "chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aproveita a vida eterna",
+      "feedbackCorrect": "Vida eterna.",
+      "feedbackWrong": {
+        "b": "Combate é a luta da fé, não o que se aproveita.",
+        "c": "Chamado marca o propósito da vida eterna."
+      },
+      "hint": "O objeto.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "1 Timóteo 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fugir do amor ao dinheiro e lutar a boa luta"
+        },
+        {
+          "id": "b",
+          "text": "Buscar enriquecer como ganho máximo"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar a justiça"
+        },
+        {
+          "id": "d",
+          "text": "Sem confissão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foge dessas coisas; antes, persegue a justiça",
+      "feedbackCorrect": "Fuga e luta.",
+      "feedbackWrong": {
+        "b": "É o perigo.",
+        "c": "Há perseguir.",
+        "d": "Há confissão."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Timóteo 6:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Timóteo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ganho na piedade"
+        },
+        {
+          "id": "b",
+          "text": "Fugir do amor ao dinheiro"
+        },
+        {
+          "id": "c",
+          "text": "Lutar e guardar até a manifestação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "até a manifestação de nosso Senhor Jesus Cristo",
+      "feedbackCorrect": "Ganho, fuga e perseverança.",
+      "feedbackWrong": {
+        "default": "Comece pelo ganho."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 6:6",
+        "1 Timóteo 6:11",
+        "1 Timóteo 6:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Timóteo 6:6, piedade unida ao ___.",
+      "verseRef": "1 Timóteo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "contentamento"
+        },
+        {
+          "id": "b",
+          "text": "orgulho"
+        },
+        {
+          "id": "c",
+          "text": "ódio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Contentamento.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "O parceiro.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 6:12 a 2 Timóteo 4:7?",
+      "verseRef": "1 Timóteo 6:12",
+      "passageA": {
+        "ref": "1 Timóteo 6:12"
+      },
+      "passageB": {
+        "ref": "2 Timóteo 4:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Boa luta da fé"
+        },
+        {
+          "id": "b",
+          "text": "Luta abandonada"
+        },
+        {
+          "id": "c",
+          "text": "Sem fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Boa luta.",
+      "feedbackWrong": {
+        "b": "Há luta.",
+        "c": "Há fé."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 6:12",
+        "2 Timóteo 4:7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Tito 3:4–7",
+    "passages": [
+      {
+        "ref": "Tito 3:3–8"
+      }
+    ],
+    "context": "Paulo lembra o passado: éramos insensatos. Então apareceu a benignidade de Deus. A salvação vem pela misericórdia, não pelas obras, e leva a boas obras.",
+    "keyword": "misericórdia",
+    "keywordGloss": "O motivo pelo qual Deus salvou: não obras de justiça, mas a sua misericórdia.",
+    "focusQuestion": "Onde você ainda confia em obras próprias em vez da misericórdia que salva?",
+    "reflectionPrompts": [
+      "Outrora e agora",
+      "Lavar regenerador",
+      "Boas obras depois"
+    ],
+    "facts": [
+      {
+        "text": "Outrora éramos insensatos, desobedientes e extraviados.",
+        "evidenceRef": "Tito 3:3",
+        "evidenceSpan": "éramos insensatos, desobedientes, extraviados"
+      },
+      {
+        "text": "Manifestaram-se a benignidade e o amor de Deus, nosso Salvador.",
+        "evidenceRef": "Tito 3:4",
+        "evidenceSpan": "se manifestaram a benignidade e o amor de Deus, nosso Salvador"
+      },
+      {
+        "text": "Deus salvou não por obras de justiça, mas segundo a sua misericórdia.",
+        "evidenceRef": "Tito 3:5",
+        "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia"
+      },
+      {
+        "text": "Ele nos salvou pelo lavar regenerador e renovador do Espírito Santo.",
+        "evidenceRef": "Tito 3:5",
+        "evidenceSpan": "ele nos salvou pelo lavar regenerador e renovador do Espírito Santo"
+      },
+      {
+        "text": "Justificados pela graça, tornamo-nos herdeiros da vida eterna.",
+        "evidenceRef": "Tito 3:7",
+        "evidenceSpan": "justificados pela sua graça, nos tornemos seus herdeiros"
+      },
+      {
+        "text": "Os que creem devem empenhar-se na prática de boas obras.",
+        "evidenceRef": "Tito 3:8",
+        "evidenceSpan": "os que creem em Deus se empenhem na prática de boas obras"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "misericórdia",
+        "gloss": "O fundamento da salvação, oposto às obras de justiça."
+      },
+      {
+        "term": "regenerador",
+        "gloss": "O lavar que gera de novo, obra do Espírito Santo."
+      },
+      {
+        "term": "graça",
+        "gloss": "Aquilo pelo qual somos justificados e feitos herdeiros."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O passado: insensatos e escravos",
+        "evidenceRef": "Tito 3:3"
+      },
+      {
+        "label": "Aparece a benignidade de Deus",
+        "evidenceRef": "Tito 3:4"
+      },
+      {
+        "label": "Salvos pela misericórdia e pelo Espírito",
+        "evidenceRef": "Tito 3:5–6"
+      },
+      {
+        "label": "Justificados, herdeiros e boas obras",
+        "evidenceRef": "Tito 3:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Outrora éramos insensatos; mas quando se manifestou o amor de Deus, veio a salvação.",
+        "marker": "Mas",
+        "evidenceRef": "Tito 3:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não por obras de justiça, mas segundo a misericórdia ele nos salvou.",
+        "marker": "mas",
+        "evidenceRef": "Tito 3:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "Justificados pela graça para nos tornarmos herdeiros da vida eterna.",
+        "marker": "Para que",
+        "evidenceRef": "Tito 3:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 2:8–9",
+        "bridge": "Graça, não obras"
+      },
+      {
+        "ref": "Romanos 3:24",
+        "bridge": "Justificados pela graça"
+      },
+      {
+        "ref": "João 3:5",
+        "bridge": "Nascidos da água e do Espírito"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A salvação é pagamento pelas obras de justiça que realizamos.",
+        "why": "O texto diz: não por meio das obras de justiça, mas segundo a misericórdia."
+      },
+      {
+        "text": "Quem crê não precisa se ocupar de boas obras.",
+        "why": "Paulo quer que os que creem se empenhem na prática de boas obras."
+      },
+      {
+        "text": "Nunca fomos como os outros: sempre fomos sábios.",
+        "why": "Paulo inclui a si e aos leitores: também nós éramos insensatos."
+      }
+    ],
+    "centralInsight": "Não por obras de justiça, mas segundo a sua misericórdia ele nos salvou pelo lavar regenerador.",
+    "anchorQuestion": "Segundo Tito 3:5, por que Deus nos salvou?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Tito 3:5, Deus nos salvou segundo a sua misericórdia, não por obras de justiça.",
+      "verseRef": "Tito 3:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+      "feedbackCorrect": "O contraste obras × misericórdia é explícito.",
+      "feedbackWrong": {
+        "false": "O versículo nega as obras e afirma a misericórdia."
+      },
+      "hint": "Veja o não… mas…",
+      "learningObjective": "Observar o fundamento da salvação.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Tito 3:4, toque o que se manifestou da parte de Deus.",
+      "verseRef": "Tito 3:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "benignidade"
+        },
+        {
+          "id": "b",
+          "text": "humanos"
+        },
+        {
+          "id": "c",
+          "text": "quando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se manifestaram a benignidade e o amor de Deus",
+      "feedbackCorrect": "Benignidade e amor de Deus se manifestaram.",
+      "feedbackWrong": {
+        "b": "Humanos são o destinatário do amor.",
+        "c": "Quando marca o tempo, não o que se manifestou."
+      },
+      "hint": "Procure o que se manifestou.",
+      "learningObjective": "Identificar a benignidade de Deus.",
+      "evidence": [
+        "Tito 3:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Tito 3:3, como éramos em outro tempo?",
+      "verseRef": "Tito 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insensatos, desobedientes e extraviados"
+        },
+        {
+          "id": "b",
+          "text": "Já justificados pelas obras"
+        },
+        {
+          "id": "c",
+          "text": "Sem necessidade de Salvador"
+        },
+        {
+          "id": "d",
+          "text": "Livres de qualquer paixão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "éramos insensatos, desobedientes, extraviados",
+      "feedbackCorrect": "Paulo inclui a todos no passado sombrio.",
+      "feedbackWrong": {
+        "b": "A justificativa vem depois, pela graça.",
+        "c": "Há Salvador em 3:4–5.",
+        "d": "Éramos escravos de paixões."
+      },
+      "hint": "Olhe a lista do passado.",
+      "learningObjective": "Registrar o passado compartilhado.",
+      "evidence": [
+        "Tito 3:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Tito 3:5 na ordem do texto (trecho central).",
+      "verseRef": "Tito 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "não por meio das obras de justiça"
+        },
+        {
+          "id": "b",
+          "text": "mas segundo a sua misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "ele nos salvou pelo lavar regenerador"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+      "feedbackCorrect": "Negação das obras → misericórdia → lavar regenerador.",
+      "feedbackWrong": {
+        "default": "Comece pela negação das obras."
+      },
+      "hint": "O versículo opõe obras e misericórdia.",
+      "learningObjective": "Reconhecer a ordem de Tito 3:5.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+      "verseRef": "Tito 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "cobrança"
+        },
+        {
+          "id": "c",
+          "text": "indiferença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas segundo a sua misericórdia",
+      "feedbackCorrect": "O fundamento nomeado é a misericórdia.",
+      "feedbackWrong": {
+        "b": "Não é cobrança; é misericórdia.",
+        "c": "Há amor e benignidade, não indiferença."
+      },
+      "hint": "Qual palavra vem depois de segundo a sua?",
+      "learningObjective": "Lembrar a palavra misericórdia.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Tito 3:5 comunica que se liga a este contexto?",
+      "verseRef": "Tito 3:5",
+      "passageA": {
+        "ref": "Tito 3:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A salvação vem da misericórdia de Deus, não das nossas obras."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericórdia, não mérito"
+        },
+        {
+          "id": "b",
+          "text": "Obras que compram salvação"
+        },
+        {
+          "id": "c",
+          "text": "Salvação sem Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+      "feedbackCorrect": "O contraste define o evangelho deste trecho.",
+      "feedbackWrong": {
+        "b": "O texto nega esse caminho.",
+        "c": "Há lavar regenerador do Espírito."
+      },
+      "hint": "Compare obras e misericórdia.",
+      "learningObjective": "Ligar o versículo ao fundamento da salvação.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Tito 3:4–5, a manifestação do amor de Deus leva à salvação pelas nossas obras.",
+      "verseRef": "Tito 3:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+      "feedbackCorrect": "O amor se manifesta; a salvação é pela misericórdia, não pelas obras.",
+      "feedbackWrong": {
+        "true": "O texto nega as obras como meio."
+      },
+      "hint": "Una 3:4 e o não… mas… de 3:5.",
+      "learningObjective": "Compreender a relação entre amor e meio da salvação.",
+      "evidence": [
+        "Tito 3:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+      "verseRef": "Tito 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "lavar"
+        },
+        {
+          "id": "c",
+          "text": "Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas segundo a sua misericórdia",
+      "feedbackCorrect": "\"Mas\" vira da negação das obras para a misericórdia.",
+      "feedbackWrong": {
+        "b": "Lavar é o meio; a virada é o mas.",
+        "c": "Espírito é quem regenera; o contraste está no mas."
+      },
+      "hint": "Procure o conector da oposição.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Tito 3:7 se liga à salvação de 3:5?",
+      "verseRef": "Tito 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mostra o fim: justificados pela graça, herdeiros"
+        },
+        {
+          "id": "b",
+          "text": "Nega a graça mencionada antes"
+        },
+        {
+          "id": "c",
+          "text": "Substitui misericórdia por mérito"
+        },
+        {
+          "id": "d",
+          "text": "Afirma herança pelas obras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela sua graça, nos tornemos seus herdeiros",
+      "feedbackCorrect": "O Para que aponta o resultado da salvação: herança pela graça.",
+      "feedbackWrong": {
+        "b": "Há continuidade na graça.",
+        "c": "A graça permanece.",
+        "d": "É pela graça, não pelas obras."
+      },
+      "hint": "Olhe o Para que.",
+      "learningObjective": "Relacionar salvação e herança.",
+      "evidence": [
+        "Tito 3:5",
+        "Tito 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em Tito 3:3–7?",
+      "verseRef": "Tito 3:3–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passado: éramos insensatos"
+        },
+        {
+          "id": "b",
+          "text": "Virada: amor de Deus e misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "Resultado: justificados e herdeiros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "éramos insensatos, desobedientes, extraviados",
+      "feedbackCorrect": "Passado → misericórdia → herança.",
+      "feedbackWrong": {
+        "default": "Siga: outrora → mas quando → para que."
+      },
+      "hint": "O Mas de 3:4 e o Para que de 3:7 marcam as viradas.",
+      "learningObjective": "Ver o movimento do passado à herança.",
+      "evidence": [
+        "Tito 3:3–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Tito 3:7, somos justificados pela sua ___.",
+      "verseRef": "Tito 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "graça"
+        },
+        {
+          "id": "b",
+          "text": "força"
+        },
+        {
+          "id": "c",
+          "text": "sorte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela sua graça",
+      "feedbackCorrect": "A justificativa é pela graça.",
+      "feedbackWrong": {
+        "b": "Não é força própria.",
+        "c": "Não é sorte; é graça."
+      },
+      "hint": "Justificados pela sua…?",
+      "learningObjective": "Lembrar a palavra graça.",
+      "evidence": [
+        "Tito 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Tito 3:5 a Efésios 2:8–9?",
+      "verseRef": "Tito 3:5",
+      "passageA": {
+        "ref": "Tito 3:5"
+      },
+      "passageB": {
+        "ref": "Efésios 2:8–9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Salvos sem obras"
+        },
+        {
+          "id": "b",
+          "text": "Obras que merecem"
+        },
+        {
+          "id": "c",
+          "text": "Salvação negociada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não por meio das obras de justiça que realizamos",
+      "feedbackCorrect": "Nos dois textos, a salvação não vem das obras.",
+      "feedbackWrong": {
+        "b": "Ambos negam o mérito das obras.",
+        "c": "O elo é graça/misericórdia, não troca."
+      },
+      "hint": "Compare a exclusão das obras.",
+      "learningObjective": "Relacionar os textos sobre graça sem obras.",
+      "evidence": [
+        "Tito 3:5",
+        "Efésios 2:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+      "verseRef": "Tito 3:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "os que creem em Deus se empenhem na prática de boas obras",
+      "feedbackCorrect": "As boas obras vêm dos que creem, não como preço da salvação.",
+      "feedbackWrong": {
+        "false": "Paulo quer afirmação confiante que leva ao empenho nas obras."
+      },
+      "hint": "Veja quem deve se empenhar.",
+      "learningObjective": "Interpretar as boas obras como fruto da fé.",
+      "evidence": [
+        "Tito 3:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Tito 3:5, toque o trecho que sustenta que a salvação não vem das obras.",
+      "verseRef": "Tito 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "não por meio"
+        },
+        {
+          "id": "b",
+          "text": "lavar regenerador"
+        },
+        {
+          "id": "c",
+          "text": "Espírito Santo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não por meio das obras de justiça que realizamos",
+      "feedbackCorrect": "\"Não por meio das obras\" corta a leitura meritória.",
+      "feedbackWrong": {
+        "b": "Isso é o meio positivo; a pergunta pede a exclusão.",
+        "c": "Nomeia quem regenera, não a exclusão das obras."
+      },
+      "hint": "Procure a negação.",
+      "learningObjective": "Sustentar a leitura anti-meritória.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Tito 3:3–8 sustenta?",
+      "verseRef": "Tito 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericórdia salva; a fé responde com boas obras"
+        },
+        {
+          "id": "b",
+          "text": "Obras compram a misericórdia de Deus"
+        },
+        {
+          "id": "c",
+          "text": "O passado prova que não precisávamos de Salvador"
+        },
+        {
+          "id": "d",
+          "text": "Justificação pela graça anula qualquer obra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas segundo a sua misericórdia, ele nos salvou",
+      "feedbackCorrect": "Salvação pela misericórdia e empenho nas obras dos que creem cabem juntos.",
+      "feedbackWrong": {
+        "b": "O texto nega as obras como meio.",
+        "c": "O passado mostra necessidade.",
+        "d": "3:8 manda empenhar-se nas obras."
+      },
+      "hint": "Una 3:5 e 3:8.",
+      "learningObjective": "Escolher a interpretação graça e frutos.",
+      "evidence": [
+        "Tito 3:5",
+        "Tito 3:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da graça neste trecho?",
+      "verseRef": "Tito 3:4–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aparece o amor de Deus Salvador"
+        },
+        {
+          "id": "b",
+          "text": "Salvos pela misericórdia e justificados"
+        },
+        {
+          "id": "c",
+          "text": "Os que creem se empenham em boas obras"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se manifestaram a benignidade e o amor de Deus",
+      "feedbackCorrect": "Manifestação → salvação → obras dos crentes.",
+      "feedbackWrong": {
+        "default": "Comece pela manifestação; as obras fecham."
+      },
+      "hint": "Pense: iniciativa de Deus, meio, fruto.",
+      "learningObjective": "Ver o encadeamento amor–salvação–obras.",
+      "evidence": [
+        "Tito 3:4–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Tito 3:5, ele nos salvou pelo lavar ___.",
+      "verseRef": "Tito 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "regenerador"
+        },
+        {
+          "id": "b",
+          "text": "temporário"
+        },
+        {
+          "id": "c",
+          "text": "humano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo lavar regenerador e renovador do Espírito Santo",
+      "feedbackCorrect": "O termo carrega o novo nascimento pelo Espírito.",
+      "feedbackWrong": {
+        "b": "Não é temporário.",
+        "c": "É obra do Espírito Santo."
+      },
+      "hint": "Qual adjetivo descreve o lavar?",
+      "learningObjective": "Lembrar o termo regenerador.",
+      "evidence": [
+        "Tito 3:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Tito 3:7 a Romanos 3:24?",
+      "verseRef": "Tito 3:7",
+      "passageA": {
+        "ref": "Tito 3:7"
+      },
+      "passageB": {
+        "ref": "Romanos 3:24"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justificados pela graça"
+        },
+        {
+          "id": "b",
+          "text": "Justificados pelas obras"
+        },
+        {
+          "id": "c",
+          "text": "Graça sem justificativa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela sua graça",
+      "feedbackCorrect": "Nos dois textos, a justificativa é pela graça.",
+      "feedbackWrong": {
+        "b": "Ambos apontam para a graça.",
+        "c": "Há justificativa explícita pela graça."
+      },
+      "hint": "Compare justificados e graça.",
+      "learningObjective": "Ligar os textos sobre justificativa pela graça.",
+      "evidence": [
+        "Tito 3:7",
+        "Romanos 3:24"
+      ]
+    }
+  ]
+}

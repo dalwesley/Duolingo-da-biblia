@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 18:1–6",
+    "passages": [
+      {
+        "ref": "Josué 18:1–10"
+      }
+    ],
+    "context": "Em Siló arma-se a tenda da congregação; sete tribos ainda sem herança ouvem Josué mandar mapear a terra.",
+    "keyword": "sortes",
+    "keywordGloss": "Josué lança as sortes perante o Senhor para repartir a terra.",
+    "focusQuestion": "Onde você está remisso em ir possuir o que o Senhor já deu?",
+    "reflectionPrompts": [
+      "Tenda em Siló",
+      "Sete tribos remissas",
+      "Sortes perante o Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Toda a congregação se reuniu em Siló e armou a tenda da congregação.",
+        "evidenceRef": "Josué 18:1",
+        "evidenceSpan": "se reuniu em Siló, e ali armaram a tenda da congregação"
+      },
+      {
+        "text": "Sete tribos ainda não haviam recebido a herança.",
+        "evidenceRef": "Josué 18:2",
+        "evidenceSpan": "sete tribos que ainda não haviam recebido a sua herança"
+      },
+      {
+        "text": "Josué perguntou até quando seriam remissos em possuir a terra.",
+        "evidenceRef": "Josué 18:3",
+        "evidenceSpan": "Até quando vocês serão remissos em ir possuir a terra"
+      },
+      {
+        "text": "Mandou escolher três homens de cada tribo para mapear a terra.",
+        "evidenceRef": "Josué 18:4",
+        "evidenceSpan": "Escolham três homens de cada tribo"
+      },
+      {
+        "text": "O gráfico em sete partes seria trazido para lançar sortes perante o Senhor.",
+        "evidenceRef": "Josué 18:6",
+        "evidenceSpan": "para que eu lance as sortes perante o Senhor, nosso Deus"
+      },
+      {
+        "text": "Josué lançou as sortes em Siló e repartiu a terra.",
+        "evidenceRef": "Josué 18:10",
+        "evidenceSpan": "Josué lançou as sortes em Siló, perante o SENHOR"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Siló",
+        "gloss": "Lugar onde a tenda foi armada e as sortes lançadas."
+      },
+      {
+        "term": "remissos",
+        "gloss": "Lentos em ir possuir a terra dada."
+      },
+      {
+        "term": "sortes",
+        "gloss": "Meio de repartir a terra perante o Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Tenda armada em Siló",
+        "evidenceRef": "Josué 18:1"
+      },
+      {
+        "label": "Repreensão às sete tribos remissas",
+        "evidenceRef": "Josué 18:2–3"
+      },
+      {
+        "label": "Ordem de mapear a terra",
+        "evidenceRef": "Josué 18:4–8"
+      },
+      {
+        "label": "Sortes e repartição em Siló",
+        "evidenceRef": "Josué 18:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Levitas não têm parte porque o sacerdócio é sua porção.",
+        "marker": "Pois",
+        "evidenceRef": "Josué 18:7"
+      },
+      {
+        "kind": "propósito",
+        "text": "Mapeiam para lançar sortes perante o Senhor.",
+        "marker": "para que",
+        "evidenceRef": "Josué 18:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Voltaram com o livro; Josué lançou as sortes.",
+        "marker": "Então",
+        "evidenceRef": "Josué 18:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 26:55–56",
+        "bridge": "Terra por sortes"
+      },
+      {
+        "ref": "Josué 14:2",
+        "bridge": "Herança por sortes"
+      },
+      {
+        "ref": "1 Samuel 1:3",
+        "bridge": "Siló e a casa do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Todas as tribos já tinham recebido herança.",
+        "why": "Sete tribos ainda não haviam recebido."
+      },
+      {
+        "text": "Josué elogia a pressa das sete tribos.",
+        "why": "Pergunta até quando serão remissos."
+      },
+      {
+        "text": "As sortes foram lançadas sem o Senhor.",
+        "why": "Lançou perante o Senhor em Siló."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 18:10, onde Josué lançou as sortes?",
+    "centralInsight": "Josué manda mapear a terra e lançar sortes diante do Senhor em Siló."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 18:2, sete tribos ainda não haviam recebido a herança.",
+      "verseRef": "Josué 18:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "sete tribos que ainda não haviam recebido a sua herança",
+      "feedbackCorrect": "Sete tribos aguardavam.",
+      "feedbackWrong": {
+        "false": "O texto marca sete tribos."
+      },
+      "hint": "Conte as tribos sem herança.",
+      "learningObjective": "Observar as sete tribos.",
+      "evidence": [
+        "Josué 18:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 18:1, toque o lugar da reunião.",
+      "verseRef": "Josué 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Siló"
+        },
+        {
+          "id": "b",
+          "text": "tenda"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se reuniu em Siló",
+      "feedbackCorrect": "Reuniram-se em Siló.",
+      "feedbackWrong": {
+        "b": "Tenda é o que armaram.",
+        "c": "Terra estava sujeita."
+      },
+      "hint": "Veja o lugar da reunião.",
+      "learningObjective": "Identificar Siló.",
+      "evidence": [
+        "Josué 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 18:3, o que Josué critica nas tribos?",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serem remissos em possuir a terra"
+        },
+        {
+          "id": "b",
+          "text": "Correrem demais à guerra"
+        },
+        {
+          "id": "c",
+          "text": "Recusarem a tenda"
+        },
+        {
+          "id": "d",
+          "text": "Pedirem voltar ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serão remissos em ir possuir a terra",
+      "feedbackCorrect": "A demora em possuir.",
+      "feedbackWrong": {
+        "b": "Não critica pressa.",
+        "c": "A tenda já está armada.",
+        "d": "Não pedem o Egito aqui."
+      },
+      "hint": "Leia a pergunta de Josué.",
+      "learningObjective": "Reconhecer a repreensão.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 18:3 na ordem do texto.",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué disse aos filhos de Israel:"
+        },
+        {
+          "id": "b",
+          "text": "Até quando vocês serão remissos"
+        },
+        {
+          "id": "c",
+          "text": "em ir possuir a terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Até quando vocês serão remissos em ir possuir a terra",
+      "feedbackCorrect": "Pergunta sobre a demora.",
+      "feedbackWrong": {
+        "default": "Comece pela fala de Josué."
+      },
+      "hint": "Quem fala primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 18:10, complete: Josué lançou as ___ em Siló.",
+      "verseRef": "Josué 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "sortes"
+        },
+        {
+          "id": "b",
+          "text": "espadas"
+        },
+        {
+          "id": "c",
+          "text": "redes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Josué lançou as sortes em Siló",
+      "feedbackCorrect": "Lançou as sortes.",
+      "feedbackWrong": {
+        "b": "Não é espadas.",
+        "c": "A palavra é sortes."
+      },
+      "hint": "Veja o objeto de lançou.",
+      "learningObjective": "Lembrar as sortes.",
+      "evidence": [
+        "Josué 18:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 18:3 comunica que se liga a este contexto?",
+      "verseRef": "Josué 18:3",
+      "passageA": {
+        "ref": "Josué 18:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A tenda está em Siló e sete tribos ainda sem herança."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Exortar a possuir a terra"
+        },
+        {
+          "id": "b",
+          "text": "Elogiar a demora"
+        },
+        {
+          "id": "c",
+          "text": "Cancelar as sortes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serão remissos em ir possuir a terra",
+      "feedbackCorrect": "Josué confronta a demora.",
+      "feedbackWrong": {
+        "b": "Não elogia.",
+        "c": "Há ordem de mapear."
+      },
+      "hint": "Veja a pergunta.",
+      "learningObjective": "Ligar a tenda à repreensão.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 18:6, o mapa serve apenas para arquivo humano, sem sortes perante o Senhor.",
+      "verseRef": "Josué 18:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "para que eu lance as sortes perante o Senhor, nosso Deus",
+      "feedbackCorrect": "O gráfico existe para lançar sortes perante o Senhor.",
+      "feedbackWrong": {
+        "true": "Releia 18:6: as sortes são perante o Senhor."
+      },
+      "hint": "Veja para que o gráfico é trazido.",
+      "learningObjective": "Ver o propósito do mapa.",
+      "evidence": [
+        "Josué 18:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 18:6, toque a expressão que marca o propósito do gráfico.",
+      "verseRef": "Josué 18:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "sete"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu lance as sortes",
+      "feedbackCorrect": "Para que introduz o propósito.",
+      "feedbackWrong": {
+        "b": "Sete é o número das partes.",
+        "c": "Senhor é perante quem se lança."
+      },
+      "hint": "Procure a finalidade.",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "Josué 18:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Josué 18:7 faz sobre os levitas?",
+      "verseRef": "Josué 18:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não têm parte; o sacerdócio é a porção"
+        },
+        {
+          "id": "b",
+          "text": "Recebem sete partes iguais"
+        },
+        {
+          "id": "c",
+          "text": "Ficam sem qualquer porção divina"
+        },
+        {
+          "id": "d",
+          "text": "Herdam o lado oriental"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os levitas não têm parte entre vocês, pois o sacerdócio do Senhor é a sua porção",
+      "feedbackCorrect": "O Pois explica a ausência de parte territorial.",
+      "feedbackWrong": {
+        "b": "Não recebem as sete partes.",
+        "c": "Têm o sacerdócio.",
+        "d": "O oriente já foi a Gad e Rúben."
+      },
+      "hint": "Leia o Pois.",
+      "learningObjective": "Compreender a porção dos levitas.",
+      "evidence": [
+        "Josué 18:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 18:1–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tenda armada em Siló"
+        },
+        {
+          "id": "b",
+          "text": "Repreensão às sete tribos remissas"
+        },
+        {
+          "id": "c",
+          "text": "Sortes e repartição em Siló"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se reuniu em Siló",
+      "feedbackCorrect": "Tenda, repreensão e sortes.",
+      "feedbackWrong": {
+        "default": "Comece pela tenda."
+      },
+      "hint": "O que abre a cena?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 18:1",
+        "Josué 18:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 18:3, complete: Até quando vocês serão ___ em ir possuir a terra?",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "remissos"
+        },
+        {
+          "id": "b",
+          "text": "rápidos"
+        },
+        {
+          "id": "c",
+          "text": "firmes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serão remissos em ir possuir a terra",
+      "feedbackCorrect": "Remissos.",
+      "feedbackWrong": {
+        "b": "Não é rápidos.",
+        "c": "A palavra é remissos."
+      },
+      "hint": "Veja o adjetivo da demora.",
+      "learningObjective": "Lembrar remissos.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 18:6 a Números 26:55–56?",
+      "verseRef": "Josué 18:6",
+      "passageA": {
+        "ref": "Josué 18:6"
+      },
+      "passageB": {
+        "ref": "Números 26:55–56"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Terra por sortes"
+        },
+        {
+          "id": "b",
+          "text": "Terra por compra"
+        },
+        {
+          "id": "c",
+          "text": "Terra sem Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lance as sortes perante o Senhor",
+      "feedbackCorrect": "Nos dois textos a terra se reparte por sortes.",
+      "feedbackWrong": {
+        "b": "O elo são as sortes.",
+        "c": "É perante o Senhor."
+      },
+      "hint": "Compare o método de partilha.",
+      "learningObjective": "Ligar as sortes a Números.",
+      "evidence": [
+        "Josué 18:6",
+        "Números 26:55–56"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 18:3–10, a repreensão e as sortes sustentam que a terra dada ainda exige obediência para ser possuída.",
+      "verseRef": "Josué 18:3–10",
+      "correctOptionId": "true",
+      "evidenceSpan": "Até quando vocês serão remissos em ir possuir a terra",
+      "feedbackCorrect": "Dom e posse caminham juntos.",
+      "feedbackWrong": {
+        "false": "O texto une remissão e sortes."
+      },
+      "hint": "Una 18:3 e 18:10.",
+      "learningObjective": "Avaliar a leitura da posse.",
+      "evidence": [
+        "Josué 18:3–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 18:3, toque o trecho que sustenta a cobrança de posse.",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "possuir"
+        },
+        {
+          "id": "b",
+          "text": "remissos"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ir possuir a terra",
+      "feedbackCorrect": "Possuir é o verbo da cobrança.",
+      "feedbackWrong": {
+        "b": "Remissos descreve a demora; o verbo da cobrança é possuir.",
+        "c": "Terra é o objeto; o verbo é possuir."
+      },
+      "hint": "Veja o infinitivo da ordem.",
+      "learningObjective": "Tocar o que sustenta a posse.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 18:1–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué manda mapear e lançar sortes diante do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "As sete tribos já concluíram a posse"
+        },
+        {
+          "id": "c",
+          "text": "A tenda torna desnecessário mapear"
+        },
+        {
+          "id": "d",
+          "text": "As sortes ignoram o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Josué lançou as sortes em Siló, perante o SENHOR",
+      "feedbackCorrect": "Tenda, mapa e sortes.",
+      "feedbackWrong": {
+        "b": "Ainda há sete sem herança.",
+        "c": "Há ordem de mapear.",
+        "d": "É perante o Senhor."
+      },
+      "hint": "Una Siló e sortes.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 18:1–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da posse em Siló.",
+      "verseRef": "Josué 18:3–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cobra a demora em possuir"
+        },
+        {
+          "id": "b",
+          "text": "Envia mapeadores das tribos"
+        },
+        {
+          "id": "c",
+          "text": "Lança sortes perante o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Até quando vocês serão remissos",
+      "feedbackCorrect": "Cobrança, mapa e sortes.",
+      "feedbackWrong": {
+        "default": "Comece pela cobrança."
+      },
+      "hint": "O que Josué pergunta primeiro?",
+      "learningObjective": "Encadear cobrança e sortes",
+      "evidence": [
+        "Josué 18:3",
+        "Josué 18:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 18:1, complete: armaram a ___ da congregação.",
+      "verseRef": "Josué 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "tenda"
+        },
+        {
+          "id": "b",
+          "text": "muralha"
+        },
+        {
+          "id": "c",
+          "text": "escola"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "armaram a tenda da congregação",
+      "feedbackCorrect": "A tenda.",
+      "feedbackWrong": {
+        "b": "Não é muralha.",
+        "c": "A palavra é tenda."
+      },
+      "hint": "Veja o que armaram.",
+      "learningObjective": "Lembrar a tenda.",
+      "evidence": [
+        "Josué 18:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 18:10 a 1 Samuel 1:3?",
+      "verseRef": "Josué 18:10",
+      "passageA": {
+        "ref": "Josué 18:10"
+      },
+      "passageB": {
+        "ref": "1 Samuel 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Siló e a casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Sortes em Jerusalém só"
+        },
+        {
+          "id": "c",
+          "text": "Tenda abandonada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Josué lançou as sortes em Siló, perante o SENHOR",
+      "feedbackCorrect": "Siló continua lugar da presença.",
+      "feedbackWrong": {
+        "b": "O elo é Siló.",
+        "c": "Há presença do Senhor."
+      },
+      "hint": "Pense no lugar sagrado.",
+      "learningObjective": "Ligar Siló a Samuel.",
+      "evidence": [
+        "Josué 18:10",
+        "1 Samuel 1:3"
+      ]
+    }
+  ]
+}

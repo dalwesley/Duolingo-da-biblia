@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 22:1–6",
+    "passages": [
+      {
+        "ref": "Gênesis 22:1–6"
+      },
+      {
+        "ref": "Gênesis 22:7–8"
+      }
+    ],
+    "context": "Deus põe Abraão à prova e pede Isaque; os dois sobem o monte juntos.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra que carrega o sentido desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Toma o teu filho",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Após algum tempo deus pôs abraão.",
+        "evidenceRef": "Gênesis 22:1",
+        "evidenceSpan": "Deus pôs Abraão à prova e o chamou"
+      },
+      {
+        "text": "Disse deus toma filho único filho.",
+        "evidenceRef": "Gênesis 22:2",
+        "evidenceSpan": "oferece-o ali em holocausto sobre uma das montanhas"
+      },
+      {
+        "text": "Manhã seguinte abraão levantou bem cedo.",
+        "evidenceRef": "Gênesis 22:3",
+        "evidenceSpan": "levou consigo dois de seus servos e Isaque"
+      },
+      {
+        "text": "Terceiro dia abraão ergueu olhos avistou.",
+        "evidenceRef": "Gênesis 22:4",
+        "evidenceSpan": "Abraão ergueu os olhos e avistou o lugar"
+      },
+      {
+        "text": "Abraão disse servos esperem aqui jumento.",
+        "evidenceRef": "Gênesis 22:5",
+        "evidenceSpan": "eu e o rapaz iremos até lá"
+      },
+      {
+        "text": "Abraão tomou lenha holocausto colocou isaque.",
+        "evidenceRef": "Gênesis 22:6",
+        "evidenceSpan": "tomou a lenha do holocausto e a colocou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "após",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "algum",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Após algum tempo deus pôs",
+        "evidenceRef": "Gênesis 22:1"
+      },
+      {
+        "label": "Disse deus toma filho único",
+        "evidenceRef": "Gênesis 22:2"
+      },
+      {
+        "label": "Manhã seguinte abraão levantou bem",
+        "evidenceRef": "Gênesis 22:3"
+      },
+      {
+        "label": "Terceiro dia abraão ergueu olhos",
+        "evidenceRef": "Gênesis 22:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 22:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "O marcador \"porém\" liga o fluxo do relato neste versículo.",
+        "marker": "porém",
+        "evidenceRef": "Gênesis 22:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "O marcador \"mas\" liga o fluxo do relato neste versículo.",
+        "marker": "mas",
+        "evidenceRef": "Gênesis 22:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 22:8",
+        "bridge": "Deus proverá"
+      },
+      {
+        "ref": "Gênesis 26:3",
+        "bridge": "Promessa a Isaque"
+      },
+      {
+        "ref": "Gênesis 17:7",
+        "bridge": "Aliança perpetua"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "Abraão obedece e confia: Deus proverá o cordeiro, meu filho."
+      }
+    ],
+    "centralInsight": "Abraão obedece e confia: Deus proverá o cordeiro, meu filho.",
+    "anchorQuestion": "O que Gênesis 22:1 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 22:1, deus pôs Abraão à prova e o chamou.",
+      "verseRef": "Gênesis 22:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Deus pôs Abraão à prova e o chamou",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 22:1 afirma.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 22:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "após"
+        },
+        {
+          "id": "b",
+          "text": "algum"
+        },
+        {
+          "id": "c",
+          "text": "tempo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "após",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 22:3, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 22:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há manhã seguinte abraão levantou no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Na",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 22:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 22:1 na ordem do texto.",
+      "verseRef": "Gênesis 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "após algum tempo"
+        },
+        {
+          "id": "c",
+          "text": "Deus pôs Abraão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 22:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "após"
+        },
+        {
+          "id": "c",
+          "text": "algum"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 22:1 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 22:1",
+      "passageA": {
+        "ref": "Gênesis 22:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus põe Abraão à prova e pede Isaque; os dois sobem o monte juntos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 22:3, o marcador se une ideias no fluxo do texto.",
+      "verseRef": "Gênesis 22:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 22:3 afirma.",
+      "evidence": [
+        "Gênesis 22:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 22:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 22:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "manhã"
+        },
+        {
+          "id": "c",
+          "text": "seguinte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 22:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 22:4, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 22:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 22:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Após algum tempo deus pôs"
+        },
+        {
+          "id": "b",
+          "text": "Disse deus toma filho único"
+        },
+        {
+          "id": "c",
+          "text": "Manhã seguinte abraão levantou bem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 22:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 22:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "manhã"
+        },
+        {
+          "id": "b",
+          "text": "após"
+        },
+        {
+          "id": "c",
+          "text": "algum"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "manhã",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 22:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 22:1 a Gênesis 22:8.",
+      "verseRef": "Gênesis 22:1",
+      "passageA": {
+        "ref": "Gênesis 22:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 22:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus proverá"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 22:1",
+        "Gênesis 22:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 22:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 22:8 afirma.",
+      "evidence": [
+        "Gênesis 22:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 22:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 22:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abraão"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "servos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abraão",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 22:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 22:5, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 22:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Abraão disse aos",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 22:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 22:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 22:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "após"
+        },
+        {
+          "id": "c",
+          "text": "algum"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 22:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 22:1 a Gênesis 26:3.",
+      "verseRef": "Gênesis 22:1",
+      "passageA": {
+        "ref": "Gênesis 22:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 26:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa a Isaque"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 22:1",
+        "Gênesis 26:3"
+      ]
+    }
+  ]
+}

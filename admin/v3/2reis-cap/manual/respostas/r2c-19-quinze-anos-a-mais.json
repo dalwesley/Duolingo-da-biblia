@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "2 Reis 20:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 20:1–11"
+      }
+    ],
+    "context": "Ezequias adoece de morte. Isaías anuncia o fim; o rei ora e chora. O Senhor acrescenta quinze anos e confirma com a sombra.",
+    "keyword": "oração",
+    "keywordGloss": "O Senhor ouve a oração de Ezequias e vê suas lágrimas.",
+    "focusQuestion": "Na doença ou no limite, você põe a casa em ordem e ora, ou só espera o diagnóstico?",
+    "reflectionPrompts": [
+      "Casa em ordem",
+      "Oração e lágrimas",
+      "Sombra que volta"
+    ],
+    "facts": [
+      {
+        "text": "Isaías anuncia que Ezequias morrerá e não viverá.",
+        "evidenceRef": "2 Reis 20:1",
+        "evidenceSpan": "você morrerá e não viverá"
+      },
+      {
+        "text": "Ezequias virou o rosto para a parede e orou.",
+        "evidenceRef": "2 Reis 20:2",
+        "evidenceSpan": "virou o rosto para a parede e orou ao Senhor"
+      },
+      {
+        "text": "O Senhor ouviu a oração e viu as lágrimas.",
+        "evidenceRef": "2 Reis 20:5",
+        "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas"
+      },
+      {
+        "text": "Acrescentará quinze anos aos dias de Ezequias.",
+        "evidenceRef": "2 Reis 20:6",
+        "evidenceSpan": "acrescentarei aos teus dias quinze anos"
+      },
+      {
+        "text": "Puseram compressa de figos sobre a ferida e ele recuperou.",
+        "evidenceRef": "2 Reis 20:7",
+        "evidenceSpan": "a puseram sobre a ferida, e ele recuperou a saúde"
+      },
+      {
+        "text": "A sombra retrocedeu dez graus no relógio de Acaz.",
+        "evidenceRef": "2 Reis 20:11",
+        "evidenceSpan": "fez retroceder a sombra dez graus no relógio de sol de Acaz"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "oração",
+        "gloss": "O pedido que o Senhor ouve e responde com cura."
+      },
+      {
+        "term": "quinze anos",
+        "gloss": "Tempo que o Senhor acrescenta à vida de Ezequias."
+      },
+      {
+        "term": "sombra",
+        "gloss": "Sinal que retrocede dez graus para confirmar a palavra."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Anúncio de morte e oração na parede",
+        "evidenceRef": "2 Reis 20:1–3"
+      },
+      {
+        "label": "Palavra: cura, quinze anos e defesa",
+        "evidenceRef": "2 Reis 20:4–6"
+      },
+      {
+        "label": "Figos e pedido de sinal",
+        "evidenceRef": "2 Reis 20:7–8"
+      },
+      {
+        "label": "Sombra retrocede dez graus",
+        "evidenceRef": "2 Reis 20:9–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A casa deve ficar em ordem porque ele morrerá.",
+        "marker": "pois",
+        "evidenceRef": "2 Reis 20:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois da oração, a palavra do Senhor manda Isaías voltar.",
+        "marker": "Antes",
+        "evidenceRef": "2 Reis 20:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "É simples a sombra avançar; Ezequias pede que retroceda.",
+        "marker": "não",
+        "evidenceRef": "2 Reis 20:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 38:5",
+        "bridge": "Mesma resposta à oração"
+      },
+      {
+        "ref": "Salmos 30:2",
+        "bridge": "Clamou e foi curado"
+      },
+      {
+        "ref": "Tiago 5:15",
+        "bridge": "Oração da fé e cura"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ezequias aceitou a morte em silêncio, sem orar.",
+        "why": "Ele virou o rosto, orou e chorou muito."
+      },
+      {
+        "text": "O sinal foi a sombra avançar dez graus.",
+        "why": "Ezequias pediu que retrocedesse, e assim foi."
+      },
+      {
+        "text": "O Senhor só curou o corpo, sem acrescentar anos.",
+        "why": "Acrescentou quinze anos aos seus dias."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Reis 20:6, quantos anos o Senhor acrescentou a Ezequias?",
+    "centralInsight": "O Senhor ouve a oração e confirma o sinal com a sombra que volta atrás."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 20 —6, o Senhor promete acrescentar aos dias de Ezequias quinze anos.",
+      "verseRef": "2 Reis 20:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "acrescentarei aos teus dias quinze anos",
+      "feedbackCorrect": "Quinze anos são acrescentados à vida.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o número de anos.",
+      "learningObjective": "Observar o acréscimo de anos.",
+      "evidence": [
+        "2 Reis 20:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 20:2, toque o que Ezequias fez para a parede.",
+      "verseRef": "2 Reis 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "virou"
+        },
+        {
+          "id": "b",
+          "text": "Ezequias"
+        },
+        {
+          "id": "c",
+          "text": "rosto"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ezequias",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o gesto da oração.",
+      "evidence": [
+        "2 Reis 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 20:5, o que o Senhor diz ter ouvido e visto?",
+      "verseRef": "2 Reis 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A oração e as lágrimas de Ezequias"
+        },
+        {
+          "id": "b",
+          "text": "Só o pedido de Isaías"
+        },
+        {
+          "id": "c",
+          "text": "O cerco da Assíria na porta"
+        },
+        {
+          "id": "d",
+          "text": "A sombra avançando sozinha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Oração ouvida e lágrimas vistas.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o que Deus ouviu e viu.",
+      "learningObjective": "Notar a resposta à oração.",
+      "evidence": [
+        "2 Reis 20:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 20:5 na ordem do texto.",
+      "verseRef": "2 Reis 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu ouvi a tua oração e vi as tuas lágrimas"
+        },
+        {
+          "id": "b",
+          "text": "eis que eu te curarei"
+        },
+        {
+          "id": "c",
+          "text": "ao terceiro dia, subirás à Casa do SENHOR"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Ouvir, curar e subir ao terceiro dia.",
+      "feedbackWrong": {
+        "default": "Comece pelo que o Senhor ouviu."
+      },
+      "hint": "O verso começa pela oração ouvida.",
+      "learningObjective": "Seguir a ordem da promessa.",
+      "evidence": [
+        "2 Reis 20:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 20:7, complete: Tomai uma compressa de ___.",
+      "verseRef": "2 Reis 20:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "figos"
+        },
+        {
+          "id": "b",
+          "text": "azeite"
+        },
+        {
+          "id": "c",
+          "text": "vinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tomai uma compressa de figos",
+      "feedbackCorrect": "A compressa é de figos.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja o remédio indicado.",
+      "learningObjective": "Lembrar os figos.",
+      "evidence": [
+        "2 Reis 20:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 20:2 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 20:2",
+      "passageA": {
+        "ref": "2 Reis 20:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diante da morte anunciada, Ezequias ora ao Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração diante da morte"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio sem pedido"
+        },
+        {
+          "id": "c",
+          "text": "Fuga para a Assíria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "orou ao Senhor",
+      "feedbackCorrect": "A oração liga o verso ao contexto.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que ele faz virado à parede?",
+      "learningObjective": "Ligar oração e contexto.",
+      "evidence": [
+        "2 Reis 20:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 20 —1, Isaías manda Ezequias pôr a casa em ordem porque ele viverá muitos anos sem risco.",
+      "verseRef": "2 Reis 20:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois você morrerá e não viverá",
+      "feedbackCorrect": "O \"pois\" aponta para a morte anunciada.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o motivo do \"pois\".",
+      "learningObjective": "Compreender a causa do anúncio.",
+      "evidence": [
+        "2 Reis 20:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 20:1, toque o marcador de causa após a ordem de pôr a casa em ordem.",
+      "verseRef": "2 Reis 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias"
+        },
+        {
+          "id": "b",
+          "text": "Naqueles"
+        },
+        {
+          "id": "c",
+          "text": "adoeceu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Naqueles",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "2 Reis 20:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 20:10 se relaciona com a oferta de Isaías em 20:9?",
+      "verseRef": "2 Reis 20:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pede o sinal mais difícil: a sombra retroceder"
+        },
+        {
+          "id": "b",
+          "text": "Aceita que a sombra avance dez graus"
+        },
+        {
+          "id": "c",
+          "text": "Recusa qualquer sinal do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Pede que a sombra suma de vez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não, mas que retroceda dez graus",
+      "feedbackCorrect": "Ele rejeita o fácil e pede o retrocesso.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o \"não, mas\".",
+      "learningObjective": "Compreender a escolha do sinal.",
+      "evidence": [
+        "2 Reis 20:9",
+        "2 Reis 20:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "2 Reis 20:1–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio de morte e oração na parede"
+        },
+        {
+          "id": "b",
+          "text": "Palavra: cura, quinze anos e defesa"
+        },
+        {
+          "id": "c",
+          "text": "Sombra retrocede dez graus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "virou o rosto para a parede e orou ao Senhor",
+      "feedbackCorrect": "Anúncio, resposta e sinal.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio de morte."
+      },
+      "hint": "O que vem antes da cura?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Reis 20:1",
+        "2 Reis 20:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 20:10, complete: não, mas que ___ dez graus.",
+      "verseRef": "2 Reis 20:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "retroceda"
+        },
+        {
+          "id": "b",
+          "text": "avance"
+        },
+        {
+          "id": "c",
+          "text": "pare"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não, mas que retroceda dez graus",
+      "feedbackCorrect": "O pedido é que retroceda.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Verbo do pedido difícil.",
+      "learningObjective": "Lembrar o contraste do sinal.",
+      "evidence": [
+        "2 Reis 20:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 20:5 a Isaías 38:5?",
+      "verseRef": "2 Reis 20:5",
+      "passageA": {
+        "ref": "2 Reis 20:5"
+      },
+      "passageB": {
+        "ref": "Isaías 38:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesma resposta à oração"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio de Deus na doença"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de acrescentar anos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Isaías 38 ecoa a mesma resposta.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a oração ouvida.",
+      "learningObjective": "Ligar ao paralelo em Isaías.",
+      "evidence": [
+        "2 Reis 20:5",
+        "Isaías 38:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 20 —5–11, o Senhor responde à oração com cura, anos a mais e um sinal que confirma a palavra.",
+      "verseRef": "2 Reis 20:5–6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Oração, cura, anos e sinal formam a resposta.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Una oração, anos e sombra.",
+      "learningObjective": "Avaliar a leitura da resposta divina.",
+      "evidence": [
+        "2 Reis 20:5",
+        "2 Reis 20:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 20:5, toque o que o Senhor diz ter ouvido.",
+      "verseRef": "2 Reis 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "príncipe"
+        },
+        {
+          "id": "b",
+          "text": "Volta"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Volta",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura da oração ouvida.",
+      "evidence": [
+        "2 Reis 20:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura 2 Reis 20:1–11 melhor sustenta?",
+      "verseRef": "2 Reis 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor ouve, cura e confirma com sinal"
+        },
+        {
+          "id": "b",
+          "text": "A morte anunciada não podia ser alterada"
+        },
+        {
+          "id": "c",
+          "text": "O sinal foi a sombra avançar dez graus"
+        },
+        {
+          "id": "d",
+          "text": "Ezequias recusou orar e só usou figos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Oração respondida, cura e sinal.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una ouvir, curar e sinal.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Reis 20:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da resposta à oração.",
+      "verseRef": "2 Reis 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio de morte e oração com lágrimas"
+        },
+        {
+          "id": "b",
+          "text": "Promessa de cura e quinze anos"
+        },
+        {
+          "id": "c",
+          "text": "Sinal da sombra que retrocede"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Pedido, promessa e confirmação.",
+      "feedbackWrong": {
+        "default": "Comece pela oração sob a morte."
+      },
+      "hint": "O que vem antes do sinal?",
+      "learningObjective": "Encadear oração e sinal.",
+      "evidence": [
+        "2 Reis 20:1",
+        "2 Reis 20:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 20:11, complete: fez retroceder a ___ dez graus.",
+      "verseRef": "2 Reis 20:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "sombra"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "ferida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez retroceder a sombra dez graus",
+      "feedbackCorrect": "A sombra é o sinal.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que se move no relógio?",
+      "learningObjective": "Lembrar o termo sombra.",
+      "evidence": [
+        "2 Reis 20:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 20:5 a Salmos 30:2?",
+      "verseRef": "2 Reis 20:5",
+      "passageA": {
+        "ref": "2 Reis 20:5"
+      },
+      "passageB": {
+        "ref": "Salmos 30:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamou e foi curado"
+        },
+        {
+          "id": "b",
+          "text": "Deus ignorou o clamor"
+        },
+        {
+          "id": "c",
+          "text": "Cura sem qualquer pedido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eis que eu te curarei",
+      "feedbackCorrect": "Nos dois textos, o clamor encontra cura.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare clamor e cura.",
+      "learningObjective": "Ligar à cura no Salmo.",
+      "evidence": [
+        "2 Reis 20:5",
+        "Salmos 30:2"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "slug": "tito-cap",
+  "prefix": "tic",
+  "book": "Tito",
+  "chapters": 3,
+  "title": "Tito",
+  "description": "Tito capítulo a capítulo: sã doutrina, boa conduta e a esperança da graça.",
+  "icon": "🏛️",
+  "color": "#1ABC9C",
+  "order": 69,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["tito"],
+  "modules": [
+    {
+      "title": "Doutrina que transforma · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "Tito 1:10–16",
+          "title": "Repreender com firmeza",
+          "intro": "Há muitos insubordinados e enganadores; a boca deles precisa ser fechada.",
+          "insight": "Aos que são da circuncisão, repreende-os severamente, para que sejam sãos na fé.",
+          "objective": "Guardar a sã doutrina"
+        },
+        {
+          "ref": "Tito 2:1–10",
+          "title": "Ensinar o que convém",
+          "intro": "Paulo detalha o que convém a anciãos, jovens e servos na vida diária.",
+          "insight": "A sã doutrina molda a conduta: para que a palavra de Deus não seja blasfemada.",
+          "objective": "Viver o que se ensina"
+        },
+        {
+          "ref": "Tito 3:3–8",
+          "title": "Salvos pela misericórdia",
+          "intro": "Outrora éramos loucos; agora a bondade de Deus nosso Salvador apareceu.",
+          "insight": "Não por obras de justiça, mas segundo a sua misericórdia ele nos salvou pelo lavar regenerador.",
+          "objective": "Confiar na misericórdia"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Doutrina que transforma",
+        "intro": "Revise a firmeza doutrinária, a conduta que convém e a salvação pela misericórdia.",
+        "insight": "A sã doutrina nasce da misericórdia e muda a vida"
+      }
+    }
+  ]
+}

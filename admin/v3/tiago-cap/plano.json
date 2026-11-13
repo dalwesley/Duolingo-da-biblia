@@ -1,0 +1,61 @@
+{
+  "slug": "tiago-cap",
+  "prefix": "tjc",
+  "book": "Tiago",
+  "chapters": 5,
+  "title": "Tiago",
+  "description": "Tiago capítulo a capítulo: fé que se vê na prova, na fala e nas obras.",
+  "icon": "🪞",
+  "color": "#00897B",
+  "order": 74,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["cartas-gerais", "tiago"],
+  "modules": [
+    {
+      "title": "Fé que se vê · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "Tiago 1:2–8",
+          "title": "Alegria na prova",
+          "intro": "Tiago começa pedindo alegria nas diversas provações e sabedoria pedida com fé.",
+          "insight": "A provação gera perseverança; peçam sabedoria a Deus com fé, sem duvidar.",
+          "objective": "Pedir sabedoria com fé"
+        },
+        {
+          "ref": "Tiago 2:1–9",
+          "title": "Sem acepção",
+          "intro": "A fé em Jesus, Senhor da glória, não combina com favoritismo na reunião.",
+          "insight": "Fazer acepção de pessoas é pecado; a lei real é amar o próximo como a si mesmo.",
+          "objective": "Amar sem favoritismo"
+        },
+        {
+          "ref": "Tiago 3:13–18",
+          "title": "Sabedoria do alto",
+          "intro": "Tiago pergunta quem é sábio e distingue a sabedoria terrena da que vem do alto.",
+          "insight": "A sabedoria do alto é pura, pacífica e cheia de misericórdia; a outra gera confusão.",
+          "objective": "Buscar a sabedoria do alto"
+        },
+        {
+          "ref": "Tiago 4:7–12",
+          "title": "Aproximem-se de Deus",
+          "intro": "Diante da soberba, Tiago chama a sujeição a Deus e a humildade.",
+          "insight": "Sujeitem-se a Deus, resistam ao diabo e humilhem-se: o Senhor os exaltará.",
+          "objective": "Humilhar-se perante Deus"
+        },
+        {
+          "ref": "Tiago 5:7–12",
+          "title": "Paciência até a vinda",
+          "intro": "Como o lavrador espera o fruto, os irmãos devem esperar com paciência.",
+          "insight": "Sejam pacientes até a vinda do Senhor; não murmurem e sejam firmes.",
+          "objective": "Esperar com paciência"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fé que se vê",
+        "intro": "Revise a prova, a acepção, a sabedoria, a humildade e a paciência.",
+        "insight": "A fé verdadeira se mostra no caráter e nas relações"
+      }
+    }
+  ]
+}

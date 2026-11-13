@@ -1,0 +1,500 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 10:2–7",
+    "passages": [
+      { "ref": "Apocalipse 10:2–7" },
+      { "ref": "Apocalipse 10:1" }
+    ],
+    "context": "Depois da sexta trombeta, João vê outro anjo forte descer do céu com um livrinho aberto na mão. Ele fala em voz alta, e os sete trovões respondem. Então vem um juramento sobre o tempo do plano de Deus.",
+    "keyword": "Sem mais demora",
+    "keywordGloss": "O anjo jura por quem criou tudo que o plano de Deus não vai mais atrasar.",
+    "focusQuestion": "Em que área da sua vida você precisa confiar que Deus vai cumprir o que anunciou?",
+    "reflectionPrompts": [
+      "Um livrinho aberto",
+      "O que Deus guarda em segredo",
+      "A promessa que se cumpre"
+    ],
+    "facts": [
+      {
+        "text": "João vê outro anjo forte descendo do céu, envolto em nuvem.",
+        "evidenceRef": "Apocalipse 10:1",
+        "evidenceSpan": "outro anjo forte descendo do céu, envolto em nuvem"
+      },
+      {
+        "text": "O anjo tem na mão um livrinho aberto.",
+        "evidenceRef": "Apocalipse 10:2",
+        "evidenceSpan": "tinha na mão um livrinho aberto"
+      },
+      {
+        "text": "O anjo coloca um pé sobre o mar e o outro sobre a terra.",
+        "evidenceRef": "Apocalipse 10:2",
+        "evidenceSpan": "colocou o pé direito sobre o mar e o esquerdo sobre a terra"
+      },
+      {
+        "text": "A voz do céu manda João guardar em segredo o que os sete trovões falaram.",
+        "evidenceRef": "Apocalipse 10:4",
+        "evidenceSpan": "Guarda em segredo as coisas que os sete trovões falaram e não as escrevas"
+      },
+      {
+        "text": "O anjo jura que não haveria mais demora.",
+        "evidenceRef": "Apocalipse 10:6",
+        "evidenceSpan": "que não haveria mais demora"
+      },
+      {
+        "text": "Nos dias do sétimo anjo, o mistério de Deus se cumprirá como foi anunciado aos profetas.",
+        "evidenceRef": "Apocalipse 10:7",
+        "evidenceSpan": "cumprir-se-á, então, o mistério de Deus, conforme foi anunciado aos seus servos, os profetas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "mistério",
+        "gloss": "O plano de Deus que ele mesmo vai cumprir, como anunciou aos profetas."
+      },
+      {
+        "term": "demora",
+        "gloss": "Tempo de espera: o anjo jura que ele chega ao fim e que o plano de Deus não vai atrasar."
+      },
+      {
+        "term": "sete trovões",
+        "gloss": "Vozes que João ouve, mas não pode escrever: Deus guarda alguns segredos."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Um anjo forte desce com o livrinho aberto",
+        "evidenceRef": "Apocalipse 10:1–2"
+      },
+      {
+        "label": "Os trovões falam e João recebe ordem de silêncio",
+        "evidenceRef": "Apocalipse 10:3–4"
+      },
+      {
+        "label": "O anjo jura que não haverá mais demora",
+        "evidenceRef": "Apocalipse 10:5–6"
+      },
+      {
+        "label": "O mistério de Deus se cumprirá",
+        "evidenceRef": "Apocalipse 10:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "João ia escrever o que os trovões disseram, mas a voz do céu manda guardar em segredo.",
+        "marker": "mas",
+        "evidenceRef": "Apocalipse 10:4"
+      },
+      {
+        "kind": "causa",
+        "text": "O anjo jura pelo Criador de tudo, e isso dá peso ao que promete.",
+        "marker": "por",
+        "evidenceRef": "Apocalipse 10:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "Na hora da sétima trombeta, então, o mistério de Deus se cumpre.",
+        "marker": "então",
+        "evidenceRef": "Apocalipse 10:7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Amós 3:7", "bridge": "Deus revela aos profetas" },
+      { "ref": "Deuteronômio 29:29", "bridge": "Deus guarda segredos, revela o essencial" },
+      { "ref": "Daniel 12:7", "bridge": "Juramento por quem vive para sempre" }
+    ],
+    "misreadings": [
+      {
+        "text": "João deveria escrever tudo o que os sete trovões disseram.",
+        "why": "Uma voz do céu manda guardar em segredo o que eles falaram e não escrever."
+      },
+      {
+        "text": "O juramento mostra que Deus ainda pode adiar o seu plano por tempo indeterminado.",
+        "why": "O anjo jura pelo Criador que não haveria mais demora."
+      },
+      {
+        "text": "O mistério de Deus é novo e não tem ligação com o que os profetas anunciaram.",
+        "why": "O texto diz que ele se cumpre conforme foi anunciado aos servos de Deus, os profetas."
+      }
+    ],
+    "centralInsight": "Nos dias da voz do sétimo anjo, o mistério de Deus se cumprirá, como ele anunciou.",
+    "anchorQuestion": "O que o anjo jura em Apocalipse 10:6, depois de levantar a mão para o céu?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 10:2, o anjo forte tinha na mão um livrinho aberto.",
+      "verseRef": "Apocalipse 10:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "tinha na mão um livrinho aberto",
+      "feedbackCorrect": "O anjo traz na mão um livrinho aberto, e não um livro selado.",
+      "feedbackWrong": {
+        "false": "Releia o começo de 10:2: o anjo tinha na mão um livrinho aberto."
+      },
+      "hint": "Olhe o começo do versículo.",
+      "learningObjective": "Observar o livrinho aberto na mão do anjo.",
+      "evidence": ["Apocalipse 10:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 10:1, toque o que envolve o anjo ao descer do céu.",
+      "verseRef": "Apocalipse 10:1",
+      "options": [
+        { "id": "a", "text": "nuvem" },
+        { "id": "b", "text": "arco-íris" },
+        { "id": "c", "text": "colunas de fogo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "envolto em nuvem",
+      "feedbackCorrect": "O anjo desce \"envolto em nuvem\": é ela que o cobre.",
+      "feedbackWrong": {
+        "b": "O arco-íris está por cima da cabeça dele, e não o envolve.",
+        "c": "As colunas de fogo são as pernas do anjo, e não o que o envolve."
+      },
+      "hint": "Procure o que cobre o anjo ao descer.",
+      "learningObjective": "Observar como o anjo aparece ao descer do céu.",
+      "evidence": ["Apocalipse 10:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 10:5, o que o anjo fez com a mão direita?",
+      "verseRef": "Apocalipse 10:5",
+      "options": [
+        { "id": "a", "text": "Apontou-a para a terra" },
+        { "id": "b", "text": "Pousou-a sobre o livrinho" },
+        { "id": "c", "text": "Estendeu-a sobre o mar" },
+        { "id": "d", "text": "Levantou-a para o céu" }
+      ],
+      "correctOptionId": "d",
+      "evidenceSpan": "levantou a mão direita para o céu",
+      "feedbackCorrect": "O anjo levanta a mão para o céu, o gesto de quem vai jurar.",
+      "feedbackWrong": {
+        "a": "A mão vai para o céu, e não para a terra, onde está seu pé esquerdo.",
+        "b": "O livrinho está na outra mão do anjo; a mão direita sobe ao céu.",
+        "c": "O anjo está em pé sobre o mar; a mão direita sobe ao céu."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar o gesto do anjo antes do juramento.",
+      "evidence": ["Apocalipse 10:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 10:6 na ordem do texto.",
+      "verseRef": "Apocalipse 10:6",
+      "options": [
+        { "id": "a", "text": "E jurou por Aquele que vive pelos séculos dos séculos" },
+        { "id": "b", "text": "o mesmo que criou o céu e tudo o que nele há" },
+        { "id": "c", "text": "que não haveria mais demora" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o mesmo que criou o céu e tudo o que nele há",
+      "feedbackCorrect": "O anjo jura por quem vive para sempre e criou tudo, e então diz o que jura.",
+      "feedbackWrong": {
+        "default": "Comece pelo juramento; o que o anjo promete vem no fim."
+      },
+      "hint": "O versículo termina com o conteúdo do juramento.",
+      "learningObjective": "Reconhecer a sequência de Apocalipse 10:6.",
+      "evidence": ["Apocalipse 10:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 10:3, quantos trovões emitiram suas próprias vozes quando o anjo bradou?",
+      "verseRef": "Apocalipse 10:3",
+      "options": [
+        { "id": "a", "text": "doze" },
+        { "id": "b", "text": "três" },
+        { "id": "c", "text": "sete" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "os sete trovões emitiram suas próprias vozes",
+      "feedbackCorrect": "Foram os sete trovões que emitiram suas próprias vozes.",
+      "feedbackWrong": {
+        "a": "Doze é número das tribos; aqui são sete trovões.",
+        "b": "O texto fala de sete trovões, e não de três."
+      },
+      "hint": "O número se repete no versículo seguinte.",
+      "learningObjective": "Lembrar quantos trovões falaram.",
+      "evidence": ["Apocalipse 10:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 10:1 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 10:1",
+      "passageA": {
+        "ref": "Apocalipse 10:1",
+        "text": "outro anjo forte descendo do céu"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A mensagem chega do céu, e não nasce na terra."
+      },
+      "options": [
+        { "id": "a", "text": "A mensagem nasce na terra" },
+        { "id": "b", "text": "A mensagem vem de Deus" },
+        { "id": "c", "text": "O anjo vem do mar" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "outro anjo forte descendo do céu",
+      "feedbackCorrect": "O anjo vem do céu: a mensagem não é invenção humana, vem de Deus.",
+      "feedbackWrong": {
+        "a": "O anjo desce do céu; a mensagem não começa na terra.",
+        "c": "Ele desce do céu e depois pisa o mar; não vem do mar."
+      },
+      "hint": "Veja de onde o anjo vem.",
+      "learningObjective": "Ligar a descida do anjo à origem divina da mensagem.",
+      "evidence": ["Apocalipse 10:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 10:4, João escreve o que os sete trovões falaram porque uma voz do céu manda fazer isso.",
+      "verseRef": "Apocalipse 10:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Guarda em segredo as coisas que os sete trovões falaram e não as escrevas",
+      "feedbackCorrect": "João ia escrever, mas a voz do céu mandou guardar em segredo o que os trovões falaram.",
+      "feedbackWrong": {
+        "true": "Releia 10:4: a voz do céu manda guardar em segredo e não escrever."
+      },
+      "hint": "Repare no que a voz do céu manda fazer.",
+      "learningObjective": "Compreender a ordem de guardar segredo sobre os trovões.",
+      "evidence": ["Apocalipse 10:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 10:4, toque a palavra que marca a virada entre a intenção de João e a ordem do céu.",
+      "verseRef": "Apocalipse 10:4",
+      "options": [
+        { "id": "a", "text": "ia" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "segredo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu ia escrevê-las, mas ouvi uma voz do céu",
+      "feedbackCorrect": "\"Mas\" marca a virada: João ia escrever, e a voz do céu o interrompe.",
+      "feedbackWrong": {
+        "a": "\"Ia\" mostra a intenção de João, e não a virada.",
+        "c": "\"Segredo\" é o que a voz manda guardar, e não a palavra de virada."
+      },
+      "hint": "Procure a palavra curta entre a intenção e a voz.",
+      "learningObjective": "Reconhecer o marcador de contraste no texto.",
+      "evidence": ["Apocalipse 10:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Apocalipse 10:6 relaciona o juramento do anjo com o Criador?",
+      "verseRef": "Apocalipse 10:6",
+      "options": [
+        { "id": "a", "text": "O anjo jura pelo Criador de tudo, e isso dá peso ao que promete" },
+        { "id": "b", "text": "O anjo jura por si mesmo, como dono do mar e da terra" },
+        { "id": "c", "text": "O Criador jura obedecer ao anjo" },
+        { "id": "d", "text": "O juramento só vale enquanto a terra existir" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "jurou por Aquele que vive pelos séculos dos séculos",
+      "feedbackCorrect": "Jurar pelo Criador eterno de tudo dá ao anúncio a maior garantia possível.",
+      "feedbackWrong": {
+        "b": "O anjo pisa o mar e a terra, mas jura por Aquele que vive para sempre.",
+        "c": "O anjo é quem jura, e jura por Deus; Deus não jura obediência a ele.",
+        "d": "O texto jura por Aquele que vive pelos séculos dos séculos, e não por algo passageiro."
+      },
+      "hint": "Veja por quem o anjo jura e o que isso garante.",
+      "learningObjective": "Relacionar o juramento com o Deus criador.",
+      "evidence": ["Apocalipse 10:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Apocalipse 10:3–4?",
+      "verseRef": "Apocalipse 10:3–4",
+      "options": [
+        { "id": "a", "text": "O anjo brada como um leão" },
+        { "id": "b", "text": "Os sete trovões emitem suas vozes" },
+        { "id": "c", "text": "Uma voz do céu manda guardar segredo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "os sete trovões emitiram suas próprias vozes",
+      "feedbackCorrect": "O anjo brada, os trovões respondem, e a ordem do céu fecha a cena.",
+      "feedbackWrong": {
+        "default": "O brado do anjo vem primeiro; a ordem de silêncio vem por último."
+      },
+      "hint": "A ordem de silêncio é o ponto final.",
+      "learningObjective": "Compreender o movimento do brado ao silêncio.",
+      "evidence": ["Apocalipse 10:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 10:7, que palavra mostra que o cumprimento segue o que os profetas já anunciaram?",
+      "verseRef": "Apocalipse 10:7",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "conforme" },
+        { "id": "c", "text": "quando" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "conforme foi anunciado aos seus servos",
+      "feedbackCorrect": "\"Conforme\" liga o cumprimento ao anúncio: Deus faz o que disse aos profetas.",
+      "feedbackWrong": {
+        "a": "\"Porque\" daria uma razão; o texto diz que o cumprimento segue o anúncio.",
+        "c": "\"Quando\" marca tempo; aqui a palavra liga o cumprimento ao que foi anunciado."
+      },
+      "hint": "A palavra liga o cumprimento ao que foi dito antes.",
+      "learningObjective": "Compreender que o cumprimento segue o anúncio dos profetas.",
+      "evidence": ["Apocalipse 10:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 10:7 a Amós 3:7?",
+      "verseRef": "Apocalipse 10:7",
+      "passageA": { "ref": "Apocalipse 10:7" },
+      "passageB": { "ref": "Amós 3:7" },
+      "options": [
+        { "id": "a", "text": "Deus esconde dos profetas" },
+        { "id": "b", "text": "Os profetas inventam a mensagem" },
+        { "id": "c", "text": "Deus revela aos profetas" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "conforme foi anunciado aos seus servos, os profetas",
+      "feedbackCorrect": "Nos dois textos, Deus revela seu plano aos servos, os profetas.",
+      "feedbackWrong": {
+        "a": "Amós diz o contrário: Deus não age sem antes revelar seu segredo aos profetas.",
+        "b": "Nos dois textos, a mensagem vem de Deus; os profetas a recebem."
+      },
+      "hint": "Compare quem, nos dois textos, recebe o anúncio.",
+      "learningObjective": "Relacionar o anúncio aos profetas em Apocalipse e em Amós.",
+      "evidence": ["Apocalipse 10:7", "Amós 3:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Apocalipse 10:6 sustenta que Deus ainda pode adiar o seu plano por tempo indeterminado.",
+      "verseRef": "Apocalipse 10:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "que não haveria mais demora",
+      "feedbackCorrect": "O anjo jura pelo Criador que não haveria mais demora: o plano de Deus segue firme.",
+      "feedbackWrong": {
+        "true": "Releia 10:6: o anjo jura que não haveria mais demora."
+      },
+      "hint": "Veja o conteúdo do juramento no fim do versículo.",
+      "learningObjective": "Interpretar o juramento como garantia de que o plano de Deus não atrasa.",
+      "evidence": ["Apocalipse 10:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 10:6, toque o trecho que dá peso ao juramento do anjo.",
+      "verseRef": "Apocalipse 10:6",
+      "options": [
+        { "id": "a", "text": "mais demora" },
+        { "id": "b", "text": "o mar" },
+        { "id": "c", "text": "Aquele que vive" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "jurou por Aquele que vive pelos séculos dos séculos",
+      "feedbackCorrect": "O peso do juramento vem de quem é invocado: Aquele que vive para sempre.",
+      "feedbackWrong": {
+        "a": "\"Mais demora\" é o que se promete, e não o que dá peso ao juramento.",
+        "b": "O mar é parte do que Deus criou, e não aquele por quem se jura."
+      },
+      "hint": "Procure por quem o anjo jura.",
+      "learningObjective": "Sustentar com o texto que o juramento se apoia em Deus.",
+      "evidence": ["Apocalipse 10:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Apocalipse 10:7 sustenta sobre o plano de Deus?",
+      "verseRef": "Apocalipse 10:7",
+      "options": [
+        { "id": "a", "text": "O plano foi esquecido e precisa ser refeito" },
+        { "id": "b", "text": "O plano se cumpre como Deus anunciou aos profetas" },
+        { "id": "c", "text": "O plano depende de uma decisão dos anjos" },
+        { "id": "d", "text": "O plano é um segredo que nenhum profeta conheceu" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cumprir-se-á, então, o mistério de Deus",
+      "feedbackCorrect": "O mistério de Deus se cumpre, e isso confirma o que os profetas anunciaram.",
+      "feedbackWrong": {
+        "a": "Nada é refeito: o mistério se cumpre como foi anunciado.",
+        "c": "Os anjos tocam a trombeta, mas é o mistério de Deus que se cumpre.",
+        "d": "O texto diz o contrário: foi anunciado aos servos de Deus, os profetas."
+      },
+      "hint": "Veja a quem o texto diz que o plano foi anunciado.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o plano de Deus.",
+      "evidence": ["Apocalipse 10:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o juramento do anjo e o cumprimento do mistério?",
+      "verseRef": "Apocalipse 10:6",
+      "options": [
+        { "id": "a", "text": "Um anjo jura por Aquele que vive eternamente" },
+        { "id": "b", "text": "O anjo jura que não haverá mais demora" },
+        { "id": "c", "text": "O mistério de Deus se cumpre como anunciado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "jurou por Aquele que vive pelos séculos dos séculos",
+      "feedbackCorrect": "O juramento antigo de Daniel ecoa em João, e o mistério chega ao cumprimento.",
+      "feedbackWrong": {
+        "default": "Siga a Bíblia: juramento em Daniel (12:7), o de Ap 10:6 e o cumprimento em 10:7."
+      },
+      "hint": "Siga a ordem da Bíblia: Daniel, depois Apocalipse.",
+      "learningObjective": "Ver o juramento do anjo como parte de um fio que vem de Daniel.",
+      "evidence": ["Apocalipse 10:6", "Daniel 12:7", "Apocalipse 10:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 10:7, que termo nomeia o plano de Deus que se cumprirá, como ele anunciou?",
+      "verseRef": "Apocalipse 10:7",
+      "options": [
+        { "id": "a", "text": "castigo" },
+        { "id": "b", "text": "mistério" },
+        { "id": "c", "text": "reino" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o mistério de Deus",
+      "feedbackCorrect": "\"Mistério\" é o plano de Deus, que parecia oculto e agora se cumpre.",
+      "feedbackWrong": {
+        "a": "O texto não fala de castigo, mas do mistério de Deus.",
+        "c": "O reino é tema do capítulo seguinte; aqui o termo é \"mistério\"."
+      },
+      "hint": "É o termo para o plano que Deus mantinha oculto.",
+      "learningObjective": "Lembrar o termo que carrega o sentido do cumprimento.",
+      "evidence": ["Apocalipse 10:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 10:4 a Deuteronômio 29:29?",
+      "verseRef": "Apocalipse 10:4",
+      "passageA": { "ref": "Apocalipse 10:4" },
+      "passageB": { "ref": "Deuteronômio 29:29" },
+      "options": [
+        { "id": "a", "text": "Deus esconde tudo de todos" },
+        { "id": "b", "text": "Nada em Deus fica oculto" },
+        { "id": "c", "text": "Deus guarda segredos, revela o essencial" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Guarda em segredo as coisas que os sete trovões falaram",
+      "feedbackCorrect": "Há coisas que Deus guarda e outras que revela; confiar nele inclui as duas.",
+      "feedbackWrong": {
+        "a": "Moisés diz que o que foi revelado pertence ao povo; Deus não esconde tudo.",
+        "b": "Os dois textos reconhecem coisas que pertencem só a Deus."
+      },
+      "hint": "Compare o que fica oculto e o que é revelado.",
+      "learningObjective": "Ligar o segredo dos sete trovões ao que Deus guarda e revela.",
+      "evidence": ["Apocalipse 10:4", "Deuteronômio 29:29"]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 22:21–27",
+    "passages": [
+      {
+        "ref": "Êxodo 22:21–27"
+      }
+    ],
+    "context": "A lei protege forasteiro, viúva e órfão. O Senhor ouve o clamor do fraco e cuida da veste do pobre.",
+    "keyword": "Clamor",
+    "keywordGloss": "O grito do aflito que o Senhor certamente ouve.",
+    "focusQuestion": "De quem o Senhor está ouvindo o clamor perto de você?",
+    "reflectionPrompts": [
+      "Forasteiro",
+      "Viúva e órfão",
+      "Veste do pobre"
+    ],
+    "facts": [
+      {
+        "text": "Não se deve afligir nem oprimir o forasteiro.",
+        "evidenceRef": "Êxodo 22:21",
+        "evidenceSpan": "Não afligirás nem oprimirás o forasteiro"
+      },
+      {
+        "text": "A viúva e o órfão não se deve afligir.",
+        "evidenceRef": "Êxodo 22:22",
+        "evidenceSpan": "A viúva e o órfão não afligirás"
+      },
+      {
+        "text": "Se clamarem, o Senhor certamente ouvirá.",
+        "evidenceRef": "Êxodo 22:23",
+        "evidenceSpan": "eu certamente ouvirei o clamor deles"
+      },
+      {
+        "text": "A veste em penhor deve voltar antes do pôr do sol.",
+        "evidenceRef": "Êxodo 22:26",
+        "evidenceSpan": "deverá restituí-la antes do pôr do sol"
+      },
+      {
+        "text": "O Senhor ouve porque é misericordioso.",
+        "evidenceRef": "Êxodo 22:27",
+        "evidenceSpan": "eu o ouvirei, pois sou misericordioso"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "forasteiro",
+        "gloss": "Estrangeiro que não deve ser oprimido."
+      },
+      {
+        "term": "clamor",
+        "gloss": "Grito do aflito que chega a Deus."
+      },
+      {
+        "term": "misericordioso",
+        "gloss": "Caráter de Deus que ouve o pobre."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Não oprimir o forasteiro",
+        "evidenceRef": "Êxodo 22:21"
+      },
+      {
+        "label": "Viúva e órfão sob proteção",
+        "evidenceRef": "Êxodo 22:22–24"
+      },
+      {
+        "label": "Empréstimo sem juros ao pobre",
+        "evidenceRef": "Êxodo 22:25"
+      },
+      {
+        "label": "Veste restituída; Deus ouve",
+        "evidenceRef": "Êxodo 22:26–27"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Não oprimir o forasteiro, pois foram forasteiros no Egito.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 22:21"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se afligirem e clamarem, Deus ouvirá.",
+        "marker": "certamente",
+        "evidenceRef": "Êxodo 22:23"
+      },
+      {
+        "kind": "causa",
+        "text": "Deus ouve o pobre porque é misericordioso.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 22:27"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Tiago 1:27",
+        "bridge": "Órfãos e viúvas"
+      },
+      {
+        "ref": "Levítico 19:33–34",
+        "bridge": "Amar o estrangeiro"
+      },
+      {
+        "ref": "Deuteronômio 24:12–13",
+        "bridge": "Veste ao pôr do sol"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Oprimir o forasteiro não tem consequência.",
+        "why": "Deus ouve o clamor e sua ira se acende."
+      },
+      {
+        "text": "A veste do pobre pode ficar a noite toda.",
+        "why": "Deve ser restituída antes do pôr do sol."
+      },
+      {
+        "text": "Juros ao pobre do povo são incentivados.",
+        "why": "Não se deve exigir juros."
+      }
+    ],
+    "centralInsight": "O Senhor ouve o clamor do fraco; a roupa do pobre é sagrada até de noite.",
+    "anchorQuestion": "Por que o Senhor ouve quando o pobre clama?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "A lei manda não afligir a viúva e o órfão.",
+      "verseRef": "Êxodo 22:22",
+      "correctOptionId": "true",
+      "evidenceSpan": "A viúva e o órfão não afligirás",
+      "feedbackCorrect": "Viúva e órfão estão sob proteção explícita.",
+      "feedbackWrong": {
+        "false": "Releia: a viúva e o órfão não afligirás."
+      },
+      "hint": "Veja quem não se deve afligir.",
+      "learningObjective": "Observar a proteção dos fracos.",
+      "evidence": [
+        "Êxodo 22:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 22:21, toque quem não se deve oprimir.",
+      "verseRef": "Êxodo 22:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "forasteiro"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "O forasteiro não deve ser oprimido.",
+      "feedbackWrong": {
+        "b": "Egito é a memória; o protegido é o forasteiro.",
+        "c": "\"terra\" situa o Egito; o alvo é forasteiro."
+      },
+      "hint": "Veja o objeto da proibição.",
+      "learningObjective": "Identificar o forasteiro.",
+      "evidence": [
+        "Êxodo 22:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 22:26, até quando a veste em penhor deve ser restituída?",
+      "verseRef": "Êxodo 22:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antes do pôr do sol"
+        },
+        {
+          "id": "b",
+          "text": "Depois de um mês"
+        },
+        {
+          "id": "c",
+          "text": "No ano do jubileu"
+        },
+        {
+          "id": "d",
+          "text": "Nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deverá restituí-la antes do pôr do sol",
+      "feedbackCorrect": "A veste volta antes do pôr do sol.",
+      "feedbackWrong": {
+        "b": "O prazo é o pôr do sol.",
+        "c": "Não é jubileu neste verso.",
+        "d": "Há restituição obrigatória."
+      },
+      "hint": "Leia o prazo da restituição.",
+      "learningObjective": "Observar o cuidado com a veste.",
+      "evidence": [
+        "Êxodo 22:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 22:21 na ordem do texto.",
+      "verseRef": "Êxodo 22:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não afligirás nem oprimirás o forasteiro"
+        },
+        {
+          "id": "b",
+          "text": "pois vocês foram forasteiros"
+        },
+        {
+          "id": "c",
+          "text": "na terra do Egito"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pois vocês foram forasteiros na terra do Egito",
+      "feedbackCorrect": "Proibição, motivo e memória do Egito.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição."
+      },
+      "hint": "O versículo começa com Não afligirás.",
+      "learningObjective": "Reconhecer a ordem de 22:21.",
+      "evidence": [
+        "Êxodo 22:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 22:23, o que o Senhor certamente fará ao clamor?",
+      "verseRef": "Êxodo 22:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouvirei"
+        },
+        {
+          "id": "b",
+          "text": "ignorarei"
+        },
+        {
+          "id": "c",
+          "text": "adiaré"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu certamente ouvirei o clamor deles",
+      "feedbackCorrect": "Ele certamente ouvirá o clamor.",
+      "feedbackWrong": {
+        "b": "Ele não ignora.",
+        "c": "O verbo é ouvir."
+      },
+      "hint": "Veja o verbo após certamente.",
+      "learningObjective": "Lembrar que Deus ouve.",
+      "evidence": [
+        "Êxodo 22:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 22:22 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 22:22",
+      "passageA": {
+        "ref": "Êxodo 22:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A lei protege os frágeis porque o Senhor ouve o clamor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Proteger viúva e órfão"
+        },
+        {
+          "id": "b",
+          "text": "Explorar o fraco"
+        },
+        {
+          "id": "c",
+          "text": "Cobrar juros altos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A viúva e o órfão não afligirás",
+      "feedbackCorrect": "A proteção de viúva e órfão é o elo com o contexto.",
+      "feedbackWrong": {
+        "b": "O texto proíbe afligir.",
+        "c": "Juros ao pobre são vetados."
+      },
+      "hint": "Compare a proibição e o cuidado de Deus.",
+      "learningObjective": "Ligar lei e proteção.",
+      "evidence": [
+        "Êxodo 22:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 22:21, Israel não deve oprimir o forasteiro porque também foi forasteiro no Egito.",
+      "verseRef": "Êxodo 22:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois vocês foram forasteiros na terra do Egito",
+      "feedbackCorrect": "A memória do Egito fundamenta a ética.",
+      "feedbackWrong": {
+        "false": "Releia o \"pois\" do versículo."
+      },
+      "hint": "Veja o motivo após a proibição.",
+      "learningObjective": "Compreender a causa da proibição.",
+      "evidence": [
+        "Êxodo 22:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 22:21, toque a palavra que marca o motivo de não oprimir.",
+      "verseRef": "Êxodo 22:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "afligirás"
+        },
+        {
+          "id": "c",
+          "text": "oprimirás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o forasteiro, pois vocês foram forasteiros",
+      "feedbackCorrect": "\"Pois\" liga a ética à memória do Egito.",
+      "feedbackWrong": {
+        "b": "\"afligirás\" é a proibição; o motivo é pois.",
+        "c": "\"oprimirás\" é proibido; o marcador é pois."
+      },
+      "hint": "Procure a palavra após forasteiro.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 22:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 22:23–24 liga o clamor do aflito à resposta de Deus?",
+      "verseRef": "Êxodo 22:23–24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele ouve e sua ira se acende"
+        },
+        {
+          "id": "b",
+          "text": "Ele ignora o clamor dos fracos"
+        },
+        {
+          "id": "c",
+          "text": "Ele premia quem oprime"
+        },
+        {
+          "id": "d",
+          "text": "Ele pede juros ao pobre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu certamente ouvirei o clamor deles",
+      "feedbackCorrect": "Ouvir o clamor acende a ira contra o opressor.",
+      "feedbackWrong": {
+        "b": "O texto diz que ouvirá.",
+        "c": "A ira vem contra quem aflige.",
+        "d": "Juros ao pobre são proibidos."
+      },
+      "hint": "Una ouvir e ira.",
+      "learningObjective": "Relacionar clamor e juízo.",
+      "evidence": [
+        "Êxodo 22:23",
+        "Êxodo 22:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a proteção em Êxodo 22:21–27?",
+      "verseRef": "Êxodo 22:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não oprimir o forasteiro"
+        },
+        {
+          "id": "b",
+          "text": "Proteger viúva e órfão"
+        },
+        {
+          "id": "c",
+          "text": "Restituir a veste do pobre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "Do forasteiro à família frágil e à veste.",
+      "feedbackWrong": {
+        "default": "Comece pelo forasteiro."
+      },
+      "hint": "Siga forasteiro, viúva e veste.",
+      "learningObjective": "Compreender o movimento da lei.",
+      "evidence": [
+        "Êxodo 22:21",
+        "Êxodo 22:22",
+        "Êxodo 22:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 22:27, que atributo explica por que Deus ouve?",
+      "verseRef": "Êxodo 22:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericordioso"
+        },
+        {
+          "id": "b",
+          "text": "indiferente"
+        },
+        {
+          "id": "c",
+          "text": "distante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois sou misericordioso",
+      "feedbackCorrect": "Ele ouve porque é misericordioso.",
+      "feedbackWrong": {
+        "b": "Não é indiferente.",
+        "c": "O atributo é misericordioso."
+      },
+      "hint": "Veja o que Ele diz ser.",
+      "learningObjective": "Lembrar o atributo divino.",
+      "evidence": [
+        "Êxodo 22:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 22:22 a Tiago 1:27?",
+      "verseRef": "Êxodo 22:22",
+      "passageA": {
+        "ref": "Êxodo 22:22"
+      },
+      "passageB": {
+        "ref": "Tiago 1:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Órfãos e viúvas"
+        },
+        {
+          "id": "b",
+          "text": "Guerra santa"
+        },
+        {
+          "id": "c",
+          "text": "Dízimo do templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A viúva e o órfão não afligirás",
+      "feedbackCorrect": "Tiago ecoa o cuidado com órfãos e viúvas.",
+      "feedbackWrong": {
+        "b": "O elo é proteção dos fracos.",
+        "c": "Não é sobre dízimo."
+      },
+      "hint": "Compare quem deve ser cuidado.",
+      "learningObjective": "Relacionar lei e Tiago.",
+      "evidence": [
+        "Êxodo 22:22",
+        "Tiago 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 22:21–27 sustenta que oprimir o fraco é assunto só humano, sem resposta de Deus.",
+      "verseRef": "Êxodo 22:23–24",
+      "correctOptionId": "false",
+      "evidenceSpan": "a minha ira se acenderá",
+      "feedbackCorrect": "Deus ouve o clamor e responde com ira.",
+      "feedbackWrong": {
+        "true": "O texto une clamor, audição e ira divina."
+      },
+      "hint": "Veja o que Deus faz após o clamor.",
+      "learningObjective": "Interpretar a defesa divina do fraco.",
+      "evidence": [
+        "Êxodo 22:23",
+        "Êxodo 22:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 22:23, toque o trecho que sustenta a certeza da audição divina.",
+      "verseRef": "Êxodo 22:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "certamente"
+        },
+        {
+          "id": "b",
+          "text": "forma"
+        },
+        {
+          "id": "c",
+          "text": "afligires"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu certamente ouvirei o clamor deles",
+      "feedbackCorrect": "\"Certamente\" marca a certeza de que Deus ouve.",
+      "feedbackWrong": {
+        "b": "\"forma\" é hipótese; a certeza é certamente.",
+        "c": "\"afligires\" é a falta; o trecho é certamente."
+      },
+      "hint": "Procure o advérbio da certeza.",
+      "learningObjective": "Sustentar a certeza do ouvir.",
+      "evidence": [
+        "Êxodo 22:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 22:21–27 sustenta sobre o fraco?",
+      "verseRef": "Êxodo 22:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor ouve o clamor porque é misericordioso"
+        },
+        {
+          "id": "b",
+          "text": "O pobre pode ser explorado sem risco"
+        },
+        {
+          "id": "c",
+          "text": "A veste em penhor fica para sempre"
+        },
+        {
+          "id": "d",
+          "text": "O forasteiro está fora da lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu o ouvirei, pois sou misericordioso",
+      "feedbackCorrect": "Misericórdia explica a audição do clamor.",
+      "feedbackWrong": {
+        "b": "Há ira contra o opressor.",
+        "c": "A veste volta antes do sol.",
+        "d": "O forasteiro é protegido."
+      },
+      "hint": "Una clamor e atributo de Deus.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 22:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a proteção do fraco à Escritura?",
+      "verseRef": "Êxodo 22:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "A lei protege forasteiro e órfão"
+        },
+        {
+          "id": "b",
+          "text": "Levítico manda amar o estrangeiro"
+        },
+        {
+          "id": "c",
+          "text": "Tiago define religião com órfãos e viúvas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "Da lei à repetição e à prática cristã.",
+      "feedbackWrong": {
+        "default": "Comece por Êxodo; depois Levítico e Tiago."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o cuidado ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 22:21",
+        "Levítico 19:33–34",
+        "Tiago 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 22:23, que termo nomeia o grito que Deus ouve?",
+      "verseRef": "Êxodo 22:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamor"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "cântico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ouvirei o clamor deles",
+      "feedbackCorrect": "O termo é clamor.",
+      "feedbackWrong": {
+        "b": "Não é silêncio.",
+        "c": "O texto fala de clamor."
+      },
+      "hint": "Veja o objeto de ouvirei.",
+      "learningObjective": "Lembrar o termo do grito.",
+      "evidence": [
+        "Êxodo 22:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 22:21 a Levítico 19:33–34?",
+      "verseRef": "Êxodo 22:21",
+      "passageA": {
+        "ref": "Êxodo 22:21"
+      },
+      "passageB": {
+        "ref": "Levítico 19:33–34"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar o estrangeiro"
+        },
+        {
+          "id": "b",
+          "text": "Construir altares"
+        },
+        {
+          "id": "c",
+          "text": "Contar o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não afligirás nem oprimirás o forasteiro",
+      "feedbackCorrect": "Os dois textos protegem e mandam amar o estrangeiro.",
+      "feedbackWrong": {
+        "b": "O elo é o estrangeiro.",
+        "c": "Não é censo."
+      },
+      "hint": "Compare o tratamento ao forasteiro.",
+      "learningObjective": "Ligar Êxodo e Levítico.",
+      "evidence": [
+        "Êxodo 22:21",
+        "Levítico 19:33–34"
+      ]
+    }
+  ]
+}

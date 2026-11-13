@@ -1,0 +1,47 @@
+{
+  "slug": "sofonias-cap",
+  "prefix": "sfc",
+  "book": "Sofonias",
+  "chapters": 3,
+  "title": "Sofonias",
+  "description": "Sofonias capítulo a capítulo: o dia do Senhor e a restauração do remanescente.",
+  "icon": "🔥",
+  "color": "#C45C5A",
+  "order": 43,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": ["sofonias"],
+  "modules": [
+    {
+      "title": "Dia e restauração · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "Sofonias 1:2–9",
+          "title": "Consumirei tudo",
+          "intro": "Sofonias anuncia o juízo do Senhor sobre Judá e sobre os que se afastaram dele.",
+          "insight": "O Senhor busca quem se voltou para trás e quem não o busca.",
+          "objective": "Buscar o Senhor de verdade"
+        },
+        {
+          "ref": "Sofonias 2:1–7",
+          "title": "Buscai o Senhor",
+          "intro": "Antes que chegue o dia da ira, o povo é chamado a buscar a justiça e a humildade.",
+          "insight": "Buscar o Senhor, a justiça e a humildade pode esconder no dia da ira.",
+          "objective": "Buscar justiça e humildade"
+        },
+        {
+          "ref": "Sofonias 3:8–13",
+          "title": "Um povo humilde",
+          "intro": "Depois do juízo, o Senhor deixa um povo humilde e pobre que confia no seu nome.",
+          "insight": "O remanescente não pratica iniquidade e se apascenta sem temor.",
+          "objective": "Confiar no nome do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Dia e restauração",
+        "intro": "Revise o juízo, o chamado a buscar e o povo humilde que resta.",
+        "insight": "O dia do Senhor juíza e deixa um povo que confia nele"
+      }
+    }
+  ]
+}

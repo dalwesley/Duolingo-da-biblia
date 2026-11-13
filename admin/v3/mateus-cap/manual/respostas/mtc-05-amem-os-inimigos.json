@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "Mateus 5:43–48",
+    "passages": [
+      {
+        "ref": "Mateus 5:43–48"
+      }
+    ],
+    "context": "No sermão do monte, Jesus retoma uma palavra conhecida sobre o próximo e o inimigo. Em seguida, descreve o Pai, que faz o sol nascer e a chuva cair sobre pessoas bem diferentes.",
+    "keyword": "inimigos",
+    "keywordGloss": "São as pessoas que Jesus manda amar, com oração por quem persegue e bem por quem odeia.",
+    "focusQuestion": "Quando alguém não trata você bem, o seu amor ainda chega até essa pessoa?",
+    "reflectionPrompts": [
+      "A palavra que ouviram",
+      "O amor que ora",
+      "A medida do Pai"
+    ],
+    "facts": [
+      {
+        "text": "A palavra que ouviram manda amar o próximo e odiar o inimigo.",
+        "evidenceRef": "Mateus 5:43",
+        "evidenceSpan": "Amarás o teu próximo e odiarás o teu inimigo"
+      },
+      {
+        "text": "Jesus manda amar os inimigos, orar por quem persegue e praticar o bem a quem odeia.",
+        "evidenceRef": "Mateus 5:44",
+        "evidenceSpan": "Amem os seus inimigos, orem por aqueles que os perseguem, e pratiquem o bem para os que os odeiam"
+      },
+      {
+        "text": "O Pai faz nascer o sol sobre maus e bons e faz chover sobre justos e injustos.",
+        "evidenceRef": "Mateus 5:45",
+        "evidenceSpan": "faz nascer o seu sol sobre maus e bons e faz chover sobre justos e injustos"
+      },
+      {
+        "text": "Amar somente aqueles que os amam é o mesmo que os publicanos fazem.",
+        "evidenceRef": "Mateus 5:46",
+        "evidenceSpan": "amam somente aqueles que os amam, que recompensa vocês têm? Os publicanos também fazem o mesmo"
+      },
+      {
+        "text": "Saudar somente os irmãos é posto na mesma linha do que os publicanos fazem.",
+        "evidenceRef": "Mateus 5:47",
+        "evidenceSpan": "se saudarem somente os seus irmãos, que fazem de diferente? Não fazem os publicanos também da mesma forma?"
+      },
+      {
+        "text": "Jesus manda que sejam perfeitos como o Pai que está no céu.",
+        "evidenceRef": "Mateus 5:48",
+        "evidenceSpan": "Sejam perfeitos, assim como é perfeito o seu Pai que está no céu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "inimigos",
+        "gloss": "Pessoas que Jesus manda amar, pelas quais se ora e a quem se pratica o bem."
+      },
+      {
+        "term": "publicanos",
+        "gloss": "Grupo citado como quem ama e saúda só os seus, sem ir além desse círculo."
+      },
+      {
+        "term": "perfeitos",
+        "gloss": "O padrão de Mateus 5:48: serem como o Pai, e não como o amor que só retribui."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A palavra ouvida pedia ódio ao inimigo",
+        "evidenceRef": "Mateus 5:43"
+      },
+      {
+        "label": "Jesus manda amar, orar e fazer o bem",
+        "evidenceRef": "Mateus 5:44"
+      },
+      {
+        "label": "O propósito é tornarem-se filhos do Pai",
+        "evidenceRef": "Mateus 5:45"
+      },
+      {
+        "label": "O amor estreito iguala ao publicano",
+        "evidenceRef": "Mateus 5:46–47"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O mandamento tem um fim: que os ouvintes se tornem filhos do Pai que está nos céus.",
+        "marker": "Para",
+        "evidenceRef": "Mateus 5:45"
+      },
+      {
+        "kind": "causa",
+        "text": "Esse fim se apoia no Pai, que faz o sol nascer sobre maus e bons.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 5:45"
+      },
+      {
+        "kind": "contraste",
+        "text": "Amar somente quem ama de volta não se distingue: os publicanos fazem o mesmo.",
+        "marker": "somente",
+        "evidenceRef": "Mateus 5:46"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 6:27–28",
+        "bridge": "Amar o inimigo"
+      },
+      {
+        "ref": "Lucas 6:35–36",
+        "bridge": "Filhos bondosos como o Pai"
+      },
+      {
+        "ref": "Romanos 12:14",
+        "bridge": "Bênção a quem persegue"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus manda odiar os inimigos e orar contra quem persegue.",
+        "why": "Mateus 5:44 ordena o contrário: amar os inimigos, orar por quem persegue e fazer o bem a quem odeia."
+      },
+      {
+        "text": "Amar somente quem já ama é o bastante, porque é o que as pessoas fazem.",
+        "why": "Jesus diz que os publicanos fazem o mesmo e pergunta que recompensa há nisso."
+      },
+      {
+        "text": "Ser perfeito como o Pai é ser duro com quem não é justo.",
+        "why": "O Pai faz o sol nascer sobre maus e bons e a chuva cair sobre justos e injustos."
+      }
+    ],
+    "centralInsight": "Os filhos do Pai amam como ele ama: até quem não merece.",
+    "anchorQuestion": "O que Jesus manda fazer com os inimigos e com quem persegue?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 5:43, a palavra que ouviram manda amar o próximo e também o inimigo.",
+      "verseRef": "Mateus 5:43",
+      "correctOptionId": "false",
+      "evidenceSpan": "Amarás o teu próximo e odiarás o teu inimigo",
+      "feedbackCorrect": "A citação que eles ouviram manda odiar o inimigo, não amá-lo.",
+      "feedbackWrong": {
+        "true": "Releia a citação. Ela manda amar o próximo e odiar o inimigo."
+      },
+      "hint": "Olhe o que vem logo depois de foi dito.",
+      "learningObjective": "Observar o conteúdo da palavra que os ouvintes já conheciam.",
+      "evidence": [
+        "Mateus 5:43"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 5:43, toque o que a palavra ouvida manda odiar.",
+      "verseRef": "Mateus 5:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "teu próximo"
+        },
+        {
+          "id": "b",
+          "text": "foi dito"
+        },
+        {
+          "id": "c",
+          "text": "teu inimigo"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "odiarás o teu inimigo",
+      "feedbackCorrect": "A citação manda odiar o inimigo; o próximo é quem se deve amar.",
+      "feedbackWrong": {
+        "a": "O próximo é quem a citação manda amar, não odiar.",
+        "b": "Foi dito marca a citação, não o alvo do ódio."
+      },
+      "hint": "Procure o alvo do verbo odiarás.",
+      "learningObjective": "Identificar a quem a palavra ouvida manda odiar.",
+      "evidence": [
+        "Mateus 5:43"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que Mateus 5:47 apresenta como nada diferente do costume dos publicanos?",
+      "verseRef": "Mateus 5:47",
+      "options": [
+        {
+          "id": "a",
+          "text": "Orar por quem persegue você"
+        },
+        {
+          "id": "b",
+          "text": "Saudar só os próprios irmãos"
+        },
+        {
+          "id": "c",
+          "text": "Fazer o bem a quem odeia"
+        },
+        {
+          "id": "d",
+          "text": "Amar também o inimigo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "se saudarem somente os seus irmãos, que fazem de diferente",
+      "feedbackCorrect": "Saudar só os irmãos não é diferença: os publicanos fazem o mesmo.",
+      "feedbackWrong": {
+        "a": "Orar por quem persegue é ordem de Jesus, não o costume comparado aqui.",
+        "c": "Fazer o bem a quem odeia é o mandamento, não o hábito dos publicanos.",
+        "d": "Amar o inimigo é o que Jesus pede, além do que os publicanos fazem."
+      },
+      "hint": "Leia a pergunta sobre quem eles saúdam.",
+      "learningObjective": "Observar que saudar só os irmãos não se distingue do costume citado.",
+      "evidence": [
+        "Mateus 5:47"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 5:44 na ordem do texto.",
+      "verseRef": "Mateus 5:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amem os seus inimigos"
+        },
+        {
+          "id": "b",
+          "text": "orem por aqueles que os perseguem"
+        },
+        {
+          "id": "c",
+          "text": "pratiquem o bem para os que os odeiam"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Amem os seus inimigos, orem por aqueles que os perseguem",
+      "feedbackCorrect": "A ordem do versículo é amar, orar por quem persegue e praticar o bem.",
+      "feedbackWrong": {
+        "default": "Comece por amar os inimigos; a oração vem antes de praticar o bem."
+      },
+      "hint": "A frase começa pelo amor aos inimigos.",
+      "learningObjective": "Reconhecer a sequência dos três pedidos de Mateus 5:44.",
+      "evidence": [
+        "Mateus 5:44"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 5:46, o que está em questão quando o amor fica só entre quem já ama?",
+      "verseRef": "Mateus 5:46",
+      "options": [
+        {
+          "id": "a",
+          "text": "dívida"
+        },
+        {
+          "id": "b",
+          "text": "recompensa"
+        },
+        {
+          "id": "c",
+          "text": "culpa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "que recompensa vocês têm",
+      "feedbackCorrect": "A pergunta cita a recompensa: o amor que só retribui não se destaca.",
+      "feedbackWrong": {
+        "a": "O texto não fala em dívida; a pergunta é sobre a recompensa.",
+        "c": "Não é culpa. Jesus pergunta que recompensa esse amor teria."
+      },
+      "hint": "Olhe o substantivo da pergunta no meio do versículo.",
+      "learningObjective": "Lembrar o que Jesus põe em questão no amor que só retribui.",
+      "evidence": [
+        "Mateus 5:46"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que liga Mateus 5:44 a este contexto?",
+      "verseRef": "Mateus 5:44",
+      "passageA": {
+        "ref": "Mateus 5:44"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No monte, Jesus vai além da palavra que todos já ouviam sobre o próximo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confirma o ódio ouvido"
+        },
+        {
+          "id": "b",
+          "text": "Oração por quem persegue"
+        },
+        {
+          "id": "c",
+          "text": "Limite entre os amigos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "orem por aqueles que os perseguem",
+      "feedbackCorrect": "Jesus manda orar por quem persegue: a fala do monte vai além da palavra ouvida.",
+      "feedbackWrong": {
+        "a": "O ódio está na palavra que ouviram, não neste pedido de Jesus.",
+        "c": "O versículo não fecha o amor entre amigos; pede oração por quem persegue."
+      },
+      "hint": "Compare o pedido do versículo com o alcance da fala no monte.",
+      "learningObjective": "Ligar o pedido de oração ao alcance da fala de Jesus no monte.",
+      "evidence": [
+        "Mateus 5:44"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 5:46, amar somente aqueles que os amam é o mesmo que os publicanos fazem.",
+      "verseRef": "Mateus 5:46",
+      "correctOptionId": "true",
+      "evidenceSpan": "amam somente aqueles que os amam, que recompensa vocês têm? Os publicanos também fazem o mesmo",
+      "feedbackCorrect": "Jesus iguala esse amor ao dos publicanos: eles também fazem o mesmo.",
+      "feedbackWrong": {
+        "false": "O texto diz que os publicanos também amam só quem os ama."
+      },
+      "hint": "Compare o amor restrito com o que os publicanos fazem.",
+      "learningObjective": "Compreender o contraste entre o amor que só retribui e o que Jesus pede.",
+      "evidence": [
+        "Mateus 5:46"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 5:46, toque a palavra que limita esse amor a um grupo só.",
+      "verseRef": "Mateus 5:46",
+      "options": [
+        {
+          "id": "a",
+          "text": "somente"
+        },
+        {
+          "id": "b",
+          "text": "recompensa"
+        },
+        {
+          "id": "c",
+          "text": "publicanos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amam somente aqueles",
+      "feedbackCorrect": "Somente marca o limite: amar só quem já ama não se distingue.",
+      "feedbackWrong": {
+        "b": "Recompensa é o que a pergunta põe em dúvida, não o termo que limita.",
+        "c": "Publicanos são o grupo comparado, não a palavra que restringe o amor."
+      },
+      "hint": "Procure o termo que reduz o amor a um grupo só.",
+      "learningObjective": "Reconhecer a palavra que marca o amor restrito em Mateus 5:46.",
+      "evidence": [
+        "Mateus 5:46"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual é o propósito indicado em Mateus 5:45?",
+      "verseRef": "Mateus 5:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "Receber do Pai sol e chuva como pagamento"
+        },
+        {
+          "id": "b",
+          "text": "Que eles se tornem filhos do Pai do céu"
+        },
+        {
+          "id": "c",
+          "text": "Retomar a ordem de odiar o inimigo"
+        },
+        {
+          "id": "d",
+          "text": "Guardar a saudação só para os irmãos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Para que vocês se tornem filhos do seu Pai que está nos céus",
+      "feedbackCorrect": "O para que aponta o fim: tornarem-se filhos do Pai que está nos céus.",
+      "feedbackWrong": {
+        "a": "Sol e chuva mostram como o Pai age, não um pagamento pelo amor.",
+        "c": "O propósito não volta ao ódio; a citação antiga fica para trás.",
+        "d": "Saudar só os irmãos é o que Jesus recusa, não o propósito do versículo."
+      },
+      "hint": "A primeira oração do versículo diz o fim do mandamento.",
+      "learningObjective": "Compreender o propósito de se tornarem filhos do Pai.",
+      "evidence": [
+        "Mateus 5:45"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "De que modo o ensino avança de Mateus 5:43 a 5:45?",
+      "verseRef": "Mateus 5:43–44",
+      "options": [
+        {
+          "id": "a",
+          "text": "A palavra ouvida pedia ódio ao inimigo"
+        },
+        {
+          "id": "b",
+          "text": "Jesus manda amar, orar e fazer o bem"
+        },
+        {
+          "id": "c",
+          "text": "O propósito é tornarem-se filhos do Pai"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vocês ouviram que foi dito",
+      "feedbackCorrect": "A fala sai da palavra ouvida, passa pelo mandamento e chega ao propósito.",
+      "feedbackWrong": {
+        "default": "Comece pelo que ouviram, siga o mandamento de Jesus e termine no Pai."
+      },
+      "hint": "O primeiro movimento é a palavra que eles já tinham ouvido.",
+      "learningObjective": "Compreender os movimentos do ensino até o propósito no Pai.",
+      "evidence": [
+        "Mateus 5:43",
+        "Mateus 5:44",
+        "Mateus 5:45"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 5:44, o que Jesus manda fazer por aqueles que perseguem?",
+      "verseRef": "Mateus 5:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "calem"
+        },
+        {
+          "id": "b",
+          "text": "paguem"
+        },
+        {
+          "id": "c",
+          "text": "orem"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "orem por aqueles que os perseguem",
+      "feedbackCorrect": "O verbo é orar: Jesus pede oração por quem persegue, não silêncio nem troca.",
+      "feedbackWrong": {
+        "a": "O texto não manda calar; manda orar por aqueles que perseguem.",
+        "b": "Não é pagar. O pedido é orar por quem persegue."
+      },
+      "hint": "É o verbo que fica entre amar e praticar o bem.",
+      "learningObjective": "Lembrar a ação pedida em favor de quem persegue.",
+      "evidence": [
+        "Mateus 5:44"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 5:44 a Lucas 6:27–28?",
+      "verseRef": "Mateus 5:44",
+      "passageA": {
+        "ref": "Mateus 5:44"
+      },
+      "passageB": {
+        "ref": "Lucas 6:27–28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ódio ao inimigo"
+        },
+        {
+          "id": "b",
+          "text": "Amar o inimigo"
+        },
+        {
+          "id": "c",
+          "text": "Saudar só irmãos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Amem os seus inimigos",
+      "feedbackCorrect": "Lucas também manda amar os inimigos e fazer o bem a quem odeia.",
+      "feedbackWrong": {
+        "a": "O ódio está na palavra citada antes, não na ordem que Lucas repete.",
+        "c": "Nenhum dos dois textos limita o gesto aos irmãos."
+      },
+      "hint": "Compare a ordem que abre os dois trechos.",
+      "learningObjective": "Relacionar o mandamento de Mateus 5:44 com Lucas 6:27–28.",
+      "evidence": [
+        "Mateus 5:44",
+        "Lucas 6:27–28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 5:44, Jesus manda odiar os inimigos e orar contra quem os persegue.",
+      "verseRef": "Mateus 5:44",
+      "correctOptionId": "false",
+      "evidenceSpan": "Amem os seus inimigos, orem por aqueles que os perseguem",
+      "feedbackCorrect": "A ordem é o contrário: amar os inimigos e orar por quem persegue.",
+      "feedbackWrong": {
+        "true": "O versículo não manda odiar nem orar contra. Ele manda amar e orar por eles."
+      },
+      "hint": "Compare os verbos do versículo com essa afirmação.",
+      "learningObjective": "Rejeitar a leitura que inverte o mandamento de Mateus 5:44.",
+      "evidence": [
+        "Mateus 5:44"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 5:45, toque quem recebe o sol que o Pai faz nascer.",
+      "verseRef": "Mateus 5:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "nos céus"
+        },
+        {
+          "id": "b",
+          "text": "maus e bons"
+        },
+        {
+          "id": "c",
+          "text": "justos e injustos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "faz nascer o seu sol sobre maus e bons",
+      "feedbackCorrect": "O sol nasce sobre maus e bons: a bondade do Pai não fica só com os seus.",
+      "feedbackWrong": {
+        "a": "Nos céus é onde o Pai está, não quem recebe o sol.",
+        "c": "Justos e injustos recebem a chuva; o sol é sobre maus e bons."
+      },
+      "hint": "Veja os dois grupos nomeados logo depois do sol.",
+      "learningObjective": "Localizar no texto quem recebe o sol do Pai.",
+      "evidence": [
+        "Mateus 5:45"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 5:48 sustenta sobre ser perfeito?",
+      "verseRef": "Mateus 5:48",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perfeição é odiar com a mesma firmeza"
+        },
+        {
+          "id": "b",
+          "text": "Perfeição é amar só quem retribui"
+        },
+        {
+          "id": "c",
+          "text": "Ser como o Pai que está no céu"
+        },
+        {
+          "id": "d",
+          "text": "Perfeição é saudar apenas os irmãos"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "assim como é perfeito o seu Pai",
+      "feedbackCorrect": "Ser perfeito, no versículo, é ficar como o Pai que está no céu.",
+      "feedbackWrong": {
+        "a": "O texto não mede perfeição pelo ódio; mede pela semelhança com o Pai.",
+        "b": "Amar só quem retribui é o que Jesus acaba de recusar.",
+        "d": "Saudar só os irmãos é o exemplo que não se distingue, não a perfeição."
+      },
+      "hint": "Veja com quem o versículo compara a perfeição.",
+      "learningObjective": "Interpretar a perfeição como semelhança com o Pai.",
+      "evidence": [
+        "Mateus 5:48"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Que sequência interpreta o arco que começa em Mateus 5:43?",
+      "verseRef": "Mateus 5:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "O ódio ouvido cede ao amor ativo"
+        },
+        {
+          "id": "b",
+          "text": "O Pai trata bem maus e injustos"
+        },
+        {
+          "id": "c",
+          "text": "O alvo é a semelhança com o Pai"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "odiarás o teu inimigo",
+      "feedbackCorrect": "O arco deixa o ódio ouvido, mostra a bondade do Pai e chama à semelhança.",
+      "feedbackWrong": {
+        "default": "Saia do ódio que ouviram, passe pela bondade do Pai e termine na semelhança."
+      },
+      "hint": "O arco começa na palavra de ódio que eles tinham ouvido.",
+      "learningObjective": "Interpretar o caminho do ódio ouvido à semelhança com o Pai.",
+      "evidence": [
+        "Mateus 5:43",
+        "Mateus 5:45",
+        "Mateus 5:48"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 5:48, o que eles devem ser, à semelhança do Pai?",
+      "verseRef": "Mateus 5:48",
+      "options": [
+        {
+          "id": "a",
+          "text": "temidos"
+        },
+        {
+          "id": "b",
+          "text": "perfeitos"
+        },
+        {
+          "id": "c",
+          "text": "isentos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Sejam perfeitos",
+      "feedbackCorrect": "O termo é perfeitos: o padrão é o Pai, não uma distância fria.",
+      "feedbackWrong": {
+        "a": "O texto não diz temidos. O chamado é serem perfeitos como o Pai.",
+        "c": "Isentos não cabe. Jesus diz sejam perfeitos, como o Pai é perfeito."
+      },
+      "hint": "É a primeira palavra depois de Sejam.",
+      "learningObjective": "Lembrar o termo que carrega o padrão do Pai em Mateus 5:48.",
+      "evidence": [
+        "Mateus 5:48"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 5:45 a Lucas 6:35–36?",
+      "verseRef": "Mateus 5:45",
+      "passageA": {
+        "ref": "Mateus 5:45"
+      },
+      "passageB": {
+        "ref": "Lucas 6:35–36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bondade só aos justos"
+        },
+        {
+          "id": "b",
+          "text": "Ódio como medida"
+        },
+        {
+          "id": "c",
+          "text": "Filhos bondosos como o Pai"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "se tornem filhos do seu Pai que está nos céus",
+      "feedbackCorrect": "Os dois chamam de filhos quem se parece com o Deus bondoso aos maus.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois reserva a bondade aos justos; ela alcança os maus.",
+        "b": "O ódio não é a ponte. Os textos falam de bondade, não de ódio."
+      },
+      "hint": "Compare o que cada texto diz dos filhos e dos maus.",
+      "learningObjective": "Ligar a bondade do Pai em Mateus 5:45 ao que Lucas 6:35–36 diz dos filhos.",
+      "evidence": [
+        "Mateus 5:45",
+        "Lucas 6:35–36"
+      ]
+    }
+  ]
+}

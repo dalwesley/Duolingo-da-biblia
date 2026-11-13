@@ -1,0 +1,932 @@
+{
+  "study": {
+    "passageRef": "1 Timóteo 1:12–17",
+    "passages": [
+      {
+        "ref": "1 Timóteo 1:12–17"
+      },
+      {
+        "ref": "1 Timóteo 2:1–6"
+      },
+      {
+        "ref": "1 Timóteo 2:7–8"
+      },
+      {
+        "ref": "1 Timóteo 3:8–13"
+      },
+      {
+        "ref": "1 Timóteo 3:14–16"
+      }
+    ],
+    "context": "Este desafio revisa graça, oração e a igreja como coluna da verdade.",
+    "keyword": "verdade",
+    "keywordGloss": "O que a igreja sustenta, centrada no mistério de Cristo.",
+    "focusQuestion": "Sua igreja ora e guarda a verdade da graça?",
+    "reflectionPrompts": [
+      "Graça ao pecador",
+      "Orar por todos",
+      "Coluna da verdade"
+    ],
+    "facts": [
+      {
+        "text": "Cristo salva pecadores.",
+        "evidenceRef": "1 Timóteo 1:15",
+        "evidenceSpan": "para salvar os pecadores"
+      },
+      {
+        "text": "Um só Mediador.",
+        "evidenceRef": "1 Timóteo 2:5",
+        "evidenceSpan": "um só Mediador"
+      },
+      {
+        "text": "Orar por todos.",
+        "evidenceRef": "1 Timóteo 2:1",
+        "evidenceSpan": "por todos os homens"
+      },
+      {
+        "text": "Igreja coluna da verdade.",
+        "evidenceRef": "1 Timóteo 3:15",
+        "evidenceSpan": "coluna e sustentáculo da verdade"
+      },
+      {
+        "text": "Grande mistério da piedade.",
+        "evidenceRef": "1 Timóteo 3:16",
+        "evidenceSpan": "grande é o mistério da piedade"
+      },
+      {
+        "text": "Graça transbordou.",
+        "evidenceRef": "1 Timóteo 1:14",
+        "evidenceSpan": "a graça de nosso Senhor transbordou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "misericórdia",
+        "gloss": "Ao principal dos pecadores."
+      },
+      {
+        "term": "Mediador",
+        "gloss": "Cristo Jesus."
+      },
+      {
+        "term": "piedade",
+        "gloss": "Mistério de Cristo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Graça ao pecador",
+        "evidenceRef": "1 Timóteo 1:15"
+      },
+      {
+        "label": "Orar por todos",
+        "evidenceRef": "1 Timóteo 2:1"
+      },
+      {
+        "label": "Um mediador",
+        "evidenceRef": "1 Timóteo 2:5"
+      },
+      {
+        "label": "Igreja e mistério",
+        "evidenceRef": "1 Timóteo 3:15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Antes blasfemo; porém misericórdia.",
+        "marker": "porém",
+        "evidenceRef": "1 Timóteo 1:13"
+      },
+      {
+        "kind": "propósito",
+        "text": "Orar por autoridades para vida tranquila.",
+        "marker": "para que",
+        "evidenceRef": "1 Timóteo 2:2"
+      },
+      {
+        "kind": "propósito",
+        "text": "Escrever para saber agir na casa de Deus.",
+        "marker": "para que",
+        "evidenceRef": "1 Timóteo 3:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 19:10",
+        "bridge": "Salvar o perdido"
+      },
+      {
+        "ref": "Hebreus 9:15",
+        "bridge": "Mediador"
+      },
+      {
+        "ref": "João 1:14",
+        "bridge": "Manifestado na carne"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Sem pecadores salvos.",
+        "why": "Veio para salvar pecadores."
+      },
+      {
+        "text": "Muitos mediadores.",
+        "why": "Um só."
+      },
+      {
+        "text": "Igreja sem verdade.",
+        "why": "Coluna da verdade."
+      }
+    ],
+    "centralInsight": "A igreja ora, guarda a verdade e vive da graça",
+    "anchorQuestion": "Quem é o Mediador em 1 Timóteo 2:5?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 1:15, Cristo veio só para salvar os quase justos.",
+      "verseRef": "1 Timóteo 1:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "para salvar os pecadores",
+      "feedbackCorrect": "Pecadores.",
+      "feedbackWrong": {
+        "true": "Releia: pecadores."
+      },
+      "hint": "Olhe o propósito.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 2:5, toque o Mediador.",
+      "verseRef": "1 Timóteo 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo Jesus"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mediador entre Deus e os homens, Cristo Jesus",
+      "feedbackCorrect": "Cristo.",
+      "feedbackWrong": {
+        "b": "Lado humano.",
+        "c": "Uma parte."
+      },
+      "hint": "O nome.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 2:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Timóteo 3:15, a igreja é o quê?",
+      "verseRef": "1 Timóteo 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coluna e sustentáculo da verdade"
+        },
+        {
+          "id": "b",
+          "text": "Prédio sem verdade"
+        },
+        {
+          "id": "c",
+          "text": "Sem Deus vivo"
+        },
+        {
+          "id": "d",
+          "text": "Sem casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coluna e sustentáculo da verdade",
+      "feedbackCorrect": "Coluna.",
+      "feedbackWrong": {
+        "b": "Há verdade.",
+        "c": "Há Deus vivo.",
+        "d": "Há casa."
+      },
+      "hint": "Leia.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 1:15 na ordem.",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esta é uma palavra fiel e digna de toda aceitação"
+        },
+        {
+          "id": "b",
+          "text": "Cristo Jesus veio ao mundo para salvar os pecadores"
+        },
+        {
+          "id": "c",
+          "text": "dos quais eu sou o principal"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para salvar os pecadores",
+      "feedbackCorrect": "Palavra e propósito.",
+      "feedbackWrong": {
+        "default": "Comece pela palavra."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Timóteo 2:6, entregou-se como ___.",
+      "verseRef": "1 Timóteo 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "resgate"
+        },
+        {
+          "id": "b",
+          "text": "juiz"
+        },
+        {
+          "id": "c",
+          "text": "acusador"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como resgate por todos",
+      "feedbackCorrect": "Resgate.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "O papel.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 2:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Timóteo 1:15 comunica que se liga a este contexto?",
+      "verseRef": "1 Timóteo 1:15",
+      "passageA": {
+        "ref": "1 Timóteo 1:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A igreja vive da graça que salva pecadores."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Salvar pecadores"
+        },
+        {
+          "id": "b",
+          "text": "Salvar só justos"
+        },
+        {
+          "id": "c",
+          "text": "Sem graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para salvar os pecadores",
+      "feedbackCorrect": "Salvação.",
+      "feedbackWrong": {
+        "b": "É pecadores.",
+        "c": "Há graça."
+      },
+      "hint": "O propósito.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 3:16, toque o que é grande.",
+      "verseRef": "1 Timóteo 3:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "mistério da piedade"
+        },
+        {
+          "id": "b",
+          "text": "dúvida"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "grande é o mistério da piedade",
+      "feedbackCorrect": "Mistério.",
+      "feedbackWrong": {
+        "b": "A dúvida é negada; o grande é outro.",
+        "c": "Carne é o modo da manifestação, não o que é grande."
+      },
+      "hint": "O que é grande.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 3:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 2:5 na ordem.",
+      "verseRef": "1 Timóteo 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porquanto há um só Deus"
+        },
+        {
+          "id": "b",
+          "text": "e um só Mediador entre Deus e os homens"
+        },
+        {
+          "id": "c",
+          "text": "Cristo Jesus, homem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "um só Mediador",
+      "feedbackCorrect": "Deus e mediador.",
+      "feedbackWrong": {
+        "default": "Comece por Porquanto."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 2:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 2:4–5, Deus quer salvar todos e há um só Mediador.",
+      "verseRef": "1 Timóteo 2:4–5",
+      "correctOptionId": "true",
+      "evidenceSpan": "um só Mediador entre Deus e os homens, Cristo Jesus",
+      "feedbackCorrect": "Desejo e mediador.",
+      "feedbackWrong": {
+        "false": "Una 2:4–5."
+      },
+      "hint": "Repare na ligação.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 2:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 1:13, toque o marcador de contraste.",
+      "verseRef": "1 Timóteo 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "antes"
+        },
+        {
+          "id": "c",
+          "text": "ignorância"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém obtive misericórdia",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Passado.",
+        "c": "Motivo."
+      },
+      "hint": "O contraste.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como graça, oração e verdade se relacionam no bloco?",
+      "verseRef": "1 Timóteo 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salvos pela graça, oram por todos e guardam a verdade"
+        },
+        {
+          "id": "b",
+          "text": "Sem oração"
+        },
+        {
+          "id": "c",
+          "text": "Sem mediador"
+        },
+        {
+          "id": "d",
+          "text": "Sem igreja"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "súplicas, orações, intercessões e ações de graças por todos os homens",
+      "feedbackCorrect": "Graça e missão.",
+      "feedbackWrong": {
+        "b": "Há oração.",
+        "c": "Há mediador.",
+        "d": "Há igreja."
+      },
+      "hint": "Una.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 2:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco 1–3?",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Graça ao pecador"
+        },
+        {
+          "id": "b",
+          "text": "Orar por todos"
+        },
+        {
+          "id": "c",
+          "text": "Igreja coluna da verdade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coluna e sustentáculo da verdade",
+      "feedbackCorrect": "Graça, oração e verdade.",
+      "feedbackWrong": {
+        "default": "Comece pela graça."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 1:15",
+        "1 Timóteo 2:1",
+        "1 Timóteo 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Timóteo 2:2, ___ que tenhamos vida tranquila.",
+      "verseRef": "1 Timóteo 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "para"
+        },
+        {
+          "id": "b",
+          "text": "contra"
+        },
+        {
+          "id": "c",
+          "text": "sem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que tenhamos uma vida tranquila e serena",
+      "feedbackCorrect": "Para.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Finalidade.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 2:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 2:5 a Hebreus 9:15?",
+      "verseRef": "1 Timóteo 2:5",
+      "passageA": {
+        "ref": "1 Timóteo 2:5"
+      },
+      "passageB": {
+        "ref": "Hebreus 9:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo mediador"
+        },
+        {
+          "id": "b",
+          "text": "Muitos mediadores"
+        },
+        {
+          "id": "c",
+          "text": "Sem Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um só Mediador entre Deus e os homens, Cristo Jesus",
+      "feedbackCorrect": "Mediador.",
+      "feedbackWrong": {
+        "b": "É um só.",
+        "c": "Há Cristo."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 2:5",
+        "Hebreus 9:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 3:15, toque a finalidade.",
+      "verseRef": "1 Timóteo 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "vivo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que entendas como deves agir",
+      "feedbackCorrect": "Para que.",
+      "feedbackWrong": {
+        "b": "Objeto.",
+        "c": "Qualidade."
+      },
+      "hint": "Finalidade.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Timóteo 3:8–16?",
+      "verseRef": "1 Timóteo 3:8–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caráter dos diáconos"
+        },
+        {
+          "id": "b",
+          "text": "Igreja coluna da verdade"
+        },
+        {
+          "id": "c",
+          "text": "Mistério da piedade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "grande é o mistério da piedade",
+      "feedbackCorrect": "Serviço e Cristo.",
+      "feedbackWrong": {
+        "default": "Comece pelos diáconos."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 3:8",
+        "1 Timóteo 3:15",
+        "1 Timóteo 3:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O bloco 1–3 reduz a igreja a organização sem graça, oração ou verdade.",
+      "verseRef": "1 Timóteo 3:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "coluna e sustentáculo da verdade",
+      "feedbackCorrect": "Há graça, oração e verdade.",
+      "feedbackWrong": {
+        "true": "Releia a coluna da verdade."
+      },
+      "hint": "Una os três capítulos.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Timóteo 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 3:16, toque o primeiro verbo.",
+      "verseRef": "1 Timóteo 3:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "manifestado"
+        },
+        {
+          "id": "b",
+          "text": "grande"
+        },
+        {
+          "id": "c",
+          "text": "piedade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "manifestado na carne",
+      "feedbackCorrect": "Manifestado.",
+      "feedbackWrong": {
+        "b": "Adjetivo.",
+        "c": "Tema."
+      },
+      "hint": "O primeiro.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 3:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o desafio sustenta?",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Igreja da graça que ora e guarda a verdade em Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Sem pecadores salvos"
+        },
+        {
+          "id": "c",
+          "text": "Muitos mediadores"
+        },
+        {
+          "id": "d",
+          "text": "Sem coluna"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para salvar os pecadores",
+      "feedbackCorrect": "Graça e verdade.",
+      "feedbackWrong": {
+        "b": "Há salvação.",
+        "c": "Um só.",
+        "d": "Há coluna."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo salva pecadores"
+        },
+        {
+          "id": "b",
+          "text": "A igreja ora por todos"
+        },
+        {
+          "id": "c",
+          "text": "Sustenta o mistério da piedade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "grande é o mistério da piedade",
+      "feedbackCorrect": "Salvação, oração e mistério.",
+      "feedbackWrong": {
+        "default": "Comece por Cristo."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 1:15",
+        "1 Timóteo 2:1",
+        "1 Timóteo 3:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Timóteo 1:15, eu sou o ___.",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "principal"
+        },
+        {
+          "id": "b",
+          "text": "justo"
+        },
+        {
+          "id": "c",
+          "text": "anjo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu sou o principal",
+      "feedbackCorrect": "Principal.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "A posição.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 3:16 a João 1:14?",
+      "verseRef": "1 Timóteo 3:16",
+      "passageA": {
+        "ref": "1 Timóteo 3:16"
+      },
+      "passageB": {
+        "ref": "João 1:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Manifestado na carne"
+        },
+        {
+          "id": "b",
+          "text": "Sem encarnação"
+        },
+        {
+          "id": "c",
+          "text": "Glória negada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "manifestado na carne",
+      "feedbackCorrect": "Carne.",
+      "feedbackWrong": {
+        "b": "Há manifesto.",
+        "c": "Há glória."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 3:16",
+        "João 1:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 2:8, toque o que levantam.",
+      "verseRef": "1 Timóteo 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mãos santas"
+        },
+        {
+          "id": "b",
+          "text": "ira"
+        },
+        {
+          "id": "c",
+          "text": "lugares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantando mãos santas",
+      "feedbackCorrect": "Mãos santas.",
+      "feedbackWrong": {
+        "b": "Sem ira.",
+        "c": "Onde."
+      },
+      "hint": "O que.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga graça e verdade?",
+      "verseRef": "1 Timóteo 1:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Graça que transborda"
+        },
+        {
+          "id": "b",
+          "text": "Um mediador"
+        },
+        {
+          "id": "c",
+          "text": "Coluna e baluarte"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coluna e sustentáculo da verdade",
+      "feedbackCorrect": "Graça, mediador e verdade.",
+      "feedbackWrong": {
+        "default": "Comece pela graça."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 1:14",
+        "1 Timóteo 2:5",
+        "1 Timóteo 3:15"
+      ]
+    }
+  ]
+}

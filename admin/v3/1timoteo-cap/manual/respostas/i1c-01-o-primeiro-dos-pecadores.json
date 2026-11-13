@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "1 Timóteo 1:12–17",
+    "passages": [
+      {
+        "ref": "1 Timóteo 1:12–17"
+      }
+    ],
+    "context": "Paulo agradece a Cristo por tê-lo posto no ministério: antes blasfemo, obteve misericórdia como o principal dos pecadores.",
+    "keyword": "misericórdia",
+    "keywordGloss": "Concedida ao principal dos pecadores para modelo dos que crerão.",
+    "focusQuestion": "Onde a misericórdia de Cristo ainda precisa virar modelo na sua história?",
+    "reflectionPrompts": [
+      "Graça abundante",
+      "Principal dos pecadores",
+      "Honra ao Rei"
+    ],
+    "facts": [
+      {
+        "text": "Cristo o fortaleceu e o considerou fiel.",
+        "evidenceRef": "1 Timóteo 1:12",
+        "evidenceSpan": "me considerou fiel, designando-me para o ministério"
+      },
+      {
+        "text": "Antes foi blasfemo, perseguidor e insolente.",
+        "evidenceRef": "1 Timóteo 1:13",
+        "evidenceSpan": "antes fui blasfemo, e perseguidor, e insolente"
+      },
+      {
+        "text": "Obteve misericórdia na ignorância.",
+        "evidenceRef": "1 Timóteo 1:13",
+        "evidenceSpan": "porém obtive misericórdia"
+      },
+      {
+        "text": "A graça transbordou com fé e amor.",
+        "evidenceRef": "1 Timóteo 1:14",
+        "evidenceSpan": "a graça de nosso Senhor transbordou"
+      },
+      {
+        "text": "Cristo veio para salvar pecadores; Paulo é o principal.",
+        "evidenceRef": "1 Timóteo 1:15",
+        "evidenceSpan": "Cristo Jesus veio ao mundo para salvar os pecadores, dos quais eu sou o principal"
+      },
+      {
+        "text": "Foi modelo de longanimidade para os que crerão.",
+        "evidenceRef": "1 Timóteo 1:16",
+        "evidenceSpan": "servindo de modelo para aqueles que hão de crer"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "misericórdia",
+        "gloss": "Recebida apesar do passado hostil."
+      },
+      {
+        "term": "principal",
+        "gloss": "Paulo se coloca como o primeiro dos pecadores."
+      },
+      {
+        "term": "graça",
+        "gloss": "Transbordou com fé e amor em Cristo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fortalecido para o ministério",
+        "evidenceRef": "1 Timóteo 1:12"
+      },
+      {
+        "label": "Passado e misericórdia",
+        "evidenceRef": "1 Timóteo 1:13"
+      },
+      {
+        "label": "Cristo salva pecadores",
+        "evidenceRef": "1 Timóteo 1:15"
+      },
+      {
+        "label": "Modelo e doxologia",
+        "evidenceRef": "1 Timóteo 1:16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Antes blasfemo; porém obteve misericórdia.",
+        "marker": "porém",
+        "evidenceRef": "1 Timóteo 1:13"
+      },
+      {
+        "kind": "propósito",
+        "text": "Misericórdia para evidenciar longanimidade.",
+        "marker": "para que",
+        "evidenceRef": "1 Timóteo 1:16"
+      },
+      {
+        "kind": "causa",
+        "text": "Obteve misericórdia porque agiu na ignorância.",
+        "marker": "porque",
+        "evidenceRef": "1 Timóteo 1:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 19:10",
+        "bridge": "Salvar o perdido"
+      },
+      {
+        "ref": "1 Coríntios 15:9–10",
+        "bridge": "O menor e a graça"
+      },
+      {
+        "ref": "Romanos 5:20",
+        "bridge": "Graça superabundante"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo era bom demais para precisar de misericórdia.",
+        "why": "Chama-se o principal dos pecadores."
+      },
+      {
+        "text": "A graça ignora o passado.",
+        "why": "O passado é confessado e contrastado com a misericórdia."
+      },
+      {
+        "text": "A salvação é só para os quase justos.",
+        "why": "Cristo veio para salvar os pecadores."
+      }
+    ],
+    "centralInsight": "Cristo veio ao mundo para salvar os pecadores; a graça foi abundante com fé e amor.",
+    "anchorQuestion": "Segundo 1 Timóteo 1:15, para que Cristo veio ao mundo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 1:15, Cristo veio ao mundo para salvar os pecadores.",
+      "verseRef": "1 Timóteo 1:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cristo Jesus veio ao mundo para salvar os pecadores",
+      "feedbackCorrect": "Palavra fiel.",
+      "feedbackWrong": {
+        "false": "Releia a palavra fiel."
+      },
+      "hint": "Olhe o propósito.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 1:15, toque a posição que Paulo se dá entre os pecadores.",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "principal"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "aceitação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dos quais eu sou o principal",
+      "feedbackCorrect": "Principal.",
+      "feedbackWrong": {
+        "b": "Onde veio.",
+        "c": "Da palavra."
+      },
+      "hint": "Procure eu sou.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Timóteo 1:13, o que Paulo obteve?",
+      "verseRef": "1 Timóteo 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Condenação sem graça"
+        },
+        {
+          "id": "c",
+          "text": "Glória humana"
+        },
+        {
+          "id": "d",
+          "text": "Ignorar o passado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém obtive misericórdia",
+      "feedbackCorrect": "Misericórdia.",
+      "feedbackWrong": {
+        "b": "Há misericórdia.",
+        "c": "Não.",
+        "d": "Há confissão."
+      },
+      "hint": "Leia o porém.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 1:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 1:15 na ordem do texto.",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esta é uma palavra fiel e digna de toda aceitação"
+        },
+        {
+          "id": "b",
+          "text": "Cristo Jesus veio ao mundo para salvar os pecadores"
+        },
+        {
+          "id": "c",
+          "text": "dos quais eu sou o principal"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cristo Jesus veio ao mundo para salvar os pecadores",
+      "feedbackCorrect": "Palavra, propósito e Paulo.",
+      "feedbackWrong": {
+        "default": "Comece pela palavra fiel."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Timóteo 1:14, a ___ de nosso Senhor transbordou.",
+      "verseRef": "1 Timóteo 1:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "graça"
+        },
+        {
+          "id": "b",
+          "text": "ira"
+        },
+        {
+          "id": "c",
+          "text": "dúvida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a graça de nosso Senhor transbordou",
+      "feedbackCorrect": "Graça.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "O sujeito.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 1:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Timóteo 1:15 comunica que se liga a este contexto?",
+      "verseRef": "1 Timóteo 1:15",
+      "passageA": {
+        "ref": "1 Timóteo 1:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cristo salva pecadores; Paulo é o modelo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Salvar pecadores"
+        },
+        {
+          "id": "b",
+          "text": "Salvar só justos"
+        },
+        {
+          "id": "c",
+          "text": "Sem misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para salvar os pecadores",
+      "feedbackCorrect": "Salvação.",
+      "feedbackWrong": {
+        "b": "É pecadores.",
+        "c": "Há misericórdia."
+      },
+      "hint": "O propósito.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 1:13, Paulo nunca foi blasfemo; por isso não precisou de misericórdia.",
+      "verseRef": "1 Timóteo 1:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "antes fui blasfemo, e perseguidor, e insolente, porém obtive misericórdia",
+      "feedbackCorrect": "Há passado e misericórdia.",
+      "feedbackWrong": {
+        "true": "Releia o antes e o porém."
+      },
+      "hint": "Repare no contraste.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 1:13, toque a palavra que marca o contraste.",
+      "verseRef": "1 Timóteo 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "antes"
+        },
+        {
+          "id": "c",
+          "text": "ignorância"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém obtive misericórdia",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Passado.",
+        "c": "Motivo."
+      },
+      "hint": "Após o passado.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Timóteo 1:16 se relaciona com a misericórdia?",
+      "verseRef": "1 Timóteo 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serve de modelo da longanimidade de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Cancela o evangelho"
+        },
+        {
+          "id": "c",
+          "text": "Exclui outros pecadores"
+        },
+        {
+          "id": "d",
+          "text": "Sem propósito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servindo de modelo para aqueles que hão de crer",
+      "feedbackCorrect": "Modelo.",
+      "feedbackWrong": {
+        "b": "Há modelo.",
+        "c": "Para os que crerão.",
+        "d": "Há para que."
+      },
+      "hint": "Veja o para que.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 1:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Timóteo 1:13–16?",
+      "verseRef": "1 Timóteo 1:13–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Passado hostil"
+        },
+        {
+          "id": "b",
+          "text": "Misericórdia e graça"
+        },
+        {
+          "id": "c",
+          "text": "Modelo para os que crerão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "servindo de modelo",
+      "feedbackCorrect": "Passado, graça e modelo.",
+      "feedbackWrong": {
+        "default": "Comece pelo passado."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 1:13–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Timóteo 1:13, porém obtive ___.",
+      "verseRef": "1 Timóteo 1:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "condenação"
+        },
+        {
+          "id": "c",
+          "text": "glória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém obtive misericórdia",
+      "feedbackCorrect": "Apesar do passado, Paulo obteve misericórdia.",
+      "feedbackWrong": {
+        "b": "O texto fala de misericórdia, não condenação.",
+        "c": "Glória não é o que ele diz ter obtido aqui."
+      },
+      "hint": "Toque o que Paulo recebeu.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 1:15 a Lucas 19:10?",
+      "verseRef": "1 Timóteo 1:15",
+      "passageA": {
+        "ref": "1 Timóteo 1:15"
+      },
+      "passageB": {
+        "ref": "Lucas 19:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Salvar o perdido"
+        },
+        {
+          "id": "b",
+          "text": "Condenar só"
+        },
+        {
+          "id": "c",
+          "text": "Sem pecadores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para salvar os pecadores",
+      "feedbackCorrect": "Salvação.",
+      "feedbackWrong": {
+        "b": "É salvar.",
+        "c": "Há pecadores."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 1:15",
+        "Lucas 19:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Timóteo 1:12–17 apresenta Paulo como modelo da longanimidade de Cristo para os que crerão.",
+      "verseRef": "1 Timóteo 1:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "servindo de modelo para aqueles que hão de crer",
+      "feedbackCorrect": "Modelo explícito.",
+      "feedbackWrong": {
+        "false": "Releia o modelo."
+      },
+      "hint": "Veja o propósito.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Timóteo 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 1:16, toque o que Cristo evidenciou.",
+      "verseRef": "1 Timóteo 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "longanimidade"
+        },
+        {
+          "id": "b",
+          "text": "principal"
+        },
+        {
+          "id": "c",
+          "text": "razão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toda a Sua completa longanimidade",
+      "feedbackCorrect": "Longanimidade.",
+      "feedbackWrong": {
+        "b": "Paulo.",
+        "c": "Motivo."
+      },
+      "hint": "O que evidenciou.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo salva pecadores; a graça faz do pior um modelo"
+        },
+        {
+          "id": "b",
+          "text": "Só quase justos são salvos"
+        },
+        {
+          "id": "c",
+          "text": "Misericórdia sem passado"
+        },
+        {
+          "id": "d",
+          "text": "Sem doxologia ao Rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para salvar os pecadores, dos quais eu sou o principal",
+      "feedbackCorrect": "Graça aos pecadores.",
+      "feedbackWrong": {
+        "b": "É pecadores.",
+        "c": "Há passado.",
+        "d": "Há 1:17."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo veio salvar pecadores"
+        },
+        {
+          "id": "b",
+          "text": "Paulo recebe misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "Vira modelo para os que crerão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "servindo de modelo",
+      "feedbackCorrect": "Salvação, misericórdia e modelo.",
+      "feedbackWrong": {
+        "default": "Comece por Cristo."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 1:15",
+        "1 Timóteo 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Timóteo 1:15, Cristo Jesus veio ao ___ para salvar os pecadores.",
+      "verseRef": "1 Timóteo 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "mundo"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cristo Jesus veio ao mundo para salvar os pecadores",
+      "feedbackCorrect": "A palavra fiel diz que Cristo veio ao mundo para salvar pecadores.",
+      "feedbackWrong": {
+        "b": "O texto não fala de templo.",
+        "c": "O destino da vinda aqui é o mundo."
+      },
+      "hint": "Toque o destino da vinda.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 1:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 1:14 a Romanos 5:20?",
+      "verseRef": "1 Timóteo 1:14",
+      "passageA": {
+        "ref": "1 Timóteo 1:14"
+      },
+      "passageB": {
+        "ref": "Romanos 5:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Graça que transborda"
+        },
+        {
+          "id": "b",
+          "text": "Graça que some"
+        },
+        {
+          "id": "c",
+          "text": "Sem fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a graça de nosso Senhor transbordou",
+      "feedbackCorrect": "Graça abundante.",
+      "feedbackWrong": {
+        "b": "Transbordou.",
+        "c": "Há fé e amor."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 1:14",
+        "Romanos 5:20"
+      ]
+    }
+  ]
+}

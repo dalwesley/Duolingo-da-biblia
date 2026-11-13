@@ -1,0 +1,913 @@
+{
+  "study": {
+    "slug": "c3c-03-a-obra-concluida",
+    "passageRef": "2 Crônicas 5:1–6",
+    "passageText": "Assim, toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída. Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios, e os colocou entre os tesouros da Casa de Deus. Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo. E todos os homens de Israel se reuniram diante do rei, na ocasião da festa que acontecia no sétimo mês. E todos os anciãos de Israel se reuniram, e os levitas levantaram a arca. E subiram a arca e a tenda da congregação, junto com todos os utensílios sagrados que estavam na tenda; os sacerdotes e levitas é que os fizeram subir. Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+    "passages": [
+      {
+        "ref": "2 Crônicas 5:1–6",
+        "text": "Assim, toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída. Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios, e os colocou entre os tesouros da Casa de Deus. Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo. E todos os homens de Israel se reuniram diante do rei, na ocasião da festa que acontecia no sétimo mês. E todos os anciãos de Israel se reuniram, e os levitas levantaram a arca. E subiram a arca e a tenda da congregação, junto com todos os utensílios sagrados que estavam na tenda; os sacerdotes e levitas é que os fizeram subir. Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados."
+      }
+    ],
+    "context": "A obra do templo termina. Salomão traz os tesouros dedicados por Davi e convoca Israel para levar a arca ao templo.",
+    "keyword": "arca",
+    "keywordGloss": "A arca da Aliança do Senhor, levada de Sião ao templo quando a obra está concluída.",
+    "focusQuestion": "Quando uma obra sua termina, você se volta ao culto ou só à conquista?",
+    "reflectionPrompts": [
+      "Obra concluída",
+      "Arca ao templo",
+      "Sacrifício da assembleia"
+    ],
+    "facts": [
+      {
+        "text": "Toda a obra de Salomão para a Casa do SENHOR foi concluída.",
+        "evidenceRef": "2 Crônicas 5:1",
+        "evidenceSpan": "toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída"
+      },
+      {
+        "text": "Salomão trouxe a prata, o ouro e os utensílios dedicados por Davi aos tesouros da Casa de Deus.",
+        "evidenceRef": "2 Crônicas 5:1",
+        "evidenceSpan": "a prata, o ouro e os utensílios"
+      },
+      {
+        "text": "Convocou anciãos, cabeças e príncipes para levarem a arca da Cidade de Davi ao templo.",
+        "evidenceRef": "2 Crônicas 5:2",
+        "evidenceSpan": "para que levassem a arca da Aliança do Senhor"
+      },
+      {
+        "text": "Os levitas levantaram a arca; sacerdotes e levitas fizeram subir arca, tenda e utensílios.",
+        "evidenceRef": "2 Crônicas 5:4",
+        "evidenceSpan": "os levitas levantaram a arca"
+      },
+      {
+        "text": "Salomão e a assembleia sacrificaram ovelhas e bois inumeráveis diante da arca.",
+        "evidenceRef": "2 Crônicas 5:6",
+        "evidenceSpan": "sacrificaram ovelhas e bois que eram tantos que não podiam ser contados"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "concluída",
+        "gloss": "A obra da Casa do SENHOR chega ao fim."
+      },
+      {
+        "term": "arca",
+        "gloss": "A arca da Aliança trazida de Sião ao templo."
+      },
+      {
+        "term": "assembleia",
+        "gloss": "Israel reunido com o rei diante da arca para sacrificar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A obra termina e os tesouros entram",
+        "evidenceRef": "2 Crônicas 5:1"
+      },
+      {
+        "label": "Salomão convoca Israel por causa da arca",
+        "evidenceRef": "2 Crônicas 5:2–3"
+      },
+      {
+        "label": "Levitas e sacerdotes sobem a arca",
+        "evidenceRef": "2 Crônicas 5:4–5"
+      },
+      {
+        "label": "A assembleia sacrifica diante da arca",
+        "evidenceRef": "2 Crônicas 5:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois da obra concluída, Salomão convoca para trazer a arca.",
+        "marker": "Então",
+        "evidenceRef": "2 Crônicas 5:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Com a arca presente, a assembleia oferece sacrifícios inumeráveis.",
+        "marker": "Então",
+        "evidenceRef": "2 Crônicas 5:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "A convocação é para levarem a arca ao templo.",
+        "marker": "para que",
+        "evidenceRef": "2 Crônicas 5:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 8:1",
+        "bridge": "Mesma convocação pela arca",
+        "text": "Então Salomão reuniu os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, diante de si em Jerusalém, para fazerem subir a arca da Aliança do SENHOR da Cidade de Davi, que é Sião, para o templo."
+      },
+      {
+        "ref": "Êxodo 25:16",
+        "bridge": "Arca da aliança no culto",
+        "text": "Depois, colocarás na arca o Testemunho que eu te darei."
+      },
+      {
+        "ref": "2 Samuel 6:17",
+        "bridge": "Arca na cidade de Davi",
+        "text": "E, ao levar a arca do Senhor, colocaram-na em seu local, na tenda que Davi havia preparado; e Davi ofereceu holocaustos e ofertas pacíficas diante do Senhor."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A obra termina e o culto fica para depois.",
+        "why": "Logo após a conclusão, convocam e sacrificam diante da arca."
+      },
+      {
+        "text": "Só o rei age; o povo não se reúne.",
+        "why": "Anciãos, homens de Israel e a assembleia participam."
+      },
+      {
+        "text": "A arca permanece em Sião sem subir ao templo.",
+        "why": "O objetivo da convocação é levá-la ao templo."
+      }
+    ],
+    "centralInsight": "Quando a casa está pronta, o povo se congrega para trazer a arca da aliança.",
+    "anchorQuestion": "O que Salomão convoca Israel a fazer em 2 Crônicas 5:2?",
+    "relatedVerses": [
+      {
+        "reference": "1 Reis 8:1",
+        "reason": "Mesma convocação pela arca"
+      },
+      {
+        "reference": "Êxodo 25:16",
+        "reason": "Arca da aliança no culto"
+      },
+      {
+        "reference": "2 Samuel 6:17",
+        "reason": "Arca na cidade de Davi"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "2cronicas-cap-sem-c3c-03-a-obra-concluida-01",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em 2 Crônicas 5:1, toda a obra de Salomão para a Casa do SENHOR foi concluída.",
+      "prompt": "Em 2 Crônicas 5:1, toda a obra de Salomão para a Casa do SENHOR foi concluída.",
+      "cue": "Em 2 Crônicas 5:1, toda a obra de Salomão para a Casa do SENHOR foi concluída.",
+      "verseRef": "2 Crônicas 5:1",
+      "passageText": "Assim, toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída. Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios, e os colocou entre os tesouros da Casa de Deus.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída",
+      "feedbackCorrect": "O texto abre declarando a obra concluída.",
+      "feedbackWrong": {
+        "false": "Releia o início de 5:1."
+      },
+      "hint": "Veja o que aconteceu com a obra.",
+      "learningObjective": "Observar a conclusão da obra.",
+      "evidence": [
+        "2 Crônicas 5:1"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-sem-c3c-03-a-obra-concluida-02",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em 2 Crônicas 5:4, toque quem levantou a arca.",
+      "prompt": "Em 2 Crônicas 5:4, toque quem levantou a arca.",
+      "cue": "Em 2 Crônicas 5:4, toque quem levantou a arca.",
+      "verseRef": "2 Crônicas 5:4",
+      "passageText": "E todos os anciãos de Israel se reuniram, e os levitas levantaram a arca.",
+      "options": [
+        {
+          "id": "a",
+          "text": "anciãos"
+        },
+        {
+          "id": "b",
+          "text": "levitas"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "os levitas levantaram a arca",
+      "feedbackCorrect": "Os levitas levantaram a arca.",
+      "feedbackWrong": {
+        "a": "Os anciãos se reuniram; quem levanta é os levitas.",
+        "c": "Israel se reuniu; quem levanta é os levitas."
+      },
+      "hint": "Procure quem levantou a arca.",
+      "learningObjective": "Identificar os levitas.",
+      "evidence": [
+        "2 Crônicas 5:4"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-sem-c3c-03-a-obra-concluida-03",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo 2 Crônicas 5:2, para que Salomão convocou os líderes em Jerusalém?",
+      "prompt": "Segundo 2 Crônicas 5:2, para que Salomão convocou os líderes em Jerusalém?",
+      "cue": "Segundo 2 Crônicas 5:2, para que Salomão convocou os líderes em Jerusalém?",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para contar os sacrifícios um a um"
+        },
+        {
+          "id": "b",
+          "text": "Para levarem a arca da Aliança ao templo"
+        },
+        {
+          "id": "c",
+          "text": "Para demolir a Casa de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Para coroar um novo rei"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "A convocação serve para trazer a arca ao templo.",
+      "feedbackWrong": {
+        "a": "5:6 diz que não podiam ser contados.",
+        "c": "A obra acabara de ser concluída, não demolida.",
+        "d": "Não há coroação neste versículo."
+      },
+      "hint": "Leia o propósito da convocação.",
+      "learningObjective": "Identificar o motivo da reunião.",
+      "evidence": [
+        "2 Crônicas 5:2"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-sem-c3c-03-a-obra-concluida-04",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte 2 Crônicas 5:4 na ordem do texto.",
+      "prompt": "Monte 2 Crônicas 5:4 na ordem do texto.",
+      "cue": "Monte 2 Crônicas 5:4 na ordem do texto.",
+      "verseRef": "2 Crônicas 5:4",
+      "passageText": "E todos os anciãos de Israel se reuniram, e os levitas levantaram a arca.",
+      "options": [
+        {
+          "id": "a",
+          "text": "E todos os anciãos de Israel se reuniram"
+        },
+        {
+          "id": "b",
+          "text": "e os levitas levantaram"
+        },
+        {
+          "id": "c",
+          "text": "a arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "os levitas levantaram a arca",
+      "feedbackCorrect": "Reunião dos anciãos e levantamento da arca.",
+      "feedbackWrong": {
+        "default": "Comece pelos anciãos."
+      },
+      "hint": "Os anciãos vêm antes dos levitas.",
+      "learningObjective": "Reconhecer a ordem de 5:4.",
+      "evidence": [
+        "2 Crônicas 5:4"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-sem-c3c-03-a-obra-concluida-05",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em 2 Crônicas 5:1, a obra para a Casa do SENHOR foi _____.",
+      "prompt": "Em 2 Crônicas 5:1, a obra para a Casa do SENHOR foi _____.",
+      "cue": "Em 2 Crônicas 5:1, a obra para a Casa do SENHOR foi _____.",
+      "verseRef": "2 Crônicas 5:1",
+      "passageText": "Assim, toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída. Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios, e os colocou entre os tesouros da Casa de Deus.",
+      "template": "Assim, toda a obra que o rei Salomão realizou para a Casa do SENHOR foi ___. Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios, e os colocou entre os tesouros da Casa de Deus.",
+      "options": [
+        {
+          "id": "a",
+          "text": "recusada"
+        },
+        {
+          "id": "b",
+          "text": "concluída"
+        },
+        {
+          "id": "c",
+          "text": "adiada"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "foi concluída",
+      "feedbackCorrect": "A obra chega ao fim.",
+      "feedbackWrong": {
+        "a": "O texto não diz recusada.",
+        "c": "O texto não diz adiada."
+      },
+      "hint": "Veja o último verbo da primeira frase.",
+      "learningObjective": "Lembrar a conclusão da obra.",
+      "evidence": [
+        "2 Crônicas 5:1"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-sem-c3c-03-a-obra-concluida-06",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que 2 Crônicas 5:2 comunica que se liga a este contexto?",
+      "prompt": "O que 2 Crônicas 5:2 comunica que se liga a este contexto?",
+      "cue": "O que 2 Crônicas 5:2 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "passageA": {
+        "ref": "2 Crônicas 5:2",
+        "text": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Com a casa pronta, o povo é chamado a trazer a arca."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fim do culto em Israel"
+        },
+        {
+          "id": "b",
+          "text": "Convocação pela arca"
+        },
+        {
+          "id": "c",
+          "text": "Arca deixada em Sião"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "A reunião existe para trazer a arca.",
+      "feedbackWrong": {
+        "a": "O culto começa, não acaba.",
+        "c": "O alvo é levar a arca ao templo."
+      },
+      "hint": "Veja o propósito da convocação.",
+      "learningObjective": "Ligar convocação e arca.",
+      "evidence": [
+        "2 Crônicas 5:2"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-cam-c3c-03-a-obra-concluida-01",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em 2 Crônicas 5:2, Salomão convoca os líderes para que levem a arca ao templo.",
+      "prompt": "Em 2 Crônicas 5:2, Salomão convoca os líderes para que levem a arca ao templo.",
+      "cue": "Em 2 Crônicas 5:2, Salomão convoca os líderes para que levem a arca ao templo.",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "O \"para que\" marca o propósito da convocação.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 5:2."
+      },
+      "hint": "Procure a expressão \"para que\".",
+      "learningObjective": "Compreender o propósito da convocação.",
+      "evidence": [
+        "2 Crônicas 5:2"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-cam-c3c-03-a-obra-concluida-02",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em 2 Crônicas 5:2, toque as palavras que marcam o propósito da convocação.",
+      "prompt": "Em 2 Crônicas 5:2, toque as palavras que marcam o propósito da convocação.",
+      "cue": "Em 2 Crônicas 5:2, toque as palavras que marcam o propósito da convocação.",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sião"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "para que"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "\"Para que\" introduz o propósito.",
+      "feedbackWrong": {
+        "a": "É a origem da arca, não o marcador.",
+        "b": "É o lugar da convocação."
+      },
+      "hint": "Procure a expressão do propósito.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "2 Crônicas 5:2"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-cam-c3c-03-a-obra-concluida-03",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como 2 Crônicas 5:1 se relaciona com 5:2–6?",
+      "prompt": "Como 2 Crônicas 5:1 se relaciona com 5:2–6?",
+      "cue": "Como 2 Crônicas 5:1 se relaciona com 5:2–6?",
+      "verseRef": "2 Crônicas 5:1–2",
+      "passageText": "Assim, toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída. Ele trouxe as coisas que seu pai, Davi, havia dedicado; a prata, o ouro e os utensílios, e os colocou entre os tesouros da Casa de Deus. Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os tesouros substituem a arca no templo"
+        },
+        {
+          "id": "b",
+          "text": "A arca sobe antes de a obra terminar"
+        },
+        {
+          "id": "c",
+          "text": "A obra concluída abre caminho para trazer a arca e cultuar"
+        },
+        {
+          "id": "d",
+          "text": "A obra concluída encerra qualquer reunião"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Então Salomão convocou em Jerusalém os anciãos de Israel",
+      "feedbackCorrect": "Conclusão e culto se encadeiam.",
+      "feedbackWrong": {
+        "a": "A arca permanece central em 5:2–6.",
+        "b": "A obra vem primeiro no texto.",
+        "d": "Há convocação e sacrifício depois."
+      },
+      "hint": "Veja o \"Então\" após a conclusão.",
+      "learningObjective": "Relacionar conclusão e culto.",
+      "evidence": [
+        "2 Crônicas 5:1–2"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-cam-c3c-03-a-obra-concluida-04",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a cena em 2 Crônicas 5:1–6?",
+      "prompt": "Como avança a cena em 2 Crônicas 5:1–6?",
+      "cue": "Como avança a cena em 2 Crônicas 5:1–6?",
+      "verseRef": "2 Crônicas 5:6",
+      "passageText": "Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A obra termina e os tesouros entram"
+        },
+        {
+          "id": "b",
+          "text": "Salomão convoca Israel pela arca"
+        },
+        {
+          "id": "c",
+          "text": "A assembleia sacrifica diante da arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "sacrificaram ovelhas e bois",
+      "feedbackCorrect": "Conclusão, convocação e sacrifício.",
+      "feedbackWrong": {
+        "default": "Comece pela obra concluída."
+      },
+      "hint": "O sacrifício fecha o trecho.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "2 Crônicas 5:1–6"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-cam-c3c-03-a-obra-concluida-05",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em 2 Crônicas 5:6, que palavra abre o versículo do sacrifício?",
+      "prompt": "Em 2 Crônicas 5:6, que palavra abre o versículo do sacrifício?",
+      "cue": "Em 2 Crônicas 5:6, que palavra abre o versículo do sacrifício?",
+      "verseRef": "2 Crônicas 5:6",
+      "passageText": "Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "template": "___ o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Todavia"
+        },
+        {
+          "id": "c",
+          "text": "Porém"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Então o rei Salomão e toda a assembleia",
+      "feedbackCorrect": "\"Então\" marca a sequência do culto diante da arca.",
+      "feedbackWrong": {
+        "b": "Não é Todavia neste versículo.",
+        "c": "Não é Porém neste versículo."
+      },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de sequência.",
+      "evidence": [
+        "2 Crônicas 5:6"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-cam-c3c-03-a-obra-concluida-06",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga 2 Crônicas 5:2 a 1 Reis 8:1?",
+      "prompt": "O que liga 2 Crônicas 5:2 a 1 Reis 8:1?",
+      "cue": "O que liga 2 Crônicas 5:2 a 1 Reis 8:1?",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "passageA": {
+        "ref": "2 Crônicas 5:2",
+        "text": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo."
+      },
+      "passageB": {
+        "ref": "1 Reis 8:1",
+        "text": "Então Salomão reuniu os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, diante de si em Jerusalém, para fazerem subir a arca da Aliança do SENHOR da Cidade de Davi, que é Sião, para o templo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Demolição do templo"
+        },
+        {
+          "id": "b",
+          "text": "Exílio imediato de Judá"
+        },
+        {
+          "id": "c",
+          "text": "Mesma convocação pela arca"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Então Salomão convocou em Jerusalém os anciãos de Israel",
+      "feedbackCorrect": "Os dois relatos convocam para trazer a arca.",
+      "feedbackWrong": {
+        "a": "Não há demolição aqui.",
+        "b": "O tema é a entrada da arca."
+      },
+      "hint": "Compare a convocação.",
+      "learningObjective": "Relacionar Crônicas a Reis.",
+      "evidence": [
+        "2 Crônicas 5:2",
+        "1 Reis 8:1"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-pro-c3c-03-a-obra-concluida-01",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "2 Crônicas 5:1–6 ensina que, terminada a obra, Israel dispensa a arca e o sacrifício.",
+      "prompt": "2 Crônicas 5:1–6 ensina que, terminada a obra, Israel dispensa a arca e o sacrifício.",
+      "cue": "2 Crônicas 5:1–6 ensina que, terminada a obra, Israel dispensa a arca e o sacrifício.",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "A conclusão leva à arca e ao culto, não ao abandono.",
+      "feedbackWrong": {
+        "true": "Veja o que acontece depois da obra."
+      },
+      "hint": "Leia a convocação e o sacrifício.",
+      "learningObjective": "Corrigir a leitura que separa obra e culto.",
+      "evidence": [
+        "2 Crônicas 5:2–6"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-pro-c3c-03-a-obra-concluida-02",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em 2 Crônicas 5:6, toque o trecho que sustenta a generosidade do culto.",
+      "prompt": "Em 2 Crônicas 5:6, toque o trecho que sustenta a generosidade do culto.",
+      "cue": "Em 2 Crônicas 5:6, toque o trecho que sustenta a generosidade do culto.",
+      "verseRef": "2 Crônicas 5:6",
+      "passageText": "Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ovelhas"
+        },
+        {
+          "id": "b",
+          "text": "bois"
+        },
+        {
+          "id": "c",
+          "text": "não podiam"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "ovelhas e bois que eram tantos que não podiam ser contados",
+      "feedbackCorrect": "O culto é abundante diante da arca.",
+      "feedbackWrong": {
+        "a": "Ovelhas entram na conta, mas o peso está no volume.",
+        "b": "Bois também; o texto destaca que não podiam."
+      },
+      "hint": "Procure o que não podia ser contado.",
+      "learningObjective": "Sustentar a abundância do sacrifício.",
+      "evidence": [
+        "2 Crônicas 5:6"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-pro-c3c-03-a-obra-concluida-03",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura 2 Crônicas 5:1–6 sustenta?",
+      "prompt": "Que leitura 2 Crônicas 5:1–6 sustenta?",
+      "cue": "Que leitura 2 Crônicas 5:1–6 sustenta?",
+      "verseRef": "2 Crônicas 5:6",
+      "passageText": "Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A obra basta sem arca nem assembleia"
+        },
+        {
+          "id": "b",
+          "text": "Só o rei sacrifica sem o povo"
+        },
+        {
+          "id": "c",
+          "text": "A casa pronta convida o povo a trazer a arca e cultuar"
+        },
+        {
+          "id": "d",
+          "text": "A arca fica para sempre só em Sião"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "toda a assembleia de Israel que se reunira diante da arca",
+      "feedbackCorrect": "Obra, arca e assembleia formam a leitura.",
+      "feedbackWrong": {
+        "a": "Há convocação e arca no centro.",
+        "b": "A assembleia toda sacrifica.",
+        "d": "O alvo é levar a arca ao templo."
+      },
+      "hint": "Una conclusão, convocação e sacrifício.",
+      "learningObjective": "Escolher a interpretação do trecho.",
+      "evidence": [
+        "2 Crônicas 5:1–6"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-pro-c3c-03-a-obra-concluida-04",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência liga a arca da aliança ao culto no templo?",
+      "prompt": "Qual sequência liga a arca da aliança ao culto no templo?",
+      "cue": "Qual sequência liga a arca da aliança ao culto no templo?",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A arca é feita para o testemunho"
+        },
+        {
+          "id": "b",
+          "text": "Davi a coloca em Sião"
+        },
+        {
+          "id": "c",
+          "text": "Salomão a leva ao templo concluído"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "Aliança, Sião e templo se encadeiam.",
+      "feedbackWrong": {
+        "default": "Comece pela arca no culto."
+      },
+      "hint": "Siga a história bíblica.",
+      "learningObjective": "Ver o fio da arca.",
+      "evidence": [
+        "Êxodo 25:16",
+        "2 Samuel 6:17",
+        "2 Crônicas 5:2"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-pro-c3c-03-a-obra-concluida-05",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em 2 Crônicas 5:6, toda a _____ de Israel se reunira diante da arca.",
+      "prompt": "Em 2 Crônicas 5:6, toda a _____ de Israel se reunira diante da arca.",
+      "cue": "Em 2 Crônicas 5:6, toda a _____ de Israel se reunira diante da arca.",
+      "verseRef": "2 Crônicas 5:6",
+      "passageText": "Então o rei Salomão e toda a assembleia de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "template": "Então o rei Salomão e toda a ___ de Israel que se reunira diante da arca sacrificaram ovelhas e bois que eram tantos que não podiam ser contados.",
+      "options": [
+        {
+          "id": "a",
+          "text": "guerra"
+        },
+        {
+          "id": "b",
+          "text": "caravana"
+        },
+        {
+          "id": "c",
+          "text": "assembleia"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "toda a assembleia de Israel",
+      "feedbackCorrect": "A assembleia marca o povo reunido no culto.",
+      "feedbackWrong": {
+        "a": "Não é guerra neste versículo.",
+        "b": "Não é caravana."
+      },
+      "hint": "Veja quem se reunira com o rei.",
+      "learningObjective": "Lembrar o termo da reunião.",
+      "evidence": [
+        "2 Crônicas 5:6"
+      ]
+    },
+    {
+      "id": "2cronicas-cap-pro-c3c-03-a-obra-concluida-06",
+      "trail": "2cronicas-cap",
+      "section": "c3c-03-a-obra-concluida",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga 2 Crônicas 5:2 a Êxodo 25:16?",
+      "prompt": "O que liga 2 Crônicas 5:2 a Êxodo 25:16?",
+      "cue": "O que liga 2 Crônicas 5:2 a Êxodo 25:16?",
+      "verseRef": "2 Crônicas 5:2",
+      "passageText": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo.",
+      "passageA": {
+        "ref": "2 Crônicas 5:2",
+        "text": "Então Salomão convocou em Jerusalém os anciãos de Israel, todos os cabeças das tribos e os príncipes das famílias dos israelitas, para que levassem a arca da Aliança do Senhor da Cidade de Davi, que é Sião, ao templo."
+      },
+      "passageB": {
+        "ref": "Êxodo 25:16",
+        "text": "Depois, colocarás na arca o Testemunho que eu te darei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Arca da aliança no culto"
+        },
+        {
+          "id": "b",
+          "text": "Fim da tenda para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Construção sem testemunho"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "a arca da Aliança do Senhor",
+      "feedbackCorrect": "A mesma arca da aliança chega ao templo.",
+      "feedbackWrong": {
+        "b": "A tenda sobe com a arca em 5:5.",
+        "c": "A arca guarda o testemunho da aliança."
+      },
+      "hint": "Compare o papel da arca.",
+      "learningObjective": "Ligar Crônicas a Êxodo.",
+      "evidence": [
+        "2 Crônicas 5:2",
+        "Êxodo 25:16"
+      ]
+    }
+  ]
+}

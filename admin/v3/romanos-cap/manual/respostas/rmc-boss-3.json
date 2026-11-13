@@ -1,0 +1,928 @@
+{
+ "study": {
+  "passageRef": "Romanos 9:1–6",
+  "passages": [
+   {
+    "ref": "Romanos 9:1–8"
+   },
+   {
+    "ref": "Romanos 10:8–17"
+   },
+   {
+    "ref": "Romanos 11:17–24"
+   },
+   {
+    "ref": "Romanos 12:9–18"
+   }
+  ],
+  "context": "Esta Travessia revisa a etapa: a dor por Israel, a confissão que salva, a oliveira sem soberba e o amor sem hipocrisia.",
+  "keyword": "misericórdia",
+  "keywordGloss": "O favor de Deus que chama à fé humilde e ao amor concreto.",
+  "focusQuestion": "Onde esta etapa te chama a mais humildade e mais amor?",
+  "reflectionPrompts": [
+   "Promessa fiel",
+   "Confessar e ouvir",
+   "Amor sem máscara"
+  ],
+  "facts": [
+   {
+    "text": "Paulo tem dor incessante por Israel.",
+    "evidenceRef": "Romanos 9:2",
+    "evidenceSpan": "dor incessante no meu coração"
+   },
+   {
+    "text": "A palavra de Deus não falhou.",
+    "evidenceRef": "Romanos 9:6",
+    "evidenceSpan": "a palavra de Deus não falhou"
+   },
+   {
+    "text": "Confessar Jesus como Senhor e crer salva.",
+    "evidenceRef": "Romanos 10:9",
+    "evidenceSpan": "confessar com a sua boca que Jesus é Senhor e crer em seu coração"
+   },
+   {
+    "text": "A fé vem pelo ouvir a palavra de Cristo.",
+    "evidenceRef": "Romanos 10:17",
+    "evidenceSpan": "a fé vem pelo ouvir, e o ouvir pela palavra de Cristo"
+   },
+   {
+    "text": "O enxerto está firme pela fé e não deve se ensoberbecer.",
+    "evidenceRef": "Romanos 11:20",
+    "evidenceSpan": "está firme pela fé. Não se ensoberbeça, mas tema"
+   },
+   {
+    "text": "O amor deve ser sem hipocrisia.",
+    "evidenceRef": "Romanos 12:9",
+    "evidenceSpan": "O amor seja sem hipocrisia"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "promessa",
+    "gloss": "Define a verdadeira descendência em Romanos 9."
+   },
+   {
+    "term": "enxertado",
+    "gloss": "O gentio incluído na oliveira pela fé."
+   },
+   {
+    "term": "hipocrisia",
+    "gloss": "Máscara que o amor verdadeiro rejeita."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Dor por Israel e palavra fiel",
+    "evidenceRef": "Romanos 9:2"
+   },
+   {
+    "label": "Confissão, fé e ouvir",
+    "evidenceRef": "Romanos 10:9"
+   },
+   {
+    "label": "Oliveira sem soberba",
+    "evidenceRef": "Romanos 11:20"
+   },
+   {
+    "label": "Amor concreto sem máscara",
+    "evidenceRef": "Romanos 12:9"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Não os filhos da carne, mas os da promessa.",
+    "marker": "mas",
+    "evidenceRef": "Romanos 9:8"
+   },
+   {
+    "kind": "contraste",
+    "text": "Quebrados pela incredulidade; firme pela fé.",
+    "marker": "porém",
+    "evidenceRef": "Romanos 11:20"
+   },
+   {
+    "kind": "sequência",
+    "text": "A fé vem pelo ouvir a palavra de Cristo.",
+    "marker": "Então",
+    "evidenceRef": "Romanos 10:17"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gálatas 4:28",
+    "bridge": "Filhos da promessa"
+   },
+   {
+    "ref": "Joel 2:32",
+    "bridge": "Invocar o nome do Senhor"
+   },
+   {
+    "ref": "Mateus 5:44",
+    "bridge": "Abençoar quem persegue"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A rejeição de muitos em Israel prova que a palavra de Deus falhou.",
+    "why": "9:6: a palavra não falhou; a descendência é pela promessa."
+   },
+   {
+    "text": "O gentio enxertado pode desprezar os ramos naturais.",
+    "why": "11:18–20 proíbe a soberba: a raiz sustenta você."
+   },
+   {
+    "text": "O amor cristão pode fingir e retribuir o mal pelo mal.",
+    "why": "12:9 e 12:17: sem hipocrisia e sem retribuir o mal."
+   }
+  ],
+  "centralInsight": "A misericórdia de Deus chama a fé humilde e ao amor concreto",
+  "anchorQuestion": "Segundo Romanos 10:9, o que se confessa com a boca?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Romanos 9:6, a palavra de Deus não falhou.",
+   "verseRef": "Romanos 9:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "a palavra de Deus não falhou",
+   "feedbackCorrect": "Paulo protege a fidelidade da palavra.",
+   "feedbackWrong": {
+    "false": "Releia Romanos 9:6: a palavra não falhou."
+   },
+   "hint": "Veja a negativa no versículo.",
+   "learningObjective": "Observar a fidelidade da palavra.",
+   "evidence": [
+    "Romanos 9:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 10:9, toque o que se confessa com a boca.",
+   "verseRef": "Romanos 10:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus é Senhor"
+    },
+    {
+     "id": "b",
+     "text": "seu coração"
+    },
+    {
+     "id": "c",
+     "text": "os mortos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "confessar com a sua boca que Jesus é Senhor",
+   "feedbackCorrect": "A confissão nomeia Jesus como Senhor.",
+   "feedbackWrong": {
+    "b": "O coração é onde se crê.",
+    "c": "A ressurreição é objeto da fé."
+   },
+   "hint": "Leia o conteúdo da confissão.",
+   "learningObjective": "Identificar a confissão salvadora.",
+   "evidence": [
+    "Romanos 10:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Romanos 11:18, quem sustenta quem?",
+   "verseRef": "Romanos 11:18",
+   "options": [
+    {
+     "id": "a",
+     "text": "A raiz sustenta o enxerto"
+    },
+    {
+     "id": "b",
+     "text": "O enxerto sustenta a raiz"
+    },
+    {
+     "id": "c",
+     "text": "Ninguém sustenta ninguém"
+    },
+    {
+     "id": "d",
+     "text": "Os ramos quebrados sustentam tudo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a raiz que sustenta você",
+   "feedbackCorrect": "O enxerto depende da raiz; soberba não cabe.",
+   "feedbackWrong": {
+    "b": "O texto diz o contrário.",
+    "c": "Há sustentação: a da raiz.",
+    "d": "Os quebrados não sustentam."
+   },
+   "hint": "Veja quem sustenta você.",
+   "learningObjective": "Observar a relação raiz e enxerto.",
+   "evidence": [
+    "Romanos 11:18"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 12:9 na ordem do texto.",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "O amor seja sem hipocrisia"
+    },
+    {
+     "id": "b",
+     "text": "Detestem o mal"
+    },
+    {
+     "id": "c",
+     "text": "e apeguem-se ao bem"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "Amor verdadeiro, rejeição do mal e apego ao bem.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor sem hipocrisia."
+   },
+   "hint": "O versículo abre com o amor.",
+   "learningObjective": "Reconhecer a sequência de 12:9.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Romanos 10:17, a fé vem pelo ___.",
+   "verseRef": "Romanos 10:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "ouvir"
+    },
+    {
+     "id": "b",
+     "text": "mérito"
+    },
+    {
+     "id": "c",
+     "text": "silêncio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a fé vem pelo ouvir",
+   "feedbackCorrect": "A fé chega pelo ouvir a palavra.",
+   "feedbackWrong": {
+    "b": "Não é mérito.",
+    "c": "Não é silêncio."
+   },
+   "hint": "Veja o meio da fé.",
+   "learningObjective": "Lembrar de onde vem a fé.",
+   "evidence": [
+    "Romanos 10:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Romanos 9:8 comunica que se liga a este contexto?",
+   "verseRef": "Romanos 9:8",
+   "passageA": {
+    "ref": "Romanos 9:8"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A verdadeira descendência é pela promessa."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Filhos da carne bastam"
+    },
+    {
+     "id": "b",
+     "text": "Filhos da promessa contam"
+    },
+    {
+     "id": "c",
+     "text": "A promessa foi anulada"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "os filhos da promessa são considerados como descendência",
+   "feedbackCorrect": "Quem conta são os filhos da promessa.",
+   "feedbackWrong": {
+    "a": "O texto nega que a carne baste.",
+    "c": "A promessa define a descendência."
+   },
+   "hint": "Compare carne e promessa.",
+   "learningObjective": "Ligar 9:8 à descendência pela promessa.",
+   "evidence": [
+    "Romanos 9:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 12:15, toque a ação pedida com os que choram.",
+   "verseRef": "Romanos 12:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "chorai"
+    },
+    {
+     "id": "b",
+     "text": "alegram"
+    },
+    {
+     "id": "c",
+     "text": "Alegrai-vos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "chorai com os que choram",
+   "feedbackCorrect": "O amor entra também na dor.",
+   "feedbackWrong": {
+    "b": "\"Alegram\" descreve os outros.",
+    "c": "Isso é com os que se alegram."
+   },
+   "hint": "Veja a segunda ação do versículo.",
+   "learningObjective": "Identificar a empatia no choro.",
+   "evidence": [
+    "Romanos 12:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 10:13 na ordem do texto.",
+   "verseRef": "Romanos 10:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque todo aquele"
+    },
+    {
+     "id": "b",
+     "text": "que invocar o nome do Senhor"
+    },
+    {
+     "id": "c",
+     "text": "será salvo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "todo aquele que invocar o nome do Senhor será salvo",
+   "feedbackCorrect": "Todo aquele, invocar e ser salvo.",
+   "feedbackWrong": {
+    "default": "Comece por \"todo aquele\"; a salvação fecha."
+   },
+   "hint": "O versículo começa com \"Porque\".",
+   "learningObjective": "Reconhecer a sequência de 10:13.",
+   "evidence": [
+    "Romanos 10:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Romanos 11:20, a firmeza pela fé autoriza a soberba contra os ramos.",
+   "verseRef": "Romanos 11:20",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não se ensoberbeça, mas tema",
+   "feedbackCorrect": "Firmeza e soberba não andam juntas no texto.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 11:20: Não se ensoberbeça."
+   },
+   "hint": "Veja o comando depois da firmeza.",
+   "learningObjective": "Compreender firmeza sem soberba.",
+   "evidence": [
+    "Romanos 11:20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 9:8, toque a palavra que marca o contraste entre carne e promessa.",
+   "verseRef": "Romanos 9:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "mas"
+    },
+    {
+     "id": "b",
+     "text": "filhos"
+    },
+    {
+     "id": "c",
+     "text": "Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas os filhos da promessa",
+   "feedbackCorrect": "\"Mas\" vira a definição da descendência.",
+   "feedbackWrong": {
+    "b": "\"Filhos\" aparece nos dois lados.",
+    "c": "\"Deus\" não marca o contraste."
+   },
+   "hint": "Procure a conjunção entre as frases.",
+   "learningObjective": "Reconhecer o contraste em 9:8.",
+   "evidence": [
+    "Romanos 9:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Romanos 10:10 relaciona coração e boca?",
+   "verseRef": "Romanos 10:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Coração crê para justiça; boca confessa para salvação"
+    },
+    {
+     "id": "b",
+     "text": "Só a boca importa"
+    },
+    {
+     "id": "c",
+     "text": "Só o coração importa"
+    },
+    {
+     "id": "d",
+     "text": "Coração e boca se contradizem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com o coração que se crê para a justiça e com a boca que se faz confissão para a salvação",
+   "feedbackCorrect": "Fé e confissão caminham juntas.",
+   "feedbackWrong": {
+    "b": "O coração também crê.",
+    "c": "A boca confessa.",
+    "d": "O texto une os dois."
+   },
+   "hint": "Veja o papel de cada um.",
+   "learningObjective": "Relacionar fé e confissão.",
+   "evidence": [
+    "Romanos 10:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a etapa nestes textos?",
+   "verseRef": "Romanos 9:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "A palavra fiel define a descendência"
+    },
+    {
+     "id": "b",
+     "text": "Confessar e ouvir trazem salvação"
+    },
+    {
+     "id": "c",
+     "text": "O amor se mostra sem hipocrisia"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a palavra de Deus não falhou",
+   "feedbackCorrect": "Promessa, fé anunciada e amor concreto: o fio da etapa.",
+   "feedbackWrong": {
+    "default": "Comece pela palavra fiel; o amor fecha."
+   },
+   "hint": "Siga 9 → 10 → 12.",
+   "learningObjective": "Compreender o movimento da etapa.",
+   "evidence": [
+    "Romanos 9:6",
+    "Romanos 10:9",
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Romanos 11:20, o enxerto está firme pela ___.",
+   "verseRef": "Romanos 11:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "fé"
+    },
+    {
+     "id": "b",
+     "text": "sorte"
+    },
+    {
+     "id": "c",
+     "text": "força"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "está firme pela fé",
+   "feedbackCorrect": "A firmeza é pela fé.",
+   "feedbackWrong": {
+    "b": "Não é sorte.",
+    "c": "Não é força própria."
+   },
+   "hint": "Veja o meio da firmeza.",
+   "learningObjective": "Lembrar o meio da firmeza.",
+   "evidence": [
+    "Romanos 11:20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Romanos 10:13 a Joel 2:32?",
+   "verseRef": "Romanos 10:13",
+   "passageA": {
+    "ref": "Romanos 10:13"
+   },
+   "passageB": {
+    "ref": "Joel 2:32"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Invocar o nome do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Salvação só de Israel"
+    },
+    {
+     "id": "c",
+     "text": "Proibição de invocar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo aquele que invocar o nome do Senhor será salvo",
+   "feedbackCorrect": "A mesma promessa: invocar e ser salvo.",
+   "feedbackWrong": {
+    "b": "Todo aquele amplia o alcance.",
+    "c": "Os textos convidam a invocar."
+   },
+   "hint": "Compare a frase sobre invocar.",
+   "learningObjective": "Relacionar Romanos 10 e Joel.",
+   "evidence": [
+    "Romanos 10:13",
+    "Joel 2:32"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 10:17, toque a palavra que marca a conclusão.",
+   "verseRef": "Romanos 10:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então"
+    },
+    {
+     "id": "b",
+     "text": "fé"
+    },
+    {
+     "id": "c",
+     "text": "Cristo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, a fé vem pelo ouvir",
+   "feedbackCorrect": "\"Então\" resume a cadeia.",
+   "feedbackWrong": {
+    "b": "\"Fé\" é o resultado.",
+    "c": "\"Cristo\" é a fonte da palavra."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer a conclusão em 10:17.",
+   "evidence": [
+    "Romanos 10:17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos de Romanos 12:14–15?",
+   "verseRef": "Romanos 12:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Abençoar quem persegue"
+    },
+    {
+     "id": "b",
+     "text": "Não amaldiçoar"
+    },
+    {
+     "id": "c",
+     "text": "Entrar na alegria e no choro"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Abençoem os que os perseguem",
+   "feedbackCorrect": "Bênção, recusa da maldição e empatia.",
+   "feedbackWrong": {
+    "default": "Comece pela bênção; a empatia fecha."
+   },
+   "hint": "Siga 12:14 e depois 12:15.",
+   "learningObjective": "Compreender o avanço do amor.",
+   "evidence": [
+    "Romanos 12:14–15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Romanos 9:8 e 11:20 sustentam juntos que a relação com Deus passa pela promessa e pela fé, não pela soberba.",
+   "verseRef": "Romanos 9:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "os filhos da promessa são considerados como descendência",
+   "feedbackCorrect": "Promessa e fé, sem soberba: o fio da etapa.",
+   "feedbackWrong": {
+    "false": "Una 9:8 (promessa) e 11:20 (fé sem soberba)."
+   },
+   "hint": "Pense em promessa e fé humilde.",
+   "learningObjective": "Interpretar promessa e fé sem soberba.",
+   "evidence": [
+    "Romanos 9:8",
+    "Romanos 11:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 12:17, toque o trecho que mostra o esforço pelo bem.",
+   "verseRef": "Romanos 12:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "esforcem-se"
+    },
+    {
+     "id": "b",
+     "text": "ninguém"
+    },
+    {
+     "id": "c",
+     "text": "mal pelo mal"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "esforcem-se para praticar o bem diante de todos os homens",
+   "feedbackCorrect": "Há esforço ativo pelo bem.",
+   "feedbackWrong": {
+    "b": "Está na proibição da retribuição.",
+    "c": "É o que se rejeita."
+   },
+   "hint": "Procure o verbo de esforço.",
+   "learningObjective": "Sustentar o esforço pelo bem.",
+   "evidence": [
+    "Romanos 12:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura esta etapa sustenta sobre misericórdia e vida?",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fé humilde e amor concreto fluem da misericórdia de Deus"
+    },
+    {
+     "id": "b",
+     "text": "A palavra de Deus falhou com Israel"
+    },
+    {
+     "id": "c",
+     "text": "O enxerto pode desprezar os ramos"
+    },
+    {
+     "id": "d",
+     "text": "O amor pode retribuir o mal"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "Da promessa ao amor sem máscara: a misericórdia molda a vida.",
+   "feedbackWrong": {
+    "b": "9:6 nega a falha.",
+    "c": "11:18–20 proíbe a soberba.",
+    "d": "12:17 proíbe retribuir o mal."
+   },
+   "hint": "Una fé, humildade e amor.",
+   "learningObjective": "Escolher a leitura da etapa.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho desta etapa?",
+   "verseRef": "Romanos 9:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "A palavra fiel e a confissão que salva"
+    },
+    {
+     "id": "b",
+     "text": "Firmeza pela fé sem soberba"
+    },
+    {
+     "id": "c",
+     "text": "Amor sem hipocrisia e paz com todos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a palavra de Deus não falhou",
+   "feedbackCorrect": "Fidelidade, humildade e amor: o arco da etapa.",
+   "feedbackWrong": {
+    "default": "Comece pela palavra e a confissão; o amor fecha."
+   },
+   "hint": "Siga 9–10 → 11 → 12.",
+   "learningObjective": "Ver o encadeamento da etapa.",
+   "evidence": [
+    "Romanos 9:6",
+    "Romanos 11:20",
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Romanos 12:9, o amor seja sem ___.",
+   "verseRef": "Romanos 12:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "hipocrisia"
+    },
+    {
+     "id": "b",
+     "text": "alegria"
+    },
+    {
+     "id": "c",
+     "text": "honra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O amor seja sem hipocrisia",
+   "feedbackCorrect": "O termo carrega a autenticidade do amor.",
+   "feedbackWrong": {
+    "b": "A alegria aparece depois.",
+    "c": "A honra está em 12:10."
+   },
+   "hint": "Veja o que o amor não pode ter.",
+   "learningObjective": "Lembrar o termo da autenticidade.",
+   "evidence": [
+    "Romanos 12:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Romanos 9:8 a Gálatas 4:28?",
+   "verseRef": "Romanos 9:8",
+   "passageA": {
+    "ref": "Romanos 9:8"
+   },
+   "passageB": {
+    "ref": "Gálatas 4:28"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Filhos da promessa"
+    },
+    {
+     "id": "b",
+     "text": "Filhos só da carne"
+    },
+    {
+     "id": "c",
+     "text": "Promessa sem herdeiros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "os filhos da promessa são considerados como descendência",
+   "feedbackCorrect": "A mesma categoria: filhos da promessa.",
+   "feedbackWrong": {
+    "b": "Os textos apontam a promessa.",
+    "c": "Há herdeiros da promessa."
+   },
+   "hint": "Compare a expressão.",
+   "learningObjective": "Ligar a descendência pela promessa.",
+   "evidence": [
+    "Romanos 9:8",
+    "Gálatas 4:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 11:22, toque uma das qualidades que se deve observar em Deus.",
+   "verseRef": "Romanos 11:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "bondade"
+    },
+    {
+     "id": "b",
+     "text": "portanto"
+    },
+    {
+     "id": "c",
+     "text": "os que caíram"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a bondade e a severidade de Deus",
+   "feedbackCorrect": "Bondade e severidade aparecem juntas no texto.",
+   "feedbackWrong": {
+    "b": "\"Portanto\" liga o argumento.",
+    "c": "Descreve o alvo da severidade."
+   },
+   "hint": "Procure o par de substantivos.",
+   "learningObjective": "Sustentar bondade e severidade.",
+   "evidence": [
+    "Romanos 11:22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a misericórdia que molda a comunidade?",
+   "verseRef": "Romanos 10:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confessar Jesus e crer no coração"
+    },
+    {
+     "id": "b",
+     "text": "Permanecer humilde na oliveira"
+    },
+    {
+     "id": "c",
+     "text": "Amar sem hipocrisia e buscar a paz"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Jesus é Senhor",
+   "feedbackCorrect": "Fé confessada, humildade e amor: a misericórdia na prática.",
+   "feedbackWrong": {
+    "default": "Comece pela confissão; o amor fecha."
+   },
+   "hint": "Siga 10 → 11 → 12.",
+   "learningObjective": "Ver o fio da misericórdia na etapa.",
+   "evidence": [
+    "Romanos 10:9",
+    "Romanos 11:20",
+    "Romanos 12:18"
+   ]
+  }
+ ]
+}

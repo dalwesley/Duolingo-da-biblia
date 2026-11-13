@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 20:11–15",
+    "passages": [
+      {
+        "ref": "Apocalipse 20:8–10"
+      },
+      {
+        "ref": "Apocalipse 20:11–15"
+      }
+    ],
+    "context": "Depois da derrota de Gogue e Magogue, João vê o grande trono branco. Livros se abrem, e o Livro da Vida decide o destino final.",
+    "keyword": "Livro da Vida",
+    "keywordGloss": "O livro cuja ausência de registro leva ao lago de fogo.",
+    "focusQuestion": "Quando os livros se abrem, o que você quer que esteja escrito sobre a sua vida?",
+    "reflectionPrompts": [
+      "Trono branco",
+      "Livros abertos",
+      "Segunda morte"
+    ],
+    "facts": [
+      {
+        "text": "Gogue e Magogue são reunidos para a peleja; seu número é como a areia do mar.",
+        "evidenceRef": "Apocalipse 20:8",
+        "evidenceSpan": "Gogue e Magogue, a fim de reuni-las para a peleja"
+      },
+      {
+        "text": "Fogo do céu desceu e consumiu os que cercavam o acampamento dos santos.",
+        "evidenceRef": "Apocalipse 20:9",
+        "evidenceSpan": "desceu fogo do céu e os consumiu"
+      },
+      {
+        "text": "O diabo foi lançado no lago de fogo e enxofre.",
+        "evidenceRef": "Apocalipse 20:10",
+        "evidenceSpan": "o diabo, que os enganava, foi lançado no lago de fogo e enxofre"
+      },
+      {
+        "text": "João viu um grande trono branco e aquele que estava assentado sobre ele.",
+        "evidenceRef": "Apocalipse 20:11",
+        "evidenceSpan": "vi um grande trono branco e aquele que estava assentado sobre ele"
+      },
+      {
+        "text": "Os mortos foram julgados segundo as suas obras, conforme o que estava escrito nos livros.",
+        "evidenceRef": "Apocalipse 20:12",
+        "evidenceSpan": "Os mortos foram julgados segundo as suas obras"
+      },
+      {
+        "text": "Se alguém não foi encontrado no Livro da Vida, foi lançado no lago de fogo.",
+        "evidenceRef": "Apocalipse 20:15",
+        "evidenceSpan": "se alguém não foi encontrado registrado no Livro da Vida, esse foi lançado no lago de fogo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Livro da Vida",
+        "gloss": "O livro decisivo: quem não está registrado é lançado no lago de fogo."
+      },
+      {
+        "term": "trono",
+        "gloss": "O grande trono branco diante do qual os mortos se põem em pé."
+      },
+      {
+        "term": "segunda morte",
+        "gloss": "O nome que o texto dá ao lago de fogo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Gogue e Magogue são derrotados",
+        "evidenceRef": "Apocalipse 20:8–9"
+      },
+      {
+        "label": "O diabo vai ao lago de fogo",
+        "evidenceRef": "Apocalipse 20:10"
+      },
+      {
+        "label": "O grande trono branco e os livros",
+        "evidenceRef": "Apocalipse 20:11–13"
+      },
+      {
+        "label": "Segunda morte e Livro da Vida",
+        "evidenceRef": "Apocalipse 20:14–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Quem não está no Livro da Vida é lançado no lago de fogo.",
+        "marker": null,
+        "evidenceRef": "Apocalipse 20:15"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da derrota das nações, o diabo é lançado no lago.",
+        "marker": null,
+        "evidenceRef": "Apocalipse 20:10"
+      },
+      {
+        "kind": "causa",
+        "text": "Os mortos são julgados segundo as obras escritas nos livros.",
+        "marker": "segundo",
+        "evidenceRef": "Apocalipse 20:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 13:8",
+        "bridge": "Livro da Vida do Cordeiro"
+      },
+      {
+        "ref": "Daniel 7:9–10",
+        "bridge": "Tronos e livros abertos"
+      },
+      {
+        "ref": "Apocalipse 21:8",
+        "bridge": "Lago de fogo, segunda morte"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo ignora as obras e os livros.",
+        "why": "Os mortos foram julgados segundo as suas obras, conforme o escrito nos livros."
+      },
+      {
+        "text": "Estar fora do Livro da Vida não tem consequência neste texto.",
+        "why": "Quem não foi encontrado registrado foi lançado no lago de fogo."
+      },
+      {
+        "text": "O diabo escapa do lago de fogo nesta cena.",
+        "why": "Ele foi lançado no lago de fogo e enxofre."
+      }
+    ],
+    "centralInsight": "Se alguém não foi achado inscrito no livro da vida, foi lançado no lago de fogo.",
+    "anchorQuestion": "O que acontece com quem não está registrado no Livro da Vida?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 20:11, João viu um grande trono branco e aquele que estava assentado sobre ele.",
+      "verseRef": "Apocalipse 20:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "vi um grande trono branco e aquele que estava assentado sobre ele",
+      "feedbackCorrect": "A visão abre com o grande trono branco.",
+      "feedbackWrong": {
+        "false": "O versículo descreve exatamente esse trono e o Assentado."
+      },
+      "hint": "Olhe o que João viu primeiro.",
+      "learningObjective": "Observar a visão do trono branco.",
+      "evidence": [
+        "Apocalipse 20:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 20:15, toque o livro em que a falta de registro decide o destino.",
+      "verseRef": "Apocalipse 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Livro da Vida"
+        },
+        {
+          "id": "b",
+          "text": "lago de fogo"
+        },
+        {
+          "id": "c",
+          "text": "registrado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "registrado no Livro da Vida",
+      "feedbackCorrect": "A decisão passa pelo Livro da Vida.",
+      "feedbackWrong": {
+        "b": "O lago é o resultado; o livro decisivo é o da Vida.",
+        "c": "Registrado descreve a condição; o livro é o da Vida."
+      },
+      "hint": "Procure o livro citado na condição.",
+      "learningObjective": "Identificar o livro decisivo.",
+      "evidence": [
+        "Apocalipse 20:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 20:12, segundo o que os mortos foram julgados?",
+      "verseRef": "Apocalipse 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Segundo as suas obras, conforme o escrito nos livros"
+        },
+        {
+          "id": "b",
+          "text": "Segundo a riqueza acumulada na terra"
+        },
+        {
+          "id": "c",
+          "text": "Segundo o número de diademas"
+        },
+        {
+          "id": "d",
+          "text": "Segundo a cor do cavalo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "julgados segundo as suas obras, conforme o que estava escrito nos livros",
+      "feedbackCorrect": "O critério são as obras escritas nos livros.",
+      "feedbackWrong": {
+        "b": "Riqueza não é o critério neste versículo.",
+        "c": "Diademas não aparecem aqui.",
+        "d": "Cavalo branco está em outra cena."
+      },
+      "hint": "Leia o critério do juízo.",
+      "learningObjective": "Observar o critério do juízo dos mortos.",
+      "evidence": [
+        "Apocalipse 20:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 20:14–15 na ordem do texto.",
+      "verseRef": "Apocalipse 20:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "a morte e o inferno foram lançados no lago de fogo"
+        },
+        {
+          "id": "b",
+          "text": "Esta é a segunda morte, o lago de fogo"
+        },
+        {
+          "id": "c",
+          "text": "se alguém não foi encontrado registrado no Livro da Vida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a morte e o inferno foram lançados no lago de fogo",
+      "feedbackCorrect": "Primeiro morte e inferno, depois o nome segunda morte, depois o Livro da Vida.",
+      "feedbackWrong": {
+        "default": "Comece pelo lançamento da morte e do inferno."
+      },
+      "hint": "A sequência começa com morte e inferno.",
+      "learningObjective": "Reconhecer a ordem final do juízo.",
+      "evidence": [
+        "Apocalipse 20:14–15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 20:14, esta é a segunda morte, o lago de quê?",
+      "verseRef": "Apocalipse 20:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "vidro"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lago de fogo",
+      "feedbackCorrect": "A segunda morte é o lago de fogo.",
+      "feedbackWrong": {
+        "b": "Vidro não aparece aqui.",
+        "c": "Ouro não aparece aqui."
+      },
+      "hint": "Veja o aposto depois de segunda morte.",
+      "learningObjective": "Lembrar o que é a segunda morte.",
+      "evidence": [
+        "Apocalipse 20:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 20:15 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 20:15",
+      "passageA": {
+        "ref": "Apocalipse 20:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem não está no Livro da Vida é lançado no lago de fogo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Livro da Vida decide"
+        },
+        {
+          "id": "b",
+          "text": "Todos escapam do lago"
+        },
+        {
+          "id": "c",
+          "text": "O diabo julga os mortos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "registrado no Livro da Vida",
+      "feedbackCorrect": "O versículo liga registro e destino no lago.",
+      "feedbackWrong": {
+        "b": "Quem não está registrado é lançado.",
+        "c": "O diabo já foi lançado; quem julga é o Assentado."
+      },
+      "hint": "Leia a condição e o resultado.",
+      "learningObjective": "Ligar 20:15 ao papel do Livro da Vida.",
+      "evidence": [
+        "Apocalipse 20:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 20:12, os mortos foram julgados sem qualquer relação com as obras ou os livros.",
+      "verseRef": "Apocalipse 20:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "julgados segundo as suas obras, conforme o que estava escrito nos livros",
+      "feedbackCorrect": "O juízo é segundo as obras e conforme os livros.",
+      "feedbackWrong": {
+        "true": "O versículo liga o juízo às obras e aos livros."
+      },
+      "hint": "Leia o critério depois de julgados.",
+      "learningObjective": "Compreender o critério do juízo.",
+      "evidence": [
+        "Apocalipse 20:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 20:12, toque a palavra que marca o critério do juízo pelas obras.",
+      "verseRef": "Apocalipse 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "segundo"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "pequenos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "julgados segundo as suas obras",
+      "feedbackCorrect": "Segundo introduz o critério das obras.",
+      "feedbackWrong": {
+        "b": "Trono localiza a cena.",
+        "c": "Pequenos descreve os mortos."
+      },
+      "hint": "Procure a palavra antes de as suas obras.",
+      "learningObjective": "Reconhecer o marcador do critério.",
+      "evidence": [
+        "Apocalipse 20:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que a sequência de Apocalipse 20:10–11 mostra?",
+      "verseRef": "Apocalipse 20:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois do diabo no lago, vem o juízo dos mortos"
+        },
+        {
+          "id": "b",
+          "text": "O juízo dos mortos vem antes do diabo no lago"
+        },
+        {
+          "id": "c",
+          "text": "O diabo escapa depois do trono branco"
+        },
+        {
+          "id": "d",
+          "text": "Os livros permanecem fechados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o diabo, que os enganava, foi lançado no lago de fogo e enxofre",
+      "feedbackCorrect": "O diabo é lançado; depois vêm trono, livros e juízo.",
+      "feedbackWrong": {
+        "b": "O diabo é lançado antes da visão do trono branco.",
+        "c": "Ele já está no lago.",
+        "d": "Os livros se abriram."
+      },
+      "hint": "Compare a ordem entre 20:10 e 20:11.",
+      "learningObjective": "Relacionar a sequência diabo–juízo.",
+      "evidence": [
+        "Apocalipse 20:10–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a visão em Apocalipse 20?",
+      "verseRef": "Apocalipse 20:8–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gogue e Magogue são derrotados"
+        },
+        {
+          "id": "b",
+          "text": "O diabo vai ao lago de fogo"
+        },
+        {
+          "id": "c",
+          "text": "O grande trono branco e os livros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "desceu fogo do céu e os consumiu",
+      "feedbackCorrect": "Derrota, lago do diabo e trono formam a sequência.",
+      "feedbackWrong": {
+        "default": "Comece pela derrota das nações."
+      },
+      "hint": "A peleja vem antes do trono branco.",
+      "learningObjective": "Ordenar os movimentos da cena.",
+      "evidence": [
+        "Apocalipse 20:8–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 20:12, os mortos foram julgados segundo as suas quê?",
+      "verseRef": "Apocalipse 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "obras"
+        },
+        {
+          "id": "b",
+          "text": "coroas"
+        },
+        {
+          "id": "c",
+          "text": "naves"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo as suas obras",
+      "feedbackCorrect": "O critério são as obras.",
+      "feedbackWrong": {
+        "b": "Coroas não aparecem aqui.",
+        "c": "Naves não aparecem aqui."
+      },
+      "hint": "Veja o substantivo depois de segundo.",
+      "learningObjective": "Lembrar a palavra do critério.",
+      "evidence": [
+        "Apocalipse 20:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 20:15 a Apocalipse 13:8?",
+      "verseRef": "Apocalipse 20:15",
+      "passageA": {
+        "ref": "Apocalipse 20:15",
+        "text": "Livro da Vida"
+      },
+      "passageB": {
+        "ref": "Apocalipse 13:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Livro da Vida do Cordeiro"
+        },
+        {
+          "id": "b",
+          "text": "Gogue e Magogue"
+        },
+        {
+          "id": "c",
+          "text": "Areia do mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livro da Vida",
+      "feedbackCorrect": "Os dois textos giram em torno do Livro da Vida.",
+      "feedbackWrong": {
+        "b": "Gogue está em 20:8; a ponte é o Livro.",
+        "c": "Areia está em 20:8; a ponte é o Livro."
+      },
+      "hint": "Compare o livro citado.",
+      "learningObjective": "Ligar 20:15 ao Livro de 13:8.",
+      "evidence": [
+        "Apocalipse 20:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Apocalipse 20:15, quem não estava inscrito no Livro da Vida foi lançado no lago de fogo.",
+      "verseRef": "Apocalipse 20:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "esse foi lançado no lago de fogo",
+      "feedbackCorrect": "A consequência é ser lançado no lago de fogo.",
+      "feedbackWrong": {
+        "false": "Releia Apocalipse 20:15: quem não está no Livro é lançado no lago de fogo."
+      },
+      "hint": "Leia o resultado da condição.",
+      "learningObjective": "Interpretar a consequência do Livro da Vida.",
+      "evidence": [
+        "Apocalipse 20:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 20:15, toque o trecho que sustenta a consequência de não estar registrado.",
+      "verseRef": "Apocalipse 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "lançado no lago"
+        },
+        {
+          "id": "b",
+          "text": "alguém"
+        },
+        {
+          "id": "c",
+          "text": "encontrado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lançado no lago de fogo",
+      "feedbackCorrect": "A consequência está em lançado no lago de fogo.",
+      "feedbackWrong": {
+        "b": "Alguém introduz a condição.",
+        "c": "Encontrado faz parte da condição."
+      },
+      "hint": "Procure o resultado depois da vírgula.",
+      "learningObjective": "Tocar o trecho da consequência.",
+      "evidence": [
+        "Apocalipse 20:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Apocalipse 20:12–15 sustenta melhor?",
+      "verseRef": "Apocalipse 20:12–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obras e Livro da Vida entram no juízo final"
+        },
+        {
+          "id": "b",
+          "text": "Só a riqueza decide o lago de fogo"
+        },
+        {
+          "id": "c",
+          "text": "Os livros permanecem irrelevantes"
+        },
+        {
+          "id": "d",
+          "text": "O Livro da Vida não aparece no juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "julgados segundo as suas obras",
+      "feedbackCorrect": "Obras nos livros e registro no Livro da Vida formam o quadro.",
+      "feedbackWrong": {
+        "b": "O critério são obras e o Livro da Vida.",
+        "c": "Os livros se abriram para o juízo.",
+        "d": "O Livro da Vida decide em 20:15."
+      },
+      "hint": "Una o critério das obras ao Livro da Vida.",
+      "learningObjective": "Escolher a leitura sustentável do juízo.",
+      "evidence": [
+        "Apocalipse 20:12–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento Apocalipse 20 sustenta?",
+      "verseRef": "Apocalipse 20:10–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O enganador é lançado no lago"
+        },
+        {
+          "id": "b",
+          "text": "Os mortos são julgados perante o trono"
+        },
+        {
+          "id": "c",
+          "text": "O Livro da Vida decide o destino"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "foi lançado no lago de fogo e enxofre",
+      "feedbackCorrect": "Diabo, juízo e Livro formam o encadeamento.",
+      "feedbackWrong": {
+        "default": "Comece pelo lançamento do diabo."
+      },
+      "hint": "O diabo vai ao lago antes do juízo dos mortos.",
+      "learningObjective": "Encadear lago, juízo e Livro.",
+      "evidence": [
+        "Apocalipse 20:10–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 20:14, esta é a segunda morte, o lago de fogo — o termo teológico é segunda quê?",
+      "verseRef": "Apocalipse 20:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "morte"
+        },
+        {
+          "id": "b",
+          "text": "porta"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segunda morte",
+      "feedbackCorrect": "O termo é segunda morte.",
+      "feedbackWrong": {
+        "b": "Porta não aparece.",
+        "c": "Festa não aparece."
+      },
+      "hint": "Veja o nome dado ao lago de fogo.",
+      "learningObjective": "Lembrar o termo segunda morte.",
+      "evidence": [
+        "Apocalipse 20:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 20:14 a Apocalipse 21:8?",
+      "verseRef": "Apocalipse 20:14",
+      "passageA": {
+        "ref": "Apocalipse 20:14",
+        "text": "segunda morte, o lago de fogo"
+      },
+      "passageB": {
+        "ref": "Apocalipse 21:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lago de fogo, segunda morte"
+        },
+        {
+          "id": "b",
+          "text": "Gogue reunido de novo"
+        },
+        {
+          "id": "c",
+          "text": "Trono sem Assentado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segunda morte, o lago de fogo",
+      "feedbackCorrect": "Os dois textos nomeiam o lago de fogo como segunda morte.",
+      "feedbackWrong": {
+        "b": "Gogue já foi derrotado.",
+        "c": "Há quem está assentado no trono."
+      },
+      "hint": "Compare o nome do lago.",
+      "learningObjective": "Ligar 20:14 à segunda morte em 21:8.",
+      "evidence": [
+        "Apocalipse 20:14"
+      ]
+    }
+  ]
+}

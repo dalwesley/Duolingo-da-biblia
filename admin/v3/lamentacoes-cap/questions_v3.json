@@ -1,0 +1,4831 @@
+[
+  {
+    "id": "lamentacoes-cap-sem-lmc-01-olhai-e-vede-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lamentações 1:18, a cidade confessa que se rebelou contra a palavra do Senhor.",
+    "prompt": "Em Lamentações 1:18, a cidade confessa que se rebelou contra a palavra do Senhor.",
+    "cue": "Em Lamentações 1:18, a cidade confessa que se rebelou contra a palavra do Senhor.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "Ela admite a rebelião: por isso chama o Senhor de justo.",
+    "feedbackWrong": {
+      "false": "Releia 1:18: ela se rebelou contra a sua palavra."
+    },
+    "hint": "Veja a razão após \"Justo é o Senhor\".",
+    "learningObjective": "Observar a confissão de rebelião.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-01-olhai-e-vede-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 1:12, toque quem afligiu a cidade no dia da ira.",
+    "prompt": "Em Lamentações 1:12, toque quem afligiu a cidade no dia da ira.",
+    "cue": "Em Lamentações 1:12, toque quem afligiu a cidade no dia da ira.",
+    "verseRef": "Lamentações 1:12",
+    "passageText": "Não vos comove isto, a todos vós que passais pelo caminho? Considerai e vede se há dor igual à minha, que me sobreveio, com a qual o Senhor me afligiu no dia do furor da sua ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dor"
+      },
+      {
+        "id": "b",
+        "text": "o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "caminho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor me afligiu no dia do furor da sua ira",
+    "feedbackCorrect": "Quem aflige é o Senhor, no dia do furor da sua ira.",
+    "feedbackWrong": {
+      "a": "\"Dor\" é o efeito; quem aflige vem no fim do versículo.",
+      "c": "\"Caminho\" é onde passam os ouvintes, não quem aflige."
+    },
+    "hint": "Procure o sujeito da aflição no fim do versículo.",
+    "learningObjective": "Identificar quem afligiu a cidade.",
+    "evidence": [
+      "Lamentações 1:12"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-01-olhai-e-vede-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lamentações 1:17, o que falta a Sião quando estende as mãos?",
+    "prompt": "Segundo Lamentações 1:17, o que falta a Sião quando estende as mãos?",
+    "cue": "Segundo Lamentações 1:17, o que falta a Sião quando estende as mãos?",
+    "verseRef": "Lamentações 1:17",
+    "passageText": "Sião estende as mãos, mas não há quem a console; o SENHOR ordenou que seus vizinhos se tornem seus inimigos; Jerusalém é para eles como coisa imunda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Novos muros já reconstruídos"
+      },
+      {
+        "id": "b",
+        "text": "Profetas com visão nova"
+      },
+      {
+        "id": "c",
+        "text": "Um consolador que a socorra"
+      },
+      {
+        "id": "d",
+        "text": "Aliados fiéis entre os vizinhos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas não há quem a console",
+    "feedbackCorrect": "Sião estende as mãos, mas não há quem a console.",
+    "feedbackWrong": {
+      "a": "O texto não fala de muros reconstruídos aqui.",
+      "b": "O versículo não menciona profetas.",
+      "d": "Os vizinhos se tornaram inimigos, não aliados."
+    },
+    "hint": "Leia o contraste após \"estende as mãos\".",
+    "learningObjective": "Observar a ausência de consolador.",
+    "evidence": [
+      "Lamentações 1:17"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-01-olhai-e-vede-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 1:18 na ordem do texto.",
+    "prompt": "Monte Lamentações 1:18 na ordem do texto.",
+    "cue": "Monte Lamentações 1:18 na ordem do texto.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Justo é o Senhor, pois me rebelei contra a sua palavra"
+      },
+      {
+        "id": "b",
+        "text": "ouçam pois, todos os povos, e vejam a minha dor"
+      },
+      {
+        "id": "c",
+        "text": "minhas virgens e meus jovens foram levados para o cativeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "Primeiro a confissão; depois o apelo; por fim o cativeiro.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão; o cativeiro fecha o versículo."
+    },
+    "hint": "O versículo abre com \"Justo é o Senhor\".",
+    "learningObjective": "Reconhecer a sequência de 1:18.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-01-olhai-e-vede-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lamentações 1:16, quem se afastou e deveria restaurar as forças?",
+    "prompt": "Em Lamentações 1:16, quem se afastou e deveria restaurar as forças?",
+    "cue": "Em Lamentações 1:16, quem se afastou e deveria restaurar as forças?",
+    "verseRef": "Lamentações 1:16",
+    "passageText": "Por estas coisas, eu choro; meus olhos se desfazem em águas, pois o consolador que devia restaurar minhas forças se afastou de mim; meus filhos estão desolados, porque o inimigo prevaleceu.",
+    "template": "Por estas coisas, eu choro; meus olhos se desfazem em águas, pois o ___ que devia restaurar minhas forças se afastou de mim; meus filhos estão desolados, porque o inimigo prevaleceu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "inimigo"
+      },
+      {
+        "id": "b",
+        "text": "consolador"
+      },
+      {
+        "id": "c",
+        "text": "povo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois o consolador que devia restaurar minhas forças se afastou de mim",
+    "feedbackCorrect": "O consolador que deveria restaurar as forças se afastou.",
+    "feedbackWrong": {
+      "a": "O inimigo prevaleceu; quem se afastou é o consolador.",
+      "c": "\"Povo\" não é quem se afastou em 1:16."
+    },
+    "hint": "Procure quem deveria restaurar as forças.",
+    "learningObjective": "Lembrar a ausência do consolador.",
+    "evidence": [
+      "Lamentações 1:16"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-01-olhai-e-vede-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "passageA": {
+      "ref": "Lamentações 1:18",
+      "text": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na dor, a cidade confessa a justiça do Senhor e a própria rebelião."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Confissão na disciplina"
+      },
+      {
+        "id": "b",
+        "text": "Negação da culpa"
+      },
+      {
+        "id": "c",
+        "text": "Culpa só dos vizinhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "A confissão une justiça do Senhor e rebelião da cidade.",
+    "feedbackWrong": {
+      "b": "O texto confessa a rebelião, não a nega.",
+      "c": "A culpa confessada é a própria rebelião."
+    },
+    "hint": "Veja o que a cidade admite após chamar o Senhor de justo.",
+    "learningObjective": "Ligar 1:18 à confissão na disciplina.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-01-olhai-e-vede-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lamentações 1:17, Sião encontra consolador logo que estende as mãos.",
+    "prompt": "Em Lamentações 1:17, Sião encontra consolador logo que estende as mãos.",
+    "cue": "Em Lamentações 1:17, Sião encontra consolador logo que estende as mãos.",
+    "verseRef": "Lamentações 1:17",
+    "passageText": "Sião estende as mãos, mas não há quem a console; o SENHOR ordenou que seus vizinhos se tornem seus inimigos; Jerusalém é para eles como coisa imunda.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas não há quem a console",
+    "feedbackCorrect": "O \"mas\" marca o contraste: estende as mãos, e não há consolador.",
+    "feedbackWrong": {
+      "true": "Releia 1:17: não há quem a console."
+    },
+    "hint": "Repare na palavra que liga as duas partes.",
+    "learningObjective": "Compreender o contraste sem consolador.",
+    "evidence": [
+      "Lamentações 1:17"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-01-olhai-e-vede-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+    "prompt": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+    "cue": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pois"
+      },
+      {
+        "id": "b",
+        "text": "Justo"
+      },
+      {
+        "id": "c",
+        "text": "cativeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei",
+    "feedbackCorrect": "\"Pois\" introduz a causa: a rebelião explica a justiça confessada.",
+    "feedbackWrong": {
+      "b": "\"Justo\" é o atributo; a ligação causal vem depois.",
+      "c": "\"Cativeiro\" é o resultado final, não o marcador."
+    },
+    "hint": "Procure a palavra curta entre as duas cláusulas.",
+    "learningObjective": "Reconhecer o marcador de causa em 1:18.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-01-olhai-e-vede-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lamentações 1:18 liga a justiça do Senhor à dor da cidade?",
+    "prompt": "Como Lamentações 1:18 liga a justiça do Senhor à dor da cidade?",
+    "cue": "Como Lamentações 1:18 liga a justiça do Senhor à dor da cidade?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A justiça do Senhor não se relaciona com a dor"
+      },
+      {
+        "id": "b",
+        "text": "A dor vem da rebelião confessada contra a palavra"
+      },
+      {
+        "id": "c",
+        "text": "A cidade sofre por ser inocente perante Deus"
+      },
+      {
+        "id": "d",
+        "text": "A dor prova que o Senhor age sem justiça"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "A confissão une justiça divina e rebelião humana.",
+    "feedbackWrong": {
+      "a": "O \"pois\" liga justiça e rebelião.",
+      "c": "Ela admite rebelião, não inocência.",
+      "d": "O texto afirma que o Senhor é justo."
+    },
+    "hint": "Leia a razão após \"Justo é o Senhor\".",
+    "learningObjective": "Relacionar justiça, rebelião e dor.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-01-olhai-e-vede-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Lamentações 1:12–18?",
+    "prompt": "Como avança a cena em Lamentações 1:12–18?",
+    "cue": "Como avança a cena em Lamentações 1:12–18?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade chama a ver sua dor na ira"
+      },
+      {
+        "id": "b",
+        "text": "Chora sem consolador e estende as mãos"
+      },
+      {
+        "id": "c",
+        "text": "Confessa que o Senhor é justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "Do chamado ao lamento, até a confissão final.",
+    "feedbackWrong": {
+      "default": "Comece pelo chamado a ver; a confissão fecha."
+    },
+    "hint": "A confissão vem no fim do trecho.",
+    "learningObjective": "Seguir o movimento até a confissão.",
+    "evidence": [
+      "Lamentações 1:12–18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-01-olhai-e-vede-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lamentações 1:14, o que o Senhor fez nas mãos daquelas a que ela não pode resistir?",
+    "prompt": "Em Lamentações 1:14, o que o Senhor fez nas mãos daquelas a que ela não pode resistir?",
+    "cue": "Em Lamentações 1:14, o que o Senhor fez nas mãos daquelas a que ela não pode resistir?",
+    "verseRef": "Lamentações 1:14",
+    "passageText": "O jugo das minhas transgressões está atado pela Sua mão; elas estão entrelaçadas, subiram sobre o meu pescoço, e Ele abateu a minha força; o Senhor me entregou nas mãos daquelas a que não posso resistir.",
+    "template": "O jugo das minhas transgressões está atado pela Sua mão; elas estão entrelaçadas, subiram sobre o meu pescoço, e Ele abateu a minha força; o Senhor me ___ nas mãos daquelas a que não posso resistir.",
+    "options": [
+      {
+        "id": "a",
+        "text": "escondeu"
+      },
+      {
+        "id": "b",
+        "text": "entregou"
+      },
+      {
+        "id": "c",
+        "text": "exaltou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor me entregou nas mãos daquelas a que não posso resistir",
+    "feedbackCorrect": "O Senhor a entregou nas mãos daquelas a que não pode resistir.",
+    "feedbackWrong": {
+      "a": "O texto não diz que o Senhor a escondeu.",
+      "c": "O texto fala de entrega, não de exaltação."
+    },
+    "hint": "Veja o verbo final sobre a ação do Senhor.",
+    "learningObjective": "Compreender a entrega como resultado.",
+    "evidence": [
+      "Lamentações 1:14"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-01-olhai-e-vede-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lamentações 1:18 a Neemias 9:33?",
+    "prompt": "O que liga Lamentações 1:18 a Neemias 9:33?",
+    "cue": "O que liga Lamentações 1:18 a Neemias 9:33?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "passageA": {
+      "ref": "Lamentações 1:18",
+      "text": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro."
+    },
+    "passageB": {
+      "ref": "Neemias 9:33",
+      "text": "Entretanto, tu és justo em tudo o que nos sobreveio, pois tu agiste com fidelidade e nós agimos perversamente."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culpar só os inimigos"
+      },
+      {
+        "id": "b",
+        "text": "Negar qualquer culpa"
+      },
+      {
+        "id": "c",
+        "text": "Confessar a justiça divina"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Justo é o Senhor",
+    "feedbackCorrect": "Nos dois textos, o povo confessa: o Senhor é justo.",
+    "feedbackWrong": {
+      "a": "A confissão aponta a própria falha diante de Deus.",
+      "b": "Ambos confessam culpa, não a negam."
+    },
+    "hint": "Compare o que cada texto diz sobre a justiça de Deus.",
+    "learningObjective": "Relacionar confissões de justiça divina.",
+    "evidence": [
+      "Lamentações 1:18",
+      "Neemias 9:33"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-01-olhai-e-vede-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lamentações 1:18, a cidade interpreta sua dor como disciplina justa, não como injustiça do Senhor.",
+    "prompt": "Em Lamentações 1:18, a cidade interpreta sua dor como disciplina justa, não como injustiça do Senhor.",
+    "cue": "Em Lamentações 1:18, a cidade interpreta sua dor como disciplina justa, não como injustiça do Senhor.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "Ela chama o Senhor de justo e admite a rebelião.",
+    "feedbackWrong": {
+      "false": "O texto une justiça do Senhor e rebelião confessada."
+    },
+    "hint": "Veja como a cidade nomeia o Senhor e a si mesma.",
+    "learningObjective": "Interpretar a dor como disciplina justa.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-01-olhai-e-vede-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 1:18, toque o trecho que sustenta a confissão de culpa.",
+    "prompt": "Em Lamentações 1:18, toque o trecho que sustenta a confissão de culpa.",
+    "cue": "Em Lamentações 1:18, toque o trecho que sustenta a confissão de culpa.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "minha dor"
+      },
+      {
+        "id": "b",
+        "text": "me rebelei"
+      },
+      {
+        "id": "c",
+        "text": "todos os povos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "\"Me rebelei\" é a confissão que sustenta a leitura.",
+    "feedbackWrong": {
+      "a": "\"Minha dor\" é o efeito; a culpa está na rebelião.",
+      "c": "\"Todos os povos\" são os ouvintes, não a culpa."
+    },
+    "hint": "Procure o verbo da confissão após \"pois\".",
+    "learningObjective": "Sustentar com o texto a confissão de culpa.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-01-olhai-e-vede-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lamentações 1:12–18 sustenta sobre a queda de Jerusalém?",
+    "prompt": "Que leitura Lamentações 1:12–18 sustenta sobre a queda de Jerusalém?",
+    "cue": "Que leitura Lamentações 1:12–18 sustenta sobre a queda de Jerusalém?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor afligiu sem qualquer relação com a culpa"
+      },
+      {
+        "id": "b",
+        "text": "A cidade confessa justiça do Senhor e a própria rebelião"
+      },
+      {
+        "id": "c",
+        "text": "Há consolador perto e a dor já passou"
+      },
+      {
+        "id": "d",
+        "text": "A cidade se declara inocente diante dos inimigos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "O trecho fecha com confissão: justo é o Senhor; ela se rebelou.",
+    "feedbackWrong": {
+      "a": "O \"pois\" liga a disciplina à rebelião.",
+      "c": "1:16–17 diz que o consolador se afastou.",
+      "d": "Ela admite rebelião, não inocência."
+    },
+    "hint": "Compare cada opção com o fim de 1:18.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-01-olhai-e-vede-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra confissão da justiça de Deus na Escritura?",
+    "prompt": "Qual sequência mostra confissão da justiça de Deus na Escritura?",
+    "cue": "Qual sequência mostra confissão da justiça de Deus na Escritura?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade confessa: o Senhor é justo"
+      },
+      {
+        "id": "b",
+        "text": "Neemias confessa a justiça de Deus"
+      },
+      {
+        "id": "c",
+        "text": "O salmista reconhece a justiça divina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Justo é o Senhor",
+    "feedbackCorrect": "De Lamentações a Neemias e ao Salmo, a confissão ecoa.",
+    "feedbackWrong": {
+      "default": "Siga: Lm 1:18, Ne 9:33 e Sl 51:4."
+    },
+    "hint": "Parta da confissão de Lamentações.",
+    "learningObjective": "Ver a confissão no fio bíblico.",
+    "evidence": [
+      "Lamentações 1:18",
+      "Neemias 9:33",
+      "Salmos 51:4"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-01-olhai-e-vede-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+    "prompt": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+    "cue": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "template": "___ é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausente"
+      },
+      {
+        "id": "b",
+        "text": "Justo"
+      },
+      {
+        "id": "c",
+        "text": "Cruel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "A confissão começa: Justo é o Senhor.",
+    "feedbackWrong": {
+      "a": "O texto afirma justiça, não ausência.",
+      "c": "O texto não chama o Senhor de cruel."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Lembrar o termo teológico da confissão.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-01-olhai-e-vede-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-01-olhai-e-vede",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lamentações 1:18 a Deuteronômio 32:4?",
+    "prompt": "O que liga Lamentações 1:18 a Deuteronômio 32:4?",
+    "cue": "O que liga Lamentações 1:18 a Deuteronômio 32:4?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "passageA": {
+      "ref": "Lamentações 1:18",
+      "text": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 32:4",
+      "text": "Ele é a Rocha, cujas obras são perfeitas, pois todos os seus caminhos são juízo; Deus é fidelidade, e nele não há injustiça; é justo e reto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus ignora a culpa"
+      },
+      {
+        "id": "b",
+        "text": "Deus é justo e reto"
+      },
+      {
+        "id": "c",
+        "text": "Deus age ao acaso"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor",
+    "feedbackCorrect": "Nos dois textos, o Senhor é justo e reto.",
+    "feedbackWrong": {
+      "a": "A justiça divina enfrenta a culpa confessada.",
+      "c": "Ambos afirmam justiça, não acaso."
+    },
+    "hint": "Compare o atributo de Deus nos dois trechos.",
+    "learningObjective": "Ligar a confissão ao Deus justo da Torá.",
+    "evidence": [
+      "Lamentações 1:18",
+      "Deuteronômio 32:4"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-02-a-ira-do-senhor-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lamentações 2:7, o Senhor rejeitou o seu altar e abominou o seu santuário.",
+    "prompt": "Em Lamentações 2:7, o Senhor rejeitou o seu altar e abominou o seu santuário.",
+    "cue": "Em Lamentações 2:7, o Senhor rejeitou o seu altar e abominou o seu santuário.",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "Até o culto sagrado cai sob a ira do Senhor.",
+    "feedbackWrong": {
+      "false": "Releia 2:7: rejeitou o altar e abominou o santuário."
+    },
+    "hint": "Veja os dois verbos no começo do versículo.",
+    "learningObjective": "Observar a rejeição do santuário.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-02-a-ira-do-senhor-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 2:1, toque o que cobriu a filha de Sião na ira.",
+    "prompt": "Em Lamentações 2:1, toque o que cobriu a filha de Sião na ira.",
+    "cue": "Em Lamentações 2:1, toque o que cobriu a filha de Sião na ira.",
+    "verseRef": "Lamentações 2:1",
+    "passageText": "Como o Senhor cobriu de nuvens, na sua ira, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seus pés"
+      },
+      {
+        "id": "b",
+        "text": "de nuvens"
+      },
+      {
+        "id": "c",
+        "text": "a glória"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião",
+    "feedbackCorrect": "O Senhor cobriu Sião de nuvens na sua ira.",
+    "feedbackWrong": {
+      "a": "\"Seus pés\" aparece no estrado, não como cobertura.",
+      "c": "A glória é precipitada, não o que cobre."
+    },
+    "hint": "Procure o complemento de \"cobriu\".",
+    "learningObjective": "Identificar a cobertura da ira.",
+    "evidence": [
+      "Lamentações 2:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-02-a-ira-do-senhor-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lamentações 2:5, como o Senhor se tornou em relação a Israel?",
+    "prompt": "Segundo Lamentações 2:5, como o Senhor se tornou em relação a Israel?",
+    "cue": "Segundo Lamentações 2:5, como o Senhor se tornou em relação a Israel?",
+    "verseRef": "Lamentações 2:5",
+    "passageText": "O Senhor se tornou como um inimigo; devorou Israel, arrasou todos os seus palácios, destruiu suas fortalezas e multiplicou na filha de Judá o pranto e a lamentação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como um juiz distante e neutro"
+      },
+      {
+        "id": "b",
+        "text": "Como um pastor que restaura já"
+      },
+      {
+        "id": "c",
+        "text": "Como um aliado silencioso"
+      },
+      {
+        "id": "d",
+        "text": "Como um inimigo que devora"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel",
+    "feedbackCorrect": "O texto diz: o Senhor se tornou como um inimigo e devorou Israel.",
+    "feedbackWrong": {
+      "a": "Há ação direta: destroem-se palácios e fortalezas.",
+      "b": "Aqui há pranto e lamentação, não restauração.",
+      "c": "O texto fala de inimizade, não de aliança."
+    },
+    "hint": "Leia a comparação no início do versículo.",
+    "learningObjective": "Observar a comparação com inimigo.",
+    "evidence": [
+      "Lamentações 2:5"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-02-a-ira-do-senhor-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 2:7 na ordem do texto.",
+    "prompt": "Monte Lamentações 2:7 na ordem do texto.",
+    "cue": "Monte Lamentações 2:7 na ordem do texto.",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor rejeitou o seu altar, abominou o seu santuário"
+      },
+      {
+        "id": "b",
+        "text": "entregou nas mãos do inimigo os muros dos seus castelos"
+      },
+      {
+        "id": "c",
+        "text": "gritaram na casa do Senhor, como em dia de festa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "Rejeição do culto; entrega dos muros; gritos na casa.",
+    "feedbackWrong": {
+      "default": "Comece pela rejeição do altar; os gritos fecham."
+    },
+    "hint": "O versículo abre com a rejeição do altar.",
+    "learningObjective": "Reconhecer a sequência de 2:7.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-02-a-ira-do-senhor-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lamentações 2:8, o que o Senhor decidiu destruir da filha de Sião?",
+    "prompt": "Em Lamentações 2:8, o que o Senhor decidiu destruir da filha de Sião?",
+    "cue": "Em Lamentações 2:8, o que o Senhor decidiu destruir da filha de Sião?",
+    "verseRef": "Lamentações 2:8",
+    "passageText": "O Senhor decidiu destruir o muro da filha de Sião; estendeu o cordel sobre ele e não retirou sua mão destruidora. Tanto o antemuro quanto o muro gemem, pois já estão juntos enfraquecidos.",
+    "template": "O Senhor decidiu destruir o ___ da filha de Sião; estendeu o cordel sobre ele e não retirou sua mão destruidora. Tanto o antemuro quanto o muro gemem, pois já estão juntos enfraquecidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "jardim"
+      },
+      {
+        "id": "b",
+        "text": "muro"
+      },
+      {
+        "id": "c",
+        "text": "rio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor decidiu destruir o muro da filha de Sião",
+    "feedbackCorrect": "O Senhor decidiu destruir o muro da filha de Sião.",
+    "feedbackWrong": {
+      "a": "\"Jardim\" aparece em 2:6 como comparação, não aqui.",
+      "c": "\"Rio\" não aparece em 2:8."
+    },
+    "hint": "É o objeto da decisão no começo do versículo.",
+    "learningObjective": "Lembrar o alvo da destruição.",
+    "evidence": [
+      "Lamentações 2:8"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-02-a-ira-do-senhor-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 2:7 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 2:7 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 2:7 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "passageA": {
+      "ref": "Lamentações 2:7",
+      "text": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Até o lugar santo cai quando o Senhor age na sua ira."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Santuário sob disciplina"
+      },
+      {
+        "id": "b",
+        "text": "Templo intocável sempre"
+      },
+      {
+        "id": "c",
+        "text": "Culto sem qualquer risco"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "abominou o seu santuário",
+    "feedbackCorrect": "O santuário também está sob a disciplina do Senhor.",
+    "feedbackWrong": {
+      "b": "O texto mostra o santuário abominado, não intocável.",
+      "c": "Há rejeição do altar e entrega aos inimigos."
+    },
+    "hint": "Veja o que acontece ao altar e ao santuário.",
+    "learningObjective": "Ligar 2:7 à disciplina sobre o culto.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-02-a-ira-do-senhor-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+    "prompt": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+    "cue": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+    "verseRef": "Lamentações 2:5",
+    "passageText": "O Senhor se tornou como um inimigo; devorou Israel, arrasou todos os seus palácios, destruiu suas fortalezas e multiplicou na filha de Judá o pranto e a lamentação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel",
+    "feedbackCorrect": "O texto compara o Senhor a um inimigo que devora Israel.",
+    "feedbackWrong": {
+      "true": "Releia 2:5: o Senhor se tornou como um inimigo."
+    },
+    "hint": "Veja a comparação no início do versículo.",
+    "learningObjective": "Compreender a comparação com inimigo.",
+    "evidence": [
+      "Lamentações 2:5"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-02-a-ira-do-senhor-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 2:8, toque a palavra que explica por que muro e antemuro gemem.",
+    "prompt": "Em Lamentações 2:8, toque a palavra que explica por que muro e antemuro gemem.",
+    "cue": "Em Lamentações 2:8, toque a palavra que explica por que muro e antemuro gemem.",
+    "verseRef": "Lamentações 2:8",
+    "passageText": "O Senhor decidiu destruir o muro da filha de Sião; estendeu o cordel sobre ele e não retirou sua mão destruidora. Tanto o antemuro quanto o muro gemem, pois já estão juntos enfraquecidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mão"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "cordel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "gemem, pois já estão juntos enfraquecidos",
+    "feedbackCorrect": "\"Pois\" introduz a causa: já estão juntos enfraquecidos.",
+    "feedbackWrong": {
+      "a": "\"Mão\" descreve a ação destruidora, não o marcador causal.",
+      "c": "\"Cordel\" marca a medida da destruição, não a causa do gemido."
+    },
+    "hint": "Procure a palavra curta antes de \"já estão\".",
+    "learningObjective": "Reconhecer o marcador de causa em 2:8.",
+    "evidence": [
+      "Lamentações 2:8"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-02-a-ira-do-senhor-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lamentações 2:5–7 liga a ira do Senhor ao culto?",
+    "prompt": "Como Lamentações 2:5–7 liga a ira do Senhor ao culto?",
+    "cue": "Como Lamentações 2:5–7 liga a ira do Senhor ao culto?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor se afasta sem tocar no santuário"
+      },
+      {
+        "id": "b",
+        "text": "A ira atinge palácios e também altar e santuário"
+      },
+      {
+        "id": "c",
+        "text": "Só o inimigo humano age; o Senhor observa"
+      },
+      {
+        "id": "d",
+        "text": "A ira poupa o culto e só derruba muros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "Depois de destruir fortalezas, rejeita altar e santuário.",
+    "feedbackWrong": {
+      "a": "Há abominação do santuário, não isenção.",
+      "c": "O Senhor é o sujeito das ações.",
+      "d": "2:7 mostra rejeição explícita do culto."
+    },
+    "hint": "Ligue 2:5 ao que 2:7 faz com o altar.",
+    "learningObjective": "Relacionar ira, cidade e culto.",
+    "evidence": [
+      "Lamentações 2:5–7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-02-a-ira-do-senhor-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move Lamentações 2:1–10?",
+    "prompt": "Como se move Lamentações 2:1–10?",
+    "cue": "Como se move Lamentações 2:1–10?",
+    "verseRef": "Lamentações 2:1–2",
+    "passageText": "Como o Senhor cobriu de nuvens, na sua ira, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira. O Senhor destruiu todas as moradas de Jacó e não se apiedou; derrubou, na sua ira, as fortalezas da filha de Judá e as lançou por terra; profanou o reino e seus príncipes.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ira cobre Sião e derruba a glória"
+      },
+      {
+        "id": "b",
+        "text": "Altar e santuário são rejeitados"
+      },
+      {
+        "id": "c",
+        "text": "Muros caem e anciãos calam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião",
+    "feedbackCorrect": "Da cobertura da ira à queda do culto e ao silêncio.",
+    "feedbackWrong": {
+      "default": "Comece pela ira sobre Sião; o silêncio fecha."
+    },
+    "hint": "Siga da ira inicial ao luto dos anciãos.",
+    "learningObjective": "Seguir o movimento da ira à ruína.",
+    "evidence": [
+      "Lamentações 2:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-02-a-ira-do-senhor-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lamentações 2:7, que verbo mostra o que o Senhor fez ao altar?",
+    "prompt": "Em Lamentações 2:7, que verbo mostra o que o Senhor fez ao altar?",
+    "cue": "Em Lamentações 2:7, que verbo mostra o que o Senhor fez ao altar?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "template": "O Senhor ___ o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exaltou"
+      },
+      {
+        "id": "b",
+        "text": "rejeitou"
+      },
+      {
+        "id": "c",
+        "text": "limpou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "O Senhor rejeitou o seu altar.",
+    "feedbackWrong": {
+      "a": "O texto não fala de exaltação do altar.",
+      "c": "O verbo é rejeitou, não limpou."
+    },
+    "hint": "É o primeiro verbo do versículo.",
+    "learningObjective": "Lembrar o verbo da disciplina sobre o culto.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-02-a-ira-do-senhor-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lamentações 2:7 a Jeremias 7:14?",
+    "prompt": "O que liga Lamentações 2:7 a Jeremias 7:14?",
+    "cue": "O que liga Lamentações 2:7 a Jeremias 7:14?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "passageA": {
+      "ref": "Lamentações 2:7",
+      "text": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa."
+    },
+    "passageB": {
+      "ref": "Jeremias 7:14",
+      "text": "Farei também a esta casa que é chamada pelo meu nome, na qual confiastes, e a este lugar que dei a vocês e a seus pais, como fiz a Siló."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto sem juízo algum"
+      },
+      {
+        "id": "b",
+        "text": "Templo eternamente seguro"
+      },
+      {
+        "id": "c",
+        "text": "Casa rejeitada na disciplina"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "abominou o seu santuário",
+    "feedbackCorrect": "Nos dois textos, a casa santa não escapa à disciplina.",
+    "feedbackWrong": {
+      "a": "Há juízo sobre o lugar do culto.",
+      "b": "Ambos mostram rejeição, não segurança eterna do templo."
+    },
+    "hint": "Compare o destino da casa do Senhor.",
+    "learningObjective": "Relacionar a rejeição do santuário em Lm e Jr.",
+    "evidence": [
+      "Lamentações 2:7",
+      "Jeremias 7:14"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-02-a-ira-do-senhor-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lamentações 2:7–8, a ira do Senhor poupa santuário e muros e só atinge casas comuns.",
+    "prompt": "Em Lamentações 2:7–8, a ira do Senhor poupa santuário e muros e só atinge casas comuns.",
+    "cue": "Em Lamentações 2:7–8, a ira do Senhor poupa santuário e muros e só atinge casas comuns.",
+    "verseRef": "Lamentações 2:7–8",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa. O Senhor decidiu destruir o muro da filha de Sião; estendeu o cordel sobre ele e não retirou sua mão destruidora. Tanto o antemuro quanto o muro gemem, pois já estão juntos enfraquecidos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "Santuário e muro estão no centro da disciplina.",
+    "feedbackWrong": {
+      "true": "Releia 2:7–8: santuário abominado e muro a destruir."
+    },
+    "hint": "Veja o que acontece ao santuário e ao muro.",
+    "learningObjective": "Interpretar o alcance da ira sobre o sagrado.",
+    "evidence": [
+      "Lamentações 2:7–8"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-02-a-ira-do-senhor-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+    "prompt": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+    "cue": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seu santuário"
+      },
+      {
+        "id": "b",
+        "text": "seus castelos"
+      },
+      {
+        "id": "c",
+        "text": "dia de festa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "abominou o seu santuário",
+    "feedbackCorrect": "\"Seu santuário\" é o alvo abominado na disciplina.",
+    "feedbackWrong": {
+      "b": "Os castelos são entregues; o lugar santo é o santuário.",
+      "c": "\"Dia de festa\" é comparação dos gritos, não o alvo."
+    },
+    "hint": "Procure o objeto de \"abominou\".",
+    "learningObjective": "Sustentar com o texto a queda do santuário.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-02-a-ira-do-senhor-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lamentações 2:1–10 sustenta sobre o santuário?",
+    "prompt": "Que leitura Lamentações 2:1–10 sustenta sobre o santuário?",
+    "cue": "Que leitura Lamentações 2:1–10 sustenta sobre o santuário?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Até o santuário pode cair sob a ira do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "O santuário é intocável qualquer que seja a culpa"
+      },
+      {
+        "id": "c",
+        "text": "Só muros caem; o culto permanece intacto"
+      },
+      {
+        "id": "d",
+        "text": "O Senhor nunca age como juiz sobre Sião"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "O texto mostra altar rejeitado e santuário abominado.",
+    "feedbackWrong": {
+      "b": "2:7 desmente a ideia de santuário intocável.",
+      "c": "O culto também é atingido.",
+      "d": "Todo o capítulo mostra a ira do Senhor em ação."
+    },
+    "hint": "Compare cada opção com 2:7.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-02-a-ira-do-senhor-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra juízo sobre o lugar santo na Escritura?",
+    "prompt": "Qual sequência mostra juízo sobre o lugar santo na Escritura?",
+    "cue": "Qual sequência mostra juízo sobre o lugar santo na Escritura?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor rejeita altar e santuário"
+      },
+      {
+        "id": "b",
+        "text": "Jeremias anuncia a casa rejeitada"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo lamenta o santuário profanado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "abominou o seu santuário",
+    "feedbackCorrect": "De Lamentações a Jeremias e ao Salmo, o juízo toca o santo.",
+    "feedbackWrong": {
+      "default": "Siga: Lm 2:7, Jr 7:14 e Sl 74:7."
+    },
+    "hint": "Parta da rejeição em Lamentações.",
+    "learningObjective": "Ver o juízo do santuário no fio bíblico.",
+    "evidence": [
+      "Lamentações 2:7",
+      "Jeremias 7:14",
+      "Salmos 74:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-02-a-ira-do-senhor-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lamentações 2:1, que palavra nomeia a indignação que cobre Sião?",
+    "prompt": "Em Lamentações 2:1, que palavra nomeia a indignação que cobre Sião?",
+    "cue": "Em Lamentações 2:1, que palavra nomeia a indignação que cobre Sião?",
+    "verseRef": "Lamentações 2:1",
+    "passageText": "Como o Senhor cobriu de nuvens, na sua ira, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira.",
+    "template": "Como o Senhor cobriu de nuvens, na sua ___, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "paz"
+      },
+      {
+        "id": "c",
+        "text": "alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião",
+    "feedbackCorrect": "É na sua ira que o Senhor cobre Sião.",
+    "feedbackWrong": {
+      "b": "\"Paz\" não descreve a cobertura de 2:1.",
+      "c": "O texto fala de ira, não de alegria."
+    },
+    "hint": "Procure a palavra após \"na sua\".",
+    "learningObjective": "Lembrar o termo teológico da disciplina.",
+    "evidence": [
+      "Lamentações 2:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-02-a-ira-do-senhor-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-02-a-ira-do-senhor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lamentações 2:7 a Salmos 74:7?",
+    "prompt": "O que liga Lamentações 2:7 a Salmos 74:7?",
+    "cue": "O que liga Lamentações 2:7 a Salmos 74:7?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "passageA": {
+      "ref": "Lamentações 2:7",
+      "text": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa."
+    },
+    "passageB": {
+      "ref": "Salmos 74:7",
+      "text": "Incendiaram o teu santuário; profanaram, arrasando-o até o chão, a morada do teu nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Templo eternamente intacto"
+      },
+      {
+        "id": "b",
+        "text": "Santuário profanado pelo juízo"
+      },
+      {
+        "id": "c",
+        "text": "Culto sem qualquer perda"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "abominou o seu santuário",
+    "feedbackCorrect": "Nos dois textos, o santuário sofre sob o juízo.",
+    "feedbackWrong": {
+      "a": "Ambos lamentam a profanação, não a intactez.",
+      "c": "Há perda e profanação do lugar santo."
+    },
+    "hint": "Compare o destino do santuário.",
+    "learningObjective": "Ligar a abominação ao lamento do Salmo.",
+    "evidence": [
+      "Lamentações 2:7",
+      "Salmos 74:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-03-nao-rejeita-para-sempre-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+    "prompt": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+    "cue": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+    "verseRef": "Lamentações 3:31",
+    "passageText": "Pois o Senhor não rejeitará para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "A esperança central: a rejeição não é definitiva.",
+    "feedbackWrong": {
+      "false": "Releia 3:31: o Senhor não rejeitará para sempre."
+    },
+    "hint": "Leia o versículo inteiro.",
+    "learningObjective": "Observar a promessa de não rejeição final.",
+    "evidence": [
+      "Lamentações 3:31"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-03-nao-rejeita-para-sempre-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 3:32, toque o que mede a compaixão do Senhor.",
+    "prompt": "Em Lamentações 3:32, toque o que mede a compaixão do Senhor.",
+    "cue": "Em Lamentações 3:32, toque o que mede a compaixão do Senhor.",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdias"
+      },
+      {
+        "id": "b",
+        "text": "alguém"
+      },
+      {
+        "id": "c",
+        "text": "grandeza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "A compaixão segue a grandeza das suas misericórdias.",
+    "feedbackWrong": {
+      "b": "\"Alguém\" é quem é entristecido, não a medida.",
+      "c": "\"Grandeza\" qualifica; o que se mede são as misericórdias."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Identificar a base da compaixão.",
+    "evidence": [
+      "Lamentações 3:32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-03-nao-rejeita-para-sempre-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lamentações 3:40, o que o povo deve fazer?",
+    "prompt": "Segundo Lamentações 3:40, o que o povo deve fazer?",
+    "cue": "Segundo Lamentações 3:40, o que o povo deve fazer?",
+    "verseRef": "Lamentações 3:40",
+    "passageText": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Culpar só os inimigos pela ruína"
+      },
+      {
+        "id": "b",
+        "text": "Esquadrinhar os caminhos e voltar ao Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Ignorar a culpa e seguir em silêncio"
+      },
+      {
+        "id": "d",
+        "text": "Esperar sem examinar o próprio coração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor",
+    "feedbackCorrect": "O chamado é examinar e voltar ao Senhor.",
+    "feedbackWrong": {
+      "a": "O foco é o próprio caminho, não só o inimigo.",
+      "c": "O texto manda examinar e voltar.",
+      "d": "Há exame e retorno, não espera passiva."
+    },
+    "hint": "Leia os dois verbos de exame e o de retorno.",
+    "learningObjective": "Observar o chamado ao retorno.",
+    "evidence": [
+      "Lamentações 3:40"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-03-nao-rejeita-para-sempre-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 3:32 na ordem do texto.",
+    "prompt": "Monte Lamentações 3:32 na ordem do texto.",
+    "cue": "Monte Lamentações 3:32 na ordem do texto.",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Antes, se ele entristecer a alguém"
+      },
+      {
+        "id": "b",
+        "text": "usará de compaixão"
+      },
+      {
+        "id": "c",
+        "text": "conforme a grandeza das suas misericórdias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Primeiro o entristecer; depois a compaixão e sua medida.",
+    "feedbackWrong": {
+      "default": "Comece pelo entristecer; as misericórdias fecham."
+    },
+    "hint": "O versículo abre com \"Antes\".",
+    "learningObjective": "Reconhecer a sequência de 3:32.",
+    "evidence": [
+      "Lamentações 3:32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-03-nao-rejeita-para-sempre-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lamentações 3:31, o Senhor não rejeitará para quê?",
+    "prompt": "Em Lamentações 3:31, o Senhor não rejeitará para quê?",
+    "cue": "Em Lamentações 3:31, o Senhor não rejeitará para quê?",
+    "verseRef": "Lamentações 3:31",
+    "passageText": "Pois o Senhor não rejeitará para sempre.",
+    "template": "Pois o Senhor não rejeitará para ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "hoje"
+      },
+      {
+        "id": "b",
+        "text": "nunca"
+      },
+      {
+        "id": "c",
+        "text": "sempre"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "A negação é clara: não rejeitará para sempre.",
+    "feedbackWrong": {
+      "a": "O texto diz \"para sempre\", não \"para hoje\".",
+      "b": "\"Nunca\" inverteria o sentido do versículo."
+    },
+    "hint": "Veja a última palavra do versículo.",
+    "learningObjective": "Lembrar o alcance da esperança.",
+    "evidence": [
+      "Lamentações 3:31"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-03-nao-rejeita-para-sempre-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 3:31 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 3:31 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 3:31 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 3:31",
+    "passageText": "Pois o Senhor não rejeitará para sempre.",
+    "passageA": {
+      "ref": "Lamentações 3:31",
+      "text": "Pois o Senhor não rejeitará para sempre."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No meio do lamento, a esperança é que a rejeição não é definitiva."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Rejeição sem fim algum"
+      },
+      {
+        "id": "b",
+        "text": "Esperança após a disciplina"
+      },
+      {
+        "id": "c",
+        "text": "Ausência total de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "A disciplina não apaga a esperança no Senhor.",
+    "feedbackWrong": {
+      "a": "O texto nega rejeição definitiva.",
+      "c": "Há Senhor presente que não rejeita para sempre."
+    },
+    "hint": "Veja o que o Senhor não fará.",
+    "learningObjective": "Ligar 3:31 à esperança no lamento.",
+    "evidence": [
+      "Lamentações 3:31"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-03-nao-rejeita-para-sempre-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lamentações 3:32–33, depois de entristecer, o Senhor usa de compaixão, e não aflige de bom grado.",
+    "prompt": "Em Lamentações 3:32–33, depois de entristecer, o Senhor usa de compaixão, e não aflige de bom grado.",
+    "cue": "Em Lamentações 3:32–33, depois de entristecer, o Senhor usa de compaixão, e não aflige de bom grado.",
+    "verseRef": "Lamentações 3:32–33",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias. Porque Ele não aflige nem entristece os filhos dos homens de bom grado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Compaixão segundo as misericórdias; não aflige de bom grado.",
+    "feedbackWrong": {
+      "false": "Releia 3:32–33: compaixão e não aflige de bom grado."
+    },
+    "hint": "Ligue o que segue ao entristecer com o \"Porque\" de 3:33.",
+    "learningObjective": "Compreender a relação disciplina–compaixão.",
+    "evidence": [
+      "Lamentações 3:32–33"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-03-nao-rejeita-para-sempre-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 3:33, toque a palavra que abre a razão de não afligir de bom grado.",
+    "prompt": "Em Lamentações 3:33, toque a palavra que abre a razão de não afligir de bom grado.",
+    "cue": "Em Lamentações 3:33, toque a palavra que abre a razão de não afligir de bom grado.",
+    "verseRef": "Lamentações 3:33",
+    "passageText": "Porque Ele não aflige nem entristece os filhos dos homens de bom grado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque"
+      },
+      {
+        "id": "b",
+        "text": "aflige"
+      },
+      {
+        "id": "c",
+        "text": "homens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Porque Ele não aflige nem entristece",
+    "feedbackCorrect": "\"Porque\" introduz a razão do caráter do Senhor.",
+    "feedbackWrong": {
+      "b": "\"Aflige\" é o verbo negado, não o marcador.",
+      "c": "\"Homens\" é o objeto, não a razão."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de causa em 3:33.",
+    "evidence": [
+      "Lamentações 3:33"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-03-nao-rejeita-para-sempre-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lamentações 3:31–33 relaciona disciplina e misericórdia?",
+    "prompt": "Como Lamentações 3:31–33 relaciona disciplina e misericórdia?",
+    "cue": "Como Lamentações 3:31–33 relaciona disciplina e misericórdia?",
+    "verseRef": "Lamentações 3:31–32",
+    "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Entristece, mas se compadece segundo suas misericórdias"
+      },
+      {
+        "id": "b",
+        "text": "Aflige de bom grado e sem medida"
+      },
+      {
+        "id": "c",
+        "text": "Rejeita para sempre sem qualquer compaixão"
+      },
+      {
+        "id": "d",
+        "text": "Nunca disciplina; só consola"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Há disciplina, mas também compaixão segundo as misericórdias.",
+    "feedbackWrong": {
+      "b": "3:33 nega afligir de bom grado.",
+      "c": "3:31 nega rejeição definitiva.",
+      "d": "Há entristecer; não é só consolo."
+    },
+    "hint": "Leia o movimento de 3:31–33.",
+    "learningObjective": "Relacionar disciplina e misericórdia.",
+    "evidence": [
+      "Lamentações 3:31–32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-03-nao-rejeita-para-sempre-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Lamentações 3:31–42?",
+    "prompt": "Como avança Lamentações 3:31–42?",
+    "cue": "Como avança Lamentações 3:31–42?",
+    "verseRef": "Lamentações 3:31–32",
+    "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança: não rejeita para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Soberania do Senhor sobre o que acontece"
+      },
+      {
+        "id": "c",
+        "text": "Exame, retorno e confissão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "Da esperança à soberania, até o retorno confessante.",
+    "feedbackWrong": {
+      "default": "Comece pela esperança; a confissão fecha."
+    },
+    "hint": "A confissão vem no fim do trecho.",
+    "learningObjective": "Seguir o movimento até o retorno.",
+    "evidence": [
+      "Lamentações 3:31–32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-03-nao-rejeita-para-sempre-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+    "prompt": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+    "cue": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "template": "Antes, se ele entristecer a alguém, usará de ___, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "compaixão"
+      },
+      {
+        "id": "b",
+        "text": "vingança"
+      },
+      {
+        "id": "c",
+        "text": "indiferença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Após entristecer, usará de compaixão.",
+    "feedbackWrong": {
+      "b": "O texto fala de compaixão, não de vingança.",
+      "c": "Há compaixão ativa, não indiferença."
+    },
+    "hint": "Veja o que segue a \"usará de\".",
+    "learningObjective": "Lembrar a palavra da resposta divina.",
+    "evidence": [
+      "Lamentações 3:32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-03-nao-rejeita-para-sempre-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lamentações 3:32 a Salmos 103:8–10?",
+    "prompt": "O que liga Lamentações 3:32 a Salmos 103:8–10?",
+    "cue": "O que liga Lamentações 3:32 a Salmos 103:8–10?",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "passageA": {
+      "ref": "Lamentações 3:32",
+      "text": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias."
+    },
+    "passageB": {
+      "ref": "Salmos 103:8–10"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ira sem qualquer limite"
+      },
+      {
+        "id": "b",
+        "text": "Ausência de compaixão"
+      },
+      {
+        "id": "c",
+        "text": "Misericórdia e não rejeição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Nos dois textos, a misericórdia marca o trato de Deus.",
+    "feedbackWrong": {
+      "a": "Ambos destacam misericórdia, não ira sem limite.",
+      "b": "Há compaixão e misericórdias."
+    },
+    "hint": "Compare misericórdia e trato do Senhor.",
+    "learningObjective": "Relacionar misericórdias em Lm e no Salmo.",
+    "evidence": [
+      "Lamentações 3:32",
+      "Salmos 103:8–10"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-03-nao-rejeita-para-sempre-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lamentações 3:31–33, a disciplina do Senhor equivale a rejeição definitiva e prazer em afligir.",
+    "prompt": "Em Lamentações 3:31–33, a disciplina do Senhor equivale a rejeição definitiva e prazer em afligir.",
+    "cue": "Em Lamentações 3:31–33, a disciplina do Senhor equivale a rejeição definitiva e prazer em afligir.",
+    "verseRef": "Lamentações 3:31",
+    "passageText": "Pois o Senhor não rejeitará para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "Não rejeita para sempre e não aflige de bom grado.",
+    "feedbackWrong": {
+      "true": "Releia 3:31 e 3:33: não rejeita para sempre; não de bom grado."
+    },
+    "hint": "Compare 3:31 com o fim de 3:33.",
+    "learningObjective": "Interpretar a disciplina sem rejeição final.",
+    "evidence": [
+      "Lamentações 3:31–33"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-03-nao-rejeita-para-sempre-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 3:40, toque o trecho que sustenta o chamado ao retorno.",
+    "prompt": "Em Lamentações 3:40, toque o trecho que sustenta o chamado ao retorno.",
+    "cue": "Em Lamentações 3:40, toque o trecho que sustenta o chamado ao retorno.",
+    "verseRef": "Lamentações 3:40",
+    "passageText": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminhos"
+      },
+      {
+        "id": "b",
+        "text": "voltemos"
+      },
+      {
+        "id": "c",
+        "text": "provemos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "voltemos ao Senhor",
+    "feedbackCorrect": "\"Voltemos\" é o chamado que sustenta a leitura de retorno.",
+    "feedbackWrong": {
+      "a": "\"Caminhos\" é o que se examina; o retorno é \"voltemos\".",
+      "c": "\"Provemos\" é o exame; o retorno vem depois."
+    },
+    "hint": "Procure o verbo de retorno no fim.",
+    "learningObjective": "Sustentar com o texto o chamado a voltar.",
+    "evidence": [
+      "Lamentações 3:40"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-03-nao-rejeita-para-sempre-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lamentações 3:31–42 sustenta sobre a disciplina?",
+    "prompt": "Que leitura Lamentações 3:31–42 sustenta sobre a disciplina?",
+    "cue": "Que leitura Lamentações 3:31–42 sustenta sobre a disciplina?",
+    "verseRef": "Lamentações 3:31–32",
+    "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não há necessidade de examinar os caminhos"
+      },
+      {
+        "id": "b",
+        "text": "A disciplina é rejeição sem fim e sem misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor disciplina e se compadece; chama a voltar"
+      },
+      {
+        "id": "d",
+        "text": "Deus se agrada de afligir sem compaixão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Há esperança, compaixão e chamado ao retorno.",
+    "feedbackWrong": {
+      "a": "3:40 manda esquadrinhar e voltar.",
+      "b": "3:31 nega rejeição definitiva.",
+      "d": "3:33 nega afligir de bom grado."
+    },
+    "hint": "Una 3:31–33 com 3:40.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lamentações 3:31–32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-03-nao-rejeita-para-sempre-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra disciplina e misericórdia na Escritura?",
+    "prompt": "Qual sequência mostra disciplina e misericórdia na Escritura?",
+    "cue": "Qual sequência mostra disciplina e misericórdia na Escritura?",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor entristece e se compadece"
+      },
+      {
+        "id": "b",
+        "text": "Oséias diz que ele fere e cura"
+      },
+      {
+        "id": "c",
+        "text": "Isaías chama a voltar e achar misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "De Lamentações a Oséias e Isaías, há ferida e misericórdia.",
+    "feedbackWrong": {
+      "default": "Siga: Lm 3:32, Os 6:1 e Is 55:7."
+    },
+    "hint": "Parta da compaixão em Lamentações.",
+    "learningObjective": "Ver misericórdia após disciplina no fio bíblico.",
+    "evidence": [
+      "Lamentações 3:32",
+      "Oséias 6:1",
+      "Isaías 55:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-03-nao-rejeita-para-sempre-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lamentações 3:31, que verbo o texto nega sobre o Senhor?",
+    "prompt": "Em Lamentações 3:31, que verbo o texto nega sobre o Senhor?",
+    "cue": "Em Lamentações 3:31, que verbo o texto nega sobre o Senhor?",
+    "verseRef": "Lamentações 3:31",
+    "passageText": "Pois o Senhor não rejeitará para sempre.",
+    "template": "Pois o Senhor não ___ para sempre.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lembrará"
+      },
+      {
+        "id": "b",
+        "text": "abençoará"
+      },
+      {
+        "id": "c",
+        "text": "rejeitará"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "O verbo negado é rejeitará: não para sempre.",
+    "feedbackWrong": {
+      "a": "O verbo do versículo é rejeitará.",
+      "b": "O texto não nega abençoar; nega rejeitar para sempre."
+    },
+    "hint": "Veja o verbo após \"não\".",
+    "learningObjective": "Lembrar o verbo teológico da esperança.",
+    "evidence": [
+      "Lamentações 3:31"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-03-nao-rejeita-para-sempre-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-03-nao-rejeita-para-sempre",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lamentações 3:40 a Isaías 55:7?",
+    "prompt": "O que liga Lamentações 3:40 a Isaías 55:7?",
+    "cue": "O que liga Lamentações 3:40 a Isaías 55:7?",
+    "verseRef": "Lamentações 3:40",
+    "passageText": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor.",
+    "passageA": {
+      "ref": "Lamentações 3:40",
+      "text": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor."
+    },
+    "passageB": {
+      "ref": "Isaías 55:7",
+      "text": "Que o perverso abandone o seu caminho, e o iníquo os seus pensamentos; que se volte para o Senhor, e Ele se compadecerá dele, e para o nosso Deus, pois é rico em perdoar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Voltar e achar misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "Endurecer o coração"
+      },
+      {
+        "id": "c",
+        "text": "Fugir sem retorno"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "voltemos ao Senhor",
+    "feedbackCorrect": "Nos dois textos, voltar ao Senhor encontra misericórdia.",
+    "feedbackWrong": {
+      "b": "O chamado é retorno, não endurecimento.",
+      "c": "Ambos chamam a voltar, não a fugir."
+    },
+    "hint": "Compare o movimento de retorno.",
+    "learningObjective": "Ligar o retorno de Lm ao de Isaías.",
+    "evidence": [
+      "Lamentações 3:40",
+      "Isaías 55:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lamentações 4:2, os nobres filhos de Sião agora são tidos como objetos de barro.",
+    "prompt": "Em Lamentações 4:2, os nobres filhos de Sião agora são tidos como objetos de barro.",
+    "cue": "Em Lamentações 4:2, os nobres filhos de Sião agora são tidos como objetos de barro.",
+    "verseRef": "Lamentações 4:2",
+    "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+    "feedbackCorrect": "Do ouro puro ao barro: a glória se inverteu.",
+    "feedbackWrong": {
+      "false": "Releia 4:2: agora são tidos como objetos de barro."
+    },
+    "hint": "Compare o começo e o fim do versículo.",
+    "learningObjective": "Observar a queda dos filhos de Sião.",
+    "evidence": [
+      "Lamentações 4:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 4:1, toque o que se escureceu.",
+    "prompt": "Em Lamentações 4:1, toque o que se escureceu.",
+    "cue": "Em Lamentações 4:1, toque o que se escureceu.",
+    "verseRef": "Lamentações 4:1",
+    "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!",
+    "options": [
+      {
+        "id": "a",
+        "text": "as ruas"
+      },
+      {
+        "id": "b",
+        "text": "o ouro"
+      },
+      {
+        "id": "c",
+        "text": "as pedras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Como se escureceu o ouro!",
+    "feedbackCorrect": "O ouro se escureceu: imagem da glória perdida.",
+    "feedbackWrong": {
+      "a": "As ruas recebem as pedras; o que escurece é o ouro.",
+      "c": "As pedras estão espalhadas; o que escurece é o ouro."
+    },
+    "hint": "Leia a primeira exclamação.",
+    "learningObjective": "Identificar o ouro escurecido.",
+    "evidence": [
+      "Lamentações 4:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lamentações 4:4, o que acontece quando os meninos pedem pão?",
+    "prompt": "Segundo Lamentações 4:4, o que acontece quando os meninos pedem pão?",
+    "cue": "Segundo Lamentações 4:4, o que acontece quando os meninos pedem pão?",
+    "verseRef": "Lamentações 4:4",
+    "passageText": "A língua da criança que mama fica grudada ao paladar por causa da sede; os meninos pedem pão, e ninguém há que lhes dê.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os vizinhos os alimentam logo"
+      },
+      {
+        "id": "b",
+        "text": "Ninguém há que lhes dê"
+      },
+      {
+        "id": "c",
+        "text": "O templo distribui comida"
+      },
+      {
+        "id": "d",
+        "text": "Recebem iguarias nas ruas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os meninos pedem pão, e ninguém há que lhes dê",
+    "feedbackCorrect": "Pedem pão, e ninguém lhes dá.",
+    "feedbackWrong": {
+      "a": "O texto diz que ninguém há que lhes dê.",
+      "c": "O texto não fala de distribuição no templo.",
+      "d": "4:5 diz que quem comia iguarias agora definha."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar a fome das crianças.",
+    "evidence": [
+      "Lamentações 4:4"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 4:2 na ordem do texto.",
+    "prompt": "Monte Lamentações 4:2 na ordem do texto.",
+    "cue": "Monte Lamentações 4:2 na ordem do texto.",
+    "verseRef": "Lamentações 4:2",
+    "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os nobres filhos de Sião, comparáveis a ouro puro"
+      },
+      {
+        "id": "b",
+        "text": "agora são tidos como objetos de barro"
+      },
+      {
+        "id": "c",
+        "text": "obra das mãos do oleiro!"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+    "feedbackCorrect": "Ouro puro primeiro; depois barro e a obra do oleiro.",
+    "feedbackWrong": {
+      "default": "Comece pelos filhos como ouro; o oleiro fecha."
+    },
+    "hint": "O versículo começa pelos nobres filhos.",
+    "learningObjective": "Reconhecer a sequência de 4:2.",
+    "evidence": [
+      "Lamentações 4:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lamentações 4:2, a que os filhos de Sião agora são comparados?",
+    "prompt": "Em Lamentações 4:2, a que os filhos de Sião agora são comparados?",
+    "cue": "Em Lamentações 4:2, a que os filhos de Sião agora são comparados?",
+    "verseRef": "Lamentações 4:2",
+    "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "template": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de ___, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "a",
+        "text": "prata"
+      },
+      {
+        "id": "b",
+        "text": "barro"
+      },
+      {
+        "id": "c",
+        "text": "cedro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+    "feedbackCorrect": "Agora são tidos como objetos de barro.",
+    "feedbackWrong": {
+      "a": "O contraste é com ouro puro, agora barro.",
+      "c": "\"Cedro\" não aparece em 4:2."
+    },
+    "hint": "Veja a comparação após \"objetos de\".",
+    "learningObjective": "Lembrar a imagem do barro.",
+    "evidence": [
+      "Lamentações 4:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 4:1 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 4:1 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 4:1 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 4:1",
+    "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!",
+    "passageA": {
+      "ref": "Lamentações 4:1",
+      "text": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A glória da cidade escureceu; o precioso virou ruína."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouro que aumenta"
+      },
+      {
+        "id": "b",
+        "text": "Brilho eterno intacto"
+      },
+      {
+        "id": "c",
+        "text": "Glória que se perde"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Como se escureceu o ouro!",
+    "feedbackCorrect": "O ouro escurecido resume a glória perdida.",
+    "feedbackWrong": {
+      "a": "O ouro se altera e escurece.",
+      "b": "O texto mostra escurecimento, não brilho intacto."
+    },
+    "hint": "Veja o que acontece ao ouro.",
+    "learningObjective": "Ligar 4:1 à perda da glória.",
+    "evidence": [
+      "Lamentações 4:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lamentações 4:2, os filhos de Sião permanecem tidos como ouro puro, sem qualquer mudança.",
+    "prompt": "Em Lamentações 4:2, os filhos de Sião permanecem tidos como ouro puro, sem qualquer mudança.",
+    "cue": "Em Lamentações 4:2, os filhos de Sião permanecem tidos como ouro puro, sem qualquer mudança.",
+    "verseRef": "Lamentações 4:2",
+    "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+    "feedbackCorrect": "O \"agora\" marca a inversão: de ouro puro a barro.",
+    "feedbackWrong": {
+      "true": "Releia 4:2: agora são tidos como objetos de barro."
+    },
+    "hint": "Repare na palavra que marca a mudança.",
+    "learningObjective": "Compreender o contraste ouro–barro.",
+    "evidence": [
+      "Lamentações 4:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+    "prompt": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+    "cue": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+    "verseRef": "Lamentações 4:3",
+    "passageText": "Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "deserto"
+      },
+      {
+        "id": "b",
+        "text": "peito"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas a filha do meu povo tornou-se cruel",
+    "feedbackCorrect": "\"Mas\" vira a cena: chacais amamentam; o povo tornou-se cruel.",
+    "feedbackWrong": {
+      "a": "\"Deserto\" fecha a comparação, não marca o contraste.",
+      "b": "\"Peito\" descreve os chacais, não o contraste."
+    },
+    "hint": "Procure a palavra curta no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 4:3.",
+    "evidence": [
+      "Lamentações 4:3"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lamentações 4:1–6 liga a glória perdida à maldade do povo?",
+    "prompt": "Como Lamentações 4:1–6 liga a glória perdida à maldade do povo?",
+    "cue": "Como Lamentações 4:1–6 liga a glória perdida à maldade do povo?",
+    "verseRef": "Lamentações 4:6",
+    "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O escurecimento aponta para maldade maior que a de Sodoma"
+      },
+      {
+        "id": "b",
+        "text": "A glória caiu sem qualquer relação com pecado"
+      },
+      {
+        "id": "c",
+        "text": "O ouro escureceu por causa de chuva apenas"
+      },
+      {
+        "id": "d",
+        "text": "Sodoma foi pior e Sião ficou inocente"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A maldade da filha do meu povo é maior do que o pecado de Sodoma",
+    "feedbackCorrect": "A ruína do ouro caminha com a maldade confessada em 4:6.",
+    "feedbackWrong": {
+      "b": "4:6 liga a ruína à maldade do povo.",
+      "c": "A imagem é moral e histórica, não climática.",
+      "d": "O texto diz que a maldade é maior que a de Sodoma."
+    },
+    "hint": "Ligue 4:1–2 ao juízo de 4:6.",
+    "learningObjective": "Relacionar glória perdida e maldade.",
+    "evidence": [
+      "Lamentações 4:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move Lamentações 4:1–11?",
+    "prompt": "Como se move Lamentações 4:1–11?",
+    "cue": "Como se move Lamentações 4:1–11?",
+    "verseRef": "Lamentações 4:1–2",
+    "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ouro escurecido e filhos como barro"
+      },
+      {
+        "id": "b",
+        "text": "Fome das crianças e queda dos ricos"
+      },
+      {
+        "id": "c",
+        "text": "Ira cumprida e fogo em Sião"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Como se escureceu o ouro!",
+    "feedbackCorrect": "Da glória perdida à fome, até a ira cumprida.",
+    "feedbackWrong": {
+      "default": "Comece pelo ouro; o fogo fecha."
+    },
+    "hint": "A ira cumprida vem no fim do trecho.",
+    "learningObjective": "Seguir o movimento até a ira cumprida.",
+    "evidence": [
+      "Lamentações 4:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lamentações 4:2, que palavra marca a mudança do ouro puro ao barro?",
+    "prompt": "Em Lamentações 4:2, que palavra marca a mudança do ouro puro ao barro?",
+    "cue": "Em Lamentações 4:2, que palavra marca a mudança do ouro puro ao barro?",
+    "verseRef": "Lamentações 4:2",
+    "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "template": "Os nobres filhos de Sião, comparáveis a ouro puro, ___ são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "a",
+        "text": "agora"
+      },
+      {
+        "id": "b",
+        "text": "sempre"
+      },
+      {
+        "id": "c",
+        "text": "jamais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "agora são tidos como objetos de barro",
+    "feedbackCorrect": "\"Agora\" marca a inversão da condição.",
+    "feedbackWrong": {
+      "b": "O texto usa \"agora\", não \"sempre\".",
+      "c": "\"Jamais\" não aparece em 4:2."
+    },
+    "hint": "Procure o advérbio antes de \"são tidos\".",
+    "learningObjective": "Lembrar o marcador da mudança.",
+    "evidence": [
+      "Lamentações 4:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lamentações 4:6 a Gênesis 19:24–25?",
+    "prompt": "O que liga Lamentações 4:6 a Gênesis 19:24–25?",
+    "cue": "O que liga Lamentações 4:6 a Gênesis 19:24–25?",
+    "verseRef": "Lamentações 4:6",
+    "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+    "passageA": {
+      "ref": "Lamentações 4:6",
+      "text": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse."
+    },
+    "passageB": {
+      "ref": "Gênesis 19:24–25",
+      "text": "Então, o Senhor fez chover enxofre e fogo, vindo do Senhor, sobre Sodoma e Gomorra. E devastou aquelas cidades, toda a planície e todos os habitantes daquelas cidades, e o que brotava da terra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Juízo comparado a Sodoma"
+      },
+      {
+        "id": "b",
+        "text": "Louvor à cidade antiga"
+      },
+      {
+        "id": "c",
+        "text": "Aliança com Sodoma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "maior do que o pecado de Sodoma",
+    "feedbackCorrect": "O texto compara a maldade do povo ao juízo de Sodoma.",
+    "feedbackWrong": {
+      "b": "O tom é de juízo, não de louvor.",
+      "c": "Não há aliança; há comparação de juízo."
+    },
+    "hint": "Compare a menção a Sodoma.",
+    "learningObjective": "Relacionar Lm 4:6 ao juízo de Gn 19.",
+    "evidence": [
+      "Lamentações 4:6",
+      "Gênesis 19:24–25"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lamentações 4:1–6, a ruína de Sião aparece desligada da maldade do povo.",
+    "prompt": "Em Lamentações 4:1–6, a ruína de Sião aparece desligada da maldade do povo.",
+    "cue": "Em Lamentações 4:1–6, a ruína de Sião aparece desligada da maldade do povo.",
+    "verseRef": "Lamentações 4:6",
+    "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "A maldade da filha do meu povo é maior do que o pecado de Sodoma",
+    "feedbackCorrect": "O texto liga a ruína à maldade maior que a de Sodoma.",
+    "feedbackWrong": {
+      "true": "Releia 4:6: a maldade do povo é maior que a de Sodoma."
+    },
+    "hint": "Veja a comparação com Sodoma.",
+    "learningObjective": "Interpretar a ruína como juízo ligado ao pecado.",
+    "evidence": [
+      "Lamentações 4:6"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 4:11, toque o trecho que sustenta o cumprimento da ira.",
+    "prompt": "Em Lamentações 4:11, toque o trecho que sustenta o cumprimento da ira.",
+    "cue": "Em Lamentações 4:11, toque o trecho que sustenta o cumprimento da ira.",
+    "verseRef": "Lamentações 4:11",
+    "passageText": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sua indignação"
+      },
+      {
+        "id": "b",
+        "text": "um fogo"
+      },
+      {
+        "id": "c",
+        "text": "fundamentos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Senhor cumpriu a sua indignação",
+    "feedbackCorrect": "\"Sua indignação\" é o que o Senhor cumpriu.",
+    "feedbackWrong": {
+      "b": "O fogo é o meio; a indignação é o que se cumpre.",
+      "c": "Os fundamentos são o que o fogo consome."
+    },
+    "hint": "Procure o objeto de \"cumpriu\".",
+    "learningObjective": "Sustentar com o texto o cumprimento da ira.",
+    "evidence": [
+      "Lamentações 4:11"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lamentações 4:1–11 sustenta sobre a glória de Sião?",
+    "prompt": "Que leitura Lamentações 4:1–11 sustenta sobre a glória de Sião?",
+    "cue": "Que leitura Lamentações 4:1–11 sustenta sobre a glória de Sião?",
+    "verseRef": "Lamentações 4:1–2",
+    "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "a",
+        "text": "A fome prova a inocência da cidade"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor não cumpriu nenhuma ira sobre Sião"
+      },
+      {
+        "id": "c",
+        "text": "O pecado muda a glória em desolação e fome"
+      },
+      {
+        "id": "d",
+        "text": "A glória permanece intacta apesar do pecado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Como se escureceu o ouro!",
+    "feedbackCorrect": "Ouro escurecido, fome e ira cumprida: glória virada ruína.",
+    "feedbackWrong": {
+      "a": "4:6 liga a ruína à maldade.",
+      "b": "4:11 diz que o Senhor cumpriu a indignação.",
+      "d": "4:1–2 mostram a glória invertida."
+    },
+    "hint": "Una o ouro escurecido à ira de 4:11.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lamentações 4:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o custo do pecado na Escritura?",
+    "prompt": "Qual sequência mostra o custo do pecado na Escritura?",
+    "cue": "Qual sequência mostra o custo do pecado na Escritura?",
+    "verseRef": "Lamentações 4:6",
+    "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião sofre juízo maior que o de Sodoma"
+      },
+      {
+        "id": "b",
+        "text": "A Torá alerta sobre a fome no cerco"
+      },
+      {
+        "id": "c",
+        "text": "Ezequiel descreve o horror em Jerusalém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "maior do que o pecado de Sodoma",
+    "feedbackCorrect": "De Lamentações à Torá e a Ezequiel, o custo aparece.",
+    "feedbackWrong": {
+      "default": "Siga: Lm 4:6, Dt 28:53 e Ez 5:10."
+    },
+    "hint": "Parta da comparação com Sodoma.",
+    "learningObjective": "Ver o custo do pecado no fio bíblico.",
+    "evidence": [
+      "Lamentações 4:6",
+      "Deuteronômio 28:53",
+      "Ezequiel 5:10"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lamentações 4:11, o Senhor derramou o quê da sua ira?",
+    "prompt": "Em Lamentações 4:11, o Senhor derramou o quê da sua ira?",
+    "cue": "Em Lamentações 4:11, o Senhor derramou o quê da sua ira?",
+    "verseRef": "Lamentações 4:11",
+    "passageText": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+    "template": "O Senhor cumpriu a sua indignação, derramou o ___ da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perfume"
+      },
+      {
+        "id": "b",
+        "text": "óleo"
+      },
+      {
+        "id": "c",
+        "text": "fervor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "derramou o fervor da sua ira",
+    "feedbackCorrect": "Derramou o fervor da sua ira.",
+    "feedbackWrong": {
+      "a": "O texto fala de fervor da ira, não de perfume.",
+      "b": "\"Óleo\" não aparece em 4:11."
+    },
+    "hint": "Veja o objeto de \"derramou\".",
+    "learningObjective": "Lembrar o termo que carrega a ira cumprida.",
+    "evidence": [
+      "Lamentações 4:11"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-04-ouro-escurecido",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lamentações 4:11 a Ezequiel 5:10?",
+    "prompt": "O que liga Lamentações 4:11 a Ezequiel 5:10?",
+    "cue": "O que liga Lamentações 4:11 a Ezequiel 5:10?",
+    "verseRef": "Lamentações 4:11",
+    "passageText": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+    "passageA": {
+      "ref": "Lamentações 4:11",
+      "text": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos."
+    },
+    "passageB": {
+      "ref": "Ezequiel 5:10",
+      "text": "Os pais devorarão seus filhos no meio de você, e os filhos devorarão seus pais; executarei juízos em você e espalharei todo o que restar de você a todos os ventos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Horror da fome em Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "Restauração imediata total"
+      },
+      {
+        "id": "c",
+        "text": "Festa sem qualquer juízo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "acendeu um fogo em Sião que consumiu seus fundamentos",
+    "feedbackCorrect": "Nos dois textos, Jerusalém sofre o horror do juízo.",
+    "feedbackWrong": {
+      "b": "O foco é o cumprimento da ira, não restauração imediata.",
+      "c": "Há juízo, não festa."
+    },
+    "hint": "Compare o juízo sobre a cidade.",
+    "learningObjective": "Ligar a ira cumprida ao juízo em Ezequiel.",
+    "evidence": [
+      "Lamentações 4:11",
+      "Ezequiel 5:10"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-05-lembra-te-senhor-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lamentações 5:1, o povo pede que o Senhor se lembre e olhe para a desonra.",
+    "prompt": "Em Lamentações 5:1, o povo pede que o Senhor se lembre e olhe para a desonra.",
+    "cue": "Em Lamentações 5:1, o povo pede que o Senhor se lembre e olhe para a desonra.",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra",
+    "feedbackCorrect": "O canto abre com clamor: lembra, considera e olha.",
+    "feedbackWrong": {
+      "false": "Releia 5:1: Lembra-te, considera e olha."
+    },
+    "hint": "Veja os três verbos do apelo.",
+    "learningObjective": "Observar o clamor inicial.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-05-lembra-te-senhor-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 5:2, toque o que foi entregue a estranhos.",
+    "prompt": "Em Lamentações 5:2, toque o que foi entregue a estranhos.",
+    "cue": "Em Lamentações 5:2, toque o que foi entregue a estranhos.",
+    "verseRef": "Lamentações 5:2",
+    "passageText": "A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estranhos"
+      },
+      {
+        "id": "b",
+        "text": "herança"
+      },
+      {
+        "id": "c",
+        "text": "estrangeiros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A nossa herança foi entregue a estranhos",
+    "feedbackCorrect": "A herança foi entregue a estranhos.",
+    "feedbackWrong": {
+      "a": "\"Estranhos\" são quem recebe, não o que se perde.",
+      "c": "\"Estrangeiros\" recebem as casas, não são o bem perdido."
+    },
+    "hint": "Procure o sujeito no começo do versículo.",
+    "learningObjective": "Identificar a herança perdida.",
+    "evidence": [
+      "Lamentações 5:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-05-lembra-te-senhor-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lamentações 5:4, como o povo obtém água e lenha?",
+    "prompt": "Segundo Lamentações 5:4, como o povo obtém água e lenha?",
+    "cue": "Segundo Lamentações 5:4, como o povo obtém água e lenha?",
+    "verseRef": "Lamentações 5:4",
+    "passageText": "A nossa água bebemos por preço e a nossa lenha vem a custo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só com milagres sem esforço"
+      },
+      {
+        "id": "b",
+        "text": "Água por preço e lenha a custo"
+      },
+      {
+        "id": "c",
+        "text": "Já não precisam de água nem lenha"
+      },
+      {
+        "id": "d",
+        "text": "De graça, como nos dias antigos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A nossa água bebemos por preço e a nossa lenha vem a custo",
+    "feedbackCorrect": "Até o básico agora custa: água e lenha.",
+    "feedbackWrong": {
+      "a": "Há preço e custo, não milagre fácil.",
+      "c": "Eles ainda bebem e buscam lenha, com custo.",
+      "d": "O texto diz por preço e a custo."
+    },
+    "hint": "Leia as duas cláusulas do versículo.",
+    "learningObjective": "Observar o custo da sobrevivência.",
+    "evidence": [
+      "Lamentações 5:4"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-05-lembra-te-senhor-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 5:1 na ordem do texto.",
+    "prompt": "Monte Lamentações 5:1 na ordem do texto.",
+    "cue": "Monte Lamentações 5:1 na ordem do texto.",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lembra-te, Senhor, do que nos tem sucedido"
+      },
+      {
+        "id": "b",
+        "text": "considera e olha"
+      },
+      {
+        "id": "c",
+        "text": "para a nossa desonra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra",
+    "feedbackCorrect": "Lembra; considera e olha; a desonra.",
+    "feedbackWrong": {
+      "default": "Comece por Lembra-te; a desonra fecha."
+    },
+    "hint": "O versículo abre com o apelo Lembra-te.",
+    "learningObjective": "Reconhecer a sequência de 5:1.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-05-lembra-te-senhor-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lamentações 5:3, como o povo se descreve no começo do versículo?",
+    "prompt": "Em Lamentações 5:3, como o povo se descreve no começo do versículo?",
+    "cue": "Em Lamentações 5:3, como o povo se descreve no começo do versículo?",
+    "verseRef": "Lamentações 5:3",
+    "passageText": "Órfãos somos, já não temos pai; nossas mães são como viúvas.",
+    "template": "___ somos, já não temos pai; nossas mães são como viúvas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sacerdotes"
+      },
+      {
+        "id": "b",
+        "text": "reis"
+      },
+      {
+        "id": "c",
+        "text": "Órfãos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Órfãos somos, já não temos pai",
+    "feedbackCorrect": "Abrém dizendo: Órfãos somos.",
+    "feedbackWrong": {
+      "a": "\"Sacerdotes\" não aparece em 5:3.",
+      "b": "O texto diz órfãos, não reis."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Lembrar a condição confessada do povo.",
+    "evidence": [
+      "Lamentações 5:3"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-05-lembra-te-senhor-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 5:1 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 5:1 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 5:1 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "passageA": {
+      "ref": "Lamentações 5:1",
+      "text": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Na ruína, o povo ainda se volta ao Senhor com clamor sincero."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamor na desonra"
+      },
+      {
+        "id": "b",
+        "text": "Orgulho sem pedido"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem oração"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "O clamor abre o canto: ainda há apelo ao Senhor.",
+    "feedbackWrong": {
+      "b": "Há pedido humilde, não orgulho.",
+      "c": "Há clamor explícito, não silêncio."
+    },
+    "hint": "Veja o primeiro verbo do versículo.",
+    "learningObjective": "Ligar 5:1 ao clamor na ruína.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-05-lembra-te-senhor-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lamentações 5:2, a herança e as casas permanecem com o povo, sem entrega a estranhos.",
+    "prompt": "Em Lamentações 5:2, a herança e as casas permanecem com o povo, sem entrega a estranhos.",
+    "cue": "Em Lamentações 5:2, a herança e as casas permanecem com o povo, sem entrega a estranhos.",
+    "verseRef": "Lamentações 5:2",
+    "passageText": "A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros",
+    "feedbackCorrect": "Herança e casas foram entregues a estranhos e estrangeiros.",
+    "feedbackWrong": {
+      "true": "Releia 5:2: herança a estranhos; casas a estrangeiros."
+    },
+    "hint": "Veja a quem foram entregues herança e casas.",
+    "learningObjective": "Compreender a perda da herança.",
+    "evidence": [
+      "Lamentações 5:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-05-lembra-te-senhor-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 5:9, toque o trecho que marca a razão do risco ao buscar pão.",
+    "prompt": "Em Lamentações 5:9, toque o trecho que marca a razão do risco ao buscar pão.",
+    "cue": "Em Lamentações 5:9, toque o trecho que marca a razão do risco ao buscar pão.",
+    "verseRef": "Lamentações 5:9",
+    "passageText": "Com risco de nossas vidas, providenciamos nosso pão, em razão da espada do deserto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "em razão"
+      },
+      {
+        "id": "b",
+        "text": "nossas vidas"
+      },
+      {
+        "id": "c",
+        "text": "nosso pão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "em razão da espada do deserto",
+    "feedbackCorrect": "\"Em razão\" introduz a causa: a espada do deserto.",
+    "feedbackWrong": {
+      "b": "\"Nossas vidas\" é o que está em risco, não o marcador.",
+      "c": "\"Nosso pão\" é o que buscam, não a razão."
+    },
+    "hint": "Procure a expressão que introduz a causa.",
+    "learningObjective": "Reconhecer o marcador de causa em 5:9.",
+    "evidence": [
+      "Lamentações 5:9"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-05-lembra-te-senhor-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lamentações 5:1–5 liga o clamor à condição do povo?",
+    "prompt": "Como Lamentações 5:1–5 liga o clamor à condição do povo?",
+    "cue": "Como Lamentações 5:1–5 liga o clamor à condição do povo?",
+    "verseRef": "Lamentações 5:1–2",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O clamor celebra a herança intacta"
+      },
+      {
+        "id": "b",
+        "text": "Não há relação entre oração e ruína"
+      },
+      {
+        "id": "c",
+        "text": "O clamor nasce da desonra e da perda da herança"
+      },
+      {
+        "id": "d",
+        "text": "O povo clama porque já descansa em paz"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "considera e olha para a nossa desonra",
+    "feedbackCorrect": "Pedem que o Senhor veja a desonra; a herança já foi entregue.",
+    "feedbackWrong": {
+      "a": "5:2 mostra herança perdida.",
+      "b": "5:1–2 unem clamor e perda.",
+      "d": "5:5 diz que não têm descanso."
+    },
+    "hint": "Ligue o apelo de 5:1 à perda de 5:2.",
+    "learningObjective": "Relacionar clamor e ruína.",
+    "evidence": [
+      "Lamentações 5:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-05-lembra-te-senhor-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança Lamentações 5:1–12?",
+    "prompt": "Como avança Lamentações 5:1–12?",
+    "cue": "Como avança Lamentações 5:1–12?",
+    "verseRef": "Lamentações 5:1–2",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamor: lembra e olha a desonra"
+      },
+      {
+        "id": "b",
+        "text": "Herança e casas perdidas"
+      },
+      {
+        "id": "c",
+        "text": "Domínio dos servos e opróbrio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "Do clamor à perda, até o domínio opressor.",
+    "feedbackWrong": {
+      "default": "Comece pelo clamor; o domínio fecha."
+    },
+    "hint": "O canto abre com Lembra-te.",
+    "learningObjective": "Seguir o movimento do clamor à opressão.",
+    "evidence": [
+      "Lamentações 5:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-05-lembra-te-senhor-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lamentações 5:5, o que o povo diz que não tem?",
+    "prompt": "Em Lamentações 5:5, o que o povo diz que não tem?",
+    "cue": "Em Lamentações 5:5, o que o povo diz que não tem?",
+    "verseRef": "Lamentações 5:5",
+    "passageText": "Sofremos perseguição como um peso sobre nós; estamos exaustos e não temos descanso.",
+    "template": "Sofremos perseguição como um peso sobre nós; estamos exaustos e não temos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "perseguição"
+      },
+      {
+        "id": "b",
+        "text": "peso"
+      },
+      {
+        "id": "c",
+        "text": "descanso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "estamos exaustos e não temos descanso",
+    "feedbackCorrect": "Estão exaustos e não têm descanso.",
+    "feedbackWrong": {
+      "a": "Há perseguição; o que falta é descanso.",
+      "b": "Há peso sobre eles; o que falta é descanso."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Lembrar a ausência de descanso.",
+    "evidence": [
+      "Lamentações 5:5"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-05-lembra-te-senhor-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lamentações 5:1 a Salmos 74:2?",
+    "prompt": "O que liga Lamentações 5:1 a Salmos 74:2?",
+    "cue": "O que liga Lamentações 5:1 a Salmos 74:2?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "passageA": {
+      "ref": "Lamentações 5:1",
+      "text": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra."
+    },
+    "passageB": {
+      "ref": "Salmos 74:2",
+      "text": "Lembra-te da tua congregação, que adquiriste desde a antiguidade, da tribo da tua herança que remiste; lembra-te do monte Sião, onde habitaste."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lembra-te da tua herança"
+      },
+      {
+        "id": "b",
+        "text": "Esquece o teu povo"
+      },
+      {
+        "id": "c",
+        "text": "Celebra a ruína alegre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "Nos dois textos, o povo pede: Lembra-te.",
+    "feedbackWrong": {
+      "b": "Ambos pedem lembrança, não esquecimento.",
+      "c": "O tom é de clamor, não de celebração."
+    },
+    "hint": "Compare o verbo do apelo.",
+    "learningObjective": "Relacionar o Lembra-te de Lm e do Salmo.",
+    "evidence": [
+      "Lamentações 5:1",
+      "Salmos 74:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-05-lembra-te-senhor-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lamentações 5:1–8, mesmo na ruína o povo ainda se volta ao Senhor com clamor, sem fingir que nada se perdeu.",
+    "prompt": "Em Lamentações 5:1–8, mesmo na ruína o povo ainda se volta ao Senhor com clamor, sem fingir que nada se perdeu.",
+    "cue": "Em Lamentações 5:1–8, mesmo na ruína o povo ainda se volta ao Senhor com clamor, sem fingir que nada se perdeu.",
+    "verseRef": "Lamentações 5:1–2",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "Há clamor sincero e descrição clara da perda.",
+    "feedbackWrong": {
+      "false": "5:1 clama; 5:2 descreve herança e casas perdidas."
+    },
+    "hint": "Una o apelo de 5:1 à perda de 5:2.",
+    "learningObjective": "Interpretar o clamor sincero na ruína.",
+    "evidence": [
+      "Lamentações 5:1–2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-05-lembra-te-senhor-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 5:1, toque o trecho que sustenta o pedido para o Senhor ver a vergonha do povo.",
+    "prompt": "Em Lamentações 5:1, toque o trecho que sustenta o pedido para o Senhor ver a vergonha do povo.",
+    "cue": "Em Lamentações 5:1, toque o trecho que sustenta o pedido para o Senhor ver a vergonha do povo.",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sucedido"
+      },
+      {
+        "id": "b",
+        "text": "desonra"
+      },
+      {
+        "id": "c",
+        "text": "nossa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "considera e olha para a nossa desonra",
+    "feedbackCorrect": "\"Desonra\" é o que pedem que o Senhor veja.",
+    "feedbackWrong": {
+      "a": "\"Sucedido\" resume os fatos; o pedido final aponta a desonra.",
+      "c": "\"Nossa\" apenas possui a desonra."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Sustentar com o texto o pedido sobre a desonra.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-05-lembra-te-senhor-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Lamentações 5:1–12 sustenta sobre a ruína?",
+    "prompt": "Que leitura Lamentações 5:1–12 sustenta sobre a ruína?",
+    "cue": "Que leitura Lamentações 5:1–12 sustenta sobre a ruína?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A ruína prova que orar não faz sentido"
+      },
+      {
+        "id": "b",
+        "text": "O povo já descansa livre sob bons senhores"
+      },
+      {
+        "id": "c",
+        "text": "Nada se perdeu; só há exagero poético"
+      },
+      {
+        "id": "d",
+        "text": "Na ruína ainda há clamor sincero ao Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "O canto começa e segue com clamor diante da perda real.",
+    "feedbackWrong": {
+      "a": "O texto modela o clamor, não o abandono da oração.",
+      "b": "5:5 e 5:8 negam descanso e liberdade.",
+      "c": "5:2–8 descrevem perdas concretas."
+    },
+    "hint": "Compare cada opção com 5:1 e 5:2.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-05-lembra-te-senhor-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra clamor na desonra na Escritura?",
+    "prompt": "Qual sequência mostra clamor na desonra na Escritura?",
+    "cue": "Qual sequência mostra clamor na desonra na Escritura?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O povo pede: Lembra-te, Senhor"
+      },
+      {
+        "id": "b",
+        "text": "O Salmo pede lembrança da herança"
+      },
+      {
+        "id": "c",
+        "text": "Isaías apela ao Senhor que vê"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "De Lamentações ao Salmo e a Isaías, o clamor ecoa.",
+    "feedbackWrong": {
+      "default": "Siga: Lm 5:1, Sl 74:2 e Is 63:15–16."
+    },
+    "hint": "Parta do Lembra-te de Lamentações.",
+    "learningObjective": "Ver o clamor na desonra no fio bíblico.",
+    "evidence": [
+      "Lamentações 5:1",
+      "Salmos 74:2",
+      "Isaías 63:15–16"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-05-lembra-te-senhor-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+    "prompt": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+    "cue": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "template": "___, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquece"
+      },
+      {
+        "id": "b",
+        "text": "Afasta-te"
+      },
+      {
+        "id": "c",
+        "text": "Lembra-te"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "O clamor abre com Lembra-te.",
+    "feedbackWrong": {
+      "a": "O verbo é Lembra-te, não Esquece.",
+      "b": "Há apelo de proximidade, não afastamento."
+    },
+    "hint": "É a primeira palavra do capítulo.",
+    "learningObjective": "Lembrar o verbo teológico do clamor.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-05-lembra-te-senhor-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-05-lembra-te-senhor",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lamentações 5:1 a Salmos 79:8–9?",
+    "prompt": "O que liga Lamentações 5:1 a Salmos 79:8–9?",
+    "cue": "O que liga Lamentações 5:1 a Salmos 79:8–9?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "passageA": {
+      "ref": "Lamentações 5:1",
+      "text": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra."
+    },
+    "passageB": {
+      "ref": "Salmos 79:8–9",
+      "text": "Não te lembres das iniquidades de nossos pais; apressem-se ao nosso encontro as tuas misericórdias, pois estamos sobremodo abatidos. Ajuda-nos, ó Deus e Salvador nosso, pela glória do teu nome; livra-nos e perdoa os nossos pecados, por amor do teu nome."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Clamor na desonra do povo"
+      },
+      {
+        "id": "b",
+        "text": "Orgulho na vitória militar"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem qualquer pedido"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "considera e olha para a nossa desonra",
+    "feedbackCorrect": "Nos dois textos, o povo clama na desonra.",
+    "feedbackWrong": {
+      "b": "O tom é de desonra, não de vitória.",
+      "c": "Há clamor explícito nos dois."
+    },
+    "hint": "Compare o pedido diante da desonra.",
+    "learningObjective": "Ligar o clamor de Lm ao do Salmo 79.",
+    "evidence": [
+      "Lamentações 5:1",
+      "Salmos 79:8–9"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+    "prompt": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+    "cue": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+    "verseRef": "Lamentações 3:31",
+    "passageText": "Pois o Senhor não rejeitará para sempre.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "A esperança da etapa: a rejeição não é definitiva.",
+    "feedbackWrong": {
+      "false": "Releia 3:31: o Senhor não rejeitará para sempre."
+    },
+    "hint": "Leia o versículo inteiro.",
+    "learningObjective": "Observar a esperança de não rejeição final.",
+    "evidence": [
+      "Lamentações 3:31"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 1:18, toque quem a cidade chama de justo.",
+    "prompt": "Em Lamentações 1:18, toque quem a cidade chama de justo.",
+    "cue": "Em Lamentações 1:18, toque quem a cidade chama de justo.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "os povos"
+      },
+      {
+        "id": "b",
+        "text": "o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "o cativeiro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor",
+    "feedbackCorrect": "A confissão abre: Justo é o Senhor.",
+    "feedbackWrong": {
+      "a": "Os povos são chamados a ouvir, não chamados de justos.",
+      "c": "O cativeiro é o resultado, não quem é justo."
+    },
+    "hint": "Veja o sujeito após \"Justo é\".",
+    "learningObjective": "Identificar a confissão sobre o Senhor.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Lamentações 2:7, o que o Senhor fez ao altar e ao santuário?",
+    "prompt": "Segundo Lamentações 2:7, o que o Senhor fez ao altar e ao santuário?",
+    "cue": "Segundo Lamentações 2:7, o que o Senhor fez ao altar e ao santuário?",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rejeitou o altar e abominou o santuário"
+      },
+      {
+        "id": "b",
+        "text": "Exaltou o altar acima das nações"
+      },
+      {
+        "id": "c",
+        "text": "Entregou o altar aos sacerdotes fiéis"
+      },
+      {
+        "id": "d",
+        "text": "Protegeu o santuário de qualquer dano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+    "feedbackCorrect": "Até o culto cai sob a ira do Senhor.",
+    "feedbackWrong": {
+      "b": "O texto fala de rejeição, não de exaltação.",
+      "c": "Há rejeição e entrega aos inimigos.",
+      "d": "O santuário é abominado, não protegido."
+    },
+    "hint": "Leia os dois primeiros verbos.",
+    "learningObjective": "Observar a rejeição do santuário.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 4:2 na ordem do texto.",
+    "prompt": "Monte Lamentações 4:2 na ordem do texto.",
+    "cue": "Monte Lamentações 4:2 na ordem do texto.",
+    "verseRef": "Lamentações 4:2",
+    "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os nobres filhos de Sião, comparáveis a ouro puro"
+      },
+      {
+        "id": "b",
+        "text": "agora são tidos como objetos de barro"
+      },
+      {
+        "id": "c",
+        "text": "obra das mãos do oleiro!"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+    "feedbackCorrect": "Do ouro puro ao barro e à obra do oleiro.",
+    "feedbackWrong": {
+      "default": "Comece pelos filhos como ouro; o oleiro fecha."
+    },
+    "hint": "O versículo começa pelos nobres filhos.",
+    "learningObjective": "Reconhecer a sequência de 4:2.",
+    "evidence": [
+      "Lamentações 4:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+    "prompt": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+    "cue": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "template": "___, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esquece"
+      },
+      {
+        "id": "b",
+        "text": "Lembra-te"
+      },
+      {
+        "id": "c",
+        "text": "Afasta-te"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "O clamor abre com Lembra-te.",
+    "feedbackWrong": {
+      "a": "O verbo é Lembra-te, não Esquece.",
+      "c": "Há apelo de proximidade, não afastamento."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Lembrar o verbo do clamor.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+    "prompt": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+    "cue": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "passageA": {
+      "ref": "Lamentações 1:18",
+      "text": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A etapa começa com confissão: o Senhor é justo; a cidade se rebelou."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Orgulho sem arrependimento"
+      },
+      {
+        "id": "b",
+        "text": "Confissão na disciplina"
+      },
+      {
+        "id": "c",
+        "text": "Negação total da culpa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "A confissão une justiça do Senhor e rebelião da cidade.",
+    "feedbackWrong": {
+      "a": "O tom é de confissão, não de orgulho.",
+      "c": "Há confissão explícita de rebelião."
+    },
+    "hint": "Veja o que a cidade admite após chamar o Senhor de justo.",
+    "learningObjective": "Ligar 1:18 à confissão da etapa.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-07",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Lamentações 4:1, toque o que se escureceu.",
+    "prompt": "Em Lamentações 4:1, toque o que se escureceu.",
+    "cue": "Em Lamentações 4:1, toque o que se escureceu.",
+    "verseRef": "Lamentações 4:1",
+    "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!",
+    "options": [
+      {
+        "id": "a",
+        "text": "as ruas"
+      },
+      {
+        "id": "b",
+        "text": "o ouro"
+      },
+      {
+        "id": "c",
+        "text": "as pedras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Como se escureceu o ouro!",
+    "feedbackCorrect": "O ouro se escureceu: imagem da glória perdida.",
+    "feedbackWrong": {
+      "a": "As ruas recebem as pedras; o que escurece é o ouro.",
+      "c": "As pedras estão espalhadas; o que escurece é o ouro."
+    },
+    "hint": "Leia a primeira exclamação.",
+    "learningObjective": "Identificar o ouro escurecido.",
+    "evidence": [
+      "Lamentações 4:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-sem-lmc-boss-1-08",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Lamentações 3:32 na ordem do texto.",
+    "prompt": "Monte Lamentações 3:32 na ordem do texto.",
+    "cue": "Monte Lamentações 3:32 na ordem do texto.",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Antes, se ele entristecer a alguém"
+      },
+      {
+        "id": "b",
+        "text": "usará de compaixão"
+      },
+      {
+        "id": "c",
+        "text": "conforme a grandeza das suas misericórdias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Entristecer; compaixão; misericórdias.",
+    "feedbackWrong": {
+      "default": "Comece pelo entristecer; as misericórdias fecham."
+    },
+    "hint": "O versículo abre com \"Antes\".",
+    "learningObjective": "Reconhecer a sequência de 3:32.",
+    "evidence": [
+      "Lamentações 3:32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+    "prompt": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+    "cue": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+    "verseRef": "Lamentações 2:5",
+    "passageText": "O Senhor se tornou como um inimigo; devorou Israel, arrasou todos os seus palácios, destruiu suas fortalezas e multiplicou na filha de Judá o pranto e a lamentação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel",
+    "feedbackCorrect": "O texto compara o Senhor a um inimigo que devora Israel.",
+    "feedbackWrong": {
+      "true": "Releia 2:5: o Senhor se tornou como um inimigo."
+    },
+    "hint": "Veja a comparação no início do versículo.",
+    "learningObjective": "Compreender a comparação com inimigo.",
+    "evidence": [
+      "Lamentações 2:5"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+    "prompt": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+    "cue": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pois"
+      },
+      {
+        "id": "b",
+        "text": "Justo"
+      },
+      {
+        "id": "c",
+        "text": "cativeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei",
+    "feedbackCorrect": "\"Pois\" introduz a causa: a rebelião confessada.",
+    "feedbackWrong": {
+      "b": "\"Justo\" é o atributo; a ligação causal vem depois.",
+      "c": "\"Cativeiro\" é o resultado final, não o marcador."
+    },
+    "hint": "Procure a palavra curta entre as duas cláusulas.",
+    "learningObjective": "Reconhecer o marcador de causa em 1:18.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Lamentações 3:31–32 relaciona disciplina e misericórdia?",
+    "prompt": "Como Lamentações 3:31–32 relaciona disciplina e misericórdia?",
+    "cue": "Como Lamentações 3:31–32 relaciona disciplina e misericórdia?",
+    "verseRef": "Lamentações 3:31–32",
+    "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aflige de bom grado e sem medida"
+      },
+      {
+        "id": "b",
+        "text": "Nunca disciplina; só consola"
+      },
+      {
+        "id": "c",
+        "text": "Rejeita para sempre sem qualquer compaixão"
+      },
+      {
+        "id": "d",
+        "text": "Entristece, mas se compadece segundo suas misericórdias"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Há disciplina, mas também compaixão segundo as misericórdias.",
+    "feedbackWrong": {
+      "a": "3:33 nega afligir de bom grado.",
+      "b": "Há entristecer; não é só consolo.",
+      "c": "3:31 nega rejeição definitiva."
+    },
+    "hint": "Leia o movimento de 3:31–32.",
+    "learningObjective": "Relacionar disciplina e misericórdia.",
+    "evidence": [
+      "Lamentações 3:31–32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move a etapa da cidade caída?",
+    "prompt": "Como se move a etapa da cidade caída?",
+    "cue": "Como se move a etapa da cidade caída?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confissão da justiça do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Ira que atinge até o santuário"
+      },
+      {
+        "id": "c",
+        "text": "Esperança nas misericórdias e clamor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "Da confissão à ira, até a misericórdia e o clamor.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão; o clamor fecha a etapa."
+    },
+    "hint": "Siga a ordem das cenas da etapa.",
+    "learningObjective": "Seguir o arco da etapa.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+    "prompt": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+    "cue": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "template": "Antes, se ele entristecer a alguém, usará de ___, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "indiferença"
+      },
+      {
+        "id": "b",
+        "text": "compaixão"
+      },
+      {
+        "id": "c",
+        "text": "vingança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Após entristecer, usará de compaixão.",
+    "feedbackWrong": {
+      "a": "Há compaixão ativa, não indiferença.",
+      "c": "O texto fala de compaixão, não de vingança."
+    },
+    "hint": "Veja o que segue a \"usará de\".",
+    "learningObjective": "Lembrar a palavra da resposta divina.",
+    "evidence": [
+      "Lamentações 3:32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Lamentações 3:32 a Salmos 103:8?",
+    "prompt": "O que liga Lamentações 3:32 a Salmos 103:8?",
+    "cue": "O que liga Lamentações 3:32 a Salmos 103:8?",
+    "verseRef": "Lamentações 3:32",
+    "passageText": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "passageA": {
+      "ref": "Lamentações 3:32",
+      "text": "Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias."
+    },
+    "passageB": {
+      "ref": "Salmos 103:8",
+      "text": "O Senhor é misericordioso e compassivo; é longânimo e assaz benigno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência de piedade"
+      },
+      {
+        "id": "b",
+        "text": "Ira sem qualquer limite"
+      },
+      {
+        "id": "c",
+        "text": "Misericórdia e compaixão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conforme a grandeza das suas misericórdias",
+    "feedbackCorrect": "Nos dois textos, misericórdia e compaixão marcam o trato de Deus.",
+    "feedbackWrong": {
+      "a": "Há compaixão e misericórdias.",
+      "b": "Ambos destacam misericórdia, não ira sem limite."
+    },
+    "hint": "Compare o trato de Deus nos dois textos.",
+    "learningObjective": "Relacionar misericórdias em Lm e no Salmo.",
+    "evidence": [
+      "Lamentações 3:32",
+      "Salmos 103:8"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-07",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+    "prompt": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+    "cue": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+    "verseRef": "Lamentações 4:3",
+    "passageText": "Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto.",
+    "options": [
+      {
+        "id": "a",
+        "text": "peito"
+      },
+      {
+        "id": "b",
+        "text": "deserto"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas a filha do meu povo tornou-se cruel",
+    "feedbackCorrect": "\"Mas\" vira a cena: chacais amamentam; o povo tornou-se cruel.",
+    "feedbackWrong": {
+      "a": "\"Peito\" descreve os chacais, não o contraste.",
+      "b": "\"Deserto\" fecha a comparação, não marca o contraste."
+    },
+    "hint": "Procure a palavra curta no meio do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 4:3.",
+    "evidence": [
+      "Lamentações 4:3"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-cam-lmc-boss-1-08",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam confissão e esperança na etapa?",
+    "prompt": "Como se encadeiam confissão e esperança na etapa?",
+    "cue": "Como se encadeiam confissão e esperança na etapa?",
+    "verseRef": "Lamentações 3:31–32",
+    "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade confessa a justiça do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "O santuário cai sob a ira"
+      },
+      {
+        "id": "c",
+        "text": "Surge a esperança nas misericórdias"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "Confissão, juízo e então esperança.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão; a esperança fecha."
+    },
+    "hint": "A esperança de 3:31 vem depois da ira.",
+    "learningObjective": "Relacionar confissão, ira e esperança.",
+    "evidence": [
+      "Lamentações 3:31–32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-01",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Lamentações 1:18 e 3:31–32, a etapa ensina rejeição definitiva sem espaço para confissão ou misericórdia.",
+    "prompt": "Em Lamentações 1:18 e 3:31–32, a etapa ensina rejeição definitiva sem espaço para confissão ou misericórdia.",
+    "cue": "Em Lamentações 1:18 e 3:31–32, a etapa ensina rejeição definitiva sem espaço para confissão ou misericórdia.",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "Há confissão e a promessa de que não rejeita para sempre.",
+    "feedbackWrong": {
+      "true": "Una 1:18 com 3:31–32: confissão e misericórdia."
+    },
+    "hint": "Compare a confissão de 1:18 com a esperança de 3:31.",
+    "learningObjective": "Interpretar a etapa como confissão e esperança.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-02",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 5:1, toque o trecho que sustenta o clamor na ruína.",
+    "prompt": "Em Lamentações 5:1, toque o trecho que sustenta o clamor na ruína.",
+    "cue": "Em Lamentações 5:1, toque o trecho que sustenta o clamor na ruína.",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sucedido"
+      },
+      {
+        "id": "b",
+        "text": "desonra"
+      },
+      {
+        "id": "c",
+        "text": "nossa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "considera e olha para a nossa desonra",
+    "feedbackCorrect": "\"Desonra\" é o que pedem que o Senhor veja.",
+    "feedbackWrong": {
+      "a": "\"Sucedido\" resume os fatos; o pedido final aponta a desonra.",
+      "c": "\"Nossa\" apenas possui a desonra."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Sustentar com o texto o clamor sobre a desonra.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-03",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a etapa sustenta sobre a cidade caída?",
+    "prompt": "Que leitura a etapa sustenta sobre a cidade caída?",
+    "cue": "Que leitura a etapa sustenta sobre a cidade caída?",
+    "verseRef": "Lamentações 3:31–32",
+    "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há confissão, juízo e ainda esperança no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "A cidade é inocente e o Senhor injusto"
+      },
+      {
+        "id": "c",
+        "text": "Na ruína não resta clamor algum"
+      },
+      {
+        "id": "d",
+        "text": "A disciplina é rejeição sem misericórdia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Senhor não rejeitará para sempre",
+    "feedbackCorrect": "Confissão, ira, misericórdia e clamor atravessam a etapa.",
+    "feedbackWrong": {
+      "b": "1:18 confessa a justiça do Senhor.",
+      "c": "5:1 abre com clamor.",
+      "d": "3:31–32 afirmam misericórdia."
+    },
+    "hint": "Una 1:18, 3:31 e 5:1.",
+    "learningObjective": "Escolher a interpretação do arco da etapa.",
+    "evidence": [
+      "Lamentações 3:31–32"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-04",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra confissão e misericórdia na Escritura?",
+    "prompt": "Qual sequência mostra confissão e misericórdia na Escritura?",
+    "cue": "Qual sequência mostra confissão e misericórdia na Escritura?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cidade confessa: o Senhor é justo"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor não rejeita para sempre"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo celebra misericórdia e compaixão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Justo é o Senhor",
+    "feedbackCorrect": "Da confissão à esperança e ao Salmo da misericórdia.",
+    "feedbackWrong": {
+      "default": "Siga: Lm 1:18, Lm 3:31 e Sl 103:8."
+    },
+    "hint": "Parta da confissão de 1:18.",
+    "learningObjective": "Ver confissão e misericórdia no fio bíblico.",
+    "evidence": [
+      "Lamentações 1:18",
+      "Lamentações 3:31",
+      "Salmos 103:8"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-05",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+    "prompt": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+    "cue": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+    "verseRef": "Lamentações 1:18",
+    "passageText": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "template": "___ é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cruel"
+      },
+      {
+        "id": "b",
+        "text": "Justo"
+      },
+      {
+        "id": "c",
+        "text": "Ausente"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+    "feedbackCorrect": "A confissão começa: Justo é o Senhor.",
+    "feedbackWrong": {
+      "a": "O texto não chama o Senhor de cruel.",
+      "c": "O texto afirma justiça, não ausência."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Lembrar o termo teológico da confissão.",
+    "evidence": [
+      "Lamentações 1:18"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-06",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Lamentações 5:1 a Salmos 74:2?",
+    "prompt": "O que liga Lamentações 5:1 a Salmos 74:2?",
+    "cue": "O que liga Lamentações 5:1 a Salmos 74:2?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "passageA": {
+      "ref": "Lamentações 5:1",
+      "text": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra."
+    },
+    "passageB": {
+      "ref": "Salmos 74:2",
+      "text": "Lembra-te da tua congregação, que adquiriste desde a antiguidade, da tribo da tua herança que remiste; lembra-te do monte Sião, onde habitaste."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Lembra-te da herança"
+      },
+      {
+        "id": "b",
+        "text": "Celebra a ruína alegre"
+      },
+      {
+        "id": "c",
+        "text": "Esquece o teu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "Nos dois textos, o povo pede: Lembra-te.",
+    "feedbackWrong": {
+      "b": "O tom é de clamor, não de celebração.",
+      "c": "Ambos pedem lembrança, não esquecimento."
+    },
+    "hint": "Compare o verbo do apelo.",
+    "learningObjective": "Ligar o Lembra-te de Lm ao do Salmo.",
+    "evidence": [
+      "Lamentações 5:1",
+      "Salmos 74:2"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-07",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+    "prompt": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+    "cue": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+    "verseRef": "Lamentações 2:7",
+    "passageText": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "seus castelos"
+      },
+      {
+        "id": "b",
+        "text": "seu santuário"
+      },
+      {
+        "id": "c",
+        "text": "dia de festa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "abominou o seu santuário",
+    "feedbackCorrect": "\"Seu santuário\" é o alvo abominado na disciplina.",
+    "feedbackWrong": {
+      "a": "Os castelos são entregues; o lugar santo é o santuário.",
+      "c": "\"Dia de festa\" é comparação dos gritos, não o alvo."
+    },
+    "hint": "Procure o objeto de \"abominou\".",
+    "learningObjective": "Sustentar com o texto a queda do santuário.",
+    "evidence": [
+      "Lamentações 2:7"
+    ]
+  },
+  {
+    "id": "lamentacoes-cap-pro-lmc-boss-1-08",
+    "trail": "lamentacoes-cap",
+    "section": "lmc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o arco da cidade caída até o clamor?",
+    "prompt": "Qual sequência revela o arco da cidade caída até o clamor?",
+    "cue": "Qual sequência revela o arco da cidade caída até o clamor?",
+    "verseRef": "Lamentações 5:1",
+    "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confissão: o Senhor é justo"
+      },
+      {
+        "id": "b",
+        "text": "Misericórdia: não rejeita para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Clamor: Lembra-te, Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+    "feedbackCorrect": "Confissão, misericórdia e clamor fecham a etapa.",
+    "feedbackWrong": {
+      "default": "Siga: confissão, misericórdia e clamor."
+    },
+    "hint": "O clamor de 5:1 é o ponto de chegada.",
+    "learningObjective": "Ver o arco completo da etapa.",
+    "evidence": [
+      "Lamentações 5:1"
+    ]
+  }
+]

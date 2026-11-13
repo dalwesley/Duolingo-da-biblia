@@ -1,0 +1,922 @@
+{
+  "study": {
+    "slug": "lmc-04-ouro-escurecido",
+    "passageRef": "Lamentações 4:1–6",
+    "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro! Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto. A língua da criança que mama fica grudada ao paladar por causa da sede; os meninos pedem pão, e ninguém há que lhes dê. Os que se alimentavam de iguarias agora definham nas ruas; os que se vestiam de escarlata se apegam ao lixo. A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+    "passages": [
+      {
+        "ref": "Lamentações 4:1–6",
+        "text": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro! Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto. A língua da criança que mama fica grudada ao paladar por causa da sede; os meninos pedem pão, e ninguém há que lhes dê. Os que se alimentavam de iguarias agora definham nas ruas; os que se vestiam de escarlata se apegam ao lixo. A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse."
+      },
+      {
+        "ref": "Lamentações 4:7–11",
+        "text": "Seus nazireus eram mais brancos do que a neve, mais puros do que o leite; eram mais ruivos de corpo do que os corais e tinham a formosura da safira. Mas agora a sua aparência está mais escura do que a fuligem; não se reconhecem nas ruas; a sua pele grudou nos ossos, secou-se e tornou-se como madeira. Mais felizes são os mortos pela espada do que os mortos pela fome, pois estes se consomem como feridos pela falta dos frutos da terra. As mãos das mulheres outrora caridosas cozinharam seus próprios filhos, que lhes serviram de alimento na aflição da filha do meu povo. O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos."
+      }
+    ],
+    "context": "O ouro perde o brilho: os filhos de Sião, antes preciosos, viram objetos de barro na fome e na ira.",
+    "keyword": "ouro",
+    "keywordGloss": "Imagem da glória perdida: o que era precioso escureceu na ruína.",
+    "focusQuestion": "O que no seu dia trata glória como se o pecado não pudesse escurecê-la?",
+    "reflectionPrompts": [
+      "Ouro escurecido",
+      "Filhos como barro",
+      "Fome e ira"
+    ],
+    "facts": [
+      {
+        "text": "O ouro se escureceu e o ouro refinado se alterou.",
+        "evidenceRef": "Lamentações 4:1",
+        "evidenceSpan": "Como se escureceu o ouro! Como se alterou o ouro refinado!"
+      },
+      {
+        "text": "Os nobres filhos de Sião agora são tidos como objetos de barro.",
+        "evidenceRef": "Lamentações 4:2",
+        "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro"
+      },
+      {
+        "text": "Os meninos pedem pão, e ninguém há que lhes dê.",
+        "evidenceRef": "Lamentações 4:4",
+        "evidenceSpan": "os meninos pedem pão, e ninguém há que lhes dê"
+      },
+      {
+        "text": "A maldade do povo é maior do que o pecado de Sodoma.",
+        "evidenceRef": "Lamentações 4:6",
+        "evidenceSpan": "A maldade da filha do meu povo é maior do que o pecado de Sodoma"
+      },
+      {
+        "text": "Mais felizes são os mortos pela espada do que os mortos pela fome.",
+        "evidenceRef": "Lamentações 4:9",
+        "evidenceSpan": "Mais felizes são os mortos pela espada do que os mortos pela fome"
+      },
+      {
+        "text": "O Senhor cumpriu a sua indignação e acendeu um fogo em Sião.",
+        "evidenceRef": "Lamentações 4:11",
+        "evidenceSpan": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ouro",
+        "gloss": "Imagem da glória que escureceu na ruína."
+      },
+      {
+        "term": "barro",
+        "gloss": "O contraste: o que era ouro puro agora é objeto de barro."
+      },
+      {
+        "term": "indignação",
+        "gloss": "O que o Senhor cumpriu ao derramar o fervor da ira."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ouro escurecido e filhos como barro",
+        "evidenceRef": "Lamentações 4:1–2"
+      },
+      {
+        "label": "Fome das crianças e queda dos ricos",
+        "evidenceRef": "Lamentações 4:4–5"
+      },
+      {
+        "label": "Maldade maior que a de Sodoma",
+        "evidenceRef": "Lamentações 4:6"
+      },
+      {
+        "label": "Fome, horror e ira cumprida",
+        "evidenceRef": "Lamentações 4:9–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os filhos eram como ouro puro; agora são objetos de barro.",
+        "marker": "agora",
+        "evidenceRef": "Lamentações 4:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Chacais amamentam; a filha do povo tornou-se cruel.",
+        "marker": "mas",
+        "evidenceRef": "Lamentações 4:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Senhor cumpriu a indignação e acendeu fogo em Sião.",
+        "marker": null,
+        "evidenceRef": "Lamentações 4:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 28:53",
+        "bridge": "Fome no cerco da cidade",
+        "text": "Você comerá o fruto do seu ventre, a carne de seus filhos e filhas que o Senhor, seu Deus, lhe der durante o cerco e a angústia que seus inimigos lhe infligirão."
+      },
+      {
+        "ref": "Ezequiel 5:10",
+        "bridge": "Horror da fome em Jerusalém",
+        "text": "Os pais devorarão seus filhos no meio de você, e os filhos devorarão seus pais; executarei juízos em você e espalharei todo o que restar de você a todos os ventos."
+      },
+      {
+        "ref": "Gênesis 19:24–25",
+        "bridge": "Juízo sobre Sodoma",
+        "text": "Então, o Senhor fez chover enxofre e fogo, vindo do Senhor, sobre Sodoma e Gomorra. E devastou aquelas cidades, toda a planície e todos os habitantes daquelas cidades, e o que brotava da terra."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A ruína é só azar; não há ligação com a maldade do povo.",
+        "why": "4:6 liga a maldade do povo a um juízo maior que o de Sodoma."
+      },
+      {
+        "text": "Os filhos de Sião continuam gloriosos como ouro puro.",
+        "why": "4:1–2 diz que o ouro escureceu e eles são como barro."
+      },
+      {
+        "text": "O Senhor não cumpriu nenhuma indignação sobre Sião.",
+        "why": "4:11 diz que cumpriu a indignação e acendeu fogo em Sião."
+      }
+    ],
+    "centralInsight": "O pecado muda a glória da cidade em desolação e fome.",
+    "anchorQuestion": "Segundo Lamentações 4:1–2, o que aconteceu aos filhos de Sião comparáveis a ouro?",
+    "relatedVerses": [
+      {
+        "reference": "Deuteronômio 28:53",
+        "reason": "Fome no cerco da cidade"
+      },
+      {
+        "reference": "Ezequiel 5:10",
+        "reason": "Horror da fome em Jerusalém"
+      },
+      {
+        "reference": "Gênesis 19:24–25",
+        "reason": "Juízo sobre Sodoma"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-01",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Lamentações 4:2, os nobres filhos de Sião agora são tidos como objetos de barro.",
+      "prompt": "Em Lamentações 4:2, os nobres filhos de Sião agora são tidos como objetos de barro.",
+      "cue": "Em Lamentações 4:2, os nobres filhos de Sião agora são tidos como objetos de barro.",
+      "verseRef": "Lamentações 4:2",
+      "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+      "feedbackCorrect": "Do ouro puro ao barro: a glória se inverteu.",
+      "feedbackWrong": {
+        "false": "Releia 4:2: agora são tidos como objetos de barro."
+      },
+      "hint": "Compare o começo e o fim do versículo.",
+      "learningObjective": "Observar a queda dos filhos de Sião.",
+      "evidence": [
+        "Lamentações 4:2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-02",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Lamentações 4:1, toque o que se escureceu.",
+      "prompt": "Em Lamentações 4:1, toque o que se escureceu.",
+      "cue": "Em Lamentações 4:1, toque o que se escureceu.",
+      "verseRef": "Lamentações 4:1",
+      "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!",
+      "options": [
+        {
+          "id": "a",
+          "text": "o ouro"
+        },
+        {
+          "id": "b",
+          "text": "as ruas"
+        },
+        {
+          "id": "c",
+          "text": "as pedras"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Como se escureceu o ouro!",
+      "feedbackCorrect": "O ouro se escureceu: imagem da glória perdida.",
+      "feedbackWrong": {
+        "b": "As ruas recebem as pedras; o que escurece é o ouro.",
+        "c": "As pedras estão espalhadas; o que escurece é o ouro."
+      },
+      "hint": "Leia a primeira exclamação.",
+      "learningObjective": "Identificar o ouro escurecido.",
+      "evidence": [
+        "Lamentações 4:1"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-03",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Lamentações 4:4, o que acontece quando os meninos pedem pão?",
+      "prompt": "Segundo Lamentações 4:4, o que acontece quando os meninos pedem pão?",
+      "cue": "Segundo Lamentações 4:4, o que acontece quando os meninos pedem pão?",
+      "verseRef": "Lamentações 4:4",
+      "passageText": "A língua da criança que mama fica grudada ao paladar por causa da sede; os meninos pedem pão, e ninguém há que lhes dê.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ninguém há que lhes dê"
+        },
+        {
+          "id": "b",
+          "text": "Recebem iguarias nas ruas"
+        },
+        {
+          "id": "c",
+          "text": "O templo distribui comida"
+        },
+        {
+          "id": "d",
+          "text": "Os vizinhos os alimentam logo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "os meninos pedem pão, e ninguém há que lhes dê",
+      "feedbackCorrect": "Pedem pão, e ninguém lhes dá.",
+      "feedbackWrong": {
+        "b": "4:5 diz que quem comia iguarias agora definha.",
+        "c": "O texto não fala de distribuição no templo.",
+        "d": "O texto diz que ninguém há que lhes dê."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar a fome das crianças.",
+      "evidence": [
+        "Lamentações 4:4"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-04",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Lamentações 4:2 na ordem do texto.",
+      "prompt": "Monte Lamentações 4:2 na ordem do texto.",
+      "cue": "Monte Lamentações 4:2 na ordem do texto.",
+      "verseRef": "Lamentações 4:2",
+      "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os nobres filhos de Sião, comparáveis a ouro puro"
+        },
+        {
+          "id": "b",
+          "text": "agora são tidos como objetos de barro"
+        },
+        {
+          "id": "c",
+          "text": "obra das mãos do oleiro!"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+      "feedbackCorrect": "Ouro puro primeiro; depois barro e a obra do oleiro.",
+      "feedbackWrong": {
+        "default": "Comece pelos filhos como ouro; o oleiro fecha."
+      },
+      "hint": "O versículo começa pelos nobres filhos.",
+      "learningObjective": "Reconhecer a sequência de 4:2.",
+      "evidence": [
+        "Lamentações 4:2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-05",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Lamentações 4:2, a que os filhos de Sião agora são comparados?",
+      "prompt": "Em Lamentações 4:2, a que os filhos de Sião agora são comparados?",
+      "cue": "Em Lamentações 4:2, a que os filhos de Sião agora são comparados?",
+      "verseRef": "Lamentações 4:2",
+      "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "template": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de ___, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "a",
+          "text": "prata"
+        },
+        {
+          "id": "b",
+          "text": "barro"
+        },
+        {
+          "id": "c",
+          "text": "cedro"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+      "feedbackCorrect": "Agora são tidos como objetos de barro.",
+      "feedbackWrong": {
+        "a": "O contraste é com ouro puro, agora barro.",
+        "c": "\"Cedro\" não aparece em 4:2."
+      },
+      "hint": "Veja a comparação após \"objetos de\".",
+      "learningObjective": "Lembrar a imagem do barro.",
+      "evidence": [
+        "Lamentações 4:2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-sem-lmc-04-ouro-escurecido-06",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Lamentações 4:1 comunica que se liga a este contexto?",
+      "prompt": "O que Lamentações 4:1 comunica que se liga a este contexto?",
+      "cue": "O que Lamentações 4:1 comunica que se liga a este contexto?",
+      "verseRef": "Lamentações 4:1",
+      "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!",
+      "passageA": {
+        "ref": "Lamentações 4:1",
+        "text": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas!"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A glória da cidade escureceu; o precioso virou ruína."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Glória que se perde"
+        },
+        {
+          "id": "b",
+          "text": "Brilho eterno intacto"
+        },
+        {
+          "id": "c",
+          "text": "Ouro que aumenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Como se escureceu o ouro!",
+      "feedbackCorrect": "O ouro escurecido resume a glória perdida.",
+      "feedbackWrong": {
+        "b": "O texto mostra escurecimento, não brilho intacto.",
+        "c": "O ouro se altera e escurece."
+      },
+      "hint": "Veja o que acontece ao ouro.",
+      "learningObjective": "Ligar 4:1 à perda da glória.",
+      "evidence": [
+        "Lamentações 4:1"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-01",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Lamentações 4:2, os filhos de Sião permanecem tidos como ouro puro, sem qualquer mudança.",
+      "prompt": "Em Lamentações 4:2, os filhos de Sião permanecem tidos como ouro puro, sem qualquer mudança.",
+      "cue": "Em Lamentações 4:2, os filhos de Sião permanecem tidos como ouro puro, sem qualquer mudança.",
+      "verseRef": "Lamentações 4:2",
+      "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+      "feedbackCorrect": "O \"agora\" marca a inversão: de ouro puro a barro.",
+      "feedbackWrong": {
+        "true": "Releia 4:2: agora são tidos como objetos de barro."
+      },
+      "hint": "Repare na palavra que marca a mudança.",
+      "learningObjective": "Compreender o contraste ouro–barro.",
+      "evidence": [
+        "Lamentações 4:2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-02",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+      "prompt": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+      "cue": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+      "verseRef": "Lamentações 4:3",
+      "passageText": "Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "peito"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "mas a filha do meu povo tornou-se cruel",
+      "feedbackCorrect": "\"Mas\" vira a cena: chacais amamentam; o povo tornou-se cruel.",
+      "feedbackWrong": {
+        "b": "\"Peito\" descreve os chacais, não o contraste.",
+        "c": "\"Deserto\" fecha a comparação, não marca o contraste."
+      },
+      "hint": "Procure a palavra curta no meio do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 4:3.",
+      "evidence": [
+        "Lamentações 4:3"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-03",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Lamentações 4:1–6 liga a glória perdida à maldade do povo?",
+      "prompt": "Como Lamentações 4:1–6 liga a glória perdida à maldade do povo?",
+      "cue": "Como Lamentações 4:1–6 liga a glória perdida à maldade do povo?",
+      "verseRef": "Lamentações 4:6",
+      "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O escurecimento aponta para maldade maior que a de Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "A glória caiu sem qualquer relação com pecado"
+        },
+        {
+          "id": "c",
+          "text": "Sodoma foi pior e Sião ficou inocente"
+        },
+        {
+          "id": "d",
+          "text": "O ouro escureceu por causa de chuva apenas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "A maldade da filha do meu povo é maior do que o pecado de Sodoma",
+      "feedbackCorrect": "A ruína do ouro caminha com a maldade confessada em 4:6.",
+      "feedbackWrong": {
+        "b": "4:6 liga a ruína à maldade do povo.",
+        "c": "O texto diz que a maldade é maior que a de Sodoma.",
+        "d": "A imagem é moral e histórica, não climática."
+      },
+      "hint": "Ligue 4:1–2 ao juízo de 4:6.",
+      "learningObjective": "Relacionar glória perdida e maldade.",
+      "evidence": [
+        "Lamentações 4:1–2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-04",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como se move Lamentações 4:1–11?",
+      "prompt": "Como se move Lamentações 4:1–11?",
+      "cue": "Como se move Lamentações 4:1–11?",
+      "verseRef": "Lamentações 4:1–2",
+      "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouro escurecido e filhos como barro"
+        },
+        {
+          "id": "b",
+          "text": "Fome das crianças e queda dos ricos"
+        },
+        {
+          "id": "c",
+          "text": "Ira cumprida e fogo em Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Como se escureceu o ouro!",
+      "feedbackCorrect": "Da glória perdida à fome, até a ira cumprida.",
+      "feedbackWrong": {
+        "default": "Comece pelo ouro; o fogo fecha."
+      },
+      "hint": "A ira cumprida vem no fim do trecho.",
+      "learningObjective": "Seguir o movimento até a ira cumprida.",
+      "evidence": [
+        "Lamentações 4:1–2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-05",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Lamentações 4:2, que palavra marca a mudança do ouro puro ao barro?",
+      "prompt": "Em Lamentações 4:2, que palavra marca a mudança do ouro puro ao barro?",
+      "cue": "Em Lamentações 4:2, que palavra marca a mudança do ouro puro ao barro?",
+      "verseRef": "Lamentações 4:2",
+      "passageText": "Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "template": "Os nobres filhos de Sião, comparáveis a ouro puro, ___ são tidos como objetos de barro, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "a",
+          "text": "sempre"
+        },
+        {
+          "id": "b",
+          "text": "agora"
+        },
+        {
+          "id": "c",
+          "text": "jamais"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "agora são tidos como objetos de barro",
+      "feedbackCorrect": "\"Agora\" marca a inversão da condição.",
+      "feedbackWrong": {
+        "a": "O texto usa \"agora\", não \"sempre\".",
+        "c": "\"Jamais\" não aparece em 4:2."
+      },
+      "hint": "Procure o advérbio antes de \"são tidos\".",
+      "learningObjective": "Lembrar o marcador da mudança.",
+      "evidence": [
+        "Lamentações 4:2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-cam-lmc-04-ouro-escurecido-06",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Lamentações 4:6 a Gênesis 19:24–25?",
+      "prompt": "O que liga Lamentações 4:6 a Gênesis 19:24–25?",
+      "cue": "O que liga Lamentações 4:6 a Gênesis 19:24–25?",
+      "verseRef": "Lamentações 4:6",
+      "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+      "passageA": {
+        "ref": "Lamentações 4:6",
+        "text": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse."
+      },
+      "passageB": {
+        "ref": "Gênesis 19:24–25",
+        "text": "Então, o Senhor fez chover enxofre e fogo, vindo do Senhor, sobre Sodoma e Gomorra. E devastou aquelas cidades, toda a planície e todos os habitantes daquelas cidades, e o que brotava da terra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo comparado a Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "Aliança com Sodoma"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à cidade antiga"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "maior do que o pecado de Sodoma",
+      "feedbackCorrect": "O texto compara a maldade do povo ao juízo de Sodoma.",
+      "feedbackWrong": {
+        "b": "Não há aliança; há comparação de juízo.",
+        "c": "O tom é de juízo, não de louvor."
+      },
+      "hint": "Compare a menção a Sodoma.",
+      "learningObjective": "Relacionar Lm 4:6 ao juízo de Gn 19.",
+      "evidence": [
+        "Lamentações 4:6",
+        "Gênesis 19:24–25"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-01",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Lamentações 4:1–6, a ruína de Sião aparece desligada da maldade do povo.",
+      "prompt": "Em Lamentações 4:1–6, a ruína de Sião aparece desligada da maldade do povo.",
+      "cue": "Em Lamentações 4:1–6, a ruína de Sião aparece desligada da maldade do povo.",
+      "verseRef": "Lamentações 4:6",
+      "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "A maldade da filha do meu povo é maior do que o pecado de Sodoma",
+      "feedbackCorrect": "O texto liga a ruína à maldade maior que a de Sodoma.",
+      "feedbackWrong": {
+        "true": "Releia 4:6: a maldade do povo é maior que a de Sodoma."
+      },
+      "hint": "Veja a comparação com Sodoma.",
+      "learningObjective": "Interpretar a ruína como juízo ligado ao pecado.",
+      "evidence": [
+        "Lamentações 4:6"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-02",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Lamentações 4:11, toque o trecho que sustenta o cumprimento da ira.",
+      "prompt": "Em Lamentações 4:11, toque o trecho que sustenta o cumprimento da ira.",
+      "cue": "Em Lamentações 4:11, toque o trecho que sustenta o cumprimento da ira.",
+      "verseRef": "Lamentações 4:11",
+      "passageText": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua indignação"
+        },
+        {
+          "id": "b",
+          "text": "fundamentos"
+        },
+        {
+          "id": "c",
+          "text": "um fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "O Senhor cumpriu a sua indignação",
+      "feedbackCorrect": "\"Sua indignação\" é o que o Senhor cumpriu.",
+      "feedbackWrong": {
+        "b": "Os fundamentos são o que o fogo consome.",
+        "c": "O fogo é o meio; a indignação é o que se cumpre."
+      },
+      "hint": "Procure o objeto de \"cumpriu\".",
+      "learningObjective": "Sustentar com o texto o cumprimento da ira.",
+      "evidence": [
+        "Lamentações 4:11"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-03",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Lamentações 4:1–11 sustenta sobre a glória de Sião?",
+      "prompt": "Que leitura Lamentações 4:1–11 sustenta sobre a glória de Sião?",
+      "cue": "Que leitura Lamentações 4:1–11 sustenta sobre a glória de Sião?",
+      "verseRef": "Lamentações 4:1–2",
+      "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+      "options": [
+        {
+          "id": "a",
+          "text": "O pecado muda a glória em desolação e fome"
+        },
+        {
+          "id": "b",
+          "text": "A glória permanece intacta apesar do pecado"
+        },
+        {
+          "id": "c",
+          "text": "A fome prova a inocência da cidade"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor não cumpriu nenhuma ira sobre Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Como se escureceu o ouro!",
+      "feedbackCorrect": "Ouro escurecido, fome e ira cumprida: glória virada ruína.",
+      "feedbackWrong": {
+        "b": "4:1–2 mostram a glória invertida.",
+        "c": "4:6 liga a ruína à maldade.",
+        "d": "4:11 diz que o Senhor cumpriu a indignação."
+      },
+      "hint": "Una o ouro escurecido à ira de 4:11.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Lamentações 4:1–2"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-04",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência mostra o custo do pecado na Escritura?",
+      "prompt": "Qual sequência mostra o custo do pecado na Escritura?",
+      "cue": "Qual sequência mostra o custo do pecado na Escritura?",
+      "verseRef": "Lamentações 4:6",
+      "passageText": "A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sião sofre juízo maior que o de Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "A Torá alerta sobre a fome no cerco"
+        },
+        {
+          "id": "c",
+          "text": "Ezequiel descreve o horror em Jerusalém"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "maior do que o pecado de Sodoma",
+      "feedbackCorrect": "De Lamentações à Torá e a Ezequiel, o custo aparece.",
+      "feedbackWrong": {
+        "default": "Siga: Lm 4:6, Dt 28:53 e Ez 5:10."
+      },
+      "hint": "Parta da comparação com Sodoma.",
+      "learningObjective": "Ver o custo do pecado no fio bíblico.",
+      "evidence": [
+        "Lamentações 4:6",
+        "Deuteronômio 28:53",
+        "Ezequiel 5:10"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-05",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Lamentações 4:11, o Senhor derramou o quê da sua ira?",
+      "prompt": "Em Lamentações 4:11, o Senhor derramou o quê da sua ira?",
+      "cue": "Em Lamentações 4:11, o Senhor derramou o quê da sua ira?",
+      "verseRef": "Lamentações 4:11",
+      "passageText": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+      "template": "O Senhor cumpriu a sua indignação, derramou o ___ da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "perfume"
+        },
+        {
+          "id": "b",
+          "text": "fervor"
+        },
+        {
+          "id": "c",
+          "text": "óleo"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "derramou o fervor da sua ira",
+      "feedbackCorrect": "Derramou o fervor da sua ira.",
+      "feedbackWrong": {
+        "a": "O texto fala de fervor da ira, não de perfume.",
+        "c": "\"Óleo\" não aparece em 4:11."
+      },
+      "hint": "Veja o objeto de \"derramou\".",
+      "learningObjective": "Lembrar o termo que carrega a ira cumprida.",
+      "evidence": [
+        "Lamentações 4:11"
+      ]
+    },
+    {
+      "id": "lamentacoes-cap-pro-lmc-04-ouro-escurecido-06",
+      "trail": "lamentacoes-cap",
+      "section": "lmc-04-ouro-escurecido",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Lamentações 4:11 a Ezequiel 5:10?",
+      "prompt": "O que liga Lamentações 4:11 a Ezequiel 5:10?",
+      "cue": "O que liga Lamentações 4:11 a Ezequiel 5:10?",
+      "verseRef": "Lamentações 4:11",
+      "passageText": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos.",
+      "passageA": {
+        "ref": "Lamentações 4:11",
+        "text": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos."
+      },
+      "passageB": {
+        "ref": "Ezequiel 5:10",
+        "text": "Os pais devorarão seus filhos no meio de você, e os filhos devorarão seus pais; executarei juízos em você e espalharei todo o que restar de você a todos os ventos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Horror da fome em Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Festa sem qualquer juízo"
+        },
+        {
+          "id": "c",
+          "text": "Restauração imediata total"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "acendeu um fogo em Sião que consumiu seus fundamentos",
+      "feedbackCorrect": "Nos dois textos, Jerusalém sofre o horror do juízo.",
+      "feedbackWrong": {
+        "b": "Há juízo, não festa.",
+        "c": "O foco é o cumprimento da ira, não restauração imediata."
+      },
+      "hint": "Compare o juízo sobre a cidade.",
+      "learningObjective": "Ligar a ira cumprida ao juízo em Ezequiel.",
+      "evidence": [
+        "Lamentações 4:11",
+        "Ezequiel 5:10"
+      ]
+    }
+  ]
+}

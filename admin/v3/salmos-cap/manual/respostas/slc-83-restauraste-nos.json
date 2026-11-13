@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 85:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 85:1–6"
+      },
+      {
+        "ref": "Salmos 85:7–12"
+      }
+    ],
+    "context": "Restauraste, Senhor, a sorte de Jacó; a misericórdia e a verdade se encontraram.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Restauraste-nos",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Senhor, favoreceste a tua terra e restauraste a prosperidade dos cativos de Jacó.",
+        "evidenceRef": "Salmos 85:1",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "Perdoaste a iniquidade do teu povo.",
+        "evidenceRef": "Salmos 85:2",
+        "evidenceSpan": "Perdoaste a iniquidade do teu povo"
+      },
+      {
+        "text": "Fizeste cessar toda a tua indignação.",
+        "evidenceRef": "Salmos 85:3",
+        "evidenceSpan": "Fizeste cessar toda a tua indignação"
+      },
+      {
+        "text": "Restaura-nos, ó Deus da nossa salvação, e afasta de nós a tua ira.",
+        "evidenceRef": "Salmos 85:4",
+        "evidenceSpan": "Restaura-nos"
+      },
+      {
+        "text": "Estarás para sempre irado conosco.",
+        "evidenceRef": "Salmos 85:5",
+        "evidenceSpan": "Estarás para sempre irado conosco"
+      },
+      {
+        "text": "Não voltarás a vivificar-nos para que o teu.",
+        "evidenceRef": "Salmos 85:6",
+        "evidenceSpan": "Não voltarás a vivificar-nos para que o teu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "favoreceste",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Senhor favoreceste a tua terra e",
+        "evidenceRef": "Salmos 85:1"
+      },
+      {
+        "label": "Perdoaste a iniquidade do teu povo",
+        "evidenceRef": "Salmos 85:2"
+      },
+      {
+        "label": "Fizeste cessar toda a tua indignação",
+        "evidenceRef": "Salmos 85:3"
+      },
+      {
+        "label": "Restaura-nos ó deus da nossa salvação",
+        "evidenceRef": "Salmos 85:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 85:6"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 85:8"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Salmos 85:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 8:31",
+        "bridge": "Se Deus é por nós"
+      },
+      {
+        "ref": "Tiago 1:2",
+        "bridge": "Alegria na prova"
+      },
+      {
+        "ref": "Salmos 27:1",
+        "bridge": "Luz e salvação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Perdão passado e paz futura: a justiça e a paz se beijam na terra."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Perdão passado e paz futura: a justiça e a paz se beijam na terra.",
+    "anchorQuestion": "O que Salmos 85:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 85:1, senhor.",
+      "verseRef": "Salmos 85:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 85:1 afirma.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 85:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 85:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "favoreceste"
+        },
+        {
+          "id": "c",
+          "text": "tua"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 85:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 85:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeste cessar toda a tua indignação"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fizeste cessar toda a tua indignação",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 85:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 85:1 na ordem do texto.",
+      "verseRef": "Salmos 85:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "a tua"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 85:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 85:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Restaura-nos"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "favoreceste"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Restaura-nos",
+      "feedbackCorrect": "A palavra do versículo é «Restaura-nos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 85:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 85:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 85:1",
+      "passageA": {
+        "ref": "Salmos 85:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Restauraste, Senhor, a sorte de Jacó; a misericórdia e a verdade se encontraram."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 85:6, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 85:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 85:6 afirma.",
+      "evidence": [
+        "Salmos 85:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 85:6, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 85:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "voltarás"
+        },
+        {
+          "id": "c",
+          "text": "vivificar-nos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 85:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 85:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 85:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Restaura-nos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 85:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 85:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor favoreceste a tua terra"
+        },
+        {
+          "id": "b",
+          "text": "Perdoaste a iniquidade do teu povo"
+        },
+        {
+          "id": "c",
+          "text": "Fizeste cessar toda a tua indignação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 85:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 85:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeste"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "favoreceste"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fizeste",
+      "feedbackCorrect": "A palavra do versículo é «Fizeste».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 85:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 85:1 a Romanos 8:31.",
+      "verseRef": "Salmos 85:1",
+      "passageA": {
+        "ref": "Salmos 85:1"
+      },
+      "passageB": {
+        "ref": "Romanos 8:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Se Deus é por nós"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 85:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 85:12 afirma.",
+      "evidence": [
+        "Salmos 85:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 85:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 85:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "também"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "dará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "também",
+      "feedbackCorrect": "O versículo destaca «também».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 85:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 85:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 85:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estarás para sempre irado conosco",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 85:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 85:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 85:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 85:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estarás"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "favoreceste"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estarás",
+      "feedbackCorrect": "A palavra do versículo é «Estarás».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 85:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 85:1 a Tiago 1:2.",
+      "verseRef": "Salmos 85:1",
+      "passageA": {
+        "ref": "Salmos 85:1"
+      },
+      "passageB": {
+        "ref": "Tiago 1:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria na prova"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 85:1"
+      ]
+    }
+  ]
+}

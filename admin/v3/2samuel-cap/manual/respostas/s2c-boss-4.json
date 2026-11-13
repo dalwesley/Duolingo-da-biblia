@@ -1,0 +1,913 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 15:13–23",
+    "passages": [
+      {
+        "ref": "2 Samuel 15:13–23"
+      },
+      {
+        "ref": "2 Samuel 16:5–14"
+      },
+      {
+        "ref": "2 Samuel 17:5–14"
+      },
+      {
+        "ref": "2 Samuel 18:9–17"
+      },
+      {
+        "ref": "2 Samuel 19:1–8"
+      }
+    ],
+    "context": "Esta Travessia revisa: Revise a fuga, Simei, Husai, a morte de Absalão e o luto de Davi.",
+    "keyword": "Então",
+    "keywordGloss": "Termo central da revisão.",
+    "focusQuestion": "O que esta Travessia pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Revisão",
+      "Decisão",
+      "Fidelidade"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Samuel 15:13 menciona Então.",
+        "evidenceRef": "2 Samuel 15:13",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "O texto em 2 Samuel 15:14 menciona Disse.",
+        "evidenceRef": "2 Samuel 15:14",
+        "evidenceSpan": "Disse"
+      },
+      {
+        "text": "O texto em 2 Samuel 15:15 menciona servos.",
+        "evidenceRef": "2 Samuel 15:15",
+        "evidenceSpan": "servos"
+      },
+      {
+        "text": "O texto em 2 Samuel 15:16 menciona saiu.",
+        "evidenceRef": "2 Samuel 15:16",
+        "evidenceSpan": "saiu"
+      },
+      {
+        "text": "O texto em 2 Samuel 15:17 menciona saiu.",
+        "evidenceRef": "2 Samuel 15:17",
+        "evidenceSpan": "saiu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Então",
+        "gloss": "Termo do trecho."
+      },
+      {
+        "term": "veio",
+        "gloss": "Termo do trecho."
+      },
+      {
+        "term": "mensageiro",
+        "gloss": "Termo do trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Movimento 1",
+        "evidenceRef": "2 Samuel 15:13"
+      },
+      {
+        "label": "Movimento 2",
+        "evidenceRef": "2 Samuel 15:14"
+      },
+      {
+        "label": "Movimento 3",
+        "evidenceRef": "2 Samuel 15:15"
+      },
+      {
+        "label": "Movimento 4",
+        "evidenceRef": "2 Samuel 15:16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "A etapa avança cena após cena.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 15:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "O desfecho da revisão aparece no fim.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 15:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 37:5",
+        "bridge": "Entregar o caminho"
+      },
+      {
+        "ref": "Provérbios 3:5",
+        "bridge": "Confiar no Senhor"
+      },
+      {
+        "ref": "Salmos 51:1",
+        "bridge": "Misericórdia e pecado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A etapa não tem fio condutor.",
+        "why": "As cenas se encadeiam na revisão."
+      },
+      {
+        "text": "O Senhor está ausente do bloco.",
+        "why": "O Senhor atravessa as decisões."
+      },
+      {
+        "text": "Não há custo nas escolhas.",
+        "why": "Cada cena carrega consequência."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 15:14, o que a revisão destaca?",
+    "centralInsight": "Deus restaura o rei, mas a dor do filho marca a volta"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "feedbackCorrect": "Conforme o texto.",
+      "hint": "Veja o verso.",
+      "learningObjective": "Avaliar o fato.",
+      "question": "Em 2 Samuel 15:13, o texto menciona Então.",
+      "verseRef": "2 Samuel 15:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "false": "Releia."
+      },
+      "evidence": [
+        "2 Samuel 15:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 15:13, toque o termo pedido.",
+      "verseRef": "2 Samuel 15:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "mensageiro"
+        },
+        {
+          "id": "b",
+          "text": "veio"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "veio",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 15:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "feedbackCorrect": "Fato.",
+      "hint": "Leia.",
+      "learningObjective": "Escolher.",
+      "question": "Segundo 2 Samuel 15:14, o que se destaca?",
+      "verseRef": "2 Samuel 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato fala de Disse"
+        },
+        {
+          "id": "b",
+          "text": "Uma leitura que o texto não sustenta"
+        },
+        {
+          "id": "c",
+          "text": "Outro detalhe alheio"
+        },
+        {
+          "id": "d",
+          "text": "Conclusão invertida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Ordem.",
+      "hint": "Início.",
+      "learningObjective": "Ordenar.",
+      "question": "Monte 2 Samuel 15:13 na ordem do texto.",
+      "verseRef": "2 Samuel 15:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "veio um mensageiro a Davi"
+        },
+        {
+          "id": "c",
+          "text": "dizendo: O povo de Israel se volta decididamente para Absalão."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "default": "Siga o texto."
+      },
+      "evidence": [
+        "2 Samuel 15:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "feedbackCorrect": "Palavra do texto.",
+      "hint": "Palavra exata.",
+      "learningObjective": "Completar.",
+      "question": "Em 2 Samuel 15:15, complete a lacuna.",
+      "verseRef": "2 Samuel 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "servos"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servos",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "feedbackCorrect": "Liga.",
+      "hint": "Contexto.",
+      "learningObjective": "Ligar.",
+      "question": "O que 2 Samuel 15:13 comunica neste bloco?",
+      "verseRef": "2 Samuel 15:13",
+      "passageA": {
+        "ref": "2 Samuel 15:13"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Revise a fuga, Simei, Husai, a morte de Absalão e o luto de Davi."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato da etapa"
+        },
+        {
+          "id": "b",
+          "text": "Sem ligação"
+        },
+        {
+          "id": "c",
+          "text": "Outro bloco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "b": "Há.",
+        "c": "Deste bloco."
+      },
+      "evidence": [
+        "2 Samuel 15:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 15:14, toque outro termo do relato.",
+      "verseRef": "2 Samuel 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "portanto"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 15:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Chamado, conflito e resposta.",
+      "hint": "Fluxo.",
+      "learningObjective": "Encadear.",
+      "question": "Ordene o encadeamento da revisão.",
+      "verseRef": "2 Samuel 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os servos do rei disseram ao rei: Aqui estão os teus servos"
+        },
+        {
+          "id": "b",
+          "text": "prontos para realizar tudo o que o rei"
+        },
+        {
+          "id": "c",
+          "text": "nosso senhor, determinar."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os servos do rei disseram ao rei: Aqui estão os teus servos",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "feedbackCorrect": "Conforme o texto.",
+      "hint": "Veja o verso.",
+      "learningObjective": "Avaliar o fato.",
+      "question": "Em 2 Samuel 15:14, o texto menciona Disse.",
+      "verseRef": "2 Samuel 15:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "false": "Releia."
+      },
+      "evidence": [
+        "2 Samuel 15:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 15:14, toque o termo pedido.",
+      "verseRef": "2 Samuel 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "portanto"
+        },
+        {
+          "id": "c",
+          "text": "homens"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "portanto",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 15:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "feedbackCorrect": "Fato.",
+      "hint": "Leia.",
+      "learningObjective": "Escolher.",
+      "question": "Segundo 2 Samuel 15:15, o que se destaca?",
+      "verseRef": "2 Samuel 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato destaca a decisão central da cena"
+        },
+        {
+          "id": "b",
+          "text": "Uma leitura que o texto não sustenta"
+        },
+        {
+          "id": "c",
+          "text": "Outro detalhe alheio ao trecho"
+        },
+        {
+          "id": "d",
+          "text": "Uma conclusão invertida do relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servos",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Ordem da etapa.",
+      "hint": "Fluxo.",
+      "learningObjective": "Ordenar etapa.",
+      "question": "Ordene os movimentos da etapa.",
+      "verseRef": "2 Samuel 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abertura do bloco"
+        },
+        {
+          "id": "b",
+          "text": "Conflito no centro"
+        },
+        {
+          "id": "c",
+          "text": "Virada do relato"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "servos",
+      "feedbackWrong": {
+        "default": "Comece pelo primeiro."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "feedbackCorrect": "Palavra do texto.",
+      "hint": "Palavra exata.",
+      "learningObjective": "Completar.",
+      "question": "Em 2 Samuel 15:16, complete a lacuna.",
+      "verseRef": "2 Samuel 15:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "saiu"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saiu",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "feedbackCorrect": "Confiança.",
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "question": "O que liga 2 Samuel 15:15 a Salmos 37:5?",
+      "verseRef": "2 Samuel 15:15",
+      "passageA": {
+        "ref": "2 Samuel 15:15"
+      },
+      "passageB": {
+        "ref": "Salmos 37:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Entregar o caminho"
+        },
+        {
+          "id": "b",
+          "text": "Fugir do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Sem confiança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "servos",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:15",
+        "Salmos 37:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 15:15, toque outro termo do relato.",
+      "verseRef": "2 Samuel 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aqui"
+        },
+        {
+          "id": "b",
+          "text": "disseram"
+        },
+        {
+          "id": "c",
+          "text": "estão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disseram",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Chamado, conflito e resposta.",
+      "hint": "Fluxo.",
+      "learningObjective": "Encadear.",
+      "question": "Ordene o encadeamento da revisão. (cam)",
+      "verseRef": "2 Samuel 15:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relembrar a aliança"
+        },
+        {
+          "id": "b",
+          "text": "Enfrentar a crise"
+        },
+        {
+          "id": "c",
+          "text": "Confiar o desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "saiu",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "evidence": [
+        "2 Samuel 15:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "feedbackCorrect": "Conforme o texto.",
+      "hint": "Veja o verso.",
+      "learningObjective": "Avaliar o fato.",
+      "question": "Em 2 Samuel 15:15, o texto omite qualquer menção a servos.",
+      "verseRef": "2 Samuel 15:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "servos",
+      "feedbackWrong": {
+        "true": "Releia."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 15:15, toque o termo pedido.",
+      "verseRef": "2 Samuel 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "estão"
+        },
+        {
+          "id": "b",
+          "text": "Aqui"
+        },
+        {
+          "id": "c",
+          "text": "teus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Aqui",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 15:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "feedbackCorrect": "Fato.",
+      "hint": "Leia.",
+      "learningObjective": "Escolher.",
+      "question": "Segundo 2 Samuel 15:16, o que se destaca?",
+      "verseRef": "2 Samuel 15:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato destaca a decisão central da cena"
+        },
+        {
+          "id": "b",
+          "text": "Uma leitura que o texto não sustenta"
+        },
+        {
+          "id": "c",
+          "text": "Outro detalhe alheio ao trecho"
+        },
+        {
+          "id": "d",
+          "text": "Uma conclusão invertida do relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saiu",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Ordem da etapa.",
+      "hint": "Fluxo.",
+      "learningObjective": "Ordenar etapa.",
+      "question": "Ordene os movimentos da etapa. (pro)",
+      "verseRef": "2 Samuel 15:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado inicial"
+        },
+        {
+          "id": "b",
+          "text": "Prova da fé"
+        },
+        {
+          "id": "c",
+          "text": "Resposta final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "saiu",
+      "feedbackWrong": {
+        "default": "Comece pelo primeiro."
+      },
+      "evidence": [
+        "2 Samuel 15:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "feedbackCorrect": "Palavra do texto.",
+      "hint": "Palavra exata.",
+      "learningObjective": "Completar.",
+      "question": "Em 2 Samuel 15:17, complete a lacuna.",
+      "verseRef": "2 Samuel 15:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "toda"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toda",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "feedbackCorrect": "Confiança.",
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "question": "O que liga 2 Samuel 15:17 a Provérbios 3:5?",
+      "verseRef": "2 Samuel 15:17",
+      "passageA": {
+        "ref": "2 Samuel 15:17"
+      },
+      "passageB": {
+        "ref": "Provérbios 3:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiar no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Confiar só em si"
+        },
+        {
+          "id": "c",
+          "text": "Sem caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saiu",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 15:17",
+        "Provérbios 3:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 15:16, toque outro termo do relato.",
+      "verseRef": "2 Samuel 15:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa"
+        },
+        {
+          "id": "b",
+          "text": "acompanhado"
+        },
+        {
+          "id": "c",
+          "text": "porém"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "acompanhado",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 15:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Chamado, conflito e resposta.",
+      "hint": "Fluxo.",
+      "learningObjective": "Encadear.",
+      "question": "Ordene o encadeamento da revisão. (pro)",
+      "verseRef": "2 Samuel 15:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confessar a falha"
+        },
+        {
+          "id": "b",
+          "text": "Aceitar a disciplina"
+        },
+        {
+          "id": "c",
+          "text": "Voltar ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "saiu",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "evidence": [
+        "2 Samuel 15:17"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,935 @@
+{
+ "study": {
+  "passageRef": "Provérbios 28:1–6",
+  "passages": [
+   {
+    "ref": "Provérbios 28:1–6"
+   },
+   {
+    "ref": "Provérbios 29:1–6"
+   },
+   {
+    "ref": "Provérbios 30:5–10"
+   },
+   {
+    "ref": "Provérbios 31:10–15"
+   },
+   {
+    "ref": "Provérbios 31:22–27"
+   }
+  ],
+  "context": "Esta Travessia revisa a audácia do justo, a cerviz dura, a palavra pura e a mulher virtuosa até o louvor das obras.",
+  "keyword": "Temor",
+  "keywordGloss": "Do justo audacioso à mulher que teme: verdade, governo e obras.",
+  "focusQuestion": "Onde este bloco mais te chama: confessar, governar a ira, guardar a palavra ou viver obras dignas de louvor?",
+  "reflectionPrompts": [
+   "Justo como leão",
+   "Palavra pura",
+   "Obras que louvam"
+  ],
+  "facts": [
+   {
+    "text": "O justo é audacioso como o leão.",
+    "evidenceRef": "Provérbios 28:1",
+    "evidenceSpan": "o justo é audacioso como o leão"
+   },
+   {
+    "text": "Quem endurece a cerviz será quebrantado.",
+    "evidenceRef": "Provérbios 29:1",
+    "evidenceSpan": "endurece a sua cerviz será quebrantado"
+   },
+   {
+    "text": "Toda a palavra de Deus é pura.",
+    "evidenceRef": "Provérbios 30:5",
+    "evidenceSpan": "Toda a palavra de Deus é pura"
+   },
+   {
+    "text": "A mulher virtuosa vale mais que joias.",
+    "evidenceRef": "Provérbios 31:10",
+    "evidenceSpan": "muito maior do que o de finas joias"
+   },
+   {
+    "text": "A força e a dignidade são suas vestes.",
+    "evidenceRef": "Provérbios 31:25",
+    "evidenceSpan": "A força e a dignidade são suas vestes"
+   },
+   {
+    "text": "Quando os justos se multiplicam, o povo se alegra.",
+    "evidenceRef": "Provérbios 29:2",
+    "evidenceSpan": "o povo se alegra"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "cerviz",
+    "gloss": "Pescoço duro contra a repreensão."
+   },
+   {
+    "term": "pura",
+    "gloss": "Qualidade de toda palavra de Deus."
+   },
+   {
+    "term": "virtuosa",
+    "gloss": "Mulher de valor e obras."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Justo e ímpio",
+    "evidenceRef": "Provérbios 28:1–8"
+   },
+   {
+    "label": "Cerviz e governo",
+    "evidenceRef": "Provérbios 29:1–8"
+   },
+   {
+    "label": "Palavra pura e pedido",
+    "evidenceRef": "Provérbios 30:5–12"
+   },
+   {
+    "label": "Virtuosa e louvor",
+    "evidenceRef": "Provérbios 31:10–29"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Ímpios fogem; o justo é audacioso.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 28:1"
+   },
+   {
+    "kind": "contraste",
+    "text": "Justos alegram; perverso faz suspirar.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 29:2"
+   },
+   {
+    "kind": "propósito",
+    "text": "Para que não acrescentes e sejas achado mentiroso.",
+    "marker": "para que",
+    "evidenceRef": "Provérbios 30:6"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 João 1:9",
+    "bridge": "Se confessarmos os pecados"
+   },
+   {
+    "ref": "Salmos 12:6",
+    "bridge": "Palavras do Senhor são puras"
+   },
+   {
+    "ref": "Mateus 5:16",
+    "bridge": "Obras que glorificam o Pai"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Encobrir o pecado ainda permite prosperar.",
+    "why": "28:13 (no bloco) une confissão e misericórdia; o justo vive na verdade."
+   },
+   {
+    "text": "Pode-se acrescentar livremente à palavra de Deus.",
+    "why": "30:6 proíbe acrescentar."
+   },
+   {
+    "text": "Endurecer a cerviz não tem fim grave.",
+    "why": "29:1 anuncia quebrantamento sem remédio."
+   }
+  ],
+  "centralInsight": "Do começo ao fim: temor do Senhor, verdade e obras que louvam",
+  "anchorQuestion": "O que Provérbios 30:5 diz de toda a palavra de Deus?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 28:1, o justo é audacioso como o leão.",
+   "verseRef": "Provérbios 28:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "o justo é audacioso como o leão",
+   "feedbackCorrect": "O justo é audacioso; os ímpios fogem.",
+   "feedbackWrong": {
+    "false": "Releia 28:1: audacioso como o leão."
+   },
+   "hint": "Veja o contraste.",
+   "learningObjective": "Observar a audácia do justo.",
+   "evidence": [
+    "Provérbios 28:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 30:5, toque o que é pura.",
+   "verseRef": "Provérbios 30:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "palavra de Deus"
+    },
+    {
+     "id": "b",
+     "text": "escudo"
+    },
+    {
+     "id": "c",
+     "text": "confiam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Toda a palavra de Deus é pura",
+   "feedbackCorrect": "A palavra de Deus é pura.",
+   "feedbackWrong": {
+    "b": "Escudo é o que Ele é.",
+    "c": "Confiam descreve os protegidos."
+   },
+   "hint": "Sujeito no início.",
+   "learningObjective": "Identificar a palavra pura.",
+   "evidence": [
+    "Provérbios 30:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 31:10, o valor da mulher virtuosa é maior do que o quê?",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Finas joias"
+    },
+    {
+     "id": "b",
+     "text": "A preguiça"
+    },
+    {
+     "id": "c",
+     "text": "A cerviz dura"
+    },
+    {
+     "id": "d",
+     "text": "A palavra acrescentada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "muito maior do que o de finas joias",
+   "feedbackCorrect": "O valor supera finas joias.",
+   "feedbackWrong": {
+    "b": "Preguiça é recusada depois.",
+    "c": "Cerviz é de 29:1.",
+    "d": "Acréscimo é proibido em 30:6."
+   },
+   "hint": "Comparação do valor.",
+   "learningObjective": "Observar o valor da virtuosa.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 29:1 na ordem do texto.",
+   "verseRef": "Provérbios 29:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "O homem que é frequentemente repreendido"
+    },
+    {
+     "id": "b",
+     "text": "e endurece a sua cerviz"
+    },
+    {
+     "id": "c",
+     "text": "será quebrantado de repente"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "endurece a sua cerviz será quebrantado",
+   "feedbackCorrect": "Repreensão, dureza e quebrantamento.",
+   "feedbackWrong": {
+    "default": "Comece pelo homem."
+   },
+   "hint": "Abre com O homem.",
+   "learningObjective": "Seguir a ordem do aviso.",
+   "evidence": [
+    "Provérbios 29:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 31:25, a força e a dignidade são suas quê?",
+   "verseRef": "Provérbios 31:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "vestes"
+    },
+    {
+     "id": "b",
+     "text": "joias"
+    },
+    {
+     "id": "c",
+     "text": "espadas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "são suas vestes",
+   "feedbackCorrect": "São suas vestes.",
+   "feedbackWrong": {
+    "b": "Joias comparam o valor.",
+    "c": "Espadas não estão no verso."
+   },
+   "hint": "Predicado após são suas.",
+   "learningObjective": "Lembrar as vestes.",
+   "evidence": [
+    "Provérbios 31:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 30:5 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 30:5",
+   "passageA": {
+    "ref": "Provérbios 30:5",
+    "text": "Toda a palavra de Deus é pura"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Temor, verdade e obras atravessam o bloco."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra fraca"
+    },
+    {
+     "id": "b",
+     "text": "Palavra pura no centro"
+    },
+    {
+     "id": "c",
+     "text": "Acréscimo livre"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Toda a palavra de Deus é pura",
+   "feedbackCorrect": "A pureza liga o verso à verdade do bloco.",
+   "feedbackWrong": {
+    "a": "Ela é pura.",
+    "c": "30:6 proíbe acrescentar."
+   },
+   "hint": "Pense na suficiência.",
+   "learningObjective": "Ligar 30:5 à verdade.",
+   "evidence": [
+    "Provérbios 30:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 29:1, toque o que se endurece.",
+   "verseRef": "Provérbios 29:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "sua cerviz"
+    },
+    {
+     "id": "b",
+     "text": "remédio"
+    },
+    {
+     "id": "c",
+     "text": "homem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "endurece a sua cerviz",
+   "feedbackCorrect": "A cerviz é endurecida.",
+   "feedbackWrong": {
+    "b": "Remédio falta no fim.",
+    "c": "Homem é o sujeito."
+   },
+   "hint": "Objeto de endurece.",
+   "learningObjective": "Identificar a cerviz.",
+   "evidence": [
+    "Provérbios 29:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 28:1 na ordem do texto.",
+   "verseRef": "Provérbios 28:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Os ímpios fogem sem que ninguém os persiga"
+    },
+    {
+     "id": "b",
+     "text": "mas o justo é audacioso"
+    },
+    {
+     "id": "c",
+     "text": "como o leão"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o justo é audacioso como o leão",
+   "feedbackCorrect": "Fuga e audácia.",
+   "feedbackWrong": {
+    "default": "Comece pelos ímpios."
+   },
+   "hint": "Abre com Os ímpios.",
+   "learningObjective": "Seguir o contraste.",
+   "evidence": [
+    "Provérbios 28:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 29:2, quando o perverso domina, o povo se alegra.",
+   "verseRef": "Provérbios 29:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "quando o perverso domina, o povo suspira",
+   "feedbackCorrect": "Sob o perverso o povo suspira.",
+   "feedbackWrong": {
+    "true": "Releia 29:2: o povo suspira."
+   },
+   "hint": "Compare justos e perverso.",
+   "learningObjective": "Compreender o contraste do governo.",
+   "evidence": [
+    "Provérbios 29:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 29:2, toque a palavra que marca o contraste.",
+   "verseRef": "Provérbios 29:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "mas"
+    },
+    {
+     "id": "b",
+     "text": "povo"
+    },
+    {
+     "id": "c",
+     "text": "justos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas quando o perverso domina",
+   "feedbackCorrect": "\"Mas\" marca o contraste.",
+   "feedbackWrong": {
+    "b": "Povo reage.",
+    "c": "Justos alegram."
+   },
+   "hint": "Marcador no meio.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Provérbios 29:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 28:1 e 29:2 estabelecem juntos?",
+   "verseRef": "Provérbios 28:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Justiça traz audácia e alegria pública"
+    },
+    {
+     "id": "b",
+     "text": "O ímpio é o modelo"
+    },
+    {
+     "id": "c",
+     "text": "O perverso alegra o povo"
+    },
+    {
+     "id": "d",
+     "text": "A cerviz dura edifica"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o justo é audacioso como o leão",
+   "feedbackCorrect": "Justo audacioso e justos que alegram o povo se reforçam.",
+   "feedbackWrong": {
+    "b": "Ímpio foge.",
+    "c": "Povo suspira sob o perverso.",
+    "d": "Cerviz dura quebra."
+   },
+   "hint": "Una leão e povo.",
+   "learningObjective": "Relacionar justiça e fruto.",
+   "evidence": [
+    "Provérbios 28:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o bloco 28–31?",
+   "verseRef": "Provérbios 28:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Justo e ímpio"
+    },
+    {
+     "id": "b",
+     "text": "Cerviz e palavra pura"
+    },
+    {
+     "id": "c",
+     "text": "Virtuosa e louvor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o justo é audacioso como o leão",
+   "feedbackCorrect": "Do justo à palavra e à virtuosa.",
+   "feedbackWrong": {
+    "default": "Comece pelo justo."
+   },
+   "hint": "O fim é a virtuosa.",
+   "learningObjective": "Compreender o movimento do bloco.",
+   "evidence": [
+    "Provérbios 28:1",
+    "Provérbios 31:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 30:6, que expressão marca o propósito?",
+   "verseRef": "Provérbios 30:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "para"
+    },
+    {
+     "id": "b",
+     "text": "nunca"
+    },
+    {
+     "id": "c",
+     "text": "talvez"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que não te repreenda",
+   "feedbackCorrect": "\"Para que\" carrega o propósito.",
+   "feedbackWrong": {
+    "b": "Não é nunca.",
+    "c": "Não é talvez."
+   },
+   "hint": "Marcador do aviso.",
+   "learningObjective": "Lembrar o marcador.",
+   "evidence": [
+    "Provérbios 30:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 30:5 a Salmos 12:6?",
+   "verseRef": "Provérbios 30:5",
+   "passageA": {
+    "ref": "Provérbios 30:5",
+    "text": "Toda a palavra de Deus é pura"
+   },
+   "passageB": {
+    "ref": "Salmos 12:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavras do Senhor são puras"
+    },
+    {
+     "id": "b",
+     "text": "Acrescentai livremente"
+    },
+    {
+     "id": "c",
+     "text": "Endureça a cerviz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Toda a palavra de Deus é pura",
+   "feedbackCorrect": "Os dois afirmam a pureza das palavras.",
+   "feedbackWrong": {
+    "b": "30:6 proíbe.",
+    "c": "Cerviz é outro aviso."
+   },
+   "hint": "Compare a pureza.",
+   "learningObjective": "Cruzar a palavra pura.",
+   "evidence": [
+    "Provérbios 30:5",
+    "Salmos 12:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 30:6, toque o trecho que marca o propósito.",
+   "verseRef": "Provérbios 30:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "para que"
+    },
+    {
+     "id": "b",
+     "text": "palavras"
+    },
+    {
+     "id": "c",
+     "text": "mentiroso"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que não te repreenda",
+   "feedbackCorrect": "\"Para que\" introduz o propósito.",
+   "feedbackWrong": {
+    "b": "Palavras são o objeto.",
+    "c": "Mentiroso é o risco."
+   },
+   "hint": "Marcador do propósito.",
+   "learningObjective": "Reconhecer o propósito.",
+   "evidence": [
+    "Provérbios 30:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Ordene o fio da verdade no bloco.",
+   "verseRef": "Provérbios 28:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Audácia do justo"
+    },
+    {
+     "id": "b",
+     "text": "Palavra pura sem acréscimo"
+    },
+    {
+     "id": "c",
+     "text": "Força e dignidade como vestes"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o justo é audacioso como o leão",
+   "feedbackCorrect": "Do justo à palavra e às vestes.",
+   "feedbackWrong": {
+    "default": "Comece pelo justo."
+   },
+   "hint": "De 28 a 30 e 31.",
+   "learningObjective": "Compreender a sequência.",
+   "evidence": [
+    "Provérbios 28:1",
+    "Provérbios 30:5",
+    "Provérbios 31:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 30:5–6, a palavra pura não deve receber acréscimos.",
+   "verseRef": "Provérbios 30:5–6",
+   "correctOptionId": "true",
+   "evidenceSpan": "Nada acrescentes às suas palavras",
+   "feedbackCorrect": "Pureza e proibição de acréscimo se sustentam.",
+   "feedbackWrong": {
+    "false": "Releia 30:6: Nada acrescentes."
+   },
+   "hint": "Una 30:5 e 30:6.",
+   "learningObjective": "Sustentar a suficiência da palavra.",
+   "evidence": [
+    "Provérbios 30:5",
+    "Provérbios 30:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 29:1, toque o trecho que sustenta o desfecho grave.",
+   "verseRef": "Provérbios 29:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "quebrantado"
+    },
+    {
+     "id": "b",
+     "text": "frequentemente"
+    },
+    {
+     "id": "c",
+     "text": "homem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será quebrantado de repente",
+   "feedbackCorrect": "Será quebrantado de repente.",
+   "feedbackWrong": {
+    "b": "Frequentemente descreve a repreensão.",
+    "c": "Homem é o sujeito."
+   },
+   "hint": "Verbo do desfecho.",
+   "learningObjective": "Sustentar o juízo sem remédio.",
+   "evidence": [
+    "Provérbios 29:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o bloco 28–31 sustenta?",
+   "verseRef": "Provérbios 30:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor, verdade e obras que louvam"
+    },
+    {
+     "id": "b",
+     "text": "Encobrir o pecado edifica"
+    },
+    {
+     "id": "c",
+     "text": "Acrescentar à palavra é sábio"
+    },
+    {
+     "id": "d",
+     "text": "Cerviz dura é virtude"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Toda a palavra de Deus é pura",
+   "feedbackCorrect": "Justiça, palavra pura e virtuosa formam o fio.",
+   "feedbackWrong": {
+    "b": "A verdade exige confissão.",
+    "c": "30:6 proíbe acrescentar.",
+    "d": "29:1 condena a cerviz dura."
+   },
+   "hint": "Una justo, palavra e obras.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 30:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio do bloco?",
+   "verseRef": "Provérbios 30:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Palavra de Deus é pura"
+    },
+    {
+     "id": "b",
+     "text": "Palavras do Senhor são puras"
+    },
+    {
+     "id": "c",
+     "text": "Obras glorificam o Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Toda a palavra de Deus é pura",
+   "feedbackCorrect": "Da palavra pura ao Salmo e às obras.",
+   "feedbackWrong": {
+    "default": "Comece por 30:5."
+   },
+   "hint": "De Provérbios a Salmos e Mateus.",
+   "learningObjective": "Ver o tema atravessar a Bíblia.",
+   "evidence": [
+    "Provérbios 30:5",
+    "Salmos 12:6",
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 29:1, o que a pessoa endurece?",
+   "verseRef": "Provérbios 29:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "cerviz"
+    },
+    {
+     "id": "b",
+     "text": "povo"
+    },
+    {
+     "id": "c",
+     "text": "joias"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "endurece a sua cerviz",
+   "feedbackCorrect": "O termo é cerviz.",
+   "feedbackWrong": {
+    "b": "Povo reage ao governo.",
+    "c": "Joias comparam a virtuosa."
+   },
+   "hint": "Objeto do endurecer.",
+   "learningObjective": "Lembrar o termo cerviz.",
+   "evidence": [
+    "Provérbios 29:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 31:25 a Mateus 5:16?",
+   "verseRef": "Provérbios 31:25",
+   "passageA": {
+    "ref": "Provérbios 31:25",
+    "text": "A força e a dignidade são suas vestes"
+   },
+   "passageB": {
+    "ref": "Mateus 5:16"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Obras que glorificam o Pai"
+    },
+    {
+     "id": "b",
+     "text": "Cerviz dura"
+    },
+    {
+     "id": "c",
+     "text": "Acréscimo à palavra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A força e a dignidade são suas vestes",
+   "feedbackCorrect": "Vestes de caráter ecoam em obras que glorificam.",
+   "feedbackWrong": {
+    "b": "Cerviz é outro tema.",
+    "c": "Acréscimo é proibido."
+   },
+   "hint": "Compare caráter e obras.",
+   "learningObjective": "Ligar vestes às obras públicas.",
+   "evidence": [
+    "Provérbios 31:25",
+    "Mateus 5:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:10, toque quem se busca.",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulher virtuosa"
+    },
+    {
+     "id": "b",
+     "text": "joias"
+    },
+    {
+     "id": "c",
+     "text": "valor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "A buscada é a mulher virtuosa.",
+   "feedbackWrong": {
+    "b": "Joias são a comparação.",
+    "c": "Valor descreve o quão rara."
+   },
+   "hint": "Abertura do verso.",
+   "learningObjective": "Sustentar a virtuosa.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Ordene o fio da virtuosa no bloco.",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulher virtuosa de grande valor"
+    },
+    {
+     "id": "b",
+     "text": "Não come o pão da preguiça"
+    },
+    {
+     "id": "c",
+     "text": "Obras que glorificam o Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "Do valor às vestes e às obras.",
+   "feedbackWrong": {
+    "default": "Comece por 31:10."
+   },
+   "hint": "De 31 a Mateus.",
+   "learningObjective": "Ver o fio da virtuosa.",
+   "evidence": [
+    "Provérbios 31:10",
+    "Provérbios 31:25",
+    "Mateus 5:16"
+   ]
+  }
+ ]
+}

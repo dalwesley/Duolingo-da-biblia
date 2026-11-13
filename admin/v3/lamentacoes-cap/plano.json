@@ -1,0 +1,63 @@
+{
+  "slug": "lamentacoes-cap",
+  "prefix": "lmc",
+  "book": "Lamentações",
+  "chapters": 5,
+  "title": "Lamentações",
+  "description": "Lamentações capítulo a capítulo: o choro sobre Jerusalém e a esperança no Senhor.",
+  "icon": "🕯️",
+  "color": "#7A6B8A",
+  "order": 32,
+  "realm": "antigo-testamento",
+  "category": "profetas-maiores",
+  "avoidTrails": [
+    "lamentacoes"
+  ],
+  "modules": [
+    {
+      "title": "A cidade caída · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "Lamentações 1:12–18",
+          "title": "Olhai e vede",
+          "intro": "Jerusalém chama os que passam a ver a sua dor e confessa que o Senhor é justo.",
+          "insight": "A cidade reconhece: o Senhor é justo, porque ela se rebelou contra a sua palavra.",
+          "objective": "Confessar a justiça do Senhor"
+        },
+        {
+          "ref": "Lamentações 2:1–10",
+          "title": "A ira do Senhor",
+          "intro": "O Senhor cobriu Sião com a sua ira; o altar, o santuário e os muros caíram.",
+          "insight": "Até o santuário pode cair quando o povo rejeita o Senhor.",
+          "objective": "Temer a ira santa de Deus"
+        },
+        {
+          "ref": "Lamentações 3:31–42",
+          "title": "Não rejeita para sempre",
+          "intro": "No meio do lamento, há esperança: o Senhor não rejeita para sempre.",
+          "insight": "Ele entristece e se compadece segundo a multidão das suas misericórdias.",
+          "objective": "Esperar nas misericórdias"
+        },
+        {
+          "ref": "Lamentações 4:1–11",
+          "title": "Ouro escurecido",
+          "intro": "O ouro perde o brilho; os filhos de Sião, antes preciosos, são como vasos de barro.",
+          "insight": "O pecado muda a glória da cidade em desolação e fome.",
+          "objective": "Ver o custo do pecado"
+        },
+        {
+          "ref": "Lamentações 5:1–12",
+          "title": "Lembra-te, Senhor",
+          "intro": "O povo pede que o Senhor lembre do opróbrio: órfãos, água paga e jugo sobre os pescoços.",
+          "insight": "Na ruína, o clamor sincero ainda se volta ao Senhor que reina para sempre.",
+          "objective": "Clamar na ruína"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: A cidade caída",
+        "intro": "Revise a confissão, a ira, a misericórdia, o ouro escurecido e o clamor.",
+        "insight": "Mesmo na ruína, há espaço para confessar e esperar no Senhor"
+      }
+    }
+  ]
+}

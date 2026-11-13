@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 13:4–12",
+    "passages": [
+      {
+        "ref": "2 Crônicas 13:4–12"
+      }
+    ],
+    "context": "Abias confronta Jeroboão: o Senhor deu a Davi o reino para sempre; lutar contra Judá é lutar contra Deus.",
+    "keyword": "aliança",
+    "keywordGloss": "Aliança de sal: o Senhor concedeu a Davi a soberania sobre Israel para sempre.",
+    "focusQuestion": "Onde você está resistindo ao que Deus já estabeleceu?",
+    "reflectionPrompts": [
+      "Aliança de sal",
+      "Bezerros de ouro",
+      "Deus à frente"
+    ],
+    "facts": [
+      {
+        "text": "Abias fala no monte Zemaraim a Jeroboão e a todo o Israel.",
+        "evidenceRef": "2 Crônicas 13:4",
+        "evidenceSpan": "Abias levantou-se no alto do monte Zemaraim"
+      },
+      {
+        "text": "O Senhor concedeu para sempre a Davi a soberania sobre Israel, por aliança de sal.",
+        "evidenceRef": "2 Crônicas 13:5",
+        "evidenceSpan": "concedeu para sempre a Davi a soberania sobre Israel"
+      },
+      {
+        "text": "Jeroboão se rebelou; homens ímpios se uniram contra Roboão jovem.",
+        "evidenceRef": "2 Crônicas 13:6",
+        "evidenceSpan": "levantou-se e se rebelou contra seu senhor"
+      },
+      {
+        "text": "Judá tem sacerdotes filhos de Arão e guarda o preceito do Senhor.",
+        "evidenceRef": "2 Crônicas 13:10",
+        "evidenceSpan": "o Senhor é nosso Deus, e nunca O deixamos"
+      },
+      {
+        "text": "Deus está com Judá; não pelejarei contra o Senhor, porque não serão bem-sucedidos.",
+        "evidenceRef": "2 Crônicas 13:12",
+        "evidenceSpan": "não pelejem contra o Senhor, Deus de seus pais, porque não serão bem-sucedidos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "aliança",
+        "gloss": "Aliança de sal que firma o reino de Davi."
+      },
+      {
+        "term": "rebelou",
+        "gloss": "Ação de Jeroboão contra seu senhor."
+      },
+      {
+        "term": "bem-sucedidos",
+        "gloss": "Resultado negado a quem peleja contra o Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Abias proclama a aliança de Davi",
+        "evidenceRef": "2 Crônicas 13:4–5"
+      },
+      {
+        "label": "Lembra a rebelião de Jeroboão",
+        "evidenceRef": "2 Crônicas 13:6–7"
+      },
+      {
+        "label": "Contrasta culto falso e culto verdadeiro",
+        "evidenceRef": "2 Crônicas 13:8–11"
+      },
+      {
+        "label": "Avisa: Deus está à frente",
+        "evidenceRef": "2 Crônicas 13:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Judá guarda o preceito; Israel deixou o Senhor.",
+        "marker": "porém",
+        "evidenceRef": "2 Crônicas 13:11"
+      },
+      {
+        "kind": "causa",
+        "text": "Não pelejarei contra o Senhor, porque não serão bem-sucedidos.",
+        "marker": "porque",
+        "evidenceRef": "2 Crônicas 13:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "No entanto, Jeroboão se rebelou.",
+        "marker": "No entanto",
+        "evidenceRef": "2 Crônicas 13:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 18:19",
+        "bridge": "Aliança de sal perpétua"
+      },
+      {
+        "ref": "2 Samuel 7:16",
+        "bridge": "Casa de Davi para sempre"
+      },
+      {
+        "ref": "1 Reis 12:28",
+        "bridge": "Bezerros de ouro de Jeroboão"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A aliança com Davi era só temporária.",
+        "why": "O texto diz soberania para sempre, por aliança de sal."
+      },
+      {
+        "text": "Judá e Israel têm o mesmo culto fiel.",
+        "why": "Abias denuncia bezerros e sacerdotes ilegítimos."
+      },
+      {
+        "text": "Pelear contra Judá não envolve pelear contra Deus.",
+        "why": "13:12 diz: não pelejem contra o Senhor."
+      }
+    ],
+    "centralInsight": "O Senhor deu a Davi o reino para sempre; quem luta contra ele luta contra Deus.",
+    "anchorQuestion": "O que 2 Crônicas 13:5 diz sobre a soberania dada a Davi?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 13:5, o Senhor concedeu a Davi a soberania só por um ano.",
+      "verseRef": "2 Crônicas 13:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "concedeu para sempre a Davi a soberania sobre Israel",
+      "feedbackCorrect": "A soberania é para sempre, por aliança de sal.",
+      "feedbackWrong": {
+        "true": "Releia 13:5."
+      },
+      "hint": "Veja a duração da concessão.",
+      "learningObjective": "Observar a aliança.",
+      "evidence": [
+        "2 Crônicas 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 13:5, toque a expressão da duração da soberania.",
+      "verseRef": "2 Crônicas 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Zemaraim"
+        },
+        {
+          "id": "c",
+          "text": "Efraim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "concedeu para sempre a Davi a soberania",
+      "feedbackCorrect": "Para sempre marca a duração.",
+      "feedbackWrong": {
+        "b": "É o monte.",
+        "c": "É a região."
+      },
+      "hint": "Procure a duração.",
+      "learningObjective": "Identificar para sempre.",
+      "evidence": [
+        "2 Crônicas 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 13:12, por que não devem pelejar contra o Senhor?",
+      "verseRef": "2 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque não serão bem-sucedidos"
+        },
+        {
+          "id": "b",
+          "text": "Porque têm mais carros"
+        },
+        {
+          "id": "c",
+          "text": "Porque Abias teme Jeroboão"
+        },
+        {
+          "id": "d",
+          "text": "Porque a aliança acabou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque não serão bem-sucedidos",
+      "feedbackCorrect": "O porque explica o aviso.",
+      "feedbackWrong": {
+        "b": "Não é o motivo dado.",
+        "c": "Abias confronta, não foge.",
+        "d": "A aliança é para sempre."
+      },
+      "hint": "Leia a razão final.",
+      "learningObjective": "Identificar o aviso.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 13:12 na ordem do texto.",
+      "verseRef": "2 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que Deus está conosco, à nossa frente"
+        },
+        {
+          "id": "b",
+          "text": "não pelejem contra o Senhor, Deus de seus pais"
+        },
+        {
+          "id": "c",
+          "text": "porque não serão bem-sucedidos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não pelejem contra o Senhor, Deus de seus pais",
+      "feedbackCorrect": "Presença, aviso e motivo.",
+      "feedbackWrong": {
+        "default": "Comece pela presença de Deus."
+      },
+      "hint": "O sucesso negado fecha.",
+      "learningObjective": "Reconhecer 13:12.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 13:5, a soberania foi dada por uma _____ de sal.",
+      "verseRef": "2 Crônicas 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "muralha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por uma aliança de sal",
+      "feedbackCorrect": "Aliança de sal firma o reino.",
+      "feedbackWrong": {
+        "b": "Não é espada.",
+        "c": "Não é muralha."
+      },
+      "hint": "Veja o tipo de pacto.",
+      "learningObjective": "Lembrar a aliança.",
+      "evidence": [
+        "2 Crônicas 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 13:5 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 13:5",
+      "passageA": {
+        "ref": "2 Crônicas 13:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O reino de Davi está firmado por Deus para sempre."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino firmado por Deus"
+        },
+        {
+          "id": "b",
+          "text": "Trono só de Jeroboão"
+        },
+        {
+          "id": "c",
+          "text": "Fim da linhagem de Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "concedeu para sempre a Davi a soberania",
+      "feedbackCorrect": "A aliança sustenta o confronto.",
+      "feedbackWrong": {
+        "b": "Jeroboão é o rebelde.",
+        "c": "A soberania é de Davi."
+      },
+      "hint": "Veja a concessão.",
+      "learningObjective": "Ligar aliança e confronto.",
+      "evidence": [
+        "2 Crônicas 13:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 13:12, não devem pelejar contra o Senhor porque não serão bem-sucedidos.",
+      "verseRef": "2 Crônicas 13:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque não serão bem-sucedidos",
+      "feedbackCorrect": "O porque liga o aviso ao resultado.",
+      "feedbackWrong": {
+        "false": "Repare na palavra porque."
+      },
+      "hint": "Veja a razão do aviso.",
+      "learningObjective": "Compreender o aviso.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 13:12, toque a palavra que marca a causa do aviso.",
+      "verseRef": "2 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "trombetas"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque não serão bem-sucedidos",
+      "feedbackCorrect": "Porque introduz a causa.",
+      "feedbackWrong": {
+        "b": "São o sinal do culto.",
+        "c": "É o destinatário."
+      },
+      "hint": "Procure a palavra do motivo.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 13:5 se relaciona com 13:12?",
+      "verseRef": "2 Crônicas 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A aliança eterna torna a guerra contra Judá guerra contra Deus"
+        },
+        {
+          "id": "b",
+          "text": "A aliança autoriza os bezerros de Jeroboão"
+        },
+        {
+          "id": "c",
+          "text": "Deus abandona a casa de Davi"
+        },
+        {
+          "id": "d",
+          "text": "O sucesso é garantido a Israel do norte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pelejem contra o Senhor, Deus de seus pais",
+      "feedbackCorrect": "Aliança e presença de Deus se unem.",
+      "feedbackWrong": {
+        "b": "Os bezerros são denunciados.",
+        "c": "A soberania é para sempre.",
+        "d": "Não serão bem-sucedidos."
+      },
+      "hint": "Una aliança e aviso.",
+      "learningObjective": "Relacionar aliança e guerra.",
+      "evidence": [
+        "2 Crônicas 13:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o discurso em 2 Crônicas 13:4–12?",
+      "verseRef": "2 Crônicas 13:4–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abias proclama a aliança de Davi"
+        },
+        {
+          "id": "b",
+          "text": "Contrasta culto falso e verdadeiro"
+        },
+        {
+          "id": "c",
+          "text": "Avisa que Deus está à frente"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis que Deus está conosco, à nossa frente",
+      "feedbackCorrect": "Aliança, culto e aviso.",
+      "feedbackWrong": {
+        "default": "Comece pela aliança."
+      },
+      "hint": "O aviso fecha.",
+      "learningObjective": "Compreender o discurso.",
+      "evidence": [
+        "2 Crônicas 13:4–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 13:11, Judá guarda o _____ do Senhor.",
+      "verseRef": "2 Crônicas 13:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "preceito"
+        },
+        {
+          "id": "b",
+          "text": "bezerro"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nós guardamos o preceito do Senhor, nosso Deus",
+      "feedbackCorrect": "Preceito marca a fidelidade do culto.",
+      "feedbackWrong": {
+        "b": "Os bezerros são do norte.",
+        "c": "Ouro não é o termo aqui."
+      },
+      "hint": "Veja o que Judá guarda.",
+      "learningObjective": "Lembrar o preceito.",
+      "evidence": [
+        "2 Crônicas 13:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 13:5 a 2 Samuel 7:16?",
+      "verseRef": "2 Crônicas 13:5",
+      "passageA": {
+        "ref": "2 Crônicas 13:5"
+      },
+      "passageB": {
+        "ref": "2 Samuel 7:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Casa de Davi para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Fim imediato do trono"
+        },
+        {
+          "id": "c",
+          "text": "Reino só de Jeroboão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "concedeu para sempre a Davi a soberania",
+      "feedbackCorrect": "Os dois afirmam a permanência da casa de Davi.",
+      "feedbackWrong": {
+        "b": "É para sempre.",
+        "c": "Davi é o foco."
+      },
+      "hint": "Compare a duração.",
+      "learningObjective": [
+        "2 Crônicas 13:5",
+        "2 Samuel 7:16"
+      ],
+      "evidence": "Relacionar Crônicas a Samuel."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 13:4–12 ensina que pelejar contra Judá é só política, sem envolver a Deus.",
+      "verseRef": "2 Crônicas 13:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "não pelejem contra o Senhor, Deus de seus pais",
+      "feedbackCorrect": "Pelear contra Judá é pelear contra o Senhor.",
+      "feedbackWrong": {
+        "true": "Leia o aviso de 13:12."
+      },
+      "hint": "Veja contra quem não devem pelejari.",
+      "learningObjective": "Corrigir a leitura só política.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 13:12, toque o trecho que sustenta a presença de Deus na batalha.",
+      "verseRef": "2 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus está conosco"
+        },
+        {
+          "id": "b",
+          "text": "filhos de Israel"
+        },
+        {
+          "id": "c",
+          "text": "não serão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus está conosco, à nossa frente",
+      "feedbackCorrect": "Deus à frente sustenta o aviso.",
+      "feedbackWrong": {
+        "b": "É o destinatário.",
+        "c": "É o resultado."
+      },
+      "hint": "Procure a presença anunciada.",
+      "learningObjective": "Sustentar a presença.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 13:4–12 sustenta?",
+      "verseRef": "2 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem luta contra o reino de Davi luta contra o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "A aliança de sal já acabou"
+        },
+        {
+          "id": "c",
+          "text": "Os bezerros garantem o sucesso"
+        },
+        {
+          "id": "d",
+          "text": "Jeroboão guarda o preceito do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pelejem contra o Senhor, Deus de seus pais, porque não serão bem-sucedidos",
+      "feedbackCorrect": "Aliança e presença formam a leitura.",
+      "feedbackWrong": {
+        "b": "É para sempre.",
+        "c": "Os bezerros são denunciados.",
+        "d": "Judá guarda o preceito."
+      },
+      "hint": "Una 13:5 e 13:12.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a aliança de Davi ao aviso da batalha?",
+      "verseRef": "2 Crônicas 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus firma a casa de Davi"
+        },
+        {
+          "id": "b",
+          "text": "Jeroboão se rebela com culto falso"
+        },
+        {
+          "id": "c",
+          "text": "Abias avisa que Deus está à frente"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "concedeu para sempre a Davi a soberania",
+      "feedbackCorrect": "Aliança, rebelião e aviso.",
+      "feedbackWrong": {
+        "default": "Comece pela aliança."
+      },
+      "hint": "O aviso fecha.",
+      "learningObjective": "Encadear o confronto.",
+      "evidence": [
+        "2 Crônicas 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 13:12, eles não serão _____.",
+      "verseRef": "2 Crônicas 13:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "bem-sucedidos"
+        },
+        {
+          "id": "b",
+          "text": "esquecidos"
+        },
+        {
+          "id": "c",
+          "text": "coroados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque não serão bem-sucedidos",
+      "feedbackCorrect": "Bem-sucedidos carrega o resultado negado.",
+      "feedbackWrong": {
+        "b": "Não é esquecidos.",
+        "c": "Não é coroados."
+      },
+      "hint": "Veja o que não serão.",
+      "learningObjective": "Lembrar o termo do resultado.",
+      "evidence": [
+        "2 Crônicas 13:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 13:5 a Números 18:19?",
+      "verseRef": "2 Crônicas 13:5",
+      "passageA": {
+        "ref": "2 Crônicas 13:5"
+      },
+      "passageB": {
+        "ref": "Números 18:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança de sal perpétua"
+        },
+        {
+          "id": "b",
+          "text": "Fim de todo sacerdócio"
+        },
+        {
+          "id": "c",
+          "text": "Bezerros como aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por uma aliança de sal",
+      "feedbackCorrect": "A imagem da aliança de sal ecoa a perpetuidade.",
+      "feedbackWrong": {
+        "b": "Há sacerdócio fiel em Judá.",
+        "c": "Os bezerros são o contraste."
+      },
+      "hint": "Compare a aliança de sal.",
+      "learningObjective": [
+        "2 Crônicas 13:5",
+        "Números 18:19"
+      ],
+      "evidence": "Ligar Crônicas a Números."
+    }
+  ]
+}

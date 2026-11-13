@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 28:1–10",
+    "passages": [
+      {
+        "ref": "Ezequiel 28:1–10"
+      }
+    ],
+    "context": "O príncipe de Tiro eleva o coração e se diz Deus; o Senhor lembra que ele é homem e trará estrangeiros.",
+    "keyword": "coração",
+    "keywordGloss": "Centro do orgulho do príncipe, elevado como se fosse o coração de Deus.",
+    "focusQuestion": "Quando o sucesso inchá o coração, você ainda admite que é só homem?",
+    "reflectionPrompts": [
+      "Eu sou Deus",
+      "Sabedoria e riquezas",
+      "Morte como homem"
+    ],
+    "facts": [
+      {
+        "text": "O príncipe diz: Eu sou Deus, no coração dos mares.",
+        "evidenceRef": "Ezequiel 28:2",
+        "evidenceSpan": "você diz: \"Eu sou Deus, estou sentado no trono de Deus, no coração dos mares\""
+      },
+      {
+        "text": "Ele é homem e não Deus, mas considera o coração como de Deus.",
+        "evidenceRef": "Ezequiel 28:2",
+        "evidenceSpan": "sendo você homem e não Deus, e considera o seu coração como se fosse o coração de Deus"
+      },
+      {
+        "text": "Pela sabedoria alcançou poder, ouro e prata.",
+        "evidenceRef": "Ezequiel 28:4",
+        "evidenceSpan": "Pela sua sabedoria e pelo seu entendimento, você alcançou o poder e adquiriu ouro e prata em seus tesouros"
+      },
+      {
+        "text": "Por causa das riquezas o coração se elevou.",
+        "evidenceRef": "Ezequiel 28:5",
+        "evidenceSpan": "por causa delas, o seu coração se elevou"
+      },
+      {
+        "text": "Estrangeiros o farão descer à cova; morrerá como homem.",
+        "evidenceRef": "Ezequiel 28:8",
+        "evidenceSpan": "Na cova te farão descer, e morrerás da morte como os traspassados no coração do mar"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "coração",
+        "gloss": "Centro do orgulho elevado do príncipe."
+      },
+      {
+        "term": "sabedoria",
+        "gloss": "Meio pelo qual alcançou poder e riquezas."
+      },
+      {
+        "term": "estrangeiros",
+        "gloss": "Instrumento do juízo contra o orgulho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acusação: Eu sou Deus",
+        "evidenceRef": "Ezequiel 28:1–2"
+      },
+      {
+        "label": "Sabedoria, comércio e orgulho",
+        "evidenceRef": "Ezequiel 28:3–5"
+      },
+      {
+        "label": "Por isso virão estrangeiros",
+        "evidenceRef": "Ezequiel 28:6–7"
+      },
+      {
+        "label": "Morte como homem, não como Deus",
+        "evidenceRef": "Ezequiel 28:8–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Visto que elevou o coração, virá o juízo.",
+        "marker": "Visto que",
+        "evidenceRef": "Ezequiel 28:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por causa das riquezas o coração se elevou.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 28:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Diz ser Deus, mas é homem nas mãos de quem o fere.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 28:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 14:13–14",
+        "bridge": "Elevação até o céu"
+      },
+      {
+        "ref": "Atos 12:21–23",
+        "bridge": "Homem que se faz deus"
+      },
+      {
+        "ref": "2 Tessalonicenses 2:4",
+        "bridge": "Se põe como Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O príncipe é reconhecido como Deus verdadeiro.",
+        "why": "O texto diz: sendo você homem e não Deus."
+      },
+      {
+        "text": "As riquezas humilham o coração.",
+        "why": "Por causa delas o coração se elevou."
+      },
+      {
+        "text": "Ele morrerá como Deus no trono.",
+        "why": "Morrerá da morte dos traspassados, como homem."
+      }
+    ],
+    "centralInsight": "O príncipe se diz Deus; morrerá como homem.",
+    "anchorQuestion": "O que o príncipe de Tiro diz em Ezequiel 28:2?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 28:2, o príncipe de Tiro diz que é Deus.",
+      "verseRef": "Ezequiel 28:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "você diz: \"Eu sou Deus, estou sentado no trono de Deus",
+      "feedbackCorrect": "A declaração de divindade é citada.",
+      "feedbackWrong": {
+        "false": "O versículo cita a fala."
+      },
+      "hint": "Veja o que ele diz.",
+      "learningObjective": "Identificar a declaração.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 28:2, toque a negação da divindade.",
+      "verseRef": "Ezequiel 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "não Deus"
+        },
+        {
+          "id": "b",
+          "text": "trono de Deus"
+        },
+        {
+          "id": "c",
+          "text": "coração dos mares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sendo você homem e não Deus",
+      "feedbackCorrect": "Ele é homem e não Deus.",
+      "feedbackWrong": {
+        "b": "É a pretensão.",
+        "c": "É o lugar da pretensão."
+      },
+      "hint": "Procure a frase que nega a divindade.",
+      "learningObjective": "Identificar a realidade.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 28:5, o que acontece por causa das riquezas?",
+      "verseRef": "Ezequiel 28:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O coração se elevou"
+        },
+        {
+          "id": "b",
+          "text": "Ele se humilhou"
+        },
+        {
+          "id": "c",
+          "text": "Devolveu o ouro"
+        },
+        {
+          "id": "d",
+          "text": "Abandonou o comércio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa delas, o seu coração se elevou",
+      "feedbackCorrect": "As riquezas elevam o coração.",
+      "feedbackWrong": {
+        "b": "Não há humilhação.",
+        "c": "Não há devolução.",
+        "d": "O comércio aumentou as riquezas."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Reconhecer o efeito das riquezas.",
+      "evidence": [
+        "Ezequiel 28:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 28:4 na ordem do texto.",
+      "verseRef": "Ezequiel 28:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pela sua sabedoria e pelo seu entendimento"
+        },
+        {
+          "id": "b",
+          "text": "você alcançou o poder"
+        },
+        {
+          "id": "c",
+          "text": "e adquiriu ouro e prata em seus tesouros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Pela sua sabedoria e pelo seu entendimento, você alcançou o poder",
+      "feedbackCorrect": "Sabedoria → poder → tesouros.",
+      "feedbackWrong": {
+        "default": "Comece pela sabedoria."
+      },
+      "hint": "Comece pela sabedoria.",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Ezequiel 28:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 28:2, sendo você ___ e não Deus.",
+      "verseRef": "Ezequiel 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "anjo"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sendo você homem e não Deus",
+      "feedbackCorrect": "A palavra é homem.",
+      "feedbackWrong": {
+        "b": "Não é anjo.",
+        "c": "O contraste é homem, não rei."
+      },
+      "hint": "Veja o substantivo da correção.",
+      "learningObjective": "Lembrar a identidade.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 28:2 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 28:2",
+      "passageA": {
+        "ref": "Ezequiel 28:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O príncipe eleva o coração e se diz Deus; o Senhor o trata como homem."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Homem que se faz Deus"
+        },
+        {
+          "id": "b",
+          "text": "Cedros do Líbano"
+        },
+        {
+          "id": "c",
+          "text": "Redes no mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você diz: \"Eu sou Deus",
+      "feedbackCorrect": "A declaração resume o orgulho.",
+      "feedbackWrong": {
+        "b": "Os cedros estão no lamento.",
+        "c": "As redes estão em Ezequiel 26."
+      },
+      "hint": "Compare a fala.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 28:5, as riquezas fizeram o coração do príncipe se humilhar.",
+      "verseRef": "Ezequiel 28:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "por causa delas, o seu coração se elevou",
+      "feedbackCorrect": "As riquezas elevam, não humilham.",
+      "feedbackWrong": {
+        "true": "O texto diz que o coração se elevou."
+      },
+      "hint": "Veja o efeito das riquezas.",
+      "learningObjective": "Perceber o orgulho.",
+      "evidence": [
+        "Ezequiel 28:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 28:2, toque a expressão que marca a causa da acusação.",
+      "verseRef": "Ezequiel 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Visto que"
+        },
+        {
+          "id": "b",
+          "text": "Eu sou Deus"
+        },
+        {
+          "id": "c",
+          "text": "coração dos mares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Visto que se elevou o seu coração",
+      "feedbackCorrect": "\"Visto que\" introduz a causa.",
+      "feedbackWrong": {
+        "b": "É a frase citada.",
+        "c": "É o lugar da pretensão."
+      },
+      "hint": "Procure a abertura da acusação.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 28:2 e 28:9 se relacionam?",
+      "verseRef": "Ezequiel 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem se diz Deus confrontará a morte como homem"
+        },
+        {
+          "id": "b",
+          "text": "Ele será confirmado como Deus"
+        },
+        {
+          "id": "c",
+          "text": "O trono o protege para sempre"
+        },
+        {
+          "id": "d",
+          "text": "Os estrangeiros o coroam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sendo você homem e não Deus",
+      "feedbackCorrect": "A pretensão encontra a morte humana.",
+      "feedbackWrong": {
+        "b": "O texto nega a divindade.",
+        "c": "Estrangeiros o ferem.",
+        "d": "Eles desembainham espadas."
+      },
+      "hint": "Una pretensão e morte.",
+      "learningObjective": "Relacionar orgulho e juízo.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 28?",
+      "verseRef": "Ezequiel 28:2–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O príncipe se declara Deus"
+        },
+        {
+          "id": "b",
+          "text": "Sabedoria e riquezas elevam o coração"
+        },
+        {
+          "id": "c",
+          "text": "Estrangeiros o fazem descer à cova"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Na cova te farão descer",
+      "feedbackCorrect": "Declaração → orgulho → cova.",
+      "feedbackWrong": {
+        "default": "Comece na declaração."
+      },
+      "hint": "Comece na declaração.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 28:2",
+        "Ezequiel 28:5",
+        "Ezequiel 28:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 28:7, Eis que trarei sobre você os mais terríveis ___.",
+      "verseRef": "Ezequiel 28:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "estrangeiros"
+        },
+        {
+          "id": "b",
+          "text": "anjos"
+        },
+        {
+          "id": "c",
+          "text": "pastores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trarei sobre você os mais terríveis estrangeiros",
+      "feedbackCorrect": "O instrumento são estrangeiros.",
+      "feedbackWrong": {
+        "b": "Não são anjos.",
+        "c": "Não são pastores."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o instrumento.",
+      "evidence": [
+        "Ezequiel 28:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 28:2 a Isaías 14:13–14?",
+      "verseRef": "Ezequiel 28:2",
+      "passageA": {
+        "ref": "Ezequiel 28:2"
+      },
+      "passageB": {
+        "ref": "Isaías 14:13–14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Elevação até o céu"
+        },
+        {
+          "id": "b",
+          "text": "Redes no mar"
+        },
+        {
+          "id": "c",
+          "text": "Curral de Amom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou Deus, estou sentado no trono de Deus",
+      "feedbackCorrect": "Nos dois, a criatura se eleva até Deus.",
+      "feedbackWrong": {
+        "b": "As redes estão em Ezequiel 26.",
+        "c": "Amom está noutra cena."
+      },
+      "hint": "Compare a elevação.",
+      "learningObjective": "Relacionar a Isaías 14.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 28:9, diante de quem o mata ele ainda poderá se afirmar Deus com sucesso.",
+      "verseRef": "Ezequiel 28:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois não passas de homem e não és Deus, nas mãos daquele que te fere",
+      "feedbackCorrect": "Nas mãos de quem o fere, não passa de homem.",
+      "feedbackWrong": {
+        "true": "O texto nega que ele seja Deus."
+      },
+      "hint": "Veja a resposta à pergunta \"Sou Deus?\".",
+      "learningObjective": "Rejeitar a leitura do sucesso divino.",
+      "evidence": [
+        "Ezequiel 28:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 28:9, toque o trecho que sustenta que ele não é Deus.",
+      "verseRef": "Ezequiel 28:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "não és Deus"
+        },
+        {
+          "id": "b",
+          "text": "Sou Deus"
+        },
+        {
+          "id": "c",
+          "text": "te fere"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois não passas de homem e não és Deus",
+      "feedbackCorrect": "\"Não és Deus\" sustenta a correção.",
+      "feedbackWrong": {
+        "b": "É a pergunta vã.",
+        "c": "É o agente do juízo."
+      },
+      "hint": "Procure a correção.",
+      "learningObjective": "Tocar a negação.",
+      "evidence": [
+        "Ezequiel 28:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 28:1–10 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Orgulho que se faz Deus encontra morte humana"
+        },
+        {
+          "id": "b",
+          "text": "O príncipe é Deus verdadeiro no mar"
+        },
+        {
+          "id": "c",
+          "text": "As riquezas salvam da cova"
+        },
+        {
+          "id": "d",
+          "text": "Estrangeiros o adoram como Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sendo você homem e não Deus",
+      "feedbackCorrect": "Pretensão divina → juízo → morte como homem.",
+      "feedbackWrong": {
+        "b": "O texto nega.",
+        "c": "A cova o espera.",
+        "d": "Eles o ferem."
+      },
+      "hint": "Una orgulho e morte.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do juízo sobre o príncipe.",
+      "verseRef": "Ezequiel 28:2–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele eleva o coração e se diz Deus"
+        },
+        {
+          "id": "b",
+          "text": "Riquezas reforçam o orgulho"
+        },
+        {
+          "id": "c",
+          "text": "Ele desce à cova como homem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Na cova te farão descer",
+      "feedbackCorrect": "Orgulho → riquezas → cova.",
+      "feedbackWrong": {
+        "default": "Comece no orgulho."
+      },
+      "hint": "Comece no orgulho.",
+      "learningObjective": "Encadear o juízo.",
+      "evidence": [
+        "Ezequiel 28:2",
+        "Ezequiel 28:5",
+        "Ezequiel 28:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 28:5, o seu ___ se elevou.",
+      "verseRef": "Ezequiel 28:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "coração"
+        },
+        {
+          "id": "b",
+          "text": "navio"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o seu coração se elevou",
+      "feedbackCorrect": "O termo é coração.",
+      "feedbackWrong": {
+        "b": "Não é navio.",
+        "c": "Não é templo."
+      },
+      "hint": "Veja o que se elevou.",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "Ezequiel 28:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 28:2 a Atos 12:21–23?",
+      "verseRef": "Ezequiel 28:2",
+      "passageA": {
+        "ref": "Ezequiel 28:2"
+      },
+      "passageB": {
+        "ref": "Atos 12:21–23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Homem que se faz deus"
+        },
+        {
+          "id": "b",
+          "text": "Cedros do Líbano"
+        },
+        {
+          "id": "c",
+          "text": "Zombaria de Amom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você diz: \"Eu sou Deus",
+      "feedbackCorrect": "Nos dois, um homem recebe glória divina e cai.",
+      "feedbackWrong": {
+        "b": "Os cedros estão no lamento.",
+        "c": "Amom está noutra cena."
+      },
+      "hint": "Compare a pretensão.",
+      "learningObjective": "Ligar a Atos 12.",
+      "evidence": [
+        "Ezequiel 28:2"
+      ]
+    }
+  ]
+}

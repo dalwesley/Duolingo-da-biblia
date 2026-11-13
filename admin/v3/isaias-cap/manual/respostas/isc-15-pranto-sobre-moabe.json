@@ -1,0 +1,719 @@
+{
+  "study": {
+    "passageRef": "Isaías 15:1–6",
+    "passages": [
+      {
+        "ref": "Isaías 15:1–9"
+      }
+    ],
+    "context": "Oráculo contra Moabe: cidades caem de noite, o povo lamenta de saco e calva, e o coração do profeta clama pelos fugitivos.",
+    "keyword": "pranto",
+    "keywordGloss": "O clamor que cerca os limites de Moabe, das cidades às torrentes.",
+    "focusQuestion": "Você consegue sentir peso pelo sofrimento de um povo que não é o seu?",
+    "reflectionPrompts": [
+      "Noite de assolação",
+      "Coração que clama",
+      "Águas de sangue"
+    ],
+    "facts": [
+      {
+        "text": "Ar e Kir de Moabe foram assoladas e devastadas na noite.",
+        "evidenceRef": "Isaías 15:1",
+        "evidenceSpan": "Ar de Moabe foi assolada na noite, e Kir de Moabe foi devastada"
+      },
+      {
+        "text": "Moabe sobe aos altos a chorar; haverá calvas e barba raspada.",
+        "evidenceRef": "Isaías 15:2",
+        "evidenceSpan": "sobre todas as suas cabeças haverá calvas, e toda a barba será raspada"
+      },
+      {
+        "text": "Nas ruas cingem-se de pano de saco e andam uivando e chorando.",
+        "evidenceRef": "Isaías 15:3",
+        "evidenceSpan": "Cingiram-se de pano de saco nas suas ruas"
+      },
+      {
+        "text": "O coração do profeta clama por Moabe; fugitivos vão a Zoar chorando.",
+        "evidenceRef": "Isaías 15:5",
+        "evidenceSpan": "Meu coração clama por Moabe; seus fugitivos fogem para Zoar"
+      },
+      {
+        "text": "As águas de Nimrim se tornaram desolação; o pasto secou.",
+        "evidenceRef": "Isaías 15:6",
+        "evidenceSpan": "As águas de Nimrim se tornaram uma desolação; o pasto secou"
+      },
+      {
+        "text": "As águas de Dimom estão cheias de sangue; ainda virão leões contra os que escaparem.",
+        "evidenceRef": "Isaías 15:9",
+        "evidenceSpan": "as águas de Dimom estão cheias de sangue"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pranto",
+        "gloss": "O clamor que cerca os limites de Moabe até Eglaim e Beer-Elim."
+      },
+      {
+        "term": "fugitivos",
+        "gloss": "Os que fogem para Zoar chorando pela subida de Luíte."
+      },
+      {
+        "term": "desolação",
+        "gloss": "Estado das águas de Nimrim: pasto seco sem verdor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cidades caem na noite",
+        "evidenceRef": "Isaías 15:1"
+      },
+      {
+        "label": "Luto público: altos, saco e uivo",
+        "evidenceRef": "Isaías 15:2–4"
+      },
+      {
+        "label": "Coração que clama e fuga chorosa",
+        "evidenceRef": "Isaías 15:5"
+      },
+      {
+        "label": "Desolação das águas e sangue",
+        "evidenceRef": "Isaías 15:6–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Por isso os soldados de Moabe levantam grande grito.",
+        "marker": "por isso",
+        "evidenceRef": "Isaías 15:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto levam o que pouparam além das torrentes dos salgueiros.",
+        "marker": "Portanto",
+        "evidenceRef": "Isaías 15:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Pois as águas de Dimom estão cheias de sangue.",
+        "marker": "Pois",
+        "evidenceRef": "Isaías 15:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 48:31",
+        "bridge": "Clamo por Moabe"
+      },
+      {
+        "ref": "Amós 2:1–2",
+        "bridge": "Juízo sobre Moabe"
+      },
+      {
+        "ref": "Sofonias 2:9",
+        "bridge": "Moabe como Sodoma"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O profeta celebra com frieza a ruína de Moabe.",
+        "why": "Ele diz: meu coração clama por Moabe."
+      },
+      {
+        "text": "A devastação foi só de dia, com tempo de fuga tranquila.",
+        "why": "Ar e Kir caem na noite."
+      },
+      {
+        "text": "Restou verdor e segurança nas águas de Nimrim.",
+        "why": "Pasto secou e já não há verdor algum."
+      }
+    ],
+    "centralInsight": "O meu coração clama por Moabe; os fugitivos chegam a Zoar.",
+    "anchorQuestion": "O que Isaías 15:5 diz sobre o coração do profeta e os fugitivos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 15:1, Ar e Kir de Moabe foram assoladas e devastadas na noite.",
+      "verseRef": "Isaías 15:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ar de Moabe foi assolada na noite, e Kir de Moabe foi devastada",
+      "feedbackCorrect": "A profecia abre com a queda noturna das duas cidades.",
+      "feedbackWrong": {
+        "false": "O texto diz que ambos foram destruídos na noite."
+      },
+      "hint": "Leia o tempo da assolação.",
+      "learningObjective": "Observar a queda noturna de Moabe.",
+      "evidence": [
+        "Isaías 15:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 15:5, toque para onde fogem os fugitivos de Moabe.",
+      "verseRef": "Isaías 15:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zoar"
+        },
+        {
+          "id": "b",
+          "text": "Luíte"
+        },
+        {
+          "id": "c",
+          "text": "Horonaim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seus fugitivos fogem para Zoar",
+      "feedbackCorrect": "Os fugitivos fogem para Zoar.",
+      "feedbackWrong": {
+        "b": "Luíte é a subida do caminho choroso.",
+        "c": "Horonaim é onde se ouve o grito."
+      },
+      "hint": "Veja o destino depois de \"fogem para\".",
+      "learningObjective": "Identificar o destino da fuga.",
+      "evidence": [
+        "Isaías 15:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 15:3, com que se cingem nas ruas?",
+      "verseRef": "Isaías 15:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pano de saco"
+        },
+        {
+          "id": "b",
+          "text": "Vestes de festa"
+        },
+        {
+          "id": "c",
+          "text": "Armaduras"
+        },
+        {
+          "id": "d",
+          "text": "Coroas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cingiram-se de pano de saco nas suas ruas",
+      "feedbackCorrect": "O luto público usa pano de saco nas ruas.",
+      "feedbackWrong": {
+        "b": "Há uivo e choro, não festa.",
+        "c": "O texto fala de saco.",
+        "d": "Há calvas, não coroas."
+      },
+      "hint": "Leia o início do versículo.",
+      "learningObjective": "Notar o sinal de luto.",
+      "evidence": [
+        "Isaías 15:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 15:5 na ordem do texto.",
+      "verseRef": "Isaías 15:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Meu coração clama por Moabe"
+        },
+        {
+          "id": "b",
+          "text": "seus fugitivos fogem para Zoar"
+        },
+        {
+          "id": "c",
+          "text": "vão chorando pela subida de Luíte"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Meu coração clama por Moabe; seus fugitivos fogem para Zoar",
+      "feedbackCorrect": "Primeiro o clamor do coração; depois a fuga chorosa.",
+      "feedbackWrong": {
+        "default": "Comece por \"Meu coração clama\"."
+      },
+      "hint": "O versículo abre com o coração.",
+      "learningObjective": "Seguir a ordem do clamor.",
+      "evidence": [
+        "Isaías 15:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 15:6, as águas de Nimrim se tornaram uma ___.",
+      "verseRef": "Isaías 15:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "desolação"
+        },
+        {
+          "id": "b",
+          "text": "colheita"
+        },
+        {
+          "id": "c",
+          "text": "alegria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As águas de Nimrim se tornaram uma desolação",
+      "feedbackCorrect": "Nimrim vira desolação: pasto seco sem verdor.",
+      "feedbackWrong": {
+        "b": "Não há colheita; o pasto secou.",
+        "c": "O quadro é de luto."
+      },
+      "hint": "Veja o substantivo depois de \"tornaram uma\".",
+      "learningObjective": "Lembrar o estado de Nimrim.",
+      "evidence": [
+        "Isaías 15:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 15:5 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 15:5",
+      "passageA": {
+        "ref": "Isaías 15:5",
+        "text": "Meu coração clama por Moabe"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Oráculo de juízo: cidades caem de noite e Moabe lamenta."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Compaixão no juízo"
+        },
+        {
+          "id": "b",
+          "text": "Alegria sem pranto"
+        },
+        {
+          "id": "c",
+          "text": "Fuga sem choro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu coração clama por Moabe",
+      "feedbackCorrect": "No juízo, o coração do profeta ainda clama por Moabe.",
+      "feedbackWrong": {
+        "b": "Há pranto e uivo.",
+        "c": "Vão chorando pela subida."
+      },
+      "hint": "Compare o clamor com a ruína anunciada.",
+      "learningObjective": "Ligar o juízo à compaixão.",
+      "evidence": [
+        "Isaías 15:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 15:4, o grande grito dos soldados aparece sem ligação com o clamor das cidades.",
+      "verseRef": "Isaías 15:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "por isso, os soldados de Moabe levantam um grande grito",
+      "feedbackCorrect": "\"Por isso\" liga o grito ao clamor de Hesbom, Eleale e Jahaz.",
+      "feedbackWrong": {
+        "true": "O versículo usa \"por isso\" para marcar o resultado."
+      },
+      "hint": "Procure a expressão que introduz o resultado.",
+      "learningObjective": "Ver a ligação do grito ao clamor.",
+      "evidence": [
+        "Isaías 15:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 15:4, toque a expressão que marca o resultado do clamor das cidades.",
+      "verseRef": "Isaías 15:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "por isso"
+        },
+        {
+          "id": "b",
+          "text": "clamando"
+        },
+        {
+          "id": "c",
+          "text": "alma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por isso, os soldados de Moabe levantam um grande grito",
+      "feedbackCorrect": "\"Por isso\" marca o resultado: o grito dos soldados.",
+      "feedbackWrong": {
+        "b": "Clamando descreve Hesbom e Eleale.",
+        "c": "Alma estremece; não é o marcador."
+      },
+      "hint": "Veja a expressão antes de \"os soldados\".",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": [
+        "Isaías 15:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 15:5–6 relaciona fuga e terra?",
+      "verseRef": "Isaías 15:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fugitivos choram enquanto as águas viram desolação"
+        },
+        {
+          "id": "b",
+          "text": "A fuga traz verdor imediato a Nimrim"
+        },
+        {
+          "id": "c",
+          "text": "Só a terra chora; ninguém foge"
+        },
+        {
+          "id": "d",
+          "text": "Há júbilo na subida de Luíte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vão chorando pela subida de Luíte",
+      "feedbackCorrect": "Choro na fuga e desolação das águas formam o quadro.",
+      "feedbackWrong": {
+        "b": "O pasto secou.",
+        "c": "Há fugitivos.",
+        "d": "Há grito de desespero."
+      },
+      "hint": "Una a fuga do v.5 à desolação do v.6.",
+      "learningObjective": "Relacionar fuga e desolação.",
+      "evidence": [
+        "Isaías 15:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento de Isaías 15:1–6?",
+      "verseRef": "Isaías 15:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades caem na noite"
+        },
+        {
+          "id": "b",
+          "text": "Luto nos altos e nas ruas"
+        },
+        {
+          "id": "c",
+          "text": "Coração clama e águas secam"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ar de Moabe foi assolada na noite",
+      "feedbackCorrect": "Da queda noturna ao luto público e ao clamor do coração.",
+      "feedbackWrong": {
+        "default": "Comece pela queda das cidades."
+      },
+      "hint": "O oráculo abre com Ar e Kir.",
+      "learningObjective": "Ver a progressão do pranto.",
+      "evidence": [
+        "Isaías 15:1",
+        "Isaías 15:3",
+        "Isaías 15:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 15:7, qual palavra marca a consequência de levar o que pouparam?",
+      "verseRef": "Isaías 15:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto"
+        },
+        {
+          "id": "b",
+          "text": "Pois"
+        },
+        {
+          "id": "c",
+          "text": "Assim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, o que pouparam e o que ganharam levaram",
+      "feedbackCorrect": "\"Portanto\" introduz a consequência da desolação.",
+      "feedbackWrong": {
+        "b": "\"Pois\" aparece no v.9.",
+        "c": "\"Assim\" abre o v.4."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de consequência.",
+      "evidence": [
+        "Isaías 15:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 15:5 a Jeremias 48:31?",
+      "verseRef": "Isaías 15:5",
+      "passageA": {
+        "ref": "Isaías 15:5",
+        "text": "Meu coração clama por Moabe"
+      },
+      "passageB": {
+        "ref": "Jeremias 48:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamo por Moabe"
+        },
+        {
+          "id": "b",
+          "text": "Festa em Moabe"
+        },
+        {
+          "id": "c",
+          "text": "Águas sempre verdes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu coração clama por Moabe",
+      "feedbackCorrect": "Os dois profetas clamam por Moabe sob juízo.",
+      "feedbackWrong": {
+        "b": "Há pranto, não festa.",
+        "c": "Nimrim está em desolação."
+      },
+      "hint": "Compare o clamor nos dois textos.",
+      "learningObjective": "Ligar Isaías a Jeremias sobre Moabe.",
+      "evidence": [
+        "Isaías 15:5",
+        "Jeremias 48:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 15:5–9 sustenta que o juízo sobre Moabe inclui pranto, desolação e ainda mais terror sobre os que escapam.",
+      "verseRef": "Isaías 15:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "ainda acrescentarei a Dimom: leões contra aqueles que escaparem de Moabe",
+      "feedbackCorrect": "Mesmo os que escapam enfrentam leões; o juízo não é superficial.",
+      "feedbackWrong": {
+        "false": "O texto acrescenta leões contra os que escaparem."
+      },
+      "hint": "Veja o que ainda se acrescenta a Dimom.",
+      "learningObjective": "Interpretar a profundidade do juízo.",
+      "evidence": [
+        "Isaías 15:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 15:9, toque o que enche as águas de Dimom.",
+      "verseRef": "Isaías 15:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "leões"
+        },
+        {
+          "id": "c",
+          "text": "Dimom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as águas de Dimom estão cheias de sangue",
+      "feedbackCorrect": "Dimom está cheia de sangue; ainda virão leões.",
+      "feedbackWrong": {
+        "b": "Leões são o acréscimo contra os que escapam.",
+        "c": "Dimom é o lugar; o que enche as águas é sangue."
+      },
+      "hint": "Leia depois de \"cheias de\".",
+      "learningObjective": "Tocar a imagem do juízo em Dimom.",
+      "evidence": [
+        "Isaías 15:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 15:1–5 sustenta sobre o tom do oráculo?",
+      "verseRef": "Isaías 15:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há juízo duro e também coração que clama"
+        },
+        {
+          "id": "b",
+          "text": "O profeta zomba sem pesar"
+        },
+        {
+          "id": "c",
+          "text": "Só há fuga alegre sem luto"
+        },
+        {
+          "id": "d",
+          "text": "Moabe cai sem nenhum sinal de pranto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu coração clama por Moabe",
+      "feedbackCorrect": "A ruína noturna convive com a compaixão do profeta.",
+      "feedbackWrong": {
+        "b": "O coração clama.",
+        "c": "Vão chorando.",
+        "d": "Há calvas, saco e uivo."
+      },
+      "hint": "Una a queda do v.1 ao clamor do v.5.",
+      "learningObjective": "Escolher a leitura do tom.",
+      "evidence": [
+        "Isaías 15:1",
+        "Isaías 15:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o juízo sobre Moabe na Escritura?",
+      "verseRef": "Isaías 15:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isaías vê Moabe cair de noite"
+        },
+        {
+          "id": "b",
+          "text": "Amós anuncia juízo sobre Moabe"
+        },
+        {
+          "id": "c",
+          "text": "Jeremias também clama por Moabe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Profecia sobre Moabe",
+      "feedbackCorrect": "O fio une oráculos contra Moabe em Isaías, Amós e Jeremias.",
+      "feedbackWrong": {
+        "default": "Comece por Isaías; depois Amós; enfim Jeremias."
+      },
+      "hint": "Siga a ordem: Isaías, Amós, Jeremias.",
+      "learningObjective": "Encadear oráculos sobre Moabe.",
+      "evidence": [
+        "Isaías 15:1",
+        "Amós 2:1",
+        "Jeremias 48:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 15:8, o pranto cercará os ___ de Moabe.",
+      "verseRef": "Isaías 15:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "limites"
+        },
+        {
+          "id": "b",
+          "text": "altares"
+        },
+        {
+          "id": "c",
+          "text": "trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O pranto cercará os limites de Moabe",
+      "feedbackCorrect": "O pranto cerca toda a extensão de Moabe.",
+      "feedbackWrong": {
+        "b": "Não fala de altares aqui.",
+        "c": "Não há trono neste versículo."
+      },
+      "hint": "Veja o que o pranto cercará.",
+      "learningObjective": "Lembrar o alcance do pranto.",
+      "evidence": [
+        "Isaías 15:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 15:1 a Amós 2:1–2?",
+      "verseRef": "Isaías 15:1",
+      "passageA": {
+        "ref": "Isaías 15:1",
+        "text": "Profecia sobre Moabe"
+      },
+      "passageB": {
+        "ref": "Amós 2:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo sobre Moabe"
+        },
+        {
+          "id": "b",
+          "text": "Aliança com Moabe"
+        },
+        {
+          "id": "c",
+          "text": "Verdor em Nimrim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Profecia sobre Moabe",
+      "feedbackCorrect": "Ambos anunciam juízo sobre Moabe.",
+      "feedbackWrong": {
+        "b": "Não há aliança neste oráculo.",
+        "c": "Nimrim está em desolação."
+      },
+      "hint": "Compare o alvo dos dois oráculos.",
+      "learningObjective": "Ligar Isaías a Amós sobre Moabe.",
+      "evidence": [
+        "Isaías 15:1",
+        "Amós 2:1–2"
+      ]
+    }
+  ]
+}

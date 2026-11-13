@@ -1,0 +1,720 @@
+{
+ "study": {
+  "passageRef": "Provérbios 14:20–25",
+  "passages": [
+   {
+    "ref": "Provérbios 14:20–25"
+   },
+   {
+    "ref": "Provérbios 14:26–31"
+   }
+  ],
+  "context": "O trecho une pobreza, compaixão, temor do Senhor e o cuidado com quem formou o pobre: oprimir ofende; compadecer honra.",
+  "keyword": "Compaixão",
+  "keywordGloss": "Quem se compadece dos pobres é feliz e honra ao Criador.",
+  "focusQuestion": "Como você tem tratado o necessitado que Deus pôs no seu caminho?",
+  "reflectionPrompts": [
+   "Compadecer-se",
+   "Temor como abrigo",
+   "Honrar o Criador"
+  ],
+  "facts": [
+   {
+    "text": "Quem se compadece dos pobres é feliz.",
+    "evidenceRef": "Provérbios 14:21",
+    "evidenceSpan": "quem se compadece dos pobres é feliz"
+   },
+   {
+    "text": "Em todo trabalho há proveito.",
+    "evidenceRef": "Provérbios 14:23",
+    "evidenceSpan": "Em todo trabalho há proveito"
+   },
+   {
+    "text": "No temor do Senhor há abrigo seguro.",
+    "evidenceRef": "Provérbios 14:26",
+    "evidenceSpan": "No temor do Senhor, há um abrigo seguro"
+   },
+   {
+    "text": "O temor do SENHOR é fonte de vida.",
+    "evidenceRef": "Provérbios 14:27",
+    "evidenceSpan": "O temor do SENHOR é fonte de vida"
+   },
+   {
+    "text": "O longânimo demonstra grande entendimento.",
+    "evidenceRef": "Provérbios 14:29",
+    "evidenceSpan": "O longânimo demonstra grande entendimento"
+   },
+   {
+    "text": "Quem oprime o pobre ofende aquele que o formou.",
+    "evidenceRef": "Provérbios 14:31",
+    "evidenceSpan": "Quem oprime o pobre ofende aquele que o formou"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "temor",
+    "gloss": "Abrigo seguro e fonte de vida para quem o possui."
+   },
+   {
+    "term": "compaixão",
+    "gloss": "Atitude que honra ao Criador ao cuidar do necessitado."
+   },
+   {
+    "term": "longânimo",
+    "gloss": "Quem demonstra grande entendimento, oposto ao precipitado."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pobre, rico e compaixão",
+    "evidenceRef": "Provérbios 14:20–22"
+   },
+   {
+    "label": "Trabalho e testemunha",
+    "evidenceRef": "Provérbios 14:23–25"
+   },
+   {
+    "label": "Temor e povo do rei",
+    "evidenceRef": "Provérbios 14:26–28"
+   },
+   {
+    "label": "Ânimo e cuidado com o pobre",
+    "evidenceRef": "Provérbios 14:29–31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Desprezar o próximo é pecado; compadecer é felicidade.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 14:21"
+   },
+   {
+    "kind": "contraste",
+    "text": "Oprimir ofende o Criador; compaixão o honra.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 14:31"
+   },
+   {
+    "kind": "resultado",
+    "text": "O temor se torna refúgio para os filhos.",
+    "marker": null,
+    "evidenceRef": "Provérbios 14:26"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 5:7",
+    "bridge": "Misericordiosos são bem-aventurados"
+   },
+   {
+    "ref": "1 João 3:17",
+    "bridge": "Recursos e irmão necessitado"
+   },
+   {
+    "ref": "Tiago 2:15–16",
+    "bridge": "Fé sem cuidado é vazia"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Desprezar o pobre é só questão social, sem pecado.",
+    "why": "14:21 diz que quem despreza o próximo peca."
+   },
+   {
+    "text": "Oprimir o pobre não toca a Deus.",
+    "why": "14:31 diz que ofende aquele que o formou."
+   },
+   {
+    "text": "O temor do Senhor não oferece abrigo real.",
+    "why": "14:26–27 chama o temor de abrigo seguro e fonte de vida."
+   }
+  ],
+  "centralInsight": "Temor do Senhor e cuidado com o fraco sustentam a casa e o povo.",
+  "anchorQuestion": "Segundo Provérbios 14:31, o que faz quem tem compaixão do necessitado?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 14:21, quem se compadece dos pobres é feliz.",
+   "verseRef": "Provérbios 14:21",
+   "correctOptionId": "true",
+   "evidenceSpan": "quem se compadece dos pobres é feliz",
+   "feedbackCorrect": "O texto liga compaixão e felicidade.",
+   "feedbackWrong": {
+    "false": "Releia 14:21: quem se compadece é feliz."
+   },
+   "hint": "Segunda metade do versículo.",
+   "learningObjective": "Observar o fruto da compaixão.",
+   "evidence": [
+    "Provérbios 14:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 14:27, toque o que o temor do SENHOR é.",
+   "verseRef": "Provérbios 14:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "fonte de vida"
+    },
+    {
+     "id": "b",
+     "text": "laços"
+    },
+    {
+     "id": "c",
+     "text": "morte"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O temor do SENHOR é fonte de vida",
+   "feedbackCorrect": "O temor do SENHOR é fonte de vida.",
+   "feedbackWrong": {
+    "b": "Laços são o que se evita.",
+    "c": "Morte é o destino dos laços evitados."
+   },
+   "hint": "Imagem após \"é\".",
+   "learningObjective": "Identificar a imagem do temor.",
+   "evidence": [
+    "Provérbios 14:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 14:31, o que faz quem oprime o pobre?",
+   "verseRef": "Provérbios 14:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ofende aquele que o formou"
+    },
+    {
+     "id": "b",
+     "text": "Honra ao Criador"
+    },
+    {
+     "id": "c",
+     "text": "Ganha abrigo seguro"
+    },
+    {
+     "id": "d",
+     "text": "Torna-se fonte de vida"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem oprime o pobre ofende aquele que o formou",
+   "feedbackCorrect": "Oprimir o pobre ofende ao Criador.",
+   "feedbackWrong": {
+    "b": "Honrar é de quem tem compaixão.",
+    "c": "Abrigo é do temor em 14:26.",
+    "d": "Fonte de vida é o temor."
+   },
+   "hint": "Verbo da primeira metade.",
+   "learningObjective": "Observar o efeito de oprimir.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 14:31 na ordem do texto.",
+   "verseRef": "Provérbios 14:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem oprime o pobre ofende"
+    },
+    {
+     "id": "b",
+     "text": "aquele que o formou"
+    },
+    {
+     "id": "c",
+     "text": "mas quem tem compaixão do necessitado o honra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Quem oprime o pobre ofende aquele que o formou",
+   "feedbackCorrect": "Primeiro a ofensa; depois a honra da compaixão.",
+   "feedbackWrong": {
+    "default": "Comece por quem oprime."
+   },
+   "hint": "O versículo abre com Quem oprime.",
+   "learningObjective": "Seguir a ordem do contraste.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 14:26, no temor do Senhor há um abrigo o quê?",
+   "verseRef": "Provérbios 14:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "seguro"
+    },
+    {
+     "id": "b",
+     "text": "fraco"
+    },
+    {
+     "id": "c",
+     "text": "vazio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "há um abrigo seguro",
+   "feedbackCorrect": "No temor do Senhor há abrigo seguro.",
+   "feedbackWrong": {
+    "b": "Não é fraco; é seguro.",
+    "c": "Não é vazio; é refúgio."
+   },
+   "hint": "Adjetivo de abrigo.",
+   "learningObjective": "Lembrar a qualidade do abrigo.",
+   "evidence": [
+    "Provérbios 14:26"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 14:21 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 14:21",
+   "passageA": {
+    "ref": "Provérbios 14:21",
+    "text": "quem se compadece dos pobres é feliz"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Cuidar do fraco é caminho de felicidade."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Compaixão traz felicidade"
+    },
+    {
+     "id": "b",
+     "text": "Desprezo como virtude"
+    },
+    {
+     "id": "c",
+     "text": "Pobreza sem próximo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem se compadece dos pobres é feliz",
+   "feedbackCorrect": "Compaixão e felicidade ligam o versículo à cena.",
+   "feedbackWrong": {
+    "b": "Desprezar é pecado.",
+    "c": "Há próximo e pobres no texto."
+   },
+   "hint": "Veja o predicado de quem se compadece.",
+   "learningObjective": "Ligar 14:21 à compaixão.",
+   "evidence": [
+    "Provérbios 14:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 14:31, ter compaixão do necessitado é apresentado como honra àquele que o formou.",
+   "verseRef": "Provérbios 14:31",
+   "correctOptionId": "true",
+   "evidenceSpan": "quem tem compaixão do necessitado o honra",
+   "feedbackCorrect": "Compaixão honra ao Criador; opressão ofende.",
+   "feedbackWrong": {
+    "false": "Releia 14:31: a compaixão o honra."
+   },
+   "hint": "Veja a segunda metade do contraste.",
+   "learningObjective": "Compreender o contraste oprimir–honrar.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 14:31, toque a palavra que marca o contraste.",
+   "verseRef": "Provérbios 14:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "mas"
+    },
+    {
+     "id": "b",
+     "text": "oprime"
+    },
+    {
+     "id": "c",
+     "text": "formou"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas quem tem compaixão do necessitado o honra",
+   "feedbackCorrect": "\"Mas\" introduz a honra da compaixão.",
+   "feedbackWrong": {
+    "b": "Oprime é o primeiro polo.",
+    "c": "Formou aponta ao Criador."
+   },
+   "hint": "Palavra curta no meio.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 14:26–27 estabelece com o temor?",
+   "verseRef": "Provérbios 14:26–27",
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor oferece abrigo e fonte de vida"
+    },
+    {
+     "id": "b",
+     "text": "Temor é só medo sem refúgio"
+    },
+    {
+     "id": "c",
+     "text": "Temor empurra para os laços da morte"
+    },
+    {
+     "id": "d",
+     "text": "Temor não alcança os filhos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "No temor do Senhor, há um abrigo seguro",
+   "feedbackCorrect": "Abrigo e fonte de vida descrevem o temor.",
+   "feedbackWrong": {
+    "b": "Há abrigo seguro.",
+    "c": "O temor evita os laços da morte.",
+    "d": "Torna-se refúgio para os filhos."
+   },
+   "hint": "Una 14:26 e 14:27.",
+   "learningObjective": "Relacionar temor, abrigo e vida.",
+   "evidence": [
+    "Provérbios 14:26",
+    "Provérbios 14:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Provérbios 14:20–31?",
+   "verseRef": "Provérbios 14:20–21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pobre, rico e compaixão"
+    },
+    {
+     "id": "b",
+     "text": "Temor e povo do rei"
+    },
+    {
+     "id": "c",
+     "text": "Ânimo e cuidado com o pobre"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "quem se compadece dos pobres é feliz",
+   "feedbackCorrect": "Da compaixão ao temor, e fecha honrando o Criador.",
+   "feedbackWrong": {
+    "default": "Comece pela compaixão; o pobre fecha o trecho."
+   },
+   "hint": "O fim fala de oprimir e honrar.",
+   "learningObjective": "Compreender o movimento do trecho.",
+   "evidence": [
+    "Provérbios 14:21",
+    "Provérbios 14:26",
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 14:31, que verbo diz o que a compaixão faz ao Criador?",
+   "verseRef": "Provérbios 14:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "honra"
+    },
+    {
+     "id": "b",
+     "text": "ofende"
+    },
+    {
+     "id": "c",
+     "text": "oprime"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o necessitado o honra",
+   "feedbackCorrect": "\"Honra\" carrega a relação positiva com o Criador.",
+   "feedbackWrong": {
+    "b": "Ofender é de quem oprime.",
+    "c": "Oprimir é a ação contrária."
+   },
+   "hint": "Verbo no fim do versículo.",
+   "learningObjective": "Lembrar a ação da compaixão.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 14:21 a Mateus 5:7?",
+   "verseRef": "Provérbios 14:21",
+   "passageA": {
+    "ref": "Provérbios 14:21"
+   },
+   "passageB": {
+    "ref": "Mateus 5:7"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Misericordiosos são bem-aventurados"
+    },
+    {
+     "id": "b",
+     "text": "Desprezo como bem-aventurança"
+    },
+    {
+     "id": "c",
+     "text": "Pobreza sem felicidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem se compadece dos pobres é feliz",
+   "feedbackCorrect": "Compaixão e misericórdia ligam felicidade e bem-aventurança.",
+   "feedbackWrong": {
+    "b": "Desprezar é pecado.",
+    "c": "Há felicidade para quem se compadece."
+   },
+   "hint": "Compare compaixão e misericórdia.",
+   "learningObjective": "Cruzar felicidade e bem-aventurança.",
+   "evidence": [
+    "Provérbios 14:21",
+    "Mateus 5:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 14:31, oprimir o pobre é apresentado como honra àquele que o formou.",
+   "verseRef": "Provérbios 14:31",
+   "correctOptionId": "false",
+   "evidenceSpan": "Quem oprime o pobre ofende aquele que o formou",
+   "feedbackCorrect": "Oprimir ofende; quem honra é quem tem compaixão.",
+   "feedbackWrong": {
+    "true": "Releia 14:31: oprimir ofende ao Criador."
+   },
+   "hint": "Veja o verbo ligado a quem oprime.",
+   "learningObjective": "Corrigir a leitura sobre opressão.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 14:31, toque o trecho que sustenta a ofensa ao Criador.",
+   "verseRef": "Provérbios 14:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "formou"
+    },
+    {
+     "id": "b",
+     "text": "necessitado"
+    },
+    {
+     "id": "c",
+     "text": "pobre"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "aquele que o formou",
+   "feedbackCorrect": "Oprimir o pobre ofende aquele que o formou.",
+   "feedbackWrong": {
+    "b": "É quem recebe compaixão.",
+    "c": "É quem é oprimido."
+   },
+   "hint": "Objeto de ofende.",
+   "learningObjective": "Sustentar a ofensa ao Criador.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 14:20–31 sustenta?",
+   "verseRef": "Provérbios 14:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor e compaixão sustentam casa e povo diante de Deus"
+    },
+    {
+     "id": "b",
+     "text": "O pobre pode ser oprimido sem tocar a Deus"
+    },
+    {
+     "id": "c",
+     "text": "Temor do Senhor não oferece abrigo"
+    },
+    {
+     "id": "d",
+     "text": "Desprezar o próximo nunca é pecado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem tem compaixão do necessitado o honra",
+   "feedbackCorrect": "Temor, abrigo e compaixão percorrem o trecho.",
+   "feedbackWrong": {
+    "b": "14:31 liga opressão ao Criador.",
+    "c": "14:26 fala de abrigo seguro.",
+    "d": "14:21 chama o desprezo de pecado."
+   },
+   "hint": "Una temor e cuidado com o pobre.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 14:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da misericórdia?",
+   "verseRef": "Provérbios 14:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem se compadece dos pobres é feliz"
+    },
+    {
+     "id": "b",
+     "text": "Jesus chama bem-aventurados os misericordiosos"
+    },
+    {
+     "id": "c",
+     "text": "João liga recursos e irmão necessitado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "quem se compadece dos pobres é feliz",
+   "feedbackCorrect": "Da felicidade em Provérbios a Mateus e 1 João.",
+   "feedbackWrong": {
+    "default": "Comece por 14:21; depois Mateus 5:7 e 1 João 3:17."
+   },
+   "hint": "Da compaixão à bem-aventurança e ao cuidado prático.",
+   "learningObjective": "Ver o fio da misericórdia.",
+   "evidence": [
+    "Provérbios 14:21",
+    "Mateus 5:7",
+    "1 João 3:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 14:29, o longânimo demonstra grande o quê?",
+   "verseRef": "Provérbios 14:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "entendimento"
+    },
+    {
+     "id": "b",
+     "text": "loucura"
+    },
+    {
+     "id": "c",
+     "text": "inveja"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "demonstra grande entendimento",
+   "feedbackCorrect": "Longanimidade revela grande entendimento.",
+   "feedbackWrong": {
+    "b": "Loucura é do precipitado.",
+    "c": "Inveja aparece em 14:30."
+   },
+   "hint": "Palavra após \"grande\".",
+   "learningObjective": "Lembrar o fruto da longanimidade.",
+   "evidence": [
+    "Provérbios 14:29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 14:31 a 1 João 3:17?",
+   "verseRef": "Provérbios 14:31",
+   "passageA": {
+    "ref": "Provérbios 14:31"
+   },
+   "passageB": {
+    "ref": "1 João 3:17"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Recursos e irmão necessitado"
+    },
+    {
+     "id": "b",
+     "text": "Opressão como culto"
+    },
+    {
+     "id": "c",
+     "text": "Pobre sem Criador"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem tem compaixão do necessitado o honra",
+   "feedbackCorrect": "Cuidar do necessitado honra a Deus nos dois textos.",
+   "feedbackWrong": {
+    "b": "Opressão ofende ao Criador.",
+    "c": "O texto aponta ao que formou o pobre."
+   },
+   "hint": "Compare o cuidado com o necessitado.",
+   "learningObjective": "Ligar compaixão e recursos.",
+   "evidence": [
+    "Provérbios 14:31",
+    "1 João 3:17"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,949 @@
+{
+  "studies": {
+    "lmc-01-olhai-e-vede": {
+      "slug": "lmc-01-olhai-e-vede",
+      "passageRef": "Lamentações 1:13–18",
+      "passageText": "Do alto, enviou fogo aos meus ossos, que se apoderou de mim; estendeu uma rede aos meus pés, arrojou-me para trás, causando-me desolação e enfermidade durante todo o dia. O jugo das minhas transgressões está atado pela Sua mão; elas estão entrelaçadas, subiram sobre o meu pescoço, e Ele abateu a minha força; o Senhor me entregou nas mãos daquelas a que não posso resistir. O Senhor dispersou todos os meus valentes que estavam comigo; convocou contra mim um ajuntamento para esmagar os meus jovens; o Senhor pisou como em um lagar a virgem filha de Judá. Por estas coisas, eu choro; meus olhos se desfazem em águas, pois o consolador que devia restaurar minhas forças se afastou de mim; meus filhos estão desolados, porque o inimigo prevaleceu. Sião estende as mãos, mas não há quem a console; o SENHOR ordenou que seus vizinhos se tornem seus inimigos; Jerusalém é para eles como coisa imunda. Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro.",
+      "passages": [
+        {
+          "ref": "Lamentações 1:13–18",
+          "text": "Do alto, enviou fogo aos meus ossos, que se apoderou de mim; estendeu uma rede aos meus pés, arrojou-me para trás, causando-me desolação e enfermidade durante todo o dia. O jugo das minhas transgressões está atado pela Sua mão; elas estão entrelaçadas, subiram sobre o meu pescoço, e Ele abateu a minha força; o Senhor me entregou nas mãos daquelas a que não posso resistir. O Senhor dispersou todos os meus valentes que estavam comigo; convocou contra mim um ajuntamento para esmagar os meus jovens; o Senhor pisou como em um lagar a virgem filha de Judá. Por estas coisas, eu choro; meus olhos se desfazem em águas, pois o consolador que devia restaurar minhas forças se afastou de mim; meus filhos estão desolados, porque o inimigo prevaleceu. Sião estende as mãos, mas não há quem a console; o SENHOR ordenou que seus vizinhos se tornem seus inimigos; Jerusalém é para eles como coisa imunda. Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro."
+        },
+        {
+          "ref": "Lamentações 1:12",
+          "text": "Não vos comove isto, a todos vós que passais pelo caminho? Considerai e vede se há dor igual à minha, que me sobreveio, com a qual o Senhor me afligiu no dia do furor da sua ira."
+        }
+      ],
+      "context": "Jerusalém caíra. A cidade personificada chama quem passa a olhar sua dor e confessa a justiça do Senhor.",
+      "keyword": "justo",
+      "keywordGloss": "A cidade admite: o Senhor é justo, porque ela se rebelou contra a sua palavra.",
+      "focusQuestion": "Quando você sofre, consegue confessar a justiça do Senhor sem se desculpar?",
+      "reflectionPrompts": [
+        "Olhai e vede",
+        "Senhor justo",
+        "Sem consolador"
+      ],
+      "facts": [
+        {
+          "text": "A cidade pede que considerem se há dor igual à dela.",
+          "evidenceRef": "Lamentações 1:12",
+          "evidenceSpan": "Considerai e vede se há dor igual à minha"
+        },
+        {
+          "text": "O Senhor a afligiu no dia do furor da sua ira.",
+          "evidenceRef": "Lamentações 1:12",
+          "evidenceSpan": "o Senhor me afligiu no dia do furor da sua ira"
+        },
+        {
+          "text": "O Senhor a entregou nas mãos daquelas a que não pode resistir.",
+          "evidenceRef": "Lamentações 1:14",
+          "evidenceSpan": "o Senhor me entregou nas mãos daquelas a que não posso resistir"
+        },
+        {
+          "text": "Não há quem console Sião.",
+          "evidenceRef": "Lamentações 1:17",
+          "evidenceSpan": "mas não há quem a console"
+        },
+        {
+          "text": "A cidade confessa: Justo é o Senhor, pois se rebelou contra a sua palavra.",
+          "evidenceRef": "Lamentações 1:18",
+          "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra"
+        },
+        {
+          "text": "Virgens e jovens foram levados para o cativeiro.",
+          "evidenceRef": "Lamentações 1:18",
+          "evidenceSpan": "minhas virgens e meus jovens foram levados para o cativeiro"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Justo",
+          "gloss": "Atributo confessado pela cidade: o Senhor age com justiça."
+        },
+        {
+          "term": "rebelei",
+          "gloss": "A causa confessada: a cidade se rebelou contra a palavra do Senhor."
+        },
+        {
+          "term": "consolador",
+          "gloss": "Aquele que deveria restaurar as forças e se afastou."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Chamado a ver a dor e a ira",
+          "evidenceRef": "Lamentações 1:12"
+        },
+        {
+          "label": "Jugo das transgressões e entrega",
+          "evidenceRef": "Lamentações 1:14"
+        },
+        {
+          "label": "Choro sem consolador",
+          "evidenceRef": "Lamentações 1:16–17"
+        },
+        {
+          "label": "Confissão: o Senhor é justo",
+          "evidenceRef": "Lamentações 1:18"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "O Senhor é justo porque a cidade se rebelou contra a sua palavra.",
+          "marker": "pois",
+          "evidenceRef": "Lamentações 1:18"
+        },
+        {
+          "kind": "resultado",
+          "text": "Os filhos estão desolados porque o inimigo prevaleceu.",
+          "marker": "porque",
+          "evidenceRef": "Lamentações 1:16"
+        },
+        {
+          "kind": "contraste",
+          "text": "Sião estende as mãos, mas não há quem a console.",
+          "marker": "mas",
+          "evidenceRef": "Lamentações 1:17"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Deuteronômio 32:4",
+          "bridge": "Deus é justo e reto",
+          "text": "Ele é a Rocha, cujas obras são perfeitas, pois todos os seus caminhos são juízo; Deus é fidelidade, e nele não há injustiça; é justo e reto."
+        },
+        {
+          "ref": "Neemias 9:33",
+          "bridge": "Confessar a justiça divina",
+          "text": "Entretanto, tu és justo em tudo o que nos sobreveio, pois tu agiste com fidelidade e nós agimos perversamente."
+        },
+        {
+          "ref": "Salmos 51:4",
+          "bridge": "Justiça na disciplina",
+          "text": "Contra ti, contra ti somente pequei e fiz o que é mal diante dos teus olhos, de modo que serás considerado justo quando falares e puro quando julgares."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A cidade culpa só os inimigos e se declara inocente.",
+          "why": "Em 1:18 ela confessa: se rebelou contra a palavra do Senhor."
+        },
+        {
+          "text": "O Senhor afligiu a cidade sem motivo.",
+          "why": "1:18 liga a justiça do Senhor à rebelião da cidade."
+        },
+        {
+          "text": "Há consolador perto; a dor é só teatral.",
+          "why": "1:16–17 diz que o consolador se afastou e não há quem console."
+        }
+      ],
+      "centralInsight": "A cidade reconhece: o Senhor é justo, porque ela se rebelou contra a sua palavra.",
+      "anchorQuestion": "Segundo Lamentações 1:18, por que a cidade diz que o Senhor é justo?",
+      "relatedVerses": [
+        {
+          "reference": "Deuteronômio 32:4",
+          "reason": "Deus é justo e reto"
+        },
+        {
+          "reference": "Neemias 9:33",
+          "reason": "Confessar a justiça divina"
+        },
+        {
+          "reference": "Salmos 51:4",
+          "reason": "Justiça na disciplina"
+        }
+      ]
+    },
+    "lmc-02-a-ira-do-senhor": {
+      "slug": "lmc-02-a-ira-do-senhor",
+      "passageRef": "Lamentações 2:1–6",
+      "passageText": "Como o Senhor cobriu de nuvens, na sua ira, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira. O Senhor destruiu todas as moradas de Jacó e não se apiedou; derrubou, na sua ira, as fortalezas da filha de Judá e as lançou por terra; profanou o reino e seus príncipes. Destruiu, na intensidade de Sua ira, toda a força de Israel; retirou Sua destra diante do inimigo e inflou Sua indignação contra Jacó, como uma chama de fogo que tudo consome ao redor. Armou o seu arco como um inimigo; fortaleceu a mão direita como um adversário e destruiu tudo o que era belo à vista; derramou sua indignação como fogo na tenda da filha de Sião. O Senhor se tornou como um inimigo; devorou Israel, arrasou todos os seus palácios, destruiu suas fortalezas e multiplicou na filha de Judá o pranto e a lamentação. Destruiu a sua tenda com brutalidade, como se fosse um jardim; arruinou o lugar da sua assembleia. O Senhor, em Sião, fez esquecer as festas e o sábado, e, na indignação da sua ira, rejeitou com desprezo o rei e o sacerdote.",
+      "passages": [
+        {
+          "ref": "Lamentações 2:1–6",
+          "text": "Como o Senhor cobriu de nuvens, na sua ira, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira. O Senhor destruiu todas as moradas de Jacó e não se apiedou; derrubou, na sua ira, as fortalezas da filha de Judá e as lançou por terra; profanou o reino e seus príncipes. Destruiu, na intensidade de Sua ira, toda a força de Israel; retirou Sua destra diante do inimigo e inflou Sua indignação contra Jacó, como uma chama de fogo que tudo consome ao redor. Armou o seu arco como um inimigo; fortaleceu a mão direita como um adversário e destruiu tudo o que era belo à vista; derramou sua indignação como fogo na tenda da filha de Sião. O Senhor se tornou como um inimigo; devorou Israel, arrasou todos os seus palácios, destruiu suas fortalezas e multiplicou na filha de Judá o pranto e a lamentação. Destruiu a sua tenda com brutalidade, como se fosse um jardim; arruinou o lugar da sua assembleia. O Senhor, em Sião, fez esquecer as festas e o sábado, e, na indignação da sua ira, rejeitou com desprezo o rei e o sacerdote."
+        },
+        {
+          "ref": "Lamentações 2:7–10",
+          "text": "O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa. O Senhor decidiu destruir o muro da filha de Sião; estendeu o cordel sobre ele e não retirou sua mão destruidora. Tanto o antemuro quanto o muro gemem, pois já estão juntos enfraquecidos. As suas portas foram derrubadas, seus ferrolhos foram quebrados e despedaçados. Entre as nações estão o seu rei e os seus príncipes; já não há lei, e os seus profetas não recebem mais qualquer visão do Senhor. Estão sentados no chão em silêncio os anciãos da filha de Sião; lançam pó sobre as cabeças e se vestem de cilício; as moças de Jerusalém inclinam suas cabeças até o chão."
+        }
+      ],
+      "context": "O segundo canto mostra a ira do Senhor sobre Sião: moradas, altar, santuário e muros caem.",
+      "keyword": "ira",
+      "keywordGloss": "A indignação santa do Senhor que cobre Sião e derruba o que parecia seguro.",
+      "focusQuestion": "O que no seu coração trata o santuário como se nada pudesse cair?",
+      "reflectionPrompts": [
+        "Ira sobre Sião",
+        "Santuário rejeitado",
+        "Muros que gemem"
+      ],
+      "facts": [
+        {
+          "text": "O Senhor cobriu de nuvens, na sua ira, a filha de Sião.",
+          "evidenceRef": "Lamentações 2:1",
+          "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião"
+        },
+        {
+          "text": "O Senhor destruiu todas as moradas de Jacó e não se apiedou.",
+          "evidenceRef": "Lamentações 2:2",
+          "evidenceSpan": "O Senhor destruiu todas as moradas de Jacó e não se apiedou"
+        },
+        {
+          "text": "O Senhor se tornou como um inimigo e devorou Israel.",
+          "evidenceRef": "Lamentações 2:5",
+          "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel"
+        },
+        {
+          "text": "O Senhor rejeitou o seu altar e abominou o seu santuário.",
+          "evidenceRef": "Lamentações 2:7",
+          "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário"
+        },
+        {
+          "text": "O Senhor decidiu destruir o muro da filha de Sião.",
+          "evidenceRef": "Lamentações 2:8",
+          "evidenceSpan": "O Senhor decidiu destruir o muro da filha de Sião"
+        },
+        {
+          "text": "Os anciãos estão sentados no chão em silêncio.",
+          "evidenceRef": "Lamentações 2:10",
+          "evidenceSpan": "Estão sentados no chão em silêncio os anciãos da filha de Sião"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ira",
+          "gloss": "A indignação do Senhor que cobre e derruba Sião."
+        },
+        {
+          "term": "santuário",
+          "gloss": "O lugar santo que o Senhor abominou na disciplina."
+        },
+        {
+          "term": "rejeitou",
+          "gloss": "Verbo que mostra o Senhor afastando altar e santuário."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Ira cobre Sião e derruba a glória",
+          "evidenceRef": "Lamentações 2:1–2"
+        },
+        {
+          "label": "O Senhor age como inimigo",
+          "evidenceRef": "Lamentações 2:4–5"
+        },
+        {
+          "label": "Altar e santuário são rejeitados",
+          "evidenceRef": "Lamentações 2:6–7"
+        },
+        {
+          "label": "Muros caem e anciãos calam",
+          "evidenceRef": "Lamentações 2:8–10"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Na ira, o Senhor derruba fortalezas e profana o reino.",
+          "marker": "na sua ira",
+          "evidenceRef": "Lamentações 2:2"
+        },
+        {
+          "kind": "contraste",
+          "text": "O Senhor se tornou como um inimigo contra o próprio povo.",
+          "marker": "como",
+          "evidenceRef": "Lamentações 2:5"
+        },
+        {
+          "kind": "causa",
+          "text": "Antemuro e muro gemem porque já estão juntos enfraquecidos.",
+          "marker": "pois",
+          "evidenceRef": "Lamentações 2:8"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Jeremias 7:14",
+          "bridge": "Casa rejeitada na disciplina",
+          "text": "Farei também a esta casa que é chamada pelo meu nome, na qual confiastes, e a este lugar que dei a vocês e a seus pais, como fiz a Siló."
+        },
+        {
+          "ref": "Miquéias 3:12",
+          "bridge": "Sião arada como campo",
+          "text": "Por causa de vocês, Sião será lavrada como um campo, e Jerusalém se tornará em montões de ruínas, e o monte do templo, em uma colina coberta de mato."
+        },
+        {
+          "ref": "Salmos 74:7",
+          "bridge": "Santuário profanado pelo fogo",
+          "text": "Incendiaram o teu santuário; profanaram, arrasando-o até o chão, a morada do teu nome."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O santuário é intocável e nunca pode cair.",
+          "why": "2:7 diz que o Senhor rejeitou o altar e abominou o santuário."
+        },
+        {
+          "text": "Só inimigos humanos agiram; o Senhor ficou neutro.",
+          "why": "2:5 diz que o Senhor se tornou como um inimigo."
+        },
+        {
+          "text": "A ira do Senhor poupou muros e culto.",
+          "why": "2:7–8 mostram santuário entregue e muro decidido à destruição."
+        }
+      ],
+      "centralInsight": "Até o santuário pode cair quando o povo rejeita o Senhor.",
+      "anchorQuestion": "Segundo Lamentações 2:7, o que o Senhor fez com o altar e o santuário?",
+      "relatedVerses": [
+        {
+          "reference": "Jeremias 7:14",
+          "reason": "Casa rejeitada na disciplina"
+        },
+        {
+          "reference": "Miquéias 3:12",
+          "reason": "Sião arada como campo"
+        },
+        {
+          "reference": "Salmos 74:7",
+          "reason": "Santuário profanado pelo fogo"
+        }
+      ]
+    },
+    "lmc-03-nao-rejeita-para-sempre": {
+      "slug": "lmc-03-nao-rejeita-para-sempre",
+      "passageRef": "Lamentações 3:31–36",
+      "passageText": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias. Porque Ele não aflige nem entristece os filhos dos homens de bom grado. Para calcar aos pés todos os presos da terra. Para perverter o direito do homem perante a face do Altíssimo. Para perverter o direito do homem no seu pleito, não o veria o Senhor?",
+      "passages": [
+        {
+          "ref": "Lamentações 3:31–36",
+          "text": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias. Porque Ele não aflige nem entristece os filhos dos homens de bom grado. Para calcar aos pés todos os presos da terra. Para perverter o direito do homem perante a face do Altíssimo. Para perverter o direito do homem no seu pleito, não o veria o Senhor?"
+        },
+        {
+          "ref": "Lamentações 3:37–42",
+          "text": "Quem é aquele que fala e acontece, se o Senhor não o mandou? Não provém da boca do Altíssimo tanto o mal como o bem? Por que, então, o homem vivente se queixa? Que cada um se queixe de seus próprios pecados. Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor. Levantemos nossos corações juntamente com as mãos, a Deus que está nos céus, dizendo: Nós prevaricamos e fomos rebeldes; por isso, Tu não nos perdoaste."
+        }
+      ],
+      "context": "No centro do livro, o lamento abre espaço à esperança: o Senhor não rejeita para sempre e se compadece.",
+      "keyword": "misericórdias",
+      "keywordGloss": "A grandeza do cuidado do Senhor que acompanha até a disciplina.",
+      "focusQuestion": "Na disciplina, você espera rejeição final ou misericórdia do Senhor?",
+      "reflectionPrompts": [
+        "Não rejeita para sempre",
+        "Compaixão e misericórdia",
+        "Voltemos ao Senhor"
+      ],
+      "facts": [
+        {
+          "text": "O Senhor não rejeitará para sempre.",
+          "evidenceRef": "Lamentações 3:31",
+          "evidenceSpan": "o Senhor não rejeitará para sempre"
+        },
+        {
+          "text": "Se entristecer, usará de compaixão conforme a grandeza das misericórdias.",
+          "evidenceRef": "Lamentações 3:32",
+          "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias"
+        },
+        {
+          "text": "Ele não aflige nem entristece os filhos dos homens de bom grado.",
+          "evidenceRef": "Lamentações 3:33",
+          "evidenceSpan": "não aflige nem entristece os filhos dos homens de bom grado"
+        },
+        {
+          "text": "Nada acontece se o Senhor não o mandou.",
+          "evidenceRef": "Lamentações 3:37",
+          "evidenceSpan": "se o Senhor não o mandou"
+        },
+        {
+          "text": "O texto chama a esquadrinhar os caminhos e voltar ao Senhor.",
+          "evidenceRef": "Lamentações 3:40",
+          "evidenceSpan": "Esquadrinhemos nossos caminhos e os provemos, voltemos ao Senhor"
+        },
+        {
+          "text": "O povo confessa: prevaricamos e fomos rebeldes.",
+          "evidenceRef": "Lamentações 3:42",
+          "evidenceSpan": "Nós prevaricamos e fomos rebeldes"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "misericórdias",
+          "gloss": "A grandeza do Senhor que move a compaixão após entristecer."
+        },
+        {
+          "term": "compaixão",
+          "gloss": "O movimento do Senhor quando entristece alguém."
+        },
+        {
+          "term": "rejeitará",
+          "gloss": "Verbo negado: o Senhor não rejeita para sempre."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Esperança: não rejeita para sempre",
+          "evidenceRef": "Lamentações 3:31–32"
+        },
+        {
+          "label": "Não aflige de bom grado",
+          "evidenceRef": "Lamentações 3:33"
+        },
+        {
+          "label": "Soberania do Senhor sobre o que acontece",
+          "evidenceRef": "Lamentações 3:37–38"
+        },
+        {
+          "label": "Exame, retorno e confissão",
+          "evidenceRef": "Lamentações 3:40–42"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Ele pode entristecer, mas usa de compaixão conforme suas misericórdias.",
+          "marker": "Antes",
+          "evidenceRef": "Lamentações 3:32"
+        },
+        {
+          "kind": "causa",
+          "text": "Ele não aflige de bom grado.",
+          "marker": "Porque",
+          "evidenceRef": "Lamentações 3:33"
+        },
+        {
+          "kind": "resultado",
+          "text": "Por causa da rebelião, o Senhor não perdoou.",
+          "marker": "por isso",
+          "evidenceRef": "Lamentações 3:42"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 103:8–10",
+          "bridge": "Misericórdia e não rejeição"
+        },
+        {
+          "ref": "Isaías 55:7",
+          "bridge": "Voltar e achar misericórdia",
+          "text": "Que o perverso abandone o seu caminho, e o iníquo os seus pensamentos; que se volte para o Senhor, e Ele se compadecerá dele, e para o nosso Deus, pois é rico em perdoar."
+        },
+        {
+          "ref": "Oséias 6:1",
+          "bridge": "Ele fere e cura",
+          "text": "Venham, e voltemos para o Senhor, pois ele nos despedaçou, mas nos sarará; ele fez a ferida, mas a ligará."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A disciplina do Senhor é rejeição definitiva.",
+          "why": "3:31 diz que o Senhor não rejeitará para sempre."
+        },
+        {
+          "text": "Deus se agrada de afligir os filhos dos homens.",
+          "why": "3:33 diz que não aflige de bom grado."
+        },
+        {
+          "text": "Basta lamentar; não há chamado a voltar.",
+          "why": "3:40 manda esquadrinhar os caminhos e voltar ao Senhor."
+        }
+      ],
+      "centralInsight": "Ele entristece e se compadece segundo a multidão das suas misericórdias.",
+      "anchorQuestion": "Segundo Lamentações 3:31–32, o que o Senhor faz depois de entristecer?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 103:8–10",
+          "reason": "Misericórdia e não rejeição"
+        },
+        {
+          "reference": "Isaías 55:7",
+          "reason": "Voltar e achar misericórdia"
+        },
+        {
+          "reference": "Oséias 6:1",
+          "reason": "Ele fere e cura"
+        }
+      ]
+    },
+    "lmc-04-ouro-escurecido": {
+      "slug": "lmc-04-ouro-escurecido",
+      "passageRef": "Lamentações 4:1–6",
+      "passageText": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro! Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto. A língua da criança que mama fica grudada ao paladar por causa da sede; os meninos pedem pão, e ninguém há que lhes dê. Os que se alimentavam de iguarias agora definham nas ruas; os que se vestiam de escarlata se apegam ao lixo. A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse.",
+      "passages": [
+        {
+          "ref": "Lamentações 4:1–6",
+          "text": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro! Até os chacais dão o peito e amamentam seus filhotes; mas a filha do meu povo tornou-se cruel como os avestruzes no deserto. A língua da criança que mama fica grudada ao paladar por causa da sede; os meninos pedem pão, e ninguém há que lhes dê. Os que se alimentavam de iguarias agora definham nas ruas; os que se vestiam de escarlata se apegam ao lixo. A maldade da filha do meu povo é maior do que o pecado de Sodoma, que foi subvertida num instante sem que ninguém a socorresse."
+        },
+        {
+          "ref": "Lamentações 4:7–11",
+          "text": "Seus nazireus eram mais brancos do que a neve, mais puros do que o leite; eram mais ruivos de corpo do que os corais e tinham a formosura da safira. Mas agora a sua aparência está mais escura do que a fuligem; não se reconhecem nas ruas; a sua pele grudou nos ossos, secou-se e tornou-se como madeira. Mais felizes são os mortos pela espada do que os mortos pela fome, pois estes se consomem como feridos pela falta dos frutos da terra. As mãos das mulheres outrora caridosas cozinharam seus próprios filhos, que lhes serviram de alimento na aflição da filha do meu povo. O Senhor cumpriu a sua indignação, derramou o fervor da sua ira; acendeu um fogo em Sião que consumiu seus fundamentos."
+        }
+      ],
+      "context": "O ouro perde o brilho: os filhos de Sião, antes preciosos, viram objetos de barro na fome e na ira.",
+      "keyword": "ouro",
+      "keywordGloss": "Imagem da glória perdida: o que era precioso escureceu na ruína.",
+      "focusQuestion": "O que no seu dia trata glória como se o pecado não pudesse escurecê-la?",
+      "reflectionPrompts": [
+        "Ouro escurecido",
+        "Filhos como barro",
+        "Fome e ira"
+      ],
+      "facts": [
+        {
+          "text": "O ouro se escureceu e o ouro refinado se alterou.",
+          "evidenceRef": "Lamentações 4:1",
+          "evidenceSpan": "Como se escureceu o ouro! Como se alterou o ouro refinado!"
+        },
+        {
+          "text": "Os nobres filhos de Sião agora são tidos como objetos de barro.",
+          "evidenceRef": "Lamentações 4:2",
+          "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro"
+        },
+        {
+          "text": "Os meninos pedem pão, e ninguém há que lhes dê.",
+          "evidenceRef": "Lamentações 4:4",
+          "evidenceSpan": "os meninos pedem pão, e ninguém há que lhes dê"
+        },
+        {
+          "text": "A maldade do povo é maior do que o pecado de Sodoma.",
+          "evidenceRef": "Lamentações 4:6",
+          "evidenceSpan": "A maldade da filha do meu povo é maior do que o pecado de Sodoma"
+        },
+        {
+          "text": "Mais felizes são os mortos pela espada do que os mortos pela fome.",
+          "evidenceRef": "Lamentações 4:9",
+          "evidenceSpan": "Mais felizes são os mortos pela espada do que os mortos pela fome"
+        },
+        {
+          "text": "O Senhor cumpriu a sua indignação e acendeu um fogo em Sião.",
+          "evidenceRef": "Lamentações 4:11",
+          "evidenceSpan": "O Senhor cumpriu a sua indignação, derramou o fervor da sua ira"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ouro",
+          "gloss": "Imagem da glória que escureceu na ruína."
+        },
+        {
+          "term": "barro",
+          "gloss": "O contraste: o que era ouro puro agora é objeto de barro."
+        },
+        {
+          "term": "indignação",
+          "gloss": "O que o Senhor cumpriu ao derramar o fervor da ira."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Ouro escurecido e filhos como barro",
+          "evidenceRef": "Lamentações 4:1–2"
+        },
+        {
+          "label": "Fome das crianças e queda dos ricos",
+          "evidenceRef": "Lamentações 4:4–5"
+        },
+        {
+          "label": "Maldade maior que a de Sodoma",
+          "evidenceRef": "Lamentações 4:6"
+        },
+        {
+          "label": "Fome, horror e ira cumprida",
+          "evidenceRef": "Lamentações 4:9–11"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Os filhos eram como ouro puro; agora são objetos de barro.",
+          "marker": "agora",
+          "evidenceRef": "Lamentações 4:2"
+        },
+        {
+          "kind": "contraste",
+          "text": "Chacais amamentam; a filha do povo tornou-se cruel.",
+          "marker": "mas",
+          "evidenceRef": "Lamentações 4:3"
+        },
+        {
+          "kind": "resultado",
+          "text": "O Senhor cumpriu a indignação e acendeu fogo em Sião.",
+          "marker": null,
+          "evidenceRef": "Lamentações 4:11"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Deuteronômio 28:53",
+          "bridge": "Fome no cerco da cidade",
+          "text": "Você comerá o fruto do seu ventre, a carne de seus filhos e filhas que o Senhor, seu Deus, lhe der durante o cerco e a angústia que seus inimigos lhe infligirão."
+        },
+        {
+          "ref": "Ezequiel 5:10",
+          "bridge": "Horror da fome em Jerusalém",
+          "text": "Os pais devorarão seus filhos no meio de você, e os filhos devorarão seus pais; executarei juízos em você e espalharei todo o que restar de você a todos os ventos."
+        },
+        {
+          "ref": "Gênesis 19:24–25",
+          "bridge": "Juízo sobre Sodoma",
+          "text": "Então, o Senhor fez chover enxofre e fogo, vindo do Senhor, sobre Sodoma e Gomorra. E devastou aquelas cidades, toda a planície e todos os habitantes daquelas cidades, e o que brotava da terra."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A ruína é só azar; não há ligação com a maldade do povo.",
+          "why": "4:6 liga a maldade do povo a um juízo maior que o de Sodoma."
+        },
+        {
+          "text": "Os filhos de Sião continuam gloriosos como ouro puro.",
+          "why": "4:1–2 diz que o ouro escureceu e eles são como barro."
+        },
+        {
+          "text": "O Senhor não cumpriu nenhuma indignação sobre Sião.",
+          "why": "4:11 diz que cumpriu a indignação e acendeu fogo em Sião."
+        }
+      ],
+      "centralInsight": "O pecado muda a glória da cidade em desolação e fome.",
+      "anchorQuestion": "Segundo Lamentações 4:1–2, o que aconteceu aos filhos de Sião comparáveis a ouro?",
+      "relatedVerses": [
+        {
+          "reference": "Deuteronômio 28:53",
+          "reason": "Fome no cerco da cidade"
+        },
+        {
+          "reference": "Ezequiel 5:10",
+          "reason": "Horror da fome em Jerusalém"
+        },
+        {
+          "reference": "Gênesis 19:24–25",
+          "reason": "Juízo sobre Sodoma"
+        }
+      ]
+    },
+    "lmc-05-lembra-te-senhor": {
+      "slug": "lmc-05-lembra-te-senhor",
+      "passageRef": "Lamentações 5:1–6",
+      "passageText": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros. Órfãos somos, já não temos pai; nossas mães são como viúvas. A nossa água bebemos por preço e a nossa lenha vem a custo. Sofremos perseguição como um peso sobre nós; estamos exaustos e não temos descanso. Submetemo-nos aos egípcios e aos assírios para nos fornecessem pão.",
+      "passages": [
+        {
+          "ref": "Lamentações 5:1–6",
+          "text": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros. Órfãos somos, já não temos pai; nossas mães são como viúvas. A nossa água bebemos por preço e a nossa lenha vem a custo. Sofremos perseguição como um peso sobre nós; estamos exaustos e não temos descanso. Submetemo-nos aos egípcios e aos assírios para nos fornecessem pão."
+        },
+        {
+          "ref": "Lamentações 5:7–12",
+          "text": "Nossos pais pecaram e já não existem; nós é que levamos o peso de suas iniquidades. Os servos dominam sobre nós; não há ninguém que nos livre de suas mãos. Com risco de nossas vidas, providenciamos nosso pão, em razão da espada do deserto. Nossa pele se esquentou como um forno, por causa do ardor da fome. Forçaram as mulheres em Sião e as virgens nas cidades de Judá. Os príncipes foram pendurados pelas mãos, e as faces dos anciãos não foram reverenciadas."
+        }
+      ],
+      "context": "O povo clama: Lembra-te, Senhor. Herança, casas, água e descanso foram perdidos na ruína.",
+      "keyword": "Lembra-te",
+      "keywordGloss": "O apelo do povo ferido: pedir que o Senhor considere a desonra.",
+      "focusQuestion": "Na ruína, o seu primeiro movimento é clamar ao Senhor ou só descrever a dor?",
+      "reflectionPrompts": [
+        "Lembra-te, Senhor",
+        "Herança perdida",
+        "Clamor na ruína"
+      ],
+      "facts": [
+        {
+          "text": "O povo pede que o Senhor se lembre e olhe para a desonra.",
+          "evidenceRef": "Lamentações 5:1",
+          "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra"
+        },
+        {
+          "text": "A herança foi entregue a estranhos e as casas a estrangeiros.",
+          "evidenceRef": "Lamentações 5:2",
+          "evidenceSpan": "A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros"
+        },
+        {
+          "text": "São órfãos e já não têm pai; as mães são como viúvas.",
+          "evidenceRef": "Lamentações 5:3",
+          "evidenceSpan": "Órfãos somos, já não temos pai; nossas mães são como viúvas"
+        },
+        {
+          "text": "Bebem água por preço e a lenha vem a custo.",
+          "evidenceRef": "Lamentações 5:4",
+          "evidenceSpan": "A nossa água bebemos por preço e a nossa lenha vem a custo"
+        },
+        {
+          "text": "Estão exaustos e não têm descanso.",
+          "evidenceRef": "Lamentações 5:5",
+          "evidenceSpan": "estamos exaustos e não temos descanso"
+        },
+        {
+          "text": "Os servos dominam sobre eles; não há quem os livre.",
+          "evidenceRef": "Lamentações 5:8",
+          "evidenceSpan": "Os servos dominam sobre nós; não há ninguém que nos livre de suas mãos"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Lembra-te",
+          "gloss": "O verbo do clamor: pedir que o Senhor considere a desonra."
+        },
+        {
+          "term": "herança",
+          "gloss": "O bem perdido entregue a estranhos."
+        },
+        {
+          "term": "desonra",
+          "gloss": "O que o povo pede que o Senhor veja."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Clamor: lembra e olha a desonra",
+          "evidenceRef": "Lamentações 5:1"
+        },
+        {
+          "label": "Herança e casas perdidas",
+          "evidenceRef": "Lamentações 5:2–3"
+        },
+        {
+          "label": "Água paga, jugo e exaustão",
+          "evidenceRef": "Lamentações 5:4–5"
+        },
+        {
+          "label": "Domínio dos servos e opróbrio",
+          "evidenceRef": "Lamentações 5:8–12"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "A herança foi entregue a estranhos; as casas, a estrangeiros.",
+          "marker": null,
+          "evidenceRef": "Lamentações 5:2"
+        },
+        {
+          "kind": "causa",
+          "text": "Levantam pão com risco por causa da espada do deserto.",
+          "marker": "em razão",
+          "evidenceRef": "Lamentações 5:9"
+        },
+        {
+          "kind": "resultado",
+          "text": "Os pais pecaram; os filhos levam o peso das iniquidades.",
+          "marker": null,
+          "evidenceRef": "Lamentações 5:7"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Salmos 74:2",
+          "bridge": "Lembra-te da tua herança",
+          "text": "Lembra-te da tua congregação, que adquiriste desde a antiguidade, da tribo da tua herança que remiste; lembra-te do monte Sião, onde habitaste."
+        },
+        {
+          "ref": "Salmos 79:8–9",
+          "bridge": "Clamor na desonra do povo",
+          "text": "Não te lembres das iniquidades de nossos pais; apressem-se ao nosso encontro as tuas misericórdias, pois estamos sobremodo abatidos. Ajuda-nos, ó Deus e Salvador nosso, pela glória do teu nome; livra-nos e perdoa os nossos pecados, por amor do teu nome."
+        },
+        {
+          "ref": "Isaías 63:15–16",
+          "bridge": "Apelo ao Senhor que vê",
+          "text": "Atenta desde o céu e olha desde a tua santa e gloriosa habitação. Onde estão o teu zelo e as tuas obras poderosas? A ternura do teu coração e as tuas misericórdias se detêm para comigo? Contudo, tu és nosso Pai; ainda que Abraão não nos conheça e Israel não nos reconheça, tu, ó Senhor, és nosso Pai; nosso Redentor é o teu nome desde a antiguidade."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Na ruína não há mais sentido em clamar ao Senhor.",
+          "why": "5:1 abre com o clamor: Lembra-te, Senhor."
+        },
+        {
+          "text": "A herança e as casas permanecem intactas.",
+          "why": "5:2 diz que foram entregues a estranhos e estrangeiros."
+        },
+        {
+          "text": "Há descanso e liberdade sob o domínio atual.",
+          "why": "5:5 e 5:8 falam de exaustão sem descanso e domínio dos servos."
+        }
+      ],
+      "centralInsight": "Na ruína, o clamor sincero ainda se volta ao Senhor que reina para sempre.",
+      "anchorQuestion": "Segundo Lamentações 5:1, o que o povo pede que o Senhor faça?",
+      "relatedVerses": [
+        {
+          "reference": "Salmos 74:2",
+          "reason": "Lembra-te da tua herança"
+        },
+        {
+          "reference": "Salmos 79:8–9",
+          "reason": "Clamor na desonra do povo"
+        },
+        {
+          "reference": "Isaías 63:15–16",
+          "reason": "Apelo ao Senhor que vê"
+        }
+      ]
+    },
+    "lmc-boss-1": {
+      "slug": "lmc-boss-1",
+      "passageRef": "Lamentações 1:12–17",
+      "passageText": "Não vos comove isto, a todos vós que passais pelo caminho? Considerai e vede se há dor igual à minha, que me sobreveio, com a qual o Senhor me afligiu no dia do furor da sua ira. Do alto, enviou fogo aos meus ossos, que se apoderou de mim; estendeu uma rede aos meus pés, arrojou-me para trás, causando-me desolação e enfermidade durante todo o dia. O jugo das minhas transgressões está atado pela Sua mão; elas estão entrelaçadas, subiram sobre o meu pescoço, e Ele abateu a minha força; o Senhor me entregou nas mãos daquelas a que não posso resistir. O Senhor dispersou todos os meus valentes que estavam comigo; convocou contra mim um ajuntamento para esmagar os meus jovens; o Senhor pisou como em um lagar a virgem filha de Judá. Por estas coisas, eu choro; meus olhos se desfazem em águas, pois o consolador que devia restaurar minhas forças se afastou de mim; meus filhos estão desolados, porque o inimigo prevaleceu. Sião estende as mãos, mas não há quem a console; o SENHOR ordenou que seus vizinhos se tornem seus inimigos; Jerusalém é para eles como coisa imunda.",
+      "passages": [
+        {
+          "ref": "Lamentações 1:12–17",
+          "text": "Não vos comove isto, a todos vós que passais pelo caminho? Considerai e vede se há dor igual à minha, que me sobreveio, com a qual o Senhor me afligiu no dia do furor da sua ira. Do alto, enviou fogo aos meus ossos, que se apoderou de mim; estendeu uma rede aos meus pés, arrojou-me para trás, causando-me desolação e enfermidade durante todo o dia. O jugo das minhas transgressões está atado pela Sua mão; elas estão entrelaçadas, subiram sobre o meu pescoço, e Ele abateu a minha força; o Senhor me entregou nas mãos daquelas a que não posso resistir. O Senhor dispersou todos os meus valentes que estavam comigo; convocou contra mim um ajuntamento para esmagar os meus jovens; o Senhor pisou como em um lagar a virgem filha de Judá. Por estas coisas, eu choro; meus olhos se desfazem em águas, pois o consolador que devia restaurar minhas forças se afastou de mim; meus filhos estão desolados, porque o inimigo prevaleceu. Sião estende as mãos, mas não há quem a console; o SENHOR ordenou que seus vizinhos se tornem seus inimigos; Jerusalém é para eles como coisa imunda."
+        },
+        {
+          "ref": "Lamentações 1:18",
+          "text": "Justo é o Senhor, pois me rebelei contra a sua palavra; ouçam pois, todos os povos, e vejam a minha dor; minhas virgens e meus jovens foram levados para o cativeiro."
+        },
+        {
+          "ref": "Lamentações 2:5–8",
+          "text": "O Senhor se tornou como um inimigo; devorou Israel, arrasou todos os seus palácios, destruiu suas fortalezas e multiplicou na filha de Judá o pranto e a lamentação. Destruiu a sua tenda com brutalidade, como se fosse um jardim; arruinou o lugar da sua assembleia. O Senhor, em Sião, fez esquecer as festas e o sábado, e, na indignação da sua ira, rejeitou com desprezo o rei e o sacerdote. O Senhor rejeitou o seu altar, abominou o seu santuário; entregou nas mãos do inimigo os muros dos seus castelos; gritaram na casa do Senhor, como em dia de festa. O Senhor decidiu destruir o muro da filha de Sião; estendeu o cordel sobre ele e não retirou sua mão destruidora. Tanto o antemuro quanto o muro gemem, pois já estão juntos enfraquecidos."
+        },
+        {
+          "ref": "Lamentações 3:31–33",
+          "text": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias. Porque Ele não aflige nem entristece os filhos dos homens de bom grado."
+        },
+        {
+          "ref": "Lamentações 4:1–2",
+          "text": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!"
+        },
+        {
+          "ref": "Lamentações 5:1–3",
+          "text": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros. Órfãos somos, já não temos pai; nossas mães são como viúvas."
+        }
+      ],
+      "context": "Nesta travessia, revise a confissão de Jerusalém, a ira sobre o santuário, a misericórdia, o ouro escurecido e o clamor.",
+      "keyword": "confissão",
+      "keywordGloss": "Admitir a justiça do Senhor e voltar a ele mesmo na ruína.",
+      "focusQuestion": "Na revisão desta etapa, o que você precisa confessar e de que misericórdia precisa lembrar?",
+      "reflectionPrompts": [
+        "Senhor justo",
+        "Misericórdias",
+        "Clamor na ruína"
+      ],
+      "facts": [
+        {
+          "text": "A cidade confessa: Justo é o Senhor, pois se rebelou.",
+          "evidenceRef": "Lamentações 1:18",
+          "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra"
+        },
+        {
+          "text": "O Senhor rejeitou o altar e abominou o santuário.",
+          "evidenceRef": "Lamentações 2:7",
+          "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário"
+        },
+        {
+          "text": "O Senhor não rejeitará para sempre.",
+          "evidenceRef": "Lamentações 3:31",
+          "evidenceSpan": "o Senhor não rejeitará para sempre"
+        },
+        {
+          "text": "Se entristecer, usará de compaixão conforme suas misericórdias.",
+          "evidenceRef": "Lamentações 3:32",
+          "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias"
+        },
+        {
+          "text": "O ouro se escureceu; os filhos de Sião são como barro.",
+          "evidenceRef": "Lamentações 4:1–2",
+          "evidenceSpan": "Como se escureceu o ouro!"
+        },
+        {
+          "text": "O povo clama: Lembra-te, Senhor, e olha a desonra.",
+          "evidenceRef": "Lamentações 5:1",
+          "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Justo",
+          "gloss": "Atributo confessado: o Senhor age com justiça."
+        },
+        {
+          "term": "misericórdias",
+          "gloss": "A grandeza que move a compaixão após a disciplina."
+        },
+        {
+          "term": "Lembra-te",
+          "gloss": "O verbo do clamor na ruína."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Confissão da justiça do Senhor",
+          "evidenceRef": "Lamentações 1:18"
+        },
+        {
+          "label": "Ira que atinge até o santuário",
+          "evidenceRef": "Lamentações 2:7"
+        },
+        {
+          "label": "Esperança nas misericórdias",
+          "evidenceRef": "Lamentações 3:31–32"
+        },
+        {
+          "label": "Glória escurecida e clamor final",
+          "evidenceRef": "Lamentações 5:1"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "O Senhor é justo porque a cidade se rebelou.",
+          "marker": "pois",
+          "evidenceRef": "Lamentações 1:18"
+        },
+        {
+          "kind": "contraste",
+          "text": "Ele entristece, mas usa de compaixão.",
+          "marker": "Antes",
+          "evidenceRef": "Lamentações 3:32"
+        },
+        {
+          "kind": "resultado",
+          "text": "O Senhor se tornou como inimigo e rejeitou o santuário.",
+          "marker": "como",
+          "evidenceRef": "Lamentações 2:5"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Deuteronômio 32:4",
+          "bridge": "Deus é justo e reto",
+          "text": "Ele é a Rocha, cujas obras são perfeitas, pois todos os seus caminhos são juízo; Deus é fidelidade, e nele não há injustiça; é justo e reto."
+        },
+        {
+          "ref": "Salmos 103:8",
+          "bridge": "Misericórdia e compaixão",
+          "text": "O Senhor é misericordioso e compassivo; é longânimo e assaz benigno."
+        },
+        {
+          "ref": "Salmos 74:2",
+          "bridge": "Lembra-te da herança",
+          "text": "Lembra-te da tua congregação, que adquiriste desde a antiguidade, da tribo da tua herança que remiste; lembra-te do monte Sião, onde habitaste."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A cidade caiu inocente, sem qualquer confissão.",
+          "why": "1:18 confessa rebelião e chama o Senhor de justo."
+        },
+        {
+          "text": "A disciplina é rejeição definitiva sem misericórdia.",
+          "why": "3:31–32 afirmam que não rejeita para sempre e usa de compaixão."
+        },
+        {
+          "text": "Na ruína não resta clamor ao Senhor.",
+          "why": "5:1 abre com Lembra-te, Senhor."
+        }
+      ],
+      "centralInsight": "Mesmo na ruína, há espaço para confessar e esperar no Senhor",
+      "anchorQuestion": "Como Lamentações une confissão, misericórdia e clamor na cidade caída?",
+      "relatedVerses": [
+        {
+          "reference": "Deuteronômio 32:4",
+          "reason": "Deus é justo e reto"
+        },
+        {
+          "reference": "Salmos 103:8",
+          "reason": "Misericórdia e compaixão"
+        },
+        {
+          "reference": "Salmos 74:2",
+          "reason": "Lembra-te da herança"
+        }
+      ]
+    }
+  }
+}

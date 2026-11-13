@@ -1,0 +1,5086 @@
+[
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-01-ministerio-como-mae-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 2:7, Paulo diz que foram carinhosos como uma mãe.",
+    "prompt": "Em 1 Tessalonicenses 2:7, Paulo diz que foram carinhosos como uma mãe.",
+    "cue": "Em 1 Tessalonicenses 2:7, Paulo diz que foram carinhosos como uma mãe.",
+    "verseRef": "1 Tessalonicenses 2:7",
+    "passageText": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos",
+    "feedbackCorrect": "O tom maternal está explícito.",
+    "feedbackWrong": {
+      "false": "Releia a comparação com a mãe."
+    },
+    "hint": "Olhe a comparação.",
+    "learningObjective": "Observar o carinho maternal.",
+    "evidence": [
+      "1 Tessalonicenses 2:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-01-ministerio-como-mae-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 2:4, toque a quem querem agradar.",
+    "prompt": "Em 1 Tessalonicenses 2:4, toque a quem querem agradar.",
+    "cue": "Em 1 Tessalonicenses 2:4, toque a quem querem agradar.",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "homens"
+      },
+      {
+        "id": "c",
+        "text": "evangelho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "Agradam a Deus.",
+    "feedbackWrong": {
+      "b": "Homens são o contraste.",
+      "c": "Evangelho é o conteúdo."
+    },
+    "hint": "Procure o contraste.",
+    "learningObjective": "Identificar o alvo.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-01-ministerio-como-mae-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Tessalonicenses 2:5, o que nunca empregaram?",
+    "prompt": "Segundo 1 Tessalonicenses 2:5, o que nunca empregaram?",
+    "cue": "Segundo 1 Tessalonicenses 2:5, o que nunca empregaram?",
+    "verseRef": "1 Tessalonicenses 2:5",
+    "passageText": "Pois, como vocês bem sabem, nunca empregamos palavras de bajulação, nem usamos um pretexto para a ganância; Deus é a nossa testemunha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavras de bajulação nem pretexto para ganância"
+      },
+      {
+        "id": "b",
+        "text": "Ousadia para anunciar"
+      },
+      {
+        "id": "c",
+        "text": "Carinho como de mãe"
+      },
+      {
+        "id": "d",
+        "text": "Oferta da própria vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nunca empregamos palavras de bajulação, nem usamos um pretexto para a ganância",
+    "feedbackCorrect": "Sem bajulação nem ganância.",
+    "feedbackWrong": {
+      "b": "Ousadia está em 2:2.",
+      "c": "Carinho está em 2:7.",
+      "d": "Oferta está em 2:8."
+    },
+    "hint": "Leia o que nunca fizeram.",
+    "learningObjective": "Observar a integridade.",
+    "evidence": [
+      "1 Tessalonicenses 2:5"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-01-ministerio-como-mae-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 2:7",
+    "passageText": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fomos carinhosos entre vocês"
+      },
+      {
+        "id": "b",
+        "text": "como uma mãe"
+      },
+      {
+        "id": "c",
+        "text": "que acaricia seus próprios filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe",
+    "feedbackCorrect": "Carinho e comparação.",
+    "feedbackWrong": {
+      "default": "Comece por Fomos carinhosos."
+    },
+    "hint": "Comece pelo carinho.",
+    "learningObjective": "Reconhecer 2:7.",
+    "evidence": [
+      "1 Tessalonicenses 2:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-01-ministerio-como-mae-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 2:2, tiveram ___ em nosso Deus para anunciar.",
+    "prompt": "Em 1 Tessalonicenses 2:2, tiveram ___ em nosso Deus para anunciar.",
+    "cue": "Em 1 Tessalonicenses 2:2, tiveram ___ em nosso Deus para anunciar.",
+    "verseRef": "1 Tessalonicenses 2:2",
+    "passageText": "Antes, tendo sofrido e sido maltratados em Filipos, como vocês sabem, tivemos ousadia em nosso Deus, para lhes anunciar o evangelho de Deus, em meio a muita luta.",
+    "template": "Antes, tendo sofrido e sido maltratados em Filipos, como vocês sabem, tivemos ___ em nosso Deus, para lhes anunciar o evangelho de Deus, em meio a muita luta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "bajulação"
+      },
+      {
+        "id": "b",
+        "text": "ousadia"
+      },
+      {
+        "id": "c",
+        "text": "ganância"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "tivemos ousadia em nosso Deus",
+    "feedbackCorrect": "Ousadia apesar da luta.",
+    "feedbackWrong": {
+      "a": "Bajulação é negada.",
+      "c": "Ganância é negada."
+    },
+    "hint": "Veja o que tiveram.",
+    "learningObjective": "Lembrar a ousadia.",
+    "evidence": [
+      "1 Tessalonicenses 2:2"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-01-ministerio-como-mae-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Tessalonicenses 2:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Tessalonicenses 2:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Tessalonicenses 2:7 comunica que se liga a este contexto?",
+    "verseRef": "1 Tessalonicenses 2:7",
+    "passageText": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 2:7",
+      "text": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O ministério foi maternal, não explorador."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ministério frio"
+      },
+      {
+        "id": "b",
+        "text": "Busca de glória"
+      },
+      {
+        "id": "c",
+        "text": "Cuidado como de mãe"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "como uma mãe que acaricia seus próprios filhos",
+    "feedbackCorrect": "Tom maternal.",
+    "feedbackWrong": {
+      "a": "Há carinho.",
+      "b": "Negam busca de glória."
+    },
+    "hint": "Veja a comparação.",
+    "learningObjective": "Ligar ao carinho.",
+    "evidence": [
+      "1 Tessalonicenses 2:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-01-ministerio-como-mae-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 2:4, Paulo fala para agradar aos homens, não a Deus.",
+    "prompt": "Em 1 Tessalonicenses 2:4, Paulo fala para agradar aos homens, não a Deus.",
+    "cue": "Em 1 Tessalonicenses 2:4, Paulo fala para agradar aos homens, não a Deus.",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "O contraste é o oposto.",
+    "feedbackWrong": {
+      "true": "Releia o mas: agradar a Deus."
+    },
+    "hint": "Repare no contraste.",
+    "learningObjective": "Compreender o alvo.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-01-ministerio-como-mae-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 2:4, toque a palavra que marca o contraste.",
+    "prompt": "Em 1 Tessalonicenses 2:4, toque a palavra que marca o contraste.",
+    "cue": "Em 1 Tessalonicenses 2:4, toque a palavra que marca o contraste.",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "corações"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "Mas vira para Deus.",
+    "feedbackWrong": {
+      "a": "Assim introduz a aprovação.",
+      "c": "Deus sonda os corações."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-01-ministerio-como-mae-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Tessalonicenses 2:8 se relaciona com o evangelho?",
+    "prompt": "Como 1 Tessalonicenses 2:8 se relaciona com o evangelho?",
+    "cue": "Como 1 Tessalonicenses 2:8 se relaciona com o evangelho?",
+    "verseRef": "1 Tessalonicenses 2:8",
+    "passageText": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardam a vida e omitem o evangelho"
+      },
+      {
+        "id": "b",
+        "text": "Oferecem só discurso sem afeto"
+      },
+      {
+        "id": "c",
+        "text": "Buscam glória dos ouvintes"
+      },
+      {
+        "id": "d",
+        "text": "Oferecem evangelho e também a própria vida"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+    "feedbackCorrect": "Evangelho e vida juntos.",
+    "feedbackWrong": {
+      "a": "Há evangelho e vidas.",
+      "b": "Há oferta da vida.",
+      "c": "Negam glória."
+    },
+    "hint": "Una não apenas e mas também.",
+    "learningObjective": "Relacionar mensagem e vida.",
+    "evidence": [
+      "1 Tessalonicenses 2:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-01-ministerio-como-mae-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança 1 Tessalonicenses 2:1–7?",
+    "prompt": "Como avança 1 Tessalonicenses 2:1–7?",
+    "cue": "Como avança 1 Tessalonicenses 2:1–7?",
+    "verseRef": "1 Tessalonicenses 2:7",
+    "passageText": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Estada não infrutífera"
+      },
+      {
+        "id": "b",
+        "text": "Ousadia após sofrer"
+      },
+      {
+        "id": "c",
+        "text": "Carinho como de mãe"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Fomos carinhosos entre vocês",
+    "feedbackCorrect": "Fruto, ousadia e carinho.",
+    "feedbackWrong": {
+      "default": "Comece pela estada."
+    },
+    "hint": "Siga fruto → ousadia → mãe.",
+    "learningObjective": "Compreender o movimento.",
+    "evidence": [
+      "1 Tessalonicenses 2:1–2"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-01-ministerio-como-mae-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 2:4, Deus sonda os nossos ___.",
+    "prompt": "Em 1 Tessalonicenses 2:4, Deus sonda os nossos ___.",
+    "cue": "Em 1 Tessalonicenses 2:4, Deus sonda os nossos ___.",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "template": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "engano"
+      },
+      {
+        "id": "b",
+        "text": "corações"
+      },
+      {
+        "id": "c",
+        "text": "homens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que sonda os nossos corações",
+    "feedbackCorrect": "O contraste termina com Deus, que sonda os corações.",
+    "feedbackWrong": {
+      "a": "Engano aparece antes; aqui o foco é o exame de Deus.",
+      "c": "Homens são quem não se busca agradar."
+    },
+    "hint": "Toque o que Deus sonda.",
+    "learningObjective": "Lembrar o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-01-ministerio-como-mae-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+    "prompt": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+    "cue": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 2:4",
+      "text": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações."
+    },
+    "passageB": {
+      "ref": "Gálatas 1:10",
+      "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria servo de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Abandonar o evangelho"
+      },
+      {
+        "id": "b",
+        "text": "Agradar a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Agradar homens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "Servo de Cristo agrada a Deus.",
+    "feedbackWrong": {
+      "a": "O evangelho é anunciado.",
+      "c": "É o contraste."
+    },
+    "hint": "Compare o alvo.",
+    "learningObjective": "Relacionar agradar a Deus.",
+    "evidence": [
+      "1 Tessalonicenses 2:4",
+      "Gálatas 1:10"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-01-ministerio-como-mae-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "1 Tessalonicenses 2:1–8 apresenta um ministério sem engano, sem glória humana e com oferta da vida.",
+    "prompt": "1 Tessalonicenses 2:1–8 apresenta um ministério sem engano, sem glória humana e com oferta da vida.",
+    "cue": "1 Tessalonicenses 2:1–8 apresenta um ministério sem engano, sem glória humana e com oferta da vida.",
+    "verseRef": "1 Tessalonicenses 2:8",
+    "passageText": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+    "feedbackCorrect": "Integridade e doação marcam o trecho.",
+    "feedbackWrong": {
+      "false": "Una 2:3–6 com 2:8."
+    },
+    "hint": "Una o que negam e o que oferecem.",
+    "learningObjective": "Interpretar o ministério.",
+    "evidence": [
+      "1 Tessalonicenses 2:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-01-ministerio-como-mae-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+    "prompt": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+    "cue": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+    "verseRef": "1 Tessalonicenses 2:8",
+    "passageText": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "evangelho"
+      },
+      {
+        "id": "b",
+        "text": "amados"
+      },
+      {
+        "id": "c",
+        "text": "nossas próprias vidas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas também nossas próprias vidas",
+    "feedbackCorrect": "Oferecem a vida.",
+    "feedbackWrong": {
+      "a": "O evangelho já está na oferta; o acréscimo é outro.",
+      "b": "Amados descreve o resultado, não o que oferecem."
+    },
+    "hint": "Procure mas também.",
+    "learningObjective": "Sustentar a oferta.",
+    "evidence": [
+      "1 Tessalonicenses 2:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-01-ministerio-como-mae-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Tessalonicenses 2:1–8 sustenta?",
+    "prompt": "Que leitura 1 Tessalonicenses 2:1–8 sustenta?",
+    "cue": "Que leitura 1 Tessalonicenses 2:1–8 sustenta?",
+    "verseRef": "1 Tessalonicenses 2:6",
+    "passageText": "Não buscamos a glória dos homens, nem de vocês, nem de outros, embora pudéssemos, como apóstolos de Cristo, ter exigido isso de vocês;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ministério sem glória humana, com ousadia e carinho"
+      },
+      {
+        "id": "b",
+        "text": "Ousadia sem qualquer afeto"
+      },
+      {
+        "id": "c",
+        "text": "Ministério movido por ganância"
+      },
+      {
+        "id": "d",
+        "text": "Evangelho só para agradar ouvintes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Não buscamos a glória dos homens",
+    "feedbackCorrect": "Sem glória humana; com ousadia e carinho.",
+    "feedbackWrong": {
+      "b": "Há carinho de mãe.",
+      "c": "Ganância é negada.",
+      "d": "Agradam a Deus."
+    },
+    "hint": "Una o que negam e o tom maternal.",
+    "learningObjective": "Escolher a leitura.",
+    "evidence": [
+      "1 Tessalonicenses 2:6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-01-ministerio-como-mae-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio do ministério?",
+    "prompt": "Qual sequência revela o fio do ministério?",
+    "cue": "Qual sequência revela o fio do ministério?",
+    "verseRef": "1 Tessalonicenses 2:2",
+    "passageText": "Antes, tendo sofrido e sido maltratados em Filipos, como vocês sabem, tivemos ousadia em nosso Deus, para lhes anunciar o evangelho de Deus, em meio a muita luta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sofrem em Filipos"
+      },
+      {
+        "id": "b",
+        "text": "Anunciam com ousadia"
+      },
+      {
+        "id": "c",
+        "text": "Oferecem evangelho e vida"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "tivemos ousadia em nosso Deus",
+    "feedbackCorrect": "Sofrimento, ousadia e doação.",
+    "feedbackWrong": {
+      "default": "Comece pelo sofrimento."
+    },
+    "hint": "Siga luta → ousadia → oferta.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "1 Tessalonicenses 2:2",
+      "1 Tessalonicenses 2:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-01-ministerio-como-mae-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+    "prompt": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+    "cue": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+    "verseRef": "1 Tessalonicenses 2:6",
+    "passageText": "Não buscamos a glória dos homens, nem de vocês, nem de outros, embora pudéssemos, como apóstolos de Cristo, ter exigido isso de vocês;",
+    "template": "Não buscamos a ___ dos homens, nem de vocês, nem de outros, embora pudéssemos, como apóstolos de Cristo, ter exigido isso de vocês;",
+    "options": [
+      {
+        "id": "a",
+        "text": "paz"
+      },
+      {
+        "id": "b",
+        "text": "fé"
+      },
+      {
+        "id": "c",
+        "text": "glória"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Não buscamos a glória dos homens",
+    "feedbackCorrect": "Sem busca de glória humana.",
+    "feedbackWrong": {
+      "a": "Não é paz.",
+      "b": "Não é fé."
+    },
+    "hint": "O que não buscam.",
+    "learningObjective": "Lembrar o termo.",
+    "evidence": [
+      "1 Tessalonicenses 2:6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-01-ministerio-como-mae-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-01-ministerio-como-mae",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Tessalonicenses 2:8 a 2 Coríntios 12:15?",
+    "prompt": "O que liga 1 Tessalonicenses 2:8 a 2 Coríntios 12:15?",
+    "cue": "O que liga 1 Tessalonicenses 2:8 a 2 Coríntios 12:15?",
+    "verseRef": "1 Tessalonicenses 2:8",
+    "passageText": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 2:8",
+      "text": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 12:15",
+      "text": "E eu, de boa vontade, me gastarei e ainda me deixarei gastar em prol de vossas almas, mesmo que, amando-vos cada vez mais, eu seja menos amado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Gastar-se pelos filhos"
+      },
+      {
+        "id": "b",
+        "text": "Buscar glória"
+      },
+      {
+        "id": "c",
+        "text": "Evitar o afeto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+    "feedbackCorrect": "Doação pelos amados.",
+    "feedbackWrong": {
+      "b": "Negam glória.",
+      "c": "Há desejo e amor."
+    },
+    "hint": "Compare a oferta da vida.",
+    "learningObjective": "Ligar a doação pastoral.",
+    "evidence": [
+      "1 Tessalonicenses 2:8",
+      "2 Coríntios 12:15"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-02-consolados-pela-fe-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 3:7, Paulo se entristece ainda mais com a fé deles.",
+    "prompt": "Em 1 Tessalonicenses 3:7, Paulo se entristece ainda mais com a fé deles.",
+    "cue": "Em 1 Tessalonicenses 3:7, Paulo se entristece ainda mais com a fé deles.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ficamos consolados a respeito de vocês",
+    "feedbackCorrect": "O texto diz consolados pela fé.",
+    "feedbackWrong": {
+      "true": "Releia: ficamos consolados."
+    },
+    "hint": "Olhe o verbo principal.",
+    "learningObjective": "Observar o consolo.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-02-consolados-pela-fe-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 3:6, toque o que Timóteo trouxe sobre eles.",
+    "prompt": "Em 1 Tessalonicenses 3:6, toque o que Timóteo trouxe sobre eles.",
+    "cue": "Em 1 Tessalonicenses 3:6, toque o que Timóteo trouxe sobre eles.",
+    "verseRef": "1 Tessalonicenses 3:6",
+    "passageText": "Agora, porém, Timóteo voltou de vocês e nos trouxe boas notícias sobre a fé e o amor de vocês, e de que sempre têm uma grata lembrança de nós, desejando muito nos ver, assim como também nós desejamos vê-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lembrança"
+      },
+      {
+        "id": "b",
+        "text": "Timóteo"
+      },
+      {
+        "id": "c",
+        "text": "boas notícias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nos trouxe boas notícias sobre a fé e o amor de vocês",
+    "feedbackCorrect": "Boas notícias da fé e do amor.",
+    "feedbackWrong": {
+      "a": "Faz parte da notícia.",
+      "b": "É quem voltou."
+    },
+    "hint": "Procure o que trouxe.",
+    "learningObjective": "Identificar as boas notícias.",
+    "evidence": [
+      "1 Tessalonicenses 3:6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-02-consolados-pela-fe-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Tessalonicenses 3:8, quando Paulo diz que agora vivem?",
+    "prompt": "Segundo 1 Tessalonicenses 3:8, quando Paulo diz que agora vivem?",
+    "cue": "Segundo 1 Tessalonicenses 3:8, quando Paulo diz que agora vivem?",
+    "verseRef": "1 Tessalonicenses 3:8",
+    "passageText": "Porque agora vivemos, se é que vocês permanecem firmes no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se eles permanecem firmes no Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Se abandonam a fé"
+      },
+      {
+        "id": "c",
+        "text": "Se deixam de amar"
+      },
+      {
+        "id": "d",
+        "text": "Se esquecem Timóteo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "agora vivemos, se é que vocês permanecem firmes no Senhor",
+    "feedbackCorrect": "Vida ligada à firmeza deles.",
+    "feedbackWrong": {
+      "b": "É permanecer firmes.",
+      "c": "Oram pelo amor.",
+      "d": "Há desejo de ver."
+    },
+    "hint": "Leia a condição.",
+    "learningObjective": "Observar a firmeza.",
+    "evidence": [
+      "1 Tessalonicenses 3:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-02-consolados-pela-fe-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por isso, irmãos, ficamos consolados a respeito de vocês"
+      },
+      {
+        "id": "b",
+        "text": "em toda a nossa aflição e necessidade"
+      },
+      {
+        "id": "c",
+        "text": "pela fé de vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ficamos consolados a respeito de vocês",
+    "feedbackCorrect": "Consolo na aflição pela fé.",
+    "feedbackWrong": {
+      "default": "Comece por Por isso."
+    },
+    "hint": "Comece pelo resultado.",
+    "learningObjective": "Reconhecer 3:7.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-02-consolados-pela-fe-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 3:12, que o Senhor faça crescer e abundar em ___.",
+    "prompt": "Em 1 Tessalonicenses 3:12, que o Senhor faça crescer e abundar em ___.",
+    "cue": "Em 1 Tessalonicenses 3:12, que o Senhor faça crescer e abundar em ___.",
+    "verseRef": "1 Tessalonicenses 3:12",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "template": "E que o Senhor faça com que vocês cresçam e abundem em ___ uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "options": [
+      {
+        "id": "a",
+        "text": "amor"
+      },
+      {
+        "id": "b",
+        "text": "ódio"
+      },
+      {
+        "id": "c",
+        "text": "medo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "cresçam e abundem em amor",
+    "feedbackCorrect": "Amor uns aos outros e a todos.",
+    "feedbackWrong": {
+      "b": "Não é ódio.",
+      "c": "Não é medo."
+    },
+    "hint": "Veja o que deve abundar.",
+    "learningObjective": "Lembrar o amor.",
+    "evidence": [
+      "1 Tessalonicenses 3:12"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-02-consolados-pela-fe-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 3:7",
+      "text": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé firme dos irmãos consola o apóstolo aflito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé que abandona"
+      },
+      {
+        "id": "b",
+        "text": "Aflição sem alívio"
+      },
+      {
+        "id": "c",
+        "text": "Fé que consola"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ficamos consolados a respeito de vocês, em toda a nossa aflição",
+    "feedbackCorrect": "Consolo pela fé.",
+    "feedbackWrong": {
+      "a": "Há firmeza.",
+      "b": "Há consolo."
+    },
+    "hint": "Una aflição e consolo.",
+    "learningObjective": "Ligar à fé consoladora.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-02-consolados-pela-fe-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 3:7, a fé deles produz consolo em meio à aflição de Paulo.",
+    "prompt": "Em 1 Tessalonicenses 3:7, a fé deles produz consolo em meio à aflição de Paulo.",
+    "cue": "Em 1 Tessalonicenses 3:7, a fé deles produz consolo em meio à aflição de Paulo.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês",
+    "feedbackCorrect": "Por isso marca o resultado da fé.",
+    "feedbackWrong": {
+      "false": "Releia: consolados pela fé."
+    },
+    "hint": "Repare em Por isso e pela fé.",
+    "learningObjective": "Compreender o resultado.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-02-consolados-pela-fe-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 3:7, toque a expressão que marca o resultado.",
+    "prompt": "Em 1 Tessalonicenses 3:7, toque a expressão que marca o resultado.",
+    "cue": "Em 1 Tessalonicenses 3:7, toque a expressão que marca o resultado.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "necessidade"
+      },
+      {
+        "id": "b",
+        "text": "aflição"
+      },
+      {
+        "id": "c",
+        "text": "Por isso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Por isso, irmãos, ficamos consolados",
+    "feedbackCorrect": "Por isso liga à fé.",
+    "feedbackWrong": {
+      "a": "É o contexto.",
+      "b": "É o contexto."
+    },
+    "hint": "Abertura do versículo.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-02-consolados-pela-fe-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+    "prompt": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+    "cue": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+    "verseRef": "1 Tessalonicenses 3:12–13",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês; Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A vinda cancela a oração"
+      },
+      {
+        "id": "b",
+        "text": "Amor que cresce fortalece para a vinda"
+      },
+      {
+        "id": "c",
+        "text": "Amor cresce para esquecer a vinda"
+      },
+      {
+        "id": "d",
+        "text": "Santidade dispensa o amor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis",
+    "feedbackCorrect": "Amor visa santidade na vinda.",
+    "feedbackWrong": {
+      "a": "A oração continua.",
+      "c": "Há vinda no alvo.",
+      "d": "Amor e santidade juntos."
+    },
+    "hint": "Una Para fortalecer e a vinda.",
+    "learningObjective": "Relacionar amor e vinda.",
+    "evidence": [
+      "1 Tessalonicenses 3:12–13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-02-consolados-pela-fe-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança 1 Tessalonicenses 3:6–13?",
+    "prompt": "Como avança 1 Tessalonicenses 3:6–13?",
+    "cue": "Como avança 1 Tessalonicenses 3:6–13?",
+    "verseRef": "1 Tessalonicenses 3:12",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boas notícias da fé"
+      },
+      {
+        "id": "b",
+        "text": "Consolo na aflição"
+      },
+      {
+        "id": "c",
+        "text": "Oração pelo amor até a vinda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "que o Senhor faça com que vocês cresçam e abundem em amor",
+    "feedbackCorrect": "Notícia, consolo e oração.",
+    "feedbackWrong": {
+      "default": "Comece pelas boas notícias."
+    },
+    "hint": "Siga notícia → consolo → oração.",
+    "learningObjective": "Compreender o movimento.",
+    "evidence": [
+      "1 Tessalonicenses 3:6",
+      "1 Tessalonicenses 3:12"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-02-consolados-pela-fe-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 3:6, Agora, ___, Timóteo voltou.",
+    "prompt": "Em 1 Tessalonicenses 3:6, Agora, ___, Timóteo voltou.",
+    "cue": "Em 1 Tessalonicenses 3:6, Agora, ___, Timóteo voltou.",
+    "verseRef": "1 Tessalonicenses 3:6",
+    "passageText": "Agora, porém, Timóteo voltou de vocês e nos trouxe boas notícias sobre a fé e o amor de vocês, e de que sempre têm uma grata lembrança de nós, desejando muito nos ver, assim como também nós desejamos vê-los.",
+    "template": "Agora, ___, Timóteo voltou de vocês e nos trouxe boas notícias sobre a fé e o amor de vocês, e de que sempre têm uma grata lembrança de nós, desejando muito nos ver, assim como também nós desejamos vê-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nunca"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "talvez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Agora, porém, Timóteo voltou",
+    "feedbackCorrect": "Porém marca a virada.",
+    "feedbackWrong": {
+      "a": "Não é nunca.",
+      "c": "Não é talvez."
+    },
+    "hint": "Palavra após Agora.",
+    "learningObjective": "Lembrar o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 3:6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-02-consolados-pela-fe-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+    "prompt": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+    "cue": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+    "verseRef": "1 Tessalonicenses 3:12",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "passageA": {
+      "ref": "1 Tessalonicenses 3:12",
+      "text": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;"
+    },
+    "passageB": {
+      "ref": "Filipenses 1:9",
+      "text": "E também faço esta oração: que o amor de vocês aumente mais e mais em pleno conhecimento e em toda a percepção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que some"
+      },
+      {
+        "id": "b",
+        "text": "Amor que cresce"
+      },
+      {
+        "id": "c",
+        "text": "Amor só humano"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cresçam e abundem em amor",
+    "feedbackCorrect": "Oração pelo crescimento do amor.",
+    "feedbackWrong": {
+      "a": "É crescer.",
+      "c": "O Senhor faz crescer."
+    },
+    "hint": "Compare o pedido de crescimento.",
+    "learningObjective": "Relacionar amor crescente.",
+    "evidence": [
+      "1 Tessalonicenses 3:12",
+      "Filipenses 1:9"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-02-consolados-pela-fe-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "1 Tessalonicenses 3:6–13 trata a fé como isolamento sem amor nem esperança da vinda.",
+    "prompt": "1 Tessalonicenses 3:6–13 trata a fé como isolamento sem amor nem esperança da vinda.",
+    "cue": "1 Tessalonicenses 3:6–13 trata a fé como isolamento sem amor nem esperança da vinda.",
+    "verseRef": "1 Tessalonicenses 3:12",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "cresçam e abundem em amor",
+    "feedbackCorrect": "Há fé, amor crescente e vinda.",
+    "feedbackWrong": {
+      "true": "Releia amor e vinda."
+    },
+    "hint": "Veja o pedido e o alvo.",
+    "learningObjective": "Interpretar fé com amor e vinda.",
+    "evidence": [
+      "1 Tessalonicenses 3:12"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-02-consolados-pela-fe-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 3:13, toque o marco da santidade irrepreensível.",
+    "prompt": "Em 1 Tessalonicenses 3:13, toque o marco da santidade irrepreensível.",
+    "cue": "Em 1 Tessalonicenses 3:13, toque o marco da santidade irrepreensível.",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "corações"
+      },
+      {
+        "id": "b",
+        "text": "nosso Deus"
+      },
+      {
+        "id": "c",
+        "text": "vinda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "A vinda é o horizonte.",
+    "feedbackWrong": {
+      "a": "Corações são o que se fortalece, não o horizonte.",
+      "b": "Nosso Deus é o juiz diante de quem se está, não o marco temporal."
+    },
+    "hint": "Procure o tempo final.",
+    "learningObjective": "Sustentar a vinda.",
+    "evidence": [
+      "1 Tessalonicenses 3:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-02-consolados-pela-fe-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Tessalonicenses 3:6–13 sustenta?",
+    "prompt": "Que leitura 1 Tessalonicenses 3:6–13 sustenta?",
+    "cue": "Que leitura 1 Tessalonicenses 3:6–13 sustenta?",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor sem relação com santidade"
+      },
+      {
+        "id": "b",
+        "text": "Fé sem efeito no apóstolo"
+      },
+      {
+        "id": "c",
+        "text": "Vinda irrelevante para a igreja"
+      },
+      {
+        "id": "d",
+        "text": "Fé que consola e amor que cresce até a vinda"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "irrepreensíveis em santidade",
+    "feedbackCorrect": "Fé, amor e vinda unidos.",
+    "feedbackWrong": {
+      "a": "Há irrepreensíveis.",
+      "b": "Há consolo.",
+      "c": "Há vinda no alvo."
+    },
+    "hint": "Una consolo, amor e vinda.",
+    "learningObjective": "Escolher a leitura.",
+    "evidence": [
+      "1 Tessalonicenses 3:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-02-consolados-pela-fe-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio até a vinda?",
+    "prompt": "Qual sequência revela o fio até a vinda?",
+    "cue": "Qual sequência revela o fio até a vinda?",
+    "verseRef": "1 Tessalonicenses 3:12–13",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês; Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fé firme consolando"
+      },
+      {
+        "id": "b",
+        "text": "Amor crescendo"
+      },
+      {
+        "id": "c",
+        "text": "Corações irrepreensíveis na vinda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Fé, amor e santidade na vinda.",
+    "feedbackWrong": {
+      "default": "Comece pela fé."
+    },
+    "hint": "Siga fé → amor → vinda.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "1 Tessalonicenses 3:7",
+      "1 Tessalonicenses 3:12–13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-02-consolados-pela-fe-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 3:13, irrepreensíveis em ___.",
+    "prompt": "Em 1 Tessalonicenses 3:13, irrepreensíveis em ___.",
+    "cue": "Em 1 Tessalonicenses 3:13, irrepreensíveis em ___.",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "template": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em ___, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "santidade"
+      },
+      {
+        "id": "b",
+        "text": "riqueza"
+      },
+      {
+        "id": "c",
+        "text": "poder"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "irrepreensíveis em santidade",
+    "feedbackCorrect": "Santidade diante do Pai.",
+    "feedbackWrong": {
+      "b": "Não é riqueza.",
+      "c": "Não é poder."
+    },
+    "hint": "Veja o termo do alvo.",
+    "learningObjective": "Lembrar santidade.",
+    "evidence": [
+      "1 Tessalonicenses 3:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-02-consolados-pela-fe-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-02-consolados-pela-fe",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Tessalonicenses 3:13 a 1 Coríntios 1:8?",
+    "prompt": "O que liga 1 Tessalonicenses 3:13 a 1 Coríntios 1:8?",
+    "cue": "O que liga 1 Tessalonicenses 3:13 a 1 Coríntios 1:8?",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 3:13",
+      "text": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 1:8",
+      "text": "Ele também os confirmará até o fim, para que permaneçam irrepreensíveis no Dia de nosso Senhor Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem horizonte"
+      },
+      {
+        "id": "b",
+        "text": "Culpa permanente"
+      },
+      {
+        "id": "c",
+        "text": "Irrepreensíveis até o fim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "irrepreensíveis em santidade",
+    "feedbackCorrect": "Sustentados irrepreensíveis até o dia do Senhor.",
+    "feedbackWrong": {
+      "a": "Há a vinda.",
+      "b": "O alvo é irrepreensíveis."
+    },
+    "hint": "Compare irrepreensíveis.",
+    "learningObjective": "Ligar a perseverança.",
+    "evidence": [
+      "1 Tessalonicenses 3:13",
+      "1 Coríntios 1:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-03-nao-vos-entristecais-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 4:13, Paulo quer que se entristeçam exatamente como os que não têm esperança.",
+    "prompt": "Em 1 Tessalonicenses 4:13, Paulo quer que se entristeçam exatamente como os que não têm esperança.",
+    "cue": "Em 1 Tessalonicenses 4:13, Paulo quer que se entristeçam exatamente como os que não têm esperança.",
+    "verseRef": "1 Tessalonicenses 4:13",
+    "passageText": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que não se entristeçam como os demais, que não têm esperança",
+    "feedbackCorrect": "O alvo é não lutar como os sem esperança.",
+    "feedbackWrong": {
+      "true": "Releia: para que não se entristeçam como os demais."
+    },
+    "hint": "Olhe o para que.",
+    "learningObjective": "Observar o contraste do luto.",
+    "evidence": [
+      "1 Tessalonicenses 4:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-03-nao-vos-entristecais-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+    "prompt": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+    "cue": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trombeta"
+      },
+      {
+        "id": "b",
+        "text": "mortos em Cristo"
+      },
+      {
+        "id": "c",
+        "text": "arcanjo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Mortos em Cristo primeiro.",
+    "feedbackWrong": {
+      "a": "É o sinal.",
+      "c": "É a voz."
+    },
+    "hint": "Procure quem ressuscita.",
+    "learningObjective": "Identificar os mortos em Cristo.",
+    "evidence": [
+      "1 Tessalonicenses 4:16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-03-nao-vos-entristecais-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Tessalonicenses 4:17, o que acontece depois?",
+    "prompt": "Segundo 1 Tessalonicenses 4:17, o que acontece depois?",
+    "cue": "Segundo 1 Tessalonicenses 4:17, o que acontece depois?",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vivos são arrebatados para o encontro com o Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Não há encontro nos ares"
+      },
+      {
+        "id": "c",
+        "text": "Mortos ficam para trás para sempre"
+      },
+      {
+        "id": "d",
+        "text": "A esperança se encerra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor",
+    "feedbackCorrect": "Arrebatados juntos.",
+    "feedbackWrong": {
+      "b": "Há encontro nos ares.",
+      "c": "Juntamente com eles.",
+      "d": "Há conforto."
+    },
+    "hint": "Leia o depois.",
+    "learningObjective": "Observar o arrebatamento.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-03-nao-vos-entristecais-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o mesmo Senhor descerá dos céus"
+      },
+      {
+        "id": "b",
+        "text": "com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus"
+      },
+      {
+        "id": "c",
+        "text": "e os mortos em Cristo ressuscitarão primeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Descida, sinais e ressurreição.",
+    "feedbackWrong": {
+      "default": "Comece pelo Senhor."
+    },
+    "hint": "Comece pela descida.",
+    "learningObjective": "Reconhecer 4:16.",
+    "evidence": [
+      "1 Tessalonicenses 4:16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-03-nao-vos-entristecais-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 4:13, os demais não têm ___.",
+    "prompt": "Em 1 Tessalonicenses 4:13, os demais não têm ___.",
+    "cue": "Em 1 Tessalonicenses 4:13, os demais não têm ___.",
+    "verseRef": "1 Tessalonicenses 4:13",
+    "passageText": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança.",
+    "template": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lágrimas"
+      },
+      {
+        "id": "b",
+        "text": "túmulos"
+      },
+      {
+        "id": "c",
+        "text": "esperança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que não têm esperança",
+    "feedbackCorrect": "Sem esperança.",
+    "feedbackWrong": {
+      "a": "Há tristeza.",
+      "b": "Não é o termo."
+    },
+    "hint": "Veja o fim.",
+    "learningObjective": "Lembrar esperança.",
+    "evidence": [
+      "1 Tessalonicenses 4:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-03-nao-vos-entristecais-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+    "verseRef": "1 Tessalonicenses 4:13",
+    "passageText": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 4:13",
+      "text": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O luto cristão não é sem esperança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Luto com esperança"
+      },
+      {
+        "id": "b",
+        "text": "Luto sem Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Proibir o choro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que não se entristeçam como os demais, que não têm esperança",
+    "feedbackCorrect": "Esperança no luto.",
+    "feedbackWrong": {
+      "b": "Há esperança.",
+      "c": "Regula o modo."
+    },
+    "hint": "Compare com os demais.",
+    "learningObjective": "Ligar à esperança.",
+    "evidence": [
+      "1 Tessalonicenses 4:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-03-nao-vos-entristecais-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 4:14, a fé na morte e ressurreição de Jesus fundamenta a esperança pelos que dormem.",
+    "prompt": "Em 1 Tessalonicenses 4:14, a fé na morte e ressurreição de Jesus fundamenta a esperança pelos que dormem.",
+    "cue": "Em 1 Tessalonicenses 4:14, a fé na morte e ressurreição de Jesus fundamenta a esperança pelos que dormem.",
+    "verseRef": "1 Tessalonicenses 4:14",
+    "passageText": "Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus, por meio de Jesus, trará, junto dele, os que dormem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Porque, se cremos que Jesus morreu e ressuscitou",
+    "feedbackCorrect": "O Porque liga a fé ao trazer os que dormem.",
+    "feedbackWrong": {
+      "false": "Releia o Porque."
+    },
+    "hint": "Repare no Porque.",
+    "learningObjective": "Compreender a causa.",
+    "evidence": [
+      "1 Tessalonicenses 4:14"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-03-nao-vos-entristecais-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 4:14, toque a palavra que marca a causa.",
+    "prompt": "Em 1 Tessalonicenses 4:14, toque a palavra que marca a causa.",
+    "cue": "Em 1 Tessalonicenses 4:14, toque a palavra que marca a causa.",
+    "verseRef": "1 Tessalonicenses 4:14",
+    "passageText": "Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus, por meio de Jesus, trará, junto dele, os que dormem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim"
+      },
+      {
+        "id": "b",
+        "text": "dormem"
+      },
+      {
+        "id": "c",
+        "text": "Porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Porque, se cremos que Jesus morreu e ressuscitou",
+    "feedbackCorrect": "Porque introduz a base.",
+    "feedbackWrong": {
+      "a": "Assim liga o resultado.",
+      "b": "São os falecidos."
+    },
+    "hint": "Abertura do versículo.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 4:14"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-03-nao-vos-entristecais-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+    "prompt": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+    "cue": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+    "verseRef": "1 Tessalonicenses 4:15–16",
+    "passageText": "Declaramos-vos, portanto, pela palavra do Senhor: que nós, os que estivermos vivos na vinda do Senhor, de maneira alguma teremos precedência sobre os que já morreram. Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vivos passam na frente dos mortos"
+      },
+      {
+        "id": "b",
+        "text": "A trombeta cancela a descida"
+      },
+      {
+        "id": "c",
+        "text": "Vivos não precedem; mortos ressuscitam primeiro"
+      },
+      {
+        "id": "d",
+        "text": "Não há ressurreição dos mortos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Ordem clara.",
+    "feedbackWrong": {
+      "a": "Sem precedência.",
+      "b": "Há descida e trombeta.",
+      "d": "Há ressurreição."
+    },
+    "hint": "Una precedência e primeiro.",
+    "learningObjective": "Relacionar a ordem.",
+    "evidence": [
+      "1 Tessalonicenses 4:15–16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-03-nao-vos-entristecais-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança 1 Tessalonicenses 4:13–17?",
+    "prompt": "Como avança 1 Tessalonicenses 4:13–17?",
+    "cue": "Como avança 1 Tessalonicenses 4:13–17?",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não luto sem esperança"
+      },
+      {
+        "id": "b",
+        "text": "Mortos ressuscitam primeiro"
+      },
+      {
+        "id": "c",
+        "text": "Encontro eterno com o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Esperança, ressurreição e encontro.",
+    "feedbackWrong": {
+      "default": "Comece pelo luto."
+    },
+    "hint": "Siga luto → ressurreição → encontro.",
+    "learningObjective": "Compreender o movimento.",
+    "evidence": [
+      "1 Tessalonicenses 4:13",
+      "1 Tessalonicenses 4:16–17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-03-nao-vos-entristecais-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 4:18, Confortem-se, ___, uns aos outros.",
+    "prompt": "Em 1 Tessalonicenses 4:18, Confortem-se, ___, uns aos outros.",
+    "cue": "Em 1 Tessalonicenses 4:18, Confortem-se, ___, uns aos outros.",
+    "verseRef": "1 Tessalonicenses 4:18",
+    "passageText": "Confortem-se, portanto, uns aos outros com estas palavras.",
+    "template": "Confortem-se, ___, uns aos outros com estas palavras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apenas"
+      },
+      {
+        "id": "b",
+        "text": "portanto"
+      },
+      {
+        "id": "c",
+        "text": "jamais"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Confortem-se, portanto, uns aos outros",
+    "feedbackCorrect": "Portanto marca o resultado.",
+    "feedbackWrong": {
+      "a": "Não é apenas.",
+      "c": "Não é jamais."
+    },
+    "hint": "Palavra entre vírgulas.",
+    "learningObjective": "Lembrar o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 4:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-03-nao-vos-entristecais-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+    "prompt": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+    "cue": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 4:16",
+      "text": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:52",
+      "text": "Num momento, num piscar de olhos, ao ressoar da última trombeta; pois a trombeta soará, os mortos ressuscitarão incorruptíveis, e nós seremos transformados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Silêncio eterno"
+      },
+      {
+        "id": "b",
+        "text": "Trombeta e ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "Sem transformação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Trombeta e mortos que se levantam.",
+    "feedbackWrong": {
+      "a": "Há trombeta.",
+      "c": "Há ressurreição."
+    },
+    "hint": "Compare trombeta e mortos.",
+    "learningObjective": "Relacionar a ressurreição.",
+    "evidence": [
+      "1 Tessalonicenses 4:16",
+      "1 Coríntios 15:52"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-03-nao-vos-entristecais-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "1 Tessalonicenses 4:13–18 ensina que o encontro com o Senhor é breve e depois cada um volta sozinho.",
+    "prompt": "1 Tessalonicenses 4:13–18 ensina que o encontro com o Senhor é breve e depois cada um volta sozinho.",
+    "cue": "1 Tessalonicenses 4:13–18 ensina que o encontro com o Senhor é breve e depois cada um volta sozinho.",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "O texto diz para sempre com o Senhor.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 4:17."
+    },
+    "hint": "Veja a duração do permanecer.",
+    "learningObjective": "Interpretar a permanência.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-03-nao-vos-entristecais-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 4:17, toque o trecho que mostra a duração com o Senhor.",
+    "prompt": "Em 1 Tessalonicenses 4:17, toque o trecho que mostra a duração com o Senhor.",
+    "cue": "Em 1 Tessalonicenses 4:17, toque o trecho que mostra a duração com o Senhor.",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ares"
+      },
+      {
+        "id": "b",
+        "text": "para sempre"
+      },
+      {
+        "id": "c",
+        "text": "nuvens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Para sempre.",
+    "feedbackWrong": {
+      "a": "É o lugar do encontro.",
+      "c": "É o cenário."
+    },
+    "hint": "Procure a duração.",
+    "learningObjective": "Sustentar a permanência.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-03-nao-vos-entristecais-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Tessalonicenses 4:13–18 sustenta?",
+    "prompt": "Que leitura 1 Tessalonicenses 4:13–18 sustenta?",
+    "cue": "Que leitura 1 Tessalonicenses 4:13–18 sustenta?",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vantagem exclusiva dos vivos"
+      },
+      {
+        "id": "b",
+        "text": "Conforto sem palavras"
+      },
+      {
+        "id": "c",
+        "text": "Esperança de ressurreição e vida eterna com o Senhor"
+      },
+      {
+        "id": "d",
+        "text": "Luto idêntico ao dos sem esperança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Esperança até o para sempre.",
+    "feedbackWrong": {
+      "a": "Sem precedência.",
+      "b": "Há estas palavras.",
+      "d": "Há contraste."
+    },
+    "hint": "Una esperança e para sempre.",
+    "learningObjective": "Escolher a leitura.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-03-nao-vos-entristecais-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da esperança?",
+    "prompt": "Qual sequência revela o fio da esperança?",
+    "cue": "Qual sequência revela o fio da esperança?",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus morreu e ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "Mortos em Cristo se levantam"
+      },
+      {
+        "id": "c",
+        "text": "Sempre com o Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Cristo, ressurreição e permanência.",
+    "feedbackWrong": {
+      "default": "Comece por Jesus."
+    },
+    "hint": "Siga Jesus → mortos → para sempre.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "1 Tessalonicenses 4:14",
+      "1 Tessalonicenses 4:16–17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-03-nao-vos-entristecais-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+    "prompt": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+    "cue": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "template": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o ___ nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "arcanjo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Com o Senhor.",
+    "feedbackWrong": {
+      "b": "Não é mundo.",
+      "c": "Não é arcanjo."
+    },
+    "hint": "Com quem permanecem.",
+    "learningObjective": "Lembrar o termo.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-03-nao-vos-entristecais-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-03-nao-vos-entristecais",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Tessalonicenses 4:14 a João 11:25?",
+    "prompt": "O que liga 1 Tessalonicenses 4:14 a João 11:25?",
+    "cue": "O que liga 1 Tessalonicenses 4:14 a João 11:25?",
+    "verseRef": "1 Tessalonicenses 4:14",
+    "passageText": "Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus, por meio de Jesus, trará, junto dele, os que dormem.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 4:14",
+      "text": "Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus, por meio de Jesus, trará, junto dele, os que dormem."
+    },
+    "passageB": {
+      "ref": "João 11:25",
+      "text": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Morte sem retorno"
+      },
+      {
+        "id": "b",
+        "text": "Esperança cancelada"
+      },
+      {
+        "id": "c",
+        "text": "Ressurreição em Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se cremos que Jesus morreu e ressuscitou",
+    "feedbackCorrect": "Jesus é a base da ressurreição.",
+    "feedbackWrong": {
+      "a": "Há trará os que dormem.",
+      "b": "Há esperança."
+    },
+    "hint": "Compare Jesus e ressurreição.",
+    "learningObjective": "Ligar a esperança.",
+    "evidence": [
+      "1 Tessalonicenses 4:14",
+      "João 11:25"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-04-vigiai-e-dai-gracas-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 5:18, em tudo devem dar graças.",
+    "prompt": "Em 1 Tessalonicenses 5:18, em tudo devem dar graças.",
+    "cue": "Em 1 Tessalonicenses 5:18, em tudo devem dar graças.",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "A ordem é em tudo.",
+    "feedbackWrong": {
+      "false": "Releia: Em tudo, dai graças."
+    },
+    "hint": "Olhe o começo.",
+    "learningObjective": "Observar a gratidão.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-04-vigiai-e-dai-gracas-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 5:17, toque o que devem fazer sem parar.",
+    "prompt": "Em 1 Tessalonicenses 5:17, toque o que devem fazer sem parar.",
+    "cue": "Em 1 Tessalonicenses 5:17, toque o que devem fazer sem parar.",
+    "verseRef": "1 Tessalonicenses 5:17",
+    "passageText": "Orem sem parar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "parar"
+      },
+      {
+        "id": "b",
+        "text": "sem"
+      },
+      {
+        "id": "c",
+        "text": "Orem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Orem sem parar",
+    "feedbackCorrect": "A ordem é orar sem parar.",
+    "feedbackWrong": {
+      "a": "Parar é o que não se faz; o verbo é outro.",
+      "b": "Sem acompanha o verbo, não é a ação."
+    },
+    "hint": "Toque o verbo do versículo.",
+    "learningObjective": "Identificar a oração.",
+    "evidence": [
+      "1 Tessalonicenses 5:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-04-vigiai-e-dai-gracas-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Tessalonicenses 5:14, o que fazer com os fracos?",
+    "prompt": "Segundo 1 Tessalonicenses 5:14, o que fazer com os fracos?",
+    "cue": "Segundo 1 Tessalonicenses 5:14, o que fazer com os fracos?",
+    "verseRef": "1 Tessalonicenses 5:14",
+    "passageText": "Exortamos vocês, irmãos, a que admoestem os indisciplinados, consolem os desanimados, amparem os fracos e sejam longânimos para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amparem os fracos"
+      },
+      {
+        "id": "b",
+        "text": "Apaguem o Espírito"
+      },
+      {
+        "id": "c",
+        "text": "Retribuam mal"
+      },
+      {
+        "id": "d",
+        "text": "Ignorem os fracos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "amparem os fracos",
+    "feedbackCorrect": "Amparem.",
+    "feedbackWrong": {
+      "b": "Proibido em 5:19.",
+      "c": "Proibido em 5:15.",
+      "d": "É amparar."
+    },
+    "hint": "Leia a lista.",
+    "learningObjective": "Observar o cuidado.",
+    "evidence": [
+      "1 Tessalonicenses 5:14"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-04-vigiai-e-dai-gracas-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 5:16–17",
+    "passageText": "Regozijem-se sempre. Orem sem parar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regozijem-se sempre"
+      },
+      {
+        "id": "b",
+        "text": "Orem"
+      },
+      {
+        "id": "c",
+        "text": "sem parar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Regozijem-se sempre. Orem sem parar.",
+    "feedbackCorrect": "Alegria, oração e gratidão.",
+    "feedbackWrong": {
+      "default": "Comece pelo regozijo; a oração vem em seguida."
+    },
+    "hint": "Siga a tríade.",
+    "learningObjective": "Reconhecer a sequência.",
+    "evidence": [
+      "1 Tessalonicenses 5:16–18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-04-vigiai-e-dai-gracas-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 5:19, Não apagueis o ___.",
+    "prompt": "Em 1 Tessalonicenses 5:19, Não apagueis o ___.",
+    "cue": "Em 1 Tessalonicenses 5:19, Não apagueis o ___.",
+    "verseRef": "1 Tessalonicenses 5:19",
+    "passageText": "Não apagueis o Espírito.",
+    "template": "Não apagueis o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "altar"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Não apagueis o Espírito",
+    "feedbackCorrect": "Não apagar o Espírito.",
+    "feedbackWrong": {
+      "a": "Não é altar.",
+      "b": "Não é templo."
+    },
+    "hint": "Veja o objeto.",
+    "learningObjective": "Lembrar o Espírito.",
+    "evidence": [
+      "1 Tessalonicenses 5:19"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-04-vigiai-e-dai-gracas-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Tessalonicenses 5:18 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Tessalonicenses 5:18 comunica que se liga a este contexto?",
+    "cue": "O que 1 Tessalonicenses 5:18 comunica que se liga a este contexto?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 5:18",
+      "text": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A vontade de Deus inclui gratidão em tudo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só queixa"
+      },
+      {
+        "id": "b",
+        "text": "Graças nunca"
+      },
+      {
+        "id": "c",
+        "text": "Graças em tudo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Em tudo, dai graças, pois esta é a vontade de Deus",
+    "feedbackCorrect": "Vontade = graças.",
+    "feedbackWrong": {
+      "a": "É dar graças.",
+      "b": "É em tudo."
+    },
+    "hint": "Una graças e vontade.",
+    "learningObjective": "Ligar à vontade.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-04-vigiai-e-dai-gracas-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 5:15, devem retribuir mal por mal.",
+    "prompt": "Em 1 Tessalonicenses 5:15, devem retribuir mal por mal.",
+    "cue": "Em 1 Tessalonicenses 5:15, devem retribuir mal por mal.",
+    "verseRef": "1 Tessalonicenses 5:15",
+    "passageText": "Tenham cuidado para que ninguém retribua mal por mal; pelo contrário, busquem sempre o bem entre vocês e para com todos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "ninguém retribua mal por mal; pelo contrário, busquem sempre o bem",
+    "feedbackCorrect": "O contrário é buscar o bem.",
+    "feedbackWrong": {
+      "true": "Releia: ninguém retribua mal por mal."
+    },
+    "hint": "Repare no pelo contrário.",
+    "learningObjective": "Compreender o contraste.",
+    "evidence": [
+      "1 Tessalonicenses 5:15"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-04-vigiai-e-dai-gracas-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 5:15, toque a expressão que marca o contraste.",
+    "prompt": "Em 1 Tessalonicenses 5:15, toque a expressão que marca o contraste.",
+    "cue": "Em 1 Tessalonicenses 5:15, toque a expressão que marca o contraste.",
+    "verseRef": "1 Tessalonicenses 5:15",
+    "passageText": "Tenham cuidado para que ninguém retribua mal por mal; pelo contrário, busquem sempre o bem entre vocês e para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pelo contrário"
+      },
+      {
+        "id": "b",
+        "text": "todos"
+      },
+      {
+        "id": "c",
+        "text": "cuidado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pelo contrário, busquem sempre o bem",
+    "feedbackCorrect": "Pelo contrário introduz o bem.",
+    "feedbackWrong": {
+      "b": "É o alcance.",
+      "c": "É o aviso."
+    },
+    "hint": "Procure a expressão.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 5:15"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-04-vigiai-e-dai-gracas-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Tessalonicenses 5:18 se relaciona com a vontade de Deus?",
+    "prompt": "Como 1 Tessalonicenses 5:18 se relaciona com a vontade de Deus?",
+    "cue": "Como 1 Tessalonicenses 5:18 se relaciona com a vontade de Deus?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dar graças em tudo é a vontade de Deus em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "A vontade de Deus cancela a oração"
+      },
+      {
+        "id": "c",
+        "text": "A vontade de Deus ignora a gratidão"
+      },
+      {
+        "id": "d",
+        "text": "A vontade de Deus é só queixar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois esta é a vontade de Deus em Cristo Jesus para vocês",
+    "feedbackCorrect": "Pois liga graças à vontade.",
+    "feedbackWrong": {
+      "b": "Há orar sem parar.",
+      "c": "É a vontade.",
+      "d": "É dar graças."
+    },
+    "hint": "Veja o pois.",
+    "learningObjective": "Relacionar graças e vontade.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-04-vigiai-e-dai-gracas-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança 1 Tessalonicenses 5:12–18?",
+    "prompt": "Como avança 1 Tessalonicenses 5:12–18?",
+    "cue": "Como avança 1 Tessalonicenses 5:12–18?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Honrar quem trabalha"
+      },
+      {
+        "id": "b",
+        "text": "Cuidar dos fracos"
+      },
+      {
+        "id": "c",
+        "text": "Alegria, oração e gratidão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "Comunidade e vontade de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelos líderes."
+    },
+    "hint": "Siga honra → cuidado → tríade.",
+    "learningObjective": "Compreender o movimento.",
+    "evidence": [
+      "1 Tessalonicenses 5:12–14"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-04-vigiai-e-dai-gracas-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 5:15, pelo contrário, busquem sempre o ___.",
+    "prompt": "Em 1 Tessalonicenses 5:15, pelo contrário, busquem sempre o ___.",
+    "cue": "Em 1 Tessalonicenses 5:15, pelo contrário, busquem sempre o ___.",
+    "verseRef": "1 Tessalonicenses 5:15",
+    "passageText": "Tenham cuidado para que ninguém retribua mal por mal; pelo contrário, busquem sempre o bem entre vocês e para com todos.",
+    "template": "Tenham cuidado para que ninguém retribua mal por mal; pelo contrário, busquem sempre o ___ entre vocês e para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "bem"
+      },
+      {
+        "id": "b",
+        "text": "medo"
+      },
+      {
+        "id": "c",
+        "text": "mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "busquem sempre o bem",
+    "feedbackCorrect": "O bem.",
+    "feedbackWrong": {
+      "b": "Não é medo.",
+      "c": "É o oposto."
+    },
+    "hint": "Veja o alvo.",
+    "learningObjective": "Lembrar o bem.",
+    "evidence": [
+      "1 Tessalonicenses 5:15"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-04-vigiai-e-dai-gracas-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Tessalonicenses 5:18 a Efésios 5:20?",
+    "prompt": "O que liga 1 Tessalonicenses 5:18 a Efésios 5:20?",
+    "cue": "O que liga 1 Tessalonicenses 5:18 a Efésios 5:20?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 5:18",
+      "text": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês."
+    },
+    "passageB": {
+      "ref": "Efésios 5:20",
+      "text": "Dando sempre graças por todas as coisas a nosso Deus e Pai, em nome de nosso Senhor Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graças em tudo"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio a Deus"
+      },
+      {
+        "id": "c",
+        "text": "Graças só no culto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "Gratidão constante.",
+    "feedbackWrong": {
+      "b": "Há dar graças.",
+      "c": "É em tudo."
+    },
+    "hint": "Compare em tudo.",
+    "learningObjective": "Relacionar gratidão.",
+    "evidence": [
+      "1 Tessalonicenses 5:18",
+      "Efésios 5:20"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-04-vigiai-e-dai-gracas-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "1 Tessalonicenses 5:19–22 pede discernimento — não apagar o Espírito, examinar e reter o bem.",
+    "prompt": "1 Tessalonicenses 5:19–22 pede discernimento — não apagar o Espírito, examinar e reter o bem.",
+    "cue": "1 Tessalonicenses 5:19–22 pede discernimento — não apagar o Espírito, examinar e reter o bem.",
+    "verseRef": "1 Tessalonicenses 5:21",
+    "passageText": "Examinai todas as coisas, retende o que é bom;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Examinai todas as coisas, retende o que é bom",
+    "feedbackCorrect": "Discernimento ativo.",
+    "feedbackWrong": {
+      "false": "Releia 5:19–21."
+    },
+    "hint": "Una Espírito e examinar.",
+    "learningObjective": "Interpretar o discernimento.",
+    "evidence": [
+      "1 Tessalonicenses 5:21"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-04-vigiai-e-dai-gracas-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 5:21, toque o que se deve reter.",
+    "prompt": "Em 1 Tessalonicenses 5:21, toque o que se deve reter.",
+    "cue": "Em 1 Tessalonicenses 5:21, toque o que se deve reter.",
+    "verseRef": "1 Tessalonicenses 5:21",
+    "passageText": "Examinai todas as coisas, retende o que é bom;",
+    "options": [
+      {
+        "id": "a",
+        "text": "bom"
+      },
+      {
+        "id": "b",
+        "text": "Examinai"
+      },
+      {
+        "id": "c",
+        "text": "todas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "retende o que é bom",
+    "feedbackCorrect": "Depois de examinar tudo, retém-se o que é bom.",
+    "feedbackWrong": {
+      "b": "Examinai é o primeiro passo, não o que se retém.",
+      "c": "Todas as coisas se examinam; o retido é outro."
+    },
+    "hint": "Toque o adjetivo do que permanece.",
+    "learningObjective": "Sustentar o bem.",
+    "evidence": [
+      "1 Tessalonicenses 5:21"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-04-vigiai-e-dai-gracas-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 Tessalonicenses 5:12–22 sustenta?",
+    "prompt": "Que leitura 1 Tessalonicenses 5:12–22 sustenta?",
+    "cue": "Que leitura 1 Tessalonicenses 5:12–22 sustenta?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comunidade vigilante: honra, cuidado, gratidão e discernimento"
+      },
+      {
+        "id": "b",
+        "text": "Retribuir mal por mal"
+      },
+      {
+        "id": "c",
+        "text": "Aceitar tudo sem examinar"
+      },
+      {
+        "id": "d",
+        "text": "Igreja sem líderes nem cuidado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Em tudo, dai graças, pois esta é a vontade de Deus",
+    "feedbackCorrect": "Vida comunitária e vontade de Deus.",
+    "feedbackWrong": {
+      "b": "Há o contrário.",
+      "c": "Há examinar.",
+      "d": "Há apreço aos líderes."
+    },
+    "hint": "Una a tríade e o examinar.",
+    "learningObjective": "Escolher a leitura.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-04-vigiai-e-dai-gracas-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio da vontade de Deus?",
+    "prompt": "Qual sequência revela o fio da vontade de Deus?",
+    "cue": "Qual sequência revela o fio da vontade de Deus?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regozijar-se sempre"
+      },
+      {
+        "id": "b",
+        "text": "Orar sem parar"
+      },
+      {
+        "id": "c",
+        "text": "Dar graças em tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "pois esta é a vontade de Deus em Cristo Jesus para vocês",
+    "feedbackCorrect": "Tríade da vontade.",
+    "feedbackWrong": {
+      "default": "Comece pelo regozijo."
+    },
+    "hint": "Siga a ordem dos versos.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "1 Tessalonicenses 5:16–18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-04-vigiai-e-dai-gracas-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 5:18, esta é a ___ de Deus em Cristo.",
+    "prompt": "Em 1 Tessalonicenses 5:18, esta é a ___ de Deus em Cristo.",
+    "cue": "Em 1 Tessalonicenses 5:18, esta é a ___ de Deus em Cristo.",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "template": "Em tudo, dai graças, pois esta é a ___ de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ira"
+      },
+      {
+        "id": "b",
+        "text": "dúvida"
+      },
+      {
+        "id": "c",
+        "text": "vontade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "esta é a vontade de Deus",
+    "feedbackCorrect": "Vontade de Deus.",
+    "feedbackWrong": {
+      "a": "Não é ira.",
+      "b": "Não é dúvida."
+    },
+    "hint": "Veja o que é.",
+    "learningObjective": "Lembrar o termo.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-04-vigiai-e-dai-gracas-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-04-vigiai-e-dai-gracas",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+    "prompt": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+    "cue": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+    "verseRef": "1 Tessalonicenses 5:16–17",
+    "passageText": "Regozijem-se sempre. Orem sem parar.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 5:16–17",
+      "text": "Regozijem-se sempre. Orem sem parar."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:4–6"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ansiedade no comando"
+      },
+      {
+        "id": "b",
+        "text": "Alegria e oração"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio forçado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Regozijem-se sempre. Orem sem parar",
+    "feedbackCorrect": "Alegria e oração constantes.",
+    "feedbackWrong": {
+      "a": "Há alegria e oração.",
+      "c": "Há orar."
+    },
+    "hint": "Nomeie a ponte entre os dois textos.",
+    "learningObjective": "Ligar a tríade.",
+    "evidence": [
+      "1 Tessalonicenses 5:16–17",
+      "Filipenses 4:4–6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 2:7, foram carinhosos como uma mãe.",
+    "prompt": "Em 1 Tessalonicenses 2:7, foram carinhosos como uma mãe.",
+    "cue": "Em 1 Tessalonicenses 2:7, foram carinhosos como uma mãe.",
+    "verseRef": "1 Tessalonicenses 2:7",
+    "passageText": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe",
+    "feedbackCorrect": "Tom maternal explícito.",
+    "feedbackWrong": {
+      "false": "Releia a comparação."
+    },
+    "hint": "Olhe a comparação.",
+    "learningObjective": "Observar o carinho.",
+    "evidence": [
+      "1 Tessalonicenses 2:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 3:7, toque o que os consolou.",
+    "prompt": "Em 1 Tessalonicenses 3:7, toque o que os consolou.",
+    "cue": "Em 1 Tessalonicenses 3:7, toque o que os consolou.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aflição"
+      },
+      {
+        "id": "b",
+        "text": "fé de vocês"
+      },
+      {
+        "id": "c",
+        "text": "necessidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pela fé de vocês",
+    "feedbackCorrect": "A fé consolou.",
+    "feedbackWrong": {
+      "a": "É o contexto.",
+      "c": "É o contexto."
+    },
+    "hint": "Procure pela.",
+    "learningObjective": "Identificar a fé.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Tessalonicenses 2:4, a quem querem agradar?",
+    "prompt": "Segundo 1 Tessalonicenses 2:4, a quem querem agradar?",
+    "cue": "Segundo 1 Tessalonicenses 2:4, a quem querem agradar?",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aos homens"
+      },
+      {
+        "id": "b",
+        "text": "À bajulação"
+      },
+      {
+        "id": "c",
+        "text": "À ganância"
+      },
+      {
+        "id": "d",
+        "text": "A Deus"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "A Deus.",
+    "feedbackWrong": {
+      "a": "É o contraste.",
+      "b": "Negada.",
+      "c": "Negada."
+    },
+    "hint": "Leia o contraste.",
+    "learningObjective": "Observar o alvo.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 2:7",
+    "passageText": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fomos carinhosos entre vocês"
+      },
+      {
+        "id": "b",
+        "text": "como uma mãe"
+      },
+      {
+        "id": "c",
+        "text": "que acaricia seus próprios filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe",
+    "feedbackCorrect": "Carinho e mãe.",
+    "feedbackWrong": {
+      "default": "Comece pelo carinho."
+    },
+    "hint": "Comece pelo carinho.",
+    "learningObjective": "Reconhecer 2:7.",
+    "evidence": [
+      "1 Tessalonicenses 2:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 3:8, agora vivemos se permanecem firmes no ___.",
+    "prompt": "Em 1 Tessalonicenses 3:8, agora vivemos se permanecem firmes no ___.",
+    "cue": "Em 1 Tessalonicenses 3:8, agora vivemos se permanecem firmes no ___.",
+    "verseRef": "1 Tessalonicenses 3:8",
+    "passageText": "Porque agora vivemos, se é que vocês permanecem firmes no Senhor.",
+    "template": "Porque agora vivemos, se é que vocês permanecem firmes no ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "medo"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "permanecem firmes no Senhor",
+    "feedbackCorrect": "Firmes no Senhor.",
+    "feedbackWrong": {
+      "a": "Não é medo.",
+      "c": "Não é mundo."
+    },
+    "hint": "Veja o fim.",
+    "learningObjective": "Lembrar o Senhor.",
+    "evidence": [
+      "1 Tessalonicenses 3:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 3:7",
+      "text": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A fé firme consola o apóstolo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem alívio"
+      },
+      {
+        "id": "b",
+        "text": "Fé que abandona"
+      },
+      {
+        "id": "c",
+        "text": "Fé que consola"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ficamos consolados a respeito de vocês",
+    "feedbackCorrect": "Consolo pela fé.",
+    "feedbackWrong": {
+      "a": "Há consolo.",
+      "b": "Há firmeza."
+    },
+    "hint": "Una aflição e consolo.",
+    "learningObjective": "Ligar à fé.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-07",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 2:5, toque o que nunca empregaram.",
+    "prompt": "Em 1 Tessalonicenses 2:5, toque o que nunca empregaram.",
+    "cue": "Em 1 Tessalonicenses 2:5, toque o que nunca empregaram.",
+    "verseRef": "1 Tessalonicenses 2:5",
+    "passageText": "Pois, como vocês bem sabem, nunca empregamos palavras de bajulação, nem usamos um pretexto para a ganância; Deus é a nossa testemunha.",
+    "options": [
+      {
+        "id": "a",
+        "text": "testemunha"
+      },
+      {
+        "id": "b",
+        "text": "bajulação"
+      },
+      {
+        "id": "c",
+        "text": "Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nunca empregamos palavras de bajulação",
+    "feedbackCorrect": "Sem bajulação.",
+    "feedbackWrong": {
+      "a": "É Deus.",
+      "c": "É a testemunha."
+    },
+    "hint": "Procure o que nunca.",
+    "learningObjective": "Identificar a integridade.",
+    "evidence": [
+      "1 Tessalonicenses 2:5"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-1-08",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Por isso, irmãos, ficamos consolados a respeito de vocês"
+      },
+      {
+        "id": "b",
+        "text": "em toda a nossa aflição e necessidade"
+      },
+      {
+        "id": "c",
+        "text": "pela fé de vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ficamos consolados a respeito de vocês",
+    "feedbackCorrect": "Consolo pela fé.",
+    "feedbackWrong": {
+      "default": "Comece por Por isso."
+    },
+    "hint": "Comece pelo resultado.",
+    "learningObjective": "Reconhecer 3:7.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 2:4, falam para agradar aos homens.",
+    "prompt": "Em 1 Tessalonicenses 2:4, falam para agradar aos homens.",
+    "cue": "Em 1 Tessalonicenses 2:4, falam para agradar aos homens.",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "O contraste é agradar a Deus.",
+    "feedbackWrong": {
+      "true": "Releia o mas."
+    },
+    "hint": "Repare no contraste.",
+    "learningObjective": "Compreender o alvo.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 2:4, toque a palavra do contraste.",
+    "prompt": "Em 1 Tessalonicenses 2:4, toque a palavra do contraste.",
+    "cue": "Em 1 Tessalonicenses 2:4, toque a palavra do contraste.",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "corações"
+      },
+      {
+        "id": "c",
+        "text": "assim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas a Deus",
+    "feedbackCorrect": "Mas.",
+    "feedbackWrong": {
+      "b": "Deus sonda.",
+      "c": "Introduz aprovação."
+    },
+    "hint": "Procure a conjunção.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 2:4"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+    "prompt": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+    "cue": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+    "verseRef": "1 Tessalonicenses 3:12–13",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês; Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor cresce para santidade na vinda"
+      },
+      {
+        "id": "b",
+        "text": "Amor cancela a vinda"
+      },
+      {
+        "id": "c",
+        "text": "Sem oração pelo amor"
+      },
+      {
+        "id": "d",
+        "text": "Santidade dispensa o amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Para fortalecer os seus corações",
+    "feedbackCorrect": "Amor visando a vinda.",
+    "feedbackWrong": {
+      "b": "Há vinda.",
+      "c": "Há oração.",
+      "d": "Há amor."
+    },
+    "hint": "Una Para e vinda.",
+    "learningObjective": "Relacionar amor e vinda.",
+    "evidence": [
+      "1 Tessalonicenses 3:12–13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o bloco fé e cuidado?",
+    "prompt": "Como avança o bloco fé e cuidado?",
+    "cue": "Como avança o bloco fé e cuidado?",
+    "verseRef": "1 Tessalonicenses 3:12",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ministério como mãe"
+      },
+      {
+        "id": "b",
+        "text": "Consolo pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Amor até a vinda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "cresçam e abundem em amor",
+    "feedbackCorrect": "Cuidado, consolo e crescimento.",
+    "feedbackWrong": {
+      "default": "Comece pelo ministério."
+    },
+    "hint": "Siga mãe → consolo → amor.",
+    "learningObjective": "Compreender o arco.",
+    "evidence": [
+      "1 Tessalonicenses 2:7",
+      "1 Tessalonicenses 3:7",
+      "1 Tessalonicenses 3:12"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 3:7, ___, irmãos, ficamos consolados.",
+    "prompt": "Em 1 Tessalonicenses 3:7, ___, irmãos, ficamos consolados.",
+    "cue": "Em 1 Tessalonicenses 3:7, ___, irmãos, ficamos consolados.",
+    "verseRef": "1 Tessalonicenses 3:7",
+    "passageText": "Por isso, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "template": "___, irmãos, ficamos consolados a respeito de vocês, em toda a nossa aflição e necessidade, pela fé de vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jamais"
+      },
+      {
+        "id": "b",
+        "text": "Talvez"
+      },
+      {
+        "id": "c",
+        "text": "Por isso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Por isso, irmãos, ficamos consolados",
+    "feedbackCorrect": "Por isso.",
+    "feedbackWrong": {
+      "a": "Não é jamais.",
+      "b": "Não é talvez."
+    },
+    "hint": "Abertura.",
+    "learningObjective": "Lembrar o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 3:7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+    "prompt": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+    "cue": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+    "verseRef": "1 Tessalonicenses 2:4",
+    "passageText": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 2:4",
+      "text": "Mas, assim como fomos aprovados por Deus, a ponto de nos confiar o evangelho, assim falamos, não para agradar aos homens, mas a Deus, que sonda os nossos corações."
+    },
+    "passageB": {
+      "ref": "Gálatas 1:10",
+      "text": "Acaso busco eu agora a aprovação dos homens ou a de Deus? Ou estou tentando agradar a homens? Se ainda estivesse agradando a homens, não seria servo de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Agradar homens"
+      },
+      {
+        "id": "b",
+        "text": "Abandonar o evangelho"
+      },
+      {
+        "id": "c",
+        "text": "Agradar a Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não para agradar aos homens, mas a Deus",
+    "feedbackCorrect": "Agradar a Deus.",
+    "feedbackWrong": {
+      "a": "É o contraste.",
+      "b": "Evangelho anunciado."
+    },
+    "hint": "Compare o alvo.",
+    "learningObjective": "Relacionar.",
+    "evidence": [
+      "1 Tessalonicenses 2:4",
+      "Gálatas 1:10"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-07",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 3:6, toque o marcador da virada.",
+    "prompt": "Em 1 Tessalonicenses 3:6, toque o marcador da virada.",
+    "cue": "Em 1 Tessalonicenses 3:6, toque o marcador da virada.",
+    "verseRef": "1 Tessalonicenses 3:6",
+    "passageText": "Agora, porém, Timóteo voltou de vocês e nos trouxe boas notícias sobre a fé e o amor de vocês, e de que sempre têm uma grata lembrança de nós, desejando muito nos ver, assim como também nós desejamos vê-los.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Agora"
+      },
+      {
+        "id": "b",
+        "text": "Timóteo"
+      },
+      {
+        "id": "c",
+        "text": "porém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Agora, porém, Timóteo voltou",
+    "feedbackCorrect": "Porém.",
+    "feedbackWrong": {
+      "a": "É o tempo.",
+      "b": "É quem voltou."
+    },
+    "hint": "Após Agora.",
+    "learningObjective": "Reconhecer o marcador.",
+    "evidence": [
+      "1 Tessalonicenses 3:6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-1-08",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança 1 Tessalonicenses 3:6–8?",
+    "prompt": "Como avança 1 Tessalonicenses 3:6–8?",
+    "cue": "Como avança 1 Tessalonicenses 3:6–8?",
+    "verseRef": "1 Tessalonicenses 3:8",
+    "passageText": "Porque agora vivemos, se é que vocês permanecem firmes no Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boas notícias da fé"
+      },
+      {
+        "id": "b",
+        "text": "Consolo na aflição"
+      },
+      {
+        "id": "c",
+        "text": "Vida se firmes no Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora vivemos, se é que vocês permanecem firmes no Senhor",
+    "feedbackCorrect": "Notícia, consolo e firmeza.",
+    "feedbackWrong": {
+      "default": "Comece pelas notícias."
+    },
+    "hint": "Siga a ordem.",
+    "learningObjective": "Compreender o movimento.",
+    "evidence": [
+      "1 Tessalonicenses 3:6–7"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O bloco 1 Tessalonicenses 2–3 une ministério sem glória humana e fé que cresce até a vinda.",
+    "prompt": "O bloco 1 Tessalonicenses 2–3 une ministério sem glória humana e fé que cresce até a vinda.",
+    "cue": "O bloco 1 Tessalonicenses 2–3 une ministério sem glória humana e fé que cresce até a vinda.",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Cuidado pastoral e horizonte da vinda.",
+    "feedbackWrong": {
+      "false": "Una 2:6–8 e 3:12–13."
+    },
+    "hint": "Una glória negada e vinda.",
+    "learningObjective": "Interpretar o bloco.",
+    "evidence": [
+      "1 Tessalonicenses 3:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 3:13, toque o marco da santidade.",
+    "prompt": "Em 1 Tessalonicenses 3:13, toque o marco da santidade.",
+    "cue": "Em 1 Tessalonicenses 3:13, toque o marco da santidade.",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "santidade"
+      },
+      {
+        "id": "b",
+        "text": "corações"
+      },
+      {
+        "id": "c",
+        "text": "vinda"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "A vinda.",
+    "feedbackWrong": {
+      "a": "Santidade é o alvo, não o marco temporal.",
+      "b": "Corações são fortalecidos, não o horizonte."
+    },
+    "hint": "Tempo final.",
+    "learningObjective": "Sustentar a vinda.",
+    "evidence": [
+      "1 Tessalonicenses 3:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o desafio sustenta?",
+    "prompt": "Que leitura o desafio sustenta?",
+    "cue": "Que leitura o desafio sustenta?",
+    "verseRef": "1 Tessalonicenses 2:8",
+    "passageText": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ministério por ganância"
+      },
+      {
+        "id": "b",
+        "text": "Fé sem efeito"
+      },
+      {
+        "id": "c",
+        "text": "Sem oração pelo amor"
+      },
+      {
+        "id": "d",
+        "text": "Cuidado sacrificial e fé que consola até a vinda"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+    "feedbackCorrect": "Doação e crescimento.",
+    "feedbackWrong": {
+      "a": "Ganância negada.",
+      "b": "Há consolo.",
+      "c": "Há oração."
+    },
+    "hint": "Una oferta e amor.",
+    "learningObjective": "Escolher a leitura.",
+    "evidence": [
+      "1 Tessalonicenses 2:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio?",
+    "prompt": "Qual sequência revela o fio?",
+    "cue": "Qual sequência revela o fio?",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Oferecer evangelho e vida"
+      },
+      {
+        "id": "b",
+        "text": "Consolar-se pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Crescer no amor até a vinda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+    "feedbackCorrect": "Doação, consolo e vinda.",
+    "feedbackWrong": {
+      "default": "Comece pela oferta."
+    },
+    "hint": "Siga oferta → consolo → vinda.",
+    "learningObjective": "Ver o encadeamento.",
+    "evidence": [
+      "1 Tessalonicenses 2:8",
+      "1 Tessalonicenses 3:7",
+      "1 Tessalonicenses 3:12"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+    "prompt": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+    "cue": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+    "verseRef": "1 Tessalonicenses 2:6",
+    "passageText": "Não buscamos a glória dos homens, nem de vocês, nem de outros, embora pudéssemos, como apóstolos de Cristo, ter exigido isso de vocês;",
+    "template": "Não buscamos a ___ dos homens, nem de vocês, nem de outros, embora pudéssemos, como apóstolos de Cristo, ter exigido isso de vocês;",
+    "options": [
+      {
+        "id": "a",
+        "text": "fé"
+      },
+      {
+        "id": "b",
+        "text": "glória"
+      },
+      {
+        "id": "c",
+        "text": "paz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não buscamos a glória dos homens",
+    "feedbackCorrect": "Sem glória humana.",
+    "feedbackWrong": {
+      "a": "Não é fé.",
+      "c": "Não é paz."
+    },
+    "hint": "O que não buscam.",
+    "learningObjective": "Lembrar glória.",
+    "evidence": [
+      "1 Tessalonicenses 2:6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+    "prompt": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+    "cue": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+    "verseRef": "1 Tessalonicenses 3:12",
+    "passageText": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;",
+    "passageA": {
+      "ref": "1 Tessalonicenses 3:12",
+      "text": "E que o Senhor faça com que vocês cresçam e abundem em amor uns para com os outros e para com todos, assim como também nós temos abundado em amor por vocês;"
+    },
+    "passageB": {
+      "ref": "Filipenses 1:9",
+      "text": "E também faço esta oração: que o amor de vocês aumente mais e mais em pleno conhecimento e em toda a percepção."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor que some"
+      },
+      {
+        "id": "b",
+        "text": "Amor que cresce"
+      },
+      {
+        "id": "c",
+        "text": "Sem oração"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "cresçam e abundem em amor",
+    "feedbackCorrect": "Amor crescente.",
+    "feedbackWrong": {
+      "a": "É crescer.",
+      "c": "Há pedido."
+    },
+    "hint": "Compare o pedido.",
+    "learningObjective": "Ligar o amor.",
+    "evidence": [
+      "1 Tessalonicenses 3:12",
+      "Filipenses 1:9"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-07",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+    "prompt": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+    "cue": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+    "verseRef": "1 Tessalonicenses 2:8",
+    "passageText": "Assim, nós, desejando muito a vocês, estávamos prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas; por isso, vocês se tornaram muito amados por nós.",
+    "options": [
+      {
+        "id": "a",
+        "text": "amados"
+      },
+      {
+        "id": "b",
+        "text": "evangelho"
+      },
+      {
+        "id": "c",
+        "text": "nossas próprias vidas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas também nossas próprias vidas",
+    "feedbackCorrect": "A vida.",
+    "feedbackWrong": {
+      "a": "Amados descreve o resultado, não o oferecido.",
+      "b": "O evangelho já está na oferta; o acréscimo é outro."
+    },
+    "hint": "Mas também.",
+    "learningObjective": "Sustentar a oferta.",
+    "evidence": [
+      "1 Tessalonicenses 2:8"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-1-08",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência liga cuidado e esperança?",
+    "prompt": "Qual sequência liga cuidado e esperança?",
+    "cue": "Qual sequência liga cuidado e esperança?",
+    "verseRef": "1 Tessalonicenses 3:13",
+    "passageText": "Para fortalecer os seus corações, a fim de que vocês sejam irrepreensíveis em santidade, livres de culpa, diante de nosso Deus e Pai, na vinda de nosso Senhor Jesus Cristo, com todos os seus santos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Carinho no ministério"
+      },
+      {
+        "id": "b",
+        "text": "Fé que consola"
+      },
+      {
+        "id": "c",
+        "text": "Santidade na vinda"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "irrepreensíveis em santidade",
+    "feedbackCorrect": "Cuidado, fé e vinda.",
+    "feedbackWrong": {
+      "default": "Comece pelo carinho."
+    },
+    "hint": "Siga o arco.",
+    "learningObjective": "Ver o fio.",
+    "evidence": [
+      "1 Tessalonicenses 2:7",
+      "1 Tessalonicenses 3:7",
+      "1 Tessalonicenses 3:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 4:13, devem entristecer-se como os sem esperança.",
+    "prompt": "Em 1 Tessalonicenses 4:13, devem entristecer-se como os sem esperança.",
+    "cue": "Em 1 Tessalonicenses 4:13, devem entristecer-se como os sem esperança.",
+    "verseRef": "1 Tessalonicenses 4:13",
+    "passageText": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "para que não se entristeçam como os demais, que não têm esperança",
+    "feedbackCorrect": "Não como os demais.",
+    "feedbackWrong": {
+      "true": "Releia o para que."
+    },
+    "hint": "Olhe o para que.",
+    "learningObjective": "Observar o luto.",
+    "evidence": [
+      "1 Tessalonicenses 4:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+    "prompt": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+    "cue": "Em 1 Tessalonicenses 4:16, toque quem ressuscita primeiro.",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mortos em Cristo"
+      },
+      {
+        "id": "b",
+        "text": "arcanjo"
+      },
+      {
+        "id": "c",
+        "text": "trombeta"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Mortos em Cristo.",
+    "feedbackWrong": {
+      "b": "Voz.",
+      "c": "Sinal."
+    },
+    "hint": "Quem ressuscita.",
+    "learningObjective": "Identificar.",
+    "evidence": [
+      "1 Tessalonicenses 4:16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 Tessalonicenses 5:18, o que é a vontade de Deus?",
+    "prompt": "Segundo 1 Tessalonicenses 5:18, o que é a vontade de Deus?",
+    "cue": "Segundo 1 Tessalonicenses 5:18, o que é a vontade de Deus?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Dar graças em tudo"
+      },
+      {
+        "id": "b",
+        "text": "Desprezar líderes"
+      },
+      {
+        "id": "c",
+        "text": "Apagar o Espírito"
+      },
+      {
+        "id": "d",
+        "text": "Retribuir mal"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Em tudo, dai graças, pois esta é a vontade de Deus",
+    "feedbackCorrect": "Graças em tudo.",
+    "feedbackWrong": {
+      "b": "Há apreço.",
+      "c": "Proibido.",
+      "d": "Proibido."
+    },
+    "hint": "Leia o pois.",
+    "learningObjective": "Observar a vontade.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 5:16–18 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 5:16–17",
+    "passageText": "Regozijem-se sempre. Orem sem parar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Regozijem-se sempre"
+      },
+      {
+        "id": "b",
+        "text": "Orem"
+      },
+      {
+        "id": "c",
+        "text": "sem parar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Regozijem-se sempre. Orem sem parar.",
+    "feedbackCorrect": "Tríade.",
+    "feedbackWrong": {
+      "default": "Comece pelo regozijo; a oração vem em seguida."
+    },
+    "hint": "Siga a tríade.",
+    "learningObjective": "Reconhecer.",
+    "evidence": [
+      "1 Tessalonicenses 5:16–18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+    "prompt": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+    "cue": "Em 1 Tessalonicenses 4:17, permaneceremos para sempre com o ___.",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "template": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o ___ nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "arcanjo"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Com o Senhor.",
+    "feedbackWrong": {
+      "b": "Não.",
+      "c": "Não."
+    },
+    "hint": "Com quem.",
+    "learningObjective": "Lembrar.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+    "prompt": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+    "cue": "O que 1 Tessalonicenses 4:13 comunica que se liga a este contexto?",
+    "verseRef": "1 Tessalonicenses 4:13",
+    "passageText": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 4:13",
+      "text": "Não quero, entretanto, irmãos, que vocês sejam ignorantes sobre os que já dormem, para que não se entristeçam como os demais, que não têm esperança."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Luto cristão com esperança."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem esperança"
+      },
+      {
+        "id": "b",
+        "text": "Luto com esperança"
+      },
+      {
+        "id": "c",
+        "text": "Proibir choro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "que não têm esperança",
+    "feedbackCorrect": "Contraste da esperança.",
+    "feedbackWrong": {
+      "a": "É o dos demais.",
+      "c": "Regula o modo."
+    },
+    "hint": "Compare.",
+    "learningObjective": "Ligar.",
+    "evidence": [
+      "1 Tessalonicenses 4:13"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-07",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 Tessalonicenses 5:17, toque o verbo da ordem.",
+    "prompt": "Em 1 Tessalonicenses 5:17, toque o verbo da ordem.",
+    "cue": "Em 1 Tessalonicenses 5:17, toque o verbo da ordem.",
+    "verseRef": "1 Tessalonicenses 5:17",
+    "passageText": "Orem sem parar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "parar"
+      },
+      {
+        "id": "b",
+        "text": "sem"
+      },
+      {
+        "id": "c",
+        "text": "Orem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Orem sem parar",
+    "feedbackCorrect": "Orem.",
+    "feedbackWrong": {
+      "a": "Negação.",
+      "b": "Modo."
+    },
+    "hint": "O verbo.",
+    "learningObjective": "Identificar.",
+    "evidence": [
+      "1 Tessalonicenses 5:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-sem-t1c-boss-2-08",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+    "prompt": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+    "cue": "Monte 1 Tessalonicenses 4:16 na ordem do texto.",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "o mesmo Senhor descerá dos céus"
+      },
+      {
+        "id": "b",
+        "text": "com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus"
+      },
+      {
+        "id": "c",
+        "text": "e os mortos em Cristo ressuscitarão primeiro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Descida e ressurreição.",
+    "feedbackWrong": {
+      "default": "Comece pelo Senhor."
+    },
+    "hint": "Comece pela descida.",
+    "learningObjective": "Reconhecer.",
+    "evidence": [
+      "1 Tessalonicenses 4:16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 4:14, a fé em Jesus fundamenta a esperança pelos que dormem.",
+    "prompt": "Em 1 Tessalonicenses 4:14, a fé em Jesus fundamenta a esperança pelos que dormem.",
+    "cue": "Em 1 Tessalonicenses 4:14, a fé em Jesus fundamenta a esperança pelos que dormem.",
+    "verseRef": "1 Tessalonicenses 4:14",
+    "passageText": "Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus, por meio de Jesus, trará, junto dele, os que dormem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Porque, se cremos que Jesus morreu e ressuscitou",
+    "feedbackCorrect": "Porque liga.",
+    "feedbackWrong": {
+      "false": "Releia o Porque."
+    },
+    "hint": "Repare no Porque.",
+    "learningObjective": "Compreender.",
+    "evidence": [
+      "1 Tessalonicenses 4:14"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 5:15, toque o marcador de contraste.",
+    "prompt": "Em 1 Tessalonicenses 5:15, toque o marcador de contraste.",
+    "cue": "Em 1 Tessalonicenses 5:15, toque o marcador de contraste.",
+    "verseRef": "1 Tessalonicenses 5:15",
+    "passageText": "Tenham cuidado para que ninguém retribua mal por mal; pelo contrário, busquem sempre o bem entre vocês e para com todos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cuidado"
+      },
+      {
+        "id": "b",
+        "text": "todos"
+      },
+      {
+        "id": "c",
+        "text": "pelo contrário"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pelo contrário, busquem sempre o bem",
+    "feedbackCorrect": "Pelo contrário.",
+    "feedbackWrong": {
+      "a": "Aviso.",
+      "b": "Alcance."
+    },
+    "hint": "A expressão.",
+    "learningObjective": "Reconhecer.",
+    "evidence": [
+      "1 Tessalonicenses 5:15"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+    "prompt": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+    "cue": "Como 1 Tessalonicenses 4:15–16 se relacionam?",
+    "verseRef": "1 Tessalonicenses 4:15–16",
+    "passageText": "Declaramos-vos, portanto, pela palavra do Senhor: que nós, os que estivermos vivos na vinda do Senhor, de maneira alguma teremos precedência sobre os que já morreram. Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem trombeta"
+      },
+      {
+        "id": "b",
+        "text": "Vivos passam na frente"
+      },
+      {
+        "id": "c",
+        "text": "Vivos não precedem; mortos ressuscitam primeiro"
+      },
+      {
+        "id": "d",
+        "text": "Sem ressurreição"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Ordem clara.",
+    "feedbackWrong": {
+      "a": "Há.",
+      "b": "Sem precedência.",
+      "d": "Há."
+    },
+    "hint": "Una.",
+    "learningObjective": "Relacionar.",
+    "evidence": [
+      "1 Tessalonicenses 4:15–16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança esperança e vigilância?",
+    "prompt": "Como avança esperança e vigilância?",
+    "cue": "Como avança esperança e vigilância?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mortos ressuscitam"
+      },
+      {
+        "id": "b",
+        "text": "Encontro com o Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Viver em gratidão vigilante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "Ressurreição, encontro e vida vigilante.",
+    "feedbackWrong": {
+      "default": "Comece pelos mortos."
+    },
+    "hint": "Siga o arco.",
+    "learningObjective": "Compreender.",
+    "evidence": [
+      "1 Tessalonicenses 4:16",
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 5:18, Em tudo, dai graças, ___ esta é a vontade.",
+    "prompt": "Em 1 Tessalonicenses 5:18, Em tudo, dai graças, ___ esta é a vontade.",
+    "cue": "Em 1 Tessalonicenses 5:18, Em tudo, dai graças, ___ esta é a vontade.",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "template": "Em tudo, dai graças, ___ esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nunca"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "talvez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois esta é a vontade de Deus",
+    "feedbackCorrect": "Pois.",
+    "feedbackWrong": {
+      "a": "Não.",
+      "c": "Não."
+    },
+    "hint": "A ligação.",
+    "learningObjective": "Lembrar.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+    "prompt": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+    "cue": "O que liga 1 Tessalonicenses 4:16 a 1 Coríntios 15:52?",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 4:16",
+      "text": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro."
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:52",
+      "text": "Num momento, num piscar de olhos, ao ressoar da última trombeta; pois a trombeta soará, os mortos ressuscitarão incorruptíveis, e nós seremos transformados."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem mudança"
+      },
+      {
+        "id": "b",
+        "text": "Trombeta e ressurreição"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "com a trombeta de Deus",
+    "feedbackCorrect": "Trombeta.",
+    "feedbackWrong": {
+      "a": "Há ressurreição.",
+      "c": "Há trombeta."
+    },
+    "hint": "Compare.",
+    "learningObjective": "Relacionar.",
+    "evidence": [
+      "1 Tessalonicenses 4:16",
+      "1 Coríntios 15:52"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-07",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 Tessalonicenses 4:14, toque o marcador de causa.",
+    "prompt": "Em 1 Tessalonicenses 4:14, toque o marcador de causa.",
+    "cue": "Em 1 Tessalonicenses 4:14, toque o marcador de causa.",
+    "verseRef": "1 Tessalonicenses 4:14",
+    "passageText": "Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus, por meio de Jesus, trará, junto dele, os que dormem.",
+    "options": [
+      {
+        "id": "a",
+        "text": "assim"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "dormem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porque, se cremos",
+    "feedbackCorrect": "Porque.",
+    "feedbackWrong": {
+      "a": "Resultado.",
+      "c": "Falecido."
+    },
+    "hint": "Abertura.",
+    "learningObjective": "Reconhecer.",
+    "evidence": [
+      "1 Tessalonicenses 4:14"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-cam-t1c-boss-2-08",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança 1 Tessalonicenses 5:14–18?",
+    "prompt": "Como avança 1 Tessalonicenses 5:14–18?",
+    "cue": "Como avança 1 Tessalonicenses 5:14–18?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidar dos fracos"
+      },
+      {
+        "id": "b",
+        "text": "Não retribuir o mal"
+      },
+      {
+        "id": "c",
+        "text": "Alegria, oração e gratidão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "Cuidado e vontade de Deus.",
+    "feedbackWrong": {
+      "default": "Comece pelo cuidado."
+    },
+    "hint": "Siga.",
+    "learningObjective": "Compreender.",
+    "evidence": [
+      "1 Tessalonicenses 5:14–15"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-01",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O bloco 4–5 reduz a esperança a sentimento sem ressurreição nem vigilância.",
+    "prompt": "O bloco 4–5 reduz a esperança a sentimento sem ressurreição nem vigilância.",
+    "cue": "O bloco 4–5 reduz a esperança a sentimento sem ressurreição nem vigilância.",
+    "verseRef": "1 Tessalonicenses 4:16",
+    "passageText": "Porque o mesmo Senhor descerá dos céus, com um grito de ordem com a voz de um arcanjo e com a trombeta de Deus; e os mortos em Cristo ressuscitarão primeiro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "os mortos em Cristo ressuscitarão primeiro",
+    "feedbackCorrect": "Há ressurreição e vida vigilante.",
+    "feedbackWrong": {
+      "true": "Releia 4:16 e 5:16–18."
+    },
+    "hint": "Una ressurreição e tríade.",
+    "learningObjective": "Interpretar.",
+    "evidence": [
+      "1 Tessalonicenses 4:16"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-02",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 4:17, toque a duração.",
+    "prompt": "Em 1 Tessalonicenses 4:17, toque a duração.",
+    "cue": "Em 1 Tessalonicenses 4:17, toque a duração.",
+    "verseRef": "1 Tessalonicenses 4:17",
+    "passageText": "Depois, nós, os que estivermos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro com o Senhor nos ares, e assim, permaneceremos para sempre com o Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ares"
+      },
+      {
+        "id": "b",
+        "text": "para sempre"
+      },
+      {
+        "id": "c",
+        "text": "nuvens"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "permaneceremos para sempre com o Senhor",
+    "feedbackCorrect": "Para sempre.",
+    "feedbackWrong": {
+      "a": "Lugar.",
+      "c": "Cenário."
+    },
+    "hint": "Duração.",
+    "learningObjective": "Sustentar.",
+    "evidence": [
+      "1 Tessalonicenses 4:17"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-03",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o desafio sustenta?",
+    "prompt": "Que leitura o desafio sustenta?",
+    "cue": "Que leitura o desafio sustenta?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Esperança da vinda e igreja vigilante e grata"
+      },
+      {
+        "id": "b",
+        "text": "Sem gratidão"
+      },
+      {
+        "id": "c",
+        "text": "Luto sem esperança"
+      },
+      {
+        "id": "d",
+        "text": "Sem cuidado mútuo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Em tudo, dai graças, pois esta é a vontade de Deus",
+    "feedbackCorrect": "Esperança e vigilância.",
+    "feedbackWrong": {
+      "b": "Há graças.",
+      "c": "Há esperança.",
+      "d": "Há cuidado."
+    },
+    "hint": "Una.",
+    "learningObjective": "Escolher.",
+    "evidence": [
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-04",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o fio?",
+    "prompt": "Qual sequência revela o fio?",
+    "cue": "Qual sequência revela o fio?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Jesus ressuscitou"
+      },
+      {
+        "id": "b",
+        "text": "Mortos se levantam"
+      },
+      {
+        "id": "c",
+        "text": "Igreja vigia e dá graças"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "Cristo, ressurreição e vigilância.",
+    "feedbackWrong": {
+      "default": "Comece por Jesus."
+    },
+    "hint": "Siga.",
+    "learningObjective": "Ver.",
+    "evidence": [
+      "1 Tessalonicenses 4:14",
+      "1 Tessalonicenses 4:16",
+      "1 Tessalonicenses 5:18"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-05",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 5:21, retende o que é ___.",
+    "prompt": "Em 1 Tessalonicenses 5:21, retende o que é ___.",
+    "cue": "Em 1 Tessalonicenses 5:21, retende o que é ___.",
+    "verseRef": "1 Tessalonicenses 5:21",
+    "passageText": "Examinai todas as coisas, retende o que é bom;",
+    "template": "Examinai todas as coisas, retende o que é ___;",
+    "options": [
+      {
+        "id": "a",
+        "text": "falso"
+      },
+      {
+        "id": "b",
+        "text": "mau"
+      },
+      {
+        "id": "c",
+        "text": "bom"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "retende o que é bom",
+    "feedbackCorrect": "O bom.",
+    "feedbackWrong": {
+      "a": "Não.",
+      "b": "Não."
+    },
+    "hint": "Objeto.",
+    "learningObjective": "Lembrar.",
+    "evidence": [
+      "1 Tessalonicenses 5:21"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-06",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+    "prompt": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+    "cue": "O que liga 1 Tessalonicenses 5:16–17 a Filipenses 4:4–6?",
+    "verseRef": "1 Tessalonicenses 5:16–17",
+    "passageText": "Regozijem-se sempre. Orem sem parar.",
+    "passageA": {
+      "ref": "1 Tessalonicenses 5:16–17",
+      "text": "Regozijem-se sempre. Orem sem parar."
+    },
+    "passageB": {
+      "ref": "Filipenses 4:4–6"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria e oração"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio"
+      },
+      {
+        "id": "c",
+        "text": "Ansiedade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Regozijem-se sempre. Orem sem parar",
+    "feedbackCorrect": "Alegria e oração.",
+    "feedbackWrong": {
+      "b": "Há orar.",
+      "c": "Há alegria."
+    },
+    "hint": "Compare.",
+    "learningObjective": "Ligar.",
+    "evidence": [
+      "1 Tessalonicenses 5:16–17",
+      "Filipenses 4:4–6"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-07",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 Tessalonicenses 5:21, toque o verbo do exame.",
+    "prompt": "Em 1 Tessalonicenses 5:21, toque o verbo do exame.",
+    "cue": "Em 1 Tessalonicenses 5:21, toque o verbo do exame.",
+    "verseRef": "1 Tessalonicenses 5:21",
+    "passageText": "Examinai todas as coisas, retende o que é bom;",
+    "options": [
+      {
+        "id": "a",
+        "text": "retende"
+      },
+      {
+        "id": "b",
+        "text": "Examinai"
+      },
+      {
+        "id": "c",
+        "text": "todas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Examinai todas as coisas",
+    "feedbackCorrect": "O discernimento começa por examinar todas as coisas.",
+    "feedbackWrong": {
+      "a": "Retende vem depois do exame.",
+      "c": "Todas marca o alcance, não o verbo."
+    },
+    "hint": "Toque o primeiro verbo do versículo.",
+    "learningObjective": "Sustentar.",
+    "evidence": [
+      "1 Tessalonicenses 5:21"
+    ]
+  },
+  {
+    "id": "1tessalonicenses-cap-pro-t1c-boss-2-08",
+    "trail": "1tessalonicenses-cap",
+    "section": "t1c-boss-2",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência liga esperança e vigilância?",
+    "prompt": "Qual sequência liga esperança e vigilância?",
+    "cue": "Qual sequência liga esperança e vigilância?",
+    "verseRef": "1 Tessalonicenses 5:18",
+    "passageText": "Em tudo, dai graças, pois esta é a vontade de Deus em Cristo Jesus para vocês.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confortar com a esperança"
+      },
+      {
+        "id": "b",
+        "text": "Honrar e cuidar na igreja"
+      },
+      {
+        "id": "c",
+        "text": "Dar graças em tudo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Em tudo, dai graças",
+    "feedbackCorrect": "Conforto, cuidado e gratidão.",
+    "feedbackWrong": {
+      "default": "Comece pelo conforto."
+    },
+    "hint": "Siga.",
+    "learningObjective": "Ver.",
+    "evidence": [
+      "1 Tessalonicenses 4:18",
+      "1 Tessalonicenses 5:12",
+      "1 Tessalonicenses 5:18"
+    ]
+  }
+]

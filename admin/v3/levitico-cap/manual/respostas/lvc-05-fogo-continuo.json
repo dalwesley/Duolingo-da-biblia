@@ -1,0 +1,703 @@
+{
+  "study": {
+    "passageRef": "Levítico 6:8–13",
+    "passages": [
+      {
+        "ref": "Levítico 6:8–13"
+      }
+    ],
+    "context": "Cena de Fogo contínuo: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Fogo contínuo",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor disse mais a Moisés.",
+        "evidenceRef": "Levítico 6:8",
+        "evidenceSpan": "O Senhor disse mais a Moisés"
+      },
+      {
+        "text": "Ordene.",
+        "evidenceRef": "Levítico 6:9",
+        "evidenceSpan": "Ordene"
+      },
+      {
+        "text": "O sacerdote vestirá sua túnica de linho e.",
+        "evidenceRef": "Levítico 6:10",
+        "evidenceSpan": "O sacerdote vestirá sua túnica de linho e"
+      },
+      {
+        "text": "Depois.",
+        "evidenceRef": "Levítico 6:11",
+        "evidenceSpan": "Depois"
+      },
+      {
+        "text": "O.",
+        "evidenceRef": "Levítico 6:12",
+        "evidenceSpan": "O"
+      },
+      {
+        "text": "O fogo deve arder continuamente sobre o altar.",
+        "evidenceRef": "Levítico 6:13",
+        "evidenceSpan": "O fogo deve arder continuamente sobre o altar"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "altar",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "holocausto",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O senhor disse mais a moisés",
+        "evidenceRef": "Levítico 6:8"
+      },
+      {
+        "label": "Ordene a arão e seus filhos",
+        "evidenceRef": "Levítico 6:9"
+      },
+      {
+        "label": "O sacerdote vestirá sua túnica",
+        "evidenceRef": "Levítico 6:10"
+      },
+      {
+        "label": "Depois ele despirá suas vestes",
+        "evidenceRef": "Levítico 6:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Levítico 6:10"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Levítico 6:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      },
+      {
+        "ref": "1 Pedro 1:16",
+        "bridge": "Sede santos como eu"
+      },
+      {
+        "ref": "2 Coríntios 6:16",
+        "bridge": "Deus no meio do povo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "O fogo no altar permanece: o culto ao Senhor não é de vez em quando.",
+    "anchorQuestion": "O que Levítico 6:8 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 6:8, o texto inclui O Senhor disse mais a Moisés.",
+      "verseRef": "Levítico 6:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor disse mais a Moisés",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 6:8 afirma.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 6:8, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 6:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "mais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca Senhor.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 6:10, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor regula o culto aqui"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O sacerdote vestirá sua túnica de linho e",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 6:9 na ordem do texto.",
+      "verseRef": "Levítico 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordene a Arão"
+        },
+        {
+          "id": "b",
+          "text": "seus filhos"
+        },
+        {
+          "id": "c",
+          "text": "é a lei do holocausto"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ordene a Arão",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 6:11, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "A palavra do versículo é Depois.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 6:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 6:8 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 6:8",
+      "passageA": {
+        "ref": "Levítico 6:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Fogo contínuo: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 6:10, a palavra quando liga ideias no fluxo do texto.",
+      "verseRef": "Levítico 6:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 6:10 afirma.",
+      "evidence": [
+        "Levítico 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 6:10, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "quando"
+        },
+        {
+          "id": "b",
+          "text": "sacerdote"
+        },
+        {
+          "id": "c",
+          "text": "vestirá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo destaca quando.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 6:11, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra depois"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 6:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 6:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "O senhor disse mais a moisés"
+        },
+        {
+          "id": "b",
+          "text": "Ordene a arão e seus filhos"
+        },
+        {
+          "id": "c",
+          "text": "O sacerdote vestirá sua túnica"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 6:12, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fogo",
+      "feedbackCorrect": "A palavra do versículo é fogo.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 6:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 6:8 a Hebreus 13:15.",
+      "verseRef": "Levítico 6:8",
+      "passageA": {
+        "ref": "Levítico 6:8"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício de louvor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 6:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 6:13 afirma.",
+      "evidence": [
+        "Levítico 6:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 6:13, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 6:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "deve"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "arder"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deve",
+      "feedbackCorrect": "O versículo destaca deve.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 6:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 6:12, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santidade exige distinção prática"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 6:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 6:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 6:12, complete a palavra-chave na Interpretação.",
+      "verseRef": "Levítico 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "sempre"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sempre",
+      "feedbackCorrect": "A palavra do versículo é sempre.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 6:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 6:8 a 1 Pedro 1:16.",
+      "verseRef": "Levítico 6:8",
+      "passageA": {
+        "ref": "Levítico 6:8"
+      },
+      "passageB": {
+        "ref": "1 Pedro 1:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sede santos como eu"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 6:8"
+      ]
+    }
+  ]
+}

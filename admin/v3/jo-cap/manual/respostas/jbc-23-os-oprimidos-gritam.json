@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 24:1–6",
+  "passages": [
+   {
+    "ref": "Jó 24:1–6"
+   },
+   {
+    "ref": "Jó 24:7–12"
+   }
+  ],
+  "context": "Jó descreve os que roubam o pobre e pergunta por que Deus não marca os tempos do juízo.",
+  "keyword": "Oprimidos gritam",
+  "keywordGloss": "O clamor que Jó não deixa de fora da oração.",
+  "focusQuestion": "Você fecha os olhos para a injustiça quando ora?",
+  "reflectionPrompts": [
+   "Tempos do juízo",
+   "Órfão e viúva",
+   "Clamor nas cidades"
+  ],
+  "facts": [
+   {
+    "text": "Jó pergunta por que o Todo-Poderoso não revela os tempos de julgamento.",
+    "evidenceRef": "Jó 24:1",
+    "evidenceSpan": "não revela os tempos de julgamento"
+   },
+   {
+    "text": "Tomam o jumento do órfão e o boi da viúva em penhor.",
+    "evidenceRef": "Jó 24:3",
+    "evidenceSpan": "Tomam o jumento do órfão"
+   },
+   {
+    "text": "Os pobres da terra precisam se esconder.",
+    "evidenceRef": "Jó 24:4",
+    "evidenceSpan": "os pobres da terra precisam se esconder"
+   },
+   {
+    "text": "Passam a noite nus, sem cobertores.",
+    "evidenceRef": "Jó 24:7",
+    "evidenceSpan": "passam a noite nus sem roupas"
+   },
+   {
+    "text": "Os homens gemem nas cidades.",
+    "evidenceRef": "Jó 24:12",
+    "evidenceSpan": "Os homens gemem nas cidades"
+   },
+   {
+    "text": "A alma dos feridos clama.",
+    "evidenceRef": "Jó 24:12",
+    "evidenceSpan": "a alma dos feridos clama"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "julgamento",
+    "gloss": "Os tempos que Jó pergunta por que não são revelados."
+   },
+   {
+    "term": "órfão",
+    "gloss": "Aquele de quem tomam o jumento."
+   },
+   {
+    "term": "feridos",
+    "gloss": "Aqueles cuja alma clama."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pergunta pelos tempos do juízo",
+    "evidenceRef": "Jó 24:1"
+   },
+   {
+    "label": "Roubo de órfão, viúva e pobres",
+    "evidenceRef": "Jó 24:2–6"
+   },
+   {
+    "label": "Noite nua e penhor dos pobres",
+    "evidenceRef": "Jó 24:7–11"
+   },
+   {
+    "label": "Grito nas cidades sem resposta",
+    "evidenceRef": "Jó 24:12"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Há clamor; contudo Deus não considera isso anormal.",
+    "marker": "contudo",
+    "evidenceRef": "Jó 24:12"
+   },
+   {
+    "kind": "resultado",
+    "text": "Os pobres precisam se esconder deles.",
+    "marker": null,
+    "evidenceRef": "Jó 24:4"
+   },
+   {
+    "kind": "causa",
+    "text": "Pergunta pelos tempos porque o juízo parece oculto.",
+    "marker": null,
+    "evidenceRef": "Jó 24:1"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 10:17–18",
+    "bridge": "Deus ouve o oprimido"
+   },
+   {
+    "ref": "Provérbios 14:31",
+    "bridge": "Oprimir o pobre é insultar"
+   },
+   {
+    "ref": "Tiago 5:4",
+    "bridge": "Clamor dos ceifeiros"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó ignora a injustiça social.",
+    "why": "24:1–12 descreve oprimidos em detalhe."
+   },
+   {
+    "text": "Órfão e viúva estão seguros neste texto.",
+    "why": "24:3 mostra o penhor contra eles."
+   },
+   {
+    "text": "Não há clamor nas cidades.",
+    "why": "24:12 fala de gemido e clamor."
+   }
+  ],
+  "centralInsight": "A injustiça do mundo também entra na oração de Jó: ele não fecha os olhos.",
+  "anchorQuestion": "O que Jó pergunta sobre o Todo-Poderoso em Jó 24:1?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 24:1, Jó pergunta por que o Todo-Poderoso não revela os tempos de julgamento.",
+   "verseRef": "Jó 24:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "não revela os tempos de julgamento",
+   "feedbackCorrect": "A pergunta abre o lamento.",
+   "feedbackWrong": {
+    "false": "Releia o início de 24:1."
+   },
+   "hint": "Veja a pergunta inicial.",
+   "learningObjective": "Observar a pergunta de Jó.",
+   "evidence": [
+    "Jó 24:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 24:3, toque de quem tomam o jumento.",
+   "verseRef": "Jó 24:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "órfão"
+    },
+    {
+     "id": "b",
+     "text": "viúva"
+    },
+    {
+     "id": "c",
+     "text": "boi"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tomam o jumento do órfão",
+   "feedbackCorrect": "Tomam o jumento do órfão.",
+   "feedbackWrong": {
+    "b": "Da viúva tomam o boi.",
+    "c": "Boi é o que tomam da viúva."
+   },
+   "hint": "Veja o primeiro objeto.",
+   "learningObjective": "Identificar o órfão.",
+   "evidence": [
+    "Jó 24:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 24:4, o que os pobres da terra precisam fazer?",
+   "verseRef": "Jó 24:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Se esconder deles"
+    },
+    {
+     "id": "b",
+     "text": "Governar as cidades"
+    },
+    {
+     "id": "c",
+     "text": "Comprar os rebanhos"
+    },
+    {
+     "id": "d",
+     "text": "Julgar os tempos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "precisam se esconder deles",
+   "feedbackCorrect": "Os pobres precisam se esconder.",
+   "feedbackWrong": {
+    "b": "Não há governo neste versículo.",
+    "c": "Não há compra.",
+    "d": "Os tempos estão em 24:1."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar o medo dos pobres.",
+   "evidence": [
+    "Jó 24:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 24:3 na ordem do texto.",
+   "verseRef": "Jó 24:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Tomam o jumento do órfão"
+    },
+    {
+     "id": "b",
+     "text": "e tomam o boi da viúva"
+    },
+    {
+     "id": "c",
+     "text": "em penhor."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Tomam o jumento do órfão",
+   "feedbackCorrect": "Órfão, viúva e penhor.",
+   "feedbackWrong": {
+    "default": "Comece pelo jumento."
+   },
+   "hint": "Comece por Tomam.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 24:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 24:12, o que os homens fazem nas cidades?",
+   "verseRef": "Jó 24:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "gemem"
+    },
+    {
+     "id": "b",
+     "text": "órfão"
+    },
+    {
+     "id": "c",
+     "text": "julgamento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os homens gemem nas cidades",
+   "feedbackCorrect": "A palavra é gemem.",
+   "feedbackWrong": {
+    "b": "Órfão está em 24:3.",
+    "c": "Julgamento está em 24:1."
+   },
+   "hint": "Veja o verbo.",
+   "learningObjective": "Lembrar o gemido.",
+   "evidence": [
+    "Jó 24:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 24:1 comunica que se liga a este contexto?",
+   "verseRef": "Jó 24:1",
+   "passageA": {
+    "ref": "Jó 24:1"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jó não fecha os olhos para a injustiça quando ora."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Juízo que parece oculto"
+    },
+    {
+     "id": "b",
+     "text": "Paz sem pergunta"
+    },
+    {
+     "id": "c",
+     "text": "Louvor aos opressores"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não revela os tempos de julgamento",
+   "feedbackCorrect": "A pergunta denuncia o juízo oculto.",
+   "feedbackWrong": {
+    "b": "Há pergunta, não paz quieta.",
+    "c": "Não há louvor aos opressores."
+   },
+   "hint": "Pense na pergunta.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 24:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 24:7–12, os oprimidos dormem aquecidos e Deus logo responde a cada clamor.",
+   "verseRef": "Jó 24:7–8",
+   "correctOptionId": "false",
+   "evidenceSpan": "passam a noite nus sem roupas",
+   "feedbackCorrect": "Há nudez, frio e clamor sem resposta.",
+   "feedbackWrong": {
+    "true": "Compare 24:7 e 24:12."
+   },
+   "hint": "Veja noite e clamor.",
+   "learningObjective": "Compreender a opressão.",
+   "evidence": [
+    "Jó 24:7–8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 24:12, toque a palavra que marca o contraste com o clamor.",
+   "verseRef": "Jó 24:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "contudo"
+    },
+    {
+     "id": "b",
+     "text": "cidades"
+    },
+    {
+     "id": "c",
+     "text": "feridos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "contudo, Deus não considera",
+   "feedbackCorrect": "Contudo introduz o contraste.",
+   "feedbackWrong": {
+    "b": "Cidades são o lugar do gemido.",
+    "c": "Feridos são quem clama."
+   },
+   "hint": "Procure o marcador.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 24:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 24:12 se relaciona com 24:1?",
+   "verseRef": "Jó 24:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Responde à pergunta com o clamor ainda sem juízo visível"
+    },
+    {
+     "id": "b",
+     "text": "Nega que haja gemido nas cidades"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que o juízo já foi revelado"
+    },
+    {
+     "id": "d",
+     "text": "Diz que os pobres não sofrem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a alma dos feridos clama",
+   "feedbackCorrect": "Há clamor; o juízo ainda parece oculto.",
+   "feedbackWrong": {
+    "b": "24:12 fala de gemido.",
+    "c": "24:1 pergunta pelos tempos.",
+    "d": "24:3–11 descreve o sofrimento."
+   },
+   "hint": "Una pergunta e clamor.",
+   "learningObjective": "Relacionar juízo e clamor.",
+   "evidence": [
+    "Jó 24:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o lamento em 24:1–12?",
+   "verseRef": "Jó 24:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pergunta pelos tempos do juízo"
+    },
+    {
+     "id": "b",
+     "text": "Descreve o roubo dos pobres"
+    },
+    {
+     "id": "c",
+     "text": "Fecha com o clamor nas cidades"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "não revela os tempos de julgamento",
+   "feedbackCorrect": "Pergunta, roubo e clamor.",
+   "feedbackWrong": {
+    "default": "Comece pela pergunta."
+   },
+   "hint": "Pense: tempos → roubo → clamor.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 24:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 24:12, o que a alma dos feridos faz?",
+   "verseRef": "Jó 24:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "clama"
+    },
+    {
+     "id": "b",
+     "text": "órfão"
+    },
+    {
+     "id": "c",
+     "text": "julgamento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a alma dos feridos clama",
+   "feedbackCorrect": "A palavra é clama.",
+   "feedbackWrong": {
+    "b": "Órfão está em 24:3.",
+    "c": "Julgamento está em 24:1."
+   },
+   "hint": "Veja o verbo do fim.",
+   "learningObjective": "Lembrar o clamor.",
+   "evidence": [
+    "Jó 24:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 24:12 a Tiago 5:4?",
+   "verseRef": "Jó 24:12",
+   "passageA": {
+    "ref": "Jó 24:12"
+   },
+   "passageB": {
+    "ref": "Tiago 5:4"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Clamor dos ceifeiros"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a alma dos feridos clama",
+   "feedbackCorrect": "Nos dois textos, o clamor dos oprimidos sobe.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare o clamor.",
+   "learningObjective": "Relacionar Jó a Tiago.",
+   "evidence": [
+    "Jó 24:12",
+    "Tiago 5:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 24:1–12 sustenta que Jó fecha os olhos para a injustiça quando ora.",
+   "verseRef": "Jó 24:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "a alma dos feridos clama",
+   "feedbackCorrect": "Jó traz o clamor dos oprimidos à oração.",
+   "feedbackWrong": {
+    "true": "Una 24:1 e 24:12."
+   },
+   "hint": "Veja o que entra na oração.",
+   "learningObjective": "Interpretar a oração aberta.",
+   "evidence": [
+    "Jó 24:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 24:1, toque o que o Todo-Poderoso não revela.",
+   "verseRef": "Jó 24:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "tempos de julgamento"
+    },
+    {
+     "id": "b",
+     "text": "Todo-Poderoso"
+    },
+    {
+     "id": "c",
+     "text": "seus dias"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não revela os tempos de julgamento",
+   "feedbackCorrect": "Não revela os tempos de julgamento.",
+   "feedbackWrong": {
+    "b": "Todo-Poderoso é quem não revela.",
+    "c": "Seus dias são o que os que conhecem não percebem."
+   },
+   "hint": "Veja o objeto de revela.",
+   "learningObjective": "Sustentar a leitura do juízo.",
+   "evidence": [
+    "Jó 24:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 24:1–12 sustenta?",
+   "verseRef": "Jó 24:1–2",
+   "options": [
+    {
+     "id": "a",
+     "text": "A injustiça do mundo entra na oração de Jó"
+    },
+    {
+     "id": "b",
+     "text": "Não há oprimidos neste capítulo"
+    },
+    {
+     "id": "c",
+     "text": "O juízo já é claro para todos"
+    },
+    {
+     "id": "d",
+     "text": "Órfão e viúva estão seguros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não revela os tempos de julgamento",
+   "feedbackCorrect": "Pergunta e clamor sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "24:2–12 descreve oprimidos.",
+    "c": "24:1 pergunta pelos tempos.",
+    "d": "24:3 mostra o penhor."
+   },
+   "hint": "Una 24:1 e 24:12.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 24:1–2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o clamor dos oprimidos?",
+   "verseRef": "Jó 24:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó ouve o gemido nas cidades"
+    },
+    {
+     "id": "b",
+     "text": "O salmista confia que Deus ouve o oprimido"
+    },
+    {
+     "id": "c",
+     "text": "Tiago denuncia o clamor dos ceifeiros"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a alma dos feridos clama",
+   "feedbackCorrect": "O fio vai de Jó ao Salmo e a Tiago.",
+   "feedbackWrong": {
+    "default": "Comece por Jó."
+   },
+   "hint": "Siga: Jó → Salmo → Tiago.",
+   "learningObjective": "Ver o fio do clamor.",
+   "evidence": [
+    "Jó 24:12",
+    "Salmos 10:17–18",
+    "Tiago 5:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 24:3, de quem tomam o boi em penhor?",
+   "verseRef": "Jó 24:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "viúva"
+    },
+    {
+     "id": "b",
+     "text": "gemem"
+    },
+    {
+     "id": "c",
+     "text": "clama"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o boi da viúva em penhor",
+   "feedbackCorrect": "O termo é viúva.",
+   "feedbackWrong": {
+    "b": "Gemem está em 24:12.",
+    "c": "Clama está em 24:12."
+   },
+   "hint": "Veja o segundo objeto.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 24:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 24:3 a Provérbios 14:31?",
+   "verseRef": "Jó 24:3",
+   "passageA": {
+    "ref": "Jó 24:3"
+   },
+   "passageB": {
+    "ref": "Provérbios 14:31"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Oprimir o pobre é insultar"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de terras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tomam o jumento do órfão",
+   "feedbackCorrect": "Nos dois textos, oprimir o pobre ofende a Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare a opressão.",
+   "learningObjective": "Ligar Jó a Provérbios.",
+   "evidence": [
+    "Jó 24:3",
+    "Provérbios 14:31"
+   ]
+  }
+ ]
+}

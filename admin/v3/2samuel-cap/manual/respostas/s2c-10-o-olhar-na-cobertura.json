@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 11:2–7",
+    "passages": [
+      {
+        "ref": "2 Samuel 11:2–7"
+      }
+    ],
+    "context": "Enquanto Joabe luta, Davi fica em Jerusalém e vê Bate-Seba.",
+    "keyword": "Davi",
+    "keywordGloss": "Palavra que ajuda a ler 2 Samuel 11:2–7.",
+    "focusQuestion": "O que este trecho pede de você diante de Davi?",
+    "reflectionPrompts": [
+      "Guardar o olhar",
+      "Coração",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 11:2 registra: que, ao cair da tarde, Davi se levantou.",
+        "evidenceRef": "2 Samuel 11:2",
+        "evidenceSpan": "que, ao cair da tarde, Davi se levantou"
+      },
+      {
+        "text": "O texto em 11:4 registra: enviou mensageiros para buscá-la; ela veio, e ele.",
+        "evidenceRef": "2 Samuel 11:4",
+        "evidenceSpan": "enviou mensageiros para buscá-la; ela veio, e ele"
+      },
+      {
+        "text": "O texto em 11:6 registra: enviou mensageiros a Joabe, dizendo: “Manda-me Urias, o.",
+        "evidenceRef": "2 Samuel 11:6",
+        "evidenceSpan": "enviou mensageiros a Joabe, dizendo: “Manda-me Urias, o"
+      },
+      {
+        "text": "O texto em 11:8 registra: disse a Urias: Desça para sua casa e.",
+        "evidenceRef": "2 Samuel 11:8",
+        "evidenceSpan": "disse a Urias: Desça para sua casa e"
+      },
+      {
+        "text": "O texto em 11:10 registra: a Davi dizendo: Urias não desceu para sua.",
+        "evidenceRef": "2 Samuel 11:10",
+        "evidenceSpan": "a Davi dizendo: Urias não desceu para sua"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Davi",
+        "gloss": "Termo central do trecho em 2 Samuel 11:2–7."
+      },
+      {
+        "term": "aconteceu",
+        "gloss": "Termo central do trecho em 2 Samuel 11:2–7."
+      },
+      {
+        "term": "cair",
+        "gloss": "Termo central do trecho em 2 Samuel 11:2–7."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Abertura em 2",
+        "evidenceRef": "2 Samuel 11:2–4"
+      },
+      {
+        "label": "Desenvolvimento do relato",
+        "evidenceRef": "2 Samuel 11:5–7"
+      },
+      {
+        "label": "Virada do trecho",
+        "evidenceRef": "2 Samuel 11:8–10"
+      },
+      {
+        "label": "Desfecho do episódio",
+        "evidenceRef": "2 Samuel 11:11–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 11:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 11:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 11:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 51:1–2",
+        "bridge": "Confissão e misericórdia"
+      },
+      {
+        "ref": "Salmos 18:1–2",
+        "bridge": "O Senhor é rocha"
+      },
+      {
+        "ref": "Isaías 55:6–7",
+        "bridge": "Buscar e voltar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho celebra o pecado como se fosse virtude.",
+        "why": "O texto registra o fato e suas consequências sem elogiar o erro."
+      },
+      {
+        "text": "Nada neste relato revela o caráter de Deus.",
+        "why": "O Senhor aparece no contexto julgando, livrando ou falando."
+      },
+      {
+        "text": "Os personagens agem sem qualquer escolha moral.",
+        "why": "Há decisões explícitas que o narrador registra."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 11:2, o que o texto destaca no início?",
+    "centralInsight": "O desejo abre a porta ao adultério e à mentira: Davi tenta esconder o pecado."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 11:2, o texto menciona — que, ao cair da tarde, Davi se levantou.",
+      "verseRef": "2 Samuel 11:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "que, ao cair da tarde, Davi se levantou",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 11:3, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Samuel 11:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "enviou"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "perguntar"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 11:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 11:4, o que Davi fez?",
+      "verseRef": "2 Samuel 11:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enviou mensageiros e se deitou com ela"
+        },
+        {
+          "id": "b",
+          "text": "Confessou o pecado diante de Natã"
+        },
+        {
+          "id": "c",
+          "text": "Mandou Joabe voltar da batalha"
+        },
+        {
+          "id": "d",
+          "text": "Fugiu de Jerusalém naquela noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi enviou mensageiros para buscá-la",
+      "feedbackCorrect": "Ele enviou mensageiros e se deitou com ela.",
+      "feedbackWrong": {
+        "b": "A confissão vem depois, com Natã.",
+        "c": "Joabe ainda está na batalha.",
+        "d": "A fuga não aparece neste verso."
+      },
+      "hint": "Veja a ação de Davi no verso.",
+      "learningObjective": "Identificar a ação de Davi.",
+      "evidence": [
+        "2 Samuel 11:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 11:2 na ordem do texto.",
+      "verseRef": "2 Samuel 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "E aconteceu que, ao cair da tarde"
+        },
+        {
+          "id": "b",
+          "text": "Davi se levantou da cama e começou"
+        },
+        {
+          "id": "c",
+          "text": "a passear pelo terraço do palácio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E aconteceu que, ao cair da tarde",
+      "feedbackCorrect": "Ordem do texto.",
+      "feedbackWrong": {
+        "default": "Siga o versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar o texto.",
+      "evidence": [
+        "2 Samuel 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 11:6, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 11:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "enviou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 11:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 11:7 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 11:7",
+      "passageA": {
+        "ref": "2 Samuel 11:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O desejo abre a porta ao adultério e à mentira: Davi tenta esconder o pecado."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato e sentido"
+        },
+        {
+          "id": "b",
+          "text": "Contradição total"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio do texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Urias a Davi, este",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 11:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 11:8, o texto traz o trecho — Davi disse a Urias:.",
+      "verseRef": "2 Samuel 11:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Davi disse a Urias:",
+      "feedbackCorrect": "O versículo confirma a afirmação.",
+      "feedbackWrong": {
+        "false": "O trecho está no versículo."
+      },
+      "hint": "Compare com o palco.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 11:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 11:9, toque a palavra que marca a relação no relato.",
+      "verseRef": "2 Samuel 11:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Urias"
+        },
+        {
+          "id": "c",
+          "text": "deitou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Urias",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 11:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 11:10–11 evidencia no fluxo do relato?",
+      "verseRef": "2 Samuel 11:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há sequência e consequências no relato"
+        },
+        {
+          "id": "b",
+          "text": "O texto congela sem qualquer avanço"
+        },
+        {
+          "id": "c",
+          "text": "Só há listas sem ação"
+        },
+        {
+          "id": "d",
+          "text": "O narrador apaga os personagens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "informaram a Davi dizendo:",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 11:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 11:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abertura em 2"
+        },
+        {
+          "id": "b",
+          "text": "Desenvolvimento do relato"
+        },
+        {
+          "id": "c",
+          "text": "Virada do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Urias disse a Davi:",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 11:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 11:12, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 11:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 11:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 11:13 a Salmos 51:1–2?",
+      "verseRef": "2 Samuel 11:13",
+      "passageA": {
+        "ref": "2 Samuel 11:13"
+      },
+      "passageB": {
+        "ref": "Salmos 51:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confissão e misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Negação do tema"
+        },
+        {
+          "id": "c",
+          "text": "Assunto alheio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi o convidou, e",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 11:13",
+        "Salmos 51:1–2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 11:2, a melhor leitura é tratar o pecado como virtude do rei.",
+      "verseRef": "2 Samuel 11:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "que, ao cair da tarde, Davi se levantou",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 11:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 11:3, toque o trecho que sustenta a leitura do episódio.",
+      "verseRef": "2 Samuel 11:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "perguntar"
+        },
+        {
+          "id": "b",
+          "text": "enviou"
+        },
+        {
+          "id": "c",
+          "text": "quem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "enviou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 11:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor respeita 2 Samuel 11:4?",
+      "verseRef": "2 Samuel 11:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O desejo abre a porta ao adultério e à mentira: Davi tenta esconder o pecado."
+        },
+        {
+          "id": "b",
+          "text": "O pecado é apresentado como modelo"
+        },
+        {
+          "id": "c",
+          "text": "Deus está ausente do episódio"
+        },
+        {
+          "id": "d",
+          "text": "O texto não pede nenhuma resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi enviou mensageiros para",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 11:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do episódio.",
+      "verseRef": "2 Samuel 11:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato apresenta a crise"
+        },
+        {
+          "id": "b",
+          "text": "Vem a confrontação ou decisão"
+        },
+        {
+          "id": "c",
+          "text": "Surge o desfecho do episódio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a mulher concebeu e",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 11:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 11:6, complete a palavra que falta no sentido do verso. neste trecho",
+      "verseRef": "2 Samuel 11:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "mensageiros"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mensageiros",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 11:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 11:7 a Salmos 18:1–2?",
+      "verseRef": "2 Samuel 11:7",
+      "passageA": {
+        "ref": "2 Samuel 11:7"
+      },
+      "passageB": {
+        "ref": "Salmos 18:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é rocha"
+        },
+        {
+          "id": "b",
+          "text": "Tema invertido"
+        },
+        {
+          "id": "c",
+          "text": "Sem ligação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Urias a Davi, este",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 11:7",
+        "Salmos 18:1–2"
+      ]
+    }
+  ]
+}

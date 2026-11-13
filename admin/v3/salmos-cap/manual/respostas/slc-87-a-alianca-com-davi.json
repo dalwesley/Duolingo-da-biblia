@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Salmos 89:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 89:1–6"
+      },
+      {
+        "ref": "Salmos 89:7–8"
+      }
+    ],
+    "context": "Cantarei as misericórdias do Senhor; fiz aliança com meu escolhido. Até quando, Senhor?",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "A aliança com Davi",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Cantarei para sempre as tuas benignidades ó Senhor.",
+        "evidenceRef": "Salmos 89:1",
+        "evidenceSpan": "Cantarei para sempre as tuas benignidades ó Senhor"
+      },
+      {
+        "text": "Pois eu disse: a tua benignidade estará firmada para sempre; tu afirmarás a tua fidelidade nos céus.",
+        "evidenceRef": "Salmos 89:2",
+        "evidenceSpan": "Pois eu disse"
+      },
+      {
+        "text": "Fiz aliança com o meu escolhido.",
+        "evidenceRef": "Salmos 89:3",
+        "evidenceSpan": "Fiz aliança com o meu escolhido"
+      },
+      {
+        "text": "Estabelecerei a tua descendência para sempre e firmarei.",
+        "evidenceRef": "Salmos 89:4",
+        "evidenceSpan": "Estabelecerei a tua descendência para sempre e firmarei"
+      },
+      {
+        "text": "Os céus anunciarão as tuas maravilhas.",
+        "evidenceRef": "Salmos 89:5",
+        "evidenceSpan": "Os céus anunciarão as tuas maravilhas"
+      },
+      {
+        "text": "Pois quem nos céus pode se igualar ao.",
+        "evidenceRef": "Salmos 89:6",
+        "evidenceSpan": "Pois quem nos céus pode se igualar ao"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Cantarei",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cantarei para sempre as tuas benignidades",
+        "evidenceRef": "Salmos 89:1"
+      },
+      {
+        "label": "Pois eu disse a tua benignidade",
+        "evidenceRef": "Salmos 89:2"
+      },
+      {
+        "label": "Fiz aliança com o meu escolhido",
+        "evidenceRef": "Salmos 89:3"
+      },
+      {
+        "label": "Estabelecerei a tua descendência para sempre",
+        "evidenceRef": "Salmos 89:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 89:2"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 89:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      },
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Promessa a Davi e crise presente: a fé segura a aliança mesmo na disciplina."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Promessa a Davi e crise presente: a fé segura a aliança mesmo na disciplina.",
+    "anchorQuestion": "O que Salmos 89:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 89:1, cantarei para sempre as tuas benignidades ó Senhor.",
+      "verseRef": "Salmos 89:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cantarei para sempre as tuas benignidades ó Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 89:1 afirma.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 89:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 89:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarei"
+        },
+        {
+          "id": "b",
+          "text": "sempre"
+        },
+        {
+          "id": "c",
+          "text": "tuas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "O versículo destaca «Cantarei».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 89:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 89:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fiz aliança com o meu escolhido"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fiz aliança com o meu escolhido",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 89:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 89:1 na ordem do texto.",
+      "verseRef": "Salmos 89:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarei"
+        },
+        {
+          "id": "b",
+          "text": "sempre"
+        },
+        {
+          "id": "c",
+          "text": "tuas benignidades"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 89:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 89:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estabelecerei"
+        },
+        {
+          "id": "b",
+          "text": "Cantarei"
+        },
+        {
+          "id": "c",
+          "text": "para"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estabelecerei",
+      "feedbackCorrect": "A palavra do versículo é «Estabelecerei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 89:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 89:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 89:1",
+      "passageA": {
+        "ref": "Salmos 89:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cantarei as misericórdias do Senhor; fiz aliança com meu escolhido. Até quando, Senhor?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 89:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 89:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 89:2 afirma.",
+      "evidence": [
+        "Salmos 89:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 89:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 89:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "tua"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo destaca «Pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 89:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 89:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 89:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estabelecerei a tua descendência para sempre e firmarei",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 89:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 89:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarei para sempre as tuas benignidades"
+        },
+        {
+          "id": "b",
+          "text": "Pois eu disse a tua benignidade"
+        },
+        {
+          "id": "c",
+          "text": "Fiz aliança com o meu escolhido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 89:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 89:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "Cantarei"
+        },
+        {
+          "id": "c",
+          "text": "para"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aliança",
+      "feedbackCorrect": "A palavra do versículo é «aliança».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 89:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 89:1 a 2 Coríntios 1:3.",
+      "verseRef": "Salmos 89:1",
+      "passageA": {
+        "ref": "Salmos 89:1"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus de toda consolação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 89:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 89:8 afirma.",
+      "evidence": [
+        "Salmos 89:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 89:8, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 89:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "Exércitos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 89:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 89:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 89:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os céus anunciarão as tuas maravilhas",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 89:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 89:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 89:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 89:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "céus"
+        },
+        {
+          "id": "b",
+          "text": "Cantarei"
+        },
+        {
+          "id": "c",
+          "text": "para"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "céus",
+      "feedbackCorrect": "A palavra do versículo é «céus».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 89:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 89:1 a Salmos 46:1.",
+      "verseRef": "Salmos 89:1",
+      "passageA": {
+        "ref": "Salmos 89:1"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 89:1"
+      ]
+    }
+  ]
+}

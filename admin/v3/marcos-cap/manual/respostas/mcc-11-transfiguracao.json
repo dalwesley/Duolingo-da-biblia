@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Marcos 9:2–8",
+    "passages": [
+      {
+        "ref": "Marcos 9:2–8"
+      }
+    ],
+    "context": "Depois de anunciar aos discípulos que seguir a Jesus envolve sofrimento, ele leva Pedro, Tiago e João a um alto monte. Ali, os três testemunham algo extraordinário.",
+    "keyword": "ouvi",
+    "keywordGloss": "A voz vinda da nuvem não apenas identifica Jesus como Filho amado; ela ordena que os discípulos lhe deem atenção.",
+    "focusQuestion": "O que pode estar disputando sua atenção e impedindo você de ouvir Jesus?",
+    "reflectionPrompts": [
+      "Jesus se revela",
+      "A voz da nuvem",
+      "Ouvir o Filho"
+    ],
+    "facts": [
+      {
+        "text": "Jesus levou Pedro, Tiago e João a um alto monte, à parte.",
+        "evidenceRef": "Marcos 9:2",
+        "evidenceSpan": "Jesus tomou consigo Pedro, Tiago e João e os levou, sós, à parte, a um alto monte"
+      },
+      {
+        "text": "Jesus se transfigurou diante dos três discípulos.",
+        "evidenceRef": "Marcos 9:2",
+        "evidenceSpan": "e se transfigurou diante deles"
+      },
+      {
+        "text": "As vestes de Jesus se tornaram extremamente brancas e resplandecentes.",
+        "evidenceRef": "Marcos 9:3",
+        "evidenceSpan": "suas vestes tornaram-se resplandecentes, extremamente brancas"
+      },
+      {
+        "text": "Elias e Moisés apareceram e conversavam com Jesus.",
+        "evidenceRef": "Marcos 9:4",
+        "evidenceSpan": "apareceram-lhes Elias e Moisés, e estavam conversando com Jesus"
+      },
+      {
+        "text": "Pedro propôs fazer três tendas, uma para cada um dos três.",
+        "evidenceRef": "Marcos 9:5",
+        "evidenceSpan": "Vamos fazer três tendas: uma será tua, outra para Moisés, e outra para Elias."
+      },
+      {
+        "text": "Uma voz saiu da nuvem e identificou Jesus como o Filho amado.",
+        "evidenceRef": "Marcos 9:7",
+        "evidenceSpan": "dela saiu uma voz que dizia: Este é o meu Filho amado"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "transfigurou",
+        "gloss": "Descreve a transformação visível de Jesus diante dos discípulos no monte."
+      },
+      {
+        "term": "resplandecentes",
+        "gloss": "Expressa o brilho extraordinário das vestes de Jesus, que nenhuma lavagem comum poderia produzir."
+      },
+      {
+        "term": "amado",
+        "gloss": "A palavra usada pela voz da nuvem para identificar a relação singular de Jesus com o Pai."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus leva três discípulos ao alto do monte",
+        "evidenceRef": "Marcos 9:2"
+      },
+      {
+        "label": "A aparência de Jesus se transforma e Moisés e Elias aparecem",
+        "evidenceRef": "Marcos 9:3–4"
+      },
+      {
+        "label": "Pedro propõe construir três tendas",
+        "evidenceRef": "Marcos 9:5–6"
+      },
+      {
+        "label": "A voz da nuvem identifica Jesus e manda ouvi-lo",
+        "evidenceRef": "Marcos 9:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Marcos explica que Pedro não sabia o que dizer porque os discípulos estavam aterrorizados.",
+        "marker": "porque",
+        "evidenceRef": "Marcos 9:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "A nuvem envolve os discípulos, e dela sai a voz que identifica Jesus como Filho amado.",
+        "marker": "e",
+        "evidenceRef": "Marcos 9:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Depois de os discípulos olharem ao redor, não encontram mais Moisés e Elias; somente Jesus permanece com eles.",
+        "marker": "senão",
+        "evidenceRef": "Marcos 9:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 18:15",
+        "bridge": "Ouvir aquele que Deus envia"
+      },
+      {
+        "ref": "2 Pedro 1:17–18",
+        "bridge": "A voz da glória no monte"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A proposta de Pedro coloca Jesus, Moisés e Elias no mesmo nível.",
+        "why": "A voz da nuvem destaca Jesus como Filho amado e ordena que os discípulos o ouçam; ao final, somente Jesus permanece com eles."
+      },
+      {
+        "text": "Pedro propôs as tendas porque compreendeu plenamente o que estava acontecendo.",
+        "why": "Marcos esclarece que Pedro não sabia o que dizer e que os discípulos estavam aterrorizados."
+      },
+      {
+        "text": "A transfiguração foi apenas uma experiência extraordinária para os três discípulos.",
+        "why": "A voz da nuvem dá sentido ao acontecimento: identifica Jesus como Filho amado e dirige aos discípulos uma ordem."
+      }
+    ],
+    "centralInsight": "No monte, o Pai mostra quem Jesus é: “Este é o meu Filho amado; ouçam-no!”",
+    "anchorQuestion": "O que a voz vinda da nuvem ordenou aos discípulos a respeito de Jesus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Marcos 9:2, Jesus levou todos os seus discípulos ao alto do monte.",
+      "verseRef": "Marcos 9:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Jesus tomou consigo Pedro, Tiago e João",
+      "feedbackCorrect": "Marcos identifica três discípulos que acompanharam Jesus ao monte, não o grupo inteiro.",
+      "feedbackWrong": {
+        "true": "Observe os nomes mencionados no início do versículo: Jesus escolheu três discípulos."
+      },
+      "hint": "Confira quais discípulos são nomeados no início da cena.",
+      "learningObjective": "Identificar quem acompanhou Jesus ao monte.",
+      "evidence": [
+        "Marcos 9:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Marcos 9:4–5, toque um dos que apareceram no monte para conversar com Jesus.",
+      "verseRef": "Marcos 9:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedro"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Mestre"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Elias e Moisés",
+      "feedbackCorrect": "Moisés aparece junto de Elias, e os dois conversam com Jesus.",
+      "feedbackWrong": {
+        "a": "Pedro estava presente como discípulo, mas não é um dos dois personagens que apareceram.",
+        "c": "\"Mestre\" é como Pedro chama Jesus, não quem apareceu."
+      },
+      "hint": "Leia o início do versículo e identifique os dois que apareceram.",
+      "learningObjective": "Reconhecer os personagens que apareceram com Jesus.",
+      "evidence": [
+        "Marcos 9:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Como Marcos descreve as vestes de Jesus durante a transfiguração?",
+      "verseRef": "Marcos 9:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tornaram-se extremamente brancas e brilhantes."
+        },
+        {
+          "id": "b",
+          "text": "Ficaram escuras como a noite."
+        },
+        {
+          "id": "c",
+          "text": "Transformaram-se em roupas de Moisés."
+        },
+        {
+          "id": "d",
+          "text": "Desapareceram diante dos discípulos."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suas vestes tornaram-se resplandecentes, extremamente brancas",
+      "feedbackCorrect": "O brilho das vestes é descrito como extraordinário, além do que qualquer lavandeiro poderia produzir.",
+      "feedbackWrong": {
+        "b": "O versículo destaca o branco intenso das vestes, não uma aparência escura.",
+        "c": "Moisés aparece conversando com Jesus, mas o texto não diz que as roupas mudaram para as dele.",
+        "d": "As vestes não desaparecem; o texto descreve como ficaram."
+      },
+      "hint": "Observe a comparação que o versículo faz com a capacidade de um lavandeiro.",
+      "learningObjective": "Observar a descrição da aparência de Jesus na transfiguração.",
+      "evidence": [
+        "Marcos 9:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Organize os trechos de Marcos 9:2–3 na ordem em que aparecem.",
+      "verseRef": "Marcos 9:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seis dias depois"
+        },
+        {
+          "id": "b",
+          "text": "a um alto monte"
+        },
+        {
+          "id": "c",
+          "text": "e se transfigurou diante deles"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "e se transfigurou diante deles",
+      "feedbackCorrect": "O texto apresenta primeiro o momento, depois o lugar e, por fim, a transfiguração.",
+      "feedbackWrong": {
+        "default": "Acompanhe a frase desde a indicação de tempo até a ação de Jesus."
+      },
+      "hint": "Siga a sequência da narrativa, do início do versículo 2.",
+      "learningObjective": "Reconhecer a sequência dos acontecimentos iniciais da transfiguração.",
+      "evidence": [
+        "Marcos 9:2–3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Marcos 9:2, quantos dias haviam passado antes de Jesus subir ao monte com os discípulos?",
+      "verseRef": "Marcos 9:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Três"
+        },
+        {
+          "id": "b",
+          "text": "Seis"
+        },
+        {
+          "id": "c",
+          "text": "Quarenta"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Seis dias depois",
+      "feedbackCorrect": "A narrativa situa a transfiguração seis dias depois dos acontecimentos anteriores.",
+      "feedbackWrong": {
+        "a": "Releia a primeira expressão do versículo, que marca o intervalo de tempo.",
+        "c": "O número quarenta não aparece na indicação de tempo desta cena."
+      },
+      "hint": "A resposta está nas primeiras palavras do versículo.",
+      "learningObjective": "Identificar a indicação de tempo que abre a narrativa.",
+      "evidence": [
+        "Marcos 9:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Marcos 9:7 comunica que se liga a este contexto?",
+      "verseRef": "Marcos 9:7",
+      "passageA": {
+        "ref": "Marcos 9:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus havia levado Pedro, Tiago e João à parte, a um alto monte, onde sua aparência se transformou diante deles."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Uma revelação sobre Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Uma viagem para outra cidade"
+        },
+        {
+          "id": "c",
+          "text": "Uma conversa entre discípulos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o meu Filho amado",
+      "feedbackCorrect": "A voz da nuvem revela aos discípulos quem é Jesus.",
+      "feedbackWrong": {
+        "b": "O contexto acontece no monte; a voz não anuncia uma viagem.",
+        "c": "A voz não apresenta uma conversa entre discípulos, mas uma declaração sobre Jesus."
+      },
+      "hint": "Observe o que a voz revela sobre a identidade de Jesus.",
+      "learningObjective": "Relacionar a declaração da nuvem ao acontecimento testemunhado pelos discípulos.",
+      "evidence": [
+        "Marcos 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Marcos 9:6, Pedro propôs as três tendas porque sabia exatamente o que dizer diante do que acontecia.",
+      "verseRef": "Marcos 9:5–6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois não sabia o que dizer, porque estavam aterrorizados.",
+      "feedbackCorrect": "Marcos explica que Pedro não sabia o que dizer e relaciona isso ao terror dos discípulos.",
+      "feedbackWrong": {
+        "true": "O versículo seguinte esclarece a situação de Pedro: ele não sabia o que dizer."
+      },
+      "hint": "Leia a explicação que Marcos apresenta depois da proposta das tendas.",
+      "learningObjective": "Compreender a relação entre a reação de Pedro e o medo dos discípulos.",
+      "evidence": [
+        "Marcos 9:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Marcos 9:7, toque as palavras que expressam a ordem dada pela voz sobre Jesus.",
+      "verseRef": "Marcos 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "uma nuvem"
+        },
+        {
+          "id": "b",
+          "text": "a ele ouvi"
+        },
+        {
+          "id": "c",
+          "text": "meu Filho"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a ele ouvi",
+      "feedbackCorrect": "A voz não apenas identifica Jesus; também ordena que os discípulos o ouçam.",
+      "feedbackWrong": {
+        "a": "A nuvem compõe o cenário da revelação, mas não expressa a ordem.",
+        "c": "A expressão identifica Jesus como Filho amado; a ordem vem depois."
+      },
+      "hint": "Procure no final do versículo a orientação dada aos discípulos.",
+      "learningObjective": "Reconhecer a ordem que acompanha a declaração sobre Jesus.",
+      "evidence": [
+        "Marcos 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Marcos 9:5–6 relaciona a proposta de Pedro à reação dos discípulos?",
+      "verseRef": "Marcos 9:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A proposta surgiu enquanto os discípulos estavam aterrorizados."
+        },
+        {
+          "id": "b",
+          "text": "A proposta foi feita depois que os discípulos perderam o medo."
+        },
+        {
+          "id": "c",
+          "text": "A proposta interrompeu uma discussão entre Moisés e Elias."
+        },
+        {
+          "id": "d",
+          "text": "A proposta demonstrou que Pedro compreendeu tudo o que viu."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois não sabia o que dizer, porque estavam aterrorizados.",
+      "feedbackCorrect": "Marcos explica a fala de Pedro pelo estado de terror dos discípulos.",
+      "feedbackWrong": {
+        "b": "O texto não diz que o medo passou antes da proposta; afirma que estavam aterrorizados.",
+        "c": "Moisés e Elias conversavam com Jesus, mas nenhuma discussão é mencionada.",
+        "d": "Marcos afirma que Pedro não sabia o que dizer, não que compreendeu tudo."
+      },
+      "hint": "Leia a explicação que vem logo depois da fala de Pedro.",
+      "learningObjective": "Relacionar a fala de Pedro à condição emocional dos discípulos.",
+      "evidence": [
+        "Marcos 9:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Organize os movimentos narrados em Marcos 9:6–7.",
+      "verseRef": "Marcos 9:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedro não sabe o que dizer"
+        },
+        {
+          "id": "b",
+          "text": "A nuvem envolve os discípulos"
+        },
+        {
+          "id": "c",
+          "text": "A voz identifica Jesus como Filho amado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E uma nuvem os envolveu, e dela saiu uma voz",
+      "feedbackCorrect": "A narrativa passa da reação dos discípulos à nuvem e, então, à voz que fala sobre Jesus.",
+      "feedbackWrong": {
+        "default": "Comece pela reação de Pedro no versículo 6 e avance para o que acontece no versículo 7."
+      },
+      "hint": "Acompanhe a passagem do versículo 6 para o 7.",
+      "learningObjective": "Compreender a progressão da reação dos discípulos até a declaração da voz.",
+      "evidence": [
+        "Marcos 9:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Marcos 9:6, qual palavra introduz a explicação de que Pedro não sabia o que dizer?",
+      "verseRef": "Marcos 9:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "senão"
+        },
+        {
+          "id": "c",
+          "text": "depois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque estavam aterrorizados",
+      "feedbackCorrect": "A palavra introduz a razão apresentada por Marcos para a reação dos discípulos.",
+      "feedbackWrong": {
+        "b": "Essa palavra aparece no versículo 8, em outro contexto da narrativa.",
+        "c": "O versículo não usa uma indicação de tempo para explicar a reação."
+      },
+      "hint": "Procure a palavra que introduz o motivo do comportamento descrito.",
+      "learningObjective": "Identificar o marcador que apresenta a causa da reação dos discípulos.",
+      "evidence": [
+        "Marcos 9:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Marcos 9:7 a Deuteronômio 18:15?",
+      "verseRef": "Marcos 9:7",
+      "passageA": {
+        "ref": "Marcos 9:7"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 18:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir aquele que Deus envia"
+        },
+        {
+          "id": "b",
+          "text": "Construir tendas no monte"
+        },
+        {
+          "id": "c",
+          "text": "Aparições de profetas antigos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a ele ouvi",
+      "feedbackCorrect": "Os dois textos destacam a importância de ouvir aquele que Deus apresenta ao seu povo.",
+      "feedbackWrong": {
+        "b": "As tendas aparecem na fala de Pedro, mas não são a ponte entre esses textos.",
+        "c": "Moisés e Elias aparecem na cena, mas a ligação central é a ordem de ouvir."
+      },
+      "hint": "Compare a ordem dada pela voz com a orientação de Moisés.",
+      "learningObjective": "Relacionar a ordem de ouvir Jesus com a promessa de um profeta enviado por Deus.",
+      "evidence": [
+        "Marcos 9:7",
+        "Deuteronômio 18:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "A voz da nuvem coloca Jesus, Moisés e Elias no mesmo nível de autoridade para os discípulos.",
+      "verseRef": "Marcos 9:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Este é o meu Filho amado; a ele ouvi.",
+      "feedbackCorrect": "A voz destaca Jesus como Filho amado e dirige aos discípulos a ordem de ouvi-lo.",
+      "feedbackWrong": {
+        "true": "A declaração da nuvem destaca Jesus, e o final da cena mostra somente ele com os discípulos."
+      },
+      "hint": "Compare a declaração da voz com o que os discípulos veem ao olhar ao redor.",
+      "learningObjective": "Interpretar a posição singular de Jesus na revelação do monte.",
+      "evidence": [
+        "Marcos 9:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Marcos 9:8, toque quem permaneceu com os discípulos depois que olharam ao redor.",
+      "verseRef": "Marcos 9:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "ninguém"
+        },
+        {
+          "id": "b",
+          "text": "ao redor"
+        },
+        {
+          "id": "c",
+          "text": "senão Jesus"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não viram mais ninguém, senão Jesus, com eles",
+      "feedbackCorrect": "Ao final da cena, somente Jesus permanece com os discípulos.",
+      "feedbackWrong": {
+        "a": "Eles não viram mais ninguém, exceto um: Jesus.",
+        "b": "\"Ao redor\" é para onde olharam, não quem ficou."
+      },
+      "hint": "Observe a expressão que vem depois de 'não viram mais ninguém'.",
+      "learningObjective": "Reconhecer o destaque dado a Jesus no encerramento da cena.",
+      "evidence": [
+        "Marcos 9:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual interpretação melhor respeita a declaração da voz e o encerramento da cena?",
+      "verseRef": "Marcos 9:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus é identificado como Filho amado e recebe a ordem de ser ouvido."
+        },
+        {
+          "id": "b",
+          "text": "Moisés e Elias recebem a mesma autoridade de Jesus."
+        },
+        {
+          "id": "c",
+          "text": "Pedro compreende plenamente a revelação e passa a conduzir o grupo."
+        },
+        {
+          "id": "d",
+          "text": "A nuvem revela que a experiência no monte deve ser repetida por todos."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o meu Filho amado; a ele ouvi.",
+      "feedbackCorrect": "A voz identifica Jesus e ordena que os discípulos o ouçam; o encerramento mantém o foco nele.",
+      "feedbackWrong": {
+        "b": "A voz não iguala os três; identifica Jesus como Filho amado e manda ouvi-lo.",
+        "c": "Marcos diz que Pedro não sabia o que dizer, não que passou a conduzir o grupo.",
+        "d": "O texto narra uma experiência específica, sem ordenar que todos a repitam."
+      },
+      "hint": "Considere tanto a declaração da voz quanto quem permanece no final.",
+      "learningObjective": "Interpretar a centralidade e a autoridade de Jesus na transfiguração.",
+      "evidence": [
+        "Marcos 9:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Organize o encadeamento da revelação em Marcos 9:7–8.",
+      "verseRef": "Marcos 9:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "A voz declara que Jesus é o Filho amado"
+        },
+        {
+          "id": "b",
+          "text": "A voz ordena que os discípulos ouçam Jesus"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos olham ao redor e encontram somente Jesus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Este é o meu Filho amado; a ele ouvi.",
+      "feedbackCorrect": "A revelação identifica Jesus, orienta os discípulos a ouvi-lo e termina com ele em destaque.",
+      "feedbackWrong": {
+        "default": "Siga a ordem da fala que sai da nuvem e depois observe o que acontece no versículo 8."
+      },
+      "hint": "A declaração e a ordem vêm antes da reação dos discípulos.",
+      "learningObjective": "Reconhecer a progressão entre a identidade de Jesus, a ordem de ouvi-lo e o encerramento da cena.",
+      "evidence": [
+        "Marcos 9:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Marcos 9:7, qual palavra identifica a relação de Jesus com o Pai na declaração da voz?",
+      "verseRef": "Marcos 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "amado"
+        },
+        {
+          "id": "b",
+          "text": "aterrorizados"
+        },
+        {
+          "id": "c",
+          "text": "resplandecentes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o meu Filho amado",
+      "feedbackCorrect": "A voz identifica Jesus como o Filho amado, revelando sua relação singular com o Pai.",
+      "feedbackWrong": {
+        "b": "Essa palavra descreve a reação dos discípulos, não a identidade de Jesus.",
+        "c": "Essa palavra descreve as vestes de Jesus, não sua relação com o Pai."
+      },
+      "hint": "Procure a palavra que completa a declaração sobre o Filho.",
+      "learningObjective": "Compreender o termo que expressa a identidade de Jesus na declaração divina.",
+      "evidence": [
+        "Marcos 9:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Marcos 9:7 a 2 Pedro 1:17–18?",
+      "verseRef": "Marcos 9:7",
+      "passageA": {
+        "ref": "Marcos 9:7"
+      },
+      "passageB": {
+        "ref": "2 Pedro 1:17–18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A voz da glória no monte"
+        },
+        {
+          "id": "b",
+          "text": "A construção de três tendas"
+        },
+        {
+          "id": "c",
+          "text": "O aparecimento de dois profetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dela saiu uma voz que dizia",
+      "feedbackCorrect": "Pedro relembra a honra e a glória recebidas por Jesus e a voz que veio do céu no monte.",
+      "feedbackWrong": {
+        "b": "As tendas aparecem na proposta de Pedro, mas não são o tema retomado em 2 Pedro.",
+        "c": "A ligação destacada por Pedro é a voz da glória, não apenas a aparição de Moisés e Elias."
+      },
+      "hint": "Observe qual acontecimento Pedro relembra ao falar da glória de Jesus.",
+      "learningObjective": "Relacionar o testemunho da transfiguração em Marcos à lembrança de Pedro em sua carta.",
+      "evidence": [
+        "Marcos 9:7",
+        "2 Pedro 1:17–18"
+      ]
+    }
+  ]
+}

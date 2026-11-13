@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 24:17–25",
+    "passages": [
+      {
+        "ref": "2 Crônicas 24:17–25"
+      }
+    ],
+    "context": "Depois da morte de Joiada, Joás deixa a casa do Senhor, mata Zacarias e sofre juízo sírio.",
+    "keyword": "Abandonaram",
+    "keywordGloss": "Abandonaram a casa do SENHOR e adoraram ídolos; veio grande ira.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Esquecimento de Joás",
+      "Morte de Zacarias",
+      "Juízo sírio"
+    ],
+    "facts": [
+      {
+        "text": "Após a morte de Joiada, o rei escutou os príncipes de Judá.",
+        "evidenceRef": "2 Crônicas 24:17",
+        "evidenceSpan": "o rei os escutou"
+      },
+      {
+        "text": "Abandonaram a casa do SENHOR e adoraram ídolos.",
+        "evidenceRef": "2 Crônicas 24:18",
+        "evidenceSpan": "Abandonaram a casa do SENHOR"
+      },
+      {
+        "text": "O SENHOR enviou profetas, mas eles não ouviram.",
+        "evidenceRef": "2 Crônicas 24:19",
+        "evidenceSpan": "eles não ouviram"
+      },
+      {
+        "text": "Zacarias foi apedrejado no pátio da Casa do Senhor.",
+        "evidenceRef": "2 Crônicas 24:21",
+        "evidenceSpan": "o apedrejaram com pedras, a mando do rei"
+      },
+      {
+        "text": "Joás não se lembrou da bondade de Joiada e matou seu filho.",
+        "evidenceRef": "2 Crônicas 24:22",
+        "evidenceSpan": "não se lembrou da bondade que Joiada"
+      },
+      {
+        "text": "Os sírios venceram porque Judá abandonou o Senhor.",
+        "evidenceRef": "2 Crônicas 24:24",
+        "evidenceSpan": "pois estes abandonaram o Senhor, Deus de seus pais"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Abandonaram",
+        "gloss": "Ação do povo e do rei ao deixar a casa do Senhor."
+      },
+      {
+        "term": "Zacarias",
+        "gloss": "Filho de Joiada que denuncia e é morto."
+      },
+      {
+        "term": "bondade",
+        "gloss": "O que Joás esqueceu a respeito de Joiada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Joás escuta os príncipes após Joiada",
+        "evidenceRef": "2 Crônicas 24:17–18"
+      },
+      {
+        "label": "Profetas enviados e rejeitados",
+        "evidenceRef": "2 Crônicas 24:19"
+      },
+      {
+        "label": "Zacarias denuncia e é morto",
+        "evidenceRef": "2 Crônicas 24:20–22"
+      },
+      {
+        "label": "Juízo sírio e morte de Joás",
+        "evidenceRef": "2 Crônicas 24:23–25"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Por causa da culpa veio grande ira sobre Judá.",
+        "marker": "por causa",
+        "evidenceRef": "2 Crônicas 24:18"
+      },
+      {
+        "kind": "contraste",
+        "text": "Porém o SENHOR enviou profetas; eles não ouviram.",
+        "marker": "Porém",
+        "evidenceRef": "2 Crônicas 24:19"
+      },
+      {
+        "kind": "causa",
+        "text": "Os sírios venceram porque abandonaram o Senhor.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 24:24"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 23:35",
+        "bridge": "Sangue de Zacarias"
+      },
+      {
+        "ref": "Hebreus 10:30",
+        "bridge": "O Senhor julga o seu povo"
+      },
+      {
+        "ref": "Salmos 106:13",
+        "bridge": "Depressa esqueceram suas obras"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Joás lembrou a bondade de Joiada e poupou Zacarias.",
+        "why": "24:22: não se lembrou e matou o filho."
+      },
+      {
+        "text": "Os profetas foram ouvidos com arrependimento.",
+        "why": "24:19: eles não ouviram."
+      },
+      {
+        "text": "Os sírios perderam porque eram poucos.",
+        "why": "24:24: poucos sírios vencem porque Judá abandonou o Senhor."
+      }
+    ],
+    "centralInsight": "Abandonaram a casa do Senhor; Deus envia profetas, mas não querem ouvir.",
+    "anchorQuestion": "O que Joás não lembrou, segundo 2 Crônicas 24:22?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 24:18, o povo abandonou a casa do SENHOR e adorou ídolos.",
+      "verseRef": "2 Crônicas 24:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "Abandonaram a casa do SENHOR, Deus de seus pais, e adoraram os ídolos",
+      "feedbackCorrect": "Abandono e idolatria abrem o juízo sobre Judá.",
+      "feedbackWrong": {
+        "false": "Releia 24:18: abandonaram e adoraram ídolos."
+      },
+      "hint": "Veja as duas ações do versículo.",
+      "learningObjective": "Observar o abandono da casa do Senhor.",
+      "evidence": [
+        "2 Crônicas 24:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 24:22, toque o que Joás não lembrou de Joiada.",
+      "verseRef": "2 Crônicas 24:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "bondade"
+        },
+        {
+          "id": "b",
+          "text": "filho"
+        },
+        {
+          "id": "c",
+          "text": "pai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não se lembrou da bondade que Joiada",
+      "feedbackCorrect": "Ele não se lembrou da bondade de Joiada e matou o filho.",
+      "feedbackWrong": {
+        "b": "O filho é Zacarias; o esquecido é a bondade.",
+        "c": "O leito aparece na morte de Joás."
+      },
+      "hint": "Procure o que ele não lembrou.",
+      "learningObjective": "Identificar a bondade esquecida.",
+      "evidence": [
+        "2 Crônicas 24:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 24:21, o que fizeram a Zacarias?",
+      "verseRef": "2 Crônicas 24:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apedrejaram-no a mando do rei no pátio da Casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Nomearam-no sumo sacerdote em lugar de Joiada"
+        },
+        {
+          "id": "c",
+          "text": "Enviaram-no como embaixador à Síria"
+        },
+        {
+          "id": "d",
+          "text": "Esconderam-no no templo até a morte de Joás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o apedrejaram com pedras, a mando do rei",
+      "feedbackCorrect": "Zacarias morre apedrejado no pátio, por ordem do rei.",
+      "feedbackWrong": {
+        "b": "Ele é morto, não promovido.",
+        "c": "Não há embaixada.",
+        "d": "O texto registra o apedrejamento."
+      },
+      "hint": "Leia a ação contra Zacarias.",
+      "learningObjective": "Observar a morte do profeta.",
+      "evidence": [
+        "2 Crônicas 24:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 24:19 na ordem do texto.",
+      "verseRef": "2 Crônicas 24:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém, o SENHOR enviou profetas entre eles"
+        },
+        {
+          "id": "b",
+          "text": "para que se voltassem para Si"
+        },
+        {
+          "id": "c",
+          "text": "eles não ouviram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eles não ouviram",
+      "feedbackCorrect": "Envio, propósito de retorno e rejeição.",
+      "feedbackWrong": {
+        "default": "Comece pelo Porém."
+      },
+      "hint": "O versículo abre com Porém.",
+      "learningObjective": "Reconhecer a ordem de 24:19.",
+      "evidence": [
+        "2 Crônicas 24:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 24:18, ___ a casa do SENHOR, Deus de seus pais.",
+      "verseRef": "2 Crônicas 24:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandonaram"
+        },
+        {
+          "id": "b",
+          "text": "Buscaram"
+        },
+        {
+          "id": "c",
+          "text": "Reedificaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abandonaram a casa do SENHOR",
+      "feedbackCorrect": "O verbo da queda é Abandonaram.",
+      "feedbackWrong": {
+        "b": "O texto diz Abandonaram.",
+        "c": "Não reedificaram; abandonaram."
+      },
+      "hint": "Veja o primeiro verbo do versículo.",
+      "learningObjective": "Lembrar o verbo do abandono.",
+      "evidence": [
+        "2 Crônicas 24:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 24:22 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 24:22",
+      "passageA": {
+        "ref": "2 Crônicas 24:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Joás esquece quem o formou e mata o filho de Joiada."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Esquecimento gera violência"
+        },
+        {
+          "id": "b",
+          "text": "Joás honra Joiada"
+        },
+        {
+          "id": "c",
+          "text": "Zacarias foge livre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não se lembrou da bondade",
+      "feedbackCorrect": "O esquecimento da bondade termina em assassinato.",
+      "feedbackWrong": {
+        "b": "Ele mata o filho de Joiada.",
+        "c": "Zacarias é apedrejado."
+      },
+      "hint": "Veja o que Joás não lembrou.",
+      "learningObjective": "Ligar esquecimento e crime.",
+      "evidence": [
+        "2 Crônicas 24:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 24:19–21, o povo ouve Zacarias e se volta ao Senhor.",
+      "verseRef": "2 Crônicas 24:19–21",
+      "correctOptionId": "false",
+      "evidenceSpan": "eles não ouviram",
+      "feedbackCorrect": "Não ouviram os profetas e apedrejaram Zacarias.",
+      "feedbackWrong": {
+        "true": "24:19 diz que não ouviram; 24:21 registra o apedrejamento."
+      },
+      "hint": "Compare o envio dos profetas com a resposta.",
+      "learningObjective": "Compreender a rejeição da palavra.",
+      "evidence": [
+        "2 Crônicas 24:19–21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 24:19, toque a palavra que marca o contraste com o abandono.",
+      "verseRef": "2 Crônicas 24:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "profetas"
+        },
+        {
+          "id": "c",
+          "text": "Si"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, o SENHOR enviou profetas",
+      "feedbackCorrect": "Porém introduz o envio misericordioso de profetas.",
+      "feedbackWrong": {
+        "b": "Os profetas são enviados; o contraste abre com Porém.",
+        "c": "Si é o alvo do retorno."
+      },
+      "hint": "Procure a primeira palavra.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Crônicas 24:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 24:24 se relaciona com 24:18?",
+      "verseRef": "2 Crônicas 24:18–24",
+      "options": [
+        {
+          "id": "a",
+          "text": "O abandono do Senhor explica a vitória dos poucos sírios"
+        },
+        {
+          "id": "b",
+          "text": "Os sírios vencem apesar da fidelidade de Judá"
+        },
+        {
+          "id": "c",
+          "text": "Joás é recompensado por ouvir Zacarias"
+        },
+        {
+          "id": "d",
+          "text": "A ira divina é anulada pela aliança com Damasco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois estes abandonaram o Senhor, Deus de seus pais",
+      "feedbackCorrect": "Poucos sírios vencem porque Judá abandonou o Senhor.",
+      "feedbackWrong": {
+        "b": "Judá não estava fiel.",
+        "c": "Joás mandou matar Zacarias.",
+        "d": "Os sírios executam juízos de Deus."
+      },
+      "hint": "Veja o pois de 24:24.",
+      "learningObjective": "Relacionar abandono e derrota.",
+      "evidence": [
+        "2 Crônicas 24:18–24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 24:17–25?",
+      "verseRef": "2 Crônicas 24:17–25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joás abandona a casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Zacarias denuncia e é morto"
+        },
+        {
+          "id": "c",
+          "text": "Sírios julgam e Joás morre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "executaram os juízos de Deus contra Joás",
+      "feedbackCorrect": "Abandono, assassinato e juízo.",
+      "feedbackWrong": {
+        "default": "O juízo fecha o arco."
+      },
+      "hint": "Comece após a morte de Joiada.",
+      "learningObjective": "Compreender o arco da cena.",
+      "evidence": [
+        "2 Crônicas 24:17–25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 24:24, os sírios executaram os ___ de Deus contra Joás.",
+      "verseRef": "2 Crônicas 24:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "juízos"
+        },
+        {
+          "id": "b",
+          "text": "louvores"
+        },
+        {
+          "id": "c",
+          "text": "festas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "executaram os juízos de Deus contra Joás",
+      "feedbackCorrect": "A derrota é juízo divino, não acaso.",
+      "feedbackWrong": {
+        "b": "O texto fala de juízos.",
+        "c": "Não são festas; são juízos."
+      },
+      "hint": "Veja o que os sírios executaram.",
+      "learningObjective": "Lembrar a palavra do juízo.",
+      "evidence": [
+        "2 Crônicas 24:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 24:22 a Salmos 106:13?",
+      "verseRef": "2 Crônicas 24:22",
+      "passageA": {
+        "ref": "2 Crônicas 24:22"
+      },
+      "passageB": {
+        "ref": "Salmos 106:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Esquecimento das obras de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Memória fiel a Joiada"
+        },
+        {
+          "id": "c",
+          "text": "Vitória sem arrependimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não se lembrou da bondade",
+      "feedbackCorrect": "Nos dois textos, esquecer a bondade de Deus (e de seus servos) precede a queda.",
+      "feedbackWrong": {
+        "b": "Joás não lembrou.",
+        "c": "Há juízo, não vitória fiel."
+      },
+      "hint": "Compare o esquecimento.",
+      "learningObjective": "Relacionar o esquecimento ao salmo.",
+      "evidence": [
+        "2 Crônicas 24:22",
+        "Salmos 106:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 24:17–25 ensina que matar o mensageiro cancela o juízo anunciado.",
+      "verseRef": "2 Crônicas 24:21–24",
+      "correctOptionId": "false",
+      "evidenceSpan": "os sírios executaram os juízos de Deus contra Joás",
+      "feedbackCorrect": "A morte de Zacarias não impede o juízo; os sírios o executam.",
+      "feedbackWrong": {
+        "true": "24:24 mostra juízo após o assassinato."
+      },
+      "hint": "Veja o que acontece depois do apedrejamento.",
+      "learningObjective": "Interpretar juízo após rejeitar a palavra.",
+      "evidence": [
+        "2 Crônicas 24:21–24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 24:20, toque o trecho que sustenta a leitura de abandono mútuo.",
+      "verseRef": "2 Crônicas 24:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele os deixará"
+        },
+        {
+          "id": "b",
+          "text": "Zacarias"
+        },
+        {
+          "id": "c",
+          "text": "mandamentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se deixaram o Senhor, também Ele os deixará",
+      "feedbackCorrect": "Deixar o Senhor traz a reciprocidade do abandono divino.",
+      "feedbackWrong": {
+        "b": "Zacarias é o mensageiro.",
+        "c": "Os mandamentos são o que transgridem."
+      },
+      "hint": "Procure a consequência de deixar o Senhor.",
+      "learningObjective": "Sustentar o abandono mútuo.",
+      "evidence": [
+        "2 Crônicas 24:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 24:17–22 sustenta?",
+      "verseRef": "2 Crônicas 24:17–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esquecer quem formou leva a rejeitar a palavra e à violência"
+        },
+        {
+          "id": "b",
+          "text": "Joás permanece fiel após a morte de Joiada"
+        },
+        {
+          "id": "c",
+          "text": "Os príncipes restauram o culto puro"
+        },
+        {
+          "id": "d",
+          "text": "Zacarias apoia a idolatria dos príncipes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não se lembrou da bondade que Joiada, pai de Zacarias, lhe havia mostrado",
+      "feedbackCorrect": "Esquecimento, idolatria e assassinato do profeta formam um só caminho.",
+      "feedbackWrong": {
+        "b": "Ele abandona a casa do Senhor.",
+        "c": "Os príncipes levam à idolatria.",
+        "d": "Zacarias denuncia a transgressão."
+      },
+      "hint": "Una 24:18 e 24:22.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Crônicas 24:17–22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do sangue do justo que começa em 2 Crônicas 24:21?",
+      "verseRef": "2 Crônicas 24:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zacarias é apedrejado no pátio"
+        },
+        {
+          "id": "b",
+          "text": "Jesus lembra o sangue de Zacarias"
+        },
+        {
+          "id": "c",
+          "text": "Deus julga o seu povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o apedrejaram com pedras, a mando do rei",
+      "feedbackCorrect": "Do assassinato em Judá à memória de Jesus e ao juízo de Deus.",
+      "feedbackWrong": {
+        "default": "Siga Crônicas, Mateus e Hebreus."
+      },
+      "hint": "Comece pela morte de Zacarias.",
+      "learningObjective": "Ver o juízo no fio bíblico.",
+      "evidence": [
+        "2 Crônicas 24:21",
+        "Mateus 23:35",
+        "Hebreus 10:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 24:22, Joás ___ seu filho.",
+      "verseRef": "2 Crônicas 24:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "matou"
+        },
+        {
+          "id": "b",
+          "text": "ungiu"
+        },
+        {
+          "id": "c",
+          "text": "libertou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "matou seu filho",
+      "feedbackCorrect": "O rei mata o filho de quem o formou.",
+      "feedbackWrong": {
+        "b": "O texto diz matou, não ungiu.",
+        "c": "Não libertou; matou."
+      },
+      "hint": "Veja a ação final contra o filho de Joiada.",
+      "learningObjective": "Lembrar o verbo da violência.",
+      "evidence": [
+        "2 Crônicas 24:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 24:21 a Mateus 23:35?",
+      "verseRef": "2 Crônicas 24:21",
+      "passageA": {
+        "ref": "2 Crônicas 24:21"
+      },
+      "passageB": {
+        "ref": "Mateus 23:35"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue de Zacarias"
+        },
+        {
+          "id": "b",
+          "text": "Coroação de Joás"
+        },
+        {
+          "id": "c",
+          "text": "Vitória síria sem culpa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o apedrejaram com pedras, a mando do rei",
+      "feedbackCorrect": "Jesus lembra o sangue de Zacarias derramado entre o templo e o altar.",
+      "feedbackWrong": {
+        "b": "Aqui é morte, não coroação.",
+        "c": "O sangue clama; não absolve Joás."
+      },
+      "hint": "Compare o destino de Zacarias.",
+      "learningObjective": "Ligar Crônicas a Mateus.",
+      "evidence": [
+        "2 Crônicas 24:21",
+        "Mateus 23:35"
+      ]
+    }
+  ]
+}

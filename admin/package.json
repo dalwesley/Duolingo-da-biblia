@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "validate:bank": "node scripts/validate_bank.mjs",
     "mark:desbravadores": "node scripts/mark_desbravadores.mjs",
+    "mark:group-pilots": "node scripts/mark_group_pilots.mjs",
     "audit:rankings": "node scripts/audit_rankings.mjs",
     "audit:rankings:fix": "node scripts/audit_rankings.mjs --fix",
     "test:rankings": "node --test scripts/_ranking_mirror.test.mjs",

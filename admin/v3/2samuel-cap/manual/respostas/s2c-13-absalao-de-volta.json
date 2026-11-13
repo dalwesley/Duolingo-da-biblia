@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 14:21–33",
+    "passages": [
+      {
+        "ref": "2 Samuel 14:21–33"
+      }
+    ],
+    "context": "Joabe traz Absalão a Jerusalém, mas o rei não o vê. Após dois anos e o fogo no campo, há um beijo sem cura plena.",
+    "keyword": "face",
+    "keywordGloss": "Absalão volta, porém não vê a face do rei por dois anos.",
+    "focusQuestion": "Há alguém de volta perto de você sem verdadeiro encontro?",
+    "reflectionPrompts": [
+      "Volta sem ver a face",
+      "Dois anos em Jerusalém",
+      "Beijo do rei"
+    ],
+    "facts": [
+      {
+        "text": "Davi manda Joabe trazer Absalão.",
+        "evidenceRef": "2 Samuel 14:21",
+        "evidenceSpan": "traze de volta o jovem Absalão"
+      },
+      {
+        "text": "Joabe trouxe Absalão a Jerusalém.",
+        "evidenceRef": "2 Samuel 14:23",
+        "evidenceSpan": "trouxe Absalão a Jerusalém"
+      },
+      {
+        "text": "Absalão não viu a face do rei.",
+        "evidenceRef": "2 Samuel 14:24",
+        "evidenceSpan": "não vejas a minha face"
+      },
+      {
+        "text": "Ficou dois anos em Jerusalém sem ver o rei.",
+        "evidenceRef": "2 Samuel 14:28",
+        "evidenceSpan": "dois anos completos em Jerusalém e não viu a presença do rei"
+      },
+      {
+        "text": "Absalão manda pôr fogo no campo de Joabe.",
+        "evidenceRef": "2 Samuel 14:30",
+        "evidenceSpan": "ponham fogo"
+      },
+      {
+        "text": "O rei beijou Absalão.",
+        "evidenceRef": "2 Samuel 14:33",
+        "evidenceSpan": "o rei o beijou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "face",
+        "gloss": "Presença do rei negada a Absalão."
+      },
+      {
+        "term": "Gesur",
+        "gloss": "Lugar de onde Absalão é trazido."
+      },
+      {
+        "term": "beijou",
+        "gloss": "Gesto final sem resolver a ferida."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de trazer Absalão",
+        "evidenceRef": "2 Samuel 14:21–23"
+      },
+      {
+        "label": "Volta sem ver a face",
+        "evidenceRef": "2 Samuel 14:24–28"
+      },
+      {
+        "label": "Fogo no campo de Joabe",
+        "evidenceRef": "2 Samuel 14:29–32"
+      },
+      {
+        "label": "Encontro e beijo do rei",
+        "evidenceRef": "2 Samuel 14:33"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Assim Absalão volta e não vê a face.",
+        "marker": "Assim",
+        "evidenceRef": "2 Samuel 14:24"
+      },
+      {
+        "kind": "contraste",
+        "text": "Chama Joabe; porém Joabe não quis vir.",
+        "marker": "porém",
+        "evidenceRef": "2 Samuel 14:29"
+      },
+      {
+        "kind": "sequência",
+        "text": "Então Joabe entra e Absalão é chamado.",
+        "marker": "Então",
+        "evidenceRef": "2 Samuel 14:33"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 15:20",
+        "bridge": "Encontro e beijo do pai"
+      },
+      {
+        "ref": "2 Samuel 13:37–38",
+        "bridge": "Fuga a Gesur"
+      },
+      {
+        "ref": "Provérbios 28:13",
+        "bridge": "Encobrir o pecado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A volta de Absalão já é reconciliação plena.",
+        "why": "Ele não vê a face do rei por dois anos."
+      },
+      {
+        "text": "Joabe ignora o pedido do rei.",
+        "why": "Ele traz Absalão conforme a ordem."
+      },
+      {
+        "text": "O beijo resolve toda a ambição.",
+        "why": "O texto mostra volta sem encontro verdadeiro antes."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 14:24, Absalão pôde ver a face do rei?",
+    "centralInsight": "Voltar sem verdadeiro encontro deixa feridas abertas e ambição crescendo."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 14:24, Absalão voltou para casa e não viu a face do rei.",
+      "verseRef": "2 Samuel 14:24",
+      "correctOptionId": "true",
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Há volta sem encontro.",
+      "feedbackWrong": {
+        "false": "O verso nega a face."
+      },
+      "hint": "Veja a ordem.",
+      "learningObjective": "Observar a distância.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 14:23, toque de onde Joabe trouxe Absalão.",
+      "verseRef": "2 Samuel 14:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantou"
+        },
+        {
+          "id": "b",
+          "text": "Joabe"
+        },
+        {
+          "id": "c",
+          "text": "Gesur"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Joabe",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar Gesur.",
+      "evidence": [
+        "2 Samuel 14:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 14:28, quanto tempo Absalão ficou sem ver o rei?",
+      "verseRef": "2 Samuel 14:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dois anos completos"
+        },
+        {
+          "id": "b",
+          "text": "Sete dias"
+        },
+        {
+          "id": "c",
+          "text": "Três meses"
+        },
+        {
+          "id": "d",
+          "text": "Quarenta anos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dois anos completos em Jerusalém",
+      "feedbackCorrect": "Dois anos.",
+      "feedbackWrong": {
+        "b": "Não é sete dias.",
+        "c": "Não é três meses.",
+        "d": "Não é quarenta."
+      },
+      "hint": "Leia o tempo.",
+      "learningObjective": "Reconhecer os dois anos.",
+      "evidence": [
+        "2 Samuel 14:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 14:24 na ordem do texto.",
+      "verseRef": "2 Samuel 14:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retorna para a tua casa"
+        },
+        {
+          "id": "b",
+          "text": "e não vejas a minha face"
+        },
+        {
+          "id": "c",
+          "text": "Absalão voltou para sua casa e não viu a face do rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Ordem e cumprimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo retorno."
+      },
+      "hint": "O que é negado?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 14:21, complete: traze de volta o ___ Absalão.",
+      "verseRef": "2 Samuel 14:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "jovem"
+        },
+        {
+          "id": "b",
+          "text": "velho"
+        },
+        {
+          "id": "c",
+          "text": "servo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o jovem Absalão",
+      "feedbackCorrect": "Jovem.",
+      "feedbackWrong": {
+        "b": "Não é velho.",
+        "c": "Não é servo."
+      },
+      "hint": "Como o chama?",
+      "learningObjective": "Lembrar jovem.",
+      "evidence": [
+        "2 Samuel 14:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 14:24 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 14:24",
+      "passageA": {
+        "ref": "2 Samuel 14:24"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Absalão volta sem verdadeiro encontro com o rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Volta sem ver a face"
+        },
+        {
+          "id": "b",
+          "text": "Abraço imediato"
+        },
+        {
+          "id": "c",
+          "text": "Exílio permanente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Há distância.",
+      "feedbackWrong": {
+        "b": "Há distância.",
+        "c": "Ele volta à cidade."
+      },
+      "hint": "O que é negado?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 14:29, Joabe veio de imediato quando Absalão o chamou.",
+      "verseRef": "2 Samuel 14:29",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém, Joabe não quis vir",
+      "feedbackCorrect": "O porém marca a recusa.",
+      "feedbackWrong": {
+        "true": "Leia o porém."
+      },
+      "hint": "Veja a resposta.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "2 Samuel 14:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 14:29, toque o marcador de contraste.",
+      "verseRef": "2 Samuel 14:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "mandou"
+        },
+        {
+          "id": "b",
+          "text": "Absalão"
+        },
+        {
+          "id": "c",
+          "text": "chamar"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Absalão",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o porém.",
+      "evidence": [
+        "2 Samuel 14:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 14:24 faz?",
+      "verseRef": "2 Samuel 14:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Volta à casa sem ver a face do rei"
+        },
+        {
+          "id": "b",
+          "text": "Volta com trono garantido"
+        },
+        {
+          "id": "c",
+          "text": "Exílio forçado a Gesur"
+        },
+        {
+          "id": "d",
+          "text": "Silêncio total de Joabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Resultado da ordem.",
+      "feedbackWrong": {
+        "b": "Há distância.",
+        "c": "Ele já voltou.",
+        "d": "Joabe trouxe."
+      },
+      "hint": "Leia a ordem.",
+      "learningObjective": "Compreender a distância.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 14:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem de trazer Absalão"
+        },
+        {
+          "id": "b",
+          "text": "Volta sem ver a face"
+        },
+        {
+          "id": "c",
+          "text": "Encontro e beijo do rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "traze de volta o jovem Absalão",
+      "feedbackCorrect": "Ordem, distância e beijo.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem."
+      },
+      "hint": "O que fecha?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 14:21",
+        "2 Samuel 14:33"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 14:24, complete: não vejas a minha ___.",
+      "verseRef": "2 Samuel 14:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "face"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "espada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Face.",
+      "feedbackWrong": {
+        "b": "Não é casa.",
+        "c": "Não é espada."
+      },
+      "hint": "O que é negado?",
+      "learningObjective": "Lembrar face.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 14:23 a 2 Samuel 13:37–38?",
+      "verseRef": "2 Samuel 14:23",
+      "passageA": {
+        "ref": "2 Samuel 14:23"
+      },
+      "passageB": {
+        "ref": "2 Samuel 13:37–38"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fuga a Gesur"
+        },
+        {
+          "id": "b",
+          "text": "Vitória em Gesur"
+        },
+        {
+          "id": "c",
+          "text": "Unção em Gesur"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi a Gesur e trouxe Absalão",
+      "feedbackCorrect": "Volta do exílio.",
+      "feedbackWrong": {
+        "b": "Há Gesur.",
+        "c": "Há Absalão."
+      },
+      "hint": "Compare Gesur.",
+      "learningObjective": "Ligar ao exílio.",
+      "evidence": [
+        "2 Samuel 14:23",
+        "2 Samuel 13:37–38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 14:21–33, voltar sem encontro verdadeiro deixa ferida e ambição.",
+      "verseRef": "2 Samuel 14:28",
+      "correctOptionId": "true",
+      "evidenceSpan": "não viu a presença do rei",
+      "feedbackCorrect": "Dois anos sem face.",
+      "feedbackWrong": {
+        "false": "Há distância longa."
+      },
+      "hint": "Veja o tempo.",
+      "learningObjective": "Avaliar a leitura.",
+      "evidence": [
+        "2 Samuel 14:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 14:30, toque o que Absalão manda pôr no campo.",
+      "verseRef": "2 Samuel 14:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "servos"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "Vejam"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar fogo.",
+      "evidence": [
+        "2 Samuel 14:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une volta, distância e beijo?",
+      "verseRef": "2 Samuel 14:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "Presença física sem cura plena da ferida"
+        },
+        {
+          "id": "b",
+          "text": "Reconciliação completa desde o dia um"
+        },
+        {
+          "id": "c",
+          "text": "Absalão nunca volta"
+        },
+        {
+          "id": "d",
+          "text": "Joabe impede o beijo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei o beijou",
+      "feedbackCorrect": "Beijo após distância.",
+      "feedbackWrong": {
+        "b": "Houve dois anos.",
+        "c": "Ele volta.",
+        "d": "Há beijo."
+      },
+      "hint": "Una distância e beijo.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 14:33"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da volta incompleta.",
+      "verseRef": "2 Samuel 14:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Volta a Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Anos sem ver a face"
+        },
+        {
+          "id": "c",
+          "text": "Beijo sem cura plena"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não vejas a minha face",
+      "feedbackCorrect": "Volta, distância e beijo.",
+      "feedbackWrong": {
+        "default": "Comece pela volta."
+      },
+      "hint": "O que fecha?",
+      "learningObjective": "Encadear a volta.",
+      "evidence": [
+        "2 Samuel 14:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 14:33, complete: o rei o ___.",
+      "verseRef": "2 Samuel 14:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "beijou"
+        },
+        {
+          "id": "b",
+          "text": "expulsou"
+        },
+        {
+          "id": "c",
+          "text": "matou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei o beijou",
+      "feedbackCorrect": "Beijou.",
+      "feedbackWrong": {
+        "b": "Não é expulsou.",
+        "c": "Não é matou."
+      },
+      "hint": "O que o rei faz?",
+      "learningObjective": "Lembrar beijou.",
+      "evidence": [
+        "2 Samuel 14:33"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 14:33 a Lucas 15:20?",
+      "verseRef": "2 Samuel 14:33",
+      "passageA": {
+        "ref": "2 Samuel 14:33"
+      },
+      "passageB": {
+        "ref": "Lucas 15:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Encontro e beijo do pai"
+        },
+        {
+          "id": "b",
+          "text": "Rejeição definitiva"
+        },
+        {
+          "id": "c",
+          "text": "Exílio sem volta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei o beijou",
+      "feedbackCorrect": "Beijo de encontro.",
+      "feedbackWrong": {
+        "b": "Há beijo.",
+        "c": "Há encontro."
+      },
+      "hint": "Compare o beijo.",
+      "learningObjective": "Ligar ao encontro.",
+      "evidence": [
+        "2 Samuel 14:33",
+        "Lucas 15:20"
+      ]
+    }
+  ]
+}

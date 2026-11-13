@@ -1,0 +1,80 @@
+{
+  "slug": "mateus-cap",
+  "prefix": "mtc",
+  "book": "Mateus",
+  "chapters": 28,
+  "title": "Mateus",
+  "description": "Mateus capítulo a capítulo: o Rei prometido e o Reino que ele anuncia.",
+  "icon": "👑",
+  "color": "#B8860B",
+  "order": 41,
+  "realm": "novo-testamento",
+  "category": "evangelhos",
+  "avoidTrails": ["mateus", "evangelhos"],
+  "modules": [
+    {
+      "title": "O Rei chega · cap. 1–4",
+      "scenes": [
+        { "ref": "Mateus 1:1–6", "title": "A família do Rei", "intro": "Mateus abre com uma lista de nomes. Nela estão Abraão, Davi e mulheres que ninguém esperaria ver ali.", "insight": "Deus cumpre a promessa a Abraão e Davi por meio de uma família cheia de histórias quebradas.", "objective": "A promessa chega por uma família real" },
+        { "ref": "Mateus 2:1–12", "title": "Os magos e a estrela", "intro": "Estrangeiros vêm do Oriente procurando o rei que nasceu. Em Jerusalém, o rei Herodes se perturba.", "insight": "Quem vem de longe adora o Rei, enquanto quem estava perto se perturba com ele.", "objective": "Adorar o Rei que nasceu" },
+        { "ref": "Mateus 3:1–12", "title": "A voz no deserto", "intro": "João Batista prega no deserto: arrependam-se, porque o Reino dos céus está próximo.", "insight": "Preparar o caminho do Rei é mudar de vida, não só ter a família certa.", "objective": "Arrependimento que dá fruto" },
+        { "ref": "Mateus 4:18–25", "title": "Pescadores de homens", "intro": "À beira do mar, Jesus chama pescadores. Eles deixam as redes e o seguem.", "insight": "Jesus chama gente comum, e o chamado muda o rumo de toda a vida.", "objective": "Seguir quando Jesus chama" }
+      ],
+      "boss": { "title": "Travessia: O Rei chega", "intro": "Revise a família do Rei, os magos, a voz no deserto e o chamado dos pescadores.", "insight": "O Rei prometido chega e chama a segui-lo" }
+    },
+    {
+      "title": "O Reino ensinado · cap. 5–9",
+      "scenes": [
+        { "ref": "Mateus 5:43–48", "title": "Amem os inimigos", "intro": "No monte, Jesus vai além do que todos ouviam: amar até quem nos persegue.", "insight": "Os filhos do Pai amam como ele ama: até quem não merece.", "objective": "O amor que vai além" },
+        { "ref": "Mateus 6:25–34", "title": "Não andem ansiosos", "intro": "Jesus aponta para as aves do céu e os lírios do campo e fala da preocupação de cada dia.", "insight": "Quem busca primeiro o Reino pode descansar no cuidado do Pai.", "objective": "Confiar no cuidado do Pai" },
+        { "ref": "Mateus 7:24–29", "title": "A casa na rocha", "intro": "Jesus termina o sermão com dois construtores, a mesma tempestade e dois finais diferentes.", "insight": "Ouvir Jesus e praticar o que ele diz é construir sobre a rocha.", "objective": "Ouvir e praticar" },
+        { "ref": "Mateus 8:5–13", "title": "A fé do centurião", "intro": "Um oficial romano pede pela cura do seu servo e diz que basta Jesus falar uma palavra.", "insight": "Jesus se admira com a fé de quem confia que a palavra dele basta.", "objective": "Fé na palavra de Jesus" },
+        { "ref": "Mateus 9:9–13", "title": "O chamado de Mateus", "intro": "Jesus chama um cobrador de impostos e depois come com pecadores. Os fariseus reclamam.", "insight": "Jesus veio chamar pecadores, e ele prefere misericórdia a aparência.", "objective": "Misericórdia, não aparência" }
+      ],
+      "boss": { "title": "Travessia: O Reino ensinado", "intro": "Revise o amor aos inimigos, a ansiedade, a casa na rocha, o centurião e o chamado de Mateus.", "insight": "O Reino muda o jeito de amar, confiar e obedecer" }
+    },
+    {
+      "title": "O Reino cresce · cap. 10–14",
+      "scenes": [
+        { "ref": "Mateus 10:26–31", "title": "Não temam", "intro": "Ao enviar os doze, Jesus fala de perseguição e de pardais que não caem sem o Pai saber.", "insight": "Quem é enviado por Jesus não precisa temer: até os cabelos da cabeça estão contados.", "objective": "Coragem no envio" },
+        { "ref": "Mateus 11:25–30", "title": "Venham a mim", "intro": "Jesus louva o Pai e faz um convite a todos os cansados e sobrecarregados.", "insight": "Jesus oferece descanso a quem está cansado, e o jugo dele é suave.", "objective": "Descanso em Jesus" },
+        { "ref": "Mateus 12:46–50", "title": "A família de Jesus", "intro": "A mãe e os irmãos de Jesus o procuram, e ele aponta para os discípulos.", "insight": "Quem faz a vontade do Pai entra na família de Jesus.", "objective": "Família pela vontade do Pai" },
+        { "ref": "Mateus 13:44–50", "title": "O tesouro e a pérola", "intro": "Jesus conta parábolas curtas sobre um tesouro escondido, uma pérola e uma rede.", "insight": "O Reino vale mais que tudo, e quem o encontra deixa tudo com alegria.", "objective": "O valor do Reino" },
+        { "ref": "Mateus 14:22–33", "title": "Pedro sobre as águas", "intro": "Jesus anda sobre o mar, e Pedro pede para ir até ele.", "insight": "Quando o medo afunda a fé, Jesus estende a mão e segura.", "objective": "Olhar para Jesus no vento" }
+      ],
+      "boss": { "title": "Travessia: O Reino cresce", "intro": "Revise o envio sem medo, o descanso, a família de Jesus, o tesouro e Pedro sobre as águas.", "insight": "O Reino cresce em quem confia em Jesus" }
+    },
+    {
+      "title": "Quem é Jesus? · cap. 15–20",
+      "scenes": [
+        { "ref": "Mateus 15:21–28", "title": "A fé da mulher cananeia", "intro": "Uma mulher estrangeira insiste com Jesus pela filha, mesmo diante do silêncio dele.", "insight": "A fé humilde e insistente encontra em Jesus mais do que migalhas.", "objective": "Fé que persiste" },
+        { "ref": "Mateus 16:13–20", "title": "Tu és o Cristo", "intro": "Jesus pergunta aos discípulos quem as pessoas dizem que ele é, e depois: e vocês?", "insight": "Saber quem Jesus é vem do Pai, e sobre essa confissão ele edifica a igreja.", "objective": "Confessar quem Jesus é" },
+        { "ref": "Mateus 17:1–8", "title": "No alto monte", "intro": "Três discípulos veem Jesus transfigurado, e a voz do Pai fala da nuvem.", "insight": "No fim da visão fica só Jesus, e é ele que o Pai manda ouvir.", "objective": "Ouvir o Filho amado" },
+        { "ref": "Mateus 18:21–30", "title": "Perdoar setenta vezes sete", "intro": "Pedro pergunta quantas vezes deve perdoar, e Jesus conta a história de um servo perdoado.", "insight": "Quem foi perdoado de uma dívida enorme aprende a perdoar sem contar.", "objective": "Perdoar como fomos perdoados" },
+        { "ref": "Mateus 19:16–26", "title": "O jovem rico", "intro": "Um jovem pergunta o que precisa fazer para ter a vida eterna e vai embora triste.", "insight": "O que é impossível para os homens é possível para Deus, inclusive soltar o coração das riquezas.", "objective": "O que prende o coração" },
+        { "ref": "Mateus 20:8–16", "title": "Os trabalhadores da vinha", "intro": "No fim do dia, o dono da vinha paga a todos o mesmo salário, e os primeiros reclamam.", "insight": "A graça do Reino não segue a conta do mérito: Deus é bom com todos.", "objective": "A bondade que não se mede" }
+      ],
+      "boss": { "title": "Travessia: Quem é Jesus?", "intro": "Revise a mulher cananeia, a confissão de Pedro, o monte, o perdão, o jovem rico e a vinha.", "insight": "Reconhecer Jesus muda a fé, o perdão e o coração" }
+    },
+    {
+      "title": "O Rei em Jerusalém · cap. 21–25",
+      "scenes": [
+        { "ref": "Mateus 21:1–11", "title": "Eis o teu Rei", "intro": "Jesus entra em Jerusalém montado num jumentinho, como o profeta tinha anunciado.", "insight": "O Rei chega humilde, e a cidade inteira pergunta: quem é este?", "objective": "O Rei humilde" },
+        { "ref": "Mateus 22:34–40", "title": "O grande mandamento", "intro": "Um mestre da Lei testa Jesus com uma pergunta sobre o maior mandamento.", "insight": "Toda a Lei e os Profetas dependem de amar a Deus e ao próximo.", "objective": "O centro da Lei" },
+        { "ref": "Mateus 23:23–28", "title": "Por fora e por dentro", "intro": "Jesus denuncia mestres que cuidam do detalhe e esquecem o essencial.", "insight": "Deus olha o interior: justiça, misericórdia e fidelidade valem mais que a aparência.", "objective": "Limpar o interior" },
+        { "ref": "Mateus 24:36–44", "title": "Como nos dias de Noé", "intro": "Jesus fala do dia da sua volta, que ninguém sabe quando será.", "insight": "Como ninguém sabe o dia, o discípulo vive preparado todos os dias.", "objective": "Viver preparado" },
+        { "ref": "Mateus 25:34–40", "title": "Ao menor destes", "intro": "Na cena do juízo, o Rei diz que foi servido em quem teve fome, sede e estava preso.", "insight": "O que fazemos ao menor dos irmãos de Jesus, fazemos a ele.", "objective": "Servir Jesus nos pequenos" }
+      ],
+      "boss": { "title": "Travessia: O Rei em Jerusalém", "intro": "Revise a entrada do Rei, o grande mandamento, o interior, a vigilância e o menor destes.", "insight": "O Rei pede um coração que ama e serve" }
+    },
+    {
+      "title": "O Rei entregue e vivo · cap. 26–28",
+      "scenes": [
+        { "ref": "Mateus 26:26–30", "title": "O pão e o cálice", "intro": "Na última ceia, Jesus parte o pão e dá o cálice aos discípulos.", "insight": "Jesus entrega o corpo e o sangue da nova aliança para o perdão dos pecados.", "objective": "A ceia da nova aliança" },
+        { "ref": "Mateus 27:45–54", "title": "Verdadeiramente era o Filho", "intro": "Trevas cobrem a terra, Jesus clama e entrega o espírito, e a terra treme.", "insight": "Na morte de Jesus, o véu se rasga e até os soldados reconhecem o Filho de Deus.", "objective": "A cruz revela o Filho" },
+        { "ref": "Mateus 28:1–10", "title": "Ele ressuscitou", "intro": "As mulheres vão ao túmulo e encontram um anjo e uma notícia que muda tudo.", "insight": "O túmulo está vazio: Jesus ressuscitou, e o medo dá lugar à alegria.", "objective": "A alegria da ressurreição" }
+      ],
+      "boss": { "title": "Travessia: O Rei entregue e vivo", "intro": "Revise a ceia, a cruz e o túmulo vazio.", "insight": "O Rei se entrega e vence a morte" }
+    }
+  ]
+}

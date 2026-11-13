@@ -1,0 +1,296 @@
+{
+  "slug": "proverbios-cap",
+  "prefix": "pvc",
+  "book": "Provérbios",
+  "chapters": 31,
+  "title": "Provérbios",
+  "description": "Provérbios capítulo a capítulo: temor do Senhor e sabedoria para o dia a dia.",
+  "icon": "💎",
+  "color": "#E8922A",
+  "order": 22,
+  "realm": "antigo-testamento",
+  "category": "poeticos",
+  "avoidTrails": [
+    "proverbios"
+  ],
+  "modules": [
+    {
+      "title": "Convite da sabedoria · cap. 1–9",
+      "scenes": [
+        {
+          "ref": "Provérbios 1:20–33",
+          "title": "A sabedoria clama",
+          "intro": "A sabedoria grita nas ruas e ri da calamidade de quem recusou o conselho.",
+          "insight": "Quem rejeita o chamado da sabedoria colhe o fruto do próprio caminho.",
+          "objective": "Ouvir o chamado",
+          "chapters": "1"
+        },
+        {
+          "ref": "Provérbios 2:1–12",
+          "title": "Se buscares como a prata",
+          "intro": "Filho, se receberes as minhas palavras e buscares a sabedoria como a tesouros…",
+          "insight": "A sabedoria se acha quando se busca de verdade — e guarda dos caminhos tortos.",
+          "objective": "Buscar de verdade"
+        },
+        {
+          "ref": "Provérbios 3:1–12",
+          "title": "Confia no Senhor",
+          "intro": "Não te esqueças da lei; confia no Senhor de todo o coração e não te estribes no próprio entendimento.",
+          "insight": "Temor e confiança andam juntos: Deus endireita as veredas de quem nele se apoia.",
+          "objective": "Confiar de todo o coração"
+        },
+        {
+          "ref": "Provérbios 4:5–13",
+          "title": "Adquire a sabedoria",
+          "intro": "Adquire sabedoria, não a abandones; ela te guardará. O caminho dos justos brilha.",
+          "insight": "A sabedoria não é enfeite: é guarda, vida e luz no caminho.",
+          "objective": "Guardar a sabedoria",
+          "chapters": "4"
+        },
+        {
+          "ref": "Provérbios 5:1–14",
+          "title": "Águas da cisterna",
+          "intro": "Guarda-te da mulher estranha; bebe a água da tua cisterna e alegra-te com a mulher da tua mocidade.",
+          "insight": "Fidelidade protege; a sedução promete mel e deixa amargura no fim.",
+          "objective": "Fidelidade no desejo"
+        },
+        {
+          "ref": "Provérbios 6:6–19",
+          "title": "Vai ter com a formiga",
+          "intro": "Olha a formiga, preguiçoso. O Senhor odeia seis coisas — e a sétima é semear discórdia.",
+          "insight": "Diligência e coração íntegro: sabedoria se vê no trabalho e no que Deus odeia.",
+          "objective": "Diligência e integridade"
+        },
+        {
+          "ref": "Provérbios 7:1–10",
+          "title": "Guarda meus mandamentos",
+          "intro": "Guarda os mandamentos como a menina dos olhos; a sedução anda na rua ao entardecer.",
+          "insight": "A lei no coração é proteção quando a tentação passa na esquina.",
+          "objective": "Lei que protege"
+        },
+        {
+          "ref": "Provérbios 8:22–31",
+          "title": "O Senhor me possuiu",
+          "intro": "A sabedoria fala da sua origem antes das profundezas, ao lado de Deus na criação.",
+          "insight": "Antes da criação, a sabedoria estava com Deus — e ainda chama à vida.",
+          "objective": "Achar a vida"
+        },
+        {
+          "ref": "Provérbios 9:1–12",
+          "title": "A casa da sabedoria",
+          "intro": "A sabedoria edificou a casa, preparou o banquete e convida: deixai a loucura e vivei.",
+          "insight": "Há dois convites na cidade: o da sabedoria e o da loucura. Só um dá vida.",
+          "objective": "Escolher o banquete"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Convite da sabedoria",
+        "intro": "Revise o clamor, a busca, a confiança, a fidelidade e as duas casas.",
+        "insight": "A sabedoria clama: quem a acha acha a vida"
+      }
+    },
+    {
+      "title": "Provérbios de Salomão · cap. 10–16",
+      "scenes": [
+        {
+          "ref": "Provérbios 10:1–12",
+          "title": "Filho sábio e ódio",
+          "intro": "Filho sábio alegra o pai; o ódio suscita contendas, o amor cobre todas as transgressões.",
+          "insight": "A boca e o coração revelam o caminho: vida ou violência.",
+          "objective": "Amor que cobre",
+          "chapters": "10"
+        },
+        {
+          "ref": "Provérbios 11:1–11",
+          "title": "Balança falsa",
+          "intro": "Balança falsa é abominação; com a bênção dos retos a cidade se exalta.",
+          "insight": "Integridade no comércio e na fala constrói a cidade; a traição a derruba.",
+          "objective": "Integridade que edifica"
+        },
+        {
+          "ref": "Provérbios 12:13–22",
+          "title": "Lábios que salvam",
+          "intro": "O ímpio se enreda nas palavras; lábios mentirosos abomina o Senhor, os que lidam com a verdade agradam.",
+          "insight": "A verdade agrada a Deus; a mentira é armadilha para quem a fala.",
+          "objective": "Falar a verdade"
+        },
+        {
+          "ref": "Provérbios 13:1–12",
+          "title": "Ouvir a correção",
+          "intro": "O filho sábio ouve a correção; a esperança adiada enfraquece o coração.",
+          "insight": "Ouvidos abertos e desejo cumprido: sabedoria também é esperar bem.",
+          "objective": "Ouvir e esperar"
+        },
+        {
+          "ref": "Provérbios 14:20–31",
+          "title": "Misericórdia aos pobres",
+          "intro": "O pobre é odiado até do próximo; o que se compadece do pobre é feliz. A justiça exalta a nação.",
+          "insight": "Temor do Senhor e cuidado com o fraco sustentam a casa e o povo.",
+          "objective": "Misericórdia e justiça"
+        },
+        {
+          "ref": "Provérbios 15:1–9",
+          "title": "Resposta branda",
+          "intro": "A resposta branda desvia o furor; o Senhor longe dos ímpios, ouve a oração dos justos.",
+          "insight": "Tom e coração importam: brandura desarma, e Deus ouve o reto.",
+          "objective": "Brandura e oração"
+        },
+        {
+          "ref": "Provérbios 16:1–9",
+          "title": "O coração planeja",
+          "intro": "O coração do homem planeja, mas do Senhor vem a resposta. Ao homem pertencem os planos; do Senhor o direcionar.",
+          "insight": "Planeje com temor: Deus firma os passos de quem entrega o caminho.",
+          "objective": "Deus dirige os passos"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Provérbios de Salomão I",
+        "intro": "Revise o amor que cobre, a balança, a verdade, a correção, a misericórdia e os planos.",
+        "insight": "Sabedoria prática começa na boca, na balança e no temor"
+      }
+    },
+    {
+      "title": "Provérbios de Salomão · cap. 17–22",
+      "scenes": [
+        {
+          "ref": "Provérbios 17:1–9",
+          "title": "Melhor o bocado seco",
+          "intro": "Melhor o bocado seco com tranquilidade do que casa cheia com rixas. O amigo ama em todo o tempo.",
+          "insight": "Paz na mesa e lealdade na crise valem mais que banquete com briga.",
+          "objective": "Paz e amizade"
+        },
+        {
+          "ref": "Provérbios 18:10–21",
+          "title": "Torre forte e língua",
+          "intro": "O nome do Senhor é torre forte; a morte e a vida estão no poder da língua.",
+          "insight": "Refúgio em Deus e cuidado com a fala: a língua pode matar ou dar vida.",
+          "objective": "Língua e refúgio"
+        },
+        {
+          "ref": "Provérbios 19:11–23",
+          "title": "O temor do Senhor",
+          "intro": "O bom senso faz tardar a ira; o temor do Senhor conduz à vida e o saciado pousa sem mal.",
+          "insight": "Paciência, temor e contentamento guardam a vida melhor que a pressa.",
+          "objective": "Temor que dá vida"
+        },
+        {
+          "ref": "Provérbios 20:1–12",
+          "title": "O vinho e o rei",
+          "intro": "O vinho é escarnecedor; o rei sentado no trono julga. Ouvido que ouve e olho que vê — o Senhor fez ambos.",
+          "insight": "Autodomínio e justiça vêm de Deus, que fez ouvido e olho.",
+          "objective": "Autodomínio e juízo"
+        },
+        {
+          "ref": "Provérbios 21:1–8",
+          "title": "O coração do rei",
+          "intro": "Como ribeiros de águas é o coração do rei na mão do Senhor. Praticar justiça e juízo mais agrada do que sacrifício.",
+          "insight": "Deus governa até o coração poderoso; justiça pesa mais que ritual.",
+          "objective": "Justiça sobre ritual"
+        },
+        {
+          "ref": "Provérbios 22:1–12",
+          "title": "Bom nome e ricos",
+          "intro": "Mais vale o bom nome do que muitas riquezas; o rico e o pobre se encontram — o Senhor é Pai de ambos.",
+          "insight": "Nome e temor valem mais que ouro; Deus é Senhor de rico e pobre.",
+          "objective": "Nome e igualdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Provérbios de Salomão II",
+        "intro": "Revise a paz, a língua, o temor, o vinho, a justiça e o bom nome.",
+        "insight": "Vida e morte, rico e pobre: tudo sob o temor do Senhor"
+      }
+    },
+    {
+      "title": "Palavras dos sábios · cap. 23–27",
+      "scenes": [
+        {
+          "ref": "Provérbios 23:19–28",
+          "title": "Ouve, filho meu",
+          "intro": "Ouve e sê sábio; não estejas entre beberrões. A prostituta é cova profunda.",
+          "insight": "Companhias e desejos moldam o fim: sabedoria escolhe a mesa e o caminho.",
+          "objective": "Escolher companhia"
+        },
+        {
+          "ref": "Provérbios 24:10–20",
+          "title": "Se desfaleces",
+          "intro": "Se desfaleces no dia da angústia, estreita é a tua força. Livra os que são levados à morte.",
+          "insight": "Força se prova na crise; justiça se prova no resgate do fraco.",
+          "objective": "Força na angústia"
+        },
+        {
+          "ref": "Provérbios 25:11–22",
+          "title": "Maçãs de ouro",
+          "intro": "Como maçãs de ouro em salvas de prata, assim é a palavra dita a seu tempo. Se o inimigo tiver fome, dá-lhe pão.",
+          "insight": "Palavra no tempo certo e bem ao inimigo: sabedoria que desarma.",
+          "objective": "Palavra e bondade"
+        },
+        {
+          "ref": "Provérbios 26:4–12",
+          "title": "Não respondas ao tolo",
+          "intro": "Não respondas ao tolo segundo a sua estultícia — e responde, para que não seja sábio aos próprios olhos.",
+          "insight": "Há tempo de calar e tempo de responder: discernimento evita a armadilha do tolo.",
+          "objective": "Discernir a resposta"
+        },
+        {
+          "ref": "Provérbios 27:1–12",
+          "title": "Não te glories do dia",
+          "intro": "Não te glories do dia de amanhã. Melhor é a repreensão franca do que o amor encoberto. Fiel é o ferido do amigo.",
+          "insight": "Humildade sobre o futuro e ferida leal do amigo valem mais que beijo do inimigo.",
+          "objective": "Amigo que fere"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Palavras dos sábios",
+        "intro": "Revise as companhias, a força na angústia, a palavra a tempo e o amigo leal.",
+        "insight": "Sabedoria escolhe companhia, palavra e amigos fiéis"
+      }
+    },
+    {
+      "title": "Agur, Lemuel e a mulher virtuosa · cap. 28–31",
+      "scenes": [
+        {
+          "ref": "Provérbios 28:1–14",
+          "title": "O justo e o ímpio",
+          "intro": "O ímpio foge sem ninguém o perseguir; o que encobre as transgressões nunca prosperará; o que as confessa alcança misericórdia.",
+          "insight": "Coragem do justo e confissão do pecador: prosperidade começa na verdade diante de Deus.",
+          "objective": "Confessar e prosperar"
+        },
+        {
+          "ref": "Provérbios 29:1–11",
+          "title": "Quem endurece a cerviz",
+          "intro": "Quem endurece a cerviz será quebrado; quando os justos governam, o povo se alegra.",
+          "insight": "Pescoço duro e boca sem freio destroem; justiça no governo alegra o povo.",
+          "objective": "Cervera e governo"
+        },
+        {
+          "ref": "Provérbios 30:5–14",
+          "title": "Toda palavra de Deus",
+          "intro": "Toda palavra de Deus é pura; não acrescentes. Duas coisas peço: longe da mentira e da pobreza extrema e da riqueza.",
+          "insight": "A Escritura basta; o pedido sábio é pão e verdade, sem orgulho.",
+          "objective": "Palavra pura"
+        },
+        {
+          "ref": "Provérbios 31:10–21",
+          "title": "Mulher virtuosa",
+          "intro": "Mulher virtuosa quem a achará? O seu valor excede o de rubis; trabalha, sustenta e estende a mão ao pobre.",
+          "insight": "A força da sabedoria também se veste de diligência, cuidado e generosidade.",
+          "objective": "Força que serve"
+        },
+        {
+          "ref": "Provérbios 31:22–31",
+          "title": "Louvor às portas",
+          "intro": "A força e a dignidade são seus vestidos; abre a boca com sabedoria. Louvem-na as suas obras nas portas.",
+          "insight": "O temor do Senhor é o belo que permanece — e as obras falam nas portas da cidade.",
+          "objective": "Temor que permanece",
+          "chapters": "31"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Agur, Lemuel e a virtuosa",
+        "intro": "Revise a confissão, o governo, a palavra pura e a mulher virtuosa.",
+        "insight": "Do começo ao fim: temor do Senhor, verdade e obras que louvam"
+      }
+    }
+  ]
+}

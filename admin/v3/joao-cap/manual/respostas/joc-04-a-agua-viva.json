@@ -1,0 +1,493 @@
+{
+  "study": {
+    "passageRef": "João 4:10–15",
+    "passages": [
+      { "ref": "João 4:10–15" },
+      { "ref": "João 4:7–9" }
+    ],
+    "context": "Cansado da viagem, Jesus se senta junto ao poço de Jacó, em Sicar. Uma mulher samaritana chega para tirar água. Judeus e samaritanos não se relacionavam entre si.",
+    "keyword": "água viva",
+    "keywordGloss": "Água que Jesus oferece no lugar da água do poço, e que sacia de verdade.",
+    "focusQuestion": "Onde você tenta saciar uma sede que volta no dia seguinte?",
+    "reflectionPrompts": [
+      "O pedido no poço",
+      "A sede que volta",
+      "A fonte interior"
+    ],
+    "facts": [
+      {
+        "text": "Uma mulher samaritana veio tirar água.",
+        "evidenceRef": "João 4:7",
+        "evidenceSpan": "Veio uma mulher samaritana tirar água"
+      },
+      {
+        "text": "Os discípulos tinham ido à cidade para comprar alimentos.",
+        "evidenceRef": "João 4:8",
+        "evidenceSpan": "tinham ido à cidade para comprar alimentos"
+      },
+      {
+        "text": "Jesus diz que daria água viva.",
+        "evidenceRef": "João 4:10",
+        "evidenceSpan": "ele te daria água viva"
+      },
+      {
+        "text": "A mulher diz que Jesus não tem como tirar a água e que o poço é profundo.",
+        "evidenceRef": "João 4:11",
+        "evidenceSpan": "você não tem como tirá-la, e o poço é profundo"
+      },
+      {
+        "text": "Quem beber desta água tornará a ter sede.",
+        "evidenceRef": "João 4:13",
+        "evidenceSpan": "Quem beber desta água tornará a ter sede novamente"
+      },
+      {
+        "text": "A água que Jesus der será nele uma fonte para a vida eterna.",
+        "evidenceRef": "João 4:14",
+        "evidenceSpan": "será nele uma fonte a jorrar para a vida eterna"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "água viva",
+        "gloss": "A água que Jesus oferece, distinta da água do poço de Jacó."
+      },
+      {
+        "term": "fonte",
+        "gloss": "O que essa água se torna em quem bebe, jorrando para a vida eterna."
+      },
+      {
+        "term": "sede",
+        "gloss": "A necessidade que a água do poço não resolve de uma vez."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus pede de beber à samaritana",
+        "evidenceRef": "João 4:7"
+      },
+      {
+        "label": "Ela estranha o pedido de um judeu",
+        "evidenceRef": "João 4:9"
+      },
+      {
+        "label": "A oferta dele vira fonte interna",
+        "evidenceRef": "João 4:14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Jesus pede água à mulher porque os discípulos tinham ido comprar alimentos.",
+        "marker": "Porque",
+        "evidenceRef": "João 4:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "A água do poço faz a sede voltar, mas a água que Jesus dá não.",
+        "marker": "Mas",
+        "evidenceRef": "João 4:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "A água que Jesus dá se torna uma fonte que jorra para a vida eterna.",
+        "marker": null,
+        "evidenceRef": "João 4:14"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 55:1", "bridge": "Oferta aos sedentos" },
+      { "ref": "Jeremias 2:13", "bridge": "Manancial de águas vivas" },
+      { "ref": "João 7:38", "bridge": "Rios no interior" }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus só queria água do poço, e a conversa permanece nisso.",
+        "why": "Ele passa do pedido ao dom de Deus e à água viva, que se torna fonte."
+      },
+      {
+        "text": "A água viva é apenas a água do poço de Jacó, tirada de um lugar fundo.",
+        "why": "Jesus separa esta água, que deixa sede, da água que ele dá, que acaba com a sede."
+      },
+      {
+        "text": "A mulher já entende a vida eterna e pede essa fonte com clareza.",
+        "why": "Ela pede para não precisar voltar ao poço; ainda pensa na viagem diária."
+      }
+    ],
+    "centralInsight": "Jesus oferece uma água que mata a sede de verdade e vira fonte de vida.",
+    "anchorQuestion": "O que a água que Jesus dá se torna em quem bebe?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 4:7, a mulher samaritana pede água a Jesus.",
+      "verseRef": "João 4:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Dá-me de beber",
+      "feedbackCorrect": "Quem pede de beber é Jesus. A mulher veio tirar água do poço.",
+      "feedbackWrong": {
+        "true": "No versículo 7, Jesus é quem diz Dá-me de beber. Ela veio tirar água."
+      },
+      "hint": "Veja quem toma a palavra no fim do versículo.",
+      "learningObjective": "Observar quem pede água no encontro junto ao poço.",
+      "evidence": ["João 4:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 4:9, toque quem responde ao pedido de Jesus.",
+      "verseRef": "João 4:9",
+      "options": [
+        { "id": "a", "text": "mulher samaritana" },
+        { "id": "b", "text": "você judeu" },
+        { "id": "c", "text": "os judeus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse-lhe, então, a mulher samaritana",
+      "feedbackCorrect": "Quem toma a palavra e responde a Jesus é a mulher samaritana.",
+      "feedbackWrong": {
+        "b": "Você judeu descreve Jesus, não quem está falando.",
+        "c": "Os judeus surgem no parêntese, como grupo, não como quem fala."
+      },
+      "hint": "O versículo abre dizendo quem tomou a palavra.",
+      "learningObjective": "Identificar quem fala com Jesus junto ao poço.",
+      "evidence": ["João 4:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 4:10, o que Jesus diz que daria à mulher?",
+      "verseRef": "João 4:10",
+      "options": [
+        { "id": "a", "text": "Água viva, se ela reconhecesse o dom" },
+        { "id": "b", "text": "Água tirada com um balde do poço" },
+        { "id": "c", "text": "Alimentos que os discípulos foram comprar" },
+        { "id": "d", "text": "Um poço novo, maior que o de Jacó" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele te daria água viva",
+      "feedbackCorrect": "Jesus afirma que daria água viva a quem conhecesse o dom.",
+      "feedbackWrong": {
+        "b": "Tirar água do poço é a cena dela. Jesus fala de outra água.",
+        "c": "Os alimentos explicam a ausência dos discípulos, não o dom.",
+        "d": "Jesus não promete outro poço. Ele fala em dar água viva."
+      },
+      "hint": "Leia o que ele daria se ela lhe pedisse.",
+      "learningObjective": "Identificar o dom que Jesus diz que daria à mulher.",
+      "evidence": ["João 4:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 4:14 na ordem do texto.",
+      "verseRef": "João 4:14",
+      "options": [
+        { "id": "a", "text": "Mas aquele que beber da água que eu lhe der" },
+        { "id": "b", "text": "nunca mais terá sede" },
+        { "id": "c", "text": "será nele uma fonte a jorrar para a vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Mas aquele que beber da água que eu lhe der",
+      "feedbackCorrect": "A frase segue do contraste à sede que acaba e chega à fonte.",
+      "feedbackWrong": {
+        "default": "Comece pelo contraste, siga pela sede e termine na fonte."
+      },
+      "hint": "Siga a ordem em que as ideias surgem no versículo.",
+      "learningObjective": "Reconhecer a sequência da promessa em João 4:14.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 4:11, o que a mulher afirma sobre o poço?",
+      "verseRef": "João 4:11",
+      "options": [
+        { "id": "a", "text": "raso" },
+        { "id": "b", "text": "profundo" },
+        { "id": "c", "text": "seco" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o poço é profundo",
+      "feedbackCorrect": "Ela chama o poço de profundo ao perguntar de onde viria a água.",
+      "feedbackWrong": {
+        "a": "Raso não está no texto. Ela diz que o poço é profundo.",
+        "c": "Seco não aparece. A fala aponta um poço profundo."
+      },
+      "hint": "Veja o adjetivo logo depois de poço é.",
+      "learningObjective": "Lembrar como a mulher descreve o poço de Jacó.",
+      "evidence": ["João 4:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 4:10 comunica que se liga a este contexto?",
+      "verseRef": "João 4:10",
+      "passageA": { "ref": "João 4:10" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No poço, Jesus fala de um dom que a mulher ainda não conhece."
+      },
+      "options": [
+        { "id": "a", "text": "Mantimentos na cidade" },
+        { "id": "b", "text": "Dom ainda desconhecido" },
+        { "id": "c", "text": "Poço mais fundo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o dom de Deus",
+      "feedbackCorrect": "Jesus fala do dom de Deus, que a mulher ainda não conhece.",
+      "feedbackWrong": {
+        "a": "Os alimentos explicam a saída dos discípulos, não este dom.",
+        "c": "O poço fundo é a objeção dela, não o dom anunciado."
+      },
+      "hint": "Veja o que ela precisaria conhecer antes de pedir.",
+      "learningObjective": "Ligar o anúncio de Jesus ao dom que a mulher ainda ignora.",
+      "evidence": ["João 4:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 4:13–14, a água do poço e a água de Jesus saciam a sede do mesmo modo.",
+      "verseRef": "João 4:13–14",
+      "correctOptionId": "false",
+      "evidenceSpan": "nunca mais terá sede",
+      "feedbackCorrect": "As duas águas não se igualam: uma deixa sede, a outra não.",
+      "feedbackWrong": {
+        "true": "Quem bebe desta água torna a ter sede. A outra água acaba com ela."
+      },
+      "hint": "Compare o efeito de cada água sobre a sede.",
+      "learningObjective": "Compreender o contraste entre a água do poço e a água que Jesus dá.",
+      "evidence": ["João 4:13–14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 4:14, toque a palavra que marca o contraste com a água do poço.",
+      "verseRef": "João 4:14",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "sede" },
+        { "id": "c", "text": "jorrar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas aquele que beber",
+      "feedbackCorrect": "Mas abre o contraste entre a água do poço e a água de Jesus.",
+      "feedbackWrong": {
+        "b": "Sede é o assunto da frase, não a palavra que vira o sentido.",
+        "c": "Jorrar descreve a fonte, depois que o contraste já foi aberto."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste entre as duas águas.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que João 4:14 faz diante da água citada em João 4:13?",
+      "verseRef": "João 4:13–14",
+      "options": [
+        { "id": "a", "text": "Contrasta uma sede que volta com outra que acaba" },
+        { "id": "b", "text": "Repete o mesmo alívio para as duas bebidas" },
+        { "id": "c", "text": "Atribui a Jacó a fonte da vida eterna" },
+        { "id": "d", "text": "Explica a ida dos discípulos até a cidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas aquele que beber da água que eu lhe der",
+      "feedbackCorrect": "O versículo 14 contrapõe a sede que volta à água que permanece.",
+      "feedbackWrong": {
+        "b": "O texto não iguala as duas águas. Uma deixa sede; a outra, não.",
+        "c": "Jacó deu o poço. A fonte vem da água que Jesus promete.",
+        "d": "A ida à cidade está no versículo 8, fora deste contraste."
+      },
+      "hint": "Observe a primeira palavra do versículo 14.",
+      "learningObjective": "Relacionar a água do poço com a água que Jesus promete.",
+      "evidence": ["João 4:13–14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da cena de João 4:7 até João 4:14?",
+      "verseRef": "João 4:7",
+      "options": [
+        { "id": "a", "text": "Jesus pede de beber à samaritana" },
+        { "id": "b", "text": "Ela estranha o pedido de um judeu" },
+        { "id": "c", "text": "A oferta dele vira fonte interna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Veio uma mulher samaritana tirar água",
+      "feedbackCorrect": "O pedido abre a cena, a mulher estranha, e a oferta vira fonte.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido, passe pelo estranhamento e termine na oferta."
+      },
+      "hint": "O encontro começa com um pedido junto ao poço.",
+      "learningObjective": "Compreender os três movimentos do diálogo no poço.",
+      "evidence": ["João 4:7", "João 4:9", "João 4:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 4:14, o que ocorre com a sede de quem bebe a água de Jesus?",
+      "verseRef": "João 4:14",
+      "options": [
+        { "id": "a", "text": "sempre" },
+        { "id": "b", "text": "logo" },
+        { "id": "c", "text": "nunca" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "nunca mais terá sede",
+      "feedbackCorrect": "Quem bebe a água que Jesus dá nunca mais terá sede.",
+      "feedbackWrong": {
+        "a": "Sempre inverteria a promessa. O texto fala de sede que não volta.",
+        "b": "Logo indicaria espera curta. A promessa nega nova sede."
+      },
+      "hint": "Olhe o advérbio colocado antes de mais terá sede.",
+      "learningObjective": "Compreender o alcance da água que Jesus promete sobre a sede.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 4:10 a Isaías 55:1?",
+      "verseRef": "João 4:10",
+      "passageA": { "ref": "João 4:10" },
+      "passageB": { "ref": "Isaías 55:1" },
+      "options": [
+        { "id": "a", "text": "Oferta aos sedentos" },
+        { "id": "b", "text": "Superioridade sobre Jacó" },
+        { "id": "c", "text": "Ausência dos discípulos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele te daria água viva",
+      "feedbackCorrect": "Isaías chama os sedentos às águas. Jesus oferece água viva.",
+      "feedbackWrong": {
+        "b": "A comparação com Jacó está no versículo 12, não neste elo.",
+        "c": "A ausência dos discípulos explica o encontro, não o elo."
+      },
+      "hint": "Compare o que Jesus oferece com o chamado de Isaías.",
+      "learningObjective": "Relacionar a água viva ao convite de Isaías a quem tem sede.",
+      "evidence": ["João 4:10", "Isaías 55:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 4:15, a mulher pede água para não voltar ao poço.",
+      "verseRef": "João 4:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "nem precise vir aqui para buscá-la",
+      "feedbackCorrect": "Ela pede para não precisar voltar. O alvo ainda é o poço.",
+      "feedbackWrong": {
+        "false": "O pedido é não ter sede nem vir ali outra vez para buscar água."
+      },
+      "hint": "Leia a finalidade do pedido no fim do versículo.",
+      "learningObjective": "Reconhecer que o pedido da mulher ainda está ligado ao poço.",
+      "evidence": ["João 4:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 4:14, toque o que a água de Jesus se torna em quem bebe.",
+      "verseRef": "João 4:14",
+      "options": [
+        { "id": "a", "text": "uma fonte" },
+        { "id": "b", "text": "terá sede" },
+        { "id": "c", "text": "pelo contrário" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será nele uma fonte",
+      "feedbackCorrect": "A água que ele dá será nele uma fonte, não apenas um gole.",
+      "feedbackWrong": {
+        "b": "Terá sede diz o que acaba, não o que a água passa a ser.",
+        "c": "Pelo contrário marca a virada, não o que surge na pessoa."
+      },
+      "hint": "Procure a imagem que jorra para a vida eterna.",
+      "learningObjective": "Localizar no texto o que a água de Jesus se torna.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 4:14–15 sustenta?",
+      "verseRef": "João 4:14–15",
+      "options": [
+        { "id": "a", "text": "Jesus oferece água que vira fonte e sacia de verdade" },
+        { "id": "b", "text": "O diálogo fica só no pedido de água do poço" },
+        { "id": "c", "text": "Água viva significa a água funda do poço antigo" },
+        { "id": "d", "text": "A mulher já compreende a vida eterna com clareza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será nele uma fonte a jorrar para a vida eterna",
+      "feedbackCorrect": "Jesus promete fonte que sacia. O pedido dela ainda mira o poço.",
+      "feedbackWrong": {
+        "b": "Jesus deixa o pedido inicial e fala de água que vira fonte.",
+        "c": "Ele separa esta água, que deixa sede, da água que ele dá.",
+        "d": "Ela pede para não voltar ao poço, sem falar em vida eterna."
+      },
+      "hint": "Compare a promessa de Jesus com o que a mulher pede.",
+      "learningObjective": "Distinguir a promessa de Jesus da compreensão da mulher.",
+      "evidence": ["João 4:14–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica da promessa de Jesus em João 4:13–14?",
+      "verseRef": "João 4:13–14",
+      "options": [
+        { "id": "a", "text": "A água do poço faz a sede voltar" },
+        { "id": "b", "text": "Jesus promete água que não acaba" },
+        { "id": "c", "text": "Essa água se torna fonte de vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "será nele uma fonte a jorrar para a vida eterna",
+      "feedbackCorrect": "Primeiro a sede que volta, depois a água que fica e vira fonte.",
+      "feedbackWrong": {
+        "default": "Parta da água do poço, siga a promessa e termine na fonte."
+      },
+      "hint": "Comece pelo efeito da água que já está no poço.",
+      "learningObjective": "Acompanhar o argumento de Jesus sobre as duas águas.",
+      "evidence": ["João 4:13", "João 4:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 4:14, a água que Jesus dá se torna o quê dentro de quem bebe?",
+      "verseRef": "João 4:14",
+      "options": [
+        { "id": "a", "text": "nascente" },
+        { "id": "b", "text": "fonte" },
+        { "id": "c", "text": "corrente" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "uma fonte a jorrar",
+      "feedbackCorrect": "A água se torna nele uma fonte que jorra para a vida eterna.",
+      "feedbackWrong": {
+        "a": "Nascente é imagem próxima, mas a palavra do texto é fonte.",
+        "c": "Corrente não está na frase. O texto fala em fonte a jorrar."
+      },
+      "hint": "É a imagem que fica em quem bebe e jorra sem parar.",
+      "learningObjective": "Lembrar o termo que diz o que a água de Jesus se torna.",
+      "evidence": ["João 4:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 4:14 a João 7:38?",
+      "verseRef": "João 4:14",
+      "passageA": { "ref": "João 4:14" },
+      "passageB": { "ref": "João 7:38" },
+      "options": [
+        { "id": "a", "text": "Bebida pedida no poço" },
+        { "id": "b", "text": "Gado junto ao poço" },
+        { "id": "c", "text": "Rios no interior" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "será nele uma fonte a jorrar",
+      "feedbackCorrect": "Nos dois textos a água viva brota dentro de quem a recebe.",
+      "feedbackWrong": {
+        "a": "O pedido de bebida abre a cena. O elo está na água interior.",
+        "b": "O gado bebeu do poço de Jacó. Não é o elo com João 7."
+      },
+      "hint": "Veja em João 7 de onde a água passa a brotar.",
+      "learningObjective": "Ligar a fonte prometida no poço aos rios que brotam no interior.",
+      "evidence": ["João 4:14", "João 7:38"]
+    }
+  ]
+}

@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 14:2–11",
+    "passages": [
+      {
+        "ref": "2 Crônicas 14:2–11"
+      }
+    ],
+    "context": "Asa faz o bem, remove ídolos, busca o Senhor e, diante de Zera, clama: não há quem possa socorrer além de Ti.",
+    "keyword": "confiamos",
+    "keywordGloss": "Asa clama ao Senhor porque nele confiam e pelo nome dele enfrentam a multidão.",
+    "focusQuestion": "Na sua batalha desigual, em quem você está confiando de verdade?",
+    "reflectionPrompts": [
+      "Asa faz o bem",
+      "Descanso e busca",
+      "Clamor na batalha"
+    ],
+    "facts": [
+      {
+        "text": "Asa fez o que era bom e justo diante do Senhor.",
+        "evidenceRef": "2 Crônicas 14:2",
+        "evidenceSpan": "Asa fez o que era bom e justo diante do Senhor"
+      },
+      {
+        "text": "Aboliu altares estranhos e postes-ídolos; ordenou buscar ao Senhor.",
+        "evidenceRef": "2 Crônicas 14:3",
+        "evidenceSpan": "aboliu os altares dos deuses estranhos e os postes-ídolos"
+      },
+      {
+        "text": "Houve paz porque o Senhor lhe concedeu descanso.",
+        "evidenceRef": "2 Crônicas 14:6",
+        "evidenceSpan": "porque o Senhor lhe concedeu descanso"
+      },
+      {
+        "text": "Zera o etíope veio com um milhão de homens até Maressa.",
+        "evidenceRef": "2 Crônicas 14:9",
+        "evidenceSpan": "Zera, o etíope, saiu contra eles com um exército de um milhão de homens"
+      },
+      {
+        "text": "Asa clamou: além de Ti não há quem possa socorrer; em Ti confiamos.",
+        "evidenceRef": "2 Crônicas 14:11",
+        "evidenceSpan": "além de Ti não há quem possa socorrer"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "confiamos",
+        "gloss": "Confiança declarada no clamor de Asa."
+      },
+      {
+        "term": "socorrer",
+        "gloss": "Ajuda que só o Senhor pode dar na batalha desigual."
+      },
+      {
+        "term": "descanso",
+        "gloss": "Dom do Senhor nos anos de paz."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Asa faz o bem e remove ídolos",
+        "evidenceRef": "2 Crônicas 14:2–5"
+      },
+      {
+        "label": "Edifica na paz que o Senhor dá",
+        "evidenceRef": "2 Crônicas 14:6–7"
+      },
+      {
+        "label": "Zera vem com multidão enorme",
+        "evidenceRef": "2 Crônicas 14:8–10"
+      },
+      {
+        "label": "Asa clama e confia no nome do Senhor",
+        "evidenceRef": "2 Crônicas 14:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Houve paz porque o Senhor concedeu descanso.",
+        "marker": "porque",
+        "evidenceRef": "2 Crônicas 14:6"
+      },
+      {
+        "kind": "causa",
+        "text": "Ajuda-nos porque em Ti confiamos.",
+        "marker": "porque",
+        "evidenceRef": "2 Crônicas 14:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Buscaram ao Senhor e Ele deu descanso.",
+        "marker": "portanto",
+        "evidenceRef": "2 Crônicas 14:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Confiança no nome do Senhor"
+      },
+      {
+        "ref": "1 Samuel 17:47",
+        "bridge": "A peleja é do Senhor"
+      },
+      {
+        "ref": "2 Crônicas 16:8",
+        "bridge": "Lembra a vitória sobre etíopes"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Asa confia no tamanho do próprio exército.",
+        "why": "Ele clama que só o Senhor socorre entre poderoso e fraco."
+      },
+      {
+        "text": "A paz veio sem busca ao Senhor.",
+        "why": "Eles buscam e o Senhor dá descanso."
+      },
+      {
+        "text": "Asa mantém os ídolos e ainda assim é aprovado.",
+        "why": "Ele aboliu altares e postes-ídolos."
+      }
+    ],
+    "centralInsight": "Não há além de ti quem possa ajudar: no teu nome vamos contra esta multidão.",
+    "anchorQuestion": "O que Asa confessa em 2 Crônicas 14:11?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 14:2, Asa fez o que era bom e justo diante do Senhor.",
+      "verseRef": "2 Crônicas 14:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Asa fez o que era bom e justo diante do Senhor",
+      "feedbackCorrect": "O texto aprova Asa.",
+      "feedbackWrong": {
+        "false": "Releia 14:2."
+      },
+      "hint": "Veja o julgamento sobre Asa.",
+      "learningObjective": "Observar a aprovação.",
+      "evidence": [
+        "2 Crônicas 14:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 14:11, toque a quem Asa diz que não há quem possa socorrer além.",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ti"
+        },
+        {
+          "id": "b",
+          "text": "multidão"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "Só o Senhor socorre.",
+      "feedbackWrong": {
+        "b": "É o inimigo enfrentado.",
+        "c": "É quem não deve prevalecer."
+      },
+      "hint": "Procure o pronome do Senhor.",
+      "learningObjective": "Identificar o socorro.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 14:11, por que Asa pede ajuda?",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque em Ti confiamos e pelo Teu nome viemos"
+        },
+        {
+          "id": "b",
+          "text": "Porque tinham mais carros que Zera"
+        },
+        {
+          "id": "c",
+          "text": "Porque abandonaram o Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Porque a paz nunca existiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque em Ti confiamos e, pelo Teu nome, viemos contra esta multidão",
+      "feedbackCorrect": "Confiança e nome do Senhor são o motivo.",
+      "feedbackWrong": {
+        "b": "Zera tem um milhão.",
+        "c": "Asa busca o Senhor.",
+        "d": "Houve paz antes."
+      },
+      "hint": "Leia a razão do clamor.",
+      "learningObjective": "Identificar a confiança.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 14:11 na ordem do texto.",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor, além de Ti não há quem possa socorrer"
+        },
+        {
+          "id": "b",
+          "text": "ajuda-nos, pois, Senhor, nosso Deus"
+        },
+        {
+          "id": "c",
+          "text": "porque em Ti confiamos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "Confissão, pedido e confiança.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão."
+      },
+      "hint": "A confiança segue o pedido.",
+      "learningObjective": "Reconhecer 14:11.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 14:6, o Senhor lhe concedeu _____.",
+      "verseRef": "2 Crônicas 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "descanso"
+        },
+        {
+          "id": "b",
+          "text": "derrota"
+        },
+        {
+          "id": "c",
+          "text": "exílio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque o Senhor lhe concedeu descanso",
+      "feedbackCorrect": "Descanso é o dom na paz.",
+      "feedbackWrong": {
+        "b": "Não é derrota.",
+        "c": "Não é exílio."
+      },
+      "hint": "Veja o que o Senhor concedeu.",
+      "learningObjective": "Lembrar o descanso.",
+      "evidence": [
+        "2 Crônicas 14:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 14:11 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 14:11",
+      "passageA": {
+        "ref": "2 Crônicas 14:11"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diante da multidão, Asa confessa que só o Senhor socorre."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Socorro só no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Vitória pelo número"
+        },
+        {
+          "id": "c",
+          "text": "Confiança em Zera"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "O clamor define a cena.",
+      "feedbackWrong": {
+        "b": "O número favorece Zera.",
+        "c": "Zera é o inimigo."
+      },
+      "hint": "Veja a confissão.",
+      "learningObjective": "Ligar clamor e contexto.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 14:11, Asa pede ajuda porque em Ti confiamos.",
+      "verseRef": "2 Crônicas 14:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque em Ti confiamos",
+      "feedbackCorrect": "O porque liga o pedido à confiança.",
+      "feedbackWrong": {
+        "false": "Repare na palavra porque."
+      },
+      "hint": "Veja a razão do pedido.",
+      "learningObjective": "Compreender a confiança.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 14:11, toque a palavra que marca a causa do pedido de ajuda.",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "multidão"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque em Ti confiamos",
+      "feedbackCorrect": "Porque introduz a causa.",
+      "feedbackWrong": {
+        "b": "É o inimigo.",
+        "c": "É quem não deve prevalecer."
+      },
+      "hint": "Procure a palavra do motivo.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 14:6–7 se relaciona com 14:11?",
+      "verseRef": "2 Crônicas 14:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A paz do Senhor prepara o mesmo clamor de confiança na guerra"
+        },
+        {
+          "id": "b",
+          "text": "A paz prova que nunca haverá batalha"
+        },
+        {
+          "id": "c",
+          "text": "O descanso substitui a oração"
+        },
+        {
+          "id": "d",
+          "text": "Asa deixa de buscar o Senhor na guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque em Ti confiamos",
+      "feedbackCorrect": "Descanso e clamor nascem da mesma confiança.",
+      "feedbackWrong": {
+        "b": "Zera ainda vem.",
+        "c": "Há clamor explícito.",
+        "d": "Ele clama ao Senhor."
+      },
+      "hint": "Una paz e batalha.",
+      "learningObjective": "Relacionar descanso e clamor.",
+      "evidence": [
+        "2 Crônicas 14:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 14:2–11?",
+      "verseRef": "2 Crônicas 14:2–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asa remove ídolos e recebe descanso"
+        },
+        {
+          "id": "b",
+          "text": "Zera vem com multidão enorme"
+        },
+        {
+          "id": "c",
+          "text": "Asa clama e confia no Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "Reforma, ameaça e clamor.",
+      "feedbackWrong": {
+        "default": "Comece pela reforma."
+      },
+      "hint": "O clamor fecha.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 14:2–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 14:11, Asa diz: em Ti _____.",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "confiamos"
+        },
+        {
+          "id": "b",
+          "text": "duvidamos"
+        },
+        {
+          "id": "c",
+          "text": "fugimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque em Ti confiamos",
+      "feedbackCorrect": "Confiamos carrega a causa do clamor.",
+      "feedbackWrong": {
+        "b": "Não duvidam.",
+        "c": "Não fogem."
+      },
+      "hint": "Veja o verbo da confiança.",
+      "learningObjective": "Lembrar o verbo-chave.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 14:11 a Salmos 20:7?",
+      "verseRef": "2 Crônicas 14:11",
+      "passageA": {
+        "ref": "2 Crônicas 14:11"
+      },
+      "passageB": {
+        "ref": "Salmos 20:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança no nome do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Confiança em carros"
+        },
+        {
+          "id": "c",
+          "text": "Negação de qualquer ajuda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo Teu nome, viemos contra esta multidão",
+      "feedbackCorrect": "Nos dois textos, o nome do Senhor é o apoio.",
+      "feedbackWrong": {
+        "b": "Asa não cita carros.",
+        "c": "Há pedido de socorro."
+      },
+      "hint": "Compare a confiança.",
+      "learningObjective": [
+        "2 Crônicas 14:11",
+        "Salmos 20:7"
+      ],
+      "evidence": "Relacionar Crônicas aos Salmos."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 14:2–11 ensina que Asa enfrenta Zera confiando no tamanho do próprio exército.",
+      "verseRef": "2 Crônicas 14:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "A confissão nega outro socorro além de Deus.",
+      "feedbackWrong": {
+        "true": "Leia o clamor de Asa."
+      },
+      "hint": "Veja em quem ele confia.",
+      "learningObjective": "Corrigir a leitura militarista.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 14:11, toque o trecho que sustenta o socorro exclusivo de Deus.",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "não há quem"
+        },
+        {
+          "id": "b",
+          "text": "esta multidão"
+        },
+        {
+          "id": "c",
+          "text": "nosso Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não há quem possa socorrer",
+      "feedbackCorrect": "Não há quem marca a exclusividade.",
+      "feedbackWrong": {
+        "b": "É o inimigo.",
+        "c": "É o título do Senhor."
+      },
+      "hint": "Procure a negação do socorro humano.",
+      "learningObjective": "Sustentar a exclusividade.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 14:2–11 sustenta?",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buscar o Senhor na paz prepara clamar a ele na guerra"
+        },
+        {
+          "id": "b",
+          "text": "Ídolos e confiança no Senhor andam juntos"
+        },
+        {
+          "id": "c",
+          "text": "O número do exército basta sem oração"
+        },
+        {
+          "id": "d",
+          "text": "Zera vence porque Asa não ora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ajuda-nos, pois, Senhor, nosso Deus, porque em Ti confiamos",
+      "feedbackCorrect": "Reforma e clamor formam a leitura.",
+      "feedbackWrong": {
+        "b": "Asa remove ídolos.",
+        "c": "Há clamor explícito.",
+        "d": "Asa clama."
+      },
+      "hint": "Una reforma e clamor.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da paz ao clamor?",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asa busca o Senhor e recebe descanso"
+        },
+        {
+          "id": "b",
+          "text": "Surge a multidão de Zera"
+        },
+        {
+          "id": "c",
+          "text": "Asa confessa que só o Senhor socorre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "Busca, crise e confissão.",
+      "feedbackWrong": {
+        "default": "Comece pela busca."
+      },
+      "hint": "A confissão fecha.",
+      "learningObjective": "Encadear paz e guerra.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 14:11, além de Ti não há quem possa _____.",
+      "verseRef": "2 Crônicas 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "socorrer"
+        },
+        {
+          "id": "b",
+          "text": "cobrar"
+        },
+        {
+          "id": "c",
+          "text": "fugir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não há quem possa socorrer",
+      "feedbackCorrect": "Socorrer carrega o sentido do clamor.",
+      "feedbackWrong": {
+        "b": "Não é cobrar.",
+        "c": "Não é fugir."
+      },
+      "hint": "Veja o verbo após possa.",
+      "learningObjective": "Lembrar o termo do socorro.",
+      "evidence": [
+        "2 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 14:11 a 1 Samuel 17:47?",
+      "verseRef": "2 Crônicas 14:11",
+      "passageA": {
+        "ref": "2 Crônicas 14:11"
+      },
+      "passageB": {
+        "ref": "1 Samuel 17:47"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A peleja é do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Vitória só por número"
+        },
+        {
+          "id": "c",
+          "text": "Negação de qualquer clamor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "além de Ti não há quem possa socorrer",
+      "feedbackCorrect": "Nos dois textos, a batalha depende do Senhor.",
+      "feedbackWrong": {
+        "b": "O número favorece o inimigo.",
+        "c": "Há clamor explícito."
+      },
+      "hint": "Compare a batalha.",
+      "learningObjective": [
+        "2 Crônicas 14:11",
+        "1 Samuel 17:47"
+      ],
+      "evidence": "Ligar Crônicas a Samuel."
+    }
+  ]
+}

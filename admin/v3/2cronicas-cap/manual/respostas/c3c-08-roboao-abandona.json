@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 12:1–8",
+    "passages": [
+      {
+        "ref": "2 Crônicas 12:1–8"
+      }
+    ],
+    "context": "Roboão e Israel abandonam a lei do Senhor. Sisaque sobe; Semaías anuncia o juízo; eles se humilham e recebem socorro parcial.",
+    "keyword": "abandonou",
+    "keywordGloss": "Roboão abandona a lei do Senhor; o povo o acompanha e sofre a invasão de Sisaque.",
+    "focusQuestion": "Onde você precisa voltar a servir ao Senhor e não aos reinos da terra?",
+    "reflectionPrompts": [
+      "Abandono da lei",
+      "Sisaque sobe",
+      "Humilhação e socorro"
+    ],
+    "facts": [
+      {
+        "text": "Após se fortalecer, Roboão abandonou a lei do Senhor, e todo Israel o acompanhou.",
+        "evidenceRef": "2 Crônicas 12:1",
+        "evidenceSpan": "ele abandonou a lei do Senhor, e todo Israel o acompanhou"
+      },
+      {
+        "text": "No quinto ano, Sisaque subiu contra Jerusalém porque eles haviam transgredido.",
+        "evidenceRef": "2 Crônicas 12:2",
+        "evidenceSpan": "pois eles haviam transgredido contra o Senhor"
+      },
+      {
+        "text": "Semaías diz: Vocês me abandonaram, portanto eu também os deixei sob Sisaque.",
+        "evidenceRef": "2 Crônicas 12:5",
+        "evidenceSpan": "Vocês me abandonaram, portanto eu também os deixei sob o domínio de Sisaque"
+      },
+      {
+        "text": "Príncipes e rei se humilharam e disseram: O SENHOR é justo.",
+        "evidenceRef": "2 Crônicas 12:6",
+        "evidenceSpan": "se humilharam e disseram: O SENHOR é justo"
+      },
+      {
+        "text": "Deus não os destruirá; serão servos para conhecerem a distinção das servidões.",
+        "evidenceRef": "2 Crônicas 12:7",
+        "evidenceSpan": "Humilharam-se, não os destruirei"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "abandonou",
+        "gloss": "Ação de Roboão contra a lei do Senhor."
+      },
+      {
+        "term": "humilharam",
+        "gloss": "Resposta do rei e dos príncipes que abre o socorro."
+      },
+      {
+        "term": "servidão",
+        "gloss": "Distinção que Deus quer que aprendam sob Sisaque."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Roboão abandona a lei e Israel o segue",
+        "evidenceRef": "2 Crônicas 12:1"
+      },
+      {
+        "label": "Sisaque sobe por causa da transgressão",
+        "evidenceRef": "2 Crônicas 12:2–4"
+      },
+      {
+        "label": "Semaías anuncia o abandono mútuo",
+        "evidenceRef": "2 Crônicas 12:5"
+      },
+      {
+        "label": "Humilhação traz socorro parcial",
+        "evidenceRef": "2 Crônicas 12:6–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Sisaque sobe porque eles transgrediram.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 12:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Abandonaram, portanto Deus os deixou sob Sisaque.",
+        "marker": "portanto",
+        "evidenceRef": "2 Crônicas 12:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Vendo que se humilhavam, Deus promete não destruir.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 12:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 14:25",
+        "bridge": "Sisaque sobe a Jerusalém"
+      },
+      {
+        "ref": "Deuteronômio 28:47",
+        "bridge": "Servir ao Senhor com alegria"
+      },
+      {
+        "ref": "Tiago 4:10",
+        "bridge": "Humilhar-se diante de Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O abandono da lei não tem consequência militar.",
+        "why": "Sisaque sobe por causa da transgressão."
+      },
+      {
+        "text": "A humilhação não muda nada no juízo.",
+        "why": "Deus promete não destruir e dar socorro."
+      },
+      {
+        "text": "Só Roboão peca; Israel não o acompanha.",
+        "why": "Todo Israel o acompanhou."
+      }
+    ],
+    "centralInsight": "Abandonaram o Senhor; ele os deixa nas mãos do inimigo para que aprendam a servi-lo.",
+    "anchorQuestion": "O que Semaías anuncia em 2 Crônicas 12:5?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 12:1, Roboão abandonou a lei do Senhor, e todo Israel o acompanhou.",
+      "verseRef": "2 Crônicas 12:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "ele abandonou a lei do Senhor, e todo Israel o acompanhou",
+      "feedbackCorrect": "O abandono é do rei e do povo.",
+      "feedbackWrong": {
+        "false": "Releia 12:1."
+      },
+      "hint": "Veja quem abandonou.",
+      "learningObjective": "Observar o abandono.",
+      "evidence": [
+        "2 Crônicas 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 12:5, toque o que o povo fez ao Senhor, segundo Semaías.",
+      "verseRef": "2 Crônicas 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "abandonaram"
+        },
+        {
+          "id": "b",
+          "text": "Sisaque"
+        },
+        {
+          "id": "c",
+          "text": "príncipes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vocês me abandonaram",
+      "feedbackCorrect": "Eles abandonaram o Senhor.",
+      "feedbackWrong": {
+        "b": "É o instrumento do juízo.",
+        "c": "São os ouvintes da palavra."
+      },
+      "hint": "Procure o verbo da acusação.",
+      "learningObjective": "Identificar o abandono.",
+      "evidence": [
+        "2 Crônicas 12:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 12:6, o que príncipes e rei disseram ao se humilhar?",
+      "verseRef": "2 Crônicas 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O SENHOR é justo"
+        },
+        {
+          "id": "b",
+          "text": "Sisaque é justo"
+        },
+        {
+          "id": "c",
+          "text": "A lei não importa"
+        },
+        {
+          "id": "d",
+          "text": "Israel não pecou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O SENHOR é justo",
+      "feedbackCorrect": "A confissão reconhece a justiça de Deus.",
+      "feedbackWrong": {
+        "b": "Eles confessam o SENHOR.",
+        "c": "Há humilhação, não desprezo.",
+        "d": "Há transgressão confessada."
+      },
+      "hint": "Leia a confissão.",
+      "learningObjective": "Identificar a confissão.",
+      "evidence": [
+        "2 Crônicas 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 12:5 na ordem do texto.",
+      "verseRef": "2 Crônicas 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assim diz o Senhor: Vocês me abandonaram"
+        },
+        {
+          "id": "b",
+          "text": "portanto eu também os deixei"
+        },
+        {
+          "id": "c",
+          "text": "sob o domínio de Sisaque"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vocês me abandonaram, portanto eu também os deixei",
+      "feedbackCorrect": "Abandono e juízo.",
+      "feedbackWrong": {
+        "default": "Comece pela acusação."
+      },
+      "hint": "Sisaque fecha.",
+      "learningObjective": "Reconhecer 12:5.",
+      "evidence": [
+        "2 Crônicas 12:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 12:1, Roboão _____ a lei do Senhor.",
+      "verseRef": "2 Crônicas 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "abandonou"
+        },
+        {
+          "id": "b",
+          "text": "guardou"
+        },
+        {
+          "id": "c",
+          "text": "escreveu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele abandonou a lei do Senhor",
+      "feedbackCorrect": "Abandonou é a ação central.",
+      "feedbackWrong": {
+        "b": "Ele não guardou.",
+        "c": "Não é escreveu."
+      },
+      "hint": "Veja o verbo principal.",
+      "learningObjective": "Lembrar o abandono.",
+      "evidence": [
+        "2 Crônicas 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 12:5 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 12:5",
+      "passageA": {
+        "ref": "2 Crônicas 12:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O abandono do povo encontra resposta correspondente de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandono e juízo correspondentes"
+        },
+        {
+          "id": "b",
+          "text": "Vitória sem causa"
+        },
+        {
+          "id": "c",
+          "text": "Lei reforçada sem crise"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vocês me abandonaram, portanto eu também os deixei",
+      "feedbackCorrect": "A correspondência é explícita.",
+      "feedbackWrong": {
+        "b": "Há juízo claro.",
+        "c": "Há crise sob Sisaque."
+      },
+      "hint": "Veja o portanto.",
+      "learningObjective": "Ligar abandono e juízo.",
+      "evidence": [
+        "2 Crônicas 12:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 12:5, porque o povo abandonou o Senhor, ele os deixou sob Sisaque.",
+      "verseRef": "2 Crônicas 12:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vocês me abandonaram, portanto eu também os deixei sob o domínio de Sisaque",
+      "feedbackCorrect": "O portanto liga abandono e juízo.",
+      "feedbackWrong": {
+        "false": "Repare na palavra portanto."
+      },
+      "hint": "Veja a relação anunciada.",
+      "learningObjective": "Compreender a correspondência.",
+      "evidence": [
+        "2 Crônicas 12:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 12:5, toque a palavra que marca o resultado do abandono.",
+      "verseRef": "2 Crônicas 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "portanto"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "profeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "portanto eu também os deixei",
+      "feedbackCorrect": "Portanto introduz o resultado.",
+      "feedbackWrong": {
+        "b": "É o lugar.",
+        "c": "É o mensageiro."
+      },
+      "hint": "Procure a palavra do resultado.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 12:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 12:6–7 se relaciona com o juízo de 12:5?",
+      "verseRef": "2 Crônicas 12:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A humilhação abre socorro sem apagar toda a disciplina"
+        },
+        {
+          "id": "b",
+          "text": "A humilhação cancela Sisaque de imediato"
+        },
+        {
+          "id": "c",
+          "text": "Deus ignora a confissão"
+        },
+        {
+          "id": "d",
+          "text": "Não há mudança após a palavra de Semaías"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Humilharam-se, não os destruirei; antes, em breve, lhes darei socorro",
+      "feedbackCorrect": "Misericórdia e disciplina convivem.",
+      "feedbackWrong": {
+        "b": "Ainda serão servos.",
+        "c": "Deus responde à humilhação.",
+        "d": "Há promessa de socorro."
+      },
+      "hint": "Una humilhação e resposta.",
+      "learningObjective": "Relacionar juízo e socorro.",
+      "evidence": [
+        "2 Crônicas 12:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 12:1–8?",
+      "verseRef": "2 Crônicas 12:1–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roboão abandona a lei"
+        },
+        {
+          "id": "b",
+          "text": "Semaías anuncia o juízo"
+        },
+        {
+          "id": "c",
+          "text": "Humilhação traz socorro parcial"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Humilharam-se, não os destruirei",
+      "feedbackCorrect": "Abandono, juízo e socorro.",
+      "feedbackWrong": {
+        "default": "Comece pelo abandono."
+      },
+      "hint": "O socorro fecha.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 12:1–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 12:7, Deus diz: não os _____.",
+      "verseRef": "2 Crônicas 12:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "destruirei"
+        },
+        {
+          "id": "b",
+          "text": "ouvirei"
+        },
+        {
+          "id": "c",
+          "text": "chamarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não os destruirei",
+      "feedbackCorrect": "Não destruirá: a humilhação abre socorro.",
+      "feedbackWrong": {
+        "b": "O texto diz não destruirei.",
+        "c": "Não é chamarei."
+      },
+      "hint": "Veja o que Deus não fará.",
+      "learningObjective": "Lembrar a promessa de não destruir.",
+      "evidence": [
+        "2 Crônicas 12:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 12:6 a Tiago 4:10?",
+      "verseRef": "2 Crônicas 12:6",
+      "passageA": {
+        "ref": "2 Crônicas 12:6"
+      },
+      "passageB": {
+        "ref": "Tiago 4:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Humilhar-se diante de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Exaltar-se sobre Sisaque"
+        },
+        {
+          "id": "c",
+          "text": "Negar a justiça do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se humilharam e disseram: O SENHOR é justo",
+      "feedbackCorrect": "A humilhação abre caminho a Deus.",
+      "feedbackWrong": {
+        "b": "Eles se humilham.",
+        "c": "Confessam a justiça."
+      },
+      "hint": "Compare a humilhação.",
+      "learningObjective": [
+        "2 Crônicas 12:6",
+        "Tiago 4:10"
+      ],
+      "evidence": "Relacionar Crônicas a Tiago."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 12:1–8 ensina que abandonar a lei não traz qualquer disciplina divina.",
+      "verseRef": "2 Crônicas 12:2–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Vocês me abandonaram, portanto eu também os deixei sob o domínio de Sisaque",
+      "feedbackCorrect": "Há juízo claro sob Sisaque.",
+      "feedbackWrong": {
+        "true": "Leia a palavra de Semaías."
+      },
+      "hint": "Veja a consequência do abandono.",
+      "learningObjective": "Corrigir a leitura sem juízo.",
+      "evidence": [
+        "2 Crônicas 12:2–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 12:8, toque o trecho que sustenta o propósito da disciplina.",
+      "verseRef": "2 Crônicas 12:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que conheçam"
+        },
+        {
+          "id": "b",
+          "text": "serão seus servos"
+        },
+        {
+          "id": "c",
+          "text": "reinos da terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que conheçam a distinção",
+      "feedbackCorrect": "O propósito é conhecer a distinção.",
+      "feedbackWrong": {
+        "b": "É a condição.",
+        "c": "É o contraste da servidão."
+      },
+      "hint": "Procure a expressão do propósito.",
+      "learningObjective": "Sustentar o propósito.",
+      "evidence": [
+        "2 Crônicas 12:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 12:1–8 sustenta?",
+      "verseRef": "2 Crônicas 12:5–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus disciplina o abandono e ainda responde à humilhação"
+        },
+        {
+          "id": "b",
+          "text": "O abandono não tem custo"
+        },
+        {
+          "id": "c",
+          "text": "A humilhação é inútil"
+        },
+        {
+          "id": "d",
+          "text": "Sisaque age sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Humilharam-se, não os destruirei",
+      "feedbackCorrect": "Juízo e misericórdia formam a leitura.",
+      "feedbackWrong": {
+        "b": "Há invasão e palavra de juízo.",
+        "c": "Há socorro prometido.",
+        "d": "O Senhor deixa sob Sisaque."
+      },
+      "hint": "Una 12:5 e 12:7.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "2 Crônicas 12:5–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do abandono ao aprendizado?",
+      "verseRef": "2 Crônicas 12:5–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo abandona o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Vem o juízo sob Sisaque"
+        },
+        {
+          "id": "c",
+          "text": "A humilhação ensina a distinção das servidões"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para que conheçam a distinção",
+      "feedbackCorrect": "Abandono, juízo e aprendizado.",
+      "feedbackWrong": {
+        "default": "Comece pelo abandono."
+      },
+      "hint": "O aprendizado fecha.",
+      "learningObjective": "Encadear a disciplina.",
+      "evidence": [
+        "2 Crônicas 12:5–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 12:6, eles se _____ e confessam: O SENHOR é justo.",
+      "verseRef": "2 Crônicas 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "humilharam"
+        },
+        {
+          "id": "b",
+          "text": "orgulharam"
+        },
+        {
+          "id": "c",
+          "text": "esconderam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se humilharam e disseram",
+      "feedbackCorrect": "Humilharam carrega a volta.",
+      "feedbackWrong": {
+        "b": "Não se orgulharam.",
+        "c": "Não se esconderam."
+      },
+      "hint": "Veja o verbo antes da confissão.",
+      "learningObjective": "Lembrar a humilhação.",
+      "evidence": [
+        "2 Crônicas 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 12:8 a Deuteronômio 28:47?",
+      "verseRef": "2 Crônicas 12:8",
+      "passageA": {
+        "ref": "2 Crônicas 12:8"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 28:47"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprender a servir ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negar qualquer servidão"
+        },
+        {
+          "id": "c",
+          "text": "Exaltar Sisaque como salvador"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que conheçam a distinção entre a minha servidão",
+      "feedbackCorrect": "Servir a Deus ou aos reinos é a lição.",
+      "feedbackWrong": {
+        "b": "Há servidão sob Sisaque.",
+        "c": "Sisaque é disciplina, não salvador."
+      },
+      "hint": "Compare a servidão.",
+      "learningObjective": [
+        "2 Crônicas 12:8",
+        "Deuteronômio 28:47"
+      ],
+      "evidence": "Ligar Crônicas a Deuteronômio."
+    }
+  ]
+}

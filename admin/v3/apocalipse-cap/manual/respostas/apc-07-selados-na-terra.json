@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 7:1–6",
+    "passages": [
+      { "ref": "Apocalipse 7:1–6" },
+      { "ref": "Apocalipse 7:7–8" }
+    ],
+    "context": "Antes de novos juízos alcançarem a terra, quatro anjos seguram os ventos. Outro anjo traz o selo do Deus vivo, e João ouve quantos serão selados e de quais tribos.",
+    "keyword": "Selados",
+    "keywordGloss": "Marcados na fronte com o selo do Deus vivo: pertencem a ele e são guardados antes do dano.",
+    "focusQuestion": "O que mostra, na sua vida, que você pertence a Deus?",
+    "reflectionPrompts": [
+      "Ventos contidos",
+      "O selo do Deus vivo",
+      "Doze mil de cada tribo"
+    ],
+    "facts": [
+      {
+        "text": "Quatro anjos estão nos quatro cantos da terra, segurando os quatro ventos.",
+        "evidenceRef": "Apocalipse 7:1",
+        "evidenceSpan": "quatro anjos em pé nos quatro cantos da terra, conservando seguros os quatro ventos da terra"
+      },
+      {
+        "text": "Outro anjo sobe da direção do sol nascente trazendo o selo do Deus vivo.",
+        "evidenceRef": "Apocalipse 7:2",
+        "evidenceSpan": "outro anjo subindo da direção do sol nascente, que trazia o selo do Deus vivo"
+      },
+      {
+        "text": "Ele manda não danificar a terra, o mar nem as árvores até selarem os servos de Deus.",
+        "evidenceRef": "Apocalipse 7:3",
+        "evidenceSpan": "Não danifiqueis a terra, nem o mar, nem as árvores, até selarmos na fronte os servos do nosso Deus"
+      },
+      {
+        "text": "João ouve que os selados são cento e quarenta e quatro mil.",
+        "evidenceRef": "Apocalipse 7:4",
+        "evidenceSpan": "era cento e quarenta e quatro mil, de todas as tribos dos filhos de Israel"
+      },
+      {
+        "text": "Da tribo de Judá foram selados doze mil.",
+        "evidenceRef": "Apocalipse 7:5",
+        "evidenceSpan": "Da tribo de Judá foram selados doze mil"
+      },
+      {
+        "text": "Da tribo de Benjamim também são doze mil, como de cada tribo da lista.",
+        "evidenceRef": "Apocalipse 7:8",
+        "evidenceSpan": "da tribo de Benjamim, doze mil"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "selo",
+        "gloss": "Marca de quem pertence a Deus: o selo é do Deus vivo e vem antes do dano."
+      },
+      {
+        "term": "fronte",
+        "gloss": "Lugar visível da marca: os servos de Deus são identificados como dele."
+      },
+      {
+        "term": "servos",
+        "gloss": "Os que pertencem a Deus e o servem; são eles que recebem o selo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ventos seguros nos quatro cantos",
+        "evidenceRef": "Apocalipse 7:1"
+      },
+      {
+        "label": "Outro anjo chega com o selo",
+        "evidenceRef": "Apocalipse 7:2"
+      },
+      {
+        "label": "Ordem de poupar a terra até selar",
+        "evidenceRef": "Apocalipse 7:3"
+      },
+      {
+        "label": "O número dos selados, tribo por tribo",
+        "evidenceRef": "Apocalipse 7:4–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Os quatro anjos seguram os ventos para que nenhum vento sopre sobre a terra, o mar ou as árvores.",
+        "marker": "para que",
+        "evidenceRef": "Apocalipse 7:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O dano à terra e ao mar deve esperar até que os servos de Deus sejam selados na fronte.",
+        "marker": "até",
+        "evidenceRef": "Apocalipse 7:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "O número total dos selados é detalhado tribo por tribo, doze mil de cada uma.",
+        "marker": null,
+        "evidenceRef": "Apocalipse 7:5"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Ezequiel 9:4", "bridge": "Marca nos que pertencem a Deus" },
+      { "ref": "Efésios 1:13", "bridge": "Selados com o Espírito" },
+      { "ref": "Gênesis 49:28", "bridge": "As doze tribos de Israel" }
+    ],
+    "misreadings": [
+      {
+        "text": "Os ventos seguros mostram que Deus perdeu o controle da terra.",
+        "why": "Os anjos os conservam seguros por ordem, e nada é solto antes de os servos serem selados."
+      },
+      {
+        "text": "O selo é prêmio dos que se esforçam mais que os outros.",
+        "why": "O selo é do Deus vivo: ele marca os seus servos; o texto não fala de mérito."
+      },
+      {
+        "text": "Os servos de Deus só são selados depois que o dano já passou pela terra.",
+        "why": "A ordem é não danificar a terra até selar os servos: o selo vem antes do dano."
+      }
+    ],
+    "centralInsight": "Não danifiqueis a terra até que selemos na fronte os servos do nosso Deus.",
+    "anchorQuestion": "Onde os servos de Deus são selados, segundo Apocalipse 7:3?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 7:1, três anjos conservavam seguros os quatro ventos da terra.",
+      "verseRef": "Apocalipse 7:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "vi quatro anjos em pé nos quatro cantos da terra",
+      "feedbackCorrect": "O texto fala de quatro anjos, nos quatro cantos da terra.",
+      "feedbackWrong": {
+        "true": "Releia Apocalipse 7:1: são quatro anjos, nos quatro cantos da terra."
+      },
+      "hint": "Confira o número de anjos no começo do versículo.",
+      "learningObjective": "Observar quantos anjos seguram os ventos.",
+      "evidence": ["Apocalipse 7:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 7:2, toque o que o outro anjo trazia.",
+      "verseRef": "Apocalipse 7:2",
+      "options": [
+        { "id": "a", "text": "poder" },
+        { "id": "b", "text": "sol nascente" },
+        { "id": "c", "text": "selo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "que trazia o selo do Deus vivo",
+      "feedbackCorrect": "O outro anjo traz o selo do Deus vivo, para marcar os servos de Deus.",
+      "feedbackWrong": {
+        "a": "O poder de causar dano foi concedido aos quatro anjos, não trazido por ele.",
+        "b": "\"Sol nascente\" diz de onde ele sobe, não o que traz."
+      },
+      "hint": "Procure o que vem logo depois de \"que trazia\".",
+      "learningObjective": "Identificar o que o outro anjo traz.",
+      "evidence": ["Apocalipse 7:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 7:4, quantos eram os selados?",
+      "verseRef": "Apocalipse 7:4",
+      "options": [
+        { "id": "a", "text": "Doze mil" },
+        { "id": "b", "text": "Sete mil" },
+        { "id": "c", "text": "Cento e quarenta e quatro mil" },
+        { "id": "d", "text": "Vinte mil" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "era cento e quarenta e quatro mil, de todas as tribos dos filhos de Israel",
+      "feedbackCorrect": "João ouve o número total dos selados: cento e quarenta e quatro mil.",
+      "feedbackWrong": {
+        "a": "Doze mil é o número de cada tribo, não o total dos selados.",
+        "b": "Sete mil não aparece neste versículo.",
+        "d": "Vinte mil não é o número que João ouviu neste versículo."
+      },
+      "hint": "Leia o número logo depois de \"ouvi o número dos selados\".",
+      "learningObjective": "Observar o número total dos selados.",
+      "evidence": ["Apocalipse 7:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 7:3 na ordem do texto.",
+      "verseRef": "Apocalipse 7:3",
+      "options": [
+        { "id": "a", "text": "até selarmos na fronte os servos do nosso Deus" },
+        { "id": "b", "text": "Não danifiqueis a terra" },
+        { "id": "c", "text": "nem o mar, nem as árvores" }
+      ],
+      "correctOrder": ["b", "c", "a"],
+      "evidenceSpan": "Não danifiqueis a terra, nem o mar, nem as árvores, até selarmos na fronte",
+      "feedbackCorrect": "A ordem proíbe o dano à terra, ao mar e às árvores, e marca o limite: o selo.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem de não danificar; o limite do selo fecha o versículo."
+      },
+      "hint": "O versículo começa com a proibição.",
+      "learningObjective": "Reconhecer a sequência da ordem em Apocalipse 7:3.",
+      "evidence": ["Apocalipse 7:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 7:4, que divisão de Israel reúne os selados?",
+      "verseRef": "Apocalipse 7:4",
+      "options": [
+        { "id": "a", "text": "cidades" },
+        { "id": "b", "text": "nações" },
+        { "id": "c", "text": "tribos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "de todas as tribos dos filhos de Israel",
+      "feedbackCorrect": "Os selados vêm de todas as tribos dos filhos de Israel.",
+      "feedbackWrong": {
+        "a": "O texto não os agrupa por cidades, e sim pelas divisões de Israel.",
+        "b": "Aqui a divisão é dos filhos de Israel, e não de nações."
+      },
+      "hint": "Veja a palavra ligada aos filhos de Israel.",
+      "learningObjective": "Lembrar de onde vêm os selados no texto.",
+      "evidence": ["Apocalipse 7:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 7:3 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 7:3",
+      "passageA": { "ref": "Apocalipse 7:3", "text": "até selarmos na fronte os servos do nosso Deus" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Antes de qualquer dano à terra, Deus marca os que lhe pertencem."
+      },
+      "options": [
+        { "id": "a", "text": "Os anjos escolhem os selados" },
+        { "id": "b", "text": "Deus marca os seus servos" },
+        { "id": "c", "text": "Deus abandona a terra" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "O dano espera: antes dele, os servos do nosso Deus são selados na fronte.",
+      "feedbackWrong": {
+        "a": "Os servos são de Deus; o selo é do Deus vivo, não escolha dos anjos.",
+        "c": "O texto mostra cuidado com os servos: o dano espera o selo."
+      },
+      "hint": "Veja o que deve acontecer antes do dano.",
+      "learningObjective": "Ligar a ordem de esperar ao cuidado de Deus com os seus.",
+      "evidence": ["Apocalipse 7:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 7:2–3, o dano à terra e ao mar fica adiado até que os servos de Deus sejam selados na fronte.",
+      "verseRef": "Apocalipse 7:2–3",
+      "correctOptionId": "true",
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "\"Até\" marca o limite: o dano espera o selo dos servos de Deus.",
+      "feedbackWrong": {
+        "false": "Releia Apocalipse 7:3: o dano só pode vir depois que os servos forem selados."
+      },
+      "hint": "Veja a palavra que fixa o limite da ordem.",
+      "learningObjective": "Compreender que o selo vem antes do dano.",
+      "evidence": ["Apocalipse 7:2–3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 7:3, toque a palavra que marca até quando o dano está proibido.",
+      "verseRef": "Apocalipse 7:3",
+      "options": [
+        { "id": "a", "text": "nem" },
+        { "id": "b", "text": "fronte" },
+        { "id": "c", "text": "até" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "\"Até\" fixa o limite: o dano só é liberado depois do selo.",
+      "feedbackWrong": {
+        "a": "\"Nem\" soma proibições (terra, mar, árvores); não marca o limite.",
+        "b": "\"Fronte\" diz onde o selo é colocado, não até quando dura a ordem."
+      },
+      "hint": "Procure a palavra que fixa o limite da ordem.",
+      "learningObjective": "Reconhecer o marcador de limite na ordem do anjo.",
+      "evidence": ["Apocalipse 7:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Apocalipse 7:3 se relaciona com a ordem aos quatro anjos em Apocalipse 7:2?",
+      "verseRef": "Apocalipse 7:2–3",
+      "options": [
+        { "id": "a", "text": "O dano deve começar antes de qualquer selo" },
+        { "id": "b", "text": "Os anjos podem agir quando quiserem" },
+        { "id": "c", "text": "O dano deve esperar enquanto os servos de Deus são marcados" },
+        { "id": "d", "text": "O selo vem só depois que a terra for destruída" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Não danifiqueis a terra, nem o mar, nem as árvores, até selarmos",
+      "feedbackCorrect": "O poder de causar dano existe, mas a ordem o segura até o selo dos servos.",
+      "feedbackWrong": {
+        "a": "A ordem é inversa: primeiro o selo, depois o dano.",
+        "b": "Eles só agem sob ordem: o dano é adiado até o selo.",
+        "d": "O selo vem antes: o dano só vem depois de selados os servos."
+      },
+      "hint": "Veja o que o outro anjo manda aos que podem causar dano.",
+      "learningObjective": "Relacionar a ordem do outro anjo com o poder dos quatro anjos.",
+      "evidence": ["Apocalipse 7:2–3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Apocalipse 7:2–3?",
+      "verseRef": "Apocalipse 7:2–3",
+      "options": [
+        { "id": "a", "text": "Ordena poupar a terra até selar os servos" },
+        { "id": "b", "text": "Outro anjo sobe do sol nascente com o selo" },
+        { "id": "c", "text": "Ele clama aos quatro anjos que podiam causar dano" }
+      ],
+      "correctOrder": ["b", "c", "a"],
+      "evidenceSpan": "Não danifiqueis a terra, nem o mar, nem as árvores, até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "O anjo chega com o selo, clama aos que podem causar dano e manda poupar a terra.",
+      "feedbackWrong": {
+        "default": "Primeiro o anjo chega com o selo; a ordem de poupar a terra vem por último."
+      },
+      "hint": "A ordem de poupar é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento da chegada do anjo à ordem.",
+      "evidence": ["Apocalipse 7:2–3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 7:3, que ação deve acontecer antes que o dano alcance a terra?",
+      "verseRef": "Apocalipse 7:3",
+      "options": [
+        { "id": "a", "text": "vermos" },
+        { "id": "b", "text": "selarmos" },
+        { "id": "c", "text": "ouvirmos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "O selo na fronte dos servos é a ação que precede o dano.",
+      "feedbackWrong": {
+        "a": "O texto não pede apenas ver os servos; pede marcá-los com o selo.",
+        "c": "Não é ouvir: a ação que antecede o dano é selar na fronte."
+      },
+      "hint": "Veja o verbo ligado ao selo e à fronte.",
+      "learningObjective": "Compreender a ação que condiciona o dano.",
+      "evidence": ["Apocalipse 7:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 7:3 a Ezequiel 9:4?",
+      "verseRef": "Apocalipse 7:3",
+      "passageA": { "ref": "Apocalipse 7:3", "text": "até selarmos na fronte os servos do nosso Deus" },
+      "passageB": { "ref": "Ezequiel 9:4" },
+      "options": [
+        { "id": "a", "text": "Castigo sem aviso" },
+        { "id": "b", "text": "Fuga para o deserto" },
+        { "id": "c", "text": "Marca nos que pertencem a Deus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "evidence": ["Apocalipse 7:3", "Ezequiel 9:4"],
+      "feedbackCorrect": "Nos dois textos, uma marca na testa separa os que pertencem a Deus do juízo.",
+      "feedbackWrong": {
+        "a": "Nos dois textos há aviso e proteção: a marca vem antes do juízo.",
+        "b": "Nenhum dos textos fala de fuga para o deserto."
+      },
+      "hint": "Compare o que é colocado na testa ou fronte nos dois trechos.",
+      "learningObjective": "Relacionar o selo de Apocalipse 7 à marca de Ezequiel 9."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Apocalipse 7:2–3 ensina que Deus sela os seus servos só depois que o dano já passou pela terra.",
+      "verseRef": "Apocalipse 7:2–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não danifiqueis a terra, nem o mar, nem as árvores, até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "A ordem é inversa: o dano espera até que os servos sejam selados na fronte.",
+      "feedbackWrong": {
+        "true": "O texto manda não danificar até selar: o selo vem antes do dano."
+      },
+      "hint": "Veja o que a ordem proíbe até que o selo aconteça.",
+      "learningObjective": "Interpretar o selo como proteção que antecede o dano.",
+      "evidence": ["Apocalipse 7:2–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 7:3, toque o trecho que mostra a quem pertencem os selados.",
+      "verseRef": "Apocalipse 7:3",
+      "options": [
+        { "id": "a", "text": "a terra" },
+        { "id": "b", "text": "nosso Deus" },
+        { "id": "c", "text": "nem o mar" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os servos do nosso Deus",
+      "feedbackCorrect": "Os selados são servos do nosso Deus: o selo mostra a quem pertencem.",
+      "feedbackWrong": {
+        "a": "\"A terra\" é o que não deve ser danificado, não a quem os selados pertencem.",
+        "c": "\"Nem o mar\" faz parte da proibição, não da posse dos selados."
+      },
+      "hint": "Procure o possessivo ligado a \"servos\".",
+      "learningObjective": "Sustentar com o texto que os selados pertencem a Deus.",
+      "evidence": ["Apocalipse 7:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Apocalipse 7:2–3 sustenta sobre o selo dos servos de Deus?",
+      "verseRef": "Apocalipse 7:2–3",
+      "options": [
+        { "id": "a", "text": "Deus perdeu o controle, e os anjos seguram os ventos sozinhos" },
+        { "id": "b", "text": "Deus marca os seus como dele antes que o dano venha" },
+        { "id": "c", "text": "O selo é conquista de quem se esforça mais que os outros" },
+        { "id": "d", "text": "O selo só é colocado depois do dano à terra" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "que trazia o selo do Deus vivo",
+      "feedbackCorrect": "O selo é do Deus vivo e vem antes do dano: ele guarda os seus.",
+      "feedbackWrong": {
+        "a": "Os anjos agem sob ordem: o dano espera até o selo dos servos.",
+        "c": "O texto não fala de esforço; o selo vem do Deus vivo.",
+        "d": "A ordem é inversa: não danificar até selar."
+      },
+      "hint": "Compare cada opção com quem traz o selo e quando ele vem.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o selo.",
+      "evidence": ["Apocalipse 7:2–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da marca de Deus que passa por Apocalipse 7:3?",
+      "verseRef": "Apocalipse 7:3",
+      "options": [
+        { "id": "a", "text": "Em Ezequiel, uma marca protege os que gemem" },
+        { "id": "b", "text": "Os servos de Deus são selados na fronte" },
+        { "id": "c", "text": "Na cidade eterna, o nome de Deus estará nas testas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "evidence": ["Apocalipse 7:3", "Ezequiel 9:4", "Apocalipse 22:4"],
+      "feedbackCorrect": "A marca protetora de Ezequiel chega ao selo de Apocalipse e ao nome de Deus na cidade eterna.",
+      "feedbackWrong": {
+        "default": "Siga a história: Ezequiel (Ez 9:4), o selo (Ap 7:3) e a cidade eterna (Ap 22:4)."
+      },
+      "hint": "Comece pelo profeta e termine na cidade eterna.",
+      "learningObjective": "Ver a marca de Deus como fio que atravessa a Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 7:3, em que lugar do corpo os servos de Deus são selados?",
+      "verseRef": "Apocalipse 7:3",
+      "options": [
+        { "id": "a", "text": "mão" },
+        { "id": "b", "text": "língua" },
+        { "id": "c", "text": "fronte" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "até selarmos na fronte os servos do nosso Deus",
+      "feedbackCorrect": "O selo na fronte é visível: mostra de quem os servos são.",
+      "feedbackWrong": {
+        "a": "O texto não fala da mão; o selo é colocado em outro lugar.",
+        "b": "Não é a língua: o selo marca um lugar visível do rosto."
+      },
+      "hint": "É a parte do rosto onde a marca fica à vista.",
+      "learningObjective": "Lembrar o termo que carrega o sentido do selo.",
+      "evidence": ["Apocalipse 7:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 7:4 a Gênesis 49:28?",
+      "verseRef": "Apocalipse 7:4",
+      "passageA": { "ref": "Apocalipse 7:4", "text": "de todas as tribos dos filhos de Israel" },
+      "passageB": { "ref": "Gênesis 49:28" },
+      "options": [
+        { "id": "a", "text": "Os doze apóstolos de Jesus" },
+        { "id": "b", "text": "As sete igrejas da Ásia" },
+        { "id": "c", "text": "Israel e suas doze tribos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "de todas as tribos dos filhos de Israel",
+      "evidence": ["Apocalipse 7:4", "Gênesis 49:28"],
+      "feedbackCorrect": "As tribos de Israel de Apocalipse 7 remontam às doze tribos de Gênesis 49.",
+      "feedbackWrong": {
+        "a": "Os dois textos falam de tribos de Israel, não dos apóstolos.",
+        "b": "As igrejas da Ásia estão em Apocalipse 1 a 3, não nestes textos."
+      },
+      "hint": "Compare o grupo de que os dois textos falam.",
+      "learningObjective": "Ligar as tribos de Apocalipse 7 às tribos de Israel."
+    }
+  ]
+}

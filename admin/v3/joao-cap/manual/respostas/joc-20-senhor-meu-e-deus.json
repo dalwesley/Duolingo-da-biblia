@@ -1,0 +1,482 @@
+{
+  "study": {
+    "passageRef": "João 20:24–29",
+    "passages": [
+      { "ref": "João 20:24–29" }
+    ],
+    "context": "Jesus já tinha aparecido aos discípulos reunidos. Tomé não estava lá. Ao ouvir que viram o Senhor, ele exige ver as marcas e tocar o lado. Oito dias depois, o grupo está junto outra vez.",
+    "keyword": "Senhor e Deus",
+    "keywordGloss": "É o modo como Tomé nomeia Jesus quando o reconhece vivo diante dele.",
+    "focusQuestion": "Em quem você firma a fé quando ainda não viu o que espera?",
+    "reflectionPrompts": [
+      "A ausência de Tomé",
+      "A condição para crer",
+      "O encontro oito dias depois"
+    ],
+    "facts": [
+      {
+        "text": "Tomé não estava com eles quando Jesus veio.",
+        "evidenceRef": "João 20:24",
+        "evidenceSpan": "não estava com eles quando veio Jesus"
+      },
+      {
+        "text": "Os outros discípulos disseram que viram o Senhor.",
+        "evidenceRef": "João 20:25",
+        "evidenceSpan": "Vimos o Senhor"
+      },
+      {
+        "text": "Tomé diz que não acreditará se não vir as marcas dos cravos.",
+        "evidenceRef": "João 20:25",
+        "evidenceSpan": "Se eu não vir nas mãos dele as marcas dos cravos"
+      },
+      {
+        "text": "Jesus entrou mesmo com as portas trancadas.",
+        "evidenceRef": "João 20:26",
+        "evidenceSpan": "Jesus entrou, mesmo com as portas trancadas"
+      },
+      {
+        "text": "Tomé chama Jesus de Senhor e de Deus.",
+        "evidenceRef": "João 20:28",
+        "evidenceSpan": "Meu Senhor e meu Deus"
+      },
+      {
+        "text": "Jesus chama de bem-aventurados os que não viram e creram.",
+        "evidenceRef": "João 20:29",
+        "evidenceSpan": "bem-aventurados os que não viram e creram"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Título que Tomé dá a Jesus ao dizer quem ele é."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Tomé não para em mestre: chama Jesus de Deus."
+      },
+      {
+        "term": "crente",
+        "gloss": "É o que Jesus pede a Tomé no lugar de permanecer incrédulo."
+      }
+    ],
+    "structure": [
+      { "label": "Tomé não estava com o grupo", "evidenceRef": "João 20:24" },
+      { "label": "Os outros dizem que viram o Senhor", "evidenceRef": "João 20:25" },
+      { "label": "Ele só acredita se vir e tocar", "evidenceRef": "João 20:25" },
+      { "label": "Jesus se mostra e Tomé confessa", "evidenceRef": "João 20:26–28" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os discípulos dizem que viram o Senhor, mas Tomé responde que não acreditará sem ver e tocar.",
+        "marker": "Mas",
+        "evidenceRef": "João 20:25"
+      },
+      {
+        "kind": "contraste",
+        "text": "Jesus não deixa Tomé na incredulidade; chama-o a ser crente.",
+        "marker": "mas",
+        "evidenceRef": "João 20:27"
+      },
+      {
+        "kind": "causa",
+        "text": "Tomé crê porque viu Jesus; a visão é a razão que a frase aponta.",
+        "marker": "Porque",
+        "evidenceRef": "João 20:29"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 20:20", "bridge": "Eles viram o Senhor" },
+      { "ref": "João 20:31", "bridge": "Escrito para gerar fé" },
+      { "ref": "João 19:34", "bridge": "O lado ferido na cruz" }
+    ],
+    "misreadings": [
+      {
+        "text": "Tomé só crê porque colocou a mão nas feridas.",
+        "why": "Jesus liga a fé dele ao que ele viu. O relato não diz que ele chegou a tocar."
+      },
+      {
+        "text": "A bênção fica só com quem viu Jesus ressuscitado.",
+        "why": "Jesus chama de bem-aventurados os que não viram e creram."
+      },
+      {
+        "text": "Tomé reconhece Jesus apenas como um mestre humano.",
+        "why": "Ele diz Meu Senhor e meu Deus, e Jesus não corrige essa confissão."
+      }
+    ],
+    "centralInsight": "Felizes os que não viram e creram: Jesus é Senhor e Deus.",
+    "anchorQuestion": "O que Tomé diz a Jesus em João 20:28?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 20:25, os outros discípulos disseram que viram o Senhor.",
+      "verseRef": "João 20:25",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vimos o Senhor",
+      "feedbackCorrect": "A fala deles é direta: viram o Senhor.",
+      "feedbackWrong": {
+        "false": "Releia o que os outros discípulos dizem a Tomé: viram o Senhor."
+      },
+      "hint": "Olhe a frase entre aspas no começo do versículo.",
+      "learningObjective": "Reconhecer o que os outros discípulos anunciam a Tomé.",
+      "evidence": ["João 20:25"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 20:24, toque quem não estava com eles quando veio Jesus.",
+      "verseRef": "João 20:24",
+      "options": [
+        { "id": "a", "text": "Tomé" },
+        { "id": "b", "text": "dos doze" },
+        { "id": "c", "text": "Jesus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tomé, um dos doze",
+      "feedbackCorrect": "A frase começa por Tomé: ele não estava quando Jesus veio.",
+      "feedbackWrong": {
+        "b": "dos doze diz o grupo de que ele faz parte, não quem faltou.",
+        "c": "Jesus é quem veio; quem faltava é outra pessoa."
+      },
+      "hint": "Olhe o primeiro nome da frase.",
+      "learningObjective": "Identificar quem estava ausente quando Jesus veio.",
+      "evidence": ["João 20:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que João 20:26 diz da presença de Tomé?",
+      "verseRef": "João 20:26",
+      "options": [
+        { "id": "a", "text": "Ele continuava fora da reunião" },
+        { "id": "b", "text": "Ele estava com os discípulos reunidos" },
+        { "id": "c", "text": "Ele já tinha confessado sua fé" },
+        { "id": "d", "text": "Ele saiu antes de Jesus chegar" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Tomé estava com eles",
+      "feedbackCorrect": "Oito dias depois, os discípulos estão reunidos e Tomé está com eles.",
+      "feedbackWrong": {
+        "a": "Dessa vez ele não falta: o texto diz que Tomé estava com eles.",
+        "c": "A confissão só vem depois, quando Jesus já falou com ele.",
+        "d": "Ele está na sala quando Jesus entra e se põe no meio."
+      },
+      "hint": "Veja com quem Tomé está no começo do versículo.",
+      "learningObjective": "Observar que Tomé está presente na segunda reunião.",
+      "evidence": ["João 20:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 20:27 na ordem do texto.",
+      "verseRef": "João 20:27",
+      "options": [
+        { "id": "a", "text": "Ponha aqui o seu dedo e veja as minhas mãos" },
+        { "id": "b", "text": "aproxime também a sua mão e coloque-a no meu lado" },
+        { "id": "c", "text": "não seja incrédulo, mas crente" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ponha aqui o seu dedo e veja as minhas mãos",
+      "feedbackCorrect": "A ordem é o dedo nas mãos, a mão no lado e o chamado a crer.",
+      "feedbackWrong": {
+        "default": "Siga a fala de Jesus: primeiro as mãos, depois o lado."
+      },
+      "hint": "A frase começa pelo dedo e termina no chamado.",
+      "learningObjective": "Reconhecer a sequência do convite de Jesus a Tomé.",
+      "evidence": ["João 20:27"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 20:26, como estavam as portas quando Jesus entrou?",
+      "verseRef": "João 20:26",
+      "options": [
+        { "id": "a", "text": "abertas" },
+        { "id": "b", "text": "trancadas" },
+        { "id": "c", "text": "quebradas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mesmo com as portas trancadas",
+      "feedbackCorrect": "Jesus entrou mesmo com as portas trancadas, e ficou no meio deles.",
+      "feedbackWrong": {
+        "a": "O texto não fala de portas abertas; elas estavam do outro jeito.",
+        "c": "Não há porta quebrada; o estado que o versículo nomeia é outro."
+      },
+      "hint": "Veja o estado das portas na hora em que ele entra.",
+      "learningObjective": "Lembrar como estavam as portas quando Jesus entrou.",
+      "evidence": ["João 20:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 20:28 comunica que se liga a este contexto?",
+      "verseRef": "João 20:28",
+      "passageA": { "ref": "João 20:28" },
+      "passageB": { "ref": "Contexto", "text": "Tomé exigiu ver e tocar antes de acreditar." },
+      "options": [
+        { "id": "a", "text": "Ele mantém a recusa" },
+        { "id": "b", "text": "A exigência vira confissão" },
+        { "id": "c", "text": "Jesus fica em silêncio" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Meu Senhor e meu Deus",
+      "feedbackCorrect": "No lugar da exigência, Tomé responde com uma confissão.",
+      "feedbackWrong": {
+        "a": "A fala dele não repete a recusa; ele nomeia quem Jesus é.",
+        "c": "Jesus não fica calado: Tomé responde, e Jesus ainda lhe fala."
+      },
+      "hint": "Compare a fala final com o que ele pedia antes.",
+      "learningObjective": "Ligar a confissão de Tomé à exigência que ele tinha feito.",
+      "evidence": ["João 20:28"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 20:29, a fé de Tomé nasce de ele não ter visto Jesus.",
+      "verseRef": "João 20:29",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porque me viste, Tomé, creste",
+      "feedbackCorrect": "Jesus diz que Tomé creu porque o viu, não porque deixou de ver.",
+      "feedbackWrong": {
+        "true": "A frase liga a fé de Tomé ao que ele viu, não ao que ele não viu."
+      },
+      "hint": "Olhe o motivo que Jesus dá para a fé de Tomé.",
+      "learningObjective": "Compreender que a fé de Tomé, no texto, vem de ter visto.",
+      "evidence": ["João 20:29"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 20:25, toque a palavra que abre a resposta de Tomé.",
+      "verseRef": "João 20:25",
+      "options": [
+        { "id": "a", "text": "então" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "Senhor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Mas ele respondeu",
+      "feedbackCorrect": "Mas vira a cena: eles viram, e Tomé responde com uma condição.",
+      "feedbackWrong": {
+        "a": "então marca quando os outros falam, não o começo da resposta dele.",
+        "c": "Senhor é o que eles dizem ter visto, não a palavra que abre a resposta."
+      },
+      "hint": "Procure a palavra curta no meio das duas falas.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na resposta de Tomé.",
+      "evidence": ["João 20:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que João 20:25 faz entre o relato e a fala de Tomé?",
+      "verseRef": "João 20:25",
+      "options": [
+        { "id": "a", "text": "O relato encontra a recusa de Tomé" },
+        { "id": "b", "text": "Tomé confirma o que os outros viram" },
+        { "id": "c", "text": "Os outros passam a duvidar com ele" },
+        { "id": "d", "text": "As duas falas dizem a mesma coisa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas ele respondeu",
+      "feedbackCorrect": "O Mas separa as falas: eles viram, e Tomé recusa crer sem ver.",
+      "feedbackWrong": {
+        "b": "Ele não confirma o relato; põe uma condição para acreditar.",
+        "c": "Os outros não adotam a dúvida; a condição é a fala de Tomé.",
+        "d": "As falas não coincidem: uma anuncia, a outra recusa."
+      },
+      "hint": "Veja o que muda quando Tomé começa a falar.",
+      "learningObjective": "Relacionar o relato dos discípulos com a recusa de Tomé.",
+      "evidence": ["João 20:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em João 20:24–25?",
+      "verseRef": "João 20:24–25",
+      "options": [
+        { "id": "a", "text": "Tomé não estava com o grupo" },
+        { "id": "b", "text": "Os outros dizem que viram o Senhor" },
+        { "id": "c", "text": "Ele só acredita se vir e tocar" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "de modo algum acreditarei",
+      "feedbackCorrect": "Primeiro a ausência, depois o relato, e a condição de Tomé no fim.",
+      "feedbackWrong": {
+        "default": "Comece por quem não estava; a condição para crer fecha o trecho."
+      },
+      "hint": "A ausência abre; a condição para crer vem depois.",
+      "learningObjective": "Compreender o movimento da ausência até a condição de Tomé.",
+      "evidence": ["João 20:24–25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 20:29, o que acontece com Tomé porque ele viu?",
+      "verseRef": "João 20:29",
+      "options": [
+        { "id": "a", "text": "duvidaste" },
+        { "id": "b", "text": "calaste" },
+        { "id": "c", "text": "creste" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Porque me viste, Tomé, creste",
+      "feedbackCorrect": "Porque viu, creu: a frase liga a visão ao verbo da fé.",
+      "feedbackWrong": {
+        "a": "Duvidar é o contrário do verbo que Jesus usa depois do nome dele.",
+        "b": "Ele não fica em silêncio; o verbo da frase é de fé."
+      },
+      "hint": "Veja o verbo logo depois do nome dele.",
+      "learningObjective": "Compreender que ver, no texto, leva Tomé a crer.",
+      "evidence": ["João 20:29"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 20:25 a João 20:20?",
+      "verseRef": "João 20:25",
+      "passageA": { "ref": "João 20:25" },
+      "passageB": { "ref": "João 20:20" },
+      "options": [
+        { "id": "a", "text": "Eles viram o Senhor" },
+        { "id": "b", "text": "Tomé estava na sala" },
+        { "id": "c", "text": "Ninguém fala de Jesus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vimos o Senhor",
+      "feedbackCorrect": "Em 20:20 eles viram o Senhor; em 20:25 contam isso a Tomé.",
+      "feedbackWrong": {
+        "b": "Tomé não estava nessa primeira visita; o relato é dos outros.",
+        "c": "Os dois textos falam de ver o Senhor, não de silêncio sobre ele."
+      },
+      "hint": "Lembre o que aconteceu na primeira visita.",
+      "learningObjective": "Relacionar o relato a Tomé com o momento em que os outros viram.",
+      "evidence": ["João 20:25", "João 20:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "João 20:29 sustenta que há bênção para quem crê sem ter visto.",
+      "verseRef": "João 20:29",
+      "correctOptionId": "true",
+      "evidenceSpan": "bem-aventurados os que não viram e creram",
+      "feedbackCorrect": "A bênção, na fala de Jesus, é de quem creu sem ter visto.",
+      "feedbackWrong": {
+        "false": "O fim do versículo abençoa quem não viu e mesmo assim creu."
+      },
+      "hint": "Olhe a segunda parte da fala de Jesus.",
+      "learningObjective": "Interpretar a bênção como dirigida a quem crê sem ter visto.",
+      "evidence": ["João 20:29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 20:28, toque as últimas palavras da fala de Tomé.",
+      "verseRef": "João 20:28",
+      "options": [
+        { "id": "a", "text": "Tomé respondeu" },
+        { "id": "b", "text": "Meu Senhor" },
+        { "id": "c", "text": "meu Deus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "meu Deus",
+      "feedbackCorrect": "A frase termina com meu Deus: é assim que Tomé chama Jesus.",
+      "feedbackWrong": {
+        "a": "Isso só diz que ele respondeu; as últimas palavras vêm depois.",
+        "b": "Meu Senhor abre a confissão; não é o fim da frase."
+      },
+      "hint": "Olhe o que vem por último na fala dele.",
+      "learningObjective": "Sustentar com o texto que Tomé chama Jesus de Deus.",
+      "evidence": ["João 20:28"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 20:28–29 sustenta?",
+      "verseRef": "João 20:28–29",
+      "options": [
+        { "id": "a", "text": "Jesus é Senhor e Deus, e há bênção para quem crê sem ver" },
+        { "id": "b", "text": "Tomé reconhece Jesus só como mestre humano" },
+        { "id": "c", "text": "A bênção fica só com quem viu as feridas" },
+        { "id": "d", "text": "Tomé só crê porque tocou as feridas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu Senhor e meu Deus",
+      "feedbackCorrect": "Tomé o chama de Senhor e Deus, e há bênção para quem não viu.",
+      "feedbackWrong": {
+        "b": "A frase não para em mestre: Tomé diz meu Deus.",
+        "c": "A bênção é de quem não viu, não de quem viu as feridas.",
+        "d": "Jesus liga a fé ao que Tomé viu, e o texto não conta o toque."
+      },
+      "hint": "Compare cada leitura com a fala de Tomé e com o fim de Jesus.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre Jesus e sobre crer sem ver.",
+      "evidence": ["João 20:28–29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual caminho vai do lado ferido até quem crê sem ver?",
+      "verseRef": "João 20:28–29",
+      "options": [
+        { "id": "a", "text": "O lado de Jesus é ferido na cruz" },
+        { "id": "b", "text": "Jesus o convida a tocar o lado" },
+        { "id": "c", "text": "Ele confessa Senhor e Deus" },
+        { "id": "d", "text": "Jesus abençoa quem crê sem ver" }
+      ],
+      "correctOrder": ["a", "b", "c", "d"],
+      "evidenceSpan": "bem-aventurados os que não viram e creram",
+      "feedbackCorrect": "A ferida, o convite, a confissão e a bênção de quem não viu.",
+      "feedbackWrong": {
+        "default": "Siga a história: a cruz, o convite, a confissão e só então a bênção."
+      },
+      "hint": "Comece na cruz e termine em quem não precisou ver.",
+      "learningObjective": "Encadear a ferida da cruz, a confissão de Tomé e a bênção de quem crê sem ver.",
+      "evidence": ["João 19:34", "João 20:27", "João 20:28", "João 20:29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 20:27, o que Jesus pede que Tomé seja?",
+      "verseRef": "João 20:27",
+      "options": [
+        { "id": "a", "text": "crente" },
+        { "id": "b", "text": "fiel" },
+        { "id": "c", "text": "firme" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não seja incrédulo, mas crente",
+      "feedbackCorrect": "Jesus não pede só firmeza: a palavra do texto é crente.",
+      "feedbackWrong": {
+        "b": "Fiel cabe na frase, mas não é a palavra que Jesus usa.",
+        "c": "Firme também caberia; o texto escolhe outra palavra."
+      },
+      "hint": "Olhe a última palavra do pedido de Jesus.",
+      "learningObjective": "Lembrar o termo com que Jesus chama Tomé à fé.",
+      "evidence": ["João 20:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 20:29 a João 20:31?",
+      "verseRef": "João 20:29",
+      "passageA": { "ref": "João 20:29" },
+      "passageB": { "ref": "João 20:31" },
+      "options": [
+        { "id": "a", "text": "Só vale quem esteve lá" },
+        { "id": "b", "text": "Sinais escritos por Tomé" },
+        { "id": "c", "text": "Escrito para gerar fé" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não viram e creram",
+      "feedbackCorrect": "A bênção de quem não viu encontra o livro escrito para que creiam.",
+      "feedbackWrong": {
+        "a": "Os dois textos abrem a fé a quem não esteve na sala.",
+        "b": "O fim do capítulo não diz que Tomé escreveu os sinais."
+      },
+      "hint": "Veja para que fim o livro diz que foi feito.",
+      "learningObjective": "Ligar a bênção de quem não viu ao propósito do livro.",
+      "evidence": ["João 20:29", "João 20:31"]
+    }
+  ]
+}

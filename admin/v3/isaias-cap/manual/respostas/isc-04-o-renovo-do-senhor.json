@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Isaías 4:2–6",
+    "passages": [
+      { "ref": "Isaías 4:1" },
+      { "ref": "Isaías 4:2–6" }
+    ],
+    "context": "Depois do juízo, Isaías vê o Renovo do Senhor belo e glorioso, um remanescente chamado santo, e o Senhor cobrindo Sião com nuvem, fogo e abrigo.",
+    "keyword": "Renovo",
+    "keywordGloss": "O broto do Senhor que será beleza e glória para o remanescente.",
+    "focusQuestion": "Você busca abrigo sob a glória do Senhor ou só um nome para cobrir opróbrio?",
+    "reflectionPrompts": ["Renovo glorioso", "Remanescente santo", "Abrigo em Sião"],
+    "facts": [
+      {
+        "text": "Naquele dia o Renovo do Senhor será de beleza e glória.",
+        "evidenceRef": "Isaías 4:2",
+        "evidenceSpan": "o Renovo do SENHOR será de beleza e glória"
+      },
+      {
+        "text": "O fruto da terra será orgulho e adorno para os que restarem de Israel.",
+        "evidenceRef": "Isaías 4:2",
+        "evidenceSpan": "o fruto da terra será orgulho e adorno para os que restarem de Israel"
+      },
+      {
+        "text": "Todo o que restar em Sião e permanecer em Jerusalém será chamado santo.",
+        "evidenceRef": "Isaías 4:3",
+        "evidenceSpan": "será chamado santo"
+      },
+      {
+        "text": "O Senhor lavará a imundícia das filhas de Sião com o Espírito de justiça e purificador.",
+        "evidenceRef": "Isaías 4:4",
+        "evidenceSpan": "Quando o Senhor lavar a imundícia das filhas de Sião"
+      },
+      {
+        "text": "O Senhor criará sobre o monte Sião uma nuvem de dia e fogo à noite.",
+        "evidenceRef": "Isaías 4:5",
+        "evidenceSpan": "uma nuvem de dia, e fumaça e o brilho de um fogo flamejante à noite"
+      },
+      {
+        "text": "Haverá abrigo contra o calor, a tempestade e a chuva.",
+        "evidenceRef": "Isaías 4:6",
+        "evidenceSpan": "um abrigo que oferecerá sombra contra o calor do dia"
+      }
+    ],
+    "keyTerms": [
+      { "term": "Renovo", "gloss": "O broto do Senhor, beleza e glória do remanescente." },
+      { "term": "santo", "gloss": "Nome do que resta em Sião e permanece em Jerusalém." },
+      { "term": "abrigo", "gloss": "Proteção que o Senhor estende contra calor e tempestade." }
+    ],
+    "structure": [
+      { "label": "Opróbrio e busca de nome", "evidenceRef": "Isaías 4:1" },
+      { "label": "Renovo belo e remanescente", "evidenceRef": "Isaías 4:2–3" },
+      { "label": "Lavagem pelo Espírito", "evidenceRef": "Isaías 4:4" },
+      { "label": "Nuvem, fogo e abrigo sobre Sião", "evidenceRef": "Isaías 4:5–6" }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois de lavar a imundícia, o Senhor cria a cobertura de nuvem e fogo.",
+        "marker": "Quando",
+        "evidenceRef": "Isaías 4:4"
+      },
+      {
+        "kind": "propósito",
+        "text": "A cobertura se estende porque sobre toda a glória haverá um dossel.",
+        "marker": "pois",
+        "evidenceRef": "Isaías 4:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "O dossel se torna abrigo contra calor, tempestade e chuva.",
+        "marker": null,
+        "evidenceRef": "Isaías 4:6"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Êxodo 13:21", "bridge": "Nuvem de dia e fogo" },
+      { "ref": "Jeremias 23:5", "bridge": "Renovo justo do Senhor" },
+      { "ref": "Apocalipse 7:15–16", "bridge": "Abrigo sem calor" }
+    ],
+    "misreadings": [
+      {
+        "text": "O Renovo é só agricultura, sem ligação com o remanescente santo.",
+        "why": "O Renovo é beleza para os que restarem; o remanescente é chamado santo."
+      },
+      {
+        "text": "A cobertura de nuvem e fogo dispensa a lavagem da imundícia.",
+        "why": "O v.4 coloca a lavagem antes da criação do dossel."
+      },
+      {
+        "text": "Qualquer um em Jerusalém é chamado santo sem permanecer nem ser inscrito.",
+        "why": "O texto fala dos que restam, permanecem e estão inscritos para a vida."
+      }
+    ],
+    "centralInsight": "O Senhor criará sobre Sião uma nuvem de dia e um fogo de noite.",
+    "anchorQuestion": "O que Isaías 4:5 diz que o Senhor criará sobre o monte Sião?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 4:2, o Renovo do Senhor será de vergonha e opróbrio.",
+      "verseRef": "Isaías 4:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Renovo do SENHOR será de beleza e glória",
+      "feedbackCorrect": "O texto afirma beleza e glória do Renovo, não opróbrio.",
+      "feedbackWrong": { "true": "Leia o início de Isaías 4:2: beleza e glória." },
+      "hint": "Veja o que se diz do Renovo.",
+      "learningObjective": "Observar a descrição do Renovo.",
+      "evidence": ["Isaías 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 4:3, toque o nome dado a quem restar em Sião.",
+      "verseRef": "Isaías 4:3",
+      "options": [
+        { "id": "a", "text": "santo" },
+        { "id": "b", "text": "Sião" },
+        { "id": "c", "text": "vida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será chamado santo",
+      "feedbackCorrect": "O remanescente será chamado santo.",
+      "feedbackWrong": {
+        "b": "Sião é o lugar; o nome é santo.",
+        "c": "Vida liga à inscrição; o nome é santo."
+      },
+      "hint": "Veja o que \"será chamado\".",
+      "learningObjective": "Identificar o nome do remanescente.",
+      "evidence": ["Isaías 4:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 4:5, o que o Senhor criará sobre o monte Sião de dia?",
+      "verseRef": "Isaías 4:5",
+      "options": [
+        { "id": "a", "text": "Uma nuvem" },
+        { "id": "b", "text": "Uma espada" },
+        { "id": "c", "text": "Um opróbrio" },
+        { "id": "d", "text": "Um manto humano" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma nuvem de dia",
+      "feedbackCorrect": "De dia há nuvem; à noite, fogo flamejante.",
+      "feedbackWrong": {
+        "b": "O texto fala de nuvem e fogo, não de espada.",
+        "c": "Opróbrio aparece no v.1, não na cobertura.",
+        "d": "A cobertura é criada pelo Senhor, não por manto humano."
+      },
+      "hint": "Leia o que cobre Sião de dia.",
+      "learningObjective": "Notar a cobertura diurna.",
+      "evidence": ["Isaías 4:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 4:6 na ordem do texto.",
+      "verseRef": "Isaías 4:6",
+      "options": [
+        { "id": "a", "text": "E haverá um abrigo que oferecerá sombra contra o calor do dia" },
+        { "id": "b", "text": "e será um refúgio e esconderijo" },
+        { "id": "c", "text": "contra a tempestade e a chuva" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "E haverá um abrigo que oferecerá sombra contra o calor do dia",
+      "feedbackCorrect": "Abrigo, refúgio e proteção contra tempestade fecham a cena.",
+      "feedbackWrong": { "default": "Comece pelo abrigo contra o calor." },
+      "hint": "O versículo começa com o abrigo.",
+      "learningObjective": "Reconhecer a ordem da proteção.",
+      "evidence": ["Isaías 4:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 4:2, o quê do Senhor será de beleza e glória?",
+      "verseRef": "Isaías 4:2",
+      "options": [
+        { "id": "a", "text": "Renovo" },
+        { "id": "b", "text": "opróbrio" },
+        { "id": "c", "text": "tempestade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Renovo do SENHOR será de beleza e glória",
+      "feedbackCorrect": "O Renovo é o sujeito da beleza e da glória.",
+      "feedbackWrong": {
+        "b": "Opróbrio é o que as mulheres querem tirar no v.1.",
+        "c": "Tempestade é o que o abrigo cobre."
+      },
+      "hint": "É o sujeito no início do versículo.",
+      "learningObjective": "Lembrar o termo central da cena.",
+      "evidence": ["Isaías 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 4:5 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 4:5",
+      "passageA": { "ref": "Isaías 4:5", "text": "uma nuvem de dia, e fumaça e o brilho de um fogo flamejante à noite" },
+      "passageB": { "ref": "Contexto", "text": "Depois da lavagem, o Senhor cobre Sião com presença protetora." },
+      "options": [
+        { "id": "a", "text": "Presença que cobre Sião" },
+        { "id": "b", "text": "Ausência total de Deus" },
+        { "id": "c", "text": "Só opróbrio permanece" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma nuvem de dia, e fumaça e o brilho de um fogo flamejante à noite",
+      "feedbackCorrect": "Nuvem e fogo são a cobertura da glória sobre Sião.",
+      "feedbackWrong": {
+        "b": "O Senhor cria a cobertura; não se ausenta.",
+        "c": "O opróbrio do v.1 cede à glória coberta."
+      },
+      "hint": "Veja o que é criado sobre o monte.",
+      "learningObjective": "Ligar a cobertura ao contexto da restauração.",
+      "evidence": ["Isaías 4:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 4:4–5, a cobertura de nuvem e fogo aparece sem qualquer lavagem prévia no texto.",
+      "verseRef": "Isaías 4:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quando o Senhor lavar a imundícia das filhas de Sião",
+      "feedbackCorrect": "O \"Quando\" liga a lavagem à criação da cobertura.",
+      "feedbackWrong": { "true": "O v.4 introduz a lavagem antes do v.5." },
+      "hint": "Veja a palavra que abre o versículo 4.",
+      "learningObjective": "Compreender a sequência lavagem → cobertura.",
+      "evidence": ["Isaías 4:4–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 4:4, toque a palavra que marca o tempo da lavagem.",
+      "verseRef": "Isaías 4:4",
+      "options": [
+        { "id": "a", "text": "Quando" },
+        { "id": "b", "text": "imundícia" },
+        { "id": "c", "text": "Espírito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando o Senhor lavar a imundícia das filhas de Sião",
+      "feedbackCorrect": "\"Quando\" ordena a lavagem antes da cobertura.",
+      "feedbackWrong": {
+        "b": "Imundícia é o que se lava, não o marcador temporal.",
+        "c": "Espírito é o meio; o marcador temporal é Quando."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de sequência.",
+      "evidence": ["Isaías 4:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 4:4–6 relaciona limpeza e proteção?",
+      "verseRef": "Isaías 4:4–6",
+      "options": [
+        { "id": "a", "text": "Depois de lavar, o Senhor cobre e abriga Sião" },
+        { "id": "b", "text": "O abrigo vem antes de qualquer lavagem" },
+        { "id": "c", "text": "A lavagem dispensa qualquer cobertura" },
+        { "id": "d", "text": "Só há tempestade, sem abrigo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E haverá um abrigo que oferecerá sombra contra o calor do dia",
+      "feedbackCorrect": "Lavagem, dossel e abrigo formam a sequência.",
+      "feedbackWrong": {
+        "b": "O \"Quando\" da lavagem vem antes da criação do dossel.",
+        "c": "Depois da lavagem vem a cobertura.",
+        "d": "O texto promete abrigo contra a tempestade."
+      },
+      "hint": "Siga a ordem dos versículos 4 a 6.",
+      "learningObjective": "Relacionar limpeza e abrigo.",
+      "evidence": ["Isaías 4:4–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 4:2–5?",
+      "verseRef": "Isaías 4:2–5",
+      "options": [
+        { "id": "a", "text": "O Renovo é beleza para o remanescente" },
+        { "id": "b", "text": "Os que restam são chamados santos" },
+        { "id": "c", "text": "O Senhor cobre Sião com nuvem e fogo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "uma nuvem de dia",
+      "feedbackCorrect": "Renovo, remanescente santo e cobertura fecham o movimento.",
+      "feedbackWrong": { "default": "A cobertura vem depois do remanescente santo." },
+      "hint": "A nuvem aparece por último.",
+      "learningObjective": "Ver a progressão da restauração.",
+      "evidence": ["Isaías 4:2–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 4:5, sobre toda a glória se estenderá um quê?",
+      "verseRef": "Isaías 4:5",
+      "options": [
+        { "id": "a", "text": "dossel" },
+        { "id": "b", "text": "opróbrio" },
+        { "id": "c", "text": "manto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sobre toda a glória se estenderá um dossel",
+      "feedbackCorrect": "O dossel explica a cobertura da glória.",
+      "feedbackWrong": {
+        "b": "Opróbrio é o que se quer tirar no v.1.",
+        "c": "Manto não é o termo da cobertura aqui."
+      },
+      "hint": "Veja o fim do versículo 5.",
+      "learningObjective": "Lembrar a palavra da cobertura.",
+      "evidence": ["Isaías 4:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 4:5 a Êxodo 13:21?",
+      "verseRef": "Isaías 4:5",
+      "passageA": { "ref": "Isaías 4:5", "text": "uma nuvem de dia, e fumaça e o brilho de um fogo flamejante à noite" },
+      "passageB": { "ref": "Êxodo 13:21" },
+      "options": [
+        { "id": "a", "text": "Nuvem de dia e fogo" },
+        { "id": "b", "text": "Ausência no deserto" },
+        { "id": "c", "text": "Só calor sem sombra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma nuvem de dia, e fumaça e o brilho de um fogo flamejante à noite",
+      "feedbackCorrect": "A cobertura de Sião ecoa a presença que guiava Israel.",
+      "feedbackWrong": {
+        "b": "Nos dois textos Deus se faz presente.",
+        "c": "Isaías também promete abrigo contra o calor."
+      },
+      "hint": "Compare nuvem e fogo.",
+      "learningObjective": "Ligar a cobertura de Sião ao Êxodo.",
+      "evidence": ["Isaías 4:5", "Êxodo 13:21"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 4:2–3 sustenta que o Renovo glorioso e o remanescente chamado santo pertencem à mesma restauração.",
+      "verseRef": "Isaías 4:2–3",
+      "correctOptionId": "true",
+      "evidenceSpan": "para os que restarem de Israel",
+      "feedbackCorrect": "O Renovo é glória para os que restam; esses são chamados santos.",
+      "feedbackWrong": { "false": "O fruto e o Renovo são para os que restam, logo chamados santos." },
+      "hint": "Veja para quem é o Renovo e quem é chamado santo.",
+      "learningObjective": "Interpretar Renovo e remanescente juntos.",
+      "evidence": ["Isaías 4:2–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 4:4, toque o trecho que mostra o meio da limpeza de Sião.",
+      "verseRef": "Isaías 4:4",
+      "options": [
+        { "id": "a", "text": "Espírito de justiça" },
+        { "id": "b", "text": "filhas de Sião" },
+        { "id": "c", "text": "culpa do sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com o Espírito de justiça e com o Espírito purificador",
+      "feedbackCorrect": "A lavagem se dá com o Espírito de justiça e purificador.",
+      "feedbackWrong": {
+        "b": "Filhas de Sião são lavadas; o meio é o Espírito.",
+        "c": "Culpa do sangue é o que se limpa, não o meio."
+      },
+      "hint": "Procure o \"com o\" da lavagem.",
+      "learningObjective": "Sustentar a limpeza pelo Espírito.",
+      "evidence": ["Isaías 4:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 4:1–6 sustenta?",
+      "verseRef": "Isaías 4:1–6",
+      "options": [
+        { "id": "a", "text": "Do opróbrio à cobertura: o Senhor limpa e abriga o remanescente" },
+        { "id": "b", "text": "Basta um nome humano para tirar o opróbrio" },
+        { "id": "c", "text": "A glória vem sem lavagem nem remanescente" },
+        { "id": "d", "text": "Não há abrigo depois do juízo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor criará sobre toda a habitação do monte Sião",
+      "feedbackCorrect": "O capítulo move do opróbrio à lavagem e ao abrigo da glória.",
+      "feedbackWrong": {
+        "b": "O v.1 mostra a busca humana; a restauração vem do Senhor.",
+        "c": "Há remanescente santo e lavagem antes da cobertura.",
+        "d": "O v.6 promete abrigo e refúgio."
+      },
+      "hint": "Compare o v.1 com os vv.4–6.",
+      "learningObjective": "Escolher a leitura do arco da cena.",
+      "evidence": ["Isaías 4:1–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o Renovo à cobertura na Escritura?",
+      "verseRef": "Isaías 4:2",
+      "options": [
+        { "id": "a", "text": "O Renovo do Senhor é glória" },
+        { "id": "b", "text": "Jeremias anuncia o Renovo justo" },
+        { "id": "c", "text": "O Cordeiro abriga sem calor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Renovo do SENHOR será de beleza e glória",
+      "evidence": ["Isaías 4:2", "Jeremias 23:5", "Apocalipse 7:15–16"],
+      "feedbackCorrect": "O Renovo ecoa em Jeremias e aponta ao abrigo final.",
+      "feedbackWrong": { "default": "Comece por Isaías; depois Jeremias; enfim Apocalipse." },
+      "hint": "Siga Renovo → Renovo → abrigo.",
+      "learningObjective": "Encadear Renovo e abrigo na Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 4:6, haverá um quê que oferecerá sombra contra o calor?",
+      "verseRef": "Isaías 4:6",
+      "options": [
+        { "id": "a", "text": "abrigo" },
+        { "id": "b", "text": "opróbrio" },
+        { "id": "c", "text": "sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E haverá um abrigo que oferecerá sombra contra o calor do dia",
+      "feedbackCorrect": "Abrigo é o termo da proteção final da cena.",
+      "feedbackWrong": {
+        "b": "Opróbrio é o problema do v.1.",
+        "c": "Sangue aparece na culpa limpa no v.4."
+      },
+      "hint": "É o substantivo depois de \"haverá um\".",
+      "learningObjective": "Lembrar o termo da proteção.",
+      "evidence": ["Isaías 4:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 4:2 a Jeremias 23:5?",
+      "verseRef": "Isaías 4:2",
+      "passageA": { "ref": "Isaías 4:2", "text": "o Renovo do SENHOR será de beleza e glória" },
+      "passageB": { "ref": "Jeremias 23:5" },
+      "options": [
+        { "id": "a", "text": "Renovo justo do Senhor" },
+        { "id": "b", "text": "Só agricultura local" },
+        { "id": "c", "text": "Ausência de rei" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Renovo do SENHOR será de beleza e glória",
+      "feedbackCorrect": "Os dois profetas usam o Renovo do Senhor na esperança de restauração.",
+      "feedbackWrong": {
+        "b": "Jeremias liga o Renovo a um rei justo.",
+        "c": "Jeremias fala de rei que reina com sabedoria."
+      },
+      "hint": "Compare a palavra Renovo.",
+      "learningObjective": "Ligar o Renovo de Isaías ao de Jeremias.",
+      "evidence": ["Isaías 4:2", "Jeremias 23:5"]
+    }
+  ]
+}

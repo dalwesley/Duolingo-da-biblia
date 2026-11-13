@@ -1,0 +1,915 @@
+{
+  "study": {
+    "slug": "s2c-02-ungido-em-hebrom",
+    "passageRef": "2 Samuel 2:1–7",
+    "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\" E Davi subiu para lá, levando consigo suas duas esposas Ainoã, a jezreelita, e Abigail, a viúva de Nabal, o carmelita. Davi também fez subir os homens que estavam com ele, cada um com sua família; e habitaram nas aldeias de Hebrom. Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul. Então Davi enviou mensageiros aos homens de Jabes-Gileade e disse-lhes: Benditos sejais vós, do Senhor, por esta humanidade que demonstrastes para com vosso senhor, para com Saul, ao sepultá-lo! Agora, pois, o Senhor seja misericordioso e fiel convosco; e eu também recompensarei esse bem que fizestes. Esforçai, pois, agora as vossas mãos, e sede valentes, pois Saul, vosso senhor, está morto, e os da casa de Judá me ungiram rei sobre si.",
+    "passages": [
+      {
+        "ref": "2 Samuel 2:1–7",
+        "text": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\" E Davi subiu para lá, levando consigo suas duas esposas Ainoã, a jezreelita, e Abigail, a viúva de Nabal, o carmelita. Davi também fez subir os homens que estavam com ele, cada um com sua família; e habitaram nas aldeias de Hebrom. Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul. Então Davi enviou mensageiros aos homens de Jabes-Gileade e disse-lhes: Benditos sejais vós, do Senhor, por esta humanidade que demonstrastes para com vosso senhor, para com Saul, ao sepultá-lo! Agora, pois, o Senhor seja misericordioso e fiel convosco; e eu também recompensarei esse bem que fizestes. Esforçai, pois, agora as vossas mãos, e sede valentes, pois Saul, vosso senhor, está morto, e os da casa de Judá me ungiram rei sobre si."
+      }
+    ],
+    "context": "Saul morreu. Davi consulta o Senhor, sobe a Hebrom, é ungido sobre Judá e abençoa quem sepultou Saul.",
+    "keyword": "Hebrom",
+    "keywordGloss": "Cidade aonde o Senhor manda Davi subir e onde Judá o unge rei.",
+    "focusQuestion": "Você consulta o Senhor antes de dar o próximo passo?",
+    "reflectionPrompts": [
+      "Consultar o Senhor",
+      "Ungido em Hebrom",
+      "Bendizer Jabes"
+    ],
+    "facts": [
+      {
+        "text": "Davi consultou ao Senhor se deveria subir a Judá.",
+        "evidenceRef": "2 Samuel 2:1",
+        "evidenceSpan": "Davi consultou ao Senhor"
+      },
+      {
+        "text": "O Senhor mandou Davi subir para Hebrom.",
+        "evidenceRef": "2 Samuel 2:1",
+        "evidenceSpan": "E o Senhor respondeu: \"Para Hebrom.\""
+      },
+      {
+        "text": "Os homens de Judá ungiram Davi rei sobre a casa de Judá.",
+        "evidenceRef": "2 Samuel 2:4",
+        "evidenceSpan": "ungiram ali Davi rei sobre a casa de Judá"
+      },
+      {
+        "text": "Homens de Jabes-Gileade sepultaram Saul.",
+        "evidenceRef": "2 Samuel 2:4",
+        "evidenceSpan": "Foram os homens de Jabes-Gileade que sepultaram Saul"
+      },
+      {
+        "text": "Davi abençoa Jabes pela humanidade com Saul.",
+        "evidenceRef": "2 Samuel 2:5",
+        "evidenceSpan": "Benditos sejais vós, do Senhor"
+      },
+      {
+        "text": "Davi diz que Judá o ungiu rei sobre si.",
+        "evidenceRef": "2 Samuel 2:7",
+        "evidenceSpan": "os da casa de Judá me ungiram rei sobre si"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Hebrom",
+        "gloss": "Lugar indicado pelo Senhor para a subida de Davi."
+      },
+      {
+        "term": "ungiram",
+        "gloss": "Ato de Judá que reconhece Davi como rei."
+      },
+      {
+        "term": "misericordioso",
+        "gloss": "Pedido de Davi: que o Senhor seja fiel a quem sepultou Saul."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Consulta e ordem de subir a Hebrom",
+        "evidenceRef": "2 Samuel 2:1"
+      },
+      {
+        "label": "Davi sobe com família e homens",
+        "evidenceRef": "2 Samuel 2:2–3"
+      },
+      {
+        "label": "Judá unge Davi e informa sobre Jabes",
+        "evidenceRef": "2 Samuel 2:4"
+      },
+      {
+        "label": "Bênção e ânimo a Jabes-Gileade",
+        "evidenceRef": "2 Samuel 2:5–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Davi pergunta; o Senhor responde e ele segue a ordem.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 2:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da unção, Davi envia mensageiros a Jabes.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 2:5"
+      },
+      {
+        "kind": "causa",
+        "text": "Esforcem as mãos, pois Saul morreu e Judá ungiu Davi.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 2:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 16:13",
+        "bridge": "Unção anterior de Davi",
+        "text": "Então Samuel tomou o chifre de azeite e ungiu Davi na presença de seus irmãos; e, a partir daquele dia, o Espírito do Senhor se apossou de Davi. Então, Samuel se levantou e foi para Ramá."
+      },
+      {
+        "ref": "1 Samuel 31:11–13",
+        "bridge": "Jabes sepulta Saul"
+      },
+      {
+        "ref": "Salmos 37:5",
+        "bridge": "Entregar o caminho ao Senhor",
+        "text": "Entrega o teu caminho ao SENHOR; confia nele, e o mais ele fará."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Davi sobe a Judá sem perguntar a Deus.",
+        "why": "Ele consulta o Senhor e só sobe depois da resposta."
+      },
+      {
+        "text": "Davi castiga Jabes por sepultar Saul.",
+        "why": "Ele os chama benditos e promete recompensar o bem."
+      },
+      {
+        "text": "A unção em Hebrom já cobre todo Israel.",
+        "why": "O texto diz rei sobre a casa de Judá."
+      }
+    ],
+    "centralInsight": "Davi sobe só depois de ouvir o Senhor e abençoa quem sepultou Saul.",
+    "anchorQuestion": "Segundo 2 Samuel 2:1, para onde o Senhor manda Davi subir?",
+    "relatedVerses": [
+      {
+        "reference": "1 Samuel 16:13",
+        "reason": "Unção anterior de Davi"
+      },
+      {
+        "reference": "1 Samuel 31:11–13",
+        "reason": "Jabes sepulta Saul"
+      },
+      {
+        "reference": "Salmos 37:5",
+        "reason": "Entregar o caminho ao Senhor"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "2samuel-cap-sem-s2c-02-ungido-em-hebrom-01",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em 2 Samuel 2:1, Davi consultou ao Senhor antes de subir.",
+      "prompt": "Em 2 Samuel 2:1, Davi consultou ao Senhor antes de subir.",
+      "cue": "Em 2 Samuel 2:1, Davi consultou ao Senhor antes de subir.",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Davi consultou ao Senhor",
+      "feedbackCorrect": "Ele pergunta antes de agir.",
+      "feedbackWrong": {
+        "false": "O verso abre com a consulta."
+      },
+      "hint": "Veja o início.",
+      "learningObjective": "Observar a consulta.",
+      "evidence": [
+        "2 Samuel 2:1"
+      ]
+    },
+    {
+      "id": "2samuel-cap-sem-s2c-02-ungido-em-hebrom-02",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em 2 Samuel 2:1, toque para onde o Senhor manda subir.",
+      "prompt": "Em 2 Samuel 2:1, toque para onde o Senhor manda subir.",
+      "cue": "Em 2 Samuel 2:1, toque para onde o Senhor manda subir.",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "consultou"
+        },
+        {
+          "id": "c",
+          "text": "disso"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "disso",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "b": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar Hebrom.",
+      "evidence": [
+        "2 Samuel 2:1"
+      ]
+    },
+    {
+      "id": "2samuel-cap-sem-s2c-02-ungido-em-hebrom-03",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo 2 Samuel 2:4, quem ungiu Davi rei sobre a casa de Judá?",
+      "prompt": "Segundo 2 Samuel 2:4, quem ungiu Davi rei sobre a casa de Judá?",
+      "cue": "Segundo 2 Samuel 2:4, quem ungiu Davi rei sobre a casa de Judá?",
+      "verseRef": "2 Samuel 2:4",
+      "passageText": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os filisteus"
+        },
+        {
+          "id": "b",
+          "text": "Os homens de Jabes"
+        },
+        {
+          "id": "c",
+          "text": "Os filhos de Saul"
+        },
+        {
+          "id": "d",
+          "text": "Os homens de Judá"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "vieram os homens de Judá e ungiram ali Davi",
+      "feedbackCorrect": "Judá unge Davi.",
+      "feedbackWrong": {
+        "a": "Não são filisteus.",
+        "b": "Jabes sepultou Saul.",
+        "c": "Não são os filhos."
+      },
+      "hint": "Quem veio a Hebrom?",
+      "learningObjective": "Reconhecer a unção.",
+      "evidence": [
+        "2 Samuel 2:4"
+      ]
+    },
+    {
+      "id": "2samuel-cap-sem-s2c-02-ungido-em-hebrom-04",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte 2 Samuel 2:4 na ordem do texto.",
+      "prompt": "Monte 2 Samuel 2:4 na ordem do texto.",
+      "cue": "Monte 2 Samuel 2:4 na ordem do texto.",
+      "verseRef": "2 Samuel 2:4",
+      "passageText": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vieram os homens de Judá e ungiram ali Davi rei"
+        },
+        {
+          "id": "b",
+          "text": "sobre a casa de Judá"
+        },
+        {
+          "id": "c",
+          "text": "Foram os homens de Jabes-Gileade que sepultaram Saul"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "ungiram ali Davi rei sobre a casa de Judá",
+      "feedbackCorrect": "Unção e notícia de Jabes.",
+      "feedbackWrong": {
+        "default": "Comece pelos homens de Judá."
+      },
+      "hint": "O que vem depois da unção?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 2:4"
+      ]
+    },
+    {
+      "id": "2samuel-cap-sem-s2c-02-ungido-em-hebrom-05",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em 2 Samuel 2:5, complete: ___ sejais vós, do Senhor.",
+      "prompt": "Em 2 Samuel 2:5, complete: ___ sejais vós, do Senhor.",
+      "cue": "Em 2 Samuel 2:5, complete: ___ sejais vós, do Senhor.",
+      "verseRef": "2 Samuel 2:5",
+      "passageText": "Então Davi enviou mensageiros aos homens de Jabes-Gileade e disse-lhes: Benditos sejais vós, do Senhor, por esta humanidade que demonstrastes para com vosso senhor, para com Saul, ao sepultá-lo!",
+      "template": "Então Davi enviou mensageiros aos homens de Jabes-Gileade e disse-lhes: ___ sejais vós, do Senhor, por esta humanidade que demonstrastes para com vosso senhor, para com Saul, ao sepultá-lo!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Benditos"
+        },
+        {
+          "id": "b",
+          "text": "Malditos"
+        },
+        {
+          "id": "c",
+          "text": "Silenciosos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Benditos sejais vós, do Senhor",
+      "feedbackCorrect": "Benditos.",
+      "feedbackWrong": {
+        "b": "Não é malditos.",
+        "c": "Não é silenciosos."
+      },
+      "hint": "Veja a bênção.",
+      "learningObjective": "Lembrar Benditos.",
+      "evidence": [
+        "2 Samuel 2:5"
+      ]
+    },
+    {
+      "id": "2samuel-cap-sem-s2c-02-ungido-em-hebrom-06",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que 2 Samuel 2:1 comunica que se liga a este contexto?",
+      "prompt": "O que 2 Samuel 2:1 comunica que se liga a este contexto?",
+      "cue": "O que 2 Samuel 2:1 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "passageA": {
+        "ref": "2 Samuel 2:1",
+        "text": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\""
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Davi só sobe depois de ouvir o Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Foge de Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "Consulta antes de subir"
+        },
+        {
+          "id": "c",
+          "text": "Sobe sem perguntar"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Davi consultou ao Senhor",
+      "feedbackCorrect": "Primeiro a consulta.",
+      "feedbackWrong": {
+        "a": "Ele sobe a Hebrom.",
+        "c": "Há pergunta."
+      },
+      "hint": "O que Davi faz primeiro?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 2:1"
+      ]
+    },
+    {
+      "id": "2samuel-cap-cam-s2c-02-ungido-em-hebrom-01",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em 2 Samuel 2:5, o texto traz o trecho — Benditos sejais vós, do Senhor.",
+      "prompt": "Em 2 Samuel 2:5, o texto traz o trecho — Benditos sejais vós, do Senhor.",
+      "cue": "Em 2 Samuel 2:5, o texto traz o trecho — Benditos sejais vós, do Senhor.",
+      "verseRef": "2 Samuel 2:5",
+      "passageText": "Então Davi enviou mensageiros aos homens de Jabes-Gileade e disse-lhes: Benditos sejais vós, do Senhor, por esta humanidade que demonstrastes para com vosso senhor, para com Saul, ao sepultá-lo!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Benditos sejais vós, do Senhor",
+      "feedbackCorrect": "O versículo confirma a afirmação.",
+      "feedbackWrong": {
+        "false": "O trecho está no versículo."
+      },
+      "hint": "Compare com o palco.",
+      "learningObjective": "Ver a bênção a Jabes.",
+      "evidence": [
+        "2 Samuel 2:5"
+      ]
+    },
+    {
+      "id": "2samuel-cap-cam-s2c-02-ungido-em-hebrom-02",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em 2 Samuel 2:7, toque o marcador de causa.",
+      "prompt": "Em 2 Samuel 2:7, toque o marcador de causa.",
+      "cue": "Em 2 Samuel 2:7, toque o marcador de causa.",
+      "verseRef": "2 Samuel 2:7",
+      "passageText": "Esforçai, pois, agora as vossas mãos, e sede valentes, pois Saul, vosso senhor, está morto, e os da casa de Judá me ungiram rei sobre si.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vossas"
+        },
+        {
+          "id": "b",
+          "text": "agora"
+        },
+        {
+          "id": "c",
+          "text": "Esforçai"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Esforçai",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "b": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "2 Samuel 2:7"
+      ]
+    },
+    {
+      "id": "2samuel-cap-cam-s2c-02-ungido-em-hebrom-03",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação 2 Samuel 2:7 faz?",
+      "prompt": "Que relação 2 Samuel 2:7 faz?",
+      "cue": "Que relação 2 Samuel 2:7 faz?",
+      "verseRef": "2 Samuel 2:7",
+      "passageText": "Esforçai, pois, agora as vossas mãos, e sede valentes, pois Saul, vosso senhor, está morto, e os da casa de Judá me ungiram rei sobre si.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Silêncio porque o Senhor não falou"
+        },
+        {
+          "id": "b",
+          "text": "Castigo porque Jabes falhou"
+        },
+        {
+          "id": "c",
+          "text": "Fuga porque Hebrom rejeitou"
+        },
+        {
+          "id": "d",
+          "text": "Ânimo porque Saul morreu e Judá ungiu Davi"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "sede valentes, pois Saul, vosso senhor, está morto",
+      "feedbackCorrect": "Causa do ânimo.",
+      "feedbackWrong": {
+        "a": "O Senhor já falou.",
+        "b": "Há bênção, não castigo.",
+        "c": "Há unção em Hebrom."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "2 Samuel 2:7"
+      ]
+    },
+    {
+      "id": "2samuel-cap-cam-s2c-02-ungido-em-hebrom-04",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos da cena.",
+      "prompt": "Ordene os movimentos da cena.",
+      "cue": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consulta e ordem de subir a Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "Judá unge Davi e informa sobre Jabes"
+        },
+        {
+          "id": "c",
+          "text": "Bênção e ânimo a Jabes-Gileade"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Davi consultou ao Senhor",
+      "feedbackCorrect": "Consulta, unção e bênção.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta."
+      },
+      "hint": "O que fecha a cena?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 2:1",
+        "2 Samuel 2:7"
+      ]
+    },
+    {
+      "id": "2samuel-cap-cam-s2c-02-ungido-em-hebrom-05",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em 2 Samuel 2:6, complete: o Senhor seja ___ e fiel convosco.",
+      "prompt": "Em 2 Samuel 2:6, complete: o Senhor seja ___ e fiel convosco.",
+      "cue": "Em 2 Samuel 2:6, complete: o Senhor seja ___ e fiel convosco.",
+      "verseRef": "2 Samuel 2:6",
+      "passageText": "Agora, pois, o Senhor seja misericordioso e fiel convosco; e eu também recompensarei esse bem que fizestes.",
+      "template": "Agora, pois, o Senhor seja ___ e fiel convosco; e eu também recompensarei esse bem que fizestes.",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericordioso"
+        },
+        {
+          "id": "b",
+          "text": "distante"
+        },
+        {
+          "id": "c",
+          "text": "surdo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o Senhor seja misericordioso e fiel convosco",
+      "feedbackCorrect": "Misericordioso.",
+      "feedbackWrong": {
+        "b": "Não é distante.",
+        "c": "Não é surdo."
+      },
+      "hint": "Veja o pedido.",
+      "learningObjective": "Lembrar misericordioso.",
+      "evidence": [
+        "2 Samuel 2:6"
+      ]
+    },
+    {
+      "id": "2samuel-cap-cam-s2c-02-ungido-em-hebrom-06",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga 2 Samuel 2:4 a 1 Samuel 31:11–13?",
+      "prompt": "O que liga 2 Samuel 2:4 a 1 Samuel 31:11–13?",
+      "cue": "O que liga 2 Samuel 2:4 a 1 Samuel 31:11–13?",
+      "verseRef": "2 Samuel 2:4",
+      "passageText": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "passageA": {
+        "ref": "2 Samuel 2:4",
+        "text": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul."
+      },
+      "passageB": {
+        "ref": "1 Samuel 31:11–13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jabes sepulta Saul"
+        },
+        {
+          "id": "b",
+          "text": "Jabes unge Davi"
+        },
+        {
+          "id": "c",
+          "text": "Jabes rejeita Saul"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Foram os homens de Jabes-Gileade que sepultaram Saul",
+      "feedbackCorrect": "A notícia ecoa o sepultamento.",
+      "feedbackWrong": {
+        "b": "Judá unge Davi.",
+        "c": "Eles sepultaram."
+      },
+      "hint": "Compare Jabes.",
+      "learningObjective": "Ligar ao sepultamento.",
+      "evidence": [
+        "2 Samuel 2:4",
+        "1 Samuel 31:11–13"
+      ]
+    },
+    {
+      "id": "2samuel-cap-pro-s2c-02-ungido-em-hebrom-01",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em 2 Samuel 2:1–4, Davi sobe a Hebrom sem consultar o Senhor e é ungido sobre todo Israel.",
+      "prompt": "Em 2 Samuel 2:1–4, Davi sobe a Hebrom sem consultar o Senhor e é ungido sobre todo Israel.",
+      "cue": "Em 2 Samuel 2:1–4, Davi sobe a Hebrom sem consultar o Senhor e é ungido sobre todo Israel.",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Davi consultou ao Senhor",
+      "feedbackCorrect": "Ele consulta e a unção é sobre Judá.",
+      "feedbackWrong": {
+        "true": "Há consulta; a unção é sobre Judá."
+      },
+      "hint": "Veja a consulta e o alcance.",
+      "learningObjective": "Avaliar a leitura da subida.",
+      "evidence": [
+        "2 Samuel 2:1"
+      ]
+    },
+    {
+      "id": "2samuel-cap-pro-s2c-02-ungido-em-hebrom-02",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em 2 Samuel 2:4, toque o ato que reconhece Davi.",
+      "prompt": "Em 2 Samuel 2:4, toque o ato que reconhece Davi.",
+      "cue": "Em 2 Samuel 2:4, toque o ato que reconhece Davi.",
+      "verseRef": "2 Samuel 2:4",
+      "passageText": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vieram"
+        },
+        {
+          "id": "b",
+          "text": "ungiram"
+        },
+        {
+          "id": "c",
+          "text": "homens"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "vieram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar a unção.",
+      "evidence": [
+        "2 Samuel 2:4"
+      ]
+    },
+    {
+      "id": "2samuel-cap-pro-s2c-02-ungido-em-hebrom-03",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Qual leitura melhor une consulta, unção e bênção a Jabes?",
+      "prompt": "Qual leitura melhor une consulta, unção e bênção a Jabes?",
+      "cue": "Qual leitura melhor une consulta, unção e bênção a Jabes?",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi silencia Judá e esconde a unção"
+        },
+        {
+          "id": "b",
+          "text": "Davi corre sozinho e castiga Jabes"
+        },
+        {
+          "id": "c",
+          "text": "Davi recusa Hebrom e busca Gate"
+        },
+        {
+          "id": "d",
+          "text": "Davi espera o Senhor e honra quem sepultou Saul"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "Davi consultou ao Senhor",
+      "feedbackCorrect": "Ouvir e honrar.",
+      "feedbackWrong": {
+        "a": "Há unção pública.",
+        "b": "Há bênção a Jabes.",
+        "c": "Ele sobe a Hebrom."
+      },
+      "hint": "Una os três movimentos.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 2:1"
+      ]
+    },
+    {
+      "id": "2samuel-cap-pro-s2c-02-ungido-em-hebrom-04",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene o encadeamento da subida fiel.",
+      "prompt": "Ordene o encadeamento da subida fiel.",
+      "cue": "Ordene o encadeamento da subida fiel.",
+      "verseRef": "2 Samuel 2:1",
+      "passageText": "Depois disso, Davi consultou ao Senhor, dizendo: \"Devo subir a alguma das cidades de Judá?\" E o Senhor lhe respondeu: \"Suba.\" Davi então perguntou: \"Para onde subirei?\" E o Senhor respondeu: \"Para Hebrom.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consulta ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Subida a Hebrom"
+        },
+        {
+          "id": "c",
+          "text": "Unção sobre Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Para Hebrom.",
+      "feedbackCorrect": "Consulta, subida e unção.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta."
+      },
+      "hint": "O que fecha o reconhecimento?",
+      "learningObjective": "Encadear a fidelidade.",
+      "evidence": [
+        "2 Samuel 2:1"
+      ]
+    },
+    {
+      "id": "2samuel-cap-pro-s2c-02-ungido-em-hebrom-05",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em 2 Samuel 2:4, complete: ungiram ali Davi rei sobre a casa de ___.",
+      "prompt": "Em 2 Samuel 2:4, complete: ungiram ali Davi rei sobre a casa de ___.",
+      "cue": "Em 2 Samuel 2:4, complete: ungiram ali Davi rei sobre a casa de ___.",
+      "verseRef": "2 Samuel 2:4",
+      "passageText": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "template": "Então, vieram os homens de ___ e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "Judá"
+        },
+        {
+          "id": "c",
+          "text": "Gate"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "ungiram ali Davi rei sobre a casa de Judá",
+      "feedbackCorrect": "Judá.",
+      "feedbackWrong": {
+        "a": "Ainda não é todo Israel.",
+        "c": "Não é Gate."
+      },
+      "hint": "Veja o alcance.",
+      "learningObjective": "Lembrar Judá.",
+      "evidence": [
+        "2 Samuel 2:4"
+      ]
+    },
+    {
+      "id": "2samuel-cap-pro-s2c-02-ungido-em-hebrom-06",
+      "trail": "2samuel-cap",
+      "section": "s2c-02-ungido-em-hebrom",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga 2 Samuel 2:4 a 1 Samuel 16:13?",
+      "prompt": "O que liga 2 Samuel 2:4 a 1 Samuel 16:13?",
+      "cue": "O que liga 2 Samuel 2:4 a 1 Samuel 16:13?",
+      "verseRef": "2 Samuel 2:4",
+      "passageText": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul.",
+      "passageA": {
+        "ref": "2 Samuel 2:4",
+        "text": "Então, vieram os homens de Judá e ungiram ali Davi rei sobre a casa de Judá. E informaram a Davi, dizendo: Foram os homens de Jabes-Gileade que sepultaram Saul."
+      },
+      "passageB": {
+        "ref": "1 Samuel 16:13",
+        "text": "Então Samuel tomou o chifre de azeite e ungiu Davi na presença de seus irmãos; e, a partir daquele dia, o Espírito do Senhor se apossou de Davi. Então, Samuel se levantou e foi para Ramá."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rejeição definitiva de Davi"
+        },
+        {
+          "id": "b",
+          "text": "Unção de Saul em Hebrom"
+        },
+        {
+          "id": "c",
+          "text": "Unção anterior de Davi"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "ungiram ali Davi rei sobre a casa de Judá",
+      "feedbackCorrect": "A unção pública ecoa a anterior.",
+      "feedbackWrong": {
+        "a": "Há reconhecimento.",
+        "b": "Saul não é ungido aqui."
+      },
+      "hint": "Compare as unções.",
+      "learningObjective": "Ligar às unções.",
+      "evidence": [
+        "2 Samuel 2:4",
+        "1 Samuel 16:13"
+      ]
+    }
+  ]
+}

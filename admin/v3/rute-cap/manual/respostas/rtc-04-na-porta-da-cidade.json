@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Rute 4:1–6",
+    "passages": [
+      {
+        "ref": "Rute 4:1–6"
+      },
+      {
+        "ref": "Rute 4:7–12"
+      }
+    ],
+    "context": "Cena de Na porta da cidade: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Na porta da cidade",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então Boaz subiu à porta da cidade e.",
+        "evidenceRef": "Rute 4:1",
+        "evidenceSpan": "Então Boaz subiu à porta da cidade e"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Rute 4:2",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Rute 4:3",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Rute 4:4",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Disse.",
+        "evidenceRef": "Rute 4:5",
+        "evidenceSpan": "Disse"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Rute 4:6",
+        "evidenceSpan": "Então"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Rute",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Noemi",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então boaz subiu à porta",
+        "evidenceRef": "Rute 4:1"
+      },
+      {
+        "label": "Então boaz chamou dez homens",
+        "evidenceRef": "Rute 4:2"
+      },
+      {
+        "label": "Então disse ao redentor aquela parte",
+        "evidenceRef": "Rute 4:3"
+      },
+      {
+        "label": "E eu disse farei saber aos",
+        "evidenceRef": "Rute 4:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Rute 4:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Rute 4:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Rute 4:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 1:5",
+        "bridge": "Rute na linhagem messiânica"
+      },
+      {
+        "ref": "Salmos 37:3",
+        "bridge": "Confiar e habitar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Boaz resgata a terra e Rute diante das testemunhas: a linhagem de Noemi não se apaga.",
+    "anchorQuestion": "O que Rute 4:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Rute 4:1, o texto inclui Então Boaz subiu à porta da cidade e.",
+      "verseRef": "Rute 4:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então Boaz subiu à porta da cidade e",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Rute 4:1 afirma.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Rute 4:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Rute 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Boaz"
+        },
+        {
+          "id": "c",
+          "text": "subiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Rute 4:3, o que o texto apresenta com clareza.",
+      "verseRef": "Rute 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Rute 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Rute 4:2 na ordem do texto.",
+      "verseRef": "Rute 4:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "homens dos anciãos"
+        },
+        {
+          "id": "c",
+          "text": "cidade e disse"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Rute 4:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Rute 4:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Rute 4:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Boaz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "A palavra do versículo é disse.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Rute 4:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Rute 4:1 comunica que se liga a este contexto.",
+      "verseRef": "Rute 4:1",
+      "passageA": {
+        "ref": "Rute 4:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Na porta da cidade: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Rute 4:1, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Rute 4:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Rute 4:1 afirma.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Rute 4:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Rute 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boaz"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "subiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Boaz",
+      "feedbackCorrect": "O versículo destaca Boaz.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Rute 4:4, o que o texto apresenta com clareza.",
+      "verseRef": "Rute 4:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Rute 4:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Rute 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então boaz subiu à porta"
+        },
+        {
+          "id": "b",
+          "text": "Então boaz chamou dez homens"
+        },
+        {
+          "id": "c",
+          "text": "Então disse ao redentor aquela parte"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Rute 4:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Rute 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "redentor"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Boaz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "redentor",
+      "feedbackCorrect": "A palavra do versículo é redentor.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Rute 4:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Rute 4:1 a Mateus 1:5.",
+      "verseRef": "Rute 4:1",
+      "passageA": {
+        "ref": "Rute 4:1"
+      },
+      "passageB": {
+        "ref": "Mateus 1:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rute na linhagem messiânica"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Rute 4:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Rute 4:12 afirma.",
+      "evidence": [
+        "Rute 4:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Rute 4:6, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Rute 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "resgatador"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "resgatador",
+      "feedbackCorrect": "O versículo destaca resgatador.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Rute 4:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Rute 4:5, o que o texto apresenta com clareza.",
+      "verseRef": "Rute 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Rute 4:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Rute 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Rute 4:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Rute 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "você"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Boaz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você",
+      "feedbackCorrect": "A palavra do versículo é você.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Rute 4:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Rute 4:1 a Salmos 37:3.",
+      "verseRef": "Rute 4:1",
+      "passageA": {
+        "ref": "Rute 4:1"
+      },
+      "passageB": {
+        "ref": "Salmos 37:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiar e habitar"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Rute 4:1"
+      ]
+    }
+  ]
+}

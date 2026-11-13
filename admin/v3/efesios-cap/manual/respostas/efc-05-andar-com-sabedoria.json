@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Efésios 5:15–21",
+    "passages": [
+      {
+        "ref": "Efésios 5:15–21"
+      }
+    ],
+    "context": "Os dias são maus; a igreja deve andar como sábios, remir o tempo, encher-se do Espírito, louvar e sujeitar-se uns aos outros.",
+    "keyword": "Espírito",
+    "keywordGloss": "Aquele de quem se enchem, em contraste com a embriaguez que causa dissolução.",
+    "focusQuestion": "O que ocuparia o lugar do Espírito se você não se enchesse dele?",
+    "reflectionPrompts": [
+      "Andar como sábios",
+      "Encher-se do Espírito",
+      "Sujeitar-se no temor"
+    ],
+    "facts": [
+      {
+        "text": "Vejam como andam, não como insensatos, mas como sábios.",
+        "evidenceRef": "Efésios 5:15",
+        "evidenceSpan": "não como insensatos, mas como sábios"
+      },
+      {
+        "text": "Remindo o tempo, pois os dias são maus.",
+        "evidenceRef": "Efésios 5:16",
+        "evidenceSpan": "Remindo o tempo, pois os dias são maus"
+      },
+      {
+        "text": "Procurai compreender a vontade do Senhor.",
+        "evidenceRef": "Efésios 5:17",
+        "evidenceSpan": "procurai compreender qual é a vontade do Senhor"
+      },
+      {
+        "text": "Não fiquem embriagados com vinho, mas encham-se do Espírito.",
+        "evidenceRef": "Efésios 5:18",
+        "evidenceSpan": "não fiquem embriagados com vinho, que causa dissolução, mas encham-se do Espírito"
+      },
+      {
+        "text": "Falando com salmos, hinos e cânticos espirituais.",
+        "evidenceRef": "Efésios 5:19",
+        "evidenceSpan": "com salmos, hinos e cânticos espirituais"
+      },
+      {
+        "text": "Sujeitem-se uns aos outros no temor de Cristo.",
+        "evidenceRef": "Efésios 5:21",
+        "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Espírito",
+        "gloss": "Aquele de quem se enchem em vez do vinho."
+      },
+      {
+        "term": "sábios",
+        "gloss": "Modo de andar em contraste com os insensatos."
+      },
+      {
+        "term": "temor",
+        "gloss": "Temor de Cristo no qual há sujeição mútua."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Andar como sábios, remindo o tempo",
+        "evidenceRef": "Efésios 5:15–16"
+      },
+      {
+        "label": "Compreender a vontade do Senhor",
+        "evidenceRef": "Efésios 5:17"
+      },
+      {
+        "label": "Encher-se do Espírito, não do vinho",
+        "evidenceRef": "Efésios 5:18"
+      },
+      {
+        "label": "Louvor e sujeição mútua",
+        "evidenceRef": "Efésios 5:19–21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não como insensatos, mas como sábios.",
+        "marker": "mas",
+        "evidenceRef": "Efésios 5:15"
+      },
+      {
+        "kind": "causa",
+        "text": "Remir o tempo porque os dias são maus.",
+        "marker": "pois",
+        "evidenceRef": "Efésios 5:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não embriaguez, mas encher-se do Espírito.",
+        "marker": "mas",
+        "evidenceRef": "Efésios 5:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Colossenses 3:16",
+        "bridge": "Salmos e cânticos"
+      },
+      {
+        "ref": "Romanos 12:2",
+        "bridge": "Discernir a vontade de Deus"
+      },
+      {
+        "ref": "1 Tessalonicenses 5:18",
+        "bridge": "Dai graças"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Encher-se do Espírito e embriagar-se são equivalentes.",
+        "why": "O texto opõe vinho e Espírito."
+      },
+      {
+        "text": "Nos dias maus não há o que remir.",
+        "why": "Manda remir o tempo porque os dias são maus."
+      },
+      {
+        "text": "Sujeição mútua dispensa o temor de Cristo.",
+        "why": "A sujeição é no temor de Cristo."
+      }
+    ],
+    "centralInsight": "Não vos embriagueis, mas enchei-vos do Espírito: cantai, dai graças e sujeitai-vos uns aos outros.",
+    "anchorQuestion": "Segundo Efésios 5:18, de quem devem encher-se?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Efésios 5:18, devem encher-se do Espírito, não ficar embriagados com vinho.",
+      "verseRef": "Efésios 5:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O contraste opõe vinho e Espírito.",
+      "feedbackWrong": {
+        "false": "Releia o contraste."
+      },
+      "hint": "Olhe o mas.",
+      "learningObjective": "Observar o encher-se do Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Efésios 5:16, toque o que os dias são.",
+      "verseRef": "Efésios 5:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "maus"
+        },
+        {
+          "id": "b",
+          "text": "tempo"
+        },
+        {
+          "id": "c",
+          "text": "Remindo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois os dias são maus",
+      "feedbackCorrect": "Os dias são maus.",
+      "feedbackWrong": {
+        "b": "Tempo é o que remir.",
+        "c": "Remindo é a ação."
+      },
+      "hint": "Veja o predicado dos dias.",
+      "learningObjective": "Identificar os dias maus.",
+      "evidence": [
+        "Efésios 5:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Efésios 5:21, como devem sujeitar-se?",
+      "verseRef": "Efésios 5:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uns aos outros no temor de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Só a si mesmos"
+        },
+        {
+          "id": "c",
+          "text": "Sem temor"
+        },
+        {
+          "id": "d",
+          "text": "Fora do louvor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo",
+      "feedbackCorrect": "Sujeição mútua no temor de Cristo.",
+      "feedbackWrong": {
+        "b": "É uns aos outros.",
+        "c": "Há temor.",
+        "d": "Vem após o louvor."
+      },
+      "hint": "Leia o mando.",
+      "learningObjective": "Ver a sujeição mútua.",
+      "evidence": [
+        "Efésios 5:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Efésios 5:18–19 na ordem do texto.",
+      "verseRef": "Efésios 5:18–19",
+      "options": [
+        {
+          "id": "a",
+          "text": "não fiquem embriagados com vinho"
+        },
+        {
+          "id": "b",
+          "text": "mas encham-se do Espírito"
+        },
+        {
+          "id": "c",
+          "text": "Falando entre vocês com salmos, hinos e cânticos espirituais"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "Vinho, Espírito e então o louvor.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição."
+      },
+      "hint": "Siga 5:18–19.",
+      "learningObjective": "Seguir a ordem até o louvor.",
+      "evidence": [
+        "Efésios 5:18–19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Efésios 5:18, complete: encham-se do ___.",
+      "verseRef": "Efésios 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "tempo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "encham-se do Espírito",
+      "feedbackCorrect": "Espírito é de quem se enchem.",
+      "feedbackWrong": {
+        "b": "Vinho é o oposto.",
+        "c": "Tempo é o que remir."
+      },
+      "hint": "Veja o complemento de encham-se do.",
+      "learningObjective": "Lembrar a palavra Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Efésios 5:18 comunica que se liga a este contexto?",
+      "verseRef": "Efésios 5:18",
+      "passageA": {
+        "ref": "Efésios 5:18"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Nos dias maus a igreja anda sábia e cheia do Espírito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Encher-se do Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Embriaguez como meta"
+        },
+        {
+          "id": "c",
+          "text": "Dias bons sem remir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O Espírito responde ao andar sábio.",
+      "feedbackWrong": {
+        "b": "Vinho causa dissolução.",
+        "c": "Os dias são maus."
+      },
+      "hint": "Ligue sabedoria e Espírito.",
+      "learningObjective": "Ligar o contexto ao Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Efésios 5:18, o mas iguala embriaguez e enchimento do Espírito.",
+      "verseRef": "Efésios 5:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O mas opõe, não iguala.",
+      "feedbackWrong": {
+        "true": "São caminhos opostos."
+      },
+      "hint": "Leia o contraste.",
+      "learningObjective": "Ver o contraste vinho/Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Efésios 5:18, toque a palavra que marca o contraste com o vinho.",
+      "verseRef": "Efésios 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "dissolução"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O mas introduz o Espírito.",
+      "feedbackWrong": {
+        "b": "Vinho é o lado rejeitado.",
+        "c": "Dissolução é o efeito."
+      },
+      "hint": "Procure a conjunção do segundo lado.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Efésios 5:15–17 estabelece entre dias maus e sabedoria?",
+      "verseRef": "Efésios 5:15–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remir o tempo e buscar a vontade do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Os dias maus anulam a sabedoria"
+        },
+        {
+          "id": "c",
+          "text": "Insensatos remem melhor"
+        },
+        {
+          "id": "d",
+          "text": "A vontade do Senhor é opcional"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Remindo o tempo, pois os dias são maus",
+      "feedbackCorrect": "Dias maus pedem remir e compreender.",
+      "feedbackWrong": {
+        "b": "Sabedoria é o mando.",
+        "c": "Insensatos são rejeitados.",
+        "d": "Há procura da vontade."
+      },
+      "hint": "Una 5:16 e 5:17.",
+      "learningObjective": "Relacionar dias maus e sabedoria.",
+      "evidence": [
+        "Efésios 5:15–17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Efésios 5:15–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar como sábios, remindo o tempo"
+        },
+        {
+          "id": "b",
+          "text": "Encher-se do Espírito, não do vinho"
+        },
+        {
+          "id": "c",
+          "text": "Louvor e sujeição mútua"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo",
+      "feedbackCorrect": "Sabedoria, Espírito e sujeição.",
+      "feedbackWrong": {
+        "default": "Comece pelo andar."
+      },
+      "hint": "Pense no fluxo.",
+      "learningObjective": "Ordenar sabedoria, Espírito e sujeição.",
+      "evidence": [
+        "Efésios 5:15–21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Efésios 5:16, complete: Remindo o ___, pois os dias são maus.",
+      "verseRef": "Efésios 5:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "tempo"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "louvor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Remindo o tempo",
+      "feedbackCorrect": "Tempo é o que remir.",
+      "feedbackWrong": {
+        "b": "Vinho é de 5:18.",
+        "c": "Louvor vem depois."
+      },
+      "hint": "Veja o objeto de Remindo.",
+      "learningObjective": "Lembrar a palavra tempo.",
+      "evidence": [
+        "Efésios 5:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Efésios 5:19 a Colossenses 3:16?",
+      "verseRef": "Efésios 5:19",
+      "passageA": {
+        "ref": "Efésios 5:19"
+      },
+      "passageB": {
+        "ref": "Colossenses 3:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Salmos e cânticos"
+        },
+        {
+          "id": "b",
+          "text": "Embriaguez"
+        },
+        {
+          "id": "c",
+          "text": "Dias maus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "salmos, hinos e cânticos espirituais",
+      "feedbackCorrect": "Ambos ligam a palavra e o canto na igreja.",
+      "feedbackWrong": {
+        "b": "Embriaguez é rejeitada.",
+        "c": "Dias maus motivam a sabedoria."
+      },
+      "hint": "Compare o louvor.",
+      "learningObjective": "Ligar salmos e cânticos.",
+      "evidence": [
+        "Efésios 5:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Efésios 5:15–21, encher-se do Espírito e embriagar-se são o mesmo caminho.",
+      "verseRef": "Efésios 5:15–21",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O texto opõe vinho e Espírito.",
+      "feedbackWrong": {
+        "true": "São contrastes, não equivalentes."
+      },
+      "hint": "Leia o mas de 5:18.",
+      "learningObjective": "Avaliar a leitura errada do Espírito.",
+      "evidence": [
+        "Efésios 5:15–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Efésios 5:21, toque o trecho que sustenta o modo da sujeição.",
+      "verseRef": "Efésios 5:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "temor de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "uns aos"
+        },
+        {
+          "id": "c",
+          "text": "Sujeitem-se"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no temor de Cristo",
+      "feedbackCorrect": "Temor de Cristo sustenta o modo.",
+      "feedbackWrong": {
+        "b": "Uns aos outros é o alcance.",
+        "c": "Sujeitem-se é o mando."
+      },
+      "hint": "Veja o complemento de sujeição.",
+      "learningObjective": "Tocar o trecho do temor.",
+      "evidence": [
+        "Efésios 5:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Efésios 5:15–21 sustenta melhor?",
+      "verseRef": "Efésios 5:15–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar sábio enche-se do Espírito, louva e se sujeita"
+        },
+        {
+          "id": "b",
+          "text": "Dias maus anulam o remir"
+        },
+        {
+          "id": "c",
+          "text": "Vinho substitui o Espírito"
+        },
+        {
+          "id": "d",
+          "text": "Sujeição dispensa Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "Sabedoria, Espírito, louvor e sujeição.",
+      "feedbackWrong": {
+        "b": "Há remir o tempo.",
+        "c": "Vinho é oposto.",
+        "d": "Temor de Cristo."
+      },
+      "hint": "Una o fio do trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Efésios 5:15–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até a sujeição.",
+      "verseRef": "Efésios 5:15–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar sábio nos dias maus"
+        },
+        {
+          "id": "b",
+          "text": "Encher-se do Espírito"
+        },
+        {
+          "id": "c",
+          "text": "Louvor e sujeição no temor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo",
+      "feedbackCorrect": "Sabedoria, Espírito e sujeição.",
+      "feedbackWrong": {
+        "default": "A sujeição fecha."
+      },
+      "hint": "Siga até 5:21.",
+      "learningObjective": "Encadear sabedoria, Espírito e sujeição.",
+      "evidence": [
+        "Efésios 5:15–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Efésios 5:15, complete: mas como ___.",
+      "verseRef": "Efésios 5:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "sábios"
+        },
+        {
+          "id": "b",
+          "text": "insensatos"
+        },
+        {
+          "id": "c",
+          "text": "embriagados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas como sábios",
+      "feedbackCorrect": "Sábios é o modo certo.",
+      "feedbackWrong": {
+        "b": "Insensatos é o oposto.",
+        "c": "Embriagados é de 5:18."
+      },
+      "hint": "Veja o contraste com insensatos.",
+      "learningObjective": "Lembrar o termo sábios.",
+      "evidence": [
+        "Efésios 5:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Efésios 5:17 a Romanos 12:2?",
+      "verseRef": "Efésios 5:17",
+      "passageA": {
+        "ref": "Efésios 5:17"
+      },
+      "passageB": {
+        "ref": "Romanos 12:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Compreender a vontade do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Embriaguez"
+        },
+        {
+          "id": "c",
+          "text": "Salmos vazios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "procurai compreender qual é a vontade do Senhor",
+      "feedbackCorrect": "Ambos apontam discernir a vontade de Deus.",
+      "feedbackWrong": {
+        "b": "Embriaguez é rejeitada.",
+        "c": "Há cânticos reais."
+      },
+      "hint": "Compare a vontade do Senhor.",
+      "learningObjective": "Ligar o discernir a vontade.",
+      "evidence": [
+        "Efésios 5:17"
+      ]
+    }
+  ]
+}

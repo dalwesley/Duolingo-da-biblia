@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Marcos 8:1–6",
+    "passages": [
+      {
+        "ref": "Marcos 8:1–6"
+      },
+      {
+        "ref": "Marcos 8:7–9"
+      }
+    ],
+    "context": "Jesus está novamente diante de uma grande multidão. As pessoas permanecem com ele há três dias, e a falta de alimento se torna uma necessidade concreta. Os discípulos percebem o desafio de alimentar tanta gente naquele deserto.",
+    "keyword": "Compaixão",
+    "keywordGloss": "Jesus percebe a necessidade da multidão e se importa com o que pode acontecer com aquelas pessoas se forem embora sem comer.",
+    "focusQuestion": "Como a compaixão de Jesus pode mudar a maneira como você percebe e responde às necessidades das pessoas?",
+    "reflectionPrompts": [
+      "A necessidade da multidão",
+      "O pouco disponível",
+      "O cuidado que alcança muitos"
+    ],
+    "facts": [
+      {
+        "text": "Jesus chamou os discípulos e falou sobre a multidão que estava sem alimento.",
+        "evidenceRef": "Marcos 8:1",
+        "evidenceSpan": "Jesus chamou os seus discípulos e lhes disse"
+      },
+      {
+        "text": "Jesus declarou que sentia compaixão da multidão, que estava com ele havia três dias sem comer.",
+        "evidenceRef": "Marcos 8:2",
+        "evidenceSpan": "Tenho compaixão desta multidão"
+      },
+      {
+        "text": "Jesus considerou que algumas pessoas poderiam desfalecer pelo caminho se fossem embora sem comer.",
+        "evidenceRef": "Marcos 8:3",
+        "evidenceSpan": "desfalecerão pelo caminho"
+      },
+      {
+        "text": "Os discípulos perguntaram como alguém poderia alimentar o povo naquele deserto.",
+        "evidenceRef": "Marcos 8:4",
+        "evidenceSpan": "Onde poderá alguém saciar este povo com pão neste deserto?"
+      },
+      {
+        "text": "Os discípulos disseram que tinham sete pães.",
+        "evidenceRef": "Marcos 8:5",
+        "evidenceSpan": "Eles responderam: Sete."
+      },
+      {
+        "text": "Depois de comerem, recolheram sete cestos de pedaços que sobraram.",
+        "evidenceRef": "Marcos 8:8",
+        "evidenceSpan": "dos pedaços que sobraram recolheram sete cestos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "compaixão",
+        "gloss": "Sentimento de cuidado diante da necessidade do outro, que em Jesus se transforma em ação."
+      },
+      {
+        "term": "desfalecerão",
+        "gloss": "Expressa o risco de fraqueza física que Jesus percebe caso a multidão volte sem comer."
+      },
+      {
+        "term": "saciaram",
+        "gloss": "Indica que a multidão não apenas recebeu alimento, mas comeu até ficar satisfeita."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus percebe a necessidade da multidão",
+        "evidenceRef": "Marcos 8:1–2"
+      },
+      {
+        "label": "Jesus considera o risco da viagem sem alimento",
+        "evidenceRef": "Marcos 8:3"
+      },
+      {
+        "label": "Os discípulos apresentam a limitação diante da necessidade",
+        "evidenceRef": "Marcos 8:4–5"
+      },
+      {
+        "label": "Jesus reparte o alimento e a multidão fica satisfeita",
+        "evidenceRef": "Marcos 8:6–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Jesus sente compaixão porque a multidão está há três dias com ele e não tem o que comer.",
+        "marker": "pois",
+        "evidenceRef": "Marcos 8:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Jesus não quer enviar a multidão sem alimento porque algumas pessoas vieram de longe e podem desfalecer pelo caminho.",
+        "marker": "pois",
+        "evidenceRef": "Marcos 8:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois de receber o alimento distribuído, a multidão come e fica satisfeita.",
+        "marker": "E",
+        "evidenceRef": "Marcos 8:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 145:16",
+        "bridge": "Deus provê o necessário"
+      },
+      {
+        "ref": "Mateus 9:36",
+        "bridge": "Jesus se compadece da multidão"
+      },
+      {
+        "ref": "2 Coríntios 9:8",
+        "bridge": "Deus supre com abundância"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus só se preocupa com a necessidade espiritual da multidão, não com a fome física.",
+        "why": "Jesus menciona diretamente a falta de alimento e o risco de desfalecer pelo caminho."
+      },
+      {
+        "text": "Os discípulos já tinham uma solução suficiente para alimentar toda a multidão.",
+        "why": "Eles perguntam como alguém poderia saciar o povo naquele deserto e respondem que tinham apenas sete pães."
+      },
+      {
+        "text": "A multidão recebeu apenas uma pequena porção para evitar que desfalecesse.",
+        "why": "O relato afirma que todos comeram e se saciaram, e ainda sobraram sete cestos."
+      }
+    ],
+    "centralInsight": "Jesus tem compaixão da multidão e faz pouco bastar para muitos.",
+    "anchorQuestion": "O que Jesus sentiu pela multidão e quantos pães os discípulos tinham?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Marcos 8:5, os discípulos responderam que tinham sete pães.",
+      "verseRef": "Marcos 8:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eles responderam: Sete.",
+      "feedbackCorrect": "Os discípulos identificaram sete pães como o alimento disponível.",
+      "feedbackWrong": {
+        "false": "A resposta dos discípulos à pergunta de Jesus foi: sete."
+      },
+      "hint": "Observe a resposta dos discípulos à pergunta de Jesus.",
+      "learningObjective": "Identificar a quantidade de pães que os discípulos tinham.",
+      "evidence": [
+        "Marcos 8:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Marcos 8:2, toque as palavras em que Jesus diz o que sente pela multidão.",
+      "verseRef": "Marcos 8:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "multidão"
+        },
+        {
+          "id": "b",
+          "text": "Tenho compaixão"
+        },
+        {
+          "id": "c",
+          "text": "já se passaram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Tenho compaixão desta multidão",
+      "feedbackCorrect": "É Jesus quem expressa seu cuidado pela multidão.",
+      "feedbackWrong": {
+        "a": "Essa expressão identifica quem recebe a compaixão, não quem a sente.",
+        "c": "Essa expressão indica o tempo que a multidão estava com Jesus."
+      },
+      "hint": "Procure a fala que expressa o sentimento de quem está cuidando da multidão.",
+      "learningObjective": "Localizar a declaração de compaixão feita por Jesus.",
+      "evidence": [
+        "Marcos 8:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Por que Jesus considerava arriscado enviar a multidão para casa sem comer?",
+      "verseRef": "Marcos 8:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque todos precisavam permanecer no deserto."
+        },
+        {
+          "id": "b",
+          "text": "Porque alguns poderiam desfalecer durante o caminho."
+        },
+        {
+          "id": "c",
+          "text": "Porque os discípulos não conheciam o caminho de volta."
+        },
+        {
+          "id": "d",
+          "text": "Porque a multidão ainda não tinha ouvido todo o ensino."
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "desfalecerão pelo caminho",
+      "feedbackCorrect": "Jesus considera a condição física das pessoas e o risco de voltarem sem alimento.",
+      "feedbackWrong": {
+        "a": "Jesus não diz que todos precisavam permanecer no deserto.",
+        "c": "A preocupação mencionada não é a orientação do caminho, mas a falta de alimento.",
+        "d": "Jesus destaca o risco físico de uma viagem sem comida."
+      },
+      "hint": "Observe o que poderia acontecer durante o retorno para casa.",
+      "learningObjective": "Observar a preocupação concreta de Jesus com a condição física da multidão.",
+      "evidence": [
+        "Marcos 8:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Organize as ações de Jesus em Marcos 8:6 na ordem do texto.",
+      "verseRef": "Marcos 8:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "partiu-os"
+        },
+        {
+          "id": "b",
+          "text": "Tomando os sete pães"
+        },
+        {
+          "id": "c",
+          "text": "após dar graças"
+        }
+      ],
+      "correctOrder": [
+        "b",
+        "c",
+        "a"
+      ],
+      "evidenceSpan": "Tomando os sete pães",
+      "feedbackCorrect": "Jesus toma os pães, dá graças e depois os parte para distribuir.",
+      "feedbackWrong": {
+        "default": "Siga a ordem das ações descritas no versículo, do início até a partilha."
+      },
+      "hint": "A primeira ação acontece antes de Jesus dar graças.",
+      "learningObjective": "Reconhecer a sequência das ações de Jesus ao preparar os pães para a distribuição.",
+      "evidence": [
+        "Marcos 8:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Marcos 8:8, quantos cestos de pedaços que sobraram foram recolhidos?",
+      "verseRef": "Marcos 8:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "cinco"
+        },
+        {
+          "id": "b",
+          "text": "sete"
+        },
+        {
+          "id": "c",
+          "text": "doze"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "recolheram sete cestos",
+      "feedbackCorrect": "O relato destaca que, depois de todos comerem, foram recolhidos sete cestos.",
+      "feedbackWrong": {
+        "a": "O texto não menciona cinco cestos; releia o final do versículo.",
+        "c": "Doze cestos aparecem em outro relato de multiplicação, não nesta cena."
+      },
+      "hint": "Observe o número mencionado depois da palavra cestos.",
+      "learningObjective": "Lembrar a quantidade de cestos recolhidos após a refeição.",
+      "evidence": [
+        "Marcos 8:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Marcos 8:2 comunica que se liga a este contexto?",
+      "verseRef": "Marcos 8:2",
+      "passageA": {
+        "ref": "Marcos 8:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A multidão estava com Jesus havia três dias e não tinha o que comer."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus percebe a necessidade"
+        },
+        {
+          "id": "b",
+          "text": "A multidão rejeita o alimento"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos sentem fome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tenho compaixão desta multidão",
+      "feedbackCorrect": "Jesus não ignora a situação da multidão; ele se importa com sua necessidade.",
+      "feedbackWrong": {
+        "b": "O contexto apresenta pessoas sem alimento, não uma rejeição da comida.",
+        "c": "O versículo destaca a compaixão de Jesus pela multidão."
+      },
+      "hint": "Relacione a falta de alimento com a reação de Jesus.",
+      "learningObjective": "Ligar a necessidade concreta da multidão à compaixão expressa por Jesus.",
+      "evidence": [
+        "Marcos 8:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Marcos 8:3, Jesus considera que alguns poderiam desfalecer pelo caminho porque vieram de longe.",
+      "verseRef": "Marcos 8:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois alguns deles vieram de longe",
+      "feedbackCorrect": "A distância percorrida ajuda a explicar o risco de a multidão desfalecer sem alimento.",
+      "feedbackWrong": {
+        "false": "Jesus relaciona o risco de desfalecer ao fato de alguns terem vindo de longe."
+      },
+      "hint": "Observe a justificativa apresentada no final do versículo.",
+      "learningObjective": "Compreender a relação entre a distância percorrida e o risco de desfalecer.",
+      "evidence": [
+        "Marcos 8:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Marcos 8:2, toque a palavra que introduz a razão da compaixão de Jesus.",
+      "verseRef": "Marcos 8:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "três dias"
+        },
+        {
+          "id": "c",
+          "text": "comigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois já se passaram três dias desde que estão comigo",
+      "feedbackCorrect": "A palavra introduz a justificativa para a compaixão que Jesus expressa.",
+      "feedbackWrong": {
+        "b": "A expressão informa o tempo, mas não introduz a relação de causa.",
+        "c": "Essa palavra indica a companhia de Jesus, não a justificativa."
+      },
+      "hint": "Procure o conectivo que apresenta a explicação.",
+      "learningObjective": "Reconhecer o marcador de causa na fala de Jesus.",
+      "evidence": [
+        "Marcos 8:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Marcos 8:2 e Marcos 8:3 se relacionam?",
+      "verseRef": "Marcos 8:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A compaixão de Jesus considera a fome e o risco da viagem."
+        },
+        {
+          "id": "b",
+          "text": "A multidão fica sem alimento porque decidiu viajar de longe."
+        },
+        {
+          "id": "c",
+          "text": "Jesus sente compaixão apenas depois que a multidão desfalecer."
+        },
+        {
+          "id": "d",
+          "text": "A distância percorrida impede Jesus de alimentar a multidão."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois já se passaram três dias desde que estão comigo e não têm o que comer",
+      "feedbackCorrect": "A fome presente e o risco de desfalecer explicam a preocupação de Jesus.",
+      "feedbackWrong": {
+        "b": "A distância é mencionada como agravante do risco, não como causa da falta de alimento.",
+        "c": "Jesus já declara sua compaixão antes de a multidão partir.",
+        "d": "A distância não impede Jesus de agir; ela aumenta sua preocupação."
+      },
+      "hint": "Observe como a necessidade atual e o risco futuro aparecem juntos.",
+      "learningObjective": "Relacionar a compaixão de Jesus à necessidade presente e ao risco futuro da multidão.",
+      "evidence": [
+        "Marcos 8:2–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Organize os movimentos da cena conforme o desenvolvimento do relato.",
+      "verseRef": "Marcos 8:4–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus pergunta quantos pães estão disponíveis"
+        },
+        {
+          "id": "b",
+          "text": "Os discípulos questionam como alimentar o povo"
+        },
+        {
+          "id": "c",
+          "text": "Jesus parte os pães e os entrega para distribuição"
+        }
+      ],
+      "correctOrder": [
+        "b",
+        "a",
+        "c"
+      ],
+      "evidenceSpan": "Tomando os sete pães e, após dar graças, partiu-os",
+      "feedbackCorrect": "A dificuldade é apresentada, Jesus pergunta pelo que há disponível e então organiza a distribuição.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta dos discípulos; a distribuição acontece depois da resposta sobre os pães."
+      },
+      "hint": "A ação de repartir acontece depois que Jesus pergunta o que eles têm.",
+      "learningObjective": "Compreender a progressão entre a dificuldade apresentada, a disponibilidade e a distribuição.",
+      "evidence": [
+        "Marcos 8:4",
+        "Marcos 8:5",
+        "Marcos 8:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Marcos 8:8, que palavra descreve o resultado da refeição para a multidão?",
+      "verseRef": "Marcos 8:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "saciaram"
+        },
+        {
+          "id": "b",
+          "text": "jejuaram"
+        },
+        {
+          "id": "c",
+          "text": "desfaleceram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E comeram e se saciaram",
+      "feedbackCorrect": "A refeição não foi apenas suficiente para começar: a multidão comeu até ficar satisfeita.",
+      "feedbackWrong": {
+        "b": "O jejum aparece como uma possibilidade que Jesus queria evitar, não como resultado.",
+        "c": "Jesus temia que alguns desfalecessem, mas o relato diz que todos comeram e se saciaram."
+      },
+      "hint": "Observe o que aconteceu depois que a multidão comeu.",
+      "learningObjective": "Identificar o resultado da provisão de alimento para a multidão.",
+      "evidence": [
+        "Marcos 8:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Marcos 8:2 a Mateus 9:36?",
+      "verseRef": "Marcos 8:2",
+      "passageA": {
+        "ref": "Marcos 8:2"
+      },
+      "passageB": {
+        "ref": "Mateus 9:36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus se compadece da multidão"
+        },
+        {
+          "id": "b",
+          "text": "A multidão rejeita os discípulos"
+        },
+        {
+          "id": "c",
+          "text": "Os alimentos se multiplicam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tenho compaixão desta multidão",
+      "feedbackCorrect": "Nos dois relatos, Jesus olha para a multidão com compaixão diante de sua necessidade.",
+      "feedbackWrong": {
+        "b": "A ligação entre os textos não é rejeição, mas a compaixão de Jesus.",
+        "c": "A multiplicação de alimentos não é o tema compartilhado pelos dois versículos."
+      },
+      "hint": "Compare a atitude de Jesus diante das pessoas nos dois relatos.",
+      "learningObjective": "Relacionar a compaixão de Jesus pela multidão em diferentes passagens.",
+      "evidence": [
+        "Marcos 8:2",
+        "Mateus 9:36"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Marcos 8:4–5, os discípulos reconhecem que os sete pães já eram suficientes para alimentar a multidão.",
+      "verseRef": "Marcos 8:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Onde poderá alguém saciar este povo com pão neste deserto?",
+      "feedbackCorrect": "A pergunta dos discípulos revela que eles não veem como alimentar tanta gente naquele deserto.",
+      "feedbackWrong": {
+        "true": "Os discípulos questionam como alguém poderia saciar o povo; não afirmam que os pães bastariam."
+      },
+      "hint": "Observe a pergunta dos discípulos antes de responderem quantos pães têm.",
+      "learningObjective": "Interpretar a reação dos discípulos diante da necessidade da multidão e dos recursos disponíveis.",
+      "evidence": [
+        "Marcos 8:4–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Marcos 8:6, toque o trecho que mostra que Jesus envolveu os discípulos na distribuição do alimento.",
+      "verseRef": "Marcos 8:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "após dar graças"
+        },
+        {
+          "id": "b",
+          "text": "aos seus discípulos"
+        },
+        {
+          "id": "c",
+          "text": "no chão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os deu aos seus discípulos, para que os distribuíssem",
+      "feedbackCorrect": "Jesus entrega o alimento aos discípulos para que eles participem da distribuição.",
+      "feedbackWrong": {
+        "a": "Essa expressão descreve uma ação de Jesus antes de repartir os pães.",
+        "c": "O chão é onde a multidão se acomoda, não indica quem distribui o alimento."
+      },
+      "hint": "Procure quem recebeu os pães para depois reparti-los.",
+      "learningObjective": "Identificar a participação dos discípulos na distribuição da provisão.",
+      "evidence": [
+        "Marcos 8:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual interpretação melhor explica o contraste entre a pergunta dos discípulos e o desfecho da refeição?",
+      "verseRef": "Marcos 8:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "A limitação percebida pelos discípulos não impediu que a multidão fosse saciada."
+        },
+        {
+          "id": "b",
+          "text": "A multidão recebeu alimento apenas porque trouxe comida de casa."
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos descobriram que o deserto já tinha alimento suficiente."
+        },
+        {
+          "id": "d",
+          "text": "Jesus despediu a multidão antes que todos terminassem de comer."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E comeram e se saciaram; e dos pedaços que sobraram recolheram sete cestos.",
+      "feedbackCorrect": "O desfecho mostra que a multidão ficou satisfeita e ainda houve sobra.",
+      "feedbackWrong": {
+        "b": "O relato não diz que a multidão trouxe comida de casa; destaca os pães e peixes distribuídos.",
+        "c": "O texto não atribui a refeição a alimentos encontrados no deserto.",
+        "d": "Jesus despediu a multidão depois que todos comeram e se saciaram."
+      },
+      "hint": "Compare a dificuldade inicial com o resultado descrito no fim.",
+      "learningObjective": "Interpretar o desfecho como resposta à limitação percebida pelos discípulos.",
+      "evidence": [
+        "Marcos 8:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Organize a lógica do relato, da compaixão de Jesus ao resultado para a multidão.",
+      "verseRef": "Marcos 8:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus percebe a necessidade e sente compaixão"
+        },
+        {
+          "id": "b",
+          "text": "Jesus considera o risco de enviar pessoas sem alimento"
+        },
+        {
+          "id": "c",
+          "text": "A multidão termina satisfeita e com sobras recolhidas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tenho compaixão desta multidão",
+      "feedbackCorrect": "A compaixão leva Jesus a considerar a necessidade, e a história termina com a multidão saciada.",
+      "feedbackWrong": {
+        "default": "Comece pela compaixão, passe pela preocupação de Jesus e termine no resultado da refeição."
+      },
+      "hint": "O relato começa com o que Jesus sente e termina com o resultado para o povo.",
+      "learningObjective": "Reconhecer o encadeamento entre compaixão, cuidado e provisão.",
+      "evidence": [
+        "Marcos 8:2",
+        "Marcos 8:3",
+        "Marcos 8:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Marcos 8:2, que palavra resume a atitude de Jesus diante da necessidade da multidão?",
+      "verseRef": "Marcos 8:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "compaixão"
+        },
+        {
+          "id": "b",
+          "text": "indiferença"
+        },
+        {
+          "id": "c",
+          "text": "admiração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tenho compaixão desta multidão",
+      "feedbackCorrect": "A compaixão é o sentimento que move Jesus a considerar a necessidade concreta das pessoas.",
+      "feedbackWrong": {
+        "b": "Jesus não ignora a fome da multidão; ele expressa cuidado por ela.",
+        "c": "O texto não descreve admiração, mas preocupação com a necessidade das pessoas."
+      },
+      "hint": "Retome a primeira declaração de Jesus sobre a multidão.",
+      "learningObjective": "Reconhecer a compaixão como atitude central de Jesus diante da necessidade humana.",
+      "evidence": [
+        "Marcos 8:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Marcos 8:2 a Salmos 145:16?",
+      "verseRef": "Marcos 8:2",
+      "passageA": {
+        "ref": "Marcos 8:2"
+      },
+      "passageB": {
+        "ref": "Salmos 145:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus cuida das necessidades"
+        },
+        {
+          "id": "b",
+          "text": "A fome é sempre castigo"
+        },
+        {
+          "id": "c",
+          "text": "A multidão deve prover sozinha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tenho compaixão desta multidão",
+      "feedbackCorrect": "Os textos mostram o cuidado de Deus diante das necessidades das pessoas.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos apresenta a fome como castigo.",
+        "c": "A ligação está na provisão de Deus, não na autossuficiência humana."
+      },
+      "hint": "Compare a compaixão de Jesus com a descrição do cuidado de Deus no salmo.",
+      "learningObjective": "Relacionar a compaixão de Jesus ao cuidado provedor de Deus apresentado nos Salmos.",
+      "evidence": [
+        "Marcos 8:2",
+        "Salmos 145:16"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 42:7–10",
+  "passages": [
+   {
+    "ref": "Jó 42:7–10"
+   },
+   {
+    "ref": "Jó 42:11–17"
+   }
+  ],
+  "context": "Deus repreende os amigos e manda Jó orar por eles. A restauração vem quando Jó intercede — o fim não explica toda a dor, mas mostra um Deus que restaura e ensina a interceder.",
+  "keyword": "Orava por seus amigos",
+  "keywordGloss": "A sorte de Jó é restaurada quando ele ora por quem o acusou.",
+  "focusQuestion": "Você consegue interceder por quem te feriu, confiando que Deus restaura do jeito dele?",
+  "reflectionPrompts": [
+   "Intercessão que restaura",
+   "Amigos repreendidos",
+   "Fim sem todas as respostas"
+  ],
+  "facts": [
+   {
+    "text": "A ira de Deus se acendeu contra Elifaz e os dois amigos.",
+    "evidenceRef": "Jó 42:7",
+    "evidenceSpan": "A minha ira se acendeu contra você e contra seus dois amigos"
+   },
+   {
+    "text": "Os amigos não disseram de Deus o que era justo, como Jó.",
+    "evidenceRef": "Jó 42:7",
+    "evidenceSpan": "não disseram de mim o que era justo como fez o meu servo Jó"
+   },
+   {
+    "text": "Jó deve orar pelos amigos para que Deus aceite a intercessão.",
+    "evidenceRef": "Jó 42:8",
+    "evidenceSpan": "O meu servo Jó orará por vocês"
+   },
+   {
+    "text": "O Senhor restaurou a sorte de Jó quando ele orava pelos amigos.",
+    "evidenceRef": "Jó 42:10",
+    "evidenceSpan": "quando ele orava por seus amigos"
+   },
+   {
+    "text": "O Senhor deu a Jó o dobro do que antes possuía.",
+    "evidenceRef": "Jó 42:10",
+    "evidenceSpan": "deu a Jó o dobro de tudo o que antes possuía"
+   },
+   {
+    "text": "Jó morreu velho e farto de dias.",
+    "evidenceRef": "Jó 42:17",
+    "evidenceSpan": "Jó morreu, velho e farto de dias"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "intercessão",
+    "gloss": "Oração de Jó pelos amigos, aceita por Deus."
+   },
+   {
+    "term": "restaurou",
+    "gloss": "Ação do Senhor sobre a sorte de Jó."
+   },
+   {
+    "term": "servo",
+    "gloss": "Como Deus chama Jó diante dos amigos."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus repreende os amigos e elogia Jó",
+    "evidenceRef": "Jó 42:7"
+   },
+   {
+    "label": "Deus manda sacrifício e intercessão de Jó",
+    "evidenceRef": "Jó 42:8–9"
+   },
+   {
+    "label": "Restauração quando Jó ora pelos amigos",
+    "evidenceRef": "Jó 42:10–12"
+   },
+   {
+    "label": "Família, herança e fim farto de dias",
+    "evidenceRef": "Jó 42:13–17"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "A ira se acendeu porque os amigos não disseram o que era justo.",
+    "marker": "porque",
+    "evidenceRef": "Jó 42:7"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quando Jó ora, o Senhor restaura a sorte dele.",
+    "marker": "quando",
+    "evidenceRef": "Jó 42:10"
+   },
+   {
+    "kind": "contraste",
+    "text": "O estado final de Jó é abençoado mais do que o inicial.",
+    "marker": "mais do que",
+    "evidenceRef": "Jó 42:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Mateus 5:44",
+    "bridge": "Orar pelos que perseguem"
+   },
+   {
+    "ref": "Tiago 5:16",
+    "bridge": "Oração do justo"
+   },
+   {
+    "ref": "Gênesis 20:17",
+    "bridge": "Abraão ora e há cura"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus aprova cada palavra teológica dos três amigos.",
+    "why": "42:7–8 diz que não disseram o que era justo."
+   },
+   {
+    "text": "A restauração veio antes de Jó orar pelos amigos.",
+    "why": "42:10 liga a restauração ao momento em que ele orava."
+   },
+   {
+    "text": "O fim explica todas as razões da dor de Jó.",
+    "why": "O texto restaura e ensina a interceder; não oferece um mapa completo da dor."
+   }
+  ],
+  "centralInsight": "O fim não explica toda a dor — mas mostra um Deus que restaura e ensina a interceder.",
+  "anchorQuestion": "Quando o Senhor restaurou a sorte de Jó, segundo Jó 42:10?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 42:10, o Senhor restaurou a sorte de Jó quando ele orava por seus amigos.",
+   "verseRef": "Jó 42:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "A restauração vem ligada à intercessão.",
+   "feedbackWrong": {
+    "false": "Releia 42:10 até o fim da primeira frase."
+   },
+   "hint": "Veja a cláusula com quando.",
+   "learningObjective": "Observar o momento da restauração.",
+   "evidence": [
+    "Jó 42:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 42:10, toque o que o Senhor restaurou.",
+   "verseRef": "Jó 42:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "sorte"
+    },
+    {
+     "id": "b",
+     "text": "dobro"
+    },
+    {
+     "id": "c",
+     "text": "amigos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "restaurou a sorte de Jó",
+   "feedbackCorrect": "O objeto da restauração é a sorte de Jó.",
+   "feedbackWrong": {
+    "b": "O dobro é o que ele deu depois.",
+    "c": "Os amigos são por quem Jó ora."
+   },
+   "hint": "Veja o objeto de restaurou.",
+   "learningObjective": "Identificar o que foi restaurado.",
+   "evidence": [
+    "Jó 42:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 42:7, por que a ira de Deus se acendeu contra os amigos?",
+   "verseRef": "Jó 42:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não disseram de Deus o que era justo como Jó"
+    },
+    {
+     "id": "b",
+     "text": "Ofereceram holocaustos demais"
+    },
+    {
+     "id": "c",
+     "text": "Recusaram visitar Jó"
+    },
+    {
+     "id": "d",
+     "text": "Roubaram o gado de Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não disseram de mim o que era justo como fez o meu servo Jó",
+   "feedbackCorrect": "A causa é a fala injusta sobre Deus.",
+   "feedbackWrong": {
+    "b": "O holocausto é ordem posterior.",
+    "c": "Não é o motivo declarado.",
+    "d": "Não há roubo neste versículo."
+   },
+   "hint": "Leia o porque do versículo.",
+   "learningObjective": "Observar a repreensão.",
+   "evidence": [
+    "Jó 42:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 42:10 na ordem do texto.",
+   "verseRef": "Jó 42:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então o Senhor restaurou a sorte de Jó"
+    },
+    {
+     "id": "b",
+     "text": "quando ele orava por seus amigos"
+    },
+    {
+     "id": "c",
+     "text": "e o Senhor deu a Jó o dobro de tudo o que antes possuía."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "Primeiro a restauração; depois a oração; por fim o dobro.",
+   "feedbackWrong": {
+    "default": "Comece por Então; o dobro fecha."
+   },
+   "hint": "Comece pela restauração.",
+   "learningObjective": "Reconhecer a sequência de 42:10.",
+   "evidence": [
+    "Jó 42:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 42:8, o que o servo Jó fará por vocês?",
+   "verseRef": "Jó 42:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "orará"
+    },
+    {
+     "id": "b",
+     "text": "fugirá"
+    },
+    {
+     "id": "c",
+     "text": "acusará"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O meu servo Jó orará por vocês",
+   "feedbackCorrect": "A ação é orará.",
+   "feedbackWrong": {
+    "b": "O texto não manda fugir.",
+    "c": "O texto não manda acusar."
+   },
+   "hint": "Veja o verbo depois de Jó.",
+   "learningObjective": "Lembrar a ação da intercessão.",
+   "evidence": [
+    "Jó 42:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 42:10 comunica que se liga a este contexto?",
+   "verseRef": "Jó 42:10",
+   "passageA": {
+    "ref": "Jó 42:10"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A restauração de Jó vem quando ele intercede por quem o acusou."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Restauração com intercessão"
+    },
+    {
+     "id": "b",
+     "text": "Vingança sem oração"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio eterno de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "Orar e restaurar caminham juntos.",
+   "feedbackWrong": {
+    "b": "Não há vingança no versículo.",
+    "c": "Deus age restaurando."
+   },
+   "hint": "Pense no quando da restauração.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 42:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 42:7, Deus aprova as palavras dos três amigos como justas.",
+   "verseRef": "Jó 42:7",
+   "correctOptionId": "false",
+   "evidenceSpan": "não disseram de mim o que era justo",
+   "feedbackCorrect": "Deus declara que não disseram o que era justo.",
+   "feedbackWrong": {
+    "true": "Releia a causa da ira em 42:7."
+   },
+   "hint": "Veja o porque da ira.",
+   "learningObjective": "Compreender a repreensão.",
+   "evidence": [
+    "Jó 42:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 42:7, toque a palavra que marca a causa da ira.",
+   "verseRef": "Jó 42:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "porque"
+    },
+    {
+     "id": "b",
+     "text": "ira"
+    },
+    {
+     "id": "c",
+     "text": "servo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque não disseram de mim",
+   "feedbackCorrect": "Porque introduz a causa.",
+   "feedbackWrong": {
+    "b": "Ira é o que se acendeu.",
+    "c": "Servo é como Deus chama Jó."
+   },
+   "hint": "Procure a palavra antes de não disseram.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Jó 42:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 42:8–10 se relaciona com a repreensão de 42:7?",
+   "verseRef": "Jó 42:7–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra o caminho: sacrifício, intercessão e restauração"
+    },
+    {
+     "id": "b",
+     "text": "Nega que Jó precise orar"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que os amigos estavam certos"
+    },
+    {
+     "id": "d",
+     "text": "Diz que a restauração veio sem oração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "Da repreensão ao holocausto e à oração que restaura.",
+   "feedbackWrong": {
+    "b": "42:8 manda Jó orar.",
+    "c": "42:7 diz que não disseram o justo.",
+    "d": "42:10 liga restauração e oração."
+   },
+   "hint": "Leia o fio de 42:8 a 42:10.",
+   "learningObjective": "Relacionar repreensão e restauração.",
+   "evidence": [
+    "Jó 42:7–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o desfecho em Jó 42:7–17?",
+   "verseRef": "Jó 42:7–17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus repreende os amigos e elogia Jó"
+    },
+    {
+     "id": "b",
+     "text": "Jó ora e a sorte é restaurada"
+    },
+    {
+     "id": "c",
+     "text": "Família, bênção e fim farto de dias"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Jó morreu, velho e farto de dias",
+   "feedbackCorrect": "O fio vai da repreensão à restauração e ao fim.",
+   "feedbackWrong": {
+    "default": "Comece pela repreensão; o fim farto fecha."
+   },
+   "hint": "Pense: repreensão → oração → fim.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 42:7–17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 42:10, o Senhor deu a Jó o quê de tudo o que possuía?",
+   "verseRef": "Jó 42:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "dobro"
+    },
+    {
+     "id": "b",
+     "text": "metade"
+    },
+    {
+     "id": "c",
+     "text": "nada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "deu a Jó o dobro de tudo",
+   "feedbackCorrect": "A palavra da abundância é dobro.",
+   "feedbackWrong": {
+    "b": "O texto não diz metade.",
+    "c": "O texto não diz nada."
+   },
+   "hint": "Veja o que o Senhor deu.",
+   "learningObjective": "Lembrar a medida da restauração.",
+   "evidence": [
+    "Jó 42:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 42:10 a Mateus 5:44?",
+   "verseRef": "Jó 42:10",
+   "passageA": {
+    "ref": "Jó 42:10"
+   },
+   "passageB": {
+    "ref": "Mateus 5:44"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Orar pelos que perseguem"
+    },
+    {
+     "id": "b",
+     "text": "Lista de jejuns"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de cidades"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "Nos dois textos, a oração alcança quem feriu.",
+   "feedbackWrong": {
+    "b": "Não há lista de jejuns.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare por quem se ora.",
+   "learningObjective": "Relacionar a intercessão a Mateus.",
+   "evidence": [
+    "Jó 42:10",
+    "Mateus 5:44"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 42:7–17 sustenta que o fim explica todas as razões da dor de Jó, sem necessidade de intercessão.",
+   "verseRef": "Jó 42:7–17",
+   "correctOptionId": "false",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "O texto restaura e ensina a interceder; não oferece mapa completo da dor.",
+   "feedbackWrong": {
+    "true": "42:10 destaca a oração; o trecho não explica toda a dor."
+   },
+   "hint": "Veja o que o texto enfatiza no fim.",
+   "learningObjective": "Interpretar o desfecho sem forçar explicação total.",
+   "evidence": [
+    "Jó 42:7–17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 42:8, toque o trecho que sustenta a intercessão aceita.",
+   "verseRef": "Jó 42:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "orará por vocês"
+    },
+    {
+     "id": "b",
+     "text": "sete novilhos"
+    },
+    {
+     "id": "c",
+     "text": "sua loucura"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O meu servo Jó orará por vocês",
+   "feedbackCorrect": "A oração de Jó é o meio da aceitação.",
+   "feedbackWrong": {
+    "b": "Os novilhos são o holocausto ordenado.",
+    "c": "A loucura é o risco se não houver intercessão."
+   },
+   "hint": "Veja o que o servo Jó fará.",
+   "learningObjective": "Sustentar a leitura da intercessão.",
+   "evidence": [
+    "Jó 42:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 42:7–17 sustenta?",
+   "verseRef": "Jó 42:7–17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus restaura e ensina a interceder, sem explicar toda a dor"
+    },
+    {
+     "id": "b",
+     "text": "Os amigos estavam teologicamente corretos"
+    },
+    {
+     "id": "c",
+     "text": "A restauração veio sem qualquer oração"
+    },
+    {
+     "id": "d",
+     "text": "Jó nunca mais vê família nem dias fartos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "Repreensão, oração e restauração sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "42:7 nega isso.",
+    "c": "42:10 liga restauração e oração.",
+    "d": "42:13–17 mostra família e fim farto."
+   },
+   "hint": "Una 42:7 e 42:10.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 42:7–17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra intercessão que restaura?",
+   "verseRef": "Jó 42:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó ora pelos amigos e é restaurado"
+    },
+    {
+     "id": "b",
+     "text": "Jesus manda orar pelos que perseguem"
+    },
+    {
+     "id": "c",
+     "text": "Abraão ora e há cura"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "O fio vai de Jó a Mateus e a Gênesis 20.",
+   "feedbackWrong": {
+    "default": "Comece por Jó; Abraão fecha."
+   },
+   "hint": "Siga: Jó → Jesus → Abraão.",
+   "learningObjective": "Ver o fio da intercessão.",
+   "evidence": [
+    "Jó 42:10",
+    "Mateus 5:44",
+    "Gênesis 20:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 42:8, como Deus chama Jó diante dos amigos?",
+   "verseRef": "Jó 42:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "servo"
+    },
+    {
+     "id": "b",
+     "text": "rei"
+    },
+    {
+     "id": "c",
+     "text": "juiz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O meu servo Jó orará por vocês",
+   "feedbackCorrect": "O termo da cena é servo.",
+   "feedbackWrong": {
+    "b": "O texto não diz rei.",
+    "c": "O texto não diz juiz."
+   },
+   "hint": "Veja o título que Deus dá a Jó.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 42:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 42:10 a Tiago 5:16?",
+   "verseRef": "Jó 42:10",
+   "passageA": {
+    "ref": "Jó 42:10"
+   },
+   "passageB": {
+    "ref": "Tiago 5:16"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Oração do justo"
+    },
+    {
+     "id": "b",
+     "text": "Lista de enfermidades"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando ele orava por seus amigos",
+   "feedbackCorrect": "Nos dois textos, a oração do justo tem efeito.",
+   "feedbackWrong": {
+    "b": "Não há lista de enfermidades.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare o poder da oração.",
+   "learningObjective": "Ligar a intercessão a Tiago.",
+   "evidence": [
+    "Jó 42:10",
+    "Tiago 5:16"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,581 @@
+{
+  "study": {
+    "passageRef": "Eclesiastes 12:1–5",
+    "passages": [
+      { "ref": "Eclesiastes 7:2–4" },
+      { "ref": "Eclesiastes 8:12–15" },
+      { "ref": "Eclesiastes 9:7–12" },
+      { "ref": "Eclesiastes 10:12" },
+      { "ref": "Eclesiastes 11:4–6" },
+      { "ref": "Eclesiastes 12:1–5" }
+    ],
+    "context": "Esta Travessia revisa o segundo bloco: luto que ensina, temor a Deus, pão com alegria, língua, semeadura sem vento perfeito e o lembrar do Criador.",
+    "keyword": "Criador",
+    "keywordGloss": "Aquele a lembrar na juventude: o caminho que resta no fim.",
+    "focusQuestion": "O que ainda falta lembrar do Criador enquanto o dia permite?",
+    "reflectionPrompts": ["Luto que ensina", "Temor e alegria", "Lembrar o Criador"],
+    "facts": [
+      {
+        "text": "Melhor é ir à casa do luto do que à do banquete.",
+        "evidenceRef": "Eclesiastes 7:2",
+        "evidenceSpan": "Melhor é ir à casa do luto do que à casa onde há banquete"
+      },
+      {
+        "text": "Será bem com aqueles que temem a Deus.",
+        "evidenceRef": "Eclesiastes 8:12",
+        "evidenceSpan": "será bem com aqueles que temem a Deus e o reverenciam"
+      },
+      {
+        "text": "Coma com alegria o pão; Deus já se agrada das obras.",
+        "evidenceRef": "Eclesiastes 9:7",
+        "evidenceSpan": "coma com alegria o seu pão"
+      },
+      {
+        "text": "Quem observa o vento nunca semeará.",
+        "evidenceRef": "Eclesiastes 11:4",
+        "evidenceSpan": "Quem observa o vento nunca semeará"
+      },
+      {
+        "text": "Lembre-se do Criador nos dias da juventude.",
+        "evidenceRef": "Eclesiastes 12:1",
+        "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude"
+      },
+      {
+        "text": "O homem vai para sua casa eterna.",
+        "evidenceRef": "Eclesiastes 12:5",
+        "evidenceSpan": "o homem vai para sua casa eterna"
+      }
+    ],
+    "keyTerms": [
+      { "term": "Criador", "gloss": "Aquele a lembrar cedo: o caminho que resta." },
+      { "term": "temem", "gloss": "A certeza no mistério: será bem com quem teme a Deus." },
+      { "term": "semeie", "gloss": "A ação sem esperar o vento perfeito." }
+    ],
+    "structure": [
+      { "label": "O luto ensina o fim de todos", "evidenceRef": "Eclesiastes 7:2–4" },
+      { "label": "Temer a Deus e receber a alegria simples", "evidenceRef": "Eclesiastes 8:12–15" },
+      { "label": "Agir com força e semear sem vento perfeito", "evidenceRef": "Eclesiastes 11:4–6" },
+      { "label": "Lembrar o Criador antes dos dias ruins", "evidenceRef": "Eclesiastes 12:1–5" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Melhor o luto, pois ali se vê o fim de todos.",
+        "marker": "pois",
+        "evidenceRef": "Eclesiastes 7:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Embora o pecador prospere, será bem com quem teme a Deus.",
+        "marker": "Embora",
+        "evidenceRef": "Eclesiastes 8:12"
+      },
+      {
+        "kind": "sequência",
+        "text": "Lembre o Criador antes que cheguem os dias ruins.",
+        "marker": "antes que",
+        "evidenceRef": "Eclesiastes 12:1"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 90:12", "bridge": "Contar os dias com sabedoria" },
+      { "ref": "Tiago 4:14", "bridge": "A vida é vapor breve" },
+      { "ref": "Deuteronômio 6:5", "bridge": "Amar o Senhor de coração" }
+    ],
+    "misreadings": [
+      {
+        "text": "A juventude pode esquecer Deus; o fim não importa.",
+        "why": "12:1 manda lembrar o Criador na juventude."
+      },
+      {
+        "text": "Temer a Deus não muda nada enquanto o pecador prospera.",
+        "why": "8:12: será bem com os que temem a Deus."
+      },
+      {
+        "text": "Só se age quando o vento estiver perfeito.",
+        "why": "11:4: quem observa o vento nunca semeará."
+      }
+    ],
+    "centralInsight": "No fim, lembrar o Criador é o caminho que resta",
+    "anchorQuestion": "Segundo Eclesiastes 12:1, de quem se deve lembrar na juventude?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Eclesiastes 12:1, deve-se lembrar do Criador nos dias da juventude.",
+      "verseRef": "Eclesiastes 12:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "A ordem é lembrar o Criador na juventude.",
+      "feedbackWrong": { "false": "Releia 12:1: lembre-se do Criador na juventude." },
+      "hint": "Veja de quem se deve lembrar.",
+      "learningObjective": "Observar a ordem de lembrar o Criador.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 8:12, toque com quem será bem.",
+      "verseRef": "Eclesiastes 8:12",
+      "options": [
+        { "id": "a", "text": "temem a Deus" },
+        { "id": "b", "text": "cem vezes" },
+        { "id": "c", "text": "seus dias" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será bem com aqueles que temem a Deus",
+      "feedbackCorrect": "Será bem com os que temem a Deus.",
+      "feedbackWrong": {
+        "b": "Isso descreve o pecador.",
+        "c": "Os dias do pecador se estendem; o bem é de quem teme."
+      },
+      "hint": "Veja com quem será bem.",
+      "learningObjective": "Identificar quem teme a Deus.",
+      "evidence": ["Eclesiastes 8:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Eclesiastes 11:4, o que nunca faz quem observa o vento?",
+      "verseRef": "Eclesiastes 11:4",
+      "options": [
+        { "id": "a", "text": "Semear" },
+        { "id": "b", "text": "Comer pão" },
+        { "id": "c", "text": "Temer a Deus" },
+        { "id": "d", "text": "Ir ao luto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quem observa o vento nunca semeará",
+      "feedbackCorrect": "Quem observa o vento nunca semeará.",
+      "feedbackWrong": {
+        "b": "O pão está em 9:7.",
+        "c": "O temor está em 8:12.",
+        "d": "O luto está em 7:2."
+      },
+      "hint": "Veja o verbo depois de \"nunca\".",
+      "learningObjective": "Reconhecer a semeadura impedida.",
+      "evidence": ["Eclesiastes 11:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Eclesiastes 9:7 na ordem do texto.",
+      "verseRef": "Eclesiastes 9:7",
+      "options": [
+        { "id": "a", "text": "Vá, pois, coma com alegria o seu pão" },
+        { "id": "b", "text": "e beba com prazer o seu vinho" },
+        { "id": "c", "text": "pois Deus já se agrada das suas obras" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "coma com alegria o seu pão e beba com prazer o seu vinho",
+      "feedbackCorrect": "Pão, vinho e o agrado de Deus.",
+      "feedbackWrong": { "default": "Comece pelo pão; Deus fecha." },
+      "hint": "Siga pão → vinho → Deus.",
+      "learningObjective": "Seguir a ordem do convite.",
+      "evidence": ["Eclesiastes 9:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Eclesiastes 12:1, de quem se deve lembrar na juventude?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "Criador" },
+        { "id": "b", "text": "vento" },
+        { "id": "c", "text": "banquete" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do seu Criador",
+      "feedbackCorrect": "Deve-se lembrar do Criador.",
+      "feedbackWrong": {
+        "b": "O vento está em 11:4.",
+        "c": "O banquete está em 7:2."
+      },
+      "hint": "Veja o objeto de \"Lembre-se\".",
+      "learningObjective": "Lembrar a palavra Criador.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Eclesiastes 12:1 comunica que se liga a este contexto?",
+      "verseRef": "Eclesiastes 12:1",
+      "passageA": { "ref": "Eclesiastes 12:1" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Esta Travessia fecha o bloco no lembrar do Criador antes dos dias ruins."
+      },
+      "options": [
+        { "id": "a", "text": "Lembrar o Criador cedo" },
+        { "id": "b", "text": "Esquecer Deus na juventude" },
+        { "id": "c", "text": "Só agir com vento perfeito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "O fechamento do bloco é lembrar o Criador cedo.",
+      "feedbackWrong": {
+        "b": "O texto manda lembrar.",
+        "c": "11:4 rejeita esperar o vento."
+      },
+      "hint": "Veja quando se deve lembrar.",
+      "learningObjective": "Ligar o contexto ao lembrar cedo.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 7:2, toque o lugar preferível ao banquete.",
+      "verseRef": "Eclesiastes 7:2",
+      "options": [
+        { "id": "a", "text": "casa do luto" },
+        { "id": "b", "text": "todos os homens" },
+        { "id": "c", "text": "os vivos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Melhor é ir à casa do luto",
+      "feedbackCorrect": "Melhor é a casa do luto.",
+      "feedbackWrong": {
+        "b": "Isso é o que se vê ali.",
+        "c": "Os vivos devem considerar; o lugar é o luto."
+      },
+      "hint": "Veja o que é melhor no começo.",
+      "learningObjective": "Identificar a casa do luto.",
+      "evidence": ["Eclesiastes 7:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Eclesiastes 11:4 na ordem do texto.",
+      "verseRef": "Eclesiastes 11:4",
+      "options": [
+        { "id": "a", "text": "Quem observa o vento nunca semeará" },
+        { "id": "b", "text": "e quem contempla as nuvens" },
+        { "id": "c", "text": "nunca colherá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Quem observa o vento nunca semeará, e quem contempla as nuvens nunca colherá",
+      "feedbackCorrect": "Vento, nuvens e colheita perdida.",
+      "feedbackWrong": { "default": "Comece pelo vento; colherá fecha." },
+      "hint": "Siga vento → nuvens → colheita.",
+      "learningObjective": "Seguir a ordem do aviso.",
+      "evidence": ["Eclesiastes 11:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Eclesiastes 12:1, deve-se lembrar do Criador só depois dos dias ruins.",
+      "verseRef": "Eclesiastes 12:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "A ordem é lembrar antes que cheguem os dias ruins.",
+      "feedbackWrong": { "true": "O texto diz \"antes que\", não depois." },
+      "hint": "Procure \"antes que\".",
+      "learningObjective": "Ver a sequência temporal do lembrar.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 12:1, toque as palavras que marcam o limite temporal.",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "antes que" },
+        { "id": "b", "text": "juventude" },
+        { "id": "c", "text": "prazer" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "\"Antes que\" marca o limite do lembrar.",
+      "feedbackWrong": {
+        "b": "Juventude é o tempo; o marcador é outra expressão.",
+        "c": "Prazer aparece no lamento."
+      },
+      "hint": "Ache a expressão antes dos dias ruins.",
+      "learningObjective": "Tocar o marcador temporal.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Eclesiastes 8:12 marca com \"Embora\"?",
+      "verseRef": "Eclesiastes 8:12",
+      "options": [
+        { "id": "a", "text": "Embora o pecador prospere, será bem com quem teme" },
+        { "id": "b", "text": "Embora o pecador prospere, o temor não importa" },
+        { "id": "c", "text": "Embora ninguém peque, todos temem" },
+        { "id": "d", "text": "Embora haja juízo, nunca será bem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Embora o pecador faça o mal cem vezes",
+      "feedbackCorrect": "A concessão não cancela o bem de quem teme.",
+      "feedbackWrong": {
+        "b": "O texto afirma o bem de quem teme.",
+        "c": "O cenário é o pecador que faz o mal.",
+        "d": "Será bem com quem teme."
+      },
+      "hint": "Ligue \"Embora\" ao bem de quem teme.",
+      "learningObjective": "Relacionar concessão e temor.",
+      "evidence": ["Eclesiastes 8:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos deste segundo bloco.",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "O luto ensina o fim de todos" },
+        { "id": "b", "text": "Temer a Deus e receber a alegria simples" },
+        { "id": "c", "text": "Lembrar o Criador antes dos dias ruins" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "Do luto ao temor/alegria e ao lembrar o Criador.",
+      "feedbackWrong": { "default": "Comece pelo luto; o Criador fecha." },
+      "hint": "Siga luto → temor → Criador.",
+      "learningObjective": "Ordenar a estrutura da Travessia.",
+      "evidence": ["Eclesiastes 7:2", "Eclesiastes 8:12", "Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Eclesiastes 12:1, que expressão marca o limite antes dos dias ruins?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "antes" },
+        { "id": "b", "text": "depois" },
+        { "id": "c", "text": "nunca" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "\"Antes\" marca o tempo do lembrar.",
+      "feedbackWrong": {
+        "b": "Não é depois.",
+        "c": "Há um tempo claro: antes."
+      },
+      "hint": "Complete \"___ que cheguem\".",
+      "learningObjective": "Lembrar o marcador temporal.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 12:1 a Salmos 90:12?",
+      "verseRef": "Eclesiastes 12:1",
+      "passageA": { "ref": "Eclesiastes 12:1" },
+      "passageB": { "ref": "Salmos 90:12" },
+      "options": [
+        { "id": "a", "text": "Contar os dias com sabedoria" },
+        { "id": "b", "text": "Ignorar o fim da vida" },
+        { "id": "c", "text": "Adiar toda memória de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nos dias da sua juventude",
+      "feedbackCorrect": "Os dois textos pedem sabedoria diante dos dias limitados.",
+      "feedbackWrong": {
+        "b": "Ambos apontam para o fim.",
+        "c": "Eclesiastes manda lembrar cedo."
+      },
+      "hint": "Compare juventude e contar os dias.",
+      "learningObjective": "Ligar o lembrar cedo ao Salmo 90.",
+      "evidence": ["Eclesiastes 12:1", "Salmos 90:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 7:4, toque a palavra que marca o contraste com os sábios.",
+      "verseRef": "Eclesiastes 7:4",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "coração" },
+        { "id": "c", "text": "luto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas o coração dos insensatos",
+      "feedbackCorrect": "O \"mas\" introduz o contraste com os insensatos.",
+      "feedbackWrong": {
+        "b": "Coração aparece nos dois lados.",
+        "c": "Luto é o lugar dos sábios."
+      },
+      "hint": "Ache a palavra no meio do versículo.",
+      "learningObjective": "Tocar o contraste do luto.",
+      "evidence": ["Eclesiastes 7:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o caminho da ação ao lembrar neste bloco.",
+      "verseRef": "Eclesiastes 9:10",
+      "options": [
+        { "id": "a", "text": "Faça com força enquanto é dia" },
+        { "id": "b", "text": "Semeie sem esperar o vento" },
+        { "id": "c", "text": "Lembre o Criador na juventude" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "faze-o conforme as tuas forças",
+      "feedbackCorrect": "Da força à semeadura e ao lembrar.",
+      "feedbackWrong": { "default": "Comece pela força; o Criador fecha." },
+      "hint": "Siga força → semear → Criador.",
+      "learningObjective": "Ordenar ação e memória.",
+      "evidence": ["Eclesiastes 9:10", "Eclesiastes 11:4", "Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Este bloco ensina que a juventude pode esquecer Deus, pois o fim não importa.",
+      "verseRef": "Eclesiastes 12:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "O caminho que resta é lembrar o Criador cedo.",
+      "feedbackWrong": { "true": "O texto manda lembrar na juventude." },
+      "hint": "Veja a ordem de 12:1.",
+      "learningObjective": "Rejeitar a leitura de juventude sem Deus.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 12:5, toque o trecho que sustenta o destino final.",
+      "verseRef": "Eclesiastes 12:5",
+      "options": [
+        { "id": "a", "text": "casa eterna" },
+        { "id": "b", "text": "amendoeira" },
+        { "id": "c", "text": "gafanhoto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem vai para sua casa eterna",
+      "feedbackCorrect": "O destino é a casa eterna.",
+      "feedbackWrong": {
+        "b": "Imagem do envelhecer; o destino é outra.",
+        "c": "Imagem do peso; o destino é outra."
+      },
+      "hint": "Veja para onde o homem vai.",
+      "learningObjective": "Sustentar a casa eterna.",
+      "evidence": ["Eclesiastes 12:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura este bloco sustenta sobre o fim?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "No fim, lembrar o Criador é o caminho que resta" },
+        { "id": "b", "text": "Só o vento perfeito importa no fim" },
+        { "id": "c", "text": "O temor a Deus é inútil" },
+        { "id": "d", "text": "A juventude dispensa qualquer memória" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "Luto, temor, ação e o lembrar do Criador fecham o arco.",
+      "feedbackWrong": {
+        "b": "11:4 rejeita esperar o vento.",
+        "c": "8:12 afirma o bem de quem teme.",
+        "d": "12:1 manda lembrar na juventude."
+      },
+      "hint": "Una 12:1 ao arco do bloco.",
+      "learningObjective": "Escolher a leitura do Criador no fim.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho até lembrar o Criador?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "O luto ensina a considerar o fim" },
+        { "id": "b", "text": "Temer a Deus no meio do mistério" },
+        { "id": "c", "text": "Lembrar o Criador enquanto é dia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "Do luto ao temor e ao lembrar.",
+      "feedbackWrong": { "default": "Comece pelo luto; o Criador fecha." },
+      "hint": "Siga luto → temor → Criador.",
+      "learningObjective": "Ver o encadeamento até o Criador.",
+      "evidence": ["Eclesiastes 7:2", "Eclesiastes 8:12", "Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Eclesiastes 11:6, que verbo nomeia a ação pedida pela manhã?",
+      "verseRef": "Eclesiastes 11:6",
+      "options": [
+        { "id": "a", "text": "semeie" },
+        { "id": "b", "text": "espere" },
+        { "id": "c", "text": "retire" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pela manhã, semeie sua semente",
+      "feedbackCorrect": "Semeie é a ação pedida.",
+      "feedbackWrong": {
+        "b": "O texto não manda esperar.",
+        "c": "À tarde a ordem é não retirar."
+      },
+      "hint": "Veja o verbo depois de \"Pela manhã\".",
+      "learningObjective": "Lembrar o verbo da semeadura.",
+      "evidence": ["Eclesiastes 11:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 12:5 a Tiago 4:14?",
+      "verseRef": "Eclesiastes 12:5",
+      "passageA": { "ref": "Eclesiastes 12:5" },
+      "passageB": { "ref": "Tiago 4:14" },
+      "options": [
+        { "id": "a", "text": "A vida é vapor breve" },
+        { "id": "b", "text": "A vida humana é eterna aqui" },
+        { "id": "c", "text": "O fim nunca chega" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem vai para sua casa eterna",
+      "feedbackCorrect": "Os dois textos apontam a brevidade da vida sob o sol.",
+      "feedbackWrong": {
+        "b": "Ambos apontam o limite.",
+        "c": "Há casa eterna e vapor."
+      },
+      "hint": "Compare a casa eterna com a vida como vapor.",
+      "learningObjective": "Ligar o fim ao vapor de Tiago.",
+      "evidence": ["Eclesiastes 12:5", "Tiago 4:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 10:12, toque o trecho que sustenta a ruína da fala tola.",
+      "verseRef": "Eclesiastes 10:12",
+      "options": [
+        { "id": "a", "text": "o devoram" },
+        { "id": "b", "text": "favoráveis" },
+        { "id": "c", "text": "sábio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os lábios do tolo o devoram",
+      "feedbackCorrect": "A ruína está em \"o devoram\".",
+      "feedbackWrong": {
+        "b": "Favoráveis descreve o sábio.",
+        "c": "O sábio é o contraste."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Sustentar a ruína da fala tola.",
+      "evidence": ["Eclesiastes 10:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência fecha o bloco no Criador?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "Receba o pão e aja com força" },
+        { "id": "b", "text": "Semeie sem vento perfeito" },
+        { "id": "c", "text": "Lembre o Criador antes dos dias ruins" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "Da alegria/ação à semeadura e ao Criador.",
+      "feedbackWrong": { "default": "Comece pelo pão; o Criador fecha." },
+      "hint": "Siga pão → semear → Criador.",
+      "learningObjective": "Ver o fechamento no Criador.",
+      "evidence": ["Eclesiastes 9:7", "Eclesiastes 11:6", "Eclesiastes 12:1"]
+    }
+  ]
+}

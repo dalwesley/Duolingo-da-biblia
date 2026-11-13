@@ -10,6 +10,8 @@ import '../data/season_walk_catalog.dart';
 import '../l10n/app_language.dart';
 import '../models/corner_challenge.dart';
 import '../models/pilgrim_medal_models.dart';
+import '../models/room_plan.dart';
+import '../models/room_week.dart';
 import '../models/study_room.dart';
 import '../models/companion_invite.dart';
 import '../models/walk_companion.dart';
@@ -41,6 +43,9 @@ import '../widgets/juntos_inbox.dart';
 import '../widgets/caravan_pilgrim_sheet.dart';
 import '../widgets/accept_invite_sheet.dart';
 import '../widgets/app_sheet.dart';
+import '../widgets/room_pilot_cards.dart';
+import '../widgets/room_plan_cards.dart';
+import '../widgets/room_plan_editor.dart';
 import '../widgets/cinematic_icon.dart';
 import '../widgets/companion_call_sheet.dart';
 import '../widgets/companion_formed_sheet.dart';
@@ -63,8 +68,10 @@ import '../widgets/recognition_actions.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/room_roster.dart';
 import '../widgets/room_panels.dart';
+import 'bible_reader_screen.dart';
 import 'coming_soon_screen.dart';
 import 'lesson_screen.dart';
+import 'room_reveal_screen.dart';
 
 /// Altura comum quando CTA ouro e fantasma ficam lado a lado
 /// (GhostCta tem mínimo de 48; o ouro denso, 44).
@@ -190,7 +197,14 @@ class _LeagueScreenState extends State<LeagueScreen>
       if (!mounted) return;
     }
     final roomCode = links.takePendingRoomCode();
-    if (roomCode != null && !rc.groupsEnabled) {
+    final roomsSvc = context.read<RoomService>();
+    // Chave desligada: só abre o convite de um grupo do piloto.
+    var roomClosed = false;
+    if (roomCode != null && !roomsSvc.groupsOpen(rc.groupsEnabled)) {
+      roomClosed = !await roomsSvc.isPilotRoom(roomCode);
+      if (!mounted) return;
+    }
+    if (roomCode != null && roomClosed) {
       links.takeWantGruposTab();
       await openComingSoon(
         context,
@@ -337,6 +351,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     try {
       await rooms.syncIfNeeded().timeout(const Duration(seconds: 10));
       await rooms.syncStudyDone(progress).timeout(const Duration(seconds: 10));
+      await rooms.syncReading(progress).timeout(const Duration(seconds: 10));
+      await rooms.syncPlan(progress).timeout(const Duration(seconds: 10));
+      await rooms.syncSeals(progress).timeout(const Duration(seconds: 10));
+      await rooms.syncGrowth(progress).timeout(const Duration(seconds: 10));
       await companionSvc.refresh().timeout(const Duration(seconds: 10));
       final result = await companionSvc
           .syncPresence(progress)
@@ -407,7 +425,10 @@ class _LeagueScreenState extends State<LeagueScreen>
     final rc = listen
         ? context.watch<RemoteConfigService>()
         : context.read<RemoteConfigService>();
-    final groupsOn = rc.groupsEnabled;
+    // Piloto: o líder escolhido e quem está no grupo dele veem Grupos.
+    final groupsOn =
+        (listen ? context.watch<RoomService>() : context.read<RoomService>())
+            .groupsOpen(rc.groupsEnabled);
     final companionOn = rc.companionEnabled;
     final challengeOn = rc.challengeEnabled;
     // A aba Companhia abre com a companhia ou com o desafio.
@@ -1207,30 +1228,90 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
 
     final isLeader = room.isOwner(backend.uid);
+    if (room.plan != null) {
+      return _buildPlanRoom(
+        context,
+        rooms: rooms,
+        backend: backend,
+        progress: progress,
+        room: room,
+        plan: room.plan!,
+        isLeader: isLeader,
+        incoming: incoming,
+        callPeople: callPeople,
+      );
+    }
     final study = rooms.currentStudy;
+    final reading = rooms.currentReading;
+    final me = members.where((m) => m.isUser).firstOrNull;
+    final unseen = rooms.unseenClosing;
+    final closedThisWeek = rooms.latestClosing?.week == LeagueService.weekKey();
+    // Estudo/leitura da semana marcados antes do propósito: a semana antiga
+    // segue até acabar (acompanhamento e fechar ainda valem).
+    final weeklyContent = study != null || reading != null;
 
     return [
       for (final invite in incoming) ...[
         _reveal(1, _incomingInviteCard(context, invite)),
         const SizedBox(height: AppSpace.md),
       ],
-      // Herói: o grupo e o estudo da semana. "Trocar" mora no menu do topo.
+      // Herói: sem propósito, o convite para criar (trilha, livro e datas
+      // são escolhidos dentro dele). Estudo da semana antigo ainda aparece
+      // até a semana acabar.
       _reveal(
         2,
-        RoomStudyCard(
-          room: room,
-          study: study,
-          members: members,
-          isLeader: isLeader,
-          onPick: () => _pickRoomStudy(context),
-          onOpen: () => _openRoomStudy(context, study),
-          header: _RoomTitle(
-            room: room,
-            isOwner: isLeader,
-            onMenu: () => _openRoomMenu(context),
+        study == null
+            ? RoomPlanEmptyCard(
+                room: room,
+                isLeader: isLeader,
+                onCreate: () => _editRoomPlan(context),
+                header: _RoomTitle(
+                  room: room,
+                  isOwner: isLeader,
+                  onMenu: () => _openRoomMenu(context),
+                ),
+              )
+            : RoomStudyCard(
+                room: room,
+                study: study,
+                members: members,
+                isLeader: isLeader,
+                onPick: () => _editRoomPlan(context),
+                onOpen: () => _openRoomStudy(context, study),
+                header: _RoomTitle(
+                  room: room,
+                  isOwner: isLeader,
+                  onMenu: () => _openRoomMenu(context),
+                ),
+              ),
+      ),
+      if (unseen != null && !isLeader) ...[
+        const SizedBox(height: AppSpace.md),
+        _reveal(
+          2,
+          RoomClosingBanner(
+            closing: unseen,
+            onOpen: () => _openRoomReveal(context, unseen),
           ),
         ),
-      ),
+      ],
+      if (isLeader && study != null) ...[
+        const SizedBox(height: AppSpace.md),
+        _reveal(2, RoomPlanInviteCard(onTap: () => _editRoomPlan(context))),
+      ],
+      if (reading != null) ...[
+        const SizedBox(height: AppSpace.md),
+        _reveal(
+          2,
+          RoomReadingCard(
+            reading: reading,
+            isLeader: false,
+            done: me?.readingDoneFor(reading) ?? 0,
+            onPick: () => _pickRoomReading(context, reading),
+            onOpen: () => _openRoomReading(context, reading),
+          ),
+        ),
+      ],
       const SizedBox(height: AppSpace.md),
       _reveal(
         2,
@@ -1252,6 +1333,186 @@ class _LeagueScreenState extends State<LeagueScreen>
             leaderId: room.ownerId,
             leaderTitle: room.kind.leaderTitle,
             study: study,
+            onTap: (m) => _showRoomSeat(context, m),
+            onInvite: rooms.isFull ? null : callPeople,
+          ),
+          // Líder: fechar e revelar fica no fim da lista de pessoas.
+          footer: isLeader && members.isNotEmpty && weeklyContent
+              ? RoomCloseWeekCta(
+                  closedThisWeek: closedThisWeek,
+                  closing: _closingWeek,
+                  onClose: () => _closeRoomWeek(context),
+                  onReveal: rooms.latestClosing == null
+                      ? null
+                      : () => _openRoomReveal(context, rooms.latestClosing!),
+                )
+              : null,
+        ),
+      ),
+      const SizedBox(height: AppSpace.lg),
+      _reveal(
+        2,
+        _RoomExitActions(
+          isLeader: isLeader,
+          onLeave: () => _leaveRoom(
+            context,
+            isLeader: isLeader,
+            others: [
+              for (final m in members)
+                if (!m.isUser) m,
+            ],
+          ),
+          onClose: () => _closeRoom(context),
+        ),
+      ),
+      const SizedBox(height: AppSpace.md),
+      if (rooms.lastError != null) ...[
+        InlineNotice(
+          message: rooms.lastError!,
+          busy: rooms.loading,
+          onRetry: () => context.read<RoomService>().syncIfNeeded(),
+        ),
+        const SizedBox(height: AppSpace.md),
+      ],
+      if (rooms.loading)
+        const Padding(
+          padding: EdgeInsets.symmetric(vertical: AppSpace.xxl),
+          child: AppSpinner(),
+        ),
+    ];
+  }
+
+  /// Grupo com propósito: o dia (herói), o pulso, as respostas, o
+  /// acompanhamento do líder e as pessoas. Sem semana de segunda a domingo.
+  List<Widget> _buildPlanRoom(
+    BuildContext context, {
+    required RoomService rooms,
+    required BackendService backend,
+    required ProgressService progress,
+    required StudyRoom room,
+    required RoomPlan plan,
+    required bool isLeader,
+    required List<RoomInvite> incoming,
+    required VoidCallback callPeople,
+  }) {
+    final members = rooms.members;
+    final mine = rooms.myPlan ?? PlanProgress(planId: plan.id);
+    final group = PlanGroup(plan, members);
+    final phase = plan.phase();
+    final unseen = rooms.unseenClosing;
+    // Dia mostrado: o escolhido na faixa (se já abriu) ou o de hoje.
+    final todayYmd = planYmd(DateTime.now());
+    final picked = _planDay == null ? null : plan.dayNumber(_planDay!);
+    final selected = picked != null && picked.date.compareTo(todayYmd) <= 0
+        ? picked
+        : plan.today();
+    final answersDay =
+        phase == PlanPhase.active && selected?.hasQuestion == true
+        ? selected
+        : null;
+    if (answersDay != null &&
+        rooms.answersFor(answersDay.n) == null &&
+        !rooms.answersLoading(answersDay.n)) {
+      WidgetsBinding.instance.addPostFrameCallback(
+        (_) => rooms.loadAnswers(answersDay.n),
+      );
+    }
+
+    return [
+      for (final invite in incoming) ...[
+        _reveal(1, _incomingInviteCard(context, invite)),
+        const SizedBox(height: AppSpace.md),
+      ],
+      _reveal(
+        2,
+        RoomPlanCard(
+          room: room,
+          plan: plan,
+          mine: mine,
+          group: group,
+          progress: progress,
+          isLeader: isLeader,
+          header: _RoomTitle(
+            room: room,
+            isOwner: isLeader,
+            onMenu: () => _openRoomMenu(context),
+          ),
+          selected: selected,
+          onSelect: (d) => setState(() => _planDay = d.n),
+          closed: rooms.planClosed,
+          closing: _closingWeek,
+          onJoin: () => _joinRoomPlan(context),
+          onRead: (d) => _openPlanReading(context, d),
+          onScene: (d) => _openPlanScene(context, d),
+          onAnswer: (d) => _answerPlanDay(context, d),
+          onManual: (d) => _markPlanDay(context, d),
+          onEdit: () => _editRoomPlan(
+            context,
+            current: phase == PlanPhase.ended ? null : plan,
+          ),
+          onClose: () => _closeRoomPlan(context),
+          onReveal: () {
+            final c = rooms.latestClosing;
+            if (c != null) _openRoomReveal(context, c);
+          },
+        ),
+      ),
+      if (unseen != null && !isLeader) ...[
+        const SizedBox(height: AppSpace.md),
+        _reveal(
+          2,
+          RoomClosingBanner(
+            closing: unseen,
+            onOpen: () => _openRoomReveal(context, unseen),
+          ),
+        ),
+      ],
+      if (phase == PlanPhase.active) ...[
+        const SizedBox(height: AppSpace.md),
+        _reveal(
+          2,
+          RoomPlanPulseCard(
+            group: group,
+            myPhotoUrl: backend.userPhotoUrl,
+            myStyle: progress.settings.portraitStyle,
+          ),
+        ),
+      ],
+      if (answersDay != null) ...[
+        const SizedBox(height: AppSpace.md),
+        _reveal(
+          2,
+          RoomPlanAnswersCard(
+            day: answersDay,
+            answered: mine.answered.contains(answersDay.n),
+            answers: rooms.answersFor(answersDay.n),
+            loading: rooms.answersLoading(answersDay.n),
+            myUid: backend.uid,
+            onAnswer: () => _answerPlanDay(context, answersDay),
+            onHold: (a) => _holdPlanAnswer(context, answersDay, a),
+          ),
+        ),
+      ],
+      const SizedBox(height: AppSpace.md),
+      _reveal(
+        2,
+        _RoomHearth(
+          room: room,
+          plan: plan,
+          members: members,
+          walkedToday: progress.walkedToday,
+          onClaim: () => _claimRoomChest(context, room.code),
+          // Antes do começo não há estudo do grupo: o Anan avisa quando começa.
+          onWalk: phase == PlanPhase.upcoming
+              ? () => _showPlanNotStarted(context, plan)
+              : widget.onGoToday,
+          roster: RoomMembersList(
+            members: _seatedMembers(members, room.ownerId),
+            myPhotoUrl: backend.userPhotoUrl,
+            myStyle: progress.settings.portraitStyle,
+            leaderId: room.ownerId,
+            leaderTitle: room.kind.leaderTitle,
+            study: null,
             onTap: (m) => _showRoomSeat(context, m),
             onInvite: rooms.isFull ? null : callPeople,
           ),
@@ -1288,6 +1549,220 @@ class _LeagueScreenState extends State<LeagueScreen>
           child: AppSpinner(),
         ),
     ];
+  }
+
+  Future<void> _showPlanNotStarted(BuildContext context, RoomPlan plan) {
+    return showAppDialog<void>(
+      context,
+      builder: (ctx) => AppDialog(
+        // Espera = Anan carregando.
+        face: CloudFace.carregando,
+        title: ctx.l10n.planNotStartedTitle,
+        content: Text(
+          ctx.l10n.planNotStartedBody(
+            plan.daysUntilStart(),
+            planDateShort(ctx, plan.start),
+          ),
+          textAlign: TextAlign.center,
+        ),
+        actions: [
+          CopperCta(
+            label: ctx.l10n.commonGotIt,
+            dense: true,
+            trailing: null,
+            onTap: () => Navigator.pop(ctx),
+          ),
+        ],
+      ),
+    );
+  }
+
+  /// Dia escolhido na faixa do propósito (null = hoje).
+  int? _planDay;
+
+  Future<void> _editRoomPlan(BuildContext context, {RoomPlan? current}) async {
+    final rooms = context.read<RoomService>();
+    // O propósito parte do estudo e da leitura da semana corrente, os mesmos
+    // que a tela do grupo mostra. Os de semana já fechada (room.study /
+    // room.reading vencidos) não entram: a tela não os mostra mais.
+    final next = await showRoomPlanEditor(
+      context,
+      current: current,
+      study: rooms.currentStudy,
+      reading: rooms.currentReading,
+    );
+    if (next == null || !context.mounted) return;
+    final ok = await rooms.setPlan(next);
+    if (!context.mounted) return;
+    setState(() => _planDay = null);
+    showAppToastFor(
+      context,
+      message: ok
+          ? context.l10n.planEditorSaved
+          : context.l10n.planEditorSaveError,
+      glyph: ok ? CinematicGlyph.calendar : CinematicGlyph.wrong,
+      tone: ok ? AppToastTone.accent : AppToastTone.warn,
+    );
+    if (ok) await rooms.syncPlan(context.read<ProgressService>());
+  }
+
+  Future<void> _endRoomPlan(BuildContext context) async {
+    final rooms = context.read<RoomService>();
+    final plan = rooms.plan;
+    if (plan == null) return;
+    final go = await showAppConfirm(
+      context,
+      danger: true,
+      title: context.l10n.planEndTitle,
+      body: context.l10n.planEndBody,
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.planEndConfirm,
+    );
+    if (!go || !context.mounted) return;
+    final today = planYmd(DateTime.now());
+    final kept = [
+      for (final d in plan.days)
+        if (d.date.compareTo(today) <= 0) d,
+    ];
+    // Ainda não começou: só tira o propósito.
+    await rooms.setPlan(
+      kept.isEmpty ? null : plan.copyWith(end: today, days: kept),
+    );
+    if (mounted) setState(() => _planDay = null);
+  }
+
+  Future<void> _joinRoomPlan(BuildContext context) async {
+    final rooms = context.read<RoomService>();
+    final ok = await rooms.joinPlan();
+    if (!context.mounted || !ok) return;
+    final first = rooms.plan?.days.first;
+    showAppToastFor(
+      context,
+      message: context.l10n.planJoinedToast(
+        first == null ? '' : planWhen(context, first.date),
+      ),
+      glyph: CinematicGlyph.heart,
+      tone: AppToastTone.accent,
+    );
+  }
+
+  Future<void> _openPlanReading(BuildContext context, PlanDay day) async {
+    final r = day.reading;
+    if (r == null) return;
+    await BibleReaderScreen.open(context, r.openRef);
+    if (!context.mounted) return;
+    await context.read<RoomService>().syncPlan(context.read<ProgressService>());
+  }
+
+  /// A cena do dia já foi liberada para o grupo — não passa pelo cadeado.
+  Future<void> _openPlanScene(BuildContext context, PlanDay day) async {
+    final scene = day.scene;
+    if (scene == null) return;
+    await Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (_) =>
+            LessonScreen(missionSlug: scene.slug, skipTrailLock: true),
+      ),
+    );
+    if (!context.mounted) return;
+    await context.read<RoomService>().syncPlan(context.read<ProgressService>());
+  }
+
+  Future<void> _answerPlanDay(BuildContext context, PlanDay day) async {
+    final rooms = context.read<RoomService>();
+    if (rooms.myPlan?.answered.contains(day.n) ?? false) {
+      setState(() => _planDay = day.n);
+      return;
+    }
+    final text = await showPlanAnswerSheet(context, day);
+    if (text == null || !context.mounted) return;
+    final ok = await rooms.answerDay(
+      day,
+      text,
+      context.read<ProgressService>(),
+    );
+    if (!context.mounted) return;
+    setState(() => _planDay = day.n);
+    showAppToastFor(
+      context,
+      message: ok ? context.l10n.planAnswerSaved : context.l10n.planAnswerError,
+      glyph: ok ? CinematicGlyph.quote : CinematicGlyph.wrong,
+      tone: ok ? AppToastTone.accent : AppToastTone.warn,
+    );
+  }
+
+  Future<void> _markPlanDay(BuildContext context, PlanDay day) async {
+    await context.read<RoomService>().markManualDay(
+      day,
+      context.read<ProgressService>(),
+    );
+  }
+
+  /// Segurar uma resposta: a minha (ou, para o líder, qualquer uma) pode
+  /// ser apagada; a de outra pessoa abre denunciar/bloquear.
+  Future<void> _holdPlanAnswer(
+    BuildContext context,
+    PlanDay day,
+    PlanAnswer answer,
+  ) async {
+    final rooms = context.read<RoomService>();
+    final backend = context.read<BackendService>();
+    final room = rooms.activeRoom;
+    if (room == null) return;
+    final mine = answer.uid == backend.uid;
+    if (mine || room.isOwner(backend.uid)) {
+      if (!mine) {
+        final outcome = await showUserModerationSheet(
+          context,
+          uid: answer.uid,
+          name: answer.name,
+          source: UserReportSource.room,
+          roomCode: room.code,
+          roomName: room.name,
+        );
+        if (outcome != ModerationOutcome.none || !context.mounted) return;
+      }
+      final go = await showAppConfirm(
+        context,
+        danger: true,
+        title: context.l10n.planAnswerDeleteTitle,
+        body: context.l10n.planAnswerDeleteBody,
+        cancelLabel: context.l10n.commonCancel,
+        confirmLabel: context.l10n.planAnswerDelete,
+      );
+      if (!go || !context.mounted) return;
+      await rooms.deleteAnswer(day.n, answer);
+      return;
+    }
+    await showUserModerationSheet(
+      context,
+      uid: answer.uid,
+      name: answer.name,
+      source: UserReportSource.room,
+      roomCode: room.code,
+      roomName: room.name,
+    );
+  }
+
+  Future<void> _closeRoomPlan(BuildContext context) async {
+    setState(() => _closingWeek = true);
+    final rooms = context.read<RoomService>();
+    await rooms.syncPlan(context.read<ProgressService>());
+    await rooms.refreshMembers();
+    final closing = await rooms.closePlan();
+    if (!mounted) return;
+    setState(() => _closingWeek = false);
+    if (!context.mounted) return;
+    if (closing == null) {
+      showAppToastFor(
+        context,
+        message: context.l10n.roomCloseWeekFailed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
+    await _openRoomReveal(context, closing);
   }
 
   /// Você primeiro, depois quem conduz; o resto por nome. Ordem fixa: ninguém
@@ -1444,6 +1919,15 @@ class _LeagueScreenState extends State<LeagueScreen>
   }
 
   Future<void> _showCreateRoom(BuildContext context) async {
+    final rc = context.read<RemoteConfigService>();
+    if (!context.read<RoomService>().canCreate(rc.groupsEnabled)) {
+      await openComingSoon(
+        context,
+        ComingSoonFeature.groups,
+        source: 'create_room',
+      );
+      return;
+    }
     final setup = await showRoomSetupSheet(context);
     if (setup == null || !context.mounted) return;
     final ok = await context.read<RoomService>().createRoom(
@@ -1500,8 +1984,9 @@ class _LeagueScreenState extends State<LeagueScreen>
     final room = rooms.activeRoom;
     final other = !m.isUser && m.uid.isNotEmpty;
     final iLead = room?.isOwner(context.read<BackendService>().uid) ?? false;
-    final canCall =
-        other && !m.walkedToday() && !rooms.nudgedToday.contains(m.uid);
+    // Aceno vale para qualquer pessoa (apoio, oração, saudade), não só
+    // para quem não caminhou: um por pessoa por dia.
+    final canCall = other && !rooms.nudgedToday.contains(m.uid);
     final action = await showRoomSeatSheet(
       context,
       member: m,
@@ -1509,6 +1994,7 @@ class _LeagueScreenState extends State<LeagueScreen>
       isLeader: m.uid == room?.ownerId,
       leaderTitle: room?.kind.leaderTitle ?? context.l10n.juntosLeader,
       study: rooms.currentStudy,
+      plan: rooms.plan,
       canCall: canCall,
       alreadyCalled: rooms.nudgedToday.contains(m.uid),
       canViewProfile: other,
@@ -1518,7 +2004,18 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (action == null || !context.mounted) return;
     switch (action) {
       case RoomSeatAction.wave:
-        await _nudgeRoomMember(context, m);
+        final plan = rooms.plan;
+        final invitePlan =
+            plan != null &&
+            plan.phase() == PlanPhase.upcoming &&
+            !(m.plan?.planId == plan.id && m.plan!.joined);
+        final kind = await showRoomWavePicker(
+          context,
+          name: m.name.trim().split(RegExp(r'\s+')).first,
+          invitePlan: invitePlan,
+        );
+        if (kind == null || !context.mounted) return;
+        await _nudgeRoomMember(context, m, kind: kind);
       case RoomSeatAction.profile:
         await showCaravanPilgrimSheet(
           context,
@@ -1586,6 +2083,90 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (ok) await rooms.syncStudyDone(context.read<ProgressService>());
   }
 
+  bool _closingWeek = false;
+
+  Future<void> _pickRoomReading(
+    BuildContext context,
+    RoomReading? current,
+  ) async {
+    final picked = await showRoomReadingPicker(
+      context,
+      current: current,
+      study: context.read<RoomService>().currentStudy,
+    );
+    if (picked == null || !context.mounted) return;
+    final rooms = context.read<RoomService>();
+    final ok = await rooms.setReading(picked);
+    if (!context.mounted) return;
+    showAppToastFor(
+      context,
+      message: ok
+          ? context.l10n.roomReadingSaved
+          : context.l10n.juntosRoomStudySetError,
+      glyph: ok ? CinematicGlyph.book : CinematicGlyph.wrong,
+      tone: ok ? AppToastTone.accent : AppToastTone.warn,
+    );
+    if (ok) await rooms.syncReading(context.read<ProgressService>());
+  }
+
+  /// Abre o 1º capítulo da leitura; ao voltar, grava quanto foi lido.
+  Future<void> _openRoomReading(
+    BuildContext context,
+    RoomReading? reading,
+  ) async {
+    if (reading == null) return;
+    await BibleReaderScreen.open(context, reading.openRef);
+    if (!context.mounted) return;
+    await context.read<RoomService>().syncReading(
+      context.read<ProgressService>(),
+    );
+  }
+
+  Future<void> _closeRoomWeek(BuildContext context) async {
+    final go = await showAppConfirm(
+      context,
+      title: context.l10n.roomCloseWeekConfirmTitle,
+      body: context.l10n.roomCloseWeekConfirmBody,
+      cancelLabel: context.l10n.commonCancel,
+      confirmLabel: context.l10n.roomCloseWeek,
+    );
+    if (!go || !context.mounted) return;
+    setState(() => _closingWeek = true);
+    final rooms = context.read<RoomService>();
+    final progress = context.read<ProgressService>();
+    // O líder também entra na conta com a leitura e o crescimento de hoje.
+    await rooms.syncReading(progress);
+    await rooms.syncGrowth(progress);
+    await rooms.refreshMembers();
+    final closing = await rooms.closeWeek();
+    if (!mounted) return;
+    setState(() => _closingWeek = false);
+    if (!context.mounted) return;
+    if (closing == null) {
+      showAppToastFor(
+        context,
+        message: context.l10n.roomCloseWeekFailed,
+        glyph: CinematicGlyph.wrong,
+        tone: AppToastTone.warn,
+      );
+      return;
+    }
+    await _openRoomReveal(context, closing);
+  }
+
+  Future<void> _openRoomReveal(BuildContext context, RoomClosing closing) {
+    final rooms = context.read<RoomService>();
+    final backend = context.read<BackendService>();
+    final room = rooms.activeRoom;
+    return RoomRevealScreen.open(
+      context,
+      closing: closing,
+      roomName: room?.name ?? '',
+      isLeader: room?.isOwner(backend.uid) ?? false,
+      myUid: backend.uid,
+    );
+  }
+
   /// O líder já autorizou a missão para o grupo — não passa pelo cadeado.
   Future<void> _openRoomStudy(BuildContext context, RoomStudy? study) async {
     if (study == null) return;
@@ -1601,10 +2182,15 @@ class _LeagueScreenState extends State<LeagueScreen>
     );
   }
 
-  Future<void> _nudgeRoomMember(BuildContext context, RoomMember m) async {
+  Future<void> _nudgeRoomMember(
+    BuildContext context,
+    RoomMember m, {
+    RoomWaveKind? kind,
+  }) async {
     final ok = await context.read<RoomService>().nudge(
       m,
       context.read<ProgressService>(),
+      kind: kind?.name,
     );
     if (!context.mounted) return;
     final first = m.name.trim().split(RegExp(r'\s+')).first;
@@ -1624,11 +2210,17 @@ class _LeagueScreenState extends State<LeagueScreen>
     if (room == null) return;
     final others = rooms.members.where((m) => !m.isUser).toList();
 
+    final plan = rooms.plan;
     final action = await showRoomMenu(
       context,
       room: room,
       hasStudy: rooms.currentStudy != null,
       canTransfer: others.isNotEmpty,
+      plan: plan == null
+          ? RoomMenuPlan.none
+          : plan.phase() == PlanPhase.ended
+          ? RoomMenuPlan.ended
+          : RoomMenuPlan.live,
     );
     if (action == null || !context.mounted) return;
 
@@ -1651,6 +2243,15 @@ class _LeagueScreenState extends State<LeagueScreen>
         await rooms.setStudy(null);
       case RoomMenuAction.transfer:
         await _transferRoom(context, others);
+      case RoomMenuAction.plan:
+        await _editRoomPlan(
+          context,
+          current: plan != null && plan.phase() != PlanPhase.ended
+              ? plan
+              : null,
+        );
+      case RoomMenuAction.endPlan:
+        await _endRoomPlan(context);
     }
   }
 
@@ -1794,10 +2395,12 @@ class _SegmentTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return JuntosSegmentTabs(
+    // Mesmo trilho da Bíblia: fundo do card, a arte não atravessa o texto.
+    return AppSegmentedTabs(
       index: index,
       onChanged: onChanged,
       accent: AppRoles.presence,
+      fill: Appearance.of(context).cardFill,
       items: [
         (
           label: context.l10n.juntosTabCompanion,
@@ -1845,6 +2448,9 @@ class _CompanhiaStageCard extends StatelessWidget {
     final tabs = AppSegmentedTabs(
       index: pane,
       accent: tone,
+      // Solto na tela (sem card em volta), igual à Bíblia; dentro do card
+      // fica o poço translúcido.
+      fill: hasBody ? null : Appearance.of(context).cardFill,
       onChanged: (i) {
         ActHaptics.tap();
         onPaneChanged(i);
@@ -2128,12 +2734,12 @@ class _ExplainerSteps extends StatelessWidget {
                       children: [
                         IconWell(
                           size: well,
-                          accent: i == mid ? accent : a.chrome,
+                          accent: i == mid ? accent : a.place,
                           glowing: i == mid,
                           child: CinematicIcon(
                             glyph: steps[i].$1,
                             size: AppMetrics.iconMd,
-                            accent: i == mid ? accent : a.chrome,
+                            accent: i == mid ? accent : a.place,
                             framed: false,
                           ),
                         ),
@@ -2404,7 +3010,7 @@ class _CircleOfSeats extends StatelessWidget {
                   shape: BoxShape.circle,
                   gradient: RadialGradient(
                     colors: [
-                      a.chrome.withValues(alpha: 0.18),
+                      a.place.withValues(alpha: 0.18),
                       Colors.transparent,
                     ],
                   ),
@@ -2470,7 +3076,7 @@ class _RoomBenefit extends StatelessWidget {
             CinematicIcon(
               glyph: glyph,
               size: AppMetrics.iconMd,
-              accent: a.chrome,
+              accent: a.place,
               framed: false,
             ),
             const SizedBox(height: 5),
@@ -2538,7 +3144,7 @@ class _RoomTitle extends StatelessWidget {
                     height: 24,
                     margin: const EdgeInsets.only(top: 3),
                     decoration: BoxDecoration(
-                      color: a.chrome,
+                      color: a.place,
                       borderRadius: BorderRadius.circular(AppRadii.hair),
                     ),
                   ),
@@ -2580,7 +3186,7 @@ class _RoomTitle extends StatelessWidget {
             CinematicIcon(
               glyph: room.kind.glyph,
               size: AppMetrics.iconSm,
-              accent: a.chrome,
+              accent: a.place,
               framed: false,
             ),
             const SizedBox(width: 6),
@@ -2606,6 +3212,13 @@ class _RoomHearth extends StatelessWidget {
   /// Quem está no grupo, sob o relógio.
   final Widget roster;
 
+  /// Logo abaixo da lista de pessoas (líder: fechar a semana e revelar).
+  final Widget? footer;
+
+  /// Com propósito: o relógio segue o período que o líder escolheu (até o
+  /// começo, depois até o fim do último dia), não a semana de seg a dom.
+  final RoomPlan? plan;
+
   /// Segunda-feira 00:00 seguinte — quando a semana do grupo fecha.
   static DateTime _weekClosesAt([DateTime? now]) {
     final n = now ?? DateTime.now();
@@ -2619,14 +3232,30 @@ class _RoomHearth extends StatelessWidget {
     required this.onClaim,
     this.onWalk,
     required this.roster,
+    this.footer,
+    this.plan,
   });
 
   @override
   Widget build(BuildContext context) {
     final progress = context.watch<ProgressService>();
     final a = Appearance.of(context);
-    final days = LeagueService.daysLeft();
     final l10n = context.l10n;
+    final p = plan;
+    final upcoming = p != null && p.phase() == PlanPhase.upcoming;
+    // Fim do propósito = 00:00 do dia seguinte ao último.
+    final planEnd = p == null ? null : parsePlanYmd(p.end);
+    final closesAt = p == null
+        ? _weekClosesAt()
+        : upcoming
+        ? parsePlanYmd(p.start)!
+        : DateTime(planEnd!.year, planEnd.month, planEnd.day + 1);
+    final now = DateTime.now();
+    final days = closesAt
+        .difference(DateTime(now.year, now.month, now.day))
+        .inDays;
+    // Cor de urgência só no fechamento; esperar o começo fica azul.
+    final urgent = upcoming ? 99 : days;
 
     final total = members.length;
     final lit = members.where((m) => m.walkedThisWeek).length;
@@ -2648,32 +3277,38 @@ class _RoomHearth extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
           CardHeader(
-            label: l10n.juntosRoomWeekLabel,
+            label: p == null ? l10n.juntosRoomWeekLabel : l10n.planHearthLabel,
             accent: ready ? AppRoles.presence : null,
           ),
           // Relógio da semana (igual ao da Caravana): fecha segunda 00:00.
           // Azul → amarelo (2–3 dias) → vermelho e pisca no último dia.
           const SizedBox(height: AppSpace.md),
           SeasonCountdown(
-            opens: _weekClosesAt(),
-            color: days <= 1
+            opens: closesAt,
+            color: urgent <= 1
                 ? AppRoles.risk
-                : days <= 3
+                : urgent <= 3
                 ? AppRoles.reward
                 : AppRoles.navTogether,
             muted: a.textSecondary,
-            accent: days <= 1
+            accent: urgent <= 1
                 ? AppRoles.risk
-                : days <= 3
+                : urgent <= 3
                 ? AppRoles.reward
                 : AppRoles.navTogether,
             large: true,
             centered: true,
-            blink: days <= 1,
-            label: l10n.juntosCaravanMonthCloses,
+            // Esperar o começo não é urgência: sem piscar.
+            blink: urgent <= 1,
+            label: p == null
+                ? l10n.juntosCaravanMonthCloses
+                : upcoming
+                ? l10n.planHearthStarts
+                : l10n.planHearthEnds,
           ),
           const SizedBox(height: AppSpace.lg),
           roster,
+          if (footer != null) ...[const SizedBox(height: AppSpace.lg), footer!],
           if (goal != null && goal > 0) ...[
             const SizedBox(height: AppSpace.md),
             Row(
@@ -4578,7 +5213,7 @@ class _IncomingNudgeBanner extends StatelessWidget {
           CinematicIcon(
             glyph: CinematicGlyph.lamp,
             size: AppMetrics.iconLg,
-            accent: a.chrome,
+            accent: a.place,
             framed: false,
             glowing: true,
           ),

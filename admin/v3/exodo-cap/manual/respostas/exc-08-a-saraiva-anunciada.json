@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 9:13–18",
+    "passages": [
+      {
+        "ref": "Êxodo 9:13–21"
+      }
+    ],
+    "context": "O Senhor anuncia saraiva sem igual. Quem teme a palavra recolhe gado e servos; quem ignora deixa tudo no campo.",
+    "keyword": "Temia",
+    "keywordGloss": "Oficiais que temem a palavra do Senhor agem e buscam refúgio.",
+    "focusQuestion": "Quando a palavra de Deus avisa, você recolhe o que está em risco ou deixa no campo?",
+    "reflectionPrompts": [
+      "Aviso claro",
+      "Temer a palavra",
+      "Deixar no campo"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor envia pragas para que saibam que ninguém se compara a Ele.",
+        "evidenceRef": "Êxodo 9:14",
+        "evidenceSpan": "não há ninguém que se compare a mim"
+      },
+      {
+        "text": "Faraó foi levantado para mostrar o poder de Deus.",
+        "evidenceRef": "Êxodo 9:16",
+        "evidenceSpan": "para isso te levantei"
+      },
+      {
+        "text": "Amanhã cairá granizo como nunca houve no Egito.",
+        "evidenceRef": "Êxodo 9:18",
+        "evidenceSpan": "chuva de granizo muito intensa"
+      },
+      {
+        "text": "Quem temia a palavra fez servos e gado buscarem refúgio.",
+        "evidenceRef": "Êxodo 9:20",
+        "evidenceSpan": "temia a palavra do Senhor"
+      },
+      {
+        "text": "Quem não prestou atenção deixou servos e gado no campo.",
+        "evidenceRef": "Êxodo 9:21",
+        "evidenceSpan": "deixou seus servos e seu gado no campo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "granizo",
+        "gloss": "Chuva de pedras anunciada para o dia seguinte."
+      },
+      {
+        "term": "temia",
+        "gloss": "Resposta que leva a agir diante da palavra."
+      },
+      {
+        "term": "campo",
+        "gloss": "Lugar inseguro se a palavra for ignorada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pedido e ameaça de pragas",
+        "evidenceRef": "Êxodo 9:13–14"
+      },
+      {
+        "label": "Propósito do levantamento de Faraó",
+        "evidenceRef": "Êxodo 9:15–16"
+      },
+      {
+        "label": "Aviso do granizo e do refúgio",
+        "evidenceRef": "Êxodo 9:18–19"
+      },
+      {
+        "label": "Dois tipos de oficiais",
+        "evidenceRef": "Êxodo 9:20–21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Faraó foi levantado para mostrar o poder e anunciar o nome.",
+        "marker": "para",
+        "evidenceRef": "Êxodo 9:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Quem teme recolhe; quem não presta atenção deixa no campo.",
+        "marker": "Mas",
+        "evidenceRef": "Êxodo 9:21"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem ficar no campo sob o granizo morrerá.",
+        "marker": null,
+        "evidenceRef": "Êxodo 9:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 9:17",
+        "bridge": "Faraó levantado"
+      },
+      {
+        "ref": "Provérbios 13:13",
+        "bridge": "Temer a palavra"
+      },
+      {
+        "ref": "Hebreus 11:7",
+        "bridge": "Noé temeu e agiu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Temer a palavra é só sentimento, sem ação.",
+        "why": "Quem temia fez servos e gado buscarem refúgio."
+      },
+      {
+        "text": "O aviso veio sem chance de se proteger.",
+        "why": "Há ordem: envia e reúne o gado."
+      },
+      {
+        "text": "Todos os oficiais desprezaram o aviso.",
+        "why": "Alguns temeram; outros não prestaram atenção."
+      }
+    ],
+    "centralInsight": "Quem teme a palavra do Senhor age; quem a ignora deixa tudo no campo.",
+    "anchorQuestion": "O que fez o oficial que temia a palavra do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Aquele que temia a palavra do Senhor fez servos e gado buscarem refúgio em casa.",
+      "verseRef": "Êxodo 9:20",
+      "correctOptionId": "true",
+      "evidenceSpan": "temia a palavra do Senhor fez com que seus servos",
+      "feedbackCorrect": "Temor aqui se traduz em ação protetora.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 9:20: ele recolheu servos e gado."
+      },
+      "hint": "O que o temeroso fez?",
+      "learningObjective": "Observar o temor que age.",
+      "evidence": [
+        "Êxodo 9:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 9:18, toque o que cairá amanhã sobre o Egito.",
+      "verseRef": "Êxodo 9:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "granizo"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "amanhã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chuva de granizo muito intensa",
+      "feedbackCorrect": "Cairá uma chuva de granizo muito intensa.",
+      "feedbackWrong": {
+        "b": "Egito é onde cai; o que cai é granizo.",
+        "c": "Amanhã é quando; o que cai é granizo."
+      },
+      "hint": "Tipo de chuva no versículo.",
+      "learningObjective": "Identificar a praga anunciada.",
+      "evidence": [
+        "Êxodo 9:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 9:21, o que fez quem não prestou atenção à palavra?",
+      "verseRef": "Êxodo 9:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deixou servos e gado no campo"
+        },
+        {
+          "id": "b",
+          "text": "Construiu um altar"
+        },
+        {
+          "id": "c",
+          "text": "Libertou Israel"
+        },
+        {
+          "id": "d",
+          "text": "Pediu perdão a Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deixou seus servos e seu gado no campo",
+      "feedbackCorrect": "Ignorar a palavra deixa tudo exposto.",
+      "feedbackWrong": {
+        "b": "Não fala de altar.",
+        "c": "Não libertou Israel.",
+        "d": "Não há pedido de perdão aqui."
+      },
+      "hint": "Onde ficaram servos e gado?",
+      "learningObjective": "Observar o contraste da negligência.",
+      "evidence": [
+        "Êxodo 9:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 9:20 na ordem do texto.",
+      "verseRef": "Êxodo 9:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aquele dos oficiais de Faraó que temia a palavra do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "fez com que seus servos e seu gado"
+        },
+        {
+          "id": "c",
+          "text": "buscassem refúgio em suas casas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temia a palavra do Senhor",
+      "feedbackCorrect": "Temor, ordem e refúgio.",
+      "feedbackWrong": {
+        "default": "Comece por quem temia."
+      },
+      "hint": "O versículo começa com \"Aquele\".",
+      "learningObjective": "Reconhecer a sequência do temor.",
+      "evidence": [
+        "Êxodo 9:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 9:16, para que Deus levantou Faraó?",
+      "verseRef": "Êxodo 9:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "poder"
+        },
+        {
+          "id": "b",
+          "text": "tesouro"
+        },
+        {
+          "id": "c",
+          "text": "silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mostrar o meu poder",
+      "feedbackCorrect": "Foi levantado para mostrar o poder e anunciar o nome.",
+      "feedbackWrong": {
+        "b": "Não é tesouro.",
+        "c": "Não é silêncio."
+      },
+      "hint": "Mostrar o meu ___.",
+      "learningObjective": "Lembrar o propósito declarado.",
+      "evidence": [
+        "Êxodo 9:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 9:20 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 9:20",
+      "passageA": {
+        "ref": "Êxodo 9:20"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor avisou do granizo e mandou recolher o que estava no campo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor age e protege"
+        },
+        {
+          "id": "b",
+          "text": "Aviso era só ameaça vazia"
+        },
+        {
+          "id": "c",
+          "text": "Ninguém se moveu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temia a palavra do Senhor",
+      "feedbackCorrect": "Quem temeu a palavra recolheu e protegeu.",
+      "feedbackWrong": {
+        "b": "Havia aviso concreto e ação possível.",
+        "c": "Alguns oficiais agiram."
+      },
+      "hint": "Compare aviso e reação.",
+      "learningObjective": "Ligar aviso e temor prático.",
+      "evidence": [
+        "Êxodo 9:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 9:16, Faraó foi levantado para que o nome do Senhor fosse anunciado em toda a terra.",
+      "verseRef": "Êxodo 9:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "o meu nome seja anunciado em toda a terra",
+      "feedbackCorrect": "O propósito inclui mostrar poder e anunciar o nome.",
+      "feedbackWrong": {
+        "false": "Releia o fim de Êxodo 9:16."
+      },
+      "hint": "Leia o segundo \"para que\".",
+      "learningObjective": "Compreender o propósito do levantamento.",
+      "evidence": [
+        "Êxodo 9:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 9:21, toque a palavra que marca o contraste com quem temia.",
+      "verseRef": "Êxodo 9:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "campo"
+        },
+        {
+          "id": "c",
+          "text": "gado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas aquele que não prestou atenção",
+      "feedbackCorrect": "\"Mas\" opõe negligência ao temor do verso anterior.",
+      "feedbackWrong": {
+        "b": "Campo é o lugar; o marcador é Mas.",
+        "c": "Gado é o objeto deixado."
+      },
+      "hint": "Primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 9:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 9:20–21 relaciona temor e negligência?",
+      "verseRef": "Êxodo 9:20–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temer leva a recolher; ignorar deixa no campo"
+        },
+        {
+          "id": "b",
+          "text": "Os dois grupos agem do mesmo modo"
+        },
+        {
+          "id": "c",
+          "text": "Só o temor importa, sem ação"
+        },
+        {
+          "id": "d",
+          "text": "Negligência é premiada por Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deixou seus servos e seu gado no campo",
+      "feedbackCorrect": "O contraste é prático: refúgio versus campo.",
+      "feedbackWrong": {
+        "b": "Há duas reações opostas.",
+        "c": "O temor age.",
+        "d": "O texto não premia a negligência."
+      },
+      "hint": "Compare os dois versículos.",
+      "learningObjective": "Relacionar temor e ação.",
+      "evidence": [
+        "Êxodo 9:20",
+        "Êxodo 9:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 9:18–21?",
+      "verseRef": "Êxodo 9:18–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio do granizo intenso"
+        },
+        {
+          "id": "b",
+          "text": "Ordem de recolher o que está no campo"
+        },
+        {
+          "id": "c",
+          "text": "Oficiais que temem ou ignoram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temia a palavra do Senhor",
+      "feedbackCorrect": "Aviso, instrução e duas respostas.",
+      "feedbackWrong": {
+        "default": "O anúncio vem antes das reações."
+      },
+      "hint": "Comece pelo que cairá amanhã.",
+      "learningObjective": "Compreender o movimento do aviso.",
+      "evidence": [
+        "Êxodo 9:18",
+        "Êxodo 9:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 9:20, o que o oficial temia?",
+      "verseRef": "Êxodo 9:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "palavra"
+        },
+        {
+          "id": "b",
+          "text": "ouro"
+        },
+        {
+          "id": "c",
+          "text": "fome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temia a palavra do Senhor",
+      "feedbackCorrect": "Ele temia a palavra do Senhor e agiu.",
+      "feedbackWrong": {
+        "b": "Não é ouro.",
+        "c": "Não é fome neste verso."
+      },
+      "hint": "Temia a ___ do Senhor.",
+      "learningObjective": "Lembrar o objeto do temor.",
+      "evidence": [
+        "Êxodo 9:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 9:16 a Romanos 9:17?",
+      "verseRef": "Êxodo 9:16",
+      "passageA": {
+        "ref": "Êxodo 9:16"
+      },
+      "passageB": {
+        "ref": "Romanos 9:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Faraó levantado"
+        },
+        {
+          "id": "b",
+          "text": "Lei alimentar"
+        },
+        {
+          "id": "c",
+          "text": "Templo de Salomão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para isso te levantei",
+      "feedbackCorrect": "Paulo cita este propósito sobre Faraó.",
+      "feedbackWrong": {
+        "b": "Não é o tema.",
+        "c": "Não é o templo."
+      },
+      "hint": "O mesmo \"te levantei\".",
+      "learningObjective": "Relacionar Êxodo e Romanos.",
+      "evidence": [
+        "Êxodo 9:16",
+        "Romanos 9:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 9:20–21 sustenta que temer a palavra de Deus se prova em decisões práticas de proteção.",
+      "verseRef": "Êxodo 9:20–21",
+      "correctOptionId": "true",
+      "evidenceSpan": "buscassem refúgio em suas casas",
+      "feedbackCorrect": "O temor recolhe; a negligência deixa no campo.",
+      "feedbackWrong": {
+        "false": "O texto mostra duas ações concretas."
+      },
+      "hint": "Compare o que cada um fez.",
+      "learningObjective": "Interpretar temor como obediência prática.",
+      "evidence": [
+        "Êxodo 9:20",
+        "Êxodo 9:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 9:19, toque o que acontecerá a quem ficar no campo.",
+      "verseRef": "Êxodo 9:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "morrerão"
+        },
+        {
+          "id": "b",
+          "text": "envia"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a chuva de pedras cairá sobre eles e morrerão",
+      "feedbackCorrect": "Ficar no campo sob o granizo é mortal.",
+      "feedbackWrong": {
+        "b": "Envia é a ordem de recolher.",
+        "c": "Casa é o refúgio seguro."
+      },
+      "hint": "Resultado no fim do aviso.",
+      "learningObjective": "Sustentar a gravidade do aviso.",
+      "evidence": [
+        "Êxodo 9:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 9:13–21 sustenta sobre a palavra do Senhor?",
+      "verseRef": "Êxodo 9:20–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temê-la leva a agir; ignorá-la expõe"
+        },
+        {
+          "id": "b",
+          "text": "A palavra só informa sem exigir resposta"
+        },
+        {
+          "id": "c",
+          "text": "Só Faraó podia ouvir o aviso"
+        },
+        {
+          "id": "d",
+          "text": "Temer e ignorar produzem o mesmo fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temia a palavra do Senhor",
+      "feedbackCorrect": "Há aviso, chance e duas respostas opostas.",
+      "feedbackWrong": {
+        "b": "Há ordem de recolher.",
+        "c": "Oficiais também ouvem.",
+        "d": "Os resultados diferem."
+      },
+      "hint": "Compare 9:20 e 9:21.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Êxodo 9:20",
+        "Êxodo 9:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do temor à palavra?",
+      "verseRef": "Êxodo 9:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oficiais temem e recolhem no Egito"
+        },
+        {
+          "id": "b",
+          "text": "Noé temeu e construiu a arca"
+        },
+        {
+          "id": "c",
+          "text": "Provérbios louva quem teme a palavra"
+        }
+      ],
+      "correctOrder": [
+        "b",
+        "a",
+        "c"
+      ],
+      "evidenceSpan": "temia a palavra do Senhor",
+      "evidence": [
+        "Hebreus 11:7",
+        "Êxodo 9:20",
+        "Provérbios 13:13"
+      ],
+      "feedbackCorrect": "Do temor de Noé ao Egito e à sabedoria.",
+      "feedbackWrong": {
+        "default": "Comece por Noé; depois Êxodo."
+      },
+      "hint": "Ordem da história bíblica.",
+      "learningObjective": "Ver temor que age na Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 9:20, onde servos e gado buscaram refúgio?",
+      "verseRef": "Êxodo 9:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "casas"
+        },
+        {
+          "id": "b",
+          "text": "rios"
+        },
+        {
+          "id": "c",
+          "text": "montes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "refúgio em suas casas",
+      "feedbackCorrect": "O refúgio prático é em casa.",
+      "feedbackWrong": {
+        "b": "Não é nos rios.",
+        "c": "Não é nos montes."
+      },
+      "hint": "Em suas ___.",
+      "learningObjective": "Lembrar o lugar do refúgio.",
+      "evidence": [
+        "Êxodo 9:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 9:20 a Hebreus 11:7?",
+      "verseRef": "Êxodo 9:20",
+      "passageA": {
+        "ref": "Êxodo 9:20"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor que age"
+        },
+        {
+          "id": "b",
+          "text": "Lista de pragas"
+        },
+        {
+          "id": "c",
+          "text": "Construção do templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temia a palavra do Senhor",
+      "feedbackCorrect": "Nos dois, temer a palavra leva a preparar refúgio.",
+      "feedbackWrong": {
+        "b": "Não é lista de pragas.",
+        "c": "Não é o templo."
+      },
+      "hint": "Temor e ação juntos.",
+      "learningObjective": "Ligar temor no Egito e em Noé.",
+      "evidence": [
+        "Êxodo 9:20",
+        "Hebreus 11:7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 136:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 136:1–6"
+      },
+      {
+        "ref": "Salmos 136:7–9"
+      }
+    ],
+    "context": "Louvai ao Senhor, porque ele é bom, porque a sua misericórdia dura para sempre — na criação e no êxodo.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Porque a sua misericórdia",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Rendei graças ao Senhor.",
+        "evidenceRef": "Salmos 136:1",
+        "evidenceSpan": "Rendei graças ao Senhor"
+      },
+      {
+        "text": "Rendei graças ao Deus dos deuses.",
+        "evidenceRef": "Salmos 136:2",
+        "evidenceSpan": "Rendei graças ao Deus dos deuses"
+      },
+      {
+        "text": "Rendei graças ao Senhor dos senhores.",
+        "evidenceRef": "Salmos 136:3",
+        "evidenceSpan": "Rendei graças ao Senhor dos senhores"
+      },
+      {
+        "text": "Aquele que realiza grandes maravilhas.",
+        "evidenceRef": "Salmos 136:4",
+        "evidenceSpan": "Aquele que realiza grandes maravilhas"
+      },
+      {
+        "text": "Aquele que, com entendimento, fez os céus, porque a sua misericórdia dura para sempre.",
+        "evidenceRef": "Salmos 136:5",
+        "evidenceSpan": "Aquele que"
+      },
+      {
+        "text": "Aquele que estendeu a terra sobre as águas.",
+        "evidenceRef": "Salmos 136:6",
+        "evidenceSpan": "Aquele que estendeu a terra sobre as águas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Rendei",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Rendei graças ao senhor porque ele",
+        "evidenceRef": "Salmos 136:1"
+      },
+      {
+        "label": "Rendei graças ao deus dos deuses",
+        "evidenceRef": "Salmos 136:2"
+      },
+      {
+        "label": "Rendei graças ao senhor dos senhores",
+        "evidenceRef": "Salmos 136:3"
+      },
+      {
+        "label": "Aquele que realiza grandes maravilhas pois",
+        "evidenceRef": "Salmos 136:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 136:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 136:2"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 136:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 5:3",
+        "bridge": "Bem-aventurados os humildes"
+      },
+      {
+        "ref": "Romanos 8:31",
+        "bridge": "Se Deus é por nós"
+      },
+      {
+        "ref": "Tiago 1:2",
+        "bridge": "Alegria na prova"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Refrão da aliança: cada feito de Deus carrega misericórdia que não acaba."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Refrão da aliança: cada feito de Deus carrega misericórdia que não acaba.",
+    "anchorQuestion": "O que Salmos 136:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 136:1, rendei graças ao Senhor.",
+      "verseRef": "Salmos 136:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Rendei graças ao Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 136:1 afirma.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 136:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 136:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei"
+        },
+        {
+          "id": "b",
+          "text": "graças"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "O versículo destaca «Rendei».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 136:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 136:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei graças ao Senhor dos senhores"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei graças ao Senhor dos senhores",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 136:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 136:1 na ordem do texto.",
+      "verseRef": "Salmos 136:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei graças"
+        },
+        {
+          "id": "b",
+          "text": "ao Senhor"
+        },
+        {
+          "id": "c",
+          "text": "porque ele"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rendei graças",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 136:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 136:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aquele"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele",
+      "feedbackCorrect": "A palavra do versículo é «Aquele».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 136:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 136:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 136:1",
+      "passageA": {
+        "ref": "Salmos 136:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Louvai ao Senhor, porque ele é bom, porque a sua misericórdia dura para sempre — na criação e no êxodo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 136:1, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 136:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 136:1 afirma.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 136:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 136:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo destaca «porque».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 136:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 136:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que realiza grandes maravilhas",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 136:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 136:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rendei graças ao senhor porque ele"
+        },
+        {
+          "id": "b",
+          "text": "Rendei graças ao deus dos deuses"
+        },
+        {
+          "id": "c",
+          "text": "Rendei graças ao senhor dos senhores"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 136:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 136:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "graças"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "graças",
+      "feedbackCorrect": "A palavra do versículo é «graças».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 136:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 136:1 a Mateus 5:3.",
+      "verseRef": "Salmos 136:1",
+      "passageA": {
+        "ref": "Salmos 136:1"
+      },
+      "passageB": {
+        "ref": "Mateus 5:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os humildes"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 136:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 136:9 afirma.",
+      "evidence": [
+        "Salmos 136:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 136:9, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 136:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "lua"
+        },
+        {
+          "id": "b",
+          "text": "estrelas"
+        },
+        {
+          "id": "c",
+          "text": "governarem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lua",
+      "feedbackCorrect": "O versículo destaca «lua».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 136:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 136:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 136:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 136:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 136:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 136:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 136:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "entendimento"
+        },
+        {
+          "id": "b",
+          "text": "Rendei"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entendimento",
+      "feedbackCorrect": "A palavra do versículo é «entendimento».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 136:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 136:1 a Romanos 8:31.",
+      "verseRef": "Salmos 136:1",
+      "passageA": {
+        "ref": "Salmos 136:1"
+      },
+      "passageB": {
+        "ref": "Romanos 8:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Se Deus é por nós"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rendei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 136:1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,505 @@
+{
+  "study": {
+    "passageRef": "Atos 23:6–11",
+    "passages": [
+      { "ref": "Atos 23:6–11" }
+    ],
+    "context": "Paulo está diante do Sinédrio, preso em Jerusalém. O conselho se divide entre fariseus e saduceus. Depois do tumulto, ele passa a noite na fortaleza.",
+    "keyword": "Coragem",
+    "keywordGloss": "Palavra do Senhor a Paulo na noite seguinte: ele deve ter ânimo e continuar testemunhando.",
+    "focusQuestion": "Quando a noite parece a mais difícil, você procura o Senhor ao seu lado?",
+    "reflectionPrompts": [
+      "Divisão no conselho",
+      "Retirada para a fortaleza",
+      "O Senhor ao lado"
+    ],
+    "facts": [
+      {
+        "text": "Paulo declara no conselho que é fariseu, filho de fariseus.",
+        "evidenceRef": "Atos 23:6",
+        "evidenceSpan": "eu sou fariseu, filho de fariseus"
+      },
+      {
+        "text": "Paulo diz que é julgado quanto à esperança e à ressurreição dos mortos.",
+        "evidenceRef": "Atos 23:6",
+        "evidenceSpan": "Quanto à esperança e à ressurreição dos mortos, sou julgado"
+      },
+      {
+        "text": "Os saduceus afirmam que não há ressurreição, nem anjo, nem espírito.",
+        "evidenceRef": "Atos 23:8",
+        "evidenceSpan": "os saduceus afirmam que não há ressurreição, nem anjo, nem espírito"
+      },
+      {
+        "text": "Escribas da parte dos fariseus dizem que nenhum mal encontram neste homem.",
+        "evidenceRef": "Atos 23:9",
+        "evidenceSpan": "Nenhum mal encontramos neste homem"
+      },
+      {
+        "text": "O comandante manda os soldados retirarem Paulo para a fortaleza.",
+        "evidenceRef": "Atos 23:10",
+        "evidenceSpan": "mandou descer os soldados e o retirou de lá, levando-o para a fortaleza"
+      },
+      {
+        "text": "Na noite seguinte, o Senhor se põe ao lado de Paulo e fala com ele.",
+        "evidenceRef": "Atos 23:11",
+        "evidenceSpan": "o Senhor, pondo-se ao lado dele, disse"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ressurreição",
+        "gloss": "Tema que Paulo levanta no conselho e que divide fariseus e saduceus."
+      },
+      {
+        "term": "Coragem",
+        "gloss": "Palavra do Senhor a Paulo: ele deve ter ânimo para testemunhar também em Roma."
+      },
+      {
+        "term": "testemunho",
+        "gloss": "O que Paulo já deu em Jerusalém e o que ainda deve dar em Roma."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Paulo se declara fariseu e fala da ressurreição",
+        "evidenceRef": "Atos 23:6"
+      },
+      {
+        "label": "O conselho se divide e o clamor cresce",
+        "evidenceRef": "Atos 23:7–9"
+      },
+      {
+        "label": "Paulo é retirado para a fortaleza",
+        "evidenceRef": "Atos 23:10"
+      },
+      {
+        "label": "O Senhor o anima e aponta para Roma",
+        "evidenceRef": "Atos 23:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A controvérsia explode porque Paulo fala da ressurreição diante de fariseus e saduceus.",
+        "marker": "Porque",
+        "evidenceRef": "Atos 23:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Com a disputa intensa, o comandante teme pela vida de Paulo e o retira.",
+        "marker": null,
+        "evidenceRef": "Atos 23:10"
+      },
+      {
+        "kind": "propósito",
+        "text": "O Senhor anima Paulo para que ele dê testemunho também em Roma.",
+        "marker": "assim",
+        "evidenceRef": "Atos 23:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 18:9–10",
+        "bridge": "Senhor anima Paulo"
+      },
+      {
+        "ref": "Atos 19:21",
+        "bridge": "Paulo quer ir a Roma"
+      },
+      {
+        "ref": "2 Timóteo 4:17",
+        "bridge": "Senhor ao lado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo inventou a controvérsia só para escapar, sem crer na ressurreição.",
+        "why": "Ele declara ser fariseu e diz que é julgado quanto à esperança e à ressurreição dos mortos."
+      },
+      {
+        "text": "O Senhor aparece para tirar Paulo imediatamente de Jerusalém.",
+        "why": "O Senhor diz que, como testemunhou em Jerusalém, também deve testemunhar em Roma."
+      },
+      {
+        "text": "Fariseus e saduceus acreditam nas mesmas coisas sobre anjos e ressurreição.",
+        "why": "O texto diz que os saduceus negam ressurreição, anjo e espírito, e os fariseus reconhecem essas coisas."
+      }
+    ],
+    "centralInsight": "Na noite mais difícil, o Senhor fica ao lado de Paulo e diz: tem bom ânimo.",
+    "anchorQuestion": "O que o Senhor disse a Paulo na noite seguinte, na fortaleza?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 23:6, Paulo declara no conselho que é fariseu, filho de fariseus.",
+      "verseRef": "Atos 23:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "eu sou fariseu, filho de fariseus",
+      "feedbackCorrect": "Paulo se apresenta assim diante do Sinédrio.",
+      "feedbackWrong": {
+        "false": "Releia a exclamação de Paulo: ele diz ser fariseu, filho de fariseus."
+      },
+      "hint": "Olhe como Paulo se apresenta no conselho.",
+      "learningObjective": "Observar a identidade que Paulo declara no Sinédrio.",
+      "evidence": ["Atos 23:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 23:10, toque para onde o comandante leva Paulo.",
+      "verseRef": "Atos 23:10",
+      "options": [
+        { "id": "a", "text": "a fortaleza" },
+        { "id": "b", "text": "os soldados" },
+        { "id": "c", "text": "intensa disputa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levando-o para a fortaleza",
+      "feedbackCorrect": "Paulo é retirado e levado para a fortaleza.",
+      "feedbackWrong": {
+        "b": "Os soldados executam a ordem; o destino é a fortaleza.",
+        "c": "A disputa motiva a retirada, mas não é o destino."
+      },
+      "hint": "Veja o fim do versículo, para onde o levam.",
+      "learningObjective": "Identificar para onde Paulo é levado após o tumulto.",
+      "evidence": ["Atos 23:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 23:8, o que os saduceus afirmam?",
+      "verseRef": "Atos 23:8",
+      "options": [
+        { "id": "a", "text": "Que não há ressurreição, nem anjo, nem espírito" },
+        { "id": "b", "text": "Que reconhecem anjo, espírito e ressurreição" },
+        { "id": "c", "text": "Que Paulo deve testemunhar em Roma" },
+        { "id": "d", "text": "Que nenhum mal há neste homem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os saduceus afirmam que não há ressurreição, nem anjo, nem espírito",
+      "feedbackCorrect": "Os saduceus negam ressurreição, anjo e espírito.",
+      "feedbackWrong": {
+        "b": "Quem reconhece essas coisas são os fariseus.",
+        "c": "Isso vem da palavra do Senhor a Paulo, no versículo 11.",
+        "d": "Essa frase é dos escribas fariseus, não dos saduceus."
+      },
+      "hint": "Leia o que o versículo atribui aos saduceus.",
+      "learningObjective": "Observar a negação dos saduceus sobre ressurreição e anjos.",
+      "evidence": ["Atos 23:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 23:11 na ordem do texto.",
+      "verseRef": "Atos 23:11",
+      "options": [
+        { "id": "a", "text": "o Senhor, pondo-se ao lado dele, disse" },
+        { "id": "b", "text": "Coragem!" },
+        { "id": "c", "text": "assim importa que também o faça em Roma" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Senhor, pondo-se ao lado dele, disse: Coragem!",
+      "feedbackCorrect": "Primeiro o Senhor se põe ao lado, depois anima e aponta Roma.",
+      "feedbackWrong": {
+        "default": "Comece pela presença do Senhor ao lado e termine com Roma."
+      },
+      "hint": "A primeira peça mostra quem fala a Paulo.",
+      "learningObjective": "Reconhecer a sequência da palavra do Senhor na noite.",
+      "evidence": ["Atos 23:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 23:6, Paulo diz que é julgado quanto à esperança e à ___ dos mortos.",
+      "verseRef": "Atos 23:6",
+      "options": [
+        { "id": "a", "text": "ressurreição" },
+        { "id": "b", "text": "condenação" },
+        { "id": "c", "text": "sepultura" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "à ressurreição dos mortos, sou julgado",
+      "feedbackCorrect": "Paulo liga seu julgamento à esperança e à ressurreição dos mortos.",
+      "feedbackWrong": {
+        "b": "O texto não fala de condenação dos mortos neste versículo.",
+        "c": "Sepultura não é a palavra que Paulo usa aqui."
+      },
+      "hint": "Veja o tema que Paulo levanta no conselho.",
+      "learningObjective": "Lembrar o tema central que Paulo declara no Sinédrio.",
+      "evidence": ["Atos 23:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 23:11 comunica que se liga a este contexto?",
+      "verseRef": "Atos 23:11",
+      "passageA": { "ref": "Atos 23:11" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na noite seguinte, o Senhor se põe ao lado de Paulo e o anima a testemunhar também em Roma."
+      },
+      "options": [
+        { "id": "a", "text": "Senhor anima Paulo" },
+        { "id": "b", "text": "Saduceus vencem o conselho" },
+        { "id": "c", "text": "Paulo foge de Jerusalém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor, pondo-se ao lado dele, disse: Coragem!",
+      "feedbackCorrect": "O Senhor fica ao lado de Paulo e fala: Coragem!",
+      "feedbackWrong": {
+        "b": "O texto não diz que os saduceus venceram o conselho.",
+        "c": "O Senhor aponta para Roma, não para fuga imediata."
+      },
+      "hint": "Ligue a cena da noite ao que o Senhor faz.",
+      "learningObjective": "Ligar a noite na fortaleza à presença e à palavra do Senhor.",
+      "evidence": ["Atos 23:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 23:8, a controvérsia se explica porque saduceus e fariseus discordam sobre ressurreição, anjo e espírito.",
+      "verseRef": "Atos 23:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porque os saduceus afirmam que não há ressurreição, nem anjo, nem espírito; enquanto os fariseus reconhecem a existência de todas essas coisas",
+      "feedbackCorrect": "O texto marca com \"Porque\" a causa da divisão entre os grupos.",
+      "feedbackWrong": {
+        "false": "Leia o \"Porque\" de Atos 23:8: a discordância sobre esses temas divide o conselho."
+      },
+      "hint": "Olhe a palavra que introduz a explicação da divisão.",
+      "learningObjective": "Compreender a causa da controvérsia entre fariseus e saduceus.",
+      "evidence": ["Atos 23:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 23:8, toque a palavra que introduz a causa da divisão.",
+      "verseRef": "Atos 23:8",
+      "options": [
+        { "id": "a", "text": "Porque" },
+        { "id": "b", "text": "enquanto" },
+        { "id": "c", "text": "existência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque os saduceus afirmam",
+      "feedbackCorrect": "\"Porque\" marca a razão da controvérsia descrita antes.",
+      "feedbackWrong": {
+        "b": "\"Enquanto\" marca o contraste, não a causa inicial.",
+        "c": "\"Existência\" é o conteúdo da crença, não o marcador."
+      },
+      "hint": "Procure o marcador no início da explicação.",
+      "learningObjective": "Tocar o marcador de causa que explica a divisão.",
+      "evidence": ["Atos 23:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Por que o comandante manda retirar Paulo, segundo Atos 23:10?",
+      "verseRef": "Atos 23:10",
+      "options": [
+        { "id": "a", "text": "Temia que Paulo fosse agredido na disputa" },
+        { "id": "b", "text": "Queria que Paulo testemunhasse em Roma" },
+        { "id": "c", "text": "Achava que Paulo inventara a controvérsia" },
+        { "id": "d", "text": "Os fariseus pediram a retirada imediata" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temendo que Paulo fosse agredido por eles",
+      "feedbackCorrect": "O temor de agressão leva o comandante a retirar Paulo.",
+      "feedbackWrong": {
+        "b": "Isso vem da palavra do Senhor, não da ordem do comandante.",
+        "c": "O texto fala do temor de agressão, não de julgamento sobre a controvérsia.",
+        "d": "Quem age é o comandante, por temor, não um pedido fariseu."
+      },
+      "hint": "Leia o motivo ligado ao temor do comandante.",
+      "learningObjective": "Ver a relação entre disputa intensa e a retirada de Paulo.",
+      "evidence": ["Atos 23:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Atos 23:6",
+      "options": [
+        { "id": "a", "text": "Paulo se declara fariseu e fala da ressurreição" },
+        { "id": "b", "text": "O conselho se divide e o clamor cresce" },
+        { "id": "c", "text": "O Senhor o anima e aponta para Roma" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eu sou fariseu, filho de fariseus",
+      "feedbackCorrect": "A cena vai da declaração de Paulo à divisão e, à noite, à palavra do Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pela declaração de Paulo e termine com a palavra sobre Roma."
+      },
+      "hint": "Pense no que abre o conselho e no que fecha a noite.",
+      "learningObjective": "Ordenar os movimentos principais de Atos 23:6–11.",
+      "evidence": ["Atos 23:6", "Atos 23:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 23:11, o Senhor diz que importa a Paulo testemunhar também em ___.",
+      "verseRef": "Atos 23:11",
+      "options": [
+        { "id": "a", "text": "Roma" },
+        { "id": "b", "text": "Damasco" },
+        { "id": "c", "text": "Cesaréia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim importa que também o faça em Roma",
+      "feedbackCorrect": "O Senhor liga o testemunho de Jerusalém ao que ainda acontecerá em Roma.",
+      "feedbackWrong": {
+        "b": "Damasco não é o destino anunciado nesta noite.",
+        "c": "Cesaréia não aparece nesta palavra do Senhor."
+      },
+      "hint": "Veja a cidade nomeada no fim do versículo.",
+      "learningObjective": "Lembrar o destino que o Senhor aponta a Paulo.",
+      "evidence": ["Atos 23:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 23:11 a Atos 19:21?",
+      "verseRef": "Atos 23:11",
+      "passageA": { "ref": "Atos 23:11" },
+      "passageB": { "ref": "Atos 19:21" },
+      "options": [
+        { "id": "a", "text": "Testemunho também em Roma" },
+        { "id": "b", "text": "Negação da ressurreição" },
+        { "id": "c", "text": "Retirada para a fortaleza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim importa que também o faça em Roma",
+      "feedbackCorrect": "Nos dois textos, Roma aparece no caminho do testemunho de Paulo.",
+      "feedbackWrong": {
+        "b": "A negação da ressurreição é dos saduceus, não a ponte com 19:21.",
+        "c": "A fortaleza é local desta cena, não o elo com Atos 19:21."
+      },
+      "hint": "Compare o destino nomeado nos dois textos.",
+      "learningObjective": "Ligar a palavra do Senhor ao desejo anterior de Paulo ir a Roma.",
+      "evidence": ["Atos 23:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Atos 23:8, fariseus e saduceus creem do mesmo modo em ressurreição, anjo e espírito.",
+      "verseRef": "Atos 23:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "os saduceus afirmam que não há ressurreição, nem anjo, nem espírito; enquanto os fariseus reconhecem a existência de todas essas coisas",
+      "feedbackCorrect": "O texto marca a discordância: saduceus negam, fariseus reconhecem.",
+      "feedbackWrong": {
+        "true": "Atos 23:8 opõe os dois grupos; não diz que creem do mesmo modo."
+      },
+      "hint": "Compare o que cada grupo afirma no versículo.",
+      "learningObjective": "Rejeitar a leitura de que fariseus e saduceus creem igual.",
+      "evidence": ["Atos 23:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 23:11, toque o trecho que sustenta que Paulo ainda deve testemunhar em outro lugar.",
+      "verseRef": "Atos 23:11",
+      "options": [
+        { "id": "a", "text": "em Roma" },
+        { "id": "b", "text": "Na noite seguinte" },
+        { "id": "c", "text": "ao lado dele" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim importa que também o faça em Roma",
+      "feedbackCorrect": "Esse trecho mostra que o testemunho continua, agora apontando para Roma.",
+      "feedbackWrong": {
+        "b": "Marca o tempo, não o conteúdo do chamado.",
+        "c": "Mostra a presença do Senhor, não o destino do testemunho."
+      },
+      "hint": "Procure onde o Senhor nomeia o próximo lugar.",
+      "learningObjective": "Tocar o trecho que sustenta o chamado contínuo ao testemunho.",
+      "evidence": ["Atos 23:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Atos 23:9 o texto sustenta melhor?",
+      "verseRef": "Atos 23:9",
+      "options": [
+        { "id": "a", "text": "Alguns escribas fariseus não acham mal em Paulo" },
+        { "id": "b", "text": "Todo o conselho declara Paulo inocente" },
+        { "id": "c", "text": "Os saduceus reconhecem que um anjo lhe falou" },
+        { "id": "d", "text": "Os escribas pedem a retirada para a fortaleza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nenhum mal encontramos neste homem",
+      "feedbackCorrect": "Escribas da parte dos fariseus dizem que nenhum mal encontram nele.",
+      "feedbackWrong": {
+        "b": "Só alguns escribas fariseus falam assim; não é o conselho inteiro.",
+        "c": "Quem nega anjo e espírito são os saduceus, no versículo 8.",
+        "d": "Quem manda retirar Paulo é o comandante, no versículo 10."
+      },
+      "hint": "Veja o que os escribas da parte dos fariseus dizem.",
+      "learningObjective": "Interpretar o clamor parcial dos escribas fariseus sem generalizar.",
+      "evidence": ["Atos 23:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do testemunho nesta cena.",
+      "verseRef": "Atos 23:6",
+      "options": [
+        { "id": "a", "text": "Paulo testemunha a esperança da ressurreição" },
+        { "id": "b", "text": "O tumulto o leva à fortaleza" },
+        { "id": "c", "text": "O Senhor confirma e aponta o testemunho em Roma" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Quanto à esperança e à ressurreição dos mortos, sou julgado",
+      "feedbackCorrect": "O testemunho gera conflito, a retirada e, à noite, a confirmação do Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo testemunho de Paulo e termine com a palavra sobre Roma."
+      },
+      "hint": "Pense em testemunho, crise e confirmação.",
+      "learningObjective": "Ver o encadeamento do testemunho até a palavra do Senhor.",
+      "evidence": ["Atos 23:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 23:11, o Senhor lembra o ___ que Paulo já deu em Jerusalém.",
+      "verseRef": "Atos 23:11",
+      "options": [
+        { "id": "a", "text": "testemunho" },
+        { "id": "b", "text": "clamor" },
+        { "id": "c", "text": "tumulto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você deu testemunho a meu respeito em Jerusalém",
+      "feedbackCorrect": "O Senhor nomeia o testemunho já dado e o que ainda importa dar.",
+      "feedbackWrong": {
+        "b": "Clamor descreve a briga do conselho, não a palavra do Senhor.",
+        "c": "Tumulto não é o termo que o Senhor usa aqui."
+      },
+      "hint": "Veja o que Paulo já fez a respeito do Senhor em Jerusalém.",
+      "learningObjective": "Lembrar o termo que carrega o chamado contínuo de Paulo.",
+      "evidence": ["Atos 23:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 23:11 a Atos 18:9–10?",
+      "verseRef": "Atos 23:11",
+      "passageA": { "ref": "Atos 23:11" },
+      "passageB": { "ref": "Atos 18:9–10" },
+      "options": [
+        { "id": "a", "text": "Senhor anima o servo" },
+        { "id": "b", "text": "Divisão do Sinédrio" },
+        { "id": "c", "text": "Negação dos saduceus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor, pondo-se ao lado dele, disse: Coragem!",
+      "feedbackCorrect": "Nos dois textos, o Senhor fala para animar Paulo a continuar.",
+      "feedbackWrong": {
+        "b": "A divisão do Sinédrio é desta cena, não a ponte com Atos 18.",
+        "c": "A negação dos saduceus não aparece em Atos 18:9–10."
+      },
+      "hint": "Compare o que o Senhor faz nas duas noites.",
+      "learningObjective": "Ligar esta noite à outra em que o Senhor anima Paulo.",
+      "evidence": ["Atos 23:11"]
+    }
+  ]
+}

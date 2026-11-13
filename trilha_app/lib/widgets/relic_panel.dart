@@ -32,7 +32,7 @@ class RelicPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = this.accent ?? Appearance.of(context).chrome;
+    final accent = this.accent ?? Appearance.of(context).place;
     if (glow != null) {
       return GlassCard(
         tint: accent,
@@ -85,7 +85,7 @@ class RelicAtmosphere extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = this.accent ?? Appearance.of(context).chrome;
+    final accent = this.accent ?? Appearance.of(context).place;
     return IgnorePointer(
       child: DecoratedBox(
         decoration: BoxDecoration(
@@ -131,7 +131,7 @@ class RelicChapter extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = this.accent ?? Appearance.of(context).chrome;
+    final accent = this.accent ?? Appearance.of(context).place;
     final a = Appearance.of(context);
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
@@ -195,7 +195,7 @@ class RelicHairline extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = this.accent ?? Appearance.of(context).chrome;
+    final accent = this.accent ?? Appearance.of(context).place;
     return Container(
       height: 1,
       decoration: BoxDecoration(
@@ -221,7 +221,7 @@ class RelicProgress extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final accent = this.accent ?? Appearance.of(context).chrome;
+    final accent = this.accent ?? Appearance.of(context).place;
     final a = Appearance.of(context);
     final t = value.clamp(0.0, 1.0);
     return SizedBox(

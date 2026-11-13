@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Êxodo 16:11–16",
+    "passages": [
+      {
+        "ref": "Êxodo 16:11–18"
+      }
+    ],
+    "context": "No deserto, o povo murmura. O Senhor promete carne à tarde e pão de manhã, e ensina a colher o bastante.",
+    "keyword": "Pão",
+    "keywordGloss": "O pão que o Senhor dá no deserto: cada um colhe o que pode comer.",
+    "focusQuestion": "Onde você ainda tenta juntar demais em vez de confiar no bastante do Senhor?",
+    "reflectionPrompts": [
+      "Queixas ouvidas",
+      "Pão do Senhor",
+      "Nem sobra nem falta"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor ouviu as queixas dos filhos de Israel.",
+        "evidenceRef": "Êxodo 16:12",
+        "evidenceSpan": "Ouvi as queixas dos filhos de Israel"
+      },
+      {
+        "text": "À tarde comeriam carne; pela manhã se fartariam de pão.",
+        "evidenceRef": "Êxodo 16:12",
+        "evidenceSpan": "Ao entardecer comerão carne, e pela manhã se fartarão de pão"
+      },
+      {
+        "text": "Moisés disse que aquilo era o pão que o Senhor dava.",
+        "evidenceRef": "Êxodo 16:15",
+        "evidenceSpan": "Este é o pão que o Senhor vos dá para o vosso alimento"
+      },
+      {
+        "text": "A instrução era colher um gômer por pessoa.",
+        "evidenceRef": "Êxodo 16:16",
+        "evidenceSpan": "um gômer por pessoa"
+      },
+      {
+        "text": "Quem colheu muito não sobrou; quem pouco, não faltou.",
+        "evidenceRef": "Êxodo 16:18",
+        "evidenceSpan": "não sobejava para quem havia colhido muito, nem faltava para quem havia colhido pouco"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pão",
+        "gloss": "Alimento que o Senhor dá no deserto."
+      },
+      {
+        "term": "gômer",
+        "gloss": "Medida: um por pessoa, conforme o que pode comer."
+      },
+      {
+        "term": "queixas",
+        "gloss": "O Senhor ouve o murmúrio e responde com provisão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Senhor ouve e promete carne e pão",
+        "evidenceRef": "Êxodo 16:11–12"
+      },
+      {
+        "label": "Codornizes e o orvalho no arraial",
+        "evidenceRef": "Êxodo 16:13–14"
+      },
+      {
+        "label": "Moisés nomeia o pão do Senhor",
+        "evidenceRef": "Êxodo 16:15–16"
+      },
+      {
+        "label": "Medido o gômer, ninguém falta nem sobra",
+        "evidenceRef": "Êxodo 16:17–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Eles saberão que o Senhor é seu Deus ao receber carne e pão.",
+        "marker": "saberão",
+        "evidenceRef": "Êxodo 16:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "Colheram diferente, porém ao medir não sobrou nem faltou.",
+        "marker": "Porém",
+        "evidenceRef": "Êxodo 16:18"
+      },
+      {
+        "kind": "sequência",
+        "text": "Primeiro perguntam o que é; depois Moisés explica o pão.",
+        "marker": null,
+        "evidenceRef": "Êxodo 16:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 6:31",
+        "bridge": "Pão do céu"
+      },
+      {
+        "ref": "2 Coríntios 8:15",
+        "bridge": "Nem sobra nem falta"
+      },
+      {
+        "ref": "Salmos 78:24",
+        "bridge": "Maná do céu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Cada um podia juntar o quanto quisesse sem regra.",
+        "why": "A instrução fixa um gômer por pessoa conforme o que pode comer."
+      },
+      {
+        "text": "Quem colheu muito ficou com sobra garantida.",
+        "why": "Ao medir, não sobejava para quem colheu muito."
+      },
+      {
+        "text": "O pão veio sem o Senhor ouvir as queixas.",
+        "why": "O Senhor diz: ouvi as queixas; depois dá o pão."
+      }
+    ],
+    "centralInsight": "Quem recolhe muito não sobra, e quem recolhe pouco não falta: o Senhor basta.",
+    "anchorQuestion": "O que acontecia ao medir o gômer de quem colheu muito ou pouco?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O Senhor prometeu que pela manhã Israel se fartaria de pão.",
+      "verseRef": "Êxodo 16:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "pela manhã se fartarão de pão",
+      "feedbackCorrect": "A promessa une carne à tarde e pão pela manhã.",
+      "feedbackWrong": {
+        "false": "Releia: pela manhã se fartarão de pão."
+      },
+      "hint": "Veja a promessa para a manhã.",
+      "learningObjective": "Observar a promessa do pão.",
+      "evidence": [
+        "Êxodo 16:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 16:15, toque a palavra que Moisés usa para o alimento do Senhor.",
+      "verseRef": "Êxodo 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "pão"
+        },
+        {
+          "id": "b",
+          "text": "alimento"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o pão que o Senhor vos dá",
+      "feedbackCorrect": "Moisés chama aquilo de pão que o Senhor dá.",
+      "feedbackWrong": {
+        "b": "\"alimento\" é o fim; a palavra pedida é pão.",
+        "c": "Israel pergunta; Moisés responde com pão."
+      },
+      "hint": "Ouça a explicação de Moisés.",
+      "learningObjective": "Identificar o pão do Senhor.",
+      "evidence": [
+        "Êxodo 16:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 16:16, quanto cada um deveria colher por pessoa?",
+      "verseRef": "Êxodo 16:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um gômer por pessoa"
+        },
+        {
+          "id": "b",
+          "text": "Dez gômeres por tenda"
+        },
+        {
+          "id": "c",
+          "text": "Nada, só esperar chuva"
+        },
+        {
+          "id": "d",
+          "text": "O dobro do vizinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um gômer por pessoa",
+      "feedbackCorrect": "A instrução é clara: um gômer por pessoa.",
+      "feedbackWrong": {
+        "b": "O texto diz um gômer, não dez.",
+        "c": "Eles deveriam colher.",
+        "d": "A medida é por pessoa, não por comparação."
+      },
+      "hint": "Leia a medida por pessoa.",
+      "learningObjective": "Observar a regra do gômer.",
+      "evidence": [
+        "Êxodo 16:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 16:18 na ordem do texto.",
+      "verseRef": "Êxodo 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém, ao medi-lo com o gômer"
+        },
+        {
+          "id": "b",
+          "text": "não sobejava para quem havia colhido muito"
+        },
+        {
+          "id": "c",
+          "text": "nem faltava para quem havia colhido pouco"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não sobejava para quem havia colhido muito",
+      "feedbackCorrect": "Medir, depois o resultado: sem sobra e sem falta.",
+      "feedbackWrong": {
+        "default": "Comece pela medição com o gômer."
+      },
+      "hint": "O versículo começa com Porém.",
+      "learningObjective": "Reconhecer a ordem de 16:18.",
+      "evidence": [
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 16:16, qual é a medida por pessoa?",
+      "verseRef": "Êxodo 16:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "gômer"
+        },
+        {
+          "id": "b",
+          "text": "talentos"
+        },
+        {
+          "id": "c",
+          "text": "siclos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um gômer por pessoa",
+      "feedbackCorrect": "A medida é um gômer por pessoa.",
+      "feedbackWrong": {
+        "b": "Não são talentos.",
+        "c": "O texto fala de gômer."
+      },
+      "hint": "Veja a unidade da instrução.",
+      "learningObjective": "Lembrar a medida do pão.",
+      "evidence": [
+        "Êxodo 16:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 16:15 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 16:15",
+      "passageA": {
+        "ref": "Êxodo 16:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No deserto o Senhor responde às queixas com alimento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pão dado pelo Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Volta imediata ao Egito"
+        },
+        {
+          "id": "c",
+          "text": "Construção do bezerro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o pão que o Senhor vos dá",
+      "feedbackCorrect": "O pão é a resposta do Senhor no deserto.",
+      "feedbackWrong": {
+        "b": "O texto fala de pão, não de retorno.",
+        "c": "O bezerro não está nesta cena."
+      },
+      "hint": "Compare a necessidade e o dom.",
+      "learningObjective": "Ligar o pão ao cuidado de Deus.",
+      "evidence": [
+        "Êxodo 16:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 16:18, quem colheu muito ficou com sobra depois de medir o gômer.",
+      "verseRef": "Êxodo 16:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "não sobejava para quem havia colhido muito",
+      "feedbackCorrect": "Ao medir, não sobejava para quem colheu muito.",
+      "feedbackWrong": {
+        "true": "Releia: não sobejava para quem havia colhido muito."
+      },
+      "hint": "Veja o resultado da medição.",
+      "learningObjective": "Compreender a igualdade após medir.",
+      "evidence": [
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 16:18, toque a palavra que marca o contraste na medição.",
+      "verseRef": "Êxodo 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "gômer"
+        },
+        {
+          "id": "c",
+          "text": "muito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, ao medi-lo",
+      "feedbackCorrect": "\"Porém\" introduz o contraste: não sobejava nem faltava.",
+      "feedbackWrong": {
+        "b": "Gômer é a medida.",
+        "c": "Muito descreve quem colheu; o contraste é Porém."
+      },
+      "hint": "Procure a palavra no início do verso.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 16:12 liga o alimento ao conhecimento de Deus?",
+      "verseRef": "Êxodo 16:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao receber carne e pão, saberão que Ele é o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Ao jejuar, esquecerão o nome do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Ao voltar ao Egito, conhecerão Faraó"
+        },
+        {
+          "id": "d",
+          "text": "Ao vender o maná, enriquecerão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e saberão que eu sou o Senhor, seu Deus",
+      "feedbackCorrect": "O alimento leva a saber que Ele é o Senhor.",
+      "feedbackWrong": {
+        "b": "O texto liga provisão a conhecimento, não jejum.",
+        "c": "O alvo é conhecer o Senhor, não Faraó.",
+        "d": "Não há venda do maná neste verso."
+      },
+      "hint": "Veja a cláusula \"e saberão\".",
+      "learningObjective": "Relacionar provisão e conhecimento.",
+      "evidence": [
+        "Êxodo 16:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena do pão em Êxodo 16:12–18?",
+      "verseRef": "Êxodo 16:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor promete carne e pão"
+        },
+        {
+          "id": "b",
+          "text": "Moisés nomeia o pão do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Ao medir, não sobra nem falta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Este é o pão que o Senhor vos dá",
+      "feedbackCorrect": "Promessa, nomeação e medida justa.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa; a medição fecha."
+      },
+      "hint": "Siga promessa, explicação e medição.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Êxodo 16:12",
+        "Êxodo 16:15",
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 16:18, que verbo diz o que não aconteceu a quem colheu muito?",
+      "verseRef": "Êxodo 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "sobejava"
+        },
+        {
+          "id": "b",
+          "text": "faltava"
+        },
+        {
+          "id": "c",
+          "text": "escondia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não sobejava para quem havia colhido muito",
+      "feedbackCorrect": "Não sobejava: a sobra não ficou.",
+      "feedbackWrong": {
+        "b": "\"faltava\" é do que colheu pouco.",
+        "c": "O texto não usa esconder."
+      },
+      "hint": "Veja o verbo ligado a quem colheu muito.",
+      "learningObjective": "Lembrar o verbo do contraste.",
+      "evidence": [
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 16:18 a 2 Coríntios 8:15?",
+      "verseRef": "Êxodo 16:18",
+      "passageA": {
+        "ref": "Êxodo 16:18"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 8:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nem sobra nem falta"
+        },
+        {
+          "id": "b",
+          "text": "Imposto ao Egito"
+        },
+        {
+          "id": "c",
+          "text": "Jejum obrigatório"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não sobejava para quem havia colhido muito, nem faltava",
+      "feedbackCorrect": "Paulo cita a mesma lógica do maná.",
+      "feedbackWrong": {
+        "b": "O elo é a partilha justa.",
+        "c": "Não é jejum; é provisão medida."
+      },
+      "hint": "Compare a frase sobre muito e pouco.",
+      "learningObjective": "Relacionar maná e partilha.",
+      "evidence": [
+        "Êxodo 16:18",
+        "2 Coríntios 8:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 16:15–18 sustenta que juntar mais maná no deserto prova mais fé perante o Senhor.",
+      "verseRef": "Êxodo 16:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "não sobejava para quem havia colhido muito, nem faltava",
+      "feedbackCorrect": "O texto iguala: não sobejava nem faltava — não premia juntar mais.",
+      "feedbackWrong": {
+        "true": "Releia 16:18: não sobejava nem faltava."
+      },
+      "hint": "Veja o que acontece a quem colheu muito.",
+      "learningObjective": "Interpretar a suficiência contra a ganância.",
+      "evidence": [
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 16:18, toque o que não acontecia a quem colheu pouco.",
+      "verseRef": "Êxodo 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "sobejava"
+        },
+        {
+          "id": "b",
+          "text": "faltava"
+        },
+        {
+          "id": "c",
+          "text": "gômer"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "nem faltava para quem havia colhido pouco",
+      "feedbackCorrect": "Nem faltava ao que havia colhido pouco.",
+      "feedbackWrong": {
+        "a": "Sobejava é o outro lado.",
+        "c": "Gômer é a medida."
+      },
+      "hint": "Procure o verbo ligado a quem colheu pouco.",
+      "learningObjective": "Sustentar a leitura da suficiência.",
+      "evidence": [
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 16:15–18 sustenta sobre a provisão?",
+      "verseRef": "Êxodo 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor dá o bastante; a medida corrige a ganância"
+        },
+        {
+          "id": "b",
+          "text": "Quem junta mais prova mais fé"
+        },
+        {
+          "id": "c",
+          "text": "O pão veio sem palavra do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Só os chefes podiam colher"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não sobejava para quem havia colhido muito, nem faltava",
+      "feedbackCorrect": "O Senhor dá e a medida ensina o bastante.",
+      "feedbackWrong": {
+        "b": "Quem colheu muito não ficou com sobra.",
+        "c": "Moisés nomeia o pão que o Senhor dá.",
+        "d": "Cada um colhia para sua tenda."
+      },
+      "hint": "Una o pão nomeado e a medição.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 16:15",
+        "Êxodo 16:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o pão do deserto à Escritura?",
+      "verseRef": "Êxodo 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor dá pão no deserto"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo lembra o maná do céu"
+        },
+        {
+          "id": "c",
+          "text": "João retoma o pão do céu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Este é o pão que o Senhor vos dá",
+      "feedbackCorrect": "Do maná ao Salmo e a João: o mesmo cuidado.",
+      "feedbackWrong": {
+        "default": "Comece pelo maná; depois Salmo e João."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o pão ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 16:15",
+        "Salmos 78:24",
+        "João 6:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 16:12, que termo nomeia o que o Senhor ouviu?",
+      "verseRef": "Êxodo 16:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "queixas"
+        },
+        {
+          "id": "b",
+          "text": "cânticos"
+        },
+        {
+          "id": "c",
+          "text": "juramentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouvi as queixas dos filhos de Israel",
+      "feedbackCorrect": "Ele ouve as queixas e responde com pão.",
+      "feedbackWrong": {
+        "b": "Aqui são queixas, não cânticos.",
+        "c": "O termo do verso é queixas."
+      },
+      "hint": "Veja o objeto de \"Ouvi\".",
+      "learningObjective": "Lembrar o termo da murmuração.",
+      "evidence": [
+        "Êxodo 16:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 16:15 a João 6:31?",
+      "verseRef": "Êxodo 16:15",
+      "passageA": {
+        "ref": "Êxodo 16:15"
+      },
+      "passageB": {
+        "ref": "João 6:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pão do céu"
+        },
+        {
+          "id": "b",
+          "text": "Água da rocha"
+        },
+        {
+          "id": "c",
+          "text": "Sangue na porta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o pão que o Senhor vos dá",
+      "feedbackCorrect": "João retoma o pão do céu dado no deserto.",
+      "feedbackWrong": {
+        "b": "Aqui o elo é o pão, não a água.",
+        "c": "A páscoa não é o tema deste elo."
+      },
+      "hint": "Que alimento o texto e João nomeiam?",
+      "learningObjective": "Ligar o maná a João.",
+      "evidence": [
+        "Êxodo 16:15",
+        "João 6:31"
+      ]
+    }
+  ]
+}

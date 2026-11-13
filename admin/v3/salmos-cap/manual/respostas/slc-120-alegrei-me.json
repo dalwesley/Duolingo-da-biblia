@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Salmos 122:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 122:1–6"
+      },
+      {
+        "ref": "Salmos 122:7–9"
+      }
+    ],
+    "context": "Alegrei-me quando me disseram: vamos à casa do Senhor. Orai pela paz de Jerusalém.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Alegrei-me",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Alegrei-me quando me disseram.",
+        "evidenceRef": "Salmos 122:1",
+        "evidenceSpan": "Alegrei-me quando me disseram"
+      },
+      {
+        "text": "Os nossos pés estão dentro das tuas portas.",
+        "evidenceRef": "Salmos 122:2",
+        "evidenceSpan": "Os nossos pés estão dentro das tuas portas"
+      },
+      {
+        "text": "Jerusalém, que estás edificada como uma cidade compacta, bem unida.",
+        "evidenceRef": "Salmos 122:3",
+        "evidenceSpan": "Jerusalém"
+      },
+      {
+        "text": "Para onde sobem as tribos.",
+        "evidenceRef": "Salmos 122:4",
+        "evidenceSpan": "Para onde sobem as tribos"
+      },
+      {
+        "text": "Pois ali estão os tronos de justiça.",
+        "evidenceRef": "Salmos 122:5",
+        "evidenceSpan": "Pois ali estão os tronos de justiça"
+      },
+      {
+        "text": "Orem pela paz de Jerusalém.",
+        "evidenceRef": "Salmos 122:6",
+        "evidenceSpan": "Orem pela paz de Jerusalém"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Alegrei-me",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Alegrei-me quando me disseram vamos à",
+        "evidenceRef": "Salmos 122:1"
+      },
+      {
+        "label": "Os nossos pés estão dentro das",
+        "evidenceRef": "Salmos 122:2"
+      },
+      {
+        "label": "Jerusalém que estás edificada como uma",
+        "evidenceRef": "Salmos 122:3"
+      },
+      {
+        "label": "Para onde sobem as tribos as",
+        "evidenceRef": "Salmos 122:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Salmos 122:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 122:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 10:11",
+        "bridge": "Bom Pastor"
+      },
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Peregrinos em festa: paz nas muralhas e bem para os irmãos."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Peregrinos em festa: paz nas muralhas e bem para os irmãos.",
+    "anchorQuestion": "O que Salmos 122:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 122:1, alegrei-me quando me disseram.",
+      "verseRef": "Salmos 122:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Alegrei-me quando me disseram",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 122:1 afirma.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 122:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 122:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrei-me"
+        },
+        {
+          "id": "b",
+          "text": "disseram"
+        },
+        {
+          "id": "c",
+          "text": "Vamos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Alegrei-me",
+      "feedbackCorrect": "O versículo destaca «Alegrei-me».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 122:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 122:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jerusalém",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 122:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 122:1 na ordem do texto.",
+      "verseRef": "Salmos 122:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrei-me quando me"
+        },
+        {
+          "id": "b",
+          "text": "disseram: Vamos"
+        },
+        {
+          "id": "c",
+          "text": "casa do Senhor."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Alegrei-me quando",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 122:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 122:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "onde"
+        },
+        {
+          "id": "b",
+          "text": "Alegrei-me"
+        },
+        {
+          "id": "c",
+          "text": "quando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "onde",
+      "feedbackCorrect": "A palavra do versículo é «onde».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 122:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 122:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 122:1",
+      "passageA": {
+        "ref": "Salmos 122:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Alegrei-me quando me disseram: vamos à casa do Senhor. Orai pela paz de Jerusalém."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Alegrei-me",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 122:1, o marcador quando une ideias no fluxo do texto.",
+      "verseRef": "Salmos 122:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 122:1 afirma.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 122:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 122:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "quando"
+        },
+        {
+          "id": "b",
+          "text": "Alegrei-me"
+        },
+        {
+          "id": "c",
+          "text": "disseram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo destaca «quando».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 122:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 122:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para onde sobem as tribos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 122:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 122:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrei-me quando me disseram"
+        },
+        {
+          "id": "b",
+          "text": "Vamos à casa do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém está edificada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Alegrei-me",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 122:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 122:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Alegrei-me"
+        },
+        {
+          "id": "c",
+          "text": "quando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jerusalém",
+      "feedbackCorrect": "A palavra do versículo é «Jerusalém».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 122:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 122:1 a João 10:11.",
+      "verseRef": "Salmos 122:1",
+      "passageA": {
+        "ref": "Salmos 122:1"
+      },
+      "passageB": {
+        "ref": "João 10:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bom Pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Alegrei-me",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 122:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Por",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 122:9 afirma.",
+      "evidence": [
+        "Salmos 122:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 122:9, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 122:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amor",
+      "feedbackCorrect": "O versículo destaca «amor».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 122:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 122:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 122:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois ali estão os tronos de justiça",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 122:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 122:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Alegrei-me",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 122:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 122:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "estão"
+        },
+        {
+          "id": "b",
+          "text": "Alegrei-me"
+        },
+        {
+          "id": "c",
+          "text": "quando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estão",
+      "feedbackCorrect": "A palavra do versículo é «estão».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 122:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 122:1 a 2 Coríntios 1:3.",
+      "verseRef": "Salmos 122:1",
+      "passageA": {
+        "ref": "Salmos 122:1"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus de toda consolação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Alegrei-me",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 122:1"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "slug": "atos-cap",
+  "prefix": "atc",
+  "book": "Atos",
+  "chapters": 28,
+  "title": "Atos",
+  "description": "Atos capítulo a capítulo: a igreja levando o evangelho de Jerusalém até Roma.",
+  "icon": "🔥",
+  "color": "#E17055",
+  "order": 45,
+  "realm": "novo-testamento",
+  "category": "historicos-nt",
+  "avoidTrails": ["atos", "igreja-primitiva"],
+  "modules": [
+    {
+      "title": "Testemunhas em Jerusalém · cap. 1–5",
+      "scenes": [
+        { "ref": "Atos 1:12–17", "title": "Unidos em oração", "intro": "Depois que Jesus sobe ao céu, os discípulos voltam a Jerusalém e esperam juntos.", "insight": "A igreja nasce esperando junta e perseverando em oração.", "objective": "Esperar orando juntos" },
+        { "ref": "Atos 2:1–8", "title": "O dia de Pentecostes", "intro": "Os discípulos estão reunidos quando vem do céu um som como de vento forte.", "insight": "O Espírito vem como prometido, e cada povo ouve as grandezas de Deus na própria língua.", "objective": "O Espírito derramado" },
+        { "ref": "Atos 3:1–10", "title": "O que tenho, isso te dou", "intro": "Na porta do templo, um homem que nunca andou pede esmola a Pedro e João.", "insight": "Pedro não tem ouro, mas dá o que tem: em nome de Jesus, levanta e anda.", "objective": "O nome de Jesus que levanta" },
+        { "ref": "Atos 4:8–13", "title": "Não há outro nome", "intro": "Presos, Pedro e João falam diante das autoridades sobre a cura do coxo.", "insight": "Não há salvação em nenhum outro nome, e homens simples falam com coragem porque estiveram com Jesus.", "objective": "Coragem de quem esteve com Jesus" },
+        { "ref": "Atos 5:27–32", "title": "Importa obedecer a Deus", "intro": "Proibidos de pregar, os apóstolos são levados de novo ao conselho.", "insight": "Quando a ordem humana contraria Deus, é preciso obedecer a Deus.", "objective": "Obedecer a Deus primeiro" }
+      ],
+      "boss": { "title": "Travessia: Testemunhas em Jerusalém", "intro": "Revise a oração, Pentecostes, o coxo, a coragem de Pedro e a obediência a Deus.", "insight": "O Espírito faz testemunhas corajosas" }
+    },
+    {
+      "title": "A igreja se espalha · cap. 6–10",
+      "scenes": [
+        { "ref": "Atos 6:1–7", "title": "Sete homens cheios do Espírito", "intro": "Viúvas estão sendo esquecidas na distribuição diária, e a igreja precisa decidir.", "insight": "A igreja cuida dos esquecidos e reparte o serviço, e a palavra cresce.", "objective": "Servir as mesas e a palavra" },
+        { "ref": "Atos 7:44–50", "title": "O céu é o meu trono", "intro": "Estêvão, acusado diante do conselho, fala da tenda e do templo.", "insight": "Deus não cabe em templo feito por mãos: o céu é o seu trono.", "objective": "Deus maior que o templo" },
+        { "ref": "Atos 8:26–35", "title": "Entendes o que lês?", "intro": "Na estrada de Gaza, Filipe encontra um oficial etíope lendo o profeta Isaías.", "insight": "Começando por aquela Escritura, Filipe anuncia Jesus a quem procurava entender.", "objective": "Explicar a Escritura" },
+        { "ref": "Atos 9:1–9", "title": "A luz no caminho", "intro": "Saulo vai a Damasco para prender cristãos e é parado por uma luz do céu.", "insight": "Quem persegue a igreja persegue Jesus, e Jesus muda até o perseguidor.", "objective": "O perseguidor encontrado" },
+        { "ref": "Atos 10:9–16", "title": "Não chame impuro", "intro": "Pedro ora no terraço e vê um lençol descer do céu cheio de animais.", "insight": "O que Deus purificou não se chama impuro: o evangelho é para todos os povos.", "objective": "Deus não faz acepção" }
+      ],
+      "boss": { "title": "Travessia: A igreja se espalha", "intro": "Revise os sete, Estêvão, o etíope, Saulo e a visão de Pedro.", "insight": "O evangelho atravessa todas as fronteiras" }
+    },
+    {
+      "title": "Para os gentios · cap. 11–15",
+      "scenes": [
+        { "ref": "Atos 11:19–26", "title": "Chamados cristãos", "intro": "Perseguidos, alguns crentes chegam a Antioquia e falam também aos gregos.", "insight": "Em Antioquia, a graça de Deus é vista, e os discípulos ganham o nome de cristãos.", "objective": "Uma igreja nova e alegre" },
+        { "ref": "Atos 12:5–11", "title": "As correntes caíram", "intro": "Pedro está preso, guardado por soldados, enquanto a igreja ora por ele.", "insight": "A igreja ora sem parar, e Deus livra Pedro da prisão.", "objective": "A oração e o livramento" },
+        { "ref": "Atos 13:44–49", "title": "Luz para os gentios", "intro": "Em Antioquia da Pisídia, quase a cidade inteira se reúne para ouvir a palavra.", "insight": "A salvação chega até os confins da terra, e os gentios se alegram.", "objective": "Luz para todos os povos" },
+        { "ref": "Atos 14:19–23", "title": "Por muitas tribulações", "intro": "Paulo é apedrejado em Listra, se levanta e volta para fortalecer as igrejas.", "insight": "Entramos no Reino passando por muitas tribulações, e as igrejas são fortalecidas.", "objective": "Firmes na tribulação" },
+        { "ref": "Atos 15:6–11", "title": "Salvos pela graça", "intro": "Os apóstolos se reúnem em Jerusalém para decidir sobre os cristãos não judeus.", "insight": "Judeus e gentios são salvos do mesmo jeito: pela graça do Senhor Jesus.", "objective": "A mesma graça para todos" }
+      ],
+      "boss": { "title": "Travessia: Para os gentios", "intro": "Revise Antioquia, Pedro liberto, a luz para os gentios, Listra e o concílio.", "insight": "A graça alcança todos os povos" }
+    },
+    {
+      "title": "As viagens de Paulo · cap. 16–20",
+      "scenes": [
+        { "ref": "Atos 16:25–34", "title": "O carcereiro de Filipos", "intro": "À meia-noite, Paulo e Silas cantam na prisão, e um terremoto abre as portas.", "insight": "Crê no Senhor Jesus e serás salvo, tu e tua casa.", "objective": "Que devo fazer para ser salvo?" },
+        { "ref": "Atos 17:22–28", "title": "Ao Deus desconhecido", "intro": "No Areópago de Atenas, Paulo fala a filósofos sobre um altar sem nome.", "insight": "O Deus que fez o mundo está perto: nele vivemos, nos movemos e existimos.", "objective": "Anunciar o Deus verdadeiro" },
+        { "ref": "Atos 18:7–11", "title": "Não temas, continua falando", "intro": "Em Corinto, diante da oposição, o Senhor fala a Paulo numa visão à noite.", "insight": "O Senhor está com quem anuncia: não temas, porque tenho muito povo nesta cidade.", "objective": "Coragem para anunciar" },
+        { "ref": "Atos 19:13–20", "title": "A palavra prevalecia", "intro": "Em Éfeso, o nome de Jesus é usado por quem não o conhece, e a cidade se espanta.", "insight": "Quando a palavra do Senhor prevalece, as pessoas largam o que as prendia.", "objective": "Romper com o passado" },
+        { "ref": "Atos 20:28–35", "title": "Mais feliz é dar", "intro": "Paulo se despede dos presbíteros de Éfeso e lembra como viveu entre eles.", "insight": "Cuidar do rebanho e ajudar os fracos: há mais felicidade em dar do que em receber.", "objective": "Pastorear e dar" }
+      ],
+      "boss": { "title": "Travessia: As viagens de Paulo", "intro": "Revise Filipos, Atenas, Corinto, Éfeso e a despedida de Paulo.", "insight": "O evangelho avança cidade a cidade" }
+    },
+    {
+      "title": "Preso por causa de Jesus · cap. 21–24",
+      "scenes": [
+        { "ref": "Atos 21:10–14", "title": "Pronto para morrer", "intro": "Um profeta amarra as próprias mãos com o cinto de Paulo e anuncia a prisão dele.", "insight": "Paulo está pronto até para morrer pelo nome de Jesus: faça-se a vontade do Senhor.", "objective": "Entregar a vida ao Senhor" },
+        { "ref": "Atos 22:12–16", "title": "Levanta-te e sê batizado", "intro": "Diante da multidão em Jerusalém, Paulo conta como Ananias foi até ele.", "insight": "Paulo foi escolhido para ser testemunha do que viu e ouviu: por que demorar?", "objective": "Testemunha do que viu" },
+        { "ref": "Atos 23:6–11", "title": "Tem bom ânimo", "intro": "No conselho, Paulo divide fariseus e saduceus, e o tumulto é tanto que precisam tirá-lo dali.", "insight": "Na noite mais difícil, o Senhor fica ao lado de Paulo e diz: tem bom ânimo.", "objective": "O Senhor ao lado" },
+        { "ref": "Atos 24:10–16", "title": "Consciência limpa", "intro": "Diante do governador Félix, Paulo se defende das acusações.", "insight": "Paulo se esforça para ter sempre a consciência limpa diante de Deus e das pessoas.", "objective": "Viver com consciência limpa" }
+      ],
+      "boss": { "title": "Travessia: Preso por causa de Jesus", "intro": "Revise o profeta Ágabo, Ananias, a noite no quartel e a defesa diante de Félix.", "insight": "Até preso, Paulo é testemunha" }
+    },
+    {
+      "title": "Até Roma · cap. 25–28",
+      "scenes": [
+        { "ref": "Atos 25:8–12", "title": "Apelo para César", "intro": "Diante de Festo, Paulo percebe a armadilha e faz um pedido inesperado.", "insight": "Paulo usa o direito que tinha, e o caminho para Roma se abre.", "objective": "Deus abre o caminho" },
+        { "ref": "Atos 26:15–20", "title": "Das trevas para a luz", "intro": "Diante do rei Agripa, Paulo conta o que Jesus lhe disse no caminho de Damasco.", "insight": "Jesus envia Paulo para abrir os olhos das pessoas e levá-las das trevas para a luz.", "objective": "A missão de Paulo" },
+        { "ref": "Atos 27:21–26", "title": "No meio da tempestade", "intro": "Há dias sem sol nem estrelas, o navio está perdido e todos perderam a esperança.", "insight": "No meio da tempestade, Paulo confia no Deus a quem pertence e serve.", "objective": "Esperança na tempestade" },
+        { "ref": "Atos 28:1–6", "title": "A víbora em Malta", "intro": "Os náufragos chegam a uma ilha, e uma víbora se prende à mão de Paulo.", "insight": "Deus guarda Paulo para que o evangelho chegue aonde precisa chegar.", "objective": "Guardados para a missão" }
+      ],
+      "boss": { "title": "Travessia: Até Roma", "intro": "Revise o apelo a César, Agripa, a tempestade e Malta.", "insight": "Nada impede o evangelho de chegar" }
+    }
+  ]
+}

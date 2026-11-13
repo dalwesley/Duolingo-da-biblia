@@ -1,0 +1,722 @@
+{
+  "study": {
+    "passageRef": "1 João 5:1–5",
+    "passages": [
+      {
+        "ref": "1 João 5:1–5"
+      },
+      {
+        "ref": "1 João 5:6"
+      },
+      {
+        "ref": "1 João 5:8"
+      }
+    ],
+    "context": "João une fé, amor e obediência: crer que Jesus é o Cristo é ser nascido de Deus. A vitória que vence o mundo é a fé. Jesus veio por água e sangue, e o Espírito testemunha.",
+    "keyword": "fé",
+    "keywordGloss": "A vitória que vence o mundo: crer que Jesus é o Filho de Deus.",
+    "focusQuestion": "Sua fé em Jesus como Filho de Deus está vencendo o mundo em você?",
+    "reflectionPrompts": [
+      "Nascido de Deus",
+      "Vitória da fé",
+      "Água, sangue e Espírito"
+    ],
+    "facts": [
+      {
+        "text": "Quem crê que Jesus é o Cristo é nascido de Deus.",
+        "evidenceRef": "1 João 5:1",
+        "evidenceSpan": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus"
+      },
+      {
+        "text": "Conhecemos que amamos os filhos de Deus quando amamos a Deus e observamos seus mandamentos.",
+        "evidenceRef": "1 João 5:2",
+        "evidenceSpan": "quando amamos a Deus e observamos os seus mandamentos"
+      },
+      {
+        "text": "Os mandamentos de Deus não são pesados.",
+        "evidenceRef": "1 João 5:3",
+        "evidenceSpan": "os seus mandamentos não são pesados"
+      },
+      {
+        "text": "Esta é a vitória que vence o mundo: a nossa fé.",
+        "evidenceRef": "1 João 5:4",
+        "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé"
+      },
+      {
+        "text": "Vence o mundo quem crê que Jesus é o Filho de Deus.",
+        "evidenceRef": "1 João 5:5",
+        "evidenceSpan": "aquele que crê que Jesus é o Filho de Deus"
+      },
+      {
+        "text": "Jesus veio por água e sangue; o Espírito dá testemunho porque é a verdade.",
+        "evidenceRef": "1 João 5:6",
+        "evidenceSpan": "veio por meio de água e sangue, Jesus Cristo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "fé",
+        "gloss": "A vitória que vence o mundo."
+      },
+      {
+        "term": "nascido",
+        "gloss": "Quem crê que Jesus é o Cristo é nascido de Deus."
+      },
+      {
+        "term": "Espírito",
+        "gloss": "Dá testemunho, porque é a verdade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Crer e nascer de Deus",
+        "evidenceRef": "1 João 5:1"
+      },
+      {
+        "label": "Amar a Deus e guardar mandamentos",
+        "evidenceRef": "1 João 5:2–3"
+      },
+      {
+        "label": "Vitória pela fé no Filho",
+        "evidenceRef": "1 João 5:4–5"
+      },
+      {
+        "label": "Testemunho da água, sangue e Espírito",
+        "evidenceRef": "1 João 5:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Todo nascido de Deus vence o mundo porque a fé é a vitória.",
+        "marker": "Porque",
+        "evidenceRef": "1 João 5:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Amar a Deus e guardar mandamentos mostra o amor aos filhos.",
+        "marker": null,
+        "evidenceRef": "1 João 5:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não só por água, mas também por água e por sangue.",
+        "marker": "mas também",
+        "evidenceRef": "1 João 5:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 16:33",
+        "bridge": "Jesus venceu o mundo"
+      },
+      {
+        "ref": "João 3:5",
+        "bridge": "Nascido da água e do Espírito"
+      },
+      {
+        "ref": "1 Coríntios 15:57",
+        "bridge": "Vitória por meio de Cristo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A vitória sobre o mundo vem sem fé em Jesus.",
+        "why": "A vitória é a nossa fé; vence quem crê que Jesus é o Filho."
+      },
+      {
+        "text": "Os mandamentos de Deus são pesados demais para os nascidos.",
+        "why": "O texto diz que não são pesados."
+      },
+      {
+        "text": "Jesus veio só por água, sem sangue.",
+        "why": "Veio por água e sangue, não somente por água."
+      }
+    ],
+    "centralInsight": "Esta é a vitória que vence o mundo: a nossa fé em Jesus como Filho de Deus.",
+    "anchorQuestion": "O que 1 João 5:4 chama de vitória que vence o mundo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 João 5:4, a vitória que vence o mundo é a nossa fé.",
+      "verseRef": "1 João 5:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "A fé é nomeada como a vitória.",
+      "feedbackWrong": {
+        "false": "O versículo afirma isso."
+      },
+      "hint": "Leia depois dos dois-pontos.",
+      "learningObjective": "Observar a vitória.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 João 5:5, toque o que Jesus é, segundo a fé que vence.",
+      "verseRef": "1 João 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filho de Deus"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "aquele"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "crê que Jesus é o Filho de Deus",
+      "feedbackCorrect": "A fé confessa Jesus como Filho de Deus.",
+      "feedbackWrong": {
+        "b": "Mundo é o que se vence.",
+        "c": "Mandamentos aparecem nos vv.2–3."
+      },
+      "hint": "Veja o fim da pergunta.",
+      "learningObjective": "Identificar o conteúdo da fé.",
+      "evidence": [
+        "1 João 5:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 João 5:1, quem é nascido de Deus?",
+      "verseRef": "1 João 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo aquele que crê que Jesus é o Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Quem nega que Jesus é o Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Quem acha os mandamentos pesados demais"
+        },
+        {
+          "id": "d",
+          "text": "Quem vence sem fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus",
+      "feedbackCorrect": "Crer que Jesus é o Cristo marca o nascimento de Deus.",
+      "feedbackWrong": {
+        "b": "Negar contradiz o versículo.",
+        "c": "Os mandamentos não são pesados.",
+        "d": "A vitória é a fé."
+      },
+      "hint": "Leia o início do versículo.",
+      "learningObjective": "Reconhecer quem é nascido.",
+      "evidence": [
+        "1 João 5:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 João 5:4 na ordem do texto.",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "todo aquele que é nascido de Deus vence o mundo"
+        },
+        {
+          "id": "b",
+          "text": "e esta é a vitória que vence o mundo"
+        },
+        {
+          "id": "c",
+          "text": "a nossa fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "Primeiro o nascido vence; depois a vitória é a fé.",
+      "feedbackWrong": {
+        "default": "Comece com todo aquele que é nascido."
+      },
+      "hint": "O versículo fecha nomeando a fé.",
+      "learningObjective": "Seguir a ordem do v.4.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 João 5:3, complete: os seus mandamentos não são ___.",
+      "verseRef": "1 João 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "pesados"
+        },
+        {
+          "id": "b",
+          "text": "guardados"
+        },
+        {
+          "id": "c",
+          "text": "amados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os seus mandamentos não são pesados",
+      "feedbackCorrect": "Os mandamentos não são pesados.",
+      "feedbackWrong": {
+        "b": "Guardar é o amor de Deus.",
+        "c": "Amar a Deus inclui guardar."
+      },
+      "hint": "É o adjetivo depois de não são.",
+      "learningObjective": "Lembrar a avaliação dos mandamentos.",
+      "evidence": [
+        "1 João 5:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 João 5:4 comunica que se liga a este contexto?",
+      "verseRef": "1 João 5:4",
+      "passageA": {
+        "ref": "1 João 5:4"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "João une nascimento de Deus, amor, mandamentos e o testemunho de água, sangue e Espírito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vitória pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Mandamentos pesados"
+        },
+        {
+          "id": "c",
+          "text": "Negar o Filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "No fio da fé e do nascimento, a vitória é a fé.",
+      "feedbackWrong": {
+        "b": "Não são pesados.",
+        "c": "Crer no Filho vence."
+      },
+      "hint": "Veja o que é a vitória.",
+      "learningObjective": "Ligar o contexto à fé.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 João 5:3, os mandamentos de Deus são descritos como pesados.",
+      "verseRef": "1 João 5:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "os seus mandamentos não são pesados",
+      "feedbackCorrect": "O texto diz que não são pesados.",
+      "feedbackWrong": {
+        "true": "A negação é explícita."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Ver a avaliação dos mandamentos.",
+      "evidence": [
+        "1 João 5:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 João 5:4, toque a palavra que marca a causa da vitória do nascido.",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "vitória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque todo aquele que é nascido de Deus vence o mundo",
+      "feedbackCorrect": "Porque abre a causa.",
+      "feedbackWrong": {
+        "b": "Mundo é o que se vence.",
+        "c": "Vitória é o resultado nomeado."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador causal.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação 1 João 5:4–5 estabelece?",
+      "verseRef": "1 João 5:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A fé no Filho de Deus é a vitória que vence o mundo"
+        },
+        {
+          "id": "b",
+          "text": "A vitória vem sem crer em Jesus"
+        },
+        {
+          "id": "c",
+          "text": "Os mandamentos pesados vencem o mundo"
+        },
+        {
+          "id": "d",
+          "text": "Só água, sem sangue, basta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "A fé no Filho é a vitória.",
+      "feedbackWrong": {
+        "b": "Vence quem crê.",
+        "c": "Mandamentos não são pesados.",
+        "d": "Veio por água e sangue."
+      },
+      "hint": "Una o v.4 ao v.5.",
+      "learningObjective": "Compreender fé e vitória.",
+      "evidence": [
+        "1 João 5:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "1 João 5:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crer e nascer de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Amar a Deus e guardar mandamentos"
+        },
+        {
+          "id": "c",
+          "text": "Vitória pela fé no Filho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus",
+      "feedbackCorrect": "Do nascimento ao amor obediente, até a vitória da fé.",
+      "feedbackWrong": {
+        "default": "Comece pelo crer; a fé vencedora fecha."
+      },
+      "hint": "Siga vv.1, 2–3 e 4–5.",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "1 João 5:1",
+        "1 João 5:2",
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 João 5:6, complete: não somente por água, mas também por água e por ___.",
+      "verseRef": "1 João 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "erro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "também por água e por sangue",
+      "feedbackCorrect": "O contraste inclui o sangue.",
+      "feedbackWrong": {
+        "b": "Mundo é o que se vence.",
+        "c": "Erro não está neste versículo."
+      },
+      "hint": "Veja o que acompanha a água.",
+      "learningObjective": "Lembrar o contraste água-sangue.",
+      "evidence": [
+        "1 João 5:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 João 5:4 a João 16:33?",
+      "verseRef": "1 João 5:4",
+      "passageA": {
+        "ref": "1 João 5:4"
+      },
+      "passageB": {
+        "ref": "João 16:33"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vitória sobre o mundo"
+        },
+        {
+          "id": "b",
+          "text": "Mandamentos pesados"
+        },
+        {
+          "id": "c",
+          "text": "Negar o Filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vence o mundo",
+      "feedbackCorrect": "Ambos falam de vitória sobre o mundo em Cristo/fé.",
+      "feedbackWrong": {
+        "b": "Mandamentos não são pesados.",
+        "c": "Crer no Filho vence."
+      },
+      "hint": "Compare a linguagem de vitória nos dois textos.",
+      "learningObjective": "Ligar a vitória.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo 1 João 5:5, quem vence o mundo é aquele que crê que Jesus é o Filho de Deus.",
+      "verseRef": "1 João 5:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "aquele que crê que Jesus é o Filho de Deus",
+      "feedbackCorrect": "A fé no Filho é a condição da vitória.",
+      "feedbackWrong": {
+        "false": "O versículo pergunta e responde assim."
+      },
+      "hint": "Leia a resposta da pergunta.",
+      "learningObjective": "Confirmar quem vence.",
+      "evidence": [
+        "1 João 5:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 João 5:6, toque o trecho que sustenta quem dá testemunho.",
+      "verseRef": "1 João 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "água"
+        },
+        {
+          "id": "c",
+          "text": "sangue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito é quem dá testemunho, porque o Espírito é a verdade",
+      "feedbackCorrect": "O Espírito dá testemunho porque é a verdade.",
+      "feedbackWrong": {
+        "b": "Água é meio da vinda, não o sujeito do testemunho aqui.",
+        "c": "Sangue também é meio da vinda."
+      },
+      "hint": "Veja quem dá testemunho.",
+      "learningObjective": "Sustentar o testemunho do Espírito.",
+      "evidence": [
+        "1 João 5:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 João 5:1–6 e 5:8 sustentam?",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé no Filho vence; água, sangue e Espírito testemunham"
+        },
+        {
+          "id": "b",
+          "text": "Vitória sem fé no Filho"
+        },
+        {
+          "id": "c",
+          "text": "Jesus veio só por água"
+        },
+        {
+          "id": "d",
+          "text": "Mandamentos são pesados demais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "Fé vencedora e testemunho triplo na terra formam o padrão.",
+      "feedbackWrong": {
+        "b": "A fé é a vitória.",
+        "c": "Também por sangue.",
+        "d": "Não são pesados."
+      },
+      "hint": "Una o v.4 ao v.6 e 5:8.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 João 5:4",
+        "1 João 5:6",
+        "1 João 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do nascimento à vitória?",
+      "verseRef": "1 João 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crer que Jesus é o Cristo e nascer de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Amar e guardar mandamentos leves"
+        },
+        {
+          "id": "c",
+          "text": "Vencer o mundo pela fé no Filho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "crê que Jesus é o Filho de Deus",
+      "feedbackCorrect": "Do nascimento ao amor obediente, até vencer pela fé.",
+      "feedbackWrong": {
+        "default": "Comece pelo crer; a vitória fecha."
+      },
+      "hint": "Siga vv.1, 3 e 5.",
+      "learningObjective": "Encadear nascimento, amor e vitória.",
+      "evidence": [
+        "1 João 5:1",
+        "1 João 5:3",
+        "1 João 5:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 João 5:4, complete: esta é a ___ que vence o mundo.",
+      "verseRef": "1 João 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "vitória"
+        },
+        {
+          "id": "b",
+          "text": "água"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+      "feedbackCorrect": "A vitória é nomeada e identificada com a fé.",
+      "feedbackWrong": {
+        "b": "Água aparece no testemunho.",
+        "c": "Carne não está neste versículo."
+      },
+      "hint": "É o substantivo depois de esta é a.",
+      "learningObjective": "Lembrar o termo teológico da fé.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 João 5:4 a 1 Coríntios 15:57?",
+      "verseRef": "1 João 5:4",
+      "passageA": {
+        "ref": "1 João 5:4",
+        "text": "esta é a vitória que vence o mundo: a nossa fé"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 15:57"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vitória por meio de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Mandamentos pesados"
+        },
+        {
+          "id": "c",
+          "text": "Negar o nascimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a vitória que vence o mundo",
+      "feedbackCorrect": "Ambos celebram a vitória dada em Cristo/fé.",
+      "feedbackWrong": {
+        "b": "Mandamentos não são pesados.",
+        "c": "O nascimento é afirmado."
+      },
+      "hint": "Compare a linguagem da vitória.",
+      "learningObjective": "Ligar a vitória.",
+      "evidence": [
+        "1 João 5:4"
+      ]
+    }
+  ]
+}

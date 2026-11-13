@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Êxodo 34:27–35",
+    "passages": [
+      {
+        "ref": "Êxodo 34:27–35"
+      }
+    ],
+    "context": "Moisés escreve as palavras, fica quarenta dias e desce com o rosto resplandecente; o povo teme.",
+    "keyword": "Resplandecia",
+    "keywordGloss": "A pele do rosto de Moisés brilhava por ter Deus falado com ele.",
+    "focusQuestion": "O que em você deveria mostrar que esteve com o Senhor?",
+    "reflectionPrompts": [
+      "Quarenta dias",
+      "Rosto que brilha",
+      "Véu sobre o rosto"
+    ],
+    "facts": [
+      {
+        "text": "Moisés ficou quarenta dias e noites com o Senhor, sem pão nem água.",
+        "evidenceRef": "Êxodo 34:28",
+        "evidenceSpan": "quarenta dias e quarenta noites"
+      },
+      {
+        "text": "Escreveu nas tábuas as palavras da aliança, as dez palavras.",
+        "evidenceRef": "Êxodo 34:28",
+        "evidenceSpan": "as palavras da aliança, as dez palavras"
+      },
+      {
+        "text": "O rosto de Moisés resplandecia, e ele não sabia.",
+        "evidenceRef": "Êxodo 34:29",
+        "evidenceSpan": "a pele de seu rosto resplandecia"
+      },
+      {
+        "text": "Arão e Israel temeram aproximar-se ao ver o brilho.",
+        "evidenceRef": "Êxodo 34:30",
+        "evidenceSpan": "temeram se aproximar dele"
+      },
+      {
+        "text": "Moisés punha um véu sobre o rosto depois de falar ao povo.",
+        "evidenceRef": "Êxodo 34:33",
+        "evidenceSpan": "pôs um véu sobre o rosto"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "resplandecia",
+        "gloss": "O brilho do rosto após falar com Deus."
+      },
+      {
+        "term": "véu",
+        "gloss": "Cobertura que Moisés punha perante o povo."
+      },
+      {
+        "term": "aliança",
+        "gloss": "As dez palavras escritas nas tábuas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Escrever a aliança no monte",
+        "evidenceRef": "Êxodo 34:27–28"
+      },
+      {
+        "label": "Descida com rosto que brilha",
+        "evidenceRef": "Êxodo 34:29–30"
+      },
+      {
+        "label": "Fala ao povo e põe o véu",
+        "evidenceRef": "Êxodo 34:31–33"
+      },
+      {
+        "label": "Véu removido perante o Senhor",
+        "evidenceRef": "Êxodo 34:34–35"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O rosto brilhava por ter Deus falado com ele.",
+        "marker": "por",
+        "evidenceRef": "Êxodo 34:29"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao verem o brilho, temeram aproximar-se.",
+        "marker": "temeram",
+        "evidenceRef": "Êxodo 34:30"
+      },
+      {
+        "kind": "contraste",
+        "text": "Perante o Senhor remove o véu; perante o povo cobre.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 34:35"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 3:7",
+        "bridge": "Glória no rosto de Moisés"
+      },
+      {
+        "ref": "2 Coríntios 3:13",
+        "bridge": "Véu sobre a face"
+      },
+      {
+        "ref": "Mateus 17:2",
+        "bridge": "Rosto resplandecente"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Moisés sabia desde o início que o rosto brilhava.",
+        "why": "Ele não sabia que resplandecia."
+      },
+      {
+        "text": "O povo se aproximou sem medo ao ver o brilho.",
+        "why": "Temeram se aproximar dele."
+      },
+      {
+        "text": "O véu ficava também quando Moisés falava com o Senhor.",
+        "why": "Ele removia o véu perante o Senhor."
+      }
+    ],
+    "centralInsight": "Quem esteve com o Senhor leva no rosto a marca da conversa com ele.",
+    "anchorQuestion": "Por que o rosto de Moisés resplandecia?"
+  },
+  "questions": [
+    {
+      "question": "Moisés sabia, ao descer, que a pele do seu rosto resplandecia.",
+      "verseRef": "Êxodo 34:29",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele não sabia que a pele de seu rosto resplandecia",
+      "feedbackCorrect": "Ele não sabia que o rosto resplandecia.",
+      "feedbackWrong": {
+        "true": "Releia: ele não sabia."
+      },
+      "hint": "O texto diz se ele sabia ou não.",
+      "learningObjective": "Observar o desconhecimento de Moisés.",
+      "evidence": [
+        "Êxodo 34:29"
+      ],
+      "difficulty": "semente",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 34:29, toque o verbo que descreve a pele do rosto.",
+      "verseRef": "Êxodo 34:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "resplandecia"
+        },
+        {
+          "id": "b",
+          "text": "descer"
+        },
+        {
+          "id": "c",
+          "text": "tábuas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a pele de seu rosto resplandecia",
+      "feedbackCorrect": "A pele do rosto resplandecia.",
+      "feedbackWrong": {
+        "b": "Descer é a ação; o brilho é resplandecia.",
+        "c": "Tábuas ele trazia; o verbo do rosto é resplandecia."
+      },
+      "hint": "O que a pele do rosto fazia?",
+      "learningObjective": "Identificar o brilho.",
+      "evidence": [
+        "Êxodo 34:29"
+      ],
+      "difficulty": "semente",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Segundo Êxodo 34:30, o que Arão e Israel fizeram ao ver o rosto?",
+      "verseRef": "Êxodo 34:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temeram se aproximar dele"
+        },
+        {
+          "id": "b",
+          "text": "Correram para abraçá-lo"
+        },
+        {
+          "id": "c",
+          "text": "Quebraram as tábuas"
+        },
+        {
+          "id": "d",
+          "text": "Ignoraram o brilho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram se aproximar dele",
+      "feedbackCorrect": "Temeram se aproximar dele.",
+      "feedbackWrong": {
+        "b": "Temeram, não abraçaram.",
+        "c": "Não quebraram as tábuas aqui.",
+        "d": "Reagiram com temor."
+      },
+      "hint": "Leia a reação deles.",
+      "learningObjective": "Observar o temor do povo.",
+      "evidence": [
+        "Êxodo 34:30"
+      ],
+      "difficulty": "semente",
+      "type": "choice"
+    },
+    {
+      "question": "Monte Êxodo 34:29 na ordem do texto.",
+      "verseRef": "Êxodo 34:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "ao descer Moisés do monte Sinai"
+        },
+        {
+          "id": "b",
+          "text": "trazendo em suas mãos as duas tábuas do Testemunho"
+        },
+        {
+          "id": "c",
+          "text": "ele não sabia que a pele de seu rosto resplandecia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ao descer Moisés do monte Sinai",
+      "feedbackCorrect": "Desce, traz tábuas, não sabe do brilho.",
+      "feedbackWrong": {
+        "default": "Comece pela descida."
+      },
+      "hint": "O versículo começa com a descida.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 34:29.",
+      "evidence": [
+        "Êxodo 34:29"
+      ],
+      "difficulty": "semente",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 34:33, o que Moisés pôs sobre o rosto?",
+      "verseRef": "Êxodo 34:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "véu"
+        },
+        {
+          "id": "b",
+          "text": "ouro"
+        },
+        {
+          "id": "c",
+          "text": "cinza"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pôs um véu sobre o rosto",
+      "feedbackCorrect": "Pôs um véu sobre o rosto.",
+      "feedbackWrong": {
+        "b": "Não é ouro.",
+        "c": "O texto diz véu."
+      },
+      "hint": "O que cobriu o rosto?",
+      "learningObjective": "Lembrar o véu.",
+      "evidence": [
+        "Êxodo 34:33"
+      ],
+      "difficulty": "semente",
+      "type": "complete"
+    },
+    {
+      "question": "O que Êxodo 34:29 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 34:29",
+      "passageA": {
+        "ref": "Êxodo 34:29"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Moisés desce após estar com o Senhor; o rosto brilha e o povo teme."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Marca de ter falado com Deus"
+        },
+        {
+          "id": "b",
+          "text": "Brilho sem causa"
+        },
+        {
+          "id": "c",
+          "text": "Povo indiferente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por ter Deus falado com ele",
+      "feedbackCorrect": "O brilho marca a conversa com Deus.",
+      "feedbackWrong": {
+        "b": "Há causa: Deus falou.",
+        "c": "O povo temeu."
+      },
+      "hint": "Compare o brilho e a causa.",
+      "learningObjective": "Ligar presença e brilho.",
+      "evidence": [
+        "Êxodo 34:29"
+      ],
+      "difficulty": "semente",
+      "type": "connect"
+    },
+    {
+      "question": "Em Êxodo 34:29, o rosto resplandecia porque Moisés havia jejuado, sem relação com Deus ter falado.",
+      "verseRef": "Êxodo 34:29",
+      "correctOptionId": "false",
+      "evidenceSpan": "por ter Deus falado com ele",
+      "feedbackCorrect": "A causa do brilho é Deus ter falado com ele.",
+      "feedbackWrong": {
+        "true": "Releia: por ter Deus falado com ele."
+      },
+      "hint": "Veja a palavra \"por\".",
+      "learningObjective": "Compreender a causa do brilho.",
+      "evidence": [
+        "Êxodo 34:29"
+      ],
+      "difficulty": "caminhada",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 34:29, toque a palavra que introduz a causa do brilho.",
+      "verseRef": "Êxodo 34:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "por"
+        },
+        {
+          "id": "b",
+          "text": "pele"
+        },
+        {
+          "id": "c",
+          "text": "Sinai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por ter Deus falado com ele",
+      "feedbackCorrect": "\"Por\" introduz a causa: Deus falou.",
+      "feedbackWrong": {
+        "b": "Pele descreve o lugar do brilho.",
+        "c": "Sinai é o monte."
+      },
+      "hint": "Qual palavra precede \"ter Deus falado\"?",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Êxodo 34:29"
+      ],
+      "difficulty": "caminhada",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Como Êxodo 34:34–35 liga o véu à presença do Senhor?",
+      "verseRef": "Êxodo 34:34–35",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove o véu perante o Senhor e cobre perante o povo"
+        },
+        {
+          "id": "b",
+          "text": "Usa o véu também diante do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Nunca mais fala ao povo"
+        },
+        {
+          "id": "d",
+          "text": "Esconde as tábuas sob o véu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "removia o véu até sair",
+      "feedbackCorrect": "Perante o Senhor o véu sai; perante o povo volta.",
+      "feedbackWrong": {
+        "b": "Ele remove perante o Senhor.",
+        "c": "Ele informa ao povo.",
+        "d": "O véu é no rosto."
+      },
+      "hint": "Compare perante o Senhor e perante o povo.",
+      "learningObjective": "Relacionar véu e presença.",
+      "evidence": [
+        "Êxodo 34:34",
+        "Êxodo 34:35"
+      ],
+      "difficulty": "caminhada",
+      "type": "choice"
+    },
+    {
+      "question": "Como avança Êxodo 34:27–35?",
+      "verseRef": "Êxodo 34:28–29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escrever a aliança no monte"
+        },
+        {
+          "id": "b",
+          "text": "Descida com rosto que brilha"
+        },
+        {
+          "id": "c",
+          "text": "Véu perante o povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "escreveu nas tábuas as palavras da aliança",
+      "feedbackCorrect": "Escrita, brilho, véu.",
+      "feedbackWrong": {
+        "default": "Comece pela escrita; o véu vem por último."
+      },
+      "hint": "Primeiro a aliança; no fim o véu.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 34:27–35"
+      ],
+      "difficulty": "caminhada",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 34:30, o povo ___ se aproximar dele.",
+      "verseRef": "Êxodo 34:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "temeram"
+        },
+        {
+          "id": "b",
+          "text": "correram"
+        },
+        {
+          "id": "c",
+          "text": "riram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram se aproximar dele",
+      "feedbackCorrect": "Temeram se aproximar dele.",
+      "feedbackWrong": {
+        "b": "Não correram para perto.",
+        "c": "O verbo é temeram."
+      },
+      "hint": "A reação ao ver o brilho.",
+      "learningObjective": "Lembrar a reação do povo.",
+      "evidence": [
+        "Êxodo 34:30"
+      ],
+      "difficulty": "caminhada",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 34:29 a 2 Coríntios 3:7?",
+      "verseRef": "Êxodo 34:29",
+      "passageA": {
+        "ref": "Êxodo 34:29"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 3:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Glória no rosto de Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Bezerro no acampamento"
+        },
+        {
+          "id": "c",
+          "text": "Maná no deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rosto resplandecia",
+      "feedbackCorrect": "Paulo lembra a glória no rosto de Moisés.",
+      "feedbackWrong": {
+        "b": "O elo é o rosto que brilha.",
+        "c": "Não é o maná."
+      },
+      "hint": "O que brilhava no rosto?",
+      "learningObjective": "Relacionar Êxodo e 2 Coríntios.",
+      "evidence": [
+        "Êxodo 34:29",
+        "2 Coríntios 3:7"
+      ],
+      "difficulty": "caminhada",
+      "type": "connect"
+    },
+    {
+      "question": "Êxodo 34:29–35 sustenta que a conversa com Deus deixa marca visível, e Moisés cobre o rosto perante o povo.",
+      "verseRef": "Êxodo 34:29",
+      "correctOptionId": "true",
+      "evidenceSpan": "por ter Deus falado com ele",
+      "feedbackCorrect": "Brilho pela fala de Deus e véu perante o povo.",
+      "feedbackWrong": {
+        "false": "O texto une brilho, temor e véu."
+      },
+      "hint": "Una causa do brilho e uso do véu.",
+      "learningObjective": "Interpretar a marca da presença.",
+      "evidence": [
+        "Êxodo 34:29",
+        "Êxodo 34:33"
+      ],
+      "difficulty": "profundezas",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 34:35, toque a palavra que marca o contraste ao cobrir de novo o rosto.",
+      "verseRef": "Êxodo 34:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "viam"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém Moisés cobria de novo o rosto",
+      "feedbackCorrect": "\"Porém\" introduz o cobrir de novo com o véu.",
+      "feedbackWrong": {
+        "b": "Viam descreve o povo.",
+        "c": "Israel é quem vê."
+      },
+      "hint": "Qual palavra precede \"Moisés cobria\"?",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Êxodo 34:35"
+      ],
+      "difficulty": "profundezas",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Que leitura Êxodo 34:29–35 sustenta sobre quem esteve com Deus?",
+      "verseRef": "Êxodo 34:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leva no rosto a marca da conversa com Ele"
+        },
+        {
+          "id": "b",
+          "text": "Deve esconder que falou com Deus"
+        },
+        {
+          "id": "c",
+          "text": "O brilho vem do jejum sem Deus"
+        },
+        {
+          "id": "d",
+          "text": "O povo nunca precisa ouvir a ordem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por ter Deus falado com ele",
+      "feedbackCorrect": "O brilho marca a conversa; depois ele fala ao povo.",
+      "feedbackWrong": {
+        "b": "O brilho é visto.",
+        "c": "A causa é Deus ter falado.",
+        "d": "Ele comunica as ordens."
+      },
+      "hint": "Veja a causa do resplandecer.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 34:29",
+        "Êxodo 34:32"
+      ],
+      "difficulty": "profundezas",
+      "type": "choice"
+    },
+    {
+      "question": "Qual sequência liga o rosto que brilha à Escritura?",
+      "verseRef": "Êxodo 34:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés desce com o rosto resplandecente"
+        },
+        {
+          "id": "b",
+          "text": "Põe o véu perante o povo"
+        },
+        {
+          "id": "c",
+          "text": "Paulo lembra a glória no rosto"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "rosto resplandecia",
+      "feedbackCorrect": "Brilho, véu, eco em Paulo.",
+      "feedbackWrong": {
+        "default": "Comece pelo brilho; Paulo vem por último."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o fio do brilho na Escritura.",
+      "evidence": [
+        "Êxodo 34:29",
+        "Êxodo 34:33",
+        "2 Coríntios 3:7"
+      ],
+      "difficulty": "profundezas",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 34:28, o que Moisés escreveu nas tábuas além das palavras da ___?",
+      "verseRef": "Êxodo 34:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "canção"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as palavras da aliança, as dez palavras",
+      "feedbackCorrect": "Escreveu as palavras da aliança.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "O termo é aliança."
+      },
+      "hint": "Palavras da ___, as dez palavras.",
+      "learningObjective": "Lembrar o termo da aliança.",
+      "evidence": [
+        "Êxodo 34:28"
+      ],
+      "difficulty": "profundezas",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 34:33 a 2 Coríntios 3:13?",
+      "verseRef": "Êxodo 34:33",
+      "passageA": {
+        "ref": "Êxodo 34:33"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 3:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Véu sobre o rosto"
+        },
+        {
+          "id": "b",
+          "text": "Altar de bronze"
+        },
+        {
+          "id": "c",
+          "text": "Nuvem no dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pôs um véu sobre o rosto",
+      "feedbackCorrect": "Paulo cita o véu que Moisés punha na face.",
+      "feedbackWrong": {
+        "b": "O elo é o véu.",
+        "c": "Não é a nuvem aqui."
+      },
+      "hint": "O que Moisés punha no rosto?",
+      "learningObjective": "Ligar o véu em Êxodo e Paulo.",
+      "evidence": [
+        "Êxodo 34:33",
+        "2 Coríntios 3:13"
+      ],
+      "difficulty": "profundezas",
+      "type": "connect"
+    }
+  ]
+}

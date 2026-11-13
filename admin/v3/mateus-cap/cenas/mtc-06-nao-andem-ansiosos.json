@@ -1,0 +1,923 @@
+{
+  "study": {
+    "slug": "mtc-06-nao-andem-ansiosos",
+    "passageRef": "Mateus 6:25–30",
+    "passageText": "Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes? Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas? E qual de vocês, por mais que se preocupe, pode acrescentar um côvado à duração da sua vida? E quanto à roupa, por que vocês estão ansiosos? Observem como os lírios do campo crescem; eles não trabalham nem fiam. E eu, porém, lhes afirmo que nem mesmo Salomão, em toda a sua glória, se vestiu como qualquer um deles. Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no forno, quanto mais a vocês, homens de pequena fé?",
+    "passages": [
+      {
+        "ref": "Mateus 6:25–30",
+        "text": "Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes? Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas? E qual de vocês, por mais que se preocupe, pode acrescentar um côvado à duração da sua vida? E quanto à roupa, por que vocês estão ansiosos? Observem como os lírios do campo crescem; eles não trabalham nem fiam. E eu, porém, lhes afirmo que nem mesmo Salomão, em toda a sua glória, se vestiu como qualquer um deles. Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no forno, quanto mais a vocês, homens de pequena fé?"
+      },
+      {
+        "ref": "Mateus 6:31–34",
+        "text": "Portanto, não se preocupem, dizendo: O que comeremos? O que beberemos? Ou com que nos vestiremos? Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas; Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas. Não se preocupem com o amanhã, pois o amanhã trará suas próprias preocupações; basta a cada dia o seu próprio mal."
+      }
+    ],
+    "context": "No Sermão do Monte, Jesus já falou do tesouro no céu e de servir a Deus, não às riquezas. Em seguida, ele trata da preocupação com comida, bebida e roupa.",
+    "keyword": "ansiosos",
+    "keywordGloss": "É a preocupação com comida, bebida, roupa e o dia de amanhã, da qual Jesus fala.",
+    "focusQuestion": "O que toma o primeiro lugar quando você pensa no que falta para amanhã?",
+    "reflectionPrompts": [
+      "O cuidado nas aves",
+      "O reino em primeiro",
+      "O mal de um dia"
+    ],
+    "facts": [
+      {
+        "text": "Jesus manda não ficar ansioso pela vida, quanto à comida e à bebida, nem pelo corpo, quanto à roupa.",
+        "evidenceRef": "Mateus 6:25",
+        "evidenceSpan": "não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão"
+      },
+      {
+        "text": "Nem mesmo Salomão, em toda a sua glória, se vestiu como os lírios.",
+        "evidenceRef": "Mateus 6:29",
+        "evidenceSpan": "nem mesmo Salomão, em toda a sua glória, se vestiu como qualquer um deles"
+      },
+      {
+        "text": "Jesus dirige a comparação da erva a homens de pequena fé.",
+        "evidenceRef": "Mateus 6:30",
+        "evidenceSpan": "quanto mais a vocês, homens de pequena fé"
+      },
+      {
+        "text": "O Pai celeste sabe que vocês necessitam de todas essas coisas.",
+        "evidenceRef": "Mateus 6:32",
+        "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas"
+      },
+      {
+        "text": "Jesus manda buscar em primeiro lugar o reino de Deus e a sua justiça.",
+        "evidenceRef": "Mateus 6:33",
+        "evidenceSpan": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça"
+      },
+      {
+        "text": "O amanhã trará suas próprias preocupações.",
+        "evidenceRef": "Mateus 6:34",
+        "evidenceSpan": "o amanhã trará suas próprias preocupações"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ansiosos",
+        "gloss": "Nomeia a preocupação com a vida, o corpo e a roupa, que Jesus pede para deixar."
+      },
+      {
+        "term": "reino",
+        "gloss": "O que deve ser buscado em primeiro lugar, junto com a justiça de Deus."
+      },
+      {
+        "term": "justiça",
+        "gloss": "Acompanha o reino na busca que Jesus coloca antes das outras coisas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus proíbe a ansiedade com o dia a dia",
+        "evidenceRef": "Mateus 6:25"
+      },
+      {
+        "label": "As aves revelam o cuidado do Pai",
+        "evidenceRef": "Mateus 6:26"
+      },
+      {
+        "label": "A erva mostra o vestir de Deus",
+        "evidenceRef": "Mateus 6:30"
+      },
+      {
+        "label": "O reino passa à frente do restante",
+        "evidenceRef": "Mateus 6:33"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "As aves não semeiam, não colhem nem ajuntam em celeiros; contudo, o Pai celestial as sustenta.",
+        "marker": "contudo",
+        "evidenceRef": "Mateus 6:26"
+      },
+      {
+        "kind": "causa",
+        "text": "Jesus pede para não se preocupar porque o Pai celeste sabe que vocês necessitam dessas coisas.",
+        "marker": "Pois",
+        "evidenceRef": "Mateus 6:32"
+      },
+      {
+        "kind": "resultado",
+        "text": "Buscar primeiro o reino de Deus e a sua justiça resulta em que as outras coisas são acrescentadas.",
+        "marker": "acrescentadas",
+        "evidenceRef": "Mateus 6:33"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 12:24",
+        "bridge": "Deus sustenta as aves",
+        "text": "Observem os corvos, que não semeiam, nem ceifam, não têm despensa nem celeiro; no entanto, Deus os sustenta. Quanto mais valem vocês do que as aves!"
+      },
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Ele se importa com vocês",
+        "text": "Lancem sobre ele toda a sua preocupação porque ele se importa com vocês."
+      },
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Não viver ansioso",
+        "text": "Não estejam ansiosos por nada; em tudo, porém, apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus manda parar de trabalhar, porque as aves não semeiam nem colhem.",
+        "why": "As aves mostram o cuidado do Pai, não o fim do trabalho. O assunto do trecho é a ansiedade."
+      },
+      {
+        "text": "Quem busca o reino recebe tudo o que deseja, além de comida e roupa.",
+        "why": "As coisas acrescentadas são as que o texto nomeou antes: comida, bebida e roupa."
+      },
+      {
+        "text": "Não se preocupar com o amanhã significa que o amanhã não traz problemas.",
+        "why": "Jesus diz que o amanhã trará suas próprias preocupações; o pedido é não antecipar esse mal."
+      }
+    ],
+    "centralInsight": "Quem busca primeiro o Reino pode descansar no cuidado do Pai.",
+    "anchorQuestion": "O que Mateus 6:33 manda buscar em primeiro lugar?",
+    "relatedVerses": [
+      {
+        "reference": "Lucas 12:24",
+        "reason": "Deus sustenta as aves"
+      },
+      {
+        "reference": "1 Pedro 5:7",
+        "reason": "Ele se importa com vocês"
+      },
+      {
+        "reference": "Filipenses 4:6",
+        "reason": "Não viver ansioso"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "mateus-cap-sem-mtc-06-nao-andem-ansiosos-01",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Mateus 6:29, Salomão em toda a sua glória se vestiu como qualquer um deles.",
+      "prompt": "Em Mateus 6:29, Salomão em toda a sua glória se vestiu como qualquer um deles.",
+      "cue": "Em Mateus 6:29, Salomão em toda a sua glória se vestiu como qualquer um deles.",
+      "verseRef": "Mateus 6:29",
+      "passageText": "E eu, porém, lhes afirmo que nem mesmo Salomão, em toda a sua glória, se vestiu como qualquer um deles.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "nem mesmo Salomão, em toda a sua glória, se vestiu como qualquer um deles",
+      "feedbackCorrect": "O texto nega a comparação: nem Salomão se vestiu como qualquer um deles.",
+      "feedbackWrong": {
+        "true": "A frase começa com nem mesmo: Salomão não se vestiu como eles."
+      },
+      "hint": "Olhe as duas palavras que vêm antes de Salomão.",
+      "learningObjective": "Observar que o texto nega a Salomão a veste dos lírios.",
+      "evidence": [
+        "Mateus 6:29"
+      ]
+    },
+    {
+      "id": "mateus-cap-sem-mtc-06-nao-andem-ansiosos-02",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Mateus 6:28, toque o que Jesus manda observar no campo.",
+      "prompt": "Em Mateus 6:28, toque o que Jesus manda observar no campo.",
+      "cue": "Em Mateus 6:28, toque o que Jesus manda observar no campo.",
+      "verseRef": "Mateus 6:28",
+      "passageText": "E quanto à roupa, por que vocês estão ansiosos? Observem como os lírios do campo crescem; eles não trabalham nem fiam.",
+      "options": [
+        {
+          "id": "a",
+          "text": "lírios do campo"
+        },
+        {
+          "id": "b",
+          "text": "estão ansiosos"
+        },
+        {
+          "id": "c",
+          "text": "não trabalham"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Observem como os lírios do campo crescem",
+      "feedbackCorrect": "Jesus manda observar os lírios do campo, que crescem sem trabalhar nem fiar.",
+      "feedbackWrong": {
+        "b": "Isso nomeia o problema dos ouvintes, não o que deve ser observado.",
+        "c": "Isso diz o que os lírios não fazem; o objeto do olhar são eles."
+      },
+      "hint": "Procure o que cresce e é o objeto do verbo observar.",
+      "learningObjective": "Identificar o que Jesus manda observar no campo.",
+      "evidence": [
+        "Mateus 6:28"
+      ]
+    },
+    {
+      "id": "mateus-cap-sem-mtc-06-nao-andem-ansiosos-03",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Mateus 6:25, Jesus manda não ficar ansioso com o quê?",
+      "prompt": "Segundo Mateus 6:25, Jesus manda não ficar ansioso com o quê?",
+      "cue": "Segundo Mateus 6:25, Jesus manda não ficar ansioso com o quê?",
+      "verseRef": "Mateus 6:25",
+      "passageText": "Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "O reino e a justiça de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Um côvado a mais na duração da vida"
+        },
+        {
+          "id": "c",
+          "text": "Comida, bebida e a roupa do corpo"
+        },
+        {
+          "id": "d",
+          "text": "A glória de Salomão e os lírios"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão",
+      "feedbackCorrect": "O versículo aponta comida, bebida e roupa como motivo da ansiedade.",
+      "feedbackWrong": {
+        "a": "Reino e justiça aparecem em Mateus 6:33, como o que vem primeiro.",
+        "b": "O côvado está em Mateus 6:27: a preocupação não o acrescenta.",
+        "d": "Salomão e os lírios entram depois, na comparação sobre a roupa."
+      },
+      "hint": "Leia o que vem logo depois da palavra ansiosos.",
+      "learningObjective": "Reconhecer com o que Jesus manda não ficar ansioso.",
+      "evidence": [
+        "Mateus 6:25"
+      ]
+    },
+    {
+      "id": "mateus-cap-sem-mtc-06-nao-andem-ansiosos-04",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Mateus 6:33 na ordem do texto.",
+      "prompt": "Monte Mateus 6:33 na ordem do texto.",
+      "cue": "Monte Mateus 6:33 na ordem do texto.",
+      "verseRef": "Mateus 6:33",
+      "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Busquem, pois, em primeiro lugar"
+        },
+        {
+          "id": "b",
+          "text": "o reino de Deus e a sua justiça"
+        },
+        {
+          "id": "c",
+          "text": "e todas essas coisas lhes serão acrescentadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Busquem, pois, em primeiro lugar",
+      "feedbackCorrect": "A frase começa na busca, segue pelo reino e termina no que é acrescentado.",
+      "feedbackWrong": {
+        "default": "Comece em Busquem; o reino fica no meio e o acréscimo no fim."
+      },
+      "hint": "Siga a frase do versículo, do início até a última palavra.",
+      "learningObjective": "Reconhecer a ordem da frase de Mateus 6:33.",
+      "evidence": [
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "mateus-cap-sem-mtc-06-nao-andem-ansiosos-05",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Mateus 6:30, para onde a erva é lançada no dia seguinte?",
+      "prompt": "Em Mateus 6:30, para onde a erva é lançada no dia seguinte?",
+      "cue": "Em Mateus 6:30, para onde a erva é lançada no dia seguinte?",
+      "verseRef": "Mateus 6:30",
+      "passageText": "Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no forno, quanto mais a vocês, homens de pequena fé?",
+      "template": "Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no ___, quanto mais a vocês, homens de pequena fé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "celeiro"
+        },
+        {
+          "id": "b",
+          "text": "forno"
+        },
+        {
+          "id": "c",
+          "text": "fogo"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "amanhã é lançada no forno",
+      "feedbackCorrect": "A erva que hoje existe amanhã é lançada no forno, diz o texto.",
+      "feedbackWrong": {
+        "a": "Celeiro é das aves; a erva do campo é lançada no forno.",
+        "c": "A imagem não é o fogo solto; o texto diz que a erva é lançada no forno."
+      },
+      "hint": "Veja o lugar nomeado depois de lançada.",
+      "learningObjective": "Lembrar para onde a erva do campo é lançada.",
+      "evidence": [
+        "Mateus 6:30"
+      ]
+    },
+    {
+      "id": "mateus-cap-sem-mtc-06-nao-andem-ansiosos-06",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que liga Mateus 6:32 a este contexto?",
+      "prompt": "O que liga Mateus 6:32 a este contexto?",
+      "cue": "O que liga Mateus 6:32 a este contexto?",
+      "verseRef": "Mateus 6:32",
+      "passageText": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+      "passageA": {
+        "ref": "Mateus 6:32",
+        "text": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus fala a quem se preocupa com comida, bebida e roupa, e lembra que o Pai já conhece essa necessidade."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A erva dura para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Salomão veste os lírios"
+        },
+        {
+          "id": "c",
+          "text": "O Pai conhece a necessidade"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas",
+      "feedbackCorrect": "O versículo afirma que o Pai celeste sabe de todas essas necessidades.",
+      "feedbackWrong": {
+        "a": "A erva dura pouco: amanhã ela é lançada no forno.",
+        "b": "Salomão não se vestiu como os lírios; o foco aqui é a necessidade."
+      },
+      "hint": "Veja o que o versículo diz que o Pai já sabe.",
+      "learningObjective": "Ligar Mateus 6:32 ao fato de que o Pai conhece a necessidade.",
+      "evidence": [
+        "Mateus 6:32"
+      ]
+    },
+    {
+      "id": "mateus-cap-cam-mtc-06-nao-andem-ansiosos-01",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Mateus 6:31–32, Jesus pede para não se preocupar porque o Pai celeste sabe das necessidades.",
+      "prompt": "Em Mateus 6:31–32, Jesus pede para não se preocupar porque o Pai celeste sabe das necessidades.",
+      "cue": "Em Mateus 6:31–32, Jesus pede para não se preocupar porque o Pai celeste sabe das necessidades.",
+      "verseRef": "Mateus 6:31–32",
+      "passageText": "Portanto, não se preocupem, dizendo: O que comeremos? O que beberemos? Ou com que nos vestiremos? Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas",
+      "feedbackCorrect": "O pois de Mateus 6:32 dá a causa: o Pai já sabe do que vocês necessitam.",
+      "feedbackWrong": {
+        "false": "As duas frases se ligam: não se preocupem, pois o Pai já conhece a necessidade."
+      },
+      "hint": "Veja a primeira palavra de Mateus 6:32.",
+      "learningObjective": "Compreender que o saber do Pai é a causa do pedido para não se preocupar.",
+      "evidence": [
+        "Mateus 6:31–32"
+      ]
+    },
+    {
+      "id": "mateus-cap-cam-mtc-06-nao-andem-ansiosos-02",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Mateus 6:26, toque a palavra que marca o contraste no meio do versículo.",
+      "prompt": "Em Mateus 6:26, toque a palavra que marca o contraste no meio do versículo.",
+      "cue": "Em Mateus 6:26, toque a palavra que marca o contraste no meio do versículo.",
+      "verseRef": "Mateus 6:26",
+      "passageText": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "celeiros"
+        },
+        {
+          "id": "b",
+          "text": "contudo"
+        },
+        {
+          "id": "c",
+          "text": "Observem"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "contudo, o seu Pai celestial as sustenta",
+      "feedbackCorrect": "Contudo vira o sentido: elas não ajuntam, e ainda assim o Pai as sustenta.",
+      "feedbackWrong": {
+        "a": "Celeiros é o lugar que as aves não usam, não a virada do contraste.",
+        "c": "Observem abre o convite a olhar; o contraste vem depois, no meio."
+      },
+      "hint": "Procure uma palavra curta depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste no versículo.",
+      "evidence": [
+        "Mateus 6:26"
+      ]
+    },
+    {
+      "id": "mateus-cap-cam-mtc-06-nao-andem-ansiosos-03",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Qual relação Mateus 6:30 estabelece entre a erva e as pessoas?",
+      "prompt": "Qual relação Mateus 6:30 estabelece entre a erva e as pessoas?",
+      "cue": "Qual relação Mateus 6:30 estabelece entre a erva e as pessoas?",
+      "verseRef": "Mateus 6:30",
+      "passageText": "Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no forno, quanto mais a vocês, homens de pequena fé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se Deus veste a erva, cuida ainda mais das pessoas"
+        },
+        {
+          "id": "b",
+          "text": "Deus veste a erva para mostrar que ela fica"
+        },
+        {
+          "id": "c",
+          "text": "A erva vale mais, porque dura só um dia"
+        },
+        {
+          "id": "d",
+          "text": "As pessoas devem viver sem roupa, como a erva"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "quanto mais a vocês, homens de pequena fé",
+      "feedbackCorrect": "A comparação sobe da erva às pessoas: o cuidado de Deus é maior.",
+      "feedbackWrong": {
+        "b": "A erva não fica: amanhã ela é lançada no forno.",
+        "c": "A erva é o exemplo menor: hoje existe e amanhã vai para o forno.",
+        "d": "Jesus não pede vida sem roupa; ele compara o cuidado de Deus."
+      },
+      "hint": "Repare na expressão quanto mais, no fim do versículo.",
+      "learningObjective": "Relacionar o vestir da erva ao cuidado maior com as pessoas.",
+      "evidence": [
+        "Mateus 6:30"
+      ]
+    },
+    {
+      "id": "mateus-cap-cam-mtc-06-nao-andem-ansiosos-04",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Qual é a sequência da fala de Jesus neste trecho?",
+      "prompt": "Qual é a sequência da fala de Jesus neste trecho?",
+      "cue": "Qual é a sequência da fala de Jesus neste trecho?",
+      "verseRef": "Mateus 6:25–26",
+      "passageText": "Por isso, eu digo a vocês: não fiquem ansiosos pela vida, quanto ao que comerão ou beberão, nem pelo seu corpo, quanto ao que vestirão. Não é a vida mais do que o alimento, e o corpo é mais do que as vestes? Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus proíbe a ansiedade com o dia a dia"
+        },
+        {
+          "id": "b",
+          "text": "As aves revelam o cuidado do Pai"
+        },
+        {
+          "id": "c",
+          "text": "A erva mostra o vestir de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "não fiquem ansiosos pela vida",
+      "feedbackCorrect": "Primeiro a proibição, depois as aves e então o vestir da erva.",
+      "feedbackWrong": {
+        "default": "A fala abre na proibição, passa pelas aves e chega à erva."
+      },
+      "hint": "Comece pelo que Jesus proíbe, antes das comparações.",
+      "learningObjective": "Acompanhar os movimentos da fala, da proibição à erva.",
+      "evidence": [
+        "Mateus 6:25",
+        "Mateus 6:26",
+        "Mateus 6:30"
+      ]
+    },
+    {
+      "id": "mateus-cap-cam-mtc-06-nao-andem-ansiosos-05",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Mateus 6:33, o que será feito com essas coisas depois da busca?",
+      "prompt": "Em Mateus 6:33, o que será feito com essas coisas depois da busca?",
+      "cue": "Em Mateus 6:33, o que será feito com essas coisas depois da busca?",
+      "verseRef": "Mateus 6:33",
+      "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+      "template": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "acrescentadas"
+        },
+        {
+          "id": "b",
+          "text": "tiradas"
+        },
+        {
+          "id": "c",
+          "text": "cobradas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "essas coisas lhes serão acrescentadas",
+      "feedbackCorrect": "Elas serão acrescentadas a quem busca primeiro o reino e a justiça.",
+      "feedbackWrong": {
+        "b": "O texto não fala em perda; diz que essas coisas serão acrescentadas.",
+        "c": "Não há cobrança: as coisas são acrescentadas, não cobradas."
+      },
+      "hint": "Olhe a última palavra do versículo.",
+      "learningObjective": "Lembrar o resultado prometido a quem busca o reino primeiro.",
+      "evidence": [
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "mateus-cap-cam-mtc-06-nao-andem-ansiosos-06",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Mateus 6:26 a Lucas 12:24?",
+      "prompt": "O que liga Mateus 6:26 a Lucas 12:24?",
+      "cue": "O que liga Mateus 6:26 a Lucas 12:24?",
+      "verseRef": "Mateus 6:26",
+      "passageText": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?",
+      "passageA": {
+        "ref": "Mateus 6:26",
+        "text": "Observem as aves do céu: não semeiam, não colhem, nem ajuntam em celeiros; contudo, o seu Pai celestial as sustenta. Não têm vocês muito mais valor do que elas?"
+      },
+      "passageB": {
+        "ref": "Lucas 12:24",
+        "text": "Observem os corvos, que não semeiam, nem ceifam, não têm despensa nem celeiro; no entanto, Deus os sustenta. Quanto mais valem vocês do que as aves!"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aves que enchem celeiros"
+        },
+        {
+          "id": "b",
+          "text": "Deus sustenta as aves"
+        },
+        {
+          "id": "c",
+          "text": "Pão ganho no trabalho"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "o seu Pai celestial as sustenta",
+      "feedbackCorrect": "Nos dois textos, Deus sustenta aves que não ajuntam em celeiro.",
+      "feedbackWrong": {
+        "a": "Os dois textos negam isso: elas não enchem celeiro nem despensa.",
+        "c": "O elo não é o trabalho; é o sustento de quem não semeia."
+      },
+      "hint": "Compare o que os dois textos dizem sobre as aves.",
+      "learningObjective": "Relacionar o sustento das aves em Mateus e em Lucas.",
+      "evidence": [
+        "Mateus 6:26",
+        "Lucas 12:24"
+      ]
+    },
+    {
+      "id": "mateus-cap-pro-mtc-06-nao-andem-ansiosos-01",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Mateus 6:34, pedir para não se preocupar com o amanhã não nega que o amanhã trará preocupações.",
+      "prompt": "Em Mateus 6:34, pedir para não se preocupar com o amanhã não nega que o amanhã trará preocupações.",
+      "cue": "Em Mateus 6:34, pedir para não se preocupar com o amanhã não nega que o amanhã trará preocupações.",
+      "verseRef": "Mateus 6:34",
+      "passageText": "Não se preocupem com o amanhã, pois o amanhã trará suas próprias preocupações; basta a cada dia o seu próprio mal.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "o amanhã trará suas próprias preocupações",
+      "feedbackCorrect": "Jesus afirma as duas coisas: não antecipar o amanhã, que trará preocupações.",
+      "feedbackWrong": {
+        "false": "O versículo diz que o amanhã trará suas próprias preocupações."
+      },
+      "hint": "Leia o que Jesus diz que o amanhã vai trazer.",
+      "learningObjective": "Interpretar o pedido sobre o amanhã sem apagar as preocupações dele.",
+      "evidence": [
+        "Mateus 6:34"
+      ]
+    },
+    {
+      "id": "mateus-cap-pro-mtc-06-nao-andem-ansiosos-02",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Mateus 6:30, toque a expressão que qualifica a fé no fim do versículo.",
+      "prompt": "Em Mateus 6:30, toque a expressão que qualifica a fé no fim do versículo.",
+      "cue": "Em Mateus 6:30, toque a expressão que qualifica a fé no fim do versículo.",
+      "verseRef": "Mateus 6:30",
+      "passageText": "Pois, se Deus veste assim a erva do campo, que hoje existe e amanhã é lançada no forno, quanto mais a vocês, homens de pequena fé?",
+      "options": [
+        {
+          "id": "a",
+          "text": "erva do campo"
+        },
+        {
+          "id": "b",
+          "text": "no forno"
+        },
+        {
+          "id": "c",
+          "text": "pequena fé"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "homens de pequena fé",
+      "feedbackCorrect": "Jesus chama os ouvintes de homens de pequena fé ao falar do cuidado.",
+      "feedbackWrong": {
+        "a": "A erva é o exemplo menor da comparação, não o nome da fé.",
+        "b": "O forno diz o destino da erva, não como Jesus qualifica a fé."
+      },
+      "hint": "Olhe como Jesus chama os ouvintes na última linha.",
+      "learningObjective": "Localizar a expressão que qualifica a fé dos ouvintes.",
+      "evidence": [
+        "Mateus 6:30"
+      ]
+    },
+    {
+      "id": "mateus-cap-pro-mtc-06-nao-andem-ansiosos-03",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Mateus 6:33–34 sustenta?",
+      "prompt": "Que leitura Mateus 6:33–34 sustenta?",
+      "cue": "Que leitura Mateus 6:33–34 sustenta?",
+      "verseRef": "Mateus 6:33–34",
+      "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas. Não se preocupem com o amanhã, pois o amanhã trará suas próprias preocupações; basta a cada dia o seu próprio mal.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Viver sem peso, porque o amanhã não traz mal"
+        },
+        {
+          "id": "b",
+          "text": "Parar de trabalhar, como as aves que não semeiam"
+        },
+        {
+          "id": "c",
+          "text": "Buscar o reino primeiro e não carregar o mal de amanhã"
+        },
+        {
+          "id": "d",
+          "text": "Receber todo desejo, e não só comida e roupa"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "em primeiro lugar, o reino de Deus e a sua justiça",
+      "feedbackCorrect": "O reino vem primeiro, e o amanhã fica com as preocupações dele.",
+      "feedbackWrong": {
+        "a": "Jesus diz que o amanhã trará suas próprias preocupações.",
+        "b": "As aves ilustram o cuidado do Pai; não há ordem de parar de trabalhar.",
+        "d": "O acrescentado é comida, bebida e roupa, não qualquer desejo."
+      },
+      "hint": "Una a ordem do reino ao que o texto diz sobre o amanhã.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o reino e o amanhã.",
+      "evidence": [
+        "Mateus 6:33–34"
+      ]
+    },
+    {
+      "id": "mateus-cap-pro-mtc-06-nao-andem-ansiosos-04",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual lógica segue o convite de Jesus em Mateus 6:32–33?",
+      "prompt": "Qual lógica segue o convite de Jesus em Mateus 6:32–33?",
+      "cue": "Qual lógica segue o convite de Jesus em Mateus 6:32–33?",
+      "verseRef": "Mateus 6:32–33",
+      "passageText": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas; Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Pai já sabe do que se precisa"
+        },
+        {
+          "id": "b",
+          "text": "O reino e a justiça vêm primeiro"
+        },
+        {
+          "id": "c",
+          "text": "As outras coisas são acrescentadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas",
+      "feedbackCorrect": "O Pai já sabe a necessidade; o reino vem primeiro; o resto é acrescentado.",
+      "feedbackWrong": {
+        "default": "Parta do que o Pai já sabe e só no fim chegue ao que é acrescentado."
+      },
+      "hint": "Mateus 6:32 diz o que o Pai sabe, antes da ordem de buscar.",
+      "learningObjective": "Ordenar a lógica do convite, do saber do Pai ao acréscimo.",
+      "evidence": [
+        "Mateus 6:32",
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "mateus-cap-pro-mtc-06-nao-andem-ansiosos-05",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Mateus 6:33, o que acompanha o reino de Deus nessa busca?",
+      "prompt": "Em Mateus 6:33, o que acompanha o reino de Deus nessa busca?",
+      "cue": "Em Mateus 6:33, o que acompanha o reino de Deus nessa busca?",
+      "verseRef": "Mateus 6:33",
+      "passageText": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas.",
+      "template": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua ___, e todas essas coisas lhes serão acrescentadas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "força"
+        },
+        {
+          "id": "c",
+          "text": "justiça"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o reino de Deus e a sua justiça",
+      "feedbackCorrect": "Junto com o reino, Jesus manda buscar a justiça de Deus em primeiro lugar.",
+      "feedbackWrong": {
+        "a": "A glória é de Salomão, em Mateus 6:29; aqui a palavra é justiça.",
+        "b": "O versículo não fala em força; fala na justiça de Deus."
+      },
+      "hint": "Leia o substantivo que vem depois de sua.",
+      "learningObjective": "Lembrar o termo que acompanha o reino na busca.",
+      "evidence": [
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "mateus-cap-pro-mtc-06-nao-andem-ansiosos-06",
+      "trail": "mateus-cap",
+      "section": "mtc-06-nao-andem-ansiosos",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+      "prompt": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+      "cue": "O que liga Mateus 6:32 a 1 Pedro 5:7?",
+      "verseRef": "Mateus 6:32",
+      "passageText": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;",
+      "passageA": {
+        "ref": "Mateus 6:32",
+        "text": "Pois o seu Pai celeste sabe que vocês necessitam de todas essas coisas;"
+      },
+      "passageB": {
+        "ref": "1 Pedro 5:7",
+        "text": "Lancem sobre ele toda a sua preocupação porque ele se importa com vocês."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amanhã livre de mal"
+        },
+        {
+          "id": "b",
+          "text": "Preocupação sem o Pai"
+        },
+        {
+          "id": "c",
+          "text": "Ele se importa com vocês"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o seu Pai celeste sabe que vocês necessitam de todas essas coisas",
+      "feedbackCorrect": "O Pai que já sabe, em Mateus, combina com o Deus que se importa, em Pedro.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois diz que o amanhã fica livre de mal.",
+        "b": "Os dois textos aproximam a pessoa do cuidado, não a afastam do Pai."
+      },
+      "hint": "Leia em Pedro o motivo para lançar a preocupação.",
+      "learningObjective": "Ligar o Pai que sabe ao Deus que se importa com a preocupação.",
+      "evidence": [
+        "Mateus 6:32",
+        "1 Pedro 5:7"
+      ]
+    }
+  ]
+}

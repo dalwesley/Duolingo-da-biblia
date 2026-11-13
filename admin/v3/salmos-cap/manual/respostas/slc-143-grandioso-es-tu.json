@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Salmos 145:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 145:1–6"
+      },
+      {
+        "ref": "Salmos 145:7–13"
+      }
+    ],
+    "context": "Eu te exaltarei, meu Deus; cada geração louvará as tuas obras. O Senhor é bom para todos.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Grandioso és tu",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Exaltarei-te, ó Deus meu e Rei; bendirei o teu nome para todo o sempre.",
+        "evidenceRef": "Salmos 145:1",
+        "evidenceSpan": "Exaltarei-te"
+      },
+      {
+        "text": "Todos os dias te bendirei e exaltarei o.",
+        "evidenceRef": "Salmos 145:2",
+        "evidenceSpan": "Todos os dias te bendirei e exaltarei o"
+      },
+      {
+        "text": "Grande é o Senhor e extremamente digno de.",
+        "evidenceRef": "Salmos 145:3",
+        "evidenceSpan": "Grande é o Senhor e extremamente digno de"
+      },
+      {
+        "text": "Uma geração louvará as tuas obras e anunciará.",
+        "evidenceRef": "Salmos 145:4",
+        "evidenceSpan": "Uma geração louvará as tuas obras e anunciará"
+      },
+      {
+        "text": "Meditarei no glorioso esplendor da tua majestade e.",
+        "evidenceRef": "Salmos 145:5",
+        "evidenceSpan": "Meditarei no glorioso esplendor da tua majestade e"
+      },
+      {
+        "text": "Falarão do poder das tuas obras terríveis e.",
+        "evidenceRef": "Salmos 145:6",
+        "evidenceSpan": "Falarão do poder das tuas obras terríveis e"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Exaltarei-te",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Exaltarei-te ó deus meu e rei",
+        "evidenceRef": "Salmos 145:1"
+      },
+      {
+        "label": "Todos os dias te bendirei e",
+        "evidenceRef": "Salmos 145:2"
+      },
+      {
+        "label": "Grande é o senhor e extremamente",
+        "evidenceRef": "Salmos 145:3"
+      },
+      {
+        "label": "Uma geração louvará as tuas obras",
+        "evidenceRef": "Salmos 145:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 145:8"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Para que\".",
+        "marker": "Para que",
+        "evidenceRef": "Salmos 145:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 27:1",
+        "bridge": "Luz e salvação"
+      },
+      {
+        "ref": "Salmos 90:1",
+        "bridge": "Morada em todas as gerações"
+      },
+      {
+        "ref": "Salmos 121:2",
+        "bridge": "Socorro vem do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Reinado eterno e mão aberta: Deus sustenta os que caem e ouve o clamor."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Reinado eterno e mão aberta: Deus sustenta os que caem e ouve o clamor.",
+    "anchorQuestion": "O que Salmos 145:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 145:1, exaltarei-te.",
+      "verseRef": "Salmos 145:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 145:1 afirma.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 145:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 145:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exaltarei-te"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "O versículo destaca «Exaltarei-te».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 145:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 145:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grande é o Senhor e extremamente digno"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Grande é o Senhor e extremamente digno de",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 145:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 145:1 na ordem do texto.",
+      "verseRef": "Salmos 145:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exaltarei-te"
+        },
+        {
+          "id": "b",
+          "text": "Deus meu"
+        },
+        {
+          "id": "c",
+          "text": "e Rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 145:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 145:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "geração"
+        },
+        {
+          "id": "b",
+          "text": "Exaltarei-te"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "geração",
+      "feedbackCorrect": "A palavra do versículo é «geração».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 145:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 145:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 145:1",
+      "passageA": {
+        "ref": "Salmos 145:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Eu te exaltarei, meu Deus; cada geração louvará as tuas obras. O Senhor é bom para todos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 145:8, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 145:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 145:8 afirma.",
+      "evidence": [
+        "Salmos 145:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 145:8, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 145:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "Benigno"
+        },
+        {
+          "id": "c",
+          "text": "misericordioso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 145:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 145:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 145:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Uma geração louvará as tuas obras e anunciará",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 145:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 145:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exaltarei-te ó deus meu e rei"
+        },
+        {
+          "id": "b",
+          "text": "Todos os dias te bendirei"
+        },
+        {
+          "id": "c",
+          "text": "Grande é o senhor e extremamente"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 145:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 145:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grande"
+        },
+        {
+          "id": "b",
+          "text": "Exaltarei-te"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Grande",
+      "feedbackCorrect": "A palavra do versículo é «Grande».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 145:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 145:1 a Salmos 27:1.",
+      "verseRef": "Salmos 145:1",
+      "passageA": {
+        "ref": "Salmos 145:1"
+      },
+      "passageB": {
+        "ref": "Salmos 27:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luz e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 145:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 145:13 afirma.",
+      "evidence": [
+        "Salmos 145:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 145:13, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 145:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "teu"
+        },
+        {
+          "id": "b",
+          "text": "reino"
+        },
+        {
+          "id": "c",
+          "text": "eterno"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "teu",
+      "feedbackCorrect": "O versículo destaca «teu».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 145:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 145:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 145:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meditarei no glorioso esplendor da tua majestade e",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 145:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 145:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 145:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 145:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Meditarei"
+        },
+        {
+          "id": "b",
+          "text": "Exaltarei-te"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meditarei",
+      "feedbackCorrect": "A palavra do versículo é «Meditarei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 145:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 145:1 a Salmos 90:1.",
+      "verseRef": "Salmos 145:1",
+      "passageA": {
+        "ref": "Salmos 145:1"
+      },
+      "passageB": {
+        "ref": "Salmos 90:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Morada em todas as gerações"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Exaltarei-te",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 145:1"
+      ]
+    }
+  ]
+}

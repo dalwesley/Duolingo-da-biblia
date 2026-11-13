@@ -1,0 +1,509 @@
+{
+  "study": {
+    "passageRef": "Provérbios 10:1–6",
+    "passages": [
+      { "ref": "Provérbios 10:1–6" },
+      { "ref": "Provérbios 10:7–12" }
+    ],
+    "context": "Provérbios de Salomão começa contrastando filho sábio e insensato, justiça e violência, boca que dá vida e ódio que provoca contendas.",
+    "keyword": "Boca",
+    "keywordGloss": "O que sai da boca revela o caminho: manancial de vida ou violência escondida.",
+    "focusQuestion": "O que a sua boca tem revelado sobre o caminho do seu coração?",
+    "reflectionPrompts": [
+      "Filho sábio",
+      "Boca do justo",
+      "Amor que cobre"
+    ],
+    "facts": [
+      {
+        "text": "O filho sábio alegra o pai; o insensato entristece a mãe.",
+        "evidenceRef": "Provérbios 10:1",
+        "evidenceSpan": "O filho sábio alegra a seu pai"
+      },
+      {
+        "text": "A justiça livra da morte.",
+        "evidenceRef": "Provérbios 10:2",
+        "evidenceSpan": "a justiça livra da morte"
+      },
+      {
+        "text": "O Senhor não deixa a alma do justo com fome.",
+        "evidenceRef": "Provérbios 10:3",
+        "evidenceSpan": "O Senhor não permite que a alma do justo tenha fome"
+      },
+      {
+        "text": "A boca do justo é manancial de vida.",
+        "evidenceRef": "Provérbios 10:11",
+        "evidenceSpan": "A boca do justo é manancial de vida"
+      },
+      {
+        "text": "O ódio provoca contendas.",
+        "evidenceRef": "Provérbios 10:12",
+        "evidenceSpan": "O ódio provoca contendas"
+      },
+      {
+        "text": "O amor cobre todas as transgressões.",
+        "evidenceRef": "Provérbios 10:12",
+        "evidenceSpan": "o amor cobre todas as transgressões"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justiça",
+        "gloss": "O que livra da morte, em contraste com tesouros da impiedade."
+      },
+      {
+        "term": "ódio",
+        "gloss": "O que provoca contendas, oposto ao amor que cobre."
+      },
+      {
+        "term": "integridade",
+        "gloss": "Caminho de quem anda seguro, sem distorcer os passos."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Filho sábio e diligente",
+        "evidenceRef": "Provérbios 10:1–5"
+      },
+      {
+        "label": "Bênção e memória do justo",
+        "evidenceRef": "Provérbios 10:6–7"
+      },
+      {
+        "label": "Boca, integridade e violência",
+        "evidenceRef": "Provérbios 10:8–11"
+      },
+      {
+        "label": "Ódio e amor",
+        "evidenceRef": "Provérbios 10:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Ódio provoca contendas; amor cobre transgressões.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 10:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "Boca do justo dá vida; boca dos perversos esconde violência.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 10:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem distorce os caminhos será revelado.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 10:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Tiago 3:6",
+        "bridge": "Língua e caminho de fogo"
+      },
+      {
+        "ref": "1 Pedro 4:8",
+        "bridge": "Amor cobre pecados"
+      },
+      {
+        "ref": "Mateus 12:34",
+        "bridge": "Boca fala do coração"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A boca não importa se o coração for bom.",
+        "why": "10:11 liga a boca do justo a manancial de vida e a dos perversos à violência."
+      },
+      {
+        "text": "O ódio só fica no sentimento e não gera conflito.",
+        "why": "10:12 diz que o ódio provoca contendas."
+      },
+      {
+        "text": "Tesouros da impiedade valem tanto quanto a justiça.",
+        "why": "10:2 diz que esses tesouros de nada valem, mas a justiça livra da morte."
+      }
+    ],
+    "centralInsight": "A boca e o coração revelam o caminho: vida ou violência.",
+    "anchorQuestion": "Segundo Provérbios 10:12, o que o amor faz com as transgressões?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Provérbios 10:1, o filho sábio alegra a seu pai.",
+      "verseRef": "Provérbios 10:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "O filho sábio alegra a seu pai",
+      "feedbackCorrect": "O versículo abre: o filho sábio alegra a seu pai.",
+      "feedbackWrong": {
+        "false": "Releia 10:1: o filho sábio alegra a seu pai."
+      },
+      "hint": "Primeira metade do contraste.",
+      "learningObjective": "Observar o efeito do filho sábio.",
+      "evidence": ["Provérbios 10:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Provérbios 10:11, toque o que a boca do justo é.",
+      "verseRef": "Provérbios 10:11",
+      "options": [
+        { "id": "a", "text": "manancial de vida" },
+        { "id": "b", "text": "violência" },
+        { "id": "c", "text": "perversos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A boca do justo é manancial de vida",
+      "feedbackCorrect": "A boca do justo é chamada manancial de vida.",
+      "feedbackWrong": {
+        "b": "Violência está na boca dos perversos.",
+        "c": "Perversos são o contraste, não a imagem da boca justa."
+      },
+      "hint": "Imagem depois de \"é\".",
+      "learningObjective": "Identificar a imagem da boca justa.",
+      "evidence": ["Provérbios 10:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Provérbios 10:12, o que o ódio provoca?",
+      "verseRef": "Provérbios 10:12",
+      "options": [
+        { "id": "a", "text": "Contendas" },
+        { "id": "b", "text": "Tranquilidade" },
+        { "id": "c", "text": "Bênçãos sobre a cabeça" },
+        { "id": "d", "text": "Memória abençoada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O ódio provoca contendas",
+      "feedbackCorrect": "O texto diz que o ódio provoca contendas.",
+      "feedbackWrong": {
+        "b": "Tranquilidade não é fruto do ódio aqui.",
+        "c": "Bênçãos aparecem sobre o justo em 10:6.",
+        "d": "Memória abençoada é do justo em 10:7."
+      },
+      "hint": "Verbo ligado ao ódio.",
+      "learningObjective": "Observar o efeito do ódio.",
+      "evidence": ["Provérbios 10:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Provérbios 10:12 na ordem do texto.",
+      "verseRef": "Provérbios 10:12",
+      "options": [
+        { "id": "a", "text": "O ódio provoca contendas" },
+        { "id": "b", "text": "mas o amor cobre" },
+        { "id": "c", "text": "todas as transgressões" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O ódio provoca contendas",
+      "feedbackCorrect": "Primeiro o ódio e as contendas; depois o amor que cobre.",
+      "feedbackWrong": {
+        "default": "Comece pelo ódio; o amor vem depois do \"mas\"."
+      },
+      "hint": "O versículo abre com o ódio.",
+      "learningObjective": "Seguir a ordem do contraste em 10:12.",
+      "evidence": ["Provérbios 10:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Provérbios 10:2, o que livra da morte?",
+      "verseRef": "Provérbios 10:2",
+      "options": [
+        { "id": "a", "text": "justiça" },
+        { "id": "b", "text": "impiedade" },
+        { "id": "c", "text": "tesouros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a justiça livra da morte",
+      "feedbackCorrect": "A justiça livra da morte; os tesouros da impiedade de nada valem.",
+      "feedbackWrong": {
+        "b": "A impiedade não livra; a justiça livra.",
+        "c": "Os tesouros da impiedade de nada valem."
+      },
+      "hint": "Sujeito do verbo livra.",
+      "learningObjective": "Lembrar o que livra da morte.",
+      "evidence": ["Provérbios 10:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Provérbios 10:11 comunica que se liga a este contexto?",
+      "verseRef": "Provérbios 10:11",
+      "passageA": {
+        "ref": "Provérbios 10:11",
+        "text": "A boca do justo é manancial de vida"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A boca revela caminho de vida ou de violência."
+      },
+      "options": [
+        { "id": "a", "text": "Boca como fonte de vida" },
+        { "id": "b", "text": "Boca sem consequência" },
+        { "id": "c", "text": "Silêncio como violência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A boca do justo é manancial de vida",
+      "feedbackCorrect": "Manancial de vida liga a boca justa ao caminho da cena.",
+      "feedbackWrong": {
+        "b": "A boca tem efeito claro: vida ou violência.",
+        "c": "O contraste é violência na boca dos perversos."
+      },
+      "hint": "Veja a imagem da boca do justo.",
+      "learningObjective": "Ligar 10:11 ao tema da boca.",
+      "evidence": ["Provérbios 10:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Provérbios 10:12, o amor é apresentado como o que cobre todas as transgressões, em contraste com o ódio.",
+      "verseRef": "Provérbios 10:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "o amor cobre todas as transgressões",
+      "feedbackCorrect": "O \"mas\" marca o contraste: amor cobre o que o ódio inflama.",
+      "feedbackWrong": {
+        "false": "Releia 10:12: o amor cobre todas as transgressões."
+      },
+      "hint": "Veja a segunda metade após o contraste.",
+      "learningObjective": "Compreender o contraste ódio–amor.",
+      "evidence": ["Provérbios 10:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Provérbios 10:12, toque a palavra que marca o contraste.",
+      "verseRef": "Provérbios 10:12",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "ódio" },
+        { "id": "c", "text": "contendas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas o amor cobre",
+      "feedbackCorrect": "\"Mas\" introduz o contraste entre ódio e amor.",
+      "feedbackWrong": {
+        "b": "Ódio é um polo; o marcador é \"mas\".",
+        "c": "Contendas são o efeito do ódio."
+      },
+      "hint": "Palavra curta no meio do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Provérbios 10:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Provérbios 10:11 estabelece entre boca e caminho?",
+      "verseRef": "Provérbios 10:11",
+      "options": [
+        { "id": "a", "text": "A boca justa dá vida; a perversa esconde violência" },
+        { "id": "b", "text": "A boca nunca revela o coração" },
+        { "id": "c", "text": "Só a violência dos justos importa" },
+        { "id": "d", "text": "Manancial e violência são a mesma coisa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A boca do justo é manancial de vida",
+      "feedbackCorrect": "O contraste une fala e caminho: vida ou violência.",
+      "feedbackWrong": {
+        "b": "O texto liga boca a vida ou violência.",
+        "c": "Violência está na boca dos perversos.",
+        "d": "São polos opostos no versículo."
+      },
+      "hint": "Compare as duas metades.",
+      "learningObjective": "Relacionar boca justa e boca perversa.",
+      "evidence": ["Provérbios 10:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança Provérbios 10:1–12?",
+      "verseRef": "Provérbios 10:1–2",
+      "options": [
+        { "id": "a", "text": "Filho sábio e diligente" },
+        { "id": "b", "text": "Boca, integridade e violência" },
+        { "id": "c", "text": "Ódio e amor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O filho sábio alegra a seu pai",
+      "feedbackCorrect": "Do filho sábio à boca, e fecha com ódio e amor.",
+      "feedbackWrong": {
+        "default": "Comece pelo filho sábio; o amor fecha o trecho."
+      },
+      "hint": "O fim do trecho fala de ódio e amor.",
+      "learningObjective": "Compreender o movimento do capítulo.",
+      "evidence": ["Provérbios 10:1", "Provérbios 10:11", "Provérbios 10:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Provérbios 10:12, que verbo diz o que o amor faz?",
+      "verseRef": "Provérbios 10:12",
+      "options": [
+        { "id": "a", "text": "cobre" },
+        { "id": "b", "text": "provoca" },
+        { "id": "c", "text": "esconde" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o amor cobre todas as transgressões",
+      "feedbackCorrect": "\"Cobre\" carrega a ação do amor sobre as transgressões.",
+      "feedbackWrong": {
+        "b": "Quem provoca é o ódio.",
+        "c": "Esconder violência é da boca dos perversos."
+      },
+      "hint": "Verbo ligado ao amor.",
+      "learningObjective": "Lembrar a ação do amor.",
+      "evidence": ["Provérbios 10:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Provérbios 10:12 a 1 Pedro 4:8?",
+      "verseRef": "Provérbios 10:12",
+      "passageA": { "ref": "Provérbios 10:12" },
+      "passageB": { "ref": "1 Pedro 4:8" },
+      "options": [
+        { "id": "a", "text": "Amor cobre pecados" },
+        { "id": "b", "text": "Ódio como virtude" },
+        { "id": "c", "text": "Contendas sem causa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o amor cobre todas as transgressões",
+      "feedbackCorrect": "Nos dois textos, o amor cobre faltas.",
+      "feedbackWrong": {
+        "b": "O ódio provoca contendas, não é virtude.",
+        "c": "Há causa clara: o ódio."
+      },
+      "hint": "Compare o que o amor faz.",
+      "learningObjective": "Cruzar o amor que cobre.",
+      "evidence": ["Provérbios 10:12", "1 Pedro 4:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Provérbios 10:2, os tesouros da impiedade são apresentados como o que livra da morte.",
+      "verseRef": "Provérbios 10:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os tesouros da impiedade de nada valem",
+      "feedbackCorrect": "Eles de nada valem; quem livra é a justiça.",
+      "feedbackWrong": {
+        "true": "Releia 10:2: os tesouros de nada valem; a justiça livra."
+      },
+      "hint": "Veja o que de nada vale e o que livra.",
+      "learningObjective": "Corrigir a leitura sobre tesouros e justiça.",
+      "evidence": ["Provérbios 10:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Provérbios 10:9, toque o trecho que sustenta a segurança de quem anda reto.",
+      "verseRef": "Provérbios 10:9",
+      "options": [
+        { "id": "a", "text": "vive em segurança" },
+        { "id": "b", "text": "distorce" },
+        { "id": "c", "text": "revelado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quem anda com integridade vive em segurança",
+      "feedbackCorrect": "Integridade e segurança vão juntas no texto.",
+      "feedbackWrong": {
+        "b": "Distorcer é o caminho oposto.",
+        "c": "Ser revelado é o destino de quem distorce."
+      },
+      "hint": "Resultado de andar com integridade.",
+      "learningObjective": "Sustentar a leitura da integridade.",
+      "evidence": ["Provérbios 10:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Provérbios 10:11–12 sustenta?",
+      "verseRef": "Provérbios 10:11–12",
+      "options": [
+        { "id": "a", "text": "Fala e afeto revelam caminho de vida ou de violência" },
+        { "id": "b", "text": "A boca nunca importa para o caminho" },
+        { "id": "c", "text": "O ódio é neutro e não gera conflito" },
+        { "id": "d", "text": "Só a riqueza decide o destino" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A boca do justo é manancial de vida",
+      "feedbackCorrect": "Boca e amor/ódio mostram vida ou violência.",
+      "feedbackWrong": {
+        "b": "10:11 põe a boca no centro.",
+        "c": "10:12 diz que o ódio provoca contendas.",
+        "d": "10:2 já relativizou tesouros da impiedade."
+      },
+      "hint": "Una boca, ódio e amor.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": ["Provérbios 10:11", "Provérbios 10:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da boca e do amor?",
+      "verseRef": "Provérbios 10:11",
+      "options": [
+        { "id": "a", "text": "A boca do justo é manancial de vida" },
+        { "id": "b", "text": "Jesus liga boca e coração" },
+        { "id": "c", "text": "Pedro diz que o amor cobre pecados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "A boca do justo é manancial de vida",
+      "feedbackCorrect": "Da boca em Provérbios ao coração em Mateus e ao amor em Pedro.",
+      "feedbackWrong": {
+        "default": "Comece por 10:11; depois Mateus 12:34 e 1 Pedro 4:8."
+      },
+      "hint": "Do Antigo Testamento à fala e ao amor no Novo.",
+      "learningObjective": "Ver o fio boca–coração–amor.",
+      "evidence": ["Provérbios 10:11", "Mateus 12:34", "1 Pedro 4:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Provérbios 10:9, com que se anda para viver em segurança?",
+      "verseRef": "Provérbios 10:9",
+      "options": [
+        { "id": "a", "text": "integridade" },
+        { "id": "b", "text": "violência" },
+        { "id": "c", "text": "ódio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quem anda com integridade vive em segurança",
+      "feedbackCorrect": "Integridade é o termo do caminho seguro.",
+      "feedbackWrong": {
+        "b": "Violência é da boca dos perversos.",
+        "c": "Ódio provoca contendas."
+      },
+      "hint": "Palavra após \"anda com\".",
+      "learningObjective": "Lembrar o termo do caminho seguro.",
+      "evidence": ["Provérbios 10:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Provérbios 10:11 a Mateus 12:34?",
+      "verseRef": "Provérbios 10:11",
+      "passageA": { "ref": "Provérbios 10:11" },
+      "passageB": { "ref": "Mateus 12:34" },
+      "options": [
+        { "id": "a", "text": "Boca fala do coração" },
+        { "id": "b", "text": "Silêncio sem juízo" },
+        { "id": "c", "text": "Riqueza sem palavras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A boca do justo é manancial de vida",
+      "feedbackCorrect": "Nos dois textos, a boca revela o que há por dentro.",
+      "feedbackWrong": {
+        "b": "Há fala reveladora, não silêncio neutro.",
+        "c": "O tema é a boca, não a riqueza."
+      },
+      "hint": "Compare o papel da boca.",
+      "learningObjective": "Ligar boca justa e coração.",
+      "evidence": ["Provérbios 10:11", "Mateus 12:34"]
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Cantares 8:7–14",
+    "passages": [
+      {
+        "ref": "Cantares 8:7–9"
+      },
+      {
+        "ref": "Cantares 8:10–14"
+      }
+    ],
+    "context": "O amor não se apaga com muitas águas. Ela se declara muro digno de confiança, cuida da própria vinha e ainda pede: faz-me ouvir a tua voz; vem depressa.",
+    "keyword": "muro",
+    "keywordGloss": "O amor maduro sabe de si, guarda o que é precioso e ainda deseja a presença.",
+    "focusQuestion": "O que você precisa guardar — e a quem ainda precisa pedir: vem?",
+    "reflectionPrompts": [
+      "Águas não apagam",
+      "Sou um muro",
+      "Vem depressa"
+    ],
+    "facts": [
+      {
+        "text": "As muitas águas não poderiam apagar esse amor, nem os rios afogá-lo.",
+        "evidenceRef": "Cantares 8:7",
+        "evidenceSpan": "As muitas águas não poderiam apagar esse amor"
+      },
+      {
+        "text": "Se a irmã for um muro, construirão sobre ele uma torre de prata.",
+        "evidenceRef": "Cantares 8:9",
+        "evidenceSpan": "Se ela for um muro, construiremos sobre ele uma torre de prata"
+      },
+      {
+        "text": "Ela se declara muro, e era digna da confiança do amado.",
+        "evidenceRef": "Cantares 8:10",
+        "evidenceSpan": "Sou um muro, e meus seios são como torres"
+      },
+      {
+        "text": "A vinha dela está ao seu dispor; mil siclos para Salomão.",
+        "evidenceRef": "Cantares 8:12",
+        "evidenceSpan": "A minha vinha está ao meu dispor"
+      },
+      {
+        "text": "Ela pede: faz-me, pois, também ouvir a tua voz.",
+        "evidenceRef": "Cantares 8:13",
+        "evidenceSpan": "faz-me, pois, também ouvir"
+      },
+      {
+        "text": "Ela conclui: vem depressa, meu amado.",
+        "evidenceRef": "Cantares 8:14",
+        "evidenceSpan": "Vem depressa, meu amado"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "muro",
+        "gloss": "Imagem de maturidade e proteção no amor."
+      },
+      {
+        "term": "vinha",
+        "gloss": "A vinha própria sob responsabilidade dela."
+      },
+      {
+        "term": "Vem",
+        "gloss": "O convite final ao amado."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amor que as águas não apagam",
+        "evidenceRef": "Cantares 8:7"
+      },
+      {
+        "label": "A irmã, o muro e a porta",
+        "evidenceRef": "Cantares 8:8–9"
+      },
+      {
+        "label": "Ela se declara muro e cuida da vinha",
+        "evidenceRef": "Cantares 8:10–12"
+      },
+      {
+        "label": "Ainda pede a voz e a vinda",
+        "evidenceRef": "Cantares 8:13–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Mesmo madura e guardada, ela ainda pede: vem depressa.",
+        "marker": null,
+        "evidenceRef": "Cantares 8:10–14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por ser muro, era digna da confiança do amado.",
+        "marker": "assim",
+        "evidenceRef": "Cantares 8:10"
+      },
+      {
+        "kind": "causa",
+        "text": "As águas não apagam porque o amor não se compra com bens.",
+        "marker": null,
+        "evidenceRef": "Cantares 8:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 8:38–39",
+        "bridge": "Nada separa do amor"
+      },
+      {
+        "ref": "Provérbios 4:23",
+        "bridge": "Guarda o coração"
+      },
+      {
+        "ref": "Apocalipse 22:17",
+        "bridge": "Espírito e noiva dizem vem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Maturidade no amor significa não desejar mais a presença.",
+        "why": "Ela ainda pede a voz e a vinda."
+      },
+      {
+        "text": "O amor se compra com todos os bens da casa.",
+        "why": "8:7 diz que isso seria desprezado."
+      },
+      {
+        "text": "Ser muro é dureza sem confiança.",
+        "why": "O texto liga muro à confiança do amado."
+      }
+    ],
+    "centralInsight": "O amor maduro sabe de si, guarda o que é precioso e ainda deseja a presença.",
+    "anchorQuestion": "Segundo Cantares 8:10, o que ela declara ser?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 8:10, ela declara que Sou um muro.",
+      "verseRef": "Cantares 8:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "Sou um muro, e meus seios são como torres",
+      "feedbackCorrect": "Ela se declara muro digno de confiança.",
+      "feedbackWrong": {
+        "false": "Releia 8:10: Sou um muro."
+      },
+      "hint": "Veja a primeira afirmação.",
+      "learningObjective": "Observar a declaração do muro.",
+      "evidence": [
+        "Cantares 8:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 8:14, toque o pedido final.",
+      "verseRef": "Cantares 8:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vem depressa"
+        },
+        {
+          "id": "b",
+          "text": "cervo"
+        },
+        {
+          "id": "c",
+          "text": "montes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "O pedido final é Vem depressa.",
+      "feedbackWrong": {
+        "b": "Cervo é a comparação.",
+        "c": "Montes são o cenário."
+      },
+      "hint": "Ouça as primeiras palavras.",
+      "learningObjective": "Identificar o pedido final.",
+      "evidence": [
+        "Cantares 8:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 8:7, o que as muitas águas não poderiam fazer?",
+      "verseRef": "Cantares 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apagar esse amor"
+        },
+        {
+          "id": "b",
+          "text": "Regar a vinha"
+        },
+        {
+          "id": "c",
+          "text": "Construir o muro"
+        },
+        {
+          "id": "d",
+          "text": "Comprar a casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "As muitas águas não poderiam apagar esse amor",
+      "feedbackCorrect": "As águas não apagam esse amor.",
+      "feedbackWrong": {
+        "b": "O tema é apagar o amor.",
+        "c": "Muro aparece depois.",
+        "d": "Bens da casa são desprezados como preço."
+      },
+      "hint": "Leia o verbo após águas.",
+      "learningObjective": "Reconhecer o amor inapagável.",
+      "evidence": [
+        "Cantares 8:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 8:10 na ordem do texto.",
+      "verseRef": "Cantares 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sou um muro"
+        },
+        {
+          "id": "b",
+          "text": "e meus seios são como torres"
+        },
+        {
+          "id": "c",
+          "text": "digna da confiança do meu amado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sou um muro, e meus seios são como torres",
+      "feedbackCorrect": "Muro → torres → confiança.",
+      "feedbackWrong": {
+        "default": "Comece por Sou um muro; confiança fecha."
+      },
+      "hint": "Siga muro → torres → confiança.",
+      "learningObjective": "Seguir a ordem da declaração.",
+      "evidence": [
+        "Cantares 8:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 8:12, a vinha dela está ao seu quê?",
+      "verseRef": "Cantares 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "dispor"
+        },
+        {
+          "id": "b",
+          "text": "abandono"
+        },
+        {
+          "id": "c",
+          "text": "esquecimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A minha vinha está ao meu dispor",
+      "feedbackCorrect": "A vinha está ao seu dispor.",
+      "feedbackWrong": {
+        "b": "O texto diz dispor.",
+        "c": "O texto diz dispor."
+      },
+      "hint": "Veja o fim da primeira frase.",
+      "learningObjective": "Lembrar a vinha ao dispor.",
+      "evidence": [
+        "Cantares 8:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 8:10–14 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 8:10–14",
+      "passageA": {
+        "ref": "Cantares 8:10–14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amor maduro sabe de si, guarda o que é precioso e ainda deseja a presença."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Guarda e ainda deseja"
+        },
+        {
+          "id": "b",
+          "text": "Fecha-se sem pedido"
+        },
+        {
+          "id": "c",
+          "text": "Vende a vinha inteira"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Muro e vinha convivem com o Vem depressa.",
+      "feedbackWrong": {
+        "b": "Há pedido de voz e vinda.",
+        "c": "A vinha está ao seu dispor."
+      },
+      "hint": "Una muro e Vem.",
+      "learningObjective": "Ligar o contexto à maturidade desejante.",
+      "evidence": [
+        "Cantares 8:10–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 8:7, alguém que desse todos os bens da casa por esse amor seria honrado.",
+      "verseRef": "Cantares 8:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "seria de todo desprezado",
+      "feedbackCorrect": "Seria de todo desprezado.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 8:7: desprezado."
+      },
+      "hint": "Veja o resultado de tentar comprar o amor.",
+      "learningObjective": "Ver que o amor não se compra.",
+      "evidence": [
+        "Cantares 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 8:13, toque o pedido pela voz.",
+      "verseRef": "Cantares 8:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "também ouvir"
+        },
+        {
+          "id": "b",
+          "text": "jardins"
+        },
+        {
+          "id": "c",
+          "text": "companheiros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "faz-me, pois, também ouvir",
+      "feedbackCorrect": "Ela pede também ouvir a voz.",
+      "feedbackWrong": {
+        "b": "Jardins são a habitação.",
+        "c": "Companheiros estão atentos."
+      },
+      "hint": "Ache o pedido final.",
+      "learningObjective": "Tocar o pedido pela voz.",
+      "evidence": [
+        "Cantares 8:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 8:10–14 estabelece entre maturidade e desejo?",
+      "verseRef": "Cantares 8:10–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saber de si e guardar não apaga o desejo da presença"
+        },
+        {
+          "id": "b",
+          "text": "Ser muro elimina qualquer pedido"
+        },
+        {
+          "id": "c",
+          "text": "A vinha dispensa a voz do amado"
+        },
+        {
+          "id": "d",
+          "text": "Não há convite no fim do livro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Muro e vinha convivem com o Vem depressa.",
+      "feedbackWrong": {
+        "b": "Há pedido claro.",
+        "c": "Ela pede ouvir a voz.",
+        "d": "8:14 é o convite."
+      },
+      "hint": "Ligue 8:10 a 8:14.",
+      "learningObjective": "Relacionar maturidade e desejo.",
+      "evidence": [
+        "Cantares 8:10–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 8:7–14.",
+      "verseRef": "Cantares 8:7–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor que as águas não apagam"
+        },
+        {
+          "id": "b",
+          "text": "Ela se declara muro e cuida da vinha"
+        },
+        {
+          "id": "c",
+          "text": "Ainda pede a voz e a vinda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Amor → muro/vinha → vem.",
+      "feedbackWrong": {
+        "default": "Comece pelas águas; o Vem fecha."
+      },
+      "hint": "Siga amor → muro → vem.",
+      "learningObjective": "Ordenar a estrutura da cena.",
+      "evidence": [
+        "Cantares 8:7–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 8:10, de quem ela era digna da confiança?",
+      "verseRef": "Cantares 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "amado"
+        },
+        {
+          "id": "b",
+          "text": "guardas"
+        },
+        {
+          "id": "c",
+          "text": "rainhas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "confiança do meu amado",
+      "feedbackCorrect": "Digna da confiança do amado.",
+      "feedbackWrong": {
+        "b": "Guardas não estão neste versículo.",
+        "c": "Rainhas não estão neste versículo."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Lembrar a confiança do amado.",
+      "evidence": [
+        "Cantares 8:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 8:7 a Romanos 8:38–39?",
+      "verseRef": "Cantares 8:7",
+      "passageA": {
+        "ref": "Cantares 8:7"
+      },
+      "passageB": {
+        "ref": "Romanos 8:38–39"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nada separa do amor"
+        },
+        {
+          "id": "b",
+          "text": "Águas apagam tudo"
+        },
+        {
+          "id": "c",
+          "text": "O amor se compra fácil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não poderiam apagar esse amor",
+      "feedbackCorrect": "Os dois textos afirmam um amor que não se apaga.",
+      "feedbackWrong": {
+        "b": "As águas não apagam.",
+        "c": "Bens seriam desprezados."
+      },
+      "hint": "Compare a inapagabilidade.",
+      "learningObjective": "Ligar o amor a Romanos 8.",
+      "evidence": [
+        "Cantares 8:7",
+        "Romanos 8:38–39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 8:10–14 ensina que maturidade no amor significa não desejar mais a presença.",
+      "verseRef": "Cantares 8:13–14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Mesmo muro, ela ainda pede a voz e a vinda.",
+      "feedbackWrong": {
+        "true": "O texto termina com desejo da presença."
+      },
+      "hint": "Veja 8:13–14.",
+      "learningObjective": "Rejeitar a leitura sem desejo.",
+      "evidence": [
+        "Cantares 8:13–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 8:7, toque o trecho que sustenta a rejeição da compra.",
+      "verseRef": "Cantares 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "desprezado"
+        },
+        {
+          "id": "b",
+          "text": "muitas águas"
+        },
+        {
+          "id": "c",
+          "text": "rios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seria de todo desprezado",
+      "feedbackCorrect": "A compra seria de todo desprezada.",
+      "feedbackWrong": {
+        "b": "Águas falam de apagar, não de comprar.",
+        "c": "Rios falam de afogar."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Sustentar que o amor não se compra.",
+      "evidence": [
+        "Cantares 8:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 8:7–14 sustenta sobre o amor maduro?",
+      "verseRef": "Cantares 8:10–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sabe de si, guarda o precioso e ainda deseja a presença"
+        },
+        {
+          "id": "b",
+          "text": "Fecha-se e nunca mais pede vem"
+        },
+        {
+          "id": "c",
+          "text": "Vende a vinha e cala a voz"
+        },
+        {
+          "id": "d",
+          "text": "Deixa as águas apagarem o amor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou um muro",
+      "feedbackCorrect": "Muro, vinha e Vem sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "Há Vem depressa.",
+        "c": "A vinha está ao dispor.",
+        "d": "As águas não apagam."
+      },
+      "hint": "Una muro, vinha e Vem.",
+      "learningObjective": "Escolher a interpretação da maturidade.",
+      "evidence": [
+        "Cantares 8:10–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do amor inapagável ao vem?",
+      "verseRef": "Cantares 8:7–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor não se apaga nem se compra"
+        },
+        {
+          "id": "b",
+          "text": "Ela se declara muro e guarda a vinha"
+        },
+        {
+          "id": "c",
+          "text": "Ainda pede a voz e a vinda do amado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Inapagável → muro → vem.",
+      "feedbackWrong": {
+        "default": "Comece pelo amor; o Vem fecha."
+      },
+      "hint": "Siga amor → muro → vem.",
+      "learningObjective": "Ver o encadeamento da cena.",
+      "evidence": [
+        "Cantares 8:7–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 8:9, que material cobriria o muro se ela for um muro?",
+      "verseRef": "Cantares 8:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "prata"
+        },
+        {
+          "id": "b",
+          "text": "cedro"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma torre de prata",
+      "feedbackCorrect": "Sobre o muro, construiriam uma torre de prata.",
+      "feedbackWrong": {
+        "b": "\"Cedro\" aparece nas tábuas da porta, não na torre do muro.",
+        "c": "\"Ouro\" não é o material nomeado em 8:9."
+      },
+      "hint": "Veja o material da torre sobre o muro.",
+      "learningObjective": "Lembrar a torre de prata.",
+      "evidence": [
+        "Cantares 8:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 8:14 a Apocalipse 22:17?",
+      "verseRef": "Cantares 8:14",
+      "passageA": {
+        "ref": "Cantares 8:14"
+      },
+      "passageB": {
+        "ref": "Apocalipse 22:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito e noiva dizem vem"
+        },
+        {
+          "id": "b",
+          "text": "Ninguém pede a vinda"
+        },
+        {
+          "id": "c",
+          "text": "O desejo se apaga no fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Nos dois textos a voz amada diz vem.",
+      "feedbackWrong": {
+        "b": "Há pedido explícito.",
+        "c": "O desejo permanece."
+      },
+      "hint": "Compare o vem nos dois textos.",
+      "learningObjective": "Ligar o vem a Apocalipse 22.",
+      "evidence": [
+        "Cantares 8:14",
+        "Apocalipse 22:17"
+      ]
+    }
+  ]
+}

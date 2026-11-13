@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 19:23–27",
+  "passages": [
+   {
+    "ref": "Jó 19:23–27"
+   },
+   {
+    "ref": "Jó 19:28–29"
+   }
+  ],
+  "context": "No fundo do poço, Jó deseja palavras gravadas na rocha e confessa: seu Redentor vive e ele verá a Deus.",
+  "keyword": "Meu Redentor vive",
+  "keywordGloss": "A fé de Jó vê além da pele: o Redentor vive e se levantará.",
+  "focusQuestion": "No fundo do poço, você consegue confessar que o seu Redentor vive?",
+  "reflectionPrompts": [
+   "Palavras na rocha",
+   "Redentor que vive",
+   "Ver a Deus"
+  ],
+  "facts": [
+   {
+    "text": "Jó deseja que suas palavras sejam escritas e gravadas.",
+    "evidenceRef": "Jó 19:23",
+    "evidenceSpan": "minhas palavras fossem escritas"
+   },
+   {
+    "text": "Jó deseja palavras esculpidas na rocha.",
+    "evidenceRef": "Jó 19:24",
+    "evidenceSpan": "fossem esculpidas para sempre na rocha"
+   },
+   {
+    "text": "Jó sabe que o seu Redentor vive.",
+    "evidenceRef": "Jó 19:25",
+    "evidenceSpan": "o meu Redentor vive"
+   },
+   {
+    "text": "O Redentor se levantará sobre a terra.",
+    "evidenceRef": "Jó 19:25",
+    "evidenceSpan": "se levantará sobre a terra"
+   },
+   {
+    "text": "Jó verá a Deus com sua própria carne.",
+    "evidenceRef": "Jó 19:26",
+    "evidenceSpan": "verei a Deus com minha própria carne"
+   },
+   {
+    "text": "Há um juízo, e a ira traz castigos.",
+    "evidenceRef": "Jó 19:29",
+    "evidenceSpan": "saibam que há um juízo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Redentor",
+    "gloss": "Aquele que Jó sabe que vive e se levantará."
+   },
+   {
+    "term": "rocha",
+    "gloss": "Lugar onde Jó quer gravar suas palavras para sempre."
+   },
+   {
+    "term": "juízo",
+    "gloss": "O que os amigos devem temer."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jó deseja palavras gravadas para sempre",
+    "evidenceRef": "Jó 19:23–24"
+   },
+   {
+    "label": "Jó confessa o Redentor que vive",
+    "evidenceRef": "Jó 19:25"
+   },
+   {
+    "label": "Jó verá a Deus com a própria carne",
+    "evidenceRef": "Jó 19:26–27"
+   },
+   {
+    "label": "Aviso de juízo aos perseguidores",
+    "evidenceRef": "Jó 19:28–29"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Jó deseja palavras gravadas porque sabe que o Redentor vive.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 19:25"
+   },
+   {
+    "kind": "resultado",
+    "text": "Depois do corpo desgastado, ainda assim verá a Deus.",
+    "marker": "ainda assim",
+    "evidenceRef": "Jó 19:26"
+   },
+   {
+    "kind": "causa",
+    "text": "Temam a espada, pois a ira traz castigos.",
+    "marker": "pois",
+    "evidenceRef": "Jó 19:29"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Isaías 44:6",
+    "bridge": "Senhor, Redentor de Israel"
+   },
+   {
+    "ref": "1 Coríntios 15:20",
+    "bridge": "Cristo ressuscitou"
+   },
+   {
+    "ref": "Apocalipse 1:18",
+    "bridge": "Vivo pelos séculos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó desiste de ver a Deus.",
+    "why": "19:26–27 afirma que verá a Deus."
+   },
+   {
+    "text": "O Redentor está morto.",
+    "why": "19:25 diz que o Redentor vive."
+   },
+   {
+    "text": "Não há juízo para quem persegue.",
+    "why": "19:29 fala de juízo e espada."
+   }
+  ],
+  "centralInsight": "No fundo do poço, a fé de Jó vê além da pele: ele verá a Deus.",
+  "anchorQuestion": "O que Jó sabe sobre o seu Redentor em Jó 19:25?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 19:25, Jó diz que o seu Redentor está morto.",
+   "verseRef": "Jó 19:25",
+   "correctOptionId": "false",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Jó sabe que o Redentor vive.",
+   "feedbackWrong": {
+    "true": "Releia 19:25."
+   },
+   "hint": "Veja o verbo depois de Redentor.",
+   "learningObjective": "Observar a confissão de Jó.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 19:25, toque quem Jó sabe que vive.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Redentor"
+    },
+    {
+     "id": "b",
+     "text": "terra"
+    },
+    {
+     "id": "c",
+     "text": "fim"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "O Redentor vive.",
+   "feedbackWrong": {
+    "b": "Terra é onde ele se levantará.",
+    "c": "Fim marca o tempo."
+   },
+   "hint": "Veja o sujeito de vive.",
+   "learningObjective": "Identificar o Redentor.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 19:26, o que Jó ainda fará depois do corpo desgastado?",
+   "verseRef": "Jó 19:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Verá a Deus"
+    },
+    {
+     "id": "b",
+     "text": "Esquecerá a Deus"
+    },
+    {
+     "id": "c",
+     "text": "Acusará os amigos sem fé"
+    },
+    {
+     "id": "d",
+     "text": "Negará o juízo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "verei a Deus com minha própria carne",
+   "feedbackCorrect": "Jó verá a Deus.",
+   "feedbackWrong": {
+    "b": "O texto afirma ver.",
+    "c": "Não é o ponto de 19:26.",
+    "d": "19:29 afirma juízo."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a esperança de Jó.",
+   "evidence": [
+    "Jó 19:26"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 19:25 na ordem do texto.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque eu sei que o meu Redentor vive"
+    },
+    {
+     "id": "b",
+     "text": "e, por fim, se levantará"
+    },
+    {
+     "id": "c",
+     "text": "sobre a terra."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Vive; depois se levantará.",
+   "feedbackWrong": {
+    "default": "Comece por Porque."
+   },
+   "hint": "Comece por Porque.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 19:24, onde as palavras seriam esculpidas?",
+   "verseRef": "Jó 19:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "rocha"
+    },
+    {
+     "id": "b",
+     "text": "areia"
+    },
+    {
+     "id": "c",
+     "text": "nuvem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "esculpidas para sempre na rocha",
+   "feedbackCorrect": "O lugar é a rocha.",
+   "feedbackWrong": {
+    "b": "Não há areia.",
+    "c": "Não há nuvem."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar o lugar da gravação.",
+   "evidence": [
+    "Jó 19:24"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 19:25 comunica que se liga a este contexto?",
+   "verseRef": "Jó 19:25",
+   "passageA": {
+    "ref": "Jó 19:25"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "No fundo do poço, a fé de Jó vê além da pele: o Redentor vive."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Fé além da pele"
+    },
+    {
+     "id": "b",
+     "text": "Desistência total"
+    },
+    {
+     "id": "c",
+     "text": "Vitória dos amigos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "A confissão sustenta a fé além da pele.",
+   "feedbackWrong": {
+    "b": "Não há desistência.",
+    "c": "Não há vitória dos amigos."
+   },
+   "hint": "Pense no centro da confissão.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 19:25, Jó sabe que o Redentor vive porque deseja palavras gravadas.",
+   "verseRef": "Jó 19:23–25",
+   "correctOptionId": "true",
+   "evidenceSpan": "Porque eu sei que o meu Redentor vive",
+   "feedbackCorrect": "O Porque liga o desejo à confissão.",
+   "feedbackWrong": {
+    "false": "Veja o Porque de 19:25."
+   },
+   "hint": "Olhe a palavra Porque.",
+   "learningObjective": "Compreender a causa da confissão.",
+   "evidence": [
+    "Jó 19:23–25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 19:25, toque a palavra que marca a causa da confissão.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "Redentor"
+    },
+    {
+     "id": "c",
+     "text": "terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque eu sei",
+   "feedbackCorrect": "Porque introduz a causa.",
+   "feedbackWrong": {
+    "b": "Redentor é quem vive.",
+    "c": "Terra é onde se levantará."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 19:26 se relaciona com 19:25?",
+   "verseRef": "Jó 19:25–26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra o resultado: ver a Deus além do desgaste do corpo"
+    },
+    {
+     "id": "b",
+     "text": "Nega que o Redentor viva"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que Jó nunca verá a Deus"
+    },
+    {
+     "id": "d",
+     "text": "Diz que a carne impede qualquer visão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "verei a Deus com minha própria carne",
+   "feedbackCorrect": "Do Redentor vivo à visão de Deus.",
+   "feedbackWrong": {
+    "b": "19:25 afirma que vive.",
+    "c": "19:26 afirma a visão.",
+    "d": "A carne ainda vê."
+   },
+   "hint": "Leia o ainda assim.",
+   "learningObjective": "Relacionar Redentor e visão.",
+   "evidence": [
+    "Jó 19:25–26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a confissão de Jó em 19:23–29?",
+   "verseRef": "Jó 19:23–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "Desejo de palavras gravadas na rocha"
+    },
+    {
+     "id": "b",
+     "text": "Confissão do Redentor que vive"
+    },
+    {
+     "id": "c",
+     "text": "Aviso de juízo aos perseguidores"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Gravação, Redentor e juízo.",
+   "feedbackWrong": {
+    "default": "Comece pela gravação."
+   },
+   "hint": "Pense: rocha → Redentor → juízo.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 19:23–29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 19:26, o que Jó verá com a própria carne?",
+   "verseRef": "Jó 19:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "espada"
+    },
+    {
+     "id": "c",
+     "text": "livro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "verei a Deus com minha própria carne",
+   "feedbackCorrect": "A palavra é Deus.",
+   "feedbackWrong": {
+    "b": "Espada está em 19:29.",
+    "c": "Livro está em 19:23."
+   },
+   "hint": "Veja o objeto de verei.",
+   "learningObjective": "Lembrar o alvo da visão.",
+   "evidence": [
+    "Jó 19:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 19:25 a Isaías 44:6?",
+   "verseRef": "Jó 19:25",
+   "passageA": {
+    "ref": "Jó 19:25"
+   },
+   "passageB": {
+    "ref": "Isaías 44:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Senhor, Redentor de Israel"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem véu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Nos dois textos, Deus é Redentor.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare o título Redentor.",
+   "learningObjective": "Relacionar Jó a Isaías.",
+   "evidence": [
+    "Jó 19:25",
+    "Isaías 44:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 19:23–29 sustenta que Jó desiste de ver a Deus depois do desgaste do corpo.",
+   "verseRef": "Jó 19:26",
+   "correctOptionId": "false",
+   "evidenceSpan": "verei a Deus com minha própria carne",
+   "feedbackCorrect": "Jó afirma que verá a Deus.",
+   "feedbackWrong": {
+    "true": "Releia 19:26."
+   },
+   "hint": "Veja o que Jó ainda fará.",
+   "learningObjective": "Interpretar a fé além da pele.",
+   "evidence": [
+    "Jó 19:26"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 19:26, toque o trecho que sustenta a visão além da morte.",
+   "verseRef": "Jó 19:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "ainda assim"
+    },
+    {
+     "id": "b",
+     "text": "corpo"
+    },
+    {
+     "id": "c",
+     "text": "desgastado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ainda assim verei a Deus",
+   "feedbackCorrect": "Ainda assim marca a perseverança da visão.",
+   "feedbackWrong": {
+    "b": "Corpo é o que se desgasta.",
+    "c": "Desgastado descreve o corpo."
+   },
+   "hint": "Veja a expressão de contraste.",
+   "learningObjective": "Sustentar a leitura da visão.",
+   "evidence": [
+    "Jó 19:26"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 19:23–29 sustenta?",
+   "verseRef": "Jó 19:23–29",
+   "options": [
+    {
+     "id": "a",
+     "text": "No fundo do poço, a fé vê além da pele: verá a Deus"
+    },
+    {
+     "id": "b",
+     "text": "O Redentor está morto"
+    },
+    {
+     "id": "c",
+     "text": "Não há juízo para os perseguidores"
+    },
+    {
+     "id": "d",
+     "text": "Jó nunca desejou gravar suas palavras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "verei a Deus com minha própria carne",
+   "feedbackCorrect": "Redentor vivo e visão sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "19:25 diz que vive.",
+    "c": "19:29 fala de juízo.",
+    "d": "19:23–24 deseja gravação."
+   },
+   "hint": "Una 19:25 e 19:26.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 19:23–29"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o Redentor que vive?",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó confessa que o Redentor vive"
+    },
+    {
+     "id": "b",
+     "text": "Paulo anuncia que Cristo ressuscitou"
+    },
+    {
+     "id": "c",
+     "text": "O Apocalipse declara: vivo pelos séculos"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "O fio vai de Jó a 1 Coríntios e ao Apocalipse.",
+   "feedbackWrong": {
+    "default": "Comece por Jó."
+   },
+   "hint": "Siga: Jó → Paulo → Apocalipse.",
+   "learningObjective": "Ver o fio do Redentor.",
+   "evidence": [
+    "Jó 19:25",
+    "1 Coríntios 15:20",
+    "Apocalipse 1:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 19:25, o que o Redentor faz, segundo Jó?",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "vive"
+    },
+    {
+     "id": "b",
+     "text": "dorme"
+    },
+    {
+     "id": "c",
+     "text": "foge"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Jó sabe: o Redentor vive.",
+   "feedbackWrong": {
+    "b": "O texto não diz dorme.",
+    "c": "O texto não diz foge."
+   },
+   "hint": "Veja o verbo da confissão.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 19:25 a Apocalipse 1:18?",
+   "verseRef": "Jó 19:25",
+   "passageA": {
+    "ref": "Jó 19:25"
+   },
+   "passageB": {
+    "ref": "Apocalipse 1:18"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Vivo pelos séculos"
+    },
+    {
+     "id": "b",
+     "text": "Lista de anjos"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Nos dois textos, há quem vive para sempre.",
+   "feedbackWrong": {
+    "b": "Não há lista de anjos.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a vida do Redentor.",
+   "learningObjective": "Ligar Jó ao Apocalipse.",
+   "evidence": [
+    "Jó 19:25",
+    "Apocalipse 1:18"
+   ]
+  }
+ ]
+}

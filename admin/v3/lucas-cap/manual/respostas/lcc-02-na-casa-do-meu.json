@@ -1,0 +1,507 @@
+{
+  "study": {
+    "passageRef": "Lucas 2:46–51",
+    "passages": [
+      { "ref": "Lucas 2:46–51" },
+      { "ref": "Lucas 2:41–45" },
+      { "ref": "Lucas 2:52" }
+    ],
+    "context": "Todo ano a família de Jesus subia a Jerusalém para a festa da Páscoa. Terminados os dias da festa, a caravana parte. Os pais só percebem no caminho que o menino não está com o grupo.",
+    "keyword": "Pai",
+    "keywordGloss": "Jesus chama Deus de Pai e aponta a casa dele como o lugar onde precisa estar.",
+    "focusQuestion": "Quando o seu caminho e o de Deus parecem diferentes, você lembra a quem pertence?",
+    "reflectionPrompts": [
+      "A festa e a ausência",
+      "A casa do Pai",
+      "A volta submissa"
+    ],
+    "facts": [
+      {
+        "text": "Todo ano os pais de Jesus iam a Jerusalém para a festa da Páscoa.",
+        "evidenceRef": "Lucas 2:41",
+        "evidenceSpan": "os pais de Jesus se dirigiam a Jerusalém para a festa da Páscoa"
+      },
+      {
+        "text": "Ao fim da festa, o menino Jesus permaneceu em Jerusalém sem os pais saberem.",
+        "evidenceRef": "Lucas 2:43",
+        "evidenceSpan": "o menino Jesus permaneceu em Jerusalém, sem que seus pais tivessem conhecimento"
+      },
+      {
+        "text": "Os pais o presumiram no grupo e o buscaram entre parentes e conhecidos.",
+        "evidenceRef": "Lucas 2:44",
+        "evidenceSpan": "o buscaram entre os parentes e conhecidos"
+      },
+      {
+        "text": "Após três dias, encontraram Jesus no templo, no meio dos doutores.",
+        "evidenceRef": "Lucas 2:46",
+        "evidenceSpan": "encontraram-no no templo, assentado no meio dos doutores"
+      },
+      {
+        "text": "Jesus diz que lhe é necessário estar na casa de seu Pai.",
+        "evidenceRef": "Lucas 2:49",
+        "evidenceSpan": "me é necessário estar na casa de meu Pai"
+      },
+      {
+        "text": "Jesus desceu com eles para Nazaré e era-lhes submisso.",
+        "evidenceRef": "Lucas 2:51",
+        "evidenceSpan": "desceu com eles para Nazaré, e era-lhes submisso"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Pai",
+        "gloss": "Deus, a quem Jesus chama de Pai, distinto do pai que o procurava com Maria."
+      },
+      {
+        "term": "necessário",
+        "gloss": "Jesus não trata a estada no templo como acaso: estar ali lhe é necessário."
+      },
+      {
+        "term": "submisso",
+        "gloss": "Ao descer para Nazaré, Jesus permanece obediente a José e Maria."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A família sobe a Jerusalém para a Páscoa",
+        "evidenceRef": "Lucas 2:41–42"
+      },
+      {
+        "label": "Os pais procuram e acham Jesus no templo",
+        "evidenceRef": "Lucas 2:44–46"
+      },
+      {
+        "label": "Jesus fala do Pai e desce submisso",
+        "evidenceRef": "Lucas 2:49–51"
+      },
+      {
+        "label": "Jesus cresce em sabedoria e graça",
+        "evidenceRef": "Lucas 2:52"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jesus não apresenta a estada como acaso. Diz que lhe é necessário estar na casa de seu Pai.",
+        "marker": "necessário",
+        "evidenceRef": "Lucas 2:49"
+      },
+      {
+        "kind": "contraste",
+        "text": "A resposta é clara, porém os pais não compreenderam as palavras que Jesus lhes dissera.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 2:50"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois dessa conversa, Jesus desce com eles para Nazaré e permanece submisso.",
+        "marker": null,
+        "evidenceRef": "Lucas 2:51"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 16:16",
+        "bridge": "Festa anual diante do Senhor"
+      },
+      {
+        "ref": "João 2:16",
+        "bridge": "Casa de meu Pai"
+      },
+      {
+        "ref": "Salmos 27:4",
+        "bridge": "Habitar na casa"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus se perdeu no caminho e não sabia por que tinha ficado em Jerusalém.",
+        "why": "O texto diz que ele permaneceu na cidade e, ao ser achado, explica que lhe era necessário estar na casa de seu Pai."
+      },
+      {
+        "text": "Ao falar da casa de seu Pai, Jesus rejeita José e Maria.",
+        "why": "Logo em seguida ele desce com eles para Nazaré e era-lhes submisso."
+      },
+      {
+        "text": "A casa de meu Pai é a casa de José em Nazaré.",
+        "why": "Eles o encontram no templo, e a resposta de Jesus distingue essa casa do pai que o procurava com Maria."
+      }
+    ],
+    "centralInsight": "Desde menino, Jesus sabe a quem pertence: à casa do seu Pai.",
+    "anchorQuestion": "O que Jesus disse ser necessário quando os pais o acharam no templo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 2:44, os pais encontraram Jesus entre os parentes e conhecidos.",
+      "verseRef": "Lucas 2:44",
+      "correctOptionId": "false",
+      "evidenceSpan": "o buscaram entre os parentes e conhecidos",
+      "feedbackCorrect": "Eles o buscaram entre parentes e conhecidos. Isso é procura, não encontro.",
+      "feedbackWrong": {
+        "true": "O verbo da frase é buscar. O versículo não registra que eles o acharam ali."
+      },
+      "hint": "Observe o que os pais fizeram entre os parentes e conhecidos.",
+      "learningObjective": "Observar que a busca entre parentes ainda não é o encontro.",
+      "evidence": ["Lucas 2:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 2:46, toque o lugar em que encontraram Jesus.",
+      "verseRef": "Lucas 2:46",
+      "options": [
+        { "id": "a", "text": "três dias" },
+        { "id": "b", "text": "no templo" },
+        { "id": "c", "text": "ouvindo-os" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "encontraram-no no templo",
+      "feedbackCorrect": "Após três dias, o encontro acontece no templo, não na estrada.",
+      "feedbackWrong": {
+        "a": "Isso marca o tempo da procura, não o lugar do encontro.",
+        "c": "O verbo diz o que Jesus fazia, não o edifício onde estava."
+      },
+      "hint": "Procure o nome do lugar no meio do versículo.",
+      "learningObjective": "Identificar o lugar onde os pais encontraram Jesus.",
+      "evidence": ["Lucas 2:46"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 2:43, o que ocorreu ao fim dos dias da festa?",
+      "verseRef": "Lucas 2:43",
+      "options": [
+        { "id": "a", "text": "O menino ficou em Jerusalém sem os pais saberem" },
+        { "id": "b", "text": "Jesus voltou no mesmo dia com os pais" },
+        { "id": "c", "text": "Os pais o acharam entre os companheiros" },
+        { "id": "d", "text": "Jesus permaneceu em Belém com os doutores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o menino Jesus permaneceu em Jerusalém, sem que seus pais tivessem conhecimento",
+      "feedbackCorrect": "A festa acaba e o menino permanece em Jerusalém, sem os pais saberem.",
+      "feedbackWrong": {
+        "b": "O texto diz que ele ficou. A volta com os pais só vem depois.",
+        "c": "Essa busca é no caminho. Em 2:43 eles ainda não sabiam.",
+        "d": "A cidade é Jerusalém. Os doutores aparecem só no encontro."
+      },
+      "hint": "Leia o que o menino fez quando os outros partiram.",
+      "learningObjective": "Observar que Jesus permaneceu em Jerusalém sem os pais saberem.",
+      "evidence": ["Lucas 2:43"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 2:46 na ordem do texto.",
+      "verseRef": "Lucas 2:46",
+      "options": [
+        { "id": "a", "text": "Após três dias" },
+        { "id": "b", "text": "encontraram-no no templo" },
+        { "id": "c", "text": "assentado no meio dos doutores" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Após três dias, encontraram-no no templo",
+      "feedbackCorrect": "A ordem é o tempo, o encontro no templo e o assento entre os doutores.",
+      "feedbackWrong": {
+        "default": "Comece por após três dias. O assento entre os doutores vem por último."
+      },
+      "hint": "A primeira peça marca o tempo. O assento fecha a sequência.",
+      "learningObjective": "Reconhecer a sequência do encontro no templo.",
+      "evidence": ["Lucas 2:46"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 2:42, com que idade Jesus subiu a Jerusalém?",
+      "verseRef": "Lucas 2:42",
+      "options": [
+        { "id": "a", "text": "quinze" },
+        { "id": "b", "text": "doze" },
+        { "id": "c", "text": "vinte" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "quando ele fez doze anos",
+      "feedbackCorrect": "Aos doze anos ele sobe com a família, segundo o costume da festa.",
+      "feedbackWrong": {
+        "a": "O versículo cita doze anos, não quinze.",
+        "c": "A idade registrada é doze, não vinte."
+      },
+      "hint": "Veja o número no início do versículo.",
+      "learningObjective": "Lembrar a idade de Jesus nessa subida a Jerusalém.",
+      "evidence": ["Lucas 2:42"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 2:49 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 2:49",
+      "passageA": { "ref": "Lucas 2:49" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No templo, Jesus já sabe que lhe cabe estar na casa de seu Pai."
+      },
+      "options": [
+        { "id": "a", "text": "Sumiço entre os viajantes" },
+        { "id": "b", "text": "Lugar na casa do Pai" },
+        { "id": "c", "text": "Volta sem falar com eles" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "estar na casa de meu Pai",
+      "feedbackCorrect": "A fala dele e o contexto dizem o mesmo: o lugar dele é a casa do Pai.",
+      "feedbackWrong": {
+        "a": "O sumiço é o que os pais temeram. Jesus fala de outro lugar.",
+        "c": "Ele responde aos pais. O vínculo é a casa, não o silêncio."
+      },
+      "hint": "Veja o lugar que a resposta de Jesus nomeia.",
+      "learningObjective": "Ligar a fala de Jesus ao fato de que a casa do Pai é o lugar dele.",
+      "evidence": ["Lucas 2:49"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 2:50, a resposta de Jesus fez os pais compreenderem as palavras dele.",
+      "verseRef": "Lucas 2:50",
+      "correctOptionId": "false",
+      "evidenceSpan": "não compreenderam as palavras que lhes dissera",
+      "feedbackCorrect": "A frase nega a compreensão. Eles ouviram Jesus e não entenderam as palavras.",
+      "feedbackWrong": {
+        "true": "O versículo diz o contrário. Os pais não compreenderam as palavras dele."
+      },
+      "hint": "Leia se a frase afirma ou nega que eles entenderam.",
+      "learningObjective": "Compreender o contraste entre a resposta de Jesus e a compreensão dos pais.",
+      "evidence": ["Lucas 2:50"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 2:50, toque a palavra que marca o contraste.",
+      "verseRef": "Lucas 2:50",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "eles" },
+        { "id": "c", "text": "palavras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, não compreenderam",
+      "feedbackCorrect": "Porém vira a cena: a resposta clara não produz compreensão.",
+      "feedbackWrong": {
+        "b": "Eles são quem ouviu. A virada do sentido está na outra palavra.",
+        "c": "Palavras é o que ficou sem compreensão, não o contraste."
+      },
+      "hint": "Procure a palavra curta entre vírgulas.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste em Lucas 2:50.",
+      "evidence": ["Lucas 2:50"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Lucas 2:51 mostra após a conversa no templo?",
+      "verseRef": "Lucas 2:51",
+      "options": [
+        { "id": "a", "text": "Jesus recusa Nazaré e permanece no templo" },
+        { "id": "b", "text": "Os doutores acompanham a família até Nazaré" },
+        { "id": "c", "text": "Jesus desce com eles e continua obediente" },
+        { "id": "d", "text": "A mãe deixa de guardar o que viveu" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "desceu com eles para Nazaré, e era-lhes submisso",
+      "feedbackCorrect": "A conversa termina em descida. Ele vai com os pais e lhes obedece.",
+      "feedbackWrong": {
+        "a": "O texto diz que ele desceu com eles, não que recusou Nazaré.",
+        "b": "Os doutores ficam no templo. Quem desce é Jesus com os pais.",
+        "d": "A mãe guarda todas estas coisas. Ela não esquece o que viveu."
+      },
+      "hint": "Veja o que Jesus faz com os pais ao sair de Jerusalém.",
+      "learningObjective": "Compreender o resultado da cena: a volta submissa a Nazaré.",
+      "evidence": ["Lucas 2:51"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Lucas 2:41–51?",
+      "verseRef": "Lucas 2:41–42",
+      "options": [
+        { "id": "a", "text": "A família sobe a Jerusalém para a Páscoa" },
+        { "id": "b", "text": "Os pais procuram e acham Jesus no templo" },
+        { "id": "c", "text": "Jesus fala do Pai e desce submisso" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "subiram a Jerusalém, de acordo com o costume da festa",
+      "feedbackCorrect": "A festa leva à procura, o templo à fala, e a fala à volta submissa.",
+      "feedbackWrong": {
+        "default": "Comece pela subida à festa. A volta submissa é o último movimento."
+      },
+      "hint": "O primeiro movimento é a viagem para a festa.",
+      "learningObjective": "Compreender os três movimentos da viagem, do templo e da volta.",
+      "evidence": ["Lucas 2:41–42", "Lucas 2:44–46", "Lucas 2:49–51"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 2:49, o que Jesus diz que lhe é estar na casa do Pai?",
+      "verseRef": "Lucas 2:49",
+      "options": [
+        { "id": "a", "text": "opcional" },
+        { "id": "b", "text": "proibido" },
+        { "id": "c", "text": "necessário" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "me é necessário estar",
+      "feedbackCorrect": "Não é opção nem proibição. Ele diz que estar ali lhe é necessário.",
+      "feedbackWrong": {
+        "a": "Opcional enfraquece a frase. Jesus fala de necessidade, não de escolha solta.",
+        "b": "Nada na fala proíbe a estada. Ele afirma que ela lhe é necessária."
+      },
+      "hint": "Veja a palavra que mede o peso da estada ali.",
+      "learningObjective": "Compreender que a estada no templo é necessidade, não acaso.",
+      "evidence": ["Lucas 2:49"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 2:41 a Deuteronômio 16:16?",
+      "verseRef": "Lucas 2:41",
+      "passageA": { "ref": "Lucas 2:41" },
+      "passageB": { "ref": "Deuteronômio 16:16" },
+      "options": [
+        { "id": "a", "text": "Festa anual diante do Senhor" },
+        { "id": "b", "text": "Busca entre os parentes" },
+        { "id": "c", "text": "Respostas aos doutores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "festa da Páscoa",
+      "feedbackCorrect": "A família sobe todo ano à Páscoa, uma das festas diante do Senhor.",
+      "feedbackWrong": {
+        "b": "A busca dos pais é outra cena. O vínculo é a festa anual.",
+        "c": "Os doutores aparecem no templo. Aqui a ponte é a festa."
+      },
+      "hint": "Compare o que os dois textos dizem sobre a festa.",
+      "learningObjective": "Relacionar a subida anual da família à festa diante do Senhor.",
+      "evidence": ["Lucas 2:41", "Deuteronômio 16:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 2:48–49, Jesus responde à aflição dos pais com a casa de seu Pai.",
+      "verseRef": "Lucas 2:48–49",
+      "correctOptionId": "true",
+      "evidenceSpan": "me é necessário estar na casa de meu Pai",
+      "feedbackCorrect": "A mãe fala da aflição, e a resposta de Jesus é a casa de seu Pai.",
+      "feedbackWrong": {
+        "false": "A fala no templo não é desculpa de quem se perdeu. Ele aponta essa casa."
+      },
+      "hint": "Leia a queixa da mãe e a frase com que Jesus responde.",
+      "learningObjective": "Interpretar a resposta de Jesus como pertencimento à casa do Pai.",
+      "evidence": ["Lucas 2:48–49"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 2:49, toque de quem é a casa em que Jesus diz precisar estar.",
+      "verseRef": "Lucas 2:49",
+      "options": [
+        { "id": "a", "text": "vocês" },
+        { "id": "b", "text": "ele" },
+        { "id": "c", "text": "meu Pai" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "casa de meu Pai",
+      "feedbackCorrect": "A casa é de meu Pai. Jesus nomeia Deus, não os pais que o buscavam.",
+      "feedbackWrong": {
+        "a": "Vocês são os pais a quem ele fala, não o dono da casa.",
+        "b": "Ele é quem responde. O dono da casa vem no fim da frase."
+      },
+      "hint": "Procure no fim da frase de quem Jesus diz ser a casa.",
+      "learningObjective": "Sustentar com o texto de quem é a casa nomeada por Jesus.",
+      "evidence": ["Lucas 2:49"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 2:49 sustenta sobre a estada de Jesus?",
+      "verseRef": "Lucas 2:49",
+      "options": [
+        { "id": "a", "text": "Ele se perdeu e não sabia explicar por que ficou" },
+        { "id": "b", "text": "Ele sabia que lhe cabia a casa de seu Pai" },
+        { "id": "c", "text": "Ele rejeitou José e Maria ao falar do Pai" },
+        { "id": "d", "text": "A casa citada é a de José, em Nazaré" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "me é necessário estar na casa de meu Pai",
+      "feedbackCorrect": "A própria fala sustenta isso: ele sabe que lhe cabe a casa do Pai.",
+      "feedbackWrong": {
+        "a": "Ele não se descreve perdido. Explica que aquele lugar lhe cabe.",
+        "c": "A fala não rompe com José e Maria. A submissão vem em seguida.",
+        "d": "O encontro é no templo, e a casa nomeada não é a de Nazaré."
+      },
+      "hint": "Compare cada leitura com a frase que Jesus diz aos pais.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a estada no templo.",
+      "evidence": ["Lucas 2:49"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho de Jesus nesta cena?",
+      "verseRef": "Lucas 2:52",
+      "options": [
+        { "id": "a", "text": "No templo ele nomeia a casa do Pai" },
+        { "id": "b", "text": "A volta a Nazaré vem com submissão" },
+        { "id": "c", "text": "O crescimento segue diante de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "crescia em sabedoria, em estatura e em graça",
+      "feedbackCorrect": "Ele nomeia a casa do Pai, desce submisso e cresce diante de Deus.",
+      "feedbackWrong": {
+        "default": "Comece pela casa nomeada no templo. O crescimento é o passo final."
+      },
+      "hint": "O crescimento em sabedoria fica no fim da história.",
+      "learningObjective": "Encadear pertencimento, submissão e crescimento na cena.",
+      "evidence": ["Lucas 2:49", "Lucas 2:51", "Lucas 2:52"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 2:51, ao voltar para Nazaré, Jesus era-lhes o quê?",
+      "verseRef": "Lucas 2:51",
+      "options": [
+        { "id": "a", "text": "rebelde" },
+        { "id": "b", "text": "submisso" },
+        { "id": "c", "text": "distante" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "era-lhes submisso",
+      "feedbackCorrect": "Pertencer ao Pai não cancela a obediência: em Nazaré ele era-lhes submisso.",
+      "feedbackWrong": {
+        "a": "O texto não fala em rebeldia. Ele desce e era-lhes submisso.",
+        "c": "Ele não fica distante. Volta com eles e permanece submisso."
+      },
+      "hint": "Veja a atitude de Jesus na volta para Nazaré.",
+      "learningObjective": "Lembrar o termo que mostra a obediência de Jesus em Nazaré.",
+      "evidence": ["Lucas 2:51"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 2:49 a João 2:16?",
+      "verseRef": "Lucas 2:49",
+      "passageA": { "ref": "Lucas 2:49" },
+      "passageB": { "ref": "João 2:16" },
+      "options": [
+        { "id": "a", "text": "Casa de negócio" },
+        { "id": "b", "text": "Aflição dos pais" },
+        { "id": "c", "text": "Casa de meu Pai" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "casa de meu Pai",
+      "feedbackCorrect": "Nos dois relatos Jesus chama o templo de casa de meu Pai.",
+      "feedbackWrong": {
+        "a": "O negócio é o que ele manda tirar. A ponte é o nome da casa.",
+        "b": "A aflição é de Maria. O vínculo entre os textos é a casa."
+      },
+      "hint": "Veja o nome que Jesus dá ao templo nos dois relatos.",
+      "learningObjective": "Ligar a casa nomeada no templo à mesma fala de Jesus em João.",
+      "evidence": ["Lucas 2:49", "João 2:16"]
+    }
+  ]
+}

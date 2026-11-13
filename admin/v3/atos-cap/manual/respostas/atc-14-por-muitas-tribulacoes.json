@@ -1,0 +1,474 @@
+{
+  "study": {
+    "passageRef": "Atos 14:19–23",
+    "passages": [
+      { "ref": "Atos 14:19–23" },
+      { "ref": "Atos 14:16–18" },
+      { "ref": "Atos 14:24–26" }
+    ],
+    "context": "Em Listra, depois do anúncio, judeus de Antioquia e Icônio instigam a multidão. Paulo é apedrejado, se levanta e volta a fortalecer as igrejas no caminho de volta.",
+    "keyword": "tribulações",
+    "keywordGloss": "As pressões pelas quais, segundo o texto, é necessário entrar no reino de Deus.",
+    "focusQuestion": "Quando a oposição parece te derrubar, você ainda volta para fortalecer outros na fé?",
+    "reflectionPrompts": [
+      "Apedrejado e levantado",
+      "Voltar para fortalecer",
+      "Entrar por muitas tribulações"
+    ],
+    "facts": [
+      {
+        "text": "Judeus de Antioquia e de Icônio instigaram a multidão e apedrejaram Paulo.",
+        "evidenceRef": "Atos 14:19",
+        "evidenceSpan": "instigando a multidão, apedrejaram Paulo"
+      },
+      {
+        "text": "Arrastaram Paulo para fora da cidade, acreditando que ele estava morto.",
+        "evidenceRef": "Atos 14:19",
+        "evidenceSpan": "arrastando-o para fora da cidade, acreditando que ele estava morto"
+      },
+      {
+        "text": "Rodeado pelos discípulos, Paulo levantou-se e entrou na cidade.",
+        "evidenceRef": "Atos 14:20",
+        "evidenceSpan": "Rodeado pelos discípulos, levantou-se e entrou na cidade"
+      },
+      {
+        "text": "No dia seguinte, partiu com Barnabé em direção a Derbe.",
+        "evidenceRef": "Atos 14:20",
+        "evidenceSpan": "partiu com Barnabé em direção a Derbe"
+      },
+      {
+        "text": "Eles fortaleceram o ânimo dos discípulos e exortaram a permanecer firmes na fé.",
+        "evidenceRef": "Atos 14:22",
+        "evidenceSpan": "Fortalecendo o ânimo dos discípulos, exortando-os a permanecer firmes na fé"
+      },
+      {
+        "text": "Por meio de muitas tribulações é necessário entrar no reino de Deus.",
+        "evidenceRef": "Atos 14:22",
+        "evidenceSpan": "por meio de muitas tribulações, é necessário entrarmos no reino de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "tribulações",
+        "gloss": "As pressões do caminho; o texto as liga à entrada no reino."
+      },
+      {
+        "term": "presbíteros",
+        "gloss": "Líderes constituídos em cada igreja, encomendados ao Senhor."
+      },
+      {
+        "term": "firmes",
+        "gloss": "A exortação aos discípulos: permanecer na fé."
+      }
+    ],
+    "structure": [
+      { "label": "A multidão apedreja Paulo", "evidenceRef": "Atos 14:19" },
+      { "label": "Paulo se levanta e segue a Derbe", "evidenceRef": "Atos 14:20" },
+      { "label": "Eles anunciam e voltam fortalecendo", "evidenceRef": "Atos 14:21–22" },
+      { "label": "Constituem presbíteros e encomendam ao Senhor", "evidenceRef": "Atos 14:23" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Deus não deixou de dar testemunho de si; no entanto, as nações andavam em seus caminhos.",
+        "marker": "No entanto",
+        "evidenceRef": "Atos 14:17"
+      },
+      {
+        "kind": "contraste",
+        "text": "Depois do anúncio, contudo, a multidão é instigada e Paulo é apedrejado.",
+        "marker": "Contudo",
+        "evidenceRef": "Atos 14:19"
+      },
+      {
+        "kind": "resultado",
+        "text": "Após o apedrejamento, Paulo se levanta, volta e fortalece os discípulos na fé.",
+        "marker": null,
+        "evidenceRef": "Atos 14:20–22"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 16:33", "bridge": "Tribulação e ânimo em Cristo" },
+      { "ref": "2 Timóteo 3:12", "bridge": "Piedade traz perseguição" },
+      { "ref": "Atos 15:41", "bridge": "Fortalecendo as igrejas" }
+    ],
+    "misreadings": [
+      {
+        "text": "Apedrejado, Paulo abandona Listra e a missão.",
+        "why": "Ele se levanta, entra de novo na cidade e depois volta fortalecendo as igrejas."
+      },
+      {
+        "text": "Entrar no reino de Deus é caminho sem pressão nem custo.",
+        "why": "O texto diz que, por meio de muitas tribulações, é necessário entrar."
+      },
+      {
+        "text": "Eles só evangelizam e não cuidam das igrejas.",
+        "why": "Fortalecem o ânimo, constituem presbíteros e os encomendam ao Senhor."
+      }
+    ],
+    "centralInsight": "Entramos no Reino passando por muitas tribulações, e as igrejas são fortalecidas.",
+    "anchorQuestion": "Por meio de quê, segundo Atos 14:22, é necessário entrar no reino de Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 14:20, Paulo, após o apedrejamento, recusou entrar de novo na cidade.",
+      "verseRef": "Atos 14:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "levantou-se e entrou na cidade",
+      "feedbackCorrect": "O texto diz o contrário: ele se levantou e entrou na cidade.",
+      "feedbackWrong": { "true": "Releia 14:20: levantou-se e entrou na cidade." },
+      "hint": "Veja o que Paulo faz logo após ser rodeado.",
+      "learningObjective": "Observar a volta de Paulo à cidade.",
+      "evidence": ["Atos 14:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 14:19, toque quem a multidão apedrejou.",
+      "verseRef": "Atos 14:19",
+      "options": [
+        { "id": "a", "text": "Paulo" },
+        { "id": "b", "text": "Antioquia" },
+        { "id": "c", "text": "cidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apedrejaram Paulo",
+      "feedbackCorrect": "O alvo do apedrejamento é Paulo.",
+      "feedbackWrong": {
+        "b": "Antioquia é de onde vieram alguns judeus, não o apedrejado.",
+        "c": "A cidade é o lugar; quem apedrejam é Paulo."
+      },
+      "hint": "Procure o nome depois de \"apedrejaram\".",
+      "learningObjective": "Identificar quem foi apedrejado.",
+      "evidence": ["Atos 14:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 14:20, o que Paulo fez depois de ser rodeado pelos discípulos?",
+      "verseRef": "Atos 14:20",
+      "options": [
+        { "id": "a", "text": "Levantou-se e entrou na cidade" },
+        { "id": "b", "text": "Ficou fora e desistiu da viagem" },
+        { "id": "c", "text": "Mandou Barnabé embora sozinho" },
+        { "id": "d", "text": "Escondeu-se sem falar com ninguém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantou-se e entrou na cidade",
+      "feedbackCorrect": "Rodeado pelos discípulos, ele se levanta e volta à cidade.",
+      "feedbackWrong": {
+        "b": "O texto diz que entrou na cidade.",
+        "c": "No dia seguinte partiu com Barnabé.",
+        "d": "Ele se levanta e entra na cidade."
+      },
+      "hint": "Leia a ação logo após \"Rodeado pelos discípulos\".",
+      "learningObjective": "Observar a reação de Paulo após o apedrejamento.",
+      "evidence": ["Atos 14:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 14:22 na ordem do texto.",
+      "verseRef": "Atos 14:22",
+      "options": [
+        { "id": "a", "text": "Fortalecendo o ânimo dos discípulos" },
+        { "id": "b", "text": "exortando-os a permanecer firmes na fé" },
+        { "id": "c", "text": "por meio de muitas tribulações, é necessário entrarmos no reino de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Fortalecendo o ânimo dos discípulos, exortando-os a permanecer firmes na fé",
+      "feedbackCorrect": "Fortalecem, exortam e mostram o caminho das tribulações.",
+      "feedbackWrong": { "default": "Comece pelo fortalecimento do ânimo." },
+      "hint": "O versículo começa com \"Fortalecendo\".",
+      "learningObjective": "Reconhecer a sequência de Atos 14:22.",
+      "evidence": ["Atos 14:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 14:20, para onde Paulo e Barnabé partiram no dia seguinte?",
+      "verseRef": "Atos 14:20",
+      "options": [
+        { "id": "a", "text": "Derbe" },
+        { "id": "b", "text": "Roma" },
+        { "id": "c", "text": "Egito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "partiu com Barnabé em direção a Derbe",
+      "feedbackCorrect": "No dia seguinte seguem para Derbe.",
+      "feedbackWrong": {
+        "b": "O texto aponta Derbe, não Roma.",
+        "c": "O texto aponta Derbe, não o Egito."
+      },
+      "hint": "Veja o destino no fim do versículo.",
+      "learningObjective": "Lembrar o destino imediato após Listra.",
+      "evidence": ["Atos 14:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 14:22 comunica que se liga a este contexto?",
+      "verseRef": "Atos 14:22",
+      "passageA": { "ref": "Atos 14:22" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Paulo é apedrejado, se levanta e volta fortalecendo as igrejas."
+      },
+      "options": [
+        { "id": "a", "text": "Reino sem qualquer custo" },
+        { "id": "b", "text": "Entrada por muitas tribulações" },
+        { "id": "c", "text": "Abandono total da fé" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por meio de muitas tribulações, é necessário entrarmos no reino de Deus",
+      "feedbackCorrect": "O fortalecimento inclui a verdade das tribulações no caminho.",
+      "feedbackWrong": {
+        "a": "O texto fala de muitas tribulações, não de caminho sem custo.",
+        "c": "Eles exortam a permanecer firmes na fé."
+      },
+      "hint": "Leia o que eles mostram sobre o reino.",
+      "learningObjective": "Ligar Atos 14:22 ao fortalecimento após a oposição.",
+      "evidence": ["Atos 14:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 14:17, no entanto, Deus não deixou de dar testemunho de si mesmo fazendo o bem.",
+      "verseRef": "Atos 14:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "No entanto, ele não deixou de dar testemunho de si mesmo, pois fez o bem",
+      "feedbackCorrect": "\"No entanto\" marca o contraste: mesmo assim, Deus testemunha de si.",
+      "feedbackWrong": { "false": "Releia 14:17: No entanto, ele não deixou de dar testemunho." },
+      "hint": "Repare na abertura do versículo.",
+      "learningObjective": "Compreender o contraste do testemunho de Deus.",
+      "evidence": ["Atos 14:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 14:19, toque a palavra que marca a virada da oposição contra Paulo.",
+      "verseRef": "Atos 14:19",
+      "options": [
+        { "id": "a", "text": "Contudo" },
+        { "id": "b", "text": "judeus" },
+        { "id": "c", "text": "morto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contudo, alguns judeus de Antioquia e de Icônio chegaram",
+      "feedbackCorrect": "\"Contudo\" introduz a virada: a multidão é instigada.",
+      "feedbackWrong": {
+        "b": "\"Judeus\" nomeia quem chega; o marcador está no início.",
+        "c": "\"Morto\" é o que acreditavam; o marcador é \"Contudo\"."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 14:19.",
+      "evidence": ["Atos 14:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Atos 14:20–22 se relaciona com o apedrejamento de 14:19?",
+      "verseRef": "Atos 14:20–21",
+      "options": [
+        { "id": "a", "text": "Paulo se levanta e volta fortalecendo os discípulos" },
+        { "id": "b", "text": "Paulo abandona Barnabé e a missão" },
+        { "id": "c", "text": "Eles deixam de anunciar o evangelho" },
+        { "id": "d", "text": "A igreja some e não há retorno" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantou-se e entrou na cidade",
+      "feedbackCorrect": "O resultado não é desistência: ele se levanta e fortalece.",
+      "feedbackWrong": {
+        "b": "Ele parte com Barnabé e volta às cidades.",
+        "c": "Eles anunciam o evangelho e fazem discípulos.",
+        "d": "Eles retornam a Listra, Icônio e Antioquia."
+      },
+      "hint": "Siga o que acontece depois de \"Rodeado pelos discípulos\".",
+      "learningObjective": "Relacionar oposição e fortalecimento.",
+      "evidence": ["Atos 14:20–21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Atos 14:19–23?",
+      "verseRef": "Atos 14:19–20",
+      "options": [
+        { "id": "a", "text": "A multidão apedreja Paulo" },
+        { "id": "b", "text": "Paulo se levanta e segue a Derbe" },
+        { "id": "c", "text": "Eles voltam fortalecendo e constituindo líderes" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "apedrejaram Paulo",
+      "feedbackCorrect": "Oposição, retomada da viagem e cuidado das igrejas.",
+      "feedbackWrong": { "default": "Comece pelo apedrejamento; o cuidado fecha." },
+      "hint": "O fortalecimento vem depois da retomada da viagem.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": ["Atos 14:19–20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 14:22, o que eles fortalecem nos discípulos?",
+      "verseRef": "Atos 14:22",
+      "options": [
+        { "id": "a", "text": "ânimo" },
+        { "id": "b", "text": "medo" },
+        { "id": "c", "text": "orgulho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fortalecendo o ânimo dos discípulos",
+      "feedbackCorrect": "O cuidado pastoral começa pelo ânimo.",
+      "feedbackWrong": {
+        "b": "O texto fala de ânimo, não de medo.",
+        "c": "O texto fala de ânimo, não de orgulho."
+      },
+      "hint": "Complete: \"Fortalecendo o ___ dos discípulos\".",
+      "learningObjective": "Lembrar a ação pastoral de 14:22.",
+      "evidence": ["Atos 14:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 14:22 a João 16:33?",
+      "verseRef": "Atos 14:22",
+      "passageA": { "ref": "Atos 14:22" },
+      "passageB": { "ref": "João 16:33" },
+      "options": [
+        { "id": "a", "text": "Tribulação no caminho" },
+        { "id": "b", "text": "Mundo sem qualquer dor" },
+        { "id": "c", "text": "Fim de toda exortação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio de muitas tribulações",
+      "feedbackCorrect": "Os dois textos falam de tribulação no caminho do discípulo.",
+      "feedbackWrong": {
+        "b": "João e Atos falam de tribulação, não de isenção.",
+        "c": "Atos 14:22 é justamente uma exortação."
+      },
+      "hint": "Compare a palavra sobre pressão nos dois textos.",
+      "learningObjective": "Relacionar Atos 14:22 a João 16:33.",
+      "evidence": ["Atos 14:22", "João 16:33"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Atos 14:19–23 apresenta o apedrejamento como fim da missão, sem fortalecimento das igrejas.",
+      "verseRef": "Atos 14:21–22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Fortalecendo o ânimo dos discípulos, exortando-os a permanecer firmes na fé",
+      "feedbackCorrect": "Paulo se levanta, volta e fortalece; a oposição não encerra o cuidado.",
+      "feedbackWrong": { "true": "Releia 14:20–23: ele se levanta e fortalece as igrejas." },
+      "hint": "Veja o que acontece depois do apedrejamento.",
+      "learningObjective": "Interpretar a oposição como parte do caminho, não como fim.",
+      "evidence": ["Atos 14:21–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 14:22, toque o trecho que sustenta o custo de entrar no reino.",
+      "verseRef": "Atos 14:22",
+      "options": [
+        { "id": "a", "text": "muitas tribulações" },
+        { "id": "b", "text": "discípulos" },
+        { "id": "c", "text": "mostrando" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio de muitas tribulações, é necessário entrarmos no reino de Deus",
+      "feedbackCorrect": "O texto amarra a entrada no reino a muitas tribulações.",
+      "feedbackWrong": {
+        "b": "\"Discípulos\" são os ouvintes; o custo está em \"tribulações\".",
+        "c": "\"Mostrando\" introduz a frase; o conteúdo é as tribulações."
+      },
+      "hint": "Procure o meio pelo qual é necessário entrar.",
+      "learningObjective": "Sustentar com o texto o custo do reino.",
+      "evidence": ["Atos 14:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Atos 14:19–23 sustenta sobre a missão?",
+      "verseRef": "Atos 14:22–23",
+      "options": [
+        { "id": "a", "text": "A oposição não impede fortalecer e constituir igrejas" },
+        { "id": "b", "text": "Apedrejado, Paulo abandona Listra para sempre" },
+        { "id": "c", "text": "O reino se entra sem qualquer tribulação" },
+        { "id": "d", "text": "Eles evangelizam e não cuidam de líderes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tendo-lhes constituído presbíteros em cada igreja",
+      "feedbackCorrect": "Eles voltam, fortalecem e constituem presbíteros.",
+      "feedbackWrong": {
+        "b": "Ele entra de novo na cidade e depois retorna a Listra.",
+        "c": "O texto fala de muitas tribulações.",
+        "d": "Eles constituem presbíteros e os encomendam ao Senhor."
+      },
+      "hint": "Una 14:22 com a constituição de 14:23.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Atos 14:22–23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da fé sob pressão?",
+      "verseRef": "Atos 14:22",
+      "options": [
+        { "id": "a", "text": "Jesus anuncia tribulação no mundo" },
+        { "id": "b", "text": "Paulo mostra entrada por muitas tribulações" },
+        { "id": "c", "text": "Quem quer viver piedoso será perseguido" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "por meio de muitas tribulações",
+      "evidence": ["João 16:33", "Atos 14:22", "2 Timóteo 3:12"],
+      "feedbackCorrect": "Promessa de Jesus, exortação em Atos e aviso a Timóteo.",
+      "feedbackWrong": { "default": "Siga: João 16:33 → Atos 14:22 → 2 Timóteo 3:12." },
+      "hint": "Comece pela palavra de Jesus sobre o mundo.",
+      "learningObjective": "Ver o fio bíblico da fé sob tribulação."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 14:23, o que constituíram em cada igreja?",
+      "verseRef": "Atos 14:23",
+      "options": [
+        { "id": "a", "text": "presbíteros" },
+        { "id": "b", "text": "soldados" },
+        { "id": "c", "text": "mercadores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tendo-lhes constituído presbíteros em cada igreja",
+      "feedbackCorrect": "O cuidado inclui constituir presbíteros e encomendá-los ao Senhor.",
+      "feedbackWrong": {
+        "b": "O texto fala de presbíteros, não de soldados.",
+        "c": "O texto fala de presbíteros, não de mercadores."
+      },
+      "hint": "Complete: \"constituído ___ em cada igreja\".",
+      "learningObjective": "Lembrar o termo do cuidado pastoral.",
+      "evidence": ["Atos 14:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 14:22 a Atos 15:41?",
+      "verseRef": "Atos 14:22",
+      "passageA": { "ref": "Atos 14:22" },
+      "passageB": { "ref": "Atos 15:41" },
+      "options": [
+        { "id": "a", "text": "Fortalecimento das igrejas" },
+        { "id": "b", "text": "Abandono das comunidades" },
+        { "id": "c", "text": "Fim de toda exortação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fortalecendo o ânimo dos discípulos",
+      "feedbackCorrect": "O fortalecimento de 14:22 ecoa o de 15:41 nas igrejas.",
+      "feedbackWrong": {
+        "b": "Os dois textos mostram cuidado, não abandono.",
+        "c": "Ambos descrevem fortalecimento contínuo."
+      },
+      "hint": "Compare o cuidado com os discípulos nos dois textos.",
+      "learningObjective": "Ligar o fortalecimento de 14:22 ao de 15:41.",
+      "evidence": ["Atos 14:22", "Atos 15:41"]
+    }
+  ]
+}

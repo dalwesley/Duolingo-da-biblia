@@ -14,19 +14,21 @@ import '../services/content_catalog_service.dart';
 import '../services/progress_service.dart';
 import '../theme/app_theme.dart';
 import '../utils/appearance.dart';
+import '../utils/reading_growth.dart';
 import '../utils/reinforce_picker.dart';
 import '../utils/walk_stats.dart';
 import 'cinematic_icon.dart';
 import 'immersive_background.dart';
-import 'plus_perks.dart';
 import 'relic_panel.dart';
 import 'ui_primitives.dart';
 
-/// Perfil · Peregrino+ · "Meu estudo": acerto de primeira por modo, o
-/// gesto firme e o que reforçar, e as duas ações (treinar o ponto fraco e
-/// rever os erros explicados) num card só.
+/// Perfil · "Meu estudo": a evolução da leitura, o acerto de primeira por
+/// modo e os erros explicados são de todos. O gesto firme, o que reforçar e
+/// o treino na medida são do Peregrino+ ([plusOpen]).
 class ProfileAccuracyCard extends StatelessWidget {
-  const ProfileAccuracyCard({super.key});
+  final bool plusOpen;
+
+  const ProfileAccuracyCard({super.key, required this.plusOpen});
 
   @override
   Widget build(BuildContext context) {
@@ -59,13 +61,20 @@ class ProfileAccuracyCard extends StatelessWidget {
                 : l10n.profileAccuracyBody,
             style: AppTypography.body(size: 12, color: a.textSecondary),
           ),
+          const SizedBox(height: AppSpace.md),
+          _GrowthLine(
+            correct: progress.weekAnswerCorrect,
+            total: progress.weekAnswerTotal,
+          ),
           if (stats.answered > 0) ...[
             const SizedBox(height: AppSpace.md),
             for (final mode in TrailDifficulty.values) ...[
               _MeterRow(label: mode.labelPt, accuracy: stats.byMode[mode]!),
               const SizedBox(height: AppSpace.md),
             ],
-            if (strong != null || weak != null)
+            if (!plusOpen)
+              const _PlusGestureNudge()
+            else if (strong != null || weak != null)
               Row(
                 children: [
                   if (strong != null)
@@ -97,7 +106,7 @@ class ProfileAccuracyCard extends StatelessWidget {
               ),
           ],
           const SizedBox(height: AppSpace.md),
-          if (weak != null) ...[
+          if (plusOpen && weak != null) ...[
             _ReinforceButton(gesture: weak.$1, mode: stats.weakestMode),
             const SizedBox(height: AppSpace.sm),
           ],
@@ -119,52 +128,84 @@ class ProfileAccuracyCard extends StatelessWidget {
   }
 }
 
-/// Perfil sem Peregrino+: um cartão só no lugar da constância e do acerto.
-class ProfilePlusTeaser extends StatelessWidget {
-  const ProfilePlusTeaser({super.key});
+/// "Sua leitura": a maior evolução entre os modos, ou o aviso de que ela
+/// aparece depois de algumas semanas.
+class _GrowthLine extends StatelessWidget {
+  final Map<String, int> correct;
+  final Map<String, int> total;
+
+  const _GrowthLine({required this.correct, required this.total});
 
   @override
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    // Palco dourado no máximo: entre os cards azuis do perfil, a oferta
-    // precisa ler como o único lugar que pede a assinatura.
-    return GlassCard(
-      tint: AppRoles.reward,
-      glow: 1,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Row(
-            children: [
-              CinematicIcon(
-                glyph: CinematicGlyph.plus,
-                size: AppMetrics.leadingIcon,
-                accent: AppRoles.reward,
-              ),
-              const SizedBox(width: AppSpace.md),
-              Expanded(
-                child: Text(
-                  l10n.profilePlusTeaserTitle,
-                  style: AppTypography.title(size: 15, color: a.text),
-                ),
-              ),
-            ],
+    final up = ReadingGrowth.best(correct: correct, total: total);
+    String text;
+    var glyph = CinematicGlyph.rise;
+    if (up != null) {
+      text = l10n.profileGrowthUp(up.mode.labelPt, up.fromPct, up.toPct);
+    } else {
+      ReadingGrowth? steady;
+      for (final mode in TrailDifficulty.values) {
+        final g = ReadingGrowth.forMode(mode, correct: correct, total: total);
+        if (g != null && (steady == null || g.toPct > steady.toPct)) {
+          steady = g;
+        }
+      }
+      if (steady != null) {
+        text = l10n.profileGrowthSteady(steady.mode.labelPt, steady.toPct);
+      } else {
+        text = l10n.profileGrowthWaiting;
+        glyph = CinematicGlyph.seed;
+      }
+    }
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        CinematicIcon(
+          glyph: glyph,
+          size: AppMetrics.chipIcon,
+          accent: AppRoles.presence,
+          framed: false,
+        ),
+        const SizedBox(width: AppSpace.sm),
+        Expanded(
+          child: Text(
+            text,
+            style: AppTypography.title(size: 14, color: a.text),
           ),
-          const SizedBox(height: AppSpace.sm),
-          const PlusPerkCard(boxed: false),
-          const SizedBox(height: AppSpace.lg),
-          CopperCta(
-            label: l10n.weeklyReviewSeePlus,
-            expanded: true,
-            onTap: () => Navigator.of(context).push(
-              MaterialPageRoute<void>(
-                builder: (_) => const PaywallScreen(source: 'profile'),
-              ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Sem Peregrino+: no lugar do gesto firme / a reforçar, uma linha só.
+class _PlusGestureNudge extends StatelessWidget {
+  const _PlusGestureNudge();
+
+  @override
+  Widget build(BuildContext context) {
+    final a = Appearance.of(context);
+    return Row(
+      children: [
+        Expanded(
+          child: Text(
+            context.l10n.profilePlusGestureNudge,
+            style: AppTypography.body(size: 12, color: a.textSecondary),
+          ),
+        ),
+        TextCta(
+          label: context.l10n.profilePlusGestureNudgeCta,
+          color: AppRoles.reward,
+          onTap: () => Navigator.of(context).push(
+            MaterialPageRoute<void>(
+              builder: (_) => const PaywallScreen(source: 'profile_gestures'),
             ),
           ),
-        ],
-      ),
+        ),
+      ],
     );
   }
 }

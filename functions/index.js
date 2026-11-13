@@ -186,7 +186,15 @@ exports.onRoomMemberCreate = functions.firestore
     if (room.data()?.ownerId === uid) return;
 
     const members = await db.collection(`rooms/${code}/members`).get();
-    if (members.size <= ROOM_MEMBER_LIMIT) return;
+    if (members.size <= ROOM_MEMBER_LIMIT) {
+      await attributeReferral(db, {
+        inviteeUid: uid,
+        inviterUid: room.data()?.ownerId,
+        via: 'grupo',
+        code,
+      });
+      return;
+    }
 
     // Nem todo doc tem joinedAt (o save de progresso grava sem ele).
     const ownerId = room.data()?.ownerId;
@@ -196,7 +204,10 @@ exports.onRoomMemberCreate = functions.firestore
     const allowed = new Set(
       byArrival.slice(0, ROOM_MEMBER_LIMIT - 1).map((d) => d.id),
     );
-    if (allowed.has(uid)) return;
+    if (allowed.has(uid)) {
+      await attributeReferral(db, { inviteeUid: uid, inviterUid: ownerId, via: 'grupo', code });
+      return;
+    }
     await snap.ref.delete();
     logger.info('grupo cheio, membro removido', { code, uid });
   });
@@ -226,13 +237,22 @@ exports.onRoomNudge = functions.firestore
 
     const fromName = (after.fromName || 'Alguém').trim().split(/\s+/)[0] || 'Alguém';
     const roomName = clip(after.roomName || 'seu grupo', 40) || 'seu grupo';
+    // Recado pronto escolhido no app (sem texto livre). App antigo não manda
+    // `kind`: fica o chamado para estudar.
+    const waves = {
+      plan: `O propósito do grupo ${roomName} vai começar. Entra com a gente?`,
+      pray: 'Estou orando por você.',
+      cheer: `Força! O grupo ${roomName} está com você.`,
+      miss: `Sentimos sua falta no grupo ${roomName}.`,
+    };
+    const wave = waves[after.kind];
 
     try {
       await getMessaging().send({
         token,
         notification: {
-          title: `${fromName} chamou você`,
-          body: `O grupo ${roomName} está estudando. Vem junto.`,
+          title: wave ? `${fromName} acenou para você` : `${fromName} chamou você`,
+          body: wave || `O grupo ${roomName} está estudando. Vem junto.`,
         },
         data: {
           action: 'home',
@@ -410,7 +430,7 @@ function phoneDigits(value) {
 }
 
 /**
- * Formulários do site público (teste fechado e fale conosco).
+ * Formulários do site público (lista de espera iOS / tester e fale conosco).
  * Grava em site_inbox. O console do Firestore lê; o cliente não.
  */
 exports.submitSiteForm = functions
@@ -462,7 +482,7 @@ exports.submitSiteForm = functions
 
     if (kind === 'tester') {
       if (phoneDigits(phone).length < 10) {
-        res.status(400).json({ ok: false, error: 'Informe um WhatsApp com DDD.' });
+        res.status(400).json({ ok: false, error: 'Informe um celular com DDD.' });
         return;
       }
       if (!['android', 'ios', 'both'].includes(platform)) {
@@ -519,12 +539,18 @@ const revenueCat = require('./revenuecat');
 // derrubava toda chamada com 500.
 const revenueCatWebhookAuth = defineSecret('REVENUECAT_WEBHOOK_AUTH');
 
+const referral = require('./referral');
+
+// Chave secreta (sk_...) da API REST do RevenueCat: concede o mês
+// promocional. `firebase functions:secrets:set REVENUECAT_SECRET_KEY`.
+const revenueCatSecretKey = defineSecret('REVENUECAT_SECRET_KEY');
+
 /**
  * Grava `users/{uid}.plus*` (e o selo, no apoio avulso) a partir do
  * RevenueCat. Sem o segredo configurado, 503 — nunca grava sem conferir.
  */
 exports.revenueCatWebhook = functions
-  .runWith({ secrets: [revenueCatWebhookAuth] })
+  .runWith({ secrets: [revenueCatWebhookAuth, revenueCatSecretKey] })
   .region('us-central1')
   .https.onRequest(async (req, res) => {
     res.set('Cache-Control', 'no-store');
@@ -544,6 +570,7 @@ exports.revenueCatWebhook = functions
     const event = req.body && req.body.event;
     try {
       const out = await revenueCat.applyEvent(getFirestore(), event);
+      await referralFromEvent(getFirestore(), event);
       if (!out) {
         // Evento que não muda o Plus nem ocupa vaga de Pioneiro.
         res.status(200).json({ ok: true, ignored: true });
@@ -560,6 +587,84 @@ exports.revenueCatWebhook = functions
       logger.error('revenuecat: falha ao gravar', err);
       res.status(500).json({ ok: false, error: 'Falha ao gravar.' });
     }
+  });
+
+// ---- Convite que vira assinatura (ver referral.js) --------------------------
+
+/** Atribuição nunca derruba o trigger que a chama. */
+async function attributeReferral(db, input) {
+  try {
+    const saved = await referral.attribute(db, input);
+    if (saved) logger.info('indicação: convite atribuído', input);
+  } catch (e) {
+    logger.error('indicação: falha ao atribuir', { ...input, error: e.message });
+  }
+}
+
+function referralRc() {
+  const key = revenueCatSecretKey.value() || '';
+  return key ? referral.revenueCatClient(key) : null;
+}
+
+/**
+ * Depois do estado Plus gravado: 1º pagamento do convidado conta o mês
+ * de quem convidou; Plus que acabou solta um mês guardado. Falha aqui
+ * só loga — o webhook já gravou o principal e não deve ser reenviado.
+ */
+async function referralFromEvent(db, event) {
+  const rc = referralRc();
+  if (!rc) return;
+  const allowSandbox = process.env.REFERRAL_ALLOW_SANDBOX === '1';
+  try {
+    const paid = referral.paidUidFromEvent(event, { allowSandbox });
+    if (paid) await referral.rewardInviter(db, rc, paid, logger);
+    const expired = referral.expiredUidFromEvent(event);
+    if (expired) await referral.releaseBanked(db, rc, expired, logger);
+  } catch (e) {
+    logger.error('indicação: falha no webhook', { error: e.message });
+  }
+}
+
+/** Companhia aceita pelo link: quem entra de convidado foi chamado pelo host. */
+exports.onCompanionJoinReferral = functions.firestore
+  .document('companies/{code}')
+  .onWrite(async (change, context) => {
+    const after = change.after.exists ? change.after.data() : null;
+    const before = change.before.exists ? change.before.data() : null;
+    const guest = (after && after.guestId) || '';
+    if (!guest || (before && before.guestId === guest)) return;
+    await attributeReferral(getFirestore(), {
+      inviteeUid: guest,
+      inviterUid: after.hostId,
+      via: 'companhia',
+      code: context.params.code,
+    });
+  });
+
+/** Passe de trilha resgatado: quem recebeu foi chamado por quem deu. */
+exports.onTrailGiftReferral = functions.firestore
+  .document('trailGifts/{code}')
+  .onUpdate(async (change, context) => {
+    const before = change.before.data() || {};
+    const after = change.after.data() || {};
+    if (!after.toUid || before.toUid) return;
+    await attributeReferral(getFirestore(), {
+      inviteeUid: after.toUid,
+      inviterUid: after.fromUid,
+      via: 'passe',
+      code: context.params.code,
+    });
+  });
+
+/** Mês guardado de quem ficou sem Plus (fim do mês dado ou da assinatura). */
+exports.releaseReferralMonths = functions
+  .runWith({ secrets: [revenueCatSecretKey] })
+  .pubsub.schedule('every 60 minutes')
+  .onRun(async () => {
+    const rc = referralRc();
+    if (!rc) return;
+    const released = await referral.releaseAllBanked(getFirestore(), rc, logger);
+    if (released) logger.info('indicação: meses guardados entregues', { released });
   });
 
 // ---- Caravana: salas e fechamento semanal (league.js) — em pausa ------------

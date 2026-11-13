@@ -1,0 +1,928 @@
+{
+  "study": {
+    "passageRef": "Josué 23:1–8",
+    "passages": [
+      {
+        "ref": "Josué 18:1–10"
+      },
+      {
+        "ref": "Josué 20:1–9"
+      },
+      {
+        "ref": "Josué 22:10–20"
+      },
+      {
+        "ref": "Josué 23:1–11"
+      },
+      {
+        "ref": "Josué 24:1–13"
+      }
+    ],
+    "context": "Esta Travessia revisa Repouso e aliança: Siló e a herança, cidades de refúgio, o altar no Jordão, a exortação de Josué e a memória em Siquém.",
+    "keyword": "aliança",
+    "keywordGloss": "Fidelidade ao Senhor que deu a terra e pede memória.",
+    "focusQuestion": "Que aliança o Senhor já selou e você precisa guardar?",
+    "reflectionPrompts": [
+      "Remissos ou posseiros",
+      "Refúgio e justiça",
+      "Apegar-se ao Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Israel arma a tenda em Siló.",
+        "evidenceRef": "Josué 18:1",
+        "evidenceSpan": "ali armaram a tenda da congregação"
+      },
+      {
+        "text": "Sete tribos ainda não tinham herança.",
+        "evidenceRef": "Josué 18:2",
+        "evidenceSpan": "sete tribos que ainda não haviam recebido"
+      },
+      {
+        "text": "Josué pergunta até quando serão remissos.",
+        "evidenceRef": "Josué 18:3",
+        "evidenceSpan": "Até quando vocês serão remissos"
+      },
+      {
+        "text": "Cidades de refúgio são separadas.",
+        "evidenceRef": "Josué 20:2",
+        "evidenceSpan": "Separem para vocês as cidades de refúgio"
+      },
+      {
+        "text": "O altar no Jordão era grande e vistoso.",
+        "evidenceRef": "Josué 22:10",
+        "evidenceSpan": "um altar grande e vistoso"
+      },
+      {
+        "text": "O Senhor concedeu descanso a Israel.",
+        "evidenceRef": "Josué 23:1",
+        "evidenceSpan": "o Senhor concedeu descanso a Israel"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "remissos",
+        "gloss": "Adiar a posse da terra já dada."
+      },
+      {
+        "term": "refúgio",
+        "gloss": "Proteção para quem mata sem intenção."
+      },
+      {
+        "term": "apegai-vos",
+        "gloss": "Permanecer fiéis ao Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Siló e a partilha da terra",
+        "evidenceRef": "Josué 18:1–8"
+      },
+      {
+        "label": "Cidades de refúgio",
+        "evidenceRef": "Josué 20:1–7"
+      },
+      {
+        "label": "Altar e suspeita de infidelidade",
+        "evidenceRef": "Josué 22:10–16"
+      },
+      {
+        "label": "Descanso e exortação em Siquém",
+        "evidenceRef": "Josué 23:1–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Cidades para o homicida sem intenção.",
+        "marker": "Para que",
+        "evidenceRef": "Josué 20:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Senhor lutou; por isso as nações caíram.",
+        "marker": "porque",
+        "evidenceRef": "Josué 23:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Pais serviram outros deuses; porém Deus tomou Abraão.",
+        "marker": "porém",
+        "evidenceRef": "Josué 24:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 35:11",
+        "bridge": "Cidades de refúgio"
+      },
+      {
+        "ref": "Deuteronômio 6:5",
+        "bridge": "Amar e apegar-se ao Senhor"
+      },
+      {
+        "ref": "Êxodo 20:3",
+        "bridge": "Não ter outros deuses"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A terra se possui sem esforço.",
+        "why": "Josué repreende a remissão em 18:3."
+      },
+      {
+        "text": "O altar no Jordão prova rebelião sem diálogo.",
+        "why": "Israel envia Finéias antes da peleja."
+      },
+      {
+        "text": "Descanso dispensa guardar a Lei.",
+        "why": "Josué manda esforçar-se na Lei em 23:6."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 23:8, a que Josué manda o povo apegar-se?",
+    "centralInsight": "A terra é dom do Senhor; a aliança pede memória e fidelidade"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 18:1, Israel arma a tenda da congregação em Siló.",
+      "verseRef": "Josué 18:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "ali armaram a tenda da congregação",
+      "feedbackCorrect": "Tenda em Siló.",
+      "feedbackWrong": {
+        "false": "O lugar é Siló."
+      },
+      "hint": "Veja onde armaram.",
+      "learningObjective": "Observar Siló.",
+      "evidence": [
+        "Josué 18:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 18:3, toque a acusação de Josué.",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "remissos"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vocês serão remissos em ir possuir",
+      "feedbackCorrect": "Remissos.",
+      "feedbackWrong": {
+        "b": "Senhor deu a terra.",
+        "c": "Terra é o dom."
+      },
+      "hint": "Veja o adjetivo.",
+      "learningObjective": "Identificar remissos.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 20:2, o que Israel deve separar?",
+      "verseRef": "Josué 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Carros de guerra"
+        },
+        {
+          "id": "c",
+          "text": "Altar em Peor"
+        },
+        {
+          "id": "d",
+          "text": "Sortes em Gibeão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Separem para vocês as cidades de refúgio",
+      "feedbackCorrect": "Cidades de refúgio.",
+      "feedbackWrong": {
+        "b": "Não são carros.",
+        "c": "Não é Peor.",
+        "d": "Não é Gibeão."
+      },
+      "hint": "Leia o imperativo.",
+      "learningObjective": "Reconhecer o refúgio.",
+      "evidence": [
+        "Josué 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 20:3 na ordem do texto.",
+      "verseRef": "Josué 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "o homicida que, por engano, matar"
+        },
+        {
+          "id": "b",
+          "text": "sem intenção, possa fugir para ali"
+        },
+        {
+          "id": "c",
+          "text": "refúgio contra o vingador do sangue"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "esses lugares serão refúgio contra o vingador do sangue",
+      "feedbackCorrect": "Homicida, fuga e refúgio.",
+      "feedbackWrong": {
+        "default": "Comece pelo homicida."
+      },
+      "hint": "Contra quem é o refúgio?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 22:10, complete: um altar grande e ___.",
+      "verseRef": "Josué 22:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "vistoso"
+        },
+        {
+          "id": "b",
+          "text": "simples"
+        },
+        {
+          "id": "c",
+          "text": "escondido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um altar grande e vistoso",
+      "feedbackCorrect": "Vistoso.",
+      "feedbackWrong": {
+        "b": "Não é simples.",
+        "c": "Não é escondido."
+      },
+      "hint": "Veja o segundo adjetivo.",
+      "learningObjective": "Lembrar vistoso.",
+      "evidence": [
+        "Josué 22:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 23:1 comunica que se liga a este contexto?",
+      "verseRef": "Josué 23:1",
+      "passageA": {
+        "ref": "Josué 23:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Após o descanso, Josué exorta Israel a permanecer fiel."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Descanso e exortação"
+        },
+        {
+          "id": "b",
+          "text": "Guerra sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Sem herança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor concedeu descanso a Israel",
+      "feedbackCorrect": "Descanso precede a exortação.",
+      "feedbackWrong": {
+        "b": "Há descanso.",
+        "c": "Há exortação."
+      },
+      "hint": "Veja o que o Senhor concedeu.",
+      "learningObjective": "Ligar descanso e aliança.",
+      "evidence": [
+        "Josué 23:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 23:8, toque o imperativo.",
+      "verseRef": "Josué 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "apegai-vos"
+        },
+        {
+          "id": "b",
+          "text": "nações"
+        },
+        {
+          "id": "c",
+          "text": "deuses"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "Apegai-vos.",
+      "feedbackWrong": {
+        "b": "Nações são o risco.",
+        "c": "Deuses alheios."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Tocar apegar-se.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o início do bloco em Siló.",
+      "verseRef": "Josué 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Toda a congregação dos filhos de Israel se reuniu em Siló"
+        },
+        {
+          "id": "b",
+          "text": "ali armaram a tenda da congregação"
+        },
+        {
+          "id": "c",
+          "text": "a terra se encontrava sujeita diante deles"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a terra se encontrava sujeita diante deles",
+      "feedbackCorrect": "Reunião, tenda e terra.",
+      "feedbackWrong": {
+        "default": "Comece pela reunião."
+      },
+      "hint": "O que fecha o verso?",
+      "learningObjective": "Seguir 18:1.",
+      "evidence": [
+        "Josué 18:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 20:3, as cidades protegem quem mata de propósito, com ódio prévio.",
+      "verseRef": "Josué 20:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "matar alguma pessoa sem intenção",
+      "feedbackCorrect": "É sem intenção.",
+      "feedbackWrong": {
+        "true": "Leia sem intenção."
+      },
+      "hint": "Veja a intenção.",
+      "learningObjective": "Ver o propósito do refúgio.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 20:3, toque o marcador de propósito.",
+      "verseRef": "Josué 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "vingador"
+        },
+        {
+          "id": "c",
+          "text": "engano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que o homicida que, por engano",
+      "feedbackCorrect": "Para que.",
+      "feedbackWrong": {
+        "b": "Vingador é a ameaça.",
+        "c": "Engano descreve o ato."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o propósito.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Josué 23:3 faz?",
+      "verseRef": "Josué 23:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor lutou; por isso as nações caíram"
+        },
+        {
+          "id": "b",
+          "text": "Israel venceu sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Josué nega a ajuda de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Descanso apaga a memória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque o Senhor, seu Deus, é quem lutou por vocês",
+      "feedbackCorrect": "Causa divina.",
+      "feedbackWrong": {
+        "b": "Não lutou sozinho.",
+        "c": "Há luta de Deus.",
+        "d": "Há memória."
+      },
+      "hint": "Leia o porque.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Josué 23:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Siló e a partilha da terra"
+        },
+        {
+          "id": "b",
+          "text": "Cidades de refúgio"
+        },
+        {
+          "id": "c",
+          "text": "Altar e suspeita de infidelidade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Até quando vocês serão remissos",
+      "feedbackCorrect": "Siló, refúgio e altar.",
+      "feedbackWrong": {
+        "default": "Comece por Siló."
+      },
+      "hint": "O que vem após o refúgio?",
+      "learningObjective": "Ordenar a sequência",
+      "evidence": [
+        "Josué 18:3",
+        "Josué 22:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 23:6, complete: Esforcem-se, pois, muito para guardar e ___.",
+      "verseRef": "Josué 23:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "cumprir"
+        },
+        {
+          "id": "b",
+          "text": "esquecer"
+        },
+        {
+          "id": "c",
+          "text": "queimar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guardar e cumprir tudo o que está escrito",
+      "feedbackCorrect": "Cumprir.",
+      "feedbackWrong": {
+        "b": "Não é esquecer.",
+        "c": "Não é queimar."
+      },
+      "hint": "Veja o segundo verbo.",
+      "learningObjective": "Lembrar cumprir.",
+      "evidence": [
+        "Josué 23:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 20:2 a Números 35:11?",
+      "verseRef": "Josué 20:2",
+      "passageA": {
+        "ref": "Josué 20:2"
+      },
+      "passageB": {
+        "ref": "Números 35:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Altar de Peor"
+        },
+        {
+          "id": "c",
+          "text": "Sortes em Siló"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Separem para vocês as cidades de refúgio",
+      "feedbackCorrect": "Mesmo mandato.",
+      "feedbackWrong": {
+        "b": "Não é Peor.",
+        "c": "Não é Siló."
+      },
+      "hint": "Compare o mandato.",
+      "learningObjective": "Ligar a Números.",
+      "evidence": [
+        "Josué 20:2",
+        "Números 35:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 24:3, toque o marcador de contraste.",
+      "verseRef": "Josué 24:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Abraão"
+        },
+        {
+          "id": "c",
+          "text": "Isaque"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu, porém, tomei Abraão",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Abraão é o pai.",
+        "c": "Isaque é o filho."
+      },
+      "hint": "Procure após Eu.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Josué 24:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene descanso e fidelidade.",
+      "verseRef": "Josué 23:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor concede descanso"
+        },
+        {
+          "id": "b",
+          "text": "Josué exorta a guardar a Lei"
+        },
+        {
+          "id": "c",
+          "text": "Povo deve apegar-se ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor concedeu descanso a Israel",
+      "feedbackCorrect": "Descanso, Lei e apego.",
+      "feedbackWrong": {
+        "default": "Comece pelo descanso."
+      },
+      "hint": "O que fecha com apegar-se?",
+      "learningObjective": "Ordenar a exortação",
+      "evidence": [
+        "Josué 23:1",
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 23:6, o descanso da terra dispensa guardar o Livro da Lei de Moisés.",
+      "verseRef": "Josué 23:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Esforcem-se, pois, muito para guardar e cumprir",
+      "feedbackCorrect": "Exige esforço.",
+      "feedbackWrong": {
+        "true": "Esforcem-se para cumprir."
+      },
+      "hint": "Leia o imperativo.",
+      "learningObjective": "Avaliar descanso e Lei.",
+      "evidence": [
+        "Josué 23:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 22:16, toque a acusação central.",
+      "verseRef": "Josué 22:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "infidelidade"
+        },
+        {
+          "id": "b",
+          "text": "altar"
+        },
+        {
+          "id": "c",
+          "text": "congregação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Que infidelidade é esta que cometestes",
+      "feedbackCorrect": "Infidelidade.",
+      "feedbackWrong": {
+        "b": "Altar é o objeto da acusação.",
+        "c": "Congregação é quem fala."
+      },
+      "hint": "Veja a pergunta.",
+      "learningObjective": "Tocar a acusação.",
+      "evidence": [
+        "Josué 22:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une remissão e aliança neste bloco?",
+      "verseRef": "Josué 18:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adiar a posse contradiz a terra já dada"
+        },
+        {
+          "id": "b",
+          "text": "Remissão é virtude"
+        },
+        {
+          "id": "c",
+          "text": "Só Siló importa, sem posse"
+        },
+        {
+          "id": "d",
+          "text": "A Lei cancela a herança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "remissos em ir possuir a terra que o Senhor",
+      "feedbackCorrect": "A terra já foi dada.",
+      "feedbackWrong": {
+        "b": "Não é virtude.",
+        "c": "Há posse.",
+        "d": "Há Lei e herança."
+      },
+      "hint": "Una remissão e dom.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 18:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da aliança.",
+      "verseRef": "Josué 24:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terra partilhada e refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Suspeita no altar e descanso"
+        },
+        {
+          "id": "c",
+          "text": "Memória da salvação em Siquém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Josué reuniu todas as tribos de Israel em Siquém",
+      "feedbackCorrect": "Partilha, crise e memória.",
+      "feedbackWrong": {
+        "default": "Comece pela partilha."
+      },
+      "hint": "Onde fecha a memória?",
+      "learningObjective": "Encadear a aliança",
+      "evidence": [
+        "Josué 18:1",
+        "Josué 24:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 18:1, complete: a terra se encontrava ___ diante deles.",
+      "verseRef": "Josué 18:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "sujeita"
+        },
+        {
+          "id": "b",
+          "text": "perdida"
+        },
+        {
+          "id": "c",
+          "text": "oculta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra se encontrava sujeita diante deles",
+      "feedbackCorrect": "Sujeita.",
+      "feedbackWrong": {
+        "b": "Não é perdida.",
+        "c": "Não é oculta."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar sujeita.",
+      "evidence": [
+        "Josué 18:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 23:8 a Deuteronômio 6:5?",
+      "verseRef": "Josué 23:8",
+      "passageA": {
+        "ref": "Josué 23:8"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 6:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar e apegar-se ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Servir outros deuses"
+        },
+        {
+          "id": "c",
+          "text": "Esquecer a Lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "Apego ao Senhor.",
+      "feedbackWrong": {
+        "b": "Não é outros deuses.",
+        "c": "Não é esquecer."
+      },
+      "hint": "Compare o apego.",
+      "learningObjective": "Ligar a Deuteronômio.",
+      "evidence": [
+        "Josué 23:8",
+        "Deuteronômio 6:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 23:1, toque o que o Senhor concedeu.",
+      "verseRef": "Josué 23:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "descanso"
+        },
+        {
+          "id": "b",
+          "text": "inimigos"
+        },
+        {
+          "id": "c",
+          "text": "idade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor concedeu descanso a Israel",
+      "feedbackCorrect": "Descanso.",
+      "feedbackWrong": {
+        "b": "Inimigos são o contexto.",
+        "c": "Idade descreve Josué."
+      },
+      "hint": "Veja o objeto do verbo.",
+      "learningObjective": "Tocar o descanso.",
+      "evidence": [
+        "Josué 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene crise e fidelidade pedida.",
+      "verseRef": "Josué 22:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Altar grande no Jordão"
+        },
+        {
+          "id": "b",
+          "text": "Acusação de infidelidade"
+        },
+        {
+          "id": "c",
+          "text": "Exortação a apegar-se"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "um altar grande e vistoso",
+      "feedbackCorrect": "Altar, acusação e apego.",
+      "feedbackWrong": {
+        "default": "Comece pelo altar."
+      },
+      "hint": "O que fecha a exortação?",
+      "learningObjective": "Encadear crise e fidelidade",
+      "evidence": [
+        "Josué 22:10",
+        "Josué 23:8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Atos 11:19–24",
+    "passages": [
+      {
+        "ref": "Atos 11:19–24"
+      },
+      {
+        "ref": "Atos 11:25–26"
+      }
+    ],
+    "context": "Após a morte de Estêvão, crentes dispersos anunciam a palavra. Em Antioquia, alguns falam também aos gregos, e a igreja de Jerusalém envia Barnabé.",
+    "keyword": "cristãos",
+    "keywordGloss": "Nome dado pela primeira vez em Antioquia aos discípulos de Jesus.",
+    "focusQuestion": "Sua fé é reconhecida pelos outros como pertencente a Cristo?",
+    "reflectionPrompts": [
+      "A palavra aos gregos",
+      "A graça vista",
+      "Chamados cristãos"
+    ],
+    "facts": [
+      {
+        "text": "Os dispersos pela tribulação de Estêvão anunciavam a palavra só aos judeus.",
+        "evidenceRef": "Atos 11:19",
+        "evidenceSpan": "não anunciando a palavra a ninguém, senão somente aos judeus"
+      },
+      {
+        "text": "Homens de Chipre e Cirene também falavam aos gregos o evangelho do Senhor Jesus.",
+        "evidenceRef": "Atos 11:20",
+        "evidenceSpan": "também falavam aos gregos, anunciando-lhes o evangelho do Senhor Jesus"
+      },
+      {
+        "text": "A mão do Senhor estava com eles, e muitos creram e se converteram.",
+        "evidenceRef": "Atos 11:21",
+        "evidenceSpan": "a mão do Senhor estava com eles; e um grande número de pessoas creu"
+      },
+      {
+        "text": "Jerusalém enviou Barnabé até Antioquia.",
+        "evidenceRef": "Atos 11:22",
+        "evidenceSpan": "enviaram Barnabé até Antioquia"
+      },
+      {
+        "text": "Barnabé viu a graça de Deus, ficou alegre e exortou a permanecer no Senhor.",
+        "evidenceRef": "Atos 11:23",
+        "evidenceSpan": "ao ver a graça de Deus, ficou muito alegre"
+      },
+      {
+        "text": "Em Antioquia, os discípulos foram chamados pela primeira vez de cristãos.",
+        "evidenceRef": "Atos 11:26",
+        "evidenceSpan": "os discípulos foram chamados pela primeira vez de cristãos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cristãos",
+        "gloss": "Nome novo dos discípulos em Antioquia: ligados a Cristo."
+      },
+      {
+        "term": "graça",
+        "gloss": "O que Barnabé viu em Antioquia e o deixou alegre."
+      },
+      {
+        "term": "evangelho",
+        "gloss": "A boa notícia do Senhor Jesus anunciada também aos gregos."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A dispersão anuncia só aos judeus",
+        "evidenceRef": "Atos 11:19"
+      },
+      {
+        "label": "Alguns anunciam também aos gregos",
+        "evidenceRef": "Atos 11:20–21"
+      },
+      {
+        "label": "Barnabé vê a graça e exorta",
+        "evidenceRef": "Atos 11:22–24"
+      },
+      {
+        "label": "Saulo ensina e nasce o nome cristãos",
+        "evidenceRef": "Atos 11:25–26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Com a mão do Senhor, um grande número creu e se converteu.",
+        "marker": "e",
+        "evidenceRef": "Atos 11:21"
+      },
+      {
+        "kind": "causa",
+        "text": "Barnabé era bom e repleto do Espírito e de fé; por isso muitos se uniram ao Senhor.",
+        "marker": "Porque",
+        "evidenceRef": "Atos 11:24"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois de ver a graça, Barnabé busca Saulo e ensinam juntos.",
+        "marker": "E",
+        "evidenceRef": "Atos 11:25"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 11:18",
+        "bridge": "Gentios também se arrependem"
+      },
+      {
+        "ref": "Atos 26:28",
+        "bridge": "O nome cristão ecoa"
+      },
+      {
+        "ref": "1 Pedro 4:16",
+        "bridge": "Sofrer como cristão"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Em Antioquia o evangelho ficou só para judeus.",
+        "why": "Homens de Chipre e Cirene também falavam aos gregos, e muitos se converteram."
+      },
+      {
+        "text": "Barnabé chegou zangado e mandou a igreja parar.",
+        "why": "Ele viu a graça, ficou alegre e exortou a permanecer no Senhor."
+      },
+      {
+        "text": "O nome \"cristãos\" já era usado desde Jerusalém.",
+        "why": "O texto diz que em Antioquia foram chamados assim pela primeira vez."
+      }
+    ],
+    "centralInsight": "Em Antioquia, a graça de Deus é vista, e os discípulos ganham o nome de cristãos.",
+    "anchorQuestion": "Onde os discípulos foram chamados cristãos pela primeira vez?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 11:20, homens de Chipre e de Cirene também anunciavam o evangelho aos gregos.",
+      "verseRef": "Atos 11:20",
+      "correctOptionId": "true",
+      "evidenceSpan": "também falavam aos gregos, anunciando-lhes o evangelho do Senhor Jesus",
+      "feedbackCorrect": "Além dos judeus, o anúncio chega aos gregos em Antioquia.",
+      "feedbackWrong": {
+        "false": "Releia 11:20: eles também falavam aos gregos."
+      },
+      "hint": "Veja a quem eles falavam em Antioquia.",
+      "learningObjective": "Observar o anúncio aos gregos.",
+      "evidence": [
+        "Atos 11:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 11:22, toque quem Jerusalém enviou a Antioquia.",
+      "verseRef": "Atos 11:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Barnabé"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Antioquia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram Barnabé até Antioquia",
+      "feedbackCorrect": "Barnabé é o enviado da igreja em Jerusalém.",
+      "feedbackWrong": {
+        "b": "Estêvão aparece na tribulação anterior, não como enviado aqui.",
+        "c": "Chipre é origem de alguns pregadores, não o enviado."
+      },
+      "hint": "Procure o nome no fim do versículo.",
+      "learningObjective": "Identificar Barnabé como enviado.",
+      "evidence": [
+        "Atos 11:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 11:26, como os discípulos foram chamados em Antioquia?",
+      "verseRef": "Atos 11:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fariseus"
+        },
+        {
+          "id": "b",
+          "text": "Cristãos"
+        },
+        {
+          "id": "c",
+          "text": "Zelotes"
+        },
+        {
+          "id": "d",
+          "text": "Saduceus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "foram chamados pela primeira vez de cristãos",
+      "feedbackCorrect": "Pela primeira vez, o nome é cristãos.",
+      "feedbackWrong": {
+        "a": "O texto diz cristãos, não fariseus.",
+        "c": "O texto diz cristãos, não zelotes.",
+        "d": "O texto diz cristãos, não saduceus."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Observar o novo nome dos discípulos.",
+      "evidence": [
+        "Atos 11:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 11:23 na ordem do texto.",
+      "verseRef": "Atos 11:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao chegar e ao ver a graça de Deus"
+        },
+        {
+          "id": "b",
+          "text": "ficou muito alegre"
+        },
+        {
+          "id": "c",
+          "text": "e exortou a todos a que permanecessem no Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ao ver a graça de Deus, ficou muito alegre",
+      "feedbackCorrect": "Ele vê a graça, alegra-se e exorta a permanecer.",
+      "feedbackWrong": {
+        "default": "Comece pela chegada e pela graça vista."
+      },
+      "hint": "O versículo começa com a chegada.",
+      "learningObjective": "Reconhecer a sequência de Atos 11:23.",
+      "evidence": [
+        "Atos 11:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 11:21, a mão de quem estava com eles?",
+      "verseRef": "Atos 11:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Herodes"
+        },
+        {
+          "id": "c",
+          "text": "Candace"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a mão do Senhor estava com eles",
+      "feedbackCorrect": "É a mão do Senhor que acompanha o anúncio.",
+      "feedbackWrong": {
+        "b": "O texto fala do Senhor, não de Herodes.",
+        "c": "O texto fala do Senhor, não de Candace."
+      },
+      "hint": "Complete: \"a mão do ___\".",
+      "learningObjective": "Lembrar quem sustentava o anúncio.",
+      "evidence": [
+        "Atos 11:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 11:26 comunica que se liga a este contexto?",
+      "verseRef": "Atos 11:26",
+      "passageA": {
+        "ref": "Atos 11:26"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Em Antioquia os discípulos recebem pela primeira vez o nome de cristãos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O nome veio de Jerusalém antes"
+        },
+        {
+          "id": "b",
+          "text": "O nome cristãos nasce ali"
+        },
+        {
+          "id": "c",
+          "text": "Eles recusaram qualquer nome"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "foram chamados pela primeira vez de cristãos",
+      "feedbackCorrect": "\"Pela primeira vez\" marca Antioquia como origem do nome.",
+      "feedbackWrong": {
+        "a": "O texto diz primeira vez em Antioquia.",
+        "c": "Eles foram chamados cristãos; o nome existe."
+      },
+      "hint": "Repare na expressão \"pela primeira vez\".",
+      "learningObjective": "Ligar Atos 11:26 ao nascimento do nome.",
+      "evidence": [
+        "Atos 11:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 11:24, Barnabé é descrito como homem bom, repleto do Espírito Santo e de fé.",
+      "verseRef": "Atos 11:24",
+      "correctOptionId": "true",
+      "evidenceSpan": "era um homem bom, repleto do Espírito Santo e de fé",
+      "feedbackCorrect": "O \"Porque\" explica o fruto: muitos se uniram ao Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 11:24: homem bom, repleto do Espírito e de fé."
+      },
+      "hint": "Leia a descrição de Barnabé.",
+      "learningObjective": "Compreender a causa do fruto em Antioquia.",
+      "evidence": [
+        "Atos 11:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 11:24, toque a palavra que introduz a razão do caráter de Barnabé.",
+      "verseRef": "Atos 11:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "muitos"
+        },
+        {
+          "id": "c",
+          "text": "uniram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque era um homem bom",
+      "feedbackCorrect": "\"Porque\" liga o caráter de Barnabé ao que acontece em seguida.",
+      "feedbackWrong": {
+        "b": "\"Muitos\" é o resultado; a razão começa antes.",
+        "c": "\"Uniram\" é o fruto; o marcador da causa é outra palavra."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Atos 11:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Atos 11:20 se relaciona com Atos 11:19?",
+      "verseRef": "Atos 11:19–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alguns ampliam o anúncio também aos gregos"
+        },
+        {
+          "id": "b",
+          "text": "Todos param de anunciar a palavra"
+        },
+        {
+          "id": "c",
+          "text": "O anúncio volta só para Jerusalém"
+        },
+        {
+          "id": "d",
+          "text": "Barnabé proíbe falar aos gregos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "também falavam aos gregos",
+      "feedbackCorrect": "Depois do anúncio só aos judeus, alguns atravessam a fronteira.",
+      "feedbackWrong": {
+        "b": "O anúncio continua e se amplia.",
+        "c": "A cena está em Antioquia, expandindo o alcance.",
+        "d": "Barnabé ainda não chegou; quem fala são homens de Chipre e Cirene."
+      },
+      "hint": "Compare \"somente aos judeus\" com \"também aos gregos\".",
+      "learningObjective": "Relacionar a ampliação do anúncio.",
+      "evidence": [
+        "Atos 11:19–20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Antioquia?",
+      "verseRef": "Atos 11:22–23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém envia Barnabé a Antioquia"
+        },
+        {
+          "id": "b",
+          "text": "Ele vê a graça e fica alegre"
+        },
+        {
+          "id": "c",
+          "text": "Ele exorta a permanecer no Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ficou muito alegre e exortou a todos",
+      "feedbackCorrect": "Envio, alegria e exortação: o cuidado pastoral.",
+      "feedbackWrong": {
+        "default": "Comece pelo envio; a exortação vem por último."
+      },
+      "hint": "Quem chega primeiro a Antioquia neste movimento?",
+      "learningObjective": "Compreender o movimento de Barnabé.",
+      "evidence": [
+        "Atos 11:22–23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 11:23, o que Barnabé viu e o deixou alegre?",
+      "verseRef": "Atos 11:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "graça"
+        },
+        {
+          "id": "b",
+          "text": "ruína"
+        },
+        {
+          "id": "c",
+          "text": "guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ao ver a graça de Deus",
+      "feedbackCorrect": "Ele reconhece a graça de Deus naquela igreja.",
+      "feedbackWrong": {
+        "b": "O texto fala de graça, não de ruína.",
+        "c": "O texto fala de graça, não de guerra."
+      },
+      "hint": "Complete: \"ao ver a ___ de Deus\".",
+      "learningObjective": "Lembrar o que Barnabé reconheceu.",
+      "evidence": [
+        "Atos 11:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 11:20 a Atos 11:18?",
+      "verseRef": "Atos 11:20",
+      "passageA": {
+        "ref": "Atos 11:20"
+      },
+      "passageB": {
+        "ref": "Atos 11:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gentios também se arrependem"
+        },
+        {
+          "id": "b",
+          "text": "Só judeus podem crer"
+        },
+        {
+          "id": "c",
+          "text": "O evangelho para em Chipre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "anunciando-lhes o evangelho do Senhor Jesus",
+      "feedbackCorrect": "O anúncio aos gregos ecoa o reconhecimento: Deus dá vida também aos gentios.",
+      "feedbackWrong": {
+        "b": "11:18 e 11:20 apontam para além de Israel.",
+        "c": "Em Antioquia o evangelho avança aos gregos."
+      },
+      "hint": "Compare o alcance em 11:18 com o anúncio em 11:20.",
+      "learningObjective": "Relacionar a abertura aos gentios.",
+      "evidence": [
+        "Atos 11:20",
+        "Atos 11:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Atos 11:26 apresenta o nome \"cristãos\" como algo que já existia desde Jerusalém.",
+      "verseRef": "Atos 11:26",
+      "correctOptionId": "false",
+      "evidenceSpan": "foram chamados pela primeira vez de cristãos",
+      "feedbackCorrect": "\"Pela primeira vez\" situa o nome em Antioquia, não antes.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 11:26: pela primeira vez."
+      },
+      "hint": "Repare na expressão \"pela primeira vez\".",
+      "learningObjective": "Interpretar a novidade do nome cristãos.",
+      "evidence": [
+        "Atos 11:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 11:26, toque o trecho que sustenta a novidade do nome.",
+      "verseRef": "Atos 11:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "primeira vez"
+        },
+        {
+          "id": "b",
+          "text": "um ano"
+        },
+        {
+          "id": "c",
+          "text": "multidão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela primeira vez de cristãos",
+      "feedbackCorrect": "\"Primeira vez\" marca o começo do nome cristãos.",
+      "feedbackWrong": {
+        "b": "\"Um ano\" marca o tempo de ensino, não a novidade do nome.",
+        "c": "\"Multidão\" é quem foi ensinada; a novidade está no nome."
+      },
+      "hint": "Procure a expressão ligada a \"cristãos\".",
+      "learningObjective": "Sustentar com o texto a origem do nome.",
+      "evidence": [
+        "Atos 11:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Atos 11:19–26 sustenta sobre Antioquia?",
+      "verseRef": "Atos 11:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "A graça vista gera igreja e o nome cristãos"
+        },
+        {
+          "id": "b",
+          "text": "O evangelho ficou só para judeus"
+        },
+        {
+          "id": "c",
+          "text": "Barnabé rejeitou o que viu em Antioquia"
+        },
+        {
+          "id": "d",
+          "text": "O nome cristãos já vinha de Jerusalém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os discípulos foram chamados pela primeira vez de cristãos",
+      "feedbackCorrect": "Graça vista, ensino e um nome novo: igreja reconhecida como de Cristo.",
+      "feedbackWrong": {
+        "b": "Também anunciavam aos gregos.",
+        "c": "Ele ficou alegre e exortou a permanecer.",
+        "d": "O texto diz primeira vez em Antioquia."
+      },
+      "hint": "Una a alegria de Barnabé ao fim de 11:26.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Atos 11:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do nome cristão?",
+      "verseRef": "Atos 11:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em Antioquia os discípulos são chamados cristãos"
+        },
+        {
+          "id": "b",
+          "text": "O nome cristão ecoa diante de autoridades"
+        },
+        {
+          "id": "c",
+          "text": "Sofre-se como cristão sem se envergonhar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "chamados pela primeira vez de cristãos",
+      "evidence": [
+        "Atos 11:26",
+        "Atos 26:28",
+        "1 Pedro 4:16"
+      ],
+      "feedbackCorrect": "O nome nasce, ecoa e se torna identidade sob sofrimento.",
+      "feedbackWrong": {
+        "default": "Siga: At 11:26 → At 26:28 → 1 Pe 4:16."
+      },
+      "hint": "Comece pelo nascimento do nome em Antioquia.",
+      "learningObjective": "Ver o fio do nome cristão na Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 11:26, que nome os discípulos receberam pela primeira vez?",
+      "verseRef": "Atos 11:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "cristãos"
+        },
+        {
+          "id": "b",
+          "text": "zelotes"
+        },
+        {
+          "id": "c",
+          "text": "fariseus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamados pela primeira vez de cristãos",
+      "feedbackCorrect": "O nome carrega a ligação a Cristo.",
+      "feedbackWrong": {
+        "b": "O texto diz cristãos, não zelotes.",
+        "c": "O texto diz cristãos, não fariseus."
+      },
+      "hint": "É a última palavra do versículo.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": [
+        "Atos 11:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 11:26 a 1 Pedro 4:16?",
+      "verseRef": "Atos 11:26",
+      "passageA": {
+        "ref": "Atos 11:26"
+      },
+      "passageB": {
+        "ref": "1 Pedro 4:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Identidade cristã sob sofrimento"
+        },
+        {
+          "id": "b",
+          "text": "Vergonha de seguir Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Abandono do nome cristão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamados pela primeira vez de cristãos",
+      "feedbackCorrect": "O nome nascido em Antioquia vira identidade mesmo sob sofrimento.",
+      "feedbackWrong": {
+        "b": "1 Pedro fala de não se envergonhar.",
+        "c": "Os dois textos afirmam o nome, não o abandono."
+      },
+      "hint": "Veja o que 1 Pedro diz sobre sofrer como cristão.",
+      "learningObjective": "Ligar o nome novo à fidelidade sob prova.",
+      "evidence": [
+        "Atos 11:26",
+        "1 Pedro 4:16"
+      ]
+    }
+  ]
+}

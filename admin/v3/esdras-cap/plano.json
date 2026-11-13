@@ -1,0 +1,100 @@
+{
+  "slug": "esdras-cap",
+  "prefix": "esc",
+  "book": "Esdras",
+  "chapters": 10,
+  "title": "Esdras",
+  "description": "Esdras capítulo a capítulo: a volta do exílio, a casa de Deus e a reforma do povo.",
+  "icon": "🧱",
+  "color": "#7A8E5A",
+  "order": 16,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["esdras"],
+  "modules": [
+    {
+      "title": "Volta e oposição · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Esdras 2:64–70",
+          "chapters": "1–2",
+          "title": "O povo que voltou",
+          "intro": "Depois do decreto, a lista termina com o número dos que voltaram e suas ofertas.",
+          "insight": "A congregação voltou do cativeiro e deu ofertas voluntárias para a casa de Deus.",
+          "objective": "Voltar e ofertar de vontade"
+        },
+        {
+          "ref": "Esdras 3:1–9",
+          "title": "Altar e alicerces",
+          "intro": "O povo se reúne como um só homem, levanta o altar e começa a casa.",
+          "insight": "Edificaram o altar no seu lugar e ofereceram holocaustos, mesmo com medo dos povos.",
+          "objective": "Adorar apesar do medo"
+        },
+        {
+          "ref": "Esdras 4:4–12",
+          "title": "O povo da terra",
+          "intro": "Vizinhos desanimam a obra e escrevem ao rei contra Jerusalém.",
+          "insight": "O povo da terra inquieta os judeus e trama para frustrar a construção da casa.",
+          "objective": "Não desanimar na obra"
+        },
+        {
+          "ref": "Esdras 5:1–6",
+          "title": "Profetas animam",
+          "intro": "Ageu e Zacarias profetizam; Zorobabel e Jesua voltam a edificar.",
+          "insight": "Pela palavra dos profetas, o povo se levanta e a boa mão de Deus está sobre a obra.",
+          "objective": "Ouvir e edificar de novo"
+        },
+        {
+          "ref": "Esdras 6:13–22",
+          "title": "Casa dedicada",
+          "intro": "Com a ordem de Dario, a casa é terminada e dedicada com alegria.",
+          "insight": "Acabaram a casa por ordem do Deus de Israel e dos reis; celebraram com alegria a Páscoa.",
+          "objective": "Terminar e celebrar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Volta e oposição",
+        "intro": "Revise a volta do povo, o altar, a oposição, os profetas e a dedicação da casa.",
+        "insight": "Deus traz o povo de volta e sustenta a obra até o fim"
+      }
+    },
+    {
+      "title": "Esdras e a reforma · cap. 7–10",
+      "scenes": [
+        {
+          "ref": "Esdras 7:16–24",
+          "title": "Mão do rei e de Deus",
+          "intro": "A carta do rei manda prata, ouro e liberdade para o culto em Jerusalém.",
+          "insight": "Tudo o que o Deus do céu ordenar, fazei-o com diligência para a casa dele.",
+          "objective": "Servir a casa com diligência"
+        },
+        {
+          "ref": "Esdras 8:21–30",
+          "title": "Jejum no caminho",
+          "intro": "Esdras proclama jejum junto ao rio e confia os utensílios aos sacerdotes.",
+          "insight": "Jejuamos para buscar a Deus; a sua boa mão nos livrou no caminho.",
+          "objective": "Jejuar e confiar a Deus"
+        },
+        {
+          "ref": "Esdras 9:5–15",
+          "title": "Oração de vergonha",
+          "intro": "Esdras rasga as vestes e confessa a culpa do povo diante de Deus.",
+          "insight": "Ó Deus meu, estou envergonhado: somos menos que as misericórdias que nos deste.",
+          "objective": "Confessar a culpa do povo"
+        },
+        {
+          "ref": "Esdras 10:1–12",
+          "title": "Pacto de reforma",
+          "intro": "Enquanto Esdras ora, uma grande assembleia se une para pôr fora o pecado.",
+          "insight": "Ainda há esperança: façamos aliança e apartemos das mulheres estrangeiras.",
+          "objective": "Apartar-se e reformar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Esdras e a reforma",
+        "intro": "Revise a carta do rei, o jejum no caminho, a confissão e o pacto do povo.",
+        "insight": "A restauração da casa pede também um povo que se volta da culpa"
+      }
+    }
+  ]
+}

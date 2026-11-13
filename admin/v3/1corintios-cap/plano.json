@@ -1,0 +1,168 @@
+{
+  "slug": "1corintios-cap",
+  "prefix": "coc",
+  "book": "1 Coríntios",
+  "chapters": 16,
+  "title": "1 Coríntios",
+  "description": "1 Coríntios capítulo a capítulo: a igreja aprendendo a cruz, o amor e a ressurreição.",
+  "icon": "🔗",
+  "color": "#00CEC9",
+  "order": 62,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["cartas-paulo", "corintios"],
+  "modules": [
+    {
+      "title": "Cruz e sabedoria · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "1 Coríntios 1:22–31",
+          "title": "Cristo crucificado",
+          "intro": "Judeus pedem sinais e gregos buscam sabedoria, mas Paulo prega Cristo crucificado.",
+          "insight": "Cristo crucificado é poder e sabedoria de Deus: quem se gloria, glorie-se no Senhor.",
+          "objective": "Gloriar-se só no Senhor"
+        },
+        {
+          "ref": "1 Coríntios 2:1–10",
+          "title": "Cristo, e este crucificado",
+          "intro": "Em Corinto, Paulo não chegou com ostentação, mas em fraqueza e tremor.",
+          "insight": "A fé se sustenta no poder de Deus, não em palavras persuasivas de sabedoria humana.",
+          "objective": "Fé no poder de Deus"
+        },
+        {
+          "ref": "1 Coríntios 3:5–15",
+          "title": "Deus dá o crescimento",
+          "intro": "Paulo e Apolo são só servos: um planta, outro rega, mas Deus faz crescer.",
+          "insight": "O único fundamento é Jesus Cristo; a obra de cada um será provada pelo fogo.",
+          "objective": "Edificar sobre Cristo"
+        },
+        {
+          "ref": "1 Coríntios 4:1–7",
+          "title": "Despenseiros fiéis",
+          "intro": "Paulo quer ser visto como ministro de Cristo e despenseiro dos mistérios de Deus.",
+          "insight": "O que se exige do despenseiro é fidelidade; o que temos, recebemos de Deus.",
+          "objective": "Ser encontrados fiéis"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cruz e sabedoria",
+        "intro": "Revise a cruz, a pregação simples, o fundamento Cristo e a fidelidade do despenseiro.",
+        "insight": "A igreja se une na cruz, não em nomes humanos"
+      }
+    },
+    {
+      "title": "Pureza e liberdade · cap. 5–8",
+      "scenes": [
+        {
+          "ref": "1 Coríntios 5:1–8",
+          "title": "Novo fermento",
+          "intro": "Há um escândalo na igreja, e Corinto ainda está orgulhosa em vez de se lamentar.",
+          "insight": "Cristo, nosso Cordeiro pascal, foi oferecido: celebremos com sinceridade e verdade.",
+          "objective": "Viver sem o velho fermento"
+        },
+        {
+          "ref": "1 Coríntios 6:12–20",
+          "title": "Templo do Espírito",
+          "intro": "Paulo fala do corpo: nem tudo convém, e o corpo é para o Senhor.",
+          "insight": "O corpo é templo do Espírito Santo: fostes comprados por preço; glorificai a Deus.",
+          "objective": "O corpo é templo"
+        },
+        {
+          "ref": "1 Coríntios 7:1–9",
+          "title": "Casamento e dom",
+          "intro": "A igreja pergunta sobre casamento, e Paulo responde com cuidado e equilíbrio.",
+          "insight": "Cada um tem de Deus o seu próprio dom: o casamento e o celibato servem à fidelidade.",
+          "objective": "Honrar o dom recebido"
+        },
+        {
+          "ref": "1 Coríntios 8:1–9",
+          "title": "O saber incha",
+          "intro": "Sobre comida oferecida a ídolos, Paulo começa pela diferença entre saber e amar.",
+          "insight": "O saber incha, mas o amor edifica: a liberdade não pode ser tropeço para o fraco.",
+          "objective": "Amar mais do que saber"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Pureza e liberdade",
+        "intro": "Revise o fermento, o templo do corpo, o casamento e o cuidado com os fracos.",
+        "insight": "A liberdade cristã serve ao amor e à pureza"
+      }
+    },
+    {
+      "title": "Corrida e corpo · cap. 9–12",
+      "scenes": [
+        {
+          "ref": "1 Coríntios 9:19–27",
+          "title": "Tudo para todos",
+          "intro": "Paulo é livre, mas se faz escravo de todos para ganhar o maior número possível.",
+          "insight": "Corremos por uma coroa incorruptível: disciplina o corpo para não ser desqualificado.",
+          "objective": "Correr visando o prêmio"
+        },
+        {
+          "ref": "1 Coríntios 10:12–22",
+          "title": "Fujam da idolatria",
+          "intro": "Quem pensa estar em pé precisa cuidar para não cair; Deus é fiel na tentação.",
+          "insight": "Não se pode beber o cálice do Senhor e o dos demônios: fujam da idolatria.",
+          "objective": "Fugir da idolatria"
+        },
+        {
+          "ref": "1 Coríntios 11:23–29",
+          "title": "Em memória de mim",
+          "intro": "Paulo entrega o que recebeu do Senhor sobre a ceia na noite da traição.",
+          "insight": "Comer o pão e beber o cálice anuncia a morte do Senhor: examine-se a si mesmo.",
+          "objective": "Anunciar a morte do Senhor"
+        },
+        {
+          "ref": "1 Coríntios 12:12–20",
+          "title": "Muitos membros, um corpo",
+          "intro": "Paulo compara a igreja a um corpo com muitos membros, batizados num só Espírito.",
+          "insight": "Há muitos membros, mas um único corpo: Deus dispôs cada um como lhe aprouve.",
+          "objective": "Pertencer ao mesmo corpo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Corrida e corpo",
+        "intro": "Revise a corrida pelo evangelho, a fuga da idolatria, a ceia e o corpo com muitos membros.",
+        "insight": "O evangelho forma um corpo que corre junto e adora só ao Senhor"
+      }
+    },
+    {
+      "title": "Amor e ressurreição · cap. 13–16",
+      "scenes": [
+        {
+          "ref": "1 Coríntios 13:8–13",
+          "title": "O maior é o amor",
+          "intro": "Paulo compara o que passa com o que permanece: fé, esperança e amor.",
+          "insight": "O amor nunca acaba: agora vemos em espelho; o maior entre eles é o amor.",
+          "objective": "Permanecer no amor"
+        },
+        {
+          "ref": "1 Coríntios 14:1–9",
+          "title": "Edificar a igreja",
+          "intro": "Paulo manda seguir o amor e buscar os dons, principalmente o de profetizar.",
+          "insight": "Quem profetiza edifica, exorta e consola: o dom serve para a igreja entender.",
+          "objective": "Usar dons para edificar"
+        },
+        {
+          "ref": "1 Coríntios 15:12–22",
+          "title": "Cristo ressuscitou",
+          "intro": "Alguns em Corinto dizem que não há ressurreição; Paulo responde com o evangelho.",
+          "insight": "Se Cristo não ressuscitou, a fé é vã; mas ele ressuscitou, primícias dos que dormem.",
+          "objective": "Crer na ressurreição"
+        },
+        {
+          "ref": "1 Coríntios 16:13–18",
+          "title": "Firmes na fé",
+          "intro": "Paulo fecha a carta com um chamado à vigilância e ao reconhecimento de quem serve.",
+          "insight": "Estejam vigilantes, firmes na fé e façam tudo com amor, honrando quem coopera.",
+          "objective": "Vigiar e agir com amor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Amor e ressurreição",
+        "intro": "Revise o amor que permanece, os dons que edificam, a ressurreição e a firmeza final.",
+        "insight": "A igreja fica firme no amor e na esperança da ressurreição"
+      }
+    }
+  ]
+}

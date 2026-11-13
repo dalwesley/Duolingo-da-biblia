@@ -1,0 +1,633 @@
+{
+  "study": {
+    "passageRef": "Lamentações 1:12–17",
+    "passages": [
+      { "ref": "Lamentações 1:12–17" },
+      { "ref": "Lamentações 1:18" },
+      { "ref": "Lamentações 2:5–8" },
+      { "ref": "Lamentações 3:31–33" },
+      { "ref": "Lamentações 4:1–2" },
+      { "ref": "Lamentações 5:1–3" }
+    ],
+    "context": "Nesta travessia, revise a confissão de Jerusalém, a ira sobre o santuário, a misericórdia, o ouro escurecido e o clamor.",
+    "keyword": "confissão",
+    "keywordGloss": "Admitir a justiça do Senhor e voltar a ele mesmo na ruína.",
+    "focusQuestion": "Na revisão desta etapa, o que você precisa confessar e de que misericórdia precisa lembrar?",
+    "reflectionPrompts": [
+      "Senhor justo",
+      "Misericórdias",
+      "Clamor na ruína"
+    ],
+    "facts": [
+      {
+        "text": "A cidade confessa: Justo é o Senhor, pois se rebelou.",
+        "evidenceRef": "Lamentações 1:18",
+        "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra"
+      },
+      {
+        "text": "O Senhor rejeitou o altar e abominou o santuário.",
+        "evidenceRef": "Lamentações 2:7",
+        "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário"
+      },
+      {
+        "text": "O Senhor não rejeitará para sempre.",
+        "evidenceRef": "Lamentações 3:31",
+        "evidenceSpan": "o Senhor não rejeitará para sempre"
+      },
+      {
+        "text": "Se entristecer, usará de compaixão conforme suas misericórdias.",
+        "evidenceRef": "Lamentações 3:32",
+        "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias"
+      },
+      {
+        "text": "O ouro se escureceu; os filhos de Sião são como barro.",
+        "evidenceRef": "Lamentações 4:1–2",
+        "evidenceSpan": "Como se escureceu o ouro!"
+      },
+      {
+        "text": "O povo clama: Lembra-te, Senhor, e olha a desonra.",
+        "evidenceRef": "Lamentações 5:1",
+        "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Justo",
+        "gloss": "Atributo confessado: o Senhor age com justiça."
+      },
+      {
+        "term": "misericórdias",
+        "gloss": "A grandeza que move a compaixão após a disciplina."
+      },
+      {
+        "term": "Lembra-te",
+        "gloss": "O verbo do clamor na ruína."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Confissão da justiça do Senhor",
+        "evidenceRef": "Lamentações 1:18"
+      },
+      {
+        "label": "Ira que atinge até o santuário",
+        "evidenceRef": "Lamentações 2:7"
+      },
+      {
+        "label": "Esperança nas misericórdias",
+        "evidenceRef": "Lamentações 3:31–32"
+      },
+      {
+        "label": "Glória escurecida e clamor final",
+        "evidenceRef": "Lamentações 5:1"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O Senhor é justo porque a cidade se rebelou.",
+        "marker": "pois",
+        "evidenceRef": "Lamentações 1:18"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ele entristece, mas usa de compaixão.",
+        "marker": "Antes",
+        "evidenceRef": "Lamentações 3:32"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Senhor se tornou como inimigo e rejeitou o santuário.",
+        "marker": "como",
+        "evidenceRef": "Lamentações 2:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 32:4",
+        "bridge": "Deus é justo e reto"
+      },
+      {
+        "ref": "Salmos 103:8",
+        "bridge": "Misericórdia e compaixão"
+      },
+      {
+        "ref": "Salmos 74:2",
+        "bridge": "Lembra-te da herança"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A cidade caiu inocente, sem qualquer confissão.",
+        "why": "1:18 confessa rebelião e chama o Senhor de justo."
+      },
+      {
+        "text": "A disciplina é rejeição definitiva sem misericórdia.",
+        "why": "3:31–32 afirmam que não rejeita para sempre e usa de compaixão."
+      },
+      {
+        "text": "Na ruína não resta clamor ao Senhor.",
+        "why": "5:1 abre com Lembra-te, Senhor."
+      }
+    ],
+    "centralInsight": "Mesmo na ruína, há espaço para confessar e esperar no Senhor",
+    "anchorQuestion": "Como Lamentações une confissão, misericórdia e clamor na cidade caída?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lamentações 3:31, o Senhor não rejeitará para sempre.",
+      "verseRef": "Lamentações 3:31",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor não rejeitará para sempre",
+      "feedbackCorrect": "A esperança da etapa: a rejeição não é definitiva.",
+      "feedbackWrong": {
+        "false": "Releia 3:31: o Senhor não rejeitará para sempre."
+      },
+      "hint": "Leia o versículo inteiro.",
+      "learningObjective": "Observar a esperança de não rejeição final.",
+      "evidence": ["Lamentações 3:31"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lamentações 1:18, toque quem a cidade chama de justo.",
+      "verseRef": "Lamentações 1:18",
+      "options": [
+        { "id": "a", "text": "o Senhor" },
+        { "id": "b", "text": "os povos" },
+        { "id": "c", "text": "o cativeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Justo é o Senhor",
+      "feedbackCorrect": "A confissão abre: Justo é o Senhor.",
+      "feedbackWrong": {
+        "b": "Os povos são chamados a ouvir, não chamados de justos.",
+        "c": "O cativeiro é o resultado, não quem é justo."
+      },
+      "hint": "Veja o sujeito após \"Justo é\".",
+      "learningObjective": "Identificar a confissão sobre o Senhor.",
+      "evidence": ["Lamentações 1:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lamentações 2:7, o que o Senhor fez ao altar e ao santuário?",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "Rejeitou o altar e abominou o santuário" },
+        { "id": "b", "text": "Exaltou o altar acima das nações" },
+        { "id": "c", "text": "Protegeu o santuário de qualquer dano" },
+        { "id": "d", "text": "Entregou o altar aos sacerdotes fiéis" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "Até o culto cai sob a ira do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto fala de rejeição, não de exaltação.",
+        "c": "O santuário é abominado, não protegido.",
+        "d": "Há rejeição e entrega aos inimigos."
+      },
+      "hint": "Leia os dois primeiros verbos.",
+      "learningObjective": "Observar a rejeição do santuário.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lamentações 4:2 na ordem do texto.",
+      "verseRef": "Lamentações 4:2",
+      "options": [
+        { "id": "a", "text": "Os nobres filhos de Sião, comparáveis a ouro puro" },
+        { "id": "b", "text": "agora são tidos como objetos de barro" },
+        { "id": "c", "text": "obra das mãos do oleiro!" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "agora são tidos como objetos de barro, obra das mãos do oleiro",
+      "feedbackCorrect": "Do ouro puro ao barro e à obra do oleiro.",
+      "feedbackWrong": {
+        "default": "Comece pelos filhos como ouro; o oleiro fecha."
+      },
+      "hint": "O versículo começa pelos nobres filhos.",
+      "learningObjective": "Reconhecer a sequência de 4:2.",
+      "evidence": ["Lamentações 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "Esquece" },
+        { "id": "b", "text": "Lembra-te" },
+        { "id": "c", "text": "Afasta-te" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "O clamor abre com Lembra-te.",
+      "feedbackWrong": {
+        "a": "O verbo é Lembra-te, não Esquece.",
+        "c": "Há apelo de proximidade, não afastamento."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o verbo do clamor.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lamentações 1:18 comunica que se liga a este contexto?",
+      "verseRef": "Lamentações 1:18",
+      "passageA": { "ref": "Lamentações 1:18" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A etapa começa com confissão: o Senhor é justo; a cidade se rebelou."
+      },
+      "options": [
+        { "id": "a", "text": "Confissão na disciplina" },
+        { "id": "b", "text": "Negação total da culpa" },
+        { "id": "c", "text": "Orgulho sem arrependimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+      "feedbackCorrect": "A confissão une justiça do Senhor e rebelião da cidade.",
+      "feedbackWrong": {
+        "b": "Há confissão explícita de rebelião.",
+        "c": "O tom é de confissão, não de orgulho."
+      },
+      "hint": "Veja o que a cidade admite após chamar o Senhor de justo.",
+      "learningObjective": "Ligar 1:18 à confissão da etapa.",
+      "evidence": ["Lamentações 1:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lamentações 4:1, toque o que se escureceu.",
+      "verseRef": "Lamentações 4:1",
+      "options": [
+        { "id": "a", "text": "o ouro" },
+        { "id": "b", "text": "as ruas" },
+        { "id": "c", "text": "as pedras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como se escureceu o ouro!",
+      "feedbackCorrect": "O ouro se escureceu: imagem da glória perdida.",
+      "feedbackWrong": {
+        "b": "As ruas recebem as pedras; o que escurece é o ouro.",
+        "c": "As pedras estão espalhadas; o que escurece é o ouro."
+      },
+      "hint": "Leia a primeira exclamação.",
+      "learningObjective": "Identificar o ouro escurecido.",
+      "evidence": ["Lamentações 4:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lamentações 3:32 na ordem do texto.",
+      "verseRef": "Lamentações 3:32",
+      "options": [
+        { "id": "a", "text": "Antes, se ele entristecer a alguém" },
+        { "id": "b", "text": "usará de compaixão" },
+        { "id": "c", "text": "conforme a grandeza das suas misericórdias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+      "feedbackCorrect": "Entristecer; compaixão; misericórdias.",
+      "feedbackWrong": {
+        "default": "Comece pelo entristecer; as misericórdias fecham."
+      },
+      "hint": "O versículo abre com \"Antes\".",
+      "learningObjective": "Reconhecer a sequência de 3:32.",
+      "evidence": ["Lamentações 3:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+      "verseRef": "Lamentações 2:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel",
+      "feedbackCorrect": "O texto compara o Senhor a um inimigo que devora Israel.",
+      "feedbackWrong": {
+        "true": "Releia 2:5: o Senhor se tornou como um inimigo."
+      },
+      "hint": "Veja a comparação no início do versículo.",
+      "learningObjective": "Compreender a comparação com inimigo.",
+      "evidence": ["Lamentações 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lamentações 1:18, toque a palavra que liga a justiça do Senhor à rebelião.",
+      "verseRef": "Lamentações 1:18",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "Justo" },
+        { "id": "c", "text": "cativeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Justo é o Senhor, pois me rebelei",
+      "feedbackCorrect": "\"Pois\" introduz a causa: a rebelião confessada.",
+      "feedbackWrong": {
+        "b": "\"Justo\" é o atributo; a ligação causal vem depois.",
+        "c": "\"Cativeiro\" é o resultado final, não o marcador."
+      },
+      "hint": "Procure a palavra curta entre as duas cláusulas.",
+      "learningObjective": "Reconhecer o marcador de causa em 1:18.",
+      "evidence": ["Lamentações 1:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Lamentações 3:31–32 relaciona disciplina e misericórdia?",
+      "verseRef": "Lamentações 3:31–32",
+      "options": [
+        { "id": "a", "text": "Entristece, mas se compadece segundo suas misericórdias" },
+        { "id": "b", "text": "Rejeita para sempre sem qualquer compaixão" },
+        { "id": "c", "text": "Nunca disciplina; só consola" },
+        { "id": "d", "text": "Aflige de bom grado e sem medida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+      "feedbackCorrect": "Há disciplina, mas também compaixão segundo as misericórdias.",
+      "feedbackWrong": {
+        "b": "3:31 nega rejeição definitiva.",
+        "c": "Há entristecer; não é só consolo.",
+        "d": "3:33 nega afligir de bom grado."
+      },
+      "hint": "Leia o movimento de 3:31–32.",
+      "learningObjective": "Relacionar disciplina e misericórdia.",
+      "evidence": ["Lamentações 3:31–32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a etapa da cidade caída?",
+      "verseRef": "Lamentações 1:18",
+      "options": [
+        { "id": "a", "text": "Confissão da justiça do Senhor" },
+        { "id": "b", "text": "Ira que atinge até o santuário" },
+        { "id": "c", "text": "Esperança nas misericórdias e clamor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+      "feedbackCorrect": "Da confissão à ira, até a misericórdia e o clamor.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão; o clamor fecha a etapa."
+      },
+      "hint": "Siga a ordem das cenas da etapa.",
+      "learningObjective": "Seguir o arco da etapa.",
+      "evidence": ["Lamentações 1:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lamentações 3:32, que palavra nomeia o que o Senhor usará após entristecer?",
+      "verseRef": "Lamentações 3:32",
+      "options": [
+        { "id": "a", "text": "vingança" },
+        { "id": "b", "text": "compaixão" },
+        { "id": "c", "text": "indiferença" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "usará de compaixão, conforme a grandeza das suas misericórdias",
+      "feedbackCorrect": "Após entristecer, usará de compaixão.",
+      "feedbackWrong": {
+        "a": "O texto fala de compaixão, não de vingança.",
+        "c": "Há compaixão ativa, não indiferença."
+      },
+      "hint": "Veja o que segue a \"usará de\".",
+      "learningObjective": "Lembrar a palavra da resposta divina.",
+      "evidence": ["Lamentações 3:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lamentações 3:32 a Salmos 103:8?",
+      "verseRef": "Lamentações 3:32",
+      "passageA": { "ref": "Lamentações 3:32" },
+      "passageB": { "ref": "Salmos 103:8" },
+      "options": [
+        { "id": "a", "text": "Misericórdia e compaixão" },
+        { "id": "b", "text": "Ira sem qualquer limite" },
+        { "id": "c", "text": "Ausência de piedade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a grandeza das suas misericórdias",
+      "evidence": ["Lamentações 3:32", "Salmos 103:8"],
+      "feedbackCorrect": "Nos dois textos, misericórdia e compaixão marcam o trato de Deus.",
+      "feedbackWrong": {
+        "b": "Ambos destacam misericórdia, não ira sem limite.",
+        "c": "Há compaixão e misericórdias."
+      },
+      "hint": "Compare o trato de Deus nos dois textos.",
+      "learningObjective": "Relacionar misericórdias em Lm e no Salmo."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lamentações 4:3, toque a palavra que marca o contraste com os chacais.",
+      "verseRef": "Lamentações 4:3",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "peito" },
+        { "id": "c", "text": "deserto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a filha do meu povo tornou-se cruel",
+      "feedbackCorrect": "\"Mas\" vira a cena: chacais amamentam; o povo tornou-se cruel.",
+      "feedbackWrong": {
+        "b": "\"Peito\" descreve os chacais, não o contraste.",
+        "c": "\"Deserto\" fecha a comparação, não marca o contraste."
+      },
+      "hint": "Procure a palavra curta no meio do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 4:3.",
+      "evidence": ["Lamentações 4:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam confissão e esperança na etapa?",
+      "verseRef": "Lamentações 3:31–32",
+      "options": [
+        { "id": "a", "text": "A cidade confessa a justiça do Senhor" },
+        { "id": "b", "text": "O santuário cai sob a ira" },
+        { "id": "c", "text": "Surge a esperança nas misericórdias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Senhor não rejeitará para sempre",
+      "feedbackCorrect": "Confissão, juízo e então esperança.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão; a esperança fecha."
+      },
+      "hint": "A esperança de 3:31 vem depois da ira.",
+      "learningObjective": "Relacionar confissão, ira e esperança.",
+      "evidence": ["Lamentações 3:31–32"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lamentações 1:18 e 3:31–32, a etapa ensina rejeição definitiva sem espaço para confissão ou misericórdia.",
+      "verseRef": "Lamentações 1:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+      "feedbackCorrect": "Há confissão e a promessa de que não rejeita para sempre.",
+      "feedbackWrong": {
+        "true": "Una 1:18 com 3:31–32: confissão e misericórdia."
+      },
+      "hint": "Compare a confissão de 1:18 com a esperança de 3:31.",
+      "learningObjective": "Interpretar a etapa como confissão e esperança.",
+      "evidence": ["Lamentações 1:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lamentações 5:1, toque o trecho que sustenta o clamor na ruína.",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "desonra" },
+        { "id": "b", "text": "sucedido" },
+        { "id": "c", "text": "nossa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "considera e olha para a nossa desonra",
+      "feedbackCorrect": "\"Desonra\" é o que pedem que o Senhor veja.",
+      "feedbackWrong": {
+        "b": "\"Sucedido\" resume os fatos; o pedido final aponta a desonra.",
+        "c": "\"Nossa\" apenas possui a desonra."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Sustentar com o texto o clamor sobre a desonra.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa sustenta sobre a cidade caída?",
+      "verseRef": "Lamentações 3:31–32",
+      "options": [
+        { "id": "a", "text": "Há confissão, juízo e ainda esperança no Senhor" },
+        { "id": "b", "text": "A cidade é inocente e o Senhor injusto" },
+        { "id": "c", "text": "A disciplina é rejeição sem misericórdia" },
+        { "id": "d", "text": "Na ruína não resta clamor algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor não rejeitará para sempre",
+      "feedbackCorrect": "Confissão, ira, misericórdia e clamor atravessam a etapa.",
+      "feedbackWrong": {
+        "b": "1:18 confessa a justiça do Senhor.",
+        "c": "3:31–32 afirmam misericórdia.",
+        "d": "5:1 abre com clamor."
+      },
+      "hint": "Una 1:18, 3:31 e 5:1.",
+      "learningObjective": "Escolher a interpretação do arco da etapa.",
+      "evidence": ["Lamentações 3:31–32"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra confissão e misericórdia na Escritura?",
+      "verseRef": "Lamentações 1:18",
+      "options": [
+        { "id": "a", "text": "A cidade confessa: o Senhor é justo" },
+        { "id": "b", "text": "O Senhor não rejeita para sempre" },
+        { "id": "c", "text": "O Salmo celebra misericórdia e compaixão" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Justo é o Senhor",
+      "evidence": ["Lamentações 1:18", "Lamentações 3:31", "Salmos 103:8"],
+      "feedbackCorrect": "Da confissão à esperança e ao Salmo da misericórdia.",
+      "feedbackWrong": {
+        "default": "Siga: Lm 1:18, Lm 3:31 e Sl 103:8."
+      },
+      "hint": "Parta da confissão de 1:18.",
+      "learningObjective": "Ver confissão e misericórdia no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lamentações 1:18, que palavra abre a confissão sobre o Senhor?",
+      "verseRef": "Lamentações 1:18",
+      "options": [
+        { "id": "a", "text": "Cruel" },
+        { "id": "b", "text": "Justo" },
+        { "id": "c", "text": "Ausente" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Justo é o Senhor, pois me rebelei contra a sua palavra",
+      "feedbackCorrect": "A confissão começa: Justo é o Senhor.",
+      "feedbackWrong": {
+        "a": "O texto não chama o Senhor de cruel.",
+        "c": "O texto afirma justiça, não ausência."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o termo teológico da confissão.",
+      "evidence": ["Lamentações 1:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lamentações 5:1 a Salmos 74:2?",
+      "verseRef": "Lamentações 5:1",
+      "passageA": { "ref": "Lamentações 5:1" },
+      "passageB": { "ref": "Salmos 74:2" },
+      "options": [
+        { "id": "a", "text": "Lembra-te da herança" },
+        { "id": "b", "text": "Esquece o teu povo" },
+        { "id": "c", "text": "Celebra a ruína alegre" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "evidence": ["Lamentações 5:1", "Salmos 74:2"],
+      "feedbackCorrect": "Nos dois textos, o povo pede: Lembra-te.",
+      "feedbackWrong": {
+        "b": "Ambos pedem lembrança, não esquecimento.",
+        "c": "O tom é de clamor, não de celebração."
+      },
+      "hint": "Compare o verbo do apelo.",
+      "learningObjective": "Ligar o Lembra-te de Lm ao do Salmo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "seu santuário" },
+        { "id": "b", "text": "dia de festa" },
+        { "id": "c", "text": "seus castelos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abominou o seu santuário",
+      "feedbackCorrect": "\"Seu santuário\" é o alvo abominado na disciplina.",
+      "feedbackWrong": {
+        "b": "\"Dia de festa\" é comparação dos gritos, não o alvo.",
+        "c": "Os castelos são entregues; o lugar santo é o santuário."
+      },
+      "hint": "Procure o objeto de \"abominou\".",
+      "learningObjective": "Sustentar com o texto a queda do santuário.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o arco da cidade caída até o clamor?",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "Confissão: o Senhor é justo" },
+        { "id": "b", "text": "Misericórdia: não rejeita para sempre" },
+        { "id": "c", "text": "Clamor: Lembra-te, Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "Confissão, misericórdia e clamor fecham a etapa.",
+      "feedbackWrong": {
+        "default": "Siga: confissão, misericórdia e clamor."
+      },
+      "hint": "O clamor de 5:1 é o ponto de chegada.",
+      "learningObjective": "Ver o arco completo da etapa.",
+      "evidence": ["Lamentações 5:1"]
+    }
+  ]
+}

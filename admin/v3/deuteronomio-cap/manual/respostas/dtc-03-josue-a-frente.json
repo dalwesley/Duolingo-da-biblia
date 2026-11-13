@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Deuteronômio 3:15–20",
+    "passages": [
+      {
+        "ref": "Deuteronômio 3:15–20"
+      },
+      {
+        "ref": "Deuteronômio 3:21–25"
+      }
+    ],
+    "context": "Cena de Josué à frente: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Josué à frente",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "E dei Gileade a Maquir.",
+        "evidenceRef": "Deuteronômio 3:15",
+        "evidenceSpan": "E dei Gileade a Maquir"
+      },
+      {
+        "text": "Mas aos rubenitas e gaditas dei desde Gileade.",
+        "evidenceRef": "Deuteronômio 3:16",
+        "evidenceSpan": "Mas aos rubenitas e gaditas dei desde Gileade"
+      },
+      {
+        "text": "A.",
+        "evidenceRef": "Deuteronômio 3:17",
+        "evidenceSpan": "A"
+      },
+      {
+        "text": "E ordenei a vocês na mesma época dizendo.",
+        "evidenceRef": "Deuteronômio 3:18",
+        "evidenceSpan": "E ordenei a vocês na mesma época dizendo"
+      },
+      {
+        "text": "Somente.",
+        "evidenceRef": "Deuteronômio 3:19",
+        "evidenceSpan": "Somente"
+      },
+      {
+        "text": "Até que o Senhor dê descanso a seus.",
+        "evidenceRef": "Deuteronômio 3:20",
+        "evidenceSpan": "Até que o Senhor dê descanso a seus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "E dei gileade a maquir",
+        "evidenceRef": "Deuteronômio 3:15"
+      },
+      {
+        "label": "Mas aos rubenitas e gaditas dei",
+        "evidenceRef": "Deuteronômio 3:16"
+      },
+      {
+        "label": "A arabá o jordão",
+        "evidenceRef": "Deuteronômio 3:17"
+      },
+      {
+        "label": "E ordenei a vocês na mesma",
+        "evidenceRef": "Deuteronômio 3:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Mas\".",
+        "marker": "Mas",
+        "evidenceRef": "Deuteronômio 3:16"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Deuteronômio 3:18"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Deuteronômio 3:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 12:29",
+        "bridge": "Deus é fogo consumidor"
+      },
+      {
+        "ref": "Números 14:22–23",
+        "bridge": "Não entrarão na terra"
+      },
+      {
+        "ref": "Gálatas 3:10",
+        "bridge": "Sob a maldição da lei"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "O Senhor pelejará por vós: Josué herda a coragem da presença de Deus.",
+    "anchorQuestion": "O que Deuteronômio 3:15 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Deuteronômio 3:15, o texto inclui E dei Gileade a Maquir.",
+      "verseRef": "Deuteronômio 3:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "E dei Gileade a Maquir",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 3:15 afirma.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 3:15, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Deuteronômio 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "dei"
+        },
+        {
+          "id": "b",
+          "text": "Gileade"
+        },
+        {
+          "id": "c",
+          "text": "Maquir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dei",
+      "feedbackCorrect": "O versículo destaca dei.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 3:17, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 3:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "A"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 3:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 3:16 na ordem do texto.",
+      "verseRef": "Deuteronômio 3:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas aos rubenitas"
+        },
+        {
+          "id": "b",
+          "text": "gaditas dei desde Gileade"
+        },
+        {
+          "id": "c",
+          "text": "até ao ribeiro de Arnom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas aos rubenitas",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Deuteronômio 3:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Deuteronômio 3:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 3:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordenei"
+        },
+        {
+          "id": "b",
+          "text": "dei"
+        },
+        {
+          "id": "c",
+          "text": "Gileade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ordenei",
+      "feedbackCorrect": "A palavra do versículo é ordenei.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 3:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Deuteronômio 3:15 comunica que se liga a este contexto.",
+      "verseRef": "Deuteronômio 3:15",
+      "passageA": {
+        "ref": "Deuteronômio 3:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Josué à frente: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Deuteronômio 3:16, a palavra Mas liga ideias no fluxo do texto.",
+      "verseRef": "Deuteronômio 3:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "Mas",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 3:16 afirma.",
+      "evidence": [
+        "Deuteronômio 3:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 3:16, toque a palavra que marca a relação no texto.",
+      "verseRef": "Deuteronômio 3:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "rubenitas"
+        },
+        {
+          "id": "c",
+          "text": "gaditas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas",
+      "feedbackCorrect": "O versículo destaca Mas.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 3:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 3:18, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 3:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que ordenei a vocês na mesma época dizendo: O Senhor, seu Deus, deu"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E ordenei a vocês na mesma época dizendo",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 3:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Deuteronômio 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "E dei gileade a maquir"
+        },
+        {
+          "id": "b",
+          "text": "Mas aos rubenitas e gaditas dei"
+        },
+        {
+          "id": "c",
+          "text": "A arabá o jordão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Deuteronômio 3:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 3:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arabá"
+        },
+        {
+          "id": "b",
+          "text": "dei"
+        },
+        {
+          "id": "c",
+          "text": "Gileade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Arabá",
+      "feedbackCorrect": "A palavra do versículo é Arabá.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 3:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 3:15 a Hebreus 12:29.",
+      "verseRef": "Deuteronômio 3:15",
+      "passageA": {
+        "ref": "Deuteronômio 3:15"
+      },
+      "passageB": {
+        "ref": "Hebreus 12:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é fogo consumidor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Deuteronômio 3:25",
+      "correctOptionId": "false",
+      "evidenceSpan": "Rogo",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 3:25 afirma.",
+      "evidence": [
+        "Deuteronômio 3:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 3:20, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Deuteronômio 3:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "descanso"
+        },
+        {
+          "id": "c",
+          "text": "seus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca Senhor.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 3:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 3:19, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 3:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que somente suas mulheres, seus filhos e seu gado (pois sei que vocês"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Somente",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 3:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Deuteronômio 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Deuteronômio 3:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 3:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Somente"
+        },
+        {
+          "id": "b",
+          "text": "dei"
+        },
+        {
+          "id": "c",
+          "text": "Gileade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Somente",
+      "feedbackCorrect": "A palavra do versículo é Somente.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 3:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 3:15 a Números 14:22–23.",
+      "verseRef": "Deuteronômio 3:15",
+      "passageA": {
+        "ref": "Deuteronômio 3:15"
+      },
+      "passageB": {
+        "ref": "Números 14:22–23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não entrarão na terra"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 3:15"
+      ]
+    }
+  ]
+}

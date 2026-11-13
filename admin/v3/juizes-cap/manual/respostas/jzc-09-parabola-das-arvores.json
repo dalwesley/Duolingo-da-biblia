@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 9:7–15",
+    "passages": [
+      {
+        "ref": "Juízes 9:7–15"
+      }
+    ],
+    "context": "Jotão conta a parábola: oliveira, figueira e videira recusam reinado; o espinheiro aceita e ameaça fogo.",
+    "keyword": "espinheiro",
+    "keywordGloss": "Quem aceita reinado sem fruto e traz fogo.",
+    "focusQuestion": "Onde você busca poder sem o fruto que o Senhor estima?",
+    "reflectionPrompts": [
+      "Recusa frutífera",
+      "Espinheiro aceita",
+      "Fogo do espinheiro"
+    ],
+    "facts": [
+      {
+        "text": "Jotão clamou no monte Gerizim.",
+        "evidenceRef": "Juízes 9:7",
+        "evidenceSpan": "subiu ao cume do monte Gerizim"
+      },
+      {
+        "text": "As árvores pediram à oliveira que reinasse.",
+        "evidenceRef": "Juízes 9:8",
+        "evidenceSpan": "disseram à oliveira"
+      },
+      {
+        "text": "A oliveira não deixa o óleo.",
+        "evidenceRef": "Juízes 9:9",
+        "evidenceSpan": "Deixaria eu o meu óleo"
+      },
+      {
+        "text": "A figueira não deixa a doçura.",
+        "evidenceRef": "Juízes 9:11",
+        "evidenceSpan": "Deixaria eu a minha doçura"
+      },
+      {
+        "text": "A videira não deixa o vinho.",
+        "evidenceRef": "Juízes 9:13",
+        "evidenceSpan": "Deixaria eu o meu vinho"
+      },
+      {
+        "text": "O espinheiro ameaça fogo contra os cedros.",
+        "evidenceRef": "Juízes 9:15",
+        "evidenceSpan": "que saia fogo do espinheiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "espinheiro",
+        "gloss": "Árvore sem fruto que aceita reinado."
+      },
+      {
+        "term": "óleo",
+        "gloss": "Fruto estimado que a oliveira não abandona."
+      },
+      {
+        "term": "fogo",
+        "gloss": "Ameaça do espinheiro aos cedros."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Clamor de Jotão",
+        "evidenceRef": "Juízes 9:7"
+      },
+      {
+        "label": "Recusas das árvores frutíferas",
+        "evidenceRef": "Juízes 9:8–13"
+      },
+      {
+        "label": "Espinheiro e ameaça",
+        "evidenceRef": "Juízes 9:14–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Pedem reinado; porém a oliveira recusa.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 9:9"
+      },
+      {
+        "kind": "contraste",
+        "text": "Pedem; porém a figueira recusa.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 9:11"
+      },
+      {
+        "kind": "contraste",
+        "text": "Se ungirem; mas caso contrário sai fogo.",
+        "marker": "mas",
+        "evidenceRef": "Juízes 9:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 7:16",
+        "bridge": "Pelos frutos os conhecereis"
+      },
+      {
+        "ref": "Isaías 5:2",
+        "bridge": "Videira sem uvas boas"
+      },
+      {
+        "ref": "João 15:5",
+        "bridge": "Sem mim nada podeis"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Todas as árvores aceitam reinado.",
+        "why": "Só o espinheiro aceita."
+      },
+      {
+        "text": "O espinheiro oferece fruto.",
+        "why": "Oferece sombra e ameaça fogo."
+      },
+      {
+        "text": "Jotão fala em silêncio.",
+        "why": "Clamou no Gerizim."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 9:14, a quem as árvores pedem reinado por fim?",
+    "centralInsight": "Só o espinheiro aceita reinado: quem busca poder sem fruto traz fogo sobre si."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 9:14, as árvores pedem ao espinheiro que reine.",
+      "verseRef": "Juízes 9:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "disseram ao espinheiro: Vem tu e reina sobre nós",
+      "feedbackCorrect": "Espinheiro.",
+      "feedbackWrong": {
+        "false": "O texto nomeia o espinheiro."
+      },
+      "hint": "Veja o destinatário.",
+      "learningObjective": "Observar o pedido.",
+      "evidence": [
+        "Juízes 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 9:14, toque a quem pedem reinado.",
+      "verseRef": "Juízes 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "espinheiro"
+        },
+        {
+          "id": "b",
+          "text": "árvores"
+        },
+        {
+          "id": "c",
+          "text": "nós"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disseram ao espinheiro",
+      "feedbackCorrect": "Espinheiro.",
+      "feedbackWrong": {
+        "b": "Árvores pedem.",
+        "c": "Nós é o pedido."
+      },
+      "hint": "Veja o destinatário.",
+      "learningObjective": "Identificar o espinheiro.",
+      "evidence": [
+        "Juízes 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 9:8, a quem as árvores falaram primeiro?",
+      "verseRef": "Juízes 9:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oliveira"
+        },
+        {
+          "id": "b",
+          "text": "Espinheiro"
+        },
+        {
+          "id": "c",
+          "text": "Cedro"
+        },
+        {
+          "id": "d",
+          "text": "Trigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disseram à oliveira",
+      "feedbackCorrect": "Oliveira.",
+      "feedbackWrong": {
+        "b": "Espinheiro é o fim.",
+        "c": "Cedro é ameaçado.",
+        "d": "Não é trigo."
+      },
+      "hint": "Leia o primeiro pedido.",
+      "learningObjective": "Reconhecer a oliveira.",
+      "evidence": [
+        "Juízes 9:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 9:8 na ordem do texto.",
+      "verseRef": "Juízes 9:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "As árvores, certa vez, foram ungir um rei"
+        },
+        {
+          "id": "b",
+          "text": "disseram à oliveira"
+        },
+        {
+          "id": "c",
+          "text": "Reina sobre nós"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Reina sobre nós",
+      "feedbackCorrect": "Busca, oliveira e pedido.",
+      "feedbackWrong": {
+        "default": "Comece pelas árvores."
+      },
+      "hint": "O que pedem?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 9:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 9:9, complete: Deixaria eu o meu ___.",
+      "verseRef": "Juízes 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "óleo"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "espinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deixaria eu o meu óleo",
+      "feedbackCorrect": "Óleo.",
+      "feedbackWrong": {
+        "b": "Não é fogo.",
+        "c": "Não é espinho."
+      },
+      "hint": "Veja o fruto.",
+      "learningObjective": "Lembrar óleo.",
+      "evidence": [
+        "Juízes 9:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 9:7 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 9:7",
+      "passageA": {
+        "ref": "Juízes 9:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jotão clama a parábola para advertir Siquém."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor no Gerizim"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio das árvores"
+        },
+        {
+          "id": "c",
+          "text": "Sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantou a voz e clamou",
+      "feedbackCorrect": "Clamor público.",
+      "feedbackWrong": {
+        "b": "Há clamor.",
+        "c": "Há Deus."
+      },
+      "hint": "O que Jotão faz?",
+      "learningObjective": "Ligar clamor e parábola.",
+      "evidence": [
+        "Juízes 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 9:9, a oliveira abandona o óleo para pairar sobre as árvores.",
+      "verseRef": "Juízes 9:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Deixaria eu o meu óleo",
+      "feedbackCorrect": "Ela recusa deixar.",
+      "feedbackWrong": {
+        "true": "Pergunta retórica de recusa."
+      },
+      "hint": "Leia a resposta.",
+      "learningObjective": "Ver a recusa.",
+      "evidence": [
+        "Juízes 9:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 9:9, toque o marcador de contraste.",
+      "verseRef": "Juízes 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "óleo"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém a oliveira lhes respondeu",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Óleo é o fruto.",
+        "c": "Deus estima o óleo."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 9:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 9:15 faz?",
+      "verseRef": "Juízes 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se ungirem, sombra; mas se não, fogo"
+        },
+        {
+          "id": "b",
+          "text": "Sempre sombra sem condição"
+        },
+        {
+          "id": "c",
+          "text": "Só cedros reinam"
+        },
+        {
+          "id": "d",
+          "text": "Oliveira ameaça fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas, caso contrário, que saia fogo do espinheiro",
+      "feedbackCorrect": "Condição e ameaça.",
+      "feedbackWrong": {
+        "b": "Há condição.",
+        "c": "Há fogo.",
+        "d": "Espinheiro fala."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Compreender a ameaça.",
+      "evidence": [
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da parábola.",
+      "verseRef": "Juízes 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor de Jotão"
+        },
+        {
+          "id": "b",
+          "text": "Recusas das árvores frutíferas"
+        },
+        {
+          "id": "c",
+          "text": "Espinheiro e ameaça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "levantou a voz e clamou",
+      "feedbackCorrect": "Clamor, recusas e espinheiro.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "O que fecha a ameaça?",
+      "learningObjective": "Ordenar a parábola",
+      "evidence": [
+        "Juízes 9:7",
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 9:11, complete: Deixaria eu a minha ___.",
+      "verseRef": "Juízes 9:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "doçura"
+        },
+        {
+          "id": "b",
+          "text": "sombra"
+        },
+        {
+          "id": "c",
+          "text": "coroa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deixaria eu a minha doçura",
+      "feedbackCorrect": "Doçura.",
+      "feedbackWrong": {
+        "b": "Não é sombra.",
+        "c": "Não é coroa."
+      },
+      "hint": "Veja o fruto.",
+      "learningObjective": "Lembrar doçura.",
+      "evidence": [
+        "Juízes 9:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 9:15 a Mateus 7:16?",
+      "verseRef": "Juízes 9:15",
+      "passageA": {
+        "ref": "Juízes 9:15"
+      },
+      "passageB": {
+        "ref": "Mateus 7:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pelos frutos os conhecereis"
+        },
+        {
+          "id": "b",
+          "text": "Sombra basta"
+        },
+        {
+          "id": "c",
+          "text": "Fogo é fruto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que saia fogo do espinheiro",
+      "feedbackCorrect": "Sem fruto bom.",
+      "feedbackWrong": {
+        "b": "Sombra não basta.",
+        "c": "Fogo não é fruto."
+      },
+      "hint": "Compare o fruto.",
+      "learningObjective": "Ligar a Mateus.",
+      "evidence": [
+        "Juízes 9:15",
+        "Mateus 7:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 9:15, o espinheiro oferece o mesmo fruto da oliveira e da videira.",
+      "verseRef": "Juízes 9:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "venham e se refugiem debaixo da minha sombra",
+      "feedbackCorrect": "Oferece sombra, não fruto.",
+      "feedbackWrong": {
+        "true": "Sombra e fogo."
+      },
+      "hint": "Leia a oferta.",
+      "learningObjective": "Avaliar o espinheiro.",
+      "evidence": [
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 9:15, toque o que o espinheiro oferece.",
+      "verseRef": "Juízes 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "sombra"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "cedros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se refugiem debaixo da minha sombra",
+      "feedbackCorrect": "Sombra.",
+      "feedbackWrong": {
+        "b": "Fogo é a ameaça.",
+        "c": "Cedros são ameaçados."
+      },
+      "hint": "Veja a oferta.",
+      "learningObjective": "Tocar a sombra.",
+      "evidence": [
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une recusa frutífera e reinado do espinheiro?",
+      "verseRef": "Juízes 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Só o sem fruto aceita reinado e traz fogo"
+        },
+        {
+          "id": "b",
+          "text": "Toda árvore deve reinar"
+        },
+        {
+          "id": "c",
+          "text": "Fruto impede servir"
+        },
+        {
+          "id": "d",
+          "text": "Jotão elogia o espinheiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disseram ao espinheiro: Vem tu e reina sobre nós",
+      "feedbackCorrect": "Poder sem fruto.",
+      "feedbackWrong": {
+        "b": "Há recusas.",
+        "c": "Há fruto.",
+        "d": "Há advertência."
+      },
+      "hint": "Una recusas e espinheiro.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da advertência.",
+      "verseRef": "Juízes 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Frutíferas guardam o fruto"
+        },
+        {
+          "id": "b",
+          "text": "Espinheiro aceita reinado"
+        },
+        {
+          "id": "c",
+          "text": "Fogo ameaça os cedros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que saia fogo do espinheiro e consuma os cedros do Líbano",
+      "feedbackCorrect": "Fruto, reinado e fogo.",
+      "feedbackWrong": {
+        "default": "Comece pelas frutíferas."
+      },
+      "hint": "O que o fogo consome?",
+      "learningObjective": "Encadear a advertência",
+      "evidence": [
+        "Juízes 9:9",
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 9:13, complete: Deixaria eu o meu ___.",
+      "verseRef": "Juízes 9:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "vinho"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deixaria eu o meu vinho",
+      "feedbackCorrect": "Vinho.",
+      "feedbackWrong": {
+        "b": "Não é fogo.",
+        "c": "Não é rei."
+      },
+      "hint": "Veja o fruto.",
+      "learningObjective": "Lembrar vinho.",
+      "evidence": [
+        "Juízes 9:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 9:9 a João 15:5?",
+      "verseRef": "Juízes 9:9",
+      "passageA": {
+        "ref": "Juízes 9:9"
+      },
+      "passageB": {
+        "ref": "João 15:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem mim nada podeis"
+        },
+        {
+          "id": "b",
+          "text": "Reinado sem fruto"
+        },
+        {
+          "id": "c",
+          "text": "Sombra basta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deixaria eu o meu óleo",
+      "feedbackCorrect": "Permanecer no fruto.",
+      "feedbackWrong": {
+        "b": "Não sem fruto.",
+        "c": "Sombra não basta."
+      },
+      "hint": "Compare o permanecer.",
+      "learningObjective": "Ligar a João.",
+      "evidence": [
+        "Juízes 9:9",
+        "João 15:5"
+      ]
+    }
+  ]
+}

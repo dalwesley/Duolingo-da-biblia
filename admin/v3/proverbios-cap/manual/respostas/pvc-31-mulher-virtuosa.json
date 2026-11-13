@@ -1,0 +1,720 @@
+{
+ "study": {
+  "passageRef": "Provérbios 31:10–15",
+  "passages": [
+   {
+    "ref": "Provérbios 31:10–15"
+   },
+   {
+    "ref": "Provérbios 31:16–21"
+   }
+  ],
+  "context": "A mulher virtuosa vale mais que joias; trabalha, sustenta a casa e estende a mão ao necessitado.",
+  "keyword": "Virtuosa",
+  "keywordGloss": "Mulher de força e valor: diligência, cuidado e generosidade.",
+  "focusQuestion": "Onde a diligência e a generosidade da mulher virtuosa desafiam a sua rotina?",
+  "reflectionPrompts": [
+   "Valor acima de joias",
+   "Mãos ao trabalho",
+   "Mão ao necessitado"
+  ],
+  "facts": [
+   {
+    "text": "O valor da mulher virtuosa é maior do que o de finas joias.",
+    "evidenceRef": "Provérbios 31:10",
+    "evidenceSpan": "muito maior do que o de finas joias"
+   },
+   {
+    "text": "O coração do marido confia nela.",
+    "evidenceRef": "Provérbios 31:11",
+    "evidenceSpan": "O coração do seu marido confia nela"
+   },
+   {
+    "text": "Ela lhe faz o bem e não o mal todos os dias.",
+    "evidenceRef": "Provérbios 31:12",
+    "evidenceSpan": "Ela lhe faz o bem e não o mal"
+   },
+   {
+    "text": "Levanta-se ainda de noite e alimenta a casa.",
+    "evidenceRef": "Provérbios 31:15",
+    "evidenceSpan": "Levanta-se ainda de noite"
+   },
+   {
+    "text": "Abre a mão para o aflito e estende-a ao necessitado.",
+    "evidenceRef": "Provérbios 31:20",
+    "evidenceSpan": "abre a mão para o aflito"
+   },
+   {
+    "text": "Cinge os lombos com força e fortalece os braços.",
+    "evidenceRef": "Provérbios 31:17",
+    "evidenceSpan": "Cinge os lombos com força"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "virtuosa",
+    "gloss": "Mulher de valor raro, maior que joias."
+   },
+   {
+    "term": "força",
+    "gloss": "Com que cinge os lombos e fortalece os braços."
+   },
+   {
+    "term": "necessitado",
+    "gloss": "A quem ela estende a mão."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Valor e confiança do marido",
+    "evidenceRef": "Provérbios 31:10–12"
+   },
+   {
+    "label": "Trabalho com lã, linho e pão",
+    "evidenceRef": "Provérbios 31:13–15"
+   },
+   {
+    "label": "Propriedade, força e ganho",
+    "evidenceRef": "Provérbios 31:16–19"
+   },
+   {
+    "label": "Mão ao pobre e casa vestida",
+    "evidenceRef": "Provérbios 31:20–21"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Faz o bem e não o mal.",
+    "marker": null,
+    "evidenceRef": "Provérbios 31:12"
+   },
+   {
+    "kind": "sequência",
+    "text": "Busca lã → trabalha → alimenta a casa.",
+    "marker": null,
+    "evidenceRef": "Provérbios 31:13"
+   },
+   {
+    "kind": "resultado",
+    "text": "Por causa da casa vestida, não teme a neve.",
+    "marker": "pois",
+    "evidenceRef": "Provérbios 31:21"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Rute 3:11",
+    "bridge": "Mulher virtuosa conhecida"
+   },
+   {
+    "ref": "1 Timóteo 2:10",
+    "bridge": "Boas obras adornam"
+   },
+   {
+    "ref": "Atos 9:36",
+    "bridge": "Tabita cheia de boas obras"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O valor dela se resume à aparência.",
+    "why": "31:10 compara o valor a joias, mas o texto descreve obras."
+   },
+   {
+    "text": "Ela só cuida de si, nunca do pobre.",
+    "why": "31:20 abre a mão ao aflito e ao necessitado."
+   },
+   {
+    "text": "O marido desconfia dela.",
+    "why": "31:11: o coração do marido confia nela."
+   }
+  ],
+  "centralInsight": "A força da sabedoria também se veste de diligência, cuidado e generosidade.",
+  "anchorQuestion": "O que Provérbios 31:20 diz que ela faz pelo aflito?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 31:10, o valor da mulher virtuosa é maior do que o de finas joias.",
+   "verseRef": "Provérbios 31:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "muito maior do que o de finas joias",
+   "feedbackCorrect": "O versículo compara o valor a finas joias e o põe acima.",
+   "feedbackWrong": {
+    "false": "Releia 31:10: muito maior."
+   },
+   "hint": "Veja a comparação.",
+   "learningObjective": "Observar o valor da virtuosa.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:10, toque quem se busca.",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulher virtuosa"
+    },
+    {
+     "id": "b",
+     "text": "joias"
+    },
+    {
+     "id": "c",
+     "text": "valor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "A buscada é a mulher virtuosa.",
+   "feedbackWrong": {
+    "b": "Joias são a comparação.",
+    "c": "Valor descreve o quão rara ela é."
+   },
+   "hint": "Abertura do versículo.",
+   "learningObjective": "Identificar a mulher virtuosa.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 31:20, a quem ela abre a mão?",
+   "verseRef": "Provérbios 31:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ao aflito e ao necessitado"
+    },
+    {
+     "id": "b",
+     "text": "Só aos mercadores"
+    },
+    {
+     "id": "c",
+     "text": "Apenas às servas"
+    },
+    {
+     "id": "d",
+     "text": "Somente a si mesma"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "abre a mão para o aflito",
+   "feedbackCorrect": "Ela abre a mão ao aflito e a estende ao necessitado.",
+   "feedbackWrong": {
+    "b": "Mercadores aparecem depois no louvor.",
+    "c": "Servas recebem tarefas em 31:15.",
+    "d": "Há generosidade para fora da casa."
+   },
+   "hint": "Objeto de abre a mão.",
+   "learningObjective": "Observar a generosidade.",
+   "evidence": [
+    "Provérbios 31:20"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 31:10 na ordem do texto.",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulher virtuosa, quem a encontrará?"
+    },
+    {
+     "id": "b",
+     "text": "O seu valor é muito maior"
+    },
+    {
+     "id": "c",
+     "text": "do que o de finas joias"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "Pergunta e valor acima das joias.",
+   "feedbackWrong": {
+    "default": "Comece pela Mulher virtuosa."
+   },
+   "hint": "O versículo abre com Mulher.",
+   "learningObjective": "Seguir a ordem do elogio.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 31:17, ela cinge os lombos com quê?",
+   "verseRef": "Provérbios 31:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "força"
+    },
+    {
+     "id": "b",
+     "text": "medo"
+    },
+    {
+     "id": "c",
+     "text": "preguiça"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Cinge os lombos com força",
+   "feedbackCorrect": "Cinge com força.",
+   "feedbackWrong": {
+    "b": "Não é medo; é força.",
+    "c": "Não é preguiça; é força."
+   },
+   "hint": "Complemento de cinge.",
+   "learningObjective": "Lembrar a força.",
+   "evidence": [
+    "Provérbios 31:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 31:20 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 31:20",
+   "passageA": {
+    "ref": "Provérbios 31:20",
+    "text": "abre a mão para o aflito"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Diligência e generosidade vestem a sabedoria."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Mão fechada ao pobre"
+    },
+    {
+     "id": "b",
+     "text": "Generosidade ao necessitado"
+    },
+    {
+     "id": "c",
+     "text": "Valor só em joias"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "abre a mão para o aflito",
+   "feedbackCorrect": "A mão aberta liga o verso à generosidade da cena.",
+   "feedbackWrong": {
+    "a": "Ela abre a mão.",
+    "c": "O valor se mostra em obras."
+   },
+   "hint": "Pense na mão estendida.",
+   "learningObjective": "Ligar 31:20 à generosidade.",
+   "evidence": [
+    "Provérbios 31:20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 31:21, ela não teme a neve porque a casa está vestida.",
+   "verseRef": "Provérbios 31:21",
+   "correctOptionId": "true",
+   "evidenceSpan": "pois todos na sua casa estão vestidos",
+   "feedbackCorrect": "O pois liga a ausência de temor à casa vestida.",
+   "feedbackWrong": {
+    "false": "Releia 31:21: pois todos estão vestidos."
+   },
+   "hint": "Veja o pois.",
+   "learningObjective": "Compreender a causa do sem temor.",
+   "evidence": [
+    "Provérbios 31:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:21, toque a palavra que marca a razão.",
+   "verseRef": "Provérbios 31:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "pois"
+    },
+    {
+     "id": "b",
+     "text": "neve"
+    },
+    {
+     "id": "c",
+     "text": "casa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pois todos na sua casa estão vestidos",
+   "feedbackCorrect": "\"Pois\" introduz a razão.",
+   "feedbackWrong": {
+    "b": "Neve é o que ela não teme.",
+    "c": "Casa é o âmbito do cuidado."
+   },
+   "hint": "Marcador no meio do verso.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Provérbios 31:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 31:12 estabelece no casamento?",
+   "verseRef": "Provérbios 31:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Contraste: faz o bem e não o mal"
+    },
+    {
+     "id": "b",
+     "text": "Só faz o mal às vezes"
+    },
+    {
+     "id": "c",
+     "text": "Bem e mal se equivalem"
+    },
+    {
+     "id": "d",
+     "text": "O bem dura só um dia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ela lhe faz o bem e não o mal",
+   "feedbackCorrect": "Bem contínuo, não o mal, todos os dias.",
+   "feedbackWrong": {
+    "b": "O texto nega o mal.",
+    "c": "Há contraste bem/mal.",
+    "d": "Todos os dias de sua vida."
+   },
+   "hint": "Leia bem e não o mal.",
+   "learningObjective": "Relacionar bem e mal.",
+   "evidence": [
+    "Provérbios 31:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o retrato em Provérbios 31:10–21?",
+   "verseRef": "Provérbios 31:10–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Valor e confiança do marido"
+    },
+    {
+     "id": "b",
+     "text": "Trabalho e sustento da casa"
+    },
+    {
+     "id": "c",
+     "text": "Mão ao pobre e casa vestida"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "Do valor à obra e à generosidade.",
+   "feedbackWrong": {
+    "default": "Comece pelo valor."
+   },
+   "hint": "O fim abre a mão ao pobre.",
+   "learningObjective": "Compreender o movimento do retrato.",
+   "evidence": [
+    "Provérbios 31:10",
+    "Provérbios 31:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 31:21, ela não teme a quê?",
+   "verseRef": "Provérbios 31:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "neve"
+    },
+    {
+     "id": "b",
+     "text": "casa"
+    },
+    {
+     "id": "c",
+     "text": "mão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não teme a neve",
+   "feedbackCorrect": "Ela não teme a neve.",
+   "feedbackWrong": {
+    "b": "A casa está vestida.",
+    "c": "Mão é de 31:20."
+   },
+   "hint": "Objeto do não teme.",
+   "learningObjective": "Lembrar a neve sem temor.",
+   "evidence": [
+    "Provérbios 31:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 31:10 a Rute 3:11?",
+   "verseRef": "Provérbios 31:10",
+   "passageA": {
+    "ref": "Provérbios 31:10",
+    "text": "Mulher virtuosa, quem a encontrará?"
+   },
+   "passageB": {
+    "ref": "Rute 3:11"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulher virtuosa conhecida"
+    },
+    {
+     "id": "b",
+     "text": "Valor só em joias"
+    },
+    {
+     "id": "c",
+     "text": "Mão fechada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "Os dois textos celebram a mulher virtuosa conhecida.",
+   "feedbackWrong": {
+    "b": "O valor se mostra em obras.",
+    "c": "Há mão aberta ao pobre."
+   },
+   "hint": "Compare o título virtuosa.",
+   "learningObjective": "Cruzar a mulher virtuosa.",
+   "evidence": [
+    "Provérbios 31:10",
+    "Rute 3:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 31:10–21, o valor da virtuosa se resume à aparência externa.",
+   "verseRef": "Provérbios 31:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "muito maior do que o de finas joias",
+   "feedbackCorrect": "O texto descreve obras, confiança e generosidade, não só aparência.",
+   "feedbackWrong": {
+    "true": "Releia as obras de 31:13–20."
+   },
+   "hint": "Veja o que o texto lista.",
+   "learningObjective": "Corrigir a leitura da aparência.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:20, toque o trecho que sustenta a generosidade.",
+   "verseRef": "Provérbios 31:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "abre a mão"
+    },
+    {
+     "id": "b",
+     "text": "aflito"
+    },
+    {
+     "id": "c",
+     "text": "necessitado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "abre a mão para o aflito",
+   "feedbackCorrect": "Ela abre a mão ao aflito.",
+   "feedbackWrong": {
+    "b": "Aflito é o destinatário.",
+    "c": "Necessitado também recebe a mão."
+   },
+   "hint": "Gesto para o aflito.",
+   "learningObjective": "Sustentar a leitura generosa.",
+   "evidence": [
+    "Provérbios 31:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 31:10–21 sustenta?",
+   "verseRef": "Provérbios 31:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Diligência e generosidade vestem a sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Valor é só joia"
+    },
+    {
+     "id": "c",
+     "text": "Confiança do marido é cega"
+    },
+    {
+     "id": "d",
+     "text": "Mão fechada ao necessitado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "abre a mão para o aflito",
+   "feedbackCorrect": "Valor, trabalho e mão aberta formam o retrato.",
+   "feedbackWrong": {
+    "b": "Joias são comparação, não o conteúdo.",
+    "c": "A confiança vem do bem contínuo.",
+    "d": "Ela estende a mão."
+   },
+   "hint": "Una valor, obra e mão.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 31:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio da mulher virtuosa?",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mulher virtuosa de grande valor"
+    },
+    {
+     "id": "b",
+     "text": "Rute é chamada virtuosa"
+    },
+    {
+     "id": "c",
+     "text": "Tabita cheia de boas obras"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Mulher virtuosa, quem a encontrará?",
+   "feedbackCorrect": "Do retrato a Rute e a Tabita.",
+   "feedbackWrong": {
+    "default": "Comece por 31:10."
+   },
+   "hint": "De Provérbios a Rute e Atos.",
+   "learningObjective": "Ver o tema atravessar a Bíblia.",
+   "evidence": [
+    "Provérbios 31:10",
+    "Rute 3:11",
+    "Atos 9:36"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 31:10, como é chamada a mulher buscada?",
+   "verseRef": "Provérbios 31:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "virtuosa"
+    },
+    {
+     "id": "b",
+     "text": "preguiçosa"
+    },
+    {
+     "id": "c",
+     "text": "oculta"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mulher virtuosa",
+   "feedbackCorrect": "O termo é virtuosa.",
+   "feedbackWrong": {
+    "b": "Não é preguiçosa.",
+    "c": "Não é oculta; é buscada."
+   },
+   "hint": "Adjetivo do título.",
+   "learningObjective": "Lembrar o termo virtuosa.",
+   "evidence": [
+    "Provérbios 31:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 31:20 a Atos 9:36?",
+   "verseRef": "Provérbios 31:20",
+   "passageA": {
+    "ref": "Provérbios 31:20",
+    "text": "abre a mão para o aflito"
+   },
+   "passageB": {
+    "ref": "Atos 9:36"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Boas obras ao necessitado"
+    },
+    {
+     "id": "b",
+     "text": "Mão fechada"
+    },
+    {
+     "id": "c",
+     "text": "Só aparência"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "abre a mão para o aflito",
+   "feedbackCorrect": "Os dois textos mostram mãos generosas em obras.",
+   "feedbackWrong": {
+    "b": "Há mão aberta.",
+    "c": "O valor está nas obras."
+   },
+   "hint": "Compare a generosidade.",
+   "learningObjective": "Ligar a mão aberta a Tabita.",
+   "evidence": [
+    "Provérbios 31:20",
+    "Atos 9:36"
+   ]
+  }
+ ]
+}

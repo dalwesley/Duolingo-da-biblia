@@ -1,0 +1,928 @@
+{
+ "study": {
+  "passageRef": "Romanos 5:6–11",
+  "passages": [
+   {
+    "ref": "Romanos 5:6–11"
+   },
+   {
+    "ref": "Romanos 6:1–11"
+   },
+   {
+    "ref": "Romanos 7:15–25"
+   },
+   {
+    "ref": "Romanos 8:31–39"
+   }
+  ],
+  "context": "Esta Travessia revisa a etapa da graça: o amor na cruz, a morte para o pecado, a luta interior e a segurança no amor de Deus em Cristo.",
+  "keyword": "graça",
+  "keywordGloss": "O favor de Deus que justifica, liberta do pecado e segura o crente no amor de Cristo.",
+  "focusQuestion": "Em qual dessas quatro cenas você mais precisa lembrar a graça hoje?",
+  "reflectionPrompts": [
+   "Amor na cruz",
+   "Mortos para o pecado",
+   "Nada nos separa"
+  ],
+  "facts": [
+   {
+    "text": "Cristo morreu por nós sendo nós ainda pecadores.",
+    "evidenceRef": "Romanos 5:8",
+    "evidenceSpan": "Cristo ter morrido por nós, sendo nós ainda pecadores"
+   },
+   {
+    "text": "Fomos reconciliados com Deus pela morte do Filho.",
+    "evidenceRef": "Romanos 5:10",
+    "evidenceSpan": "fomos reconciliados com Deus pela morte de seu Filho"
+   },
+   {
+    "text": "Fomos batizados na morte de Cristo.",
+    "evidenceRef": "Romanos 6:3",
+    "evidenceSpan": "fomos batizados em sua morte"
+   },
+   {
+    "text": "Paulo não pratica o bem que prefere, mas o mal que não quer.",
+    "evidenceRef": "Romanos 7:19",
+    "evidenceSpan": "não pratico o bem que prefiro, mas o mal que não quero"
+   },
+   {
+    "text": "Em todas as aflições somos mais que vencedores.",
+    "evidenceRef": "Romanos 8:37",
+    "evidenceSpan": "somos mais que vencedores, através daquele que nos amou"
+   },
+   {
+    "text": "Nenhuma criatura poderá nos separar do amor de Deus.",
+    "evidenceRef": "Romanos 8:39",
+    "evidenceSpan": "nem qualquer outra criatura poderá nos separar do amor de Deus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "reconciliados",
+    "gloss": "Restaurados à paz com Deus pela morte de Cristo."
+   },
+   {
+    "term": "novidade de vida",
+    "gloss": "O andar novo que segue a ressurreição de Cristo."
+   },
+   {
+    "term": "intercede",
+    "gloss": "Cristo fala a favor de nós à direita de Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Amor demonstrado na cruz",
+    "evidenceRef": "Romanos 5:8"
+   },
+   {
+    "label": "Mortos e vivos com Cristo",
+    "evidenceRef": "Romanos 6:4"
+   },
+   {
+    "label": "Guerra interior e livramento",
+    "evidenceRef": "Romanos 7:24"
+   },
+   {
+    "label": "Segurança no amor de Deus",
+    "evidenceRef": "Romanos 8:39"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Cristo morreu por pecadores, não por justos já prontos.",
+    "marker": "Mas",
+    "evidenceRef": "Romanos 5:8"
+   },
+   {
+    "kind": "propósito",
+    "text": "O batismo na morte visa andar em novidade de vida.",
+    "marker": "a fim de",
+    "evidenceRef": "Romanos 6:4"
+   },
+   {
+    "kind": "contraste",
+    "text": "Nas aflições, porém, somos mais que vencedores.",
+    "marker": "porém",
+    "evidenceRef": "Romanos 8:37"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gálatas 2:20",
+    "bridge": "Crucificado com Cristo"
+   },
+   {
+    "ref": "1 João 4:10",
+    "bridge": "Amor que envia o Filho"
+   },
+   {
+    "ref": "João 10:28",
+    "bridge": "Ninguém arrebata das mãos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A graça permite permanecer no pecado sem mudança de vida.",
+    "why": "Romanos 6:2 rejeita: quem morreu para o pecado não continua a viver nele."
+   },
+   {
+    "text": "A luta interior prova que Cristo não livra de verdade.",
+    "why": "Romanos 7:24–25 aponta o livramento por Jesus Cristo, nosso Senhor."
+   },
+   {
+    "text": "O sofrimento mostra que o amor de Deus falhou.",
+    "why": "Romanos 8:37 diz que em todas essas coisas somos mais que vencedores."
+   }
+  ],
+  "centralInsight": "Em Cristo, a graça leva a uma vida nova e segura",
+  "anchorQuestion": "Segundo Romanos 5:8, quando Cristo morreu por nós?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Romanos 5:8, Cristo morreu por nós sendo nós ainda pecadores.",
+   "verseRef": "Romanos 5:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "Cristo ter morrido por nós, sendo nós ainda pecadores",
+   "feedbackCorrect": "O amor de Deus aparece enquanto ainda éramos pecadores.",
+   "feedbackWrong": {
+    "false": "Releia Romanos 5:8: Cristo morreu sendo nós ainda pecadores."
+   },
+   "hint": "Veja o estado em que estávamos quando Cristo morreu.",
+   "learningObjective": "Observar o tempo do amor de Deus na cruz.",
+   "evidence": [
+    "Romanos 5:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 6:3, toque em que fomos batizados em Cristo Jesus.",
+   "verseRef": "Romanos 6:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "sua morte"
+    },
+    {
+     "id": "b",
+     "text": "Cristo Jesus"
+    },
+    {
+     "id": "c",
+     "text": "vocês não sabem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fomos batizados em sua morte",
+   "feedbackCorrect": "O batismo une à morte de Cristo, não só a um rito.",
+   "feedbackWrong": {
+    "b": "Cristo Jesus é em quem fomos batizados; a pergunta pede em que.",
+    "c": "Isso introduz a pergunta; não diz o conteúdo do batismo."
+   },
+   "hint": "Leia o fim da pergunta de Paulo.",
+   "learningObjective": "Identificar a união à morte de Cristo no batismo.",
+   "evidence": [
+    "Romanos 6:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Romanos 7:24, o que Paulo pergunta em meio à luta?",
+   "verseRef": "Romanos 7:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem me livrará do corpo desta morte?"
+    },
+    {
+     "id": "b",
+     "text": "Quem me dará mais leis para cumprir?"
+    },
+    {
+     "id": "c",
+     "text": "Quem me afastará de Cristo para sempre?"
+    },
+    {
+     "id": "d",
+     "text": "Quem me fará esquecer o pecado?"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem me livrará do corpo desta morte?",
+   "feedbackCorrect": "O clamor é por livramento, não por mais esforço sozinho.",
+   "feedbackWrong": {
+    "b": "Ele não pede mais leis; pede quem o livra.",
+    "c": "O texto não fala de afastamento de Cristo.",
+    "d": "A pergunta é sobre livramento da morte, não esquecimento."
+   },
+   "hint": "Leia o clamor no fim do versículo.",
+   "learningObjective": "Observar o pedido de livramento em Romanos 7.",
+   "evidence": [
+    "Romanos 7:24"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 5:8 na ordem do texto.",
+   "verseRef": "Romanos 5:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mas Deus demonstra o seu próprio amor por nós"
+    },
+    {
+     "id": "b",
+     "text": "pelo fato de Cristo ter morrido por nós"
+    },
+    {
+     "id": "c",
+     "text": "sendo nós ainda pecadores"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Cristo ter morrido por nós, sendo nós ainda pecadores",
+   "feedbackCorrect": "Amor demonstrado, morte de Cristo e o nosso estado: a ordem do versículo.",
+   "feedbackWrong": {
+    "default": "Comece pela demonstração do amor; o estado de pecadores fecha."
+   },
+   "hint": "O versículo começa com \"Mas Deus\".",
+   "learningObjective": "Reconhecer a sequência de Romanos 5:8.",
+   "evidence": [
+    "Romanos 5:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Romanos 6:4, fomos sepultados com ele na morte pelo ___.",
+   "verseRef": "Romanos 6:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "batismo"
+    },
+    {
+     "id": "b",
+     "text": "temor"
+    },
+    {
+     "id": "c",
+     "text": "mérito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "fomos sepultados com ele na morte pelo batismo",
+   "feedbackCorrect": "O batismo marca a união à morte de Cristo.",
+   "feedbackWrong": {
+    "b": "Não é temor; o texto fala de batismo.",
+    "c": "Não é mérito; é pelo batismo."
+   },
+   "hint": "Veja o meio pelo qual fomos sepultados com ele.",
+   "learningObjective": "Lembrar o meio da união à morte de Cristo.",
+   "evidence": [
+    "Romanos 6:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Romanos 8:39 comunica que se liga a este contexto?",
+   "verseRef": "Romanos 8:39",
+   "passageA": {
+    "ref": "Romanos 8:39"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Nenhuma criatura corta o amor de Deus em Cristo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "O amor de Deus é frágil"
+    },
+    {
+     "id": "b",
+     "text": "Nada separa do amor"
+    },
+    {
+     "id": "c",
+     "text": "Só anjos podem separar"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "poderá nos separar do amor de Deus",
+   "feedbackCorrect": "A lista termina: nenhuma criatura separa do amor em Cristo.",
+   "feedbackWrong": {
+    "a": "O texto afirma segurança, não fragilidade.",
+    "c": "Anjos estão na lista do que não separa."
+   },
+   "hint": "Veja o verbo ligado ao amor de Deus.",
+   "learningObjective": "Ligar Romanos 8:39 à segurança no amor.",
+   "evidence": [
+    "Romanos 8:39"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 8:31, toque quem está por nós.",
+   "verseRef": "Romanos 8:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "quem"
+    },
+    {
+     "id": "c",
+     "text": "nós"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Se Deus está por nós",
+   "feedbackCorrect": "A segurança começa com Deus a nosso favor.",
+   "feedbackWrong": {
+    "b": "\"Quem\" pergunta pelo adversário.",
+    "c": "\"Nós\" somos os beneficiados."
+   },
+   "hint": "Procure o sujeito de \"está por nós\".",
+   "learningObjective": "Identificar Deus como aliado dos crentes.",
+   "evidence": [
+    "Romanos 8:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 6:2 na ordem do texto.",
+   "verseRef": "Romanos 6:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "De forma nenhuma!"
+    },
+    {
+     "id": "b",
+     "text": "Nós, que morremos para o pecado"
+    },
+    {
+     "id": "c",
+     "text": "como continuaremos a viver nele?"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Nós, que morremos para o pecado",
+   "feedbackCorrect": "A recusa vem primeiro; depois a lógica da morte para o pecado.",
+   "feedbackWrong": {
+    "default": "Comece pela recusa \"De forma nenhuma!\"."
+   },
+   "hint": "O versículo abre com uma negativa forte.",
+   "learningObjective": "Reconhecer a sequência de Romanos 6:2.",
+   "evidence": [
+    "Romanos 6:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Romanos 6:1–2, Paulo aprova permanecer no pecado para aumentar a graça.",
+   "verseRef": "Romanos 6:1–2",
+   "correctOptionId": "false",
+   "evidenceSpan": "De forma nenhuma! Nós, que morremos para o pecado",
+   "feedbackCorrect": "A resposta é negativa: quem morreu para o pecado não continua nele.",
+   "feedbackWrong": {
+    "true": "Releia Romanos 6:2: De forma nenhuma!"
+   },
+   "hint": "Veja a resposta imediata de Paulo.",
+   "learningObjective": "Compreender a recusa de abusar da graça.",
+   "evidence": [
+    "Romanos 6:1–2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 5:8, toque a palavra que marca o contraste com o raramente de 5:7.",
+   "verseRef": "Romanos 5:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mas"
+    },
+    {
+     "id": "b",
+     "text": "amor"
+    },
+    {
+     "id": "c",
+     "text": "pecadores"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Mas Deus demonstra o seu próprio amor por nós",
+   "feedbackCorrect": "\"Mas\" abre o contraste: Deus faz o que raramente alguém faz.",
+   "feedbackWrong": {
+    "b": "\"Amor\" é o conteúdo; o contraste começa antes.",
+    "c": "\"Pecadores\" descreve nosso estado, não o contraste."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de contraste em 5:8.",
+   "evidence": [
+    "Romanos 5:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Romanos 6:4 liga a morte de Cristo à vida do crente?",
+   "verseRef": "Romanos 6:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fomos sepultados para andar em novidade de vida"
+    },
+    {
+     "id": "b",
+     "text": "A morte de Cristo dispensa qualquer mudança"
+    },
+    {
+     "id": "c",
+     "text": "Só o sepultamento importa, não a ressurreição"
+    },
+    {
+     "id": "d",
+     "text": "A novidade de vida vem sem união a Cristo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "também andemos nós em novidade de vida",
+   "feedbackCorrect": "O propósito do batismo na morte é o andar novo com o Cristo ressuscitado.",
+   "feedbackWrong": {
+    "b": "O texto aponta novidade de vida, não permanência igual.",
+    "c": "A comparação inclui a ressurreição de Cristo.",
+    "d": "A novidade vem unidos a ele."
+   },
+   "hint": "Veja a finalidade depois de \"a fim de que\".",
+   "learningObjective": "Relacionar sepultamento e novidade de vida.",
+   "evidence": [
+    "Romanos 6:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a etapa da graça nestes textos?",
+   "verseRef": "Romanos 5:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo morre por pecadores"
+    },
+    {
+     "id": "b",
+     "text": "O crente morre para o pecado"
+    },
+    {
+     "id": "c",
+     "text": "Seguros no amor que não separa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "sendo nós ainda pecadores",
+   "feedbackCorrect": "Da cruz à morte para o pecado e à segurança: o fio da etapa.",
+   "feedbackWrong": {
+    "default": "Comece pela cruz; a inseparabilidade fecha a etapa."
+   },
+   "hint": "Siga a ordem dos capítulos 5, 6 e 8.",
+   "learningObjective": "Compreender o movimento da etapa.",
+   "evidence": [
+    "Romanos 5:8",
+    "Romanos 6:2",
+    "Romanos 8:39"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Romanos 6:4, Cristo foi ressuscitado para que também andemos em ___ de vida.",
+   "verseRef": "Romanos 6:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "novidade"
+    },
+    {
+     "id": "b",
+     "text": "repetição"
+    },
+    {
+     "id": "c",
+     "text": "ausência"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "também andemos nós em novidade de vida",
+   "feedbackCorrect": "A ressurreição aponta para um andar novo.",
+   "feedbackWrong": {
+    "b": "Não é repetição do velho; é novidade.",
+    "c": "Não é ausência de vida; é novidade de vida."
+   },
+   "hint": "Veja a palavra antes de \"de vida\".",
+   "learningObjective": "Lembrar o termo do andar novo.",
+   "evidence": [
+    "Romanos 6:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Romanos 5:8 a 1 João 4:10?",
+   "verseRef": "Romanos 5:8",
+   "passageA": {
+    "ref": "Romanos 5:8"
+   },
+   "passageB": {
+    "ref": "1 João 4:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amor que envia o Filho"
+    },
+    {
+     "id": "b",
+     "text": "Amor que espera nosso mérito"
+    },
+    {
+     "id": "c",
+     "text": "Amor só depois da mudança"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+   "feedbackCorrect": "Nos dois textos, o amor de Deus aparece no envio e na morte do Filho.",
+   "feedbackWrong": {
+    "b": "O amor age enquanto ainda éramos pecadores.",
+    "c": "O amor precede a nossa mudança."
+   },
+   "hint": "Compare quem ama primeiro.",
+   "learningObjective": "Relacionar a demonstração do amor em Paulo e João.",
+   "evidence": [
+    "Romanos 5:8",
+    "1 João 4:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 8:37, toque a palavra que marca o contraste com as aflições.",
+   "verseRef": "Romanos 8:37",
+   "options": [
+    {
+     "id": "a",
+     "text": "porém"
+    },
+    {
+     "id": "b",
+     "text": "todas"
+    },
+    {
+     "id": "c",
+     "text": "através"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Em todas essas coisas, porém",
+   "feedbackCorrect": "\"Porém\" vira a página: nas aflições há vitória.",
+   "feedbackWrong": {
+    "b": "\"Todas\" só resume as coisas.",
+    "c": "\"Através\" indica o meio, não o contraste."
+   },
+   "hint": "Procure a conjunção depois de \"essas coisas\".",
+   "learningObjective": "Reconhecer o contraste em 8:37.",
+   "evidence": [
+    "Romanos 8:37"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam os passos de Romanos 7:18–19?",
+   "verseRef": "Romanos 7:18–19",
+   "options": [
+    {
+     "id": "a",
+     "text": "O querer o bem está em mim"
+    },
+    {
+     "id": "b",
+     "text": "Não consigo efetivá-lo"
+    },
+    {
+     "id": "c",
+     "text": "Acabo realizando o mal"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o querer o bem está em mim, não, porém, consigo efetivá-lo",
+   "feedbackCorrect": "Querer, não efetivar e fazer o mal: a guerra interior.",
+   "feedbackWrong": {
+    "default": "Comece pelo querer; o mal realizado fecha."
+   },
+   "hint": "Primeiro o desejo do bem.",
+   "learningObjective": "Compreender a sequência da luta interior.",
+   "evidence": [
+    "Romanos 7:18–19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Romanos 6:2 ensina que a graça autoriza continuar vivendo no pecado.",
+   "verseRef": "Romanos 6:2",
+   "correctOptionId": "false",
+   "evidenceSpan": "como continuaremos a viver nele?",
+   "feedbackCorrect": "A pergunta retórica espera um não: mortos para o pecado não vivem nele.",
+   "feedbackWrong": {
+    "true": "Releia 6:2: a lógica é morte para o pecado, não permanência nele."
+   },
+   "hint": "Veja a pergunta depois de \"De forma nenhuma!\".",
+   "learningObjective": "Interpretar a graça sem licença para o pecado.",
+   "evidence": [
+    "Romanos 6:2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 5:10, toque o trecho que mostra o meio da reconciliação.",
+   "verseRef": "Romanos 5:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "inimigos"
+    },
+    {
+     "id": "b",
+     "text": "pela morte"
+    },
+    {
+     "id": "c",
+     "text": "sua vida"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "fomos reconciliados com Deus pela morte de seu Filho",
+   "feedbackCorrect": "A reconciliação veio pela morte do Filho, não por nosso esforço.",
+   "feedbackWrong": {
+    "a": "\"Inimigos\" descreve nosso estado anterior.",
+    "c": "\"Sua vida\" aponta a salvação futura; o meio da reconciliação é a morte."
+   },
+   "hint": "Procure a frase depois de \"pela\".",
+   "learningObjective": "Sustentar com o texto o meio da reconciliação.",
+   "evidence": [
+    "Romanos 5:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Romanos 7:24–25 e 8:37 sustentam juntos?",
+   "verseRef": "Romanos 7:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Há luta, mas o livramento e a vitória vêm por Cristo"
+    },
+    {
+     "id": "b",
+     "text": "A luta prova que Cristo não livra"
+    },
+    {
+     "id": "c",
+     "text": "A vitória elimina qualquer sofrimento"
+    },
+    {
+     "id": "d",
+     "text": "O livramento depende só da nossa força"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem me livrará do corpo desta morte?",
+   "feedbackCorrect": "O clamor por livramento encontra resposta em Cristo e na vitória do amor.",
+   "feedbackWrong": {
+    "b": "7:25 aponta Jesus Cristo como Senhor do livramento.",
+    "c": "8:37 fala de vitória nas aflições, não sem elas.",
+    "d": "O livramento é por Cristo, não só por nós."
+   },
+   "hint": "Una o clamor de 7:24 à vitória de 8:37.",
+   "learningObjective": "Escolher a leitura que une luta e graça.",
+   "evidence": [
+    "Romanos 7:24",
+    "Romanos 8:37"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da graça nesta etapa?",
+   "verseRef": "Romanos 5:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus ama e Cristo morre por pecadores"
+    },
+    {
+     "id": "b",
+     "text": "Unidos a Cristo, andamos em vida nova"
+    },
+    {
+     "id": "c",
+     "text": "Seguros, nada nos separa do amor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Deus demonstra o seu próprio amor por nós",
+   "feedbackCorrect": "Amor na cruz, vida nova e segurança: o arco da etapa.",
+   "feedbackWrong": {
+    "default": "Comece pela cruz; a inseparabilidade é o ponto de chegada."
+   },
+   "hint": "Siga 5 → 6 → 8.",
+   "learningObjective": "Ver o encadeamento bíblico da etapa.",
+   "evidence": [
+    "Romanos 5:8",
+    "Romanos 6:4",
+    "Romanos 8:39"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Romanos 5:10, pela morte do Filho fomos ___.",
+   "verseRef": "Romanos 5:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "esquecidos"
+    },
+    {
+     "id": "b",
+     "text": "reconciliados"
+    },
+    {
+     "id": "c",
+     "text": "abandonados"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "fomos reconciliados com Deus pela morte de seu Filho",
+   "feedbackCorrect": "O termo carrega a restauração da paz com Deus.",
+   "feedbackWrong": {
+    "a": "Não fomos esquecidos; fomos reconciliados.",
+    "c": "O oposto do texto: há reconciliação."
+   },
+   "hint": "Veja o verbo ligado à morte do Filho.",
+   "learningObjective": "Lembrar o termo da paz restaurada.",
+   "evidence": [
+    "Romanos 5:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Romanos 6:6 a Gálatas 2:20?",
+   "verseRef": "Romanos 6:6",
+   "passageA": {
+    "ref": "Romanos 6:6"
+   },
+   "passageB": {
+    "ref": "Gálatas 2:20"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Crucificado com Cristo"
+    },
+    {
+     "id": "b",
+     "text": "Vida sem Cristo"
+    },
+    {
+     "id": "c",
+     "text": "Pecado ainda como senhor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o nosso velho homem foi crucificado com ele",
+   "feedbackCorrect": "Nos dois textos, a união à cruz muda quem governa a vida.",
+   "feedbackWrong": {
+    "b": "Os dois falam de viver com Cristo, não sem ele.",
+    "c": "O propósito é não servir o pecado como escravos."
+   },
+   "hint": "Compare a crucificação do velho homem.",
+   "learningObjective": "Ligar a morte do velho homem em Romanos e Gálatas.",
+   "evidence": [
+    "Romanos 6:6",
+    "Gálatas 2:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 8:34, toque o trecho que mostra a ação presente de Cristo.",
+   "verseRef": "Romanos 8:34",
+   "options": [
+    {
+     "id": "a",
+     "text": "intercede por nós"
+    },
+    {
+     "id": "b",
+     "text": "quem morreu"
+    },
+    {
+     "id": "c",
+     "text": "dentre os mortos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "também intercede por nós",
+   "feedbackCorrect": "Além de morrer e ressuscitar, Cristo intercede agora.",
+   "feedbackWrong": {
+    "b": "A morte é o passado da obra.",
+    "c": "A ressurreição é decisiva; a intercessão é a ação atual."
+   },
+   "hint": "Procure o verbo no fim do versículo.",
+   "learningObjective": "Sustentar a intercessão atual de Cristo.",
+   "evidence": [
+    "Romanos 8:34"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o livramento que começa em Romanos 7:24?",
+   "verseRef": "Romanos 7:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "O clamor por quem livra da morte"
+    },
+    {
+     "id": "b",
+     "text": "Em Cristo somos mais que vencedores"
+    },
+    {
+     "id": "c",
+     "text": "Nada separa do amor de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Quem me livrará do corpo desta morte?",
+   "feedbackCorrect": "Do clamor à vitória e à segurança: a graça responde à luta.",
+   "feedbackWrong": {
+    "default": "Comece pelo clamor; a inseparabilidade fecha."
+   },
+   "hint": "Siga 7:24 → 8:37 → 8:39.",
+   "learningObjective": "Ver o fio do livramento até a segurança.",
+   "evidence": [
+    "Romanos 7:24",
+    "Romanos 8:37",
+    "Romanos 8:39"
+   ]
+  }
+ ]
+}

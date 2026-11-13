@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 35:1–9",
+    "passages": [
+      {
+        "ref": "Ezequiel 35:1–9"
+      }
+    ],
+    "context": "O Senhor volta o rosto contra o monte Seir por inimizade perpétua e sangue derramado.",
+    "keyword": "inimizade",
+    "keywordGloss": "Ódio contínuo de Seir contra Israel no tempo da calamidade.",
+    "focusQuestion": "Quando o irmão cai, você celebra ou se compadece?",
+    "reflectionPrompts": [
+      "Rosto contra Seir",
+      "Inimizade perpétua",
+      "Desolação"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor manda profetizar contra o monte Seir.",
+        "evidenceRef": "Ezequiel 35:2",
+        "evidenceSpan": "volta o rosto para o monte Seir e profetiza contra ele"
+      },
+      {
+        "text": "Ele está contra Seir e o tornará em desolação.",
+        "evidenceRef": "Ezequiel 35:3",
+        "evidenceSpan": "Eis que estou contra ti, ó monte Seir; estenderei minha mão contra ti e te tornarei em desolação e espanto"
+      },
+      {
+        "text": "Seir manteve inimizade perpétua e entregou Israel à espada.",
+        "evidenceRef": "Ezequiel 35:5",
+        "evidenceSpan": "Porquanto manténs inimizade perpétua e entregaste os filhos de Israel à violência da espada"
+      },
+      {
+        "text": "O sangue perseguirá Seir.",
+        "evidenceRef": "Ezequiel 35:6",
+        "evidenceSpan": "o sangue te perseguirá"
+      },
+      {
+        "text": "Seir será desolação perpétua.",
+        "evidenceRef": "Ezequiel 35:9",
+        "evidenceSpan": "Farei de você uma desolação perpétua"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "inimizade",
+        "gloss": "Ódio contínuo contra Israel."
+      },
+      {
+        "term": "desolação",
+        "gloss": "Resultado do juízo sobre Seir."
+      },
+      {
+        "term": "sangue",
+        "gloss": "Violência que volta contra Seir."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de profetizar contra Seir",
+        "evidenceRef": "Ezequiel 35:1–2"
+      },
+      {
+        "label": "Mão estendida e cidades desertas",
+        "evidenceRef": "Ezequiel 35:3–4"
+      },
+      {
+        "label": "Causa: inimizade e sangue",
+        "evidenceRef": "Ezequiel 35:5–6"
+      },
+      {
+        "label": "Desolação completa e perpétua",
+        "evidenceRef": "Ezequiel 35:7–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porquanto manteve inimizade, será julgado.",
+        "marker": "Porquanto",
+        "evidenceRef": "Ezequiel 35:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso o sangue o perseguirá.",
+        "marker": "Por isso",
+        "evidenceRef": "Ezequiel 35:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Então saberão que ele é o Senhor.",
+        "marker": "então",
+        "evidenceRef": "Ezequiel 35:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Obadias 1:10–12",
+        "bridge": "Violência contra Jacó"
+      },
+      {
+        "ref": "Gênesis 27:41",
+        "bridge": "Ódio de Esaú"
+      },
+      {
+        "ref": "Salmos 137:7",
+        "bridge": "Lembrete de Edom"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Seir é inocente no dia da calamidade.",
+        "why": "Entregou Israel à espada."
+      },
+      {
+        "text": "A inimizade foi passageira.",
+        "why": "É inimizade perpétua."
+      },
+      {
+        "text": "O sangue não volta contra Seir.",
+        "why": "O sangue o perseguirá."
+      }
+    ],
+    "centralInsight": "Porque tiveste inimizade perpétua e derramaste o sangue dos filhos de Israel.",
+    "anchorQuestion": "Qual a causa do juízo contra Seir em Ezequiel 35:5?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 35:5, Seir manteve inimizade perpétua e entregou Israel à espada.",
+      "verseRef": "Ezequiel 35:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua e entregaste os filhos de Israel à violência da espada",
+      "feedbackCorrect": "A causa é inimizade e sangue.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a causa."
+      },
+      "hint": "Veja o \"Porquanto\".",
+      "learningObjective": "Identificar a causa.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 35:3, toque contra quem o Senhor está.",
+      "verseRef": "Ezequiel 35:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "monte Seir"
+        },
+        {
+          "id": "b",
+          "text": "desolação"
+        },
+        {
+          "id": "c",
+          "text": "minha mão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que estou contra ti, ó monte Seir",
+      "feedbackCorrect": "O alvo é o monte Seir.",
+      "feedbackWrong": {
+        "b": "É o resultado.",
+        "c": "É o instrumento."
+      },
+      "hint": "Procure o vocativo.",
+      "learningObjective": "Identificar o alvo.",
+      "evidence": [
+        "Ezequiel 35:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 35:9, o que o Senhor fará de Seir?",
+      "verseRef": "Ezequiel 35:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desolação perpétua"
+        },
+        {
+          "id": "b",
+          "text": "Jardim fértil"
+        },
+        {
+          "id": "c",
+          "text": "Capital de Israel"
+        },
+        {
+          "id": "d",
+          "text": "Porto seguro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei de você uma desolação perpétua",
+      "feedbackCorrect": "A desolação é perpétua.",
+      "feedbackWrong": {
+        "b": "Não é jardim.",
+        "c": "Não é capital.",
+        "d": "Não é porto."
+      },
+      "hint": "Leia o início do versículo.",
+      "learningObjective": "Reconhecer o juízo.",
+      "evidence": [
+        "Ezequiel 35:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 35:3 na ordem do texto.",
+      "verseRef": "Ezequiel 35:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que estou contra ti, ó monte Seir"
+        },
+        {
+          "id": "b",
+          "text": "estenderei minha mão contra ti"
+        },
+        {
+          "id": "c",
+          "text": "e te tornarei em desolação e espanto"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis que estou contra ti, ó monte Seir",
+      "feedbackCorrect": "Contra → mão → desolação.",
+      "feedbackWrong": {
+        "default": "Comece pelo \"Eis\"."
+      },
+      "hint": "Comece pelo \"Eis\".",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Ezequiel 35:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 35:5, manténs ___ perpétua.",
+      "verseRef": "Ezequiel 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "inimizade"
+        },
+        {
+          "id": "b",
+          "text": "aliança"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua",
+      "feedbackCorrect": "A palavra é inimizade.",
+      "feedbackWrong": {
+        "b": "Não é aliança.",
+        "c": "Não é festa."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 35:5 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 35:5",
+      "passageA": {
+        "ref": "Ezequiel 35:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Seir é julgado por ódio contínuo e sangue no dia da calamidade."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Inimizade e espada"
+        },
+        {
+          "id": "b",
+          "text": "Cidades floridas"
+        },
+        {
+          "id": "c",
+          "text": "Rosto favorável"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua e entregaste os filhos de Israel à violência da espada",
+      "feedbackCorrect": "A causa resume a cena.",
+      "feedbackWrong": {
+        "b": "As cidades ficam desertas.",
+        "c": "O rosto está contra."
+      },
+      "hint": "Compare a causa.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 35:6, o sangue poupará Seir por causa da amizade.",
+      "verseRef": "Ezequiel 35:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "o sangue te perseguirá",
+      "feedbackCorrect": "O sangue persegue, não poupa.",
+      "feedbackWrong": {
+        "true": "O texto diz que perseguirá."
+      },
+      "hint": "Veja o destino do sangue.",
+      "learningObjective": "Perceber o resultado.",
+      "evidence": [
+        "Ezequiel 35:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 35:5, toque a palavra que marca a causa.",
+      "verseRef": "Ezequiel 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porquanto"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "calamidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua",
+      "feedbackCorrect": "\"Porquanto\" introduz a causa.",
+      "feedbackWrong": {
+        "b": "É o instrumento.",
+        "c": "É o tempo."
+      },
+      "hint": "Procure a abertura.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 35:5 e 35:6 se relacionam?",
+      "verseRef": "Ezequiel 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A inimizade e o sangue trazem a perseguição do sangue"
+        },
+        {
+          "id": "b",
+          "text": "A espada vira aliança de paz"
+        },
+        {
+          "id": "c",
+          "text": "O sangue é esquecido no juízo"
+        },
+        {
+          "id": "d",
+          "text": "Seir é recompensado por ajudar Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua",
+      "feedbackCorrect": "Causa → resultado do sangue.",
+      "feedbackWrong": {
+        "b": "Não há aliança.",
+        "c": "O sangue persegue.",
+        "d": "Ele entregou Israel."
+      },
+      "hint": "Una causa e resultado.",
+      "learningObjective": "Relacionar os versículos.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 35?",
+      "verseRef": "Ezequiel 35:2–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem de profetizar contra Seir"
+        },
+        {
+          "id": "b",
+          "text": "Causa: inimizade e sangue"
+        },
+        {
+          "id": "c",
+          "text": "Desolação perpétua anunciada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Farei de você uma desolação perpétua",
+      "feedbackCorrect": "Ordem → causa → desolação.",
+      "feedbackWrong": {
+        "default": "Comece na ordem."
+      },
+      "hint": "Comece na ordem.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 35:2",
+        "Ezequiel 35:5",
+        "Ezequiel 35:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 35:6, o ___ te perseguirá.",
+      "verseRef": "Ezequiel 35:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "trigo"
+        },
+        {
+          "id": "c",
+          "text": "vento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o sangue te perseguirá",
+      "feedbackCorrect": "A palavra é sangue.",
+      "feedbackWrong": {
+        "b": "Não é trigo.",
+        "c": "Não é vento."
+      },
+      "hint": "Veja o sujeito.",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "Ezequiel 35:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 35:5 a Obadias 1:10–12?",
+      "verseRef": "Ezequiel 35:5",
+      "passageA": {
+        "ref": "Ezequiel 35:5"
+      },
+      "passageB": {
+        "ref": "Obadias 1:10–12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Violência contra Jacó"
+        },
+        {
+          "id": "b",
+          "text": "Cidades desertas"
+        },
+        {
+          "id": "c",
+          "text": "Mão estendida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entregaste os filhos de Israel à violência da espada",
+      "feedbackCorrect": "Nos dois, Edom/Seir fere Jacó.",
+      "feedbackWrong": {
+        "b": "É o resultado local.",
+        "c": "É o gesto do juízo."
+      },
+      "hint": "Compare a violência.",
+      "learningObjective": "Relacionar a Obadias.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 35, Seir é inocente no dia da calamidade de Israel.",
+      "verseRef": "Ezequiel 35:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "entregaste os filhos de Israel à violência da espada, no tempo da calamidade",
+      "feedbackCorrect": "Ele entregou Israel na calamidade.",
+      "feedbackWrong": {
+        "true": "O texto o acusa."
+      },
+      "hint": "Leia o tempo da calamidade.",
+      "learningObjective": "Interpretar a culpa.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 35:9, toque o trecho que sustenta a duração do juízo.",
+      "verseRef": "Ezequiel 35:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "desolação perpétua"
+        },
+        {
+          "id": "b",
+          "text": "suas cidades"
+        },
+        {
+          "id": "c",
+          "text": "o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Farei de você uma desolação perpétua",
+      "feedbackCorrect": "A desolação é perpétua.",
+      "feedbackWrong": {
+        "b": "É o objeto.",
+        "c": "É quem fala."
+      },
+      "hint": "Procure a duração.",
+      "learningObjective": "Tocar a duração.",
+      "evidence": [
+        "Ezequiel 35:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 35 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 35:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inimizade e sangue trazem desolação perpétua"
+        },
+        {
+          "id": "b",
+          "text": "Seir é inocente na calamidade"
+        },
+        {
+          "id": "c",
+          "text": "A inimizade foi passageira"
+        },
+        {
+          "id": "d",
+          "text": "O sangue não volta contra Seir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua",
+      "feedbackCorrect": "Causa → sangue → desolação.",
+      "feedbackWrong": {
+        "b": "Ele entregou Israel.",
+        "c": "É perpétua.",
+        "d": "O sangue persegue."
+      },
+      "hint": "Una causa e juízo.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do juízo contra Seir.",
+      "verseRef": "Ezequiel 35:5–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Inimizade perpétua na calamidade"
+        },
+        {
+          "id": "b",
+          "text": "O sangue passa a perseguir"
+        },
+        {
+          "id": "c",
+          "text": "Desolação perpétua e cidades vazias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Farei de você uma desolação perpétua",
+      "feedbackCorrect": "Causa → sangue → desolação.",
+      "feedbackWrong": {
+        "default": "Comece na inimizade."
+      },
+      "hint": "Comece na inimizade.",
+      "learningObjective": "Encadear o juízo.",
+      "evidence": [
+        "Ezequiel 35:5",
+        "Ezequiel 35:6",
+        "Ezequiel 35:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 35:3, te tornarei em ___.",
+      "verseRef": "Ezequiel 35:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "desolação"
+        },
+        {
+          "id": "b",
+          "text": "vinha"
+        },
+        {
+          "id": "c",
+          "text": "trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "te tornarei em desolação e espanto",
+      "feedbackCorrect": "A palavra é desolação.",
+      "feedbackWrong": {
+        "b": "Não é vinha.",
+        "c": "Não é trono."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "Ezequiel 35:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 35:5 a Gênesis 27:41?",
+      "verseRef": "Ezequiel 35:5",
+      "passageA": {
+        "ref": "Ezequiel 35:5"
+      },
+      "passageB": {
+        "ref": "Gênesis 27:41"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ódio de Esaú"
+        },
+        {
+          "id": "b",
+          "text": "Cidades desertas"
+        },
+        {
+          "id": "c",
+          "text": "Mão estendida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto manténs inimizade perpétua",
+      "feedbackCorrect": "O ódio de Esaú ecoa em Seir.",
+      "feedbackWrong": {
+        "b": "É o resultado.",
+        "c": "É o gesto do juízo."
+      },
+      "hint": "Compare o ódio.",
+      "learningObjective": "Ligar a Gênesis.",
+      "evidence": [
+        "Ezequiel 35:5"
+      ]
+    }
+  ]
+}

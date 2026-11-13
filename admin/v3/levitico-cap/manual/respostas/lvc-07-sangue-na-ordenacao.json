@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Levítico 8:14–19",
+    "passages": [
+      {
+        "ref": "Levítico 8:14–19"
+      },
+      {
+        "ref": "Levítico 8:20–21"
+      }
+    ],
+    "context": "Cena de Sangue na ordenação: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Sangue na ordenação",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então.",
+        "evidenceRef": "Levítico 8:14",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Levítico 8:15",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Tomou toda a gordura que estava sobre as.",
+        "evidenceRef": "Levítico 8:16",
+        "evidenceSpan": "Tomou toda a gordura que estava sobre as"
+      },
+      {
+        "text": "Porém.",
+        "evidenceRef": "Levítico 8:17",
+        "evidenceSpan": "Porém"
+      },
+      {
+        "text": "Depois.",
+        "evidenceRef": "Levítico 8:18",
+        "evidenceSpan": "Depois"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Levítico 8:19",
+        "evidenceSpan": "E"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "altar",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "holocausto",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então trouxe o novilho da oferta",
+        "evidenceRef": "Levítico 8:14"
+      },
+      {
+        "label": "E moisés o imolou pegou",
+        "evidenceRef": "Levítico 8:15"
+      },
+      {
+        "label": "Tomou toda a gordura que estava",
+        "evidenceRef": "Levítico 8:16"
+      },
+      {
+        "label": "Porém o novilho com sua pele",
+        "evidenceRef": "Levítico 8:17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Levítico 8:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Porém\".",
+        "marker": "Porém",
+        "evidenceRef": "Levítico 8:17"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"então\".",
+        "marker": "então",
+        "evidenceRef": "Levítico 8:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 10:19",
+        "bridge": "Entrada pelo sangue"
+      },
+      {
+        "ref": "Isaías 61:1",
+        "bridge": "Liberdade aos cativos"
+      },
+      {
+        "ref": "Hebreus 9:14",
+        "bridge": "Sangue que purifica"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Antes de servir, o sacerdote também precisa de sangue e de limpeza.",
+    "anchorQuestion": "O que Levítico 8:14 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 8:14, o texto inclui Então.",
+      "verseRef": "Levítico 8:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 8:14 afirma.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 8:14, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 8:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "trouxe"
+        },
+        {
+          "id": "c",
+          "text": "novilho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 8:16, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 8:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor regula o culto aqui"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tomou toda a gordura que estava sobre as",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 8:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 8:15 na ordem do texto.",
+      "verseRef": "Levítico 8:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Moisés o imolou"
+        },
+        {
+          "id": "b",
+          "text": "pegou o sangue"
+        },
+        {
+          "id": "c",
+          "text": "com o dedo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Moisés o imolou",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 8:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 8:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 8:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "novilho"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "trouxe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "novilho",
+      "feedbackCorrect": "A palavra do versículo é novilho.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 8:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 8:14 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 8:14",
+      "passageA": {
+        "ref": "Levítico 8:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Sangue na ordenação: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 8:14, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Levítico 8:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 8:14 afirma.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 8:14, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 8:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "trouxe"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "novilho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trouxe",
+      "feedbackCorrect": "O versículo destaca trouxe.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 8:17, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 8:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra porém"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 8:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 8:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então trouxe o novilho da oferta"
+        },
+        {
+          "id": "b",
+          "text": "E moisés o imolou pegou"
+        },
+        {
+          "id": "c",
+          "text": "Tomou toda a gordura que estava"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 8:16, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 8:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomou"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "trouxe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tomou",
+      "feedbackCorrect": "A palavra do versículo é Tomou.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 8:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 8:14 a Hebreus 10:19.",
+      "verseRef": "Levítico 8:14",
+      "passageA": {
+        "ref": "Levítico 8:14"
+      },
+      "passageB": {
+        "ref": "Hebreus 10:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Entrada pelo sangue"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 8:21",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 8:21 afirma.",
+      "evidence": [
+        "Levítico 8:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 8:19, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 8:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacrificou"
+        },
+        {
+          "id": "b",
+          "text": "então"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sacrificou",
+      "feedbackCorrect": "O versículo destaca sacrificou.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 8:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 8:18, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 8:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra depois"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 8:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 8:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 8:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 8:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "trouxe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "A palavra do versículo é Depois.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 8:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 8:14 a Isaías 61:1.",
+      "verseRef": "Levítico 8:14",
+      "passageA": {
+        "ref": "Levítico 8:14"
+      },
+      "passageB": {
+        "ref": "Isaías 61:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Liberdade aos cativos"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 8:14"
+      ]
+    }
+  ]
+}

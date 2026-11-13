@@ -1,0 +1,933 @@
+{
+  "study": {
+    "passageRef": "Mateus 28:5–10",
+    "passages": [
+      {
+        "ref": "Mateus 28:5–10"
+      },
+      {
+        "ref": "Mateus 26:23–28"
+      },
+      {
+        "ref": "Mateus 26:29–33"
+      },
+      {
+        "ref": "Mateus 27:45–50"
+      },
+      {
+        "ref": "Mateus 27:51–54"
+      },
+      {
+        "ref": "Mateus 28:1–4"
+      }
+    ],
+    "context": "Esta travessia revisa Mateus 26 a 28. Na ceia, Jesus está com os discípulos. Na cruz, há trevas e um grito. No primeiro dia da semana, as mulheres vão ao sepulcro.",
+    "keyword": "ressuscitou",
+    "keywordGloss": "É o anúncio do anjo: Jesus não está no sepulcro, porque já ressuscitou.",
+    "focusQuestion": "Quando o medo chega junto com a alegria, você se cala ou vai anunciar?",
+    "reflectionPrompts": [
+      "O pão e o cálice",
+      "O véu rasgado",
+      "O sepulcro vazio"
+    ],
+    "facts": [
+      {
+        "text": "Jesus toma um pão e diz aos discípulos que ele é o seu corpo.",
+        "evidenceRef": "Mateus 26:26",
+        "evidenceSpan": "isto é o meu corpo"
+      },
+      {
+        "text": "O sangue da nova aliança é derramado em favor de muitos, para a remissão de pecados.",
+        "evidenceRef": "Mateus 26:28",
+        "evidenceSpan": "derramado em favor de muitos, para a remissão de pecados"
+      },
+      {
+        "text": "Jesus grita com grande voz e entrega o espírito.",
+        "evidenceRef": "Mateus 27:50",
+        "evidenceSpan": "gritando novamente com grande voz, entregou o espírito"
+      },
+      {
+        "text": "O véu do santuário se rasga em duas partes, de alto a baixo.",
+        "evidenceRef": "Mateus 27:51",
+        "evidenceSpan": "o véu do santuário se rasgou em duas partes de alto a baixo"
+      },
+      {
+        "text": "O centurião e os que estão com ele dizem que este era o Filho de Deus.",
+        "evidenceRef": "Mateus 27:54",
+        "evidenceSpan": "Verdadeiramente, este era o Filho de Deus"
+      },
+      {
+        "text": "O anjo diz que Jesus não está ali, pois já ressuscitou.",
+        "evidenceRef": "Mateus 28:6",
+        "evidenceSpan": "Não está aqui, pois já ressuscitou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "aliança",
+        "gloss": "Nome que Jesus dá ao seu sangue, derramado em favor de muitos."
+      },
+      {
+        "term": "véu",
+        "gloss": "A cortina do santuário que se rasga de alto a baixo na morte de Jesus."
+      },
+      {
+        "term": "ressuscitou",
+        "gloss": "O anjo anuncia que Jesus não está no sepulcro porque isso já aconteceu."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus entrega pão e cálice",
+        "evidenceRef": "Mateus 26:26–28"
+      },
+      {
+        "label": "O véu se rasga na morte de Jesus",
+        "evidenceRef": "Mateus 27:50–51"
+      },
+      {
+        "label": "O centurião confessa o Filho",
+        "evidenceRef": "Mateus 27:54"
+      },
+      {
+        "label": "O anjo anuncia que ele vive",
+        "evidenceRef": "Mateus 28:5–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "O sangue da nova aliança é derramado em favor de muitos, para a remissão de pecados.",
+        "marker": "para",
+        "evidenceRef": "Mateus 26:28"
+      },
+      {
+        "kind": "contraste",
+        "text": "A dispersão é anunciada, mas Jesus irá adiante para a Galileia depois de ressuscitar.",
+        "marker": "Mas",
+        "evidenceRef": "Mateus 26:32"
+      },
+      {
+        "kind": "causa",
+        "text": "O sepulcro está vazio porque Jesus já ressuscitou.",
+        "marker": "pois",
+        "evidenceRef": "Mateus 28:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 11:25",
+        "bridge": "Nova aliança no sangue"
+      },
+      {
+        "ref": "Salmos 22:1",
+        "bridge": "Clamor de desamparo"
+      },
+      {
+        "ref": "Lucas 24:6",
+        "bridge": "Sepulcro vazio pela ressurreição"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O sepulcro vazio indica que alguém levou o corpo de Jesus.",
+        "why": "O anjo explica a ausência: Jesus não está ali porque já ressuscitou, como havia dito."
+      },
+      {
+        "text": "O véu se rasga apenas pelo terremoto, sem relação com a morte de Jesus.",
+        "why": "O véu se rasga no instante em que Jesus entrega o espírito, antes do tremor seguir no relato."
+      },
+      {
+        "text": "O centurião zomba ao chamar Jesus de Filho de Deus.",
+        "why": "O relato fala em grande temor, e a frase começa com Verdadeiramente."
+      }
+    ],
+    "centralInsight": "O Rei se entrega e vence a morte",
+    "anchorQuestion": "Por que o anjo diz que Jesus não está no sepulcro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 27:50, Jesus entregou o espírito em silêncio, sem gritar.",
+      "verseRef": "Mateus 27:50",
+      "correctOptionId": "false",
+      "evidenceSpan": "gritando novamente com grande voz, entregou o espírito",
+      "feedbackCorrect": "Não foi em silêncio. Ele gritou novamente com grande voz e entregou o espírito.",
+      "feedbackWrong": {
+        "true": "O versículo une o grito em grande voz à entrega do espírito."
+      },
+      "hint": "Acompanhe o grito e o que Jesus faz nele.",
+      "learningObjective": "Observar que Jesus entrega o espírito gritando com grande voz.",
+      "evidence": [
+        "Mateus 27:50"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 26:26, toque o que Jesus tomou enquanto comiam.",
+      "verseRef": "Mateus 26:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "aos discípulos"
+        },
+        {
+          "id": "b",
+          "text": "um pão"
+        },
+        {
+          "id": "c",
+          "text": "o meu corpo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jesus tomou um pão",
+      "feedbackCorrect": "Jesus toma um pão, abençoa, parte e o dá aos discípulos.",
+      "feedbackWrong": {
+        "a": "Os discípulos recebem o pão. O que Jesus toma vem antes.",
+        "c": "Isso é o que o pão significa. O que ele toma é o alimento."
+      },
+      "hint": "Veja o alimento que Jesus toma no começo.",
+      "learningObjective": "Identificar o que Jesus toma na ceia.",
+      "evidence": [
+        "Mateus 26:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 28:2, o que o anjo fez com a pedra?",
+      "verseRef": "Mateus 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rolou a pedra e sentou-se sobre ela"
+        },
+        {
+          "id": "b",
+          "text": "Pediu às mulheres que abrissem o sepulcro"
+        },
+        {
+          "id": "c",
+          "text": "Manteve a pedra fechada na entrada"
+        },
+        {
+          "id": "d",
+          "text": "Entregou a pedra para os guardas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rolou a pedra da entrada e sentou-se sobre ela",
+      "feedbackCorrect": "O anjo rola a pedra da entrada e senta-se sobre ela.",
+      "feedbackWrong": {
+        "b": "Quem age sobre a pedra é o anjo, não as mulheres.",
+        "c": "A pedra não fica fechando a entrada. O anjo a rola.",
+        "d": "Os guardas tremem. Quem remove a pedra é o anjo."
+      },
+      "hint": "Veja o que ocorre com a pedra depois que o anjo se aproxima.",
+      "learningObjective": "Observar o que o anjo faz com a pedra do sepulcro.",
+      "evidence": [
+        "Mateus 28:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 26:26 na ordem do texto.",
+      "verseRef": "Mateus 26:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enquanto comiam, Jesus tomou um pão"
+        },
+        {
+          "id": "b",
+          "text": "abençoando-o, o partiu"
+        },
+        {
+          "id": "c",
+          "text": "isto é o meu corpo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tomai, comei; isto é o meu corpo",
+      "feedbackCorrect": "Jesus toma o pão, parte e então diz que ele é o seu corpo.",
+      "feedbackWrong": {
+        "default": "Comece por Jesus tomando o pão. A frase sobre o corpo fecha."
+      },
+      "hint": "O versículo começa enquanto eles comem.",
+      "learningObjective": "Reconhecer a sequência da entrega do pão.",
+      "evidence": [
+        "Mateus 26:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 26:26, Jesus diz que o pão partido é o seu o quê?",
+      "verseRef": "Mateus 26:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "cálice"
+        },
+        {
+          "id": "b",
+          "text": "corpo"
+        },
+        {
+          "id": "c",
+          "text": "sangue"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "isto é o meu corpo",
+      "feedbackCorrect": "Jesus identifica o pão partido com o seu corpo, entregue na ceia.",
+      "feedbackWrong": {
+        "a": "O cálice vem no versículo seguinte. Aqui o pão é outra coisa.",
+        "c": "O sangue é o cálice, no versículo seguinte. Aqui Jesus fala do pão."
+      },
+      "hint": "Ouça como Jesus nomeia o pão no fim da frase.",
+      "learningObjective": "Lembrar o que Jesus diz que o pão é.",
+      "evidence": [
+        "Mateus 26:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 26:28 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 26:28",
+      "passageA": {
+        "ref": "Mateus 26:28"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na ceia, Jesus entrega seu sangue como sangue da nova aliança, em favor de muitos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Traição à mesa da ceia"
+        },
+        {
+          "id": "b",
+          "text": "Sangue da nova aliança"
+        },
+        {
+          "id": "c",
+          "text": "Saída ao monte das Oliveiras"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o sangue da nova aliança",
+      "feedbackCorrect": "O cálice é o sangue da nova aliança, derramado em favor de muitos.",
+      "feedbackWrong": {
+        "a": "A traição já foi anunciada. Este versículo fala do sangue.",
+        "c": "O monte vem depois do hino. Aqui o tema é o sangue."
+      },
+      "hint": "Compare o que Jesus diz do cálice com o fato ao lado.",
+      "learningObjective": "Ligar o cálice ao sangue da nova aliança.",
+      "evidence": [
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 27:51, toque o que se rasgou de alto a baixo.",
+      "verseRef": "Mateus 27:51",
+      "options": [
+        {
+          "id": "a",
+          "text": "o véu"
+        },
+        {
+          "id": "b",
+          "text": "a terra"
+        },
+        {
+          "id": "c",
+          "text": "as rochas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o véu do santuário se rasgou em duas partes de alto a baixo",
+      "feedbackCorrect": "O véu do santuário se rasga em duas partes, de alto a baixo.",
+      "feedbackWrong": {
+        "b": "A terra treme. O que se rasga em duas partes vem antes.",
+        "c": "As rochas se fendem. O verbo rasgar está no que vem antes."
+      },
+      "hint": "Procure o que se parte dentro do santuário.",
+      "learningObjective": "Observar o que se rasga quando Jesus morre.",
+      "evidence": [
+        "Mateus 27:51"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 28:8 na ordem do texto.",
+      "verseRef": "Mateus 28:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "saindo apressadamente do sepulcro"
+        },
+        {
+          "id": "b",
+          "text": "tomadas de medo e grande alegria"
+        },
+        {
+          "id": "c",
+          "text": "correram a anunciar aos discípulos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomadas de medo e grande alegria",
+      "feedbackCorrect": "Elas saem do sepulcro com medo e alegria, e correm a anunciar.",
+      "feedbackWrong": {
+        "default": "Comece pela saída do sepulcro. A corrida aos discípulos fecha."
+      },
+      "hint": "O versículo começa com a saída do sepulcro.",
+      "learningObjective": "Reconhecer a sequência da saída das mulheres.",
+      "evidence": [
+        "Mateus 28:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 26:28, o sangue da nova aliança fica só para os discípulos que estão à mesa.",
+      "verseRef": "Mateus 26:28",
+      "correctOptionId": "false",
+      "evidenceSpan": "derramado em favor de muitos",
+      "feedbackCorrect": "O sangue é derramado em favor de muitos, não só dos que estão à mesa.",
+      "feedbackWrong": {
+        "true": "Eles bebem o cálice, mas o alcance do sangue é em favor de muitos."
+      },
+      "hint": "Veja em favor de quem o sangue é derramado.",
+      "learningObjective": "Compreender que o sangue da nova aliança alcança muitos.",
+      "evidence": [
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 26:32, toque a palavra que contrasta a dispersão com o reencontro.",
+      "verseRef": "Mateus 26:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "depois"
+        },
+        {
+          "id": "c",
+          "text": "Galileia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas, depois que eu ressuscitar",
+      "feedbackCorrect": "A palavra inicial vira o anúncio. A dispersão não encerra o caminho.",
+      "feedbackWrong": {
+        "b": "Essa palavra marca o tempo. O contraste com a dispersão abre o versículo.",
+        "c": "Esse é o destino. A palavra que contrasta está no início."
+      },
+      "hint": "Observe a palavra que abre o versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste antes da Galileia.",
+      "evidence": [
+        "Mateus 26:32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Mateus 26:32 se relaciona com a dispersão anunciada?",
+      "verseRef": "Mateus 26:31–32",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dispersão impede o caminho à Galileia"
+        },
+        {
+          "id": "b",
+          "text": "Jesus segue adiante depois de ressuscitar"
+        },
+        {
+          "id": "c",
+          "text": "A ceia fica substituída pelo monte"
+        },
+        {
+          "id": "d",
+          "text": "Pedro é quem decide se haverá encontro"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "irei adiante de vós para a Galileia",
+      "feedbackCorrect": "A dispersão é anunciada, mas Jesus irá adiante à Galileia.",
+      "feedbackWrong": {
+        "a": "A ida à Galileia não é cancelada. Jesus afirma que irá adiante.",
+        "c": "O monte é a saída depois do hino. Aqui o tema é a Galileia.",
+        "d": "Pedro ainda vai prometer firmeza. A palavra de Jesus não depende disso."
+      },
+      "hint": "Leia o que Jesus afirma logo após anunciar a dispersão.",
+      "learningObjective": "Compreender o contraste entre a dispersão e a Galileia.",
+      "evidence": [
+        "Mateus 26:31–32"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a travessia avança da ceia até o anjo?",
+      "verseRef": "Mateus 26:26–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus entrega pão e cálice"
+        },
+        {
+          "id": "b",
+          "text": "O véu se rasga na morte de Jesus"
+        },
+        {
+          "id": "c",
+          "text": "O anjo anuncia que ele vive"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "isto é o meu corpo",
+      "feedbackCorrect": "A ceia, o véu na morte e o anúncio do anjo formam o caminho.",
+      "feedbackWrong": {
+        "default": "Comece pela ceia. O anúncio do anjo fecha a sequência."
+      },
+      "hint": "Siga da ceia à cruz e depois ao sepulcro.",
+      "learningObjective": "Compreender os movimentos da ceia até o anjo.",
+      "evidence": [
+        "Mateus 26:26–28",
+        "Mateus 27:50–51",
+        "Mateus 28:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 26:28, que palavra diz o propósito do sangue derramado?",
+      "verseRef": "Mateus 26:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "punição"
+        },
+        {
+          "id": "b",
+          "text": "memória"
+        },
+        {
+          "id": "c",
+          "text": "remissão"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para a remissão de pecados",
+      "feedbackCorrect": "O sangue é derramado para a remissão de pecados.",
+      "feedbackWrong": {
+        "a": "O versículo não nomeia castigo. O fim do sangue é outro.",
+        "b": "Essa palavra não está no versículo. O fim nomeado é outro."
+      },
+      "hint": "Olhe o propósito nomeado no fim do versículo.",
+      "learningObjective": "Reconhecer a palavra que marca o propósito do sangue.",
+      "evidence": [
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 26:28 a 1 Coríntios 11:25?",
+      "verseRef": "Mateus 26:28",
+      "passageA": {
+        "ref": "Mateus 26:28"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 11:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dispersão das ovelhas"
+        },
+        {
+          "id": "b",
+          "text": "Clamor na hora nona"
+        },
+        {
+          "id": "c",
+          "text": "Nova aliança no sangue"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o sangue da nova aliança",
+      "feedbackCorrect": "Paulo repete a ceia: o cálice é a nova aliança no sangue.",
+      "feedbackWrong": {
+        "a": "A dispersão é outro anúncio da noite. Os dois textos falam do cálice.",
+        "b": "O clamor é na cruz. Aqui a ponte é o cálice da ceia."
+      },
+      "hint": "Compare o cálice nos dois relatos da ceia.",
+      "learningObjective": "Relacionar o cálice em Mateus com a ceia em Paulo.",
+      "evidence": [
+        "Mateus 26:28",
+        "1 Coríntios 11:25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 28:6, toque a palavra que explica o sepulcro vazio.",
+      "verseRef": "Mateus 28:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "aqui"
+        },
+        {
+          "id": "b",
+          "text": "pois"
+        },
+        {
+          "id": "c",
+          "text": "Venham"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não está aqui, pois já ressuscitou",
+      "feedbackCorrect": "A palavra introduz o motivo. O sepulcro vazio tem uma causa.",
+      "feedbackWrong": {
+        "a": "Essa palavra marca o lugar vazio, não o motivo.",
+        "c": "Essa palavra é um convite. O motivo vem antes."
+      },
+      "hint": "Procure a palavra que introduz o motivo.",
+      "learningObjective": "Reconhecer o marcador que explica o sepulcro vazio.",
+      "evidence": [
+        "Mateus 28:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os passos de Mateus 27:50–51?",
+      "verseRef": "Mateus 27:50–51",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus grita com grande voz"
+        },
+        {
+          "id": "b",
+          "text": "Jesus entrega o espírito"
+        },
+        {
+          "id": "c",
+          "text": "O véu se rasga de alto a baixo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "entregou o espírito",
+      "feedbackCorrect": "O grito, a entrega do espírito e o véu rasgado vêm em seguida.",
+      "feedbackWrong": {
+        "default": "Comece pelo grito. O véu rasgado fecha o movimento."
+      },
+      "hint": "O versículo 50 vem antes do que ocorre no santuário.",
+      "learningObjective": "Compreender a sequência da morte e do véu.",
+      "evidence": [
+        "Mateus 27:50–51"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 28:6, o anjo explica o sepulcro vazio pela ressurreição de Jesus.",
+      "verseRef": "Mateus 28:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não está aqui, pois já ressuscitou",
+      "feedbackCorrect": "O anjo liga a ausência à ressurreição, como Jesus havia dito.",
+      "feedbackWrong": {
+        "false": "O anjo não fala em corpo levado. Ele aponta a ressurreição."
+      },
+      "hint": "Ouça o motivo que o anjo dá logo após a ausência.",
+      "learningObjective": "Interpretar o sepulcro vazio pela palavra do anjo.",
+      "evidence": [
+        "Mateus 28:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 27:54, toque a palavra que mostra a certeza da confissão.",
+      "verseRef": "Mateus 27:54",
+      "options": [
+        {
+          "id": "a",
+          "text": "temor"
+        },
+        {
+          "id": "b",
+          "text": "terremoto"
+        },
+        {
+          "id": "c",
+          "text": "Verdadeiramente"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Verdadeiramente, este era o Filho de Deus",
+      "feedbackCorrect": "A confissão abre com uma palavra de certeza, em meio ao temor.",
+      "feedbackWrong": {
+        "a": "O temor descreve o que sentiram. A certeza está na fala.",
+        "b": "O terremoto é o que eles percebem. A certeza está na frase final."
+      },
+      "hint": "Veja o advérbio que abre a frase final.",
+      "learningObjective": "Localizar a palavra que sustenta a confissão do centurião.",
+      "evidence": [
+        "Mateus 27:54"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 27:54 sustenta sobre a fala do centurião?",
+      "verseRef": "Mateus 27:54",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zombaria sem temor de verdade"
+        },
+        {
+          "id": "b",
+          "text": "Confissão em meio ao grande temor"
+        },
+        {
+          "id": "c",
+          "text": "Pedido para Elias descer da cruz"
+        },
+        {
+          "id": "d",
+          "text": "Aviso de que o corpo foi levado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Verdadeiramente, este era o Filho de Deus",
+      "feedbackCorrect": "O temor e a frase final mostram confissão, não zombaria.",
+      "feedbackWrong": {
+        "a": "O texto fala em grande temor. A frase não soa como zombaria.",
+        "c": "Quem fala de Elias são outros, antes. Aqui a fala é outra.",
+        "d": "Nada aqui diz que o corpo foi levado. Eles falam de quem Jesus era."
+      },
+      "hint": "Leia o clima da frase final do versículo.",
+      "learningObjective": "Escolher a leitura da fala do centurião que o texto sustenta.",
+      "evidence": [
+        "Mateus 27:54"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a promessa da Galileia se cumprindo?",
+      "verseRef": "Mateus 26:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus promete ir adiante à Galileia"
+        },
+        {
+          "id": "b",
+          "text": "O anjo repete o encontro na Galileia"
+        },
+        {
+          "id": "c",
+          "text": "Jesus manda avisar os irmãos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "irei adiante de vós para a Galileia",
+      "feedbackCorrect": "Jesus promete a Galileia, o anjo a repete e ele manda avisar os irmãos.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa na ceia. O aviso aos irmãos fecha."
+      },
+      "hint": "Siga a promessa, o anjo e depois o encontro.",
+      "learningObjective": "Ver a promessa da Galileia se confirmar depois da ressurreição.",
+      "evidence": [
+        "Mateus 26:32",
+        "Mateus 28:7",
+        "Mateus 28:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 26:28, Jesus chama o seu sangue de sangue da nova o quê?",
+      "verseRef": "Mateus 26:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "promessa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o sangue da nova aliança",
+      "feedbackCorrect": "Jesus nomeia o sangue como sangue da nova aliança.",
+      "feedbackWrong": {
+        "b": "O versículo não usa esse nome. O sangue recebe outro título.",
+        "c": "Não é uma promessa genérica. O título vem logo após nova."
+      },
+      "hint": "Leia o título que o sangue recebe nesse versículo.",
+      "learningObjective": "Lembrar o termo com que Jesus nomeia o seu sangue.",
+      "evidence": [
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 28:6 a Lucas 24:6?",
+      "verseRef": "Mateus 28:6",
+      "passageA": {
+        "ref": "Mateus 28:6"
+      },
+      "passageB": {
+        "ref": "Lucas 24:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sepulcro vazio pela ressurreição"
+        },
+        {
+          "id": "b",
+          "text": "Corpo retirado na noite"
+        },
+        {
+          "id": "c",
+          "text": "Temor apenas dos guardas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois já ressuscitou",
+      "feedbackCorrect": "Lucas traz o mesmo anúncio: ele não está ali, mas ressuscitou.",
+      "feedbackWrong": {
+        "b": "Nenhum dos dois fala em corpo levado. Os dois anunciam a ressurreição.",
+        "c": "O temor dos guardas é outra cena. A ponte é o anúncio do sepulcro."
+      },
+      "hint": "Compare o anúncio feito junto ao sepulcro.",
+      "learningObjective": "Ligar o anúncio do sepulcro vazio em Mateus e em Lucas.",
+      "evidence": [
+        "Mateus 28:6",
+        "Lucas 24:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 28:6, toque o trecho em que o anjo afirma a ressurreição.",
+      "verseRef": "Mateus 28:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não está aqui"
+        },
+        {
+          "id": "b",
+          "text": "já ressuscitou"
+        },
+        {
+          "id": "c",
+          "text": "onde ele estava"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "já ressuscitou",
+      "feedbackCorrect": "Esse trecho afirma a causa do vazio. Não é um traslado do corpo.",
+      "feedbackWrong": {
+        "a": "A frase diz a ausência. A afirmação da ressurreição vem em seguida.",
+        "c": "Isso mostra onde ele jazia. A afirmação da ressurreição é outra."
+      },
+      "hint": "Olhe o que o anjo afirma logo após a ausência.",
+      "learningObjective": "Sustentar com o texto que o sepulcro vazio vem da ressurreição.",
+      "evidence": [
+        "Mateus 28:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o Rei entregue e vivo?",
+      "verseRef": "Mateus 27:50",
+      "options": [
+        {
+          "id": "a",
+          "text": "Na ceia ele entrega corpo e sangue"
+        },
+        {
+          "id": "b",
+          "text": "Na cruz ele entrega o espírito"
+        },
+        {
+          "id": "c",
+          "text": "No sepulcro o anjo anuncia vida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "entregou o espírito",
+      "feedbackCorrect": "Ele entrega o corpo e o sangue, entrega o espírito e vive.",
+      "feedbackWrong": {
+        "default": "Comece pela ceia. O anúncio no sepulcro fecha."
+      },
+      "hint": "Siga a ceia, a cruz e o sepulcro.",
+      "learningObjective": "Ver a entrega de Jesus e a vitória sobre a morte como um só caminho.",
+      "evidence": [
+        "Mateus 26:28",
+        "Mateus 27:50",
+        "Mateus 28:6"
+      ]
+    }
+  ]
+}

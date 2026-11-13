@@ -1,0 +1,631 @@
+{
+  "study": {
+    "passageRef": "1 Reis 8:22–27",
+    "passages": [
+      { "ref": "1 Reis 6:1–10" },
+      { "ref": "1 Reis 8:22–30" },
+      { "ref": "1 Reis 9:1–9" },
+      { "ref": "1 Reis 10:1–10" }
+    ],
+    "context": "Este desafio revisa o bloco do templo e da fama: a Casa começa com ordem, Salomão ora na dedicação, o Senhor condiciona o trono, e a rainha de Sabá reconhece a sabedoria.",
+    "keyword": "Casa",
+    "keywordGloss": "O templo do Senhor: edificado com cuidado, santificado, e lugar de oração e testemunho.",
+    "focusQuestion": "O que fica no centro da sua vida: a Casa do Senhor ou a fama sem fidelidade?",
+    "reflectionPrompts": [
+      "Edificar com cuidado",
+      "Ouve e perdoa",
+      "Fama e fidelidade"
+    ],
+    "facts": [
+      {
+        "text": "No quarto ano, Salomão começou a edificar a Casa do Senhor.",
+        "evidenceRef": "1 Reis 6:1",
+        "evidenceSpan": "começou a edificar a Casa do SENHOR"
+      },
+      {
+        "text": "Nenhum instrumento de ferro se ouviu na casa durante a construção.",
+        "evidenceRef": "1 Reis 6:7",
+        "evidenceSpan": "nem qualquer outro instrumento de ferro se ouviu na casa"
+      },
+      {
+        "text": "Os céus não podem conter a Deus, quanto menos a casa.",
+        "evidenceRef": "1 Reis 8:27",
+        "evidenceSpan": "os céus e até o céu dos céus não te podem conter"
+      },
+      {
+        "text": "O Senhor santificou a casa e condicionou o trono à caminhada fiel.",
+        "evidenceRef": "1 Reis 9:3",
+        "evidenceSpan": "santifiquei a casa que edificaste"
+      },
+      {
+        "text": "A rainha veio pela fama relacionada ao nome do Senhor.",
+        "evidenceRef": "1 Reis 10:1",
+        "evidenceSpan": "relacionada ao nome do Senhor"
+      },
+      {
+        "text": "Ela confessou que não lhe contaram nem a metade.",
+        "evidenceRef": "1 Reis 10:7",
+        "evidenceSpan": "não me contaram nem a metade"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "edificar",
+        "gloss": "Levantar a Casa com tempo e preparo."
+      },
+      {
+        "term": "santifiquei",
+        "gloss": "O Senhor consagra a casa; a fidelidade decide o trono."
+      },
+      {
+        "term": "fama",
+        "gloss": "Notícia ligada ao nome do Senhor que atrai nações."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A Casa começa com ordem e silêncio",
+        "evidenceRef": "1 Reis 6:1–7"
+      },
+      {
+        "label": "Oração: Deus ouve, embora os céus não o contenham",
+        "evidenceRef": "1 Reis 8:22–30"
+      },
+      {
+        "label": "Aparição: fidelidade decide o trono",
+        "evidenceRef": "1 Reis 9:1–9"
+      },
+      {
+        "label": "A rainha reconhece sabedoria e bendiz o Senhor",
+        "evidenceRef": "1 Reis 10:1–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Pedras preparadas, de maneira que o ferro não se ouviu na casa.",
+        "marker": "de maneira que",
+        "evidenceRef": "1 Reis 6:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Mas será que Deus habitará na terra, se nem os céus o contêm?",
+        "marker": "Mas",
+        "evidenceRef": "1 Reis 8:27"
+      },
+      {
+        "kind": "contraste",
+        "text": "Entretanto, se se apartarem, virá juízo sobre Israel e a casa.",
+        "marker": "Entretanto",
+        "evidenceRef": "1 Reis 9:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 7:13",
+        "bridge": "Filho edificará a casa"
+      },
+      {
+        "ref": "1 Reis 3:12",
+        "bridge": "Sabedoria dada por Deus"
+      },
+      {
+        "ref": "Isaías 66:1",
+        "bridge": "Céu é trono de Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O templo prende Deus e garante o trono sem fidelidade.",
+        "why": "Os céus não o contêm; o trono depende do se caminhares."
+      },
+      {
+        "text": "A fama de Salomão era só política, sem o nome do Senhor.",
+        "why": "A rainha ouve fama relacionada ao nome do Senhor."
+      },
+      {
+        "text": "A construção foi barulhenta de ferro dentro da Casa.",
+        "why": "Pedras já preparadas; nenhum ferro se ouviu na casa."
+      }
+    ],
+    "anchorQuestion": "O que une a Casa edificada, a oração, a aparição e a visita da rainha?",
+    "centralInsight": "Glória e sabedoria florescem quando o Senhor habita no centro"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 6:1, Salomão começou a edificar a Casa do Senhor no primeiro mês do primeiro ano.",
+      "verseRef": "1 Reis 6:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "No quarto ano do reinado de Salomão sobre Israel, no mês de Ziv",
+      "feedbackCorrect": "Foi no quarto ano, no mês de Ziv.",
+      "feedbackWrong": {
+        "true": "O verso marca o quarto ano e o mês de Ziv."
+      },
+      "hint": "Veja ano e mês no início.",
+      "learningObjective": "Observar o início datado da Casa.",
+      "evidence": ["1 Reis 6:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 8:22, toque o que Salomão estendeu aos céus.",
+      "verseRef": "1 Reis 8:22",
+      "options": [
+        { "id": "a", "text": "suas mãos" },
+        { "id": "b", "text": "toda a congregação" },
+        { "id": "c", "text": "altar do Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estendeu suas mãos aos céus",
+      "feedbackCorrect": "Suas mãos.",
+      "feedbackWrong": {
+        "b": "A congregação observa.",
+        "c": "É o lugar da postura."
+      },
+      "hint": "Veja o gesto final.",
+      "learningObjective": "Identificar o gesto da oração.",
+      "evidence": ["1 Reis 8:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 9:2, como o Senhor apareceu a Salomão?",
+      "verseRef": "1 Reis 9:2",
+      "options": [
+        { "id": "a", "text": "De novo, como em Gibeão" },
+        { "id": "b", "text": "Pela primeira vez na vida" },
+        { "id": "c", "text": "Só por escrito, sem aparição" },
+        { "id": "d", "text": "Apenas a Davi, não a Salomão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apareceu de novo a Salomão, como lhe havia aparecido em Gibeão",
+      "feedbackCorrect": "De novo, como em Gibeão.",
+      "feedbackWrong": {
+        "b": "Há aparição prévia.",
+        "c": "Há aparição.",
+        "d": "É a Salomão."
+      },
+      "hint": "Leia de novo e Gibeão.",
+      "learningObjective": "Observar a aparição repetida.",
+      "evidence": ["1 Reis 9:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 10:1 na ordem do texto.",
+      "verseRef": "1 Reis 10:1",
+      "options": [
+        { "id": "a", "text": "E, ouvindo a rainha de Sabá a fama de Salomão" },
+        { "id": "b", "text": "relacionada ao nome do Senhor" },
+        { "id": "c", "text": "veio para prová-lo com perguntas enigmáticas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "relacionada ao nome do Senhor",
+      "feedbackCorrect": "Ouviu, ligou ao Senhor e veio.",
+      "feedbackWrong": {
+        "default": "Comece por ouvindo a rainha."
+      },
+      "hint": "O que ela ouve primeiro?",
+      "learningObjective": "Seguir a ordem do verso 1.",
+      "evidence": ["1 Reis 10:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 6:7, complete: pedras já ___, que eram trazidas para o local.",
+      "verseRef": "1 Reis 6:7",
+      "options": [
+        { "id": "a", "text": "preparadas" },
+        { "id": "b", "text": "quebradas" },
+        { "id": "c", "text": "vendidas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pedras já preparadas",
+      "feedbackCorrect": "Preparadas.",
+      "feedbackWrong": {
+        "b": "Não é quebradas.",
+        "c": "Não é vendidas."
+      },
+      "hint": "Como vinham as pedras.",
+      "learningObjective": "Lembrar o preparo das pedras.",
+      "evidence": ["1 Reis 6:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 8:27 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 8:27",
+      "passageA": { "ref": "1 Reis 8:27" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na dedicação, Salomão confessa que Deus não cabe na casa."
+      },
+      "options": [
+        { "id": "a", "text": "Céus não contêm Deus" },
+        { "id": "b", "text": "Deus cabe só no templo" },
+        { "id": "c", "text": "Casa maior que o céu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os céus e até o céu dos céus não te podem conter",
+      "feedbackCorrect": "Nem os céus o contêm.",
+      "feedbackWrong": {
+        "b": "O texto diz o contrário.",
+        "c": "Há quanto menos esta casa."
+      },
+      "hint": "O que os céus não podem?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": ["1 Reis 8:27"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 9:5, toque o que o Senhor confirmará.",
+      "verseRef": "1 Reis 9:5",
+      "options": [
+        { "id": "a", "text": "o trono" },
+        { "id": "b", "text": "teu pai" },
+        { "id": "c", "text": "para sempre" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "confirmarei o trono de teu reino",
+      "feedbackCorrect": "O trono.",
+      "feedbackWrong": {
+        "b": "É a comparação.",
+        "c": "É a duração."
+      },
+      "hint": "Objeto de confirmarei.",
+      "learningObjective": "Identificar a promessa do trono.",
+      "evidence": ["1 Reis 9:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 8:30 na ordem do texto.",
+      "verseRef": "1 Reis 8:30",
+      "options": [
+        { "id": "a", "text": "Ouve, pois, a súplica do teu servo e do teu povo de Israel" },
+        { "id": "b", "text": "quando orarem neste lugar" },
+        { "id": "c", "text": "ouve no céu, lugar da tua habitação; ouve e perdoa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ouve e perdoa",
+      "feedbackCorrect": "Súplica, lugar e perdão.",
+      "feedbackWrong": {
+        "default": "Comece pelo ouve a súplica."
+      },
+      "hint": "Quem abre o pedido?",
+      "learningObjective": "Seguir a ordem do pedido.",
+      "evidence": ["1 Reis 8:30"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 9:6–7, se se apartarem e servirem outros deuses, a casa santificada fica intocada.",
+      "verseRef": "1 Reis 9:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "a esta casa, que santifiquei para o meu nome, lançarei longe da minha presença",
+      "feedbackCorrect": "A casa também será lançada longe.",
+      "feedbackWrong": {
+        "true": "Leia o lançarei longe da minha presença."
+      },
+      "hint": "Veja o destino da casa no aviso.",
+      "learningObjective": "Compreender o contraste da apostasia.",
+      "evidence": ["1 Reis 9:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 9:6, toque o marcador de contraste do aviso.",
+      "verseRef": "1 Reis 9:6",
+      "options": [
+        { "id": "a", "text": "Entretanto" },
+        { "id": "b", "text": "mandamentos" },
+        { "id": "c", "text": "outros deuses" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, se vocês e seus filhos",
+      "feedbackCorrect": "Entretanto marca o contraste.",
+      "feedbackWrong": {
+        "b": "São o que devem guardar.",
+        "c": "São o perigo."
+      },
+      "hint": "Palavra que abre o aviso.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["1 Reis 9:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 6:7 se relaciona com o cuidado da obra?",
+      "verseRef": "1 Reis 6:7",
+      "options": [
+        { "id": "a", "text": "Pedras prontas fora, para não ouvir ferro na casa" },
+        { "id": "b", "text": "Ferro batia dentro do santuário" },
+        { "id": "c", "text": "Pedras só eram cortadas no Lugar Santo" },
+        { "id": "d", "text": "Não havia preparo prévio algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem qualquer outro instrumento de ferro se ouviu na casa",
+      "feedbackCorrect": "Preparo fora; silêncio dentro.",
+      "feedbackWrong": {
+        "b": "Não se ouviu ferro.",
+        "c": "Vinham preparadas.",
+        "d": "Há pedras já preparadas."
+      },
+      "hint": "Leia o de maneira que.",
+      "learningObjective": "Compreender o resultado do preparo.",
+      "evidence": ["1 Reis 6:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco templo e fama.",
+      "verseRef": "1 Reis 6:1",
+      "options": [
+        { "id": "a", "text": "A Casa começa com ordem e silêncio" },
+        { "id": "b", "text": "Oração: Deus ouve, embora os céus não o contenham" },
+        { "id": "c", "text": "A rainha reconhece sabedoria e bendiz o Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "começou a edificar a Casa do SENHOR",
+      "feedbackCorrect": "Obra, oração e testemunho.",
+      "feedbackWrong": {
+        "default": "Comece pelo início da Casa."
+      },
+      "hint": "O que abre o bloco?",
+      "learningObjective": "Ordenar a estrutura do bloco.",
+      "evidence": ["1 Reis 6:1", "1 Reis 10:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 8:27, complete: ___ será que, de fato, Deus habitará na terra?",
+      "verseRef": "1 Reis 8:27",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "Logo" },
+        { "id": "c", "text": "Só" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas será que, de fato, Deus habitará na terra",
+      "feedbackCorrect": "Mas marca o contraste.",
+      "feedbackWrong": {
+        "b": "Não é logo.",
+        "c": "Não é só."
+      },
+      "hint": "Palavra que abre a pergunta.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": ["1 Reis 8:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 6:1 a 2 Samuel 7:13?",
+      "verseRef": "1 Reis 6:1",
+      "passageA": { "ref": "1 Reis 6:1" },
+      "passageB": { "ref": "2 Samuel 7:13" },
+      "options": [
+        { "id": "a", "text": "Filho edificará a casa" },
+        { "id": "b", "text": "Davi constrói o templo" },
+        { "id": "c", "text": "Obra sem promessa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "começou a edificar a Casa do SENHOR",
+      "feedbackCorrect": "Salomão cumpre a promessa ao filho.",
+      "feedbackWrong": {
+        "b": "Davi não edificou o templo.",
+        "c": "Há promessa prévia."
+      },
+      "hint": "Compare quem edifica.",
+      "learningObjective": "Ligar início e promessa.",
+      "evidence": ["1 Reis 6:1", "2 Samuel 7:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 10:9, toque o marcador de propósito da constituição do rei.",
+      "verseRef": "1 Reis 10:9",
+      "options": [
+        { "id": "a", "text": "para que" },
+        { "id": "b", "text": "Bendito" },
+        { "id": "c", "text": "juízo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que tu exerças juízo e justiça",
+      "feedbackCorrect": "Para que marca o propósito.",
+      "feedbackWrong": {
+        "b": "É o louvor.",
+        "c": "É o conteúdo do propósito."
+      },
+      "hint": "Procure a finalidade.",
+      "learningObjective": "Tocar o propósito do trono.",
+      "evidence": ["1 Reis 10:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os passos da aparição após a obra.",
+      "verseRef": "1 Reis 9:2–3",
+      "options": [
+        { "id": "a", "text": "O Senhor aparece de novo a Salomão" },
+        { "id": "b", "text": "Santifica a casa e põe o nome ali" },
+        { "id": "c", "text": "Condiciona o trono à caminhada fiel" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "santifiquei a casa que edificaste",
+      "feedbackCorrect": "Aparição, santificação e condição.",
+      "feedbackWrong": {
+        "default": "Comece pela aparição."
+      },
+      "hint": "O que vem antes de santifiquei?",
+      "learningObjective": "Compreender a sequência da aparição.",
+      "evidence": ["1 Reis 9:2–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 8:27 e 9:4–5, o templo prende Deus e garante o trono sem fidelidade.",
+      "verseRef": "1 Reis 8:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "os céus e até o céu dos céus não te podem conter",
+      "feedbackCorrect": "Deus não cabe na casa; o trono depende do caminhar fiel.",
+      "feedbackWrong": {
+        "true": "Os céus não o contêm; há condição no se caminhares."
+      },
+      "hint": "Una o verso 27 e o se caminhares.",
+      "learningObjective": "Avaliar transcendência e fidelidade.",
+      "evidence": ["1 Reis 8:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 10:1, toque o trecho que sustenta a fama ligada a Deus.",
+      "verseRef": "1 Reis 10:1",
+      "options": [
+        { "id": "a", "text": "nome do Senhor" },
+        { "id": "b", "text": "perguntas enigmáticas" },
+        { "id": "c", "text": "rainha de Sabá" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "relacionada ao nome do Senhor",
+      "feedbackCorrect": "Nome do Senhor sustenta a fama.",
+      "feedbackWrong": {
+        "b": "É o meio da prova.",
+        "c": "É quem veio."
+      },
+      "hint": "A quem a fama se relaciona?",
+      "learningObjective": "Tocar o trecho que sustenta a leitura.",
+      "evidence": ["1 Reis 10:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une Casa, oração, fidelidade e fama?",
+      "verseRef": "1 Reis 8:27",
+      "options": [
+        { "id": "a", "text": "Glória e sabedoria florescem com o Senhor no centro" },
+        { "id": "b", "text": "O templo basta sem oração nem fidelidade" },
+        { "id": "c", "text": "A fama é só política, sem o Senhor" },
+        { "id": "d", "text": "Deus cabe na casa e o trono é automático" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quanto menos esta casa que eu edifiquei",
+      "feedbackCorrect": "Deus no centro une obra, oração e testemunho.",
+      "feedbackWrong": {
+        "b": "Há oração e condição.",
+        "c": "Fama ligada ao Senhor.",
+        "d": "Céus não o contêm; há se caminhares."
+      },
+      "hint": "Una o bloco inteiro.",
+      "learningObjective": "Escolher a leitura sustentável do bloco.",
+      "evidence": ["1 Reis 8:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da Casa à fama entre as nações.",
+      "verseRef": "1 Reis 6:1",
+      "options": [
+        { "id": "a", "text": "Promessa de que o filho edificará a casa" },
+        { "id": "b", "text": "Casa edificada, oração e aparição do Senhor" },
+        { "id": "c", "text": "Sabedoria atrai a rainha e louvor ao Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "começou a edificar a Casa do SENHOR",
+      "feedbackCorrect": "Promessa, Casa e testemunho.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa."
+      },
+      "hint": "O que vem antes da obra?",
+      "learningObjective": "Encadear promessa e testemunho.",
+      "evidence": ["1 Reis 6:1", "1 Reis 10:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 9:3, complete: ___ a casa que edificaste.",
+      "verseRef": "1 Reis 9:3",
+      "options": [
+        { "id": "a", "text": "santifiquei" },
+        { "id": "b", "text": "desprezei" },
+        { "id": "c", "text": "vendi" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "santifiquei a casa que edificaste",
+      "feedbackCorrect": "Santifiquei.",
+      "feedbackWrong": {
+        "b": "Não é desprezei.",
+        "c": "Não é vendi."
+      },
+      "hint": "Verbo da consagração.",
+      "learningObjective": "Lembrar o termo da santificação.",
+      "evidence": ["1 Reis 9:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 10:3 a 1 Reis 3:12?",
+      "verseRef": "1 Reis 10:3",
+      "passageA": { "ref": "1 Reis 10:3" },
+      "passageB": { "ref": "1 Reis 3:12" },
+      "options": [
+        { "id": "a", "text": "Sabedoria dada por Deus" },
+        { "id": "b", "text": "Sabedoria só humana" },
+        { "id": "c", "text": "Recusa de responder" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Salomão respondeu a todas as suas perguntas",
+      "feedbackCorrect": "A resposta ecoa o dom da sabedoria.",
+      "feedbackWrong": {
+        "b": "O dom vem de Deus.",
+        "c": "Ele esclarece tudo."
+      },
+      "hint": "Compare a sabedoria.",
+      "learningObjective": "Ligar resposta e dom.",
+      "evidence": ["1 Reis 10:3", "1 Reis 3:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 6:1, toque o que Salomão começou a edificar.",
+      "verseRef": "1 Reis 6:1",
+      "options": [
+        { "id": "a", "text": "Casa do SENHOR" },
+        { "id": "b", "text": "mês de Ziv" },
+        { "id": "c", "text": "filhos de Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "começou a edificar a Casa do SENHOR",
+      "feedbackCorrect": "A Casa do Senhor.",
+      "feedbackWrong": {
+        "b": "Marca o mês.",
+        "c": "Marca o povo."
+      },
+      "hint": "Objeto de edificar.",
+      "learningObjective": "Sustentar o centro do bloco: a Casa.",
+      "evidence": ["1 Reis 6:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o caminho da oração que o céu ouve.",
+      "verseRef": "1 Reis 8:30",
+      "options": [
+        { "id": "a", "text": "Salomão ora na casa edificada" },
+        { "id": "b", "text": "Pede que Deus ouça no céu e perdoe" },
+        { "id": "c", "text": "O Senhor declara o céu seu trono" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ouve no céu, lugar da tua habitação; ouve e perdoa",
+      "feedbackCorrect": "Oração, perdão e trono celeste.",
+      "feedbackWrong": {
+        "default": "Comece pela oração na casa."
+      },
+      "hint": "Siga oração, pedido e eco em Isaías.",
+      "learningObjective": "Ver a oração no fio da Bíblia.",
+      "evidence": ["1 Reis 8:30", "Isaías 66:1"]
+    }
+  ]
+}

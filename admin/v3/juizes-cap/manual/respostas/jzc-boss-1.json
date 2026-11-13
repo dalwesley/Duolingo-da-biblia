@@ -1,0 +1,927 @@
+{
+  "study": {
+    "passageRef": "Juízes 3:12–15",
+    "passages": [
+      {
+        "ref": "Juízes 1:19–28"
+      },
+      {
+        "ref": "Juízes 2:8–15"
+      },
+      {
+        "ref": "Juízes 3:12–23"
+      },
+      {
+        "ref": "Juízes 4:12–24"
+      },
+      {
+        "ref": "Juízes 5:1–11"
+      }
+    ],
+    "context": "Esta Travessia revisa falha e livramento: expulsão incompleta, apostasia, Eúde, Débora e o cântico.",
+    "keyword": "clamaram",
+    "keywordGloss": "O povo clama e o Senhor suscita libertador.",
+    "focusQuestion": "Onde você precisa clamar em vez de acomodar a falha?",
+    "reflectionPrompts": [
+      "Não expulsou de todo",
+      "Clamor e Eúde",
+      "Povo se oferece"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor esteve com Judá.",
+        "evidenceRef": "Juízes 1:19",
+        "evidenceSpan": "O Senhor esteve com Judá"
+      },
+      {
+        "text": "Israel não expulsou de todo.",
+        "evidenceRef": "Juízes 1:28",
+        "evidenceSpan": "mas não os expulsou de todo"
+      },
+      {
+        "text": "Serviram aos baalins.",
+        "evidenceRef": "Juízes 2:11",
+        "evidenceSpan": "serviram aos baalins"
+      },
+      {
+        "text": "Clamaram e o Senhor suscitou Eúde.",
+        "evidenceRef": "Juízes 3:15",
+        "evidenceSpan": "os filhos de Israel clamaram ao SENHOR"
+      },
+      {
+        "text": "O Senhor derrotou Sísera.",
+        "evidenceRef": "Juízes 4:15",
+        "evidenceSpan": "o Senhor derrotou a Sísera"
+      },
+      {
+        "text": "O povo se ofereceu de bom grado.",
+        "evidenceRef": "Juízes 5:2",
+        "evidenceSpan": "o povo se ofereceu de bom grado"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "libertador",
+        "gloss": "Eúde suscitado pelo Senhor."
+      },
+      {
+        "term": "baalins",
+        "gloss": "Deuses a quem Israel serviu."
+      },
+      {
+        "term": "mãe",
+        "gloss": "Como Débora se levanta em Israel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Expulsão incompleta",
+        "evidenceRef": "Juízes 1:19–28"
+      },
+      {
+        "label": "Apostasia e ira",
+        "evidenceRef": "Juízes 2:11–15"
+      },
+      {
+        "label": "Eúde e Débora",
+        "evidenceRef": "Juízes 3:15"
+      },
+      {
+        "label": "Débora e o cântico",
+        "evidenceRef": "Juízes 5:1–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Despovoou montanhas; contudo não expulsou o vale.",
+        "marker": "contudo",
+        "evidenceRef": "Juízes 1:19"
+      },
+      {
+        "kind": "causa",
+        "text": "Por isso a ira se acendeu.",
+        "marker": "Por isso",
+        "evidenceRef": "Juízes 2:14"
+      },
+      {
+        "kind": "causa",
+        "text": "Prepare-se pois o Senhor entregou.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 4:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 14:14",
+        "bridge": "Senhor luta por vós"
+      },
+      {
+        "ref": "Salmos 50:15",
+        "bridge": "Clamar no dia da angústia"
+      },
+      {
+        "ref": "Êxodo 15:1",
+        "bridge": "Cântico após o livramento"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Israel expulsou todos.",
+        "why": "Não os expulsou de todo."
+      },
+      {
+        "text": "O Senhor não responde ao clamor.",
+        "why": "Suscitou Eúde."
+      },
+      {
+        "text": "Débora não tem papel.",
+        "why": "Levanta-se como mãe."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 3:15, o que Israel fez antes do libertador?",
+    "centralInsight": "O Senhor livra quando o povo clama e se oferece"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 3:15, Israel clamou ao Senhor e Ele suscitou Eúde.",
+      "verseRef": "Juízes 3:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR",
+      "feedbackCorrect": "Clamor e Eúde.",
+      "feedbackWrong": {
+        "false": "O texto une clamor e envio."
+      },
+      "hint": "Veja o clamaram.",
+      "learningObjective": "Observar o clamor.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 2:11, toque a quem Israel serviu.",
+      "verseRef": "Juízes 2:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "baalins"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serviram aos baalins",
+      "feedbackCorrect": "Baalins.",
+      "feedbackWrong": {
+        "b": "Israel é quem serve.",
+        "c": "SENHOR é a quem ofendem."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Identificar baalins.",
+      "evidence": [
+        "Juízes 2:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 3:15, Eúde é descrito como:",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um homem canhoto"
+        },
+        {
+          "id": "b",
+          "text": "Rei de Moabe"
+        },
+        {
+          "id": "c",
+          "text": "Filho de Eglom"
+        },
+        {
+          "id": "d",
+          "text": "Profeta de Baal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um homem canhoto",
+      "feedbackCorrect": "Canhoto.",
+      "feedbackWrong": {
+        "b": "Não é rei.",
+        "c": "Não é filho de Eglom.",
+        "d": "Não é de Baal."
+      },
+      "hint": "Leia a descrição.",
+      "learningObjective": "Reconhecer Eúde.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 2:11 na ordem do texto.",
+      "verseRef": "Juízes 2:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "os filhos de Israel fizeram o que era mau"
+        },
+        {
+          "id": "b",
+          "text": "aos olhos do SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "e serviram aos baalins"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "serviram aos baalins",
+      "feedbackCorrect": "Mau, olhos e baalins.",
+      "feedbackWrong": {
+        "default": "Comece pelo povo."
+      },
+      "hint": "A quem serviram?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 2:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 1:28, complete: mas não os expulsou de ___.",
+      "verseRef": "Juízes 1:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "todo"
+        },
+        {
+          "id": "b",
+          "text": "vez"
+        },
+        {
+          "id": "c",
+          "text": "longe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não os expulsou de todo",
+      "feedbackCorrect": "Todo.",
+      "feedbackWrong": {
+        "b": "Não é vez.",
+        "c": "Não é longe."
+      },
+      "hint": "Veja o alcance.",
+      "learningObjective": "Lembrar de todo.",
+      "evidence": [
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 5:2 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 5:2",
+      "passageA": {
+        "ref": "Juízes 5:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quando o povo se oferece, o cântico bendiz ao Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo se oferece"
+        },
+        {
+          "id": "b",
+          "text": "Povo se esconde"
+        },
+        {
+          "id": "c",
+          "text": "Sem louvor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o povo se ofereceu de bom grado",
+      "feedbackCorrect": "Oferta do povo.",
+      "feedbackWrong": {
+        "b": "Há oferta.",
+        "c": "Há louvor."
+      },
+      "hint": "O que o povo fez?",
+      "learningObjective": "Ligar oferta e cântico.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 4:14, toque quem sai à frente.",
+      "verseRef": "Juízes 4:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Débora"
+        },
+        {
+          "id": "b",
+          "text": "Sísera"
+        },
+        {
+          "id": "c",
+          "text": "Baraque"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "acaso não saiu o Senhor à sua frente",
+      "feedbackCorrect": "Senhor.",
+      "feedbackWrong": {
+        "b": "Sísera é o inimigo.",
+        "c": "Baraque ouve Débora."
+      },
+      "hint": "Veja a pergunta.",
+      "learningObjective": "Tocar o Senhor.",
+      "evidence": [
+        "Juízes 4:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o envio de Eúde na ordem do texto.",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "os filhos de Israel clamaram ao SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "o SENHOR lhes suscitou um libertador"
+        },
+        {
+          "id": "c",
+          "text": "Eúde, filho de Gera, benjamita"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o SENHOR lhes suscitou um libertador: Eúde",
+      "feedbackCorrect": "Clamor, libertador e nome.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "Quem é suscitado?",
+      "learningObjective": "Seguir 3:15.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 1:19, Judá expulsou também os habitantes do vale sem dificuldade.",
+      "verseRef": "Juízes 1:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "contudo, não conseguiu expulsar os habitantes do vale",
+      "feedbackCorrect": "Falhou no vale.",
+      "feedbackWrong": {
+        "true": "O contudo marca o limite."
+      },
+      "hint": "Leia o contudo.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 1:19, toque o marcador de contraste.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "contudo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "vale"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contudo, não conseguiu expulsar",
+      "feedbackCorrect": "Contudo.",
+      "feedbackWrong": {
+        "b": "Senhor esteve com Judá.",
+        "c": "Vale é o lugar."
+      },
+      "hint": "Procure após montanhas.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 2:14 mostra?",
+      "verseRef": "Juízes 2:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandonaram; por isso a ira os entregou"
+        },
+        {
+          "id": "b",
+          "text": "Serviram e foram abençoados"
+        },
+        {
+          "id": "c",
+          "text": "Sem causa sofreram"
+        },
+        {
+          "id": "d",
+          "text": "Josué os entregou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, a ira do Senhor se acendeu",
+      "feedbackCorrect": "Causa e ira.",
+      "feedbackWrong": {
+        "b": "Há causa.",
+        "c": "Não é bênção.",
+        "d": "Não é Josué."
+      },
+      "hint": "Leia o Por isso.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 2:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da etapa.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Expulsão incompleta"
+        },
+        {
+          "id": "b",
+          "text": "Apostasia e ira"
+        },
+        {
+          "id": "c",
+          "text": "Eúde e Débora"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não conseguiu expulsar os habitantes do vale",
+      "feedbackCorrect": "Falha, ira e livramento.",
+      "feedbackWrong": {
+        "default": "Comece pela falha."
+      },
+      "hint": "O que fecha com Débora?",
+      "learningObjective": "Ordenar a etapa",
+      "evidence": [
+        "Juízes 1:19",
+        "Juízes 4:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 2:14, complete: Por ___, a ira do Senhor se acendeu.",
+      "verseRef": "Juízes 2:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "isso"
+        },
+        {
+          "id": "b",
+          "text": "acaso"
+        },
+        {
+          "id": "c",
+          "text": "fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, a ira do Senhor se acendeu",
+      "feedbackCorrect": "Isso.",
+      "feedbackWrong": {
+        "b": "Não é acaso.",
+        "c": "Não é fim."
+      },
+      "hint": "Veja o marcador.",
+      "learningObjective": "Lembrar isso.",
+      "evidence": [
+        "Juízes 2:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 3:15 a Salmos 50:15?",
+      "verseRef": "Juízes 3:15",
+      "passageA": {
+        "ref": "Juízes 3:15"
+      },
+      "passageB": {
+        "ref": "Salmos 50:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamar no dia da angústia"
+        },
+        {
+          "id": "b",
+          "text": "Calar perante Eglom"
+        },
+        {
+          "id": "c",
+          "text": "Servir a Baal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR",
+      "feedbackCorrect": "Clamor.",
+      "feedbackWrong": {
+        "b": "Não é calar.",
+        "c": "Não é Baal."
+      },
+      "hint": "Compare o clamor.",
+      "learningObjective": "Ligar ao Salmo.",
+      "evidence": [
+        "Juízes 3:15",
+        "Salmos 50:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 3:15, toque a ação do povo.",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamaram"
+        },
+        {
+          "id": "b",
+          "text": "libertador"
+        },
+        {
+          "id": "c",
+          "text": "canhoto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR",
+      "feedbackCorrect": "Clamaram.",
+      "feedbackWrong": {
+        "b": "Libertador é a resposta.",
+        "c": "Canhoto descreve Eúde."
+      },
+      "hint": "Veja o verbo do povo.",
+      "learningObjective": "Tocar clamaram.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o avanço até o cântico.",
+      "verseRef": "Juízes 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor e Eúde"
+        },
+        {
+          "id": "b",
+          "text": "Senhor derrota Sísera"
+        },
+        {
+          "id": "c",
+          "text": "Oferta e bendizei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o povo se ofereceu de bom grado",
+      "feedbackCorrect": "Clamor, vitória e oferta.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "O que fecha a oferta?",
+      "learningObjective": "Ordenar até o cântico",
+      "evidence": [
+        "Juízes 3:15",
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 5:7, Débora se descreve como mãe em Israel após o livramento.",
+      "verseRef": "Juízes 5:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "me levantei como mãe em Israel",
+      "feedbackCorrect": "Ela se levanta no meio da crise.",
+      "feedbackWrong": {
+        "true": "Até que eu me levantei."
+      },
+      "hint": "Leia o até que.",
+      "learningObjective": "Avaliar o papel.",
+      "evidence": [
+        "Juízes 5:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 2:11, toque o que era mau.",
+      "verseRef": "Juízes 2:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "mau"
+        },
+        {
+          "id": "b",
+          "text": "baalins"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fizeram o que era mau",
+      "feedbackCorrect": "Mau.",
+      "feedbackWrong": {
+        "b": "Baalins são o serviço.",
+        "c": "Olhos são do SENHOR."
+      },
+      "hint": "Veja o que fizeram.",
+      "learningObjective": "Tocar mau.",
+      "evidence": [
+        "Juízes 2:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une falha e livramento?",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor responde ao clamor com um libertador"
+        },
+        {
+          "id": "b",
+          "text": "Sem clamor não há pecado"
+        },
+        {
+          "id": "c",
+          "text": "Eúde age sem Deus"
+        },
+        {
+          "id": "d",
+          "text": "A falha cancela o cântico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR lhes suscitou um libertador",
+      "feedbackCorrect": "Clamor e resposta.",
+      "feedbackWrong": {
+        "b": "Há pecado.",
+        "c": "Há Senhor.",
+        "d": "Há cântico."
+      },
+      "hint": "Una clamor e Eúde.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do livramento.",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Falha e apostasia"
+        },
+        {
+          "id": "b",
+          "text": "Clamor e libertador"
+        },
+        {
+          "id": "c",
+          "text": "Vitória e cântico"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR",
+      "feedbackCorrect": "Falha, clamor e cântico.",
+      "feedbackWrong": {
+        "default": "Comece pela falha."
+      },
+      "hint": "O que fecha o cântico?",
+      "learningObjective": "Encadear o livramento",
+      "evidence": [
+        "Juízes 2:11",
+        "Juízes 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 3:15, complete: um homem ___.",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "canhoto"
+        },
+        {
+          "id": "b",
+          "text": "cego"
+        },
+        {
+          "id": "c",
+          "text": "mudo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um homem canhoto",
+      "feedbackCorrect": "Canhoto.",
+      "feedbackWrong": {
+        "b": "Não é cego.",
+        "c": "Não é mudo."
+      },
+      "hint": "Veja a descrição.",
+      "learningObjective": "Lembrar canhoto.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 5:2 a Êxodo 15:1?",
+      "verseRef": "Juízes 5:2",
+      "passageA": {
+        "ref": "Juízes 5:2"
+      },
+      "passageB": {
+        "ref": "Êxodo 15:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cântico após o livramento"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio após a guerra"
+        },
+        {
+          "id": "c",
+          "text": "Lamento sem causa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendizei ao Senhor",
+      "feedbackCorrect": "Cântico.",
+      "feedbackWrong": {
+        "b": "Há canto.",
+        "c": "Há causa."
+      },
+      "hint": "Compare o louvor.",
+      "learningObjective": "Ligar ao Êxodo.",
+      "evidence": [
+        "Juízes 5:2",
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 4:15, toque quem o Senhor derrotou.",
+      "verseRef": "Juízes 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sísera"
+        },
+        {
+          "id": "b",
+          "text": "Baraque"
+        },
+        {
+          "id": "c",
+          "text": "carros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor derrotou a Sísera",
+      "feedbackCorrect": "Sísera.",
+      "feedbackWrong": {
+        "b": "Baraque persegue.",
+        "c": "Carros caem com ele."
+      },
+      "hint": "Veja a comparação.",
+      "learningObjective": "Tocar mãe.",
+      "evidence": [
+        "Juízes 5:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o fio do cântico na etapa.",
+      "verseRef": "Juízes 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Líderes tomam a dianteira"
+        },
+        {
+          "id": "b",
+          "text": "Povo se oferece"
+        },
+        {
+          "id": "c",
+          "text": "Bendizei ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Bendizei ao Senhor",
+      "feedbackCorrect": "Líderes, povo e louvor.",
+      "feedbackWrong": {
+        "default": "Comece pelos líderes."
+      },
+      "hint": "O que fecha o verso?",
+      "learningObjective": "Seguir 5:2.",
+      "evidence": [
+        "Juízes 5:2"
+      ]
+    }
+  ]
+}

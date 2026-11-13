@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Tiago 1:2–5",
+    "passages": [
+      { "ref": "Tiago 1:2–5" },
+      { "ref": "Tiago 1:6–8" }
+    ],
+    "context": "Tiago escreve a irmãos que passam por diversas provações. Antes de falar de obras, ele ensina a olhar a prova de outro modo e a pedir a Deus a sabedoria que falta.",
+    "keyword": "perseverança",
+    "keywordGloss": "Firmeza que permanece debaixo da prova e faz a fé amadurecer.",
+    "focusQuestion": "Que prova você enfrenta hoje, e que sabedoria você ainda não pediu a Deus?",
+    "reflectionPrompts": [
+      "Alegria na prova",
+      "Perseverança que amadurece",
+      "Pedir com fé"
+    ],
+    "facts": [
+      {
+        "text": "Tiago manda considerar as diversas provações como motivo de grande alegria.",
+        "evidenceRef": "Tiago 1:2",
+        "evidenceSpan": "considerem como um motivo de grande alegria"
+      },
+      {
+        "text": "A provação da fé, uma vez confirmada, gera perseverança.",
+        "evidenceRef": "Tiago 1:3",
+        "evidenceSpan": "a provação da sua fé, uma vez confirmada, gera perseverança"
+      },
+      {
+        "text": "Quem carece de sabedoria deve pedi-la a Deus.",
+        "evidenceRef": "Tiago 1:5",
+        "evidenceSpan": "peça-a a Deus"
+      },
+      {
+        "text": "Deus concede a todos livremente e não censura.",
+        "evidenceRef": "Tiago 1:5",
+        "evidenceSpan": "que a todos concede livremente e não censura"
+      },
+      {
+        "text": "Quem duvida é como a onda do mar, levada e agitada pelo vento.",
+        "evidenceRef": "Tiago 1:6",
+        "evidenceSpan": "quem duvida é semelhante à onda do mar"
+      },
+      {
+        "text": "O homem de coração dividido é inconstante em todos os seus caminhos.",
+        "evidenceRef": "Tiago 1:8",
+        "evidenceSpan": "O homem de coração dividido é inconstante em todos os seus caminhos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "perseverança",
+        "gloss": "Firmeza sob a prova: é o que a fé confirmada produz."
+      },
+      {
+        "term": "sabedoria",
+        "gloss": "O que falta a quem não sabe como atravessar a prova e que Deus dá a quem pede."
+      },
+      {
+        "term": "dividido",
+        "gloss": "Coração que quer confiar em Deus e duvidar ao mesmo tempo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A prova vira motivo de alegria",
+        "evidenceRef": "Tiago 1:2"
+      },
+      {
+        "label": "A fé provada produz perseverança madura",
+        "evidenceRef": "Tiago 1:3–4"
+      },
+      {
+        "label": "Quem não sabe pede a Deus, que dá",
+        "evidenceRef": "Tiago 1:5"
+      },
+      {
+        "label": "O pedido exige fé sem divisão",
+        "evidenceRef": "Tiago 1:6–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "A provação da fé confirmada produz perseverança.",
+        "marker": "gera",
+        "evidenceRef": "Tiago 1:3"
+      },
+      {
+        "kind": "propósito",
+        "text": "A perseverança deve completar sua obra para que os irmãos fiquem perfeitos e íntegros.",
+        "marker": "para que",
+        "evidenceRef": "Tiago 1:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deus dá sabedoria a todos, mas o pedido deve vir com fé, e não com dúvida.",
+        "marker": "porém",
+        "evidenceRef": "Tiago 1:6"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Romanos 5:3–4", "bridge": "A prova produz perseverança" },
+      { "ref": "Provérbios 2:6", "bridge": "Deus é a fonte da sabedoria" },
+      { "ref": "1 Pedro 1:6–7", "bridge": "A prova da fé tem valor" }
+    ],
+    "misreadings": [
+      {
+        "text": "Ter alegria na prova é fingir que o sofrimento não dói.",
+        "why": "A alegria vem do que a prova produz: a perseverança (1:3), e não de negar a dor."
+      },
+      {
+        "text": "Deus só dá sabedoria a quem a merece e repreende quem pede.",
+        "why": "O texto diz que Deus concede a todos livremente e não censura (1:5)."
+      },
+      {
+        "text": "Pedir com fé garante receber qualquer coisa que se queira.",
+        "why": "O pedido do texto é por sabedoria, e a advertência é contra a dúvida e o coração dividido (1:5–8)."
+      }
+    ],
+    "centralInsight": "A provação gera perseverança; peçam sabedoria a Deus com fé, sem duvidar.",
+    "anchorQuestion": "O que, segundo Tiago 1:3, a provação da fé confirmada gera?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Tiago 1:2, os irmãos devem considerar as diversas provações como motivo de grande alegria.",
+      "verseRef": "Tiago 1:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "considerem como um motivo de grande alegria",
+      "feedbackCorrect": "O versículo manda ver as provações como motivo de grande alegria.",
+      "feedbackWrong": {
+        "false": "Releia o começo: Tiago pede alegria, e não tristeza, diante das provações."
+      },
+      "hint": "Veja o que Tiago pede que os irmãos considerem.",
+      "learningObjective": "Observar que Tiago pede alegria diante das provações.",
+      "evidence": ["Tiago 1:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Tiago 1:3, toque o que a provação da fé confirmada gera.",
+      "verseRef": "Tiago 1:3",
+      "options": [
+        { "id": "a", "text": "perseverança" },
+        { "id": "b", "text": "provação" },
+        { "id": "c", "text": "confirmada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "A provação da fé confirmada gera perseverança.",
+      "feedbackWrong": {
+        "b": "A provação é o que gera algo; ela não é o que nasce dela.",
+        "c": "Confirmada descreve a fé provada, e não o que ela gera."
+      },
+      "hint": "Procure a palavra que fecha o versículo.",
+      "learningObjective": "Identificar o que a provação da fé produz.",
+      "evidence": ["Tiago 1:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Tiago 1:5, como Deus age com quem pede sabedoria?",
+      "verseRef": "Tiago 1:5",
+      "options": [
+        { "id": "a", "text": "Dá a todos com generosidade, sem censurar" },
+        { "id": "b", "text": "Dá só a quem já é sábio" },
+        { "id": "c", "text": "Dá depois de repreender o pedido" },
+        { "id": "d", "text": "Dá apenas aos mais antigos na fé" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que a todos concede livremente e não censura",
+      "feedbackCorrect": "Deus concede a todos livremente e não censura quem pede.",
+      "feedbackWrong": {
+        "b": "O texto trata de quem carece de sabedoria, e não de quem já a tem.",
+        "c": "Deus não censura: ele concede livremente.",
+        "d": "A concessão é para todos, sem separar os mais antigos."
+      },
+      "hint": "Olhe como o versículo descreve o jeito de Deus dar.",
+      "learningObjective": "Reconhecer a generosidade de Deus ao dar sabedoria.",
+      "evidence": ["Tiago 1:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o início de Tiago 1:6 na ordem do texto.",
+      "verseRef": "Tiago 1:6",
+      "options": [
+        { "id": "a", "text": "Peça-a, porém, com fé" },
+        { "id": "b", "text": "sem hesitar" },
+        { "id": "c", "text": "quem duvida é semelhante à onda do mar" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Peça-a, porém, com fé, sem hesitar",
+      "feedbackCorrect": "Primeiro o pedido com fé, depois a ordem de não hesitar e, por fim, a imagem de quem duvida.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido com fé; a imagem da onda vem por último."
+      },
+      "hint": "O versículo abre com o pedido e fecha com a imagem.",
+      "learningObjective": "Seguir a ordem do texto sobre pedir com fé.",
+      "evidence": ["Tiago 1:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Tiago 1:6, quem duvida é semelhante a que parte do mar?",
+      "verseRef": "Tiago 1:6",
+      "options": [
+        { "id": "a", "text": "onda" },
+        { "id": "b", "text": "areia" },
+        { "id": "c", "text": "ilha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quem duvida é semelhante à onda do mar",
+      "feedbackCorrect": "A imagem é a da onda do mar, levada e agitada pelo vento.",
+      "feedbackWrong": {
+        "b": "A areia fica parada; o texto usa algo que o vento agita.",
+        "c": "A ilha não se move; a imagem do texto é de algo agitado."
+      },
+      "hint": "Pense na água do mar movida pelo vento.",
+      "learningObjective": "Lembrar a imagem de quem duvida.",
+      "evidence": ["Tiago 1:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Tiago 1:2 comunica que se liga a este contexto?",
+      "verseRef": "Tiago 1:2",
+      "passageA": { "ref": "Tiago 1:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os irmãos de Tiago passam por diversas provações, e ele os ensina a olhar para elas de outro modo."
+      },
+      "options": [
+        { "id": "a", "text": "Alegria diante das provações" },
+        { "id": "b", "text": "Fuga de toda dificuldade" },
+        { "id": "c", "text": "Silêncio diante do sofrimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "considerem como um motivo de grande alegria",
+      "feedbackCorrect": "Diante das provações, Tiago pede que se considere tudo motivo de grande alegria.",
+      "feedbackWrong": {
+        "b": "Tiago não manda fugir: manda passar pelas provações com outro olhar.",
+        "c": "O versículo pede alegria, e não silêncio."
+      },
+      "hint": "Veja o que Tiago manda fazer com as provações.",
+      "learningObjective": "Ligar o contexto das provações ao pedido de alegria.",
+      "evidence": ["Tiago 1:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Tiago 1:4, a perseverança deve completar sua obra para que os irmãos sejam perfeitos e íntegros.",
+      "verseRef": "Tiago 1:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que sejais perfeitos e íntegros",
+      "feedbackCorrect": "A obra da perseverança tem um fim: tornar perfeitos e íntegros.",
+      "feedbackWrong": {
+        "false": "O versículo liga a obra completa da perseverança ao amadurecimento."
+      },
+      "hint": "Leia a finalidade que vem depois da obra completa.",
+      "learningObjective": "Ver o propósito da perseverança.",
+      "evidence": ["Tiago 1:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Tiago 1:6, toque a palavra que marca o contraste com o pedido a Deus.",
+      "verseRef": "Tiago 1:6",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "pois" },
+        { "id": "c", "text": "duvida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Peça-a, porém, com fé",
+      "feedbackCorrect": "O \"porém\" contrasta: Deus dá livremente, mas o pedido deve vir com fé.",
+      "feedbackWrong": {
+        "b": "O \"pois\" introduz a razão da advertência, e não o contraste.",
+        "c": "Duvida nomeia o erro, e não a palavra que vira o argumento."
+      },
+      "hint": "Procure a palavra entre vírgulas, logo no começo.",
+      "learningObjective": "Tocar o marcador de contraste do versículo.",
+      "evidence": ["Tiago 1:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Tiago 1:5–6 estabelece entre o dom de Deus e o pedido?",
+      "verseRef": "Tiago 1:5–6",
+      "options": [
+        { "id": "a", "text": "Deus dá com generosidade, mas o pedido deve vir sem dúvida" },
+        { "id": "b", "text": "Deus só dá a quem já mostrou ter sabedoria" },
+        { "id": "c", "text": "A fé torna desnecessário pedir a Deus" },
+        { "id": "d", "text": "A dúvida deixa o pedido mais sincero" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Peça-a, porém, com fé, sem hesitar",
+      "feedbackCorrect": "Deus dá livremente, e o pedido deve vir com fé, sem hesitar.",
+      "feedbackWrong": {
+        "b": "Deus concede a todos que carecem, e não só a quem já é sábio.",
+        "c": "O texto manda pedir: a fé acompanha o pedido, não o dispensa.",
+        "d": "O texto compara a dúvida a uma onda agitada, e não a sinceridade."
+      },
+      "hint": "Ligue o que Deus faz em 1:5 ao que se espera de quem pede.",
+      "learningObjective": "Relacionar a generosidade de Deus com a fé de quem pede.",
+      "evidence": ["Tiago 1:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Tiago 1:3–4.",
+      "verseRef": "Tiago 1:3–4",
+      "options": [
+        { "id": "a", "text": "A fé provada gera perseverança" },
+        { "id": "b", "text": "A perseverança completa a sua obra" },
+        { "id": "c", "text": "O fim é ser íntegro e sem deficiência" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Tenha, pois, a perseverança a sua obra completa",
+      "feedbackCorrect": "A prova gera perseverança, que completa sua obra e leva à integridade.",
+      "feedbackWrong": {
+        "default": "Comece pela prova da fé; o fim da obra vem por último."
+      },
+      "hint": "Siga o caminho: prova, perseverança, resultado.",
+      "learningObjective": "Ordenar os passos do amadurecimento pela prova.",
+      "evidence": ["Tiago 1:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Tiago 1:3, que verbo liga a provação da fé à perseverança?",
+      "verseRef": "Tiago 1:3",
+      "options": [
+        { "id": "a", "text": "gera" },
+        { "id": "b", "text": "evita" },
+        { "id": "c", "text": "destrói" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "A provação confirmada \"gera\" perseverança: é a relação de causa do versículo.",
+      "feedbackWrong": {
+        "b": "A prova não evita a perseverança: ela a produz.",
+        "c": "O texto diz o contrário: a prova constrói perseverança."
+      },
+      "hint": "Veja o verbo que une a prova ao seu resultado.",
+      "learningObjective": "Lembrar o verbo que carrega a relação de causa.",
+      "evidence": ["Tiago 1:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Tiago 1:3 a Romanos 5:3–4?",
+      "verseRef": "Tiago 1:3",
+      "passageA": { "ref": "Tiago 1:3" },
+      "passageB": { "ref": "Romanos 5:3–4" },
+      "options": [
+        { "id": "a", "text": "A prova produz perseverança" },
+        { "id": "b", "text": "A prova produz orgulho" },
+        { "id": "c", "text": "A prova revela o castigo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "Tiago e Paulo dizem o mesmo: a tribulação produz perseverança.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos fala de orgulho; ambos falam de perseverança.",
+        "c": "Os textos mostram a prova como caminho de crescimento, e não castigo."
+      },
+      "hint": "Compare o que a prova produz nos dois textos.",
+      "learningObjective": "Ligar Tiago 1:3 ao ensino de Paulo sobre a tribulação.",
+      "evidence": ["Tiago 1:3", "Romanos 5:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Tiago 1:5–6 ensina que Deus dá sabedoria só a quem prova que a merece.",
+      "verseRef": "Tiago 1:5–6",
+      "correctOptionId": "false",
+      "evidenceSpan": "que a todos concede livremente e não censura",
+      "feedbackCorrect": "A sabedoria é dom: Deus concede a todos livremente e não censura.",
+      "feedbackWrong": {
+        "true": "O texto diz o contrário: Deus concede livremente e não censura quem pede."
+      },
+      "hint": "Veja como o versículo 5 descreve o jeito de Deus dar.",
+      "learningObjective": "Rejeitar a leitura de que a sabedoria é prêmio por mérito.",
+      "evidence": ["Tiago 1:5–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Tiago 1:8, toque o trecho que mostra onde está a divisão de quem hesita.",
+      "verseRef": "Tiago 1:8",
+      "options": [
+        { "id": "a", "text": "coração dividido" },
+        { "id": "b", "text": "inconstante" },
+        { "id": "c", "text": "seus caminhos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O homem de coração dividido é inconstante",
+      "feedbackCorrect": "A divisão está no coração: por dentro, ele não se firma em Deus.",
+      "feedbackWrong": {
+        "b": "Inconstante é o resultado da divisão, e não o lugar dela.",
+        "c": "Os caminhos mostram os efeitos de fora, e não a divisão interior."
+      },
+      "hint": "Procure a parte de dentro da pessoa, e não o resultado.",
+      "learningObjective": "Sustentar com o texto que a dúvida é uma divisão interior.",
+      "evidence": ["Tiago 1:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Tiago 1:2–3 sustenta sobre a alegria na prova?",
+      "verseRef": "Tiago 1:2–3",
+      "options": [
+        { "id": "a", "text": "A alegria nasce do que a prova produz, e não da dor" },
+        { "id": "b", "text": "O cristão deve fingir que a dor não existe" },
+        { "id": "c", "text": "A prova é castigo e deve ser evitada a todo custo" },
+        { "id": "d", "text": "A alegria dispensa a perseverança" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a provação da sua fé, uma vez confirmada, gera perseverança",
+      "feedbackCorrect": "A alegria olha para o fruto: a prova da fé gera perseverança.",
+      "feedbackWrong": {
+        "b": "Tiago não manda negar a dor; manda olhar o que a prova produz.",
+        "c": "O texto não fala de castigo, mas de uma fé provada que gera perseverança.",
+        "d": "A alegria vem justamente do que a perseverança vai produzir."
+      },
+      "hint": "Pergunte por que a alegria é possível, segundo 1:3.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a alegria na prova.",
+      "evidence": ["Tiago 1:2–3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho da prova até a esperança?",
+      "verseRef": "Tiago 1:3",
+      "options": [
+        { "id": "a", "text": "A prova da fé gera perseverança" },
+        { "id": "b", "text": "A perseverança produz experiência" },
+        { "id": "c", "text": "A experiência produz esperança" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "gera perseverança",
+      "feedbackCorrect": "Tiago começa o fio que Paulo continua: perseverança, experiência e esperança.",
+      "feedbackWrong": {
+        "default": "Siga o fio: a prova (Tg 1:3) leva à perseverança, e esta à esperança (Rm 5:4)."
+      },
+      "hint": "Comece pela prova e termine no que ela deixa de esperança.",
+      "learningObjective": "Ver Tiago 1:3 como início de um encadeamento que Paulo completa.",
+      "evidence": ["Tiago 1:3", "Romanos 5:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Tiago 1:5, que termo nomeia o que falta e deve ser pedido a Deus?",
+      "verseRef": "Tiago 1:5",
+      "options": [
+        { "id": "a", "text": "sabedoria" },
+        { "id": "b", "text": "paciência" },
+        { "id": "c", "text": "riqueza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "carece de sabedoria",
+      "feedbackCorrect": "Sabedoria é o que falta e o que Deus concede livremente a quem pede.",
+      "feedbackWrong": {
+        "b": "Paciência é fruto da prova, mas o que se pede neste versículo é outra coisa.",
+        "c": "O texto não fala de riqueza: o pedido é por algo que Deus dá sem censurar."
+      },
+      "hint": "Veja o que o versículo diz que Deus concede livremente.",
+      "learningObjective": "Lembrar o termo que carrega o pedido central da cena.",
+      "evidence": ["Tiago 1:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Tiago 1:5 a Provérbios 2:6?",
+      "verseRef": "Tiago 1:5",
+      "passageA": { "ref": "Tiago 1:5" },
+      "passageB": { "ref": "Provérbios 2:6" },
+      "options": [
+        { "id": "a", "text": "Deus é a fonte da sabedoria" },
+        { "id": "b", "text": "A sabedoria vem da experiência humana" },
+        { "id": "c", "text": "A sabedoria se conquista pelo esforço" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "peça-a a Deus, que a todos concede livremente",
+      "feedbackCorrect": "Nos dois textos, a sabedoria vem de Deus, que a concede.",
+      "feedbackWrong": {
+        "b": "Os dois textos apontam para Deus, e não para a experiência humana.",
+        "c": "Em ambos, a sabedoria é concedida por Deus, e não conquistada."
+      },
+      "hint": "Compare quem concede a sabedoria nos dois textos.",
+      "learningObjective": "Ligar o pedido de sabedoria de Tiago ao ensino de Provérbios.",
+      "evidence": ["Tiago 1:5", "Provérbios 2:6"]
+    }
+  ]
+}

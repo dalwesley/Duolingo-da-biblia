@@ -1,0 +1,919 @@
+{
+  "study": {
+    "slug": "r2c-16-samaria-cai",
+    "passageRef": "2 Reis 17:1–6",
+    "passageText": "No décimo segundo ano do rei Acaz, de Judá, Oséias, filho de Elá, começou a reinar e governou sobre Israel, em Samaria, durante nove anos. E fez o que era mau perante o Senhor, mas não como os reis de Israel que o antecederam. Contra ele subiu Salmanasar rei da Assíria; e Oséias se tornou seu servo, pagando tributo a ele. O rei da Assíria descobriu que Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou e o lançou em um cárcere. Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos. No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+    "passages": [
+      {
+        "ref": "2 Reis 17:1–6",
+        "text": "No décimo segundo ano do rei Acaz, de Judá, Oséias, filho de Elá, começou a reinar e governou sobre Israel, em Samaria, durante nove anos. E fez o que era mau perante o Senhor, mas não como os reis de Israel que o antecederam. Contra ele subiu Salmanasar rei da Assíria; e Oséias se tornou seu servo, pagando tributo a ele. O rei da Assíria descobriu que Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou e o lançou em um cárcere. Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos. No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos."
+      }
+    ],
+    "context": "Oséias é o último rei do norte. A Assíria sobe, descobre conspiração com o Egito, cerca Samaria três anos e leva Israel ao exílio.",
+    "keyword": "Samaria",
+    "keywordGloss": "A capital do norte que cai e marca o fim do reino de Israel.",
+    "focusQuestion": "Quando os avisos se acumulam, você ainda trata a queda como distante?",
+    "reflectionPrompts": [
+      "Último rei",
+      "Cerco de três anos",
+      "Exílio na Assíria"
+    ],
+    "facts": [
+      {
+        "text": "Oséias reinou nove anos sobre Israel em Samaria.",
+        "evidenceRef": "2 Reis 17:1",
+        "evidenceSpan": "governou sobre Israel, em Samaria, durante nove anos"
+      },
+      {
+        "text": "Fez o que era mau perante o Senhor, mas não como os reis anteriores.",
+        "evidenceRef": "2 Reis 17:2",
+        "evidenceSpan": "fez o que era mau perante o Senhor, mas não como os reis de Israel que o antecederam"
+      },
+      {
+        "text": "Salmanasar subiu e Oséias se tornou seu servo, pagando tributo.",
+        "evidenceRef": "2 Reis 17:3",
+        "evidenceSpan": "Oséias se tornou seu servo, pagando tributo a ele"
+      },
+      {
+        "text": "Oséias conspirou enviando mensageiros a Sô, rei do Egito.",
+        "evidenceRef": "2 Reis 17:4",
+        "evidenceSpan": "enviara mensageiros a Sô, rei do Egito"
+      },
+      {
+        "text": "O rei da Assíria sitiou Samaria por três anos.",
+        "evidenceRef": "2 Reis 17:5",
+        "evidenceSpan": "alcançou Samaria e a sitiou por três anos"
+      },
+      {
+        "text": "Tomou Samaria e transportou Israel para a Assíria.",
+        "evidenceRef": "2 Reis 17:6",
+        "evidenceSpan": "o rei da Assíria tomou Samaria e transportou Israel para a Assíria"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Samaria",
+        "gloss": "A cidade sitiada e tomada; fim do reino do norte."
+      },
+      {
+        "term": "tributo",
+        "gloss": "O preço da servidão de Oséias à Assíria, depois interrompido."
+      },
+      {
+        "term": "Assíria",
+        "gloss": "O império que cerca, toma e deporta Israel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Oséias sobe e faz o mau",
+        "evidenceRef": "2 Reis 17:1–2"
+      },
+      {
+        "label": "Servo da Assíria e conspiração com o Egito",
+        "evidenceRef": "2 Reis 17:3–4"
+      },
+      {
+        "label": "Cerco de três anos a Samaria",
+        "evidenceRef": "2 Reis 17:5"
+      },
+      {
+        "label": "Queda e deportação para a Assíria",
+        "evidenceRef": "2 Reis 17:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Fez o mau, mas não como os reis que o antecederam.",
+        "marker": "mas",
+        "evidenceRef": "2 Reis 17:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Foi encadeado porque conspirara e deixara de pagar tributo.",
+        "marker": "Por isso",
+        "evidenceRef": "2 Reis 17:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque a Assíria subiu a toda a terra, Samaria é sitiada três anos e cai.",
+        "marker": "Porque",
+        "evidenceRef": "2 Reis 17:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 28:36",
+        "bridge": "Aviso de exílio ao rei",
+        "text": "O Senhor te levará e o rei que tiveres escolhido, a uma nação que não conheceste, nem tu nem teus pais; e ali servirás a outros deuses, feitos de madeira e de pedra."
+      },
+      {
+        "ref": "Oséias 13:16",
+        "bridge": "Juízo anunciado a Samaria",
+        "text": "Samaria suportará sua culpa, pois se rebelou contra o seu Deus; cairá à espada, seus filhos serão despedaçados e as mulheres grávidas serão abertas pelo meio."
+      },
+      {
+        "ref": "2 Reis 18:9–11",
+        "bridge": "Mesma queda recontada"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Oséias foi o rei mais ímpio de todos os do norte.",
+        "why": "O texto diz mau, mas não como os que o antecederam."
+      },
+      {
+        "text": "Samaria caiu em um ataque de poucos dias.",
+        "why": "O cerco durou três anos."
+      },
+      {
+        "text": "Israel permaneceu na terra após a tomada de Samaria.",
+        "why": "O rei da Assíria transportou Israel para a Assíria."
+      }
+    ],
+    "centralInsight": "Depois de muito aviso, a cidade cai e o povo vai para o exílio.",
+    "anchorQuestion": "Segundo 2 Reis 17:5–6, quanto tempo durou o cerco e o que aconteceu a Israel?",
+    "relatedVerses": [
+      {
+        "reference": "Deuteronômio 28:36",
+        "reason": "Aviso de exílio ao rei"
+      },
+      {
+        "reference": "Oséias 13:16",
+        "reason": "Juízo anunciado a Samaria"
+      },
+      {
+        "reference": "2 Reis 18:9–11",
+        "reason": "Mesma queda recontada"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "2reis-cap-sem-r2c-16-samaria-cai-01",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em 2 Reis 17:5, o rei da Assíria sitiou Samaria por três anos.",
+      "prompt": "Em 2 Reis 17:5, o rei da Assíria sitiou Samaria por três anos.",
+      "cue": "Em 2 Reis 17:5, o rei da Assíria sitiou Samaria por três anos.",
+      "verseRef": "2 Reis 17:5",
+      "passageText": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "alcançou Samaria e a sitiou por três anos",
+      "feedbackCorrect": "O cerco durou três anos.",
+      "feedbackWrong": {
+        "false": "O verso diz três anos."
+      },
+      "hint": "Veja a duração do sítio.",
+      "learningObjective": "Observar o cerco de três anos.",
+      "evidence": [
+        "2 Reis 17:5"
+      ]
+    },
+    {
+      "id": "2reis-cap-sem-r2c-16-samaria-cai-02",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em 2 Reis 17:6, toque o que a Assíria tomou.",
+      "prompt": "Em 2 Reis 17:6, toque o que a Assíria tomou.",
+      "cue": "Em 2 Reis 17:6, toque o que a Assíria tomou.",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Halah"
+        },
+        {
+          "id": "b",
+          "text": "medos"
+        },
+        {
+          "id": "c",
+          "text": "Samaria"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o rei da Assíria tomou Samaria",
+      "feedbackCorrect": "Tomou Samaria.",
+      "feedbackWrong": {
+        "a": "Halah é destino do exílio.",
+        "b": "Os medos são cidades do destino."
+      },
+      "hint": "O que foi tomado no nono ano?",
+      "learningObjective": "Identificar Samaria tomada.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-sem-r2c-16-samaria-cai-03",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo 2 Reis 17:4, por que Oséias foi lançado em cárcere?",
+      "prompt": "Segundo 2 Reis 17:4, por que Oséias foi lançado em cárcere?",
+      "cue": "Segundo 2 Reis 17:4, por que Oséias foi lançado em cárcere?",
+      "verseRef": "2 Reis 17:4",
+      "passageText": "O rei da Assíria descobriu que Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou e o lançou em um cárcere.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tinha reforçado o culto em Samaria"
+        },
+        {
+          "id": "b",
+          "text": "Vencera a Assíria em batalha"
+        },
+        {
+          "id": "c",
+          "text": "Conspirara com o Egito e parara o tributo"
+        },
+        {
+          "id": "d",
+          "text": "Pedira paz a Judá"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo",
+      "feedbackCorrect": "Conspiração e falta de tributo.",
+      "feedbackWrong": {
+        "a": "O texto fala de conspiração.",
+        "b": "Ele é preso, não vence.",
+        "d": "O foco é o Egito."
+      },
+      "hint": "Leia a descoberta do rei da Assíria.",
+      "learningObjective": "Notar a conspiração.",
+      "evidence": [
+        "2 Reis 17:4"
+      ]
+    },
+    {
+      "id": "2reis-cap-sem-r2c-16-samaria-cai-04",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte 2 Reis 17:6 na ordem do texto.",
+      "prompt": "Monte 2 Reis 17:6 na ordem do texto.",
+      "cue": "Monte 2 Reis 17:6 na ordem do texto.",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "o rei da Assíria tomou Samaria"
+        },
+        {
+          "id": "b",
+          "text": "transportou Israel para a Assíria"
+        },
+        {
+          "id": "c",
+          "text": "os fez habitar em Halah, em Habor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Toma, deporta e faz habitar.",
+      "feedbackWrong": {
+        "default": "Comece pela tomada de Samaria."
+      },
+      "hint": "O que vem primeiro no nono ano?",
+      "learningObjective": "Seguir a ordem do verso.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-sem-r2c-16-samaria-cai-05",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em 2 Reis 17:3, complete: Oséias se tornou seu servo, pagando ___ a ele.",
+      "prompt": "Em 2 Reis 17:3, complete: Oséias se tornou seu servo, pagando ___ a ele.",
+      "cue": "Em 2 Reis 17:3, complete: Oséias se tornou seu servo, pagando ___ a ele.",
+      "verseRef": "2 Reis 17:3",
+      "passageText": "Contra ele subiu Salmanasar rei da Assíria; e Oséias se tornou seu servo, pagando tributo a ele.",
+      "template": "Contra ele subiu Salmanasar rei da Assíria; e Oséias se tornou seu servo, pagando ___ a ele.",
+      "options": [
+        {
+          "id": "a",
+          "text": "resgate"
+        },
+        {
+          "id": "b",
+          "text": "dízimo"
+        },
+        {
+          "id": "c",
+          "text": "tributo"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "pagando tributo a ele",
+      "feedbackCorrect": "Tributo.",
+      "feedbackWrong": {
+        "a": "Não é resgate.",
+        "b": "Não é dízimo."
+      },
+      "hint": "O que o servo pagava.",
+      "learningObjective": "Lembrar tributo.",
+      "evidence": [
+        "2 Reis 17:3"
+      ]
+    },
+    {
+      "id": "2reis-cap-sem-r2c-16-samaria-cai-06",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que 2 Reis 17:6 comunica que se liga a este contexto?",
+      "prompt": "O que 2 Reis 17:6 comunica que se liga a este contexto?",
+      "cue": "O que 2 Reis 17:6 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "passageA": {
+        "ref": "2 Reis 17:6",
+        "text": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois de muito aviso, a cidade cai e o povo vai para o exílio."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Queda e deportação"
+        },
+        {
+          "id": "b",
+          "text": "Retorno imediato"
+        },
+        {
+          "id": "c",
+          "text": "Vitória de Samaria"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Queda e exílio juntos.",
+      "feedbackWrong": {
+        "b": "Há deportação.",
+        "c": "Samaria é tomada."
+      },
+      "hint": "O que acontece a Israel?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-cam-r2c-16-samaria-cai-01",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em 2 Reis 17:4, o rei da Assíria encadeou Oséias porque ele pagava o tributo com fidelidade.",
+      "prompt": "Em 2 Reis 17:4, o rei da Assíria encadeou Oséias porque ele pagava o tributo com fidelidade.",
+      "cue": "Em 2 Reis 17:4, o rei da Assíria encadeou Oséias porque ele pagava o tributo com fidelidade.",
+      "verseRef": "2 Reis 17:4",
+      "passageText": "O rei da Assíria descobriu que Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou e o lançou em um cárcere.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou",
+      "feedbackCorrect": "O Por isso liga à conspiração e à falta de tributo.",
+      "feedbackWrong": {
+        "true": "Leia: não pagava; por isso foi encadeado."
+      },
+      "hint": "Olhe a causa do cárcere.",
+      "learningObjective": "Ver a causa do cárcere.",
+      "evidence": [
+        "2 Reis 17:4"
+      ]
+    },
+    {
+      "id": "2reis-cap-cam-r2c-16-samaria-cai-02",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em 2 Reis 17:4, toque o marcador de resultado.",
+      "prompt": "Em 2 Reis 17:4, toque o marcador de resultado.",
+      "cue": "Em 2 Reis 17:4, toque o marcador de resultado.",
+      "verseRef": "2 Reis 17:4",
+      "passageText": "O rei da Assíria descobriu que Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou e o lançou em um cárcere.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso"
+        },
+        {
+          "id": "b",
+          "text": "anualmente"
+        },
+        {
+          "id": "c",
+          "text": "pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Por isso, o rei da Assíria o encadeou e o lançou em um cárcere",
+      "feedbackCorrect": "Por isso marca o resultado.",
+      "feedbackWrong": {
+        "b": "Anualmente descreve o costume.",
+        "c": "Pois explica a conspiração."
+      },
+      "hint": "Procure a consequência.",
+      "learningObjective": "Tocar Por isso.",
+      "evidence": [
+        "2 Reis 17:4"
+      ]
+    },
+    {
+      "id": "2reis-cap-cam-r2c-16-samaria-cai-03",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação 2 Reis 17:5 faz entre a subida da Assíria e Samaria?",
+      "prompt": "Que relação 2 Reis 17:5 faz entre a subida da Assíria e Samaria?",
+      "cue": "Que relação 2 Reis 17:5 faz entre a subida da Assíria e Samaria?",
+      "verseRef": "2 Reis 17:5",
+      "passageText": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Samaria cerca a Assíria por três anos"
+        },
+        {
+          "id": "b",
+          "text": "A Assíria sobe só para negociar paz"
+        },
+        {
+          "id": "c",
+          "text": "Porque sobe à terra, Samaria é sitiada três anos"
+        },
+        {
+          "id": "d",
+          "text": "O cerco termina no mesmo dia"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos",
+      "feedbackCorrect": "O Porque liga a subida ao cerco.",
+      "feedbackWrong": {
+        "a": "A Assíria cerca Samaria.",
+        "b": "Há sítio, não só paz.",
+        "d": "São três anos."
+      },
+      "hint": "Leia o Porque.",
+      "learningObjective": "Compreender a causa do cerco.",
+      "evidence": [
+        "2 Reis 17:5"
+      ]
+    },
+    {
+      "id": "2reis-cap-cam-r2c-16-samaria-cai-04",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos do trecho.",
+      "prompt": "Ordene os movimentos do trecho.",
+      "cue": "Ordene os movimentos do trecho.",
+      "verseRef": "2 Reis 17:3–4",
+      "passageText": "Contra ele subiu Salmanasar rei da Assíria; e Oséias se tornou seu servo, pagando tributo a ele. O rei da Assíria descobriu que Oséias havia conspirado, pois enviara mensageiros a Sô, rei do Egito, e não pagava tributo ao rei da Assíria como costumava fazer anualmente. Por isso, o rei da Assíria o encadeou e o lançou em um cárcere.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oséias sobe e faz o mau"
+        },
+        {
+          "id": "b",
+          "text": "Servo da Assíria e conspiração com o Egito"
+        },
+        {
+          "id": "c",
+          "text": "Queda e deportação para a Assíria"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Oséias se tornou seu servo, pagando tributo a ele",
+      "feedbackCorrect": "Reinado, conspiração e queda.",
+      "feedbackWrong": {
+        "default": "Comece pelo reinado de Oséias."
+      },
+      "hint": "O que abre o capítulo?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Reis 17:1",
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-cam-r2c-16-samaria-cai-05",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em 2 Reis 17:5, complete: ___ o rei da Assíria subiu a toda a terra.",
+      "prompt": "Em 2 Reis 17:5, complete: ___ o rei da Assíria subiu a toda a terra.",
+      "cue": "Em 2 Reis 17:5, complete: ___ o rei da Assíria subiu a toda a terra.",
+      "verseRef": "2 Reis 17:5",
+      "passageText": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos.",
+      "template": "___ o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Porque"
+        },
+        {
+          "id": "c",
+          "text": "Porém"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Porque o rei da Assíria subiu a toda a terra",
+      "feedbackCorrect": "Porque.",
+      "feedbackWrong": {
+        "a": "Não é Então.",
+        "c": "Não é Porém."
+      },
+      "hint": "Palavra que abre o verso.",
+      "learningObjective": "Lembrar Porque.",
+      "evidence": [
+        "2 Reis 17:5"
+      ]
+    },
+    {
+      "id": "2reis-cap-cam-r2c-16-samaria-cai-06",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga 2 Reis 17:6 a Deuteronômio 28:36?",
+      "prompt": "O que liga 2 Reis 17:6 a Deuteronômio 28:36?",
+      "cue": "O que liga 2 Reis 17:6 a Deuteronômio 28:36?",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "passageA": {
+        "ref": "2 Reis 17:6",
+        "text": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos."
+      },
+      "passageB": {
+        "ref": "Deuteronômio 28:36",
+        "text": "O Senhor te levará e o rei que tiveres escolhido, a uma nação que não conheceste, nem tu nem teus pais; e ali servirás a outros deuses, feitos de madeira e de pedra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa de trono eterno"
+        },
+        {
+          "id": "b",
+          "text": "Aviso de exílio ao rei"
+        },
+        {
+          "id": "c",
+          "text": "Paz sem deportação"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "transportou Israel para a Assíria",
+      "feedbackCorrect": "O exílio cumpre o aviso.",
+      "feedbackWrong": {
+        "a": "Há deportação.",
+        "c": "Há transporte para a Assíria."
+      },
+      "hint": "Compare o destino do povo.",
+      "learningObjective": "Ligar ao aviso da Lei.",
+      "evidence": [
+        "2 Reis 17:6",
+        "Deuteronômio 28:36"
+      ]
+    },
+    {
+      "id": "2reis-cap-pro-r2c-16-samaria-cai-01",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em 2 Reis 17:5–6, depois do cerco de três anos, a Assíria toma Samaria e transporta Israel.",
+      "prompt": "Em 2 Reis 17:5–6, depois do cerco de três anos, a Assíria toma Samaria e transporta Israel.",
+      "cue": "Em 2 Reis 17:5–6, depois do cerco de três anos, a Assíria toma Samaria e transporta Israel.",
+      "verseRef": "2 Reis 17:5–6",
+      "passageText": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos. No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Cerco, tomada e deportação seguem juntos.",
+      "feedbackWrong": {
+        "false": "Os versos unem o sítio e o transporte."
+      },
+      "hint": "Una a duração do cerco ao destino de Israel.",
+      "learningObjective": "Sustentar a leitura da queda.",
+      "evidence": [
+        "2 Reis 17:5",
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-pro-r2c-16-samaria-cai-02",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em 2 Reis 17:6, toque o que sustenta o fim do povo na terra.",
+      "prompt": "Em 2 Reis 17:6, toque o que sustenta o fim do povo na terra.",
+      "cue": "Em 2 Reis 17:6, toque o que sustenta o fim do povo na terra.",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "cidades"
+        },
+        {
+          "id": "b",
+          "text": "nono"
+        },
+        {
+          "id": "c",
+          "text": "transportou"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "transportou Israel para a Assíria",
+      "feedbackCorrect": "Israel é transportado.",
+      "feedbackWrong": {
+        "a": "Cidades são o destino.",
+        "b": "Nono marca o ano."
+      },
+      "hint": "O que a Assíria faz a Israel?",
+      "learningObjective": "Tocar a deportação.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-pro-r2c-16-samaria-cai-03",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Qual leitura melhor une o reinado de Oséias e a queda de Samaria?",
+      "prompt": "Qual leitura melhor une o reinado de Oséias e a queda de Samaria?",
+      "cue": "Qual leitura melhor une o reinado de Oséias e a queda de Samaria?",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo permanece em Samaria após a tomada"
+        },
+        {
+          "id": "b",
+          "text": "Oséias restaura Israel e evita a Assíria"
+        },
+        {
+          "id": "c",
+          "text": "Depois de muito aviso, a cidade cai e o povo vai ao exílio"
+        },
+        {
+          "id": "d",
+          "text": "Samaria cai sem qualquer resistência ou cerco"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Queda e exílio após o processo.",
+      "feedbackWrong": {
+        "a": "Há deportação.",
+        "b": "Ele vira servo e cai.",
+        "d": "Há cerco de três anos."
+      },
+      "hint": "Una cerco e transporte.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Reis 17:5",
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-pro-r2c-16-samaria-cai-04",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene o encadeamento do fim do norte.",
+      "prompt": "Ordene o encadeamento do fim do norte.",
+      "cue": "Ordene o encadeamento do fim do norte.",
+      "verseRef": "2 Reis 17:5–6",
+      "passageText": "Porque o rei da Assíria subiu a toda a terra, alcançou Samaria e a sitiou por três anos. No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conspiração e cárcere de Oséias"
+        },
+        {
+          "id": "b",
+          "text": "Cerco de três anos a Samaria"
+        },
+        {
+          "id": "c",
+          "text": "Deportação de Israel à Assíria"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "Cárcere, cerco e exílio.",
+      "feedbackWrong": {
+        "default": "Comece pela conspiração."
+      },
+      "hint": "O que vem antes do cerco?",
+      "learningObjective": "Encadear o fim do norte.",
+      "evidence": [
+        "2 Reis 17:4",
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-pro-r2c-16-samaria-cai-05",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em 2 Reis 17:6, complete: transportou Israel para a ___.",
+      "prompt": "Em 2 Reis 17:6, complete: transportou Israel para a ___.",
+      "cue": "Em 2 Reis 17:6, complete: transportou Israel para a ___.",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "template": "No nono ano de Oséias, o rei da ___ tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Egito"
+        },
+        {
+          "id": "b",
+          "text": "Assíria"
+        },
+        {
+          "id": "c",
+          "text": "Babilônia"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "transportou Israel para a Assíria",
+      "feedbackCorrect": "O texto diz que Israel foi transportado para a Assíria.",
+      "feedbackWrong": {
+        "a": "O Egito aparece noutro ponto do capítulo, não neste destino.",
+        "c": "A Babilônia não é o destino deste versículo."
+      },
+      "hint": "Veja para onde o rei leva Israel.",
+      "learningObjective": "Lembrar Assíria.",
+      "evidence": [
+        "2 Reis 17:6"
+      ]
+    },
+    {
+      "id": "2reis-cap-pro-r2c-16-samaria-cai-06",
+      "trail": "2reis-cap",
+      "section": "r2c-16-samaria-cai",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga 2 Reis 17:6 a Oséias 13:16?",
+      "prompt": "O que liga 2 Reis 17:6 a Oséias 13:16?",
+      "cue": "O que liga 2 Reis 17:6 a Oséias 13:16?",
+      "verseRef": "2 Reis 17:6",
+      "passageText": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos.",
+      "passageA": {
+        "ref": "2 Reis 17:6",
+        "text": "No nono ano de Oséias, o rei da Assíria tomou Samaria e transportou Israel para a Assíria; e os fez habitar em Halah, em Habor, junto ao rio Gozã e nas cidades dos medos."
+      },
+      "passageB": {
+        "ref": "Oséias 13:16",
+        "text": "Samaria suportará sua culpa, pois se rebelou contra o seu Deus; cairá à espada, seus filhos serão despedaçados e as mulheres grávidas serão abertas pelo meio."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa de restauração imediata"
+        },
+        {
+          "id": "b",
+          "text": "Juízo anunciado a Samaria"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com a Assíria"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "tomou Samaria e transportou Israel para a Assíria",
+      "feedbackCorrect": "A queda ecoa o juízo anunciado.",
+      "feedbackWrong": {
+        "a": "Há juízo, não restauração aqui.",
+        "c": "Há tomada, não aliança salvífica."
+      },
+      "hint": "Compare o destino de Samaria.",
+      "learningObjective": "Ligar ao juízo em Oséias.",
+      "evidence": [
+        "2 Reis 17:6",
+        "Oséias 13:16"
+      ]
+    }
+  ]
+}

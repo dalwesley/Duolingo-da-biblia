@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Hebreus 4:1–6",
+    "passages": [
+      {
+        "ref": "Hebreus 4:1–6"
+      },
+      {
+        "ref": "Hebreus 4:7–10"
+      }
+    ],
+    "context": "Depois de lembrar o deserto, a carta volta à promessa. A geração do êxodo ouviu a boa nova e não entrou no descanso. O texto pergunta o que isso significa para quem ouve a mesma palavra agora.",
+    "keyword": "Descanso",
+    "keywordGloss": "O descanso de Deus é a promessa aberta ao povo dele: entra quem crê e obedece.",
+    "focusQuestion": "No que você ainda tenta se sustentar por conta própria em vez de entrar no descanso de Deus?",
+    "reflectionPrompts": [
+      "Promessa ainda aberta",
+      "Fé que acompanha a palavra",
+      "Descansar das obras"
+    ],
+    "facts": [
+      {
+        "text": "Foi deixada a promessa de entrar no descanso de Deus.",
+        "evidenceRef": "Hebreus 4:1",
+        "evidenceSpan": "a promessa de entrar no descanso de Deus"
+      },
+      {
+        "text": "A palavra ouvida não aproveitou por faltar fé.",
+        "evidenceRef": "Hebreus 4:2",
+        "evidenceSpan": "não foi acompanhada de fé"
+      },
+      {
+        "text": "Os que creem entram no descanso.",
+        "evidenceRef": "Hebreus 4:3",
+        "evidenceSpan": "nós, os que cremos, entramos no descanso"
+      },
+      {
+        "text": "Deus descansou de todas as suas obras no sétimo dia.",
+        "evidenceRef": "Hebreus 4:4",
+        "evidenceSpan": "E Deus descansou de todas as suas obras que fizera"
+      },
+      {
+        "text": "Os primeiros não entraram por causa da desobediência.",
+        "evidenceRef": "Hebreus 4:6",
+        "evidenceSpan": "não conseguiram entrar por causa da desobediência"
+      },
+      {
+        "text": "Ainda há um descanso reservado para o povo de Deus.",
+        "evidenceRef": "Hebreus 4:9",
+        "evidenceSpan": "ainda há um descanso reservado para o povo de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "descanso",
+        "gloss": "A promessa de Deus ao seu povo: parar de sustentar-se por conta própria."
+      },
+      {
+        "term": "promessa",
+        "gloss": "O que Deus deixou aberto a quem ouve a sua palavra."
+      },
+      {
+        "term": "desobediência",
+        "gloss": "O que impediu os primeiros de entrar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A promessa aberta e o risco de ficar para trás",
+        "evidenceRef": "Hebreus 4:1–2"
+      },
+      {
+        "label": "Quem crê entra; o descanso nasce de obras concluídas",
+        "evidenceRef": "Hebreus 4:3–5"
+      },
+      {
+        "label": "Os primeiros não entraram por desobediência",
+        "evidenceRef": "Hebreus 4:6"
+      },
+      {
+        "label": "Um novo dia e um descanso reservado ao povo",
+        "evidenceRef": "Hebreus 4:7–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A palavra não aproveitou porque não foi acompanhada de fé.",
+        "marker": "pois",
+        "evidenceRef": "Hebreus 4:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Os primeiros ouvintes não entraram por causa da desobediência.",
+        "marker": "por causa",
+        "evidenceRef": "Hebreus 4:6"
+      },
+      {
+        "kind": "causa",
+        "text": "Como Josué não deu o descanso final, Deus fala de outro dia.",
+        "marker": "Pois",
+        "evidenceRef": "Hebreus 4:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 95:11",
+        "bridge": "O juramento sobre o descanso"
+      },
+      {
+        "ref": "Gênesis 2:2",
+        "bridge": "O descanso de Deus na criação"
+      },
+      {
+        "ref": "Mateus 11:28",
+        "bridge": "Descanso oferecido a quem vem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O descanso prometido foi só a terra que Josué conquistou.",
+        "why": "Se Josué tivesse dado o descanso, Deus não falaria depois de outro dia (4:8)."
+      },
+      {
+        "text": "Ouvir a mensagem já basta, mesmo sem fé.",
+        "why": "A palavra não aproveitou porque não foi acompanhada de fé em quem a escutou (4:2)."
+      },
+      {
+        "text": "O descanso é um prêmio por obras bem feitas.",
+        "why": "Entra no descanso quem descansa de suas obras, como Deus das dele (4:10)."
+      }
+    ],
+    "centralInsight": "Há um descanso para o povo de Deus: quem entra descansa das suas obras.",
+    "anchorQuestion": "Segundo Hebreus 4:9, o que ainda há reservado para o povo de Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Hebreus 4:1, o texto diz que a promessa de entrar no descanso já foi retirada.",
+      "verseRef": "Hebreus 4:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "tendo-nos sido deixada a promessa de entrar no descanso de Deus",
+      "feedbackCorrect": "A promessa foi deixada, e por isso o texto manda temer ficar para trás.",
+      "feedbackWrong": {
+        "true": "O versículo diz que a promessa foi deixada, não retirada."
+      },
+      "hint": "Veja o que o texto diz sobre a promessa.",
+      "learningObjective": "Observar que a promessa do descanso continua aberta.",
+      "evidence": [
+        "Hebreus 4:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Hebreus 4:6, toque o que impediu os primeiros de entrar.",
+      "verseRef": "Hebreus 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "desobediência"
+        },
+        {
+          "id": "b",
+          "text": "boas-novas"
+        },
+        {
+          "id": "c",
+          "text": "entrem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa da desobediência",
+      "feedbackCorrect": "Os primeiros ouviram as boas-novas, mas não entraram por desobediência.",
+      "feedbackWrong": {
+        "b": "As boas-novas foram anunciadas a eles, mas não impediram a entrada.",
+        "c": "Entrem fala de quem ainda pode entrar, não do que impediu."
+      },
+      "hint": "Veja o que vem depois de por causa da.",
+      "learningObjective": "Identificar o que impediu a entrada dos primeiros.",
+      "evidence": [
+        "Hebreus 4:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Hebreus 4:3, quem entra no descanso?",
+      "verseRef": "Hebreus 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os que creem"
+        },
+        {
+          "id": "b",
+          "text": "Os que cumprem toda a lei"
+        },
+        {
+          "id": "c",
+          "text": "Os que nasceram em Israel"
+        },
+        {
+          "id": "d",
+          "text": "Os que viram os milagres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nós, os que cremos, entramos no descanso",
+      "feedbackCorrect": "O texto diz que entram no descanso os que creem.",
+      "feedbackWrong": {
+        "b": "O texto não fala de cumprir toda a lei, mas de crer.",
+        "c": "Não é o nascimento que abre a porta, e sim a fé.",
+        "d": "Ver milagres não bastou à geração do deserto; crer é que conta."
+      },
+      "hint": "Leia o começo do versículo.",
+      "learningObjective": "Observar quem entra no descanso.",
+      "evidence": [
+        "Hebreus 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Hebreus 4:10 na ordem do texto.",
+      "verseRef": "Hebreus 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois aquele que entrou no descanso de Deus"
+        },
+        {
+          "id": "b",
+          "text": "também ele mesmo descansou de suas obras"
+        },
+        {
+          "id": "c",
+          "text": "como Deus descansou das Suas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "também ele mesmo descansou de suas obras",
+      "feedbackCorrect": "Primeiro quem entrou, depois o que ele descansou, e por fim a comparação com Deus.",
+      "feedbackWrong": {
+        "default": "O versículo começa com quem entrou; a comparação com Deus fecha."
+      },
+      "hint": "O versículo começa por quem entrou.",
+      "learningObjective": "Reconhecer a sequência de Hebreus 4:10.",
+      "evidence": [
+        "Hebreus 4:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Hebreus 4:4, a respeito de que dia está escrito que Deus descansou?",
+      "verseRef": "Hebreus 4:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "sétimo"
+        },
+        {
+          "id": "b",
+          "text": "sexto"
+        },
+        {
+          "id": "c",
+          "text": "primeiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a respeito do sétimo dia",
+      "feedbackCorrect": "O texto cita o sétimo dia: Deus descansou de todas as suas obras.",
+      "feedbackWrong": {
+        "b": "O descanso não é do sexto dia; o texto fala do sétimo.",
+        "c": "O primeiro dia não é o do descanso; o texto cita o sétimo."
+      },
+      "hint": "Pense no último dia da semana da criação.",
+      "learningObjective": "Lembrar o dia do descanso de Deus.",
+      "evidence": [
+        "Hebreus 4:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Hebreus 4:9 comunica que se liga a este contexto?",
+      "verseRef": "Hebreus 4:9",
+      "passageA": {
+        "ref": "Hebreus 4:9",
+        "text": "ainda há um descanso reservado para o povo de Deus"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A promessa de entrar no descanso ainda permanece; há risco de falhar."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O descanso ainda está reservado"
+        },
+        {
+          "id": "b",
+          "text": "O descanso foi perdido"
+        },
+        {
+          "id": "c",
+          "text": "O descanso é só para Josué"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda há um descanso reservado para o povo de Deus",
+      "feedbackCorrect": "A promessa permanece: ainda há um descanso reservado ao povo de Deus.",
+      "feedbackWrong": {
+        "b": "O texto diz que ainda há descanso, não que foi perdido.",
+        "c": "O descanso é para o povo de Deus, não só para Josué."
+      },
+      "hint": "Veja o que o texto diz sobre o descanso agora.",
+      "learningObjective": "Ligar o versículo à promessa que permanece.",
+      "evidence": [
+        "Hebreus 4:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Hebreus 4:2, a palavra ouvida não aproveitou aos primeiros ouvintes porque faltou fé neles.",
+      "verseRef": "Hebreus 4:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "não lhes aproveitou, pois não foi acompanhada de fé",
+      "feedbackCorrect": "O pois liga os dois fatos: não aproveitou porque não veio com fé.",
+      "feedbackWrong": {
+        "false": "O pois dá a causa: a palavra não aproveitou porque faltou fé."
+      },
+      "hint": "Repare na palavra pois no meio da frase.",
+      "learningObjective": "Compreender a causa de a palavra não aproveitar.",
+      "evidence": [
+        "Hebreus 4:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Hebreus 4:2, toque a palavra que marca o contraste entre ouvir e aproveitar.",
+      "verseRef": "Hebreus 4:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "entretanto"
+        },
+        {
+          "id": "b",
+          "text": "assim"
+        },
+        {
+          "id": "c",
+          "text": "pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entretanto, a palavra que ouviram",
+      "feedbackCorrect": "Entretanto vira a frase: a boa nova foi anunciada, mas não aproveitou.",
+      "feedbackWrong": {
+        "b": "Assim compara a eles com a nós, não marca contraste.",
+        "c": "Pois dá a causa, não o contraste."
+      },
+      "hint": "Procure a palavra que vem logo depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Hebreus 4:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Hebreus 4:6–7 mostra que o descanso ainda está aberto?",
+      "verseRef": "Hebreus 4:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus marca novamente um dia, muito depois dos primeiros"
+        },
+        {
+          "id": "b",
+          "text": "Os primeiros entraram e ninguém mais precisa entrar"
+        },
+        {
+          "id": "c",
+          "text": "Só quem desobedeceu pode receber o descanso depois"
+        },
+        {
+          "id": "d",
+          "text": "O descanso foi retirado e não será oferecido outra vez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Determina novamente um certo dia, Hoje",
+      "feedbackCorrect": "Mesmo depois dos que falharam, Deus fixa de novo um dia: Hoje.",
+      "feedbackWrong": {
+        "b": "O texto diz que os primeiros não conseguiram entrar.",
+        "c": "A desobediência impediu a entrada, não a garante depois.",
+        "d": "Deus determina novamente um dia, o que mantém o descanso aberto."
+      },
+      "hint": "Veja o que Deus faz de novo, muito tempo depois.",
+      "learningObjective": "Compreender como o descanso continua oferecido.",
+      "evidence": [
+        "Hebreus 4:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Hebreus 4:9–10.",
+      "verseRef": "Hebreus 4:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ainda há descanso reservado ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Quem entra descansa das suas obras"
+        },
+        {
+          "id": "c",
+          "text": "O modelo é o descanso do próprio Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ainda há um descanso reservado para o povo de Deus",
+      "feedbackCorrect": "Primeiro a promessa aberta, depois quem entra e por fim o modelo de Deus.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa aberta; o modelo de Deus fecha o trecho."
+      },
+      "hint": "Pense: o que resta, quem entra, qual é o modelo.",
+      "learningObjective": "Ordenar os movimentos do trecho.",
+      "evidence": [
+        "Hebreus 4:9–10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Hebreus 4:6, que verbo mostra que o descanso ainda está aberto para alguns?",
+      "verseRef": "Hebreus 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "resta"
+        },
+        {
+          "id": "b",
+          "text": "falta"
+        },
+        {
+          "id": "c",
+          "text": "basta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda resta que alguns entrem",
+      "feedbackCorrect": "O resta mostra que, apesar da falha dos primeiros, a entrada continua aberta.",
+      "feedbackWrong": {
+        "b": "Falta daria outra ideia; o texto afirma que resta a entrada.",
+        "c": "Basta não aparece; o verbo é resta."
+      },
+      "hint": "Procure o verbo logo depois de ainda.",
+      "learningObjective": "Lembrar a palavra que mantém a promessa aberta.",
+      "evidence": [
+        "Hebreus 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Hebreus 4:4 a Gênesis 2:2?",
+      "verseRef": "Hebreus 4:4",
+      "passageA": {
+        "ref": "Hebreus 4:4",
+        "text": "E Deus descansou de todas as suas obras que fizera"
+      },
+      "passageB": {
+        "ref": "Gênesis 2:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O descanso de Deus na criação"
+        },
+        {
+          "id": "b",
+          "text": "A criação de novos céus"
+        },
+        {
+          "id": "c",
+          "text": "O castigo no deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Deus descansou de todas as suas obras que fizera",
+      "feedbackCorrect": "Hebreus recorda o descanso de Deus ao fim da criação, em Gênesis.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos trata de novos céus, mas de descanso.",
+        "c": "O deserto é outro tema; a ponte é o descanso de Deus."
+      },
+      "hint": "Compare o que Deus faz no fim da criação.",
+      "learningObjective": "Ligar o descanso do sétimo dia ao argumento de Hebreus.",
+      "evidence": [
+        "Hebreus 4:4",
+        "Gênesis 2:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Hebreus 4:8 ensina que Josué deu ao povo o descanso final que Deus prometera.",
+      "verseRef": "Hebreus 4:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "se Josué lhes tivesse concedido descanso, não falaria, posteriormente, sobre outro dia",
+      "feedbackCorrect": "Como Deus fala de outro dia depois, o descanso final não veio com Josué.",
+      "feedbackWrong": {
+        "true": "Se Josué tivesse dado esse descanso, Deus não falaria depois de outro dia."
+      },
+      "hint": "Veja o que o texto conclui por falar de outro dia.",
+      "learningObjective": "Rejeitar a leitura de que Josué cumpriu o descanso final.",
+      "evidence": [
+        "Hebreus 4:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Hebreus 4:10, toque o trecho que sustenta que entrar no descanso é parar de se apoiar nas próprias obras.",
+      "verseRef": "Hebreus 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "de suas obras"
+        },
+        {
+          "id": "b",
+          "text": "aquele que entrou"
+        },
+        {
+          "id": "c",
+          "text": "das Suas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "descansou de suas obras",
+      "feedbackCorrect": "Quem entra no descanso descansa de suas obras, como Deus das dele.",
+      "feedbackWrong": {
+        "b": "Aquele que entrou diz quem descansa, não do que descansa.",
+        "c": "Das Suas são as obras de Deus; o trecho sobre quem entra é outro."
+      },
+      "hint": "Procure do que quem entra descansa.",
+      "learningObjective": "Sustentar com o texto o sentido do descanso.",
+      "evidence": [
+        "Hebreus 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Hebreus 4:9–10 sustenta sobre o descanso do povo de Deus?",
+      "verseRef": "Hebreus 4:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Descansar das próprias obras, como Deus descansou das dele"
+        },
+        {
+          "id": "b",
+          "text": "Um prêmio por completar todas as obras da lei"
+        },
+        {
+          "id": "c",
+          "text": "Uma folga que dispensa a fé e a obediência"
+        },
+        {
+          "id": "d",
+          "text": "Algo já cumprido por inteiro com Josué"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "descansou de suas obras, como Deus descansou das Suas",
+      "feedbackCorrect": "O descanso é parar de se sustentar pelas próprias obras, seguindo o descanso de Deus.",
+      "feedbackWrong": {
+        "b": "O texto fala de descansar das obras, não de ganhá-lo completando-as.",
+        "c": "O caminho do descanso é a fé e a obediência, não a dispensa delas.",
+        "d": "O versículo 9 diz que ainda há descanso reservado ao povo de Deus."
+      },
+      "hint": "Compare o descanso do povo com o de Deus.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Hebreus 4:9–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do descanso nesta passagem.",
+      "verseRef": "Hebreus 4:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus descansa de suas obras no sétimo dia"
+        },
+        {
+          "id": "b",
+          "text": "A geração do deserto não entra por desobediência"
+        },
+        {
+          "id": "c",
+          "text": "Resta o descanso para quem crê e ouve hoje"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não conseguiram entrar por causa da desobediência",
+      "feedbackCorrect": "O descanso de Deus abre o fio; a falha do deserto vem depois; e o convite chega hoje.",
+      "feedbackWrong": {
+        "default": "Siga o fio: criação, deserto e o convite de hoje."
+      },
+      "hint": "Siga o fio: criação, falha, convite presente.",
+      "learningObjective": "Encadear o argumento do descanso.",
+      "evidence": [
+        "Hebreus 4:4",
+        "Hebreus 4:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Hebreus 4:9, o que o texto diz que ainda está reservado ao povo de Deus?",
+      "verseRef": "Hebreus 4:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "descanso"
+        },
+        {
+          "id": "b",
+          "text": "reino"
+        },
+        {
+          "id": "c",
+          "text": "livramento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda há um descanso reservado",
+      "feedbackCorrect": "A palavra descanso resume a promessa que continua aberta.",
+      "feedbackWrong": {
+        "b": "Reino não é o termo do texto; ele fala de descanso.",
+        "c": "Livramento não aparece aqui; o termo é descanso."
+      },
+      "hint": "Pense na palavra que dá nome a toda a cena.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": [
+        "Hebreus 4:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Hebreus 4:9 a Mateus 11:28?",
+      "verseRef": "Hebreus 4:9",
+      "passageA": {
+        "ref": "Hebreus 4:9",
+        "text": "ainda há um descanso reservado para o povo de Deus"
+      },
+      "passageB": {
+        "ref": "Mateus 11:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Descanso oferecido a quem vem"
+        },
+        {
+          "id": "b",
+          "text": "Descanso ganho por quem trabalha mais"
+        },
+        {
+          "id": "c",
+          "text": "Descanso só depois da morte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda há um descanso reservado para o povo de Deus",
+      "feedbackCorrect": "Nos dois textos, o descanso é oferecido por Deus aos que vêm a ele.",
+      "feedbackWrong": {
+        "b": "O descanso é oferecido, não ganho por mais trabalho.",
+        "c": "Os textos falam de descanso oferecido já, não só depois da morte."
+      },
+      "hint": "Compare quem oferece o descanso nos dois textos.",
+      "learningObjective": "Ligar o descanso de Hebreus ao convite de Jesus.",
+      "evidence": [
+        "Hebreus 4:9",
+        "Mateus 11:28"
+      ]
+    }
+  ]
+}

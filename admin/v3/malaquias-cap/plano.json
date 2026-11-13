@@ -1,0 +1,54 @@
+{
+  "slug": "malaquias-cap",
+  "prefix": "mlc",
+  "book": "Malaquias",
+  "chapters": 4,
+  "title": "Malaquias",
+  "description": "Malaquias capítulo a capítulo: o amor do Senhor e o chamado a voltar a ele.",
+  "icon": "📜",
+  "color": "#5A9E8E",
+  "order": 46,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": ["malaquias", "periodo-intertestamentario"],
+  "modules": [
+    {
+      "title": "Voltai a mim · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Malaquias 1:6–14",
+          "title": "Ofertas desprezadas",
+          "intro": "O Senhor pergunta onde está a honra devida ao Pai e ao Senhor.",
+          "insight": "Desprezar a mesa do Senhor com ofertas ruins é desprezar o seu nome.",
+          "objective": "Honrar o nome do Senhor"
+        },
+        {
+          "ref": "Malaquias 2:4–12",
+          "title": "A aliança com Levi",
+          "intro": "Os sacerdotes quebraram a aliança; seus lábios deveriam guardar o conhecimento.",
+          "insight": "O sacerdote é mensageiro do Senhor: sem fidelidade, o povo tropeça.",
+          "objective": "Guardar e ensinar a aliança"
+        },
+        {
+          "ref": "Malaquias 3:6–12",
+          "title": "Voltai a mim",
+          "intro": "O Senhor convida o povo a voltar e fala dos dízimos e da bênção das janelas do céu.",
+          "insight": "Voltar ao Senhor inclui fidelidade no que é dele; ele promete abrir as janelas do céu.",
+          "objective": "Voltar e ser fiel"
+        },
+        {
+          "ref": "Malaquias 4:1–6",
+          "title": "O sol da justiça",
+          "intro": "O dia vem como fornalha para os soberbos e como sol da justiça para os que temem.",
+          "insight": "Para quem teme o nome do Senhor, nasce o sol da justiça com cura nas suas asas.",
+          "objective": "Temer o nome do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Voltai a mim",
+        "intro": "Revise as ofertas, a aliança, o retorno e o sol da justiça.",
+        "insight": "O Senhor ama o seu povo e chama a voltar com fidelidade"
+      }
+    }
+  ]
+}

@@ -1,0 +1,470 @@
+{
+  "study": {
+    "passageRef": "Atos 8:30–35",
+    "passages": [
+      { "ref": "Atos 8:26–31" },
+      { "ref": "Atos 8:32–35" }
+    ],
+    "context": "Depois da perseguição em Jerusalém, Filipe anuncia o evangelho. No caminho deserto de Gaza, o Espírito o leva a um oficial etíope que lê Isaías sem entender.",
+    "keyword": "explicar",
+    "keywordGloss": "Abrir a Escritura para que o outro veja de quem ela fala e chegue a Jesus.",
+    "focusQuestion": "Quando alguém busca entender a Bíblia, você se aproxima para ajudar ou deixa a pessoa sozinha?",
+    "reflectionPrompts": [
+      "A pergunta na estrada",
+      "Preciso de quem explique",
+      "Começando por aquela Escritura"
+    ],
+    "facts": [
+      {
+        "text": "O anjo do Senhor mandou Filipe ir pelo caminho de Jerusalém a Gaza.",
+        "evidenceRef": "Atos 8:26",
+        "evidenceSpan": "Levanta-te e vai para o sul, pelo caminho que desce de Jerusalém a Gaza"
+      },
+      {
+        "text": "Um eunuco etíope, alto oficial de Candace, vinha de Jerusalém e lia Isaías.",
+        "evidenceRef": "Atos 8:27",
+        "evidenceSpan": "um homem etíope, eunuco, alto oficial de Candace"
+      },
+      {
+        "text": "O Espírito mandou Filipe aproximar-se da carruagem.",
+        "evidenceRef": "Atos 8:29",
+        "evidenceSpan": "Aproxima-te dessa carruagem e acompanha-a"
+      },
+      {
+        "text": "O eunuco disse que não podia entender sem alguém explicar.",
+        "evidenceRef": "Atos 8:31",
+        "evidenceSpan": "Como poderei entender, se ninguém me explicar?"
+      },
+      {
+        "text": "Ele lia sobre alguém levado como ovelha ao matadouro.",
+        "evidenceRef": "Atos 8:32",
+        "evidenceSpan": "Foi levado como uma ovelha ao matadouro"
+      },
+      {
+        "text": "Filipe, começando por aquela Escritura, anunciou Jesus.",
+        "evidenceRef": "Atos 8:35",
+        "evidenceSpan": "começando por aquela Escritura, anunciou-lhe a Jesus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Compreendes",
+        "gloss": "A pergunta de Filipe: ler não basta; é preciso entender o sentido."
+      },
+      {
+        "term": "explicar",
+        "gloss": "O que o eunuco pediu: alguém que abra o texto com ele."
+      },
+      {
+        "term": "anunciou-lhe",
+        "gloss": "Filipe não só explicou o verso: anunciou Jesus a partir dele."
+      }
+    ],
+    "structure": [
+      { "label": "Filipe é enviado ao caminho deserto", "evidenceRef": "Atos 8:26" },
+      { "label": "O eunuco lê Isaías na carruagem", "evidenceRef": "Atos 8:28" },
+      { "label": "Ele pede que Filipe explique o texto", "evidenceRef": "Atos 8:31" },
+      { "label": "Filipe anuncia Jesus a partir da Escritura", "evidenceRef": "Atos 8:35" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O eunuco não entende porque ninguém lhe explica.",
+        "marker": "se",
+        "evidenceRef": "Atos 8:31"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da pergunta sobre o profeta, Filipe abre a boca e anuncia Jesus.",
+        "marker": "Então",
+        "evidenceRef": "Atos 8:35"
+      },
+      {
+        "kind": "propósito",
+        "text": "O Espírito manda Filipe aproximar-se para acompanhar a carruagem.",
+        "marker": "Aproxima-te",
+        "evidenceRef": "Atos 8:29"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 53:7", "bridge": "O cordeiro sem abrir a boca" },
+      { "ref": "Lucas 24:27", "bridge": "Escritura aponta para Jesus" },
+      { "ref": "Romanos 10:14", "bridge": "Crer precisa de quem pregue" }
+    ],
+    "misreadings": [
+      {
+        "text": "Bastava o eunuco ler sozinho: a Escritura se explica sem ajuda.",
+        "why": "Ele mesmo diz que não pode entender se ninguém explicar, e convida Filipe."
+      },
+      {
+        "text": "Filipe mudou de assunto e falou de Jesus sem usar o texto que o eunuco lia.",
+        "why": "O texto diz que ele começou por aquela Escritura e anunciou Jesus."
+      },
+      {
+        "text": "O trecho de Isaías falava claramente do próprio Isaías, e o eunuco já sabia disso.",
+        "why": "Ele pergunta se o profeta fala de si ou de outro; ainda não sabia a quem se referia."
+      }
+    ],
+    "centralInsight": "Começando por aquela Escritura, Filipe anuncia Jesus a quem procurava entender.",
+    "anchorQuestion": "Por onde Filipe começou quando anunciou Jesus ao eunuco?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 8:28, o eunuco etíope lia o profeta Isaías assentado na carruagem.",
+      "verseRef": "Atos 8:28",
+      "correctOptionId": "true",
+      "evidenceSpan": "assentado na sua carruagem, lia o profeta Isaías",
+      "feedbackCorrect": "Ele voltava da adoração e lia Isaías no caminho.",
+      "feedbackWrong": { "false": "Releia Atos 8:28: ele lia o profeta Isaías na carruagem." },
+      "hint": "Veja o que ele fazia na carruagem.",
+      "learningObjective": "Observar que o eunuco lia Isaías.",
+      "evidence": ["Atos 8:28"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 8:27, toque quem era a rainha dos etíopes.",
+      "verseRef": "Atos 8:27",
+      "options": [
+        { "id": "a", "text": "Candace" },
+        { "id": "b", "text": "Jerusalém" },
+        { "id": "c", "text": "tesouro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "alto oficial de Candace, rainha dos etíopes",
+      "feedbackCorrect": "Candace é a rainha; o eunuco era alto oficial dela.",
+      "feedbackWrong": {
+        "b": "Jerusalém é o lugar da adoração, não a rainha.",
+        "c": "Tesouro é o cargo dele, não o nome da rainha."
+      },
+      "hint": "Procure o nome próprio ligado a \"rainha\".",
+      "learningObjective": "Identificar Candace no texto.",
+      "evidence": ["Atos 8:27"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 8:30, o que Filipe perguntou ao eunuco?",
+      "verseRef": "Atos 8:30",
+      "options": [
+        { "id": "a", "text": "Se ele ia a Jerusalém para adorar" },
+        { "id": "b", "text": "Se compreendia o que estava lendo" },
+        { "id": "c", "text": "Se queria vender a carruagem" },
+        { "id": "d", "text": "Se conhecia o anjo do Senhor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Compreendes o que estás lendo?",
+      "feedbackCorrect": "Filipe começa pela compreensão: ler não é o mesmo que entender.",
+      "feedbackWrong": {
+        "a": "O eunuco já tinha ido adorar; a pergunta é sobre a leitura.",
+        "c": "O texto não fala de venda; fala de compreensão.",
+        "d": "Quem fala do anjo é a narrativa; Filipe pergunta sobre a leitura."
+      },
+      "hint": "Olhe a pergunta no fim do versículo.",
+      "learningObjective": "Observar a pergunta de Filipe.",
+      "evidence": ["Atos 8:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 8:35 na ordem do texto.",
+      "verseRef": "Atos 8:35",
+      "options": [
+        { "id": "a", "text": "Então, Filipe abriu a boca" },
+        { "id": "b", "text": "e, começando por aquela Escritura" },
+        { "id": "c", "text": "anunciou-lhe a Jesus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "começando por aquela Escritura, anunciou-lhe a Jesus",
+      "feedbackCorrect": "Ele abre a boca, parte da Escritura e anuncia Jesus.",
+      "feedbackWrong": { "default": "Comece por Filipe abrindo a boca; Jesus fecha o versículo." },
+      "hint": "O versículo começa com \"Então\".",
+      "learningObjective": "Reconhecer a sequência de Atos 8:35.",
+      "evidence": ["Atos 8:35"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 8:26, para onde o anjo manda Filipe ir?",
+      "verseRef": "Atos 8:26",
+      "options": [
+        { "id": "a", "text": "norte" },
+        { "id": "b", "text": "sul" },
+        { "id": "c", "text": "leste" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Levanta-te e vai para o sul",
+      "feedbackCorrect": "O anjo aponta o caminho deserto para o sul, rumo a Gaza.",
+      "feedbackWrong": {
+        "a": "O texto diz sul, não norte.",
+        "c": "O texto diz sul, não leste."
+      },
+      "hint": "Veja a direção na ordem do anjo.",
+      "learningObjective": "Lembrar a direção dada a Filipe.",
+      "evidence": ["Atos 8:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 8:31 comunica que se liga a este contexto?",
+      "verseRef": "Atos 8:31",
+      "passageA": { "ref": "Atos 8:31" },
+      "passageB": { "ref": "Contexto", "text": "Ler a Escritura não basta: o eunuco precisa de quem explique." },
+      "options": [
+        { "id": "a", "text": "A leitura basta sozinha" },
+        { "id": "b", "text": "Entender precisa de ajuda" },
+        { "id": "c", "text": "O eunuco já entendia tudo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Como poderei entender, se ninguém me explicar?",
+      "feedbackCorrect": "Ele admite: sem explicação, não consegue entender.",
+      "feedbackWrong": {
+        "a": "Ele mesmo diz que precisa de quem explique.",
+        "c": "Se já entendesse, não convidaria Filipe a subir."
+      },
+      "hint": "Leia a pergunta do eunuco.",
+      "learningObjective": "Ligar Atos 8:31 à necessidade de explicação.",
+      "evidence": ["Atos 8:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 8:31, o eunuco recusa a ajuda de Filipe e prefere continuar lendo sozinho.",
+      "verseRef": "Atos 8:31",
+      "correctOptionId": "false",
+      "evidenceSpan": "E convidou Filipe a subir e a se assentar ao seu lado",
+      "feedbackCorrect": "Ele admite precisar de explicação e convida Filipe a subir.",
+      "feedbackWrong": { "true": "Releia o fim de 8:31: ele convida Filipe a subir." },
+      "hint": "Veja o que ele faz depois de falar.",
+      "learningObjective": "Compreender a abertura do eunuco à ajuda.",
+      "evidence": ["Atos 8:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 8:35, toque a palavra que marca o passo seguinte da cena.",
+      "verseRef": "Atos 8:35",
+      "options": [
+        { "id": "a", "text": "Então" },
+        { "id": "b", "text": "boca" },
+        { "id": "c", "text": "Escritura" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, Filipe abriu a boca",
+      "feedbackCorrect": "\"Então\" liga a pergunta do eunuco à resposta de Filipe.",
+      "feedbackWrong": {
+        "b": "\"Boca\" descreve a ação; o marcador da sequência é outra palavra.",
+        "c": "\"Escritura\" é o ponto de partida; o marcador vem no início."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de sequência.",
+      "evidence": ["Atos 8:35"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Atos 8:35 se relaciona com a dúvida de Atos 8:34?",
+      "verseRef": "Atos 8:34–35",
+      "options": [
+        { "id": "a", "text": "Filipe muda de assunto e fala de política" },
+        { "id": "b", "text": "Filipe parte da Escritura e anuncia Jesus" },
+        { "id": "c", "text": "Filipe diz que o trecho fala só de Isaías" },
+        { "id": "d", "text": "Filipe manda o eunuco ler de novo em silêncio" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "começando por aquela Escritura, anunciou-lhe a Jesus",
+      "feedbackCorrect": "A dúvida sobre \"de quem fala\" encontra resposta em Jesus.",
+      "feedbackWrong": {
+        "a": "Ele começa pela Escritura, não por outro tema.",
+        "c": "O anúncio é Jesus, não uma resposta limitada a Isaías.",
+        "d": "Filipe abre a boca e anuncia; não deixa o eunuco sozinho."
+      },
+      "hint": "Veja por onde Filipe começa a falar.",
+      "learningObjective": "Relacionar a dúvida do eunuco à resposta de Filipe.",
+      "evidence": ["Atos 8:34–35"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o encontro em Atos 8:29–31?",
+      "verseRef": "Atos 8:29–30",
+      "options": [
+        { "id": "a", "text": "O Espírito manda Filipe aproximar-se" },
+        { "id": "b", "text": "Filipe corre e ouve a leitura de Isaías" },
+        { "id": "c", "text": "Filipe pergunta se o eunuco compreende" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Compreendes o que estás lendo?",
+      "feedbackCorrect": "Primeiro a ordem do Espírito, depois a corrida e a pergunta.",
+      "feedbackWrong": { "default": "Comece pela ordem do Espírito; a pergunta vem por último." },
+      "hint": "Quem fala primeiro neste movimento?",
+      "learningObjective": "Compreender a sequência do encontro.",
+      "evidence": ["Atos 8:29–30"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 8:31, o que o eunuco diz que precisa para entender?",
+      "verseRef": "Atos 8:31",
+      "options": [
+        { "id": "a", "text": "explicar" },
+        { "id": "b", "text": "traduzir" },
+        { "id": "c", "text": "copiar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se ninguém me explicar",
+      "feedbackCorrect": "Entender depende de alguém que explique o texto.",
+      "feedbackWrong": {
+        "b": "O texto fala de explicar, não de traduzir.",
+        "c": "O texto fala de explicar, não de copiar."
+      },
+      "hint": "Complete a frase: \"se ninguém me ___\".",
+      "learningObjective": "Lembrar a palavra que carrega a necessidade do eunuco.",
+      "evidence": ["Atos 8:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 8:32 a Isaías 53:7?",
+      "verseRef": "Atos 8:32",
+      "passageA": { "ref": "Atos 8:32" },
+      "passageB": { "ref": "Isaías 53:7" },
+      "options": [
+        { "id": "a", "text": "O cordeiro sem abrir a boca" },
+        { "id": "b", "text": "A vitória de um rei guerreiro" },
+        { "id": "c", "text": "A construção do templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como um cordeiro mudo diante do seu tosquiador",
+      "feedbackCorrect": "O trecho que o eunuco lia é o do Servo que não abre a boca.",
+      "feedbackWrong": {
+        "b": "A imagem é de ovelha e cordeiro, não de rei guerreiro.",
+        "c": "Os dois textos falam do Servo sofredor, não do templo."
+      },
+      "hint": "Compare a imagem do cordeiro nos dois textos.",
+      "learningObjective": "Relacionar Atos 8:32 a Isaías 53.",
+      "evidence": ["Atos 8:32", "Isaías 53:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Atos 8:34–35 sustenta que Filipe anuncia Jesus começando pela Escritura que o eunuco lia.",
+      "verseRef": "Atos 8:34–35",
+      "correctOptionId": "true",
+      "evidenceSpan": "começando por aquela Escritura, anunciou-lhe a Jesus",
+      "feedbackCorrect": "A pergunta \"de quem fala?\" recebe resposta em Jesus, a partir do texto.",
+      "feedbackWrong": { "false": "Releia 8:35: ele começa por aquela Escritura e anuncia Jesus." },
+      "hint": "Veja por onde Filipe começa em 8:35.",
+      "learningObjective": "Interpretar o anúncio a partir da Escritura.",
+      "evidence": ["Atos 8:34–35"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 8:35, toque o trecho que mostra a quem Filipe anuncia.",
+      "verseRef": "Atos 8:35",
+      "options": [
+        { "id": "a", "text": "abriu a boca" },
+        { "id": "b", "text": "a Jesus" },
+        { "id": "c", "text": "aquela Escritura" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "anunciou-lhe a Jesus",
+      "feedbackCorrect": "O ponto de chegada do anúncio é Jesus.",
+      "feedbackWrong": {
+        "a": "Abrir a boca é o gesto; o conteúdo do anúncio vem no fim.",
+        "c": "A Escritura é o ponto de partida, não o nome anunciado."
+      },
+      "hint": "Procure o nome no fim do versículo.",
+      "learningObjective": "Sustentar com o texto que o anúncio é Jesus.",
+      "evidence": ["Atos 8:35"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Atos 8:30–35 sustenta sobre a Escritura e Jesus?",
+      "verseRef": "Atos 8:35",
+      "options": [
+        { "id": "a", "text": "A Escritura se basta sem ninguém explicar" },
+        { "id": "b", "text": "Jesus é anunciado a partir da Escritura lida" },
+        { "id": "c", "text": "Filipe fala de Jesus sem usar o texto" },
+        { "id": "d", "text": "O trecho de Isaías fala só do próprio profeta" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "começando por aquela Escritura, anunciou-lhe a Jesus",
+      "feedbackCorrect": "Filipe parte do texto e leva o eunuco a Jesus.",
+      "feedbackWrong": {
+        "a": "O eunuco pede explicação; a leitura sozinha não bastou.",
+        "c": "Ele começa por aquela Escritura, não à parte dela.",
+        "d": "A dúvida do eunuco e o anúncio a Jesus mostram outro sentido."
+      },
+      "hint": "Compare a dúvida de 8:34 com o que Filipe faz.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Atos 8:35"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da Escritura até Jesus?",
+      "verseRef": "Atos 8:35",
+      "options": [
+        { "id": "a", "text": "O Servo é levado como ovelha ao matadouro" },
+        { "id": "b", "text": "Filipe anuncia Jesus a partir da Escritura" },
+        { "id": "c", "text": "Jesus explica as Escrituras a respeito de si" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "anunciou-lhe a Jesus",
+      "evidence": ["Atos 8:32", "Atos 8:35", "Lucas 24:27"],
+      "feedbackCorrect": "A profecia, o anúncio de Filipe e o padrão de Jesus se encontram.",
+      "feedbackWrong": { "default": "Siga: Isaías (At 8:32), Filipe (8:35) e Lucas 24:27." },
+      "hint": "Comece pelo texto que o eunuco lia.",
+      "learningObjective": "Ver o fio da Escritura até Jesus."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 8:30, que verbo Filipe usa ao perguntar sobre a leitura?",
+      "verseRef": "Atos 8:30",
+      "options": [
+        { "id": "a", "text": "Compreendes" },
+        { "id": "b", "text": "Decoras" },
+        { "id": "c", "text": "Copias" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Compreendes o que estás lendo?",
+      "feedbackCorrect": "A pergunta chave é compreender, não só ler.",
+      "feedbackWrong": {
+        "b": "Filipe não pergunta se ele decora; pergunta se compreende.",
+        "c": "Filipe não pergunta se ele copia; pergunta se compreende."
+      },
+      "hint": "É a primeira palavra da pergunta de Filipe.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": ["Atos 8:30"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 8:35 a Lucas 24:27?",
+      "verseRef": "Atos 8:35",
+      "passageA": { "ref": "Atos 8:35" },
+      "passageB": { "ref": "Lucas 24:27" },
+      "options": [
+        { "id": "a", "text": "Escritura aponta para Jesus" },
+        { "id": "b", "text": "A lei substitui o evangelho" },
+        { "id": "c", "text": "Os profetas falam só do passado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "começando por aquela Escritura, anunciou-lhe a Jesus",
+      "feedbackCorrect": "Nos dois textos, a Escritura é aberta para mostrar Jesus.",
+      "feedbackWrong": {
+        "b": "Filipe e Jesus usam a Escritura para anunciar, não para substituir.",
+        "c": "Os dois textos mostram a Escritura apontando para Cristo."
+      },
+      "hint": "Compare por onde cada um começa a explicar.",
+      "learningObjective": "Ligar o método de Filipe ao de Jesus.",
+      "evidence": ["Atos 8:35", "Lucas 24:27"]
+    }
+  ]
+}

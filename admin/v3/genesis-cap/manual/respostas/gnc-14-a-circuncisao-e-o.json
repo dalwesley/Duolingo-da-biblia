@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 17:12–17",
+    "passages": [
+      {
+        "ref": "Gênesis 17:12–17"
+      },
+      {
+        "ref": "Gênesis 17:18"
+      }
+    ],
+    "context": "Deus fala do sinal na carne e Abrão ri ao ouvir de um filho com Sara.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra que carrega o sentido desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "A circuncisão e o riso",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Todo menino oito dias circuncidado vocês.",
+        "evidenceRef": "Gênesis 17:12",
+        "evidenceSpan": "Todo menino de oito dias será circuncidado entre"
+      },
+      {
+        "text": "Circuncidado todo homem nascer casa for.",
+        "evidenceRef": "Gênesis 17:13",
+        "evidenceSpan": "será circuncidado todo homem que nascer em sua"
+      },
+      {
+        "text": "Todo homem tiver carne prepúcio circuncidada.",
+        "evidenceRef": "Gênesis 17:14",
+        "evidenceSpan": "E todo homem que não tiver a carne"
+      },
+      {
+        "text": "Disse deus abraão quanto sarai mulher.",
+        "evidenceRef": "Gênesis 17:15",
+        "evidenceSpan": "porém o nome dela será Sara"
+      },
+      {
+        "text": "Abençoá-la-ei darei filho sim eu abençoarei.",
+        "evidenceRef": "Gênesis 17:16",
+        "evidenceSpan": "eu a abençoarei e ela se tornará mãe"
+      },
+      {
+        "text": "Abraão prostrou rosto terra riu dizendo.",
+        "evidenceRef": "Gênesis 17:17",
+        "evidenceSpan": "Nascerá um filho a um homem de cem"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "aliança",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "Todo",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Todo menino oito dias circuncidado",
+        "evidenceRef": "Gênesis 17:12"
+      },
+      {
+        "label": "Circuncidado todo homem nascer casa",
+        "evidenceRef": "Gênesis 17:13"
+      },
+      {
+        "label": "Todo homem tiver carne prepúcio",
+        "evidenceRef": "Gênesis 17:14"
+      },
+      {
+        "label": "Disse deus abraão quanto sarai",
+        "evidenceRef": "Gênesis 17:15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O marcador \"porém\" liga o fluxo do relato neste versículo.",
+        "marker": "porém",
+        "evidenceRef": "Gênesis 17:15"
+      },
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 17:16"
+      },
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 17:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 17:7",
+        "bridge": "Aliança perpetua"
+      },
+      {
+        "ref": "Gênesis 15:6",
+        "bridge": "Abraão creu"
+      },
+      {
+        "ref": "Gênesis 12:2",
+        "bridge": "Promessa de nação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "A aliança tem sinal, e Abrão ainda pergunta se Ismael poderia viver diante de Deus."
+      }
+    ],
+    "centralInsight": "A aliança tem sinal, e Abrão ainda pergunta se Ismael poderia viver diante de Deus.",
+    "anchorQuestion": "O que Gênesis 17:12 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 17:12, todo menino de oito dias será circuncidado entre.",
+      "verseRef": "Gênesis 17:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Todo menino de oito dias será circuncidado entre",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 17:12 afirma.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 17:12, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 17:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo"
+        },
+        {
+          "id": "b",
+          "text": "menino"
+        },
+        {
+          "id": "c",
+          "text": "oito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 17:14, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há todo homem tiver carne no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E todo homem que",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 17:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 17:12 na ordem do texto.",
+      "verseRef": "Gênesis 17:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo menino"
+        },
+        {
+          "id": "b",
+          "text": "de oito dias"
+        },
+        {
+          "id": "c",
+          "text": "será circuncidado entre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo menino",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 17:12, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 17:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "menino"
+        },
+        {
+          "id": "b",
+          "text": "Todo"
+        },
+        {
+          "id": "c",
+          "text": "oito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "menino",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 17:12 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 17:12",
+      "passageA": {
+        "ref": "Gênesis 17:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus fala do sinal na carne e Abrão ri ao ouvir de um filho com Sara."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 17:15, o marcador porém une ideias no fluxo do texto.",
+      "verseRef": "Gênesis 17:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "porém",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 17:15 afirma.",
+      "evidence": [
+        "Gênesis 17:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 17:15, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 17:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 17:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 17:15, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 17:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse Deus a Abraão",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 17:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 17:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo menino oito dias circuncidado"
+        },
+        {
+          "id": "b",
+          "text": "Circuncidado todo homem nascer casa"
+        },
+        {
+          "id": "c",
+          "text": "Todo homem tiver carne prepúcio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 17:14, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "Todo"
+        },
+        {
+          "id": "c",
+          "text": "menino"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aliança",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 17:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 17:12 a Gênesis 17:7.",
+      "verseRef": "Gênesis 17:12",
+      "passageA": {
+        "ref": "Gênesis 17:12"
+      },
+      "passageB": {
+        "ref": "Gênesis 17:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança perpetua"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 17:12",
+        "Gênesis 17:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 17:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 17:18 afirma.",
+      "evidence": [
+        "Gênesis 17:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 17:16, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 17:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abençoá-la-ei"
+        },
+        {
+          "id": "b",
+          "text": "darei"
+        },
+        {
+          "id": "c",
+          "text": "filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abençoá-la-ei",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 17:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 17:16, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 17:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abençoá-la-ei e dela te",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 17:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 17:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 17:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 17:16, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 17:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "darei"
+        },
+        {
+          "id": "b",
+          "text": "Todo"
+        },
+        {
+          "id": "c",
+          "text": "menino"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "darei",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 17:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 17:12 a Gênesis 15:6.",
+      "verseRef": "Gênesis 17:12",
+      "passageA": {
+        "ref": "Gênesis 17:12"
+      },
+      "passageB": {
+        "ref": "Gênesis 15:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Abraão creu"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 17:12",
+        "Gênesis 15:6"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "slug": "levitico-cap",
+  "prefix": "lvc",
+  "book": "Levítico",
+  "chapters": 27,
+  "title": "Levítico",
+  "description": "Levítico capítulo a capítulo: o Senhor santifica um povo para morar no meio dele.",
+  "icon": "🔥",
+  "color": "#B85C38",
+  "order": 4,
+  "realm": "antigo-testamento",
+  "category": "pentateuco",
+  "avoidTrails": ["levitico"],
+  "modules": [
+    {
+      "title": "Ofertas · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Levítico 1:1–9",
+          "title": "Holocausto no altar",
+          "intro": "O Senhor chama Moisés da tenda e descreve a oferta queimada de gado.",
+          "insight": "A oferta sobe em aroma agradável ao Senhor quando o animal é sem defeito.",
+          "objective": "Oferta sem defeito"
+        },
+        {
+          "ref": "Levítico 2:1–10",
+          "chapters": "2–3",
+          "title": "Oferta de cereais",
+          "intro": "A oferta de farinha leva azeite e incenso; parte é do Senhor, parte dos sacerdotes.",
+          "insight": "Até o grão da terra pode ser santo quando se oferece ao Senhor com sinceridade.",
+          "objective": "Dar do fruto da terra"
+        },
+        {
+          "ref": "Levítico 4:1–12",
+          "title": "Pecado sem querer",
+          "intro": "Se alguém pecar por ignorância, há oferta pelo pecado e sangue no altar.",
+          "insight": "O Senhor prevê o pecado não intencional e abre caminho de perdão com sangue.",
+          "objective": "Perdão também no erro"
+        },
+        {
+          "ref": "Levítico 5:1–6",
+          "title": "Confissão e oferta",
+          "intro": "Quem ouve um juramento e se cala, ou toca o impuro, deve confessar e trazer oferta.",
+          "insight": "Confissão acompanha a oferta: o Senhor quer verdade sobre a culpa.",
+          "objective": "Confessar a culpa"
+        },
+        {
+          "ref": "Levítico 6:8–13",
+          "title": "Fogo contínuo",
+          "intro": "O Senhor manda que o fogo do altar não se apague; cada manhã se põe lenha.",
+          "insight": "O fogo no altar permanece: o culto ao Senhor não é de vez em quando.",
+          "objective": "Fogo que não se apaga"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Ofertas",
+        "intro": "Revise o holocausto, o cereal, o pecado sem querer, a confissão e o fogo.",
+        "insight": "Chegar a Deus pede oferta, confissão e culto contínuo"
+      }
+    },
+    {
+      "title": "Sacerdotes · cap. 7–10",
+      "scenes": [
+        {
+          "ref": "Levítico 7:11–18",
+          "title": "Oferta de paz",
+          "intro": "A oferta pacífica pode ser de ação de graças; a carne tem prazo para ser comida.",
+          "insight": "Há lugar para agradecer com oferta, e o santo não se trata com descuido.",
+          "objective": "Agradecer com oferta"
+        },
+        {
+          "ref": "Levítico 8:14–21",
+          "title": "Sangue na ordenação",
+          "intro": "Moisés oferece o novilho e o carneiro na consagração de Áarão e dos filhos.",
+          "insight": "Antes de servir, o sacerdote também precisa de sangue e de limpeza.",
+          "objective": "Consagrados para servir"
+        },
+        {
+          "ref": "Levítico 9:18–24",
+          "title": "Fogo que sai",
+          "intro": "Áarão termina as ofertas, abençoa o povo, e sai fogo de diante do Senhor.",
+          "insight": "O Senhor aceita o culto com fogo; o povo grita de alegria e se prostra.",
+          "objective": "Deus aceita o culto"
+        },
+        {
+          "ref": "Levítico 10:3–11",
+          "title": "Santos e sóbrios",
+          "intro": "Depois da morte de Nadabe e Abiú, Moisés fala de santidade e do vinho no serviço.",
+          "insight": "Quem se chega ao Senhor o trata como santo; o serviço pede mente clara.",
+          "objective": "Tratar Deus como santo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sacerdotes",
+        "intro": "Revise a oferta de paz, a ordenação, o fogo e a santidade no serviço.",
+        "insight": "Servir ao Senhor exige consagração e reverência"
+      }
+    },
+    {
+      "title": "Pureza · cap. 11–15",
+      "scenes": [
+        {
+          "ref": "Levítico 11:41–47",
+          "title": "Santos porque eu sou",
+          "intro": "O Senhor resume as regras dos animais e liga a distinção à santidade do povo.",
+          "insight": "Ser santo como o Senhor é também aprender a distinguir o limpo do impuro.",
+          "objective": "Distinguir para ser santo"
+        },
+        {
+          "ref": "Levítico 12:1–8",
+          "title": "Purificação da mãe",
+          "intro": "Depois do parto, a mulher espera dias e traz oferta; há caminho também para a pobre.",
+          "insight": "A vida nova passa por purificação, e o Senhor cuida de quem tem pouco.",
+          "objective": "Purificação ao alcance"
+        },
+        {
+          "ref": "Levítico 13:1–8",
+          "title": "O sacerdote examina",
+          "intro": "Em caso de mancha na pele, a pessoa vai ao sacerdote, que observa e decide.",
+          "insight": "A comunidade não ignora a impureza: há exame paciente antes do juízo.",
+          "objective": "Examinar com cuidado"
+        },
+        {
+          "ref": "Levítico 14:1–9",
+          "title": "Limpo de novo",
+          "intro": "Para o leproso curado há aves, água viva, hissopo e barbear no sétimo dia.",
+          "insight": "A volta à comunidade passa por um ritual que declara: está limpo.",
+          "objective": "Restaurado à comunidade"
+        },
+        {
+          "ref": "Levítico 15:25–30",
+          "title": "Fluxo e oferta",
+          "intro": "Mesmo o fluxo prolongado tem regra de limpeza e oferta perante o Senhor.",
+          "insight": "O Senhor cuida do corpo e abre caminho de volta ao culto para quem estava impuro.",
+          "objective": "Caminho de volta ao culto"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Pureza",
+        "intro": "Revise a distinção, o parto, o exame, a limpeza e o fluxo.",
+        "insight": "A pureza protege a vida com Deus e com o próximo"
+      }
+    },
+    {
+      "title": "Expiação e santidade · cap. 16–20",
+      "scenes": [
+        {
+          "ref": "Levítico 16:15–22",
+          "title": "Sangue e bode",
+          "intro": "Áarão leva sangue ao santíssimo e confessa as iniquidades sobre o bode vivo.",
+          "insight": "Um bode morre no santuário; o outro leva embora as culpas do povo.",
+          "objective": "Culpas levadas embora"
+        },
+        {
+          "ref": "Levítico 17:1–7",
+          "title": "Só perante a tenda",
+          "intro": "Quem mata animal para oferta deve trazê-lo à entrada da tenda do Senhor.",
+          "insight": "O culto não se espalha nos campos: o sangue santo pertence ao Senhor.",
+          "objective": "Culto no lugar certo"
+        },
+        {
+          "ref": "Levítico 18:24–30",
+          "title": "Não vos contamineis",
+          "intro": "O Senhor avisa que as nações se contaminaram e a terra as vomitou.",
+          "insight": "Israel não deve imitar as práticas da terra; o Senhor é o Deus deles.",
+          "objective": "Não imitar a impureza"
+        },
+        {
+          "ref": "Levítico 19:9–18",
+          "title": "Amarás o teu próximo",
+          "intro": "No meio das leis, o Senhor manda deixar espigas ao pobre e amar o próximo.",
+          "insight": "Santidade se mostra no campo, no tribunal e no coração sem ódio.",
+          "objective": "Amar o próximo"
+        },
+        {
+          "ref": "Levítico 20:22–26",
+          "title": "Separados para mim",
+          "intro": "O Senhor liga a obediência à terra e lembra que separou Israel dos povos.",
+          "insight": "Ser povo de Deus é viver separado para ele, distinguindo o limpo do impuro.",
+          "objective": "Povo separado para Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Expiação e santidade",
+        "intro": "Revise o dia da expiação, o culto, a terra, o próximo e a separação.",
+        "insight": "Deus perdoa e chama a um povo santo que ama"
+      }
+    },
+    {
+      "title": "Festas e aliança · cap. 21–27",
+      "scenes": [
+        {
+          "ref": "Levítico 21:6–12",
+          "title": "Santos ao seu Deus",
+          "intro": "Os sacerdotes têm regras extras: não profanar o nome do Deus deles.",
+          "insight": "Quem se chega ao altar carrega um chamado mais alto de santidade.",
+          "objective": "Santidade no altar"
+        },
+        {
+          "ref": "Levítico 22:17–25",
+          "title": "Sem defeito",
+          "intro": "O Senhor rejeita animal cego, quebrado ou doente como oferta de voto.",
+          "insight": "O que se oferece ao Senhor deve ser o melhor, não o que sobra.",
+          "objective": "Oferecer o melhor"
+        },
+        {
+          "ref": "Levítico 23:15–22",
+          "title": "Festas e espigas",
+          "intro": "Nas semanas, há pães novos e também ordem de deixar o canto do campo ao pobre.",
+          "insight": "Celebrar ao Senhor e cuidar do pobre caminham juntos no calendário santo.",
+          "objective": "Festa que inclui o pobre"
+        },
+        {
+          "ref": "Levítico 24:1–9",
+          "title": "Azeite e pães",
+          "intro": "O povo traz azeite puro para a lâmpada; sobre a mesa ficam os pães diante do Senhor.",
+          "insight": "Diante do Senhor há luz contínua e pão renovado a cada sábado.",
+          "objective": "Luz e pão contínuos"
+        },
+        {
+          "ref": "Levítico 25:8–17",
+          "title": "Ano do jubileu",
+          "intro": "A cada cinquenta anos, a trombeta soa: liberdade na terra e volta à propriedade.",
+          "insight": "A terra é do Senhor; o jubileu impede que a opressão dure para sempre.",
+          "objective": "Liberdade no jubileu"
+        },
+        {
+          "ref": "Levítico 26:3–13",
+          "chapters": "26–27",
+          "title": "Se andardes nos meus estatutos",
+          "intro": "O Senhor promete chuva, paz e a sua presença a quem andar nos seus caminhos.",
+          "insight": "Obediência traz bênção, e o Senhor quer andar no meio do seu povo.",
+          "objective": "Deus no meio de vós"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Festas e aliança",
+        "intro": "Revise o sacerdote, a oferta, as festas, a mesa, o jubileu e a bênção.",
+        "insight": "A aliança marca o tempo, a terra e a presença de Deus"
+      }
+    }
+  ]
+}

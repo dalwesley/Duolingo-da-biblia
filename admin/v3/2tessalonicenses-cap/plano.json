@@ -1,0 +1,47 @@
+{
+  "slug": "2tessalonicenses-cap",
+  "prefix": "t2c",
+  "book": "2 Tessalonicenses",
+  "chapters": 3,
+  "title": "2 Tessalonicenses",
+  "description": "2 Tessalonicenses capítulo a capítulo: firmeza, discernimento e trabalho até o dia do Senhor.",
+  "icon": "⏳",
+  "color": "#7F8C8D",
+  "order": 67,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["tessalonicenses"],
+  "modules": [
+    {
+      "title": "Firmeza até o fim · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "2 Tessalonicenses 1:3–12",
+          "title": "Dignos do chamado",
+          "intro": "Paulo agradece o crescimento da fé no meio das perseguições.",
+          "insight": "Deus juízo justo retribuirá a aflição; oramos para que sejais dignos do chamado e o nome do Senhor seja glorificado.",
+          "objective": "Ser dignos do chamado"
+        },
+        {
+          "ref": "2 Tessalonicenses 2:6–14",
+          "title": "Firmes na verdade",
+          "intro": "Há um mistério da iniquidade, mas a verdade do evangelho guarda os eleitos.",
+          "insight": "Deus escolheu-vos para a salvação pela santificação do Espírito e fé na verdade: permanecei firmes.",
+          "objective": "Permanecer na verdade"
+        },
+        {
+          "ref": "2 Tessalonicenses 3:6–13",
+          "title": "Trabalhai em silêncio",
+          "intro": "Alguns andam desordenadamente; Paulo lembra o exemplo do trabalho.",
+          "insight": "Quem não quer trabalhar também não coma; não vos canseis de fazer o bem.",
+          "objective": "Trabalhar e fazer o bem"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Firmeza até o fim",
+        "intro": "Revise o chamado digno, a firmeza na verdade e o trabalho ordenado.",
+        "insight": "Firmes na verdade, trabalhamos até a vinda do Senhor"
+      }
+    }
+  ]
+}

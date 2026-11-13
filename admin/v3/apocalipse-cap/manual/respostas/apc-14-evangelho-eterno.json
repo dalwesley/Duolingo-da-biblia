@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 14:6–11",
+    "passages": [
+      { "ref": "Apocalipse 14:6–11" },
+      { "ref": "Apocalipse 14:12" }
+    ],
+    "context": "Três anjos anunciam no meio do céu: o evangelho eterno, a queda de Babilônia e o aviso contra a marca da besta. No fim, o texto aponta a perseverança dos santos.",
+    "keyword": "perseverança",
+    "keywordGloss": "No texto, a perseverança dos santos é guardar os mandamentos de Deus e manter a fé em Jesus.",
+    "focusQuestion": "Quando o juízo é anunciado em alta voz, o que sustenta a sua perseverança?",
+    "reflectionPrompts": [
+      "Evangelho eterno",
+      "Caiu Babilônia",
+      "Fé em Jesus"
+    ],
+    "facts": [
+      {
+        "text": "Um anjo voa pelo meio do céu trazendo um evangelho eterno para pregar.",
+        "evidenceRef": "Apocalipse 14:6",
+        "evidenceSpan": "trazendo um evangelho eterno para pregar"
+      },
+      {
+        "text": "O anjo manda temer a Deus e dar-lhe glória, pois chegou a hora do juízo.",
+        "evidenceRef": "Apocalipse 14:7",
+        "evidenceSpan": "Temam a Deus e deem-lhe glória, pois é chegada a hora do Seu juízo"
+      },
+      {
+        "text": "Outro anjo anuncia que caiu a grande Babilônia.",
+        "evidenceRef": "Apocalipse 14:8",
+        "evidenceSpan": "Caiu, caiu a grande Babilônia"
+      },
+      {
+        "text": "O terceiro anjo avisa quem adorar a besta e receber a sua marca.",
+        "evidenceRef": "Apocalipse 14:9",
+        "evidenceSpan": "Se alguém adorar a besta e a sua imagem, e receber a sua marca"
+      },
+      {
+        "text": "A fumaça do tormento sobe pelos séculos dos séculos.",
+        "evidenceRef": "Apocalipse 14:11",
+        "evidenceSpan": "a fumaça do seu tormento sobe pelos séculos dos séculos"
+      },
+      {
+        "text": "A perseverança dos santos é guardar os mandamentos de Deus e manter a fé em Jesus.",
+        "evidenceRef": "Apocalipse 14:12",
+        "evidenceSpan": "guardam os mandamentos de Deus e mantêm a fé em Jesus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "evangelho eterno",
+        "gloss": "A mensagem que o anjo traz para pregar a toda nação, tribo, língua e povo."
+      },
+      {
+        "term": "perseverança",
+        "gloss": "O que o texto localiza nos santos que guardam os mandamentos e mantêm a fé."
+      },
+      {
+        "term": "juízo",
+        "gloss": "A hora anunciada que acompanha o chamado a temer a Deus e dar-lhe glória."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O anjo anuncia o evangelho eterno",
+        "evidenceRef": "Apocalipse 14:6–7"
+      },
+      {
+        "label": "Cai a grande Babilônia",
+        "evidenceRef": "Apocalipse 14:8"
+      },
+      {
+        "label": "Aviso contra a marca da besta",
+        "evidenceRef": "Apocalipse 14:9–11"
+      },
+      {
+        "label": "A perseverança dos santos",
+        "evidenceRef": "Apocalipse 14:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Temam a Deus e deem-lhe glória, pois é chegada a hora do Seu juízo.",
+        "marker": "pois",
+        "evidenceRef": "Apocalipse 14:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem adora a besta também beberá do vinho da cólera de Deus.",
+        "marker": "Também",
+        "evidenceRef": "Apocalipse 14:10"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do anúncio do evangelho, outro anjo segue anunciando a queda de Babilônia.",
+        "marker": "seguiu",
+        "evidenceRef": "Apocalipse 14:8"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Apocalipse 13:8", "bridge": "Adoração da besta e Livro" },
+      { "ref": "Mateus 24:14", "bridge": "Evangelho pregado às nações" },
+      { "ref": "Apocalipse 18:2", "bridge": "Caiu a grande Babilônia" }
+    ],
+    "misreadings": [
+      {
+        "text": "O evangelho eterno é só para um povo escolhido neste anúncio.",
+        "why": "O anjo prega a cada nação, tribo, língua e povo."
+      },
+      {
+        "text": "A perseverança dos santos é só sentimento, sem mandamentos nem fé.",
+        "why": "O texto define: guardam os mandamentos de Deus e mantêm a fé em Jesus."
+      },
+      {
+        "text": "Babilônia ainda está de pé neste anúncio do segundo anjo.",
+        "why": "O anjo diz: Caiu, caiu a grande Babilônia."
+      }
+    ],
+    "centralInsight": "Temei a Deus e dai-lhe glória; aqui está a perseverança dos santos que guardam os mandamentos.",
+    "anchorQuestion": "O que o texto chama de perseverança dos santos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 14:6, o anjo traz um evangelho eterno para pregar a cada nação, tribo, língua e povo.",
+      "verseRef": "Apocalipse 14:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "evangelho eterno para pregar aos que se assentam sobre a terra, a cada nação, tribo, língua e povo",
+      "feedbackCorrect": "O anúncio alcança cada nação, tribo, língua e povo.",
+      "feedbackWrong": {
+        "false": "O versículo lista nação, tribo, língua e povo como destino da pregação."
+      },
+      "hint": "Olhe a quem o anjo deve pregar.",
+      "learningObjective": "Observar o alcance do evangelho eterno.",
+      "evidence": ["Apocalipse 14:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 14:8, toque o que o anjo diz que caiu.",
+      "verseRef": "Apocalipse 14:8",
+      "options": [
+        { "id": "a", "text": "grande Babilônia" },
+        { "id": "b", "text": "outro anjo" },
+        { "id": "c", "text": "alta voz" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Caiu, caiu a grande Babilônia",
+      "feedbackCorrect": "O anúncio é a queda da grande Babilônia.",
+      "feedbackWrong": {
+        "b": "Outro anjo é quem fala; o que caiu vem depois.",
+        "c": "Alta voz aparece no terceiro anjo; aqui o anúncio é a queda."
+      },
+      "hint": "Procure o nome depois de Caiu, caiu.",
+      "learningObjective": "Identificar o que caiu no anúncio do segundo anjo.",
+      "evidence": ["Apocalipse 14:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 14:12, quem são os que mostram a perseverança dos santos?",
+      "verseRef": "Apocalipse 14:12",
+      "options": [
+        { "id": "a", "text": "Os que guardam os mandamentos e mantêm a fé em Jesus" },
+        { "id": "b", "text": "Os que recebem a marca na mão" },
+        { "id": "c", "text": "Os que bebem o vinho de Babilônia" },
+        { "id": "d", "text": "Os que adoram a imagem da besta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guardam os mandamentos de Deus e mantêm a fé em Jesus",
+      "feedbackCorrect": "O texto define a perseverança por mandamentos e fé em Jesus.",
+      "feedbackWrong": {
+        "b": "A marca pertence ao aviso do terceiro anjo, não à perseverança.",
+        "c": "O vinho de Babilônia é o que ela deu às nações, não a perseverança.",
+        "d": "Adorar a imagem é o que o terceiro anjo condena."
+      },
+      "hint": "Leia a definição depois dos dois-pontos.",
+      "learningObjective": "Observar como o texto define a perseverança dos santos.",
+      "evidence": ["Apocalipse 14:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 14:7 na ordem do texto.",
+      "verseRef": "Apocalipse 14:7",
+      "options": [
+        { "id": "a", "text": "Temam a Deus e deem-lhe glória" },
+        { "id": "b", "text": "pois é chegada a hora do Seu juízo" },
+        { "id": "c", "text": "adorem aquele que criou o céu" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Temam a Deus e deem-lhe glória, pois é chegada a hora do Seu juízo",
+      "feedbackCorrect": "O chamado vem primeiro; a razão do juízo no meio; a adoração ao Criador no fim.",
+      "feedbackWrong": {
+        "default": "Comece pelo temam a Deus; o juízo explica o chamado."
+      },
+      "hint": "A frase começa com o chamado a temer.",
+      "learningObjective": "Reconhecer a sequência de Apocalipse 14:7.",
+      "evidence": ["Apocalipse 14:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 14:6, o anjo traz um evangelho de que tipo?",
+      "verseRef": "Apocalipse 14:6",
+      "options": [
+        { "id": "a", "text": "eterno" },
+        { "id": "b", "text": "breve" },
+        { "id": "c", "text": "oculto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um evangelho eterno",
+      "feedbackCorrect": "O texto chama o anúncio de evangelho eterno.",
+      "feedbackWrong": {
+        "b": "Breve caberia na frase, mas o texto diz eterno.",
+        "c": "Oculto não aparece; o anjo prega em alta voz depois."
+      },
+      "hint": "Veja o adjetivo junto de evangelho.",
+      "learningObjective": "Lembrar como o texto nomeia o evangelho do anjo.",
+      "evidence": ["Apocalipse 14:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 14:12 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 14:12",
+      "passageA": { "ref": "Apocalipse 14:12" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A perseverança dos santos é guardar os mandamentos e manter a fé em Jesus."
+      },
+      "options": [
+        { "id": "a", "text": "Mandamentos e fé em Jesus" },
+        { "id": "b", "text": "Marca na testa ou mão" },
+        { "id": "c", "text": "Vinho da cólera de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guardam os mandamentos de Deus e mantêm a fé em Jesus",
+      "feedbackCorrect": "O versículo define a perseverança por mandamentos e fé.",
+      "feedbackWrong": {
+        "b": "A marca pertence ao aviso, não à definição da perseverança.",
+        "c": "O vinho da cólera está no aviso aos adoradores da besta."
+      },
+      "hint": "Leia o que os santos fazem no versículo.",
+      "learningObjective": "Ligar 14:12 à definição da perseverança.",
+      "evidence": ["Apocalipse 14:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 14:7, o chamado a temer a Deus vem porque a hora do juízo ainda está longe.",
+      "verseRef": "Apocalipse 14:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois é chegada a hora do Seu juízo",
+      "feedbackCorrect": "O pois aponta o contrário: a hora do juízo chegou.",
+      "feedbackWrong": {
+        "true": "O versículo diz que a hora do juízo é chegada, não que está longe."
+      },
+      "hint": "Leia a razão depois de pois.",
+      "learningObjective": "Compreender a razão do chamado a temer a Deus.",
+      "evidence": ["Apocalipse 14:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 14:7, toque a palavra que marca a razão do chamado a temer.",
+      "verseRef": "Apocalipse 14:7",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "céu" },
+        { "id": "c", "text": "mar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois é chegada a hora do Seu juízo",
+      "feedbackCorrect": "Pois introduz a razão: a hora do juízo chegou.",
+      "feedbackWrong": {
+        "b": "Céu é parte da criação a adorar; a razão está em pois.",
+        "c": "Mar também entra na criação; a razão está em pois."
+      },
+      "hint": "Procure a palavra curta antes da hora do juízo.",
+      "learningObjective": "Reconhecer a palavra que marca a causa em 14:7.",
+      "evidence": ["Apocalipse 14:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que a sequência dos anjos em Apocalipse 14:6–8 mostra?",
+      "verseRef": "Apocalipse 14:6–8",
+      "options": [
+        { "id": "a", "text": "Depois do evangelho, vem o anúncio da queda" },
+        { "id": "b", "text": "Babilônia cai antes do evangelho eterno" },
+        { "id": "c", "text": "Só um anjo fala em toda a cena" },
+        { "id": "d", "text": "O terceiro anjo vem antes do segundo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E um outro anjo seguiu, dizendo: Caiu, caiu a grande Babilônia",
+      "feedbackCorrect": "O segundo anjo segue o primeiro e anuncia a queda.",
+      "feedbackWrong": {
+        "b": "O evangelho vem primeiro; Babilônia é anunciada depois.",
+        "c": "Há mais de um anjo; o texto marca outro anjo e o terceiro.",
+        "d": "O terceiro vem depois; o segundo já anunciou a queda."
+      },
+      "hint": "Veja o verbo que liga o segundo anjo ao primeiro.",
+      "learningObjective": "Relacionar a sequência dos anúncios.",
+      "evidence": ["Apocalipse 14:6–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o anúncio em Apocalipse 14?",
+      "verseRef": "Apocalipse 14:6–8",
+      "options": [
+        { "id": "a", "text": "O anjo anuncia o evangelho eterno" },
+        { "id": "b", "text": "Cai a grande Babilônia" },
+        { "id": "c", "text": "Aviso contra a marca da besta" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "trazendo um evangelho eterno",
+      "feedbackCorrect": "Primeiro o evangelho, depois Babilônia, depois o aviso da marca.",
+      "feedbackWrong": {
+        "default": "Comece pelo evangelho eterno; a marca vem por último."
+      },
+      "hint": "O primeiro anjo traz o evangelho.",
+      "learningObjective": "Ordenar os movimentos dos três anúncios.",
+      "evidence": ["Apocalipse 14:6–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 14:8, o que o outro anjo fez em relação ao primeiro?",
+      "verseRef": "Apocalipse 14:8",
+      "options": [
+        { "id": "a", "text": "seguiu" },
+        { "id": "b", "text": "calou" },
+        { "id": "c", "text": "fugiu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um outro anjo seguiu",
+      "feedbackCorrect": "O texto marca a sequência: um outro anjo seguiu.",
+      "feedbackWrong": {
+        "b": "Ele não se cala; anuncia a queda de Babilônia.",
+        "c": "Fugiu não aparece; o verbo é seguiu."
+      },
+      "hint": "Veja o verbo que liga este anjo ao anterior.",
+      "learningObjective": "Lembrar a palavra que marca a sequência dos anjos.",
+      "evidence": ["Apocalipse 14:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 14:8 a Apocalipse 18:2?",
+      "verseRef": "Apocalipse 14:8",
+      "passageA": { "ref": "Apocalipse 14:8", "text": "Caiu, caiu a grande Babilônia" },
+      "passageB": { "ref": "Apocalipse 18:2" },
+      "options": [
+        { "id": "a", "text": "Caiu a grande Babilônia" },
+        { "id": "b", "text": "A marca na mão" },
+        { "id": "c", "text": "As fontes das águas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Caiu, caiu a grande Babilônia",
+      "feedbackCorrect": "Os dois textos anunciam a mesma queda da grande Babilônia.",
+      "feedbackWrong": {
+        "b": "A marca está no terceiro anjo; a ponte com 18:2 é Babilônia.",
+        "c": "As fontes aparecem no chamado ao Criador, não na ponte com 18:2."
+      },
+      "hint": "Compare o anúncio da queda nos dois textos.",
+      "learningObjective": "Ligar o anúncio de 14:8 à queda em 18:2.",
+      "evidence": ["Apocalipse 14:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Apocalipse 14:12, a perseverança dos santos se define só por um sentimento, sem mandamentos nem fé.",
+      "verseRef": "Apocalipse 14:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "guardam os mandamentos de Deus e mantêm a fé em Jesus",
+      "feedbackCorrect": "O texto define perseverança por mandamentos e fé em Jesus.",
+      "feedbackWrong": {
+        "true": "O versículo nomeia mandamentos e fé; não reduz a sentimento."
+      },
+      "hint": "Leia a definição depois dos dois-pontos.",
+      "learningObjective": "Interpretar o que o texto chama de perseverança.",
+      "evidence": ["Apocalipse 14:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 14:12, toque o trecho que sustenta a perseverança como fé em Jesus.",
+      "verseRef": "Apocalipse 14:12",
+      "options": [
+        { "id": "a", "text": "fé em Jesus" },
+        { "id": "b", "text": "Aqui está" },
+        { "id": "c", "text": "dos santos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mantêm a fé em Jesus",
+      "feedbackCorrect": "A perseverança inclui manter a fé em Jesus.",
+      "feedbackWrong": {
+        "b": "Aqui está introduz a frase; o conteúdo da fé vem no fim.",
+        "c": "Dos santos nomeia o grupo; a fé está na definição."
+      },
+      "hint": "Procure o fim da definição dos santos.",
+      "learningObjective": "Tocar o trecho que liga perseverança à fé em Jesus.",
+      "evidence": ["Apocalipse 14:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Apocalipse 14:6 sustenta melhor?",
+      "verseRef": "Apocalipse 14:6",
+      "options": [
+        { "id": "a", "text": "O evangelho eterno é anunciado a todos os povos" },
+        { "id": "b", "text": "O evangelho eterno fica só para um povo" },
+        { "id": "c", "text": "O anjo guarda o evangelho sem pregar" },
+        { "id": "d", "text": "A mensagem é só para quem já tem a marca" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a cada nação, tribo, língua e povo",
+      "feedbackCorrect": "O alcance listado mostra pregação a todos os povos.",
+      "feedbackWrong": {
+        "b": "O texto lista cada nação, tribo, língua e povo.",
+        "c": "O anjo traz o evangelho para pregar, não para guardar em silêncio.",
+        "d": "A marca aparece no aviso posterior, não como limite do evangelho."
+      },
+      "hint": "Veja a lista de destinatários no fim do versículo.",
+      "learningObjective": "Escolher a leitura sustentável sobre o alcance do evangelho.",
+      "evidence": ["Apocalipse 14:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento Apocalipse 14 sustenta?",
+      "verseRef": "Apocalipse 14:7–12",
+      "options": [
+        { "id": "a", "text": "Temer a Deus na hora do juízo" },
+        { "id": "b", "text": "Recusar a marca da besta" },
+        { "id": "c", "text": "Perseverar com mandamentos e fé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Temam a Deus e deem-lhe glória",
+      "feedbackCorrect": "O chamado a temer abre; o aviso da marca vem; a perseverança fecha.",
+      "feedbackWrong": {
+        "default": "Comece pelo temer a Deus; a perseverança fecha a cena."
+      },
+      "hint": "O primeiro anjo chama a temer antes do aviso da marca.",
+      "learningObjective": "Encadear juízo, recusa da marca e perseverança.",
+      "evidence": ["Apocalipse 14:7–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 14:12, aqui está a quê dos santos?",
+      "verseRef": "Apocalipse 14:12",
+      "options": [
+        { "id": "a", "text": "perseverança" },
+        { "id": "b", "text": "Babilônia" },
+        { "id": "c", "text": "fumaça" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aqui está a perseverança dos santos",
+      "feedbackCorrect": "O texto localiza aqui a perseverança dos santos.",
+      "feedbackWrong": {
+        "b": "Babilônia cai no anúncio anterior; aqui o termo é perseverança.",
+        "c": "Fumaça está no tormento; o termo teológico aqui é perseverança."
+      },
+      "hint": "Veja o substantivo depois de Aqui está.",
+      "learningObjective": "Lembrar o termo que nomeia a resposta dos santos.",
+      "evidence": ["Apocalipse 14:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 14:6 a Mateus 24:14?",
+      "verseRef": "Apocalipse 14:6",
+      "passageA": { "ref": "Apocalipse 14:6", "text": "evangelho eterno para pregar" },
+      "passageB": { "ref": "Mateus 24:14" },
+      "options": [
+        { "id": "a", "text": "Evangelho pregado às nações" },
+        { "id": "b", "text": "A fumaça do tormento" },
+        { "id": "c", "text": "O vinho da prostituição" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "evangelho eterno para pregar",
+      "feedbackCorrect": "Os dois textos ligam o evangelho à pregação entre as nações.",
+      "feedbackWrong": {
+        "b": "A fumaça está no aviso; a ponte com Mateus 24:14 é o evangelho.",
+        "c": "O vinho pertence a Babilônia; a ponte é a pregação do evangelho."
+      },
+      "hint": "Compare o que é pregado e a quem.",
+      "learningObjective": "Ligar o evangelho eterno à pregação às nações.",
+      "evidence": ["Apocalipse 14:6"]
+    }
+  ]
+}

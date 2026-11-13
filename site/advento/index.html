@@ -17,7 +17,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;1,9..144,400&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=loja2" />
+  <link rel="stylesheet" href="/styles.css?v=ios1" />
   <style>
     .advento-head { max-width: 46rem; }
     .advento-head h1 { margin-top: 10px; }
@@ -68,7 +68,7 @@
         <a class="quiet" href="/sobre">Sobre</a>
         <span class="store-actions">
           <a class="btn btn-gold btn-sm" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-          <span class="btn btn-soon btn-sm" aria-disabled="true">iOS em breve</span>
+          <button type="button" class="btn btn-soon btn-sm" data-ios-waitlist>Baixe para iOS</button>
         </span>
       </nav>
     </div>
@@ -81,7 +81,7 @@
       <p class="lead">De 29 de novembro a 24 de dezembro, uma cena bíblica de 5 minutos por dia. Da Criação à promessa cumprida em Jesus: você lê o texto, responde no próprio versículo e guarda o postal de cada dia.</p>
       <div class="advento-cta store-actions" id="baixar">
         <a class="btn btn-gold" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-        <span class="btn btn-soon" aria-disabled="true">iOS em breve</span>
+        <button type="button" class="btn btn-soon" data-ios-waitlist>Baixe para iOS</button>
       </div>
     </header>
 
@@ -116,5 +116,6 @@
     </div>
   </footer>
   <script src="/advento/advento.js?v=3" defer></script>
+  <script src="/ios-waitlist.js?v=2" defer></script>
 </body>
 </html>

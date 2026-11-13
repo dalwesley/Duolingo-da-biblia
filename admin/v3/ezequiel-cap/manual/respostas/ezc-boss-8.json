@@ -1,0 +1,920 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 40:1–7",
+    "passages": [
+      {
+        "ref": "Ezequiel 40:1–7"
+      },
+      {
+        "ref": "Ezequiel 43:1–9"
+      },
+      {
+        "ref": "Ezequiel 44:1–8"
+      },
+      {
+        "ref": "Ezequiel 47:1–12"
+      }
+    ],
+    "context": "Esta travessia une a visão do templo, a volta da glória, a porta fechada e o rio que dá vida.",
+    "keyword": "glória",
+    "keywordGloss": "Presença que volta ao templo e de onde saem águas de vida.",
+    "focusQuestion": "Quando a glória volta e a água flui, você anuncia o que viu?",
+    "reflectionPrompts": [
+      "Templo medido",
+      "Glória e porta",
+      "Rio de vida"
+    ],
+    "facts": [
+      {
+        "text": "Há um homem com cana de medir.",
+        "evidenceRef": "Ezequiel 40:3",
+        "evidenceSpan": "uma cana de medir"
+      },
+      {
+        "text": "A glória encheu o templo.",
+        "evidenceRef": "Ezequiel 43:5",
+        "evidenceSpan": "a glória do Senhor encheu o templo"
+      },
+      {
+        "text": "A porta permanece fechada.",
+        "evidenceRef": "Ezequiel 44:2",
+        "evidenceSpan": "Esta porta ficará fechada"
+      },
+      {
+        "text": "Águas saem do umbral da casa.",
+        "evidenceRef": "Ezequiel 47:1",
+        "evidenceSpan": "saíam águas de debaixo do umbral da casa para o leste"
+      },
+      {
+        "text": "Tudo viverá por onde o ribeiro passar.",
+        "evidenceRef": "Ezequiel 47:9",
+        "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe"
+      },
+      {
+        "text": "As folhas servirão de remédio.",
+        "evidenceRef": "Ezequiel 47:12",
+        "evidenceSpan": "suas folhas, de remédio"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cana",
+        "gloss": "Instrumento que mede o templo."
+      },
+      {
+        "term": "glória",
+        "gloss": "Presença que enche a casa."
+      },
+      {
+        "term": "águas",
+        "gloss": "Saem do santuário e dão vida."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Templo medido",
+        "evidenceRef": "Ezequiel 40:3"
+      },
+      {
+        "label": "Glória e porta fechada",
+        "evidenceRef": "Ezequiel 43:5"
+      },
+      {
+        "label": "Rio de vida",
+        "evidenceRef": "Ezequiel 47:9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porta fechada pois o Senhor entrou.",
+        "marker": "pois",
+        "evidenceRef": "Ezequiel 44:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quando as águas chegam, o mar fica saudável.",
+        "marker": "quando",
+        "evidenceRef": "Ezequiel 47:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "Foi trazido para ver e anunciar.",
+        "marker": "pois",
+        "evidenceRef": "Ezequiel 40:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 22:1–2",
+        "bridge": "Rio da vida e folhas"
+      },
+      {
+        "ref": "Apocalipse 21:3",
+        "bridge": "Deus habita com os homens"
+      },
+      {
+        "ref": "Ezequiel 10:18–19",
+        "bridge": "Glória que partiu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A glória fica fora do templo.",
+        "why": "Encheu o templo."
+      },
+      {
+        "text": "Qualquer um entra pela porta do oriente.",
+        "why": "Permanece fechada."
+      },
+      {
+        "text": "Nada vive onde o rio passa.",
+        "why": "Tudo viverá."
+      }
+    ],
+    "centralInsight": "A glória volta e a água do templo dá vida",
+    "anchorQuestion": "O que enche o templo em Ezequiel 43:5?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 43:5, a glória do Senhor encheu o templo.",
+      "verseRef": "Ezequiel 43:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "a glória do Senhor encheu o templo",
+      "feedbackCorrect": "A glória encheu.",
+      "feedbackWrong": {
+        "false": "O versículo afirma."
+      },
+      "hint": "Veja 43:5.",
+      "learningObjective": "Identificar a glória.",
+      "evidence": [
+        "Ezequiel 43:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 40:3, toque o instrumento de medir.",
+      "verseRef": "Ezequiel 40:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "cana de medir"
+        },
+        {
+          "id": "b",
+          "text": "homem"
+        },
+        {
+          "id": "c",
+          "text": "entrada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma cana de medir",
+      "feedbackCorrect": "A cana mede.",
+      "feedbackWrong": {
+        "b": "É quem segura.",
+        "c": "É o lugar."
+      },
+      "hint": "Procure a cana.",
+      "learningObjective": "Tocar a cana.",
+      "evidence": [
+        "Ezequiel 40:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 44:2, o que acontece com a porta?",
+      "verseRef": "Ezequiel 44:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ficará fechada"
+        },
+        {
+          "id": "b",
+          "text": "Abrirá a todos"
+        },
+        {
+          "id": "c",
+          "text": "Será demolida já"
+        },
+        {
+          "id": "d",
+          "text": "Mudará para o norte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta porta ficará fechada",
+      "feedbackCorrect": "Permanece fechada.",
+      "feedbackWrong": {
+        "b": "Ninguém entra.",
+        "c": "Fica fechada.",
+        "d": "É a do oriente."
+      },
+      "hint": "Veja o estado.",
+      "learningObjective": "Reconhecer a porta.",
+      "evidence": [
+        "Ezequiel 44:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 47:1 na ordem do texto.",
+      "verseRef": "Ezequiel 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "saíam águas de debaixo do umbral da casa para o leste"
+        },
+        {
+          "id": "b",
+          "text": "a frente da casa voltava-se para o leste"
+        },
+        {
+          "id": "c",
+          "text": "as águas fluíam de debaixo, do lado direito da casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "saíam águas de debaixo do umbral da casa para o leste",
+      "feedbackCorrect": "Águas → frente → lado direito.",
+      "feedbackWrong": {
+        "default": "Comece pelas águas."
+      },
+      "hint": "Comece pelas águas.",
+      "learningObjective": "Ordenar a fonte.",
+      "evidence": [
+        "Ezequiel 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 47:5, era um ___ que eu não podia atravessar.",
+      "verseRef": "Ezequiel 47:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "rio"
+        },
+        {
+          "id": "b",
+          "text": "muro"
+        },
+        {
+          "id": "c",
+          "text": "trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era um rio que eu não podia atravessar",
+      "feedbackCorrect": "A palavra é rio.",
+      "feedbackWrong": {
+        "b": "Não é muro.",
+        "c": "Não é trono."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o rio.",
+      "evidence": [
+        "Ezequiel 47:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 47:9 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 47:9",
+      "passageA": {
+        "ref": "Ezequiel 47:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A glória volta e a água do templo dá vida."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo viverá"
+        },
+        {
+          "id": "b",
+          "text": "Gogue sobe"
+        },
+        {
+          "id": "c",
+          "text": "Cedro cai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "A vida fecha a travessia.",
+      "feedbackWrong": {
+        "b": "Gogue está em 38.",
+        "c": "Cedro está em 31."
+      },
+      "hint": "Compare a vida.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 47:1, toque o que saía do umbral.",
+      "verseRef": "Ezequiel 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "águas"
+        },
+        {
+          "id": "b",
+          "text": "umbral"
+        },
+        {
+          "id": "c",
+          "text": "altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saíam águas de debaixo do umbral da casa",
+      "feedbackCorrect": "Saíam águas.",
+      "feedbackWrong": {
+        "b": "É o lugar.",
+        "c": "É referência."
+      },
+      "hint": "Procure o que flui.",
+      "learningObjective": "Tocar as águas.",
+      "evidence": [
+        "Ezequiel 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 43:5 na ordem do texto.",
+      "verseRef": "Ezequiel 43:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "o Espírito me levantou"
+        },
+        {
+          "id": "b",
+          "text": "e me levou ao átrio interior"
+        },
+        {
+          "id": "c",
+          "text": "a glória do Senhor encheu o templo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a glória do Senhor encheu o templo",
+      "feedbackCorrect": "Espírito → átrio → glória.",
+      "feedbackWrong": {
+        "default": "Comece pelo Espírito."
+      },
+      "hint": "Comece pelo Espírito.",
+      "learningObjective": "Ordenar o enchimento.",
+      "evidence": [
+        "Ezequiel 43:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 44:2, qualquer um pode entrar pela porta do oriente.",
+      "verseRef": "Ezequiel 44:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "ninguém entrará por ela",
+      "feedbackCorrect": "Ninguém entrará.",
+      "feedbackWrong": {
+        "true": "Há proibição."
+      },
+      "hint": "Veja 44:2.",
+      "learningObjective": "Ver a proibição.",
+      "evidence": [
+        "Ezequiel 44:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 44:2, toque a palavra que marca a causa do fechamento.",
+      "verseRef": "Ezequiel 44:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "porta"
+        },
+        {
+          "id": "c",
+          "text": "ninguém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o Senhor Deus de Israel entrou por ela",
+      "feedbackCorrect": "\"Pois\" marca a causa.",
+      "feedbackWrong": {
+        "b": "É o objeto.",
+        "c": "É a proibição."
+      },
+      "hint": "Procure a causa.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 44:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 43:5 e 47:1 se relacionam?",
+      "verseRef": "Ezequiel 43:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do templo cheio de glória saem águas de vida"
+        },
+        {
+          "id": "b",
+          "text": "A glória seca as águas"
+        },
+        {
+          "id": "c",
+          "text": "As águas expulsam a glória"
+        },
+        {
+          "id": "d",
+          "text": "A porta cancela o rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do Senhor encheu o templo",
+      "feedbackCorrect": "Glória e águas se ligam ao templo.",
+      "feedbackWrong": {
+        "b": "Há águas.",
+        "c": "A glória permanece.",
+        "d": "O rio flui."
+      },
+      "hint": "Una glória e águas.",
+      "learningObjective": "Relacionar glória e rio.",
+      "evidence": [
+        "Ezequiel 43:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a travessia avança?",
+      "verseRef": "Ezequiel 40:3–47:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Templo medido com a cana"
+        },
+        {
+          "id": "b",
+          "text": "Glória volta e porta se fecha"
+        },
+        {
+          "id": "c",
+          "text": "Rio dá vida por onde passa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "Medida → glória → vida.",
+      "feedbackWrong": {
+        "default": "Comece na medição."
+      },
+      "hint": "Comece na medição.",
+      "learningObjective": "Ordenar a travessia.",
+      "evidence": [
+        "Ezequiel 40:3",
+        "Ezequiel 43:5",
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 47:12, e suas folhas, de ___.",
+      "verseRef": "Ezequiel 47:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "remédio"
+        },
+        {
+          "id": "b",
+          "text": "veneno"
+        },
+        {
+          "id": "c",
+          "text": "sal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suas folhas, de remédio",
+      "feedbackCorrect": "A palavra é remédio.",
+      "feedbackWrong": {
+        "b": "Não é veneno.",
+        "c": "Não é sal."
+      },
+      "hint": "Veja o uso.",
+      "learningObjective": "Lembrar o remédio.",
+      "evidence": [
+        "Ezequiel 47:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 43:7 a Apocalipse 21:3?",
+      "verseRef": "Ezequiel 43:7",
+      "passageA": {
+        "ref": "Ezequiel 43:7"
+      },
+      "passageB": {
+        "ref": "Apocalipse 21:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus habita com os homens"
+        },
+        {
+          "id": "b",
+          "text": "Gogue"
+        },
+        {
+          "id": "c",
+          "text": "Cedro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "onde habitarei no meio dos filhos de Israel para sempre",
+      "feedbackCorrect": "Nos dois, Deus habita no meio.",
+      "feedbackWrong": {
+        "b": "Gogue está em 38.",
+        "c": "Cedro está em 31."
+      },
+      "hint": "Compare a habitação.",
+      "learningObjective": "Relacionar a Apocalipse.",
+      "evidence": [
+        "Ezequiel 43:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 47:11, toque a palavra do contraste.",
+      "verseRef": "Ezequiel 47:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "pântanos"
+        },
+        {
+          "id": "c",
+          "text": "sal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, os seus pântanos e os seus lodaçais não serão curados",
+      "feedbackCorrect": "\"Porém\" marca o contraste.",
+      "feedbackWrong": {
+        "b": "São o que não sara.",
+        "c": "É o destino."
+      },
+      "hint": "Procure o contraste.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 47:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento da glória à água.",
+      "verseRef": "Ezequiel 43:4–47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Glória entra pelo Oriente"
+        },
+        {
+          "id": "b",
+          "text": "Porta permanece fechada"
+        },
+        {
+          "id": "c",
+          "text": "Águas saem do umbral"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "saíam águas de debaixo do umbral da casa para o leste",
+      "feedbackCorrect": "Entrada → porta → águas.",
+      "feedbackWrong": {
+        "default": "Comece na entrada."
+      },
+      "hint": "Comece na entrada.",
+      "learningObjective": "Ordenar glória e água.",
+      "evidence": [
+        "Ezequiel 43:4",
+        "Ezequiel 44:2",
+        "Ezequiel 47:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 47:9, tudo viverá por onde o ribeiro passar.",
+      "verseRef": "Ezequiel 47:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "Há vida no ribeiro.",
+      "feedbackWrong": {
+        "false": "O versículo afirma."
+      },
+      "hint": "Veja 47:9.",
+      "learningObjective": "Confirmar a vida.",
+      "evidence": [
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 40:4, toque o verbo da missão.",
+      "verseRef": "Ezequiel 40:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anuncie"
+        },
+        {
+          "id": "b",
+          "text": "olhos"
+        },
+        {
+          "id": "c",
+          "text": "ouvidos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Anuncie, portanto, à casa de Israel",
+      "feedbackCorrect": "Anuncie é a missão.",
+      "feedbackWrong": {
+        "b": "São para ver.",
+        "c": "São para ouvir."
+      },
+      "hint": "Procure o verbo.",
+      "learningObjective": "Tocar o anúncio.",
+      "evidence": [
+        "Ezequiel 40:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura desta travessia o texto sustenta melhor?",
+      "verseRef": "Ezequiel 43:5–47:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "A glória volta e as águas do templo dão vida"
+        },
+        {
+          "id": "b",
+          "text": "A glória fica fora"
+        },
+        {
+          "id": "c",
+          "text": "A porta abre a todos"
+        },
+        {
+          "id": "d",
+          "text": "Nada vive no rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do Senhor encheu o templo",
+      "feedbackCorrect": "Glória e rio de vida.",
+      "feedbackWrong": {
+        "b": "Encheu.",
+        "c": "Fechada.",
+        "d": "Tudo viverá."
+      },
+      "hint": "Una glória e rio.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 43:5",
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da travessia.",
+      "verseRef": "Ezequiel 40:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ver e anunciar o que foi mostrado"
+        },
+        {
+          "id": "b",
+          "text": "A glória enche; a porta se santifica"
+        },
+        {
+          "id": "c",
+          "text": "O rio traz vida e folhas de remédio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Anuncie, portanto, à casa de Israel tudo o que você está vendo",
+      "feedbackCorrect": "Visão → glória → vida.",
+      "feedbackWrong": {
+        "default": "Comece no anúncio."
+      },
+      "hint": "Comece no anúncio.",
+      "learningObjective": "Encadear a travessia.",
+      "evidence": [
+        "Ezequiel 40:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 44:2, ___ entrará por ela.",
+      "verseRef": "Ezequiel 44:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "ninguém"
+        },
+        {
+          "id": "b",
+          "text": "todos"
+        },
+        {
+          "id": "c",
+          "text": "Gogue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém entrará por ela",
+      "feedbackCorrect": "A palavra é ninguém.",
+      "feedbackWrong": {
+        "b": "Não é todos.",
+        "c": "Não é Gogue."
+      },
+      "hint": "Veja a proibição.",
+      "learningObjective": "Lembrar a proibição.",
+      "evidence": [
+        "Ezequiel 44:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 47:12 a Apocalipse 22:1–2?",
+      "verseRef": "Ezequiel 47:12",
+      "passageA": {
+        "ref": "Ezequiel 47:12"
+      },
+      "passageB": {
+        "ref": "Apocalipse 22:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rio da vida e folhas"
+        },
+        {
+          "id": "b",
+          "text": "Monte Seir"
+        },
+        {
+          "id": "c",
+          "text": "Crocodilo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suas folhas não murcharão, nem faltarão os seus frutos",
+      "feedbackCorrect": "Nos dois, rio e folhas.",
+      "feedbackWrong": {
+        "b": "Seir está em 35.",
+        "c": "Crocodilo está em 32."
+      },
+      "hint": "Compare rio e folhas.",
+      "learningObjective": "Ligar a Apocalipse.",
+      "evidence": [
+        "Ezequiel 47:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 43:5, toque o que encheu o templo.",
+      "verseRef": "Ezequiel 43:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Espírito"
+        },
+        {
+          "id": "c",
+          "text": "átrio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a glória do Senhor encheu o templo",
+      "feedbackCorrect": "A glória encheu.",
+      "feedbackWrong": {
+        "b": "Levantou Ezequiel.",
+        "c": "É o lugar."
+      },
+      "hint": "Procure o que enche.",
+      "learningObjective": "Tocar a glória.",
+      "evidence": [
+        "Ezequiel 43:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o fio das águas.",
+      "verseRef": "Ezequiel 47:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A fonte nasce sob a casa"
+        },
+        {
+          "id": "b",
+          "text": "As águas viram rio impassável"
+        },
+        {
+          "id": "c",
+          "text": "Nas margens há folhas de remédio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "suas folhas, de remédio",
+      "feedbackCorrect": "Fonte → rio → remédio.",
+      "feedbackWrong": {
+        "default": "Comece na fonte."
+      },
+      "hint": "Comece na fonte.",
+      "learningObjective": "Encadear as águas.",
+      "evidence": [
+        "Ezequiel 47:12"
+      ]
+    }
+  ]
+}

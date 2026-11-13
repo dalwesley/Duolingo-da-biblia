@@ -1,0 +1,725 @@
+{
+ "study": {
+  "passageRef": "Provérbios 2:1–6",
+  "passages": [
+   {
+    "ref": "Provérbios 2:1–6"
+   },
+   {
+    "ref": "Provérbios 2:7–12"
+   }
+  ],
+  "context": "O pai ensina o filho a buscar a sabedoria com o mesmo empenho de quem cava por prata. O Senhor é quem a concede, e ela guarda dos caminhos tortos.",
+  "keyword": "Buscar",
+  "keywordGloss": "Procurar a sabedoria como tesouro: com clamores, atenção e coração inclinado.",
+  "focusQuestion": "Você trata a sabedoria como prata a buscar ou como dica opcional?",
+  "reflectionPrompts": [
+   "Busca como tesouro",
+   "O Senhor concede",
+   "Guarda do mal"
+  ],
+  "facts": [
+   {
+    "text": "O filho deve aceitar as palavras e guardar os mandamentos no coração.",
+    "evidenceRef": "Provérbios 2:1",
+    "evidenceSpan": "aceitar as minhas palavras e guardar em seu coração"
+   },
+   {
+    "text": "Deve buscar a sabedoria como a prata e como tesouros ocultos.",
+    "evidenceRef": "Provérbios 2:4",
+    "evidenceSpan": "buscares como a prata"
+   },
+   {
+    "text": "Então compreenderá o temor do Senhor e o conhecimento de Deus.",
+    "evidenceRef": "Provérbios 2:5",
+    "evidenceSpan": "compreenderá o temor do Senhor"
+   },
+   {
+    "text": "O Senhor é quem concede a sabedoria.",
+    "evidenceRef": "Provérbios 2:6",
+    "evidenceSpan": "o Senhor é quem concede a sabedoria"
+   },
+   {
+    "text": "Ele é escudo para os que seguem com sinceridade.",
+    "evidenceRef": "Provérbios 2:7",
+    "evidenceSpan": "é um escudo para os que seguem com sinceridade"
+   },
+   {
+    "text": "A sabedoria guarda e livra do caminho do mal.",
+    "evidenceRef": "Provérbios 2:11",
+    "evidenceSpan": "A sabedoria te guardará"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "prata",
+    "gloss": "Imagem do valor da busca: a sabedoria se procura com empenho de minerador."
+   },
+   {
+    "term": "concede",
+    "gloss": "O Senhor dá a sabedoria; a busca encontra quem a concede."
+   },
+   {
+    "term": "escudo",
+    "gloss": "Proteção para quem anda com sinceridade."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Condições da busca atenta",
+    "evidenceRef": "Provérbios 2:1–4"
+   },
+   {
+    "label": "Resultado: temor e conhecimento",
+    "evidenceRef": "Provérbios 2:5"
+   },
+   {
+    "label": "O Senhor concede e protege",
+    "evidenceRef": "Provérbios 2:6–8"
+   },
+   {
+    "label": "Sabedoria guarda do mal",
+    "evidenceRef": "Provérbios 2:9–12"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Se buscar como prata, então compreenderá o temor do Senhor.",
+    "marker": "Então",
+    "evidenceRef": "Provérbios 2:5"
+   },
+   {
+    "kind": "causa",
+    "text": "Porque o Senhor concede a sabedoria, a busca não é em vão.",
+    "marker": "Porque",
+    "evidenceRef": "Provérbios 2:6"
+   },
+   {
+    "kind": "propósito",
+    "text": "A guarda existe para livrar do caminho do mal.",
+    "marker": "Para",
+    "evidenceRef": "Provérbios 2:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Tiago 1:5",
+    "bridge": "Pedir sabedoria a Deus"
+   },
+   {
+    "ref": "Mateus 13:44",
+    "bridge": "Tesouro digno de busca"
+   },
+   {
+    "ref": "Salmos 111:10",
+    "bridge": "Temor e sabedoria"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A sabedoria nasce só do esforço humano, sem o Senhor.",
+    "why": "2:6 diz que o Senhor é quem concede a sabedoria."
+   },
+   {
+    "text": "Basta ouvir uma vez; não é preciso buscar como tesouro.",
+    "why": "2:3–4 exige clamar e buscar como prata e tesouros ocultos."
+   },
+   {
+    "text": "A sabedoria só informa; não protege de nada.",
+    "why": "2:11–12 diz que ela guarda e livra do caminho do mal."
+   }
+  ],
+  "centralInsight": "A sabedoria se acha quando se busca de verdade — e guarda dos caminhos tortos.",
+  "anchorQuestion": "Quem Provérbios 2:6 diz que concede a sabedoria?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 2:6, a sabedoria é concedida pelos sábios da cidade.",
+   "verseRef": "Provérbios 2:6",
+   "correctOptionId": "false",
+   "evidenceSpan": "o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "O texto diz que o Senhor é quem concede a sabedoria.",
+   "feedbackWrong": {
+    "true": "Releia 2:6: quem concede é o Senhor, não os sábios da cidade."
+   },
+   "hint": "Veja quem é o sujeito de conceder.",
+   "learningObjective": "Observar quem concede a sabedoria.",
+   "evidence": [
+    "Provérbios 2:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 2:6, toque quem concede a sabedoria.",
+   "verseRef": "Provérbios 2:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "o Senhor"
+    },
+    {
+     "id": "b",
+     "text": "da Sua boca"
+    },
+    {
+     "id": "c",
+     "text": "entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "Quem concede é o Senhor; da sua boca vêm conhecimento e entendimento.",
+   "feedbackWrong": {
+    "b": "\"Da Sua boca\" diz de onde vem o conhecimento, não quem concede.",
+    "c": "O entendimento é o que provém; quem concede é o Senhor."
+   },
+   "hint": "Procure o sujeito no começo da frase.",
+   "learningObjective": "Identificar o doador da sabedoria.",
+   "evidence": [
+    "Provérbios 2:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 2:4, com que intensidade se deve buscar a sabedoria?",
+   "verseRef": "Provérbios 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Como quem busca prata e tesouros ocultos"
+    },
+    {
+     "id": "b",
+     "text": "Como quem lê só por curiosidade"
+    },
+    {
+     "id": "c",
+     "text": "Como quem espera sem procurar"
+    },
+    {
+     "id": "d",
+     "text": "Como quem evita o entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "buscares como a prata",
+   "feedbackCorrect": "A busca é comparada à prata e a tesouros ocultos.",
+   "feedbackWrong": {
+    "b": "O texto exige busca intensa, não curiosidade leve.",
+    "c": "Há clamor e procura, não espera passiva.",
+    "d": "O alvo é a sabedoria, não evitá-la."
+   },
+   "hint": "Compare a busca a metais e tesouros.",
+   "learningObjective": "Observar a intensidade da busca.",
+   "evidence": [
+    "Provérbios 2:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 2:4–5 na ordem do texto.",
+   "verseRef": "Provérbios 2:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Se a buscares como a prata"
+    },
+    {
+     "id": "b",
+     "text": "e a procurares como tesouros ocultos"
+    },
+    {
+     "id": "c",
+     "text": "Então, você compreenderá o temor do Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Se a buscares como a prata",
+   "feedbackCorrect": "Buscar e procurar vêm antes; o \"então\" traz o temor do Senhor.",
+   "feedbackWrong": {
+    "default": "O temor vem depois da busca como prata."
+   },
+   "hint": "O resultado começa com \"Então\".",
+   "learningObjective": "Seguir a ordem busca → entendimento.",
+   "evidence": [
+    "Provérbios 2:4",
+    "Provérbios 2:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 2:4, a que a busca da sabedoria é comparada?",
+   "verseRef": "Provérbios 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "prata"
+    },
+    {
+     "id": "b",
+     "text": "areia"
+    },
+    {
+     "id": "c",
+     "text": "palha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "buscares como a prata",
+   "feedbackCorrect": "A comparação é com a prata: busca valiosa e diligente.",
+   "feedbackWrong": {
+    "b": "Não é areia; o texto fala de prata.",
+    "c": "Não é palha; é prata e tesouros."
+   },
+   "hint": "Metal precioso no meio do versículo.",
+   "learningObjective": "Lembrar a imagem da busca.",
+   "evidence": [
+    "Provérbios 2:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 2:6 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 2:6",
+   "passageA": {
+    "ref": "Provérbios 2:6",
+    "text": "o Senhor é quem concede a sabedoria"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A busca encontra quem de fato dá a sabedoria: o Senhor."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria só humana"
+    },
+    {
+     "id": "b",
+     "text": "Dom que o Senhor dá"
+    },
+    {
+     "id": "c",
+     "text": "Tesouro sem doador"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "O versículo liga a busca ao Dom: o Senhor concede.",
+   "feedbackWrong": {
+    "a": "O texto aponta o Senhor, não só o esforço humano.",
+    "c": "Há doador explícito: o Senhor."
+   },
+   "hint": "Veja quem concede.",
+   "learningObjective": "Ligar o versículo ao Dom da sabedoria.",
+   "evidence": [
+    "Provérbios 2:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 2:5–6, o temor do Senhor aparece como resultado automático, sem qualquer busca prévia.",
+   "verseRef": "Provérbios 2:4–5",
+   "correctOptionId": "false",
+   "evidenceSpan": "Então, você compreenderá o temor do Senhor",
+   "feedbackCorrect": "O \"então\" depende da busca como prata descrita antes.",
+   "feedbackWrong": {
+    "true": "Releia 2:4–5: o temor vem depois de buscar e procurar."
+   },
+   "hint": "Repare na palavra que liga a busca ao resultado.",
+   "learningObjective": "Compreender a condição antes do temor.",
+   "evidence": [
+    "Provérbios 2:4",
+    "Provérbios 2:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 2:5, toque a palavra que marca o resultado da busca.",
+   "verseRef": "Provérbios 2:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "temor"
+    },
+    {
+     "id": "b",
+     "text": "Então"
+    },
+    {
+     "id": "c",
+     "text": "Deus"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Então, você compreenderá o temor do Senhor",
+   "feedbackCorrect": "\"Então\" marca o resultado: depois da busca vem o entendimento.",
+   "feedbackWrong": {
+    "a": "\"Temor\" é o que se compreende, não o marcador do resultado.",
+    "c": "\"Deus\" fecha o conhecimento; o marcador está no início."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de resultado.",
+   "evidence": [
+    "Provérbios 2:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Provérbios 2:6 se relaciona com a busca de 2:4?",
+   "verseRef": "Provérbios 2:4–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Explica por que a busca encontra resposta: o Senhor concede"
+    },
+    {
+     "id": "b",
+     "text": "Diz que a busca é inútil porque ninguém concede"
+    },
+    {
+     "id": "c",
+     "text": "Troca a prata por descanso sem procurar"
+    },
+    {
+     "id": "d",
+     "text": "Afirma que só o esforço humano basta"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "\"Porque\" liga a concessão do Senhor ao fruto da busca.",
+   "feedbackWrong": {
+    "b": "O texto afirma que o Senhor concede.",
+    "c": "A busca como prata continua exigida.",
+    "d": "O Senhor é a fonte; o esforço não basta sozinho."
+   },
+   "hint": "Leia a palavra que abre 2:6.",
+   "learningObjective": "Relacionar busca e concessão divina.",
+   "evidence": [
+    "Provérbios 2:4",
+    "Provérbios 2:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Provérbios 2:1–12?",
+   "verseRef": "Provérbios 2:4–5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Condições da busca atenta"
+    },
+    {
+     "id": "b",
+     "text": "O Senhor concede e protege"
+    },
+    {
+     "id": "c",
+     "text": "A sabedoria guarda do mal"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "buscares como a prata",
+   "feedbackCorrect": "Busca, concessão divina e guarda formam o movimento do capítulo.",
+   "feedbackWrong": {
+    "default": "Comece pela busca; a guarda do mal vem por último."
+   },
+   "hint": "A proteção fecha o trecho.",
+   "learningObjective": "Compreender o movimento busca–dom–guarda.",
+   "evidence": [
+    "Provérbios 2:4",
+    "Provérbios 2:6",
+    "Provérbios 2:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 2:6, que verbo diz o que o Senhor faz com a sabedoria?",
+   "verseRef": "Provérbios 2:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "esconde"
+    },
+    {
+     "id": "b",
+     "text": "concede"
+    },
+    {
+     "id": "c",
+     "text": "vende"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "\"Concede\" carrega a relação: a sabedoria é dom do Senhor.",
+   "feedbackWrong": {
+    "a": "Ele não esconde; concede.",
+    "c": "Não há venda; há concessão."
+   },
+   "hint": "Verbo ligado a quem é o Senhor no versículo.",
+   "learningObjective": "Lembrar o verbo da concessão.",
+   "evidence": [
+    "Provérbios 2:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 2:6 a Tiago 1:5?",
+   "verseRef": "Provérbios 2:6",
+   "passageA": {
+    "ref": "Provérbios 2:6"
+   },
+   "passageB": {
+    "ref": "Tiago 1:5"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedir sabedoria a Deus"
+    },
+    {
+     "id": "b",
+     "text": "Comprar sabedoria humana"
+    },
+    {
+     "id": "c",
+     "text": "Evitar todo entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "Nos dois textos, a sabedoria vem de Deus a quem busca.",
+   "feedbackWrong": {
+    "b": "Não há compra; há pedido e concessão.",
+    "c": "O alvo é receber sabedoria, não evitá-la."
+   },
+   "hint": "Compare a fonte da sabedoria.",
+   "learningObjective": "Cruzar a concessão da sabedoria em Provérbios e Tiago.",
+   "evidence": [
+    "Provérbios 2:6",
+    "Tiago 1:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 2:6–11, a sabedoria aparece como dom do Senhor que também guarda o caminho.",
+   "verseRef": "Provérbios 2:6–7",
+   "correctOptionId": "true",
+   "evidenceSpan": "o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "Ele concede e ainda é escudo; depois a sabedoria guarda o coração.",
+   "feedbackWrong": {
+    "false": "O texto une concessão (2:6) e proteção (2:7, 2:11)."
+   },
+   "hint": "Veja o que o Senhor faz e o que a sabedoria faz.",
+   "learningObjective": "Interpretar sabedoria como dom que protege.",
+   "evidence": [
+    "Provérbios 2:6",
+    "Provérbios 2:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 2:7, toque o trecho que descreve como os protegidos seguem.",
+   "verseRef": "Provérbios 2:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "escudo"
+    },
+    {
+     "id": "b",
+     "text": "sinceridade"
+    },
+    {
+     "id": "c",
+     "text": "justos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "seguem com sinceridade",
+   "feedbackCorrect": "\"Sinceridade\" marca o modo de quem o Senhor protege como escudo.",
+   "feedbackWrong": {
+    "a": "\"Escudo\" é a proteção; o modo de seguir é a sinceridade.",
+    "c": "\"Justos\" recebe a sabedoria; o modo pedido está no fim."
+   },
+   "hint": "Última ideia do versículo, após o escudo.",
+   "learningObjective": "Sustentar no texto o modo de quem é protegido.",
+   "evidence": [
+    "Provérbios 2:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 2:4–6 sustenta?",
+   "verseRef": "Provérbios 2:4–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "A busca diligente encontra a sabedoria que o Senhor concede"
+    },
+    {
+     "id": "b",
+     "text": "Só o esforço humano basta, sem o Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Basta ouvir uma vez, sem buscar como tesouro"
+    },
+    {
+     "id": "d",
+     "text": "A sabedoria informa, mas nunca protege"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque o Senhor é quem concede a sabedoria",
+   "feedbackCorrect": "Busca como prata e concessão do Senhor andam juntos no texto.",
+   "feedbackWrong": {
+    "b": "2:6 aponta o Senhor como fonte.",
+    "c": "2:3–4 exige busca intensa.",
+    "d": "2:11 fala de guarda."
+   },
+   "hint": "Una a imagem da prata à frase com \"Porque\".",
+   "learningObjective": "Escolher a leitura que o texto sustenta.",
+   "evidence": [
+    "Provérbios 2:4",
+    "Provérbios 2:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência liga a busca da sabedoria na Bíblia?",
+   "verseRef": "Provérbios 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Buscar a sabedoria como prata"
+    },
+    {
+     "id": "b",
+     "text": "Pedir sabedoria a Deus que concede"
+    },
+    {
+     "id": "c",
+     "text": "Achar o tesouro digno de tudo vender"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "buscares como a prata",
+   "feedbackCorrect": "Provérbios pede busca; Tiago manda pedir; Jesus fala do tesouro.",
+   "feedbackWrong": {
+    "default": "Comece por Provérbios 2:4; depois Tiago 1:5 e Mateus 13:44."
+   },
+   "hint": "Da busca no AT ao pedido e ao tesouro no NT.",
+   "learningObjective": "Ver a busca da sabedoria atravessar a Bíblia.",
+   "evidence": [
+    "Provérbios 2:4",
+    "Tiago 1:5",
+    "Mateus 13:44"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 2:7, que imagem diz como o Senhor protege os sinceros?",
+   "verseRef": "Provérbios 2:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "espada"
+    },
+    {
+     "id": "b",
+     "text": "escudo"
+    },
+    {
+     "id": "c",
+     "text": "muro"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "é um escudo para os que seguem com sinceridade",
+   "feedbackCorrect": "\"Escudo\" carrega o sentido de proteção para quem segue com sinceridade.",
+   "feedbackWrong": {
+    "a": "Não é espada; a imagem é escudo.",
+    "c": "Não é muro; o texto diz escudo."
+   },
+   "hint": "Objeto de defesa no versículo.",
+   "learningObjective": "Lembrar o termo da proteção.",
+   "evidence": [
+    "Provérbios 2:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 2:5 a Salmos 111:10?",
+   "verseRef": "Provérbios 2:5",
+   "passageA": {
+    "ref": "Provérbios 2:5",
+    "text": "compreenderá o temor do Senhor"
+   },
+   "passageB": {
+    "ref": "Salmos 111:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor e sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Riqueza sem temor"
+    },
+    {
+     "id": "c",
+     "text": "Busca sem resultado"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "temor do Senhor",
+   "feedbackCorrect": "Nos dois textos, o temor do Senhor se liga à sabedoria.",
+   "feedbackWrong": {
+    "b": "O eixo é temor e sabedoria, não riqueza.",
+    "c": "Há resultado: compreender o temor."
+   },
+   "hint": "Compare o papel do temor do Senhor.",
+   "learningObjective": "Ligar temor e sabedoria em Provérbios e Salmos.",
+   "evidence": [
+    "Provérbios 2:5",
+    "Salmos 111:10"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 75:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 75:1–6"
+      },
+      {
+        "ref": "Salmos 75:7–10"
+      }
+    ],
+    "context": "Graças te damos; Deus é o juiz: a um abate e a outro exalta. Não vos ensoberbeçais.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Deus é o juiz",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "A ti, ó Deus, rendemos graças; a ti glorificamos, pois o teu nome está próximo e as tuas maravilhas…",
+        "evidenceRef": "Salmos 75:1",
+        "evidenceSpan": "A ti"
+      },
+      {
+        "text": "Quando eu ocupar o tempo determinado.",
+        "evidenceRef": "Salmos 75:2",
+        "evidenceSpan": "Quando eu ocupar o tempo determinado"
+      },
+      {
+        "text": "A terra e todos os seus habitantes estão.",
+        "evidenceRef": "Salmos 75:3",
+        "evidenceSpan": "A terra e todos os seus habitantes estão"
+      },
+      {
+        "text": "Dizei aos arrogantes.",
+        "evidenceRef": "Salmos 75:4",
+        "evidenceSpan": "Dizei aos arrogantes"
+      },
+      {
+        "text": "Não levantem a sua cabeça de maneira arrogante.",
+        "evidenceRef": "Salmos 75:5",
+        "evidenceSpan": "Não levantem a sua cabeça de maneira arrogante"
+      },
+      {
+        "text": "Porque a exaltação não provém do Oriente.",
+        "evidenceRef": "Salmos 75:6",
+        "evidenceSpan": "Porque a exaltação não provém do Oriente"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "rendemos",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ti ó deus rendemos graças",
+        "evidenceRef": "Salmos 75:1"
+      },
+      {
+        "label": "Quando eu ocupar o tempo determinado",
+        "evidenceRef": "Salmos 75:2"
+      },
+      {
+        "label": "A terra e todos os seus",
+        "evidenceRef": "Salmos 75:3"
+      },
+      {
+        "label": "Dizei aos arrogantes não se exaltem",
+        "evidenceRef": "Salmos 75:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 75:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Salmos 75:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"mas\".",
+        "marker": "mas",
+        "evidenceRef": "Salmos 75:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      },
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "O cálice está na mão de Deus; a soberba será cortada."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "O cálice está na mão de Deus; a soberba será cortada.",
+    "anchorQuestion": "O que Salmos 75:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 75:1, a ti.",
+      "verseRef": "Salmos 75:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "A ti",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 75:1 afirma.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 75:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 75:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "rendemos"
+        },
+        {
+          "id": "c",
+          "text": "graças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca «Deus».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 75:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 75:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A terra e todos os seus habitantes estão"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A terra e todos os seus habitantes estão",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 75:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 75:1 na ordem do texto.",
+      "verseRef": "Salmos 75:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ti"
+        },
+        {
+          "id": "b",
+          "text": "ó Deus"
+        },
+        {
+          "id": "c",
+          "text": "rendemos graças"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A ti",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 75:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 75:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dizei"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "rendemos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Dizei",
+      "feedbackCorrect": "A palavra do versículo é «Dizei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 75:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 75:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 75:1",
+      "passageA": {
+        "ref": "Salmos 75:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Graças te damos; Deus é o juiz: a um abate e a outro exalta. Não vos ensoberbeçais."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 75:1, o marcador pois une ideias no fluxo do texto.",
+      "verseRef": "Salmos 75:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 75:1 afirma.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 75:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 75:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "rendemos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 75:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 75:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Dizei aos arrogantes",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 75:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 75:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ti ó deus rendemos graças"
+        },
+        {
+          "id": "b",
+          "text": "Quando eu ocupar o tempo determinado"
+        },
+        {
+          "id": "c",
+          "text": "A terra e todos os seus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 75:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 75:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "terra"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "rendemos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "terra",
+      "feedbackCorrect": "A palavra do versículo é «terra».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 75:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 75:1 a Salmos 51:10.",
+      "verseRef": "Salmos 75:1",
+      "passageA": {
+        "ref": "Salmos 75:1"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 75:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Desmantelarei",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 75:10 afirma.",
+      "evidence": [
+        "Salmos 75:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 75:10, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 75:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desmantelarei"
+        },
+        {
+          "id": "b",
+          "text": "forças"
+        },
+        {
+          "id": "c",
+          "text": "ímpios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desmantelarei",
+      "feedbackCorrect": "O versículo destaca «Desmantelarei».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 75:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 75:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 75:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não levantem a sua cabeça de maneira arrogante",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 75:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 75:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 75:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 75:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantem"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "rendemos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levantem",
+      "feedbackCorrect": "A palavra do versículo é «levantem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 75:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 75:1 a Salmos 119:105.",
+      "verseRef": "Salmos 75:1",
+      "passageA": {
+        "ref": "Salmos 75:1"
+      },
+      "passageB": {
+        "ref": "Salmos 119:105"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâmpada para os pés"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 75:1"
+      ]
+    }
+  ]
+}

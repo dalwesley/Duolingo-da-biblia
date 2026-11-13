@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 109:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 109:1–6"
+      },
+      {
+        "ref": "Salmos 109:7–8"
+      }
+    ],
+    "context": "Ó Deus do meu louvor, não te cales; cercaram-me com palavras de ódio. Livra-me.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Boca de mentira",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Ó Deus, a quem louvo, não te cales!",
+        "evidenceRef": "Salmos 109:1",
+        "evidenceSpan": "Ó Deus"
+      },
+      {
+        "text": "Pois a boca dos ímpios e dos enganadores.",
+        "evidenceRef": "Salmos 109:2",
+        "evidenceSpan": "Pois a boca dos ímpios e dos enganadores"
+      },
+      {
+        "text": "Cercam-me com palavras odiosas e me atacam sem.",
+        "evidenceRef": "Salmos 109:3",
+        "evidenceSpan": "Cercam-me com palavras odiosas e me atacam sem"
+      },
+      {
+        "text": "Por causa do meu amor eles se tornam.",
+        "evidenceRef": "Salmos 109:4",
+        "evidenceSpan": "Por causa do meu amor eles se tornam"
+      },
+      {
+        "text": "Retribuíram-me o bem com o mal e o.",
+        "evidenceRef": "Salmos 109:5",
+        "evidenceSpan": "Retribuíram-me o bem com o mal e o"
+      },
+      {
+        "text": "Suscita contra ele um ímpio.",
+        "evidenceRef": "Salmos 109:6",
+        "evidenceSpan": "Suscita contra ele um ímpio"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "quem",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "louvo",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ó deus a quem louvo não",
+        "evidenceRef": "Salmos 109:1"
+      },
+      {
+        "label": "Pois a boca dos ímpios e",
+        "evidenceRef": "Salmos 109:2"
+      },
+      {
+        "label": "Cercam-me com palavras odiosas e me",
+        "evidenceRef": "Salmos 109:3"
+      },
+      {
+        "label": "Por causa do meu amor eles",
+        "evidenceRef": "Salmos 109:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Pois\".",
+        "marker": "Pois",
+        "evidenceRef": "Salmos 109:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"entretanto\".",
+        "marker": "entretanto",
+        "evidenceRef": "Salmos 109:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Salmos 109:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 27:1",
+        "bridge": "Luz e salvação"
+      },
+      {
+        "ref": "Salmos 90:1",
+        "bridge": "Morada em todas as gerações"
+      },
+      {
+        "ref": "Salmos 121:2",
+        "bridge": "Socorro vem do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Acusação e oração imprecatoria: o pobre e necessitado ainda louva no meio da assembleia."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Acusação e oração imprecatoria: o pobre e necessitado ainda louva no meio da assembleia.",
+    "anchorQuestion": "O que Salmos 109:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 109:1, ó Deus.",
+      "verseRef": "Salmos 109:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ó Deus",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 109:1 afirma.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 109:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 109:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "quem"
+        },
+        {
+          "id": "c",
+          "text": "louvo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca «Deus».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 109:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 109:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cercam-me com palavras odiosas e me atacam sem"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cercam-me com palavras odiosas e me atacam sem",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 109:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 109:1 na ordem do texto.",
+      "verseRef": "Salmos 109:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ó Deus"
+        },
+        {
+          "id": "b",
+          "text": "a quem louvo"
+        },
+        {
+          "id": "c",
+          "text": "não te cales"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ó Deus",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 109:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 109:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "causa"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "quem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "causa",
+      "feedbackCorrect": "A palavra do versículo é «causa».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 109:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 109:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 109:1",
+      "passageA": {
+        "ref": "Salmos 109:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ó Deus do meu louvor, não te cales; cercaram-me com palavras de ódio. Livra-me."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 109:2, o marcador Pois une ideias no fluxo do texto.",
+      "verseRef": "Salmos 109:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 109:2 afirma.",
+      "evidence": [
+        "Salmos 109:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 109:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 109:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pois"
+        },
+        {
+          "id": "b",
+          "text": "boca"
+        },
+        {
+          "id": "c",
+          "text": "dos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo destaca «Pois».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 109:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 109:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 109:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por causa do meu amor eles se tornam",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 109:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 109:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ó deus a quem louvo não"
+        },
+        {
+          "id": "b",
+          "text": "Pois a boca dos ímpios"
+        },
+        {
+          "id": "c",
+          "text": "Cercam-me com palavras odiosas e me"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 109:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 109:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cercam-me"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "quem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cercam-me",
+      "feedbackCorrect": "A palavra do versículo é «Cercam-me».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 109:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 109:1 a Salmos 27:1.",
+      "verseRef": "Salmos 109:1",
+      "passageA": {
+        "ref": "Salmos 109:1"
+      },
+      "passageB": {
+        "ref": "Salmos 27:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luz e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 109:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Sejam",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 109:8 afirma.",
+      "evidence": [
+        "Salmos 109:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 109:8, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 109:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sejam"
+        },
+        {
+          "id": "b",
+          "text": "breves"
+        },
+        {
+          "id": "c",
+          "text": "seus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sejam",
+      "feedbackCorrect": "O versículo destaca «Sejam».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 109:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 109:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 109:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Retribuíram-me o bem com o mal e o",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 109:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 109:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 109:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 109:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retribuíram-me"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "quem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Retribuíram-me",
+      "feedbackCorrect": "A palavra do versículo é «Retribuíram-me».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 109:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 109:1 a Salmos 90:1.",
+      "verseRef": "Salmos 109:1",
+      "passageA": {
+        "ref": "Salmos 109:1"
+      },
+      "passageB": {
+        "ref": "Salmos 90:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Morada em todas as gerações"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 109:1"
+      ]
+    }
+  ]
+}

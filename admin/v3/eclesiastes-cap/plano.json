@@ -1,0 +1,124 @@
+{
+  "slug": "eclesiastes-cap",
+  "prefix": "ecc",
+  "book": "Eclesiastes",
+  "chapters": 12,
+  "title": "Eclesiastes",
+  "description": "Eclesiastes capítulo a capítulo: vaidade sob o sol e o temor de Deus.",
+  "icon": "⏳",
+  "color": "#8A7A5A",
+  "order": 23,
+  "realm": "antigo-testamento",
+  "category": "poeticos",
+  "avoidTrails": [
+    "eclesiastes"
+  ],
+  "modules": [
+    {
+      "title": "Sob o sol · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Eclesiastes 1:5–12",
+          "title": "Gerações que passam",
+          "intro": "O sol nasce e se põe, os rios correm ao mar, e o Pregador, rei em Jerusalém, fala.",
+          "insight": "Debaixo do sol, o ciclo se repete: há cansaço nas coisas, e memória curta nas gerações.",
+          "objective": "Ciclo sob o sol",
+          "chapters": "1"
+        },
+        {
+          "ref": "Eclesiastes 2:18–26",
+          "title": "Trabalho e herdeiro",
+          "intro": "O Pregador odeia o trabalho cujo fruto fica para quem não trabalhou, e vê o dom de Deus.",
+          "insight": "Sem Deus, o fruto do suor vira angústia; com Deus, até o simples se torna alegria.",
+          "objective": "Dom no trabalho"
+        },
+        {
+          "ref": "Eclesiastes 3:1–8",
+          "title": "Tempo para tudo",
+          "intro": "Há tempo de nascer e de morrer, de plantar e de arrancar, de calar e de falar.",
+          "insight": "A vida tem estações: sabedoria é reconhecer o tempo, não forçar o relógio.",
+          "objective": "Tempo de Deus"
+        },
+        {
+          "ref": "Eclesiastes 4:7–12",
+          "title": "Melhor serem dois",
+          "intro": "O Pregador vê o solitário sem fim no trabalho e elogia os dois que se aquecem juntos.",
+          "insight": "Companhia é graça sob o sol: o cordão de três dobras não se quebra fácil.",
+          "objective": "Companhia que sustenta"
+        },
+        {
+          "ref": "Eclesiastes 5:1–7",
+          "title": "Chega-te para ouvir",
+          "intro": "Guarda o pé na casa de Deus, não te apresses com a boca, e paga o que votaste.",
+          "insight": "Diante de Deus, menos palavras vazias e mais escuta e fidelidade ao voto.",
+          "objective": "Ouvir antes de falar"
+        },
+        {
+          "ref": "Eclesiastes 6:1–9",
+          "title": "Riqueza sem proveito",
+          "intro": "Há quem receba riquezas e não possa comer — um estranho as come. Melhor o que se vê.",
+          "insight": "Ter sem saborear é vaidade: o desejo sem freio nunca se farta.",
+          "objective": "Fartura sem gosto"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sob o sol",
+        "intro": "Revise o ciclo sob o sol, o trabalho, os tempos, a companhia, o culto e a riqueza sem proveito.",
+        "insight": "Debaixo do sol, tudo cansa — e ainda assim há dons de Deus"
+      }
+    },
+    {
+      "title": "Sabedoria e fim · cap. 7–12",
+      "scenes": [
+        {
+          "ref": "Eclesiastes 7:1–14",
+          "title": "Dia da morte e da prosperidade",
+          "intro": "Melhor o bom nome que o perfume; no dia da prosperidade alegra-te, no da adversidade considera.",
+          "insight": "Deus fez um e outro: a sabedoria aprende nos dois dias, sem fingir controle.",
+          "objective": "Considerar nos dois dias"
+        },
+        {
+          "ref": "Eclesiastes 8:10–17",
+          "title": "Juízo e mistério",
+          "intro": "O Pregador vê o túmulo do ímpio elogiado e confessa: o homem não alcança a obra de Deus.",
+          "insight": "Há demora no juízo e limite na mente: temer a Deus é mais seguro que explicar tudo.",
+          "objective": "Limite e temor"
+        },
+        {
+          "ref": "Eclesiastes 9:7–12",
+          "title": "Come teu pão com alegria",
+          "intro": "Goza a vida com a mulher que amas; corre o tempo, e a sorte alcança a todos.",
+          "insight": "Enquanto é dia, receba o simples como dom — a morte não avisa a hora.",
+          "objective": "Alegria no simples"
+        },
+        {
+          "ref": "Eclesiastes 10:12–20",
+          "title": "Lábios do sábio",
+          "intro": "As palavras do sábio agradam; as do tolo o engolem. Até parede tem ouvido.",
+          "insight": "A língua revela o coração: sabedoria cuida do que fala e de quem ouve.",
+          "objective": "Cuidar da língua"
+        },
+        {
+          "ref": "Eclesiastes 11:1–6",
+          "title": "Lança o pão",
+          "intro": "Lança o pão sobre as águas; de manhã semeia, à tarde não descanse a mão.",
+          "insight": "Não esperamos o vento perfeito: quem teme a Deus age sem conhecer todo o fruto.",
+          "objective": "Semeia sem garantir"
+        },
+        {
+          "ref": "Eclesiastes 12:1–8",
+          "title": "Lembra-te do teu Criador",
+          "intro": "Lembra-te do Criador nos dias da mocidade, antes que venham os maus dias e o pó volte à terra.",
+          "insight": "A juventude não é para esquecer Deus: o fim lembra que tudo é vapor sem ele.",
+          "objective": "Lembrar o Criador",
+          "chapters": "12"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sabedoria e fim",
+        "intro": "Revise os dois dias, o mistério do juízo, a alegria simples, a língua, a semeadura e o Criador.",
+        "insight": "No fim, lembrar o Criador é o caminho que resta"
+      }
+    }
+  ]
+}

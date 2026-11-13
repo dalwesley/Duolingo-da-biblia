@@ -1,0 +1,697 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 32:20–26",
+    "passages": [
+      {
+        "ref": "2 Crônicas 32:20–26"
+      }
+    ],
+    "context": "Ezequias e Isaías oram; o Senhor fere o arraial da Assíria. Orar e humilhar-se",
+    "keyword": "Ezequias",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Anjo livra",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Crônicas 32:20 afirma: Então o rei Ezequias e o profeta Isaías.",
+        "evidenceRef": "2 Crônicas 32:20",
+        "evidenceSpan": "Então o rei Ezequias e o profeta Isaías"
+      },
+      {
+        "text": "O texto em 2 Crônicas 32:22 afirma: Assim, o Senhor livrou Ezequias e os habitantes de.",
+        "evidenceRef": "2 Crônicas 32:22",
+        "evidenceSpan": "Assim, o Senhor livrou Ezequias e os habitantes de"
+      },
+      {
+        "text": "O texto em 2 Crônicas 32:24 afirma: Naqueles dias.",
+        "evidenceRef": "2 Crônicas 32:24",
+        "evidenceSpan": "Naqueles dias"
+      },
+      {
+        "text": "O texto em 2 Crônicas 32:26 afirma: Ezequias, porém, se humilhou por causa da soberba de.",
+        "evidenceRef": "2 Crônicas 32:26",
+        "evidenceSpan": "Ezequias, porém, se humilhou por causa da soberba de"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Ezequias",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "profeta",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "Isaías",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "2 Crônicas 32:20"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "2 Crônicas 32:22"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "2 Crônicas 32:26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 2 Crônicas 32:24.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 32:24"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 2 Crônicas 32:26.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 32:26"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 2 Crônicas 32:20 a 2 Crônicas 32:26.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 32:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "O Senhor enviou um anjo e livrou: depois, Ezequias se humilha e a ira se desvia.",
+    "anchorQuestion": "O que 2 Crônicas 32:20–26 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 32:20 o nome rei está ausente do versículo",
+      "verseRef": "2 Crônicas 32:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "rei",
+      "feedbackCorrect": "O versículo contém \"rei\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 32:20: \"rei\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 32:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 32:20, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Crônicas 32:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "rei"
+        },
+        {
+          "id": "b",
+          "text": "Ezequias"
+        },
+        {
+          "id": "c",
+          "text": "Isaías"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rei",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 32:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 32:22, o que o texto destaca?",
+      "verseRef": "2 Crônicas 32:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de o Senhor no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim, o Senhor livrou Ezequias e os",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "O texto nomeia pessoas e ações.",
+        "c": "Não há essa proibição aqui.",
+        "d": "Isso não é o que o versículo diz."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "2 Crônicas 32:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 32:20 na ordem do texto.",
+      "verseRef": "2 Crônicas 32:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então o rei Ezequias e o profeta Isaías"
+        },
+        {
+          "id": "b",
+          "text": "filho de Amoz"
+        },
+        {
+          "id": "c",
+          "text": "oraram por causa disso e clamaram ao céu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então o rei Ezequias e o profeta Isaías",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "2 Crônicas 32:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 32:22, que palavra importante o texto usa?",
+      "verseRef": "2 Crônicas 32:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "livrou"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Ezequias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Assim, o Senhor livrou Ezequias e os habitantes de",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 32:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 32:20 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 32:20",
+      "passageA": {
+        "ref": "2 Crônicas 32:20"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ezequias e Isaías oram; o Senhor fere o arraial da Assíria."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tema da passagem"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então o rei Ezequias e o profeta Isaías",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "O texto afirma, não nega tudo.",
+        "c": "Há nomes e ações no trecho."
+      },
+      "hint": "Compare os dois textos com atenção.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "2 Crônicas 32:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 32:24 o nome Naqueles está ausente do versículo",
+      "verseRef": "2 Crônicas 32:24",
+      "correctOptionId": "false",
+      "evidenceSpan": "Naqueles",
+      "feedbackCorrect": "O versículo contém \"Naqueles\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 32:24: \"Naqueles\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 32:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 32:20, toque a palavra que marca a relação no texto.",
+      "verseRef": "2 Crônicas 32:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ezequias"
+        },
+        {
+          "id": "b",
+          "text": "Isaías"
+        },
+        {
+          "id": "c",
+          "text": "filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ezequias",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 32:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 32:24 se relaciona com o restante do trecho?",
+      "verseRef": "2 Crônicas 32:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Naqueles dias",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "O texto continua a mesma cena.",
+        "c": "Continuamos no mesmo livro.",
+        "d": "O trecho registra a ação divina ou humana."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "2 Crônicas 32:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "2 Crônicas 32:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Assim, o Senhor livrou Ezequias e os",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 32:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 32:24, que palavra carrega a relação ou a ação?",
+      "verseRef": "2 Crônicas 32:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias"
+        },
+        {
+          "id": "b",
+          "text": "Naqueles"
+        },
+        {
+          "id": "c",
+          "text": "Ezequias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Naqueles dias",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 32:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 32:22 a Salmos 23:1?",
+      "verseRef": "2 Crônicas 32:22",
+      "passageA": {
+        "ref": "2 Crônicas 32:22"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim, o Senhor livrou Ezequias e os",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "O vínculo é de fé, não de negação.",
+        "c": "Não é o fim da oração."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "2 Crônicas 32:22",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 32:26 aparece a palavra Ezequias",
+      "verseRef": "2 Crônicas 32:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ezequias, porém, se humilhou por causa da",
+      "feedbackCorrect": "O versículo traz \"Ezequias\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia 2 Crônicas 32:26: a palavra está no versículo."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 32:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 32:26, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "2 Crônicas 32:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "humilhou"
+        },
+        {
+          "id": "b",
+          "text": "por"
+        },
+        {
+          "id": "c",
+          "text": "causa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "humilhou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 32:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "2 Crônicas 32:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor enviou um anjo e livrou: depois, Ezequias se humilha e a ira se desvia."
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ezequias, porém, se humilhou por causa da",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "O trecho registra a ação de Deus.",
+        "c": "O texto não elogia a idolatria.",
+        "d": "Há falhas e juízos no relato bíblico."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "2 Crônicas 32:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "2 Crônicas 32:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ezequias, porém, se humilhou por causa",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 32:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 32:20, que termo carrega o sentido da cena?",
+      "verseRef": "2 Crônicas 32:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ezequias"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "Isaías"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Então o rei Ezequias e o profeta Isaías",
+      "feedbackCorrect": "O termo \"profeta\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Esse não é o termo central aqui.",
+        "c": "Esse não é o termo central aqui."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "2 Crônicas 32:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 32:26 a Salmos 46:1?",
+      "verseRef": "2 Crônicas 32:26",
+      "passageA": {
+        "ref": "2 Crônicas 32:26"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ezequias, porém, se humilhou por causa",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "O vínculo aponta esperança, não recusa.",
+        "c": "Não é culto idólatra."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "2 Crônicas 32:26",
+        "Salmos 46:1"
+      ]
+    }
+  ]
+}

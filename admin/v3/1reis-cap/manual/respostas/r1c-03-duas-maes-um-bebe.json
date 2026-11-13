@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "1 Reis 3:24–28",
+    "passages": [
+      {
+        "ref": "1 Reis 3:16–28"
+      }
+    ],
+    "context": "Duas mulheres disputam um bebê vivo. Sem testemunhas, Salomão propõe dividir a criança e a verdadeira mãe se revela pelo amor.",
+    "keyword": "sabedoria",
+    "keywordGloss": "O povo vê em Salomão a sabedoria de Deus para fazer justiça.",
+    "focusQuestion": "Você deixa o amor verdadeiro aparecer quando a decisão dói?",
+    "reflectionPrompts": [
+      "Disputa sem testemunha",
+      "Prova da espada",
+      "Sabedoria de Deus"
+    ],
+    "facts": [
+      {
+        "text": "Duas prostitutas apresentaram-se diante do rei.",
+        "evidenceRef": "1 Reis 3:16",
+        "evidenceSpan": "duas mulheres que eram prostitutas apresentaram-se diante do rei"
+      },
+      {
+        "text": "Uma alega que a outra trocou o filho morto pelo vivo.",
+        "evidenceRef": "1 Reis 3:20",
+        "evidenceSpan": "levou meu filho, enquanto a tua serva dormia"
+      },
+      {
+        "text": "O rei pediu uma espada e ordenou cortar o menino vivo ao meio.",
+        "evidenceRef": "1 Reis 3:24–25",
+        "evidenceSpan": "Cortem o menino vivo ao meio"
+      },
+      {
+        "text": "A mãe do vivo pediu que dessem a criança à outra e não a matassem.",
+        "evidenceRef": "1 Reis 3:26",
+        "evidenceSpan": "dai-lhe o menino vivo e por modo nenhum o mateis"
+      },
+      {
+        "text": "O rei deu o menino à primeira porque ela é a mãe.",
+        "evidenceRef": "1 Reis 3:27",
+        "evidenceSpan": "porque ela é a sua mãe"
+      },
+      {
+        "text": "Israel viu que nele havia a sabedoria de Deus para a justiça.",
+        "evidenceRef": "1 Reis 3:28",
+        "evidenceSpan": "nele havia a sabedoria de Deus para promover a justiça"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sabedoria",
+        "gloss": "Capacidade de Deus em Salomão para promover a justiça."
+      },
+      {
+        "term": "espada",
+        "gloss": "Instrumento da prova que revela o coração das mães."
+      },
+      {
+        "term": "mãe",
+        "gloss": "A verdadeira, revelada pelo amor que recusa a divisão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "As duas mulheres apresentam o caso",
+        "evidenceRef": "1 Reis 3:16–22"
+      },
+      {
+        "label": "Salomão resume a disputa",
+        "evidenceRef": "1 Reis 3:23"
+      },
+      {
+        "label": "A prova da espada revela a mãe",
+        "evidenceRef": "1 Reis 3:24–27"
+      },
+      {
+        "label": "Israel reconhece a sabedoria de Deus",
+        "evidenceRef": "1 Reis 3:28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O filho faleceu porque a mulher se deitou sobre ele.",
+        "marker": "pois",
+        "evidenceRef": "1 Reis 3:19"
+      },
+      {
+        "kind": "causa",
+        "text": "A mulher fala ao rei porque o amor materno se aguçou.",
+        "marker": "pois",
+        "evidenceRef": "1 Reis 3:26"
+      },
+      {
+        "kind": "resultado",
+        "text": "Israel respeita o rei pois viu nele a sabedoria de Deus.",
+        "marker": "pois",
+        "evidenceRef": "1 Reis 3:28"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 3:9",
+        "bridge": "Pedido de coração sábio"
+      },
+      {
+        "ref": "Tiago 1:5",
+        "bridge": "Sabedoria pedida a Deus"
+      },
+      {
+        "ref": "Provérbios 2:6",
+        "bridge": "Sabedoria vem do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Salomão queria de fato matar a criança.",
+        "why": "A ordem revela a mãe; ele devolve o menino vivo."
+      },
+      {
+        "text": "A sentença prova só crueldade, não sabedoria.",
+        "why": "Israel reconhece a sabedoria de Deus para a justiça."
+      },
+      {
+        "text": "A outra mulher também amava o menino igualmente.",
+        "why": "Ela aceita a divisão; a mãe verdadeira recusa a morte."
+      }
+    ],
+    "centralInsight": "O povo vê que a sabedoria de Deus está em Salomão para fazer justiça.",
+    "anchorQuestion": "Por que Salomão deu o menino vivo à primeira mulher?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 3 —27, o rei deu o menino vivo à primeira porque ela é a mãe.",
+      "verseRef": "1 Reis 3:27",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque ela é a sua mãe",
+      "feedbackCorrect": "A sentença reconhece a verdadeira mãe.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja a conclusão do rei.",
+      "learningObjective": "Observar a sentença.",
+      "evidence": [
+        "1 Reis 3:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 3:24, toque o que o rei pediu que trouxessem.",
+      "verseRef": "1 Reis 3:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "espada"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "trouxeram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tragam-me uma espada",
+      "feedbackCorrect": "Pediu uma espada.",
+      "feedbackWrong": {
+        "b": "Ele é o rei.",
+        "c": "É o que fizeram depois."
+      },
+      "hint": "O que deve trazer?",
+      "learningObjective": "Identificar a espada.",
+      "evidence": [
+        "1 Reis 3:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 3:26, o que pediu a mãe do menino vivo?",
+      "verseRef": "1 Reis 3:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dar o menino vivo e de modo nenhum matá-lo"
+        },
+        {
+          "id": "b",
+          "text": "Dividir a criança ao meio"
+        },
+        {
+          "id": "c",
+          "text": "Matar as duas mulheres"
+        },
+        {
+          "id": "d",
+          "text": "Guardar o menino morto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dai-lhe o menino vivo e por modo nenhum o mateis",
+      "feedbackCorrect": "O amor recusa a morte.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o pedido da mãe.",
+      "learningObjective": "Notar o amor materno.",
+      "evidence": [
+        "1 Reis 3:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 3:27 na ordem do texto.",
+      "verseRef": "1 Reis 3:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, respondeu o rei"
+        },
+        {
+          "id": "b",
+          "text": "Dai à primeira o menino vivo e não o mateis"
+        },
+        {
+          "id": "c",
+          "text": "porque ela é a sua mãe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "porque ela é a sua mãe",
+      "feedbackCorrect": "Resposta, ordem e motivo.",
+      "feedbackWrong": {
+        "default": "Comece pela resposta do rei."
+      },
+      "hint": "Quem fala primeiro?",
+      "learningObjective": "Seguir a sentença.",
+      "evidence": [
+        "1 Reis 3:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 3:28, nele havia a ___ de Deus.",
+      "verseRef": "1 Reis 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "sabedoria"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "dúvida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nele havia a sabedoria de Deus",
+      "feedbackCorrect": "Sabedoria de Deus.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que Israel percebeu?",
+      "learningObjective": "Lembrar sabedoria.",
+      "evidence": [
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 3:28 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 3:28",
+      "passageA": {
+        "ref": "1 Reis 3:28"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A disputa do bebê revela a sabedoria do rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sabedoria de Deus na justiça"
+        },
+        {
+          "id": "b",
+          "text": "Crueldade sem propósito"
+        },
+        {
+          "id": "c",
+          "text": "Povo indiferente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "O povo reconhece a sabedoria.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que Israel viu?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 3 —26, a mãe do vivo fala ao rei porque odiava a outra mulher.",
+      "verseRef": "1 Reis 3:26",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois o amor materno se aguçou por seu filho",
+      "feedbackCorrect": "A causa é o amor materno, não o ódio.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o pois.",
+      "learningObjective": "Ver a causa do pedido.",
+      "evidence": [
+        "1 Reis 3:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 3:26, toque o marcador de causa do pedido da mãe.",
+      "verseRef": "1 Reis 3:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "cujo"
+        },
+        {
+          "id": "b",
+          "text": "mulher"
+        },
+        {
+          "id": "c",
+          "text": "filho"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mulher",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "1 Reis 3:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como a prova da espada se relaciona com a sentença?",
+      "verseRef": "1 Reis 3:25–27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Revela a mãe pelo amor que recusa a morte"
+        },
+        {
+          "id": "b",
+          "text": "Prova que as duas amam igualmente"
+        },
+        {
+          "id": "c",
+          "text": "Anula qualquer julgamento"
+        },
+        {
+          "id": "d",
+          "text": "Serve só para assustar o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque ela é a sua mãe",
+      "feedbackCorrect": "O amor verdadeiro aparece na prova.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare as reações.",
+      "learningObjective": "Relacionar prova e sentença.",
+      "evidence": [
+        "1 Reis 3:25–27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o julgamento?",
+      "verseRef": "1 Reis 3:24–28",
+      "options": [
+        {
+          "id": "a",
+          "text": "As duas mulheres apresentam o caso"
+        },
+        {
+          "id": "b",
+          "text": "A prova da espada revela a mãe"
+        },
+        {
+          "id": "c",
+          "text": "Israel reconhece a sabedoria de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "Caso, prova e reconhecimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo caso."
+      },
+      "hint": "O que vem antes da espada?",
+      "learningObjective": "Ordenar o julgamento.",
+      "evidence": [
+        "1 Reis 3:16",
+        "1 Reis 3:27",
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 3:26, complete: pois o ___ materno se aguçou.",
+      "verseRef": "1 Reis 3:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "ódio"
+        },
+        {
+          "id": "c",
+          "text": "medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o amor materno se aguçou por seu filho",
+      "feedbackCorrect": "Amor materno move o pedido.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que se aguçou?",
+      "learningObjective": "Lembrar amor.",
+      "evidence": [
+        "1 Reis 3:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 3:28 a 1 Reis 3:9?",
+      "verseRef": "1 Reis 3:28",
+      "passageA": {
+        "ref": "1 Reis 3:28"
+      },
+      "passageB": {
+        "ref": "1 Reis 3:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedido de coração sábio"
+        },
+        {
+          "id": "b",
+          "text": "Pedido de riquezas"
+        },
+        {
+          "id": "c",
+          "text": "Pedido de vingança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "O pedido de sabedoria se cumpre na sentença.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare pedido e resultado.",
+      "learningObjective": "Ligar ao pedido.",
+      "evidence": [
+        "1 Reis 3:28",
+        "1 Reis 3:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 3 —16–28, a sentença mostra a sabedoria de Deus para promover a justiça, não crueldade sem fim.",
+      "verseRef": "1 Reis 3:28",
+      "correctOptionId": "true",
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "Israel lê a cena como sabedoria, não crueldade.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja a conclusão do povo.",
+      "learningObjective": "Interpretar a sentença.",
+      "evidence": [
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 3:28, toque o fim para o qual a sabedoria serve.",
+      "verseRef": "1 Reis 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouviu"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "sentença"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar justiça.",
+      "evidence": [
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Reis 3:16–28 sustenta?",
+      "verseRef": "1 Reis 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus dá sabedoria a Salomão para fazer justiça"
+        },
+        {
+          "id": "b",
+          "text": "Salomão queria matar o menino de fato"
+        },
+        {
+          "id": "c",
+          "text": "A prova prova só crueldade real"
+        },
+        {
+          "id": "d",
+          "text": "Israel rejeitou a sentença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "A cena cumpre a sabedoria pedida.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o fechamento.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da sabedoria revelada.",
+      "verseRef": "1 Reis 3:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disputa sem testemunha"
+        },
+        {
+          "id": "b",
+          "text": "Prova que revela o amor verdadeiro"
+        },
+        {
+          "id": "c",
+          "text": "Povo reconhece a sabedoria de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "Disputa, prova e reconhecimento.",
+      "feedbackWrong": {
+        "default": "Comece pela disputa."
+      },
+      "hint": "O que precede a prova?",
+      "learningObjective": "Encadear a sabedoria.",
+      "evidence": [
+        "1 Reis 3:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 3:27, complete: porque ela é a sua ___.",
+      "verseRef": "1 Reis 3:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "mãe"
+        },
+        {
+          "id": "b",
+          "text": "inimiga"
+        },
+        {
+          "id": "c",
+          "text": "serva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque ela é a sua mãe",
+      "feedbackCorrect": "Mãe.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Quem ela é?",
+      "learningObjective": "Lembrar mãe.",
+      "evidence": [
+        "1 Reis 3:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 3:28 a Provérbios 2:6?",
+      "verseRef": "1 Reis 3:28",
+      "passageA": {
+        "ref": "1 Reis 3:28"
+      },
+      "passageB": {
+        "ref": "Provérbios 2:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sabedoria vem do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Sabedoria humana basta"
+        },
+        {
+          "id": "c",
+          "text": "Justiça sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabedoria de Deus para promover a justiça",
+      "feedbackCorrect": "A sabedoria na sentença vem de Deus.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "De onde vem a sabedoria?",
+      "learningObjective": "Ligar à fonte.",
+      "evidence": [
+        "1 Reis 3:28",
+        "Provérbios 2:6"
+      ]
+    }
+  ]
+}

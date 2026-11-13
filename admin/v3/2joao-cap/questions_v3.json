@@ -1,0 +1,1784 @@
+[
+  {
+    "id": "2joao-cap-sem-j2c-01-nao-recebais-o-enganador-01",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 João 1:9, quem permanece na doutrina de Cristo tem o Pai e o Filho.",
+    "prompt": "Em 2 João 1:9, quem permanece na doutrina de Cristo tem o Pai e o Filho.",
+    "cue": "Em 2 João 1:9, quem permanece na doutrina de Cristo tem o Pai e o Filho.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "Perseverar na doutrina é ter Pai e Filho.",
+    "feedbackWrong": {
+      "false": "O versículo afirma isso."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Observar quem tem Pai e Filho.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-01-nao-recebais-o-enganador-02",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 João 1:7, toque o que os enganadores não confessam que Jesus Cristo veio em.",
+    "prompt": "Em 2 João 1:7, toque o que os enganadores não confessam que Jesus Cristo veio em.",
+    "cue": "Em 2 João 1:7, toque o que os enganadores não confessam que Jesus Cristo veio em.",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "enganadores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não confessam que Jesus Cristo veio em carne",
+    "feedbackCorrect": "Não confessam a vinda em carne.",
+    "feedbackWrong": {
+      "b": "Mundo é de onde saíram.",
+      "c": "Papel aparece no v.12."
+    },
+    "hint": "Veja o fim da confissão negada.",
+    "learningObjective": "Identificar a negação.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-01-nao-recebais-o-enganador-03",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 João 1:10, o que fazer se alguém não trouxer esta doutrina?",
+    "prompt": "Segundo 2 João 1:10, o que fazer se alguém não trouxer esta doutrina?",
+    "cue": "Segundo 2 João 1:10, o que fazer se alguém não trouxer esta doutrina?",
+    "verseRef": "2 João 1:10",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ignorem a doutrina e acolham sempre"
+      },
+      {
+        "id": "b",
+        "text": "Recebam-no com honras especiais"
+      },
+      {
+        "id": "c",
+        "text": "Não o recebam em casa nem lhe ofereçam boas-vindas"
+      },
+      {
+        "id": "d",
+        "text": "Ofereçam-lhe boas-vindas públicas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não o recebam em casa, nem lhe ofereçam boas-vindas",
+    "feedbackCorrect": "A ordem é não receber nem saudar.",
+    "feedbackWrong": {
+      "a": "A doutrina é o critério.",
+      "b": "O texto proíbe receber.",
+      "d": "Boas-vindas são negadas."
+    },
+    "hint": "Leia as duas proibições.",
+    "learningObjective": "Reconhecer a ordem de acolhida.",
+    "evidence": [
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-01-nao-recebais-o-enganador-04",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 João 1:11 na ordem do texto.",
+    "prompt": "Monte 2 João 1:11 na ordem do texto.",
+    "cue": "Monte 2 João 1:11 na ordem do texto.",
+    "verseRef": "2 João 1:11",
+    "passageText": "Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pois quem o acolhe"
+      },
+      {
+        "id": "b",
+        "text": "torna-se cúmplice"
+      },
+      {
+        "id": "c",
+        "text": "de suas más obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Pois quem o acolhe torna-se cúmplice de suas más obras",
+    "feedbackCorrect": "Primeiro o acolher; depois a cumplicidade.",
+    "feedbackWrong": {
+      "default": "Comece com Pois quem o acolhe."
+    },
+    "hint": "O versículo explica a proibição.",
+    "learningObjective": "Seguir a ordem do v.11.",
+    "evidence": [
+      "2 João 1:11"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-01-nao-recebais-o-enganador-05",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 João 1:9, complete: não permanece na doutrina de Cristo não tem ___.",
+    "prompt": "Em 2 João 1:9, complete: não permanece na doutrina de Cristo não tem ___.",
+    "cue": "Em 2 João 1:9, complete: não permanece na doutrina de Cristo não tem ___.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "template": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem ___; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus"
+      },
+      {
+        "id": "b",
+        "text": "papel"
+      },
+      {
+        "id": "c",
+        "text": "casa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não tem Deus",
+    "feedbackCorrect": "Sem a doutrina, não tem Deus.",
+    "feedbackWrong": {
+      "b": "Papel aparece no v.12.",
+      "c": "Casa é o lugar do acolhimento."
+    },
+    "hint": "É o que não tem.",
+    "learningObjective": "Lembrar o termo da ausência.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-01-nao-recebais-o-enganador-06",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 João 1:9 comunica que se liga a este contexto?",
+    "prompt": "O que 2 João 1:9 comunica que se liga a este contexto?",
+    "cue": "O que 2 João 1:9 comunica que se liga a este contexto?",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "passageA": {
+      "ref": "2 João 1:9",
+      "text": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João alerta sobre enganadores e manda não acolher quem não traz a doutrina de Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher o enganador"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer na doutrina"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "permanece na doutrina de Cristo",
+    "feedbackCorrect": "No alerta, a linha divisória é permanecer na doutrina.",
+    "feedbackWrong": {
+      "a": "Acolher torna cúmplice.",
+      "b": "Negar a carne marca o enganador."
+    },
+    "hint": "Veja a condição de ter Deus.",
+    "learningObjective": "Ligar o contexto à doutrina.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-01-nao-recebais-o-enganador-01",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 João 1:11, acolher quem não traz a doutrina não tem consequência.",
+    "prompt": "Em 2 João 1:11, acolher quem não traz a doutrina não tem consequência.",
+    "cue": "Em 2 João 1:11, acolher quem não traz a doutrina não tem consequência.",
+    "verseRef": "2 João 1:11",
+    "passageText": "Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "torna-se cúmplice de suas más obras",
+    "feedbackCorrect": "Quem acolhe torna-se cúmplice.",
+    "feedbackWrong": {
+      "true": "A consequência é cumplicidade."
+    },
+    "hint": "Leia o resultado de quem acolhe.",
+    "learningObjective": "Ver a relação acolher-cumplicidade.",
+    "evidence": [
+      "2 João 1:11"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-01-nao-recebais-o-enganador-02",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 João 1:11, toque a palavra que marca a causa da proibição.",
+    "prompt": "Em 2 João 1:11, toque a palavra que marca a causa da proibição.",
+    "cue": "Em 2 João 1:11, toque a palavra que marca a causa da proibição.",
+    "verseRef": "2 João 1:11",
+    "passageText": "Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cúmplice"
+      },
+      {
+        "id": "b",
+        "text": "Pois"
+      },
+      {
+        "id": "c",
+        "text": "obras"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Pois quem o acolhe torna-se cúmplice",
+    "feedbackCorrect": "Pois introduz a causa.",
+    "feedbackWrong": {
+      "a": "Cúmplice é o resultado.",
+      "c": "Obras são as más obras."
+    },
+    "hint": "É a primeira palavra.",
+    "learningObjective": "Tocar o marcador causal.",
+    "evidence": [
+      "2 João 1:11"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-01-nao-recebais-o-enganador-03",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 2 João 1:9–11 estabelece?",
+    "prompt": "Qual relação 2 João 1:9–11 estabelece?",
+    "cue": "Qual relação 2 João 1:9–11 estabelece?",
+    "verseRef": "2 João 1:9–10",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho. Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sem doutrina ainda se tem Deus plenamente"
+      },
+      {
+        "id": "b",
+        "text": "A doutrina é opcional se houver boas-vindas"
+      },
+      {
+        "id": "c",
+        "text": "Sem doutrina não há Deus; acolher o engano torna cúmplice"
+      },
+      {
+        "id": "d",
+        "text": "Acolher o engano é sempre amor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não permanece na doutrina de Cristo não tem Deus",
+    "feedbackCorrect": "Doutrina e acolhida responsável formam o padrão.",
+    "feedbackWrong": {
+      "a": "Sem doutrina não tem Deus.",
+      "b": "A doutrina é o critério.",
+      "d": "Acolher torna cúmplice."
+    },
+    "hint": "Una o v.9 ao v.11.",
+    "learningObjective": "Compreender doutrina e acolhida.",
+    "evidence": [
+      "2 João 1:9–10"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-01-nao-recebais-o-enganador-04",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do alerta.",
+    "prompt": "Ordene os movimentos do alerta.",
+    "cue": "Ordene os movimentos do alerta.",
+    "verseRef": "2 João 1:7–8",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo. Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Enganadores negam a carne"
+      },
+      {
+        "id": "b",
+        "text": "Permanecer na doutrina"
+      },
+      {
+        "id": "c",
+        "text": "Não acolher o que não traz a doutrina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não confessam que Jesus Cristo veio em carne",
+    "feedbackCorrect": "Do alerta à permanência, até a recusa do acolhimento.",
+    "feedbackWrong": {
+      "default": "Comece pelos enganadores; a recusa fecha."
+    },
+    "hint": "Siga vv.7, 9 e 10–11.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "2 João 1:7",
+      "2 João 1:9",
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-01-nao-recebais-o-enganador-05",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 João 1:11, complete: torna-se ___ de suas más obras.",
+    "prompt": "Em 2 João 1:11, complete: torna-se ___ de suas más obras.",
+    "cue": "Em 2 João 1:11, complete: torna-se ___ de suas más obras.",
+    "verseRef": "2 João 1:11",
+    "passageText": "Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "template": "Pois quem o acolhe torna-se ___ de suas más obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cúmplice"
+      },
+      {
+        "id": "b",
+        "text": "enganador"
+      },
+      {
+        "id": "c",
+        "text": "anticristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "torna-se cúmplice de suas más obras",
+    "feedbackCorrect": "Acolher torna cúmplice.",
+    "feedbackWrong": {
+      "b": "Enganador é quem sai pelo mundo.",
+      "c": "Anticristo descreve o enganador no v.7."
+    },
+    "hint": "É o substantivo depois de torna-se.",
+    "learningObjective": "Lembrar o termo da cumplicidade.",
+    "evidence": [
+      "2 João 1:11"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-01-nao-recebais-o-enganador-06",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 João 1:7 a 1 João 4:2?",
+    "prompt": "O que liga 2 João 1:7 a 1 João 4:2?",
+    "cue": "O que liga 2 João 1:7 a 1 João 4:2?",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "passageA": {
+      "ref": "2 João 1:7",
+      "text": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo."
+    },
+    "passageB": {
+      "ref": "1 João 4:2",
+      "text": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher o enganador"
+      },
+      {
+        "id": "b",
+        "text": "Confessar Jesus em carne"
+      },
+      {
+        "id": "c",
+        "text": "Negar o galardão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Jesus Cristo veio em carne",
+    "feedbackCorrect": "Ambas as cartas marcam a confissão da carne.",
+    "feedbackWrong": {
+      "a": "Acolher o engano é proibido.",
+      "c": "O galardão deve ser guardado."
+    },
+    "hint": "Compare a confissão da carne.",
+    "learningObjective": "Ligar a confissão.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-01-nao-recebais-o-enganador-01",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 2 João 1:10–11, não receber em casa quem não traz a doutrina evita cumplicidade com más obras.",
+    "prompt": "Segundo 2 João 1:10–11, não receber em casa quem não traz a doutrina evita cumplicidade com más obras.",
+    "cue": "Segundo 2 João 1:10–11, não receber em casa quem não traz a doutrina evita cumplicidade com más obras.",
+    "verseRef": "2 João 1:10–11",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas. Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não o recebam em casa, nem lhe ofereçam boas-vindas",
+    "feedbackCorrect": "A recusa protege de tornar-se cúmplice.",
+    "feedbackWrong": {
+      "false": "Os versículos ligam recusa e cumplicidade."
+    },
+    "hint": "Una a ordem do v.10 à razão do v.11.",
+    "learningObjective": "Confirmar a leitura da acolhida.",
+    "evidence": [
+      "2 João 1:10–11"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-01-nao-recebais-o-enganador-02",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 João 1:9, toque o trecho que sustenta o que falta a quem se desvia.",
+    "prompt": "Em 2 João 1:9, toque o trecho que sustenta o que falta a quem se desvia.",
+    "cue": "Em 2 João 1:9, toque o trecho que sustenta o que falta a quem se desvia.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "não tem Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não tem Deus",
+    "feedbackCorrect": "Quem se desvia não tem Deus.",
+    "feedbackWrong": {
+      "a": "Filho é quem o perseverante tem.",
+      "b": "Doutrina é o que não permanece."
+    },
+    "hint": "Veja o predicado de quem se desvia.",
+    "learningObjective": "Sustentar a perda.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-01-nao-recebais-o-enganador-03",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 João 1:7–11 sustenta?",
+    "prompt": "Que leitura 2 João 1:7–11 sustenta?",
+    "cue": "Que leitura 2 João 1:7–11 sustenta?",
+    "verseRef": "2 João 1:10",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar a carne ainda deixa Deus"
+      },
+      {
+        "id": "b",
+        "text": "Permanecer na doutrina e recusar cumplicidade com o engano"
+      },
+      {
+        "id": "c",
+        "text": "O galardão nunca se perde"
+      },
+      {
+        "id": "d",
+        "text": "Acolher qualquer mestre prova amor"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não o recebam em casa, nem lhe ofereçam boas-vindas",
+    "feedbackCorrect": "Doutrina e recusa responsável formam o padrão.",
+    "feedbackWrong": {
+      "a": "Sem doutrina não tem Deus.",
+      "c": "Devem cuidar para não perder.",
+      "d": "Acolher torna cúmplice."
+    },
+    "hint": "Una o v.9 ao v.10.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-01-nao-recebais-o-enganador-04",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do alerta à recusa?",
+    "prompt": "Qual sequência mostra o fio do alerta à recusa?",
+    "cue": "Qual sequência mostra o fio do alerta à recusa?",
+    "verseRef": "2 João 1:10",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconhecer o enganador que nega a carne"
+      },
+      {
+        "id": "b",
+        "text": "Permanecer na doutrina de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Recusar acolhida que gera cumplicidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não o recebam em casa",
+    "feedbackCorrect": "Do reconhecimento à permanência, até a recusa.",
+    "feedbackWrong": {
+      "default": "Comece pelo enganador; a recusa fecha."
+    },
+    "hint": "Siga vv.7, 9 e 10–11.",
+    "learningObjective": "Encadear alerta e recusa.",
+    "evidence": [
+      "2 João 1:7",
+      "2 João 1:9",
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-01-nao-recebais-o-enganador-05",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 João 1:7, complete: este é o enganador e o ___.",
+    "prompt": "Em 2 João 1:7, complete: este é o enganador e o ___.",
+    "cue": "Em 2 João 1:7, complete: este é o enganador e o ___.",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "template": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "irmão"
+      },
+      {
+        "id": "b",
+        "text": "galardão"
+      },
+      {
+        "id": "c",
+        "text": "anticristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "este é o enganador e o anticristo",
+    "feedbackCorrect": "O enganador é chamado anticristo.",
+    "feedbackWrong": {
+      "a": "Irmã aparece na saudação.",
+      "b": "Galardão é o que preservar."
+    },
+    "hint": "É o segundo título depois de enganador.",
+    "learningObjective": "Lembrar o termo do engano.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-01-nao-recebais-o-enganador-06",
+    "trail": "2joao-cap",
+    "section": "j2c-01-nao-recebais-o-enganador",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 João 1:10 a Gálatas 1:8?",
+    "prompt": "O que liga 2 João 1:10 a Gálatas 1:8?",
+    "cue": "O que liga 2 João 1:10 a Gálatas 1:8?",
+    "verseRef": "2 João 1:10",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "passageA": {
+      "ref": "2 João 1:10",
+      "text": "não o recebam em casa, nem lhe ofereçam boas-vindas"
+    },
+    "passageB": {
+      "ref": "Gálatas 1:8",
+      "text": "Mas, ainda que nós ou mesmo um anjo vindo do céu vos pregue um evangelho que seja diferente do que já vos temos anunciado, seja anátema."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Acolher o engano"
+      },
+      {
+        "id": "b",
+        "text": "Recusar outro evangelho"
+      },
+      {
+        "id": "c",
+        "text": "Negar a carne de Cristo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não trouxer esta doutrina",
+    "feedbackCorrect": "Ambos recusam mensagem/doutrina contrária a Cristo.",
+    "feedbackWrong": {
+      "a": "Acolher é o perigo.",
+      "c": "A carne deve ser confessada."
+    },
+    "hint": "Compare a recusa do falso ensino.",
+    "learningObjective": "Ligar a recusa.",
+    "evidence": [
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-01",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 2 João 1:7, os enganadores confessam abertamente que Jesus Cristo veio em carne.",
+    "prompt": "Em 2 João 1:7, os enganadores confessam abertamente que Jesus Cristo veio em carne.",
+    "cue": "Em 2 João 1:7, os enganadores confessam abertamente que Jesus Cristo veio em carne.",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não confessam que Jesus Cristo veio em carne",
+    "feedbackCorrect": "Eles não confessam a vinda em carne.",
+    "feedbackWrong": {
+      "true": "A negação é o sinal."
+    },
+    "hint": "Leia o que não confessam.",
+    "learningObjective": "Observar a negação.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-02",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 João 1:8, toque o que devem receber completo.",
+    "prompt": "Em 2 João 1:8, toque o que devem receber completo.",
+    "cue": "Em 2 João 1:8, toque o que devem receber completo.",
+    "verseRef": "2 João 1:8",
+    "passageText": "Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esforço"
+      },
+      {
+        "id": "b",
+        "text": "galardão"
+      },
+      {
+        "id": "c",
+        "text": "completo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "recebam o galardão completo",
+    "feedbackCorrect": "Devem receber o galardão completo.",
+    "feedbackWrong": {
+      "a": "Papel é o meio que João evita no v.12.",
+      "c": "Tinta também é o meio evitado."
+    },
+    "hint": "Veja o que recebem.",
+    "learningObjective": "Identificar o galardão.",
+    "evidence": [
+      "2 João 1:8"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-03",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 2 João 1:12, por que João espera ir ter com eles?",
+    "prompt": "Segundo 2 João 1:12, por que João espera ir ter com eles?",
+    "cue": "Segundo 2 João 1:12, por que João espera ir ter com eles?",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para perder o galardão"
+      },
+      {
+        "id": "b",
+        "text": "Para negar a doutrina de Cristo"
+      },
+      {
+        "id": "c",
+        "text": "Para que a alegria seja completa"
+      },
+      {
+        "id": "d",
+        "text": "Para oferecer boas-vindas ao enganador"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que a nossa alegria seja completa",
+    "feedbackCorrect": "O encontro visa alegria completa.",
+    "feedbackWrong": {
+      "a": "Devem cuidar do galardão.",
+      "b": "A doutrina deve permanecer.",
+      "d": "Boas-vindas ao enganador são proibidas."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Reconhecer o propósito da visita.",
+    "evidence": [
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-04",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 João 1:10 na ordem do texto.",
+    "prompt": "Monte 2 João 1:10 na ordem do texto.",
+    "cue": "Monte 2 João 1:10 na ordem do texto.",
+    "verseRef": "2 João 1:10",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se alguém vier ter convosco e não trouxer esta doutrina"
+      },
+      {
+        "id": "b",
+        "text": "não o recebam em casa"
+      },
+      {
+        "id": "c",
+        "text": "nem lhe ofereçam boas-vindas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não o recebam em casa, nem lhe ofereçam boas-vindas",
+    "feedbackCorrect": "Primeiro a condição; depois as duas proibições.",
+    "feedbackWrong": {
+      "default": "Comece com Se alguém vier."
+    },
+    "hint": "São duas proibições em sequência.",
+    "learningObjective": "Seguir a ordem do v.10.",
+    "evidence": [
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-05",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 2 João 1:9, complete: quem persevera nessa doutrina, esse tem tanto o Pai quanto o ___.",
+    "prompt": "Em 2 João 1:9, complete: quem persevera nessa doutrina, esse tem tanto o Pai quanto o ___.",
+    "cue": "Em 2 João 1:9, complete: quem persevera nessa doutrina, esse tem tanto o Pai quanto o ___.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "template": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "enganador"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "Perseverar é ter Pai e Filho.",
+    "feedbackWrong": {
+      "b": "Enganador é o oposto.",
+      "c": "Mundo é de onde saíram os enganadores."
+    },
+    "hint": "É o segundo da dupla Pai e…",
+    "learningObjective": "Lembrar quem o perseverante tem.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-06",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 2 João 1:12 comunica que se liga a este contexto?",
+    "prompt": "O que 2 João 1:12 comunica que se liga a este contexto?",
+    "cue": "O que 2 João 1:12 comunica que se liga a este contexto?",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "passageA": {
+      "ref": "2 João 1:12",
+      "text": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Travessia une recusa do engano à busca de alegria completa na verdade e no encontro."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Perder o galardão"
+      },
+      {
+        "id": "b",
+        "text": "Acolher o anticristo"
+      },
+      {
+        "id": "c",
+        "text": "Alegria no encontro pessoal"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conversar pessoalmente, para que a nossa alegria seja completa",
+    "feedbackCorrect": "Na verdade, a alegria plena busca o encontro, não a cumplicidade.",
+    "feedbackWrong": {
+      "a": "O galardão deve ser guardado.",
+      "b": "O anticristo é recusado."
+    },
+    "hint": "Veja o propósito da visita.",
+    "learningObjective": "Ligar o contexto à alegria.",
+    "evidence": [
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-07",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 2 João 1:7, toque o segundo título do que não confessa.",
+    "prompt": "Em 2 João 1:7, toque o segundo título do que não confessa.",
+    "cue": "Em 2 João 1:7, toque o segundo título do que não confessa.",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "anticristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o enganador e o anticristo",
+    "feedbackCorrect": "É chamado anticristo.",
+    "feedbackWrong": {
+      "a": "Tinta aparece no v.12.",
+      "b": "Irmãos não está neste versículo."
+    },
+    "hint": "Veja o segundo título.",
+    "learningObjective": "Identificar o título.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "2joao-cap-sem-j2c-boss-1-08",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 2 João 1:8 na ordem do texto.",
+    "prompt": "Monte 2 João 1:8 na ordem do texto.",
+    "cue": "Monte 2 João 1:8 na ordem do texto.",
+    "verseRef": "2 João 1:8",
+    "passageText": "Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidem de vocês mesmos"
+      },
+      {
+        "id": "b",
+        "text": "para que não percam o que temos realizado"
+      },
+      {
+        "id": "c",
+        "text": "mas para que recebam o galardão completo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo",
+    "feedbackCorrect": "Primeiro o cuidado; depois não perder e receber.",
+    "feedbackWrong": {
+      "default": "Comece com Cuidem."
+    },
+    "hint": "Há um contraste mas no meio.",
+    "learningObjective": "Seguir a ordem do cuidado.",
+    "evidence": [
+      "2 João 1:8"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-01",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 2 João 1:9, desviar-se da doutrina ainda deixa a pessoa com Deus.",
+    "prompt": "Em 2 João 1:9, desviar-se da doutrina ainda deixa a pessoa com Deus.",
+    "cue": "Em 2 João 1:9, desviar-se da doutrina ainda deixa a pessoa com Deus.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não permanece na doutrina de Cristo não tem Deus",
+    "feedbackCorrect": "Sem a doutrina não tem Deus.",
+    "feedbackWrong": {
+      "true": "A negação é explícita."
+    },
+    "hint": "Leia o predicado de quem se desvia.",
+    "learningObjective": "Ver a relação doutrina-Deus.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-02",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 João 1:12, toque o marcador do propósito da visita.",
+    "prompt": "Em 2 João 1:12, toque o marcador do propósito da visita.",
+    "cue": "Em 2 João 1:12, toque o marcador do propósito da visita.",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "papel"
+      },
+      {
+        "id": "b",
+        "text": "tinta"
+      },
+      {
+        "id": "c",
+        "text": "para que"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que a nossa alegria seja completa",
+    "feedbackCorrect": "Para que marca o propósito.",
+    "feedbackWrong": {
+      "a": "Papel é o meio evitado.",
+      "b": "Tinta também."
+    },
+    "hint": "Procure a finalidade.",
+    "learningObjective": "Tocar o propósito.",
+    "evidence": [
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-03",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 2 João 1:10–12 estabelece?",
+    "prompt": "Qual relação 2 João 1:10–12 estabelece?",
+    "cue": "Qual relação 2 João 1:10–12 estabelece?",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Recusar o engano e buscar alegria na verdade"
+      },
+      {
+        "id": "b",
+        "text": "Papel e tinta substituem a verdade"
+      },
+      {
+        "id": "c",
+        "text": "Negar a doutrina para completar o galardão"
+      },
+      {
+        "id": "d",
+        "text": "Acolher o engano para ter alegria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que a nossa alegria seja completa",
+    "feedbackCorrect": "Recusa do engano e alegria na verdade caminham juntas.",
+    "feedbackWrong": {
+      "b": "O encontro pessoal é preferido.",
+      "c": "A doutrina deve permanecer.",
+      "d": "Acolher torna cúmplice."
+    },
+    "hint": "Una a recusa à alegria.",
+    "learningObjective": "Compreender verdade e alegria.",
+    "evidence": [
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-04",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos da Travessia.",
+    "prompt": "Ordene os movimentos da Travessia.",
+    "cue": "Ordene os movimentos da Travessia.",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Identificar o enganador"
+      },
+      {
+        "id": "b",
+        "text": "Permanecer e recusar cumplicidade"
+      },
+      {
+        "id": "c",
+        "text": "Buscar alegria no encontro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "este é o enganador e o anticristo",
+    "feedbackCorrect": "Do reconhecimento à recusa, até a alegria.",
+    "feedbackWrong": {
+      "default": "Comece pelo enganador; a alegria fecha."
+    },
+    "hint": "Siga vv.7, 9–11 e 12.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "2 João 1:7",
+      "2 João 1:9",
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-05",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 2 João 1:11, complete: Pois quem o acolhe torna-se ___.",
+    "prompt": "Em 2 João 1:11, complete: Pois quem o acolhe torna-se ___.",
+    "cue": "Em 2 João 1:11, complete: Pois quem o acolhe torna-se ___.",
+    "verseRef": "2 João 1:11",
+    "passageText": "Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "template": "Pois quem o acolhe torna-se ___ de suas más obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "eleita"
+      },
+      {
+        "id": "c",
+        "text": "cúmplice"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "torna-se cúmplice de suas más obras",
+    "feedbackCorrect": "Acolher torna cúmplice.",
+    "feedbackWrong": {
+      "a": "Filho aparece na doutrina.",
+      "b": "Eleita é a saudação."
+    },
+    "hint": "É o substantivo depois de torna-se.",
+    "learningObjective": "Lembrar a cumplicidade.",
+    "evidence": [
+      "2 João 1:11"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-06",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 2 João 1:12 a 1 João 1:4?",
+    "prompt": "O que liga 2 João 1:12 a 1 João 1:4?",
+    "cue": "O que liga 2 João 1:12 a 1 João 1:4?",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "passageA": {
+      "ref": "2 João 1:12",
+      "text": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa."
+    },
+    "passageB": {
+      "ref": "1 João 1:4",
+      "text": "Escrevemos estas coisas para que a nossa alegria seja completa."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Alegria completa"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne"
+      },
+      {
+        "id": "c",
+        "text": "Acolher o engano"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que a nossa alegria seja completa",
+    "feedbackCorrect": "Ambas as cartas buscam alegria completa na verdade.",
+    "feedbackWrong": {
+      "b": "A carne deve ser confessada.",
+      "c": "Engano é recusado."
+    },
+    "hint": "Nomeie a ponte que o contexto oferece.",
+    "learningObjective": "Ligar a alegria.",
+    "evidence": [
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-07",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 2 João 1:11, toque o marcador causal.",
+    "prompt": "Em 2 João 1:11, toque o marcador causal.",
+    "cue": "Em 2 João 1:11, toque o marcador causal.",
+    "verseRef": "2 João 1:11",
+    "passageText": "Pois quem o acolhe torna-se cúmplice de suas más obras.",
+    "options": [
+      {
+        "id": "a",
+        "text": "obras"
+      },
+      {
+        "id": "b",
+        "text": "más"
+      },
+      {
+        "id": "c",
+        "text": "Pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Pois quem o acolhe",
+    "feedbackCorrect": "Pois introduz a causa.",
+    "feedbackWrong": {
+      "a": "Obras são as más obras.",
+      "b": "Más qualifica as obras."
+    },
+    "hint": "É a primeira palavra.",
+    "learningObjective": "Tocar o marcador.",
+    "evidence": [
+      "2 João 1:11"
+    ]
+  },
+  {
+    "id": "2joao-cap-cam-j2c-boss-1-08",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene a lógica da doutrina à alegria.",
+    "prompt": "Ordene a lógica da doutrina à alegria.",
+    "cue": "Ordene a lógica da doutrina à alegria.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar Cristo em carne"
+      },
+      {
+        "id": "b",
+        "text": "Não acolher o que nega a doutrina"
+      },
+      {
+        "id": "c",
+        "text": "Buscar alegria completa no encontro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não permanece na doutrina de Cristo não tem Deus",
+    "feedbackCorrect": "Da confissão à recusa, até a alegria.",
+    "feedbackWrong": {
+      "default": "Comece pela confissão; a alegria fecha."
+    },
+    "hint": "Siga 7, 10 e 12.",
+    "learningObjective": "Ordenar confissão e alegria.",
+    "evidence": [
+      "2 João 1:7",
+      "2 João 1:10",
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-01",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 2 João 1:9–11, permanecer na doutrina e recusar o acolhimento do engano protegem a comunhão com Deus.",
+    "prompt": "Segundo 2 João 1:9–11, permanecer na doutrina e recusar o acolhimento do engano protegem a comunhão com Deus.",
+    "cue": "Segundo 2 João 1:9–11, permanecer na doutrina e recusar o acolhimento do engano protegem a comunhão com Deus.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho",
+    "feedbackCorrect": "Perseverar é ter Deus; acolher o engano torna cúmplice.",
+    "feedbackWrong": {
+      "false": "Os versículos sustentam essa leitura."
+    },
+    "hint": "Una perseverar e não receber.",
+    "learningObjective": "Confirmar a leitura sustentável.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-02",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 João 1:9, toque o trecho que sustenta o que o desviado não tem.",
+    "prompt": "Em 2 João 1:9, toque o trecho que sustenta o que o desviado não tem.",
+    "cue": "Em 2 João 1:9, toque o trecho que sustenta o que o desviado não tem.",
+    "verseRef": "2 João 1:9",
+    "passageText": "Todo aquele que se desvia e não permanece na doutrina de Cristo não tem Deus; quem persevera nessa doutrina, esse tem tanto o Pai quanto o Filho.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho"
+      },
+      {
+        "id": "b",
+        "text": "persevera"
+      },
+      {
+        "id": "c",
+        "text": "não tem Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "não tem Deus",
+    "feedbackCorrect": "O desviado não tem Deus.",
+    "feedbackWrong": {
+      "a": "Filho é quem o perseverante tem.",
+      "b": "Persevera descreve o fiel."
+    },
+    "hint": "Veja o predicado de quem se desvia.",
+    "learningObjective": "Sustentar a perda.",
+    "evidence": [
+      "2 João 1:9"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-03",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 2 João 1:7–13 sustenta?",
+    "prompt": "Que leitura 2 João 1:7–13 sustenta?",
+    "cue": "Que leitura 2 João 1:7–13 sustenta?",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar a carne ainda é ter Deus"
+      },
+      {
+        "id": "b",
+        "text": "Alegria exige acolher o anticristo"
+      },
+      {
+        "id": "c",
+        "text": "Amar a verdade: confessar, permanecer, recusar engano e buscar alegria"
+      },
+      {
+        "id": "d",
+        "text": "Doutrina é opcional se houver papel e tinta"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que a nossa alegria seja completa",
+    "feedbackCorrect": "Verdade, recusa e alegria formam o padrão.",
+    "feedbackWrong": {
+      "a": "Sem doutrina não tem Deus.",
+      "b": "Anticristo é recusado.",
+      "d": "A doutrina é decisiva."
+    },
+    "hint": "Una doutrina e alegria.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-04",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da verdade à alegria?",
+    "prompt": "Qual sequência mostra o fio da verdade à alegria?",
+    "cue": "Qual sequência mostra o fio da verdade à alegria?",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconhecer o enganador-anticristo"
+      },
+      {
+        "id": "b",
+        "text": "Guardar doutrina e galardão"
+      },
+      {
+        "id": "c",
+        "text": "Completar alegria no encontro"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a nossa alegria seja completa",
+    "feedbackCorrect": "Do reconhecimento à guarda, até a alegria.",
+    "feedbackWrong": {
+      "default": "Comece pelo enganador; a alegria fecha."
+    },
+    "hint": "Siga 7, 8–9 e 12.",
+    "learningObjective": "Encadear verdade e alegria.",
+    "evidence": [
+      "2 João 1:7",
+      "2 João 1:8",
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-05",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 2 João 1:12, complete: para que a nossa ___ seja completa.",
+    "prompt": "Em 2 João 1:12, complete: para que a nossa ___ seja completa.",
+    "cue": "Em 2 João 1:12, complete: para que a nossa ___ seja completa.",
+    "verseRef": "2 João 1:12",
+    "passageText": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa alegria seja completa.",
+    "template": "Tenho muitas coisas a escrever-vos, mas não quis fazê-lo com papel e tinta. Espero, entretanto, ir ter convosco e conversar pessoalmente, para que a nossa ___ seja completa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "heresias"
+      },
+      {
+        "id": "b",
+        "text": "alegria"
+      },
+      {
+        "id": "c",
+        "text": "cumplicidade"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que a nossa alegria seja completa",
+    "feedbackCorrect": "O alvo é alegria completa.",
+    "feedbackWrong": {
+      "a": "Heresias não estão neste versículo.",
+      "c": "Cumplicidade é o perigo do v.11."
+    },
+    "hint": "É o substantivo depois de nossa.",
+    "learningObjective": "Lembrar o termo da meta.",
+    "evidence": [
+      "2 João 1:12"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-06",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 2 João 1:7 a 1 João 4:3?",
+    "prompt": "O que liga 2 João 1:7 a 1 João 4:3?",
+    "cue": "O que liga 2 João 1:7 a 1 João 4:3?",
+    "verseRef": "2 João 1:7",
+    "passageText": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo.",
+    "passageA": {
+      "ref": "2 João 1:7",
+      "text": "este é o enganador e o anticristo"
+    },
+    "passageB": {
+      "ref": "1 João 4:3",
+      "text": "E todo espírito que não confessa que Jesus Cristo veio em carne não é de Deus; pelo contrário, este é o espírito do anticristo, a respeito do qual já ouvistes que vem, e agora já está no mundo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Boas-vindas ao engano"
+      },
+      {
+        "id": "b",
+        "text": "Espírito do anticristo"
+      },
+      {
+        "id": "c",
+        "text": "Alegria completa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o enganador e o anticristo",
+    "feedbackCorrect": "Ambas as cartas ligam a negação a Cristo ao anticristo.",
+    "feedbackWrong": {
+      "a": "Boas-vindas são negadas.",
+      "c": "Alegria é o alvo do v.12."
+    },
+    "hint": "Compare o título anticristo.",
+    "learningObjective": "Ligar o anticristo.",
+    "evidence": [
+      "2 João 1:7"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-07",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 2 João 1:10, toque o trecho que sustenta a primeira proibição.",
+    "prompt": "Em 2 João 1:10, toque o trecho que sustenta a primeira proibição.",
+    "cue": "Em 2 João 1:10, toque o trecho que sustenta a primeira proibição.",
+    "verseRef": "2 João 1:10",
+    "passageText": "Se alguém vier ter convosco e não trouxer esta doutrina, não o recebam em casa, nem lhe ofereçam boas-vindas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não o recebam"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "alguém"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não o recebam em casa",
+    "feedbackCorrect": "A primeira proibição é não receber em casa.",
+    "feedbackWrong": {
+      "b": "Doutrina é o critério.",
+      "c": "Alguém é o sujeito genérico."
+    },
+    "hint": "Veja a primeira ordem negativa.",
+    "learningObjective": "Sustentar a proibição.",
+    "evidence": [
+      "2 João 1:10"
+    ]
+  },
+  {
+    "id": "2joao-cap-pro-j2c-boss-1-08",
+    "trail": "2joao-cap",
+    "section": "j2c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do cuidado à alegria?",
+    "prompt": "Qual sequência revela o caminho do cuidado à alegria?",
+    "cue": "Qual sequência revela o caminho do cuidado à alegria?",
+    "verseRef": "2 João 1:8",
+    "passageText": "Cuidem de vocês mesmos, para que não percam o que temos realizado com esforço, mas para que recebam o galardão completo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cuidar para não perder o galardão"
+      },
+      {
+        "id": "b",
+        "text": "Recusar cumplicidade com más obras"
+      },
+      {
+        "id": "c",
+        "text": "Conversar para alegria completa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "recebam o galardão completo",
+    "feedbackCorrect": "Do cuidado à recusa, até a alegria.",
+    "feedbackWrong": {
+      "default": "Comece pelo cuidado; a alegria fecha."
+    },
+    "hint": "Siga 8, 11 e 12.",
+    "learningObjective": "Encadear cuidado e alegria.",
+    "evidence": [
+      "2 João 1:8",
+      "2 João 1:11",
+      "2 João 1:12"
+    ]
+  }
+]

@@ -1,0 +1,697 @@
+{
+  "study": {
+    "passageRef": "1 Reis 14:1–11",
+    "passages": [
+      {
+        "ref": "1 Reis 14:1–11"
+      }
+    ],
+    "context": "A mulher de Jeroboão vai a Aías em disfarce por causa do filho doente. Deus vê o disfarce",
+    "keyword": "Naquele",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Mensagem a Jeroboão",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 1 Reis 14:1 afirma: Naquele tempo, Abias, filho de Jeroboão, adoeceu..",
+        "evidenceRef": "1 Reis 14:1",
+        "evidenceSpan": "Naquele tempo, Abias, filho de Jeroboão, adoeceu."
+      },
+      {
+        "text": "O texto em 1 Reis 14:4 afirma: E a mulher de Jeroboão fez assim: levantou-se.",
+        "evidenceRef": "1 Reis 14:4",
+        "evidenceSpan": "E a mulher de Jeroboão fez assim: levantou-se"
+      },
+      {
+        "text": "O texto em 1 Reis 14:8 afirma: E rasguei o reino da casa de Davi e a ti o entreguei.",
+        "evidenceRef": "1 Reis 14:8",
+        "evidenceSpan": "E rasguei o reino da casa de Davi e a ti o entreguei"
+      },
+      {
+        "text": "O texto em 1 Reis 14:11 afirma: Quem morrer de Jeroboão na cidade.",
+        "evidenceRef": "1 Reis 14:11",
+        "evidenceSpan": "Quem morrer de Jeroboão na cidade"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Naquele",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "tempo",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "Abias",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "1 Reis 14:1"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "1 Reis 14:4"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "1 Reis 14:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 1 Reis 14:8.",
+        "marker": null,
+        "evidenceRef": "1 Reis 14:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 1 Reis 14:11.",
+        "marker": null,
+        "evidenceRef": "1 Reis 14:11"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 1 Reis 14:1 a 1 Reis 14:11.",
+        "marker": null,
+        "evidenceRef": "1 Reis 14:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "Nada se esconde do Senhor: Aías anuncia juízo sobre a casa de Jeroboão.",
+    "anchorQuestion": "O que 1 Reis 14:1–11 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 14 —1 o nome Naquele está ausente do versículo",
+      "verseRef": "1 Reis 14:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Naquele",
+      "feedbackCorrect": "O versículo contém \"Naquele\".",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "1 Reis 14:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 14:1, toque quem ou o quê o texto destaca.",
+      "verseRef": "1 Reis 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abias"
+        },
+        {
+          "id": "b",
+          "text": "Naquele"
+        },
+        {
+          "id": "c",
+          "text": "filho"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Naquele",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "1 Reis 14:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 14:4, o que o texto destaca?",
+      "verseRef": "1 Reis 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de E a no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E a mulher de Jeroboão fez assim: levantou-se",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "1 Reis 14:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 14:1 na ordem do texto.",
+      "verseRef": "1 Reis 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naquele tempo"
+        },
+        {
+          "id": "b",
+          "text": "Abias"
+        },
+        {
+          "id": "c",
+          "text": "filho de Jeroboão, adoeceu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Naquele tempo",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "1 Reis 14:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 14:4, que palavra importante o texto usa?",
+      "verseRef": "1 Reis 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeroboão"
+        },
+        {
+          "id": "b",
+          "text": "mulher"
+        },
+        {
+          "id": "c",
+          "text": "levantou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E a mulher de Jeroboão fez assim: levantou-se",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "1 Reis 14:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 14:1 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 14:1",
+      "passageA": {
+        "ref": "1 Reis 14:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A mulher de Jeroboão vai a Aías em disfarce por causa do filho doente."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tema da passagem"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Naquele tempo",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare os dois textos com atenção.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "1 Reis 14:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 14 —8 o nome rasguei está ausente do versículo",
+      "verseRef": "1 Reis 14:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "rasguei",
+      "feedbackCorrect": "O versículo contém \"rasguei\".",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "1 Reis 14:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 14:4, toque a palavra que marca a relação no texto.",
+      "verseRef": "1 Reis 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantou"
+        },
+        {
+          "id": "b",
+          "text": "Jeroboão"
+        },
+        {
+          "id": "c",
+          "text": "Siló"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jeroboão",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "1 Reis 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 14:8 se relaciona com o restante do trecho?",
+      "verseRef": "1 Reis 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E rasguei o reino da casa de Davi e a ti o",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "1 Reis 14:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "1 Reis 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E a mulher de Jeroboão fez assim:",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "1 Reis 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 14:8, que palavra carrega a relação ou a ação?",
+      "verseRef": "1 Reis 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "reino"
+        },
+        {
+          "id": "b",
+          "text": "rasguei"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E rasguei o reino da casa de Davi e a ti o entreguei",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "1 Reis 14:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 14:4 a Salmos 23:1?",
+      "verseRef": "1 Reis 14:4",
+      "passageA": {
+        "ref": "1 Reis 14:4"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E a mulher de Jeroboão fez assim:",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "1 Reis 14:4",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 14 —11 aparece a palavra Quem",
+      "verseRef": "1 Reis 14:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "Quem morrer de Jeroboão na cidade",
+      "feedbackCorrect": "O versículo traz \"Quem\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "1 Reis 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 14:11, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "1 Reis 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "morrer"
+        },
+        {
+          "id": "b",
+          "text": "Quem"
+        },
+        {
+          "id": "c",
+          "text": "cidade"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Quem",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "1 Reis 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "1 Reis 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nada se esconde do Senhor: Aías anuncia juízo sobre a casa de Jeroboão."
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quem morrer de Jeroboão na cidade",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "1 Reis 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "1 Reis 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quem morrer de Jeroboão na cidade",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "1 Reis 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 14:1, que termo carrega o sentido da cena?",
+      "verseRef": "1 Reis 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naquele"
+        },
+        {
+          "id": "b",
+          "text": "tempo"
+        },
+        {
+          "id": "c",
+          "text": "Abias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Naquele tempo, Abias, filho de Jeroboão, adoeceu.",
+      "feedbackCorrect": "O termo \"tempo\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "1 Reis 14:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 14:11 a Salmos 46:1?",
+      "verseRef": "1 Reis 14:11",
+      "passageA": {
+        "ref": "1 Reis 14:11"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quem morrer de Jeroboão na cidade",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "1 Reis 14:11",
+        "Salmos 46:1"
+      ]
+    }
+  ]
+}

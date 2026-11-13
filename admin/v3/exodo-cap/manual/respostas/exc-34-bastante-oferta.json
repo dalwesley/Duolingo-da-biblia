@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Êxodo 36:2–7",
+    "passages": [
+      {
+        "ref": "Êxodo 36:2–7"
+      }
+    ],
+    "context": "Bezalel e Aoliabe recebem os materiais. O povo traz tanto que Moisés manda parar.",
+    "keyword": "Suficiente",
+    "keywordGloss": "O material era suficiente para toda a obra e ainda sobejava.",
+    "focusQuestion": "Onde a sua generosidade ainda precisa passar do \"quase\" ao \"bastante\"?",
+    "reflectionPrompts": [
+      "Sabedoria concedida",
+      "Muito mais",
+      "Parar de trazer"
+    ],
+    "facts": [
+      {
+        "text": "O SENHOR havia concedido sabedoria a Bezalel, Aoliabe e homens habilidosos.",
+        "evidenceRef": "Êxodo 36:2",
+        "evidenceSpan": "o SENHOR havia concedido sabedoria"
+      },
+      {
+        "text": "Cada manhã o povo trazia ofertas voluntárias.",
+        "evidenceRef": "Êxodo 36:3",
+        "evidenceSpan": "cada manhã o povo lhe trazia ofertas voluntárias"
+      },
+      {
+        "text": "O povo traz muito mais do que é necessário para a obra.",
+        "evidenceRef": "Êxodo 36:5",
+        "evidenceSpan": "O povo traz muito mais do que é necessário"
+      },
+      {
+        "text": "Moisés ordena que ninguém realize mais obra para a oferta do santuário.",
+        "evidenceRef": "Êxodo 36:6",
+        "evidenceSpan": "Nenhum homem ou mulher deve realizar mais nenhuma obra"
+      },
+      {
+        "text": "O material era suficiente e ainda sobejava.",
+        "evidenceRef": "Êxodo 36:7",
+        "evidenceSpan": "era suficiente para toda a obra a ser realizada e ainda sobejava"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "suficiente",
+        "gloss": "Havia material bastante para toda a obra."
+      },
+      {
+        "term": "sobejava",
+        "gloss": "Ainda sobrava depois do necessário."
+      },
+      {
+        "term": "sabedoria",
+        "gloss": "Dom do SENHOR aos artífices."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamada dos artífices sábios",
+        "evidenceRef": "Êxodo 36:2"
+      },
+      {
+        "label": "Ofertas cada manhã",
+        "evidenceRef": "Êxodo 36:3–4"
+      },
+      {
+        "label": "Aviso: trazem demais",
+        "evidenceRef": "Êxodo 36:5"
+      },
+      {
+        "label": "Ordem de parar; material sobeja",
+        "evidenceRef": "Êxodo 36:6–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Porque havia bastante, o povo foi impedido de trazer mais.",
+        "marker": "Porque",
+        "evidenceRef": "Êxodo 36:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Falam a Moisés porque o povo traz demais.",
+        "marker": "dizendo",
+        "evidenceRef": "Êxodo 36:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do aviso, Moisés manda proclamar a parada.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 36:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 8:12",
+        "bridge": "Boa vontade no dar"
+      },
+      {
+        "ref": "2 Coríntios 9:7",
+        "bridge": "Dar com alegria"
+      },
+      {
+        "ref": "Filipenses 4:18",
+        "bridge": "Oferta suficiente e abundante"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O povo trouxe de má vontade e quase não bastou.",
+        "why": "Trouxeram muito mais do que o necessário."
+      },
+      {
+        "text": "Moisés pediu que continuassem a trazer sem limite.",
+        "why": "Ele mandou parar de trazer mais."
+      },
+      {
+        "text": "Os artífices trabalharam sem sabedoria de Deus.",
+        "why": "O SENHOR havia concedido sabedoria."
+      }
+    ],
+    "centralInsight": "Há generosidade demais: Moisés manda parar de trazer ofertas.",
+    "anchorQuestion": "Por que Moisés mandou o povo parar de trazer ofertas?"
+  },
+  "questions": [
+    {
+      "question": "O povo trazia de manhã ofertas voluntárias para a obra do santuário.",
+      "verseRef": "Êxodo 36:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "cada manhã o povo lhe trazia ofertas voluntárias",
+      "feedbackCorrect": "Cada manhã traziam ofertas voluntárias.",
+      "feedbackWrong": {
+        "false": "Releia: cada manhã ofertas voluntárias."
+      },
+      "hint": "Quando o povo trazia?",
+      "learningObjective": "Observar a generosidade diária.",
+      "evidence": [
+        "Êxodo 36:3"
+      ],
+      "difficulty": "semente",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 36:5, toque o que o povo traz em relação ao necessário.",
+      "verseRef": "Êxodo 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "muito mais"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "serviço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "muito mais do que é necessário",
+      "feedbackCorrect": "Trazem muito mais do que o necessário.",
+      "feedbackWrong": {
+        "b": "Moisés ouve; a quantidade é muito mais.",
+        "c": "Serviço é o destino; a quantidade é muito mais."
+      },
+      "hint": "A frase é \"traz ___ ___ do que é necessário\".",
+      "learningObjective": "Identificar o excesso.",
+      "evidence": [
+        "Êxodo 36:5"
+      ],
+      "difficulty": "semente",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Segundo Êxodo 36:7, o material que possuíam era o quê?",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suficiente e ainda sobejava"
+        },
+        {
+          "id": "b",
+          "text": "Insuficiente para começar"
+        },
+        {
+          "id": "c",
+          "text": "Só para a porta da tenda"
+        },
+        {
+          "id": "d",
+          "text": "Guardado no Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era suficiente para toda a obra a ser realizada e ainda sobejava",
+      "feedbackCorrect": "Bastava para toda a obra e ainda sobrava.",
+      "feedbackWrong": {
+        "b": "Era suficiente.",
+        "c": "Para toda a obra.",
+        "d": "Estava com eles."
+      },
+      "hint": "Leia suficiente e sobejava.",
+      "learningObjective": "Observar a suficiência.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "difficulty": "semente",
+      "type": "choice"
+    },
+    {
+      "question": "Monte Êxodo 36:7 na ordem do texto.",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o material que possuíam era suficiente"
+        },
+        {
+          "id": "b",
+          "text": "para toda a obra a ser realizada"
+        },
+        {
+          "id": "c",
+          "text": "e ainda sobejava"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "era suficiente",
+      "feedbackCorrect": "Suficiente, para a obra, e ainda sobejava.",
+      "feedbackWrong": {
+        "default": "Comece por Porque o material."
+      },
+      "hint": "O versículo começa com Porque.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 36:7.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "difficulty": "semente",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 36:7, além de suficiente, o material ainda ___?",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "sobejava"
+        },
+        {
+          "id": "b",
+          "text": "faltava"
+        },
+        {
+          "id": "c",
+          "text": "sumia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e ainda sobejava",
+      "feedbackCorrect": "Ainda sobejava.",
+      "feedbackWrong": {
+        "b": "Não faltava.",
+        "c": "O verbo é sobejava."
+      },
+      "hint": "A última palavra do versículo.",
+      "learningObjective": "Lembrar que sobejava.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "difficulty": "semente",
+      "type": "complete"
+    },
+    {
+      "question": "O que Êxodo 36:5 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 36:5",
+      "passageA": {
+        "ref": "Êxodo 36:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O povo traz tanto que Moisés manda parar as ofertas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Generosidade que sobra"
+        },
+        {
+          "id": "b",
+          "text": "Escassez no acampamento"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de ofertar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "muito mais do que é necessário",
+      "feedbackCorrect": "Trazem demais; a generosidade sobra.",
+      "feedbackWrong": {
+        "b": "Há abundância, não escassez.",
+        "c": "Há oferta em excesso."
+      },
+      "hint": "Compare o excesso e a ordem de parar.",
+      "learningObjective": "Ligar excesso e parada.",
+      "evidence": [
+        "Êxodo 36:5"
+      ],
+      "difficulty": "semente",
+      "type": "connect"
+    },
+    {
+      "question": "Em Êxodo 36:6, Moisés ordenou que o povo continuasse a trazer sem parar.",
+      "verseRef": "Êxodo 36:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "o povo foi impedido de trazer mais",
+      "feedbackCorrect": "O povo foi impedido de trazer mais.",
+      "feedbackWrong": {
+        "true": "Releia: impedido de trazer mais."
+      },
+      "hint": "O que a proclamação mandou?",
+      "learningObjective": "Compreender a ordem de parar.",
+      "evidence": [
+        "Êxodo 36:6"
+      ],
+      "difficulty": "caminhada",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 36:7, toque a palavra que introduz o motivo da parada.",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "obra"
+        },
+        {
+          "id": "c",
+          "text": "material"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque o material que possuíam era suficiente",
+      "feedbackCorrect": "\"Porque\" introduz a suficiência como motivo.",
+      "feedbackWrong": {
+        "b": "Obra é o destino.",
+        "c": "Material é o sujeito; o marcador é Porque."
+      },
+      "hint": "A primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "difficulty": "caminhada",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Como Êxodo 36:5–6 liga o excesso à decisão de Moisés?",
+      "verseRef": "Êxodo 36:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao ver o excesso, ele manda parar de trazer"
+        },
+        {
+          "id": "b",
+          "text": "Ele ignora o aviso dos artífices"
+        },
+        {
+          "id": "c",
+          "text": "Ele pede o dobro do que já havia"
+        },
+        {
+          "id": "d",
+          "text": "Ele devolve tudo ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o povo foi impedido de trazer mais",
+      "feedbackCorrect": "O excesso leva à proclamação de parar.",
+      "feedbackWrong": {
+        "b": "Ele age após o aviso.",
+        "c": "Ele para o fluxo.",
+        "d": "Não devolve ao Egito."
+      },
+      "hint": "O que Moisés ordena após o aviso?",
+      "learningObjective": "Relacionar excesso e parada.",
+      "evidence": [
+        "Êxodo 36:5",
+        "Êxodo 36:6"
+      ],
+      "difficulty": "caminhada",
+      "type": "choice"
+    },
+    {
+      "question": "Como avança Êxodo 36:2–7?",
+      "verseRef": "Êxodo 36:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamada dos artífices sábios"
+        },
+        {
+          "id": "b",
+          "text": "Aviso: trazem demais"
+        },
+        {
+          "id": "c",
+          "text": "Ordem de parar; material sobeja"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "concedido sabedoria",
+      "feedbackCorrect": "Artífices, aviso de excesso, parada.",
+      "feedbackWrong": {
+        "default": "Comece pelos artífices; a parada vem por último."
+      },
+      "hint": "Primeiro os artífices; no fim a parada.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 36:2–7"
+      ],
+      "difficulty": "caminhada",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 36:2, o que o SENHOR havia concedido?",
+      "verseRef": "Êxodo 36:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "sabedoria"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "havia concedido sabedoria",
+      "feedbackCorrect": "Concedeu sabedoria aos artífices.",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "O dom nomeado é sabedoria."
+      },
+      "hint": "Concedido ___.",
+      "learningObjective": "Lembrar o dom da sabedoria.",
+      "evidence": [
+        "Êxodo 36:2"
+      ],
+      "difficulty": "caminhada",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 36:5 a 2 Coríntios 8:12?",
+      "verseRef": "Êxodo 36:5",
+      "passageA": {
+        "ref": "Êxodo 36:5"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 8:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Generosidade segundo o que se tem"
+        },
+        {
+          "id": "b",
+          "text": "Escassez forçada"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de contribuir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "muito mais do que é necessário",
+      "feedbackCorrect": "A generosidade abundante ilustra a boa vontade.",
+      "feedbackWrong": {
+        "b": "Há abundância.",
+        "c": "Há contribuição em excesso."
+      },
+      "hint": "O que o povo traz?",
+      "learningObjective": "Relacionar generosidade nos textos.",
+      "evidence": [
+        "Êxodo 36:5",
+        "2 Coríntios 8:12"
+      ],
+      "difficulty": "caminhada",
+      "type": "connect"
+    },
+    {
+      "question": "Êxodo 36:2–7 sustenta que a sabedoria de Deus e a generosidade do povo bastam e até sobram para a obra.",
+      "verseRef": "Êxodo 36:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "era suficiente para toda a obra a ser realizada e ainda sobejava",
+      "feedbackCorrect": "Sabedoria concedida e material que sobeja fecham a cena.",
+      "feedbackWrong": {
+        "false": "O texto une sabedoria e suficiência."
+      },
+      "hint": "Una sabedoria e sobejava.",
+      "learningObjective": "Interpretar suficiência na obra.",
+      "evidence": [
+        "Êxodo 36:2",
+        "Êxodo 36:7"
+      ],
+      "difficulty": "profundezas",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 36:7, toque a palavra que diz que bastava para a obra.",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "suficiente"
+        },
+        {
+          "id": "b",
+          "text": "Porque"
+        },
+        {
+          "id": "c",
+          "text": "possuíam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era suficiente para toda a obra",
+      "feedbackCorrect": "O material era suficiente.",
+      "feedbackWrong": {
+        "b": "Porque introduz o motivo.",
+        "c": "Possuíam é o verbo de ter."
+      },
+      "hint": "Era ___ para toda a obra.",
+      "learningObjective": "Sustentar a leitura da suficiência.",
+      "evidence": [
+        "Êxodo 36:7"
+      ],
+      "difficulty": "profundezas",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Que leitura Êxodo 36:2–7 sustenta sobre a obra?",
+      "verseRef": "Êxodo 36:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus capacita e o povo dá até sobrar"
+        },
+        {
+          "id": "b",
+          "text": "A obra depende só de coerção"
+        },
+        {
+          "id": "c",
+          "text": "Nunca há material bastante"
+        },
+        {
+          "id": "d",
+          "text": "Os artífices trabalham sem dom de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda sobejava",
+      "feedbackCorrect": "Sabedoria concedida e oferta que sobeja.",
+      "feedbackWrong": {
+        "b": "Há oferta voluntária.",
+        "c": "Era suficiente e sobejava.",
+        "d": "Havia sabedoria concedida."
+      },
+      "hint": "Una sabedoria e sobejava.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 36:2",
+        "Êxodo 36:7"
+      ],
+      "difficulty": "profundezas",
+      "type": "choice"
+    },
+    {
+      "question": "Qual sequência liga a generosidade à Escritura?",
+      "verseRef": "Êxodo 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo traz muito mais do necessário"
+        },
+        {
+          "id": "b",
+          "text": "Moisés manda parar de trazer"
+        },
+        {
+          "id": "c",
+          "text": "Paulo fala de boa vontade ao dar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "muito mais do que é necessário",
+      "feedbackCorrect": "Excesso, parada, eco em Paulo.",
+      "feedbackWrong": {
+        "default": "Comece pelo excesso; Paulo vem por último."
+      },
+      "hint": "Siga a ordem da cena.",
+      "learningObjective": "Ver o fio da generosidade.",
+      "evidence": [
+        "Êxodo 36:5",
+        "Êxodo 36:6",
+        "2 Coríntios 8:12"
+      ],
+      "difficulty": "profundezas",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 36:5, o povo traz muito mais do que é ___?",
+      "verseRef": "Êxodo 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "necessário"
+        },
+        {
+          "id": "b",
+          "text": "proibido"
+        },
+        {
+          "id": "c",
+          "text": "secreto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mais do que é necessário",
+      "feedbackCorrect": "Mais do que é necessário.",
+      "feedbackWrong": {
+        "b": "Não é proibido.",
+        "c": "O termo é necessário."
+      },
+      "hint": "Mais do que é ___.",
+      "learningObjective": "Lembrar o termo do excesso.",
+      "evidence": [
+        "Êxodo 36:5"
+      ],
+      "difficulty": "profundezas",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 36:7 a Filipenses 4:18?",
+      "verseRef": "Êxodo 36:7",
+      "passageA": {
+        "ref": "Êxodo 36:7"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oferta suficiente e abundante"
+        },
+        {
+          "id": "b",
+          "text": "Falta no santuário"
+        },
+        {
+          "id": "c",
+          "text": "Parada sem motivo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era suficiente",
+      "feedbackCorrect": "Suficiência e abundância unem os textos.",
+      "feedbackWrong": {
+        "b": "Há suficiência.",
+        "c": "O motivo é a suficiência."
+      },
+      "hint": "O que o material era?",
+      "learningObjective": "Ligar suficiência nos textos.",
+      "evidence": [
+        "Êxodo 36:7",
+        "Filipenses 4:18"
+      ],
+      "difficulty": "profundezas",
+      "type": "connect"
+    }
+  ]
+}

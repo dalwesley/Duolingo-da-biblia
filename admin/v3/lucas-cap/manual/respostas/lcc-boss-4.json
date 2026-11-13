@@ -1,0 +1,632 @@
+{
+  "study": {
+    "passageRef": "Lucas 19:3–8",
+    "passages": [
+      { "ref": "Lucas 19:3–8" },
+      { "ref": "Lucas 15:13–18" },
+      { "ref": "Lucas 16:21–26" },
+      { "ref": "Lucas 17:13–18" },
+      { "ref": "Lucas 18:9–14" }
+    ],
+    "context": "Esta travessia revisa o filho na terra distante, o rico e Lázaro, os dez leprosos, a oração no templo e Zaqueu em Jericó. Cada cena mostra alguém afastado e uma resposta.",
+    "keyword": "Justificado",
+    "keywordGloss": "Quem se humilha e se reconhece pecador desce justificado; quem se exalta, não.",
+    "focusQuestion": "Quando você se vê longe, você se apoia nas próprias obras ou pede misericórdia?",
+    "reflectionPrompts": [
+      "A fome longe de casa",
+      "A oração sem desculpa",
+      "A casa que recebe"
+    ],
+    "facts": [
+      {
+        "text": "O filho mais moço junta tudo o que possui e parte para uma terra distante.",
+        "evidenceRef": "Lucas 15:13",
+        "evidenceSpan": "juntou tudo o que possuía e partiu para uma terra distante"
+      },
+      {
+        "text": "O filho deseja as alfarrobas dos porcos, e ninguém lhe dá nada.",
+        "evidenceRef": "Lucas 15:16",
+        "evidenceSpan": "as alfarrobas que os porcos comiam"
+      },
+      {
+        "text": "Um grande abismo separa os dois lados, e a travessia não acontece.",
+        "evidenceRef": "Lucas 16:26",
+        "evidenceSpan": "está estabelecido um grande abismo entre nós e vós"
+      },
+      {
+        "text": "Um dos leprosos curados retorna, dando glória a Deus em alta voz.",
+        "evidenceRef": "Lucas 17:15",
+        "evidenceSpan": "retornou, dando glória a Deus em alta voz"
+      },
+      {
+        "text": "O publicano desce justificado para sua casa, e não o outro.",
+        "evidenceRef": "Lucas 18:14",
+        "evidenceSpan": "este desceu justificado para sua casa, e não aquele"
+      },
+      {
+        "text": "Zaqueu resolve dar aos pobres a metade dos bens e restituir quatro vezes.",
+        "evidenceRef": "Lucas 19:8",
+        "evidenceSpan": "resolvo dar aos pobres a metade dos meus bens; e, se nalguma coisa tenho defraudado alguém, restituo quatro vezes mais"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justificado",
+        "gloss": "Condição de quem desce aceito: aqui, o publicano que se humilha, não quem se exalta."
+      },
+      {
+        "term": "abismo",
+        "gloss": "Separação entre o seio de Abraão e o lugar de tormentos, sem travessia de um lado ao outro."
+      },
+      {
+        "term": "samaritano",
+        "gloss": "Origem de quem, entre os curados, volta, se prostra e agradece a Jesus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O filho cai em si e resolve voltar",
+        "evidenceRef": "Lucas 15:17–18"
+      },
+      {
+        "label": "O abismo fecha qualquer passagem",
+        "evidenceRef": "Lucas 16:26"
+      },
+      {
+        "label": "Quem se humilha desce justificado",
+        "evidenceRef": "Lucas 18:13–14"
+      },
+      {
+        "label": "Jesus chama Zaqueu para a casa",
+        "evidenceRef": "Lucas 19:5–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O publicano, em contraste com a oração anterior, fica longe e pede misericórdia.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 18:13"
+      },
+      {
+        "kind": "contraste",
+        "text": "Na vida o rico teve os bens e Lázaro os males; agora o consolo e o tormento se invertem.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 16:25"
+      },
+      {
+        "kind": "resultado",
+        "text": "O grande abismo está posto de modo que ninguém consegue atravessar para o outro lado.",
+        "marker": "modo",
+        "evidenceRef": "Lucas 16:26"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 23:12",
+        "bridge": "Humilde será exaltado"
+      },
+      {
+        "ref": "2 Samuel 12:6",
+        "bridge": "Restituir quatro vezes"
+      },
+      {
+        "ref": "Levítico 14:2–3",
+        "bridge": "Leproso ao sacerdote"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Quem deseja atravessar o abismo consegue passar para o outro lado.",
+        "why": "O texto diz que os que desejam atravessar não podem, nem os do outro lado passam para cá."
+      },
+      {
+        "text": "Os dez curados voltaram para dar glória, e o estrangeiro não se distingue.",
+        "why": "Jesus pergunta pelos nove e aponta só este estrangeiro como quem voltou para dar glória."
+      },
+      {
+        "text": "A murmuração da multidão faz Zaqueu desistir de repartir os bens.",
+        "why": "Depois da murmuração, Zaqueu resolve dar a metade aos pobres e restituir quatro vezes."
+      }
+    ],
+    "centralInsight": "Jesus busca e salva o perdido",
+    "anchorQuestion": "Quem desceu justificado para casa na parábola do templo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 17:16, quem se prostrou aos pés de Jesus era samaritano.",
+      "verseRef": "Lucas 17:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "prostrou-se aos pés de Jesus, com o rosto em terra, agradecendo-Lhe; e este era samaritano",
+      "feedbackCorrect": "Ele se prostra aos pés de Jesus, e o relato diz que era samaritano.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a prostração aos pés de Jesus e a origem samaritana."
+      },
+      "hint": "Veja o gesto diante de Jesus e a frase final do versículo.",
+      "learningObjective": "Observar quem se prostrou aos pés de Jesus e qual era a origem dele.",
+      "evidence": ["Lucas 17:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 16:20, toque o nome próprio de quem jazia à porta.",
+      "verseRef": "Lucas 16:20",
+      "options": [
+        { "id": "a", "text": "mendigo" },
+        { "id": "b", "text": "Lázaro" },
+        { "id": "c", "text": "chagas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamado Lázaro",
+      "feedbackCorrect": "O mendigo que jaz à porta tem nome próprio: Lázaro.",
+      "feedbackWrong": {
+        "a": "Mendigo descreve a condição; o nome próprio vem depois de chamado.",
+        "c": "Chagas descrevem o corpo; o nome próprio vem antes delas."
+      },
+      "hint": "Veja o nome que o texto põe depois de chamado.",
+      "learningObjective": "Identificar o nome do mendigo que jazia à porta do rico.",
+      "evidence": ["Lucas 16:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 18:10, quem subiu ao templo para orar?",
+      "verseRef": "Lucas 18:10",
+      "options": [
+        { "id": "a", "text": "Um fariseu e um publicano" },
+        { "id": "b", "text": "Dez leprosos vindos da aldeia" },
+        { "id": "c", "text": "Zaqueu com a multidão de Jericó" },
+        { "id": "d", "text": "Dois anjos e o mendigo Lázaro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um fariseu e o outro, um publicano",
+      "feedbackCorrect": "Os dois que sobem ao templo para orar são um fariseu e um publicano.",
+      "feedbackWrong": {
+        "b": "Os dez leprosos aparecem no caminho, não nesta subida ao templo.",
+        "c": "Zaqueu está em Jericó; aqui dois homens sobem ao templo para orar.",
+        "d": "Anjos levam Lázaro ao seio de Abraão; no templo estão fariseu e publicano."
+      },
+      "hint": "Leia quem são os dois homens no fim do versículo.",
+      "learningObjective": "Observar quem sobe ao templo com o propósito de orar.",
+      "evidence": ["Lucas 18:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 15:17 na ordem do texto.",
+      "verseRef": "Lucas 15:17",
+      "options": [
+        { "id": "a", "text": "E, caindo em si, disse" },
+        { "id": "b", "text": "Quantos trabalhadores de meu pai têm pão com fartura" },
+        { "id": "c", "text": "e eu aqui estou à beira da fome" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "têm pão com fartura",
+      "feedbackCorrect": "Ele cai em si, lembra o pão na casa do pai e vê a própria fome.",
+      "feedbackWrong": {
+        "default": "Comece pelo momento em que ele cai em si; a fome fecha o versículo."
+      },
+      "hint": "O versículo começa quando ele cai em si.",
+      "learningObjective": "Reconhecer a sequência de Lucas 15:17.",
+      "evidence": ["Lucas 15:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 16:21, o que caía da mesa e Lázaro desejava comer?",
+      "verseRef": "Lucas 16:21",
+      "options": [
+        { "id": "a", "text": "frutas" },
+        { "id": "b", "text": "migalhas" },
+        { "id": "c", "text": "moedas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "das migalhas que caíam",
+      "feedbackCorrect": "Lázaro desejava as migalhas que caíam da mesa do rico.",
+      "feedbackWrong": {
+        "a": "O texto não fala em frutas; o que caía da mesa eram migalhas.",
+        "c": "O texto não fala em moedas; o que caía da mesa eram migalhas."
+      },
+      "hint": "Veja o que caía da mesa do rico.",
+      "learningObjective": "Lembrar o que Lázaro desejava da mesa do rico.",
+      "evidence": ["Lucas 16:21"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 19:8 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 19:8",
+      "passageA": { "ref": "Lucas 19:8" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Zaqueu muda o uso dos bens depois de receber Jesus em casa."
+      },
+      "options": [
+        { "id": "a", "text": "Jejum prova a justiça" },
+        { "id": "b", "text": "Bens repartidos aos pobres" },
+        { "id": "c", "text": "Multidão escolhe o hóspede" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "resolvo dar aos pobres a metade dos meus bens",
+      "feedbackCorrect": "Zaqueu reparte a metade dos bens com os pobres ao receber Jesus.",
+      "feedbackWrong": {
+        "a": "Jejum e dízimo são a fala do fariseu, não a decisão de Zaqueu.",
+        "c": "A multidão murmura contra a hospedagem; não escolhe a casa."
+      },
+      "hint": "Veja o que ele resolve fazer com a metade dos bens.",
+      "learningObjective": "Ligar a decisão de Zaqueu sobre os bens ao que muda em sua casa.",
+      "evidence": ["Lucas 19:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 19:2, toque o nome do maioral dos publicanos.",
+      "verseRef": "Lucas 19:2",
+      "options": [
+        { "id": "a", "text": "Zaqueu" },
+        { "id": "b", "text": "homem" },
+        { "id": "c", "text": "rico" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem chamado Zaqueu",
+      "feedbackCorrect": "O maioral dos publicanos tem nome: Zaqueu, e o texto o diz rico.",
+      "feedbackWrong": {
+        "b": "Homem abre a frase; o nome próprio vem depois de chamado.",
+        "c": "Rico é uma condição dele, não o nome pedido."
+      },
+      "hint": "Veja quem é apresentado logo no início do versículo.",
+      "learningObjective": "Identificar o nome do maioral dos publicanos em Jericó.",
+      "evidence": ["Lucas 19:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 17:14 na ordem do texto.",
+      "verseRef": "Lucas 17:14",
+      "options": [
+        { "id": "a", "text": "Ele, ao vê-los, disse-lhes" },
+        { "id": "b", "text": "Vão e apresentem-se aos sacerdotes" },
+        { "id": "c", "text": "enquanto iam, foram purificados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "enquanto iam, foram purificados",
+      "feedbackCorrect": "Jesus vê, manda a apresentação aos sacerdotes, e a purificação ocorre no caminho.",
+      "feedbackWrong": {
+        "default": "Comece pelo olhar de Jesus; a purificação fecha o versículo."
+      },
+      "hint": "O versículo começa quando Jesus os vê.",
+      "learningObjective": "Reconhecer a sequência de Lucas 17:14.",
+      "evidence": ["Lucas 17:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 16:26, os que desejam atravessar o grande abismo conseguem passar de um lado ao outro.",
+      "verseRef": "Lucas 16:26",
+      "correctOptionId": "false",
+      "evidenceSpan": "aqueles que desejam atravessar daqui para aí não podem",
+      "feedbackCorrect": "O abismo está posto de modo que quem deseja atravessar não pode.",
+      "feedbackWrong": {
+        "true": "O desejo de atravessar aparece, e a frase diz que a passagem não ocorre."
+      },
+      "hint": "Leia o resultado para quem deseja ir de um lado ao outro.",
+      "learningObjective": "Compreender que o abismo impede a passagem nos dois sentidos.",
+      "evidence": ["Lucas 16:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:13, toque a palavra que abre o contraste na frase.",
+      "verseRef": "Lucas 18:13",
+      "options": [
+        { "id": "a", "text": "distância" },
+        { "id": "b", "text": "porém" },
+        { "id": "c", "text": "publicano" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O publicano, porém",
+      "feedbackCorrect": "Porém abre o contraste e distingue a postura que vem em seguida.",
+      "feedbackWrong": {
+        "a": "Distância diz onde ele ficou, não a palavra que marca o contraste.",
+        "c": "Publicano é quem ora; a palavra de contraste vem logo depois."
+      },
+      "hint": "Ela vem logo depois do sujeito, antes da postura.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na oração do publicano.",
+      "evidence": ["Lucas 18:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual contraste Lucas 16:25 estabelece entre a vida passada e o agora?",
+      "verseRef": "Lucas 16:25",
+      "options": [
+        { "id": "a", "text": "Bens e males da vida agora se invertem" },
+        { "id": "b", "text": "Rico e Lázaro sofrem o mesmo tormento" },
+        { "id": "c", "text": "Lázaro leva água e o rico é consolado" },
+        { "id": "d", "text": "Lembrar os bens apaga a separação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele está consolado; tu, em tormentos",
+      "feedbackCorrect": "O rico teve bens e agora sofre; Lázaro teve males e agora é consolado.",
+      "feedbackWrong": {
+        "b": "O consolo fica com Lázaro; o tormento fica com o rico.",
+        "c": "Quem pede água é o rico; quem está consolado é Lázaro.",
+        "d": "A lembrança não apaga a diferença; ela torna o contraste visível."
+      },
+      "hint": "Compare o que cada um teve na vida com o que tem agora.",
+      "learningObjective": "Relacionar os bens e os males da vida com o consolo e o tormento.",
+      "evidence": ["Lucas 16:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da decisão em Lucas 15:17–18?",
+      "verseRef": "Lucas 15:17–18",
+      "options": [
+        { "id": "a", "text": "O filho reconhece a fome longe do pai" },
+        { "id": "b", "text": "Ele resolve levantar-se e ir ao pai" },
+        { "id": "c", "text": "Ele prepara a confissão do seu pecado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Pai, pequei contra o céu e diante de ti",
+      "feedbackCorrect": "A fome o faz cair em si; ele decide ir e já formula a confissão.",
+      "feedbackWrong": {
+        "default": "A fome vem primeiro; a confissão fecha a decisão."
+      },
+      "hint": "Comece pelo que ele percebe sobre a própria fome.",
+      "learningObjective": "Compreender os passos da decisão do filho antes de partir.",
+      "evidence": ["Lucas 15:17", "Lucas 15:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 17:16, qual era a origem de quem se prostrou aos pés de Jesus?",
+      "verseRef": "Lucas 17:16",
+      "options": [
+        { "id": "a", "text": "fariseu" },
+        { "id": "b", "text": "levita" },
+        { "id": "c", "text": "samaritano" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "este era samaritano",
+      "feedbackCorrect": "Quem se prostrou e agradeceu era samaritano.",
+      "feedbackWrong": {
+        "a": "O fariseu aparece na parábola do templo, não neste agradecimento.",
+        "b": "O texto não chama este homem de levita; fecha com outra origem."
+      },
+      "hint": "O versículo fecha dizendo de onde ele era.",
+      "learningObjective": "Lembrar a origem de quem voltou, se prostrou e agradeceu.",
+      "evidence": ["Lucas 17:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 18:14 a Mateus 23:12?",
+      "verseRef": "Lucas 18:14",
+      "passageA": { "ref": "Lucas 18:14" },
+      "passageB": { "ref": "Mateus 23:12" },
+      "options": [
+        { "id": "a", "text": "O templo encerra a oração" },
+        { "id": "b", "text": "O jejum garante o prêmio" },
+        { "id": "c", "text": "Humilde será exaltado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "quem a si mesmo se humilha será exaltado",
+      "feedbackCorrect": "Lucas e Mateus afirmam que quem se humilha será exaltado.",
+      "feedbackWrong": {
+        "a": "O templo é o lugar da parábola; a ponte é o destino de quem se humilha.",
+        "b": "O jejum é a lista do fariseu; os dois textos falam de humildade."
+      },
+      "hint": "Compare o destino de quem se abaixa nos dois textos.",
+      "learningObjective": "Relacionar a sentença de Lucas 18:14 com a mesma sentença em Mateus.",
+      "evidence": ["Lucas 18:14", "Mateus 23:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 17:15, toque a palavra que mostra a volta dele.",
+      "verseRef": "Lucas 17:15",
+      "options": [
+        { "id": "a", "text": "curado" },
+        { "id": "b", "text": "glória" },
+        { "id": "c", "text": "retornou" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "retornou, dando glória a Deus",
+      "feedbackCorrect": "Retornou mostra a volta: ele percebe a cura e volta dando glória a Deus.",
+      "feedbackWrong": {
+        "a": "Curado é o que ele percebeu; a volta está no verbo seguinte.",
+        "b": "Glória é o que ele dá a Deus; a volta está no verbo anterior."
+      },
+      "hint": "Procure o verbo entre a cura e o louvor a Deus.",
+      "learningObjective": "Reconhecer a ação que muda a cena depois da purificação.",
+      "evidence": ["Lucas 17:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência do encontro em Lucas 19:4–6?",
+      "verseRef": "Lucas 19:4–5",
+      "options": [
+        { "id": "a", "text": "Zaqueu sobe numa árvore para ver Jesus" },
+        { "id": "b", "text": "Jesus olha para cima e o chama" },
+        { "id": "c", "text": "Zaqueu desce e recebe Jesus com alegria" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "subiu em uma sicômoro",
+      "feedbackCorrect": "Zaqueu sobe para ver, Jesus chama, e ele desce e recebe com alegria.",
+      "feedbackWrong": {
+        "default": "A árvore vem primeiro; a alegria do acolhimento fecha."
+      },
+      "hint": "Comece pelo que Zaqueu faz para conseguir ver.",
+      "learningObjective": "Compreender os movimentos do encontro de Jesus com Zaqueu.",
+      "evidence": ["Lucas 19:4", "Lucas 19:5", "Lucas 19:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 17:18, apenas o estrangeiro retornou para dar glória a Deus.",
+      "verseRef": "Lucas 17:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "quem retornasse para dar glória a Deus, senão este estrangeiro",
+      "feedbackCorrect": "A fala de Jesus aponta só o estrangeiro como quem voltou para dar glória.",
+      "feedbackWrong": {
+        "false": "Jesus pergunta pelos que não voltaram e aponta só este estrangeiro."
+      },
+      "hint": "Ouça quem a fala de Jesus distingue no fim do versículo.",
+      "learningObjective": "Interpretar a fala de Jesus como afirmação de que só o estrangeiro voltou.",
+      "evidence": ["Lucas 17:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:13, toque a palavra com que ele se apresenta a Deus.",
+      "verseRef": "Lucas 18:13",
+      "options": [
+        { "id": "a", "text": "céu" },
+        { "id": "b", "text": "peito" },
+        { "id": "c", "text": "pecador" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "a mim, pecador",
+      "feedbackCorrect": "Ele se nomeia pecador: a oração pede misericórdia, sem lista de obras.",
+      "feedbackWrong": {
+        "a": "Céu é para onde ele não levanta os olhos, não o nome que se dá.",
+        "b": "O peito é o gesto de dor; o nome que ele se dá vem no fim da fala."
+      },
+      "hint": "Olhe como a oração dele termina.",
+      "learningObjective": "Localizar a palavra que sustenta a leitura de quem se reconhece pecador.",
+      "evidence": ["Lucas 18:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 19:7–8 sustenta sobre a murmuração?",
+      "verseRef": "Lucas 19:7–8",
+      "options": [
+        { "id": "a", "text": "A murmuração não impede a restituição de Zaqueu" },
+        { "id": "b", "text": "A murmuração faz Zaqueu desistir dos pobres" },
+        { "id": "c", "text": "A multidão aprova a hospedagem com pecador" },
+        { "id": "d", "text": "Zaqueu pede que a cidade pague a dívida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "restituo quatro vezes mais",
+      "feedbackCorrect": "Depois da murmuração, Zaqueu reparte bens e restitui quatro vezes.",
+      "feedbackWrong": {
+        "b": "A murmuração não o faz desistir: em seguida ele fala dos pobres.",
+        "c": "A multidão murmura; não aprova a hospedagem com um pecador.",
+        "d": "Quem resolve restituir é Zaqueu, não a cidade."
+      },
+      "hint": "Veja o que Zaqueu diz logo depois da murmuração.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a murmuração e os bens.",
+      "evidence": ["Lucas 19:7", "Lucas 19:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o perdido sendo alcançado nesta etapa?",
+      "verseRef": "Lucas 15:18",
+      "options": [
+        { "id": "a", "text": "O filho decide confessar o pecado ao pai" },
+        { "id": "b", "text": "O publicano se humilha e desce justificado" },
+        { "id": "c", "text": "Jesus entra na casa do publicano Zaqueu" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Pai, pequei contra o céu e diante de ti",
+      "feedbackCorrect": "A confissão do filho, a humildade do publicano e a casa de Zaqueu seguem juntas.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão do filho; a casa de Zaqueu fecha."
+      },
+      "hint": "Siga a etapa: o filho, o templo, depois Jericó.",
+      "learningObjective": "Ver um fio de acolhida que atravessa o filho, o publicano e Zaqueu.",
+      "evidence": ["Lucas 15:18", "Lucas 18:14", "Lucas 19:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 18:14, em que condição o publicano desceu para sua casa?",
+      "verseRef": "Lucas 18:14",
+      "options": [
+        { "id": "a", "text": "cansado" },
+        { "id": "b", "text": "justificado" },
+        { "id": "c", "text": "triste" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "desceu justificado para sua casa",
+      "feedbackCorrect": "O publicano desce justificado; o outro, que se exaltou, não.",
+      "feedbackWrong": {
+        "a": "O texto não fala em cansaço; diz em que condição ele desceu.",
+        "c": "O texto não fala em tristeza; diz em que condição ele desceu."
+      },
+      "hint": "Veja em que condição ele deixa o templo, diferente do outro.",
+      "learningObjective": "Lembrar o termo que diz como o publicano desce do templo.",
+      "evidence": ["Lucas 18:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 19:8 a 2 Samuel 12:6?",
+      "verseRef": "Lucas 19:8",
+      "passageA": { "ref": "Lucas 19:8" },
+      "passageB": { "ref": "2 Samuel 12:6" },
+      "options": [
+        { "id": "a", "text": "Restituir quatro vezes" },
+        { "id": "b", "text": "Esconder o que foi tirado" },
+        { "id": "c", "text": "Subir para ver a cidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "restituo quatro vezes mais",
+      "feedbackCorrect": "Zaqueu assume devolver quatro vezes, medida que Davi também nomeia.",
+      "feedbackWrong": {
+        "b": "Os dois textos falam em devolver, não em esconder o que foi tomado.",
+        "c": "A árvore serve para ver Jesus; a ponte é a medida da devolução."
+      },
+      "hint": "Compare a medida da devolução nos dois textos.",
+      "learningObjective": "Ligar a restituição de Zaqueu à medida de devolver quatro vezes.",
+      "evidence": ["Lucas 19:8", "2 Samuel 12:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 19:5, toque a palavra que mostra obrigação na fala de Jesus.",
+      "verseRef": "Lucas 19:5",
+      "options": [
+        { "id": "a", "text": "rapidamente" },
+        { "id": "b", "text": "necessário" },
+        { "id": "c", "text": "casa" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "é necessário que eu permaneça hoje em sua casa",
+      "feedbackCorrect": "Necessário mostra dever: Jesus não trata a visita como convite solto.",
+      "feedbackWrong": {
+        "a": "Rapidamente diz a pressa da descida, não a obrigação da visita.",
+        "c": "Casa é o lugar; a obrigação está na palavra que vem antes."
+      },
+      "hint": "Na fala de Jesus, procure a palavra que indica dever.",
+      "learningObjective": "Localizar a palavra que sustenta a iniciativa de Jesus na casa de Zaqueu.",
+      "evidence": ["Lucas 19:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do rico e de Lázaro?",
+      "verseRef": "Lucas 16:25–26",
+      "options": [
+        { "id": "a", "text": "Na vida o rico teve bens e Lázaro males" },
+        { "id": "b", "text": "Agora o consolo fica com Lázaro" },
+        { "id": "c", "text": "O abismo impede a travessia dos dois lados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ele está consolado; tu, em tormentos",
+      "feedbackCorrect": "Bens e males da vida se invertem, e o abismo impede qualquer travessia.",
+      "feedbackWrong": {
+        "default": "Comece pelos bens e males da vida; o abismo fecha."
+      },
+      "hint": "Comece pelo que cada um recebeu na vida.",
+      "learningObjective": "Interpretar a inversão entre a vida e o agora, fechada pelo abismo.",
+      "evidence": ["Lucas 16:25", "Lucas 16:26"]
+    }
+  ]
+}

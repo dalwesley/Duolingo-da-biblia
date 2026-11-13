@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 10:12–19",
+    "passages": [
+      {
+        "ref": "2 Crônicas 10:12–19"
+      }
+    ],
+    "context": "Roboão rejeita o conselho dos anciãos, fala duro ao povo, e Israel se divide da casa de Davi.",
+    "keyword": "dura",
+    "keywordGloss": "A resposta dura de Roboão, alinhada ao conselho dos jovens, abre a divisão do reino.",
+    "focusQuestion": "Onde a dureza da sua resposta pode estar dividindo o que Deus uniu?",
+    "reflectionPrompts": [
+      "Conselho rejeitado",
+      "Resposta dura",
+      "Reino dividido"
+    ],
+    "facts": [
+      {
+        "text": "Jeroboão e o povo voltam no terceiro dia conforme a ordem do rei.",
+        "evidenceRef": "2 Crônicas 10:12",
+        "evidenceSpan": "vieram a Roboão no terceiro dia"
+      },
+      {
+        "text": "O rei respondeu de maneira dura e desprezou o conselho dos anciãos.",
+        "evidenceRef": "2 Crônicas 10:13",
+        "evidenceSpan": "O rei respondeu de maneira dura, pois Roboão desprezou o conselho dos anciãos"
+      },
+      {
+        "text": "Falou conforme o conselho dos jovens: jugo mais pesado e escorpiões.",
+        "evidenceRef": "2 Crônicas 10:14",
+        "evidenceSpan": "lhes falou conforme o conselho dos jovens"
+      },
+      {
+        "text": "O rei não deu ouvidos ao povo, pois isto vinha de Deus para confirmar a palavra por Aías.",
+        "evidenceRef": "2 Crônicas 10:15",
+        "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra"
+      },
+      {
+        "text": "Israel se foi; Roboão reinou sobre os de Judá; Hadoram foi apedrejado.",
+        "evidenceRef": "2 Crônicas 10:16",
+        "evidenceSpan": "todo o Israel se foi para suas tendas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "dura",
+        "gloss": "Modo da resposta de Roboão ao povo."
+      },
+      {
+        "term": "anciãos",
+        "gloss": "Conselho desprezado pelo rei."
+      },
+      {
+        "term": "rebelado",
+        "gloss": "Estado de Israel contra a casa de Davi."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O povo volta no terceiro dia",
+        "evidenceRef": "2 Crônicas 10:12"
+      },
+      {
+        "label": "Roboão responde duro pelo conselho dos jovens",
+        "evidenceRef": "2 Crônicas 10:13–14"
+      },
+      {
+        "label": "Deus confirma a palavra e Israel se divide",
+        "evidenceRef": "2 Crônicas 10:15–16"
+      },
+      {
+        "label": "Judá fica; Hadoram morre; a rebelião permanece",
+        "evidenceRef": "2 Crônicas 10:17–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Respondeu duro porque desprezou o conselho dos anciãos.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 10:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Não deu ouvidos, pois isto vinha de Deus.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 10:15"
+      },
+      {
+        "kind": "contraste",
+        "text": "Israel se vai; Judá permanece sob Roboão.",
+        "marker": "Mas",
+        "evidenceRef": "2 Crônicas 10:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 12:15",
+        "bridge": "Mesma divisão do reino"
+      },
+      {
+        "ref": "1 Reis 11:31",
+        "bridge": "Palavra de Aías a Jeroboão"
+      },
+      {
+        "ref": "Provérbios 15:1",
+        "bridge": "Resposta branda e ira"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A divisão foi só acidente político, sem Deus.",
+        "why": "10:15 diz que isto vinha de Deus."
+      },
+      {
+        "text": "Roboão seguiu o conselho dos anciãos.",
+        "why": "Ele desprezou os anciãos e ouviu os jovens."
+      },
+      {
+        "text": "Todo Israel ficou com Roboão.",
+        "why": "Só os de Judá permaneceram sob ele."
+      }
+    ],
+    "centralInsight": "A palavra do Senhor se cumpre: o reino se divide por causa da dureza do rei.",
+    "anchorQuestion": "Por que, em 2 Crônicas 10:15, o rei não deu ouvidos ao povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 10:13, Roboão seguiu o conselho dos anciãos com resposta branda.",
+      "verseRef": "2 Crônicas 10:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "O rei respondeu de maneira dura, pois Roboão desprezou o conselho dos anciãos",
+      "feedbackCorrect": "Ele respondeu duro e desprezou os anciãos.",
+      "feedbackWrong": {
+        "true": "Releia 10:13."
+      },
+      "hint": "Veja como o rei respondeu.",
+      "learningObjective": "Observar a resposta dura.",
+      "evidence": [
+        "2 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 10:13, toque o modo da resposta do rei.",
+      "verseRef": "2 Crônicas 10:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "dura"
+        },
+        {
+          "id": "b",
+          "text": "anciãos"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "respondeu de maneira dura",
+      "feedbackCorrect": "A resposta foi dura.",
+      "feedbackWrong": {
+        "b": "É o conselho desprezado.",
+        "c": "É quem ouve a resposta."
+      },
+      "hint": "Procure o adjetivo da resposta.",
+      "learningObjective": "Identificar a dureza.",
+      "evidence": [
+        "2 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 10:15, por que o rei não deu ouvidos ao povo?",
+      "verseRef": "2 Crônicas 10:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque isto vinha de Deus, para confirmar a palavra"
+        },
+        {
+          "id": "b",
+          "text": "Porque os anciãos mandaram calar"
+        },
+        {
+          "id": "c",
+          "text": "Porque Jeroboão pediu misericórdia"
+        },
+        {
+          "id": "d",
+          "text": "Porque Judá já havia se rebelado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra",
+      "feedbackCorrect": "A causa é teológica: Deus confirma a palavra.",
+      "feedbackWrong": {
+        "b": "Ele desprezou os anciãos.",
+        "c": "Não é o motivo dado.",
+        "d": "A rebelião vem depois."
+      },
+      "hint": "Leia a razão após pois.",
+      "learningObjective": "Identificar a causa divina.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 10:13 na ordem do texto.",
+      "verseRef": "2 Crônicas 10:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rei respondeu de maneira dura"
+        },
+        {
+          "id": "b",
+          "text": "pois Roboão desprezou"
+        },
+        {
+          "id": "c",
+          "text": "o conselho dos anciãos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O rei respondeu de maneira dura",
+      "feedbackCorrect": "Resposta e motivo.",
+      "feedbackWrong": {
+        "default": "Comece pela resposta."
+      },
+      "hint": "A ordem segue o versículo.",
+      "learningObjective": "Reconhecer 10:13.",
+      "evidence": [
+        "2 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 10:19, Israel se mantém _____ contra a casa de Davi.",
+      "verseRef": "2 Crônicas 10:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "rebelado"
+        },
+        {
+          "id": "b",
+          "text": "unido"
+        },
+        {
+          "id": "c",
+          "text": "calado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Israel se mantém rebelado contra a casa de Davi",
+      "feedbackCorrect": "A rebelião permanece.",
+      "feedbackWrong": {
+        "b": "Não é unido.",
+        "c": "Não é calado."
+      },
+      "hint": "Veja o verbo do estado de Israel.",
+      "learningObjective": "Lembrar a rebelião.",
+      "evidence": [
+        "2 Crônicas 10:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 10:15 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 10:15",
+      "passageA": {
+        "ref": "2 Crônicas 10:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A dureza do rei serve ao cumprimento da palavra de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cumprimento da palavra divina"
+        },
+        {
+          "id": "b",
+          "text": "Vitória dos anciãos"
+        },
+        {
+          "id": "c",
+          "text": "Fim de Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra",
+      "feedbackCorrect": "A divisão cumpre a palavra.",
+      "feedbackWrong": {
+        "b": "Os anciãos foram desprezados.",
+        "c": "Judá permanece sob Roboão."
+      },
+      "hint": "Veja a causa divina.",
+      "learningObjective": "Ligar dureza e palavra.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 10:15, o rei não deu ouvidos ao povo porque isto vinha de Deus.",
+      "verseRef": "2 Crônicas 10:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra",
+      "feedbackCorrect": "O pois liga a recusa ao plano de Deus.",
+      "feedbackWrong": {
+        "false": "Repare na palavra pois."
+      },
+      "hint": "Veja a razão da recusa.",
+      "learningObjective": "Compreender a causa divina.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 10:15, toque a palavra que marca a causa da recusa.",
+      "verseRef": "2 Crônicas 10:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto vinha de Deus",
+      "feedbackCorrect": "Pois introduz a causa.",
+      "feedbackWrong": {
+        "b": "É quem não foi ouvido.",
+        "c": "É quem não ouviu."
+      },
+      "hint": "Procure a palavra do motivo.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 10:13 se relaciona com 10:15–16?",
+      "verseRef": "2 Crônicas 10:13–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dureza do rei abre caminho à divisão que Deus confirma"
+        },
+        {
+          "id": "b",
+          "text": "A dureza une todo Israel a Roboão"
+        },
+        {
+          "id": "c",
+          "text": "Os anciãos impedem a divisão"
+        },
+        {
+          "id": "d",
+          "text": "Aías é ignorado no texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra",
+      "feedbackCorrect": "Dureza humana e propósito divino se encontram.",
+      "feedbackWrong": {
+        "b": "Israel se afasta.",
+        "c": "Os anciãos foram desprezados.",
+        "d": "Aías é nomeado em 10:15."
+      },
+      "hint": "Una dureza e cumprimento.",
+      "learningObjective": "Relacionar resposta e divisão.",
+      "evidence": [
+        "2 Crônicas 10:13–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 10:12–19?",
+      "verseRef": "2 Crônicas 10:12–19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roboão responde duro aos jovens"
+        },
+        {
+          "id": "b",
+          "text": "Deus confirma a palavra e Israel se divide"
+        },
+        {
+          "id": "c",
+          "text": "Judá fica e a rebelião permanece"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Israel se mantém rebelado contra a casa de Davi",
+      "feedbackCorrect": "Dureza, divisão e permanência.",
+      "feedbackWrong": {
+        "default": "Comece pela resposta dura."
+      },
+      "hint": "A rebelião fecha.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 10:12–19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 10:14, Roboão falou conforme o conselho dos _____.",
+      "verseRef": "2 Crônicas 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "jovens"
+        },
+        {
+          "id": "b",
+          "text": "anciãos"
+        },
+        {
+          "id": "c",
+          "text": "sacerdotes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lhes falou conforme o conselho dos jovens",
+      "feedbackCorrect": "Jovens carrega o conselho seguido.",
+      "feedbackWrong": {
+        "b": "Ele desprezou os anciãos.",
+        "c": "Não são sacerdotes."
+      },
+      "hint": "Veja de quem era o conselho seguido.",
+      "learningObjective": "Lembrar o conselho dos jovens.",
+      "evidence": [
+        "2 Crônicas 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 10:15 a 1 Reis 11:31?",
+      "verseRef": "2 Crônicas 10:15",
+      "passageA": {
+        "ref": "2 Crônicas 10:15"
+      },
+      "passageB": {
+        "ref": "1 Reis 11:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra de Aías cumprida"
+        },
+        {
+          "id": "b",
+          "text": "União eterna das tribos"
+        },
+        {
+          "id": "c",
+          "text": "Conselho dos anciãos vitorioso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a palavra que tinha falado por meio de Aías, o silonita",
+      "feedbackCorrect": "Aías anuncia; Crônicas registra o cumprimento.",
+      "feedbackWrong": {
+        "b": "O reino se divide.",
+        "c": "Os anciãos foram desprezados."
+      },
+      "hint": "Compare Aías nos textos.",
+      "learningObjective": "Relacionar Crônicas a Reis.",
+      "evidence": [
+        "2 Crônicas 10:15",
+        "1 Reis 11:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 10:12–19 ensina que a divisão do reino foi só acidente político, sem Deus.",
+      "verseRef": "2 Crônicas 10:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra",
+      "feedbackCorrect": "O texto atribui a divisão ao cumprimento da palavra.",
+      "feedbackWrong": {
+        "true": "Leia a causa em 10:15."
+      },
+      "hint": "Veja de quem vinha aquilo.",
+      "learningObjective": "Corrigir a leitura só política.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 10:15, toque o trecho que sustenta o cumprimento da palavra.",
+      "verseRef": "2 Crônicas 10:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "vinha de Deus"
+        },
+        {
+          "id": "b",
+          "text": "silonita"
+        },
+        {
+          "id": "c",
+          "text": "filho de Nebate"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto vinha de Deus, para que o Senhor confirmasse a palavra",
+      "feedbackCorrect": "Vinha de Deus sustenta o cumprimento.",
+      "feedbackWrong": {
+        "b": "Identifica Aías.",
+        "c": "Identifica Jeroboão."
+      },
+      "hint": "Procure a origem do evento.",
+      "learningObjective": "Sustentar a leitura teológica.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 10:12–19 sustenta?",
+      "verseRef": "2 Crônicas 10:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A dureza do rei serve ao cumprimento da palavra do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Os anciãos controlam o destino do reino"
+        },
+        {
+          "id": "c",
+          "text": "Israel e Judá nunca se separam"
+        },
+        {
+          "id": "d",
+          "text": "Deus está ausente da divisão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que o Senhor confirmasse a palavra que tinha falado por meio de Aías",
+      "feedbackCorrect": "Dureza e palavra divina formam a leitura.",
+      "feedbackWrong": {
+        "b": "Os anciãos foram desprezados.",
+        "c": "Há divisão clara.",
+        "d": "Isto vinha de Deus."
+      },
+      "hint": "Una 10:13 e 10:15.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "2 Crônicas 10:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a palavra de Aías à divisão?",
+      "verseRef": "2 Crônicas 10:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aías anuncia a divisão a Jeroboão"
+        },
+        {
+          "id": "b",
+          "text": "Roboão responde duro ao povo"
+        },
+        {
+          "id": "c",
+          "text": "Israel se afasta da casa de Davi"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "todo o Israel se foi para suas tendas",
+      "feedbackCorrect": "Profecia, dureza e divisão.",
+      "feedbackWrong": {
+        "default": "Comece por Aías."
+      },
+      "hint": "Siga a história.",
+      "learningObjective": "Encadear profecia e fato.",
+      "evidence": [
+        "1 Reis 11:31",
+        "2 Crônicas 10:13",
+        "2 Crônicas 10:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 10:13, Roboão desprezou o conselho dos _____.",
+      "verseRef": "2 Crônicas 10:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "anciãos"
+        },
+        {
+          "id": "b",
+          "text": "jovens"
+        },
+        {
+          "id": "c",
+          "text": "profetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desprezou o conselho dos anciãos",
+      "feedbackCorrect": "Anciãos carrega o conselho rejeitado.",
+      "feedbackWrong": {
+        "b": "Ele ouviu os jovens.",
+        "c": "O texto fala dos anciãos."
+      },
+      "hint": "Veja de quem era o conselho desprezado.",
+      "learningObjective": "Lembrar o termo do conselho.",
+      "evidence": [
+        "2 Crônicas 10:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 10:13 a Provérbios 15:1?",
+      "verseRef": "2 Crônicas 10:13",
+      "passageA": {
+        "ref": "2 Crônicas 10:13"
+      },
+      "passageB": {
+        "ref": "Provérbios 15:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Resposta dura e divisão"
+        },
+        {
+          "id": "b",
+          "text": "Resposta branda de Roboão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem consequências"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O rei respondeu de maneira dura",
+      "feedbackCorrect": "A dureza da resposta tem efeito no povo.",
+      "feedbackWrong": {
+        "b": "A resposta foi dura.",
+        "c": "Há divisão e morte."
+      },
+      "hint": "Compare resposta e efeito.",
+      "learningObjective": "Ligar Crônicas a Provérbios.",
+      "evidence": [
+        "2 Crônicas 10:13",
+        "Provérbios 15:1"
+      ]
+    }
+  ]
+}

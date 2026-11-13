@@ -11,6 +11,7 @@ import '../data/question_bank.dart';
 import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
 import '../models/difficulty.dart';
+import '../models/scene_takeaway.dart';
 import '../models/corner_challenge.dart';
 import '../models/study_room.dart';
 import '../models/trail.dart';
@@ -1057,6 +1058,11 @@ class _LessonScreenState extends State<LessonScreen>
           sceneTitle: _mission!.title,
           postcardRef: widget.practiceMode ? null : postcardRef,
           choosesTrail: _choosesTrail,
+          takeaways: SceneTakeaway.fromSession(
+            exercises: _exercises,
+            results: _results,
+            requeued: _requeuedSlots,
+          ),
         ),
       ),
     );

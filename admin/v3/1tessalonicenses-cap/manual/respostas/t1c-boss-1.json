@@ -1,0 +1,927 @@
+{
+  "study": {
+    "passageRef": "1 Tessalonicenses 2:1–6",
+    "passages": [
+      {
+        "ref": "1 Tessalonicenses 2:1–6"
+      },
+      {
+        "ref": "1 Tessalonicenses 2:7–8"
+      },
+      {
+        "ref": "1 Tessalonicenses 3:6–11"
+      },
+      {
+        "ref": "1 Tessalonicenses 3:12–13"
+      }
+    ],
+    "context": "Este desafio revisa o cuidado pastoral e a fé que cresce até a vinda do Senhor.",
+    "keyword": "fé",
+    "keywordGloss": "Firmeza que consola e se completa no amor até a vinda.",
+    "focusQuestion": "Sua fé está consolando alguém e crescendo em amor?",
+    "reflectionPrompts": [
+      "Ministério como mãe",
+      "Consolo pela fé",
+      "Amor até a vinda"
+    ],
+    "facts": [
+      {
+        "text": "Foram carinhosos como mãe.",
+        "evidenceRef": "1 Tessalonicenses 2:7",
+        "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe"
+      },
+      {
+        "text": "Não buscaram glória dos homens.",
+        "evidenceRef": "1 Tessalonicenses 2:6",
+        "evidenceSpan": "Não buscamos a glória dos homens"
+      },
+      {
+        "text": "Consolados pela fé deles.",
+        "evidenceRef": "1 Tessalonicenses 3:7",
+        "evidenceSpan": "ficamos consolados a respeito de vocês"
+      },
+      {
+        "text": "Vivem se firmes no Senhor.",
+        "evidenceRef": "1 Tessalonicenses 3:8",
+        "evidenceSpan": "agora vivemos, se é que vocês permanecem firmes no Senhor"
+      },
+      {
+        "text": "Pedem crescimento no amor.",
+        "evidenceRef": "1 Tessalonicenses 3:12",
+        "evidenceSpan": "cresçam e abundem em amor"
+      },
+      {
+        "text": "Alvo: irrepreensíveis na vinda.",
+        "evidenceRef": "1 Tessalonicenses 3:13",
+        "evidenceSpan": "irrepreensíveis em santidade"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "carinhosos",
+        "gloss": "Tom maternal do ministério."
+      },
+      {
+        "term": "fé",
+        "gloss": "Consola o apóstolo."
+      },
+      {
+        "term": "vinda",
+        "gloss": "Horizonte da santidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ministério sem glória humana",
+        "evidenceRef": "1 Tessalonicenses 2:6"
+      },
+      {
+        "label": "Carinho e oferta da vida",
+        "evidenceRef": "1 Tessalonicenses 2:8"
+      },
+      {
+        "label": "Consolo pela fé",
+        "evidenceRef": "1 Tessalonicenses 3:7"
+      },
+      {
+        "label": "Amor até a vinda",
+        "evidenceRef": "1 Tessalonicenses 3:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Agradar a Deus, não homens.",
+        "marker": "mas",
+        "evidenceRef": "1 Tessalonicenses 2:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Consolados pela fé.",
+        "marker": "Por isso",
+        "evidenceRef": "1 Tessalonicenses 3:7"
+      },
+      {
+        "kind": "propósito",
+        "text": "Amor para santidade na vinda.",
+        "marker": "Para",
+        "evidenceRef": "1 Tessalonicenses 3:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gálatas 1:10",
+        "bridge": "Agradar a Deus"
+      },
+      {
+        "ref": "Filipenses 1:9",
+        "bridge": "Amor que cresce"
+      },
+      {
+        "ref": "2 Coríntios 12:15",
+        "bridge": "Gastar-se pelos filhos"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ministério por ganância.",
+        "why": "Negam bajulação e ganância."
+      },
+      {
+        "text": "Fé sem amor.",
+        "why": "Oram pelo crescimento do amor."
+      },
+      {
+        "text": "Sem horizonte da vinda.",
+        "why": "Há a vinda no alvo."
+      }
+    ],
+    "centralInsight": "A fé viva se cuida e cresce até a vinda do Senhor",
+    "anchorQuestion": "O que consola Paulo em 1 Tessalonicenses 3:7?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Tessalonicenses 2:7, foram carinhosos como uma mãe.",
+      "verseRef": "1 Tessalonicenses 2:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe",
+      "feedbackCorrect": "Tom maternal explícito.",
+      "feedbackWrong": {
+        "false": "Releia a comparação."
+      },
+      "hint": "Olhe a comparação.",
+      "learningObjective": "Observar o carinho.",
+      "evidence": [
+        "1 Tessalonicenses 2:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 3:7, toque o que os consolou.",
+      "verseRef": "1 Tessalonicenses 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé de vocês"
+        },
+        {
+          "id": "b",
+          "text": "aflição"
+        },
+        {
+          "id": "c",
+          "text": "necessidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela fé de vocês",
+      "feedbackCorrect": "A fé consolou.",
+      "feedbackWrong": {
+        "b": "É o contexto.",
+        "c": "É o contexto."
+      },
+      "hint": "Procure pela.",
+      "learningObjective": "Identificar a fé.",
+      "evidence": [
+        "1 Tessalonicenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Tessalonicenses 2:4, a quem querem agradar?",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Deus"
+        },
+        {
+          "id": "b",
+          "text": "Aos homens"
+        },
+        {
+          "id": "c",
+          "text": "À ganância"
+        },
+        {
+          "id": "d",
+          "text": "À bajulação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "A Deus.",
+      "feedbackWrong": {
+        "b": "É o contraste.",
+        "c": "Negada.",
+        "d": "Negada."
+      },
+      "hint": "Leia o contraste.",
+      "learningObjective": "Observar o alvo.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+      "verseRef": "1 Tessalonicenses 2:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fomos carinhosos entre vocês"
+        },
+        {
+          "id": "b",
+          "text": "como uma mãe"
+        },
+        {
+          "id": "c",
+          "text": "que acaricia seus próprios filhos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe",
+      "feedbackCorrect": "Carinho e mãe.",
+      "feedbackWrong": {
+        "default": "Comece pelo carinho."
+      },
+      "hint": "Comece pelo carinho.",
+      "learningObjective": "Reconhecer 2:7.",
+      "evidence": [
+        "1 Tessalonicenses 2:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 3:8, agora vivemos se permanecem firmes no ___.",
+      "verseRef": "1 Tessalonicenses 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "mundo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permanecem firmes no Senhor",
+      "feedbackCorrect": "Firmes no Senhor.",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "Não é mundo."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Lembrar o Senhor.",
+      "evidence": [
+        "1 Tessalonicenses 3:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Tessalonicenses 3:7 comunica que se liga a este contexto?",
+      "verseRef": "1 Tessalonicenses 3:7",
+      "passageA": {
+        "ref": "1 Tessalonicenses 3:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A fé firme consola o apóstolo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé que consola"
+        },
+        {
+          "id": "b",
+          "text": "Fé que abandona"
+        },
+        {
+          "id": "c",
+          "text": "Sem alívio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ficamos consolados a respeito de vocês",
+      "feedbackCorrect": "Consolo pela fé.",
+      "feedbackWrong": {
+        "b": "Há firmeza.",
+        "c": "Há consolo."
+      },
+      "hint": "Una aflição e consolo.",
+      "learningObjective": "Ligar à fé.",
+      "evidence": [
+        "1 Tessalonicenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 2:5, toque o que nunca empregaram.",
+      "verseRef": "1 Tessalonicenses 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "bajulação"
+        },
+        {
+          "id": "b",
+          "text": "testemunha"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca empregamos palavras de bajulação",
+      "feedbackCorrect": "Sem bajulação.",
+      "feedbackWrong": {
+        "b": "É Deus.",
+        "c": "É a testemunha."
+      },
+      "hint": "Procure o que nunca.",
+      "learningObjective": "Identificar a integridade.",
+      "evidence": [
+        "1 Tessalonicenses 2:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Tessalonicenses 3:7 na ordem do texto.",
+      "verseRef": "1 Tessalonicenses 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso, irmãos, ficamos consolados a respeito de vocês"
+        },
+        {
+          "id": "b",
+          "text": "em toda a nossa aflição e necessidade"
+        },
+        {
+          "id": "c",
+          "text": "pela fé de vocês"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ficamos consolados a respeito de vocês",
+      "feedbackCorrect": "Consolo pela fé.",
+      "feedbackWrong": {
+        "default": "Comece por Por isso."
+      },
+      "hint": "Comece pelo resultado.",
+      "learningObjective": "Reconhecer 3:7.",
+      "evidence": [
+        "1 Tessalonicenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Tessalonicenses 2:4, falam para agradar aos homens.",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "O contraste é agradar a Deus.",
+      "feedbackWrong": {
+        "true": "Releia o mas."
+      },
+      "hint": "Repare no contraste.",
+      "learningObjective": "Compreender o alvo.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 2:4, toque a palavra do contraste.",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "assim"
+        },
+        {
+          "id": "c",
+          "text": "corações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a Deus",
+      "feedbackCorrect": "Mas.",
+      "feedbackWrong": {
+        "b": "Introduz aprovação.",
+        "c": "Deus sonda."
+      },
+      "hint": "Procure a conjunção.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Tessalonicenses 3:12–13 se relacionam?",
+      "verseRef": "1 Tessalonicenses 3:12–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amor cresce para santidade na vinda"
+        },
+        {
+          "id": "b",
+          "text": "Amor cancela a vinda"
+        },
+        {
+          "id": "c",
+          "text": "Santidade dispensa o amor"
+        },
+        {
+          "id": "d",
+          "text": "Sem oração pelo amor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para fortalecer os seus corações",
+      "feedbackCorrect": "Amor visando a vinda.",
+      "feedbackWrong": {
+        "b": "Há vinda.",
+        "c": "Há amor.",
+        "d": "Há oração."
+      },
+      "hint": "Una Para e vinda.",
+      "learningObjective": "Relacionar amor e vinda.",
+      "evidence": [
+        "1 Tessalonicenses 3:12–13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco fé e cuidado?",
+      "verseRef": "1 Tessalonicenses 2:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ministério como mãe"
+        },
+        {
+          "id": "b",
+          "text": "Consolo pela fé"
+        },
+        {
+          "id": "c",
+          "text": "Amor até a vinda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "cresçam e abundem em amor",
+      "feedbackCorrect": "Cuidado, consolo e crescimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo ministério."
+      },
+      "hint": "Siga mãe → consolo → amor.",
+      "learningObjective": "Compreender o arco.",
+      "evidence": [
+        "1 Tessalonicenses 2:7",
+        "1 Tessalonicenses 3:7",
+        "1 Tessalonicenses 3:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 3:7, ___, irmãos, ficamos consolados.",
+      "verseRef": "1 Tessalonicenses 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso"
+        },
+        {
+          "id": "b",
+          "text": "Jamais"
+        },
+        {
+          "id": "c",
+          "text": "Talvez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, irmãos, ficamos consolados",
+      "feedbackCorrect": "Por isso.",
+      "feedbackWrong": {
+        "b": "Não é jamais.",
+        "c": "Não é talvez."
+      },
+      "hint": "Abertura.",
+      "learningObjective": "Lembrar o marcador.",
+      "evidence": [
+        "1 Tessalonicenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "passageA": {
+        "ref": "1 Tessalonicenses 2:4"
+      },
+      "passageB": {
+        "ref": "Gálatas 1:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Agradar a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Agradar homens"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar o evangelho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "Agradar a Deus.",
+      "feedbackWrong": {
+        "b": "É o contraste.",
+        "c": "Evangelho anunciado."
+      },
+      "hint": "Compare o alvo.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Tessalonicenses 2:4",
+        "Gálatas 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 3:6, toque o marcador da virada.",
+      "verseRef": "1 Tessalonicenses 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Agora"
+        },
+        {
+          "id": "c",
+          "text": "Timóteo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Agora, porém, Timóteo voltou",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "É o tempo.",
+        "c": "É quem voltou."
+      },
+      "hint": "Após Agora.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "1 Tessalonicenses 3:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Tessalonicenses 3:6–8?",
+      "verseRef": "1 Tessalonicenses 3:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boas notícias da fé"
+        },
+        {
+          "id": "b",
+          "text": "Consolo na aflição"
+        },
+        {
+          "id": "c",
+          "text": "Vida se firmes no Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora vivemos, se é que vocês permanecem firmes no Senhor",
+      "feedbackCorrect": "Notícia, consolo e firmeza.",
+      "feedbackWrong": {
+        "default": "Comece pelas notícias."
+      },
+      "hint": "Siga a ordem.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "1 Tessalonicenses 3:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O bloco 1 Tessalonicenses 2–3 une ministério sem glória humana e fé que cresce até a vinda.",
+      "verseRef": "1 Tessalonicenses 3:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+      "feedbackCorrect": "Cuidado pastoral e horizonte da vinda.",
+      "feedbackWrong": {
+        "false": "Una 2:6–8 e 3:12–13."
+      },
+      "hint": "Una glória negada e vinda.",
+      "learningObjective": "Interpretar o bloco.",
+      "evidence": [
+        "1 Tessalonicenses 3:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 3:13, toque o marco da santidade.",
+      "verseRef": "1 Tessalonicenses 3:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "vinda"
+        },
+        {
+          "id": "b",
+          "text": "corações"
+        },
+        {
+          "id": "c",
+          "text": "santidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+      "feedbackCorrect": "A vinda.",
+      "feedbackWrong": {
+        "b": "Corações são fortalecidos, não o horizonte.",
+        "c": "Santidade é o alvo, não o marco temporal."
+      },
+      "hint": "Tempo final.",
+      "learningObjective": "Sustentar a vinda.",
+      "evidence": [
+        "1 Tessalonicenses 3:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o desafio sustenta?",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuidado sacrificial e fé que consola até a vinda"
+        },
+        {
+          "id": "b",
+          "text": "Ministério por ganância"
+        },
+        {
+          "id": "c",
+          "text": "Fé sem efeito"
+        },
+        {
+          "id": "d",
+          "text": "Sem oração pelo amor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+      "feedbackCorrect": "Doação e crescimento.",
+      "feedbackWrong": {
+        "b": "Ganância negada.",
+        "c": "Há consolo.",
+        "d": "Há oração."
+      },
+      "hint": "Una oferta e amor.",
+      "learningObjective": "Escolher a leitura.",
+      "evidence": [
+        "1 Tessalonicenses 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oferecer evangelho e vida"
+        },
+        {
+          "id": "b",
+          "text": "Consolar-se pela fé"
+        },
+        {
+          "id": "c",
+          "text": "Crescer no amor até a vinda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "na vinda de nosso Senhor Jesus Cristo",
+      "feedbackCorrect": "Doação, consolo e vinda.",
+      "feedbackWrong": {
+        "default": "Comece pela oferta."
+      },
+      "hint": "Siga oferta → consolo → vinda.",
+      "learningObjective": "Ver o encadeamento.",
+      "evidence": [
+        "1 Tessalonicenses 2:8",
+        "1 Tessalonicenses 3:7",
+        "1 Tessalonicenses 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+      "verseRef": "1 Tessalonicenses 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não buscamos a glória dos homens",
+      "feedbackCorrect": "Sem glória humana.",
+      "feedbackWrong": {
+        "b": "Não é fé.",
+        "c": "Não é paz."
+      },
+      "hint": "O que não buscam.",
+      "learningObjective": "Lembrar glória.",
+      "evidence": [
+        "1 Tessalonicenses 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Tessalonicenses 3:12 a Filipenses 1:9?",
+      "verseRef": "1 Tessalonicenses 3:12",
+      "passageA": {
+        "ref": "1 Tessalonicenses 3:12"
+      },
+      "passageB": {
+        "ref": "Filipenses 1:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amor que cresce"
+        },
+        {
+          "id": "b",
+          "text": "Amor que some"
+        },
+        {
+          "id": "c",
+          "text": "Sem oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cresçam e abundem em amor",
+      "feedbackCorrect": "Amor crescente.",
+      "feedbackWrong": {
+        "b": "É crescer.",
+        "c": "Há pedido."
+      },
+      "hint": "Compare o pedido.",
+      "learningObjective": "Ligar o amor.",
+      "evidence": [
+        "1 Tessalonicenses 3:12",
+        "Filipenses 1:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "nossas próprias vidas"
+        },
+        {
+          "id": "b",
+          "text": "evangelho"
+        },
+        {
+          "id": "c",
+          "text": "amados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas também nossas próprias vidas",
+      "feedbackCorrect": "A vida.",
+      "feedbackWrong": {
+        "b": "O evangelho já está na oferta; o acréscimo é outro.",
+        "c": "Amados descreve o resultado, não o oferecido."
+      },
+      "hint": "Mas também.",
+      "learningObjective": "Sustentar a oferta.",
+      "evidence": [
+        "1 Tessalonicenses 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga cuidado e esperança?",
+      "verseRef": "1 Tessalonicenses 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Carinho no ministério"
+        },
+        {
+          "id": "b",
+          "text": "Fé que consola"
+        },
+        {
+          "id": "c",
+          "text": "Santidade na vinda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "irrepreensíveis em santidade",
+      "feedbackCorrect": "Cuidado, fé e vinda.",
+      "feedbackWrong": {
+        "default": "Comece pelo carinho."
+      },
+      "hint": "Siga o arco.",
+      "learningObjective": "Ver o fio.",
+      "evidence": [
+        "1 Tessalonicenses 2:7",
+        "1 Tessalonicenses 3:7",
+        "1 Tessalonicenses 3:13"
+      ]
+    }
+  ]
+}

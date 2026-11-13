@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Efésios 4:1–7",
+    "passages": [
+      {
+        "ref": "Efésios 4:1–7"
+      }
+    ],
+    "context": "Paulo, prisioneiro no Senhor, exorta a andar digno do chamado: humildade, amor e unidade do Espírito no vínculo da paz.",
+    "keyword": "unidade",
+    "keywordGloss": "Unidade do Espírito preservada no vínculo da paz, fundada no único Senhor e única fé.",
+    "focusQuestion": "Onde você precisa esforçar-se para preservar a unidade?",
+    "reflectionPrompts": [
+      "Andar digno",
+      "Unidade do Espírito",
+      "Um só Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Exorta a andar de maneira digna da vocação.",
+        "evidenceRef": "Efésios 4:1",
+        "evidenceSpan": "andem de maneira digna da vocação à qual foram chamados"
+      },
+      {
+        "text": "Com humildade, mansidão e longanimidade, suportando-se em amor.",
+        "evidenceRef": "Efésios 4:2",
+        "evidenceSpan": "suportando-vos uns aos outros em amor"
+      },
+      {
+        "text": "Esforcem-se para preservar a unidade do Espírito no vínculo da paz.",
+        "evidenceRef": "Efésios 4:3",
+        "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz"
+      },
+      {
+        "text": "Há um só corpo e um só Espírito.",
+        "evidenceRef": "Efésios 4:4",
+        "evidenceSpan": "Há um só corpo e um só Espírito"
+      },
+      {
+        "text": "Um só Senhor, uma única fé, um único batismo.",
+        "evidenceRef": "Efésios 4:5",
+        "evidenceSpan": "Um só Senhor, uma única fé, um único batismo"
+      },
+      {
+        "text": "A graça foi concedida a cada um segundo a medida do dom de Cristo.",
+        "evidenceRef": "Efésios 4:7",
+        "evidenceSpan": "a graça foi concedida a cada um de nós de acordo com a medida do dom de Cristo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "unidade",
+        "gloss": "Unidade do Espírito no vínculo da paz."
+      },
+      {
+        "term": "vocação",
+        "gloss": "Chamado ao qual devem andar dignos."
+      },
+      {
+        "term": "paz",
+        "gloss": "Vínculo em que a unidade é preservada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Exortação a andar digno",
+        "evidenceRef": "Efésios 4:1"
+      },
+      {
+        "label": "Atitudes do amor mútuo",
+        "evidenceRef": "Efésios 4:2"
+      },
+      {
+        "label": "Preservar a unidade no vínculo da paz",
+        "evidenceRef": "Efésios 4:3"
+      },
+      {
+        "label": "Fundamentos do um só e graça a cada um",
+        "evidenceRef": "Efésios 4:4–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Esforço diligente para preservar a unidade.",
+        "marker": null,
+        "evidenceRef": "Efésios 4:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um só corpo como foram chamados em uma esperança.",
+        "marker": "assim",
+        "evidenceRef": "Efésios 4:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Unidade do um só; graça medida a cada um.",
+        "marker": "Entretanto",
+        "evidenceRef": "Efésios 4:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 12:13",
+        "bridge": "Um Espírito, um corpo"
+      },
+      {
+        "ref": "João 17:21",
+        "bridge": "Para que sejam um"
+      },
+      {
+        "ref": "Colossenses 3:15",
+        "bridge": "Paz no corpo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A unidade dispensa esforço.",
+        "why": "O texto manda esforçar-se diligentemente."
+      },
+      {
+        "text": "Há muitos Senhores e muitas fés na igreja.",
+        "why": "Um só Senhor, uma única fé, um único batismo."
+      },
+      {
+        "text": "A graça iguala todos sem dons distintos.",
+        "why": "A graça foi concedida segundo a medida do dom de Cristo."
+      }
+    ],
+    "centralInsight": "Há um só corpo, um Espírito, um Senhor, uma fé, um batismo: guardai a unidade no vínculo da paz.",
+    "anchorQuestion": "Segundo Efésios 4:3, o que devem preservar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Efésios 4:3, devem esforçar-se para preservar a unidade do Espírito no vínculo da paz.",
+      "verseRef": "Efésios 4:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "A unidade do Espírito se preserva no vínculo da paz.",
+      "feedbackWrong": {
+        "false": "Releia o objeto do esforço."
+      },
+      "hint": "Olhe o que preservar.",
+      "learningObjective": "Observar a unidade do Espírito.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Efésios 4:5, toque quem é o só Senhor.",
+      "verseRef": "Efésios 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "batismo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Um só Senhor",
+      "feedbackCorrect": "Um só Senhor.",
+      "feedbackWrong": {
+        "b": "Fé é única.",
+        "c": "Batismo também."
+      },
+      "hint": "Veja o primeiro um só.",
+      "learningObjective": "Identificar o Senhor.",
+      "evidence": [
+        "Efésios 4:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Efésios 4:1, como devem andar?",
+      "verseRef": "Efésios 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "De maneira digna da vocação"
+        },
+        {
+          "id": "b",
+          "text": "Como prisioneiros sem chamado"
+        },
+        {
+          "id": "c",
+          "text": "Sem humildade"
+        },
+        {
+          "id": "d",
+          "text": "Fora do amor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "andem de maneira digna da vocação",
+      "feedbackCorrect": "Andar digno do chamado.",
+      "feedbackWrong": {
+        "b": "Ele é prisioneiro no Senhor.",
+        "c": "Há humildade em 4:2.",
+        "d": "Há amor em 4:2."
+      },
+      "hint": "Leia o mando.",
+      "learningObjective": "Ver o andar digno.",
+      "evidence": [
+        "Efésios 4:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Efésios 4:4–5 na ordem do texto.",
+      "verseRef": "Efésios 4:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há um só corpo e um só Espírito"
+        },
+        {
+          "id": "b",
+          "text": "uma única esperança da vossa vocação"
+        },
+        {
+          "id": "c",
+          "text": "Um só Senhor, uma única fé, um único batismo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+      "feedbackCorrect": "Corpo, esperança e então Senhor-fé-batismo.",
+      "feedbackWrong": {
+        "default": "Comece pelo corpo."
+      },
+      "hint": "Siga 4:4–5.",
+      "learningObjective": "Seguir a ordem dos uns.",
+      "evidence": [
+        "Efésios 4:4–5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Efésios 4:3, complete: unidade do Espírito no vínculo da ___.",
+      "verseRef": "Efésios 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "paz"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vínculo da paz",
+      "feedbackCorrect": "Paz é o vínculo.",
+      "feedbackWrong": {
+        "b": "Lei não aparece.",
+        "c": "Carne não aparece."
+      },
+      "hint": "Veja o complemento de vínculo da.",
+      "learningObjective": "Lembrar a palavra paz.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Efésios 4:3 comunica que se liga a este contexto?",
+      "verseRef": "Efésios 4:3",
+      "passageA": {
+        "ref": "Efésios 4:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A igreja é chamada a andar digna, unida no Espírito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Preservar a unidade do Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Muitos Senhores"
+        },
+        {
+          "id": "c",
+          "text": "Sem esforço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "A unidade no Espírito responde ao chamado.",
+      "feedbackWrong": {
+        "b": "Há um só Senhor.",
+        "c": "Há esforço diligente."
+      },
+      "hint": "Ligue unidade e chamado.",
+      "learningObjective": "Ligar o contexto à unidade.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Efésios 4:7, o Entretanto mostra graça medida a cada um sem quebrar o um só.",
+      "verseRef": "Efésios 4:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "a graça foi concedida a cada um de nós",
+      "feedbackCorrect": "Unidade do um só e graça distinta a cada um.",
+      "feedbackWrong": {
+        "false": "O Entretanto introduz a graça a cada um."
+      },
+      "hint": "Olhe o Entretanto.",
+      "learningObjective": "Ver unidade e graça.",
+      "evidence": [
+        "Efésios 4:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Efésios 4:7, toque a palavra que marca o contraste com a lista do um só.",
+      "verseRef": "Efésios 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "graça"
+        },
+        {
+          "id": "c",
+          "text": "medida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, a graça foi concedida",
+      "feedbackCorrect": "Entretanto marca a virada para a graça a cada um.",
+      "feedbackWrong": {
+        "b": "Graça é o dom.",
+        "c": "Medida qualifica o dom."
+      },
+      "hint": "Procure a conjunção inicial.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Efésios 4:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Efésios 4:1–3 estabelece entre andar e unidade?",
+      "verseRef": "Efésios 4:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar digno inclui esforçar-se pela unidade no amor"
+        },
+        {
+          "id": "b",
+          "text": "Unidade dispensa o andar"
+        },
+        {
+          "id": "c",
+          "text": "Amor exclui a paz"
+        },
+        {
+          "id": "d",
+          "text": "Vocação anula o esforço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "Andar digno e unidade caminham juntos.",
+      "feedbackWrong": {
+        "b": "Unidade pede esforço.",
+        "c": "Amor e paz juntos.",
+        "d": "Vocação pede esforço."
+      },
+      "hint": "Una 4:1 e 4:3.",
+      "learningObjective": "Relacionar andar e unidade.",
+      "evidence": [
+        "Efésios 4:1–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Efésios 4:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exortação a andar digno"
+        },
+        {
+          "id": "b",
+          "text": "Atitudes do amor mútuo"
+        },
+        {
+          "id": "c",
+          "text": "Fundamentos do um só e graça a cada um"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+      "feedbackCorrect": "Andar, amor e então o um só.",
+      "feedbackWrong": {
+        "default": "Comece pela exortação."
+      },
+      "hint": "Pense no fluxo.",
+      "learningObjective": "Ordenar andar, amor e um só.",
+      "evidence": [
+        "Efésios 4:1–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Efésios 4:1, complete: digna da ___ à qual foram chamados.",
+      "verseRef": "Efésios 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "vocação"
+        },
+        {
+          "id": "b",
+          "text": "inimizade"
+        },
+        {
+          "id": "c",
+          "text": "parede"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "digna da vocação",
+      "feedbackCorrect": "Vocação é o chamado.",
+      "feedbackWrong": {
+        "b": "Inimizade é de outro capítulo.",
+        "c": "Parede também."
+      },
+      "hint": "Veja o complemento de digna da.",
+      "learningObjective": "Lembrar a palavra vocação.",
+      "evidence": [
+        "Efésios 4:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Efésios 4:4 a 1 Coríntios 12:13?",
+      "verseRef": "Efésios 4:4",
+      "passageA": {
+        "ref": "Efésios 4:4"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 12:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um corpo e um Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Muitos Senhores"
+        },
+        {
+          "id": "c",
+          "text": "Sem batismo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Há um só corpo e um só Espírito",
+      "feedbackCorrect": "Ambos afirmam um corpo e um Espírito.",
+      "feedbackWrong": {
+        "b": "Há um só Senhor.",
+        "c": "Há um batismo."
+      },
+      "hint": "Compare corpo e Espírito.",
+      "learningObjective": "Ligar o um corpo e um Espírito.",
+      "evidence": [
+        "Efésios 4:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Efésios 4:3–5, a unidade dispensa esforço porque há muitos Senhores.",
+      "verseRef": "Efésios 4:3–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+      "feedbackCorrect": "Há um só Senhor e o texto manda esforçar-se.",
+      "feedbackWrong": {
+        "true": "Unidade pede esforço e um só Senhor."
+      },
+      "hint": "Una 4:3 e 4:5.",
+      "learningObjective": "Avaliar a leitura errada da unidade.",
+      "evidence": [
+        "Efésios 4:3–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Efésios 4:3, toque o trecho que sustenta o esforço pela unidade.",
+      "verseRef": "Efésios 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esforcem-se"
+        },
+        {
+          "id": "b",
+          "text": "vínculo"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esforcem-se diligentemente para preservar",
+      "feedbackCorrect": "Esforcem-se sustenta o esforço.",
+      "feedbackWrong": {
+        "b": "Vínculo é o meio.",
+        "c": "Paz qualifica o vínculo."
+      },
+      "hint": "Veja o verbo inicial.",
+      "learningObjective": "Tocar o trecho do esforço.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Efésios 4:1–7 sustenta melhor?",
+      "verseRef": "Efésios 4:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar digno preserva a unidade do um só Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Unidade sem esforço"
+        },
+        {
+          "id": "c",
+          "text": "Muitas fés na igreja"
+        },
+        {
+          "id": "d",
+          "text": "Graça sem medida do dom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+      "feedbackCorrect": "Andar, unidade e um só Senhor.",
+      "feedbackWrong": {
+        "b": "Há esforço.",
+        "c": "Uma fé.",
+        "d": "Há medida do dom."
+      },
+      "hint": "Una andar e um só.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Efésios 4:1–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até a graça a cada um.",
+      "verseRef": "Efésios 4:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar digno da vocação"
+        },
+        {
+          "id": "b",
+          "text": "Preservar a unidade na paz"
+        },
+        {
+          "id": "c",
+          "text": "Um só Senhor; graça medida a cada um"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a graça foi concedida a cada um de nós",
+      "feedbackCorrect": "Andar, unidade e graça.",
+      "feedbackWrong": {
+        "default": "A graça fecha."
+      },
+      "hint": "Siga até 4:7.",
+      "learningObjective": "Encadear andar, unidade e graça.",
+      "evidence": [
+        "Efésios 4:1–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Efésios 4:3, complete: preservar a ___ do Espírito.",
+      "verseRef": "Efésios 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "unidade"
+        },
+        {
+          "id": "b",
+          "text": "inimizade"
+        },
+        {
+          "id": "c",
+          "text": "parede"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "unidade do Espírito",
+      "feedbackCorrect": "Unidade é o que preservar.",
+      "feedbackWrong": {
+        "b": "Inimizade é de outro trecho.",
+        "c": "Parede também."
+      },
+      "hint": "Veja o objeto de preservar.",
+      "learningObjective": "Lembrar o termo unidade.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Efésios 4:3 a João 17:21?",
+      "verseRef": "Efésios 4:3",
+      "passageA": {
+        "ref": "Efésios 4:3"
+      },
+      "passageB": {
+        "ref": "João 17:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Unidade do povo de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Muitos batismos"
+        },
+        {
+          "id": "c",
+          "text": "Sem paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "Ambos pedem a unidade do povo.",
+      "feedbackWrong": {
+        "b": "Há um batismo.",
+        "c": "Há vínculo da paz."
+      },
+      "hint": "Compare o pedido de unidade.",
+      "learningObjective": "Ligar a unidade nos dois textos.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    }
+  ]
+}

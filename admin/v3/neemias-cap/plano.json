@@ -1,0 +1,103 @@
+{
+  "slug": "neemias-cap",
+  "prefix": "nec",
+  "book": "Neemias",
+  "chapters": 13,
+  "title": "Neemias",
+  "description": "Neemias capítulo a capítulo: muros, oposição, Lei e um povo que se renova.",
+  "icon": "🛡️",
+  "color": "#6A8E5A",
+  "order": 17,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["neemias"],
+  "modules": [
+    {
+      "title": "O muro sob oposição · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Neemias 2:11–20",
+          "chapters": "1–2",
+          "title": "Vamos edificar",
+          "intro": "Neemias inspeciona os muros de noite e chama o povo à obra.",
+          "insight": "A boa mão do meu Deus está sobre mim: levantemo-nos e edifiquemos.",
+          "objective": "Levantar-se para edificar"
+        },
+        {
+          "ref": "Neemias 4:1–6",
+          "chapters": "3–4",
+          "title": "Edificam apesar do escárnio",
+          "intro": "Sambalate e Tobias zombam; o povo continua a obra com o coração disposto.",
+          "insight": "Zombam do muro fraco, mas o povo tem ânimo para trabalhar e o muro se fecha.",
+          "objective": "Trabalhar sob zombaria"
+        },
+        {
+          "ref": "Neemias 5:6–13",
+          "title": "Basta de usura",
+          "intro": "Neemias se ira contra os nobres que exploram os irmãos pobres.",
+          "insight": "Deixai a usura: restituí campos e casas; o povo diz amém e louva o Senhor.",
+          "objective": "Fazer justiça ao irmão"
+        },
+        {
+          "ref": "Neemias 6:1–9",
+          "title": "Intrigas no caminho",
+          "intro": "Inimigos chamam Neemias para se encontrar; ele percebe que querem fazer-lhe mal.",
+          "insight": "Estou fazendo uma grande obra: não posso descer. Ó Deus, fortalece as minhas mãos.",
+          "objective": "Não descer da obra"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: O muro sob oposição",
+        "intro": "Revise a decisão de edificar, o escárnio, a justiça interna e as intrigas externas.",
+        "insight": "A obra do Senhor avança com mão firme e coração justo"
+      }
+    },
+    {
+      "title": "Lei e renovação · cap. 7–13",
+      "scenes": [
+        {
+          "ref": "Neemias 7:5–12",
+          "title": "Deus põe no coração",
+          "intro": "Deus move Neemias a reunir o povo e a registrar quem voltou do cativeiro.",
+          "insight": "Meu Deus pôs no meu coração reunir o povo e achar o livro dos que subiram primeiro.",
+          "objective": "Obedecer ao impulso de Deus"
+        },
+        {
+          "ref": "Neemias 9:5–15",
+          "chapters": "8–9",
+          "title": "Tu só és Senhor",
+          "intro": "Depois da Lei, o povo confessa a história de Deus desde a criação até o deserto.",
+          "insight": "Tu só és Senhor: fizeste os céus e a terra e guiaste o povo com nuvem, fogo e maná.",
+          "objective": "Confessar quem Deus é"
+        },
+        {
+          "ref": "Neemias 10:28–39",
+          "title": "Pacto por escrito",
+          "intro": "O povo se separa dos povos e jura andar na Lei do Senhor.",
+          "insight": "Entramos em juramento: não deixaremos a casa do nosso Deus.",
+          "objective": "Comprometer-se com a Lei"
+        },
+        {
+          "ref": "Neemias 12:27–36",
+          "chapters": "11–12",
+          "title": "Dedicação com alegria",
+          "intro": "Na dedicação dos muros, levitas e cantores se reúnem com júbilo.",
+          "insight": "Buscaram os levitas para a dedicação com alegria, louvores e instrumentos.",
+          "objective": "Dedicar a obra com louvor"
+        },
+        {
+          "ref": "Neemias 13:15–22",
+          "title": "Guardar o sábado",
+          "intro": "Neemias vê comércio no sábado e fecha as portas de Jerusalém.",
+          "insight": "Santificai o dia de sábado: fechei as portas para que não haja carga no dia santo.",
+          "objective": "Honrar o dia santo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Lei e renovação",
+        "intro": "Revise o registro do povo, a confissão, o pacto, a dedicação e o cuidado com o sábado.",
+        "insight": "Muro pronto pede povo renovado na Lei e no culto"
+      }
+    }
+  ]
+}

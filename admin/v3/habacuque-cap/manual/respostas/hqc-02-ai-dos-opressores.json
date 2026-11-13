@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Habacuque 2:9–14",
+    "passages": [
+      { "ref": "Habacuque 2:9–14" },
+      { "ref": "Habacuque 2:18–20" }
+    ],
+    "context": "Depois de anunciar o juízo pelos caldeus, o Senhor pronuncia ais contra ganância, violência e ídolos mudos. O contraste final: o Senhor no templo, e a terra em silêncio.",
+    "keyword": "templo",
+    "keywordGloss": "O lugar santo onde o Senhor está; diante dele toda a terra deve calar-se.",
+    "focusQuestion": "O que muda quando você para diante do Senhor no templo, em vez de confiar em abrigos e ídolos?",
+    "reflectionPrompts": [
+      "Ai da ganância",
+      "Ídolos sem fôlego",
+      "Silêncio diante dele"
+    ],
+    "facts": [
+      {
+        "text": "Há ai contra quem acumula bens mal adquiridos para erguer abrigo nas alturas.",
+        "evidenceRef": "Habacuque 2:9",
+        "evidenceSpan": "acumula bens mal adquiridos em sua casa"
+      },
+      {
+        "text": "Há ai contra quem edifica a cidade com sangue e a funda com iniquidade.",
+        "evidenceRef": "Habacuque 2:12",
+        "evidenceSpan": "edifica a cidade com sangue"
+      },
+      {
+        "text": "A terra se encherá do conhecimento da glória do Senhor.",
+        "evidenceRef": "Habacuque 2:14",
+        "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor"
+      },
+      {
+        "text": "O artífice faz ídolos que não falam.",
+        "evidenceRef": "Habacuque 2:18",
+        "evidenceSpan": "fazendo ídolos que não falam"
+      },
+      {
+        "text": "O madeiro e a pedra muda não têm fôlego no interior.",
+        "evidenceRef": "Habacuque 2:19",
+        "evidenceSpan": "em seu interior, não há fôlego algum"
+      },
+      {
+        "text": "O Senhor está em seu santo templo; toda a terra deve permanecer em silêncio.",
+        "evidenceRef": "Habacuque 2:20",
+        "evidenceSpan": "o Senhor está em seu santo templo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "templo",
+        "gloss": "O santo lugar onde o Senhor está presente."
+      },
+      {
+        "term": "silêncio",
+        "gloss": "A resposta da terra diante da presença do Senhor."
+      },
+      {
+        "term": "glória",
+        "gloss": "O conhecimento da glória do Senhor que encherá a terra."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ai da ganância e da casa desonrada",
+        "evidenceRef": "Habacuque 2:9–11"
+      },
+      {
+        "label": "Ai da cidade fundada em sangue",
+        "evidenceRef": "Habacuque 2:12–13"
+      },
+      {
+        "label": "Promessa da glória que enche a terra",
+        "evidenceRef": "Habacuque 2:14"
+      },
+      {
+        "label": "Ídolos mudos e o Senhor no templo",
+        "evidenceRef": "Habacuque 2:18–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A pedra clamará porque a casa foi erguida com desonra.",
+        "marker": "Porque",
+        "evidenceRef": "Habacuque 2:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "A terra se encherá da glória do Senhor como águas cobrem o mar.",
+        "marker": "Porque",
+        "evidenceRef": "Habacuque 2:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ídolos sem fôlego contrastam com o Senhor presente no templo.",
+        "marker": "Mas",
+        "evidenceRef": "Habacuque 2:20"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 11:4", "bridge": "Senhor no santo templo" },
+      { "ref": "Isaías 11:9", "bridge": "Terra cheia do conhecimento" },
+      { "ref": "Salmos 46:10", "bridge": "Aquietai-vos e sabei" }
+    ],
+    "misreadings": [
+      {
+        "text": "Os ais são só contra inimigos estrangeiros, nunca contra a própria ganância.",
+        "why": "O texto condena acumular bens mal adquiridos, edificar com sangue e confiar em ídolos."
+      },
+      {
+        "text": "Ídolos cobertos de ouro e prata ainda ensinam e salvam.",
+        "why": "2:18–19 diz que ensinam falsidade e não há fôlego algum."
+      },
+      {
+        "text": "Diante do Senhor no templo, a terra pode gritar e negociar.",
+        "why": "2:20 manda que toda a terra permaneça em silêncio diante dele."
+      }
+    ],
+    "centralInsight": "O Senhor está no seu santo templo: cale-se diante dele toda a terra.",
+    "anchorQuestion": "Segundo Habacuque 2:20, onde está o Senhor e o que a terra deve fazer?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Habacuque 2:20, o Senhor está em seu santo templo e toda a terra deve permanecer em silêncio.",
+      "verseRef": "Habacuque 2:20",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor está em seu santo templo",
+      "feedbackCorrect": "O contraste final: o Senhor no templo; a terra em silêncio diante dele.",
+      "feedbackWrong": { "false": "Releia 2:20: o Senhor está no templo; a terra permanece em silêncio." },
+      "hint": "Leia o versículo que fecha o trecho dos ais.",
+      "learningObjective": "Observar a presença do Senhor e o silêncio da terra.",
+      "evidence": ["Habacuque 2:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Habacuque 2:12, toque o material com que se edifica a cidade condenada.",
+      "verseRef": "Habacuque 2:12",
+      "evidenceSpan": "edifica a cidade com sangue",
+      "feedbackCorrect": "Há ai contra quem edifica a cidade com sangue.",
+      "hint": "Procure com o que a cidade é edificada.",
+      "learningObjective": "Identificar a violência na fundação da cidade.",
+      "evidence": ["Habacuque 2:12"],
+      "options": [
+        { "id": "a", "text": "sangue" },
+        { "id": "b", "text": "cidade" },
+        { "id": "c", "text": "iniquidade" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Cidade\" é o que se edifica, não o material do ai.",
+        "c": "\"Iniquidade\" funda a cidade; o edificar é com sangue."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Habacuque 2:14, de que a terra se encherá?",
+      "verseRef": "Habacuque 2:14",
+      "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor",
+      "feedbackCorrect": "A terra se encherá do conhecimento da glória do Senhor.",
+      "hint": "Compare com a imagem das águas que cobrem o mar.",
+      "learningObjective": "Observar a promessa da glória que enche a terra.",
+      "evidence": ["Habacuque 2:14"],
+      "options": [
+        { "id": "a", "text": "Do conhecimento da glória do Senhor" },
+        { "id": "b", "text": "De ídolos cobertos de ouro" },
+        { "id": "c", "text": "De bens mal adquiridos" },
+        { "id": "d", "text": "Do silêncio dos madeiros" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ídolos aparecem depois; 2:14 fala da glória do Senhor.",
+        "c": "Bens mal adquiridos são alvo do ai, não o que enche a terra.",
+        "d": "O silêncio é diante do Senhor em 2:20, não o conteúdo de 2:14."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Habacuque 2:20 na ordem do texto.",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "Mas o Senhor está em seu santo templo",
+      "feedbackCorrect": "Primeiro o Senhor no templo; depois o silêncio de toda a terra.",
+      "hint": "O versículo começa com \"Mas\".",
+      "learningObjective": "Reconhecer a sequência de Habacuque 2:20.",
+      "evidence": ["Habacuque 2:20"],
+      "options": [
+        { "id": "a", "text": "Mas o Senhor está em seu santo templo" },
+        { "id": "b", "text": "que toda a terra permaneça em silêncio" },
+        { "id": "c", "text": "diante dele" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo Senhor no templo; \"diante dele\" fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Habacuque 2:19, o que falta no interior do ídolo?",
+      "verseRef": "Habacuque 2:19",
+      "evidenceSpan": "em seu interior, não há fôlego algum",
+      "feedbackCorrect": "Por fora há ouro e prata; por dentro não há fôlego algum.",
+      "hint": "Veja o que falta no interior, depois do ouro e da prata.",
+      "learningObjective": "Lembrar a vacuidade do ídolo.",
+      "evidence": ["Habacuque 2:19"],
+      "options": [
+        { "id": "a", "text": "fôlego" },
+        { "id": "b", "text": "ouro" },
+        { "id": "c", "text": "prata" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ouro cobre o exterior; no interior falta outra coisa.",
+        "c": "Prata cobre o exterior; no interior falta outra coisa."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Habacuque 2:20 comunica que se liga a este contexto?",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "que toda a terra permaneça em silêncio diante dele",
+      "feedbackCorrect": "Diante do Senhor no templo, a resposta é silêncio, não ídolos.",
+      "hint": "Compare o templo com os ídolos mudos.",
+      "learningObjective": "Ligar 2:20 ao chamado a calar-se diante do Senhor.",
+      "evidence": ["Habacuque 2:20"],
+      "passageA": { "ref": "Habacuque 2:20" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois dos ais e dos ídolos sem fôlego, o Senhor está no templo."
+      },
+      "options": [
+        { "id": "a", "text": "Silêncio diante do Senhor" },
+        { "id": "b", "text": "Confiança em ídolos mudos" },
+        { "id": "c", "text": "Abrigo nas alturas salva" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto contrasta ídolos sem fôlego com o Senhor no templo.",
+        "c": "O ai de 2:9 condena o abrigo erguido com bens mal adquiridos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Habacuque 2:18–20, os ídolos cobertos de ouro têm o mesmo fôlego e presença do Senhor no templo.",
+      "verseRef": "Habacuque 2:19–20",
+      "correctOptionId": "false",
+      "evidenceSpan": "em seu interior, não há fôlego algum",
+      "feedbackCorrect": "Ídolos não têm fôlego; o Senhor está no templo — contraste, não igualdade.",
+      "feedbackWrong": { "true": "Releia 2:19–20: sem fôlego no ídolo; o Senhor no templo." },
+      "hint": "Compare o interior do ídolo com a presença do Senhor.",
+      "learningObjective": "Compreender o contraste entre ídolo e Senhor.",
+      "evidence": ["Habacuque 2:19–20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Habacuque 2:20, toque a palavra que marca o contraste com os ídolos anteriores.",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "Mas o Senhor está em seu santo templo",
+      "feedbackCorrect": "\"Mas\" vira a página: ídolos mudos, porém o Senhor no templo.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 2:20.",
+      "evidence": ["Habacuque 2:20"],
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "terra" },
+        { "id": "c", "text": "santo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Terra\" é quem deve calar-se, não o marcador.",
+        "c": "\"Santo\" descreve o templo, não o contraste gramatical."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Habacuque 2:18–20 relaciona ídolos e o Senhor?",
+      "verseRef": "Habacuque 2:18–20",
+      "evidenceSpan": "Mas o Senhor está em seu santo templo",
+      "feedbackCorrect": "Ídolos sem fôlego ensinam falsidade; o Senhor vivo está no templo.",
+      "hint": "Leia o \"Mas\" que fecha o bloco.",
+      "learningObjective": "Relacionar a crítica aos ídolos com a presença do Senhor.",
+      "evidence": ["Habacuque 2:18–20"],
+      "options": [
+        { "id": "a", "text": "Ídolos sem fôlego contrastam com o Senhor no templo" },
+        { "id": "b", "text": "Ídolos de ouro igualam a presença do Senhor" },
+        { "id": "c", "text": "O madeiro ensina melhor que o templo" },
+        { "id": "d", "text": "A terra deve gritar aos ídolos mudos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "2:19 diz que não há fôlego; 2:20 aponta o Senhor.",
+        "c": "O texto pergunta se o madeiro pode ensinar algo.",
+        "d": "2:20 manda silêncio diante do Senhor, não grito aos ídolos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em Habacuque 2:9–20?",
+      "verseRef": "Habacuque 2:9–14",
+      "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor",
+      "feedbackCorrect": "Ais da ganância e do sangue; promessa da glória; ídolos e silêncio no templo.",
+      "hint": "Comece pelos ais; o templo fecha.",
+      "learningObjective": "Seguir o movimento dos ais à presença do Senhor.",
+      "evidence": ["Habacuque 2:9–14"],
+      "options": [
+        { "id": "a", "text": "Ai da ganância e da cidade com sangue" },
+        { "id": "b", "text": "Promessa da glória que enche a terra" },
+        { "id": "c", "text": "Ídolos mudos e o Senhor no templo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Ais primeiro; o Senhor no templo por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Habacuque 2:14, do conhecimento de que a terra se encherá?",
+      "verseRef": "Habacuque 2:14",
+      "evidenceSpan": "conhecimento da glória do Senhor",
+      "feedbackCorrect": "É do conhecimento da glória do Senhor, como águas cobrem o mar.",
+      "hint": "É a palavra depois de \"conhecimento da\".",
+      "learningObjective": "Lembrar a palavra que carrega a promessa.",
+      "evidence": ["Habacuque 2:14"],
+      "options": [
+        { "id": "a", "text": "glória" },
+        { "id": "b", "text": "ganância" },
+        { "id": "c", "text": "nudez" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ganância é alvo do ai, não o que enche a terra.",
+        "c": "\"Nudez\" aparece noutro ai; não em 2:14."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Habacuque 2:14 a Isaías 11:9?",
+      "verseRef": "Habacuque 2:14",
+      "evidenceSpan": "a terra se encherá do conhecimento da glória do Senhor",
+      "feedbackCorrect": "Nos dois textos, a terra se enche do conhecimento do Senhor.",
+      "hint": "Compare o que enche a terra em cada passagem.",
+      "learningObjective": "Relacionar a glória que enche a terra em Habacuque e Isaías.",
+      "evidence": ["Habacuque 2:14", "Isaías 11:9"],
+      "passageA": { "ref": "Habacuque 2:14" },
+      "passageB": { "ref": "Isaías 11:9" },
+      "options": [
+        { "id": "a", "text": "Terra cheia do conhecimento" },
+        { "id": "b", "text": "Ídolos que ensinam bem" },
+        { "id": "c", "text": "Abrigo nas alturas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Habacuque critica ídolos que ensinam falsidade.",
+        "c": "O abrigo nas alturas é condenado no ai de 2:9."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Habacuque 2:18–20, ídolos de ouro e prata ainda podem ensinar e salvar como o Senhor no templo.",
+      "verseRef": "Habacuque 2:18–20",
+      "correctOptionId": "false",
+      "evidenceSpan": "fazendo ídolos que não falam",
+      "feedbackCorrect": "Ídolos não falam e não têm fôlego; só o Senhor está no templo.",
+      "feedbackWrong": { "true": "2:18–19 nega valor e fôlego aos ídolos; 2:20 aponta o Senhor." },
+      "hint": "Veja se o ídolo fala e o que 2:20 afirma do Senhor.",
+      "learningObjective": "Interpretar a impotência dos ídolos perante o Senhor.",
+      "evidence": ["Habacuque 2:18–20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Habacuque 2:20, toque o trecho que mostra onde o Senhor está.",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "em seu santo templo",
+      "feedbackCorrect": "O Senhor está em seu santo templo — presença viva, não ídolo mudo.",
+      "hint": "Procure o lugar depois de \"está em\".",
+      "learningObjective": "Sustentar com o texto a presença do Senhor no templo.",
+      "evidence": ["Habacuque 2:20"],
+      "options": [
+        { "id": "a", "text": "santo templo" },
+        { "id": "b", "text": "toda a terra" },
+        { "id": "c", "text": "silêncio" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Toda a terra\" deve calar-se, não é onde o Senhor está.",
+        "c": "\"Silêncio\" é a resposta da terra, não o lugar do Senhor."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Habacuque 2:9–20 sustenta sobre opressão e presença de Deus?",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "que toda a terra permaneça em silêncio diante dele",
+      "feedbackCorrect": "Deus condena opressão e ídolos; a terra cala-se diante do Senhor no templo.",
+      "hint": "Una os ais, a crítica aos ídolos e o fecho de 2:20.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Habacuque 2:20"],
+      "options": [
+        { "id": "a", "text": "O Senhor no templo exige silêncio; ídolos e opressão caem" },
+        { "id": "b", "text": "Os ais só atingem nações estrangeiras, nunca a ganância" },
+        { "id": "c", "text": "Ídolos de ouro salvam como o Senhor" },
+        { "id": "d", "text": "Diante do Senhor a terra deve negociar em voz alta" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto condena bens mal adquiridos e cidade com sangue.",
+        "c": "Ídolos não falam e não têm fôlego.",
+        "d": "2:20 manda silêncio, não negociação ruidosa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o chamado a calar-se diante do Senhor?",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "Mas o Senhor está em seu santo templo",
+      "feedbackCorrect": "Habacuque aponta o templo; o Salmo ecoa; outro Salmo manda aquietar-se.",
+      "hint": "Parta de Habacuque 2:20 e avance na Escritura.",
+      "learningObjective": "Ver o silêncio diante de Deus no fio bíblico.",
+      "evidence": ["Habacuque 2:20", "Salmos 11:4", "Salmos 46:10"],
+      "options": [
+        { "id": "a", "text": "Habacuque: o Senhor no templo, terra em silêncio" },
+        { "id": "b", "text": "O Salmo: o Senhor no santo templo" },
+        { "id": "c", "text": "Outro Salmo: aquietai-vos e sabei" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Habacuque 2:20, Salmos 11:4 e Salmos 46:10." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Habacuque 2:20, em que estado a terra deve permanecer diante do Senhor?",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "permaneça em silêncio diante dele",
+      "feedbackCorrect": "A terra deve permanecer em silêncio diante do Senhor no templo.",
+      "hint": "É a palavra depois de \"permaneça em\".",
+      "learningObjective": "Lembrar o termo que carrega a resposta diante de Deus.",
+      "evidence": ["Habacuque 2:20"],
+      "options": [
+        { "id": "a", "text": "silêncio" },
+        { "id": "b", "text": "festa" },
+        { "id": "c", "text": "guerra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Festa\" não é o estado pedido em 2:20.",
+        "c": "\"Guerra\" não aparece no mandato de 2:20."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Habacuque 2:20 a Salmos 11:4?",
+      "verseRef": "Habacuque 2:20",
+      "evidenceSpan": "o Senhor está em seu santo templo",
+      "feedbackCorrect": "Nos dois textos, o Senhor está no santo templo.",
+      "hint": "Compare o lugar onde o Senhor está.",
+      "learningObjective": "Ligar a presença no templo em Habacuque e nos Salmos.",
+      "evidence": ["Habacuque 2:20", "Salmos 11:4"],
+      "passageA": { "ref": "Habacuque 2:20" },
+      "passageB": { "ref": "Salmos 11:4" },
+      "options": [
+        { "id": "a", "text": "Senhor no santo templo" },
+        { "id": "b", "text": "Ídolos com fôlego vivo" },
+        { "id": "c", "text": "Terra sem nenhum juízo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Habacuque nega fôlego aos ídolos.",
+        "c": "Os ais mostram juízo; o templo não anula isso."
+      }
+    }
+  ]
+}

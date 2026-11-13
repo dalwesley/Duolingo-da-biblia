@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 23:1–6",
+    "passages": [
+      {
+        "ref": "Josué 23:1–11"
+      }
+    ],
+    "context": "Depois do descanso, Josué já velho convoca Israel: apeguem-se ao Senhor, cumpram a lei e não se misturem aos povos.",
+    "keyword": "apegai-vos",
+    "keywordGloss": "Ordem de permanecer firmes no Senhor, como até hoje.",
+    "focusQuestion": "A quem você se apega quando a tentação é misturar-se aos deuses ao redor?",
+    "reflectionPrompts": [
+      "Josué já velho",
+      "Apegar-se ao Senhor",
+      "Ele luta por vocês"
+    ],
+    "facts": [
+      {
+        "text": "Josué disse que já era velho e de idade avançada.",
+        "evidenceRef": "Josué 23:2",
+        "evidenceSpan": "Já sou velho e estou em idade avançada"
+      },
+      {
+        "text": "O Senhor lutou por Israel contra as nações.",
+        "evidenceRef": "Josué 23:3",
+        "evidenceSpan": "o Senhor, seu Deus, é quem lutou por vocês"
+      },
+      {
+        "text": "Devem guardar e cumprir o Livro da Lei de Moisés.",
+        "evidenceRef": "Josué 23:6",
+        "evidenceSpan": "guardar e cumprir tudo o que está escrito no Livro da Lei de Moisés"
+      },
+      {
+        "text": "Não devem misturar-se com as nações restantes.",
+        "evidenceRef": "Josué 23:7",
+        "evidenceSpan": "Não vos mistureis com estas nações"
+      },
+      {
+        "text": "Devem apegar-se ao Senhor como até hoje.",
+        "evidenceRef": "Josué 23:8",
+        "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus"
+      },
+      {
+        "text": "Um homem perseguirá mil porque o Senhor luta por eles.",
+        "evidenceRef": "Josué 23:10",
+        "evidenceSpan": "Um único homem entre vocês perseguirá mil"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "apegai-vos",
+        "gloss": "Ficar firmes no Senhor sem misturar-se."
+      },
+      {
+        "term": "mistureis",
+        "gloss": "Proibição de misturar-se às nações e seus deuses."
+      },
+      {
+        "term": "Portanto",
+        "gloss": "Marca a conclusão: amar o Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Josué velho convoca Israel",
+        "evidenceRef": "Josué 23:1–2"
+      },
+      {
+        "label": "Lembra que o Senhor lutou",
+        "evidenceRef": "Josué 23:3–5"
+      },
+      {
+        "label": "Guardar a lei; não misturar-se",
+        "evidenceRef": "Josué 23:6–7"
+      },
+      {
+        "label": "Apegar-se e amar o Senhor",
+        "evidenceRef": "Josué 23:8–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não misturar-se; mas apegar-se ao Senhor.",
+        "marker": "Mas",
+        "evidenceRef": "Josué 23:8"
+      },
+      {
+        "kind": "causa",
+        "text": "Perseguirão mil porque o Senhor luta.",
+        "marker": "pois",
+        "evidenceRef": "Josué 23:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto esforcem-se para amar o Senhor.",
+        "marker": "Portanto",
+        "evidenceRef": "Josué 23:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 10:20",
+        "bridge": "Ao Senhor te apegarás"
+      },
+      {
+        "ref": "Deuteronômio 6:5",
+        "bridge": "Amar o Senhor"
+      },
+      {
+        "ref": "Josué 1:7",
+        "bridge": "Guardar a lei"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Josué manda misturar-se livremente aos povos.",
+        "why": "Diz: não vos mistureis com estas nações."
+      },
+      {
+        "text": "A vitória depende só do número de soldados.",
+        "why": "Um perseguirá mil porque o Senhor luta."
+      },
+      {
+        "text": "Não há ordem de amar o Senhor.",
+        "why": "Esforcem-se a fim de amarem ao Senhor."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 23:8, a quem Israel deve apegar-se?",
+    "centralInsight": "Apeguem-se ao Senhor e amem-no: ele lutou por vocês; não se misturem aos povos."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 23:2, Josué diz que já é velho e de idade avançada.",
+      "verseRef": "Josué 23:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Já sou velho e estou em idade avançada",
+      "feedbackCorrect": "Ele declara a idade.",
+      "feedbackWrong": {
+        "false": "O texto traz a declaração de velhice."
+      },
+      "hint": "Veja o que Josué diz de si.",
+      "learningObjective": "Observar a idade de Josué.",
+      "evidence": [
+        "Josué 23:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 23:8, toque a quem devem apegar-se.",
+      "verseRef": "Josué 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "hoje"
+        },
+        {
+          "id": "c",
+          "text": "Mas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apegai-vos ao SENHOR",
+      "feedbackCorrect": "Ao Senhor.",
+      "feedbackWrong": {
+        "b": "Hoje marca o tempo.",
+        "c": "Mas introduz a ordem."
+      },
+      "hint": "Veja o objeto de apegai-vos.",
+      "learningObjective": "Identificar a quem se apegar.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 23:10, por que um perseguirá mil?",
+      "verseRef": "Josué 23:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o Senhor luta por vocês"
+        },
+        {
+          "id": "b",
+          "text": "Porque são muitos soldados"
+        },
+        {
+          "id": "c",
+          "text": "Porque as nações fugiram sozinhas"
+        },
+        {
+          "id": "d",
+          "text": "Porque Moisés ainda lidera"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois é o Senhor o Deus de vocês, quem luta por vocês",
+      "feedbackCorrect": "O Senhor luta.",
+      "feedbackWrong": {
+        "b": "Não é o número.",
+        "c": "O Senhor luta.",
+        "d": "Moisés já morreu."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Reconhecer quem luta.",
+      "evidence": [
+        "Josué 23:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 23:8 na ordem do texto.",
+      "verseRef": "Josué 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas apegai-vos ao SENHOR, vosso Deus"
+        },
+        {
+          "id": "b",
+          "text": "assim como fizestes"
+        },
+        {
+          "id": "c",
+          "text": "até o dia de hoje"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "Ordem e continuidade.",
+      "feedbackWrong": {
+        "default": "Comece pelo Mas."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 23:8, complete: Mas ___ ao SENHOR, vosso Deus.",
+      "verseRef": "Josué 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "apegai-vos"
+        },
+        {
+          "id": "b",
+          "text": "afastai-vos"
+        },
+        {
+          "id": "c",
+          "text": "misturai-vos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR",
+      "feedbackCorrect": "Apegai-vos.",
+      "feedbackWrong": {
+        "b": "Não é afastai-vos.",
+        "c": "O verbo é apegai-vos."
+      },
+      "hint": "Veja o imperativo.",
+      "learningObjective": "Lembrar apegar-se.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 23:8 comunica que se liga a este contexto?",
+      "verseRef": "Josué 23:8",
+      "passageA": {
+        "ref": "Josué 23:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Josué velho exorta Israel após o descanso."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Apegar-se ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Misturar-se aos deuses"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar a lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "A ordem central é apegar-se.",
+      "feedbackWrong": {
+        "b": "Não misturar.",
+        "c": "Há ordem de guardar a lei."
+      },
+      "hint": "Veja o Mas.",
+      "learningObjective": "Ligar a exortação ao apego.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 23:8, o Mas introduz misturar-se às nações.",
+      "verseRef": "Josué 23:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "O Mas introduz apegar-se, não misturar.",
+      "feedbackWrong": {
+        "true": "O contraste é apegar-se."
+      },
+      "hint": "Leia o Mas.",
+      "learningObjective": "Ver o contraste do Mas.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 23:8, toque a palavra que marca o contraste com misturar-se.",
+      "verseRef": "Josué 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "hoje"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR",
+      "feedbackCorrect": "Mas introduz o apego.",
+      "feedbackWrong": {
+        "b": "Hoje é o prazo.",
+        "c": "Deus é o objeto."
+      },
+      "hint": "Olhe a primeira palavra.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Josué 23:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre a luta do Senhor e o amor?",
+      "verseRef": "Josué 23:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque ele luta, devem amar o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Porque ele luta, podem misturar-se"
+        },
+        {
+          "id": "c",
+          "text": "A luta cancela a lei"
+        },
+        {
+          "id": "d",
+          "text": "O amor substitui qualquer esforço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, esforcem-se para guardar suas almas a fim de amarem ao Senhor",
+      "feedbackCorrect": "O Portanto liga luta e amor.",
+      "feedbackWrong": {
+        "b": "Não autoriza misturar.",
+        "c": "A lei permanece.",
+        "d": "Há esforço para amar."
+      },
+      "hint": "Leia o Portanto.",
+      "learningObjective": "Compreender luta e amor.",
+      "evidence": [
+        "Josué 23:10–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 23:1–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué velho convoca Israel"
+        },
+        {
+          "id": "b",
+          "text": "Guardar a lei; não misturar-se"
+        },
+        {
+          "id": "c",
+          "text": "Apegar-se e amar o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Já sou velho e estou em idade avançada",
+      "feedbackCorrect": "Convocação, lei e apego.",
+      "feedbackWrong": {
+        "default": "Comece pela convocação."
+      },
+      "hint": "O que Josué faz primeiro?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 23:1",
+        "Josué 23:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 23:11, complete: a fim de ___ ao Senhor, seu Deus.",
+      "verseRef": "Josué 23:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "amarem"
+        },
+        {
+          "id": "b",
+          "text": "temerem"
+        },
+        {
+          "id": "c",
+          "text": "esquecem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a fim de amarem ao Senhor",
+      "feedbackCorrect": "Amarem.",
+      "feedbackWrong": {
+        "b": "O verbo é amarem.",
+        "c": "Não é esquecem."
+      },
+      "hint": "Veja o infinitivo do propósito.",
+      "learningObjective": "Lembrar o verbo amar.",
+      "evidence": [
+        "Josué 23:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 23:8 a Deuteronômio 10:20?",
+      "verseRef": "Josué 23:8",
+      "passageA": {
+        "ref": "Josué 23:8"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 10:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao Senhor te apegarás"
+        },
+        {
+          "id": "b",
+          "text": "Mistura com os povos"
+        },
+        {
+          "id": "c",
+          "text": "Abandono da lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "Nos dois textos o apego é ao Senhor.",
+      "feedbackWrong": {
+        "b": "O elo é apegar-se.",
+        "c": "Não é misturar."
+      },
+      "hint": "Compare apegar-se.",
+      "learningObjective": "Ligar a Deuteronômio.",
+      "evidence": [
+        "Josué 23:8",
+        "Deuteronômio 10:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 23:8–11, apegar-se e amar sustentam que o Senhor lutou e pede fidelidade sem mistura.",
+      "verseRef": "Josué 23:8–11",
+      "correctOptionId": "true",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "Apego e amor fecham a exortação.",
+      "feedbackWrong": {
+        "false": "O texto une apego e amor."
+      },
+      "hint": "Una 23:8 e 23:11.",
+      "learningObjective": "Avaliar a leitura da exortação.",
+      "evidence": [
+        "Josué 23:8–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 23:11, toque a palavra que marca a conclusão do argumento.",
+      "verseRef": "Josué 23:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto"
+        },
+        {
+          "id": "b",
+          "text": "almas"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, esforcem-se para guardar suas almas",
+      "feedbackCorrect": "Portanto introduz a conclusão: amar o Senhor.",
+      "feedbackWrong": {
+        "b": "Almas é o que guardar; a conclusão é Portanto.",
+        "c": "Deus é o objeto do amor; a marca é Portanto."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador da conclusão.",
+      "evidence": [
+        "Josué 23:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 23:1–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apeguem-se ao Senhor e amem-no: ele lutou por vocês"
+        },
+        {
+          "id": "b",
+          "text": "Misturem-se aos povos com liberdade"
+        },
+        {
+          "id": "c",
+          "text": "A lei de Moisés ficou opcional"
+        },
+        {
+          "id": "d",
+          "text": "A vitória dispensa o amor a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas apegai-vos ao SENHOR, vosso Deus",
+      "feedbackCorrect": "Apego, lei e amor.",
+      "feedbackWrong": {
+        "b": "Há proibição de misturar.",
+        "c": "Há ordem de cumprir a lei.",
+        "d": "O Portanto pede amor."
+      },
+      "hint": "Una apego e luta.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 23:1–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da fidelidade pedida.",
+      "verseRef": "Josué 23:6–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guardar a lei de Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Não misturar-se; apegar-se ao Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Esforçar-se para amá-lo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "guardar e cumprir tudo o que está escrito",
+      "feedbackCorrect": "Lei, apego e amor.",
+      "feedbackWrong": {
+        "default": "Comece pela lei."
+      },
+      "hint": "O que vem antes do apego?",
+      "learningObjective": "Encadear lei e amor",
+      "evidence": [
+        "Josué 23:6",
+        "Josué 23:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 23:10, complete: quem ___ por vocês.",
+      "verseRef": "Josué 23:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "luta"
+        },
+        {
+          "id": "b",
+          "text": "corre"
+        },
+        {
+          "id": "c",
+          "text": "dorme"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quem luta por vocês",
+      "feedbackCorrect": "Luta.",
+      "feedbackWrong": {
+        "b": "Não é corre.",
+        "c": "O verbo é luta."
+      },
+      "hint": "Veja o verbo do Senhor.",
+      "learningObjective": "Lembrar que ele luta.",
+      "evidence": [
+        "Josué 23:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 23:11 a Deuteronômio 6:5?",
+      "verseRef": "Josué 23:11",
+      "passageA": {
+        "ref": "Josué 23:11"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 6:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Temer só os povos"
+        },
+        {
+          "id": "c",
+          "text": "Esquecer a lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a fim de amarem ao Senhor, seu Deus",
+      "feedbackCorrect": "Nos dois textos o centro é amar o Senhor.",
+      "feedbackWrong": {
+        "b": "O elo é o amor.",
+        "c": "Não é esquecer."
+      },
+      "hint": "Compare o chamado ao amor.",
+      "learningObjective": "Ligar a Deuteronômio 6.",
+      "evidence": [
+        "Josué 23:11",
+        "Deuteronômio 6:5"
+      ]
+    }
+  ]
+}

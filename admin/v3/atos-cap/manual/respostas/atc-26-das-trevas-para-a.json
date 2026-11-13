@@ -1,0 +1,478 @@
+{
+  "study": {
+    "passageRef": "Atos 26:15–20",
+    "passages": [{ "ref": "Atos 26:15–20" }],
+    "context": "Paulo, preso em Cesareia, fala diante do rei Agripa e de Festo. Ele relembra o encontro a caminho de Damasco, quando sua vida mudou de direção.",
+    "keyword": "Enviado",
+    "keywordGloss": "Jesus constitui Paulo ministro e testemunha e o envia: o chamado nasce de um encontro com ele.",
+    "focusQuestion": "Quem Jesus pode estar colocando no seu caminho para você apontar para a luz?",
+    "reflectionPrompts": ["Jesus se apresenta", "Olhos abertos", "Obediência à visão"],
+    "facts": [
+      {
+        "text": "Jesus se identifica como aquele a quem Paulo persegue.",
+        "evidenceRef": "Atos 26:15",
+        "evidenceSpan": "Eu sou Jesus, a quem tu persegues"
+      },
+      {
+        "text": "Jesus aparece a Paulo para constituí-lo ministro e testemunha.",
+        "evidenceRef": "Atos 26:16",
+        "evidenceSpan": "eu te apareci para te constituir como ministro e testemunha"
+      },
+      {
+        "text": "Jesus envia Paulo aos gentios.",
+        "evidenceRef": "Atos 26:17",
+        "evidenceSpan": "dos gentios aos quais te envio"
+      },
+      {
+        "text": "O envio é para abrir os olhos das pessoas e levá-las das trevas para a luz.",
+        "evidenceRef": "Atos 26:18",
+        "evidenceSpan": "Para abrir-lhes os olhos"
+      },
+      {
+        "text": "Os que se convertem recebem a remissão dos pecados e herança.",
+        "evidenceRef": "Atos 26:18",
+        "evidenceSpan": "recebam a remissão dos pecados e herança"
+      },
+      {
+        "text": "Paulo diz que não foi desobediente à visão celestial.",
+        "evidenceRef": "Atos 26:19",
+        "evidenceSpan": "não fui desobediente à visão celestial"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "testemunha",
+        "gloss": "Quem conta o que viu e ouviu de Jesus: Paulo é enviado para isso."
+      },
+      {
+        "term": "trevas",
+        "gloss": "Imagem do lugar de onde as pessoas são trazidas: sem luz e longe de Deus."
+      },
+      {
+        "term": "remissão",
+        "gloss": "Perdão dos pecados que Jesus oferece a quem se converte e crê nele."
+      }
+    ],
+    "structure": [
+      { "label": "Jesus se identifica a Paulo", "evidenceRef": "Atos 26:15" },
+      { "label": "Paulo é constituído ministro e testemunha", "evidenceRef": "Atos 26:16–17" },
+      { "label": "A missão: abrir os olhos e levar à luz", "evidenceRef": "Atos 26:18" },
+      { "label": "Paulo obedece e anuncia a todos", "evidenceRef": "Atos 26:19–20" }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jesus envia Paulo para abrir os olhos das pessoas, a fim de que se convertam das trevas para a luz.",
+        "marker": "a fim de que",
+        "evidenceRef": "Atos 26:18"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por não ter sido desobediente à visão celestial, Paulo anuncia a mensagem a todos.",
+        "marker": "Por isso",
+        "evidenceRef": "Atos 26:19"
+      },
+      {
+        "kind": "sequência",
+        "text": "Paulo anuncia primeiro em Damasco, depois em Jerusalém, na Judeia e entre os gentios.",
+        "marker": "primeiramente",
+        "evidenceRef": "Atos 26:20"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Atos 9:5", "bridge": "Mesmo encontro com Jesus" },
+      { "ref": "Isaías 42:7", "bridge": "Olhos abertos e trevas vencidas" },
+      { "ref": "Colossenses 1:13", "bridge": "Libertos do domínio das trevas" }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo escolheu sozinho ser missionário, e Jesus apenas aprovou.",
+        "why": "Jesus aparece a Paulo e o constitui ministro e testemunha: o chamado vem dele."
+      },
+      {
+        "text": "A missão de Paulo é só mudar o comportamento das pessoas, sem falar de fé.",
+        "why": "O texto fala de abrir os olhos, remissão dos pecados e santificação pela fé em Jesus."
+      },
+      {
+        "text": "O chamado de Jesus vale só para os judeus.",
+        "why": "Jesus envia Paulo ao povo e aos gentios, e Paulo anuncia também aos gentios."
+      }
+    ],
+    "centralInsight": "Jesus envia Paulo para abrir os olhos das pessoas e levá-las das trevas para a luz.",
+    "anchorQuestion": "Para onde Jesus diz que Paulo deve levar as pessoas, segundo Atos 26:18?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 26:15, Jesus se apresenta como aquele a quem Paulo persegue.",
+      "verseRef": "Atos 26:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu sou Jesus, a quem tu persegues",
+      "feedbackCorrect": "Jesus se identifica pelo nome e mostra que Paulo perseguia a ele.",
+      "feedbackWrong": {
+        "false": "Releia a resposta: Ele disse que é Jesus, a quem Paulo persegue."
+      },
+      "hint": "Veja a resposta à pergunta de Paulo.",
+      "learningObjective": "Observar como Jesus se identifica a Paulo.",
+      "evidence": ["Atos 26:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 26:16, toque as duas funções para as quais Jesus constitui Paulo.",
+      "verseRef": "Atos 26:16",
+      "options": [
+        { "id": "a", "text": "Levanta-te" },
+        { "id": "b", "text": "ministro e testemunha" },
+        { "id": "c", "text": "já viste" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ministro e testemunha",
+      "feedbackCorrect": "Jesus constitui Paulo como ministro e testemunha.",
+      "feedbackWrong": {
+        "a": "\"Levanta-te\" é a ordem inicial, não a função de Paulo.",
+        "c": "\"Já viste\" fala do que Paulo viu, não das funções."
+      },
+      "hint": "Procure o que vem depois de \"constituir como\".",
+      "learningObjective": "Identificar as funções que Jesus dá a Paulo.",
+      "evidence": ["Atos 26:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 26:17, a quem Jesus envia Paulo?",
+      "verseRef": "Atos 26:17",
+      "options": [
+        { "id": "a", "text": "Aos fariseus de Damasco" },
+        { "id": "b", "text": "Aos sacerdotes de Jerusalém" },
+        { "id": "c", "text": "Aos gentios" },
+        { "id": "d", "text": "Aos soldados de Roma" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "dos gentios aos quais te envio",
+      "feedbackCorrect": "Jesus envia Paulo aos gentios, livrando-o do povo e dos gentios.",
+      "feedbackWrong": {
+        "a": "O versículo não cita fariseus de Damasco.",
+        "b": "Os sacerdotes de Jerusalém não são o destino do envio.",
+        "d": "Soldados de Roma não aparecem nesse versículo."
+      },
+      "hint": "Leia o final do versículo.",
+      "learningObjective": "Observar a quem Jesus envia Paulo.",
+      "evidence": ["Atos 26:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 26:18 na ordem do texto.",
+      "verseRef": "Atos 26:18",
+      "options": [
+        { "id": "a", "text": "Para abrir-lhes os olhos" },
+        { "id": "b", "text": "a fim de que se convertam das trevas para a luz" },
+        { "id": "c", "text": "para que recebam a remissão dos pecados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Para abrir-lhes os olhos, a fim de que se convertam das trevas para a luz",
+      "feedbackCorrect": "Abrir os olhos, passar das trevas para a luz e então receber o perdão dos pecados.",
+      "feedbackWrong": {
+        "default": "Comece pelos olhos abertos; o perdão dos pecados vem depois da conversão."
+      },
+      "hint": "O versículo começa com o que Paulo deve fazer pelos olhos.",
+      "learningObjective": "Reconhecer a sequência da missão em Atos 26:18.",
+      "evidence": ["Atos 26:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 26:20, em qual cidade Paulo anunciou primeiro?",
+      "verseRef": "Atos 26:20",
+      "options": [
+        { "id": "a", "text": "Roma" },
+        { "id": "b", "text": "Damasco" },
+        { "id": "c", "text": "Antioquia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Anunciei primeiramente aos que estavam em Damasco",
+      "feedbackCorrect": "Damasco vem primeiro na lista de lugares onde Paulo anunciou.",
+      "feedbackWrong": {
+        "a": "Roma ainda não aparece nessa lista: Paulo ainda caminha para lá.",
+        "c": "Antioquia não é citada nesse versículo."
+      },
+      "hint": "Veja a primeira cidade da lista.",
+      "learningObjective": "Lembrar onde Paulo começou a anunciar.",
+      "evidence": ["Atos 26:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 26:18 comunica que se liga a este contexto?",
+      "verseRef": "Atos 26:18",
+      "passageA": { "ref": "Atos 26:18" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus envia Paulo para que as pessoas saiam do escuro e passem a viver na luz."
+      },
+      "options": [
+        { "id": "a", "text": "Fugir do povo e dos gentios" },
+        { "id": "b", "text": "Levar das trevas para a luz" },
+        { "id": "c", "text": "Esconder a visão celestial" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "se convertam das trevas para a luz",
+      "feedbackCorrect": "A missão de Paulo é conduzir as pessoas das trevas para a luz.",
+      "feedbackWrong": {
+        "a": "Jesus envia Paulo ao povo e aos gentios, não para fugir deles.",
+        "c": "Paulo diz que não foi desobediente à visão e a anunciou."
+      },
+      "hint": "Veja o que acontece com os olhos e para onde as pessoas vão.",
+      "learningObjective": "Ligar Atos 26:18 ao centro da missão de Paulo.",
+      "evidence": ["Atos 26:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 26:19–20, Paulo anuncia o evangelho a todos por não ter sido desobediente à visão celestial.",
+      "verseRef": "Atos 26:19–20",
+      "correctOptionId": "true",
+      "evidenceSpan": "Por isso, ó rei Agripa, não fui desobediente à visão celestial",
+      "feedbackCorrect": "O \"Por isso\" liga a obediência à visão ao anúncio feito em vários lugares.",
+      "feedbackWrong": {
+        "false": "Releia o \"Por isso\" de Atos 26:19: a obediência à visão leva ao anúncio."
+      },
+      "hint": "Repare nas duas palavras que abrem o versículo 19.",
+      "learningObjective": "Compreender a relação entre obediência à visão e anúncio.",
+      "evidence": ["Atos 26:19–20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 26:20, toque a palavra que marca por onde Paulo começou a anunciar.",
+      "verseRef": "Atos 26:20",
+      "options": [
+        { "id": "a", "text": "Anunciei" },
+        { "id": "b", "text": "primeiramente" },
+        { "id": "c", "text": "Judeia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Anunciei primeiramente",
+      "feedbackCorrect": "\"Primeiramente\" marca a ordem: Paulo começou em Damasco e foi mais longe.",
+      "feedbackWrong": {
+        "a": "\"Anunciei\" é a ação, não a palavra que indica a ordem.",
+        "c": "\"Judeia\" é um dos lugares, não o marcador de ordem."
+      },
+      "hint": "Procure o advérbio logo depois do verbo.",
+      "learningObjective": "Reconhecer o marcador de sequência no anúncio de Paulo.",
+      "evidence": ["Atos 26:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Para que Jesus manda Paulo abrir os olhos das pessoas, segundo Atos 26:18?",
+      "verseRef": "Atos 26:18",
+      "options": [
+        { "id": "a", "text": "Para que Paulo fique livre do povo e dos gentios" },
+        { "id": "b", "text": "Para que deixem a escuridão e vivam na luz de Deus" },
+        { "id": "c", "text": "Para que o rei Agripa seja temido por todos" },
+        { "id": "d", "text": "Para que o povo siga as tradições de Damasco" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a fim de que se convertam das trevas para a luz",
+      "feedbackCorrect": "O propósito é a conversão: sair das trevas para a luz.",
+      "feedbackWrong": {
+        "a": "O livramento é de Paulo, mas o propósito de abrir olhos é a conversão.",
+        "c": "O texto não fala de Agripa nem de temor.",
+        "d": "Não há tradições de Damasco; há conversão das trevas para a luz."
+      },
+      "hint": "Leia o que vem depois de \"a fim de que\".",
+      "learningObjective": "Ver o propósito de abrir os olhos das pessoas.",
+      "evidence": ["Atos 26:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o relato de Paulo em Atos 26:19–20?",
+      "verseRef": "Atos 26:19–20",
+      "options": [
+        { "id": "a", "text": "Paulo diz que não desobedeceu à visão" },
+        { "id": "b", "text": "Anuncia primeiro em Damasco e em Jerusalém" },
+        { "id": "c", "text": "Depois alcança a Judeia e os gentios" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Anunciei primeiramente aos que estavam em Damasco",
+      "feedbackCorrect": "Primeiro a obediência à visão, depois o anúncio que cresce até os gentios.",
+      "feedbackWrong": {
+        "default": "A obediência à visão vem antes do anúncio; os gentios aparecem por último."
+      },
+      "hint": "A obediência vem antes do anúncio.",
+      "learningObjective": "Compreender o movimento da obediência ao anúncio.",
+      "evidence": ["Atos 26:19–20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 26:20, o que Paulo anunciou que as pessoas deviam fazer, além de se converter?",
+      "verseRef": "Atos 26:20",
+      "options": [
+        { "id": "a", "text": "esquecessem" },
+        { "id": "b", "text": "vingassem" },
+        { "id": "c", "text": "arrependessem" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "que se arrependessem e se convertessem a Deus",
+      "feedbackCorrect": "Paulo chama ao arrependimento e à conversão a Deus.",
+      "feedbackWrong": {
+        "a": "O texto não pede esquecimento, mas arrependimento.",
+        "b": "Vingança não faz parte do anúncio de Paulo."
+      },
+      "hint": "Pense no passo que antecede a conversão a Deus.",
+      "learningObjective": "Lembrar o chamado que Paulo anuncia.",
+      "evidence": ["Atos 26:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 26:15 a Atos 9:5?",
+      "verseRef": "Atos 26:15",
+      "passageA": { "ref": "Atos 26:15" },
+      "passageB": { "ref": "Atos 9:5" },
+      "options": [
+        { "id": "a", "text": "Primeiro sermão de Paulo" },
+        { "id": "b", "text": "Promessa de ir a Roma" },
+        { "id": "c", "text": "Mesmo encontro com Jesus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Eu sou Jesus, a quem tu persegues",
+      "feedbackCorrect": "Nos dois textos, Jesus se identifica a Paulo como aquele a quem ele persegue.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois textos fala de um sermão de Paulo.",
+        "b": "A promessa de Roma vem em outro texto, não nestes."
+      },
+      "hint": "Compare o que Jesus diz de si nos dois textos.",
+      "learningObjective": "Relacionar os dois relatos do encontro de Paulo com Jesus.",
+      "evidence": ["Atos 26:15", "Atos 9:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Atos 26:16, Paulo escolhe sozinho ser ministro e testemunha, e Jesus apenas aprova.",
+      "verseRef": "Atos 26:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "eu te apareci para te constituir como ministro e testemunha",
+      "feedbackCorrect": "Jesus aparece e constitui Paulo ministro e testemunha: o chamado vem dele.",
+      "feedbackWrong": {
+        "true": "Releia: quem aparece e constitui Paulo ministro e testemunha é o próprio Jesus."
+      },
+      "hint": "Veja quem aparece e quem constitui.",
+      "learningObjective": "Rejeitar a leitura de que Paulo escolheu a missão por conta própria.",
+      "evidence": ["Atos 26:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 26:20, toque o trecho que mostra como o arrependimento aparece na vida.",
+      "verseRef": "Atos 26:20",
+      "options": [
+        { "id": "a", "text": "se convertessem" },
+        { "id": "b", "text": "obras dignas" },
+        { "id": "c", "text": "gentios" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "praticando obras dignas de arrependimento",
+      "feedbackCorrect": "O arrependimento se mostra em obras dignas dele, na vida de cada dia.",
+      "feedbackWrong": {
+        "a": "Converter-se é voltar-se a Deus; o trecho pedido fala da prática.",
+        "c": "\"Gentios\" indica quem ouve o anúncio, não como o arrependimento aparece."
+      },
+      "hint": "Procure o que Paulo diz que se pratica.",
+      "learningObjective": "Sustentar com o texto que o arrependimento se mostra na prática.",
+      "evidence": ["Atos 26:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Atos 26:17–18 o texto sustenta melhor?",
+      "verseRef": "Atos 26:17–18",
+      "options": [
+        { "id": "a", "text": "Jesus envia Paulo para abrir olhos e conduzir à luz pela fé nele" },
+        { "id": "b", "text": "A missão de Paulo é só mudar o comportamento, sem falar de fé" },
+        { "id": "c", "text": "O chamado de Jesus vale só para os judeus" },
+        { "id": "d", "text": "Paulo escolheu ser missionário por conta própria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para abrir-lhes os olhos, a fim de que se convertam das trevas para a luz",
+      "feedbackCorrect": "O envio de Jesus leva das trevas à luz, ao perdão e à herança pela fé nele.",
+      "feedbackWrong": {
+        "b": "O texto fala de perdão dos pecados e de santificação pela fé em Jesus.",
+        "c": "Jesus envia Paulo ao povo e também aos gentios.",
+        "d": "Jesus aparece e constitui Paulo; o chamado e o envio vêm dele."
+      },
+      "hint": "Compare cada opção com o envio e o que o versículo 18 diz.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a missão de Paulo.",
+      "evidence": ["Atos 26:17–18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio das trevas para a luz na Bíblia?",
+      "verseRef": "Atos 26:18",
+      "options": [
+        { "id": "a", "text": "A profecia fala em abrir os olhos dos cegos e tirar das trevas" },
+        { "id": "b", "text": "Jesus envia Paulo para abrir olhos e levar das trevas para a luz" },
+        { "id": "c", "text": "Os que creem são libertos do domínio das trevas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "se convertam das trevas para a luz",
+      "evidence": ["Isaías 42:7", "Atos 26:18", "Colossenses 1:13"],
+      "feedbackCorrect": "A profecia anuncia, Jesus envia Paulo e quem crê é liberto do domínio das trevas.",
+      "feedbackWrong": {
+        "default": "Siga a história: profecia (Is 42:7), envio (At 26:18) e libertação (Cl 1:13)."
+      },
+      "hint": "Siga a ordem da história: promessa, envio e resultado.",
+      "learningObjective": "Ver a missão de Paulo como parte de um fio que atravessa a Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 26:18, que palavra nomeia o perdão que os convertidos recebem?",
+      "verseRef": "Atos 26:18",
+      "options": [
+        { "id": "a", "text": "lembrança" },
+        { "id": "b", "text": "remissão" },
+        { "id": "c", "text": "cobrança" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "recebam a remissão dos pecados",
+      "feedbackCorrect": "Remissão é o perdão: quem se converte recebe a libertação dos pecados.",
+      "feedbackWrong": {
+        "a": "Lembrança não é o que o texto promete aos que se convertem.",
+        "c": "O texto fala de perdão, não de cobrança dos pecados."
+      },
+      "hint": "É o que acontece com os pecados de quem se converte.",
+      "learningObjective": "Lembrar o termo que carrega o sentido do perdão na cena.",
+      "evidence": ["Atos 26:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 26:18 a Isaías 42:7?",
+      "verseRef": "Atos 26:18",
+      "passageA": { "ref": "Atos 26:18" },
+      "passageB": { "ref": "Isaías 42:7" },
+      "options": [
+        { "id": "a", "text": "Cegueira como castigo final" },
+        { "id": "b", "text": "Olhos abertos e trevas vencidas" },
+        { "id": "c", "text": "Libertação só dos judeus" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Para abrir-lhes os olhos",
+      "feedbackCorrect": "Isaías anuncia a abertura dos olhos, e Jesus envia Paulo para realizá-la.",
+      "feedbackWrong": {
+        "a": "Os dois textos falam de abrir olhos, não de cegueira final.",
+        "c": "Em Atos, o envio alcança também os gentios."
+      },
+      "hint": "Compare o que acontece com os olhos e com as trevas.",
+      "learningObjective": "Ligar a missão de Paulo à promessa de abrir os olhos dos cegos.",
+      "evidence": ["Atos 26:18", "Isaías 42:7"]
+    }
+  ]
+}

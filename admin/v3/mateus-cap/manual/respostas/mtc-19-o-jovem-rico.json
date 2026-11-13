@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Mateus 19:16–21",
+    "passages": [
+      {
+        "ref": "Mateus 19:16–21"
+      },
+      {
+        "ref": "Mateus 19:22–26"
+      }
+    ],
+    "context": "Um jovem se aproxima de Jesus e pergunta o que deve fazer para alcançar a vida eterna. Jesus lembra os mandamentos e o chama a vender os bens, dar aos pobres e segui-lo.",
+    "keyword": "posses",
+    "keywordGloss": "São os muitos bens que levam o jovem a ir embora triste, em vez de seguir Jesus.",
+    "focusQuestion": "O que você teria dificuldade de soltar se Jesus pedisse para segui-lo?",
+    "reflectionPrompts": [
+      "A pergunta pela vida",
+      "Os bens que prendem",
+      "A palavra final de Jesus"
+    ],
+    "facts": [
+      {
+        "text": "Jesus diz que somente um é bom e manda guardar os mandamentos para entrar na vida.",
+        "evidenceRef": "Mateus 19:17",
+        "evidenceSpan": "Somente um é bom. Se você deseja entrar na vida, guarde os mandamentos."
+      },
+      {
+        "text": "O jovem afirma que observou tudo isso desde a sua juventude.",
+        "evidenceRef": "Mateus 19:20",
+        "evidenceSpan": "Tudo isso tenho observado desde a minha juventude"
+      },
+      {
+        "text": "Jesus manda vender os bens, dar aos pobres e segui-lo, com um tesouro no céu.",
+        "evidenceRef": "Mateus 19:21",
+        "evidenceSpan": "vá, venda os seus bens, dê aos pobres e terá um tesouro no céu; depois venha e siga-me."
+      },
+      {
+        "text": "O jovem se afasta triste por ter muitas posses.",
+        "evidenceRef": "Mateus 19:22",
+        "evidenceSpan": "afastou-se triste, por ter muitas posses"
+      },
+      {
+        "text": "Jesus diz que é mais fácil um camelo passar pelo fundo de uma agulha do que um rico entrar no Reino de Deus.",
+        "evidenceRef": "Mateus 19:24",
+        "evidenceSpan": "é mais fácil um camelo passar pelo fundo de uma agulha do que um rico entrar no Reino de Deus"
+      },
+      {
+        "text": "Jesus diz que para os homens isso é impossível, mas para Deus tudo é possível.",
+        "evidenceRef": "Mateus 19:26",
+        "evidenceSpan": "Para os homens, isso é impossível, mas para Deus tudo é possível."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "posses",
+        "gloss": "Os muitos bens que fazem o jovem ir embora triste."
+      },
+      {
+        "term": "tesouro",
+        "gloss": "O que Jesus promete no céu a quem vende os bens e dá aos pobres."
+      },
+      {
+        "term": "impossível",
+        "gloss": "Como Jesus descreve, para os homens, aquilo que Deus torna possível."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O jovem pergunta pela vida eterna",
+        "evidenceRef": "Mateus 19:16"
+      },
+      {
+        "label": "Jesus manda vender os bens e seguir",
+        "evidenceRef": "Mateus 19:21"
+      },
+      {
+        "label": "O jovem sai triste por causa das posses",
+        "evidenceRef": "Mateus 19:22"
+      },
+      {
+        "label": "Jesus mostra o que Deus torna possível",
+        "evidenceRef": "Mateus 19:26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Jesus manda vender e dar aos pobres e, depois, vir e segui-lo.",
+        "marker": "depois",
+        "evidenceRef": "Mateus 19:21"
+      },
+      {
+        "kind": "causa",
+        "text": "O jovem se afastou triste porque tinha muitas posses.",
+        "marker": "por",
+        "evidenceRef": "Mateus 19:22"
+      },
+      {
+        "kind": "contraste",
+        "text": "Jesus contrapõe o impossível para os homens ao que é possível para Deus.",
+        "marker": "mas",
+        "evidenceRef": "Mateus 19:26"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 12:33",
+        "bridge": "Vender para ter tesouro"
+      },
+      {
+        "ref": "Lucas 18:27",
+        "bridge": "Deus torna salvação possível"
+      },
+      {
+        "ref": "Mateus 6:21",
+        "bridge": "Tesouro mostra o coração"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus declara que nenhum rico pode ser salvo.",
+        "why": "Ele diz que um rico dificilmente entrará, e depois afirma que para Deus tudo é possível."
+      },
+      {
+        "text": "O jovem saiu triste porque falhou nos mandamentos.",
+        "why": "Ele disse que observou tudo desde a juventude. O texto liga a tristeza às muitas posses."
+      },
+      {
+        "text": "Guardar os mandamentos já basta para ser perfeito.",
+        "why": "O jovem já os guardava e ainda perguntou o que faltava. Jesus pediu que vendesse, desse e o seguisse."
+      }
+    ],
+    "centralInsight": "O que é impossível para os homens é possível para Deus, inclusive soltar o coração das riquezas.",
+    "anchorQuestion": "O que Jesus diz que é impossível para os homens e possível para Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 19:24, Jesus diz que é mais fácil um rico entrar no Reino do que um camelo passar pelo fundo de uma agulha.",
+      "verseRef": "Mateus 19:24",
+      "correctOptionId": "false",
+      "evidenceSpan": "é mais fácil um camelo passar pelo fundo de uma agulha do que um rico entrar no Reino de Deus",
+      "feedbackCorrect": "A comparação é o inverso. O camelo e a agulha vêm como o mais fácil.",
+      "feedbackWrong": {
+        "true": "O versículo põe o camelo e a agulha como o mais fácil, não a entrada do rico."
+      },
+      "hint": "Leia a comparação que Jesus faz com o rico.",
+      "learningObjective": "Observar a comparação que Jesus faz sobre a entrada do rico no Reino.",
+      "evidence": [
+        "Mateus 19:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 19:16, toque o que ele queria alcançar.",
+      "verseRef": "Mateus 19:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "alguém"
+        },
+        {
+          "id": "b",
+          "text": "Bom Mestre"
+        },
+        {
+          "id": "c",
+          "text": "vida eterna"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "alcançar a vida eterna",
+      "feedbackCorrect": "O fim da pergunta nomeia o alvo: a vida eterna.",
+      "feedbackWrong": {
+        "a": "Alguém diz quem chegou, não o que essa pessoa quer alcançar.",
+        "b": "Bom Mestre é como ele chama Jesus, não o alvo do pedido."
+      },
+      "hint": "Olhe o alvo nomeado no fim da pergunta.",
+      "learningObjective": "Identificar o que a pessoa quer alcançar ao perguntar a Jesus.",
+      "evidence": [
+        "Mateus 19:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 19:21, o que Jesus pediu ao jovem?",
+      "verseRef": "Mateus 19:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vender os bens, dar aos pobres e segui-lo"
+        },
+        {
+          "id": "b",
+          "text": "Multiplicar os bens antes de dar qualquer parte"
+        },
+        {
+          "id": "c",
+          "text": "Permanecer com os bens e só observar de longe"
+        },
+        {
+          "id": "d",
+          "text": "Entregar a metade dos bens no templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vá, venda os seus bens, dê aos pobres",
+      "feedbackCorrect": "Jesus pede que ele venda, dê aos pobres e, então, o siga.",
+      "feedbackWrong": {
+        "b": "O texto não fala em multiplicar. O pedido é vender e dar.",
+        "c": "Seguir vem junto com vender e dar, não sem soltar os bens.",
+        "d": "Jesus não fala em metade nem em templo. Fala em vender e dar aos pobres."
+      },
+      "hint": "Leia o pedido que vem após ser perfeito.",
+      "learningObjective": "Identificar o pedido concreto de Jesus ao jovem.",
+      "evidence": [
+        "Mateus 19:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o pedido de Jesus em Mateus 19:21 na ordem do texto.",
+      "verseRef": "Mateus 19:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se você deseja ser perfeito"
+        },
+        {
+          "id": "b",
+          "text": "venda os seus bens"
+        },
+        {
+          "id": "c",
+          "text": "depois venha e siga-me"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se você deseja ser perfeito, vá, venda os seus bens",
+      "feedbackCorrect": "O pedido vai do desejo de ser perfeito à venda e, no fim, ao seguir.",
+      "feedbackWrong": {
+        "default": "Comece pelo desejo de ser perfeito. O seguir vem no fim do versículo."
+      },
+      "hint": "O versículo começa pelo desejo e termina no convite.",
+      "learningObjective": "Reconhecer a ordem do pedido de Jesus ao jovem.",
+      "evidence": [
+        "Mateus 19:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 19:17, o que Jesus manda guardar para entrar na vida?",
+      "verseRef": "Mateus 19:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "preceitos"
+        },
+        {
+          "id": "b",
+          "text": "mandamentos"
+        },
+        {
+          "id": "c",
+          "text": "rituais"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "guarde os mandamentos",
+      "feedbackCorrect": "Para entrar na vida, Jesus manda guardar os mandamentos.",
+      "feedbackWrong": {
+        "a": "A palavra do texto não é preceitos. Jesus nomeia outra coisa.",
+        "c": "O texto não fala em rituais. O que ele manda guardar tem outro nome."
+      },
+      "hint": "Olhe o que Jesus manda guardar no fim da resposta.",
+      "learningObjective": "Lembrar o que Jesus manda guardar para entrar na vida.",
+      "evidence": [
+        "Mateus 19:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 19:26 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 19:26",
+      "passageA": {
+        "ref": "Mateus 19:26"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os discípulos perguntam quem poderá ser salvo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Riqueza abre o Reino"
+        },
+        {
+          "id": "b",
+          "text": "Salvação possível para Deus"
+        },
+        {
+          "id": "c",
+          "text": "Tristeza garante a entrada"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para Deus tudo é possível",
+      "feedbackCorrect": "Diante da pergunta sobre quem pode ser salvo, Jesus aponta para Deus.",
+      "feedbackWrong": {
+        "a": "O versículo não abre o Reino pela riqueza. Aponta para Deus.",
+        "c": "A tristeza do jovem não responde à pergunta. A resposta está em Deus."
+      },
+      "hint": "Compare a frase final de Jesus com a pergunta dos discípulos.",
+      "learningObjective": "Ligar a palavra de Jesus à pergunta sobre quem pode ser salvo.",
+      "evidence": [
+        "Mateus 19:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 19:26, Jesus contrapõe o impossível para os homens ao que é possível para Deus.",
+      "verseRef": "Mateus 19:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "Para os homens, isso é impossível, mas para Deus tudo é possível.",
+      "feedbackCorrect": "A frase separa os dois lados: impossível para os homens, possível para Deus.",
+      "feedbackWrong": {
+        "false": "A frase não iguala os lados. Um é impossível para os homens. O outro cabe a Deus."
+      },
+      "hint": "Compare os dois lados da frase de Jesus.",
+      "learningObjective": "Compreender o contraste entre o limite humano e o poder de Deus.",
+      "evidence": [
+        "Mateus 19:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 19:26, toque a palavra que marca o contraste.",
+      "verseRef": "Mateus 19:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "olhar"
+        },
+        {
+          "id": "b",
+          "text": "mas"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "impossível, mas para Deus",
+      "feedbackCorrect": "Essa palavra curta vira a frase, do limite humano para o poder de Deus.",
+      "feedbackWrong": {
+        "a": "Olhar descreve o gesto de Jesus, não o contraste da frase.",
+        "c": "Disse só introduz a fala. O contraste vem mais adiante."
+      },
+      "hint": "Procure a palavra curta que vira o sentido da frase.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na frase de Jesus.",
+      "evidence": [
+        "Mateus 19:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Por que o jovem se afastou triste em Mateus 19:22?",
+      "verseRef": "Mateus 19:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "As posses que ele tinha explicam a tristeza da saída"
+        },
+        {
+          "id": "b",
+          "text": "Jesus recusou o pedido e o mandou embora"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos o impediram de continuar no caminho"
+        },
+        {
+          "id": "d",
+          "text": "Ele saiu triste por ter falhado nos mandamentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "afastou-se triste, por ter muitas posses",
+      "feedbackCorrect": "O próprio versículo dá a causa: ele tinha muitas posses.",
+      "feedbackWrong": {
+        "b": "Jesus não o expulsa. O jovem se afasta ao ouvir o pedido.",
+        "c": "Os discípulos entram só depois, na conversa seguinte.",
+        "d": "Ele disse que observava os mandamentos. A causa citada é outra."
+      },
+      "hint": "Leia o motivo que o versículo dá logo após a tristeza.",
+      "learningObjective": "Compreender a causa da tristeza com que o jovem se afasta.",
+      "evidence": [
+        "Mateus 19:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança a partir da pergunta do jovem?",
+      "verseRef": "Mateus 19:16–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O jovem pergunta pela vida eterna"
+        },
+        {
+          "id": "b",
+          "text": "Jesus manda vender os bens e seguir"
+        },
+        {
+          "id": "c",
+          "text": "O jovem sai triste por causa das posses"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que devo fazer de bom para alcançar a vida eterna",
+      "feedbackCorrect": "A cena vai da pergunta ao pedido de Jesus e, então, à saída triste.",
+      "feedbackWrong": {
+        "default": "A pergunta abre a cena. O pedido vem no meio. A saída triste fecha."
+      },
+      "hint": "Siga do primeiro pedido do jovem até a reação dele.",
+      "learningObjective": "Compreender os movimentos principais do encontro.",
+      "evidence": [
+        "Mateus 19:16",
+        "Mateus 19:21",
+        "Mateus 19:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 19:21, que palavra introduz o convite final para seguir Jesus?",
+      "verseRef": "Mateus 19:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "então"
+        },
+        {
+          "id": "b",
+          "text": "agora"
+        },
+        {
+          "id": "c",
+          "text": "depois"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "depois venha e siga-me",
+      "feedbackCorrect": "Essa palavra liga a venda e a doação ao passo de ir e seguir Jesus.",
+      "feedbackWrong": {
+        "a": "Então caberia na frase, mas o texto usa outra palavra nesse ponto.",
+        "b": "Agora não está nesse convite. O texto marca um passo seguinte."
+      },
+      "hint": "Ela fica entre a promessa do céu e o convite para ir.",
+      "learningObjective": "Reconhecer a palavra que marca a sequência do pedido.",
+      "evidence": [
+        "Mateus 19:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 19:21 a Lucas 12:33?",
+      "verseRef": "Mateus 19:21",
+      "passageA": {
+        "ref": "Mateus 19:21"
+      },
+      "passageB": {
+        "ref": "Lucas 12:33"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vender para ter tesouro"
+        },
+        {
+          "id": "b",
+          "text": "Esmola substitui o seguir"
+        },
+        {
+          "id": "c",
+          "text": "Guardar bens na terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "venda os seus bens, dê aos pobres e terá um tesouro no céu",
+      "feedbackCorrect": "Os dois textos juntam vender os bens e ter tesouro no céu.",
+      "feedbackWrong": {
+        "b": "Lucas fala em esmola, mas não troca o seguir por ela.",
+        "c": "Os dois textos apontam o tesouro para o céu, não para guardar na terra."
+      },
+      "hint": "Compare o que os dois textos fazem com os bens.",
+      "learningObjective": "Relacionar o pedido de Jesus ao ensinamento de Lucas sobre os bens.",
+      "evidence": [
+        "Mateus 19:21",
+        "Lucas 12:33"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 19:23, Jesus afirma que nenhum rico entrará no Reino dos Céus.",
+      "verseRef": "Mateus 19:23",
+      "correctOptionId": "false",
+      "evidenceSpan": "um rico dificilmente entrará no Reino dos Céus",
+      "feedbackCorrect": "O texto diz dificilmente, não que nenhum rico entrará.",
+      "feedbackWrong": {
+        "true": "Dificilmente não fecha a porta. O versículo não diz que nenhum rico entrará."
+      },
+      "hint": "Repare na palavra que mede a entrada do rico.",
+      "learningObjective": "Rejeitar a leitura de que Jesus fecha o Reino a todo rico.",
+      "evidence": [
+        "Mateus 19:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 19:26, toque o que isso é para os homens.",
+      "verseRef": "Mateus 19:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "olhar"
+        },
+        {
+          "id": "b",
+          "text": "impossível"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Para os homens, isso é impossível",
+      "feedbackCorrect": "Para os homens, Jesus diz que isso é impossível.",
+      "feedbackWrong": {
+        "a": "Olhar é o gesto de Jesus, não o que ele diz que isso é.",
+        "c": "Deus é quem pode, não o que isso é para os homens."
+      },
+      "hint": "A palavra vem na frase que começa pelos homens.",
+      "learningObjective": "Localizar como Jesus descreve o limite humano.",
+      "evidence": [
+        "Mateus 19:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 19:25–26 sustenta?",
+      "verseRef": "Mateus 19:25–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nenhum rico tem salvação em caso algum"
+        },
+        {
+          "id": "b",
+          "text": "Deus pode o que os homens não conseguem"
+        },
+        {
+          "id": "c",
+          "text": "Os mandamentos já bastam para a perfeição"
+        },
+        {
+          "id": "d",
+          "text": "A saída triste veio da falha nos mandamentos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para Deus tudo é possível",
+      "feedbackCorrect": "Os discípulos perguntam quem pode ser salvo. Jesus responde que Deus pode.",
+      "feedbackWrong": {
+        "a": "Jesus não decreta exclusão. Aponta o que Deus pode.",
+        "c": "O jovem já os guardava, e Jesus ainda pediu outro passo.",
+        "d": "A tristeza está ligada às posses, não a uma falha nos mandamentos."
+      },
+      "hint": "Ouça a pergunta dos discípulos e a resposta de Jesus.",
+      "learningObjective": "Escolher a leitura que o diálogo sustenta sobre a salvação.",
+      "evidence": [
+        "Mateus 19:25–26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência explica o encontro do jovem com Jesus?",
+      "verseRef": "Mateus 19:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "O jovem já guardava os mandamentos"
+        },
+        {
+          "id": "b",
+          "text": "Os bens impedem seguir a Jesus"
+        },
+        {
+          "id": "c",
+          "text": "Deus torna possível o que o homem não pode"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "afastou-se triste, por ter muitas posses",
+      "feedbackCorrect": "Ele já guardava a lei. Os bens o seguram. Deus pode o que ele não pode.",
+      "feedbackWrong": {
+        "default": "Comece pelo que ele já guardava. Os bens vêm no meio. Deus fecha."
+      },
+      "hint": "O primeiro passo é anterior ao pedido de vender.",
+      "learningObjective": "Interpretar o caminho que vai dos mandamentos ao poder de Deus.",
+      "evidence": [
+        "Mateus 19:20",
+        "Mateus 19:22",
+        "Mateus 19:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 19:21, o que Jesus promete no céu a quem der aos pobres?",
+      "verseRef": "Mateus 19:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "prêmio"
+        },
+        {
+          "id": "b",
+          "text": "tesouro"
+        },
+        {
+          "id": "c",
+          "text": "reino"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "terá um tesouro no céu",
+      "feedbackCorrect": "Jesus promete um tesouro no céu a quem vender e der aos pobres.",
+      "feedbackWrong": {
+        "a": "O texto não fala em prêmio. A promessa tem outro nome.",
+        "c": "Reino aparece na fala seguinte. Aqui a promessa no céu tem outro nome."
+      },
+      "hint": "Leia a promessa que fica entre os pobres e o céu.",
+      "learningObjective": "Lembrar o termo que nomeia a promessa de Jesus no céu.",
+      "evidence": [
+        "Mateus 19:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 19:26 a Lucas 18:27?",
+      "verseRef": "Mateus 19:26",
+      "passageA": {
+        "ref": "Mateus 19:26"
+      },
+      "passageB": {
+        "ref": "Lucas 18:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rico entra sem ajuda"
+        },
+        {
+          "id": "b",
+          "text": "Homem vence a agulha"
+        },
+        {
+          "id": "c",
+          "text": "Deus torna salvação possível"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para Deus tudo é possível",
+      "feedbackCorrect": "Os dois textos dizem a mesma coisa: Deus pode o que os homens não podem.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois textos diz que o rico entra por conta própria.",
+        "b": "A agulha é imagem de dificuldade. A ponte é o que Deus pode."
+      },
+      "hint": "Compare o que os dois textos dizem sobre Deus.",
+      "learningObjective": "Ligar a palavra de Mateus à mesma palavra registrada em Lucas.",
+      "evidence": [
+        "Mateus 19:26",
+        "Lucas 18:27"
+      ]
+    }
+  ]
+}

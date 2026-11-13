@@ -1,0 +1,722 @@
+{
+  "study": {
+    "passageRef": "Marcos 15:34–39",
+    "passages": [
+      {
+        "ref": "Marcos 15:34–39"
+      },
+      {
+        "ref": "Marcos 15:33"
+      }
+    ],
+    "context": "Jesus está na cruz. Enquanto sofre, clama a Deus; algumas pessoas interpretam suas palavras de maneira equivocada, e sua morte é acompanhada por dois acontecimentos marcantes: o véu do templo se rasga e um centurião declara quem ele era.",
+    "keyword": "Véu",
+    "keywordGloss": "O véu do templo se rasga de cima para baixo no momento da morte de Jesus.",
+    "focusQuestion": "O que a morte de Jesus revela sobre quem ele é e sobre o caminho de acesso a Deus?",
+    "reflectionPrompts": [
+      "O clamor de Jesus",
+      "O véu rasgado",
+      "O reconhecimento do centurião"
+    ],
+    "facts": [
+      {
+        "text": "Trevas cobriram toda a terra da sexta até a nona hora.",
+        "evidenceRef": "Marcos 15:33",
+        "evidenceSpan": "houve trevas sobre toda a terra até a nona hora"
+      },
+      {
+        "text": "Jesus clamou a Deus perguntando por que havia sido desamparado.",
+        "evidenceRef": "Marcos 15:34",
+        "evidenceSpan": "Meu Deus, meu Deus, por que me desamparaste?"
+      },
+      {
+        "text": "Algumas pessoas entenderam que Jesus estava chamando Elias.",
+        "evidenceRef": "Marcos 15:35",
+        "evidenceSpan": "Vejam, ele está chamando Elias!"
+      },
+      {
+        "text": "Jesus soltou um grande brado e morreu.",
+        "evidenceRef": "Marcos 15:37",
+        "evidenceSpan": "Jesus, soltando um grande brado, expirou"
+      },
+      {
+        "text": "O véu do templo rasgou-se em duas partes, de cima para baixo.",
+        "evidenceRef": "Marcos 15:38",
+        "evidenceSpan": "o véu do templo rasgou-se em duas partes, de cima para baixo"
+      },
+      {
+        "text": "O centurião declarou que Jesus era o Filho de Deus.",
+        "evidenceRef": "Marcos 15:39",
+        "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "desamparaste",
+        "gloss": "Palavra do clamor de Jesus, que expressa a profundidade de seu sofrimento na cruz."
+      },
+      {
+        "term": "véu",
+        "gloss": "A cortina do templo que se rasga em duas partes no momento da morte de Jesus."
+      },
+      {
+        "term": "Filho de Deus",
+        "gloss": "A identidade de Jesus reconhecida pelo centurião ao observar sua morte."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus clama a Deus em meio ao sofrimento",
+        "evidenceRef": "Marcos 15:34"
+      },
+      {
+        "label": "Jesus entrega a vida com um grande brado",
+        "evidenceRef": "Marcos 15:37"
+      },
+      {
+        "label": "O véu do templo se rasga de cima para baixo",
+        "evidenceRef": "Marcos 15:38"
+      },
+      {
+        "label": "O centurião reconhece Jesus como Filho de Deus",
+        "evidenceRef": "Marcos 15:39"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois que Jesus expira, o véu do templo se rasga em duas partes.",
+        "marker": null,
+        "evidenceRef": "Marcos 15:37–38"
+      },
+      {
+        "kind": "sequência",
+        "text": "O centurião observa como Jesus morre e, a partir disso, declara que ele é o Filho de Deus.",
+        "marker": "ao ver",
+        "evidenceRef": "Marcos 15:39"
+      },
+      {
+        "kind": "contraste",
+        "text": "Enquanto alguns interpretam o clamor de Jesus como um chamado a Elias, o centurião reconhece sua identidade como Filho de Deus.",
+        "marker": null,
+        "evidenceRef": "Marcos 15:35–39"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 22:1",
+        "bridge": "O clamor de Jesus na cruz"
+      },
+      {
+        "ref": "Hebreus 10:19–20",
+        "bridge": "Acesso a Deus por Jesus"
+      },
+      {
+        "ref": "Mateus 27:54",
+        "bridge": "O reconhecimento do centurião"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus morreu sem demonstrar consciência do que estava acontecendo.",
+        "why": "Marcos registra seu clamor, seu grande brado e os acontecimentos que acompanham sua morte."
+      },
+      {
+        "text": "O véu se rasgou por causa de uma ação humana dentro do templo.",
+        "why": "O texto apresenta o rasgar do véu após a morte de Jesus e especifica que ocorreu de cima para baixo."
+      },
+      {
+        "text": "O centurião reconheceu Jesus como Filho de Deus antes de observar sua morte.",
+        "why": "Marcos relaciona a declaração do centurião ao que ele viu: como Jesus expirou."
+      }
+    ],
+    "centralInsight": "A morte de Jesus revela sua identidade como Filho de Deus e é acompanhada pelo rasgar do véu do templo.",
+    "anchorQuestion": "O que o centurião declarou sobre Jesus depois de observar como ele morreu?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Marcos 15:33, as trevas cobriram toda a terra da sexta até a nona hora.",
+      "verseRef": "Marcos 15:33",
+      "correctOptionId": "true",
+      "evidenceSpan": "houve trevas sobre toda a terra até a nona hora",
+      "feedbackCorrect": "Marcos registra a duração das trevas: da sexta até a nona hora.",
+      "feedbackWrong": {
+        "false": "O versículo afirma que as trevas permaneceram até a nona hora."
+      },
+      "hint": "Observe o início e o fim do período descrito.",
+      "learningObjective": "Identificar o período em que as trevas cobriram a terra.",
+      "evidence": [
+        "Marcos 15:33"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Marcos 15:34, toque a expressão que indica quando Jesus clamou.",
+      "verseRef": "Marcos 15:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Às três horas"
+        },
+        {
+          "id": "b",
+          "text": "alta voz"
+        },
+        {
+          "id": "c",
+          "text": "Meu Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Às três horas da tarde",
+      "feedbackCorrect": "O versículo situa o clamor de Jesus às três horas da tarde.",
+      "feedbackWrong": {
+        "b": "Essa expressão descreve a intensidade do clamor, não o horário.",
+        "c": "Essas palavras fazem parte do conteúdo da oração, não indicam quando ocorreu."
+      },
+      "hint": "Procure a indicação de horário no começo do versículo.",
+      "learningObjective": "Localizar no texto o horário em que Jesus clamou.",
+      "evidence": [
+        "Marcos 15:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que aconteceu com o véu do templo, segundo Marcos 15:38?",
+      "verseRef": "Marcos 15:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Foi retirado pelos sacerdotes."
+        },
+        {
+          "id": "b",
+          "text": "Rasgou-se em duas partes, de cima para baixo."
+        },
+        {
+          "id": "c",
+          "text": "Foi levado para fora do templo."
+        },
+        {
+          "id": "d",
+          "text": "Permaneceu fechado durante a morte de Jesus."
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o véu do templo rasgou-se em duas partes, de cima para baixo",
+      "feedbackCorrect": "O texto descreve o véu rasgado em duas partes, de cima para baixo.",
+      "feedbackWrong": {
+        "a": "Marcos não menciona sacerdotes retirando o véu.",
+        "c": "O acontecimento descrito é o rasgar do véu, não sua remoção.",
+        "d": "O versículo afirma que o véu se rasgou."
+      },
+      "hint": "Leia o versículo inteiro e observe o que aconteceu com o véu.",
+      "learningObjective": "Observar o acontecimento registrado no templo durante a morte de Jesus.",
+      "evidence": [
+        "Marcos 15:38"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Organize os acontecimentos de Marcos 15:37–38 na ordem do texto.",
+      "verseRef": "Marcos 15:37–38",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus, soltando um grande brado"
+        },
+        {
+          "id": "b",
+          "text": "expirou"
+        },
+        {
+          "id": "c",
+          "text": "E o véu do templo rasgou-se"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Jesus, soltando um grande brado, expirou",
+      "feedbackCorrect": "Primeiro Jesus solta o brado, depois expira, e então o véu se rasga.",
+      "feedbackWrong": {
+        "default": "Acompanhe a sequência: o brado e a morte de Jesus vêm antes do rasgar do véu."
+      },
+      "hint": "Observe a passagem do versículo 37 para o 38.",
+      "learningObjective": "Reconhecer a ordem dos acontecimentos registrados após o clamor de Jesus.",
+      "evidence": [
+        "Marcos 15:37",
+        "Marcos 15:38"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Marcos 15:33, as trevas permaneceram até a ___ hora.",
+      "verseRef": "Marcos 15:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "sexta"
+        },
+        {
+          "id": "b",
+          "text": "nona"
+        },
+        {
+          "id": "c",
+          "text": "terceira"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "até a nona hora",
+      "feedbackCorrect": "O versículo informa que as trevas duraram até a nona hora.",
+      "feedbackWrong": {
+        "a": "A sexta hora marca o início das trevas, não o seu fim.",
+        "c": "A terceira hora não é o horário indicado para o fim das trevas."
+      },
+      "hint": "Confira a última indicação de tempo do versículo.",
+      "learningObjective": "Recordar o horário até o qual as trevas cobriram a terra.",
+      "evidence": [
+        "Marcos 15:33"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Marcos 15:39 comunica que se liga a este contexto?",
+      "verseRef": "Marcos 15:39",
+      "passageA": {
+        "ref": "Marcos 15:39"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois de observar a morte de Jesus, o centurião declara que ele era o Filho de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O reconhecimento do Filho"
+        },
+        {
+          "id": "b",
+          "text": "A chegada das trevas"
+        },
+        {
+          "id": "c",
+          "text": "A oferta de vinagre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este homem era o Filho de Deus",
+      "feedbackCorrect": "O centurião reconhece a identidade de Jesus ao observar sua morte.",
+      "feedbackWrong": {
+        "b": "As trevas fazem parte da cena, mas não são o reconhecimento declarado pelo centurião.",
+        "c": "O vinagre aparece antes da morte; a declaração do centurião vem depois."
+      },
+      "hint": "Observe o que o centurião declara sobre Jesus.",
+      "learningObjective": "Relacionar a declaração do centurião ao reconhecimento da identidade de Jesus.",
+      "evidence": [
+        "Marcos 15:39"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Marcos 15:37–38, o véu do templo se rasga depois que Jesus expira.",
+      "verseRef": "Marcos 15:37–38",
+      "correctOptionId": "true",
+      "evidenceSpan": "E o véu do templo rasgou-se em duas partes",
+      "feedbackCorrect": "A sequência do relato apresenta a morte de Jesus antes do rasgar do véu.",
+      "feedbackWrong": {
+        "false": "Marcos registra primeiro que Jesus expirou e depois que o véu se rasgou."
+      },
+      "hint": "Compare a ordem dos acontecimentos nos dois versículos.",
+      "learningObjective": "Compreender a sequência entre a morte de Jesus e o rasgar do véu.",
+      "evidence": [
+        "Marcos 15:37",
+        "Marcos 15:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Marcos 15:38, toque a palavra que descreve a mudança ocorrida com o véu.",
+      "verseRef": "Marcos 15:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "templo"
+        },
+        {
+          "id": "b",
+          "text": "rasgou-se"
+        },
+        {
+          "id": "c",
+          "text": "baixo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o véu do templo rasgou-se",
+      "feedbackCorrect": "O verbo descreve a mudança que ocorre com o véu após a morte de Jesus.",
+      "feedbackWrong": {
+        "a": "Templo identifica o lugar, mas não descreve a mudança.",
+        "c": "Baixo indica a direção do rasgar, não a ação em si."
+      },
+      "hint": "Procure o verbo que descreve o que aconteceu com o véu.",
+      "learningObjective": "Identificar a ação que marca a mudança na cena do templo.",
+      "evidence": [
+        "Marcos 15:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Marcos 15:38 se relaciona com a morte de Jesus narrada no versículo anterior?",
+      "verseRef": "Marcos 15:37–38",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rasgar do véu acontece antes do brado de Jesus."
+        },
+        {
+          "id": "b",
+          "text": "O véu se rasga depois que Jesus expira."
+        },
+        {
+          "id": "c",
+          "text": "O véu se rasga enquanto o centurião oferece vinagre."
+        },
+        {
+          "id": "d",
+          "text": "O véu se rasga quando Jesus começa a clamar."
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E o véu do templo rasgou-se em duas partes",
+      "feedbackCorrect": "O relato liga os acontecimentos pela sequência: Jesus expira, e o véu se rasga.",
+      "feedbackWrong": {
+        "a": "O versículo 37 registra a morte de Jesus antes do versículo 38.",
+        "c": "A oferta de vinagre aparece no versículo 36, antes da morte de Jesus.",
+        "d": "O clamor está no versículo 34, bem antes do rasgar do véu."
+      },
+      "hint": "Observe o que Marcos narra primeiro e o que vem em seguida.",
+      "learningObjective": "Relacionar a morte de Jesus ao acontecimento que ocorre no templo.",
+      "evidence": [
+        "Marcos 15:37",
+        "Marcos 15:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Organize os movimentos da cena em Marcos 15:37–39.",
+      "verseRef": "Marcos 15:38–39",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus entrega a vida com um grande brado"
+        },
+        {
+          "id": "b",
+          "text": "O véu do templo se rasga de cima para baixo"
+        },
+        {
+          "id": "c",
+          "text": "O centurião reconhece Jesus como Filho de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o véu do templo rasgou-se em duas partes",
+      "feedbackCorrect": "Jesus expira, o véu se rasga e o centurião reconhece quem ele é.",
+      "feedbackWrong": {
+        "default": "A morte de Jesus vem primeiro; o reconhecimento do centurião, por último."
+      },
+      "hint": "Siga os versículos 37, 38 e 39.",
+      "learningObjective": "Compreender a progressão dos acontecimentos após a morte de Jesus.",
+      "evidence": [
+        "Marcos 15:37",
+        "Marcos 15:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Marcos 15:34, Jesus pergunta por que Deus o havia ___.",
+      "verseRef": "Marcos 15:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "chamado"
+        },
+        {
+          "id": "b",
+          "text": "desamparaste"
+        },
+        {
+          "id": "c",
+          "text": "enviado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por que me desamparaste?",
+      "feedbackCorrect": "A palavra expressa o conteúdo do clamor de Jesus dirigido a Deus.",
+      "feedbackWrong": {
+        "a": "O clamor não pergunta por que Deus o chamou, mas por que o desamparou.",
+        "c": "Jesus não pergunta por que foi enviado; essa não é a palavra do versículo."
+      },
+      "hint": "Leia a pergunta de Jesus no final do versículo.",
+      "learningObjective": "Reconhecer a palavra que expressa o clamor de Jesus.",
+      "evidence": [
+        "Marcos 15:34"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Marcos 15:34 a Salmos 22:1?",
+      "verseRef": "Marcos 15:34",
+      "passageA": {
+        "ref": "Marcos 15:34"
+      },
+      "passageB": {
+        "ref": "Salmos 22:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O clamor de abandono"
+        },
+        {
+          "id": "b",
+          "text": "O rasgar do véu"
+        },
+        {
+          "id": "c",
+          "text": "A declaração do centurião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Meu Deus, meu Deus, por que me desamparaste?",
+      "feedbackCorrect": "Jesus clama usando as palavras do Salmo 22:1, ligando a cena da cruz ao salmo.",
+      "feedbackWrong": {
+        "b": "O véu aparece em Marcos 15:38, não é o tema do clamor citado.",
+        "c": "O centurião declara sua conclusão em Marcos 15:39, depois do clamor."
+      },
+      "hint": "Compare as palavras pronunciadas por Jesus com o salmo.",
+      "learningObjective": "Relacionar o clamor de Jesus ao texto do Salmo que ele cita.",
+      "evidence": [
+        "Marcos 15:34",
+        "Salmos 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Marcos 15:39 mostra que o centurião reconheceu Jesus como Filho de Deus antes de observar sua morte.",
+      "verseRef": "Marcos 15:39",
+      "correctOptionId": "false",
+      "evidenceSpan": "ao ver como ele expirou, disse",
+      "feedbackCorrect": "O centurião declara isso depois de observar como Jesus morreu.",
+      "feedbackWrong": {
+        "true": "A ordem do versículo é clara: ele vê como Jesus expira e então faz sua declaração."
+      },
+      "hint": "Observe o que o centurião faz antes de falar.",
+      "learningObjective": "Interpretar a relação entre a morte de Jesus e o reconhecimento do centurião.",
+      "evidence": [
+        "Marcos 15:39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Marcos 15:39, toque a palavra que introduz a declaração de reconhecimento do centurião.",
+      "verseRef": "Marcos 15:39",
+      "options": [
+        {
+          "id": "a",
+          "text": "diante dele"
+        },
+        {
+          "id": "b",
+          "text": "ao ver"
+        },
+        {
+          "id": "c",
+          "text": "Verdadeiramente"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Verdadeiramente, este homem era o Filho de Deus",
+      "feedbackCorrect": "A palavra introduz a declaração firme do centurião sobre a identidade de Jesus.",
+      "feedbackWrong": {
+        "a": "Essa expressão indica onde o centurião estava, não introduz sua declaração.",
+        "b": "Essa expressão explica o que ele observou antes de falar."
+      },
+      "hint": "Procure a primeira palavra da declaração do centurião.",
+      "learningObjective": "Localizar a expressão que marca o reconhecimento da identidade de Jesus.",
+      "evidence": [
+        "Marcos 15:39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual interpretação melhor relaciona a morte de Jesus, o véu rasgado e a declaração do centurião?",
+      "verseRef": "Marcos 15:38–39",
+      "options": [
+        {
+          "id": "a",
+          "text": "A morte de Jesus é acompanhada por sinais que revelam sua identidade e significado."
+        },
+        {
+          "id": "b",
+          "text": "O véu se rasga para anunciar que Jesus não era o Filho de Deus."
+        },
+        {
+          "id": "c",
+          "text": "O centurião reconhece Jesus porque ouviu a multidão explicar sua missão."
+        },
+        {
+          "id": "d",
+          "text": "A morte de Jesus encerra qualquer possibilidade de acesso a Deus."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este homem era o Filho de Deus",
+      "feedbackCorrect": "O véu se rasga e o centurião reconhece Jesus como Filho de Deus após sua morte.",
+      "feedbackWrong": {
+        "b": "A declaração do centurião aponta para o reconhecimento de Jesus, não para sua rejeição.",
+        "c": "Marcos relaciona a declaração ao que o centurião viu, não a uma explicação da multidão.",
+        "d": "Hebreus 10:19–20 apresenta o acesso a Deus por meio de Jesus, não seu encerramento."
+      },
+      "hint": "Considere o significado dos dois acontecimentos narrados nesses versículos.",
+      "learningObjective": "Interpretar os sinais que acompanham a morte de Jesus à luz de sua identidade.",
+      "evidence": [
+        "Marcos 15:38",
+        "Marcos 15:39",
+        "Hebreus 10:19–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Organize o encadeamento da cena em Marcos 15:37–39.",
+      "verseRef": "Marcos 15:38–39",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus entrega a vida na cruz"
+        },
+        {
+          "id": "b",
+          "text": "O véu do templo se rasga"
+        },
+        {
+          "id": "c",
+          "text": "O centurião reconhece o Filho de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "este homem era o Filho de Deus",
+      "feedbackCorrect": "A morte de Jesus é seguida pelo véu rasgado e pela declaração do centurião.",
+      "feedbackWrong": {
+        "default": "Siga a narrativa: Jesus expira, o véu se rasga e o centurião declara o que reconheceu."
+      },
+      "hint": "A declaração do centurião aparece depois dos acontecimentos no templo.",
+      "learningObjective": "Interpretar o encadeamento entre a morte de Jesus, o sinal no templo e seu reconhecimento.",
+      "evidence": [
+        "Marcos 15:37",
+        "Marcos 15:38",
+        "Marcos 15:39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Marcos 15:39, o centurião declara que Jesus era o Filho de ___.",
+      "verseRef": "Marcos 15:39",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "Elias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "este homem era o Filho de Deus",
+      "feedbackCorrect": "A declaração do centurião reconhece Jesus como Filho de Deus.",
+      "feedbackWrong": {
+        "a": "Davi aparece em outros contextos bíblicos, mas não é o nome usado nessa declaração.",
+        "c": "Elias é mencionado antes, por causa da interpretação equivocada do clamor de Jesus."
+      },
+      "hint": "Leia as últimas palavras do versículo.",
+      "learningObjective": "Recordar a identidade de Jesus reconhecida pelo centurião.",
+      "evidence": [
+        "Marcos 15:39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Marcos 15:38 a Hebreus 10:19–20?",
+      "verseRef": "Marcos 15:38",
+      "passageA": {
+        "ref": "Marcos 15:38"
+      },
+      "passageB": {
+        "ref": "Hebreus 10:19–20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Acesso a Deus por Jesus"
+        },
+        {
+          "id": "b",
+          "text": "O clamor de abandono"
+        },
+        {
+          "id": "c",
+          "text": "O reconhecimento do centurião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o véu do templo rasgou-se em duas partes",
+      "feedbackCorrect": "Hebreus relaciona o acesso a Deus à obra de Jesus, usando a imagem do véu.",
+      "feedbackWrong": {
+        "b": "O clamor de abandono aparece em Marcos 15:34 e não é o tema central dessa ligação.",
+        "c": "O reconhecimento do centurião está no versículo seguinte, não é a ponte com Hebreus."
+      },
+      "hint": "Observe o que Hebreus ensina sobre entrar na presença de Deus.",
+      "learningObjective": "Relacionar o véu rasgado à obra de Jesus que abre o acesso a Deus.",
+      "evidence": [
+        "Marcos 15:38",
+        "Hebreus 10:19–20"
+      ]
+    }
+  ]
+}

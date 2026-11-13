@@ -1,0 +1,912 @@
+{
+  "study": {
+    "passageRef": "2 Tessalonicenses 1:3–12",
+    "passages": [
+      {
+        "ref": "2 Tessalonicenses 1:3–12"
+      },
+      {
+        "ref": "2 Tessalonicenses 2:6–14"
+      },
+      {
+        "ref": "2 Tessalonicenses 3:6–13"
+      }
+    ],
+    "context": "Revisão: fé sob perseguição, firmeza na verdade e trabalho ordenado até a vinda.",
+    "keyword": "firmes",
+    "keywordGloss": "Firmes na verdade, dignos do chamado, sem se fatigar do bem.",
+    "focusQuestion": "O que mais precisa firmar: vocação, verdade ou trabalho?",
+    "reflectionPrompts": [
+      "Dignos do chamado",
+      "Firmes na verdade",
+      "Trabalho e bem"
+    ],
+    "facts": [
+      {
+        "text": "A fé cresce sobremaneira no meio das perseguições.",
+        "evidenceRef": "2 Tessalonicenses 1:3",
+        "evidenceSpan": "a fé de vocês cresce sobremaneira"
+      },
+      {
+        "text": "Deus retribui com tribulação aos que afligem.",
+        "evidenceRef": "2 Tessalonicenses 1:6",
+        "evidenceSpan": "ele retribua com tribulação aos que vos afligem"
+      },
+      {
+        "text": "Deus escolheu para salvação pela santificação e fé na verdade.",
+        "evidenceRef": "2 Tessalonicenses 2:13",
+        "evidenceSpan": "Deus os escolheu desde o princípio para a salvação"
+      },
+      {
+        "text": "Trabalhando tranquilamente, comam o próprio pão.",
+        "evidenceRef": "2 Tessalonicenses 3:12",
+        "evidenceSpan": "trabalhando tranquilamente, comam o seu próprio pão"
+      },
+      {
+        "text": "Não se fatigueis de fazer o bem.",
+        "evidenceRef": "2 Tessalonicenses 3:13",
+        "evidenceSpan": "não se fatigueis de fazer o bem"
+      },
+      {
+        "text": "O Senhor Jesus destruirá o ímpio pelo esplendor de sua vinda.",
+        "evidenceRef": "2 Tessalonicenses 2:8",
+        "evidenceSpan": "destruirá pelo esplendor de sua vinda"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "vocação",
+        "gloss": "Chamado que Deus torna digno."
+      },
+      {
+        "term": "verdade",
+        "gloss": "Fé e amor da verdade que salvam."
+      },
+      {
+        "term": "trabalhar",
+        "gloss": "Ordem prática da comunidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado digno",
+        "evidenceRef": "2 Tessalonicenses 1:3–12"
+      },
+      {
+        "label": "Firmeza na verdade",
+        "evidenceRef": "2 Tessalonicenses 2:6–14"
+      },
+      {
+        "label": "Trabalho ordenado",
+        "evidenceRef": "2 Tessalonicenses 3:6–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Oram para que sejam dignos da vocação.",
+        "marker": "para que",
+        "evidenceRef": "2 Tessalonicenses 1:11"
+      },
+      {
+        "kind": "propósito",
+        "text": "O chamado visa alcançar a glória.",
+        "marker": "a fim de que",
+        "evidenceRef": "2 Tessalonicenses 2:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não comeram de graça, mas trabalharam.",
+        "marker": "mas",
+        "evidenceRef": "2 Tessalonicenses 3:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Tessalonicenses 1:3",
+        "bridge": "Fé, amor e esperança"
+      },
+      {
+        "ref": "João 8:32",
+        "bridge": "A verdade liberta"
+      },
+      {
+        "ref": "Gálatas 6:9",
+        "bridge": "Não cansar de fazer o bem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Firmeza dispensa trabalho.",
+        "why": "A carta une verdade, vocação e trabalho ordenado."
+      },
+      {
+        "text": "O ímpio vence sem fim.",
+        "why": "O Senhor o destruirá pelo esplendor de sua vinda."
+      },
+      {
+        "text": "A vocação não exige perseverança no bem.",
+        "why": "A etapa fecha com não se fatigar de fazer o bem."
+      }
+    ],
+    "centralInsight": "Firmes na verdade, trabalhamos até a vinda do Senhor",
+    "anchorQuestion": "Qual peça da etapa você precisa praticar esta semana?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "learningObjective": "Rever o crescimento",
+      "evidence": [
+        "2 Tessalonicenses 1:3"
+      ],
+      "question": "Em 2 Tessalonicenses 1:3, a fé dos irmãos cresce sobremaneira.",
+      "verseRef": "2 Tessalonicenses 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "a fé de vocês cresce sobremaneira",
+      "feedbackCorrect": "A fé cresce sobremaneira.",
+      "feedbackWrong": {
+        "false": "O versículo afirma o crescimento."
+      },
+      "hint": "Leia a frase da fé."
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "learningObjective": "Rever a regra",
+      "evidence": [
+        "2 Tessalonicenses 3:10"
+      ],
+      "question": "Em 2 Tessalonicenses 3:10, toque o verbo da condição para comer.",
+      "verseRef": "2 Tessalonicenses 3:10",
+      "correctOptionId": "a",
+      "evidenceSpan": "se alguém não quiser trabalhar, também não coma",
+      "options": [
+        {
+          "id": "a",
+          "text": "trabalhar"
+        },
+        {
+          "id": "b",
+          "text": "ordenamos"
+        },
+        {
+          "id": "c",
+          "text": "estávamos"
+        }
+      ],
+      "feedbackCorrect": "A condição é trabalhar.",
+      "feedbackWrong": {
+        "b": "Ordenamos é o verbo apostólico.",
+        "c": "Estávamos marca o tempo passado."
+      },
+      "hint": "Toque a condição."
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "learningObjective": "Rever a escolha",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "Segundo 2 Tessalonicenses 2:13, para que Deus os escolheu?",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "para a salvação, pela santificação do Espírito e fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para a salvação"
+        },
+        {
+          "id": "b",
+          "text": "Para a mentira"
+        },
+        {
+          "id": "c",
+          "text": "Para a iniquidade"
+        },
+        {
+          "id": "d",
+          "text": "Para o ócio"
+        }
+      ],
+      "feedbackCorrect": "A escolha é para a salvação.",
+      "feedbackWrong": {
+        "b": "Mentira é o contrário.",
+        "c": "Iniquidade é o mistério oposto.",
+        "d": "Há chamado ativo."
+      },
+      "hint": "Qual o alvo?"
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "learningObjective": "Ordenar a regra",
+      "evidence": [
+        "2 Tessalonicenses 3:10"
+      ],
+      "question": "Monte 2 Tessalonicenses 3:10 na ordem do texto.",
+      "verseRef": "2 Tessalonicenses 3:10",
+      "evidenceSpan": "se alguém não quiser trabalhar, também não coma",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque, quando ainda estávamos com vocês"
+        },
+        {
+          "id": "b",
+          "text": "vos ordenamos isto"
+        },
+        {
+          "id": "c",
+          "text": "se alguém não quiser trabalhar, também não coma"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pela presença entre eles."
+      },
+      "hint": "Siga a ordem."
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "learningObjective": "Completar o alívio",
+      "evidence": [
+        "2 Tessalonicenses 1:7"
+      ],
+      "question": "Em 2 Tessalonicenses 1:7, daremos ___ juntamente conosco.",
+      "verseRef": "2 Tessalonicenses 1:7",
+      "correctOptionId": "a",
+      "evidenceSpan": "daremos alívio juntamente conosco",
+      "options": [
+        {
+          "id": "a",
+          "text": "alívio"
+        },
+        {
+          "id": "b",
+          "text": "peso"
+        },
+        {
+          "id": "c",
+          "text": "engano"
+        }
+      ],
+      "feedbackCorrect": "O dom é alívio.",
+      "feedbackWrong": {
+        "b": "Peso é da carta 3.",
+        "c": "Engano é da carta 2."
+      },
+      "hint": "Toque o descanso."
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "learningObjective": "Ligar juízo e vinda",
+      "evidence": [
+        "2 Tessalonicenses 2:8"
+      ],
+      "question": "O que 2 Tessalonicenses 2:8 comunica neste contexto?",
+      "verseRef": "2 Tessalonicenses 2:8",
+      "correctOptionId": "a",
+      "evidenceSpan": "destruirá pelo esplendor de sua vinda",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ímpio destruído na vinda"
+        },
+        {
+          "id": "b",
+          "text": "Ímpio sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Vinda sem juízo"
+        }
+      ],
+      "feedbackCorrect": "O Senhor destruirá o ímpio na vinda.",
+      "feedbackWrong": {
+        "b": "Há destruição anunciada.",
+        "c": "A vinda traz juízo."
+      },
+      "hint": "Ligue ímpio e vinda.",
+      "passageA": {
+        "ref": "2 Tessalonicenses 2:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Revisão: fé sob perseguição, firmeza na verdade e trabalho ordenado até a vinda."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "learningObjective": "Rever o alívio",
+      "evidence": [
+        "2 Tessalonicenses 1:4"
+      ],
+      "question": "Em 2 Tessalonicenses 1:4, toque o que se vê nas perseguições.",
+      "verseRef": "2 Tessalonicenses 1:4",
+      "correctOptionId": "a",
+      "evidenceSpan": "à vista da sua constância e fé",
+      "options": [
+        {
+          "id": "a",
+          "text": "constância"
+        },
+        {
+          "id": "b",
+          "text": "igrejas"
+        },
+        {
+          "id": "c",
+          "text": "tribulações"
+        }
+      ],
+      "feedbackCorrect": "Veem-se constância e fé.",
+      "feedbackWrong": {
+        "b": "Igrejas são o lugar do louvor.",
+        "c": "Tribulações são o contexto."
+      },
+      "hint": "Toque a firmeza observada."
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "learningObjective": "Ordenar a gratidão",
+      "evidence": [
+        "2 Tessalonicenses 1:3"
+      ],
+      "question": "Monte 2 Tessalonicenses 1:3 na ordem do texto.",
+      "verseRef": "2 Tessalonicenses 1:3",
+      "evidenceSpan": "é nosso dever sempre dar graças a Deus por vocês, como é justo",
+      "options": [
+        {
+          "id": "a",
+          "text": "é nosso dever sempre dar graças a Deus por vocês"
+        },
+        {
+          "id": "b",
+          "text": "como é justo"
+        },
+        {
+          "id": "c",
+          "text": "pois a fé de vocês cresce sobremaneira"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pelo dever de dar graças."
+      },
+      "hint": "Siga a gratidão."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "learningObjective": "Rever o exemplo",
+      "evidence": [
+        "2 Tessalonicenses 3:8"
+      ],
+      "question": "Em 2 Tessalonicenses 3:8, comeram de graça o pão de todos.",
+      "verseRef": "2 Tessalonicenses 3:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Nem de graça comemos o pão de ninguém",
+      "feedbackCorrect": "Não comeram de graça.",
+      "feedbackWrong": {
+        "true": "O texto nega comer de graça."
+      },
+      "hint": "Leia o início."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "learningObjective": "Rever o motivo",
+      "evidence": [
+        "2 Tessalonicenses 3:8"
+      ],
+      "question": "Em 2 Tessalonicenses 3:8, toque o que evitaram ser.",
+      "verseRef": "2 Tessalonicenses 3:8",
+      "correctOptionId": "a",
+      "evidenceSpan": "para não sermos um peso",
+      "options": [
+        {
+          "id": "a",
+          "text": "peso"
+        },
+        {
+          "id": "b",
+          "text": "noite"
+        },
+        {
+          "id": "c",
+          "text": "pão"
+        }
+      ],
+      "feedbackCorrect": "Evitaram ser um peso.",
+      "feedbackWrong": {
+        "b": "Noite marca o trabalho.",
+        "c": "Pão é o alimento."
+      },
+      "hint": "Toque o evitável."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "learningObjective": "Relacionar oração e vocação",
+      "evidence": [
+        "2 Tessalonicenses 1:11"
+      ],
+      "question": "Como 2 Tessalonicenses 1:11 se relaciona com a vocação?",
+      "verseRef": "2 Tessalonicenses 1:11",
+      "correctOptionId": "a",
+      "evidenceSpan": "os torne dignos da sua vocação",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração para serem dignos da vocação"
+        },
+        {
+          "id": "b",
+          "text": "Vocação sem oração"
+        },
+        {
+          "id": "c",
+          "text": "Fim da obra da fé"
+        },
+        {
+          "id": "d",
+          "text": "Glória só humana"
+        }
+      ],
+      "feedbackCorrect": "Oram para dignidade da vocação.",
+      "feedbackWrong": {
+        "b": "A oração é contínua.",
+        "c": "Pedem cumprimento da obra.",
+        "d": "A glória é do Senhor."
+      },
+      "hint": "O que a oração pede?"
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "learningObjective": "Ordenar a etapa",
+      "evidence": [
+        "2 Tessalonicenses 1:11–12"
+      ],
+      "question": "Como avança a etapa?",
+      "verseRef": "2 Tessalonicenses 1:11–12",
+      "evidenceSpan": "dignos da sua vocação",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crescimento sob perseguição"
+        },
+        {
+          "id": "b",
+          "text": "Firmeza na verdade"
+        },
+        {
+          "id": "c",
+          "text": "Trabalho ordenado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Siga o arco da etapa."
+      },
+      "hint": "Veja o fio da Travessia."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "learningObjective": "Completar a salvação",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "Em 2 Tessalonicenses 2:13, Deus os escolheu desde o princípio para a ___.",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "para a salvação, pela santificação do Espírito",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvação"
+        },
+        {
+          "id": "b",
+          "text": "mentira"
+        },
+        {
+          "id": "c",
+          "text": "desordem"
+        }
+      ],
+      "feedbackCorrect": "A escolha é para salvação.",
+      "feedbackWrong": {
+        "b": "Mentira é o contrário.",
+        "c": "Desordem é da carta 3."
+      },
+      "hint": "Toque o alvo."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "learningObjective": "Ligar o bem",
+      "evidence": [
+        "2 Tessalonicenses 3:13"
+      ],
+      "question": "O que liga 2 Tessalonicenses 3:13 a Gálatas 6:9?",
+      "verseRef": "2 Tessalonicenses 3:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "não se fatigueis de fazer o bem",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não cansar do bem"
+        },
+        {
+          "id": "b",
+          "text": "Desistir do bem"
+        },
+        {
+          "id": "c",
+          "text": "Bem sem fé"
+        }
+      ],
+      "feedbackCorrect": "Ambos pedem perseverança no bem.",
+      "feedbackWrong": {
+        "b": "A ordem é não se fatigar.",
+        "c": "Há perseverança."
+      },
+      "hint": "Nomeie a ponte.",
+      "passageB": {
+        "ref": "Gálatas 6:9"
+      },
+      "passageA": {
+        "ref": "2 Tessalonicenses 3:13"
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "learningObjective": "Rever o engano",
+      "evidence": [
+        "2 Tessalonicenses 2:9"
+      ],
+      "question": "Em 2 Tessalonicenses 2:9, toque a origem da eficácia do ímpio.",
+      "verseRef": "2 Tessalonicenses 2:9",
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo a eficácia de Satanás",
+      "options": [
+        {
+          "id": "a",
+          "text": "Satanás"
+        },
+        {
+          "id": "b",
+          "text": "sinais"
+        },
+        {
+          "id": "c",
+          "text": "mentira"
+        }
+      ],
+      "feedbackCorrect": "A eficácia é de Satanás.",
+      "feedbackWrong": {
+        "b": "Sinais acompanham a mentira.",
+        "c": "Mentira descreve os prodígios."
+      },
+      "hint": "Toque a origem."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "learningObjective": "Ordenar o chamado",
+      "evidence": [
+        "2 Tessalonicenses 2:13–14"
+      ],
+      "question": "Qual ordem do chamado na verdade?",
+      "verseRef": "2 Tessalonicenses 2:13–14",
+      "evidenceSpan": "fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escolha para salvação"
+        },
+        {
+          "id": "b",
+          "text": "Chamado pelo evangelho"
+        },
+        {
+          "id": "c",
+          "text": "Alvo na glória"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pela escolha."
+      },
+      "hint": "Siga escolha, chamado e glória."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "learningObjective": "Sintetizar a etapa",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "A etapa ensina firmeza na verdade sem exigir trabalho ordenado.",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "trabalhando tranquilamente, comam o seu próprio pão",
+      "feedbackCorrect": "A etapa une verdade e trabalho ordenado.",
+      "feedbackWrong": {
+        "true": "Há ordem clara de trabalhar e não se fatigar do bem."
+      },
+      "hint": "Lembre o fechamento da etapa."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "learningObjective": "Tocar o evangelho",
+      "evidence": [
+        "2 Tessalonicenses 2:14"
+      ],
+      "question": "Em 2 Tessalonicenses 2:14, toque o meio do chamado.",
+      "verseRef": "2 Tessalonicenses 2:14",
+      "correctOptionId": "a",
+      "evidenceSpan": "por meio do nosso evangelho",
+      "options": [
+        {
+          "id": "a",
+          "text": "evangelho"
+        },
+        {
+          "id": "b",
+          "text": "glória"
+        },
+        {
+          "id": "c",
+          "text": "chamou"
+        }
+      ],
+      "feedbackCorrect": "O meio é o evangelho.",
+      "feedbackWrong": {
+        "b": "Glória é o alvo.",
+        "c": "Chamou é o verbo."
+      },
+      "hint": "Toque o meio."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "learningObjective": "Interpretar a etapa",
+      "evidence": [
+        "2 Tessalonicenses 3:12"
+      ],
+      "question": "Que leitura a Travessia sustenta?",
+      "verseRef": "2 Tessalonicenses 3:12",
+      "correctOptionId": "a",
+      "evidenceSpan": "trabalhando tranquilamente, comam o seu próprio pão",
+      "options": [
+        {
+          "id": "a",
+          "text": "Firmeza verdadeira se traduz em trabalho e bem"
+        },
+        {
+          "id": "b",
+          "text": "Verdade dispensa trabalho"
+        },
+        {
+          "id": "c",
+          "text": "Vocação anula a ordem prática"
+        },
+        {
+          "id": "d",
+          "text": "O ímpio define a rotina"
+        }
+      ],
+      "feedbackCorrect": "A firmeza inclui trabalho ordenado e perseverança no bem.",
+      "feedbackWrong": {
+        "b": "A carta exige trabalho.",
+        "c": "Vocação e prática andam juntas.",
+        "d": "O Senhor vence o ímpio."
+      },
+      "hint": "Como a firmeza se manifesta?"
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "learningObjective": "Ordenar a Travessia",
+      "evidence": [
+        "2 Tessalonicenses 3:12–13"
+      ],
+      "question": "Qual sequência resume a Travessia?",
+      "verseRef": "2 Tessalonicenses 3:12–13",
+      "evidenceSpan": "não se fatigueis de fazer o bem",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dignos do chamado"
+        },
+        {
+          "id": "b",
+          "text": "Firmes na verdade"
+        },
+        {
+          "id": "c",
+          "text": "Trabalhar e fazer o bem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Siga o arco da etapa."
+      },
+      "hint": "Veja a Travessia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "learningObjective": "Completar a vocação",
+      "evidence": [
+        "2 Tessalonicenses 1:11"
+      ],
+      "question": "Em 2 Tessalonicenses 1:11, Deus os torne dignos da sua ___.",
+      "verseRef": "2 Tessalonicenses 1:11",
+      "correctOptionId": "a",
+      "evidenceSpan": "dignos da sua vocação",
+      "options": [
+        {
+          "id": "a",
+          "text": "vocação"
+        },
+        {
+          "id": "b",
+          "text": "desordem"
+        },
+        {
+          "id": "c",
+          "text": "mentira"
+        }
+      ],
+      "feedbackCorrect": "O pedido é dignidade da vocação.",
+      "feedbackWrong": {
+        "b": "Desordem é condenada.",
+        "c": "Mentira é rejeitada."
+      },
+      "hint": "Toque o chamado."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "learningObjective": "Ligar a verdade",
+      "evidence": [
+        "2 Tessalonicenses 2:13"
+      ],
+      "question": "O que liga 2 Tessalonicenses 2:13 a João 8:32?",
+      "verseRef": "2 Tessalonicenses 2:13",
+      "correctOptionId": "a",
+      "evidenceSpan": "fé na verdade",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verdade que liberta"
+        },
+        {
+          "id": "b",
+          "text": "Verdade opcional"
+        },
+        {
+          "id": "c",
+          "text": "Fé na mentira"
+        }
+      ],
+      "feedbackCorrect": "Ambos exaltam a verdade que salva.",
+      "feedbackWrong": {
+        "b": "A verdade é essencial.",
+        "c": "A fé é na verdade."
+      },
+      "hint": "Nomeie a ponte.",
+      "passageB": {
+        "ref": "João 8:32"
+      },
+      "passageA": {
+        "ref": "2 Tessalonicenses 2:13"
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "learningObjective": "Rever a vocação",
+      "evidence": [
+        "2 Tessalonicenses 2:8"
+      ],
+      "question": "Em 2 Tessalonicenses 2:8, toque quem será revelado.",
+      "verseRef": "2 Tessalonicenses 2:8",
+      "correctOptionId": "a",
+      "evidenceSpan": "será revelado o ímpio",
+      "options": [
+        {
+          "id": "a",
+          "text": "ímpio"
+        },
+        {
+          "id": "b",
+          "text": "sopro"
+        },
+        {
+          "id": "c",
+          "text": "esplendor"
+        }
+      ],
+      "feedbackCorrect": "Será revelado o ímpio.",
+      "feedbackWrong": {
+        "b": "Sopro é o meio da destruição.",
+        "c": "Esplendor marca a vinda."
+      },
+      "hint": "Toque o revelado."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "learningObjective": "Ordenar o trabalho",
+      "evidence": [
+        "2 Tessalonicenses 3:10"
+      ],
+      "question": "Qual ordem do trabalho ordenado?",
+      "verseRef": "2 Tessalonicenses 3:10",
+      "evidenceSpan": "se alguém não quiser trabalhar, também não coma",
+      "options": [
+        {
+          "id": "a",
+          "text": "Afastar a desordem"
+        },
+        {
+          "id": "b",
+          "text": "Trabalhar com empenho"
+        },
+        {
+          "id": "c",
+          "text": "Não se fatigar do bem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackCorrect": "Essa é a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pelo afastamento."
+      },
+      "hint": "Siga a ordem prática."
+    }
+  ]
+}

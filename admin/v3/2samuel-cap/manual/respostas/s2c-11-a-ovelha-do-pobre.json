@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 12:1–6",
+    "passages": [
+      {
+        "ref": "2 Samuel 12:1–6"
+      }
+    ],
+    "context": "Natã conta uma parábola, e Davi condena o homem sem saber que é ele.",
+    "keyword": "SENHOR",
+    "keywordGloss": "Palavra que ajuda a ler 2 Samuel 12:1–6.",
+    "focusQuestion": "O que este trecho pede de você diante de SENHOR?",
+    "reflectionPrompts": [
+      "Ouvir a correção",
+      "Coração",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 12:1 registra: SENHOR enviou Natã a Davi; ao entrar onde.",
+        "evidenceRef": "2 Samuel 12:1",
+        "evidenceSpan": "SENHOR enviou Natã a Davi; ao entrar onde"
+      },
+      {
+        "text": "O texto em 12:3 registra: pobre não possuía nada, exceto uma pequena cordeirinha.",
+        "evidenceRef": "2 Samuel 12:3",
+        "evidenceSpan": "pobre não possuía nada, exceto uma pequena cordeirinha"
+      },
+      {
+        "text": "O texto em 12:5 registra: furor de Davi se acendeu intensamente contra aquele.",
+        "evidenceRef": "2 Samuel 12:5",
+        "evidenceSpan": "furor de Davi se acendeu intensamente contra aquele"
+      },
+      {
+        "text": "O texto em 12:7 registra: disse a Davi: \"Tu és o homem! Assim.",
+        "evidenceRef": "2 Samuel 12:7",
+        "evidenceSpan": "disse a Davi: \"Tu és o homem! Assim"
+      },
+      {
+        "text": "O texto em 12:9 registra: desprezaste a palavra do SENHOR, praticando o mal.",
+        "evidenceRef": "2 Samuel 12:9",
+        "evidenceSpan": "desprezaste a palavra do SENHOR, praticando o mal"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SENHOR",
+        "gloss": "Termo central do trecho em 2 Samuel 12:1–6."
+      },
+      {
+        "term": "enviou",
+        "gloss": "Termo central do trecho em 2 Samuel 12:1–6."
+      },
+      {
+        "term": "Natã",
+        "gloss": "Termo central do trecho em 2 Samuel 12:1–6."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Abertura em 1",
+        "evidenceRef": "2 Samuel 12:1–2"
+      },
+      {
+        "label": "Desenvolvimento do relato",
+        "evidenceRef": "2 Samuel 12:3–4"
+      },
+      {
+        "label": "Virada do trecho",
+        "evidenceRef": "2 Samuel 12:5–6"
+      },
+      {
+        "label": "Desfecho do episódio",
+        "evidenceRef": "2 Samuel 12:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O texto marca a relação com \"mas\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 12:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto marca a relação com \"mas\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 12:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto marca a relação com \"então\".",
+        "marker": null,
+        "evidenceRef": "2 Samuel 12:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Provérbios 3:5–6",
+        "bridge": "Confiar no Senhor"
+      },
+      {
+        "ref": "1 Samuel 16:7",
+        "bridge": "O Senhor vê o coração"
+      },
+      {
+        "ref": "Josué 1:9",
+        "bridge": "Esforça-te e coragem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho celebra o pecado como se fosse virtude.",
+        "why": "O texto registra o fato e suas consequências sem elogiar o erro."
+      },
+      {
+        "text": "Nada neste relato revela o caráter de Deus.",
+        "why": "O Senhor aparece no contexto julgando, livrando ou falando."
+      },
+      {
+        "text": "Os personagens agem sem qualquer escolha moral.",
+        "why": "Há decisões explícitas que o narrador registra."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 12:1, o que o texto destaca no início?",
+    "centralInsight": "Tu és o homem: o Senhor vê o que se esconde e confronta o pecado do rei."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 12:1, o texto traz o trecho — SENHOR enviou Natã a Davi; ao entrar onde.",
+      "verseRef": "2 Samuel 12:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "SENHOR enviou Natã a Davi; ao entrar onde",
+      "feedbackCorrect": "O versículo confirma a afirmação.",
+      "feedbackWrong": {
+        "false": "O trecho está no versículo."
+      },
+      "hint": "Compare com o palco.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 12:2, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Samuel 12:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "possuía"
+        },
+        {
+          "id": "b",
+          "text": "rico"
+        },
+        {
+          "id": "c",
+          "text": "muitas"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "rico",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 12:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 12:3, o que o texto afirma?",
+      "verseRef": "2 Samuel 12:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Registra-se o fato: o pobre não possuía"
+        },
+        {
+          "id": "b",
+          "text": "O texto omite qualquer ação"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O narrador se recusa a contar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o pobre não possuía",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 12:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 12:1 na ordem do texto.",
+      "verseRef": "2 Samuel 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "E o SENHOR enviou Natã a Davi; ao entrar onde ele"
+        },
+        {
+          "id": "b",
+          "text": "disse-lhe: Havia em uma cidade"
+        },
+        {
+          "id": "c",
+          "text": "homens, um rico"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E o SENHOR enviou Natã a Davi; ao entrar onde ele",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 12:5, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "furor"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 12:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 12:6 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 12:6",
+      "passageA": {
+        "ref": "2 Samuel 12:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Tu és o homem: o Senhor vê o que se esconde e confronta o pecado do rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato e sentido"
+        },
+        {
+          "id": "b",
+          "text": "Contradição total"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio do texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela cordeira ele restituirá",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 12:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 12:7, o relato elimina qualquer relação de causa ou sequência.",
+      "verseRef": "2 Samuel 12:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Natã disse a Davi:",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 12:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 12:8, toque a palavra que marca a relação no relato.",
+      "verseRef": "2 Samuel 12:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mulheres"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "teus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "casa",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 12:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 12:9–10 evidencia no fluxo do relato?",
+      "verseRef": "2 Samuel 12:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há sequência e consequências no relato"
+        },
+        {
+          "id": "b",
+          "text": "O texto congela sem qualquer avanço"
+        },
+        {
+          "id": "c",
+          "text": "Só há listas sem ação"
+        },
+        {
+          "id": "d",
+          "text": "O narrador apaga os personagens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que desprezaste a palavra",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 12:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abertura em 1"
+        },
+        {
+          "id": "b",
+          "text": "Desenvolvimento do relato"
+        },
+        {
+          "id": "c",
+          "text": "Virada do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pois, a espada não",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 12:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 12:1, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "enviou"
+        },
+        {
+          "id": "c",
+          "text": "Natã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "SENHOR",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 12:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 12:2 a Provérbios 3:5–6?",
+      "verseRef": "2 Samuel 12:2",
+      "passageA": {
+        "ref": "2 Samuel 12:2"
+      },
+      "passageB": {
+        "ref": "Provérbios 3:5–6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiar no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação do tema"
+        },
+        {
+          "id": "c",
+          "text": "Assunto alheio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rico possuía muitas ovelhas",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 12:2",
+        "Provérbios 3:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 12:3, a melhor leitura é tratar o pecado como virtude do rei.",
+      "verseRef": "2 Samuel 12:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "o pobre não possuía",
+      "feedbackCorrect": "O texto sustenta essa leitura.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o versículo indicado.",
+      "learningObjective": "Julgar a afirmação pelo texto.",
+      "evidence": [
+        "2 Samuel 12:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 12:4, toque o trecho que sustenta a leitura do episódio.",
+      "verseRef": "2 Samuel 12:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "chegou"
+        },
+        {
+          "id": "b",
+          "text": "viajante"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "viajante",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Localizar no texto.",
+      "evidence": [
+        "2 Samuel 12:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor respeita 2 Samuel 12:5?",
+      "verseRef": "2 Samuel 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu és o homem: o Senhor vê o que se esconde e confronta o pecado do rei."
+        },
+        {
+          "id": "b",
+          "text": "O pecado é apresentado como modelo"
+        },
+        {
+          "id": "c",
+          "text": "Deus está ausente do episódio"
+        },
+        {
+          "id": "d",
+          "text": "O texto não pede nenhuma resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "furor de Davi se acendeu intensamente contra aquele",
+      "feedbackCorrect": "Essa opção segue o texto.",
+      "feedbackWrong": {
+        "b": "Essa leitura não se sustenta.",
+        "c": "Essa leitura não se sustenta.",
+        "d": "Essa leitura não se sustenta."
+      },
+      "hint": "Compare com o versículo.",
+      "learningObjective": "Escolher pelo texto.",
+      "evidence": [
+        "2 Samuel 12:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do episódio.",
+      "verseRef": "2 Samuel 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato apresenta a crise"
+        },
+        {
+          "id": "b",
+          "text": "Vem a confrontação ou decisão"
+        },
+        {
+          "id": "c",
+          "text": "Surge o desfecho do episódio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pela cordeira ele restituirá",
+      "feedbackCorrect": "Essa é a ordem do relato.",
+      "feedbackWrong": {
+        "default": "Recomece pelo início do movimento."
+      },
+      "hint": "Siga a ordem do texto.",
+      "learningObjective": "Ordenar o relato.",
+      "evidence": [
+        "2 Samuel 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 12:7, complete a palavra que falta no sentido do verso.",
+      "verseRef": "2 Samuel 12:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Natã"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Natã",
+      "feedbackCorrect": "Essa é a palavra do versículo.",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra.",
+        "c": "Não é essa a palavra."
+      },
+      "hint": "Veja a palavra exata do verso.",
+      "learningObjective": "Completar com a palavra do texto.",
+      "evidence": [
+        "2 Samuel 12:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 12:8 a 1 Samuel 16:7?",
+      "verseRef": "2 Samuel 12:8",
+      "passageA": {
+        "ref": "2 Samuel 12:8"
+      },
+      "passageB": {
+        "ref": "1 Samuel 16:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor vê o coração"
+        },
+        {
+          "id": "b",
+          "text": "Tema invertido"
+        },
+        {
+          "id": "c",
+          "text": "Sem ligação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te dei a",
+      "feedbackCorrect": "A ponte nomeia a ligação.",
+      "feedbackWrong": {
+        "b": "Essa ponte não se sustenta.",
+        "c": "Essa ponte não se sustenta."
+      },
+      "hint": "Nomeie a ligação entre os textos.",
+      "learningObjective": "Conectar textos.",
+      "evidence": [
+        "2 Samuel 12:8",
+        "1 Samuel 16:7"
+      ]
+    }
+  ]
+}

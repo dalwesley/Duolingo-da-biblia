@@ -1,0 +1,602 @@
+{
+  "study": {
+    "passageRef": "Ageu 1:4–9",
+    "passages": [
+      { "ref": "Ageu 1:4–9" },
+      { "ref": "Ageu 2:14–19" }
+    ],
+    "context": "Nesta travessia, revise o confronto de Ageu 1 — casas apaineladas e Casa em ruínas — e a promessa de Ageu 2: bênção desde o dia do alicerce.",
+    "keyword": "prioridade",
+    "keywordGloss": "Colocar a Casa do Senhor à frente do conforto próprio, e viver a bênção que começa na obediência.",
+    "focusQuestion": "O que muda quando a Casa do Senhor deixa de ser adiamento e vira o primeiro passo do seu dia?",
+    "reflectionPrompts": [
+      "Casa em primeiro lugar",
+      "Escassez que ensina",
+      "Bênção no alicerce"
+    ],
+    "facts": [
+      {
+        "text": "O povo adia a edificação da Casa do Senhor.",
+        "evidenceRef": "Ageu 1:2",
+        "evidenceSpan": "Não veio ainda o tempo"
+      },
+      {
+        "text": "Há casas apaineladas enquanto a Casa permanece em ruínas.",
+        "evidenceRef": "Ageu 1:4",
+        "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas"
+      },
+      {
+        "text": "O Senhor manda construir a casa para se agradar e ser glorificado.",
+        "evidenceRef": "Ageu 1:8",
+        "evidenceSpan": "construam a casa; dela me agradarei e serei glorificado"
+      },
+      {
+        "text": "A escassez vem por causa da casa do Senhor em ruínas.",
+        "evidenceRef": "Ageu 1:9",
+        "evidenceSpan": "por causa da minha casa, que permanece em ruínas"
+      },
+      {
+        "text": "O povo e suas ofertas são imundos perante o Senhor.",
+        "evidenceRef": "Ageu 2:14",
+        "evidenceSpan": "tudo o que ali oferecem é imundo"
+      },
+      {
+        "text": "Desde o dia do alicerce o Senhor promete abençoar.",
+        "evidenceRef": "Ageu 2:19",
+        "evidenceSpan": "desde este dia, Eu vos abençoarei"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ruínas",
+        "gloss": "Estado da Casa enquanto o povo corre para si."
+      },
+      {
+        "term": "fundou",
+        "gloss": "Dia em que o templo recebe alicerce."
+      },
+      {
+        "term": "abençoarei",
+        "gloss": "Promessa do Senhor a partir daquele dia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Desculpa do tempo e confronto das casas",
+        "evidenceRef": "Ageu 1:2–4"
+      },
+      {
+        "label": "Chamado a considerar e a construir",
+        "evidenceRef": "Ageu 1:5–8"
+      },
+      {
+        "label": "Impureza do povo e memória da escassez",
+        "evidenceRef": "Ageu 2:14–17"
+      },
+      {
+        "label": "Bênção desde o dia do alicerce",
+        "evidenceRef": "Ageu 2:18–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A falta vem por causa da casa do Senhor em ruínas.",
+        "marker": "por causa",
+        "evidenceRef": "Ageu 1:9"
+      },
+      {
+        "kind": "contraste",
+        "text": "Pragas vieram, contudo ninguém se voltou.",
+        "marker": "contudo",
+        "evidenceRef": "Ageu 2:17"
+      },
+      {
+        "kind": "resultado",
+        "text": "Desde o dia do alicerce, o Senhor abençoa.",
+        "marker": "desde",
+        "evidenceRef": "Ageu 2:19"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Mateus 6:33", "bridge": "Buscar primeiro o Reino" },
+      { "ref": "Esdras 5:1–2", "bridge": "Ageu anima a obra" },
+      { "ref": "Malaquias 3:10", "bridge": "Bênção após obediência" }
+    ],
+    "misreadings": [
+      {
+        "text": "Ageu só fala de prédio; a vida espiritual não entra.",
+        "why": "O texto liga Casa, prioridade do coração, impureza das ofertas e bênção."
+      },
+      {
+        "text": "A bênção de 2:19 cancela a necessidade de construir.",
+        "why": "A promessa está ligada ao dia em que o templo foi fundado."
+      },
+      {
+        "text": "Correr para a própria casa é neutro diante de Deus.",
+        "why": "Ageu 1:9 faz dessa corrida a razão da escassez."
+      }
+    ],
+    "centralInsight": "Quem põe a casa do Senhor em primeiro lugar encontra a bênção dele",
+    "anchorQuestion": "O que Ageu liga à casa em ruínas em 1:9 e ao dia do alicerce em 2:19?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ageu 1:8, o Senhor manda subir ao monte, trazer madeira e construir a casa.",
+      "verseRef": "Ageu 1:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa",
+      "feedbackCorrect": "O mandato é concreto: subir, trazer madeira e construir.",
+      "feedbackWrong": { "false": "Releia 1:8: subir, trazer madeira e construir a casa." },
+      "hint": "Veja os três verbos de ação no versículo.",
+      "learningObjective": "Observar o mandato concreto de construir.",
+      "evidence": ["Ageu 1:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:4, toque o estado da Casa do Senhor.",
+      "verseRef": "Ageu 1:4",
+      "evidenceSpan": "permanece em ruínas",
+      "feedbackCorrect": "A Casa permanece em ruínas.",
+      "hint": "Procure o fim da pergunta do Senhor.",
+      "learningObjective": "Identificar o estado da Casa em 1:4.",
+      "evidence": ["Ageu 1:4"],
+      "options": [
+        { "id": "a", "text": "apaineladas" },
+        { "id": "b", "text": "em ruínas" },
+        { "id": "c", "text": "habitar" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Apaineladas\" descreve as casas do povo, não a Casa do Senhor.",
+        "c": "\"Habitar\" é a ação do povo, não o estado da Casa."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ageu 2:19, o que o Senhor fará desde este dia?",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "Eu vos abençoarei",
+      "feedbackCorrect": "Desde este dia, o Senhor abençoará o povo.",
+      "hint": "Leia a última frase do versículo.",
+      "learningObjective": "Observar a promessa de 2:19.",
+      "evidence": ["Ageu 2:19"],
+      "options": [
+        { "id": "a", "text": "Abençoar o povo" },
+        { "id": "b", "text": "Fechar os céus outra vez" },
+        { "id": "c", "text": "Derrubar o alicerce" },
+        { "id": "d", "text": "Calar o profeta Ageu" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O versículo anuncia bênção, não novo fechamento.",
+        "c": "O texto celebra o alicerce, não o derruba.",
+        "d": "O texto não fala de calar Ageu."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ageu 1:5–6 na ordem do texto.",
+      "verseRef": "Ageu 1:5–6",
+      "evidenceSpan": "Considerai os vossos caminhos",
+      "feedbackCorrect": "Primeiro o chamado a considerar; depois o quadro de esforço sem fruto.",
+      "hint": "Comece pelo mandato \"Considerai\".",
+      "learningObjective": "Reconhecer a sequência de 1:5–6.",
+      "evidence": ["Ageu 1:5–6"],
+      "options": [
+        { "id": "a", "text": "Considerai os vossos caminhos" },
+        { "id": "b", "text": "Semeiam muito, mas colhem pouco" },
+        { "id": "c", "text": "quem recebe salário, recebe-o em um saquitel furado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Considerai abre; o saquitel furado fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ageu 1:6, em que recipiente o salário é recebido?",
+      "verseRef": "Ageu 1:6",
+      "evidenceSpan": "recebe-o em um saquitel furado",
+      "feedbackCorrect": "O salário entra num saquitel furado.",
+      "hint": "É o nome do recipiente no fim do versículo.",
+      "learningObjective": "Lembrar a imagem do salário que não segura.",
+      "evidence": ["Ageu 1:6"],
+      "options": [
+        { "id": "a", "text": "cofre" },
+        { "id": "b", "text": "saquitel" },
+        { "id": "c", "text": "templo" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Cofre\" não aparece em 1:6.",
+        "c": "\"Templo\" não é o recipiente do salário em 1:6."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ageu 1:9 comunica que se liga a este contexto?",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "A escassez denuncia o abandono da Casa do Senhor.",
+      "hint": "Veja a razão dada pelo Senhor.",
+      "learningObjective": "Ligar 1:9 à razão da escassez.",
+      "evidence": ["Ageu 1:9"],
+      "passageA": { "ref": "Ageu 1:9" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor liga a falta material ao abandono da sua Casa."
+      },
+      "options": [
+        { "id": "a", "text": "Escassez por Casa abandonada" },
+        { "id": "b", "text": "Chuva sem nenhuma razão" },
+        { "id": "c", "text": "Vitória militar imediata" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto dá razão clara: a Casa em ruínas.",
+        "c": "O versículo não fala de vitória militar."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ageu 2:19, toque o verbo da promessa do Senhor.",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "Eu vos abençoarei",
+      "feedbackCorrect": "O verbo da promessa é abençoarei.",
+      "hint": "Procure o verbo no fim do versículo.",
+      "learningObjective": "Identificar o verbo da promessa em 2:19.",
+      "evidence": ["Ageu 2:19"],
+      "options": [
+        { "id": "a", "text": "celeiro" },
+        { "id": "b", "text": "abençoarei" },
+        { "id": "c", "text": "sementes" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Celeiro\" é o lugar sem sementes, não o verbo da promessa.",
+        "c": "\"Sementes\" descreve a falta, não a promessa."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ageu 2:18 na ordem do texto.",
+      "verseRef": "Ageu 2:18",
+      "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR",
+      "feedbackCorrect": "O Senhor pede consideração desde o dia da fundação do templo.",
+      "hint": "O versículo repete o chamado a considerar.",
+      "learningObjective": "Reconhecer a sequência de 2:18.",
+      "evidence": ["Ageu 2:18"],
+      "options": [
+        { "id": "a", "text": "Considerem, eu lhes peço, desde este dia em diante" },
+        { "id": "b", "text": "desde o vigésimo quarto dia do mês nono" },
+        { "id": "c", "text": "desde o dia em que se fundou o templo do SENHOR" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece por \"Considerem\"; o templo fecha o marco." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ageu 1:9, a escassez acontece porque o povo já tinha acabado de reedificar a Casa do Senhor.",
+      "verseRef": "Ageu 1:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "A razão é o oposto: a Casa permanece em ruínas.",
+      "feedbackWrong": { "true": "Releia 1:9: a Casa permanece em ruínas, e por isso vem a escassez." },
+      "hint": "Veja a resposta à pergunta \"Por que isso?\".",
+      "learningObjective": "Compreender a causa real da escassez em 1:9.",
+      "evidence": ["Ageu 1:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:9, toque a expressão que introduz a razão da escassez.",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "por causa da minha casa",
+      "feedbackCorrect": "\"Por causa\" introduz a razão: a casa do Senhor.",
+      "hint": "Vem após a pergunta \"Por que isso?\".",
+      "learningObjective": "Reconhecer o marcador de causa em 1:9.",
+      "evidence": ["Ageu 1:9"],
+      "options": [
+        { "id": "a", "text": "por causa" },
+        { "id": "b", "text": "Olhastes" },
+        { "id": "c", "text": "alcançastes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Olhastes\" descreve a expectativa, não a razão.",
+        "c": "\"Alcançastes\" descreve o resultado pouco, não a razão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ageu 2:14–17 relaciona impureza e resposta do povo?",
+      "verseRef": "Ageu 2:14",
+      "evidenceSpan": "tudo o que ali oferecem é imundo",
+      "feedbackCorrect": "Ofertas imundas e pragas sem volta mostram distância do Senhor.",
+      "hint": "Ligue 2:14 ao \"não houve quem se voltasse\" de 2:17.",
+      "learningObjective": "Relacionar impureza e falta de volta ao Senhor.",
+      "evidence": ["Ageu 2:14"],
+      "options": [
+        { "id": "a", "text": "Ofertas imundas e coração que não volta" },
+        { "id": "b", "text": "O povo já estava puro e fiel" },
+        { "id": "c", "text": "As pragas provaram obediência plena" },
+        { "id": "d", "text": "Só os sacerdotes precisavam mudar" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto declara o povo e as ofertas imundos.",
+        "c": "Em 2:17 ninguém se voltou após as pragas.",
+        "d": "O Senhor fala deste povo e desta nação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o fio de Ageu 1 a Ageu 2 nesta etapa?",
+      "verseRef": "Ageu 1:8–9",
+      "evidenceSpan": "construam a casa",
+      "feedbackCorrect": "Confronto e mandato; depois impureza; enfim bênção no alicerce.",
+      "hint": "Comece pelo chamado a construir.",
+      "learningObjective": "Compreender o arco da etapa Reconstruir a casa.",
+      "evidence": ["Ageu 1:8–9"],
+      "options": [
+        { "id": "a", "text": "O Senhor confronta e manda construir a Casa" },
+        { "id": "b", "text": "Declara o povo e as ofertas imundos" },
+        { "id": "c", "text": "Promete abençoar desde o dia do alicerce" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Construir primeiro; a bênção fecha a etapa." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ageu 2:17, que palavra marca o contraste após as pragas?",
+      "verseRef": "Ageu 2:17",
+      "evidenceSpan": "contudo, entre vocês não houve quem se voltasse para mim",
+      "feedbackCorrect": "\"Contudo\" marca o contraste: praga sem arrependimento.",
+      "hint": "É a palavra antes de \"não houve\".",
+      "learningObjective": "Lembrar o marcador de contraste em 2:17.",
+      "evidence": ["Ageu 2:17"],
+      "options": [
+        { "id": "a", "text": "logo" },
+        { "id": "b", "text": "contudo" },
+        { "id": "c", "text": "nunca" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Logo\" sugeriria sequência imediata; o texto marca contraste.",
+        "c": "\"Nunca\" não é o marcador usado em 2:17."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ageu 1:8 a Esdras 5:1–2?",
+      "verseRef": "Ageu 1:8",
+      "evidenceSpan": "construam a casa",
+      "feedbackCorrect": "Em Esdras, Ageu anima a retomada; em 1:8 o Senhor manda construir.",
+      "hint": "Veja o papel de Ageu na reconstrução.",
+      "learningObjective": "Relacionar o mandato de Ageu à obra em Esdras.",
+      "evidence": ["Ageu 1:8", "Esdras 5:1–2"],
+      "passageA": { "ref": "Ageu 1:8" },
+      "passageB": { "ref": "Esdras 5:1–2" },
+      "options": [
+        { "id": "a", "text": "Profeta anima a reconstrução" },
+        { "id": "b", "text": "Fim do culto em Jerusalém" },
+        { "id": "c", "text": "Proibição de subir ao monte" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos apontam retomada da obra, não fim do culto.",
+        "c": "Ageu manda subir ao monte, não proíbe."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ageu 2:14, toque a palavra que resume as ofertas do povo.",
+      "verseRef": "Ageu 2:14",
+      "evidenceSpan": "tudo o que ali oferecem é imundo",
+      "feedbackCorrect": "As ofertas são imundas perante o Senhor.",
+      "hint": "Procure o adjetivo no fim da frase.",
+      "learningObjective": "Reconhecer o diagnóstico das ofertas.",
+      "evidence": ["Ageu 2:14"],
+      "options": [
+        { "id": "a", "text": "nação" },
+        { "id": "b", "text": "imundo" },
+        { "id": "c", "text": "mãos" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Nação\" é o sujeito, não o diagnóstico das ofertas.",
+        "c": "\"Mãos\" fala da obra, não do adjetivo final."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como Ageu 2:17–19 liga praga, marco e bênção?",
+      "verseRef": "Ageu 2:17–19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Praga sem volta; marco do alicerce; promessa de bênção.",
+      "hint": "Comece pela falta de volta.",
+      "learningObjective": "Compreender a virada de 2:17–19.",
+      "evidence": ["Ageu 2:17–19"],
+      "options": [
+        { "id": "a", "text": "Pragas sem ninguém se voltar" },
+        { "id": "b", "text": "Considerar o dia da fundação do templo" },
+        { "id": "c", "text": "Promessa de bênção desde este dia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Praga primeiro; a bênção fecha." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ageu 1–2, a bênção do Senhor está ligada a pôr a Casa dele em primeiro lugar e fundar o templo.",
+      "verseRef": "Ageu 2:18–19",
+      "correctOptionId": "true",
+      "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR",
+      "feedbackCorrect": "A etapa une prioridade da Casa e bênção desde o alicerce.",
+      "feedbackWrong": { "false": "Releia 1:9 e 2:18–19: Casa e alicerce explicam a virada." },
+      "hint": "Ligue a razão de 1:9 ao marco de 2:18.",
+      "learningObjective": "Interpretar o fio da etapa: prioridade e bênção.",
+      "evidence": ["Ageu 2:18–19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:9, toque o trecho que mostra a corrida centrada em si.",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "corre para a sua própria casa",
+      "feedbackCorrect": "Correr para a própria casa é a imagem da prioridade invertida.",
+      "hint": "Procure o verbo de correr.",
+      "learningObjective": "Sustentar com o texto a prioridade centrada em si.",
+      "evidence": ["Ageu 1:9"],
+      "options": [
+        { "id": "a", "text": "própria casa" },
+        { "id": "b", "text": "minha casa" },
+        { "id": "c", "text": "soprei" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Minha casa\" é a do Senhor, não o destino da corrida.",
+        "c": "\"Soprei\" é a ação do Senhor sobre o pouco."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa de Ageu sustenta sobre prioridade e bênção?",
+      "verseRef": "Ageu 1:9",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "Abandonar a Casa traz falta; fundar o templo abre a promessa de bênção.",
+      "hint": "Ligue 1:9 a 2:19.",
+      "learningObjective": "Escolher a interpretação do arco da etapa.",
+      "evidence": ["Ageu 1:9"],
+      "options": [
+        { "id": "a", "text": "Priorizar a Casa do Senhor abre caminho à bênção" },
+        { "id": "b", "text": "A Casa pode esperar sem consequência" },
+        { "id": "c", "text": "A bênção vem sem relação com o alicerce" },
+        { "id": "d", "text": "Só o conforto próprio importa ao Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "1:9 liga a escassez ao abandono da Casa.",
+        "c": "2:18–19 liga a bênção ao dia da fundação.",
+        "d": "O Senhor confronta a corrida para a própria casa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência resume o ensino da etapa sobre a Casa?",
+      "verseRef": "Ageu 1:8–9",
+      "evidenceSpan": "construam a casa",
+      "feedbackCorrect": "Construir a Casa; buscar primeiro o Reino; bênção na obediência.",
+      "hint": "Parta de Ageu e avance na Escritura.",
+      "learningObjective": "Ver o chamado de Ageu no fio bíblico.",
+      "evidence": ["Ageu 1:8", "Mateus 6:33", "Malaquias 3:10"],
+      "options": [
+        { "id": "a", "text": "Ageu manda construir a Casa do Senhor" },
+        { "id": "b", "text": "Jesus manda buscar primeiro o Reino" },
+        { "id": "c", "text": "Malaquias liga bênção à obediência" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Ageu 1:8, Mateus 6:33 e Malaquias 3:10." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ageu 2:18, que verbo marca o dia do alicerce do templo?",
+      "verseRef": "Ageu 2:18",
+      "evidenceSpan": "desde o dia em que se fundou o templo do SENHOR",
+      "feedbackCorrect": "O templo se fundou: esse é o marco da consideração e da bênção.",
+      "hint": "É o verbo ligado ao templo no versículo.",
+      "learningObjective": "Lembrar o termo do alicerce.",
+      "evidence": ["Ageu 2:18"],
+      "options": [
+        { "id": "a", "text": "fechou" },
+        { "id": "b", "text": "fundou" },
+        { "id": "c", "text": "vendeu" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Fechou\" não é o verbo do alicerce em 2:18.",
+        "c": "\"Vendeu\" não aparece no marco do templo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ageu 2:19 a Mateus 6:33?",
+      "verseRef": "Ageu 2:19",
+      "evidenceSpan": "desde este dia, Eu vos abençoarei",
+      "feedbackCorrect": "Nos dois textos, pôr primeiro o que é de Deus vem com provisão e bênção.",
+      "hint": "Compare prioridade e cuidado de Deus.",
+      "learningObjective": "Ligar a bênção de Ageu ao buscar primeiro o Reino.",
+      "evidence": ["Ageu 2:19", "Mateus 6:33"],
+      "passageA": { "ref": "Ageu 2:19" },
+      "passageB": { "ref": "Mateus 6:33" },
+      "options": [
+        { "id": "a", "text": "Primeiro o de Deus" },
+        { "id": "b", "text": "Adiar toda a Casa" },
+        { "id": "c", "text": "Confiar só no salário" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos chamam a priorizar, não a adiar a Casa.",
+        "c": "Ageu mostra o saquitel furado; Mateus aponta outra prioridade."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ageu 1:2, toque o que o povo diz sobre edificar a Casa.",
+      "verseRef": "Ageu 1:2",
+      "evidenceSpan": "Não veio ainda o tempo",
+      "feedbackCorrect": "O povo diz que o tempo ainda não veio.",
+      "hint": "Procure a frase sobre o tempo.",
+      "learningObjective": "Sustentar com o texto a desculpa do povo.",
+      "evidence": ["Ageu 1:2"],
+      "options": [
+        { "id": "a", "text": "ainda o tempo" },
+        { "id": "b", "text": "Exércitos" },
+        { "id": "c", "text": "Assim fala" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Exércitos\" faz parte do título do Senhor, não da desculpa.",
+        "c": "\"Assim fala\" introduz a fala, não a desculpa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica une confronto, impureza e bênção nesta travessia?",
+      "verseRef": "Ageu 1:4–5",
+      "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas",
+      "feedbackCorrect": "Confronto da prioridade; diagnóstico de impureza; bênção no alicerce.",
+      "hint": "Comece pelas casas em contraste.",
+      "learningObjective": "Encadear o sentido da travessia.",
+      "evidence": ["Ageu 1:4", "Ageu 2:14", "Ageu 2:19"],
+      "options": [
+        { "id": "a", "text": "O Senhor confronta o conforto e a Casa em ruínas" },
+        { "id": "b", "text": "Declara imundas a obra e as ofertas do povo" },
+        { "id": "c", "text": "Abre a promessa no dia em que o templo se funda" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Confronto primeiro; a promessa no alicerce fecha a travessia." }
+    }
+  ]
+}

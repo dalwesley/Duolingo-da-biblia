@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 78:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 78:1–6"
+      },
+      {
+        "ref": "Salmos 78:7–8"
+      }
+    ],
+    "context": "Escutai a minha lei; contaremos aos filhos os louvores do Senhor — e eles se rebelaram.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Contai aos filhos",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Escutem, povo meu, a minha lei; atentem para as palavras da minha boca.",
+        "evidenceRef": "Salmos 78:1",
+        "evidenceSpan": "Escutem"
+      },
+      {
+        "text": "Abrirei meus lábios em parábolas.",
+        "evidenceRef": "Salmos 78:2",
+        "evidenceSpan": "Abrirei meus lábios em parábolas"
+      },
+      {
+        "text": "O que ouvimos e aprendemos.",
+        "evidenceRef": "Salmos 78:3",
+        "evidenceSpan": "O que ouvimos e aprendemos"
+      },
+      {
+        "text": "Não os ocultaremos de nossos filhos.",
+        "evidenceRef": "Salmos 78:4",
+        "evidenceSpan": "Não os ocultaremos de nossos filhos"
+      },
+      {
+        "text": "Ele estabeleceu um testemunho em Jacó e instituiu.",
+        "evidenceRef": "Salmos 78:5",
+        "evidenceSpan": "Ele estabeleceu um testemunho em Jacó e instituiu"
+      },
+      {
+        "text": "Para que a geração futura os conheça.",
+        "evidenceRef": "Salmos 78:6",
+        "evidenceSpan": "Para que a geração futura os conheça"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Escutem",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Escutem povo meu a minha lei",
+        "evidenceRef": "Salmos 78:1"
+      },
+      {
+        "label": "Abrirei meus lábios em parábolas publicarei",
+        "evidenceRef": "Salmos 78:2"
+      },
+      {
+        "label": "O que ouvimos e aprendemos o",
+        "evidenceRef": "Salmos 78:3"
+      },
+      {
+        "label": "Não os ocultaremos de nossos filhos",
+        "evidenceRef": "Salmos 78:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"antes\".",
+        "marker": "antes",
+        "evidenceRef": "Salmos 78:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"também\".",
+        "marker": "também",
+        "evidenceRef": "Salmos 78:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 78:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      },
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças"
+      },
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Lançar o cuidado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "A história de Israel ensina: Deus é fiel, e o povo esquece. Não sejais como os pais."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "A história de Israel ensina: Deus é fiel, e o povo esquece. Não sejais como os pais.",
+    "anchorQuestion": "O que Salmos 78:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 78:1, escutem.",
+      "verseRef": "Salmos 78:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 78:1 afirma.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 78:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 78:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escutem"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "O versículo destaca «Escutem».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 78:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 78:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O que ouvimos e aprendemos"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O que ouvimos e aprendemos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 78:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 78:1 na ordem do texto.",
+      "verseRef": "Salmos 78:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escutem"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "minha lei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 78:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 78:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "ocultaremos"
+        },
+        {
+          "id": "b",
+          "text": "Escutem"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ocultaremos",
+      "feedbackCorrect": "A palavra do versículo é «ocultaremos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 78:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 78:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 78:1",
+      "passageA": {
+        "ref": "Salmos 78:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Escutai a minha lei; contaremos aos filhos os louvores do Senhor — e eles se rebelaram."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 78:4, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 78:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "antes",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 78:4 afirma.",
+      "evidence": [
+        "Salmos 78:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 78:4, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 78:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "antes"
+        },
+        {
+          "id": "b",
+          "text": "ocultaremos"
+        },
+        {
+          "id": "c",
+          "text": "nossos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes",
+      "feedbackCorrect": "O versículo destaca «antes».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 78:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 78:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 78:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não os ocultaremos de nossos filhos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 78:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 78:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escutem povo meu a minha lei"
+        },
+        {
+          "id": "b",
+          "text": "Abrirei meus lábios em parábolas publicarei"
+        },
+        {
+          "id": "c",
+          "text": "O que ouvimos e aprendemos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 78:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 78:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouvimos"
+        },
+        {
+          "id": "b",
+          "text": "Escutem"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ouvimos",
+      "feedbackCorrect": "A palavra do versículo é «ouvimos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 78:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 78:1 a Salmos 119:105.",
+      "verseRef": "Salmos 78:1",
+      "passageA": {
+        "ref": "Salmos 78:1"
+      },
+      "passageB": {
+        "ref": "Salmos 119:105"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâmpada para os pés"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 78:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 78:8 afirma.",
+      "evidence": [
+        "Salmos 78:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 78:8, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 78:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "fossem"
+        },
+        {
+          "id": "b",
+          "text": "seus"
+        },
+        {
+          "id": "c",
+          "text": "pais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fossem",
+      "feedbackCorrect": "O versículo destaca «fossem».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 78:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 78:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 78:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele estabeleceu um testemunho em Jacó e instituiu",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 78:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 78:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 78:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 78:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "estabeleceu"
+        },
+        {
+          "id": "b",
+          "text": "Escutem"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estabeleceu",
+      "feedbackCorrect": "A palavra do versículo é «estabeleceu».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 78:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 78:1 a Isaías 40:31.",
+      "verseRef": "Salmos 78:1",
+      "passageA": {
+        "ref": "Salmos 78:1"
+      },
+      "passageB": {
+        "ref": "Isaías 40:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Renovam as forças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escutem",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 78:1"
+      ]
+    }
+  ]
+}

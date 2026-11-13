@@ -1,0 +1,94 @@
+{
+  "slug": "ester-cap",
+  "prefix": "etc",
+  "book": "Ester",
+  "chapters": 10,
+  "title": "Ester",
+  "description": "Ester capítulo a capítulo: no palácio, risco e livramento do povo.",
+  "icon": "💎",
+  "color": "#C9947E",
+  "order": 18,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["ester"],
+  "modules": [
+    {
+      "title": "Ameaça no palácio · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "Ester 1:10–21",
+          "title": "Vasti recusa",
+          "intro": "No banquete, o rei manda chamar a rainha Vasti; ela não vem, e o conselho decide o destino dela.",
+          "insight": "A recusa de Vasti muda o trono: o rei busca outra rainha no lugar dela.",
+          "objective": "Ver a porta se abrir"
+        },
+        {
+          "ref": "Ester 3:1–7",
+          "chapters": "2–3",
+          "title": "Hamã exaltado",
+          "intro": "Depois de Ester no trono, o rei eleva Hamã; Mardoqueu não se curva, e a fúria cresce.",
+          "insight": "Hamã quer destruir todos os judeus por causa de um homem que não se prostra.",
+          "objective": "Perceber a ameaça crescer"
+        },
+        {
+          "ref": "Ester 4:5–15",
+          "title": "Para esta ocasião",
+          "intro": "Mardoqueu manda o decreto a Ester; ela fala do risco, e ele responde com urgência.",
+          "insight": "Se Ester se calar, o livramento virá de outro lugar; quem sabe foi para esta ocasião.",
+          "objective": "Ouvir o chamado a agir"
+        },
+        {
+          "ref": "Ester 5:1–8",
+          "title": "O cetro de ouro",
+          "intro": "No terceiro dia, Ester entra sem ser chamada; o rei estende o cetro e ela convida a um banquete.",
+          "insight": "Ester alcança favor: o rei estende o cetro e aceita o banquete com Hamã.",
+          "objective": "Entrar com coragem"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Ameaça no palácio",
+        "intro": "Revise a queda de Vasti, a exaltação de Hamã, o chamado a Ester e o cetro estendido.",
+        "insight": "No risco, Ester é chamada a usar o lugar que recebeu"
+      }
+    },
+    {
+      "title": "Virada e livramento · cap. 6–10",
+      "scenes": [
+        {
+          "ref": "Ester 6:1–11",
+          "title": "Honra a Mardoqueu",
+          "intro": "O rei não dorme, lê as crônicas e pergunta o que fazer ao homem a quem deseja honrar.",
+          "insight": "Hamã planeja a forca; o rei manda que ele mesmo honre Mardoqueu em público.",
+          "objective": "Ver a virada começar"
+        },
+        {
+          "ref": "Ester 7:1–10",
+          "title": "Hamã exposto",
+          "intro": "No segundo banquete, Ester pede a vida do seu povo e aponta o inimigo diante do rei.",
+          "insight": "Hamã cai na forca que preparou para Mardoqueu; a trama volta contra ele.",
+          "objective": "Ver o inimigo cair"
+        },
+        {
+          "ref": "Ester 8:7–17",
+          "title": "Novo decreto",
+          "intro": "O rei autoriza escrever em nome dele; Mardoqueu envia o edito que permite aos judeus se defender.",
+          "insight": "Com o novo decreto, Susã se alegra: luz, regozijo e honra para os judeus.",
+          "objective": "Celebrar o livramento escrito"
+        },
+        {
+          "ref": "Ester 9:12–21",
+          "chapters": "9–10",
+          "title": "Dias de festa",
+          "intro": "Depois da defesa, o povo descansa; Mardoqueu manda lembrar esses dias todos os anos.",
+          "insight": "Os dias de alívio viram festa anual: descanso, banquetes e porções uns aos outros.",
+          "objective": "Lembrar o livramento"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Virada e livramento",
+        "intro": "Revise a honra a Mardoqueu, a queda de Hamã, o novo decreto e os dias de festa.",
+        "insight": "O plano do mal se inverte e o povo guarda a memória do livramento"
+      }
+    }
+  ]
+}

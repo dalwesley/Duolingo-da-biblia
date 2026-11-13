@@ -1,0 +1,913 @@
+{
+  "study": {
+    "passageRef": "Números 7:84–85",
+    "passages": [
+      {
+        "ref": "Números 7:84–85"
+      },
+      {
+        "ref": "Números 8:5–10"
+      },
+      {
+        "ref": "Números 9:1–5"
+      },
+      {
+        "ref": "Números 10:29–33"
+      }
+    ],
+    "context": "Cena de Travessia: Dedicação e partida: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Dedicação e",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Esta é a dádiva feita pelos príncipes de.",
+        "evidenceRef": "Números 7:84",
+        "evidenceSpan": "Esta é a dádiva feita pelos príncipes de"
+      },
+      {
+        "text": "Todos os bois para o holocausto foram doze.",
+        "evidenceRef": "Números 7:87",
+        "evidenceSpan": "Todos os bois para o holocausto foram doze"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 8:5",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Você.",
+        "evidenceRef": "Números 8:10",
+        "evidenceSpan": "Você"
+      },
+      {
+        "text": "E o Senhor falou a Moisés no deserto.",
+        "evidenceRef": "Números 9:1",
+        "evidenceSpan": "E o Senhor falou a Moisés no deserto"
+      },
+      {
+        "text": "Celebraram a Páscoa no dia quatorze do primeiro.",
+        "evidenceRef": "Números 9:5",
+        "evidenceSpan": "Celebraram a Páscoa no dia quatorze do primeiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "levitas",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Esta é a dádiva feita pelos",
+        "evidenceRef": "Números 7:84"
+      },
+      {
+        "label": "Todos os bois para o holocausto",
+        "evidenceRef": "Números 7:87"
+      },
+      {
+        "label": "E o senhor falou a moisés",
+        "evidenceRef": "Números 8:5"
+      },
+      {
+        "label": "Você apresentará os levitas diante",
+        "evidenceRef": "Números 8:10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Números 10:29"
+      },
+      {
+        "kind": "sequência",
+        "text": "O relato avança de um gesto ao seguinte.",
+        "marker": null,
+        "evidenceRef": "Números 7:87"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 3:14",
+        "bridge": "Serpente levantada"
+      },
+      {
+        "ref": "Apocalipse 2:14",
+        "bridge": "Doutrina de Balaão"
+      },
+      {
+        "ref": "Josué 20:2–3",
+        "bridge": "Cidades de refúgio"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Consagrados, o povo segue a presença de Deus",
+    "anchorQuestion": "O que Números 7:84 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 7:84, o texto inclui Esta é a dádiva feita pelos príncipes de.",
+      "verseRef": "Números 7:84",
+      "correctOptionId": "true",
+      "evidenceSpan": "Esta é a dádiva feita pelos príncipes de",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 7:84 afirma.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 7:84, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Números 7:84",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esta"
+        },
+        {
+          "id": "b",
+          "text": "dádiva"
+        },
+        {
+          "id": "c",
+          "text": "feita"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "O versículo destaca Esta.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 8:5, o que o texto apresenta com clareza.",
+      "verseRef": "Números 8:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 8:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 7:87 na ordem do texto.",
+      "verseRef": "Números 7:87",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todos os bois"
+        },
+        {
+          "id": "b",
+          "text": "o holocausto foram doze"
+        },
+        {
+          "id": "c",
+          "text": "novilhos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todos os bois",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Números 7:87"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 8:10, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Você"
+        },
+        {
+          "id": "b",
+          "text": "Esta"
+        },
+        {
+          "id": "c",
+          "text": "dádiva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Você",
+      "feedbackCorrect": "A palavra do versículo é Você.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 8:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 7:84 comunica que se liga a este contexto.",
+      "verseRef": "Números 7:84",
+      "passageA": {
+        "ref": "Números 7:84"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Dedicação e partida: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 10:29, toque outra palavra central do trecho.",
+      "verseRef": "Números 10:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "pois"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O trecho destaca Disse.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Números 10:29"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 7:84 na ordem do texto.",
+      "verseRef": "Números 7:84",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esta é a dádiva"
+        },
+        {
+          "id": "b",
+          "text": "feita pelos príncipes"
+        },
+        {
+          "id": "c",
+          "text": "Israel para a consagração do altar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Esta é a dádiva",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 10:29, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Números 10:29",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 10:29 afirma.",
+      "evidence": [
+        "Números 10:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 10:29, toque a palavra que marca a relação no texto.",
+      "verseRef": "Números 10:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 10:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Números 8:10, o que o texto apresenta com clareza.",
+      "verseRef": "Números 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: você apresentará os levitas diante do SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Você apresentará os levitas diante do SENHOR; e os filhos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 8:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Números 7:84",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esta é a dádiva feita pelos"
+        },
+        {
+          "id": "b",
+          "text": "Todos os bois para o holocausto"
+        },
+        {
+          "id": "c",
+          "text": "E o senhor falou a moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 8:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 8:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Esta"
+        },
+        {
+          "id": "c",
+          "text": "dádiva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é Senhor.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 8:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 7:84 a João 3:14.",
+      "verseRef": "Números 7:84",
+      "passageA": {
+        "ref": "Números 7:84"
+      },
+      "passageB": {
+        "ref": "João 3:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Serpente levantada"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 10:33, toque outra palavra central do trecho.",
+      "verseRef": "Números 10:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "Partiram"
+        },
+        {
+          "id": "b",
+          "text": "portanto"
+        },
+        {
+          "id": "c",
+          "text": "do"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Partiram",
+      "feedbackCorrect": "O trecho destaca Partiram.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Números 10:33"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Números 7:85",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cada",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Números 7:85"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Números 7:85",
+      "correctOptionId": "false",
+      "evidenceSpan": "Cada",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 7:85 afirma.",
+      "evidence": [
+        "Números 7:85"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 9:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Números 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Celebraram"
+        },
+        {
+          "id": "b",
+          "text": "Páscoa"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Celebraram",
+      "feedbackCorrect": "O versículo destaca Celebraram.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 9:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Números 9:1, o que o texto apresenta com clareza.",
+      "verseRef": "Números 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: o Senhor falou a Moisés no deserto do Sinai, no segundo ano"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E o Senhor falou a Moisés no deserto",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 9:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Números 7:84",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 9:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "falou"
+        },
+        {
+          "id": "b",
+          "text": "Esta"
+        },
+        {
+          "id": "c",
+          "text": "dádiva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "falou",
+      "feedbackCorrect": "A palavra do versículo é falou.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 9:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 7:84 a Apocalipse 2:14.",
+      "verseRef": "Números 7:84",
+      "passageA": {
+        "ref": "Números 7:84"
+      },
+      "passageB": {
+        "ref": "Apocalipse 2:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Doutrina de Balaão"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esta",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 7:84, toque outra palavra central do trecho.",
+      "verseRef": "Números 7:84",
+      "options": [
+        {
+          "id": "a",
+          "text": "dádiva"
+        },
+        {
+          "id": "b",
+          "text": "Esta"
+        },
+        {
+          "id": "c",
+          "text": "é"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dádiva",
+      "feedbackCorrect": "O trecho destaca dádiva.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Números 7:84"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento ligado a Números 7:86.",
+      "verseRef": "Números 7:86",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Doze",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Números 7:86"
+      ]
+    }
+  ]
+}

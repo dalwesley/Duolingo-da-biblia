@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 7:1–6",
+    "passages": [
+      { "ref": "Amós 7:1–6" },
+      { "ref": "Amós 7:7–9" }
+    ],
+    "context": "Amós vê gafanhotos, fogo e um prumo. Intercede nas duas primeiras visões; na terceira, o Senhor põe o prumo e não passa mais.",
+    "keyword": "prumo",
+    "keywordGloss": "A medida do Senhor sobre Israel: o juízo que não se detém mais.",
+    "focusQuestion": "Você intercede enquanto ainda há tempo, ou espera o prumo cair?",
+    "reflectionPrompts": [
+      "Gafanhotos e fogo",
+      "Jacó é pequeno",
+      "O prumo no meio"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor formava gafanhotos no crescimento da erva serôdia.",
+        "evidenceRef": "Amós 7:1",
+        "evidenceSpan": "Ele formava gafanhotos no surgimento do crescimento da erva serôdia"
+      },
+      {
+        "text": "Amós pediu perdão porque Jacó é tão pequeno.",
+        "evidenceRef": "Amós 7:2",
+        "evidenceSpan": "como poderá Jacó subsistir? Pois ele é tão pequeno"
+      },
+      {
+        "text": "O Senhor se arrependeu: isso não acontecerá.",
+        "evidenceRef": "Amós 7:3",
+        "evidenceSpan": "o Senhor se arrependeu disso. Isso não acontecerá"
+      },
+      {
+        "text": "Na visão do fogo, o Senhor também se arrependeu.",
+        "evidenceRef": "Amós 7:6",
+        "evidenceSpan": "o Senhor se arrependeu disso. Também não acontecerá"
+      },
+      {
+        "text": "O Senhor estava sobre um muro a prumo, com um prumo na mão.",
+        "evidenceRef": "Amós 7:7",
+        "evidenceSpan": "o Senhor estava sobre um muro erguido a prumo, e tinha um prumo na mão"
+      },
+      {
+        "text": "Colocará o prumo no meio de Israel e jamais passará por ele.",
+        "evidenceRef": "Amós 7:8",
+        "evidenceSpan": "colocarei o prumo no meio do meu povo de Israel, e jamais passarei por ele"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "gafanhotos",
+        "gloss": "A primeira visão de juízo que a intercessão detém."
+      },
+      {
+        "term": "prumo",
+        "gloss": "A medida do Senhor que não deixa passar o juízo."
+      },
+      {
+        "term": "arrependeu",
+        "gloss": "O Senhor detém o juízo em resposta à intercessão de Amós."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Visão dos gafanhotos e intercessão",
+        "evidenceRef": "Amós 7:1–3"
+      },
+      {
+        "label": "Visão do fogo e novo arrependimento",
+        "evidenceRef": "Amós 7:4–6"
+      },
+      {
+        "label": "Prumo no meio de Israel sem mais passagem",
+        "evidenceRef": "Amós 7:7–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Amós intercede; então o Senhor se arrepende.",
+        "marker": "Então",
+        "evidenceRef": "Amós 7:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Jacó não pode subsistir porque é tão pequeno.",
+        "marker": "Pois",
+        "evidenceRef": "Amós 7:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Nas duas primeiras visões há arrependimento; no prumo, jamais passará.",
+        "marker": "jamais",
+        "evidenceRef": "Amós 7:8"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Êxodo 32:11–14", "bridge": "Intercessão que detém o juízo" },
+      { "ref": "Jeremias 18:7–8", "bridge": "Deus se arrepende do mal anunciado" },
+      { "ref": "2 Pedro 3:9", "bridge": "Paciência que espera o arrependimento" }
+    ],
+    "misreadings": [
+      {
+        "text": "A intercessão nunca muda o anúncio de juízo.",
+        "why": "7:3 e 7:6 mostram o Senhor se arrependendo após o pedido de Amós."
+      },
+      {
+        "text": "O prumo é só um enfeite sem juízo.",
+        "why": "7:8–9: o prumo no meio de Israel traz devastação e espada."
+      },
+      {
+        "text": "Jacó é grande demais para precisar de perdão.",
+        "why": "Amós insiste: Jacó é tão pequeno e não pode subsistir."
+      }
+    ],
+    "centralInsight": "Há tempo em que a intercessão segura o juízo, e tempo em que o prumo cai.",
+    "anchorQuestion": "Segundo Amós 7:8, o que o Senhor colocará no meio de Israel?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 7:1, o Senhor formava gafanhotos no crescimento da erva serôdia.",
+      "verseRef": "Amós 7:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ele formava gafanhotos no surgimento do crescimento da erva serôdia",
+      "feedbackCorrect": "A primeira visão mostra gafanhotos sendo formados pelo Senhor.",
+      "feedbackWrong": { "false": "Releia o que o Senhor formava em Amós 7:1." },
+      "hint": "Veja o que Ele formava.",
+      "learningObjective": "Observar a primeira visão.",
+      "evidence": ["Amós 7:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 7:7, toque o que o Senhor tinha na mão.",
+      "verseRef": "Amós 7:7",
+      "evidenceSpan": "tinha um prumo na mão",
+      "feedbackCorrect": "Estava sobre um muro a prumo, com um prumo na mão.",
+      "hint": "Procure o objeto na mão.",
+      "learningObjective": "Identificar o prumo na visão.",
+      "evidence": ["Amós 7:7"],
+      "options": [
+        { "id": "a", "text": "prumo" },
+        { "id": "b", "text": "muro" },
+        { "id": "c", "text": "mão" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O muro é onde ele está; na mão há um prumo.",
+        "c": "\"Mão\" é o lugar; o objeto que ele tem é o prumo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 7:3, o que o Senhor fez após a intercessão?",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "o Senhor se arrependeu disso",
+      "feedbackCorrect": "Ele se arrependeu: isso não acontecerá.",
+      "hint": "Leia a reação do Senhor.",
+      "learningObjective": "Observar o arrependimento do Senhor.",
+      "evidence": ["Amós 7:3"],
+      "options": [
+        { "id": "a", "text": "Se arrependeu e não fará aquilo" },
+        { "id": "b", "text": "Ignorou o pedido de Amós" },
+        { "id": "c", "text": "Mandou mais gafanhotos" },
+        { "id": "d", "text": "Destruiu Jacó na hora" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que ele se arrependeu.",
+        "c": "Ele diz: isso não acontecerá.",
+        "d": "Jacó é poupado nesta visão."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 7:2 na ordem do texto.",
+      "verseRef": "Amós 7:2",
+      "evidenceSpan": "como poderá Jacó subsistir",
+      "feedbackCorrect": "Após o consumo da vegetação, Amós pede perdão por Jacó.",
+      "hint": "Comece pelo consumo da vegetação.",
+      "learningObjective": "Reconhecer a sequência da intercessão.",
+      "evidence": ["Amós 7:2"],
+      "options": [
+        { "id": "a", "text": "quando eles haviam consumido toda a vegetação da terra" },
+        { "id": "b", "text": "eu disse: Senhor Deus, peço-Te perdão" },
+        { "id": "c", "text": "como poderá Jacó subsistir? Pois ele é tão pequeno" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Consumo primeiro; Jacó pequeno fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 7:1, o que o Senhor formava?",
+      "verseRef": "Amós 7:1",
+      "evidenceSpan": "Ele formava gafanhotos",
+      "feedbackCorrect": "Formava gafanhotos sobre a erva serôdia.",
+      "hint": "É o objeto de \"formava\".",
+      "learningObjective": "Lembrar a primeira visão.",
+      "evidence": ["Amós 7:1"],
+      "options": [
+        { "id": "a", "text": "gafanhotos" },
+        { "id": "b", "text": "castelos" },
+        { "id": "c", "text": "vinhas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Castelos não aparecem nesta visão.",
+        "c": "Vinhas não são o que Ele formava."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 7:8 comunica que se liga a este contexto?",
+      "verseRef": "Amós 7:8",
+      "evidenceSpan": "colocarei o prumo no meio do meu povo de Israel",
+      "feedbackCorrect": "O prumo marca o tempo em que o juízo não se detém mais.",
+      "hint": "Ligue o prumo ao \"jamais passarei\".",
+      "learningObjective": "Ligar prumo e juízo definitivo.",
+      "evidence": ["Amós 7:8"],
+      "passageA": { "ref": "Amós 7:8" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Há tempo de intercessão e tempo em que o prumo cai sem passagem."
+      },
+      "options": [
+        { "id": "a", "text": "Prumo sem mais passagem" },
+        { "id": "b", "text": "Juízo sempre adiado" },
+        { "id": "c", "text": "Prumo só decorativo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "No prumo, ele jamais passará.",
+        "c": "O prumo traz devastação em 7:9."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 7:2–3, a intercessão de Amós não tem nenhum efeito no anúncio do Senhor.",
+      "verseRef": "Amós 7:2–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então, o Senhor se arrependeu disso",
+      "feedbackCorrect": "\"Então\" liga o pedido ao arrependimento do Senhor.",
+      "feedbackWrong": { "true": "Releia Amós 7:3: o Senhor se arrependeu." },
+      "hint": "Veja o que acontece depois do pedido.",
+      "learningObjective": "Compreender o resultado da intercessão.",
+      "evidence": ["Amós 7:2–3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 7:3, toque a palavra que marca a sequência após a intercessão.",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "Então, o Senhor se arrependeu disso",
+      "feedbackCorrect": "\"Então\" introduz o arrependimento do Senhor.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de sequência.",
+      "evidence": ["Amós 7:3"],
+      "options": [
+        { "id": "a", "text": "Então" },
+        { "id": "b", "text": "Senhor" },
+        { "id": "c", "text": "disse" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Senhor\" é quem se arrepende, não o marcador.",
+        "c": "\"Disse\" fecha a frase, não marca a sequência."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 7:1–8 relaciona as duas primeiras visões com a do prumo?",
+      "verseRef": "Amós 7:7–8",
+      "evidenceSpan": "jamais passarei por ele",
+      "feedbackCorrect": "Nas duas primeiras há arrependimento; no prumo, jamais passará.",
+      "hint": "Compare 7:3 e 7:6 com 7:8.",
+      "learningObjective": "Relacionar intercessão e limite do juízo.",
+      "evidence": ["Amós 7:7–8"],
+      "options": [
+        { "id": "a", "text": "Intercessão detém duas vezes; o prumo não passa mais" },
+        { "id": "b", "text": "Todas as visões terminam sem juízo" },
+        { "id": "c", "text": "O prumo cancela as duas primeiras visões" },
+        { "id": "d", "text": "Amós nunca intercede em nenhuma visão" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O prumo traz juízo sem passagem.",
+        "c": "O prumo é uma nova etapa, não um cancelamento.",
+        "d": "Ele intercede em 7:2 e 7:5."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 7:1–9?",
+      "verseRef": "Amós 7:1–9",
+      "evidenceSpan": "colocarei o prumo no meio do meu povo de Israel",
+      "feedbackCorrect": "Gafanhotos, fogo com arrependimento, depois o prumo.",
+      "hint": "Comece pelos gafanhotos.",
+      "learningObjective": "Seguir o movimento das três visões.",
+      "evidence": ["Amós 7:1–9"],
+      "options": [
+        { "id": "a", "text": "Visão dos gafanhotos e intercessão" },
+        { "id": "b", "text": "Visão do fogo e novo arrependimento" },
+        { "id": "c", "text": "Prumo no meio de Israel sem mais passagem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Gafanhotos primeiro; prumo por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 7:2, que palavra introduz a razão de Jacó não poder subsistir?",
+      "verseRef": "Amós 7:2",
+      "evidenceSpan": "Pois ele é tão pequeno",
+      "feedbackCorrect": "\"Pois\" liga a fragilidade de Jacó ao pedido de perdão.",
+      "hint": "É a palavra antes de \"ele é tão pequeno\".",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": ["Amós 7:2"],
+      "options": [
+        { "id": "a", "text": "Pois" },
+        { "id": "b", "text": "Nunca" },
+        { "id": "c", "text": "Talvez" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Nunca\" não introduz a razão.",
+        "c": "\"Talvez\" não aparece neste pedido."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 7:3 a Êxodo 32:11–14?",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "o Senhor se arrependeu disso",
+      "feedbackCorrect": "Nos dois textos, a intercessão detém o juízo anunciado.",
+      "hint": "Compare o pedido e o arrependimento do Senhor.",
+      "learningObjective": "Relacionar a intercessão de Amós e Moisés.",
+      "evidence": ["Amós 7:3", "Êxodo 32:11–14"],
+      "passageA": { "ref": "Amós 7:3" },
+      "passageB": { "ref": "Êxodo 32:11–14" },
+      "options": [
+        { "id": "a", "text": "Intercessão que detém o juízo" },
+        { "id": "b", "text": "Juízo sem nenhum pedido" },
+        { "id": "c", "text": "Povo grande demais para cair" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há intercessão clara nos dois textos.",
+        "c": "Amós insiste que Jacó é pequeno."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 7:1–9, a intercessão nunca muda o anúncio de juízo.",
+      "verseRef": "Amós 7:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Senhor se arrependeu disso. Isso não acontecerá",
+      "feedbackCorrect": "Nas duas primeiras visões, o Senhor se arrepende após o pedido.",
+      "feedbackWrong": { "true": "7:3 e 7:6 mostram o efeito da intercessão." },
+      "hint": "Compare as duas primeiras visões com o prumo.",
+      "learningObjective": "Interpretar o tempo da intercessão.",
+      "evidence": ["Amós 7:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 7:8, toque a palavra que mostra que o juízo não se detém mais.",
+      "verseRef": "Amós 7:8",
+      "evidenceSpan": "jamais passarei por ele",
+      "feedbackCorrect": "\"Jamais\" marca o fim da passagem misericordiosa.",
+      "hint": "Procure a palavra antes de \"passarei\".",
+      "learningObjective": "Sustentar o limite do juízo com o texto.",
+      "evidence": ["Amós 7:8"],
+      "options": [
+        { "id": "a", "text": "jamais" },
+        { "id": "b", "text": "Amós" },
+        { "id": "c", "text": "povo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Amós\" é quem vê; a palavra do limite é outra.",
+        "c": "\"Povo\" recebe o prumo; o limite está em \"jamais\"."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 7:1–9 sustenta sobre intercessão e juízo?",
+      "verseRef": "Amós 7:8",
+      "evidenceSpan": "jamais passarei por ele",
+      "feedbackCorrect": "Há tempo em que a intercessão segura, e tempo em que o prumo cai.",
+      "hint": "Una 7:3–6 com 7:8.",
+      "learningObjective": "Escolher a interpretação das três visões.",
+      "evidence": ["Amós 7:8"],
+      "options": [
+        { "id": "a", "text": "Há tempo de intercessão e tempo em que o prumo cai" },
+        { "id": "b", "text": "A intercessão nunca muda o anúncio" },
+        { "id": "c", "text": "O prumo é só enfeite sem juízo" },
+        { "id": "d", "text": "Jacó é grande demais para cair" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "7:3 e 7:6 mostram mudança após o pedido.",
+        "c": "7:9 traz devastação e espada.",
+        "d": "Amós diz que Jacó é pequeno."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a intercessão que detém o juízo na Escritura?",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "o Senhor se arrependeu disso",
+      "feedbackCorrect": "Amós intercede; Moisés e Jeremias ecoam o mesmo movimento.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o fio da intercessão na Bíblia.",
+      "evidence": ["Amós 7:3", "Êxodo 32:11–14", "Jeremias 18:7–8"],
+      "options": [
+        { "id": "a", "text": "Amós: o Senhor se arrepende do juízo" },
+        { "id": "b", "text": "Moisés: intercede e o Senhor se detém" },
+        { "id": "c", "text": "Jeremias: Deus se arrepende do mal anunciado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 7, Êxodo 32 e Jeremias 18." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 7:3, o que o Senhor fez a respeito do juízo anunciado?",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "o Senhor se arrependeu disso",
+      "feedbackCorrect": "Ele se arrependeu: isso não acontecerá.",
+      "hint": "É o verbo da reação do Senhor.",
+      "learningObjective": "Lembrar o termo do arrependimento divino.",
+      "evidence": ["Amós 7:3"],
+      "options": [
+        { "id": "a", "text": "arrependeu" },
+        { "id": "b", "text": "esqueceu" },
+        { "id": "c", "text": "aprovou" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ele não esquece; se arrepende do mal anunciado.",
+        "c": "Ele não aprova o juízo nesta visão; o detém."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 7:3 a Jeremias 18:7–8?",
+      "verseRef": "Amós 7:3",
+      "evidenceSpan": "o Senhor se arrependeu disso",
+      "feedbackCorrect": "Nos dois textos, Deus se arrepende do mal quando há resposta.",
+      "hint": "Compare o arrependimento do Senhor.",
+      "learningObjective": "Ligar o arrependimento divino em Amós e Jeremias.",
+      "evidence": ["Amós 7:3", "Jeremias 18:7–8"],
+      "passageA": { "ref": "Amós 7:3" },
+      "passageB": { "ref": "Jeremias 18:7–8" },
+      "options": [
+        { "id": "a", "text": "Deus se arrepende do mal anunciado" },
+        { "id": "b", "text": "Juízo sem nenhuma mudança" },
+        { "id": "c", "text": "Povo grande demais para cair" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram mudança possível.",
+        "c": "Amós insiste na pequenez de Jacó."
+      }
+    }
+  ]
+}

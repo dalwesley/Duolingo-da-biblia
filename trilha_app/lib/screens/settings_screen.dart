@@ -10,6 +10,7 @@ import '../data/trail_repository.dart';
 import '../l10n/app_language.dart';
 import '../models/difficulty.dart';
 import '../models/user_intent.dart';
+import '../services/referral_rewards_service.dart';
 import '../services/app_update_service.dart';
 import '../services/backend_service.dart';
 import '../services/bible_service.dart';
@@ -378,7 +379,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               context.l10n.settingsIntentLabel,
               intent?.title ?? context.l10n.settingsIntentNone,
               glyph: intent?.glyph ?? CinematicGlyph.path,
-              accent: intent?.accent,
+              accent: intent?.accent ?? AppColors.clay,
               onTap: () => showIntentSheet(context, tint: intent?.accent),
             ),
           ],
@@ -460,6 +461,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               v ? _pickReminderHour(progress) : _setReminder(progress, false),
           onRowTap: on ? () => _pickReminderHour(progress) : null,
           glyph: CinematicGlyph.bell,
+          tone: AppColors.ember,
         ),
         const _SettingsDivider(compact: true),
         _toggle(
@@ -473,6 +475,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             SoundService.instance.setEnabled(v);
           },
           glyph: CinematicGlyph.echo,
+          tone: AppColors.cedar,
         ),
       ],
     );
@@ -670,7 +673,7 @@ class _SettingsScreenState extends State<SettingsScreen>
                     CinematicIcon(
                       glyph: glyph,
                       size: AppMetrics.leadingIcon,
-                      accent: accent ?? a.chrome,
+                      accent: accent ?? a.place,
                       glowing: false,
                     ),
                 const SizedBox(width: AppSpace.md),
@@ -802,6 +805,38 @@ class _SettingsScreenState extends State<SettingsScreen>
               ),
             ),
           ],
+          // Meses ganhos por convite, esperando o Plus acabar.
+          ListenableBuilder(
+            listenable: ReferralRewardsService.instance,
+            builder: (context, _) {
+              final banked = ReferralRewardsService.instance.banked;
+              if (!signedIn || banked <= 0) return const SizedBox.shrink();
+              return Padding(
+                padding: const EdgeInsets.only(top: AppSpace.sm),
+                child: Row(
+                  children: [
+                    CinematicIcon(
+                      glyph: CinematicGlyph.gift,
+                      size: AppMetrics.iconSm,
+                      accent: AppRoles.reward,
+                      framed: false,
+                    ),
+                    const SizedBox(width: AppSpace.sm),
+                    Expanded(
+                      child: Text(
+                        context.l10n.referralBankedLine(banked),
+                        style: AppTypography.body(
+                          size: 12,
+                          weight: FontWeight.w700,
+                          color: Appearance.of(context).textSecondary,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              );
+            },
+          ),
         ],
       ),
     );
@@ -952,6 +987,7 @@ class _SettingsScreenState extends State<SettingsScreen>
     bool value,
     ValueChanged<bool> onChanged, {
     CinematicGlyph glyph = CinematicGlyph.spark,
+    Color tone = AppColors.sky,
     VoidCallback? onRowTap,
   }) {
     // Linha inteira alterna o switch (ou abre [onRowTap]); leitor de tela lê
@@ -969,7 +1005,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               CinematicIcon(
                 glyph: glyph,
                 size: AppMetrics.leadingIcon,
-                accent: value ? a.chrome : a.textFaint,
+                accent: value ? tone : a.textFaint,
                 glowing: false,
               ),
               const SizedBox(width: AppSpace.md),
@@ -1083,6 +1119,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               ? context.l10n.settingsManualBackupSubtitle
               : context.l10n.settingsLastShort(_shortDate(last)),
           glyph: CinematicGlyph.share,
+          accent: AppColors.cedar,
           onTap: () => _openBackupSheet(sync),
         ),
         if (backend.isSignedIn) ...[
@@ -1094,6 +1131,7 @@ class _SettingsScreenState extends State<SettingsScreen>
               context.watch<ModerationService>().blocked.length,
             ),
             glyph: CinematicGlyph.lock,
+            accent: AppColors.clay,
             onTap: _openBlockedSheet,
           ),
           const _SettingsDivider(compact: true),
@@ -1101,7 +1139,8 @@ class _SettingsScreenState extends State<SettingsScreen>
             a,
             context.l10n.settingsSignOut,
             context.l10n.settingsSignOutSubtitle,
-            glyph: CinematicGlyph.back,
+            glyph: CinematicGlyph.door,
+            accent: AppColors.sand,
             onTap: backend.isGoogleBusy ? null : () => _signOutGoogle(backend),
           ),
         ],
@@ -1316,6 +1355,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsAboutPage,
           context.l10n.settingsAboutPageSubtitle,
           glyph: CinematicGlyph.path,
+          accent: AppColors.cedar,
           onTap: openAboutPage,
         ),
         const _SettingsDivider(compact: true),
@@ -1324,6 +1364,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsReplayIntro,
           context.l10n.settingsReplayIntroSubtitle,
           glyph: CinematicGlyph.scroll,
+          accent: AppColors.sprout,
           onTap: () async {
             if (!mounted) return;
             await Navigator.of(context).pushAndRemoveUntil(
@@ -1338,6 +1379,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsCreditsTitle,
           context.l10n.settingsCreditsRowSubtitle,
           glyph: CinematicGlyph.book,
+          accent: AppColors.orchid,
           onTap: () => _openCreditsSheet(credits),
         ),
         const _SettingsDivider(compact: true),
@@ -1346,6 +1388,7 @@ class _SettingsScreenState extends State<SettingsScreen>
           context.l10n.settingsReportProblem,
           context.l10n.settingsReportProblemSubtitle,
           glyph: CinematicGlyph.flag,
+          accent: AppColors.ember,
           onTap: () => showAppReportSheet(context),
         ),
         if (kDebugMode) ...[
@@ -1355,6 +1398,7 @@ class _SettingsScreenState extends State<SettingsScreen>
             'Laboratório Peregrino+',
             'Só em desenvolvimento',
             glyph: CinematicGlyph.tune,
+            accent: AppColors.slate,
             onTap: () => Navigator.of(context).push(
               MaterialPageRoute<void>(builder: (_) => const PlusLabScreen()),
             ),

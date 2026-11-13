@@ -1,0 +1,689 @@
+{
+  "study": {
+    "passageRef": "Salmos 133:1–3",
+    "passages": [
+      {
+        "ref": "Salmos 133:1–3"
+      }
+    ],
+    "context": "Oh! quão bom e quão suave é que os irmãos vivam em união; como o óleo sobre a cabeça.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Que bom e agradável",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Como é bom e agradável que os irmãos.",
+        "evidenceRef": "Salmos 133:1",
+        "evidenceSpan": "Como é bom e agradável que os irmãos"
+      },
+      {
+        "text": "É como o óleo precioso sobre a cabeça.",
+        "evidenceRef": "Salmos 133:2",
+        "evidenceSpan": "É como o óleo precioso sobre a cabeça"
+      },
+      {
+        "text": "Como o orvalho do Hermom.",
+        "evidenceRef": "Salmos 133:3",
+        "evidenceSpan": "Como o orvalho do Hermom"
+      },
+      {
+        "text": "Como é bom e agradável que os irmãos.",
+        "evidenceRef": "Salmos 133:1",
+        "evidenceSpan": "Como é bom e agradável que os irmãos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "agradável",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "irmãos",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Como é bom e agradável que",
+        "evidenceRef": "Salmos 133:1"
+      },
+      {
+        "label": "É como o óleo precioso sobre",
+        "evidenceRef": "Salmos 133:2"
+      },
+      {
+        "label": "Como o orvalho do hermom que",
+        "evidenceRef": "Salmos 133:3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 133:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O salmo avança na oração e no argumento.",
+        "marker": null,
+        "evidenceRef": "Salmos 133:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 121:2",
+        "bridge": "Socorro vem do Senhor"
+      },
+      {
+        "ref": "Mateus 5:3",
+        "bridge": "Bem-aventurados os humildes"
+      },
+      {
+        "ref": "Romanos 8:31",
+        "bridge": "Se Deus é por nós"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Unidade abençoada: ali o Senhor ordena a vida para sempre."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Unidade abençoada: ali o Senhor ordena a vida para sempre.",
+    "anchorQuestion": "O que Salmos 133:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 133:1, como é bom e agradável que os irmãos.",
+      "verseRef": "Salmos 133:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Como é bom e agradável que os irmãos",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 133:1 afirma.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 133:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 133:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "bom"
+        },
+        {
+          "id": "b",
+          "text": "agradável"
+        },
+        {
+          "id": "c",
+          "text": "irmãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "bom",
+      "feedbackCorrect": "O versículo destaca «bom».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 133:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 133:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como o orvalho do Hermom"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como o orvalho do Hermom",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 133:1 na ordem do texto.",
+      "verseRef": "Salmos 133:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como é bom"
+        },
+        {
+          "id": "b",
+          "text": "e agradável"
+        },
+        {
+          "id": "c",
+          "text": "os irmãos habitem unidos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Como é bom",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 133:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 133:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "agradável"
+        },
+        {
+          "id": "b",
+          "text": "Como"
+        },
+        {
+          "id": "c",
+          "text": "bom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agradável",
+      "feedbackCorrect": "A palavra do versículo é «agradável».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 133:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 133:1",
+      "passageA": {
+        "ref": "Salmos 133:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Oh! quão bom e quão suave é que os irmãos vivam em união; como o óleo sobre a cabeça."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 133:3, o marcador porque une ideias no fluxo do texto.",
+      "verseRef": "Salmos 133:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 133:3 afirma.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 133:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 133:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "orvalho"
+        },
+        {
+          "id": "c",
+          "text": "Hermom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo destaca «porque».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 133:3, o que o texto apresenta com clareza (cam).",
+      "verseRef": "Salmos 133:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como o orvalho do Hermom",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 133:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como é bom e agradável"
+        },
+        {
+          "id": "b",
+          "text": "É como o óleo precioso sobre"
+        },
+        {
+          "id": "c",
+          "text": "Como o orvalho do hermom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 133:2, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 133:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "óleo"
+        },
+        {
+          "id": "b",
+          "text": "Como"
+        },
+        {
+          "id": "c",
+          "text": "bom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "óleo",
+      "feedbackCorrect": "A palavra do versículo é «óleo».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 133:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 133:1 a Salmos 121:2.",
+      "verseRef": "Salmos 133:1",
+      "passageA": {
+        "ref": "Salmos 133:1"
+      },
+      "passageB": {
+        "ref": "Salmos 121:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Socorro vem do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 133:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 133:3 afirma.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 133:3, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 133:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "orvalho"
+        },
+        {
+          "id": "b",
+          "text": "Hermom"
+        },
+        {
+          "id": "c",
+          "text": "desce"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "orvalho",
+      "feedbackCorrect": "O versículo destaca «orvalho».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 133:3, o que o texto apresenta com clareza (pro).",
+      "verseRef": "Salmos 133:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como o orvalho do Hermom",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 133:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 133:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 133:2, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 133:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "precioso"
+        },
+        {
+          "id": "b",
+          "text": "Como"
+        },
+        {
+          "id": "c",
+          "text": "bom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "precioso",
+      "feedbackCorrect": "A palavra do versículo é «precioso».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 133:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 133:1 a Mateus 5:3.",
+      "verseRef": "Salmos 133:1",
+      "passageA": {
+        "ref": "Salmos 133:1"
+      },
+      "passageB": {
+        "ref": "Mateus 5:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os humildes"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 133:1"
+      ]
+    }
+  ]
+}

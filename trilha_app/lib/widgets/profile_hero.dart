@@ -342,8 +342,8 @@ class _HeroStats extends StatelessWidget {
   Widget build(BuildContext context) {
     final a = Appearance.of(context);
     final l10n = context.l10n;
-    // Quem sou em três números: a sequência (cor dela), as cenas e os
-    // postais (ouro, a coleção).
+    // Quem sou em três números: a sequência (cor dela), as cenas (tom de
+    // Explorar, onde elas moram) e os postais (rosa do papel pintado).
     final items = <(String, String, CinematicGlyph, Color, Color)>[
       (
         pilgrimFormatCount(streak),
@@ -356,15 +356,15 @@ class _HeroStats extends StatelessWidget {
         pilgrimFormatCount(missions),
         l10n.pilgrimStatScenes,
         CinematicGlyph.scroll,
-        AppRoles.presence,
+        AppRoles.navTrails,
         a.text,
       ),
       (
         pilgrimFormatCount(postcards),
         l10n.postcardsTitle,
         CinematicGlyph.gem,
-        AppRoles.reward,
-        AppRoles.reward,
+        AppColors.clay,
+        AppColors.clay,
       ),
     ];
     return Row(
@@ -375,12 +375,28 @@ class _HeroStats extends StatelessWidget {
             child: Semantics(
               label: '${items[i].$1} ${items[i].$2}',
               excludeSemantics: true,
-              child: InsetPanel(
+              child: Container(
                 padding: const EdgeInsets.symmetric(
                   vertical: AppSpace.sm,
                   horizontal: 6,
                 ),
-                borderColor: items[i].$4.withValues(alpha: 0.55),
+                // Cada número no seu tom: o wash sobe do pé do card, como
+                // luz do próprio objeto, e o filete acende na mesma cor.
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(AppRadii.md),
+                  gradient: LinearGradient(
+                    begin: Alignment.topCenter,
+                    end: Alignment.bottomCenter,
+                    colors: [
+                      a.ink(items[i].$4).withValues(alpha: 0.10),
+                      a.ink(items[i].$4).withValues(alpha: 0.26),
+                    ],
+                  ),
+                  border: Border.all(
+                    color: a.ink(items[i].$4).withValues(alpha: 0.6),
+                    width: 1.2,
+                  ),
+                ),
                 child: Column(
                   children: [
                     CinematicIcon(

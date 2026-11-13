@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 16:15–20",
+  "passages": [
+   {
+    "ref": "Jó 16:15–20"
+   },
+   {
+    "ref": "Jó 16:21–22"
+   }
+  ],
+  "context": "Sob a acusação, Jó veste cilício, chora e ergue os olhos: sua testemunha está no céu.",
+  "keyword": "Testemunha no céu",
+  "keywordGloss": "Alguém nas alturas defende a causa de Jó quando os amigos zombam.",
+  "focusQuestion": "Quando ninguém na terra te defende, para onde você ergue os olhos?",
+  "reflectionPrompts": [
+   "Clamor sem cobertura",
+   "Testemunha nas alturas",
+   "Intercessão desejada"
+  ],
+  "facts": [
+   {
+    "text": "Jó vestiu cilício e abateu sua soberania em pó.",
+    "evidenceRef": "Jó 16:15",
+    "evidenceSpan": "Vesti-me com um cilício"
+   },
+   {
+    "text": "Não há violência nas mãos de Jó; sua oração é pura.",
+    "evidenceRef": "Jó 16:17",
+    "evidenceSpan": "Não há violência nas minhas mãos"
+   },
+   {
+    "text": "A testemunha de Jó está no céu.",
+    "evidenceRef": "Jó 16:19",
+    "evidenceSpan": "a minha testemunha está no céu"
+   },
+   {
+    "text": "Quem defende a causa de Jó está nas alturas.",
+    "evidenceRef": "Jó 16:19",
+    "evidenceSpan": "quem defende a minha causa nas alturas"
+   },
+   {
+    "text": "Os amigos zombam de Jó.",
+    "evidenceRef": "Jó 16:20",
+    "evidenceSpan": "Meus amigos são os que zombam de mim"
+   },
+   {
+    "text": "Jó deseja alguém que interceda diante de Deus.",
+    "evidenceRef": "Jó 16:21",
+    "evidenceSpan": "se alguém pudesse interceder por mim diante de Deus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "testemunha",
+    "gloss": "Quem está no céu e fala por Jó."
+   },
+   {
+    "term": "cilício",
+    "gloss": "Veste de luto e humilhação."
+   },
+   {
+    "term": "interceder",
+    "gloss": "O desejo de Jó: alguém diante de Deus por ele."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Jó se humilha em cilício e choro",
+    "evidenceRef": "Jó 16:15–16"
+   },
+   {
+    "label": "Jó afirma mãos sem violência e oração pura",
+    "evidenceRef": "Jó 16:17–18"
+   },
+   {
+    "label": "Jó aponta a testemunha no céu",
+    "evidenceRef": "Jó 16:19–20"
+   },
+   {
+    "label": "Jó deseja intercessão antes do caminho sem retorno",
+    "evidenceRef": "Jó 16:21–22"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Os amigos zombam; a testemunha está no céu.",
+    "marker": null,
+    "evidenceRef": "Jó 16:19–20"
+   },
+   {
+    "kind": "causa",
+    "text": "Jó deseja intercessão porque em poucos anos seguirá o caminho sem retorno.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 16:22"
+   },
+   {
+    "kind": "resultado",
+    "text": "Eis que agora sabeis que a testemunha está no céu.",
+    "marker": "Eis",
+    "evidenceRef": "Jó 16:19"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 7:25",
+    "bridge": "Jesus intercede sempre"
+   },
+   {
+    "ref": "1 João 2:1",
+    "bridge": "Advogado junto ao Pai"
+   },
+   {
+    "ref": "Romanos 8:34",
+    "bridge": "Cristo à direita intercede"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó não tem ninguém no céu a seu favor.",
+    "why": "16:19 afirma a testemunha no céu."
+   },
+   {
+    "text": "Os amigos são os defensores de Jó.",
+    "why": "16:20 diz que zombam dele."
+   },
+   {
+    "text": "Jó confessa violência nas mãos.",
+    "why": "16:17 nega violência e afirma oração pura."
+   }
+  ],
+  "centralInsight": "No meio da acusação, Jó ergue os olhos: alguém no céu fala por ele.",
+  "anchorQuestion": "Onde está a testemunha de Jó, segundo Jó 16:19?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 16:19, Jó diz que sua testemunha está na terra, entre os amigos.",
+   "verseRef": "Jó 16:19",
+   "correctOptionId": "false",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "A testemunha está no céu.",
+   "feedbackWrong": {
+    "true": "Releia 16:19."
+   },
+   "hint": "Veja onde está a testemunha.",
+   "learningObjective": "Observar a testemunha de Jó.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 16:19, toque onde está a testemunha de Jó.",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "céu"
+    },
+    {
+     "id": "b",
+     "text": "alturas"
+    },
+    {
+     "id": "c",
+     "text": "causa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "A testemunha está no céu.",
+   "feedbackWrong": {
+    "b": "Alturas é onde está quem defende; a testemunha está no céu.",
+    "c": "Causa é o que se defende."
+   },
+   "hint": "Veja o fim da primeira frase.",
+   "learningObjective": "Identificar o lugar da testemunha.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 16:17, o que há nas mãos de Jó?",
+   "verseRef": "Jó 16:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não há violência"
+    },
+    {
+     "id": "b",
+     "text": "Há sangue"
+    },
+    {
+     "id": "c",
+     "text": "Há ouro"
+    },
+    {
+     "id": "d",
+     "text": "Há armas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não há violência nas minhas mãos",
+   "feedbackCorrect": "Jó afirma mãos sem violência.",
+   "feedbackWrong": {
+    "b": "O texto nega violência.",
+    "c": "Não há ouro.",
+    "d": "Não há armas."
+   },
+   "hint": "Leia a primeira frase.",
+   "learningObjective": "Observar as mãos de Jó.",
+   "evidence": [
+    "Jó 16:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 16:19 na ordem do texto.",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que agora sabeis que a minha testemunha está no céu"
+    },
+    {
+     "id": "b",
+     "text": "e quem defende a minha causa"
+    },
+    {
+     "id": "c",
+     "text": "nas alturas."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "Testemunha no céu; defesa nas alturas.",
+   "feedbackWrong": {
+    "default": "Comece por Eis que."
+   },
+   "hint": "Comece por Eis que.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 16:15, com o que Jó se vestiu?",
+   "verseRef": "Jó 16:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "cilício"
+    },
+    {
+     "id": "b",
+     "text": "púrpura"
+    },
+    {
+     "id": "c",
+     "text": "ouro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Vesti-me com um cilício",
+   "feedbackCorrect": "A veste é cilício.",
+   "feedbackWrong": {
+    "b": "Não há púrpura.",
+    "c": "Não há ouro."
+   },
+   "hint": "Veja o objeto de Vesti-me.",
+   "learningObjective": "Lembrar a veste de Jó.",
+   "evidence": [
+    "Jó 16:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 16:19 comunica que se liga a este contexto?",
+   "verseRef": "Jó 16:19",
+   "passageA": {
+    "ref": "Jó 16:19"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Sob a acusação dos amigos, Jó ergue os olhos: alguém no céu fala por ele."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Defesa nas alturas"
+    },
+    {
+     "id": "b",
+     "text": "Vitória dos zombadores"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio eterno no céu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "A testemunha no céu é a defesa.",
+   "feedbackWrong": {
+    "b": "Os amigos zombam.",
+    "c": "Há testemunha, não silêncio."
+   },
+   "hint": "Pense no lugar da defesa.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 16:20–19, os amigos zombam, mas a testemunha de Jó está no céu.",
+   "verseRef": "Jó 16:19–20",
+   "correctOptionId": "true",
+   "evidenceSpan": "Meus amigos são os que zombam de mim",
+   "feedbackCorrect": "Zombaria na terra e testemunha no céu.",
+   "feedbackWrong": {
+    "false": "Una 16:19 e 16:20."
+   },
+   "hint": "Compare amigos e testemunha.",
+   "learningObjective": "Compreender o contraste.",
+   "evidence": [
+    "Jó 16:19–20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 16:22, toque a palavra que marca a causa do desejo de intercessão.",
+   "verseRef": "Jó 16:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "anos"
+    },
+    {
+     "id": "c",
+     "text": "caminho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque em poucos anos",
+   "feedbackCorrect": "Porque introduz a causa.",
+   "feedbackWrong": {
+    "b": "Anos medem o tempo.",
+    "c": "Caminho é o destino."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 16:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 16:19 se relaciona com 16:20?",
+   "verseRef": "Jó 16:19–20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Contrasta zombaria dos amigos com defesa no céu"
+    },
+    {
+     "id": "b",
+     "text": "Afirma que os amigos são a testemunha"
+    },
+    {
+     "id": "c",
+     "text": "Nega qualquer defesa nas alturas"
+    },
+    {
+     "id": "d",
+     "text": "Diz que Jó não chora"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "Céu e zombaria se contrapõem.",
+   "feedbackWrong": {
+    "b": "16:20 diz que zombam.",
+    "c": "16:19 afirma a defesa.",
+    "d": "16:20 fala de lágrimas."
+   },
+   "hint": "Compare os dois versículos.",
+   "learningObjective": "Relacionar zombaria e testemunha.",
+   "evidence": [
+    "Jó 16:19–20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o lamento de Jó em 16:15–22?",
+   "verseRef": "Jó 16:15–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Humilhação em cilício e choro"
+    },
+    {
+     "id": "b",
+     "text": "Apelo à testemunha celestial"
+    },
+    {
+     "id": "c",
+     "text": "Desejo de intercessão antes do fim"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "se alguém pudesse interceder por mim",
+   "feedbackCorrect": "Humilhação, testemunha e intercessão.",
+   "feedbackWrong": {
+    "default": "Comece pelo cilício."
+   },
+   "hint": "Pense: choro → testemunha → intercessão.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 16:15–22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 16:21, o que alguém poderia fazer por Jó diante de Deus?",
+   "verseRef": "Jó 16:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "interceder"
+    },
+    {
+     "id": "b",
+     "text": "zombam"
+    },
+    {
+     "id": "c",
+     "text": "ocultar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "interceder por mim diante de Deus",
+   "feedbackCorrect": "A palavra é interceder.",
+   "feedbackWrong": {
+    "b": "Zombam está em 16:20.",
+    "c": "Ocultar está em 16:18."
+   },
+   "hint": "Veja o verbo do desejo.",
+   "learningObjective": "Lembrar o desejo de Jó.",
+   "evidence": [
+    "Jó 16:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 16:19 a 1 João 2:1?",
+   "verseRef": "Jó 16:19",
+   "passageA": {
+    "ref": "Jó 16:19"
+   },
+   "passageB": {
+    "ref": "1 João 2:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Advogado junto ao Pai"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem defende a minha causa nas alturas",
+   "feedbackCorrect": "Nos dois textos, há defesa junto a Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a defesa nas alturas.",
+   "learningObjective": "Relacionar a testemunha a 1 João.",
+   "evidence": [
+    "Jó 16:19",
+    "1 João 2:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "No meio da acusação, Jó ergue os olhos, pois alguém no céu fala por ele.",
+   "verseRef": "Jó 16:19",
+   "correctOptionId": "true",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "A testemunha no céu é o centro da esperança.",
+   "feedbackWrong": {
+    "false": "Releia 16:19."
+   },
+   "hint": "Veja a declaração central.",
+   "learningObjective": "Interpretar a testemunha no céu.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 16:19, toque o trecho que sustenta a defesa de Jó.",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "nas alturas"
+    },
+    {
+     "id": "b",
+     "text": "agora sabeis"
+    },
+    {
+     "id": "c",
+     "text": "minha testemunha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "defende a minha causa nas alturas",
+   "feedbackCorrect": "Nas alturas sustenta a defesa.",
+   "feedbackWrong": {
+    "b": "Agora sabeis introduz a declaração.",
+    "c": "Testemunha nomeia quem defende."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Sustentar a leitura da defesa.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 16:15–22 sustenta?",
+   "verseRef": "Jó 16:15–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "No meio da acusação, Jó ergue os olhos ao céu"
+    },
+    {
+     "id": "b",
+     "text": "Os amigos são a testemunha fiel"
+    },
+    {
+     "id": "c",
+     "text": "Jó confessa violência nas mãos"
+    },
+    {
+     "id": "d",
+     "text": "Não há desejo de intercessão"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "Testemunha e intercessão sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "16:20 diz que zombam.",
+    "c": "16:17 nega violência.",
+    "d": "16:21 deseja intercessão."
+   },
+   "hint": "Una 16:19 e 16:21.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 16:15–22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra intercessão no céu?",
+   "verseRef": "Jó 16:19–21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó confessa a testemunha nas alturas"
+    },
+    {
+     "id": "b",
+     "text": "João fala do advogado junto ao Pai"
+    },
+    {
+     "id": "c",
+     "text": "Hebreus diz que Jesus intercede sempre"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "O fio vai de Jó a 1 João e a Hebreus.",
+   "feedbackWrong": {
+    "default": "Comece por Jó."
+   },
+   "hint": "Siga: testemunha → advogado → intercessão.",
+   "learningObjective": "Ver o fio da defesa.",
+   "evidence": [
+    "Jó 16:19",
+    "1 João 2:1",
+    "Hebreus 7:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 16:19, o que está no céu a favor de Jó?",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "testemunha"
+    },
+    {
+     "id": "b",
+     "text": "zombadores"
+    },
+    {
+     "id": "c",
+     "text": "cilício"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "O termo é testemunha.",
+   "feedbackWrong": {
+    "b": "Zombadores estão na terra.",
+    "c": "Cilício está em 16:15."
+   },
+   "hint": "Veja o sujeito da declaração.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 16:21 a Hebreus 7:25?",
+   "verseRef": "Jó 16:21",
+   "passageA": {
+    "ref": "Jó 16:21"
+   },
+   "passageB": {
+    "ref": "Hebreus 7:25"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus intercede sempre"
+    },
+    {
+     "id": "b",
+     "text": "Lista de sacerdotes"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de cidades"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "interceder por mim diante de Deus",
+   "feedbackCorrect": "Nos dois textos, há intercessão diante de Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de sacerdotes.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare o desejo de intercessão.",
+   "learningObjective": "Ligar o desejo a Hebreus.",
+   "evidence": [
+    "Jó 16:21",
+    "Hebreus 7:25"
+   ]
+  }
+ ]
+}

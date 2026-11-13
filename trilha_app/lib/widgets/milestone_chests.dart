@@ -273,8 +273,13 @@ class WeeklyQuestRow extends StatelessWidget {
     final claimed = progress.isWeeklyQuestClaimed(quest.id);
     final done = claimed || value >= quest.target;
     final pct = (value / quest.target).clamp(0.0, 1.0);
-    // Em curso é a vida (azul); concluída vira ouro, como a recompensa.
-    final tone = done ? AppRoles.reward : AppRoles.presence;
+    // Em curso: cenas no tom de Explorar (onde as cenas moram), dias e
+    // acertos na vida (azul). Concluída vira ouro, como a recompensa.
+    final tone = done
+        ? AppRoles.reward
+        : quest.id == 'w_missions'
+        ? AppRoles.navTrails
+        : AppRoles.presence;
     final bar = tone;
 
     return Row(

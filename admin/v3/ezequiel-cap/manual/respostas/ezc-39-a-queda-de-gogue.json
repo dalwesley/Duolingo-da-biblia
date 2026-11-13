@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 39:1–8",
+    "passages": [
+      {
+        "ref": "Ezequiel 39:1–8"
+      }
+    ],
+    "context": "Gogue cai nos montes de Israel; Deus faz conhecido o santo nome e as nações sabem quem ele é.",
+    "keyword": "nome",
+    "keywordGloss": "O santo nome que Deus faz conhecido e não deixa profanar.",
+    "focusQuestion": "Quando o inimigo cai, você reconhece o Santo em Israel?",
+    "reflectionPrompts": [
+      "Queda de Gogue",
+      "Fogo a Magogue",
+      "Santo em Israel"
+    ],
+    "facts": [
+      {
+        "text": "Deus ainda está contra Gogue.",
+        "evidenceRef": "Ezequiel 39:1",
+        "evidenceSpan": "Eis que estou contra ti, ó Gogue, príncipe de Rôs, de Meseque e Tubal"
+      },
+      {
+        "text": "Retirará o arco e fará cair as flechas.",
+        "evidenceRef": "Ezequiel 39:3",
+        "evidenceSpan": "eu retirarei o arco da sua mão esquerda e farei cair as suas flechas da sua mão direita"
+      },
+      {
+        "text": "Gogue cairá nos montes de Israel.",
+        "evidenceRef": "Ezequiel 39:4",
+        "evidenceSpan": "Nos montes de Israel, cairás, tu e todas as tuas tropas"
+      },
+      {
+        "text": "Enviará fogo a Magogue.",
+        "evidenceRef": "Ezequiel 39:6",
+        "evidenceSpan": "Enviarei fogo a Magogue"
+      },
+      {
+        "text": "As nações saberão que ele é o Senhor, o Santo em Israel.",
+        "evidenceRef": "Ezequiel 39:7",
+        "evidenceSpan": "as nações saberão que eu sou o Senhor, o Santo em Israel"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Gogue",
+        "gloss": "Inimigo que cai nos montes de Israel."
+      },
+      {
+        "term": "fogo",
+        "gloss": "Enviado a Magogue e às ilhas."
+      },
+      {
+        "term": "Santo",
+        "gloss": "Título do Senhor conhecido pelas nações."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Contra Gogue de novo",
+        "evidenceRef": "Ezequiel 39:1–2"
+      },
+      {
+        "label": "Arco e flechas caem",
+        "evidenceRef": "Ezequiel 39:3"
+      },
+      {
+        "label": "Queda nos montes e fogo",
+        "evidenceRef": "Ezequiel 39:4–6"
+      },
+      {
+        "label": "Nome santo conhecido",
+        "evidenceRef": "Ezequiel 39:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Cairá em campo aberto porque Deus falou.",
+        "marker": "porque",
+        "evidenceRef": "Ezequiel 39:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Saberão que ele é o Senhor.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 39:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "Fazer conhecido o santo nome.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 39:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Ezequiel 38:16",
+        "bridge": "Nações me conhecerão"
+      },
+      {
+        "ref": "Salmos 46:10",
+        "bridge": "Sabei que eu sou Deus"
+      },
+      {
+        "ref": "Isaías 45:6",
+        "bridge": "Saibam que eu sou o Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Gogue vence nos montes de Israel.",
+        "why": "Ele cairá, e as tropas serão entregues."
+      },
+      {
+        "text": "O nome santo continuará profanado.",
+        "why": "Jamais permitirá que seja profanado."
+      },
+      {
+        "text": "O dia anunciado não se cumprirá.",
+        "why": "Está se aproximando e se cumprirá."
+      }
+    ],
+    "centralInsight": "Saberão as nações que eu sou o Senhor, o Santo em Israel.",
+    "anchorQuestion": "O que as nações saberão em Ezequiel 39:7?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 39:4, Gogue cairá nos montes de Israel.",
+      "verseRef": "Ezequiel 39:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "Nos montes de Israel, cairás, tu e todas as tuas tropas",
+      "feedbackCorrect": "A queda é nos montes.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a queda."
+      },
+      "hint": "Veja 39:4.",
+      "learningObjective": "Identificar a queda.",
+      "evidence": [
+        "Ezequiel 39:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 39:4, toque o que acontecerá a Gogue.",
+      "verseRef": "Ezequiel 39:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "cairás"
+        },
+        {
+          "id": "b",
+          "text": "montes"
+        },
+        {
+          "id": "c",
+          "text": "tropas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos montes de Israel, cairás, tu e todas as tuas tropas",
+      "feedbackCorrect": "Ele cairá.",
+      "feedbackWrong": {
+        "b": "É o lugar.",
+        "c": "Caem com ele."
+      },
+      "hint": "Procure o verbo.",
+      "learningObjective": "Tocar a queda.",
+      "evidence": [
+        "Ezequiel 39:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 39:7, o que as nações saberão?",
+      "verseRef": "Ezequiel 39:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que ele é o Senhor, o Santo em Israel"
+        },
+        {
+          "id": "b",
+          "text": "Que Gogue é o Santo"
+        },
+        {
+          "id": "c",
+          "text": "Que o nome pode ser profanado"
+        },
+        {
+          "id": "d",
+          "text": "Que Israel não tem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações saberão que eu sou o Senhor, o Santo em Israel",
+      "feedbackCorrect": "Sabem que ele é o Senhor.",
+      "feedbackWrong": {
+        "b": "Gogue cai.",
+        "c": "Não permitirá profanação.",
+        "d": "Há reconhecimento."
+      },
+      "hint": "Veja o conteúdo do saber.",
+      "learningObjective": "Reconhecer o saber.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 39:3 na ordem do texto.",
+      "verseRef": "Ezequiel 39:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "eu retirarei o arco da sua mão esquerda"
+        },
+        {
+          "id": "b",
+          "text": "e farei cair as suas flechas"
+        },
+        {
+          "id": "c",
+          "text": "da sua mão direita"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eu retirarei o arco da sua mão esquerda e farei cair as suas flechas da sua mão direita",
+      "feedbackCorrect": "Arco → flechas → direita.",
+      "feedbackWrong": {
+        "default": "Comece pelo arco."
+      },
+      "hint": "Comece pelo arco.",
+      "learningObjective": "Ordenar o versículo.",
+      "evidence": [
+        "Ezequiel 39:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 39:6, Enviarei ___ a Magogue.",
+      "verseRef": "Ezequiel 39:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "chuva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enviarei fogo a Magogue",
+      "feedbackCorrect": "A palavra é fogo.",
+      "feedbackWrong": {
+        "b": "Não é paz.",
+        "c": "Não é chuva."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar o fogo.",
+      "evidence": [
+        "Ezequiel 39:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 39:7 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 39:7",
+      "passageA": {
+        "ref": "Ezequiel 39:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Gogue cai; o santo nome é conhecido pelas nações."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Santo em Israel"
+        },
+        {
+          "id": "b",
+          "text": "Cedro no Líbano"
+        },
+        {
+          "id": "c",
+          "text": "Porta fechada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações saberão que eu sou o Senhor, o Santo em Israel",
+      "feedbackCorrect": "O reconhecimento resume a cena.",
+      "feedbackWrong": {
+        "b": "Cedro está em 31.",
+        "c": "Porta está em 44."
+      },
+      "hint": "Compare o saber.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 39:7, Deus permitirá que o santo nome continue sendo profanado.",
+      "verseRef": "Ezequiel 39:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "jamais permitirei que o meu santo nome seja profanado",
+      "feedbackCorrect": "Jamais permitirá a profanação.",
+      "feedbackWrong": {
+        "true": "O texto nega a profanação contínua."
+      },
+      "hint": "Veja o meio de 39:7.",
+      "learningObjective": "Ver a proteção do nome.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 39:5, toque a palavra que marca a causa da queda.",
+      "verseRef": "Ezequiel 39:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "campo"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cairás em campo aberto, porque eu falei",
+      "feedbackCorrect": "\"Porque\" introduz a causa.",
+      "feedbackWrong": {
+        "b": "É o lugar.",
+        "c": "É quem fala."
+      },
+      "hint": "Procure o marcador.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Ezequiel 39:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 39:4 e 39:7 se relacionam?",
+      "verseRef": "Ezequiel 39:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A queda de Gogue revela o Santo em Israel"
+        },
+        {
+          "id": "b",
+          "text": "A queda esconde o nome"
+        },
+        {
+          "id": "c",
+          "text": "As nações ignoram o Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Gogue vence e profana"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos montes de Israel, cairás",
+      "feedbackCorrect": "Queda e reconhecimento se ligam.",
+      "feedbackWrong": {
+        "b": "O nome é conhecido.",
+        "c": "Saberão.",
+        "d": "Ele cai."
+      },
+      "hint": "Una queda e saber.",
+      "learningObjective": "Relacionar juízo e revelação.",
+      "evidence": [
+        "Ezequiel 39:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 39?",
+      "verseRef": "Ezequiel 39:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus contra Gogue"
+        },
+        {
+          "id": "b",
+          "text": "Queda nos montes e fogo"
+        },
+        {
+          "id": "c",
+          "text": "Nome santo conhecido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "as nações saberão que eu sou o Senhor, o Santo em Israel",
+      "feedbackCorrect": "Oposição → queda → saber.",
+      "feedbackWrong": {
+        "default": "Comece na oposição."
+      },
+      "hint": "Comece na oposição.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 39:1",
+        "Ezequiel 39:4",
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 39:7, as nações saberão que eu sou o Senhor, o ___ em Israel.",
+      "verseRef": "Ezequiel 39:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santo"
+        },
+        {
+          "id": "b",
+          "text": "inimigo"
+        },
+        {
+          "id": "c",
+          "text": "ausente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações saberão que eu sou o Senhor, o Santo em Israel",
+      "feedbackCorrect": "A palavra é Santo.",
+      "feedbackWrong": {
+        "b": "Não é inimigo.",
+        "c": "Não é ausente."
+      },
+      "hint": "Veja o título.",
+      "learningObjective": "Lembrar o título.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 39:7 a Salmos 46:10?",
+      "verseRef": "Ezequiel 39:7",
+      "passageA": {
+        "ref": "Ezequiel 39:7"
+      },
+      "passageB": {
+        "ref": "Salmos 46:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sabei que eu sou Deus"
+        },
+        {
+          "id": "b",
+          "text": "Duas varas"
+        },
+        {
+          "id": "c",
+          "text": "Cedro do Líbano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações saberão que eu sou o Senhor",
+      "feedbackCorrect": "Nos dois, Deus quer ser conhecido.",
+      "feedbackWrong": {
+        "b": "Varas estão em 37.",
+        "c": "Cedro está em 31."
+      },
+      "hint": "Compare o saber.",
+      "learningObjective": "Relacionar ao Salmo.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 39:8, o dia anunciado está se aproximando e se cumprirá.",
+      "verseRef": "Ezequiel 39:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eis que está se aproximando, e se cumprirá",
+      "feedbackCorrect": "O dia se aproxima e se cumpre.",
+      "feedbackWrong": {
+        "false": "O versículo afirma o cumprimento."
+      },
+      "hint": "Veja 39:8.",
+      "learningObjective": "Confirmar o dia.",
+      "evidence": [
+        "Ezequiel 39:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 39:7, toque o trecho que sustenta a proteção do nome.",
+      "verseRef": "Ezequiel 39:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "jamais"
+        },
+        {
+          "id": "b",
+          "text": "nações"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "jamais permitirei que o meu santo nome seja profanado",
+      "feedbackCorrect": "\"Jamais\" marca a recusa.",
+      "feedbackWrong": {
+        "b": "São quem saberá.",
+        "c": "É Israel."
+      },
+      "hint": "Procure a negação.",
+      "learningObjective": "Tocar a proteção.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 39 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 39:4–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "A queda de Gogue faz conhecido o Santo em Israel"
+        },
+        {
+          "id": "b",
+          "text": "Gogue vence nos montes"
+        },
+        {
+          "id": "c",
+          "text": "O nome continua profanado"
+        },
+        {
+          "id": "d",
+          "text": "O dia não se cumprirá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações saberão que eu sou o Senhor, o Santo em Israel",
+      "feedbackCorrect": "Juízo e revelação do nome.",
+      "feedbackWrong": {
+        "b": "Ele cai.",
+        "c": "Jamais permitirá.",
+        "d": "Se cumprirá."
+      },
+      "hint": "Una queda e nome.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 39:4",
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da queda de Gogue.",
+      "verseRef": "Ezequiel 39:1–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus está contra Gogue"
+        },
+        {
+          "id": "b",
+          "text": "Ele cai e há fogo"
+        },
+        {
+          "id": "c",
+          "text": "O santo nome é conhecido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Farei conhecido o meu santo nome entre o meu povo de Israel",
+      "feedbackCorrect": "Oposição → queda → nome.",
+      "feedbackWrong": {
+        "default": "Comece na oposição."
+      },
+      "hint": "Comece na oposição.",
+      "learningObjective": "Encadear a queda.",
+      "evidence": [
+        "Ezequiel 39:1",
+        "Ezequiel 39:4",
+        "Ezequiel 39:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 39:8, este é o ___ sobre o qual tenho falado.",
+      "verseRef": "Ezequiel 39:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "dia"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este é o dia sobre o qual tenho falado",
+      "feedbackCorrect": "A palavra é dia.",
+      "feedbackWrong": {
+        "b": "Não é templo.",
+        "c": "Não é rio."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o dia.",
+      "evidence": [
+        "Ezequiel 39:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 39:7 a Isaías 45:6?",
+      "verseRef": "Ezequiel 39:7",
+      "passageA": {
+        "ref": "Ezequiel 39:7"
+      },
+      "passageB": {
+        "ref": "Isaías 45:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Saibam que eu sou o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Porta fechada"
+        },
+        {
+          "id": "c",
+          "text": "Crocodilo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações saberão que eu sou o Senhor",
+      "feedbackCorrect": "Nos dois, as nações devem saber quem é o Senhor.",
+      "feedbackWrong": {
+        "b": "Porta está em 44.",
+        "c": "Crocodilo está em 32."
+      },
+      "hint": "Compare o saber.",
+      "learningObjective": "Ligar a Isaías.",
+      "evidence": [
+        "Ezequiel 39:7"
+      ]
+    }
+  ]
+}

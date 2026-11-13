@@ -1,0 +1,913 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 20:1–10",
+    "passages": [
+      {
+        "ref": "2 Samuel 20:1–10"
+      },
+      {
+        "ref": "2 Samuel 21:1–9"
+      },
+      {
+        "ref": "2 Samuel 22:1–7"
+      },
+      {
+        "ref": "2 Samuel 23:1–7"
+      },
+      {
+        "ref": "2 Samuel 24:10–19"
+      }
+    ],
+    "context": "Esta Travessia revisa: Revise Seba, os gibeonitas, o cântico, as últimas palavras e o censo.",
+    "keyword": "Então",
+    "keywordGloss": "Termo central da revisão.",
+    "focusQuestion": "O que esta Travessia pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Revisão",
+      "Decisão",
+      "Fidelidade"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Samuel 20:1 menciona Então.",
+        "evidenceRef": "2 Samuel 20:1",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "O texto em 2 Samuel 20:2 menciona Então.",
+        "evidenceRef": "2 Samuel 20:2",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "O texto em 2 Samuel 20:3 menciona voltar.",
+        "evidenceRef": "2 Samuel 20:3",
+        "evidenceSpan": "voltar"
+      },
+      {
+        "text": "O texto em 2 Samuel 20:4 menciona Disse.",
+        "evidenceRef": "2 Samuel 20:4",
+        "evidenceSpan": "Disse"
+      },
+      {
+        "text": "O texto em 2 Samuel 20:5 menciona Amasa.",
+        "evidenceRef": "2 Samuel 20:5",
+        "evidenceSpan": "Amasa"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Então",
+        "gloss": "Termo do trecho."
+      },
+      {
+        "term": "achou",
+        "gloss": "Termo do trecho."
+      },
+      {
+        "term": "homem",
+        "gloss": "Termo do trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Movimento 1",
+        "evidenceRef": "2 Samuel 20:1"
+      },
+      {
+        "label": "Movimento 2",
+        "evidenceRef": "2 Samuel 20:2"
+      },
+      {
+        "label": "Movimento 3",
+        "evidenceRef": "2 Samuel 20:3"
+      },
+      {
+        "label": "Movimento 4",
+        "evidenceRef": "2 Samuel 20:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "A etapa avança cena após cena.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 20:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O desfecho da revisão aparece no fim.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 20:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 37:5",
+        "bridge": "Entregar o caminho"
+      },
+      {
+        "ref": "Provérbios 3:5",
+        "bridge": "Confiar no Senhor"
+      },
+      {
+        "ref": "Salmos 51:1",
+        "bridge": "Misericórdia e pecado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A etapa não tem fio condutor.",
+        "why": "As cenas se encadeiam na revisão."
+      },
+      {
+        "text": "O Senhor está ausente do bloco.",
+        "why": "O Senhor atravessa as decisões."
+      },
+      {
+        "text": "Não há custo nas escolhas.",
+        "why": "Cada cena carrega consequência."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 20:2, o que a revisão destaca?",
+    "centralInsight": "Até no fim, Davi aprende a cair nas mãos misericordiosas do Senhor"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "feedbackCorrect": "Conforme o texto.",
+      "hint": "Veja o verso.",
+      "learningObjective": "Avaliar o fato.",
+      "question": "Em 2 Samuel 20:1, o texto omite qualquer menção a Então.",
+      "verseRef": "2 Samuel 20:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "true": "Releia."
+      },
+      "evidence": [
+        "2 Samuel 20:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 20:1, toque o termo pedido.",
+      "verseRef": "2 Samuel 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "achou"
+        },
+        {
+          "id": "c",
+          "text": "Belial"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "achou",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 20:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "feedbackCorrect": "Fato.",
+      "hint": "Leia.",
+      "learningObjective": "Escolher.",
+      "question": "Segundo 2 Samuel 20:2, o que se destaca?",
+      "verseRef": "2 Samuel 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato fala de Então"
+        },
+        {
+          "id": "b",
+          "text": "Uma leitura que o texto não sustenta"
+        },
+        {
+          "id": "c",
+          "text": "Outro detalhe alheio"
+        },
+        {
+          "id": "d",
+          "text": "Conclusão invertida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Ordem.",
+      "hint": "Início.",
+      "learningObjective": "Ordenar.",
+      "question": "Monte 2 Samuel 20:1 na ordem do texto.",
+      "verseRef": "2 Samuel 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, achou-se ali um homem"
+        },
+        {
+          "id": "b",
+          "text": "homem de Belial, chamado Seba, filho"
+        },
+        {
+          "id": "c",
+          "text": "Seba, filho de Bicri, da tribo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então, achou-se ali um homem",
+      "feedbackWrong": {
+        "default": "Siga o texto."
+      },
+      "evidence": [
+        "2 Samuel 20:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "feedbackCorrect": "Palavra do texto.",
+      "hint": "Palavra exata.",
+      "learningObjective": "Completar.",
+      "question": "Em 2 Samuel 20:3, complete a lacuna.",
+      "verseRef": "2 Samuel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "voltar"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltar",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "feedbackCorrect": "Liga.",
+      "hint": "Contexto.",
+      "learningObjective": "Ligar.",
+      "question": "O que 2 Samuel 20:1 comunica neste bloco?",
+      "verseRef": "2 Samuel 20:1",
+      "passageA": {
+        "ref": "2 Samuel 20:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Revise Seba, os gibeonitas, o cântico, as últimas palavras e o censo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato da etapa"
+        },
+        {
+          "id": "b",
+          "text": "Sem ligação"
+        },
+        {
+          "id": "c",
+          "text": "Outro bloco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "b": "Há.",
+        "c": "Deste bloco."
+      },
+      "evidence": [
+        "2 Samuel 20:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 20:2, toque outro termo do relato.",
+      "verseRef": "2 Samuel 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "desviaram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "homens",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Chamado, conflito e resposta.",
+      "hint": "Fluxo.",
+      "learningObjective": "Encadear.",
+      "question": "Ordene o encadeamento da revisão.",
+      "verseRef": "2 Samuel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ao voltar Davi para sua casa"
+        },
+        {
+          "id": "b",
+          "text": "sua casa em Jerusalém, o rei"
+        },
+        {
+          "id": "c",
+          "text": "o rei tomou as dez concubinas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ao voltar Davi para sua casa",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "feedbackCorrect": "Conforme o texto.",
+      "hint": "Veja o verso.",
+      "learningObjective": "Avaliar o fato.",
+      "question": "Em 2 Samuel 20:2, o texto menciona Então.",
+      "verseRef": "2 Samuel 20:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackWrong": {
+        "false": "Releia."
+      },
+      "evidence": [
+        "2 Samuel 20:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 20:2, toque o termo pedido.",
+      "verseRef": "2 Samuel 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "desviaram"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 20:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "feedbackCorrect": "Fato.",
+      "hint": "Leia.",
+      "learningObjective": "Escolher.",
+      "question": "Segundo 2 Samuel 20:3, o que se destaca?",
+      "verseRef": "2 Samuel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato destaca a decisão central da cena"
+        },
+        {
+          "id": "b",
+          "text": "Uma leitura que o texto não sustenta"
+        },
+        {
+          "id": "c",
+          "text": "Outro detalhe alheio ao trecho"
+        },
+        {
+          "id": "d",
+          "text": "Uma conclusão invertida do relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltar",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Ordem da etapa.",
+      "hint": "Fluxo.",
+      "learningObjective": "Ordenar etapa.",
+      "question": "Ordene os movimentos da etapa.",
+      "verseRef": "2 Samuel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abertura do bloco"
+        },
+        {
+          "id": "b",
+          "text": "Conflito no centro"
+        },
+        {
+          "id": "c",
+          "text": "Virada do relato"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "voltar",
+      "feedbackWrong": {
+        "default": "Comece pelo primeiro."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "feedbackCorrect": "Palavra do texto.",
+      "hint": "Palavra exata.",
+      "learningObjective": "Completar.",
+      "question": "Em 2 Samuel 20:4, complete a lacuna.",
+      "verseRef": "2 Samuel 20:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "feedbackCorrect": "Confiança.",
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "question": "O que liga 2 Samuel 20:3 a Salmos 37:5?",
+      "verseRef": "2 Samuel 20:3",
+      "passageA": {
+        "ref": "2 Samuel 20:3"
+      },
+      "passageB": {
+        "ref": "Salmos 37:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Entregar o caminho"
+        },
+        {
+          "id": "b",
+          "text": "Fugir do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Sem confiança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltar",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:3",
+        "Salmos 37:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 20:3, toque outro termo do relato.",
+      "verseRef": "2 Samuel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Chamado, conflito e resposta.",
+      "hint": "Fluxo.",
+      "learningObjective": "Encadear.",
+      "question": "Ordene o encadeamento da revisão. (cam)",
+      "verseRef": "2 Samuel 20:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relembrar a aliança"
+        },
+        {
+          "id": "b",
+          "text": "Enfrentar a crise"
+        },
+        {
+          "id": "c",
+          "text": "Confiar o desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "evidence": [
+        "2 Samuel 20:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "feedbackCorrect": "Conforme o texto.",
+      "hint": "Veja o verso.",
+      "learningObjective": "Avaliar o fato.",
+      "question": "Em 2 Samuel 20:3, o texto menciona voltar.",
+      "verseRef": "2 Samuel 20:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "voltar",
+      "feedbackWrong": {
+        "false": "Releia."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 20:3, toque o termo pedido.",
+      "verseRef": "2 Samuel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "tomou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "casa",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 20:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "feedbackCorrect": "Fato.",
+      "hint": "Leia.",
+      "learningObjective": "Escolher.",
+      "question": "Segundo 2 Samuel 20:4, o que se destaca?",
+      "verseRef": "2 Samuel 20:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato destaca a decisão central da cena"
+        },
+        {
+          "id": "b",
+          "text": "Uma leitura que o texto não sustenta"
+        },
+        {
+          "id": "c",
+          "text": "Outro detalhe alheio ao trecho"
+        },
+        {
+          "id": "d",
+          "text": "Uma conclusão invertida do relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não.",
+        "d": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Ordem da etapa.",
+      "hint": "Fluxo.",
+      "learningObjective": "Ordenar etapa.",
+      "question": "Ordene os movimentos da etapa. (pro)",
+      "verseRef": "2 Samuel 20:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado inicial"
+        },
+        {
+          "id": "b",
+          "text": "Prova da fé"
+        },
+        {
+          "id": "c",
+          "text": "Resposta final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackWrong": {
+        "default": "Comece pelo primeiro."
+      },
+      "evidence": [
+        "2 Samuel 20:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "feedbackCorrect": "Palavra do texto.",
+      "hint": "Palavra exata.",
+      "learningObjective": "Completar.",
+      "question": "Em 2 Samuel 20:5, complete a lacuna.",
+      "verseRef": "2 Samuel 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amasa"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Amasa",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "feedbackCorrect": "Confiança.",
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "question": "O que liga 2 Samuel 20:5 a Provérbios 3:5?",
+      "verseRef": "2 Samuel 20:5",
+      "passageA": {
+        "ref": "2 Samuel 20:5"
+      },
+      "passageB": {
+        "ref": "Provérbios 3:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiar no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Confiar só em si"
+        },
+        {
+          "id": "c",
+          "text": "Sem caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Amasa",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "evidence": [
+        "2 Samuel 20:5",
+        "Provérbios 3:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar.",
+      "question": "Em 2 Samuel 20:4, toque outro termo do relato.",
+      "verseRef": "2 Samuel 20:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convoca"
+        },
+        {
+          "id": "b",
+          "text": "ainda"
+        },
+        {
+          "id": "c",
+          "text": "Judá"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ainda",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "evidence": [
+        "2 Samuel 20:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Chamado, conflito e resposta.",
+      "hint": "Fluxo.",
+      "learningObjective": "Encadear.",
+      "question": "Ordene o encadeamento da revisão. (pro)",
+      "verseRef": "2 Samuel 20:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confessar a falha"
+        },
+        {
+          "id": "b",
+          "text": "Aceitar a disciplina"
+        },
+        {
+          "id": "c",
+          "text": "Voltar ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Amasa",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "evidence": [
+        "2 Samuel 20:5"
+      ]
+    }
+  ]
+}

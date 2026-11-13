@@ -1,0 +1,61 @@
+{
+  "slug": "joao-cap",
+  "prefix": "joc",
+  "book": "João",
+  "chapters": 21,
+  "title": "João",
+  "description": "João capítulo a capítulo: sinais e palavras para que você creia e tenha vida.",
+  "icon": "🦅",
+  "color": "#6C5CE7",
+  "order": 44,
+  "realm": "novo-testamento",
+  "category": "evangelhos",
+  "avoidTrails": ["joao", "evangelhos"],
+  "modules": [
+    {
+      "title": "O Verbo entre nós · cap. 1–5",
+      "scenes": [
+        { "ref": "João 1:35–42", "title": "Venham e vejam", "intro": "Dois discípulos de João seguem Jesus, e ele pergunta: o que vocês procuram?", "insight": "Quem encontra Jesus vai chamar o irmão: achamos o Messias.", "objective": "Encontrar e anunciar" },
+        { "ref": "João 2:1–11", "title": "O vinho em Caná", "intro": "Numa festa de casamento, o vinho acaba, e Maria fala com Jesus.", "insight": "No primeiro sinal, Jesus transforma água em vinho e mostra sua glória.", "objective": "O primeiro sinal" },
+        { "ref": "João 3:14–21", "title": "Deus amou o mundo", "intro": "Jesus fala a Nicodemos da serpente levantada no deserto e do amor de Deus.", "insight": "Deus amou o mundo e deu o Filho para que quem crê tenha a vida eterna.", "objective": "O amor que dá o Filho" },
+        { "ref": "João 4:7–15", "title": "A água viva", "intro": "Ao meio-dia, junto ao poço, Jesus pede água a uma mulher samaritana.", "insight": "Jesus oferece uma água que mata a sede de verdade e vira fonte de vida.", "objective": "A sede que só Jesus sacia" },
+        { "ref": "João 5:1–9", "title": "Levanta-te e anda", "intro": "Um homem doente há trinta e oito anos espera junto ao tanque de Betesda.", "insight": "Jesus faz por uma palavra o que o homem esperou a vida inteira.", "objective": "A palavra que levanta" }
+      ],
+      "boss": { "title": "Travessia: O Verbo entre nós", "intro": "Revise os primeiros discípulos, Caná, o amor de Deus, a água viva e Betesda.", "insight": "Em Jesus, Deus vem morar entre nós" }
+    },
+    {
+      "title": "Eu sou · cap. 6–10",
+      "scenes": [
+        { "ref": "João 6:32–40", "title": "O pão da vida", "intro": "Depois de multiplicar os pães, Jesus diz à multidão quem é o verdadeiro pão do céu.", "insight": "Jesus é o pão da vida: quem vem a ele nunca terá fome.", "objective": "Eu sou o pão da vida" },
+        { "ref": "João 7:37–39", "title": "Rios de água viva", "intro": "No último dia da festa, Jesus se levanta e clama: se alguém tem sede, venha a mim.", "insight": "Do interior de quem crê fluem rios de água viva: o Espírito.", "objective": "O Espírito em quem crê" },
+        { "ref": "João 8:31–36", "title": "A verdade liberta", "intro": "Jesus fala a judeus que creram nele sobre permanecer na sua palavra.", "insight": "Quem permanece na palavra de Jesus conhece a verdade e fica livre de fato.", "objective": "Livres pelo Filho" },
+        { "ref": "João 9:1–7", "title": "O cego de nascença", "intro": "Os discípulos perguntam de quem foi o pecado que fez um homem nascer cego.", "insight": "Jesus é a luz do mundo, e a cegueira vira lugar para a obra de Deus.", "objective": "Eu sou a luz do mundo" },
+        { "ref": "João 10:11–18", "title": "O bom pastor", "intro": "Jesus se compara a um pastor e fala do que faz pelas ovelhas.", "insight": "O bom pastor conhece as ovelhas e dá a vida por elas.", "objective": "Eu sou o bom pastor" }
+      ],
+      "boss": { "title": "Travessia: Eu sou", "intro": "Revise o pão da vida, a água viva, a verdade, a luz e o bom pastor.", "insight": "Jesus diz quem é: pão, luz, pastor" }
+    },
+    {
+      "title": "A hora chegou · cap. 11–15",
+      "scenes": [
+        { "ref": "João 11:21–27", "title": "Eu sou a ressurreição", "intro": "Lázaro morreu, e Marta vai ao encontro de Jesus com uma queixa e uma esperança.", "insight": "Jesus é a ressurreição e a vida: quem crê nele, ainda que morra, viverá.", "objective": "A vida mais forte que a morte" },
+        { "ref": "João 12:23–28", "title": "O grão de trigo", "intro": "Gregos procuram Jesus, e ele diz que chegou a hora de ser glorificado.", "insight": "Como o grão que morre e dá muito fruto, a vida entregue é a que permanece.", "objective": "Perder para frutificar" },
+        { "ref": "João 13:3–15", "title": "Jesus lava os pés", "intro": "Antes da Páscoa, Jesus se levanta da ceia, pega uma toalha e lava os pés dos discípulos.", "insight": "O Mestre lava os pés dos discípulos e deixa o exemplo do serviço.", "objective": "Servir como Jesus" },
+        { "ref": "João 14:15–21", "title": "Não os deixarei órfãos", "intro": "Na despedida, Jesus promete outro Consolador para estar com os discípulos.", "insight": "Quem ama Jesus guarda a palavra dele e não fica órfão: o Espírito vem.", "objective": "O Consolador prometido" },
+        { "ref": "João 15:12–17", "title": "Vocês são meus amigos", "intro": "Jesus dá aos discípulos um mandamento e os chama de um jeito novo.", "insight": "Jesus chama de amigos os que ele escolheu e manda amar como ele amou.", "objective": "Amigos que se amam" }
+      ],
+      "boss": { "title": "Travessia: A hora chegou", "intro": "Revise Marta, o grão de trigo, o lava-pés, o Consolador e os amigos.", "insight": "Na hora de Jesus, o amor se entrega" }
+    },
+    {
+      "title": "Para que vocês creiam · cap. 16–21",
+      "scenes": [
+        { "ref": "João 16:20–24", "title": "A tristeza vira alegria", "intro": "Jesus avisa que os discípulos vão chorar, mas compara essa dor à de um parto.", "insight": "A tristeza dos discípulos vira uma alegria que ninguém pode tirar.", "objective": "Alegria que permanece" },
+        { "ref": "João 17:20–26", "title": "Que todos sejam um", "intro": "Jesus ora ao Pai pelos discípulos e por todos que vão crer por meio deles.", "insight": "Jesus ora pela unidade dos que creem, para que o mundo creia.", "objective": "A oração pela unidade" },
+        { "ref": "João 18:33–38", "title": "O que é a verdade?", "intro": "Pilatos interroga Jesus e pergunta se ele é rei.", "insight": "O Reino de Jesus não é deste mundo, e quem é da verdade ouve a voz dele.", "objective": "O Rei e a verdade" },
+        { "ref": "João 19:16–22", "title": "O Rei dos judeus", "intro": "Jesus carrega a cruz até o Calvário, e Pilatos manda escrever um título.", "insight": "Sem querer, a placa da cruz anuncia a verdade: Jesus é o Rei.", "objective": "O Rei crucificado" },
+        { "ref": "João 20:24–29", "title": "Senhor meu e Deus meu", "intro": "Tomé não estava quando Jesus apareceu e diz que só crê se tocar as feridas.", "insight": "Felizes os que não viram e creram: Jesus é Senhor e Deus.", "objective": "Crer sem ver" },
+        { "ref": "João 21:15–19", "title": "Tu me amas?", "intro": "À beira do mar, depois da refeição, Jesus pergunta três vezes a Pedro.", "insight": "Jesus restaura Pedro com uma pergunta de amor e um chamado: apascenta as minhas ovelhas.", "objective": "Restaurado para servir" }
+      ],
+      "boss": { "title": "Travessia: Para que vocês creiam", "intro": "Revise a alegria, a unidade, a verdade, a cruz, Tomé e Pedro restaurado.", "insight": "Tudo foi escrito para que você creia" }
+    }
+  ]
+}

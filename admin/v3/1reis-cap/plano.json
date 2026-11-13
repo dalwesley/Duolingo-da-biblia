@@ -1,0 +1,208 @@
+{
+  "slug": "1reis-cap",
+  "prefix": "r1c",
+  "book": "1 Reis",
+  "chapters": 22,
+  "title": "1 Reis",
+  "description": "1 Reis capítulo a capítulo: Salomão, o templo, a divisão e os profetas.",
+  "icon": "🏛️",
+  "color": "#8E6A5A",
+  "order": 14,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["reis"],
+  "modules": [
+    {
+      "title": "Salomão sobe · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "1 Reis 1:32–40",
+          "title": "Salomão ungido",
+          "intro": "Davi manda ungir Salomão, e o povo se alegra com grande júbilo.",
+          "insight": "O Senhor estabelece o sucessor: trombeta, unção e alegria anunciam o novo rei.",
+          "objective": "Receber o rei indicado"
+        },
+        {
+          "ref": "1 Reis 2:1–12",
+          "title": "Guarda os preceitos",
+          "intro": "Antes de morrer, Davi encarrega Salomão de andar nos caminhos do Senhor.",
+          "insight": "Força de rei começa na obediência: guardar a lei para prosperar no caminho.",
+          "objective": "Andar nos caminhos"
+        },
+        {
+          "ref": "1 Reis 3:16–28",
+          "chapters": "3–4",
+          "title": "Duas mães, um bebê",
+          "intro": "Duas mulheres disputam um filho vivo, e Salomão precisa julgar.",
+          "insight": "O povo vê que a sabedoria de Deus está em Salomão para fazer justiça.",
+          "objective": "Julgar com sabedoria"
+        },
+        {
+          "ref": "1 Reis 5:1–12",
+          "title": "Cedros para a casa",
+          "intro": "Salomão fala com Hirão: quer edificar a casa do Senhor e pede madeira.",
+          "insight": "Em tempo de paz, Salomão prepara o templo que Davi não pôde construir.",
+          "objective": "Preparar a casa do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Salomão sobe",
+        "intro": "Revise a unção, o encargo de Davi, o julgamento sábio e a aliança com Hirão.",
+        "insight": "O reinado começa com unção, obediência e sabedoria para edificar"
+      }
+    },
+    {
+      "title": "Templo e fama · cap. 6–10",
+      "scenes": [
+        {
+          "ref": "1 Reis 6:1–10",
+          "chapters": "6–7",
+          "title": "A casa começa",
+          "intro": "No quarto ano de Salomão, a construção do templo é iniciada.",
+          "insight": "A casa do Senhor sobe com ordem e cuidado: edificar a Deus pede tempo e fé.",
+          "objective": "Edificar com cuidado"
+        },
+        {
+          "ref": "1 Reis 8:22–30",
+          "title": "Oração na dedicação",
+          "intro": "Salomão estende as mãos e ora na presença de toda a congregação.",
+          "insight": "Os céus não podem conter a Deus, mas Ele ouve a oração feita para este lugar.",
+          "objective": "Orar ao Deus que ouve"
+        },
+        {
+          "ref": "1 Reis 9:1–9",
+          "title": "Se caminhares diante de mim",
+          "intro": "O Senhor aparece de novo a Salomão depois da obra concluída.",
+          "insight": "A casa fica santa, mas a fidelidade decide se o trono permanece.",
+          "objective": "Permanecer fiel"
+        },
+        {
+          "ref": "1 Reis 10:1–10",
+          "title": "A rainha de Sabá",
+          "intro": "A rainha vem provar Salomão com perguntas e fica sem fôlego.",
+          "insight": "A fama ligada ao nome do Senhor atrai nações: a sabedoria supera o que se ouviu.",
+          "objective": "A sabedoria que atrai"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Templo e fama",
+        "intro": "Revise o início do templo, a oração, a aparição do Senhor e a rainha de Sabá.",
+        "insight": "Glória e sabedoria florescem quando o Senhor habita no centro"
+      }
+    },
+    {
+      "title": "Queda e divisão · cap. 11–14",
+      "scenes": [
+        {
+          "ref": "1 Reis 11:9–14",
+          "title": "O coração desviado",
+          "intro": "O Senhor se indignou contra Salomão, que não guardou a aliança.",
+          "insight": "Desviar o coração tem custo: o reino será rasgado, embora não no dia de Salomão.",
+          "objective": "Guardar o coração"
+        },
+        {
+          "ref": "1 Reis 12:9–15",
+          "title": "Conselho dos jovens",
+          "intro": "Roboão rejeita os anciãos e fala ao povo conforme os jovens.",
+          "insight": "O rei endurece a resposta, e o Senhor usa até esse erro no seu plano.",
+          "objective": "Ouvir bom conselho"
+        },
+        {
+          "ref": "1 Reis 13:1–10",
+          "title": "O altar se fende",
+          "intro": "Um homem de Deus clama contra o altar de Jeroboão em Betel.",
+          "insight": "A palavra do Senhor confirma o sinal: o altar se fende, e a mão do rei seca.",
+          "objective": "Temer a palavra"
+        },
+        {
+          "ref": "1 Reis 14:1–11",
+          "title": "Mensagem a Jeroboão",
+          "intro": "A mulher de Jeroboão vai a Aías em disfarce por causa do filho doente.",
+          "insight": "Nada se esconde do Senhor: Aías anuncia juízo sobre a casa de Jeroboão.",
+          "objective": "Deus vê o disfarce"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Queda e divisão",
+        "intro": "Revise o desvio de Salomão, Roboão, o altar de Betel e a palavra contra Jeroboão.",
+        "insight": "Coração dividido e mau conselho rasgam o reino"
+      }
+    },
+    {
+      "title": "Reis e Elias · cap. 15–18",
+      "scenes": [
+        {
+          "ref": "1 Reis 15:9–15",
+          "title": "Asa faz o reto",
+          "intro": "Asa reinou em Judá e removeu ídolos, até da própria mãe.",
+          "insight": "O coração de Asa foi completamente do Senhor todos os seus dias.",
+          "objective": "Fazer o reto"
+        },
+        {
+          "ref": "1 Reis 16:29–34",
+          "title": "Acabe começa",
+          "intro": "Acabe sobe ao trono e faz o que é mau mais do que os anteriores.",
+          "insight": "Servir a Baal e reedificar Jericó marcam um reinado que desafia o Senhor.",
+          "objective": "Não seguir a Baal"
+        },
+        {
+          "ref": "1 Reis 17:8–16",
+          "title": "A viúva de Sarepta",
+          "intro": "Elias pede pão a uma viúva que só tem um punhado de farinha.",
+          "insight": "A farinha não acaba e o azeite não falta: o Senhor sustenta quem confia.",
+          "objective": "Confiar na provisão"
+        },
+        {
+          "ref": "1 Reis 18:30–39",
+          "title": "Fogo do céu",
+          "intro": "Elias repara o altar do Senhor e ora para que o povo saiba quem é Deus.",
+          "insight": "O fogo do Senhor cai: o povo clama que só o Senhor é Deus.",
+          "objective": "O Senhor é Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Reis e Elias",
+        "intro": "Revise Asa, Acabe, a viúva e o fogo no Carmelo.",
+        "insight": "Enquanto reis se desviam, o Senhor sustenta e se revela pelo profeta"
+      }
+    },
+    {
+      "title": "Acabe e o fim · cap. 19–22",
+      "scenes": [
+        {
+          "ref": "1 Reis 19:9–18",
+          "title": "Voz suave",
+          "intro": "Elias se esconde na caverna, cansado e sozinho, e o Senhor passa.",
+          "insight": "O Senhor não estava no vento, no terremoto nem no fogo, mas na voz suave.",
+          "objective": "Ouvir a voz suave"
+        },
+        {
+          "ref": "1 Reis 20:31–43",
+          "title": "Acabe poupa Ben-Hadade",
+          "intro": "Acabe faz aliança com o rei da Síria, e um profeta o confronta.",
+          "insight": "Libertar quem o Senhor entregou à morte custa a própria vida do rei.",
+          "objective": "Não negociar a obediência"
+        },
+        {
+          "ref": "1 Reis 21:17–24",
+          "title": "O sangue de Nabote",
+          "intro": "Elias encontra Acabe depois da morte de Nabote e anuncia juízo.",
+          "insight": "Quem toma a vinha com sangue ouvirá o juízo do Senhor no mesmo lugar.",
+          "objective": "Não cobiçar com violência"
+        },
+        {
+          "ref": "1 Reis 22:29–38",
+          "title": "A flecha ao acaso",
+          "intro": "Acabe entra disfarçado na batalha, e uma flecha o encontra entre as juntas da armadura.",
+          "insight": "Nenhum disfarce segura o juízo: a palavra contra Acabe se cumpre.",
+          "objective": "A palavra se cumpre"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Acabe e o fim",
+        "intro": "Revise a caverna de Elias, Ben-Hadade, Nabote e a morte de Acabe.",
+        "insight": "O Senhor corrige, julga a injustiça e cumpre a sua palavra"
+      }
+    }
+  ]
+}

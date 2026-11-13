@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Naum 1:2–7",
+    "passages": [
+      {
+        "ref": "Naum 1:2–7"
+      },
+      {
+        "ref": "Naum 1:1"
+      }
+    ],
+    "context": "Naum anuncia a sentença sobre Nínive. O mesmo Senhor que se ira contra o culpado é bom e fortaleza para quem nele se refugia.",
+    "keyword": "fortaleza",
+    "keywordGloss": "O Senhor como abrigo seguro no dia da angústia.",
+    "focusQuestion": "No dia da angústia, você corre para o Senhor como fortaleza ou só teme o seu furor?",
+    "reflectionPrompts": [
+      "Deus zeloso",
+      "Lento para se irar",
+      "Fortaleza na angústia"
+    ],
+    "facts": [
+      {
+        "text": "A visão é sentença sobre Nínive.",
+        "evidenceRef": "Naum 1:1",
+        "evidenceSpan": "Sentença sobre Nínive"
+      },
+      {
+        "text": "O Senhor é Deus zeloso e vingador.",
+        "evidenceRef": "Naum 1:2",
+        "evidenceSpan": "O Senhor é Deus zeloso e vingador"
+      },
+      {
+        "text": "O Senhor é lento para se irar, mas grande em poder.",
+        "evidenceRef": "Naum 1:3",
+        "evidenceSpan": "O Senhor é lento para se irar, mas grande em poder"
+      },
+      {
+        "text": "Ele jamais considera inocente o culpado.",
+        "evidenceRef": "Naum 1:3",
+        "evidenceSpan": "jamais considera inocente o culpado"
+      },
+      {
+        "text": "Ninguém pode resistir ao seu furor.",
+        "evidenceRef": "Naum 1:6",
+        "evidenceSpan": "Quem pode resistir ao seu furor?"
+      },
+      {
+        "text": "O Senhor é bom e fortaleza no dia da angústia.",
+        "evidenceRef": "Naum 1:7",
+        "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "fortaleza",
+        "gloss": "Abrigo do Senhor no dia da angústia."
+      },
+      {
+        "term": "refugiam",
+        "gloss": "Ação de quem busca o Senhor como abrigo."
+      },
+      {
+        "term": "culpado",
+        "gloss": "Quem o Senhor não trata como inocente."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sentença sobre Nínive",
+        "evidenceRef": "Naum 1:1"
+      },
+      {
+        "label": "O Senhor zeloso e vingador",
+        "evidenceRef": "Naum 1:2"
+      },
+      {
+        "label": "Lento para irar-se, sem inocentar o culpado",
+        "evidenceRef": "Naum 1:3"
+      },
+      {
+        "label": "Bom e fortaleza para quem se refugia",
+        "evidenceRef": "Naum 1:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "É lento para se irar, mas grande em poder.",
+        "marker": "mas",
+        "evidenceRef": "Naum 1:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Montes tremem e colinas se derretem diante dele.",
+        "marker": null,
+        "evidenceRef": "Naum 1:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Há furor irresistível, e também bondade como fortaleza.",
+        "marker": null,
+        "evidenceRef": "Naum 1:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e fortaleza"
+      },
+      {
+        "ref": "Êxodo 34:6–7",
+        "bridge": "Lento para irar-se, justo"
+      },
+      {
+        "ref": "Joel 3:16",
+        "bridge": "Refúgio do seu povo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Se o Senhor é bom, ele nunca julga o culpado.",
+        "why": "1:3 diz que jamais considera inocente o culpado."
+      },
+      {
+        "text": "O furor do Senhor não deixa espaço para refúgio.",
+        "why": "1:7 afirma que ele é fortaleza e conhece quem nele se refugia."
+      },
+      {
+        "text": "A sentença de Naum é só contra Israel, não contra Nínive.",
+        "why": "1:1 abre: sentença sobre Nínive."
+      }
+    ],
+    "centralInsight": "O Senhor é bom, fortaleza no dia da angústia, e conhece os que nele confiam.",
+    "anchorQuestion": "Segundo Naum 1:7, o que o Senhor é no dia da angústia?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+      "verseRef": "Naum 1:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+      "feedbackCorrect": "O versículo une bondade e fortaleza no dia da angústia.",
+      "feedbackWrong": {
+        "false": "Releia 1:7: o Senhor é bom e fortaleza."
+      },
+      "hint": "Veja como o versículo descreve o Senhor.",
+      "learningObjective": "Observar a descrição do Senhor em 1:7.",
+      "evidence": [
+        "Naum 1:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Naum 1:7, toque o que o Senhor é no dia da angústia.",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "é fortaleza no dia da angústia",
+      "feedbackCorrect": "Ele é fortaleza no dia da angústia.",
+      "hint": "Procure o substantivo de proteção.",
+      "learningObjective": "Identificar a imagem de proteção.",
+      "evidence": [
+        "Naum 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "angústia"
+        },
+        {
+          "id": "c",
+          "text": "refugiam"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Angústia\" é o tempo do dia, não o que o Senhor é.",
+        "c": "\"Refugiam\" descreve quem busca; o Senhor é a fortaleza."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Naum 1:3, o Senhor é lento para quê?",
+      "verseRef": "Naum 1:3",
+      "evidenceSpan": "O Senhor é lento para se irar",
+      "feedbackCorrect": "Ele é lento para se irar, mas grande em poder.",
+      "hint": "Veja o começo do versículo.",
+      "learningObjective": "Observar a lentidão do Senhor para irar-se.",
+      "evidence": [
+        "Naum 1:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Para se irar"
+        },
+        {
+          "id": "b",
+          "text": "Para salvar Nínive"
+        },
+        {
+          "id": "c",
+          "text": "Para ouvir o mar"
+        },
+        {
+          "id": "d",
+          "text": "Para esquecer o culpado"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto não fala de salvar Nínive.",
+        "c": "Ele repreende o mar; não é lentidão para ouvi-lo.",
+        "d": "Ele jamais considera inocente o culpado."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Naum 1:7 na ordem do texto.",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+      "feedbackCorrect": "Bom; fortaleza na angústia; conhece quem se refugia.",
+      "hint": "Comece por \"O Senhor é bom\".",
+      "learningObjective": "Reconhecer a sequência de 1:7.",
+      "evidence": [
+        "Naum 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é bom"
+        },
+        {
+          "id": "b",
+          "text": "é fortaleza no dia da angústia"
+        },
+        {
+          "id": "c",
+          "text": "e conhece os que nele se refugiam"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Bondade primeiro; o refúgio fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Naum 1:3, que palavra descreve quem o Senhor não considera inocente?",
+      "verseRef": "Naum 1:3",
+      "evidenceSpan": "jamais considera inocente o culpado",
+      "feedbackCorrect": "Ele não considera inocente o culpado.",
+      "hint": "É o substantivo no fim dessa frase.",
+      "learningObjective": "Lembrar quem não é inocentado.",
+      "evidence": [
+        "Naum 1:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "amigo"
+        },
+        {
+          "id": "b",
+          "text": "culpado"
+        },
+        {
+          "id": "c",
+          "text": "servo"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Amigo\" não aparece nessa frase.",
+        "c": "\"Servo\" não aparece nessa frase."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "conhece os que nele se refugiam",
+      "feedbackCorrect": "No juízo sobre Nínive, há abrigo para quem se refugia nele.",
+      "hint": "Veja quem o Senhor conhece.",
+      "learningObjective": "Ligar juízo e refúgio.",
+      "evidence": [
+        "Naum 1:7"
+      ],
+      "passageA": {
+        "ref": "Naum 1:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Naum anuncia juízo a Nínive e abrigo a quem confia no Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Abrigo para quem se refugia"
+        },
+        {
+          "id": "b",
+          "text": "Inocência automática de Nínive"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda angústia humana"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O culpado não é considerado inocente.",
+        "c": "Há dia da angústia; o Senhor é fortaleza nele."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Naum 1:3, o Senhor é lento para se irar e, por isso, considera inocente o culpado.",
+      "verseRef": "Naum 1:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "jamais considera inocente o culpado",
+      "feedbackCorrect": "Ele é lento para irar-se, mas jamais inocenta o culpado.",
+      "feedbackWrong": {
+        "true": "Releia 1:3: jamais considera inocente o culpado."
+      },
+      "hint": "Veja o que ele faz com o culpado.",
+      "learningObjective": "Compreender lentidão e justiça juntas.",
+      "evidence": [
+        "Naum 1:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+      "verseRef": "Naum 1:3",
+      "evidenceSpan": "lento para se irar, mas grande em poder",
+      "feedbackCorrect": "\"Mas\" marca o contraste: lento, mas grande em poder.",
+      "hint": "É a palavra entre lentidão e poder.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Naum 1:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "lento"
+        },
+        {
+          "id": "c",
+          "text": "nuvens"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Lento\" é o primeiro polo, não o marcador.",
+        "c": "\"Nuvens\" aparece depois, na imagem da marcha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Naum 1:2–7 relaciona furor e bondade do Senhor?",
+      "verseRef": "Naum 1:6–7",
+      "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+      "feedbackCorrect": "O furor é irresistível contra o adversário; a bondade abriga quem se refugia.",
+      "hint": "Ligue 1:6 a 1:7.",
+      "learningObjective": "Relacionar furor e fortaleza.",
+      "evidence": [
+        "Naum 1:6–7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Furor contra o culpado; fortaleza para quem se refugia"
+        },
+        {
+          "id": "b",
+          "text": "Só bondade, sem nenhum juízo"
+        },
+        {
+          "id": "c",
+          "text": "Só furor, sem nenhum abrigo"
+        },
+        {
+          "id": "d",
+          "text": "O furor e a bondade se anulam"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há furor e vingança no trecho.",
+        "c": "1:7 afirma bondade e fortaleza.",
+        "d": "O texto apresenta os dois lados, não anulação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Naum 1:2–7?",
+      "verseRef": "Naum 1:2–7",
+      "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+      "feedbackCorrect": "Zelo e vingança; lentidão com justiça; fortaleza para os que se refugiam.",
+      "hint": "Comece pelo Deus zeloso.",
+      "learningObjective": "Seguir o movimento do caráter do Senhor.",
+      "evidence": [
+        "Naum 1:2–7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor se revela zeloso e vingador"
+        },
+        {
+          "id": "b",
+          "text": "É lento para irar-se, sem inocentar o culpado"
+        },
+        {
+          "id": "c",
+          "text": "É bom e fortaleza para quem se refugia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Zelo primeiro; a fortaleza fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+      "verseRef": "Naum 1:3",
+      "evidenceSpan": "mas grande em poder",
+      "feedbackCorrect": "Ele é grande em poder.",
+      "hint": "É o adjetivo ligado a poder.",
+      "learningObjective": "Lembrar o adjetivo do poder.",
+      "evidence": [
+        "Naum 1:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fraco"
+        },
+        {
+          "id": "b",
+          "text": "grande"
+        },
+        {
+          "id": "c",
+          "text": "curto"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Fraco\" é o oposto do texto.",
+        "c": "\"Curto\" não descreve o poder."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Naum 1:7 a Salmos 46:1?",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "é fortaleza no dia da angústia",
+      "feedbackCorrect": "Nos dois textos, Deus é fortaleza no aperto.",
+      "hint": "Compare fortaleza e angústia.",
+      "learningObjective": "Relacionar Naum ao Salmo da fortaleza.",
+      "evidence": [
+        "Naum 1:7",
+        "Salmos 46:1"
+      ],
+      "passageA": {
+        "ref": "Naum 1:7"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é fortaleza na angústia"
+        },
+        {
+          "id": "b",
+          "text": "Deus abandona quem confia"
+        },
+        {
+          "id": "c",
+          "text": "Deus protege só Nínive"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam abrigo, não abandono.",
+        "c": "Nínive é julgada; o abrigo é para quem se refugia."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Naum 1:2–7, o Senhor é bom e fortaleza, e também jamais inocenta o culpado.",
+      "verseRef": "Naum 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "jamais considera inocente o culpado",
+      "feedbackCorrect": "Bondade e juízo convivem: ele é fortaleza e não inocenta o culpado.",
+      "feedbackWrong": {
+        "false": "Una 1:7 e 1:3: bondade/fortaleza e juízo sobre o culpado."
+      },
+      "hint": "Veja o que acontece com o culpado.",
+      "learningObjective": "Interpretar bondade sem cancelar justiça.",
+      "evidence": [
+        "Naum 1:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "conhece os que nele se refugiam",
+      "feedbackCorrect": "Ele conhece os que nele se refugiam.",
+      "hint": "Procure o fim do versículo.",
+      "learningObjective": "Sustentar com o texto quem é conhecido.",
+      "evidence": [
+        "Naum 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "nele se refugiam"
+        },
+        {
+          "id": "b",
+          "text": "dia da angústia"
+        },
+        {
+          "id": "c",
+          "text": "é bom"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O dia da angústia é o tempo, não o grupo.",
+        "c": "\"É bom\" abre o versículo; o fim fala de quem se refugia."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Naum 1:2–7 sustenta sobre o Senhor?",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+      "feedbackCorrect": "Ele julga o culpado e abriga quem nele se refugia.",
+      "hint": "Ligue 1:3 e 1:7.",
+      "learningObjective": "Escolher a leitura de juízo com refúgio.",
+      "evidence": [
+        "Naum 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Julga o culpado e abriga quem nele se refugia"
+        },
+        {
+          "id": "b",
+          "text": "Só é bom e nunca se ira"
+        },
+        {
+          "id": "c",
+          "text": "Só se ira e não conhece ninguém"
+        },
+        {
+          "id": "d",
+          "text": "Trata Nínive e os fiéis do mesmo modo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há furor e vingança no texto.",
+        "c": "Ele conhece os que nele se refugiam.",
+        "d": "Há sentença sobre Nínive e abrigo aos que se refugiam."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o Senhor justo e refúgio na Escritura?",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+      "feedbackCorrect": "Naum une justiça e abrigo; Êxodo descreve o caráter; o Salmo confessa fortaleza.",
+      "hint": "Parta de Naum.",
+      "learningObjective": "Ver Naum no fio do caráter de Deus.",
+      "evidence": [
+        "Naum 1:7",
+        "Êxodo 34:6–7",
+        "Salmos 46:1"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Naum une juízo ao culpado e fortaleza aos fiéis"
+        },
+        {
+          "id": "b",
+          "text": "Êxodo descreve o Senhor lento para irar-se e justo"
+        },
+        {
+          "id": "c",
+          "text": "O Salmo confessa Deus como refúgio e fortaleza"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Naum 1:7, Êxodo 34 e Salmos 46:1."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "conhece os que nele se refugiam",
+      "feedbackCorrect": "Eles se refugiam nele.",
+      "hint": "É o verbo no fim do versículo.",
+      "learningObjective": "Lembrar o verbo de quem busca abrigo.",
+      "evidence": [
+        "Naum 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fogem"
+        },
+        {
+          "id": "b",
+          "text": "refugiam"
+        },
+        {
+          "id": "c",
+          "text": "esquecem"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Fogem\" não é o verbo do fim de 1:7.",
+        "c": "\"Esquecem\" é o oposto da confiança."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Naum 1:7 a Joel 3:16?",
+      "verseRef": "Naum 1:7",
+      "evidenceSpan": "é fortaleza no dia da angústia",
+      "feedbackCorrect": "Nos dois textos, o Senhor é abrigo do seu povo no dia terrível.",
+      "hint": "Compare fortaleza e refúgio.",
+      "learningObjective": "Ligar Naum ao refúgio em Joel.",
+      "evidence": [
+        "Naum 1:7",
+        "Joel 3:16"
+      ],
+      "passageA": {
+        "ref": "Naum 1:7"
+      },
+      "passageB": {
+        "ref": "Joel 3:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor abriga seu povo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor abandona Sião"
+        },
+        {
+          "id": "c",
+          "text": "Senhor inocenta Nínive"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam abrigo, não abandono.",
+        "c": "Nínive é julgada; o abrigo é para quem se refugia."
+      }
+    }
+  ]
+}

@@ -1,0 +1,502 @@
+{
+  "study": {
+    "passageRef": "João 5:5–9",
+    "passages": [
+      { "ref": "João 5:5–9" },
+      { "ref": "João 5:1–4" }
+    ],
+    "context": "Jesus subiu a Jerusalém numa festa dos judeus. Perto da Porta das Ovelhas havia o tanque de Betesda, com cinco pavilhões. Enfermos esperavam o movimento das águas. Entre eles, um homem estava doente havia trinta e oito anos.",
+    "keyword": "Levanta-te",
+    "keywordGloss": "Ordem de Jesus que põe o homem de pé sem depender do tanque.",
+    "focusQuestion": "Quando a espera já dura anos, você ainda crê que uma palavra de Jesus basta?",
+    "reflectionPrompts": [
+      "A espera de anos",
+      "A pergunta de Jesus",
+      "A ordem que levanta"
+    ],
+    "facts": [
+      {
+        "text": "Havia uma festa dos judeus, e Jesus subiu para Jerusalém.",
+        "evidenceRef": "João 5:1",
+        "evidenceSpan": "havia uma festa dos judeus, e Jesus subiu para Jerusalém"
+      },
+      {
+        "text": "Havia um tanque chamado Betesda, com cinco pavilhões.",
+        "evidenceRef": "João 5:2",
+        "evidenceSpan": "chamado em hebraico Betesda, que possuía cinco pavilhões"
+      },
+      {
+        "text": "Um homem estava enfermo havia trinta e oito anos.",
+        "evidenceRef": "João 5:5",
+        "evidenceSpan": "estava enfermo havia trinta e oito anos"
+      },
+      {
+        "text": "Jesus perguntou ao homem se ele desejava ser curado.",
+        "evidenceRef": "João 5:6",
+        "evidenceSpan": "Você deseja ser curado?"
+      },
+      {
+        "text": "Jesus disse ao homem que se levantasse, tomasse a cama e andasse.",
+        "evidenceRef": "João 5:8",
+        "evidenceSpan": "Levanta-te, toma a tua cama e anda"
+      },
+      {
+        "text": "Imediatamente o homem se viu curado, levantou sua cama e começou a andar.",
+        "evidenceRef": "João 5:9",
+        "evidenceSpan": "o homem se viu curado, levantou sua cama e começou a andar"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Levanta-te",
+        "gloss": "Ordem de Jesus que põe o enfermo de pé, sem esperar a água do tanque."
+      },
+      {
+        "term": "Imediatamente",
+        "gloss": "A cura não espera: acontece na hora em que Jesus fala."
+      },
+      {
+        "term": "Betesda",
+        "gloss": "Tanque em Jerusalém onde os enfermos aguardavam o movimento das águas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus chega ao tanque na festa",
+        "evidenceRef": "João 5:1–2"
+      },
+      {
+        "label": "O enfermo conta que não tem ajuda",
+        "evidenceRef": "João 5:7"
+      },
+      {
+        "label": "A ordem cura o homem na hora",
+        "evidenceRef": "João 5:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Jesus pergunta ao homem porque o vê deitado e sabe que a enfermidade já dura muito.",
+        "marker": "sabendo",
+        "evidenceRef": "João 5:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "O homem espera alguém para o tanque; Jesus não usa a água e manda que ele ande.",
+        "marker": null,
+        "evidenceRef": "João 5:7–8"
+      },
+      {
+        "kind": "resultado",
+        "text": "A ordem de Jesus produz a cura na hora, e o homem começa a andar.",
+        "marker": "Imediatamente",
+        "evidenceRef": "João 5:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Marcos 2:11",
+        "bridge": "Mesma ordem de Jesus"
+      },
+      {
+        "ref": "Mateus 8:13",
+        "bridge": "Cura na hora da fala"
+      },
+      {
+        "ref": "Salmos 107:20",
+        "bridge": "Deus sara pela palavra"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Este homem sarou porque entrou no tanque antes dos outros.",
+        "why": "Ele diz que não tem quem o coloque na água. Quem o levanta é a ordem de Jesus, e o efeito é imediato."
+      },
+      {
+        "text": "Jesus só pergunta, e o anjo é quem realiza a cura.",
+        "why": "O anjo explica a espera da multidão. Com este homem, Jesus ordena que ele se levante, e a cura vem na hora."
+      },
+      {
+        "text": "Trinta e oito anos mostram que a ordem de Jesus demorou a agir.",
+        "why": "Esse tempo descreve a espera do homem. O relato diz que ele se viu curado imediatamente."
+      }
+    ],
+    "centralInsight": "Jesus faz por uma palavra o que o homem esperou a vida inteira.",
+    "anchorQuestion": "Que ordem Jesus deu ao homem enfermo em Betesda, e o que ocorreu em seguida?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 5:1, havia uma festa dos judeus, e Jesus subiu para Jerusalém.",
+      "verseRef": "João 5:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "havia uma festa dos judeus, e Jesus subiu para Jerusalém",
+      "feedbackCorrect": "O versículo une a festa dos judeus à subida de Jesus para Jerusalém.",
+      "feedbackWrong": {
+        "false": "João 5:1 afirma a festa e diz que Jesus subiu para Jerusalém."
+      },
+      "hint": "Leia o que o versículo diz sobre Jesus.",
+      "learningObjective": "Observar a festa e a subida de Jesus para Jerusalém.",
+      "evidence": ["João 5:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 5:2, toque o nome do tanque.",
+      "verseRef": "João 5:2",
+      "options": [
+        { "id": "a", "text": "Porta das Ovelhas" },
+        { "id": "b", "text": "Betesda" },
+        { "id": "c", "text": "cinco pavilhões" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamado em hebraico Betesda",
+      "feedbackCorrect": "O tanque recebe em hebraico o nome Betesda.",
+      "feedbackWrong": {
+        "a": "A Porta das Ovelhas indica o lugar, não o nome do tanque.",
+        "c": "Cinco pavilhões descrevem a construção, não o nome."
+      },
+      "hint": "O versículo dá um nome próprio ao tanque.",
+      "learningObjective": "Identificar o nome do tanque onde os enfermos esperavam.",
+      "evidence": ["João 5:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 5:6, o que Jesus perguntou ao homem?",
+      "verseRef": "João 5:6",
+      "options": [
+        { "id": "a", "text": "Se desejava ser curado" },
+        { "id": "b", "text": "Se conseguia entrar sozinho" },
+        { "id": "c", "text": "Se aquele dia era sábado" },
+        { "id": "d", "text": "Se pretendia ir à festa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Você deseja ser curado?",
+      "feedbackCorrect": "Jesus pergunta se o homem deseja ser curado.",
+      "feedbackWrong": {
+        "b": "A pergunta não é se ele entraria sozinho no tanque.",
+        "c": "O sábado só aparece depois da cura, não na pergunta.",
+        "d": "A festa abre a cena; a pergunta de Jesus é sobre a cura."
+      },
+      "hint": "Leia a fala de Jesus no fim do versículo.",
+      "learningObjective": "Identificar a pergunta que Jesus faz ao homem enfermo.",
+      "evidence": ["João 5:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 5:8 na ordem do texto.",
+      "verseRef": "João 5:8",
+      "options": [
+        { "id": "a", "text": "Jesus lhe disse" },
+        { "id": "b", "text": "Levanta-te" },
+        { "id": "c", "text": "toma a tua cama e anda" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jesus lhe disse: Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "Jesus fala, ordena levantar e então tomar a cama e andar.",
+      "feedbackWrong": {
+        "default": "Comece por quem fala; a ordem de levantar vem antes de andar."
+      },
+      "hint": "A frase começa pela pessoa que fala.",
+      "learningObjective": "Reconhecer a sequência da fala de Jesus em João 5:8.",
+      "evidence": ["João 5:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 5:5, que número acompanha oito na conta dos anos?",
+      "verseRef": "João 5:5",
+      "options": [
+        { "id": "a", "text": "vinte" },
+        { "id": "b", "text": "trinta" },
+        { "id": "c", "text": "quarenta" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "havia trinta e oito anos",
+      "feedbackCorrect": "A enfermidade durava trinta e oito anos.",
+      "feedbackWrong": {
+        "a": "O texto diz trinta e oito, não vinte e oito.",
+        "c": "O número escrito é trinta e oito, não quarenta e oito."
+      },
+      "hint": "Leia o primeiro número da conta dos anos.",
+      "learningObjective": "Recordar o tempo da enfermidade citado no versículo.",
+      "evidence": ["João 5:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que liga João 5:5 a este contexto?",
+      "verseRef": "João 5:5",
+      "passageA": { "ref": "João 5:5" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No tanque, um homem doente havia trinta e oito anos esperava com os outros enfermos."
+      },
+      "options": [
+        { "id": "a", "text": "Enfermidade de muitos anos" },
+        { "id": "b", "text": "Festa dos judeus" },
+        { "id": "c", "text": "Cinco pavilhões do tanque" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enfermo havia trinta e oito anos",
+      "feedbackCorrect": "O versículo apresenta um homem enfermo havia trinta e oito anos.",
+      "feedbackWrong": {
+        "b": "A festa abre a cena; este versículo fala do tempo da doença.",
+        "c": "Os pavilhões descrevem o tanque; aqui o foco são os anos."
+      },
+      "hint": "Veja há quanto tempo o homem está doente.",
+      "learningObjective": "Ligar João 5:5 ao longo tempo de enfermidade do homem.",
+      "evidence": ["João 5:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 5:8–9, a cura do homem vem no instante em que Jesus ordena.",
+      "verseRef": "João 5:8–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Imediatamente, o homem se viu curado",
+      "feedbackCorrect": "A cura segue a ordem de Jesus e acontece na hora.",
+      "feedbackWrong": {
+        "false": "Logo após a ordem, o homem se vê curado, sem espera."
+      },
+      "hint": "Leia o que acontece logo depois da fala de Jesus.",
+      "learningObjective": "Compreender a cura como resultado da ordem de Jesus.",
+      "evidence": ["João 5:8–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 5:9, toque a palavra que marca o resultado da ordem.",
+      "verseRef": "João 5:9",
+      "options": [
+        { "id": "a", "text": "Imediatamente" },
+        { "id": "b", "text": "sábado" },
+        { "id": "c", "text": "sua cama" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Imediatamente, o homem se viu curado",
+      "feedbackCorrect": "Imediatamente mostra o resultado: a cura vem na hora da ordem.",
+      "feedbackWrong": {
+        "b": "Sábado indica o dia da cena, não o efeito da ordem.",
+        "c": "A cama é o que ele carrega; não marca o resultado."
+      },
+      "hint": "Olhe a palavra que abre o versículo.",
+      "learningObjective": "Reconhecer a palavra que marca o resultado da ordem de Jesus.",
+      "evidence": ["João 5:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação há entre a queixa do enfermo e a resposta de Jesus?",
+      "verseRef": "João 5:7–8",
+      "options": [
+        { "id": "a", "text": "A ordem substitui a espera pela água." },
+        { "id": "b", "text": "Alguém deveria colocá-lo no tanque agora." },
+        { "id": "c", "text": "Convém aguardar outra agitação das águas." },
+        { "id": "d", "text": "O relato apenas confirma a desvantagem dele." }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "O homem fala da água; Jesus responde com uma ordem para andar.",
+      "feedbackWrong": {
+        "b": "Jesus não procura um ajudante; ele mesmo dá a ordem.",
+        "c": "A resposta não é esperar outra agitação, e sim andar.",
+        "d": "A cena não fica na desvantagem; a ordem muda o rumo."
+      },
+      "hint": "Compare o pedido do homem com a fala de Jesus.",
+      "learningObjective": "Relacionar a queixa sobre o tanque com a ordem de Jesus.",
+      "evidence": ["João 5:7–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da cena até a cura?",
+      "verseRef": "João 5:1",
+      "options": [
+        { "id": "a", "text": "Jesus chega ao tanque na festa" },
+        { "id": "b", "text": "O enfermo conta que não tem ajuda" },
+        { "id": "c", "text": "A ordem cura o homem na hora" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jesus subiu para Jerusalém",
+      "feedbackCorrect": "A cena vai da chegada à queixa e, por fim, à cura.",
+      "feedbackWrong": {
+        "default": "Comece pela chegada na festa; a cura é o último passo."
+      },
+      "hint": "O primeiro movimento é a chegada de Jesus.",
+      "learningObjective": "Compreender os três movimentos do relato até a cura.",
+      "evidence": ["João 5:1", "João 5:7", "João 5:8–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 5:6, que verbo acompanha o olhar de Jesus sobre o tempo da doença?",
+      "verseRef": "João 5:6",
+      "options": [
+        { "id": "a", "text": "temendo" },
+        { "id": "b", "text": "sabendo" },
+        { "id": "c", "text": "negando" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sabendo que ele estava assim há muito tempo",
+      "feedbackCorrect": "Jesus pergunta porque sabe que a doença já dura muito.",
+      "feedbackWrong": {
+        "a": "O texto não fala de temor; fala do conhecimento de Jesus.",
+        "c": "Jesus não nega a doença; ele conhece o tempo dela."
+      },
+      "hint": "Veja o verbo entre o olhar e o tempo da doença.",
+      "learningObjective": "Compreender que Jesus pergunta porque conhece a longa doença.",
+      "evidence": ["João 5:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 5:8 a Marcos 2:11?",
+      "verseRef": "João 5:8",
+      "passageA": { "ref": "João 5:8" },
+      "passageB": { "ref": "Marcos 2:11" },
+      "options": [
+        { "id": "a", "text": "Ordem de tomar a cama" },
+        { "id": "b", "text": "Espera pelo anjo do tanque" },
+        { "id": "c", "text": "Festa dos judeus em Jerusalém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toma a tua cama e anda",
+      "feedbackCorrect": "Nos dois textos Jesus manda levantar e tomar a cama.",
+      "feedbackWrong": {
+        "b": "O anjo pertence à espera em Betesda, não ao outro relato.",
+        "c": "A festa situa João 5; o elo com Marcos é a ordem."
+      },
+      "hint": "Compare o que Jesus manda fazer com a cama.",
+      "learningObjective": "Relacionar a ordem de João 5:8 com a ordem em Marcos 2:11.",
+      "evidence": ["João 5:8", "Marcos 2:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 5:7–8, este homem sarou porque entrou no tanque antes dos outros.",
+      "verseRef": "João 5:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "não tenho ninguém que me coloque no tanque",
+      "feedbackCorrect": "Ele não entra no tanque. Jesus ordena que ele se levante e ande.",
+      "feedbackWrong": {
+        "true": "Ele diz que não tem quem o coloque na água. Quem age é Jesus, com uma ordem."
+      },
+      "hint": "Veja se o homem afirma que entrou na água.",
+      "learningObjective": "Rejeitar a ideia de que este homem sarou ao entrar no tanque.",
+      "evidence": ["João 5:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 5:9, toque o estado em que o homem se viu.",
+      "verseRef": "João 5:9",
+      "options": [
+        { "id": "a", "text": "curado" },
+        { "id": "b", "text": "sábado" },
+        { "id": "c", "text": "cama" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o homem se viu curado",
+      "feedbackCorrect": "O texto afirma que o homem se viu curado.",
+      "feedbackWrong": {
+        "b": "Sábado marca o dia, não o estado do homem.",
+        "c": "A cama é o que ele levanta, não o estado em que se viu."
+      },
+      "hint": "Procure o estado que o versículo atribui ao homem.",
+      "learningObjective": "Localizar no texto o estado do homem após a ordem de Jesus.",
+      "evidence": ["João 5:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 5:8–9 sustenta sobre esta cura?",
+      "verseRef": "João 5:8–9",
+      "options": [
+        { "id": "a", "text": "A palavra cura na hora, fora do tanque." },
+        { "id": "b", "text": "Ele vence os demais na descida à água." },
+        { "id": "c", "text": "A pergunta transfere a cura ao anjo." },
+        { "id": "d", "text": "Décadas de doença retardam o efeito." }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Imediatamente, o homem se viu curado",
+      "feedbackCorrect": "Jesus ordena e, na hora, o homem fica curado, sem o tanque.",
+      "feedbackWrong": {
+        "b": "Ele não vence a descida; diz que outro sempre entra antes.",
+        "c": "A pergunta não entrega a cura ao anjo. Jesus ordena e o homem anda.",
+        "d": "Os anos contam a espera. O efeito da ordem não atrasa."
+      },
+      "hint": "Compare a ordem de Jesus com o que ocorre em seguida.",
+      "learningObjective": "Escolher a leitura da cura que o relato sustenta.",
+      "evidence": ["João 5:8–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica explica a cura em João 5:7–9?",
+      "verseRef": "João 5:8–9",
+      "options": [
+        { "id": "a", "text": "Ninguém põe o homem na água" },
+        { "id": "b", "text": "Jesus manda que ele se levante" },
+        { "id": "c", "text": "A cura ocorre sem demora" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "Sem quem o ponha na água, a ordem de Jesus cura na hora.",
+      "feedbackWrong": {
+        "default": "Parta da falta de ajuda; a cura sem demora é o último passo."
+      },
+      "hint": "O ponto de partida é a queixa do homem.",
+      "learningObjective": "Ordenar a lógica que vai da falta de ajuda à cura.",
+      "evidence": ["João 5:7", "João 5:8", "João 5:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 5:8, qual é a primeira ordem de Jesus ao homem?",
+      "verseRef": "João 5:8",
+      "options": [
+        { "id": "a", "text": "Descansa" },
+        { "id": "b", "text": "Espera" },
+        { "id": "c", "text": "Levanta-te" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Levanta-te, toma a tua cama e anda",
+      "feedbackCorrect": "A primeira ordem é Levanta-te, a palavra que o põe de pé.",
+      "feedbackWrong": {
+        "a": "Jesus não manda descansar; a primeira ordem é levantar.",
+        "b": "A espera já foi longa; Jesus não manda esperar."
+      },
+      "hint": "É o primeiro imperativo da fala de Jesus.",
+      "learningObjective": "Recordar o termo da ordem que põe o homem de pé.",
+      "evidence": ["João 5:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 5:9 a Mateus 8:13?",
+      "verseRef": "João 5:9",
+      "passageA": { "ref": "João 5:9" },
+      "passageB": { "ref": "Mateus 8:13" },
+      "options": [
+        { "id": "a", "text": "Entrada vitoriosa no tanque" },
+        { "id": "b", "text": "Palavra que cura na hora" },
+        { "id": "c", "text": "Anjo que agita a água" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Imediatamente, o homem se viu curado",
+      "feedbackCorrect": "Nos dois relatos a cura ocorre na hora em que Jesus fala.",
+      "feedbackWrong": {
+        "a": "Este homem não entra no tanque; a cura vem com a palavra.",
+        "c": "O anjo explica a fila. Aqui quem fala e age é Jesus."
+      },
+      "hint": "Compare o momento em que cada pessoa fica sã.",
+      "learningObjective": "Relacionar a cura imediata de João 5:9 com Mateus 8:13.",
+      "evidence": ["João 5:9", "Mateus 8:13"]
+    }
+  ]
+}

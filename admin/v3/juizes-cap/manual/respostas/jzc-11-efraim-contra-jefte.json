@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 12:1–7",
+    "passages": [
+      {
+        "ref": "Juízes 12:1–7"
+      }
+    ],
+    "context": "Efraim ameaça Jefté após a vitória; a briga interna mata quarenta e dois mil no Jordão.",
+    "keyword": "chibolete",
+    "keywordGloss": "Palavra-teste que expõe os fugitivos de Efraim.",
+    "focusQuestion": "Onde o orgulho tribal transforma livramento em guerra interna?",
+    "reflectionPrompts": [
+      "Ameaça de queimar",
+      "Chibolete",
+      "Quarenta e dois mil"
+    ],
+    "facts": [
+      {
+        "text": "Efraim ameaça queimar a casa de Jefté.",
+        "evidenceRef": "Juízes 12:1",
+        "evidenceSpan": "Vamos queimar a sua casa"
+      },
+      {
+        "text": "Jefté diz que os chamou e não o livraram.",
+        "evidenceRef": "Juízes 12:2",
+        "evidenceSpan": "eu os chamei, mas vocês não me livraram"
+      },
+      {
+        "text": "O Senhor entregou Amom em suas mãos.",
+        "evidenceRef": "Juízes 12:3",
+        "evidenceSpan": "o Senhor os entregou em minhas mãos"
+      },
+      {
+        "text": "Gileade feriu os efraimitas.",
+        "evidenceRef": "Juízes 12:4",
+        "evidenceSpan": "os homens de Gileade feriram os efraimitas"
+      },
+      {
+        "text": "Pediam chibolete e matavam no Jordão.",
+        "evidenceRef": "Juízes 12:6",
+        "evidenceSpan": "Diga, pois, chibolete"
+      },
+      {
+        "text": "Caíram quarenta e dois mil de Efraim.",
+        "evidenceRef": "Juízes 12:6",
+        "evidenceSpan": "caíram de Efraim quarenta e dois mil"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "chibolete",
+        "gloss": "Palavra que os efraimitas não pronunciavam bem."
+      },
+      {
+        "term": "sibolete",
+        "gloss": "Pronúncia falha que denuncia o fugitivo."
+      },
+      {
+        "term": "Gileade",
+        "gloss": "Povo de Jefté que peleja contra Efraim."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acusação de Efraim",
+        "evidenceRef": "Juízes 12:1–3"
+      },
+      {
+        "label": "Peleja e vaus do Jordão",
+        "evidenceRef": "Juízes 12:4–6"
+      },
+      {
+        "label": "Morte de Jefté",
+        "evidenceRef": "Juízes 12:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Chamou; mas não livraram.",
+        "marker": "mas",
+        "evidenceRef": "Juízes 12:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Feriram porque Efraim insultou.",
+        "marker": "porque",
+        "evidenceRef": "Juízes 12:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Dizia sibolete pois não conseguia.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 12:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Provérbios 13:10",
+        "bridge": "Orgulho gera contenda"
+      },
+      {
+        "ref": "Tiago 4:1",
+        "bridge": "Guerras entre vós"
+      },
+      {
+        "ref": "Gálatas 5:15",
+        "bridge": "Se vos mordeis"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Efraim só queria ajudar.",
+        "why": "Ameaça queimar a casa."
+      },
+      {
+        "text": "Não houve mortes.",
+        "why": "Quarenta e dois mil caíram."
+      },
+      {
+        "text": "Jefté nunca os chamou.",
+        "why": "Eu os chamei, mas não livraram."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 12:6, quantos de Efraim caíram?",
+    "centralInsight": "Orgulho tribal mata milhares: o livramento vira briga interna."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 12:6, caíram de Efraim quarenta e dois mil.",
+      "verseRef": "Juízes 12:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Quarenta e dois mil.",
+      "feedbackWrong": {
+        "false": "O texto dá o número."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Observar as baixas.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 12:6, toque a palavra-teste.",
+      "verseRef": "Juízes 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "chibolete"
+        },
+        {
+          "id": "b",
+          "text": "Jordão"
+        },
+        {
+          "id": "c",
+          "text": "Efraim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Diga, pois, chibolete",
+      "feedbackCorrect": "Chibolete.",
+      "feedbackWrong": {
+        "b": "Jordão é o lugar.",
+        "c": "Efraim é o povo."
+      },
+      "hint": "Veja o que pediam.",
+      "learningObjective": "Identificar chibolete.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 12:1, Efraim ameaça:",
+      "verseRef": "Juízes 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queimar a casa de Jefté"
+        },
+        {
+          "id": "b",
+          "text": "Ajudar Amom"
+        },
+        {
+          "id": "c",
+          "text": "Fugir do Jordão"
+        },
+        {
+          "id": "d",
+          "text": "Sepultar Jefté"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Queimar a casa.",
+      "feedbackWrong": {
+        "b": "Não ajuda.",
+        "c": "Não foge.",
+        "d": "Sepultura é depois."
+      },
+      "hint": "Leia a ameaça.",
+      "learningObjective": "Reconhecer a ameaça.",
+      "evidence": [
+        "Juízes 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 12:6 na ordem do texto.",
+      "verseRef": "Juízes 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diga, pois, chibolete"
+        },
+        {
+          "id": "b",
+          "text": "mas ele dizia sibolete"
+        },
+        {
+          "id": "c",
+          "text": "caíram de Efraim quarenta e dois mil"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Teste, falha e mortes.",
+      "feedbackWrong": {
+        "default": "Comece pelo teste."
+      },
+      "hint": "Quantos caem?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 12:6, complete: mas ele dizia ___.",
+      "verseRef": "Juízes 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sibolete"
+        },
+        {
+          "id": "b",
+          "text": "amém"
+        },
+        {
+          "id": "c",
+          "text": "shalom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas ele dizia sibolete",
+      "feedbackCorrect": "Sibolete.",
+      "feedbackWrong": {
+        "b": "Não é amém.",
+        "c": "Não é shalom."
+      },
+      "hint": "Veja a pronúncia.",
+      "learningObjective": "Lembrar sibolete.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 12:3 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 12:3",
+      "passageA": {
+        "ref": "Juízes 12:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jefté lembra que o Senhor entregou Amom, mas Efraim sobe para combater."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor entregou Amom"
+        },
+        {
+          "id": "b",
+          "text": "Efraim ajudou"
+        },
+        {
+          "id": "c",
+          "text": "Sem combate"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor os entregou em minhas mãos",
+      "feedbackCorrect": "Entrega divina.",
+      "feedbackWrong": {
+        "b": "Efraim não ajudou.",
+        "c": "Há combate."
+      },
+      "hint": "Quem entregou?",
+      "learningObjective": "Ligar vitória e briga.",
+      "evidence": [
+        "Juízes 12:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 12:2, Jefté diz que chamou Efraim; mas eles não o livraram.",
+      "verseRef": "Juízes 12:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "eu os chamei, mas vocês não me livraram",
+      "feedbackCorrect": "Chamou e não livraram.",
+      "feedbackWrong": {
+        "false": "O mas marca a falha."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 12:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 12:2, toque o marcador de contraste.",
+      "verseRef": "Juízes 12:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "Amom"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas vocês não me livraram das suas mãos",
+      "feedbackCorrect": "Mas.",
+      "feedbackWrong": {
+        "b": "Amom é o inimigo.",
+        "c": "Povo é de Jefté."
+      },
+      "hint": "Procure após chamei.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 12:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 12:4 faz?",
+      "verseRef": "Juízes 12:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feriram porque Efraim insultou"
+        },
+        {
+          "id": "b",
+          "text": "Feriram sem motivo"
+        },
+        {
+          "id": "c",
+          "text": "Efraim venceu Gileade"
+        },
+        {
+          "id": "d",
+          "text": "Sem palavras na briga"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque estes disseram",
+      "feedbackCorrect": "Causa do combate.",
+      "feedbackWrong": {
+        "b": "Há motivo.",
+        "c": "Gileade fere.",
+        "d": "Há insulto."
+      },
+      "hint": "Leia o porque.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 12:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do conflito.",
+      "verseRef": "Juízes 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acusação de Efraim"
+        },
+        {
+          "id": "b",
+          "text": "Peleja e vaus do Jordão"
+        },
+        {
+          "id": "c",
+          "text": "Morte de Jefté"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Acusação, peleja e morte.",
+      "feedbackWrong": {
+        "default": "Comece pela acusação."
+      },
+      "hint": "O que fecha?",
+      "learningObjective": "Ordenar o conflito",
+      "evidence": [
+        "Juízes 12:1",
+        "Juízes 12:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 12:1, complete: Vamos ___ a sua casa.",
+      "verseRef": "Juízes 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "queimar"
+        },
+        {
+          "id": "b",
+          "text": "guardar"
+        },
+        {
+          "id": "c",
+          "text": "comprar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Queimar.",
+      "feedbackWrong": {
+        "b": "Não é guardar.",
+        "c": "Não é comprar."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar queimar.",
+      "evidence": [
+        "Juízes 12:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 12:6 a Provérbios 13:10?",
+      "verseRef": "Juízes 12:6",
+      "passageA": {
+        "ref": "Juízes 12:6"
+      },
+      "passageB": {
+        "ref": "Provérbios 13:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orgulho gera contenda"
+        },
+        {
+          "id": "b",
+          "text": "Paz tribal"
+        },
+        {
+          "id": "c",
+          "text": "Sem mortes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Contenda mortal.",
+      "feedbackWrong": {
+        "b": "Não há paz.",
+        "c": "Há mortes."
+      },
+      "hint": "Compare o orgulho.",
+      "learningObjective": "Ligar a Provérbios.",
+      "evidence": [
+        "Juízes 12:6",
+        "Provérbios 13:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 12:6, o livramento de Amom une as tribos sem custo interno.",
+      "verseRef": "Juízes 12:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Há custo interno enorme.",
+      "feedbackWrong": {
+        "true": "Quarenta e dois mil."
+      },
+      "hint": "Leia as baixas.",
+      "learningObjective": "Avaliar o orgulho.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 12:6, toque quem caiu no Jordão.",
+      "verseRef": "Juízes 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Efraim"
+        },
+        {
+          "id": "b",
+          "text": "chibolete"
+        },
+        {
+          "id": "c",
+          "text": "Jordão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Efraim caiu.",
+      "feedbackWrong": {
+        "b": "Chibolete é o teste.",
+        "c": "Jordão é o lugar."
+      },
+      "hint": "Veja quem cai.",
+      "learningObjective": "Tocar as baixas.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une livramento e orgulho tribal?",
+      "verseRef": "Juízes 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O livramento vira briga interna mortal"
+        },
+        {
+          "id": "b",
+          "text": "Efraim só celebra"
+        },
+        {
+          "id": "c",
+          "text": "Sem orgulho não há morte"
+        },
+        {
+          "id": "d",
+          "text": "Jefté inventa a ameaça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Orgulho mata.",
+      "feedbackWrong": {
+        "b": "Há briga.",
+        "c": "Há mortes.",
+        "d": "Há ameaça."
+      },
+      "hint": "Una vitória e chibolete.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 12:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da tragédia.",
+      "verseRef": "Juízes 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ameaça após a vitória"
+        },
+        {
+          "id": "b",
+          "text": "Teste nos vaus"
+        },
+        {
+          "id": "c",
+          "text": "Milhares caem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Ameaça, teste e mortes.",
+      "feedbackWrong": {
+        "default": "Comece pela ameaça."
+      },
+      "hint": "O que fecha as baixas?",
+      "learningObjective": "Encadear a tragédia",
+      "evidence": [
+        "Juízes 12:1",
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 12:7, complete: julgou a Israel ___ anos.",
+      "verseRef": "Juízes 12:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "seis"
+        },
+        {
+          "id": "b",
+          "text": "quarenta"
+        },
+        {
+          "id": "c",
+          "text": "dois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "julgou a Israel seis anos",
+      "feedbackCorrect": "Seis.",
+      "feedbackWrong": {
+        "b": "Não são quarenta.",
+        "c": "Não são dois."
+      },
+      "hint": "Veja a duração.",
+      "learningObjective": "Lembrar seis.",
+      "evidence": [
+        "Juízes 12:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 12:4 a Tiago 4:1?",
+      "verseRef": "Juízes 12:4",
+      "passageA": {
+        "ref": "Juízes 12:4"
+      },
+      "passageB": {
+        "ref": "Tiago 4:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Guerras entre vós"
+        },
+        {
+          "id": "b",
+          "text": "Paz entre tribos"
+        },
+        {
+          "id": "c",
+          "text": "Sem peleja"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelejou contra os efraimitas",
+      "feedbackCorrect": "Guerra interna.",
+      "feedbackWrong": {
+        "b": "Não há paz.",
+        "c": "Há peleja."
+      },
+      "hint": "Compare a briga.",
+      "learningObjective": "Ligar a Tiago.",
+      "evidence": [
+        "Juízes 12:4",
+        "Tiago 4:1"
+      ]
+    }
+  ]
+}

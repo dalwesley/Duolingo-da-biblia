@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Êxodo 14:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 14:1–12"
+      }
+    ],
+    "context": "O Senhor manda acampar junto ao mar. Faraó persegue; o povo teme e pergunta se não havia sepulcros no Egito.",
+    "keyword": "Temeram",
+    "keywordGloss": "O medo diante dos egípcios antes de ver a salvação no mar.",
+    "focusQuestion": "Quando o medo pergunta se não havia sepulcros, o que a fé ainda precisa ouvir?",
+    "reflectionPrompts": [
+      "Presos entre o mar",
+      "Perseguição de Faraó",
+      "Clamor e queixa"
+    ],
+    "facts": [
+      {
+        "text": "Deus manda Israel acampar junto ao mar.",
+        "evidenceRef": "Êxodo 14:2",
+        "evidenceSpan": "acampareis junto ao mar"
+      },
+      {
+        "text": "Faraó pensará que o deserto os encerrou.",
+        "evidenceRef": "Êxodo 14:3",
+        "evidenceSpan": "o deserto os encerrou"
+      },
+      {
+        "text": "O Senhor endureceu o coração de Faraó para perseguir.",
+        "evidenceRef": "Êxodo 14:4",
+        "evidenceSpan": "Endurecerei o coração de Faraó"
+      },
+      {
+        "text": "Os egípcios alcançaram Israel junto ao mar.",
+        "evidenceRef": "Êxodo 14:9",
+        "evidenceSpan": "os alcançaram acampados junto ao mar"
+      },
+      {
+        "text": "Israel temeu muito e clamou ao Senhor.",
+        "evidenceRef": "Êxodo 14:10",
+        "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "temeram",
+        "gloss": "Reação de Israel ao ver o exército egípcio."
+      },
+      {
+        "term": "deserto",
+        "gloss": "Lugar que, na leitura de Faraó, encerrou o povo."
+      },
+      {
+        "term": "sepulcros",
+        "gloss": "Palavra amarga da queixa: preferiam sepultura no Egito."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de acampar junto ao mar",
+        "evidenceRef": "Êxodo 14:1–2"
+      },
+      {
+        "label": "Plano de Deus sobre Faraó",
+        "evidenceRef": "Êxodo 14:3–4"
+      },
+      {
+        "label": "Perseguição com carros",
+        "evidenceRef": "Êxodo 14:5–9"
+      },
+      {
+        "label": "Medo e queixa do povo",
+        "evidenceRef": "Êxodo 14:10–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Endurecer Faraó para Deus ser glorificado.",
+        "marker": "para que",
+        "evidenceRef": "Êxodo 14:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Faraó persegue; porém Israel saíra destemido.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 14:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao ver os egípcios, temeram e clamaram.",
+        "marker": null,
+        "evidenceRef": "Êxodo 14:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 14:13",
+        "bridge": "Não temais, vede a salvação"
+      },
+      {
+        "ref": "Salmos 106:7",
+        "bridge": "Rebeldes no mar"
+      },
+      {
+        "ref": "Hebreus 11:29",
+        "bridge": "Pela fé passaram o mar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O povo já via a saída com fé plena.",
+        "why": "Eles temeram e preferiam servir no Egito."
+      },
+      {
+        "text": "Faraó perseguiu contra a vontade de Deus.",
+        "why": "O Senhor endureceu o coração para ser glorificado."
+      },
+      {
+        "text": "Israel estava perdido por acaso.",
+        "why": "Deus mandou acampar ali de propósito."
+      }
+    ],
+    "centralInsight": "O medo pergunta se não havia sepulturas no Egito; a fé ainda não vê a saída.",
+    "anchorQuestion": "O que o povo disse a Moisés quando viu os egípcios?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Os filhos de Israel temeram muito e clamaram ao Senhor ao verem os egípcios.",
+      "verseRef": "Êxodo 14:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor",
+      "feedbackCorrect": "Medo e clamor abrem a crise junto ao mar.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 14:10."
+      },
+      "hint": "Reação ao aproximar-se Faraó.",
+      "learningObjective": "Observar o medo de Israel.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 14:2, toque onde Israel deve acampar.",
+      "verseRef": "Êxodo 14:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "junto ao mar"
+        },
+        {
+          "id": "b",
+          "text": "Pi-Hairote"
+        },
+        {
+          "id": "c",
+          "text": "Migdol"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "acampareis junto ao mar",
+      "feedbackCorrect": "A ordem é acampar junto ao mar.",
+      "feedbackWrong": {
+        "b": "Pi-Hairote é referência de lugar; o acampamento é junto ao mar.",
+        "c": "Migdol é referência; o acampamento é junto ao mar."
+      },
+      "hint": "Fim da ordem.",
+      "learningObjective": "Identificar o lugar do acampamento.",
+      "evidence": [
+        "Êxodo 14:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 14:7, quantos carros escolhidos Faraó tomou?",
+      "verseRef": "Êxodo 14:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seiscentos carros de guerra escolhidos"
+        },
+        {
+          "id": "b",
+          "text": "Dez carros apenas"
+        },
+        {
+          "id": "c",
+          "text": "Nenhum carro"
+        },
+        {
+          "id": "d",
+          "text": "Dois mil navios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou seiscentos carros de guerra escolhidos",
+      "feedbackCorrect": "Seiscentos escolhidos, além de todos os do Egito.",
+      "feedbackWrong": {
+        "b": "São seiscentos.",
+        "c": "Há muitos carros.",
+        "d": "Não são navios."
+      },
+      "hint": "Número no versículo.",
+      "learningObjective": "Observar a força da perseguição.",
+      "evidence": [
+        "Êxodo 14:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 14:10 na ordem do texto.",
+      "verseRef": "Êxodo 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "E, ao se aproximar o faraó, os filhos de Israel levantaram os olhos"
+        },
+        {
+          "id": "b",
+          "text": "e eis que os egípcios vinham atrás deles"
+        },
+        {
+          "id": "c",
+          "text": "temeram muito e os filhos de Israel clamaram ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temeram muito",
+      "feedbackCorrect": "Ver, perceber e temer com clamor.",
+      "feedbackWrong": {
+        "default": "Revise a ordem do texto."
+      },
+      "hint": "O clamor vem por último.",
+      "learningObjective": "Reconhecer a sequência do medo.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 14:11, o povo pergunta se não havia o quê no Egito?",
+      "verseRef": "Êxodo 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "sepulcros"
+        },
+        {
+          "id": "b",
+          "text": "palácios"
+        },
+        {
+          "id": "c",
+          "text": "jardins"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não havia sepulcros no Egito",
+      "feedbackCorrect": "A queixa amarga fala de sepulcros no Egito.",
+      "feedbackWrong": {
+        "b": "Não é palácios.",
+        "c": "Não é jardins."
+      },
+      "hint": "Palavra da queixa.",
+      "learningObjective": "Lembrar a frase do medo.",
+      "evidence": [
+        "Êxodo 14:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 14:10 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 14:10",
+      "passageA": {
+        "ref": "Êxodo 14:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel está acampado entre o mar e o exército de Faraó."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Medo gera clamor"
+        },
+        {
+          "id": "b",
+          "text": "Povo celebra vitória"
+        },
+        {
+          "id": "c",
+          "text": "Faraó já desistiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram muito e os filhos de Israel clamaram",
+      "feedbackCorrect": "Presos, eles temem e clamam.",
+      "feedbackWrong": {
+        "b": "Ainda não há vitória.",
+        "c": "Ele está atrás deles."
+      },
+      "hint": "Reação ao ver os egípcios.",
+      "learningObjective": "Ligar cerco e medo.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 14:4, o endurecimento de Faraó serve para que os egípcios saibam que o Senhor é Deus.",
+      "verseRef": "Êxodo 14:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "os egípcios saberão que eu sou o Senhor",
+      "feedbackCorrect": "O propósito é a glória do Senhor conhecida.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 14:4."
+      },
+      "hint": "O que os egípcios saberão?",
+      "learningObjective": "Compreender o propósito do endurecimento.",
+      "evidence": [
+        "Êxodo 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 14:8, toque a palavra que marca o contraste com a perseguição.",
+      "verseRef": "Êxodo 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Faraó"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém os filhos de Israel saíram de forma destemida",
+      "feedbackCorrect": "\"Porém\" contrapõe perseguição e saída destemida.",
+      "feedbackWrong": {
+        "b": "Faraó persegue.",
+        "c": "Egito é a origem."
+      },
+      "hint": "Marcador antes de \"os filhos\".",
+      "learningObjective": "Reconhecer o contraste.",
+      "evidence": [
+        "Êxodo 14:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 14:12 expressa o desejo do povo sob medo?",
+      "verseRef": "Êxodo 14:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preferiam servir aos egípcios a morrer no deserto"
+        },
+        {
+          "id": "b",
+          "text": "Queriam atacar Faraó na hora"
+        },
+        {
+          "id": "c",
+          "text": "Pediam voltar para construir o templo"
+        },
+        {
+          "id": "d",
+          "text": "Celebravam a coluna de fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "melhor nos seria servir aos egípcios do que morrer no deserto",
+      "feedbackCorrect": "O medo prefere a escravidão à morte aparente.",
+      "feedbackWrong": {
+        "b": "Não pedem ataque.",
+        "c": "Não.",
+        "d": "Não celebram aqui."
+      },
+      "hint": "Compare servir e morrer.",
+      "learningObjective": "Relacionar medo e queixa.",
+      "evidence": [
+        "Êxodo 14:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 14:2–10?",
+      "verseRef": "Êxodo 14:2–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus manda acampar junto ao mar"
+        },
+        {
+          "id": "b",
+          "text": "Faraó persegue com carros"
+        },
+        {
+          "id": "c",
+          "text": "Israel teme e clama"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "acampareis junto ao mar",
+      "feedbackCorrect": "Ordem, perseguição e medo.",
+      "feedbackWrong": {
+        "default": "Revise a ordem do texto."
+      },
+      "hint": "O clamor fecha o movimento.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "Êxodo 14:2",
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 14:3, o que Faraó dirá que encerrou Israel?",
+      "verseRef": "Êxodo 14:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "deserto"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o deserto os encerrou",
+      "feedbackCorrect": "Na leitura de Faraó, o deserto os encerrou.",
+      "feedbackWrong": {
+        "b": "Não é templo.",
+        "c": "Não é rio."
+      },
+      "hint": "Quem os encerrou segundo Faraó?",
+      "learningObjective": "Lembrar a leitura de Faraó.",
+      "evidence": [
+        "Êxodo 14:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 14:10 a Êxodo 14:13?",
+      "verseRef": "Êxodo 14:10",
+      "passageA": {
+        "ref": "Êxodo 14:10"
+      },
+      "passageB": {
+        "ref": "Êxodo 14:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Do medo à salvação"
+        },
+        {
+          "id": "b",
+          "text": "Lista de pragas"
+        },
+        {
+          "id": "c",
+          "text": "Construção do altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram muito",
+      "feedbackCorrect": "O clamor do medo encontra o \"não temais\".",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Medo e resposta.",
+      "learningObjective": "Relacionar medo e promessa.",
+      "evidence": [
+        "Êxodo 14:10",
+        "Êxodo 14:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 14:1–12 mostra um povo já confiante, sem medo nem queixa diante do mar.",
+      "verseRef": "Êxodo 14:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor",
+      "feedbackCorrect": "O texto registra medo e queixa, não confiança plena.",
+      "feedbackWrong": {
+        "true": "Releia 14:10–12: temeram e preferiam o Egito."
+      },
+      "hint": "Como o povo reagiu?",
+      "learningObjective": "Corrigir leitura triunfalista.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 14:11, toque o trecho que resume a queixa do povo.",
+      "verseRef": "Êxodo 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "sepulcros no Egito"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não havia sepulcros no Egito",
+      "feedbackCorrect": "A pergunta amarga fala de sepulcros no Egito.",
+      "feedbackWrong": {
+        "b": "Moisés é o destinatário.",
+        "c": "Deserto é o lugar; a queixa é sepulcros."
+      },
+      "hint": "O que faltava no Egito segundo eles?",
+      "learningObjective": "Sustentar a queixa no texto.",
+      "evidence": [
+        "Êxodo 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 14:1–12 sustenta sobre o aperto junto ao mar?",
+      "verseRef": "Êxodo 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus ordena o acampamento e será glorificado na perseguição"
+        },
+        {
+          "id": "b",
+          "text": "Israel chegou ali por acidente"
+        },
+        {
+          "id": "c",
+          "text": "Faraó age fora de qualquer plano divino"
+        },
+        {
+          "id": "d",
+          "text": "O povo já via a vitória sem medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serei glorificado em Faraó",
+      "feedbackCorrect": "Ordem divina, endurecimento e glória anunciada.",
+      "feedbackWrong": {
+        "b": "Deus mandou acampar.",
+        "c": "O Senhor endurece o coração.",
+        "d": "Eles temeram."
+      },
+      "hint": "Una 14:2 e 14:4.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Êxodo 14:2",
+        "Êxodo 14:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do medo à fé?",
+      "verseRef": "Êxodo 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel teme entre o mar e Faraó"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo lembra a rebelião junto ao mar"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus celebra a passagem pela fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temeram muito",
+      "feedbackCorrect": "Do medo ao memorial e à fé.",
+      "feedbackWrong": {
+        "default": "Revise a ordem do texto."
+      },
+      "hint": "Ordem da história bíblica.",
+      "learningObjective": "Ver o fio do mar.",
+      "evidence": [
+        "Êxodo 14:10",
+        "Salmos 106:7",
+        "Hebreus 11:29"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 14:10, o que Israel fez além de temer?",
+      "verseRef": "Êxodo 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamaram"
+        },
+        {
+          "id": "b",
+          "text": "fugiram"
+        },
+        {
+          "id": "c",
+          "text": "calaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "clamaram ao Senhor",
+      "feedbackCorrect": "Temeram e clamaram ao Senhor.",
+      "feedbackWrong": {
+        "b": "O verbo é clamaram.",
+        "c": "Eles clamaram."
+      },
+      "hint": "Verbo final do versículo.",
+      "learningObjective": "Lembrar a reação de fé inicial.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 14:10 a Hebreus 11:29?",
+      "verseRef": "Êxodo 14:10",
+      "passageA": {
+        "ref": "Êxodo 14:10"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Do medo à fé no mar"
+        },
+        {
+          "id": "b",
+          "text": "Lista de reis"
+        },
+        {
+          "id": "c",
+          "text": "Construção do templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram muito",
+      "feedbackCorrect": "Hebreus olha o outro lado: passaram pela fé.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Medo aqui, fé ali.",
+      "learningObjective": "Ligar crise e testemunho.",
+      "evidence": [
+        "Êxodo 14:10",
+        "Hebreus 11:29"
+      ]
+    }
+  ]
+}

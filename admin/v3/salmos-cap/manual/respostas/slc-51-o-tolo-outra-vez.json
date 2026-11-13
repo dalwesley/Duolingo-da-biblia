@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Salmos 53:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 53:1–6"
+      }
+    ],
+    "context": "Diz o tolo: não há Deus. Deus olha dos céus. Oxalá de Sião viesse a salvação.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "O tolo outra vez",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Disse o insensato em seu coração.",
+        "evidenceRef": "Salmos 53:1",
+        "evidenceSpan": "Disse o insensato em seu coração"
+      },
+      {
+        "text": "Deus contempla do céu os filhos dos homens.",
+        "evidenceRef": "Salmos 53:2",
+        "evidenceSpan": "Deus contempla do céu os filhos dos homens"
+      },
+      {
+        "text": "Desviaram-se todos e juntamente se corromperam.",
+        "evidenceRef": "Salmos 53:3",
+        "evidenceSpan": "Desviaram-se todos e juntamente se corromperam"
+      },
+      {
+        "text": "Acaso, não entendem os que praticam a iniquidade? Eles devoram o meu povo como quem come pão. Eles…",
+        "evidenceRef": "Salmos 53:4",
+        "evidenceSpan": "Acaso"
+      },
+      {
+        "text": "Ali se tomaram de grande temor.",
+        "evidenceRef": "Salmos 53:5",
+        "evidenceSpan": "Ali se tomaram de grande temor"
+      },
+      {
+        "text": "Ah! Se a salvação de Israel já tivesse vindo de Sião! Quando Deus restaurar a sorte do seu povo, en…",
+        "evidenceRef": "Salmos 53:6",
+        "evidenceSpan": "Ah"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Disse",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "insensato",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Disse o insensato em seu coração",
+        "evidenceRef": "Salmos 53:1"
+      },
+      {
+        "label": "Deus contempla do céu os filhos",
+        "evidenceRef": "Salmos 53:2"
+      },
+      {
+        "label": "Desviaram-se todos e juntamente se corromperam",
+        "evidenceRef": "Salmos 53:3"
+      },
+      {
+        "label": "Acaso não entendem os que praticam",
+        "evidenceRef": "Salmos 53:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 53:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"nem\".",
+        "marker": "nem",
+        "evidenceRef": "Salmos 53:3"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 53:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      },
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "A corrupção se repete; a esperança do povo continua em Sião."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "A corrupção se repete; a esperança do povo continua em Sião.",
+    "anchorQuestion": "O que Salmos 53:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 53:1, disse o insensato em seu coração.",
+      "verseRef": "Salmos 53:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Disse o insensato em seu coração",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 53:1 afirma.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 53:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 53:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "insensato"
+        },
+        {
+          "id": "c",
+          "text": "seu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O versículo destaca «Disse».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 53:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 53:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desviaram-se todos e juntamente se corromperam"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desviaram-se todos e juntamente se corromperam",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 53:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 53:1 na ordem do texto.",
+      "verseRef": "Salmos 53:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "o"
+        },
+        {
+          "id": "c",
+          "text": "insensato"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 53:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 53:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acaso"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "insensato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Acaso",
+      "feedbackCorrect": "A palavra do versículo é «Acaso».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 53:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 53:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 53:1",
+      "passageA": {
+        "ref": "Salmos 53:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diz o tolo: não há Deus. Deus olha dos céus. Oxalá de Sião viesse a salvação."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 53:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 53:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 53:2 afirma.",
+      "evidence": [
+        "Salmos 53:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 53:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 53:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "contempla"
+        },
+        {
+          "id": "c",
+          "text": "céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 53:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 53:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 53:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Acaso",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 53:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 53:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse o insensato em seu coração"
+        },
+        {
+          "id": "b",
+          "text": "Deus contempla do céu os filhos"
+        },
+        {
+          "id": "c",
+          "text": "Desviaram-se todos e juntamente se corromperam"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 53:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 53:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desviaram-se"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "insensato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desviaram-se",
+      "feedbackCorrect": "A palavra do versículo é «Desviaram-se».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 53:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 53:1 a 2 Coríntios 1:3.",
+      "verseRef": "Salmos 53:1",
+      "passageA": {
+        "ref": "Salmos 53:1"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 1:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus de toda consolação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 53:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ah",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 53:6 afirma.",
+      "evidence": [
+        "Salmos 53:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 53:6, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 53:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvação"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "tivesse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "salvação",
+      "feedbackCorrect": "O versículo destaca «salvação».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 53:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 53:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 53:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ali se tomaram de grande temor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 53:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 53:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 53:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 53:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "tomaram"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "insensato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomaram",
+      "feedbackCorrect": "A palavra do versículo é «tomaram».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 53:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 53:1 a Salmos 46:1.",
+      "verseRef": "Salmos 53:1",
+      "passageA": {
+        "ref": "Salmos 53:1"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 53:1"
+      ]
+    }
+  ]
+}

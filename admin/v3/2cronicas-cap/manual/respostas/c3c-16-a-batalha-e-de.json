@@ -1,0 +1,452 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 20:15–22",
+    "passages": [{ "ref": "2 Crônicas 20:15–22" }],
+    "context": "Diante de uma grande multidão, o Senhor diz que a batalha é dele. Judá crê, louva, e Deus arma emboscadas.",
+    "keyword": "batalha",
+    "keywordGloss": "A batalha não pertence a Judá, mas a Deus.",
+    "focusQuestion": "Quando o medo chega, você luta sozinho ou crê que a batalha é do Senhor?",
+    "reflectionPrompts": ["A batalha é de Deus", "Creiam e sejam firmes", "Louvor antes da vitória"],
+    "facts": [
+      {
+        "text": "O Senhor diz: não temam; a batalha não pertence a vocês, mas a Deus.",
+        "evidenceRef": "2 Crônicas 20:15",
+        "evidenceSpan": "a batalha não pertence a vocês, mas a Deus"
+      },
+      {
+        "text": "Nesta batalha não precisarão lutar; verão a salvação do Senhor.",
+        "evidenceRef": "2 Crônicas 20:17",
+        "evidenceSpan": "não precisareis lutar"
+      },
+      {
+        "text": "Josafá e o povo se prostraram e adoraram o Senhor.",
+        "evidenceRef": "2 Crônicas 20:18",
+        "evidenceSpan": "se prostraram diante do SENHOR e o adoraram"
+      },
+      {
+        "text": "Josafá manda crer no Senhor e nos profetas.",
+        "evidenceRef": "2 Crônicas 20:20",
+        "evidenceSpan": "Creiam no SENHOR, vosso Deus, e estarão seguros"
+      },
+      {
+        "text": "Ao cantarem louvores, o Senhor armou emboscadas e os inimigos foram desbaratados.",
+        "evidenceRef": "2 Crônicas 20:22",
+        "evidenceSpan": "o Senhor armou emboscadas"
+      }
+    ],
+    "keyTerms": [
+      { "term": "batalha", "gloss": "Pertence a Deus, não ao povo amedrontado." },
+      { "term": "Creiam", "gloss": "Ordem de Josafá: crer no Senhor e nos profetas." },
+      { "term": "emboscadas", "gloss": "Meio pelo qual o Senhor derrota os inimigos enquanto Judá louva." }
+    ],
+    "structure": [
+      { "label": "Palavra: a batalha é de Deus", "evidenceRef": "2 Crônicas 20:15–17" },
+      { "label": "Adoração e louvor dos levitas", "evidenceRef": "2 Crônicas 20:18–19" },
+      { "label": "Fé anunciada no caminho", "evidenceRef": "2 Crônicas 20:20–21" },
+      { "label": "Louvor e emboscadas do Senhor", "evidenceRef": "2 Crônicas 20:22" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A batalha não é de vocês, mas de Deus.",
+        "marker": "mas",
+        "evidenceRef": "2 Crônicas 20:15"
+      },
+      {
+        "kind": "resultado",
+        "text": "Creiam no Senhor e estarão seguros; creiam nos profetas e prosperarão.",
+        "marker": "e",
+        "evidenceRef": "2 Crônicas 20:20"
+      },
+      {
+        "kind": "sequência",
+        "text": "No momento em que começaram a cantar, o Senhor armou emboscadas.",
+        "marker": "no momento em que",
+        "evidenceRef": "2 Crônicas 20:22"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Êxodo 14:13–14", "bridge": "O Senhor pelejará por vós" },
+      { "ref": "1 Samuel 17:47", "bridge": "A batalha é do Senhor" },
+      { "ref": "Salmos 46:10", "bridge": "Aquietai-vos e sabei" }
+    ],
+    "misreadings": [
+      {
+        "text": "Judá precisa vencer pela força das armas primeiro.",
+        "why": "20:17: não precisareis lutar; vejam a salvação do Senhor."
+      },
+      {
+        "text": "O louvor só veio depois da vitória militar.",
+        "why": "20:21–22: cantores vão à frente; o Senhor age enquanto louvam."
+      },
+      {
+        "text": "A batalha pertence ao rei Josafá.",
+        "why": "20:15: a batalha não pertence a vocês, mas a Deus."
+      }
+    ],
+    "centralInsight": "Não temais: a batalha não é vossa, senão de Deus; crede no Senhor e sereis firmes.",
+    "anchorQuestion": "De quem é a batalha, segundo 2 Crônicas 20:15?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 20:15, a batalha pertence a Judá e a Josafá, não a Deus.",
+      "verseRef": "2 Crônicas 20:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "O Senhor declara: a batalha é de Deus, não do povo.",
+      "feedbackWrong": { "true": "Releia 20:15: a batalha não pertence a vocês, mas a Deus." },
+      "hint": "Olhe o contraste no fim do versículo.",
+      "learningObjective": "Observar de quem é a batalha.",
+      "evidence": ["2 Crônicas 20:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 20:17, toque o que Judá não precisará fazer nesta batalha.",
+      "verseRef": "2 Crônicas 20:17",
+      "options": [
+        { "id": "a", "text": "lutar" },
+        { "id": "b", "text": "Fiquem firmes" },
+        { "id": "c", "text": "vejam" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não precisareis lutar",
+      "feedbackCorrect": "Não precisarão lutar; verão a salvação do Senhor.",
+      "feedbackWrong": {
+        "b": "\"Fiquem firmes\" é o que devem fazer, não o que não precisam.",
+        "c": "\"Vejam\" a salvação é a ordem; o que não precisam é lutar."
+      },
+      "hint": "Procure o verbo depois de \"não precisareis\".",
+      "learningObjective": "Identificar que não precisam lutar.",
+      "evidence": ["2 Crônicas 20:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 20:22, o que o Senhor fez quando começaram a cantar?",
+      "verseRef": "2 Crônicas 20:22",
+      "options": [
+        { "id": "a", "text": "Armou emboscadas contra os inimigos" },
+        { "id": "b", "text": "Mandou Judá atacar primeiro" },
+        { "id": "c", "text": "Calou os cantores imediatamente" },
+        { "id": "d", "text": "Entregou Josafá aos amonitas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor armou emboscadas",
+      "feedbackCorrect": "Enquanto louvavam, o Senhor armou emboscadas e desbaratou o inimigo.",
+      "feedbackWrong": {
+        "b": "Eles não precisavam lutar.",
+        "c": "O louvor é o momento da ação de Deus.",
+        "d": "Os inimigos foram desbaratados."
+      },
+      "hint": "Veja a ação do Senhor no versículo.",
+      "learningObjective": "Observar as emboscadas do Senhor.",
+      "evidence": ["2 Crônicas 20:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 20:15 na ordem do texto.",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        { "id": "a", "text": "Não temam, nem se assustem" },
+        { "id": "b", "text": "por causa dessa grande multidão" },
+        { "id": "c", "text": "a batalha não pertence a vocês, mas a Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "Não temer, a multidão e a batalha de Deus, nessa ordem.",
+      "feedbackWrong": { "default": "Comece pelo \"Não temam\"." },
+      "hint": "A declaração sobre a batalha fecha a fala.",
+      "learningObjective": "Reconhecer a ordem de 20:15.",
+      "evidence": ["2 Crônicas 20:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 20:15, a ___ não pertence a vocês, mas a Deus.",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        { "id": "a", "text": "batalha" },
+        { "id": "b", "text": "cidade" },
+        { "id": "c", "text": "coroa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "A batalha é de Deus.",
+      "feedbackWrong": {
+        "b": "O texto fala da batalha, não da cidade.",
+        "c": "Não se fala de coroa neste versículo."
+      },
+      "hint": "Veja o sujeito do contraste \"não… mas…\".",
+      "learningObjective": "Lembrar de quem é a batalha.",
+      "evidence": ["2 Crônicas 20:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 20:15 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 20:15",
+      "passageA": { "ref": "2 Crônicas 20:15" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diante da multidão, Judá ouve que a luta pertence a Deus."
+      },
+      "options": [
+        { "id": "a", "text": "A batalha é de Deus" },
+        { "id": "b", "text": "Judá luta sozinho" },
+        { "id": "c", "text": "O medo manda na guerra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "O contexto e o versículo batem: a batalha é do Senhor.",
+      "feedbackWrong": {
+        "b": "Eles não precisam lutar.",
+        "c": "A ordem é não temer."
+      },
+      "hint": "Veja a quem a batalha pertence.",
+      "learningObjective": "Ligar o versículo à batalha de Deus.",
+      "evidence": ["2 Crônicas 20:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 20:20–22, o louvor acontece depois que Judá já venceu pela espada.",
+      "verseRef": "2 Crônicas 20:20–22",
+      "correctOptionId": "false",
+      "evidenceSpan": "no momento em que começaram a cantar e dar louvores, o Senhor armou emboscadas",
+      "feedbackCorrect": "O louvor vem primeiro; aí o Senhor arma emboscadas.",
+      "feedbackWrong": { "true": "20:22: enquanto cantam, Deus age." },
+      "hint": "Veja a ordem entre cantar e as emboscadas.",
+      "learningObjective": "Compreender a sequência louvor–vitória.",
+      "evidence": ["2 Crônicas 20:20–22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 20:15, toque a palavra que marca o contraste sobre a batalha.",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "multidão" },
+        { "id": "c", "text": "temam" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pertence a vocês, mas a Deus",
+      "feedbackCorrect": "\"Mas\" vira a posse da batalha para Deus.",
+      "feedbackWrong": {
+        "b": "A multidão é o motivo do medo, não o contraste.",
+        "c": "\"Temam\" é a ordem inicial."
+      },
+      "hint": "Procure a palavra curta no contraste final.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["2 Crônicas 20:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 20:17 se relaciona com 20:15?",
+      "verseRef": "2 Crônicas 20:15–17",
+      "options": [
+        { "id": "a", "text": "Se a batalha é de Deus, Judá fica firme e vê a salvação" },
+        { "id": "b", "text": "Judá deve inventar a própria estratégia de ataque" },
+        { "id": "c", "text": "O Senhor se afasta e deixa a multidão vencer" },
+        { "id": "d", "text": "A salvação depende só do número de soldados" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vejam a salvação que o SENHOR trará a vocês",
+      "feedbackCorrect": "A batalha de Deus leva a ficar firmes e ver a salvação.",
+      "feedbackWrong": {
+        "b": "Não precisarão lutar.",
+        "c": "O Senhor está convosco.",
+        "d": "A salvação é do Senhor."
+      },
+      "hint": "Ligue \"batalha… a Deus\" com \"não precisareis lutar\".",
+      "learningObjective": "Relacionar posse da batalha e salvação.",
+      "evidence": ["2 Crônicas 20:15–17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 20:15–22?",
+      "verseRef": "2 Crônicas 20:15–22",
+      "options": [
+        { "id": "a", "text": "Deus declara que a batalha é dele" },
+        { "id": "b", "text": "O povo crê e envia cantores à frente" },
+        { "id": "c", "text": "O Senhor arma emboscadas e vence" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Senhor armou emboscadas",
+      "feedbackCorrect": "Palavra, fé com louvor e vitória de Deus.",
+      "feedbackWrong": { "default": "As emboscadas fecham o arco." },
+      "hint": "Comece pela declaração sobre a batalha.",
+      "learningObjective": "Compreender o arco da cena.",
+      "evidence": ["2 Crônicas 20:15–22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 20:20, ___ no SENHOR, vosso Deus, e estarão seguros.",
+      "verseRef": "2 Crônicas 20:20",
+      "options": [
+        { "id": "a", "text": "Creiam" },
+        { "id": "b", "text": "Fujam" },
+        { "id": "c", "text": "Neguem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Creiam no SENHOR, vosso Deus, e estarão seguros",
+      "feedbackCorrect": "A segurança vem de crer no Senhor.",
+      "feedbackWrong": {
+        "b": "A ordem é crer, não fugir.",
+        "c": "Não há negação; há fé."
+      },
+      "hint": "Veja o primeiro imperativo da fala de Josafá.",
+      "learningObjective": "Lembrar o verbo da fé.",
+      "evidence": ["2 Crônicas 20:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 20:15 a Êxodo 14:13–14?",
+      "verseRef": "2 Crônicas 20:15",
+      "passageA": { "ref": "2 Crônicas 20:15" },
+      "passageB": { "ref": "Êxodo 14:13–14" },
+      "options": [
+        { "id": "a", "text": "O Senhor pelejará por vós" },
+        { "id": "b", "text": "Israel luta sem Deus" },
+        { "id": "c", "text": "O medo governa a batalha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "evidence": ["2 Crônicas 20:15", "Êxodo 14:13–14"],
+      "feedbackCorrect": "Nos dois textos, Deus peleja e o povo é chamado a não temer.",
+      "feedbackWrong": {
+        "b": "A batalha é de Deus.",
+        "c": "A ordem é não temer."
+      },
+      "hint": "Compare quem luta por Israel.",
+      "learningObjective": "Relacionar Josafá ao Êxodo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 20:15–22 apresenta fé e louvor como resposta à palavra de que a batalha é de Deus.",
+      "verseRef": "2 Crônicas 20:15–22",
+      "correctOptionId": "true",
+      "evidenceSpan": "Creiam no SENHOR, vosso Deus, e estarão seguros",
+      "feedbackCorrect": "Depois da palavra, há adoração, fé e louvor; então Deus vence.",
+      "feedbackWrong": { "false": "O trecho une declaração divina, fé e louvor antes da vitória." },
+      "hint": "Siga de 20:15 a 20:22.",
+      "learningObjective": "Interpretar fé e louvor diante da batalha de Deus.",
+      "evidence": ["2 Crônicas 20:15–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 20:22, toque o trecho que sustenta a ação de Deus no louvor.",
+      "verseRef": "2 Crônicas 20:22",
+      "options": [
+        { "id": "a", "text": "armou emboscadas" },
+        { "id": "b", "text": "monte Seir" },
+        { "id": "c", "text": "filhos de Amom" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor armou emboscadas",
+      "feedbackCorrect": "As emboscadas mostram Deus agindo enquanto o povo louva.",
+      "feedbackWrong": {
+        "b": "O monte Seir nomeia inimigos; a ação é armar emboscadas.",
+        "c": "Os amonitas são o alvo; a ação divina é a emboscada."
+      },
+      "hint": "Procure o que o Senhor fez.",
+      "learningObjective": "Sustentar a vitória com o texto.",
+      "evidence": ["2 Crônicas 20:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 20:15–22 sustenta sobre o medo diante da multidão?",
+      "verseRef": "2 Crônicas 20:15–22",
+      "options": [
+        { "id": "a", "text": "Não temer porque a batalha e a salvação são do Senhor" },
+        { "id": "b", "text": "O medo some só quando as armas bastam" },
+        { "id": "c", "text": "Louvor é inútil antes da vitória" },
+        { "id": "d", "text": "Deus exige que Judá lute sozinho primeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não temam, nem se assustem",
+      "feedbackCorrect": "A palavra tira o medo: a batalha é de Deus; o louvor acompanha a fé.",
+      "feedbackWrong": {
+        "b": "Eles não precisavam lutar.",
+        "c": "O louvor precede as emboscadas.",
+        "d": "A ordem é ficar firmes e ver a salvação."
+      },
+      "hint": "Una \"não temam\" com \"batalha… a Deus\".",
+      "learningObjective": "Escolher a leitura sustentável sobre o medo.",
+      "evidence": ["2 Crônicas 20:15–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da batalha do Senhor que começa em 2 Crônicas 20:15?",
+      "verseRef": "2 Crônicas 20:15",
+      "options": [
+        { "id": "a", "text": "A batalha não é de Judá, mas de Deus" },
+        { "id": "b", "text": "O Senhor pelejará; aquietai-vos" },
+        { "id": "c", "text": "A batalha é do Senhor, diz Davi a Golias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a batalha não pertence a vocês, mas a Deus",
+      "evidence": ["2 Crônicas 20:15", "Êxodo 14:14", "1 Samuel 17:47"],
+      "feedbackCorrect": "De Josafá ao mar Vermelho e à luta de Davi: a batalha é do Senhor.",
+      "feedbackWrong": { "default": "Siga: Crônicas, Êxodo, 1 Samuel." },
+      "hint": "Comece pela declaração a Josafá.",
+      "learningObjective": "Ver a batalha do Senhor no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 20:22, o Senhor armou ___ contra os inimigos.",
+      "verseRef": "2 Crônicas 20:22",
+      "options": [
+        { "id": "a", "text": "emboscadas" },
+        { "id": "b", "text": "alianças" },
+        { "id": "c", "text": "muralhas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor armou emboscadas",
+      "feedbackCorrect": "Emboscadas são o meio da vitória enquanto Judá louva.",
+      "feedbackWrong": {
+        "b": "Não há alianças aqui; há emboscadas.",
+        "c": "O texto fala de emboscadas, não muralhas."
+      },
+      "hint": "Veja o objeto do verbo \"armou\".",
+      "learningObjective": "Lembrar o termo da vitória divina.",
+      "evidence": ["2 Crônicas 20:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 20:17 a Salmos 46:10?",
+      "verseRef": "2 Crônicas 20:17",
+      "passageA": { "ref": "2 Crônicas 20:17" },
+      "passageB": { "ref": "Salmos 46:10" },
+      "options": [
+        { "id": "a", "text": "Aquietai-vos e sabei" },
+        { "id": "b", "text": "Lutai com todas as forças" },
+        { "id": "c", "text": "Fujam sem olhar atrás" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fiquem firmes, permaneçam em pé e vejam a salvação",
+      "evidence": ["2 Crônicas 20:17", "Salmos 46:10"],
+      "feedbackCorrect": "Nos dois textos, a postura é confiar e ver Deus agir.",
+      "feedbackWrong": {
+        "b": "Aqui não precisam lutar.",
+        "c": "A ordem é sair ao encontro, firmes, não fugir."
+      },
+      "hint": "Compare a postura diante da salvação de Deus.",
+      "learningObjective": "Ligar a firmeza de Judá ao salmo."
+    }
+  ]
+}

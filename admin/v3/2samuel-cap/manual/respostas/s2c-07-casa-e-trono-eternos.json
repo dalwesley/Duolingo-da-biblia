@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 7:8–16",
+    "passages": [
+      {
+        "ref": "2 Samuel 7:8–16"
+      }
+    ],
+    "context": "O Senhor fala a Davi pela palavra do profeta: tira-o das ovelhas, promete casa, descendência e trono para sempre.",
+    "keyword": "para sempre",
+    "keywordGloss": "A promessa firma casa, reino e trono sem prazo humano.",
+    "focusQuestion": "O que muda quando você confia numa promessa que o Senhor firma para sempre?",
+    "reflectionPrompts": [
+      "Tirou das ovelhas",
+      "Casa prometida",
+      "Trono eterno"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor tirou Davi de trás das ovelhas para ser príncipe.",
+        "evidenceRef": "2 Samuel 7:8",
+        "evidenceSpan": "Eu te tirei da malhada, de trás das ovelhas"
+      },
+      {
+        "text": "O Senhor esteve com Davi por onde andasse.",
+        "evidenceRef": "2 Samuel 7:9",
+        "evidenceSpan": "estive com você por onde quer que andasse"
+      },
+      {
+        "text": "O Senhor fará surgir a descendência de Davi.",
+        "evidenceRef": "2 Samuel 7:12",
+        "evidenceSpan": "farei surgir depois de você a sua descendência"
+      },
+      {
+        "text": "O filho edificará uma casa para o nome do Senhor.",
+        "evidenceRef": "2 Samuel 7:13",
+        "evidenceSpan": "Ele edificará uma casa para o meu nome"
+      },
+      {
+        "text": "A misericórdia não se apartará dele como de Saul.",
+        "evidenceRef": "2 Samuel 7:15",
+        "evidenceSpan": "Minha misericórdia, porém, não se apartará dele"
+      },
+      {
+        "text": "Casa e reino serão firmados para sempre.",
+        "evidenceRef": "2 Samuel 7:16",
+        "evidenceSpan": "sua casa e o seu reino serão firmados para sempre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "descendência",
+        "gloss": "A linhagem que o Senhor fará surgir depois de Davi."
+      },
+      {
+        "term": "trono",
+        "gloss": "O reinado estabelecido para sempre."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "Fidelidade que não se retira como foi retirada de Saul."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lembrete: Davi tirado das ovelhas",
+        "evidenceRef": "2 Samuel 7:8–9"
+      },
+      {
+        "label": "Descanso do povo e casa para Davi",
+        "evidenceRef": "2 Samuel 7:10–11"
+      },
+      {
+        "label": "Descendência, casa e trono eternos",
+        "evidenceRef": "2 Samuel 7:12–13"
+      },
+      {
+        "label": "Misericórdia firme e reino para sempre",
+        "evidenceRef": "2 Samuel 7:14–16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Tirou das ovelhas para que fosse príncipe sobre Israel.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 7:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Misericórdia não se apartará; porém não como em Saul.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 7:15"
+      },
+      {
+        "kind": "resultado",
+        "text": "Mas casa e reino firmados para sempre.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 7:16"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 89:3–4",
+        "bridge": "Pacto com Davi"
+      },
+      {
+        "ref": "Lucas 1:32–33",
+        "bridge": "Trono de Davi para sempre"
+      },
+      {
+        "ref": "Hebreus 1:5",
+        "bridge": "Eu serei seu pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A promessa depende só do mérito perfeito de Davi.",
+        "why": "Há castigo se transgredir, mas a misericórdia não se aparta."
+      },
+      {
+        "text": "O trono dura só a vida de Davi.",
+        "why": "O texto repete para sempre sobre casa, reino e trono."
+      },
+      {
+        "text": "Davi edificará a casa para o nome do Senhor.",
+        "why": "O filho da descendência edificará a casa."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 7:16, por quanto tempo o trono será estabelecido?",
+    "centralInsight": "Deus promete a Davi casa, descendência e trono firmados para sempre."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 7:13, o Senhor estabelecerá o trono do reino para sempre.",
+      "verseRef": "2 Samuel 7:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "estabelecerei o trono do seu reino para sempre",
+      "feedbackCorrect": "Trono para sempre.",
+      "feedbackWrong": {
+        "false": "O verso diz para sempre."
+      },
+      "hint": "Veja o fim do verso.",
+      "learningObjective": "Observar o trono eterno.",
+      "evidence": [
+        "2 Samuel 7:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 7:13, toque o que será estabelecido para sempre.",
+      "verseRef": "2 Samuel 7:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa"
+        },
+        {
+          "id": "b",
+          "text": "edificará"
+        },
+        {
+          "id": "c",
+          "text": "nome"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "edificará",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar ovelhas.",
+      "evidence": [
+        "2 Samuel 7:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 7:12, o que o Senhor fará surgir depois de Davi?",
+      "verseRef": "2 Samuel 7:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A sua descendência"
+        },
+        {
+          "id": "b",
+          "text": "Um novo Saul"
+        },
+        {
+          "id": "c",
+          "text": "Só inimigos"
+        },
+        {
+          "id": "d",
+          "text": "Um templo pagão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farei surgir depois de você a sua descendência",
+      "feedbackCorrect": "Descendência.",
+      "feedbackWrong": {
+        "b": "Não é Saul.",
+        "c": "Há reino.",
+        "d": "Há casa para o nome."
+      },
+      "hint": "Leia o que surge.",
+      "learningObjective": "Reconhecer a descendência.",
+      "evidence": [
+        "2 Samuel 7:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 7:13 na ordem do texto.",
+      "verseRef": "2 Samuel 7:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele edificará uma casa para o meu nome"
+        },
+        {
+          "id": "b",
+          "text": "e eu estabelecerei o trono do seu reino"
+        },
+        {
+          "id": "c",
+          "text": "para sempre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "estabelecerei o trono do seu reino para sempre",
+      "feedbackCorrect": "Casa, trono e para sempre.",
+      "feedbackWrong": {
+        "default": "Comece pela casa."
+      },
+      "hint": "O que fecha a promessa?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 7:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 7:12, complete: farei surgir depois de você a sua ___.",
+      "verseRef": "2 Samuel 7:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "descendência"
+        },
+        {
+          "id": "b",
+          "text": "derrota"
+        },
+        {
+          "id": "c",
+          "text": "fuga"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a sua descendência",
+      "feedbackCorrect": "Descendência.",
+      "feedbackWrong": {
+        "b": "Não é derrota.",
+        "c": "Não é fuga."
+      },
+      "hint": "Veja o que surge.",
+      "learningObjective": "Lembrar descendência.",
+      "evidence": [
+        "2 Samuel 7:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 7:16 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 7:16",
+      "passageA": {
+        "ref": "2 Samuel 7:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus promete casa e trono firmados para sempre."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino firmado para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Trono só temporário"
+        },
+        {
+          "id": "c",
+          "text": "Casa sem promessa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seu trono será estabelecido para sempre",
+      "feedbackCorrect": "Para sempre.",
+      "feedbackWrong": {
+        "b": "Há eternidade.",
+        "c": "Há promessa."
+      },
+      "hint": "Por quanto tempo?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 7:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 7:15, o texto traz o trecho — Minha misericórdia, porém, não se apartará dele.",
+      "verseRef": "2 Samuel 7:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Minha misericórdia, porém, não se apartará dele",
+      "feedbackCorrect": "O versículo confirma a afirmação.",
+      "feedbackWrong": {
+        "false": "O trecho está no versículo."
+      },
+      "hint": "Compare com o palco.",
+      "learningObjective": "Ver a misericórdia firme.",
+      "evidence": [
+        "2 Samuel 7:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 7:15, toque o marcador de contraste.",
+      "verseRef": "2 Samuel 7:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Minha"
+        },
+        {
+          "id": "c",
+          "text": "apartará"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Minha",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o porém.",
+      "evidence": [
+        "2 Samuel 7:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 7:8 faz?",
+      "verseRef": "2 Samuel 7:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tirou das ovelhas para que fosse príncipe"
+        },
+        {
+          "id": "b",
+          "text": "Deixou nas ovelhas para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Tirou o trono de Israel"
+        },
+        {
+          "id": "d",
+          "text": "Negou a casa a Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que fosses príncipe sobre o meu povo",
+      "feedbackCorrect": "Propósito do chamado.",
+      "feedbackWrong": {
+        "b": "Há chamado.",
+        "c": "Há príncipe.",
+        "d": "Há casa prometida."
+      },
+      "hint": "Leia o para que.",
+      "learningObjective": "Compreender o propósito.",
+      "evidence": [
+        "2 Samuel 7:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da promessa.",
+      "verseRef": "2 Samuel 7:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrete: Davi tirado das ovelhas"
+        },
+        {
+          "id": "b",
+          "text": "Descendência, casa e trono eternos"
+        },
+        {
+          "id": "c",
+          "text": "Misericórdia firme e reino para sempre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu te tirei da malhada",
+      "feedbackCorrect": "Origem, promessa e misericórdia.",
+      "feedbackWrong": {
+        "default": "Comece pelas ovelhas."
+      },
+      "hint": "O que fecha a promessa?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 7:8",
+        "2 Samuel 7:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 7:8, complete: ___ que fosses príncipe sobre o meu povo.",
+      "verseRef": "2 Samuel 7:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "para"
+        },
+        {
+          "id": "b",
+          "text": "sem"
+        },
+        {
+          "id": "c",
+          "text": "após"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que fosses príncipe",
+      "feedbackCorrect": "Para.",
+      "feedbackWrong": {
+        "b": "Não é sem.",
+        "c": "Não é após."
+      },
+      "hint": "Veja o propósito.",
+      "learningObjective": "Lembrar para.",
+      "evidence": [
+        "2 Samuel 7:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 7:16 a Salmos 89:3–4?",
+      "verseRef": "2 Samuel 7:16",
+      "passageA": {
+        "ref": "2 Samuel 7:16"
+      },
+      "passageB": {
+        "ref": "Salmos 89:3–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pacto com Davi"
+        },
+        {
+          "id": "b",
+          "text": "Fim do trono"
+        },
+        {
+          "id": "c",
+          "text": "Rejeição da casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seu trono será estabelecido para sempre",
+      "feedbackCorrect": "Pacto e trono eterno.",
+      "feedbackWrong": {
+        "b": "Há para sempre.",
+        "c": "Há firmação."
+      },
+      "hint": "Compare o pacto.",
+      "learningObjective": "Ligar ao pacto.",
+      "evidence": [
+        "2 Samuel 7:16",
+        "Salmos 89:3–4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 7:13–16, a promessa do trono vale só enquanto Davi viver.",
+      "verseRef": "2 Samuel 7:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "seu trono será estabelecido para sempre",
+      "feedbackCorrect": "O texto diz para sempre.",
+      "feedbackWrong": {
+        "true": "Leia o fim do verso."
+      },
+      "hint": "Veja a duração.",
+      "learningObjective": "Avaliar a duração da promessa.",
+      "evidence": [
+        "2 Samuel 7:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 7:16, toque o que sustenta a duração da promessa.",
+      "verseRef": "2 Samuel 7:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "reino"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "serão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "casa",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar sempre.",
+      "evidence": [
+        "2 Samuel 7:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une misericórdia e trono eterno?",
+      "verseRef": "2 Samuel 7:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus firma a casa de Davi com fidelidade que não se retira como de Saul"
+        },
+        {
+          "id": "b",
+          "text": "A promessa cai ao primeiro erro"
+        },
+        {
+          "id": "c",
+          "text": "Saul permanece como modelo da misericórdia"
+        },
+        {
+          "id": "d",
+          "text": "Davi edificará sozinho o templo eterno"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Minha misericórdia, porém, não se apartará dele",
+      "feedbackCorrect": "Misericórdia e trono.",
+      "feedbackWrong": {
+        "b": "Há castigo, mas misericórdia fica.",
+        "c": "Saul é contraste.",
+        "d": "O filho edifica."
+      },
+      "hint": "Una porém e para sempre.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 7:15–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da promessa eterna.",
+      "verseRef": "2 Samuel 7:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Descendência após Davi"
+        },
+        {
+          "id": "b",
+          "text": "Casa para o nome do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Trono firmado para sempre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "farei surgir depois de você a sua descendência",
+      "feedbackCorrect": "Descendência, casa e trono.",
+      "feedbackWrong": {
+        "default": "Comece pela descendência."
+      },
+      "hint": "O que dura para sempre?",
+      "learningObjective": "Encadear a promessa.",
+      "evidence": [
+        "2 Samuel 7:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 7:15, complete: Minha ___, porém, não se apartará dele.",
+      "verseRef": "2 Samuel 7:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "ira"
+        },
+        {
+          "id": "c",
+          "text": "ausência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Minha misericórdia, porém, não se apartará",
+      "feedbackCorrect": "Misericórdia.",
+      "feedbackWrong": {
+        "b": "Não é ira.",
+        "c": "Não é ausência."
+      },
+      "hint": "Veja o que não se aparta.",
+      "learningObjective": "Lembrar misericórdia.",
+      "evidence": [
+        "2 Samuel 7:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 7:13 a Lucas 1:32–33?",
+      "verseRef": "2 Samuel 7:13",
+      "passageA": {
+        "ref": "2 Samuel 7:13"
+      },
+      "passageB": {
+        "ref": "Lucas 1:32–33"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Trono de Davi para sempre"
+        },
+        {
+          "id": "b",
+          "text": "Fim do trono de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Templo sem rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estabelecerei o trono do seu reino para sempre",
+      "feedbackCorrect": "O NT ecoa o trono eterno.",
+      "feedbackWrong": {
+        "b": "Há continuidade.",
+        "c": "Há trono."
+      },
+      "hint": "Compare o trono.",
+      "learningObjective": "Ligar a Lucas.",
+      "evidence": [
+        "2 Samuel 7:13",
+        "Lucas 1:32–33"
+      ]
+    }
+  ]
+}

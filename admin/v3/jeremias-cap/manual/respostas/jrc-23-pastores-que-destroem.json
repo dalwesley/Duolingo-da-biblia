@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Jeremias 23:1–6",
+    "passages": [
+      {
+        "ref": "Jeremias 23:1–6"
+      }
+    ],
+    "context": "Neste trecho, a palavra do Senhor alcança o povo com juízo e esperança. Observe o que o texto afirma antes de interpretar.",
+    "keyword": "pastores",
+    "keywordGloss": "Termo do trecho ligado ao sentido da cena.",
+    "focusQuestion": "O que este trecho pede de você diante do Senhor?",
+    "reflectionPrompts": [
+      "Ouvir a palavra",
+      "Confiar no Senhor",
+      "Responder com fé"
+    ],
+    "facts": [
+      {
+        "text": "Em Jeremias 23:1, o texto registra: Ai dos pastores que destroem e dispersam as.",
+        "evidenceRef": "Jeremias 23:1",
+        "evidenceSpan": "Ai dos pastores que destroem e dispersam as"
+      },
+      {
+        "text": "Em Jeremias 23:2, o texto registra: Portanto, assim diz o Senhor, o Deus de.",
+        "evidenceRef": "Jeremias 23:2",
+        "evidenceSpan": "Portanto, assim diz o Senhor, o Deus de"
+      },
+      {
+        "text": "Em Jeremias 23:3, o texto registra: Eu mesmo reunirei o restante das minhas ovelhas,.",
+        "evidenceRef": "Jeremias 23:3",
+        "evidenceSpan": "Eu mesmo reunirei o restante das minhas ovelhas,"
+      },
+      {
+        "text": "Em Jeremias 23:4, o texto registra: E levantarei sobre elas pastores que as apascentem,.",
+        "evidenceRef": "Jeremias 23:4",
+        "evidenceSpan": "E levantarei sobre elas pastores que as apascentem,"
+      },
+      {
+        "text": "Em Jeremias 23:5, o texto registra: Eis que vêm dias, diz o Senhor, em.",
+        "evidenceRef": "Jeremias 23:5",
+        "evidenceSpan": "Eis que vêm dias, diz o Senhor, em"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pastores",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "destroem",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "dispersam",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "pastores destroem dispersam ovelhas",
+        "evidenceRef": "Jeremias 23:1"
+      },
+      {
+        "label": "Portanto Senhor Deus Israel",
+        "evidenceRef": "Jeremias 23:2"
+      },
+      {
+        "label": "mesmo reunirei restante minhas",
+        "evidenceRef": "Jeremias 23:3"
+      },
+      {
+        "label": "levantarei sobre elas pastores",
+        "evidenceRef": "Jeremias 23:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Relação de causa presente em Jeremias 23:2.",
+        "marker": "mas",
+        "evidenceRef": "Jeremias 23:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Relação de contraste presente em Jeremias 23:2.",
+        "marker": null,
+        "evidenceRef": "Jeremias 23:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Relação de resultado presente em Jeremias 23:3.",
+        "marker": null,
+        "evidenceRef": "Jeremias 23:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 6:8",
+        "bridge": "Envio do profeta"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro pedido"
+      },
+      {
+        "ref": "Deuteronômio 30:2",
+        "bridge": "Voltar ao Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não exige mudança concreta de vida.",
+        "why": "A palavra do Senhor chama a ouvir e agir."
+      },
+      {
+        "text": "A mensagem vale só para lideranças, nunca para o povo.",
+        "why": "O endereço do texto alcança o povo e a cidade."
+      },
+      {
+        "text": "O Senhor anuncia sem compromisso com o cumprimento.",
+        "why": "O texto liga a palavra de Deus ao que Ele faz."
+      }
+    ],
+    "centralInsight": "Eu mesmo recolherei o restante das minhas ovelhas e levantarei sobre elas pastores.",
+    "anchorQuestion": "O que Jeremias 23:1 afirma de modo claro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Jeremias 23:1, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 23:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ai dos pastores que destroem e dispersam as ovelhas do",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 23:1.",
+      "evidence": [
+        "Jeremias 23:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jeremias 23:2, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, assim",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 23:2.",
+      "evidence": [
+        "Jeremias 23:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Jeremias 23:3, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 23:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu mesmo reunirei o restante das minhas"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu mesmo reunirei o restante das minhas",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 23:3.",
+      "evidence": [
+        "Jeremias 23:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 23:4.",
+      "verseRef": "Jeremias 23:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "E levantarei sobre elas pastores que as apascentem"
+        },
+        {
+          "id": "b",
+          "text": "e nunca mais temerão, nem se espantarão; nenhuma delas faltará"
+        },
+        {
+          "id": "c",
+          "text": "diz o Senhor."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E levantarei sobre elas pastores que as apascentem",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 23:4.",
+      "evidence": [
+        "Jeremias 23:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Jeremias 23:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 23:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "levantarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "s que vêm dias, diz o Se",
+      "feedbackCorrect": "A palavra do texto é dias.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 23:5.",
+      "evidence": [
+        "Jeremias 23:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Jeremias 23:6 comunica que se liga a este contexto?",
+      "verseRef": "Jeremias 23:6",
+      "passageA": {
+        "ref": "Jeremias 23:6",
+        "text": "Nos seus dias, Judá será salvo, e Israel habitará seguro; e este será o nome pel"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor dirige a palavra ao seu povo neste trecho."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Sem chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos seus dias, Judá será salvo, e Israel habitará ",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 23:6.",
+      "evidence": [
+        "Jeremias 23:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Jeremias 23:3, o texto inclui a ideia de Eu mesmo reunirei o restante das.",
+      "verseRef": "Jeremias 23:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu mesmo reunirei o restante das minhas ovelhas, de todas",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 23:3.",
+      "evidence": [
+        "Jeremias 23:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jeremias 23:4, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 23:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantarei"
+        },
+        {
+          "id": "b",
+          "text": "sobre"
+        },
+        {
+          "id": "c",
+          "text": "elas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E levantarei sobre e",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 23:4.",
+      "evidence": [
+        "Jeremias 23:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Jeremias 23:5, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 23:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que vêm dias, diz o Senhor, em",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 23:5.",
+      "evidence": [
+        "Jeremias 23:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 23:6.",
+      "verseRef": "Jeremias 23:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias Judá será salvo"
+        },
+        {
+          "id": "b",
+          "text": "Israel habitará seguro será"
+        },
+        {
+          "id": "c",
+          "text": "nossa Justiça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Nos seus dias, Judá será salvo, e Israel habitará ",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 23:6.",
+      "evidence": [
+        "Jeremias 23:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Jeremias 23:1, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 23:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "pastores"
+        },
+        {
+          "id": "b",
+          "text": "destroem"
+        },
+        {
+          "id": "c",
+          "text": "dispersam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ai dos pastores que destr",
+      "feedbackCorrect": "A palavra do texto é pastores.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 23:1.",
+      "evidence": [
+        "Jeremias 23:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Jeremias 23:2 a Isaías 6:8?",
+      "verseRef": "Jeremias 23:2",
+      "passageA": {
+        "ref": "Jeremias 23:2",
+        "text": "Portanto, assim diz o Senhor, o Deus de Israel, contra os pastores que apascenta"
+      },
+      "passageB": {
+        "ref": "Isaías 6:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Envio do profeta"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, assim diz o Senhor, o Deus de Israel, co",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 23:2.",
+      "evidence": [
+        "Jeremias 23:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Jeremias 23:5, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 23:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eis que vêm dias, diz o Senhor, em que levantarei",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 23:5.",
+      "evidence": [
+        "Jeremias 23:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jeremias 23:6, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 23:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá"
+        },
+        {
+          "id": "b",
+          "text": "será"
+        },
+        {
+          "id": "c",
+          "text": "salvo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "s dias, Judá será sa",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 23:6.",
+      "evidence": [
+        "Jeremias 23:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Jeremias 23:1, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 23:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ai dos pastores que destroem e dispersam as",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 23:1.",
+      "evidence": [
+        "Jeremias 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 23:2.",
+      "verseRef": "Jeremias 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Deus Israel contra pastores"
+        },
+        {
+          "id": "c",
+          "text": "afastastes cuidastes delas castigar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Portanto, assim diz o Senhor, o Deus de Israel, co",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 23:2.",
+      "evidence": [
+        "Jeremias 23:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Jeremias 23:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 23:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "mesmo"
+        },
+        {
+          "id": "b",
+          "text": "reunirei"
+        },
+        {
+          "id": "c",
+          "text": "restante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu mesmo reunirei",
+      "feedbackCorrect": "A palavra do texto é mesmo.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 23:3.",
+      "evidence": [
+        "Jeremias 23:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Jeremias 23:4 a Salmos 51:10?",
+      "verseRef": "Jeremias 23:4",
+      "passageA": {
+        "ref": "Jeremias 23:4",
+        "text": "E levantarei sobre elas pastores que as apascentem, e nunca mais temerão, nem se"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro pedido"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E levantarei sobre elas pastores que as apascentem",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 23:4.",
+      "evidence": [
+        "Jeremias 23:4"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "rute-cap",
+  "prefix": "rtc",
+  "book": "Rute",
+  "chapters": 4,
+  "title": "Rute",
+  "description": "Rute capítulo a capítulo: lealdade, campo de Boaz e redenção na porta da cidade.",
+  "icon": "🌾",
+  "color": "#E8922A",
+  "order": 12,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["rute"],
+  "modules": [
+    {
+      "title": "Lealdade e redenção · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Rute 1:6–15",
+          "title": "Volta de Moabe",
+          "intro": "Noemi ouve que o Senhor deu alimento e parte de Moabe com as noras; no caminho, insiste que voltem.",
+          "insight": "Orfa beija e parte; Rute se apega a Noemi quando o caminho parece sem futuro.",
+          "objective": "Apegar-se com lealdade"
+        },
+        {
+          "ref": "Rute 2:13–20",
+          "title": "Favor no campo",
+          "intro": "Rute agradece o favor de Boaz; à noite conta a Noemi e fica sabendo quem ele é.",
+          "insight": "Boaz acolhe a estrangeira; Noemi vê a mão do Senhor: ele é parente resgatador.",
+          "objective": "Reconhecer o favor do Senhor"
+        },
+        {
+          "ref": "Rute 3:1–8",
+          "title": "Noite na eira",
+          "intro": "Noemi orienta Rute a se lavar, ir à eira e deitar aos pés de Boaz depois da ceia.",
+          "insight": "Rute obedece o plano da sogra; à meia-noite Boaz se sobressalta e a encontra ali.",
+          "objective": "Confiar e agir com pureza"
+        },
+        {
+          "ref": "Rute 4:1–12",
+          "title": "Na porta da cidade",
+          "intro": "Boaz reúne os anciãos e o outro parente; quem tem direito primeiro recusa a redenção.",
+          "insight": "Boaz resgata a terra e Rute diante das testemunhas: a linhagem de Noemi não se apaga.",
+          "objective": "Resgatar com fidelidade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Lealdade e redenção",
+        "intro": "Revise a volta de Moabe, o favor no campo, a eira e a redenção na porta.",
+        "insight": "Lealdade e redenção restauram a casa sob o olhar do Senhor"
+      }
+    }
+  ]
+}

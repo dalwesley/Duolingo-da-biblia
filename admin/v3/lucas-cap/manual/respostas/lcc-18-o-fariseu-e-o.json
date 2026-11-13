@@ -1,0 +1,496 @@
+{
+  "study": {
+    "passageRef": "Lucas 18:9–14",
+    "passages": [
+      { "ref": "Lucas 18:9–14" }
+    ],
+    "context": "Jesus dirige esta parábola a quem confiava em si, se julgava justo e desprezava os outros. No templo, um fariseu e um publicano sobem para orar.",
+    "keyword": "humildade",
+    "keywordGloss": "Chegar diante de Deus como pecador, sem apoiar a oração em méritos próprios.",
+    "focusQuestion": "Quando você ora, você apresenta méritos ou reconhece o que precisa de Deus?",
+    "reflectionPrompts": [
+      "Confiança em si",
+      "Súplica do publicano",
+      "Quem desce justificado"
+    ],
+    "facts": [
+      {
+        "text": "Jesus propõe a parábola a alguns que confiavam em si mesmos.",
+        "evidenceRef": "Lucas 18:9",
+        "evidenceSpan": "propôs esta parábola a alguns que confiavam em si mesmos"
+      },
+      {
+        "text": "Dois homens subiram ao templo com o propósito de orar.",
+        "evidenceRef": "Lucas 18:10",
+        "evidenceSpan": "Dois homens subiram ao templo com o propósito de orar"
+      },
+      {
+        "text": "O fariseu agradece porque não é como os outros homens.",
+        "evidenceRef": "Lucas 18:11",
+        "evidenceSpan": "te agradeço porque não sou como os outros homens"
+      },
+      {
+        "text": "O fariseu jejua duas vezes por semana e dá o dízimo de tudo o que ganha.",
+        "evidenceRef": "Lucas 18:12",
+        "evidenceSpan": "Jejuo duas vezes por semana e dou o dízimo de tudo o que ganho"
+      },
+      {
+        "text": "O publicano pede que Deus seja propício a ele, pecador.",
+        "evidenceRef": "Lucas 18:13",
+        "evidenceSpan": "sê propício a mim, pecador"
+      },
+      {
+        "text": "Este desceu justificado para sua casa, e não aquele.",
+        "evidenceRef": "Lucas 18:14",
+        "evidenceSpan": "este desceu justificado para sua casa, e não aquele"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justificado",
+        "gloss": "Declarado aceito diante de Deus. Neste relato, só o publicano desce assim."
+      },
+      {
+        "term": "pecador",
+        "gloss": "Nome com que o publicano se apresenta, sem se comparar a ninguém."
+      },
+      {
+        "term": "humilha",
+        "gloss": "Rebaixar-se diante de Deus. O texto promete exaltação a quem faz isso."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus fala a quem confia em si",
+        "evidenceRef": "Lucas 18:9"
+      },
+      {
+        "label": "O fariseu ora pelos próprios méritos",
+        "evidenceRef": "Lucas 18:11–12"
+      },
+      {
+        "label": "O publicano pede perdão à distância",
+        "evidenceRef": "Lucas 18:13"
+      },
+      {
+        "label": "Só o humilde desce justificado",
+        "evidenceRef": "Lucas 18:14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O publicano não segue a comparação do fariseu: pede que Deus seja propício a ele, pecador.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 18:13"
+      },
+      {
+        "kind": "causa",
+        "text": "Jesus explica o desfecho: quem se exalta será humilhado, e quem se humilha será exaltado.",
+        "marker": "porque",
+        "evidenceRef": "Lucas 18:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Diante das duas orações, só o publicano desce justificado para casa.",
+        "marker": null,
+        "evidenceRef": "Lucas 18:14"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 14:11", "bridge": "Humilde será exaltado" },
+      { "ref": "Salmos 51:17", "bridge": "Coração contrito a Deus" },
+      { "ref": "Tiago 4:6", "bridge": "Graça aos humildes" }
+    ],
+    "misreadings": [
+      {
+        "text": "Jejum e dízimo tornam a oração inútil.",
+        "why": "O texto não condena jejum nem dízimo. O problema é confiar em si e desprezar os outros."
+      },
+      {
+        "text": "Os dois descem justificados, porque ambos oraram no templo.",
+        "why": "Jesus diz que este desceu justificado para sua casa, e não aquele."
+      },
+      {
+        "text": "Bater no peito basta como rito para obter perdão.",
+        "why": "O gesto acompanha o pedido de quem se reconhece pecador. Jesus não trata o gesto como rito suficiente."
+      }
+    ],
+    "centralInsight": "Deus ouve quem se reconhece pecador e se humilha diante dele.",
+    "anchorQuestion": "Quem desceu justificado para sua casa nesta parábola?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 18:9, Jesus propôs esta parábola a alguns que confiavam em si mesmos.",
+      "verseRef": "Lucas 18:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "propôs esta parábola a alguns que confiavam em si mesmos",
+      "feedbackCorrect": "A parábola é dirigida a quem confiava em si mesmo e se considerava justo.",
+      "feedbackWrong": {
+        "false": "Releia o início: Jesus fala a alguns que confiavam em si mesmos."
+      },
+      "hint": "Veja a quem Jesus dirige a parábola.",
+      "learningObjective": "Observar a quem Jesus dirige esta parábola.",
+      "evidence": ["Lucas 18:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:11, toque quem orava de pé consigo mesmo.",
+      "verseRef": "Lucas 18:11",
+      "options": [
+        { "id": "a", "text": "Ó Deus" },
+        { "id": "b", "text": "O fariseu" },
+        { "id": "c", "text": "este publicano" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O fariseu, de pé, orava assim consigo mesmo",
+      "feedbackCorrect": "Quem está de pé e ora consigo mesmo é o fariseu.",
+      "feedbackWrong": {
+        "a": "Ó Deus é aquele a quem ele fala, não quem ora.",
+        "c": "O publicano entra na comparação, não como autor desta oração."
+      },
+      "hint": "Procure quem inicia a oração no versículo.",
+      "learningObjective": "Identificar quem ora de pé consigo mesmo.",
+      "evidence": ["Lucas 18:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 18:12, o que o fariseu afirma fazer?",
+      "verseRef": "Lucas 18:12",
+      "options": [
+        { "id": "a", "text": "Jejuar duas vezes por semana e dar o dízimo" },
+        { "id": "b", "text": "Pedir perdão sem erguer os olhos ao céu" },
+        { "id": "c", "text": "Bater no peito e chamar-se pecador" },
+        { "id": "d", "text": "Descer para casa já justificado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jejuo duas vezes por semana e dou o dízimo de tudo o que ganho",
+      "feedbackCorrect": "Ele apresenta jejum duas vezes por semana e dízimo de tudo o que ganha.",
+      "feedbackWrong": {
+        "b": "Esse pedido, sem erguer os olhos, é do publicano em Lucas 18:13.",
+        "c": "Bater no peito e se chamar pecador é o gesto do publicano.",
+        "d": "O desfecho sobre descer justificado só aparece em Lucas 18:14."
+      },
+      "hint": "Leia o que ele diz sobre jejum e dízimo.",
+      "learningObjective": "Observar o que o fariseu apresenta na própria oração.",
+      "evidence": ["Lucas 18:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 18:13 na ordem do texto.",
+      "verseRef": "Lucas 18:13",
+      "options": [
+        { "id": "a", "text": "O publicano, porém, de pé, à distância" },
+        { "id": "b", "text": "não ousava nem sequer levantar os olhos ao céu" },
+        { "id": "c", "text": "sê propício a mim, pecador!" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O publicano, porém, de pé, à distância",
+      "feedbackCorrect": "O versículo vai da postura distante ao olhar baixo e, no fim, ao pedido.",
+      "feedbackWrong": {
+        "default": "Comece pela posição do publicano. O pedido a Deus fica no fim."
+      },
+      "hint": "O versículo começa pela posição dele.",
+      "learningObjective": "Reconhecer a sequência do gesto do publicano em Lucas 18:13.",
+      "evidence": ["Lucas 18:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 18:10, quem é o outro homem que sobe ao templo?",
+      "verseRef": "Lucas 18:10",
+      "options": [
+        { "id": "a", "text": "levita" },
+        { "id": "b", "text": "publicano" },
+        { "id": "c", "text": "escriba" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o outro, um publicano",
+      "feedbackCorrect": "O outro homem que sobe ao templo é o publicano.",
+      "feedbackWrong": {
+        "a": "O versículo não nomeia um levita. O outro homem é o publicano.",
+        "c": "O texto não fala de escriba. O outro homem é o publicano."
+      },
+      "hint": "Leia o segundo homem nomeado no versículo.",
+      "learningObjective": "Lembrar quem sobe ao templo junto com o fariseu.",
+      "evidence": ["Lucas 18:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 18:14 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 18:14",
+      "passageA": { "ref": "Lucas 18:14" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diante de Deus, só quem se humilha desce justificado para casa."
+      },
+      "options": [
+        { "id": "a", "text": "Mérito basta para Deus" },
+        { "id": "b", "text": "Humilde desce justificado" },
+        { "id": "c", "text": "Ambos saem perdoados" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "este desceu justificado para sua casa",
+      "feedbackCorrect": "O versículo entrega a casa justificada a quem se humilha, não ao outro.",
+      "feedbackWrong": {
+        "a": "Quem lista méritos não é o que desce justificado.",
+        "c": "Jesus separa os dois: este desce justificado, e não aquele."
+      },
+      "hint": "Compare o desfecho com quem se abaixa diante de Deus.",
+      "learningObjective": "Ligar o desfecho de Lucas 18:14 à humildade diante de Deus.",
+      "evidence": ["Lucas 18:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 18:11–12, o fariseu ora para se reconhecer pecador como os outros homens.",
+      "verseRef": "Lucas 18:11–12",
+      "correctOptionId": "false",
+      "evidenceSpan": "te agradeço porque não sou como os outros homens",
+      "feedbackCorrect": "Ele agradece por não ser como os outros. Não há confissão de pecado.",
+      "feedbackWrong": {
+        "true": "O agradecimento separa o fariseu dos outros. Ele não se chama pecador."
+      },
+      "hint": "Veja o motivo do agradecimento no versículo.",
+      "learningObjective": "Compreender que a oração do fariseu afirma diferença, não culpa.",
+      "evidence": ["Lucas 18:11–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:13, toque a palavra que marca o contraste com a oração anterior.",
+      "verseRef": "Lucas 18:13",
+      "options": [
+        { "id": "a", "text": "céu" },
+        { "id": "b", "text": "porém" },
+        { "id": "c", "text": "Deus" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O publicano, porém,",
+      "feedbackCorrect": "Porém vira a cena: a oração do publicano segue outro caminho.",
+      "feedbackWrong": {
+        "a": "Céu indica para onde ele não olha, não o contraste entre as orações.",
+        "c": "Deus é o destinatário do pedido, não a palavra que opõe as orações."
+      },
+      "hint": "Procure a palavra curta logo após o nome dele.",
+      "learningObjective": "Reconhecer o marcador de contraste entre as duas orações.",
+      "evidence": ["Lucas 18:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Lucas 18:12–13 mostra entre as duas orações?",
+      "verseRef": "Lucas 18:12–13",
+      "options": [
+        { "id": "a", "text": "Abre uma súplica oposta à comparação anterior" },
+        { "id": "b", "text": "Repete o agradecimento da oração anterior" },
+        { "id": "c", "text": "Mostra o publicano copiando essa oração" },
+        { "id": "d", "text": "Ambos descem aceitos só por orar no templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O publicano, porém, de pé, à distância",
+      "feedbackCorrect": "O porém marca outra postura: ele pede perdão, sem se comparar.",
+      "feedbackWrong": {
+        "b": "O agradecimento por não ser como os outros fica na oração anterior.",
+        "c": "Ele não copia o fariseu: pede que Deus seja propício a ele.",
+        "d": "O desfecho ainda não está aqui, e não trata os dois como iguais."
+      },
+      "hint": "Observe o que a palavra porém faz entre as orações.",
+      "learningObjective": "Relacionar a súplica do publicano com a oração do fariseu.",
+      "evidence": ["Lucas 18:12–13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual sequência segue a parábola até o desfecho?",
+      "verseRef": "Lucas 18:13–14",
+      "options": [
+        { "id": "a", "text": "O fariseu ora pelos próprios méritos" },
+        { "id": "b", "text": "O publicano pede perdão à distância" },
+        { "id": "c", "text": "Só o humilde desce justificado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "este desceu justificado para sua casa",
+      "feedbackCorrect": "Primeiro os méritos, depois o pedido à distância, e então o desfecho.",
+      "feedbackWrong": {
+        "default": "Siga a parábola: méritos, pedido do publicano, desfecho."
+      },
+      "hint": "O desfecho é o último passo.",
+      "learningObjective": "Compreender os movimentos da parábola até o desfecho.",
+      "evidence": ["Lucas 18:11–12", "Lucas 18:13", "Lucas 18:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 18:14, o que será de todo o que se exalta?",
+      "verseRef": "Lucas 18:14",
+      "options": [
+        { "id": "a", "text": "exaltado" },
+        { "id": "b", "text": "humilhado" },
+        { "id": "c", "text": "justificado" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "todo o que se exalta a si mesmo será humilhado",
+      "feedbackCorrect": "Quem se exalta será humilhado. A exaltação fica com quem se humilha.",
+      "feedbackWrong": {
+        "a": "Exaltado é o destino de quem se humilha, não de quem se exalta.",
+        "c": "Justificado descreve o publicano ao descer, não o fim de quem se exalta."
+      },
+      "hint": "Leia o resultado anunciado para quem se exalta.",
+      "learningObjective": "Compreender o resultado anunciado para quem se exalta.",
+      "evidence": ["Lucas 18:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 18:14 a Lucas 14:11?",
+      "verseRef": "Lucas 18:14",
+      "passageA": { "ref": "Lucas 18:14" },
+      "passageB": { "ref": "Lucas 14:11" },
+      "options": [
+        { "id": "a", "text": "Jejum abre o céu" },
+        { "id": "b", "text": "Templo substitui a súplica" },
+        { "id": "c", "text": "Humilde será exaltado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "quem a si mesmo se humilha será exaltado",
+      "feedbackCorrect": "Os dois textos fecham com a mesma sentença: quem se humilha será exaltado.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois versículos liga jejum a abrir o céu.",
+        "b": "A ligação está na humildade, não numa troca do templo pela súplica."
+      },
+      "hint": "Compare a última frase dos dois textos.",
+      "learningObjective": "Relacionar Lucas 18:14 à sentença já dita em Lucas 14:11.",
+      "evidence": ["Lucas 18:14", "Lucas 14:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 18:14, desce justificado quem se humilha, não quem se exalta.",
+      "verseRef": "Lucas 18:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "quem a si mesmo se humilha será exaltado",
+      "feedbackCorrect": "O desfecho e o porque concordam: justificado é quem se humilha.",
+      "feedbackWrong": {
+        "false": "O texto recusa quem se exalta. Justificado é o que se humilha."
+      },
+      "hint": "Leia a explicação que segue o desfecho.",
+      "learningObjective": "Interpretar a justificação como fruto da humildade.",
+      "evidence": ["Lucas 18:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 18:13, toque a palavra com que o publicano se apresenta.",
+      "verseRef": "Lucas 18:13",
+      "options": [
+        { "id": "a", "text": "distância" },
+        { "id": "b", "text": "Deus" },
+        { "id": "c", "text": "pecador" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "sê propício a mim, pecador",
+      "feedbackCorrect": "Ele não lista méritos: apresenta-se a Deus como pecador.",
+      "feedbackWrong": {
+        "a": "Distância diz onde ele fica, não o nome que dá a si.",
+        "b": "Deus é aquele a quem ele fala, não o modo como se nomeia."
+      },
+      "hint": "Veja a palavra com que ele se nomeia no fim do pedido.",
+      "learningObjective": "Localizar a palavra em que o publicano se reconhece culpado.",
+      "evidence": ["Lucas 18:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 18:13–14 sustenta?",
+      "verseRef": "Lucas 18:13–14",
+      "options": [
+        { "id": "a", "text": "Deus justifica quem se reconhece pecador e se humilha" },
+        { "id": "b", "text": "Jejum e dízimo tornam qualquer oração inútil" },
+        { "id": "c", "text": "Ambos descem aceitos só por orar no templo" },
+        { "id": "d", "text": "Bater no peito basta como rito de perdão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este desceu justificado para sua casa, e não aquele",
+      "feedbackCorrect": "O publicano se reconhece pecador e se humilha, e é ele quem desce justificado.",
+      "feedbackWrong": {
+        "b": "O texto não condena jejum nem dízimo. O problema é confiar em si.",
+        "c": "Jesus diz que este desceu justificado, e não aquele.",
+        "d": "O gesto acompanha o pedido. Jesus não o trata como rito suficiente."
+      },
+      "hint": "Compare cada leitura com o desfecho do versículo.",
+      "learningObjective": "Escolher a leitura que o desfecho da parábola sustenta.",
+      "evidence": ["Lucas 18:13–14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica a oração do fariseu põe em movimento?",
+      "verseRef": "Lucas 18:11–12",
+      "options": [
+        { "id": "a", "text": "Confiança nos próprios méritos" },
+        { "id": "b", "text": "Pedido de quem se vê pecador" },
+        { "id": "c", "text": "Justificação de quem se humilha" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "te agradeço porque não sou como os outros homens",
+      "feedbackCorrect": "Mérito, pedido de perdão e, então, a justificação de quem se humilha.",
+      "feedbackWrong": {
+        "default": "Comece pela confiança nos méritos. Pedido e justificação vêm depois."
+      },
+      "hint": "O primeiro passo está na oração que agradece os méritos.",
+      "learningObjective": "Interpretar o caminho que vai do mérito à justificação.",
+      "evidence": ["Lucas 18:11–12", "Lucas 18:13", "Lucas 18:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 18:14, em que condição este homem desce para casa?",
+      "verseRef": "Lucas 18:14",
+      "options": [
+        { "id": "a", "text": "condenado" },
+        { "id": "b", "text": "rejeitado" },
+        { "id": "c", "text": "justificado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "este desceu justificado para sua casa",
+      "feedbackCorrect": "Este, o publicano, desce justificado para casa. O outro, não.",
+      "feedbackWrong": {
+        "a": "O versículo não diz que ele desce condenado. Ele desce justificado.",
+        "b": "Jesus não fala em rejeição aqui. Este homem desce justificado."
+      },
+      "hint": "Veja a palavra que acompanha o verbo desceu.",
+      "learningObjective": "Lembrar o termo que nomeia a condição de quem se humilha.",
+      "evidence": ["Lucas 18:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 18:13 a Salmos 51:17?",
+      "verseRef": "Lucas 18:13",
+      "passageA": { "ref": "Lucas 18:13" },
+      "passageB": { "ref": "Salmos 51:17" },
+      "options": [
+        { "id": "a", "text": "Coração contrito diante de Deus" },
+        { "id": "b", "text": "Lista de méritos próprios" },
+        { "id": "c", "text": "Rito que garante perdão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sê propício a mim, pecador",
+      "feedbackCorrect": "O salmo fala do coração contrito. O publicano pede assim, como pecador.",
+      "feedbackWrong": {
+        "b": "A lista de méritos é a oração do fariseu, não esta súplica.",
+        "c": "Nenhum dos textos trata o gesto como rito que garante perdão."
+      },
+      "hint": "Veja que pessoa o salmo diz que Deus não despreza.",
+      "learningObjective": "Ligar a súplica do publicano ao coração contrito do salmo.",
+      "evidence": ["Lucas 18:13", "Salmos 51:17"]
+    }
+  ]
+}

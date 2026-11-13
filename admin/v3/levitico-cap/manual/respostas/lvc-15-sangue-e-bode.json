@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Levítico 16:15–20",
+    "passages": [
+      {
+        "ref": "Levítico 16:15–20"
+      },
+      {
+        "ref": "Levítico 16:21–22"
+      }
+    ],
+    "context": "Cena de Sangue e bode: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Sangue e bode",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então.",
+        "evidenceRef": "Levítico 16:15",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Assim.",
+        "evidenceRef": "Levítico 16:16",
+        "evidenceSpan": "Assim"
+      },
+      {
+        "text": "E ninguém estará na tenda da congregação quando.",
+        "evidenceRef": "Levítico 16:17",
+        "evidenceSpan": "E ninguém estará na tenda da congregação quando"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Levítico 16:18",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E com esse sangue aspergirá sobre o altar.",
+        "evidenceRef": "Levítico 16:19",
+        "evidenceSpan": "E com esse sangue aspergirá sobre o altar"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Levítico 16:20",
+        "evidenceSpan": "Então"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "altar",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "expiação",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então degolará o bode da oferta",
+        "evidenceRef": "Levítico 16:15"
+      },
+      {
+        "label": "Assim fará a expiação pelo santuário",
+        "evidenceRef": "Levítico 16:16"
+      },
+      {
+        "label": "E ninguém estará na tenda",
+        "evidenceRef": "Levítico 16:17"
+      },
+      {
+        "label": "Então sairá ao altar que está",
+        "evidenceRef": "Levítico 16:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Levítico 16:15"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Levítico 16:17"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Levítico 16:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      },
+      {
+        "ref": "1 Pedro 1:16",
+        "bridge": "Sede santos como eu"
+      },
+      {
+        "ref": "2 Coríntios 6:16",
+        "bridge": "Deus no meio do povo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Um bode morre no santuário; o outro leva embora as culpas do povo.",
+    "anchorQuestion": "O que Levítico 16:15 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 16:15, o texto inclui Então.",
+      "verseRef": "Levítico 16:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 16:15 afirma.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 16:15, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "degolará"
+        },
+        {
+          "id": "c",
+          "text": "bode"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 16:17, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assim"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 16:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 16:16 na ordem do texto.",
+      "verseRef": "Levítico 16:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assim"
+        },
+        {
+          "id": "b",
+          "text": "pelo santuário em razão"
+        },
+        {
+          "id": "c",
+          "text": "das impurezas dos filhos de Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Assim",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 16:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 16:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "sairá"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "degolará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sairá",
+      "feedbackCorrect": "A palavra do versículo é sairá.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 16:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 16:15 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 16:15",
+      "passageA": {
+        "ref": "Levítico 16:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Sangue e bode: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 16:15, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Levítico 16:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 16:15 afirma.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 16:15, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "degolará"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "bode"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "degolará",
+      "feedbackCorrect": "O versículo destaca degolará.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 16:18, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra então"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 16:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então degolará o bode da oferta"
+        },
+        {
+          "id": "b",
+          "text": "Assim fará a expiação pelo santuário"
+        },
+        {
+          "id": "c",
+          "text": "E ninguém estará na tenda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 16:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "ninguém"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "degolará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém",
+      "feedbackCorrect": "A palavra do versículo é ninguém.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 16:15 a Hebreus 13:15.",
+      "verseRef": "Levítico 16:15",
+      "passageA": {
+        "ref": "Levítico 16:15"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício de louvor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 16:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 16:22 afirma.",
+      "evidence": [
+        "Levítico 16:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 16:20, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 16:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "ter"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "concluído"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ter",
+      "feedbackCorrect": "O versículo destaca ter.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 16:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 16:19, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra e com esse sangue aspergirá"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E com esse sangue aspergirá sobre o altar",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 16:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 16:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "esse"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "degolará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esse",
+      "feedbackCorrect": "A palavra do versículo é esse.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 16:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 16:15 a 1 Pedro 1:16.",
+      "verseRef": "Levítico 16:15",
+      "passageA": {
+        "ref": "Levítico 16:15"
+      },
+      "passageB": {
+        "ref": "1 Pedro 1:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sede santos como eu"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 16:15"
+      ]
+    }
+  ]
+}

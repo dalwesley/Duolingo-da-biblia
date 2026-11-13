@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Daniel 10:10–15",
+    "passages": [
+      {
+        "ref": "Daniel 10:10–15"
+      },
+      {
+        "ref": "Daniel 10:16–19"
+      }
+    ],
+    "context": "Daniel recebe uma visão que o deixa sem forças. Uma mão o toca e uma voz o chama de homem muito amado, explicando a demora e fortalecendo-o.",
+    "keyword": "amado",
+    "keywordGloss": "O título com que o mensageiro chama Daniel: homem muito amado.",
+    "focusQuestion": "Onde você precisa ouvir \"não tema\" e lembrar que suas palavras foram ouvidas?",
+    "reflectionPrompts": [
+      "Não tema",
+      "Palavras ouvidas",
+      "Seja forte"
+    ],
+    "facts": [
+      {
+        "text": "Uma mão tocou Daniel e o pôs sobre os joelhos e as palmas.",
+        "evidenceRef": "Daniel 10:10",
+        "evidenceSpan": "uma mão me tocou, sacudiu-me e me pôs sobre os meus joelhos"
+      },
+      {
+        "text": "Ele é chamado homem muito amado e mandado a se levantar.",
+        "evidenceRef": "Daniel 10:11",
+        "evidenceSpan": "Daniel, homem muito amado"
+      },
+      {
+        "text": "Desde o primeiro dia em que se dispôs a compreender, suas palavras foram ouvidas.",
+        "evidenceRef": "Daniel 10:12",
+        "evidenceSpan": "desde o primeiro dia em que você se dispôs a compreender e a se humilhar diante do seu Deus, suas palavras foram ouvidas"
+      },
+      {
+        "text": "O príncipe da Pérsia se opôs por vinte e um dias; Miguel veio ajudar.",
+        "evidenceRef": "Daniel 10:13",
+        "evidenceSpan": "o príncipe do reino da Pérsia se opôs a mim por vinte e um dias"
+      },
+      {
+        "text": "A visão se refere a dias ainda distantes.",
+        "evidenceRef": "Daniel 10:14",
+        "evidenceSpan": "a visão se refere a dias ainda distantes"
+      },
+      {
+        "text": "Alguém semelhante a um homem o tocou e o fortaleceu.",
+        "evidenceRef": "Daniel 10:18",
+        "evidenceSpan": "alguém que se assemelhava a um homem me tocou e me fortaleceu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "amado",
+        "gloss": "Título dado a Daniel pelo mensageiro."
+      },
+      {
+        "term": "fortaleceu",
+        "gloss": "Ação do toque que devolve força a Daniel."
+      },
+      {
+        "term": "Miguel",
+        "gloss": "Um dos principais príncipes que veio ajudar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Toque e chamado ao amado",
+        "evidenceRef": "Daniel 10:10–11"
+      },
+      {
+        "label": "Palavras ouvidas e oposição",
+        "evidenceRef": "Daniel 10:12–13"
+      },
+      {
+        "label": "Visão para dias distantes",
+        "evidenceRef": "Daniel 10:14–15"
+      },
+      {
+        "label": "Toque que fortalece",
+        "evidenceRef": "Daniel 10:16–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Não tema, porque desde o primeiro dia as palavras foram ouvidas.",
+        "marker": "porque",
+        "evidenceRef": "Daniel 10:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "O príncipe se opôs; porém Miguel veio ajudar.",
+        "marker": "porém",
+        "evidenceRef": "Daniel 10:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Enquanto falava, Daniel se fortaleceu.",
+        "marker": null,
+        "evidenceRef": "Daniel 10:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 41:10",
+        "bridge": "Não temas, eu te fortaleço"
+      },
+      {
+        "ref": "Judas 1:9",
+        "bridge": "Miguel o arcanjo"
+      },
+      {
+        "ref": "2 Timóteo 1:7",
+        "bridge": "Espírito de força"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus não ouviu Daniel desde o início.",
+        "why": "10:12: desde o primeiro dia as palavras foram ouvidas."
+      },
+      {
+        "text": "Não houve oposição espiritual à resposta.",
+        "why": "10:13: o príncipe da Pérsia se opôs por 21 dias."
+      },
+      {
+        "text": "Daniel ficou forte sem nenhum toque ou palavra.",
+        "why": "10:18–19: alguém o tocou, fortaleceu e disse \"seja forte\"."
+      }
+    ],
+    "centralInsight": "Desde o primeiro dia em que Daniel se pôs a entender, as suas palavras foram ouvidas.",
+    "anchorQuestion": "Segundo Daniel 10:12, desde quando as palavras de Daniel foram ouvidas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 10:12, Deus só ouviu Daniel depois de muitos anos de silêncio total.",
+      "verseRef": "Daniel 10:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "desde o primeiro dia em que você se dispôs a compreender e a se humilhar diante do seu Deus, suas palavras foram ouvidas",
+      "feedbackCorrect": "Desde o primeiro dia as palavras foram ouvidas.",
+      "feedbackWrong": {
+        "true": "Releia 10:12: desde o primeiro dia."
+      },
+      "hint": "Veja desde quando foram ouvidas.",
+      "learningObjective": "Observar a escuta desde o início.",
+      "evidence": [
+        "Daniel 10:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 10:11, toque como Daniel é chamado.",
+      "verseRef": "Daniel 10:11",
+      "evidenceSpan": "Daniel, homem muito amado",
+      "feedbackCorrect": "Ele é chamado homem muito amado.",
+      "hint": "Procure o título depois do nome.",
+      "learningObjective": "Identificar o título de Daniel.",
+      "evidence": [
+        "Daniel 10:11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "muito amado"
+        },
+        {
+          "id": "b",
+          "text": "tremendo"
+        },
+        {
+          "id": "c",
+          "text": "enviado"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Tremendo\" descreve a postura.",
+        "c": "\"Enviado\" refere-se ao mensageiro."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 10:13, quem veio ajudar contra a oposição?",
+      "verseRef": "Daniel 10:13",
+      "evidenceSpan": "Miguel, um dos principais príncipes, veio para me ajudar",
+      "feedbackCorrect": "Miguel veio para ajudar.",
+      "hint": "Veja quem veio ajudar.",
+      "learningObjective": "Observar o auxílio de Miguel.",
+      "evidence": [
+        "Daniel 10:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Miguel"
+        },
+        {
+          "id": "b",
+          "text": "O príncipe da Pérsia"
+        },
+        {
+          "id": "c",
+          "text": "Nabucodonosor"
+        },
+        {
+          "id": "d",
+          "text": "Arioque"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O príncipe da Pérsia se opôs.",
+        "c": "Não aparece aqui.",
+        "d": "Não aparece aqui."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 10:12 na ordem do texto.",
+      "verseRef": "Daniel 10:12",
+      "evidenceSpan": "Não tema, Daniel, porque desde o primeiro dia",
+      "feedbackCorrect": "Não tema; razão da escuta; por causa delas veio.",
+      "hint": "Comece por \"Não tema\".",
+      "learningObjective": "Reconhecer a sequência de 10:12.",
+      "evidence": [
+        "Daniel 10:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tema, Daniel"
+        },
+        {
+          "id": "b",
+          "text": "porque desde o primeiro dia em que você se dispôs a compreender"
+        },
+        {
+          "id": "c",
+          "text": "suas palavras foram ouvidas; e foi por causa delas que vim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece por não tema; a vinda fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 10:18, o que o toque fez a Daniel?",
+      "verseRef": "Daniel 10:18",
+      "evidenceSpan": "me tocou e me fortaleceu",
+      "feedbackCorrect": "O toque o fortaleceu.",
+      "hint": "É o verbo do resultado do toque.",
+      "learningObjective": "Lembrar a ação do fortalecimento.",
+      "evidence": [
+        "Daniel 10:18"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fortaleceu"
+        },
+        {
+          "id": "b",
+          "text": "abandonou"
+        },
+        {
+          "id": "c",
+          "text": "calou"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não abandonou.",
+        "c": "Não calou; fortaleceu."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 10:12 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 10:12",
+      "evidenceSpan": "suas palavras foram ouvidas",
+      "feedbackCorrect": "A oração humilde é ouvida desde o primeiro dia.",
+      "hint": "Compare disposição e escuta.",
+      "learningObjective": "Ligar a humildade à escuta divina.",
+      "evidence": [
+        "Daniel 10:12"
+      ],
+      "passageA": {
+        "ref": "Daniel 10:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Daniel busca entender; o mensageiro diz que suas palavras foram ouvidas desde o início."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ouvida desde o início"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de toda visão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As palavras foram ouvidas.",
+        "c": "A visão é explicada."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 10:12, Daniel não deve temer porque desde o primeiro dia suas palavras foram ouvidas.",
+      "verseRef": "Daniel 10:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não tema, Daniel, porque desde o primeiro dia",
+      "feedbackCorrect": "\"Porque\" liga o não temer à escuta desde o início.",
+      "feedbackWrong": {
+        "false": "Releia a razão em 10:12."
+      },
+      "hint": "Veja a palavra \"porque\".",
+      "learningObjective": "Compreender a razão do \"não tema\".",
+      "evidence": [
+        "Daniel 10:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 10:12, toque a palavra que marca a razão do \"não tema\".",
+      "verseRef": "Daniel 10:12",
+      "evidenceSpan": "porque desde o primeiro dia",
+      "feedbackCorrect": "\"Porque\" introduz a razão da escuta.",
+      "hint": "Procure o marcador da razão.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Daniel 10:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "Daniel"
+        },
+        {
+          "id": "c",
+          "text": "Pérsia"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Daniel\" é o vocativo.",
+        "c": "\"Pérsia\" aparece em 10:13."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 10:12–13 relaciona a escuta e a demora?",
+      "verseRef": "Daniel 10:12–13",
+      "evidenceSpan": "Mas o príncipe do reino da Pérsia se opôs a mim por vinte e um dias",
+      "feedbackCorrect": "As palavras foram ouvidas; a demora veio da oposição, não do silêncio de Deus.",
+      "hint": "Compare a escuta e o \"Mas\".",
+      "learningObjective": "Relacionar escuta e oposição.",
+      "evidence": [
+        "Daniel 10:12–13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvido desde o início; demora por oposição"
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca ouviu Daniel"
+        },
+        {
+          "id": "c",
+          "text": "Miguel se opôs a Daniel"
+        },
+        {
+          "id": "d",
+          "text": "Não houve nenhuma oposição"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "10:12 afirma a escuta.",
+        "c": "Miguel veio ajudar.",
+        "d": "Houve oposição de 21 dias."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 10:10–19?",
+      "verseRef": "Daniel 10:10–19",
+      "evidenceSpan": "Não tema, homem muito amado",
+      "feedbackCorrect": "Toque e chamado, escuta e oposição, visão distante, fortalecimento.",
+      "hint": "Comece pelo toque.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": [
+        "Daniel 10:10–19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Toque e chamado ao amado"
+        },
+        {
+          "id": "b",
+          "text": "Escuta, oposição e visão distante"
+        },
+        {
+          "id": "c",
+          "text": "Toque que fortalece e paz"
+        }
+      ],
+      "correctOrder": "a",
+      "feedbackWrong": {
+        "default": "Comece pelo toque; o fortalecimento fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 10:13, que palavra marca o contraste após a oposição?",
+      "verseRef": "Daniel 10:13",
+      "evidenceSpan": "porém Miguel, um dos principais príncipes, veio para me ajudar",
+      "feedbackCorrect": "\"Porém\" marca a virada: Miguel veio ajudar.",
+      "hint": "É o contraste antes de Miguel.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": [
+        "Daniel 10:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "sempre"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é \"sempre\".",
+        "c": "Não é \"nunca\"."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 10:12 a Isaías 41:10?",
+      "verseRef": "Daniel 10:12",
+      "evidenceSpan": "Não tema, Daniel",
+      "feedbackCorrect": "Nos dois textos, Deus diz não temer e há fortalecimento.",
+      "hint": "Compare o \"não tema\".",
+      "learningObjective": "Relacionar o ânimo em Daniel e Isaías.",
+      "evidence": [
+        "Daniel 10:12",
+        "Isaías 41:10"
+      ],
+      "passageA": {
+        "ref": "Daniel 10:12"
+      },
+      "passageB": {
+        "ref": "Isaías 41:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não temas e fortalece"
+        },
+        {
+          "id": "b",
+          "text": "Tema e fuja"
+        },
+        {
+          "id": "c",
+          "text": "Cale toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mandam não temer.",
+        "c": "Há palavra e fortalecimento."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 10:10–19, a demora prova que Deus ignorou a oração de Daniel.",
+      "verseRef": "Daniel 10:12–13",
+      "correctOptionId": "false",
+      "evidenceSpan": "suas palavras foram ouvidas; e foi por causa delas que vim",
+      "feedbackCorrect": "As palavras foram ouvidas; a demora veio da oposição.",
+      "feedbackWrong": {
+        "true": "Compare 10:12 e 10:13."
+      },
+      "hint": "Veja a escuta e a oposição.",
+      "learningObjective": "Interpretar a demora sem negar a escuta.",
+      "evidence": [
+        "Daniel 10:12–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 10:19, toque o trecho que mostra o ânimo dado a Daniel.",
+      "verseRef": "Daniel 10:19",
+      "evidenceSpan": "Seja forte, seja forte",
+      "feedbackCorrect": "\"Seja forte\" é o ânimo repetido.",
+      "hint": "Procure o mandato de força.",
+      "learningObjective": "Sustentar o fortalecimento.",
+      "evidence": [
+        "Daniel 10:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Seja forte"
+        },
+        {
+          "id": "b",
+          "text": "amado"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Amado\" é o título; o ânimo é \"Seja forte\".",
+        "c": "\"Paz\" é a saudação; o ânimo é \"Seja forte\"."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 10:10–19 sustenta sobre a oração e a demora?",
+      "verseRef": "Daniel 10:12–13",
+      "evidenceSpan": "suas palavras foram ouvidas",
+      "feedbackCorrect": "A oração é ouvida desde o início; a demora pode vir de oposição, e Deus fortalece.",
+      "hint": "Compare cada opção com 10:12–19.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Daniel 10:12–13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvida desde o início; Deus fortalece na demora"
+        },
+        {
+          "id": "b",
+          "text": "A demora prova abandono total"
+        },
+        {
+          "id": "c",
+          "text": "Daniel não precisa de fortalecimento"
+        },
+        {
+          "id": "d",
+          "text": "Miguel se opôs às palavras de Daniel"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As palavras foram ouvidas.",
+        "c": "Ele é tocado e fortalecido.",
+        "d": "Miguel veio ajudar."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do \"não tema\"?",
+      "verseRef": "Daniel 10:19",
+      "evidenceSpan": "Não tema, homem muito amado",
+      "feedbackCorrect": "Isaías anima; Daniel ouve; Timóteo lembra o espírito de força.",
+      "hint": "Parta de Isaías.",
+      "learningObjective": "Ver o ânimo no fio bíblico.",
+      "evidence": [
+        "Isaías 41:10",
+        "Daniel 10:19",
+        "2 Timóteo 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Isaías: não temas, eu te fortaleço"
+        },
+        {
+          "id": "b",
+          "text": "Daniel: não tema, homem amado"
+        },
+        {
+          "id": "c",
+          "text": "Paulo: espírito de força"
+        }
+      ],
+      "correctOrder": "a",
+      "feedbackWrong": {
+        "default": "Siga: Isaías 41, Daniel 10 e 2 Timóteo 1."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 10:11, que palavra completa o título de Daniel?",
+      "verseRef": "Daniel 10:11",
+      "evidenceSpan": "homem muito amado",
+      "feedbackCorrect": "Homem muito amado — termo que carrega a cena.",
+      "hint": "É o adjetivo do título.",
+      "learningObjective": "Lembrar o termo-chave.",
+      "evidence": [
+        "Daniel 10:11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "amado"
+        },
+        {
+          "id": "b",
+          "text": "esquecido"
+        },
+        {
+          "id": "c",
+          "text": "rejeitado"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é esquecido.",
+        "c": "Não é rejeitado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 10:13 a Judas 1:9?",
+      "verseRef": "Daniel 10:13",
+      "evidenceSpan": "Miguel, um dos principais príncipes, veio para me ajudar",
+      "feedbackCorrect": "Nos dois textos, Miguel aparece como príncipe/arcanjo em conflito.",
+      "hint": "Compare o papel de Miguel.",
+      "learningObjective": "Ligar Miguel em Daniel e em Judas.",
+      "evidence": [
+        "Daniel 10:13",
+        "Judas 1:9"
+      ],
+      "passageA": {
+        "ref": "Daniel 10:13"
+      },
+      "passageB": {
+        "ref": "Judas 1:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Miguel em conflito celestial"
+        },
+        {
+          "id": "b",
+          "text": "Miguel calado para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Pérsia sem oposição"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Miguel age e aparece.",
+        "c": "Há oposição explícita."
+      }
+    }
+  ]
+}

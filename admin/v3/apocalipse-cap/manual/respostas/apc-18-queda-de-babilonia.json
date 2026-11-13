@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 18:9–14",
+    "passages": [
+      {
+        "ref": "Apocalipse 18:9–14"
+      },
+      {
+        "ref": "Apocalipse 18:15–17"
+      }
+    ],
+    "context": "Com a queda de Babilônia, reis e mercadores choram de longe. Em uma hora o juízo chega e as riquezas são devastadas.",
+    "keyword": "uma hora",
+    "keywordGloss": "O prazo repetido do juízo: em uma só hora chegou o juízo e tantas riquezas foram devastadas.",
+    "focusQuestion": "Quando a riqueza parece inabalável, o que o texto diz sobre a velocidade do juízo?",
+    "reflectionPrompts": [
+      "Choro de longe",
+      "Mercadorias sem comprador",
+      "Uma só hora"
+    ],
+    "facts": [
+      {
+        "text": "Os reis da terra chorarão e se lamentarão quando virem a fumaceira do incêndio.",
+        "evidenceRef": "Apocalipse 18:9",
+        "evidenceSpan": "chorarão e se lamentarão por ela, quando virem a fumaceira do seu incêndio"
+      },
+      {
+        "text": "Eles ficam de longe pelo medo do tormento e exclamam Ai! Ai! da grande cidade.",
+        "evidenceRef": "Apocalipse 18:10",
+        "evidenceSpan": "Estando de longe, pelo medo do seu tormento"
+      },
+      {
+        "text": "Em uma só hora chegou o juízo de Babilônia.",
+        "evidenceRef": "Apocalipse 18:10",
+        "evidenceSpan": "em uma só hora, chegou o teu juízo"
+      },
+      {
+        "text": "Os mercadores da terra choram porque ninguém compra suas mercadorias.",
+        "evidenceRef": "Apocalipse 18:11",
+        "evidenceSpan": "já ninguém compra suas mercadorias"
+      },
+      {
+        "text": "A lista inclui até escravos e almas humanas.",
+        "evidenceRef": "Apocalipse 18:13",
+        "evidenceSpan": "escravos e até almas humanas"
+      },
+      {
+        "text": "Em uma hora tantas riquezas foram devastadas.",
+        "evidenceRef": "Apocalipse 18:16",
+        "evidenceSpan": "em uma hora tantas riquezas foram devastadas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "juízo",
+        "gloss": "O que chega a Babilônia em uma só hora."
+      },
+      {
+        "term": "mercadores",
+        "gloss": "Os que choram porque ninguém mais compra as mercadorias."
+      },
+      {
+        "term": "riquezas",
+        "gloss": "O que é devastado em uma hora, apesar do luxo da cidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Reis choram de longe o incêndio",
+        "evidenceRef": "Apocalipse 18:9–10"
+      },
+      {
+        "label": "Mercadores perdem o comércio",
+        "evidenceRef": "Apocalipse 18:11–13"
+      },
+      {
+        "label": "O desejo da alma se apaga",
+        "evidenceRef": "Apocalipse 18:14"
+      },
+      {
+        "label": "Riquezas devastadas em uma hora",
+        "evidenceRef": "Apocalipse 18:15–17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Ficam de longe pelo medo do tormento.",
+        "marker": "pelo",
+        "evidenceRef": "Apocalipse 18:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Choram porque já ninguém compra suas mercadorias.",
+        "marker": "pois",
+        "evidenceRef": "Apocalipse 18:11"
+      },
+      {
+        "kind": "contraste",
+        "text": "A cidade era poderosa; em uma hora chegou o juízo.",
+        "marker": null,
+        "evidenceRef": "Apocalipse 18:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 14:8",
+        "bridge": "Anúncio: caiu Babilônia"
+      },
+      {
+        "ref": "Isaías 47:9",
+        "bridge": "Ruína em um só dia"
+      },
+      {
+        "ref": "Apocalipse 17:2",
+        "bridge": "Reis com a meretriz"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os reis entram na cidade para apagar o fogo.",
+        "why": "Eles ficam de longe, pelo medo do tormento."
+      },
+      {
+        "text": "O comércio continua normalmente após a queda.",
+        "why": "Já ninguém compra suas mercadorias."
+      },
+      {
+        "text": "O juízo demora séculos a chegar, segundo o lamento.",
+        "why": "O texto repete: em uma só hora chegou o juízo."
+      }
+    ],
+    "centralInsight": "Em uma só hora chegou o juízo; as riquezas de Babilônia não sustentam.",
+    "anchorQuestion": "Em quanto tempo o texto diz que chegou o juízo de Babilônia?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 18:10, os reis dizem que em uma só hora chegou o juízo de Babilônia.",
+      "verseRef": "Apocalipse 18:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "em uma só hora, chegou o teu juízo",
+      "feedbackCorrect": "O lamento marca o juízo em uma só hora.",
+      "feedbackWrong": {
+        "false": "O versículo diz exatamente: em uma só hora chegou o teu juízo."
+      },
+      "hint": "Olhe o prazo no fim do lamento.",
+      "learningObjective": "Observar o prazo do juízo.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 18:11, toque o que os mercadores já não encontram.",
+      "verseRef": "Apocalipse 18:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "suas mercadorias"
+        },
+        {
+          "id": "b",
+          "text": "os mercadores"
+        },
+        {
+          "id": "c",
+          "text": "da terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém compra suas mercadorias",
+      "feedbackCorrect": "Ninguém compra suas mercadorias.",
+      "feedbackWrong": {
+        "b": "Os mercadores choram; o que ninguém compra são as mercadorias.",
+        "c": "Da terra localiza os mercadores; o objeto são as mercadorias."
+      },
+      "hint": "Procure o objeto que ninguém compra.",
+      "learningObjective": "Identificar o que o comércio perde.",
+      "evidence": [
+        "Apocalipse 18:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 18:9, o que os reis farão quando virem a fumaceira?",
+      "verseRef": "Apocalipse 18:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chorarão e se lamentarão por ela"
+        },
+        {
+          "id": "b",
+          "text": "Entrarão para celebrar a cidade"
+        },
+        {
+          "id": "c",
+          "text": "Comprarão mais mercadorias"
+        },
+        {
+          "id": "d",
+          "text": "Apagarão o fogo juntos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chorarão e se lamentarão por ela",
+      "feedbackCorrect": "A reação é choro e lamento.",
+      "feedbackWrong": {
+        "b": "Não há celebração; há choro.",
+        "c": "Depois ninguém compra as mercadorias.",
+        "d": "Eles ficam de longe, com medo."
+      },
+      "hint": "Veja os verbos da reação dos reis.",
+      "learningObjective": "Observar a reação dos reis.",
+      "evidence": [
+        "Apocalipse 18:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 18:10 na ordem do texto.",
+      "verseRef": "Apocalipse 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estando de longe, pelo medo do seu tormento"
+        },
+        {
+          "id": "b",
+          "text": "Ai! Ai! daquela grande cidade"
+        },
+        {
+          "id": "c",
+          "text": "em uma só hora, chegou o teu juízo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Estando de longe, pelo medo do seu tormento",
+      "feedbackCorrect": "Primeiro a distância, depois o ai, depois o prazo do juízo.",
+      "feedbackWrong": {
+        "default": "Comece pela distância e o medo."
+      },
+      "hint": "A frase começa com Estando de longe.",
+      "learningObjective": "Reconhecer a ordem do lamento.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 18:10, em uma só hora chegou o teu quê?",
+      "verseRef": "Apocalipse 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "juízo"
+        },
+        {
+          "id": "b",
+          "text": "festejo"
+        },
+        {
+          "id": "c",
+          "text": "acordo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chegou o teu juízo",
+      "feedbackCorrect": "O que chega em uma hora é o juízo.",
+      "feedbackWrong": {
+        "b": "Festejo não aparece.",
+        "c": "Acordo não aparece."
+      },
+      "hint": "Veja o que chega no fim do ai.",
+      "learningObjective": "Lembrar o que chega em uma hora.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 18:17 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 18:16",
+      "passageA": {
+        "ref": "Apocalipse 18:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Em uma hora tantas riquezas foram devastadas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Riquezas devastadas em uma hora"
+        },
+        {
+          "id": "b",
+          "text": "O comércio cresce sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Os reis entram na cidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em uma hora tantas riquezas foram devastadas",
+      "feedbackCorrect": "O lamento fecha com a devastação rápida das riquezas.",
+      "feedbackWrong": {
+        "b": "O texto diz devastadas, não crescimento.",
+        "c": "Eles se mantêm a distância."
+      },
+      "hint": "Leia o prazo e o que foi devastado.",
+      "learningObjective": "Ligar 18:17 à queda rápida das riquezas.",
+      "evidence": [
+        "Apocalipse 18:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 18:10, os reis ficam de longe porque celebram o tormento de Babilônia.",
+      "verseRef": "Apocalipse 18:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "pelo medo do seu tormento",
+      "feedbackCorrect": "A razão é o medo do tormento, não a celebração.",
+      "feedbackWrong": {
+        "true": "O versículo diz pelo medo do seu tormento."
+      },
+      "hint": "Leia a razão da distância.",
+      "learningObjective": "Compreender por que ficam de longe.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 18:11, toque a palavra que marca a razão do choro dos mercadores.",
+      "verseRef": "Apocalipse 18:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "choram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois já ninguém compra suas mercadorias",
+      "feedbackCorrect": "Pois introduz a razão: ninguém compra.",
+      "feedbackWrong": {
+        "b": "Terra localiza os mercadores.",
+        "c": "Choram é a ação; a razão está em pois."
+      },
+      "hint": "Procure a palavra antes de já ninguém compra.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Apocalipse 18:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que o contraste de Apocalipse 18:10 mostra?",
+      "verseRef": "Apocalipse 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cidade poderosa cai em uma só hora"
+        },
+        {
+          "id": "b",
+          "text": "A cidade poderosa cresce por mil anos"
+        },
+        {
+          "id": "c",
+          "text": "O juízo nunca chega à cidade"
+        },
+        {
+          "id": "d",
+          "text": "Os reis ocupam o trono dela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "poderosa cidade! Pois, em uma só hora, chegou o teu juízo",
+      "feedbackCorrect": "O lamento une poder e juízo rápido.",
+      "feedbackWrong": {
+        "b": "O prazo é uma hora, não mil anos.",
+        "c": "O juízo chegou.",
+        "d": "Os reis choram de longe."
+      },
+      "hint": "Compare poderosa cidade com o prazo do juízo.",
+      "learningObjective": "Relacionar poder e juízo rápido.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o lamento em Apocalipse 18?",
+      "verseRef": "Apocalipse 18:9–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reis choram de longe o incêndio"
+        },
+        {
+          "id": "b",
+          "text": "Mercadores perdem o comércio"
+        },
+        {
+          "id": "c",
+          "text": "Riquezas devastadas em uma hora"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "chorarão e se lamentarão por ela",
+      "feedbackCorrect": "Reis abrem; mercadores vêm; a devastação fecha.",
+      "feedbackWrong": {
+        "default": "Comece pelo choro dos reis."
+      },
+      "hint": "A cena começa com os reis diante do incêndio.",
+      "learningObjective": "Ordenar os movimentos do lamento.",
+      "evidence": [
+        "Apocalipse 18:9–17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 18:10, estando de longe, pelo quê do seu tormento?",
+      "verseRef": "Apocalipse 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "medo"
+        },
+        {
+          "id": "b",
+          "text": "amor"
+        },
+        {
+          "id": "c",
+          "text": "sono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo medo do seu tormento",
+      "feedbackCorrect": "A razão da distância é o medo.",
+      "feedbackWrong": {
+        "b": "Amor não aparece.",
+        "c": "Sono não aparece."
+      },
+      "hint": "Veja a razão da distância.",
+      "learningObjective": "Lembrar a palavra que carrega a causa da distância.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 18:10 a Apocalipse 14:8?",
+      "verseRef": "Apocalipse 18:10",
+      "passageA": {
+        "ref": "Apocalipse 18:10",
+        "text": "grande cidade, Babilônia"
+      },
+      "passageB": {
+        "ref": "Apocalipse 14:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio: caiu Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "As taças ainda fechadas"
+        },
+        {
+          "id": "c",
+          "text": "O mar de vidro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Babilônia, daquela poderosa cidade",
+      "feedbackCorrect": "Em 14:8 cai Babilônia; em 18:10 o juízo dela chega em uma hora.",
+      "feedbackWrong": {
+        "b": "As taças já foram tema anterior; a ponte é Babilônia.",
+        "c": "Mar de vidro está em 15; a ponte é Babilônia."
+      },
+      "hint": "Compare o nome da cidade.",
+      "learningObjective": "Ligar o juízo de 18:10 ao anúncio de 14:8.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Apocalipse 18:11–17, o comércio de Babilônia continua intacto depois do juízo.",
+      "verseRef": "Apocalipse 18:11–17",
+      "correctOptionId": "false",
+      "evidenceSpan": "já ninguém compra suas mercadorias",
+      "feedbackCorrect": "Ninguém compra, e as riquezas foram devastadas.",
+      "feedbackWrong": {
+        "true": "O texto diz que ninguém compra e que as riquezas foram devastadas."
+      },
+      "hint": "Leia o que acontece com as mercadorias e as riquezas.",
+      "learningObjective": "Interpretar o efeito do juízo sobre o comércio.",
+      "evidence": [
+        "Apocalipse 18:11–17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 18:17, toque o trecho que sustenta a velocidade da devastação.",
+      "verseRef": "Apocalipse 18:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "em uma hora"
+        },
+        {
+          "id": "b",
+          "text": "linho finíssimo"
+        },
+        {
+          "id": "c",
+          "text": "pedras preciosas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em uma hora tantas riquezas foram devastadas",
+      "feedbackCorrect": "A velocidade está em em uma hora.",
+      "feedbackWrong": {
+        "b": "Linho descreve o luxo passado.",
+        "c": "Pedras descrevem o luxo passado."
+      },
+      "hint": "Procure o prazo da devastação.",
+      "learningObjective": "Tocar o trecho que marca a velocidade.",
+      "evidence": [
+        "Apocalipse 18:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Apocalipse 18:10 sustenta melhor?",
+      "verseRef": "Apocalipse 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O juízo chega depressa, apesar do poder da cidade"
+        },
+        {
+          "id": "b",
+          "text": "O poder da cidade impede qualquer juízo"
+        },
+        {
+          "id": "c",
+          "text": "Os reis celebram a queda de perto"
+        },
+        {
+          "id": "d",
+          "text": "O juízo é adiado por muitas horas de festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em uma só hora, chegou o teu juízo",
+      "feedbackCorrect": "Poderosa cidade e uma só hora sustentam juízo rápido.",
+      "feedbackWrong": {
+        "b": "O juízo chegou.",
+        "c": "Eles estão de longe, com medo.",
+        "d": "O prazo é uma hora de juízo, não festa."
+      },
+      "hint": "Compare poderosa cidade com uma só hora.",
+      "learningObjective": "Escolher a leitura sustentável do juízo.",
+      "evidence": [
+        "Apocalipse 18:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento Apocalipse 18 sustenta?",
+      "verseRef": "Apocalipse 18:9–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cidade queima e os reis se afastam"
+        },
+        {
+          "id": "b",
+          "text": "O comércio perde compradores"
+        },
+        {
+          "id": "c",
+          "text": "As riquezas caem em uma hora"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "fumaceira do seu incêndio",
+      "feedbackCorrect": "O fogo afasta; o comércio falha; as riquezas caem.",
+      "feedbackWrong": {
+        "default": "Comece pelo incêndio e o afastamento."
+      },
+      "hint": "O incêndio vem antes da lista de mercadorias.",
+      "learningObjective": "Encadear fogo, comércio e devastação.",
+      "evidence": [
+        "Apocalipse 18:9–17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 18:17, em uma hora tantas riquezas foram quê?",
+      "verseRef": "Apocalipse 18:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "devastadas"
+        },
+        {
+          "id": "b",
+          "text": "multiplicadas"
+        },
+        {
+          "id": "c",
+          "text": "guardadas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em uma hora tantas riquezas foram devastadas",
+      "feedbackCorrect": "O termo do resultado é devastadas.",
+      "feedbackWrong": {
+        "b": "O texto diz devastadas, não multiplicadas.",
+        "c": "Guardadas não aparece."
+      },
+      "hint": "Veja o verbo do fim do lamento.",
+      "learningObjective": "Lembrar o termo do fim das riquezas.",
+      "evidence": [
+        "Apocalipse 18:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 18:9 a Apocalipse 17:2?",
+      "verseRef": "Apocalipse 18:9",
+      "passageA": {
+        "ref": "Apocalipse 18:9",
+        "text": "reis da terra, que se entregaram à imoralidade com ela"
+      },
+      "passageB": {
+        "ref": "Apocalipse 17:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reis com a meretriz"
+        },
+        {
+          "id": "b",
+          "text": "Pilotos no mar"
+        },
+        {
+          "id": "c",
+          "text": "Almas humanas à venda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reis da terra, que se entregaram à imoralidade com ela",
+      "feedbackCorrect": "Os dois textos ligam os reis da terra a Babilônia.",
+      "feedbackWrong": {
+        "b": "Pilotos aparecem em 18:17; a ponte são os reis.",
+        "c": "Almas humanas estão em 18:13; a ponte são os reis."
+      },
+      "hint": "Compare o papel dos reis da terra.",
+      "learningObjective": "Ligar o choro dos reis à união de 17:2.",
+      "evidence": [
+        "Apocalipse 18:9"
+      ]
+    }
+  ]
+}

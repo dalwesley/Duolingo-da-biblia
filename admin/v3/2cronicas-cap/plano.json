@@ -1,0 +1,291 @@
+{
+  "slug": "2cronicas-cap",
+  "prefix": "c3c",
+  "book": "2 Crônicas",
+  "chapters": 36,
+  "title": "2 Crônicas",
+  "description": "2 Crônicas capítulo a capítulo: do templo de Salomão ao exílio e à esperança de volta.",
+  "icon": "📖",
+  "color": "#5A7A8E",
+  "order": 15,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["cronicas"],
+  "modules": [
+    {
+      "title": "Salomão e o templo · cap. 1–9",
+      "scenes": [
+        {
+          "ref": "2 Crônicas 1:7–13",
+          "title": "Pede sabedoria",
+          "intro": "Deus aparece a Salomão e o convida a pedir o que quiser.",
+          "insight": "Salomão pede sabedoria para governar; o Senhor dá também riquezas e honra.",
+          "objective": "Pedir o que Deus valoriza"
+        },
+        {
+          "ref": "2 Crônicas 2:1–9",
+          "chapters": "2–4",
+          "title": "Casa para o nome",
+          "intro": "Salomão decide edificar a casa do Senhor e pede ajuda a Hirão.",
+          "insight": "A casa é grande, porque o nosso Deus é maior do que todos os deuses.",
+          "objective": "Edificar para o nome do Senhor"
+        },
+        {
+          "ref": "2 Crônicas 5:1–6",
+          "title": "A obra concluída",
+          "intro": "A obra do templo termina; Salomão e Israel reúnem-se por causa da arca.",
+          "insight": "Quando a casa está pronta, o povo se congrega para trazer a arca da aliança.",
+          "objective": "Completar a obra com culto"
+        },
+        {
+          "ref": "2 Crônicas 6:36–42",
+          "title": "Se se converterem",
+          "intro": "Na oração, Salomão fala do pecado, do cativeiro e do retorno a Deus.",
+          "insight": "Quando pecarem e forem levados, se se converterem, ouve do céu e perdoa.",
+          "objective": "Converter-se e clamar"
+        },
+        {
+          "ref": "2 Crônicas 7:12–22",
+          "title": "Se o meu povo",
+          "intro": "O Senhor responde a Salomão de noite sobre a casa e o povo.",
+          "insight": "Se o meu povo se humilhar, orar e se converter, eu ouvirei do céu e sararei a terra.",
+          "objective": "Humilhar-se e orar"
+        },
+        {
+          "ref": "2 Crônicas 9:1–8",
+          "chapters": "8–9",
+          "title": "Rainha de Sabá",
+          "intro": "A rainha de Sabá vem provar Salomão com perguntas difíceis.",
+          "insight": "Bendito seja o Senhor: ele se agradou de Salomão para o colocar no trono de Israel.",
+          "objective": "Reconhecer a bênção de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Salomão e o templo",
+        "intro": "Revise o pedido de sabedoria, a casa, a oração, a resposta de Deus e a fama de Salomão.",
+        "insight": "O templo aponta para um Deus que ouve o povo que se converte"
+      }
+    },
+    {
+      "title": "Divisão e primeiros reis · cap. 10–16",
+      "scenes": [
+        {
+          "ref": "2 Crônicas 10:12–19",
+          "title": "O reino se divide",
+          "intro": "Roboão endurece a resposta ao povo; Israel se separa da casa de Davi.",
+          "insight": "A palavra do Senhor se cumpre: o reino se divide por causa da dureza do rei.",
+          "objective": "Ouvir conselho sábio"
+        },
+        {
+          "ref": "2 Crônicas 12:1–8",
+          "chapters": "11–12",
+          "title": "Roboão abandona",
+          "intro": "Quando se fortalece, Roboão deixa a lei do Senhor; Sisaque sobe contra Jerusalém.",
+          "insight": "Abandonaram o Senhor; ele os deixa nas mãos do inimigo para que aprendam a servi-lo.",
+          "objective": "Não abandonar a lei"
+        },
+        {
+          "ref": "2 Crônicas 13:4–12",
+          "title": "Aliança com Davi",
+          "intro": "Abias confronta Jeroboão e lembra a aliança do Senhor com Davi.",
+          "insight": "O Senhor deu a Davi o reino para sempre; quem luta contra ele luta contra Deus.",
+          "objective": "Ficar com a aliança de Deus"
+        },
+        {
+          "ref": "2 Crônicas 14:2–11",
+          "title": "Asa busca o Senhor",
+          "intro": "Asa remove ídolos e clama a Deus diante de um exército enorme.",
+          "insight": "Não há além de ti quem possa ajudar: no teu nome vamos contra esta multidão.",
+          "objective": "Buscar ajuda só em Deus"
+        },
+        {
+          "ref": "2 Crônicas 15:1–9",
+          "title": "O Senhor está convosco",
+          "intro": "Azarias fala a Asa: o Senhor está convosco enquanto estiverdes com ele.",
+          "insight": "Se o buscardes, ele se deixa achar; se o deixardes, ele vos deixará.",
+          "objective": "Permanecer buscando a Deus"
+        },
+        {
+          "ref": "2 Crônicas 16:7–14",
+          "title": "Confiança errada",
+          "intro": "Hanani repreende Asa por confiar no rei da Síria e não no Senhor.",
+          "insight": "Porque confiaste no rei e não no Senhor, o exército inimigo escapou das tuas mãos.",
+          "objective": "Confiar no Senhor, não em reis"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Divisão e primeiros reis",
+        "intro": "Revise a divisão do reino, as quedas, a aliança com Davi e a confiança de Asa.",
+        "insight": "Buscar o Senhor traz livramento; confiar em homens traz perda"
+      }
+    },
+    {
+      "title": "Josafá e a fé · cap. 17–20",
+      "scenes": [
+        {
+          "ref": "2 Crônicas 17:3–10",
+          "title": "O Senhor com Josafá",
+          "intro": "Josafá anda nos primeiros caminhos de Davi e envia mestres pela terra.",
+          "insight": "O Senhor estava com Josafá porque andou nos caminhos de Davi e buscou a Deus.",
+          "objective": "Andar nos caminhos de Davi"
+        },
+        {
+          "ref": "2 Crônicas 18:12–22",
+          "title": "Micaías fala",
+          "intro": "Os profetas prometem vitória; Micaías fala o que o Senhor manda.",
+          "insight": "Tão certo como vive o Senhor, o que meu Deus me disser, isso falarei.",
+          "objective": "Falar a verdade de Deus"
+        },
+        {
+          "ref": "2 Crônicas 19:4–11",
+          "title": "Juízes para Deus",
+          "intro": "Josafá volta o povo ao Senhor e nomeia juízes nas cidades.",
+          "insight": "Não julgueis para o homem, senão para o Senhor; ele está convosco no juízo.",
+          "objective": "Julgar com temor a Deus"
+        },
+        {
+          "ref": "2 Crônicas 20:15–22",
+          "title": "A batalha é de Deus",
+          "intro": "Diante de uma grande multidão, o Senhor responde a Josafá.",
+          "insight": "Não temais: a batalha não é vossa, senão de Deus; crede no Senhor e sereis firmes.",
+          "objective": "Crer e deixar Deus lutar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Josafá e a fé",
+        "intro": "Revise o andar de Josafá, a voz de Micaías, os juízes e a batalha do Senhor.",
+        "insight": "Quem busca o Senhor ouve a verdade e vê a vitória que é dele"
+      }
+    },
+    {
+      "title": "Quedas e golpes · cap. 21–28",
+      "scenes": [
+        {
+          "ref": "2 Crônicas 21:5–15",
+          "title": "Jeorão sem luz",
+          "intro": "Jeorão mata os irmãos e anda como os reis de Israel; chega carta de Elias.",
+          "insight": "Porque abandonaste o Senhor, Deus ferirá teu povo, tua casa e a ti mesmo.",
+          "objective": "Não abandonar a herança"
+        },
+        {
+          "ref": "2 Crônicas 23:11–21",
+          "chapters": "22–23",
+          "title": "Joás é coroado",
+          "intro": "Joiada esconde o herdeiro e, no tempo certo, proclama Joás rei.",
+          "insight": "Puseram-lhe a coroa e a lei; o povo se alegrou e a cidade ficou em paz.",
+          "objective": "Defender o trono de Davi"
+        },
+        {
+          "ref": "2 Crônicas 24:17–25",
+          "title": "Joás esquece",
+          "intro": "Depois da morte de Joiada, Joás deixa a casa do Senhor e mata Zacarias.",
+          "insight": "Abandonaram a casa do Senhor; Deus envia profetas, mas não querem ouvir.",
+          "objective": "Não esquecer quem te formou"
+        },
+        {
+          "ref": "2 Crônicas 25:14–24",
+          "title": "Deuses de Seir",
+          "intro": "Amazias vence Edom e traz os deuses dos vencidos para adorar.",
+          "insight": "Por que buscas deuses que não livraram o próprio povo? O orgulho precede a queda.",
+          "objective": "Não adorar ídolos vencidos"
+        },
+        {
+          "ref": "2 Crônicas 26:16–23",
+          "title": "Uzias se exalta",
+          "intro": "Fortalecido, Uzias entra no templo para queimar incenso e fica leproso.",
+          "insight": "Quando o coração se exalta, até o rei cai: o Senhor o fere e o separa da casa.",
+          "objective": "Servir sem soberba"
+        },
+        {
+          "ref": "2 Crônicas 28:19–27",
+          "chapters": "27–28",
+          "title": "Acaz se fecha",
+          "intro": "Acaz fecha as portas da casa do Senhor e multiplica a idolatria.",
+          "insight": "O Senhor humilha Judá: Acaz se fecha ainda mais e não se volta para Deus.",
+          "objective": "Abrir-se ao Senhor na crise"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Quedas e golpes",
+        "intro": "Revise Jeorão, a coroação de Joás, as apostasias e o fechamento do templo sob Acaz.",
+        "insight": "Deixar o Senhor leva à soberba, ao ídolo e ao juízo"
+      }
+    },
+    {
+      "title": "Ezequias reforma · cap. 29–32",
+      "scenes": [
+        {
+          "ref": "2 Crônicas 29:3–11",
+          "title": "Abram as portas",
+          "intro": "No primeiro ano, Ezequias abre a casa do Senhor e chama os levitas.",
+          "insight": "Santificai-vos e santificai a casa: o Senhor nos escolheu para estarmos perante ele.",
+          "objective": "Reabrir o culto ao Senhor"
+        },
+        {
+          "ref": "2 Crônicas 30:6–13",
+          "title": "Voltai ao Senhor",
+          "intro": "Ezequias convida todo o Israel a celebrar a Páscoa em Jerusalém.",
+          "insight": "Voltai ao Senhor: ele é compassivo e não desviará de vós o rosto, se voltardes.",
+          "objective": "Voltar e celebrar juntos"
+        },
+        {
+          "ref": "2 Crônicas 31:2–10",
+          "title": "Ofertas e ordem",
+          "intro": "Ezequias organiza os turnos e o povo traz ofertas em abundância.",
+          "insight": "Desde que as ofertas começaram, houve fartura: o Senhor abençoou o seu povo.",
+          "objective": "Dar com ordem e alegria"
+        },
+        {
+          "ref": "2 Crônicas 32:20–26",
+          "title": "Anjo livra",
+          "intro": "Ezequias e Isaías oram; o Senhor fere o arraial da Assíria.",
+          "insight": "O Senhor enviou um anjo e livrou: depois, Ezequias se humilha e a ira se desvia.",
+          "objective": "Orar e humilhar-se"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Ezequias reforma",
+        "intro": "Revise a abertura do templo, o convite à Páscoa, as ofertas e o livramento da Assíria.",
+        "insight": "Quem reabre o culto e se humilha vê o Senhor sarar e livrar"
+      }
+    },
+    {
+      "title": "Até o exílio · cap. 33–36",
+      "scenes": [
+        {
+          "ref": "2 Crônicas 33:10–16",
+          "title": "Manassés se volta",
+          "intro": "Levado a Babilônia, Manassés se humilha e o Senhor o restaura.",
+          "insight": "Angustiado, ele suplicou ao Senhor; Deus se deixou achar e o trouxe de volta a Jerusalém.",
+          "objective": "Humilhar-se mesmo tarde"
+        },
+        {
+          "ref": "2 Crônicas 34:14–21",
+          "title": "Livro da Lei",
+          "intro": "Hilquias acha o Livro da Lei; Josias rasga as vestes ao ouvir as palavras.",
+          "insight": "Grande é a ira do Senhor porque nossos pais não guardaram a palavra deste livro.",
+          "objective": "Ouvir e temer a Lei"
+        },
+        {
+          "ref": "2 Crônicas 35:16–24",
+          "title": "Páscoa e queda",
+          "intro": "Josias celebra uma grande Páscoa; depois, não ouve o aviso e cai em Megido.",
+          "insight": "Houve Páscoa como não se via desde Samuel; ainda assim, o rei não ouviu e foi ferido.",
+          "objective": "Ouvir também fora do culto"
+        },
+        {
+          "ref": "2 Crônicas 36:15–23",
+          "title": "Exílio e Ciro",
+          "intro": "O Senhor envia mensageiros sem cessar; vem o exílio, e depois o decreto de Ciro.",
+          "insight": "Não houve remédio; a terra gozou seus sábados. Depois, o Senhor desperta Ciro.",
+          "objective": "Esperar o Deus que restaura"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Até o exílio",
+        "intro": "Revise a volta de Manassés, o Livro achado, a Páscoa de Josias e o caminho até Ciro.",
+        "insight": "Mesmo no juízo, o Senhor guarda a palavra e abre porta de volta"
+      }
+    }
+  ]
+}

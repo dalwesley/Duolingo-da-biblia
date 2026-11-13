@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Hebreus 9:11–16",
+    "passages": [
+      {
+        "ref": "Hebreus 9:11–16"
+      }
+    ],
+    "context": "No culto antigo, sangue de animais purificava só a carne. A carta mostra Cristo entrando no Santo dos Santos com o próprio sangue e abrindo a nova aliança.",
+    "keyword": "Mediador",
+    "keywordGloss": "Aquele que põe em pé a nova aliança pelo próprio sangue: Cristo.",
+    "focusQuestion": "Você ainda tenta limpar a consciência com esforço próprio, ou confia no sangue de Cristo?",
+    "reflectionPrompts": [
+      "Sangue próprio",
+      "Consciência limpa",
+      "Nova aliança"
+    ],
+    "facts": [
+      {
+        "text": "Cristo veio como sumo sacerdote dos bens já realizados.",
+        "evidenceRef": "Hebreus 9:11",
+        "evidenceSpan": "como sumo sacerdote dos bens já realizados"
+      },
+      {
+        "text": "Ele entrou no Santo dos Santos pelo próprio sangue, uma vez por todas.",
+        "evidenceRef": "Hebreus 9:12",
+        "evidenceSpan": "pelo seu próprio sangue, entrou no Santo dos Santos uma vez por todas"
+      },
+      {
+        "text": "Obteve uma redenção eterna.",
+        "evidenceRef": "Hebreus 9:12",
+        "evidenceSpan": "tendo obtido uma redenção eterna"
+      },
+      {
+        "text": "O sangue de Cristo purifica a consciência das obras mortas.",
+        "evidenceRef": "Hebreus 9:14",
+        "evidenceSpan": "purificará a nossa consciência das obras mortas"
+      },
+      {
+        "text": "Ele é o Mediador da nova aliança.",
+        "evidenceRef": "Hebreus 9:15",
+        "evidenceSpan": "Ele é o Mediador da nova aliança"
+      },
+      {
+        "text": "Onde há testamento, é preciso a morte do testador.",
+        "evidenceRef": "Hebreus 9:16",
+        "evidenceSpan": "é imprescindível que ocorra a morte do testador"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Mediador",
+        "gloss": "Quem firma a nova aliança e leva os chamados à herança eterna."
+      },
+      {
+        "term": "consciência",
+        "gloss": "O que o sangue de Cristo limpa, além da purificação só da carne."
+      },
+      {
+        "term": "redenção",
+        "gloss": "Libertação eterna obtida quando Cristo entrou com o próprio sangue."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cristo chega com tabernáculo maior",
+        "evidenceRef": "Hebreus 9:11"
+      },
+      {
+        "label": "Entra com o próprio sangue e obtém redenção",
+        "evidenceRef": "Hebreus 9:12"
+      },
+      {
+        "label": "Do sangue animal à consciência limpa",
+        "evidenceRef": "Hebreus 9:13–14"
+      },
+      {
+        "label": "Mediador da nova aliança e morte do testador",
+        "evidenceRef": "Hebreus 9:15–16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não entrou com sangue de bodes e bezerros, mas com o próprio sangue.",
+        "marker": "mas",
+        "evidenceRef": "Hebreus 9:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se o sangue animal santifica a carne, muito mais o de Cristo limpa a consciência.",
+        "marker": "Muito mais",
+        "evidenceRef": "Hebreus 9:14"
+      },
+      {
+        "kind": "propósito",
+        "text": "É Mediador para que os chamados recebam a eterna herança.",
+        "marker": "a fim de",
+        "evidenceRef": "Hebreus 9:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Levítico 17:11",
+        "bridge": "Vida no sangue"
+      },
+      {
+        "ref": "Mateus 26:28",
+        "bridge": "Sangue da nova aliança"
+      },
+      {
+        "ref": "1 João 1:7",
+        "bridge": "Sangue que purifica"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O sangue de animais limpa a consciência como o de Cristo.",
+        "why": "O texto diz que limpam a carne; o de Cristo limpa a consciência (9:13–14)."
+      },
+      {
+        "text": "Cristo precisa entrar no Santo dos Santos várias vezes.",
+        "why": "Ele entrou uma vez por todas e obteve redenção eterna (9:12)."
+      },
+      {
+        "text": "A nova aliança não depende da morte de Cristo.",
+        "why": "Ele é Mediador por meio de Sua morte; o testamento exige a morte do testador (9:15–16)."
+      }
+    ],
+    "centralInsight": "O sangue de Cristo limpa a consciência e ele é Mediador da nova aliança.",
+    "anchorQuestion": "Segundo Hebreus 9:14, o que o sangue de Cristo purifica?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Hebreus 9:12, Cristo entrou no Santo dos Santos pelo seu próprio sangue.",
+      "verseRef": "Hebreus 9:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "mas pelo seu próprio sangue, entrou no Santo dos Santos",
+      "feedbackCorrect": "Ele entrou pelo próprio sangue, uma vez por todas.",
+      "feedbackWrong": {
+        "false": "O texto diz que entrou pelo seu próprio sangue, não pelo de animais."
+      },
+      "hint": "Veja o que vem depois de mas.",
+      "learningObjective": "Observar com que sangue Cristo entrou.",
+      "evidence": [
+        "Hebreus 9:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Hebreus 9:15, toque o título dado a Cristo na nova aliança.",
+      "verseRef": "Hebreus 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mediador"
+        },
+        {
+          "id": "b",
+          "text": "testador"
+        },
+        {
+          "id": "c",
+          "text": "herança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele é o Mediador da nova aliança",
+      "feedbackCorrect": "Cristo é chamado Mediador da nova aliança.",
+      "feedbackWrong": {
+        "b": "Testador aparece no versículo seguinte, não como título dele aqui.",
+        "c": "Herança é a promessa recebida, não o título de Cristo."
+      },
+      "hint": "É o ofício nomeado logo depois de Ele é.",
+      "learningObjective": "Identificar o título de Cristo na nova aliança.",
+      "evidence": [
+        "Hebreus 9:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Hebreus 9:14, o que o sangue de Cristo purifica?",
+      "verseRef": "Hebreus 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A nossa consciência das obras mortas"
+        },
+        {
+          "id": "b",
+          "text": "Somente a carne contaminada"
+        },
+        {
+          "id": "c",
+          "text": "O tabernáculo feito por mãos"
+        },
+        {
+          "id": "d",
+          "text": "Os animais do culto antigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "purificará a nossa consciência das obras mortas",
+      "feedbackCorrect": "O sangue de Cristo purifica a consciência das obras mortas.",
+      "feedbackWrong": {
+        "b": "A carne é o alcance do sangue animal; aqui o alcance é a consciência.",
+        "c": "O tabernáculo de Cristo não é feito por mãos.",
+        "d": "O versículo fala da nossa consciência, não dos animais."
+      },
+      "hint": "Leia o que vem depois de purificará.",
+      "learningObjective": "Observar o que o sangue de Cristo limpa.",
+      "evidence": [
+        "Hebreus 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Hebreus 9:12 na ordem do texto.",
+      "verseRef": "Hebreus 9:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nem por meio do sangue de bodes e bezerros"
+        },
+        {
+          "id": "b",
+          "text": "mas pelo seu próprio sangue"
+        },
+        {
+          "id": "c",
+          "text": "entrou no Santo dos Santos uma vez por todas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pelo seu próprio sangue, entrou no Santo dos Santos",
+      "feedbackCorrect": "Primeiro o que não usou, depois o próprio sangue e a entrada única.",
+      "feedbackWrong": {
+        "default": "Comece pelo sangue que ele não usou; a entrada fecha o verso."
+      },
+      "hint": "O versículo abre com Nem por meio.",
+      "learningObjective": "Reconhecer a sequência de Hebreus 9:12.",
+      "evidence": [
+        "Hebreus 9:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Hebreus 9:12, que redenção Cristo obteve ao entrar?",
+      "verseRef": "Hebreus 9:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "eterna"
+        },
+        {
+          "id": "b",
+          "text": "anual"
+        },
+        {
+          "id": "c",
+          "text": "parcial"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tendo obtido uma redenção eterna",
+      "feedbackCorrect": "Ao entrar uma vez por todas, obteve uma redenção eterna.",
+      "feedbackWrong": {
+        "b": "Anual lembra o culto antigo; o texto diz outra palavra.",
+        "c": "Parcial não aparece; a redenção obtida é outra."
+      },
+      "hint": "É o adjetivo que fecha o versículo.",
+      "learningObjective": "Lembrar o alcance da redenção obtida.",
+      "evidence": [
+        "Hebreus 9:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Hebreus 9:14 comunica que se liga a este contexto?",
+      "verseRef": "Hebreus 9:14",
+      "passageA": {
+        "ref": "Hebreus 9:14",
+        "text": "purificará a nossa consciência das obras mortas"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O sangue de animais purificava a carne; o de Cristo limpa a consciência."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Limpeza só externa da carne"
+        },
+        {
+          "id": "b",
+          "text": "Consciência limpa para servir"
+        },
+        {
+          "id": "c",
+          "text": "Culto sem necessidade de sangue"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "purificará a nossa consciência das obras mortas, para servirmos ao Deus vivo",
+      "feedbackCorrect": "O sangue limpa a consciência para servirmos ao Deus vivo.",
+      "feedbackWrong": {
+        "a": "Isso descreve o alcance do sangue animal, não o de Cristo.",
+        "c": "O texto afirma o sangue de Cristo, não a ausência de sangue."
+      },
+      "hint": "Compare carne e consciência no contraste da cena.",
+      "learningObjective": "Ligar 9:14 ao contraste com a purificação só da carne.",
+      "evidence": [
+        "Hebreus 9:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Hebreus 9:15, Cristo é Mediador para que os chamados recebam a eterna herança.",
+      "verseRef": "Hebreus 9:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "aqueles que foram chamados recebam a promessa da eterna herança",
+      "feedbackCorrect": "A mediação aponta para os chamados receberem a eterna herança.",
+      "feedbackWrong": {
+        "false": "Releia o fim: a mediação visa a promessa da eterna herança."
+      },
+      "hint": "Veja o fim do versículo, depois de a fim de.",
+      "learningObjective": "Compreender o propósito da mediação de Cristo.",
+      "evidence": [
+        "Hebreus 9:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Hebreus 9:12, toque o trecho que mostra com que sangue ele entrou.",
+      "verseRef": "Hebreus 9:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "próprio sangue"
+        },
+        {
+          "id": "b",
+          "text": "bodes"
+        },
+        {
+          "id": "c",
+          "text": "bezerros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas pelo seu próprio sangue",
+      "feedbackCorrect": "O contraste aponta o próprio sangue, não o de animais.",
+      "feedbackWrong": {
+        "b": "Bodes é o que ele não usou.",
+        "c": "Bezerros também é o sangue que ele não usou."
+      },
+      "hint": "Veja o que vem depois de mas pelo seu.",
+      "learningObjective": "Reconhecer o sangue que marca a virada.",
+      "evidence": [
+        "Hebreus 9:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Hebreus 9:13–14 relaciona o sangue animal e o de Cristo?",
+      "verseRef": "Hebreus 9:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os dois limpam a consciência do mesmo modo"
+        },
+        {
+          "id": "b",
+          "text": "O de Cristo alcança muito mais do que a carne"
+        },
+        {
+          "id": "c",
+          "text": "O sangue animal já bastava para a herança"
+        },
+        {
+          "id": "d",
+          "text": "Cristo dispensa qualquer purificação"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Muito mais o sangue de Cristo",
+      "feedbackCorrect": "Se o animal limpa a carne, muito mais o de Cristo limpa a consciência.",
+      "feedbackWrong": {
+        "a": "O texto distingue carne e consciência.",
+        "c": "A herança vem pela morte do Mediador, não pelo culto animal.",
+        "d": "O texto afirma a purificação pelo sangue de Cristo."
+      },
+      "hint": "Repare na expressão Muito mais.",
+      "learningObjective": "Relacionar os dois tipos de purificação.",
+      "evidence": [
+        "Hebreus 9:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento de Hebreus 9:11–15?",
+      "verseRef": "Hebreus 9:11–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo vem como sumo sacerdote dos bens"
+        },
+        {
+          "id": "b",
+          "text": "Entra com o próprio sangue e obtém redenção"
+        },
+        {
+          "id": "c",
+          "text": "Torna-se Mediador da nova aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "como sumo sacerdote dos bens já realizados",
+      "feedbackCorrect": "Vem como sacerdote, entra com o sangue e firma a mediação.",
+      "feedbackWrong": {
+        "default": "Comece pela vinda do sacerdote; a mediação fecha o arco."
+      },
+      "hint": "Parte da vinda de Cristo em 9:11.",
+      "learningObjective": "Compreender o avanço do argumento.",
+      "evidence": [
+        "Hebreus 9:11",
+        "Hebreus 9:12",
+        "Hebreus 9:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Hebreus 9:14, para que o sangue limpa a consciência?",
+      "verseRef": "Hebreus 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "servirmos"
+        },
+        {
+          "id": "b",
+          "text": "fugirmos"
+        },
+        {
+          "id": "c",
+          "text": "calarmos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para servirmos ao Deus vivo",
+      "feedbackCorrect": "A limpeza da consciência aponta para servir ao Deus vivo.",
+      "feedbackWrong": {
+        "b": "Fugirmos não está no texto; o fim é servir.",
+        "c": "Calarmos não aparece; o verbo aponta a serviço."
+      },
+      "hint": "É o verbo depois de para, no fim do verso.",
+      "learningObjective": "Lembrar o propósito da purificação.",
+      "evidence": [
+        "Hebreus 9:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Hebreus 9:15 a Mateus 26:28?",
+      "verseRef": "Hebreus 9:15",
+      "passageA": {
+        "ref": "Hebreus 9:15"
+      },
+      "passageB": {
+        "ref": "Mateus 26:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue que firma a aliança"
+        },
+        {
+          "id": "b",
+          "text": "Culto sem necessidade de morte"
+        },
+        {
+          "id": "c",
+          "text": "Aliança só com animais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele é o Mediador da nova aliança",
+      "feedbackCorrect": "Os dois ligam o sangue de Cristo à nova aliança.",
+      "feedbackWrong": {
+        "b": "Os dois textos apontam morte e sangue, não a ausência deles.",
+        "c": "A aliança aqui é nova e firmada por Cristo."
+      },
+      "hint": "Compare o que cada texto diz sobre aliança e sangue.",
+      "learningObjective": "Relacionar Hebreus 9:15 com Mateus 26:28.",
+      "evidence": [
+        "Hebreus 9:15",
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Hebreus 9:13–14, o sangue de touros e bodes limpa a consciência como o de Cristo.",
+      "verseRef": "Hebreus 9:13–14",
+      "correctOptionId": "false",
+      "evidenceSpan": "os santificam, quanto à purificação da carne",
+      "feedbackCorrect": "O sangue animal alcança a carne; o de Cristo limpa a consciência.",
+      "feedbackWrong": {
+        "true": "O texto limita o animal à carne e eleva o de Cristo à consciência."
+      },
+      "hint": "Compare o alcance de cada sangue no contraste.",
+      "learningObjective": "Interpretar o alcance distinto dos dois sangues.",
+      "evidence": [
+        "Hebreus 9:13–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Hebreus 9:14, toque o trecho que mostra o alvo da limpeza.",
+      "verseRef": "Hebreus 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "nossa consciência"
+        },
+        {
+          "id": "b",
+          "text": "Espírito eterno"
+        },
+        {
+          "id": "c",
+          "text": "obras mortas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "purificará a nossa consciência das obras mortas",
+      "feedbackCorrect": "O alvo nomeado da purificação é a nossa consciência.",
+      "feedbackWrong": {
+        "b": "Espírito eterno diz como ele se ofereceu, não o que é limpo.",
+        "c": "Obras mortas são o de que a consciência é limpa."
+      },
+      "hint": "Procure o que o verbo purificará alcança.",
+      "learningObjective": "Sustentar com o texto o alvo da limpeza.",
+      "evidence": [
+        "Hebreus 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Hebreus 9:15–16 sustenta sobre a nova aliança?",
+      "verseRef": "Hebreus 9:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A aliança nova dispensa qualquer morte"
+        },
+        {
+          "id": "b",
+          "text": "A morte de Cristo remete transgressões e abre a herança"
+        },
+        {
+          "id": "c",
+          "text": "O testamento vale sem a morte do testador"
+        },
+        {
+          "id": "d",
+          "text": "Só o sangue animal firma a herança eterna"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por meio de Sua morte para remissão das transgressões",
+      "feedbackCorrect": "Pela morte dele há remissão, e os chamados recebem a herança.",
+      "feedbackWrong": {
+        "a": "O texto liga a aliança à morte do Mediador.",
+        "c": "9:16 diz que a morte do testador é imprescindível.",
+        "d": "A herança vem pela mediação de Cristo, não pelo culto animal."
+      },
+      "hint": "Ligue mediação, morte e herança.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": [
+        "Hebreus 9:15–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o sangue que limpa na Bíblia?",
+      "verseRef": "Hebreus 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levítico liga a vida e a expiação ao sangue"
+        },
+        {
+          "id": "b",
+          "text": "Hebreus mostra o sangue de Cristo limpando a consciência"
+        },
+        {
+          "id": "c",
+          "text": "João afirma que o sangue de Jesus purifica do pecado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o sangue de Cristo",
+      "feedbackCorrect": "Do altar em Levítico ao sangue de Cristo em Hebreus e em João.",
+      "feedbackWrong": {
+        "default": "Siga: Levítico 17:11, Hebreus 9:14 e 1 João 1:7."
+      },
+      "hint": "Parta da lei e vá ao Novo Testamento.",
+      "learningObjective": "Ver o fio do sangue que limpa.",
+      "evidence": [
+        "Hebreus 9:14",
+        "Levítico 17:11",
+        "1 João 1:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Hebreus 9:15, o que os chamados recebem como promessa?",
+      "verseRef": "Hebreus 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "herança"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "exército"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "recebam a promessa da eterna herança",
+      "feedbackCorrect": "Os chamados recebem a promessa da eterna herança.",
+      "feedbackWrong": {
+        "b": "Templo não é a promessa nomeada aqui.",
+        "c": "Exército não aparece; a promessa é outra."
+      },
+      "hint": "É a palavra final do versículo.",
+      "learningObjective": "Lembrar a promessa ligada à mediação.",
+      "evidence": [
+        "Hebreus 9:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Hebreus 9:14 a 1 João 1:7?",
+      "verseRef": "Hebreus 9:14",
+      "passageA": {
+        "ref": "Hebreus 9:14"
+      },
+      "passageB": {
+        "ref": "1 João 1:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue que purifica o pecado"
+        },
+        {
+          "id": "b",
+          "text": "Culto só com animais"
+        },
+        {
+          "id": "c",
+          "text": "Limpeza apenas da carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "purificará a nossa consciência das obras mortas",
+      "feedbackCorrect": "Os dois afirmam que o sangue de Jesus purifica.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos reduz a limpeza ao culto animal.",
+        "c": "Hebreus e João apontam além da carne."
+      },
+      "hint": "Compare o que o sangue faz em cada texto.",
+      "learningObjective": "Ligar a purificação em Hebreus e em João.",
+      "evidence": [
+        "Hebreus 9:14",
+        "1 João 1:7"
+      ]
+    }
+  ]
+}

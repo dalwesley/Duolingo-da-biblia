@@ -1,0 +1,70 @@
+{
+  "slug": "lucas-cap",
+  "prefix": "lcc",
+  "book": "Lucas",
+  "chapters": 24,
+  "title": "Lucas",
+  "description": "Lucas capítulo a capítulo: o Salvador que busca e salva o perdido.",
+  "icon": "🕊️",
+  "color": "#2E86AB",
+  "order": 43,
+  "realm": "novo-testamento",
+  "category": "evangelhos",
+  "avoidTrails": ["lucas", "evangelhos"],
+  "modules": [
+    {
+      "title": "O Salvador nasce · cap. 1–4",
+      "scenes": [
+        { "ref": "Lucas 1:26–38", "title": "O anjo e Maria", "intro": "Um anjo visita uma jovem de Nazaré com uma notícia impossível.", "insight": "Para Deus nada é impossível, e Maria responde: faça-se em mim segundo a tua palavra.", "objective": "Dizer sim à palavra de Deus" },
+        { "ref": "Lucas 2:41–52", "title": "Na casa do meu Pai", "intro": "Aos doze anos, Jesus fica no templo e seus pais o procuram por três dias.", "insight": "Desde menino, Jesus sabe a quem pertence: à casa do seu Pai.", "objective": "Jesus e o Pai" },
+        { "ref": "Lucas 3:7–14", "title": "Que devemos fazer?", "intro": "João Batista prega arrependimento, e o povo pergunta como viver de outro jeito.", "insight": "O arrependimento aparece no dia a dia: repartir, ser honesto, não explorar.", "objective": "Frutos do arrependimento" },
+        { "ref": "Lucas 4:16–21", "title": "O Espírito está sobre mim", "intro": "Na sinagoga de Nazaré, Jesus lê o profeta Isaías e diz que aquilo se cumpriu.", "insight": "Jesus veio trazer boas-novas aos pobres e liberdade aos cativos: hoje isso se cumpre.", "objective": "A missão de Jesus" }
+      ],
+      "boss": { "title": "Travessia: O Salvador nasce", "intro": "Revise o anúncio a Maria, o menino no templo, a pregação de João e a leitura em Nazaré.", "insight": "Deus cumpre o que promete em Jesus" }
+    },
+    {
+      "title": "O Reino de perto · cap. 5–9",
+      "scenes": [
+        { "ref": "Lucas 5:1–11", "title": "A pesca maravilhosa", "intro": "Depois de uma noite sem pescar nada, Pedro lança as redes porque Jesus mandou.", "insight": "Diante do poder de Jesus, Pedro se vê pecador, e Jesus o chama para pescar gente.", "objective": "Confiar na palavra de Jesus" },
+        { "ref": "Lucas 6:37–42", "title": "A trave no olho", "intro": "Jesus fala de julgar, perdoar e de enxergar primeiro o próprio olho.", "insight": "Quem tira primeiro a trave do próprio olho aprende a ajudar o irmão sem condenar.", "objective": "Não julgar o irmão" },
+        { "ref": "Lucas 7:44–50", "title": "Muito perdoada, muito amou", "intro": "Na casa de um fariseu, uma mulher pecadora lava os pés de Jesus com lágrimas.", "insight": "Quem entende o quanto foi perdoado ama muito.", "objective": "Perdão que gera amor" },
+        { "ref": "Lucas 8:22–25", "title": "Quem é este?", "intro": "Uma tempestade cai sobre o lago, e Jesus está dormindo no barco.", "insight": "Até o vento e as águas obedecem a Jesus; a pergunta é onde está a nossa fé.", "objective": "Fé no meio da tempestade" },
+        { "ref": "Lucas 9:57–62", "title": "Seguir sem olhar para trás", "intro": "No caminho, várias pessoas dizem que querem seguir Jesus, mas cada uma tem uma condição.", "insight": "Seguir Jesus não espera o momento ideal: quem põe a mão no arado não olha para trás.", "objective": "O custo de seguir" }
+      ],
+      "boss": { "title": "Travessia: O Reino de perto", "intro": "Revise a pesca, a trave no olho, a mulher perdoada, a tempestade e o custo de seguir.", "insight": "O Reino chega perto e pede uma resposta" }
+    },
+    {
+      "title": "No caminho de Jerusalém · cap. 10–14",
+      "scenes": [
+        { "ref": "Lucas 10:30–37", "title": "O bom samaritano", "intro": "Um mestre da Lei pergunta quem é o seu próximo, e Jesus conta uma história na estrada.", "insight": "Próximo é quem se aproxima e tem misericórdia: vá e faça o mesmo.", "objective": "Ser próximo de quem sofre" },
+        { "ref": "Lucas 11:5–13", "title": "Peçam e receberão", "intro": "Jesus fala de um amigo que bate à porta à meia-noite e de um pai que dá bons presentes.", "insight": "O Pai do céu dá o Espírito Santo a quem pede.", "objective": "Orar com confiança" },
+        { "ref": "Lucas 12:16–21", "title": "O rico insensato", "intro": "Um homem tem uma colheita enorme e planeja celeiros maiores para descansar.", "insight": "Guardar tesouros só para si é loucura: a vida vale o que é rico para Deus.", "objective": "Rico para Deus" },
+        { "ref": "Lucas 13:10–17", "title": "A mulher encurvada", "intro": "Num sábado, Jesus vê uma mulher curvada havia dezoito anos e a chama.", "insight": "Jesus liberta no sábado quem estava preso, e a mulher endireita o corpo e louva a Deus.", "objective": "Libertação que glorifica a Deus" },
+        { "ref": "Lucas 14:15–24", "title": "O grande banquete", "intro": "Um homem prepara uma grande festa, e os convidados dão desculpas.", "insight": "O convite do Reino é para todos, e a casa se enche de quem foi buscado nas ruas.", "objective": "O convite do Reino" }
+      ],
+      "boss": { "title": "Travessia: No caminho de Jerusalém", "intro": "Revise o samaritano, a oração, o rico insensato, a mulher encurvada e o banquete.", "insight": "O caminho de Jesus é de misericórdia" }
+    },
+    {
+      "title": "Perdidos e achados · cap. 15–19",
+      "scenes": [
+        { "ref": "Lucas 15:11–24", "title": "O filho que voltou", "intro": "Um filho pede a herança, gasta tudo e decide voltar para casa.", "insight": "O Pai corre ao encontro de quem volta e faz festa: o perdido foi achado.", "objective": "O abraço do Pai" },
+        { "ref": "Lucas 16:19–31", "title": "O rico e Lázaro", "intro": "Um rico vive em festa enquanto um mendigo coberto de feridas espera no portão.", "insight": "A vida é o tempo de ouvir a Palavra; depois, o abismo não se atravessa.", "objective": "Ouvir enquanto há tempo" },
+        { "ref": "Lucas 17:11–19", "title": "Os dez leprosos", "intro": "Dez leprosos são curados no caminho, mas só um volta para agradecer.", "insight": "Só um volta para agradecer, e ele recebe mais que a cura.", "objective": "Gratidão que volta" },
+        { "ref": "Lucas 18:9–14", "title": "O fariseu e o publicano", "intro": "Dois homens sobem ao templo para orar, e só um volta justificado.", "insight": "Deus ouve quem se reconhece pecador e se humilha diante dele.", "objective": "Orar com humildade" },
+        { "ref": "Lucas 19:1–10", "title": "Zaqueu", "intro": "Um chefe de cobradores de impostos sobe numa árvore para ver Jesus passar.", "insight": "Jesus veio buscar e salvar o perdido, e a salvação muda a casa de Zaqueu.", "objective": "Buscado por Jesus" }
+      ],
+      "boss": { "title": "Travessia: Perdidos e achados", "intro": "Revise o filho que voltou, o rico e Lázaro, os dez leprosos, o fariseu e o publicano e Zaqueu.", "insight": "Jesus busca e salva o perdido" }
+    },
+    {
+      "title": "Entregue e ressuscitado · cap. 20–24",
+      "scenes": [
+        { "ref": "Lucas 20:20–26", "title": "A César e a Deus", "intro": "Espiões tentam pegar Jesus numa pergunta sobre impostos.", "insight": "Dê a César o que é dele, e a Deus o que é de Deus: inclusive a própria vida.", "objective": "O que pertence a Deus" },
+        { "ref": "Lucas 21:1–4", "title": "A oferta da viúva", "intro": "Jesus observa os ricos dando ofertas e uma viúva pobre que dá duas moedinhas.", "insight": "Deus mede a oferta pelo coração: a viúva deu tudo o que tinha.", "objective": "Dar com o coração" },
+        { "ref": "Lucas 22:39–46", "title": "Orem para não cair", "intro": "No monte das Oliveiras, Jesus ora em agonia enquanto os discípulos dormem.", "insight": "Na angústia, Jesus ora e se entrega à vontade do Pai.", "objective": "Orar na hora difícil" },
+        { "ref": "Lucas 23:39–43", "title": "Hoje estarás comigo", "intro": "Na cruz, dois criminosos falam com Jesus, cada um de um jeito.", "insight": "Até na última hora, quem pede a Jesus recebe a promessa: hoje estarás comigo.", "objective": "Graça na última hora" },
+        { "ref": "Lucas 24:28–35", "title": "No partir do pão", "intro": "Dois discípulos caminham para Emaús com um desconhecido e o convidam para ficar.", "insight": "Jesus ressuscitado se revela ao partir o pão e faz o coração arder.", "objective": "Reconhecer Jesus vivo" }
+      ],
+      "boss": { "title": "Travessia: Entregue e ressuscitado", "intro": "Revise César e Deus, a oferta da viúva, o monte das Oliveiras, a cruz e Emaús.", "insight": "Jesus se entrega e vive" }
+    }
+  ]
+}

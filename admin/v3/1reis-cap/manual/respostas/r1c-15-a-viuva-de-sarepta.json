@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "1 Reis 17:11–16",
+    "passages": [
+      {
+        "ref": "1 Reis 17:8–16"
+      }
+    ],
+    "context": "Em tempo de seca, o Senhor manda Elias a Sarepta. Ali uma viúva prepara o último punhado de farinha quando o profeta pede pão.",
+    "keyword": "farinha",
+    "keywordGloss": "O pouco que a viúva tem, e que o Senhor promete que não se acabará.",
+    "focusQuestion": "O que você entrega primeiro quando o recurso parece acabar?",
+    "reflectionPrompts": [
+      "Não temas",
+      "Farinha e azeite",
+      "Palavra cumprida"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor manda Elias a Sarepta e ordena que uma viúva o sustente.",
+        "evidenceRef": "1 Reis 17:9",
+        "evidenceSpan": "vai a Sarepta, que pertence a Sidom"
+      },
+      {
+        "text": "Elias encontra a viúva apanhando lenha à porta da cidade.",
+        "evidenceRef": "1 Reis 17:10",
+        "evidenceSpan": "encontrou uma mulher viúva apanhando lenha"
+      },
+      {
+        "text": "Ela diz que só tem um punhado de farinha e um pouco de azeite.",
+        "evidenceRef": "1 Reis 17:12",
+        "evidenceSpan": "há apenas um punhado de farinha em uma panela"
+      },
+      {
+        "text": "Elias pede que ela faça primeiro um bolo pequeno para ele.",
+        "evidenceRef": "1 Reis 17:13",
+        "evidenceSpan": "primeiro faze para mim um bolo pequeno"
+      },
+      {
+        "text": "O Senhor promete que a farinha não se acabará e o azeite não faltará.",
+        "evidenceRef": "1 Reis 17:14",
+        "evidenceSpan": "A farinha da tua panela não se acabará"
+      },
+      {
+        "text": "Ela obedece; farinha e azeite não falham por muitos dias.",
+        "evidenceRef": "1 Reis 17:15–16",
+        "evidenceSpan": "a farinha da panela não se esgotou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "farinha",
+        "gloss": "O recurso mínimo da viúva, sustentado pela palavra do Senhor."
+      },
+      {
+        "term": "azeite",
+        "gloss": "O pouco na botija que o Senhor promete que não faltará."
+      },
+      {
+        "term": "viúva",
+        "gloss": "A mulher de Sarepta a quem o Senhor ordena sustentar Elias."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem do Senhor e chegada a Sarepta",
+        "evidenceRef": "1 Reis 17:8–10"
+      },
+      {
+        "label": "Pedido de pão e confissão da falta",
+        "evidenceRef": "1 Reis 17:11–12"
+      },
+      {
+        "label": "Promessa: farinha e azeite não faltam",
+        "evidenceRef": "1 Reis 17:13–14"
+      },
+      {
+        "label": "Obediência e provisão por muitos dias",
+        "evidenceRef": "1 Reis 17:15–16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Elias pede pão; a viúva, porém, responde que não tem pão algum.",
+        "marker": "porém",
+        "evidenceRef": "1 Reis 17:12"
+      },
+      {
+        "kind": "causa",
+        "text": "A promessa explica o pedido: porque assim diz o Senhor.",
+        "marker": "Porque",
+        "evidenceRef": "1 Reis 17:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ela faz conforme a palavra; comem por muitos dias.",
+        "marker": "assim",
+        "evidenceRef": "1 Reis 17:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 4:25–26",
+        "bridge": "Jesus lembra a viúva de Sarepta"
+      },
+      {
+        "ref": "Salmos 37:25",
+        "bridge": "O justo não fica desamparado"
+      },
+      {
+        "ref": "Mateus 6:11",
+        "bridge": "Pão de cada dia"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A viúva tinha fartura escondida e só fingia pobreza.",
+        "why": "Ela jura que não tem pão; só um punhado de farinha e um pouco de azeite."
+      },
+      {
+        "text": "Elias pede o bolo depois que ela e o filho comerem.",
+        "why": "Ele pede que primeiro faça para ele um bolo pequeno."
+      },
+      {
+        "text": "A farinha acabou no dia seguinte.",
+        "why": "A farinha não se esgotou e o azeite não falhou por muitos dias."
+      }
+    ],
+    "centralInsight": "A farinha não acaba e o azeite não falta: o Senhor sustenta quem confia.",
+    "anchorQuestion": "Segundo 1 Reis 17:14, até quando a farinha e o azeite não faltariam?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 17:14, o Senhor promete que a farinha da panela não se acabará e o azeite da botija não faltará.",
+      "verseRef": "1 Reis 17:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "A farinha da tua panela não se acabará, e o azeite da tua botija não faltará",
+      "feedbackCorrect": "A promessa cobre farinha e azeite até o dia da chuva.",
+      "feedbackWrong": {
+        "false": "Releia 17:14: farinha e azeite não faltam, segundo o Senhor."
+      },
+      "hint": "Leia a promessa sobre panela e botija.",
+      "learningObjective": "Observar a escassez confessada pela viúva.",
+      "evidence": [
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 17:9, toque para onde o Senhor manda Elias ir.",
+      "verseRef": "1 Reis 17:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sarepta"
+        },
+        {
+          "id": "b",
+          "text": "Sidom"
+        },
+        {
+          "id": "c",
+          "text": "viúva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vai a Sarepta, que pertence a Sidom",
+      "feedbackCorrect": "O destino é Sarepta, em território de Sidom.",
+      "feedbackWrong": {
+        "b": "Sidom é a região; a cidade é Sarepta.",
+        "c": "A viúva é quem o sustenta, não o lugar."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o destino de Elias.",
+      "evidence": [
+        "1 Reis 17:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 17:13, o que Elias pede que a viúva faça primeiro?",
+      "verseRef": "1 Reis 17:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um bolo pequeno para ele"
+        },
+        {
+          "id": "b",
+          "text": "Uma festa para toda a cidade"
+        },
+        {
+          "id": "c",
+          "text": "Guardar a farinha sem tocá-la"
+        },
+        {
+          "id": "d",
+          "text": "Ir buscar farinha em Sidom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "primeiro faze para mim um bolo pequeno",
+      "feedbackCorrect": "O pedido inverte a ordem: primeiro o profeta, depois ela e o filho.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a palavra \"primeiro\".",
+      "learningObjective": "Observar a ordem do pedido de Elias.",
+      "evidence": [
+        "1 Reis 17:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 17:14 na ordem do texto.",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque assim diz o SENHOR, Deus de Israel"
+        },
+        {
+          "id": "b",
+          "text": "A farinha da tua panela não se acabará"
+        },
+        {
+          "id": "c",
+          "text": "e o azeite da tua botija não faltará"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "feedbackCorrect": "A palavra do Senhor abre; farinha e azeite seguem.",
+      "feedbackWrong": {
+        "default": "Comece pela fórmula \"assim diz o SENHOR\"."
+      },
+      "hint": "O verso abre com a voz do Senhor.",
+      "learningObjective": "Reconhecer a sequência da promessa.",
+      "evidence": [
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 17:14, o que da panela não se acabará?",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "água"
+        },
+        {
+          "id": "b",
+          "text": "farinha"
+        },
+        {
+          "id": "c",
+          "text": "lenha"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "feedbackCorrect": "A promessa cai sobre a farinha da panela.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja o que está na panela.",
+      "learningObjective": "Lembrar a palavra-chave da provisão.",
+      "evidence": [
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 17:9 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 17:9",
+      "passageA": {
+        "ref": "1 Reis 17:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor já preparou o sustento de Elias por meio de uma viúva."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A viúva foi ordenada a sustentar"
+        },
+        {
+          "id": "b",
+          "text": "Elias deve comprar farinha"
+        },
+        {
+          "id": "c",
+          "text": "Sidom envia tropas a Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois ordenei a uma mulher viúva que te sustente",
+      "feedbackCorrect": "Antes de Elias chegar, o Senhor já ordenou o sustento.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o que o Senhor já ordenou.",
+      "learningObjective": "Ligar a ordem do Senhor ao sustento preparado.",
+      "evidence": [
+        "1 Reis 17:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 17:12, a viúva responde sem contraste e confirma que tem pão de sobra para Elias.",
+      "verseRef": "1 Reis 17:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ela, porém, respondeu",
+      "feedbackCorrect": "O \"porém\" marca o contraste: não tem pão algum.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Repare na palavra entre vírgulas.",
+      "learningObjective": "Compreender o contraste da resposta.",
+      "evidence": [
+        "1 Reis 17:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 17:12, toque a palavra que marca o contraste com o pedido de Elias.",
+      "verseRef": "1 Reis 17:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "respondeu"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "certo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "porém",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "1 Reis 17:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 17:14 se relaciona com o pedido de 17:13?",
+      "verseRef": "1 Reis 17:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa do Senhor fundamenta o pedido ousado de Elias"
+        },
+        {
+          "id": "b",
+          "text": "A promessa cancela o pedido do bolo"
+        },
+        {
+          "id": "c",
+          "text": "A viúva inventa a promessa para se proteger"
+        },
+        {
+          "id": "d",
+          "text": "Elias pede o bolo porque a chuva já caiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque assim diz o SENHOR, Deus de Israel",
+      "feedbackCorrect": "O \"Porque\" liga o pedido à palavra do Senhor sobre farinha e azeite.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que abre o versículo 14.",
+      "learningObjective": "Relacionar pedido e promessa.",
+      "evidence": [
+        "1 Reis 17:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Reis 17:12–15?",
+      "verseRef": "1 Reis 17:12–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "A viúva confessa a falta de pão"
+        },
+        {
+          "id": "b",
+          "text": "Elias anuncia a promessa do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Ela obedece e há comida por muitos dias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não tenho pão algum",
+      "feedbackCorrect": "Confissão, promessa e obediência com provisão.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão; a obediência fecha o movimento."
+      },
+      "hint": "A falta vem antes da promessa.",
+      "learningObjective": "Compreender o movimento da fé da viúva.",
+      "evidence": [
+        "1 Reis 17:12–13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 17:14, que palavra introduz a razão da promessa?",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "Embora"
+        },
+        {
+          "id": "c",
+          "text": "Depois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque assim diz o SENHOR, Deus de Israel",
+      "feedbackCorrect": "\"Porque\" carrega a causa: a palavra do Senhor.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": [
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 17:14 a Salmos 37:25?",
+      "verseRef": "1 Reis 17:14",
+      "passageA": {
+        "ref": "1 Reis 17:14"
+      },
+      "passageB": {
+        "ref": "Salmos 37:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor sustenta quem confia"
+        },
+        {
+          "id": "b",
+          "text": "A farinha acaba no mesmo dia"
+        },
+        {
+          "id": "c",
+          "text": "Só reis recebem provisão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "evidence": [
+        "1 Reis 17:14",
+        "Salmos 37:25"
+      ],
+      "feedbackCorrect": "Nos dois textos, o Senhor não deixa faltar o sustento.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o que cada texto diz sobre faltar sustento.",
+      "learningObjective": "Relacionar a provisão em Reis e nos Salmos."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 17:13–16, a viúva come primeiro com o filho e só depois atende Elias.",
+      "verseRef": "1 Reis 17:13–14",
+      "correctOptionId": "false",
+      "evidenceSpan": "primeiro faze para mim um bolo pequeno",
+      "feedbackCorrect": "A ordem é invertida: primeiro o bolo para Elias; depois ela e o filho.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Veja a palavra \"primeiro\" no pedido.",
+      "learningObjective": "Interpretar a ordem da fé na provisão.",
+      "evidence": [
+        "1 Reis 17:13–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 17:16, toque o trecho que sustenta o cumprimento da promessa.",
+      "verseRef": "1 Reis 17:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "não se esgotou"
+        },
+        {
+          "id": "b",
+          "text": "botija"
+        },
+        {
+          "id": "c",
+          "text": "panela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a farinha da panela não se esgotou",
+      "feedbackCorrect": "O verbo confirma: a farinha não se esgotou, conforme a palavra.",
+      "feedbackWrong": {
+        "b": "A botija é o recipiente; a prova é o que não falhou.",
+        "c": "A panela é o lugar; a prova é que não se esgotou."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura do cumprimento.",
+      "evidence": [
+        "1 Reis 17:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Reis 17:12–16 sustenta sobre a viúva de Sarepta?",
+      "verseRef": "1 Reis 17:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela confia na palavra, entrega o pouco e o Senhor sustenta"
+        },
+        {
+          "id": "b",
+          "text": "Ela fingia pobreza e tinha estoque escondido"
+        },
+        {
+          "id": "c",
+          "text": "A farinha acabou no dia seguinte"
+        },
+        {
+          "id": "d",
+          "text": "Elias pede o bolo só depois que ela come"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela foi e fez conforme a palavra de Elias",
+      "feedbackCorrect": "Obediência à palavra e provisão contínua: farinha e azeite não falham.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una a confissão da falta com o cumprimento.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "1 Reis 17:15–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o cuidado de Deus com o pão na Bíblia?",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor promete farinha e azeite à viúva"
+        },
+        {
+          "id": "b",
+          "text": "Jesus lembra a viúva de Sarepta"
+        },
+        {
+          "id": "c",
+          "text": "Os discípulos pedem o pão de cada dia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A farinha da tua panela não se acabará",
+      "evidence": [
+        "1 Reis 17:14",
+        "Lucas 4:25–26",
+        "Mateus 6:11"
+      ],
+      "feedbackCorrect": "A provisão em Sarepta ecoa no ensino de Jesus sobre o pão.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa em Reis; depois Lucas; por fim Mateus."
+      },
+      "hint": "Siga: Reis, Lucas, Mateus.",
+      "learningObjective": "Ver a provisão como fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 17:14, o que da botija não faltará?",
+      "verseRef": "1 Reis 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "vinho"
+        },
+        {
+          "id": "b",
+          "text": "azeite"
+        },
+        {
+          "id": "c",
+          "text": "mel"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o azeite da tua botija não faltará",
+      "feedbackCorrect": "Junto com a farinha, o azeite carrega a promessa.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "A palavra exata está no verso.",
+      "learningObjective": "Lembrar o termo da provisão.",
+      "evidence": [
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 17:9 a Lucas 4:25–26?",
+      "verseRef": "1 Reis 17:9",
+      "passageA": {
+        "ref": "1 Reis 17:9"
+      },
+      "passageB": {
+        "ref": "Lucas 4:25–26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus lembra a viúva de Sarepta"
+        },
+        {
+          "id": "b",
+          "text": "Elias recusa ir a Sidom"
+        },
+        {
+          "id": "c",
+          "text": "A chuva cai no mesmo dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vai a Sarepta, que pertence a Sidom",
+      "evidence": [
+        "1 Reis 17:9",
+        "Lucas 4:25–26"
+      ],
+      "feedbackCorrect": "Jesus retoma a cena: o envio a uma viúva em Sarepta.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja quem o Novo Testamento cita desta história.",
+      "learningObjective": "Ligar Sarepta ao ensino de Jesus."
+    }
+  ]
+}

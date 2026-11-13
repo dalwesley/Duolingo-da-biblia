@@ -1,0 +1,141 @@
+{
+  "slug": "galatas-cap",
+  "title": "Gálatas",
+  "description": "Gálatas capítulo a capítulo: o evangelho da graça e a liberdade em Cristo.",
+  "icon": "⚖️",
+  "color": "#C0392B",
+  "order": 63,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Evangelho e justificação · cap. 1–3",
+      "icon": "zap",
+      "section": "Gálatas",
+      "missions": [
+        {
+          "slug": "glc-01-chamado-pela-graca",
+          "title": "Chamado pela graça",
+          "subtitle": "Gálatas 1:13–21",
+          "intro": "Paulo conta como perseguia a igreja e como Deus o chamou.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Gálatas 1:13–21",
+          "hookVerse": "Pois já ouviram qual era a minha conduta no judaísmo, como eu perseguia intensamente a igreja de Deus e a devastava. E na minha nação, quanto ao judaísmo, eu me destacava em relação a muitos da minha idade, sendo extremamente zeloso das tradições de meus pais.",
+          "hookNote": "Deus revelou o Filho nele e o enviou aos gentios: o evangelho veio por revelação, não por homens.",
+          "centralInsight": "Deus revelou o Filho nele e o enviou aos gentios: o evangelho veio por revelação, não por homens.",
+          "objective": "Receber o chamado de Deus"
+        },
+        {
+          "slug": "glc-02-justificados-pela-fe",
+          "title": "Justificados pela fé",
+          "subtitle": "Gálatas 2:15–21",
+          "intro": "Paulo fala a Pedro e à igreja: judeu e gentio são justificados do mesmo modo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Gálatas 2:15–21",
+          "hookVerse": "Nós somos judeus por natureza e não pecadores dentre os gentios. Sabemos, entretanto, que o homem não é justificado por obras da lei, mas sim pela fé em Cristo Jesus. Por isso, também cremos em Cristo Jesus, a fim de sermos justificados pela fé nele e não por obras da lei, pois, por obras da lei, nenhuma carne será justificada.",
+          "hookNote": "O homem não é justificado por obras da lei, mas pela fé em Jesus Cristo; Cristo vive em mim.",
+          "centralInsight": "O homem não é justificado por obras da lei, mas pela fé em Jesus Cristo; Cristo vive em mim.",
+          "objective": "Viver pela fé em Cristo"
+        },
+        {
+          "slug": "glc-03-comecaram-no-espirito",
+          "title": "Começaram no Espírito",
+          "subtitle": "Gálatas 3:1–7",
+          "intro": "Paulo pergunta se a igreja, que começou no Espírito, agora quer terminar na carne.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Gálatas 3:1–7",
+          "hookVerse": "Ó gálatas insensatos! Quem vos fascinou de modo que não obedeceis à verdade? Foi diante de vós que Jesus Cristo foi claramente exposto como crucificado? Quero apenas saber isto de vocês: receberam o Espírito pelas obras da lei ou pela pregação da fé?",
+          "hookNote": "Quem crê é filho de Abraão: a justiça vem pela fé, não pelas obras da lei.",
+          "centralInsight": "Quem crê é filho de Abraão: a justiça vem pela fé, não pelas obras da lei.",
+          "objective": "Continuar no Espírito"
+        },
+        {
+          "slug": "glc-boss-1",
+          "title": "Travessia: Evangelho e justificação",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o chamado de Paulo, a justificação pela fé e o começo no Espírito.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Evangelho e justificação",
+          "hookVerse": "Revise o chamado de Paulo, a justificação pela fé e o começo no Espírito.",
+          "hookNote": "Revise o chamado de Paulo, a justificação pela fé e o começo no Espírito.",
+          "centralInsight": "O evangelho justifica pela fé e começa pelo Espírito",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Filhos e liberdade · cap. 4–6",
+      "icon": "zap",
+      "section": "Gálatas",
+      "missions": [
+        {
+          "slug": "glc-04-filhos-e-herdeiros",
+          "title": "Filhos e herdeiros",
+          "subtitle": "Gálatas 4:4–11",
+          "intro": "Na plenitude do tempo, Deus enviou o Filho para resgatar os que estavam sob a lei.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Gálatas 4:4–11",
+          "hookVerse": "Mas, quando chegou a plenitude do tempo, Deus enviou o seu Filho, nascido de mulher, nascido sob a lei. Para resgatar os que estavam sob a lei, a fim de que recebêssemos a adoção de filhos.",
+          "hookNote": "Somos filhos e herdeiros: o Espírito clama Aba, Pai; voltar às observâncias fracas é escravidão.",
+          "centralInsight": "Somos filhos e herdeiros: o Espírito clama Aba, Pai; voltar às observâncias fracas é escravidão.",
+          "objective": "Viver como filhos"
+        },
+        {
+          "slug": "glc-05-liberdade-para-amar",
+          "title": "Liberdade para amar",
+          "subtitle": "Gálatas 5:13–18",
+          "intro": "A liberdade cristã não serve à carne; serve ao amor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Gálatas 5:13–18",
+          "hookVerse": "Porque vocês, irmãos, foram chamados à liberdade; porém, não usem essa liberdade como oportunidade para a carne; sejam, antes, servos uns dos outros, pelo amor. Porque toda a lei se cumpre em um só preceito: Ame o seu próximo como a si mesmo.",
+          "hookNote": "Fostes chamados à liberdade: pelo amor servi-vos uns aos outros; andai no Espírito.",
+          "centralInsight": "Fostes chamados à liberdade: pelo amor servi-vos uns aos outros; andai no Espírito.",
+          "objective": "Servir no amor"
+        },
+        {
+          "slug": "glc-06-levar-os-fardos",
+          "title": "Levar os fardos",
+          "subtitle": "Gálatas 6:1–10",
+          "intro": "Paulo ensina como restaurar o caído e semear para o Espírito.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Gálatas 6:1–10",
+          "hookVerse": "Irmãos, se alguém for surpreendido em alguma falta, vós, que sois espirituais, deveis restaurá-lo com espírito de brandura, cuidando de vós mesmos, para que não sejais também tentados. Levem as cargas uns dos outros e, assim, estarão cumprindo a lei de Cristo.",
+          "hookNote": "Levai as cargas uns dos outros; o que semeia para o Espírito colherá a vida eterna.",
+          "centralInsight": "Levai as cargas uns dos outros; o que semeia para o Espírito colherá a vida eterna.",
+          "objective": "Carregar cargas com mansidão"
+        },
+        {
+          "slug": "glc-boss-2",
+          "title": "Travessia: Filhos e liberdade",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise a filiação, a liberdade que serve e o cuidado mútuo.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Filhos e liberdade",
+          "hookVerse": "Revise a filiação, a liberdade que serve e o cuidado mútuo.",
+          "hookNote": "Revise a filiação, a liberdade que serve e o cuidado mútuo.",
+          "centralInsight": "Filhos livres servem no amor e semeiam para o Espírito",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

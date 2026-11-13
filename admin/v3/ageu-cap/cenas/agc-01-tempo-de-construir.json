@@ -1,0 +1,926 @@
+{
+  "study": {
+    "slug": "agc-01-tempo-de-construir",
+    "passageRef": "Ageu 1:4–9",
+    "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos. Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado. Assim diz o Senhor dos Exércitos: Reflitam sobre o seu passado. Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+    "passages": [
+      {
+        "ref": "Ageu 1:4–9",
+        "text": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos. Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado. Assim diz o Senhor dos Exércitos: Reflitam sobre o seu passado. Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa."
+      },
+      {
+        "ref": "Ageu 1:2",
+        "text": "Assim fala o Senhor dos Exércitos: Este povo diz: Não veio ainda o tempo, o tempo em que a Casa do Senhor deve ser edificada."
+      },
+      {
+        "ref": "Ageu 1:10–11",
+        "text": "Por isso, os céus se fecharam sobre vocês, retendo o orvalho, e a terra não produz os seus frutos. Porque fiz vir a seca sobre a terra, sobre os montes, sobre o cereal, sobre o vinho, sobre o azeite, e sobre o que a terra produz; assim como sobre os homens, sobre os animais, e sobre todo o trabalho das mãos."
+      }
+    ],
+    "context": "Depois do exílio, o povo em Judá reconstruiu suas casas, mas a Casa do Senhor ficou em ruínas. Por Ageu, o Senhor confronta essa prioridade e chama a construir.",
+    "keyword": "ruínas",
+    "keywordGloss": "O estado da Casa do Senhor enquanto o povo cuida só da própria casa.",
+    "focusQuestion": "O que na sua vida está bem cuidado enquanto a Casa do Senhor fica em segundo plano?",
+    "reflectionPrompts": [
+      "Prioridade invertida",
+      "Considerar os caminhos",
+      "Casa em ruínas"
+    ],
+    "facts": [
+      {
+        "text": "O povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+        "evidenceRef": "Ageu 1:2",
+        "evidenceSpan": "Não veio ainda o tempo"
+      },
+      {
+        "text": "O Senhor pergunta se é tempo de habitar em casas apaineladas enquanto a casa permanece em ruínas.",
+        "evidenceRef": "Ageu 1:4",
+        "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas"
+      },
+      {
+        "text": "O Senhor manda considerar os caminhos.",
+        "evidenceRef": "Ageu 1:5",
+        "evidenceSpan": "Considerai os vossos caminhos"
+      },
+      {
+        "text": "Semear muito e colher pouco marca o esforço sem fruto.",
+        "evidenceRef": "Ageu 1:6",
+        "evidenceSpan": "Semeiam muito, mas colhem pouco"
+      },
+      {
+        "text": "O Senhor manda subir ao monte, trazer madeira e construir a casa.",
+        "evidenceRef": "Ageu 1:8",
+        "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa"
+      },
+      {
+        "text": "A escassez vem porque a casa do Senhor permanece em ruínas enquanto cada um corre para a própria casa.",
+        "evidenceRef": "Ageu 1:9",
+        "evidenceSpan": "por causa da minha casa, que permanece em ruínas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ruínas",
+        "gloss": "Estado da Casa do Senhor enquanto o povo cuida só de si."
+      },
+      {
+        "term": "Considerai",
+        "gloss": "Chamado a olhar com atenção os próprios caminhos."
+      },
+      {
+        "term": "construam",
+        "gloss": "Ação concreta pedida: reedificar a Casa do Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O povo adia a obra da Casa",
+        "evidenceRef": "Ageu 1:2"
+      },
+      {
+        "label": "O Senhor confronta casas boas e templo em ruínas",
+        "evidenceRef": "Ageu 1:4"
+      },
+      {
+        "label": "Esforço sem fruto e chamado a refletir",
+        "evidenceRef": "Ageu 1:5–7"
+      },
+      {
+        "label": "Ordem de construir e razão da escassez",
+        "evidenceRef": "Ageu 1:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Casas apaineladas do povo contrastam com a Casa do Senhor em ruínas.",
+        "marker": "enquanto",
+        "evidenceRef": "Ageu 1:4"
+      },
+      {
+        "kind": "causa",
+        "text": "A escassez acontece por causa da casa do Senhor que permanece em ruínas.",
+        "marker": "por causa",
+        "evidenceRef": "Ageu 1:9"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso os céus se fecham e a terra não produz frutos.",
+        "marker": "Por isso",
+        "evidenceRef": "Ageu 1:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 6:33",
+        "bridge": "Buscar primeiro o Reino",
+        "text": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas."
+      },
+      {
+        "ref": "1 Reis 8:17–18",
+        "bridge": "Desejo de edificar a Casa",
+        "text": "Também Davi, meu pai, propôs em seu coração edificar uma casa ao nome do SENHOR, o Deus de Israel. Mas o Senhor disse a Davi, meu pai: Já que você se propôs em seu coração a edificar uma casa para o meu nome, bem fez em ter tal intenção."
+      },
+      {
+        "ref": "Esdras 5:1–2",
+        "bridge": "Ageu anima a reconstrução",
+        "text": "E Ageu e Zacarias, filho de Ido, profetas, profetizaram aos judeus que estavam em Judá e em Jerusalém, em nome do Deus de Israel, cujo Espírito estava com eles. Então, se levantaram Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e começaram a edificar a Casa de Deus, a qual está em Jerusalém; e com eles os referidos profetas de Deus, que os ajudavam."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O povo só esperava o momento certo; não havia culpa.",
+        "why": "O Senhor confronta a desculpa: há tempo para casas apaineladas, não para a Casa dele."
+      },
+      {
+        "text": "A escassez veio por azar climático, sem ligação com a prioridade.",
+        "why": "Ageu 1:9–10 liga a falta ao descuido com a casa do Senhor."
+      },
+      {
+        "text": "Bastava orar; construir a casa não era necessário.",
+        "why": "Em 1:8 o Senhor manda subir, trazer madeira e construir."
+      }
+    ],
+    "centralInsight": "Enquanto cada um corre para a própria casa, a casa do Senhor fica em ruínas.",
+    "anchorQuestion": "Segundo Ageu 1:9, por que o Senhor soprou sobre o pouco que o povo alcançou?",
+    "relatedVerses": [
+      {
+        "reference": "Mateus 6:33",
+        "reason": "Buscar primeiro o Reino"
+      },
+      {
+        "reference": "1 Reis 8:17–18",
+        "reason": "Desejo de edificar a Casa"
+      },
+      {
+        "reference": "Esdras 5:1–2",
+        "reason": "Ageu anima a reconstrução"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "ageu-cap-sem-agc-01-tempo-de-construir-01",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Ageu 1:2, o povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+      "prompt": "Em Ageu 1:2, o povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+      "cue": "Em Ageu 1:2, o povo diz que ainda não veio o tempo de edificar a Casa do Senhor.",
+      "verseRef": "Ageu 1:2",
+      "passageText": "Assim fala o Senhor dos Exércitos: Este povo diz: Não veio ainda o tempo, o tempo em que a Casa do Senhor deve ser edificada.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Não veio ainda o tempo",
+      "feedbackCorrect": "O povo afirma que o tempo de edificar a Casa ainda não chegou.",
+      "feedbackWrong": {
+        "false": "Releia 1:2: o povo diz que o tempo ainda não veio."
+      },
+      "hint": "Veja o que este povo diz sobre o tempo.",
+      "learningObjective": "Observar a desculpa do povo sobre o tempo.",
+      "evidence": [
+        "Ageu 1:2"
+      ]
+    },
+    {
+      "id": "ageu-cap-sem-agc-01-tempo-de-construir-02",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Ageu 1:4, toque o tipo de casas em que o povo habita.",
+      "prompt": "Em Ageu 1:4, toque o tipo de casas em que o povo habita.",
+      "cue": "Em Ageu 1:4, toque o tipo de casas em que o povo habita.",
+      "verseRef": "Ageu 1:4",
+      "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "casas apaineladas"
+        },
+        {
+          "id": "b",
+          "text": "esta casa"
+        },
+        {
+          "id": "c",
+          "text": "em ruínas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "casas apaineladas",
+      "feedbackCorrect": "O povo habita em casas apaineladas, enquanto a Casa fica em ruínas.",
+      "feedbackWrong": {
+        "b": "\"Esta casa\" é a do Senhor, não o tipo das casas do povo.",
+        "c": "\"Em ruínas\" descreve a Casa do Senhor, não as do povo."
+      },
+      "hint": "Procure o adjetivo das casas do povo.",
+      "learningObjective": "Identificar como o texto descreve as casas do povo.",
+      "evidence": [
+        "Ageu 1:4"
+      ]
+    },
+    {
+      "id": "ageu-cap-sem-agc-01-tempo-de-construir-03",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Ageu 1:6, o que acontece com quem recebe salário?",
+      "prompt": "Segundo Ageu 1:6, o que acontece com quem recebe salário?",
+      "cue": "Segundo Ageu 1:6, o que acontece com quem recebe salário?",
+      "verseRef": "Ageu 1:6",
+      "passageText": "Semeiam muito, mas colhem pouco; comem, mas não se satisfazem; bebem, mas não se saciam; vestem-se, mas ninguém se aquece; e quem recebe salário, recebe-o em um saquitel furado.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guarda o salário em casa segura"
+        },
+        {
+          "id": "b",
+          "text": "Recebe o salário em saquitel furado"
+        },
+        {
+          "id": "c",
+          "text": "Devolve o salário ao templo"
+        },
+        {
+          "id": "d",
+          "text": "Multiplica o salário com juros"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "recebe-o em um saquitel furado",
+      "feedbackCorrect": "O salário entra num saquitel furado: o ganho não segura.",
+      "feedbackWrong": {
+        "a": "O texto não fala de casa segura para o salário.",
+        "c": "O versículo não fala de devolver o salário ao templo.",
+        "d": "O texto descreve perda, não multiplicação."
+      },
+      "hint": "Veja a imagem do saquitel no fim do versículo.",
+      "learningObjective": "Observar a imagem do salário que não permanece.",
+      "evidence": [
+        "Ageu 1:6"
+      ]
+    },
+    {
+      "id": "ageu-cap-sem-agc-01-tempo-de-construir-04",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Ageu 1:8 na ordem do texto.",
+      "prompt": "Monte Ageu 1:8 na ordem do texto.",
+      "cue": "Monte Ageu 1:8 na ordem do texto.",
+      "verseRef": "Ageu 1:8",
+      "passageText": "Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Subam ao monte"
+        },
+        {
+          "id": "b",
+          "text": "tragam madeira e construam a casa"
+        },
+        {
+          "id": "c",
+          "text": "dela me agradarei e serei glorificado"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa",
+      "feedbackCorrect": "A ordem é subir, trazer madeira e construir a casa.",
+      "feedbackWrong": {
+        "default": "Comece pelo monte; a glória fecha o versículo."
+      },
+      "hint": "O versículo começa com o verbo de subir.",
+      "learningObjective": "Reconhecer a sequência do chamado a construir.",
+      "evidence": [
+        "Ageu 1:8"
+      ]
+    },
+    {
+      "id": "ageu-cap-sem-agc-01-tempo-de-construir-05",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Ageu 1:5, que verbo o Senhor usa ao mandar olhar os caminhos?",
+      "prompt": "Em Ageu 1:5, que verbo o Senhor usa ao mandar olhar os caminhos?",
+      "cue": "Em Ageu 1:5, que verbo o Senhor usa ao mandar olhar os caminhos?",
+      "verseRef": "Ageu 1:5",
+      "passageText": "Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos.",
+      "template": "Agora, pois, assim diz o Senhor dos Exércitos: ___ os vossos caminhos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fugi"
+        },
+        {
+          "id": "b",
+          "text": "Considerai"
+        },
+        {
+          "id": "c",
+          "text": "Cantai"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Considerai os vossos caminhos",
+      "feedbackCorrect": "O Senhor manda: Considerai os vossos caminhos.",
+      "feedbackWrong": {
+        "a": "\"Fugi\" não aparece em 1:5; o Senhor pede outra ação.",
+        "c": "\"Cantai\" não aparece em 1:5; o Senhor pede outra ação."
+      },
+      "hint": "É o primeiro verbo do mandato no versículo.",
+      "learningObjective": "Lembrar o verbo do chamado a refletir.",
+      "evidence": [
+        "Ageu 1:5"
+      ]
+    },
+    {
+      "id": "ageu-cap-sem-agc-01-tempo-de-construir-06",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Ageu 1:9 comunica que se liga a este contexto?",
+      "prompt": "O que Ageu 1:9 comunica que se liga a este contexto?",
+      "cue": "O que Ageu 1:9 comunica que se liga a este contexto?",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "passageA": {
+        "ref": "Ageu 1:9",
+        "text": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O povo reconstruiu casas próprias e deixou a Casa do Senhor em ruínas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Prioridade só no próprio lar"
+        },
+        {
+          "id": "b",
+          "text": "Festa no templo restaurado"
+        },
+        {
+          "id": "c",
+          "text": "Viagem de volta ao exílio"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "enquanto cada um de vós corre para a sua própria casa",
+      "feedbackCorrect": "Cada um corre para si enquanto a Casa do Senhor fica em ruínas.",
+      "feedbackWrong": {
+        "b": "O texto fala de ruínas, não de festa no templo.",
+        "c": "O texto não fala de volta ao exílio."
+      },
+      "hint": "Compare a casa do povo com a casa do Senhor.",
+      "learningObjective": "Ligar Ageu 1:9 à prioridade invertida.",
+      "evidence": [
+        "Ageu 1:9"
+      ]
+    },
+    {
+      "id": "ageu-cap-cam-agc-01-tempo-de-construir-01",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Ageu 1:9, a escassez acontece porque a casa do Senhor permanece em ruínas.",
+      "prompt": "Em Ageu 1:9, a escassez acontece porque a casa do Senhor permanece em ruínas.",
+      "cue": "Em Ageu 1:9, a escassez acontece porque a casa do Senhor permanece em ruínas.",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "O Senhor explica a falta: é por causa da casa dele em ruínas.",
+      "feedbackWrong": {
+        "false": "Releia a pergunta \"Por que isso?\" e a resposta em 1:9."
+      },
+      "hint": "Veja a resposta do Senhor à pergunta \"Por que isso?\".",
+      "learningObjective": "Compreender a causa da escassez no texto.",
+      "evidence": [
+        "Ageu 1:9"
+      ]
+    },
+    {
+      "id": "ageu-cap-cam-agc-01-tempo-de-construir-02",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Ageu 1:4, toque a palavra que marca o contraste entre as casas.",
+      "prompt": "Em Ageu 1:4, toque a palavra que marca o contraste entre as casas.",
+      "cue": "Em Ageu 1:4, toque a palavra que marca o contraste entre as casas.",
+      "verseRef": "Ageu 1:4",
+      "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "tempo"
+        },
+        {
+          "id": "b",
+          "text": "enquanto"
+        },
+        {
+          "id": "c",
+          "text": "habitar"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "enquanto esta casa permanece em ruínas",
+      "feedbackCorrect": "\"Enquanto\" marca o contraste: casas boas e Casa em ruínas.",
+      "feedbackWrong": {
+        "a": "\"Tempo\" abre a pergunta, não marca o contraste.",
+        "c": "\"Habitar\" é a ação do povo, não o marcador."
+      },
+      "hint": "É a palavra que liga as duas situações no versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 1:4.",
+      "evidence": [
+        "Ageu 1:4"
+      ]
+    },
+    {
+      "id": "ageu-cap-cam-agc-01-tempo-de-construir-03",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Ageu 1:4–9 relaciona o conforto do povo com a Casa do Senhor?",
+      "prompt": "Como Ageu 1:4–9 relaciona o conforto do povo com a Casa do Senhor?",
+      "cue": "Como Ageu 1:4–9 relaciona o conforto do povo com a Casa do Senhor?",
+      "verseRef": "Ageu 1:4–5",
+      "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O conforto próprio avança e a Casa fica em ruínas"
+        },
+        {
+          "id": "b",
+          "text": "O povo e o templo prosperam juntos"
+        },
+        {
+          "id": "c",
+          "text": "Só o templo tem madeira; as casas não"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor elogia o luxo das casas do povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "casas apaineladas, enquanto esta casa permanece em ruínas",
+      "feedbackCorrect": "O conforto próprio avança enquanto a Casa do Senhor fica abandonada.",
+      "feedbackWrong": {
+        "b": "O texto mostra contraste, não prosperidade conjunta.",
+        "c": "O Senhor manda trazer madeira para a Casa, não para as casas.",
+        "d": "O Senhor confronta, não elogia o luxo."
+      },
+      "hint": "Compare as casas do povo com a casa mencionada depois.",
+      "learningObjective": "Relacionar o conforto do povo ao abandono da Casa.",
+      "evidence": [
+        "Ageu 1:4–5"
+      ]
+    },
+    {
+      "id": "ageu-cap-cam-agc-01-tempo-de-construir-04",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como se move o argumento de Ageu 1:4–9?",
+      "prompt": "Como se move o argumento de Ageu 1:4–9?",
+      "cue": "Como se move o argumento de Ageu 1:4–9?",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor confronta casas boas e templo em ruínas"
+        },
+        {
+          "id": "b",
+          "text": "Manda considerar os caminhos e construir a casa"
+        },
+        {
+          "id": "c",
+          "text": "Explica a escassez pelo abandono da Casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "Confronta o conforto, manda refletir, ordena construir e explica a falta.",
+      "feedbackWrong": {
+        "default": "Confronto primeiro; a razão da escassez vem por último."
+      },
+      "hint": "Comece pelo confronto das casas.",
+      "learningObjective": "Seguir o movimento do argumento no trecho.",
+      "evidence": [
+        "Ageu 1:4–9"
+      ]
+    },
+    {
+      "id": "ageu-cap-cam-agc-01-tempo-de-construir-05",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Ageu 1:9, que verbo descreve a ação do Senhor sobre o pouco alcançado?",
+      "prompt": "Em Ageu 1:9, que verbo descreve a ação do Senhor sobre o pouco alcançado?",
+      "cue": "Em Ageu 1:9, que verbo descreve a ação do Senhor sobre o pouco alcançado?",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "template": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu ___ sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "options": [
+        {
+          "id": "a",
+          "text": "guardei"
+        },
+        {
+          "id": "b",
+          "text": "soprei"
+        },
+        {
+          "id": "c",
+          "text": "multipliquei"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "eu soprei sobre ele",
+      "feedbackCorrect": "O Senhor diz: \"eu soprei sobre ele\" — o pouco não ficou.",
+      "feedbackWrong": {
+        "a": "\"Guardei\" sugeriria preservação; o texto fala de soprar sobre o pouco.",
+        "c": "\"Multipliquei\" sugeriria aumento; o texto fala de soprar sobre o pouco."
+      },
+      "hint": "É o verbo da ação do Senhor sobre o que trouxeram.",
+      "learningObjective": "Lembrar o verbo que marca a ação do Senhor na escassez.",
+      "evidence": [
+        "Ageu 1:9"
+      ]
+    },
+    {
+      "id": "ageu-cap-cam-agc-01-tempo-de-construir-06",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Ageu 1:9 a Mateus 6:33?",
+      "prompt": "O que liga Ageu 1:9 a Mateus 6:33?",
+      "cue": "O que liga Ageu 1:9 a Mateus 6:33?",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "passageA": {
+        "ref": "Ageu 1:9",
+        "text": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa."
+      },
+      "passageB": {
+        "ref": "Mateus 6:33",
+        "text": "Busquem, pois, em primeiro lugar, o reino de Deus e a sua justiça, e todas essas coisas lhes serão acrescentadas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Buscar primeiro o de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Acumular madeira e ouro"
+        },
+        {
+          "id": "c",
+          "text": "Adiar toda decisão de fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "Nos dois textos, buscar primeiro o que é de Deus muda o resto.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos ensina acumular madeira e ouro como prioridade.",
+        "c": "Os textos chamam a agir com a prioridade certa, não a adiar."
+      },
+      "hint": "Compare o que fica em primeiro lugar.",
+      "learningObjective": "Relacionar a prioridade da Casa ao buscar primeiro o Reino.",
+      "evidence": [
+        "Ageu 1:9",
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "ageu-cap-pro-agc-01-tempo-de-construir-01",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Ageu 1:4–9, o Senhor aceita que a Casa espere enquanto o povo cuida só das próprias casas.",
+      "prompt": "Em Ageu 1:4–9, o Senhor aceita que a Casa espere enquanto o povo cuida só das próprias casas.",
+      "cue": "Em Ageu 1:4–9, o Senhor aceita que a Casa espere enquanto o povo cuida só das próprias casas.",
+      "verseRef": "Ageu 1:4–5",
+      "passageText": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas? Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "É tempo de vocês habitar em casas apaineladas, enquanto esta casa permanece em ruínas?",
+      "feedbackCorrect": "A pergunta retórica confronta a prioridade; o Senhor não aceita o adiamento.",
+      "feedbackWrong": {
+        "true": "A pergunta em 1:4 confronta, não autoriza, o adiamento."
+      },
+      "hint": "Leia o tom da pergunta em 1:4.",
+      "learningObjective": "Interpretar o confronto do Senhor sobre prioridades.",
+      "evidence": [
+        "Ageu 1:4–5"
+      ]
+    },
+    {
+      "id": "ageu-cap-pro-agc-01-tempo-de-construir-02",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Ageu 1:9, toque o trecho que mostra cada um correndo para si.",
+      "prompt": "Em Ageu 1:9, toque o trecho que mostra cada um correndo para si.",
+      "cue": "Em Ageu 1:9, toque o trecho que mostra cada um correndo para si.",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "options": [
+        {
+          "id": "a",
+          "text": "própria casa"
+        },
+        {
+          "id": "b",
+          "text": "minha casa"
+        },
+        {
+          "id": "c",
+          "text": "pouco alcançastes"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "cada um de vós corre para a sua própria casa",
+      "feedbackCorrect": "Cada um corre para a própria casa: prioridade centrada em si.",
+      "feedbackWrong": {
+        "b": "\"Minha casa\" é a do Senhor, não o destino da corrida do povo.",
+        "c": "\"Pouco alcançastes\" descreve o resultado, não a corrida."
+      },
+      "hint": "Procure o verbo de correr no fim do versículo.",
+      "learningObjective": "Sustentar com o texto a prioridade centrada em si.",
+      "evidence": [
+        "Ageu 1:9"
+      ]
+    },
+    {
+      "id": "ageu-cap-pro-agc-01-tempo-de-construir-03",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Ageu 1:4–9 sustenta sobre a escassez do povo?",
+      "prompt": "Que leitura Ageu 1:4–9 sustenta sobre a escassez do povo?",
+      "cue": "Que leitura Ageu 1:4–9 sustenta sobre a escassez do povo?",
+      "verseRef": "Ageu 1:9–10",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa. Por isso, os céus se fecharam sobre vocês, retendo o orvalho, e a terra não produz os seus frutos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A escassez denuncia o abandono da Casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "A escassez prova que o Senhor rejeitou Israel para sempre"
+        },
+        {
+          "id": "c",
+          "text": "A escassez não tem relação com as escolhas do povo"
+        },
+        {
+          "id": "d",
+          "text": "A escassez vem só de inimigos externos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "por causa da minha casa, que permanece em ruínas",
+      "feedbackCorrect": "A falta está ligada ao abandono da Casa do Senhor, não ao acaso.",
+      "feedbackWrong": {
+        "b": "O Senhor chama a construir e se agradar da Casa, não anuncia rejeição final.",
+        "c": "O texto liga a falta às prioridades do povo.",
+        "d": "O texto aponta a casa em ruínas e os céus fechados, não só inimigos."
+      },
+      "hint": "Compare cada opção com a resposta \"Por que isso?\".",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a escassez.",
+      "evidence": [
+        "Ageu 1:9–10"
+      ]
+    },
+    {
+      "id": "ageu-cap-pro-agc-01-tempo-de-construir-04",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência mostra o chamado bíblico a priorizar a Casa de Deus?",
+      "prompt": "Qual sequência mostra o chamado bíblico a priorizar a Casa de Deus?",
+      "cue": "Qual sequência mostra o chamado bíblico a priorizar a Casa de Deus?",
+      "verseRef": "Ageu 1:8–9",
+      "passageText": "Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR. Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ageu manda construir a Casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Salomão lembra o desejo de edificar a Casa"
+        },
+        {
+          "id": "c",
+          "text": "Jesus manda buscar primeiro o Reino de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "construam a casa; dela me agradarei e serei glorificado",
+      "feedbackCorrect": "Ageu manda construir; a Casa desejada ecoa em Salomão; Jesus manda buscar primeiro o Reino.",
+      "feedbackWrong": {
+        "default": "Siga: Ageu 1:8, 1 Reis 8 e Mateus 6:33."
+      },
+      "hint": "Parta de Ageu e avance na Escritura.",
+      "learningObjective": "Ver o chamado de Ageu no fio bíblico da prioridade.",
+      "evidence": [
+        "Ageu 1:8",
+        "1 Reis 8:17–18",
+        "Mateus 6:33"
+      ]
+    },
+    {
+      "id": "ageu-cap-pro-agc-01-tempo-de-construir-05",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Ageu 1:9, que palavra descreve o estado da Casa do Senhor?",
+      "prompt": "Em Ageu 1:9, que palavra descreve o estado da Casa do Senhor?",
+      "cue": "Em Ageu 1:9, que palavra descreve o estado da Casa do Senhor?",
+      "verseRef": "Ageu 1:9",
+      "passageText": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ruínas, enquanto cada um de vós corre para a sua própria casa.",
+      "template": "Olhastes para muito, mas pouco alcançastes; e quando o trouxestes para casa, eu soprei sobre ele. Por que isso? —diz o SENHOR dos Exércitos: por causa da minha casa, que permanece em ___, enquanto cada um de vós corre para a sua própria casa.",
+      "options": [
+        {
+          "id": "a",
+          "text": "festa"
+        },
+        {
+          "id": "b",
+          "text": "ruínas"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "minha casa, que permanece em ruínas",
+      "feedbackCorrect": "A Casa permanece em ruínas: esse é o estado que o Senhor denuncia.",
+      "feedbackWrong": {
+        "a": "\"Festa\" não descreve a Casa em 1:9.",
+        "c": "\"Paz\" não descreve a Casa em 1:9."
+      },
+      "hint": "É a palavra que descreve o estado da casa dele.",
+      "learningObjective": "Lembrar o termo que carrega o sentido do abandono.",
+      "evidence": [
+        "Ageu 1:9"
+      ]
+    },
+    {
+      "id": "ageu-cap-pro-agc-01-tempo-de-construir-06",
+      "trail": "ageu-cap",
+      "section": "agc-01-tempo-de-construir",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Ageu 1:8 a Esdras 5:1–2?",
+      "prompt": "O que liga Ageu 1:8 a Esdras 5:1–2?",
+      "cue": "O que liga Ageu 1:8 a Esdras 5:1–2?",
+      "verseRef": "Ageu 1:8",
+      "passageText": "Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR.",
+      "passageA": {
+        "ref": "Ageu 1:8",
+        "text": "Subam ao monte, tragam madeira e construam a casa; dela me agradarei e serei glorificado, diz o SENHOR."
+      },
+      "passageB": {
+        "ref": "Esdras 5:1–2",
+        "text": "E Ageu e Zacarias, filho de Ido, profetas, profetizaram aos judeus que estavam em Judá e em Jerusalém, em nome do Deus de Israel, cujo Espírito estava com eles. Então, se levantaram Zorobabel, filho de Sealtiel, e Jesua, filho de Jozadaque, e começaram a edificar a Casa de Deus, a qual está em Jerusalém; e com eles os referidos profetas de Deus, que os ajudavam."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Profeta anima a reconstrução"
+        },
+        {
+          "id": "b",
+          "text": "Fim definitivo do templo"
+        },
+        {
+          "id": "c",
+          "text": "Exílio forçado a Babilônia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Subam ao monte, tragam madeira e construam a casa",
+      "feedbackCorrect": "Em Esdras, Ageu anima a retomada da obra; em 1:8 o Senhor manda construir.",
+      "feedbackWrong": {
+        "b": "Os textos apontam construção, não fim do templo.",
+        "c": "O cenário é de retorno e obra, não de novo exílio."
+      },
+      "hint": "Veja o papel de Ageu na reconstrução.",
+      "learningObjective": "Ligar o mandato de construir à obra retomada em Esdras.",
+      "evidence": [
+        "Ageu 1:8",
+        "Esdras 5:1–2"
+      ]
+    }
+  ]
+}

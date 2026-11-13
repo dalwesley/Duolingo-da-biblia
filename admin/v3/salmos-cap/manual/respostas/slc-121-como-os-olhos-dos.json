@@ -1,0 +1,693 @@
+{
+  "study": {
+    "passageRef": "Salmos 123:1–4",
+    "passages": [
+      {
+        "ref": "Salmos 123:1–4"
+      }
+    ],
+    "context": "A ti levanto os olhos; como os olhos dos servos à mão dos seus senhores, assim os nossos a Deus.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Como os olhos dos servos",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "A ti elevo os meus olhos.",
+        "evidenceRef": "Salmos 123:1",
+        "evidenceSpan": "A ti elevo os meus olhos"
+      },
+      {
+        "text": "Assim como os olhos dos servos estão fixos.",
+        "evidenceRef": "Salmos 123:2",
+        "evidenceSpan": "Assim como os olhos dos servos estão fixos"
+      },
+      {
+        "text": "Tem misericórdia de nós.",
+        "evidenceRef": "Salmos 123:3",
+        "evidenceSpan": "Tem misericórdia de nós"
+      },
+      {
+        "text": "A nossa alma está saturada da zombaria daqueles.",
+        "evidenceRef": "Salmos 123:4",
+        "evidenceSpan": "A nossa alma está saturada da zombaria daqueles"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "elevo",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ti elevo os meus olhos",
+        "evidenceRef": "Salmos 123:1"
+      },
+      {
+        "label": "Assim como os olhos dos servos",
+        "evidenceRef": "Salmos 123:2"
+      },
+      {
+        "label": "Tem misericórdia de nós ó senhor",
+        "evidenceRef": "Salmos 123:3"
+      },
+      {
+        "label": "A nossa alma está saturada da",
+        "evidenceRef": "Salmos 123:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 123:2"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 123:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças"
+      },
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é pastor"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Mera misericórdia pedida sob o desprezo dos arrogantes."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Mera misericórdia pedida sob o desprezo dos arrogantes.",
+    "anchorQuestion": "O que Salmos 123:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 123:1, a ti elevo os meus olhos.",
+      "verseRef": "Salmos 123:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "A ti elevo os meus olhos",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 123:1 afirma.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 123:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 123:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "elevo"
+        },
+        {
+          "id": "b",
+          "text": "meus"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "elevo",
+      "feedbackCorrect": "O versículo destaca «elevo».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 123:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 123:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tem misericórdia de nós"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tem misericórdia de nós",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 123:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 123:1 na ordem do texto.",
+      "verseRef": "Salmos 123:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ti"
+        },
+        {
+          "id": "b",
+          "text": "elevo"
+        },
+        {
+          "id": "c",
+          "text": "meus olhos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A ti",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 123:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 123:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "nossa"
+        },
+        {
+          "id": "b",
+          "text": "elevo"
+        },
+        {
+          "id": "c",
+          "text": "meus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nossa",
+      "feedbackCorrect": "A palavra do versículo é «nossa».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 123:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 123:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 123:1",
+      "passageA": {
+        "ref": "Salmos 123:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A ti levanto os olhos; como os olhos dos servos à mão dos seus senhores, assim os nossos a Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 123:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 123:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 123:2 afirma.",
+      "evidence": [
+        "Salmos 123:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 123:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 123:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "Assim"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 123:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 123:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 123:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A nossa alma está saturada da zombaria daqueles",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 123:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 123:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ti elevo os meus olhos"
+        },
+        {
+          "id": "b",
+          "text": "Assim como os olhos dos servos"
+        },
+        {
+          "id": "c",
+          "text": "Tem misericórdia de nós ó senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 123:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 123:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "elevo"
+        },
+        {
+          "id": "c",
+          "text": "meus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "misericórdia",
+      "feedbackCorrect": "A palavra do versículo é «misericórdia».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 123:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 123:1 a Filipenses 4:6.",
+      "verseRef": "Salmos 123:1",
+      "passageA": {
+        "ref": "Salmos 123:1"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração com ações de graças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 123:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 123:4 afirma.",
+      "evidence": [
+        "Salmos 123:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 123:4, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 123:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "alma"
+        },
+        {
+          "id": "b",
+          "text": "nossa"
+        },
+        {
+          "id": "c",
+          "text": "está"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "alma",
+      "feedbackCorrect": "O versículo destaca «alma».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 123:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 123:4, o que o texto apresenta com clareza (pro).",
+      "verseRef": "Salmos 123:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A nossa alma está saturada da zombaria daqueles",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 123:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 123:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 123:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 123:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "meus"
+        },
+        {
+          "id": "b",
+          "text": "elevo"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "meus",
+      "feedbackCorrect": "A palavra do versículo é «meus».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 123:1 a Salmos 23:1.",
+      "verseRef": "Salmos 123:1",
+      "passageA": {
+        "ref": "Salmos 123:1"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 123:1"
+      ]
+    }
+  ]
+}

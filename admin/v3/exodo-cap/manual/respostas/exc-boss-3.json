@@ -1,0 +1,925 @@
+{
+  "study": {
+    "passageRef": "Êxodo 12:21–28",
+    "passages": [
+      {
+        "ref": "Êxodo 12:21–28"
+      },
+      {
+        "ref": "Êxodo 13:17–22"
+      },
+      {
+        "ref": "Êxodo 14:1–12"
+      },
+      {
+        "ref": "Êxodo 15:1–11"
+      }
+    ],
+    "context": "Esta Travessia revisa o sangue na porta, a coluna, o medo no mar e o cântico ao Senhor.",
+    "keyword": "Libertação",
+    "keywordGloss": "O Senhor liberta pelo sangue, guia e salva no mar; o povo canta.",
+    "focusQuestion": "Qual sinal da libertação do Senhor você precisa lembrar hoje?",
+    "reflectionPrompts": [
+      "Sangue na porta",
+      "Coluna guia",
+      "Cântico no mar"
+    ],
+    "facts": [
+      {
+        "text": "O sangue na porta faz o Senhor passar por cima.",
+        "evidenceRef": "Êxodo 12:23",
+        "evidenceSpan": "quando vir o sangue na verga da porta"
+      },
+      {
+        "text": "O Senhor ia à frente em coluna de nuvem e de fogo.",
+        "evidenceRef": "Êxodo 13:21",
+        "evidenceSpan": "o Senhor ia à frente deles, durante o dia, em uma coluna de nuvem"
+      },
+      {
+        "text": "Israel temeu muito ao ver os egípcios e clamou ao Senhor.",
+        "evidenceRef": "Êxodo 14:10",
+        "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor"
+      },
+      {
+        "text": "Moisés e Israel entoaram cântico ao Senhor.",
+        "evidenceRef": "Êxodo 15:1",
+        "evidenceSpan": "Moisés e os filhos de Israel entoaram este cântico ao Senhor"
+      },
+      {
+        "text": "O Senhor é a força e o cântico; Ele foi por salvação.",
+        "evidenceRef": "Êxodo 15:2",
+        "evidenceSpan": "O Senhor é a minha força e o meu cântico; Ele me foi por salvação"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sangue",
+        "gloss": "Sinal na porta que faz o Senhor passar por cima."
+      },
+      {
+        "term": "coluna",
+        "gloss": "Nuvem de dia e fogo de noite à frente do povo."
+      },
+      {
+        "term": "salvação",
+        "gloss": "O Senhor foi por salvação no cântico."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sangue na porta e Páscoa",
+        "evidenceRef": "Êxodo 12:21–28"
+      },
+      {
+        "label": "Coluna guia pelo deserto",
+        "evidenceRef": "Êxodo 13:17–22"
+      },
+      {
+        "label": "Medo entre o mar e o exército",
+        "evidenceRef": "Êxodo 14:1–12"
+      },
+      {
+        "label": "Cântico ao Senhor no mar",
+        "evidenceRef": "Êxodo 15:1–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O Senhor passará; porém, ao ver o sangue, passará por cima.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 12:23"
+      },
+      {
+        "kind": "causa",
+        "text": "Cantam porque o Senhor triunfou gloriosamente.",
+        "marker": "porque",
+        "evidenceRef": "Êxodo 15:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Israel temeu e clamou ao Senhor.",
+        "marker": null,
+        "evidenceRef": "Êxodo 14:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 5:7",
+        "bridge": "Cristo nossa páscoa"
+      },
+      {
+        "ref": "Hebreus 11:29",
+        "bridge": "Pela fé atravessaram"
+      },
+      {
+        "ref": "Apocalipse 15:3",
+        "bridge": "Cântico de Moisés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A coluna abandonou o povo à noite.",
+        "why": "Havia coluna de fogo à noite."
+      },
+      {
+        "text": "O cântico celebra a força de Israel.",
+        "why": "O Senhor é a força e a salvação."
+      },
+      {
+        "text": "Sem sangue na porta o Destruidor não entraria.",
+        "why": "O sangue é o sinal para o Senhor passar por cima."
+      }
+    ],
+    "centralInsight": "O Senhor liberta e merece o cântico",
+    "anchorQuestion": "O que o Senhor usou na porta para passar por cima das casas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O Senhor ia à frente do povo em coluna de nuvem de dia e de fogo à noite.",
+      "verseRef": "Êxodo 13:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "durante o dia, em uma coluna de nuvem",
+      "feedbackCorrect": "Nuvem de dia e fogo à noite guiam o povo.",
+      "feedbackWrong": {
+        "false": "Releia a coluna de nuvem e de fogo."
+      },
+      "hint": "Veja como o Senhor ia à frente.",
+      "learningObjective": "Observar a coluna guia.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 12:23, toque o sinal que o Senhor verá na porta.",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "Destruidor"
+        },
+        {
+          "id": "c",
+          "text": "egípcios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando vir o sangue na verga da porta",
+      "feedbackCorrect": "O sinal é o sangue na verga da porta.",
+      "feedbackWrong": {
+        "b": "O Destruidor é quem é impedido.",
+        "c": "Egípcios são feridos; o sinal é sangue."
+      },
+      "hint": "Veja o que Ele verá na porta.",
+      "learningObjective": "Identificar o sangue.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 14:10, o que Israel fez ao ver os egípcios?",
+      "verseRef": "Êxodo 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temeram muito e clamaram ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Riram do exército"
+        },
+        {
+          "id": "c",
+          "text": "Voltaram ao trabalho"
+        },
+        {
+          "id": "d",
+          "text": "Construiu um altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor",
+      "feedbackCorrect": "Temor e clamor marcam a cena.",
+      "feedbackWrong": {
+        "b": "Não há riso.",
+        "c": "Não voltam ao trabalho aqui.",
+        "d": "O gesto é clamar."
+      },
+      "hint": "Leia a reação do povo.",
+      "learningObjective": "Observar o medo no mar.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 15:1 na ordem do texto.",
+      "verseRef": "Êxodo 15:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, Moisés e os filhos de Israel entoaram este cântico ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "e disseram: Cantarei ao Senhor"
+        },
+        {
+          "id": "c",
+          "text": "porque triunfou gloriosamente"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei ao Senhor, porque triunfou gloriosamente",
+      "feedbackCorrect": "Cântico, declaração e motivo na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece por Então, Moisés."
+      },
+      "hint": "O versículo começa com Então.",
+      "learningObjective": "Reconhecer a ordem do cântico.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 15:2, o que o Senhor foi para o cantor?",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvação"
+        },
+        {
+          "id": "b",
+          "text": "derrota"
+        },
+        {
+          "id": "c",
+          "text": "exílio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele me foi por salvação",
+      "feedbackCorrect": "Ele me foi por salvação.",
+      "feedbackWrong": {
+        "b": "Não é derrota.",
+        "c": "O termo é salvação."
+      },
+      "hint": "Veja o que Ele foi por.",
+      "learningObjective": "Lembrar a salvação.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 12:23 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 12:23",
+      "passageA": {
+        "ref": "Êxodo 12:23"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A libertação começa com o sangue na porta e termina em cântico."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue protege a casa"
+        },
+        {
+          "id": "b",
+          "text": "Fuga sem sinal"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando vir o sangue na verga da porta",
+      "feedbackCorrect": "O sangue na porta protege a casa.",
+      "feedbackWrong": {
+        "b": "Há sinal de sangue.",
+        "c": "Não há aliança com Faraó."
+      },
+      "hint": "Compare o sinal e a libertação.",
+      "learningObjective": "Ligar sangue e livramento.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 13:21, toque o que guia de noite.",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "nuvem"
+        },
+        {
+          "id": "c",
+          "text": "caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "à noite, em uma coluna de fogo",
+      "feedbackCorrect": "À noite a coluna é de fogo.",
+      "feedbackWrong": {
+        "b": "Nuvem é de dia.",
+        "c": "\"caminho\" é o percurso; o guia noturno é fogo."
+      },
+      "hint": "Veja a coluna da noite.",
+      "learningObjective": "Identificar o fogo noturno.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 12:23 na ordem do trecho central.",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o Senhor passará para ferir os egípcios"
+        },
+        {
+          "id": "b",
+          "text": "porém, quando vir o sangue na verga da porta"
+        },
+        {
+          "id": "c",
+          "text": "o Senhor passará por aquela porta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "porém, quando vir o sangue na verga da porta",
+      "feedbackCorrect": "Ameaça, porém e proteção na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pelo passar para ferir."
+      },
+      "hint": "O contraste começa em porém.",
+      "learningObjective": "Reconhecer a ordem da Páscoa.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 15:1, Israel canta porque o inimigo triunfou gloriosamente.",
+      "verseRef": "Êxodo 15:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Cantarei ao Senhor, porque triunfou gloriosamente",
+      "feedbackCorrect": "Quem triunfou é o Senhor, não o inimigo.",
+      "feedbackWrong": {
+        "true": "Releia: o Senhor triunfou gloriosamente."
+      },
+      "hint": "Quem é o sujeito de triunfou?",
+      "learningObjective": "Compreender a causa do cântico.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 12:23, toque a palavra que marca o contraste com o ferir.",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "passará"
+        },
+        {
+          "id": "c",
+          "text": "porta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, quando vir o sangue",
+      "feedbackCorrect": "\"Porém\" introduz a proteção pelo sangue.",
+      "feedbackWrong": {
+        "b": "\"passará\" aparece nos dois lados.",
+        "c": "\"porta\" é o lugar; o contraste é porém."
+      },
+      "hint": "Procure a palavra do contraste.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 12:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 13:21–22 liga a presença do Senhor ao caminho do povo?",
+      "verseRef": "Êxodo 13:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "A coluna não se afasta: guia dia e noite"
+        },
+        {
+          "id": "b",
+          "text": "A coluna some ao entardecer"
+        },
+        {
+          "id": "c",
+          "text": "O povo guia a si mesmo"
+        },
+        {
+          "id": "d",
+          "text": "Só Moisés vê a coluna"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca se afastou do povo a nuvem durante o dia",
+      "feedbackCorrect": "A coluna permanece: nuvem e fogo sem se afastar.",
+      "feedbackWrong": {
+        "b": "Há fogo à noite.",
+        "c": "O Senhor guia.",
+        "d": "A coluna vai à frente do povo."
+      },
+      "hint": "Veja se a coluna se afasta.",
+      "learningObjective": "Relacionar presença e caminho.",
+      "evidence": [
+        "Êxodo 13:21",
+        "Êxodo 13:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a libertação nesta Travessia?",
+      "verseRef": "Êxodo 12:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue na porta e Páscoa"
+        },
+        {
+          "id": "b",
+          "text": "Coluna guia no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Cântico após o mar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "quando vir o sangue na verga da porta",
+      "feedbackCorrect": "Da Páscoa à coluna e ao cântico.",
+      "feedbackWrong": {
+        "default": "Comece pelo sangue na porta."
+      },
+      "hint": "Siga Páscoa, guia e cântico.",
+      "learningObjective": "Compreender o arco da etapa.",
+      "evidence": [
+        "Êxodo 12:23",
+        "Êxodo 13:21",
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 15:1, que palavra marca a causa do cântico?",
+      "verseRef": "Êxodo 15:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "jamais"
+        },
+        {
+          "id": "c",
+          "text": "talvez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei ao Senhor, porque triunfou",
+      "feedbackCorrect": "\"Porque\" introduz o triunfo do Senhor.",
+      "feedbackWrong": {
+        "b": "O marcador é porque.",
+        "c": "O texto usa porque."
+      },
+      "hint": "Veja a palavra antes de triunfou.",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 15:1 a Apocalipse 15:3?",
+      "verseRef": "Êxodo 15:1",
+      "passageA": {
+        "ref": "Êxodo 15:1"
+      },
+      "passageB": {
+        "ref": "Apocalipse 15:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cântico de Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Queixa no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Bezerro de ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entoaram este cântico ao Senhor",
+      "feedbackCorrect": "Apocalipse retoma o cântico de Moisés.",
+      "feedbackWrong": {
+        "b": "O elo é o cântico.",
+        "c": "O bezerro não está neste elo."
+      },
+      "hint": "Que cântico o Apocalipse nomeia?",
+      "learningObjective": "Relacionar Êxodo e Apocalipse.",
+      "evidence": [
+        "Êxodo 15:1",
+        "Apocalipse 15:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 14:10, toque o verbo que mostra o clamor de Israel.",
+      "verseRef": "Êxodo 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamaram"
+        },
+        {
+          "id": "b",
+          "text": "egípcios"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os filhos de Israel clamaram ao Senhor",
+      "feedbackCorrect": "Eles clamaram ao Senhor.",
+      "feedbackWrong": {
+        "b": "Egípcios são a ameaça.",
+        "c": "Olhos veem; o verbo é clamaram."
+      },
+      "hint": "Veja o que fizeram ao Senhor.",
+      "learningObjective": "Identificar o clamor.",
+      "evidence": [
+        "Êxodo 14:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a lógica do livramento no mar?",
+      "verseRef": "Êxodo 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel teme ao ver o exército"
+        },
+        {
+          "id": "b",
+          "text": "O povo clama ao Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Depois vem o cântico da salvação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor",
+      "feedbackCorrect": "Medo, clamor e cântico formam o arco.",
+      "feedbackWrong": {
+        "default": "Comece pelo temor."
+      },
+      "hint": "Siga temor, clamor e cântico.",
+      "learningObjective": "Compreender a lógica do livramento.",
+      "evidence": [
+        "Êxodo 14:10",
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 12–15 sustenta que o Senhor liberta pelo sangue, guia e merece o cântico.",
+      "verseRef": "Êxodo 15:1–2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ele me foi por salvação",
+      "feedbackCorrect": "Sangue, coluna e cântico contam a mesma libertação.",
+      "feedbackWrong": {
+        "false": "O arco une Páscoa, guia e salvação cantada."
+      },
+      "hint": "Una sangue, coluna e cântico.",
+      "learningObjective": "Interpretar a libertação completa.",
+      "evidence": [
+        "Êxodo 12:23",
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 15:2, toque o trecho que sustenta a força do cantor.",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "força"
+        },
+        {
+          "id": "b",
+          "text": "pai"
+        },
+        {
+          "id": "c",
+          "text": "louvarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor é a minha força e o meu cântico",
+      "feedbackCorrect": "O Senhor é a força e o cântico.",
+      "feedbackWrong": {
+        "b": "\"pai\" aparece depois.",
+        "c": "\"louvarei\" é a resposta; o trecho é força."
+      },
+      "hint": "Veja o que Ele é primeiro.",
+      "learningObjective": "Sustentar o centro do cântico.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura esta Travessia sustenta sobre a libertação?",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor liberta e merece o cântico"
+        },
+        {
+          "id": "b",
+          "text": "Israel se salvou sozinho"
+        },
+        {
+          "id": "c",
+          "text": "A coluna foi só símbolo vazio"
+        },
+        {
+          "id": "d",
+          "text": "O sangue na porta não importa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor é a minha força e o meu cântico",
+      "feedbackCorrect": "Do sangue ao cântico, o Senhor é o libertador.",
+      "feedbackWrong": {
+        "b": "O cântico aponta para o Senhor.",
+        "c": "A coluna guia de fato.",
+        "d": "O sangue é o sinal da Páscoa."
+      },
+      "hint": "Una os quatro blocos da etapa.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a libertação à Escritura?",
+      "verseRef": "Êxodo 15:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel canta a salvação no mar"
+        },
+        {
+          "id": "b",
+          "text": "A fé atravessa o mar"
+        },
+        {
+          "id": "c",
+          "text": "Apocalipse retoma o cântico de Moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "entoaram este cântico ao Senhor",
+      "feedbackCorrect": "Do cântico à fé e ao Apocalipse.",
+      "feedbackWrong": {
+        "default": "Comece pelo cântico no mar."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver a libertação ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 15:1",
+        "Hebreus 11:29",
+        "Apocalipse 15:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 15:2, que termo nomeia o louvor paralelo à força?",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "cântico"
+        },
+        {
+          "id": "b",
+          "text": "exército"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "minha força e o meu cântico",
+      "feedbackCorrect": "Força e cântico nomeiam o Senhor.",
+      "feedbackWrong": {
+        "b": "Não é exército.",
+        "c": "O termo é cântico."
+      },
+      "hint": "Veja o paralelo de força.",
+      "learningObjective": "Lembrar o termo do louvor.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 14:10 a Hebreus 11:29?",
+      "verseRef": "Êxodo 14:10",
+      "passageA": {
+        "ref": "Êxodo 14:10"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé no mar"
+        },
+        {
+          "id": "b",
+          "text": "Suborno no juízo"
+        },
+        {
+          "id": "c",
+          "text": "Construção do bezerro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "temeram muito e os filhos de Israel clamaram ao Senhor",
+      "feedbackCorrect": "Do clamor no mar à fé que atravessa.",
+      "feedbackWrong": {
+        "b": "O elo é o mar.",
+        "c": "O bezerro não é o tema."
+      },
+      "hint": "Compare medo, fé e travessia.",
+      "learningObjective": "Ligar o mar a Hebreus.",
+      "evidence": [
+        "Êxodo 14:10",
+        "Hebreus 11:29"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 13:21, toque o que guia durante o dia.",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "nuvem"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "durante o dia, em uma coluna de nuvem",
+      "feedbackCorrect": "De dia a coluna é de nuvem.",
+      "feedbackWrong": {
+        "b": "Fogo é à noite.",
+        "c": "\"Senhor\" é quem guia; de dia a coluna é nuvem."
+      },
+      "hint": "Veja a coluna do dia.",
+      "learningObjective": "Sustentar a guia diurna.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual fio une Páscoa, guia e cântico?",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sangue marca a casa no Egito"
+        },
+        {
+          "id": "b",
+          "text": "A coluna conduz o povo"
+        },
+        {
+          "id": "c",
+          "text": "O cântico confessa a salvação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele me foi por salvação",
+      "feedbackCorrect": "Páscoa, guia e cântico confessam o mesmo Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo sangue; o cântico fecha."
+      },
+      "hint": "Siga Páscoa, coluna e cântico.",
+      "learningObjective": "Ver o fio da libertação.",
+      "evidence": [
+        "Êxodo 12:23",
+        "Êxodo 13:21",
+        "Êxodo 15:2"
+      ]
+    }
+  ]
+}

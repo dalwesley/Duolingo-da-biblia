@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 4:12–24",
+    "passages": [
+      {
+        "ref": "Juízes 4:12–24"
+      }
+    ],
+    "context": "Débora envia Baraque; o Senhor derrota Sísera. Sísera foge à tenda de Jael, e ela completa a vitória com a estaca.",
+    "keyword": "entregou",
+    "keywordGloss": "O Senhor põe o inimigo nas mãos do seu povo.",
+    "focusQuestion": "Onde o Senhor já saiu à sua frente e você ainda hesita?",
+    "reflectionPrompts": [
+      "Senhor à frente",
+      "Fuga a pé",
+      "Estaca na tenda"
+    ],
+    "facts": [
+      {
+        "text": "Sísera tinha novecentos carros de ferro.",
+        "evidenceRef": "Juízes 4:13",
+        "evidenceSpan": "novecentos carros de ferro"
+      },
+      {
+        "text": "Débora diz que o Senhor entregou Sísera.",
+        "evidenceRef": "Juízes 4:14",
+        "evidenceSpan": "o Senhor entregou a Sísera em suas mãos"
+      },
+      {
+        "text": "O Senhor derrotou Sísera diante de Baraque.",
+        "evidenceRef": "Juízes 4:15",
+        "evidenceSpan": "o Senhor derrotou a Sísera"
+      },
+      {
+        "text": "Sísera fugiu a pé para a tenda de Jael.",
+        "evidenceRef": "Juízes 4:17",
+        "evidenceSpan": "Sísera fugiu a pé para a tenda de Jael"
+      },
+      {
+        "text": "Jael cravou a estaca na fonte de Sísera.",
+        "evidenceRef": "Juízes 4:21",
+        "evidenceSpan": "lhe cravou a estaca na fonte"
+      },
+      {
+        "text": "Deus humilhou a Jabim diante de Israel.",
+        "evidenceRef": "Juízes 4:23",
+        "evidenceSpan": "Deus humilhou a Jabim, rei de Canaã"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Sísera",
+        "gloss": "Chefe dos carros derrotado pelo Senhor."
+      },
+      {
+        "term": "Jael",
+        "gloss": "Mulher que completa a vitória na tenda."
+      },
+      {
+        "term": "estaca",
+        "gloss": "Instrumento do golpe final."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Convocação e ordem de Débora",
+        "evidenceRef": "Juízes 4:12–14"
+      },
+      {
+        "label": "Derrota e fuga de Sísera",
+        "evidenceRef": "Juízes 4:15–17"
+      },
+      {
+        "label": "Jael e a humilhação de Jabim",
+        "evidenceRef": "Juízes 4:18–24"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Prepare-se pois este é o dia.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 4:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Exército cai; porém Sísera foge a pé.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 4:17"
+      },
+      {
+        "kind": "causa",
+        "text": "Fugiu pois havia paz com Héber.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 4:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 14:14",
+        "bridge": "Senhor luta por vós"
+      },
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Não confiar em carros"
+      },
+      {
+        "ref": "Hebreus 11:32",
+        "bridge": "Fé nos juízes"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Baraque vence sozinho.",
+        "why": "O Senhor derrotou Sísera."
+      },
+      {
+        "text": "Jael é detalhe sem peso.",
+        "why": "Ela completa a vitória."
+      },
+      {
+        "text": "Os carros garantem Sísera.",
+        "why": "Ele foge a pé."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 4:15, quem derrotou Sísera?",
+    "centralInsight": "O Senhor põe em fuga Sísera diante de Baraque; Jael completa a vitória na tenda."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 4:15, o Senhor derrotou Sísera diante de Baraque.",
+      "verseRef": "Juízes 4:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor derrotou a Sísera",
+      "feedbackCorrect": "O Senhor derrota.",
+      "feedbackWrong": {
+        "false": "O texto nomeia o Senhor."
+      },
+      "hint": "Veja o sujeito.",
+      "learningObjective": "Observar a derrota.",
+      "evidence": [
+        "Juízes 4:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 4:21, toque o instrumento do golpe.",
+      "verseRef": "Juízes 4:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "estaca"
+        },
+        {
+          "id": "b",
+          "text": "martelo"
+        },
+        {
+          "id": "c",
+          "text": "fonte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou uma estaca da tenda",
+      "feedbackCorrect": "Estaca.",
+      "feedbackWrong": {
+        "b": "Martelo é a ferramenta.",
+        "c": "Fonte é o alvo."
+      },
+      "hint": "Veja o que Jael tomou.",
+      "learningObjective": "Identificar a estaca.",
+      "evidence": [
+        "Juízes 4:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 4:13, quantos carros Sísera convocou?",
+      "verseRef": "Juízes 4:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Novecentos carros de ferro"
+        },
+        {
+          "id": "b",
+          "text": "Dez carros"
+        },
+        {
+          "id": "c",
+          "text": "Mil cavalos"
+        },
+        {
+          "id": "d",
+          "text": "Nenhum carro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "novecentos carros de ferro",
+      "feedbackCorrect": "Novecentos.",
+      "feedbackWrong": {
+        "b": "Não são dez.",
+        "c": "Não são cavalos.",
+        "d": "Há carros."
+      },
+      "hint": "Leia o número.",
+      "learningObjective": "Reconhecer os carros.",
+      "evidence": [
+        "Juízes 4:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 4:15 na ordem do texto.",
+      "verseRef": "Juízes 4:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "o Senhor derrotou a Sísera"
+        },
+        {
+          "id": "b",
+          "text": "todos os seus carros e todo o seu exército"
+        },
+        {
+          "id": "c",
+          "text": "Sísera saltou do carro e fugiu a pé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sísera saltou do carro e fugiu a pé",
+      "feedbackCorrect": "Derrota, exército e fuga.",
+      "feedbackWrong": {
+        "default": "Comece pelo Senhor."
+      },
+      "hint": "Como Sísera foge?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 4:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 4:17, complete: Sísera fugiu a pé para a tenda de ___.",
+      "verseRef": "Juízes 4:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jael"
+        },
+        {
+          "id": "b",
+          "text": "Débora"
+        },
+        {
+          "id": "c",
+          "text": "Baraque"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para a tenda de Jael",
+      "feedbackCorrect": "Jael.",
+      "feedbackWrong": {
+        "b": "Débora está no campo.",
+        "c": "Baraque persegue."
+      },
+      "hint": "Veja o destino.",
+      "learningObjective": "Lembrar Jael.",
+      "evidence": [
+        "Juízes 4:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 4:14 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 4:14",
+      "passageA": {
+        "ref": "Juízes 4:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Débora anuncia que o Senhor já saiu à frente de Baraque."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor à frente"
+        },
+        {
+          "id": "b",
+          "text": "Sísera sem medo"
+        },
+        {
+          "id": "c",
+          "text": "Sem dia marcado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "acaso não saiu o Senhor à sua frente",
+      "feedbackCorrect": "Senhor precede.",
+      "feedbackWrong": {
+        "b": "Há medo.",
+        "c": "Há dia."
+      },
+      "hint": "Quem saiu à frente?",
+      "learningObjective": "Ligar anúncio e vitória.",
+      "evidence": [
+        "Juízes 4:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 4:17, Sísera foge para Jael porque já havia guerra aberta com Héber.",
+      "verseRef": "Juízes 4:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois havia paz entre Jabim, rei de Hazor, e a casa de Héber",
+      "feedbackCorrect": "Havia paz.",
+      "feedbackWrong": {
+        "true": "O pois aponta paz."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Ver a causa da fuga.",
+      "evidence": [
+        "Juízes 4:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 4:17, toque o marcador de contraste.",
+      "verseRef": "Juízes 4:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "tenda"
+        },
+        {
+          "id": "c",
+          "text": "queneu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, Sísera fugiu a pé",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Tenda é o destino.",
+        "c": "Queneu descreve Héber."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 4:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 4:14 faz?",
+      "verseRef": "Juízes 4:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prepare-se pois o Senhor entregou Sísera"
+        },
+        {
+          "id": "b",
+          "text": "Espere pois nada acontece"
+        },
+        {
+          "id": "c",
+          "text": "Fuja pois o Senhor falhou"
+        },
+        {
+          "id": "d",
+          "text": "Calem pois Débora erra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Prepare-se, pois este é o dia em que o Senhor entregou",
+      "feedbackCorrect": "Causa do preparo.",
+      "feedbackWrong": {
+        "b": "Há ação.",
+        "c": "Há entrega.",
+        "d": "Há Débora."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 4:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da vitória.",
+      "verseRef": "Juízes 4:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Convocação e ordem de Débora"
+        },
+        {
+          "id": "b",
+          "text": "Derrota e fuga de Sísera"
+        },
+        {
+          "id": "c",
+          "text": "Jael e a humilhação de Jabim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor entregou a Sísera em suas mãos",
+      "feedbackCorrect": "Ordem, derrota e Jael.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem."
+      },
+      "hint": "O que fecha com Jael?",
+      "learningObjective": "Ordenar a vitória",
+      "evidence": [
+        "Juízes 4:14",
+        "Juízes 4:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 4:14, complete: o Senhor entregou a Sísera em suas ___.",
+      "verseRef": "Juízes 4:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "mãos"
+        },
+        {
+          "id": "b",
+          "text": "carros"
+        },
+        {
+          "id": "c",
+          "text": "portas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entregou a Sísera em suas mãos",
+      "feedbackCorrect": "Mãos.",
+      "feedbackWrong": {
+        "b": "Não são carros.",
+        "c": "Não são portas."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Lembrar mãos.",
+      "evidence": [
+        "Juízes 4:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 4:15 a Êxodo 14:14?",
+      "verseRef": "Juízes 4:15",
+      "passageA": {
+        "ref": "Juízes 4:15"
+      },
+      "passageB": {
+        "ref": "Êxodo 14:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor luta por vós"
+        },
+        {
+          "id": "b",
+          "text": "Povo luta só"
+        },
+        {
+          "id": "c",
+          "text": "Carros vencem sempre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor derrotou a Sísera",
+      "feedbackCorrect": "Luta divina.",
+      "feedbackWrong": {
+        "b": "Não luta só.",
+        "c": "Carros caem."
+      },
+      "hint": "Quem derrota?",
+      "learningObjective": "Ligar ao Êxodo.",
+      "evidence": [
+        "Juízes 4:15",
+        "Êxodo 14:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 4:21, a vitória termina só com Baraque no campo de batalha.",
+      "verseRef": "Juízes 4:21",
+      "correctOptionId": "false",
+      "evidenceSpan": "lhe cravou a estaca na fonte",
+      "feedbackCorrect": "Jael completa.",
+      "feedbackWrong": {
+        "true": "A tenda fecha a vitória."
+      },
+      "hint": "Veja quem age.",
+      "learningObjective": "Avaliar o papel de Jael.",
+      "evidence": [
+        "Juízes 4:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 4:23, toque o verbo da ação de Deus.",
+      "verseRef": "Juízes 4:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "humilhou"
+        },
+        {
+          "id": "b",
+          "text": "Jabim"
+        },
+        {
+          "id": "c",
+          "text": "Canaã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus humilhou a Jabim, rei de Canaã",
+      "feedbackCorrect": "Humilhou.",
+      "feedbackWrong": {
+        "b": "Jabim é o rei.",
+        "c": "Canaã é o reinado."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Tocar humilhou.",
+      "evidence": [
+        "Juízes 4:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une Senhor, Baraque e Jael?",
+      "verseRef": "Juízes 4:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor derrota; Jael completa o que Baraque persegue"
+        },
+        {
+          "id": "b",
+          "text": "Só carros decidem"
+        },
+        {
+          "id": "c",
+          "text": "Débora falha"
+        },
+        {
+          "id": "d",
+          "text": "Sísera vence na tenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor derrotou a Sísera",
+      "feedbackCorrect": "Derrota divina e conclusão.",
+      "feedbackWrong": {
+        "b": "Carros caem.",
+        "c": "Débora guia.",
+        "d": "Sísera morre."
+      },
+      "hint": "Una os três agentes.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 4:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da vitória.",
+      "verseRef": "Juízes 4:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor derrota no campo"
+        },
+        {
+          "id": "b",
+          "text": "Sísera busca refúgio"
+        },
+        {
+          "id": "c",
+          "text": "Jael crava a estaca"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "lhe cravou a estaca na fonte",
+      "feedbackCorrect": "Campo, fuga e estaca.",
+      "feedbackWrong": {
+        "default": "Comece pelo Senhor."
+      },
+      "hint": "O que fecha a estaca?",
+      "learningObjective": "Encadear a vitória",
+      "evidence": [
+        "Juízes 4:15",
+        "Juízes 4:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 4:15, complete: Sísera saltou do carro e fugiu a ___.",
+      "verseRef": "Juízes 4:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "pé"
+        },
+        {
+          "id": "b",
+          "text": "cavalo"
+        },
+        {
+          "id": "c",
+          "text": "barco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fugiu a pé",
+      "feedbackCorrect": "Pé.",
+      "feedbackWrong": {
+        "b": "Não é cavalo.",
+        "c": "Não é barco."
+      },
+      "hint": "Veja o modo.",
+      "learningObjective": "Lembrar a pé.",
+      "evidence": [
+        "Juízes 4:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 4:13 a Salmos 20:7?",
+      "verseRef": "Juízes 4:13",
+      "passageA": {
+        "ref": "Juízes 4:13"
+      },
+      "passageB": {
+        "ref": "Salmos 20:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não confiar em carros"
+        },
+        {
+          "id": "b",
+          "text": "Confiar nos carros"
+        },
+        {
+          "id": "c",
+          "text": "Adorar o ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "novecentos carros de ferro",
+      "feedbackCorrect": "Carros não salvam.",
+      "feedbackWrong": {
+        "b": "Não confiar.",
+        "c": "Não adorar."
+      },
+      "hint": "Compare os carros.",
+      "learningObjective": "Ligar ao Salmo.",
+      "evidence": [
+        "Juízes 4:13",
+        "Salmos 20:7"
+      ]
+    }
+  ]
+}

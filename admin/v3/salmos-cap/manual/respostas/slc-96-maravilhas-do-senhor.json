@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 98:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 98:1–6"
+      },
+      {
+        "ref": "Salmos 98:7–9"
+      }
+    ],
+    "context": "Cantai ao Senhor um cântico novo, porque ele fez maravilhas; os rios batam palmas.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Maravilhas do Senhor",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Cantai ao Senhor um cântico novo.",
+        "evidenceRef": "Salmos 98:1",
+        "evidenceSpan": "Cantai ao Senhor um cântico novo"
+      },
+      {
+        "text": "O Senhor tornou conhecida a sua salvação e.",
+        "evidenceRef": "Salmos 98:2",
+        "evidenceSpan": "O Senhor tornou conhecida a sua salvação e"
+      },
+      {
+        "text": "Lembrou-se da sua misericórdia e da sua fidelidade.",
+        "evidenceRef": "Salmos 98:3",
+        "evidenceSpan": "Lembrou-se da sua misericórdia e da sua fidelidade"
+      },
+      {
+        "text": "Celebrem com júbilo ao Senhor.",
+        "evidenceRef": "Salmos 98:4",
+        "evidenceSpan": "Celebrem com júbilo ao Senhor"
+      },
+      {
+        "text": "Cantem louvores ao SENHOR com a harpa e.",
+        "evidenceRef": "Salmos 98:5",
+        "evidenceSpan": "Cantem louvores ao SENHOR com a harpa e"
+      },
+      {
+        "text": "Com trombetas e ao som de cornetas.",
+        "evidenceRef": "Salmos 98:6",
+        "evidenceSpan": "Com trombetas e ao som de cornetas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Cantai",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cantai ao senhor um cântico novo",
+        "evidenceRef": "Salmos 98:1"
+      },
+      {
+        "label": "O senhor tornou conhecida a sua",
+        "evidenceRef": "Salmos 98:2"
+      },
+      {
+        "label": "Lembrou-se da sua misericórdia e da",
+        "evidenceRef": "Salmos 98:3"
+      },
+      {
+        "label": "Celebrem com júbilo ao senhor todos",
+        "evidenceRef": "Salmos 98:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 98:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 98:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": null,
+        "evidenceRef": "Salmos 98:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 139:14",
+        "bridge": "Feitos de modo admirável"
+      },
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      },
+      {
+        "ref": "João 10:11",
+        "bridge": "Bom Pastor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Salvação revelada às nações: toda a criação aplaude o juízo reto."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Salvação revelada às nações: toda a criação aplaude o juízo reto.",
+    "anchorQuestion": "O que Salmos 98:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 98:1, cantai ao Senhor um cântico novo.",
+      "verseRef": "Salmos 98:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cantai ao Senhor um cântico novo",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 98:1 afirma.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 98:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 98:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantai"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "cântico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "O versículo destaca «Cantai».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 98:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 98:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrou-se da sua misericórdia e da sua fidelidade"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrou-se da sua misericórdia e da sua fidelidade",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 98:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 98:1 na ordem do texto.",
+      "verseRef": "Salmos 98:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantai"
+        },
+        {
+          "id": "b",
+          "text": "ao"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 98:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 98:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Celebrem"
+        },
+        {
+          "id": "b",
+          "text": "Cantai"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Celebrem",
+      "feedbackCorrect": "A palavra do versículo é «Celebrem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 98:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 98:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 98:1",
+      "passageA": {
+        "ref": "Salmos 98:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cantai ao Senhor um cântico novo, porque ele fez maravilhas; os rios batam palmas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 98:1, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 98:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 98:1 afirma.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 98:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 98:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Cantai"
+        },
+        {
+          "id": "c",
+          "text": "cântico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «porque».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 98:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 98:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Celebrem com júbilo ao Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 98:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 98:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantai ao senhor um cântico novo"
+        },
+        {
+          "id": "b",
+          "text": "O senhor tornou conhecida a sua"
+        },
+        {
+          "id": "c",
+          "text": "Lembrou-se da sua misericórdia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 98:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 98:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrou-se"
+        },
+        {
+          "id": "b",
+          "text": "Cantai"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrou-se",
+      "feedbackCorrect": "A palavra do versículo é «Lembrou-se».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 98:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 98:1 a Salmos 139:14.",
+      "verseRef": "Salmos 98:1",
+      "passageA": {
+        "ref": "Salmos 98:1"
+      },
+      "passageB": {
+        "ref": "Salmos 139:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Feitos de modo admirável"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 98:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Perante",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 98:9 afirma.",
+      "evidence": [
+        "Salmos 98:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 98:9, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 98:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perante"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Perante",
+      "feedbackCorrect": "O versículo destaca «Perante».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 98:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 98:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 98:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantem louvores ao SENHOR com a harpa e",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 98:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 98:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 98:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 98:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantem"
+        },
+        {
+          "id": "b",
+          "text": "Cantai"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantem",
+      "feedbackCorrect": "A palavra do versículo é «Cantem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 98:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 98:1 a Hebreus 13:15.",
+      "verseRef": "Salmos 98:1",
+      "passageA": {
+        "ref": "Salmos 98:1"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício de louvor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantai",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 98:1"
+      ]
+    }
+  ]
+}

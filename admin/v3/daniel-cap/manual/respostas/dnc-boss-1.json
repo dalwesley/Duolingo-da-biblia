@@ -1,0 +1,929 @@
+{
+  "study": {
+    "passageRef": "Daniel 1:15–20",
+    "passages": [
+      {
+        "ref": "Daniel 1:15–20"
+      },
+      {
+        "ref": "Daniel 2:19–28"
+      },
+      {
+        "ref": "Daniel 3:23–28"
+      },
+      {
+        "ref": "Daniel 4:28–33"
+      },
+      {
+        "ref": "Daniel 4:34–37"
+      }
+    ],
+    "context": "Nesta travessia, revise a fidelidade na comida, a revelação do mistério, a fornalha e a humilhação de Nabucodonosor.",
+    "keyword": "fidelidade",
+    "keywordGloss": "Permanecer com Deus no exílio — e ver Deus revelar, livrar e humilhar.",
+    "focusQuestion": "Onde a fidelidade na corte ainda precisa vencer o medo ou a soberba?",
+    "reflectionPrompts": [
+      "Saber no exílio",
+      "Mistério revelado",
+      "Fogo e soberba"
+    ],
+    "facts": [
+      {
+        "text": "Deus concedeu saber aos quatro jovens.",
+        "evidenceRef": "Daniel 1:17",
+        "evidenceSpan": "Deus lhes concedeu conhecimento e sabedoria"
+      },
+      {
+        "text": "Há um Deus nos céus que revela mistérios.",
+        "evidenceRef": "Daniel 2:28",
+        "evidenceSpan": "há um Deus nos céus que revela os mistérios"
+      },
+      {
+        "text": "O rei vê quatro no fogo sem dano.",
+        "evidenceRef": "Daniel 3:25",
+        "evidenceSpan": "Vejo quatro homens soltos andando no meio do fogo"
+      },
+      {
+        "text": "Deus enviou o anjo e livrou os que confiaram.",
+        "evidenceRef": "Daniel 3:28",
+        "evidenceSpan": "enviou seu anjo e livrou seus servos, que confiaram nele"
+      },
+      {
+        "text": "Nabucodonosor jactou-se da grande Babilônia.",
+        "evidenceRef": "Daniel 4:30",
+        "evidenceSpan": "com o poder de minha força e para a glória de minha majestade"
+      },
+      {
+        "text": "Deus tem poder para humilhar os soberbos.",
+        "evidenceRef": "Daniel 4:37",
+        "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sabedoria",
+        "gloss": "Dom de Deus no exílio."
+      },
+      {
+        "term": "mistérios",
+        "gloss": "O que só Deus revela."
+      },
+      {
+        "term": "soberba",
+        "gloss": "Postura que Deus humilha."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fidelidade e saber",
+        "evidenceRef": "Daniel 1:15–20"
+      },
+      {
+        "label": "Mistério revelado",
+        "evidenceRef": "Daniel 2:19–28"
+      },
+      {
+        "label": "Livramento na fornalha",
+        "evidenceRef": "Daniel 3:23–28"
+      },
+      {
+        "label": "Humilhação do rei",
+        "evidenceRef": "Daniel 4:28–37"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Sábios não podem; Deus revela.",
+        "marker": "Mas",
+        "evidenceRef": "Daniel 2:28"
+      },
+      {
+        "kind": "causa",
+        "text": "Livrou porque confiaram.",
+        "marker": "pois",
+        "evidenceRef": "Daniel 3:28"
+      },
+      {
+        "kind": "propósito",
+        "text": "Humilhação até aprender o domínio do Altíssimo.",
+        "marker": "até que",
+        "evidenceRef": "Daniel 4:32"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 43:2",
+        "bridge": "Fogo sem consumir"
+      },
+      {
+        "ref": "Provérbios 16:18",
+        "bridge": "Soberba precede a queda"
+      },
+      {
+        "ref": "Tiago 1:5",
+        "bridge": "Sabedoria pedida a Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A fidelidade na corte não precisa de Deus.",
+        "why": "O saber, a revelação e o livramento vêm de Deus."
+      },
+      {
+        "text": "A soberba do rei foi elogiável.",
+        "why": "4:37: Deus humilha os soberbos."
+      },
+      {
+        "text": "O fogo venceu os três.",
+        "why": "3:27–28: o fogo não teve poder; Deus livrou."
+      }
+    ],
+    "centralInsight": "No exílio, Deus sustenta os fiéis e humilha os soberbos",
+    "anchorQuestion": "O que Daniel 1–4 mostra sobre Deus diante da fidelidade e da soberba?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 1:17, Deus concedeu aos quatro jovens conhecimento e sabedoria.",
+      "verseRef": "Daniel 1:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "Deus lhes concedeu conhecimento e sabedoria",
+      "feedbackCorrect": "Deus concede o saber aos quatro.",
+      "feedbackWrong": {
+        "false": "Releia 1:17."
+      },
+      "hint": "Veja quem concede o saber.",
+      "learningObjective": "Revisar o dom em Daniel 1.",
+      "evidence": [
+        "Daniel 1:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 2:28, toque quem revela os mistérios.",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "Há um Deus nos céus que revela.",
+      "hint": "Procure quem revela.",
+      "learningObjective": "Revisar a revelação em Daniel 2.",
+      "evidence": [
+        "Daniel 2:28"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus nos céus"
+        },
+        {
+          "id": "b",
+          "text": "mago"
+        },
+        {
+          "id": "c",
+          "text": "adivinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Magos não podem revelar.",
+        "c": "Adivinhos não podem revelar."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 3:25, quantos homens o rei vê no fogo?",
+      "verseRef": "Daniel 3:25",
+      "evidenceSpan": "Vejo quatro homens soltos andando no meio do fogo",
+      "feedbackCorrect": "Ele vê quatro homens soltos.",
+      "hint": "Conte quantos o rei vê.",
+      "learningObjective": "Revisar a fornalha.",
+      "evidence": [
+        "Daniel 3:25"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Dois"
+        },
+        {
+          "id": "b",
+          "text": "Três"
+        },
+        {
+          "id": "c",
+          "text": "Quatro"
+        },
+        {
+          "id": "d",
+          "text": "Cinco"
+        }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "São quatro.",
+        "b": "Lançaram três; vê quatro.",
+        "d": "São quatro."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 4:30 na ordem do texto.",
+      "verseRef": "Daniel 4:30",
+      "evidenceSpan": "Não é esta a grande Babilônia que eu edifiquei",
+      "feedbackCorrect": "Babilônia que eu edifiquei, com minha força, para minha majestade.",
+      "hint": "Comece pela Babilônia.",
+      "learningObjective": "Revisar a jactância.",
+      "evidence": [
+        "Daniel 4:30"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Não é esta a grande Babilônia que eu edifiquei"
+        },
+        {
+          "id": "b",
+          "text": "para a casa real, com o poder de minha força"
+        },
+        {
+          "id": "c",
+          "text": "e para a glória de minha majestade?"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela Babilônia."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 1:16, o que lhes deram em troca?",
+      "verseRef": "Daniel 1:16",
+      "evidenceSpan": "dando-lhes em troca legumes",
+      "feedbackCorrect": "Deram-lhes legumes.",
+      "hint": "É o alimento da troca.",
+      "learningObjective": "Revisar a troca da comida.",
+      "evidence": [
+        "Daniel 1:16"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "legumes"
+        },
+        {
+          "id": "b",
+          "text": "ouro"
+        },
+        {
+          "id": "c",
+          "text": "púrpura"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é ouro.",
+        "c": "Não é púrpura."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 3:28 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "livrou seus servos, que confiaram nele",
+      "feedbackCorrect": "Na etapa, Deus livra quem confia e humilha a soberba.",
+      "hint": "Compare o tema da etapa com o versículo.",
+      "learningObjective": "Revisar o livramento.",
+      "evidence": [
+        "Daniel 3:28"
+      ],
+      "passageA": {
+        "ref": "Daniel 3:28"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Fidelidade na corte: comida, mistério, fornalha e humilhação do rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança e livramento"
+        },
+        {
+          "id": "b",
+          "text": "Adoração à imagem"
+        },
+        {
+          "id": "c",
+          "text": "Soberba aprovada"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Eles recusaram a imagem.",
+        "c": "A soberba é humilhada."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 4:37, toque a postura que Deus humilha.",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "os que se conduzem com soberba",
+      "feedbackCorrect": "Deus humilha os soberbos.",
+      "hint": "Procure a postura no fim.",
+      "learningObjective": "Revisar a humilhação.",
+      "evidence": [
+        "Daniel 4:37"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "soberba"
+        },
+        {
+          "id": "b",
+          "text": "obras"
+        },
+        {
+          "id": "c",
+          "text": "caminhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Obras são verdadeiras.",
+        "c": "Caminhos são justos."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 2:19 na ordem do texto.",
+      "verseRef": "Daniel 2:19",
+      "evidenceSpan": "o mistério foi revelado a Daniel",
+      "feedbackCorrect": "Revelação, visão de noite, louvor.",
+      "hint": "Comece pelo mistério.",
+      "learningObjective": "Revisar a revelação.",
+      "evidence": [
+        "Daniel 2:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, o mistério foi revelado a Daniel"
+        },
+        {
+          "id": "b",
+          "text": "em uma visão de noite"
+        },
+        {
+          "id": "c",
+          "text": "por isso, Daniel louvou o Deus dos céus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela revelação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 2:27, qualquer mago podia revelar o mistério ao rei.",
+      "verseRef": "Daniel 2:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "nenhum sábio nem astrólogo nem mago nem adivinho pode revelar",
+      "feedbackCorrect": "Nenhum deles pode revelar.",
+      "feedbackWrong": {
+        "true": "Releia 2:27."
+      },
+      "hint": "Veja a incapacidade dos sábios.",
+      "learningObjective": "Revisar o contraste da revelação.",
+      "evidence": [
+        "Daniel 2:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 1:19, toque a palavra que marca o contraste.",
+      "verseRef": "Daniel 1:19",
+      "evidenceSpan": "porém, entre todos",
+      "feedbackCorrect": "\"Porém\" marca: ninguém se iguala.",
+      "hint": "Procure o contraste.",
+      "learningObjective": "Revisar o contraste na corte.",
+      "evidence": [
+        "Daniel 1:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "falou"
+        },
+        {
+          "id": "c",
+          "text": "servir"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É a ação do rei.",
+        "c": "É o resultado."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 4:30–31 relaciona jactância e sentença?",
+      "verseRef": "Daniel 4:30–31",
+      "evidenceSpan": "Estava ainda a palavra na boca do rei, quando uma voz desceu do céu",
+      "feedbackCorrect": "Ainda na boca a jactância, a voz anuncia a perda do reino.",
+      "hint": "Veja o momento da voz.",
+      "learningObjective": "Revisar jactância e juízo.",
+      "evidence": [
+        "Daniel 4:30–31"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A jactância é interrompida pela voz do céu"
+        },
+        {
+          "id": "b",
+          "text": "O céu elogia a força do rei"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece na hora"
+        },
+        {
+          "id": "d",
+          "text": "O rei cala e é exaltado"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A voz tira o reino.",
+        "c": "A sentença é imediata.",
+        "d": "Há juízo, não exaltação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a etapa Fidelidade na corte?",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "enviou seu anjo e livrou seus servos",
+      "feedbackCorrect": "Dom no exílio, revelação, fornalha, humilhação.",
+      "hint": "Comece pelo saber no exílio.",
+      "learningObjective": "Revisar o arco da etapa.",
+      "evidence": [
+        "Daniel 1:17",
+        "Daniel 3:28",
+        "Daniel 4:37"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus dá saber aos fiéis no exílio"
+        },
+        {
+          "id": "b",
+          "text": "Deus revela mistérios e livra no fogo"
+        },
+        {
+          "id": "c",
+          "text": "Deus humilha a soberba do rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo saber; a humilhação fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 2:28, que palavra marca o contraste com os sábios?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "Mas há um Deus nos céus",
+      "feedbackCorrect": "\"Mas\" abre o contraste.",
+      "hint": "É a primeira palavra.",
+      "learningObjective": "Revisar o marcador.",
+      "evidence": [
+        "Daniel 2:28"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "Assim"
+        },
+        {
+          "id": "c",
+          "text": "Logo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é Assim.",
+        "c": "Não é Logo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 3:27 a Isaías 43:2?",
+      "verseRef": "Daniel 3:27",
+      "evidenceSpan": "o fogo não teve poder algum sobre os corpos deles",
+      "feedbackCorrect": "Nos dois textos, o fogo não consome quem Deus guarda.",
+      "hint": "Compare a impotência do fogo.",
+      "learningObjective": "Revisar o livramento no fogo.",
+      "evidence": [
+        "Daniel 3:27",
+        "Isaías 43:2"
+      ],
+      "passageA": {
+        "ref": "Daniel 3:27"
+      },
+      "passageB": {
+        "ref": "Isaías 43:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fogo sem consumir"
+        },
+        {
+          "id": "b",
+          "text": "Templo em ruínas"
+        },
+        {
+          "id": "c",
+          "text": "Exílio sem esperança"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é o elo aqui.",
+        "c": "Há livramento."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 4:32, toque a expressão do limite da sentença.",
+      "verseRef": "Daniel 4:32",
+      "evidenceSpan": "até que aprendas que o Altíssimo tem domínio",
+      "feedbackCorrect": "\"Até que\" marca o aprendizado.",
+      "hint": "Procure o limite da sentença.",
+      "learningObjective": "Revisar o propósito da humilhação.",
+      "evidence": [
+        "Daniel 4:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "até que"
+        },
+        {
+          "id": "b",
+          "text": "ervas"
+        },
+        {
+          "id": "c",
+          "text": "bois"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É o alimento.",
+        "c": "É a comparação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se relaciona revelação e fornalha nesta etapa?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "Deus revela; os três confiam; o fogo não vence.",
+      "hint": "Comece pela revelação.",
+      "learningObjective": "Revisar revelação e confiança.",
+      "evidence": [
+        "Daniel 2:28",
+        "Daniel 3:28",
+        "Daniel 3:27"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Há Deus nos céus que revela mistérios"
+        },
+        {
+          "id": "b",
+          "text": "Os três confiam e não adoram a imagem"
+        },
+        {
+          "id": "c",
+          "text": "O fogo não tem poder sobre eles"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela revelação."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 1–4, Deus sustenta os fiéis no exílio e pode humilhar os soberbos.",
+      "verseRef": "Daniel 4:37",
+      "correctOptionId": "true",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "A etapa mostra dom, revelação, livramento e humilhação.",
+      "feedbackWrong": {
+        "false": "Releia 4:37 no arco da etapa."
+      },
+      "hint": "Veja o poder sobre a soberba.",
+      "learningObjective": "Interpretar o arco da etapa.",
+      "evidence": [
+        "Daniel 4:37"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 3:28, toque a postura dos servos livrados.",
+      "verseRef": "Daniel 3:28",
+      "evidenceSpan": "que confiaram nele",
+      "feedbackCorrect": "Eles confiaram nele.",
+      "hint": "Procure o verbo da confiança.",
+      "learningObjective": "Sustentar a confiança.",
+      "evidence": [
+        "Daniel 3:28"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "confiaram"
+        },
+        {
+          "id": "b",
+          "text": "sátrapas"
+        },
+        {
+          "id": "c",
+          "text": "vestes"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Observadores em 3:27.",
+        "c": "Resultado, não postura."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa sustenta sobre fidelidade na corte?",
+      "verseRef": "Daniel 1:17",
+      "evidenceSpan": "Deus lhes concedeu conhecimento e sabedoria",
+      "feedbackCorrect": "Deus dá saber, revela, livra e humilha — a fidelidade não está sozinha.",
+      "hint": "Compare as cenas da etapa.",
+      "learningObjective": "Interpretar a fidelidade na corte.",
+      "evidence": [
+        "Daniel 1:17",
+        "Daniel 4:37"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus sustenta fiéis e humilha soberbos"
+        },
+        {
+          "id": "b",
+          "text": "A corte humana basta sem Deus"
+        },
+        {
+          "id": "c",
+          "text": "A fornalha prova abandono divino"
+        },
+        {
+          "id": "d",
+          "text": "A soberba do rei é virtude"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A revelação vem de Deus.",
+        "c": "Há livramento.",
+        "d": "Há humilhação."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência resume o fio da etapa?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Saber no exílio; revelação; fornalha; humilhação.",
+      "hint": "Comece pelo saber.",
+      "learningObjective": "Ver o arco teológico da etapa.",
+      "evidence": [
+        "Daniel 1:17",
+        "Daniel 3:28",
+        "Daniel 4:37"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus dá saber no exílio"
+        },
+        {
+          "id": "b",
+          "text": "Deus revela e livra no fogo"
+        },
+        {
+          "id": "c",
+          "text": "Deus humilha a soberba"
+        }
+      ],
+      "correctOrder": "a",
+      "feedbackWrong": {
+        "default": "Siga o arco da etapa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 2:19, que palavra nomeia o que Deus abre?",
+      "verseRef": "Daniel 2:19",
+      "evidenceSpan": "o mistério foi revelado a Daniel",
+      "feedbackCorrect": "O mistério foi revelado.",
+      "hint": "É o sujeito do que foi revelado.",
+      "learningObjective": "Lembrar o termo da revelação.",
+      "evidence": [
+        "Daniel 2:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mistério"
+        },
+        {
+          "id": "b",
+          "text": "exército"
+        },
+        {
+          "id": "c",
+          "text": "coroa"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é exército.",
+        "c": "Não é coroa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 4:37 a Provérbios 16:18?",
+      "verseRef": "Daniel 4:37",
+      "evidenceSpan": "ele tem poder para humilhar os que se conduzem com soberba",
+      "feedbackCorrect": "Nos dois textos, soberba encontra queda.",
+      "hint": "Compare soberba e consequência.",
+      "learningObjective": "Ligar soberba e juízo.",
+      "evidence": [
+        "Daniel 4:37",
+        "Provérbios 16:18"
+      ],
+      "passageA": {
+        "ref": "Daniel 4:37"
+      },
+      "passageB": {
+        "ref": "Provérbios 16:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Soberba precede a queda"
+        },
+        {
+          "id": "b",
+          "text": "Soberba garante o trono"
+        },
+        {
+          "id": "c",
+          "text": "Humildade é fraqueza"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há humilhação.",
+        "c": "O contraste é a soberba."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 1:17, toque o dom especial a Daniel.",
+      "verseRef": "Daniel 1:17",
+      "evidenceSpan": "discernimento em todas as visões e sonhos",
+      "feedbackCorrect": "Discernimento em visões e sonhos.",
+      "hint": "Procure o que só Daniel recebe.",
+      "learningObjective": "Sustentar o dom especial.",
+      "evidence": [
+        "Daniel 1:17"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "discernimento"
+        },
+        {
+          "id": "b",
+          "text": "iguarias"
+        },
+        {
+          "id": "c",
+          "text": "vinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Iguarias foram recusadas.",
+        "c": "Vinho foi retirado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga saber, revelação e domínio nesta etapa?",
+      "verseRef": "Daniel 4:34",
+      "evidenceSpan": "bendisse o Altíssimo, louvei e glorifiquei ao que vive para sempre",
+      "feedbackCorrect": "Saber no exílio, revelação e louvor ao Altíssimo fecham a etapa.",
+      "hint": "Comece pelo exílio.",
+      "learningObjective": "Ver o fio além da etapa.",
+      "evidence": [
+        "Daniel 1:17",
+        "Daniel 2:28",
+        "Daniel 4:34"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus capacita no exílio"
+        },
+        {
+          "id": "b",
+          "text": "Deus revela o inacessível"
+        },
+        {
+          "id": "c",
+          "text": "O Altíssimo governa e é louvado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo exílio; o louvor ao Altíssimo fecha."
+      }
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 47:1–6",
+    "passages": [
+      {
+        "ref": "Gênesis 47:1–6"
+      },
+      {
+        "ref": "Gênesis 47:7–12"
+      }
+    ],
+    "context": "José apresenta a família; Faraó oferece o melhor da terra, e Jacó abençoa Faraó.",
+    "keyword": "José",
+    "keywordGloss": "Termo literal do trecho desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Diante de Faraó",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "José faraó disse pai meus irmãos.",
+        "evidenceRef": "Gênesis 47:1",
+        "evidenceSpan": "e seus rebanhos com tudo o que possuem"
+      },
+      {
+        "text": "Tomou cinco irmãos apresentou faraó.",
+        "evidenceRef": "Gênesis 47:2",
+        "evidenceSpan": "tomou cinco de seus irmãos e os apresentou"
+      },
+      {
+        "text": "Faraó perguntou irmãos josé qual vossa.",
+        "evidenceRef": "Gênesis 47:3",
+        "evidenceSpan": "o faraó perguntou aos irmãos de José"
+      },
+      {
+        "text": "Disseram faraó viemos habitar nesta terra.",
+        "evidenceRef": "Gênesis 47:4",
+        "evidenceSpan": "pois não há pasto suficiente para as ovelhas"
+      },
+      {
+        "text": "Faraó disse josé pai teus irmãos.",
+        "evidenceRef": "Gênesis 47:5",
+        "evidenceSpan": "Teu pai e teus irmãos chegaram até você"
+      },
+      {
+        "text": "Terra egito está disposição melhor terra.",
+        "evidenceRef": "Gênesis 47:6",
+        "evidenceSpan": "A terra do Egito está à sua disposição"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "José",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "Faraó",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "disse",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "José faraó disse pai meus",
+        "evidenceRef": "Gênesis 47:1"
+      },
+      {
+        "label": "Tomou cinco irmãos apresentou faraó",
+        "evidenceRef": "Gênesis 47:2"
+      },
+      {
+        "label": "Faraó perguntou irmãos josé qual",
+        "evidenceRef": "Gênesis 47:3"
+      },
+      {
+        "label": "Disseram faraó viemos habitar nesta",
+        "evidenceRef": "Gênesis 47:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 47:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 47:3"
+      },
+      {
+        "kind": "causa",
+        "text": "O marcador \"pois\" liga o fluxo do relato neste versículo.",
+        "marker": "pois",
+        "evidenceRef": "Gênesis 47:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 45:8",
+        "bridge": "Deus enviou José"
+      },
+      {
+        "ref": "Gênesis 50:20",
+        "bridge": "Deus tornou em bem"
+      },
+      {
+        "ref": "Gênesis 32:28",
+        "bridge": "Nome Israel"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "O pastor peregrino abençoa o rei; Deus sustenta Israel em Gósen."
+      }
+    ],
+    "centralInsight": "O pastor peregrino abençoa o rei; Deus sustenta Israel em Gósen.",
+    "anchorQuestion": "O que Gênesis 47:1 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 47:1, e seus rebanhos com tudo o que possuem.",
+      "verseRef": "Gênesis 47:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "e seus rebanhos com tudo o que possuem",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 47:1 afirma.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 47:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "José"
+        },
+        {
+          "id": "b",
+          "text": "Faraó"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "José",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 47:3, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 47:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há faraó perguntou irmãos josé no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 47:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 47:1 na ordem do texto.",
+      "verseRef": "Gênesis 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "José foi até"
+        },
+        {
+          "id": "c",
+          "text": "Faraó e disse"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 47:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faraó"
+        },
+        {
+          "id": "b",
+          "text": "José"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Faraó",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 47:1 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 47:1",
+      "passageA": {
+        "ref": "Gênesis 47:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "José apresenta a família; Faraó oferece o melhor da terra, e Jacó abençoa Faraó."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 47:1, o texto trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Gênesis 47:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 47:1 afirma.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 47:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "José"
+        },
+        {
+          "id": "c",
+          "text": "Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 47:4, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 47:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disseram ainda a Faraó",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 47:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "José faraó disse pai meus"
+        },
+        {
+          "id": "b",
+          "text": "Tomou cinco irmãos apresentou faraó"
+        },
+        {
+          "id": "c",
+          "text": "Faraó perguntou irmãos josé qual"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 47:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 47:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "perguntou"
+        },
+        {
+          "id": "b",
+          "text": "José"
+        },
+        {
+          "id": "c",
+          "text": "Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "perguntou",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 47:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 47:1 a Gênesis 45:8.",
+      "verseRef": "Gênesis 47:1",
+      "passageA": {
+        "ref": "Gênesis 47:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 45:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus enviou José"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 47:1",
+        "Gênesis 45:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 47:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 47:12 afirma.",
+      "evidence": [
+        "Gênesis 47:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 47:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 47:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "faraó"
+        },
+        {
+          "id": "c",
+          "text": "José"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 47:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 47:5, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 47:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 47:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 47:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 47:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 47:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "teus"
+        },
+        {
+          "id": "b",
+          "text": "José"
+        },
+        {
+          "id": "c",
+          "text": "Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "teus",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 47:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 47:1 a Gênesis 50:20.",
+      "verseRef": "Gênesis 47:1",
+      "passageA": {
+        "ref": "Gênesis 47:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 50:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus tornou em bem"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 47:1",
+        "Gênesis 50:20"
+      ]
+    }
+  ]
+}

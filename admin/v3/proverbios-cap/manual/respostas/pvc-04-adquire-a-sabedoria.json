@@ -1,0 +1,718 @@
+{
+ "study": {
+  "passageRef": "Provérbios 4:5–10",
+  "passages": [
+   {
+    "ref": "Provérbios 4:5–13"
+   }
+  ],
+  "context": "O pai insiste: adquire sabedoria e entendimento, não as abandone. Elas guardam, exaltam e são vida para quem retém a correção.",
+  "keyword": "Adquire",
+  "keywordGloss": "Obter a sabedoria como prioridade, com tudo o que se tem.",
+  "focusQuestion": "O que você tem tratado como mais importante do que adquirir sabedoria?",
+  "reflectionPrompts": [
+   "Prioridade da sabedoria",
+   "Ela te guarda",
+   "Correção que é vida"
+  ],
+  "facts": [
+   {
+    "text": "É preciso adquirir sabedoria e entendimento e não apartar-se das palavras.",
+    "evidenceRef": "Provérbios 4:5",
+    "evidenceSpan": "Adquire a sabedoria, adquire o entendimento"
+   },
+   {
+    "text": "Não abandonar a sabedoria: ela guarda e protege.",
+    "evidenceRef": "Provérbios 4:6",
+    "evidenceSpan": "Não a abandones e ela te guardará"
+   },
+   {
+    "text": "A sabedoria é a principal coisa.",
+    "evidenceRef": "Provérbios 4:7",
+    "evidenceSpan": "A sabedoria é a principal coisa"
+   },
+   {
+    "text": "Estimar a sabedoria faz com que ela exalte e honre.",
+    "evidenceRef": "Provérbios 4:8",
+    "evidenceSpan": "Estima-a e ela te exaltará"
+   },
+   {
+    "text": "As palavras multiplicam anos de vida.",
+    "evidenceRef": "Provérbios 4:10",
+    "evidenceSpan": "multiplicarão teus anos de vida"
+   },
+   {
+    "text": "Reter a correção é guardar a própria vida.",
+    "evidenceRef": "Provérbios 4:13",
+    "evidenceSpan": "guarda-a, porque ela é a tua vida"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "principal",
+    "gloss": "A sabedoria como primeira prioridade, acima do restante."
+   },
+   {
+    "term": "guardará",
+    "gloss": "Promessa ligada a não abandonar a sabedoria."
+   },
+   {
+    "term": "correção",
+    "gloss": "Instrução a reter; é chamada de vida."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Ordem de adquirir e não abandonar",
+    "evidenceRef": "Provérbios 4:5–6"
+   },
+   {
+    "label": "Sabedoria como prioridade",
+    "evidenceRef": "Provérbios 4:7–9"
+   },
+   {
+    "label": "Palavras que alongam a vida",
+    "evidenceRef": "Provérbios 4:10–12"
+   },
+   {
+    "label": "Correção retida como vida",
+    "evidenceRef": "Provérbios 4:13"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Não abandonar resulta em ser guardado e protegido.",
+    "marker": null,
+    "evidenceRef": "Provérbios 4:6"
+   },
+   {
+    "kind": "causa",
+    "text": "Porque as palavras multiplicam anos, o filho deve ouvir.",
+    "marker": "pois",
+    "evidenceRef": "Provérbios 4:10"
+   },
+   {
+    "kind": "causa",
+    "text": "Guarda a correção porque ela é a vida.",
+    "marker": "porque",
+    "evidenceRef": "Provérbios 4:13"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Tiago 1:5",
+    "bridge": "Pedir sabedoria a Deus"
+   },
+   {
+    "ref": "Mateus 7:24",
+    "bridge": "Ouvir e praticar"
+   },
+   {
+    "ref": "Provérbios 3:18",
+    "bridge": "Sabedoria como árvore de vida"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A sabedoria é enfeite opcional, não prioridade.",
+    "why": "4:7 chama a sabedoria de principal coisa."
+   },
+   {
+    "text": "Basta adquirir uma vez; abandonar depois não muda nada.",
+    "why": "4:6 liga não abandonar ao fato de ela guardar."
+   },
+   {
+    "text": "A correção pode ser largada sem perda.",
+    "why": "4:13 manda reter e guarda-la porque é a vida."
+   }
+  ],
+  "centralInsight": "A sabedoria não é enfeite: é guarda, vida e luz no caminho.",
+  "anchorQuestion": "O que Provérbios 4:7 chama de principal coisa?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 4:7, a sabedoria é chamada de coisa secundária.",
+   "verseRef": "Provérbios 4:7",
+   "correctOptionId": "false",
+   "evidenceSpan": "A sabedoria é a principal coisa",
+   "feedbackCorrect": "O texto diz que a sabedoria é a principal coisa.",
+   "feedbackWrong": {
+    "true": "Releia 4:7: a sabedoria é a principal coisa."
+   },
+   "hint": "Veja o adjetivo ligado à sabedoria.",
+   "learningObjective": "Observar a prioridade da sabedoria.",
+   "evidence": [
+    "Provérbios 4:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 4:6, toque o que a sabedoria fará se não for abandonada.",
+   "verseRef": "Provérbios 4:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "te guardará"
+    },
+    {
+     "id": "b",
+     "text": "abandones"
+    },
+    {
+     "id": "c",
+     "text": "ama-a"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ela te guardará",
+   "feedbackCorrect": "Se não a abandonar, ela o guardará.",
+   "feedbackWrong": {
+    "b": "\"Abandones\" é o que se evita, não o que ela faz.",
+    "c": "\"Ama-a\" é o pedido; a ação dela é guardar."
+   },
+   "hint": "Resultado logo após \"Não a abandones\".",
+   "learningObjective": "Identificar a ação protetora da sabedoria.",
+   "evidence": [
+    "Provérbios 4:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 4:13, por que se deve guardar a correção?",
+   "verseRef": "Provérbios 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque ela é a vida"
+    },
+    {
+     "id": "b",
+     "text": "Porque ela é só enfeite"
+    },
+    {
+     "id": "c",
+     "text": "Porque ela atrapalha a corrida"
+    },
+    {
+     "id": "d",
+     "text": "Porque ela substitui a sabedoria"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque ela é a tua vida",
+   "feedbackCorrect": "O texto diz para guardar a correção porque ela é a vida.",
+   "feedbackWrong": {
+    "b": "Não é enfeite; é vida.",
+    "c": "4:12 fala de não tropeçar, não de atrapalhar.",
+    "d": "A correção pertence ao caminho da sabedoria."
+   },
+   "hint": "Cláusula com \"porque\" no fim.",
+   "learningObjective": "Observar o valor da correção.",
+   "evidence": [
+    "Provérbios 4:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 4:6 na ordem do texto.",
+   "verseRef": "Provérbios 4:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não a abandones e ela te guardará"
+    },
+    {
+     "id": "b",
+     "text": "ama-a"
+    },
+    {
+     "id": "c",
+     "text": "e ela te protegerá"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Não a abandones e ela te guardará",
+   "feedbackCorrect": "Primeiro não abandonar; depois amar e ser protegido.",
+   "feedbackWrong": {
+    "default": "Comece por não abandonar; a proteção fecha o versículo."
+   },
+   "hint": "O versículo abre com a proibição.",
+   "learningObjective": "Seguir a ordem de 4:6.",
+   "evidence": [
+    "Provérbios 4:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 4:7, que adjetivo a sabedoria recebe?",
+   "verseRef": "Provérbios 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "principal"
+    },
+    {
+     "id": "b",
+     "text": "opcional"
+    },
+    {
+     "id": "c",
+     "text": "distante"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A sabedoria é a principal coisa",
+   "feedbackCorrect": "Ela é a principal coisa; por isso se deve obtê-la.",
+   "feedbackWrong": {
+    "b": "Não é opcional; é principal.",
+    "c": "Não é distante; é para ser adquirida."
+   },
+   "hint": "Adjetivo logo após \"é a\".",
+   "learningObjective": "Lembrar a prioridade nomeada no texto.",
+   "evidence": [
+    "Provérbios 4:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 4:7 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 4:7",
+   "passageA": {
+    "ref": "Provérbios 4:7",
+    "text": "A sabedoria é a principal coisa"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A sabedoria não é enfeite: é a prioridade a adquirir."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria como enfeite"
+    },
+    {
+     "id": "b",
+     "text": "Prioridade a adquirir"
+    },
+    {
+     "id": "c",
+     "text": "Coisa sem valor"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "A sabedoria é a principal coisa",
+   "feedbackCorrect": "Chamar de principal liga o versículo à prioridade da cena.",
+   "feedbackWrong": {
+    "a": "Principal não é enfeite.",
+    "c": "O texto afirma valor máximo, não ausência."
+   },
+   "hint": "Pense no que \"principal\" exige.",
+   "learningObjective": "Ligar 4:7 à prioridade da cena.",
+   "evidence": [
+    "Provérbios 4:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 4:10, ouvir e acolher as palavras é ligado à multiplicação dos anos de vida.",
+   "verseRef": "Provérbios 4:10",
+   "correctOptionId": "true",
+   "evidenceSpan": "pois elas multiplicarão teus anos de vida",
+   "feedbackCorrect": "\"Pois\" liga o ouvir ao alongamento da vida.",
+   "feedbackWrong": {
+    "false": "Releia 4:10: as palavras multiplicarão anos de vida."
+   },
+   "hint": "Veja a palavra que explica o pedido de ouvir.",
+   "learningObjective": "Compreender a relação ouvir–vida.",
+   "evidence": [
+    "Provérbios 4:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 4:10, toque a palavra que marca a razão de acolher as palavras.",
+   "verseRef": "Provérbios 4:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "pois"
+    },
+    {
+     "id": "b",
+     "text": "filho"
+    },
+    {
+     "id": "c",
+     "text": "anos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pois elas multiplicarão teus anos de vida",
+   "feedbackCorrect": "\"Pois\" introduz a razão: as palavras multiplicam anos.",
+   "feedbackWrong": {
+    "b": "\"Filho\" é o vocativo, não a razão.",
+    "c": "\"Anos\" é o fruto; a marca da causa é pois."
+   },
+   "hint": "Palavra curta antes de \"elas multiplicarão\".",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Provérbios 4:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 4:6 estabelece entre abandono e proteção?",
+   "verseRef": "Provérbios 4:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Não abandonar a sabedoria resulta em ser guardado"
+    },
+    {
+     "id": "b",
+     "text": "Abandoná-la garante proteção maior"
+    },
+    {
+     "id": "c",
+     "text": "A guarda independe de amá-la"
+    },
+    {
+     "id": "d",
+     "text": "Proteger-se dispensa adquirir entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Não a abandones e ela te guardará",
+   "feedbackCorrect": "A proteção é o resultado de não abandonar e de amar.",
+   "feedbackWrong": {
+    "b": "O texto liga guarda a não abandonar.",
+    "c": "\"Ama-a e ela te protegerá\" une amor e proteção.",
+    "d": "4:5 ainda manda adquirir entendimento."
+   },
+   "hint": "Leia as duas metades do versículo.",
+   "learningObjective": "Relacionar permanência e guarda.",
+   "evidence": [
+    "Provérbios 4:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Provérbios 4:5–13?",
+   "verseRef": "Provérbios 4:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ordem de adquirir e não abandonar"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria como prioridade"
+    },
+    {
+     "id": "c",
+     "text": "Correção retida como vida"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Adquire a sabedoria, adquire o entendimento",
+   "feedbackCorrect": "Adquirir, priorizar e reter a correção fecham o movimento.",
+   "feedbackWrong": {
+    "default": "A correção como vida vem por último."
+   },
+   "hint": "O fim do trecho fala de correção e vida.",
+   "learningObjective": "Compreender o movimento do trecho.",
+   "evidence": [
+    "Provérbios 4:5",
+    "Provérbios 4:7",
+    "Provérbios 4:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 4:13, que substantivo é chamado de vida?",
+   "verseRef": "Provérbios 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "correção"
+    },
+    {
+     "id": "b",
+     "text": "pressa"
+    },
+    {
+     "id": "c",
+     "text": "coroa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "porque ela é a tua vida",
+   "feedbackCorrect": "A correção é a vida: por isso não se deve largá-la.",
+   "feedbackWrong": {
+    "b": "Pressa não aparece; o sujeito é a correção.",
+    "c": "A coroa está em 4:9; aqui é a correção."
+   },
+   "hint": "Sujeito de \"Retém\" no início.",
+   "learningObjective": "Lembrar o que carrega a vida no versículo.",
+   "evidence": [
+    "Provérbios 4:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 4:13 a Provérbios 3:18?",
+   "verseRef": "Provérbios 4:13",
+   "passageA": {
+    "ref": "Provérbios 4:13",
+    "text": "ela é a tua vida"
+   },
+   "passageB": {
+    "ref": "Provérbios 3:18"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria como vida"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria como peso"
+    },
+    {
+     "id": "c",
+     "text": "Correção sem valor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ela é a tua vida",
+   "feedbackCorrect": "Nos dois textos, a sabedoria/instrução se liga à vida.",
+   "feedbackWrong": {
+    "b": "O elo é vida, não peso.",
+    "c": "O texto chama a correção de vida."
+   },
+   "hint": "Compare a ideia de vida.",
+   "learningObjective": "Cruzar a sabedoria como vida em Provérbios.",
+   "evidence": [
+    "Provérbios 4:13",
+    "Provérbios 3:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 4:6, abandonar a sabedoria ainda garante a mesma proteção prometida.",
+   "verseRef": "Provérbios 4:6",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não a abandones e ela te guardará",
+   "feedbackCorrect": "A guarda está ligada a não abandonar; largar corta a promessa.",
+   "feedbackWrong": {
+    "true": "Releia 4:6: a guarda depende de não abandoná-la."
+   },
+   "hint": "Veja a condição antes da promessa de guarda.",
+   "learningObjective": "Corrigir a leitura que separa abandono e guarda.",
+   "evidence": [
+    "Provérbios 4:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 4:7, toque o trecho que sustenta o custo da busca.",
+   "verseRef": "Provérbios 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "com tudo"
+    },
+    {
+     "id": "b",
+     "text": "portanto"
+    },
+    {
+     "id": "c",
+     "text": "entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com tudo o que tens, adquire entendimento",
+   "feedbackCorrect": "\"Com tudo\" mostra que a aquisição vale o custo total.",
+   "feedbackWrong": {
+    "b": "\"Portanto\" liga a conclusão; o custo está em com tudo.",
+    "c": "\"Entendimento\" é o alvo; o custo é com tudo."
+   },
+   "hint": "Trecho que fala do preço da aquisição.",
+   "learningObjective": "Sustentar no texto o custo da sabedoria.",
+   "evidence": [
+    "Provérbios 4:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 4:5–13 sustenta?",
+   "verseRef": "Provérbios 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "A sabedoria é prioridade que guarda e dá vida"
+    },
+    {
+     "id": "b",
+     "text": "A sabedoria é enfeite que se pode largar"
+    },
+    {
+     "id": "c",
+     "text": "A correção pode ser abandonada sem perda"
+    },
+    {
+     "id": "d",
+     "text": "Adquirir uma vez basta para sempre"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A sabedoria é a principal coisa",
+   "feedbackCorrect": "Prioridade, guarda e vida aparecem juntos no trecho.",
+   "feedbackWrong": {
+    "b": "4:6–7 negam o enfeite descartável.",
+    "c": "4:13 manda reter a correção.",
+    "d": "4:6 insiste em não abandonar."
+   },
+   "hint": "Una principal, guardar e vida.",
+   "learningObjective": "Escolher a leitura que o texto sustenta.",
+   "evidence": [
+    "Provérbios 4:7",
+    "Provérbios 4:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra a sabedoria como vida?",
+   "verseRef": "Provérbios 4:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "A sabedoria é a principal coisa"
+    },
+    {
+     "id": "b",
+     "text": "Reter a correção porque é vida"
+    },
+    {
+     "id": "c",
+     "text": "Jesus louva quem ouve e pratica"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "A sabedoria é a principal coisa",
+   "feedbackCorrect": "Prioridade e vida em Provérbios ecoam no ouvir de Mateus.",
+   "feedbackWrong": {
+    "default": "Comece por 4:7; Mateus 7:24 fecha."
+   },
+   "hint": "Do valor da sabedoria à prática no Evangelho.",
+   "learningObjective": "Ver a sabedoria como vida no fio bíblico.",
+   "evidence": [
+    "Provérbios 4:7",
+    "Provérbios 4:13",
+    "Mateus 7:24"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 4:6, que verbo promete o que a sabedoria faz a quem não a abandona?",
+   "verseRef": "Provérbios 4:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "guardará"
+    },
+    {
+     "id": "b",
+     "text": "esquecerá"
+    },
+    {
+     "id": "c",
+     "text": "venderá"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ela te guardará",
+   "feedbackCorrect": "\"Guardará\" carrega a promessa de proteção da sabedoria.",
+   "feedbackWrong": {
+    "b": "Ela não esquece; guarda.",
+    "c": "Não há venda; há guarda."
+   },
+   "hint": "Verbo logo após \"e ela te\".",
+   "learningObjective": "Lembrar o verbo da proteção.",
+   "evidence": [
+    "Provérbios 4:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 4:7 a Tiago 1:5?",
+   "verseRef": "Provérbios 4:7",
+   "passageA": {
+    "ref": "Provérbios 4:7"
+   },
+   "passageB": {
+    "ref": "Tiago 1:5"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Buscar a sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Evitar o entendimento"
+    },
+    {
+     "id": "c",
+     "text": "Largar a correção"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "obtém a sabedoria",
+   "feedbackCorrect": "Provérbios manda obter; Tiago manda pedir a Deus.",
+   "feedbackWrong": {
+    "b": "O alvo é obter entendimento, não evitá-lo.",
+    "c": "Os textos exaltam a sabedoria, não o abandono."
+   },
+   "hint": "Compare o que se deve obter ou pedir.",
+   "learningObjective": "Ligar a prioridade de Provérbios ao pedido de Tiago.",
+   "evidence": [
+    "Provérbios 4:7",
+    "Tiago 1:5"
+   ]
+  }
+ ]
+}

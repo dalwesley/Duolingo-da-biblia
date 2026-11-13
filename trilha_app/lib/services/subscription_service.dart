@@ -450,6 +450,23 @@ class SubscriptionService extends ChangeNotifier {
     await _loadOfferings();
   }
 
+  /// Relê o entitlement sem o cache do SDK: um mês promocional concedido
+  /// pelo servidor (convite que virou assinatura) aparece na hora.
+  Future<void> refreshCustomerInfo() {
+    if (!isConfigured || _debugFakeStore) return Future<void>.value();
+    final run = _bindChain.then((_) async {
+      if (!_initialized || !await Purchases.isConfigured) return;
+      try {
+        await Purchases.invalidateCustomerInfoCache();
+        _onCustomerInfo(await Purchases.getCustomerInfo());
+      } catch (e) {
+        PlusLog.log('assinatura', 'releitura falhou: $e');
+      }
+    });
+    _bindChain = run.catchError((Object _) {});
+    return run;
+  }
+
   /// A oferta não veio na abertura (sem rede, loja lenta, init que falhou):
   /// tenta de novo. Antes ficava assim até reiniciar o app — o paywall dizia
   /// "não disponível" e o Plus seguia fechado, sem saída. O paywall chama ao

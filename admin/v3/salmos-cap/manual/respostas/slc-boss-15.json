@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "Salmos 127:1–3",
+    "passages": [
+      {
+        "ref": "Salmos 127:1–3"
+      },
+      {
+        "ref": "Salmos 128:1–3"
+      },
+      {
+        "ref": "Salmos 129:1–3"
+      },
+      {
+        "ref": "Salmos 130:1–3"
+      },
+      {
+        "ref": "Salmos 131:1–2"
+      }
+    ],
+    "context": "Revise os salmos desta etapa (se o senhor não edificar, temor e mesa, muitas vezes me angustiaram…).",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Travessia: Livro V 127–136",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Se o Senhor não edificar a casa.",
+        "evidenceRef": "Salmos 127:1",
+        "evidenceSpan": "Se o Senhor não edificar a casa"
+      },
+      {
+        "text": "Os filhos são a herança do Senhor e.",
+        "evidenceRef": "Salmos 127:3",
+        "evidenceSpan": "Os filhos são a herança do Senhor e"
+      },
+      {
+        "text": "Bem-aventurado é aquele que teme ao Senhor e.",
+        "evidenceRef": "Salmos 128:1",
+        "evidenceSpan": "Bem-aventurado é aquele que teme ao Senhor e"
+      },
+      {
+        "text": "A sua esposa, no interior da sua casa, será como a videira frutífera; seus filhos serão como rebent…",
+        "evidenceRef": "Salmos 128:3",
+        "evidenceSpan": "A sua esposa"
+      },
+      {
+        "text": "Desde a minha juventude muitas vezes me angustiaram.",
+        "evidenceRef": "Salmos 129:1",
+        "evidenceSpan": "Desde a minha juventude muitas vezes me angustiaram"
+      },
+      {
+        "text": "Os lavradores araram meu dorso.",
+        "evidenceRef": "Salmos 129:3",
+        "evidenceSpan": "Os lavradores araram meu dorso"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "edificar",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "casa",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Se o senhor não edificar a",
+        "evidenceRef": "Salmos 127:1"
+      },
+      {
+        "label": "Os filhos são a herança do",
+        "evidenceRef": "Salmos 127:3"
+      },
+      {
+        "label": "Bem-aventurado é aquele que teme ao",
+        "evidenceRef": "Salmos 128:1"
+      },
+      {
+        "label": "A sua esposa no interior da",
+        "evidenceRef": "Salmos 128:3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": "Se",
+        "evidenceRef": "Salmos 127:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": "Se",
+        "evidenceRef": "Salmos 130:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"nem\".",
+        "marker": "nem",
+        "evidenceRef": "Salmos 131:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 27:1",
+        "bridge": "Luz e salvação"
+      },
+      {
+        "ref": "Salmos 90:1",
+        "bridge": "Morada em todas as gerações"
+      },
+      {
+        "ref": "Salmos 121:2",
+        "bridge": "Socorro vem do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Nesta fatia do saltério, a oração do povo segue firme diante de Deus"
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Deus sustenta a oração do povo nestes salmos: Se o Senhor não edificar, Temor e mesa, Muitas vezes me angustiaram",
+    "anchorQuestion": "O que Salmos 127:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 127:1, se o Senhor não edificar a casa.",
+      "verseRef": "Salmos 127:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Se o Senhor não edificar a casa",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 127:1 afirma.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 127:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 127:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "não"
+        },
+        {
+          "id": "c",
+          "text": "edificar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 128:1, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 128:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurado é aquele que teme ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurado é aquele que teme ao Senhor e",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 128:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 127:1 na ordem do texto.",
+      "verseRef": "Salmos 127:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se"
+        },
+        {
+          "id": "b",
+          "text": "o"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 128:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 128:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "esposa"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "não"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esposa",
+      "feedbackCorrect": "A palavra do versículo é «esposa».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 128:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 127:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 127:1",
+      "passageA": {
+        "ref": "Salmos 127:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Revise os salmos desta etapa (se o senhor não edificar, temor e mesa, muitas vezes me angustiaram…)."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 130:1, toque outra palavra central do trecho.",
+      "verseRef": "Salmos 130:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Das"
+        },
+        {
+          "id": "b",
+          "text": "profundezas"
+        },
+        {
+          "id": "c",
+          "text": "clamo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Das",
+      "feedbackCorrect": "O trecho destaca «profundezas».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Salmos 130:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 131:1 na ordem do texto.",
+      "verseRef": "Salmos 131:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "meu"
+        },
+        {
+          "id": "c",
+          "text": "coração"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Salmos 131:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 127:1, o marcador Se une ideias no fluxo do texto.",
+      "verseRef": "Salmos 127:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 127:1 afirma.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 127:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 127:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "não"
+        },
+        {
+          "id": "b",
+          "text": "Se"
+        },
+        {
+          "id": "c",
+          "text": "edificar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não",
+      "feedbackCorrect": "O versículo destaca «Se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 128:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 128:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A sua esposa",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 128:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 127:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se o Senhor não edificar"
+        },
+        {
+          "id": "b",
+          "text": "Os filhos são a herança"
+        },
+        {
+          "id": "c",
+          "text": "Bem-aventurado é aquele que teme ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 128:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 128:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurado"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "não"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurado",
+      "feedbackCorrect": "A palavra do versículo é «Bem-aventurado».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 128:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 127:1 a Salmos 27:1.",
+      "verseRef": "Salmos 127:1",
+      "passageA": {
+        "ref": "Salmos 127:1"
+      },
+      "passageB": {
+        "ref": "Salmos 27:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luz e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 130:3, toque outra palavra central do trecho.",
+      "verseRef": "Salmos 130:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "você"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "observar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você",
+      "feedbackCorrect": "O trecho destaca «você».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Salmos 130:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Salmos 131:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge o clamor ou a cena do salmo"
+        },
+        {
+          "id": "b",
+          "text": "Deus é lembrado em seu caráter"
+        },
+        {
+          "id": "c",
+          "text": "O povo responde com fé ou louvor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aquietei-me",
+      "feedbackCorrect": "O bloco caminha do clamor à resposta.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "Do clamor ao louvor.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Salmos 131:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 131:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Aquietei-me",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 131:2 afirma.",
+      "evidence": [
+        "Salmos 131:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 131:2, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 131:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aquietei-me"
+        },
+        {
+          "id": "b",
+          "text": "sosseguei"
+        },
+        {
+          "id": "c",
+          "text": "como"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquietei-me",
+      "feedbackCorrect": "O versículo destaca «Aquietei-me».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 131:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 129:1, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 129:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desde a minha juventude muitas vezes me angustiaram",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 129:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 127:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 129:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 129:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desde"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "não"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Desde",
+      "feedbackCorrect": "A palavra do versículo é «Desde».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 129:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 127:1 a Salmos 90:1.",
+      "verseRef": "Salmos 127:1",
+      "passageA": {
+        "ref": "Salmos 127:1"
+      },
+      "passageB": {
+        "ref": "Salmos 90:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Morada em todas as gerações"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 127:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 131:1, toque outra palavra central do trecho.",
+      "verseRef": "Salmos 131:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "meu",
+      "feedbackCorrect": "O trecho destaca «meu».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Salmos 131:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco (pro).",
+      "verseRef": "Salmos 132:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge o clamor ou a cena do salmo no salmo"
+        },
+        {
+          "id": "b",
+          "text": "Deus é lembrado em seu caráter no salmo"
+        },
+        {
+          "id": "c",
+          "text": "O povo responde com fé ou louvor no salmo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Lembra-te",
+      "feedbackCorrect": "O bloco caminha do clamor à resposta.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "Do clamor ao louvor.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Salmos 132:1"
+      ]
+    }
+  ]
+}

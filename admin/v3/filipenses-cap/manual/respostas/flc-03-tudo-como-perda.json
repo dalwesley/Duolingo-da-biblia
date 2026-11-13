@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Filipenses 3:7–12",
+    "passages": [
+      {
+        "ref": "Filipenses 3:7–12"
+      },
+      {
+        "ref": "Filipenses 3:13–14"
+      }
+    ],
+    "context": "O que era lucro Paulo considera perda por Cristo. Ele prossegue para o alvo, o prêmio da vocação em Cristo.",
+    "keyword": "perda",
+    "keywordGloss": "Tudo o que era lucro humano contado como perda para ganhar a Cristo.",
+    "focusQuestion": "O que ainda conta como lucro e precisa virar perda por Cristo?",
+    "reflectionPrompts": [
+      "Tudo como perda",
+      "Justiça pela fé",
+      "Prosseguir ao alvo"
+    ],
+    "facts": [
+      {
+        "text": "O que era lucro, considerou perda por amor a Cristo.",
+        "evidenceRef": "Filipenses 3:7",
+        "evidenceSpan": "o que para mim era lucro, considerei perda por amor a Cristo"
+      },
+      {
+        "text": "Considera tudo perda pela sublimidade do conhecimento de Cristo.",
+        "evidenceRef": "Filipenses 3:8",
+        "evidenceSpan": "considero como perda todas as coisas, em razão da sublimidade do conhecimento de Cristo Jesus"
+      },
+      {
+        "text": "Quer ser encontrado nele com justiça pela fé, não pela lei.",
+        "evidenceRef": "Filipenses 3:9",
+        "evidenceSpan": "a justiça que vem de Deus, baseada na fé"
+      },
+      {
+        "text": "Quer conhecer o poder da ressurreição e a comunhão dos sofrimentos.",
+        "evidenceRef": "Filipenses 3:10",
+        "evidenceSpan": "o poder de sua ressurreição, e a comunhão dos seus sofrimentos"
+      },
+      {
+        "text": "Não que já tenha atingido a perfeição; prossigo.",
+        "evidenceRef": "Filipenses 3:12",
+        "evidenceSpan": "prossigo para conquistar aquilo para o que também fui conquistado"
+      },
+      {
+        "text": "Prossigo para o alvo, para o prêmio da soberana vocação.",
+        "evidenceRef": "Filipenses 3:14",
+        "evidenceSpan": "prossigo para o alvo, para o prêmio da soberana vocação de Deus em Cristo Jesus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "refugo",
+        "gloss": "Tudo o que era lucro contado como lixo para ganhar a Cristo."
+      },
+      {
+        "term": "fé",
+        "gloss": "Base da justiça que vem de Deus."
+      },
+      {
+        "term": "alvo",
+        "gloss": "Meta para a qual Paulo prossegue."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lucro virado perda por Cristo",
+        "evidenceRef": "Filipenses 3:7–8"
+      },
+      {
+        "label": "Justiça pela fé; conhecer Cristo",
+        "evidenceRef": "Filipenses 3:9–11"
+      },
+      {
+        "label": "Ainda não perfeito; prossigo",
+        "evidenceRef": "Filipenses 3:12–13"
+      },
+      {
+        "label": "Alvo e prêmio da vocação",
+        "evidenceRef": "Filipenses 3:14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Lucro humano vira perda por Cristo.",
+        "marker": "Mas",
+        "evidenceRef": "Filipenses 3:7"
+      },
+      {
+        "kind": "propósito",
+        "text": "Perde tudo para ganhar a Cristo.",
+        "marker": "para",
+        "evidenceRef": "Filipenses 3:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não perfeição alcançada; mas prossigo.",
+        "marker": "mas",
+        "evidenceRef": "Filipenses 3:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 13:44",
+        "bridge": "Tudo por um tesouro"
+      },
+      {
+        "ref": "Romanos 3:22",
+        "bridge": "Justiça pela fé"
+      },
+      {
+        "ref": "1 Coríntios 9:24",
+        "bridge": "Correr para o prêmio"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo já chegou à perfeição.",
+        "why": "Não que já tenha atingido a perfeição."
+      },
+      {
+        "text": "A justiça própria da lei basta.",
+        "why": "Quer a justiça pela fé em Cristo."
+      },
+      {
+        "text": "Conhecer Cristo dispensa sofrimento.",
+        "why": "Há comunhão dos seus sofrimentos."
+      }
+    ],
+    "centralInsight": "Conhecer Cristo vale mais que tudo: prossigo para o alvo, o prêmio da vocação celestial.",
+    "anchorQuestion": "Segundo Filipenses 3:14, para onde Paulo prossegue?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Filipenses 3:7, o que era lucro Paulo considerou perda por amor a Cristo.",
+      "verseRef": "Filipenses 3:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "considerei perda por amor a Cristo",
+      "feedbackCorrect": "Lucro virou perda por Cristo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo."
+      },
+      "hint": "Olhe o contraste lucro/perda.",
+      "learningObjective": "Observar a perda por Cristo.",
+      "evidence": [
+        "Filipenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Filipenses 3:14, toque para onde ele prossegue.",
+      "verseRef": "Filipenses 3:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "alvo"
+        },
+        {
+          "id": "b",
+          "text": "prêmio"
+        },
+        {
+          "id": "c",
+          "text": "vocação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prossigo para o alvo",
+      "feedbackCorrect": "Para o alvo.",
+      "feedbackWrong": {
+        "b": "Prêmio qualifica o alvo.",
+        "c": "Vocação nomeia o prêmio."
+      },
+      "hint": "Veja o complemento de prossigo para.",
+      "learningObjective": "Identificar o alvo.",
+      "evidence": [
+        "Filipenses 3:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Filipenses 3:9, que justiça ele quer?",
+      "verseRef": "Filipenses 3:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "A que vem de Deus, baseada na fé"
+        },
+        {
+          "id": "b",
+          "text": "A própria da lei"
+        },
+        {
+          "id": "c",
+          "text": "A do lucro humano"
+        },
+        {
+          "id": "d",
+          "text": "A do refugo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a justiça que vem de Deus, baseada na fé",
+      "feedbackCorrect": "Justiça de Deus pela fé.",
+      "feedbackWrong": {
+        "b": "Não a da lei.",
+        "c": "Lucro virou perda.",
+        "d": "Refugo é o que perdeu."
+      },
+      "hint": "Leia o contraste.",
+      "learningObjective": "Ver a justiça pela fé.",
+      "evidence": [
+        "Filipenses 3:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Filipenses 3:7–8 na ordem do texto.",
+      "verseRef": "Filipenses 3:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "o que para mim era lucro, considerei perda por amor a Cristo"
+        },
+        {
+          "id": "b",
+          "text": "considero como perda todas as coisas"
+        },
+        {
+          "id": "c",
+          "text": "para ganhar a Cristo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para ganhar a Cristo",
+      "feedbackCorrect": "Perda, todas as coisas e ganhar Cristo.",
+      "feedbackWrong": {
+        "default": "Comece pelo lucro virado perda."
+      },
+      "hint": "Siga 3:7–8.",
+      "learningObjective": "Seguir até ganhar Cristo.",
+      "evidence": [
+        "Filipenses 3:7–8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Filipenses 3:7, complete: considerei ___ por amor a Cristo.",
+      "verseRef": "Filipenses 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "perda"
+        },
+        {
+          "id": "b",
+          "text": "lucro"
+        },
+        {
+          "id": "c",
+          "text": "lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "considerei perda por amor a Cristo",
+      "feedbackCorrect": "Perda é o novo cálculo.",
+      "feedbackWrong": {
+        "b": "Lucro era o passado.",
+        "c": "Lei aparece em 3:9."
+      },
+      "hint": "Veja o objeto de considerei.",
+      "learningObjective": "Lembrar perda.",
+      "evidence": [
+        "Filipenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Filipenses 3:8 comunica que se liga a este contexto?",
+      "verseRef": "Filipenses 3:8",
+      "passageA": {
+        "ref": "Filipenses 3:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Conhecer Cristo vale mais que todo lucro; Paulo prossegue ao alvo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo perda para ganhar Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Lucro como meta final"
+        },
+        {
+          "id": "c",
+          "text": "Perfeição já alcançada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para ganhar a Cristo",
+      "feedbackCorrect": "Ganhar Cristo é o alvo do cálculo.",
+      "feedbackWrong": {
+        "b": "Lucro virou perda.",
+        "c": "Ainda não é perfeito."
+      },
+      "hint": "Ligue perda e ganho.",
+      "learningObjective": "Ligar o contexto a ganhar Cristo.",
+      "evidence": [
+        "Filipenses 3:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Filipenses 3:7, o Mas mantém o lucro humano como meta final.",
+      "verseRef": "Filipenses 3:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "considerei perda por amor a Cristo",
+      "feedbackCorrect": "O Mas vira lucro em perda.",
+      "feedbackWrong": {
+        "true": "A meta passa a ser Cristo."
+      },
+      "hint": "Leia o Mas.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Filipenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Filipenses 3:7, toque a palavra que marca a virada.",
+      "verseRef": "Filipenses 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "lucro"
+        },
+        {
+          "id": "c",
+          "text": "amor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas o que para mim era lucro",
+      "feedbackCorrect": "O Mas marca a virada.",
+      "feedbackWrong": {
+        "b": "Lucro é o passado.",
+        "c": "Amor a Cristo motiva."
+      },
+      "hint": "Procure a conjunção inicial.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Filipenses 3:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Filipenses 3:12–14 estabelece entre perfeição e alvo?",
+      "verseRef": "Filipenses 3:12–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ainda não perfeito; por isso prossigo ao alvo"
+        },
+        {
+          "id": "b",
+          "text": "Perfeição dispensa o alvo"
+        },
+        {
+          "id": "c",
+          "text": "O prêmio já foi totalmente tomado"
+        },
+        {
+          "id": "d",
+          "text": "Esquecer o futuro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prossigo para o alvo",
+      "feedbackCorrect": "Não perfeito; prossigo.",
+      "feedbackWrong": {
+        "b": "Há prosseguir.",
+        "c": "Ainda não alcançou.",
+        "d": "Avança para o que está diante."
+      },
+      "hint": "Una 3:12 e 3:14.",
+      "learningObjective": "Relacionar perfeição e alvo.",
+      "evidence": [
+        "Filipenses 3:12–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Filipenses 3:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lucro virado perda por Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Justiça pela fé; conhecer Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Alvo e prêmio da vocação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "prossigo para o alvo",
+      "feedbackCorrect": "Perda, justiça e alvo.",
+      "feedbackWrong": {
+        "default": "Comece pela perda."
+      },
+      "hint": "Pense no fluxo.",
+      "learningObjective": "Ordenar perda, fé e alvo.",
+      "evidence": [
+        "Filipenses 3:7–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Filipenses 3:8, complete: para ___ a Cristo.",
+      "verseRef": "Filipenses 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "ganhar"
+        },
+        {
+          "id": "b",
+          "text": "lucro"
+        },
+        {
+          "id": "c",
+          "text": "lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para ganhar a Cristo",
+      "feedbackCorrect": "Ganhar Cristo é o fim da perda.",
+      "feedbackWrong": {
+        "b": "Lucro era o passado.",
+        "c": "Lei aparece em 3:9."
+      },
+      "hint": "Veja o verbo do propósito final.",
+      "learningObjective": "Lembrar o verbo ganhar.",
+      "evidence": [
+        "Filipenses 3:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Filipenses 3:9 a Romanos 3:22?",
+      "verseRef": "Filipenses 3:9",
+      "passageA": {
+        "ref": "Filipenses 3:9"
+      },
+      "passageB": {
+        "ref": "Romanos 3:22"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Lucro da lei"
+        },
+        {
+          "id": "c",
+          "text": "Perfeição já plena"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a justiça que vem de Deus, baseada na fé",
+      "feedbackCorrect": "Ambos apontam justiça pela fé.",
+      "feedbackWrong": {
+        "b": "Lei não justifica.",
+        "c": "Ainda prossigue."
+      },
+      "hint": "Compare a justiça.",
+      "learningObjective": "Ligar a justiça pela fé.",
+      "evidence": [
+        "Filipenses 3:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Filipenses 3:12, Paulo já atingiu a perfeição e parou.",
+      "verseRef": "Filipenses 3:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não que eu já tenha recebido ou que já tenha atingido a perfeição",
+      "feedbackCorrect": "Ele nega a perfeição alcançada e prossegue.",
+      "feedbackWrong": {
+        "true": "O texto nega a chegada plena."
+      },
+      "hint": "Leia a negação.",
+      "learningObjective": "Avaliar a leitura da perfeição.",
+      "evidence": [
+        "Filipenses 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Filipenses 3:12, toque o trecho que sustenta a ação contínua.",
+      "verseRef": "Filipenses 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "prossigo"
+        },
+        {
+          "id": "b",
+          "text": "recebido"
+        },
+        {
+          "id": "c",
+          "text": "perfeição"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas prossigo para conquistar",
+      "feedbackCorrect": "Prossigo sustenta a continuidade.",
+      "feedbackWrong": {
+        "b": "Recebido é o que nega.",
+        "c": "Perfeição é o que não atingiu."
+      },
+      "hint": "Veja o verbo depois de mas.",
+      "learningObjective": "Tocar o prosseguir.",
+      "evidence": [
+        "Filipenses 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Filipenses 3:7–14 sustenta melhor?",
+      "verseRef": "Filipenses 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo vale mais; prossigo ao prêmio pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Lucro humano é o alvo"
+        },
+        {
+          "id": "c",
+          "text": "Perfeição já plena"
+        },
+        {
+          "id": "d",
+          "text": "Justiça só pela lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para ganhar a Cristo",
+      "feedbackCorrect": "Perda, fé e alvo.",
+      "feedbackWrong": {
+        "b": "Lucro virou perda.",
+        "c": "Ainda não perfeito.",
+        "d": "Justiça pela fé."
+      },
+      "hint": "Una perda e alvo.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Filipenses 3:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até o prêmio.",
+      "verseRef": "Filipenses 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contar tudo como perda por Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Ser achado na justiça que vem da fé"
+        },
+        {
+          "id": "c",
+          "text": "Correr ao prêmio da vocação"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para ganhar a Cristo",
+      "feedbackCorrect": "Perda, fé e prêmio.",
+      "feedbackWrong": {
+        "default": "O prêmio fecha."
+      },
+      "hint": "Siga o arco.",
+      "learningObjective": "Encadear perda, fé e prêmio.",
+      "evidence": [
+        "Filipenses 3:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Filipenses 3:8, complete: as considero como ___.",
+      "verseRef": "Filipenses 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "refugo"
+        },
+        {
+          "id": "b",
+          "text": "alvo"
+        },
+        {
+          "id": "c",
+          "text": "prêmio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as considero como refugo",
+      "feedbackCorrect": "Refugo nomeia o valor do antigo lucro.",
+      "feedbackWrong": {
+        "b": "Alvo é a meta.",
+        "c": "Prêmio é o que busca."
+      },
+      "hint": "Veja como ele nomeia o que perdeu.",
+      "learningObjective": "Lembrar o termo refugo.",
+      "evidence": [
+        "Filipenses 3:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Filipenses 3:14 a 1 Coríntios 9:24?",
+      "verseRef": "Filipenses 3:14",
+      "passageA": {
+        "ref": "Filipenses 3:14"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 9:24"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Correr para o prêmio"
+        },
+        {
+          "id": "b",
+          "text": "Lucro da lei"
+        },
+        {
+          "id": "c",
+          "text": "Perfeição já plena"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prossigo para o alvo, para o prêmio",
+      "feedbackCorrect": "Ambos apontam correr ao prêmio.",
+      "feedbackWrong": {
+        "b": "Lei não é o prêmio.",
+        "c": "Ainda prossigue."
+      },
+      "hint": "Compare o prêmio.",
+      "learningObjective": "Ligar o correr ao prêmio.",
+      "evidence": [
+        "Filipenses 3:14"
+      ]
+    }
+  ]
+}

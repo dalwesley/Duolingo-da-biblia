@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "1 Timóteo 5:1–6",
+    "passages": [
+      {
+        "ref": "1 Timóteo 5:1–6"
+      },
+      {
+        "ref": "1 Timóteo 5:7–8"
+      }
+    ],
+    "context": "Paulo orienta o trato com gerações na igreja e o cuidado com viúvas; quem não cuida da própria casa negou a fé.",
+    "keyword": "casa",
+    "keywordGloss": "Cuidar dos da própria casa é exigência da fé.",
+    "focusQuestion": "Quem da sua casa precisa do seu cuidado concreto?",
+    "reflectionPrompts": [
+      "Trato com respeito",
+      "Honrar viúvas",
+      "Cuidar da casa"
+    ],
+    "facts": [
+      {
+        "text": "Não repreender idosos com severidade; exortar como pais.",
+        "evidenceRef": "1 Timóteo 5:1",
+        "evidenceSpan": "Não repreenda os mais velhos com severidade"
+      },
+      {
+        "text": "Tratar jovens como irmãos; idosas como mães.",
+        "evidenceRef": "1 Timóteo 5:2",
+        "evidenceSpan": "As mulheres idosas, como a mães"
+      },
+      {
+        "text": "Honrar as viúvas que de fato são viúvas.",
+        "evidenceRef": "1 Timóteo 5:3",
+        "evidenceSpan": "Honre as viúvas que de fato são viúvas"
+      },
+      {
+        "text": "Filhos e netos aprendam piedade para com a casa.",
+        "evidenceRef": "1 Timóteo 5:4",
+        "evidenceSpan": "exercer piedade para com a própria casa"
+      },
+      {
+        "text": "A verdadeira viúva confia em Deus.",
+        "evidenceRef": "1 Timóteo 5:5",
+        "evidenceSpan": "confia em Deus e persevera em súplicas"
+      },
+      {
+        "text": "Quem não cuida dos seus negou a fé.",
+        "evidenceRef": "1 Timóteo 5:8",
+        "evidenceSpan": "negou a fé e é pior do que um infiel"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "casa",
+        "gloss": "Própria família a cuidar primeiro."
+      },
+      {
+        "term": "viúvas",
+        "gloss": "Honrar as que de fato o são."
+      },
+      {
+        "term": "fé",
+        "gloss": "Negada quando se abandona o cuidado doméstico."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Trato respeitoso por geração",
+        "evidenceRef": "1 Timóteo 5:1"
+      },
+      {
+        "label": "Honrar viúvas",
+        "evidenceRef": "1 Timóteo 5:3"
+      },
+      {
+        "label": "Piedade na própria casa",
+        "evidenceRef": "1 Timóteo 5:4"
+      },
+      {
+        "label": "Cuidar ou negar a fé",
+        "evidenceRef": "1 Timóteo 5:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não severidade; antes exortação.",
+        "marker": "mas",
+        "evidenceRef": "1 Timóteo 5:1"
+      },
+      {
+        "kind": "causa",
+        "text": "Piedade doméstica é aceitável diante de Deus.",
+        "marker": "pois",
+        "evidenceRef": "1 Timóteo 5:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Não cuidar é negar a fé.",
+        "marker": null,
+        "evidenceRef": "1 Timóteo 5:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 6:2",
+        "bridge": "Honrar pai e mãe"
+      },
+      {
+        "ref": "Tiago 1:27",
+        "bridge": "Órfãos e viúvas"
+      },
+      {
+        "ref": "Gálatas 6:10",
+        "bridge": "Bem aos da fé"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A fé dispensa o cuidado da família.",
+        "why": "Não cuidar é negar a fé."
+      },
+      {
+        "text": "Viúvas não merecem honra.",
+        "why": "Honre as viúvas que de fato são."
+      },
+      {
+        "text": "Severidade com idosos é virtude.",
+        "why": "Não repreenda com severidade; exorte."
+      }
+    ],
+    "centralInsight": "Se alguém não cuida dos seus, especialmente dos da família, negou a fé e é pior que o incrédulo.",
+    "anchorQuestion": "Segundo 1 Timóteo 5:8, o que acontece a quem não cuida dos seus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 5:8, não cuidar dos seus é sinal de fé madura.",
+      "verseRef": "1 Timóteo 5:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "negou a fé e é pior do que um infiel",
+      "feedbackCorrect": "Negou a fé.",
+      "feedbackWrong": {
+        "true": "Releia: negou a fé."
+      },
+      "hint": "Olhe o fim.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 5:8, toque o que foi negado.",
+      "verseRef": "1 Timóteo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "a fé"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "infiel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé",
+      "feedbackCorrect": "A fé.",
+      "feedbackWrong": {
+        "b": "Quem cuidar.",
+        "c": "Comparação."
+      },
+      "hint": "O objeto.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Timóteo 5:3, o que fazer com as viúvas?",
+      "verseRef": "1 Timóteo 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Honrá-las"
+        },
+        {
+          "id": "b",
+          "text": "Ignorá-las"
+        },
+        {
+          "id": "c",
+          "text": "Repreendê-las com severidade"
+        },
+        {
+          "id": "d",
+          "text": "Negar-lhes oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Honre as viúvas que de fato são viúvas",
+      "feedbackCorrect": "Honrar.",
+      "feedbackWrong": {
+        "b": "Há honra.",
+        "c": "É com idosos.",
+        "d": "Há oração."
+      },
+      "hint": "Leia.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 5:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 5:1 na ordem do texto.",
+      "verseRef": "1 Timóteo 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não repreenda os mais velhos com severidade"
+        },
+        {
+          "id": "b",
+          "text": "mas exorte-os como a pais"
+        },
+        {
+          "id": "c",
+          "text": "aos jovens, como a irmãos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não repreenda os mais velhos com severidade",
+      "feedbackCorrect": "Trato por geração.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 5:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Timóteo 5:4, exercer ___ para com a própria casa.",
+      "verseRef": "1 Timóteo 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "piedade"
+        },
+        {
+          "id": "b",
+          "text": "ódio"
+        },
+        {
+          "id": "c",
+          "text": "fuga"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exercer piedade para com a própria casa",
+      "feedbackCorrect": "Piedade.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "O exercício.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Timóteo 5:8 comunica que se liga a este contexto?",
+      "verseRef": "1 Timóteo 5:8",
+      "passageA": {
+        "ref": "1 Timóteo 5:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cuidar da casa é exigência da fé."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuidar ou negar a fé"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar a casa"
+        },
+        {
+          "id": "c",
+          "text": "Fé sem cuidado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé e é pior do que um infiel",
+      "feedbackCorrect": "Cuidado e fé.",
+      "feedbackWrong": {
+        "b": "Há cuidar.",
+        "c": "Há ligação."
+      },
+      "hint": "O resultado.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 5:4, a piedade para com a casa é aceitável diante de Deus.",
+      "verseRef": "1 Timóteo 5:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois isto é aceitável diante de Deus",
+      "feedbackCorrect": "Pois marca a causa.",
+      "feedbackWrong": {
+        "false": "Releia o pois."
+      },
+      "hint": "Repare no pois.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 5:4, toque a palavra que marca a causa.",
+      "verseRef": "1 Timóteo 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "primeiro"
+        },
+        {
+          "id": "c",
+          "text": "netos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto é aceitável diante de Deus",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "Ordem.",
+        "c": "Quem."
+      },
+      "hint": "A ligação.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Timóteo 5:4–8 se relacionam?",
+      "verseRef": "1 Timóteo 5:4–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade doméstica; falhar nela é negar a fé"
+        },
+        {
+          "id": "b",
+          "text": "Casa irrelevante à fé"
+        },
+        {
+          "id": "c",
+          "text": "Só cuidar de estranhos"
+        },
+        {
+          "id": "d",
+          "text": "Severidade com idosos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé e é pior do que um infiel",
+      "feedbackCorrect": "Casa e fé.",
+      "feedbackWrong": {
+        "b": "Há ligação.",
+        "c": "Há própria casa.",
+        "d": "Há exortação."
+      },
+      "hint": "Una.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 5:4–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Timóteo 5:1–8?",
+      "verseRef": "1 Timóteo 5:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trato respeitoso"
+        },
+        {
+          "id": "b",
+          "text": "Honrar viúvas"
+        },
+        {
+          "id": "c",
+          "text": "Cuidar da casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "especialmente dos que pertencem à sua própria casa",
+      "feedbackCorrect": "Respeito, honra e cuidado.",
+      "feedbackWrong": {
+        "default": "Comece pelo trato."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 5:1",
+        "1 Timóteo 5:3",
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Timóteo 5:1, Não repreenda, ___ exorte-os.",
+      "verseRef": "1 Timóteo 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "logo"
+        },
+        {
+          "id": "c",
+          "text": "ainda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas exorte-os como a pais",
+      "feedbackCorrect": "Mas.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Contraste.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 5:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 5:3 a Tiago 1:27?",
+      "verseRef": "1 Timóteo 5:3",
+      "passageA": {
+        "ref": "1 Timóteo 5:3"
+      },
+      "passageB": {
+        "ref": "Tiago 1:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuidar de viúvas"
+        },
+        {
+          "id": "b",
+          "text": "Ignorar viúvas"
+        },
+        {
+          "id": "c",
+          "text": "Sem religião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Honre as viúvas que de fato são viúvas",
+      "feedbackCorrect": "Viúvas.",
+      "feedbackWrong": {
+        "b": "Há honra.",
+        "c": "Há piedade."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 5:3",
+        "Tiago 1:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Timóteo 5:1–8 ensina que abandonar a família é compatível com uma fé intacta.",
+      "verseRef": "1 Timóteo 5:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "negou a fé e é pior do que um infiel",
+      "feedbackCorrect": "Abandonar é negar a fé.",
+      "feedbackWrong": {
+        "true": "Releia: negou a fé."
+      },
+      "hint": "Veja o resultado.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 5:8, toque o veredito de quem não cuida dos seus.",
+      "verseRef": "1 Timóteo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "infiel"
+        },
+        {
+          "id": "b",
+          "text": "cuida"
+        },
+        {
+          "id": "c",
+          "text": "especialmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é pior do que um infiel",
+      "feedbackCorrect": "Quem não cuida dos seus é pior do que um infiel.",
+      "feedbackWrong": {
+        "b": "Cuida é o verbo omitido, não o veredito.",
+        "c": "Especialmente marca a prioridade da casa."
+      },
+      "hint": "Toque a comparação final.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "1 Timóteo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé se prova no cuidado respeitoso da casa e das viúvas"
+        },
+        {
+          "id": "b",
+          "text": "Fé dispensa a família"
+        },
+        {
+          "id": "c",
+          "text": "Severidade com idosos"
+        },
+        {
+          "id": "d",
+          "text": "Ignorar viúvas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé e é pior do que um infiel",
+      "feedbackCorrect": "Cuidado e fé.",
+      "feedbackWrong": {
+        "b": "Nega.",
+        "c": "Há exortação.",
+        "d": "Há honra."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Timóteo 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tratar com respeito"
+        },
+        {
+          "id": "b",
+          "text": "Sustentar viúvas"
+        },
+        {
+          "id": "c",
+          "text": "Cuidar da casa sob pena de negar a fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "negou a fé",
+      "feedbackCorrect": "Respeito, honra e cuidado.",
+      "feedbackWrong": {
+        "default": "Comece pelo trato."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 5:1",
+        "1 Timóteo 5:3",
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Timóteo 5:8, negou a ___.",
+      "verseRef": "1 Timóteo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé",
+      "feedbackCorrect": "Fé.",
+      "feedbackWrong": {
+        "b": "Quem cuidar.",
+        "c": "Não."
+      },
+      "hint": "O termo.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 5:8 a Efésios 6:2?",
+      "verseRef": "1 Timóteo 5:8",
+      "passageA": {
+        "ref": "1 Timóteo 5:8"
+      },
+      "passageB": {
+        "ref": "Efésios 6:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Honrar a família"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar pais"
+        },
+        {
+          "id": "c",
+          "text": "Sem cuidado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "especialmente dos que pertencem à sua própria casa",
+      "feedbackCorrect": "Casa.",
+      "feedbackWrong": {
+        "b": "Há cuidar.",
+        "c": "Há cuidado."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 5:8",
+        "Efésios 6:2"
+      ]
+    }
+  ]
+}

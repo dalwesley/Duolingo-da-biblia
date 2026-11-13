@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Atos 3:1–6",
+  "passages": [
+   {
+    "ref": "Atos 3:1–6"
+   },
+   {
+    "ref": "Atos 3:7–10"
+   }
+  ],
+  "context": "Pedro e João sobem ao templo na hora da oração. Na Porta Formosa, um homem coxo de nascença pede esmola todos os dias.",
+  "keyword": "nome",
+  "keywordGloss": "Não é prata nem ouro: o que Pedro dá opera em nome de Jesus Cristo.",
+  "focusQuestion": "O que você tem em Jesus que pode oferecer a quem só espera esmola?",
+  "reflectionPrompts": [
+   "Mais que ouro",
+   "O nome que levanta",
+   "Louvor no templo"
+  ],
+  "facts": [
+   {
+    "text": "Pedro e João subiam ao templo para a oração da hora nona.",
+    "evidenceRef": "Atos 3:1",
+    "evidenceSpan": "subiam juntos ao templo para a oração da hora nona"
+   },
+   {
+    "text": "Um homem coxo de nascença pedia esmolas à Porta Formosa.",
+    "evidenceRef": "Atos 3:2",
+    "evidenceSpan": "um homem coxo de nascença"
+   },
+   {
+    "text": "Pedro diz que não tem prata nem ouro, mas dá o que possui.",
+    "evidenceRef": "Atos 3:6",
+    "evidenceSpan": "Não tenho nem prata nem ouro; mas o que possuo, isso te dou"
+   },
+   {
+    "text": "Em nome de Jesus Cristo, o Nazareno, manda o homem levantar-se e andar.",
+    "evidenceRef": "Atos 3:6",
+    "evidenceSpan": "em nome de Jesus Cristo, o Nazareno, levanta-te e anda"
+   },
+   {
+    "text": "Os pés e tornozelos se firmaram; ele entrou saltando e louvando a Deus.",
+    "evidenceRef": "Atos 3:7–8",
+    "evidenceSpan": "os pés e tornozelos dele se firmaram"
+   },
+   {
+    "text": "O povo o reconheceu e se encheu de espanto e admiração.",
+    "evidenceRef": "Atos 3:10",
+    "evidenceSpan": "se encheram de espanto e admiração"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "nome",
+    "gloss": "A autoridade de Jesus Cristo: é por ele que o homem se levanta."
+   },
+   {
+    "term": "coxo",
+    "gloss": "Desde o nascimento: a cura revela poder maior que esmola."
+   },
+   {
+    "term": "louvando",
+    "gloss": "A reação do curado: entra no templo glorificando a Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pedro e João sobem para orar",
+    "evidenceRef": "Atos 3:1"
+   },
+   {
+    "label": "O coxo pede esmola na porta",
+    "evidenceRef": "Atos 3:2–3"
+   },
+   {
+    "label": "Pedro dá o nome de Jesus",
+    "evidenceRef": "Atos 3:6"
+   },
+   {
+    "label": "O homem anda e louva a Deus",
+    "evidenceRef": "Atos 3:7–8"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Não tem prata nem ouro, mas dá o que possui em nome de Jesus.",
+    "marker": "porém",
+    "evidenceRef": "Atos 3:6"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao ser levantado, os pés e tornozelos se firmaram imediatamente.",
+    "marker": "imediatamente",
+    "evidenceRef": "Atos 3:7"
+   },
+   {
+    "kind": "sequência",
+    "text": "Salta, anda, entra no templo saltando e louvando a Deus.",
+    "marker": "E",
+    "evidenceRef": "Atos 3:8"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Isaías 35:6",
+    "bridge": "Coxos que saltam"
+   },
+   {
+    "ref": "João 14:13",
+    "bridge": "Pedir no nome de Jesus"
+   },
+   {
+    "ref": "Marcos 2:11–12",
+    "bridge": "Levantar e andar perante todos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Pedro curou o homem pelo próprio poder ou riqueza.",
+    "why": "Ele declara não ter prata nem ouro e age em nome de Jesus."
+   },
+   {
+    "text": "O homem só precisava de esmola; a cura foi um detalhe secundário.",
+    "why": "O centro da cena é o levantar e andar no nome de Jesus."
+   },
+   {
+    "text": "Ninguém notou a mudança; a cura ficou privada.",
+    "why": "Todo o povo o viu andar e louvar; reconheceram-no com espanto."
+   }
+  ],
+  "centralInsight": "Pedro não tem ouro, mas dá o que tem: em nome de Jesus, levanta e anda.",
+  "anchorQuestion": "Em nome de quem Pedro manda o coxo levantar-se e andar?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Atos 3:2, o homem coxo de nascença era colocado diariamente à Porta Formosa.",
+   "verseRef": "Atos 3:2",
+   "correctOptionId": "true",
+   "evidenceSpan": "o colocavam diariamente à porta do templo, chamada Formosa",
+   "feedbackCorrect": "Era rotina: diariamente à Porta Formosa, para pedir esmolas.",
+   "feedbackWrong": {
+    "false": "Releia Atos 3:2: colocavam-no diariamente à Porta Formosa."
+   },
+   "hint": "Olhe com que frequência o colocavam ali.",
+   "learningObjective": "Observar a situação cotidiana do coxo.",
+   "evidence": [
+    "Atos 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 3:1, toque para onde Pedro e João subiam.",
+   "verseRef": "Atos 3:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "ao templo"
+    },
+    {
+     "id": "b",
+     "text": "hora nona"
+    },
+    {
+     "id": "c",
+     "text": "juntos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "subiam juntos ao templo",
+   "feedbackCorrect": "Subiam ao templo para a oração da hora nona.",
+   "feedbackWrong": {
+    "b": "\"Hora nona\" marca o tempo da oração, não o destino.",
+    "c": "\"Juntos\" diz como iam, não para onde."
+   },
+   "hint": "Procure o lugar da oração.",
+   "learningObjective": "Identificar o destino de Pedro e João.",
+   "evidence": [
+    "Atos 3:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Atos 3:6, o que Pedro diz ter para dar ao homem?",
+   "verseRef": "Atos 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Prata e ouro em abundância"
+    },
+    {
+     "id": "b",
+     "text": "O que possui, em nome de Jesus Cristo"
+    },
+    {
+     "id": "c",
+     "text": "Um emprego no templo"
+    },
+    {
+     "id": "d",
+     "text": "Uma carta de recomendação"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o que possuo, isso te dou: em nome de Jesus Cristo",
+   "feedbackCorrect": "Sem prata nem ouro, Pedro dá o que tem: o nome de Jesus.",
+   "feedbackWrong": {
+    "a": "Ele diz explicitamente que não tem prata nem ouro.",
+    "c": "O texto não fala de emprego; fala do nome de Jesus.",
+    "d": "Não há carta: há ordem para levantar-se e andar."
+   },
+   "hint": "Compare o que ele não tem com o que dá.",
+   "learningObjective": "Observar o que Pedro oferece.",
+   "evidence": [
+    "Atos 3:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 3:8 na ordem do texto.",
+   "verseRef": "Atos 3:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "E, dando um salto, levantou-se, andou"
+    },
+    {
+     "id": "b",
+     "text": "e entrou com eles no templo"
+    },
+    {
+     "id": "c",
+     "text": "saltando e louvando a Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "dando um salto, levantou-se, andou",
+   "feedbackCorrect": "Salta e anda, entra no templo, e louva a Deus.",
+   "feedbackWrong": {
+    "default": "Comece pelo salto; o louvor fecha o versículo."
+   },
+   "hint": "O versículo começa com o salto.",
+   "learningObjective": "Reconhecer a sequência após a cura.",
+   "evidence": [
+    "Atos 3:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Atos 3:2, como o homem é descrito desde o nascimento?",
+   "verseRef": "Atos 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "cego"
+    },
+    {
+     "id": "b",
+     "text": "coxo"
+    },
+    {
+     "id": "c",
+     "text": "surdo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "um homem coxo de nascença",
+   "feedbackCorrect": "Era coxo de nascença: a cura muda uma condição de toda a vida.",
+   "feedbackWrong": {
+    "a": "O texto não fala de cegueira; fala de um homem coxo.",
+    "c": "Não é surdez: o homem é coxo de nascença."
+   },
+   "hint": "É a condição física citada no versículo.",
+   "learningObjective": "Lembrar a condição do homem na porta.",
+   "evidence": [
+    "Atos 3:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Atos 3:6 comunica que se liga a este contexto?",
+   "verseRef": "Atos 3:6",
+   "passageA": {
+    "ref": "Atos 3:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Sem ouro, Pedro oferece o poder do nome de Jesus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Só dinheiro resolve"
+    },
+    {
+     "id": "b",
+     "text": "O nome de Jesus basta"
+    },
+    {
+     "id": "c",
+     "text": "Esmola era o essencial"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "em nome de Jesus Cristo, o Nazareno, levanta-te e anda",
+   "feedbackCorrect": "O contraste é o ponto: sem ouro, o nome de Jesus levanta.",
+   "feedbackWrong": {
+    "a": "Pedro declara não ter prata nem ouro.",
+    "c": "O homem pedia esmola; Pedro dá algo maior."
+   },
+   "hint": "Veja o que Pedro dá no lugar do ouro.",
+   "learningObjective": "Ligar a cena ao poder do nome de Jesus.",
+   "evidence": [
+    "Atos 3:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Atos 3:6, Pedro responde com prata e ouro antes de falar do nome de Jesus.",
+   "verseRef": "Atos 3:6",
+   "correctOptionId": "false",
+   "evidenceSpan": "Não tenho nem prata nem ouro",
+   "feedbackCorrect": "O \"porém\" marca o contraste: sem ouro, mas com o nome de Jesus.",
+   "feedbackWrong": {
+    "true": "Releia 3:6: ele diz que não tem prata nem ouro."
+   },
+   "hint": "Olhe a primeira frase da resposta de Pedro.",
+   "learningObjective": "Compreender o contraste entre ouro e o nome.",
+   "evidence": [
+    "Atos 3:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 3:6, toque a palavra que marca o contraste na resposta de Pedro.",
+   "verseRef": "Atos 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "porém"
+    },
+    {
+     "id": "b",
+     "text": "prata"
+    },
+    {
+     "id": "c",
+     "text": "anda"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pedro, porém, respondeu",
+   "feedbackCorrect": "\"Porém\" vira a expectativa: em vez de esmola, o nome de Jesus.",
+   "feedbackWrong": {
+    "b": "\"Prata\" é o que falta; o contraste está em \"porém\".",
+    "c": "\"Anda\" é a ordem final, não o marcador de contraste."
+   },
+   "hint": "Procure a palavra logo após \"Pedro\".",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Atos 3:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Atos 3:7 se relaciona com a ordem de Atos 3:6?",
+   "verseRef": "Atos 3:6–7",
+   "options": [
+    {
+     "id": "a",
+     "text": "A ordem se cumpre: ao levantá-lo, os pés se firmam"
+    },
+    {
+     "id": "b",
+     "text": "Nada muda; o homem permanece no chão"
+    },
+    {
+     "id": "c",
+     "text": "Pedro se arrepende e oferece só esmola"
+    },
+    {
+     "id": "d",
+     "text": "João impede Pedro de tocar o homem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "imediatamente, os pés e tornozelos dele se firmaram",
+   "feedbackCorrect": "A palavra em nome de Jesus produz resultado imediato.",
+   "feedbackWrong": {
+    "b": "Os pés e tornozelos se firmaram imediatamente.",
+    "c": "Não há arrependimento: há levantamento pela mão direita.",
+    "d": "João está com Pedro; ninguém impede o gesto."
+   },
+   "hint": "Veja o que acontece \"imediatamente\".",
+   "learningObjective": "Relacionar a ordem ao resultado da cura.",
+   "evidence": [
+    "Atos 3:6–7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Atos 3:1–8?",
+   "verseRef": "Atos 3:6–7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedro e João sobem para orar"
+    },
+    {
+     "id": "b",
+     "text": "Pedro dá o nome de Jesus"
+    },
+    {
+     "id": "c",
+     "text": "O homem anda e louva a Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "em nome de Jesus Cristo, o Nazareno",
+   "feedbackCorrect": "Oração, o nome que levanta, e o louvor no templo.",
+   "feedbackWrong": {
+    "default": "O louvor vem depois da cura; a subida ao templo abre a cena."
+   },
+   "hint": "Comece pela subida ao templo.",
+   "learningObjective": "Compreender o movimento da cena.",
+   "evidence": [
+    "Atos 3:1–8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Atos 3:7, com que velocidade os pés e tornozelos se firmaram?",
+   "verseRef": "Atos 3:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "lentamente"
+    },
+    {
+     "id": "b",
+     "text": "imediatamente"
+    },
+    {
+     "id": "c",
+     "text": "depois"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "imediatamente, os pés e tornozelos dele se firmaram",
+   "feedbackCorrect": "\"Imediatamente\" marca o resultado: a cura não demora.",
+   "feedbackWrong": {
+    "a": "O texto não fala de lentidão; fala de imediatamente.",
+    "c": "Não é \"depois\": o firmamento é imediato."
+   },
+   "hint": "É o advérbio antes de \"os pés\".",
+   "learningObjective": "Perceber a palavra que marca o resultado.",
+   "evidence": [
+    "Atos 3:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Atos 3:8 a Isaías 35:6?",
+   "verseRef": "Atos 3:8",
+   "passageA": {
+    "ref": "Atos 3:8"
+   },
+   "passageB": {
+    "ref": "Isaías 35:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Coxos que saltam"
+    },
+    {
+     "id": "b",
+     "text": "Coxos que desistem"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio no templo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "dando um salto, levantou-se, andou",
+   "evidence": [
+    "Atos 3:8",
+    "Isaías 35:6"
+   ],
+   "feedbackCorrect": "Isaías anuncia coxos que saltam; Atos mostra o salto e o louvor.",
+   "feedbackWrong": {
+    "b": "Nos dois textos o coxo se move com alegria, não desiste.",
+    "c": "Há salto e louvor, não silêncio."
+   },
+   "hint": "Compare o gesto do coxo nos dois textos.",
+   "learningObjective": "Relacionar a cura à promessa de Isaías."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Atos 3:6–10 mostra que o nome de Jesus produz cura pública que leva ao louvor a Deus.",
+   "verseRef": "Atos 3:7–8",
+   "correctOptionId": "true",
+   "evidenceSpan": "saltando e louvando a Deus",
+   "feedbackCorrect": "Em nome de Jesus ele anda; o povo vê e ele louva a Deus.",
+   "feedbackWrong": {
+    "false": "A cura é pública e termina em louvor, não em segredo."
+   },
+   "hint": "Veja o fim do caminho do homem curado.",
+   "learningObjective": "Interpretar a cura como testemunho público.",
+   "evidence": [
+    "Atos 3:6–8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 3:6, toque o trecho que mostra a autoridade pela qual Pedro age.",
+   "verseRef": "Atos 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "nome de Jesus"
+    },
+    {
+     "id": "b",
+     "text": "prata nem ouro"
+    },
+    {
+     "id": "c",
+     "text": "o que possuo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em nome de Jesus Cristo, o Nazareno",
+   "feedbackCorrect": "A autoridade não é o ouro: é o nome de Jesus Cristo.",
+   "feedbackWrong": {
+    "b": "Prata e ouro são o que falta, não a autoridade.",
+    "c": "\"O que possuo\" introduz o dom; a autoridade está no nome."
+   },
+   "hint": "Procure em nome de quem ele fala.",
+   "learningObjective": "Sustentar que a cura vem no nome de Jesus.",
+   "evidence": [
+    "Atos 3:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Atos 3:6–10 sustenta sobre o milagre?",
+   "verseRef": "Atos 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus, pelo seu nome, levanta onde o ouro não alcança"
+    },
+    {
+     "id": "b",
+     "text": "Pedro curou pelo próprio poder e riqueza"
+    },
+    {
+     "id": "c",
+     "text": "A cura foi privada e ninguém notou"
+    },
+    {
+     "id": "d",
+     "text": "Esmola era tudo o que o homem precisava"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em nome de Jesus Cristo, o Nazareno, levanta-te e anda",
+   "feedbackCorrect": "Sem ouro, o nome de Jesus levanta; o povo vê e admira.",
+   "feedbackWrong": {
+    "b": "Pedro nega ter prata e ouro e aponta para Jesus.",
+    "c": "Todo o povo o viu andar e louvar a Deus.",
+    "d": "Ele pedia esmola; recebeu levantar-se e andar."
+   },
+   "hint": "Una o que Pedro não tem com o que o povo vê.",
+   "learningObjective": "Escolher a interpretação que o texto sustenta.",
+   "evidence": [
+    "Atos 3:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho dos que se levantam no nome de Jesus?",
+   "verseRef": "Atos 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Isaías anuncia que coxos saltarão"
+    },
+    {
+     "id": "b",
+     "text": "Pedro manda levantar em nome de Jesus"
+    },
+    {
+     "id": "c",
+     "text": "O homem salta e louva a Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "levanta-te e anda",
+   "evidence": [
+    "Isaías 35:6",
+    "Atos 3:6",
+    "Atos 3:8"
+   ],
+   "feedbackCorrect": "A promessa antiga se cumpre no nome de Jesus e vira louvor.",
+   "feedbackWrong": {
+    "default": "Siga: promessa (Is 35:6), ordem (At 3:6), louvor (At 3:8)."
+   },
+   "hint": "Comece pela promessa de Isaías.",
+   "learningObjective": "Ver a cura no fio da promessa bíblica."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Atos 3:8, que palavra mostra a reação do homem ao entrar no templo?",
+   "verseRef": "Atos 3:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "reclamando"
+    },
+    {
+     "id": "b",
+     "text": "louvando"
+    },
+    {
+     "id": "c",
+     "text": "escondendo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "saltando e louvando a Deus",
+   "feedbackCorrect": "\"Louvando\" carrega o sentido: a cura vira adoração a Deus.",
+   "feedbackWrong": {
+    "a": "O texto não fala de reclamação; fala de louvor.",
+    "c": "Ele entra no templo à vista de todos, louvando."
+   },
+   "hint": "Olhe o fim do versículo, junto de \"saltando\".",
+   "learningObjective": "Lembrar o termo que marca a resposta de fé.",
+   "evidence": [
+    "Atos 3:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Atos 3:6 a João 14:13?",
+   "verseRef": "Atos 3:6",
+   "passageA": {
+    "ref": "Atos 3:6"
+   },
+   "passageB": {
+    "ref": "João 14:13"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedir no nome de Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Agir sem o nome"
+    },
+    {
+     "id": "c",
+     "text": "Confiar só no ouro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em nome de Jesus Cristo, o Nazareno",
+   "evidence": [
+    "Atos 3:6",
+    "João 14:13"
+   ],
+   "feedbackCorrect": "Jesus ensina a pedir em seu nome; Pedro age nesse nome.",
+   "feedbackWrong": {
+    "b": "Os dois textos colocam o nome de Jesus no centro.",
+    "c": "Atos mostra a ausência de ouro; João aponta ao nome."
+   },
+   "hint": "Compare o papel do nome de Jesus.",
+   "learningObjective": "Ligar a cura ao ensino de Jesus sobre o seu nome."
+  }
+ ]
+}

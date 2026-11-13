@@ -1,0 +1,623 @@
+{
+  "study": {
+    "passageRef": "João 15:12–17",
+    "passages": [
+      { "ref": "João 15:12–17" },
+      { "ref": "João 11:21–27" },
+      { "ref": "João 12:23–28" },
+      { "ref": "João 13:3–10" },
+      { "ref": "João 14:15–21" }
+    ],
+    "context": "Esta travessia revisa João 11 a 15. Marta fala da morte do irmão. Jesus anuncia a hora, lava os pés, promete o Consolador e chama os discípulos de amigos.",
+    "keyword": "amor entregue",
+    "keywordGloss": "O amor de Jesus, que dá a vida e pede o mesmo entre os seus.",
+    "focusQuestion": "Quando amar custa uma entrega, o que você ainda guarda só para si?",
+    "reflectionPrompts": [
+      "Jesus diante da morte",
+      "A hora e o serviço",
+      "Amigos que ele escolhe"
+    ],
+    "facts": [
+      {
+        "text": "Jesus declara a Marta que o irmão dela irá ressurgir.",
+        "evidenceRef": "João 11:23",
+        "evidenceSpan": "Teu irmão irá ressurgir"
+      },
+      {
+        "text": "Jesus diz a Marta que ele é a ressurreição e a vida.",
+        "evidenceRef": "João 11:25",
+        "evidenceSpan": "Eu sou a ressurreição e a vida"
+      },
+      {
+        "text": "A voz do céu diz que já glorificou o nome e ainda o glorificará.",
+        "evidenceRef": "João 12:28",
+        "evidenceSpan": "Já o glorifiquei e ainda o glorificarei"
+      },
+      {
+        "text": "Jesus começa a lavar os pés dos discípulos.",
+        "evidenceRef": "João 13:5",
+        "evidenceSpan": "começou a lavar os pés dos discípulos"
+      },
+      {
+        "text": "Jesus anuncia que o Pai dará outro Consolador para estar com os discípulos.",
+        "evidenceRef": "João 14:16",
+        "evidenceSpan": "vos dará outro Consolador"
+      },
+      {
+        "text": "Jesus diz que o maior amor é dar a própria vida pelos amigos.",
+        "evidenceRef": "João 15:13",
+        "evidenceSpan": "dar a própria vida pelos seus amigos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ressurreição",
+        "gloss": "Jesus não aponta só um dia futuro: ele diz que ele mesmo é a ressurreição e a vida."
+      },
+      {
+        "term": "Consolador",
+        "gloss": "Aquele que Jesus pede ao Pai para ficar com os discípulos para sempre."
+      },
+      {
+        "term": "amigos",
+        "gloss": "O nome que Jesus dá a quem ele escolheu e a quem ele manda amar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus se revela a Marta como vida",
+        "evidenceRef": "João 11:25"
+      },
+      {
+        "label": "A hora chega e o grão explica a morte",
+        "evidenceRef": "João 12:23–24"
+      },
+      {
+        "label": "O Mestre se levanta e lava os pés",
+        "evidenceRef": "João 13:4–5"
+      },
+      {
+        "label": "Jesus chama os seus de amigos",
+        "evidenceRef": "João 15:14–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Se o grão não morre, fica só; se morre, produz abundantes frutos.",
+        "marker": "mas",
+        "evidenceRef": "João 12:24"
+      },
+      {
+        "kind": "propósito",
+        "text": "Jesus diz que veio para esta hora, mesmo com a alma angustiada.",
+        "marker": "para",
+        "evidenceRef": "João 12:27"
+      },
+      {
+        "kind": "causa",
+        "text": "O mundo não pode receber o Espírito porque não o vê nem o conhece.",
+        "marker": "porque",
+        "evidenceRef": "João 14:17"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 10:11", "bridge": "Jesus entrega a sua vida" },
+      { "ref": "João 13:34", "bridge": "Mandamento de amar como ele" },
+      { "ref": "João 14:26", "bridge": "O Pai envia o Consolador" }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus lava os pés porque ainda não sabia que voltava para o Pai.",
+        "why": "João 13:3 diz que ele sabia: viera de Deus e voltava para Deus. Só então se levanta e serve."
+      },
+      {
+        "text": "O grão que morre deixa de produzir fruto.",
+        "why": "João 12:24 diz o contrário: se não morrer, fica só; se morrer, produz abundantes frutos."
+      },
+      {
+        "text": "Os discípulos viraram amigos porque foram eles que escolheram Jesus.",
+        "why": "João 15:16 diz que não foram eles. Jesus é quem os escolheu e os chamou de amigos."
+      }
+    ],
+    "centralInsight": "Na hora de Jesus, o amor se entrega",
+    "anchorQuestion": "O que Jesus diz que é o maior amor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 11:23, Marta é quem declara que o irmão dela irá ressurgir.",
+      "verseRef": "João 11:23",
+      "correctOptionId": "false",
+      "evidenceSpan": "Teu irmão irá ressurgir",
+      "feedbackCorrect": "Quem declara isso é Jesus. Marta responde só no versículo seguinte.",
+      "feedbackWrong": {
+        "true": "A fala de 11:23 é de Jesus. Marta fala do último dia em 11:24."
+      },
+      "hint": "Veja quem fala neste versículo.",
+      "learningObjective": "Observar quem anuncia a Marta que o irmão irá ressurgir.",
+      "evidence": ["João 11:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 11:25, toque o que Jesus diz ser, junto com a vida.",
+      "verseRef": "João 11:25",
+      "options": [
+        { "id": "a", "text": "ainda que morra" },
+        { "id": "b", "text": "aquele que crê" },
+        { "id": "c", "text": "a ressurreição" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "Jesus não aponta só um dia futuro. Ele diz que ele mesmo é a ressurreição.",
+      "feedbackWrong": {
+        "a": "\"Ainda que morra\" fala de quem crê, não do que Jesus diz ser.",
+        "b": "\"Aquele que crê\" é quem recebe a vida, não o título de Jesus."
+      },
+      "hint": "Olhe como Jesus se nomeia no começo da fala.",
+      "learningObjective": "Observar o título que Jesus dá a si mesmo diante de Marta.",
+      "evidence": ["João 11:25"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 12:28, o que a voz do céu declara?",
+      "verseRef": "João 12:28",
+      "options": [
+        { "id": "a", "text": "O nome do Pai seria esquecido" },
+        { "id": "b", "text": "O nome já foi e ainda será glorificado" },
+        { "id": "c", "text": "A voz manda Jesus evitar a hora" },
+        { "id": "d", "text": "O céu permanece em silêncio" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Já o glorifiquei e ainda o glorificarei",
+      "feedbackCorrect": "A voz responde ao pedido de Jesus: o nome já foi glorificado e ainda será.",
+      "feedbackWrong": {
+        "a": "A voz não fala de esquecimento. Ela diz que já glorificou e ainda glorificará.",
+        "c": "Quem fala em ser salvo da hora é Jesus, no versículo anterior, e não a voz.",
+        "d": "O céu não fica calado. Uma voz responde e fala da glória do nome."
+      },
+      "hint": "Leia o que a voz diz no fim do versículo.",
+      "learningObjective": "Observar o que a voz do céu declara sobre o nome.",
+      "evidence": ["João 12:28"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 12:24 na ordem do texto.",
+      "verseRef": "João 12:24",
+      "options": [
+        { "id": "a", "text": "se o grão de trigo, caindo na terra, não morrer" },
+        { "id": "b", "text": "permanecerá só" },
+        { "id": "c", "text": "produzirá abundantes frutos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "produzirá abundantes frutos",
+      "feedbackCorrect": "Se o grão não morre, fica só. Se morre, produz muito fruto.",
+      "feedbackWrong": {
+        "default": "Comece pela condição de não morrer; o fruto vem no fim."
+      },
+      "hint": "O versículo começa pela condição de não morrer.",
+      "learningObjective": "Reconhecer a sequência do grão de trigo em João 12:24.",
+      "evidence": ["João 12:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 13:5, em que Jesus derramou a água?",
+      "verseRef": "João 13:5",
+      "options": [
+        { "id": "a", "text": "jarra" },
+        { "id": "b", "text": "bacia" },
+        { "id": "c", "text": "taça" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "derramou água na bacia",
+      "feedbackCorrect": "A água vai para a bacia, e com ela Jesus lava os pés.",
+      "feedbackWrong": {
+        "a": "O texto não fala de jarra. A água é derramada na bacia.",
+        "c": "Não é uma taça de mesa. Jesus derrama a água na bacia."
+      },
+      "hint": "Olhe o recipiente em que a água é derramada.",
+      "learningObjective": "Lembrar o recipiente com que Jesus lava os pés.",
+      "evidence": ["João 13:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 15:13 comunica que se liga a este contexto?",
+      "verseRef": "João 15:13",
+      "options": [
+        { "id": "a", "text": "Amizade só de conversa" },
+        { "id": "b", "text": "Serviço sem nenhum preço" },
+        { "id": "c", "text": "Amor que entrega a vida" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "dar a própria vida pelos seus amigos",
+      "passageA": { "ref": "João 15:13" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus fala de um amor que chega a dar a vida pelos amigos."
+      },
+      "feedbackCorrect": "O maior amor, no texto, é dar a própria vida pelos amigos.",
+      "feedbackWrong": {
+        "a": "O versículo não fala de conversa. Fala de dar a vida.",
+        "b": "Não é um serviço barato. O amor aqui entrega a própria vida."
+      },
+      "hint": "Veja o que Jesus diz que ninguém tem maior.",
+      "learningObjective": "Ligar João 15:13 ao amor que entrega a vida.",
+      "evidence": ["João 15:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 14:16, toque quem o Pai dará aos discípulos.",
+      "verseRef": "João 14:16",
+      "options": [
+        { "id": "a", "text": "ao Pai" },
+        { "id": "b", "text": "outro Consolador" },
+        { "id": "c", "text": "para sempre" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ele vos dará outro Consolador",
+      "feedbackCorrect": "Jesus pede, e o Pai dá outro Consolador para ficar com eles sempre.",
+      "feedbackWrong": {
+        "a": "\"Ao Pai\" é a quem Jesus pede, não o que o Pai dá.",
+        "c": "\"Para sempre\" diz até quando. O dom é a pessoa que fica."
+      },
+      "hint": "Veja o que Jesus diz que o Pai vai dar.",
+      "learningObjective": "Observar quem o Pai dará para ficar com os discípulos.",
+      "evidence": ["João 14:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 11:27 na ordem do texto.",
+      "verseRef": "João 11:27",
+      "options": [
+        { "id": "a", "text": "Sim, Senhor, eu creio" },
+        { "id": "b", "text": "tu és o Cristo" },
+        { "id": "c", "text": "o Filho de Deus que havia de vir ao mundo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eu creio que tu és o Cristo",
+      "feedbackCorrect": "Marta crê e confessa Jesus como o Cristo, o Filho de Deus.",
+      "feedbackWrong": {
+        "default": "Comece pelo sim de Marta; o título de Filho de Deus fecha a fala."
+      },
+      "hint": "A fala começa com o sim de Marta.",
+      "learningObjective": "Reconhecer a confissão de Marta em João 11:27.",
+      "evidence": ["João 11:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 12:27, Jesus afirma que esta hora é o motivo da sua vinda.",
+      "verseRef": "João 12:27",
+      "correctOptionId": "true",
+      "evidenceSpan": "foi para isso que vim a esta hora",
+      "feedbackCorrect": "A alma se angustia, mas Jesus diz que veio exatamente para esta hora.",
+      "feedbackWrong": {
+        "false": "Releia o fim do versículo. Ele diz que veio para esta hora."
+      },
+      "hint": "Leia a frase que vem depois do pedido de ser salvo.",
+      "learningObjective": "Compreender que Jesus veio para esta hora.",
+      "evidence": ["João 12:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 12:24, toque a palavra que vira o sentido entre ficar só e dar fruto.",
+      "verseRef": "João 12:24",
+      "options": [
+        { "id": "a", "text": "não" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "se" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas, se morrer, produzirá abundantes frutos",
+      "feedbackCorrect": "O \"mas\" vira a frase: sem morte o grão fica só; com a morte, dá fruto.",
+      "feedbackWrong": {
+        "a": "\"Não\" marca a condição de ficar só, não a virada para o fruto.",
+        "c": "\"Se\" abre as duas hipóteses. A virada entre elas é outra palavra."
+      },
+      "hint": "Procure a palavra curta que muda a direção da frase.",
+      "learningObjective": "Reconhecer o contraste entre o grão que fica só e o que dá fruto.",
+      "evidence": ["João 12:24"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como João 15:15 se relaciona com João 15:14?",
+      "verseRef": "João 15:14–15",
+      "options": [
+        { "id": "a", "text": "Amigo é só um título e o servo continua sem saber nada" },
+        { "id": "b", "text": "Jesus deixa de chamá-los servos e os trata como amigos" },
+        { "id": "c", "text": "O servo passa a mandar e Jesus obedece aos discípulos" },
+        { "id": "d", "text": "A amizade acaba quando Jesus revela o que ouviu do Pai" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu os chamei de amigos",
+      "feedbackCorrect": "Quem obedece é amigo, e Jesus explica: já não os chama de servos.",
+      "feedbackWrong": {
+        "a": "O texto muda o nome de propósito. Servo é quem não sabe; amigo é quem ouve.",
+        "c": "Quem manda continua sendo Jesus. Amigo é quem faz o que ele manda.",
+        "d": "A revelação é o motivo da amizade, não o fim dela."
+      },
+      "hint": "Compare o nome que Jesus usa em cada versículo.",
+      "learningObjective": "Relacionar a amizade de João 15:14 com o nome que Jesus explica.",
+      "evidence": ["João 15:14–15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o gesto de Jesus em João 13:4–5?",
+      "verseRef": "João 13:4–5",
+      "options": [
+        { "id": "a", "text": "Jesus se levanta da mesa" },
+        { "id": "b", "text": "Jesus se cinge com a toalha" },
+        { "id": "c", "text": "Jesus começa a lavar os pés" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "começou a lavar os pés dos discípulos",
+      "feedbackCorrect": "Jesus se levanta, se cinge e só então começa a lavar os pés.",
+      "feedbackWrong": {
+        "default": "Primeiro ele se levanta da mesa; lavar os pés é o último passo."
+      },
+      "hint": "Comece pelo movimento de deixar a mesa.",
+      "learningObjective": "Compreender a sequência do serviço de Jesus ao lavar os pés.",
+      "evidence": ["João 13:4–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 14:17, que palavra liga a recusa do mundo ao que ele não vê?",
+      "verseRef": "João 14:17",
+      "options": [
+        { "id": "a", "text": "embora" },
+        { "id": "b", "text": "quando" },
+        { "id": "c", "text": "porque" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "porque não o vê, nem o conhece",
+      "feedbackCorrect": "O mundo não recebe o Espírito porque não o vê nem o conhece.",
+      "feedbackWrong": {
+        "a": "Não é concessão. A frase dá o motivo da recusa do mundo.",
+        "b": "Não é tempo. A palavra liga a recusa ao que o mundo não vê."
+      },
+      "hint": "Procure o elo entre a recusa do mundo e o que ele não vê.",
+      "learningObjective": "Compreender por que o mundo não pode receber o Espírito.",
+      "evidence": ["João 14:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 15:13 a João 10:11?",
+      "verseRef": "João 15:13",
+      "options": [
+        { "id": "a", "text": "As ovelhas guiam o pastor" },
+        { "id": "b", "text": "Jesus entrega a sua vida" },
+        { "id": "c", "text": "Amor só de palavras" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "dar a própria vida pelos seus amigos",
+      "passageA": { "ref": "João 15:13" },
+      "passageB": { "ref": "João 10:11" },
+      "feedbackCorrect": "O Pastor que entrega a vida e o amor pelos amigos são o mesmo gesto.",
+      "feedbackWrong": {
+        "a": "Nos dois textos, quem entrega a vida é Jesus, não as ovelhas.",
+        "c": "Os dois textos falam de vida entregue, não de um amor só falado."
+      },
+      "hint": "Compare o que o Pastor faz com o maior amor.",
+      "learningObjective": "Relacionar o maior amor com o Pastor que entrega a vida.",
+      "evidence": ["João 15:13", "João 10:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 13:4, toque o que Jesus faz primeiro, antes de pegar a toalha.",
+      "verseRef": "João 13:4",
+      "options": [
+        { "id": "a", "text": "Levantou-se" },
+        { "id": "b", "text": "suas vestes" },
+        { "id": "c", "text": "uma toalha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levantou-se da mesa",
+      "feedbackCorrect": "Jesus se levanta da mesa: o serviço começa quando ele sai do lugar.",
+      "feedbackWrong": {
+        "b": "As vestes são o que ele tira, não o primeiro movimento.",
+        "c": "A toalha vem depois. O versículo começa quando ele deixa a mesa."
+      },
+      "hint": "Olhe o primeiro verbo do versículo.",
+      "learningObjective": "Reconhecer o gesto que abre o serviço de lavar os pés.",
+      "evidence": ["João 13:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeia João 12:23–24?",
+      "verseRef": "João 12:23–24",
+      "options": [
+        { "id": "a", "text": "Jesus anuncia que a hora chegou" },
+        { "id": "b", "text": "O grão que não morre fica só" },
+        { "id": "c", "text": "O grão que morre produz fruto" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado",
+      "feedbackCorrect": "A hora é anunciada, e o grão explica: a vida entregue é a que dá fruto.",
+      "feedbackWrong": {
+        "default": "A hora vem primeiro; o fruto do grão que morre fecha a sequência."
+      },
+      "hint": "Comece pelo anúncio da hora.",
+      "learningObjective": "Compreender como a hora e o grão se encadeiam.",
+      "evidence": ["João 12:23–24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 13:3–4, Jesus se levanta para servir sem saber que voltava para Deus.",
+      "verseRef": "João 13:3–4",
+      "correctOptionId": "false",
+      "evidenceSpan": "e voltava para Deus",
+      "feedbackCorrect": "O texto diz que ele sabia: viera de Deus e voltava para Deus, e então se levanta.",
+      "feedbackWrong": {
+        "true": "Ele não age no escuro. O versículo 3 diz que ele estava ciente disso."
+      },
+      "hint": "Veja o que Jesus já sabia antes de se levantar.",
+      "learningObjective": "Interpretar o serviço de Jesus à luz do que ele já sabia.",
+      "evidence": ["João 13:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 15:16, toque o trecho que mostra de quem partiu a escolha.",
+      "verseRef": "João 15:16",
+      "options": [
+        { "id": "a", "text": "deis fruto" },
+        { "id": "b", "text": "eu vos escolhi" },
+        { "id": "c", "text": "em meu nome" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas eu vos escolhi",
+      "feedbackCorrect": "A frase é direta: não foram eles. Foi Jesus quem escolheu.",
+      "feedbackWrong": {
+        "a": "\"Deis fruto\" é o propósito da escolha, não a origem dela.",
+        "c": "\"Em meu nome\" fala do pedido ao Pai, não de quem escolheu."
+      },
+      "hint": "Olhe o que Jesus diz que ele fez, não o que eles fariam.",
+      "learningObjective": "Sustentar com o texto que a amizade nasce da escolha de Jesus.",
+      "evidence": ["João 15:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 12:24 sustenta sobre o grão que morre?",
+      "verseRef": "João 12:24",
+      "options": [
+        { "id": "a", "text": "Morrer encerra o grão e o fruto não vem" },
+        { "id": "b", "text": "A vida entregue é a que produz muito fruto" },
+        { "id": "c", "text": "O grão fica só justamente quando morre" },
+        { "id": "d", "text": "O fruto nasce de quem se guarda da morte" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "se morrer, produzirá abundantes frutos",
+      "feedbackCorrect": "O grão que morre não se perde. O texto diz que ele produz abundantes frutos.",
+      "feedbackWrong": {
+        "a": "O texto nega isso: se não morrer, fica só; se morrer, produz fruto.",
+        "c": "Ficar só é o resultado de não morrer, não de morrer.",
+        "d": "Quem se guarda permanece só. O fruto vem da morte do grão."
+      },
+      "hint": "Compare as duas condições do grão no versículo.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o grão que morre.",
+      "evidence": ["João 12:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o amor que se entrega na hora de Jesus?",
+      "verseRef": "João 12:23",
+      "options": [
+        { "id": "a", "text": "A hora chega para o Filho do Homem" },
+        { "id": "b", "text": "O grão morre e produz fruto" },
+        { "id": "c", "text": "O maior amor entrega a vida" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado",
+      "feedbackCorrect": "A hora, o grão e o maior amor apontam para a vida que Jesus entrega.",
+      "feedbackWrong": {
+        "default": "Siga a hora (12:23), o grão (12:24) e o amor pelos amigos (15:13)."
+      },
+      "hint": "Siga a ordem dos capítulos: a hora, o grão, os amigos.",
+      "learningObjective": "Ver a hora, o grão e o maior amor como um só caminho.",
+      "evidence": ["João 12:23", "João 12:24", "João 15:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 15:15, com que nome Jesus passa a chamar os discípulos?",
+      "verseRef": "João 15:15",
+      "options": [
+        { "id": "a", "text": "servos" },
+        { "id": "b", "text": "amigos" },
+        { "id": "c", "text": "estranhos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu os chamei de amigos",
+      "feedbackCorrect": "Jesus muda o nome: já não servos, mas amigos, porque lhes revelou o Pai.",
+      "feedbackWrong": {
+        "a": "Servo é o nome que ele deixa. O nome novo é outro.",
+        "c": "Ele não os afasta. O nome novo nasce do que ele lhes revelou."
+      },
+      "hint": "Veja o nome novo, diferente de servo.",
+      "learningObjective": "Lembrar o nome que mostra o que Jesus fez dos discípulos.",
+      "evidence": ["João 15:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 14:16 a João 14:26?",
+      "verseRef": "João 14:16",
+      "options": [
+        { "id": "a", "text": "O mundo ensina os discípulos" },
+        { "id": "b", "text": "O Pai envia o Consolador" },
+        { "id": "c", "text": "Jesus os deixa sozinhos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ele vos dará outro Consolador",
+      "passageA": { "ref": "João 14:16" },
+      "passageB": { "ref": "João 14:26" },
+      "feedbackCorrect": "O Consolador prometido é o Espírito que o Pai envia em nome de Jesus.",
+      "feedbackWrong": {
+        "a": "O mundo não recebe o Espírito. Quem envia é o Pai.",
+        "c": "A promessa é presença, não abandono. O Consolador fica com eles."
+      },
+      "hint": "Veja quem envia a ajuda prometida no outro texto.",
+      "learningObjective": "Ligar a promessa do Consolador ao Espírito que o Pai envia.",
+      "evidence": ["João 14:16", "João 14:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 11:26, toque o trecho que mostra que Jesus pede uma resposta de fé.",
+      "verseRef": "João 11:26",
+      "options": [
+        { "id": "a", "text": "vive e crê" },
+        { "id": "b", "text": "não morrerá" },
+        { "id": "c", "text": "Você crê" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Você crê nisso",
+      "feedbackCorrect": "Depois da promessa, Jesus pergunta: a fé que ele descreve pede resposta.",
+      "feedbackWrong": {
+        "a": "\"Vive e crê\" é a condição da promessa, não o pedido de resposta.",
+        "b": "\"Não morrerá\" é o que Jesus promete, não a pergunta que ele faz."
+      },
+      "hint": "Veja a pergunta no fim do versículo.",
+      "learningObjective": "Sustentar com o texto que Jesus pede fé, e não só informa.",
+      "evidence": ["João 11:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência lê o argumento de João 14:17–18?",
+      "verseRef": "João 14:17–18",
+      "options": [
+        { "id": "a", "text": "O mundo não recebe o Espírito" },
+        { "id": "b", "text": "Os discípulos conhecem o Espírito" },
+        { "id": "c", "text": "Jesus volta e não deixa órfãos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Não os deixarei órfãos",
+      "feedbackCorrect": "O mundo não recebe; os discípulos conhecem; Jesus não os deixa órfãos.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa do mundo; a promessa de voltar fecha o argumento."
+      },
+      "hint": "Comece por quem não pode receber o Espírito.",
+      "learningObjective": "Ler a promessa do Espírito até Jesus não deixar os seus órfãos.",
+      "evidence": ["João 14:17–18"]
+    }
+  ]
+}

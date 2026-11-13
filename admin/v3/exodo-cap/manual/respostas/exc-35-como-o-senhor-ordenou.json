@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Êxodo 39:32–43",
+    "passages": [
+      {
+        "ref": "Êxodo 39:32–43"
+      }
+    ],
+    "context": "Toda a obra do tabernáculo fica pronta. Trazem a Moisés; ele vê e abençoa.",
+    "keyword": "Ordenou",
+    "keywordGloss": "Fizeram tudo conforme o Senhor havia ordenado a Moisés.",
+    "focusQuestion": "Onde você precisa terminar a obra exatamente como o Senhor ordenou?",
+    "reflectionPrompts": [
+      "Obra concluída",
+      "Conforme ordenou",
+      "Moisés abençoou"
+    ],
+    "facts": [
+      {
+        "text": "Foi concluída toda a obra do tabernáculo; fizeram conforme o Senhor ordenara.",
+        "evidenceRef": "Êxodo 39:32",
+        "evidenceSpan": "fizeram tudo conforme o que o Senhor tinha ordenado"
+      },
+      {
+        "text": "Trouxeram a Moisés o tabernáculo e todos os utensílios.",
+        "evidenceRef": "Êxodo 39:33",
+        "evidenceSpan": "trouxeram a Moisés o tabernáculo"
+      },
+      {
+        "text": "Assim como o SENHOR ordenara a Moisés, assim fizeram toda a obra.",
+        "evidenceRef": "Êxodo 39:42",
+        "evidenceSpan": "assim fizeram os filhos de Israel toda a obra"
+      },
+      {
+        "text": "Moisés viu toda a obra e eis que a tinham feito conforme o Senhor ordenara.",
+        "evidenceRef": "Êxodo 39:43",
+        "evidenceSpan": "conforme o Senhor havia ordenado, assim o fizeram"
+      },
+      {
+        "text": "Então Moisés os abençoou.",
+        "evidenceRef": "Êxodo 39:43",
+        "evidenceSpan": "Moisés os abençoou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ordenado",
+        "gloss": "Padrão da obediência: como o Senhor mandou."
+      },
+      {
+        "term": "obra",
+        "gloss": "Todo o trabalho do tabernáculo concluído."
+      },
+      {
+        "term": "abençoou",
+        "gloss": "Resposta de Moisés ao ver a obediência."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Obra concluída conforme a ordem",
+        "evidenceRef": "Êxodo 39:32"
+      },
+      {
+        "label": "Entrega dos itens a Moisés",
+        "evidenceRef": "Êxodo 39:33–41"
+      },
+      {
+        "label": "Confirmação da obediência",
+        "evidenceRef": "Êxodo 39:42"
+      },
+      {
+        "label": "Inspeção e bênção",
+        "evidenceRef": "Êxodo 39:43"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Viu a obra feita conforme a ordem e então os abençoou.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 39:43"
+      },
+      {
+        "kind": "propósito",
+        "text": "Fizeram assim como o SENHOR havia ordenado.",
+        "marker": "assim",
+        "evidenceRef": "Êxodo 39:42"
+      },
+      {
+        "kind": "sequência",
+        "text": "Concluíram, trouxeram, Moisés viu e abençoou.",
+        "marker": "Depois",
+        "evidenceRef": "Êxodo 39:33"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 8:5",
+        "bridge": "Fazer conforme o modelo"
+      },
+      {
+        "ref": "Gênesis 2:2",
+        "bridge": "Obra concluída"
+      },
+      {
+        "ref": "João 17:4",
+        "bridge": "Obra que me deste a realizar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Fizeram a obra do jeito que acharam melhor, sem a ordem.",
+        "why": "Fizeram conforme o Senhor ordenara."
+      },
+      {
+        "text": "Moisés rejeitou a obra e não abençoou.",
+        "why": "Ele viu e os abençoou."
+      },
+      {
+        "text": "A obra ficou incompleta no fim do capítulo.",
+        "why": "Foi concluída toda a obra."
+      }
+    ],
+    "centralInsight": "Fizeram tudo como o Senhor ordenou, e Moisés os abençoa.",
+    "anchorQuestion": "O que Moisés fez depois de ver a obra concluída?"
+  },
+  "questions": [
+    {
+      "question": "Os filhos de Israel fizeram a obra do jeito que acharam melhor, sem seguir o que o Senhor ordenara.",
+      "verseRef": "Êxodo 39:32",
+      "correctOptionId": "false",
+      "evidenceSpan": "fizeram tudo conforme o que o Senhor tinha ordenado a Moisés",
+      "feedbackCorrect": "Fizeram conforme o Senhor ordenara.",
+      "hint": "Compare a obra e a ordem.",
+      "learningObjective": "Observar a obediência na obra.",
+      "evidence": [
+        "Êxodo 39:32"
+      ],
+      "difficulty": "semente",
+      "type": "true_false",
+      "feedbackWrong": {
+        "true": "Releia: conforme o que o Senhor tinha ordenado."
+      }
+    },
+    {
+      "question": "Em Êxodo 39:43, toque quem viu toda a obra.",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "obra"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Viu, pois, Moisés toda a obra",
+      "feedbackCorrect": "Moisés viu toda a obra.",
+      "feedbackWrong": {
+        "b": "Obra é o que foi visto.",
+        "c": "O Senhor ordenou; quem viu é Moisés."
+      },
+      "hint": "Quem é o sujeito de \"Viu\"?",
+      "learningObjective": "Identificar quem inspeciona.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "semente",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Segundo Êxodo 39:33, o que trouxeram a Moisés?",
+      "verseRef": "Êxodo 39:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "O tabernáculo, a tenda e os utensílios"
+        },
+        {
+          "id": "b",
+          "text": "Só o bezerro de ouro"
+        },
+        {
+          "id": "c",
+          "text": "As armas do Egito"
+        },
+        {
+          "id": "d",
+          "text": "Nada da obra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trouxeram a Moisés o tabernáculo, a tenda e todos os seus utensílios",
+      "feedbackCorrect": "Trouxeram o tabernáculo e os utensílios.",
+      "feedbackWrong": {
+        "b": "Não é o bezerro.",
+        "c": "Não são armas.",
+        "d": "Trouxeram a obra."
+      },
+      "hint": "O que foi trazido a Moisés?",
+      "learningObjective": "Observar a entrega da obra.",
+      "evidence": [
+        "Êxodo 39:33"
+      ],
+      "difficulty": "semente",
+      "type": "choice"
+    },
+    {
+      "question": "Monte Êxodo 39:43 na ordem do texto.",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Viu, pois, Moisés toda a obra"
+        },
+        {
+          "id": "b",
+          "text": "conforme o Senhor havia ordenado, assim o fizeram"
+        },
+        {
+          "id": "c",
+          "text": "Então, Moisés os abençoou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Viu, pois, Moisés toda a obra",
+      "feedbackCorrect": "Viu, confirmou a obediência, abençoou.",
+      "feedbackWrong": {
+        "default": "Comece por Viu, pois, Moisés."
+      },
+      "hint": "O versículo começa com Viu.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 39:43.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "semente",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 39:32, o que foi concluída?",
+      "verseRef": "Êxodo 39:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "obra"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi concluída toda a obra",
+      "feedbackCorrect": "Foi concluída toda a obra do tabernáculo.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "O termo é obra."
+      },
+      "hint": "Concluída toda a ___.",
+      "learningObjective": "Lembrar a obra concluída.",
+      "evidence": [
+        "Êxodo 39:32"
+      ],
+      "difficulty": "semente",
+      "type": "complete"
+    },
+    {
+      "question": "O que Êxodo 39:43 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 39:43",
+      "passageA": {
+        "ref": "Êxodo 39:43"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A obra fica pronta conforme a ordem; Moisés vê e abençoa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Obediência seguida de bênção"
+        },
+        {
+          "id": "b",
+          "text": "Obra rejeitada"
+        },
+        {
+          "id": "c",
+          "text": "Ordem ignorada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés os abençoou",
+      "feedbackCorrect": "Ver a obediência leva à bênção.",
+      "feedbackWrong": {
+        "b": "Há bênção, não rejeição.",
+        "c": "Fizeram conforme a ordem."
+      },
+      "hint": "Compare a ordem e a bênção.",
+      "learningObjective": "Ligar obediência e bênção.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "semente",
+      "type": "connect"
+    },
+    {
+      "question": "Em Êxodo 39:42, os filhos de Israel fizeram a obra de outro modo, não como o SENHOR ordenara.",
+      "verseRef": "Êxodo 39:42",
+      "correctOptionId": "false",
+      "evidenceSpan": "Assim como o SENHOR havia ordenado a Moisés, assim fizeram",
+      "feedbackCorrect": "Fizeram assim como o SENHOR ordenara.",
+      "feedbackWrong": {
+        "true": "Releia: assim como o SENHOR havia ordenado."
+      },
+      "hint": "Veja a expressão \"assim como\".",
+      "learningObjective": "Compreender a conformidade.",
+      "evidence": [
+        "Êxodo 39:42"
+      ],
+      "difficulty": "caminhada",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 39:43, toque a palavra que marca o resultado após ver a obra.",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "obra"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, Moisés os abençoou",
+      "feedbackCorrect": "\"Então\" introduz a bênção.",
+      "feedbackWrong": {
+        "b": "Obra é o que ele viu.",
+        "c": "Senhor é quem ordenou."
+      },
+      "hint": "A palavra antes de Moisés os abençoou.",
+      "learningObjective": "Tocar o marcador de resultado.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "caminhada",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Como Êxodo 39:32–43 liga a ordem do Senhor à bênção?",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeram conforme a ordem; Moisés os abençoou"
+        },
+        {
+          "id": "b",
+          "text": "Mudaram a ordem e ainda assim foram abençoados"
+        },
+        {
+          "id": "c",
+          "text": "Moisés abençoou antes de ver a obra"
+        },
+        {
+          "id": "d",
+          "text": "A bênção substituiu a obediência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme o Senhor havia ordenado, assim o fizeram",
+      "feedbackCorrect": "Obediência vista precede a bênção.",
+      "feedbackWrong": {
+        "b": "Fizeram conforme a ordem.",
+        "c": "Ele viu e então abençoou.",
+        "d": "A bênção segue a obediência."
+      },
+      "hint": "Una \"conforme\" e \"abençoou\".",
+      "learningObjective": "Relacionar ordem e bênção.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "caminhada",
+      "type": "choice"
+    },
+    {
+      "question": "Como avança Êxodo 39:32–43?",
+      "verseRef": "Êxodo 39:32–33",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obra concluída conforme a ordem"
+        },
+        {
+          "id": "b",
+          "text": "Entrega dos itens a Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Inspeção e bênção"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "foi concluída toda a obra",
+      "feedbackCorrect": "Conclusão, entrega, bênção.",
+      "feedbackWrong": {
+        "default": "Comece pela conclusão; a bênção vem por último."
+      },
+      "hint": "Primeiro a obra pronta; no fim a bênção.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 39:32–43"
+      ],
+      "difficulty": "caminhada",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 39:43, Moisés os ___?",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "abençoou"
+        },
+        {
+          "id": "b",
+          "text": "expulsou"
+        },
+        {
+          "id": "c",
+          "text": "esqueceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés os abençoou",
+      "feedbackCorrect": "Moisés os abençoou.",
+      "feedbackWrong": {
+        "b": "Não expulsou.",
+        "c": "O verbo é abençoou."
+      },
+      "hint": "A última ação do versículo.",
+      "learningObjective": "Lembrar a bênção.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "caminhada",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 39:32 a Hebreus 8:5?",
+      "verseRef": "Êxodo 39:32",
+      "passageA": {
+        "ref": "Êxodo 39:32"
+      },
+      "passageB": {
+        "ref": "Hebreus 8:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazer conforme o ordenado"
+        },
+        {
+          "id": "b",
+          "text": "Inventar o próprio modelo"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar a obra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme o que o Senhor tinha ordenado",
+      "feedbackCorrect": "Hebreus ecoa fazer conforme o modelo/ordem.",
+      "feedbackWrong": {
+        "b": "O texto é conformidade.",
+        "c": "A obra foi concluída."
+      },
+      "hint": "Como fizeram a obra?",
+      "learningObjective": "Relacionar obediência e modelo.",
+      "evidence": [
+        "Êxodo 39:32",
+        "Hebreus 8:5"
+      ],
+      "difficulty": "caminhada",
+      "type": "connect"
+    },
+    {
+      "question": "Êxodo 39:32–43 sustenta que a bênção de Moisés responde à obra feita conforme a ordem do Senhor.",
+      "verseRef": "Êxodo 39:43",
+      "correctOptionId": "true",
+      "evidenceSpan": "conforme o Senhor havia ordenado, assim o fizeram. Então, Moisés os abençoou",
+      "feedbackCorrect": "Ver a conformidade leva à bênção.",
+      "feedbackWrong": {
+        "false": "O texto une conformidade e bênção."
+      },
+      "hint": "Una viu, conforme e abençoou.",
+      "learningObjective": "Interpretar obediência e bênção.",
+      "evidence": [
+        "Êxodo 39:43"
+      ],
+      "difficulty": "profundezas",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 39:42, toque a palavra repetida que marca a conformidade.",
+      "verseRef": "Êxodo 39:42",
+      "options": [
+        {
+          "id": "a",
+          "text": "assim"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim como o SENHOR havia ordenado a Moisés, assim fizeram",
+      "feedbackCorrect": "\"Assim\" marca a conformidade com a ordem.",
+      "feedbackWrong": {
+        "b": "Israel é quem faz.",
+        "c": "Moisés recebeu a ordem."
+      },
+      "hint": "A palavra que aparece duas vezes.",
+      "learningObjective": "Sustentar a conformidade no texto.",
+      "evidence": [
+        "Êxodo 39:42"
+      ],
+      "difficulty": "profundezas",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Que leitura Êxodo 39:32–43 sustenta sobre a obra?",
+      "verseRef": "Êxodo 39:43",
+      "options": [
+        {
+          "id": "a",
+          "text": "Concluir como o Senhor ordenou traz bênção"
+        },
+        {
+          "id": "b",
+          "text": "Terminar de qualquer jeito basta"
+        },
+        {
+          "id": "c",
+          "text": "A bênção dispensa a obediência"
+        },
+        {
+          "id": "d",
+          "text": "Moisés não precisa inspecionar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés os abençoou",
+      "feedbackCorrect": "Conformidade vista e bênção dada.",
+      "feedbackWrong": {
+        "b": "É conforme a ordem.",
+        "c": "A bênção segue a obediência.",
+        "d": "Ele viu toda a obra."
+      },
+      "hint": "Una conclusão, ordem e bênção.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 39:32",
+        "Êxodo 39:43"
+      ],
+      "difficulty": "profundezas",
+      "type": "choice"
+    },
+    {
+      "question": "Qual sequência liga a obra concluída à Escritura?",
+      "verseRef": "Êxodo 39:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel cumpre a ordem dada"
+        },
+        {
+          "id": "b",
+          "text": "Moisés vê e abençoa"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus lembra fazer conforme o modelo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "conforme o que o Senhor tinha ordenado",
+      "feedbackCorrect": "Obra, bênção, eco em Hebreus.",
+      "feedbackWrong": {
+        "default": "Comece pela obra; Hebreus vem por último."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o fio da obediência.",
+      "evidence": [
+        "Êxodo 39:32",
+        "Êxodo 39:43",
+        "Hebreus 8:5"
+      ],
+      "difficulty": "profundezas",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 39:32, fizeram tudo conforme o que o Senhor tinha ___?",
+      "verseRef": "Êxodo 39:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordenado"
+        },
+        {
+          "id": "b",
+          "text": "esquecido"
+        },
+        {
+          "id": "c",
+          "text": "negado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor tinha ordenado",
+      "feedbackCorrect": "Conforme o que o Senhor tinha ordenado.",
+      "feedbackWrong": {
+        "b": "Não esquecido.",
+        "c": "O verbo é ordenado."
+      },
+      "hint": "Tinha ___.",
+      "learningObjective": "Lembrar o termo da ordem.",
+      "evidence": [
+        "Êxodo 39:32"
+      ],
+      "difficulty": "profundezas",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 39:32 a João 17:4?",
+      "verseRef": "Êxodo 39:32",
+      "passageA": {
+        "ref": "Êxodo 39:32"
+      },
+      "passageB": {
+        "ref": "João 17:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Obra concluída conforme a missão"
+        },
+        {
+          "id": "b",
+          "text": "Obra abandonada"
+        },
+        {
+          "id": "c",
+          "text": "Ordem recusada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi concluída toda a obra",
+      "feedbackCorrect": "Concluir a obra dada ecoa nos dois textos.",
+      "feedbackWrong": {
+        "b": "A obra foi concluída.",
+        "c": "Houve obediência."
+      },
+      "hint": "O que foi concluído?",
+      "learningObjective": "Ligar obra concluída nos textos.",
+      "evidence": [
+        "Êxodo 39:32",
+        "João 17:4"
+      ],
+      "difficulty": "profundezas",
+      "type": "connect"
+    }
+  ]
+}

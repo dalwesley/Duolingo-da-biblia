@@ -1,0 +1,719 @@
+{
+  "study": {
+    "passageRef": "Isaías 14:3–8",
+    "passages": [
+      {
+        "ref": "Isaías 14:3–12"
+      }
+    ],
+    "context": "Depois do descanso do Senhor, Israel levanta lamento contra o rei da Babilônia: o opressor caiu e até o Sheol se agita.",
+    "keyword": "opressor",
+    "keywordGloss": "O rei cuja tirania cessou; o Senhor destruiu o cetro dos ímpios.",
+    "focusQuestion": "Onde você ainda teme um \"cetro\" que o Senhor já prometeu quebrar?",
+    "reflectionPrompts": [
+      "Cetro quebrado",
+      "Terra em júbilo",
+      "Estrela caída"
+    ],
+    "facts": [
+      {
+        "text": "No dia do descanso, levantarão lamento contra o rei da Babilônia.",
+        "evidenceRef": "Isaías 14:4",
+        "evidenceSpan": "levantarás este lamento contra o rei da Babilônia"
+      },
+      {
+        "text": "O lamento pergunta como cessou o opressor e acabou a tirania.",
+        "evidenceRef": "Isaías 14:4",
+        "evidenceSpan": "Como cessou o opressor! Como acabou a tirania!"
+      },
+      {
+        "text": "O Senhor destruiu o cetro dos ímpios e a vara dos opressores.",
+        "evidenceRef": "Isaías 14:5",
+        "evidenceSpan": "O Senhor destruiu o cetro dos ímpios e a vara dos opressores"
+      },
+      {
+        "text": "Toda a terra descansa e exulta de júbilo.",
+        "evidenceRef": "Isaías 14:7",
+        "evidenceSpan": "Já descansa, já está sossegada toda a terra; todos exultam de júbilo"
+      },
+      {
+        "text": "Ciprestes e cedros se alegram porque ninguém mais sobe para cortá-los.",
+        "evidenceRef": "Isaías 14:8",
+        "evidenceSpan": "Desde que você caiu ninguém mais tem subido contra nós para nos cortar"
+      },
+      {
+        "text": "A estrela da manhã caiu do céu e foi lançada à terra.",
+        "evidenceRef": "Isaías 14:12",
+        "evidenceSpan": "Como tu caíste do céu, ó estrela da manhã, filho da alva!"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "opressor",
+        "gloss": "O rei cuja cessação abre o lamento."
+      },
+      {
+        "term": "cetro",
+        "gloss": "Símbolo do poder ímpio que o Senhor destruiu."
+      },
+      {
+        "term": "Sheol",
+        "gloss": "O lugar abaixo que se agita para receber o caído."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Descanso e lamento contra Babilônia",
+        "evidenceRef": "Isaías 14:3–4"
+      },
+      {
+        "label": "Cetro destruído e opressor perseguido",
+        "evidenceRef": "Isaías 14:5–6"
+      },
+      {
+        "label": "Terra e árvores em júbilo",
+        "evidenceRef": "Isaías 14:7–8"
+      },
+      {
+        "label": "Sheol e queda da estrela",
+        "evidenceRef": "Isaías 14:9–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "No dia do descanso, então levantam o lamento.",
+        "marker": "Então",
+        "evidenceRef": "Isaías 14:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Quem feria povos agora é perseguido sem quem o detenha.",
+        "marker": "agora",
+        "evidenceRef": "Isaías 14:6"
+      },
+      {
+        "kind": "causa",
+        "text": "O Sheol se agitou por tua causa, para te receber.",
+        "marker": "por tua causa",
+        "evidenceRef": "Isaías 14:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Ezequiel 28:17",
+        "bridge": "Orgulho lançado por terra"
+      },
+      {
+        "ref": "Apocalipse 18:2",
+        "bridge": "Caiu a grande Babilônia"
+      },
+      {
+        "ref": "Lucas 10:18",
+        "bridge": "Queda como relâmpago"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O lamento celebra a queda de um anjo sem falar do rei da Babilônia.",
+        "why": "O texto nomeia o lamento contra o rei da Babilônia."
+      },
+      {
+        "text": "A terra continua oprimida depois da queda.",
+        "why": "Toda a terra descansa e exulta de júbilo."
+      },
+      {
+        "text": "O cetro dos ímpios permanece intacto.",
+        "why": "O Senhor destruiu o cetro e a vara dos opressores."
+      }
+    ],
+    "centralInsight": "Como caíste do céu, ó estrela da manhã! Foste derribado por terra.",
+    "anchorQuestion": "Contra quem Isaías 14:4 manda levantar o lamento?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 14:5, o Senhor fortalece o cetro dos ímpios e a vara dos opressores.",
+      "verseRef": "Isaías 14:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "O Senhor destruiu o cetro dos ímpios e a vara dos opressores",
+      "feedbackCorrect": "O verbo é destruiu, não fortaleceu.",
+      "feedbackWrong": {
+        "true": "O texto diz que o Senhor destruiu o cetro dos ímpios."
+      },
+      "hint": "Leia o verbo principal do versículo.",
+      "learningObjective": "Observar o que o Senhor faz ao cetro.",
+      "evidence": [
+        "Isaías 14:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 14:4, toque contra quem se levanta o lamento.",
+      "verseRef": "Isaías 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "rei da Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "opressor"
+        },
+        {
+          "id": "c",
+          "text": "tirania"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lamento contra o rei da Babilônia",
+      "feedbackCorrect": "O lamento é dirigido ao rei da Babilônia.",
+      "feedbackWrong": {
+        "b": "Opressor descreve o rei; o alvo nomeado é o rei da Babilônia.",
+        "c": "Tirania é o que acabou, não o alvo do lamento."
+      },
+      "hint": "Veja a frase depois de \"lamento contra\".",
+      "learningObjective": "Identificar o alvo do lamento.",
+      "evidence": [
+        "Isaías 14:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 14:7, o que acontece à terra após a queda?",
+      "verseRef": "Isaías 14:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Descansa, está sossegada e exulta"
+        },
+        {
+          "id": "b",
+          "text": "Continua em dura servidão"
+        },
+        {
+          "id": "c",
+          "text": "Só as árvores choram"
+        },
+        {
+          "id": "d",
+          "text": "Ninguém se alegra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Já descansa, já está sossegada toda a terra; todos exultam de júbilo",
+      "feedbackCorrect": "A terra inteira descansa e todos exultam.",
+      "feedbackWrong": {
+        "b": "O descanso já veio.",
+        "c": "Até ciprestes se alegram.",
+        "d": "Todos exultam de júbilo."
+      },
+      "hint": "Leia os verbos do versículo.",
+      "learningObjective": "Notar o júbilo da terra.",
+      "evidence": [
+        "Isaías 14:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 14:4 na ordem do texto.",
+      "verseRef": "Isaías 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantarás este lamento contra o rei da Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "Como cessou o opressor!"
+        },
+        {
+          "id": "c",
+          "text": "Como acabou a tirania!"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "levantarás este lamento contra o rei da Babilônia e dirás: Como cessou o opressor! Como acabou a tirania!",
+      "feedbackCorrect": "Primeiro o lamento; depois as duas exclamações.",
+      "feedbackWrong": {
+        "default": "Comece pelo levantamento do lamento."
+      },
+      "hint": "O versículo manda levantar o lamento.",
+      "learningObjective": "Seguir a ordem do lamento.",
+      "evidence": [
+        "Isaías 14:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 14:12, a estrela da manhã caiu do ___.",
+      "verseRef": "Isaías 14:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "céu"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "Líbano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como tu caíste do céu, ó estrela da manhã",
+      "feedbackCorrect": "A imagem abre com a queda do céu.",
+      "feedbackWrong": {
+        "b": "Tronos aparecem no Sheol, não nesta frase.",
+        "c": "Líbano é dos cedros no v.8."
+      },
+      "hint": "Veja de onde a estrela caiu.",
+      "learningObjective": "Lembrar a origem da queda.",
+      "evidence": [
+        "Isaías 14:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 14:5 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 14:5",
+      "passageA": {
+        "ref": "Isaías 14:5",
+        "text": "O Senhor destruiu o cetro dos ímpios"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Após o descanso, Israel lamenta a queda do rei opressor de Babilônia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cetro ímpio destruído"
+        },
+        {
+          "id": "b",
+          "text": "Tirania reforçada"
+        },
+        {
+          "id": "c",
+          "text": "Terra ainda oprimida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor destruiu o cetro dos ímpios",
+      "feedbackCorrect": "O contexto do lamento é a destruição do cetro opressor.",
+      "feedbackWrong": {
+        "b": "A tirania acabou.",
+        "c": "A terra descansa e exulta."
+      },
+      "hint": "Compare o cetro com o fim da opressão.",
+      "learningObjective": "Ligar o cetro quebrado ao lamento.",
+      "evidence": [
+        "Isaías 14:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 14:4, o lamento começa sem ligação com o descanso do versículo anterior.",
+      "verseRef": "Isaías 14:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então, levantarás este lamento",
+      "feedbackCorrect": "\"Então\" liga o lamento ao dia do descanso do v.3.",
+      "feedbackWrong": {
+        "true": "O versículo abre com \"Então\", marcando a sequência."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Ver a sequência descanso → lamento.",
+      "evidence": [
+        "Isaías 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 14:4, toque a palavra que marca a sequência após o descanso.",
+      "verseRef": "Isaías 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Como"
+        },
+        {
+          "id": "c",
+          "text": "tirania"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, levantarás este lamento",
+      "feedbackCorrect": "\"Então\" introduz o lamento no dia do descanso.",
+      "feedbackWrong": {
+        "b": "\"Como\" abre as exclamações, não a sequência.",
+        "c": "Tirania é o que acabou."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de sequência.",
+      "evidence": [
+        "Isaías 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 14:6 relaciona o passado e o presente do opressor?",
+      "verseRef": "Isaías 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem feria povos agora é perseguido"
+        },
+        {
+          "id": "b",
+          "text": "Ele continua ferindo sem resistência"
+        },
+        {
+          "id": "c",
+          "text": "Ninguém o perseguia antes nem agora"
+        },
+        {
+          "id": "d",
+          "text": "A ira dele agora aumenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora é perseguido, sem que ninguém consiga detê-lo",
+      "feedbackCorrect": "O contraste marca a inversão: de feroz a perseguido.",
+      "feedbackWrong": {
+        "b": "Agora é perseguido.",
+        "c": "Antes feria; agora é perseguido.",
+        "d": "A perseguição é contra ele."
+      },
+      "hint": "Compare \"feriu\" com \"agora é perseguido\".",
+      "learningObjective": "Relacionar a inversão do opressor.",
+      "evidence": [
+        "Isaías 14:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento de Isaías 14:3–8?",
+      "verseRef": "Isaías 14:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Descanso da dura servidão"
+        },
+        {
+          "id": "b",
+          "text": "Lamento contra o rei"
+        },
+        {
+          "id": "c",
+          "text": "Terra e árvores em júbilo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "no dia em que o Senhor te conceder descanso",
+      "feedbackCorrect": "Do descanso ao lamento e ao júbilo da criação.",
+      "feedbackWrong": {
+        "default": "Comece pelo descanso concedido."
+      },
+      "hint": "O bloco abre com o dia do descanso.",
+      "learningObjective": "Ver a progressão do lamento.",
+      "evidence": [
+        "Isaías 14:3",
+        "Isaías 14:4",
+        "Isaías 14:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 14:4, levantarás este quê sobre o rei de Babilônia?",
+      "verseRef": "Isaías 14:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "lamento"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "tirania"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, levantarás este lamento",
+      "feedbackCorrect": "O lamento é levantado no dia do descanso da terra.",
+      "feedbackWrong": {
+        "b": "O trono aparece na soberba do rei, não neste verbo.",
+        "c": "Tirania é o que acabou, não o que se levanta."
+      },
+      "hint": "Veja o substantivo depois de \"este\".",
+      "learningObjective": "Lembrar o lamento levantado no dia do descanso.",
+      "evidence": [
+        "Isaías 14:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 14:12 a Ezequiel 28:17?",
+      "verseRef": "Isaías 14:12",
+      "passageA": {
+        "ref": "Isaías 14:12",
+        "text": "Como tu caíste do céu, ó estrela da manhã"
+      },
+      "passageB": {
+        "ref": "Ezequiel 28:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orgulho lançado à terra"
+        },
+        {
+          "id": "b",
+          "text": "Cetro fortalecido"
+        },
+        {
+          "id": "c",
+          "text": "Terra sem júbilo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Como foste lançado à terra, tu que debilitavas as nações!",
+      "feedbackCorrect": "Ambos descrevem a queda do orgulho exaltado.",
+      "feedbackWrong": {
+        "b": "O cetro foi destruído.",
+        "c": "A terra exulta de júbilo."
+      },
+      "hint": "Compare queda e orgulho nos dois textos.",
+      "learningObjective": "Ligar a estrela caída a Ezequiel.",
+      "evidence": [
+        "Isaías 14:12",
+        "Ezequiel 28:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 14:4–5 sustenta que o lamento celebra a destruição do cetro ímpio do rei da Babilônia.",
+      "verseRef": "Isaías 14:4–5",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor destruiu o cetro dos ímpios e a vara dos opressores",
+      "feedbackCorrect": "O alvo nomeado é o rei; o ato é a destruição do cetro.",
+      "feedbackWrong": {
+        "false": "O texto une lamento ao rei e destruição do cetro dos ímpios."
+      },
+      "hint": "Una o alvo do lamento ao verbo do v.5.",
+      "learningObjective": "Interpretar o lamento pelo texto.",
+      "evidence": [
+        "Isaías 14:4–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 14:12, toque a imagem de quem caiu do céu.",
+      "verseRef": "Isaías 14:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "estrela da manhã"
+        },
+        {
+          "id": "b",
+          "text": "nações"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ó estrela da manhã, filho da alva!",
+      "feedbackCorrect": "A imagem do caído é a estrela da manhã.",
+      "feedbackWrong": {
+        "b": "Nações são as que ele debilitava.",
+        "c": "Terra é o destino da queda."
+      },
+      "hint": "Leia o vocativo depois de \"céu\".",
+      "learningObjective": "Tocar a imagem da queda.",
+      "evidence": [
+        "Isaías 14:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 14:7–12 sustenta sobre a queda do opressor?",
+      "verseRef": "Isaías 14:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A queda traz júbilo à terra e expõe a soberba na cova"
+        },
+        {
+          "id": "b",
+          "text": "A queda deixa a terra em pranto permanente"
+        },
+        {
+          "id": "c",
+          "text": "A soberba sobe ainda mais no Sheol"
+        },
+        {
+          "id": "d",
+          "text": "Ninguém nota a queda do rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todos exultam de júbilo",
+      "feedbackCorrect": "Júbilo na terra e soberba lançada na cova formam o quadro.",
+      "feedbackWrong": {
+        "b": "A terra exulta, não pranteia.",
+        "c": "A soberba é lançada na cova.",
+        "d": "Até ciprestes e o Sheol reagem."
+      },
+      "hint": "Compare o júbilo do v.7 com a cova do v.11.",
+      "learningObjective": "Escolher a leitura da queda.",
+      "evidence": [
+        "Isaías 14:7",
+        "Isaías 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a queda de Babilônia na Escritura?",
+      "verseRef": "Isaías 14:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isaías vê a estrela cair"
+        },
+        {
+          "id": "b",
+          "text": "Ezequiel fala do orgulho lançado"
+        },
+        {
+          "id": "c",
+          "text": "Apocalipse anuncia: caiu Babilônia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Como tu caíste do céu, ó estrela da manhã",
+      "feedbackCorrect": "O fio vai do lamento de Isaías a Ezequiel e ao anúncio final.",
+      "feedbackWrong": {
+        "default": "Comece por Isaías; depois Ezequiel; enfim Apocalipse."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Encadear a queda de Babilônia.",
+      "evidence": [
+        "Isaías 14:12",
+        "Ezequiel 28:17",
+        "Apocalipse 18:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 14:11, foi lançada na cova a tua ___.",
+      "verseRef": "Isaías 14:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "soberba"
+        },
+        {
+          "id": "b",
+          "text": "júbilo"
+        },
+        {
+          "id": "c",
+          "text": "descanso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Foi lançada na cova a tua soberba",
+      "feedbackCorrect": "A soberba do opressor é lançada na cova.",
+      "feedbackWrong": {
+        "b": "Júbilo é da terra, não do caído.",
+        "c": "Descanso é do povo libertado."
+      },
+      "hint": "Veja o que foi lançado na cova.",
+      "learningObjective": "Lembrar o termo da humilhação.",
+      "evidence": [
+        "Isaías 14:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 14:4 a Apocalipse 18:2?",
+      "verseRef": "Isaías 14:4",
+      "passageA": {
+        "ref": "Isaías 14:4",
+        "text": "Como cessou o opressor! Como acabou a tirania!"
+      },
+      "passageB": {
+        "ref": "Apocalipse 18:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Queda da Babilônia"
+        },
+        {
+          "id": "b",
+          "text": "Cetro eterno"
+        },
+        {
+          "id": "c",
+          "text": "Tirania sem fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lamento contra o rei da Babilônia",
+      "feedbackCorrect": "Os dois textos anunciam o fim da Babilônia opressora.",
+      "feedbackWrong": {
+        "b": "O cetro foi destruído.",
+        "c": "A tirania acabou."
+      },
+      "hint": "Compare o fim anunciado de Babilônia.",
+      "learningObjective": "Ligar o lamento ao anúncio final.",
+      "evidence": [
+        "Isaías 14:4",
+        "Apocalipse 18:2"
+      ]
+    }
+  ]
+}

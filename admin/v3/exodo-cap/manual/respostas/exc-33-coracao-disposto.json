@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Êxodo 35:20–29",
+    "passages": [
+      {
+        "ref": "Êxodo 35:20–29"
+      }
+    ],
+    "context": "A congregação sai da presença de Moisés. Quem tem o coração movido traz oferta para a obra.",
+    "keyword": "Disposto",
+    "keywordGloss": "Coração que se move a trazer oferta voluntária ao Senhor.",
+    "focusQuestion": "O que o seu coração está disposto a trazer para a obra do Senhor?",
+    "reflectionPrompts": [
+      "Coração moveu",
+      "Oferta voluntária",
+      "Homens e mulheres"
+    ],
+    "facts": [
+      {
+        "text": "Todo homem a quem o coração moveu trouxe oferta ao Senhor.",
+        "evidenceRef": "Êxodo 35:21",
+        "evidenceSpan": "a quem seu coração moveu"
+      },
+      {
+        "text": "Homens e mulheres de coração disposto trouxeram objetos de ouro.",
+        "evidenceRef": "Êxodo 35:22",
+        "evidenceSpan": "com o coração disposto"
+      },
+      {
+        "text": "Mulheres hábeis fiavam e traziam fio azul, púrpura, carmesim e linho.",
+        "evidenceRef": "Êxodo 35:25",
+        "evidenceSpan": "mulheres hábeis de coração fiavam"
+      },
+      {
+        "text": "Os príncipes traziam pedras de ônix e pedras de engaste.",
+        "evidenceRef": "Êxodo 35:27",
+        "evidenceSpan": "Os príncipes traziam pedras de ônix"
+      },
+      {
+        "text": "A oferta era voluntária, conforme o Senhor ordenara por Moisés.",
+        "evidenceRef": "Êxodo 35:29",
+        "evidenceSpan": "trouxeram oferta voluntária ao SENHOR"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "disposto",
+        "gloss": "Coração pronto a ofertar ao Senhor."
+      },
+      {
+        "term": "oferta",
+        "gloss": "Dádiva trazida para a obra da tenda."
+      },
+      {
+        "term": "voluntária",
+        "gloss": "Oferta que nasce do coração, não da coerção."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Coração movido traz oferta",
+        "evidenceRef": "Êxodo 35:20–22"
+      },
+      {
+        "label": "Materiais e madeira",
+        "evidenceRef": "Êxodo 35:23–24"
+      },
+      {
+        "label": "Mulheres que fiam e príncipes",
+        "evidenceRef": "Êxodo 35:25–28"
+      },
+      {
+        "label": "Oferta voluntária de todos",
+        "evidenceRef": "Êxodo 35:29"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O coração moveu e o espírito impeliu a trazer oferta.",
+        "marker": "a quem",
+        "evidenceRef": "Êxodo 35:21"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque o coração dispôs, trouxeram oferta voluntária.",
+        "marker": "cujo",
+        "evidenceRef": "Êxodo 35:29"
+      },
+      {
+        "kind": "sequência",
+        "text": "Saiu a congregação e então vieram os ofertantes.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 35:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 9:7",
+        "bridge": "Dar com alegria do coração"
+      },
+      {
+        "ref": "1 Crônicas 29:9",
+        "bridge": "Oferta de coração íntegro"
+      },
+      {
+        "ref": "2 Coríntios 8:12",
+        "bridge": "Boa vontade é aceita"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Só os ricos homens ofertearam; as mulheres não participaram.",
+        "why": "Homens e mulheres de coração disposto trouxeram."
+      },
+      {
+        "text": "A oferta foi forçada por Moisés sob pena.",
+        "why": "É oferta voluntária de coração disposto."
+      },
+      {
+        "text": "O coração não importa, só o material conta.",
+        "why": "O texto insiste no coração que move e dispõe."
+      }
+    ],
+    "centralInsight": "A oferta que Deus quer vem de coração disposto, de homens e mulheres.",
+    "anchorQuestion": "De onde nasce a oferta que o povo traz?"
+  },
+  "questions": [
+    {
+      "question": "Somente os príncipes trouxeram oferta; o povo comum ficou de fora.",
+      "verseRef": "Êxodo 35:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "todo homem e mulher que estavam com o coração disposto",
+      "feedbackCorrect": "Homens e mulheres de coração disposto trouxeram.",
+      "feedbackWrong": {
+        "true": "Releia: todo homem e mulher com coração disposto."
+      },
+      "hint": "Quem tinha o coração disposto?",
+      "learningObjective": "Observar quem oferteia.",
+      "evidence": [
+        "Êxodo 35:22"
+      ],
+      "difficulty": "semente",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 35:22, toque a palavra que descreve o coração dos ofertantes.",
+      "verseRef": "Êxodo 35:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "disposto"
+        },
+        {
+          "id": "b",
+          "text": "fivelas"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com o coração disposto",
+      "feedbackCorrect": "O coração estava disposto.",
+      "feedbackWrong": {
+        "b": "Fivelas são objetos.",
+        "c": "Ouro é o material; a qualidade é disposto."
+      },
+      "hint": "Coração ___.",
+      "learningObjective": "Identificar coração disposto.",
+      "evidence": [
+        "Êxodo 35:22"
+      ],
+      "difficulty": "semente",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Segundo Êxodo 35:21, para que trouxeram a oferta?",
+      "verseRef": "Êxodo 35:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para a obra da tenda da congregação e vestes sagradas"
+        },
+        {
+          "id": "b",
+          "text": "Para enriquecer a casa de Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Para comprar armas no Egito"
+        },
+        {
+          "id": "d",
+          "text": "Para erguer um bezerro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para a obra da tenda da congregação",
+      "feedbackCorrect": "A oferta era para a obra da tenda e as vestes.",
+      "feedbackWrong": {
+        "b": "Não é para Moisés enriquecer.",
+        "c": "Não é para armas.",
+        "d": "Não é para bezerro."
+      },
+      "hint": "Leia o destino da oferta.",
+      "learningObjective": "Observar o destino da oferta.",
+      "evidence": [
+        "Êxodo 35:21"
+      ],
+      "difficulty": "semente",
+      "type": "choice"
+    },
+    {
+      "question": "Monte Êxodo 35:21 na ordem do texto.",
+      "verseRef": "Êxodo 35:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "todo homem a quem seu coração moveu"
+        },
+        {
+          "id": "b",
+          "text": "e todo aquele cujo espírito o impeliu"
+        },
+        {
+          "id": "c",
+          "text": "vieram e trouxeram a oferta ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a quem seu coração moveu",
+      "feedbackCorrect": "Coração, espírito, oferta.",
+      "feedbackWrong": {
+        "default": "Comece pelo coração que moveu."
+      },
+      "hint": "O versículo começa com o coração.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 35:21.",
+      "evidence": [
+        "Êxodo 35:21"
+      ],
+      "difficulty": "semente",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 35:29, que tipo de oferta trouxeram ao SENHOR?",
+      "verseRef": "Êxodo 35:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "voluntária"
+        },
+        {
+          "id": "b",
+          "text": "forçada"
+        },
+        {
+          "id": "c",
+          "text": "secreta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trouxeram oferta voluntária ao SENHOR",
+      "feedbackCorrect": "Trouxeram oferta voluntária.",
+      "feedbackWrong": {
+        "b": "Não é forçada.",
+        "c": "O texto diz voluntária."
+      },
+      "hint": "Oferta ___ ao SENHOR.",
+      "learningObjective": "Lembrar oferta voluntária.",
+      "evidence": [
+        "Êxodo 35:29"
+      ],
+      "difficulty": "semente",
+      "type": "complete"
+    },
+    {
+      "question": "O que Êxodo 35:22 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 35:22",
+      "passageA": {
+        "ref": "Êxodo 35:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem tem o coração movido traz oferta para a obra do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ofertar de coração disposto"
+        },
+        {
+          "id": "b",
+          "text": "Ofertar sob ameaça"
+        },
+        {
+          "id": "c",
+          "text": "Guardar o ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com o coração disposto",
+      "feedbackCorrect": "Coração disposto e oferta se unem.",
+      "feedbackWrong": {
+        "b": "É disposição, não ameaça.",
+        "c": "Eles trouxeram, não guardaram."
+      },
+      "hint": "Compare o contexto e o coração.",
+      "learningObjective": "Ligar coração e oferta.",
+      "evidence": [
+        "Êxodo 35:22"
+      ],
+      "difficulty": "semente",
+      "type": "connect"
+    },
+    {
+      "question": "Em Êxodo 35:25, as mulheres hábeis de coração não participaram da obra.",
+      "verseRef": "Êxodo 35:25",
+      "correctOptionId": "false",
+      "evidenceSpan": "todas as mulheres hábeis de coração fiavam",
+      "feedbackCorrect": "Elas fiavam e traziam o fio.",
+      "feedbackWrong": {
+        "true": "Releia: mulheres hábeis fiavam e traziam."
+      },
+      "hint": "O que as mulheres hábeis fizeram?",
+      "learningObjective": "Compreender a participação das mulheres.",
+      "evidence": [
+        "Êxodo 35:25"
+      ],
+      "difficulty": "caminhada",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 35:21, toque a palavra que descreve o que o coração fez.",
+      "verseRef": "Êxodo 35:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "moveu"
+        },
+        {
+          "id": "b",
+          "text": "homem"
+        },
+        {
+          "id": "c",
+          "text": "tenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seu coração moveu",
+      "feedbackCorrect": "O coração moveu a trazer oferta.",
+      "feedbackWrong": {
+        "b": "Homem é quem vem.",
+        "c": "Tenda é o destino da obra."
+      },
+      "hint": "Coração ___.",
+      "learningObjective": "Tocar a ação do coração.",
+      "evidence": [
+        "Êxodo 35:21"
+      ],
+      "difficulty": "caminhada",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Como Êxodo 35:29 liga o coração à ordem do Senhor?",
+      "verseRef": "Êxodo 35:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "O coração dispôs a trazer o que o Senhor ordenara"
+        },
+        {
+          "id": "b",
+          "text": "O coração rejeitou a ordem de Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Só o material importa, sem coração"
+        },
+        {
+          "id": "d",
+          "text": "A ordem era ofertar ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cujo coração os dispôs para trazerem uma oferta",
+      "feedbackCorrect": "Disposição do coração e ordem do Senhor caminham juntas.",
+      "feedbackWrong": {
+        "b": "Eles obedecem trazendo.",
+        "c": "O texto destaca o coração.",
+        "d": "A oferta é ao SENHOR."
+      },
+      "hint": "Veja coração e ordenado juntos.",
+      "learningObjective": "Relacionar coração e obediência.",
+      "evidence": [
+        "Êxodo 35:29"
+      ],
+      "difficulty": "caminhada",
+      "type": "choice"
+    },
+    {
+      "question": "Como avança Êxodo 35:20–29?",
+      "verseRef": "Êxodo 35:20–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração movido traz oferta"
+        },
+        {
+          "id": "b",
+          "text": "Mulheres que fiam e príncipes"
+        },
+        {
+          "id": "c",
+          "text": "Oferta voluntária de todos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "seu coração moveu",
+      "feedbackCorrect": "Coração, artesãs e príncipes, oferta voluntária.",
+      "feedbackWrong": {
+        "default": "Comece pelo coração movido."
+      },
+      "hint": "Primeiro o coração; no fim a oferta voluntária.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 35:20–29"
+      ],
+      "difficulty": "caminhada",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 35:21, além do coração, o que impeliu a trazer oferta?",
+      "verseRef": "Êxodo 35:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "espírito"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cujo espírito o impeliu",
+      "feedbackCorrect": "O espírito o impeliu a vir.",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "Ouro é material."
+      },
+      "hint": "Cujo ___ o impeliu.",
+      "learningObjective": "Lembrar espírito que impele.",
+      "evidence": [
+        "Êxodo 35:21"
+      ],
+      "difficulty": "caminhada",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 35:22 a 2 Coríntios 9:7?",
+      "verseRef": "Êxodo 35:22",
+      "passageA": {
+        "ref": "Êxodo 35:22"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 9:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dar do coração com alegria"
+        },
+        {
+          "id": "b",
+          "text": "Dar só por obrigação"
+        },
+        {
+          "id": "c",
+          "text": "Guardar sem ofertar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coração disposto",
+      "feedbackCorrect": "Coração disposto ecoa o dar com alegria.",
+      "feedbackWrong": {
+        "b": "O texto destaca disposição.",
+        "c": "Eles trouxeram oferta."
+      },
+      "hint": "De onde nasce o dar?",
+      "learningObjective": "Relacionar coração em Êxodo e Paulo.",
+      "evidence": [
+        "Êxodo 35:22",
+        "2 Coríntios 9:7"
+      ],
+      "difficulty": "caminhada",
+      "type": "connect"
+    },
+    {
+      "question": "Êxodo 35:20–29 sustenta que a obra do santuário se alimenta de oferta voluntária nascida do coração.",
+      "verseRef": "Êxodo 35:29",
+      "correctOptionId": "true",
+      "evidenceSpan": "trouxeram oferta voluntária ao SENHOR",
+      "feedbackCorrect": "Coração disposto e oferta voluntária sustentam a obra.",
+      "feedbackWrong": {
+        "false": "O texto insiste em voluntária e coração."
+      },
+      "hint": "Una coração e voluntária.",
+      "learningObjective": "Interpretar a oferta do coração.",
+      "evidence": [
+        "Êxodo 35:22",
+        "Êxodo 35:29"
+      ],
+      "difficulty": "profundezas",
+      "type": "true_false"
+    },
+    {
+      "question": "Em Êxodo 35:29, toque o trecho que nomeia o tipo de oferta.",
+      "verseRef": "Êxodo 35:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "oferta voluntária"
+        },
+        {
+          "id": "b",
+          "text": "filhos de Israel"
+        },
+        {
+          "id": "c",
+          "text": "intermédio de Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "oferta voluntária ao SENHOR",
+      "feedbackCorrect": "É oferta voluntária ao SENHOR.",
+      "feedbackWrong": {
+        "b": "Filhos de Israel são quem traz.",
+        "c": "Moisés é o intermediário; o tipo é voluntária."
+      },
+      "hint": "Que tipo de oferta trouxeram?",
+      "learningObjective": "Sustentar a leitura da oferta voluntária.",
+      "evidence": [
+        "Êxodo 35:29"
+      ],
+      "difficulty": "profundezas",
+      "type": "find_in_text"
+    },
+    {
+      "question": "Que leitura Êxodo 35:20–29 sustenta sobre ofertar?",
+      "verseRef": "Êxodo 35:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deve nascer de coração disposto, em homens e mulheres"
+        },
+        {
+          "id": "b",
+          "text": "Só vale se for forçada pelo líder"
+        },
+        {
+          "id": "c",
+          "text": "Mulheres não participam da obra"
+        },
+        {
+          "id": "d",
+          "text": "O material importa mais que o coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cujo coração os dispôs",
+      "feedbackCorrect": "Homens e mulheres de coração disposto ofertam.",
+      "feedbackWrong": {
+        "b": "É voluntária.",
+        "c": "Mulheres fiavam e traziam.",
+        "d": "O texto destaca o coração."
+      },
+      "hint": "Una coração disposto e participantes.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 35:22",
+        "Êxodo 35:29"
+      ],
+      "difficulty": "profundezas",
+      "type": "choice"
+    },
+    {
+      "question": "Qual sequência liga a oferta do coração à Escritura?",
+      "verseRef": "Êxodo 35:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração disposto traz oferta"
+        },
+        {
+          "id": "b",
+          "text": "Oferta voluntária para a obra"
+        },
+        {
+          "id": "c",
+          "text": "Paulo ensina dar com alegria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coração disposto",
+      "feedbackCorrect": "Disposição, oferta voluntária, eco em Paulo.",
+      "feedbackWrong": {
+        "default": "Comece pelo coração; Paulo vem por último."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o fio da oferta na Escritura.",
+      "evidence": [
+        "Êxodo 35:22",
+        "Êxodo 35:29",
+        "2 Coríntios 9:7"
+      ],
+      "difficulty": "profundezas",
+      "type": "order"
+    },
+    {
+      "question": "Em Êxodo 35:22, cada um fazia uma ___ de ouro ao Senhor.",
+      "verseRef": "Êxodo 35:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "oferta"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fazia uma oferta de ouro ao Senhor",
+      "feedbackCorrect": "Cada um fazia uma oferta de ouro.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "O termo é oferta."
+      },
+      "hint": "Uma ___ de ouro ao Senhor.",
+      "learningObjective": "Lembrar o termo oferta.",
+      "evidence": [
+        "Êxodo 35:22"
+      ],
+      "difficulty": "profundezas",
+      "type": "complete"
+    },
+    {
+      "question": "O que liga Êxodo 35:29 a 1 Crônicas 29:9?",
+      "verseRef": "Êxodo 35:29",
+      "passageA": {
+        "ref": "Êxodo 35:29"
+      },
+      "passageB": {
+        "ref": "1 Crônicas 29:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oferta de coração voluntário"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de trazer"
+        },
+        {
+          "id": "c",
+          "text": "Temor do rei só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cujo coração os dispôs",
+      "feedbackCorrect": "Nos dois textos, o povo oferta de coração.",
+      "feedbackWrong": {
+        "b": "Há oferta, não recusa.",
+        "c": "O elo é o coração."
+      },
+      "hint": "O que une os ofertantes?",
+      "learningObjective": "Ligar oferta voluntária nos dois textos.",
+      "evidence": [
+        "Êxodo 35:29",
+        "1 Crônicas 29:9"
+      ],
+      "difficulty": "profundezas",
+      "type": "connect"
+    }
+  ]
+}

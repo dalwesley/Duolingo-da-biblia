@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Números 19:1–6",
+    "passages": [
+      {
+        "ref": "Números 19:1–6"
+      },
+      {
+        "ref": "Números 19:7–10"
+      }
+    ],
+    "context": "Cena de A novilha vermelha: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "A novilha vermelha",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor disse a Moisés e a Arão.",
+        "evidenceRef": "Números 19:1",
+        "evidenceSpan": "O Senhor disse a Moisés e a Arão"
+      },
+      {
+        "text": "Este é o estatuto da lei que o.",
+        "evidenceRef": "Números 19:2",
+        "evidenceSpan": "Este é o estatuto da lei que o"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 19:3",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 19:4",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Números 19:5",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E o sacerdote tomará um pau de cedro.",
+        "evidenceRef": "Números 19:6",
+        "evidenceSpan": "E o sacerdote tomará um pau de cedro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Arão",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O senhor disse a moisés",
+        "evidenceRef": "Números 19:1"
+      },
+      {
+        "label": "Este é o estatuto da lei",
+        "evidenceRef": "Números 19:2"
+      },
+      {
+        "label": "E o entregarão a eleazar",
+        "evidenceRef": "Números 19:3"
+      },
+      {
+        "label": "E eleazar o sacerdote tomará",
+        "evidenceRef": "Números 19:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 19:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 19:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 2:14",
+        "bridge": "Doutrina de Balaão"
+      },
+      {
+        "ref": "Josué 20:2–3",
+        "bridge": "Cidades de refúgio"
+      },
+      {
+        "ref": "Deuteronômio 10:8",
+        "bridge": "Levi separado para servir"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Há limpeza para o que toca a morte: o Senhor abre caminho de volta ao puro.",
+    "anchorQuestion": "O que Números 19:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 19:1, o texto inclui O Senhor disse a Moisés e a Arão.",
+      "verseRef": "Números 19:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor disse a Moisés e a Arão",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 19:1 afirma.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 19:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Números 19:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca Senhor.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 19:3, o que o texto apresenta com clareza.",
+      "verseRef": "Números 19:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 19:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 19:2 na ordem do texto.",
+      "verseRef": "Números 19:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Este é o estatuto"
+        },
+        {
+          "id": "b",
+          "text": "da lei"
+        },
+        {
+          "id": "c",
+          "text": "Senhor ordenou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Este é o estatuto",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Números 19:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 19:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 19:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eleazar"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eleazar",
+      "feedbackCorrect": "A palavra do versículo é Eleazar.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 19:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 19:1 comunica que se liga a este contexto.",
+      "verseRef": "Números 19:1",
+      "passageA": {
+        "ref": "Números 19:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de A novilha vermelha: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 19:5, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Números 19:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 19:5 afirma.",
+      "evidence": [
+        "Números 19:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 19:5, toque a palavra que marca a relação no texto.",
+      "verseRef": "Números 19:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "queimarão"
+        },
+        {
+          "id": "c",
+          "text": "novilha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 19:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Números 19:4, o que o texto apresenta com clareza.",
+      "verseRef": "Números 19:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: eleazar, o sacerdote, tomará do sangue com o dedo e dele"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Eleazar, o sacerdote, tomará do sangue com o dedo e dele",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 19:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Números 19:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O senhor disse a moisés"
+        },
+        {
+          "id": "b",
+          "text": "Este é o estatuto da lei"
+        },
+        {
+          "id": "c",
+          "text": "E o entregarão a eleazar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 19:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 19:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "entregarão"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entregarão",
+      "feedbackCorrect": "A palavra do versículo é entregarão.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 19:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 19:1 a Apocalipse 2:14.",
+      "verseRef": "Números 19:1",
+      "passageA": {
+        "ref": "Números 19:1"
+      },
+      "passageB": {
+        "ref": "Apocalipse 2:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Doutrina de Balaão"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Números 19:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Aquele",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 19:10 afirma.",
+      "evidence": [
+        "Números 19:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 19:6, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Números 19:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "tomará"
+        },
+        {
+          "id": "c",
+          "text": "pau"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sacerdote",
+      "feedbackCorrect": "O versículo destaca sacerdote.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 19:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Números 19:5, o que o texto apresenta com clareza.",
+      "verseRef": "Números 19:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: então, queimarão a novilha à vista dele"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, queimarão a novilha à vista dele; sua pele, sua",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 19:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Números 19:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 19:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 19:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "queimarão"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "queimarão",
+      "feedbackCorrect": "A palavra do versículo é queimarão.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 19:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 19:1 a Josué 20:2–3.",
+      "verseRef": "Números 19:1",
+      "passageA": {
+        "ref": "Números 19:1"
+      },
+      "passageB": {
+        "ref": "Josué 20:2–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 19:1"
+      ]
+    }
+  ]
+}

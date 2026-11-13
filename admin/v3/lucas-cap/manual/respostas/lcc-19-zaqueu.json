@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Lucas 19:1–6",
+    "passages": [
+      { "ref": "Lucas 19:1–6" },
+      { "ref": "Lucas 19:7–10" }
+    ],
+    "context": "Jesus entra em Jericó e atravessa a cidade. Zaqueu, chefe dos cobradores de impostos, é rico e de pequena estatura. Ele quer ver Jesus, mas a multidão ocupa o caminho.",
+    "keyword": "perdidos",
+    "keywordGloss": "São as pessoas que o Filho do Homem veio buscar e salvar.",
+    "focusQuestion": "Se Jesus entrasse na sua casa hoje, o que você restituiria?",
+    "reflectionPrompts": [
+      "A árvore no caminho",
+      "A casa aberta hoje",
+      "Quatro vezes mais"
+    ],
+    "facts": [
+      {
+        "text": "Zaqueu era o maioral dos publicanos e também rico.",
+        "evidenceRef": "Lucas 19:2",
+        "evidenceSpan": "o maioral dos publicanos e também rico"
+      },
+      {
+        "text": "Zaqueu não podia ver Jesus por causa da multidão.",
+        "evidenceRef": "Lucas 19:3",
+        "evidenceSpan": "não podia por causa da multidão"
+      },
+      {
+        "text": "Zaqueu subiu numa sicômoro para ver Jesus.",
+        "evidenceRef": "Lucas 19:4",
+        "evidenceSpan": "subiu em uma sicômoro para vê-lo"
+      },
+      {
+        "text": "Jesus diz ser necessário permanecer hoje na casa de Zaqueu.",
+        "evidenceRef": "Lucas 19:5",
+        "evidenceSpan": "é necessário que eu permaneça hoje em sua casa"
+      },
+      {
+        "text": "Zaqueu resolve dar aos pobres a metade dos seus bens.",
+        "evidenceRef": "Lucas 19:8",
+        "evidenceSpan": "resolvo dar aos pobres a metade dos meus bens"
+      },
+      {
+        "text": "Jesus afirma que a salvação chegou a esta casa.",
+        "evidenceRef": "Lucas 19:9",
+        "evidenceSpan": "a salvação chegou a esta casa"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sicômoro",
+        "gloss": "Árvore em que Zaqueu sobe para conseguir ver Jesus passar."
+      },
+      {
+        "term": "salvação",
+        "gloss": "O que Jesus diz que chegou hoje à casa de Zaqueu."
+      },
+      {
+        "term": "perdidos",
+        "gloss": "Aqueles que o Filho do Homem veio buscar e salvar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Zaqueu sobe para ver Jesus",
+        "evidenceRef": "Lucas 19:3–4"
+      },
+      {
+        "label": "Jesus chama e é recebido na casa",
+        "evidenceRef": "Lucas 19:5–6"
+      },
+      {
+        "label": "A multidão murmura contra a visita",
+        "evidenceRef": "Lucas 19:7"
+      },
+      {
+        "label": "Jesus anuncia salvação na casa",
+        "evidenceRef": "Lucas 19:9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Zaqueu sobe na sicômoro com o fim de ver Jesus, que ia passar por ali.",
+        "marker": "para",
+        "evidenceRef": "Lucas 19:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Jesus manda descer depressa, pois é necessário permanecer hoje na casa.",
+        "marker": "pois",
+        "evidenceRef": "Lucas 19:5"
+      },
+      {
+        "kind": "causa",
+        "text": "A palavra final explica a cena: o Filho do Homem veio buscar e salvar os perdidos.",
+        "marker": "Porque",
+        "evidenceRef": "Lucas 19:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 15:4", "bridge": "Busca do que se perdeu" },
+      { "ref": "Lucas 13:16", "bridge": "Família de Abraão" },
+      { "ref": "1 Timóteo 1:15", "bridge": "Veio salvar pecadores" }
+    ],
+    "misreadings": [
+      {
+        "text": "Zaqueu comprou a salvação ao restituir quatro vezes o que defraudou.",
+        "why": "Jesus declara que a salvação chegou hoje porque este também é filho de Abraão. A restituição mostra a mudança. O texto não a apresenta como preço."
+      },
+      {
+        "text": "A multidão acertou ao tratar Zaqueu como pecador fora da família de Abraão.",
+        "why": "O murmúrio é da multidão. Jesus afirma a salvação nesta casa e chama Zaqueu de filho de Abraão."
+      },
+      {
+        "text": "A salvação ainda não chegou, pois Zaqueu apenas prometeu restituir.",
+        "why": "Jesus diz que a salvação chegou hoje a esta casa. O anúncio não fica para depois do pagamento."
+      }
+    ],
+    "centralInsight": "Jesus veio buscar e salvar o perdido, e a salvação muda a casa de Zaqueu.",
+    "anchorQuestion": "O que Jesus diz que chegou à casa de Zaqueu?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 19:8, Zaqueu resolve dar aos pobres todos os seus bens.",
+      "verseRef": "Lucas 19:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "a metade dos meus bens",
+      "feedbackCorrect": "O voto reserva aos pobres a metade dos bens.",
+      "feedbackWrong": {
+        "true": "O texto marca a metade dos bens no voto de Zaqueu."
+      },
+      "hint": "Observe quanto dos bens ele promete aos pobres.",
+      "learningObjective": "Observar quanto dos bens Zaqueu resolve dar aos pobres.",
+      "evidence": ["Lucas 19:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 19:2, toque o nome do homem rico.",
+      "verseRef": "Lucas 19:2",
+      "options": [
+        { "id": "a", "text": "publicanos" },
+        { "id": "b", "text": "Zaqueu" },
+        { "id": "c", "text": "rico" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chamado Zaqueu",
+      "feedbackCorrect": "O homem rico tem nome. Ele se chama Zaqueu.",
+      "feedbackWrong": {
+        "a": "Publicanos indica o ofício, não o nome da pessoa.",
+        "c": "Rico descreve a condição, não o nome."
+      },
+      "hint": "Procure o nome próprio no início do versículo.",
+      "learningObjective": "Identificar o nome do homem rico de Jericó.",
+      "evidence": ["Lucas 19:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 19:3, por que Zaqueu não conseguia ver Jesus?",
+      "verseRef": "Lucas 19:3",
+      "options": [
+        { "id": "a", "text": "Jesus já tinha saído de Jericó" },
+        { "id": "b", "text": "A multidão e a pequena estatura o impediam" },
+        { "id": "c", "text": "Os discípulos barraram a aproximação" },
+        { "id": "d", "text": "Zaqueu estava acamado e não saiu" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não podia por causa da multidão, pois era de pequena estatura",
+      "feedbackCorrect": "A multidão e a pequena estatura impediam a visão.",
+      "feedbackWrong": {
+        "a": "Jesus ainda atravessava a cidade. O obstáculo era outro.",
+        "c": "O texto não menciona discípulos no caminho.",
+        "d": "Nada indica doença. A estatura e a multidão explicam."
+      },
+      "hint": "Leia as duas razões no fim do versículo.",
+      "learningObjective": "Reconhecer por que Zaqueu não conseguia ver Jesus.",
+      "evidence": ["Lucas 19:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 19:5 na ordem do texto.",
+      "verseRef": "Lucas 19:5",
+      "options": [
+        { "id": "a", "text": "Jesus olhou para cima" },
+        { "id": "b", "text": "viu Zaqueu" },
+        { "id": "c", "text": "Desce rapidamente" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jesus olhou para cima, viu Zaqueu",
+      "feedbackCorrect": "Jesus olha para cima, vê Zaqueu e manda descer depressa.",
+      "feedbackWrong": {
+        "default": "Comece pelo olhar. A ordem de descer fecha o trecho."
+      },
+      "hint": "Siga o que Jesus faz ao chegar àquele lugar.",
+      "learningObjective": "Reconhecer a sequência do encontro em Lucas 19:5.",
+      "evidence": ["Lucas 19:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 19:4, em que árvore Zaqueu subiu para ver Jesus?",
+      "verseRef": "Lucas 19:4",
+      "options": [
+        { "id": "a", "text": "oliveira" },
+        { "id": "b", "text": "sicômoro" },
+        { "id": "c", "text": "figueira" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "subiu em uma sicômoro",
+      "feedbackCorrect": "A árvore do caminho é a sicômoro.",
+      "feedbackWrong": {
+        "a": "Oliveira não aparece. A árvore citada é outra.",
+        "c": "Figueira não aparece. A árvore citada é outra."
+      },
+      "hint": "Veja o nome da árvore no meio do versículo.",
+      "learningObjective": "Lembrar a árvore em que Zaqueu subiu para ver Jesus.",
+      "evidence": ["Lucas 19:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 19:10 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 19:10",
+      "passageA": { "ref": "Lucas 19:10" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jesus entra na casa de um homem que a multidão chama de pecador."
+      },
+      "options": [
+        { "id": "a", "text": "Cobrança justa de impostos" },
+        { "id": "b", "text": "Festa exclusiva de ricos" },
+        { "id": "c", "text": "Missão de buscar o perdido" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "veio buscar e salvar os perdidos",
+      "feedbackCorrect": "Entrar na casa do pecador mostra a busca de quem se perdeu.",
+      "feedbackWrong": {
+        "a": "O ofício de Zaqueu não é o elo com a frase sobre os perdidos.",
+        "b": "O texto não descreve festa. Descreve busca e salvação."
+      },
+      "hint": "Ligue a frase final à casa em que Jesus entrou.",
+      "learningObjective": "Ligar a missão do Filho do Homem à entrada na casa de Zaqueu.",
+      "evidence": ["Lucas 19:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 19:5, Jesus manda Zaqueu descer porque é necessário ficar hoje na casa dele.",
+      "verseRef": "Lucas 19:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois é necessário que eu permaneça hoje em sua casa",
+      "feedbackCorrect": "O pois une a ordem de descer à permanência hoje na casa.",
+      "feedbackWrong": {
+        "false": "A palavra pois dá a causa: permanecer hoje na casa dele."
+      },
+      "hint": "Observe a palavra que liga a ordem à casa.",
+      "learningObjective": "Compreender por que Jesus manda Zaqueu descer depressa.",
+      "evidence": ["Lucas 19:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 19:6, toque a atitude com que Zaqueu recebeu Jesus.",
+      "verseRef": "Lucas 19:6",
+      "options": [
+        { "id": "a", "text": "desceu" },
+        { "id": "b", "text": "com alegria" },
+        { "id": "c", "text": "apressando-se" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o recebeu com alegria",
+      "feedbackCorrect": "Zaqueu desce apressado e recebe Jesus com alegria.",
+      "feedbackWrong": {
+        "a": "Descer é o movimento. A atitude da recepção é outra.",
+        "c": "A pressa acompanha a descida. A recepção é outra."
+      },
+      "hint": "Olhe o modo do recebimento no fim do versículo.",
+      "learningObjective": "Reconhecer a atitude de Zaqueu ao receber Jesus.",
+      "evidence": ["Lucas 19:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual é o propósito da subida narrada em Lucas 19:4?",
+      "verseRef": "Lucas 19:4",
+      "options": [
+        { "id": "a", "text": "Esconder os bens longe da multidão" },
+        { "id": "b", "text": "Vigiar a cidade durante a noite" },
+        { "id": "c", "text": "Conseguir ver Jesus, que passaria por aquele lugar" },
+        { "id": "d", "text": "Reunir os publicanos para um acordo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "para vê-lo, pois ele ia passar por ali",
+      "feedbackCorrect": "Ele sobe para ver Jesus, que ia passar por ali.",
+      "feedbackWrong": {
+        "a": "O texto não fala em esconder bens. Ele quer ver Jesus.",
+        "b": "Não há vigília noturna. Ele quer ver quem passava.",
+        "d": "Nenhum acordo aparece. O fim da subida é ver Jesus."
+      },
+      "hint": "Leia o motivo da subida no versículo.",
+      "learningObjective": "Compreender o propósito de Zaqueu ao subir na árvore.",
+      "evidence": ["Lucas 19:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do encontro de Jesus com Zaqueu.",
+      "verseRef": "Lucas 19:5–6",
+      "options": [
+        { "id": "a", "text": "Zaqueu sobe para ver Jesus" },
+        { "id": "b", "text": "Jesus chama e é recebido na casa" },
+        { "id": "c", "text": "Jesus anuncia salvação na casa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "é necessário que eu permaneça hoje em sua casa",
+      "feedbackCorrect": "A subida leva ao chamado, e o chamado chega à salvação na casa.",
+      "feedbackWrong": {
+        "default": "Comece pela subida de Zaqueu. A salvação anunciada fecha."
+      },
+      "hint": "A subida abre. A palavra sobre a casa fecha.",
+      "learningObjective": "Compreender os movimentos da subida até a salvação na casa.",
+      "evidence": ["Lucas 19:3–4", "Lucas 19:5–6", "Lucas 19:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 19:7, o que todos faziam ao ver a hospedagem?",
+      "verseRef": "Lucas 19:7",
+      "options": [
+        { "id": "a", "text": "celebravam" },
+        { "id": "b", "text": "aplaudiam" },
+        { "id": "c", "text": "murmuravam" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "todos murmuravam",
+      "feedbackCorrect": "Ao ver a cena, todos murmuravam.",
+      "feedbackWrong": {
+        "a": "O versículo não fala em festa. A reação é outra.",
+        "b": "Não há aplauso. A reação da multidão é outra."
+      },
+      "hint": "Veja o verbo logo depois que todos veem a cena.",
+      "learningObjective": "Identificar a reação da multidão à hospedagem de Jesus.",
+      "evidence": ["Lucas 19:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 19:10 a Lucas 15:4?",
+      "verseRef": "Lucas 19:10",
+      "passageA": { "ref": "Lucas 19:10" },
+      "passageB": { "ref": "Lucas 15:4" },
+      "options": [
+        { "id": "a", "text": "Busca do que se perdeu" },
+        { "id": "b", "text": "Cuidado só com as noventa" },
+        { "id": "c", "text": "Festa só entre amigos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "veio buscar e salvar os perdidos",
+      "feedbackCorrect": "Os dois textos mostram alguém indo atrás do que se perdeu.",
+      "feedbackWrong": {
+        "b": "As noventa e nove ficam. A ação é ir atrás da que se perdeu.",
+        "c": "Amigos entram na festa depois. O elo é a busca."
+      },
+      "hint": "Compare o movimento de procurar nos dois textos.",
+      "learningObjective": "Relacionar a missão de Lucas 19:10 à busca da ovelha perdida.",
+      "evidence": ["Lucas 19:10", "Lucas 15:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 19:8–9, o voto de restituir quatro vezes é o que traz a salvação à casa.",
+      "verseRef": "Lucas 19:8–9",
+      "correctOptionId": "false",
+      "evidenceSpan": "a salvação chegou a esta casa, pois também este é filho de Abraão",
+      "feedbackCorrect": "A razão de Jesus é que este também é filho de Abraão.",
+      "feedbackWrong": {
+        "true": "O voto mostra a mudança. Jesus aponta a filiação de Abraão."
+      },
+      "hint": "Veja a razão que Jesus dá depois do anúncio.",
+      "learningObjective": "Distinguir o voto de restituir da razão que Jesus dá para a salvação.",
+      "evidence": ["Lucas 19:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 19:9, toque quem Jesus diz que Zaqueu também é.",
+      "verseRef": "Lucas 19:9",
+      "options": [
+        { "id": "a", "text": "esta casa" },
+        { "id": "b", "text": "salvação" },
+        { "id": "c", "text": "filho de Abraão" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "este é filho de Abraão",
+      "feedbackCorrect": "Jesus inclui Zaqueu ao chamá-lo filho de Abraão.",
+      "feedbackWrong": {
+        "a": "A casa é o lugar. A identidade de Zaqueu vem no fim.",
+        "b": "Salvação é o que chegou. A identidade vem depois."
+      },
+      "hint": "Procure o parentesco no fim da frase de Jesus.",
+      "learningObjective": "Localizar no texto a identidade que Jesus atribui a Zaqueu.",
+      "evidence": ["Lucas 19:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 19:9–10 sustenta sobre a salvação nesta casa?",
+      "verseRef": "Lucas 19:9–10",
+      "options": [
+        { "id": "a", "text": "Zaqueu compra o perdão com a restituição quádrupla" },
+        { "id": "b", "text": "O Filho do Homem busca o perdido e a casa recebe salvação" },
+        { "id": "c", "text": "A multidão acerta ao excluir o publicano da família" },
+        { "id": "d", "text": "O anúncio fica para depois do pagamento" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Hoje, a salvação chegou a esta casa",
+      "feedbackCorrect": "Jesus anuncia a salvação hoje e inclui Zaqueu em Abraão.",
+      "feedbackWrong": {
+        "a": "A restituição mostra a mudança. Jesus não a trata como preço.",
+        "c": "O murmúrio é da multidão. Jesus inclui Zaqueu em Abraão.",
+        "d": "Jesus diz que a salvação chegou hoje. O anúncio não espera."
+      },
+      "hint": "Compare cada leitura com a frase de Jesus sobre a casa.",
+      "learningObjective": "Escolher a leitura que o anúncio de Jesus sustenta.",
+      "evidence": ["Lucas 19:9–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do relato até a palavra de Jesus sobre a casa.",
+      "verseRef": "Lucas 19:8",
+      "options": [
+        { "id": "a", "text": "A multidão chama Zaqueu pecador" },
+        { "id": "b", "text": "Zaqueu reparte bens e restitui o dano" },
+        { "id": "c", "text": "Jesus declara salvação nesta casa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "restituo quatro vezes mais",
+      "feedbackCorrect": "O juízo da multidão, a restituição e o anúncio fecham a lógica.",
+      "feedbackWrong": {
+        "default": "Comece pelo juízo da multidão. O anúncio de Jesus fecha."
+      },
+      "hint": "O juízo alheio abre. A palavra sobre a casa fecha.",
+      "learningObjective": "Interpretar o caminho do murmúrio até o anúncio de salvação.",
+      "evidence": ["Lucas 19:7", "Lucas 19:8", "Lucas 19:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 19:10, quem o Filho do Homem veio buscar e salvar?",
+      "verseRef": "Lucas 19:10",
+      "options": [
+        { "id": "a", "text": "justos" },
+        { "id": "b", "text": "perdidos" },
+        { "id": "c", "text": "ricos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "salvar os perdidos",
+      "feedbackCorrect": "O Filho do Homem veio buscar e salvar os perdidos.",
+      "feedbackWrong": {
+        "a": "O texto não aponta os justos como alvo da vinda.",
+        "c": "A riqueza não é o alvo da frase. O alvo é outro."
+      },
+      "hint": "Leia a última palavra da frase de Jesus.",
+      "learningObjective": "Lembrar a quem se dirige a missão do Filho do Homem.",
+      "evidence": ["Lucas 19:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 19:9 a Lucas 13:16?",
+      "verseRef": "Lucas 19:9",
+      "passageA": { "ref": "Lucas 19:9" },
+      "passageB": { "ref": "Lucas 13:16" },
+      "options": [
+        { "id": "a", "text": "Cura no dia de sábado" },
+        { "id": "b", "text": "Família de Abraão" },
+        { "id": "c", "text": "Quatro vezes o defraudado" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "este é filho de Abraão",
+      "feedbackCorrect": "Jesus usa o nome de Abraão para quem outros diminuíam.",
+      "feedbackWrong": {
+        "a": "Sábado e libertação são de Lucas 13. O elo está em outro nome.",
+        "c": "A restituição é o voto de Zaqueu. Lucas 13 cita outro nome."
+      },
+      "hint": "Veja o antepassado que Jesus cita nos dois textos.",
+      "learningObjective": "Ligar o título dado a Zaqueu ao título dado à mulher em Lucas 13.",
+      "evidence": ["Lucas 19:9", "Lucas 13:16"]
+    }
+  ]
+}

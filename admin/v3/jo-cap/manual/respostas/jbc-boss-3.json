@@ -1,0 +1,935 @@
+{
+ "study": {
+  "passageRef": "Jó 19:23–27",
+  "passages": [
+   {
+    "ref": "Jó 15:14–16"
+   },
+   {
+    "ref": "Jó 16:15–19"
+   },
+   {
+    "ref": "Jó 17:1–5"
+   },
+   {
+    "ref": "Jó 18:5–8"
+   },
+   {
+    "ref": "Jó 19:23–27"
+   },
+   {
+    "ref": "Jó 20:4–7"
+   },
+   {
+    "ref": "Jó 21:7–9"
+   }
+  ],
+  "context": "Travessia do segundo ciclo: acusação, testemunha no céu, lâmpada do ímpio, Redentor que vive e a pergunta sobre os que prosperam.",
+  "keyword": "Redentor vive",
+  "keywordGloss": "A confissão que atravessa a acusação do segundo ciclo.",
+  "focusQuestion": "No meio da acusação, você ainda consegue confessar que o Redentor vive?",
+  "reflectionPrompts": [
+   "Acusação do ciclo",
+   "Testemunha e Redentor",
+   "Prosperidade sem prova"
+  ],
+  "facts": [
+   {
+    "text": "Elifaz pergunta o que é o homem para ser puro.",
+    "evidenceRef": "Jó 15:14",
+    "evidenceSpan": "Que é o homem, para que se torne puro?"
+   },
+   {
+    "text": "A testemunha de Jó está no céu.",
+    "evidenceRef": "Jó 16:19",
+    "evidenceSpan": "a minha testemunha está no céu"
+   },
+   {
+    "text": "A lâmpada do ímpio se apagará.",
+    "evidenceRef": "Jó 18:6",
+    "evidenceSpan": "a lâmpada dele se apagará"
+   },
+   {
+    "text": "Jó sabe que o seu Redentor vive.",
+    "evidenceRef": "Jó 19:25",
+    "evidenceSpan": "o meu Redentor vive"
+   },
+   {
+    "text": "O júbilo dos ímpios é passageiro.",
+    "evidenceRef": "Jó 20:5",
+    "evidenceSpan": "o júbilo dos ímpios é passageiro"
+   },
+   {
+    "text": "Jó pergunta por que os ímpios vivem e envelhecem.",
+    "evidenceRef": "Jó 21:7",
+    "evidenceSpan": "Por que os ímpios vivem e envelhecem"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Redentor",
+    "gloss": "Aquele que Jó sabe que vive e se levantará."
+   },
+   {
+    "term": "testemunha",
+    "gloss": "Quem está no céu a favor de Jó."
+   },
+   {
+    "term": "lâmpada",
+    "gloss": "A luz do ímpio que Bildade diz que se apaga."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Elifaz aperta o cerco da impureza",
+    "evidenceRef": "Jó 15:14–16"
+   },
+   {
+    "label": "Jó aponta a testemunha no céu",
+    "evidenceRef": "Jó 16:15–19"
+   },
+   {
+    "label": "Confissão do Redentor que vive",
+    "evidenceRef": "Jó 19:23–27"
+   },
+   {
+    "label": "Pergunta sobre os ímpios que prosperam",
+    "evidenceRef": "Jó 21:7–9"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Amigos acusam; Jó aponta testemunha no céu.",
+    "marker": null,
+    "evidenceRef": "Jó 16:19"
+   },
+   {
+    "kind": "causa",
+    "text": "Porque Jó sabe que o Redentor vive.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 19:25"
+   },
+   {
+    "kind": "contraste",
+    "text": "Zofar fala de júbilo breve; Jó aponta ímpios que envelhecem.",
+    "marker": null,
+    "evidenceRef": "Jó 21:7"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 João 2:1",
+    "bridge": "Advogado junto ao Pai"
+   },
+   {
+    "ref": "Salmos 19:14",
+    "bridge": "Senhor, rocha e Redentor"
+   },
+   {
+    "ref": "Hebreus 7:25",
+    "bridge": "Jesus intercede sempre"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "No segundo ciclo Jó abandona toda esperança.",
+    "why": "19:25 confessa o Redentor que vive."
+   },
+   {
+    "text": "A prosperidade sempre prova inocência.",
+    "why": "21:7–9 quebra esse esquema."
+   },
+   {
+    "text": "Não há testemunha no céu neste ciclo.",
+    "why": "16:19 afirma a testemunha."
+   }
+  ],
+  "centralInsight": "A fé atravessa a acusação e ainda confessa: meu Redentor vive",
+  "anchorQuestion": "O que Jó sabe sobre o seu Redentor em Jó 19:25?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 19:25, Jó sabe que o seu Redentor vive.",
+   "verseRef": "Jó 19:25",
+   "correctOptionId": "true",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "A confissão central do ciclo.",
+   "feedbackWrong": {
+    "false": "Releia 19:25."
+   },
+   "hint": "Veja o que ele sabe.",
+   "learningObjective": "Observar o Redentor.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 19:25, toque quem Jó sabe que vive.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Redentor"
+    },
+    {
+     "id": "b",
+     "text": "terra"
+    },
+    {
+     "id": "c",
+     "text": "fim"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "O Redentor vive.",
+   "feedbackWrong": {
+    "b": "Terra é onde se levantará.",
+    "c": "Fim marca o tempo."
+   },
+   "hint": "Veja o sujeito.",
+   "learningObjective": "Identificar o Redentor.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 16:19, onde está a testemunha de Jó?",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "No céu"
+    },
+    {
+     "id": "b",
+     "text": "Entre os amigos"
+    },
+    {
+     "id": "c",
+     "text": "No Sheol"
+    },
+    {
+     "id": "d",
+     "text": "Na tenda do ímpio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "A testemunha está no céu.",
+   "feedbackWrong": {
+    "b": "Os amigos zombam.",
+    "c": "Não há Sheol neste verso.",
+    "d": "Não há tenda neste verso."
+   },
+   "hint": "Leia o lugar.",
+   "learningObjective": "Observar a testemunha.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 19:25 na ordem do texto.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque eu sei que o meu Redentor vive"
+    },
+    {
+     "id": "b",
+     "text": "e, por fim, se levantará"
+    },
+    {
+     "id": "c",
+     "text": "sobre a terra."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Saber, viver e levantar-se.",
+   "feedbackWrong": {
+    "default": "Comece por Porque."
+   },
+   "hint": "Comece por Porque.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 18:6, o que se apagará?",
+   "verseRef": "Jó 18:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "lâmpada"
+    },
+    {
+     "id": "b",
+     "text": "Redentor"
+    },
+    {
+     "id": "c",
+     "text": "testemunha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "A lâmpada se apaga.",
+   "feedbackWrong": {
+    "b": "Redentor está em 19:25.",
+    "c": "Testemunha está em 16:19."
+   },
+   "hint": "Veja o sujeito do fim.",
+   "learningObjective": "Lembrar a lâmpada.",
+   "evidence": [
+    "Jó 18:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 19:25 comunica que se liga a este contexto?",
+   "verseRef": "Jó 19:25",
+   "passageA": {
+    "ref": "Jó 19:25"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A fé atravessa a acusação e ainda confessa o Redentor."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Confissão sob acusação"
+    },
+    {
+     "id": "b",
+     "text": "Rendição total"
+    },
+    {
+     "id": "c",
+     "text": "Vitória dos amigos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Há confissão no meio do ciclo.",
+   "feedbackWrong": {
+    "b": "Ele confessa, não se rende.",
+    "c": "Não há vitória dos amigos."
+   },
+   "hint": "Pense no que atravessa.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 21:7, toque quem Jó pergunta por que vive.",
+   "verseRef": "Jó 21:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "ímpios"
+    },
+    {
+     "id": "b",
+     "text": "poderosos"
+    },
+    {
+     "id": "c",
+     "text": "envelhecem"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que os ímpios vivem",
+   "feedbackCorrect": "Os ímpios vivem e envelhecem.",
+   "feedbackWrong": {
+    "b": "Poderosos descreve o resultado.",
+    "c": "Envelhecem é o segundo verbo."
+   },
+   "hint": "Veja o sujeito da pergunta.",
+   "learningObjective": "Identificar os ímpios.",
+   "evidence": [
+    "Jó 21:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 16:19 na ordem do texto.",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que agora sabeis que a minha testemunha está no céu"
+    },
+    {
+     "id": "b",
+     "text": "e quem defende a minha causa"
+    },
+    {
+     "id": "c",
+     "text": "nas alturas."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "Testemunha no céu; defesa nas alturas.",
+   "feedbackWrong": {
+    "default": "Comece por Eis que."
+   },
+   "hint": "Comece por Eis que.",
+   "learningObjective": "Reconhecer 16:19.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 20:5 e 21:7, Zofar e Jó dizem a mesma coisa sobre o destino imediato dos ímpios.",
+   "verseRef": "Jó 20:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "Zofar fala de júbilo breve; Jó aponta ímpios que envelhecem.",
+   "feedbackWrong": {
+    "true": "Compare 20:5 e 21:7."
+   },
+   "hint": "Compare Zofar e Jó.",
+   "learningObjective": "Compreender o contraste.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 19:25, toque a palavra que marca a causa da confissão.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "Redentor"
+    },
+    {
+     "id": "c",
+     "text": "terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque eu sei",
+   "feedbackCorrect": "Porque introduz a causa.",
+   "feedbackWrong": {
+    "b": "Redentor é o objeto do saber.",
+    "c": "Terra é onde se levantará."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 19:25 se relaciona com 16:19?",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Aprofunda a defesa: da testemunha ao Redentor"
+    },
+    {
+     "id": "b",
+     "text": "Nega qualquer testemunha no céu"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que a lâmpada nunca se apaga"
+    },
+    {
+     "id": "d",
+     "text": "Diz que os ímpios nunca prosperam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Da testemunha ao Redentor.",
+   "feedbackWrong": {
+    "b": "16:19 afirma a testemunha.",
+    "c": "18:6 fala da lâmpada.",
+    "d": "21:7 pergunta sobre prosperidade."
+   },
+   "hint": "Una 16:19 e 19:25.",
+   "learningObjective": "Relacionar testemunha e Redentor.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o segundo ciclo até a Travessia?",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "Acusação e testemunha no céu"
+    },
+    {
+     "id": "b",
+     "text": "Confissão do Redentor que vive"
+    },
+    {
+     "id": "c",
+     "text": "Pergunta sobre os ímpios que prosperam"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "Acusação, confissão e pergunta.",
+   "feedbackWrong": {
+    "default": "Comece pela testemunha."
+   },
+   "hint": "Pense: acusação → Redentor → prosperidade.",
+   "learningObjective": "Compreender a etapa.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 20:5, como é o júbilo dos ímpios?",
+   "verseRef": "Jó 20:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "passageiro"
+    },
+    {
+     "id": "b",
+     "text": "Redentor"
+    },
+    {
+     "id": "c",
+     "text": "lâmpada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "É passageiro.",
+   "feedbackWrong": {
+    "b": "Redentor está em 19:25.",
+    "c": "Lâmpada está em 18:6."
+   },
+   "hint": "Veja o predicado.",
+   "learningObjective": "Lembrar o júbilo.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 19:25 a Salmos 19:14?",
+   "verseRef": "Jó 19:25",
+   "passageA": {
+    "ref": "Jó 19:25"
+   },
+   "passageB": {
+    "ref": "Salmos 19:14"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Senhor, rocha e Redentor"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Nos dois textos, há Redentor.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare o Redentor.",
+   "learningObjective": "Relacionar Jó ao Salmo.",
+   "evidence": [
+    "Jó 19:25",
+    "Salmos 19:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 15:14, toque o que Elifaz pergunta se o homem pode tornar-se.",
+   "verseRef": "Jó 15:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "puro"
+    },
+    {
+     "id": "b",
+     "text": "homem"
+    },
+    {
+     "id": "c",
+     "text": "mulher"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para que se torne puro",
+   "feedbackCorrect": "Puro: o cerco de Elifaz.",
+   "feedbackWrong": {
+    "b": "Homem é o sujeito.",
+    "c": "Mulher marca o nascimento."
+   },
+   "hint": "Veja o fim da pergunta.",
+   "learningObjective": "Identificar a pureza.",
+   "evidence": [
+    "Jó 15:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se encadeiam acusação e confissão?",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elifaz aperta o cerco da impureza"
+    },
+    {
+     "id": "b",
+     "text": "Jó ergue a testemunha no céu"
+    },
+    {
+     "id": "c",
+     "text": "Surge a confissão do Redentor vivo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Cerco, testemunha e Redentor.",
+   "feedbackWrong": {
+    "default": "Comece por Elifaz."
+   },
+   "hint": "Siga: cerco → céu → Redentor.",
+   "learningObjective": "Ver o movimento do ciclo.",
+   "evidence": [
+    "Jó 15:14",
+    "Jó 16:19",
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 15–21 sustenta que a fé atravessa a acusação e ainda confessa o Redentor que vive.",
+   "verseRef": "Jó 19:25",
+   "correctOptionId": "true",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "A Travessia fecha o ciclo com essa confissão.",
+   "feedbackWrong": {
+    "false": "Una 16:19 e 19:25."
+   },
+   "hint": "Veja a confissão central.",
+   "learningObjective": "Interpretar a Travessia.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 19:25, toque o trecho que sustenta a ação final do Redentor.",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "sobre a terra"
+    },
+    {
+     "id": "b",
+     "text": "eu sei"
+    },
+    {
+     "id": "c",
+     "text": "meu Redentor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se levantará sobre a terra",
+   "feedbackCorrect": "Sobre a terra sustenta o levantar.",
+   "feedbackWrong": {
+    "b": "Eu sei introduz a confissão.",
+    "c": "Redentor nomeia quem vive."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Sustentar a leitura do Redentor.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura o segundo ciclo sustenta?",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "A fé atravessa a acusação e confessa o Redentor"
+    },
+    {
+     "id": "b",
+     "text": "Não há testemunha no céu"
+    },
+    {
+     "id": "c",
+     "text": "Prosperidade prova inocência"
+    },
+    {
+     "id": "d",
+     "text": "Jó abandona toda esperança"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Testemunha e Redentor sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "16:19 afirma a testemunha.",
+    "c": "21:7 quebra o esquema.",
+    "d": "19:25 confessa esperança."
+   },
+   "hint": "Una 16:19, 19:25 e 21:7.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 19:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra a defesa que atravessa o ciclo?",
+   "verseRef": "Jó 19:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó aponta a testemunha no céu"
+    },
+    {
+     "id": "b",
+     "text": "Jó confessa o Redentor que vive"
+    },
+    {
+     "id": "c",
+     "text": "João fala do advogado junto ao Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "O fio vai da testemunha ao Redentor e a 1 João.",
+   "feedbackWrong": {
+    "default": "Comece pela testemunha."
+   },
+   "hint": "Siga: testemunha → Redentor → advogado.",
+   "learningObjective": "Ver o fio da defesa.",
+   "evidence": [
+    "Jó 16:19",
+    "Jó 19:25",
+    "1 João 2:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 16:19, o que está no céu a favor de Jó?",
+   "verseRef": "Jó 16:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "testemunha"
+    },
+    {
+     "id": "b",
+     "text": "lâmpada"
+    },
+    {
+     "id": "c",
+     "text": "passageiro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a minha testemunha está no céu",
+   "feedbackCorrect": "O termo é testemunha.",
+   "feedbackWrong": {
+    "b": "Lâmpada está em 18:6.",
+    "c": "Passageiro está em 20:5."
+   },
+   "hint": "Veja o sujeito.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 16:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 19:25 a Hebreus 7:25?",
+   "verseRef": "Jó 19:25",
+   "passageA": {
+    "ref": "Jó 19:25"
+   },
+   "passageB": {
+    "ref": "Hebreus 7:25"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus intercede sempre"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de terras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o meu Redentor vive",
+   "feedbackCorrect": "Nos dois textos, há quem viva e interceda.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare a defesa viva.",
+   "learningObjective": "Ligar o Redentor a Hebreus.",
+   "evidence": [
+    "Jó 19:25",
+    "Hebreus 7:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 21:9, toque o que as casas dos ímpios têm.",
+   "verseRef": "Jó 21:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "paz"
+    },
+    {
+     "id": "b",
+     "text": "temor"
+    },
+    {
+     "id": "c",
+     "text": "vara"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "As suas casas têm paz",
+   "feedbackCorrect": "As casas têm paz.",
+   "feedbackWrong": {
+    "b": "O texto diz sem temor.",
+    "c": "A vara não está sobre eles."
+   },
+   "hint": "Veja o objeto de têm.",
+   "learningObjective": "Identificar a paz.",
+   "evidence": [
+    "Jó 21:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra prosperidade sem prova de inocência?",
+   "verseRef": "Jó 21:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Zofar fala de júbilo passageiro"
+    },
+    {
+     "id": "b",
+     "text": "Jó pergunta por que os ímpios envelhecem"
+    },
+    {
+     "id": "c",
+     "text": "A Travessia deixa a tensão aberta"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Por que os ímpios vivem e envelhecem",
+   "feedbackCorrect": "Do esquema fácil à pergunta que não fecha.",
+   "feedbackWrong": {
+    "default": "Comece por Zofar."
+   },
+   "hint": "Siga: Zofar → Jó → Travessia.",
+   "learningObjective": "Ver o fio da prosperidade.",
+   "evidence": [
+    "Jó 20:5",
+    "Jó 21:7"
+   ]
+  }
+ ]
+}

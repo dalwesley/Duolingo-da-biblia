@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 17:3–10",
+    "passages": [{ "ref": "2 Crônicas 17:3–10" }],
+    "context": "Josafá anda nos primeiros caminhos de Davi, busca a Deus, remove ídolos e envia mestres com o livro da lei pela terra.",
+    "keyword": "buscou",
+    "keywordGloss": "Josafá buscou o Deus de seu pai e não os baalins; por isso o Senhor estava com ele.",
+    "focusQuestion": "Que caminhos você está seguindo — e a quem você busca de verdade?",
+    "reflectionPrompts": ["Caminhos de Davi", "Ensino da lei", "Temor sobre as nações"],
+    "facts": [
+      {
+        "text": "O Senhor estava com Josafá porque andou nos primeiros caminhos de Davi e não buscou os baalins.",
+        "evidenceRef": "2 Crônicas 17:3",
+        "evidenceSpan": "o Senhor estava com Josafá, pois andou nos primeiros caminhos de Davi"
+      },
+      {
+        "text": "Josafá buscou o Deus de seu pai e seguiu os Seus mandamentos.",
+        "evidenceRef": "2 Crônicas 17:4",
+        "evidenceSpan": "buscou o Deus de seu pai e seguiu os Seus mandamentos"
+      },
+      {
+        "text": "Removeu os altos e os postes-ídolos de Judá.",
+        "evidenceRef": "2 Crônicas 17:6",
+        "evidenceSpan": "removeu os altos e os postes-ídolos de Judá"
+      },
+      {
+        "text": "Enviou príncipes, levitas e sacerdotes para ensinarem nas cidades de Judá.",
+        "evidenceRef": "2 Crônicas 17:7–8",
+        "evidenceSpan": "para ensinarem nas cidades de Judá"
+      },
+      {
+        "text": "Levavam o livro da lei do Senhor e ensinavam ao povo.",
+        "evidenceRef": "2 Crônicas 17:9",
+        "evidenceSpan": "levando consigo o livro da lei do Senhor"
+      },
+      {
+        "text": "O temor do Senhor se apoderou dos reinos vizinhos; não fizeram guerra contra Josafá.",
+        "evidenceRef": "2 Crônicas 17:10",
+        "evidenceSpan": "não fizeram guerra contra Josafá"
+      }
+    ],
+    "keyTerms": [
+      { "term": "buscou", "gloss": "Ação de Josafá em relação a Deus, oposta a buscar os baalins." },
+      { "term": "livro da lei", "gloss": "O que os mestres levavam ao percorrer Judá e ensinar o povo." },
+      { "term": "temor do Senhor", "gloss": "O que se apoderou das nações vizinhas e impediu a guerra." }
+    ],
+    "structure": [
+      { "label": "O Senhor está com Josafá nos caminhos de Davi", "evidenceRef": "2 Crônicas 17:3–4" },
+      { "label": "Reino estabelecido e coração ousado", "evidenceRef": "2 Crônicas 17:5–6" },
+      { "label": "Mestres levam a lei pelas cidades", "evidenceRef": "2 Crônicas 17:7–9" },
+      { "label": "Temor do Senhor impede a guerra", "evidenceRef": "2 Crônicas 17:10" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O Senhor estava com Josafá porque ele andou nos caminhos de Davi.",
+        "marker": "pois",
+        "evidenceRef": "2 Crônicas 17:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Buscou a Deus e não agiu segundo as obras de Israel.",
+        "marker": "Antes",
+        "evidenceRef": "2 Crônicas 17:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O temor do Senhor sobre as nações impede guerra contra Josafá.",
+        "marker": "de forma que",
+        "evidenceRef": "2 Crônicas 17:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Deuteronômio 6:6–7", "bridge": "Ensinar a lei ao povo" },
+      { "ref": "Salmos 1:1–2", "bridge": "Prazer na lei do Senhor" },
+      { "ref": "Provérbios 16:7", "bridge": "Deus faz paz com inimigos" }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor estava com Josafá apesar de ele buscar os baalins.",
+        "why": "17:3 diz que não buscou os baalins e andou nos caminhos de Davi."
+      },
+      {
+        "text": "Josafá só fortaleceu o exército; não se importou com o ensino.",
+        "why": "17:7–9 mostra envio de mestres com o livro da lei."
+      },
+      {
+        "text": "As nações atacaram Judá sem temor.",
+        "why": "17:10: o temor do Senhor impediu a guerra."
+      }
+    ],
+    "centralInsight": "O Senhor estava com Josafá porque andou nos caminhos de Davi e buscou a Deus.",
+    "anchorQuestion": "Por que, em 2 Crônicas 17:3, o Senhor estava com Josafá?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 17:3, o Senhor estava com Josafá porque ele andou nos primeiros caminhos de Davi.",
+      "verseRef": "2 Crônicas 17:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor estava com Josafá, pois andou nos primeiros caminhos de Davi",
+      "feedbackCorrect": "O texto liga a presença do Senhor aos caminhos de Davi.",
+      "feedbackWrong": { "false": "Releia 17:3: a causa é andar nos caminhos de Davi." },
+      "hint": "Veja a palavra \"pois\" no versículo.",
+      "learningObjective": "Observar a causa da presença do Senhor.",
+      "evidence": ["2 Crônicas 17:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 17:3, toque o que Josafá não buscou.",
+      "verseRef": "2 Crônicas 17:3",
+      "options": [
+        { "id": "a", "text": "os baalins" },
+        { "id": "b", "text": "seu pai" },
+        { "id": "c", "text": "o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não buscou os baalins",
+      "feedbackCorrect": "Josafá não buscou os baalins.",
+      "feedbackWrong": {
+        "b": "\"Seu pai\" é Davi, modelo dos caminhos, não o que ele evita.",
+        "c": "Ele busca a Deus; o que evita são os baalins."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Identificar o que Josafá recusou buscar.",
+      "evidence": ["2 Crônicas 17:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 17:9, o que os mestres levavam ao ensinar em Judá?",
+      "verseRef": "2 Crônicas 17:9",
+      "options": [
+        { "id": "a", "text": "O livro da lei do Senhor" },
+        { "id": "b", "text": "Os bezerros de ouro de Jeroboão" },
+        { "id": "c", "text": "Só armas para as cidades" },
+        { "id": "d", "text": "Tributo para o Egito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levando consigo o livro da lei do Senhor",
+      "feedbackCorrect": "Eles percorriam as cidades com o livro da lei do Senhor.",
+      "feedbackWrong": {
+        "b": "Não há bezerros neste trecho.",
+        "c": "O foco é ensino, não armas.",
+        "d": "Não se fala de tributo ao Egito."
+      },
+      "hint": "Veja o que levavam consigo.",
+      "learningObjective": "Observar o livro da lei no ensino.",
+      "evidence": ["2 Crônicas 17:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 17:10 na ordem do texto.",
+      "verseRef": "2 Crônicas 17:10",
+      "options": [
+        { "id": "a", "text": "E o temor do Senhor se apoderou" },
+        { "id": "b", "text": "de todos os reinos das terras que cercavam Judá" },
+        { "id": "c", "text": "não fizeram guerra contra Josafá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o temor do Senhor se apoderou de todos os reinos",
+      "feedbackCorrect": "Temor, reinos vizinhos e ausência de guerra, nessa ordem.",
+      "feedbackWrong": { "default": "Comece pelo temor do Senhor." },
+      "hint": "O versículo abre com o temor.",
+      "learningObjective": "Reconhecer a sequência de 17:10.",
+      "evidence": ["2 Crônicas 17:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 17:4, Josafá ___ o Deus de seu pai.",
+      "verseRef": "2 Crônicas 17:4",
+      "options": [
+        { "id": "a", "text": "buscou" },
+        { "id": "b", "text": "abandonou" },
+        { "id": "c", "text": "esqueceu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "buscou o Deus de seu pai",
+      "feedbackCorrect": "Antes de tudo, ele buscou o Deus de seu pai.",
+      "feedbackWrong": {
+        "b": "O texto diz que buscou, não que abandonou.",
+        "c": "Não esqueceu: buscou e seguiu os mandamentos."
+      },
+      "hint": "Veja o primeiro verbo depois de \"Antes\".",
+      "learningObjective": "Lembrar o verbo da busca a Deus.",
+      "evidence": ["2 Crônicas 17:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 17:3 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 17:3",
+      "passageA": { "ref": "2 Crônicas 17:3" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A presença do Senhor acompanha quem anda nos caminhos de Davi."
+      },
+      "options": [
+        { "id": "a", "text": "Senhor com quem anda direito" },
+        { "id": "b", "text": "Baalins garantem vitória" },
+        { "id": "c", "text": "Davi é abandonado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor estava com Josafá, pois andou",
+      "feedbackCorrect": "O Senhor estava com Josafá porque ele andou nos caminhos de Davi.",
+      "feedbackWrong": {
+        "b": "Josafá não buscou os baalins.",
+        "c": "Ele segue Davi, não o abandona."
+      },
+      "hint": "Ligue a presença do Senhor à causa dada.",
+      "learningObjective": "Ligar presença divina e caminhos de Davi.",
+      "evidence": ["2 Crônicas 17:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 17:4, Josafá age segundo as obras de Israel.",
+      "verseRef": "2 Crônicas 17:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "não agindo segundo as obras de Israel",
+      "feedbackCorrect": "O texto diz o contrário: não agiu segundo as obras de Israel.",
+      "feedbackWrong": { "true": "Releia o fim de 17:4: ele não age como Israel." },
+      "hint": "Olhe a negação no fim do versículo.",
+      "learningObjective": "Compreender o contraste com Israel.",
+      "evidence": ["2 Crônicas 17:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 17:3, toque a palavra que marca a causa da presença do Senhor.",
+      "verseRef": "2 Crônicas 17:3",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "Josafá" },
+        { "id": "c", "text": "baalins" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois andou nos primeiros caminhos de Davi",
+      "feedbackCorrect": "\"Pois\" introduz a causa: andou nos caminhos de Davi.",
+      "feedbackWrong": {
+        "b": "\"Josafá\" é o rei; a causa vem depois de \"pois\".",
+        "c": "Os baalins são o que ele não buscou."
+      },
+      "hint": "Procure a palavra curta que explica o \"estava com\".",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": ["2 Crônicas 17:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 17:10 se relaciona com o ensino da lei em Judá?",
+      "verseRef": "2 Crônicas 17:9–10",
+      "options": [
+        { "id": "a", "text": "Após o ensino, o temor do Senhor impede a guerra" },
+        { "id": "b", "text": "O ensino provoca imediatamente a invasão" },
+        { "id": "c", "text": "As nações ignoram Judá e atacam sem temor" },
+        { "id": "d", "text": "Só as armas, não a lei, trazem paz" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor se apoderou de todos os reinos",
+      "feedbackCorrect": "Depois do ensino com a lei, o temor do Senhor impede a guerra.",
+      "feedbackWrong": {
+        "b": "17:10 diz que não fizeram guerra.",
+        "c": "Houve temor, não ataque.",
+        "d": "O texto destaca temor do Senhor, não só armas."
+      },
+      "hint": "Veja o que acontece depois de ensinarem ao povo.",
+      "learningObjective": "Relacionar ensino e paz.",
+      "evidence": ["2 Crônicas 17:9–10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 17:3–10?",
+      "verseRef": "2 Crônicas 17:3–10",
+      "options": [
+        { "id": "a", "text": "Josafá anda nos caminhos de Davi" },
+        { "id": "b", "text": "Mestres levam a lei pelas cidades" },
+        { "id": "c", "text": "O temor do Senhor impede a guerra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não fizeram guerra contra Josafá",
+      "feedbackCorrect": "Caminhos fiéis, ensino da lei e paz pelo temor do Senhor.",
+      "feedbackWrong": { "default": "A paz fecha o trecho." },
+      "hint": "Comece pelos caminhos de Davi.",
+      "learningObjective": "Compreender o arco de 17:3–10.",
+      "evidence": ["2 Crônicas 17:3–10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 17:6, o coração de Josafá se tornou ___ em seguir os caminhos do Senhor.",
+      "verseRef": "2 Crônicas 17:6",
+      "options": [
+        { "id": "a", "text": "ousado" },
+        { "id": "b", "text": "fraco" },
+        { "id": "c", "text": "dúbio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seu coração se tornou ousado",
+      "feedbackCorrect": "O coração ousado o leva a remover altos e ídolos.",
+      "feedbackWrong": {
+        "b": "O texto diz ousado, não fraco.",
+        "c": "Não há dúvida: o coração fica ousado."
+      },
+      "hint": "Veja o adjetivo ligado ao coração.",
+      "learningObjective": "Lembrar a ousadia do coração.",
+      "evidence": ["2 Crônicas 17:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 17:9 a Deuteronômio 6:6–7?",
+      "verseRef": "2 Crônicas 17:9",
+      "passageA": { "ref": "2 Crônicas 17:9" },
+      "passageB": { "ref": "Deuteronômio 6:6–7" },
+      "options": [
+        { "id": "a", "text": "Ensinar a lei ao povo" },
+        { "id": "b", "text": "Esconder a lei nos palácios" },
+        { "id": "c", "text": "Trocar a lei por baalins" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ensinavam ao povo",
+      "evidence": ["2 Crônicas 17:9", "Deuteronômio 6:6–7"],
+      "feedbackCorrect": "Nos dois textos, a lei deve ser ensinada, não guardada só para si.",
+      "feedbackWrong": {
+        "b": "Eles percorrem cidades ensinando.",
+        "c": "O livro da lei é levado e ensinado."
+      },
+      "hint": "Compare o que se faz com a lei.",
+      "learningObjective": "Relacionar o ensino em Judá a Deuteronômio."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 17:3–10 apresenta a presença do Senhor e a paz das fronteiras como frutos de buscar a Deus e ensinar a lei.",
+      "verseRef": "2 Crônicas 17:3–10",
+      "correctOptionId": "true",
+      "evidenceSpan": "o temor do Senhor se apoderou de todos os reinos",
+      "feedbackCorrect": "Caminhos de Davi, busca a Deus, ensino da lei e temor que impede a guerra.",
+      "feedbackWrong": { "false": "O trecho liga presença, ensino e temor das nações." },
+      "hint": "Ligue 17:3–4 ao desfecho de 17:10.",
+      "learningObjective": "Interpretar o fruto da fidelidade de Josafá.",
+      "evidence": ["2 Crônicas 17:3–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 17:9, toque o trecho que sustenta o ensino público da lei.",
+      "verseRef": "2 Crônicas 17:9",
+      "options": [
+        { "id": "a", "text": "livro da lei" },
+        { "id": "b", "text": "todas as cidades" },
+        { "id": "c", "text": "E ensinaram" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levando consigo o livro da lei do Senhor",
+      "feedbackCorrect": "O livro da lei é o que carregam ao ensinar o povo.",
+      "feedbackWrong": {
+        "b": "As cidades são o alcance; o conteúdo é o livro da lei.",
+        "c": "\"Ensinaram\" é a ação; o que sustenta o conteúdo é o livro."
+      },
+      "hint": "Procure o que levavam consigo.",
+      "learningObjective": "Sustentar o ensino com o livro da lei.",
+      "evidence": ["2 Crônicas 17:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 17:3–6 sustenta sobre o reinado de Josafá?",
+      "verseRef": "2 Crônicas 17:3–6",
+      "options": [
+        { "id": "a", "text": "Buscar a Deus e remover ídolos acompanha a presença do Senhor" },
+        { "id": "b", "text": "Riqueza prova que baalins foram aceitos" },
+        { "id": "c", "text": "O reino se firmou sem qualquer reforma" },
+        { "id": "d", "text": "Josafá imitou as obras de Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "removeu os altos e os postes-ídolos de Judá",
+      "feedbackCorrect": "Presença do Senhor, busca a Deus e remoção de ídolos andam juntos.",
+      "feedbackWrong": {
+        "b": "Ele não buscou baalins.",
+        "c": "Há remoção de altos e ídolos.",
+        "d": "17:4 nega agir segundo Israel."
+      },
+      "hint": "Una 17:3–4 com 17:6.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": ["2 Crônicas 17:3–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do ensino que começa em 2 Crônicas 17:9?",
+      "verseRef": "2 Crônicas 17:9",
+      "options": [
+        { "id": "a", "text": "Mestres levam o livro da lei ao povo" },
+        { "id": "b", "text": "A lei deve ser ensinada com diligência" },
+        { "id": "c", "text": "Há prazer em meditar na lei do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ensinavam ao povo",
+      "evidence": ["2 Crônicas 17:9", "Deuteronômio 6:6–7", "Salmos 1:2"],
+      "feedbackCorrect": "Do ensino em Judá ao mandato de Moisés e ao prazer do salmo.",
+      "feedbackWrong": { "default": "Comece pelo fato em Josafá; siga a lei na Escritura." },
+      "hint": "Siga: Crônicas, Deuteronômio, Salmos.",
+      "learningObjective": "Ver o ensino da lei no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 17:10, o ___ do Senhor se apoderou dos reinos vizinhos.",
+      "verseRef": "2 Crônicas 17:10",
+      "options": [
+        { "id": "a", "text": "temor" },
+        { "id": "b", "text": "esquecimento" },
+        { "id": "c", "text": "desprezo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor se apoderou",
+      "feedbackCorrect": "O temor do Senhor é o que impede a guerra contra Josafá.",
+      "feedbackWrong": {
+        "b": "Não há esquecimento; há temor.",
+        "c": "O texto fala de temor, não de desprezo."
+      },
+      "hint": "É a palavra que abre o versículo.",
+      "learningObjective": "Lembrar o termo que carrega a paz das fronteiras.",
+      "evidence": ["2 Crônicas 17:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 17:10 a Provérbios 16:7?",
+      "verseRef": "2 Crônicas 17:10",
+      "passageA": { "ref": "2 Crônicas 17:10" },
+      "passageB": { "ref": "Provérbios 16:7" },
+      "options": [
+        { "id": "a", "text": "Deus faz paz com inimigos" },
+        { "id": "b", "text": "A guerra é inevitável" },
+        { "id": "c", "text": "Nações ignoram o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não fizeram guerra contra Josafá",
+      "evidence": ["2 Crônicas 17:10", "Provérbios 16:7"],
+      "feedbackCorrect": "Nos dois textos, Deus pode impedir hostilidade em torno do justo.",
+      "feedbackWrong": {
+        "b": "17:10 mostra ausência de guerra.",
+        "c": "Há temor do Senhor sobre as nações."
+      },
+      "hint": "Compare o efeito sobre os inimigos.",
+      "learningObjective": "Ligar o temor das nações a Provérbios 16:7."
+    }
+  ]
+}

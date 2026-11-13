@@ -1,0 +1,510 @@
+{
+  "study": {
+    "passageRef": "Miqueias 4:6–11",
+    "passages": [
+      {
+        "ref": "Miqueias 4:6–11"
+      },
+      {
+        "ref": "Miqueias 4:12–13"
+      }
+    ],
+    "context": "Depois do juízo, o Senhor promete congregar a que coxeia, reinará em Sião e remirá o povo até da Babilônia, apesar das nações.",
+    "keyword": "reinará",
+    "keywordGloss": "O Senhor exerce domínio sobre o povo reunido no monte Sião.",
+    "focusQuestion": "Você espera o reinado do Senhor mesmo quando a dor parece o fim?",
+    "reflectionPrompts": [
+      "Coxa reunida",
+      "Reino em Sião",
+      "Remidos da Babilônia"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor congregará os que coxeiam e reunirá os expulsos e afligidos.",
+        "evidenceRef": "Miqueias 4:6",
+        "evidenceSpan": "congregarei os que coxeiam e reunirei os que eu havia expulsado"
+      },
+      {
+        "text": "Da que era coxa fará um restante e reinará no monte Sião.",
+        "evidenceRef": "Miqueias 4:7",
+        "evidenceSpan": "o Senhor reinará sobre eles no monte Sião"
+      },
+      {
+        "text": "Virá o primeiro domínio, o reino da filha de Jerusalém.",
+        "evidenceRef": "Miqueias 4:8",
+        "evidenceSpan": "virá o primeiro domínio, o reino da filha de Jerusalém"
+      },
+      {
+        "text": "A filha de Sião irá a Babilônia, mas ali será libertada.",
+        "evidenceRef": "Miqueias 4:10",
+        "evidenceSpan": "irás até Babilônia; ali, porém, serás libertada"
+      },
+      {
+        "text": "As nações não conhecem os pensamentos do Senhor.",
+        "evidenceRef": "Miqueias 4:12",
+        "evidenceSpan": "Mas não conhecem os pensamentos do Senhor"
+      },
+      {
+        "text": "Sião esmiuçará muitos povos e dedicará o ganho ao SENHOR.",
+        "evidenceRef": "Miqueias 4:13",
+        "evidenceSpan": "esmiuçarás muitos povos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "reinará",
+        "gloss": "O Senhor governa o povo reunido em Sião para sempre."
+      },
+      {
+        "term": "restante",
+        "gloss": "O remanescente feito da que era coxa."
+      },
+      {
+        "term": "libertada",
+        "gloss": "Promessa de remissão mesmo em Babilônia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Congregação da que coxeia",
+        "evidenceRef": "Miqueias 4:6–7"
+      },
+      {
+        "label": "Promessa do domínio em Sião",
+        "evidenceRef": "Miqueias 4:8"
+      },
+      {
+        "label": "Dor, Babilônia e libertação",
+        "evidenceRef": "Miqueias 4:9–10"
+      },
+      {
+        "label": "Nações e plano do Senhor",
+        "evidenceRef": "Miqueias 4:11–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Irão a Babilônia, porém ali serão libertados pelo Senhor.",
+        "marker": "porém",
+        "evidenceRef": "Miqueias 4:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "As nações se ajuntam, mas não conhecem o plano do Senhor.",
+        "marker": "Mas",
+        "evidenceRef": "Miqueias 4:12"
+      },
+      {
+        "kind": "causa",
+        "text": "Sião deve levantar-se porque o Senhor faz de ferro o seu chifre.",
+        "marker": "pois",
+        "evidenceRef": "Miqueias 4:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Sofonias 3:19",
+        "bridge": "Senhor reúne a claudicante"
+      },
+      {
+        "ref": "Isaías 9:7",
+        "bridge": "Reino eterno do Senhor"
+      },
+      {
+        "ref": "Lucas 1:33",
+        "bridge": "Reinado sem fim"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A coxidão do povo prova que o Senhor abandonou para sempre.",
+        "why": "4:6–7 mostra o Senhor congregando a que coxeia e reinando."
+      },
+      {
+        "text": "Babilônia é o fim sem libertação possível.",
+        "why": "4:10 diz: ali, porém, serás libertada."
+      },
+      {
+        "text": "As nações entendem e controlam o plano de Deus.",
+        "why": "4:12 afirma que não conhecem os pensamentos do Senhor."
+      }
+    ],
+    "centralInsight": "De Sião sairá o domínio: o Senhor reinará sobre eles no monte Sião.",
+    "anchorQuestion": "Segundo Miqueias 4:7, onde o Senhor reinará?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 4:7, o Senhor reinará sobre eles no monte Sião desde agora e para sempre.",
+      "verseRef": "Miqueias 4:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "O texto afirma o reinado do Senhor em Sião para sempre.",
+      "feedbackWrong": {
+        "false": "Releia 4:7: o Senhor reinará no monte Sião."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar o reinado do Senhor em Sião.",
+      "evidence": ["Miqueias 4:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 4:6, toque a quem o Senhor congregará.",
+      "verseRef": "Miqueias 4:6",
+      "evidenceSpan": "congregarei os que coxeiam",
+      "feedbackCorrect": "Congregará os que coxeiam.",
+      "hint": "Procure o objeto após congregarei.",
+      "learningObjective": "Identificar quem será congregado.",
+      "evidence": ["Miqueias 4:6"],
+      "options": [
+        { "id": "a", "text": "os que coxeiam" },
+        { "id": "b", "text": "Naquele dia" },
+        { "id": "c", "text": "o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Naquele dia\" marca o tempo, não quem é congregado.",
+        "c": "O Senhor é quem congrega, não o objeto."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 4:10, o que acontecerá em Babilônia?",
+      "verseRef": "Miqueias 4:10",
+      "evidenceSpan": "ali, porém, serás libertada",
+      "feedbackCorrect": "Ali, porém, será libertada e remida pelo Senhor.",
+      "hint": "Veja o contraste após chegar a Babilônia.",
+      "learningObjective": "Observar a libertação prometida em Babilônia.",
+      "evidence": ["Miqueias 4:10"],
+      "options": [
+        { "id": "a", "text": "Será libertada pelo Senhor" },
+        { "id": "b", "text": "Ficará cativa para sempre" },
+        { "id": "c", "text": "Reinará sem nenhuma dor" },
+        { "id": "d", "text": "Esquecerá o monte Sião" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto promete libertação ali.",
+        "c": "Antes há dor e saída da cidade.",
+        "d": "A promessa é de remissão, não de esquecimento."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 4:7 na ordem do texto.",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "Restante da coxa; nação poderosa; reinado em Sião.",
+      "hint": "Comece pela que era coxa.",
+      "learningObjective": "Reconhecer a sequência da restauração.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "E da que era coxa farei um restante" },
+        { "id": "b", "text": "e da que estava afastada uma nação poderosa" },
+        { "id": "c", "text": "e o Senhor reinará sobre eles no monte Sião" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Restante primeiro; o reinado fecha o versículo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 4:7, que palavra descreve o povo feito da que era coxa?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "farei um restante",
+      "feedbackCorrect": "Fará um restante da que era coxa.",
+      "hint": "É o substantivo após \"um\".",
+      "learningObjective": "Lembrar o nome do remanescente.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "restante" },
+        { "id": "b", "text": "exército" },
+        { "id": "c", "text": "mercado" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Exército\" não é a palavra de 4:7.",
+        "c": "\"Mercado\" não aparece em 4:7."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 4:7 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "A claudicante reunida vive sob o reinado do Senhor em Sião.",
+      "hint": "Veja quem reina e onde.",
+      "learningObjective": "Ligar a reunião ao reinado em Sião.",
+      "evidence": ["Miqueias 4:7"],
+      "passageA": { "ref": "Miqueias 4:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor reúne a que coxeia e promete reinado eterno em Sião."
+      },
+      "options": [
+        { "id": "a", "text": "Reinado do Senhor em Sião" },
+        { "id": "b", "text": "Abandono final da coxa" },
+        { "id": "c", "text": "Domínio eterno das nações" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto congrega, não abandona.",
+        "c": "Quem reina é o Senhor, não as nações."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 4:10, ir a Babilônia significa o fim sem nenhuma libertação possível.",
+      "verseRef": "Miqueias 4:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "ali, porém, serás libertada",
+      "feedbackCorrect": "O \"porém\" marca o contraste: em Babilônia haverá libertação.",
+      "feedbackWrong": {
+        "true": "Releia 4:10: ali, porém, serás libertada."
+      },
+      "hint": "Repare na palavra que vira a página em Babilônia.",
+      "learningObjective": "Compreender o contraste em Babilônia.",
+      "evidence": ["Miqueias 4:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 4:10, toque a palavra que marca o contraste com o exílio.",
+      "verseRef": "Miqueias 4:10",
+      "evidenceSpan": "ali, porém, serás libertada",
+      "feedbackCorrect": "\"Porém\" introduz a libertação em Babilônia.",
+      "hint": "É a palavra entre vírgulas após \"ali\".",
+      "learningObjective": "Reconhecer o marcador de contraste em 4:10.",
+      "evidence": ["Miqueias 4:10"],
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "campo" },
+        { "id": "c", "text": "cidade" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Campo\" é o lugar da habitação, não o contraste.",
+        "c": "\"Cidade\" é de onde sai, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 4:10–12 liga dor do povo e plano do Senhor?",
+      "verseRef": "Miqueias 4:10–12",
+      "evidenceSpan": "Mas não conhecem os pensamentos do Senhor",
+      "feedbackCorrect": "Há dor e exílio, mas o Senhor remirá; as nações não entendem o plano.",
+      "hint": "Una o \"porém\" de 4:10 ao \"Mas\" de 4:12.",
+      "learningObjective": "Relacionar sofrimento e plano divino.",
+      "evidence": ["Miqueias 4:10–12"],
+      "options": [
+        { "id": "a", "text": "O exílio não cancela a libertação nem o plano de Deus" },
+        { "id": "b", "text": "As nações controlam o pensamento do Senhor" },
+        { "id": "c", "text": "Babilônia apaga qualquer promessa de remissão" },
+        { "id": "d", "text": "A dor prova que não há reinado em Sião" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "4:12 diz que não conhecem o plano.",
+        "c": "4:10 promete libertação ali.",
+        "d": "4:7 afirma o reinado em Sião."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Miqueias 4:6–13?",
+      "verseRef": "Miqueias 4:6–7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "Reunião da coxa; reinado; dor e libertação; vitória sobre as nações.",
+      "hint": "Comece pela congregação.",
+      "learningObjective": "Seguir o movimento da reunião à vitória.",
+      "evidence": ["Miqueias 4:6–7"],
+      "options": [
+        { "id": "a", "text": "O Senhor congrega a que coxeia" },
+        { "id": "b", "text": "O Senhor reinará em Sião" },
+        { "id": "c", "text": "Sião esmiúça povos pelo plano de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Congregação primeiro; a vitória sobre povos fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 4:12, que palavra marca o contraste com as nações?",
+      "verseRef": "Miqueias 4:12",
+      "evidenceSpan": "Mas não conhecem os pensamentos do Senhor",
+      "feedbackCorrect": "\"Mas\" introduz o contraste: elas não conhecem o plano.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de contraste em 4:12.",
+      "evidence": ["Miqueias 4:12"],
+      "options": [
+        { "id": "a", "text": "Logo" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Logo\" não abre 4:12.",
+        "c": "\"Nunca\" não é a primeira palavra."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 4:6–7 a Sofonias 3:19?",
+      "verseRef": "Miqueias 4:6",
+      "evidenceSpan": "congregarei os que coxeiam",
+      "feedbackCorrect": "Nos dois textos, o Senhor reúne e restaura a claudicante.",
+      "hint": "Compare a reunião da que coxeia.",
+      "learningObjective": "Relacionar a reunião em Miquéias e Sofonias.",
+      "evidence": ["Miqueias 4:6", "Sofonias 3:19"],
+      "passageA": { "ref": "Miqueias 4:6" },
+      "passageB": { "ref": "Sofonias 3:19" },
+      "options": [
+        { "id": "a", "text": "Senhor reúne a claudicante" },
+        { "id": "b", "text": "Abandono sem restauração" },
+        { "id": "c", "text": "Nações sem nenhum plano" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram reunião, não abandono final.",
+        "c": "O foco é a ação do Senhor, não a ausência de plano."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 4:6–12, as nações conhecem e controlam os pensamentos do Senhor sobre Sião.",
+      "verseRef": "Miqueias 4:11–12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas não conhecem os pensamentos do Senhor",
+      "feedbackCorrect": "Elas se ajuntam, mas não conhecem o plano; o Senhor as ajunta como feixes.",
+      "feedbackWrong": {
+        "true": "Releia 4:12: não conhecem os pensamentos do Senhor."
+      },
+      "hint": "Veja o que 4:12 diz sobre o conhecimento das nações.",
+      "learningObjective": "Interpretar o limite do entendimento das nações.",
+      "evidence": ["Miqueias 4:11–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 4:7, toque o verbo que sustenta a esperança do reinado.",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles",
+      "feedbackCorrect": "O verbo é reinará: domínio do Senhor em Sião.",
+      "hint": "Procure o verbo ligado ao Senhor no fim.",
+      "learningObjective": "Sustentar com o texto a esperança do reinado.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "reinará" },
+        { "id": "b", "text": "coxa" },
+        { "id": "c", "text": "afastada" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Coxa\" descreve o estado anterior, não o reinado.",
+        "c": "\"Afastada\" é o passado, não a esperança."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Miqueias 4:6–13 sustenta sobre Sião?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "O Senhor reúne a fraca, reina em Sião e remirá mesmo em Babilônia.",
+      "hint": "Compare cada opção com 4:7, 4:10 e 4:12.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "O Senhor reúne a fraca e reinará em Sião" },
+        { "id": "b", "text": "A coxidão prova abandono eterno de Deus" },
+        { "id": "c", "text": "Babilônia encerra qualquer libertação" },
+        { "id": "d", "text": "As nações entendem e mandam no plano divino" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "4:6–7 mostra congregação e reinado.",
+        "c": "4:10 promete libertação ali.",
+        "d": "4:12 diz que não conhecem o plano."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o reinado prometido na Escritura?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "Miquéias anuncia; Isaías amplia; Lucas afirma o reinado sem fim.",
+      "hint": "Parta de Miqueias 4:7.",
+      "learningObjective": "Ver o reinado de Sião no fio bíblico.",
+      "evidence": ["Miqueias 4:7", "Isaías 9:7", "Lucas 1:33"],
+      "options": [
+        { "id": "a", "text": "Miquéias anuncia o Senhor reinando em Sião" },
+        { "id": "b", "text": "Isaías fala do governo eterno" },
+        { "id": "c", "text": "Lucas afirma o reinado sem fim" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 4:7, Isaías 9:7 e Lucas 1:33."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 4:10, que palavra descreve o que Sião será em Babilônia?",
+      "verseRef": "Miqueias 4:10",
+      "evidenceSpan": "ali, porém, serás libertada",
+      "feedbackCorrect": "Será libertada: a palavra da esperança no exílio.",
+      "hint": "É o adjetivo/particípio após \"serás\".",
+      "learningObjective": "Lembrar o termo da esperança em Babilônia.",
+      "evidence": ["Miqueias 4:10"],
+      "options": [
+        { "id": "a", "text": "esquecida" },
+        { "id": "b", "text": "libertada" },
+        { "id": "c", "text": "vendida" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Esquecida\" não é a promessa de 4:10.",
+        "c": "\"Vendida\" não descreve o desfecho ali."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 4:7 a Lucas 1:33?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "desde agora e para sempre",
+      "feedbackCorrect": "Nos dois textos, o reinado anunciado não tem fim.",
+      "hint": "Compare a duração do reinado.",
+      "learningObjective": "Ligar o reinado eterno de Sião ao de Lucas.",
+      "evidence": ["Miqueias 4:7", "Lucas 1:33"],
+      "passageA": { "ref": "Miqueias 4:7" },
+      "passageB": { "ref": "Lucas 1:33" },
+      "options": [
+        { "id": "a", "text": "Reinado sem fim" },
+        { "id": "b", "text": "Trono passageiro das nações" },
+        { "id": "c", "text": "Fim do monte Sião" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos apontam reinado duradouro, não passageiro.",
+        "c": "Sião é o lugar do reinado, não do fim."
+      }
+    }
+  ]
+}

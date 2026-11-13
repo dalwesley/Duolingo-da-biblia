@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Esdras 7:16–21",
+    "passages": [
+      {
+        "ref": "Esdras 7:16–21"
+      },
+      {
+        "ref": "Esdras 7:22–24"
+      }
+    ],
+    "context": "Cena de Mão do rei e de Deus: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Deus",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Mão do rei e de Deus",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "E toda a prata e o ouro que.",
+        "evidenceRef": "Esdras 7:16",
+        "evidenceSpan": "E toda a prata e o ouro que"
+      },
+      {
+        "text": "Portanto.",
+        "evidenceRef": "Esdras 7:17",
+        "evidenceSpan": "Portanto"
+      },
+      {
+        "text": "E o que parecer bem a você e.",
+        "evidenceRef": "Esdras 7:18",
+        "evidenceSpan": "E o que parecer bem a você e"
+      },
+      {
+        "text": "E os utensílios que lhe foram entregues para.",
+        "evidenceRef": "Esdras 7:19",
+        "evidenceSpan": "E os utensílios que lhe foram entregues para"
+      },
+      {
+        "text": "E tudo o que mais for necessário para.",
+        "evidenceRef": "Esdras 7:20",
+        "evidenceSpan": "E tudo o que mais for necessário para"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Esdras 7:21",
+        "evidenceSpan": "E"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Esdras",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "toda",
+        "gloss": "Termo que carrega o sentido desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "E toda a prata",
+        "evidenceRef": "Esdras 7:16"
+      },
+      {
+        "label": "Portanto com este dinheiro você diligentemente",
+        "evidenceRef": "Esdras 7:17"
+      },
+      {
+        "label": "E o que parecer bem",
+        "evidenceRef": "Esdras 7:18"
+      },
+      {
+        "label": "E os utensílios que lhe foram",
+        "evidenceRef": "Esdras 7:19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Esdras 7:23"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Também\".",
+        "marker": "Também",
+        "evidenceRef": "Esdras 7:24"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Neemias 2:18",
+        "bridge": "Boa mão e edificar"
+      },
+      {
+        "ref": "Jeremias 29:10",
+        "bridge": "Volta após o exílio"
+      },
+      {
+        "ref": "Zacarias 4:6",
+        "bridge": "Não por força, mas pelo Espírito"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Tudo o que o Deus do céu ordenar, fazei-o com diligência para a casa dele.",
+    "anchorQuestion": "O que Esdras 7:16 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Esdras 7:16, o texto inclui E toda a prata e o ouro que.",
+      "verseRef": "Esdras 7:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "E toda a prata e o ouro que",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Esdras 7:16 afirma.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Esdras 7:16, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Esdras 7:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "toda"
+        },
+        {
+          "id": "b",
+          "text": "prata"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "toda",
+      "feedbackCorrect": "O versículo destaca toda.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Esdras 7:18, o que o texto apresenta com clareza.",
+      "verseRef": "Esdras 7:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E o que parecer bem a você e",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Esdras 7:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Esdras 7:17 na ordem do texto.",
+      "verseRef": "Esdras 7:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto"
+        },
+        {
+          "id": "b",
+          "text": "você diligentemente comprará novilhos"
+        },
+        {
+          "id": "c",
+          "text": "carneiros e cordeiros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Portanto",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Esdras 7:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Esdras 7:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Esdras 7:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "utensílios"
+        },
+        {
+          "id": "b",
+          "text": "toda"
+        },
+        {
+          "id": "c",
+          "text": "prata"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "utensílios",
+      "feedbackCorrect": "A palavra do versículo é utensílios.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Esdras 7:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Esdras 7:16 comunica que se liga a este contexto.",
+      "verseRef": "Esdras 7:16",
+      "passageA": {
+        "ref": "Esdras 7:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Mão do rei e de Deus: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Esdras 7:23, a palavra pois liga ideias no fluxo do texto.",
+      "verseRef": "Esdras 7:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Esdras 7:23 afirma.",
+      "evidence": [
+        "Esdras 7:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Esdras 7:23, toque a palavra que marca a relação no texto.",
+      "verseRef": "Esdras 7:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Tudo"
+        },
+        {
+          "id": "c",
+          "text": "for"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Esdras 7:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Esdras 7:19, o que o texto apresenta com clareza.",
+      "verseRef": "Esdras 7:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E os utensílios que lhe foram entregues para",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Esdras 7:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Esdras 7:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "E toda a prata"
+        },
+        {
+          "id": "b",
+          "text": "Portanto com este dinheiro você diligentemente"
+        },
+        {
+          "id": "c",
+          "text": "E o que parecer bem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Esdras 7:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Esdras 7:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "parecer"
+        },
+        {
+          "id": "b",
+          "text": "toda"
+        },
+        {
+          "id": "c",
+          "text": "prata"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "parecer",
+      "feedbackCorrect": "A palavra do versículo é parecer.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Esdras 7:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Esdras 7:16 a Neemias 2:18.",
+      "verseRef": "Esdras 7:16",
+      "passageA": {
+        "ref": "Esdras 7:16"
+      },
+      "passageB": {
+        "ref": "Neemias 2:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Boa mão e edificar"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Esdras 7:24",
+      "correctOptionId": "false",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Esdras 7:24 afirma.",
+      "evidence": [
+        "Esdras 7:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Esdras 7:21, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Esdras 7:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "rei"
+        },
+        {
+          "id": "b",
+          "text": "Artaxerxes"
+        },
+        {
+          "id": "c",
+          "text": "decreto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rei",
+      "feedbackCorrect": "O versículo destaca rei.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Esdras 7:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Esdras 7:20, o que o texto apresenta com clareza.",
+      "verseRef": "Esdras 7:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há um movimento claro nesta cena"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E tudo o que mais for necessário para",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Esdras 7:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Esdras 7:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Esdras 7:20, complete a palavra que o texto usa com peso.",
+      "verseRef": "Esdras 7:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "tudo"
+        },
+        {
+          "id": "b",
+          "text": "toda"
+        },
+        {
+          "id": "c",
+          "text": "prata"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo",
+      "feedbackCorrect": "A palavra do versículo é tudo.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Esdras 7:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Esdras 7:16 a Jeremias 29:10.",
+      "verseRef": "Esdras 7:16",
+      "passageA": {
+        "ref": "Esdras 7:16"
+      },
+      "passageB": {
+        "ref": "Jeremias 29:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Volta após o exílio"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Esdras 7:16"
+      ]
+    }
+  ]
+}

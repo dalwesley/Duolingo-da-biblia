@@ -1,0 +1,496 @@
+{
+  "study": {
+    "passageRef": "Tito 2:1–5",
+    "passages": [{ "ref": "Tito 2:1–10" }],
+    "context": "Paulo detalha o que convém a homens e mulheres, jovens e servos. A sã doutrina molda a conduta para que a palavra de Deus não seja difamada.",
+    "keyword": "doutrina",
+    "keywordGloss": "Ensino sadio que se traduz em conduta e embelezamento do evangelho.",
+    "focusQuestion": "Onde a sua conduta está difamando ou embelezando a palavra de Deus?",
+    "reflectionPrompts": ["Fale o adequado", "Padrão de boas obras", "Embelezar a doutrina"],
+    "facts": [
+      {
+        "text": "Tito deve falar o que é adequado à sã doutrina.",
+        "evidenceRef": "Tito 2:1",
+        "evidenceSpan": "fale o que é adequado à sã doutrina"
+      },
+      {
+        "text": "Os homens mais velhos devem ser sóbrios, respeitáveis e sensatos.",
+        "evidenceRef": "Tito 2:2",
+        "evidenceSpan": "sejam sóbrios, respeitáveis, sensatos"
+      },
+      {
+        "text": "As mulheres mais velhas devem ensinar o que é bom.",
+        "evidenceRef": "Tito 2:3",
+        "evidenceSpan": "ensinando o que é bom"
+      },
+      {
+        "text": "A conduta das jovens visa que a palavra de Deus não seja difamada.",
+        "evidenceRef": "Tito 2:5",
+        "evidenceSpan": "para que a palavra de Deus não seja difamada"
+      },
+      {
+        "text": "Tito deve ser padrão de boas obras na doutrina.",
+        "evidenceRef": "Tito 2:7",
+        "evidenceSpan": "seja um padrão de boas obras; na doutrina, mostre integridade"
+      },
+      {
+        "text": "Os servos devem demonstrar fidelidade para embelezar a doutrina.",
+        "evidenceRef": "Tito 2:10",
+        "evidenceSpan": "a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "doutrina",
+        "gloss": "Ensino sadio que deve ser falado e vivido."
+      },
+      {
+        "term": "difamada",
+        "gloss": "A palavra de Deus pode ser mal falada se a conduta não convém."
+      },
+      {
+        "term": "embelezar",
+        "gloss": "Tornar atraente a doutrina de Deus pela fidelidade prática."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fale o adequado à sã doutrina",
+        "evidenceRef": "Tito 2:1"
+      },
+      {
+        "label": "Conduta de homens e mulheres mais velhos",
+        "evidenceRef": "Tito 2:2–3"
+      },
+      {
+        "label": "Jovens e o cuidado com a palavra",
+        "evidenceRef": "Tito 2:4–6"
+      },
+      {
+        "label": "Padrão de Tito e conduta dos servos",
+        "evidenceRef": "Tito 2:7–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "A conduta das jovens existe para que a palavra de Deus não seja difamada.",
+        "marker": "para que",
+        "evidenceRef": "Tito 2:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "A palavra sadia envergonha o adversário, sem indignidade a dizer.",
+        "marker": "para que",
+        "evidenceRef": "Tito 2:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "A fidelidade dos servos visa embelezar a doutrina de Deus.",
+        "marker": "a fim de que",
+        "evidenceRef": "Tito 2:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "1 Timóteo 4:12", "bridge": "Seja exemplo dos fiéis" },
+      { "ref": "Mateus 5:16", "bridge": "Boas obras e glória a Deus" },
+      { "ref": "1 Pedro 2:12", "bridge": "Conduta que honra" }
+    ],
+    "misreadings": [
+      {
+        "text": "A sã doutrina é só teoria, sem efeito na vida diária.",
+        "why": "Todo o capítulo liga doutrina a conduta concreta de grupos."
+      },
+      {
+        "text": "A conduta dos cristãos não afeta a reputação da palavra de Deus.",
+        "why": "O texto fala em não difamar e em embelezar a doutrina."
+      },
+      {
+        "text": "Tito pode ensinar sem ser padrão de boas obras.",
+        "why": "Paulo manda que ele seja padrão e mostre integridade na doutrina."
+      }
+    ],
+    "centralInsight": "A sã doutrina molda a conduta: para que a palavra de Deus não seja blasfemada.",
+    "anchorQuestion": "Para que a conduta deve cuidar, segundo Tito 2:5?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Tito 2:1, Tito deve falar o que agrada aos ouvintes, sem ligar à sã doutrina.",
+      "verseRef": "Tito 2:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "fale o que é adequado à sã doutrina",
+      "feedbackCorrect": "A ordem é falar o adequado à sã doutrina, não o que agrada.",
+      "feedbackWrong": {
+        "true": "Leia de novo: o critério é a sã doutrina, não o gosto dos ouvintes."
+      },
+      "hint": "Veja a que a fala deve ser adequada.",
+      "learningObjective": "Observar a ordem sobre a sã doutrina.",
+      "evidence": ["Tito 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Tito 2:5, toque o que não deve ser difamado.",
+      "verseRef": "Tito 2:5",
+      "options": [
+        { "id": "a", "text": "palavra de Deus" },
+        { "id": "b", "text": "donas de casa" },
+        { "id": "c", "text": "sensatas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que a palavra de Deus não seja difamada",
+      "feedbackCorrect": "O alvo da conduta é proteger a palavra de Deus.",
+      "feedbackWrong": {
+        "b": "Donas de casa descreve um papel; a pergunta pede o que não se difama.",
+        "c": "Sensatas é qualidade; o risco é à palavra."
+      },
+      "hint": "Procure o fim do versículo.",
+      "learningObjective": "Identificar a palavra de Deus como alvo de cuidado.",
+      "evidence": ["Tito 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Tito 2:7, o que Tito deve ser?",
+      "verseRef": "Tito 2:7",
+      "options": [
+        { "id": "a", "text": "Padrão de boas obras, com integridade na doutrina" },
+        { "id": "b", "text": "Exemplo de calúnia e vinho em excesso" },
+        { "id": "c", "text": "Alguém sem seriedade no ensino" },
+        { "id": "d", "text": "Opositor dos senhores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seja um padrão de boas obras; na doutrina, mostre integridade",
+      "feedbackCorrect": "Vida e doutrina caminham juntas no padrão de Tito.",
+      "feedbackWrong": {
+        "b": "Isso é o que se deve evitar (2:3).",
+        "c": "O texto pede seriedade.",
+        "d": "Servos devem submeter-se (2:9)."
+      },
+      "hint": "Olhe o começo do versículo.",
+      "learningObjective": "Registrar o chamado a ser padrão.",
+      "evidence": ["Tito 2:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Tito 2:1 na ordem do texto.",
+      "verseRef": "Tito 2:1",
+      "options": [
+        { "id": "a", "text": "Você, porém, fale" },
+        { "id": "b", "text": "o que é adequado" },
+        { "id": "c", "text": "à sã doutrina" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Você, porém, fale o que é adequado à sã doutrina",
+      "feedbackCorrect": "Ordem de falar → o adequado → à sã doutrina.",
+      "feedbackWrong": {
+        "default": "Comece por Você, porém, fale."
+      },
+      "hint": "O versículo abre com Você.",
+      "learningObjective": "Reconhecer a ordem de Tito 2:1.",
+      "evidence": ["Tito 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+      "verseRef": "Tito 2:10",
+      "options": [
+        { "id": "a", "text": "doutrina" },
+        { "id": "b", "text": "riqueza" },
+        { "id": "c", "text": "fúria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "embelezar a doutrina de Deus, nosso Salvador",
+      "feedbackCorrect": "A conduta fideliza e embeleza a doutrina.",
+      "feedbackWrong": {
+        "b": "Não é riqueza; é doutrina.",
+        "c": "O texto fala de doutrina."
+      },
+      "hint": "O que se embeleza?",
+      "learningObjective": "Lembrar a palavra doutrina.",
+      "evidence": ["Tito 2:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Tito 2:5 comunica que se liga a este contexto?",
+      "verseRef": "Tito 2:5",
+      "passageA": { "ref": "Tito 2:5" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A conduta existe para que a palavra de Deus não seja difamada."
+      },
+      "options": [
+        { "id": "a", "text": "Conduta que protege a palavra" },
+        { "id": "b", "text": "Conduta sem efeito na palavra" },
+        { "id": "c", "text": "Palavra que difama a si mesma" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que a palavra de Deus não seja difamada",
+      "feedbackCorrect": "O para que liga hábitos do lar à reputação da palavra.",
+      "feedbackWrong": {
+        "b": "Há efeito claro.",
+        "c": "O risco é a difamação pela conduta."
+      },
+      "hint": "Veja o propósito final.",
+      "learningObjective": "Ligar conduta e reputação da palavra.",
+      "evidence": ["Tito 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina de Deus.",
+      "verseRef": "Tito 2:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "a fim de que em tudo possam embelezar a doutrina de Deus",
+      "feedbackCorrect": "O a fim de que liga fidelidade e doutrina.",
+      "feedbackWrong": {
+        "true": "O texto diz que a fidelidade embeleza a doutrina."
+      },
+      "hint": "Repare no a fim de que.",
+      "learningObjective": "Compreender o propósito da fidelidade.",
+      "evidence": ["Tito 2:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Tito 2:5, toque a expressão que marca o propósito da conduta.",
+      "verseRef": "Tito 2:5",
+      "options": [
+        { "id": "a", "text": "para que" },
+        { "id": "b", "text": "bondosas" },
+        { "id": "c", "text": "submissas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que a palavra de Deus não seja difamada",
+      "feedbackCorrect": "\"Para que\" introduz o propósito: não difamar a palavra.",
+      "feedbackWrong": {
+        "b": "Bondosas é qualidade; a pergunta pede o marcador.",
+        "c": "Submissas é conduta; o propósito vem no para que."
+      },
+      "hint": "Procure o marcador de finalidade.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": ["Tito 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Tito 2:7–8 liga o padrão de Tito ao adversário?",
+      "verseRef": "Tito 2:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Integridade e palavra sadia envergonham o adversário"
+        },
+        { "id": "b", "text": "O adversário deve ser imitado" },
+        { "id": "c", "text": "A doutrina pode ser irreverente" },
+        { "id": "d", "text": "Não importa o que digam a nosso respeito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que o adversário seja envergonhado",
+      "feedbackCorrect": "Vida íntegra e palavra sadia fecham a boca do adversário.",
+      "feedbackWrong": {
+        "b": "O adversário é envergonhado, não imitado.",
+        "c": "O texto pede reverência e seriedade.",
+        "d": "O texto se importa com o que se pode dizer."
+      },
+      "hint": "Una padrão e o para que de 2:8.",
+      "learningObjective": "Relacionar exemplo e adversário.",
+      "evidence": ["Tito 2:7–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em Tito 2:1–5?",
+      "verseRef": "Tito 2:1–5",
+      "options": [
+        { "id": "a", "text": "Fale o adequado à sã doutrina" },
+        { "id": "b", "text": "Conduta de homens e mulheres mais velhos" },
+        { "id": "c", "text": "Jovens: para que a palavra não seja difamada" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "fale o que é adequado à sã doutrina",
+      "feedbackCorrect": "Doutrina → gerações → propósito da palavra.",
+      "feedbackWrong": {
+        "default": "Siga: ordem de falar → mais velhos → jovens e a palavra."
+      },
+      "hint": "O para que de 2:5 fecha o bloco.",
+      "learningObjective": "Ver o movimento da doutrina à reputação.",
+      "evidence": ["Tito 2:1–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Tito 2:5, a palavra de Deus não deve ser ___.",
+      "verseRef": "Tito 2:5",
+      "options": [
+        { "id": "a", "text": "difamada" },
+        { "id": "b", "text": "ensinada" },
+        { "id": "c", "text": "ouvida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não seja difamada",
+      "feedbackCorrect": "O risco nomeado é a difamação da palavra.",
+      "feedbackWrong": {
+        "b": "Ensinar é positivo; o risco é difamar.",
+        "c": "Ouvir não é o verbo do risco."
+      },
+      "hint": "Qual verbo negativa o versículo?",
+      "learningObjective": "Lembrar a palavra difamada.",
+      "evidence": ["Tito 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+      "verseRef": "Tito 2:7",
+      "passageA": { "ref": "Tito 2:7" },
+      "passageB": { "ref": "1 Timóteo 4:12" },
+      "options": [
+        { "id": "a", "text": "Ser exemplo" },
+        { "id": "b", "text": "Desprezar a juventude" },
+        { "id": "c", "text": "Doutrina sem vida" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seja um padrão de boas obras",
+      "feedbackCorrect": "Nos dois textos, o líder deve ser exemplo/padrão.",
+      "feedbackWrong": {
+        "b": "O chamado é ser exemplo.",
+        "c": "Ambos unem doutrina e vida."
+      },
+      "hint": "Compare padrão e exemplo.",
+      "learningObjective": "Relacionar os textos sobre exemplo do líder.",
+      "evidence": ["Tito 2:7", "1 Timóteo 4:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Tito 2:5 e 2:10 sustentam que a conduta cristã pode difamar ou embelezar a doutrina de Deus.",
+      "verseRef": "Tito 2:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que a palavra de Deus não seja difamada",
+      "feedbackCorrect": "Há risco de difamação e chamado a embelezar (2:10).",
+      "feedbackWrong": {
+        "false": "Os dois fins mostram o peso da conduta sobre a doutrina."
+      },
+      "hint": "Compare difamar e embelezar.",
+      "learningObjective": "Interpretar o impacto público da conduta.",
+      "evidence": ["Tito 2:5", "Tito 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Tito 2:10, toque o trecho que sustenta o efeito positivo da fidelidade.",
+      "verseRef": "Tito 2:10",
+      "options": [
+        { "id": "a", "text": "embelezar a doutrina" },
+        { "id": "b", "text": "não roubando" },
+        { "id": "c", "text": "toda a fidelidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "possam embelezar a doutrina de Deus, nosso Salvador",
+      "feedbackCorrect": "\"Embelezar a doutrina\" nomeia o efeito desejado.",
+      "feedbackWrong": {
+        "b": "Isso é a conduta; a pergunta pede o efeito.",
+        "c": "Fidelidade é o meio; o efeito é embelezar."
+      },
+      "hint": "Procure o verbo do propósito.",
+      "learningObjective": "Sustentar a leitura do embelezamento.",
+      "evidence": ["Tito 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Tito 2:1–10 sustenta?",
+      "verseRef": "Tito 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A sã doutrina molda a vida para honrar a palavra"
+        },
+        { "id": "b", "text": "A doutrina não precisa de conduta" },
+        { "id": "c", "text": "Só os líderes precisam de integridade" },
+        { "id": "d", "text": "Embelezar a doutrina é opcional" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fale o que é adequado à sã doutrina",
+      "feedbackCorrect": "Do falar ao embelezar, a doutrina forma a vida pública.",
+      "feedbackWrong": {
+        "b": "Todo o capítulo é conduta.",
+        "c": "Há instrução para vários grupos.",
+        "d": "Há a fim de que embelezar."
+      },
+      "hint": "Una doutrina, conduta e reputação.",
+      "learningObjective": "Escolher a interpretação que o capítulo sustenta.",
+      "evidence": ["Tito 2:1", "Tito 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da doutrina neste trecho?",
+      "verseRef": "Tito 2:1–10",
+      "options": [
+        { "id": "a", "text": "Falar o adequado à sã doutrina" },
+        { "id": "b", "text": "Viver conforme o que convém a cada um" },
+        { "id": "c", "text": "Embelezar a doutrina de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "fale o que é adequado à sã doutrina",
+      "feedbackCorrect": "Falar → viver → embelezar.",
+      "feedbackWrong": {
+        "default": "Comece pelo falar; o embelezar fecha o bloco."
+      },
+      "hint": "Pense: ensino, prática, testemunho.",
+      "learningObjective": "Ver o encadeamento doutrina–vida–testemunho.",
+      "evidence": ["Tito 2:1", "Tito 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Tito 2:10, os servos devem ___ a doutrina de Deus.",
+      "verseRef": "Tito 2:10",
+      "options": [
+        { "id": "a", "text": "embelezar" },
+        { "id": "b", "text": "esconder" },
+        { "id": "c", "text": "difamar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "possam embelezar a doutrina de Deus",
+      "feedbackCorrect": "O verbo teológico da cena prática é embelezar.",
+      "feedbackWrong": {
+        "b": "Não é esconder.",
+        "c": "Difamar é o risco de 2:5; aqui é embelezar."
+      },
+      "hint": "Qual verbo expressa o objetivo?",
+      "learningObjective": "Lembrar o termo embelezar.",
+      "evidence": ["Tito 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Tito 2:10 a Mateus 5:16?",
+      "verseRef": "Tito 2:10",
+      "passageA": { "ref": "Tito 2:10" },
+      "passageB": { "ref": "Mateus 5:16" },
+      "options": [
+        { "id": "a", "text": "Boas obras que honram a Deus" },
+        { "id": "b", "text": "Obras para se exibir" },
+        { "id": "c", "text": "Conduta sem testemunho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "embelezar a doutrina de Deus, nosso Salvador",
+      "feedbackCorrect": "Nos dois textos, a conduta aponta para Deus, não para si.",
+      "feedbackWrong": {
+        "b": "O alvo é a doutrina/glória de Deus.",
+        "c": "Há testemunho público claro."
+      },
+      "hint": "Compare embelezar e brilhar diante dos homens.",
+      "learningObjective": "Ligar os textos sobre obras que honram a Deus.",
+      "evidence": ["Tito 2:10", "Mateus 5:16"]
+    }
+  ]
+}

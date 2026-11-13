@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Levítico 20:19–24",
+    "passages": [
+      {
+        "ref": "Levítico 20:19–24"
+      },
+      {
+        "ref": "Levítico 20:25–27"
+      }
+    ],
+    "context": "Cena de Separados para mim: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Separados para mim",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Não descobrirás a nudez da irmã de tua.",
+        "evidenceRef": "Levítico 20:19",
+        "evidenceSpan": "Não descobrirás a nudez da irmã de tua"
+      },
+      {
+        "text": "Se um homem se deitar com sua tia.",
+        "evidenceRef": "Levítico 20:20",
+        "evidenceSpan": "Se um homem se deitar com sua tia"
+      },
+      {
+        "text": "Se um homem se casar com a mulher.",
+        "evidenceRef": "Levítico 20:21",
+        "evidenceSpan": "Se um homem se casar com a mulher"
+      },
+      {
+        "text": "Guardem.",
+        "evidenceRef": "Levítico 20:22",
+        "evidenceSpan": "Guardem"
+      },
+      {
+        "text": "E não andem nos costumes das nações que.",
+        "evidenceRef": "Levítico 20:23",
+        "evidenceSpan": "E não andem nos costumes das nações que"
+      },
+      {
+        "text": "Disse.",
+        "evidenceRef": "Levítico 20:24",
+        "evidenceSpan": "Disse"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "sangue",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Não descobrirás a nudez da irmã",
+        "evidenceRef": "Levítico 20:19"
+      },
+      {
+        "label": "Se um homem se deitar",
+        "evidenceRef": "Levítico 20:20"
+      },
+      {
+        "label": "Se um homem se casar",
+        "evidenceRef": "Levítico 20:21"
+      },
+      {
+        "label": "Guardem portanto todos os meus estatutos",
+        "evidenceRef": "Levítico 20:22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Levítico 20:19"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Levítico 20:22"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Levítico 20:23"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:11",
+        "bridge": "Queima fora do acampamento"
+      },
+      {
+        "ref": "João 1:29",
+        "bridge": "Cordeiro que tira o pecado"
+      },
+      {
+        "ref": "Romanos 12:1",
+        "bridge": "Corpo como oferta viva"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Ser povo de Deus é viver separado para ele, distinguindo o limpo do impuro.",
+    "anchorQuestion": "O que Levítico 20:19 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 20:19, o texto inclui Não descobrirás a nudez da irmã de tua.",
+      "verseRef": "Levítico 20:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não descobrirás a nudez da irmã de tua",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 20:19 afirma.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 20:19, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 20:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "descobrirás"
+        },
+        {
+          "id": "b",
+          "text": "nudez"
+        },
+        {
+          "id": "c",
+          "text": "irmã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "descobrirás",
+      "feedbackCorrect": "O versículo destaca descobrirás.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 20:21, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 20:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se um homem se casar com a mulher"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se um homem se casar com a mulher",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 20:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 20:20 na ordem do texto.",
+      "verseRef": "Levítico 20:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se um homem se"
+        },
+        {
+          "id": "b",
+          "text": "deitar com sua tia"
+        },
+        {
+          "id": "c",
+          "text": "ele terá revelado a nudez de seu tio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se um homem se",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 20:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 20:22, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 20:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guardem"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "descobrirás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Guardem",
+      "feedbackCorrect": "A palavra do versículo é Guardem.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 20:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 20:19 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 20:19",
+      "passageA": {
+        "ref": "Levítico 20:19"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Separados para mim: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 20:19, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Levítico 20:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 20:19 afirma.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 20:19, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 20:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "descobrirás"
+        },
+        {
+          "id": "c",
+          "text": "nudez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 20:22, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 20:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra guardem"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Guardem",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 20:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 20:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não descobrirás a nudez da irmã"
+        },
+        {
+          "id": "b",
+          "text": "Se um homem se deitar"
+        },
+        {
+          "id": "c",
+          "text": "Se um homem se casar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 20:21, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 20:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "descobrirás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem",
+      "feedbackCorrect": "A palavra do versículo é homem.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 20:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 20:19 a Hebreus 13:11.",
+      "verseRef": "Levítico 20:19",
+      "passageA": {
+        "ref": "Levítico 20:19"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Queima fora do acampamento"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 20:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 20:27 afirma.",
+      "evidence": [
+        "Levítico 20:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 20:24, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 20:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "vocês"
+        },
+        {
+          "id": "c",
+          "text": "herança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O versículo destaca Disse.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 20:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 20:23, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 20:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra e não andem nos costumes"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E não andem nos costumes das nações que",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 20:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 20:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 20:23, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 20:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "andem"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "descobrirás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "andem",
+      "feedbackCorrect": "A palavra do versículo é andem.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 20:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 20:19 a João 1:29.",
+      "verseRef": "Levítico 20:19",
+      "passageA": {
+        "ref": "Levítico 20:19"
+      },
+      "passageB": {
+        "ref": "João 1:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cordeiro que tira o pecado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 20:19"
+      ]
+    }
+  ]
+}

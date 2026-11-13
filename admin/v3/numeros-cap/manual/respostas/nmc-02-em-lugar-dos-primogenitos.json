@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Números 3:9–13",
+    "passages": [
+      {
+        "ref": "Números 3:5–10"
+      },
+      {
+        "ref": "Números 3:11–13"
+      }
+    ],
+    "context": "Depois do censo, Deus define o lugar de Levi: servir a Arão e ficar no lugar dos primogênitos de Israel.",
+    "keyword": "Primogênito",
+    "keywordGloss": "O primeiro que abre a madre: pertence ao Senhor; os levitas tomam esse lugar.",
+    "focusQuestion": "O que Deus pediu em troca de algo que já era dele na sua vida?",
+    "reflectionPrompts": [
+      "Serviço no lugar",
+      "Pertencer ao Senhor",
+      "Cuidar do santo"
+    ],
+    "facts": [
+      {
+        "text": "Moisés deve fazer chegar a tribo de Levi diante de Arão para que o sirvam.",
+        "evidenceRef": "Números 3:6",
+        "evidenceSpan": "ponha diante de Arão, o sacerdote, para que o sirvam"
+      },
+      {
+        "text": "Os levitas ministram no serviço do tabernáculo diante da tenda da congregação.",
+        "evidenceRef": "Números 3:7",
+        "evidenceSpan": "ministrar no serviço do tabernáculo"
+      },
+      {
+        "text": "Os levitas são dados a Arão e a seus filhos dentre Israel.",
+        "evidenceRef": "Números 3:9",
+        "evidenceSpan": "eles são dados a ele"
+      },
+      {
+        "text": "Todo estranho que se aproximar do sacerdócio morrerá.",
+        "evidenceRef": "Números 3:10",
+        "evidenceSpan": "todo estranho que se aproximar morrerá"
+      },
+      {
+        "text": "O Senhor tomou os levitas em lugar de todo primogênito de Israel.",
+        "evidenceRef": "Números 3:12",
+        "evidenceSpan": "em lugar de todo primogênito"
+      },
+      {
+        "text": "Todo primogênito é do Senhor desde o Egito.",
+        "evidenceRef": "Números 3:13",
+        "evidenceSpan": "todo primogênito é meu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "primogênito",
+        "gloss": "O primeiro nascido: consagrado ao Senhor desde o Egito."
+      },
+      {
+        "term": "levitas",
+        "gloss": "Tomados do meio de Israel para ser do Senhor no lugar dos primogênitos."
+      },
+      {
+        "term": "sacerdócio",
+        "gloss": "Ofício exclusivo de Arão e seus filhos; o estranho não se aproxima."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Levi é posto diante de Arão para servir",
+        "evidenceRef": "Números 3:5–7"
+      },
+      {
+        "label": "Os levitas são dados a Arão e aos filhos",
+        "evidenceRef": "Números 3:8–9"
+      },
+      {
+        "label": "O sacerdócio é exclusivo; o estranho morre",
+        "evidenceRef": "Números 3:10"
+      },
+      {
+        "label": "Levi toma o lugar dos primogênitos",
+        "evidenceRef": "Números 3:11–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Levi chega diante de Arão para servi-lo.",
+        "marker": "para que",
+        "evidenceRef": "Números 3:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Os levitas são dados a Arão dentre Israel.",
+        "marker": "portanto",
+        "evidenceRef": "Números 3:9"
+      },
+      {
+        "kind": "causa",
+        "text": "Todo primogênito é do Senhor porque ele os consagrou no Egito.",
+        "marker": "Porque",
+        "evidenceRef": "Números 3:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 13:2",
+        "bridge": "Primogênitos pertencem ao Senhor"
+      },
+      {
+        "ref": "Números 8:16",
+        "bridge": "Levitas em lugar dos primogênitos"
+      },
+      {
+        "ref": "Hebreus 7:5",
+        "bridge": "Levi recebe o dízimo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Qualquer israelita podia exercer o sacerdócio de Arão.",
+        "why": "O texto reserva o sacerdócio a Arão e filhos; o estranho que se aproximar morre."
+      },
+      {
+        "text": "Os levitas substituem os primogênitos por escolha de Moisés.",
+        "why": "O Senhor diz: “Eis que tomei os levitas”; a troca é dele."
+      },
+      {
+        "text": "Os primogênitos deixaram de ser do Senhor depois da troca.",
+        "why": "O texto afirma: “todo primogênito é meu”; os levitas ocupam o lugar no serviço."
+      }
+    ],
+    "centralInsight": "O serviço santo substitui o que era devido: os levitas são do Senhor.",
+    "anchorQuestion": "Em lugar de quem o Senhor tomou os levitas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Os levitas foram contados no censo de guerra junto com as outras tribos neste trecho.",
+      "verseRef": "Números 3:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "tomei os levitas do meio dos filhos de Israel",
+      "feedbackCorrect": "Aqui o Senhor os toma do meio de Israel para si, em lugar dos primogênitos — não para o censo de guerra.",
+      "feedbackWrong": {
+        "true": "Releia 3:12: os levitas são tomados para o Senhor, em lugar dos primogênitos."
+      },
+      "hint": "Veja para quem os levitas são tomados.",
+      "learningObjective": "Observar que Levi é separado para o Senhor.",
+      "evidence": [
+        "Números 3:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 3:6, toque quem deve ser servido pela tribo de Levi.",
+      "verseRef": "Números 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "tribo de Levi"
+        },
+        {
+          "id": "b",
+          "text": "Arão"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "diante de Arão, o sacerdote",
+      "feedbackCorrect": "Levi é posto diante de Arão, o sacerdote, para servi-lo.",
+      "feedbackWrong": {
+        "a": "Levi é quem chega; quem é servido é Arão.",
+        "c": "“Sacerdote” descreve Arão; toque o nome dele."
+      },
+      "hint": "Procure o sacerdote nomeado.",
+      "learningObjective": "Identificar Arão como quem Levi serve.",
+      "evidence": [
+        "Números 3:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 3:12, em lugar de quem o Senhor tomou os levitas.",
+      "verseRef": "Números 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em lugar dos juízes de Israel"
+        },
+        {
+          "id": "b",
+          "text": "O texto deixa claro: eis que tomei os levitas do meio dos o povo, em lugar"
+        },
+        {
+          "id": "c",
+          "text": "Em lugar dos estrangeiros no acampamento"
+        },
+        {
+          "id": "d",
+          "text": "Em lugar dos príncipes das tribos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "em lugar de todo primogênito",
+      "feedbackCorrect": "Os levitas ocupam o lugar dos primogênitos de Israel.",
+      "feedbackWrong": {
+        "a": "O texto fala de primogênitos, não de juízes.",
+        "c": "Não há troca com estrangeiros aqui.",
+        "d": "A troca é com os primogênitos."
+      },
+      "hint": "Olhe a expressão “em lugar de”.",
+      "learningObjective": "Observar a troca pelos primogênitos.",
+      "evidence": [
+        "Números 3:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 3:12 na ordem do texto.",
+      "verseRef": "Números 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "tomei os levitas do meio dos filhos de Israel"
+        },
+        {
+          "id": "b",
+          "text": "em lugar de todo primogênito que abre a madre"
+        },
+        {
+          "id": "c",
+          "text": "e os levitas serão meus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomei os levitas do meio dos filhos de Israel",
+      "feedbackCorrect": "Primeiro a tomada, depois o lugar da troca, e por fim a posse: serão meus.",
+      "feedbackWrong": {
+        "default": "Comece por “tomei os levitas”; termine com “serão meus”."
+      },
+      "hint": "O versículo fecha com a posse do Senhor.",
+      "learningObjective": "Reconhecer a sequência da troca.",
+      "evidence": [
+        "Números 3:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 3:13, de quem é todo primogênito.",
+      "verseRef": "Números 3:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu"
+        },
+        {
+          "id": "b",
+          "text": "seu"
+        },
+        {
+          "id": "c",
+          "text": "nosso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo primogênito é meu",
+      "feedbackCorrect": "O Senhor reivindica: todo primogênito é dele.",
+      "feedbackWrong": {
+        "b": "O texto usa a voz do Senhor: é meu.",
+        "c": "Não diz “nosso”; diz “meu”."
+      },
+      "hint": "Veja a palavra curta de posse.",
+      "learningObjective": "Lembrar a reivindicação do Senhor.",
+      "evidence": [
+        "Números 3:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 3:12 comunica que se liga a este contexto.",
+      "verseRef": "Números 3:12",
+      "passageA": {
+        "ref": "Números 3:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O serviço santo substitui o que era devido: os levitas são do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi volta ao Egito"
+        },
+        {
+          "id": "b",
+          "text": "Levitas no lugar dos primogênitos"
+        },
+        {
+          "id": "c",
+          "text": "Arão deixa o sacerdócio"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "em lugar de todo primogênito",
+      "feedbackCorrect": "A troca mostra que o serviço de Levi ocupa o lugar devido ao Senhor.",
+      "feedbackWrong": {
+        "a": "O texto os toma do meio de Israel, não os manda ao Egito.",
+        "c": "Arão permanece no sacerdócio."
+      },
+      "hint": "Veja a expressão “em lugar de”.",
+      "learningObjective": "Ligar o versículo à troca santa.",
+      "evidence": [
+        "Números 3:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Os levitas são dados a Arão porque Moisés decidiu dividir o trabalho por conta própria.",
+      "verseRef": "Números 3:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Darás, portanto, os levitas a Arão",
+      "feedbackCorrect": "O “portanto” liga a dádiva à ordem do Senhor: Moisés executa o que Deus mandou.",
+      "feedbackWrong": {
+        "true": "Releia 3:5–9: a dádiva segue a palavra do Senhor a Moisés."
+      },
+      "hint": "Veja de onde vem a ordem de dar os levitas.",
+      "learningObjective": "Compreender que a dádiva vem da ordem divina.",
+      "evidence": [
+        "Números 3:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 3:6, toque a expressão que marca o propósito de pôr Levi diante de Arão.",
+      "verseRef": "Números 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faça chegar"
+        },
+        {
+          "id": "b",
+          "text": "para que"
+        },
+        {
+          "id": "c",
+          "text": "tribo de Levi"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que o sirvam",
+      "feedbackCorrect": "“Para que” marca a finalidade: servir a Arão.",
+      "feedbackWrong": {
+        "a": "“Faça chegar” é a ordem, não o propósito.",
+        "c": "Nomeia quem chega; o propósito vem depois."
+      },
+      "hint": "Procure a expressão de finalidade.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Números 3:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Números 3:12–13 explica a tomada dos levitas.",
+      "verseRef": "Números 3:12–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque todo primogênito é do Senhor desde o Egito"
+        },
+        {
+          "id": "b",
+          "text": "Porque Levi pediu um lugar especial no acampamento"
+        },
+        {
+          "id": "c",
+          "text": "Porque as outras tribos recusaram o serviço"
+        },
+        {
+          "id": "d",
+          "text": "Porque Arão não tinha filhos suficientes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque todo primogênito é meu",
+      "feedbackCorrect": "A causa é a consagração dos primogênitos no Egito.",
+      "feedbackWrong": {
+        "b": "Não há pedido de Levi no texto.",
+        "c": "O texto não culpa as outras tribos.",
+        "d": "A razão é a posse dos primogênitos."
+      },
+      "hint": "Leia o “porque” de 3:13.",
+      "learningObjective": "Relacionar a troca à causa do Egito.",
+      "evidence": [
+        "Números 3:12–13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Números 3:6–13.",
+      "verseRef": "Números 3:6–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi é posto diante de Arão para servir"
+        },
+        {
+          "id": "b",
+          "text": "Os levitas são dados a Arão e aos filhos"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor toma Levi no lugar dos primogênitos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "em lugar de todo primogênito",
+      "feedbackCorrect": "Do serviço a Arão à dádiva e, por fim, ao sentido da troca.",
+      "feedbackWrong": {
+        "default": "Comece pelo serviço a Arão; termine na troca pelos primogênitos."
+      },
+      "hint": "A troca pelos primogênitos fecha o movimento.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Números 3:6",
+        "Números 3:9",
+        "Números 3:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 3:9, o que se diz dos levitas em relação a Arão.",
+      "verseRef": "Números 3:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "dados"
+        },
+        {
+          "id": "b",
+          "text": "contados"
+        },
+        {
+          "id": "c",
+          "text": "dispersos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles são dados a ele",
+      "feedbackCorrect": "A palavra carrega a relação: Levi é dado ao sacerdócio.",
+      "feedbackWrong": {
+        "b": "Aqui não se fala de censo.",
+        "c": "O texto os dá a Arão, não os dispersa."
+      },
+      "hint": "Veja o verbo da entrega.",
+      "learningObjective": "Lembrar a palavra da dádiva.",
+      "evidence": [
+        "Números 3:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 3:13 a Êxodo 13:2.",
+      "verseRef": "Números 3:13",
+      "passageA": {
+        "ref": "Números 3:13"
+      },
+      "passageB": {
+        "ref": "Êxodo 13:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Primogênitos pertencem ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Primogênitos voltam ao Egito"
+        },
+        {
+          "id": "c",
+          "text": "Primogênitos deixam de ser santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo primogênito é meu",
+      "feedbackCorrect": "Nos dois textos, o Senhor reivindica os primogênitos para si.",
+      "feedbackWrong": {
+        "b": "A saída do Egito consagra, não devolve.",
+        "c": "O texto os mantém consagrados."
+      },
+      "hint": "Compare a reivindicação do Senhor.",
+      "learningObjective": "Relacionar Números ao mandamento de Êxodo.",
+      "evidence": [
+        "Números 3:13",
+        "Êxodo 13:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Números 3:10–13 sustenta que o sacerdócio de Arão é exclusivo e que os levitas pertencem ao Senhor no lugar dos primogênitos.",
+      "verseRef": "Números 3:10–12",
+      "correctOptionId": "true",
+      "evidenceSpan": "todo estranho que se aproximar morrerá",
+      "feedbackCorrect": "Exclusividade do sacerdócio e posse dos levitas andam juntas no texto.",
+      "feedbackWrong": {
+        "false": "Veja 3:10 (estranho morre) e 3:12 (levitas serão meus)."
+      },
+      "hint": "Una o aviso ao estranho com a frase “serão meus”.",
+      "learningObjective": "Interpretar exclusividade e posse no mesmo trecho.",
+      "evidence": [
+        "Números 3:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 3:10, toque o trecho que sustenta o limite do sacerdócio.",
+      "verseRef": "Números 3:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arão"
+        },
+        {
+          "id": "b",
+          "text": "estranho"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "todo estranho que se aproximar morrerá",
+      "feedbackCorrect": "O “estranho” marca quem não pode cruzar a linha do sacerdócio.",
+      "feedbackWrong": {
+        "a": "Arão é o titular; o limite é o estranho.",
+        "c": "Os filhos compartilham o ofício; o aviso é ao estranho."
+      },
+      "hint": "Procure quem não pode se aproximar.",
+      "learningObjective": "Sustentar com o texto a exclusividade.",
+      "evidence": [
+        "Números 3:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Números 3:12–13 sustenta.",
+      "verseRef": "Números 3:12–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os levitas são do Senhor no lugar devido aos primogênitos"
+        },
+        {
+          "id": "b",
+          "text": "Qualquer um podia ser sacerdote como Arão"
+        },
+        {
+          "id": "c",
+          "text": "Os primogênitos deixaram de ser do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Moisés inventou a troca sem ordem divina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os levitas serão meus",
+      "feedbackCorrect": "A troca é do Senhor e não anula que o primogênito é dele.",
+      "feedbackWrong": {
+        "b": "O estranho que se aproximar morre.",
+        "c": "O texto continua: todo primogênito é meu.",
+        "d": "A palavra vem do Senhor a Moisés."
+      },
+      "hint": "Leia juntos “serão meus” e “é meu”.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Números 3:12–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a posse dos primogênitos ao serviço de Levi.",
+      "verseRef": "Números 3:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "No Egito o Senhor consagra os primogênitos"
+        },
+        {
+          "id": "b",
+          "text": "Os levitas são tomados em lugar deles"
+        },
+        {
+          "id": "c",
+          "text": "Levi serve junto ao santuário"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "consagrei para mim todo primogênito",
+      "feedbackCorrect": "Da consagração no Egito à troca e ao serviço.",
+      "feedbackWrong": {
+        "default": "Comece pelo Egito; termine no serviço de Levi."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver o fio da consagração ao serviço.",
+      "evidence": [
+        "Números 3:13",
+        "Números 3:12",
+        "Números 8:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 3:12, que termo nomeia quem o Senhor tomou no lugar do primeiro nascido.",
+      "verseRef": "Números 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "juízes"
+        },
+        {
+          "id": "b",
+          "text": "levitas"
+        },
+        {
+          "id": "c",
+          "text": "príncipes"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tomei os levitas",
+      "feedbackCorrect": "O termo carrega a vocação: Levi é do Senhor.",
+      "feedbackWrong": {
+        "a": "Não há juízes nesta troca.",
+        "c": "A troca é com os levitas."
+      },
+      "hint": "Veja quem o Senhor tomou.",
+      "learningObjective": "Lembrar o termo central da cena.",
+      "evidence": [
+        "Números 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 3:12 a Números 8:16.",
+      "verseRef": "Números 3:12",
+      "passageA": {
+        "ref": "Números 3:12"
+      },
+      "passageB": {
+        "ref": "Números 8:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levitas em lugar dos primogênitos"
+        },
+        {
+          "id": "b",
+          "text": "Levitas fora do acampamento"
+        },
+        {
+          "id": "c",
+          "text": "Levitas sem serviço no tabernáculo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em lugar de todo primogênito",
+      "feedbackCorrect": "O livro repete: Levi ocupa o lugar dos primogênitos.",
+      "feedbackWrong": {
+        "b": "Eles servem no meio do povo.",
+        "c": "O serviço do tabernáculo é a razão da troca."
+      },
+      "hint": "Compare a fórmula “em lugar de”.",
+      "learningObjective": "Ligar as duas afirmações do livro.",
+      "evidence": [
+        "Números 3:12",
+        "Números 8:16"
+      ]
+    }
+  ]
+}

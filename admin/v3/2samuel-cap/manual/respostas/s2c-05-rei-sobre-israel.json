@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 5:1–10",
+    "passages": [
+      {
+        "ref": "2 Samuel 5:1–10"
+      }
+    ],
+    "context": "As tribos vêm a Hebrom, ungem Davi sobre Israel e ele toma Sião. O texto fecha: o Senhor dos Exércitos era com ele.",
+    "keyword": "fortaleza",
+    "keywordGloss": "Sião capturada, chamada Cidade de Davi, onde ele habita e se fortalece.",
+    "focusQuestion": "Onde você precisa lembrar que a força vem da presença do Senhor?",
+    "reflectionPrompts": [
+      "Aliança em Hebrom",
+      "Cidade de Davi",
+      "Senhor com ele"
+    ],
+    "facts": [
+      {
+        "text": "As tribos dizem a Davi: somos teus ossos e tua carne.",
+        "evidenceRef": "2 Samuel 5:1",
+        "evidenceSpan": "somos teus ossos e tua carne"
+      },
+      {
+        "text": "O Senhor disse que Davi apascentaria Israel.",
+        "evidenceRef": "2 Samuel 5:2",
+        "evidenceSpan": "Tu apascentarás o meu povo de Israel"
+      },
+      {
+        "text": "Ungiram Davi rei sobre Israel em Hebrom.",
+        "evidenceRef": "2 Samuel 5:3",
+        "evidenceSpan": "ungiram Davi rei sobre Israel"
+      },
+      {
+        "text": "Davi reinou quarenta anos no total.",
+        "evidenceRef": "2 Samuel 5:4",
+        "evidenceSpan": "reinou durante quarenta anos"
+      },
+      {
+        "text": "Davi capturou a fortaleza de Sião.",
+        "evidenceRef": "2 Samuel 5:7",
+        "evidenceSpan": "Davi capturou a fortaleza de Sião"
+      },
+      {
+        "text": "Davi se fortalecia porque o Senhor era com ele.",
+        "evidenceRef": "2 Samuel 5:10",
+        "evidenceSpan": "pois o Senhor, Deus dos Exércitos, era com ele"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "apascentarás",
+        "gloss": "Chamado do Senhor: pastorear o povo, não só mandar."
+      },
+      {
+        "term": "Sião",
+        "gloss": "Fortaleza tomada que se torna Cidade de Davi."
+      },
+      {
+        "term": "Exércitos",
+        "gloss": "Título do Senhor presente na força crescente de Davi."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Tribos reconhecem Davi em Hebrom",
+        "evidenceRef": "2 Samuel 5:1–3"
+      },
+      {
+        "label": "Anos de reinado em Hebrom e Jerusalém",
+        "evidenceRef": "2 Samuel 5:4–5"
+      },
+      {
+        "label": "Tomada da fortaleza de Sião",
+        "evidenceRef": "2 Samuel 5:6–9"
+      },
+      {
+        "label": "Davi se fortalece com o Senhor",
+        "evidenceRef": "2 Samuel 5:10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jebuseus desafiam; entretanto Davi captura Sião.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 5:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Davi se fortalece, pois o Senhor dos Exércitos era com ele.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 5:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Assim Davi habita na fortaleza e a chama Cidade de Davi.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 5:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 16:11–13",
+        "bridge": "Chamado a pastorear"
+      },
+      {
+        "ref": "Salmos 78:70–71",
+        "bridge": "De pastor a rei"
+      },
+      {
+        "ref": "1 Crônicas 11:4–9",
+        "bridge": "Tomada de Sião"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Davi se fortalece só por estratégia militar.",
+        "why": "O texto liga a força à presença do Senhor dos Exércitos."
+      },
+      {
+        "text": "As tribos rejeitam Davi em Hebrom.",
+        "why": "Elas vêm, fazem aliança e o ungem rei sobre Israel."
+      },
+      {
+        "text": "Sião permanece inacessível aos homens de Davi.",
+        "why": "Davi captura a fortaleza e habita nela."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 5:10, por que Davi ia se fortalecendo?",
+    "centralInsight": "Davi se fortalece porque o Senhor dos Exércitos está com ele."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 5:3, ungiram Davi rei sobre Israel em Hebrom.",
+      "verseRef": "2 Samuel 5:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "ungiram Davi rei sobre Israel",
+      "feedbackCorrect": "A unção cobre Israel.",
+      "feedbackWrong": {
+        "false": "O verso diz sobre Israel."
+      },
+      "hint": "Veja o alcance.",
+      "learningObjective": "Observar a unção.",
+      "evidence": [
+        "2 Samuel 5:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 5:7, toque o que Davi capturou.",
+      "verseRef": "2 Samuel 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "capturou"
+        },
+        {
+          "id": "c",
+          "text": "Sião"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "capturou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar a fortaleza.",
+      "evidence": [
+        "2 Samuel 5:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 5:2, o que o Senhor disse a Davi?",
+      "verseRef": "2 Samuel 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu apascentarás o meu povo de Israel"
+        },
+        {
+          "id": "b",
+          "text": "Foge de Hebrom para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Deixa Sião aos jebuseus"
+        },
+        {
+          "id": "d",
+          "text": "Reina só sobre Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu apascentarás o meu povo de Israel",
+      "feedbackCorrect": "Pastorear Israel.",
+      "feedbackWrong": {
+        "b": "Há unção em Hebrom.",
+        "c": "Ele captura Sião.",
+        "d": "Ungem sobre Israel."
+      },
+      "hint": "Leia a palavra do Senhor.",
+      "learningObjective": "Reconhecer o chamado.",
+      "evidence": [
+        "2 Samuel 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 5:3 na ordem do texto.",
+      "verseRef": "2 Samuel 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "todos os anciãos de Israel se reuniram com o rei em Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "o rei Davi fez com eles uma aliança em Hebrom"
+        },
+        {
+          "id": "c",
+          "text": "ungiram Davi rei sobre Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ungiram Davi rei sobre Israel",
+      "feedbackCorrect": "Reunião, aliança e unção.",
+      "feedbackWrong": {
+        "default": "Comece pelos anciãos."
+      },
+      "hint": "O que fecha o verso?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 5:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 5:2, complete: Tu ___ o meu povo de Israel.",
+      "verseRef": "2 Samuel 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "apascentarás"
+        },
+        {
+          "id": "b",
+          "text": "abandonarás"
+        },
+        {
+          "id": "c",
+          "text": "dispersarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu apascentarás o meu povo de Israel",
+      "feedbackCorrect": "Apascentarás.",
+      "feedbackWrong": {
+        "b": "Não é abandonarás.",
+        "c": "Não é dispersarás."
+      },
+      "hint": "Veja o verbo do Senhor.",
+      "learningObjective": "Lembrar apascentarás.",
+      "evidence": [
+        "2 Samuel 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 5:10 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 5:10",
+      "passageA": {
+        "ref": "2 Samuel 5:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Davi se fortalece porque o Senhor está com ele."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor dos Exércitos com ele"
+        },
+        {
+          "id": "b",
+          "text": "Força só humana"
+        },
+        {
+          "id": "c",
+          "text": "Abandono em Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o Senhor, Deus dos Exércitos, era com ele",
+      "feedbackCorrect": "Presença que fortalece.",
+      "feedbackWrong": {
+        "b": "Há causa divina.",
+        "c": "Há presença."
+      },
+      "hint": "Por que ele se fortalece?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 5:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 5:10, Davi se fortalece apesar de o Senhor dos Exércitos estar longe dele.",
+      "verseRef": "2 Samuel 5:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois o Senhor, Deus dos Exércitos, era com ele",
+      "feedbackCorrect": "A causa é a presença do Senhor.",
+      "feedbackWrong": {
+        "true": "Leia o pois."
+      },
+      "hint": "Veja a causa.",
+      "learningObjective": "Ver a causa da força.",
+      "evidence": [
+        "2 Samuel 5:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 5:10, toque o marcador de causa.",
+      "verseRef": "2 Samuel 5:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "poder"
+        },
+        {
+          "id": "b",
+          "text": "fortalecendo"
+        },
+        {
+          "id": "c",
+          "text": "cada"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fortalecendo",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "2 Samuel 5:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 5:6–7 faz?",
+      "verseRef": "2 Samuel 5:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desafio dos jebuseus; entretanto Davi captura Sião"
+        },
+        {
+          "id": "b",
+          "text": "Davi desiste diante dos cegos"
+        },
+        {
+          "id": "c",
+          "text": "Sião permanece fechada para sempre"
+        },
+        {
+          "id": "d",
+          "text": "Os jebuseus ungem Davi rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, Davi capturou a fortaleza de Sião",
+      "feedbackCorrect": "Contraste e tomada.",
+      "feedbackWrong": {
+        "b": "Há captura.",
+        "c": "Há Cidade de Davi.",
+        "d": "Ungem em Hebrom."
+      },
+      "hint": "Leia o Entretanto.",
+      "learningObjective": "Compreender a tomada.",
+      "evidence": [
+        "2 Samuel 5:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tribos reconhecem Davi em Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "Tomada da fortaleza de Sião"
+        },
+        {
+          "id": "c",
+          "text": "Davi se fortalece com o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "somos teus ossos e tua carne",
+      "feedbackCorrect": "Reconhecimento, Sião e força.",
+      "feedbackWrong": {
+        "default": "Comece pelas tribos."
+      },
+      "hint": "O que fecha o trecho?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 5:1",
+        "2 Samuel 5:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 5:7, complete: ___, Davi capturou a fortaleza de Sião.",
+      "verseRef": "2 Samuel 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "Porém"
+        },
+        {
+          "id": "c",
+          "text": "Então"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, Davi capturou a fortaleza de Sião",
+      "feedbackCorrect": "Entretanto.",
+      "feedbackWrong": {
+        "b": "Não é Porém.",
+        "c": "Não é Então."
+      },
+      "hint": "Veja o contraste.",
+      "learningObjective": "Lembrar Entretanto.",
+      "evidence": [
+        "2 Samuel 5:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 5:2 a Salmos 78:70–71?",
+      "verseRef": "2 Samuel 5:2",
+      "passageA": {
+        "ref": "2 Samuel 5:2"
+      },
+      "passageB": {
+        "ref": "Salmos 78:70–71"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "De pastor a rei"
+        },
+        {
+          "id": "b",
+          "text": "De rei a pastor"
+        },
+        {
+          "id": "c",
+          "text": "Rejeição de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu apascentarás o meu povo de Israel",
+      "feedbackCorrect": "Pastoreio e reinado.",
+      "feedbackWrong": {
+        "b": "Há pastoreio.",
+        "c": "Há chamado."
+      },
+      "hint": "Compare o pastoreio.",
+      "learningObjective": "Ligar ao pastor-rei.",
+      "evidence": [
+        "2 Samuel 5:2",
+        "Salmos 78:70–71"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 5:1–10, o reinado de Davi se firma na palavra do Senhor e na sua presença.",
+      "verseRef": "2 Samuel 5:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor te disse: Tu apascentarás o meu povo de Israel",
+      "feedbackCorrect": "Palavra e presença sustentam o rei.",
+      "feedbackWrong": {
+        "false": "Há palavra e presença."
+      },
+      "hint": "Veja o que o Senhor disse.",
+      "learningObjective": "Avaliar a base do reinado.",
+      "evidence": [
+        "2 Samuel 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 5:10, toque o título que sustenta a força de Davi.",
+      "verseRef": "2 Samuel 5:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "cada"
+        },
+        {
+          "id": "b",
+          "text": "poder"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "poder",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar Exércitos.",
+      "evidence": [
+        "2 Samuel 5:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une unção, Sião e fortalecimento?",
+      "verseRef": "2 Samuel 5:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor estabelece Davi; a força não é só dele"
+        },
+        {
+          "id": "b",
+          "text": "Davi reina sem a palavra do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Sião prova que Deus está ausente"
+        },
+        {
+          "id": "d",
+          "text": "As tribos forçam um rei sem aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o Senhor, Deus dos Exércitos, era com ele",
+      "feedbackCorrect": "Presença que firma.",
+      "feedbackWrong": {
+        "b": "Há palavra em 5:2.",
+        "c": "Há presença.",
+        "d": "Há aliança."
+      },
+      "hint": "Una palavra e presença.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 5:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do reinado firmado.",
+      "verseRef": "2 Samuel 5:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança e unção em Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "Tomada de Sião"
+        },
+        {
+          "id": "c",
+          "text": "Força pela presença do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ungiram Davi rei sobre Israel",
+      "feedbackCorrect": "Unção, Sião e presença.",
+      "feedbackWrong": {
+        "default": "Comece pela unção."
+      },
+      "hint": "O que fecha a força?",
+      "learningObjective": "Encadear o reinado.",
+      "evidence": [
+        "2 Samuel 5:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 5:7, complete: esta é a Cidade de ___.",
+      "verseRef": "2 Samuel 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "Saul"
+        },
+        {
+          "id": "c",
+          "text": "Joabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta é a Cidade de Davi",
+      "feedbackCorrect": "Davi.",
+      "feedbackWrong": {
+        "b": "Não é Saul.",
+        "c": "Não é Joabe."
+      },
+      "hint": "Veja o novo nome.",
+      "learningObjective": "Lembrar Davi.",
+      "evidence": [
+        "2 Samuel 5:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 5:2 a 1 Samuel 16:11–13?",
+      "verseRef": "2 Samuel 5:2",
+      "passageA": {
+        "ref": "2 Samuel 5:2"
+      },
+      "passageB": {
+        "ref": "1 Samuel 16:11–13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a pastorear"
+        },
+        {
+          "id": "b",
+          "text": "Rejeição definitiva"
+        },
+        {
+          "id": "c",
+          "text": "Unção de Saul"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu apascentarás o meu povo de Israel",
+      "feedbackCorrect": "O chamado se cumpre.",
+      "feedbackWrong": {
+        "b": "Há cumprimento.",
+        "c": "Há Davi."
+      },
+      "hint": "Compare o chamado.",
+      "learningObjective": "Ligar à unção antiga.",
+      "evidence": [
+        "2 Samuel 5:2",
+        "1 Samuel 16:11–13"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,720 @@
+{
+  "study": {
+    "passageRef": "2 Reis 24:10–15",
+    "passages": [
+      {
+        "ref": "2 Reis 24:10–15"
+      },
+      {
+        "ref": "2 Reis 24:16–17"
+      }
+    ],
+    "context": "Nabucodonosor cerca Jerusalém. Joaquim se entrega; tesouros, nobres e artesãos vão à Babilônia. Só o povo pobre fica; Matanias vira Zedequias.",
+    "keyword": "cativo",
+    "keywordGloss": "Levar embora o rei, os nobres e os tesouros: o juízo em etapas.",
+    "focusQuestion": "Quando o juízo chega em etapas, você ainda trata o aviso como distante?",
+    "reflectionPrompts": [
+      "Cidade cercada",
+      "Tesouros levados",
+      "Pobre fica"
+    ],
+    "facts": [
+      {
+        "text": "Os servos de Nabucodonosor subiram a Jerusalém e a cercaram.",
+        "evidenceRef": "2 Reis 24:10",
+        "evidenceSpan": "os servos de Nabucodonosor, rei da Babilônia, subiram a Jerusalém, e a cidade foi cercada"
+      },
+      {
+        "text": "Joaquim subiu ao rei da Babilônia e foi levado cativo.",
+        "evidenceRef": "2 Reis 24:12",
+        "evidenceSpan": "o rei da Babilônia o levou cativo"
+      },
+      {
+        "text": "Levou os tesouros da casa do Senhor e da casa do rei.",
+        "evidenceRef": "2 Reis 24:13",
+        "evidenceSpan": "levou de lá todos os tesouros da casa do SENHOR e os tesouros da casa do rei"
+      },
+      {
+        "text": "Transportou os habitantes; só o povo pobre da terra ficou.",
+        "evidenceRef": "2 Reis 24:14",
+        "evidenceSpan": "ninguém ficou, exceto o povo pobre da terra"
+      },
+      {
+        "text": "Levou Joaquim, a mãe do rei, esposas, oficiais e nobres à Babilônia.",
+        "evidenceRef": "2 Reis 24:15",
+        "evidenceSpan": "levou Joaquim para a Babilônia"
+      },
+      {
+        "text": "Estabeleceu Matanias como rei e mudou seu nome para Zedequias.",
+        "evidenceRef": "2 Reis 24:17",
+        "evidenceSpan": "estabeleceu Matanias, seu tio paterno, como rei em lugar de Joaquim, e mudou seu nome para Zedequias"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cativo",
+        "gloss": "O rei e a elite levados para a Babilônia."
+      },
+      {
+        "term": "tesouros",
+        "gloss": "Riquezas do templo e do palácio tomadas conforme a palavra do Senhor."
+      },
+      {
+        "term": "Zedequias",
+        "gloss": "Novo nome dado a Matanias pelo rei da Babilônia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jerusalém é cercada e sitiada",
+        "evidenceRef": "2 Reis 24:10–11"
+      },
+      {
+        "label": "Joaquim se entrega e vai cativo",
+        "evidenceRef": "2 Reis 24:12"
+      },
+      {
+        "label": "Tesouros e elite saem da cidade",
+        "evidenceRef": "2 Reis 24:13–16"
+      },
+      {
+        "label": "Matanias vira Zedequias",
+        "evidenceRef": "2 Reis 24:17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O cerco leva Joaquim a subir e ser levado cativo.",
+        "marker": "Então",
+        "evidenceRef": "2 Reis 24:12"
+      },
+      {
+        "kind": "causa",
+        "text": "Os utensílios são cortados conforme a palavra que o Senhor havia dito.",
+        "marker": "conforme",
+        "evidenceRef": "2 Reis 24:13"
+      },
+      {
+        "kind": "contraste",
+        "text": "A elite vai embora; o povo pobre da terra fica.",
+        "marker": "exceto",
+        "evidenceRef": "2 Reis 24:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Daniel 1:1–2",
+        "bridge": "Nabucodonosor leva utensílios"
+      },
+      {
+        "ref": "Jeremias 25:8–9",
+        "bridge": "Nabucodonosor como juízo"
+      },
+      {
+        "ref": "Deuteronômio 28:36",
+        "bridge": "Rei levado a outra nação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Toda a população permanece em Jerusalém.",
+        "why": "Transportou os habitantes; só o povo pobre ficou."
+      },
+      {
+        "text": "Os tesouros do templo ficam intactos.",
+        "why": "Levou todos os tesouros da casa do Senhor e cortou os utensílios de ouro."
+      },
+      {
+        "text": "Zedequias escolhe livremente o próprio nome.",
+        "why": "O rei da Babilônia mudou o nome de Matanias para Zedequias."
+      }
+    ],
+    "centralInsight": "O juízo chega em etapas: o rei, os nobres e os tesouros saem da cidade.",
+    "anchorQuestion": "Quem Nabucodonosor estabeleceu como rei no lugar de Joaquim?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 24 —10, a cidade de Jerusalém foi cercada pelos servos de Nabucodonosor.",
+      "verseRef": "2 Reis 24:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "subiram a Jerusalém, e a cidade foi cercada",
+      "feedbackCorrect": "O juízo começa com o cerco: Jerusalém fica cercada.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar o cerco de Jerusalém.",
+      "evidence": [
+        "2 Reis 24:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 24:12, toque o que o rei da Babilônia fez a Joaquim.",
+      "verseRef": "2 Reis 24:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá"
+        },
+        {
+          "id": "b",
+          "text": "Joaquim"
+        },
+        {
+          "id": "c",
+          "text": "subiu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Joaquim",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o destino de Joaquim.",
+      "evidence": [
+        "2 Reis 24:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 24:14, quem ficou em Jerusalém?",
+      "verseRef": "2 Reis 24:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo pobre da terra"
+        },
+        {
+          "id": "b",
+          "text": "Os príncipes e os valentes"
+        },
+        {
+          "id": "c",
+          "text": "Os artífices e ferreiros"
+        },
+        {
+          "id": "d",
+          "text": "Toda a casa real"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém ficou, exceto o povo pobre da terra",
+      "feedbackCorrect": "A elite sai; só o povo pobre permanece.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a cláusula com \"exceto\".",
+      "learningObjective": "Observar quem permanece na terra.",
+      "evidence": [
+        "2 Reis 24:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 24:17 na ordem do texto.",
+      "verseRef": "2 Reis 24:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "E o rei da Babilônia estabeleceu Matanias"
+        },
+        {
+          "id": "b",
+          "text": "seu tio paterno, como rei em lugar de Joaquim"
+        },
+        {
+          "id": "c",
+          "text": "e mudou seu nome para Zedequias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mudou seu nome para Zedequias",
+      "feedbackCorrect": "Matanias é posto no trono e recebe o nome Zedequias.",
+      "feedbackWrong": {
+        "default": "Comece pelo estabelecimento de Matanias."
+      },
+      "hint": "Quem age no início do versículo?",
+      "learningObjective": "Seguir a ordem da troca de rei e nome.",
+      "evidence": [
+        "2 Reis 24:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 24:12, complete: o rei da Babilônia o levou ___.",
+      "verseRef": "2 Reis 24:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "cativo"
+        },
+        {
+          "id": "b",
+          "text": "livre"
+        },
+        {
+          "id": "c",
+          "text": "coroado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei da Babilônia o levou cativo",
+      "feedbackCorrect": "Joaquim não fica: vai cativo.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Qual palavra fecha o destino de Joaquim?",
+      "learningObjective": "Lembrar o destino do rei.",
+      "evidence": [
+        "2 Reis 24:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 24:14 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 24:14",
+      "passageA": {
+        "ref": "2 Reis 24:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na primeira leva, a elite sai e o pobre permanece na terra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Só o pobre fica"
+        },
+        {
+          "id": "b",
+          "text": "Ninguém é levado"
+        },
+        {
+          "id": "c",
+          "text": "Todos ficam ricos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exceto o povo pobre da terra",
+      "feedbackCorrect": "O contraste marca a primeira leva: o pobre fica.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a exceção no fim do versículo.",
+      "learningObjective": "Ligar o verso ao padrão da primeira leva.",
+      "evidence": [
+        "2 Reis 24:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 24 —14, o povo pobre da terra foi o primeiro grupo levado cativo para a Babilônia.",
+      "verseRef": "2 Reis 24:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "ninguém ficou, exceto o povo pobre da terra",
+      "feedbackCorrect": "O contraste é o inverso: o pobre fica; a elite sai.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Leia a palavra \"exceto\".",
+      "learningObjective": "Compreender o contraste entre elite e pobre.",
+      "evidence": [
+        "2 Reis 24:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 24:14, toque a palavra que marca quem ficou na terra.",
+      "verseRef": "2 Reis 24:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "transportou"
+        },
+        {
+          "id": "c",
+          "text": "habitantes"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "transportou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Reis 24:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 24:13 se relaciona com a palavra do Senhor?",
+      "verseRef": "2 Reis 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os utensílios são cortados conforme o Senhor dissera"
+        },
+        {
+          "id": "b",
+          "text": "O saque do templo contradiz a palavra do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Salomão protege os utensílios neste momento"
+        },
+        {
+          "id": "d",
+          "text": "O rei da Babilônia ignora qualquer palavra previa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o SENHOR havia dito",
+      "feedbackCorrect": "O saque não é acaso: cumpre a palavra já dita.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a cláusula final do versículo.",
+      "learningObjective": "Relacionar o saque à palavra cumprida.",
+      "evidence": [
+        "2 Reis 24:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a primeira leva em 2 Reis 24:10–17?",
+      "verseRef": "2 Reis 24:12–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jerusalém é cercada e sitiada"
+        },
+        {
+          "id": "b",
+          "text": "Joaquim se entrega e vai cativo"
+        },
+        {
+          "id": "c",
+          "text": "Tesouros saem e Zedequias é posto"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o rei da Babilônia o levou cativo",
+      "feedbackCorrect": "Cerco, cativeiro e troca de rei: o juízo em etapas.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco; o nome Zedequias fecha a cena."
+      },
+      "hint": "O cerco vem antes da entrega.",
+      "learningObjective": "Compreender a sequência da primeira leva.",
+      "evidence": [
+        "2 Reis 24:10",
+        "2 Reis 24:12",
+        "2 Reis 24:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 24:13, complete: ___ a palavra que o Senhor havia dito.",
+      "verseRef": "2 Reis 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "conforme"
+        },
+        {
+          "id": "b",
+          "text": "contra"
+        },
+        {
+          "id": "c",
+          "text": "sem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o SENHOR havia dito",
+      "feedbackCorrect": "\"Conforme\" liga o saque à palavra já anunciada.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Qual palavra liga o ato à palavra do Senhor?",
+      "learningObjective": "Lembrar o marcador de cumprimento.",
+      "evidence": [
+        "2 Reis 24:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 24:13 a Daniel 1:1–2?",
+      "verseRef": "2 Reis 24:13",
+      "passageA": {
+        "ref": "2 Reis 24:13"
+      },
+      "passageB": {
+        "ref": "Daniel 1:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nabucodonosor leva utensílios"
+        },
+        {
+          "id": "b",
+          "text": "O templo fica intacto"
+        },
+        {
+          "id": "c",
+          "text": "Judá vence a Babilônia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todos os tesouros da casa do SENHOR",
+      "feedbackCorrect": "Reis e Daniel relatam utensílios e tesouros levados à Babilônia.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o destino dos utensílios.",
+      "learningObjective": "Relacionar o saque em Reis e em Daniel.",
+      "evidence": [
+        "2 Reis 24:13",
+        "Daniel 1:1–2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 24 —17, Zedequias escolhe livremente o próprio nome ao subir ao trono.",
+      "verseRef": "2 Reis 24:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "mudou seu nome para Zedequias",
+      "feedbackCorrect": "Quem muda o nome é o rei da Babilônia: o poder estrangeiro nomeia.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Veja quem muda o nome no versículo.",
+      "learningObjective": "Interpretar a troca de nome como domínio estrangeiro.",
+      "evidence": [
+        "2 Reis 24:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 24:13, toque o trecho que mostra o cumprimento da palavra do Senhor.",
+      "verseRef": "2 Reis 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "tesouros"
+        },
+        {
+          "id": "b",
+          "text": "levou"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "levou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar o cumprimento da palavra no saque.",
+      "evidence": [
+        "2 Reis 24:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 24:10–17 sustenta sobre o juízo?",
+      "verseRef": "2 Reis 24:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O juízo chega em etapas: rei, nobres e tesouros saem"
+        },
+        {
+          "id": "b",
+          "text": "Toda a população permanece intacta em Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Os tesouros do templo ficam seguros"
+        },
+        {
+          "id": "d",
+          "text": "Zedequias escolhe sozinho o próprio nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levou Joaquim para a Babilônia",
+      "feedbackCorrect": "Cerco, cativeiro e saque mostram juízo em etapas.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Junte o destino do rei, dos nobres e dos tesouros.",
+      "learningObjective": "Escolher a interpretação do juízo em etapas.",
+      "evidence": [
+        "2 Reis 24:13",
+        "2 Reis 24:14",
+        "2 Reis 24:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do juízo anunciado?",
+      "verseRef": "2 Reis 24:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor anuncia levar rei e povo"
+        },
+        {
+          "id": "b",
+          "text": "Nabucodonosor é enviado como juízo"
+        },
+        {
+          "id": "c",
+          "text": "Joaquim sobe e é levado cativo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o rei da Babilônia o levou cativo",
+      "feedbackCorrect": "Da ameaça à envio de Nabucodonosor e ao cativeiro do rei.",
+      "feedbackWrong": {
+        "default": "Siga: Deuteronômio 28:36, Jeremias 25:8–9, 2 Reis 24:12."
+      },
+      "hint": "Comece pelo anúncio em Deuteronômio.",
+      "learningObjective": "Ver o fio da ameaça ao cativeiro.",
+      "evidence": [
+        "Deuteronômio 28:36",
+        "Jeremias 25:8–9",
+        "2 Reis 24:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 24:17, complete: e mudou seu nome para ___.",
+      "verseRef": "2 Reis 24:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zedequias"
+        },
+        {
+          "id": "b",
+          "text": "Joaquim"
+        },
+        {
+          "id": "c",
+          "text": "Nabucodonosor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mudou seu nome para Zedequias",
+      "feedbackCorrect": "O novo nome marca o domínio da Babilônia sobre o trono.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Qual nome fecha o versículo?",
+      "learningObjective": "Lembrar o nome imposto ao novo rei.",
+      "evidence": [
+        "2 Reis 24:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 24:12 a Deuteronômio 28:36?",
+      "verseRef": "2 Reis 24:12",
+      "passageA": {
+        "ref": "2 Reis 24:12"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 28:36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rei levado a outra nação"
+        },
+        {
+          "id": "b",
+          "text": "Rei permanece em Judá"
+        },
+        {
+          "id": "c",
+          "text": "Povo vence a Babilônia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei da Babilônia o levou cativo",
+      "feedbackCorrect": "A ameaça de Deuteronômio se concretiza no cativeiro de Joaquim.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o destino do rei nos dois textos.",
+      "learningObjective": "Ligar o cativeiro à maldição anunciada.",
+      "evidence": [
+        "2 Reis 24:12",
+        "Deuteronômio 28:36"
+      ]
+    }
+  ]
+}

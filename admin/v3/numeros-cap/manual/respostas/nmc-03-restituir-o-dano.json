@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Números 5:5–10",
+    "passages": [
+      {
+        "ref": "Números 5:5–10"
+      }
+    ],
+    "context": "No acampamento de Israel, antes de qualquer oferta a Deus, a Lei resolve primeiro a dívida entre vizinhos: quem prejudicou alguém precisa reconhecer o erro e devolver o que tirou, com juros.",
+    "keyword": "Restituir",
+    "keywordGloss": "Devolver à pessoa prejudicada o valor inteiro do dano, mais um quinto a mais.",
+    "focusQuestion": "Existe alguém que você prejudicou e ainda não reparou de verdade?",
+    "reflectionPrompts": [
+      "Confessar sem rodeios",
+      "Devolver com juros",
+      "Acertar antes de orar"
+    ],
+    "facts": [
+      {
+        "text": "Pecar contra o próximo também é tratado como ofensa ao Senhor.",
+        "evidenceRef": "Números 5:6",
+        "evidenceSpan": "ofendendo ao SENHOR"
+      },
+      {
+        "text": "Quem pecou confessa o que fez.",
+        "evidenceRef": "Números 5:7",
+        "evidenceSpan": "E confessarão o pecado que cometeram"
+      },
+      {
+        "text": "A restituição soma o valor total mais um quinto a mais.",
+        "evidenceRef": "Números 5:7",
+        "evidenceSpan": "farão a restituição integral acrescentando um quinto a essa quantia"
+      },
+      {
+        "text": "Sem parente próximo para receber, a restituição vai ao sacerdote.",
+        "evidenceRef": "Números 5:8",
+        "evidenceSpan": "a restituição que ele fizer ao Senhor pela culpa será do sacerdote"
+      },
+      {
+        "text": "Além da restituição, há o carneiro expiatório para a expiação.",
+        "evidenceRef": "Números 5:8",
+        "evidenceSpan": "além do carneiro expiatório com o qual ele realizará a expiação"
+      },
+      {
+        "text": "As ofertas santas entregues ao sacerdote pertencem a ele.",
+        "evidenceRef": "Números 5:9",
+        "evidenceSpan": "pertencem a ele"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "restituição",
+        "gloss": "Devolver o valor inteiro a quem foi prejudicado, não só pedir desculpa."
+      },
+      {
+        "term": "confessarão",
+        "gloss": "Reconhecer em voz alta o que se fez, diante de quem foi ofendido."
+      },
+      {
+        "term": "quinto",
+        "gloss": "Parte extra somada ao valor devolvido: o dano custa mais do que o tomado."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus fala a Moisés sobre a culpa",
+        "evidenceRef": "Números 5:5"
+      },
+      {
+        "label": "O pecado contra alguém também ofende o Senhor",
+        "evidenceRef": "Números 5:6"
+      },
+      {
+        "label": "Confissão e restituição com acréscimo",
+        "evidenceRef": "Números 5:7"
+      },
+      {
+        "label": "Destino da restituição sem herdeiro",
+        "evidenceRef": "Números 5:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "A confissão vem antes da restituição acrescida do quinto.",
+        "marker": null,
+        "evidenceRef": "Números 5:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Sem parente a quem restituir, a reparação resulta ao sacerdote.",
+        "marker": "Mas",
+        "evidenceRef": "Números 5:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "O carneiro expiatório é trazido com a finalidade da expiação.",
+        "marker": null,
+        "evidenceRef": "Números 5:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Levítico 6:5",
+        "bridge": "Restituir o dano com um quinto"
+      },
+      {
+        "ref": "Lucas 19:8",
+        "bridge": "Reparar o dano causado ao próximo"
+      },
+      {
+        "ref": "Mateus 5:23–24",
+        "bridge": "Reconciliar antes de adorar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Pedir desculpa já resolve a culpa, sem precisar devolver nada.",
+        "why": "O texto exige restituição integral mais um quinto, não só confissão."
+      },
+      {
+        "text": "A culpa contra o próximo é assunto só entre as pessoas, sem relação com o Senhor.",
+        "why": "O texto diz que ofender o próximo também é ofensa ao Senhor."
+      },
+      {
+        "text": "Sem herdeiro para receber, a dívida simplesmente desaparece.",
+        "why": "O texto manda entregar a restituição ao sacerdote nesse caso."
+      }
+    ],
+    "centralInsight": "A culpa contra o irmão se trata com confissão e reparo concreto.",
+    "anchorQuestion": "O que a pessoa culpada deve fazer, além de confessar o pecado?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 5:6, pecar contra o próximo também é considerado ofensa ao Senhor.",
+      "verseRef": "Números 5:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "ofendendo ao SENHOR",
+      "feedbackCorrect": "O texto diz que esse pecado é cometido \"ofendendo ao SENHOR\", não só contra a pessoa.",
+      "feedbackWrong": {
+        "false": "Releia Números 5:6: o texto chama isso de pecado \"ofendendo ao SENHOR\"."
+      },
+      "hint": "Veja a quem o texto diz que o pecado ofende.",
+      "learningObjective": "Observar que o pecado contra o próximo também ofende o Senhor.",
+      "evidence": [
+        "Números 5:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 5:6, toque quem comete o pecado contra o próximo.",
+      "verseRef": "Números 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "um homem"
+        },
+        {
+          "id": "b",
+          "text": "ao SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "filhos de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um homem",
+      "feedbackCorrect": "O texto nomeia \"um homem ou uma mulher\" como quem comete o pecado.",
+      "feedbackWrong": {
+        "b": "\"Ao SENHOR\" é quem é ofendido, não quem comete o pecado.",
+        "c": "\"Filhos de Israel\" é quem recebe a instrução, não quem peca."
+      },
+      "hint": "Procure quem pratica o pecado, não quem é ofendido.",
+      "learningObjective": "Identificar quem comete o pecado contra o próximo.",
+      "evidence": [
+        "Números 5:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 5:7, o que a pessoa culpada deve fazer.",
+      "verseRef": "Números 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confessar o pecado e restituir com um quinto a mais"
+        },
+        {
+          "id": "b",
+          "text": "Pagar apenas o valor exato do que tomou, sem acréscimo"
+        },
+        {
+          "id": "c",
+          "text": "Esperar o sacerdote descobrir sozinho"
+        },
+        {
+          "id": "d",
+          "text": "Oferecer um sacrifício, sem precisar confessar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farão a restituição integral acrescentando um quinto a essa quantia",
+      "feedbackCorrect": "O texto manda confessar e restituir o valor integral mais um quinto.",
+      "feedbackWrong": {
+        "b": "O texto pede o valor integral mais um quinto, não só o valor exato.",
+        "c": "O texto manda confessar, não esperar ser descoberto.",
+        "d": "A confissão vem antes; o texto não dispensa esse passo."
+      },
+      "hint": "Leia o que vem depois de \"confessarão\".",
+      "learningObjective": "Reconhecer os dois passos exigidos de quem pecou.",
+      "evidence": [
+        "Números 5:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 5:7 na ordem do texto.",
+      "verseRef": "Números 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "E confessarão o pecado que cometeram"
+        },
+        {
+          "id": "b",
+          "text": "farão a restituição integral acrescentando um quinto"
+        },
+        {
+          "id": "c",
+          "text": "e darão tudo àquele contra quem se tornaram culpados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E confessarão o pecado que cometeram",
+      "feedbackCorrect": "É a sequência do versículo: confessar, restituir com acréscimo e entregar à vítima.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão; a entrega à vítima vem por último."
+      },
+      "hint": "O versículo começa pela confissão.",
+      "learningObjective": "Reconhecer a sequência de Números 5:7.",
+      "evidence": [
+        "Números 5:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 5:7, além do valor tomado, o que se acrescenta à restituição.",
+      "verseRef": "Números 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "quinto"
+        },
+        {
+          "id": "b",
+          "text": "dobro"
+        },
+        {
+          "id": "c",
+          "text": "terço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "acrescentando um quinto a essa quantia",
+      "feedbackCorrect": "A restituição soma o valor integral mais um quinto a mais.",
+      "feedbackWrong": {
+        "b": "O texto fala em acrescentar um quinto, não o dobro.",
+        "c": "O texto fala em acrescentar um quinto, não um terço."
+      },
+      "hint": "É a fração que o texto manda somar ao valor devolvido.",
+      "learningObjective": "Lembrar o acréscimo exigido na restituição.",
+      "evidence": [
+        "Números 5:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 5:6 comunica que se liga a este contexto.",
+      "verseRef": "Números 5:6",
+      "passageA": {
+        "ref": "Números 5:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Pecar contra o próximo também ofende ao Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pecar contra o próximo ofende Deus"
+        },
+        {
+          "id": "b",
+          "text": "O pecado atinge apenas a vítima"
+        },
+        {
+          "id": "c",
+          "text": "A culpa desaparece sem confissão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ofendendo ao SENHOR",
+      "feedbackCorrect": "O texto diz que esse pecado é cometido \"ofendendo ao SENHOR\".",
+      "feedbackWrong": {
+        "b": "O texto nomeia o Senhor como ofendido, não só a vítima.",
+        "c": "O texto não trata de desaparecer; trata de confessar e restituir."
+      },
+      "hint": "Veja a quem o texto diz que o pecado ofende.",
+      "learningObjective": "Ligar Números 5:6 à ideia de que o pecado contra o próximo também ofende a Deus.",
+      "evidence": [
+        "Números 5:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 5:8, mesmo sem parente para restituir, a dívida da pessoa simplesmente deixa de existir.",
+      "verseRef": "Números 5:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "a restituição que ele fizer ao Senhor pela culpa será do sacerdote",
+      "feedbackCorrect": "Sem parente, a restituição não desaparece: ela vai para o sacerdote.",
+      "feedbackWrong": {
+        "true": "Releia Números 5:8: sem parente, a restituição vai para o sacerdote."
+      },
+      "hint": "Veja para onde vai a restituição quando não há parente.",
+      "learningObjective": "Compreender o destino da restituição sem herdeiro.",
+      "evidence": [
+        "Números 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 5:8, toque a palavra que marca a condição sobre quem não tem parente.",
+      "verseRef": "Números 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "culpa"
+        },
+        {
+          "id": "c",
+          "text": "carneiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas, se aquele homem",
+      "feedbackCorrect": "\"Mas\" abre a condição: se não houver parente, a restituição muda de destino.",
+      "feedbackWrong": {
+        "b": "\"Culpa\" nomeia o problema, não marca a condição.",
+        "c": "\"Carneiro\" aparece depois, ligado à expiação."
+      },
+      "hint": "Procure a palavra que abre a frase.",
+      "learningObjective": "Reconhecer o marcador que introduz a condição do versículo.",
+      "evidence": [
+        "Números 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como o versículo 8 se relaciona com o versículo 7, em Números 5:7–8.",
+      "verseRef": "Números 5:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevê o que fazer quando não há um parente para receber a restituição"
+        },
+        {
+          "id": "b",
+          "text": "Cancela a obrigação de restituir, nesse caso"
+        },
+        {
+          "id": "c",
+          "text": "Transfere a culpa para o sacerdote, livrando quem pecou"
+        },
+        {
+          "id": "d",
+          "text": "Repete a mesma regra do versículo anterior, sem mudança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a restituição que ele fizer ao Senhor pela culpa será do sacerdote",
+      "feedbackCorrect": "O versículo 8 trata o caso particular de quem não tem a quem restituir.",
+      "feedbackWrong": {
+        "b": "A obrigação continua; só muda quem recebe.",
+        "c": "A culpa é de quem pecou; o sacerdote só recebe a restituição.",
+        "d": "O versículo 8 acrescenta um caso novo, não repete o 7."
+      },
+      "hint": "Pense no que muda quando não há parente.",
+      "learningObjective": "Relacionar o caso sem herdeiro à regra geral da restituição.",
+      "evidence": [
+        "Números 5:7–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a instrução em Números 5:6–8.",
+      "verseRef": "Números 5:6–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "O pecado contra alguém também ofende o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Quem pecou confessa e restitui com acréscimo"
+        },
+        {
+          "id": "c",
+          "text": "Sem herdeiro, a restituição vai ao sacerdote"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a restituição que ele fizer ao Senhor pela culpa será do sacerdote",
+      "feedbackCorrect": "Primeiro o pecado é nomeado, depois vem a restituição e, por fim, o caso sem herdeiro.",
+      "feedbackWrong": {
+        "default": "Comece pelo pecado contra o próximo; o caso sem herdeiro vem por último."
+      },
+      "hint": "O caso sem herdeiro é a exceção, por isso vem depois.",
+      "learningObjective": "Compreender o encadeamento da instrução sobre restituição.",
+      "evidence": [
+        "Números 5:7–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 5:8, sem parente para restituir, de quem é a restituição.",
+      "verseRef": "Números 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "levita"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será do sacerdote",
+      "feedbackCorrect": "Sem parente próximo, a restituição é entregue ao sacerdote.",
+      "feedbackWrong": {
+        "b": "O texto nomeia o sacerdote, não o profeta.",
+        "c": "O texto nomeia o sacerdote, não o levita."
+      },
+      "hint": "É quem recebe a restituição quando falta um parente.",
+      "learningObjective": "Lembrar quem recebe a restituição sem herdeiro.",
+      "evidence": [
+        "Números 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 5:7 a Levítico 6:5.",
+      "verseRef": "Números 5:7",
+      "passageA": {
+        "ref": "Números 5:7"
+      },
+      "passageB": {
+        "ref": "Levítico 6:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Restituir com um quinto"
+        },
+        {
+          "id": "b",
+          "text": "Proibir toda oferta"
+        },
+        {
+          "id": "c",
+          "text": "Sacrifício diário obrigatório"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farão a restituição integral acrescentando um quinto a essa quantia",
+      "feedbackCorrect": "Os dois textos exigem devolver o valor integral mais um quinto a mais.",
+      "feedbackWrong": {
+        "b": "O texto manda restituir a culpa, não proibir ofertas.",
+        "c": "Aqui a ponte é a restituição com o quinto."
+      },
+      "hint": "Compare o que os dois textos mandam acrescentar.",
+      "learningObjective": "Relacionar a regra da restituição entre Números e Levítico.",
+      "evidence": [
+        "Números 5:7",
+        "Levítico 6:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Números 5:6–7 sustenta que o pecado contra o próximo também é falta diante do Senhor, por isso pede confissão e reparo.",
+      "verseRef": "Números 5:6–7",
+      "correctOptionId": "true",
+      "evidenceSpan": "ofendendo ao SENHOR",
+      "feedbackCorrect": "O texto chama o pecado contra o próximo de ofensa ao Senhor, e exige confissão e restituição.",
+      "feedbackWrong": {
+        "false": "O texto liga o pecado contra o próximo à ofensa ao Senhor, com confissão e restituição."
+      },
+      "hint": "Veja a quem o pecado contra o próximo é atribuído.",
+      "learningObjective": "Interpretar a ligação entre a ofensa ao próximo e a ofensa a Deus.",
+      "evidence": [
+        "Números 5:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 5:7, toque a quem se deve restituir, afinal.",
+      "verseRef": "Números 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "àquele contra quem"
+        },
+        {
+          "id": "b",
+          "text": "a restituição integral"
+        },
+        {
+          "id": "c",
+          "text": "o pecado que"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e darão tudo àquele contra quem se tornaram culpados",
+      "feedbackCorrect": "O texto manda entregar tudo \"àquele contra quem\" a pessoa pecou.",
+      "feedbackWrong": {
+        "b": "Isso nomeia o valor devolvido, não a quem se devolve.",
+        "c": "Isso nomeia o que foi cometido, não a quem se restitui."
+      },
+      "hint": "Procure a quem a restituição é entregue, no fim do versículo.",
+      "learningObjective": "Sustentar com o texto que a restituição é dirigida à vítima.",
+      "evidence": [
+        "Números 5:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Números 5:6–7 sustenta sobre a culpa contra o próximo.",
+      "verseRef": "Números 5:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ofender o próximo também ofende o Senhor; por isso exige reparo"
+        },
+        {
+          "id": "b",
+          "text": "Pedir desculpa já resolve a culpa, sem precisar devolver nada"
+        },
+        {
+          "id": "c",
+          "text": "A culpa é assunto só entre as pessoas, sem relação com o Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Sem herdeiro, a dívida simplesmente desaparece"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farão a restituição integral acrescentando um quinto a essa quantia",
+      "feedbackCorrect": "O texto chama isso de ofensa ao Senhor e exige confissão com restituição.",
+      "feedbackWrong": {
+        "b": "O texto exige restituição integral mais um quinto, não só confissão.",
+        "c": "O texto nomeia o Senhor como ofendido, não só a pessoa.",
+        "d": "Sem herdeiro, a restituição vai ao sacerdote; não desaparece."
+      },
+      "hint": "Compare cada opção com o que o texto exige fazer.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a culpa contra o próximo.",
+      "evidence": [
+        "Números 5:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da restituição que começa em Números 5:7.",
+      "verseRef": "Números 5:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Lei manda restituir o dano com um quinto a mais"
+        },
+        {
+          "id": "b",
+          "text": "A mesma regra aparece em Levítico, sobre a culpa e a restituição"
+        },
+        {
+          "id": "c",
+          "text": "Zaqueu promete devolver muito mais do que tomou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "farão a restituição integral acrescentando um quinto a essa quantia",
+      "feedbackCorrect": "A regra de Números se repete em Levítico e floresce em Zaqueu, no Evangelho.",
+      "feedbackWrong": {
+        "default": "Siga a história: Números, Levítico e, por fim, Zaqueu em Lucas."
+      },
+      "hint": "Siga a ordem da história bíblica: Lei, Lei, Evangelho.",
+      "learningObjective": "Ver Números 5:7 como começo de um fio que atravessa a Bíblia.",
+      "evidence": [
+        "Números 5:7",
+        "Levítico 6:5",
+        "Lucas 19:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 5:7, o que a pessoa culpada faz com o pecado que cometeu.",
+      "verseRef": "Números 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "confessarão"
+        },
+        {
+          "id": "b",
+          "text": "esquecerão"
+        },
+        {
+          "id": "c",
+          "text": "ignorarão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E confessarão o pecado que cometeram",
+      "feedbackCorrect": "O texto começa pela confissão: reconhecer em voz alta o que foi feito.",
+      "feedbackWrong": {
+        "b": "O texto não fala em esquecer; fala em confessar.",
+        "c": "O texto não fala em ignorar; fala em confessar."
+      },
+      "hint": "É o primeiro passo que o texto exige, antes da restituição.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": [
+        "Números 5:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 5:7 a Lucas 19:8.",
+      "verseRef": "Números 5:7",
+      "passageA": {
+        "ref": "Números 5:7"
+      },
+      "passageB": {
+        "ref": "Lucas 19:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reparar o dano causado ao próximo"
+        },
+        {
+          "id": "b",
+          "text": "Pagar impostos ao governo romano"
+        },
+        {
+          "id": "c",
+          "text": "Perdoar sem exigir devolução"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farão a restituição integral acrescentando um quinto a essa quantia",
+      "feedbackCorrect": "Nos dois textos, reparar o próximo é mais do que devolver o exato: é devolver com sobra.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos trata de impostos; tratam de reparar o próximo.",
+        "c": "Os dois textos exigem devolução concreta, não só perdão."
+      },
+      "hint": "Compare o que cada um promete devolver a quem prejudicou.",
+      "learningObjective": "Ligar a restituição de Números ao gesto de Zaqueu no Evangelho.",
+      "evidence": [
+        "Números 5:7",
+        "Lucas 19:8"
+      ]
+    }
+  ]
+}

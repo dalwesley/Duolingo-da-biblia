@@ -1,0 +1,78 @@
+{
+  "slug": "tito-cap",
+  "title": "Tito",
+  "description": "Tito capítulo a capítulo: sã doutrina, boa conduta e a esperança da graça.",
+  "icon": "🏛️",
+  "color": "#1ABC9C",
+  "order": 69,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Doutrina que transforma · cap. 1–3",
+      "icon": "zap",
+      "section": "Tito",
+      "missions": [
+        {
+          "slug": "tic-01-repreender-com-firmeza",
+          "title": "Repreender com firmeza",
+          "subtitle": "Tito 1:10–16",
+          "intro": "Há muitos insubordinados e enganadores; a boca deles precisa ser fechada.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tito 1:10–16",
+          "hookVerse": "Pois existem muitos insubordinados, faladores fúteis e enganadores, especialmente os da circuncisão. É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza",
+          "hookNote": "Aos que são da circuncisão, repreende-os severamente, para que sejam sãos na fé.",
+          "centralInsight": "Aos que são da circuncisão, repreende-os severamente, para que sejam sãos na fé.",
+          "objective": "Guardar a sã doutrina"
+        },
+        {
+          "slug": "tic-02-ensinar-o-que-convem",
+          "title": "Ensinar o que convém",
+          "subtitle": "Tito 2:1–10",
+          "intro": "Paulo detalha o que convém a anciãos, jovens e servos na vida diária.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tito 2:1–10",
+          "hookVerse": "Você, porém, fale o que é adequado à sã doutrina. Que os homens mais velhos sejam sóbrios, respeitáveis, sensatos, saudáveis na fé, no amor e na constância.",
+          "hookNote": "A sã doutrina molda a conduta: para que a palavra de Deus não seja blasfemada.",
+          "centralInsight": "A sã doutrina molda a conduta: para que a palavra de Deus não seja blasfemada.",
+          "objective": "Viver o que se ensina"
+        },
+        {
+          "slug": "tic-03-salvos-pela-misericordia",
+          "title": "Salvos pela misericórdia",
+          "subtitle": "Tito 3:3–8",
+          "intro": "Outrora éramos loucos; agora a bondade de Deus nosso Salvador apareceu.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tito 3:3–8",
+          "hookVerse": "Porque também nós, em outro tempo, éramos insensatos, desobedientes, extraviados, escravos de diversas paixões e prazeres, vivendo em malícia e inveja, odiosos e odiando-nos uns aos outros. Mas quando se manifestaram a benignidade e o amor de Deus, nosso Salvador, para com todos os seres humanos,",
+          "hookNote": "Não por obras de justiça, mas segundo a sua misericórdia ele nos salvou pelo lavar regenerador.",
+          "centralInsight": "Não por obras de justiça, mas segundo a sua misericórdia ele nos salvou pelo lavar regenerador.",
+          "objective": "Confiar na misericórdia"
+        },
+        {
+          "slug": "tic-boss-1",
+          "title": "Travessia: Doutrina que transforma",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a firmeza doutrinária, a conduta que convém e a salvação pela misericórdia.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Doutrina que transforma",
+          "hookVerse": "Revise a firmeza doutrinária, a conduta que convém e a salvação pela misericórdia.",
+          "hookNote": "Revise a firmeza doutrinária, a conduta que convém e a salvação pela misericórdia.",
+          "centralInsight": "A sã doutrina nasce da misericórdia e muda a vida",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

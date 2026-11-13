@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Lucas 14:19–24",
+    "passages": [
+      { "ref": "Lucas 14:19–24" },
+      { "ref": "Lucas 14:15–18" }
+    ],
+    "context": "Jesus está à mesa. Um dos presentes declara feliz quem comer pão no reino de Deus. Em resposta, Jesus conta de um homem que prepara uma grande ceia e manda chamar os convidados na hora.",
+    "keyword": "ceia",
+    "keywordGloss": "Refeição grande já preparada, da qual só participa quem aceita o chamado e entra.",
+    "focusQuestion": "Quando um convite importante chega, que desculpa você coloca na frente?",
+    "reflectionPrompts": [
+      "A ceia já preparada",
+      "Desculpas em uníssono",
+      "Ainda há espaço"
+    ],
+    "facts": [
+      {
+        "text": "Um dos que estavam à mesa declara abençoado quem comer pão no reino de Deus.",
+        "evidenceRef": "Lucas 14:15",
+        "evidenceSpan": "Abençoado é aquele que comer pão no reino de Deus"
+      },
+      {
+        "text": "Um homem preparou uma grande ceia e convidou muitas pessoas.",
+        "evidenceRef": "Lucas 14:16",
+        "evidenceSpan": "preparou uma grande ceia e convidou muitas pessoas"
+      },
+      {
+        "text": "Todos, em uníssono, começaram a se desculpar.",
+        "evidenceRef": "Lucas 14:18",
+        "evidenceSpan": "todos, em uníssono, começaram a se desculpar"
+      },
+      {
+        "text": "O dono, irado, manda trazer os pobres, os aleijados, os cegos e os coxos.",
+        "evidenceRef": "Lucas 14:21",
+        "evidenceSpan": "traga para aqui os pobres, os aleijados, os cegos e os coxos"
+      },
+      {
+        "text": "O servo diz que ainda há espaço.",
+        "evidenceRef": "Lucas 14:22",
+        "evidenceSpan": "ainda há espaço"
+      },
+      {
+        "text": "Nenhum dos homens que foram convidados provará a ceia.",
+        "evidenceRef": "Lucas 14:24",
+        "evidenceSpan": "nenhum daqueles homens que foram convidados provará a minha ceia"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ceia",
+        "gloss": "A refeição grande que o homem prepara e que os primeiros acabam não provando."
+      },
+      {
+        "term": "escusado",
+        "gloss": "Pedido para ser dispensado; é com essa palavra que os convidados recusam a ceia."
+      },
+      {
+        "term": "convidados",
+        "gloss": "Os chamados primeiro, que se desculpam e depois ficam de fora da ceia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ceia pronta é oferecida aos convidados",
+        "evidenceRef": "Lucas 14:16–17"
+      },
+      {
+        "label": "Os convidados se desculpam em uníssono",
+        "evidenceRef": "Lucas 14:18–20"
+      },
+      {
+        "label": "O dono busca outros até encher a casa",
+        "evidenceRef": "Lucas 14:21–23"
+      },
+      {
+        "label": "Nenhum dos primeiros prova a ceia",
+        "evidenceRef": "Lucas 14:24"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O servo chama os convidados porque a ceia já está preparada.",
+        "marker": "pois",
+        "evidenceRef": "Lucas 14:17"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois das desculpas, o dono irado manda buscar outra gente.",
+        "marker": "Então",
+        "evidenceRef": "Lucas 14:21"
+      },
+      {
+        "kind": "propósito",
+        "text": "O senhor manda convencer todos a entrar com o fim de encher a casa.",
+        "marker": "para",
+        "evidenceRef": "Lucas 14:23"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 14:13", "bridge": "Pobres chamados ao banquete" },
+      { "ref": "Mateus 22:9", "bridge": "Convite segue pelos caminhos" },
+      { "ref": "Lucas 13:29", "bridge": "Gente à mesa no reino" }
+    ],
+    "misreadings": [
+      {
+        "text": "As desculpas dos convidados são impedimentos legítimos que o dono aceita.",
+        "why": "Todos se desculpam em uníssono, e o dono fica irado; ele não trata as desculpas como motivo válido."
+      },
+      {
+        "text": "Diante da recusa, o dono cancela a ceia.",
+        "why": "Ele manda o servo às ruas e aos caminhos para que a casa se encha."
+      },
+      {
+        "text": "Os primeiros convidados ainda entram, porque foram chamados antes.",
+        "why": "O senhor declara que nenhum daqueles homens que foram convidados provará a ceia."
+      }
+    ],
+    "centralInsight": "O convite do Reino é para todos, e a casa se enche de quem foi buscado nas ruas.",
+    "anchorQuestion": "O que acontece com os primeiros convidados no fim da história?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 14:18, apenas o primeiro convidado começou a se desculpar.",
+      "verseRef": "Lucas 14:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "todos, em uníssono, começaram a se desculpar",
+      "feedbackCorrect": "O versículo abre com todos se desculpando juntos, não só o primeiro.",
+      "feedbackWrong": {
+        "true": "A fala do primeiro vem depois; antes, todos começam a se desculpar."
+      },
+      "hint": "Leia a primeira frase, antes da fala do primeiro.",
+      "learningObjective": "Observar que a recusa começa pelo grupo inteiro, não por um só.",
+      "evidence": ["Lucas 14:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 14:16, toque o que o homem preparou.",
+      "verseRef": "Lucas 14:16",
+      "options": [
+        { "id": "a", "text": "muitas pessoas" },
+        { "id": "b", "text": "grande ceia" },
+        { "id": "c", "text": "certo homem" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "preparou uma grande ceia",
+      "feedbackCorrect": "O homem prepara uma grande ceia; as pessoas são quem ele convida.",
+      "feedbackWrong": {
+        "a": "Muitas pessoas são os convidados, não o que foi preparado.",
+        "c": "O homem é quem prepara a ceia, não o que ele prepara."
+      },
+      "hint": "Procure o objeto do verbo preparou.",
+      "learningObjective": "Identificar o que o homem prepara antes de chamar os convidados.",
+      "evidence": ["Lucas 14:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 14:21, quem o dono manda trazer para a casa?",
+      "verseRef": "Lucas 14:21",
+      "options": [
+        { "id": "a", "text": "Amigos, irmãos e vizinhos ricos" },
+        { "id": "b", "text": "Gente pobre, aleijada, cega e coxa" },
+        { "id": "c", "text": "Somente quem preparou a ceia na casa" },
+        { "id": "d", "text": "Os três que deram desculpas antes" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os pobres, os aleijados, os cegos e os coxos",
+      "feedbackCorrect": "Irado, o dono manda trazer pobres, aleijados, cegos e coxos.",
+      "feedbackWrong": {
+        "a": "Amigos e vizinhos ricos não são o grupo desta ordem.",
+        "c": "O servo é quem sai; ele não é o grupo a ser trazido.",
+        "d": "Esses três se desculparam; a nova ordem busca outra gente."
+      },
+      "hint": "Olhe a lista no fim da ordem do dono.",
+      "learningObjective": "Reconhecer quem o dono manda trazer depois das desculpas.",
+      "evidence": ["Lucas 14:21"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 14:18 na ordem do texto.",
+      "verseRef": "Lucas 14:18",
+      "options": [
+        { "id": "a", "text": "E todos, em uníssono, começaram a se desculpar" },
+        { "id": "b", "text": "O primeiro disse: Comprei um campo" },
+        { "id": "c", "text": "rogo-te que me tenhas por escusado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "todos, em uníssono, começaram a se desculpar",
+      "feedbackCorrect": "A frase vai do grupo inteiro à fala do primeiro e ao pedido final.",
+      "feedbackWrong": {
+        "default": "Comece por todos se desculpando; o pedido de escusa fecha o verso."
+      },
+      "hint": "O versículo começa pelo grupo, não pela compra do campo.",
+      "learningObjective": "Reconhecer a sequência da recusa em Lucas 14:18.",
+      "evidence": ["Lucas 14:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 14:17, qual palavra descreve o estado de tudo na hora?",
+      "verseRef": "Lucas 14:17",
+      "options": [
+        { "id": "a", "text": "adiado" },
+        { "id": "b", "text": "preparado" },
+        { "id": "c", "text": "cancelado" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tudo já está preparado",
+      "feedbackCorrect": "O servo anuncia que tudo já está preparado na hora da ceia.",
+      "feedbackWrong": {
+        "a": "Nada no versículo fala em adiamento; a ceia já está pronta.",
+        "c": "A ceia não é cancelada; o servo diz que tudo já está pronto."
+      },
+      "hint": "Ouça o aviso do servo sobre a ceia naquela hora.",
+      "learningObjective": "Lembrar que a ceia já está pronta quando o servo chama.",
+      "evidence": ["Lucas 14:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 14:22 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 14:22",
+      "passageA": { "ref": "Lucas 14:22" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A casa ainda comporta gente depois da busca nas ruas."
+      },
+      "options": [
+        { "id": "a", "text": "A ceia já acabou" },
+        { "id": "b", "text": "Ainda sobra espaço" },
+        { "id": "c", "text": "Os primeiros já vieram" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ainda há espaço",
+      "feedbackCorrect": "O servo informa que ainda há espaço: a casa comporta mais gente.",
+      "feedbackWrong": {
+        "a": "O aviso do servo é o contrário de uma ceia encerrada.",
+        "c": "Quem se desculpou não veio; sobra lugar por isso."
+      },
+      "hint": "Ouça o que o servo diz ao voltar da cidade.",
+      "learningObjective": "Ligar o aviso do servo ao fato de que a casa ainda cabe mais gente.",
+      "evidence": ["Lucas 14:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 14:23, o senhor manda convencer todos a entrar para a casa se encher.",
+      "verseRef": "Lucas 14:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que a minha casa se encha",
+      "feedbackCorrect": "O fim da ordem revela o propósito: a casa deve se encher.",
+      "feedbackWrong": {
+        "false": "Releia o fim: convencer todos a entrar tem a casa cheia como fim."
+      },
+      "hint": "A finalidade aparece na última parte da ordem.",
+      "learningObjective": "Compreender o propósito da ordem de convencer todos a entrar.",
+      "evidence": ["Lucas 14:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 14:21, toque o que marca a virada para a nova ordem.",
+      "verseRef": "Lucas 14:21",
+      "options": [
+        { "id": "a", "text": "irado" },
+        { "id": "b", "text": "ao voltar" },
+        { "id": "c", "text": "Então" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Então, o dono da casa, irado",
+      "feedbackCorrect": "Então marca a virada: depois do relato, o dono dá nova ordem.",
+      "feedbackWrong": {
+        "a": "Irado descreve o dono; a virada da ordem vem na palavra anterior.",
+        "b": "Ao voltar situa o servo; a nova ordem é introduzida em seguida."
+      },
+      "hint": "Procure a palavra curta entre o relato do servo e a ordem.",
+      "learningObjective": "Reconhecer o marcador que introduz a nova ordem do dono.",
+      "evidence": ["Lucas 14:21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que Lucas 14:24 mostra sobre os homens que recusaram o convite?",
+      "verseRef": "Lucas 14:24",
+      "options": [
+        { "id": "a", "text": "Eles provam a ceia quando sobra lugar" },
+        { "id": "b", "text": "Nenhum deles chega a provar a ceia" },
+        { "id": "c", "text": "O servo volta e aceita as desculpas" },
+        { "id": "d", "text": "Eles entram depois da gente das ruas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "nenhum daqueles homens que foram convidados provará a minha ceia",
+      "feedbackCorrect": "O senhor declara que nenhum daqueles homens provará a ceia.",
+      "feedbackWrong": {
+        "a": "O texto não promete ceia a eles quando sobra lugar.",
+        "c": "O servo não volta para aceitar desculpas; a ceia segue sem eles.",
+        "d": "Eles não entram depois; o senhor diz que não provarão a ceia."
+      },
+      "hint": "Leia a declaração final sobre os homens convidados.",
+      "learningObjective": "Compreender o resultado da recusa para os primeiros convidados.",
+      "evidence": ["Lucas 14:24"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da história em Lucas 14?",
+      "verseRef": "Lucas 14:16–17",
+      "options": [
+        { "id": "a", "text": "A ceia pronta é oferecida aos convidados" },
+        { "id": "b", "text": "Os convidados se desculpam em uníssono" },
+        { "id": "c", "text": "O dono busca outros até encher a casa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "preparou uma grande ceia e convidou muitas pessoas",
+      "feedbackCorrect": "A história passa da ceia oferecida às desculpas e à busca de outros.",
+      "feedbackWrong": {
+        "default": "Comece pela ceia oferecida; a busca de outros vem no fim."
+      },
+      "hint": "O primeiro movimento é a ceia; o último é encher a casa.",
+      "learningObjective": "Compreender os três movimentos principais da história.",
+      "evidence": ["Lucas 14:16–17", "Lucas 14:18–20", "Lucas 14:21–23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 14:23, o que deve ocorrer com a casa no fim da ordem?",
+      "verseRef": "Lucas 14:23",
+      "options": [
+        { "id": "a", "text": "encha" },
+        { "id": "b", "text": "feche" },
+        { "id": "c", "text": "esvazie" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a minha casa se encha",
+      "feedbackCorrect": "O propósito da ordem é que a casa se encha de gente.",
+      "feedbackWrong": {
+        "b": "O senhor não manda fechar a casa; manda que ela fique cheia.",
+        "c": "O movimento é lotar a casa, não esvaziá-la."
+      },
+      "hint": "Veja o verbo no fim, sobre o que a casa deve fazer.",
+      "learningObjective": "Lembrar o verbo que carrega o propósito da nova ordem.",
+      "evidence": ["Lucas 14:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 14:21 a Lucas 14:13?",
+      "verseRef": "Lucas 14:21",
+      "passageA": { "ref": "Lucas 14:21" },
+      "passageB": { "ref": "Lucas 14:13" },
+      "options": [
+        { "id": "a", "text": "Ricos ocupam a mesa" },
+        { "id": "b", "text": "Desculpas encerram a festa" },
+        { "id": "c", "text": "Pobres chamados ao banquete" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "os pobres, os aleijados, os cegos e os coxos",
+      "feedbackCorrect": "Jesus já mandou chamar os pobres ao banquete; o dono faz isso.",
+      "feedbackWrong": {
+        "a": "O elo não é os ricos à mesa; Jesus manda chamar os pobres.",
+        "b": "As desculpas não ligam os dois versos; o elo é quem é chamado."
+      },
+      "hint": "Compare a lista de Lucas 14:13 com a ordem do dono.",
+      "learningObjective": "Relacionar a ordem do dono ao que Jesus acabou de ensinar.",
+      "evidence": ["Lucas 14:21", "Lucas 14:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 14:24, os homens do primeiro convite ainda provarão a ceia.",
+      "verseRef": "Lucas 14:24",
+      "correctOptionId": "false",
+      "evidenceSpan": "nenhum daqueles homens que foram convidados provará a minha ceia",
+      "feedbackCorrect": "O senhor é direto: nenhum daqueles homens provará a ceia.",
+      "feedbackWrong": {
+        "true": "O versículo nega isso: nenhum dos convidados provará a ceia."
+      },
+      "hint": "Leia o que o senhor declara sobre aqueles homens.",
+      "learningObjective": "Rejeitar a leitura de que os primeiros ainda participam da ceia.",
+      "evidence": ["Lucas 14:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 14:23, toque o que o senhor quer ver cheio.",
+      "verseRef": "Lucas 14:23",
+      "options": [
+        { "id": "a", "text": "minha casa" },
+        { "id": "b", "text": "o senhor" },
+        { "id": "c", "text": "pelos caminhos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que a minha casa se encha",
+      "feedbackCorrect": "O senhor quer a própria casa cheia; esse é o fim da ordem.",
+      "feedbackWrong": {
+        "b": "O senhor é quem ordena, não o que deve ficar cheio.",
+        "c": "Os caminhos são o trajeto do servo, não o que se enche."
+      },
+      "hint": "Olhe o fim da frase, o lugar que deve ficar cheio.",
+      "learningObjective": "Localizar no texto o que sustenta a leitura de uma casa cheia.",
+      "evidence": ["Lucas 14:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 14:23–24 sustenta sobre a ceia?",
+      "verseRef": "Lucas 14:23–24",
+      "options": [
+        { "id": "a", "text": "A casa se enche com quem foi buscado fora" },
+        { "id": "b", "text": "A recusa dos primeiros encerra a ceia" },
+        { "id": "c", "text": "Só os primeiros chamados provam a ceia" },
+        { "id": "d", "text": "As desculpas obrigam o dono a esperar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que a minha casa se encha",
+      "feedbackCorrect": "A casa se enche com quem foi buscado; os primeiros ficam de fora.",
+      "feedbackWrong": {
+        "b": "A recusa não encerra a ceia; o dono manda encher a casa.",
+        "c": "O texto diz o contrário: os primeiros não provarão a ceia.",
+        "d": "O dono não espera; irado, manda buscar outra gente logo."
+      },
+      "hint": "Compare cada leitura com o fim da ordem e com a declaração.",
+      "learningObjective": "Escolher a leitura que o desfecho da história sustenta.",
+      "evidence": ["Lucas 14:23–24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica segue o relato até a casa ficar cheia?",
+      "verseRef": "Lucas 14:23–24",
+      "options": [
+        { "id": "a", "text": "A ceia está pronta e o chamado sai" },
+        { "id": "b", "text": "Quem foi chamado primeiro se recusa" },
+        { "id": "c", "text": "Quem foi buscado depois enche a casa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "para que a minha casa se encha",
+      "feedbackCorrect": "O chamado sai, os primeiros recusam, e outros enchem a casa.",
+      "feedbackWrong": {
+        "default": "Siga o argumento: chamado, recusa, casa cheia com outros."
+      },
+      "hint": "A recusa fica no meio; a casa cheia é o desfecho.",
+      "learningObjective": "Acompanhar a lógica do convite recusado até a casa cheia.",
+      "evidence": ["Lucas 14:16–17", "Lucas 14:18–20", "Lucas 14:23–24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 14:24, que palavra nomeia os homens que ficam de fora?",
+      "verseRef": "Lucas 14:24",
+      "options": [
+        { "id": "a", "text": "servos" },
+        { "id": "b", "text": "vizinhos" },
+        { "id": "c", "text": "convidados" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "homens que foram convidados",
+      "feedbackCorrect": "Convidados nomeia os primeiros, e nenhum deles provará a ceia.",
+      "feedbackWrong": {
+        "a": "O servo obedece; quem fica de fora são os que foram chamados.",
+        "b": "O texto não fala de vizinhos aqui; fala dos que foram chamados."
+      },
+      "hint": "É o particípio que qualifica aqueles homens.",
+      "learningObjective": "Lembrar o termo que nomeia quem fica de fora da ceia.",
+      "evidence": ["Lucas 14:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 14:23 a Mateus 22:9?",
+      "verseRef": "Lucas 14:23",
+      "passageA": { "ref": "Lucas 14:23" },
+      "passageB": { "ref": "Mateus 22:9" },
+      "options": [
+        { "id": "a", "text": "Convite sai aos caminhos" },
+        { "id": "b", "text": "Festa restrita aos dignos" },
+        { "id": "c", "text": "Casa fechada aos demais" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelos caminhos e atalhos",
+      "feedbackCorrect": "Os dois mandam ir aos caminhos e chamar quem estiver por lá.",
+      "feedbackWrong": {
+        "b": "Nenhum dos dois restringe a festa a um grupo especial; o elo é o chamado.",
+        "c": "Os dois abrem o chamado a quem está fora; nenhum fecha a casa."
+      },
+      "hint": "Veja para onde os servos são enviados nos dois textos.",
+      "learningObjective": "Ligar a ordem de Lucas ao envio dos servos em Mateus.",
+      "evidence": ["Lucas 14:23", "Mateus 22:9"]
+    }
+  ]
+}

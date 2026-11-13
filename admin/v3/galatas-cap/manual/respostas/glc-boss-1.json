@@ -1,0 +1,916 @@
+{
+  "study": {
+    "passageRef": "Gálatas 1:13–18",
+    "passages": [
+      {
+        "ref": "Gálatas 1:13–21"
+      },
+      {
+        "ref": "Gálatas 2:15–21"
+      },
+      {
+        "ref": "Gálatas 3:1–7"
+      }
+    ],
+    "context": "Esta Travessia revisa o chamado de Paulo pela graça, a justificação pela fé e o começo no Espírito pela pregação da fé.",
+    "keyword": "fé",
+    "keywordGloss": "Confiança em Cristo pela qual vem o chamado, a justificação e o Espírito.",
+    "focusQuestion": "Em qual destas três cenas você mais precisa lembrar a graça hoje?",
+    "reflectionPrompts": [
+      "Chamado pela graça",
+      "Justificados pela fé",
+      "Começo no Espírito"
+    ],
+    "facts": [
+      {
+        "text": "Paulo perseguia intensamente a igreja de Deus.",
+        "evidenceRef": "Gálatas 1:13",
+        "evidenceSpan": "eu perseguia intensamente a igreja de Deus e a devastava"
+      },
+      {
+        "text": "Deus o chamou pela sua graça e revelou o Filho nele.",
+        "evidenceRef": "Gálatas 1:15",
+        "evidenceSpan": "me chamou pela sua graça"
+      },
+      {
+        "text": "O homem não é justificado por obras da lei, mas pela fé.",
+        "evidenceRef": "Gálatas 2:16",
+        "evidenceSpan": "não é justificado por obras da lei, mas sim pela fé em Cristo Jesus"
+      },
+      {
+        "text": "Paulo está crucificado com Cristo; Cristo vive nele.",
+        "evidenceRef": "Gálatas 2:20",
+        "evidenceSpan": "Cristo vive em mim"
+      },
+      {
+        "text": "Receberam o Espírito pela pregação da fé.",
+        "evidenceRef": "Gálatas 3:2",
+        "evidenceSpan": "pela pregação da fé"
+      },
+      {
+        "text": "Os que têm fé são filhos de Abraão.",
+        "evidenceRef": "Gálatas 3:7",
+        "evidenceSpan": "os que têm fé são filhos de Abraão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "graça",
+        "gloss": "Favor pelo qual Deus chama Paulo."
+      },
+      {
+        "term": "fé",
+        "gloss": "Meio da justificação e do recebimento do Espírito."
+      },
+      {
+        "term": "Espírito",
+        "gloss": "Início da vida cristã pela pregação da fé."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado pela graça, sem consulta a homens",
+        "evidenceRef": "Gálatas 1:15–16"
+      },
+      {
+        "label": "Justificados pela fé, não pela lei",
+        "evidenceRef": "Gálatas 2:16"
+      },
+      {
+        "label": "Começaram no Espírito pela fé",
+        "evidenceRef": "Gálatas 3:2–3"
+      },
+      {
+        "label": "Filhos de Abraão pela fé",
+        "evidenceRef": "Gálatas 3:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não por obras da lei, mas pela fé em Cristo.",
+        "marker": "mas",
+        "evidenceRef": "Gálatas 2:16"
+      },
+      {
+        "kind": "propósito",
+        "text": "Revelar o Filho para pregar entre os gentios.",
+        "marker": "para que",
+        "evidenceRef": "Gálatas 1:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Começaram pelo Espírito e agora se aperfeiçoam na carne.",
+        "marker": "agora",
+        "evidenceRef": "Gálatas 3:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 3:28",
+        "bridge": "Justificados pela fé"
+      },
+      {
+        "ref": "Gênesis 15:6",
+        "bridge": "Abraão creu"
+      },
+      {
+        "ref": "Atos 9:15",
+        "bridge": "Escolhido para os gentios"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo aprendeu o evangelho logo com os apóstolos em Jerusalém.",
+        "why": "Ele não consultou carne e sangue e só foi depois de três anos."
+      },
+      {
+        "text": "A justificação mistura fé e obras da lei.",
+        "why": "Nenhuma carne é justificada por obras da lei."
+      },
+      {
+        "text": "Terminar na carne aperfeiçoa o começo no Espírito.",
+        "why": "Paulo chama isso de insensatez."
+      }
+    ],
+    "centralInsight": "O evangelho justifica pela fé e começa pelo Espírito",
+    "anchorQuestion": "Segundo o bloco, por que o homem é justificado e como começa a vida cristã?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Gálatas 2:16, o homem não é justificado por obras da lei, mas pela fé em Cristo Jesus.",
+      "verseRef": "Gálatas 2:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "não é justificado por obras da lei, mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "A justificação é pela fé, não pelas obras.",
+      "feedbackWrong": {
+        "false": "Releia o contraste do versículo."
+      },
+      "hint": "Olhe o mas sim.",
+      "learningObjective": "Relembrar a justificação pela fé.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 1:16, toque a quem Paulo deveria pregar.",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "gentios"
+        },
+        {
+          "id": "b",
+          "text": "Filho"
+        },
+        {
+          "id": "c",
+          "text": "sangue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pregasse entre os gentios",
+      "feedbackCorrect": "O alvo da pregação são os gentios.",
+      "feedbackWrong": {
+        "b": "Filho é quem foi revelado.",
+        "c": "Sangue aparece na recusa de consulta."
+      },
+      "hint": "Veja o público da pregação.",
+      "learningObjective": "Identificar o público dos gentios.",
+      "evidence": [
+        "Gálatas 1:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gálatas 3:7, quem são filhos de Abraão?",
+      "verseRef": "Gálatas 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os que têm fé"
+        },
+        {
+          "id": "b",
+          "text": "Só os da lei"
+        },
+        {
+          "id": "c",
+          "text": "Os da carne"
+        },
+        {
+          "id": "d",
+          "text": "Os sem Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "A filiação a Abraão é pela fé.",
+      "feedbackWrong": {
+        "b": "A lei não define os filhos aqui.",
+        "c": "Carne é o erro.",
+        "d": "O Espírito veio pela fé."
+      },
+      "hint": "Leia a conclusão.",
+      "learningObjective": "Relembrar os filhos de Abraão.",
+      "evidence": [
+        "Gálatas 3:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 2:20 na ordem do texto.",
+      "verseRef": "Gálatas 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estou crucificado com Cristo"
+        },
+        {
+          "id": "b",
+          "text": "não sou eu quem vive, mas Cristo vive em mim"
+        },
+        {
+          "id": "c",
+          "text": "vivo-a pela fé no Filho de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cristo vive em mim",
+      "feedbackCorrect": "Cruz, Cristo vive e então a fé.",
+      "feedbackWrong": {
+        "default": "Comece pela cruz com Cristo."
+      },
+      "hint": "Siga a ordem do versículo.",
+      "learningObjective": "Seguir a ordem de 2:20.",
+      "evidence": [
+        "Gálatas 2:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gálatas 1:15, complete: me chamou pela sua ___.",
+      "verseRef": "Gálatas 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "graça"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me chamou pela sua graça",
+      "feedbackCorrect": "O chamado é pela graça.",
+      "feedbackWrong": {
+        "b": "Lei não chama Paulo aqui.",
+        "c": "Carne é o erro de 3:3."
+      },
+      "hint": "Veja o meio do chamado.",
+      "learningObjective": "Lembrar a graça do chamado.",
+      "evidence": [
+        "Gálatas 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gálatas 3:2 comunica que se liga a este contexto?",
+      "verseRef": "Gálatas 3:2",
+      "passageA": {
+        "ref": "Gálatas 3:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O evangelho justifica pela fé e começa pelo Espírito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito pela pregação da fé"
+        },
+        {
+          "id": "b",
+          "text": "Justificados pela lei"
+        },
+        {
+          "id": "c",
+          "text": "Consulta a Jerusalém logo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela pregação da fé",
+      "feedbackCorrect": "O Espírito veio pela pregação da fé.",
+      "feedbackWrong": {
+        "b": "A lei não justifica.",
+        "c": "Paulo não consultou logo Jerusalém."
+      },
+      "hint": "Ligue o Espírito ao tema do bloco.",
+      "learningObjective": "Ligar o contexto ao Espírito pela fé.",
+      "evidence": [
+        "Gálatas 3:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 2:20, toque quem vive em Paulo.",
+      "verseRef": "Gálatas 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo"
+        },
+        {
+          "id": "b",
+          "text": "carne"
+        },
+        {
+          "id": "c",
+          "text": "lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cristo vive em mim",
+      "feedbackCorrect": "Cristo vive nele.",
+      "feedbackWrong": {
+        "b": "Carne é o lugar da vida atual.",
+        "c": "Lei é o caminho rejeitado."
+      },
+      "hint": "Veja o sujeito depois de mas.",
+      "learningObjective": "Identificar quem vive nele.",
+      "evidence": [
+        "Gálatas 2:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 3:2–3 na ordem do texto.",
+      "verseRef": "Gálatas 3:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "receberam o Espírito pelas obras da lei ou pela pregação da fé"
+        },
+        {
+          "id": "b",
+          "text": "tendo começado pelo Espírito"
+        },
+        {
+          "id": "c",
+          "text": "agora estão se aperfeiçoando na carne"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tendo começado pelo Espírito",
+      "feedbackCorrect": "Pergunta, começo e então a carne.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta do Espírito."
+      },
+      "hint": "Siga de 3:2 a 3:3.",
+      "learningObjective": "Seguir a ordem do começo no Espírito.",
+      "evidence": [
+        "Gálatas 3:2–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gálatas 2:16, o contraste mostra que a justificação vem pelas obras da lei.",
+      "verseRef": "Gálatas 2:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "O mas aponta para a fé, não para as obras.",
+      "feedbackWrong": {
+        "true": "O contraste é pela fé."
+      },
+      "hint": "Olhe o que vem depois de mas.",
+      "learningObjective": "Ver o contraste da justificação.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 2:16, toque a palavra que marca o contraste com as obras.",
+      "verseRef": "Gálatas 2:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "homem"
+        },
+        {
+          "id": "c",
+          "text": "obras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "O mas introduz a fé.",
+      "feedbackWrong": {
+        "b": "Homem é quem é justificado.",
+        "c": "Obras é o caminho rejeitado."
+      },
+      "hint": "Procure a conjunção da alternativa.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Gálatas 1:16 estabelece entre revelação e missão?",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A revelação tem o propósito de pregar aos gentios"
+        },
+        {
+          "id": "b",
+          "text": "A revelação manda consultar logo Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "A revelação confirma o zelo da lei"
+        },
+        {
+          "id": "d",
+          "text": "A revelação encerra a fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu o pregasse entre os gentios",
+      "feedbackCorrect": "O para que liga revelação e missão.",
+      "feedbackWrong": {
+        "b": "Ele não consultou carne e sangue.",
+        "c": "O zelo é o passado.",
+        "d": "A fé continua."
+      },
+      "hint": "Leia a finalidade.",
+      "learningObjective": "Relacionar revelação e missão.",
+      "evidence": [
+        "Gálatas 1:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "Gálatas 1:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado pela graça, sem consulta a homens"
+        },
+        {
+          "id": "b",
+          "text": "Justificados pela fé, não pela lei"
+        },
+        {
+          "id": "c",
+          "text": "Começaram no Espírito pela fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "me chamou pela sua graça",
+      "feedbackCorrect": "Chamado, justificação e então o Espírito.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "hint": "Pense no fluxo do bloco.",
+      "learningObjective": "Ordenar o argumento do bloco.",
+      "evidence": [
+        "Gálatas 1:15–16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gálatas 3:3, complete: se aperfeiçoando na ___.",
+      "verseRef": "Gálatas 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "carne"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se aperfeiçoando na carne",
+      "feedbackCorrect": "Carne nomeia o aperfeiçoamento errado.",
+      "feedbackWrong": {
+        "b": "Fé é o caminho certo.",
+        "c": "Graça é o chamado."
+      },
+      "hint": "Veja o oposto do Espírito.",
+      "learningObjective": "Lembrar a palavra do contraste.",
+      "evidence": [
+        "Gálatas 3:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gálatas 2:16 a Romanos 3:28?",
+      "verseRef": "Gálatas 2:16",
+      "passageA": {
+        "ref": "Gálatas 2:16"
+      },
+      "passageB": {
+        "ref": "Romanos 3:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justificados pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Consulta a Pedro"
+        },
+        {
+          "id": "c",
+          "text": "Aperfeiçoar na carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela fé nele",
+      "feedbackCorrect": "Ambos afirmam justificação pela fé.",
+      "feedbackWrong": {
+        "b": "Pedro é visita tardia.",
+        "c": "Carne é o erro."
+      },
+      "hint": "Compare o meio da justificação.",
+      "learningObjective": "Ligar a justificação pela fé.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 3:3, toque a palavra que marca a virada para a carne.",
+      "verseRef": "Gálatas 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "agora"
+        },
+        {
+          "id": "b",
+          "text": "Espírito"
+        },
+        {
+          "id": "c",
+          "text": "insensatos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora estão se aperfeiçoando na carne",
+      "feedbackCorrect": "O agora marca a virada.",
+      "feedbackWrong": {
+        "b": "Espírito é o começo.",
+        "c": "Insensatos nomeia os leitores."
+      },
+      "hint": "Procure o advérbio da mudança.",
+      "learningObjective": "Tocar o marcador da virada.",
+      "evidence": [
+        "Gálatas 3:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da união com Cristo.",
+      "verseRef": "Gálatas 2:19–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Morreu para a lei a fim de viver para Deus"
+        },
+        {
+          "id": "b",
+          "text": "Crucificado com Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Cristo vive; vida pela fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Estou crucificado com Cristo",
+      "feedbackCorrect": "Morte para a lei, cruz e então Cristo vive.",
+      "feedbackWrong": {
+        "default": "Comece pela morte para a lei."
+      },
+      "hint": "Siga 2:19–20.",
+      "learningObjective": "Ordenar a união com Cristo.",
+      "evidence": [
+        "Gálatas 2:19–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Gálatas 3:2–3, terminar na carne aperfeiçoa o começo no Espírito.",
+      "verseRef": "Gálatas 3:2–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "tendo começado pelo Espírito, agora estão se aperfeiçoando na carne",
+      "feedbackCorrect": "Paulo chama isso de insensatez.",
+      "feedbackWrong": {
+        "true": "O texto critica o aperfeiçoamento na carne."
+      },
+      "hint": "Leia o tom de 3:3.",
+      "learningObjective": "Avaliar a leitura errada do progresso.",
+      "evidence": [
+        "Gálatas 3:2–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 1:16, toque o trecho que sustenta a independência do evangelho.",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "não consultei"
+        },
+        {
+          "id": "b",
+          "text": "seu Filho"
+        },
+        {
+          "id": "c",
+          "text": "sem detença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não consultei carne e sangue",
+      "feedbackCorrect": "Não consultei sustenta a independência.",
+      "feedbackWrong": {
+        "b": "Filho é quem foi revelado.",
+        "c": "Sem detença fala de prontidão."
+      },
+      "hint": "Veja a negação sobre carne e sangue.",
+      "learningObjective": "Tocar o trecho da independência.",
+      "evidence": [
+        "Gálatas 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura o bloco sustenta melhor?",
+      "verseRef": "Gálatas 2:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado, justificação e Espírito vêm pela graça e pela fé"
+        },
+        {
+          "id": "b",
+          "text": "A lei completa a fé"
+        },
+        {
+          "id": "c",
+          "text": "Jerusalém inventou o evangelho de Paulo"
+        },
+        {
+          "id": "d",
+          "text": "A carne aperfeiçoa o Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "Graça e fé percorrem chamado, justificação e Espírito.",
+      "feedbackWrong": {
+        "b": "A lei não justifica.",
+        "c": "Paulo não consultou logo.",
+        "d": "Carne é insensatez."
+      },
+      "hint": "Una graça, fé e Espírito.",
+      "learningObjective": "Escolher a interpretação do bloco.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do evangelho no bloco.",
+      "verseRef": "Gálatas 3:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus chama pela graça e revela o Filho"
+        },
+        {
+          "id": "b",
+          "text": "Justiça vem pela fé em Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Espírito pela fé; filhos de Abraão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "Chamado, justificação e então filiação pela fé.",
+      "feedbackWrong": {
+        "default": "A filiação fecha o fio."
+      },
+      "hint": "Siga o arco do bloco.",
+      "learningObjective": "Encadear graça, fé e filiação.",
+      "evidence": [
+        "Gálatas 3:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gálatas 3:2, complete: pela pregação da ___.",
+      "verseRef": "Gálatas 3:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "nação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela pregação da fé",
+      "feedbackCorrect": "Fé é o meio do Espírito.",
+      "feedbackWrong": {
+        "b": "Lei é a alternativa rejeitada.",
+        "c": "Nação é o passado de Paulo."
+      },
+      "hint": "Veja o oposto das obras.",
+      "learningObjective": "Lembrar o termo da pregação.",
+      "evidence": [
+        "Gálatas 3:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gálatas 3:6 a Gênesis 15:6?",
+      "verseRef": "Gálatas 3:6",
+      "passageA": {
+        "ref": "Gálatas 3:6"
+      },
+      "passageB": {
+        "ref": "Gênesis 15:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé imputada justiça"
+        },
+        {
+          "id": "b",
+          "text": "Devastação da igreja"
+        },
+        {
+          "id": "c",
+          "text": "Quinze dias com Pedro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "essa fé lhe foi imputada justiça",
+      "feedbackCorrect": "Ambos apontam a fé de Abraão contada como justiça.",
+      "feedbackWrong": {
+        "b": "Devastação é o passado.",
+        "c": "Pedro é visita tardia."
+      },
+      "hint": "Compare a fé de Abraão.",
+      "learningObjective": "Ligar Abraão nos dois textos.",
+      "evidence": [
+        "Gálatas 3:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 3:7, toque o trecho que sustenta quem são filhos de Abraão.",
+      "verseRef": "Gálatas 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "têm fé"
+        },
+        {
+          "id": "b",
+          "text": "Saibam"
+        },
+        {
+          "id": "c",
+          "text": "portanto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "Têm fé sustenta a filiação.",
+      "feedbackWrong": {
+        "b": "Saibam introduz o apelo.",
+        "c": "Portanto marca a conclusão."
+      },
+      "hint": "Veja o critério da filiação.",
+      "learningObjective": "Tocar o trecho da filiação pela fé.",
+      "evidence": [
+        "Gálatas 3:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até a graça.",
+      "verseRef": "Gálatas 2:16–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé justifica; obras da lei não"
+        },
+        {
+          "id": "b",
+          "text": "Unido à cruz; Cristo vive em mim"
+        },
+        {
+          "id": "c",
+          "text": "Graça fica; lei tornaria a cruz vã"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não anulo a graça de Deus",
+      "feedbackCorrect": "Fé, união e então a graça.",
+      "feedbackWrong": {
+        "default": "A graça fecha."
+      },
+      "hint": "Siga de 2:16 a 2:21.",
+      "learningObjective": "Encadear fé, união e graça.",
+      "evidence": [
+        "Gálatas 2:16–21"
+      ]
+    }
+  ]
+}

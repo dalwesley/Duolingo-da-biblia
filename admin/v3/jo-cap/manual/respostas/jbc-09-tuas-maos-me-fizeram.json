@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Jó 10:8–12",
+  "passages": [
+   {
+    "ref": "Jó 10:8–17"
+   }
+  ],
+  "context": "Jó fala a Deus depois das acusações dos amigos. Lembra que as mesmas mãos que o formaram agora parecem querê-lo destruir.",
+  "keyword": "barro",
+  "keywordGloss": "Imagem da criação: Deus formou Jó como o oleiro forma o barro.",
+  "focusQuestion": "Quando a dor aperta, você ainda consegue lembrar que Deus o formou?",
+  "reflectionPrompts": [
+   "Mãos que moldam",
+   "Barro e pó",
+   "Cuidado e caça"
+  ],
+  "facts": [
+   {
+    "text": "Jó diz que as mãos de Deus o moldaram e aperfeiçoaram.",
+    "evidenceRef": "Jó 10:8",
+    "evidenceSpan": "As tuas mãos me moldaram e me aperfeiçoaram"
+   },
+   {
+    "text": "Ele pede que Deus se lembre de tê-lo formado como barro.",
+    "evidenceRef": "Jó 10:9",
+    "evidenceSpan": "me formaste como barro"
+   },
+   {
+    "text": "Deus o vestiu de pele e carne e o teceu com ossos e tendões.",
+    "evidenceRef": "Jó 10:11",
+    "evidenceSpan": "De pele e carne me vestiste"
+   },
+   {
+    "text": "Deus lhe concedeu vida e benevolência e guardou o seu ser.",
+    "evidenceRef": "Jó 10:12",
+    "evidenceSpan": "A vida e a tua benevolência me concedeste"
+   },
+   {
+    "text": "Jó sente-se caçado como um leão feroz.",
+    "evidenceRef": "Jó 10:16",
+    "evidenceSpan": "tu me caças como um leão feroz"
+   },
+   {
+    "text": "Ele diz que Deus multiplica a ira contra ele.",
+    "evidenceRef": "Jó 10:17",
+    "evidenceSpan": "multiplicas contra mim a tua ira"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "barro",
+    "gloss": "Matéria da formação humana nas mãos de Deus."
+   },
+   {
+    "term": "benevolência",
+    "gloss": "O cuidado que Deus concedeu junto com a vida."
+   },
+   {
+    "term": "leão feroz",
+    "gloss": "Imagem que Jó usa para a perseguição que sente de Deus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "As mãos que moldaram agora querem devorar",
+    "evidenceRef": "Jó 10:8–9"
+   },
+   {
+    "label": "O corpo tecido por Deus",
+    "evidenceRef": "Jó 10:10–11"
+   },
+   {
+    "label": "Vida e cuidado concedidos",
+    "evidenceRef": "Jó 10:12"
+   },
+   {
+    "label": "A caça e a ira multiplicadas",
+    "evidenceRef": "Jó 10:16–17"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "As mãos moldaram e aperfeiçoaram; contudo, agora querem devorar.",
+    "marker": "contudo",
+    "evidenceRef": "Jó 10:8"
+   },
+   {
+    "kind": "resultado",
+    "text": "Se for justo, ainda assim não ousa levantar a cabeça, pois está cheio de vergonha.",
+    "marker": "pois",
+    "evidenceRef": "Jó 10:15"
+   },
+   {
+    "kind": "sequência",
+    "text": "Depois de lembrar a formação, Jó fala do que Deus guardou no coração.",
+    "marker": "Entretanto",
+    "evidenceRef": "Jó 10:13"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gênesis 2:7",
+    "bridge": "Formado do pó"
+   },
+   {
+    "ref": "Salmos 139:13–14",
+    "bridge": "Deus tece o corpo"
+   },
+   {
+    "ref": "Isaías 64:8",
+    "bridge": "Oleiro e barro"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó nega que Deus o tenha criado.",
+    "why": "Ele afirma várias vezes que as mãos de Deus o moldaram e formaram."
+   },
+   {
+    "text": "A dor prova que Deus nunca cuidou de Jó.",
+    "why": "Jó lembra vida, benevolência e cuidado (10:12) antes de falar da caça."
+   },
+   {
+    "text": "Só o ímpio sofre assim; o justo nunca se sente caçado.",
+    "why": "Jó fala de si mesmo e admite o paradoxo de ser formado e ferido."
+   }
+  ],
+  "centralInsight": "A mesma mão que cria é a que Jó não entende na dor; a fé segura o paradoxo.",
+  "anchorQuestion": "Como Jó descreve a forma como Deus o fez em Jó 10:9?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 10:9, Jó diz que Deus o formou como pedra e agora quer reduzi-lo a ouro.",
+   "verseRef": "Jó 10:9",
+   "correctOptionId": "false",
+   "evidenceSpan": "me formaste como barro",
+   "feedbackCorrect": "O texto fala de barro e pó, não de pedra e ouro.",
+   "feedbackWrong": {
+    "true": "Releia 10:9: a imagem é barro, e o risco é virar pó."
+   },
+   "hint": "Veja a matéria da formação e o fim temido.",
+   "learningObjective": "Observar a imagem do barro na fala de Jó.",
+   "evidence": [
+    "Jó 10:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 10:11, toque com o que Deus vestiu Jó.",
+   "verseRef": "Jó 10:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "ossos"
+    },
+    {
+     "id": "b",
+     "text": "pele e carne"
+    },
+    {
+     "id": "c",
+     "text": "tendões"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "De pele e carne me vestiste",
+   "feedbackCorrect": "Deus o vestiu de pele e carne e o teceu com ossos e tendões.",
+   "feedbackWrong": {
+    "a": "Os ossos entram no tecer, não no vestir.",
+    "c": "Os tendões acompanham os ossos no tecer."
+   },
+   "hint": "Procure o que vem logo depois de \"vestiste\".",
+   "learningObjective": "Identificar de que Deus vestiu Jó.",
+   "evidence": [
+    "Jó 10:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 10:12, o que Deus concedeu a Jó além da vida?",
+   "verseRef": "Jó 10:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Riqueza e fama na cidade"
+    },
+    {
+     "id": "b",
+     "text": "A sua benevolência"
+    },
+    {
+     "id": "c",
+     "text": "Um exército de anjos"
+    },
+    {
+     "id": "d",
+     "text": "Uma coroa de ouro"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "A vida e a tua benevolência me concedeste",
+   "feedbackCorrect": "Jó lembra vida e benevolência, e o cuidado que guardou o seu ser.",
+   "feedbackWrong": {
+    "a": "Riqueza e fama não aparecem neste versículo.",
+    "c": "Não há menção a anjos aqui.",
+    "d": "Não há coroa neste texto."
+   },
+   "hint": "Leia o que vem logo depois de \"a vida\".",
+   "learningObjective": "Observar o que Deus concedeu junto com a vida.",
+   "evidence": [
+    "Jó 10:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 10:8 na ordem do texto.",
+   "verseRef": "Jó 10:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "As tuas mãos me moldaram e me aperfeiçoaram"
+    },
+    {
+     "id": "b",
+     "text": "contudo, agora"
+    },
+    {
+     "id": "c",
+     "text": "querem me devorar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "As tuas mãos me moldaram e me aperfeiçoaram",
+   "feedbackCorrect": "Primeiro a formação; depois o contraste e a ameaça de ser devorado.",
+   "feedbackWrong": {
+    "default": "Comece pelas mãos que moldam; o devorar fecha o versículo."
+   },
+   "hint": "O versículo começa pelas mãos de Deus.",
+   "learningObjective": "Seguir a sequência de Jó 10:8.",
+   "evidence": [
+    "Jó 10:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 10:9, a que matéria Jó compara a própria formação?",
+   "verseRef": "Jó 10:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "bronze"
+    },
+    {
+     "id": "b",
+     "text": "barro"
+    },
+    {
+     "id": "c",
+     "text": "ferro"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "me formaste como barro",
+   "feedbackCorrect": "Jó diz que Deus o formou como barro e agora quer reduzi-lo a pó.",
+   "feedbackWrong": {
+    "a": "Bronze não aparece; a imagem é de barro.",
+    "c": "Ferro não está no versículo."
+   },
+   "hint": "É a matéria do oleiro.",
+   "learningObjective": "Lembrar a imagem do barro.",
+   "evidence": [
+    "Jó 10:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 10:12 comunica que se liga a este contexto?",
+   "verseRef": "Jó 10:12",
+   "passageA": {
+    "ref": "Jó 10:12",
+    "text": "A vida e a tua benevolência me concedeste"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jó lembra o cuidado de Deus antes de falar da dor atual."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus nunca cuidou"
+    },
+    {
+     "id": "b",
+     "text": "Cuidado antes da dor"
+    },
+    {
+     "id": "c",
+     "text": "Promessa de riqueza"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "A vida e a tua benevolência me concedeste",
+   "feedbackCorrect": "Jó ainda afirma o cuidado recebido, mesmo sem entender a ferida.",
+   "feedbackWrong": {
+    "a": "O versículo afirma o contrário: vida e benevolência foram dadas.",
+    "c": "Não há promessa de riqueza aqui."
+   },
+   "hint": "Pense no que ele ainda reconhece ter recebido.",
+   "learningObjective": "Ligar o versículo ao paradoxo do cuidado e da dor.",
+   "evidence": [
+    "Jó 10:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 10:8, Jó liga a formação pelas mãos de Deus ao desejo atual de ser destruído por elas.",
+   "verseRef": "Jó 10:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "As tuas mãos me moldaram e me aperfeiçoaram; contudo, agora, querem me devorar",
+   "feedbackCorrect": "O \"contudo\" marca o contraste: as mesmas mãos que formaram agora querem devorar.",
+   "feedbackWrong": {
+    "false": "Releia 10:8: moldaram e aperfeiçoaram; contudo, agora querem devorar."
+   },
+   "hint": "Repare na palavra que liga as duas partes.",
+   "learningObjective": "Compreender o contraste entre formar e destruir.",
+   "evidence": [
+    "Jó 10:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 10:8, toque a palavra que marca o contraste entre formar e destruir.",
+   "verseRef": "Jó 10:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "moldaram"
+    },
+    {
+     "id": "b",
+     "text": "contudo"
+    },
+    {
+     "id": "c",
+     "text": "devorar"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "contudo, agora, querem me devorar",
+   "feedbackCorrect": "\"Contudo\" vira a frase: da formação para a ameaça.",
+   "feedbackWrong": {
+    "a": "\"Moldaram\" é a primeira ação, não o contraste.",
+    "c": "\"Devorar\" é o resultado temido, não o marcador."
+   },
+   "hint": "Procure a palavra curta entre vírgulas.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Jó 10:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 10:15 relaciona justiça e vergonha?",
+   "verseRef": "Jó 10:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ser justo o faz levantar a cabeça com orgulho"
+    },
+    {
+     "id": "b",
+     "text": "Mesmo justo, ele não ousa levantar a cabeça"
+    },
+    {
+     "id": "c",
+     "text": "A vergonha só atinge quem é ímpio"
+    },
+    {
+     "id": "d",
+     "text": "Ele diz que a justiça apaga toda a miséria"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "se for justo, não ouso levantar a cabeça",
+   "feedbackCorrect": "Justo ou ímpio, Jó se sente sem saída: a vergonha e a miséria pesam.",
+   "feedbackWrong": {
+    "a": "O texto diz o contrário: não ousa levantar a cabeça.",
+    "c": "Ele fala também de si como justo.",
+    "d": "Ele continua olhando para a miséria."
+   },
+   "hint": "Leia o que ele diz se for justo.",
+   "learningObjective": "Compreender o impasse de Jó diante de Deus.",
+   "evidence": [
+    "Jó 10:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o argumento de Jó em Jó 10:8–12?",
+   "verseRef": "Jó 10:8–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "As mãos que formaram agora querem destruir"
+    },
+    {
+     "id": "b",
+     "text": "Deus vestiu e teceu o corpo de Jó"
+    },
+    {
+     "id": "c",
+     "text": "Vida e benevolência foram concedidas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "As tuas mãos me moldaram",
+   "feedbackCorrect": "Do paradoxo das mãos ao corpo tecido e ao cuidado concedido.",
+   "feedbackWrong": {
+    "default": "Comece pelo contraste das mãos; o cuidado fecha o movimento."
+   },
+   "hint": "A formação vem antes do cuidado.",
+   "learningObjective": "Compreender o movimento do lamento.",
+   "evidence": [
+    "Jó 10:8",
+    "Jó 10:11",
+    "Jó 10:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 10:8, que verbo fecha a ameaça das mãos que formaram?",
+   "verseRef": "Jó 10:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "louvar"
+    },
+    {
+     "id": "b",
+     "text": "devorar"
+    },
+    {
+     "id": "c",
+     "text": "guardar"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "querem me devorar",
+   "feedbackCorrect": "\"Devorar\" fecha o contraste: as mãos que moldaram agora querem destruir.",
+   "feedbackWrong": {
+    "a": "\"Louvar\" não está no versículo.",
+    "c": "\"Guardar\" não é a ameaça do fim do verso."
+   },
+   "hint": "Última ação das mãos no versículo.",
+   "learningObjective": "Lembrar o verbo que carrega a ameaça.",
+   "evidence": [
+    "Jó 10:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 10:9 a Gênesis 2:7?",
+   "verseRef": "Jó 10:9",
+   "passageA": {
+    "ref": "Jó 10:9",
+    "text": "me formaste como barro"
+   },
+   "passageB": {
+    "ref": "Gênesis 2:7"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Formado do pó"
+    },
+    {
+     "id": "b",
+     "text": "Criado por anjos"
+    },
+    {
+     "id": "c",
+     "text": "Nascido sem Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "me formaste como barro",
+   "feedbackCorrect": "Os dois textos veem o humano moldado por Deus a partir da terra.",
+   "feedbackWrong": {
+    "b": "Nenhum dos textos fala de anjos na formação.",
+    "c": "Nos dois, Deus é quem forma."
+   },
+   "hint": "Compare a matéria da criação.",
+   "learningObjective": "Cruzar a imagem do barro com Gênesis.",
+   "evidence": [
+    "Jó 10:9",
+    "Gênesis 2:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 10:12–16, Jó afirma que Deus nunca lhe deu cuidado e que a dor prova ausência divina.",
+   "verseRef": "Jó 10:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "A vida e a tua benevolência me concedeste",
+   "feedbackCorrect": "Jó lembra o cuidado recebido; a dor não apaga essa memória, ela a torna paradoxal.",
+   "feedbackWrong": {
+    "true": "Releia 10:12: ele afirma vida, benevolência e cuidado."
+   },
+   "hint": "Veja o que ele ainda reconhece ter recebido.",
+   "learningObjective": "Distinguir memória do cuidado de leitura de abandono.",
+   "evidence": [
+    "Jó 10:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 10:16, toque o trecho que mostra como Jó sente a perseguição de Deus.",
+   "verseRef": "Jó 10:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "persegues"
+    },
+    {
+     "id": "b",
+     "text": "leão feroz"
+    },
+    {
+     "id": "c",
+     "text": "poder"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "tu me caças como um leão feroz",
+   "feedbackCorrect": "A imagem do leão feroz sustenta a leitura de uma caça intensa.",
+   "feedbackWrong": {
+    "a": "\"Persegues\" diz a ação; a imagem que a intensifica vem depois.",
+    "c": "\"Poder\" aparece no fim; a imagem da caça é o leão."
+   },
+   "hint": "Procure a comparação animal.",
+   "learningObjective": "Sustentar com o texto a imagem da caça.",
+   "evidence": [
+    "Jó 10:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 10:8–12 sustenta sobre a fé de Jó?",
+   "verseRef": "Jó 10:8–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ele segura o paradoxo de ser formado e ferido pela mesma mão"
+    },
+    {
+     "id": "b",
+     "text": "Ele nega que Deus o tenha criado"
+    },
+    {
+     "id": "c",
+     "text": "Ele prova que só o ímpio sofre"
+    },
+    {
+     "id": "d",
+     "text": "Ele diz que Deus nunca cuidou dele"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "As tuas mãos me moldaram e me aperfeiçoaram",
+   "feedbackCorrect": "Jó afirma criação e cuidado e, ao mesmo tempo, a dor que não entende.",
+   "feedbackWrong": {
+    "b": "Ele insiste que as mãos de Deus o moldaram.",
+    "c": "Ele fala de si, não de uma regra geral do ímpio.",
+    "d": "Ele lembra benevolência e cuidado em 10:12."
+   },
+   "hint": "Compare formação, cuidado e dor no mesmo discurso.",
+   "learningObjective": "Escolher a leitura que o texto sustenta.",
+   "evidence": [
+    "Jó 10:8",
+    "Jó 10:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o paradoxo da mão de Deus na Bíblia?",
+   "verseRef": "Jó 10:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus forma o homem do pó da terra"
+    },
+    {
+     "id": "b",
+     "text": "Jó sente a mesma mão querendo destruí-lo"
+    },
+    {
+     "id": "c",
+     "text": "O oleiro molda o barro segundo a sua vontade"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "As tuas mãos me moldaram",
+   "feedbackCorrect": "Da criação (Gn 2) à dor de Jó e ao oleiro de Isaías: a mão de Deus permanece.",
+   "feedbackWrong": {
+    "default": "Siga a Bíblia: formação (Gn 2:7), lamento (Jó 10) e oleiro (Is 64:8)."
+   },
+   "hint": "Comece pela formação em Gênesis.",
+   "learningObjective": "Ver o fio da mão formadora na Escritura.",
+   "evidence": [
+    "Jó 10:8",
+    "Gênesis 2:7",
+    "Isaías 64:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 10:8, que palavra nomeia a ação criadora das mãos?",
+   "verseRef": "Jó 10:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "moldaram"
+    },
+    {
+     "id": "b",
+     "text": "esqueceram"
+    },
+    {
+     "id": "c",
+     "text": "venderam"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "me moldaram e me aperfeiçoaram",
+   "feedbackCorrect": "\"Moldaram\" carrega a criação.",
+   "feedbackWrong": {
+    "b": "Não há esquecimento neste verbo.",
+    "c": "O texto fala de moldar."
+   },
+   "hint": "Depois de \"mãos me\".",
+   "learningObjective": "Lembrar o termo da criação.",
+   "evidence": [
+    "Jó 10:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 10:11 a Salmos 139:13–14?",
+   "verseRef": "Jó 10:11",
+   "passageA": {
+    "ref": "Jó 10:11",
+    "text": "com ossos e tendões me teceste"
+   },
+   "passageB": {
+    "ref": "Salmos 139:13–14"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus tece o corpo"
+    },
+    {
+     "id": "b",
+     "text": "O corpo nasce sozinho"
+    },
+    {
+     "id": "c",
+     "text": "Só anjos formam ossos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com ossos e tendões me teceste",
+   "feedbackCorrect": "Nos dois textos, Deus é quem tece e forma o corpo humano.",
+   "feedbackWrong": {
+    "b": "Os dois afirmam a ação de Deus, não o acaso.",
+    "c": "Não há anjos tecendo no texto."
+   },
+   "hint": "Compare o verbo de formação do corpo.",
+   "learningObjective": "Ligar o tecer de Jó ao salmo da formação.",
+   "evidence": [
+    "Jó 10:11",
+    "Salmos 139:13–14"
+   ]
+  }
+ ]
+}

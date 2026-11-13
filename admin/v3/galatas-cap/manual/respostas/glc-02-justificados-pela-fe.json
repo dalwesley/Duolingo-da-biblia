@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Gálatas 2:15–20",
+    "passages": [
+      {
+        "ref": "Gálatas 2:15–20"
+      },
+      {
+        "ref": "Gálatas 2:21"
+      }
+    ],
+    "context": "Paulo confronta a tentação de voltar às obras da lei: judeu e gentio são justificados do mesmo modo, pela fé em Cristo.",
+    "keyword": "fé",
+    "keywordGloss": "Confiança em Cristo Jesus pela qual o homem é justificado, não pelas obras da lei.",
+    "focusQuestion": "Onde você ainda tenta se justificar por desempenho em vez de pela fé?",
+    "reflectionPrompts": [
+      "Justificados pela fé",
+      "Crucificado com Cristo",
+      "Cristo vive em mim"
+    ],
+    "facts": [
+      {
+        "text": "O homem não é justificado por obras da lei, mas pela fé em Cristo Jesus.",
+        "evidenceRef": "Gálatas 2:16",
+        "evidenceSpan": "o homem não é justificado por obras da lei, mas sim pela fé em Cristo Jesus"
+      },
+      {
+        "text": "Por obras da lei, nenhuma carne será justificada.",
+        "evidenceRef": "Gálatas 2:16",
+        "evidenceSpan": "por obras da lei, nenhuma carne será justificada"
+      },
+      {
+        "text": "Paulo morreu para a lei a fim de viver para Deus.",
+        "evidenceRef": "Gálatas 2:19",
+        "evidenceSpan": "morri para a lei, a fim de viver para Deus"
+      },
+      {
+        "text": "Ele está crucificado com Cristo.",
+        "evidenceRef": "Gálatas 2:20",
+        "evidenceSpan": "Estou crucificado com Cristo"
+      },
+      {
+        "text": "Cristo vive nele; a vida na carne é pela fé no Filho de Deus.",
+        "evidenceRef": "Gálatas 2:20",
+        "evidenceSpan": "Cristo vive em mim"
+      },
+      {
+        "text": "Se a justiça é pela lei, Cristo morreu em vão.",
+        "evidenceRef": "Gálatas 2:21",
+        "evidenceSpan": "se a justiça é pela lei, então Cristo morreu em vão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "fé",
+        "gloss": "Confiança em Cristo pela qual vem a justificação."
+      },
+      {
+        "term": "crucificado",
+        "gloss": "União com a morte de Cristo que encerra a vida para a lei."
+      },
+      {
+        "term": "graça",
+        "gloss": "Favor de Deus que Paulo não anula ao rejeitar a justiça pela lei."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Judeus sabem: não pela lei, pela fé",
+        "evidenceRef": "Gálatas 2:15–16"
+      },
+      {
+        "label": "Voltar a edificar a lei é transgressão",
+        "evidenceRef": "Gálatas 2:18"
+      },
+      {
+        "label": "Morto para a lei, vivo para Deus",
+        "evidenceRef": "Gálatas 2:19"
+      },
+      {
+        "label": "Cristo vive; justiça não é pela lei",
+        "evidenceRef": "Gálatas 2:20–21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não por obras da lei, mas pela fé em Cristo Jesus.",
+        "marker": "mas",
+        "evidenceRef": "Gálatas 2:16"
+      },
+      {
+        "kind": "propósito",
+        "text": "Morreu para a lei a fim de viver para Deus.",
+        "marker": "a fim de",
+        "evidenceRef": "Gálatas 2:19"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se a justiça fosse pela lei, Cristo teria morrido em vão.",
+        "marker": "então",
+        "evidenceRef": "Gálatas 2:21"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 3:28",
+        "bridge": "Justificados pela fé"
+      },
+      {
+        "ref": "Filipenses 3:9",
+        "bridge": "Justiça pela fé em Cristo"
+      },
+      {
+        "ref": "Romanos 6:6",
+        "bridge": "Crucificados com Cristo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A justificação mistura fé e obras da lei.",
+        "why": "O texto opõe obras da lei e fé: nenhuma carne é justificada por obras."
+      },
+      {
+        "text": "Cristo vive em mim só depois de eu cumprir a lei.",
+        "why": "Paulo liga a vida atual à fé no Filho, não ao retorno à lei."
+      },
+      {
+        "text": "Negar a justiça pela lei anula a graça de Deus.",
+        "why": "Paulo diz o contrário: não anulo a graça; se a justiça fosse pela lei, Cristo morreu em vão."
+      }
+    ],
+    "centralInsight": "O homem não é justificado por obras da lei, mas pela fé em Jesus Cristo; Cristo vive em mim.",
+    "anchorQuestion": "Segundo Gálatas 2:16, por que o homem é justificado?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Gálatas 2:16, o homem não é justificado por obras da lei, mas pela fé em Cristo Jesus.",
+      "verseRef": "Gálatas 2:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "o homem não é justificado por obras da lei, mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "O texto opõe obras da lei e fé em Cristo Jesus.",
+      "feedbackWrong": {
+        "false": "Releia a primeira frase: não por obras, mas pela fé."
+      },
+      "hint": "Olhe o contraste entre obras e fé.",
+      "learningObjective": "Observar o modo da justificação no versículo.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 2:20, toque quem vive em Paulo.",
+      "verseRef": "Gálatas 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo"
+        },
+        {
+          "id": "b",
+          "text": "carne"
+        },
+        {
+          "id": "c",
+          "text": "Filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cristo vive em mim",
+      "feedbackCorrect": "Não sou eu quem vive, mas Cristo vive em mim.",
+      "feedbackWrong": {
+        "b": "Carne é o lugar da vida atual, não quem vive nele.",
+        "c": "Filho aparece depois; quem vive nele é Cristo."
+      },
+      "hint": "Veja o sujeito depois de mas.",
+      "learningObjective": "Identificar quem vive em Paulo.",
+      "evidence": [
+        "Gálatas 2:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gálatas 2:21, o que acontece se a justiça é pela lei?",
+      "verseRef": "Gálatas 2:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo morreu em vão"
+        },
+        {
+          "id": "b",
+          "text": "A graça se confirma"
+        },
+        {
+          "id": "c",
+          "text": "A fé sobra"
+        },
+        {
+          "id": "d",
+          "text": "Ninguém peca mais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se a justiça é pela lei, então Cristo morreu em vão",
+      "feedbackCorrect": "Se a justiça viesse da lei, a morte de Cristo seria inútil.",
+      "feedbackWrong": {
+        "b": "Paulo não anula a graça ao rejeitar a justiça pela lei.",
+        "c": "O texto não diz que a fé sobra.",
+        "d": "Não é o fim do pecado; é o valor da cruz."
+      },
+      "hint": "Leia a conclusão depois de pois.",
+      "learningObjective": "Ver o custo de buscar justiça pela lei.",
+      "evidence": [
+        "Gálatas 2:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 2:19–20 na ordem do texto.",
+      "verseRef": "Gálatas 2:19–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "morri para a lei, a fim de viver para Deus"
+        },
+        {
+          "id": "b",
+          "text": "Estou crucificado com Cristo"
+        },
+        {
+          "id": "c",
+          "text": "e não sou eu quem vive, mas Cristo vive em mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Estou crucificado com Cristo",
+      "feedbackCorrect": "Primeiro a morte para a lei; depois a cruz com Cristo; então Cristo vive.",
+      "feedbackWrong": {
+        "default": "Comece pela morte para a lei; Cristo vive vem depois."
+      },
+      "hint": "Siga a ordem de 2:19 para 2:20.",
+      "learningObjective": "Seguir a ordem da união com Cristo.",
+      "evidence": [
+        "Gálatas 2:19–20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gálatas 2:16, complete: justificados pela ___ nele.",
+      "verseRef": "Gálatas 2:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela fé nele",
+      "feedbackCorrect": "A justificação é pela fé nele, não por obras da lei.",
+      "feedbackWrong": {
+        "b": "Lei é o caminho rejeitado.",
+        "c": "Carne não justifica ninguém neste versículo."
+      },
+      "hint": "Veja a palavra depois de pela.",
+      "learningObjective": "Lembrar a palavra-chave da justificação.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gálatas 2:16 comunica que se liga a este contexto?",
+      "verseRef": "Gálatas 2:16",
+      "passageA": {
+        "ref": "Gálatas 2:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Judeu e gentio precisam do mesmo modo de justificação diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justificados pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Justificados pela lei"
+        },
+        {
+          "id": "c",
+          "text": "Justificados pelo zelo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela fé nele",
+      "feedbackCorrect": "O contexto comum é a justificação pela fé, não pelas obras.",
+      "feedbackWrong": {
+        "b": "A lei não justifica nenhuma carne.",
+        "c": "Zelo não aparece como meio de justificação."
+      },
+      "hint": "Ligue o versículo ao modo comum de justificação.",
+      "learningObjective": "Ligar o contexto à fé em Cristo.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gálatas 2:16, o contraste mostra que a justificação vem pelas obras da lei, não pela fé.",
+      "verseRef": "Gálatas 2:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "O mas aponta para a fé, não para as obras da lei.",
+      "feedbackWrong": {
+        "true": "O contraste é o oposto: não por obras, mas pela fé."
+      },
+      "hint": "Olhe o que vem depois de mas sim.",
+      "learningObjective": "Ver o contraste entre lei e fé.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 2:16, toque a palavra que marca o contraste com as obras da lei.",
+      "verseRef": "Gálatas 2:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "homem"
+        },
+        {
+          "id": "c",
+          "text": "obras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas sim pela fé em Cristo Jesus",
+      "feedbackCorrect": "O mas introduz a alternativa: pela fé em Cristo.",
+      "feedbackWrong": {
+        "b": "Homem é quem é justificado, não o marcador.",
+        "c": "Obras é o caminho rejeitado."
+      },
+      "hint": "Procure a conjunção da alternativa.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Gálatas 2:19 estabelece entre morrer para a lei e viver para Deus?",
+      "verseRef": "Gálatas 2:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "A morte para a lei tem o fim de viver para Deus"
+        },
+        {
+          "id": "b",
+          "text": "A lei continua como caminho de vida"
+        },
+        {
+          "id": "c",
+          "text": "Morrer para a lei anula a graça"
+        },
+        {
+          "id": "d",
+          "text": "Viver para Deus exige voltar à lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "morri para a lei, a fim de viver para Deus",
+      "feedbackCorrect": "O a fim de liga a morte para a lei ao viver para Deus.",
+      "feedbackWrong": {
+        "b": "A lei não é o caminho de vida aqui.",
+        "c": "Paulo não anula a graça.",
+        "d": "Voltar à lei é o que ele rejeita."
+      },
+      "hint": "Leia a finalidade depois de a fim de.",
+      "learningObjective": "Relacionar morte para a lei e vida para Deus.",
+      "evidence": [
+        "Gálatas 2:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do argumento em Gálatas 2:16–21.",
+      "verseRef": "Gálatas 2:16–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judeus sabem: não pela lei, pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Morto para a lei, vivo para Deus"
+        },
+        {
+          "id": "c",
+          "text": "Cristo vive; justiça não é pela lei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Estou crucificado com Cristo",
+      "feedbackCorrect": "Primeiro a tese da fé; depois a morte para a lei; então Cristo vive.",
+      "feedbackWrong": {
+        "default": "Comece pela justificação pela fé."
+      },
+      "hint": "Pense no fluxo: tese, morte, vida em Cristo.",
+      "learningObjective": "Ordenar o argumento da justificação.",
+      "evidence": [
+        "Gálatas 2:16–21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gálatas 2:19, complete o propósito: a ___ de viver para Deus.",
+      "verseRef": "Gálatas 2:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "fim"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a fim de viver para Deus",
+      "feedbackCorrect": "A expressão a fim de marca o propósito da morte para a lei.",
+      "feedbackWrong": {
+        "b": "Lei é de onde ele morreu.",
+        "c": "Carne não carrega o propósito aqui."
+      },
+      "hint": "Veja a expressão de finalidade.",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": [
+        "Gálatas 2:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gálatas 2:16 a Romanos 3:28?",
+      "verseRef": "Gálatas 2:16",
+      "passageA": {
+        "ref": "Gálatas 2:16"
+      },
+      "passageB": {
+        "ref": "Romanos 3:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justificados pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Justificados pela lei"
+        },
+        {
+          "id": "c",
+          "text": "Crucificados com Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "justificados pela fé nele",
+      "feedbackCorrect": "Ambos afirmam justificação pela fé, sem obras da lei.",
+      "feedbackWrong": {
+        "b": "A lei não justifica nos dois textos.",
+        "c": "A cruz com Cristo aparece em 2:20, não nesta ponte."
+      },
+      "hint": "Compare o meio da justificação.",
+      "learningObjective": "Ligar Gálatas e Romanos na fé.",
+      "evidence": [
+        "Gálatas 2:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Gálatas 2:20–21, negar a justiça pela lei anula a graça de Deus.",
+      "verseRef": "Gálatas 2:20–21",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não anulo a graça de Deus",
+      "feedbackCorrect": "Paulo diz que não anula a graça; a lei é que tornaria a cruz vã.",
+      "feedbackWrong": {
+        "true": "Ele afirma: Não anulo a graça de Deus."
+      },
+      "hint": "Leia o início de 2:21.",
+      "learningObjective": "Avaliar a leitura errada sobre anular a graça.",
+      "evidence": [
+        "Gálatas 2:20–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 2:21, toque o trecho que sustenta que Paulo não despreza a graça.",
+      "verseRef": "Gálatas 2:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não anulo"
+        },
+        {
+          "id": "b",
+          "text": "então Cristo"
+        },
+        {
+          "id": "c",
+          "text": "pela lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não anulo a graça de Deus",
+      "feedbackCorrect": "Não anulo a graça de Deus responde à leitura errada.",
+      "feedbackWrong": {
+        "b": "Então Cristo introduz a consequência hipotética.",
+        "c": "Pela lei é o caminho que esvaziaria a cruz."
+      },
+      "hint": "Veja a negação no início do versículo.",
+      "learningObjective": "Tocar o trecho que sustenta a graça.",
+      "evidence": [
+        "Gálatas 2:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Gálatas 2:16–21 sustenta melhor?",
+      "verseRef": "Gálatas 2:16–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "A justificação é pela fé; Cristo vive; a lei não justifica"
+        },
+        {
+          "id": "b",
+          "text": "A fé precisa das obras da lei para completar"
+        },
+        {
+          "id": "c",
+          "text": "Cristo vive só depois do mérito humano"
+        },
+        {
+          "id": "d",
+          "text": "Anular a lei é anular a graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não anulo a graça de Deus",
+      "feedbackCorrect": "Fé justifica, Cristo vive, e rejeitar a lei não anula a graça.",
+      "feedbackWrong": {
+        "b": "O texto opõe fé e obras da lei.",
+        "c": "A vida é pela fé no Filho.",
+        "d": "Paulo não anula a graça."
+      },
+      "hint": "Una justificação, vida em Cristo e graça.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Gálatas 2:16–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do argumento até a graça.",
+      "verseRef": "Gálatas 2:16–21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Justificados pela fé, não pela lei"
+        },
+        {
+          "id": "b",
+          "text": "Crucificado com Cristo; ele vive em mim"
+        },
+        {
+          "id": "c",
+          "text": "Não anular a graça: lei tornaria a cruz vã"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não anulo a graça de Deus",
+      "feedbackCorrect": "Primeiro a fé; depois a união com Cristo; então a graça preservada.",
+      "feedbackWrong": {
+        "default": "A graça fecha o argumento, não abre."
+      },
+      "hint": "Siga de 2:16 a 2:21.",
+      "learningObjective": "Encadear fé, união e graça.",
+      "evidence": [
+        "Gálatas 2:16–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gálatas 2:20, complete o termo da união: Estou ___ com Cristo.",
+      "verseRef": "Gálatas 2:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "crucificado"
+        },
+        {
+          "id": "b",
+          "text": "justificado"
+        },
+        {
+          "id": "c",
+          "text": "anulado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estou crucificado com Cristo",
+      "feedbackCorrect": "Crucificado nomeia a união com a morte de Cristo.",
+      "feedbackWrong": {
+        "b": "Justificado é o tema de 2:16.",
+        "c": "Anulado aparece na graça, não aqui."
+      },
+      "hint": "Veja o verbo da união no início.",
+      "learningObjective": "Lembrar o termo da união com Cristo.",
+      "evidence": [
+        "Gálatas 2:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gálatas 2:20 a Romanos 6:6?",
+      "verseRef": "Gálatas 2:20",
+      "passageA": {
+        "ref": "Gálatas 2:20"
+      },
+      "passageB": {
+        "ref": "Romanos 6:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Crucificados com Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Justiça pela lei"
+        },
+        {
+          "id": "c",
+          "text": "Obras da carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estou crucificado com Cristo",
+      "feedbackCorrect": "Ambos falam da união com a morte de Cristo.",
+      "feedbackWrong": {
+        "b": "A lei não é a ponte aqui.",
+        "c": "Obras da carne não ligam os textos."
+      },
+      "hint": "Pense na união com a cruz.",
+      "learningObjective": "Ligar a cruz com Cristo nos dois textos.",
+      "evidence": [
+        "Gálatas 2:20"
+      ]
+    }
+  ]
+}

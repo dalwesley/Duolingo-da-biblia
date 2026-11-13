@@ -1,0 +1,626 @@
+{
+  "study": {
+    "passageRef": "João 10:11–16",
+    "passages": [
+      { "ref": "João 10:11–16" },
+      { "ref": "João 6:32–37" },
+      { "ref": "João 6:38–40" },
+      { "ref": "João 7:37–39" },
+      { "ref": "João 8:31–36" },
+      { "ref": "João 9:1–7" },
+      { "ref": "João 10:17–18" }
+    ],
+    "context": "Esta travessia revisa João 6 a 10. Jesus fala de um pão que vem do céu e, na festa, chama quem tem sede. Depois fala a quem havia crido, vê um homem cego de nascença e fala sobre ovelhas.",
+    "keyword": "Eu sou",
+    "keywordGloss": "Expressão com que Jesus se apresenta nos capítulos desta etapa.",
+    "focusQuestion": "Quando a fome, a sede ou o medo apertam, a quem você tem recorrido?",
+    "reflectionPrompts": [
+      "O pão que vem do céu",
+      "A palavra que liberta",
+      "A vida pelas ovelhas"
+    ],
+    "facts": [
+      {
+        "text": "Jesus diz que não foi Moisés quem deu o pão do céu, e sim o Pai.",
+        "evidenceRef": "João 6:32",
+        "evidenceSpan": "não foi Moisés quem vos deu o pão do céu"
+      },
+      {
+        "text": "Do interior de quem crê brotam rios de água viva.",
+        "evidenceRef": "João 7:38",
+        "evidenceSpan": "do seu interior brotarão rios de água viva"
+      },
+      {
+        "text": "Jesus não perde nenhum dos que o Pai lhe deu e o ressuscita no último dia.",
+        "evidenceRef": "João 6:39",
+        "evidenceSpan": "que eu não perca nenhum dos que me deu"
+      },
+      {
+        "text": "A verdade liberta quem a conhece.",
+        "evidenceRef": "João 8:32",
+        "evidenceSpan": "a verdade vos libertará"
+      },
+      {
+        "text": "Enquanto permanece no mundo, Jesus é a luz do mundo.",
+        "evidenceRef": "João 9:5",
+        "evidenceSpan": "sou a luz do mundo"
+      },
+      {
+        "text": "O bom Pastor entrega a sua vida pelas ovelhas.",
+        "evidenceRef": "João 10:11",
+        "evidenceSpan": "o bom Pastor entrega a sua vida pelas ovelhas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pão da vida",
+        "gloss": "O nome com que Jesus se oferece a quem tem fome e a quem crê nele."
+      },
+      {
+        "term": "luz",
+        "gloss": "Jesus se apresenta assim enquanto permanece no mundo: a luz do mundo."
+      },
+      {
+        "term": "bom Pastor",
+        "gloss": "Quem entrega a vida pelas ovelhas, diferente de quem foge no perigo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O pão oferecido a quem tem fome",
+        "evidenceRef": "João 6:35"
+      },
+      {
+        "label": "A palavra que conduz à liberdade",
+        "evidenceRef": "João 8:32"
+      },
+      {
+        "label": "A luz diante do cego de nascença",
+        "evidenceRef": "João 9:5"
+      },
+      {
+        "label": "A vida entregue pelas ovelhas",
+        "evidenceRef": "João 10:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jesus desceu do céu para fazer a vontade de quem o enviou, não a sua.",
+        "marker": "para",
+        "evidenceRef": "João 6:38"
+      },
+      {
+        "kind": "contraste",
+        "text": "O mercenário vê o lobo, abandona as ovelhas e foge.",
+        "marker": "Mas",
+        "evidenceRef": "João 10:12"
+      },
+      {
+        "kind": "causa",
+        "text": "O Espírito ainda não tinha sido dado porque Jesus não havia sido glorificado.",
+        "marker": "porque",
+        "evidenceRef": "João 7:39"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 8:12", "bridge": "Jesus é a luz" },
+      { "ref": "João 5:24", "bridge": "Vida eterna de quem crê" },
+      { "ref": "João 10:27–28", "bridge": "Ovelhas ouvem a voz" }
+    ],
+    "misreadings": [
+      {
+        "text": "Moisés deu ao povo o verdadeiro pão do céu.",
+        "why": "Jesus diz o contrário: não foi Moisés; é o Pai quem dá o verdadeiro pão (6:32)."
+      },
+      {
+        "text": "O homem nasceu cego por pecado dele ou dos pais.",
+        "why": "Jesus nega as duas hipóteses e diz que isso ocorreu para as obras de Deus (9:3)."
+      },
+      {
+        "text": "Quem descende de Abraão já é livre e não precisa do Filho.",
+        "why": "Eles dizem que nunca foram escravos, mas só fica livre quem o Filho liberta (8:36)."
+      }
+    ],
+    "centralInsight": "Jesus diz quem é: pão, luz, pastor",
+    "anchorQuestion": "Que nomes Jesus usa para si ao falar do alimento, da visão e das ovelhas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 6:32, Jesus afirma que Moisés deu ao povo o pão do céu.",
+      "verseRef": "João 6:32",
+      "correctOptionId": "false",
+      "evidenceSpan": "não foi Moisés quem vos deu o pão do céu",
+      "feedbackCorrect": "Jesus nega isso. Não foi Moisés; é o Pai quem dá o verdadeiro pão.",
+      "feedbackWrong": {
+        "true": "A fala começa pela negação: não foi Moisés quem deu o pão do céu."
+      },
+      "hint": "Leia a primeira coisa que Jesus nega.",
+      "learningObjective": "Observar quem Jesus diz que dá o verdadeiro pão do céu.",
+      "evidence": ["João 6:32"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 6:35, toque o que Jesus diz que é.",
+      "verseRef": "João 6:35",
+      "options": [
+        { "id": "a", "text": "jamais terá" },
+        { "id": "b", "text": "pão da vida" },
+        { "id": "c", "text": "se aproxima" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Eu sou o pão da vida",
+      "feedbackCorrect": "Jesus se nomeia assim: ele é o pão da vida para quem vem e crê.",
+      "feedbackWrong": {
+        "a": "\"Jamais terá\" fala da sede de quem crê; não é o nome que ele usa.",
+        "c": "\"Se aproxima\" diz o que a pessoa faz, não o que Jesus diz que é."
+      },
+      "hint": "Toque o nome que Jesus dá a si no começo da fala.",
+      "learningObjective": "Observar o nome com que Jesus se apresenta em João 6:35.",
+      "evidence": ["João 6:35"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 7:38, de onde brotam os rios de água viva?",
+      "verseRef": "João 7:38",
+      "options": [
+        { "id": "a", "text": "Do templo, no grande dia da festa" },
+        { "id": "b", "text": "Do poço de onde o povo bebia" },
+        { "id": "c", "text": "Do interior de quem crê em Jesus" },
+        { "id": "d", "text": "Da chuva que cai sobre a cidade" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "do seu interior brotarão rios de água viva",
+      "feedbackCorrect": "A água viva brota do interior de quem crê, não de um lugar de fora.",
+      "feedbackWrong": {
+        "a": "A festa é o cenário; o texto diz que a água brota do interior.",
+        "b": "Não há poço neste versículo. A fonte é o interior de quem crê.",
+        "d": "O texto não fala de chuva. A água brota de quem crê em Jesus."
+      },
+      "hint": "Leia de onde o versículo diz que os rios brotam.",
+      "learningObjective": "Observar de onde brotam os rios de água viva.",
+      "evidence": ["João 7:38"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 6:39 na ordem do texto.",
+      "verseRef": "João 6:39",
+      "options": [
+        { "id": "a", "text": "E a vontade daquele que me enviou é esta" },
+        { "id": "b", "text": "que eu não perca nenhum dos que me deu" },
+        { "id": "c", "text": "mas que eu o ressuscite no último dia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "que eu não perca nenhum dos que me deu",
+      "feedbackCorrect": "Primeiro a vontade de quem o enviou, depois não perder ninguém, e a ressurreição.",
+      "feedbackWrong": {
+        "default": "Comece pela vontade de quem o enviou; o último dia fecha o versículo."
+      },
+      "hint": "O versículo começa dizendo de quem é a vontade.",
+      "learningObjective": "Reconhecer a sequência de João 6:39.",
+      "evidence": ["João 6:39"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 9:7, em que tanque Jesus manda o cego lavar-se?",
+      "verseRef": "João 9:7",
+      "options": [
+        { "id": "a", "text": "Betesda" },
+        { "id": "b", "text": "Siloé" },
+        { "id": "c", "text": "Jordão" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lava-te no tanque de Siloé",
+      "feedbackCorrect": "Jesus manda lavar-se no tanque de Siloé. Ele foi, lavou-se e voltou a ver.",
+      "feedbackWrong": {
+        "a": "Betesda é outro tanque. Aqui o nome dito por Jesus é Siloé.",
+        "c": "O Jordão não aparece nesta ordem. O tanque nomeado é Siloé."
+      },
+      "hint": "Leia o nome do tanque na ordem de Jesus.",
+      "learningObjective": "Lembrar o tanque em que Jesus manda o cego lavar-se.",
+      "evidence": ["João 9:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 10:11 comunica que se liga a este contexto?",
+      "verseRef": "João 10:11",
+      "options": [
+        { "id": "a", "text": "O Pastor foge do lobo" },
+        { "id": "b", "text": "As ovelhas protegem o Pastor" },
+        { "id": "c", "text": "A vida dada pelas ovelhas" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "entrega a sua vida pelas ovelhas",
+      "passageA": { "ref": "João 10:11" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O bom Pastor entrega a vida pelas ovelhas."
+      },
+      "feedbackCorrect": "O versículo liga o Pastor às ovelhas por uma vida que ele entrega.",
+      "feedbackWrong": {
+        "a": "Quem foge é o mercenário, no versículo seguinte. Aqui o Pastor entrega a vida.",
+        "b": "As ovelhas não protegem o Pastor. Ele é quem entrega a vida por elas."
+      },
+      "hint": "Veja o que o versículo diz que o Pastor faz.",
+      "learningObjective": "Ligar João 10:11 ao cuidado que custa a vida.",
+      "evidence": ["João 10:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 7:37, toque a quem Jesus faz o convite.",
+      "verseRef": "João 7:37",
+      "options": [
+        { "id": "a", "text": "grande dia" },
+        { "id": "b", "text": "venha a mim" },
+        { "id": "c", "text": "alguém tem sede" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Se alguém tem sede, venha a mim e beba",
+      "feedbackCorrect": "O convite é para quem tem sede: essa pessoa deve vir a Jesus e beber.",
+      "feedbackWrong": {
+        "a": "\"Grande dia\" marca quando a festa chega ao auge, não quem é chamado.",
+        "b": "\"Venha a mim\" é o que ele pede, não a pessoa a quem fala."
+      },
+      "hint": "Leia para quem Jesus diz a frase do convite.",
+      "learningObjective": "Observar a quem Jesus dirige o convite na festa.",
+      "evidence": ["João 7:37"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 9:6 na ordem do texto.",
+      "verseRef": "João 9:6",
+      "options": [
+        { "id": "a", "text": "E, ao dizer isso, cuspiu na terra" },
+        { "id": "b", "text": "fez lodo com a saliva" },
+        { "id": "c", "text": "e aplicou-o aos olhos do cego" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "fez lodo com a saliva",
+      "feedbackCorrect": "Jesus cospe na terra, faz lodo e só então aplica aos olhos do cego.",
+      "feedbackWrong": {
+        "default": "Comece pelo que ele faz na terra; os olhos do cego vêm no fim."
+      },
+      "hint": "O versículo começa quando Jesus ainda está falando.",
+      "learningObjective": "Reconhecer a sequência dos gestos de Jesus em João 9:6.",
+      "evidence": ["João 9:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 8:32, a verdade é aquilo que liberta a pessoa.",
+      "verseRef": "João 8:32",
+      "correctOptionId": "true",
+      "evidenceSpan": "a verdade vos libertará",
+      "feedbackCorrect": "O versículo dá à verdade a ação de libertar quem a conhece.",
+      "feedbackWrong": {
+        "false": "O fim do versículo é claro: a verdade é quem liberta."
+      },
+      "hint": "Leia o que o versículo diz que a verdade faz.",
+      "learningObjective": "Compreender o vínculo entre conhecer a verdade e ficar livre.",
+      "evidence": ["João 8:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 10:12, toque a palavra que abre o contraste com o pastor.",
+      "verseRef": "João 10:12",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "mercenário" },
+        { "id": "c", "text": "lobo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas o mercenário",
+      "feedbackCorrect": "\"Mas\" vira a cena: depois do Pastor que entrega a vida, entra quem foge.",
+      "feedbackWrong": {
+        "b": "\"Mercenário\" é a pessoa do contraste, não a palavra que o abre.",
+        "c": "\"Lobo\" é o perigo que chega, não a virada em relação ao Pastor."
+      },
+      "hint": "A primeira palavra do versículo marca a virada.",
+      "learningObjective": "Reconhecer a palavra que contrapõe o mercenário ao Pastor.",
+      "evidence": ["João 10:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Por que o mercenário foge, segundo João 10:13?",
+      "verseRef": "João 10:13",
+      "options": [
+        { "id": "a", "text": "Ele foge porque as ovelhas o rejeitam" },
+        { "id": "b", "text": "Ele foge porque não se importa com elas" },
+        { "id": "c", "text": "Ele foge porque o Pastor mandou sair" },
+        { "id": "d", "text": "Ele foge porque já entregou a vida" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não se preocupa com as ovelhas",
+      "feedbackCorrect": "Ele foge porque é mercenário e não se preocupa com as ovelhas.",
+      "feedbackWrong": {
+        "a": "O texto não diz que as ovelhas o rejeitam. O problema é o cuidado que falta.",
+        "c": "O Pastor não manda o mercenário sair. Ele foge por conta própria.",
+        "d": "Quem entrega a vida é o Pastor. O mercenário foge justamente por não fazer isso."
+      },
+      "hint": "Veja o que o versículo diz sobre o cuidado dele.",
+      "learningObjective": "Relacionar a fuga do mercenário à falta de cuidado com as ovelhas.",
+      "evidence": ["João 10:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o convite de Jesus em João 7:37–38?",
+      "verseRef": "João 7:37–38",
+      "options": [
+        { "id": "a", "text": "Jesus chama quem tem sede a beber" },
+        { "id": "b", "text": "A promessa é para quem crê" },
+        { "id": "c", "text": "Água viva brota do interior" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Se alguém tem sede, venha a mim e beba",
+      "feedbackCorrect": "O convite chega a quem tem sede, vale para quem crê, e a água brota de dentro.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado a quem tem sede; a água que brota de dentro vem por último."
+      },
+      "hint": "O primeiro versículo é o convite; o seguinte diz de onde a água brota.",
+      "learningObjective": "Compreender a sequência do convite e da promessa em João 7:37–38.",
+      "evidence": ["João 7:37–38"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 7:39, que palavra diz o que ainda não tinha acontecido com Jesus?",
+      "verseRef": "João 7:39",
+      "options": [
+        { "id": "a", "text": "enviado" },
+        { "id": "b", "text": "condenado" },
+        { "id": "c", "text": "glorificado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "ainda não havia sido glorificado",
+      "feedbackCorrect": "O Espírito ainda não fora dado porque Jesus ainda não havia sido glorificado.",
+      "feedbackWrong": {
+        "a": "O texto não diz que ele ainda não fora enviado. O que faltava era ser glorificado.",
+        "b": "Não é condenação. O versículo fala do que ainda não tinha acontecido: ser glorificado."
+      },
+      "hint": "Veja o que ainda não tinha acontecido com Jesus.",
+      "learningObjective": "Compreender por que o Espírito ainda não tinha sido dado.",
+      "evidence": ["João 7:39"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 9:5 a João 8:12?",
+      "verseRef": "João 9:5",
+      "options": [
+        { "id": "a", "text": "A cegueira é um castigo" },
+        { "id": "b", "text": "Jesus é a luz" },
+        { "id": "c", "text": "O dia de trabalho acabou" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sou a luz do mundo",
+      "passageA": { "ref": "João 9:5" },
+      "passageB": { "ref": "João 8:12" },
+      "feedbackCorrect": "Nos dois lugares Jesus diz o mesmo de si: ele é a luz do mundo.",
+      "feedbackWrong": {
+        "a": "João 9:3 recusa essa leitura. O elo dos dois versículos é o que Jesus diz ser.",
+        "c": "João 9:4 ainda chama a trabalhar enquanto é dia. O elo é a luz."
+      },
+      "hint": "Compare o que os dois textos dizem de Jesus.",
+      "learningObjective": "Relacionar a luz em João 9:5 com o que Jesus já dissera.",
+      "evidence": ["João 9:5", "João 8:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 6:38, toque a palavra que introduz o objetivo da descida.",
+      "verseRef": "João 6:38",
+      "options": [
+        { "id": "a", "text": "desci" },
+        { "id": "b", "text": "enviou" },
+        { "id": "c", "text": "para" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não para fazer a minha própria vontade",
+      "feedbackCorrect": "\"Para\" introduz o objetivo: não a vontade dele, mas a de quem o enviou.",
+      "feedbackWrong": {
+        "a": "\"Desci\" é o que ele fez, não a palavra que diz com que fim.",
+        "b": "\"Enviou\" diz quem o mandou, não o objetivo da descida."
+      },
+      "hint": "Olhe a palavra curta antes do que ele veio fazer.",
+      "learningObjective": "Reconhecer a palavra que marca o propósito da descida de Jesus.",
+      "evidence": ["João 6:38"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como João 10:11–12 contrapõe o Pastor e o mercenário?",
+      "verseRef": "João 10:11–12",
+      "options": [
+        { "id": "a", "text": "O Pastor entrega a própria vida" },
+        { "id": "b", "text": "O mercenário vê o lobo e foge" },
+        { "id": "c", "text": "O lobo arrebata e dispersa as ovelhas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "entrega a sua vida pelas ovelhas",
+      "feedbackCorrect": "O Pastor entrega a vida; o mercenário foge, e o lobo dispersa as ovelhas.",
+      "feedbackWrong": {
+        "default": "Comece pelo que o Pastor faz; a fuga e o lobo vêm depois."
+      },
+      "hint": "O primeiro versículo fala do Pastor; o seguinte, de quem foge.",
+      "learningObjective": "Compreender o contraste entre o Pastor e o mercenário.",
+      "evidence": ["João 10:11–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 9:3, Jesus atribui a cegueira ao pecado do homem ou dos pais.",
+      "verseRef": "João 9:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Nem ele pecou, nem seus pais",
+      "feedbackCorrect": "Jesus recusa as duas ideias. O que ocorreu foi para as obras de Deus.",
+      "feedbackWrong": {
+        "true": "A resposta abre negando: nem ele pecou, nem seus pais."
+      },
+      "hint": "Veja como Jesus começa a resposta aos discípulos.",
+      "learningObjective": "Interpretar o que Jesus nega sobre a causa da cegueira.",
+      "evidence": ["João 9:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 10:18, toque a palavra que mostra a entrega por decisão dele.",
+      "verseRef": "João 10:18",
+      "options": [
+        { "id": "a", "text": "Ninguém" },
+        { "id": "b", "text": "espontaneamente" },
+        { "id": "c", "text": "mandamento" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu espontaneamente a dou de mim mesmo",
+      "feedbackCorrect": "Ninguém toma a vida dele. Ele a dá espontaneamente, por decisão própria.",
+      "feedbackWrong": {
+        "a": "\"Ninguém\" diz que a vida não lhe é tomada; o modo da entrega é outra palavra.",
+        "c": "\"Mandamento\" é o que ele recebeu do Pai, não o modo livre da entrega."
+      },
+      "hint": "Procure a palavra que diz o modo da entrega.",
+      "learningObjective": "Sustentar com o texto que Jesus entrega a vida por decisão própria.",
+      "evidence": ["João 10:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 8:36 sustenta sobre ficar livre?",
+      "verseRef": "João 8:36",
+      "options": [
+        { "id": "a", "text": "A família de Abraão já torna a pessoa livre" },
+        { "id": "b", "text": "Só fica livre quem o Filho liberta" },
+        { "id": "c", "text": "Ninguém foi escravo, então já é livre" },
+        { "id": "d", "text": "Livre é apenas não ter um dono humano" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Se, pois, o Filho vos libertar, de fato sereis livres",
+      "feedbackCorrect": "A liberdade de fato depende do Filho. Se ele liberta, a pessoa fica livre.",
+      "feedbackWrong": {
+        "a": "Eles apelam a Abraão, mas Jesus não apoia essa garantia. Quem liberta é o Filho.",
+        "c": "Eles dizem que nunca foram escravos. Jesus fala de outra escravidão e de outro libertador.",
+        "d": "O texto não reduz a liberdade à ausência de um dono. Livre é quem o Filho liberta."
+      },
+      "hint": "Veja de quem depende o \"de fato sereis livres\".",
+      "learningObjective": "Escolher a leitura que João 8:36 sustenta sobre a liberdade.",
+      "evidence": ["João 8:36"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra como Jesus entrega a vida em João 10:17–18?",
+      "verseRef": "João 10:17–18",
+      "options": [
+        { "id": "a", "text": "O Pai ama o Filho por dar a vida" },
+        { "id": "b", "text": "Ninguém tira essa vida dele" },
+        { "id": "c", "text": "Ele a dá e tem poder de reavê-la" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ninguém a tira de mim",
+      "feedbackCorrect": "O Pai ama essa entrega. Ninguém a toma: Jesus a dá e pode reavê-la.",
+      "feedbackWrong": {
+        "default": "Comece pelo amor do Pai; a autoridade de reaver a vida fecha o movimento."
+      },
+      "hint": "O versículo 17 fala do Pai; o 18, de quem tira ou dá a vida.",
+      "learningObjective": "Ver a lógica da vida que Jesus dá e pode reaver.",
+      "evidence": ["João 10:17", "João 10:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 9:5, que palavra nomeia o que Jesus é no mundo?",
+      "verseRef": "João 9:5",
+      "options": [
+        { "id": "a", "text": "porta" },
+        { "id": "b", "text": "luz" },
+        { "id": "c", "text": "vida" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "sou a luz do mundo",
+      "feedbackCorrect": "Enquanto permanece no mundo, Jesus diz que é a luz do mundo.",
+      "feedbackWrong": {
+        "a": "A porta é outra imagem, noutro momento. Aqui a palavra é luz.",
+        "c": "A vida aparece quando ele fala do pão. Neste versículo ele diz luz."
+      },
+      "hint": "Olhe o fim da frase, no que ele diz ser.",
+      "learningObjective": "Lembrar o termo com que Jesus se apresenta diante do cego.",
+      "evidence": ["João 9:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 6:40 a João 5:24?",
+      "verseRef": "João 6:40",
+      "options": [
+        { "id": "a", "text": "Vida eterna de quem crê" },
+        { "id": "b", "text": "Juízo sobre quem crê" },
+        { "id": "c", "text": "Ver o Filho sem crer" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tenha a vida eterna",
+      "passageA": { "ref": "João 6:40" },
+      "passageB": { "ref": "João 5:24" },
+      "feedbackCorrect": "Nos dois textos, quem crê recebe a vida eterna, e a morte não tem a última palavra.",
+      "feedbackWrong": {
+        "b": "João 5:24 diz que quem crê não entra em juízo. O elo é a vida, não a condenação.",
+        "c": "João 6:40 junta ver e crer. Ver sem crer não é o que os dois textos ligam."
+      },
+      "hint": "Compare o que os dois textos prometem a quem crê.",
+      "learningObjective": "Ligar a vida eterna de João 6:40 ao que Jesus já dissera.",
+      "evidence": ["João 6:40", "João 5:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 8:36, toque quem realiza a libertação.",
+      "verseRef": "João 8:36",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "livres" },
+        { "id": "c", "text": "o Filho" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o Filho vos libertar",
+      "feedbackCorrect": "A liberdade de fato tem um autor: se o Filho libertar, serão livres.",
+      "feedbackWrong": {
+        "a": "\"Pois\" só liga a frase. Quem liberta é outra palavra.",
+        "b": "\"Livres\" é o resultado, não quem realiza a libertação."
+      },
+      "hint": "Veja o sujeito do verbo que liberta.",
+      "learningObjective": "Sustentar com o texto que a liberdade de fato vem do Filho.",
+      "evidence": ["João 8:36"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência parte da pergunta dos discípulos e chega à cura?",
+      "verseRef": "João 9:2–3",
+      "options": [
+        { "id": "a", "text": "Os discípulos perguntam quem pecou" },
+        { "id": "b", "text": "Jesus nega que a causa seja o pecado" },
+        { "id": "c", "text": "O caso existe para a obra de Deus" },
+        { "id": "d", "text": "O cego obedece e passa a ver" }
+      ],
+      "correctOrder": ["a", "b", "c", "d"],
+      "evidenceSpan": "Nem ele pecou, nem seus pais",
+      "feedbackCorrect": "A pergunta pelo culpado cede lugar à obra de Deus, e o cego passa a ver.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta dos discípulos; a cura, com a obediência, vem no fim."
+      },
+      "hint": "A cena abre com a pergunta; a visão recuperada fecha o episódio.",
+      "learningObjective": "Ler a cura do cego como lugar da obra de Deus, não como castigo.",
+      "evidence": ["João 9:2", "João 9:3", "João 9:7"]
+    }
+  ]
+}

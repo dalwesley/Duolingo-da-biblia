@@ -1,0 +1,98 @@
+{
+  "slug": "canticos-cap",
+  "prefix": "cnc",
+  "book": "Cantares",
+  "chapters": 8,
+  "title": "Cânticos",
+  "description": "Cânticos capítulo a capítulo: o amor fiel da aliança.",
+  "icon": "💐",
+  "color": "#C9947E",
+  "order": 24,
+  "realm": "antigo-testamento",
+  "category": "poeticos",
+  "avoidTrails": [
+    "cantares"
+  ],
+  "modules": [
+    {
+      "title": "Desejo e encontro · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Cantares 1:9–17",
+          "title": "Como é bela, amada",
+          "intro": "O rei compara a amada a uma égua nos carros e ela responde com o verde do nosso leito.",
+          "insight": "O amor santo nomeia a beleza do outro sem vergonha e sem pressa suja.",
+          "objective": "Nomear a beleza",
+          "chapters": "1"
+        },
+        {
+          "ref": "Cantares 2:1–12",
+          "title": "A voz do meu amado",
+          "intro": "Ela é rosa de Sarom; ele é maçã entre as árvores. A voz do amado salta pelos montes.",
+          "insight": "O amor desperta no tempo certo: o inverno passa, e a voz chama para fora.",
+          "objective": "Tempo do encontro",
+          "chapters": "2"
+        },
+        {
+          "ref": "Cantares 3:6–11",
+          "title": "O cortejo de Salomão",
+          "intro": "Quem é esta que sobe do deserto? Salomão vem no seu andor no dia do júbilo do coração.",
+          "insight": "O amor celebrado em público tem cortejo, testemunhas e alegria compartilhada.",
+          "objective": "Celebrar a aliança",
+          "chapters": "3"
+        },
+        {
+          "ref": "Cantares 4:1–11",
+          "title": "Como és formosa",
+          "intro": "O amado descreve os olhos, os cabelos, os lábios — e o perfume das vestes como o Líbano.",
+          "insight": "O olhar atento do amor vê detalhes e responde com elogio generoso.",
+          "objective": "Olhar que elogia"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Desejo e encontro",
+        "intro": "Revise a beleza nomeada, a voz do amado, o cortejo e o elogio.",
+        "insight": "O amor fiel vê, nomeia e celebra o outro"
+      }
+    },
+    {
+      "title": "Busca e selo · cap. 5–8",
+      "scenes": [
+        {
+          "ref": "Cantares 5:2–8",
+          "title": "Abre-me, minha irmã",
+          "intro": "Ele bate à porta; ela demora, e quando abre ele já se foi — e a busca dói na cidade.",
+          "insight": "O amor também conhece atraso e saudade: quem ama sai à procura.",
+          "objective": "Buscar quem se ama"
+        },
+        {
+          "ref": "Cantares 6:1–9",
+          "title": "Para onde foi o amado",
+          "intro": "As filhas de Jerusalém perguntam; ela sabe para onde ele foi, e ele a chama única.",
+          "insight": "Entre muitas, o amor da aliança escolhe uma e a chama perfeita.",
+          "objective": "Única para o amado"
+        },
+        {
+          "ref": "Cantares 7:6–13",
+          "title": "Quão formosa e quão agradável",
+          "intro": "Ele admira a amada; ela o convida ao campo, às vinhas, aos frutos guardados.",
+          "insight": "O desejo dentro da aliança é convite mútuo, não posse brusca.",
+          "objective": "Convite mútuo"
+        },
+        {
+          "ref": "Cantares 8:10–14",
+          "title": "Eu era muro",
+          "intro": "Ela fala do peito como torre e pede que o amado se apresse como gazela nos montes.",
+          "insight": "O amor maduro sabe de si, guarda o que é precioso e ainda deseja a presença.",
+          "objective": "Amor que espera e chama",
+          "chapters": "8"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Busca e selo",
+        "intro": "Revise a busca noturna, a amada única, o convite ao campo e o amor maduro.",
+        "insight": "O amor da aliança busca, escolhe e permanece"
+      }
+    }
+  ]
+}

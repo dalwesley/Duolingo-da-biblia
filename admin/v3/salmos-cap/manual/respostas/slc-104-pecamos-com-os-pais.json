@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 106:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 106:1–6"
+      },
+      {
+        "ref": "Salmos 106:7–12"
+      }
+    ],
+    "context": "Louvai ao Senhor; pecamos com os nossos pais. Mesmo assim, ele os salvou por amor do seu nome.",
+    "keyword": "SENHOR",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Pecamos com os pais",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Aleluia! Louvem ao SENHOR, porque ele é bom; porque a sua misericórdia é eterna.",
+        "evidenceRef": "Salmos 106:1",
+        "evidenceSpan": "Aleluia"
+      },
+      {
+        "text": "Quem poderá relatar os grandiosos feitos do Senhor.",
+        "evidenceRef": "Salmos 106:2",
+        "evidenceSpan": "Quem poderá relatar os grandiosos feitos do Senhor"
+      },
+      {
+        "text": "Bem-aventurados os que mantêm a retidão e praticam.",
+        "evidenceRef": "Salmos 106:3",
+        "evidenceSpan": "Bem-aventurados os que mantêm a retidão e praticam"
+      },
+      {
+        "text": "Lembra-te de mim.",
+        "evidenceRef": "Salmos 106:4",
+        "evidenceSpan": "Lembra-te de mim"
+      },
+      {
+        "text": "Para que eu veja a prosperidade dos teus.",
+        "evidenceRef": "Salmos 106:5",
+        "evidenceSpan": "Para que eu veja a prosperidade dos teus"
+      },
+      {
+        "text": "Pecamos junto com nossos pais.",
+        "evidenceRef": "Salmos 106:6",
+        "evidenceSpan": "Pecamos junto com nossos pais"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SENHOR",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Aleluia",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "Louvem",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Aleluia louvem ao senhor porque ele",
+        "evidenceRef": "Salmos 106:1"
+      },
+      {
+        "label": "Quem poderá relatar os grandiosos feitos",
+        "evidenceRef": "Salmos 106:2"
+      },
+      {
+        "label": "Bem-aventurados os que mantêm a retidão",
+        "evidenceRef": "Salmos 106:3"
+      },
+      {
+        "label": "Lembra-te de mim senhor segundo a",
+        "evidenceRef": "Salmos 106:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 106:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Para que\".",
+        "marker": "Para que",
+        "evidenceRef": "Salmos 106:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 106:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Tiago 1:2",
+        "bridge": "Alegria na prova"
+      },
+      {
+        "ref": "Salmos 27:1",
+        "bridge": "Luz e salvação"
+      },
+      {
+        "ref": "Salmos 90:1",
+        "bridge": "Morada em todas as gerações"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Memória do fracasso e da graça: salva-nos, Senhor, e louvaremos."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Memória do fracasso e da graça: salva-nos, Senhor, e louvaremos.",
+    "anchorQuestion": "O que Salmos 106:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 106:1, aleluia.",
+      "verseRef": "Salmos 106:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 106:1 afirma.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 106:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 106:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aleluia"
+        },
+        {
+          "id": "b",
+          "text": "Louvem"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "O versículo destaca «Aleluia».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 106:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 106:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os que mantêm a retidão e praticam"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurados os que mantêm a retidão e praticam",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 106:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 106:1 na ordem do texto.",
+      "verseRef": "Salmos 106:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aleluia"
+        },
+        {
+          "id": "b",
+          "text": "ao SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "porque ele"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 106:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 106:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembra-te"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembra-te",
+      "feedbackCorrect": "A palavra do versículo é «Lembra-te».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 106:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 106:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 106:1",
+      "passageA": {
+        "ref": "Salmos 106:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Louvai ao Senhor; pecamos com os nossos pais. Mesmo assim, ele os salvou por amor do seu nome."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 106:1, o marcador porque une ideias no fluxo do texto.",
+      "verseRef": "Salmos 106:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 106:1 afirma.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 106:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 106:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque",
+      "feedbackCorrect": "O versículo destaca «porque».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 106:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 106:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembra-te de mim",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 106:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 106:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aleluia louvem ao senhor porque ele"
+        },
+        {
+          "id": "b",
+          "text": "Quem poderá relatar os grandiosos feitos"
+        },
+        {
+          "id": "c",
+          "text": "Bem-aventurados os que mantêm a retidão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 106:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 106:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurados",
+      "feedbackCorrect": "A palavra do versículo é «Bem-aventurados».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 106:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 106:1 a Tiago 1:2.",
+      "verseRef": "Salmos 106:1",
+      "passageA": {
+        "ref": "Salmos 106:1"
+      },
+      "passageB": {
+        "ref": "Tiago 1:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria na prova"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 106:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 106:12 afirma.",
+      "evidence": [
+        "Salmos 106:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 106:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 106:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "creram"
+        },
+        {
+          "id": "c",
+          "text": "suas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca «Então».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 106:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 106:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 106:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que eu veja a prosperidade dos teus",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 106:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 106:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 106:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 106:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "veja"
+        },
+        {
+          "id": "b",
+          "text": "Aleluia"
+        },
+        {
+          "id": "c",
+          "text": "Louvem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "veja",
+      "feedbackCorrect": "A palavra do versículo é «veja».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 106:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 106:1 a Salmos 27:1.",
+      "verseRef": "Salmos 106:1",
+      "passageA": {
+        "ref": "Salmos 106:1"
+      },
+      "passageB": {
+        "ref": "Salmos 27:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luz e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aleluia",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 106:1"
+      ]
+    }
+  ]
+}

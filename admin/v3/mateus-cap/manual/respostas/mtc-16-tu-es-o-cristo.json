@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Mateus 16:13–18",
+    "passages": [
+      {
+        "ref": "Mateus 16:13–18"
+      },
+      {
+        "ref": "Mateus 16:19–20"
+      }
+    ],
+    "context": "Jesus e os discípulos chegam à região de Cesareia de Filipe. Ele pergunta quem o povo diz que é o Filho do Homem, e a resposta cita João Batista, Elias, Jeremias ou algum dos profetas.",
+    "keyword": "Cristo",
+    "keywordGloss": "É o título que Pedro confessa, e que Jesus pede para ainda não anunciar.",
+    "focusQuestion": "Se alguém perguntar a você quem Jesus é, o que você responde?",
+    "reflectionPrompts": [
+      "O que o povo diz",
+      "A resposta de Pedro",
+      "O que vem do Pai"
+    ],
+    "facts": [
+      {
+        "text": "Jesus pergunta aos discípulos quem o povo diz que é o Filho do Homem.",
+        "evidenceRef": "Mateus 16:13",
+        "evidenceSpan": "Quem diz o povo que é o Filho do Homem?"
+      },
+      {
+        "text": "Os discípulos respondem com João Batista, Elias, Jeremias ou algum dos profetas.",
+        "evidenceRef": "Mateus 16:14",
+        "evidenceSpan": "Alguns afirmam que é João Batista; outros dizem que é Elias, e ainda outros que é Jeremias ou algum dos profetas."
+      },
+      {
+        "text": "Simão Pedro responde que Jesus é o Cristo, o Filho do Deus vivo.",
+        "evidenceRef": "Mateus 16:16",
+        "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo."
+      },
+      {
+        "text": "Jesus diz que isso não foi revelado por carne e sangue, mas pelo Pai nos céus.",
+        "evidenceRef": "Mateus 16:17",
+        "evidenceSpan": "isso não foi revelado por carne e sangue, mas pelo meu Pai que está nos céus."
+      },
+      {
+        "text": "Jesus diz que edificará a sua igreja e que as portas do inferno não prevalecerão contra ela.",
+        "evidenceRef": "Mateus 16:18",
+        "evidenceSpan": "sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela."
+      },
+      {
+        "text": "Jesus adverte os discípulos a não dizerem a ninguém que ele era o Cristo.",
+        "evidenceRef": "Mateus 16:20",
+        "evidenceSpan": "não dissessem a ninguém que Ele era o Cristo."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Cristo",
+        "gloss": "Título que Pedro confessa e que Jesus manda os discípulos ainda não anunciar."
+      },
+      {
+        "term": "revelado",
+        "gloss": "Jesus diz que a confissão não veio de carne e sangue, mas do Pai."
+      },
+      {
+        "term": "igreja",
+        "gloss": "É o que Jesus diz que edificará, e as portas do inferno não prevalecem contra ela."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus pergunta e o povo é citado",
+        "evidenceRef": "Mateus 16:13–14"
+      },
+      {
+        "label": "Pedro confessa quem Jesus é",
+        "evidenceRef": "Mateus 16:15–16"
+      },
+      {
+        "label": "O Pai revela e Jesus fala da igreja",
+        "evidenceRef": "Mateus 16:17–18"
+      },
+      {
+        "label": "Jesus entrega as chaves e pede silêncio",
+        "evidenceRef": "Mateus 16:19–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jesus deixa a opinião do povo e pergunta o que os próprios discípulos dizem.",
+        "marker": "Mas",
+        "evidenceRef": "Mateus 16:15"
+      },
+      {
+        "kind": "causa",
+        "text": "Simão é bem-aventurado porque a confissão foi revelada pelo Pai, não por carne e sangue.",
+        "marker": "porque",
+        "evidenceRef": "Mateus 16:17"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois de falar da igreja e das chaves, Jesus pede que não anunciem que ele é o Cristo.",
+        "marker": "Então",
+        "evidenceRef": "Mateus 16:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 20:31",
+        "bridge": "Jesus é o Cristo"
+      },
+      {
+        "ref": "Mateus 11:27",
+        "bridge": "O Pai conhece o Filho"
+      },
+      {
+        "ref": "Mateus 18:18",
+        "bridge": "Ligar e desligar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O povo já dizia que Jesus é o Cristo, o Filho do Deus vivo.",
+        "why": "As respostas do povo foram João Batista, Elias, Jeremias ou algum dos profetas."
+      },
+      {
+        "text": "Pedro chegou a essa confissão por si, por carne e sangue.",
+        "why": "Jesus diz que isso não foi revelado por carne e sangue, mas pelo Pai."
+      },
+      {
+        "text": "Jesus queria que os discípulos anunciassem logo que ele era o Cristo.",
+        "why": "No fim, ele adverte que não dissessem a ninguém que ele era o Cristo."
+      }
+    ],
+    "centralInsight": "Saber quem Jesus é vem do Pai, e sobre essa confissão ele edifica a igreja.",
+    "anchorQuestion": "Quem Jesus diz que revelou a Pedro a identidade dele?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 16:16, Simão Pedro respondeu que Jesus é o Cristo, o Filho do Deus vivo.",
+      "verseRef": "Mateus 16:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo.",
+      "feedbackCorrect": "Pedro responde assim: Jesus é o Cristo, o Filho do Deus vivo.",
+      "feedbackWrong": {
+        "false": "Releia a resposta de Pedro: ele diz que Jesus é o Cristo, o Filho do Deus vivo."
+      },
+      "hint": "Leia a frase que Simão Pedro responde.",
+      "learningObjective": "Observar a confissão de Pedro sobre quem é Jesus.",
+      "evidence": [
+        "Mateus 16:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 16:16, toque quem respondeu a Jesus.",
+      "verseRef": "Mateus 16:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simão Pedro"
+        },
+        {
+          "id": "b",
+          "text": "o Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Deus vivo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Simão Pedro respondeu",
+      "feedbackCorrect": "Quem responde é Simão Pedro; o Cristo é o título que ele confessa.",
+      "feedbackWrong": {
+        "b": "Esse é o título confessado, não quem fala na frase.",
+        "c": "A expressão completa o título, mas não diz quem respondeu."
+      },
+      "hint": "Procure o sujeito do verbo respondeu.",
+      "learningObjective": "Identificar quem faz a confissão em Mateus 16:16.",
+      "evidence": [
+        "Mateus 16:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 16:14, quem o povo dizia ser o Filho do Homem?",
+      "verseRef": "Mateus 16:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "João Batista, Elias, Jeremias ou um profeta"
+        },
+        {
+          "id": "b",
+          "text": "O Cristo, o Filho do Deus vivo"
+        },
+        {
+          "id": "c",
+          "text": "O próprio Simão Pedro"
+        },
+        {
+          "id": "d",
+          "text": "Um dos doze discípulos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "João Batista; outros dizem que é Elias, e ainda outros que é Jeremias ou algum dos profetas.",
+      "feedbackCorrect": "O povo é citado como João Batista, Elias, Jeremias ou algum profeta.",
+      "feedbackWrong": {
+        "b": "Esse título é a resposta de Pedro, no versículo 16, não a fala do povo.",
+        "c": "Pedro responde depois; o povo não o aponta como o Filho do Homem.",
+        "d": "O texto cita profetas conhecidos, não um dos doze."
+      },
+      "hint": "Leia os nomes que os discípulos relatam.",
+      "learningObjective": "Observar as opiniões do povo sobre o Filho do Homem.",
+      "evidence": [
+        "Mateus 16:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 16:18 na ordem do texto.",
+      "verseRef": "Mateus 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "tu és Pedro"
+        },
+        {
+          "id": "b",
+          "text": "sobre esta pedra edificarei a minha igreja"
+        },
+        {
+          "id": "c",
+          "text": "as portas do inferno não prevalecerão contra ela"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tu és Pedro, e sobre esta pedra edificarei a minha igreja",
+      "feedbackCorrect": "A frase vai do nome Pedro à igreja e, no fim, às portas do inferno.",
+      "feedbackWrong": {
+        "default": "Comece pelo nome Pedro; a igreja vem depois, e as portas no fim."
+      },
+      "hint": "A primeira parte dá um nome a Simão.",
+      "learningObjective": "Reconhecer a sequência da fala de Jesus em Mateus 16:18.",
+      "evidence": [
+        "Mateus 16:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 16:16, com que palavra Pedro identifica Jesus?",
+      "verseRef": "Mateus 16:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elias"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "Cristo"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Tu és o Cristo",
+      "feedbackCorrect": "Pedro confessa esse título: tu és o Cristo, o Filho do Deus vivo.",
+      "feedbackWrong": {
+        "a": "Elias é hipótese de alguns do povo, não a palavra de Pedro.",
+        "b": "Algum dos profetas é o que o povo diz, não a fala de Pedro."
+      },
+      "hint": "Olhe o título no centro da resposta de Pedro.",
+      "learningObjective": "Lembrar o título concreto que Pedro dá a Jesus.",
+      "evidence": [
+        "Mateus 16:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 16:17 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 16:17",
+      "passageA": {
+        "ref": "Mateus 16:17"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem Jesus é não se decide pela opinião do povo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Opinião repetida do povo"
+        },
+        {
+          "id": "b",
+          "text": "Revelação vinda do Pai"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio pedido por Jesus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas pelo meu Pai que está nos céus",
+      "feedbackCorrect": "Jesus atribui a confissão ao Pai, não à opinião do povo.",
+      "feedbackWrong": {
+        "a": "O povo deu outros nomes; aqui a origem apontada é o Pai.",
+        "c": "O silêncio vem no fim do relato; aqui a ponte é o Pai."
+      },
+      "hint": "Veja quem Jesus aponta como origem da confissão.",
+      "learningObjective": "Ligar a palavra de Jesus à origem da confissão no Pai.",
+      "evidence": [
+        "Mateus 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 16:17, Jesus declara Simão bem-aventurado porque a confissão veio por carne e sangue.",
+      "verseRef": "Mateus 16:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "não foi revelado por carne e sangue, mas pelo meu Pai",
+      "feedbackCorrect": "A causa é o contrário: não foi carne e sangue, e sim o Pai.",
+      "feedbackWrong": {
+        "true": "O versículo nega isso: não foi por carne e sangue, mas pelo Pai."
+      },
+      "hint": "Repare na negação antes de carne e sangue.",
+      "learningObjective": "Compreender a causa que Jesus dá para a bem-aventurança.",
+      "evidence": [
+        "Mateus 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 16:15, toque a palavra que marca o contraste com a opinião do povo.",
+      "verseRef": "Mateus 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "vocês"
+        },
+        {
+          "id": "b",
+          "text": "Mas"
+        },
+        {
+          "id": "c",
+          "text": "quem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Mas, vocês, quem dizem que eu sou?",
+      "feedbackCorrect": "Mas marca a virada: Jesus deixa o povo e pergunta aos discípulos.",
+      "feedbackWrong": {
+        "a": "Vocês indica a quem ele pergunta, não o contraste com o povo.",
+        "c": "Quem abre a pergunta; o contraste está na palavra anterior."
+      },
+      "hint": "Procure a palavra curta logo depois dos dois-pontos.",
+      "learningObjective": "Reconhecer o marcador que separa o povo dos discípulos.",
+      "evidence": [
+        "Mateus 16:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que a pergunta de Mateus 16:15 faz diante da opinião do povo?",
+      "verseRef": "Mateus 16:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pede aos discípulos uma resposta própria"
+        },
+        {
+          "id": "b",
+          "text": "Confirma o acerto da opinião popular"
+        },
+        {
+          "id": "c",
+          "text": "Encerra o assunto sem outra pergunta"
+        },
+        {
+          "id": "d",
+          "text": "Substitui Jesus por um profeta antigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas, vocês, quem dizem que eu sou?",
+      "feedbackCorrect": "Com essa pergunta, Jesus deixa o povo e pede a fala dos discípulos.",
+      "feedbackWrong": {
+        "b": "O povo citou profetas; Jesus não trata isso como acerto.",
+        "c": "A frase é uma pergunta nova, dirigida aos discípulos.",
+        "d": "Ele não muda de pessoa; pergunta quem ele mesmo é."
+      },
+      "hint": "Observe para quem a nova pergunta se volta.",
+      "learningObjective": "Relacionar a opinião do povo com a pergunta aos discípulos.",
+      "evidence": [
+        "Mateus 16:14–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual a sequência dos movimentos nesta cena?",
+      "verseRef": "Mateus 16:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus pergunta e o povo é citado"
+        },
+        {
+          "id": "b",
+          "text": "Pedro confessa quem Jesus é"
+        },
+        {
+          "id": "c",
+          "text": "O Pai revela e Jesus fala da igreja"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quem diz o povo que é o Filho do Homem?",
+      "feedbackCorrect": "A cena passa da pergunta ao povo, pela confissão, até o Pai e a igreja.",
+      "feedbackWrong": {
+        "default": "Parta do que o povo diz; a confissão vem antes da igreja."
+      },
+      "hint": "O primeiro movimento é a pergunta inicial.",
+      "learningObjective": "Compreender os três movimentos principais do diálogo.",
+      "evidence": [
+        "Mateus 16:13–14",
+        "Mateus 16:15–16",
+        "Mateus 16:17–18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 16:17, o que não ocorreu por carne e sangue?",
+      "verseRef": "Mateus 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "ocultado"
+        },
+        {
+          "id": "b",
+          "text": "revelado"
+        },
+        {
+          "id": "c",
+          "text": "inventado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não foi revelado por carne e sangue",
+      "feedbackCorrect": "Jesus diz que a confissão não foi revelada por carne e sangue.",
+      "feedbackWrong": {
+        "a": "O texto não fala em ocultar; o verbo é outro nessa frase.",
+        "c": "Não há invenção na frase; o que se nega é outra ação."
+      },
+      "hint": "Observe o verbo que vem depois de não foi.",
+      "learningObjective": "Reconhecer o verbo que carrega a origem da confissão.",
+      "evidence": [
+        "Mateus 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 16:16 a João 20:31?",
+      "verseRef": "Mateus 16:16",
+      "passageA": {
+        "ref": "Mateus 16:16"
+      },
+      "passageB": {
+        "ref": "João 20:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um profeta entre outros"
+        },
+        {
+          "id": "b",
+          "text": "Jesus é o Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio até o fim"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Tu és o Cristo, o Filho do Deus vivo.",
+      "feedbackCorrect": "Pedro confessa o Cristo, e João escreve para que creiam nisso.",
+      "feedbackWrong": {
+        "a": "João não põe Jesus como um profeta entre outros.",
+        "c": "Os dois textos falam de quem Jesus é, não de silêncio."
+      },
+      "hint": "Compare o título que Pedro usa com o propósito do livro.",
+      "learningObjective": "Relacionar a confissão de Pedro ao propósito de João.",
+      "evidence": [
+        "Mateus 16:16",
+        "João 20:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Mateus 16:20 mostra que Jesus pediu silêncio, e não um anúncio de que ele era o Cristo.",
+      "verseRef": "Mateus 16:20",
+      "correctOptionId": "true",
+      "evidenceSpan": "não dissessem a ninguém que Ele era o Cristo.",
+      "feedbackCorrect": "Ele adverte os discípulos a não dizerem a ninguém que ele era o Cristo.",
+      "feedbackWrong": {
+        "false": "O versículo é um aviso de silêncio, não uma ordem de anunciar."
+      },
+      "hint": "Leia o aviso final aos discípulos.",
+      "learningObjective": "Interpretar o aviso final como pedido de silêncio, não de anúncio.",
+      "evidence": [
+        "Mateus 16:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 16:17, toque quem revelou a confissão a Simão.",
+      "verseRef": "Mateus 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu Pai"
+        },
+        {
+          "id": "b",
+          "text": "carne e sangue"
+        },
+        {
+          "id": "c",
+          "text": "Simão Barjonas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas pelo meu Pai que está nos céus",
+      "feedbackCorrect": "A revelação veio do Pai, não de carne e sangue.",
+      "feedbackWrong": {
+        "b": "O texto nega essa origem: não foi por carne e sangue.",
+        "c": "Simão recebe a palavra; quem revela é outro."
+      },
+      "hint": "Procure a pessoa que está nos céus.",
+      "learningObjective": "Sustentar com o texto que a confissão veio do Pai.",
+      "evidence": [
+        "Mateus 16:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 16:16–17 sustenta sobre a resposta de Pedro?",
+      "verseRef": "Mateus 16:16–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedro confessa o Cristo porque o Pai revelou"
+        },
+        {
+          "id": "b",
+          "text": "O povo já confessava que Jesus é o Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Pedro descobriu isso só com carne e sangue"
+        },
+        {
+          "id": "d",
+          "text": "Jesus o elogia por repetir a multidão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não foi revelado por carne e sangue, mas pelo meu Pai",
+      "feedbackCorrect": "Pedro confessa o Cristo, e Jesus atribui essa resposta ao Pai.",
+      "feedbackWrong": {
+        "b": "O povo falou de profetas, não do Cristo.",
+        "c": "Jesus nega a origem em carne e sangue.",
+        "d": "A multidão não fez essa confissão; o Pai a revelou."
+      },
+      "hint": "Junte a resposta de Pedro à causa que Jesus declara.",
+      "learningObjective": "Escolher a leitura que o diálogo sustenta sobre a confissão.",
+      "evidence": [
+        "Mateus 16:16–17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica do diálogo até a igreja?",
+      "verseRef": "Mateus 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "A opinião do povo fica para trás"
+        },
+        {
+          "id": "b",
+          "text": "A confissão nasce da revelação"
+        },
+        {
+          "id": "c",
+          "text": "Jesus anuncia a igreja que edifica"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "edificarei a minha igreja",
+      "feedbackCorrect": "O diálogo deixa o povo, mostra a revelação e chega à igreja.",
+      "feedbackWrong": {
+        "default": "Siga o argumento: opinião, revelação e, no fim, a igreja."
+      },
+      "hint": "A igreja é o ponto de chegada do diálogo.",
+      "learningObjective": "Interpretar o caminho do diálogo até a igreja.",
+      "evidence": [
+        "Mateus 16:15",
+        "Mateus 16:17",
+        "Mateus 16:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 16:18, o que Jesus afirma que edificará?",
+      "verseRef": "Mateus 16:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "igreja"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "edificarei a minha igreja",
+      "feedbackCorrect": "Jesus declara que edificará a sua igreja, e as portas não prevalecem.",
+      "feedbackWrong": {
+        "a": "O texto não fala em casa; o que ele edificará tem outro nome.",
+        "b": "Não é uma cidade; Jesus nomeia outra obra."
+      },
+      "hint": "Veja o substantivo depois de a minha.",
+      "learningObjective": "Lembrar o termo com que Jesus nomeia o que vai edificar.",
+      "evidence": [
+        "Mateus 16:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 16:17 a Mateus 11:27?",
+      "verseRef": "Mateus 16:17",
+      "passageA": {
+        "ref": "Mateus 16:17"
+      },
+      "passageB": {
+        "ref": "Mateus 11:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Pai conhece o Filho"
+        },
+        {
+          "id": "b",
+          "text": "O povo conhece o Filho"
+        },
+        {
+          "id": "c",
+          "text": "A carne revela o Filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas pelo meu Pai que está nos céus",
+      "feedbackCorrect": "Nos dois textos, conhecer o Filho está com o Pai.",
+      "feedbackWrong": {
+        "b": "O povo não conhece o Filho; em Mateus 11 isso cabe ao Pai.",
+        "c": "A carne não revela; Jesus diz que foi o Pai."
+      },
+      "hint": "Compare quem conhece o Filho nos dois trechos.",
+      "learningObjective": "Ligar a revelação a Pedro ao conhecimento do Filho que está com o Pai.",
+      "evidence": [
+        "Mateus 16:17",
+        "Mateus 11:27"
+      ]
+    }
+  ]
+}

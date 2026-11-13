@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 9:1–6",
+    "passages": [
+      {
+        "ref": "Gênesis 9:1–6"
+      },
+      {
+        "ref": "Gênesis 9:7"
+      }
+    ],
+    "context": "Deus abençoa Noé e seus filhos e fala do sangue e da vida humana.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra que carrega o sentido desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Frutificai e multiplicai",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Deus abençoou noé filhos dizendo sejam.",
+        "evidenceRef": "Gênesis 9:1",
+        "evidenceSpan": "E Deus abençoou a Noé e a seus"
+      },
+      {
+        "text": "Temor pavor vocês virão todos animais.",
+        "evidenceRef": "Gênesis 9:2",
+        "evidenceSpan": "E o temor e o pavor de vocês"
+      },
+      {
+        "text": "Tudo move vive sustento eu dei.",
+        "evidenceRef": "Gênesis 9:3",
+        "evidenceSpan": "Tudo o que se move e vive será"
+      },
+      {
+        "text": "Comerão carne vida isto sangue.",
+        "evidenceRef": "Gênesis 9:4",
+        "evidenceSpan": "Não comerão a carne com a sua vida"
+      },
+      {
+        "text": "Certeza requererei sangue vocês sangue vida.",
+        "evidenceRef": "Gênesis 9:5",
+        "evidenceSpan": "o sangue da vida de vocês"
+      },
+      {
+        "text": "Quem derramar sangue homem pelo homem.",
+        "evidenceRef": "Gênesis 9:6",
+        "evidenceSpan": "porque Deus fez o homem à sua imagem"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "abençoou",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "filhos",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus abençoou noé filhos dizendo",
+        "evidenceRef": "Gênesis 9:1"
+      },
+      {
+        "label": "Temor pavor vocês virão todos",
+        "evidenceRef": "Gênesis 9:2"
+      },
+      {
+        "label": "Tudo move vive sustento eu",
+        "evidenceRef": "Gênesis 9:3"
+      },
+      {
+        "label": "Comerão carne vida isto sangue",
+        "evidenceRef": "Gênesis 9:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 9:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 9:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O marcador \"se\" liga o fluxo do relato neste versículo.",
+        "marker": "se",
+        "evidenceRef": "Gênesis 9:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 9:11",
+        "bridge": "Aliança após o dilúvio"
+      },
+      {
+        "ref": "Gênesis 12:2",
+        "bridge": "Promessa de nação"
+      },
+      {
+        "ref": "Gênesis 6:9",
+        "bridge": "Noé andou com Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "A vida humana tem valor diante de Deus: quem derrama sangue responde por isso."
+      }
+    ],
+    "centralInsight": "A vida humana tem valor diante de Deus: quem derrama sangue responde por isso.",
+    "anchorQuestion": "O que Gênesis 9:1 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 9:1, e Deus abençoou a Noé e a seus.",
+      "verseRef": "Gênesis 9:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "E Deus abençoou a Noé e a seus",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 9:1 afirma.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 9:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "abençoou"
+        },
+        {
+          "id": "c",
+          "text": "Noé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 9:3, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 9:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há tudo move vive sustento no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tudo o que se",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 9:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 9:1 na ordem do texto.",
+      "verseRef": "Gênesis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Deus abençoou"
+        },
+        {
+          "id": "b",
+          "text": "a Noé"
+        },
+        {
+          "id": "c",
+          "text": "e a seus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Deus abençoou",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 9:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "abençoou"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "Noé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abençoou",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 9:1 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 9:1",
+      "passageA": {
+        "ref": "Gênesis 9:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus abençoa Noé e seus filhos e fala do sangue e da vida humana."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 9:1, o marcador se une ideias no fluxo do texto.",
+      "verseRef": "Gênesis 9:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 9:1 afirma.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 9:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "se"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "abençoou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 9:4, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 9:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não comerão a carne",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 9:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus abençoou noé filhos dizendo"
+        },
+        {
+          "id": "b",
+          "text": "Temor pavor vocês virão todos"
+        },
+        {
+          "id": "c",
+          "text": "Tudo move vive sustento eu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 9:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 9:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "abençoou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tudo",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 9:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 9:1 a Gênesis 9:11.",
+      "verseRef": "Gênesis 9:1",
+      "passageA": {
+        "ref": "Gênesis 9:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 9:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança após o dilúvio"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 9:1",
+        "Gênesis 9:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 9:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 9:7 afirma.",
+      "evidence": [
+        "Gênesis 9:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 9:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "certeza"
+        },
+        {
+          "id": "b",
+          "text": "requererei"
+        },
+        {
+          "id": "c",
+          "text": "sangue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "certeza",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 9:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 9:5, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 9:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 9:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 9:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "requererei"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "abençoou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "requererei",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 9:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 9:1 a Gênesis 12:2.",
+      "verseRef": "Gênesis 9:1",
+      "passageA": {
+        "ref": "Gênesis 9:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 12:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa de nação"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 9:1",
+        "Gênesis 12:2"
+      ]
+    }
+  ]
+}

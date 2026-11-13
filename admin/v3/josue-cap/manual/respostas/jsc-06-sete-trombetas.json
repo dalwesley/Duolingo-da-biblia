@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 6:6–11",
+    "passages": [
+      {
+        "ref": "Josué 6:6–15"
+      }
+    ],
+    "context": "Josué manda sacerdotes levar a arca e tocar trombetas ao redor de Jericó; o povo marcha em silêncio.",
+    "keyword": "trombetas",
+    "keywordGloss": "Sete trombetas de chifre de carneiro soam diante da arca do Senhor.",
+    "focusQuestion": "Onde você precisa obedecer em silêncio antes de gritar vitória?",
+    "reflectionPrompts": [
+      "Arca e trombetas",
+      "Silêncio do povo",
+      "Sete dias"
+    ],
+    "facts": [
+      {
+        "text": "Josué mandou sete sacerdotes tocar sete trombetas diante da arca.",
+        "evidenceRef": "Josué 6:6",
+        "evidenceSpan": "sete sacerdotes toquem sete trombetas de chifre de carneiro"
+      },
+      {
+        "text": "O povo deveria passar e rodear a cidade.",
+        "evidenceRef": "Josué 6:7",
+        "evidenceSpan": "Passai e rodeai a cidade"
+      },
+      {
+        "text": "Homens armados iam à frente dos sacerdotes.",
+        "evidenceRef": "Josué 6:9",
+        "evidenceSpan": "os homens armados iam à frente dos sacerdotes"
+      },
+      {
+        "text": "Josué ordenou que o povo não gritasse até ele mandar.",
+        "evidenceRef": "Josué 6:10",
+        "evidenceSpan": "Não gritem, nem façam ouvir a sua voz"
+      },
+      {
+        "text": "A arca rodeou a cidade uma vez e voltaram ao acampamento.",
+        "evidenceRef": "Josué 6:11",
+        "evidenceSpan": "a arca do Senhor rodeou a cidade, contornando-a uma vez"
+      },
+      {
+        "text": "No sétimo dia rodearam a cidade sete vezes.",
+        "evidenceRef": "Josué 6:15",
+        "evidenceSpan": "rodearam a cidade sete vezes"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "trombetas",
+        "gloss": "Instrumentos de chifre tocados diante da arca."
+      },
+      {
+        "term": "arca",
+        "gloss": "A arca do Senhor que rodeia a cidade."
+      },
+      {
+        "term": "Porém",
+        "gloss": "Marca a ordem de silêncio apesar do som das trombetas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem: arca e sete trombetas",
+        "evidenceRef": "Josué 6:6–7"
+      },
+      {
+        "label": "Marcha com trombetas e silêncio",
+        "evidenceRef": "Josué 6:8–10"
+      },
+      {
+        "label": "Uma volta e retorno ao acampamento",
+        "evidenceRef": "Josué 6:11–14"
+      },
+      {
+        "label": "No sétimo dia, sete voltas",
+        "evidenceRef": "Josué 6:15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Trombetas soam; porém o povo deve calar até a ordem.",
+        "marker": "Porém",
+        "evidenceRef": "Josué 6:10"
+      },
+      {
+        "kind": "sequência",
+        "text": "Rodeiam uma vez e depois retornam ao acampamento.",
+        "marker": "depois",
+        "evidenceRef": "Josué 6:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Assim procederam por seis dias; no sétimo, sete voltas.",
+        "marker": "assim",
+        "evidenceRef": "Josué 6:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Levítico 25:9",
+        "bridge": "Trombeta do jubileu"
+      },
+      {
+        "ref": "Hebreus 11:30",
+        "bridge": "Muros caem pela fé"
+      },
+      {
+        "ref": "Números 10:8–9",
+        "bridge": "Sacerdotes tocam trombetas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O povo podia gritar desde o primeiro dia.",
+        "why": "Josué ordenou silêncio até mandar gritar."
+      },
+      {
+        "text": "Bastava uma volta no sétimo dia.",
+        "why": "Nesse dia rodearam sete vezes."
+      },
+      {
+        "text": "A arca ficava no acampamento.",
+        "why": "A arca do Senhor rodeou a cidade."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 6:10, até quando o povo não podia gritar?",
+    "centralInsight": "Por seis dias o povo marcha em silêncio; no sétimo dia, sete voltas com as trombetas."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 6:6, três sacerdotes devem tocar trombetas diante da arca.",
+      "verseRef": "Josué 6:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "sete sacerdotes toquem sete trombetas",
+      "feedbackCorrect": "São sete sacerdotes com sete trombetas.",
+      "feedbackWrong": {
+        "true": "Releia 6:6: sete sacerdotes e sete trombetas."
+      },
+      "hint": "Conte os sacerdotes e as trombetas.",
+      "learningObjective": "Observar a ordem das trombetas.",
+      "evidence": [
+        "Josué 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 6:7, toque o que o povo deve fazer à cidade.",
+      "verseRef": "Josué 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "rodeai"
+        },
+        {
+          "id": "b",
+          "text": "Passai"
+        },
+        {
+          "id": "c",
+          "text": "armado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Passai e rodeai a cidade",
+      "feedbackCorrect": "Devem passar e rodear a cidade.",
+      "feedbackWrong": {
+        "b": "Passai é o primeiro verbo; a ação à cidade é rodeai.",
+        "c": "Armado descreve quem vai adiante."
+      },
+      "hint": "Veja o segundo verbo da ordem.",
+      "learningObjective": "Identificar a ação ao redor da cidade.",
+      "evidence": [
+        "Josué 6:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 6:10, o que o povo não deve fazer até a ordem?",
+      "verseRef": "Josué 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gritar ou fazer ouvir a voz"
+        },
+        {
+          "id": "b",
+          "text": "Tocar as trombetas"
+        },
+        {
+          "id": "c",
+          "text": "Carregar a arca"
+        },
+        {
+          "id": "d",
+          "text": "Rodear a cidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "O silêncio vale até Josué mandar gritar.",
+      "feedbackWrong": {
+        "b": "Trombetas já soam; o povo cala.",
+        "c": "Sacerdotes levam a arca.",
+        "d": "Rodear é ordenado; gritar não."
+      },
+      "hint": "Leia a proibição de Josué.",
+      "learningObjective": "Reconhecer a ordem de silêncio.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 6:10 na ordem do texto.",
+      "verseRef": "Josué 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não gritem, nem façam ouvir a sua voz"
+        },
+        {
+          "id": "b",
+          "text": "nem saia palavra alguma de sua boca"
+        },
+        {
+          "id": "c",
+          "text": "até o dia em que eu lhes disser: Gritem!"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "Proibição e prazo do grito.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição de gritar."
+      },
+      "hint": "O que vem primeiro na ordem?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 6:15, complete: rodearam a cidade sete ___.",
+      "verseRef": "Josué 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "vezes"
+        },
+        {
+          "id": "b",
+          "text": "muros"
+        },
+        {
+          "id": "c",
+          "text": "reis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rodearam a cidade sete vezes",
+      "feedbackCorrect": "No sétimo dia foram sete voltas.",
+      "feedbackWrong": {
+        "b": "Não é muros: o texto diz vezes.",
+        "c": "A palavra é vezes."
+      },
+      "hint": "Veja o numerador das voltas.",
+      "learningObjective": "Lembrar as sete voltas.",
+      "evidence": [
+        "Josué 6:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 6:10 comunica que se liga a este contexto?",
+      "verseRef": "Josué 6:10",
+      "passageA": {
+        "ref": "Josué 6:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel cerca Jericó com a arca e trombetas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Silêncio até a ordem"
+        },
+        {
+          "id": "b",
+          "text": "Grito desde o dia um"
+        },
+        {
+          "id": "c",
+          "text": "Arca só no acampamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "No cerco, o povo cala até Josué mandar.",
+      "feedbackWrong": {
+        "b": "Não há grito no primeiro dia.",
+        "c": "A arca rodeia a cidade."
+      },
+      "hint": "Veja a ordem ao povo.",
+      "learningObjective": "Ligar o cerco ao silêncio.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 6:10, o Porém marca que, apesar das trombetas, o povo deve calar.",
+      "verseRef": "Josué 6:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porém, Josué havia ordenado ao povo",
+      "feedbackCorrect": "O contraste é som das trombetas versus silêncio.",
+      "feedbackWrong": {
+        "false": "O Porém introduz a ordem de silêncio."
+      },
+      "hint": "Leia o Porém no início.",
+      "learningObjective": "Ver o contraste silêncio e trombetas.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 6:10, toque a palavra que marca o contraste com o som contínuo.",
+      "verseRef": "Josué 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "boca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, Josué havia ordenado ao povo",
+      "feedbackCorrect": "Porém introduz a ordem de não gritar.",
+      "feedbackWrong": {
+        "b": "Povo recebe a ordem; a marca é Porém.",
+        "c": "Boca é o que deve calar; a marca é Porém."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre os seis dias e o sétimo?",
+      "verseRef": "Josué 6:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Seis dias uma volta; no sétimo, sete voltas"
+        },
+        {
+          "id": "b",
+          "text": "Todos os dias já eram sete voltas"
+        },
+        {
+          "id": "c",
+          "text": "Só no sexto dia houve sete voltas"
+        },
+        {
+          "id": "d",
+          "text": "No sétimo não rodearam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim procederam por seis dias",
+      "feedbackCorrect": "O padrão muda no sétimo dia.",
+      "feedbackWrong": {
+        "b": "Sete voltas são do sétimo dia.",
+        "c": "O texto marca o sétimo dia.",
+        "d": "No sétimo rodearam sete vezes."
+      },
+      "hint": "Compare 6:14 e 6:15.",
+      "learningObjective": "Compreender a mudança no sétimo dia.",
+      "evidence": [
+        "Josué 6:14–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 6:6–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem: arca e sete trombetas"
+        },
+        {
+          "id": "b",
+          "text": "Marcha com trombetas e silêncio"
+        },
+        {
+          "id": "c",
+          "text": "No sétimo dia, sete voltas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sete sacerdotes toquem sete trombetas",
+      "feedbackCorrect": "Ordem, marcha e sétimo dia.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem de Josué."
+      },
+      "hint": "Qual ordem abre a cena?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 6:6",
+        "Josué 6:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 6:10, complete: até o dia em que eu lhes disser: ___!",
+      "verseRef": "Josué 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gritem"
+        },
+        {
+          "id": "b",
+          "text": "Fujam"
+        },
+        {
+          "id": "c",
+          "text": "Calem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu lhes disser: Gritem!",
+      "feedbackCorrect": "O sinal é a ordem Gritem!",
+      "feedbackWrong": {
+        "b": "Não é Fujam.",
+        "c": "O verbo da ordem é Gritem."
+      },
+      "hint": "Veja a palavra depois de disser.",
+      "learningObjective": "Lembrar o verbo da ordem final.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 6:6 a Números 10:8–9?",
+      "verseRef": "Josué 6:6",
+      "passageA": {
+        "ref": "Josué 6:6"
+      },
+      "passageB": {
+        "ref": "Números 10:8–9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacerdotes tocam trombetas"
+        },
+        {
+          "id": "b",
+          "text": "Povo toca a arca"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem qualquer som"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sete sacerdotes toquem sete trombetas",
+      "feedbackCorrect": "Nos dois textos sacerdotes tocam trombetas.",
+      "feedbackWrong": {
+        "b": "Não é o povo que toca.",
+        "c": "Há trombetas, não silêncio total."
+      },
+      "hint": "Quem toca as trombetas?",
+      "learningObjective": "Ligar as trombetas sacerdotais.",
+      "evidence": [
+        "Josué 6:6",
+        "Números 10:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 6:10, o silêncio prova que a vitória depende só do grito humano desde o início.",
+      "verseRef": "Josué 6:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "até o dia em que eu lhes disser: Gritem!",
+      "feedbackCorrect": "O grito espera a ordem; a cena é obediência.",
+      "feedbackWrong": {
+        "true": "O texto atrasa o grito até a ordem."
+      },
+      "hint": "Veja o até o dia.",
+      "learningObjective": "Avaliar a leitura do silêncio.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 6:15, toque o trecho que sustenta a intensidade do sétimo dia.",
+      "verseRef": "Josué 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "sete vezes"
+        },
+        {
+          "id": "b",
+          "text": "madrugaram"
+        },
+        {
+          "id": "c",
+          "text": "alva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rodearam a cidade sete vezes",
+      "feedbackCorrect": "Sete vezes marca a diferença do dia.",
+      "feedbackWrong": {
+        "b": "Madrugaram é o horário; a intensidade é sete vezes.",
+        "c": "Alva é o tempo; a marca é sete vezes."
+      },
+      "hint": "Veja quantas vezes rodearam.",
+      "learningObjective": "Tocar o que sustenta o sétimo dia.",
+      "evidence": [
+        "Josué 6:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 6:6–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obediência ritmada: silêncio, arca e prazo do grito"
+        },
+        {
+          "id": "b",
+          "text": "Vitória por gritos desde o dia um"
+        },
+        {
+          "id": "c",
+          "text": "A arca é irrelevante no cerco"
+        },
+        {
+          "id": "d",
+          "text": "Só soldados importam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "O cerco é liturgia de obediência.",
+      "feedbackWrong": {
+        "b": "O grito só vem na ordem.",
+        "c": "A arca rodeia a cidade.",
+        "d": "Sacerdotes e trombetas são centrais."
+      },
+      "hint": "Una arca, silêncio e sétimo dia.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 6:6–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da obediência em Jericó.",
+      "verseRef": "Josué 6:10–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo cala até a ordem de gritar"
+        },
+        {
+          "id": "b",
+          "text": "Seis dias de uma volta"
+        },
+        {
+          "id": "c",
+          "text": "Sétimo dia com sete voltas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "Silêncio, rotina e intensificação.",
+      "feedbackWrong": {
+        "default": "Comece pelo silêncio ordenado."
+      },
+      "hint": "O que Josué exige primeiro?",
+      "learningObjective": "Encadear silêncio e ritmo",
+      "evidence": [
+        "Josué 6:10",
+        "Josué 6:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 6:6, complete: toquem sete ___ de chifre de carneiro.",
+      "verseRef": "Josué 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "trombetas"
+        },
+        {
+          "id": "b",
+          "text": "espadas"
+        },
+        {
+          "id": "c",
+          "text": "muros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sete trombetas de chifre de carneiro",
+      "feedbackCorrect": "O instrumento é trombetas.",
+      "feedbackWrong": {
+        "b": "Não é espadas.",
+        "c": "A palavra é trombetas."
+      },
+      "hint": "Veja o objeto de toquem.",
+      "learningObjective": "Lembrar o termo trombetas.",
+      "evidence": [
+        "Josué 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 6:15 a Hebreus 11:30?",
+      "verseRef": "Josué 6:15",
+      "passageA": {
+        "ref": "Josué 6:15"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:30"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Muros caem pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Grito sem qualquer ordem"
+        },
+        {
+          "id": "c",
+          "text": "Arca abandonada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rodearam a cidade sete vezes",
+      "feedbackCorrect": "A marcha obediente é o caminho da fé.",
+      "feedbackWrong": {
+        "b": "Há ordem e prazo.",
+        "c": "A arca está no centro."
+      },
+      "hint": "Pense no que Hebreus celebra.",
+      "learningObjective": "Ligar o cerco à fé de Hebreus.",
+      "evidence": [
+        "Josué 6:15",
+        "Hebreus 11:30"
+      ]
+    }
+  ]
+}

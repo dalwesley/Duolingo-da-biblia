@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "1 João 3:1–6",
+    "passages": [
+      {
+        "ref": "1 João 3:1–6"
+      }
+    ],
+    "context": "João celebra o amor do Pai que nos faz filhos agora. Quem tem essa esperança se purifica; quem permanece nele não continua no pecado.",
+    "keyword": "filhos",
+    "keywordGloss": "Já somos filhos de Deus; ainda se manifestará o que haveremos de ser.",
+    "focusQuestion": "Sua esperança de ver a Cristo está te purificando agora?",
+    "reflectionPrompts": [
+      "Filhos agora",
+      "Semelhantes a Ele",
+      "Não continuar no pecado"
+    ],
+    "facts": [
+      {
+        "text": "O Pai concedeu amor a ponto de sermos chamados filhos de Deus; e de fato somos.",
+        "evidenceRef": "1 João 3:1",
+        "evidenceSpan": "sermos chamados filhos de Deus; e, de fato, somos filhos de Deus"
+      },
+      {
+        "text": "Agora somos filhos; quando Ele se manifestar, seremos semelhantes a Ele.",
+        "evidenceRef": "1 João 3:2",
+        "evidenceSpan": "quando Ele se manifestar, seremos semelhantes a Ele"
+      },
+      {
+        "text": "Todo aquele que nEle tem esta esperança purifica a si mesmo.",
+        "evidenceRef": "1 João 3:3",
+        "evidenceSpan": "purifica a si mesmo, assim como Ele é puro"
+      },
+      {
+        "text": "O pecado é a transgressão da lei.",
+        "evidenceRef": "1 João 3:4",
+        "evidenceSpan": "o pecado é a transgressão da lei"
+      },
+      {
+        "text": "Ele se manifestou para remover nossos pecados, e nEle não há pecado.",
+        "evidenceRef": "1 João 3:5",
+        "evidenceSpan": "Ele se manifestou para remover nossos pecados, e n'Ele não há pecado"
+      },
+      {
+        "text": "Quem permanece nEle não peca; quem peca não o viu nem o conheceu.",
+        "evidenceRef": "1 João 3:6",
+        "evidenceSpan": "Aquele que permanece n'Ele não peca"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "filhos",
+        "gloss": "Identidade presente concedida pelo amor do Pai."
+      },
+      {
+        "term": "esperança",
+        "gloss": "Leva a purificar-se, como Ele é puro."
+      },
+      {
+        "term": "permanece",
+        "gloss": "Quem permanece nele não continua no pecado."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Amor do Pai e identidade de filhos",
+        "evidenceRef": "1 João 3:1"
+      },
+      {
+        "label": "Esperança da semelhança futura",
+        "evidenceRef": "1 João 3:2–3"
+      },
+      {
+        "label": "Pecado como transgressão",
+        "evidenceRef": "1 João 3:4"
+      },
+      {
+        "label": "Manifestação para remover pecados",
+        "evidenceRef": "1 João 3:5–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O mundo não nos conhece porque não conheceu a Ele.",
+        "marker": "porque",
+        "evidenceRef": "1 João 3:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem tem a esperança purifica a si mesmo.",
+        "marker": null,
+        "evidenceRef": "1 João 3:3"
+      },
+      {
+        "kind": "propósito",
+        "text": "Ele se manifestou para remover nossos pecados.",
+        "marker": "para",
+        "evidenceRef": "1 João 3:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 1:12",
+        "bridge": "Direito de ser filhos"
+      },
+      {
+        "ref": "Romanos 8:16",
+        "bridge": "Espírito testemunha filhos"
+      },
+      {
+        "ref": "Filipenses 3:21",
+        "bridge": "Corpo semelhante à glória"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ser filho de Deus é só título futuro, não realidade agora.",
+        "why": "Agora somos filhos de Deus."
+      },
+      {
+        "text": "A esperança futura dispensa purificação presente.",
+        "why": "Quem tem a esperança purifica a si mesmo."
+      },
+      {
+        "text": "Permanecer nele convive com continuar no pecado sem tensão.",
+        "why": "Quem permanece nele não peca."
+      }
+    ],
+    "centralInsight": "Somos filhos de Deus agora; quem nele permanece não continua no pecado.",
+    "anchorQuestion": "O que 1 João 3:2 diz que somos agora?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 João 3:2, agora somos filhos de Deus.",
+      "verseRef": "1 João 3:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "agora somos filhos de Deus",
+      "feedbackCorrect": "A identidade de filhos é presente.",
+      "feedbackWrong": {
+        "false": "O versículo diz agora somos."
+      },
+      "hint": "Leia a palavra agora.",
+      "learningObjective": "Observar a identidade presente.",
+      "evidence": [
+        "1 João 3:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 João 3:1, toque o que o Pai nos concedeu a ponto de sermos chamados.",
+      "verseRef": "1 João 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "mundo"
+        },
+        {
+          "id": "c",
+          "text": "Pai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que grande amor o Pai nos concedeu",
+      "feedbackCorrect": "O Pai concedeu grande amor.",
+      "feedbackWrong": {
+        "b": "Mundo não nos conhece.",
+        "c": "Pecado é removido no v.5."
+      },
+      "hint": "Veja o que o Pai concedeu.",
+      "learningObjective": "Identificar o dom do Pai.",
+      "evidence": [
+        "1 João 3:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 João 3:3, o que faz quem tem esta esperança?",
+      "verseRef": "1 João 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Purifica a si mesmo, assim como Ele é puro"
+        },
+        {
+          "id": "b",
+          "text": "Continua no pecado sem cuidado"
+        },
+        {
+          "id": "c",
+          "text": "Nega ser filho agora"
+        },
+        {
+          "id": "d",
+          "text": "Espera sem qualquer mudança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "purifica a si mesmo, assim como Ele é puro",
+      "feedbackCorrect": "A esperança produz purificação.",
+      "feedbackWrong": {
+        "b": "Permanecer não convive com pecar.",
+        "c": "Já somos filhos.",
+        "d": "A esperança purifica."
+      },
+      "hint": "Leia o verbo principal.",
+      "learningObjective": "Reconhecer o efeito da esperança.",
+      "evidence": [
+        "1 João 3:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 João 3:5 na ordem do texto.",
+      "verseRef": "1 João 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele se manifestou para remover nossos pecados"
+        },
+        {
+          "id": "b",
+          "text": "e n'Ele"
+        },
+        {
+          "id": "c",
+          "text": "não há pecado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele se manifestou para remover nossos pecados, e n'Ele não há pecado",
+      "feedbackCorrect": "Primeiro o propósito; depois a pureza nele.",
+      "feedbackWrong": {
+        "default": "Comece com Ele se manifestou."
+      },
+      "hint": "O versículo une propósito e pureza.",
+      "learningObjective": "Seguir a ordem do v.5.",
+      "evidence": [
+        "1 João 3:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 João 3:2, complete: seremos ___ a Ele.",
+      "verseRef": "1 João 3:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "semelhantes"
+        },
+        {
+          "id": "b",
+          "text": "estranhos"
+        },
+        {
+          "id": "c",
+          "text": "ímpios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seremos semelhantes a Ele",
+      "feedbackCorrect": "Quando Ele se manifestar, seremos semelhantes a Ele.",
+      "feedbackWrong": {
+        "b": "O mundo é que não nos conhece.",
+        "c": "Ímpios não é o alvo."
+      },
+      "hint": "É o adjetivo depois de seremos.",
+      "learningObjective": "Lembrar o termo da esperança.",
+      "evidence": [
+        "1 João 3:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 João 3:1 comunica que se liga a este contexto?",
+      "verseRef": "1 João 3:1",
+      "passageA": {
+        "ref": "1 João 3:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "João celebra o amor do Pai que nos faz filhos agora e chama a purificação e a permanência longe do pecado."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Somos filhos de Deus"
+        },
+        {
+          "id": "b",
+          "text": "O mundo nos conhece bem"
+        },
+        {
+          "id": "c",
+          "text": "Permanecer no pecado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de fato, somos filhos de Deus",
+      "feedbackCorrect": "No contexto, a base é a identidade de filhos.",
+      "feedbackWrong": {
+        "b": "O mundo não nos conhece.",
+        "c": "Permanecer nele corta o pecado."
+      },
+      "hint": "Veja a afirmação de fato.",
+      "learningObjective": "Ligar o contexto à filiação.",
+      "evidence": [
+        "1 João 3:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 João 3:3, a esperança de vê-lo leva a purificar-se.",
+      "verseRef": "1 João 3:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "todo aquele que n'Ele tem esta esperança purifica a si mesmo",
+      "feedbackCorrect": "A esperança produz purificação presente.",
+      "feedbackWrong": {
+        "false": "O texto liga esperança e purificar."
+      },
+      "hint": "Leia o verbo depois de esperança.",
+      "learningObjective": "Ver a relação esperança-purificação.",
+      "evidence": [
+        "1 João 3:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 João 3:1, toque a palavra que marca a causa de o mundo não nos conhecer.",
+      "verseRef": "1 João 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "grande"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque não o conheceu a Ele mesmo",
+      "feedbackCorrect": "Porque introduz a causa.",
+      "feedbackWrong": {
+        "b": "Grande descreve o amor.",
+        "c": "Filhos é a identidade."
+      },
+      "hint": "Procure a partícula causal.",
+      "learningObjective": "Tocar o marcador causal.",
+      "evidence": [
+        "1 João 3:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação 1 João 3:5–6 estabelece?",
+      "verseRef": "1 João 3:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele remove pecados; quem permanece nele não peca"
+        },
+        {
+          "id": "b",
+          "text": "Ele remove pecados para que continuemos neles"
+        },
+        {
+          "id": "c",
+          "text": "Permanecer nele é indiferente ao pecado"
+        },
+        {
+          "id": "d",
+          "text": "NEle há pecado misturado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que permanece n'Ele não peca",
+      "feedbackCorrect": "A manifestação para remover pecados sustenta a permanência sem pecar.",
+      "feedbackWrong": {
+        "b": "O propósito é remover.",
+        "c": "Permanecer e pecar se excluem.",
+        "d": "NEle não há pecado."
+      },
+      "hint": "Una o v.5 ao v.6.",
+      "learningObjective": "Compreender remoção e permanência.",
+      "evidence": [
+        "1 João 3:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "1 João 3:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amor do Pai e identidade de filhos"
+        },
+        {
+          "id": "b",
+          "text": "Esperança da semelhança futura"
+        },
+        {
+          "id": "c",
+          "text": "Manifestação para remover pecados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "agora somos filhos de Deus",
+      "feedbackCorrect": "Da filiação à esperança, até a remoção do pecado.",
+      "feedbackWrong": {
+        "default": "Comece pelos filhos; a remoção fecha."
+      },
+      "hint": "Siga vv.1, 2–3 e 5.",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "1 João 3:1",
+        "1 João 3:2",
+        "1 João 3:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 João 3:5, complete: Ele se manifestou para ___ nossos pecados.",
+      "verseRef": "1 João 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "remover"
+        },
+        {
+          "id": "b",
+          "text": "aumentar"
+        },
+        {
+          "id": "c",
+          "text": "ignorar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para remover nossos pecados",
+      "feedbackCorrect": "O propósito é remover nossos pecados.",
+      "feedbackWrong": {
+        "b": "Remover é o verbo.",
+        "c": "Ele age contra o pecado."
+      },
+      "hint": "É o verbo depois de para.",
+      "learningObjective": "Lembrar o propósito da manifestação.",
+      "evidence": [
+        "1 João 3:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 João 3:1 a João 1:12?",
+      "verseRef": "1 João 3:1",
+      "passageA": {
+        "ref": "1 João 3:1"
+      },
+      "passageB": {
+        "ref": "João 1:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ser filhos de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Continuar no pecado"
+        },
+        {
+          "id": "c",
+          "text": "Negar a esperança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sermos chamados filhos de Deus",
+      "feedbackCorrect": "Ambos afirmam a filiação dada por Deus.",
+      "feedbackWrong": {
+        "b": "Pecado é removido.",
+        "c": "A esperança purifica."
+      },
+      "hint": "Compare a linguagem de filhos.",
+      "learningObjective": "Ligar a filiação.",
+      "evidence": [
+        "1 João 3:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo 1 João 3:2, ser filho de Deus é só título futuro, sem realidade agora.",
+      "verseRef": "1 João 3:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "agora somos filhos de Deus",
+      "feedbackCorrect": "Agora somos filhos; o futuro é a semelhança plena.",
+      "feedbackWrong": {
+        "true": "A palavra agora desmente o só futuro."
+      },
+      "hint": "Leia a palavra agora.",
+      "learningObjective": "Rejeitar a filiação só futura.",
+      "evidence": [
+        "1 João 3:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 João 3:6, toque o trecho que sustenta a vida de quem permanece.",
+      "verseRef": "1 João 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "não peca"
+        },
+        {
+          "id": "b",
+          "text": "permanece"
+        },
+        {
+          "id": "c",
+          "text": "aquele que peca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que permanece n'Ele não peca",
+      "feedbackCorrect": "Quem permanece não peca.",
+      "feedbackWrong": {
+        "b": "Não o viu descreve quem peca.",
+        "c": "Não o conheceu também descreve quem peca."
+      },
+      "hint": "Veja o predicado de quem permanece.",
+      "learningObjective": "Sustentar a permanência.",
+      "evidence": [
+        "1 João 3:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 João 3:1–6 sustenta?",
+      "verseRef": "1 João 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos agora, esperança que purifica, permanência longe do pecado"
+        },
+        {
+          "id": "b",
+          "text": "Filhos só no futuro, sem purificação"
+        },
+        {
+          "id": "c",
+          "text": "Permanecer nele permite pecar sem tensão"
+        },
+        {
+          "id": "d",
+          "text": "Nele há pecado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que permanece n'Ele não peca",
+      "feedbackCorrect": "Filiação, esperança e permanência formam o padrão.",
+      "feedbackWrong": {
+        "b": "Agora somos filhos.",
+        "c": "Permanecer corta o pecar.",
+        "d": "NEle não há pecado."
+      },
+      "hint": "Una o agora ao permanece.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "1 João 3:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da filiação à pureza?",
+      "verseRef": "1 João 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ser chamados filhos pelo amor do Pai"
+        },
+        {
+          "id": "b",
+          "text": "Esperar a semelhança na manifestação"
+        },
+        {
+          "id": "c",
+          "text": "Purificar-se e permanecer longe do pecado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "purifica a si mesmo, assim como Ele é puro",
+      "feedbackCorrect": "Da filiação à esperança, até a pureza.",
+      "feedbackWrong": {
+        "default": "Comece pelos filhos; a pureza fecha."
+      },
+      "hint": "Siga vv.1, 2 e 3–6.",
+      "learningObjective": "Encadear filiação, esperança e pureza.",
+      "evidence": [
+        "1 João 3:1",
+        "1 João 3:2",
+        "1 João 3:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 João 3:6, complete: Aquele que permanece n'Ele não ___.",
+      "verseRef": "1 João 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "peca"
+        },
+        {
+          "id": "b",
+          "text": "espera"
+        },
+        {
+          "id": "c",
+          "text": "purifica"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não peca",
+      "feedbackCorrect": "Permanecer e pecar se excluem no texto.",
+      "feedbackWrong": {
+        "b": "A esperança é positiva no v.3.",
+        "c": "Purificar é o efeito da esperança."
+      },
+      "hint": "É o verbo depois de não.",
+      "learningObjective": "Lembrar o verbo da permanência.",
+      "evidence": [
+        "1 João 3:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 João 3:2 a Filipenses 3:21?",
+      "verseRef": "1 João 3:2",
+      "passageA": {
+        "ref": "1 João 3:2",
+        "text": "seremos semelhantes a Ele"
+      },
+      "passageB": {
+        "ref": "Filipenses 3:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Semelhança futura com Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Continuar no pecado"
+        },
+        {
+          "id": "c",
+          "text": "Negar a filiação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "seremos semelhantes a Ele",
+      "feedbackCorrect": "Ambos apontam transformação à semelhança de Cristo.",
+      "feedbackWrong": {
+        "b": "Pecado é removido.",
+        "c": "A filiação é afirmada."
+      },
+      "hint": "Compare a semelhança futura.",
+      "learningObjective": "Ligar a esperança da semelhança.",
+      "evidence": [
+        "1 João 3:2"
+      ]
+    }
+  ]
+}

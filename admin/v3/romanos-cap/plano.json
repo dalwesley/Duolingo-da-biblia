@@ -1,0 +1,168 @@
+{
+  "slug": "romanos-cap",
+  "prefix": "rmc",
+  "book": "Romanos",
+  "chapters": 16,
+  "title": "Romanos",
+  "description": "Romanos capítulo a capítulo: o evangelho que é poder de Deus para salvar.",
+  "icon": "📜",
+  "color": "#8E44AD",
+  "order": 61,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["romanos"],
+  "modules": [
+    {
+      "title": "Justiça e pecado · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Romanos 1:16–25",
+          "title": "O poder do evangelho",
+          "intro": "Paulo abre a carta falando do evangelho e da ira de Deus revelada do céu.",
+          "insight": "O evangelho é poder de Deus para salvar, e a ira de Deus revela quem troca o Criador pela criatura.",
+          "objective": "Não se envergonhar do evangelho"
+        },
+        {
+          "ref": "Romanos 2:1–11",
+          "title": "Sem favoritismo",
+          "intro": "Quem julga o outro também pratica o mesmo e precisa da bondade de Deus.",
+          "insight": "Diante de Deus não há favoritismo: a bondade dele conduz ao arrependimento.",
+          "objective": "Não julgar e se arrepender"
+        },
+        {
+          "ref": "Romanos 3:9–20",
+          "title": "Não há justo",
+          "intro": "Paulo cita as Escrituras para mostrar que judeus e gregos estão sob o pecado.",
+          "insight": "Não há justo, nem um: a lei cala toda boca e mostra o pecado.",
+          "objective": "Todos sob o pecado"
+        },
+        {
+          "ref": "Romanos 4:1–8",
+          "title": "Abraão creu",
+          "intro": "Paulo pergunta o que Abraão alcançou e abre a Escritura sobre a fé dele.",
+          "insight": "Abraão creu em Deus, e isso lhe foi imputado como justiça, sem obras.",
+          "objective": "Justiça pela fé"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Justiça e pecado",
+        "intro": "Revise o evangelho, o juízo sem favoritismo, o pecado de todos e a fé de Abraão.",
+        "insight": "Todos precisam do evangelho que justifica pela fé"
+      }
+    },
+    {
+      "title": "Graça e nova vida · cap. 5–8",
+      "scenes": [
+        {
+          "ref": "Romanos 5:6–11",
+          "title": "Cristo morreu por nós",
+          "intro": "Ainda fracos e pecadores, Cristo morreu a seu tempo pelos ímpios.",
+          "insight": "Deus demonstra o seu amor: Cristo morreu por nós sendo nós ainda pecadores.",
+          "objective": "O amor demonstrado na cruz"
+        },
+        {
+          "ref": "Romanos 6:1–11",
+          "title": "Mortos para o pecado",
+          "intro": "Se a graça abunda, devemos continuar no pecado? Paulo responde com o batismo.",
+          "insight": "Batizados na morte de Cristo, consideramos-nos mortos para o pecado e vivos para Deus.",
+          "objective": "Andar em novidade de vida"
+        },
+        {
+          "ref": "Romanos 7:15–25",
+          "title": "O bem que quero",
+          "intro": "Paulo descreve a luta de quem quer o bem e acaba fazendo o mal.",
+          "insight": "Há guerra dentro: o livramento vem por Jesus Cristo, nosso Senhor.",
+          "objective": "O livramento em Cristo"
+        },
+        {
+          "ref": "Romanos 8:31–39",
+          "title": "Nada nos separará",
+          "intro": "Paulo pergunta quem será contra nós, se Deus está por nós.",
+          "insight": "Nada poderá nos separar do amor de Deus, que está em Cristo Jesus.",
+          "objective": "Seguros no amor de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Graça e nova vida",
+        "intro": "Revise o amor na cruz, a morte para o pecado, a luta interior e o amor que não separa.",
+        "insight": "Em Cristo, a graça leva a uma vida nova e segura"
+      }
+    },
+    {
+      "title": "Israel e o amor · cap. 9–12",
+      "scenes": [
+        {
+          "ref": "Romanos 9:1–8",
+          "title": "Dor por Israel",
+          "intro": "Paulo fala com verdade e dor incessante no coração por seus compatriotas.",
+          "insight": "A palavra de Deus não falhou: os filhos da promessa são a verdadeira descendência.",
+          "objective": "A promessa não falhou"
+        },
+        {
+          "ref": "Romanos 10:8–17",
+          "title": "Perto da boca e do coração",
+          "intro": "A palavra da fé está perto: confessar Jesus como Senhor e crer que Deus o ressuscitou.",
+          "insight": "Quem confessa Jesus como Senhor e crê é salvo, e a fé vem pelo ouvir.",
+          "objective": "Confessar e anunciar"
+        },
+        {
+          "ref": "Romanos 11:17–24",
+          "title": "A oliveira",
+          "intro": "Paulo compara Israel e os gentios a ramos de uma oliveira.",
+          "insight": "Não se ensoberbeça: a raiz sustenta você, e Deus é bondoso e severo.",
+          "objective": "Firme pela fé, sem soberba"
+        },
+        {
+          "ref": "Romanos 12:9–18",
+          "title": "Amor sem hipocrisia",
+          "intro": "Depois da graça, Paulo descreve como o amor se mostra no dia a dia.",
+          "insight": "O amor detesta o mal, se alegra com os que se alegram e busca paz com todos.",
+          "objective": "Viver o amor de verdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Israel e o amor",
+        "intro": "Revise a dor por Israel, a confissão que salva, a oliveira e o amor sem hipocrisia.",
+        "insight": "A misericórdia de Deus chama a fé humilde e ao amor concreto"
+      }
+    },
+    {
+      "title": "Vida em comunidade · cap. 13–16",
+      "scenes": [
+        {
+          "ref": "Romanos 13:8–14",
+          "title": "O amor cumpre a lei",
+          "intro": "Paulo resume os mandamentos e chama a igreja a despertar do sono.",
+          "insight": "Quem ama o próximo cumpriu a lei: revista-se do Senhor Jesus Cristo.",
+          "objective": "Revestir-se de Cristo"
+        },
+        {
+          "ref": "Romanos 14:1–9",
+          "title": "Recebam o fraco",
+          "intro": "Na igreja há quem come de tudo e quem só come legumes; Paulo pede acolhida.",
+          "insight": "Não menospreze nem julgue: vivemos e morremos para o Senhor.",
+          "objective": "Acolher sem disputar"
+        },
+        {
+          "ref": "Romanos 15:1–7",
+          "title": "Suportar os fracos",
+          "intro": "Os fortes devem carregar as fraquezas dos fracos, como Cristo não se agradou a si mesmo.",
+          "insight": "Recebei-vos uns aos outros, assim como Cristo nos recebeu, para a glória de Deus.",
+          "objective": "Edificar o próximo"
+        },
+        {
+          "ref": "Romanos 16:17–27",
+          "title": "O Deus que firma",
+          "intro": "No fim da carta, Paulo alerta sobre divisões e louva o Deus que firma os crentes.",
+          "insight": "Deus esmaga o mal e é poderoso para firmar os crentes segundo o evangelho.",
+          "objective": "Firmes no evangelho"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Vida em comunidade",
+        "intro": "Revise o amor que cumpre a lei, o acolhimento, o suporte mútuo e o Deus que firma.",
+        "insight": "A graça se mostra no amor que acolhe e serve juntos"
+      }
+    }
+  ]
+}

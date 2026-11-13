@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Ester 8:7–12",
+    "passages": [
+      {
+        "ref": "Ester 8:7–12"
+      },
+      {
+        "ref": "Ester 8:13–17"
+      }
+    ],
+    "context": "Cena de Novo decreto: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Ester",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Novo decreto",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então.",
+        "evidenceRef": "Ester 8:7",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Escrevam.",
+        "evidenceRef": "Ester 8:8",
+        "evidenceSpan": "Escrevam"
+      },
+      {
+        "text": "Foram.",
+        "evidenceRef": "Ester 8:9",
+        "evidenceSpan": "Foram"
+      },
+      {
+        "text": "Escreveu.",
+        "evidenceRef": "Ester 8:10",
+        "evidenceSpan": "Escreveu"
+      },
+      {
+        "text": "O rei concedeu aos judeus que habitavam em.",
+        "evidenceRef": "Ester 8:11",
+        "evidenceSpan": "O rei concedeu aos judeus que habitavam em"
+      },
+      {
+        "text": "No.",
+        "evidenceRef": "Ester 8:12",
+        "evidenceSpan": "No"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Ester",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Mardoqueu",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Hamã",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então o rei assuero disse à",
+        "evidenceRef": "Ester 8:7"
+      },
+      {
+        "label": "Escrevam pois aos judeus",
+        "evidenceRef": "Ester 8:8"
+      },
+      {
+        "label": "Foram chamados sem detença os escribas",
+        "evidenceRef": "Ester 8:9"
+      },
+      {
+        "label": "Escreveu se em nome do rei",
+        "evidenceRef": "Ester 8:10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Ester 8:7"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Ester 8:8"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"também\".",
+        "marker": "também",
+        "evidenceRef": "Ester 8:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Provérbios 21:1",
+        "bridge": "Coração do rei na mão"
+      },
+      {
+        "ref": "Salmos 7:15",
+        "bridge": "Cai na cova que abriu"
+      },
+      {
+        "ref": "Salmos 33:10",
+        "bridge": "Senhor frustra planos"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Com o novo decreto, Susã se alegra: luz, regozijo e honra para os judeus.",
+    "anchorQuestion": "O que Ester 8:7 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ester 8:7, o texto inclui Então.",
+      "verseRef": "Ester 8:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Ester 8:7 afirma.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ester 8:7, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Ester 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "Assuero"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ester 8:9, o que o texto apresenta com clareza.",
+      "verseRef": "Ester 8:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Foram"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Foram",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Ester 8:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ester 8:8 na ordem do texto.",
+      "verseRef": "Ester 8:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escrevam"
+        },
+        {
+          "id": "b",
+          "text": "o que acharem mais"
+        },
+        {
+          "id": "c",
+          "text": "apropriado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Escrevam",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Ester 8:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ester 8:10, complete a palavra que o texto usa com peso.",
+      "verseRef": "Ester 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Escreveu"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escreveu",
+      "feedbackCorrect": "A palavra do versículo é Escreveu.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Ester 8:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ester 8:7 comunica que se liga a este contexto.",
+      "verseRef": "Ester 8:7",
+      "passageA": {
+        "ref": "Ester 8:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Novo decreto: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ester 8:7, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Ester 8:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Ester 8:7 afirma.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ester 8:7, toque a palavra que marca a relação no texto.",
+      "verseRef": "Ester 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Ester 8:10, o que o texto apresenta com clareza.",
+      "verseRef": "Ester 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Escreveu",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Ester 8:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Ester 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então o rei assuero disse"
+        },
+        {
+          "id": "b",
+          "text": "Escrevam pois aos judeus"
+        },
+        {
+          "id": "c",
+          "text": "Foram chamados sem detença os escribas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ester 8:9, complete a palavra que o texto usa com peso.",
+      "verseRef": "Ester 8:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "chamados"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chamados",
+      "feedbackCorrect": "A palavra do versículo é chamados.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Ester 8:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ester 8:7 a Provérbios 21:1.",
+      "verseRef": "Ester 8:7",
+      "passageA": {
+        "ref": "Ester 8:7"
+      },
+      "passageB": {
+        "ref": "Provérbios 21:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração do rei na mão"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Ester 8:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Ester 8:17 afirma.",
+      "evidence": [
+        "Ester 8:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ester 8:12, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Ester 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "mesmo"
+        },
+        {
+          "id": "b",
+          "text": "dia"
+        },
+        {
+          "id": "c",
+          "text": "todas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mesmo",
+      "feedbackCorrect": "O versículo destaca mesmo.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Ester 8:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Ester 8:11, o que o texto apresenta com clareza.",
+      "verseRef": "Ester 8:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O rei concedeu aos judeus que habitavam em",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Ester 8:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Ester 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ester 8:11, complete a palavra que o texto usa com peso.",
+      "verseRef": "Ester 8:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "concedeu"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "concedeu",
+      "feedbackCorrect": "A palavra do versículo é concedeu.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Ester 8:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ester 8:7 a Salmos 7:15.",
+      "verseRef": "Ester 8:7",
+      "passageA": {
+        "ref": "Ester 8:7"
+      },
+      "passageB": {
+        "ref": "Salmos 7:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cai na cova que abriu"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Ester 8:7"
+      ]
+    }
+  ]
+}

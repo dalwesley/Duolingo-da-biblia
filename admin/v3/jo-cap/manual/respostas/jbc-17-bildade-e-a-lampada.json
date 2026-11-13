@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 18:5–10",
+  "passages": [
+   {
+    "ref": "Jó 18:5–10"
+   },
+   {
+    "ref": "Jó 18:11–14"
+   }
+  ],
+  "context": "Bildade descreve a lâmpada do ímpio que se apaga e o terror que o cerca, como se Jó fosse o retrato.",
+  "keyword": "Lâmpada se apaga",
+  "keywordGloss": "Imagem que Bildade usa para o fim dos ímpios, mirando Jó.",
+  "focusQuestion": "Você já pintou o fim de alguém como se fosse o retrato certo?",
+  "reflectionPrompts": [
+   "Lâmpada apagada",
+   "Rede e laço",
+   "Rei dos terrores"
+  ],
+  "facts": [
+   {
+    "text": "A luz dos ímpios se apagará.",
+    "evidenceRef": "Jó 18:5",
+    "evidenceSpan": "a luz dos ímpios se apagará"
+   },
+   {
+    "text": "A lâmpada do ímpio se apagará.",
+    "evidenceRef": "Jó 18:6",
+    "evidenceSpan": "a lâmpada dele se apagará"
+   },
+   {
+    "text": "O ímpio é capturado pelos próprios pés.",
+    "evidenceRef": "Jó 18:8",
+    "evidenceSpan": "capturado pelos próprios pés"
+   },
+   {
+    "text": "Os terrores o assombrarão de todos os lados.",
+    "evidenceRef": "Jó 18:11",
+    "evidenceSpan": "Os terrores o assombrarão"
+   },
+   {
+    "text": "A confiança será retirada de sua tenda.",
+    "evidenceRef": "Jó 18:14",
+    "evidenceSpan": "A confiança dele será retirada"
+   },
+   {
+    "text": "Isso o levará ao rei dos terrores.",
+    "evidenceRef": "Jó 18:14",
+    "evidenceSpan": "ao rei dos terrores"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "lâmpada",
+    "gloss": "A luz do ímpio que Bildade diz que se apaga."
+   },
+   {
+    "term": "terrores",
+    "gloss": "O assombro que cerca o ímpio de todos os lados."
+   },
+   {
+    "term": "armadilha",
+    "gloss": "A armadilha escondida no caminho."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A luz e a lâmpada se apagam",
+    "evidenceRef": "Jó 18:5–6"
+   },
+   {
+    "label": "Passos estreitos e rede",
+    "evidenceRef": "Jó 18:7–10"
+   },
+   {
+    "label": "Terrores e fome",
+    "evidenceRef": "Jó 18:11–13"
+   },
+   {
+    "label": "Confiança retirada ao rei dos terrores",
+    "evidenceRef": "Jó 18:14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "É capturado porque caminha na trama da rede.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 18:8"
+   },
+   {
+    "kind": "resultado",
+    "text": "A confiança retirada o leva ao rei dos terrores.",
+    "marker": null,
+    "evidenceRef": "Jó 18:14"
+   },
+   {
+    "kind": "contraste",
+    "text": "Há faísca do fogo; ela não resplandecerá.",
+    "marker": null,
+    "evidenceRef": "Jó 18:5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Provérbios 13:9",
+    "bridge": "Lâmpada dos ímpios se apaga"
+   },
+   {
+    "ref": "Salmos 18:28",
+    "bridge": "Deus alumia a lâmpada"
+   },
+   {
+    "ref": "Mateus 7:1–2",
+    "bridge": "Não julgueis"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Bildade descreve o fim dos justos.",
+    "why": "18:5 fala da luz dos ímpios."
+   },
+   {
+    "text": "A lâmpada do ímpio brilha para sempre.",
+    "why": "18:6 diz que se apagará."
+   },
+   {
+    "text": "Não há terror no retrato de Bildade.",
+    "why": "18:11 e 18:14 falam de terrores."
+   }
+  ],
+  "centralInsight": "Os amigos pintam o fim dos maus como se Jó fosse o retrato — e erram o alvo.",
+  "anchorQuestion": "O que acontece com a lâmpada do ímpio em Jó 18:6?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 18:6, a lâmpada do ímpio se apagará.",
+   "verseRef": "Jó 18:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "Bildade diz que a lâmpada se apaga.",
+   "feedbackWrong": {
+    "false": "Releia o fim de 18:6."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Observar a imagem da lâmpada.",
+   "evidence": [
+    "Jó 18:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 18:6, toque o que se apagará na tenda.",
+   "verseRef": "Jó 18:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "lâmpada"
+    },
+    {
+     "id": "b",
+     "text": "luz"
+    },
+    {
+     "id": "c",
+     "text": "tendas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "A lâmpada se apaga.",
+   "feedbackWrong": {
+    "b": "A luz se escurece; o que se apaga é a lâmpada.",
+    "c": "Tendas são o lugar, não o que se apaga."
+   },
+   "hint": "Veja o sujeito do fim.",
+   "learningObjective": "Identificar a lâmpada.",
+   "evidence": [
+    "Jó 18:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 18:5, o que acontecerá com a luz dos ímpios?",
+   "verseRef": "Jó 18:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Se apagará"
+    },
+    {
+     "id": "b",
+     "text": "Brilhará para sempre"
+    },
+    {
+     "id": "c",
+     "text": "Virará ouro"
+    },
+    {
+     "id": "d",
+     "text": "Subirá aos céus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a luz dos ímpios se apagará",
+   "feedbackCorrect": "A luz dos ímpios se apaga.",
+   "feedbackWrong": {
+    "b": "O texto diz que se apagará.",
+    "c": "Não há ouro neste versículo.",
+    "d": "Não há subida aos céus."
+   },
+   "hint": "Leia a primeira afirmação.",
+   "learningObjective": "Observar o fim da luz.",
+   "evidence": [
+    "Jó 18:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 18:6 na ordem do texto.",
+   "verseRef": "Jó 18:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "A luz se escurecerá nas suas tendas"
+    },
+    {
+     "id": "b",
+     "text": "e a lâmpada dele"
+    },
+    {
+     "id": "c",
+     "text": "se apagará."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "Luz escurece; lâmpada se apaga.",
+   "feedbackWrong": {
+    "default": "Comece pela luz."
+   },
+   "hint": "Comece por A luz.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 18:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 18:5, o que do fogo não resplandecerá?",
+   "verseRef": "Jó 18:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "faísca"
+    },
+    {
+     "id": "b",
+     "text": "lâmpada"
+    },
+    {
+     "id": "c",
+     "text": "laço"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a faísca do seu fogo",
+   "feedbackCorrect": "A palavra é faísca.",
+   "feedbackWrong": {
+    "b": "Lâmpada está em 18:6.",
+    "c": "Laço está em 18:9."
+   },
+   "hint": "Veja o sujeito do fim.",
+   "learningObjective": "Lembrar o detalhe do fogo.",
+   "evidence": [
+    "Jó 18:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 18:6 comunica que se liga a este contexto?",
+   "verseRef": "Jó 18:6",
+   "passageA": {
+    "ref": "Jó 18:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Bildade pinta o fim dos ímpios como se Jó fosse o retrato."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Retrato do ímpio"
+    },
+    {
+     "id": "b",
+     "text": "Louvor ao justo"
+    },
+    {
+     "id": "c",
+     "text": "Promessa de ouro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "A lâmpada apagada é o retrato.",
+   "feedbackWrong": {
+    "b": "Não há louvor ao justo.",
+    "c": "Não há ouro."
+   },
+   "hint": "Pense no alvo de Bildade.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 18:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 18:8–11, o ímpio escapa da rede e vive sem terrores.",
+   "verseRef": "Jó 18:8–9",
+   "correctOptionId": "false",
+   "evidenceSpan": "caminha na trama da rede",
+   "feedbackCorrect": "Há rede, laço e terrores.",
+   "feedbackWrong": {
+    "true": "Compare 18:8 e 18:11."
+   },
+   "hint": "Veja rede e terrores.",
+   "learningObjective": "Compreender o cerco.",
+   "evidence": [
+    "Jó 18:8–9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 18:8, toque a palavra que marca a causa da captura.",
+   "verseRef": "Jó 18:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "pés"
+    },
+    {
+     "id": "c",
+     "text": "rede"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque é capturado",
+   "feedbackCorrect": "Porque introduz a causa.",
+   "feedbackWrong": {
+    "b": "Pés são o instrumento.",
+    "c": "Rede é a trama."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 18:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 18:14 se relaciona com 18:5–6?",
+   "verseRef": "Jó 18:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fecha o retrato: da lâmpada apagada ao rei dos terrores"
+    },
+    {
+     "id": "b",
+     "text": "Nega que a luz dos ímpios se apague"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que a confiança permanece na tenda"
+    },
+    {
+     "id": "d",
+     "text": "Diz que o justo é o alvo certo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ao rei dos terrores",
+   "feedbackCorrect": "Do apagar da luz ao rei dos terrores.",
+   "feedbackWrong": {
+    "b": "18:5 afirma o apagar.",
+    "c": "18:14 retira a confiança.",
+    "d": "O alvo é o ímpio, mal aplicado a Jó."
+   },
+   "hint": "Una início e fim.",
+   "learningObjective": "Relacionar lâmpada e terrores.",
+   "evidence": [
+    "Jó 18:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o retrato de Bildade em 18:5–14?",
+   "verseRef": "Jó 18:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "A luz e a lâmpada se apagam"
+    },
+    {
+     "id": "b",
+     "text": "Rede e laço capturam os pés"
+    },
+    {
+     "id": "c",
+     "text": "Confiança cai ante o rei dos terrores"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "Luz, laço e terrores.",
+   "feedbackWrong": {
+    "default": "Comece pela luz."
+   },
+   "hint": "Pense: luz → rede → terrores.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 18:5–6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 18:11, o que assombrará o ímpio de todos os lados?",
+   "verseRef": "Jó 18:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "terrores"
+    },
+    {
+     "id": "b",
+     "text": "faísca"
+    },
+    {
+     "id": "c",
+     "text": "lâmpada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Os terrores o assombrarão",
+   "feedbackCorrect": "A palavra é terrores.",
+   "feedbackWrong": {
+    "b": "Faísca está em 18:5.",
+    "c": "Lâmpada está em 18:6."
+   },
+   "hint": "Veja o sujeito.",
+   "learningObjective": "Lembrar o assombro.",
+   "evidence": [
+    "Jó 18:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 18:5 a Provérbios 13:9?",
+   "verseRef": "Jó 18:5",
+   "passageA": {
+    "ref": "Jó 18:5"
+   },
+   "passageB": {
+    "ref": "Provérbios 13:9"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Lâmpada dos ímpios se apaga"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a luz dos ímpios se apagará",
+   "feedbackCorrect": "Nos dois textos, a luz dos ímpios se apaga.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a lâmpada.",
+   "learningObjective": "Relacionar Jó a Provérbios.",
+   "evidence": [
+    "Jó 18:5",
+    "Provérbios 13:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 18:5–14 sustenta que os amigos pintam o fim dos maus como se Jó fosse o retrato e erram o alvo.",
+   "verseRef": "Jó 18:6",
+   "correctOptionId": "true",
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "O retrato do ímpio é mal aplicado a Jó.",
+   "feedbackWrong": {
+    "false": "Veja o alvo implícito de Bildade."
+   },
+   "hint": "Pense no alvo do discurso.",
+   "learningObjective": "Interpretar o erro do alvo.",
+   "evidence": [
+    "Jó 18:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 18:14, toque o destino final do retrato de Bildade.",
+   "verseRef": "Jó 18:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "rei dos terrores"
+    },
+    {
+     "id": "b",
+     "text": "confiança"
+    },
+    {
+     "id": "c",
+     "text": "tenda"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ao rei dos terrores",
+   "feedbackCorrect": "O destino é o rei dos terrores.",
+   "feedbackWrong": {
+    "b": "Confiança é o que se retira.",
+    "c": "Tenda é de onde se retira."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Sustentar a leitura do fim.",
+   "evidence": [
+    "Jó 18:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 18:5–14 sustenta?",
+   "verseRef": "Jó 18:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Bildade pinta o fim dos ímpios e erra o alvo em Jó"
+    },
+    {
+     "id": "b",
+     "text": "A lâmpada dos ímpios nunca se apaga"
+    },
+    {
+     "id": "c",
+     "text": "Não há terror no fim do ímpio"
+    },
+    {
+     "id": "d",
+     "text": "Jó é o modelo do ímpio fiel"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a luz dos ímpios se apagará",
+   "feedbackCorrect": "O retrato existe; o alvo em Jó erra.",
+   "feedbackWrong": {
+    "b": "18:5–6 diz que se apaga.",
+    "c": "18:11 e 18:14 falam de terrores.",
+    "d": "O texto descreve ímpios, não justifica o alvo."
+   },
+   "hint": "Una o retrato e o alvo.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 18:5–6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o juízo precipitado?",
+   "verseRef": "Jó 18:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Bildade apaga a lâmpada do ímpio"
+    },
+    {
+     "id": "b",
+     "text": "Provérbios ecoa a lâmpada dos ímpios"
+    },
+    {
+     "id": "c",
+     "text": "Jesus manda não julgar"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "O fio vai de Bildade a Provérbios e a Mateus.",
+   "feedbackWrong": {
+    "default": "Comece por Bildade."
+   },
+   "hint": "Siga: Bildade → Provérbios → Mateus.",
+   "learningObjective": "Ver o fio do juízo.",
+   "evidence": [
+    "Jó 18:6",
+    "Provérbios 13:9",
+    "Mateus 7:1–2"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 18:13, quem devora as partes do corpo?",
+   "verseRef": "Jó 18:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "primogênito"
+    },
+    {
+     "id": "b",
+     "text": "lâmpada"
+    },
+    {
+     "id": "c",
+     "text": "faísca"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O primogênito da morte",
+   "feedbackCorrect": "O termo é primogênito.",
+   "feedbackWrong": {
+    "b": "Lâmpada está em 18:6.",
+    "c": "Faísca está em 18:5."
+   },
+   "hint": "Veja o sujeito.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 18:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 18:5–6 a Mateus 7:1–2?",
+   "verseRef": "Jó 18:6",
+   "passageA": {
+    "ref": "Jó 18:6"
+   },
+   "passageB": {
+    "ref": "Mateus 7:1–2"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Não julgueis"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de terras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a lâmpada dele se apagará",
+   "feedbackCorrect": "O retrato precipitado pede cautela no juízo.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare juízo precipitado.",
+   "learningObjective": "Ligar o retrato a Mateus.",
+   "evidence": [
+    "Jó 18:6",
+    "Mateus 7:1–2"
+   ]
+  }
+ ]
+}

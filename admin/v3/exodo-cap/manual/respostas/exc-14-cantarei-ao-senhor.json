@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Êxodo 15:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 15:1–11"
+      }
+    ],
+    "context": "Depois do mar Vermelho, Moisés e Israel entoam um cântico: o Senhor triunfou e salvou o seu povo.",
+    "keyword": "Cantarei",
+    "keywordGloss": "Resposta de louvor: Israel canta porque o Senhor triunfou e salvou.",
+    "focusQuestion": "Quando Deus te livra, o que o seu cântico nomeia primeiro?",
+    "reflectionPrompts": [
+      "Triunfo no mar",
+      "Força e salvação",
+      "Ninguém como o Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Moisés e os filhos de Israel entoaram um cântico ao Senhor.",
+        "evidenceRef": "Êxodo 15:1",
+        "evidenceSpan": "Moisés e os filhos de Israel entoaram este cântico ao Senhor"
+      },
+      {
+        "text": "O Senhor é a força, o cântico e a salvação do cantor.",
+        "evidenceRef": "Êxodo 15:2",
+        "evidenceSpan": "O Senhor é a minha força e o meu cântico; Ele me foi por salvação"
+      },
+      {
+        "text": "Os carros de Faraó e o exército foram lançados no mar.",
+        "evidenceRef": "Êxodo 15:4",
+        "evidenceSpan": "Lançou no mar os carros de Faraó e seu exército"
+      },
+      {
+        "text": "A mão direita do Senhor despedaça o inimigo.",
+        "evidenceRef": "Êxodo 15:6",
+        "evidenceSpan": "a tua mão direita, ó Senhor, despedaça o inimigo"
+      },
+      {
+        "text": "Ninguém é como o Senhor, glorioso em santidade.",
+        "evidenceRef": "Êxodo 15:11",
+        "evidenceSpan": "Tu, glorificado em santidade, terrível em feitos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "salvação",
+        "gloss": "O Senhor foi por salvação: livrou Israel no mar."
+      },
+      {
+        "term": "santidade",
+        "gloss": "O Senhor é glorificado em santidade, único entre os deuses."
+      },
+      {
+        "term": "mão direita",
+        "gloss": "Símbolo do poder do Senhor que derrota o inimigo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Israel canta o triunfo no mar",
+        "evidenceRef": "Êxodo 15:1"
+      },
+      {
+        "label": "O Senhor é força e salvação",
+        "evidenceRef": "Êxodo 15:2–3"
+      },
+      {
+        "label": "O inimigo cai nas águas",
+        "evidenceRef": "Êxodo 15:4–10"
+      },
+      {
+        "label": "Ninguém como o Senhor",
+        "evidenceRef": "Êxodo 15:11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Cantam porque o Senhor triunfou gloriosamente.",
+        "marker": "porque",
+        "evidenceRef": "Êxodo 15:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque o Senhor é Deus, o cantor o louva e exalta.",
+        "marker": "portanto",
+        "evidenceRef": "Êxodo 15:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O inimigo jurou destruir; o Senhor soprou e o mar os cobriu.",
+        "marker": null,
+        "evidenceRef": "Êxodo 15:9–10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 15:3",
+        "bridge": "Cântico de Moisés"
+      },
+      {
+        "ref": "Salmos 118:14",
+        "bridge": "Força e salvação"
+      },
+      {
+        "ref": "Isaías 12:2",
+        "bridge": "Deus é salvação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O cântico celebra a força de Israel, não a do Senhor.",
+        "why": "O texto diz: o Senhor é a minha força e a salvação."
+      },
+      {
+        "text": "O inimigo venceu no mar Vermelho.",
+        "why": "O cântico afirma que o Senhor lançou cavalo e cavaleiro no mar."
+      },
+      {
+        "text": "Há muitos deuses iguais ao Senhor.",
+        "why": "O cântico pergunta: quem é como Tu entre os deuses?"
+      }
+    ],
+    "centralInsight": "O Senhor é a força e a salvação: glorioso em santidade, terrível em feitos.",
+    "anchorQuestion": "Quem Israel canta como força e salvação depois do mar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Moisés e os filhos de Israel entoaram um cântico ao Senhor depois do mar.",
+      "verseRef": "Êxodo 15:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Moisés e os filhos de Israel entoaram este cântico ao Senhor",
+      "feedbackCorrect": "O texto abre com o cântico de Moisés e Israel ao Senhor.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 15:1: eles entoaram este cântico ao Senhor."
+      },
+      "hint": "Veja quem cantou e a quem.",
+      "learningObjective": "Observar que Israel canta ao Senhor.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 15:2, toque o que o Senhor foi para o cantor.",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "força"
+        },
+        {
+          "id": "b",
+          "text": "salvação"
+        },
+        {
+          "id": "c",
+          "text": "cântico"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ele me foi por salvação",
+      "feedbackCorrect": "O Senhor me foi por salvação.",
+      "feedbackWrong": {
+        "a": "Força e cântico vêm antes; Ele foi por salvação.",
+        "c": "Cântico é paralelo; a pergunta pede salvação."
+      },
+      "hint": "Procure o que Ele \"foi por\".",
+      "learningObjective": "Identificar a salvação no cântico.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 15:4, o que o Senhor lançou no mar?",
+      "verseRef": "Êxodo 15:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os carros de Faraó e seu exército"
+        },
+        {
+          "id": "b",
+          "text": "As tendas de Israel"
+        },
+        {
+          "id": "c",
+          "text": "O bordão de Moisés"
+        },
+        {
+          "id": "d",
+          "text": "As tabuas da lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lançou no mar os carros de Faraó e seu exército",
+      "feedbackCorrect": "O cântico diz: lançou no mar os carros de Faraó e seu exército.",
+      "feedbackWrong": {
+        "b": "O texto fala dos carros de Faraó, não das tendas.",
+        "c": "O bordão não é o tema deste versículo.",
+        "d": "As tábuas vêm depois; aqui é o exército no mar."
+      },
+      "hint": "Leia o objeto do verbo \"lançou\".",
+      "learningObjective": "Observar a derrota do exército no mar.",
+      "evidence": [
+        "Êxodo 15:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 15:2 na ordem do texto.",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é a minha força e o meu cântico"
+        },
+        {
+          "id": "b",
+          "text": "Ele me foi por salvação"
+        },
+        {
+          "id": "c",
+          "text": "este é o meu Deus; portanto, eu o louvarei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O Senhor é a minha força e o meu cântico",
+      "feedbackCorrect": "Força e cântico, depois salvação, depois o louvor.",
+      "feedbackWrong": {
+        "default": "Comece por força e cântico; o louvor vem depois."
+      },
+      "hint": "O versículo começa nomeando o Senhor.",
+      "learningObjective": "Reconhecer a ordem de Êxodo 15:2.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 15:6, o que a mão direita do Senhor faz ao inimigo?",
+      "verseRef": "Êxodo 15:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "despedaça"
+        },
+        {
+          "id": "b",
+          "text": "poupa"
+        },
+        {
+          "id": "c",
+          "text": "ignora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "despedaça o inimigo",
+      "feedbackCorrect": "A mão direita do Senhor despedaça o inimigo.",
+      "feedbackWrong": {
+        "b": "O texto não diz que poupa o inimigo.",
+        "c": "A ação é despedaçar, não ignorar."
+      },
+      "hint": "Veja o verbo após \"mão direita\".",
+      "learningObjective": "Lembrar o verbo do poder do Senhor.",
+      "evidence": [
+        "Êxodo 15:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 15:1 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 15:1",
+      "passageA": {
+        "ref": "Êxodo 15:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois do mar, Israel responde com um cântico ao Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvor após a libertação"
+        },
+        {
+          "id": "b",
+          "text": "Queixa contra Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Pedido de voltar ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entoaram este cântico ao Senhor",
+      "feedbackCorrect": "O cântico é a resposta de louvor depois da libertação.",
+      "feedbackWrong": {
+        "b": "Aqui não há queixa; há cântico.",
+        "c": "O texto canta triunfo, não retorno ao Egito."
+      },
+      "hint": "Compare o momento com a ação do povo.",
+      "learningObjective": "Ligar o cântico ao livramento.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 15:1, Israel canta porque o inimigo triunfou gloriosamente.",
+      "verseRef": "Êxodo 15:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Cantarei ao Senhor, porque triunfou gloriosamente",
+      "feedbackCorrect": "Quem triunfou gloriosamente é o Senhor, não o inimigo.",
+      "feedbackWrong": {
+        "true": "Releia: cantam porque o Senhor triunfou gloriosamente."
+      },
+      "hint": "Repare quem é o sujeito de \"triunfou\".",
+      "learningObjective": "Compreender a causa do cântico.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 15:1, toque a palavra que marca a causa do cântico.",
+      "verseRef": "Êxodo 15:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "cavalo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei ao Senhor, porque triunfou",
+      "feedbackCorrect": "\"Porque\" introduz o motivo: o Senhor triunfou.",
+      "feedbackWrong": {
+        "b": "\"Então\" abre a cena; a causa é \"porque\".",
+        "c": "\"cavalo\" é o objeto lançado; o marcador é \"porque\"."
+      },
+      "hint": "Procure a palavra que explica o louvor.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 15:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 15:2 liga a identidade do Senhor à resposta do cantor?",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele é Deus; portanto o cantor o louva"
+        },
+        {
+          "id": "b",
+          "text": "Ele é inimigo; portanto o cantor foge"
+        },
+        {
+          "id": "c",
+          "text": "Ele é distante; portanto o cantor se cala"
+        },
+        {
+          "id": "d",
+          "text": "Ele é Faraó; portanto Israel se curva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este é o meu Deus; portanto, eu o louvarei",
+      "feedbackCorrect": "O \"portanto\" liga: meu Deus → eu o louvarei.",
+      "feedbackWrong": {
+        "b": "O Senhor é salvação, não inimigo do cantor.",
+        "c": "O texto manda louvar, não calar.",
+        "d": "Faraó é o derrotado; o Senhor é o Deus louvado."
+      },
+      "hint": "Veja o que segue a palavra \"portanto\".",
+      "learningObjective": "Relacionar quem Deus é e o louvor.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o cântico em Êxodo 15:1–11?",
+      "verseRef": "Êxodo 15:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel canta o triunfo no mar"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor é força e salvação"
+        },
+        {
+          "id": "c",
+          "text": "Ninguém é como o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei ao Senhor, porque triunfou",
+      "feedbackCorrect": "Do fato do triunfo à identidade do Senhor e à comparação.",
+      "feedbackWrong": {
+        "default": "Comece pelo cântico do triunfo; o \"quem como Tu\" fecha."
+      },
+      "hint": "Siga do feito à identidade e à pergunta final.",
+      "learningObjective": "Compreender o movimento do cântico.",
+      "evidence": [
+        "Êxodo 15:1–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 15:2, que palavra introduz a resposta de louvor?",
+      "verseRef": "Êxodo 15:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "portanto"
+        },
+        {
+          "id": "b",
+          "text": "entretanto"
+        },
+        {
+          "id": "c",
+          "text": "jamais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "portanto, eu o louvarei",
+      "feedbackCorrect": "\"Portanto\" carrega a relação: Deus meu → eu o louvo.",
+      "feedbackWrong": {
+        "b": "O texto usa \"portanto\", não \"entretanto\".",
+        "c": "\"jamais\" não aparece neste elo."
+      },
+      "hint": "É a palavra antes de \"eu o louvarei\".",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 15:2 a Salmos 118:14?",
+      "verseRef": "Êxodo 15:2",
+      "passageA": {
+        "ref": "Êxodo 15:2"
+      },
+      "passageB": {
+        "ref": "Salmos 118:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Força e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Temor do Egito"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor é a minha força e o meu cântico",
+      "feedbackCorrect": "Nos dois textos, o Senhor é força e salvação.",
+      "feedbackWrong": {
+        "b": "O elo é o louvor à força do Senhor.",
+        "c": "Não há aliança com Faraó nesses textos."
+      },
+      "hint": "Compare o motivo do cântico nos dois textos.",
+      "learningObjective": "Relacionar o cântico ao Salmo.",
+      "evidence": [
+        "Êxodo 15:2",
+        "Salmos 118:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 15:1–11 sustenta que o cântico celebra a força de Israel acima do Senhor.",
+      "verseRef": "Êxodo 15:1–2",
+      "correctOptionId": "false",
+      "evidenceSpan": "O Senhor é a minha força e o meu cântico",
+      "feedbackCorrect": "O cântico centra o Senhor como força e salvação, não Israel.",
+      "feedbackWrong": {
+        "true": "O texto nomeia o Senhor, não Israel, como força e salvação."
+      },
+      "hint": "Quem o versículo chama de força?",
+      "learningObjective": "Interpretar o centro do cântico.",
+      "evidence": [
+        "Êxodo 15:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 15:11, toque o atributo em que o Senhor é glorificado.",
+      "verseRef": "Êxodo 15:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "santidade"
+        },
+        {
+          "id": "c",
+          "text": "deuses"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "santidade",
+      "feedbackCorrect": "O cântico celebra o Senhor glorioso em santidade.",
+      "feedbackWrong": {
+        "a": "Olhe o atributo da glória.",
+        "c": "\"deuses\" é a comparação; o atributo é santidade."
+      },
+      "hint": "Veja em que Ele é glorificado.",
+      "learningObjective": "Sustentar a leitura da singularidade.",
+      "evidence": [
+        "Êxodo 15:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 15:11 sustenta sobre o Senhor?",
+      "verseRef": "Êxodo 15:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ninguém é como Ele entre os deuses"
+        },
+        {
+          "id": "b",
+          "text": "Todos os deuses são iguais a Ele"
+        },
+        {
+          "id": "c",
+          "text": "Faraó é o verdadeiro homem de guerra"
+        },
+        {
+          "id": "d",
+          "text": "O cântico nega os feitos do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quem é como Tu entre os deuses",
+      "feedbackCorrect": "A pergunta retórica afirma: ninguém é como o Senhor.",
+      "feedbackWrong": {
+        "b": "O texto pergunta quem é como Ele, não iguala os deuses.",
+        "c": "O Senhor é o homem de guerra; Faraó caiu no mar.",
+        "d": "O cântico celebra feitos e maravilhas."
+      },
+      "hint": "Leia a pergunta \"quem é como Tu\".",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Êxodo 15:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o cântico do mar à Escritura?",
+      "verseRef": "Êxodo 15:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel canta o Senhor como salvação"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo confessa a mesma força"
+        },
+        {
+          "id": "c",
+          "text": "Apocalipse retoma o cântico de Moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele me foi por salvação",
+      "evidence": [
+        "Êxodo 15:2",
+        "Salmos 118:14",
+        "Apocalipse 15:3"
+      ],
+      "feedbackCorrect": "Do Êxodo ao Salmo e ao Apocalipse: o mesmo Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo cântico no mar; depois Salmo e Apocalipse."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver o cântico ecoar na Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 15:11, que termo fecha os feitos do Senhor?",
+      "verseRef": "Êxodo 15:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "maravilhas"
+        },
+        {
+          "id": "b",
+          "text": "derrotas"
+        },
+        {
+          "id": "c",
+          "text": "alianças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que realizas maravilhas",
+      "feedbackCorrect": "Ele realiza maravilhas: feitos que só o Senhor faz.",
+      "feedbackWrong": {
+        "b": "O texto fala de maravilhas, não de derrotas dele.",
+        "c": "O termo do versículo é maravilhas."
+      },
+      "hint": "Veja o que Ele realiza no fim do verso.",
+      "learningObjective": "Lembrar o termo dos feitos do Senhor.",
+      "evidence": [
+        "Êxodo 15:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 15:1 a Apocalipse 15:3?",
+      "verseRef": "Êxodo 15:1",
+      "passageA": {
+        "ref": "Êxodo 15:1"
+      },
+      "passageB": {
+        "ref": "Apocalipse 15:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cântico de Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Queixa no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Construção do bezerro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entoaram este cântico ao Senhor",
+      "feedbackCorrect": "Apocalipse retoma o cântico de Moisés e do Cordeiro.",
+      "feedbackWrong": {
+        "b": "O elo é o cântico, não a murmuração.",
+        "c": "O bezerro não aparece nestes textos."
+      },
+      "hint": "Que cântico o Apocalipse nomeia?",
+      "learningObjective": "Ligar o cântico do mar ao Apocalipse.",
+      "evidence": [
+        "Êxodo 15:1",
+        "Apocalipse 15:3"
+      ]
+    }
+  ]
+}

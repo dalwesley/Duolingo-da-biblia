@@ -1,0 +1,2615 @@
+{
+  "studies": {
+    "zcc-01-voltai-a-mim": {
+      "slug": "zcc-01-voltai-a-mim",
+      "passageRef": "Zacarias 1:1–6",
+      "passageText": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta Zacarias, filho de Baraquias, filho de Ido, dizendo: O SENHOR se irou em extremo contra os seus pais. Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor dos Exércitos, e eu me tornarei a vocês, diz o Senhor dos Exércitos. Não sejam como seus pais a quem os primeiros profetas clamavam dizendo: Assim diz o Senhor dos Exércitos: Convertei-vos agora dos seus maus caminhos e das suas más obras; mas não ouviram, nem me atenderam, diz o Senhor. Seus pais, onde estão? E os profetas, viverão para sempre? Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas, meus servos, não chegaram aos seus pais? Eles se voltaram e disseram: Assim como o Senhor dos Exércitos se dispôs a nos tratar segundo os nossos caminhos e segundo as nossas obras, assim Ele nos tratou",
+      "passages": [
+        {
+          "ref": "Zacarias 1:1–6",
+          "text": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta Zacarias, filho de Baraquias, filho de Ido, dizendo: O SENHOR se irou em extremo contra os seus pais. Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor dos Exércitos, e eu me tornarei a vocês, diz o Senhor dos Exércitos. Não sejam como seus pais a quem os primeiros profetas clamavam dizendo: Assim diz o Senhor dos Exércitos: Convertei-vos agora dos seus maus caminhos e das suas más obras; mas não ouviram, nem me atenderam, diz o Senhor. Seus pais, onde estão? E os profetas, viverão para sempre? Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas, meus servos, não chegaram aos seus pais? Eles se voltaram e disseram: Assim como o Senhor dos Exércitos se dispôs a nos tratar segundo os nossos caminhos e segundo as nossas obras, assim Ele nos tratou"
+        }
+      ],
+      "context": "No oitavo mês, a palavra do Senhor vem a Zacarias: voltai a mim.",
+      "keyword": "Dario",
+      "keywordGloss": "Palavra-chave do trecho em Voltai a mim.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "No oitavo mês do segundo ano de Dario,",
+        "O SENHOR se irou em extremo contra os",
+        "Portanto, diga-lhes: Assim diz o Senhor"
+      ],
+      "facts": [
+        {
+          "text": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta.",
+          "evidenceRef": "Zacarias 1:1",
+          "evidenceSpan": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta"
+        },
+        {
+          "text": "O SENHOR se irou em extremo contra os seus pais.",
+          "evidenceRef": "Zacarias 1:2",
+          "evidenceSpan": "O SENHOR se irou em extremo contra os seus pais"
+        },
+        {
+          "text": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz.",
+          "evidenceRef": "Zacarias 1:3",
+          "evidenceSpan": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz"
+        },
+        {
+          "text": "mas não ouviram, nem me atenderam, diz o Senhor.",
+          "evidenceRef": "Zacarias 1:4",
+          "evidenceSpan": "mas não ouviram, nem me atenderam, diz o Senhor"
+        },
+        {
+          "text": "Seus pais, onde estão? E os profetas, viverão para sempre?.",
+          "evidenceRef": "Zacarias 1:5",
+          "evidenceSpan": "Seus pais, onde estão? E os profetas, viverão para sempre?"
+        },
+        {
+          "text": "Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas,.",
+          "evidenceRef": "Zacarias 1:6",
+          "evidenceSpan": "Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas,"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Dario",
+          "gloss": "Palavra-chave do trecho em Voltai a mim."
+        },
+        {
+          "term": "SENHOR",
+          "gloss": "Palavra-chave do trecho em Voltai a mim."
+        },
+        {
+          "term": "Zacarias",
+          "gloss": "Palavra-chave do trecho em Voltai a mim."
+        }
+      ],
+      "structure": [
+        {
+          "label": "No oitavo mês do segundo ano de Dario, veio a",
+          "evidenceRef": "Zacarias 1:1"
+        },
+        {
+          "label": "O SENHOR se irou em extremo contra os seus pais",
+          "evidenceRef": "Zacarias 1:2"
+        },
+        {
+          "label": "Portanto, diga-lhes: Assim diz o Senhor dos",
+          "evidenceRef": "Zacarias 1:3"
+        },
+        {
+          "label": "mas não ouviram, nem me atenderam, diz o Senhor",
+          "evidenceRef": "Zacarias 1:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor",
+          "marker": "Portanto",
+          "evidenceRef": "Zacarias 1:3"
+        },
+        {
+          "kind": "resultado",
+          "text": "mas não ouviram, nem me atenderam, diz o Senhor",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 1:4"
+        },
+        {
+          "kind": "resultado",
+          "text": "Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas, meus",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 1:6"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Voltai a mim, diz o Senhor dos Exércitos, e eu voltarei a vós.",
+      "anchorQuestion": "Segundo Zacarias 1:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-02-muro-de-fogo": {
+      "slug": "zcc-02-muro-de-fogo",
+      "passageRef": "Zacarias 2:1–6",
+      "passageText": "Levantei novamente os olhos e vi, e eis que havia um homem com um cordel de medir na mão. E eu perguntei: Para onde você está indo? Ele respondeu: Estou indo medir Jerusalém, para saber qual é a sua largura e qual é o seu comprimento. Eis que saiu o anjo que falava comigo, e outro anjo foi ao seu encontro. E disse-lhe: Vá, fale a este jovem: Jerusalém será habitada como as aldeias sem muros, por causa da multidão de homens e animais que haverá nela. E eu, diz o Senhor, serei um muro de fogo ao redor dela e serei a sua glória no meio dela. Fujam agora da terra do Norte, diz o Senhor, pois eu os dispersei como os quatro ventos do céu, afirma o Senhor.",
+      "passages": [
+        {
+          "ref": "Zacarias 2:1–6",
+          "text": "Levantei novamente os olhos e vi, e eis que havia um homem com um cordel de medir na mão. E eu perguntei: Para onde você está indo? Ele respondeu: Estou indo medir Jerusalém, para saber qual é a sua largura e qual é o seu comprimento. Eis que saiu o anjo que falava comigo, e outro anjo foi ao seu encontro. E disse-lhe: Vá, fale a este jovem: Jerusalém será habitada como as aldeias sem muros, por causa da multidão de homens e animais que haverá nela. E eu, diz o Senhor, serei um muro de fogo ao redor dela e serei a sua glória no meio dela. Fujam agora da terra do Norte, diz o Senhor, pois eu os dispersei como os quatro ventos do céu, afirma o Senhor."
+        }
+      ],
+      "context": "Um homem mede Jerusalém; o Senhor promete ser muro de fogo ao redor.",
+      "keyword": "Levantei",
+      "keywordGloss": "Palavra-chave do trecho em Muro de fogo.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Levantei novamente os olhos e vi, e eis",
+        "E eu perguntei: Para onde você está",
+        "Eis que saiu o anjo que falava comigo,"
+      ],
+      "facts": [
+        {
+          "text": "Levantei novamente os olhos e vi, e eis que havia um homem com um cordel de.",
+          "evidenceRef": "Zacarias 2:1",
+          "evidenceSpan": "Levantei novamente os olhos e vi, e eis que havia um homem com um cordel de"
+        },
+        {
+          "text": "E eu perguntei: Para onde você está indo? Ele respondeu: Estou indo medir.",
+          "evidenceRef": "Zacarias 2:2",
+          "evidenceSpan": "E eu perguntei: Para onde você está indo? Ele respondeu: Estou indo medir"
+        },
+        {
+          "text": "Eis que saiu o anjo que falava comigo, e outro anjo foi ao seu encontro.",
+          "evidenceRef": "Zacarias 2:3",
+          "evidenceSpan": "Eis que saiu o anjo que falava comigo, e outro anjo foi ao seu encontro"
+        },
+        {
+          "text": "E disse-lhe: Vá, fale a este jovem: Jerusalém será habitada como as aldeias sem.",
+          "evidenceRef": "Zacarias 2:4",
+          "evidenceSpan": "E disse-lhe: Vá, fale a este jovem: Jerusalém será habitada como as aldeias sem"
+        },
+        {
+          "text": "E eu, diz o Senhor, serei um muro de fogo ao redor dela e serei a sua glória no.",
+          "evidenceRef": "Zacarias 2:5",
+          "evidenceSpan": "E eu, diz o Senhor, serei um muro de fogo ao redor dela e serei a sua glória no"
+        },
+        {
+          "text": "Fujam agora da terra do Norte, diz o Senhor, pois eu os dispersei como os.",
+          "evidenceRef": "Zacarias 2:6",
+          "evidenceSpan": "Fujam agora da terra do Norte, diz o Senhor, pois eu os dispersei como os"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Levantei",
+          "gloss": "Palavra-chave do trecho em Muro de fogo."
+        },
+        {
+          "term": "Estou",
+          "gloss": "Palavra-chave do trecho em Muro de fogo."
+        },
+        {
+          "term": "Jerusalém",
+          "gloss": "Palavra-chave do trecho em Muro de fogo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Levantei novamente os olhos e vi, e eis que havia",
+          "evidenceRef": "Zacarias 2:1"
+        },
+        {
+          "label": "E eu perguntei: Para onde você está indo? Ele",
+          "evidenceRef": "Zacarias 2:2"
+        },
+        {
+          "label": "Eis que saiu o anjo que falava comigo, e outro",
+          "evidenceRef": "Zacarias 2:3"
+        },
+        {
+          "label": "E disse-lhe: Vá, fale a este jovem: Jerusalém",
+          "evidenceRef": "Zacarias 2:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Fujam agora da terra do Norte, diz o Senhor, pois eu os dispersei como os quatro ventos",
+          "marker": "pois",
+          "evidenceRef": "Zacarias 2:6"
+        },
+        {
+          "kind": "resultado",
+          "text": "E eu perguntei: Para onde você está indo? Ele respondeu: Estou indo medir Jerusalém, para",
+          "marker": null,
+          "evidenceRef": "Zacarias 2:2"
+        },
+        {
+          "kind": "resultado",
+          "text": "Eis que saiu o anjo que falava comigo, e outro anjo foi ao seu encontro",
+          "marker": null,
+          "evidenceRef": "Zacarias 2:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Eu serei para ela um muro de fogo ao redor e serei a glória no meio dela.",
+      "anchorQuestion": "Segundo Zacarias 2:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-03-vestes-limpas": {
+      "slug": "zcc-03-vestes-limpas",
+      "passageRef": "Zacarias 3:1–6",
+      "passageText": "Ele me mostrou o sumo sacerdote Josué, que estava diante do Anjo do Senhor, e Satanás estava à sua direita, pronto para se opor a ele. O Senhor disse a Satanás: \"O Senhor te repreenda, ó Satanás; sim, o Senhor, que escolheu Jerusalém, te repreenda; não é este um tição tirado do fogo?\" Josué, vestido com vestes sujas, estava diante do Anjo. Então ele respondeu e falou aos que estavam diante dele, dizendo: Tirem-lhe as vestes sujas. E a ele disse: Eis que fiz passar de ti a tua iniquidade, e te vestirei com roupas finas. E eu disse: Coloquem um turbante limpo sobre a cabeça dele. Assim, colocaram um turbante limpo sobre a cabeça e o vestiram com trajes apropriados; e o Anjo do Senhor estava ali ao seu lado. O Anjo do Senhor se manifestou a Josué declarando.",
+      "passages": [
+        {
+          "ref": "Zacarias 3:1–6",
+          "text": "Ele me mostrou o sumo sacerdote Josué, que estava diante do Anjo do Senhor, e Satanás estava à sua direita, pronto para se opor a ele. O Senhor disse a Satanás: \"O Senhor te repreenda, ó Satanás; sim, o Senhor, que escolheu Jerusalém, te repreenda; não é este um tição tirado do fogo?\" Josué, vestido com vestes sujas, estava diante do Anjo. Então ele respondeu e falou aos que estavam diante dele, dizendo: Tirem-lhe as vestes sujas. E a ele disse: Eis que fiz passar de ti a tua iniquidade, e te vestirei com roupas finas. E eu disse: Coloquem um turbante limpo sobre a cabeça dele. Assim, colocaram um turbante limpo sobre a cabeça e o vestiram com trajes apropriados; e o Anjo do Senhor estava ali ao seu lado. O Anjo do Senhor se manifestou a Josué declarando."
+        }
+      ],
+      "context": "Josué, o sumo sacerdote, aparece com vestes sujas; o Senhor o repreende a Satanás.",
+      "keyword": "Josué",
+      "keywordGloss": "Palavra-chave do trecho em Vestes limpas.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Ele me mostrou o sumo sacerdote Josué,",
+        "não é este um tição tirado do fogo?",
+        "Josué, vestido com vestes sujas, estava"
+      ],
+      "facts": [
+        {
+          "text": "Ele me mostrou o sumo sacerdote Josué, que estava diante do Anjo do Senhor, e.",
+          "evidenceRef": "Zacarias 3:1",
+          "evidenceSpan": "Ele me mostrou o sumo sacerdote Josué, que estava diante do Anjo do Senhor, e"
+        },
+        {
+          "text": "O Senhor disse a Satanás: \"O Senhor te repreenda, ó Satanás.",
+          "evidenceRef": "Zacarias 3:2",
+          "evidenceSpan": "O Senhor disse a Satanás: \"O Senhor te repreenda, ó Satanás"
+        },
+        {
+          "text": "Josué, vestido com vestes sujas, estava diante do Anjo.",
+          "evidenceRef": "Zacarias 3:3",
+          "evidenceSpan": "Josué, vestido com vestes sujas, estava diante do Anjo"
+        },
+        {
+          "text": "Então ele respondeu e falou aos que estavam diante dele, dizendo: Tirem-lhe as.",
+          "evidenceRef": "Zacarias 3:4",
+          "evidenceSpan": "Então ele respondeu e falou aos que estavam diante dele, dizendo: Tirem-lhe as"
+        },
+        {
+          "text": "E eu disse: Coloquem um turbante limpo sobre a cabeça dele.",
+          "evidenceRef": "Zacarias 3:5",
+          "evidenceSpan": "E eu disse: Coloquem um turbante limpo sobre a cabeça dele"
+        },
+        {
+          "text": "O Anjo do Senhor se manifestou a Josué declarando.",
+          "evidenceRef": "Zacarias 3:6",
+          "evidenceSpan": "O Anjo do Senhor se manifestou a Josué declarando"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Josué",
+          "gloss": "Palavra-chave do trecho em Vestes limpas."
+        },
+        {
+          "term": "Anjo",
+          "gloss": "Palavra-chave do trecho em Vestes limpas."
+        },
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Vestes limpas."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Ele me mostrou o sumo sacerdote Josué, que estava",
+          "evidenceRef": "Zacarias 3:1"
+        },
+        {
+          "label": "não é este um tição tirado do fogo?",
+          "evidenceRef": "Zacarias 3:2"
+        },
+        {
+          "label": "Josué, vestido com vestes sujas, estava diante do",
+          "evidenceRef": "Zacarias 3:3"
+        },
+        {
+          "label": "Então ele respondeu e falou aos que estavam",
+          "evidenceRef": "Zacarias 3:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "E a ele disse: Eis que fiz passar de ti a tua iniquidade, e te vestirei com roupas finas",
+          "marker": "Então",
+          "evidenceRef": "Zacarias 3:4"
+        },
+        {
+          "kind": "resultado",
+          "text": "E eu disse: Coloquem um turbante limpo sobre a cabeça dele",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 3:5"
+        },
+        {
+          "kind": "resultado",
+          "text": "Josué, vestido com vestes sujas, estava diante do Anjo",
+          "marker": null,
+          "evidenceRef": "Zacarias 3:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O Senhor tira a iniquidade e veste de festa quem serve na sua casa.",
+      "anchorQuestion": "Segundo Zacarias 3:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-04-nao-por-forca": {
+      "slug": "zcc-04-nao-por-forca",
+      "passageRef": "Zacarias 4:1–6",
+      "passageText": "E o anjo que falava comigo voltou e me despertou, como um homem que é despertado de seu sono. Ele me perguntou: \"O que você vê?\" E eu respondi: \"Estou vendo um candelabro inteiro de ouro, com um vaso de azeite em sua parte superior. Ele possui sete lâmpadas e sete tubos, um para cada lâmpada que está sobre o candelabro.\" E, acima dele, estavam duas oliveiras, uma à direita do vaso de azeite e a outra à esquerda. E eu perguntei ao anjo que falava comigo: \"Meu senhor, o que é isto?\" Então o anjo que falava comigo respondeu: Você não sabe o que é isso? E eu disse: Não, meu senhor. E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel: \"Não por força nem por poder, mas pelo meu Espírito, declara o Senhor dos Exércitos.",
+      "passages": [
+        {
+          "ref": "Zacarias 4:1–6",
+          "text": "E o anjo que falava comigo voltou e me despertou, como um homem que é despertado de seu sono. Ele me perguntou: \"O que você vê?\" E eu respondi: \"Estou vendo um candelabro inteiro de ouro, com um vaso de azeite em sua parte superior. Ele possui sete lâmpadas e sete tubos, um para cada lâmpada que está sobre o candelabro.\" E, acima dele, estavam duas oliveiras, uma à direita do vaso de azeite e a outra à esquerda. E eu perguntei ao anjo que falava comigo: \"Meu senhor, o que é isto?\" Então o anjo que falava comigo respondeu: Você não sabe o que é isso? E eu disse: Não, meu senhor. E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel: \"Não por força nem por poder, mas pelo meu Espírito, declara o Senhor dos Exércitos."
+        }
+      ],
+      "context": "Zacarias vê o castiçal de ouro e ouve: não por força, nem por poder.",
+      "keyword": "Estou",
+      "keywordGloss": "Palavra-chave do trecho em Não por força.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "E o anjo que falava comigo voltou e me",
+        "Ele me perguntou: \"O que você vê?\" E eu",
+        "E, acima dele, estavam duas oliveiras,"
+      ],
+      "facts": [
+        {
+          "text": "E o anjo que falava comigo voltou e me despertou, como um homem que é.",
+          "evidenceRef": "Zacarias 4:1",
+          "evidenceSpan": "E o anjo que falava comigo voltou e me despertou, como um homem que é"
+        },
+        {
+          "text": "Ele me perguntou: \"O que você vê?\" E eu respondi: \"Estou vendo um candelabro.",
+          "evidenceRef": "Zacarias 4:2",
+          "evidenceSpan": "Ele me perguntou: \"O que você vê?\" E eu respondi: \"Estou vendo um candelabro"
+        },
+        {
+          "text": "E, acima dele, estavam duas oliveiras, uma à direita do vaso de azeite e a.",
+          "evidenceRef": "Zacarias 4:3",
+          "evidenceSpan": "E, acima dele, estavam duas oliveiras, uma à direita do vaso de azeite e a"
+        },
+        {
+          "text": "E eu perguntei ao anjo que falava comigo: \"Meu senhor, o que é isto?.",
+          "evidenceRef": "Zacarias 4:4",
+          "evidenceSpan": "E eu perguntei ao anjo que falava comigo: \"Meu senhor, o que é isto?"
+        },
+        {
+          "text": "Então o anjo que falava comigo respondeu: Você não sabe o que é isso? E eu.",
+          "evidenceRef": "Zacarias 4:5",
+          "evidenceSpan": "Então o anjo que falava comigo respondeu: Você não sabe o que é isso? E eu"
+        },
+        {
+          "text": "E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel: \"Não por força.",
+          "evidenceRef": "Zacarias 4:6",
+          "evidenceSpan": "E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel: \"Não por força"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Estou",
+          "gloss": "Palavra-chave do trecho em Não por força."
+        },
+        {
+          "term": "senhor",
+          "gloss": "Palavra-chave do trecho em Não por força."
+        },
+        {
+          "term": "Você",
+          "gloss": "Palavra-chave do trecho em Não por força."
+        }
+      ],
+      "structure": [
+        {
+          "label": "E o anjo que falava comigo voltou e me despertou,",
+          "evidenceRef": "Zacarias 4:1"
+        },
+        {
+          "label": "Ele me perguntou: \"O que você vê?\" E eu respondi:",
+          "evidenceRef": "Zacarias 4:2"
+        },
+        {
+          "label": "E, acima dele, estavam duas oliveiras, uma à",
+          "evidenceRef": "Zacarias 4:3"
+        },
+        {
+          "label": "E eu perguntei ao anjo que falava comigo: \"Meu",
+          "evidenceRef": "Zacarias 4:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Então o anjo que falava comigo respondeu: Você não sabe o que é isso? E eu disse: Não,",
+          "marker": "Então",
+          "evidenceRef": "Zacarias 4:5"
+        },
+        {
+          "kind": "contraste",
+          "text": "E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel: \"Não por força nem por",
+          "marker": "mas",
+          "evidenceRef": "Zacarias 4:6"
+        },
+        {
+          "kind": "resultado",
+          "text": "E, acima dele, estavam duas oliveiras, uma à direita do vaso de azeite e a outra à",
+          "marker": null,
+          "evidenceRef": "Zacarias 4:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Não por força, nem por poder, mas pelo meu Espírito, diz o Senhor dos Exércitos.",
+      "anchorQuestion": "Segundo Zacarias 4:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-05-o-rolo-e-o": {
+      "slug": "zcc-05-o-rolo-e-o",
+      "passageRef": "Zacarias 5:1–6",
+      "passageText": "Levantei novamente os meus olhos e observei, e eis que havia um rolo que voava. Ele me perguntou: \"O que você vê?\" E eu respondi: \"Vejo um rolo voante, que tem vinte côvados de comprimento e dez côvados de largura.\" Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra; pois todo aquele que furtar será expulso de acordo com a maldição, assim como todo aquele que jurar falsamente também será expulso segundo a mesma. Eu a farei sair, diz o Senhor dos Exércitos, e a levarei para a casa do ladrão e para a casa daquele que jurar falsamente pelo meu nome; ali, pernoitará consumindo suas madeiras e pedras. Então, o anjo que falava comigo saiu e me disse: Levante agora os olhos e veja o que é isso que surge. E eu perguntei: O que é isto? Ele me respondeu: É um efa que sai. E acrescentou: Isto é a iniquidade em toda a terra.",
+      "passages": [
+        {
+          "ref": "Zacarias 5:1–6",
+          "text": "Levantei novamente os meus olhos e observei, e eis que havia um rolo que voava. Ele me perguntou: \"O que você vê?\" E eu respondi: \"Vejo um rolo voante, que tem vinte côvados de comprimento e dez côvados de largura.\" Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra; pois todo aquele que furtar será expulso de acordo com a maldição, assim como todo aquele que jurar falsamente também será expulso segundo a mesma. Eu a farei sair, diz o Senhor dos Exércitos, e a levarei para a casa do ladrão e para a casa daquele que jurar falsamente pelo meu nome; ali, pernoitará consumindo suas madeiras e pedras. Então, o anjo que falava comigo saiu e me disse: Levante agora os olhos e veja o que é isso que surge. E eu perguntei: O que é isto? Ele me respondeu: É um efa que sai. E acrescentou: Isto é a iniquidade em toda a terra."
+        }
+      ],
+      "context": "Um rolo voador traz a maldição sobre o furto e o juramento falso.",
+      "keyword": "Levantei",
+      "keywordGloss": "Palavra-chave do trecho em O rolo e o efa.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Levantei novamente os meus olhos e",
+        "Ele me perguntou: \"O que você vê?\" E eu",
+        "Então ele me disse: Esta é a maldição"
+      ],
+      "facts": [
+        {
+          "text": "Levantei novamente os meus olhos e observei, e eis que havia um rolo que voava.",
+          "evidenceRef": "Zacarias 5:1",
+          "evidenceSpan": "Levantei novamente os meus olhos e observei, e eis que havia um rolo que voava"
+        },
+        {
+          "text": "Ele me perguntou: \"O que você vê?\" E eu respondi: \"Vejo um rolo voante, que tem.",
+          "evidenceRef": "Zacarias 5:2",
+          "evidenceSpan": "Ele me perguntou: \"O que você vê?\" E eu respondi: \"Vejo um rolo voante, que tem"
+        },
+        {
+          "text": "Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra.",
+          "evidenceRef": "Zacarias 5:3",
+          "evidenceSpan": "Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra"
+        },
+        {
+          "text": "ali, pernoitará consumindo suas madeiras e pedras.",
+          "evidenceRef": "Zacarias 5:4",
+          "evidenceSpan": "ali, pernoitará consumindo suas madeiras e pedras"
+        },
+        {
+          "text": "Então, o anjo que falava comigo saiu e me disse: Levante agora os olhos e veja.",
+          "evidenceRef": "Zacarias 5:5",
+          "evidenceSpan": "Então, o anjo que falava comigo saiu e me disse: Levante agora os olhos e veja"
+        },
+        {
+          "text": "E eu perguntei: O que é isto? Ele me respondeu: É um efa que sai.",
+          "evidenceRef": "Zacarias 5:6",
+          "evidenceSpan": "E eu perguntei: O que é isto? Ele me respondeu: É um efa que sai"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Levantei",
+          "gloss": "Palavra-chave do trecho em O rolo e o efa."
+        },
+        {
+          "term": "Vejo",
+          "gloss": "Palavra-chave do trecho em O rolo e o efa."
+        },
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em O rolo e o efa."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Levantei novamente os meus olhos e observei, e",
+          "evidenceRef": "Zacarias 5:1"
+        },
+        {
+          "label": "Ele me perguntou: \"O que você vê?\" E eu respondi:",
+          "evidenceRef": "Zacarias 5:2"
+        },
+        {
+          "label": "Então ele me disse: Esta é a maldição que sairá",
+          "evidenceRef": "Zacarias 5:3"
+        },
+        {
+          "label": "ali, pernoitará consumindo suas madeiras e pedras",
+          "evidenceRef": "Zacarias 5:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra",
+          "marker": "Então",
+          "evidenceRef": "Zacarias 5:3"
+        },
+        {
+          "kind": "resultado",
+          "text": "Então, o anjo que falava comigo saiu e me disse: Levante agora os olhos e veja o que é",
+          "marker": "Então",
+          "evidenceRef": "Zacarias 5:5"
+        },
+        {
+          "kind": "resultado",
+          "text": "Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra",
+          "marker": null,
+          "evidenceRef": "Zacarias 5:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O pecado não fica sem resposta: a maldição entra na casa de quem rouba e jura falso.",
+      "anchorQuestion": "Segundo Zacarias 5:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-06-coroas-na-cabeca": {
+      "slug": "zcc-06-coroas-na-cabeca",
+      "passageRef": "Zacarias 6:9–14",
+      "passageText": "A palavra do Senhor me chegou, dizendo: Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías, e naquele mesmo dia, entra na casa de Josias, filho de Sofonias, para a qual vieram da Babilônia. Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de Jozadaque, o sumo sacerdote. Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele brotará de seu lugar e edificará o templo do Senhor. Ele mesmo edificará o templo do Senhor e será revestido de glória; assentará e dominará em seu trono; e será sacerdote em seu trono, havendo perfeita união entre ambos os ofícios. E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de Sofonias, como memorial no templo do Senhor.",
+      "passages": [
+        {
+          "ref": "Zacarias 6:9–14",
+          "text": "A palavra do Senhor me chegou, dizendo: Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías, e naquele mesmo dia, entra na casa de Josias, filho de Sofonias, para a qual vieram da Babilônia. Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de Jozadaque, o sumo sacerdote. Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele brotará de seu lugar e edificará o templo do Senhor. Ele mesmo edificará o templo do Senhor e será revestido de glória; assentará e dominará em seu trono; e será sacerdote em seu trono, havendo perfeita união entre ambos os ofícios. E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de Sofonias, como memorial no templo do Senhor."
+        }
+      ],
+      "context": "Zacarias faz coroas e as põe na cabeça de Josué; o Renovo edificará o templo.",
+      "keyword": "Senhor",
+      "keywordGloss": "Palavra-chave do trecho em Coroas na cabeça.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "A palavra do Senhor me chegou, dizendo:",
+        "Tome dos que foram levados cativos, a",
+        "Recebe, pois, prata e ouro, e faze"
+      ],
+      "facts": [
+        {
+          "text": "A palavra do Senhor me chegou, dizendo:.",
+          "evidenceRef": "Zacarias 6:9",
+          "evidenceSpan": "A palavra do Senhor me chegou, dizendo:"
+        },
+        {
+          "text": "Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías,.",
+          "evidenceRef": "Zacarias 6:10",
+          "evidenceSpan": "Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías,"
+        },
+        {
+          "text": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué,.",
+          "evidenceRef": "Zacarias 6:11",
+          "evidenceSpan": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué,"
+        },
+        {
+          "text": "Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele.",
+          "evidenceRef": "Zacarias 6:12",
+          "evidenceSpan": "Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele"
+        },
+        {
+          "text": "Ele mesmo edificará o templo do Senhor e será revestido de glória.",
+          "evidenceRef": "Zacarias 6:13",
+          "evidenceSpan": "Ele mesmo edificará o templo do Senhor e será revestido de glória"
+        },
+        {
+          "text": "E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de.",
+          "evidenceRef": "Zacarias 6:14",
+          "evidenceSpan": "E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Coroas na cabeça."
+        },
+        {
+          "term": "Tome",
+          "gloss": "Palavra-chave do trecho em Coroas na cabeça."
+        },
+        {
+          "term": "Heldai",
+          "gloss": "Palavra-chave do trecho em Coroas na cabeça."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A palavra do Senhor me chegou, dizendo:",
+          "evidenceRef": "Zacarias 6:9"
+        },
+        {
+          "label": "Tome dos que foram levados cativos, a saber, de",
+          "evidenceRef": "Zacarias 6:10"
+        },
+        {
+          "label": "Recebe, pois, prata e ouro, e faze coroas, e",
+          "evidenceRef": "Zacarias 6:11"
+        },
+        {
+          "label": "Assim fala o Senhor dos Exércitos: Eis que o",
+          "evidenceRef": "Zacarias 6:12"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de",
+          "marker": "pois",
+          "evidenceRef": "Zacarias 6:11"
+        },
+        {
+          "kind": "resultado",
+          "text": "Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele brotará de seu",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 6:12"
+        },
+        {
+          "kind": "resultado",
+          "text": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de",
+          "marker": null,
+          "evidenceRef": "Zacarias 6:11"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O Renovo edificará o templo do Senhor e se assentará e dominará no seu trono.",
+      "anchorQuestion": "Segundo Zacarias 6:9, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-07-juizo-verdadeiro": {
+      "slug": "zcc-07-juizo-verdadeiro",
+      "passageRef": "Zacarias 7:8–13",
+      "passageText": "E a palavra do Senhor chegou a Zacarias, dizendo: Assim falou o Senhor dos Exércitos: Executem justiça verdadeira, pratiquem a bondade e a misericórdia, cada um com seu irmão. Não oprimam a viúva, o órfão, o estrangeiro e o pobre, e que nenhum de vocês intente no coração o mal contra o seu próximo. Entretanto, não quiseram atender e, obstinados, me deram as costas, ensurdeceram os ouvidos, para que não ouvissem. Fizeram o seu coração duro como diamante, para que não ouvissem a lei, nem as palavras que o SENHOR dos Exércitos enviara pelo seu Espírito, mediante os profetas que nos precederam; por isso, veio a grande ira do SENHOR dos Exércitos. E aconteceu que, quando eu clamei, eles não quiseram ouvir; assim, quando eles clamaram, eu não os ouvi, diz o Senhor dos Exércitos.",
+      "passages": [
+        {
+          "ref": "Zacarias 7:8–13",
+          "text": "E a palavra do Senhor chegou a Zacarias, dizendo: Assim falou o Senhor dos Exércitos: Executem justiça verdadeira, pratiquem a bondade e a misericórdia, cada um com seu irmão. Não oprimam a viúva, o órfão, o estrangeiro e o pobre, e que nenhum de vocês intente no coração o mal contra o seu próximo. Entretanto, não quiseram atender e, obstinados, me deram as costas, ensurdeceram os ouvidos, para que não ouvissem. Fizeram o seu coração duro como diamante, para que não ouvissem a lei, nem as palavras que o SENHOR dos Exércitos enviara pelo seu Espírito, mediante os profetas que nos precederam; por isso, veio a grande ira do SENHOR dos Exércitos. E aconteceu que, quando eu clamei, eles não quiseram ouvir; assim, quando eles clamaram, eu não os ouvi, diz o Senhor dos Exércitos."
+        }
+      ],
+      "context": "O Senhor lembra o que pediu pelos primeiros profetas: juízo verdadeiro e bondade.",
+      "keyword": "Senhor",
+      "keywordGloss": "Palavra-chave do trecho em Juízo verdadeiro.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "E a palavra do Senhor chegou a",
+        "Assim falou o Senhor dos Exércitos:",
+        "Não oprimam a viúva, o órfão, o"
+      ],
+      "facts": [
+        {
+          "text": "E a palavra do Senhor chegou a Zacarias, dizendo:.",
+          "evidenceRef": "Zacarias 7:8",
+          "evidenceSpan": "E a palavra do Senhor chegou a Zacarias, dizendo:"
+        },
+        {
+          "text": "Assim falou o Senhor dos Exércitos: Executem justiça verdadeira, pratiquem a.",
+          "evidenceRef": "Zacarias 7:9",
+          "evidenceSpan": "Assim falou o Senhor dos Exércitos: Executem justiça verdadeira, pratiquem a"
+        },
+        {
+          "text": "Não oprimam a viúva, o órfão, o estrangeiro e o pobre, e que nenhum de vocês.",
+          "evidenceRef": "Zacarias 7:10",
+          "evidenceSpan": "Não oprimam a viúva, o órfão, o estrangeiro e o pobre, e que nenhum de vocês"
+        },
+        {
+          "text": "Entretanto, não quiseram atender e, obstinados, me deram as costas,.",
+          "evidenceRef": "Zacarias 7:11",
+          "evidenceSpan": "Entretanto, não quiseram atender e, obstinados, me deram as costas,"
+        },
+        {
+          "text": "por isso, veio a grande ira do SENHOR dos Exércitos.",
+          "evidenceRef": "Zacarias 7:12",
+          "evidenceSpan": "por isso, veio a grande ira do SENHOR dos Exércitos"
+        },
+        {
+          "text": "E aconteceu que, quando eu clamei, eles não quiseram ouvir.",
+          "evidenceRef": "Zacarias 7:13",
+          "evidenceSpan": "E aconteceu que, quando eu clamei, eles não quiseram ouvir"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Juízo verdadeiro."
+        },
+        {
+          "term": "Zacarias",
+          "gloss": "Palavra-chave do trecho em Juízo verdadeiro."
+        },
+        {
+          "term": "Exércitos",
+          "gloss": "Palavra-chave do trecho em Juízo verdadeiro."
+        }
+      ],
+      "structure": [
+        {
+          "label": "E a palavra do Senhor chegou a Zacarias, dizendo:",
+          "evidenceRef": "Zacarias 7:8"
+        },
+        {
+          "label": "Assim falou o Senhor dos Exércitos: Executem",
+          "evidenceRef": "Zacarias 7:9"
+        },
+        {
+          "label": "Não oprimam a viúva, o órfão, o estrangeiro e o",
+          "evidenceRef": "Zacarias 7:10"
+        },
+        {
+          "label": "Entretanto, não quiseram atender e, obstinados,",
+          "evidenceRef": "Zacarias 7:11"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Assim falou o Senhor dos Exércitos: Executem justiça verdadeira, pratiquem a bondade e a",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 7:9"
+        },
+        {
+          "kind": "resultado",
+          "text": "E aconteceu que, quando eu clamei, eles não quiseram ouvir",
+          "marker": "assim",
+          "evidenceRef": "Zacarias 7:13"
+        },
+        {
+          "kind": "resultado",
+          "text": "Não oprimam a viúva, o órfão, o estrangeiro e o pobre, e que nenhum de vocês intente no",
+          "marker": null,
+          "evidenceRef": "Zacarias 7:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Recusar ouvir endurece o coração e espalha o povo entre as nações.",
+      "anchorQuestion": "Segundo Zacarias 7:8, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-08-cidades-da-verdade": {
+      "slug": "zcc-08-cidades-da-verdade",
+      "passageRef": "Zacarias 8:1–6",
+      "passageText": "Veio a mim a palavra do Senhor dos Exércitos, que dizia: Assim diz o Senhor dos Exércitos: Tenho um grande zelo por Sião e, com grande indignação, tenho zelo por ela. Jerusalém chamar-se-á a cidade fiel, e o monte do Senhor dos Exércitos chamar-se-á monte santo. Assim diz o Senhor dos Exércitos: Ainda nas praças de Jerusalém se assentarão velhos e velhas, cada um levando em sua mão o seu arrimo, em razão da sua muita idade. As praças da cidade estarão cheias de meninos e meninas, que brincarão nelas. Assim diz o SENHOR dos Exércitos: Se isto parecer maravilhoso aos olhos do restante deste povo naqueles dias, também será maravilhoso aos meus olhos? —diz o SENHOR dos Exércitos.",
+      "passages": [
+        {
+          "ref": "Zacarias 8:1–6",
+          "text": "Veio a mim a palavra do Senhor dos Exércitos, que dizia: Assim diz o Senhor dos Exércitos: Tenho um grande zelo por Sião e, com grande indignação, tenho zelo por ela. Jerusalém chamar-se-á a cidade fiel, e o monte do Senhor dos Exércitos chamar-se-á monte santo. Assim diz o Senhor dos Exércitos: Ainda nas praças de Jerusalém se assentarão velhos e velhas, cada um levando em sua mão o seu arrimo, em razão da sua muita idade. As praças da cidade estarão cheias de meninos e meninas, que brincarão nelas. Assim diz o SENHOR dos Exércitos: Se isto parecer maravilhoso aos olhos do restante deste povo naqueles dias, também será maravilhoso aos meus olhos? —diz o SENHOR dos Exércitos."
+        }
+      ],
+      "context": "O Senhor tem zelo por Sião e promete voltar a habitar em Jerusalém.",
+      "keyword": "Veio",
+      "keywordGloss": "Palavra-chave do trecho em Cidades da verdade.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Veio a mim a palavra do Senhor dos",
+        "Assim diz o Senhor dos Exércitos: Tenho",
+        "Jerusalém chamar-se-á a cidade fiel, e"
+      ],
+      "facts": [
+        {
+          "text": "Veio a mim a palavra do Senhor dos Exércitos, que dizia:.",
+          "evidenceRef": "Zacarias 8:1",
+          "evidenceSpan": "Veio a mim a palavra do Senhor dos Exércitos, que dizia:"
+        },
+        {
+          "text": "Assim diz o Senhor dos Exércitos: Tenho um grande zelo por Sião e, com grande.",
+          "evidenceRef": "Zacarias 8:2",
+          "evidenceSpan": "Assim diz o Senhor dos Exércitos: Tenho um grande zelo por Sião e, com grande"
+        },
+        {
+          "text": "Jerusalém chamar-se-á a cidade fiel, e o monte do Senhor dos Exércitos.",
+          "evidenceRef": "Zacarias 8:3",
+          "evidenceSpan": "Jerusalém chamar-se-á a cidade fiel, e o monte do Senhor dos Exércitos"
+        },
+        {
+          "text": "Assim diz o Senhor dos Exércitos: Ainda nas praças de Jerusalém se assentarão.",
+          "evidenceRef": "Zacarias 8:4",
+          "evidenceSpan": "Assim diz o Senhor dos Exércitos: Ainda nas praças de Jerusalém se assentarão"
+        },
+        {
+          "text": "As praças da cidade estarão cheias de meninos e meninas, que brincarão nelas.",
+          "evidenceRef": "Zacarias 8:5",
+          "evidenceSpan": "As praças da cidade estarão cheias de meninos e meninas, que brincarão nelas"
+        },
+        {
+          "text": "Assim diz o SENHOR dos Exércitos: Se isto parecer maravilhoso aos olhos do.",
+          "evidenceRef": "Zacarias 8:6",
+          "evidenceSpan": "Assim diz o SENHOR dos Exércitos: Se isto parecer maravilhoso aos olhos do"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Veio",
+          "gloss": "Palavra-chave do trecho em Cidades da verdade."
+        },
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Cidades da verdade."
+        },
+        {
+          "term": "Exércitos",
+          "gloss": "Palavra-chave do trecho em Cidades da verdade."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Veio a mim a palavra do Senhor dos Exércitos, que",
+          "evidenceRef": "Zacarias 8:1"
+        },
+        {
+          "label": "Assim diz o Senhor dos Exércitos: Tenho um grande",
+          "evidenceRef": "Zacarias 8:2"
+        },
+        {
+          "label": "Jerusalém chamar-se-á a cidade fiel, e o monte do",
+          "evidenceRef": "Zacarias 8:3"
+        },
+        {
+          "label": "Assim diz o Senhor dos Exércitos: Ainda nas",
+          "evidenceRef": "Zacarias 8:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Assim diz o Senhor dos Exércitos: Tenho um grande zelo por Sião e, com grande indignação,",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 8:2"
+        },
+        {
+          "kind": "resultado",
+          "text": "Assim diz o Senhor dos Exércitos: Ainda nas praças de Jerusalém se assentarão velhos e",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 8:4"
+        },
+        {
+          "kind": "resultado",
+          "text": "Assim diz o SENHOR dos Exércitos: Se isto parecer maravilhoso aos olhos do restante deste",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 8:6"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Jerusalém será cidade da verdade; o Senhor a salva e traz povos a buscar o seu nome.",
+      "anchorQuestion": "Segundo Zacarias 8:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-09-o-senhor-aparecera": {
+      "slug": "zcc-09-o-senhor-aparecera",
+      "passageRef": "Zacarias 9:11–16",
+      "passageText": "Quanto a você, ó Sião, por causa do sangue da sua aliança, libertei os seus cativos da cova em que não havia água. Voltem-se para a fortaleza, ó presos de esperança; hoje, anuncio que tudo lhes restituirei em dobro. Porque para mim curvei Judá como um arco e acomodei Efraim nele; levantarei os teus filhos, ó Sião, contra os teus filhos, ó Grécia! E te tornarei como a espada de um valente. E o Senhor será visto sobre os filhos de Sião, e suas flechas sairão como relâmpago; o Senhor Deus fará soar a trombeta e irá com os redemoinhos do sul. O Senhor dos Exércitos os protegerá; eles devorarão os fundibulários e os pisarão; também beberão deles o sangue como vinho, e se encherão como bacias de sacrifício, ficando ensopados como os cantos do altar. E o Senhor, seu Deus, naquele dia os salvará, como ao rebanho do seu povo; porque eles são pedras de uma coroa e resplandecem na sua terra.",
+      "passages": [
+        {
+          "ref": "Zacarias 9:11–16",
+          "text": "Quanto a você, ó Sião, por causa do sangue da sua aliança, libertei os seus cativos da cova em que não havia água. Voltem-se para a fortaleza, ó presos de esperança; hoje, anuncio que tudo lhes restituirei em dobro. Porque para mim curvei Judá como um arco e acomodei Efraim nele; levantarei os teus filhos, ó Sião, contra os teus filhos, ó Grécia! E te tornarei como a espada de um valente. E o Senhor será visto sobre os filhos de Sião, e suas flechas sairão como relâmpago; o Senhor Deus fará soar a trombeta e irá com os redemoinhos do sul. O Senhor dos Exércitos os protegerá; eles devorarão os fundibulários e os pisarão; também beberão deles o sangue como vinho, e se encherão como bacias de sacrifício, ficando ensopados como os cantos do altar. E o Senhor, seu Deus, naquele dia os salvará, como ao rebanho do seu povo; porque eles são pedras de uma coroa e resplandecem na sua terra."
+        }
+      ],
+      "context": "O Senhor fará soar a trombeta e protegerá o seu povo como rebanho.",
+      "keyword": "Quanto",
+      "keywordGloss": "Palavra-chave do trecho em O Senhor aparecerá.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Quanto a você, ó Sião, por causa do",
+        "Voltem-se para a fortaleza, ó presos de",
+        "Porque para mim curvei Judá como um"
+      ],
+      "facts": [
+        {
+          "text": "Quanto a você, ó Sião, por causa do sangue da sua aliança, libertei os seus.",
+          "evidenceRef": "Zacarias 9:11",
+          "evidenceSpan": "Quanto a você, ó Sião, por causa do sangue da sua aliança, libertei os seus"
+        },
+        {
+          "text": "Voltem-se para a fortaleza, ó presos de esperança.",
+          "evidenceRef": "Zacarias 9:12",
+          "evidenceSpan": "Voltem-se para a fortaleza, ó presos de esperança"
+        },
+        {
+          "text": "Porque para mim curvei Judá como um arco e acomodei Efraim nele.",
+          "evidenceRef": "Zacarias 9:13",
+          "evidenceSpan": "Porque para mim curvei Judá como um arco e acomodei Efraim nele"
+        },
+        {
+          "text": "o Senhor Deus fará soar a trombeta e irá com os redemoinhos do sul.",
+          "evidenceRef": "Zacarias 9:14",
+          "evidenceSpan": "o Senhor Deus fará soar a trombeta e irá com os redemoinhos do sul"
+        },
+        {
+          "text": "O Senhor dos Exércitos os protegerá.",
+          "evidenceRef": "Zacarias 9:15",
+          "evidenceSpan": "O Senhor dos Exércitos os protegerá"
+        },
+        {
+          "text": "E o Senhor, seu Deus, naquele dia os salvará, como ao rebanho do seu povo.",
+          "evidenceRef": "Zacarias 9:16",
+          "evidenceSpan": "E o Senhor, seu Deus, naquele dia os salvará, como ao rebanho do seu povo"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Quanto",
+          "gloss": "Palavra-chave do trecho em O Senhor aparecerá."
+        },
+        {
+          "term": "Sião",
+          "gloss": "Palavra-chave do trecho em O Senhor aparecerá."
+        },
+        {
+          "term": "Voltem-se",
+          "gloss": "Palavra-chave do trecho em O Senhor aparecerá."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Quanto a você, ó Sião, por causa do sangue da sua",
+          "evidenceRef": "Zacarias 9:11"
+        },
+        {
+          "label": "Voltem-se para a fortaleza, ó presos de esperança",
+          "evidenceRef": "Zacarias 9:12"
+        },
+        {
+          "label": "Porque para mim curvei Judá como um arco e",
+          "evidenceRef": "Zacarias 9:13"
+        },
+        {
+          "label": "E o Senhor será visto sobre os filhos de Sião, e",
+          "evidenceRef": "Zacarias 9:14"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Porque para mim curvei Judá como um arco e acomodei Efraim nele",
+          "marker": "Porque",
+          "evidenceRef": "Zacarias 9:13"
+        },
+        {
+          "kind": "causa",
+          "text": "E o Senhor, seu Deus, naquele dia os salvará, como ao rebanho do seu povo",
+          "marker": "porque",
+          "evidenceRef": "Zacarias 9:16"
+        },
+        {
+          "kind": "resultado",
+          "text": "Porque para mim curvei Judá como um arco e acomodei Efraim nele",
+          "marker": null,
+          "evidenceRef": "Zacarias 9:13"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Quão grande é a sua bondade! O povo do Senhor brilhará como pedras de coroa.",
+      "anchorQuestion": "Segundo Zacarias 9:11, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-10-eu-os-fortalecerei": {
+      "slug": "zcc-10-eu-os-fortalecerei",
+      "passageRef": "Zacarias 10:6–11",
+      "passageText": "Fortalecerei a casa de Judá e salvarei a casa de José; fá-los-ei voltar, pois me compadeço deles. Serão como se eu nunca os tivesse rejeitado, porque eu sou o Senhor, seu Deus, e os ouvirei. Os de Efraim serão como um valente, e seu coração se alegrará como o vinho; seus filhos o verão e se alegrarão; seu coração se regozijará no SENHOR. Eu lhes chamarei e os reunirei porque eu os redimi e eles se multiplicarão como antes se multiplicaram. Eu os espalhei entre os povos, e se lembrarão de mim em terras distantes; viverão com seus filhos e retornarão. Porque eu os farei voltar da terra do Egito e os congregarei da Assíria; os levarei à terra de Gileade e do Líbano, e não se achará lugar suficiente para eles. E ele passará pelo mar de angústia, ferirá as ondas do mar e todas as profundezas do Nilo se secarão; assim, será derrubada a soberania da Assíria, e o cetro do Egito será retirado.",
+      "passages": [
+        {
+          "ref": "Zacarias 10:6–11",
+          "text": "Fortalecerei a casa de Judá e salvarei a casa de José; fá-los-ei voltar, pois me compadeço deles. Serão como se eu nunca os tivesse rejeitado, porque eu sou o Senhor, seu Deus, e os ouvirei. Os de Efraim serão como um valente, e seu coração se alegrará como o vinho; seus filhos o verão e se alegrarão; seu coração se regozijará no SENHOR. Eu lhes chamarei e os reunirei porque eu os redimi e eles se multiplicarão como antes se multiplicaram. Eu os espalhei entre os povos, e se lembrarão de mim em terras distantes; viverão com seus filhos e retornarão. Porque eu os farei voltar da terra do Egito e os congregarei da Assíria; os levarei à terra de Gileade e do Líbano, e não se achará lugar suficiente para eles. E ele passará pelo mar de angústia, ferirá as ondas do mar e todas as profundezas do Nilo se secarão; assim, será derrubada a soberania da Assíria, e o cetro do Egito será retirado."
+        }
+      ],
+      "context": "O Senhor fortalece a casa de Judá e de José e os ajunta do meio dos povos.",
+      "keyword": "Fortalecerei",
+      "keywordGloss": "Palavra-chave do trecho em Eu os fortalecerei.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Fortalecerei a casa de Judá e salvarei",
+        "seus filhos o verão e se alegrarão",
+        "Eu lhes chamarei e os reunirei porque"
+      ],
+      "facts": [
+        {
+          "text": "Fortalecerei a casa de Judá e salvarei a casa de José.",
+          "evidenceRef": "Zacarias 10:6",
+          "evidenceSpan": "Fortalecerei a casa de Judá e salvarei a casa de José"
+        },
+        {
+          "text": "Os de Efraim serão como um valente, e seu coração se alegrará como o vinho.",
+          "evidenceRef": "Zacarias 10:7",
+          "evidenceSpan": "Os de Efraim serão como um valente, e seu coração se alegrará como o vinho"
+        },
+        {
+          "text": "Eu lhes chamarei e os reunirei porque eu os redimi e eles se multiplicarão como.",
+          "evidenceRef": "Zacarias 10:8",
+          "evidenceSpan": "Eu lhes chamarei e os reunirei porque eu os redimi e eles se multiplicarão como"
+        },
+        {
+          "text": "Eu os espalhei entre os povos, e se lembrarão de mim em terras distantes.",
+          "evidenceRef": "Zacarias 10:9",
+          "evidenceSpan": "Eu os espalhei entre os povos, e se lembrarão de mim em terras distantes"
+        },
+        {
+          "text": "Porque eu os farei voltar da terra do Egito e os congregarei da Assíria.",
+          "evidenceRef": "Zacarias 10:10",
+          "evidenceSpan": "Porque eu os farei voltar da terra do Egito e os congregarei da Assíria"
+        },
+        {
+          "text": "assim, será derrubada a soberania da Assíria, e o cetro do Egito será retirado.",
+          "evidenceRef": "Zacarias 10:11",
+          "evidenceSpan": "assim, será derrubada a soberania da Assíria, e o cetro do Egito será retirado"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Fortalecerei",
+          "gloss": "Palavra-chave do trecho em Eu os fortalecerei."
+        },
+        {
+          "term": "Judá",
+          "gloss": "Palavra-chave do trecho em Eu os fortalecerei."
+        },
+        {
+          "term": "José",
+          "gloss": "Palavra-chave do trecho em Eu os fortalecerei."
+        }
+      ],
+      "structure": [
+        {
+          "label": "fá-los-ei voltar, pois me compadeço deles",
+          "evidenceRef": "Zacarias 10:6"
+        },
+        {
+          "label": "seus filhos o verão e se alegrarão",
+          "evidenceRef": "Zacarias 10:7"
+        },
+        {
+          "label": "Eu lhes chamarei e os reunirei porque eu os",
+          "evidenceRef": "Zacarias 10:8"
+        },
+        {
+          "label": "viverão com seus filhos e retornarão",
+          "evidenceRef": "Zacarias 10:9"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Fortalecerei a casa de Judá e salvarei a casa de José",
+          "marker": "porque",
+          "evidenceRef": "Zacarias 10:6"
+        },
+        {
+          "kind": "causa",
+          "text": "Eu lhes chamarei e os reunirei porque eu os redimi e eles se multiplicarão como antes se",
+          "marker": "porque",
+          "evidenceRef": "Zacarias 10:8"
+        },
+        {
+          "kind": "causa",
+          "text": "Porque eu os farei voltar da terra do Egito e os congregarei da Assíria",
+          "marker": "Porque",
+          "evidenceRef": "Zacarias 10:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Eu os fortalecerei no Senhor, e andarão no seu nome, diz o Senhor.",
+      "anchorQuestion": "Segundo Zacarias 10:6, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-11-trinta-moedas": {
+      "slug": "zcc-11-trinta-moedas",
+      "passageRef": "Zacarias 11:4–9",
+      "passageText": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas. Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles. Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas. E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim. E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima.",
+      "passages": [
+        {
+          "ref": "Zacarias 11:4–9",
+          "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas. Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles. Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas. E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim. E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima."
+        }
+      ],
+      "context": "Zacarias pastoreia o rebanho e é avaliado em trinta moedas de prata.",
+      "keyword": "Senhor",
+      "keywordGloss": "Palavra-chave do trecho em Trinta moedas.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Assim diz o Senhor, meu Deus: Apascenta",
+        "Cujos proprietários as matam e não se",
+        "Não terei mais compaixão dos habitantes"
+      ],
+      "facts": [
+        {
+          "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate.",
+          "evidenceRef": "Zacarias 11:4",
+          "evidenceSpan": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate"
+        },
+        {
+          "text": "Cujos proprietários as matam e não se sentem culpados.",
+          "evidenceRef": "Zacarias 11:5",
+          "evidenceSpan": "Cujos proprietários as matam e não se sentem culpados"
+        },
+        {
+          "text": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor.",
+          "evidenceRef": "Zacarias 11:6",
+          "evidenceSpan": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor"
+        },
+        {
+          "text": "tomei para mim duas varas: uma chamei de Graça e a outra de União.",
+          "evidenceRef": "Zacarias 11:7",
+          "evidenceSpan": "tomei para mim duas varas: uma chamei de Graça e a outra de União"
+        },
+        {
+          "text": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou.",
+          "evidenceRef": "Zacarias 11:8",
+          "evidenceSpan": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou"
+        },
+        {
+          "text": "E eu disse: Não apascentarei mais vocês.",
+          "evidenceRef": "Zacarias 11:9",
+          "evidenceSpan": "E eu disse: Não apascentarei mais vocês"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Trinta moedas."
+        },
+        {
+          "term": "Deus",
+          "gloss": "Palavra-chave do trecho em Trinta moedas."
+        },
+        {
+          "term": "Apascenta",
+          "gloss": "Palavra-chave do trecho em Trinta moedas."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Assim diz o Senhor, meu Deus: Apascenta as",
+          "evidenceRef": "Zacarias 11:4"
+        },
+        {
+          "label": "Cujos proprietários as matam e não se sentem",
+          "evidenceRef": "Zacarias 11:5"
+        },
+        {
+          "label": "Não terei mais compaixão dos habitantes desta",
+          "evidenceRef": "Zacarias 11:6"
+        },
+        {
+          "label": "e cuidei das ovelhas",
+          "evidenceRef": "Zacarias 11:7"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 11:4"
+        },
+        {
+          "kind": "causa",
+          "text": "Cujos proprietários as matam e não se sentem culpados",
+          "marker": "porque",
+          "evidenceRef": "Zacarias 11:5"
+        },
+        {
+          "kind": "causa",
+          "text": "Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas",
+          "marker": "pois",
+          "evidenceRef": "Zacarias 11:7"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O preço vil pago ao pastor é lançado ao oleiro, na casa do Senhor.",
+      "anchorQuestion": "Segundo Zacarias 11:4, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-12-olharao-para-mim": {
+      "slug": "zcc-12-olharao-para-mim",
+      "passageRef": "Zacarias 12:1–6",
+      "passageText": "Peso da palavra do Senhor contra Israel: assim declara o Senhor que estende os céus, que funda a terra e que forma o espírito do homem dentro dele. Eis que farei de Jerusalém um cálice de tontear para todos os povos ao seu redor, bem como para Judá, durante o sítio contra Jerusalém. Naquele dia, farei de Jerusalém uma pedra pesada para todos os povos; todos os que a levantarem certamente sofrerão ferimentos graves, e todas as nações da terra se unirão contra ela. Naquele dia, diz o SENHOR, farei com que todos os cavalos sejam tomados de espanto e os que os montam, de loucura; mas sobre a casa de Judá abrirei os olhos e farei com que todos os cavalos dos povos fiquem cegos Então, os líderes de Judá pensarão assim: A força dos habitantes de Jerusalém é do SENHOR dos Exércitos, seu Deus. Naquele dia, colocarei os líderes de Judá como um braseiro ardente sob a lenha e como uma tocha entre a palha; assim, à direita e à esquerda, devorarão todos os povos ao redor, e Jerusalém será habitada de novo em seu próprio lugar, em Jerusalém mesma.",
+      "passages": [
+        {
+          "ref": "Zacarias 12:1–6",
+          "text": "Peso da palavra do Senhor contra Israel: assim declara o Senhor que estende os céus, que funda a terra e que forma o espírito do homem dentro dele. Eis que farei de Jerusalém um cálice de tontear para todos os povos ao seu redor, bem como para Judá, durante o sítio contra Jerusalém. Naquele dia, farei de Jerusalém uma pedra pesada para todos os povos; todos os que a levantarem certamente sofrerão ferimentos graves, e todas as nações da terra se unirão contra ela. Naquele dia, diz o SENHOR, farei com que todos os cavalos sejam tomados de espanto e os que os montam, de loucura; mas sobre a casa de Judá abrirei os olhos e farei com que todos os cavalos dos povos fiquem cegos Então, os líderes de Judá pensarão assim: A força dos habitantes de Jerusalém é do SENHOR dos Exércitos, seu Deus. Naquele dia, colocarei os líderes de Judá como um braseiro ardente sob a lenha e como uma tocha entre a palha; assim, à direita e à esquerda, devorarão todos os povos ao redor, e Jerusalém será habitada de novo em seu próprio lugar, em Jerusalém mesma."
+        }
+      ],
+      "context": "Jerusalém será cálice de tontear; o Senhor derramará o Espírito de graça.",
+      "keyword": "Peso",
+      "keywordGloss": "Palavra-chave do trecho em Olharão para mim.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Peso da palavra do Senhor contra",
+        "Eis que farei de Jerusalém um cálice de",
+        "Naquele dia, farei de Jerusalém uma"
+      ],
+      "facts": [
+        {
+          "text": "Peso da palavra do Senhor contra Israel: assim declara o Senhor que estende os.",
+          "evidenceRef": "Zacarias 12:1",
+          "evidenceSpan": "Peso da palavra do Senhor contra Israel: assim declara o Senhor que estende os"
+        },
+        {
+          "text": "Eis que farei de Jerusalém um cálice de tontear para todos os povos ao seu.",
+          "evidenceRef": "Zacarias 12:2",
+          "evidenceSpan": "Eis que farei de Jerusalém um cálice de tontear para todos os povos ao seu"
+        },
+        {
+          "text": "Naquele dia, farei de Jerusalém uma pedra pesada para todos os povos.",
+          "evidenceRef": "Zacarias 12:3",
+          "evidenceSpan": "Naquele dia, farei de Jerusalém uma pedra pesada para todos os povos"
+        },
+        {
+          "text": "Naquele dia, diz o SENHOR, farei com que todos os cavalos sejam tomados de.",
+          "evidenceRef": "Zacarias 12:4",
+          "evidenceSpan": "Naquele dia, diz o SENHOR, farei com que todos os cavalos sejam tomados de"
+        },
+        {
+          "text": "Então, os líderes de Judá pensarão assim: A força dos habitantes de Jerusalém é.",
+          "evidenceRef": "Zacarias 12:5",
+          "evidenceSpan": "Então, os líderes de Judá pensarão assim: A força dos habitantes de Jerusalém é"
+        },
+        {
+          "text": "Naquele dia, colocarei os líderes de Judá como um braseiro ardente sob a lenha.",
+          "evidenceRef": "Zacarias 12:6",
+          "evidenceSpan": "Naquele dia, colocarei os líderes de Judá como um braseiro ardente sob a lenha"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Peso",
+          "gloss": "Palavra-chave do trecho em Olharão para mim."
+        },
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Olharão para mim."
+        },
+        {
+          "term": "Israel",
+          "gloss": "Palavra-chave do trecho em Olharão para mim."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Peso da palavra do Senhor contra Israel: assim",
+          "evidenceRef": "Zacarias 12:1"
+        },
+        {
+          "label": "Eis que farei de Jerusalém um cálice de tontear",
+          "evidenceRef": "Zacarias 12:2"
+        },
+        {
+          "label": "Naquele dia, farei de Jerusalém uma pedra pesada",
+          "evidenceRef": "Zacarias 12:3"
+        },
+        {
+          "label": "Naquele dia, diz o SENHOR, farei com que todos os",
+          "evidenceRef": "Zacarias 12:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Peso da palavra do Senhor contra Israel: assim declara o Senhor que estende os céus, que",
+          "marker": "assim",
+          "evidenceRef": "Zacarias 12:1"
+        },
+        {
+          "kind": "contraste",
+          "text": "Naquele dia, diz o SENHOR, farei com que todos os cavalos sejam tomados de espanto e os",
+          "marker": "mas",
+          "evidenceRef": "Zacarias 12:4"
+        },
+        {
+          "kind": "resultado",
+          "text": "Então, os líderes de Judá pensarão assim: A força dos habitantes de Jerusalém é do SENHOR",
+          "marker": "Então",
+          "evidenceRef": "Zacarias 12:5"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Olharão para mim, a quem traspassaram, e prantearão como por um unigênito.",
+      "anchorQuestion": "Segundo Zacarias 12:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-13-fonte-aberta": {
+      "slug": "zcc-13-fonte-aberta",
+      "passageRef": "Zacarias 13:1–6",
+      "passageText": "Naquele dia, haverá uma fonte aberta para a casa de Davi e para os habitantes de Jerusalém, para remover o pecado e a impureza. Naquele dia, diz o Senhor dos Exércitos, eliminarei da terra os nomes dos ídolos, e não haverá mais memória deles; também farei desaparecer da terra os profetas e o espírito imundo. E, quando alguém ainda profetizar, seus pais que o geraram lhe dirão: \"Não viverás, porque falaste mentiras em nome do Senhor; e seus pais o traspassarão quando profetizar.\" Naquele dia, os profetas se envergonharão cada um de sua visão ao profetizar; e não mais usarão manto de pele para enganarem. E dirão: \"Não sou profeta, sou lavrador da terra, pois fui comprado desde a minha mocidade. Se alguém lhe perguntar: \"Que feridas são essas em suas mãos?\" ele responderá: \"São as feridas com que fui ferido na casa dos meus amigos.\"",
+      "passages": [
+        {
+          "ref": "Zacarias 13:1–6",
+          "text": "Naquele dia, haverá uma fonte aberta para a casa de Davi e para os habitantes de Jerusalém, para remover o pecado e a impureza. Naquele dia, diz o Senhor dos Exércitos, eliminarei da terra os nomes dos ídolos, e não haverá mais memória deles; também farei desaparecer da terra os profetas e o espírito imundo. E, quando alguém ainda profetizar, seus pais que o geraram lhe dirão: \"Não viverás, porque falaste mentiras em nome do Senhor; e seus pais o traspassarão quando profetizar.\" Naquele dia, os profetas se envergonharão cada um de sua visão ao profetizar; e não mais usarão manto de pele para enganarem. E dirão: \"Não sou profeta, sou lavrador da terra, pois fui comprado desde a minha mocidade. Se alguém lhe perguntar: \"Que feridas são essas em suas mãos?\" ele responderá: \"São as feridas com que fui ferido na casa dos meus amigos.\""
+        }
+      ],
+      "context": "Naquele dia haverá uma fonte aberta contra o pecado; o Pastor é ferido.",
+      "keyword": "Naquele",
+      "keywordGloss": "Palavra-chave do trecho em Fonte aberta.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Naquele dia, haverá uma fonte aberta",
+        "Naquele dia, diz o Senhor dos",
+        "E, quando alguém ainda profetizar, seus"
+      ],
+      "facts": [
+        {
+          "text": "Naquele dia, haverá uma fonte aberta para a casa de Davi e para os habitantes.",
+          "evidenceRef": "Zacarias 13:1",
+          "evidenceSpan": "Naquele dia, haverá uma fonte aberta para a casa de Davi e para os habitantes"
+        },
+        {
+          "text": "também farei desaparecer da terra os profetas e o espírito imundo.",
+          "evidenceRef": "Zacarias 13:2",
+          "evidenceSpan": "também farei desaparecer da terra os profetas e o espírito imundo"
+        },
+        {
+          "text": "e seus pais o traspassarão quando profetizar.",
+          "evidenceRef": "Zacarias 13:3",
+          "evidenceSpan": "e seus pais o traspassarão quando profetizar"
+        },
+        {
+          "text": "Naquele dia, os profetas se envergonharão cada um de sua visão ao profetizar.",
+          "evidenceRef": "Zacarias 13:4",
+          "evidenceSpan": "Naquele dia, os profetas se envergonharão cada um de sua visão ao profetizar"
+        },
+        {
+          "text": "E dirão: \"Não sou profeta, sou lavrador da terra, pois fui comprado desde a.",
+          "evidenceRef": "Zacarias 13:5",
+          "evidenceSpan": "E dirão: \"Não sou profeta, sou lavrador da terra, pois fui comprado desde a"
+        },
+        {
+          "text": "Se alguém lhe perguntar: \"Que feridas são essas em suas mãos?\" ele responderá:.",
+          "evidenceRef": "Zacarias 13:6",
+          "evidenceSpan": "Se alguém lhe perguntar: \"Que feridas são essas em suas mãos?\" ele responderá:"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Naquele",
+          "gloss": "Palavra-chave do trecho em Fonte aberta."
+        },
+        {
+          "term": "Davi",
+          "gloss": "Palavra-chave do trecho em Fonte aberta."
+        },
+        {
+          "term": "Jerusalém",
+          "gloss": "Palavra-chave do trecho em Fonte aberta."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Naquele dia, haverá uma fonte aberta para a casa",
+          "evidenceRef": "Zacarias 13:1"
+        },
+        {
+          "label": "Naquele dia, diz o Senhor dos Exércitos,",
+          "evidenceRef": "Zacarias 13:2"
+        },
+        {
+          "label": "e seus pais o traspassarão quando profetizar",
+          "evidenceRef": "Zacarias 13:3"
+        },
+        {
+          "label": "e não mais usarão manto de pele para enganarem",
+          "evidenceRef": "Zacarias 13:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "e seus pais o traspassarão quando profetizar",
+          "marker": "porque",
+          "evidenceRef": "Zacarias 13:3"
+        },
+        {
+          "kind": "causa",
+          "text": "E dirão: \"Não sou profeta, sou lavrador da terra, pois fui comprado desde a minha mocidade",
+          "marker": "pois",
+          "evidenceRef": "Zacarias 13:5"
+        },
+        {
+          "kind": "resultado",
+          "text": "e seus pais o traspassarão quando profetizar",
+          "marker": null,
+          "evidenceRef": "Zacarias 13:3"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Feri o pastor, e espalhem-se as ovelhas; um terço será refinado como prata.",
+      "anchorQuestion": "Segundo Zacarias 13:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-14-o-senhor-sera-rei": {
+      "slug": "zcc-14-o-senhor-sera-rei",
+      "passageRef": "Zacarias 14:1–6",
+      "passageText": "Eis que o Dia do Senhor está vindo; os teus despojos serão repartidos entre você. Porque eu reunirei todas as nações para a batalha contra Jerusalém; a cidade será tomada, as casas serão saqueadas, e as mulheres serão forçadas; metade da cidade sairá para cativeiro, mas o restante do povo não será expulso da cidade. E o Senhor sairá e pelejará contra estas nações como fez no dia em que pelejou na batalha. Nesse dia, os seus pés estarão sobre o Monte das Oliveiras, que está defronte de Jerusalém, para o oriente; e o Monte das Oliveiras será fendido pelo meio, para o oriente e para o ocidente, criando um vale muito grande; metade do monte se apartará para o norte e a outra metade, para o sul. E vocês escaparão pelo vale dos meus montes, pois o vale dos montes se estenderá até Azal; assim como fugiram diante do terremoto nos dias de Uzias, rei de Judá. Então virá o SENHOR, meu Deus, e todos os santos estarão com ele. Naquele dia não haverá luz brilhante, mas apenas frieza e gelo.",
+      "passages": [
+        {
+          "ref": "Zacarias 14:1–6",
+          "text": "Eis que o Dia do Senhor está vindo; os teus despojos serão repartidos entre você. Porque eu reunirei todas as nações para a batalha contra Jerusalém; a cidade será tomada, as casas serão saqueadas, e as mulheres serão forçadas; metade da cidade sairá para cativeiro, mas o restante do povo não será expulso da cidade. E o Senhor sairá e pelejará contra estas nações como fez no dia em que pelejou na batalha. Nesse dia, os seus pés estarão sobre o Monte das Oliveiras, que está defronte de Jerusalém, para o oriente; e o Monte das Oliveiras será fendido pelo meio, para o oriente e para o ocidente, criando um vale muito grande; metade do monte se apartará para o norte e a outra metade, para o sul. E vocês escaparão pelo vale dos meus montes, pois o vale dos montes se estenderá até Azal; assim como fugiram diante do terremoto nos dias de Uzias, rei de Judá. Então virá o SENHOR, meu Deus, e todos os santos estarão com ele. Naquele dia não haverá luz brilhante, mas apenas frieza e gelo."
+        }
+      ],
+      "context": "O dia do Senhor vem; os seus pés estarão sobre o monte das Oliveiras.",
+      "keyword": "Senhor",
+      "keywordGloss": "Palavra-chave do trecho em O Senhor será rei.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Eis que o Dia do Senhor está vindo",
+        "Porque eu reunirei todas as nações para",
+        "E o Senhor sairá e pelejará contra"
+      ],
+      "facts": [
+        {
+          "text": "Eis que o Dia do Senhor está vindo.",
+          "evidenceRef": "Zacarias 14:1",
+          "evidenceSpan": "Eis que o Dia do Senhor está vindo"
+        },
+        {
+          "text": "Porque eu reunirei todas as nações para a batalha contra Jerusalém.",
+          "evidenceRef": "Zacarias 14:2",
+          "evidenceSpan": "Porque eu reunirei todas as nações para a batalha contra Jerusalém"
+        },
+        {
+          "text": "E o Senhor sairá e pelejará contra estas nações como fez no dia em que pelejou.",
+          "evidenceRef": "Zacarias 14:3",
+          "evidenceSpan": "E o Senhor sairá e pelejará contra estas nações como fez no dia em que pelejou"
+        },
+        {
+          "text": "metade do monte se apartará para o norte e a outra metade, para o sul.",
+          "evidenceRef": "Zacarias 14:4",
+          "evidenceSpan": "metade do monte se apartará para o norte e a outra metade, para o sul"
+        },
+        {
+          "text": "assim como fugiram diante do terremoto nos dias de Uzias, rei de Judá.",
+          "evidenceRef": "Zacarias 14:5",
+          "evidenceSpan": "assim como fugiram diante do terremoto nos dias de Uzias, rei de Judá"
+        },
+        {
+          "text": "Naquele dia não haverá luz brilhante, mas apenas frieza e gelo.",
+          "evidenceRef": "Zacarias 14:6",
+          "evidenceSpan": "Naquele dia não haverá luz brilhante, mas apenas frieza e gelo"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em O Senhor será rei."
+        },
+        {
+          "term": "Jerusalém",
+          "gloss": "Palavra-chave do trecho em O Senhor será rei."
+        },
+        {
+          "term": "Nesse",
+          "gloss": "Palavra-chave do trecho em O Senhor será rei."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Eis que o Dia do Senhor está vindo",
+          "evidenceRef": "Zacarias 14:1"
+        },
+        {
+          "label": "Porque eu reunirei todas as nações para a batalha",
+          "evidenceRef": "Zacarias 14:2"
+        },
+        {
+          "label": "E o Senhor sairá e pelejará contra estas nações",
+          "evidenceRef": "Zacarias 14:3"
+        },
+        {
+          "label": "Nesse dia, os seus pés estarão sobre o Monte das",
+          "evidenceRef": "Zacarias 14:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Porque eu reunirei todas as nações para a batalha contra Jerusalém",
+          "marker": "Porque",
+          "evidenceRef": "Zacarias 14:2"
+        },
+        {
+          "kind": "resultado",
+          "text": "E vocês escaparão pelo vale dos meus montes, pois o vale dos montes se estenderá até Azal",
+          "marker": "Então",
+          "evidenceRef": "Zacarias 14:5"
+        },
+        {
+          "kind": "contraste",
+          "text": "Naquele dia não haverá luz brilhante, mas apenas frieza e gelo",
+          "marker": "mas",
+          "evidenceRef": "Zacarias 14:6"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O Senhor será rei sobre toda a terra; naquele dia um será o Senhor, e um o seu nome.",
+      "anchorQuestion": "Segundo Zacarias 14:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-boss-1": {
+      "slug": "zcc-boss-1",
+      "passageRef": "Zacarias 1:1–6",
+      "passageText": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta Zacarias, filho de Baraquias, filho de Ido, dizendo: O SENHOR se irou em extremo contra os seus pais. Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor dos Exércitos, e eu me tornarei a vocês, diz o Senhor dos Exércitos. Não sejam como seus pais a quem os primeiros profetas clamavam dizendo: Assim diz o Senhor dos Exércitos: Convertei-vos agora dos seus maus caminhos e das suas más obras; mas não ouviram, nem me atenderam, diz o Senhor. Seus pais, onde estão? E os profetas, viverão para sempre? Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas, meus servos, não chegaram aos seus pais? Eles se voltaram e disseram: Assim como o Senhor dos Exércitos se dispôs a nos tratar segundo os nossos caminhos e segundo as nossas obras, assim Ele nos tratou",
+      "passages": [
+        {
+          "ref": "Zacarias 1:1–6",
+          "text": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta Zacarias, filho de Baraquias, filho de Ido, dizendo: O SENHOR se irou em extremo contra os seus pais. Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor dos Exércitos, e eu me tornarei a vocês, diz o Senhor dos Exércitos. Não sejam como seus pais a quem os primeiros profetas clamavam dizendo: Assim diz o Senhor dos Exércitos: Convertei-vos agora dos seus maus caminhos e das suas más obras; mas não ouviram, nem me atenderam, diz o Senhor. Seus pais, onde estão? E os profetas, viverão para sempre? Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas, meus servos, não chegaram aos seus pais? Eles se voltaram e disseram: Assim como o Senhor dos Exércitos se dispôs a nos tratar segundo os nossos caminhos e segundo as nossas obras, assim Ele nos tratou"
+        },
+        {
+          "ref": "Zacarias 2:1–10",
+          "text": "Levantei novamente os olhos e vi, e eis que havia um homem com um cordel de medir na mão. E eu perguntei: Para onde você está indo? Ele respondeu: Estou indo medir Jerusalém, para saber qual é a sua largura e qual é o seu comprimento. Eis que saiu o anjo que falava comigo, e outro anjo foi ao seu encontro. E disse-lhe: Vá, fale a este jovem: Jerusalém será habitada como as aldeias sem muros, por causa da multidão de homens e animais que haverá nela. E eu, diz o Senhor, serei um muro de fogo ao redor dela e serei a sua glória no meio dela. Fujam agora da terra do Norte, diz o Senhor, pois eu os dispersei como os quatro ventos do céu, afirma o Senhor. Sai, ó Sião! Salva-te, tu que moras com a filha da Babilônia. Porque assim diz o Senhor dos Exércitos: Para obter a glória, Ele me enviou às nações que vos despojaram; porque aquele que vos tocar toca na menina do seu olho. Porque eis que levantarei a minha mão contra eles, e eles se tornarão a presa daqueles que os serviram; assim, saberão que o Senhor dos Exércitos é quem me enviou. Cante e exulte, ó filha de Sião, porque eis que venho e habitarei no meio de ti, diz o Senhor."
+        },
+        {
+          "ref": "Zacarias 3:1–7",
+          "text": "Ele me mostrou o sumo sacerdote Josué, que estava diante do Anjo do Senhor, e Satanás estava à sua direita, pronto para se opor a ele. O Senhor disse a Satanás: \"O Senhor te repreenda, ó Satanás; sim, o Senhor, que escolheu Jerusalém, te repreenda; não é este um tição tirado do fogo?\" Josué, vestido com vestes sujas, estava diante do Anjo. Então ele respondeu e falou aos que estavam diante dele, dizendo: Tirem-lhe as vestes sujas. E a ele disse: Eis que fiz passar de ti a tua iniquidade, e te vestirei com roupas finas. E eu disse: Coloquem um turbante limpo sobre a cabeça dele. Assim, colocaram um turbante limpo sobre a cabeça e o vestiram com trajes apropriados; e o Anjo do Senhor estava ali ao seu lado. O Anjo do Senhor se manifestou a Josué declarando. Assim diz o Senhor dos Exércitos: Se andares nos meus caminhos e observares os meus preceitos, também tu julgarás a minha casa e guardarás os meus átrios, e te darei livre acesso entre aqueles que estão aqui."
+        },
+        {
+          "ref": "Zacarias 4:1–10",
+          "text": "E o anjo que falava comigo voltou e me despertou, como um homem que é despertado de seu sono. Ele me perguntou: \"O que você vê?\" E eu respondi: \"Estou vendo um candelabro inteiro de ouro, com um vaso de azeite em sua parte superior. Ele possui sete lâmpadas e sete tubos, um para cada lâmpada que está sobre o candelabro.\" E, acima dele, estavam duas oliveiras, uma à direita do vaso de azeite e a outra à esquerda. E eu perguntei ao anjo que falava comigo: \"Meu senhor, o que é isto?\" Então o anjo que falava comigo respondeu: Você não sabe o que é isso? E eu disse: Não, meu senhor. E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel: \"Não por força nem por poder, mas pelo meu Espírito, declara o Senhor dos Exércitos. Quem és tu, ó grande monte? Diante de Zorobabel te tornarás uma planície; pois ele colocará a pedra de remate em meio a aclamações: \"Graça, graça a ela!\" E novamente a palavra do Senhor veio a mim, dizendo: As mãos de Zorobabel lançaram os fundamentos desta casa, elas a completarão para que saibam que o Senhor dos Exércitos é quem me enviou a vocês. Pois quem despreza o dia dos pequenos começos? Porque aqueles sete se alegrarão ao ver o prumo na mão de Zorobabel. Estes são os olhos do Senhor que contemplam toda a terra."
+        },
+        {
+          "ref": "Zacarias 5:1–8",
+          "text": "Levantei novamente os meus olhos e observei, e eis que havia um rolo que voava. Ele me perguntou: \"O que você vê?\" E eu respondi: \"Vejo um rolo voante, que tem vinte côvados de comprimento e dez côvados de largura.\" Então ele me disse: Esta é a maldição que sairá sobre a face de toda a terra; pois todo aquele que furtar será expulso de acordo com a maldição, assim como todo aquele que jurar falsamente também será expulso segundo a mesma. Eu a farei sair, diz o Senhor dos Exércitos, e a levarei para a casa do ladrão e para a casa daquele que jurar falsamente pelo meu nome; ali, pernoitará consumindo suas madeiras e pedras. Então, o anjo que falava comigo saiu e me disse: Levante agora os olhos e veja o que é isso que surge. E eu perguntei: O que é isto? Ele me respondeu: É um efa que sai. E acrescentou: Isto é a iniquidade em toda a terra. Eis que foi levantada a tampa de chumbo, e havia uma mulher sentada dentro do efa. E prosseguiu: Esta é a impiedade. E a lançou para dentro do efa, e pôs na boca dela um peso de chumbo."
+        }
+      ],
+      "context": "Revise o voltar, o muro de fogo, as vestes, o Espírito e o rolo.",
+      "keyword": "Dario",
+      "keywordGloss": "Palavra-chave do trecho em Travessia: Visões de esperança.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "No oitavo mês do segundo ano de Dario,",
+        "O SENHOR se irou em extremo contra os",
+        "Portanto, diga-lhes: Assim diz o Senhor"
+      ],
+      "facts": [
+        {
+          "text": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta.",
+          "evidenceRef": "Zacarias 1:1",
+          "evidenceSpan": "No oitavo mês do segundo ano de Dario, veio a palavra do SENHOR ao profeta"
+        },
+        {
+          "text": "O SENHOR se irou em extremo contra os seus pais.",
+          "evidenceRef": "Zacarias 1:2",
+          "evidenceSpan": "O SENHOR se irou em extremo contra os seus pais"
+        },
+        {
+          "text": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz.",
+          "evidenceRef": "Zacarias 1:3",
+          "evidenceSpan": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz"
+        },
+        {
+          "text": "mas não ouviram, nem me atenderam, diz o Senhor.",
+          "evidenceRef": "Zacarias 1:4",
+          "evidenceSpan": "mas não ouviram, nem me atenderam, diz o Senhor"
+        },
+        {
+          "text": "Seus pais, onde estão? E os profetas, viverão para sempre?.",
+          "evidenceRef": "Zacarias 1:5",
+          "evidenceSpan": "Seus pais, onde estão? E os profetas, viverão para sempre?"
+        },
+        {
+          "text": "Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas,.",
+          "evidenceRef": "Zacarias 1:6",
+          "evidenceSpan": "Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas,"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Dario",
+          "gloss": "Palavra-chave do trecho em Travessia: Visões de esperança."
+        },
+        {
+          "term": "SENHOR",
+          "gloss": "Palavra-chave do trecho em Travessia: Visões de esperança."
+        },
+        {
+          "term": "Zacarias",
+          "gloss": "Palavra-chave do trecho em Travessia: Visões de esperança."
+        }
+      ],
+      "structure": [
+        {
+          "label": "No oitavo mês do segundo ano de Dario, veio a",
+          "evidenceRef": "Zacarias 1:1"
+        },
+        {
+          "label": "O SENHOR se irou em extremo contra os seus pais",
+          "evidenceRef": "Zacarias 1:2"
+        },
+        {
+          "label": "Portanto, diga-lhes: Assim diz o Senhor dos",
+          "evidenceRef": "Zacarias 1:3"
+        },
+        {
+          "label": "mas não ouviram, nem me atenderam, diz o Senhor",
+          "evidenceRef": "Zacarias 1:4"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Portanto, diga-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor",
+          "marker": "Portanto",
+          "evidenceRef": "Zacarias 1:3"
+        },
+        {
+          "kind": "resultado",
+          "text": "mas não ouviram, nem me atenderam, diz o Senhor",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 1:4"
+        },
+        {
+          "kind": "resultado",
+          "text": "Contudo, as minhas palavras e os meus estatutos que eu enviei pelos profetas, meus",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 1:6"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "Deus chama a voltar, limpa e guarda o seu povo pelo Espírito",
+      "anchorQuestion": "Segundo Zacarias 1:1, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-boss-2": {
+      "slug": "zcc-boss-2",
+      "passageRef": "Zacarias 6:9–14",
+      "passageText": "A palavra do Senhor me chegou, dizendo: Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías, e naquele mesmo dia, entra na casa de Josias, filho de Sofonias, para a qual vieram da Babilônia. Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de Jozadaque, o sumo sacerdote. Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele brotará de seu lugar e edificará o templo do Senhor. Ele mesmo edificará o templo do Senhor e será revestido de glória; assentará e dominará em seu trono; e será sacerdote em seu trono, havendo perfeita união entre ambos os ofícios. E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de Sofonias, como memorial no templo do Senhor.",
+      "passages": [
+        {
+          "ref": "Zacarias 6:9–15",
+          "text": "A palavra do Senhor me chegou, dizendo: Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías, e naquele mesmo dia, entra na casa de Josias, filho de Sofonias, para a qual vieram da Babilônia. Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de Jozadaque, o sumo sacerdote. Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele brotará de seu lugar e edificará o templo do Senhor. Ele mesmo edificará o templo do Senhor e será revestido de glória; assentará e dominará em seu trono; e será sacerdote em seu trono, havendo perfeita união entre ambos os ofícios. E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de Sofonias, como memorial no templo do Senhor. E aqueles que estão longe virão e ajudarão a edificar o templo do Senhor, e saberão que o Senhor dos Exércitos me enviou a vocês. Isso acontecerá se diligentemente ouvirem a voz do Senhor, seu Deus."
+        },
+        {
+          "ref": "Zacarias 7:8–14",
+          "text": "E a palavra do Senhor chegou a Zacarias, dizendo: Assim falou o Senhor dos Exércitos: Executem justiça verdadeira, pratiquem a bondade e a misericórdia, cada um com seu irmão. Não oprimam a viúva, o órfão, o estrangeiro e o pobre, e que nenhum de vocês intente no coração o mal contra o seu próximo. Entretanto, não quiseram atender e, obstinados, me deram as costas, ensurdeceram os ouvidos, para que não ouvissem. Fizeram o seu coração duro como diamante, para que não ouvissem a lei, nem as palavras que o SENHOR dos Exércitos enviara pelo seu Espírito, mediante os profetas que nos precederam; por isso, veio a grande ira do SENHOR dos Exércitos. E aconteceu que, quando eu clamei, eles não quiseram ouvir; assim, quando eles clamaram, eu não os ouvi, diz o Senhor dos Exércitos. E os dispersei com um turbilhão entre todas as nações que não conheceram; e a terra ficou devastada atrás deles, de modo que ninguém passava por ela, nem voltava; porque fizeram da terra desejável uma desolação."
+        },
+        {
+          "ref": "Zacarias 8:1–8",
+          "text": "Veio a mim a palavra do Senhor dos Exércitos, que dizia: Assim diz o Senhor dos Exércitos: Tenho um grande zelo por Sião e, com grande indignação, tenho zelo por ela. Jerusalém chamar-se-á a cidade fiel, e o monte do Senhor dos Exércitos chamar-se-á monte santo. Assim diz o Senhor dos Exércitos: Ainda nas praças de Jerusalém se assentarão velhos e velhas, cada um levando em sua mão o seu arrimo, em razão da sua muita idade. As praças da cidade estarão cheias de meninos e meninas, que brincarão nelas. Assim diz o SENHOR dos Exércitos: Se isto parecer maravilhoso aos olhos do restante deste povo naqueles dias, também será maravilhoso aos meus olhos? —diz o SENHOR dos Exércitos. Assim diz o Senhor dos Exércitos: Eis que salvarei o meu povo, trazendo-o da terra do Oriente e da terra do Ocidente; E eu os trarei, e habitarão em Jerusalém; e eles serão o Meu povo, e Eu serei o seu Deus, em verdade e em justiça."
+        },
+        {
+          "ref": "Zacarias 9:11–17",
+          "text": "Quanto a você, ó Sião, por causa do sangue da sua aliança, libertei os seus cativos da cova em que não havia água. Voltem-se para a fortaleza, ó presos de esperança; hoje, anuncio que tudo lhes restituirei em dobro. Porque para mim curvei Judá como um arco e acomodei Efraim nele; levantarei os teus filhos, ó Sião, contra os teus filhos, ó Grécia! E te tornarei como a espada de um valente. E o Senhor será visto sobre os filhos de Sião, e suas flechas sairão como relâmpago; o Senhor Deus fará soar a trombeta e irá com os redemoinhos do sul. O Senhor dos Exércitos os protegerá; eles devorarão os fundibulários e os pisarão; também beberão deles o sangue como vinho, e se encherão como bacias de sacrifício, ficando ensopados como os cantos do altar. E o Senhor, seu Deus, naquele dia os salvará, como ao rebanho do seu povo; porque eles são pedras de uma coroa e resplandecem na sua terra. Porque quão grande é a sua bondade! E quão grande é a sua formosura! O cereal fará florescer os jovens, e o vinho, as donzelas."
+        },
+        {
+          "ref": "Zacarias 10:6–12",
+          "text": "Fortalecerei a casa de Judá e salvarei a casa de José; fá-los-ei voltar, pois me compadeço deles. Serão como se eu nunca os tivesse rejeitado, porque eu sou o Senhor, seu Deus, e os ouvirei. Os de Efraim serão como um valente, e seu coração se alegrará como o vinho; seus filhos o verão e se alegrarão; seu coração se regozijará no SENHOR. Eu lhes chamarei e os reunirei porque eu os redimi e eles se multiplicarão como antes se multiplicaram. Eu os espalhei entre os povos, e se lembrarão de mim em terras distantes; viverão com seus filhos e retornarão. Porque eu os farei voltar da terra do Egito e os congregarei da Assíria; os levarei à terra de Gileade e do Líbano, e não se achará lugar suficiente para eles. E ele passará pelo mar de angústia, ferirá as ondas do mar e todas as profundezas do Nilo se secarão; assim, será derrubada a soberania da Assíria, e o cetro do Egito será retirado. Eu os fortalecerei no Senhor, e andarão em Seu nome, diz o Senhor."
+        }
+      ],
+      "context": "Revise o Renovo, o juízo verdadeiro, a cidade, a bondade e o fortalecimento.",
+      "keyword": "Senhor",
+      "keywordGloss": "Palavra-chave do trecho em Travessia: Jejum e promessa.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "A palavra do Senhor me chegou, dizendo:",
+        "Tome dos que foram levados cativos, a",
+        "Recebe, pois, prata e ouro, e faze"
+      ],
+      "facts": [
+        {
+          "text": "A palavra do Senhor me chegou, dizendo:.",
+          "evidenceRef": "Zacarias 6:9",
+          "evidenceSpan": "A palavra do Senhor me chegou, dizendo:"
+        },
+        {
+          "text": "Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías,.",
+          "evidenceRef": "Zacarias 6:10",
+          "evidenceSpan": "Tome dos que foram levados cativos, a saber, de Heldai, de Tobias e de Jedaías,"
+        },
+        {
+          "text": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué,.",
+          "evidenceRef": "Zacarias 6:11",
+          "evidenceSpan": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué,"
+        },
+        {
+          "text": "Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele.",
+          "evidenceRef": "Zacarias 6:12",
+          "evidenceSpan": "Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele"
+        },
+        {
+          "text": "Ele mesmo edificará o templo do Senhor e será revestido de glória.",
+          "evidenceRef": "Zacarias 6:13",
+          "evidenceSpan": "Ele mesmo edificará o templo do Senhor e será revestido de glória"
+        },
+        {
+          "text": "E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de.",
+          "evidenceRef": "Zacarias 6:14",
+          "evidenceSpan": "E essas coroas serão para Helem, para Tobias, para Jedaías e para Hem, filho de"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Travessia: Jejum e promessa."
+        },
+        {
+          "term": "Tome",
+          "gloss": "Palavra-chave do trecho em Travessia: Jejum e promessa."
+        },
+        {
+          "term": "Heldai",
+          "gloss": "Palavra-chave do trecho em Travessia: Jejum e promessa."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A palavra do Senhor me chegou, dizendo:",
+          "evidenceRef": "Zacarias 6:9"
+        },
+        {
+          "label": "Tome dos que foram levados cativos, a saber, de",
+          "evidenceRef": "Zacarias 6:10"
+        },
+        {
+          "label": "Recebe, pois, prata e ouro, e faze coroas, e",
+          "evidenceRef": "Zacarias 6:11"
+        },
+        {
+          "label": "Assim fala o Senhor dos Exércitos: Eis que o",
+          "evidenceRef": "Zacarias 6:12"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de",
+          "marker": "pois",
+          "evidenceRef": "Zacarias 6:11"
+        },
+        {
+          "kind": "resultado",
+          "text": "Assim fala o Senhor dos Exércitos: Eis que o homem cujo nome é Renovo, ele brotará de seu",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 6:12"
+        },
+        {
+          "kind": "resultado",
+          "text": "Recebe, pois, prata e ouro, e faze coroas, e coloca-as na cabeça de Josué, filho de",
+          "marker": null,
+          "evidenceRef": "Zacarias 6:11"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O Senhor restaura Sião e traz povos a buscar o seu nome",
+      "anchorQuestion": "Segundo Zacarias 6:9, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    },
+    "zcc-boss-3": {
+      "slug": "zcc-boss-3",
+      "passageRef": "Zacarias 11:4–9",
+      "passageText": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas. Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles. Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas. E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim. E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima.",
+      "passages": [
+        {
+          "ref": "Zacarias 11:4–14",
+          "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate Cujos proprietários as matam e não se sentem culpados; e cujos vendedores dizem: Louvado seja o Senhor, porque me tornei rico, e os seus pastores não têm compaixão delas. Não terei mais compaixão dos habitantes desta terra, diz o Senhor. Eis que entregarei os homens, cada um nas mãos de seu próximo e nas mãos de seu rei; eles ferirão a terra, e eu não os livrarei das mãos deles. Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas; tomei para mim duas varas: uma chamei de Graça e a outra de União; e cuidei das ovelhas. E exterminarei os seus pastores em um único mês pois a minha alma se angustiou por causa deles, e também as ovelhas se cansaram de mim. E eu disse: Não apascentarei mais vocês. O que quiser morrer, morra; o que for destruído, seja destruído. E as que restarem, que cada uma coma a carne da sua próxima. Quebrei a minha vara chamada Graça para anular a aliança que estabeleci com todos os povos. E naquele dia, foi anulado e os pobres do rebanho que me consideravam reconheceram que esta era a palavra do Senhor. Eu lhes disse: se vos parece bem, dai-me o meu salário; se não, deixai-o. E pesaram por minha recompensa trinta moedas de prata. O Senhor me disse: “Arroja ao oleiro o valioso preço pelo qual fui avaliado por eles.” Então, tomei as trinta moedas de prata e as joguei na Casa do Senhor, ao oleiro. Então, quebrei a minha segunda vara, chamada União, para romper a irmandade entre Judá e Israel."
+        },
+        {
+          "ref": "Zacarias 12:1–10",
+          "text": "Peso da palavra do Senhor contra Israel: assim declara o Senhor que estende os céus, que funda a terra e que forma o espírito do homem dentro dele. Eis que farei de Jerusalém um cálice de tontear para todos os povos ao seu redor, bem como para Judá, durante o sítio contra Jerusalém. Naquele dia, farei de Jerusalém uma pedra pesada para todos os povos; todos os que a levantarem certamente sofrerão ferimentos graves, e todas as nações da terra se unirão contra ela. Naquele dia, diz o SENHOR, farei com que todos os cavalos sejam tomados de espanto e os que os montam, de loucura; mas sobre a casa de Judá abrirei os olhos e farei com que todos os cavalos dos povos fiquem cegos Então, os líderes de Judá pensarão assim: A força dos habitantes de Jerusalém é do SENHOR dos Exércitos, seu Deus. Naquele dia, colocarei os líderes de Judá como um braseiro ardente sob a lenha e como uma tocha entre a palha; assim, à direita e à esquerda, devorarão todos os povos ao redor, e Jerusalém será habitada de novo em seu próprio lugar, em Jerusalém mesma. O Senhor salvará primeiramente as tendas de Judá, para que a glória da casa de Davi e a glória dos habitantes de Jerusalém não se elevem acima de Judá. Naquele dia, o Senhor protegerá os habitantes de Jerusalém; e o mais fraco entre eles, naquele dia, será como Davi, e a casa de Davi será como Deus, como o anjo do Senhor diante deles. E naquele dia, buscarei eliminar todas as nações que se levantarem contra Jerusalém. Então, sobre a casa de Davi e sobre os habitantes de Jerusalém derramarei o Espírito da graça e de súplicas; olharão para aquele a quem traspassaram e prantearão por ele, como se pranteia por um unigênito; e chorarão por ele como se chora amargamente pelo primogênito."
+        },
+        {
+          "ref": "Zacarias 13:1–9",
+          "text": "Naquele dia, haverá uma fonte aberta para a casa de Davi e para os habitantes de Jerusalém, para remover o pecado e a impureza. Naquele dia, diz o Senhor dos Exércitos, eliminarei da terra os nomes dos ídolos, e não haverá mais memória deles; também farei desaparecer da terra os profetas e o espírito imundo. E, quando alguém ainda profetizar, seus pais que o geraram lhe dirão: \"Não viverás, porque falaste mentiras em nome do Senhor; e seus pais o traspassarão quando profetizar.\" Naquele dia, os profetas se envergonharão cada um de sua visão ao profetizar; e não mais usarão manto de pele para enganarem. E dirão: \"Não sou profeta, sou lavrador da terra, pois fui comprado desde a minha mocidade. Se alguém lhe perguntar: \"Que feridas são essas em suas mãos?\" ele responderá: \"São as feridas com que fui ferido na casa dos meus amigos.\" Ó espada, desperta contra o meu Pastor e contra o homem que é meu companheiro, diz o Senhor dos Exércitos; fere o Pastor, e as ovelhas ficarão dispersas; mas voltarei a minha mão para os pequeninos. E acontecerá em toda a terra, diz o Senhor, que dois terços dela serão eliminados e perecerão; mas a terceira parte restará. Farei passar essa terceira parte pelo fogo e a purificarei, assim como se purifica a prata, e a provarei, assim como se prova o ouro; ela invocará o meu nome, e eu a ouvirei; direi: É meu povo, e ela dirá: O Senhor é meu Deus."
+        },
+        {
+          "ref": "Zacarias 14:1–9",
+          "text": "Eis que o Dia do Senhor está vindo; os teus despojos serão repartidos entre você. Porque eu reunirei todas as nações para a batalha contra Jerusalém; a cidade será tomada, as casas serão saqueadas, e as mulheres serão forçadas; metade da cidade sairá para cativeiro, mas o restante do povo não será expulso da cidade. E o Senhor sairá e pelejará contra estas nações como fez no dia em que pelejou na batalha. Nesse dia, os seus pés estarão sobre o Monte das Oliveiras, que está defronte de Jerusalém, para o oriente; e o Monte das Oliveiras será fendido pelo meio, para o oriente e para o ocidente, criando um vale muito grande; metade do monte se apartará para o norte e a outra metade, para o sul. E vocês escaparão pelo vale dos meus montes, pois o vale dos montes se estenderá até Azal; assim como fugiram diante do terremoto nos dias de Uzias, rei de Judá. Então virá o SENHOR, meu Deus, e todos os santos estarão com ele. Naquele dia não haverá luz brilhante, mas apenas frieza e gelo. Mas será um dia singular conhecido do Senhor; não será dia nem noite, mas haverá luz ao entardecer. Naquele dia, também acontecerá que de Jerusalém sairão águas vivas; metade delas irá para o mar oriental e a outra metade, para o mar ocidental. Isso se dará tanto no verão quanto no inverno. E o Senhor será Rei sobre toda a terra; naquele dia, o Senhor será o único e o seu nome será único."
+        }
+      ],
+      "context": "Revise as trinta moedas, o traspassado, a fonte e o Senhor rei.",
+      "keyword": "Senhor",
+      "keywordGloss": "Palavra-chave do trecho em Travessia: O Pastor e o dia.",
+      "focusQuestion": "Onde esta palavra de Zacarias encontra a sua vida agora?",
+      "reflectionPrompts": [
+        "Assim diz o Senhor, meu Deus: Apascenta",
+        "Cujos proprietários as matam e não se",
+        "Não terei mais compaixão dos habitantes"
+      ],
+      "facts": [
+        {
+          "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate.",
+          "evidenceRef": "Zacarias 11:4",
+          "evidenceSpan": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate"
+        },
+        {
+          "text": "Cujos proprietários as matam e não se sentem culpados.",
+          "evidenceRef": "Zacarias 11:5",
+          "evidenceSpan": "Cujos proprietários as matam e não se sentem culpados"
+        },
+        {
+          "text": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor.",
+          "evidenceRef": "Zacarias 11:6",
+          "evidenceSpan": "Não terei mais compaixão dos habitantes desta terra, diz o Senhor"
+        },
+        {
+          "text": "tomei para mim duas varas: uma chamei de Graça e a outra de União.",
+          "evidenceRef": "Zacarias 11:7",
+          "evidenceSpan": "tomei para mim duas varas: uma chamei de Graça e a outra de União"
+        },
+        {
+          "text": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou.",
+          "evidenceRef": "Zacarias 11:8",
+          "evidenceSpan": "E exterminarei os seus pastores em um único mês pois a minha alma se angustiou"
+        },
+        {
+          "text": "E eu disse: Não apascentarei mais vocês.",
+          "evidenceRef": "Zacarias 11:9",
+          "evidenceSpan": "E eu disse: Não apascentarei mais vocês"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Palavra-chave do trecho em Travessia: O Pastor e o dia."
+        },
+        {
+          "term": "Deus",
+          "gloss": "Palavra-chave do trecho em Travessia: O Pastor e o dia."
+        },
+        {
+          "term": "Apascenta",
+          "gloss": "Palavra-chave do trecho em Travessia: O Pastor e o dia."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Assim diz o Senhor, meu Deus: Apascenta as",
+          "evidenceRef": "Zacarias 11:4"
+        },
+        {
+          "label": "Cujos proprietários as matam e não se sentem",
+          "evidenceRef": "Zacarias 11:5"
+        },
+        {
+          "label": "Não terei mais compaixão dos habitantes desta",
+          "evidenceRef": "Zacarias 11:6"
+        },
+        {
+          "label": "e cuidei das ovelhas",
+          "evidenceRef": "Zacarias 11:7"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "resultado",
+          "text": "Assim diz o Senhor, meu Deus: Apascenta as ovelhas que estão destinadas ao abate",
+          "marker": "Assim",
+          "evidenceRef": "Zacarias 11:4"
+        },
+        {
+          "kind": "causa",
+          "text": "Cujos proprietários as matam e não se sentem culpados",
+          "marker": "porque",
+          "evidenceRef": "Zacarias 11:5"
+        },
+        {
+          "kind": "causa",
+          "text": "Apascentava as ovelhas destinadas ao abate, pois eram as ovelhas do rebanho aflitas",
+          "marker": "pois",
+          "evidenceRef": "Zacarias 11:7"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Ageu 2:4–5",
+          "bridge": "Ânimo na obra",
+          "text": "Esforça-te, Zorobabel, diz o SENHOR; e sê forte, Josué, filho de Jozadaque, o sumo sacerdote; e esforçai-vos, todo o povo da terra, diz o SENHOR, e trabalhai; porque eu sou convosco, diz o SENHOR dos Exércitos. Segundo a palavra da aliança que fiz com vocês, quando saíram do Egito, o meu Espírito permanece no meio de vocês; não tenham medo."
+        },
+        {
+          "ref": "Apocalipse 1:7",
+          "bridge": "Olharão para ele",
+          "text": "Eis que vem com as nuvens, e todo olho o verá, até mesmo aqueles que o transpassaram; e todas as tribos da terra se lamentarão sobre ele. Certamente. Amém!"
+        },
+        {
+          "ref": "Mateus 21:5",
+          "bridge": "Rei no jumentinho",
+          "text": "Diga à filha de Sião: Eis que vem a você o seu Rei, humilde, montado em jumento e em um jumentinho, cria de animal de carga."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O texto não exige resposta prática.",
+          "why": "A cena chama a ouvir e voltar ao Senhor."
+        },
+        {
+          "text": "O juízo apaga qualquer esperança.",
+          "why": "Há convite e promessa no bloco da trilha."
+        },
+        {
+          "text": "Os ídolos são fonte real das bênçãos.",
+          "why": "O Senhor é quem dá o necessário."
+        }
+      ],
+      "centralInsight": "O Pastor rejeitado volta como Rei sobre toda a terra",
+      "anchorQuestion": "Segundo Zacarias 11:4, o que o texto destaca?",
+      "relatedVerses": [
+        {
+          "reference": "Ageu 2:4–5",
+          "reason": "Ânimo na obra"
+        },
+        {
+          "reference": "Apocalipse 1:7",
+          "reason": "Olharão para ele"
+        },
+        {
+          "reference": "Mateus 21:5",
+          "reason": "Rei no jumentinho"
+        }
+      ]
+    }
+  }
+}

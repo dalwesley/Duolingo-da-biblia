@@ -1,0 +1,64 @@
+{
+  "slug": "colossenses-cap",
+  "prefix": "clc",
+  "book": "Colossenses",
+  "chapters": 4,
+  "title": "Colossenses",
+  "description": "Colossenses capítulo a capítulo: Cristo suficiente para a fé e a vida nova.",
+  "icon": "👑",
+  "color": "#D35400",
+  "order": 66,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["colossenses"],
+  "modules": [
+    {
+      "title": "Cristo suficiente · cap. 1–2",
+      "scenes": [
+        {
+          "ref": "Colossenses 1:21–29",
+          "title": "Reconciliados para serem santos",
+          "intro": "Outrora afastados, agora reconciliados no corpo de Cristo pela morte.",
+          "insight": "Cristo em vós, esperança da glória: Paulo anuncia a todo homem para apresentá-lo perfeito em Cristo.",
+          "objective": "Permanecer firmes na fé"
+        },
+        {
+          "ref": "Colossenses 2:16–23",
+          "title": "Não vos julgue ninguém",
+          "intro": "Paulo alerta contra regras sobre comida, festas e falsa humildade.",
+          "insight": "A realidade é Cristo: regulamentos humanos não têm valor contra a sensualidade.",
+          "objective": "Apegar-se a Cristo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Cristo suficiente",
+        "intro": "Revise a reconciliação em Cristo e a liberdade das regras humanas.",
+        "insight": "Cristo basta: nele há esperança e liberdade verdadeira"
+      }
+    },
+    {
+      "title": "Vida nova · cap. 3–4",
+      "scenes": [
+        {
+          "ref": "Colossenses 3:12–17",
+          "title": "Revesti-vos de amor",
+          "intro": "Como eleitos de Deus, a igreja veste misericórdia, humildade e amor.",
+          "insight": "Sobre tudo, revesti-vos de amor; a paz de Cristo reine, e tudo se faça em nome do Senhor Jesus.",
+          "objective": "Revestir-se de amor"
+        },
+        {
+          "ref": "Colossenses 4:2–9",
+          "title": "Orar e aproveitar o tempo",
+          "intro": "Paulo pede oração e sabedoria no trato com os de fora.",
+          "insight": "Perseverai na oração; andai com sabedoria para com os de fora, remindo o tempo.",
+          "objective": "Orar e remir o tempo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Vida nova",
+        "intro": "Revise o amor que reveste e a oração que abre portas.",
+        "insight": "A vida nova em Cristo ama, ora e aproveita o tempo"
+      }
+    }
+  ]
+}

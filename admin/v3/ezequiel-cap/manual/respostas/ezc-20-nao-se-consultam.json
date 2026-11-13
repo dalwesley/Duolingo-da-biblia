@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 20:1–12",
+    "passages": [
+      {
+        "ref": "Ezequiel 20:1–12"
+      }
+    ],
+    "context": "Anciãos vêm consultar o Senhor; ele recusa a consulta e lembra o Êxodo, a rebelião e o sábado como sinal.",
+    "keyword": "sábados",
+    "keywordGloss": "Sinal entre o Senhor e o povo, para que saibam que ele os santifica.",
+    "focusQuestion": "Você procura Deus só para ouvir o que quer, ou para lembrar quem ele é?",
+    "reflectionPrompts": [
+      "A consulta recusada",
+      "O êxodo lembrado",
+      "O sábado como sinal"
+    ],
+    "facts": [
+      {
+        "text": "Anciãos de Israel vieram consultar o Senhor e se assentaram diante de Ezequiel.",
+        "evidenceRef": "Ezequiel 20:1",
+        "evidenceSpan": "alguns dos anciãos de Israel vieram consultar o Senhor e se assentaram diante de mim"
+      },
+      {
+        "text": "O Senhor jura que eles não o consultarão.",
+        "evidenceRef": "Ezequiel 20:3",
+        "evidenceSpan": "não me consultareis"
+      },
+      {
+        "text": "No Egito, o Senhor se deu a conhecer e jurou: Eu sou o Senhor, o vosso Deus.",
+        "evidenceRef": "Ezequiel 20:5",
+        "evidenceSpan": "me dei a conhecer a eles na terra do Egito; levantei-lhes a mão e jurei: Eu sou o Senhor, o vosso Deus"
+      },
+      {
+        "text": "Eles se rebelaram e não abandonaram os ídolos do Egito.",
+        "evidenceRef": "Ezequiel 20:8",
+        "evidenceSpan": "Porém se rebelaram contra mim e não quiseram ouvir-me"
+      },
+      {
+        "text": "O Senhor deu os sábados como sinal entre ele e eles.",
+        "evidenceRef": "Ezequiel 20:12",
+        "evidenceSpan": "Também lhes dei os meus sábados, para que fossem um sinal entre mim e eles"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sábados",
+        "gloss": "Sinal dado para que o povo saiba que o Senhor os santifica."
+      },
+      {
+        "term": "estatutos",
+        "gloss": "Ordens do Senhor; quem as cumpre vive por elas."
+      },
+      {
+        "term": "anciãos",
+        "gloss": "Líderes que vêm consultar, mas ouvem recusa e memória do Êxodo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Anciãos chegam e a consulta é recusada",
+        "evidenceRef": "Ezequiel 20:1–3"
+      },
+      {
+        "label": "Memória da escolha e do juramento no Egito",
+        "evidenceRef": "Ezequiel 20:4–6"
+      },
+      {
+        "label": "Rebelião e ação pelo nome do Senhor",
+        "evidenceRef": "Ezequiel 20:7–9"
+      },
+      {
+        "label": "Êxodo, estatutos e sábados como sinal",
+        "evidenceRef": "Ezequiel 20:10–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Mandou abandonar os ídolos, porém se rebelaram e não quiseram ouvir.",
+        "marker": "Porém",
+        "evidenceRef": "Ezequiel 20:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "Os sábados foram dados para serem sinal e para que soubessem quem santifica.",
+        "marker": "para que",
+        "evidenceRef": "Ezequiel 20:12"
+      },
+      {
+        "kind": "causa",
+        "text": "Agiu por amor do nome, para que não fosse profanado diante das nações.",
+        "marker": "para que",
+        "evidenceRef": "Ezequiel 20:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 20:8–11",
+        "bridge": "Sábado como sinal"
+      },
+      {
+        "ref": "Êxodo 6:6–7",
+        "bridge": "Tirados do Egito"
+      },
+      {
+        "ref": "Levítico 18:5",
+        "bridge": "Cumprir e viver"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor aceita a consulta dos anciãos sem condições.",
+        "why": "Ele jura: não me consultareis."
+      },
+      {
+        "text": "Os sábados são só descanso sem relação com o Senhor.",
+        "why": "São sinal entre ele e eles, para saberem que ele santifica."
+      },
+      {
+        "text": "No Egito o povo já era fiel aos estatutos.",
+        "why": "Rebelaram-se e não abandonaram os ídolos do Egito."
+      }
+    ],
+    "centralInsight": "Deus recusa a consulta vazia e lembra o êxodo, a lei e o sábado.",
+    "anchorQuestion": "Para que o Senhor deu os sábados, segundo Ezequiel 20:12?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 20:3, o Senhor Deus jura que os anciãos não o consultarão.",
+      "verseRef": "Ezequiel 20:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "não me consultareis",
+      "feedbackCorrect": "A resposta à consulta é a recusa jurada: não me consultareis.",
+      "feedbackWrong": {
+        "false": "O versículo termina com a recusa: não me consultareis."
+      },
+      "hint": "Veja a frase depois de \"Tão certo como eu vivo\".",
+      "learningObjective": "Identificar a recusa da consulta.",
+      "evidence": [
+        "Ezequiel 20:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 20:1, toque quem veio consultar o Senhor.",
+      "verseRef": "Ezequiel 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "anciãos de Israel"
+        },
+        {
+          "id": "b",
+          "text": "quinto mês"
+        },
+        {
+          "id": "c",
+          "text": "diante de mim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "alguns dos anciãos de Israel vieram consultar o Senhor",
+      "feedbackCorrect": "Quem vem consultar são os anciãos de Israel.",
+      "feedbackWrong": {
+        "b": "Indica a data, não quem consulta.",
+        "c": "Indica onde se assentaram, não quem veio."
+      },
+      "hint": "Procure o sujeito que veio consultar.",
+      "learningObjective": "Identificar quem busca a consulta.",
+      "evidence": [
+        "Ezequiel 20:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 20:12, para que o Senhor deu os sábados?",
+      "verseRef": "Ezequiel 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para serem um sinal entre ele e eles"
+        },
+        {
+          "id": "b",
+          "text": "Para substituir os estatutos e juízos"
+        },
+        {
+          "id": "c",
+          "text": "Para que consultassem os ídolos do Egito"
+        },
+        {
+          "id": "d",
+          "text": "Para marcar só o calendário das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que fossem um sinal entre mim e eles",
+      "feedbackCorrect": "Os sábados são sinal entre o Senhor e o povo.",
+      "feedbackWrong": {
+        "b": "Os estatutos também foram dados; o sábado não os substitui.",
+        "c": "O texto liga o sábado ao Senhor que santifica, não aos ídolos.",
+        "d": "O sinal é entre o Senhor e eles, não só calendário."
+      },
+      "hint": "Leia a finalidade depois de \"lhes dei os meus sábados\".",
+      "learningObjective": "Reconhecer o propósito dos sábados.",
+      "evidence": [
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 20:10–11 na ordem do texto.",
+      "verseRef": "Ezequiel 20:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "E os tirei da terra do Egito"
+        },
+        {
+          "id": "b",
+          "text": "e os conduzi ao deserto"
+        },
+        {
+          "id": "c",
+          "text": "E eu lhes dei os meus estatutos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E os tirei da terra do Egito e os conduzi ao deserto",
+      "feedbackCorrect": "Primeiro o êxodo, depois o deserto, então os estatutos.",
+      "feedbackWrong": {
+        "default": "Comece pela saída do Egito; os estatutos vêm depois."
+      },
+      "hint": "Siga o caminho: Egito, deserto, lei.",
+      "learningObjective": "Reconhecer a sequência após o êxodo.",
+      "evidence": [
+        "Ezequiel 20:10",
+        "Ezequiel 20:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 20:12, os sábados foram um ___ entre o Senhor e eles.",
+      "verseRef": "Ezequiel 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "sinal"
+        },
+        {
+          "id": "b",
+          "text": "castigo"
+        },
+        {
+          "id": "c",
+          "text": "mercado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que fossem um sinal entre mim e eles",
+      "feedbackCorrect": "A palavra do texto é sinal.",
+      "feedbackWrong": {
+        "b": "Não é castigo: é sinal.",
+        "c": "Não é mercado: é sinal."
+      },
+      "hint": "Veja o substantivo depois de \"fossem um\".",
+      "learningObjective": "Lembrar a palavra-chave do sábado.",
+      "evidence": [
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 20:3 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 20:3",
+      "passageA": {
+        "ref": "Ezequiel 20:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Anciãos vêm consultar, mas o Senhor recusa e abre a memória do Êxodo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Consulta recusada"
+        },
+        {
+          "id": "b",
+          "text": "Sábados no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Leite e mel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não me consultareis",
+      "feedbackCorrect": "O versículo é a recusa que o contexto destaca.",
+      "feedbackWrong": {
+        "b": "Os sábados vêm no fim do trecho.",
+        "c": "A terra de leite e mel está na promessa, não neste elo."
+      },
+      "hint": "Compare a resposta do Senhor com o tema da cena.",
+      "learningObjective": "Ligar a recusa ao contexto da consulta.",
+      "evidence": [
+        "Ezequiel 20:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 20:8, o povo obedeceu logo e abandonou os ídolos do Egito.",
+      "verseRef": "Ezequiel 20:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porém se rebelaram contra mim e não quiseram ouvir-me",
+      "feedbackCorrect": "O contraste é claro: rebelaram-se e não abandonaram os ídolos.",
+      "feedbackWrong": {
+        "true": "O texto diz que se rebelaram e não quiseram ouvir."
+      },
+      "hint": "Veja a palavra que abre a resposta do povo.",
+      "learningObjective": "Perceber o contraste da rebelião.",
+      "evidence": [
+        "Ezequiel 20:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 20:8, toque a palavra que marca o contraste com a ordem de abandonar ídolos.",
+      "verseRef": "Ezequiel 20:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "furor"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém se rebelaram contra mim",
+      "feedbackCorrect": "\"Porém\" introduz a rebelião contra a ordem.",
+      "feedbackWrong": {
+        "b": "O furor é a reação do Senhor, não o contraste inicial.",
+        "c": "O Egito é o cenário, não o marcador."
+      },
+      "hint": "Procure a conjunção que abre o versículo.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Ezequiel 20:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 20:9 e 20:12 se relacionam?",
+      "verseRef": "Ezequiel 20:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O nome e o sinal mostram quem é o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "O nome foi abandonado e o sábado apagado"
+        },
+        {
+          "id": "c",
+          "text": "Os ídolos do Egito substituem o sinal"
+        },
+        {
+          "id": "d",
+          "text": "A consulta dos anciãos cancela o êxodo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Agi por amor do meu nome para que não fosse profanado",
+      "feedbackCorrect": "Age pelo nome e dá o sábado para saberem que ele santifica.",
+      "feedbackWrong": {
+        "b": "O texto afirma ação pelo nome e dá o sábado.",
+        "c": "Os ídolos são o problema; o sinal aponta ao Senhor.",
+        "d": "A consulta é recusada; o êxodo é lembrado."
+      },
+      "hint": "Una a defesa do nome ao propósito do sábado.",
+      "learningObjective": "Relacionar nome do Senhor e sinal do sábado.",
+      "evidence": [
+        "Ezequiel 20:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 20:1–12?",
+      "verseRef": "Ezequiel 20:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anciãos chegam e a consulta é recusada"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor lembra escolha e rebelião no Egito"
+        },
+        {
+          "id": "c",
+          "text": "Dá estatutos e sábados como sinal"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Também lhes dei os meus sábados, para que fossem um sinal",
+      "feedbackCorrect": "Consulta recusada → memória → sinal dos sábados.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta; feche nos sábados."
+      },
+      "hint": "Pense em chegada, memória e sinal.",
+      "learningObjective": "Ordenar os movimentos da cena.",
+      "evidence": [
+        "Ezequiel 20:1",
+        "Ezequiel 20:8",
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 20:11, eu lhes dei os meus ___.",
+      "verseRef": "Ezequiel 20:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "estatutos"
+        },
+        {
+          "id": "b",
+          "text": "ídolos"
+        },
+        {
+          "id": "c",
+          "text": "exércitos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E eu lhes dei os meus estatutos",
+      "feedbackCorrect": "O dom no deserto inclui os estatutos.",
+      "feedbackWrong": {
+        "b": "Os ídolos são o que não deveriam guardar.",
+        "c": "O texto fala de estatutos, não de exércitos."
+      },
+      "hint": "Veja o que ele deu antes dos juízos.",
+      "learningObjective": "Lembrar o dom da lei.",
+      "evidence": [
+        "Ezequiel 20:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 20:12 a Êxodo 20:8–11?",
+      "verseRef": "Ezequiel 20:12",
+      "passageA": {
+        "ref": "Ezequiel 20:12"
+      },
+      "passageB": {
+        "ref": "Êxodo 20:8–11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sábado como sinal"
+        },
+        {
+          "id": "b",
+          "text": "Consulta dos anciãos"
+        },
+        {
+          "id": "c",
+          "text": "Ídolos do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também lhes dei os meus sábados, para que fossem um sinal",
+      "feedbackCorrect": "Nos dois, o sábado marca a relação com o Senhor.",
+      "feedbackWrong": {
+        "b": "A consulta é própria de Ezequiel 20.",
+        "c": "Os ídolos não são o elo com o mandamento do sábado."
+      },
+      "hint": "Compare o papel do sábado.",
+      "learningObjective": "Relacionar o sábado de Ezequiel ao de Êxodo.",
+      "evidence": [
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 20:12, os sábados existem para que o povo saiba que o Senhor os santifica.",
+      "verseRef": "Ezequiel 20:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "a fim de que soubessem que eu sou o SENHOR que os santifica",
+      "feedbackCorrect": "O sinal aponta ao Senhor que santifica.",
+      "feedbackWrong": {
+        "false": "O fim do versículo liga o sinal ao Senhor que santifica."
+      },
+      "hint": "Leia a finalidade final do versículo.",
+      "learningObjective": "Interpretar o propósito teológico do sábado.",
+      "evidence": [
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 20:12, toque o trecho que diz o que o sinal faz saber.",
+      "verseRef": "Ezequiel 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "que os santifica"
+        },
+        {
+          "id": "b",
+          "text": "meus sábados"
+        },
+        {
+          "id": "c",
+          "text": "entre mim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu sou o SENHOR que os santifica",
+      "feedbackCorrect": "O saber apontado é que o Senhor os santifica.",
+      "feedbackWrong": {
+        "b": "Nomeia o dom, não o conteúdo do saber.",
+        "c": "Localiza a relação, não o que devem saber."
+      },
+      "hint": "Procure o que vem depois de \"soubessem que eu sou\".",
+      "learningObjective": "Tocar o conteúdo do sinal.",
+      "evidence": [
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 20:1–12 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus recusa consulta vazia e lembra êxodo e sinal"
+        },
+        {
+          "id": "b",
+          "text": "Os anciãos são aceitos sem memória do passado"
+        },
+        {
+          "id": "c",
+          "text": "Os ídolos do Egito são o sinal do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "O sábado cancela a escolha de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não me consultareis",
+      "feedbackCorrect": "Recusa a consulta e abre a memória até o sábado.",
+      "feedbackWrong": {
+        "b": "A consulta é recusada e o passado é lembrado.",
+        "c": "Os ídolos são abominação; o sinal é o sábado.",
+        "d": "O sábado confirma quem santifica, não cancela a escolha."
+      },
+      "hint": "Una recusa, memória e sinal.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Ezequiel 20:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica desta cena.",
+      "verseRef": "Ezequiel 20:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A consulta é recusada"
+        },
+        {
+          "id": "b",
+          "text": "A rebelião no Egito é lembrada"
+        },
+        {
+          "id": "c",
+          "text": "O sábado é dado como sinal"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para que fossem um sinal entre mim e eles",
+      "feedbackCorrect": "Recusa → memória da rebelião → sinal.",
+      "feedbackWrong": {
+        "default": "Comece na recusa; feche no sinal."
+      },
+      "hint": "Pense em recusa, memória e sinal.",
+      "learningObjective": "Encadear a lógica da cena.",
+      "evidence": [
+        "Ezequiel 20:3",
+        "Ezequiel 20:8",
+        "Ezequiel 20:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 20:8, Porém se ___ contra mim.",
+      "verseRef": "Ezequiel 20:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "rebelaram"
+        },
+        {
+          "id": "b",
+          "text": "alegraram"
+        },
+        {
+          "id": "c",
+          "text": "calaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém se rebelaram contra mim",
+      "feedbackCorrect": "O verbo do contraste é rebelaram.",
+      "feedbackWrong": {
+        "b": "Não é alegria: é rebelião.",
+        "c": "Não é silêncio: é rebelião."
+      },
+      "hint": "Veja o verbo depois de \"Porém se\".",
+      "learningObjective": "Lembrar a resposta do povo no Egito.",
+      "evidence": [
+        "Ezequiel 20:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 20:11 a Levítico 18:5?",
+      "verseRef": "Ezequiel 20:11",
+      "passageA": {
+        "ref": "Ezequiel 20:11"
+      },
+      "passageB": {
+        "ref": "Levítico 18:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cumprir e viver"
+        },
+        {
+          "id": "b",
+          "text": "Consulta dos anciãos"
+        },
+        {
+          "id": "c",
+          "text": "Ídolos abandonados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se o homem os cumprir viverá por eles",
+      "feedbackCorrect": "Nos dois, cumprir os juízos é caminho de vida.",
+      "feedbackWrong": {
+        "b": "A consulta não é o elo com Levítico.",
+        "c": "O texto fala de cumprir estatutos, não de ídolos aqui."
+      },
+      "hint": "Compare o tema compartilhado pelos dois trechos.",
+      "learningObjective": "Ligar os estatutos à fórmula de Levítico.",
+      "evidence": [
+        "Ezequiel 20:11"
+      ]
+    }
+  ]
+}

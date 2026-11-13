@@ -2,13 +2,21 @@
  * Suporte (só admin): lista contas com Plus e último acesso; busca por e-mail,
  * uid ou código de passe para a ficha completa / moderação.
  *
+ * O e-mail não fica mais em `users/{uid}` (qualquer peregrino lê esse doc).
+ * A coluna vem do login, via `moderateUser` action `emails`. O que sobrou no
+ * perfil público entra só se o login não devolver e-mail.
+ *
  * Só leitura. Mudar Plus continua no script (o campo é do webhook RevenueCat):
  *   node scripts/set_plus_active.mjs --uids UID --on --apply
  */
+import { getFunctions, httpsCallable } from 'firebase/functions';
+import { app } from './firebase.js';
 import { COL, formatDate, getDocById, listDocs, listWhere } from './db.js';
 import { getRole } from './roles.js';
 import { escapeHtml, showToast } from './ui.js';
 import { openPersonModal } from './person-modal.js';
+
+const moderateUser = httpsCallable(getFunctions(app, 'us-central1'), 'moderateUser');
 
 const GIFT_CODE = /^[A-Z0-9]{8}$/;
 
@@ -241,6 +249,7 @@ export async function renderUsersPage(root) {
   let term = '';
   let allUsers = [];
   let sort = { key: 'seen', dir: 'desc' };
+  let emailsReady = true;
 
   root.innerHTML = `
     <div class="ez-page wide">
@@ -272,7 +281,10 @@ export async function renderUsersPage(root) {
 
   function renderList() {
     const sorted = sortUsers(allUsers, sort.key, sort.dir);
-    listEl.innerHTML = usersTable(sorted, sort);
+    const note = emailsReady
+      ? ''
+      : '<p class="ez-hint">E-mails do login não carregaram. A lista mostra só o que ainda está no perfil público.</p>';
+    listEl.innerHTML = note + usersTable(sorted, sort);
     wireResultActions(listEl, { onPersonChanged: loadList });
     listEl.querySelectorAll('[data-open-uid]').forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -296,7 +308,19 @@ export async function renderUsersPage(root) {
     listEl.innerHTML = '<div class="ez-skeleton">Carregando contas…</div>';
     try {
       // Sem orderBy: users não tem campo `order` — listCollection devolveria [].
-      allUsers = await listDocs(COL.users);
+      const users = await listDocs(COL.users);
+      let authEmails = null;
+      try {
+        const { data } = await moderateUser({ action: 'emails', uids: users.map((u) => u.id) });
+        if (data?.emails && typeof data.emails === 'object') authEmails = data.emails;
+      } catch (e) {
+        console.warn(e);
+      }
+      emailsReady = authEmails != null;
+      allUsers = users.map((u) => ({
+        ...u,
+        email: (authEmails && authEmails[u.id]) || u.email || '',
+      }));
       renderList();
     } catch (e) {
       listEl.innerHTML = `<p class="ez-hint">Falhou ao listar: ${escapeHtml(e.message || String(e))}</p>`;
@@ -313,19 +337,25 @@ export async function renderUsersPage(root) {
     try {
       const html = [];
       if (q.includes('@')) {
-        const users = [
-          ...(await listWhere(COL.users, 'email', q)),
-          ...(q !== q.toLowerCase() ? await listWhere(COL.users, 'email', q.toLowerCase()) : []),
-        ];
+        const want = q.toLowerCase();
+        const users = allUsers.filter((u) => String(u.email || '').toLowerCase() === want);
         for (const u of users) html.push(userCard(u, await reportsFor(u.id)));
-        if (!users.length) html.push('<p class="ez-hint">Nenhuma conta com este e-mail (o app grava o e-mail no primeiro backup).</p>');
+        if (!users.length) {
+          html.push(emailsReady
+            ? '<p class="ez-hint">Nenhuma conta com este e-mail.</p>'
+            : '<p class="ez-hint">Nenhuma conta com este e-mail no perfil público. O e-mail do login não carregou.</p>');
+        }
       } else {
         const code = q.toUpperCase();
         const [u, g] = await Promise.all([
           getDocById(COL.users, q).catch(() => null),
           GIFT_CODE.test(code) ? getDocById(COL.trailGifts, code).catch(() => null) : null,
         ]);
-        if (u) html.push(userCard(u, await reportsFor(u.id)));
+        if (u) {
+          const known = allUsers.find((x) => x.id === u.id);
+          if (known?.email) u.email = known.email;
+          html.push(userCard(u, await reportsFor(u.id)));
+        }
         if (g) html.push(giftCard(g));
         if (!u && !g) html.push('<p class="ez-hint">Nada encontrado com este uid ou código.</p>');
       }

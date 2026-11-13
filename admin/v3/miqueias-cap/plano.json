@@ -1,0 +1,87 @@
+{
+  "slug": "miqueias-cap",
+  "prefix": "mqc",
+  "book": "Miqueias",
+  "chapters": 7,
+  "title": "Miquéias",
+  "description": "Miquéias capítulo a capítulo: juízo, esperança e o que o Senhor pede.",
+  "icon": "🌄",
+  "color": "#6A8EAE",
+  "order": 40,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": [
+    "miqueias"
+  ],
+  "modules": [
+    {
+      "title": "Juízo e pastor · cap. 1–4",
+      "scenes": [
+        {
+          "ref": "Miqueias 1:2–9",
+          "title": "O Senhor desce",
+          "intro": "Miquéias anuncia que o Senhor sai do seu lugar contra a transgressão de Jacó.",
+          "insight": "O pecado de Samaria e de Judá faz o Senhor descer em juízo.",
+          "objective": "Levar a sério o pecado"
+        },
+        {
+          "ref": "Miqueias 2:1–8",
+          "title": "Ai dos que maquinam",
+          "intro": "Há quem planeja o mal na cama e o executa ao amanhecer, por ter poder.",
+          "insight": "O Senhor trama o mal contra quem toma casas e heranças pela força.",
+          "objective": "Não oprimir o próximo"
+        },
+        {
+          "ref": "Miqueias 3:1–8",
+          "title": "Príncipes e profetas",
+          "intro": "Os líderes odeiam o bem e os profetas anunciam paz por dinheiro.",
+          "insight": "Miquéias está cheio do Espírito do Senhor para declarar a Jacó a sua transgressão.",
+          "objective": "Falar a verdade com coragem"
+        },
+        {
+          "ref": "Miqueias 4:6–13",
+          "title": "A claudicante reunida",
+          "intro": "O Senhor promete reunir a que coxeia e fazer dela um remanescente forte.",
+          "insight": "De Sião sairá o domínio: o Senhor reinará sobre eles no monte Sião.",
+          "objective": "Esperar o reinado do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Juízo e pastor",
+        "intro": "Revise o juízo, a opressão, os líderes e a promessa a Sião.",
+        "insight": "Deus juíza a opressão e promete reunir o seu povo"
+      }
+    },
+    {
+      "title": "O que o Senhor pede · cap. 5–7",
+      "scenes": [
+        {
+          "ref": "Miqueias 5:6–15",
+          "title": "O remanescente no meio",
+          "intro": "O remanescente de Jacó estará no meio dos povos como orvalho do Senhor.",
+          "insight": "O Senhor corta ídolos e fortalezas: o remanescente depende só dele.",
+          "objective": "Depender só do Senhor"
+        },
+        {
+          "ref": "Miqueias 6:1–8",
+          "title": "O que o Senhor pede",
+          "intro": "O Senhor chama as montanhas a ouvir a contenda e pergunta o que exige do homem.",
+          "insight": "Ele pediu que se faça justiça, se ame a misericórdia e se ande humildemente com Deus.",
+          "objective": "Justiça, misericórdia e humildade"
+        },
+        {
+          "ref": "Miqueias 7:1–7",
+          "title": "Eu, porém, olharei",
+          "intro": "Miquéias lamenta a corrupção da terra e escolhe olhar para o Senhor.",
+          "insight": "Quando ninguém é de confiança, o justo espera o Deus da sua salvação.",
+          "objective": "Esperar o Deus da salvação"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: O que o Senhor pede",
+        "intro": "Revise o remanescente, o pedido do Senhor e a espera fiel.",
+        "insight": "O Senhor pede um caminhar justo, misericordioso e humilde"
+      }
+    }
+  ]
+}

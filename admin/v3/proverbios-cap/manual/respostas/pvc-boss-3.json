@@ -1,0 +1,936 @@
+{
+  "study": {
+    "passageRef": "Provérbios 17:1–6",
+    "passages": [
+      {
+        "ref": "Provérbios 17:1–6"
+      },
+      {
+        "ref": "Provérbios 18:10–15"
+      },
+      {
+        "ref": "Provérbios 19:11–16"
+      },
+      {
+        "ref": "Provérbios 20:1–6"
+      },
+      {
+        "ref": "Provérbios 21:1–6"
+      },
+      {
+        "ref": "Provérbios 22:1–6"
+      }
+    ],
+    "context": "Travessia do bloco 17–22: paz na mesa, torre do Senhor, temor, autodomínio, coração do rei e bom nome sob Deus.",
+    "keyword": "Vida",
+    "keywordGloss": "Morte e vida, rico e pobre, tudo sob o temor e o nome do Senhor.",
+    "focusQuestion": "Qual destes bens do bloco 17–22 você mais precisa guardar?",
+    "reflectionPrompts": [
+      "Paz e torre",
+      "Temor e vinho",
+      "Nome e justiça"
+    ],
+    "facts": [
+      {
+        "text": "Melhor é um bocado seco e tranquilidade.",
+        "evidenceRef": "Provérbios 17:1",
+        "evidenceSpan": "Melhor é um bocado seco e tranquilidade"
+      },
+      {
+        "text": "A torre forte é o nome do Senhor.",
+        "evidenceRef": "Provérbios 18:10",
+        "evidenceSpan": "A torre forte é o nome do Senhor"
+      },
+      {
+        "text": "O temor do SENHOR conduz à vida.",
+        "evidenceRef": "Provérbios 19:23",
+        "evidenceSpan": "O temor do SENHOR conduz à vida"
+      },
+      {
+        "text": "O vinho é zombador.",
+        "evidenceRef": "Provérbios 20:1",
+        "evidenceSpan": "O vinho é zombador"
+      },
+      {
+        "text": "O coração do rei está na mão do Senhor.",
+        "evidenceRef": "Provérbios 21:1",
+        "evidenceSpan": "o coração do rei na mão do Senhor"
+      },
+      {
+        "text": "Melhor é ter um bom nome do que muitas riquezas.",
+        "evidenceRef": "Provérbios 22:1",
+        "evidenceSpan": "Melhor é ter um bom nome do que muitas riquezas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "torre",
+        "gloss": "Imagem do nome do Senhor como refúgio."
+      },
+      {
+        "term": "temor",
+        "gloss": "Conduz à vida e contentamento."
+      },
+      {
+        "term": "nome",
+        "gloss": "Bom nome vale mais que riquezas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Paz e prova",
+        "evidenceRef": "Provérbios 17:1–6"
+      },
+      {
+        "label": "Torre e língua",
+        "evidenceRef": "Provérbios 18:10–15"
+      },
+      {
+        "label": "Temor e paciência",
+        "evidenceRef": "Provérbios 19:11–16"
+      },
+      {
+        "label": "Rei, justiça e nome",
+        "evidenceRef": "Provérbios 22:1–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Bocado seco com paz supera banquete com briga.",
+        "marker": null,
+        "evidenceRef": "Provérbios 17:1"
+      },
+      {
+        "kind": "contraste",
+        "text": "Homem planeja; desígnio do SENHOR permanece.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 19:21"
+      },
+      {
+        "kind": "contraste",
+        "text": "Bom nome supera muitas riquezas.",
+        "marker": null,
+        "evidenceRef": "Provérbios 22:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 18:2",
+        "bridge": "Senhor como fortaleza"
+      },
+      {
+        "ref": "Tiago 3:5–6",
+        "bridge": "Língua e fogo"
+      },
+      {
+        "ref": "Miqueias 6:8",
+        "bridge": "Justiça e humildade"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Riqueza e banquete importam mais que paz e nome.",
+        "why": "17:1 e 22:1 preferem tranquilidade e bom nome."
+      },
+      {
+        "text": "O rei governa o coração sem Deus.",
+        "why": "21:1 põe o coração do rei na mão do Senhor."
+      },
+      {
+        "text": "A língua não tem poder sobre a vida.",
+        "why": "18:21 afirma morte e vida no poder da língua."
+      }
+    ],
+    "centralInsight": "Vida e morte, rico e pobre: tudo sob o temor do Senhor",
+    "anchorQuestion": "Segundo Provérbios 18:10, o que é a torre forte?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Provérbios 18:10, a torre forte é o nome do Senhor.",
+      "verseRef": "Provérbios 18:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "A torre forte é o nome do Senhor",
+      "feedbackCorrect": "A torre forte é o nome do Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 18:10: a torre é o nome do Senhor."
+      },
+      "hint": "Predicado da torre.",
+      "learningObjective": "Relembrar a torre forte.",
+      "evidence": [
+        "Provérbios 18:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Provérbios 17:1, toque o que acompanha o bocado seco como bem.",
+      "verseRef": "Provérbios 17:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "tranquilidade"
+        },
+        {
+          "id": "b",
+          "text": "contendas"
+        },
+        {
+          "id": "c",
+          "text": "iguarias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "bocado seco e tranquilidade",
+      "feedbackCorrect": "Tranquilidade acompanha o bocado seco.",
+      "feedbackWrong": {
+        "b": "Contendas são o contraste.",
+        "c": "Iguarias estão na casa com briga."
+      },
+      "hint": "Palavra após \"e\".",
+      "learningObjective": "Relembrar a paz na mesa.",
+      "evidence": [
+        "Provérbios 17:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Provérbios 22:1, o que é melhor do que muitas riquezas?",
+      "verseRef": "Provérbios 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um bom nome"
+        },
+        {
+          "id": "b",
+          "text": "Só o ouro"
+        },
+        {
+          "id": "c",
+          "text": "A embriaguez"
+        },
+        {
+          "id": "d",
+          "text": "A pressa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Melhor é ter um bom nome do que muitas riquezas",
+      "feedbackCorrect": "Melhor é ter um bom nome.",
+      "feedbackWrong": {
+        "b": "Ouro vale menos que a estima.",
+        "c": "Vinho zomba em 20:1.",
+        "d": "Pressa empobrece em 21:5."
+      },
+      "hint": "Sujeito do melhor.",
+      "learningObjective": "Relembrar o valor do nome.",
+      "evidence": [
+        "Provérbios 22:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Provérbios 20:1 na ordem do texto.",
+      "verseRef": "Provérbios 20:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O vinho é zombador"
+        },
+        {
+          "id": "b",
+          "text": "e a bebida forte, alvoroçadora"
+        },
+        {
+          "id": "c",
+          "text": "todo aquele que por eles é vencido não é sábio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O vinho é zombador",
+      "feedbackCorrect": "Vinho, bebida forte e o aviso final.",
+      "feedbackWrong": {
+        "default": "Comece pelo vinho."
+      },
+      "hint": "Abre com O vinho.",
+      "learningObjective": "Seguir o aviso do vinho.",
+      "evidence": [
+        "Provérbios 20:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Provérbios 21:1, o coração do rei está na mão do quê?",
+      "verseRef": "Provérbios 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na mão do Senhor",
+      "feedbackCorrect": "Está na mão do Senhor.",
+      "feedbackWrong": {
+        "b": "Vinho é de 20:1.",
+        "c": "Ouro aparece em 22:1."
+      },
+      "hint": "Palavra após \"mão do\".",
+      "learningObjective": "Relembrar o governo divino.",
+      "evidence": [
+        "Provérbios 21:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Provérbios 19:23 comunica que se liga a este contexto?",
+      "verseRef": "Provérbios 19:23",
+      "passageA": {
+        "ref": "Provérbios 19:23",
+        "text": "O temor do SENHOR conduz à vida"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Vida e contentamento sob o temor do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor conduz à vida"
+        },
+        {
+          "id": "b",
+          "text": "Temor sem fruto"
+        },
+        {
+          "id": "c",
+          "text": "Vida sem Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O temor do SENHOR conduz à vida",
+      "feedbackCorrect": "O temor que conduz à vida liga o versículo ao bloco.",
+      "feedbackWrong": {
+        "b": "Há vida e satisfação.",
+        "c": "O temor é do SENHOR."
+      },
+      "hint": "Veja a que o temor conduz.",
+      "learningObjective": "Ligar temor e vida no bloco.",
+      "evidence": [
+        "Provérbios 19:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Provérbios 18:21, toque onde estão a morte e a vida.",
+      "verseRef": "Provérbios 18:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "da língua"
+        },
+        {
+          "id": "b",
+          "text": "seu fruto"
+        },
+        {
+          "id": "c",
+          "text": "quem a ama"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estão no poder da língua",
+      "feedbackCorrect": "Morte e vida estão no poder da língua.",
+      "feedbackWrong": {
+        "b": "O fruto vem de quem ama a língua; o poder está nela.",
+        "c": "Quem ama a língua come o fruto; o poder está nela."
+      },
+      "hint": "Feche o primeiro período.",
+      "learningObjective": "Relembrar o poder da língua.",
+      "evidence": [
+        "Provérbios 18:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Provérbios 22:2 na ordem do texto.",
+      "verseRef": "Provérbios 22:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rico e o pobre se encontram"
+        },
+        {
+          "id": "b",
+          "text": "a um e ao outro"
+        },
+        {
+          "id": "c",
+          "text": "faz o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O rico e o pobre se encontram",
+      "feedbackCorrect": "Encontro primeiro; o Senhor que faz fecha.",
+      "feedbackWrong": {
+        "default": "Comece pelo rico e o pobre."
+      },
+      "hint": "Abre com O rico e o pobre.",
+      "learningObjective": "Seguir rico e pobre sob Deus.",
+      "evidence": [
+        "Provérbios 22:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Provérbios 21:3, justiça e juízo são apresentados como mais aceitáveis ao Senhor do que sacrifícios.",
+      "verseRef": "Provérbios 21:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor",
+      "feedbackCorrect": "Justiça e juízo pesam mais que sacrifícios.",
+      "feedbackWrong": {
+        "false": "Releia 21:3: justiça é mais aceitável."
+      },
+      "hint": "Compare justiça e sacrifícios.",
+      "learningObjective": "Relacionar justiça e ritual.",
+      "evidence": [
+        "Provérbios 21:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Provérbios 18:12, toque a palavra que marca o contraste.",
+      "verseRef": "Provérbios 18:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "ruína"
+        },
+        {
+          "id": "c",
+          "text": "honra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas antes da honra, vem a humildade",
+      "feedbackCorrect": "\"Mas\" introduz a humildade antes da honra.",
+      "feedbackWrong": {
+        "b": "Ruína segue a exaltação.",
+        "c": "Honra segue a humildade."
+      },
+      "hint": "Palavra curta no meio.",
+      "learningObjective": "Reconhecer o contraste da humildade.",
+      "evidence": [
+        "Provérbios 18:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Provérbios 17:1 estabelece com a mesa?",
+      "verseRef": "Provérbios 17:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz no pouco supera banquete com briga"
+        },
+        {
+          "id": "b",
+          "text": "Contendas tornam o banquete melhor"
+        },
+        {
+          "id": "c",
+          "text": "Iguarias importam mais que tranquilidade"
+        },
+        {
+          "id": "d",
+          "text": "Não há diferença entre as mesas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Melhor é um bocado seco e tranquilidade",
+      "feedbackCorrect": "Paz no pouco supera banquete com contendas.",
+      "feedbackWrong": {
+        "b": "Contendas são o contraste negativo.",
+        "c": "O texto prefere tranquilidade.",
+        "d": "Há contraste claro."
+      },
+      "hint": "Veja o que é melhor.",
+      "learningObjective": "Relacionar paz e mesa.",
+      "evidence": [
+        "Provérbios 17:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco 17–22 nesta Travessia?",
+      "verseRef": "Provérbios 17:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz e prova"
+        },
+        {
+          "id": "b",
+          "text": "Torre e língua"
+        },
+        {
+          "id": "c",
+          "text": "Rei, justiça e nome"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Melhor é um bocado seco e tranquilidade",
+      "feedbackCorrect": "Da paz à torre, e fecha com rei e nome.",
+      "feedbackWrong": {
+        "default": "Comece pela paz; o nome fecha."
+      },
+      "hint": "O fim do bloco fala de bom nome.",
+      "learningObjective": "Ver o arco do bloco.",
+      "evidence": [
+        "Provérbios 17:1",
+        "Provérbios 18:10",
+        "Provérbios 22:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Provérbios 22:4, o galardão inclui riquezas, honra e quê?",
+      "verseRef": "Provérbios 22:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "vida"
+        },
+        {
+          "id": "b",
+          "text": "contendas"
+        },
+        {
+          "id": "c",
+          "text": "vinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "riquezas, e honra, e vida",
+      "feedbackCorrect": "O galardão fecha com vida.",
+      "feedbackWrong": {
+        "b": "Contendas são de 17:1.",
+        "c": "Vinho é de 20:1."
+      },
+      "hint": "Última palavra da lista.",
+      "learningObjective": "Lembrar o galardão do temor.",
+      "evidence": [
+        "Provérbios 22:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Provérbios 18:10 a Salmos 18:2?",
+      "verseRef": "Provérbios 18:10",
+      "passageA": {
+        "ref": "Provérbios 18:10"
+      },
+      "passageB": {
+        "ref": "Salmos 18:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor como fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Riqueza como torre"
+        },
+        {
+          "id": "c",
+          "text": "Nome sem refúgio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A torre forte é o nome do Senhor",
+      "feedbackCorrect": "Torre e fortaleza apontam ao mesmo refúgio.",
+      "feedbackWrong": {
+        "b": "A muralha do rico é só visão.",
+        "c": "Há segurança para o justo."
+      },
+      "hint": "Compare torre e fortaleza.",
+      "learningObjective": "Cruzar o refúgio no Senhor.",
+      "evidence": [
+        "Provérbios 18:10",
+        "Salmos 18:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Provérbios 19:21, toque o que permanecerá.",
+      "verseRef": "Provérbios 19:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "desígnio do SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "planos"
+        },
+        {
+          "id": "c",
+          "text": "coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o desígnio do SENHOR permanecerá",
+      "feedbackCorrect": "O desígnio do SENHOR permanecerá.",
+      "feedbackWrong": {
+        "b": "Planos são muitos no coração.",
+        "c": "Coração guarda os planos."
+      },
+      "hint": "Sujeito da segunda metade.",
+      "learningObjective": "Reconhecer o desígnio que permanece.",
+      "evidence": [
+        "Provérbios 19:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual ordem une temor, justiça e nome?",
+      "verseRef": "Provérbios 19:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "O temor do SENHOR conduz à vida"
+        },
+        {
+          "id": "b",
+          "text": "Justiça pesa mais que sacrifício"
+        },
+        {
+          "id": "c",
+          "text": "Melhor é ter um bom nome"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O temor do SENHOR conduz à vida",
+      "feedbackCorrect": "Do temor à justiça e ao nome.",
+      "feedbackWrong": {
+        "default": "Comece pelo temor; o nome fecha."
+      },
+      "hint": "Temor, depois justiça, depois nome.",
+      "learningObjective": "Ordenar temas do bloco.",
+      "evidence": [
+        "Provérbios 19:23",
+        "Provérbios 21:3",
+        "Provérbios 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Provérbios 20:1, quem é vencido pelo vinho é chamado de sábio.",
+      "verseRef": "Provérbios 20:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "todo aquele que por eles é vencido não é sábio",
+      "feedbackCorrect": "Quem é vencido não é sábio.",
+      "feedbackWrong": {
+        "true": "Releia 20:1: não é sábio."
+      },
+      "hint": "Final do versículo.",
+      "learningObjective": "Corrigir a leitura sobre o vinho.",
+      "evidence": [
+        "Provérbios 20:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Provérbios 21:1, toque o trecho que sustenta o governo de Deus sobre o rei.",
+      "verseRef": "Provérbios 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "mão do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "ribeiros"
+        },
+        {
+          "id": "c",
+          "text": "águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na mão do Senhor",
+      "feedbackCorrect": "O coração do rei está na mão do Senhor.",
+      "feedbackWrong": {
+        "b": "Ribeiros é a imagem.",
+        "c": "Águas completa a imagem."
+      },
+      "hint": "Onde está o coração.",
+      "learningObjective": "Sustentar o governo divino.",
+      "evidence": [
+        "Provérbios 21:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o bloco 17–22 sustenta?",
+      "verseRef": "Provérbios 22:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vida, rico e pobre ficam sob o temor e o nome do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Banquete com briga vale mais que paz"
+        },
+        {
+          "id": "c",
+          "text": "O rei governa sem Deus"
+        },
+        {
+          "id": "d",
+          "text": "A língua não afeta a vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Melhor é ter um bom nome do que muitas riquezas",
+      "feedbackCorrect": "Paz, torre, temor, justiça e nome percorrem o bloco.",
+      "feedbackWrong": {
+        "b": "17:1 prefere tranquilidade.",
+        "c": "21:1 põe o coração na mão de Deus.",
+        "d": "18:21 afirma o poder da língua."
+      },
+      "hint": "Una paz, temor e nome.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "Provérbios 22:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do refúgio e da justiça?",
+      "verseRef": "Provérbios 18:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "A torre forte é o nome do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "O salmo chama o Senhor de fortaleza"
+        },
+        {
+          "id": "c",
+          "text": "Miqueias pede justiça e humildade"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "A torre forte é o nome do Senhor",
+      "feedbackCorrect": "Da torre ao salmo e a Miqueias.",
+      "feedbackWrong": {
+        "default": "Comece por 18:10; depois Salmos 18:2 e Miqueias 6:8."
+      },
+      "hint": "Do refúgio à fortaleza e à justiça.",
+      "learningObjective": "Ver o fio do bloco.",
+      "evidence": [
+        "Provérbios 18:10",
+        "Salmos 18:2",
+        "Miqueias 6:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Provérbios 18:21, morte e vida estão no poder da quê?",
+      "verseRef": "Provérbios 18:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "língua"
+        },
+        {
+          "id": "b",
+          "text": "muralha"
+        },
+        {
+          "id": "c",
+          "text": "iguarias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no poder da língua",
+      "feedbackCorrect": "Estão no poder da língua.",
+      "feedbackWrong": {
+        "b": "Muralha é do rico.",
+        "c": "Iguarias são de 17:1."
+      },
+      "hint": "Palavra final da primeira frase.",
+      "learningObjective": "Lembrar o poder da língua.",
+      "evidence": [
+        "Provérbios 18:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Provérbios 18:21 a Tiago 3:5–6?",
+      "verseRef": "Provérbios 18:21",
+      "passageA": {
+        "ref": "Provérbios 18:21"
+      },
+      "passageB": {
+        "ref": "Tiago 3:5–6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Língua e fogo"
+        },
+        {
+          "id": "b",
+          "text": "Língua sem poder"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio como morte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A morte e a vida estão no poder da língua",
+      "feedbackCorrect": "Os dois textos mostram o poder da língua.",
+      "feedbackWrong": {
+        "b": "Há poder explícito.",
+        "c": "O tema é o poder da fala."
+      },
+      "hint": "Compare o poder da língua.",
+      "learningObjective": "Cruzar o poder da língua.",
+      "evidence": [
+        "Provérbios 18:21",
+        "Tiago 3:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Provérbios 22:4, toque o primeiro bem listado no galardão.",
+      "verseRef": "Provérbios 22:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "riquezas"
+        },
+        {
+          "id": "b",
+          "text": "humildade"
+        },
+        {
+          "id": "c",
+          "text": "temor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "são riquezas, e honra, e vida",
+      "feedbackCorrect": "O galardão inclui riquezas, honra e vida.",
+      "feedbackWrong": {
+        "b": "Humildade e temor são o caminho; o galardão começa em riquezas.",
+        "c": "O temor pertence ao caminho; toque o primeiro bem do galardão."
+      },
+      "hint": "Lista após “são”.",
+      "learningObjective": "Sustentar o galardão no bloco.",
+      "evidence": [
+        "Provérbios 22:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual ordem une mesa, rei e nome?",
+      "verseRef": "Provérbios 17:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Melhor é o bocado seco com paz"
+        },
+        {
+          "id": "b",
+          "text": "O coração do rei está na mão do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Nome e estima superam o ouro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Melhor é um bocado seco e tranquilidade",
+      "feedbackCorrect": "Da mesa pacífica ao rei e ao nome.",
+      "feedbackWrong": {
+        "default": "Comece pelo bocado; o nome fecha."
+      },
+      "hint": "Mesa, depois rei, depois nome.",
+      "learningObjective": "Ordenar bens do bloco.",
+      "evidence": [
+        "Provérbios 17:1",
+        "Provérbios 21:1",
+        "Provérbios 22:1"
+      ]
+    }
+  ]
+}

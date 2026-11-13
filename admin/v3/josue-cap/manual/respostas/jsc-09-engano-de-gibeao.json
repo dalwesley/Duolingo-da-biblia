@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 9:3–8",
+    "passages": [
+      {
+        "ref": "Josué 9:3–15"
+      }
+    ],
+    "context": "Os gibeonitas fingem vir de longe com pães mofados e pedem aliança a Israel em Gilgal.",
+    "keyword": "astúcia",
+    "keywordGloss": "Os gibeonitas enganam com aparência de viagem longa.",
+    "focusQuestion": "Onde você decide sem pedir conselho ao Senhor?",
+    "reflectionPrompts": [
+      "Aparência de longe",
+      "Juramento precipitado",
+      "Sem consultar o Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Os moradores de Gibeão ouviram o que Josué fizera a Jericó e a Ai.",
+        "evidenceRef": "Josué 9:3",
+        "evidenceSpan": "ao ouvirem o que Josué fizera a Jericó e a Ai"
+      },
+      {
+        "text": "Agiram com astúcia e se passaram por embaixadores.",
+        "evidenceRef": "Josué 9:4",
+        "evidenceSpan": "Eles agiram com astúcia e se passaram por embaixadores"
+      },
+      {
+        "text": "O pão que traziam era seco e mofado.",
+        "evidenceRef": "Josué 9:5",
+        "evidenceSpan": "todo o pão que traziam para o caminho era seco e mofado"
+      },
+      {
+        "text": "Pediram aliança dizendo vir de uma terra remota.",
+        "evidenceRef": "Josué 9:6",
+        "evidenceSpan": "Viemos de uma terra remota; façam, pois, agora, aliança conosco"
+      },
+      {
+        "text": "Israelitas tomaram da provisão e não pediram conselho ao Senhor.",
+        "evidenceRef": "Josué 9:14",
+        "evidenceSpan": "tomaram da provisão e não pediram conselho ao SENHOR"
+      },
+      {
+        "text": "Josué fez aliança garantindo-lhes a vida, e os príncipes juraram.",
+        "evidenceRef": "Josué 9:15",
+        "evidenceSpan": "fez uma aliança com eles, garantindo-lhes a vida"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "astúcia",
+        "gloss": "Engano calculado dos gibeonitas."
+      },
+      {
+        "term": "aliança",
+        "gloss": "Pacto de paz jurado sem consultar o Senhor."
+      },
+      {
+        "term": "conselho",
+        "gloss": "O que Israel deixou de pedir ao Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Gibeão ouve e trama o engaño",
+        "evidenceRef": "Josué 9:3–5"
+      },
+      {
+        "label": "Pedido de aliança em Gilgal",
+        "evidenceRef": "Josué 9:6–13"
+      },
+      {
+        "label": "Israel decide sem consultar",
+        "evidenceRef": "Josué 9:14"
+      },
+      {
+        "label": "Aliança e juramento firmados",
+        "evidenceRef": "Josué 9:15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Vieram por causa do nome do Senhor e do que ele fez.",
+        "marker": "por causa",
+        "evidenceRef": "Josué 9:9"
+      },
+      {
+        "kind": "resultado",
+        "text": "Tomaram da provisão e não pediram conselho.",
+        "marker": null,
+        "evidenceRef": "Josué 9:14"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da decisão, Josué concede paz e aliança.",
+        "marker": null,
+        "evidenceRef": "Josué 9:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 27:21",
+        "bridge": "Consultar o Senhor"
+      },
+      {
+        "ref": "Provérbios 3:5–6",
+        "bridge": "Não confiar só no próprio juízo"
+      },
+      {
+        "ref": "2 Samuel 21:1–2",
+        "bridge": "Juramento a Gibeão permanece"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Israel consultou o Senhor antes de jurar.",
+        "why": "O texto diz que não pediram conselho ao Senhor."
+      },
+      {
+        "text": "Os gibeonitas eram transparentes sobre sua origem.",
+        "why": "Agiram com astúcia e fingiram terra remota."
+      },
+      {
+        "text": "A aliança não tinha juramento dos príncipes.",
+        "why": "Os príncipes da congregação prestaram-lhes juramento."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 9:14, o que Israel deixou de pedir?",
+    "centralInsight": "Israel jura pelo Senhor sem consultar; a aliança feita não pode ser quebrada."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 9:4, os gibeonitas agiram com astúcia e se passaram por embaixadores.",
+      "verseRef": "Josué 9:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eles agiram com astúcia e se passaram por embaixadores",
+      "feedbackCorrect": "O texto nomeia a astúcia.",
+      "feedbackWrong": {
+        "false": "Eles agiram com astúcia."
+      },
+      "hint": "Veja como agiram.",
+      "learningObjective": "Observar a astúcia de Gibeão.",
+      "evidence": [
+        "Josué 9:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 9:14, toque o que Israel não pediu.",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "conselho"
+        },
+        {
+          "id": "b",
+          "text": "provisão"
+        },
+        {
+          "id": "c",
+          "text": "israelitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Não pediram conselho ao Senhor.",
+      "feedbackWrong": {
+        "b": "Provisão é o que tomaram.",
+        "c": "Israelitas é quem age; o omitido é conselho."
+      },
+      "hint": "Veja o objeto de não pediram.",
+      "learningObjective": "Identificar a omissão.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 9:6, o que os gibeonitas pedem?",
+      "verseRef": "Josué 9:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança consigo"
+        },
+        {
+          "id": "b",
+          "text": "Guerra imediata"
+        },
+        {
+          "id": "c",
+          "text": "Volta a Jericó"
+        },
+        {
+          "id": "d",
+          "text": "Pão fresco de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "façam, pois, agora, aliança conosco",
+      "feedbackCorrect": "Pedem aliança.",
+      "feedbackWrong": {
+        "b": "Não pedem guerra.",
+        "c": "Não pedem volta a Jericó.",
+        "d": "Eles trazem pão mofado."
+      },
+      "hint": "Leia o pedido final.",
+      "learningObjective": "Reconhecer o pedido de aliança.",
+      "evidence": [
+        "Josué 9:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 9:14 na ordem do texto.",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, aqueles israelitas"
+        },
+        {
+          "id": "b",
+          "text": "tomaram da provisão"
+        },
+        {
+          "id": "c",
+          "text": "e não pediram conselho ao SENHOR"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Tomam e não consultam.",
+      "feedbackWrong": {
+        "default": "Comece pelos israelitas."
+      },
+      "hint": "Quem age primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 9:4, complete: Eles agiram com ___.",
+      "verseRef": "Josué 9:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "astúcia"
+        },
+        {
+          "id": "b",
+          "text": "pressa"
+        },
+        {
+          "id": "c",
+          "text": "temor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles agiram com astúcia",
+      "feedbackCorrect": "Agiram com astúcia.",
+      "feedbackWrong": {
+        "b": "Não é pressa.",
+        "c": "A palavra é astúcia."
+      },
+      "hint": "Veja o modo da ação.",
+      "learningObjective": "Lembrar a palavra astúcia.",
+      "evidence": [
+        "Josué 9:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 9:14 comunica que se liga a este contexto?",
+      "verseRef": "Josué 9:14",
+      "passageA": {
+        "ref": "Josué 9:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Gibeonitas pedem aliança com aparência de terra remota."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Decisão sem consultar"
+        },
+        {
+          "id": "b",
+          "text": "Consulta cuidadosa ao Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Recusa total de aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Israel decide pela aparência.",
+      "feedbackWrong": {
+        "b": "Não consultaram.",
+        "c": "Houve aliança."
+      },
+      "hint": "Veja o que faltou.",
+      "learningObjective": "Ligar o engaño à omissão.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 9:14, Israel pediu conselho ao Senhor antes de tomar da provisão.",
+      "verseRef": "Josué 9:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "O texto nega a consulta.",
+      "feedbackWrong": {
+        "true": "Não pediram conselho."
+      },
+      "hint": "Leia o e não pediram.",
+      "learningObjective": "Ver a omissão da consulta.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 9:9, toque a expressão que marca o motivo da vinda.",
+      "verseRef": "Josué 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "por causa"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "fama"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa do nome do SENHOR",
+      "feedbackCorrect": "Por causa introduz o motivo.",
+      "feedbackWrong": {
+        "b": "Terra descreve a distância.",
+        "c": "Fama é o que ouviram; a marca é por causa."
+      },
+      "hint": "Procure a expressão do motivo.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Josué 9:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre não consultar e a aliança?",
+      "verseRef": "Josué 9:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem consulta, firmam paz e juramento"
+        },
+        {
+          "id": "b",
+          "text": "Sem consulta, recusam qualquer pacto"
+        },
+        {
+          "id": "c",
+          "text": "Consultam depois de jurar"
+        },
+        {
+          "id": "d",
+          "text": "Só Josué jura, sem príncipes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez uma aliança com eles, garantindo-lhes a vida",
+      "feedbackCorrect": "A omissão precede o pacto.",
+      "feedbackWrong": {
+        "b": "Houve aliança.",
+        "c": "Não consultaram depois.",
+        "d": "Os príncipes também juraram."
+      },
+      "hint": "Leia 9:14 e 9:15 juntos.",
+      "learningObjective": "Compreender o resultado da omissão.",
+      "evidence": [
+        "Josué 9:14–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 9:3–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gibeão ouve e trama o engaño"
+        },
+        {
+          "id": "b",
+          "text": "Pedido de aliança em Gilgal"
+        },
+        {
+          "id": "c",
+          "text": "Israel decide sem consultar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ao ouvirem o que Josué fizera",
+      "feedbackCorrect": "Engaño, pedido e decisão.",
+      "feedbackWrong": {
+        "default": "Comece pela reação de Gibeão."
+      },
+      "hint": "O que dispara a trama?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 9:3",
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 9:15, complete: fez uma ___ com eles, garantindo-lhes a vida.",
+      "verseRef": "Josué 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "muralha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez uma aliança com eles",
+      "feedbackCorrect": "Fez aliança.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "A palavra é aliança."
+      },
+      "hint": "Veja o objeto de fez.",
+      "learningObjective": "Lembrar o termo aliança.",
+      "evidence": [
+        "Josué 9:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 9:14 a Números 27:21?",
+      "verseRef": "Josué 9:14",
+      "passageA": {
+        "ref": "Josué 9:14"
+      },
+      "passageB": {
+        "ref": "Números 27:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Consultar o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Confiar só nos olhos"
+        },
+        {
+          "id": "c",
+          "text": "Jurar sem paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "O contraste é consultar versus omitir.",
+      "feedbackWrong": {
+        "b": "O elo é a consulta.",
+        "c": "O tema é conselho ao Senhor."
+      },
+      "hint": "Pense no que faltou em Gilgal.",
+      "learningObjective": "Ligar a omissão à consulta devida.",
+      "evidence": [
+        "Josué 9:14",
+        "Números 27:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 9:14–15, o juramento sem consulta sustenta que aparência pode prender o povo a um pacto precipitado.",
+      "verseRef": "Josué 9:14–15",
+      "correctOptionId": "true",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Omissão e aliança jurada fecham a cena.",
+      "feedbackWrong": {
+        "false": "O texto une falta de conselho e juramento."
+      },
+      "hint": "Una 9:14 e 9:15.",
+      "learningObjective": "Avaliar a leitura do engaño.",
+      "evidence": [
+        "Josué 9:14–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 9:14, toque o trecho que sustenta a falha decisiva.",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "não pediram"
+        },
+        {
+          "id": "b",
+          "text": "provisão"
+        },
+        {
+          "id": "c",
+          "text": "Então"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Não pediram marca a falha.",
+      "feedbackWrong": {
+        "b": "Provisão é o que examinaram.",
+        "c": "Então só situa o tempo."
+      },
+      "hint": "Veja a negação central.",
+      "learningObjective": "Tocar o que sustenta a falha.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 9:3–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel jura sem consultar; a aliança prende"
+        },
+        {
+          "id": "b",
+          "text": "Astúcia alheia não tem efeito"
+        },
+        {
+          "id": "c",
+          "text": "Consulta ao Senhor foi completa"
+        },
+        {
+          "id": "d",
+          "text": "O juramento podia ser ignorado na hora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Astúcia encontra omissão e gera juramento.",
+      "feedbackWrong": {
+        "b": "A astúcia engana.",
+        "c": "Não consultaram.",
+        "d": "O juramento foi prestado."
+      },
+      "hint": "Una astúcia e omissão.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 9:3–15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do engaño à aliança.",
+      "verseRef": "Josué 9:4–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Astúcia com aparência de viagem"
+        },
+        {
+          "id": "b",
+          "text": "Israel julga pela provisão"
+        },
+        {
+          "id": "c",
+          "text": "Juramento sem conselho do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eles agiram com astúcia",
+      "feedbackCorrect": "Astúcia, juízo visual e juramento.",
+      "feedbackWrong": {
+        "default": "Comece pela astúcia."
+      },
+      "hint": "O que inicia o engaño?",
+      "learningObjective": "Encadear engaño e pacto",
+      "evidence": [
+        "Josué 9:4",
+        "Josué 9:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 9:14, complete: não ___ conselho ao SENHOR.",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "pediram"
+        },
+        {
+          "id": "b",
+          "text": "deram"
+        },
+        {
+          "id": "c",
+          "text": "ouviram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Não pediram conselho.",
+      "feedbackWrong": {
+        "b": "O verbo é pediram, não deram.",
+        "c": "O verbo é pediram."
+      },
+      "hint": "Veja o verbo negado.",
+      "learningObjective": "Lembrar o verbo da omissão.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 9:15 a 2 Samuel 21:1–2?",
+      "verseRef": "Josué 9:15",
+      "passageA": {
+        "ref": "Josué 9:15"
+      },
+      "passageB": {
+        "ref": "2 Samuel 21:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juramento a Gibeão permanece"
+        },
+        {
+          "id": "b",
+          "text": "Aliança logo cancelada"
+        },
+        {
+          "id": "c",
+          "text": "Gibeão sem qualquer pacto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os príncipes da congregação prestaram-lhes juramento",
+      "feedbackCorrect": "O juramento ecoa gerações depois.",
+      "feedbackWrong": {
+        "b": "O pacto permanece.",
+        "c": "Houve juramento."
+      },
+      "hint": "Pense na duração do juramento.",
+      "learningObjective": "Ligar o juramento ao relato de Samuel.",
+      "evidence": [
+        "Josué 9:15",
+        "2 Samuel 21:1–2"
+      ]
+    }
+  ]
+}

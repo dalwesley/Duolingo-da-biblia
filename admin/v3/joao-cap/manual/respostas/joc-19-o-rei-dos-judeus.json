@@ -1,0 +1,482 @@
+{
+  "study": {
+    "passageRef": "João 19:17–22",
+    "passages": [
+      { "ref": "João 19:17–22" },
+      { "ref": "João 19:16" }
+    ],
+    "context": "Pilatos entrega Jesus para ser crucificado. Jesus sai carregando a cruz até o lugar chamado Caveira, onde é posto no meio de outros dois. No alto da cruz, Pilatos manda colocar um escrito.",
+    "keyword": "título",
+    "keywordGloss": "O título é o escrito que Pilatos coloca no cimo da cruz.",
+    "focusQuestion": "Quando alguém pede para suavizar quem Jesus é, o que você faz?",
+    "reflectionPrompts": [
+      "A caminho da Caveira",
+      "O título em três línguas",
+      "O escrito que fica"
+    ],
+    "facts": [
+      {
+        "text": "Pilatos entregou Jesus para que fosse crucificado.",
+        "evidenceRef": "João 19:16",
+        "evidenceSpan": "Pilatos o entregou para que fosse crucificado"
+      },
+      {
+        "text": "Jesus saiu carregando a cruz para o lugar chamado Caveira.",
+        "evidenceRef": "João 19:17",
+        "evidenceSpan": "carregando a cruz, saiu para o lugar chamado Caveira"
+      },
+      {
+        "text": "Jesus foi crucificado no meio de outros dois.",
+        "evidenceRef": "João 19:18",
+        "evidenceSpan": "com ele outros dois, um de cada lado, e Jesus no meio"
+      },
+      {
+        "text": "No título estava escrito que Jesus é o rei dos judeus.",
+        "evidenceRef": "João 19:19",
+        "evidenceSpan": "JESUS NAZARENO, O REI DOS JUDEUS"
+      },
+      {
+        "text": "O título estava escrito em hebraico, latim e grego.",
+        "evidenceRef": "João 19:20",
+        "evidenceSpan": "estava escrito em hebraico, latim e grego"
+      },
+      {
+        "text": "Pilatos disse que o que escreveu permanece escrito.",
+        "evidenceRef": "João 19:22",
+        "evidenceSpan": "O que escrevi, permanece escrito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "título",
+        "gloss": "O escrito que Pilatos coloca no cimo da cruz."
+      },
+      {
+        "term": "Gólgota",
+        "gloss": "Nome hebraico do lugar chamado Caveira, para onde Jesus levou a cruz."
+      },
+      {
+        "term": "permanece",
+        "gloss": "O que Pilatos diz do título: o que ele escreveu fica como está."
+      }
+    ],
+    "structure": [
+      { "label": "Jesus carrega a cruz até a Caveira", "evidenceRef": "João 19:17" },
+      { "label": "Um título de rei é publicado", "evidenceRef": "João 19:19" },
+      { "label": "Os sacerdotes recusam o título de rei", "evidenceRef": "João 19:21" },
+      { "label": "Pilatos deixa o escrito como está", "evidenceRef": "João 19:22" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Muitos judeus leram o título porque o lugar da cruz ficava perto da cidade.",
+        "marker": "pois",
+        "evidenceRef": "João 19:20"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os sacerdotes não querem a frase rei dos judeus, mas a de que ele afirmou ser rei.",
+        "marker": "mas",
+        "evidenceRef": "João 19:21"
+      },
+      {
+        "kind": "resultado",
+        "text": "Diante do pedido de mudança, o que Pilatos escreveu permanece escrito.",
+        "marker": "permanece",
+        "evidenceRef": "João 19:22"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 18:37", "bridge": "Jesus já se disse rei" },
+      { "ref": "João 18:36", "bridge": "Reino que não é daqui" },
+      { "ref": "João 19:15", "bridge": "Sacerdotes negam esse rei" }
+    ],
+    "misreadings": [
+      {
+        "text": "O título é só zombaria e nega que Jesus seja rei.",
+        "why": "A placa diz que ele é o rei dos judeus, e Pilatos não aceita apagar essa frase."
+      },
+      {
+        "text": "Os sacerdotes concordam com o título e só querem reforçá-lo.",
+        "why": "Eles pedem para não escrever rei dos judeus, e sim que ele afirmou ser rei."
+      },
+      {
+        "text": "Pilatos muda o título quando os sacerdotes reclamam.",
+        "why": "A resposta dele é que o que escreveu permanece escrito."
+      }
+    ],
+    "centralInsight": "Sem querer, a placa da cruz anuncia a verdade: Jesus é o Rei.",
+    "anchorQuestion": "O que Pilatos respondeu quando lhe pediram para mudar o título da cruz?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 19:19, os principais sacerdotes escreveram o título e o colocaram na cruz.",
+      "verseRef": "João 19:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pilatos também escreveu um título",
+      "feedbackCorrect": "Quem escreveu o título e o colocou na cruz foi Pilatos.",
+      "feedbackWrong": {
+        "true": "Os sacerdotes reclamam do título depois. Quem escreveu foi Pilatos."
+      },
+      "hint": "Veja quem pratica o verbo escreveu nesse versículo.",
+      "learningObjective": "Observar que foi Pilatos quem escreveu o título da cruz.",
+      "evidence": ["João 19:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 19:16, toque quem entregou Jesus para ser crucificado.",
+      "verseRef": "João 19:16",
+      "options": [
+        { "id": "a", "text": "Pilatos" },
+        { "id": "b", "text": "Jesus" },
+        { "id": "c", "text": "fosse crucificado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pilatos o entregou",
+      "feedbackCorrect": "Pilatos é quem entrega Jesus para que fosse crucificado.",
+      "feedbackWrong": {
+        "b": "Jesus é quem foi entregue, não quem fez a entrega.",
+        "c": "Crucificar diz o destino. Quem entrega está no início."
+      },
+      "hint": "Procure o nome de quem faz a entrega.",
+      "learningObjective": "Identificar Pilatos como quem entregou Jesus para a cruz.",
+      "evidence": ["João 19:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 19:18, o que o texto diz sobre a posição de Jesus?",
+      "verseRef": "João 19:18",
+      "options": [
+        { "id": "a", "text": "Jesus fica no meio de outros dois" },
+        { "id": "b", "text": "Jesus é crucificado sem ninguém ao lado" },
+        { "id": "c", "text": "Só os dois companheiros são crucificados" },
+        { "id": "d", "text": "Jesus escreve o título e parte" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e Jesus no meio",
+      "feedbackCorrect": "O texto põe Jesus no meio, com um crucificado de cada lado.",
+      "feedbackWrong": {
+        "b": "Havia outros dois, um de cada lado. Jesus não estava só.",
+        "c": "Os dois foram crucificados com ele, e Jesus ficou no meio.",
+        "d": "Quem escreve o título é Pilatos, em outro versículo."
+      },
+      "hint": "Leia o fim do versículo, depois dos outros dois.",
+      "learningObjective": "Observar que Jesus foi crucificado no meio de outros dois.",
+      "evidence": ["João 19:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 19:19 na ordem do texto.",
+      "verseRef": "João 19:19",
+      "options": [
+        { "id": "a", "text": "Pilatos também escreveu um título" },
+        { "id": "b", "text": "o colocou no cimo da cruz" },
+        { "id": "c", "text": "JESUS NAZARENO, O REI DOS JUDEUS" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Pilatos também escreveu um título",
+      "feedbackCorrect": "Pilatos escreve o título, coloca na cruz, e o texto nomeia Jesus rei.",
+      "feedbackWrong": {
+        "default": "Comece por quem escreve. O nome de rei vem no fim do versículo."
+      },
+      "hint": "Siga a ordem: quem escreve, onde põe, o que ficou escrito.",
+      "learningObjective": "Reconhecer a ordem das frases de João 19:19.",
+      "evidence": ["João 19:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 19:17, qual é o nome hebraico do lugar chamado Caveira?",
+      "verseRef": "João 19:17",
+      "options": [
+        { "id": "a", "text": "Calvário" },
+        { "id": "b", "text": "Gólgota" },
+        { "id": "c", "text": "Sião" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "é chamado de Gólgota",
+      "feedbackCorrect": "Gólgota é o nome hebraico do lugar chamado Caveira.",
+      "feedbackWrong": {
+        "a": "Calvário não é a palavra do texto. O nome hebraico é Gólgota.",
+        "c": "Sião é outro nome. Aqui o hebraico do lugar é Gólgota."
+      },
+      "hint": "O nome hebraico está no fim do versículo.",
+      "learningObjective": "Lembrar o nome hebraico do lugar chamado Caveira.",
+      "evidence": ["João 19:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 19:19 comunica que se liga a este contexto?",
+      "verseRef": "João 19:19",
+      "passageA": { "ref": "João 19:19" },
+      "passageB": { "ref": "Contexto", "text": "No alto da cruz há um escrito com o nome de Jesus." },
+      "options": [
+        { "id": "a", "text": "Jesus escondido na placa" },
+        { "id": "b", "text": "Jesus chamado de rei" },
+        { "id": "c", "text": "Pedido para mudar a frase" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "JESUS NAZARENO, O REI DOS JUDEUS",
+      "feedbackCorrect": "O escrito no alto da cruz chama Jesus de rei dos judeus.",
+      "feedbackWrong": {
+        "a": "O título não esconde Jesus. Ele traz o nome e o título de rei.",
+        "c": "O pedido para mudar a frase vem depois. Aqui o título é escrito."
+      },
+      "hint": "Leia o que a placa diz depois do nome de Jesus.",
+      "learningObjective": "Ligar o título da cruz ao fato de que ele chama Jesus de rei.",
+      "evidence": ["João 19:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 19:20, muitos judeus leram o título porque a cruz ficava longe da cidade.",
+      "verseRef": "João 19:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "era próximo da cidade",
+      "feedbackCorrect": "O lugar era próximo da cidade, e por isso muitos judeus leram.",
+      "feedbackWrong": {
+        "true": "O texto não diz longe. Diz que o lugar era próximo da cidade."
+      },
+      "hint": "Repare se o lugar da cruz era perto ou longe da cidade.",
+      "learningObjective": "Compreender que o título foi lido porque o lugar era perto da cidade.",
+      "evidence": ["João 19:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 19:20, toque a palavra que explica por que muitos leram o título.",
+      "verseRef": "João 19:20",
+      "options": [
+        { "id": "a", "text": "muitos" },
+        { "id": "b", "text": "pois" },
+        { "id": "c", "text": "cidade" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pois o lugar",
+      "feedbackCorrect": "Pois introduz o motivo: o lugar era próximo da cidade.",
+      "feedbackWrong": {
+        "a": "Muitos diz quem leu, não por que leram.",
+        "c": "Cidade é o lugar. A palavra que dá o motivo vem antes."
+      },
+      "hint": "Procure a palavra curta que introduz o motivo.",
+      "learningObjective": "Reconhecer a palavra que marca o motivo da leitura.",
+      "evidence": ["João 19:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que os sacerdotes pedem a Pilatos em João 19:21?",
+      "verseRef": "João 19:21",
+      "options": [
+        { "id": "a", "text": "Que a frase diga só que ele afirmou ser rei" },
+        { "id": "b", "text": "Que o título seja elogiado pelos sacerdotes" },
+        { "id": "c", "text": "Que a placa seja retirada da cruz" },
+        { "id": "d", "text": "Que Jesus seja solto por causa do título" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas sim que ele afirmou",
+      "feedbackCorrect": "Eles não querem rei dos judeus, e sim que ele afirmou ser rei.",
+      "feedbackWrong": {
+        "b": "Eles não elogiam o título. Pedem para não escrever rei dos judeus.",
+        "c": "Eles não pedem para tirar a placa. Pedem outra frase.",
+        "d": "O pedido é sobre o que está escrito, não sobre soltar Jesus."
+      },
+      "hint": "Compare o que eles não querem com o que pedem no lugar.",
+      "learningObjective": "Relacionar o pedido dos sacerdotes com o título já escrito.",
+      "evidence": ["João 19:21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o episódio do título em João 19:21–22?",
+      "verseRef": "João 19:21–22",
+      "options": [
+        { "id": "a", "text": "Os sacerdotes recusam o título de rei" },
+        { "id": "b", "text": "Pedem para constar só a declaração" },
+        { "id": "c", "text": "Pilatos deixa o escrito como está" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O que escrevi, permanece escrito",
+      "feedbackCorrect": "Primeiro recusam o título, pedem outra frase, e Pilatos mantém o escrito.",
+      "feedbackWrong": {
+        "default": "A recusa abre o episódio. A resposta de Pilatos fica por último."
+      },
+      "hint": "A resposta de Pilatos é o passo final.",
+      "learningObjective": "Compreender a sequência do pedido dos sacerdotes até a recusa.",
+      "evidence": ["João 19:21–22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 19:19, o que Pilatos fez com o título?",
+      "verseRef": "João 19:19",
+      "options": [
+        { "id": "a", "text": "leu" },
+        { "id": "b", "text": "apagou" },
+        { "id": "c", "text": "escreveu" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "escreveu um título",
+      "feedbackCorrect": "Pilatos escreveu o título e depois o colocou no cimo da cruz.",
+      "feedbackWrong": {
+        "a": "Ler não é o verbo. O texto diz que Pilatos escreveu o título.",
+        "b": "Nada é apagado aqui. Pilatos escreveu o título e o deixou na cruz."
+      },
+      "hint": "É o verbo que vem logo depois de também.",
+      "learningObjective": "Lembrar a ação de Pilatos ao produzir o título.",
+      "evidence": ["João 19:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 19:19 a João 18:37?",
+      "verseRef": "João 19:19",
+      "passageA": { "ref": "João 19:19" },
+      "passageB": { "ref": "João 18:37" },
+      "options": [
+        { "id": "a", "text": "Pilatos nega esse reinado" },
+        { "id": "b", "text": "César escreve o reinado" },
+        { "id": "c", "text": "O título confirma o rei" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "O REI DOS JUDEUS",
+      "feedbackCorrect": "Jesus já disse a Pilatos que é rei, e o título afirma o mesmo.",
+      "feedbackWrong": {
+        "a": "Pilatos não nega. Ele escreve rei dos judeus e depois mantém a frase.",
+        "b": "Quem escreve o título é Pilatos, não César."
+      },
+      "hint": "Compare a frase da placa com o que Jesus responde a Pilatos.",
+      "learningObjective": "Relacionar o título da cruz com a palavra de Jesus a Pilatos.",
+      "evidence": ["João 19:19", "João 18:37"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 19:21–22, Pilatos recusa mudar o título que chama Jesus de rei dos judeus.",
+      "verseRef": "João 19:21–22",
+      "correctOptionId": "true",
+      "evidenceSpan": "O que escrevi, permanece escrito",
+      "feedbackCorrect": "Os sacerdotes pedem outra frase, e Pilatos diz que o escrito permanece.",
+      "feedbackWrong": {
+        "false": "Ele não cede. A resposta é que o que escreveu permanece escrito."
+      },
+      "hint": "Leia a frase curta com que Pilatos encerra o diálogo.",
+      "learningObjective": "Interpretar a resposta de Pilatos como recusa de mudar o título.",
+      "evidence": ["João 19:21–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 19:22, toque a palavra que mostra que o escrito não será mudado.",
+      "verseRef": "João 19:22",
+      "options": [
+        { "id": "a", "text": "escrevi" },
+        { "id": "b", "text": "escrito" },
+        { "id": "c", "text": "permanece" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "permanece escrito",
+      "feedbackCorrect": "Permanece mostra que o escrito fica, sem ser mudado.",
+      "feedbackWrong": {
+        "a": "Escrevi diz o que ele fez. A palavra de ficar é a seguinte.",
+        "b": "Escrito nomeia o que foi feito. Quem mostra que fica é permanece."
+      },
+      "hint": "Olhe a palavra logo depois da vírgula.",
+      "learningObjective": "Sustentar com o texto que o escrito permanece.",
+      "evidence": ["João 19:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 19:21–22 sustenta sobre o título?",
+      "verseRef": "João 19:21–22",
+      "options": [
+        { "id": "a", "text": "O título fica e apresenta Jesus como rei" },
+        { "id": "b", "text": "O título é só zombaria que nega o rei" },
+        { "id": "c", "text": "Os sacerdotes concordam com o título escrito" },
+        { "id": "d", "text": "Pilatos altera o título depois do pedido" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O que escrevi, permanece escrito",
+      "feedbackCorrect": "Eles pedem mudança, e Pilatos responde que o escrito permanece.",
+      "feedbackWrong": {
+        "b": "A frase não nega o reinado. Ela chama Jesus de rei, e fica.",
+        "c": "Eles não concordam. Pedem para não escrever rei dos judeus.",
+        "d": "Pilatos não altera. Diz que o que escreveu permanece escrito."
+      },
+      "hint": "Compare o pedido dos sacerdotes com a resposta de Pilatos.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o título.",
+      "evidence": ["João 19:21–22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o rei anunciado na cruz?",
+      "verseRef": "João 19:19",
+      "options": [
+        { "id": "a", "text": "Jesus diz que seu reino não é daqui" },
+        { "id": "b", "text": "A cruz recebe o título de rei" },
+        { "id": "c", "text": "O escrito permanece sem mudança" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O REI DOS JUDEUS",
+      "feedbackCorrect": "Jesus fala do reino, a cruz traz o título, e o escrito permanece.",
+      "feedbackWrong": {
+        "default": "Siga a história: a palavra de Jesus, o título na cruz, o escrito que fica."
+      },
+      "hint": "Comece pelo que Jesus disse a Pilatos sobre o reino.",
+      "learningObjective": "Encadear a palavra de Jesus, o título na cruz e o escrito que fica.",
+      "evidence": ["João 18:36", "João 19:19", "João 19:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 19:19, que nome o texto dá ao escrito colocado na cruz?",
+      "verseRef": "João 19:19",
+      "options": [
+        { "id": "a", "text": "título" },
+        { "id": "b", "text": "nome" },
+        { "id": "c", "text": "aviso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "escreveu um título",
+      "feedbackCorrect": "Título é o nome do escrito que Pilatos põe no cimo da cruz.",
+      "feedbackWrong": {
+        "b": "O texto não chama o escrito de nome. A palavra usada é título.",
+        "c": "Não é um aviso solto. Pilatos escreveu um título."
+      },
+      "hint": "É o substantivo que vem depois de escreveu um.",
+      "learningObjective": "Lembrar o termo que nomeia o escrito da cruz.",
+      "evidence": ["João 19:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 19:19 a João 18:36?",
+      "verseRef": "João 19:19",
+      "passageA": { "ref": "João 19:19" },
+      "passageB": { "ref": "João 18:36" },
+      "options": [
+        { "id": "a", "text": "Reino que não é daqui" },
+        { "id": "b", "text": "Rei imposto pelas armas" },
+        { "id": "c", "text": "Rei que Pilatos apagou" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O REI DOS JUDEUS",
+      "feedbackCorrect": "Jesus disse que o reino não é daqui, e a cruz ainda o chama rei.",
+      "feedbackWrong": {
+        "b": "Se o reino fosse daqui, haveria luta. Jesus disse que não é deste mundo.",
+        "c": "Pilatos não apagou o título. O que ele escreveu permanece."
+      },
+      "hint": "Lembre o que Jesus disse sobre a origem do reino.",
+      "learningObjective": "Ligar o rei da cruz ao reino que Jesus disse não ser daqui.",
+      "evidence": ["João 19:19", "João 18:36"]
+    }
+  ]
+}

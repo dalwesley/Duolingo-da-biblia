@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 82:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 82:1–6"
+      },
+      {
+        "ref": "Salmos 82:7–8"
+      }
+    ],
+    "context": "Deus está na assembleia; até quando julgareis injustamente? Levantai-vos, ó Deus.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Deuses e juízo",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Deus se apresenta na assembleia divina.",
+        "evidenceRef": "Salmos 82:1",
+        "evidenceSpan": "Deus se apresenta na assembleia divina"
+      },
+      {
+        "text": "Até quando julgareis injustamente e tomareis partido pela.",
+        "evidenceRef": "Salmos 82:2",
+        "evidenceSpan": "Até quando julgareis injustamente e tomareis partido pela"
+      },
+      {
+        "text": "Fazei justiça ao fraco e ao órfão.",
+        "evidenceRef": "Salmos 82:3",
+        "evidenceSpan": "Fazei justiça ao fraco e ao órfão"
+      },
+      {
+        "text": "Livrem o fraco e o necessitado.",
+        "evidenceRef": "Salmos 82:4",
+        "evidenceSpan": "Livrem o fraco e o necessitado"
+      },
+      {
+        "text": "Eles não sabem nem compreendem.",
+        "evidenceRef": "Salmos 82:5",
+        "evidenceSpan": "Eles não sabem nem compreendem"
+      },
+      {
+        "text": "Eu disse: vocês são deuses, todos são filhos do Altíssimo.",
+        "evidenceRef": "Salmos 82:6",
+        "evidenceSpan": "Eu disse"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "apresenta",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "assembleia",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus se apresenta na assembleia divina",
+        "evidenceRef": "Salmos 82:1"
+      },
+      {
+        "label": "Até quando julgareis injustamente e tomareis",
+        "evidenceRef": "Salmos 82:2"
+      },
+      {
+        "label": "Fazei justiça ao fraco e ao",
+        "evidenceRef": "Salmos 82:3"
+      },
+      {
+        "label": "Livrem o fraco e o necessitado",
+        "evidenceRef": "Salmos 82:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 82:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Salmos 82:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"nem\".",
+        "marker": "nem",
+        "evidenceRef": "Salmos 82:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 5:3",
+        "bridge": "Bem-aventurados os humildes"
+      },
+      {
+        "ref": "Romanos 8:31",
+        "bridge": "Se Deus é por nós"
+      },
+      {
+        "ref": "Tiago 1:2",
+        "bridge": "Alegria na prova"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Juízes humanos caem como qualquer príncipe; o juízo final é de Deus."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Juízes humanos caem como qualquer príncipe; o juízo final é de Deus.",
+    "anchorQuestion": "O que Salmos 82:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 82:1, deus se apresenta na assembleia divina.",
+      "verseRef": "Salmos 82:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Deus se apresenta na assembleia divina",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 82:1 afirma.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 82:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 82:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "apresenta"
+        },
+        {
+          "id": "c",
+          "text": "assembleia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca «Deus».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 82:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 82:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazei justiça ao fraco e ao órfão"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fazei justiça ao fraco e ao órfão",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 82:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 82:1 na ordem do texto.",
+      "verseRef": "Salmos 82:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "se"
+        },
+        {
+          "id": "c",
+          "text": "apresenta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 82:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 82:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Livrem"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "apresenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livrem",
+      "feedbackCorrect": "A palavra do versículo é «Livrem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 82:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 82:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 82:1",
+      "passageA": {
+        "ref": "Salmos 82:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus está na assembleia; até quando julgareis injustamente? Levantai-vos, ó Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 82:1, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 82:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 82:1 afirma.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 82:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 82:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "apresenta"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "assembleia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apresenta",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 82:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 82:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livrem o fraco e o necessitado",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 82:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 82:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus se apresenta na assembleia divina"
+        },
+        {
+          "id": "b",
+          "text": "Até quando julgareis injustamente"
+        },
+        {
+          "id": "c",
+          "text": "Fazei justiça ao fraco e ao órfão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 82:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 82:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazei"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "apresenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fazei",
+      "feedbackCorrect": "A palavra do versículo é «Fazei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 82:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 82:1 a Mateus 5:3.",
+      "verseRef": "Salmos 82:1",
+      "passageA": {
+        "ref": "Salmos 82:1"
+      },
+      "passageB": {
+        "ref": "Mateus 5:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bem-aventurados os humildes"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 82:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Levanta-te",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 82:8 afirma.",
+      "evidence": [
+        "Salmos 82:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 82:8, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 82:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levanta-te"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "julga"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta-te",
+      "feedbackCorrect": "O versículo destaca «Levanta-te».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 82:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 82:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 82:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles não sabem nem compreendem",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 82:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 82:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 82:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 82:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eles"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "apresenta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles",
+      "feedbackCorrect": "A palavra do versículo é «Eles».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 82:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 82:1 a Romanos 8:31.",
+      "verseRef": "Salmos 82:1",
+      "passageA": {
+        "ref": "Salmos 82:1"
+      },
+      "passageB": {
+        "ref": "Romanos 8:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Se Deus é por nós"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 82:1"
+      ]
+    }
+  ]
+}

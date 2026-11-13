@@ -1,0 +1,717 @@
+{
+  "study": {
+    "passageRef": "Isaías 33:1–6",
+    "passages": [
+      {
+        "ref": "Isaías 33:1–6"
+      }
+    ],
+    "context": "Contra o destruidor traiçoeiro, o povo clama ao Senhor como braço e salvação; Ele é sublime e o temor do Senhor é o tesouro de Sião.",
+    "keyword": "tesouro",
+    "keywordGloss": "O temor do Senhor, força e estabilidade dos tempos de Sião.",
+    "focusQuestion": "Seu tesouro é o temor do Senhor ou a segurança do destruidor?",
+    "reflectionPrompts": [
+      "Misericórdia na angústia",
+      "Senhor sublime",
+      "Temor como tesouro"
+    ],
+    "facts": [
+      {
+        "text": "O destruidor será destruído quando acabar de destruir.",
+        "evidenceRef": "Isaías 33:1",
+        "evidenceSpan": "Quando acabares de destruir, serás destruído"
+      },
+      {
+        "text": "O povo pede que o Senhor seja braço e salvação.",
+        "evidenceRef": "Isaías 33:2",
+        "evidenceSpan": "sê tu o nosso braço cada manhã, e a nossa salvação no tempo da angústia"
+      },
+      {
+        "text": "À voz do tumulto, os povos fugirão.",
+        "evidenceRef": "Isaías 33:3",
+        "evidenceSpan": "À voz do tumulto, os povos fugirão"
+      },
+      {
+        "text": "O Senhor é sublime e habita nas alturas.",
+        "evidenceRef": "Isaías 33:5",
+        "evidenceSpan": "O Senhor é sublime, pois habita nas alturas"
+      },
+      {
+        "text": "Ele encheu Sião de justiça e de equidade.",
+        "evidenceRef": "Isaías 33:5",
+        "evidenceSpan": "encheu Sião de justiça e de equidade"
+      },
+      {
+        "text": "O temor do Senhor será o tesouro de Sião.",
+        "evidenceRef": "Isaías 33:6",
+        "evidenceSpan": "o temor do Senhor será o teu tesouro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "salvação",
+        "gloss": "O que o povo pede ao Senhor no tempo da angústia."
+      },
+      {
+        "term": "sublime",
+        "gloss": "O Senhor que habita nas alturas e enche Sião de justiça."
+      },
+      {
+        "term": "tesouro",
+        "gloss": "O temor do Senhor na estabilidade de Sião."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ai do destruidor traiçoeiro",
+        "evidenceRef": "Isaías 33:1"
+      },
+      {
+        "label": "Clamor: braço e salvação",
+        "evidenceRef": "Isaías 33:2"
+      },
+      {
+        "label": "Povos fogem; Senhor sublime",
+        "evidenceRef": "Isaías 33:3–5"
+      },
+      {
+        "label": "Estabilidade e temor como tesouro",
+        "evidenceRef": "Isaías 33:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Quando o destruidor acabar, será destruído.",
+        "marker": "Quando",
+        "evidenceRef": "Isaías 33:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O Senhor é sublime porque habita nas alturas.",
+        "marker": "pois",
+        "evidenceRef": "Isaías 33:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Sabedoria e conhecimento sustentam; o temor é o tesouro.",
+        "marker": null,
+        "evidenceRef": "Isaías 33:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Socorro bem presente"
+      },
+      {
+        "ref": "Provérbios 9:10",
+        "bridge": "Temor início da sabedoria"
+      },
+      {
+        "ref": "Isaías 12:2",
+        "bridge": "Deus é a salvação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O destruidor fica impune para sempre.",
+        "why": "O v.1 promete que será destruído."
+      },
+      {
+        "text": "A estabilidade vem de alianças, não de sabedoria e temor.",
+        "why": "O v.6 liga estabilidade a sabedoria, conhecimento e temor."
+      },
+      {
+        "text": "O Senhor não enche Sião de justiça.",
+        "why": "O v.5 diz que encheu Sião de justiça e equidade."
+      }
+    ],
+    "centralInsight": "Sabedoria e conhecimento serão a estabilidade dos teus tempos; o temor do Senhor é o seu tesouro.",
+    "anchorQuestion": "Segundo Isaías 33:6, o que será o tesouro de Sião?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 33:1, o destruidor permanecerá seguro depois de acabar de destruir.",
+      "verseRef": "Isaías 33:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quando acabares de destruir, serás destruído",
+      "feedbackCorrect": "O texto promete: quando acabar de destruir, será destruído.",
+      "feedbackWrong": {
+        "true": "Leia o Quando: serás destruído."
+      },
+      "hint": "Veja o destino do destruidor.",
+      "learningObjective": "Observar o juízo sobre o destruidor.",
+      "evidence": [
+        "Isaías 33:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 33:2, toque o que o Senhor deve ser no tempo da angústia.",
+      "verseRef": "Isaías 33:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "salvação"
+        },
+        {
+          "id": "b",
+          "text": "braço"
+        },
+        {
+          "id": "c",
+          "text": "misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a nossa salvação no tempo da angústia",
+      "feedbackCorrect": "Pedem o Senhor como salvação na angústia.",
+      "feedbackWrong": {
+        "b": "Braço é o pedido da manhã; na angústia é salvação.",
+        "c": "Misericórdia abre o clamor; na angústia pedem salvação."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Identificar o pedido de salvação.",
+      "evidence": [
+        "Isaías 33:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 33:5, onde o Senhor habita?",
+      "verseRef": "Isaías 33:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nas alturas"
+        },
+        {
+          "id": "b",
+          "text": "Só em Bozra"
+        },
+        {
+          "id": "c",
+          "text": "No acampamento assírio"
+        },
+        {
+          "id": "d",
+          "text": "Longe de Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois habita nas alturas",
+      "feedbackCorrect": "Ele é sublime e habita nas alturas.",
+      "feedbackWrong": {
+        "b": "Bozra não está neste versículo.",
+        "c": "O texto fala das alturas.",
+        "d": "Ele enche Sião."
+      },
+      "hint": "Leia depois de sublime, pois.",
+      "learningObjective": "Notar a habitação do Senhor.",
+      "evidence": [
+        "Isaías 33:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 33:2 na ordem do texto.",
+      "verseRef": "Isaías 33:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor, tem misericórdia de nós"
+        },
+        {
+          "id": "b",
+          "text": "por ti temos esperado"
+        },
+        {
+          "id": "c",
+          "text": "sê tu o nosso braço cada manhã"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor, tem misericórdia de nós; por ti temos esperado; sê tu o nosso braço cada manhã",
+      "feedbackCorrect": "Misericórdia, espera e braço seguem nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido de misericórdia."
+      },
+      "hint": "O versículo abre com Senhor, tem.",
+      "learningObjective": "Seguir a ordem do clamor.",
+      "evidence": [
+        "Isaías 33:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 33:6, o temor do Senhor será o teu ___.",
+      "verseRef": "Isaías 33:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "tesouro"
+        },
+        {
+          "id": "b",
+          "text": "tumulto"
+        },
+        {
+          "id": "c",
+          "text": "despojo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor será o teu tesouro",
+      "feedbackCorrect": "Tesouro é o termo final do versículo.",
+      "feedbackWrong": {
+        "b": "Tumulto faz os povos fugirem.",
+        "c": "Despojo é do v.4."
+      },
+      "hint": "Veja a última palavra.",
+      "learningObjective": "Lembrar o tesouro de Sião.",
+      "evidence": [
+        "Isaías 33:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 33:6 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 33:6",
+      "passageA": {
+        "ref": "Isaías 33:6",
+        "text": "o temor do Senhor será o teu tesouro"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sião encontra estabilidade em sabedoria, conhecimento e temor do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor como tesouro"
+        },
+        {
+          "id": "b",
+          "text": "Segurança do destruidor"
+        },
+        {
+          "id": "c",
+          "text": "Fuga sem salvação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor será o teu tesouro",
+      "feedbackCorrect": "O temor é o tesouro na estabilidade anunciada.",
+      "feedbackWrong": {
+        "b": "O destruidor será destruído.",
+        "c": "O povo pede salvação."
+      },
+      "hint": "Veja o fim do versículo 6.",
+      "learningObjective": "Ligar o tesouro ao contexto.",
+      "evidence": [
+        "Isaías 33:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 33:5, o Senhor é sublime porque habita nas profundezas da terra.",
+      "verseRef": "Isaías 33:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "O Senhor é sublime, pois habita nas alturas",
+      "feedbackCorrect": "O pois liga a sublimidade às alturas.",
+      "feedbackWrong": {
+        "true": "Leia pois habita nas alturas."
+      },
+      "hint": "Veja a palavra pois.",
+      "learningObjective": "Compreender a causa da sublimidade.",
+      "evidence": [
+        "Isaías 33:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 33:5, toque a palavra que liga sublimidade e habitação.",
+      "verseRef": "Isaías 33:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Sião"
+        },
+        {
+          "id": "c",
+          "text": "equidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor é sublime, pois habita nas alturas",
+      "feedbackCorrect": "pois marca a causa da sublimidade.",
+      "feedbackWrong": {
+        "b": "Sião é o lugar enchido.",
+        "c": "Equidade é o conteúdo."
+      },
+      "hint": "Está entre sublime e habita.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Isaías 33:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 33:1–2 relaciona ameaça e clamor?",
+      "verseRef": "Isaías 33:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diante do destruidor, o povo clama ao Senhor por salvação"
+        },
+        {
+          "id": "b",
+          "text": "O povo confia no destruidor como braço"
+        },
+        {
+          "id": "c",
+          "text": "Não há pedido de misericórdia"
+        },
+        {
+          "id": "d",
+          "text": "A angústia dispensa a espera no Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sê tu o nosso braço cada manhã, e a nossa salvação no tempo da angústia",
+      "feedbackCorrect": "O ai ao destruidor abre para o clamor de salvação.",
+      "feedbackWrong": {
+        "b": "O braço pedido é o Senhor.",
+        "c": "O v.2 pede misericórdia.",
+        "d": "Eles esperam por ele."
+      },
+      "hint": "Leia o ai e o clamor.",
+      "learningObjective": "Relacionar juízo e oração.",
+      "evidence": [
+        "Isaías 33:1–2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 33:1–6?",
+      "verseRef": "Isaías 33:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ai do destruidor traiçoeiro"
+        },
+        {
+          "id": "b",
+          "text": "Clamor: braço e salvação"
+        },
+        {
+          "id": "c",
+          "text": "Estabilidade e temor como tesouro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quando acabares de destruir, serás destruído",
+      "feedbackCorrect": "Do ai ao clamor e ao tesouro do temor.",
+      "feedbackWrong": {
+        "default": "Comece pelo ai; o tesouro fecha."
+      },
+      "hint": "O tesouro vem no fim.",
+      "learningObjective": "Ver a progressão do capítulo.",
+      "evidence": [
+        "Isaías 33:1",
+        "Isaías 33:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 33:5, o Senhor é ___, pois habita nas alturas.",
+      "verseRef": "Isaías 33:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "sublime"
+        },
+        {
+          "id": "b",
+          "text": "destruído"
+        },
+        {
+          "id": "c",
+          "text": "traiçoeiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor é sublime, pois habita nas alturas",
+      "feedbackCorrect": "Sublime é o predicado ligado às alturas.",
+      "feedbackWrong": {
+        "b": "Destruído é o destino do destruidor.",
+        "c": "Traição descreve o destruidor."
+      },
+      "hint": "Veja o adjetivo depois de é.",
+      "learningObjective": "Lembrar a palavra da altura.",
+      "evidence": [
+        "Isaías 33:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 33:2 a Salmos 46:1?",
+      "verseRef": "Isaías 33:2",
+      "passageA": {
+        "ref": "Isaías 33:2",
+        "text": "a nossa salvação no tempo da angústia"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Socorro na angústia"
+        },
+        {
+          "id": "b",
+          "text": "Vitória do destruidor"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem clamor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a nossa salvação no tempo da angústia",
+      "feedbackCorrect": "Nos dois textos Deus é socorro na angústia.",
+      "feedbackWrong": {
+        "b": "O destruidor será destruído.",
+        "c": "Há clamor explícito."
+      },
+      "hint": "Compare angústia e socorro.",
+      "learningObjective": "Ligar o clamor ao Salmo 46.",
+      "evidence": [
+        "Isaías 33:2",
+        "Salmos 46:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 33:5–6 sustenta que a justiça em Sião e o temor como tesouro pertencem à mesma estabilidade.",
+      "verseRef": "Isaías 33:5–6",
+      "correctOptionId": "true",
+      "evidenceSpan": "o temor do Senhor será o teu tesouro",
+      "feedbackCorrect": "Justiça, sabedoria e temor formam a estabilidade anunciada.",
+      "feedbackWrong": {
+        "false": "O v.5 enche Sião; o v.6 dá o tesouro do temor."
+      },
+      "hint": "Leia justiça e tesouro juntos.",
+      "learningObjective": "Interpretar justiça e temor juntos.",
+      "evidence": [
+        "Isaías 33:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 33:6, toque o trecho que nomeia o tesouro de Sião.",
+      "verseRef": "Isaías 33:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "temor do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "estabilidade"
+        },
+        {
+          "id": "c",
+          "text": "conhecimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor será o teu tesouro",
+      "feedbackCorrect": "O temor do Senhor é o tesouro.",
+      "feedbackWrong": {
+        "b": "Estabilidade é dos tempos.",
+        "c": "Conhecimento é a força."
+      },
+      "hint": "Veja o que será o tesouro.",
+      "learningObjective": "Sustentar a leitura do tesouro.",
+      "evidence": [
+        "Isaías 33:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 33:1–6 sustenta?",
+      "verseRef": "Isaías 33:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do ai ao tesouro: o Senhor salva e estabiliza Sião no temor"
+        },
+        {
+          "id": "b",
+          "text": "O destruidor é o verdadeiro tesouro de Sião"
+        },
+        {
+          "id": "c",
+          "text": "Estabilidade sem sabedoria nem temor"
+        },
+        {
+          "id": "d",
+          "text": "Sião fica vazia de justiça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor será o teu tesouro",
+      "feedbackCorrect": "O arco vai do juízo ao clamor e ao tesouro do temor.",
+      "feedbackWrong": {
+        "b": "O destruidor será destruído.",
+        "c": "Sabedoria e temor sustentam.",
+        "d": "Ele encheu Sião de justiça."
+      },
+      "hint": "Una o ai, o clamor e o v.6.",
+      "learningObjective": "Escolher a leitura do capítulo.",
+      "evidence": [
+        "Isaías 33:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga salvação e temor na Escritura?",
+      "verseRef": "Isaías 33:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é salvação na angústia"
+        },
+        {
+          "id": "b",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "c",
+          "text": "O temor do Senhor inicia a sabedoria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a nossa salvação no tempo da angústia",
+      "evidence": [
+        "Isaías 33:2",
+        "Salmos 46:1",
+        "Provérbios 9:10"
+      ],
+      "feedbackCorrect": "Do clamor ao refúgio e ao temor que inicia a sabedoria.",
+      "feedbackWrong": {
+        "default": "Comece pela salvação; depois o Salmo; enfim Provérbios."
+      },
+      "hint": "Siga salvação → refúgio → temor.",
+      "learningObjective": "Encadear salvação e temor."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 33:6, a força da tua salvação será a sabedoria e o ___.",
+      "verseRef": "Isaías 33:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "conhecimento"
+        },
+        {
+          "id": "b",
+          "text": "destruidor"
+        },
+        {
+          "id": "c",
+          "text": "tumulto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a força da tua salvação será a sabedoria e o conhecimento",
+      "feedbackCorrect": "Conhecimento completa o par com sabedoria.",
+      "feedbackWrong": {
+        "b": "O destruidor é julgado no v.1.",
+        "c": "Tumulto faz os povos fugirem."
+      },
+      "hint": "Veja o par com sabedoria.",
+      "learningObjective": "Lembrar o par da estabilidade.",
+      "evidence": [
+        "Isaías 33:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 33:6 a Provérbios 9:10?",
+      "verseRef": "Isaías 33:6",
+      "passageA": {
+        "ref": "Isaías 33:6",
+        "text": "o temor do Senhor será o teu tesouro"
+      },
+      "passageB": {
+        "ref": "Provérbios 9:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Temor e sabedoria"
+        },
+        {
+          "id": "b",
+          "text": "Tesouro do destruidor"
+        },
+        {
+          "id": "c",
+          "text": "Fuga das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o temor do Senhor será o teu tesouro",
+      "feedbackCorrect": "Nos dois textos o temor do Senhor se liga à sabedoria.",
+      "feedbackWrong": {
+        "b": "O tesouro é o temor.",
+        "c": "Fuga das nações é outro tema."
+      },
+      "hint": "Compare temor do Senhor.",
+      "learningObjective": "Ligar o tesouro a Provérbios.",
+      "evidence": [
+        "Isaías 33:6",
+        "Provérbios 9:10"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 14:8–17",
+    "passages": [
+      {
+        "ref": "1 Crônicas 14:8–17"
+      }
+    ],
+    "context": "Os filisteus sobem contra Davi ungido. Ele consulta a Deus duas vezes, obedece e sua fama se espalha.",
+    "keyword": "consultou",
+    "keywordGloss": "Davi pergunta a Deus antes de subir; o Senhor responde e entrega o inimigo.",
+    "focusQuestion": "Antes de agir sob pressão, você consulta o Senhor?",
+    "reflectionPrompts": [
+      "Consulta e resposta",
+      "Baal-Perazim",
+      "Temor sobre as nações"
+    ],
+    "facts": [
+      {
+        "text": "Os filisteus avançaram para prender Davi ao saber que fora ungido rei.",
+        "evidenceRef": "1 Crônicas 14:8",
+        "evidenceSpan": "todos os filisteus avançaram para prender Davi"
+      },
+      {
+        "text": "Davi consultou a Deus; o Senhor disse: Sobe, porque os entregarei nas tuas mãos.",
+        "evidenceRef": "1 Crônicas 14:10",
+        "evidenceSpan": "Davi consultou a Deus"
+      },
+      {
+        "text": "Em Baal-Perazim, Davi disse que Deus rompeu as fileiras inimigas.",
+        "evidenceRef": "1 Crônicas 14:11",
+        "evidenceSpan": "Deus rompeu as fileiras inimigas diante de mim"
+      },
+      {
+        "text": "Davi voltou a consultar; Deus mandou rodear e esperar o estrondo nas amoreiras.",
+        "evidenceRef": "1 Crônicas 14:14",
+        "evidenceSpan": "Davi voltou a consultar a Deus"
+      },
+      {
+        "text": "O renome de Davi se espalhou; o Senhor impôs seu temor sobre as nações.",
+        "evidenceRef": "1 Crônicas 14:17",
+        "evidenceSpan": "o Senhor impôs seu temor sobre todas aquelas nações"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "consultou",
+        "gloss": "O hábito de Davi: perguntar a Deus antes de lutar."
+      },
+      {
+        "term": "rompe",
+        "gloss": "A ação de Deus em Baal-Perazim contra as fileiras inimigas."
+      },
+      {
+        "term": "temor",
+        "gloss": "O que o Senhor impõe sobre as nações após as vitórias."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Filisteus sobem; Davi consulta e vence",
+        "evidenceRef": "1 Crônicas 14:8–11"
+      },
+      {
+        "label": "Ídolos queimados; filisteus voltam",
+        "evidenceRef": "1 Crônicas 14:12–13"
+      },
+      {
+        "label": "Nova consulta e nova tática de Deus",
+        "evidenceRef": "1 Crônicas 14:14–16"
+      },
+      {
+        "label": "Fama de Davi e temor do Senhor",
+        "evidenceRef": "1 Crônicas 14:17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O Senhor manda subir porque entregará os filisteus nas mãos de Davi.",
+        "marker": "porque",
+        "evidenceRef": "1 Crônicas 14:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso deram ao lugar o nome de Baal-Perazim.",
+        "marker": "Por isso",
+        "evidenceRef": "1 Crônicas 14:11"
+      },
+      {
+        "kind": "contraste",
+        "text": "Na segunda vez Deus manda não atacar de frente, mas rodear.",
+        "marker": "mas",
+        "evidenceRef": "1 Crônicas 14:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 5:19",
+        "bridge": "Davi consulta antes da guerra"
+      },
+      {
+        "ref": "Provérbios 3:5–6",
+        "bridge": "Confia e reconhece o Senhor"
+      },
+      {
+        "ref": "Tiago 1:5",
+        "bridge": "Pedir sabedoria a Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Davi luta sem perguntar a Deus.",
+        "why": "14:10 e 14:14 mostram duas consultas explícitas."
+      },
+      {
+        "text": "A segunda batalha repetiu exatamente a primeira tática.",
+        "why": "14:14: Não os ataque; rodeie por trás."
+      },
+      {
+        "text": "A fama de Davi se espalhou sem ação do Senhor.",
+        "why": "14:17: o Senhor impôs seu temor sobre as nações."
+      }
+    ],
+    "centralInsight": "Davi pergunta, o Senhor responde, e a fama dele se espalha por todas as terras.",
+    "anchorQuestion": "O que Davi fez antes de subir contra os filisteus, segundo 1 Crônicas 14:10?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 14 —10, Davi consultou a Deus antes de subir contra os filisteus.",
+      "verseRef": "1 Crônicas 14:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então Davi consultou a Deus",
+      "feedbackCorrect": "O texto começa a batalha com a consulta a Deus.",
+      "feedbackWrong": {
+        "false": "Releia 14:10: Davi consultou a Deus."
+      },
+      "hint": "Veja a primeira ação de Davi.",
+      "learningObjective": "Observar a consulta a Deus.",
+      "evidence": [
+        "1 Crônicas 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 14:10, toque a quem Davi consultou.",
+      "verseRef": "1 Crônicas 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "dizendo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o temor do Senhor.",
+      "evidence": [
+        "1 Crônicas 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 14:14, o que Deus respondeu na segunda consulta?",
+      "verseRef": "1 Crônicas 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não os ataque; rodeie por trás perto das amoreiras"
+        },
+        {
+          "id": "b",
+          "text": "Fuja para o Egito sem lutar"
+        },
+        {
+          "id": "c",
+          "text": "Queime a arca diante deles"
+        },
+        {
+          "id": "d",
+          "text": "Consulte a necromante de En-Dor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não os ataque; mas rodeie por trás deles e ataque-os de frente, perto das amoreiras",
+      "feedbackCorrect": "Deus muda a tática: rodear, não atacar de imediato.",
+      "feedbackWrong": {
+        "b": "Não há fuga ao Egito.",
+        "c": "Não se queima a arca.",
+        "d": "Davi consulta a Deus, não necromante."
+      },
+      "hint": "Leia a ordem completa da resposta.",
+      "learningObjective": "Observar a segunda ordem de Deus.",
+      "evidence": [
+        "1 Crônicas 14:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 14:10 na ordem do texto.",
+      "verseRef": "1 Crônicas 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então Davi consultou a Deus, dizendo"
+        },
+        {
+          "id": "b",
+          "text": "Subirei contra os filisteus?"
+        },
+        {
+          "id": "c",
+          "text": "E o SENHOR respondeu: Sobe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então Davi consultou a Deus",
+      "feedbackCorrect": "Consulta, pergunta e resposta do Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta de Davi."
+      },
+      "hint": "O versículo começa com a consulta.",
+      "learningObjective": "Reconhecer a ordem de 14:10.",
+      "evidence": [
+        "1 Crônicas 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 14:10, Davi _____ a Deus antes de subir.",
+      "verseRef": "1 Crônicas 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "ignorou"
+        },
+        {
+          "id": "b",
+          "text": "consultou"
+        },
+        {
+          "id": "c",
+          "text": "acusou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi consultou a Deus",
+      "feedbackCorrect": "A palavra-chave é consultou.",
+      "feedbackWrong": {
+        "a": "Ele não ignorou; consultou.",
+        "c": "O verbo do texto é consultou."
+      },
+      "hint": "Veja o verbo da pergunta a Deus.",
+      "learningObjective": "Lembrar a palavra-chave: consultou.",
+      "evidence": [
+        "1 Crônicas 14:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 14:11 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 14:11",
+      "passageA": {
+        "ref": "1 Crônicas 14:11"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A vitória não é só de Davi: Deus rompe as fileiras inimigas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus rompeu as fileiras"
+        },
+        {
+          "id": "b",
+          "text": "Davi lutou sem Deus"
+        },
+        {
+          "id": "c",
+          "text": "Filisteus ungiram Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus rompeu as fileiras inimigas diante de mim",
+      "feedbackCorrect": "O versículo e o contexto batem: Deus rompe o inimigo.",
+      "feedbackWrong": {
+        "b": "Davi atribui a ruptura a Deus.",
+        "c": "Os filisteus vieram para prendê-lo."
+      },
+      "hint": "Veja quem rompeu as fileiras.",
+      "learningObjective": "Ligar a vitória à ação de Deus.",
+      "evidence": [
+        "1 Crônicas 14:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 14 —14, Deus repete a mesma ordem da primeira batalha, subir e atacar de frente.",
+      "verseRef": "1 Crônicas 14:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não os ataque; mas rodeie por trás deles",
+      "feedbackCorrect": "\"Mas\" marca a mudança: não atacar; rodear por trás.",
+      "feedbackWrong": {
+        "true": "Releia 14:14: a ordem muda; não é subir de frente."
+      },
+      "hint": "Compare com a ordem de 14:10.",
+      "learningObjective": "Compreender a mudança de tática.",
+      "evidence": [
+        "1 Crônicas 14:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 14:14, toque a palavra que marca o contraste da nova ordem.",
+      "verseRef": "1 Crônicas 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "consultar"
+        },
+        {
+          "id": "b",
+          "text": "voltou"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "voltou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "1 Crônicas 14:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 14:17 se relaciona com as vitórias anteriores?",
+      "verseRef": "1 Crônicas 14:16–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "A obediência traz fama e o temor do Senhor às nações"
+        },
+        {
+          "id": "b",
+          "text": "Davi some após a segunda batalha"
+        },
+        {
+          "id": "c",
+          "text": "As nações impõem temor ao Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Davi desobedece e perde a fama"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor impôs seu temor sobre todas aquelas nações",
+      "feedbackCorrect": "Depois de fazer como Deus ordenara, vem a fama e o temor.",
+      "feedbackWrong": {
+        "b": "O renome de Davi se espalha.",
+        "c": "É o Senhor quem impõe o temor.",
+        "d": "14:16: Davi fez como Deus ordenara."
+      },
+      "hint": "Leia o resultado após a obediência.",
+      "learningObjective": "Relacionar obediência e fama.",
+      "evidence": [
+        "1 Crônicas 14:16–17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Crônicas 14:8–17?",
+      "verseRef": "1 Crônicas 14:8–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi consulta e vence em Baal-Perazim"
+        },
+        {
+          "id": "b",
+          "text": "Consulta de novo e obedece à nova tática"
+        },
+        {
+          "id": "c",
+          "text": "Sua fama se espalha com o temor do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o renome de Davi se espalhou por todas aquelas terras",
+      "feedbackCorrect": "Consulta, nova consulta e fama fecham o arco.",
+      "feedbackWrong": {
+        "default": "A fama fecha o trecho."
+      },
+      "hint": "Comece pela primeira vitória.",
+      "learningObjective": "Compreender o arco das consultas.",
+      "evidence": [
+        "1 Crônicas 14:8–17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 14:10, o Senhor manda subir _____ entregará os filisteus.",
+      "verseRef": "1 Crônicas 14:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "embora"
+        },
+        {
+          "id": "b",
+          "text": "porque"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Sobe, porque os entregarei nas tuas mãos",
+      "feedbackCorrect": "\"Porque\" marca a causa da ordem: Deus entregará.",
+      "feedbackWrong": {
+        "a": "Não é \"embora\"; é \"porque\".",
+        "c": "O texto afirma a entrega."
+      },
+      "hint": "Veja a palavra após \"Sobe\".",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": [
+        "1 Crônicas 14:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 14:10 a 2 Samuel 5:19?",
+      "verseRef": "1 Crônicas 14:10",
+      "passageA": {
+        "ref": "1 Crônicas 14:10"
+      },
+      "passageB": {
+        "ref": "2 Samuel 5:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi consulta antes da guerra"
+        },
+        {
+          "id": "b",
+          "text": "Davi foge sem perguntar"
+        },
+        {
+          "id": "c",
+          "text": "Filisteus consultam Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi consultou a Deus",
+      "evidence": [
+        "1 Crônicas 14:10",
+        "2 Samuel 5:19"
+      ],
+      "feedbackCorrect": "Os dois relatos mostram Davi perguntando a Deus antes de lutar.",
+      "feedbackWrong": {
+        "b": "Ele consulta, não foge sem perguntar.",
+        "c": "Quem consulta é Davi."
+      },
+      "hint": "Compare o hábito antes da batalha.",
+      "learningObjective": "Relacionar Crônicas a Samuel."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Crônicas 14 —8–17 apresenta a vitória de Davi como fruto de consultar e obedecer ao Senhor, não de tática fixa.",
+      "verseRef": "1 Crônicas 14:10–16",
+      "correctOptionId": "true",
+      "evidenceSpan": "E Davi fez como Deus lhe ordenara",
+      "feedbackCorrect": "Duas consultas, táticas diferentes e obediência sustentam essa leitura.",
+      "feedbackWrong": {
+        "false": "Compare 14:10, 14:14 e 14:16."
+      },
+      "hint": "Veja se a segunda ordem é igual à primeira.",
+      "learningObjective": "Interpretar vitória como obediência guiada.",
+      "evidence": [
+        "1 Crônicas 14:10–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 14:16, toque o trecho que sustenta a obediência de Davi.",
+      "verseRef": "1 Crônicas 14:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "ordenara"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "feriu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura da obediência.",
+      "evidence": [
+        "1 Crônicas 14:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Crônicas 14:8–17 sustenta?",
+      "verseRef": "1 Crônicas 14:8–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem consulta e obedece vê Deus abrir caminho"
+        },
+        {
+          "id": "b",
+          "text": "Basta repetir a tática de ontem"
+        },
+        {
+          "id": "c",
+          "text": "A fama de Davi exclui o temor do Senhor"
+        },
+        {
+          "id": "d",
+          "text": "Consulta a Deus é desnecessária na guerra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi voltou a consultar a Deus",
+      "feedbackCorrect": "Consultas, obediência e temor do Senhor formam o arco.",
+      "feedbackWrong": {
+        "b": "A segunda ordem é diferente.",
+        "c": "O Senhor impõe o temor.",
+        "d": "Há duas consultas explícitas."
+      },
+      "hint": "Una consulta, obediência e resultado.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "1 Crônicas 14:8–17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da dependência de Deus?",
+      "verseRef": "1 Crônicas 14:10–17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perguntar a Deus antes de agir"
+        },
+        {
+          "id": "b",
+          "text": "Obedecer mesmo quando a ordem muda"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor espalha temor e fama"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor impôs seu temor sobre todas aquelas nações",
+      "evidence": [
+        "1 Crônicas 14:10",
+        "1 Crônicas 14:16",
+        "1 Crônicas 14:17"
+      ],
+      "feedbackCorrect": "Consulta, obediência e resultado divino se encadeiam.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta."
+      },
+      "hint": "Siga 10 → 16 → 17.",
+      "learningObjective": "Encadear consulta, obediência e fama."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 14:17, o renome de Davi se _____ por todas aquelas terras.",
+      "verseRef": "1 Crônicas 14:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "escondeu"
+        },
+        {
+          "id": "b",
+          "text": "espalhou"
+        },
+        {
+          "id": "c",
+          "text": "acabou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o renome de Davi se espalhou por todas aquelas terras",
+      "feedbackCorrect": "O renome se espalhou; o Senhor impôs temor às nações.",
+      "feedbackWrong": {
+        "a": "O texto diz que se espalhou.",
+        "c": "Não se acabou; se espalhou."
+      },
+      "hint": "Veja o verbo do renome.",
+      "learningObjective": "Lembrar o verbo da fama de Davi.",
+      "evidence": [
+        "1 Crônicas 14:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 14:10 a Provérbios 3:5–6?",
+      "verseRef": "1 Crônicas 14:10",
+      "passageA": {
+        "ref": "1 Crônicas 14:10"
+      },
+      "passageB": {
+        "ref": "Provérbios 3:5–6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confia e reconhece o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Age só pelo próprio peito"
+        },
+        {
+          "id": "c",
+          "text": "Rejeita toda consulta a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi consultou a Deus",
+      "evidence": [
+        "1 Crônicas 14:10",
+        "Provérbios 3:5–6"
+      ],
+      "feedbackCorrect": "Nos dois textos, reconhecer o Senhor precede o caminho.",
+      "feedbackWrong": {
+        "b": "Davi pergunta antes de agir.",
+        "c": "A consulta é o centro da cena."
+      },
+      "hint": "Compare depender de Deus antes de agir.",
+      "learningObjective": "Ligar a consulta de Davi a Provérbios."
+    }
+  ]
+}

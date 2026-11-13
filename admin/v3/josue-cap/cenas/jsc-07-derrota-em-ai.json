@@ -1,0 +1,918 @@
+{
+  "study": {
+    "slug": "jsc-07-derrota-em-ai",
+    "passageRef": "Josué 7:1–6",
+    "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel. Josué, portanto, enviou de Jericó alguns homens a Ai, que está perto de Bet-Aven, ao leste de Betel, e disse-lhes: \"Subam e espiem a terra.\" Assim, aqueles homens subiram e espiaram Ai. E voltaram a Josué e lhe disseram: Não é necessário que todo o povo suba; que subam apenas dois ou três mil homens para ferir Ai. Não fatiguem todo o povo, pois são poucos os inimigos. Assim, subiram do povo cerca de três mil homens, que fugiram diante dos homens de Ai. E os homens de Ai feriram cerca de trinta e seis deles, e os perseguiram desde a porta até às pedreiras na descida de Shebarim, ferindo-os na ladeira; e o coração do povo se derreteu e se tornou como água. Então, Josué rasgou suas vestes e se prostrou com o rosto em terra diante da arca do Senhor até a tarde, ele e os anciãos de Israel; e deitaram pó sobre as cabeças.",
+    "passages": [
+      {
+        "ref": "Josué 7:1–9",
+        "text": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel. Josué, portanto, enviou de Jericó alguns homens a Ai, que está perto de Bet-Aven, ao leste de Betel, e disse-lhes: \"Subam e espiem a terra.\" Assim, aqueles homens subiram e espiaram Ai. E voltaram a Josué e lhe disseram: Não é necessário que todo o povo suba; que subam apenas dois ou três mil homens para ferir Ai. Não fatiguem todo o povo, pois são poucos os inimigos. Assim, subiram do povo cerca de três mil homens, que fugiram diante dos homens de Ai. E os homens de Ai feriram cerca de trinta e seis deles, e os perseguiram desde a porta até às pedreiras na descida de Shebarim, ferindo-os na ladeira; e o coração do povo se derreteu e se tornou como água. Então, Josué rasgou suas vestes e se prostrou com o rosto em terra diante da arca do Senhor até a tarde, ele e os anciãos de Israel; e deitaram pó sobre as cabeças. E Josué disse: Ah, Senhor Deus! Por que fizeste este povo atravessar o Jordão, para nos entregares nas mãos dos amorreus, a fim de nos levar à destruição? Tomara tivéssemos permanecido do outro lado do Jordão. Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos! Ouvindo isso, os cananeus e todos os habitantes da terra nos cercarão e eliminarão o nosso nome da terra. Então, o que farás em favor do teu grande nome?"
+      }
+    ],
+    "context": "Israel prevarica nas coisas consagradas; em Ai os homens fogem e Josué se prostra diante da arca.",
+    "keyword": "prevaricaram",
+    "keywordGloss": "Israel quebrou a consagração; a ira do Senhor se acendeu.",
+    "focusQuestion": "Quando a derrota vem, você pergunta ao Senhor ou só culpa as circunstâncias?",
+    "reflectionPrompts": [
+      "Coisas consagradas",
+      "Fuga em Ai",
+      "Costas diante do inimigo"
+    ],
+    "facts": [
+      {
+        "text": "Israel prevaricou nas coisas consagradas por causa de Acã.",
+        "evidenceRef": "Josué 7:1",
+        "evidenceSpan": "Os filhos de Israel prevaricaram nas coisas consagradas"
+      },
+      {
+        "text": "A ira do Senhor se acendeu contra Israel.",
+        "evidenceRef": "Josué 7:1",
+        "evidenceSpan": "a ira do Senhor se acendeu contra os filhos de Israel"
+      },
+      {
+        "text": "Cerca de três mil homens subiram e fugiram diante de Ai.",
+        "evidenceRef": "Josué 7:4",
+        "evidenceSpan": "cerca de três mil homens, que fugiram diante dos homens de Ai"
+      },
+      {
+        "text": "Os de Ai feriram cerca de trinta e seis israelitas.",
+        "evidenceRef": "Josué 7:5",
+        "evidenceSpan": "feriram cerca de trinta e seis deles"
+      },
+      {
+        "text": "Josué rasgou as vestes e se prostrou diante da arca até a tarde.",
+        "evidenceRef": "Josué 7:6",
+        "evidenceSpan": "rasgou suas vestes e se prostrou com o rosto em terra diante da arca"
+      },
+      {
+        "text": "Josué disse que Israel virou as costas diante dos inimigos.",
+        "evidenceRef": "Josué 7:8",
+        "evidenceSpan": "Israel virou as costas diante de seus inimigos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "prevaricaram",
+        "gloss": "Quebraram a fidelidade nas coisas consagradas."
+      },
+      {
+        "term": "costas",
+        "gloss": "Sinal de fuga e derrota diante do inimigo."
+      },
+      {
+        "term": "ira",
+        "gloss": "A reação do Senhor contra a prevaricação."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Prevaricação e ira do Senhor",
+        "evidenceRef": "Josué 7:1"
+      },
+      {
+        "label": "Espionagem e ataque com poucos",
+        "evidenceRef": "Josué 7:2–4"
+      },
+      {
+        "label": "Derrota e coração derretido",
+        "evidenceRef": "Josué 7:5"
+      },
+      {
+        "label": "Lamento de Josué diante da arca",
+        "evidenceRef": "Josué 7:6–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porque Acã tomou do destinado à destruição, a ira se acendeu.",
+        "marker": "pois",
+        "evidenceRef": "Josué 7:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "O coração do povo se derreteu e se tornou como água.",
+        "marker": null,
+        "evidenceRef": "Josué 7:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "Josué pergunta se atravessaram para serem entregues.",
+        "marker": "para",
+        "evidenceRef": "Josué 7:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 28:25",
+        "bridge": "Fuga diante dos inimigos",
+        "text": "O Senhor te fará cair diante dos teus inimigos; por um caminho, sairás contra eles, e por sete caminhos, fugirás diante deles, e serás objeto de horror para todos os reinos da terra."
+      },
+      {
+        "ref": "1 Samuel 4:10–11",
+        "bridge": "Derrota e arca",
+        "text": "Então, os filisteus enfrentaram batalha; Israel foi derrotado, e cada um fugiu para a sua tenda; foi grande a derrota, pois caíram trinta mil homens de pé de Israel. A arca de Deus foi capturada e os dois filhos de Eli, Hofni e Finéias, foram mortos."
+      },
+      {
+        "ref": "Josué 6:18",
+        "bridge": "Coisas consagradas",
+        "text": "E guardem-se das coisas que são condenadas, para que, ao as tomarem, não se tornem condenados e assim tragam maldição ao arraial de Israel e o confundam."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A derrota veio só porque Ai era forte demais.",
+        "why": "O texto abre com a prevaricação e a ira do Senhor."
+      },
+      {
+        "text": "Josué ignorou a derrota e não orou.",
+        "why": "Ele rasgou as vestes e se prostrou até a tarde."
+      },
+      {
+        "text": "Israel avançou sem virar as costas.",
+        "why": "Josué diz que Israel virou as costas."
+      }
+    ],
+    "centralInsight": "Sem o Senhor, o povo volta as costas; Josué pergunta por que a derrota veio.",
+    "anchorQuestion": "Segundo Josué 7:8, o que Israel fez diante dos inimigos?",
+    "relatedVerses": [
+      {
+        "reference": "Deuteronômio 28:25",
+        "reason": "Fuga diante dos inimigos"
+      },
+      {
+        "reference": "1 Samuel 4:10–11",
+        "reason": "Derrota e arca"
+      },
+      {
+        "reference": "Josué 6:18",
+        "reason": "Coisas consagradas"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "josue-cap-sem-jsc-07-derrota-em-ai-01",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Josué 7:4, os três mil homens de Israel venceram facilmente os de Ai.",
+      "prompt": "Em Josué 7:4, os três mil homens de Israel venceram facilmente os de Ai.",
+      "cue": "Em Josué 7:4, os três mil homens de Israel venceram facilmente os de Ai.",
+      "verseRef": "Josué 7:4",
+      "passageText": "Assim, subiram do povo cerca de três mil homens, que fugiram diante dos homens de Ai.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "que fugiram diante dos homens de Ai",
+      "feedbackCorrect": "Eles fugiram, não venceram.",
+      "feedbackWrong": {
+        "true": "O texto diz que fugiram."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar o resultado do ataque.",
+      "evidence": [
+        "Josué 7:4"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-07-derrota-em-ai-02",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Josué 7:1, toque o que Israel fez nas coisas consagradas.",
+      "prompt": "Em Josué 7:1, toque o que Israel fez nas coisas consagradas.",
+      "cue": "Em Josué 7:1, toque o que Israel fez nas coisas consagradas.",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "prevaricaram"
+        },
+        {
+          "id": "b",
+          "text": "Acã"
+        },
+        {
+          "id": "c",
+          "text": "Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "Israel prevaricou nas coisas consagradas.",
+      "feedbackWrong": {
+        "b": "Acã é o nome; a ação é prevaricaram.",
+        "c": "Judá é a tribo; a ação é prevaricaram."
+      },
+      "hint": "Veja o verbo principal.",
+      "learningObjective": "Identificar a falta de Israel.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-07-derrota-em-ai-03",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Josué 7:8, o que Israel fez diante dos inimigos?",
+      "prompt": "Segundo Josué 7:8, o que Israel fez diante dos inimigos?",
+      "cue": "Segundo Josué 7:8, o que Israel fez diante dos inimigos?",
+      "verseRef": "Josué 7:8",
+      "passageText": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Virou as costas"
+        },
+        {
+          "id": "b",
+          "text": "Ficou firme"
+        },
+        {
+          "id": "c",
+          "text": "Cercou Ai"
+        },
+        {
+          "id": "d",
+          "text": "Cantou vitória"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Israel virou as costas diante de seus inimigos",
+      "feedbackCorrect": "Josué lamenta a fuga.",
+      "feedbackWrong": {
+        "b": "Não ficaram firmes.",
+        "c": "Não cercaram com sucesso.",
+        "d": "Não há canto de vitória."
+      },
+      "hint": "Leia a queixa de Josué.",
+      "learningObjective": "Reconhecer a fuga de Israel.",
+      "evidence": [
+        "Josué 7:8"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-07-derrota-em-ai-04",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Josué 7:8 na ordem do texto.",
+      "prompt": "Monte Josué 7:8 na ordem do texto.",
+      "cue": "Monte Josué 7:8 na ordem do texto.",
+      "verseRef": "Josué 7:8",
+      "passageText": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ó Senhor! O que direi?"
+        },
+        {
+          "id": "b",
+          "text": "Pois Israel virou as costas"
+        },
+        {
+          "id": "c",
+          "text": "diante de seus inimigos!"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Israel virou as costas diante de seus inimigos",
+      "feedbackCorrect": "Pergunta e descrição da fuga.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta ao Senhor."
+      },
+      "hint": "O que Josué pergunta primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 7:8"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-07-derrota-em-ai-05",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Josué 7:5, complete: o coração do povo se ___ e se tornou como água.",
+      "prompt": "Em Josué 7:5, complete: o coração do povo se ___ e se tornou como água.",
+      "cue": "Em Josué 7:5, complete: o coração do povo se ___ e se tornou como água.",
+      "verseRef": "Josué 7:5",
+      "passageText": "E os homens de Ai feriram cerca de trinta e seis deles, e os perseguiram desde a porta até às pedreiras na descida de Shebarim, ferindo-os na ladeira; e o coração do povo se derreteu e se tornou como água.",
+      "template": "E os homens de Ai feriram cerca de trinta e seis deles, e os perseguiram desde a porta até às pedreiras na descida de Shebarim, ferindo-os na ladeira; e o coração do povo se ___ e se tornou como água.",
+      "options": [
+        {
+          "id": "a",
+          "text": "derreteu"
+        },
+        {
+          "id": "b",
+          "text": "alegrou"
+        },
+        {
+          "id": "c",
+          "text": "endureceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o coração do povo se derreteu",
+      "feedbackCorrect": "O coração se derreteu.",
+      "feedbackWrong": {
+        "b": "Não se alegrou.",
+        "c": "O verbo é derreteu."
+      },
+      "hint": "Veja o verbo do coração.",
+      "learningObjective": "Lembrar a reação do povo.",
+      "evidence": [
+        "Josué 7:5"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-07-derrota-em-ai-06",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Josué 7:1 comunica que se liga a este contexto?",
+      "prompt": "O que Josué 7:1 comunica que se liga a este contexto?",
+      "cue": "O que Josué 7:1 comunica que se liga a este contexto?",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "passageA": {
+        "ref": "Josué 7:1",
+        "text": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Depois de Jericó, Israel ataca Ai e sofre derrota."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevaricação acende a ira"
+        },
+        {
+          "id": "b",
+          "text": "Vitória sem obediência"
+        },
+        {
+          "id": "c",
+          "text": "Ai era aliada"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "a ira do Senhor se acendeu",
+      "feedbackCorrect": "A derrota tem raiz na prevaricação.",
+      "feedbackWrong": {
+        "b": "Não há vitória automática.",
+        "c": "Ai é inimiga."
+      },
+      "hint": "Veja o início do capítulo.",
+      "learningObjective": "Ligar a derrota à falta.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-07-derrota-em-ai-01",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Josué 7:1, a ira do Senhor se acende porque Israel foi fiel nas coisas consagradas.",
+      "prompt": "Em Josué 7:1, a ira do Senhor se acende porque Israel foi fiel nas coisas consagradas.",
+      "cue": "Em Josué 7:1, a ira do Senhor se acende porque Israel foi fiel nas coisas consagradas.",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "A ira vem da prevaricação.",
+      "feedbackWrong": {
+        "true": "Eles prevaricaram."
+      },
+      "hint": "Leia o pois e a ação de Acã.",
+      "learningObjective": "Ver a causa da ira.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-07-derrota-em-ai-02",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Josué 7:1, toque a palavra que marca a causa ligada a Acã.",
+      "prompt": "Em Josué 7:1, toque a palavra que marca a causa ligada a Acã.",
+      "cue": "Em Josué 7:1, toque a palavra que marca a causa ligada a Acã.",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "ira"
+        },
+        {
+          "id": "c",
+          "text": "Zera"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "pois Acã, filho de Carmi",
+      "feedbackCorrect": "Pois introduz a explicação.",
+      "feedbackWrong": {
+        "b": "Ira é o resultado; a marca é pois.",
+        "c": "Zera é ancestral; a marca é pois."
+      },
+      "hint": "Procure a conjunção antes de Acã.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-07-derrota-em-ai-03",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação Josué 7:7 faz na pergunta a Deus?",
+      "prompt": "Que relação Josué 7:7 faz na pergunta a Deus?",
+      "cue": "Que relação Josué 7:7 faz na pergunta a Deus?",
+      "verseRef": "Josué 7:7",
+      "passageText": "E Josué disse: Ah, Senhor Deus! Por que fizeste este povo atravessar o Jordão, para nos entregares nas mãos dos amorreus, a fim de nos levar à destruição? Tomara tivéssemos permanecido do outro lado do Jordão.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atravessar parece ter levado à destruição"
+        },
+        {
+          "id": "b",
+          "text": "Atravessar garantiu descanso"
+        },
+        {
+          "id": "c",
+          "text": "A derrota prova ausência de Deus"
+        },
+        {
+          "id": "d",
+          "text": "Josué celebra vitória"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "para nos entregares nas mãos dos amorreus",
+      "feedbackCorrect": "Josué liga a travessia à entrega aos amorreus.",
+      "feedbackWrong": {
+        "b": "Não há descanso nesta queixa.",
+        "c": "Ele ora ao Senhor.",
+        "d": "Não há celebração."
+      },
+      "hint": "Leia o para na pergunta.",
+      "learningObjective": "Compreender a queixa de Josué.",
+      "evidence": [
+        "Josué 7:7"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-07-derrota-em-ai-04",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos do trecho.",
+      "prompt": "Ordene os movimentos do trecho.",
+      "cue": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevaricação e ira do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Derrota e coração derretido"
+        },
+        {
+          "id": "c",
+          "text": "Lamento de Josué diante da arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "Falta, derrota e oração.",
+      "feedbackWrong": {
+        "default": "Comece pela prevaricação."
+      },
+      "hint": "O que abre o capítulo?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 7:1",
+        "Josué 7:6"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-07-derrota-em-ai-05",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Josué 7:1, complete: a ___ do Senhor se acendeu contra os filhos de Israel.",
+      "prompt": "Em Josué 7:1, complete: a ___ do Senhor se acendeu contra os filhos de Israel.",
+      "cue": "Em Josué 7:1, complete: a ___ do Senhor se acendeu contra os filhos de Israel.",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "template": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ___ do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ira"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "a ira do Senhor se acendeu",
+      "feedbackCorrect": "A ira do Senhor se acendeu.",
+      "feedbackWrong": {
+        "b": "Não é paz.",
+        "c": "A palavra é ira."
+      },
+      "hint": "Veja o sujeito que se acendeu.",
+      "learningObjective": "Lembrar a reação do Senhor.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-07-derrota-em-ai-06",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Josué 7:8 a Deuteronômio 28:25?",
+      "prompt": "O que liga Josué 7:8 a Deuteronômio 28:25?",
+      "cue": "O que liga Josué 7:8 a Deuteronômio 28:25?",
+      "verseRef": "Josué 7:8",
+      "passageText": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!",
+      "passageA": {
+        "ref": "Josué 7:8",
+        "text": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 28:25",
+        "text": "O Senhor te fará cair diante dos teus inimigos; por um caminho, sairás contra eles, e por sete caminhos, fugirás diante deles, e serás objeto de horror para todos os reinos da terra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fuga diante dos inimigos"
+        },
+        {
+          "id": "b",
+          "text": "Descanso pleno"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Ai"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Israel virou as costas diante de seus inimigos",
+      "feedbackCorrect": "Nos dois textos a fuga marca o juízo.",
+      "feedbackWrong": {
+        "b": "Não há descanso aqui.",
+        "c": "Não há aliança com Ai."
+      },
+      "hint": "Compare a fuga.",
+      "learningObjective": "Ligar costas viradas à maldição.",
+      "evidence": [
+        "Josué 7:8",
+        "Deuteronômio 28:25"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-07-derrota-em-ai-01",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Josué 7:1–8, a derrota e as costas viradas sustentam que o pecado quebranta a proteção do Senhor.",
+      "prompt": "Em Josué 7:1–8, a derrota e as costas viradas sustentam que o pecado quebranta a proteção do Senhor.",
+      "cue": "Em Josué 7:1–8, a derrota e as costas viradas sustentam que o pecado quebranta a proteção do Senhor.",
+      "verseRef": "Josué 7:8",
+      "passageText": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Israel virou as costas diante de seus inimigos",
+      "feedbackCorrect": "Prevaricação, ira e fuga formam o quadro.",
+      "feedbackWrong": {
+        "false": "O texto une falta e derrota."
+      },
+      "hint": "Una 7:1 e 7:8.",
+      "learningObjective": "Avaliar a leitura da derrota.",
+      "evidence": [
+        "Josué 7:1–8"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-07-derrota-em-ai-02",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Josué 7:8, toque o trecho que sustenta a vergonha da fuga.",
+      "prompt": "Em Josué 7:8, toque o trecho que sustenta a vergonha da fuga.",
+      "cue": "Em Josué 7:8, toque o trecho que sustenta a vergonha da fuga.",
+      "verseRef": "Josué 7:8",
+      "passageText": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!",
+      "options": [
+        {
+          "id": "a",
+          "text": "virou as costas"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "direi"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Israel virou as costas",
+      "feedbackCorrect": "Virou as costas nomeia a derrota.",
+      "feedbackWrong": {
+        "b": "Senhor é a quem ele ora.",
+        "c": "Direi é a pergunta; o fato é virou as costas."
+      },
+      "hint": "Veja o que Israel fez.",
+      "learningObjective": "Tocar o que sustenta a fuga.",
+      "evidence": [
+        "Josué 7:8"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-07-derrota-em-ai-03",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "prompt": "Qual leitura melhor expressa o trecho?",
+      "cue": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem o Senhor, o povo volta as costas"
+        },
+        {
+          "id": "b",
+          "text": "A culpa é só o número pequeno"
+        },
+        {
+          "id": "c",
+          "text": "Josué não deve perguntar"
+        },
+        {
+          "id": "d",
+          "text": "Acã não tem relação com a derrota"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "a ira do Senhor se acendeu contra os filhos de Israel",
+      "feedbackCorrect": "A ira e a fuga explicam a derrota.",
+      "feedbackWrong": {
+        "b": "O texto aponta a prevaricação.",
+        "c": "Josué se prostra e pergunta.",
+        "d": "Acã abre o capítulo."
+      },
+      "hint": "Una prevaricação e costas.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 7:1–9"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-07-derrota-em-ai-04",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene o encadeamento do juízo na cena.",
+      "prompt": "Ordene o encadeamento do juízo na cena.",
+      "cue": "Ordene o encadeamento do juízo na cena.",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevaricação acende a ira"
+        },
+        {
+          "id": "b",
+          "text": "Poucos fogem em Ai"
+        },
+        {
+          "id": "c",
+          "text": "Josué confessa as costas viradas"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "Falta, fuga e confissão.",
+      "feedbackWrong": {
+        "default": "Comece pela prevaricação."
+      },
+      "hint": "O que vem antes da fuga?",
+      "learningObjective": "Encadear juízo e lamento",
+      "evidence": [
+        "Josué 7:1",
+        "Josué 7:8"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-07-derrota-em-ai-05",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Josué 7:8, complete: Israel virou as ___.",
+      "prompt": "Em Josué 7:8, complete: Israel virou as ___.",
+      "cue": "Em Josué 7:8, complete: Israel virou as ___.",
+      "verseRef": "Josué 7:8",
+      "passageText": "Ó Senhor! O que direi? Pois Israel virou as costas diante de seus inimigos!",
+      "template": "Ó Senhor! O que direi? Pois Israel virou as ___ diante de seus inimigos!",
+      "options": [
+        {
+          "id": "a",
+          "text": "costas"
+        },
+        {
+          "id": "b",
+          "text": "portas"
+        },
+        {
+          "id": "c",
+          "text": "pedras"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Israel virou as costas",
+      "feedbackCorrect": "Costas marca a fuga.",
+      "feedbackWrong": {
+        "b": "Não é portas.",
+        "c": "A palavra é costas."
+      },
+      "hint": "Veja o objeto de virou.",
+      "learningObjective": "Lembrar o termo costas.",
+      "evidence": [
+        "Josué 7:8"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-07-derrota-em-ai-06",
+      "trail": "josue-cap",
+      "section": "jsc-07-derrota-em-ai",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Josué 7:1 a Josué 6:18?",
+      "prompt": "O que liga Josué 7:1 a Josué 6:18?",
+      "cue": "O que liga Josué 7:1 a Josué 6:18?",
+      "verseRef": "Josué 7:1",
+      "passageText": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel.",
+      "passageA": {
+        "ref": "Josué 7:1",
+        "text": "Os filhos de Israel prevaricaram nas coisas consagradas, pois Acã, filho de Carmi, filho de Zabdi, filho de Zera, da tribo de Judá, tomou do que era destinado à destruição, e a ira do Senhor se acendeu contra os filhos de Israel."
+      },
+      "passageB": {
+        "ref": "Josué 6:18",
+        "text": "E guardem-se das coisas que são condenadas, para que, ao as tomarem, não se tornem condenados e assim tragam maldição ao arraial de Israel e o confundam."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coisas consagradas"
+        },
+        {
+          "id": "b",
+          "text": "Trombetas de Jericó"
+        },
+        {
+          "id": "c",
+          "text": "Doze pedras"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "A advertência de 6:18 se cumpre na prevaricação.",
+      "feedbackWrong": {
+        "b": "O elo é o consagrado.",
+        "c": "O elo não é as pedras."
+      },
+      "hint": "Pense no que não se podia tomar.",
+      "learningObjective": "Ligar a falta ao aviso de Jericó.",
+      "evidence": [
+        "Josué 7:1",
+        "Josué 6:18"
+      ]
+    }
+  ]
+}

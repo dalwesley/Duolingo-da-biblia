@@ -1,0 +1,924 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 12:7–12",
+    "passages": [
+      {
+        "ref": "Apocalipse 10:1–7"
+      },
+      {
+        "ref": "Apocalipse 11:12–19"
+      },
+      {
+        "ref": "Apocalipse 12:7–12"
+      },
+      {
+        "ref": "Apocalipse 13:1–8"
+      },
+      {
+        "ref": "Apocalipse 14:6–12"
+      }
+    ],
+    "context": "Esta travessia revisa o livrinho, o reino do mundo, a guerra no céu, a besta do mar e o evangelho eterno.",
+    "keyword": "vencencer",
+    "keywordGloss": "No conflito, vencem os que pertencem ao Cordeiro, pelo sangue e pelo testemunho.",
+    "focusQuestion": "No meio do conflito, o que sustenta a sua fidelidade ao Cordeiro?",
+    "reflectionPrompts": [
+      "Livrinho e mistério",
+      "Guerra no céu",
+      "Evangelho eterno"
+    ],
+    "facts": [
+      {
+        "text": "O anjo tinha na mão um livrinho aberto.",
+        "evidenceRef": "Apocalipse 10:2",
+        "evidenceSpan": "tinha na mão um livrinho aberto"
+      },
+      {
+        "text": "O reino do mundo se tornou de nosso Senhor e de seu Cristo.",
+        "evidenceRef": "Apocalipse 11:15",
+        "evidenceSpan": "O reino do mundo se tornou de nosso Senhor e de seu Cristo"
+      },
+      {
+        "text": "Miguel e seus anjos pelejaram contra o dragão.",
+        "evidenceRef": "Apocalipse 12:7",
+        "evidenceSpan": "Miguel e seus anjos pelejaram contra o dragão"
+      },
+      {
+        "text": "Eles o venceram pelo sangue do Cordeiro e pela palavra do testemunho.",
+        "evidenceRef": "Apocalipse 12:11",
+        "evidenceSpan": "pelo sangue do Cordeiro e pela palavra do testemunho que deram"
+      },
+      {
+        "text": "O dragão concedeu à besta poder, trono e autoridade.",
+        "evidenceRef": "Apocalipse 13:2",
+        "evidenceSpan": "o dragão lhe concedeu seu poder, seu trono e uma grande autoridade"
+      },
+      {
+        "text": "A perseverança dos santos é guardar os mandamentos e manter a fé em Jesus.",
+        "evidenceRef": "Apocalipse 14:12",
+        "evidenceSpan": "guardam os mandamentos de Deus e mantêm a fé em Jesus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Cordeiro",
+        "gloss": "Aquele cujo sangue vence e cujo Livro marca quem não adora a besta."
+      },
+      {
+        "term": "dragão",
+        "gloss": "O adversário que perde a guerra no céu e concede poder à besta."
+      },
+      {
+        "term": "perseverança",
+        "gloss": "Guardar os mandamentos de Deus e manter a fé em Jesus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O livrinho e o mistério anunciado",
+        "evidenceRef": "Apocalipse 10:1–7"
+      },
+      {
+        "label": "O reino passa ao Senhor e ao Cristo",
+        "evidenceRef": "Apocalipse 11:15"
+      },
+      {
+        "label": "Guerra no céu e vitória pelo Cordeiro",
+        "evidenceRef": "Apocalipse 12:7–11"
+      },
+      {
+        "label": "Besta, evangelho e perseverança",
+        "evidenceRef": "Apocalipse 13:1–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Adoraram o dragão porque deu autoridade à besta.",
+        "marker": "porque",
+        "evidenceRef": "Apocalipse 13:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Eles o venceram pelo sangue do Cordeiro e pelo testemunho.",
+        "marker": "pelo",
+        "evidenceRef": "Apocalipse 12:11"
+      },
+      {
+        "kind": "causa",
+        "text": "Temam a Deus pois é chegada a hora do juízo.",
+        "marker": "pois",
+        "evidenceRef": "Apocalipse 14:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 5:9",
+        "bridge": "Cordeiro digno pelo sangue"
+      },
+      {
+        "ref": "Daniel 7:13–14",
+        "bridge": "Reino dado ao Filho"
+      },
+      {
+        "ref": "Gênesis 3:15",
+        "bridge": "Inimizade com a serpente"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A besta governa sem poder do dragão.",
+        "why": "O dragão lhe concedeu poder, trono e autoridade."
+      },
+      {
+        "text": "A vitória no céu vem sem o sangue do Cordeiro.",
+        "why": "Eles o venceram pelo sangue do Cordeiro e pela palavra do testemunho."
+      },
+      {
+        "text": "A perseverança ignora mandamentos e fé.",
+        "why": "Guardam os mandamentos de Deus e mantêm a fé em Jesus."
+      }
+    ],
+    "centralInsight": "No conflito, vencem os que pertencem ao Cordeiro",
+    "anchorQuestion": "Como o texto diz que venceram o dragão?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 10:2, o anjo tinha na mão um livrinho aberto.",
+      "verseRef": "Apocalipse 10:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "tinha na mão um livrinho aberto",
+      "feedbackCorrect": "O livrinho está aberto na mão do anjo.",
+      "feedbackWrong": {
+        "false": "O versículo diz que tinha na mão um livrinho aberto."
+      },
+      "hint": "Olhe o que estava na mão do anjo.",
+      "learningObjective": "Observar o livrinho aberto.",
+      "evidence": [
+        "Apocalipse 10:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 11:15, toque de quem o reino do mundo passou a ser.",
+      "verseRef": "Apocalipse 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "nosso Senhor"
+        },
+        {
+          "id": "b",
+          "text": "sétimo anjo"
+        },
+        {
+          "id": "c",
+          "text": "grandes vozes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de nosso Senhor e de seu Cristo",
+      "feedbackCorrect": "O reino passou a ser de nosso Senhor e do seu Cristo.",
+      "feedbackWrong": {
+        "b": "O sétimo anjo toca a trombeta; o reino é do Senhor.",
+        "c": "As vozes anunciam; o reino é do Senhor."
+      },
+      "hint": "Procure de quem é o reino.",
+      "learningObjective": "Identificar o dono do reino.",
+      "evidence": [
+        "Apocalipse 11:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 12:11, como eles o venceram?",
+      "verseRef": "Apocalipse 12:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pelo sangue do Cordeiro e pela palavra do testemunho"
+        },
+        {
+          "id": "b",
+          "text": "Pela marca da besta na mão"
+        },
+        {
+          "id": "c",
+          "text": "Pelo poder do dragão"
+        },
+        {
+          "id": "d",
+          "text": "Pelo silêncio sem testemunho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo sangue do Cordeiro e pela palavra do testemunho que deram",
+      "feedbackCorrect": "A vitória vem pelo sangue e pelo testemunho.",
+      "feedbackWrong": {
+        "b": "A marca pertence à besta.",
+        "c": "O dragão é o vencido.",
+        "d": "Há palavra do testemunho."
+      },
+      "hint": "Leia o meio da vitória.",
+      "learningObjective": "Observar como venceram.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 13:4 na ordem do texto.",
+      "verseRef": "Apocalipse 13:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "E adoraram o dragão"
+        },
+        {
+          "id": "b",
+          "text": "porque deu à besta a sua autoridade"
+        },
+        {
+          "id": "c",
+          "text": "e adoraram a besta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "adoraram o dragão porque deu à besta a sua autoridade",
+      "feedbackCorrect": "Dragão, razão e besta nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece pela adoração ao dragão."
+      },
+      "hint": "A frase começa com adoraram o dragão.",
+      "learningObjective": "Reconhecer a ordem de 13:4.",
+      "evidence": [
+        "Apocalipse 13:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 14:6, o anjo traz um evangelho quê?",
+      "verseRef": "Apocalipse 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "eterno"
+        },
+        {
+          "id": "b",
+          "text": "breve"
+        },
+        {
+          "id": "c",
+          "text": "oculto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "evangelho eterno",
+      "feedbackCorrect": "O anúncio é um evangelho eterno.",
+      "feedbackWrong": {
+        "b": "O texto diz eterno.",
+        "c": "O anjo prega; não é oculto."
+      },
+      "hint": "Veja o adjetivo de evangelho.",
+      "learningObjective": "Lembrar o tipo de evangelho.",
+      "evidence": [
+        "Apocalipse 14:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 12:11 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 12:11",
+      "passageA": {
+        "ref": "Apocalipse 12:11"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No conflito, vencem os que pertencem ao Cordeiro."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Vitória pelo sangue do Cordeiro"
+        },
+        {
+          "id": "b",
+          "text": "Vitória pela marca da besta"
+        },
+        {
+          "id": "c",
+          "text": "Vitória sem testemunho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sangue do Cordeiro",
+      "feedbackCorrect": "A vitória está ligada ao sangue do Cordeiro.",
+      "feedbackWrong": {
+        "b": "A marca é da besta.",
+        "c": "Há palavra do testemunho."
+      },
+      "hint": "Leia o meio da vitória.",
+      "learningObjective": "Ligar 12:11 à vitória do Cordeiro.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 13:1, toque de onde a besta emerge.",
+      "verseRef": "Apocalipse 13:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "do mar"
+        },
+        {
+          "id": "b",
+          "text": "sete cabeças"
+        },
+        {
+          "id": "c",
+          "text": "dez chifres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "emergir do mar uma besta",
+      "feedbackCorrect": "A besta emerge do mar.",
+      "feedbackWrong": {
+        "b": "Cabeças descrevem a besta; a origem é o mar.",
+        "c": "Chifres descrevem a besta; a origem é o mar."
+      },
+      "hint": "Procure de onde ela emerge.",
+      "learningObjective": "Identificar a origem da besta.",
+      "evidence": [
+        "Apocalipse 13:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 14:7 na ordem do texto.",
+      "verseRef": "Apocalipse 14:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Temam a Deus e deem-lhe glória"
+        },
+        {
+          "id": "b",
+          "text": "pois é chegada a hora do Seu juízo"
+        },
+        {
+          "id": "c",
+          "text": "adorem aquele que criou o céu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Temam a Deus e deem-lhe glória, pois é chegada a hora do Seu juízo",
+      "feedbackCorrect": "Chamado, razão e adoração nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece pelo temam a Deus."
+      },
+      "hint": "A frase começa com Temam a Deus.",
+      "learningObjective": "Reconhecer a ordem de 14:7.",
+      "evidence": [
+        "Apocalipse 14:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 13:4, adoraram o dragão porque a besta recusou a autoridade dele.",
+      "verseRef": "Apocalipse 13:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque deu à besta a sua autoridade",
+      "feedbackCorrect": "A razão é a doação da autoridade, não a recusa.",
+      "feedbackWrong": {
+        "true": "O porque aponta que ele deu autoridade à besta."
+      },
+      "hint": "Leia a razão depois de porque.",
+      "learningObjective": "Compreender por que adoraram o dragão.",
+      "evidence": [
+        "Apocalipse 13:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 14:7, toque a palavra que marca a razão do chamado a temer.",
+      "verseRef": "Apocalipse 14:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois é chegada a hora do Seu juízo",
+      "feedbackCorrect": "Pois introduz a hora do juízo.",
+      "feedbackWrong": {
+        "b": "Terra é parte da criação.",
+        "c": "Mar é parte da criação."
+      },
+      "hint": "Procure a palavra antes da hora do juízo.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Apocalipse 14:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que Apocalipse 12:11 relaciona como meio da vitória?",
+      "verseRef": "Apocalipse 12:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pelo Cordeiro e pelo testemunho deles"
+        },
+        {
+          "id": "b",
+          "text": "Só o silêncio sem sangue"
+        },
+        {
+          "id": "c",
+          "text": "Só o poder do dragão"
+        },
+        {
+          "id": "d",
+          "text": "A marca da besta na testa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo sangue do Cordeiro e pela palavra do testemunho que deram",
+      "feedbackCorrect": "Os dois meios aparecem juntos: sangue e testemunho.",
+      "feedbackWrong": {
+        "b": "Há sangue e testemunho.",
+        "c": "O dragão é vencido.",
+        "d": "A marca é da besta."
+      },
+      "hint": "Una os dois meios no versículo.",
+      "learningObjective": "Relacionar os meios da vitória.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o bloco desta travessia?",
+      "verseRef": "Apocalipse 10:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O livrinho e o mistério anunciado"
+        },
+        {
+          "id": "b",
+          "text": "O reino passa ao Senhor e ao Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Guerra no céu e vitória pelo Cordeiro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "livrinho aberto",
+      "feedbackCorrect": "Livrinho, reino e guerra formam a sequência do bloco.",
+      "feedbackWrong": {
+        "default": "Comece pelo livrinho."
+      },
+      "hint": "O livrinho vem antes da guerra no céu.",
+      "learningObjective": "Ordenar os movimentos do bloco.",
+      "evidence": [
+        "Apocalipse 10:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 13:4, adoraram o dragão porque deu à besta a sua quê?",
+      "verseRef": "Apocalipse 13:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "autoridade"
+        },
+        {
+          "id": "b",
+          "text": "harpa"
+        },
+        {
+          "id": "c",
+          "text": "folha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sua autoridade",
+      "feedbackCorrect": "Ele deu a sua autoridade.",
+      "feedbackWrong": {
+        "b": "Harpa não aparece aqui.",
+        "c": "Folha não aparece aqui."
+      },
+      "hint": "Veja o que o dragão deu.",
+      "learningObjective": "Lembrar a palavra da concessão.",
+      "evidence": [
+        "Apocalipse 13:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 12:11 a Apocalipse 5:9?",
+      "verseRef": "Apocalipse 12:11",
+      "passageA": {
+        "ref": "Apocalipse 12:11",
+        "text": "sangue do Cordeiro"
+      },
+      "passageB": {
+        "ref": "Apocalipse 5:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cordeiro digno pelo sangue"
+        },
+        {
+          "id": "b",
+          "text": "A besta do mar"
+        },
+        {
+          "id": "c",
+          "text": "O livrinho fechado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sangue do Cordeiro",
+      "feedbackCorrect": "Os dois textos ligam o Cordeiro ao sangue.",
+      "feedbackWrong": {
+        "b": "A besta está em 13; a ponte é o sangue.",
+        "c": "O livrinho está aberto em 10."
+      },
+      "hint": "Compare o sangue do Cordeiro.",
+      "learningObjective": "Ligar 12:11 a 5:9.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 12:11, toque a palavra que marca o meio da vitória pelo sangue.",
+      "verseRef": "Apocalipse 12:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "pelo"
+        },
+        {
+          "id": "b",
+          "text": "amaram"
+        },
+        {
+          "id": "c",
+          "text": "morte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pelo sangue do Cordeiro",
+      "feedbackCorrect": "Pelo introduz o meio da vitória.",
+      "feedbackWrong": {
+        "b": "Amaram aparece depois.",
+        "c": "Morte aparece no fim."
+      },
+      "hint": "Procure a preposição antes de sangue.",
+      "learningObjective": "Reconhecer o marcador do meio.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o conflito até a perseverança.",
+      "verseRef": "Apocalipse 13:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guerra no céu e vitória pelo Cordeiro"
+        },
+        {
+          "id": "b",
+          "text": "Besta, evangelho e perseverança"
+        },
+        {
+          "id": "c",
+          "text": "O reino passa ao Senhor e ao Cristo"
+        }
+      ],
+      "correctOrder": [
+        "c",
+        "a",
+        "b"
+      ],
+      "evidenceSpan": "o dragão lhe concedeu seu poder",
+      "feedbackCorrect": "Reino, guerra e besta/evangelho nesta ordem do bloco.",
+      "feedbackWrong": {
+        "default": "O reino anunciado vem antes da besta."
+      },
+      "hint": "Lembre a ordem das cenas do bloco.",
+      "learningObjective": "Ordenar reino, guerra e perseverança.",
+      "evidence": [
+        "Apocalipse 13:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Apocalipse 12:11, a vitória acontece sem o sangue do Cordeiro.",
+      "verseRef": "Apocalipse 12:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "pelo sangue do Cordeiro",
+      "feedbackCorrect": "O texto coloca o sangue do Cordeiro no meio da vitória.",
+      "feedbackWrong": {
+        "true": "O versículo começa a vitória pelo sangue do Cordeiro."
+      },
+      "hint": "Leia o primeiro meio da vitória.",
+      "learningObjective": "Interpretar o meio da vitória.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 14:12, toque o trecho que sustenta a perseverança como fé em Jesus.",
+      "verseRef": "Apocalipse 14:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé em Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Aqui está"
+        },
+        {
+          "id": "c",
+          "text": "dos santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mantêm a fé em Jesus",
+      "feedbackCorrect": "A perseverança inclui a fé em Jesus.",
+      "feedbackWrong": {
+        "b": "Aqui está introduz.",
+        "c": "Dos santos nomeia o grupo."
+      },
+      "hint": "Procure o fim da definição.",
+      "learningObjective": "Tocar o trecho da fé.",
+      "evidence": [
+        "Apocalipse 14:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Apocalipse 13:2 sustenta melhor?",
+      "verseRef": "Apocalipse 13:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "A besta recebe poder emprestado do dragão"
+        },
+        {
+          "id": "b",
+          "text": "A besta governa sem o dragão"
+        },
+        {
+          "id": "c",
+          "text": "O dragão tira o trono na hora"
+        },
+        {
+          "id": "d",
+          "text": "O livrinho concede o trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o dragão lhe concedeu seu poder, seu trono e uma grande autoridade",
+      "feedbackCorrect": "Concedeu mostra poder emprestado.",
+      "feedbackWrong": {
+        "b": "Há concessão do dragão.",
+        "c": "Ele concede, não tira aqui.",
+        "d": "O livrinho está em outra cena."
+      },
+      "hint": "Veja o verbo concedeu.",
+      "learningObjective": "Escolher a leitura sustentável do poder.",
+      "evidence": [
+        "Apocalipse 13:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento esta travessia sustenta?",
+      "verseRef": "Apocalipse 12:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Cordeiro vence no conflito"
+        },
+        {
+          "id": "b",
+          "text": "A besta recebe poder limitado"
+        },
+        {
+          "id": "c",
+          "text": "Os santos perseveram na fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eles o venceram pelo sangue do Cordeiro",
+      "feedbackCorrect": "Vitória, besta e perseverança formam o arco.",
+      "feedbackWrong": {
+        "default": "Comece pela vitória do Cordeiro."
+      },
+      "hint": "A vitória no céu vem antes da perseverança de 14.",
+      "learningObjective": "Encadear vitória, besta e fé.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 12:11, eles o venceram pelo sangue do quê?",
+      "verseRef": "Apocalipse 12:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cordeiro"
+        },
+        {
+          "id": "b",
+          "text": "dragão"
+        },
+        {
+          "id": "c",
+          "text": "leopardo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sangue do Cordeiro",
+      "feedbackCorrect": "O sangue é do Cordeiro.",
+      "feedbackWrong": {
+        "b": "O dragão é vencido.",
+        "c": "Leopardo descreve a besta."
+      },
+      "hint": "Veja de quem é o sangue.",
+      "learningObjective": "Lembrar o termo da vitória.",
+      "evidence": [
+        "Apocalipse 12:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 11:15 a Daniel 7:13–14?",
+      "verseRef": "Apocalipse 11:15",
+      "passageA": {
+        "ref": "Apocalipse 11:15",
+        "text": "O reino do mundo se tornou de nosso Senhor e de seu Cristo"
+      },
+      "passageB": {
+        "ref": "Daniel 7:13–14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino dado ao Filho"
+        },
+        {
+          "id": "b",
+          "text": "A besta do mar"
+        },
+        {
+          "id": "c",
+          "text": "O livrinho doce"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O reino do mundo se tornou de nosso Senhor e de seu Cristo",
+      "feedbackCorrect": "Os dois textos ligam o reino ao Cristo/Filho.",
+      "feedbackWrong": {
+        "b": "A besta está em 13.",
+        "c": "O livrinho está em 10."
+      },
+      "hint": "Compare a entrega do reino.",
+      "learningObjective": "Ligar 11:15 a Daniel 7.",
+      "evidence": [
+        "Apocalipse 11:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 13:8, toque o trecho que limita quem adora a besta.",
+      "verseRef": "Apocalipse 13:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "não estão escritos"
+        },
+        {
+          "id": "b",
+          "text": "sobre a terra"
+        },
+        {
+          "id": "c",
+          "text": "fundação do mundo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cujos nomes não estão escritos no Livro da Vida do Cordeiro",
+      "feedbackCorrect": "A restrição está em não estão escritos.",
+      "feedbackWrong": {
+        "b": "Sobre a terra localiza.",
+        "c": "Fundação fala do Cordeiro."
+      },
+      "hint": "Procure a negação dos nomes.",
+      "learningObjective": "Tocar a restrição da adoração.",
+      "evidence": [
+        "Apocalipse 13:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o arco do conflito até o anúncio.",
+      "verseRef": "Apocalipse 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A besta recebe poder limitado"
+        },
+        {
+          "id": "b",
+          "text": "Os santos perseveram na fé"
+        },
+        {
+          "id": "c",
+          "text": "O Cordeiro vence no conflito"
+        }
+      ],
+      "correctOrder": [
+        "c",
+        "a",
+        "b"
+      ],
+      "evidenceSpan": "evangelho eterno",
+      "feedbackCorrect": "Vitória, besta e perseverança nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece pela vitória do Cordeiro."
+      },
+      "hint": "A vitória precede a perseverança anunciada.",
+      "learningObjective": "Encadear de novo o arco do bloco.",
+      "evidence": [
+        "Apocalipse 14:6"
+      ]
+    }
+  ]
+}

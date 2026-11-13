@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "naum-cap-sem-nac-01-o-senhor-e-bom-01",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+    "prompt": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+    "cue": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "O versículo une bondade e fortaleza no dia da angústia.",
+    "feedbackWrong": {
+      "false": "Releia 1:7: o Senhor é bom e fortaleza."
+    },
+    "hint": "Veja como o versículo descreve o Senhor.",
+    "learningObjective": "Observar a descrição do Senhor em 1:7.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-01-o-senhor-e-bom-02",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 1:7, toque o que o Senhor é no dia da angústia.",
+    "prompt": "Em Naum 1:7, toque o que o Senhor é no dia da angústia.",
+    "cue": "Em Naum 1:7, toque o que o Senhor é no dia da angústia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fortaleza"
+      },
+      {
+        "id": "b",
+        "text": "angústia"
+      },
+      {
+        "id": "c",
+        "text": "refugiam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Ele é fortaleza no dia da angústia.",
+    "feedbackWrong": {
+      "b": "\"Angústia\" é o tempo do dia, não o que o Senhor é.",
+      "c": "\"Refugiam\" descreve quem busca; o Senhor é a fortaleza."
+    },
+    "hint": "Procure o substantivo de proteção.",
+    "learningObjective": "Identificar a imagem de proteção.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-01-o-senhor-e-bom-03",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 1:3, o Senhor é lento para quê?",
+    "prompt": "Segundo Naum 1:3, o Senhor é lento para quê?",
+    "cue": "Segundo Naum 1:3, o Senhor é lento para quê?",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para ouvir o mar"
+      },
+      {
+        "id": "b",
+        "text": "Para salvar Nínive"
+      },
+      {
+        "id": "c",
+        "text": "Para esquecer o culpado"
+      },
+      {
+        "id": "d",
+        "text": "Para se irar"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O Senhor é lento para se irar",
+    "feedbackCorrect": "Ele é lento para se irar, mas grande em poder.",
+    "feedbackWrong": {
+      "a": "Ele repreende o mar; não é lentidão para ouvi-lo.",
+      "b": "O texto não fala de salvar Nínive.",
+      "c": "Ele jamais considera inocente o culpado."
+    },
+    "hint": "Veja o começo do versículo.",
+    "learningObjective": "Observar a lentidão do Senhor para irar-se.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-01-o-senhor-e-bom-04",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 1:7 na ordem do texto.",
+    "prompt": "Monte Naum 1:7 na ordem do texto.",
+    "cue": "Monte Naum 1:7 na ordem do texto.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é bom"
+      },
+      {
+        "id": "b",
+        "text": "é fortaleza no dia da angústia"
+      },
+      {
+        "id": "c",
+        "text": "e conhece os que nele se refugiam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "Bom; fortaleza na angústia; conhece quem se refugia.",
+    "feedbackWrong": {
+      "default": "Bondade primeiro; o refúgio fecha."
+    },
+    "hint": "Comece por \"O Senhor é bom\".",
+    "learningObjective": "Reconhecer a sequência de 1:7.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-01-o-senhor-e-bom-05",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 1:3, que palavra descreve quem o Senhor não considera inocente?",
+    "prompt": "Em Naum 1:3, que palavra descreve quem o Senhor não considera inocente?",
+    "cue": "Em Naum 1:3, que palavra descreve quem o Senhor não considera inocente?",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "template": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o ___. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "a",
+        "text": "culpado"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "amigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "jamais considera inocente o culpado",
+    "feedbackCorrect": "Ele não considera inocente o culpado.",
+    "feedbackWrong": {
+      "b": "\"Servo\" não aparece nessa frase.",
+      "c": "\"Amigo\" não aparece nessa frase."
+    },
+    "hint": "É o substantivo no fim dessa frase.",
+    "learningObjective": "Lembrar quem não é inocentado.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-01-o-senhor-e-bom-06",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Naum anuncia juízo a Nínive e abrigo a quem confia no Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim de toda angústia humana"
+      },
+      {
+        "id": "b",
+        "text": "Abrigo para quem se refugia"
+      },
+      {
+        "id": "c",
+        "text": "Inocência automática de Nínive"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "No juízo sobre Nínive, há abrigo para quem se refugia nele.",
+    "feedbackWrong": {
+      "a": "Há dia da angústia; o Senhor é fortaleza nele.",
+      "c": "O culpado não é considerado inocente."
+    },
+    "hint": "Veja quem o Senhor conhece.",
+    "learningObjective": "Ligar juízo e refúgio.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-01-o-senhor-e-bom-01",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 1:3, o Senhor é lento para se irar e, por isso, considera inocente o culpado.",
+    "prompt": "Em Naum 1:3, o Senhor é lento para se irar e, por isso, considera inocente o culpado.",
+    "cue": "Em Naum 1:3, o Senhor é lento para se irar e, por isso, considera inocente o culpado.",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "jamais considera inocente o culpado",
+    "feedbackCorrect": "Ele é lento para irar-se, mas jamais inocenta o culpado.",
+    "feedbackWrong": {
+      "true": "Releia 1:3: jamais considera inocente o culpado."
+    },
+    "hint": "Veja o que ele faz com o culpado.",
+    "learningObjective": "Compreender lentidão e justiça juntas.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-01-o-senhor-e-bom-02",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+    "prompt": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+    "cue": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "lento"
+      },
+      {
+        "id": "c",
+        "text": "nuvens"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "lento para se irar, mas grande em poder",
+    "feedbackCorrect": "\"Mas\" marca o contraste: lento, mas grande em poder.",
+    "feedbackWrong": {
+      "b": "\"Lento\" é o primeiro polo, não o marcador.",
+      "c": "\"Nuvens\" aparece depois, na imagem da marcha."
+    },
+    "hint": "É a palavra entre lentidão e poder.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-01-o-senhor-e-bom-03",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Naum 1:2–7 relaciona furor e bondade do Senhor?",
+    "prompt": "Como Naum 1:2–7 relaciona furor e bondade do Senhor?",
+    "cue": "Como Naum 1:2–7 relaciona furor e bondade do Senhor?",
+    "verseRef": "Naum 1:6–7",
+    "passageText": "Quem pode resistir ao seu furor? E quem conseguirá suportar a intensidade da sua ira? A sua indignação se derrama como fogo, e as rochas são demolidas por causa disso. O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O furor e a bondade se anulam"
+      },
+      {
+        "id": "b",
+        "text": "Só furor, sem nenhum abrigo"
+      },
+      {
+        "id": "c",
+        "text": "Só bondade, sem nenhum juízo"
+      },
+      {
+        "id": "d",
+        "text": "Furor contra o culpado; fortaleza para quem se refugia"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "O furor é irresistível contra o adversário; a bondade abriga quem se refugia.",
+    "feedbackWrong": {
+      "a": "O texto apresenta os dois lados, não anulação.",
+      "b": "1:7 afirma bondade e fortaleza.",
+      "c": "Há furor e vingança no trecho."
+    },
+    "hint": "Ligue 1:6 a 1:7.",
+    "learningObjective": "Relacionar furor e fortaleza.",
+    "evidence": [
+      "Naum 1:6–7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-01-o-senhor-e-bom-04",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move Naum 1:2–7?",
+    "prompt": "Como se move Naum 1:2–7?",
+    "cue": "Como se move Naum 1:2–7?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor se revela zeloso e vingador"
+      },
+      {
+        "id": "b",
+        "text": "É lento para irar-se, sem inocentar o culpado"
+      },
+      {
+        "id": "c",
+        "text": "É bom e fortaleza para quem se refugia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "Zelo e vingança; lentidão com justiça; fortaleza para os que se refugiam.",
+    "feedbackWrong": {
+      "default": "Zelo primeiro; a fortaleza fecha."
+    },
+    "hint": "Comece pelo Deus zeloso.",
+    "learningObjective": "Seguir o movimento do caráter do Senhor.",
+    "evidence": [
+      "Naum 1:2–7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-01-o-senhor-e-bom-05",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+    "prompt": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+    "cue": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "template": "O Senhor é lento para se irar, mas ___ em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "a",
+        "text": "curto"
+      },
+      {
+        "id": "b",
+        "text": "grande"
+      },
+      {
+        "id": "c",
+        "text": "fraco"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas grande em poder",
+    "feedbackCorrect": "Ele é grande em poder.",
+    "feedbackWrong": {
+      "a": "\"Curto\" não descreve o poder.",
+      "c": "\"Fraco\" é o oposto do texto."
+    },
+    "hint": "É o adjetivo ligado a poder.",
+    "learningObjective": "Lembrar o adjetivo do poder.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-01-o-senhor-e-bom-06",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 1:7 a Salmos 46:1?",
+    "prompt": "O que liga Naum 1:7 a Salmos 46:1?",
+    "cue": "O que liga Naum 1:7 a Salmos 46:1?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Salmos 46:1",
+      "text": "Deus é nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é fortaleza na angústia"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona quem confia"
+      },
+      {
+        "id": "c",
+        "text": "Deus protege só Nínive"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Nos dois textos, Deus é fortaleza no aperto.",
+    "feedbackWrong": {
+      "b": "Os textos afirmam abrigo, não abandono.",
+      "c": "Nínive é julgada; o abrigo é para quem se refugia."
+    },
+    "hint": "Compare fortaleza e angústia.",
+    "learningObjective": "Relacionar Naum ao Salmo da fortaleza.",
+    "evidence": [
+      "Naum 1:7",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-01-o-senhor-e-bom-01",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Naum 1:2–7, o Senhor é bom e fortaleza, e também jamais inocenta o culpado.",
+    "prompt": "Em Naum 1:2–7, o Senhor é bom e fortaleza, e também jamais inocenta o culpado.",
+    "cue": "Em Naum 1:2–7, o Senhor é bom e fortaleza, e também jamais inocenta o culpado.",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "jamais considera inocente o culpado",
+    "feedbackCorrect": "Bondade e juízo convivem: ele é fortaleza e não inocenta o culpado.",
+    "feedbackWrong": {
+      "false": "Una 1:7 e 1:3: bondade/fortaleza e juízo sobre o culpado."
+    },
+    "hint": "Veja o que acontece com o culpado.",
+    "learningObjective": "Interpretar bondade sem cancelar justiça.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-01-o-senhor-e-bom-02",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+    "prompt": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+    "cue": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "é bom"
+      },
+      {
+        "id": "b",
+        "text": "nele se refugiam"
+      },
+      {
+        "id": "c",
+        "text": "dia da angústia"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Ele conhece os que nele se refugiam.",
+    "feedbackWrong": {
+      "a": "\"É bom\" abre o versículo; o fim fala de quem se refugia.",
+      "c": "O dia da angústia é o tempo, não o grupo."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar com o texto quem é conhecido.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-01-o-senhor-e-bom-03",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Naum 1:2–7 sustenta sobre o Senhor?",
+    "prompt": "Que leitura Naum 1:2–7 sustenta sobre o Senhor?",
+    "cue": "Que leitura Naum 1:2–7 sustenta sobre o Senhor?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Julga o culpado e abriga quem nele se refugia"
+      },
+      {
+        "id": "b",
+        "text": "Só se ira e não conhece ninguém"
+      },
+      {
+        "id": "c",
+        "text": "Trata Nínive e os fiéis do mesmo modo"
+      },
+      {
+        "id": "d",
+        "text": "Só é bom e nunca se ira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "Ele julga o culpado e abriga quem nele se refugia.",
+    "feedbackWrong": {
+      "b": "Ele conhece os que nele se refugiam.",
+      "c": "Há sentença sobre Nínive e abrigo aos que se refugiam.",
+      "d": "Há furor e vingança no texto."
+    },
+    "hint": "Ligue 1:3 e 1:7.",
+    "learningObjective": "Escolher a leitura de juízo com refúgio.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-01-o-senhor-e-bom-04",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o Senhor justo e refúgio na Escritura?",
+    "prompt": "Qual sequência mostra o Senhor justo e refúgio na Escritura?",
+    "cue": "Qual sequência mostra o Senhor justo e refúgio na Escritura?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Naum une juízo ao culpado e fortaleza aos fiéis"
+      },
+      {
+        "id": "b",
+        "text": "Êxodo descreve o Senhor lento para irar-se e justo"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo confessa Deus como refúgio e fortaleza"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "Naum une justiça e abrigo; Êxodo descreve o caráter; o Salmo confessa fortaleza.",
+    "feedbackWrong": {
+      "default": "Siga: Naum 1:7, Êxodo 34 e Salmos 46:1."
+    },
+    "hint": "Parta de Naum.",
+    "learningObjective": "Ver Naum no fio do caráter de Deus.",
+    "evidence": [
+      "Naum 1:7",
+      "Êxodo 34:6–7",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-01-o-senhor-e-bom-05",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+    "prompt": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+    "cue": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "template": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fogem"
+      },
+      {
+        "id": "b",
+        "text": "esquecem"
+      },
+      {
+        "id": "c",
+        "text": "refugiam"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "Eles se refugiam nele.",
+    "feedbackWrong": {
+      "a": "\"Fogem\" não é o verbo do fim de 1:7.",
+      "b": "\"Esquecem\" é o oposto da confiança."
+    },
+    "hint": "É o verbo no fim do versículo.",
+    "learningObjective": "Lembrar o verbo de quem busca abrigo.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-01-o-senhor-e-bom-06",
+    "trail": "naum-cap",
+    "section": "nac-01-o-senhor-e-bom",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 1:7 a Joel 3:16?",
+    "prompt": "O que liga Naum 1:7 a Joel 3:16?",
+    "cue": "O que liga Naum 1:7 a Joel 3:16?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Joel 3:16",
+      "text": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor inocenta Nínive"
+      },
+      {
+        "id": "b",
+        "text": "Senhor abandona Sião"
+      },
+      {
+        "id": "c",
+        "text": "Senhor abriga seu povo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Nos dois textos, o Senhor é abrigo do seu povo no dia terrível.",
+    "feedbackWrong": {
+      "a": "Nínive é julgada; o abrigo é para quem se refugia.",
+      "b": "Os textos afirmam abrigo, não abandono."
+    },
+    "hint": "Compare fortaleza e refúgio.",
+    "learningObjective": "Ligar Naum ao refúgio em Joel.",
+    "evidence": [
+      "Naum 1:7",
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-02-o-saque-de-ninive-01",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 2:6, as comportas do rio se abrirão e o palácio será arrasado.",
+    "prompt": "Em Naum 2:6, as comportas do rio se abrirão e o palácio será arrasado.",
+    "cue": "Em Naum 2:6, as comportas do rio se abrirão e o palácio será arrasado.",
+    "verseRef": "Naum 2:6",
+    "passageText": "As comportas do rio se abrirão, e o palácio será arrasado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "As comportas do rio se abrirão, e o palácio será arrasado",
+    "feedbackCorrect": "O versículo une a abertura do rio e a queda do palácio.",
+    "feedbackWrong": {
+      "false": "Releia 2:6: comportas se abrem e o palácio é arrasado."
+    },
+    "hint": "Veja o que acontece com o rio e o palácio.",
+    "learningObjective": "Observar a queda do palácio em 2:6.",
+    "evidence": [
+      "Naum 2:6"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-02-o-saque-de-ninive-02",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 2:6, toque o que será arrasado.",
+    "prompt": "Em Naum 2:6, toque o que será arrasado.",
+    "cue": "Em Naum 2:6, toque o que será arrasado.",
+    "verseRef": "Naum 2:6",
+    "passageText": "As comportas do rio se abrirão, e o palácio será arrasado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "comportas"
+      },
+      {
+        "id": "b",
+        "text": "palácio"
+      },
+      {
+        "id": "c",
+        "text": "rio"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o palácio será arrasado",
+    "feedbackCorrect": "O que cai é o palácio, símbolo do poder da cidade.",
+    "feedbackWrong": {
+      "a": "As comportas se abrem; o alvo do arrasar é outro.",
+      "c": "O rio abre as comportas; o que é arrasado vem depois."
+    },
+    "hint": "Procure o substantivo no fim do versículo.",
+    "learningObjective": "Identificar o que o juízo arrasa.",
+    "evidence": [
+      "Naum 2:6"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-02-o-saque-de-ninive-03",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 2:9, o que se manda saquear em Nínive?",
+    "prompt": "Segundo Naum 2:9, o que se manda saquear em Nínive?",
+    "cue": "Segundo Naum 2:9, o que se manda saquear em Nínive?",
+    "verseRef": "Naum 2:9",
+    "passageText": "Saqueiem a prata, saqueiem o ouro, pois os tesouros não se acabam; há uma profusão de todo tipo de objetos desejáveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só as videiras de Jacó"
+      },
+      {
+        "id": "b",
+        "text": "Somente as muralhas do rio"
+      },
+      {
+        "id": "c",
+        "text": "A prata e o ouro"
+      },
+      {
+        "id": "d",
+        "text": "Apenas os carros das praças"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
+    "feedbackCorrect": "O texto manda saquear prata e ouro: os tesouros não se acabam.",
+    "feedbackWrong": {
+      "a": "As videiras aparecem em 2:2 como o que os saqueadores destruíram.",
+      "b": "O rio abre comportas; o saque é dos tesouros.",
+      "d": "Os carros descrevem o ataque; o saque é de prata e ouro."
+    },
+    "hint": "Leia os dois objetos do verbo saquear.",
+    "learningObjective": "Observar o que é saqueado em Nínive.",
+    "evidence": [
+      "Naum 2:9"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-02-o-saque-de-ninive-04",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 2:9 na ordem do texto.",
+    "prompt": "Monte Naum 2:9 na ordem do texto.",
+    "cue": "Monte Naum 2:9 na ordem do texto.",
+    "verseRef": "Naum 2:9",
+    "passageText": "Saqueiem a prata, saqueiem o ouro, pois os tesouros não se acabam; há uma profusão de todo tipo de objetos desejáveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Saqueiem a prata, saqueiem o ouro"
+      },
+      {
+        "id": "b",
+        "text": "pois os tesouros não se acabam"
+      },
+      {
+        "id": "c",
+        "text": "há uma profusão de todo tipo de objetos desejáveis"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
+    "feedbackCorrect": "Primeiro a ordem de saquear; depois a abundância dos tesouros.",
+    "feedbackWrong": {
+      "default": "Comece pela ordem de saquear; a profusão fecha."
+    },
+    "hint": "O versículo começa com o verbo saquear.",
+    "learningObjective": "Reconhecer a sequência de 2:9.",
+    "evidence": [
+      "Naum 2:9"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-02-o-saque-de-ninive-05",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 2:10, que palavra abre a descrição do estado final da cidade?",
+    "prompt": "Em Naum 2:10, que palavra abre a descrição do estado final da cidade?",
+    "cue": "Em Naum 2:10, que palavra abre a descrição do estado final da cidade?",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "template": "___ desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cheia"
+      },
+      {
+        "id": "b",
+        "text": "Vazia"
+      },
+      {
+        "id": "c",
+        "text": "Segura"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "A cidade temida fica vazia, desolada e exaurida.",
+    "feedbackWrong": {
+      "a": "O texto não diz cheia; começa com vazia.",
+      "c": "Segura é o oposto do pânico descrito no versículo."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Lembrar o estado final de Nínive.",
+    "evidence": [
+      "Naum 2:10"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-02-o-saque-de-ninive-06",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 2:2 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 2:2 comunica que se liga a este contexto?",
+    "cue": "O que Naum 2:2 comunica que se liga a este contexto?",
+    "verseRef": "Naum 2:2",
+    "passageText": "Porque o Senhor restaurará a glória de Jacó, assim como a glória de Israel; pois os saqueadores os saquearam e destruíram suas videiras.",
+    "passageA": {
+      "ref": "Naum 2:2",
+      "text": "Porque o Senhor restaurará a glória de Jacó, assim como a glória de Israel; pois os saqueadores os saquearam e destruíram suas videiras."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Enquanto Nínive cai, o Senhor restaura a glória do seu povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fim de todo juízo divino"
+      },
+      {
+        "id": "b",
+        "text": "Vitória garantida de Nínive"
+      },
+      {
+        "id": "c",
+        "text": "Restauração da glória de Jacó"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Senhor restaurará a glória de Jacó",
+    "feedbackCorrect": "O ataque a Nínive serve à restauração de Jacó e Israel.",
+    "feedbackWrong": {
+      "a": "O texto anuncia juízo sobre a cidade, não o fim do juízo.",
+      "b": "Nínive é o alvo do destruidor, não a vitoriosa."
+    },
+    "hint": "Veja o que o Senhor fará por Jacó.",
+    "learningObjective": "Ligar a queda de Nínive à restauração de Jacó.",
+    "evidence": [
+      "Naum 2:2"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-02-o-saque-de-ninive-01",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 2:5, os valentes de Nínive avançam sem tropeçar até o muro.",
+    "prompt": "Em Naum 2:5, os valentes de Nínive avançam sem tropeçar até o muro.",
+    "cue": "Em Naum 2:5, os valentes de Nínive avançam sem tropeçar até o muro.",
+    "verseRef": "Naum 2:5",
+    "passageText": "Ele se lembrará de seus valentes, mas eles tropeçarão em seu caminho; apressar-se-ão até seu muro, mas encontrarão o inimigo preparado.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas eles tropeçarão em seu caminho",
+    "feedbackCorrect": "O \"mas\" marca o contraste: ele se lembra deles, mas eles tropeçam.",
+    "feedbackWrong": {
+      "true": "Releia 2:5: eles tropeçarão e acharão o inimigo preparado."
+    },
+    "hint": "Repare na palavra que muda o rumo dos valentes.",
+    "learningObjective": "Compreender o contraste sobre os valentes.",
+    "evidence": [
+      "Naum 2:5"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-02-o-saque-de-ninive-02",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 2:5, toque a palavra que marca o contraste após lembrar os valentes.",
+    "prompt": "Em Naum 2:5, toque a palavra que marca o contraste após lembrar os valentes.",
+    "cue": "Em Naum 2:5, toque a palavra que marca o contraste após lembrar os valentes.",
+    "verseRef": "Naum 2:5",
+    "passageText": "Ele se lembrará de seus valentes, mas eles tropeçarão em seu caminho; apressar-se-ão até seu muro, mas encontrarão o inimigo preparado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "valentes"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "muro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas eles tropeçarão em seu caminho",
+    "feedbackCorrect": "\"Mas\" vira a cena: lembrar os valentes não evita o tropeço.",
+    "feedbackWrong": {
+      "a": "\"Valentes\" é o sujeito; o contraste vem na palavra curta.",
+      "c": "\"Muro\" é o destino; o contraste já veio antes."
+    },
+    "hint": "Procure a palavra curta depois da vírgula.",
+    "learningObjective": "Reconhecer o marcador de contraste em 2:5.",
+    "evidence": [
+      "Naum 2:5"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-02-o-saque-de-ninive-03",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Naum 2:8 se relaciona com o passado de Nínive?",
+    "prompt": "Como Naum 2:8 se relaciona com o passado de Nínive?",
+    "cue": "Como Naum 2:8 se relaciona com o passado de Nínive?",
+    "verseRef": "Naum 2:8",
+    "passageText": "Nínive, desde que existe, tem sido como um tanque de águas; mas, agora, fogem. \"Parem! Parem!\" clama-se; mas ninguém se volta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Era como tanque de águas; agora fogem e ninguém volta"
+      },
+      {
+        "id": "b",
+        "text": "Continua cheia e ninguém consegue sair"
+      },
+      {
+        "id": "c",
+        "text": "Sempre foi vazia e agora se enche de forças"
+      },
+      {
+        "id": "d",
+        "text": "Nunca teve águas e por isso não tem defesa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tem sido como um tanque de águas; mas, agora, fogem",
+    "feedbackCorrect": "O contraste é claro: abundância antiga, fuga presente.",
+    "feedbackWrong": {
+      "b": "Agora fogem; ninguém se volta ao chamado.",
+      "c": "O texto diz o contrário: era cheia e agora fogem.",
+      "d": "O texto compara a cidade a um tanque de águas."
+    },
+    "hint": "Compare \"tem sido\" com \"agora\".",
+    "learningObjective": "Relacionar o passado abundante com a fuga atual.",
+    "evidence": [
+      "Naum 2:8"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-02-o-saque-de-ninive-04",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move a cena em Naum 2:6–10?",
+    "prompt": "Como se move a cena em Naum 2:6–10?",
+    "cue": "Como se move a cena em Naum 2:6–10?",
+    "verseRef": "Naum 2:6–7",
+    "passageText": "As comportas do rio se abrirão, e o palácio será arrasado. Pois está decretado: a cidade-rainha será despida e levada em cativeiro; suas servas gemem como pombas e batem no peito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O rio abre e o palácio é arrasado"
+      },
+      {
+        "id": "b",
+        "text": "A cidade-rainha vai ao cativeiro"
+      },
+      {
+        "id": "c",
+        "text": "Vem o saque e a cidade fica vazia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "As comportas do rio se abrirão, e o palácio será arrasado",
+    "feedbackCorrect": "Primeiro a brecha; depois o cativeiro; por fim o saque e o vazio.",
+    "feedbackWrong": {
+      "default": "Comece pelo rio e o palácio; o vazio fecha."
+    },
+    "hint": "A abertura do rio vem antes do saque.",
+    "learningObjective": "Compreender o avanço da queda de Nínive.",
+    "evidence": [
+      "Naum 2:6–7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-02-o-saque-de-ninive-05",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 2:5, que verbo descreve o que acontece com os valentes no caminho?",
+    "prompt": "Em Naum 2:5, que verbo descreve o que acontece com os valentes no caminho?",
+    "cue": "Em Naum 2:5, que verbo descreve o que acontece com os valentes no caminho?",
+    "verseRef": "Naum 2:5",
+    "passageText": "Ele se lembrará de seus valentes, mas eles tropeçarão em seu caminho; apressar-se-ão até seu muro, mas encontrarão o inimigo preparado.",
+    "template": "Ele se lembrará de seus valentes, mas eles ___ em seu caminho; apressar-se-ão até seu muro, mas encontrarão o inimigo preparado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vencerão"
+      },
+      {
+        "id": "b",
+        "text": "descansarão"
+      },
+      {
+        "id": "c",
+        "text": "tropeçarão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas eles tropeçarão em seu caminho",
+    "feedbackCorrect": "Eles tropeçarão: a força lembrada não impede a queda.",
+    "feedbackWrong": {
+      "a": "O texto não fala de vitória dos valentes aqui.",
+      "b": "Não há descanso; há tropeço e inimigo preparado."
+    },
+    "hint": "É o verbo depois do \"mas\".",
+    "learningObjective": "Lembrar a ação que marca o fracasso dos valentes.",
+    "evidence": [
+      "Naum 2:5"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-02-o-saque-de-ninive-06",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 2:10 a Sofonias 2:13?",
+    "prompt": "O que liga Naum 2:10 a Sofonias 2:13?",
+    "cue": "O que liga Naum 2:10 a Sofonias 2:13?",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "passageA": {
+      "ref": "Naum 2:10",
+      "text": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos."
+    },
+    "passageB": {
+      "ref": "Sofonias 2:13",
+      "text": "Estenderá também a sua mão contra o norte e destruirá a Assíria; fará de Nínive uma desolação, uma terra árida como o deserto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive feita desolação"
+      },
+      {
+        "id": "b",
+        "text": "Nínive sem qualquer juízo"
+      },
+      {
+        "id": "c",
+        "text": "Nínive eternamente segura"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "Os dois textos apontam Nínive desolada pelo juízo do Senhor.",
+    "feedbackWrong": {
+      "b": "Sofonias e Naum anunciam juízo sobre a cidade.",
+      "c": "Ambos anunciam ruína, não segurança eterna."
+    },
+    "hint": "Compare o destino de Nínive nos dois textos.",
+    "learningObjective": "Relacionar Naum e Sofonias sobre Nínive.",
+    "evidence": [
+      "Naum 2:10",
+      "Sofonias 2:13"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-02-o-saque-de-ninive-01",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Naum 2:8–10, Nínive permanece cheia e segura como tanque de águas.",
+    "prompt": "Em Naum 2:8–10, Nínive permanece cheia e segura como tanque de águas.",
+    "cue": "Em Naum 2:8–10, Nínive permanece cheia e segura como tanque de águas.",
+    "verseRef": "Naum 2:8–9",
+    "passageText": "Nínive, desde que existe, tem sido como um tanque de águas; mas, agora, fogem. \"Parem! Parem!\" clama-se; mas ninguém se volta. Saqueiem a prata, saqueiem o ouro, pois os tesouros não se acabam; há uma profusão de todo tipo de objetos desejáveis.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas, agora, fogem",
+    "feedbackCorrect": "O passado de abundância cede à fuga, ao saque e ao vazio.",
+    "feedbackWrong": {
+      "true": "Releia 2:8–10: agora fogem; a cidade fica vazia e desolada."
+    },
+    "hint": "Compare o tanque de águas com o que vem depois.",
+    "learningObjective": "Interpretar a inversão do destino de Nínive.",
+    "evidence": [
+      "Naum 2:8–9"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-02-o-saque-de-ninive-02",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 2:10, toque o trecho que mostra o estado final da cidade.",
+    "prompt": "Em Naum 2:10, toque o trecho que mostra o estado final da cidade.",
+    "cue": "Em Naum 2:10, toque o trecho que mostra o estado final da cidade.",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exaurida ficará"
+      },
+      {
+        "id": "b",
+        "text": "joelhos tremem"
+      },
+      {
+        "id": "c",
+        "text": "rostos de todos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "O veredito da cidade é: vazia, desolada e exaurida.",
+    "feedbackWrong": {
+      "b": "Os joelhos descrevem o pânico das pessoas, não o estado da cidade.",
+      "c": "Os rostos mostram o medo; o estado da cidade está no começo."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Sustentar com o texto o esvaziamento de Nínive.",
+    "evidence": [
+      "Naum 2:10"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-02-o-saque-de-ninive-03",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Naum 2:1–10 sustenta sobre o juízo de Nínive?",
+    "prompt": "Que leitura Naum 2:1–10 sustenta sobre o juízo de Nínive?",
+    "cue": "Que leitura Naum 2:1–10 sustenta sobre o juízo de Nínive?",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor restaura Nínive em vez de Jacó"
+      },
+      {
+        "id": "b",
+        "text": "O saque é só imagem; a cidade continua cheia"
+      },
+      {
+        "id": "c",
+        "text": "Os valentes garantem que Nínive nunca cai"
+      },
+      {
+        "id": "d",
+        "text": "A cidade temida é esvaziada; o juízo do Senhor não falha"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "Do alerta à ruína, o texto mostra Nínive esvaziada de fato.",
+    "feedbackWrong": {
+      "a": "2:2 fala da restauração de Jacó, não de Nínive.",
+      "b": "2:9–10 descreve saque real e cidade vazia.",
+      "c": "Os valentes tropeçam e acham o inimigo preparado."
+    },
+    "hint": "Ligue o começo do ataque ao fim vazio.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre o juízo.",
+    "evidence": [
+      "Naum 2:10"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-02-o-saque-de-ninive-04",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o juízo sobre a cidade opressora na Escritura?",
+    "prompt": "Qual sequência revela o juízo sobre a cidade opressora na Escritura?",
+    "cue": "Qual sequência revela o juízo sobre a cidade opressora na Escritura?",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Naum mostra Nínive vazia e desolada"
+      },
+      {
+        "id": "b",
+        "text": "Sofonias anuncia Nínive feita desolação"
+      },
+      {
+        "id": "c",
+        "text": "Apocalipse ecoa a queda da cidade opressora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "O juízo sobre a cidade violenta ecoa de Naum a Sofonias e ao Apocalipse.",
+    "feedbackWrong": {
+      "default": "Siga: Naum 2:10, Sofonias 2:13 e Apocalipse 18:2."
+    },
+    "hint": "Parta de Naum e avance na Escritura.",
+    "learningObjective": "Ver a queda de Nínive no fio bíblico do juízo.",
+    "evidence": [
+      "Naum 2:10",
+      "Sofonias 2:13",
+      "Apocalipse 18:2"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-02-o-saque-de-ninive-05",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 2:9, que verbo no imperativo abre a ordem sobre os tesouros?",
+    "prompt": "Em Naum 2:9, que verbo no imperativo abre a ordem sobre os tesouros?",
+    "cue": "Em Naum 2:9, que verbo no imperativo abre a ordem sobre os tesouros?",
+    "verseRef": "Naum 2:9",
+    "passageText": "Saqueiem a prata, saqueiem o ouro, pois os tesouros não se acabam; há uma profusão de todo tipo de objetos desejáveis.",
+    "template": "Saqueiem a prata, ___ o ouro, pois os tesouros não se acabam; há uma profusão de todo tipo de objetos desejáveis.",
+    "options": [
+      {
+        "id": "a",
+        "text": "guardem"
+      },
+      {
+        "id": "b",
+        "text": "saqueiem"
+      },
+      {
+        "id": "c",
+        "text": "escondam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Saqueiem a prata, saqueiem o ouro",
+    "feedbackCorrect": "\"Saqueiem\" inverte o papel: a saqueadora é saqueada.",
+    "feedbackWrong": {
+      "a": "Não há ordem de guardar; o verbo é de saque.",
+      "c": "O texto manda saquear, não esconder."
+    },
+    "hint": "É o verbo repetido no começo do versículo.",
+    "learningObjective": "Lembrar o termo que carrega a inversão do juízo.",
+    "evidence": [
+      "Naum 2:9"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-02-o-saque-de-ninive-06",
+    "trail": "naum-cap",
+    "section": "nac-02-o-saque-de-ninive",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 2:10 a Apocalipse 18:2?",
+    "prompt": "O que liga Naum 2:10 a Apocalipse 18:2?",
+    "cue": "O que liga Naum 2:10 a Apocalipse 18:2?",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "passageA": {
+      "ref": "Naum 2:10",
+      "text": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos."
+    },
+    "passageB": {
+      "ref": "Apocalipse 18:2",
+      "text": "E exclamou em alta voz, dizendo: Caiu! Caiu a grande Babilônia, e se tornou morada de demônios, covil de toda espécie de espírito imundo e esconderijo de todo gênero de ave imunda e detestável."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência de qualquer juízo"
+      },
+      {
+        "id": "b",
+        "text": "Vitória eterna da cidade"
+      },
+      {
+        "id": "c",
+        "text": "Queda da cidade opressora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "Nos dois textos, a cidade que oprimia cai sob o juízo de Deus.",
+    "feedbackWrong": {
+      "a": "O juízo é o tema comum dos dois trechos.",
+      "b": "Ambos anunciam queda, não vitória eterna."
+    },
+    "hint": "Compare o destino da cidade em cada texto.",
+    "learningObjective": "Ligar a queda de Nínive à queda da cidade no Apocalipse.",
+    "evidence": [
+      "Naum 2:10",
+      "Apocalipse 18:2"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-03-eis-me-contra-ti-01",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 3:5, o SENHOR dos Exércitos declara estar contra Nínive.",
+    "prompt": "Em Naum 3:5, o SENHOR dos Exércitos declara estar contra Nínive.",
+    "cue": "Em Naum 3:5, o SENHOR dos Exércitos declara estar contra Nínive.",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+    "feedbackCorrect": "O versículo abre com a declaração: estou contra você.",
+    "feedbackWrong": {
+      "false": "Releia 3:5: Eis que estou contra você, diz o SENHOR."
+    },
+    "hint": "Veja a declaração no começo do versículo.",
+    "learningObjective": "Observar a declaração do Senhor contra Nínive.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-03-eis-me-contra-ti-02",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 3:5, toque o que o Senhor mostrará aos reinos.",
+    "prompt": "Em Naum 3:5, toque o que o Senhor mostrará aos reinos.",
+    "cue": "Em Naum 3:5, toque o que o Senhor mostrará aos reinos.",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nações"
+      },
+      {
+        "id": "b",
+        "text": "vestes"
+      },
+      {
+        "id": "c",
+        "text": "humilhação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "aos reinos a sua humilhação",
+    "feedbackCorrect": "Aos reinos ele mostra a humilhação dela.",
+    "feedbackWrong": {
+      "a": "As nações recebem a nudez; aos reinos é a humilhação.",
+      "b": "As vestes são levantadas; o que se mostra aos reinos é a humilhação."
+    },
+    "hint": "Leia o fim do versículo, depois de \"reinos\".",
+    "learningObjective": "Identificar o que é mostrado aos reinos.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-03-eis-me-contra-ti-03",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 3:7, o que dirão os que virem Nínive?",
+    "prompt": "Segundo Naum 3:7, o que dirão os que virem Nínive?",
+    "cue": "Segundo Naum 3:7, o que dirão os que virem Nínive?",
+    "verseRef": "Naum 3:7",
+    "passageText": "E será que todos os que te virem fugirão de ti e dirão: Nínive está destruída! Quem terá compaixão dela? De onde buscarei os que te consolem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Que Nínive ainda reina em paz"
+      },
+      {
+        "id": "b",
+        "text": "Que suas muralhas nunca caem"
+      },
+      {
+        "id": "c",
+        "text": "Que todos terão compaixão dela"
+      },
+      {
+        "id": "d",
+        "text": "Que Nínive está destruída"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Nínive está destruída! Quem terá compaixão dela?",
+    "feedbackCorrect": "Quem a vir fugirá e dirá: Nínive está destruída.",
+    "feedbackWrong": {
+      "a": "O texto anuncia destruição, não reinado em paz.",
+      "b": "O trecho fala de destruição, não de muralhas intactas.",
+      "c": "A pergunta é: quem terá compaixão dela?"
+    },
+    "hint": "Veja a frase que os observadores pronunciam.",
+    "learningObjective": "Observar a reação diante de Nínive destruída.",
+    "evidence": [
+      "Naum 3:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-03-eis-me-contra-ti-04",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 3:6 na ordem do texto.",
+    "prompt": "Monte Naum 3:6 na ordem do texto.",
+    "cue": "Monte Naum 3:6 na ordem do texto.",
+    "verseRef": "Naum 3:6",
+    "passageText": "Lançarei sobre você imundícias, te tratarei com desprezo e te porei como um espetáculo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lançarei sobre você imundícias"
+      },
+      {
+        "id": "b",
+        "text": "te tratarei com desprezo"
+      },
+      {
+        "id": "c",
+        "text": "e te porei como um espetáculo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Lançarei sobre você imundícias, te tratarei com desprezo",
+    "feedbackCorrect": "Imundícias, desprezo e espetáculo: a exposição pública avança.",
+    "feedbackWrong": {
+      "default": "Comece pelo lançar imundícias; o espetáculo fecha."
+    },
+    "hint": "O versículo começa com \"Lançarei\".",
+    "learningObjective": "Reconhecer a sequência de 3:6.",
+    "evidence": [
+      "Naum 3:6"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-03-eis-me-contra-ti-05",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 3:10, para onde No-Amon foi levada?",
+    "prompt": "Em Naum 3:10, para onde No-Amon foi levada?",
+    "cue": "Em Naum 3:10, para onde No-Amon foi levada?",
+    "verseRef": "Naum 3:10",
+    "passageText": "No entanto, foi levada ao exílio; também os seus filhos foram despedaçados nas esquinas de todas as ruas; e sobre os seus nobres lançaram sortes, e todos os seus grandes foram presos com grilhões.",
+    "template": "No entanto, foi levada ao ___; também os seus filhos foram despedaçados nas esquinas de todas as ruas; e sobre os seus nobres lançaram sortes, e todos os seus grandes foram presos com grilhões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trono"
+      },
+      {
+        "id": "b",
+        "text": "vitória"
+      },
+      {
+        "id": "c",
+        "text": "exílio"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "No entanto, foi levada ao exílio",
+    "feedbackCorrect": "Apesar da força, foi levada ao exílio.",
+    "feedbackWrong": {
+      "a": "Não há trono no fim; há exílio e grilhões.",
+      "b": "O texto não fala de vitória; fala de exílio."
+    },
+    "hint": "É o destino depois de \"foi levada ao\".",
+    "learningObjective": "Lembrar o destino de No-Amon.",
+    "evidence": [
+      "Naum 3:10"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-03-eis-me-contra-ti-06",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 3:5 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 3:5 comunica que se liga a este contexto?",
+    "cue": "O que Naum 3:5 comunica que se liga a este contexto?",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "passageA": {
+      "ref": "Naum 3:5",
+      "text": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Senhor confronta Nínive com vergonha pública diante das nações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Louvor das nações a Nínive"
+      },
+      {
+        "id": "b",
+        "text": "Exposição pública da opressora"
+      },
+      {
+        "id": "c",
+        "text": "Proteção secreta de Nínive"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
+    "feedbackCorrect": "O juízo não é privado: nudez e humilhação diante das nações.",
+    "feedbackWrong": {
+      "a": "As nações veem a humilhação, não louvam a cidade.",
+      "c": "O texto mostra exposição, não proteção secreta."
+    },
+    "hint": "Veja o que será mostrado às nações.",
+    "learningObjective": "Ligar o confronto à exposição pública.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-03-eis-me-contra-ti-01",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 3:8–10, No-Amon era forte entre águas e, por isso, nunca foi levada ao exílio.",
+    "prompt": "Em Naum 3:8–10, No-Amon era forte entre águas e, por isso, nunca foi levada ao exílio.",
+    "cue": "Em Naum 3:8–10, No-Amon era forte entre águas e, por isso, nunca foi levada ao exílio.",
+    "verseRef": "Naum 3:10",
+    "passageText": "No entanto, foi levada ao exílio; também os seus filhos foram despedaçados nas esquinas de todas as ruas; e sobre os seus nobres lançaram sortes, e todos os seus grandes foram presos com grilhões.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "No entanto, foi levada ao exílio",
+    "feedbackCorrect": "A força entre águas não impediu o exílio: \"no entanto\" marca a queda.",
+    "feedbackWrong": {
+      "true": "Releia 3:10: no entanto, foi levada ao exílio."
+    },
+    "hint": "Repare na expressão que muda o rumo após a força.",
+    "learningObjective": "Compreender o contraste entre força e exílio.",
+    "evidence": [
+      "Naum 3:10"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-03-eis-me-contra-ti-02",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 3:10, toque a expressão que marca o contraste após a força de No-Amon.",
+    "prompt": "Em Naum 3:10, toque a expressão que marca o contraste após a força de No-Amon.",
+    "cue": "Em Naum 3:10, toque a expressão que marca o contraste após a força de No-Amon.",
+    "verseRef": "Naum 3:10",
+    "passageText": "No entanto, foi levada ao exílio; também os seus filhos foram despedaçados nas esquinas de todas as ruas; e sobre os seus nobres lançaram sortes, e todos os seus grandes foram presos com grilhões.",
+    "options": [
+      {
+        "id": "a",
+        "text": "No entanto"
+      },
+      {
+        "id": "b",
+        "text": "grilhões"
+      },
+      {
+        "id": "c",
+        "text": "filhos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "No entanto, foi levada ao exílio",
+    "feedbackCorrect": "\"No entanto\" vira a página: força não impediu o exílio.",
+    "feedbackWrong": {
+      "b": "\"Grilhões\" é o resultado; o marcador vem antes.",
+      "c": "\"Filhos\" descreve a violência; o contraste está no início."
+    },
+    "hint": "Procure a expressão no começo do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste em 3:10.",
+    "evidence": [
+      "Naum 3:10"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-03-eis-me-contra-ti-03",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Naum 3:8–11 relaciona No-Amon e Nínive?",
+    "prompt": "Como Naum 3:8–11 relaciona No-Amon e Nínive?",
+    "cue": "Como Naum 3:8–11 relaciona No-Amon e Nínive?",
+    "verseRef": "Naum 3:11",
+    "passageText": "Você também ficará embriagada e se esconderá; também buscará refúgio contra o inimigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive é isenta porque é melhor que No-Amon"
+      },
+      {
+        "id": "b",
+        "text": "As duas cidades são salvas pelas águas"
+      },
+      {
+        "id": "c",
+        "text": "Como No-Amon caiu, Nínive também buscará refúgio"
+      },
+      {
+        "id": "d",
+        "text": "No-Amon caiu, mas Nínive nunca cairá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Você também ficará embriagada e se esconderá",
+    "feedbackCorrect": "O \"também\" aplica a Nínive o destino que já alcançou No-Amon.",
+    "feedbackWrong": {
+      "a": "A pergunta de 3:8 desafia a ideia de ser melhor.",
+      "b": "As águas não salvaram No-Amon do exílio.",
+      "d": "3:11 aplica o mesmo destino a Nínive."
+    },
+    "hint": "Veja a palavra \"também\" em 3:11.",
+    "learningObjective": "Relacionar a queda de No-Amon ao destino de Nínive.",
+    "evidence": [
+      "Naum 3:11"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-03-eis-me-contra-ti-04",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move o argumento em Naum 3:5–12?",
+    "prompt": "Como se move o argumento em Naum 3:5–12?",
+    "cue": "Como se move o argumento em Naum 3:5–12?",
+    "verseRef": "Naum 3:5–6",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação. Lançarei sobre você imundícias, te tratarei com desprezo e te porei como um espetáculo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor se declara contra Nínive"
+      },
+      {
+        "id": "b",
+        "text": "Compara Nínive à queda de No-Amon"
+      },
+      {
+        "id": "c",
+        "text": "Anuncia fortalezas frágeis como figos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+    "feedbackCorrect": "Confronto, comparação histórica e fragilidade final.",
+    "feedbackWrong": {
+      "default": "Comece pelo \"contra você\"; os figos fecham."
+    },
+    "hint": "A declaração contra Nínive vem primeiro.",
+    "learningObjective": "Compreender o avanço do argumento do juízo.",
+    "evidence": [
+      "Naum 3:5–6"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-03-eis-me-contra-ti-05",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 3:11, que palavra aplica a Nínive o destino já visto em No-Amon?",
+    "prompt": "Em Naum 3:11, que palavra aplica a Nínive o destino já visto em No-Amon?",
+    "cue": "Em Naum 3:11, que palavra aplica a Nínive o destino já visto em No-Amon?",
+    "verseRef": "Naum 3:11",
+    "passageText": "Você também ficará embriagada e se esconderá; também buscará refúgio contra o inimigo.",
+    "template": "Você ___ ficará embriagada e se esconderá; também buscará refúgio contra o inimigo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nunca"
+      },
+      {
+        "id": "b",
+        "text": "também"
+      },
+      {
+        "id": "c",
+        "text": "apenas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Você também ficará embriagada e se esconderá",
+    "feedbackCorrect": "\"Também\" liga o destino de No-Amon ao de Nínive.",
+    "feedbackWrong": {
+      "a": "O texto não isenta Nínive; aplica o mesmo destino.",
+      "c": "Não há restrição; o \"também\" amplia o juízo."
+    },
+    "hint": "É a palavra logo após \"Você\".",
+    "learningObjective": "Lembrar a palavra que aplica o juízo a Nínive.",
+    "evidence": [
+      "Naum 3:11"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-03-eis-me-contra-ti-06",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 3:5 a Jeremias 50:31?",
+    "prompt": "O que liga Naum 3:5 a Jeremias 50:31?",
+    "cue": "O que liga Naum 3:5 a Jeremias 50:31?",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "passageA": {
+      "ref": "Naum 3:5",
+      "text": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação."
+    },
+    "passageB": {
+      "ref": "Jeremias 50:31",
+      "text": "Eis que estou contra você, ó orgulhosa, diz o Senhor, o SENHOR dos Exércitos; pois já chegou o seu dia, o tempo em que hei de castigar você."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Eis que estou contra você"
+      },
+      {
+        "id": "b",
+        "text": "Louvor à soberba humana"
+      },
+      {
+        "id": "c",
+        "text": "Promessa de paz à cidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+    "feedbackCorrect": "Nos dois textos, o Senhor se declara contra a cidade orgulhosa.",
+    "feedbackWrong": {
+      "b": "O alvo é a soberba, não o louvor a ela.",
+      "c": "Ambos anunciam confronto, não paz."
+    },
+    "hint": "Compare a fórmula de abertura dos dois versículos.",
+    "learningObjective": "Relacionar a declaração contra Nínive a Jeremias.",
+    "evidence": [
+      "Naum 3:5",
+      "Jeremias 50:31"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-03-eis-me-contra-ti-01",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Naum 3:5–12, o juízo do Senhor expõe publicamente a opressora diante das nações.",
+    "prompt": "Em Naum 3:5–12, o juízo do Senhor expõe publicamente a opressora diante das nações.",
+    "cue": "Em Naum 3:5–12, o juízo do Senhor expõe publicamente a opressora diante das nações.",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
+    "feedbackCorrect": "A vergonha é pública: nações e reinos veem a humilhação.",
+    "feedbackWrong": {
+      "false": "Releia 3:5: ele mostrará às nações a nudez e a humilhação."
+    },
+    "hint": "Veja para quem a nudez e a humilhação são mostradas.",
+    "learningObjective": "Interpretar o juízo como exposição pública.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-03-eis-me-contra-ti-02",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 3:12, toque o trecho que mostra a fragilidade das fortalezas.",
+    "prompt": "Em Naum 3:12, toque o trecho que mostra a fragilidade das fortalezas.",
+    "cue": "Em Naum 3:12, toque o trecho que mostra a fragilidade das fortalezas.",
+    "verseRef": "Naum 3:12",
+    "passageText": "Todas as suas fortalezas serão como figueiras com figos precoces; se forem sacudidas, caem na boca do que as come.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fortalezas"
+      },
+      {
+        "id": "b",
+        "text": "figos precoces"
+      },
+      {
+        "id": "c",
+        "text": "boca do"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "serão como figueiras com figos precoces",
+    "feedbackCorrect": "As fortalezas caem como figos precoces ao serem sacudidos.",
+    "feedbackWrong": {
+      "a": "\"Fortalezas\" é o que se compara; a imagem da fragilidade vem depois.",
+      "c": "\"Boca\" é o destino dos figos; a fragilidade está na imagem."
+    },
+    "hint": "Procure a comparação depois de \"como\".",
+    "learningObjective": "Sustentar com o texto a fragilidade das defesas.",
+    "evidence": [
+      "Naum 3:12"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-03-eis-me-contra-ti-03",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Naum 3:5–12 sustenta sobre quem oprime as nações?",
+    "prompt": "Que leitura Naum 3:5–12 sustenta sobre quem oprime as nações?",
+    "cue": "Que leitura Naum 3:5–12 sustenta sobre quem oprime as nações?",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fica protegida para sempre por suas águas"
+      },
+      {
+        "id": "b",
+        "text": "É isenta se for maior que No-Amon"
+      },
+      {
+        "id": "c",
+        "text": "Recebe louvor das nações que oprimiu"
+      },
+      {
+        "id": "d",
+        "text": "Encontra vergonha pública diante do Senhor"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
+    "feedbackCorrect": "O Senhor expõe a opressora: nudez e humilhação diante das nações.",
+    "feedbackWrong": {
+      "a": "Nem No-Amon foi salva pelas águas.",
+      "b": "O texto aplica a Nínive o mesmo destino de No-Amon.",
+      "c": "As nações veem a destruição, não louvam."
+    },
+    "hint": "Ligue a declaração \"contra você\" ao que é mostrado.",
+    "learningObjective": "Escolher a leitura que o texto sustenta sobre a opressão.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-03-eis-me-contra-ti-04",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o juízo sobre a soberba na Escritura?",
+    "prompt": "Qual sequência revela o juízo sobre a soberba na Escritura?",
+    "cue": "Qual sequência revela o juízo sobre a soberba na Escritura?",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Naum expõe a humilhação da opressora"
+      },
+      {
+        "id": "b",
+        "text": "Provérbios diz que a soberba precede a ruína"
+      },
+      {
+        "id": "c",
+        "text": "Habacuque diz que quem despoja será despojado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "aos reinos a sua humilhação",
+    "feedbackCorrect": "A exposição de Nínive ecoa o princípio: soberba e violência voltam contra si.",
+    "feedbackWrong": {
+      "default": "Siga: Naum 3:5, Provérbios 16:18 e Habacuque 2:8."
+    },
+    "hint": "Parta de Naum e avance na Escritura.",
+    "learningObjective": "Ver o juízo de Nínive no fio da soberba e da violência.",
+    "evidence": [
+      "Naum 3:5",
+      "Provérbios 16:18",
+      "Habacuque 2:8"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-03-eis-me-contra-ti-05",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 3:12, que palavra nomeia as defesas comparadas a figueiras?",
+    "prompt": "Em Naum 3:12, que palavra nomeia as defesas comparadas a figueiras?",
+    "cue": "Em Naum 3:12, que palavra nomeia as defesas comparadas a figueiras?",
+    "verseRef": "Naum 3:12",
+    "passageText": "Todas as suas fortalezas serão como figueiras com figos precoces; se forem sacudidas, caem na boca do que as come.",
+    "template": "Todas as suas ___ serão como figueiras com figos precoces; se forem sacudidas, caem na boca do que as come.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exércitos"
+      },
+      {
+        "id": "b",
+        "text": "fortalezas"
+      },
+      {
+        "id": "c",
+        "text": "tesouros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Todas as suas fortalezas serão como figueiras com figos precoces",
+    "feedbackCorrect": "As fortalezas, símbolo de segurança, caem como figos maduros cedo.",
+    "feedbackWrong": {
+      "a": "O texto fala de fortalezas, não de exércitos aqui.",
+      "c": "Tesouros aparecem em outro capítulo; aqui são as fortalezas."
+    },
+    "hint": "É o substantivo sujeito da comparação.",
+    "learningObjective": "Lembrar o termo que carrega a fragilidade das defesas.",
+    "evidence": [
+      "Naum 3:12"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-03-eis-me-contra-ti-06",
+    "trail": "naum-cap",
+    "section": "nac-03-eis-me-contra-ti",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 3:5 a Habacuque 2:8?",
+    "prompt": "O que liga Naum 3:5 a Habacuque 2:8?",
+    "cue": "O que liga Naum 3:5 a Habacuque 2:8?",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "passageA": {
+      "ref": "Naum 3:5",
+      "text": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação."
+    },
+    "passageB": {
+      "ref": "Habacuque 2:8",
+      "text": "Como despojaste muitas nações, assim também todos os outros povos te despojarão, por causa do sangue dos homens e da violência na terra, na cidade e entre todos os seus moradores."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "A opressora é exaltada para sempre"
+      },
+      {
+        "id": "b",
+        "text": "A violência fica sem resposta"
+      },
+      {
+        "id": "c",
+        "text": "Quem despoja será despojado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+    "feedbackCorrect": "A cidade que oprimiu encontra o Senhor contra si: o despojo volta.",
+    "feedbackWrong": {
+      "a": "O destino é humilhação, não exaltação eterna.",
+      "b": "Os dois textos mostram juízo, não silêncio."
+    },
+    "hint": "Compare o destino de quem pratica violência.",
+    "learningObjective": "Ligar a exposição de Nínive ao princípio de Habacuque.",
+    "evidence": [
+      "Naum 3:5",
+      "Habacuque 2:8"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-01",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+    "prompt": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+    "cue": "Em Naum 1:7, o Senhor é bom e fortaleza no dia da angústia.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "O versículo une bondade e fortaleza no dia da angústia.",
+    "feedbackWrong": {
+      "false": "Releia 1:7: o Senhor é bom e fortaleza."
+    },
+    "hint": "Veja como o versículo descreve o Senhor.",
+    "learningObjective": "Observar a descrição do Senhor em 1:7.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-02",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 2:10, toque a palavra que abre o estado de Nínive.",
+    "prompt": "Em Naum 2:10, toque a palavra que abre o estado de Nínive.",
+    "cue": "Em Naum 2:10, toque a palavra que abre o estado de Nínive.",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "joelhos"
+      },
+      {
+        "id": "b",
+        "text": "Vazia"
+      },
+      {
+        "id": "c",
+        "text": "rostos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "A palavra de abertura é Vazia.",
+    "feedbackWrong": {
+      "a": "Os joelhos tremem depois; não abrem o versículo.",
+      "c": "Os rostos pálidos fecham a descrição."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Identificar o esvaziamento.",
+    "evidence": [
+      "Naum 2:10"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-03",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Naum 3:7, o que se dirá de Nínive?",
+    "prompt": "Segundo Naum 3:7, o que se dirá de Nínive?",
+    "cue": "Segundo Naum 3:7, o que se dirá de Nínive?",
+    "verseRef": "Naum 3:7",
+    "passageText": "E será que todos os que te virem fugirão de ti e dirão: Nínive está destruída! Quem terá compaixão dela? De onde buscarei os que te consolem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nínive ficou cheia de ouro"
+      },
+      {
+        "id": "b",
+        "text": "Nínive reinará para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Nínive está destruída"
+      },
+      {
+        "id": "d",
+        "text": "Nínive achou muitos consoladores"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Nínive está destruída",
+    "feedbackCorrect": "Dirão: Nínive está destruída.",
+    "feedbackWrong": {
+      "a": "O saque esvazia a cidade.",
+      "b": "O texto anuncia destruição, não reinado eterno.",
+      "d": "O versículo pergunta de onde buscar consoladores."
+    },
+    "hint": "Veja a frase que os que fogem dizem.",
+    "learningObjective": "Observar o anúncio da destruição.",
+    "evidence": [
+      "Naum 3:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-04",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 1:7 na ordem do texto.",
+    "prompt": "Monte Naum 1:7 na ordem do texto.",
+    "cue": "Monte Naum 1:7 na ordem do texto.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é bom"
+      },
+      {
+        "id": "b",
+        "text": "é fortaleza no dia da angústia"
+      },
+      {
+        "id": "c",
+        "text": "e conhece os que nele se refugiam"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "Bom; fortaleza; conhece quem se refugia.",
+    "feedbackWrong": {
+      "default": "Bondade primeiro; o refúgio fecha."
+    },
+    "hint": "Comece por \"O Senhor é bom\".",
+    "learningObjective": "Reconhecer a sequência de 1:7.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-05",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Naum 3:6, como o Senhor porá Nínive diante dos outros?",
+    "prompt": "Em Naum 3:6, como o Senhor porá Nínive diante dos outros?",
+    "cue": "Em Naum 3:6, como o Senhor porá Nínive diante dos outros?",
+    "verseRef": "Naum 3:6",
+    "passageText": "Lançarei sobre você imundícias, te tratarei com desprezo e te porei como um espetáculo.",
+    "template": "Lançarei sobre você imundícias, te tratarei com desprezo e te porei como um ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tesouro"
+      },
+      {
+        "id": "b",
+        "text": "espetáculo"
+      },
+      {
+        "id": "c",
+        "text": "jardim"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "te porei como um espetáculo",
+    "feedbackCorrect": "Ele a porá como um espetáculo.",
+    "feedbackWrong": {
+      "a": "\"Tesouro\" não é o fim de 3:6.",
+      "c": "\"Jardim\" não aparece em 3:6."
+    },
+    "hint": "É a palavra final da exposição pública.",
+    "learningObjective": "Lembrar a palavra da vergonha pública.",
+    "evidence": [
+      "Naum 3:6"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-06",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "cue": "O que Naum 1:7 comunica que se liga a este contexto?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Senhor julga Nínive e abriga quem nele confia."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Inocência de Nínive"
+      },
+      {
+        "id": "b",
+        "text": "Fim de todo refúgio"
+      },
+      {
+        "id": "c",
+        "text": "Abrigo no juízo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "conhece os que nele se refugiam",
+    "feedbackCorrect": "No juízo de Nínive, há abrigo para quem se refugia no Senhor.",
+    "feedbackWrong": {
+      "a": "Nínive é julgada, não inocentada.",
+      "b": "Há fortaleza para quem se refugia."
+    },
+    "hint": "Veja quem o Senhor conhece.",
+    "learningObjective": "Ligar juízo e refúgio.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-07",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Naum 3:5, toque o que o Senhor declara estar em relação a Nínive.",
+    "prompt": "Em Naum 3:5, toque o que o Senhor declara estar em relação a Nínive.",
+    "cue": "Em Naum 3:5, toque o que o Senhor declara estar em relação a Nínive.",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "contra você"
+      },
+      {
+        "id": "b",
+        "text": "nações"
+      },
+      {
+        "id": "c",
+        "text": "Exércitos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Eis que estou contra você",
+    "feedbackCorrect": "Ele está contra ela.",
+    "feedbackWrong": {
+      "b": "As nações verão a nudez; não são a declaração.",
+      "c": "\"Exércitos\" faz parte do título do Senhor."
+    },
+    "hint": "Procure a postura do Senhor no início.",
+    "learningObjective": "Identificar a declaração contra Nínive.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-sem-nac-boss-1-08",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Naum 2:10 na ordem do texto.",
+    "prompt": "Monte Naum 2:10 na ordem do texto.",
+    "cue": "Monte Naum 2:10 na ordem do texto.",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vazia desolada e exaurida ficará"
+      },
+      {
+        "id": "b",
+        "text": "o coração se derreteu, os joelhos tremem"
+      },
+      {
+        "id": "c",
+        "text": "os rostos de todos se tornaram pálidos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "Vazia; coração derretido; rostos pálidos.",
+    "feedbackWrong": {
+      "default": "Vazia abre; rostos pálidos fecham."
+    },
+    "hint": "Comece por Vazia.",
+    "learningObjective": "Reconhecer a sequência do esvaziamento.",
+    "evidence": [
+      "Naum 2:10"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-01",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Naum 3:7, muitos se oferecem para consolar Nínive destruída.",
+    "prompt": "Em Naum 3:7, muitos se oferecem para consolar Nínive destruída.",
+    "cue": "Em Naum 3:7, muitos se oferecem para consolar Nínive destruída.",
+    "verseRef": "Naum 3:7",
+    "passageText": "E será que todos os que te virem fugirão de ti e dirão: Nínive está destruída! Quem terá compaixão dela? De onde buscarei os que te consolem?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "De onde buscarei os que te consolem?",
+    "feedbackCorrect": "A pergunta mostra a falta de consoladores.",
+    "feedbackWrong": {
+      "true": "Releia 3:7: de onde buscar quem console?"
+    },
+    "hint": "Veja a pergunta final do versículo.",
+    "learningObjective": "Compreender o isolamento de Nínive.",
+    "evidence": [
+      "Naum 3:7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-02",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+    "prompt": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+    "cue": "Em Naum 1:3, toque a palavra que marca o contraste após a lentidão.",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "a",
+        "text": "culpado"
+      },
+      {
+        "id": "b",
+        "text": "lento"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "lento para se irar, mas grande em poder",
+    "feedbackCorrect": "\"Mas\" marca o contraste com o grande poder.",
+    "feedbackWrong": {
+      "a": "\"Culpado\" aparece depois na frase.",
+      "b": "\"Lento\" é o primeiro polo."
+    },
+    "hint": "É a palavra entre irar e poder.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-03",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Naum 1:7 e 2:10 se relacionam nesta etapa?",
+    "prompt": "Como Naum 1:7 e 2:10 se relacionam nesta etapa?",
+    "cue": "Como Naum 1:7 e 2:10 se relacionam nesta etapa?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Só há juízo, sem nenhum abrigo"
+      },
+      {
+        "id": "b",
+        "text": "Só há abrigo, sem nenhum juízo"
+      },
+      {
+        "id": "c",
+        "text": "Abrigo aos fiéis e esvaziamento de Nínive"
+      },
+      {
+        "id": "d",
+        "text": "Nínive e os fiéis recebem o mesmo fim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "O Senhor abriga os seus e esvazia a cidade opressora.",
+    "feedbackWrong": {
+      "a": "1:7 afirma fortaleza para quem se refugia.",
+      "b": "Nínive é julgada e esvaziada.",
+      "d": "Há contraste entre refúgio e cidade vazia."
+    },
+    "hint": "Ligue fortaleza e cidade vazia.",
+    "learningObjective": "Relacionar refúgio e juízo.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-04",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move a etapa Queda de Nínive?",
+    "prompt": "Como se move a etapa Queda de Nínive?",
+    "cue": "Como se move a etapa Queda de Nínive?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor é fortaleza para quem se refugia"
+      },
+      {
+        "id": "b",
+        "text": "Nínive fica vazia e desolada"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor a põe como espetáculo sem consoladores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "Caráter do Senhor; cidade vazia; vergonha pública.",
+    "feedbackWrong": {
+      "default": "Fortaleza primeiro; o espetáculo fecha."
+    },
+    "hint": "Comece pela fortaleza.",
+    "learningObjective": "Seguir o arco da etapa.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-05",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+    "prompt": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+    "cue": "Em Naum 1:3, que adjetivo descreve o poder do Senhor?",
+    "verseRef": "Naum 1:3",
+    "passageText": "O Senhor é lento para se irar, mas grande em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "template": "O Senhor é lento para se irar, mas ___ em poder e jamais considera inocente o culpado. O Senhor tem o seu caminho na tempestade e na tormenta e as nuvens são o pó de seus pés.",
+    "options": [
+      {
+        "id": "a",
+        "text": "curto"
+      },
+      {
+        "id": "b",
+        "text": "grande"
+      },
+      {
+        "id": "c",
+        "text": "fraco"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas grande em poder",
+    "feedbackCorrect": "Ele é grande em poder.",
+    "feedbackWrong": {
+      "a": "\"Curto\" não descreve o poder.",
+      "c": "\"Fraco\" é o oposto."
+    },
+    "hint": "É o adjetivo ligado a poder.",
+    "learningObjective": "Lembrar o adjetivo do poder.",
+    "evidence": [
+      "Naum 1:3"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-06",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Naum 1:7 a Salmos 46:1?",
+    "prompt": "O que liga Naum 1:7 a Salmos 46:1?",
+    "cue": "O que liga Naum 1:7 a Salmos 46:1?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "passageA": {
+      "ref": "Naum 1:7",
+      "text": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam."
+    },
+    "passageB": {
+      "ref": "Salmos 46:1",
+      "text": "Deus é nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é fortaleza na angústia"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona quem confia"
+      },
+      {
+        "id": "c",
+        "text": "Deus protege só Nínive"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Nos dois textos, Deus é fortaleza no aperto.",
+    "feedbackWrong": {
+      "b": "Os textos afirmam abrigo.",
+      "c": "Nínive é julgada."
+    },
+    "hint": "Compare fortaleza e angústia.",
+    "learningObjective": "Relacionar Naum ao Salmo.",
+    "evidence": [
+      "Naum 1:7",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-07",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Naum 2:8, toque o trecho que mostra a fuga sem retorno.",
+    "prompt": "Em Naum 2:8, toque o trecho que mostra a fuga sem retorno.",
+    "cue": "Em Naum 2:8, toque o trecho que mostra a fuga sem retorno.",
+    "verseRef": "Naum 2:8",
+    "passageText": "Nínive, desde que existe, tem sido como um tanque de águas; mas, agora, fogem. \"Parem! Parem!\" clama-se; mas ninguém se volta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Parem"
+      },
+      {
+        "id": "b",
+        "text": "ninguém se volta"
+      },
+      {
+        "id": "c",
+        "text": "tanque de águas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas ninguém se volta",
+    "feedbackCorrect": "Ninguém se volta apesar do clamor.",
+    "feedbackWrong": {
+      "a": "\"Parem\" é o clamor inútil.",
+      "c": "O tanque descreve o passado."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Reconhecer a fuga irreversível.",
+    "evidence": [
+      "Naum 2:8"
+    ]
+  },
+  {
+    "id": "naum-cap-cam-nac-boss-1-08",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como Naum 3:5–7 encadeia o juízo público?",
+    "prompt": "Como Naum 3:5–7 encadeia o juízo público?",
+    "cue": "Como Naum 3:5–7 encadeia o juízo público?",
+    "verseRef": "Naum 3:7",
+    "passageText": "E será que todos os que te virem fugirão de ti e dirão: Nínive está destruída! Quem terá compaixão dela? De onde buscarei os que te consolem?",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor se declara contra Nínive"
+      },
+      {
+        "id": "b",
+        "text": "Ele a põe como espetáculo"
+      },
+      {
+        "id": "c",
+        "text": "Todos fogem sem achar consoladores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Nínive está destruída",
+    "feedbackCorrect": "Contra ela; espetáculo; fuga sem consoladores.",
+    "feedbackWrong": {
+      "default": "Declaração primeiro; a fuga fecha."
+    },
+    "hint": "Comece pela declaração contra.",
+    "learningObjective": "Compreender o juízo público.",
+    "evidence": [
+      "Naum 3:5–7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-01",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Naum 1–3, a bondade do Senhor como fortaleza cancela o juízo público sobre Nínive.",
+    "prompt": "Em Naum 1–3, a bondade do Senhor como fortaleza cancela o juízo público sobre Nínive.",
+    "cue": "Em Naum 1–3, a bondade do Senhor como fortaleza cancela o juízo público sobre Nínive.",
+    "verseRef": "Naum 3:5",
+    "passageText": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+    "feedbackCorrect": "Bondade abriga quem se refugia; Nínive ainda é confrontada em público.",
+    "feedbackWrong": {
+      "true": "Releia 3:5: o Senhor está contra ela e a expõe."
+    },
+    "hint": "Veja a declaração de 3:5 junto com 1:7.",
+    "learningObjective": "Interpretar bondade sem cancelar o juízo.",
+    "evidence": [
+      "Naum 3:5"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-02",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+    "prompt": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+    "cue": "Em Naum 1:7, toque o trecho que mostra quem o Senhor conhece.",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nele se refugiam"
+      },
+      {
+        "id": "b",
+        "text": "dia da angústia"
+      },
+      {
+        "id": "c",
+        "text": "é bom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os que nele se refugiam",
+    "feedbackCorrect": "Ele conhece os que nele se refugiam.",
+    "feedbackWrong": {
+      "b": "O dia é o tempo, não o grupo.",
+      "c": "\"É bom\" abre; o fim fala de quem se refugia."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Sustentar com o texto o grupo conhecido.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-03",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a etapa de Naum sustenta?",
+    "prompt": "Que leitura a etapa de Naum sustenta?",
+    "cue": "Que leitura a etapa de Naum sustenta?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Refúgio aos fiéis e juízo à violência"
+      },
+      {
+        "id": "b",
+        "text": "Não há abrigo em nenhum dia"
+      },
+      {
+        "id": "c",
+        "text": "O juízo é só metáfora sem queda"
+      },
+      {
+        "id": "d",
+        "text": "Nínive escapa por sua força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "O Senhor é bom, é fortaleza no dia da angústia",
+    "feedbackCorrect": "O Senhor abriga os seus e julga a violência de Nínive até esvaziá-la.",
+    "feedbackWrong": {
+      "b": "1:7 afirma fortaleza na angústia.",
+      "c": "2:10 e 3:7 descrevem queda real.",
+      "d": "Fortalezas caem como figos precoces."
+    },
+    "hint": "Ligue 1:7, 2:10 e 3:7.",
+    "learningObjective": "Escolher a interpretação da etapa.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-04",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o Senhor como refúgio e juíza na Escritura?",
+    "prompt": "Qual sequência mostra o Senhor como refúgio e juíza na Escritura?",
+    "cue": "Qual sequência mostra o Senhor como refúgio e juíza na Escritura?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Naum une fortaleza e juízo a Nínive"
+      },
+      {
+        "id": "b",
+        "text": "O Salmo confessa Deus como refúgio"
+      },
+      {
+        "id": "c",
+        "text": "Sofonias anuncia a destruição da Assíria"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Naum une abrigo e juízo; o Salmo confessa fortaleza; Sofonias confirma a Assíria destruída.",
+    "feedbackWrong": {
+      "default": "Siga: Naum 1:7, Salmos 46:1 e Sofonias 2:13."
+    },
+    "hint": "Parta de Naum.",
+    "learningObjective": "Ver Naum no fio bíblico.",
+    "evidence": [
+      "Naum 1:7",
+      "Salmos 46:1",
+      "Sofonias 2:13"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-05",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+    "prompt": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+    "cue": "Em Naum 1:7, que verbo descreve a ação de quem busca o Senhor?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "template": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esquecem"
+      },
+      {
+        "id": "b",
+        "text": "refugiam"
+      },
+      {
+        "id": "c",
+        "text": "fogem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os que nele se refugiam",
+    "feedbackCorrect": "Eles se refugiam nele.",
+    "feedbackWrong": {
+      "a": "\"Esquecem\" é o oposto.",
+      "c": "\"Fogem\" não é o verbo do fim de 1:7."
+    },
+    "hint": "É o verbo no fim do versículo.",
+    "learningObjective": "Lembrar o verbo do abrigo.",
+    "evidence": [
+      "Naum 1:7"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-06",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Naum 2:10 a Sofonias 2:13?",
+    "prompt": "O que liga Naum 2:10 a Sofonias 2:13?",
+    "cue": "O que liga Naum 2:10 a Sofonias 2:13?",
+    "verseRef": "Naum 2:10",
+    "passageText": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos.",
+    "passageA": {
+      "ref": "Naum 2:10",
+      "text": "Vazia desolada e exaurida ficará; o coração se derreteu, os joelhos tremem, há angústia em todos os quadris, e os rostos de todos se tornaram pálidos."
+    },
+    "passageB": {
+      "ref": "Sofonias 2:13",
+      "text": "Estenderá também a sua mão contra o norte e destruirá a Assíria; fará de Nínive uma desolação, uma terra árida como o deserto."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor desola a Assíria"
+      },
+      {
+        "id": "b",
+        "text": "Juízo só contra Judá"
+      },
+      {
+        "id": "c",
+        "text": "Assíria reina para sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Vazia desolada e exaurida ficará",
+    "feedbackCorrect": "Nos dois textos, o Senhor desola a Assíria.",
+    "feedbackWrong": {
+      "b": "O alvo é a Assíria/Nínive.",
+      "c": "Os textos anunciam desolação."
+    },
+    "hint": "Compare o fim da Assíria.",
+    "learningObjective": "Ligar Naum a Sofonias.",
+    "evidence": [
+      "Naum 2:10",
+      "Sofonias 2:13"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-07",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Naum 3:12, toque a imagem das fortalezas de Nínive.",
+    "prompt": "Em Naum 3:12, toque a imagem das fortalezas de Nínive.",
+    "cue": "Em Naum 3:12, toque a imagem das fortalezas de Nínive.",
+    "verseRef": "Naum 3:12",
+    "passageText": "Todas as suas fortalezas serão como figueiras com figos precoces; se forem sacudidas, caem na boca do que as come.",
+    "options": [
+      {
+        "id": "a",
+        "text": "figos precoces"
+      },
+      {
+        "id": "b",
+        "text": "boca"
+      },
+      {
+        "id": "c",
+        "text": "fortalezas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "como figueiras com figos precoces",
+    "feedbackCorrect": "As fortalezas são como figueiras com figos precoces.",
+    "feedbackWrong": {
+      "b": "A boca é de quem as come.",
+      "c": "Fortalezas são o sujeito, não a imagem."
+    },
+    "hint": "Procure a comparação.",
+    "learningObjective": "Sustentar a fragilidade das fortalezas.",
+    "evidence": [
+      "Naum 3:12"
+    ]
+  },
+  {
+    "id": "naum-cap-pro-nac-boss-1-08",
+    "trail": "naum-cap",
+    "section": "nac-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual lógica une abrigo, queda e vergonha nesta travessia?",
+    "prompt": "Qual lógica une abrigo, queda e vergonha nesta travessia?",
+    "cue": "Qual lógica une abrigo, queda e vergonha nesta travessia?",
+    "verseRef": "Naum 1:7",
+    "passageText": "O Senhor é bom, é fortaleza no dia da angústia e conhece os que nele se refugiam.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há abrigo para quem corre ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "A cidade opressora termina esvaziada"
+      },
+      {
+        "id": "c",
+        "text": "Fica destruída sem quem a console"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "é fortaleza no dia da angústia",
+    "feedbackCorrect": "Abrigo aos fiéis; cidade vazia; espetáculo sem consoladores.",
+    "feedbackWrong": {
+      "default": "Abrigo primeiro; a falta de consoladores fecha."
+    },
+    "hint": "Comece pela fortaleza.",
+    "learningObjective": "Encadear o sentido da travessia.",
+    "evidence": [
+      "Naum 1:7",
+      "Naum 2:10",
+      "Naum 3:7"
+    ]
+  }
+]

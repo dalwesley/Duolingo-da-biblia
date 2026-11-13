@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 99:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 99:1–6"
+      },
+      {
+        "ref": "Salmos 99:7–9"
+      }
+    ],
+    "context": "O Senhor reina; santidade é o esplendor da sua casa. Moisés e Arão clamaram, e ele respondeu.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Santo é o Senhor",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor reina; tremam os povos. Ele está entronizado entre os querubins; agite-se a terra.",
+        "evidenceRef": "Salmos 99:1",
+        "evidenceSpan": "O Senhor reina"
+      },
+      {
+        "text": "O Senhor é grande em Sião e sobremodo.",
+        "evidenceRef": "Salmos 99:2",
+        "evidenceSpan": "O Senhor é grande em Sião e sobremodo"
+      },
+      {
+        "text": "Louvem o teu nome majestoso e temível porque.",
+        "evidenceRef": "Salmos 99:3",
+        "evidenceSpan": "Louvem o teu nome majestoso e temível porque"
+      },
+      {
+        "text": "O poder do Rei ama a justiça.",
+        "evidenceRef": "Salmos 99:4",
+        "evidenceSpan": "O poder do Rei ama a justiça"
+      },
+      {
+        "text": "Exaltai ao Senhor.",
+        "evidenceRef": "Salmos 99:5",
+        "evidenceSpan": "Exaltai ao Senhor"
+      },
+      {
+        "text": "Moisés e Arão, entre os seus sacerdotes, e Samuel, entre os que o invocam, clamavam ao Senhor, e El…",
+        "evidenceRef": "Salmos 99:6",
+        "evidenceSpan": "Moisés e Arão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "reina",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O senhor reina tremam os povos",
+        "evidenceRef": "Salmos 99:1"
+      },
+      {
+        "label": "O senhor é grande em sião",
+        "evidenceRef": "Salmos 99:2"
+      },
+      {
+        "label": "Louvem o teu nome majestoso e",
+        "evidenceRef": "Salmos 99:3"
+      },
+      {
+        "label": "O poder do rei ama a",
+        "evidenceRef": "Salmos 99:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": null,
+        "evidenceRef": "Salmos 99:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"porque\".",
+        "marker": "porque",
+        "evidenceRef": "Salmos 99:3"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 99:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças"
+      },
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Lançar o cuidado"
+      },
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Deus santo perdoa e vinga: o povo deve exaltar o seu nome."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Deus santo perdoa e vinga: o povo deve exaltar o seu nome.",
+    "anchorQuestion": "O que Salmos 99:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 99:1, o Senhor reina.",
+      "verseRef": "Salmos 99:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor reina",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 99:1 afirma.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 99:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 99:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "reina"
+        },
+        {
+          "id": "c",
+          "text": "tremam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 99:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 99:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem o teu nome majestoso e temível porque"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem o teu nome majestoso e temível porque",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 99:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 99:1 na ordem do texto.",
+      "verseRef": "Salmos 99:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 99:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 99:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "poder"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "poder",
+      "feedbackCorrect": "A palavra do versículo é «poder».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 99:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 99:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 99:1",
+      "passageA": {
+        "ref": "Salmos 99:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor reina; santidade é o esplendor da sua casa. Moisés e Arão clamaram, e ele respondeu."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 99:1, o marcador Se une ideias no fluxo do texto.",
+      "verseRef": "Salmos 99:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 99:1 afirma.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 99:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 99:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "reina"
+        },
+        {
+          "id": "b",
+          "text": "O"
+        },
+        {
+          "id": "c",
+          "text": "tremam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reina",
+      "feedbackCorrect": "O versículo destaca «Se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 99:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 99:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O poder do Rei ama a justiça",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 99:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 99:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O senhor reina tremam os povos"
+        },
+        {
+          "id": "b",
+          "text": "O senhor é grande em sião"
+        },
+        {
+          "id": "c",
+          "text": "Louvem o teu nome majestoso"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 99:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 99:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvem"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Louvem",
+      "feedbackCorrect": "A palavra do versículo é «Louvem».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 99:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 99:1 a Isaías 40:31.",
+      "verseRef": "Salmos 99:1",
+      "passageA": {
+        "ref": "Salmos 99:1"
+      },
+      "passageB": {
+        "ref": "Isaías 40:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Renovam as forças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 99:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Exaltai",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 99:9 afirma.",
+      "evidence": [
+        "Salmos 99:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 99:9, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 99:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exaltai"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "nosso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Exaltai",
+      "feedbackCorrect": "O versículo destaca «Exaltai».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 99:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 99:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 99:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Exaltai ao Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 99:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 99:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 99:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 99:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "nosso"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nosso",
+      "feedbackCorrect": "A palavra do versículo é «nosso».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 99:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 99:1 a 1 Pedro 5:7.",
+      "verseRef": "Salmos 99:1",
+      "passageA": {
+        "ref": "Salmos 99:1"
+      },
+      "passageB": {
+        "ref": "1 Pedro 5:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lançar o cuidado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 99:1"
+      ]
+    }
+  ]
+}

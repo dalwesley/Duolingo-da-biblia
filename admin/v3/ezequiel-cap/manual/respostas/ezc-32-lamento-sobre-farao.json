@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 32:1–8",
+    "passages": [
+      {
+        "ref": "Ezequiel 32:1–8"
+      }
+    ],
+    "context": "Lamento contra Faraó: comparado a leão, mas é crocodilo; Deus estende a rede e apaga as luzes do céu.",
+    "keyword": "rede",
+    "keywordGloss": "Instrumento com que Deus puxa Faraó para fora das águas, no meio de muitos povos.",
+    "focusQuestion": "Quando a rede se estende, você ainda confia na agitação das águas?",
+    "reflectionPrompts": [
+      "Lamento sobre Faraó",
+      "Rede estendida",
+      "Céus escurecidos"
+    ],
+    "facts": [
+      {
+        "text": "Deus manda levantar lamentação contra Faraó.",
+        "evidenceRef": "Ezequiel 32:2",
+        "evidenceSpan": "levanta uma lamentação contra Faraó, rei do Egito"
+      },
+      {
+        "text": "Faraó foi comparado a leão, mas não passa de crocodilo nas águas.",
+        "evidenceRef": "Ezequiel 32:2",
+        "evidenceSpan": "Tu foste comparado a um leão entre as nações, mas não passas de um crocodilo nas águas"
+      },
+      {
+        "text": "Deus estenderá sua rede sobre Faraó.",
+        "evidenceRef": "Ezequiel 32:3",
+        "evidenceSpan": "Estenderei sobre ti a minha rede no meio de muitos povos"
+      },
+      {
+        "text": "Ao apagá-lo, cobrirá os céus e tornará escuras as estrelas.",
+        "evidenceRef": "Ezequiel 32:7",
+        "evidenceSpan": "ao te apagar, cobrirei os céus e tornarei escuras as tuas estrelas"
+      },
+      {
+        "text": "Por causa dele, as luzes do céu se apagarão.",
+        "evidenceRef": "Ezequiel 32:8",
+        "evidenceSpan": "Por tua causa, todas as brilhantes luzes do céu se apagarão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "crocodilo",
+        "gloss": "Imagem real de Faraó nas águas, apesar da fama de leão."
+      },
+      {
+        "term": "rede",
+        "gloss": "Meio pelo qual Deus o puxa para fora."
+      },
+      {
+        "term": "estrelas",
+        "gloss": "Luzes que se escurecem quando Deus o apaga."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lamento e imagem do crocodilo",
+        "evidenceRef": "Ezequiel 32:1–2"
+      },
+      {
+        "label": "Rede e lançamento na terra",
+        "evidenceRef": "Ezequiel 32:3–5"
+      },
+      {
+        "label": "Sangue e rios",
+        "evidenceRef": "Ezequiel 32:6"
+      },
+      {
+        "label": "Céus e luzes apagadas",
+        "evidenceRef": "Ezequiel 32:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Comparado a leão, mas não passa de crocodilo.",
+        "marker": "mas",
+        "evidenceRef": "Ezequiel 32:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Então o deixará na terra e lançará no campo.",
+        "marker": "Então",
+        "evidenceRef": "Ezequiel 32:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Por tua causa as luzes do céu se apagarão.",
+        "marker": "Por tua causa",
+        "evidenceRef": "Ezequiel 32:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Ezequiel 29:3–4",
+        "bridge": "Crocodilo e anzóis"
+      },
+      {
+        "ref": "Isaías 13:10",
+        "bridge": "Estrelas escurecidas"
+      },
+      {
+        "ref": "Joel 2:10",
+        "bridge": "Sol e lua escurecem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Faraó é de fato um leão entre as nações.",
+        "why": "O texto diz que não passa de um crocodilo."
+      },
+      {
+        "text": "Deus deixa Faraó seguro nas águas.",
+        "why": "Estenderá a rede e o puxará para fora."
+      },
+      {
+        "text": "As luzes do céu brilharão mais por causa dele.",
+        "why": "As luzes se apagarão e haverá trevas."
+      }
+    ],
+    "centralInsight": "Estenderei a minha rede sobre ti; cobrirei o céu e enegrecerei as suas estrelas.",
+    "anchorQuestion": "O que Deus estende sobre Faraó em Ezequiel 32:3?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 32:3, o Senhor Deus estenderá sua rede sobre Faraó.",
+      "verseRef": "Ezequiel 32:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Estenderei sobre ti a minha rede no meio de muitos povos",
+      "feedbackCorrect": "A rede será estendida.",
+      "feedbackWrong": {
+        "false": "O versículo afirma a rede."
+      },
+      "hint": "Veja o início de 32:3.",
+      "learningObjective": "Identificar a rede.",
+      "evidence": [
+        "Ezequiel 32:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 32:3, toque o que Deus estenderá.",
+      "verseRef": "Ezequiel 32:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "rede"
+        },
+        {
+          "id": "b",
+          "text": "povos"
+        },
+        {
+          "id": "c",
+          "text": "Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estenderei sobre ti a minha rede",
+      "feedbackCorrect": "A rede é o instrumento.",
+      "feedbackWrong": {
+        "b": "São o meio.",
+        "c": "É o alvo."
+      },
+      "hint": "Procure o objeto.",
+      "learningObjective": "Tocar a rede.",
+      "evidence": [
+        "Ezequiel 32:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 32:2, Faraó não passa de quê nas águas?",
+      "verseRef": "Ezequiel 32:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um crocodilo"
+        },
+        {
+          "id": "b",
+          "text": "Um leão verdadeiro"
+        },
+        {
+          "id": "c",
+          "text": "Uma águia"
+        },
+        {
+          "id": "d",
+          "text": "Um cedro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não passas de um crocodilo nas águas",
+      "feedbackCorrect": "É crocodilo, não leão.",
+      "feedbackWrong": {
+        "b": "Foi comparado a leão, mas não passa disso.",
+        "c": "Não é águia.",
+        "d": "O cedro está em 31."
+      },
+      "hint": "Veja o contraste.",
+      "learningObjective": "Reconhecer a imagem.",
+      "evidence": [
+        "Ezequiel 32:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 32:7 na ordem do texto.",
+      "verseRef": "Ezequiel 32:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "ao te apagar, cobrirei os céus"
+        },
+        {
+          "id": "b",
+          "text": "e tornarei escuras as tuas estrelas"
+        },
+        {
+          "id": "c",
+          "text": "o sol se esconderá sob uma nuvem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ao te apagar, cobrirei os céus e tornarei escuras as tuas estrelas",
+      "feedbackCorrect": "Céus → estrelas → sol.",
+      "feedbackWrong": {
+        "default": "Comece pelo apagar."
+      },
+      "hint": "Comece pelo apagar.",
+      "learningObjective": "Ordenar o versículo.",
+      "evidence": [
+        "Ezequiel 32:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 32:2, não passas de um ___ nas águas.",
+      "verseRef": "Ezequiel 32:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "crocodilo"
+        },
+        {
+          "id": "b",
+          "text": "pastor"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não passas de um crocodilo nas águas",
+      "feedbackCorrect": "A palavra é crocodilo.",
+      "feedbackWrong": {
+        "b": "Não é pastor.",
+        "c": "Não é templo."
+      },
+      "hint": "Veja o contraste com leão.",
+      "learningObjective": "Lembrar a imagem.",
+      "evidence": [
+        "Ezequiel 32:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 32:3 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 32:3",
+      "passageA": {
+        "ref": "Ezequiel 32:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus captura Faraó com a rede e apaga as luzes do céu."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rede sobre Faraó"
+        },
+        {
+          "id": "b",
+          "text": "Cedro no Líbano"
+        },
+        {
+          "id": "c",
+          "text": "Coração de carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estenderei sobre ti a minha rede",
+      "feedbackCorrect": "A rede resume o juízo.",
+      "feedbackWrong": {
+        "b": "O cedro está em 31.",
+        "c": "Coração novo está em 36."
+      },
+      "hint": "Compare o juízo.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 32:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 32:2, Faraó é de fato um leão entre as nações, sem contraste.",
+      "verseRef": "Ezequiel 32:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Tu foste comparado a um leão entre as nações, mas não passas de um crocodilo nas águas",
+      "feedbackCorrect": "Há contraste: comparado a leão, mas é crocodilo.",
+      "feedbackWrong": {
+        "true": "O \"mas\" muda a imagem."
+      },
+      "hint": "Veja o contraste.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Ezequiel 32:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 32:2, toque a palavra que marca o contraste com o leão.",
+      "verseRef": "Ezequiel 32:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "leão"
+        },
+        {
+          "id": "c",
+          "text": "águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não passas de um crocodilo nas águas",
+      "feedbackCorrect": "\"Mas\" introduz o contraste.",
+      "feedbackWrong": {
+        "b": "É a comparação inicial.",
+        "c": "É o lugar do crocodilo."
+      },
+      "hint": "Procure o contraste.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 32:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 32:3 e 32:7 se relacionam?",
+      "verseRef": "Ezequiel 32:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A captura na rede leva ao apagar dos céus"
+        },
+        {
+          "id": "b",
+          "text": "A rede protege as estrelas"
+        },
+        {
+          "id": "c",
+          "text": "O crocodilo apaga o sol sozinho"
+        },
+        {
+          "id": "d",
+          "text": "A rede cancela o lamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estenderei sobre ti a minha rede",
+      "feedbackCorrect": "Rede e escurecimento andam juntos.",
+      "feedbackWrong": {
+        "b": "As estrelas se escurecem.",
+        "c": "Deus é quem apaga.",
+        "d": "O lamento permanece."
+      },
+      "hint": "Una rede e céus.",
+      "learningObjective": "Relacionar captura e trevas.",
+      "evidence": [
+        "Ezequiel 32:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 32?",
+      "verseRef": "Ezequiel 32:2–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lamento e imagem do crocodilo"
+        },
+        {
+          "id": "b",
+          "text": "Rede e lançamento na terra"
+        },
+        {
+          "id": "c",
+          "text": "Céus e estrelas escurecidos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ao te apagar, cobrirei os céus",
+      "feedbackCorrect": "Lamento → rede → trevas.",
+      "feedbackWrong": {
+        "default": "Comece no lamento."
+      },
+      "hint": "Comece no lamento.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 32:2",
+        "Ezequiel 32:3",
+        "Ezequiel 32:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 32:8, Por tua ___, todas as brilhantes luzes do céu se apagarão.",
+      "verseRef": "Ezequiel 32:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "causa"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por tua causa, todas as brilhantes luzes do céu se apagarão",
+      "feedbackCorrect": "A palavra é causa.",
+      "feedbackWrong": {
+        "b": "Não é fé.",
+        "c": "Não é paz."
+      },
+      "hint": "Veja o início.",
+      "learningObjective": "Lembrar o motivo.",
+      "evidence": [
+        "Ezequiel 32:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 32:2 a Ezequiel 29:3–4?",
+      "verseRef": "Ezequiel 32:2",
+      "passageA": {
+        "ref": "Ezequiel 32:2"
+      },
+      "passageB": {
+        "ref": "Ezequiel 29:3–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Crocodilo e anzóis"
+        },
+        {
+          "id": "b",
+          "text": "Duas varas"
+        },
+        {
+          "id": "c",
+          "text": "Porta fechada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não passas de um crocodilo nas águas",
+      "feedbackCorrect": "Nos dois, Faraó é o crocodilo.",
+      "feedbackWrong": {
+        "b": "Varas estão em 37.",
+        "c": "Porta está em 44."
+      },
+      "hint": "Compare a imagem.",
+      "learningObjective": "Relacionar a Ezequiel 29.",
+      "evidence": [
+        "Ezequiel 32:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 32:7–8, ao apagar Faraó, Deus cobrirá os céus e apagará as luzes.",
+      "verseRef": "Ezequiel 32:7–8",
+      "correctOptionId": "true",
+      "evidenceSpan": "cobrirei os céus e tornarei escuras as tuas estrelas",
+      "feedbackCorrect": "O apagar traz trevas cósmicas.",
+      "feedbackWrong": {
+        "false": "O texto afirma o escurecimento."
+      },
+      "hint": "Veja 32:7–8.",
+      "learningObjective": "Confirmar as trevas.",
+      "evidence": [
+        "Ezequiel 32:7–8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 32:7, toque o trecho que mostra o escurecimento das estrelas.",
+      "verseRef": "Ezequiel 32:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "escuras"
+        },
+        {
+          "id": "b",
+          "text": "nuvem"
+        },
+        {
+          "id": "c",
+          "text": "lua"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tornarei escuras as tuas estrelas",
+      "feedbackCorrect": "\"Escuras\" marca o juízo.",
+      "feedbackWrong": {
+        "b": "Esconde o sol.",
+        "c": "Não deixa brilhar a luz."
+      },
+      "hint": "Procure o efeito nas estrelas.",
+      "learningObjective": "Tocar o escurecimento.",
+      "evidence": [
+        "Ezequiel 32:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 32 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 32:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O crocodilo é capturado na rede e as luzes se apagam"
+        },
+        {
+          "id": "b",
+          "text": "Faraó é leão sem contraste"
+        },
+        {
+          "id": "c",
+          "text": "Deus deixa Faraó nas águas"
+        },
+        {
+          "id": "d",
+          "text": "As luzes brilharão mais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estenderei sobre ti a minha rede",
+      "feedbackCorrect": "Rede e trevas definem o lamento.",
+      "feedbackWrong": {
+        "b": "Há contraste com crocodilo.",
+        "c": "A rede o puxa.",
+        "d": "As luzes se apagam."
+      },
+      "hint": "Una crocodilo, rede e trevas.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 32:2",
+        "Ezequiel 32:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do lamento sobre Faraó.",
+      "verseRef": "Ezequiel 32:2–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crocodilo nas águas, não leão"
+        },
+        {
+          "id": "b",
+          "text": "Rede o puxa para a terra"
+        },
+        {
+          "id": "c",
+          "text": "Céus e luzes se apagam"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Por tua causa, todas as brilhantes luzes do céu se apagarão",
+      "feedbackCorrect": "Imagem → captura → trevas.",
+      "feedbackWrong": {
+        "default": "Comece na imagem."
+      },
+      "hint": "Comece na imagem.",
+      "learningObjective": "Encadear o lamento.",
+      "evidence": [
+        "Ezequiel 32:2",
+        "Ezequiel 32:3",
+        "Ezequiel 32:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 32:7, tornarei escuras as tuas ___.",
+      "verseRef": "Ezequiel 32:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "estrelas"
+        },
+        {
+          "id": "b",
+          "text": "redes"
+        },
+        {
+          "id": "c",
+          "text": "pastores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tornarei escuras as tuas estrelas",
+      "feedbackCorrect": "A palavra é estrelas.",
+      "feedbackWrong": {
+        "b": "Não é redes.",
+        "c": "Não é pastores."
+      },
+      "hint": "Veja o que escurece.",
+      "learningObjective": "Lembrar as estrelas.",
+      "evidence": [
+        "Ezequiel 32:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 32:7 a Isaías 13:10?",
+      "verseRef": "Ezequiel 32:7",
+      "passageA": {
+        "ref": "Ezequiel 32:7"
+      },
+      "passageB": {
+        "ref": "Isaías 13:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Estrelas escurecidas"
+        },
+        {
+          "id": "b",
+          "text": "Duas varas"
+        },
+        {
+          "id": "c",
+          "text": "Coração novo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tornarei escuras as tuas estrelas",
+      "feedbackCorrect": "Nos dois, as luzes do céu falham.",
+      "feedbackWrong": {
+        "b": "Varas estão em 37.",
+        "c": "Coração novo está em 36."
+      },
+      "hint": "Compare as estrelas.",
+      "learningObjective": "Ligar a Isaías.",
+      "evidence": [
+        "Ezequiel 32:7"
+      ]
+    }
+  ]
+}

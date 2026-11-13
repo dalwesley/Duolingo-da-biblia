@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "Salmos 2:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 2:1–6"
+      },
+      {
+        "ref": "Salmos 2:7–12"
+      }
+    ],
+    "context": "As nações se revoltam contra o Senhor e o seu Ungido. O salmo responde com o riso de Deus e o decreto do Filho em Sião.",
+    "keyword": "Ungido",
+    "keywordGloss": "O Rei que o Senhor estabelece em Sião, contra quem os príncipes conspiram.",
+    "focusQuestion": "Onde você ainda resiste ao governo do Filho?",
+    "reflectionPrompts": [
+      "Nações em revolta",
+      "Rei em Sião",
+      "Beijai o Filho"
+    ],
+    "facts": [
+      {
+        "text": "Os príncipes conspiram contra o Senhor e o seu Ungido.",
+        "evidenceRef": "Salmos 2:2",
+        "evidenceSpan": "conspiram contra o Senhor e contra o seu Ungido"
+      },
+      {
+        "text": "Aquele que habita nos céus se rirá.",
+        "evidenceRef": "Salmos 2:4",
+        "evidenceSpan": "Aquele que habita nos céus se rirá"
+      },
+      {
+        "text": "Deus estabeleceu o seu Rei sobre o santo monte Sião.",
+        "evidenceRef": "Salmos 2:6",
+        "evidenceSpan": "estabeleci o meu Rei sobre o meu santo monte Sião"
+      },
+      {
+        "text": "O Senhor diz: Tu és meu Filho, hoje te gerei.",
+        "evidenceRef": "Salmos 2:7",
+        "evidenceSpan": "Tu és meu Filho, hoje te gerei"
+      },
+      {
+        "text": "As nações são dadas ao Filho por herança.",
+        "evidenceRef": "Salmos 2:8",
+        "evidenceSpan": "eu te darei as nações por herança"
+      },
+      {
+        "text": "Bem-aventurados todos os que nele se refugiam.",
+        "evidenceRef": "Salmos 2:12",
+        "evidenceSpan": "Bem-aventurados todos os que nele se refugiam"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Ungido",
+        "gloss": "O Rei escolhido contra quem as nações conspiram."
+      },
+      {
+        "term": "Filho",
+        "gloss": "Título do Rei no decreto: gerado e herdeiro das nações."
+      },
+      {
+        "term": "Sião",
+        "gloss": "O santo monte onde Deus estabelece o seu Rei."
+      }
+    ],
+    "structure": [
+      {
+        "label": "As nações e os reis se revoltam",
+        "evidenceRef": "Salmos 2:1–3"
+      },
+      {
+        "label": "O Senhor ri e fala na ira",
+        "evidenceRef": "Salmos 2:4–5"
+      },
+      {
+        "label": "O Rei é estabelecido em Sião",
+        "evidenceRef": "Salmos 2:6–9"
+      },
+      {
+        "label": "Os reis são chamados a beijar o Filho",
+        "evidenceRef": "Salmos 2:10–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Contra a conspiração, Deus responde: Eu, porém, estabeleci o meu Rei.",
+        "marker": "porém",
+        "evidenceRef": "Salmos 2:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Então, na sua ira, ele lhes falará e os confundirá.",
+        "marker": "Então",
+        "evidenceRef": "Salmos 2:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "Beijem o Filho para que ele não se irrite e vocês não pereçam.",
+        "marker": "para que",
+        "evidenceRef": "Salmos 2:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 4:25–26",
+        "bridge": "Conspiração contra o Ungido"
+      },
+      {
+        "ref": "Hebreus 1:5",
+        "bridge": "Tu és meu Filho"
+      },
+      {
+        "ref": "Apocalipse 2:27",
+        "bridge": "Cetro de ferro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A revolta das nações vence o plano de Deus.",
+        "why": "Quem habita nos céus ri; ele estabelece o Rei em Sião."
+      },
+      {
+        "text": "O Filho não governa as nações.",
+        "why": "Deus lhe dá as nações por herança e os confins da terra."
+      },
+      {
+        "text": "Não há urgência em se refugiar no Filho.",
+        "why": "O texto adverte: beijem o Filho para que não pereçam no caminho."
+      }
+    ],
+    "centralInsight": "Deus estabelece o Filho; beijai o Filho enquanto há tempo.",
+    "anchorQuestion": "Onde Deus estabelece o seu Rei, segundo Salmos 2:6?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Salmos 2:4, aquele que habita nos céus se entristece e foge da revolta.",
+      "verseRef": "Salmos 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Aquele que habita nos céus se rirá",
+      "feedbackCorrect": "O texto diz que ele se rirá; o Senhor zombará deles.",
+      "feedbackWrong": {
+        "true": "Releia: aquele que habita nos céus se rirá."
+      },
+      "hint": "Veja a reação de quem habita nos céus.",
+      "learningObjective": "Observar a resposta de Deus à revolta.",
+      "evidence": [
+        "Salmos 2:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 2:6, toque onde o Rei é estabelecido.",
+      "verseRef": "Salmos 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "monte Sião"
+        },
+        {
+          "id": "b",
+          "text": "meu Rei"
+        },
+        {
+          "id": "c",
+          "text": "porém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sobre o meu santo monte Sião",
+      "feedbackCorrect": "O Rei é estabelecido sobre o santo monte Sião.",
+      "feedbackWrong": {
+        "b": "\"Meu Rei\" é quem é estabelecido; o lugar é Sião.",
+        "c": "\"Porém\" marca o contraste; o lugar é Sião."
+      },
+      "hint": "Procure o monte nomeado no fim.",
+      "learningObjective": "Identificar o lugar do trono.",
+      "evidence": [
+        "Salmos 2:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 2:2, contra quem os príncipes conspiram?",
+      "verseRef": "Salmos 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contra o Senhor e o seu Ungido"
+        },
+        {
+          "id": "b",
+          "text": "Só contra os povos vizinhos"
+        },
+        {
+          "id": "c",
+          "text": "Contra a palha do vento"
+        },
+        {
+          "id": "d",
+          "text": "Contra o templo de Baal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conspiram contra o Senhor e contra o seu Ungido",
+      "feedbackCorrect": "A conspiração é contra o Senhor e o seu Ungido.",
+      "feedbackWrong": {
+        "b": "O alvo é o Senhor e o Ungido.",
+        "c": "Isso é de outro salmo.",
+        "d": "O texto não fala de Baal."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar o alvo da conspiração.",
+      "evidence": [
+        "Salmos 2:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 2:2 na ordem do texto.",
+      "verseRef": "Salmos 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os reis da terra se levantam"
+        },
+        {
+          "id": "b",
+          "text": "os príncipes conspiram contra o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "contra o seu Ungido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os reis da terra se levantam",
+      "feedbackCorrect": "Reis se levantam; príncipes conspiram contra o Senhor e o Ungido.",
+      "feedbackWrong": {
+        "default": "Comece pelos reis; o Ungido fecha."
+      },
+      "hint": "O Ungido aparece no fim.",
+      "learningObjective": "Reconhecer a sequência da revolta.",
+      "evidence": [
+        "Salmos 2:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 2:7, o Senhor diz: Tu és meu ___, hoje te gerei.",
+      "verseRef": "Salmos 2:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filho"
+        },
+        {
+          "id": "b",
+          "text": "servo"
+        },
+        {
+          "id": "c",
+          "text": "anjo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és meu Filho, hoje te gerei",
+      "feedbackCorrect": "O decreto proclama: Tu és meu Filho.",
+      "feedbackWrong": {
+        "b": "O texto diz Filho, não servo.",
+        "c": "O texto diz Filho, não anjo."
+      },
+      "hint": "É o título no decreto.",
+      "learningObjective": "Lembrar o título do Rei.",
+      "evidence": [
+        "Salmos 2:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 2:6 comunica que se liga a este contexto?",
+      "verseRef": "Salmos 2:6",
+      "passageA": {
+        "ref": "Salmos 2:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus não cede à revolta: ele já estabeleceu o seu Rei em Sião."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rei já estabelecido"
+        },
+        {
+          "id": "b",
+          "text": "Nações vencem Deus"
+        },
+        {
+          "id": "c",
+          "text": "Sião sem Rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estabeleci o meu Rei sobre o meu santo monte Sião",
+      "feedbackCorrect": "O \"porém\" marca: o Rei já está estabelecido.",
+      "feedbackWrong": {
+        "b": "Deus ri da revolta e firma o Rei.",
+        "c": "Sião é o monte do Rei."
+      },
+      "hint": "Veja o que Deus já fez.",
+      "learningObjective": "Ligar o decreto ao fim da revolta.",
+      "evidence": [
+        "Salmos 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 2:6, o \"porém\" mostra que a revolta das nações impediu Deus de estabelecer o Rei.",
+      "verseRef": "Salmos 2:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu, porém, estabeleci o meu Rei",
+      "feedbackCorrect": "O \"porém\" marca o contraste: apesar da revolta, o Rei está estabelecido.",
+      "feedbackWrong": {
+        "true": "Releia: Eu, porém, estabeleci o meu Rei."
+      },
+      "hint": "Note o que o \"porém\" introduz.",
+      "learningObjective": "Compreender o contraste do estabelecimento.",
+      "evidence": [
+        "Salmos 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 2:6, toque a palavra que marca o contraste com a revolta.",
+      "verseRef": "Salmos 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Rei"
+        },
+        {
+          "id": "c",
+          "text": "Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu, porém, estabeleci",
+      "feedbackCorrect": "\"Porém\" vira a página da conspiração para o decreto.",
+      "feedbackWrong": {
+        "b": "\"Rei\" é o conteúdo; o marcador é \"porém\".",
+        "c": "\"Sião\" é o lugar; o marcador é \"porém\"."
+      },
+      "hint": "Procure a palavra curta depois de \"Eu\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Salmos 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Salmos 2:4–5 se relaciona com a revolta de 2:1–3?",
+      "verseRef": "Salmos 2:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus responde com riso, ira e confusão"
+        },
+        {
+          "id": "b",
+          "text": "Deus abandona o Ungido"
+        },
+        {
+          "id": "c",
+          "text": "Deus pede desculpas às nações"
+        },
+        {
+          "id": "d",
+          "text": "Deus foge para o deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor zombará deles",
+      "feedbackCorrect": "A resposta divina é riso, palavra na ira e confusão.",
+      "feedbackWrong": {
+        "b": "Ele estabelece o Rei.",
+        "c": "Não há pedido de desculpas.",
+        "d": "Quem habita nos céus ri, não foge."
+      },
+      "hint": "Leia a reação de quem habita nos céus.",
+      "learningObjective": "Relacionar revolta e resposta divina.",
+      "evidence": [
+        "Salmos 2:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Salmos 2?",
+      "verseRef": "Salmos 2:1–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "As nações e os reis se revoltam"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor ri e firma o Rei em Sião"
+        },
+        {
+          "id": "c",
+          "text": "Os reis são chamados a beijar o Filho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Beijem o Filho",
+      "feedbackCorrect": "Revolta, estabelecimento e chamado ao refúgio.",
+      "feedbackWrong": {
+        "default": "Comece pela revolta; o beijo ao Filho fecha."
+      },
+      "hint": "O chamado aos reis vem por último.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 2:1",
+        "Salmos 2:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 2:5, na sua ira ele lhes falará e, no seu furor, os ___.",
+      "verseRef": "Salmos 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "confundirá"
+        },
+        {
+          "id": "b",
+          "text": "salvará"
+        },
+        {
+          "id": "c",
+          "text": "esquecera"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no seu furor, os confundirá",
+      "feedbackCorrect": "A ira de Deus produz confusão sobre os revoltosos.",
+      "feedbackWrong": {
+        "b": "O texto diz confundirá, não salvará.",
+        "c": "O texto diz confundirá."
+      },
+      "hint": "É o verbo no fim do versículo.",
+      "learningObjective": "Lembrar o resultado da ira.",
+      "evidence": [
+        "Salmos 2:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 2:1–2 a Atos 4:25–26?",
+      "verseRef": "Salmos 2:1–2",
+      "passageA": {
+        "ref": "Salmos 2:1–2"
+      },
+      "passageB": {
+        "ref": "Atos 4:25–26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Conspiração contra o Ungido"
+        },
+        {
+          "id": "b",
+          "text": "Vitória das nações"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conspiram contra o Senhor e contra o seu Ungido",
+      "feedbackCorrect": "Atos lê o salmo na conspiração contra Jesus.",
+      "feedbackWrong": {
+        "b": "Os dois textos mostram revolta, não vitória final.",
+        "c": "Deus fala e estabelece o Rei."
+      },
+      "hint": "Compare o alvo da conspiração.",
+      "learningObjective": "Relacionar a revolta ao uso no NT.",
+      "evidence": [
+        "Salmos 2:1–2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Salmos 2:10–12 chama os reis a servir ao Senhor e a beijar o Filho, com bem-aventurança para quem nele se refugia.",
+      "verseRef": "Salmos 2:10–12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Beijem o Filho",
+      "feedbackCorrect": "O fim do salmo é prudência, serviço e refúgio no Filho.",
+      "feedbackWrong": {
+        "false": "Releia 2:10–12: sirvam, beijem o Filho, bem-aventurados os que se refugiam."
+      },
+      "hint": "Olhe o chamado final aos reis.",
+      "learningObjective": "Interpretar o chamado ao refúgio.",
+      "evidence": [
+        "Salmos 2:10–12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 2:12, toque o trecho que sustenta a bem-aventurança do refúgio.",
+      "verseRef": "Salmos 2:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "nele se refugiam"
+        },
+        {
+          "id": "b",
+          "text": "se irrite"
+        },
+        {
+          "id": "c",
+          "text": "pereçam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bem-aventurados todos os que nele se refugiam",
+      "feedbackCorrect": "A bem-aventurança está em se refugiar no Filho.",
+      "feedbackWrong": {
+        "b": "\"Se irrite\" é a ameaça, não a bênção.",
+        "c": "\"Pereçam\" é o risco de quem não beija o Filho."
+      },
+      "hint": "Procure quem é chamado bem-aventurado.",
+      "learningObjective": "Tocar o trecho do refúgio.",
+      "evidence": [
+        "Salmos 2:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Salmos 2 sustenta melhor?",
+      "verseRef": "Salmos 2:6–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus estabelece o Filho e chama ao refúgio"
+        },
+        {
+          "id": "b",
+          "text": "A revolta cancela o decreto de Sião"
+        },
+        {
+          "id": "c",
+          "text": "O Filho não herda as nações"
+        },
+        {
+          "id": "d",
+          "text": "Só os anjos devem beijar o Filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estabeleci o meu Rei sobre o meu santo monte Sião",
+      "feedbackCorrect": "O decreto firma o Rei e o fim chama ao beijo e ao refúgio.",
+      "feedbackWrong": {
+        "b": "O \"porém\" mostra o decreto de pé.",
+        "c": "As nações são sua herança.",
+        "d": "O chamado é aos reis e juízes da terra."
+      },
+      "hint": "Junte o decreto e o chamado final.",
+      "learningObjective": "Escolher a interpretação do salmo.",
+      "evidence": [
+        "Salmos 2:6",
+        "Salmos 2:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o governo do Filho?",
+      "verseRef": "Salmos 2:6–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus estabelece o Rei em Sião"
+        },
+        {
+          "id": "b",
+          "text": "O Filho recebe as nações por herança"
+        },
+        {
+          "id": "c",
+          "text": "Advertência: sirvam e se refugiem nele"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eu te darei as nações por herança",
+      "feedbackCorrect": "Trono, herança e advertência ao refúgio.",
+      "feedbackWrong": {
+        "default": "Comece pelo estabelecimento; o refúgio fecha."
+      },
+      "hint": "A herança fica no meio.",
+      "learningObjective": "Ver o encadeamento do governo do Filho.",
+      "evidence": [
+        "Salmos 2:6",
+        "Salmos 2:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 2:8, Deus dará as nações por ___.",
+      "verseRef": "Salmos 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "herança"
+        },
+        {
+          "id": "b",
+          "text": "empréstimo"
+        },
+        {
+          "id": "c",
+          "text": "castigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as nações por herança",
+      "feedbackCorrect": "A herança do Filho alcança as nações e os confins.",
+      "feedbackWrong": {
+        "b": "O texto diz herança.",
+        "c": "O texto diz herança."
+      },
+      "hint": "É o que ele recebe ao pedir.",
+      "learningObjective": "Lembrar o termo da possessão.",
+      "evidence": [
+        "Salmos 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 2:7 a Hebreus 1:5?",
+      "verseRef": "Salmos 2:7",
+      "passageA": {
+        "ref": "Salmos 2:7"
+      },
+      "passageB": {
+        "ref": "Hebreus 1:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu és meu Filho"
+        },
+        {
+          "id": "b",
+          "text": "Negação do decreto"
+        },
+        {
+          "id": "c",
+          "text": "Revolta das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és meu Filho, hoje te gerei",
+      "feedbackCorrect": "Hebreus aplica o decreto do Filho a Cristo.",
+      "feedbackWrong": {
+        "b": "Os dois afirmam o decreto.",
+        "c": "A revolta não é a ponte com Hebreus 1:5."
+      },
+      "hint": "Compare a frase do decreto.",
+      "learningObjective": "Ligar o decreto ao NT.",
+      "evidence": [
+        "Salmos 2:7"
+      ]
+    }
+  ]
+}

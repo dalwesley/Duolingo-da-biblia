@@ -1,0 +1,507 @@
+{
+  "study": {
+    "passageRef": "João 7:37–39",
+    "passages": [
+      { "ref": "João 7:37–39" },
+      { "ref": "João 7:34–36" },
+      { "ref": "João 7:40–42" }
+    ],
+    "context": "Jesus já avisou que o procurariam sem poder encontrá-lo. No grande dia da festa, ele se levanta diante do povo e fala de sede.",
+    "keyword": "água viva",
+    "keywordGloss": "Imagem de Jesus para o que brota do interior de quem crê nele.",
+    "focusQuestion": "Quando a sede aparece, você vai a Jesus ou procura outro caminho?",
+    "reflectionPrompts": [
+      "Sede no grande dia",
+      "Rios no interior",
+      "A espera do dom"
+    ],
+    "facts": [
+      {
+        "text": "Jesus diz que o procurarão e não o encontrarão.",
+        "evidenceRef": "João 7:34",
+        "evidenceSpan": "Vocês me procurarão, mas não me encontrarão"
+      },
+      {
+        "text": "No último dia da festa, Jesus se levanta e exclama.",
+        "evidenceRef": "João 7:37",
+        "evidenceSpan": "Jesus levantou-se e exclamou"
+      },
+      {
+        "text": "Jesus convida quem tem sede a vir a ele e beber.",
+        "evidenceRef": "João 7:37",
+        "evidenceSpan": "Se alguém tem sede, venha a mim e beba"
+      },
+      {
+        "text": "Do interior de quem crê brotarão rios de água viva.",
+        "evidenceRef": "João 7:38",
+        "evidenceSpan": "do seu interior brotarão rios de água viva"
+      },
+      {
+        "text": "O Espírito Santo ainda não tinha sido dado, porque Jesus não havia sido glorificado.",
+        "evidenceRef": "João 7:39",
+        "evidenceSpan": "o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado"
+      },
+      {
+        "text": "Alguns perguntam se o Cristo vem da Galileia.",
+        "evidenceRef": "João 7:41",
+        "evidenceSpan": "Porventura, o Cristo vem da Galileia?"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sede",
+        "gloss": "A falta que Jesus nomeia no convite: quem a sente deve ir a ele e beber."
+      },
+      {
+        "term": "água viva",
+        "gloss": "A imagem dos rios que brotam do interior de quem crê em Jesus."
+      },
+      {
+        "term": "Espírito",
+        "gloss": "Aquele a quem Jesus se referia, e que os crentes haveriam de receber."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus chama quem tem sede",
+        "evidenceRef": "João 7:37"
+      },
+      {
+        "label": "Quem crê recebe a promessa dos rios",
+        "evidenceRef": "João 7:38"
+      },
+      {
+        "label": "O narrador nomeia o Espírito",
+        "evidenceRef": "João 7:39"
+      },
+      {
+        "label": "O povo divide opiniões sobre o Cristo",
+        "evidenceRef": "João 7:40–42"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jesus chama quem tem sede para vir a ele e beber.",
+        "marker": "venha",
+        "evidenceRef": "João 7:37"
+      },
+      {
+        "kind": "causa",
+        "text": "O Espírito Santo ainda não tinha sido dado porque Jesus ainda não havia sido glorificado.",
+        "marker": "porque",
+        "evidenceRef": "João 7:39"
+      },
+      {
+        "kind": "contraste",
+        "text": "Uns afirmam que ele é o Cristo; outros, porém, perguntam se o Cristo vem da Galileia.",
+        "marker": "porém",
+        "evidenceRef": "João 7:41"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 55:1",
+        "bridge": "Convite a quem tem sede"
+      },
+      {
+        "ref": "João 4:14",
+        "bridge": "Fonte que jorra nele"
+      },
+      {
+        "ref": "João 16:7",
+        "bridge": "Consolador após a ida"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os rios de água viva são só uma imagem de alívio, sem relação com o Espírito.",
+        "why": "João 7:39 diz que Jesus se referia ao Espírito que os crentes haveriam de receber."
+      },
+      {
+        "text": "O Espírito Santo já tinha sido dado naquele dia da festa.",
+        "why": "O versículo diz que o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado."
+      },
+      {
+        "text": "A menção à Galileia é a conclusão do narrador de que Jesus não é o Cristo.",
+        "why": "Quem fala da Galileia é um grupo do povo, em forma de pergunta. O narrador não emite esse veredito."
+      }
+    ],
+    "centralInsight": "Do interior de quem crê fluem rios de água viva: o Espírito.",
+    "anchorQuestion": "A que Jesus se referia ao falar em rios de água viva?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 7:34, Jesus disse que o procurariam e o encontrariam onde ele está.",
+      "verseRef": "João 7:34",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não me encontrarão",
+      "feedbackCorrect": "Jesus afirma o contrário: não encontrarão, nem podem ir onde ele está.",
+      "feedbackWrong": {
+        "true": "O versículo não promete encontro. Ele diz que não encontrarão."
+      },
+      "hint": "Repare no que vem depois de procurarão.",
+      "learningObjective": "Observar que Jesus anuncia busca sem encontro.",
+      "evidence": ["João 7:34"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 7:37, toque quem se levantou e exclamou.",
+      "verseRef": "João 7:37",
+      "options": [
+        { "id": "a", "text": "festa" },
+        { "id": "b", "text": "Jesus" },
+        { "id": "c", "text": "grande dia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jesus levantou-se e exclamou",
+      "feedbackCorrect": "Quem se levanta e exclama o convite é Jesus.",
+      "feedbackWrong": {
+        "a": "Festa marca o evento, não a pessoa que se levanta.",
+        "c": "Grande dia indica o tempo, não quem faz o gesto."
+      },
+      "hint": "Aponte o sujeito que se levanta e exclama.",
+      "learningObjective": "Identificar quem se levanta e faz o convite no grande dia.",
+      "evidence": ["João 7:37"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 7:38, o que brota do interior de quem crê?",
+      "verseRef": "João 7:38",
+      "options": [
+        { "id": "a", "text": "Rios de água viva anunciados na Escritura" },
+        { "id": "b", "text": "A dúvida que os judeus trocam entre si" },
+        { "id": "c", "text": "O plano de partir para ensinar os gregos" },
+        { "id": "d", "text": "O testemunho de que este é o profeta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do seu interior brotarão rios de água viva",
+      "feedbackCorrect": "Quem crê recebe a promessa de rios de água viva, como diz a Escritura.",
+      "feedbackWrong": {
+        "b": "A dúvida dos judeus vem antes. Aqui o tema é o que brota em quem crê.",
+        "c": "Ir aos gregos é um palpite do povo, não o que João 7:38 promete.",
+        "d": "O testemunho sobre o profeta vem depois e não diz o que brota."
+      },
+      "hint": "Leia o que o versículo diz que brota, no fim da frase.",
+      "learningObjective": "Identificar o que Jesus promete ao interior de quem crê.",
+      "evidence": ["João 7:38"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 7:38 na ordem do texto.",
+      "verseRef": "João 7:38",
+      "options": [
+        { "id": "a", "text": "Quem crê em mim" },
+        { "id": "b", "text": "como diz a Escritura" },
+        { "id": "c", "text": "do seu interior brotarão rios de água viva" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Quem crê em mim",
+      "feedbackCorrect": "A ordem é quem crê, a citação da Escritura e, no fim, os rios.",
+      "feedbackWrong": {
+        "default": "Comece por quem crê. A Escritura fica no meio e os rios no fim."
+      },
+      "hint": "A frase abre nomeando quem crê.",
+      "learningObjective": "Reconhecer a ordem das partes de João 7:38.",
+      "evidence": ["João 7:38"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 7:37, o que a pessoa tem no convite de Jesus?",
+      "verseRef": "João 7:37",
+      "options": [
+        { "id": "a", "text": "fome" },
+        { "id": "b", "text": "sede" },
+        { "id": "c", "text": "medo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Se alguém tem sede",
+      "feedbackCorrect": "O convite nomeia a sede: é isso que leva a pessoa a vir e beber.",
+      "feedbackWrong": {
+        "a": "O texto não fala de fome. O convite nomeia outra necessidade.",
+        "c": "Medo não aparece no convite. A palavra é outra."
+      },
+      "hint": "Olhe o convite entre aspas, antes de vir e beber.",
+      "learningObjective": "Lembrar a necessidade que o convite de Jesus nomeia.",
+      "evidence": ["João 7:37"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 7:37 comunica que se liga a este contexto?",
+      "verseRef": "João 7:37",
+      "passageA": { "ref": "João 7:37" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No grande dia da festa, Jesus se levanta diante do povo e fala a quem tem sede."
+      },
+      "options": [
+        { "id": "a", "text": "Partida para os gregos" },
+        { "id": "b", "text": "Debate sobre Belém" },
+        { "id": "c", "text": "Chamado no grande dia" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "No último dia da festa",
+      "feedbackCorrect": "No grande dia Jesus se levanta e chama quem tem sede para vir a ele.",
+      "feedbackWrong": {
+        "a": "A ida aos gregos é suposição dos judeus, não o chamado da festa.",
+        "b": "Belém surge na discussão seguinte, não neste chamado."
+      },
+      "hint": "Veja o dia em que Jesus se levanta para falar.",
+      "learningObjective": "Ligar o convite de Jesus ao grande dia da festa.",
+      "evidence": ["João 7:37"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 7:39, o Espírito Santo ainda não tinha sido dado porque Jesus ainda não havia sido glorificado.",
+      "verseRef": "João 7:39",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque Jesus ainda não havia sido glorificado",
+      "feedbackCorrect": "O texto liga a espera do Espírito à glorificação que ainda não ocorrera.",
+      "feedbackWrong": {
+        "false": "O fim do versículo mantém o dom e a glorificação ainda no futuro."
+      },
+      "hint": "Observe a ligação no fim do versículo.",
+      "learningObjective": "Compreender a causa de o Espírito ainda não ter sido dado.",
+      "evidence": ["João 7:39"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 7:39, toque a palavra que explica a espera do Espírito.",
+      "verseRef": "João 7:39",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "ainda" },
+        { "id": "c", "text": "receber" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque Jesus ainda não havia sido glorificado",
+      "feedbackCorrect": "Porque aponta a causa: a glorificação de Jesus ainda não tinha chegado.",
+      "feedbackWrong": {
+        "b": "Ainda só marca a demora. A causa está na palavra ao lado.",
+        "c": "Receber diz o que os crentes obteriam, não a causa da espera."
+      },
+      "hint": "Olhe a palavra imediatamente antes de Jesus.",
+      "learningObjective": "Reconhecer o marcador que explica a espera do Espírito.",
+      "evidence": ["João 7:39"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação João 7:39 mostra entre o Espírito e a glorificação?",
+      "verseRef": "João 7:39",
+      "options": [
+        { "id": "a", "text": "O dom do Espírito esperava a glorificação" },
+        { "id": "b", "text": "O Espírito já estava dado antes da festa" },
+        { "id": "c", "text": "A glorificação cancelou o dom do Espírito" },
+        { "id": "d", "text": "Espírito e glorificação ficam sem ligação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque Jesus ainda não havia sido glorificado",
+      "feedbackCorrect": "O dom ainda não viera: o texto o prende à glorificação de Jesus.",
+      "feedbackWrong": {
+        "b": "O versículo diz o contrário: o Espírito ainda não tinha sido dado.",
+        "c": "A glorificação não cancela o dom. Ela é a condição que ainda faltava.",
+        "d": "O texto não separa os dois. Ele explica um pelo outro."
+      },
+      "hint": "Leia como o fim do versículo explica a espera.",
+      "learningObjective": "Relacionar a espera do Espírito com a glorificação de Jesus.",
+      "evidence": ["João 7:39"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual o percurso da cena, do convite até a explicação?",
+      "verseRef": "João 7:37–38",
+      "options": [
+        { "id": "a", "text": "Jesus chama quem tem sede" },
+        { "id": "b", "text": "Quem crê recebe a promessa dos rios" },
+        { "id": "c", "text": "O narrador nomeia o Espírito" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Jesus levantou-se e exclamou",
+      "feedbackCorrect": "Primeiro o convite, depois a promessa dos rios, e então o Espírito nomeado.",
+      "feedbackWrong": {
+        "default": "Abra no convite de Jesus, siga à promessa e feche no Espírito."
+      },
+      "hint": "O nome do Espírito só entra na explicação final.",
+      "learningObjective": "Compreender os três movimentos do convite até o Espírito.",
+      "evidence": ["João 7:37", "João 7:38", "João 7:39"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 7:41, que palavra marca o contraste antes da pergunta?",
+      "verseRef": "João 7:41",
+      "options": [
+        { "id": "a", "text": "então" },
+        { "id": "b", "text": "também" },
+        { "id": "c", "text": "porém" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "outros, porém, perguntavam",
+      "feedbackCorrect": "Porém marca o contraste: uns afirmam, outros perguntam pela origem.",
+      "feedbackWrong": {
+        "a": "Então não está nessa frase. O contraste vem em outra palavra.",
+        "b": "Também não introduz a pergunta. O texto usa outra palavra."
+      },
+      "hint": "Olhe a palavra entre vírgulas, antes de perguntavam.",
+      "learningObjective": "Lembrar a palavra que marca o contraste na discussão do povo.",
+      "evidence": ["João 7:41"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 7:37 a Isaías 55:1?",
+      "verseRef": "João 7:37",
+      "passageA": { "ref": "João 7:37" },
+      "passageB": { "ref": "Isaías 55:1" },
+      "options": [
+        { "id": "a", "text": "Compra de vinho e leite" },
+        { "id": "b", "text": "Convite a quem tem sede" },
+        { "id": "c", "text": "Festa encerrada em silêncio" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Se alguém tem sede, venha a mim e beba",
+      "feedbackCorrect": "Isaías e Jesus chamam quem tem sede: um às águas, o outro a si.",
+      "feedbackWrong": {
+        "a": "Vinho e leite estão em Isaías. Eles não ligam esse versículo a João.",
+        "c": "Jesus não cala a festa. Ele se levanta e faz um chamado."
+      },
+      "hint": "Compare a quem os dois textos dirigem o chamado.",
+      "learningObjective": "Relacionar o convite de Jesus ao chamado de Isaías a quem tem sede.",
+      "evidence": ["João 7:37", "Isaías 55:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 7:41, o narrador conclui que Jesus não é o Cristo por causa da Galileia.",
+      "verseRef": "João 7:41",
+      "correctOptionId": "false",
+      "evidenceSpan": "outros, porém, perguntavam",
+      "feedbackCorrect": "Quem cita a Galileia é um grupo do povo, em pergunta. Não é o narrador.",
+      "feedbackWrong": {
+        "true": "O versículo registra a pergunta de alguns, não um veredito sobre Jesus."
+      },
+      "hint": "Veja quem faz a fala sobre a Galileia.",
+      "learningObjective": "Recusar a leitura que transforma a pergunta do povo em conclusão do narrador.",
+      "evidence": ["João 7:41"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 7:38, toque o lugar de onde brotam os rios.",
+      "verseRef": "João 7:38",
+      "options": [
+        { "id": "a", "text": "água viva" },
+        { "id": "b", "text": "seu interior" },
+        { "id": "c", "text": "a Escritura" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "do seu interior brotarão rios de água viva",
+      "feedbackCorrect": "Os rios brotam do interior de quem crê, não da citação nem do nome da água.",
+      "feedbackWrong": {
+        "a": "Água viva é o que brota, não o lugar de onde ela sai.",
+        "c": "A Escritura é a fonte da citação, não o lugar dos rios."
+      },
+      "hint": "Procure de onde os rios saem, não o nome deles.",
+      "learningObjective": "Localizar no texto a origem dos rios de água viva.",
+      "evidence": ["João 7:38"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 7:38–39 sustenta sobre os rios?",
+      "verseRef": "João 7:38–39",
+      "options": [
+        { "id": "a", "text": "Os rios apontam para o Espírito prometido" },
+        { "id": "b", "text": "Os rios são só alívio, sem falar do Espírito" },
+        { "id": "c", "text": "Os rios já corriam, com o Espírito já dado" },
+        { "id": "d", "text": "Os rios vêm da festa, mesmo sem crer nele" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele se referia ao Espírito",
+      "feedbackCorrect": "O narrador sustenta isso: os rios se referem ao Espírito prometido a quem crê.",
+      "feedbackWrong": {
+        "b": "João 7:39 não deixa a imagem sem o Espírito. Ele nomeia o Espírito.",
+        "c": "O texto diz que o Espírito ainda não tinha sido dado naquele momento.",
+        "d": "A promessa é para quem crê, não para quem só participa da festa."
+      },
+      "hint": "Compare cada opção com a frase que explica a imagem.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre os rios.",
+      "evidence": ["João 7:38–39"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica conduz do convite de Jesus até o dom?",
+      "verseRef": "João 7:37",
+      "options": [
+        { "id": "a", "text": "Jesus convida o sedento a vir até ele" },
+        { "id": "b", "text": "A água viva nasce no interior de quem crê" },
+        { "id": "c", "text": "O dom do Espírito segue a glorificação" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Se alguém tem sede, venha a mim e beba",
+      "feedbackCorrect": "O convite abre, a fonte fica em quem crê, e o dom segue a glorificação.",
+      "feedbackWrong": {
+        "default": "Siga o convite, depois a fonte em quem crê, e só então o dom."
+      },
+      "hint": "O primeiro passo é o convite a quem tem sede.",
+      "learningObjective": "Interpretar o caminho do convite de Jesus até o dom do Espírito.",
+      "evidence": ["João 7:37", "João 7:38", "João 7:39"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 7:39, a quem o narrador diz que Jesus se referia?",
+      "verseRef": "João 7:39",
+      "options": [
+        { "id": "a", "text": "templo" },
+        { "id": "b", "text": "Espírito" },
+        { "id": "c", "text": "povo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ele se referia ao Espírito",
+      "feedbackCorrect": "O narrador identifica a imagem: Jesus se referia ao Espírito.",
+      "feedbackWrong": {
+        "a": "O versículo não diz que Jesus falava do templo.",
+        "c": "O povo ouve, mas o texto não diz que Jesus se referia ao povo."
+      },
+      "hint": "Leia o termo que vem logo no início da explicação.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da imagem dos rios.",
+      "evidence": ["João 7:39"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 7:39 a João 16:7?",
+      "verseRef": "João 7:39",
+      "passageA": { "ref": "João 7:39" },
+      "passageB": { "ref": "João 16:7" },
+      "options": [
+        { "id": "a", "text": "Consolador após a ida" },
+        { "id": "b", "text": "Ritual de água na festa" },
+        { "id": "c", "text": "Cristo vindo de Belém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jesus ainda não havia sido glorificado",
+      "feedbackCorrect": "Jesus condiciona o Consolador à sua ida. João 7 espera a glorificação.",
+      "feedbackWrong": {
+        "b": "O ritual da festa não explica a espera do dom em João 7:39.",
+        "c": "Belém é debate sobre a origem, não sobre o momento do dom."
+      },
+      "hint": "Leia em João 16 a condição ligada à saída de Jesus.",
+      "learningObjective": "Ligar a espera do Espírito em João 7 à partida anunciada por Jesus.",
+      "evidence": ["João 7:39", "João 16:7"]
+    }
+  ]
+}

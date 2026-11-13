@@ -1,0 +1,925 @@
+{
+  "study": {
+    "slug": "mlc-03-voltai-a-mim",
+    "passageRef": "Malaquias 3:7–12",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas. Com maldição sois amaldiçoados, porque me roubais, a nação toda. Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida. E por causa de vocês, repreenderei o devorador, para que o fruto da terra não seja consumido e a vide no campo não seja estéril, diz o Senhor dos Exércitos. E todas as nações os chamarão bem-aventurados, porque vocês serão uma terra deleitosa, diz o Senhor dos Exércitos.",
+    "passages": [
+      {
+        "ref": "Malaquias 3:7–12",
+        "text": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas. Com maldição sois amaldiçoados, porque me roubais, a nação toda. Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida. E por causa de vocês, repreenderei o devorador, para que o fruto da terra não seja consumido e a vide no campo não seja estéril, diz o Senhor dos Exércitos. E todas as nações os chamarão bem-aventurados, porque vocês serão uma terra deleitosa, diz o Senhor dos Exércitos."
+      },
+      {
+        "ref": "Malaquias 3:6",
+        "text": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos."
+      }
+    ],
+    "context": "O Senhor não muda; por isso Jacó não é consumido. Ainda assim o povo se desviou. O chamado é retornar — e o retorno passa pelos dízimos e ofertas.",
+    "keyword": "Retornem",
+    "keywordGloss": "O convite do Senhor: voltar a ele, com a promessa de que ele também retorna.",
+    "focusQuestion": "Em que área da sua fidelidade o Senhor está pedindo que você retorne?",
+    "reflectionPrompts": [
+      "Retornem para mim",
+      "Dízimos e ofertas",
+      "Janelas do céu"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor não muda; por isso os filhos de Jacó não serão consumidos.",
+        "evidenceRef": "Malaquias 3:6",
+        "evidenceSpan": "eu, o Senhor, não mudo"
+      },
+      {
+        "text": "O Senhor manda retornar para ele, e promete retornar para o povo.",
+        "evidenceRef": "Malaquias 3:7",
+        "evidenceSpan": "Retornem para mim, e eu retornarei para vocês"
+      },
+      {
+        "text": "O povo rouba a Deus nos dízimos e nas ofertas.",
+        "evidenceRef": "Malaquias 3:8",
+        "evidenceSpan": "Nos dízimos e nas ofertas"
+      },
+      {
+        "text": "Devem trazer todos os dízimos à casa do tesouro.",
+        "evidenceRef": "Malaquias 3:10",
+        "evidenceSpan": "Trazei todos os dízimos à casa do tesouro"
+      },
+      {
+        "text": "O Senhor promete abrir as janelas do céu e derramar bênção sem medida.",
+        "evidenceRef": "Malaquias 3:10",
+        "evidenceSpan": "abrir as janelas do céu"
+      },
+      {
+        "text": "Ele repreenderá o devorador para que o fruto da terra não seja consumido.",
+        "evidenceRef": "Malaquias 3:11",
+        "evidenceSpan": "repreenderei o devorador"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Retornem",
+        "gloss": "Chamado a voltar ao Senhor com fidelidade."
+      },
+      {
+        "term": "dízimos",
+        "gloss": "Parte do roubo a Deus e do caminho de retorno."
+      },
+      {
+        "term": "janelas do céu",
+        "gloss": "Imagem da bênção abundante que o Senhor promete derramar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Senhor não muda; Jacó não é consumido",
+        "evidenceRef": "Malaquias 3:6"
+      },
+      {
+        "label": "Chamado a retornar",
+        "evidenceRef": "Malaquias 3:7"
+      },
+      {
+        "label": "Roubo nos dízimos e maldição",
+        "evidenceRef": "Malaquias 3:8–9"
+      },
+      {
+        "label": "Prova, janelas do céu e terra deleitosa",
+        "evidenceRef": "Malaquias 3:10–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Porque o Senhor não muda, os filhos de Jacó não serão consumidos.",
+        "marker": "por isso",
+        "evidenceRef": "Malaquias 3:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "O Senhor chama a retornar, mas o povo pergunta em que devem retornar.",
+        "marker": "mas",
+        "evidenceRef": "Malaquias 3:7"
+      },
+      {
+        "kind": "propósito",
+        "text": "Trazer os dízimos para que haja mantimento na casa do Senhor.",
+        "marker": "para",
+        "evidenceRef": "Malaquias 3:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 28:12",
+        "bridge": "Abrir o tesouro do céu",
+        "text": "O Senhor abrirá para você o seu bom tesouro, os céus, para dar chuva à sua terra no tempo devido e abençoar toda a obra de suas mãos; você emprestará a muitas nações, mas não precisará tomar emprestado."
+      },
+      {
+        "ref": "Neemias 13:12",
+        "bridge": "Dízimos à casa do tesouro",
+        "text": "Então, todo o Judá trouxe os dízimos dos cereais, do vinho e do azeite aos depósitos."
+      },
+      {
+        "ref": "2 Coríntios 9:8",
+        "bridge": "Graça abundante de Deus",
+        "text": "E Deus é poderoso para fazer-vos abundar em toda a graça, a fim de que, tendo sempre, em tudo, ampla suficiência, transbordem em toda boa obra."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Voltar ao Senhor é só sentimento, sem mudança prática.",
+        "why": "O texto aponta dízimos e ofertas como o ponto do retorno."
+      },
+      {
+        "text": "O Senhor muda de ideia e por isso ameaça consumir Jacó.",
+        "why": "Ele afirma que não muda; por isso Jacó não é consumido."
+      },
+      {
+        "text": "A bênção das janelas do céu é automática, sem prova de fidelidade.",
+        "why": "O Senhor diz: trazei os dízimos e provai-me nisto."
+      }
+    ],
+    "centralInsight": "Voltar ao Senhor inclui fidelidade no que é dele; ele promete abrir as janelas do céu.",
+    "anchorQuestion": "O que o Senhor manda trazer à casa do tesouro em Malaquias 3:10?",
+    "relatedVerses": [
+      {
+        "reference": "Deuteronômio 28:12",
+        "reason": "Abrir o tesouro do céu"
+      },
+      {
+        "reference": "Neemias 13:12",
+        "reason": "Dízimos à casa do tesouro"
+      },
+      {
+        "reference": "2 Coríntios 9:8",
+        "reason": "Graça abundante de Deus"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-01",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Malaquias 3:10, o Senhor manda trazer todos os dízimos à casa do tesouro.",
+      "prompt": "Em Malaquias 3:10, o Senhor manda trazer todos os dízimos à casa do tesouro.",
+      "cue": "Em Malaquias 3:10, o Senhor manda trazer todos os dízimos à casa do tesouro.",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+      "feedbackCorrect": "O comando é claro: trazer todos os dízimos à casa do tesouro.",
+      "feedbackWrong": {
+        "false": "Releia o começo de 3:10: Trazei todos os dízimos à casa do tesouro."
+      },
+      "hint": "Olhe a ordem no início do versículo.",
+      "learningObjective": "Observar o comando sobre os dízimos.",
+      "evidence": [
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-02",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Malaquias 3:8, toque em que o povo rouba a Deus.",
+      "prompt": "Em Malaquias 3:8, toque em que o povo rouba a Deus.",
+      "cue": "Em Malaquias 3:8, toque em que o povo rouba a Deus.",
+      "verseRef": "Malaquias 3:8–9",
+      "passageText": "Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas. Com maldição sois amaldiçoados, porque me roubais, a nação toda.",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "dízimos"
+        },
+        {
+          "id": "c",
+          "text": "nação"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Nos dízimos e nas ofertas",
+      "feedbackCorrect": "O roubo está nos dízimos e nas ofertas.",
+      "feedbackWrong": {
+        "a": "\"Homem\" abre a pergunta; a resposta do Senhor é dízimos e ofertas.",
+        "c": "A nação aparece em 3:9; aqui o ponto são os dízimos."
+      },
+      "hint": "Veja a resposta final do Senhor no versículo.",
+      "learningObjective": "Identificar em que o povo rouba a Deus.",
+      "evidence": [
+        "Malaquias 3:8"
+      ]
+    },
+    {
+      "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-03",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Malaquias 3:6, por que os filhos de Jacó não serão consumidos?",
+      "prompt": "Segundo Malaquias 3:6, por que os filhos de Jacó não serão consumidos?",
+      "cue": "Segundo Malaquias 3:6, por que os filhos de Jacó não serão consumidos?",
+      "verseRef": "Malaquias 3:6",
+      "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o Senhor não muda"
+        },
+        {
+          "id": "b",
+          "text": "Porque já pagaram todos os dízimos"
+        },
+        {
+          "id": "c",
+          "text": "Porque as nações os protegem"
+        },
+        {
+          "id": "d",
+          "text": "Porque o templo está completo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "eu, o Senhor, não mudo; por isso",
+      "feedbackCorrect": "O Senhor não muda; por isso Jacó não é consumido.",
+      "feedbackWrong": {
+        "b": "O texto ainda os acusa de roubo nos dízimos.",
+        "c": "Não há proteção das nações neste versículo.",
+        "d": "A razão dada é a imutabilidade do Senhor."
+      },
+      "hint": "Leia a primeira afirmação e o \"por isso\".",
+      "learningObjective": "Observar a razão da preservação de Jacó.",
+      "evidence": [
+        "Malaquias 3:6"
+      ]
+    },
+    {
+      "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-04",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Malaquias 3:10 na ordem do texto.",
+      "prompt": "Monte Malaquias 3:10 na ordem do texto.",
+      "cue": "Monte Malaquias 3:10 na ordem do texto.",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trazei todos os dízimos à casa do tesouro"
+        },
+        {
+          "id": "b",
+          "text": "para que haja mantimento na minha casa"
+        },
+        {
+          "id": "c",
+          "text": "e provai-me nisto"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+      "feedbackCorrect": "Trazer, haver mantimento, e então a prova ao Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo comando de trazer; a prova vem depois."
+      },
+      "hint": "O versículo começa com o verbo \"Trazei\".",
+      "learningObjective": "Reconhecer a sequência de Malaquias 3:10.",
+      "evidence": [
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-05",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Malaquias 3:7, o que o Senhor manda o povo fazer em relação a ele?",
+      "prompt": "Em Malaquias 3:7, o que o Senhor manda o povo fazer em relação a ele?",
+      "cue": "Em Malaquias 3:7, o que o Senhor manda o povo fazer em relação a ele?",
+      "verseRef": "Malaquias 3:7",
+      "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+      "template": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. ___ para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retornem"
+        },
+        {
+          "id": "b",
+          "text": "Escondam"
+        },
+        {
+          "id": "c",
+          "text": "Adiem"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+      "feedbackCorrect": "O chamado é \"Retornem\": voltar ao Senhor que também retorna.",
+      "feedbackWrong": {
+        "b": "O texto não manda esconder; manda retornar.",
+        "c": "Não há adiamento; o Senhor chama a retornar."
+      },
+      "hint": "Procure o imperativo no meio do versículo.",
+      "learningObjective": "Lembrar o verbo do chamado ao retorno.",
+      "evidence": [
+        "Malaquias 3:7"
+      ]
+    },
+    {
+      "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-06",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Malaquias 3:10 comunica que se liga a este contexto?",
+      "prompt": "O que Malaquias 3:10 comunica que se liga a este contexto?",
+      "cue": "O que Malaquias 3:10 comunica que se liga a este contexto?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "passageA": {
+        "ref": "Malaquias 3:10",
+        "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Voltar ao Senhor inclui fidelidade no que é dele."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Culto sem responsabilidade"
+        },
+        {
+          "id": "b",
+          "text": "Fidelidade nos dízimos"
+        },
+        {
+          "id": "c",
+          "text": "Bênção sem qualquer prova"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+      "feedbackCorrect": "Trazer os dízimos é parte concreta do retorno ao Senhor.",
+      "feedbackWrong": {
+        "a": "O texto exige ação concreta na casa do tesouro.",
+        "c": "O Senhor diz \"provai-me nisto\", não bênção sem prova."
+      },
+      "hint": "Veja o que deve ser trazido à casa do tesouro.",
+      "learningObjective": "Ligar 3:10 à fidelidade do retorno.",
+      "evidence": [
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-01",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Malaquias 3:7, o Senhor promete retornar para o povo se eles retornarem para ele.",
+      "prompt": "Em Malaquias 3:7, o Senhor promete retornar para o povo se eles retornarem para ele.",
+      "cue": "Em Malaquias 3:7, o Senhor promete retornar para o povo se eles retornarem para ele.",
+      "verseRef": "Malaquias 3:7",
+      "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+      "feedbackCorrect": "O retorno é mútuo: o povo volta, e o Senhor também volta.",
+      "feedbackWrong": {
+        "false": "Releia a promessa: Retornem para mim, e eu retornarei para vocês."
+      },
+      "hint": "Veja as duas metades da frase com \"Retornem\".",
+      "learningObjective": "Compreender a promessa ligada ao retorno.",
+      "evidence": [
+        "Malaquias 3:7"
+      ]
+    },
+    {
+      "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-02",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Malaquias 3:6, toque a expressão que marca o resultado de o Senhor não mudar.",
+      "prompt": "Em Malaquias 3:6, toque a expressão que marca o resultado de o Senhor não mudar.",
+      "cue": "Em Malaquias 3:6, toque a expressão que marca o resultado de o Senhor não mudar.",
+      "verseRef": "Malaquias 3:6",
+      "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "por isso"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "por isso, vocês, ó filhos de Jacó, não serão consumidos",
+      "feedbackCorrect": "\"Por isso\" liga a imutabilidade do Senhor à preservação de Jacó.",
+      "feedbackWrong": {
+        "a": "\"Porque\" abre a causa; o resultado vem em \"por isso\".",
+        "c": "\"Senhor\" é quem não muda; o marcador do resultado é \"por isso\"."
+      },
+      "hint": "Procure as duas palavras depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": [
+        "Malaquias 3:6"
+      ]
+    },
+    {
+      "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-03",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+      "prompt": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+      "cue": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignora o roubo e fala só de bênção"
+        },
+        {
+          "id": "b",
+          "text": "Responde ao roubo com o chamado a trazer os dízimos"
+        },
+        {
+          "id": "c",
+          "text": "Anula os dízimos como prática antiga"
+        },
+        {
+          "id": "d",
+          "text": "Transfere o dízimo só para as nações"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+      "feedbackCorrect": "Acusados de roubo nos dízimos, são chamados a trazê-los de volta.",
+      "feedbackWrong": {
+        "a": "A bênção vem depois da ordem de trazer os dízimos.",
+        "c": "O texto reforça os dízimos, não os anula.",
+        "d": "A casa do tesouro é a do Senhor, no meio do povo."
+      },
+      "hint": "Compare o que falta em 3:8 com o que se manda em 3:10.",
+      "learningObjective": "Relacionar acusação e chamado prático.",
+      "evidence": [
+        "Malaquias 3:8",
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-04",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o chamado em Malaquias 3:7–10?",
+      "prompt": "Como avança o chamado em Malaquias 3:7–10?",
+      "cue": "Como avança o chamado em Malaquias 3:7–10?",
+      "verseRef": "Malaquias 3:7–8",
+      "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a retornar ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Acusação de roubo nos dízimos"
+        },
+        {
+          "id": "c",
+          "text": "Ordem de trazer os dízimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+      "feedbackCorrect": "Primeiro o retorno, depois o roubo, e então a ordem de trazer.",
+      "feedbackWrong": {
+        "default": "Comece pelo \"Retornem\"; a ordem de trazer vem em 3:10."
+      },
+      "hint": "Siga 3:7, 3:8 e 3:10.",
+      "learningObjective": "Compreender o movimento do retorno.",
+      "evidence": [
+        "Malaquias 3:7",
+        "Malaquias 3:8",
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-05",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Malaquias 3:10, que palavra liga o trazer dos dízimos ao mantimento na casa?",
+      "prompt": "Em Malaquias 3:10, que palavra liga o trazer dos dízimos ao mantimento na casa?",
+      "cue": "Em Malaquias 3:10, que palavra liga o trazer dos dízimos ao mantimento na casa?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "template": "Trazei todos os dízimos à casa do tesouro, ___ que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "a",
+          "text": "embora"
+        },
+        {
+          "id": "b",
+          "text": "para"
+        },
+        {
+          "id": "c",
+          "text": "depois"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "para que haja mantimento na minha casa",
+      "feedbackCorrect": "\"Para\" marca o propósito: haver mantimento na casa do Senhor.",
+      "feedbackWrong": {
+        "a": "Não há concessão; há propósito.",
+        "c": "O texto usa \"para\", não \"depois\"."
+      },
+      "hint": "Procure a palavra antes de \"que haja mantimento\".",
+      "learningObjective": "Compreender o propósito dos dízimos no texto.",
+      "evidence": [
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-06",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Malaquias 3:10 a Neemias 13:12?",
+      "prompt": "O que liga Malaquias 3:10 a Neemias 13:12?",
+      "cue": "O que liga Malaquias 3:10 a Neemias 13:12?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "passageA": {
+        "ref": "Malaquias 3:10",
+        "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+      },
+      "passageB": {
+        "ref": "Neemias 13:12",
+        "text": "Então, todo o Judá trouxe os dízimos dos cereais, do vinho e do azeite aos depósitos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dízimos à casa do tesouro"
+        },
+        {
+          "id": "b",
+          "text": "Fim do culto em Judá"
+        },
+        {
+          "id": "c",
+          "text": "Imposto só aos estrangeiros"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+      "feedbackCorrect": "Nos dois textos, os dízimos voltam à casa do tesouro.",
+      "feedbackWrong": {
+        "b": "Os textos reforçam o cuidado da casa, não o fim do culto.",
+        "c": "O foco é o povo trazer o que é do Senhor."
+      },
+      "hint": "Compare o destino dos dízimos em cada texto.",
+      "learningObjective": "Relacionar Malaquias e Neemias sobre os dízimos.",
+      "evidence": [
+        "Malaquias 3:10",
+        "Neemias 13:12"
+      ]
+    },
+    {
+      "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-01",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Malaquias 3:6–10, voltar ao Senhor é só sentimento, sem fidelidade nos dízimos e ofertas.",
+      "prompt": "Em Malaquias 3:6–10, voltar ao Senhor é só sentimento, sem fidelidade nos dízimos e ofertas.",
+      "cue": "Em Malaquias 3:6–10, voltar ao Senhor é só sentimento, sem fidelidade nos dízimos e ofertas.",
+      "verseRef": "Malaquias 3:8",
+      "passageText": "Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Nos dízimos e nas ofertas",
+      "feedbackCorrect": "O retorno passa pelo concreto: dízimos, ofertas e a casa do tesouro.",
+      "feedbackWrong": {
+        "true": "O texto aponta dízimos e ofertas como o ponto do retorno."
+      },
+      "hint": "Veja a resposta à pergunta \"Em que devemos retornar?\".",
+      "learningObjective": "Interpretar o retorno como fidelidade concreta.",
+      "evidence": [
+        "Malaquias 3:8–10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-02",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Malaquias 3:10, toque o trecho que sustenta a promessa de bênção abundante.",
+      "prompt": "Em Malaquias 3:10, toque o trecho que sustenta a promessa de bênção abundante.",
+      "cue": "Em Malaquias 3:10, toque o trecho que sustenta a promessa de bênção abundante.",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa do tesouro"
+        },
+        {
+          "id": "b",
+          "text": "janelas do céu"
+        },
+        {
+          "id": "c",
+          "text": "mantimento"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "abrir as janelas do céu",
+      "feedbackCorrect": "As janelas do céu e a bênção sem medida são a promessa após a prova.",
+      "feedbackWrong": {
+        "a": "A casa do tesouro é o destino dos dízimos, não a imagem da bênção.",
+        "c": "\"Mantimento\" é o propósito na casa; a bênção abundante está nas janelas."
+      },
+      "hint": "Procure o que o Senhor promete abrir.",
+      "learningObjective": "Sustentar com o texto a promessa de bênção.",
+      "evidence": [
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-03",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Malaquias 3:6–10 sustenta sobre o retorno ao Senhor?",
+      "prompt": "Que leitura Malaquias 3:6–10 sustenta sobre o retorno ao Senhor?",
+      "cue": "Que leitura Malaquias 3:6–10 sustenta sobre o retorno ao Senhor?",
+      "verseRef": "Malaquias 3:6–7",
+      "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos. Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voltar inclui fidelidade no que é dele"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor muda e por isso consome Jacó"
+        },
+        {
+          "id": "c",
+          "text": "Bênção vem sem qualquer prova de fidelidade"
+        },
+        {
+          "id": "d",
+          "text": "Retorno é só palavra, sem dízimos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+      "feedbackCorrect": "O Senhor não muda; chama a retornar com fidelidade concreta.",
+      "feedbackWrong": {
+        "b": "Ele não muda; por isso Jacó não é consumido.",
+        "c": "Ele diz \"provai-me nisto\" após trazer os dízimos.",
+        "d": "A resposta ao \"em que retornar\" aponta dízimos e ofertas."
+      },
+      "hint": "Una a imutabilidade, o chamado e os dízimos.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Malaquias 3:6–7"
+      ]
+    },
+    {
+      "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-04",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho da provisão fiel na Bíblia?",
+      "prompt": "Qual sequência revela o caminho da provisão fiel na Bíblia?",
+      "cue": "Qual sequência revela o caminho da provisão fiel na Bíblia?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor abre o tesouro do céu"
+        },
+        {
+          "id": "b",
+          "text": "O povo traz os dízimos à casa"
+        },
+        {
+          "id": "c",
+          "text": "Deus faz abundar toda graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "abrir as janelas do céu",
+      "feedbackCorrect": "Da promessa na lei à graça em Cristo, Deus prove generosamente.",
+      "feedbackWrong": {
+        "default": "Siga: Deuteronômio, Malaquias e 2 Coríntios."
+      },
+      "hint": "Siga a ordem: lei, profeta e carta.",
+      "learningObjective": "Ver a provisão de Deus como fio bíblico.",
+      "evidence": [
+        "Deuteronômio 28:12",
+        "Malaquias 3:10",
+        "2 Coríntios 9:8"
+      ]
+    },
+    {
+      "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-05",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Malaquias 3:10, que palavra nomeia o propósito de haver na casa do Senhor?",
+      "prompt": "Em Malaquias 3:10, que palavra nomeia o propósito de haver na casa do Senhor?",
+      "cue": "Em Malaquias 3:10, que palavra nomeia o propósito de haver na casa do Senhor?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "template": "Trazei todos os dízimos à casa do tesouro, para que haja ___ na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mantimento"
+        },
+        {
+          "id": "b",
+          "text": "exércitos"
+        },
+        {
+          "id": "c",
+          "text": "nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "para que haja mantimento na minha casa",
+      "feedbackCorrect": "O propósito é haver mantimento na casa do Senhor.",
+      "feedbackWrong": {
+        "b": "\"Exércitos\" faz parte do título do Senhor, não do propósito da casa.",
+        "c": "As nações aparecem em 3:12; aqui o propósito é o mantimento."
+      },
+      "hint": "Veja o que deve haver na casa depois de \"para que\".",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": [
+        "Malaquias 3:10"
+      ]
+    },
+    {
+      "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-06",
+      "trail": "malaquias-cap",
+      "section": "mlc-03-voltai-a-mim",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Malaquias 3:10 a 2 Coríntios 9:8?",
+      "prompt": "O que liga Malaquias 3:10 a 2 Coríntios 9:8?",
+      "cue": "O que liga Malaquias 3:10 a 2 Coríntios 9:8?",
+      "verseRef": "Malaquias 3:10",
+      "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+      "passageA": {
+        "ref": "Malaquias 3:10",
+        "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+      },
+      "passageB": {
+        "ref": "2 Coríntios 9:8",
+        "text": "E Deus é poderoso para fazer-vos abundar em toda a graça, a fim de que, tendo sempre, em tudo, ampla suficiência, transbordem em toda boa obra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Graça abundante de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Escassez como regra final"
+        },
+        {
+          "id": "c",
+          "text": "Bênção só para reis"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "bênção sem medida",
+      "feedbackCorrect": "Os dois textos apontam a generosidade de Deus que sobra para toda boa obra.",
+      "feedbackWrong": {
+        "b": "Os textos falam de abundância, não de escassez permanente.",
+        "c": "A promessa alcança o povo que prova o Senhor, não só reis."
+      },
+      "hint": "Compare a abundância prometida em cada texto.",
+      "learningObjective": "Ligar as janelas do céu à graça abundante.",
+      "evidence": [
+        "Malaquias 3:10",
+        "2 Coríntios 9:8"
+      ]
+    }
+  ]
+}

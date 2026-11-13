@@ -1,0 +1,722 @@
+{
+ "study": {
+  "passageRef": "Provérbios 3:1–6",
+  "passages": [
+   {
+    "ref": "Provérbios 3:1–6"
+   },
+   {
+    "ref": "Provérbios 3:7–12"
+   }
+  ],
+  "context": "O filho é chamado a guardar os ensinos, confiar no Senhor de todo o coração e honrá-lo com os bens. Até a correção entra como sinal de amor.",
+  "keyword": "Confiar",
+  "keywordGloss": "Apoiar-se no Senhor, não no próprio entendimento, em todos os caminhos.",
+  "focusQuestion": "Em que decisão desta semana você ainda se apoia só no próprio entendimento?",
+  "reflectionPrompts": [
+   "Coração que confia",
+   "Veredas endireitadas",
+   "Correção que ama"
+  ],
+  "facts": [
+   {
+    "text": "Os ensinos aumentam longevidade, vida e paz.",
+    "evidenceRef": "Provérbios 3:2",
+    "evidenceSpan": "aumentarão a tua longevidade"
+   },
+   {
+    "text": "Bondade e fidelidade devem ser gravadas no coração.",
+    "evidenceRef": "Provérbios 3:3",
+    "evidenceSpan": "grave-as na tábua do seu coração"
+   },
+   {
+    "text": "Confiar no Senhor exclui apoiar-se no próprio entendimento.",
+    "evidenceRef": "Provérbios 3:5",
+    "evidenceSpan": "não se apoie no seu próprio entendimento"
+   },
+   {
+    "text": "Reconhecê-lo em todos os caminhos faz endireitar as veredas.",
+    "evidenceRef": "Provérbios 3:6",
+    "evidenceSpan": "ele endireitará as suas veredas"
+   },
+   {
+    "text": "Honrar o Senhor com os bens e as primícias.",
+    "evidenceRef": "Provérbios 3:9",
+    "evidenceSpan": "Honra o Senhor com os teus bens"
+   },
+   {
+    "text": "O Senhor disciplina a quem ama.",
+    "evidenceRef": "Provérbios 3:12",
+    "evidenceSpan": "o Senhor disciplina a quem ama"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "entendimento",
+    "gloss": "O apoio proibido quando se confia no Senhor: a própria leitura isolada."
+   },
+   {
+    "term": "veredas",
+    "gloss": "Caminhos que o Senhor endireita quando é reconhecido."
+   },
+   {
+    "term": "disciplina",
+    "gloss": "Correção do Senhor, sinal de amor paternal."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Guardar ensinos e bondade",
+    "evidenceRef": "Provérbios 3:1–4"
+   },
+   {
+    "label": "Confiar e reconhecer o Senhor",
+    "evidenceRef": "Provérbios 3:5–6"
+   },
+   {
+    "label": "Temer, honrar e ser suprido",
+    "evidenceRef": "Provérbios 3:7–10"
+   },
+   {
+    "label": "Aceitar a correção do amor",
+    "evidenceRef": "Provérbios 3:11–12"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "Porque os ensinos aumentam vida e paz, não devem ser esquecidos.",
+    "marker": "Porque",
+    "evidenceRef": "Provérbios 3:2"
+   },
+   {
+    "kind": "resultado",
+    "text": "Reconhecer o Senhor em todos os caminhos resulta em veredas endireitadas.",
+    "marker": null,
+    "evidenceRef": "Provérbios 3:6"
+   },
+   {
+    "kind": "causa",
+    "text": "A disciplina vem porque o Senhor ama, como o pai ao filho.",
+    "marker": "Porque",
+    "evidenceRef": "Provérbios 3:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Hebreus 12:6",
+    "bridge": "Disciplina de quem ama"
+   },
+   {
+    "ref": "Salmos 37:5",
+    "bridge": "Entregar o caminho ao Senhor"
+   },
+   {
+    "ref": "Tiago 4:15",
+    "bridge": "Reconhecer o Senhor nos planos"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Confiar no Senhor é não pensar; basta esperar parado.",
+    "why": "3:5–6 pede confiança e reconhecimento ativo em todos os caminhos."
+   },
+   {
+    "text": "A correção do Senhor prova que ele rejeitou o filho.",
+    "why": "3:12 liga disciplina ao amor, como o pai ao filho a quem quer bem."
+   },
+   {
+    "text": "Honrar com os bens é opcional se o coração já confia.",
+    "why": "3:9 manda honrar com bens e primícias; faz parte do mesmo caminho."
+   }
+  ],
+  "centralInsight": "Temor e confiança andam juntos: Deus endireita as veredas de quem nele se apoia.",
+  "anchorQuestion": "Em quem Provérbios 3:5 manda confiar de todo o coração?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 3:5, o texto manda confiar no Senhor de todo o coração.",
+   "verseRef": "Provérbios 3:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "Confie no SENHOR de todo o seu coração",
+   "feedbackCorrect": "A ordem é clara: confiar no Senhor de todo o coração.",
+   "feedbackWrong": {
+    "false": "Releia 3:5: confie no Senhor de todo o seu coração."
+   },
+   "hint": "Olhe o começo do versículo.",
+   "learningObjective": "Observar o alvo da confiança.",
+   "evidence": [
+    "Provérbios 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 3:5, toque em quem se deve confiar.",
+   "verseRef": "Provérbios 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "SENHOR"
+    },
+    {
+     "id": "b",
+     "text": "coração"
+    },
+    {
+     "id": "c",
+     "text": "entendimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Confie no SENHOR",
+   "feedbackCorrect": "O alvo da confiança é o Senhor, não o próprio entendimento.",
+   "feedbackWrong": {
+    "b": "O coração é o modo (de todo ele), não o alvo.",
+    "c": "No entendimento não se deve apoiar."
+   },
+   "hint": "Nome de Deus logo após \"Confie no\".",
+   "learningObjective": "Identificar o alvo da confiança.",
+   "evidence": [
+    "Provérbios 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 3:6, o que o Senhor faz quando é reconhecido em todos os caminhos?",
+   "verseRef": "Provérbios 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Endireita as veredas"
+    },
+    {
+     "id": "b",
+     "text": "Afasta todo trabalho"
+    },
+    {
+     "id": "c",
+     "text": "Apaga a necessidade de orar"
+    },
+    {
+     "id": "d",
+     "text": "Manda apoiar-se só em si"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ele endireitará as suas veredas",
+   "feedbackCorrect": "Reconhecê-lo leva a veredas endireitadas.",
+   "feedbackWrong": {
+    "b": "Não promete fim do trabalho; promete caminho endireitado.",
+    "c": "O reconhecimento é contínuo, não o fim da oração.",
+    "d": "3:5 manda o contrário: não se apoiar no próprio entendimento."
+   },
+   "hint": "Fim do versículo: o que ele fará.",
+   "learningObjective": "Observar o resultado de reconhecer o Senhor.",
+   "evidence": [
+    "Provérbios 3:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 3:5 na ordem do texto.",
+   "verseRef": "Provérbios 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confie no SENHOR de todo o seu coração"
+    },
+    {
+     "id": "b",
+     "text": "e não se apoie"
+    },
+    {
+     "id": "c",
+     "text": "no seu próprio entendimento"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Confie no SENHOR de todo o seu coração",
+   "feedbackCorrect": "Primeiro a confiança total; depois a negação do apoio próprio.",
+   "feedbackWrong": {
+    "default": "Comece pela confiança no Senhor; o entendimento vem por último."
+   },
+   "hint": "O versículo abre com o verbo Confie.",
+   "learningObjective": "Seguir a ordem de 3:5.",
+   "evidence": [
+    "Provérbios 3:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 3:6, o que o Senhor endireitará?",
+   "verseRef": "Provérbios 3:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "veredas"
+    },
+    {
+     "id": "b",
+     "text": "muros"
+    },
+    {
+     "id": "c",
+     "text": "redes"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "endireitará as suas veredas",
+   "feedbackCorrect": "Ele endireitará as veredas de quem o reconhece.",
+   "feedbackWrong": {
+    "b": "Não são muros; são veredas.",
+    "c": "Não são redes; são veredas."
+   },
+   "hint": "Última palavra do versículo.",
+   "learningObjective": "Lembrar o que o Senhor endireita.",
+   "evidence": [
+    "Provérbios 3:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 3:5 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 3:5",
+   "passageA": {
+    "ref": "Provérbios 3:5",
+    "text": "não se apoie no seu próprio entendimento"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Confiança no Senhor exclui apoio exclusivo em si mesmo."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Apoio só em si"
+    },
+    {
+     "id": "b",
+     "text": "Confiança sem autoapoio"
+    },
+    {
+     "id": "c",
+     "text": "Entendimento sem Senhor"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "não se apoie no seu próprio entendimento",
+   "feedbackCorrect": "O versículo une confiança no Senhor e recusa do autoapoio.",
+   "feedbackWrong": {
+    "a": "O texto proíbe esse apoio exclusivo.",
+    "c": "O entendimento próprio não substitui o Senhor."
+   },
+   "hint": "Veja o que não se deve fazer.",
+   "learningObjective": "Ligar 3:5 ao contraste confiança vs autoapoio.",
+   "evidence": [
+    "Provérbios 3:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 3:12, a disciplina do Senhor é apresentada como prova de amor, à semelhança do pai.",
+   "verseRef": "Provérbios 3:12",
+   "correctOptionId": "true",
+   "evidenceSpan": "o Senhor disciplina a quem ama",
+   "feedbackCorrect": "Disciplina e amor andam juntos, como o pai com o filho.",
+   "feedbackWrong": {
+    "false": "Releia 3:12: disciplina a quem ama, como o pai ao filho."
+   },
+   "hint": "Compare a disciplina ao gesto do pai.",
+   "learningObjective": "Compreender a relação entre disciplina e amor.",
+   "evidence": [
+    "Provérbios 3:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 3:2, toque a palavra que marca a razão de guardar os ensinos.",
+   "verseRef": "Provérbios 3:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "paz"
+    },
+    {
+     "id": "c",
+     "text": "anos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque eles aumentarão a tua longevidade",
+   "feedbackCorrect": "\"Porque\" liga a guarda dos ensinos ao aumento de vida e paz.",
+   "feedbackWrong": {
+    "b": "\"Paz\" é o fruto; a razão começa com Porque.",
+    "c": "\"Anos\" descreve o fruto, não a marca da causa."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de causa em 3:2.",
+   "evidence": [
+    "Provérbios 3:2"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 3:5–6 estabelece?",
+   "verseRef": "Provérbios 3:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confiar e reconhecer o Senhor leva a veredas endireitadas"
+    },
+    {
+     "id": "b",
+     "text": "O entendimento próprio substitui o reconhecimento"
+    },
+    {
+     "id": "c",
+     "text": "Só confiar no coração basta, sem caminhos"
+    },
+    {
+     "id": "d",
+     "text": "O Senhor endireita quem se apoia só em si"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ele endireitará as suas veredas",
+   "feedbackCorrect": "Confiança, reconhecimento e veredas formam uma só linha.",
+   "feedbackWrong": {
+    "b": "3:5 manda não se apoiar no próprio entendimento.",
+    "c": "3:6 pede reconhecimento em todos os caminhos.",
+    "d": "O apoio próprio é o que se rejeita."
+   },
+   "hint": "Una o começo de 3:5 ao fim de 3:6.",
+   "learningObjective": "Relacionar confiança e veredas.",
+   "evidence": [
+    "Provérbios 3:5",
+    "Provérbios 3:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Provérbios 3:1–12?",
+   "verseRef": "Provérbios 3:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Guardar ensinos e bondade"
+    },
+    {
+     "id": "b",
+     "text": "Confiar e reconhecer o Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Aceitar a correção do amor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Confie no SENHOR de todo o seu coração",
+   "feedbackCorrect": "Dos ensinos à confiança, e daí à correção acolhida.",
+   "feedbackWrong": {
+    "default": "A correção fecha o trecho; a confiança fica no meio."
+   },
+   "hint": "A disciplina aparece no fim do bloco.",
+   "learningObjective": "Compreender o movimento do capítulo.",
+   "evidence": [
+    "Provérbios 3:1",
+    "Provérbios 3:5",
+    "Provérbios 3:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 3:5, no que não se deve apoiar?",
+   "verseRef": "Provérbios 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "entendimento"
+    },
+    {
+     "id": "b",
+     "text": "caminho"
+    },
+    {
+     "id": "c",
+     "text": "pedido"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "próprio entendimento",
+   "feedbackCorrect": "O verbo da relação negativa cai sobre o próprio entendimento.",
+   "feedbackWrong": {
+    "b": "Os caminhos entram em 3:6 para reconhecimento.",
+    "c": "Não fala de pedido aqui; fala de entendimento."
+   },
+   "hint": "Última palavra do versículo.",
+   "learningObjective": "Lembrar o apoio que se rejeita.",
+   "evidence": [
+    "Provérbios 3:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 3:12 a Hebreus 12:6?",
+   "verseRef": "Provérbios 3:12",
+   "passageA": {
+    "ref": "Provérbios 3:12"
+   },
+   "passageB": {
+    "ref": "Hebreus 12:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Disciplina de quem ama"
+    },
+    {
+     "id": "b",
+     "text": "Rejeição sem motivo"
+    },
+    {
+     "id": "c",
+     "text": "Riqueza sem correção"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Senhor disciplina a quem ama",
+   "feedbackCorrect": "Hebreus ecoa Provérbios: o Senhor disciplina a quem ama.",
+   "feedbackWrong": {
+    "b": "Os dois textos ligam disciplina a amor, não a rejeição.",
+    "c": "O tema é correção amorosa, não riqueza."
+   },
+   "hint": "Compare disciplina e amor nos dois textos.",
+   "learningObjective": "Cruzar a disciplina amorosa em Provérbios e Hebreus.",
+   "evidence": [
+    "Provérbios 3:12",
+    "Hebreus 12:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 3:11–12, desprezar a correção do Senhor é coerente com o amor paternal descrito no texto.",
+   "verseRef": "Provérbios 3:11–12",
+   "correctOptionId": "false",
+   "evidenceSpan": "não despreze a correção do Senhor",
+   "feedbackCorrect": "O texto manda não desprezar a correção, porque ela vem do amor.",
+   "feedbackWrong": {
+    "true": "3:11 manda não desprezar; 3:12 explica que é amor."
+   },
+   "hint": "Leia o verbo no início de 3:11.",
+   "learningObjective": "Corrigir a leitura que rejeita a disciplina.",
+   "evidence": [
+    "Provérbios 3:11",
+    "Provérbios 3:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 3:12, toque o trecho que sustenta a disciplina como amor.",
+   "verseRef": "Provérbios 3:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "disciplina"
+    },
+    {
+     "id": "b",
+     "text": "quem ama"
+    },
+    {
+     "id": "c",
+     "text": "filho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "disciplina a quem ama",
+   "feedbackCorrect": "\"Quem ama\" liga a disciplina ao amor do Senhor.",
+   "feedbackWrong": {
+    "a": "\"Disciplina\" é a ação; o motivo está em quem ama.",
+    "c": "\"Filho\" ilustra; o laço pedida é quem ama."
+   },
+   "hint": "Procure a quem a disciplina se dirige.",
+   "learningObjective": "Sustentar no texto a disciplina como amor.",
+   "evidence": [
+    "Provérbios 3:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 3:5–12 sustenta?",
+   "verseRef": "Provérbios 3:5–6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confiança, honra e correção formam um só caminho com o Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Confiar no Senhor dispensa honrar com os bens"
+    },
+    {
+     "id": "c",
+     "text": "A correção prova que o Senhor rejeitou o filho"
+    },
+    {
+     "id": "d",
+     "text": "O entendimento próprio substitui o reconhecimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Confie no SENHOR de todo o seu coração",
+   "feedbackCorrect": "Do coração que confia à disciplina acolhida, o texto mantém um só caminho.",
+   "feedbackWrong": {
+    "b": "3:9 ainda manda honrar com os bens.",
+    "c": "3:12 liga disciplina ao amor.",
+    "d": "3:5–6 rejeita o autoapoio."
+   },
+   "hint": "Veja se o texto separa confiança e correção.",
+   "learningObjective": "Escolher a leitura integrada do trecho.",
+   "evidence": [
+    "Provérbios 3:5",
+    "Provérbios 3:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra confiança e correção na Bíblia?",
+   "verseRef": "Provérbios 3:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Confiar no Senhor de todo o coração"
+    },
+    {
+     "id": "b",
+     "text": "O Senhor disciplina a quem ama"
+    },
+    {
+     "id": "c",
+     "text": "Hebreus lembra a mesma disciplina amorosa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Confie no SENHOR de todo o seu coração",
+   "feedbackCorrect": "Confiança (3:5), disciplina (3:12) e eco em Hebreus 12:6.",
+   "feedbackWrong": {
+    "default": "Comece pela confiança; Hebreus fecha o fio."
+   },
+   "hint": "Do AT à citação em Hebreus.",
+   "learningObjective": "Ver confiança e disciplina no fio bíblico.",
+   "evidence": [
+    "Provérbios 3:5",
+    "Provérbios 3:12",
+    "Hebreus 12:6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 3:12, que verbo diz o que o Senhor faz a quem ama?",
+   "verseRef": "Provérbios 3:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "ignora"
+    },
+    {
+     "id": "b",
+     "text": "disciplina"
+    },
+    {
+     "id": "c",
+     "text": "abandona"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "o Senhor disciplina a quem ama",
+   "feedbackCorrect": "\"Disciplina\" carrega o sentido teológico: correção de amor.",
+   "feedbackWrong": {
+    "a": "Ele não ignora; disciplina.",
+    "c": "Não abandona; age como pai que quer bem."
+   },
+   "hint": "Verbo ligado a \"quem ama\".",
+   "learningObjective": "Lembrar o termo da correção amorosa.",
+   "evidence": [
+    "Provérbios 3:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 3:5 a Salmos 37:5?",
+   "verseRef": "Provérbios 3:5",
+   "passageA": {
+    "ref": "Provérbios 3:5"
+   },
+   "passageB": {
+    "ref": "Salmos 37:5"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Entregar o caminho ao Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Confiar só em si mesmo"
+    },
+    {
+     "id": "c",
+     "text": "Evitar todo reconhecimento"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Confie no SENHOR de todo o seu coração",
+   "feedbackCorrect": "Os dois textos pedem entregar o caminho e confiar no Senhor.",
+   "feedbackWrong": {
+    "b": "Ambos rejeitam o autoapoio exclusivo.",
+    "c": "Há reconhecimento e entrega, não evasão."
+   },
+   "hint": "Compare confiança e caminho.",
+   "learningObjective": "Ligar a confiança de Provérbios ao Salmo.",
+   "evidence": [
+    "Provérbios 3:5",
+    "Salmos 37:5"
+   ]
+  }
+ ]
+}

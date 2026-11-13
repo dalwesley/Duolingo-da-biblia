@@ -1,0 +1,935 @@
+{
+  "study": {
+    "passageRef": "2 Reis 2:8–10",
+    "passages": [
+      {
+        "ref": "2 Reis 1:9–14"
+      },
+      {
+        "ref": "2 Reis 1:15–16"
+      },
+      {
+        "ref": "2 Reis 2:1–6"
+      },
+      {
+        "ref": "2 Reis 2:7–10"
+      },
+      {
+        "ref": "2 Reis 3:9–14"
+      },
+      {
+        "ref": "2 Reis 3:15–18"
+      },
+      {
+        "ref": "2 Reis 4:1–7"
+      }
+    ],
+    "context": "Esta Travessia revisa o fogo sobre os capitães, a fidelidade de Eliseu até o Jordão, a água no vale sem chuva e o azeite que cobre a dívida da viúva.",
+    "keyword": "profeta",
+    "keywordGloss": "O servo pela palavra do Senhor: juízo, sucessão, provisão e cuidado.",
+    "focusQuestion": "Onde você precisa ouvir de novo a palavra do Senhor que sustenta o seu povo?",
+    "reflectionPrompts": [
+      "Juízo e fogo",
+      "Seguir até o fim",
+      "Provisão no pouco"
+    ],
+    "facts": [
+      {
+        "text": "Fogo desceu do céu e consumiu o primeiro capitão e seus cinquenta.",
+        "evidenceRef": "2 Reis 1:10",
+        "evidenceSpan": "fogo desceu do céu e o consumiu a ele e aos seus cinquenta"
+      },
+      {
+        "text": "Eliseu jurou que não deixaria Elias.",
+        "evidenceRef": "2 Reis 2:2",
+        "evidenceSpan": "não te deixarei"
+      },
+      {
+        "text": "Eliseu pediu porção dobrada do espírito de Elias.",
+        "evidenceRef": "2 Reis 2:9",
+        "evidenceSpan": "uma porção dobrada do teu espírito"
+      },
+      {
+        "text": "O Senhor mandou fazer covas no vale; sem vento nem chuva haveria água.",
+        "evidenceRef": "2 Reis 3:17",
+        "evidenceSpan": "não sentirão vento, nem verão chuva"
+      },
+      {
+        "text": "A viúva só tinha uma botija de azeite.",
+        "evidenceRef": "2 Reis 4:2",
+        "evidenceSpan": "exceto uma botija de azeite"
+      },
+      {
+        "text": "Quando não havia mais vasos, o azeite cessou.",
+        "evidenceRef": "2 Reis 4:6",
+        "evidenceSpan": "Não há mais vasos. E o azeite cessou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "fogo",
+        "gloss": "O juízo do céu sobre quem despreza o homem de Deus."
+      },
+      {
+        "term": "espírito",
+        "gloss": "A porção dobrada pedida para continuar a obra."
+      },
+      {
+        "term": "azeite",
+        "gloss": "O pouco que multiplica até cobrir a dívida."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Fogo sobre capitães e sentença ao rei",
+        "evidenceRef": "2 Reis 1:10–16"
+      },
+      {
+        "label": "Eliseu segue e pede porção dobrada",
+        "evidenceRef": "2 Reis 2:2–9"
+      },
+      {
+        "label": "Água prometida no vale seco",
+        "evidenceRef": "2 Reis 3:16–18"
+      },
+      {
+        "label": "Azeite multiplica e cobre a dívida",
+        "evidenceRef": "2 Reis 4:3–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Dois capitães caem; porém o terceiro pede que a vida seja preciosa.",
+        "marker": "porém",
+        "evidenceRef": "2 Reis 1:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Elias manda ficar; porém Eliseu não o deixa.",
+        "marker": "porém",
+        "evidenceRef": "2 Reis 2:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Sem vento nem chuva; contudo o vale se encherá de água.",
+        "marker": "contudo",
+        "evidenceRef": "2 Reis 3:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 18:38",
+        "bridge": "Fogo do Senhor no Carmelo"
+      },
+      {
+        "ref": "1 Reis 17:14",
+        "bridge": "Azeite da viúva de Sarepta"
+      },
+      {
+        "ref": "Êxodo 17:6",
+        "bridge": "Água no deserto"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor só age com juízo; não há provisão nestas cenas.",
+        "why": "Há água no vale e azeite que cobre a dívida, além do fogo."
+      },
+      {
+        "text": "Eliseu podia abandonar Elias sem prejuízo.",
+        "why": "Ele jura não deixá-lo, e o pedido depende de vê-lo ser tomado."
+      },
+      {
+        "text": "O azeite para porque Deus se cansa de dar.",
+        "why": "O texto liga a cessação à falta de vasos."
+      }
+    ],
+    "anchorQuestion": "O que une fogo, sucessão, água e azeite nestas cenas?",
+    "centralInsight": "O Senhor sustenta o seu povo pela palavra dos profetas"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 1 —10, fogo desceu do céu e consumiu o capitão e seus cinquenta.",
+      "verseRef": "2 Reis 1:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "fogo desceu do céu e o consumiu a ele e aos seus cinquenta",
+      "feedbackCorrect": "O juízo cai sobre o primeiro envio.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "O que aconteceu ao capitão?",
+      "learningObjective": "Observar o fogo do céu.",
+      "evidence": [
+        "2 Reis 1:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 2:9, toque o que Eliseu pediu em dobro.",
+      "verseRef": "2 Reis 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "após"
+        },
+        {
+          "id": "b",
+          "text": "Sucedeu"
+        },
+        {
+          "id": "c",
+          "text": "passarem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Sucedeu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o pedido de Eliseu.",
+      "evidence": [
+        "2 Reis 2:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 3:16, o que o Senhor manda fazer no vale?",
+      "verseRef": "2 Reis 3:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazer covas e mais covas"
+        },
+        {
+          "id": "b",
+          "text": "Erguer um altar a Baal"
+        },
+        {
+          "id": "c",
+          "text": "Voltar a Samaria de imediato"
+        },
+        {
+          "id": "d",
+          "text": "Esperar vento da manhã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Façam neste vale covas e mais covas",
+      "feedbackCorrect": "A ordem é cavar no vale.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a ordem do Senhor.",
+      "learningObjective": "Observar a ordem de cavar.",
+      "evidence": [
+        "2 Reis 3:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 4:6 na ordem do texto.",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "quando os vasos estavam cheios, ela disse a seu filho"
+        },
+        {
+          "id": "b",
+          "text": "Traze-me mais um vaso. Porém, ele respondeu"
+        },
+        {
+          "id": "c",
+          "text": "Não há mais vasos. E o azeite cessou"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E o azeite cessou",
+      "feedbackCorrect": "Cheios, pedido e cessação.",
+      "feedbackWrong": {
+        "default": "Comece pelos vasos cheios."
+      },
+      "hint": "O que ela pede ao filho?",
+      "learningObjective": "Seguir a ordem do azeite.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 4:2, complete: exceto uma botija de ___.",
+      "verseRef": "2 Reis 4:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "azeite"
+        },
+        {
+          "id": "b",
+          "text": "farinha"
+        },
+        {
+          "id": "c",
+          "text": "vinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exceto uma botija de azeite",
+      "feedbackCorrect": "Só restava azeite.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que há na botija?",
+      "learningObjective": "Lembrar o azeite da viúva.",
+      "evidence": [
+        "2 Reis 4:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 1:16 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 1:16",
+      "passageA": {
+        "ref": "2 Reis 1:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O rei consulta Baal-Zebube e ouve a sentença do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Há Deus em Israel"
+        },
+        {
+          "id": "b",
+          "text": "Baal cura o rei"
+        },
+        {
+          "id": "c",
+          "text": "Profeta elogia Ecrom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não há Deus em Israel para consultar a sua palavra",
+      "feedbackCorrect": "A pergunta expõe a idolatria do rei.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a pergunta do Senhor.",
+      "learningObjective": "Ligar a sentença ao Deus de Israel.",
+      "evidence": [
+        "2 Reis 1:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 3:11, toque quem Josafá quer consultar.",
+      "verseRef": "2 Reis 3:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "perguntou"
+        },
+        {
+          "id": "b",
+          "text": "Josafá"
+        },
+        {
+          "id": "c",
+          "text": "aqui"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Josafá",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Observar a busca pelo profeta.",
+      "evidence": [
+        "2 Reis 3:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 2:8 na ordem do texto.",
+      "verseRef": "2 Reis 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, Elias tomou sua capa, enrolou-a"
+        },
+        {
+          "id": "b",
+          "text": "e feriu as águas, que se dividiram"
+        },
+        {
+          "id": "c",
+          "text": "e ambos passaram em seco"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ambos passaram em seco",
+      "feedbackCorrect": "Capa, águas e passagem.",
+      "feedbackWrong": {
+        "default": "Comece pela capa."
+      },
+      "hint": "O que Elias toma primeiro?",
+      "learningObjective": "Seguir a passagem do Jordão.",
+      "evidence": [
+        "2 Reis 2:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 2 —2, Elias manda Eliseu ficar e Eliseu concorda em permanecer.",
+      "verseRef": "2 Reis 2:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "não te deixarei",
+      "feedbackCorrect": "Eliseu responde que não o deixará.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "O que Eliseu responde?",
+      "learningObjective": "Ver o contraste da fidelidade.",
+      "evidence": [
+        "2 Reis 2:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 3:17, toque a palavra que marca o contraste com a ausência de chuva.",
+      "verseRef": "2 Reis 3:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Porque"
+        },
+        {
+          "id": "c",
+          "text": "Vocês"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o marcador contudo.",
+      "evidence": [
+        "2 Reis 3:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 1:14 se relaciona com o destino dos dois primeiros capitães?",
+      "verseRef": "2 Reis 1:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembra o juízo e pede misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Nega que o fogo tenha descido"
+        },
+        {
+          "id": "c",
+          "text": "Pede o mesmo destino dos primeiros"
+        },
+        {
+          "id": "d",
+          "text": "Acusa Elias de inventar o milagre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, agora, que a minha vida seja preciosa",
+      "feedbackCorrect": "Ele cita o juízo e pede vida preciosa.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o \"porém, agora\".",
+      "learningObjective": "Relacionar juízo e pedido.",
+      "evidence": [
+        "2 Reis 1:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a Travessia do bloco?",
+      "verseRef": "2 Reis 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fogo sobre capitães e sentença ao rei"
+        },
+        {
+          "id": "b",
+          "text": "Eliseu segue e pede porção dobrada"
+        },
+        {
+          "id": "c",
+          "text": "Água prometida no vale seco"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "uma porção dobrada do teu espírito",
+      "feedbackCorrect": "Juízo, sucessão e provisão.",
+      "feedbackWrong": {
+        "default": "Comece pelo fogo dos capitães."
+      },
+      "hint": "Qual cena abre o bloco?",
+      "learningObjective": "Ordenar o arco do bloco.",
+      "evidence": [
+        "2 Reis 1:10",
+        "2 Reis 3:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 4:6, complete: Não há mais vasos. E o azeite ___.",
+      "verseRef": "2 Reis 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "cessou"
+        },
+        {
+          "id": "b",
+          "text": "aumentou"
+        },
+        {
+          "id": "c",
+          "text": "ferveu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E o azeite cessou",
+      "feedbackCorrect": "Sem vasos, o azeite cessa.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que o azeite fez?",
+      "learningObjective": "Lembrar a cessação.",
+      "evidence": [
+        "2 Reis 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 1:10 a 1 Reis 18:38?",
+      "verseRef": "2 Reis 1:10",
+      "passageA": {
+        "ref": "2 Reis 1:10"
+      },
+      "passageB": {
+        "ref": "1 Reis 18:38"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fogo do Senhor no Carmelo"
+        },
+        {
+          "id": "b",
+          "text": "Chuva sobre o altar"
+        },
+        {
+          "id": "c",
+          "text": "Exílio imediato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fogo desceu do céu",
+      "feedbackCorrect": "Nos dois textos o Senhor responde com fogo.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o que desce do céu.",
+      "learningObjective": "Relacionar os fogos de Elias.",
+      "evidence": [
+        "2 Reis 1:10",
+        "1 Reis 18:38"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 2:2, toque a palavra que marca o contraste com a ordem de Elias.",
+      "verseRef": "2 Reis 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Elias"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Elias",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o contraste da fidelidade.",
+      "evidence": [
+        "2 Reis 2:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam água e vitória em 2 Reis 3?",
+      "verseRef": "2 Reis 3:17–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa de água sem vento nem chuva"
+        },
+        {
+          "id": "b",
+          "text": "Isso ainda é pouco aos olhos do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Também entregará os moabitas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "também entregará os moabitas em suas mãos",
+      "feedbackCorrect": "Água, avaliação e vitória.",
+      "feedbackWrong": {
+        "default": "Comece pela água prometida."
+      },
+      "hint": "O que ainda é pouco?",
+      "learningObjective": "Ordenar provisão e vitória.",
+      "evidence": [
+        "2 Reis 3:17",
+        "2 Reis 3:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 4 —6–7, o azeite cessa por falta de vasos, e Eliseu manda vender para pagar a dívida.",
+      "verseRef": "2 Reis 4:6–7",
+      "correctOptionId": "true",
+      "evidenceSpan": "venda o azeite, pague sua dívida",
+      "feedbackCorrect": "Falta de vasos e pagamento da dívida andam juntos.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "O que acontece após não haver vasos?",
+      "learningObjective": "Interpretar o limite e o propósito.",
+      "evidence": [
+        "2 Reis 4:6",
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 1:16, toque o nome do deus consultado pelo rei.",
+      "verseRef": "2 Reis 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "você"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura da idolatria.",
+      "evidence": [
+        "2 Reis 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura une fogo, água e azeite neste bloco?",
+      "verseRef": "2 Reis 3:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor julga e também sustenta pela palavra"
+        },
+        {
+          "id": "b",
+          "text": "Só há juízo; não há provisão alguma"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu podia abandonar Elias sem prejuízo"
+        },
+        {
+          "id": "d",
+          "text": "O azeite para porque Deus se cansa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este vale se encherá de tanta água",
+      "feedbackCorrect": "Há juízo e há provisão pela palavra dos profetas.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una juízo e provisão.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "2 Reis 3:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da provisão da viúva.",
+      "verseRef": "2 Reis 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor sob ameaça da dívida"
+        },
+        {
+          "id": "b",
+          "text": "Vasilhas vazias se enchem de azeite"
+        },
+        {
+          "id": "c",
+          "text": "Venda, pagamento e sustento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pague sua dívida e você e seus filhos viverão",
+      "feedbackCorrect": "Necessidade, milagre e restituição.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "O que vem antes de encher?",
+      "learningObjective": "Encadear o cuidado com a viúva.",
+      "evidence": [
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 1:10, complete: desça ___ do céu e te consuma.",
+      "verseRef": "2 Reis 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "vento"
+        },
+        {
+          "id": "c",
+          "text": "gelo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desça fogo do céu e te consuma",
+      "feedbackCorrect": "Fogo é o juízo declarado por Elias.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que deve descer do céu?",
+      "learningObjective": "Lembrar o termo do juízo.",
+      "evidence": [
+        "2 Reis 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 4:2 a 1 Reis 17:14?",
+      "verseRef": "2 Reis 4:2",
+      "passageA": {
+        "ref": "2 Reis 4:2"
+      },
+      "passageB": {
+        "ref": "1 Reis 17:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Azeite da viúva de Sarepta"
+        },
+        {
+          "id": "b",
+          "text": "Fogo sobre o Carmelo"
+        },
+        {
+          "id": "c",
+          "text": "Jordão dividido ao meio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma botija de azeite",
+      "feedbackCorrect": "Duas viúvas e pouco azeite sob o cuidado de Deus.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o pouco azeite de outra viúva.",
+      "learningObjective": "Ligar as provisões das viúvas.",
+      "evidence": [
+        "2 Reis 4:2",
+        "1 Reis 17:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 4:7, toque o que deve ser pago com a venda.",
+      "verseRef": "2 Reis 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "saber"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "saber",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar o propósito do milagre.",
+      "evidence": [
+        "2 Reis 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o cuidado do Senhor neste bloco?",
+      "verseRef": "2 Reis 3:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo ao que despreza o profeta"
+        },
+        {
+          "id": "b",
+          "text": "Provisão de água sem sinais"
+        },
+        {
+          "id": "c",
+          "text": "Azeite que cobre a dívida da viúva"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "este vale se encherá de tanta água",
+      "feedbackCorrect": "Juízo, provisão coletiva e cuidado doméstico.",
+      "feedbackWrong": {
+        "default": "Comece pelo juízo dos capitães."
+      },
+      "hint": "Siga a ordem das cenas do bloco.",
+      "learningObjective": "Ver o fio do cuidado divino.",
+      "evidence": [
+        "2 Reis 1:10",
+        "2 Reis 3:17",
+        "2 Reis 4:7"
+      ]
+    }
+  ]
+}

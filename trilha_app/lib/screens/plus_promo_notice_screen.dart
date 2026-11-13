@@ -62,6 +62,7 @@ class PlusPromoNoticeScreen extends StatelessWidget {
           ? l10n.plusNoticeFreeSocial
           : l10n.plusNoticeFreeSocialCaravan,
       l10n.plusNoticeFreeStreak,
+      l10n.plusNoticeFreeLearning,
     ];
 
     return ImmersiveScaffold(

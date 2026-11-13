@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "2 Reis 12:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 12:1–10"
+      }
+    ],
+    "context": "Joás reina em Jerusalém sob a orientação de Joiada. Ele manda usar o dinheiro sagrado para reparar a Casa do Senhor.",
+    "keyword": "reparar",
+    "keywordGloss": "O rei insiste em restaurar os danos da casa do Senhor.",
+    "focusQuestion": "Quando a casa de Deus precisa de cuidado, você assume responsabilidade ou adia?",
+    "reflectionPrompts": [
+      "Rei guiado",
+      "Danos da casa",
+      "Caixa das ofertas"
+    ],
+    "facts": [
+      {
+        "text": "Joás fez o que era justo perante o Senhor enquanto Joiada o guiou.",
+        "evidenceRef": "2 Reis 12:2",
+        "evidenceSpan": "Joás fez o que era justo perante o Senhor, todos os dias em que o sacerdote Joiada o guiou"
+      },
+      {
+        "text": "Os altos não foram removidos.",
+        "evidenceRef": "2 Reis 12:3",
+        "evidenceSpan": "os altos não foram removidos"
+      },
+      {
+        "text": "Joás manda os sacerdotes consertar os estragos da casa.",
+        "evidenceRef": "2 Reis 12:5",
+        "evidenceSpan": "eles consertem os estragos da casa conforme a necessidade"
+      },
+      {
+        "text": "No vigésimo terceiro ano, os sacerdotes ainda não haviam reparado.",
+        "evidenceRef": "2 Reis 12:6",
+        "evidenceSpan": "os sacerdotes ainda não haviam reparado os danos da casa"
+      },
+      {
+        "text": "Jeoiada põe uma caixa ao pé do altar para o dinheiro.",
+        "evidenceRef": "2 Reis 12:9",
+        "evidenceSpan": "tomou uma caixa e fez um buraco na tampa; colocou-a ao pé do altar"
+      },
+      {
+        "text": "Escrivão e sumo sacerdote contam e ensacam o dinheiro.",
+        "evidenceRef": "2 Reis 12:10",
+        "evidenceSpan": "contavam e ensacavam o dinheiro que se achava na Casa do Senhor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "reparado",
+        "gloss": "O verbo que marca o atraso dos sacerdotes na casa."
+      },
+      {
+        "term": "caixa",
+        "gloss": "Recipiente onde o dinheiro das ofertas é depositado."
+      },
+      {
+        "term": "justo",
+        "gloss": "Joás faz o que é justo perante o Senhor sob Joiada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Joás reina guiado por Joiada",
+        "evidenceRef": "2 Reis 12:1–3"
+      },
+      {
+        "label": "Ordem de consertar os estragos",
+        "evidenceRef": "2 Reis 12:4–5"
+      },
+      {
+        "label": "Atraso e cobrança do rei",
+        "evidenceRef": "2 Reis 12:6–8"
+      },
+      {
+        "label": "Caixa ao altar e contagem do dinheiro",
+        "evidenceRef": "2 Reis 12:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Joás faz o justo; entretanto os altos permanecem.",
+        "marker": "Entretanto",
+        "evidenceRef": "2 Reis 12:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Após anos, os sacerdotes ainda não haviam reparado os danos.",
+        "marker": "ainda",
+        "evidenceRef": "2 Reis 12:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Porém Jeoiada cria a caixa para o dinheiro das ofertas.",
+        "marker": "Porém",
+        "evidenceRef": "2 Reis 12:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Crônicas 24:4",
+        "bridge": "Joás resolve restaurar"
+      },
+      {
+        "ref": "Êxodo 25:8",
+        "bridge": "Santuário para Deus habitar"
+      },
+      {
+        "ref": "Ageu 1:8",
+        "bridge": "Construir a casa do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os sacerdotes repararam a casa logo no primeiro ano.",
+        "why": "No vigésimo terceiro ano ainda não haviam reparado os danos."
+      },
+      {
+        "text": "Joás remove todos os altos de Judá.",
+        "why": "O texto diz que os altos não foram removidos."
+      },
+      {
+        "text": "O dinheiro fica só com os sacerdotes, sem contagem pública.",
+        "why": "Escrivão e sumo sacerdote contam e ensacam juntos."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Reis 12:6, o que os sacerdotes ainda não haviam feito?",
+    "centralInsight": "O rei cuida da casa do Senhor: a restauração começa com responsabilidade."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 12:2, Joás fez o que era justo perante o Senhor enquanto Joiada o guiou.",
+      "verseRef": "2 Reis 12:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Joás fez o que era justo perante o Senhor, todos os dias em que o sacerdote Joiada o guiou",
+      "feedbackCorrect": "A justiça de Joás anda com a orientação de Joiada.",
+      "feedbackWrong": {
+        "false": "O verso liga o justo à orientação de Joiada."
+      },
+      "hint": "Quem guia Joás?",
+      "learningObjective": "Observar a justiça de Joás.",
+      "evidence": [
+        "2 Reis 12:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 12:9, toque onde a caixa foi colocada.",
+      "verseRef": "2 Reis 12:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "pé do altar"
+        },
+        {
+          "id": "b",
+          "text": "tampa"
+        },
+        {
+          "id": "c",
+          "text": "entrada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "colocou-a ao pé do altar, à direita dos que entravam",
+      "feedbackCorrect": "A caixa fica ao pé do altar.",
+      "feedbackWrong": {
+        "b": "A tampa recebe o buraco; o lugar é o altar.",
+        "c": "A entrada descreve quem chega; o lugar é o altar."
+      },
+      "hint": "Onde ele a coloca?",
+      "learningObjective": "Identificar o lugar da caixa.",
+      "evidence": [
+        "2 Reis 12:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 12:6, o que ainda não havia acontecido no vigésimo terceiro ano?",
+      "verseRef": "2 Reis 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os sacerdotes ainda não haviam reparado os danos"
+        },
+        {
+          "id": "b",
+          "text": "Joás ainda não havia começado a reinar"
+        },
+        {
+          "id": "c",
+          "text": "Joiada já havia morrido naquele ano"
+        },
+        {
+          "id": "d",
+          "text": "A caixa já estava cheia desde o primeiro ano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os sacerdotes ainda não haviam reparado os danos da casa",
+      "feedbackCorrect": "O atraso dos sacerdotes é explícito.",
+      "feedbackWrong": {
+        "b": "Joás já reinava há 23 anos.",
+        "c": "O texto não diz que Joiada morrera então.",
+        "d": "A caixa aparece depois, no verso 9."
+      },
+      "hint": "Leia o que ainda faltava.",
+      "learningObjective": "Observar o atraso no reparo.",
+      "evidence": [
+        "2 Reis 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 12:9 na ordem do texto.",
+      "verseRef": "2 Reis 12:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "o sacerdote Jeoiada tomou uma caixa e fez um buraco na tampa"
+        },
+        {
+          "id": "b",
+          "text": "colocou-a ao pé do altar, à direita dos que entravam"
+        },
+        {
+          "id": "c",
+          "text": "depositavam ali todo o dinheiro que se trazia à casa do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tomou uma caixa e fez um buraco na tampa",
+      "feedbackCorrect": "Caixa, lugar e depósito.",
+      "feedbackWrong": {
+        "default": "Comece pela caixa de Jeoiada."
+      },
+      "hint": "O que ele toma primeiro?",
+      "learningObjective": "Seguir a ordem do verso.",
+      "evidence": [
+        "2 Reis 12:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 12:2, complete: Joás fez o que era ___ perante o Senhor.",
+      "verseRef": "2 Reis 12:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "justo"
+        },
+        {
+          "id": "b",
+          "text": "cruel"
+        },
+        {
+          "id": "c",
+          "text": "omisso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Joás fez o que era justo perante o Senhor",
+      "feedbackCorrect": "Justo: a avaliação do reinado guiado.",
+      "feedbackWrong": {
+        "b": "O texto diz justo, não cruel.",
+        "c": "O texto diz justo, não omisso."
+      },
+      "hint": "Qual adjetivo avalia Joás?",
+      "learningObjective": "Lembrar a palavra justo.",
+      "evidence": [
+        "2 Reis 12:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 12:5 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 12:5",
+      "passageA": {
+        "ref": "2 Reis 12:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O rei manda usar o dinheiro para consertar os estragos da casa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reparar os danos do templo"
+        },
+        {
+          "id": "b",
+          "text": "Guardar o dinheiro em secreto"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar os estragos da casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles consertem os estragos da casa conforme a necessidade",
+      "feedbackCorrect": "O dinheiro serve ao conserto da casa.",
+      "feedbackWrong": {
+        "b": "O destino é o conserto, não o segredo.",
+        "c": "A ordem é consertar, não ignorar."
+      },
+      "hint": "Para que serve o dinheiro?",
+      "learningObjective": "Ligar o verso ao reparo.",
+      "evidence": [
+        "2 Reis 12:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 12:3, depois da justiça de Joás, os altos foram todos removidos.",
+      "verseRef": "2 Reis 12:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "os altos não foram removidos",
+      "feedbackCorrect": "Entretanto marca o contraste: os altos ficam.",
+      "feedbackWrong": {
+        "true": "O verso diz que os altos não foram removidos."
+      },
+      "hint": "O que aconteceu com os altos?",
+      "learningObjective": "Ver o contraste dos altos.",
+      "evidence": [
+        "2 Reis 12:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 12:3, toque a palavra que marca o contraste com a justiça de Joás.",
+      "verseRef": "2 Reis 12:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "altos"
+        },
+        {
+          "id": "c",
+          "text": "incenso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, os altos não foram removidos",
+      "feedbackCorrect": "Entretanto abre o contraste.",
+      "feedbackWrong": {
+        "b": "Altos é o problema, não o marcador.",
+        "c": "Incenso descreve a prática nos altos."
+      },
+      "hint": "Qual palavra abre o verso?",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "2 Reis 12:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 12:6–7 se relaciona com a ordem de 2 Reis 12:5?",
+      "verseRef": "2 Reis 12:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O atraso leva o rei a cobrar a reparação"
+        },
+        {
+          "id": "b",
+          "text": "Os sacerdotes já haviam terminado a obra"
+        },
+        {
+          "id": "c",
+          "text": "Joás desiste de cuidar da casa"
+        },
+        {
+          "id": "d",
+          "text": "O dinheiro deixa de ser sagrado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por que vocês não restauram os danos da casa?",
+      "feedbackCorrect": "O atraso provoca a cobrança do rei.",
+      "feedbackWrong": {
+        "b": "O verso 6 diz que ainda não haviam reparado.",
+        "c": "Joás insiste na reparação.",
+        "d": "O dinheiro continua para a casa do Senhor."
+      },
+      "hint": "O que o rei pergunta em 12:7?",
+      "learningObjective": "Relacionar atraso e cobrança.",
+      "evidence": [
+        "2 Reis 12:6–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do reparo da casa.",
+      "verseRef": "2 Reis 12:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joás reina guiado por Joiada"
+        },
+        {
+          "id": "b",
+          "text": "Ordem de consertar os estragos"
+        },
+        {
+          "id": "c",
+          "text": "Caixa ao altar e contagem do dinheiro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eles consertem os estragos da casa conforme a necessidade",
+      "feedbackCorrect": "Governo, ordem e caixa.",
+      "feedbackWrong": {
+        "default": "Comece pelo reinado guiado."
+      },
+      "hint": "O que vem antes da caixa?",
+      "learningObjective": "Ordenar a estrutura da cena.",
+      "evidence": [
+        "2 Reis 12:2",
+        "2 Reis 12:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 12:6, complete: os sacerdotes ainda não haviam ___ os danos.",
+      "verseRef": "2 Reis 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "reparado"
+        },
+        {
+          "id": "b",
+          "text": "vendido"
+        },
+        {
+          "id": "c",
+          "text": "esquecido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os sacerdotes ainda não haviam reparado os danos da casa",
+      "feedbackCorrect": "Reparado: a palavra do atraso.",
+      "feedbackWrong": {
+        "b": "Não é vendido; é reparado.",
+        "c": "O verbo do texto é reparado."
+      },
+      "hint": "O que ainda faltava fazer?",
+      "learningObjective": "Lembrar o verbo do atraso.",
+      "evidence": [
+        "2 Reis 12:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 12:5 a 2 Crônicas 24:4?",
+      "verseRef": "2 Reis 12:5",
+      "passageA": {
+        "ref": "2 Reis 12:5"
+      },
+      "passageB": {
+        "ref": "2 Crônicas 24:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Joás resolve restaurar"
+        },
+        {
+          "id": "b",
+          "text": "Joás abandona o templo"
+        },
+        {
+          "id": "c",
+          "text": "Sacerdotes proíbem a obra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles consertem os estragos da casa conforme a necessidade",
+      "feedbackCorrect": "Crônicas confirma a resolução de restaurar a casa.",
+      "feedbackWrong": {
+        "b": "Os textos apontam restauração, não abandono.",
+        "c": "A ordem do rei é consertar."
+      },
+      "hint": "O que Joás resolve fazer?",
+      "learningObjective": "Ligar o reparo à nota de Crônicas.",
+      "evidence": [
+        "2 Reis 12:5",
+        "2 Crônicas 24:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 12:6–9, os sacerdotes repararam a casa logo no primeiro ano do reinado.",
+      "verseRef": "2 Reis 12:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "No vigésimo terceiro ano do reinado de Joás, os sacerdotes ainda não haviam reparado",
+      "feedbackCorrect": "No ano 23 ainda não haviam reparado.",
+      "feedbackWrong": {
+        "true": "O verso 6 situa o atraso no vigésimo terceiro ano."
+      },
+      "hint": "Em que ano o atraso aparece?",
+      "learningObjective": "Corrigir a leitura do tempo do reparo.",
+      "evidence": [
+        "2 Reis 12:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 12:10, toque o trecho que mostra a contagem conjunta do dinheiro.",
+      "verseRef": "2 Reis 12:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "contavam e ensacavam"
+        },
+        {
+          "id": "b",
+          "text": "muito dinheiro"
+        },
+        {
+          "id": "c",
+          "text": "sumo sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contavam e ensacavam o dinheiro que se achava na Casa do Senhor",
+      "feedbackCorrect": "Contar e ensacar juntos dá transparência.",
+      "feedbackWrong": {
+        "b": "A quantidade motiva a subida; a ação é contar.",
+        "c": "O sumo sacerdote sobe; a ação é contar e ensacar."
+      },
+      "hint": "O que eles fazem com o dinheiro?",
+      "learningObjective": "Sustentar a contagem no texto.",
+      "evidence": [
+        "2 Reis 12:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 12:2–6 sustenta sobre o cuidado com a casa?",
+      "verseRef": "2 Reis 12:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Responsabilidade real enfrenta atraso no reparo"
+        },
+        {
+          "id": "b",
+          "text": "Os altos foram todos removidos por Joás"
+        },
+        {
+          "id": "c",
+          "text": "O reparo ficou pronto no primeiro ano"
+        },
+        {
+          "id": "d",
+          "text": "O dinheiro nunca foi contado em público"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os sacerdotes ainda não haviam reparado os danos da casa",
+      "feedbackCorrect": "Há ordem e cobrança diante do atraso.",
+      "feedbackWrong": {
+        "b": "Os altos não foram removidos.",
+        "c": "O atraso chega ao ano 23.",
+        "d": "Escrivão e sacerdote contam juntos."
+      },
+      "hint": "Una a ordem ao atraso.",
+      "learningObjective": "Escolher a leitura da responsabilidade.",
+      "evidence": [
+        "2 Reis 12:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o cuidado com a casa de Deus?",
+      "verseRef": "2 Reis 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus manda fazer santuário para habitar no meio"
+        },
+        {
+          "id": "b",
+          "text": "Joás manda consertar os estragos da casa"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor chama a construir a casa de novo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eles consertem os estragos da casa conforme a necessidade",
+      "feedbackCorrect": "Santuário, reparo de Joás e chamado de Ageu.",
+      "feedbackWrong": {
+        "default": "Comece pelo santuário do Êxodo."
+      },
+      "hint": "Siga Êxodo → 2 Reis → Ageu.",
+      "learningObjective": "Ver o fio do cuidado com a casa.",
+      "evidence": [
+        "Êxodo 25:8",
+        "2 Reis 12:5",
+        "Ageu 1:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 12:9, complete. tomou uma ___ e fez um buraco na tampa.",
+      "verseRef": "2 Reis 12:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "caixa"
+        },
+        {
+          "id": "b",
+          "text": "arca"
+        },
+        {
+          "id": "c",
+          "text": "cesta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou uma caixa e fez um buraco na tampa",
+      "feedbackCorrect": "Caixa. O termo do depósito das ofertas.",
+      "feedbackWrong": {
+        "b": "Não é a arca; é uma caixa.",
+        "c": "O texto diz caixa, não cesta."
+      },
+      "hint": "O que Jeoiada toma?",
+      "learningObjective": "Lembrar o termo caixa.",
+      "evidence": [
+        "2 Reis 12:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 12:5 a Ageu 1:8?",
+      "verseRef": "2 Reis 12:5",
+      "passageA": {
+        "ref": "2 Reis 12:5"
+      },
+      "passageB": {
+        "ref": "Ageu 1:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Construir a casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar o templo em ruínas"
+        },
+        {
+          "id": "c",
+          "text": "Preferir casas próprias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles consertem os estragos da casa conforme a necessidade",
+      "feedbackCorrect": "Nos dois textos, a casa do Senhor pede ação.",
+      "feedbackWrong": {
+        "b": "Os textos pedem construção e conserto.",
+        "c": "Ageu confronta quem prefere a própria casa."
+      },
+      "hint": "O que se faz com a casa?",
+      "learningObjective": "Ligar o reparo ao chamado de Ageu.",
+      "evidence": [
+        "2 Reis 12:5",
+        "Ageu 1:8"
+      ]
+    }
+  ]
+}

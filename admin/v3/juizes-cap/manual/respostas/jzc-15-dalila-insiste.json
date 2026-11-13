@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 16:15–24",
+    "passages": [
+      {
+        "ref": "Juízes 16:15–24"
+      }
+    ],
+    "context": "Dalila insiste até Sansão revelar o nazireado; as tranças são raspadas, o Senhor se afasta e os filisteus o cegam.",
+    "keyword": "nazireu",
+    "keywordGloss": "Consagrado a Deus desde o ventre; a lâmina não passa na cabeça.",
+    "focusQuestion": "O que você entrega sob pressão que deveria guardar como consagrado?",
+    "reflectionPrompts": [
+      "Insistência diária",
+      "Segredo revelado",
+      "Senhor se afasta"
+    ],
+    "facts": [
+      {
+        "text": "Dalila diz que Sansão zombou dela três vezes.",
+        "evidenceRef": "Juízes 16:15",
+        "evidenceSpan": "Já três vezes zombaste de mim"
+      },
+      {
+        "text": "A alma de Sansão se encheu de impaciência até a morte.",
+        "evidenceRef": "Juízes 16:16",
+        "evidenceSpan": "a alma dele se encheu de impaciência até a morte"
+      },
+      {
+        "text": "Sansão revela que é nazireu e nunca passou lâmina.",
+        "evidenceRef": "Juízes 16:17",
+        "evidenceSpan": "Nunca passou uma lâmina sobre a minha cabeça, pois sou nazireu de Deus"
+      },
+      {
+        "text": "Dalila raspou as sete tranças da cabeça dele.",
+        "evidenceRef": "Juízes 16:19",
+        "evidenceSpan": "raspou as sete tranças de sua cabeça"
+      },
+      {
+        "text": "Sansão não sabia que o Senhor já se afastara.",
+        "evidenceRef": "Juízes 16:20",
+        "evidenceSpan": "ele não sabia que o Senhor já havia se afastado dele"
+      },
+      {
+        "text": "Os filisteus arrancaram os olhos de Sansão.",
+        "evidenceRef": "Juízes 16:21",
+        "evidenceSpan": "lhe arrancaram os olhos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "nazireu",
+        "gloss": "Consagrado a Deus desde o ventre."
+      },
+      {
+        "term": "tranças",
+        "gloss": "Sinal externo do voto; sete são raspadas."
+      },
+      {
+        "term": "coração",
+        "gloss": "Sansão revela tudo o que há nele."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Insistência de Dalila",
+        "evidenceRef": "Juízes 16:15–16"
+      },
+      {
+        "label": "Segredo e rapagem",
+        "evidenceRef": "Juízes 16:17–19"
+      },
+      {
+        "label": "Afastamento e cativeiro",
+        "evidenceRef": "Juízes 16:20–24"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Importuna todos os dias; a alma se enche de impaciência.",
+        "marker": "até",
+        "evidenceRef": "Juízes 16:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Pensa livrar-se; contudo o Senhor já se afastou.",
+        "marker": "Contudo",
+        "evidenceRef": "Juízes 16:20"
+      },
+      {
+        "kind": "causa",
+        "text": "Se for rapado, a força se afasta.",
+        "marker": "se",
+        "evidenceRef": "Juízes 16:17"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 6:5",
+        "bridge": "Nazireu sem lâmina"
+      },
+      {
+        "ref": "Provérbios 4:23",
+        "bridge": "Guarda o coração"
+      },
+      {
+        "ref": "1 Coríntios 10:12",
+        "bridge": "Quem pensa estar firme"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A força de Sansão era só músculo.",
+        "why": "Ele é nazireu; o Senhor se afasta e a força some."
+      },
+      {
+        "text": "Sansão sabia que o Senhor o deixara.",
+        "why": "Ele não sabia que o Senhor já se afastara."
+      },
+      {
+        "text": "Dalila desiste após três zombarias.",
+        "why": "Importuna todos os dias até ele ceder."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 16:17, por que nunca passou lâmina na cabeça de Sansão?",
+    "centralInsight": "Insistência vence o coração aberto: entregar o consagrado afasta a presença do Senhor."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 16:17, Sansão diz que é nazireu de Deus desde o ventre de sua mãe.",
+      "verseRef": "Juízes 16:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "sou nazireu de Deus desde o ventre de minha mãe",
+      "feedbackCorrect": "Nazireu desde o ventre.",
+      "feedbackWrong": {
+        "false": "O texto fala do ventre."
+      },
+      "hint": "Veja a identidade.",
+      "learningObjective": "Observar o nazireado.",
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 16:17, toque o que nunca passou sobre a cabeça.",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "lâmina"
+        },
+        {
+          "id": "b",
+          "text": "mãe"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca passou uma lâmina sobre a minha cabeça",
+      "feedbackCorrect": "Lâmina.",
+      "feedbackWrong": {
+        "b": "Mãe marca o tempo.",
+        "c": "Homem é a comparação."
+      },
+      "hint": "O que não toca a cabeça?",
+      "learningObjective": "Identificar a lâmina.",
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 16:19, o que Dalila raspou?",
+      "verseRef": "Juízes 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "As sete tranças da cabeça"
+        },
+        {
+          "id": "b",
+          "text": "A barba de Sansão"
+        },
+        {
+          "id": "c",
+          "text": "As cordas novas"
+        },
+        {
+          "id": "d",
+          "text": "Os olhos dele"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "raspou as sete tranças de sua cabeça",
+      "feedbackCorrect": "Sete tranças.",
+      "feedbackWrong": {
+        "b": "Não fala de barba.",
+        "c": "Cordas são noutro trecho.",
+        "d": "Olhos vêm depois."
+      },
+      "hint": "Leia o que ela chama.",
+      "learningObjective": "Reconhecer as tranças.",
+      "evidence": [
+        "Juízes 16:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 16:17 na ordem do texto.",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nunca passou uma lâmina sobre a minha cabeça"
+        },
+        {
+          "id": "b",
+          "text": "pois sou nazireu de Deus desde o ventre de minha mãe"
+        },
+        {
+          "id": "c",
+          "text": "se eu for rapado, a minha força se afastará de mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sou nazireu de Deus desde o ventre de minha mãe",
+      "feedbackCorrect": "Lâmina, nazireu e força.",
+      "feedbackWrong": {
+        "default": "Comece pela lâmina."
+      },
+      "hint": "O que abre a revelação?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 16:17, complete: sou ___ de Deus desde o ventre.",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "nazireu"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sou nazireu de Deus",
+      "feedbackCorrect": "Nazireu.",
+      "feedbackWrong": {
+        "b": "Não é rei.",
+        "c": "Não é sacerdote."
+      },
+      "hint": "Veja o título.",
+      "learningObjective": "Lembrar nazireu.",
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 16:16 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 16:16",
+      "passageA": {
+        "ref": "Juízes 16:16"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Dalila importuna todos os dias até Sansão ceder."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Insistência até a morte"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio de Dalila"
+        },
+        {
+          "id": "c",
+          "text": "Sem pressão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "importunando-o todos os dias com suas palavras",
+      "feedbackCorrect": "Importuna todos os dias.",
+      "feedbackWrong": {
+        "b": "Há palavras.",
+        "c": "Há angústia."
+      },
+      "hint": "Com que frequência?",
+      "learningObjective": "Ligar insistência e queda.",
+      "evidence": [
+        "Juízes 16:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 16:20, Sansão sabia de imediato que o Senhor já se afastara dele.",
+      "verseRef": "Juízes 16:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele não sabia que o Senhor já havia se afastado dele",
+      "feedbackCorrect": "Ele não sabia.",
+      "feedbackWrong": {
+        "true": "O texto diz que não sabia."
+      },
+      "hint": "Leia o contudo.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 16:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 16:20, toque o marcador de contraste.",
+      "verseRef": "Juízes 16:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contudo"
+        },
+        {
+          "id": "b",
+          "text": "sono"
+        },
+        {
+          "id": "c",
+          "text": "filisteus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contudo, ele não sabia",
+      "feedbackCorrect": "Contudo.",
+      "feedbackWrong": {
+        "b": "Sono é o estado.",
+        "c": "Filisteus atacam."
+      },
+      "hint": "Olhe a virada.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 16:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 16:17 faz com a força?",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se for rapado, a força se afasta"
+        },
+        {
+          "id": "b",
+          "text": "A força cresce ao rapar"
+        },
+        {
+          "id": "c",
+          "text": "A lâmina aumenta o voto"
+        },
+        {
+          "id": "d",
+          "text": "Sem condição alguma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se eu for rapado, a minha força se afastará de mim",
+      "feedbackCorrect": "Condição e perda.",
+      "feedbackWrong": {
+        "b": "A força se afasta.",
+        "c": "Lâmina quebra o sinal.",
+        "d": "Há se."
+      },
+      "hint": "Leia o se.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "Juízes 16:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Insistência de Dalila"
+        },
+        {
+          "id": "b",
+          "text": "Segredo e rapagem"
+        },
+        {
+          "id": "c",
+          "text": "Afastamento e cativeiro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Já três vezes zombaste de mim",
+      "feedbackCorrect": "Pressão, revelação e queda.",
+      "feedbackWrong": {
+        "default": "Comece pela insistência."
+      },
+      "hint": "O que fecha o cativeiro?",
+      "learningObjective": "Ordenar a cena",
+      "evidence": [
+        "Juízes 16:15",
+        "Juízes 16:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 16:20, complete: o Senhor já havia se ___ dele.",
+      "verseRef": "Juízes 16:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "afastado"
+        },
+        {
+          "id": "b",
+          "text": "aproximado"
+        },
+        {
+          "id": "c",
+          "text": "esquecido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor já havia se afastado dele",
+      "feedbackCorrect": "Afastado.",
+      "feedbackWrong": {
+        "b": "Não é aproximado.",
+        "c": "A palavra é afastado."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar afastado.",
+      "evidence": [
+        "Juízes 16:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 16:17 a Números 6:5?",
+      "verseRef": "Juízes 16:17",
+      "passageA": {
+        "ref": "Juízes 16:17"
+      },
+      "passageB": {
+        "ref": "Números 6:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nazireu sem lâmina"
+        },
+        {
+          "id": "b",
+          "text": "Lâmina obrigatória"
+        },
+        {
+          "id": "c",
+          "text": "Sem consagração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca passou uma lâmina sobre a minha cabeça",
+      "feedbackCorrect": "Voto sem lâmina.",
+      "feedbackWrong": {
+        "b": "Lâmina é proibida.",
+        "c": "Há nazireado."
+      },
+      "hint": "Compare o voto.",
+      "learningObjective": "Ligar a Números.",
+      "evidence": [
+        "Juízes 16:17",
+        "Números 6:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 16:20, a força de Sansão continua igual mesmo depois do afastamento do Senhor.",
+      "verseRef": "Juízes 16:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele não sabia que o Senhor já havia se afastado dele",
+      "feedbackCorrect": "Ele pensa livrar-se, mas o Senhor se afastou.",
+      "feedbackWrong": {
+        "true": "O contraste mostra a perda."
+      },
+      "hint": "Compare o pensamento e o fato.",
+      "learningObjective": "Avaliar a leitura.",
+      "evidence": [
+        "Juízes 16:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 16:17, toque o risco se for rapado.",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "força"
+        },
+        {
+          "id": "b",
+          "text": "nazireu"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a minha força se afastará de mim",
+      "feedbackCorrect": "Força.",
+      "feedbackWrong": {
+        "b": "Nazireu é o título.",
+        "c": "Homem é a comparação."
+      },
+      "hint": "Qual título ele usa?",
+      "learningObjective": "Tocar a força.",
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une insistência e afastamento?",
+      "verseRef": "Juízes 16:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entregar o consagrado afasta a presença do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Dalila fortalece o voto"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor nunca se afasta"
+        },
+        {
+          "id": "d",
+          "text": "A lâmina é só estética"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor já havia se afastado dele",
+      "feedbackCorrect": "Consagrado entregue.",
+      "feedbackWrong": {
+        "b": "Há queda.",
+        "c": "Há afastamento.",
+        "d": "Há perda de força."
+      },
+      "hint": "Una revelação e contudo.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 16:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da queda.",
+      "verseRef": "Juízes 16:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Importuna até a impaciência"
+        },
+        {
+          "id": "b",
+          "text": "Revela o coração"
+        },
+        {
+          "id": "c",
+          "text": "Senhor se afasta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "importunando-o todos os dias",
+      "feedbackCorrect": "Pressão, revelação e afastamento.",
+      "feedbackWrong": {
+        "default": "Comece pela insistência."
+      },
+      "hint": "O que vem após revelar?",
+      "learningObjective": "Encadear a queda",
+      "evidence": [
+        "Juízes 16:16",
+        "Juízes 16:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 16:19, complete: raspou as sete ___.",
+      "verseRef": "Juízes 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "tranças"
+        },
+        {
+          "id": "b",
+          "text": "cordas"
+        },
+        {
+          "id": "c",
+          "text": "portas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "raspou as sete tranças de sua cabeça",
+      "feedbackCorrect": "Tranças.",
+      "feedbackWrong": {
+        "b": "Não é cordas.",
+        "c": "Não é portas."
+      },
+      "hint": "O que está na cabeça?",
+      "learningObjective": "Lembrar tranças.",
+      "evidence": [
+        "Juízes 16:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 16:17 a Provérbios 4:23?",
+      "verseRef": "Juízes 16:17",
+      "passageA": {
+        "ref": "Juízes 16:17"
+      },
+      "passageB": {
+        "ref": "Provérbios 4:23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Guarda o coração"
+        },
+        {
+          "id": "b",
+          "text": "Revela tudo logo"
+        },
+        {
+          "id": "c",
+          "text": "Sem cuidado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "revelou-lhe todo o seu coração",
+      "feedbackCorrect": "O coração importa.",
+      "feedbackWrong": {
+        "b": "Revelar tudo custa.",
+        "c": "Há aviso."
+      },
+      "hint": "Compare o coração.",
+      "learningObjective": "Ligar a Provérbios.",
+      "evidence": [
+        "Juízes 16:17",
+        "Provérbios 4:23"
+      ]
+    }
+  ]
+}

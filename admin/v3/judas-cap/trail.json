@@ -1,0 +1,50 @@
+{
+  "slug": "judas-cap",
+  "title": "Judas",
+  "description": "Judas capítulo a capítulo: contender pela fé e lembrar o juízo dos ímpios.",
+  "icon": "⚔️",
+  "color": "#004D40",
+  "order": 77,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Alerta e juízo · cap. 1",
+      "icon": "zap",
+      "section": "Judas",
+      "missions": [
+        {
+          "slug": "jdc-01-exemplos-de-juizo",
+          "title": "Exemplos de juízo",
+          "subtitle": "Judas 1:7–13",
+          "intro": "Judas lembra Sodoma, Caim, Balaão e Coré como advertência contra os ímpios.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Judas 1:7–13",
+          "hookVerse": "Como Sodoma e Gomorra e as cidades circunvizinhas que, havendo-se entregado à prostituição como aqueles, se deixaram levar por outra carne, são postas como exemplo, sofrendo a punição do fogo eterno. No entanto, esses indivíduos, sonhando da mesma forma, não apenas corrompem a carne como também rejeitam a autoridade e difamam as dignidades.",
+          "hookNote": "Esses são manchas nos ágapes: nuvens sem água, árvores sem fruto, para quem está reservada a escuridão.",
+          "centralInsight": "Esses são manchas nos ágapes: nuvens sem água, árvores sem fruto, para quem está reservada a escuridão.",
+          "objective": "Levar a sério o juízo"
+        },
+        {
+          "slug": "jdc-boss-1",
+          "title": "Travessia: Alerta e juízo",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise os exemplos de juízo e o perfil dos que se infiltraram.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Alerta e juízo",
+          "hookVerse": "Revise os exemplos de juízo e o perfil dos que se infiltraram.",
+          "hookNote": "Revise os exemplos de juízo e o perfil dos que se infiltraram.",
+          "centralInsight": "A fé entregue uma vez exige vigilância contra o engano",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

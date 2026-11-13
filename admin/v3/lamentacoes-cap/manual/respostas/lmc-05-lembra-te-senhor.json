@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Lamentações 5:1–6",
+    "passages": [
+      { "ref": "Lamentações 5:1–6" },
+      { "ref": "Lamentações 5:7–12" }
+    ],
+    "context": "O povo clama: Lembra-te, Senhor. Herança, casas, água e descanso foram perdidos na ruína.",
+    "keyword": "Lembra-te",
+    "keywordGloss": "O apelo do povo ferido: pedir que o Senhor considere a desonra.",
+    "focusQuestion": "Na ruína, o seu primeiro movimento é clamar ao Senhor ou só descrever a dor?",
+    "reflectionPrompts": [
+      "Lembra-te, Senhor",
+      "Herança perdida",
+      "Clamor na ruína"
+    ],
+    "facts": [
+      {
+        "text": "O povo pede que o Senhor se lembre e olhe para a desonra.",
+        "evidenceRef": "Lamentações 5:1",
+        "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra"
+      },
+      {
+        "text": "A herança foi entregue a estranhos e as casas a estrangeiros.",
+        "evidenceRef": "Lamentações 5:2",
+        "evidenceSpan": "A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros"
+      },
+      {
+        "text": "São órfãos e já não têm pai; as mães são como viúvas.",
+        "evidenceRef": "Lamentações 5:3",
+        "evidenceSpan": "Órfãos somos, já não temos pai; nossas mães são como viúvas"
+      },
+      {
+        "text": "Bebem água por preço e a lenha vem a custo.",
+        "evidenceRef": "Lamentações 5:4",
+        "evidenceSpan": "A nossa água bebemos por preço e a nossa lenha vem a custo"
+      },
+      {
+        "text": "Estão exaustos e não têm descanso.",
+        "evidenceRef": "Lamentações 5:5",
+        "evidenceSpan": "estamos exaustos e não temos descanso"
+      },
+      {
+        "text": "Os servos dominam sobre eles; não há quem os livre.",
+        "evidenceRef": "Lamentações 5:8",
+        "evidenceSpan": "Os servos dominam sobre nós; não há ninguém que nos livre de suas mãos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Lembra-te",
+        "gloss": "O verbo do clamor: pedir que o Senhor considere a desonra."
+      },
+      {
+        "term": "herança",
+        "gloss": "O bem perdido entregue a estranhos."
+      },
+      {
+        "term": "desonra",
+        "gloss": "O que o povo pede que o Senhor veja."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Clamor: lembra e olha a desonra",
+        "evidenceRef": "Lamentações 5:1"
+      },
+      {
+        "label": "Herança e casas perdidas",
+        "evidenceRef": "Lamentações 5:2–3"
+      },
+      {
+        "label": "Água paga, jugo e exaustão",
+        "evidenceRef": "Lamentações 5:4–5"
+      },
+      {
+        "label": "Domínio dos servos e opróbrio",
+        "evidenceRef": "Lamentações 5:8–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "A herança foi entregue a estranhos; as casas, a estrangeiros.",
+        "marker": null,
+        "evidenceRef": "Lamentações 5:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Levantam pão com risco por causa da espada do deserto.",
+        "marker": "em razão",
+        "evidenceRef": "Lamentações 5:9"
+      },
+      {
+        "kind": "resultado",
+        "text": "Os pais pecaram; os filhos levam o peso das iniquidades.",
+        "marker": null,
+        "evidenceRef": "Lamentações 5:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 74:2",
+        "bridge": "Lembra-te da tua herança"
+      },
+      {
+        "ref": "Salmos 79:8–9",
+        "bridge": "Clamor na desonra do povo"
+      },
+      {
+        "ref": "Isaías 63:15–16",
+        "bridge": "Apelo ao Senhor que vê"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Na ruína não há mais sentido em clamar ao Senhor.",
+        "why": "5:1 abre com o clamor: Lembra-te, Senhor."
+      },
+      {
+        "text": "A herança e as casas permanecem intactas.",
+        "why": "5:2 diz que foram entregues a estranhos e estrangeiros."
+      },
+      {
+        "text": "Há descanso e liberdade sob o domínio atual.",
+        "why": "5:5 e 5:8 falam de exaustão sem descanso e domínio dos servos."
+      }
+    ],
+    "centralInsight": "Na ruína, o clamor sincero ainda se volta ao Senhor que reina para sempre.",
+    "anchorQuestion": "Segundo Lamentações 5:1, o que o povo pede que o Senhor faça?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lamentações 5:1, o povo pede que o Senhor se lembre e olhe para a desonra.",
+      "verseRef": "Lamentações 5:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra",
+      "feedbackCorrect": "O canto abre com clamor: lembra, considera e olha.",
+      "feedbackWrong": {
+        "false": "Releia 5:1: Lembra-te, considera e olha."
+      },
+      "hint": "Veja os três verbos do apelo.",
+      "learningObjective": "Observar o clamor inicial.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lamentações 5:2, toque o que foi entregue a estranhos.",
+      "verseRef": "Lamentações 5:2",
+      "options": [
+        { "id": "a", "text": "herança" },
+        { "id": "b", "text": "estranhos" },
+        { "id": "c", "text": "estrangeiros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A nossa herança foi entregue a estranhos",
+      "feedbackCorrect": "A herança foi entregue a estranhos.",
+      "feedbackWrong": {
+        "b": "\"Estranhos\" são quem recebe, não o que se perde.",
+        "c": "\"Estrangeiros\" recebem as casas, não são o bem perdido."
+      },
+      "hint": "Procure o sujeito no começo do versículo.",
+      "learningObjective": "Identificar a herança perdida.",
+      "evidence": ["Lamentações 5:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lamentações 5:4, como o povo obtém água e lenha?",
+      "verseRef": "Lamentações 5:4",
+      "options": [
+        { "id": "a", "text": "Água por preço e lenha a custo" },
+        { "id": "b", "text": "De graça, como nos dias antigos" },
+        { "id": "c", "text": "Só com milagres sem esforço" },
+        { "id": "d", "text": "Já não precisam de água nem lenha" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A nossa água bebemos por preço e a nossa lenha vem a custo",
+      "feedbackCorrect": "Até o básico agora custa: água e lenha.",
+      "feedbackWrong": {
+        "b": "O texto diz por preço e a custo.",
+        "c": "Há preço e custo, não milagre fácil.",
+        "d": "Eles ainda bebem e buscam lenha, com custo."
+      },
+      "hint": "Leia as duas cláusulas do versículo.",
+      "learningObjective": "Observar o custo da sobrevivência.",
+      "evidence": ["Lamentações 5:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lamentações 5:1 na ordem do texto.",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "Lembra-te, Senhor, do que nos tem sucedido" },
+        { "id": "b", "text": "considera e olha" },
+        { "id": "c", "text": "para a nossa desonra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra",
+      "feedbackCorrect": "Lembra; considera e olha; a desonra.",
+      "feedbackWrong": {
+        "default": "Comece por Lembra-te; a desonra fecha."
+      },
+      "hint": "O versículo abre com o apelo Lembra-te.",
+      "learningObjective": "Reconhecer a sequência de 5:1.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lamentações 5:3, como o povo se descreve no começo do versículo?",
+      "verseRef": "Lamentações 5:3",
+      "options": [
+        { "id": "a", "text": "reis" },
+        { "id": "b", "text": "Órfãos" },
+        { "id": "c", "text": "sacerdotes" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Órfãos somos, já não temos pai",
+      "feedbackCorrect": "Abrém dizendo: Órfãos somos.",
+      "feedbackWrong": {
+        "a": "O texto diz órfãos, não reis.",
+        "c": "\"Sacerdotes\" não aparece em 5:3."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar a condição confessada do povo.",
+      "evidence": ["Lamentações 5:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lamentações 5:1 comunica que se liga a este contexto?",
+      "verseRef": "Lamentações 5:1",
+      "passageA": { "ref": "Lamentações 5:1" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na ruína, o povo ainda se volta ao Senhor com clamor sincero."
+      },
+      "options": [
+        { "id": "a", "text": "Clamor na desonra" },
+        { "id": "b", "text": "Silêncio sem oração" },
+        { "id": "c", "text": "Orgulho sem pedido" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "O clamor abre o canto: ainda há apelo ao Senhor.",
+      "feedbackWrong": {
+        "b": "Há clamor explícito, não silêncio.",
+        "c": "Há pedido humilde, não orgulho."
+      },
+      "hint": "Veja o primeiro verbo do versículo.",
+      "learningObjective": "Ligar 5:1 ao clamor na ruína.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lamentações 5:2, a herança e as casas permanecem com o povo, sem entrega a estranhos.",
+      "verseRef": "Lamentações 5:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros",
+      "feedbackCorrect": "Herança e casas foram entregues a estranhos e estrangeiros.",
+      "feedbackWrong": {
+        "true": "Releia 5:2: herança a estranhos; casas a estrangeiros."
+      },
+      "hint": "Veja a quem foram entregues herança e casas.",
+      "learningObjective": "Compreender a perda da herança.",
+      "evidence": ["Lamentações 5:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lamentações 5:9, toque o trecho que marca a razão do risco ao buscar pão.",
+      "verseRef": "Lamentações 5:9",
+      "options": [
+        { "id": "a", "text": "em razão" },
+        { "id": "b", "text": "nossas vidas" },
+        { "id": "c", "text": "nosso pão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em razão da espada do deserto",
+      "feedbackCorrect": "\"Em razão\" introduz a causa: a espada do deserto.",
+      "feedbackWrong": {
+        "b": "\"Nossas vidas\" é o que está em risco, não o marcador.",
+        "c": "\"Nosso pão\" é o que buscam, não a razão."
+      },
+      "hint": "Procure a expressão que introduz a causa.",
+      "learningObjective": "Reconhecer o marcador de causa em 5:9.",
+      "evidence": ["Lamentações 5:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Lamentações 5:1–5 liga o clamor à condição do povo?",
+      "verseRef": "Lamentações 5:1–2",
+      "options": [
+        { "id": "a", "text": "O clamor nasce da desonra e da perda da herança" },
+        { "id": "b", "text": "O clamor celebra a herança intacta" },
+        { "id": "c", "text": "Não há relação entre oração e ruína" },
+        { "id": "d", "text": "O povo clama porque já descansa em paz" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "considera e olha para a nossa desonra",
+      "feedbackCorrect": "Pedem que o Senhor veja a desonra; a herança já foi entregue.",
+      "feedbackWrong": {
+        "b": "5:2 mostra herança perdida.",
+        "c": "5:1–2 unem clamor e perda.",
+        "d": "5:5 diz que não têm descanso."
+      },
+      "hint": "Ligue o apelo de 5:1 à perda de 5:2.",
+      "learningObjective": "Relacionar clamor e ruína.",
+      "evidence": ["Lamentações 5:1–2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança Lamentações 5:1–12?",
+      "verseRef": "Lamentações 5:1–2",
+      "options": [
+        { "id": "a", "text": "Clamor: lembra e olha a desonra" },
+        { "id": "b", "text": "Herança e casas perdidas" },
+        { "id": "c", "text": "Domínio dos servos e opróbrio" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "Do clamor à perda, até o domínio opressor.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor; o domínio fecha."
+      },
+      "hint": "O canto abre com Lembra-te.",
+      "learningObjective": "Seguir o movimento do clamor à opressão.",
+      "evidence": ["Lamentações 5:1–2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lamentações 5:5, o que o povo diz que não tem?",
+      "verseRef": "Lamentações 5:5",
+      "options": [
+        { "id": "a", "text": "descanso" },
+        { "id": "b", "text": "peso" },
+        { "id": "c", "text": "perseguição" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estamos exaustos e não temos descanso",
+      "feedbackCorrect": "Estão exaustos e não têm descanso.",
+      "feedbackWrong": {
+        "b": "Há peso sobre eles; o que falta é descanso.",
+        "c": "Há perseguição; o que falta é descanso."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Lembrar a ausência de descanso.",
+      "evidence": ["Lamentações 5:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lamentações 5:1 a Salmos 74:2?",
+      "verseRef": "Lamentações 5:1",
+      "passageA": { "ref": "Lamentações 5:1" },
+      "passageB": { "ref": "Salmos 74:2" },
+      "options": [
+        { "id": "a", "text": "Lembra-te da tua herança" },
+        { "id": "b", "text": "Esquece o teu povo" },
+        { "id": "c", "text": "Celebra a ruína alegre" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "evidence": ["Lamentações 5:1", "Salmos 74:2"],
+      "feedbackCorrect": "Nos dois textos, o povo pede: Lembra-te.",
+      "feedbackWrong": {
+        "b": "Ambos pedem lembrança, não esquecimento.",
+        "c": "O tom é de clamor, não de celebração."
+      },
+      "hint": "Compare o verbo do apelo.",
+      "learningObjective": "Relacionar o Lembra-te de Lm e do Salmo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lamentações 5:1–8, mesmo na ruína o povo ainda se volta ao Senhor com clamor, sem fingir que nada se perdeu.",
+      "verseRef": "Lamentações 5:1–2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "Há clamor sincero e descrição clara da perda.",
+      "feedbackWrong": {
+        "false": "5:1 clama; 5:2 descreve herança e casas perdidas."
+      },
+      "hint": "Una o apelo de 5:1 à perda de 5:2.",
+      "learningObjective": "Interpretar o clamor sincero na ruína.",
+      "evidence": ["Lamentações 5:1–2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lamentações 5:1, toque o trecho que sustenta o pedido para o Senhor ver a vergonha do povo.",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "desonra" },
+        { "id": "b", "text": "sucedido" },
+        { "id": "c", "text": "nossa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "considera e olha para a nossa desonra",
+      "feedbackCorrect": "\"Desonra\" é o que pedem que o Senhor veja.",
+      "feedbackWrong": {
+        "b": "\"Sucedido\" resume os fatos; o pedido final aponta a desonra.",
+        "c": "\"Nossa\" apenas possui a desonra."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Sustentar com o texto o pedido sobre a desonra.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lamentações 5:1–12 sustenta sobre a ruína?",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "Na ruína ainda há clamor sincero ao Senhor" },
+        { "id": "b", "text": "A ruína prova que orar não faz sentido" },
+        { "id": "c", "text": "Nada se perdeu; só há exagero poético" },
+        { "id": "d", "text": "O povo já descansa livre sob bons senhores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "O canto começa e segue com clamor diante da perda real.",
+      "feedbackWrong": {
+        "b": "O texto modela o clamor, não o abandono da oração.",
+        "c": "5:2–8 descrevem perdas concretas.",
+        "d": "5:5 e 5:8 negam descanso e liberdade."
+      },
+      "hint": "Compare cada opção com 5:1 e 5:2.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra clamor na desonra na Escritura?",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "O povo pede: Lembra-te, Senhor" },
+        { "id": "b", "text": "O Salmo pede lembrança da herança" },
+        { "id": "c", "text": "Isaías apela ao Senhor que vê" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "evidence": ["Lamentações 5:1", "Salmos 74:2", "Isaías 63:15–16"],
+      "feedbackCorrect": "De Lamentações ao Salmo e a Isaías, o clamor ecoa.",
+      "feedbackWrong": {
+        "default": "Siga: Lm 5:1, Sl 74:2 e Is 63:15–16."
+      },
+      "hint": "Parta do Lembra-te de Lamentações.",
+      "learningObjective": "Ver o clamor na desonra no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lamentações 5:1, que verbo abre o clamor do povo?",
+      "verseRef": "Lamentações 5:1",
+      "options": [
+        { "id": "a", "text": "Esquece" },
+        { "id": "b", "text": "Lembra-te" },
+        { "id": "c", "text": "Afasta-te" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Lembra-te, Senhor, do que nos tem sucedido",
+      "feedbackCorrect": "O clamor abre com Lembra-te.",
+      "feedbackWrong": {
+        "a": "O verbo é Lembra-te, não Esquece.",
+        "c": "Há apelo de proximidade, não afastamento."
+      },
+      "hint": "É a primeira palavra do capítulo.",
+      "learningObjective": "Lembrar o verbo teológico do clamor.",
+      "evidence": ["Lamentações 5:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lamentações 5:1 a Salmos 79:8–9?",
+      "verseRef": "Lamentações 5:1",
+      "passageA": { "ref": "Lamentações 5:1" },
+      "passageB": { "ref": "Salmos 79:8–9" },
+      "options": [
+        { "id": "a", "text": "Clamor na desonra do povo" },
+        { "id": "b", "text": "Silêncio sem qualquer pedido" },
+        { "id": "c", "text": "Orgulho na vitória militar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "considera e olha para a nossa desonra",
+      "evidence": ["Lamentações 5:1", "Salmos 79:8–9"],
+      "feedbackCorrect": "Nos dois textos, o povo clama na desonra.",
+      "feedbackWrong": {
+        "b": "Há clamor explícito nos dois.",
+        "c": "O tom é de desonra, não de vitória."
+      },
+      "hint": "Compare o pedido diante da desonra.",
+      "learningObjective": "Ligar o clamor de Lm ao do Salmo 79."
+    }
+  ]
+}

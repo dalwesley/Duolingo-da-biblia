@@ -1,0 +1,919 @@
+{
+  "study": {
+    "passageRef": "Deuteronômio 9:7–8",
+    "passages": [
+      {
+        "ref": "Deuteronômio 9:7–8"
+      },
+      {
+        "ref": "Deuteronômio 10:1–5"
+      },
+      {
+        "ref": "Deuteronômio 11:18–22"
+      },
+      {
+        "ref": "Deuteronômio 12:1–4"
+      }
+    ],
+    "context": "Cena de Travessia: Coração e culto: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Coração e culto",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Lembrai.",
+        "evidenceRef": "Deuteronômio 9:7",
+        "evidenceSpan": "Lembrai"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Deuteronômio 9:12",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Naquele.",
+        "evidenceRef": "Deuteronômio 10:1",
+        "evidenceSpan": "Naquele"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Deuteronômio 10:5",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Ponham.",
+        "evidenceRef": "Deuteronômio 11:18",
+        "evidenceSpan": "Ponham"
+      },
+      {
+        "text": "Porque.",
+        "evidenceRef": "Deuteronômio 11:22",
+        "evidenceSpan": "Porque"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lembrai vos e não vos esqueçais",
+        "evidenceRef": "Deuteronômio 9:7"
+      },
+      {
+        "label": "E o senhor me disse levanta",
+        "evidenceRef": "Deuteronômio 9:12"
+      },
+      {
+        "label": "Naquele tempo o senhor me disse",
+        "evidenceRef": "Deuteronômio 10:1"
+      },
+      {
+        "label": "E virei me desci do monte",
+        "evidenceRef": "Deuteronômio 10:5"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Deuteronômio 9:12"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"também\".",
+        "marker": "também",
+        "evidenceRef": "Deuteronômio 10:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Deuteronômio 11:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 12:29",
+        "bridge": "Deus é fogo consumidor"
+      },
+      {
+        "ref": "Números 14:22–23",
+        "bridge": "Não entrarão na terra"
+      },
+      {
+        "ref": "Gálatas 3:10",
+        "bridge": "Sob a maldição da lei"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "O coração e o culto pertencem só ao Senhor",
+    "anchorQuestion": "O que Deuteronômio 9:7 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Deuteronômio 9:7, o texto inclui Lembrai.",
+      "verseRef": "Deuteronômio 9:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 9:7 afirma.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 9:7, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Deuteronômio 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrai"
+        },
+        {
+          "id": "b",
+          "text": "esqueçais"
+        },
+        {
+          "id": "c",
+          "text": "provocastes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "O versículo destaca Lembrai.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 10:1, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 10:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naquele"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Naquele",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 10:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 9:12 na ordem do texto.",
+      "verseRef": "Deuteronômio 9:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "E o Senhor me"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "depressa daqui"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E o Senhor me",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Deuteronômio 9:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Deuteronômio 10:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 10:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "virei"
+        },
+        {
+          "id": "b",
+          "text": "Lembrai"
+        },
+        {
+          "id": "c",
+          "text": "vos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "virei",
+      "feedbackCorrect": "A palavra do versículo é virei.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 10:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Deuteronômio 9:7 comunica que se liga a este contexto.",
+      "verseRef": "Deuteronômio 9:7",
+      "passageA": {
+        "ref": "Deuteronômio 9:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Coração e culto: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 12:1, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estes"
+        },
+        {
+          "id": "b",
+          "text": "são"
+        },
+        {
+          "id": "c",
+          "text": "os"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estes",
+      "feedbackCorrect": "O trecho destaca Estes.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Deuteronômio 9:7 na ordem do texto.",
+      "verseRef": "Deuteronômio 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrai"
+        },
+        {
+          "id": "b",
+          "text": "vos esqueçais"
+        },
+        {
+          "id": "c",
+          "text": "provocastes grandemente a ira do Senhor vosso Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Deuteronômio 9:12, a palavra pois liga ideias no fluxo do texto.",
+      "verseRef": "Deuteronômio 9:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 9:12 afirma.",
+      "evidence": [
+        "Deuteronômio 9:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 9:12, toque a palavra que marca a relação no texto.",
+      "verseRef": "Deuteronômio 9:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 9:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 10:5, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 10:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: virei-me, desci do monte e coloquei as tábuas na arca que eu"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E virei-me, desci do monte e coloquei as tábuas na arca",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 10:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Deuteronômio 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lembrai vos e não vos esqueçais"
+        },
+        {
+          "id": "b",
+          "text": "E o senhor me disse levanta"
+        },
+        {
+          "id": "c",
+          "text": "Naquele tempo o senhor me disse"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Deuteronômio 10:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 10:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naquele"
+        },
+        {
+          "id": "b",
+          "text": "Lembrai"
+        },
+        {
+          "id": "c",
+          "text": "vos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Naquele",
+      "feedbackCorrect": "A palavra do versículo é Naquele.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 10:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 9:7 a Hebreus 12:29.",
+      "verseRef": "Deuteronômio 9:7",
+      "passageA": {
+        "ref": "Deuteronômio 9:7"
+      },
+      "passageB": {
+        "ref": "Hebreus 12:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é fogo consumidor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 12:4, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 12:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "farão"
+        },
+        {
+          "id": "b",
+          "text": "Não"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farão",
+      "feedbackCorrect": "O trecho destaca farão.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 12:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Deuteronômio 9:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 9:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Deuteronômio 9:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Deuteronômio 9:8 afirma.",
+      "evidence": [
+        "Deuteronômio 9:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 11:22, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Deuteronômio 11:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "diligentemente"
+        },
+        {
+          "id": "b",
+          "text": "guardarem"
+        },
+        {
+          "id": "c",
+          "text": "todos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "diligentemente",
+      "feedbackCorrect": "O versículo destaca diligentemente.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Deuteronômio 11:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Deuteronômio 11:18, o que o texto apresenta com clareza.",
+      "verseRef": "Deuteronômio 11:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que ponham, pois, estas minhas palavras no coração e na alma de vocês"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ponham",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Deuteronômio 11:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Deuteronômio 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Deuteronômio 11:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Deuteronômio 11:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ponham"
+        },
+        {
+          "id": "b",
+          "text": "Lembrai"
+        },
+        {
+          "id": "c",
+          "text": "vos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ponham",
+      "feedbackCorrect": "A palavra do versículo é Ponham.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Deuteronômio 11:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Deuteronômio 9:7 a Números 14:22–23.",
+      "verseRef": "Deuteronômio 9:7",
+      "passageA": {
+        "ref": "Deuteronômio 9:7"
+      },
+      "passageB": {
+        "ref": "Números 14:22–23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não entrarão na terra"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembrai",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Deuteronômio 9:7, toque outra palavra central do trecho.",
+      "verseRef": "Deuteronômio 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "esqueçais"
+        },
+        {
+          "id": "b",
+          "text": "Lembrai"
+        },
+        {
+          "id": "c",
+          "text": "vos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esqueçais",
+      "feedbackCorrect": "O trecho destaca esqueçais.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Deuteronômio 9:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento ligado a Deuteronômio 9:9.",
+      "verseRef": "Deuteronômio 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Subindo",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Deuteronômio 9:9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Daniel 7:9–14",
+    "passages": [
+      {
+        "ref": "Daniel 7:9–14"
+      }
+    ],
+    "context": "Daniel vê juízo no céu: o Ancião de Dias se assenta, o animal é julgado, e alguém semelhante a um filho do homem recebe domínio eterno.",
+    "keyword": "domínio",
+    "keywordGloss": "O governo eterno dado ao Filho do homem — que não passará nem será destruído.",
+    "focusQuestion": "A quem você reconhece como dono do domínio que não passa?",
+    "reflectionPrompts": [
+      "Ancião de Dias",
+      "Filho do homem",
+      "Reino que não passa"
+    ],
+    "facts": [
+      {
+        "text": "O Ancião de Dias se assentou; sua veste era branca como a neve.",
+        "evidenceRef": "Daniel 7:9",
+        "evidenceSpan": "o Ancião de Dias se assentou"
+      },
+      {
+        "text": "Milhares o serviam e os livros foram abertos.",
+        "evidenceRef": "Daniel 7:10",
+        "evidenceSpan": "os livros foram abertos"
+      },
+      {
+        "text": "O animal foi morto e seu corpo desfeito.",
+        "evidenceRef": "Daniel 7:11",
+        "evidenceSpan": "o animal foi morto, seu corpo desfeito"
+      },
+      {
+        "text": "Alguém semelhante a um filho do homem vinha com as nuvens do céu.",
+        "evidenceRef": "Daniel 7:13",
+        "evidenceSpan": "vinha com as nuvens do céu alguém semelhante a um filho do homem"
+      },
+      {
+        "text": "Foi-lhe dado domínio, glória e reino.",
+        "evidenceRef": "Daniel 7:14",
+        "evidenceSpan": "Foi-lhe dado domínio, glória e reino"
+      },
+      {
+        "text": "Seu domínio é eterno e seu reino não será destruído.",
+        "evidenceRef": "Daniel 7:14",
+        "evidenceSpan": "seu domínio é um domínio eterno, que não passará"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "domínio",
+        "gloss": "O governo eterno entregue ao Filho do homem."
+      },
+      {
+        "term": "Ancião",
+        "gloss": "O Ancião de Dias que se assenta para julgar."
+      },
+      {
+        "term": "nuvens",
+        "gloss": "O cenário da chegada do semelhante a filho do homem."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ancião de Dias no trono",
+        "evidenceRef": "Daniel 7:9–10"
+      },
+      {
+        "label": "Julgamento do animal",
+        "evidenceRef": "Daniel 7:11–12"
+      },
+      {
+        "label": "Chegada do Filho do homem",
+        "evidenceRef": "Daniel 7:13"
+      },
+      {
+        "label": "Domínio eterno entregue",
+        "evidenceRef": "Daniel 7:14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois do juízo do animal, vem o Filho do homem.",
+        "marker": null,
+        "evidenceRef": "Daniel 7:13"
+      },
+      {
+        "kind": "contraste",
+        "text": "Aos outros animais tira-se o domínio; ao Filho do homem dá-se domínio eterno.",
+        "marker": "todavia",
+        "evidenceRef": "Daniel 7:12"
+      },
+      {
+        "kind": "propósito",
+        "text": "Domínio dado para que todos os povos o sirvam.",
+        "marker": "para que",
+        "evidenceRef": "Daniel 7:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 26:64",
+        "bridge": "Filho do homem nas nuvens"
+      },
+      {
+        "ref": "Apocalipse 1:7",
+        "bridge": "Vem com as nuvens"
+      },
+      {
+        "ref": "Salmos 2:8",
+        "bridge": "Nações por herança"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O domínio do Filho do homem é temporário como o dos animais.",
+        "why": "7:14: domínio eterno que não passará."
+      },
+      {
+        "text": "O Ancião de Dias não julga; só observa.",
+        "why": "7:10: tribunal estabelecido e livros abertos."
+      },
+      {
+        "text": "Ninguém serve o Filho do homem.",
+        "why": "7:14: todos os povos, nações e línguas o servirão."
+      }
+    ],
+    "centralInsight": "O domínio eterno é dado ao Filho do homem; todos os povos o servirão.",
+    "anchorQuestion": "Segundo Daniel 7:14, que tipo de domínio foi dado ao Filho do homem?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 7:14, o domínio dado ao Filho do homem é temporário e logo passa.",
+      "verseRef": "Daniel 7:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "seu domínio é um domínio eterno, que não passará",
+      "feedbackCorrect": "O domínio é eterno e não passará.",
+      "feedbackWrong": {
+        "true": "Releia 7:14: domínio eterno."
+      },
+      "hint": "Veja a duração do domínio.",
+      "learningObjective": "Observar a eternidade do domínio.",
+      "evidence": [
+        "Daniel 7:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 7:13, toque com o que vinha o semelhante a um filho do homem.",
+      "verseRef": "Daniel 7:13",
+      "evidenceSpan": "vinha com as nuvens do céu",
+      "feedbackCorrect": "Ele vinha com as nuvens do céu.",
+      "hint": "Procure o acompanhamento da chegada.",
+      "learningObjective": "Identificar o cenário da chegada.",
+      "evidence": [
+        "Daniel 7:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "nuvens"
+        },
+        {
+          "id": "b",
+          "text": "visões"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Visões\" é o quadro, não o acompanhamento.",
+        "c": "\"Homem\" é a figura, não o acompanhamento."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 7:9, quem se assentou?",
+      "verseRef": "Daniel 7:9",
+      "evidenceSpan": "o Ancião de Dias se assentou",
+      "feedbackCorrect": "O Ancião de Dias se assentou.",
+      "hint": "Veja quem se assenta no trono.",
+      "learningObjective": "Observar quem preside o juízo.",
+      "evidence": [
+        "Daniel 7:9"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O animal"
+        },
+        {
+          "id": "b",
+          "text": "O Ancião de Dias"
+        },
+        {
+          "id": "c",
+          "text": "A ponta"
+        },
+        {
+          "id": "d",
+          "text": "Daniel"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O animal é julgado depois.",
+        "c": "A ponta fala; não se assenta aqui.",
+        "d": "Daniel observa, não se assenta."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 7:14 na ordem do texto.",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "Foi-lhe dado domínio, glória e reino",
+      "feedbackCorrect": "Domínio dado, povos servem, domínio eterno.",
+      "hint": "Comece pelo que lhe foi dado.",
+      "learningObjective": "Reconhecer a sequência de 7:14.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Foi-lhe dado domínio, glória e reino"
+        },
+        {
+          "id": "b",
+          "text": "para que todos os povos, nações e homens de todas as línguas o servissem"
+        },
+        {
+          "id": "c",
+          "text": "seu domínio é um domínio eterno, que não passará"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo dom; a eternidade fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 7:14, que palavra nomeia o governo dado ao Filho do homem?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "Foi-lhe dado domínio, glória e reino",
+      "feedbackCorrect": "Foi-lhe dado domínio.",
+      "hint": "É a primeira palavra do que lhe foi dado.",
+      "learningObjective": "Lembrar o termo do governo.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "domínio"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "exílio"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é medo em 7:14.",
+        "c": "Não é exílio em 7:14."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 7:14 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu domínio é um domínio eterno, que não passará",
+      "feedbackCorrect": "No juízo celestial, o Filho do homem recebe reino eterno.",
+      "hint": "Compare juízo e dom.",
+      "learningObjective": "Ligar o domínio eterno ao juízo.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "passageA": {
+        "ref": "Daniel 7:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Após o juízo do animal, o Filho do homem recebe domínio eterno."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino eterno entregue"
+        },
+        {
+          "id": "b",
+          "text": "Animal coroado para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Livros fechados sem juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O animal é morto.",
+        "c": "Os livros foram abertos."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 7:14, o domínio foi dado para que todos os povos o sirvam.",
+      "verseRef": "Daniel 7:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "para que todos os povos, nações e homens de todas as línguas o servissem",
+      "feedbackCorrect": "\"Para que\" marca o propósito: todos o sirvam.",
+      "feedbackWrong": {
+        "false": "Releia a finalidade em 7:14."
+      },
+      "hint": "Veja a expressão \"para que\".",
+      "learningObjective": "Compreender o propósito do domínio.",
+      "evidence": [
+        "Daniel 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 7:14, toque a expressão que marca o propósito do domínio.",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "para que todos os povos, nações e homens de todas as línguas o servissem",
+      "feedbackCorrect": "\"Para que\" introduz o propósito do dom.",
+      "hint": "É a expressão antes de \"todos os povos\".",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "glória"
+        },
+        {
+          "id": "c",
+          "text": "línguas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Glória\" é parte do dom, não o marcador.",
+        "c": "\"Línguas\" são os que servem."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 7:12–14 relaciona o domínio dos animais e o do Filho do homem?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu domínio é um domínio eterno, que não passará",
+      "feedbackCorrect": "Aos animais tira-se o domínio; ao Filho do homem dá-se domínio eterno.",
+      "hint": "Compare o que se tira e o que se dá.",
+      "learningObjective": "Relacionar juízo dos animais e dom eterno.",
+      "evidence": [
+        "Daniel 7:12",
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Animais perdem; o Filho do homem recebe eterno"
+        },
+        {
+          "id": "b",
+          "text": "Todos os domínios são iguais e eternos"
+        },
+        {
+          "id": "c",
+          "text": "Só os animais recebem domínio eterno"
+        },
+        {
+          "id": "d",
+          "text": "O Filho do homem não recebe reino"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "7:14 distingue o eterno.",
+        "c": "Aos animais tira-se o domínio.",
+        "d": "Foi-lhe dado domínio, glória e reino."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a visão em Daniel 7:9–14?",
+      "verseRef": "Daniel 7:9–14",
+      "evidenceSpan": "Foi-lhe dado domínio, glória e reino",
+      "feedbackCorrect": "Trono e juízo, queda do animal, chegada e domínio eterno.",
+      "hint": "Comece pelo Ancião.",
+      "learningObjective": "Seguir o movimento da visão.",
+      "evidence": [
+        "Daniel 7:9–14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ancião de Dias no trono e livros abertos"
+        },
+        {
+          "id": "b",
+          "text": "Animal julgado e domínio tirado"
+        },
+        {
+          "id": "c",
+          "text": "Filho do homem recebe domínio eterno"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo trono; o domínio eterno fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 7:12, que palavra marca o contraste sobre a vida dos outros animais?",
+      "verseRef": "Daniel 7:12",
+      "evidenceSpan": "todavia, foi-lhes concedido um prolongamento de vida",
+      "feedbackCorrect": "\"Todavia\" marca o contraste no destino dos outros animais.",
+      "hint": "É a palavra de contraste no versículo.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": [
+        "Daniel 7:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "todavia"
+        },
+        {
+          "id": "b",
+          "text": "sempre"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é \"sempre\" em 7:12.",
+        "c": "Não é \"nunca\" em 7:12."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 7:13 a Mateus 26:64?",
+      "verseRef": "Daniel 7:13",
+      "evidenceSpan": "vinha com as nuvens do céu alguém semelhante a um filho do homem",
+      "feedbackCorrect": "Jesus aplica a si a figura do Filho do homem nas nuvens.",
+      "hint": "Compare nuvens e Filho do homem.",
+      "learningObjective": "Relacionar Daniel e a palavra de Jesus.",
+      "evidence": [
+        "Daniel 7:13",
+        "Mateus 26:64"
+      ],
+      "passageA": {
+        "ref": "Daniel 7:13"
+      },
+      "passageB": {
+        "ref": "Mateus 26:64"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Filho do homem nas nuvens"
+        },
+        {
+          "id": "b",
+          "text": "Animal reinando eterno"
+        },
+        {
+          "id": "c",
+          "text": "Trono vazio sem juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos exaltam o Filho do homem.",
+        "c": "Há Ancião e juízo no texto."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 7:9–14, o tribunal celestial não abre livros nem julga.",
+      "verseRef": "Daniel 7:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "o tribunal foi estabelecido, e os livros foram abertos",
+      "feedbackCorrect": "Tribunal estabelecido e livros abertos: há juízo.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 7:10."
+      },
+      "hint": "Veja o que acontece com os livros.",
+      "learningObjective": "Interpretar a cena como juízo real.",
+      "evidence": [
+        "Daniel 7:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 7:14, toque o trecho que mostra a duração do domínio.",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "domínio eterno, que não passará",
+      "feedbackCorrect": "Domínio eterno que não passará.",
+      "hint": "Procure o adjetivo do domínio.",
+      "learningObjective": "Sustentar a eternidade do domínio.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "eterno"
+        },
+        {
+          "id": "b",
+          "text": "povos"
+        },
+        {
+          "id": "c",
+          "text": "reino"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Povos\" são os que servem.",
+        "c": "\"Reino\" é dado; a duração é \"eterno\"."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 7:9–14 sustenta sobre o Reino?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "seu reino não será destruído",
+      "feedbackCorrect": "O Reino do Filho do homem é eterno e não será destruído.",
+      "hint": "Compare cada opção com 7:14.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Daniel 7:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "O Reino do Filho do homem não será destruído"
+        },
+        {
+          "id": "b",
+          "text": "Todos os reinos humanos são eternos"
+        },
+        {
+          "id": "c",
+          "text": "O juízo nunca se estabelece"
+        },
+        {
+          "id": "d",
+          "text": "Só Israel serve o Filho do homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Aos animais tira-se o domínio.",
+        "c": "O tribunal é estabelecido.",
+        "d": "Todos os povos o servirão."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do Filho do homem?",
+      "verseRef": "Daniel 7:13",
+      "evidenceSpan": "vinha com as nuvens do céu alguém semelhante a um filho do homem",
+      "feedbackCorrect": "Daniel vê; Jesus afirma; Apocalipse anuncia a vinda com as nuvens.",
+      "hint": "Parta de Daniel.",
+      "learningObjective": "Ver o Filho do homem no fio bíblico.",
+      "evidence": [
+        "Daniel 7:13",
+        "Mateus 26:64",
+        "Apocalipse 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Daniel: Filho do homem nas nuvens"
+        },
+        {
+          "id": "b",
+          "text": "Jesus: o Filho do homem vindo nas nuvens"
+        },
+        {
+          "id": "c",
+          "text": "Apocalipse: vem com as nuvens"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Daniel 7, Mateus 26 e Apocalipse 1."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 7:9, que título nomeia quem se assenta?",
+      "verseRef": "Daniel 7:9",
+      "evidenceSpan": "o Ancião de Dias se assentou",
+      "feedbackCorrect": "O Ancião de Dias se assenta para julgar.",
+      "hint": "É o título de quem se assenta.",
+      "learningObjective": "Lembrar o título do juiz celestial.",
+      "evidence": [
+        "Daniel 7:9"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ancião"
+        },
+        {
+          "id": "b",
+          "text": "bode"
+        },
+        {
+          "id": "c",
+          "text": "carneiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Bode\" não está em 7:9.",
+        "c": "\"Carneiro\" não está em 7:9."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 7:14 a Salmos 2:8?",
+      "verseRef": "Daniel 7:14",
+      "evidenceSpan": "para que todos os povos, nações e homens de todas as línguas o servissem",
+      "feedbackCorrect": "Nos dois textos, as nações são entregues ao rei ungido.",
+      "hint": "Compare povos e nações.",
+      "learningObjective": "Ligar o serviço das nações à herança do rei.",
+      "evidence": [
+        "Daniel 7:14",
+        "Salmos 2:8"
+      ],
+      "passageA": {
+        "ref": "Daniel 7:14"
+      },
+      "passageB": {
+        "ref": "Salmos 2:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nações sob o rei"
+        },
+        {
+          "id": "b",
+          "text": "Nações sem senhor"
+        },
+        {
+          "id": "c",
+          "text": "Trono só humano"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos dão as nações ao rei.",
+        "c": "O domínio vem do Ancião de Dias."
+      }
+    }
+  ]
+}

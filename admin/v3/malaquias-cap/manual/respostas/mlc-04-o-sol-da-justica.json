@@ -1,0 +1,496 @@
+{
+  "study": {
+    "passageRef": "Malaquias 4:1–6",
+    "passages": [
+      { "ref": "Malaquias 4:1–6" }
+    ],
+    "context": "O livro fecha com o dia do Senhor: fornalha para os arrogantes e sol da justiça para quem teme o seu nome. Antes desse dia, o povo deve lembrar a Lei e esperar o envio de Elias.",
+    "keyword": "sol da justiça",
+    "keywordGloss": "A imagem da salvação e cura que nasce para os que temem o nome do Senhor.",
+    "focusQuestion": "Você teme o nome do Senhor de um jeito que espera o sol da justiça, ou vive como se o dia nunca viesse?",
+    "reflectionPrompts": [
+      "Dia como fornalha",
+      "Sol da justiça",
+      "Coração dos pais"
+    ],
+    "facts": [
+      {
+        "text": "O dia vem ardendo como uma fornalha; arrogantes e perversos serão como a palha.",
+        "evidenceRef": "Malaquias 4:1",
+        "evidenceSpan": "vem o dia ardendo como uma fornalha"
+      },
+      {
+        "text": "Para os que temem o nome do Senhor, nascerá o sol da justiça.",
+        "evidenceRef": "Malaquias 4:2",
+        "evidenceSpan": "nascerá o sol da justiça"
+      },
+      {
+        "text": "Os ímpios se tornarão cinzas sob os pés no dia em que o Senhor fizer isso.",
+        "evidenceRef": "Malaquias 4:3",
+        "evidenceSpan": "se tornarão cinzas sob as plantas dos vossos pés"
+      },
+      {
+        "text": "O povo deve lembrar-se da Lei de Moisés, prescrita em Horebe.",
+        "evidenceRef": "Malaquias 4:4",
+        "evidenceSpan": "Lembrem-se da Lei de Moisés, meu servo"
+      },
+      {
+        "text": "O Senhor enviará o profeta Elias antes do grande e terrível Dia do Senhor.",
+        "evidenceRef": "Malaquias 4:5",
+        "evidenceSpan": "eu vos envio o profeta Elias"
+      },
+      {
+        "text": "Elias converterá o coração dos pais aos filhos e dos filhos aos pais.",
+        "evidenceRef": "Malaquias 4:6",
+        "evidenceSpan": "converterá o coração dos pais aos filhos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sol da justiça",
+        "gloss": "Promessa de salvação para quem teme o nome do Senhor."
+      },
+      {
+        "term": "fornalha",
+        "gloss": "Imagem do dia que consome arrogantes e perversos."
+      },
+      {
+        "term": "Elias",
+        "gloss": "O profeta enviado antes do Dia do Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O dia como fornalha para os arrogantes",
+        "evidenceRef": "Malaquias 4:1"
+      },
+      {
+        "label": "O sol da justiça para quem teme",
+        "evidenceRef": "Malaquias 4:2–3"
+      },
+      {
+        "label": "Lembrar a Lei de Moisés",
+        "evidenceRef": "Malaquias 4:4"
+      },
+      {
+        "label": "Envio de Elias e conversão dos corações",
+        "evidenceRef": "Malaquias 4:5–6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O dia consome os arrogantes, mas para os que temem nasce o sol da justiça.",
+        "marker": "Mas",
+        "evidenceRef": "Malaquias 4:2"
+      },
+      {
+        "kind": "propósito",
+        "text": "Elias converte os corações para que o Senhor não fira a terra com maldição.",
+        "marker": "para",
+        "evidenceRef": "Malaquias 4:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "Antes do Dia do Senhor, Elias é enviado.",
+        "marker": "antes",
+        "evidenceRef": "Malaquias 4:5"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 1:17", "bridge": "Espírito e poder de Elias" },
+      { "ref": "Mateus 17:11", "bridge": "Elias restaura tudo" },
+      { "ref": "Apocalipse 22:16", "bridge": "Estrela da manhã" }
+    ],
+    "misreadings": [
+      {
+        "text": "O dia do Senhor é igual para todos, sem distinção.",
+        "why": "Para os arrogantes é fornalha; para quem teme, nasce o sol da justiça."
+      },
+      {
+        "text": "Basta esperar Elias; a Lei de Moisés já não importa.",
+        "why": "O texto manda lembrar a Lei antes de anunciar o envio de Elias."
+      },
+      {
+        "text": "O sol da justiça é só metáfora sem salvação real.",
+        "why": "O texto diz que traz salvação em suas asas."
+      }
+    ],
+    "centralInsight": "Para quem teme o nome do Senhor, nasce o sol da justiça com cura nas suas asas.",
+    "anchorQuestion": "O que nasce para os que temem o nome do Senhor, segundo Malaquias 4:2?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Malaquias 4:2, para os que temem o nome do Senhor nascerá o sol da justiça.",
+      "verseRef": "Malaquias 4:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "nascerá o sol da justiça",
+      "feedbackCorrect": "O texto promete o sol da justiça a quem teme o nome do Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 4:2: para vocês que temem, nascerá o sol da justiça."
+      },
+      "hint": "Veja o que nasce para os que temem.",
+      "learningObjective": "Observar a promessa aos que temem.",
+      "evidence": ["Malaquias 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia do Senhor.",
+      "verseRef": "Malaquias 4:5",
+      "options": [
+        { "id": "a", "text": "profeta" },
+        { "id": "b", "text": "Elias" },
+        { "id": "c", "text": "terrível" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eu vos envio o profeta Elias",
+      "feedbackCorrect": "O Senhor envia o profeta Elias antes do grande e terrível Dia.",
+      "feedbackWrong": {
+        "a": "\"Profeta\" é o ofício; o nome do enviado é Elias.",
+        "c": "\"Terrível\" descreve o Dia; quem é enviado é Elias."
+      },
+      "hint": "Leia o nome do enviado no versículo.",
+      "learningObjective": "Identificar o profeta enviado antes do Dia.",
+      "evidence": ["Malaquias 4:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Malaquias 4:1, a que o dia que vem é comparado?",
+      "verseRef": "Malaquias 4:1",
+      "options": [
+        { "id": "a", "text": "A uma brisa suave" },
+        { "id": "b", "text": "A uma fornalha" },
+        { "id": "c", "text": "A uma colheita alegre" },
+        { "id": "d", "text": "A uma noite sem fim" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vem o dia ardendo como uma fornalha",
+      "feedbackCorrect": "O dia vem ardendo como uma fornalha para os arrogantes.",
+      "feedbackWrong": {
+        "a": "O texto fala de fornalha, não de brisa.",
+        "c": "Para os arrogantes o dia consome; não é colheita alegre.",
+        "d": "A imagem é fogo de fornalha, não noite."
+      },
+      "hint": "Veja a comparação depois de \"ardendo como\".",
+      "learningObjective": "Observar a imagem do dia do Senhor.",
+      "evidence": ["Malaquias 4:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Malaquias 4:2 na ordem do texto.",
+      "verseRef": "Malaquias 4:2",
+      "options": [
+        { "id": "a", "text": "Mas para vocês, que temem o meu nome" },
+        { "id": "b", "text": "nascerá o sol da justiça" },
+        { "id": "c", "text": "trazendo salvação em suas asas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "nascerá o sol da justiça",
+      "feedbackCorrect": "Primeiro quem teme, depois o sol, e então a salvação nas asas.",
+      "feedbackWrong": {
+        "default": "Comece pelo \"Mas para vocês\"; as asas fecham a frase."
+      },
+      "hint": "O versículo começa com o contraste \"Mas\".",
+      "learningObjective": "Reconhecer a sequência de Malaquias 4:2.",
+      "evidence": ["Malaquias 4:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Malaquias 4:1, a que os arrogantes serão semelhantes?",
+      "verseRef": "Malaquias 4:1",
+      "options": [
+        { "id": "a", "text": "ouro" },
+        { "id": "b", "text": "palha" },
+        { "id": "c", "text": "rocha" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "serão como a palha",
+      "feedbackCorrect": "Arrogantes e perversos serão como a palha no dia que consome.",
+      "feedbackWrong": {
+        "a": "O texto não fala de ouro; fala de palha.",
+        "c": "Não há rocha aqui; a comparação é com a palha."
+      },
+      "hint": "Veja a comparação depois de \"serão como\".",
+      "learningObjective": "Lembrar a imagem dos arrogantes no dia.",
+      "evidence": ["Malaquias 4:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Malaquias 4:2 comunica que se liga a este contexto?",
+      "verseRef": "Malaquias 4:2",
+      "passageA": { "ref": "Malaquias 4:2" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem teme o nome do Senhor recebe salvação, não fornalha."
+      },
+      "options": [
+        { "id": "a", "text": "Mesmo destino para todos" },
+        { "id": "b", "text": "Salvação para quem teme" },
+        { "id": "c", "text": "Fim sem qualquer esperança" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "trazendo salvação em suas asas",
+      "feedbackCorrect": "O sol da justiça traz salvação em suas asas para quem teme.",
+      "feedbackWrong": {
+        "a": "Há contraste: fornalha para uns, sol para outros.",
+        "c": "Há salvação e salto de alegria no texto."
+      },
+      "hint": "Veja o que o sol traz em suas asas.",
+      "learningObjective": "Ligar 4:2 à salvação dos que temem.",
+      "evidence": ["Malaquias 4:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+      "verseRef": "Malaquias 4:1–2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas para vocês, que temem o meu nome",
+      "feedbackCorrect": "O \"Mas\" marca o contraste: fornalha para uns, sol da justiça para outros.",
+      "feedbackWrong": {
+        "true": "Releia o início de 4:2: o destino muda para quem teme."
+      },
+      "hint": "Compare 4:1 com a abertura de 4:2.",
+      "learningObjective": "Compreender o contraste do dia do Senhor.",
+      "evidence": ["Malaquias 4:1–2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+      "verseRef": "Malaquias 4:2",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "sol" },
+        { "id": "c", "text": "asas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas para vocês, que temem o meu nome",
+      "feedbackCorrect": "\"Mas\" vira a página: do fogo dos arrogantes ao sol dos que temem.",
+      "feedbackWrong": {
+        "b": "\"Sol\" é a promessa; o contraste começa com \"Mas\".",
+        "c": "\"Asas\" descrevem a salvação; o marcador é \"Mas\"."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Malaquias 4:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Malaquias 4:5–6 se relaciona com o Dia do Senhor?",
+      "verseRef": "Malaquias 4:5–6",
+      "options": [
+        { "id": "a", "text": "Elias vem depois do Dia, só para celebrar" },
+        { "id": "b", "text": "Elias é enviado antes, para converter corações" },
+        { "id": "c", "text": "A Lei substitui qualquer envio de profeta" },
+        { "id": "d", "text": "A maldição já caiu e não pode ser evitada" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "antes que venha o grande e terrível Dia do SENHOR",
+      "feedbackCorrect": "Elias vem antes do Dia e converte corações para evitar a maldição.",
+      "feedbackWrong": {
+        "a": "O texto diz \"antes\", não depois.",
+        "c": "A Lei deve ser lembrada; Elias ainda é anunciado.",
+        "d": "A conversão existe \"para que eu não venha e fira\"."
+      },
+      "hint": "Veja a palavra \"antes\" em 4:5 e o \"para que\" em 4:6.",
+      "learningObjective": "Relacionar o envio de Elias ao Dia.",
+      "evidence": ["Malaquias 4:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o fechamento em Malaquias 4:1–5?",
+      "verseRef": "Malaquias 4:1–2",
+      "options": [
+        { "id": "a", "text": "O dia como fornalha para os arrogantes" },
+        { "id": "b", "text": "O sol da justiça para quem teme" },
+        { "id": "c", "text": "O envio de Elias antes do Dia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "vem o dia ardendo como uma fornalha",
+      "feedbackCorrect": "Primeiro o juízo, depois a salvação, e então o enviado.",
+      "feedbackWrong": {
+        "default": "Comece pela fornalha; Elias fecha o movimento."
+      },
+      "hint": "Siga 4:1, 4:2 e 4:5.",
+      "learningObjective": "Compreender o movimento do fechamento do livro.",
+      "evidence": ["Malaquias 4:1", "Malaquias 4:2", "Malaquias 4:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Malaquias 4:5, que palavra marca o tempo do envio de Elias em relação ao Dia?",
+      "verseRef": "Malaquias 4:5",
+      "options": [
+        { "id": "a", "text": "depois" },
+        { "id": "b", "text": "antes" },
+        { "id": "c", "text": "durante" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "antes que venha o grande e terrível Dia do SENHOR",
+      "feedbackCorrect": "\"Antes\" marca a sequência: Elias vem, e então o Dia.",
+      "feedbackWrong": {
+        "a": "O texto não diz depois; diz antes.",
+        "c": "Não é durante o Dia; é antes que ele venha."
+      },
+      "hint": "Olhe a relação entre o envio e o Dia no versículo.",
+      "learningObjective": "Compreender a sequência anunciada.",
+      "evidence": ["Malaquias 4:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Malaquias 4:5 a Lucas 1:17?",
+      "verseRef": "Malaquias 4:5",
+      "passageA": { "ref": "Malaquias 4:5" },
+      "passageB": { "ref": "Lucas 1:17" },
+      "options": [
+        { "id": "a", "text": "Espírito e poder de Elias" },
+        { "id": "b", "text": "Fim da profecia em Israel" },
+        { "id": "c", "text": "Dia sem qualquer preparo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos envio o profeta Elias",
+      "evidence": ["Malaquias 4:5", "Lucas 1:17"],
+      "feedbackCorrect": "Lucas lê o envio de Elias no preparo do caminho do Senhor.",
+      "feedbackWrong": {
+        "b": "Os textos anunciam envio e preparo, não o fim da profecia.",
+        "c": "Há enviado antes do Dia; há preparo."
+      },
+      "hint": "Compare o enviado e a conversão dos corações.",
+      "learningObjective": "Relacionar Elias em Malaquias e em Lucas."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Malaquias 4:4–5, basta esperar Elias; lembrar a Lei de Moisés já não importa.",
+      "verseRef": "Malaquias 4:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Lembrem-se da Lei de Moisés, meu servo",
+      "feedbackCorrect": "Antes de anunciar Elias, o Senhor manda lembrar a Lei.",
+      "feedbackWrong": {
+        "true": "O texto coloca a Lei e o envio de Elias juntos, sem anular a Lei."
+      },
+      "hint": "Veja o que vem imediatamente antes do anúncio de Elias.",
+      "learningObjective": "Interpretar Lei e Elias como chamados juntos.",
+      "evidence": ["Malaquias 4:4–5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Malaquias 4:2, toque o trecho que sustenta a leitura de salvação real, não só metáfora vazia.",
+      "verseRef": "Malaquias 4:2",
+      "options": [
+        { "id": "a", "text": "bezerros" },
+        { "id": "b", "text": "salvação" },
+        { "id": "c", "text": "estrebaria" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "trazendo salvação em suas asas",
+      "feedbackCorrect": "O sol traz salvação em suas asas: há livramento concreto.",
+      "feedbackWrong": {
+        "a": "\"Bezerros\" ilustram a alegria; a salvação está antes.",
+        "c": "\"Estrebaria\" fecha a imagem; o que sustenta a leitura é salvação."
+      },
+      "hint": "Procure o que o sol traz em suas asas.",
+      "learningObjective": "Sustentar com o texto a salvação prometida.",
+      "evidence": ["Malaquias 4:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Malaquias 4:1–2 sustenta sobre o dia do Senhor?",
+      "verseRef": "Malaquias 4:1–2",
+      "options": [
+        { "id": "a", "text": "Há juízo e salvação, conforme o temor ao nome" },
+        { "id": "b", "text": "O dia é igual para arrogantes e tementes" },
+        { "id": "c", "text": "Só existe fornalha, sem qualquer esperança" },
+        { "id": "d", "text": "O sol da justiça dispensa temer o nome" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas para vocês, que temem o meu nome",
+      "feedbackCorrect": "Fornalha para os arrogantes; sol da justiça para quem teme.",
+      "feedbackWrong": {
+        "b": "O \"Mas\" de 4:2 mostra destinos diferentes.",
+        "c": "Há salvação e alegria para os que temem.",
+        "d": "A promessa é justamente para quem teme o nome."
+      },
+      "hint": "Compare as duas imagens: fornalha e sol.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Malaquias 4:1–2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da luz prometida em Malaquias 4:2?",
+      "verseRef": "Malaquias 4:2",
+      "options": [
+        { "id": "a", "text": "Nasce o sol da justiça com salvação" },
+        { "id": "b", "text": "Elias restaura e prepara o caminho" },
+        { "id": "c", "text": "Cristo se apresenta como estrela da manhã" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "nascerá o sol da justiça",
+      "evidence": ["Malaquias 4:2", "Mateus 17:11", "Apocalipse 22:16"],
+      "feedbackCorrect": "A promessa de luz aponta para o preparo e para Cristo, a estrela da manhã.",
+      "feedbackWrong": {
+        "default": "Siga: Malaquias, Mateus e Apocalipse."
+      },
+      "hint": "Siga a ordem: promessa, preparo e cumprimento.",
+      "learningObjective": "Ver o sol da justiça no fio da Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Malaquias 4:1, que palavra nomeia a imagem do dia que consome?",
+      "verseRef": "Malaquias 4:1",
+      "options": [
+        { "id": "a", "text": "fornalha" },
+        { "id": "b", "text": "estrebaria" },
+        { "id": "c", "text": "Horebe" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vem o dia ardendo como uma fornalha",
+      "feedbackCorrect": "A fornalha nomeia o juízo do dia sobre arrogantes e perversos.",
+      "feedbackWrong": {
+        "b": "\"Estrebaria\" aparece na alegria de 4:2, não no juízo.",
+        "c": "\"Horebe\" é o lugar da Lei em 4:4."
+      },
+      "hint": "Veja a comparação do dia que arde.",
+      "learningObjective": "Lembrar o termo que carrega o juízo da cena.",
+      "evidence": ["Malaquias 4:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Malaquias 4:2 a Apocalipse 22:16?",
+      "verseRef": "Malaquias 4:2",
+      "passageA": { "ref": "Malaquias 4:2" },
+      "passageB": { "ref": "Apocalipse 22:16" },
+      "options": [
+        { "id": "a", "text": "Estrela da manhã" },
+        { "id": "b", "text": "Fim sem luz alguma" },
+        { "id": "c", "text": "Juízo sem salvação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nascerá o sol da justiça",
+      "evidence": ["Malaquias 4:2", "Apocalipse 22:16"],
+      "feedbackCorrect": "A luz prometida aos que temem encontra eco em Cristo, a estrela da manhã.",
+      "feedbackWrong": {
+        "b": "Os dois textos falam de luz, não de escuridão final.",
+        "c": "Malaquias fala de salvação; Apocalipse apresenta a estrela."
+      },
+      "hint": "Compare as imagens de luz nos dois textos.",
+      "learningObjective": "Ligar o sol da justiça à estrela da manhã."
+    }
+  ]
+}

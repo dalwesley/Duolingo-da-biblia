@@ -1,0 +1,927 @@
+{
+  "study": {
+    "passageRef": "Josué 6:10–15",
+    "passages": [
+      {
+        "ref": "Josué 5:10–15"
+      },
+      {
+        "ref": "Josué 6:6–15"
+      },
+      {
+        "ref": "Josué 7:1–9"
+      },
+      {
+        "ref": "Josué 8:30–35"
+      },
+      {
+        "ref": "Josué 9:3–15"
+      }
+    ],
+    "context": "Esta Travessia revisa a Conquista: Páscoa e príncipe, trombetas, derrota em Ai, altar no Ebal e engaño de Gibeão.",
+    "keyword": "ouvir",
+    "keywordGloss": "Vitória e queda dependem de ouvir o Senhor e não confiar só nos olhos.",
+    "focusQuestion": "Onde você precisa ouvir o Senhor antes de jurar ou marchar?",
+    "reflectionPrompts": [
+      "Lugar santo",
+      "Silêncio e grito",
+      "Consultar o Senhor"
+    ],
+    "facts": [
+      {
+        "text": "O lugar onde Josué estava era santo.",
+        "evidenceRef": "Josué 5:15",
+        "evidenceSpan": "o lugar em que estás é santo"
+      },
+      {
+        "text": "Josué ordenou silêncio até mandar gritar.",
+        "evidenceRef": "Josué 6:10",
+        "evidenceSpan": "Não gritem, nem façam ouvir a sua voz"
+      },
+      {
+        "text": "Israel prevaricou nas coisas consagradas.",
+        "evidenceRef": "Josué 7:1",
+        "evidenceSpan": "prevaricaram nas coisas consagradas"
+      },
+      {
+        "text": "Josué leu bênçãos e maldições da lei.",
+        "evidenceRef": "Josué 8:34",
+        "evidenceSpan": "as bênçãos e as maldições"
+      },
+      {
+        "text": "Israel não pediu conselho ao Senhor.",
+        "evidenceRef": "Josué 9:14",
+        "evidenceSpan": "não pediram conselho ao SENHOR"
+      },
+      {
+        "text": "No sétimo dia rodearam a cidade sete vezes.",
+        "evidenceRef": "Josué 6:15",
+        "evidenceSpan": "rodearam a cidade sete vezes"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "santo",
+        "gloss": "O lugar da presença exige reverência."
+      },
+      {
+        "term": "prevaricaram",
+        "gloss": "Quebra da consagração que traz derrota."
+      },
+      {
+        "term": "conselho",
+        "gloss": "O que faltou antes do juramento a Gibeão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Páscoa e lugar santo",
+        "evidenceRef": "Josué 5:10–15"
+      },
+      {
+        "label": "Trombetas e silêncio em Jericó",
+        "evidenceRef": "Josué 6:6–15"
+      },
+      {
+        "label": "Derrota por prevaricação",
+        "evidenceRef": "Josué 7:1–8"
+      },
+      {
+        "label": "Lei no Ebal e juramento precipitado",
+        "evidenceRef": "Josué 9:3–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Descalça pois o lugar é santo.",
+        "marker": "pois",
+        "evidenceRef": "Josué 5:15"
+      },
+      {
+        "kind": "contraste",
+        "text": "Trombetas soam; porém o povo cala.",
+        "marker": "Porém",
+        "evidenceRef": "Josué 6:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Sem consulta, firmam aliança.",
+        "marker": null,
+        "evidenceRef": "Josué 9:14–15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 3:5",
+        "bridge": "Sandálias e chão santo"
+      },
+      {
+        "ref": "Hebreus 11:30",
+        "bridge": "Muros pela fé"
+      },
+      {
+        "ref": "Números 27:21",
+        "bridge": "Consultar o Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A derrota em Ai veio só por número pequeno.",
+        "why": "O texto abre com prevaricação e ira."
+      },
+      {
+        "text": "Israel consultou o Senhor em Gibeão.",
+        "why": "Não pediram conselho ao Senhor."
+      },
+      {
+        "text": "O povo podia gritar desde o primeiro dia.",
+        "why": "Silêncio até a ordem de gritar."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 9:14, o que Israel deixou de pedir?",
+    "centralInsight": "Vitória e queda dependem de ouvir e temer o Senhor"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 5:15, o lugar em que Josué está é santo.",
+      "verseRef": "Josué 5:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "o lugar em que estás é santo",
+      "feedbackCorrect": "O lugar é santo.",
+      "feedbackWrong": {
+        "false": "O texto diz santo."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Observar o lugar santo.",
+      "evidence": [
+        "Josué 5:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 6:10, toque o que o povo não deve fazer.",
+      "verseRef": "Josué 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gritem"
+        },
+        {
+          "id": "b",
+          "text": "voz"
+        },
+        {
+          "id": "c",
+          "text": "boca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu lhes disser: Gritem!",
+      "feedbackCorrect": "Só gritam na ordem.",
+      "feedbackWrong": {
+        "b": "Voz deve calar.",
+        "c": "Boca sem palavra."
+      },
+      "hint": "Veja a ordem final.",
+      "learningObjective": "Identificar o grito.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 7:1, o que Israel fez?",
+      "verseRef": "Josué 7:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevaricou nas coisas consagradas"
+        },
+        {
+          "id": "b",
+          "text": "Venceu Ai de imediato"
+        },
+        {
+          "id": "c",
+          "text": "Consultou o Senhor em tudo"
+        },
+        {
+          "id": "d",
+          "text": "Leu a lei no Ebal naquele verso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "Prevaricaram.",
+      "feedbackWrong": {
+        "b": "Há derrota depois.",
+        "c": "Não consultaram em Ai.",
+        "d": "A lei vem no cap. 8."
+      },
+      "hint": "Leia o verbo inicial.",
+      "learningObjective": "Reconhecer a prevaricação.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 5:15 na ordem do texto.",
+      "verseRef": "Josué 5:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Descalça as sandálias dos pés"
+        },
+        {
+          "id": "b",
+          "text": "pois o lugar em que estás é santo"
+        },
+        {
+          "id": "c",
+          "text": "E Josué fez assim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Descalça as sandálias dos pés",
+      "feedbackCorrect": "Ordem e obediência.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 5:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 9:14, complete: não pediram ___ ao SENHOR.",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "conselho"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "pão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Conselho.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "A palavra é conselho."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar conselho.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 6:10 comunica que se liga a este contexto?",
+      "verseRef": "Josué 6:10",
+      "passageA": {
+        "ref": "Josué 6:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel cerca Jericó com arca e trombetas."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Silêncio até a ordem"
+        },
+        {
+          "id": "b",
+          "text": "Grito desde o dia um"
+        },
+        {
+          "id": "c",
+          "text": "Arca abandonada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "Silêncio ordenado.",
+      "feedbackWrong": {
+        "b": "Não gritam cedo.",
+        "c": "Arca está no cerco."
+      },
+      "hint": "Veja a ordem.",
+      "learningObjective": "Ligar cerco e silêncio.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 8:34, toque o que foi lido com as bênçãos.",
+      "verseRef": "Josué 8:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "maldições"
+        },
+        {
+          "id": "b",
+          "text": "voz"
+        },
+        {
+          "id": "c",
+          "text": "livro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as bênçãos e as maldições",
+      "feedbackCorrect": "Maldições também.",
+      "feedbackWrong": {
+        "b": "Voz é o modo.",
+        "c": "Livro é a fonte."
+      },
+      "hint": "Veja o segundo item.",
+      "learningObjective": "Identificar maldições.",
+      "evidence": [
+        "Josué 8:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 7:8 na ordem do texto.",
+      "verseRef": "Josué 7:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ó Senhor! O que direi?"
+        },
+        {
+          "id": "b",
+          "text": "Pois Israel virou as costas"
+        },
+        {
+          "id": "c",
+          "text": "diante de seus inimigos!"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Israel virou as costas diante de seus inimigos",
+      "feedbackCorrect": "Lamento da fuga.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta."
+      },
+      "hint": "O que Josué pergunta?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 7:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 6:10, o Porém marca silêncio apesar das trombetas.",
+      "verseRef": "Josué 6:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porém, Josué havia ordenado ao povo",
+      "feedbackCorrect": "Contraste trombetas/silêncio.",
+      "feedbackWrong": {
+        "false": "O Porém introduz o silêncio."
+      },
+      "hint": "Leia o Porém.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 6:10, toque o marcador de contraste.",
+      "verseRef": "Josué 6:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "trombetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, Josué havia ordenado",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Povo recebe.",
+        "c": "Trombetas soam noutro verso."
+      },
+      "hint": "Olhe a primeira palavra.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Josué 6:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre omissão e aliança?",
+      "verseRef": "Josué 9:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sem consulta, firmam paz e juramento"
+        },
+        {
+          "id": "b",
+          "text": "Consultam depois de jurar"
+        },
+        {
+          "id": "c",
+          "text": "Recusam qualquer pacto"
+        },
+        {
+          "id": "d",
+          "text": "Só Finéias jura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez uma aliança com eles, garantindo-lhes a vida",
+      "feedbackCorrect": "Omissão precede o pacto.",
+      "feedbackWrong": {
+        "b": "Não consultaram.",
+        "c": "Houve aliança.",
+        "d": "Príncipes juraram."
+      },
+      "hint": "Leia 9:14–15.",
+      "learningObjective": "Compreender omissão e pacto.",
+      "evidence": [
+        "Josué 9:14–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual leitura une a Conquista neste trecho?",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lugar santo junto a Jericó"
+        },
+        {
+          "id": "b",
+          "text": "Derrota por prevaricação"
+        },
+        {
+          "id": "c",
+          "text": "Juramento sem consultar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Santo, derrota e juramento.",
+      "feedbackWrong": {
+        "default": "Comece pelo lugar santo."
+      },
+      "hint": "O que abre a conquista?",
+      "learningObjective": "Ordenar a sequência",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 7:1, complete: a ___ do Senhor se acendeu.",
+      "verseRef": "Josué 7:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "ira"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a ira do Senhor se acendeu",
+      "feedbackCorrect": "Ira.",
+      "feedbackWrong": {
+        "b": "Não é paz.",
+        "c": "A palavra é ira."
+      },
+      "hint": "Veja o sujeito.",
+      "learningObjective": "Lembrar a ira.",
+      "evidence": [
+        "Josué 7:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 5:15 a Êxodo 3:5?",
+      "verseRef": "Josué 5:15",
+      "passageA": {
+        "ref": "Josué 5:15"
+      },
+      "passageB": {
+        "ref": "Êxodo 3:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sandálias e chão santo"
+        },
+        {
+          "id": "b",
+          "text": "Maná no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Trombetas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Descalça as sandálias dos pés",
+      "feedbackCorrect": "Sandálias fora.",
+      "feedbackWrong": {
+        "b": "O elo é o lugar santo.",
+        "c": "Não é maná."
+      },
+      "hint": "Compare sandálias.",
+      "learningObjective": "Ligar a Moisés.",
+      "evidence": [
+        "Josué 5:15",
+        "Êxodo 3:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 5:15, toque a marca de causa.",
+      "verseRef": "Josué 5:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "sandálias"
+        },
+        {
+          "id": "c",
+          "text": "príncipe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o lugar em que estás é santo",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "Sandálias são o objeto.",
+        "c": "Príncipe fala."
+      },
+      "hint": "Procure a conjunção que introduz o motivo.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Josué 5:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o ritmo de Jericó.",
+      "verseRef": "Josué 6:10–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo cala até a ordem"
+        },
+        {
+          "id": "b",
+          "text": "Seis dias uma volta"
+        },
+        {
+          "id": "c",
+          "text": "Sétimo dia sete voltas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não gritem, nem façam ouvir a sua voz",
+      "feedbackCorrect": "Silêncio e ritmo.",
+      "feedbackWrong": {
+        "default": "Comece pelo silêncio."
+      },
+      "hint": "O que muda no sétimo?",
+      "learningObjective": "Ordenar o cerco",
+      "evidence": [
+        "Josué 6:10",
+        "Josué 6:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 9:14, não pedir conselho prova sabedoria madura.",
+      "verseRef": "Josué 9:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "É falha, não sabedoria.",
+      "feedbackWrong": {
+        "true": "Faltou consultar."
+      },
+      "hint": "Leia a negação.",
+      "learningObjective": "Avaliar a omissão.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 7:8, toque o trecho da fuga.",
+      "verseRef": "Josué 7:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "costas"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "direi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Israel virou as costas",
+      "feedbackCorrect": "Costas.",
+      "feedbackWrong": {
+        "b": "Senhor é a quem ora.",
+        "c": "Direi é a pergunta."
+      },
+      "hint": "Veja o que Israel fez.",
+      "learningObjective": "Tocar a fuga.",
+      "evidence": [
+        "Josué 7:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura melhor une vitória e queda neste bloco da Conquista?",
+      "verseRef": "Josué 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vitória e queda dependem de ouvir o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Vitória só por número"
+        },
+        {
+          "id": "c",
+          "text": "Consulta é opcional"
+        },
+        {
+          "id": "d",
+          "text": "A lei no Ebal é irrelevante"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não pediram conselho ao SENHOR",
+      "feedbackCorrect": "Ouvir vs omitir.",
+      "feedbackWrong": {
+        "b": "Há derrota por pecado.",
+        "c": "Consulta faltou.",
+        "d": "Há leitura da lei."
+      },
+      "hint": "Una Ai e Gibeão.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do ouvir.",
+      "verseRef": "Josué 7:1–9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prevaricação traz derrota"
+        },
+        {
+          "id": "b",
+          "text": "Lei lida no Ebal"
+        },
+        {
+          "id": "c",
+          "text": "Juramento sem consulta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "prevaricaram nas coisas consagradas",
+      "feedbackCorrect": "Derrota, lei e omissão.",
+      "feedbackWrong": {
+        "default": "Comece pela prevaricação."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Encadear ouvir e falhar",
+      "evidence": [
+        "Josué 7:1",
+        "Josué 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 5:15, complete: o lugar em que estás é ___.",
+      "verseRef": "Josué 5:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "santo"
+        },
+        {
+          "id": "b",
+          "text": "longe"
+        },
+        {
+          "id": "c",
+          "text": "fraco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o lugar em que estás é santo",
+      "feedbackCorrect": "Santo.",
+      "feedbackWrong": {
+        "b": "Não é longe.",
+        "c": "O adjetivo é santo."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar santo.",
+      "evidence": [
+        "Josué 5:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 6:15 a Hebreus 11:30?",
+      "verseRef": "Josué 6:15",
+      "passageA": {
+        "ref": "Josué 6:15"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:30"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Muros caem pela fé"
+        },
+        {
+          "id": "b",
+          "text": "Grito sem ordem"
+        },
+        {
+          "id": "c",
+          "text": "Arca abandonada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rodearam a cidade sete vezes",
+      "feedbackCorrect": "Marcha obediente.",
+      "feedbackWrong": {
+        "b": "Há fé e ordem.",
+        "c": "Arca no cerco."
+      },
+      "hint": "Pense em Jericó.",
+      "learningObjective": "Ligar a Hebreus.",
+      "evidence": [
+        "Josué 6:15",
+        "Hebreus 11:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 8:35, toque quem também ouve.",
+      "verseRef": "Josué 8:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "estrangeiros"
+        },
+        {
+          "id": "b",
+          "text": "Josué"
+        },
+        {
+          "id": "c",
+          "text": "palavra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os estrangeiros que se encontravam entre eles",
+      "feedbackCorrect": "Estrangeiros.",
+      "feedbackWrong": {
+        "b": "Josué lê.",
+        "c": "Palavra é o conteúdo."
+      },
+      "hint": "Veja o fim da lista.",
+      "learningObjective": "Tocar a inclusão.",
+      "evidence": [
+        "Josué 8:35"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene presença, juízo e lei.",
+      "verseRef": "Josué 5:15–8:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reverência no lugar santo"
+        },
+        {
+          "id": "b",
+          "text": "Confissão das costas viradas"
+        },
+        {
+          "id": "c",
+          "text": "Leitura de bênção e maldição"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o lugar em que estás é santo",
+      "feedbackCorrect": "Santo, confissão e lei.",
+      "feedbackWrong": {
+        "default": "Comece pelo santo."
+      },
+      "hint": "O que fecha com a lei?",
+      "learningObjective": "Encadear a Conquista",
+      "evidence": [
+        "Josué 5:15",
+        "Josué 8:34"
+      ]
+    }
+  ]
+}

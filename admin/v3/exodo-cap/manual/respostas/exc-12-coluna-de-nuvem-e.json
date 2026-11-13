@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Êxodo 13:17–22",
+    "passages": [
+      {
+        "ref": "Êxodo 13:17–22"
+      }
+    ],
+    "context": "Deus não leva Israel pelo caminho curto dos filisteus. Vai adiante em coluna de nuvem e de fogo.",
+    "keyword": "Coluna",
+    "keywordGloss": "Presença do Senhor que guia de dia e ilumina de noite.",
+    "focusQuestion": "Quando o caminho de Deus parece mais longo, como você responde?",
+    "reflectionPrompts": [
+      "Caminho mais longo",
+      "Nuvem e fogo",
+      "Nunca se afasta"
+    ],
+    "facts": [
+      {
+        "text": "Deus não conduziu o povo pelo caminho dos filisteus.",
+        "evidenceRef": "Êxodo 13:17",
+        "evidenceSpan": "não os conduziu pelo caminho da terra dos filisteus"
+      },
+      {
+        "text": "Temeu que o povo desanimasse ao ver a guerra.",
+        "evidenceRef": "Êxodo 13:17",
+        "evidenceSpan": "Para que o povo não desanime ao ver a guerra"
+      },
+      {
+        "text": "Deus fez o povo rodear pelo deserto rumo ao mar Vermelho.",
+        "evidenceRef": "Êxodo 13:18",
+        "evidenceSpan": "rodeasse o caminho pelo deserto"
+      },
+      {
+        "text": "O Senhor ia à frente em coluna de nuvem e de fogo.",
+        "evidenceRef": "Êxodo 13:21",
+        "evidenceSpan": "o Senhor ia à frente deles"
+      },
+      {
+        "text": "A nuvem e o fogo nunca se afastaram do povo.",
+        "evidenceRef": "Êxodo 13:22",
+        "evidenceSpan": "Nunca se afastou do povo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "coluna",
+        "gloss": "Forma visível da presença que guia e ilumina."
+      },
+      {
+        "term": "nuvem",
+        "gloss": "Guia diurna no caminho."
+      },
+      {
+        "term": "fogo",
+        "gloss": "Ilumina a noite para caminhar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Recusa do caminho curto",
+        "evidenceRef": "Êxodo 13:17"
+      },
+      {
+        "label": "Rota pelo deserto e ossos de José",
+        "evidenceRef": "Êxodo 13:18–19"
+      },
+      {
+        "label": "Acampamento em Etã",
+        "evidenceRef": "Êxodo 13:20"
+      },
+      {
+        "label": "Coluna de nuvem e de fogo",
+        "evidenceRef": "Êxodo 13:21–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Evitar o caminho curto para o povo não desanimar na guerra.",
+        "marker": "Para que",
+        "evidenceRef": "Êxodo 13:17"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não pelo caminho próximo, mas pelo deserto.",
+        "marker": "Mas",
+        "evidenceRef": "Êxodo 13:18"
+      },
+      {
+        "kind": "resultado",
+        "text": "Assim caminhavam de dia e de noite sob a coluna.",
+        "marker": "a fim de que",
+        "evidenceRef": "Êxodo 13:21"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Neemias 9:12",
+        "bridge": "Coluna guia o caminho"
+      },
+      {
+        "ref": "Salmos 78:14",
+        "bridge": "Nuvem e fogo"
+      },
+      {
+        "ref": "1 Coríntios 10:1",
+        "bridge": "Sob a nuvem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus escolheu o caminho mais curto.",
+        "why": "Ele evitiu o caminho próximo dos filisteus."
+      },
+      {
+        "text": "A coluna aparecia só de dia.",
+        "why": "Há nuvem de dia e fogo de noite."
+      },
+      {
+        "text": "A presença às vezes abandonava o povo.",
+        "why": "Nunca se afastou."
+      }
+    ],
+    "centralInsight": "O Senhor guia o caminho e não se afasta: nuvem de dia, fogo de noite.",
+    "anchorQuestion": "Como o Senhor ia à frente do povo no deserto?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Deus conduziu Israel pelo caminho mais próximo, a terra dos filisteus.",
+      "verseRef": "Êxodo 13:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "não os conduziu pelo caminho da terra dos filisteus",
+      "feedbackCorrect": "Ele evitou o caminho próximo.",
+      "feedbackWrong": {
+        "true": "Releia: não os conduziu por esse caminho."
+      },
+      "hint": "O texto diz \"não os conduziu\".",
+      "learningObjective": "Observar a escolha da rota.",
+      "evidence": [
+        "Êxodo 13:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 13:21, toque o que guiava o povo de dia.",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "coluna de nuvem"
+        },
+        {
+          "id": "b",
+          "text": "coluna de fogo"
+        },
+        {
+          "id": "c",
+          "text": "caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em uma coluna de nuvem, para guiá-los",
+      "feedbackCorrect": "De dia, coluna de nuvem para guiar.",
+      "feedbackWrong": {
+        "b": "Fogo é à noite; de dia é nuvem.",
+        "c": "Caminho é o que se guia; a forma é nuvem."
+      },
+      "hint": "Forma da presença de dia.",
+      "learningObjective": "Identificar a coluna diurna.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 13:17, por que Deus evitou o caminho dos filisteus?",
+      "verseRef": "Êxodo 13:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que o povo não desanime ao ver a guerra"
+        },
+        {
+          "id": "b",
+          "text": "Porque faltava comida"
+        },
+        {
+          "id": "c",
+          "text": "Porque Moisés pediu"
+        },
+        {
+          "id": "d",
+          "text": "Porque o mar estava fechado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que o povo não desanime ao ver a guerra",
+      "feedbackCorrect": "O motivo é evitar o desânimo diante da guerra.",
+      "feedbackWrong": {
+        "b": "Não é sobre comida aqui.",
+        "c": "A decisão é de Deus.",
+        "d": "Não é o motivo dado."
+      },
+      "hint": "Leia o \"Para que\".",
+      "learningObjective": "Observar o motivo da rota.",
+      "evidence": [
+        "Êxodo 13:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 13:21 na ordem do texto.",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "E o Senhor ia à frente deles, durante o dia, em uma coluna de nuvem"
+        },
+        {
+          "id": "b",
+          "text": "para guiá-los pelo caminho"
+        },
+        {
+          "id": "c",
+          "text": "e à noite, em uma coluna de fogo, para iluminá-los"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coluna de nuvem",
+      "feedbackCorrect": "Presença, guia e luz noturna.",
+      "feedbackWrong": {
+        "default": "Revise a ordem do texto."
+      },
+      "hint": "A noite vem depois do dia.",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 13:22, o que nunca se afastou do povo de dia?",
+      "verseRef": "Êxodo 13:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "nuvem"
+        },
+        {
+          "id": "b",
+          "text": "exército"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca se afastou do povo a nuvem durante o dia",
+      "feedbackCorrect": "A nuvem permanece de dia; o fogo, de noite.",
+      "feedbackWrong": {
+        "b": "Não é exército.",
+        "c": "Não é templo."
+      },
+      "hint": "O que fica de dia?",
+      "learningObjective": "Lembrar a constância da presença.",
+      "evidence": [
+        "Êxodo 13:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 13:21 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 13:21",
+      "passageA": {
+        "ref": "Êxodo 13:21"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus escolheu uma rota mais longa pelo deserto."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor guia na frente"
+        },
+        {
+          "id": "b",
+          "text": "Povo segue sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Coluna some à noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor ia à frente deles",
+      "feedbackCorrect": "Na rota longa, o Senhor mesmo guia.",
+      "feedbackWrong": {
+        "b": "Ele vai à frente.",
+        "c": "Há coluna de fogo à noite."
+      },
+      "hint": "Quem vai à frente?",
+      "learningObjective": "Ligar rota e presença.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 13:17, Deus evita o caminho curto para que o povo não desanime ao ver a guerra.",
+      "verseRef": "Êxodo 13:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "Para que o povo não desanime ao ver a guerra",
+      "feedbackCorrect": "O propósito é proteger a fé frágil do povo.",
+      "feedbackWrong": {
+        "false": "Releia o \"Para que\" no versículo."
+      },
+      "hint": "Motivo declarado por Deus.",
+      "learningObjective": "Compreender o propósito da rota.",
+      "evidence": [
+        "Êxodo 13:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 13:17, toque as palavras que marcam o propósito de Deus.",
+      "verseRef": "Êxodo 13:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "filisteus"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que o povo não desanime",
+      "feedbackCorrect": "\"Para que\" introduz o motivo.",
+      "feedbackWrong": {
+        "b": "Filisteus nomeiam o caminho.",
+        "c": "Egito é a origem."
+      },
+      "hint": "Começo da fala de Deus.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Êxodo 13:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 13:18 se relaciona com 13:17?",
+      "verseRef": "Êxodo 13:17–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em vez do caminho próximo, Deus leva pelo deserto"
+        },
+        {
+          "id": "b",
+          "text": "Deus desiste de guiar o povo"
+        },
+        {
+          "id": "c",
+          "text": "O povo volta ao Egito na hora"
+        },
+        {
+          "id": "d",
+          "text": "Os filisteus guiam Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas Deus fez com que o povo rodeasse o caminho pelo deserto",
+      "feedbackCorrect": "O \"Mas\" introduz a rota alternativa.",
+      "feedbackWrong": {
+        "b": "Ele continua guiando.",
+        "c": "Ainda não.",
+        "d": "Deus guia, não os filisteus."
+      },
+      "hint": "Leia o \"Mas\" de 13:18.",
+      "learningObjective": "Relacionar recusa e nova rota.",
+      "evidence": [
+        "Êxodo 13:17",
+        "Êxodo 13:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 13:17–22?",
+      "verseRef": "Êxodo 13:17–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus evita o caminho da guerra"
+        },
+        {
+          "id": "b",
+          "text": "Leva o povo pelo deserto"
+        },
+        {
+          "id": "c",
+          "text": "A coluna guia dia e noite"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não os conduziu pelo caminho",
+      "feedbackCorrect": "Proteção, rota e presença contínua.",
+      "feedbackWrong": {
+        "default": "Revise a ordem do texto."
+      },
+      "hint": "A presença fecha a cena.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "Êxodo 13:17",
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 13:21, o que iluminava o povo à noite?",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "fogo"
+        },
+        {
+          "id": "b",
+          "text": "lua"
+        },
+        {
+          "id": "c",
+          "text": "tochas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coluna de fogo, para iluminá-los",
+      "feedbackCorrect": "À noite, coluna de fogo.",
+      "feedbackWrong": {
+        "b": "O texto diz fogo.",
+        "c": "Não são tochas humanas."
+      },
+      "hint": "Coluna de ___.",
+      "learningObjective": "Lembrar a luz noturna.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 13:21 a Neemias 9:12?",
+      "verseRef": "Êxodo 13:21",
+      "passageA": {
+        "ref": "Êxodo 13:21"
+      },
+      "passageB": {
+        "ref": "Neemias 9:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coluna guia o caminho"
+        },
+        {
+          "id": "b",
+          "text": "Construção do muro"
+        },
+        {
+          "id": "c",
+          "text": "Lista de inimigos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para guiá-los pelo caminho",
+      "feedbackCorrect": "Neemias lembra a mesma guia.",
+      "feedbackWrong": {
+        "b": "Não é o tema deste elo.",
+        "c": "Não."
+      },
+      "hint": "Como Deus guiava?",
+      "learningObjective": "Relacionar Êxodo e Neemias.",
+      "evidence": [
+        "Êxodo 13:21",
+        "Neemias 9:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 13:17–22 ensina que o Senhor abandona o povo quando a rota fica longa.",
+      "verseRef": "Êxodo 13:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Nunca se afastou do povo",
+      "feedbackCorrect": "A rota longa vem com presença constante.",
+      "feedbackWrong": {
+        "true": "Releia: nunca se afastou do povo."
+      },
+      "hint": "Leia 13:22.",
+      "learningObjective": "Interpretar guia e presença.",
+      "evidence": [
+        "Êxodo 13:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 13:22, toque o trecho que mostra a constância da presença.",
+      "verseRef": "Êxodo 13:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nunca se afastou"
+        },
+        {
+          "id": "b",
+          "text": "durante a noite"
+        },
+        {
+          "id": "c",
+          "text": "coluna de fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca se afastou do povo",
+      "feedbackCorrect": "A frase-chave é: nunca se afastou.",
+      "feedbackWrong": {
+        "b": "Indica o tempo; a constância é nunca se afastou.",
+        "c": "Nomeia a forma; a constância é a frase."
+      },
+      "hint": "Começo do versículo.",
+      "learningObjective": "Sustentar a presença contínua.",
+      "evidence": [
+        "Êxodo 13:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 13:17–22 sustenta sobre a guia de Deus?",
+      "verseRef": "Êxodo 13:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus protege, guia e não abandona no caminho"
+        },
+        {
+          "id": "b",
+          "text": "A coluna só aparece em dias de festa"
+        },
+        {
+          "id": "c",
+          "text": "O povo escolhe sozinho a rota"
+        },
+        {
+          "id": "d",
+          "text": "Deus prefere sempre o caminho curto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca se afastou do povo",
+      "feedbackCorrect": "Evita a guerra, guia e permanece.",
+      "feedbackWrong": {
+        "b": "É contínua dia e noite.",
+        "c": "Deus conduz.",
+        "d": "Ele evita o caminho próximo."
+      },
+      "hint": "Una 13:17 e 13:22.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Êxodo 13:17",
+        "Êxodo 13:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da coluna?",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor guia com nuvem e fogo"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo lembra a mesma guia"
+        },
+        {
+          "id": "c",
+          "text": "Paulo diz que os pais estiveram sob a nuvem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "coluna de nuvem",
+      "feedbackCorrect": "Do Êxodo ao Salmo e a Paulo.",
+      "feedbackWrong": {
+        "default": "Revise a ordem do texto."
+      },
+      "hint": "Ordem da história bíblica.",
+      "learningObjective": "Ver a coluna na Escritura.",
+      "evidence": [
+        "Êxodo 13:21",
+        "Salmos 78:14",
+        "1 Coríntios 10:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 13:21, em que o Senhor ia à frente de dia?",
+      "verseRef": "Êxodo 13:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "coluna"
+        },
+        {
+          "id": "b",
+          "text": "carro"
+        },
+        {
+          "id": "c",
+          "text": "barco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em uma coluna de nuvem",
+      "feedbackCorrect": "O termo da presença é coluna.",
+      "feedbackWrong": {
+        "b": "Não é carro.",
+        "c": "Não é barco."
+      },
+      "hint": "Forma da presença.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "Êxodo 13:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 13:21 a 1 Coríntios 10:1?",
+      "verseRef": "Êxodo 13:21",
+      "passageA": {
+        "ref": "Êxodo 13:21"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 10:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sob a nuvem"
+        },
+        {
+          "id": "b",
+          "text": "Lista de reis"
+        },
+        {
+          "id": "c",
+          "text": "Construção do altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coluna de nuvem",
+      "feedbackCorrect": "Paulo lembra os pais sob a nuvem.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Imagem comum.",
+      "learningObjective": "Ligar Êxodo e Paulo.",
+      "evidence": [
+        "Êxodo 13:21",
+        "1 Coríntios 10:1"
+      ]
+    }
+  ]
+}

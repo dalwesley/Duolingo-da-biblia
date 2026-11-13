@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 24:3–8",
+    "passages": [
+      {
+        "ref": "Êxodo 24:3–11"
+      }
+    ],
+    "context": "O povo promete fazer tudo. Moisés asperge o sangue da aliança; depois sobem e veem a Deus, e comem e bebem.",
+    "keyword": "Aliança",
+    "keywordGloss": "Pacto selado com sangue entre o Senhor e o povo.",
+    "focusQuestion": "O que significa para você um compromisso selado diante de Deus?",
+    "reflectionPrompts": [
+      "Faremos tudo",
+      "Sangue aspergido",
+      "Ver e comer"
+    ],
+    "facts": [
+      {
+        "text": "O povo respondeu: faremos tudo o que o Senhor disse.",
+        "evidenceRef": "Êxodo 24:3",
+        "evidenceSpan": "Faremos tudo o que o Senhor disse"
+      },
+      {
+        "text": "Moisés escreveu as palavras e erigiu altar e doze colunas.",
+        "evidenceRef": "Êxodo 24:4",
+        "evidenceSpan": "erigiu um altar ao pé do monte, e doze colunas"
+      },
+      {
+        "text": "Metade do sangue foi aspergida sobre o altar.",
+        "evidenceRef": "Êxodo 24:6",
+        "evidenceSpan": "a outra metade ele aspergiu sobre o altar"
+      },
+      {
+        "text": "Moisés chamou aquilo de sangue da aliança.",
+        "evidenceRef": "Êxodo 24:8",
+        "evidenceSpan": "Eis aqui o sangue da aliança"
+      },
+      {
+        "text": "Eles viram a Deus e comeram e beberam.",
+        "evidenceRef": "Êxodo 24:11",
+        "evidenceSpan": "eles viram a Deus e comeram e beberam"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "aliança",
+        "gloss": "Pacto selado com sangue e palavra."
+      },
+      {
+        "term": "sangue",
+        "gloss": "Sinal que Moisés asperge sobre o povo."
+      },
+      {
+        "term": "altar",
+        "gloss": "Lugar onde metade do sangue é aspergida."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Povo promete fazer tudo",
+        "evidenceRef": "Êxodo 24:3"
+      },
+      {
+        "label": "Altar, colunas e sacrifícios",
+        "evidenceRef": "Êxodo 24:4–5"
+      },
+      {
+        "label": "Livro lido; sangue aspergido",
+        "evidenceRef": "Êxodo 24:6–8"
+      },
+      {
+        "label": "Veem a Deus e comem",
+        "evidenceRef": "Êxodo 24:9–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois da promessa, Moisés escreve e ergue o altar.",
+        "marker": null,
+        "evidenceRef": "Êxodo 24:3–4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O sangue aspergido é declarado sangue da aliança.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 24:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deus não estende a mão; porém eles veem e comem.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 24:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 9:19–20",
+        "bridge": "Sangue da aliança"
+      },
+      {
+        "ref": "Mateus 26:28",
+        "bridge": "Novo sangue da aliança"
+      },
+      {
+        "ref": "1 Pedro 1:18–19",
+        "bridge": "Sangue precioso"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A aliança foi só palavras, sem sangue.",
+        "why": "Moisés asperge o sangue e o nomeia sangue da aliança."
+      },
+      {
+        "text": "Eles não viram a Deus de modo algum.",
+        "why": "O texto diz que viram a Deus e comeram."
+      },
+      {
+        "text": "O povo recusou fazer o que o Senhor disse.",
+        "why": "Responderam: faremos tudo."
+      }
+    ],
+    "centralInsight": "A aliança se sela com sangue, e eles veem a Deus e comem e bebem.",
+    "anchorQuestion": "O que Moisés chamou o sangue aspergido sobre o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O povo respondeu que faria tudo o que o Senhor disse.",
+      "verseRef": "Êxodo 24:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Faremos tudo o que o Senhor disse",
+      "feedbackCorrect": "A resposta uníssona é: faremos tudo.",
+      "feedbackWrong": {
+        "false": "Releia a resposta do povo."
+      },
+      "hint": "Veja a resposta em uníssono.",
+      "learningObjective": "Observar a promessa do povo.",
+      "evidence": [
+        "Êxodo 24:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 24:8, toque o termo que nomeia o sangue aspergido.",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "palavras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "É o sangue da aliança.",
+      "feedbackWrong": {
+        "b": "\"povo\" recebe o sangue; o nome é aliança.",
+        "c": "\"palavras\" fecham o verso; o nome é aliança."
+      },
+      "hint": "Veja o nome dado ao sangue.",
+      "learningObjective": "Identificar a aliança.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 24:6, onde Moisés aspergiu metade do sangue?",
+      "verseRef": "Êxodo 24:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sobre o altar"
+        },
+        {
+          "id": "b",
+          "text": "No Nilo"
+        },
+        {
+          "id": "c",
+          "text": "Nas tendas"
+        },
+        {
+          "id": "d",
+          "text": "No deserto de Sin"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a outra metade ele aspergiu sobre o altar",
+      "feedbackCorrect": "Metade foi aspergida sobre o altar.",
+      "feedbackWrong": {
+        "b": "Não é o Nilo.",
+        "c": "O texto aponta o altar.",
+        "d": "O lugar é o altar."
+      },
+      "hint": "Leia o destino da outra metade.",
+      "learningObjective": "Observar o ritual do sangue.",
+      "evidence": [
+        "Êxodo 24:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 24:8 na ordem do texto.",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, Moisés tomou aquele sangue"
+        },
+        {
+          "id": "b",
+          "text": "e o aspergiu sobre o povo"
+        },
+        {
+          "id": "c",
+          "text": "e disse: Eis aqui o sangue da aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Tomar, aspergir e declarar na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece por Então, Moisés tomou."
+      },
+      "hint": "O versículo começa com Então.",
+      "learningObjective": "Reconhecer a ordem de 24:8.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 24:6, sobre o que Moisés aspergiu metade do sangue?",
+      "verseRef": "Êxodo 24:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "altar"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aspergiu sobre o altar",
+      "feedbackCorrect": "Aspergiu sobre o altar.",
+      "feedbackWrong": {
+        "b": "Não é trono.",
+        "c": "O texto diz altar."
+      },
+      "hint": "Veja o objeto da aspersão.",
+      "learningObjective": "Lembrar o altar.",
+      "evidence": [
+        "Êxodo 24:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 24:8 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 24:8",
+      "passageA": {
+        "ref": "Êxodo 24:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A aliança com o Senhor se sela com palavra e sangue."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue sela a aliança"
+        },
+        {
+          "id": "b",
+          "text": "Fuga do monte"
+        },
+        {
+          "id": "c",
+          "text": "Bezerro de ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "O sangue aspergido sela a aliança.",
+      "feedbackWrong": {
+        "b": "O texto sela, não foge.",
+        "c": "O bezerro não está nesta cena."
+      },
+      "hint": "Compare o gesto e o nome dado.",
+      "learningObjective": "Ligar sangue e pacto.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 24:8, Moisés asperge o sangue e o chama sangue da aliança.",
+      "verseRef": "Êxodo 24:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eis aqui o sangue da aliança que o SENHOR fez",
+      "feedbackCorrect": "Aspersão e declaração vão juntas.",
+      "feedbackWrong": {
+        "false": "Releia a declaração de Moisés."
+      },
+      "hint": "Veja o que ele diz ao aspergir.",
+      "learningObjective": "Compreender o gesto da aliança.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 24:11, toque a palavra que marca o contraste com a mão não estendida.",
+      "verseRef": "Êxodo 24:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "mão"
+        },
+        {
+          "id": "c",
+          "text": "escolhidos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, eles viram a Deus e comeram e beberam",
+      "feedbackCorrect": "\"Porém\" introduz o ver e comer sob graça.",
+      "feedbackWrong": {
+        "b": "\"mão\" é o que não se estendeu; o contraste é porém.",
+        "c": "\"escolhidos\" são quem; o marcador é porém."
+      },
+      "hint": "Procure a palavra após Israel.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 24:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 24:3 e 24:7 ligam a palavra ouvida à resposta do povo?",
+      "verseRef": "Êxodo 24:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouviram e prometeram fazer e obedecer"
+        },
+        {
+          "id": "b",
+          "text": "Ouviram e recusaram a aliança"
+        },
+        {
+          "id": "c",
+          "text": "Ouviram e pediram outro deus"
+        },
+        {
+          "id": "d",
+          "text": "Ouviram e fugiram do monte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Faremos tudo o que o Senhor disse",
+      "feedbackCorrect": "A resposta é fazer e obedecer.",
+      "feedbackWrong": {
+        "b": "O povo aceita.",
+        "c": "Não pedem outro deus aqui.",
+        "d": "Não há fuga neste trecho."
+      },
+      "hint": "Compare as duas respostas do povo.",
+      "learningObjective": "Relacionar palavra e obediência.",
+      "evidence": [
+        "Êxodo 24:3",
+        "Êxodo 24:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena da aliança em Êxodo 24:3–11?",
+      "verseRef": "Êxodo 24:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo promete fazer tudo"
+        },
+        {
+          "id": "b",
+          "text": "O sangue é aspergido e nomeado"
+        },
+        {
+          "id": "c",
+          "text": "Eles veem a Deus e comem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Faremos tudo o que o Senhor disse",
+      "feedbackCorrect": "Promessa, sangue e comunhão.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa do povo."
+      },
+      "hint": "Siga promessa, sangue e visão.",
+      "learningObjective": "Compreender o movimento da aliança.",
+      "evidence": [
+        "Êxodo 24:3",
+        "Êxodo 24:8",
+        "Êxodo 24:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 24:11, que verbo mostra o que eles fizeram ao ver a Deus?",
+      "verseRef": "Êxodo 24:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "viram"
+        },
+        {
+          "id": "b",
+          "text": "fugiram"
+        },
+        {
+          "id": "c",
+          "text": "dormiram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles viram a Deus e comeram e beberam",
+      "feedbackCorrect": "Eles viram a Deus — e comeram e beberam.",
+      "feedbackWrong": {
+        "b": "Não fugiram; viram.",
+        "c": "O verbo é viram."
+      },
+      "hint": "Veja o primeiro verbo após porém.",
+      "learningObjective": "Lembrar o verbo da visão.",
+      "evidence": [
+        "Êxodo 24:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 24:8 a Hebreus 9:19–20?",
+      "verseRef": "Êxodo 24:8",
+      "passageA": {
+        "ref": "Êxodo 24:8"
+      },
+      "passageB": {
+        "ref": "Hebreus 9:19–20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue da aliança"
+        },
+        {
+          "id": "b",
+          "text": "Maná no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Coluna de nuvem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Hebreus retoma o sangue da aliança de Moisés.",
+      "feedbackWrong": {
+        "b": "O elo é o sangue.",
+        "c": "A coluna não é o tema."
+      },
+      "hint": "Compare a frase sobre o sangue.",
+      "learningObjective": "Relacionar Êxodo e Hebreus.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Hebreus 9:19–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 24:3–11 sustenta que a aliança fica só em palavras, sem sangue nem comunhão.",
+      "verseRef": "Êxodo 24:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Há sangue aspergido e também ver, comer e beber.",
+      "feedbackWrong": {
+        "true": "O texto une sangue da aliança e comunhão."
+      },
+      "hint": "Veja sangue e o fim da cena.",
+      "learningObjective": "Interpretar a aliança selada.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Êxodo 24:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 24:11, toque o trecho que sustenta a comunhão após ver a Deus.",
+      "verseRef": "Êxodo 24:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "comeram"
+        },
+        {
+          "id": "b",
+          "text": "mão"
+        },
+        {
+          "id": "c",
+          "text": "escolhidos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles viram a Deus e comeram e beberam",
+      "feedbackCorrect": "Ver a Deus vem com comer e beber.",
+      "feedbackWrong": {
+        "b": "A mão não se estendeu; a comunhão é comeram.",
+        "c": "\"escolhidos\" são quem; o trecho é comeram."
+      },
+      "hint": "Veja o que fizeram depois de ver.",
+      "learningObjective": "Sustentar a leitura da comunhão.",
+      "evidence": [
+        "Êxodo 24:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 24:3–11 sustenta sobre a aliança?",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra, sangue e comunhão selam o pacto"
+        },
+        {
+          "id": "b",
+          "text": "Só bastava a promessa verbal"
+        },
+        {
+          "id": "c",
+          "text": "Deus feriu os anciãos no monte"
+        },
+        {
+          "id": "d",
+          "text": "O sangue não tem nome especial"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Promessa, sangue e refeição perante Deus.",
+      "feedbackWrong": {
+        "b": "Há sangue e comunhão.",
+        "c": "Deus não estendeu a mão sobre eles.",
+        "d": "É chamado sangue da aliança."
+      },
+      "hint": "Una promessa, aspersão e refeição.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o sangue da aliança à Escritura?",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés declara o sangue da aliança"
+        },
+        {
+          "id": "b",
+          "text": "Hebreus retoma a aspersão de Moisés"
+        },
+        {
+          "id": "c",
+          "text": "Jesus fala do sangue da nova aliança"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Do Sinai a Hebreus e à ceia de Jesus.",
+      "feedbackWrong": {
+        "default": "Comece por Moisés; depois Hebreus e Jesus."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver o sangue ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Hebreus 9:19–20",
+        "Mateus 26:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 24:8, que termo carrega o sentido do pacto selado?",
+      "verseRef": "Êxodo 24:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "sangue"
+        },
+        {
+          "id": "b",
+          "text": "areia"
+        },
+        {
+          "id": "c",
+          "text": "vento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "O sangue carrega o selo da aliança.",
+      "feedbackWrong": {
+        "b": "Não é areia.",
+        "c": "O termo é sangue."
+      },
+      "hint": "Veja o que Moisés apresenta.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "Êxodo 24:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 24:8 a Mateus 26:28?",
+      "verseRef": "Êxodo 24:8",
+      "passageA": {
+        "ref": "Êxodo 24:8"
+      },
+      "passageB": {
+        "ref": "Mateus 26:28"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sangue da aliança"
+        },
+        {
+          "id": "b",
+          "text": "Água da rocha"
+        },
+        {
+          "id": "c",
+          "text": "Pão do céu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui o sangue da aliança",
+      "feedbackCorrect": "Jesus retoma a linguagem do sangue da aliança.",
+      "feedbackWrong": {
+        "b": "O elo é o sangue.",
+        "c": "O pão não é o tema deste elo."
+      },
+      "hint": "Compare a frase sobre o sangue.",
+      "learningObjective": "Ligar Sinai e a ceia.",
+      "evidence": [
+        "Êxodo 24:8",
+        "Mateus 26:28"
+      ]
+    }
+  ]
+}

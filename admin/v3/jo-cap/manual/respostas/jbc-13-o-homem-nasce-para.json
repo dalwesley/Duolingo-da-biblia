@@ -1,0 +1,722 @@
+{
+ "study": {
+  "passageRef": "Jó 14:1–6",
+  "passages": [
+   {
+    "ref": "Jó 14:1–12"
+   }
+  ],
+  "context": "Jó contempla a brevidade da vida humana. Compara o homem à flor que murcha e pergunta se os mortos tornarão a viver.",
+  "keyword": "esperança",
+  "keywordGloss": "O que há para a árvore cortada — e o que Jó pergunta sobre o homem.",
+  "focusQuestion": "Diante da mortalidade, que pergunta de esperança você ainda ergue a Deus?",
+  "reflectionPrompts": [
+   "Vida breve",
+   "Árvore e homem",
+   "Sono da morte"
+  ],
+  "facts": [
+   {
+    "text": "O homem nascido de mulher tem vida breve e repleta de inquietações.",
+    "evidenceRef": "Jó 14:1",
+    "evidenceSpan": "tem uma vida breve e está repleto de inquietações"
+   },
+   {
+    "text": "Nasce como a flor e murcha; foge como a sombra.",
+    "evidenceRef": "Jó 14:2",
+    "evidenceSpan": "Nasce como a flor e murcha"
+   },
+   {
+    "text": "Ninguém pode fazer surgir o puro do impuro.",
+    "evidenceRef": "Jó 14:4",
+    "evidenceSpan": "Quem pode fazer surgir o puro do impuro? Ninguém!"
+   },
+   {
+    "text": "Os dias do homem estão contados e ele não ultrapassará os limites.",
+    "evidenceRef": "Jó 14:5",
+    "evidenceSpan": "os seus dias estão contados"
+   },
+   {
+    "text": "Há esperança para a árvore: se for cortada, ainda se renovará.",
+    "evidenceRef": "Jó 14:7",
+    "evidenceSpan": "há esperança para a árvore"
+   },
+   {
+    "text": "O homem se deita e não se levanta enquanto houver céus.",
+    "evidenceRef": "Jó 14:12",
+    "evidenceSpan": "o homem se deita e não se levanta"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "esperança",
+    "gloss": "O que a árvore tem ao ser cortada — e o que falta ao contraste com o homem."
+   },
+   {
+    "term": "flor",
+    "gloss": "Imagem da vida humana que nasce e murcha."
+   },
+   {
+    "term": "limites",
+    "gloss": "O que Deus estabeleceu e o homem não ultrapassa."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A vida breve como flor e sombra",
+    "evidenceRef": "Jó 14:1–2"
+   },
+   {
+    "label": "Juízo, impureza e limites dos dias",
+    "evidenceRef": "Jó 14:3–6"
+   },
+   {
+    "label": "Esperança da árvore cortada",
+    "evidenceRef": "Jó 14:7–9"
+   },
+   {
+    "label": "O homem que se deita e não se levanta",
+    "evidenceRef": "Jó 14:10–12"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Há esperança para a árvore; o homem morre e pergunta para onde irá.",
+    "marker": "Porque",
+    "evidenceRef": "Jó 14:7"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao sentir o cheiro das águas, a árvore brotará de novo.",
+    "marker": "Ao",
+    "evidenceRef": "Jó 14:9"
+   },
+   {
+    "kind": "sequência",
+    "text": "Assim como o lago evapora, assim o homem se deita e não se levanta.",
+    "marker": "Assim",
+    "evidenceRef": "Jó 14:12"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 90:10",
+    "bridge": "Anos breves e trabalhosos"
+   },
+   {
+    "ref": "1 Coríntios 15:42–44",
+    "bridge": "Ressurreição do corpo"
+   },
+   {
+    "ref": "João 11:25",
+    "bridge": "Eu sou a ressurreição"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó nega qualquer possibilidade de vida além da morte.",
+    "why": "Ele ergue a pergunta \"para onde irá?\" e contrapõe a esperança da árvore — a pergunta fica aberta."
+   },
+   {
+    "text": "A vida breve prova que Deus não estabeleceu limites.",
+    "why": "Jó 14:5 afirma que Deus estabeleceu limites que o homem não ultrapassa."
+   },
+   {
+    "text": "A árvore e o homem têm a mesma esperança automática.",
+    "why": "O texto contrastam: a árvore se renova; o homem se deita e não se levanta."
+   }
+  ],
+  "centralInsight": "No chão da mortalidade, Jó ainda ergue a pergunta da esperança além da sepultura.",
+  "anchorQuestion": "Que contraste Jó faz entre a árvore e o homem em Jó 14:7–12?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 14:1, Jó diz que o homem nascido de mulher tem vida longa e sem inquietações.",
+   "verseRef": "Jó 14:1",
+   "correctOptionId": "false",
+   "evidenceSpan": "tem uma vida breve e está repleto de inquietações",
+   "feedbackCorrect": "O texto fala de vida breve e repleta de inquietações.",
+   "feedbackWrong": {
+    "true": "Releia 14:1: vida breve e repleta de inquietações."
+   },
+   "hint": "Veja como ele descreve a vida humana.",
+   "learningObjective": "Observar a descrição da vida breve.",
+   "evidence": [
+    "Jó 14:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 14:2, toque a imagem com que Jó compara o nascimento do homem.",
+   "verseRef": "Jó 14:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "flor"
+    },
+    {
+     "id": "b",
+     "text": "sombra"
+    },
+    {
+     "id": "c",
+     "text": "murcha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Nasce como a flor e murcha",
+   "feedbackCorrect": "Jó compara o nascimento à flor que murcha.",
+   "feedbackWrong": {
+    "b": "A sombra é a imagem da fuga, não do nascimento.",
+    "c": "Murcha é o que a flor faz depois, não a imagem do nascer."
+   },
+   "hint": "Procure a comparação do nascimento.",
+   "learningObjective": "Identificar a imagem da flor.",
+   "evidence": [
+    "Jó 14:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 14:7, o que há para a árvore se for cortada?",
+   "verseRef": "Jó 14:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nenhuma chance de renovação"
+    },
+    {
+     "id": "b",
+     "text": "Esperança de ainda se renovar"
+    },
+    {
+     "id": "c",
+     "text": "Transformação imediata em homem"
+    },
+    {
+     "id": "d",
+     "text": "Fim absoluto sem rebentos"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "há esperança para a árvore",
+   "feedbackCorrect": "Mesmo cortada, a árvore ainda pode renovar-se e brotar.",
+   "feedbackWrong": {
+    "a": "O texto afirma esperança.",
+    "c": "Não há transformação em homem.",
+    "d": "Os rebentos não cessam."
+   },
+   "hint": "Leia o começo do versículo.",
+   "learningObjective": "Observar a esperança da árvore.",
+   "evidence": [
+    "Jó 14:7"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 14:2 na ordem do texto.",
+   "verseRef": "Jó 14:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "Nasce como a flor e murcha"
+    },
+    {
+     "id": "b",
+     "text": "foge como a sombra"
+    },
+    {
+     "id": "c",
+     "text": "e não permanece"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Nasce como a flor e murcha",
+   "feedbackCorrect": "Flor que murcha, sombra que foge, e nada permanece.",
+   "feedbackWrong": {
+    "default": "Comece pela flor; o não permanecer fecha o verso."
+   },
+   "hint": "O versículo começa com \"Nasce\".",
+   "learningObjective": "Seguir a sequência de Jó 14:2.",
+   "evidence": [
+    "Jó 14:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 14:1, como é a vida do homem nascido de mulher?",
+   "verseRef": "Jó 14:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "eterna"
+    },
+    {
+     "id": "b",
+     "text": "breve"
+    },
+    {
+     "id": "c",
+     "text": "fácil"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "tem uma vida breve",
+   "feedbackCorrect": "Vida breve e repleta de inquietações: o chão do lamento.",
+   "feedbackWrong": {
+    "a": "Ele não fala de vida eterna aqui.",
+    "c": "Há inquietações, não facilidade."
+   },
+   "hint": "Adjetivo da vida no meio do verso.",
+   "learningObjective": "Lembrar a brevidade da vida.",
+   "evidence": [
+    "Jó 14:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 14:1 comunica que se liga a este contexto?",
+   "verseRef": "Jó 14:1",
+   "passageA": {
+    "ref": "Jó 14:1",
+    "text": "tem uma vida breve e está repleto de inquietações"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Jó contempla a mortalidade humana diante de Deus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Vida sem fim aqui"
+    },
+    {
+     "id": "b",
+     "text": "Mortalidade inquieta"
+    },
+    {
+     "id": "c",
+     "text": "Homem sem origem"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "tem uma vida breve e está repleto de inquietações",
+   "feedbackCorrect": "Brevidade e inquietação: o chão de onde nasce a pergunta da esperança.",
+   "feedbackWrong": {
+    "a": "O texto fala de vida breve.",
+    "c": "Ele nasce de mulher; tem origem."
+   },
+   "hint": "Una brevidade e inquietações.",
+   "learningObjective": "Ligar o versículo à mortalidade.",
+   "evidence": [
+    "Jó 14:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 14:7–10, Jó apresenta a árvore e o homem com a mesma esperança automática de renovação.",
+   "verseRef": "Jó 14:7–10",
+   "correctOptionId": "false",
+   "evidenceSpan": "há esperança para a árvore",
+   "feedbackCorrect": "A árvore tem esperança de renovar-se; o homem morre e pergunta para onde irá.",
+   "feedbackWrong": {
+    "true": "Releia o contraste: esperança da árvore versus a pergunta sobre o homem."
+   },
+   "hint": "Compare 14:7 com 14:10.",
+   "learningObjective": "Compreender o contraste árvore–homem.",
+   "evidence": [
+    "Jó 14:7",
+    "Jó 14:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 14:7, toque a palavra que marca a razão da esperança da árvore.",
+   "verseRef": "Jó 14:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porque"
+    },
+    {
+     "id": "b",
+     "text": "árvore"
+    },
+    {
+     "id": "c",
+     "text": "rebentos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porque há esperança para a árvore",
+   "feedbackCorrect": "\"Porque\" introduz a razão do contraste com o homem.",
+   "feedbackWrong": {
+    "b": "\"Árvore\" é o sujeito, não o marcador.",
+    "c": "\"Rebentos\" é o resultado da renovação."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de causa.",
+   "evidence": [
+    "Jó 14:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 14:7–10 relaciona a árvore e o homem?",
+   "verseRef": "Jó 14:7–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "A árvore pode renovar-se; o homem morre e a pergunta fica aberta"
+    },
+    {
+     "id": "b",
+     "text": "Homem e árvore renascem do mesmo modo"
+    },
+    {
+     "id": "c",
+     "text": "A árvore não tem nenhuma esperança"
+    },
+    {
+     "id": "d",
+     "text": "O homem ultrapassa todos os limites de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quando o homem morre, fica prostrado",
+   "feedbackCorrect": "O contraste prepara a pergunta da esperança além da sepultura.",
+   "feedbackWrong": {
+    "b": "O texto contrapõe os dois.",
+    "c": "Há esperança para a árvore.",
+    "d": "14:5 diz que ele não ultrapassa os limites."
+   },
+   "hint": "Compare o fim da árvore com o do homem.",
+   "learningObjective": "Relacionar esperança vegetal e mortalidade humana.",
+   "evidence": [
+    "Jó 14:7",
+    "Jó 14:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o contraste em Jó 14:7–10?",
+   "verseRef": "Jó 14:7–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "A árvore cortada ainda pode renovar-se"
+    },
+    {
+     "id": "b",
+     "text": "Com água, ela brota como planta nova"
+    },
+    {
+     "id": "c",
+     "text": "O homem morre e pergunta para onde irá"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "há esperança para a árvore",
+   "feedbackCorrect": "Da esperança da árvore ao brotar e, enfim, à pergunta sobre o homem.",
+   "feedbackWrong": {
+    "default": "A pergunta sobre o homem fecha o contraste."
+   },
+   "hint": "O homem vem depois da árvore.",
+   "learningObjective": "Compreender o movimento do contraste.",
+   "evidence": [
+    "Jó 14:7",
+    "Jó 14:9",
+    "Jó 14:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 14:7, o que há para a árvore mesmo cortada?",
+   "verseRef": "Jó 14:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "ódio"
+    },
+    {
+     "id": "b",
+     "text": "esperança"
+    },
+    {
+     "id": "c",
+     "text": "medo"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "há esperança para a árvore",
+   "feedbackCorrect": "Esperança: a palavra que prepara o contraste com o homem.",
+   "feedbackWrong": {
+    "a": "Não há ódio no versículo.",
+    "c": "A palavra é de renovação, não de medo."
+   },
+   "hint": "O que \"há\" para a árvore.",
+   "learningObjective": "Lembrar a palavra do contraste.",
+   "evidence": [
+    "Jó 14:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 14:1–2 a Salmos 90:10?",
+   "verseRef": "Jó 14:1–2",
+   "passageA": {
+    "ref": "Jó 14:1",
+    "text": "tem uma vida breve e está repleto de inquietações"
+   },
+   "passageB": {
+    "ref": "Salmos 90:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Anos breves e trabalhosos"
+    },
+    {
+     "id": "b",
+     "text": "Vida eterna na terra"
+    },
+    {
+     "id": "c",
+     "text": "Homem sem limites"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "tem uma vida breve e está repleto de inquietações",
+   "feedbackCorrect": "Os dois textos contemplam a brevidade trabalhosa da vida humana.",
+   "feedbackWrong": {
+    "b": "Ambos falam de brevidade.",
+    "c": "Jó 14:5 afirma limites."
+   },
+   "hint": "Compare a medida dos anos.",
+   "learningObjective": "Cruzar a brevidade em Jó e no salmo.",
+   "evidence": [
+    "Jó 14:1",
+    "Salmos 90:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 14:7–12, Jó ergue a pergunta da esperança humana a partir do contraste com a árvore que se renova.",
+   "verseRef": "Jó 14:7–12",
+   "correctOptionId": "true",
+   "evidenceSpan": "há esperança para a árvore",
+   "feedbackCorrect": "A árvore que brota torna mais aguda a pergunta sobre o homem que se deita.",
+   "feedbackWrong": {
+    "false": "O contraste com a árvore prepara a pergunta sobre o destino humano."
+   },
+   "hint": "Una a esperança da árvore com 14:10–12.",
+   "learningObjective": "Interpretar o contraste como pergunta de esperança.",
+   "evidence": [
+    "Jó 14:7",
+    "Jó 14:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 14:10, toque o trecho que sustenta a pergunta aberta sobre o morto.",
+   "verseRef": "Jó 14:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "prostrado"
+    },
+    {
+     "id": "b",
+     "text": "para onde irá"
+    },
+    {
+     "id": "c",
+     "text": "expirar"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ao expirar, para onde irá?",
+   "feedbackCorrect": "\"Para onde irá?\" deixa a esperança como pergunta, não como negação fechada.",
+   "feedbackWrong": {
+    "a": "\"Prostrado\" descreve o estado; a pergunta vem depois.",
+    "c": "\"Expirar\" é o momento; a pergunta é o destino."
+   },
+   "hint": "Procure a pergunta no fim do versículo.",
+   "learningObjective": "Sustentar a pergunta da esperança.",
+   "evidence": [
+    "Jó 14:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 14:1–12 sustenta sobre a mortalidade?",
+   "verseRef": "Jó 14:7–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "No chão da morte, Jó ainda ergue a pergunta da esperança"
+    },
+    {
+     "id": "b",
+     "text": "Jó fecha qualquer possibilidade de vida além da sepultura"
+    },
+    {
+     "id": "c",
+     "text": "A árvore prova que o homem renasce automaticamente"
+    },
+    {
+     "id": "d",
+     "text": "Deus não estabeleceu limites aos dias humanos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ao expirar, para onde irá?",
+   "feedbackCorrect": "A pergunta permanece: a mortalidade não silencia a busca de esperança.",
+   "feedbackWrong": {
+    "b": "A pergunta \"para onde irá?\" deixa a porta aberta.",
+    "c": "O contraste mostra diferença, não igualdade.",
+    "d": "14:5 afirma limites estabelecidos."
+   },
+   "hint": "Compare a árvore, a pergunta e o sono de 14:12.",
+   "learningObjective": "Escolher a leitura da esperança perguntada.",
+   "evidence": [
+    "Jó 14:10",
+    "Jó 14:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela a esperança além da sepultura na Bíblia?",
+   "verseRef": "Jó 14:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó pergunta para onde vai o homem ao expirar"
+    },
+    {
+     "id": "b",
+     "text": "Jesus diz ser a ressurreição e a vida"
+    },
+    {
+     "id": "c",
+     "text": "Paulo fala do corpo ressuscitado em glória"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "ao expirar, para onde irá?",
+   "feedbackCorrect": "A pergunta de Jó encontra resposta em Jesus e na esperança de Paulo.",
+   "feedbackWrong": {
+    "default": "Siga a Bíblia: Jó 14:10, João 11:25 e 1 Coríntios 15:42–44."
+   },
+   "hint": "Da pergunta de Jó a Jesus e a Paulo.",
+   "learningObjective": "Ver o fio da esperança na Escritura.",
+   "evidence": [
+    "Jó 14:10",
+    "João 11:25",
+    "1 Coríntios 15:42–44"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 14:5, o que Deus estabeleceu e o homem não ultrapassa?",
+   "verseRef": "Jó 14:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "sonhos"
+    },
+    {
+     "id": "b",
+     "text": "limites"
+    },
+    {
+     "id": "c",
+     "text": "muros"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "tu lhe estabeleceste limites",
+   "feedbackCorrect": "Limites: os dias estão nas mãos de Deus.",
+   "feedbackWrong": {
+    "a": "\"Sonhos\" não aparece.",
+    "c": "A palavra do texto é limites."
+   },
+   "hint": "O que foi estabelecido e não se ultrapassa.",
+   "learningObjective": "Lembrar o termo dos dias contados.",
+   "evidence": [
+    "Jó 14:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 14:10 a João 11:25?",
+   "verseRef": "Jó 14:10",
+   "passageA": {
+    "ref": "Jó 14:10",
+    "text": "ao expirar, para onde irá?"
+   },
+   "passageB": {
+    "ref": "João 11:25"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Eu sou a ressurreição"
+    },
+    {
+     "id": "b",
+     "text": "Morte sem resposta"
+    },
+    {
+     "id": "c",
+     "text": "Só a árvore vive"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ao expirar, para onde irá?",
+   "feedbackCorrect": "A pergunta de Jó encontra em Jesus a palavra da ressurreição.",
+   "feedbackWrong": {
+    "b": "João 11 responde à pergunta da morte.",
+    "c": "Jesus fala da vida humana, não só vegetal."
+   },
+   "hint": "Veja o que Jesus diz de si diante da morte.",
+   "learningObjective": "Ligar a pergunta de Jó a Jesus.",
+   "evidence": [
+    "Jó 14:10",
+    "João 11:25"
+   ]
+  }
+ ]
+}

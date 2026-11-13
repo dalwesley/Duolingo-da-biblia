@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Miqueias 7:1–6",
+    "passages": [
+      { "ref": "Miqueias 7:1–6" },
+      { "ref": "Miqueias 7:7" }
+    ],
+    "context": "Miquéias lamenta a ausência do justo e a corrupção de príncipes e juízes. Sem confiança humana, ele escolhe olhar para o Senhor e esperar o Deus da salvação.",
+    "keyword": "esperarei",
+    "keywordGloss": "Resposta do justo: olhar para o Senhor e aguardar sua salvação.",
+    "focusQuestion": "Quando ninguém é de confiança, para quem você olha?",
+    "reflectionPrompts": [
+      "Sem justo na terra",
+      "Corrupção nas mãos",
+      "Olhar para o Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Já desapareceu o homem justo da terra; não há quem seja reto.",
+        "evidenceRef": "Miqueias 7:2",
+        "evidenceSpan": "Já desapareceu o homem justo da terra"
+      },
+      {
+        "text": "O príncipe exige condenação e o juiz aceita suborno.",
+        "evidenceRef": "Miqueias 7:3",
+        "evidenceSpan": "o príncipe exige condenação, o juiz aceita suborno"
+      },
+      {
+        "text": "O melhor deles é como um espinheiro.",
+        "evidenceRef": "Miqueias 7:4",
+        "evidenceSpan": "O melhor deles é como um espinheiro"
+      },
+      {
+        "text": "Não se deve confiar no amigo nem entregar-se ao companheiro.",
+        "evidenceRef": "Miqueias 7:5",
+        "evidenceSpan": "Não confie no amigo, nem se entregue ao seu companheiro"
+      },
+      {
+        "text": "Os inimigos do homem são os de sua própria casa.",
+        "evidenceRef": "Miqueias 7:6",
+        "evidenceSpan": "os inimigos do homem são os de sua própria casa"
+      },
+      {
+        "text": "Miquéias olhará para o Senhor e esperará no Deus da salvação.",
+        "evidenceRef": "Miqueias 7:7",
+        "evidenceSpan": "Eu, porém, olharei para o Senhor e esperarei no Deus da minha salvação"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justo",
+        "gloss": "O homem reto que desapareceu da terra neste lamento."
+      },
+      {
+        "term": "suborno",
+        "gloss": "O que o juiz aceita na trama corrupta."
+      },
+      {
+        "term": "esperarei",
+        "gloss": "Resposta de fé: aguardar o Deus da salvação."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lamento pela falta do justo",
+        "evidenceRef": "Miqueias 7:1–2"
+      },
+      {
+        "label": "Corrupção de príncipe e juiz",
+        "evidenceRef": "Miqueias 7:3–4"
+      },
+      {
+        "label": "Quebra da confiança doméstica",
+        "evidenceRef": "Miqueias 7:5–6"
+      },
+      {
+        "label": "Olhar e esperar no Senhor",
+        "evidenceRef": "Miqueias 7:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A desconfiança doméstica vem porque o filho desconsidera o pai.",
+        "marker": "Porque",
+        "evidenceRef": "Miqueias 7:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "A terra está corrupta, porém Miquéias olhará para o Senhor.",
+        "marker": "porém",
+        "evidenceRef": "Miqueias 7:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ele espera e afirma que seu Deus o ouvirá.",
+        "marker": null,
+        "evidenceRef": "Miqueias 7:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 42:5",
+        "bridge": "Esperar em Deus"
+      },
+      {
+        "ref": "Habacuque 2:1",
+        "bridge": "Ficar de vigia e esperar"
+      },
+      {
+        "ref": "Lamentações 3:24",
+        "bridge": "Esperar no Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Se a casa e os amigos falham, não resta a quem olhar.",
+        "why": "7:7 mostra o contraste: olharei para o Senhor e esperarei."
+      },
+      {
+        "text": "Príncipe e juiz ainda são confiáveis neste quadro.",
+        "why": "7:3 diz que o príncipe exige condenação e o juiz aceita suborno."
+      },
+      {
+        "text": "Esperar no Senhor é passividade sem ouvir resposta.",
+        "why": "7:7 fecha: meu Deus me ouvirá."
+      }
+    ],
+    "centralInsight": "Quando ninguém é de confiança, o justo espera o Deus da sua salvação.",
+    "anchorQuestion": "Segundo Miqueias 7:7, para quem Miquéias olhará?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 7:7, Miquéias olhará para o Senhor e esperará no Deus da sua salvação.",
+      "verseRef": "Miqueias 7:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor e esperarei no Deus da minha salvação",
+      "feedbackCorrect": "O versículo une olhar, esperar e a certeza de ser ouvido.",
+      "feedbackWrong": {
+        "false": "Releia 7:7: olharei para o Senhor e esperarei."
+      },
+      "hint": "Veja os dois verbos da resposta do profeta.",
+      "learningObjective": "Observar a resposta de fé em 7:7.",
+      "evidence": ["Miqueias 7:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 7:3, toque o que o juiz aceita.",
+      "verseRef": "Miqueias 7:3",
+      "evidenceSpan": "o juiz aceita suborno",
+      "feedbackCorrect": "O juiz aceita suborno.",
+      "hint": "Procure o objeto após aceita.",
+      "learningObjective": "Identificar a corrupção do juiz.",
+      "evidence": ["Miqueias 7:3"],
+      "options": [
+        { "id": "a", "text": "suborno" },
+        { "id": "b", "text": "príncipe" },
+        { "id": "c", "text": "trama" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O príncipe exige condenação; não é o que o juiz aceita.",
+        "c": "A trama é o resultado conjunto, não o objeto do juiz."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 7:2, o que já desapareceu da terra?",
+      "verseRef": "Miqueias 7:2",
+      "evidenceSpan": "Já desapareceu o homem justo da terra",
+      "feedbackCorrect": "Desapareceu o homem justo; não há quem seja reto.",
+      "hint": "Veja o início do versículo.",
+      "learningObjective": "Observar a ausência do justo.",
+      "evidence": ["Miqueias 7:2"],
+      "options": [
+        { "id": "a", "text": "O homem justo" },
+        { "id": "b", "text": "Toda a violência" },
+        { "id": "c", "text": "Todo o suborno" },
+        { "id": "d", "text": "A casa do profeta" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto ainda descreve armadilhas e sangue.",
+        "c": "O suborno aparece em 7:3.",
+        "d": "O texto não fala do desaparecimento da casa do profeta."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 7:7 na ordem do texto.",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "Olhar; esperar; Deus ouvirá.",
+      "hint": "Comece pelo olhar para o Senhor.",
+      "learningObjective": "Reconhecer a sequência da esperança.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "Eu, porém, olharei para o Senhor" },
+        { "id": "b", "text": "e esperarei no Deus da minha salvação" },
+        { "id": "c", "text": "meu Deus me ouvirá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Olhar primeiro; a certeza de ser ouvido fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 7:4, a que o melhor deles é comparado?",
+      "verseRef": "Miqueias 7:4",
+      "evidenceSpan": "O melhor deles é como um espinheiro",
+      "feedbackCorrect": "É como um espinheiro.",
+      "hint": "É o substantivo após \"um\".",
+      "learningObjective": "Lembrar a imagem do melhor deles.",
+      "evidence": ["Miqueias 7:4"],
+      "options": [
+        { "id": "a", "text": "cedro" },
+        { "id": "b", "text": "espinheiro" },
+        { "id": "c", "text": "jardim" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Cedro\" não é a comparação de 7:4.",
+        "c": "\"Jardim\" não aparece ali."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 7:7 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "Quando a confiança humana falha, o justo olha para o Senhor.",
+      "hint": "Veja o contraste do \"porém\".",
+      "learningObjective": "Ligar a corrupção à espera no Senhor.",
+      "evidence": ["Miqueias 7:7"],
+      "passageA": { "ref": "Miqueias 7:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sem justo nem confiança humana, Miquéias escolhe esperar o Deus da salvação."
+      },
+      "options": [
+        { "id": "a", "text": "Esperar o Deus da salvação" },
+        { "id": "b", "text": "Confiar só no suborno" },
+        { "id": "c", "text": "Desistir de qualquer olhar" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O suborno é denunciado em 7:3.",
+        "c": "O texto mostra olhar e esperar."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 7:7, a corrupção da terra impede Miquéias de olhar para o Senhor.",
+      "verseRef": "Miqueias 7:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "O \"porém\" marca o contraste: mesmo assim ele olhará.",
+      "feedbackWrong": {
+        "true": "Releia 7:7: Eu, porém, olharei para o Senhor."
+      },
+      "hint": "Repare na palavra que vira a página.",
+      "learningObjective": "Compreender o contraste da esperança.",
+      "evidence": ["Miqueias 7:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 7:7, toque a palavra que marca o contraste com a corrupção.",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "\"Porém\" introduz a resposta de fé.",
+      "hint": "É a palavra entre vírgulas após Eu.",
+      "learningObjective": "Reconhecer o marcador de contraste em 7:7.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "salvação" },
+        { "id": "c", "text": "Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Salvação é o conteúdo da espera.",
+        "c": "Deus é a quem se espera, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 7:3–7 liga corrupção e esperança?",
+      "verseRef": "Miqueias 7:3–7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "Príncipe e juiz falham; a resposta é olhar e esperar no Senhor.",
+      "hint": "Una 7:3 ao contraste de 7:7.",
+      "learningObjective": "Relacionar falha humana e espera em Deus.",
+      "evidence": ["Miqueias 7:3–7"],
+      "options": [
+        { "id": "a", "text": "A falha humana leva o justo a esperar no Senhor" },
+        { "id": "b", "text": "O suborno resolve a crise da terra" },
+        { "id": "c", "text": "Confiar no amigo cancela a necessidade de Deus" },
+        { "id": "d", "text": "Não há contraste entre corrupção e fé" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O suborno é parte do problema.",
+        "c": "7:5 manda não confiar no amigo.",
+        "d": "O \"porém\" de 7:7 marca o contraste."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Miqueias 7:1–7?",
+      "verseRef": "Miqueias 7:2–7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "Falta do justo; corrupção; quebra doméstica; olhar ao Senhor.",
+      "hint": "Comece pela ausência do justo.",
+      "learningObjective": "Seguir o movimento do lamento à esperança.",
+      "evidence": ["Miqueias 7:2–7"],
+      "options": [
+        { "id": "a", "text": "Desaparece o justo da terra" },
+        { "id": "b", "text": "Príncipe e juiz se corrompem" },
+        { "id": "c", "text": "O profeta olha e espera no Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Lamento primeiro; a esperança fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 7:6, que palavra abre a razão da desconfiança doméstica?",
+      "verseRef": "Miqueias 7:6",
+      "evidenceSpan": "Porque o filho desconsidera o pai",
+      "feedbackCorrect": "\"Porque\" introduz a razão familiar da crise.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de causa em 7:6.",
+      "evidence": ["Miqueias 7:6"],
+      "options": [
+        { "id": "a", "text": "Porque" },
+        { "id": "b", "text": "Talvez" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Talvez\" não abre 7:6.",
+        "c": "\"Nunca\" não é a primeira palavra."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 7:7 a Salmos 42:5?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "Nos dois textos, a alma é chamada a esperar em Deus.",
+      "hint": "Compare a espera em Deus.",
+      "learningObjective": "Relacionar a espera de Miquéias à do Salmo.",
+      "evidence": ["Miqueias 7:7", "Salmos 42:5"],
+      "passageA": { "ref": "Miqueias 7:7" },
+      "passageB": { "ref": "Salmos 42:5" },
+      "options": [
+        { "id": "a", "text": "Esperar em Deus" },
+        { "id": "b", "text": "Confiar só no amigo" },
+        { "id": "c", "text": "Desistir da oração" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "7:5 manda não confiar no amigo.",
+        "c": "Os textos apontam espera, não desistência."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 7:1–7, quando a confiança humana falha, não resta ao justo nenhuma direção de olhar.",
+      "verseRef": "Miqueias 7:5–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "7:5–6 mostram a falha humana; 7:7 aponta o Senhor.",
+      "feedbackWrong": {
+        "true": "Releia 7:7: mesmo assim ele olhará para o Senhor."
+      },
+      "hint": "Veja o contraste final do capítulo.",
+      "learningObjective": "Interpretar a esperança quando a confiança falha.",
+      "evidence": ["Miqueias 7:5–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 7:7, toque o verbo que carrega a espera do justo.",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "O verbo é esperarei.",
+      "hint": "Procure o verbo após \"e\".",
+      "learningObjective": "Sustentar com o texto a espera fiel.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "esperarei" },
+        { "id": "b", "text": "salvação" },
+        { "id": "c", "text": "ouvirá" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Salvação\" é o conteúdo da espera, não o verbo.",
+        "c": "\"Ouvirá\" é a certeza final, não o verbo da espera."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Miqueias 7:1–7 sustenta sobre a crise de confiança?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "meu Deus me ouvirá",
+      "feedbackCorrect": "Quando ninguém é de confiança, o justo espera o Deus que ouve.",
+      "hint": "Compare cada opção com 7:5–7.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "O justo olha para o Senhor quando a confiança humana falha" },
+        { "id": "b", "text": "Príncipe e juiz resolvem a crise com suborno" },
+        { "id": "c", "text": "Basta confiar no amigo da casa" },
+        { "id": "d", "text": "Esperar em Deus não inclui ser ouvido" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "7:3 denuncia essa corrupção.",
+        "c": "7:5–6 desaconselham essa confiança.",
+        "d": "7:7 afirma: meu Deus me ouvirá."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra espera no Senhor na Escritura?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "Miquéias espera; o Salmo anima; Lamentações confessa a porção no Senhor.",
+      "hint": "Parta de Miqueias 7:7.",
+      "learningObjective": "Ver a espera fiel no fio bíblico.",
+      "evidence": ["Miqueias 7:7", "Salmos 42:5", "Lamentações 3:24"],
+      "options": [
+        { "id": "a", "text": "Miquéias olha e espera no Senhor" },
+        { "id": "b", "text": "O Salmo chama a esperar em Deus" },
+        { "id": "c", "text": "Lamentações afirma a porção no Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 7:7, Salmos 42:5 e Lamentações 3:24."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 7:2, que palavra descreve o homem que desapareceu?",
+      "verseRef": "Miqueias 7:2",
+      "evidenceSpan": "desapareceu o homem justo da terra",
+      "feedbackCorrect": "O homem justo desapareceu da terra.",
+      "hint": "É o adjetivo após \"homem\".",
+      "learningObjective": "Lembrar o termo do justo ausente.",
+      "evidence": ["Miqueias 7:2"],
+      "options": [
+        { "id": "a", "text": "rico" },
+        { "id": "b", "text": "justo" },
+        { "id": "c", "text": "famoso" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Rico\" não é a palavra de 7:2.",
+        "c": "\"Famoso\" não aparece no versículo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 7:7 a Lamentações 3:24?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "Nos dois textos, a esperança se firma no Senhor.",
+      "hint": "Compare a espera no Senhor.",
+      "learningObjective": "Ligar a espera de Miquéias à de Lamentações.",
+      "evidence": ["Miqueias 7:7", "Lamentações 3:24"],
+      "passageA": { "ref": "Miqueias 7:7" },
+      "passageB": { "ref": "Lamentações 3:24" },
+      "options": [
+        { "id": "a", "text": "Esperar no Senhor" },
+        { "id": "b", "text": "Confiar no suborno" },
+        { "id": "c", "text": "Desistir da salvação" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O suborno é denunciado, não recomendado.",
+        "c": "Os textos afirmam esperança."
+      }
+    }
+  ]
+}

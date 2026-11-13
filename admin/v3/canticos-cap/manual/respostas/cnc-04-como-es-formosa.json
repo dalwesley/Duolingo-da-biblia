@@ -1,0 +1,460 @@
+{
+  "study": {
+    "passageRef": "Cantares 4:7–11",
+    "passages": [
+      { "ref": "Cantares 4:1–6" },
+      { "ref": "Cantares 4:7–11" }
+    ],
+    "context": "O amado descreve a amada detalhe a detalhe e conclui: toda formosa, sem defeito. O amor responde com elogio generoso e convite.",
+    "keyword": "formosa",
+    "keywordGloss": "A beleza vista e dita: toda formosa, e em ti não há defeito.",
+    "focusQuestion": "Que detalhe bom do outro você ainda não nomeou com generosidade?",
+    "reflectionPrompts": ["Olhar atento", "Sem defeito", "Amor mais que vinho"],
+    "facts": [
+      {
+        "text": "Ele diz duas vezes que ela é formosa; os olhos são como pombas.",
+        "evidenceRef": "Cantares 4:1",
+        "evidenceSpan": "Eis que és formosa, amada minha, eis que és formosa"
+      },
+      {
+        "text": "Tu és toda formosa, amada minha, e em ti não há defeito.",
+        "evidenceRef": "Cantares 4:7",
+        "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito"
+      },
+      {
+        "text": "Ele a chama noiva e a convida a vir do Líbano.",
+        "evidenceRef": "Cantares 4:8",
+        "evidenceSpan": "Vem comigo do Líbano, ó minha noiva"
+      },
+      {
+        "text": "Ela arrebatou-lhe o coração com um único olhar.",
+        "evidenceRef": "Cantares 4:9",
+        "evidenceSpan": "capturaste-me com um único olhar teu"
+      },
+      {
+        "text": "O amor dela é mais precioso do que o vinho.",
+        "evidenceRef": "Cantares 4:10",
+        "evidenceSpan": "Quanto mais precioso é o teu amor do que o vinho"
+      },
+      {
+        "text": "Os lábios dela destilam mel.",
+        "evidenceRef": "Cantares 4:11",
+        "evidenceSpan": "Os teus lábios, ó noiva minha, destilam mel"
+      }
+    ],
+    "keyTerms": [
+      { "term": "formosa", "gloss": "A beleza completa dita sem reserva." },
+      { "term": "noiva", "gloss": "O título do convite e do elogio." },
+      { "term": "amor", "gloss": "Mais precioso que o vinho no olhar do amado." }
+    ],
+    "structure": [
+      { "label": "O olhar descreve olhos, cabelo e boca", "evidenceRef": "Cantares 4:1–3" },
+      { "label": "A descrição segue até o convite do Líbano", "evidenceRef": "Cantares 4:4–8" },
+      { "label": "O coração é arrebatado por um olhar", "evidenceRef": "Cantares 4:9" },
+      { "label": "O amor supera o vinho e destila mel", "evidenceRef": "Cantares 4:10–11" }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Até que o dia clareie, ele irá ao monte da mirra.",
+        "marker": "Até que",
+        "evidenceRef": "Cantares 4:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "O olhar único captura o coração do amado.",
+        "marker": null,
+        "evidenceRef": "Cantares 4:9"
+      },
+      {
+        "kind": "contraste",
+        "text": "O amor dela é mais precioso do que o vinho.",
+        "marker": null,
+        "evidenceRef": "Cantares 4:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Efésios 5:25–27", "bridge": "Apresentar sem mancha" },
+      { "ref": "Provérbios 5:18–19", "bridge": "Alegrar-se com a esposa" },
+      { "ref": "Gênesis 2:23", "bridge": "Nomear o outro com alegria" }
+    ],
+    "misreadings": [
+      {
+        "text": "Elogiar detalhes do outro é superficialidade pecaminosa.",
+        "why": "O texto celebra o olhar atento e o elogio generoso."
+      },
+      {
+        "text": "\"Sem defeito\" significa negar qualquer fraqueza humana.",
+        "why": "É a linguagem do amor que escolhe e celebra, não um laudo."
+      },
+      {
+        "text": "O amor aqui é só posse, sem convite nem palavra.",
+        "why": "Há convite (vem) e nomeação (noiva, formosa)."
+      }
+    ],
+    "centralInsight": "O olhar atento do amor vê detalhes e responde com elogio generoso.",
+    "anchorQuestion": "Segundo Cantares 4:7, o que o amado diz sobre defeito nela?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 4:7, ela é toda formosa e em ti não há defeito.",
+      "verseRef": "Cantares 4:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito",
+      "feedbackCorrect": "O elogio é completo: toda formosa, sem defeito.",
+      "feedbackWrong": { "false": "Releia 4:7: toda formosa, e não há defeito." },
+      "hint": "Veja as duas afirmações do versículo.",
+      "learningObjective": "Observar o elogio completo sem defeito.",
+      "evidence": ["Cantares 4:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 4:10, toque o que é mais precioso do que o vinho.",
+      "verseRef": "Cantares 4:10",
+      "options": [
+        { "id": "a", "text": "teu amor" },
+        { "id": "b", "text": "especiarias" },
+        { "id": "c", "text": "perfumes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mais precioso é o teu amor do que o vinho",
+      "feedbackCorrect": "O amor dela é mais precioso que o vinho.",
+      "feedbackWrong": {
+        "b": "Especiarias fecham a comparação dos aromas.",
+        "c": "Perfumes são elogiados; o mais precioso que o vinho é o amor."
+      },
+      "hint": "Veja o que supera o vinho.",
+      "learningObjective": "Identificar o amor mais precioso que o vinho.",
+      "evidence": ["Cantares 4:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 4:9, com o que ela o capturou?",
+      "verseRef": "Cantares 4:9",
+      "options": [
+        { "id": "a", "text": "Com um único olhar" },
+        { "id": "b", "text": "Com mil escudos" },
+        { "id": "c", "text": "Com o rebanho de cabras" },
+        { "id": "d", "text": "Com a torre de Davi" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "capturaste-me com um único olhar teu",
+      "feedbackCorrect": "Um único olhar capturou o coração.",
+      "feedbackWrong": {
+        "b": "Escudos estão em 4:4.",
+        "c": "Cabras estão em 4:1.",
+        "d": "A torre está em 4:4."
+      },
+      "hint": "Leia como ela o capturou.",
+      "learningObjective": "Reconhecer o poder de um olhar.",
+      "evidence": ["Cantares 4:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 4:7 na ordem do texto.",
+      "verseRef": "Cantares 4:7",
+      "options": [
+        { "id": "a", "text": "Tu és toda formosa, amada minha" },
+        { "id": "b", "text": "e em ti" },
+        { "id": "c", "text": "não há defeito" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito",
+      "feedbackCorrect": "Primeiro o elogio; depois \"em ti\"; por fim sem defeito.",
+      "feedbackWrong": { "default": "Comece por toda formosa; defeito fecha." },
+      "hint": "Siga formosa → em ti → defeito.",
+      "learningObjective": "Seguir a ordem do elogio.",
+      "evidence": ["Cantares 4:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 4:11, o que os lábios destilam?",
+      "verseRef": "Cantares 4:11",
+      "options": [
+        { "id": "a", "text": "mel" },
+        { "id": "b", "text": "vinho" },
+        { "id": "c", "text": "óleo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "destilam mel",
+      "feedbackCorrect": "Os lábios destilam mel.",
+      "feedbackWrong": {
+        "b": "Vinho está na comparação de 4:10.",
+        "c": "O texto diz mel."
+      },
+      "hint": "Veja o que destilam os lábios.",
+      "learningObjective": "Lembrar o mel dos lábios.",
+      "evidence": ["Cantares 4:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 4:7 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 4:7",
+      "passageA": { "ref": "Cantares 4:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amado olha com atenção e responde com elogio generoso."
+      },
+      "options": [
+        { "id": "a", "text": "Elogio completo sem defeito" },
+        { "id": "b", "text": "Silêncio diante da beleza" },
+        { "id": "c", "text": "Crítica detalhada de falhas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito",
+      "feedbackCorrect": "O contexto do elogio aparece no \"toda formosa\" sem defeito.",
+      "feedbackWrong": {
+        "b": "Há palavras claras de elogio.",
+        "c": "O texto celebra, não critica."
+      },
+      "hint": "Veja o tom do versículo inteiro.",
+      "learningObjective": "Ligar o contexto ao elogio generoso.",
+      "evidence": ["Cantares 4:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 4:6, ele irá ao monte da mirra até que o dia clareie.",
+      "verseRef": "Cantares 4:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Até que o dia clareie e as sombras desapareçam, irei ao monte da mirra",
+      "feedbackCorrect": "O \"Até que\" marca o tempo do seu ir.",
+      "feedbackWrong": { "false": "Releia 4:6: até que o dia clareie, ele irá." },
+      "hint": "Olhe a abertura do versículo.",
+      "learningObjective": "Ver a relação temporal do ir.",
+      "evidence": ["Cantares 4:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 4:6, toque as palavras que marcam o limite temporal.",
+      "verseRef": "Cantares 4:6",
+      "options": [
+        { "id": "a", "text": "Até que" },
+        { "id": "b", "text": "mirra" },
+        { "id": "c", "text": "incenso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Até que o dia clareie",
+      "feedbackCorrect": "\"Até que\" marca o tempo até o dia clarear.",
+      "feedbackWrong": {
+        "b": "Mirra é o destino.",
+        "c": "Incenso é o outeiro."
+      },
+      "hint": "Comece pelas primeiras palavras.",
+      "learningObjective": "Tocar o marcador temporal.",
+      "evidence": ["Cantares 4:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 4:9–10 estabelece entre olhar e amor?",
+      "verseRef": "Cantares 4:9–10",
+      "options": [
+        { "id": "a", "text": "Um olhar captura o coração; o amor supera o vinho" },
+        { "id": "b", "text": "O olhar nunca afeta o coração" },
+        { "id": "c", "text": "O vinho vale mais que o amor" },
+        { "id": "d", "text": "Não há convite nem nomeação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "capturaste-me com um único olhar teu",
+      "feedbackCorrect": "O olhar arrebata; o amor é mais precioso que o vinho.",
+      "feedbackWrong": {
+        "b": "4:9 diz que o olhar captura.",
+        "c": "4:10 diz o contrário.",
+        "d": "Há noiva e convite em 4:8."
+      },
+      "hint": "Ligue 4:9 ao valor do amor em 4:10.",
+      "learningObjective": "Relacionar olhar e amor.",
+      "evidence": ["Cantares 4:9–10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 4:1–11.",
+      "verseRef": "Cantares 4:9–10",
+      "options": [
+        { "id": "a", "text": "O olhar descreve olhos, cabelo e boca" },
+        { "id": "b", "text": "O coração é arrebatado por um olhar" },
+        { "id": "c", "text": "O amor supera o vinho e destila mel" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Quão belo é o teu amor",
+      "feedbackCorrect": "Da descrição ao arrebatamento e ao valor do amor.",
+      "feedbackWrong": { "default": "Comece pela descrição; o mel fecha." },
+      "hint": "Siga descrever → arrebatar → amar.",
+      "learningObjective": "Ordenar a estrutura do elogio.",
+      "evidence": ["Cantares 4:1–11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 4:6, que expressão marca o tempo até o dia clarear?",
+      "verseRef": "Cantares 4:6",
+      "options": [
+        { "id": "a", "text": "Até" },
+        { "id": "b", "text": "Depois" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Até que o dia clareie",
+      "feedbackCorrect": "\"Até\" marca o limite temporal.",
+      "feedbackWrong": {
+        "b": "O texto abre com Até.",
+        "c": "Há um tempo claro."
+      },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador temporal.",
+      "evidence": ["Cantares 4:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 4:7 a Efésios 5:25–27?",
+      "verseRef": "Cantares 4:7",
+      "passageA": { "ref": "Cantares 4:7" },
+      "passageB": { "ref": "Efésios 5:25–27" },
+      "options": [
+        { "id": "a", "text": "Apresentar sem mancha" },
+        { "id": "b", "text": "Esconder toda beleza" },
+        { "id": "c", "text": "Negar qualquer cuidado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em ti não há defeito",
+      "feedbackCorrect": "Os dois textos falam de apresentar a amada sem mancha/defeito.",
+      "feedbackWrong": {
+        "b": "Há elogio aberto.",
+        "c": "Há cuidado generoso."
+      },
+      "hint": "Compare \"sem defeito\" com sem mancha.",
+      "learningObjective": "Ligar o elogio a Efésios 5.",
+      "evidence": ["Cantares 4:7", "Efésios 5:25–27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 4:7 trata o elogio da beleza como vaidade pecaminosa.",
+      "verseRef": "Cantares 4:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Tu és toda formosa, amada minha",
+      "feedbackCorrect": "O texto celebra o elogio; não o condena.",
+      "feedbackWrong": { "true": "O versículo é celebração, não condenação." },
+      "hint": "Veja o tom do amado.",
+      "learningObjective": "Rejeitar a leitura que condena o elogio.",
+      "evidence": ["Cantares 4:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 4:7, toque o trecho que sustenta a ausência de defeito.",
+      "verseRef": "Cantares 4:7",
+      "options": [
+        { "id": "a", "text": "não há defeito" },
+        { "id": "b", "text": "amada minha" },
+        { "id": "c", "text": "toda formosa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em ti não há defeito",
+      "feedbackCorrect": "A sustentação está em \"não há defeito\".",
+      "feedbackWrong": {
+        "b": "Vocativo de carinho; a tese do defeito é outra.",
+        "c": "Isso afirma a beleza; a ausência de defeito vem depois."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Sustentar com o texto a ausência de defeito.",
+      "evidence": ["Cantares 4:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 4:1–11 sustenta sobre o amor?",
+      "verseRef": "Cantares 4:7–10",
+      "options": [
+        { "id": "a", "text": "O olhar atento vê detalhes e responde com elogio generoso" },
+        { "id": "b", "text": "O amor verdadeiro evita qualquer elogio" },
+        { "id": "c", "text": "Detalhes do outro não devem ser nomeados" },
+        { "id": "d", "text": "O vinho vale mais que o amor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu és toda formosa, amada minha, e em ti não há defeito",
+      "feedbackCorrect": "Descrição, arrebatamento e valor do amor sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "O texto está cheio de elogios.",
+        "c": "Há descrição detalhada.",
+        "d": "4:10 diz o contrário."
+      },
+      "hint": "Una a descrição ao elogio de 4:7 e 4:10.",
+      "learningObjective": "Escolher a interpretação do olhar atento.",
+      "evidence": ["Cantares 4:7–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do olhar ao valor do amor?",
+      "verseRef": "Cantares 4:9–10",
+      "options": [
+        { "id": "a", "text": "O amado nomeia a beleza detalhe a detalhe" },
+        { "id": "b", "text": "Um olhar arrebata o coração" },
+        { "id": "c", "text": "O amor é declarado mais precioso que o vinho" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "mais precioso é o teu amor do que o vinho",
+      "feedbackCorrect": "Da descrição ao arrebatamento e ao valor do amor.",
+      "feedbackWrong": { "default": "Comece pela descrição; o vinho fecha." },
+      "hint": "Siga descrever → olhar → valor.",
+      "learningObjective": "Ver o encadeamento do olhar ao amor.",
+      "evidence": ["Cantares 4:1–10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 4:8, que termo nomeia a amada no convite?",
+      "verseRef": "Cantares 4:8",
+      "options": [
+        { "id": "a", "text": "noiva" },
+        { "id": "b", "text": "torre" },
+        { "id": "c", "text": "gazela" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ó minha noiva",
+      "feedbackCorrect": "O termo do convite é noiva.",
+      "feedbackWrong": {
+        "b": "Torre está em 4:4.",
+        "c": "Gazela está em 4:5."
+      },
+      "hint": "Veja o vocativo depois de \"Líbano\".",
+      "learningObjective": "Lembrar o termo noiva.",
+      "evidence": ["Cantares 4:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 4:10 a Provérbios 5:18–19?",
+      "verseRef": "Cantares 4:10",
+      "passageA": { "ref": "Cantares 4:10" },
+      "passageB": { "ref": "Provérbios 5:18–19" },
+      "options": [
+        { "id": "a", "text": "Alegrar-se com a esposa" },
+        { "id": "b", "text": "Fugir de toda proximidade" },
+        { "id": "c", "text": "Preferir o vinho ao amor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quão belo é o teu amor",
+      "feedbackCorrect": "Os dois textos celebram a alegria no amor da aliança.",
+      "feedbackWrong": {
+        "b": "Há celebração da proximidade.",
+        "c": "O amor supera o vinho."
+      },
+      "hint": "Compare o valor do amor nos dois textos.",
+      "learningObjective": "Ligar o amor do Cântico a Provérbios 5.",
+      "evidence": ["Cantares 4:10", "Provérbios 5:18–19"]
+    }
+  ]
+}

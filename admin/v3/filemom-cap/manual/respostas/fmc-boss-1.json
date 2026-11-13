@@ -1,0 +1,915 @@
+{
+  "study": {
+    "passageRef": "Filemom 1:4–6",
+    "passages": [
+      {
+        "ref": "Filemom 1:4–6"
+      },
+      {
+        "ref": "Filemom 1:1–3"
+      }
+    ],
+    "context": "Este desafio revisa a fé e o amor que tornam a comunhão eficaz em Cristo, na carta a Filemom.",
+    "keyword": "comunhão",
+    "keywordGloss": "A fé compartilhada que se torna eficaz no bem que há em nós por Cristo.",
+    "focusQuestion": "Como sua comunhão da fé tem se tornado eficaz no bem em Cristo?",
+    "reflectionPrompts": [
+      "Prisioneiro que agradece",
+      "Amor e fé",
+      "Comunhão eficaz"
+    ],
+    "facts": [
+      {
+        "text": "Paulo se apresenta como prisioneiro de Cristo Jesus.",
+        "evidenceRef": "Filemom 1:1",
+        "evidenceSpan": "Paulo, prisioneiro de Cristo Jesus"
+      },
+      {
+        "text": "A carta inclui a igreja que está na casa.",
+        "evidenceRef": "Filemom 1:2",
+        "evidenceSpan": "à igreja que está em tua casa"
+      },
+      {
+        "text": "Paulo agradece lembrando-se de Filemom nas orações.",
+        "evidenceRef": "Filemom 1:4",
+        "evidenceSpan": "Agradeço ao meu Deus, lembrando-me sempre de você"
+      },
+      {
+        "text": "Paulo ouve do amor e da fé de Filemom.",
+        "evidenceRef": "Filemom 1:5",
+        "evidenceSpan": "do amor que você tem e da fé que possui no Senhor Jesus e em todos os santos"
+      },
+      {
+        "text": "A comunhão da fé deve tornar-se eficaz.",
+        "evidenceRef": "Filemom 1:6",
+        "evidenceSpan": "a comunhão da sua fé se torne eficaz"
+      },
+      {
+        "text": "O bem conhecido está em nós por Cristo Jesus.",
+        "evidenceRef": "Filemom 1:6",
+        "evidenceSpan": "todo o bem que há em nós, por Cristo Jesus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "comunhão",
+        "gloss": "Partilha da fé que se torna ativa."
+      },
+      {
+        "term": "eficaz",
+        "gloss": "A fé produzindo fruto no conhecimento do bem."
+      },
+      {
+        "term": "prisioneiro",
+        "gloss": "Identidade de Paulo nesta carta."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Saudação à casa-igreja",
+        "evidenceRef": "Filemom 1:1–3"
+      },
+      {
+        "label": "Ação de graças",
+        "evidenceRef": "Filemom 1:4"
+      },
+      {
+        "label": "Amor e fé ouvidos",
+        "evidenceRef": "Filemom 1:5"
+      },
+      {
+        "label": "Pedido: comunhão eficaz",
+        "evidenceRef": "Filemom 1:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Paulo agradece porque ouve do amor e da fé.",
+        "marker": null,
+        "evidenceRef": "Filemom 1:4–5"
+      },
+      {
+        "kind": "propósito",
+        "text": "A oração visa comunhão da fé eficaz.",
+        "marker": "Para que",
+        "evidenceRef": "Filemom 1:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "A eficácia aparece no conhecimento do bem em Cristo.",
+        "marker": null,
+        "evidenceRef": "Filemom 1:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Filipenses 1:3–5",
+        "bridge": "Ação de graças e comunhão"
+      },
+      {
+        "ref": "Colossenses 1:3–4",
+        "bridge": "Fé e amor aos santos"
+      },
+      {
+        "ref": "Efésios 1:15–16",
+        "bridge": "Ouvir fé e amor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A fé de Filemom não precisa de comunhão.",
+        "why": "Paulo ora pela comunhão eficaz."
+      },
+      {
+        "text": "O bem em nós independe de Cristo.",
+        "why": "O texto diz por Cristo Jesus."
+      },
+      {
+        "text": "Paulo escreve só a Filemom, sem a igreja.",
+        "why": "Inclui Áfia, Arquipo e a igreja na casa."
+      }
+    ],
+    "centralInsight": "A fé compartilhada produz o bem em Cristo Jesus",
+    "anchorQuestion": "O que Paulo pede para a comunhão da fé de Filemom?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Filemom 1:1, Paulo se apresenta como governador de Roma.",
+      "verseRef": "Filemom 1:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Paulo, prisioneiro de Cristo Jesus",
+      "feedbackCorrect": "Ele se chama prisioneiro de Cristo.",
+      "feedbackWrong": {
+        "true": "O versículo diz prisioneiro de Cristo Jesus."
+      },
+      "hint": "Veja como Paulo se nomeia.",
+      "learningObjective": "Observar a autodescrição.",
+      "evidence": [
+        "Filemom 1:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Filemom 1:2, toque onde a igreja se reúne.",
+      "verseRef": "Filemom 1:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "tua casa"
+        },
+        {
+          "id": "b",
+          "text": "Arquipo"
+        },
+        {
+          "id": "c",
+          "text": "amada Áfia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "à igreja que está em tua casa",
+      "feedbackCorrect": "A igreja está na casa.",
+      "feedbackWrong": {
+        "b": "Arquipo é companheiro.",
+        "c": "Áfia é destinatária."
+      },
+      "hint": "Procure o fim do versículo.",
+      "learningObjective": "Identificar a igreja na casa.",
+      "evidence": [
+        "Filemom 1:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Filemom 1:5, do que Paulo ouve falar?",
+      "verseRef": "Filemom 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Do amor e da fé no Senhor e nos santos"
+        },
+        {
+          "id": "b",
+          "text": "Só de riqueza"
+        },
+        {
+          "id": "c",
+          "text": "De abandono da fé"
+        },
+        {
+          "id": "d",
+          "text": "De ódio aos santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do amor que você tem e da fé que possui no Senhor Jesus e em todos os santos",
+      "feedbackCorrect": "Amor e fé formam o testemunho.",
+      "feedbackWrong": {
+        "b": "O texto fala de amor e fé.",
+        "c": "Há fé.",
+        "d": "Há amor aos santos."
+      },
+      "hint": "Olhe o conteúdo do ouvir.",
+      "learningObjective": "Registrar amor e fé.",
+      "evidence": [
+        "Filemom 1:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Filemom 1:6 na ordem do texto.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que a comunhão da sua fé"
+        },
+        {
+          "id": "b",
+          "text": "se torne eficaz"
+        },
+        {
+          "id": "c",
+          "text": "no pleno conhecimento de todo o bem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Para que a comunhão da sua fé se torne eficaz",
+      "feedbackCorrect": "Comunhão → eficácia → conhecimento.",
+      "feedbackWrong": {
+        "default": "Comece pelo Para que."
+      },
+      "hint": "O versículo abre com Para que.",
+      "learningObjective": "Reconhecer a ordem de 1:6.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Filemom 1:6, a comunhão da fé se torna ___.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "eficaz"
+        },
+        {
+          "id": "b",
+          "text": "inútil"
+        },
+        {
+          "id": "c",
+          "text": "secreta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se torne eficaz",
+      "feedbackCorrect": "O pedido é eficácia.",
+      "feedbackWrong": {
+        "b": "Não é inútil.",
+        "c": "O texto aponta eficácia."
+      },
+      "hint": "Qual adjetivo Paulo usa?",
+      "learningObjective": "Lembrar eficaz.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Filemom 1:5 comunica que se liga a este contexto?",
+      "verseRef": "Filemom 1:5",
+      "passageA": {
+        "ref": "Filemom 1:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Paulo ouve falar do amor e da fé de Filemom no Senhor e nos santos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé e amor conhecidos"
+        },
+        {
+          "id": "b",
+          "text": "Fé escondida"
+        },
+        {
+          "id": "c",
+          "text": "Amor sem santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouvindo falar do amor que você tem e da fé que possui",
+      "feedbackCorrect": "O testemunho chega a Paulo pelo ouvir.",
+      "feedbackWrong": {
+        "b": "Há ouvir público.",
+        "c": "Inclui os santos."
+      },
+      "hint": "Veja o que Paulo ouve.",
+      "learningObjective": "Ligar ao testemunho.",
+      "evidence": [
+        "Filemom 1:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Filemom 1:1, toque como Paulo se apresenta.",
+      "verseRef": "Filemom 1:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "prisioneiro"
+        },
+        {
+          "id": "b",
+          "text": "Timóteo"
+        },
+        {
+          "id": "c",
+          "text": "colaborador"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Paulo, prisioneiro de Cristo Jesus",
+      "feedbackCorrect": "Ele se chama prisioneiro.",
+      "feedbackWrong": {
+        "b": "Timóteo está junto.",
+        "c": "Colaborador descreve Filemom."
+      },
+      "hint": "Procure o primeiro substantivo.",
+      "learningObjective": "Identificar prisioneiro.",
+      "evidence": [
+        "Filemom 1:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Filemom 1:4 na ordem do texto.",
+      "verseRef": "Filemom 1:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agradeço ao meu Deus"
+        },
+        {
+          "id": "b",
+          "text": "lembrando-me sempre de você"
+        },
+        {
+          "id": "c",
+          "text": "em minhas orações"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Agradeço ao meu Deus, lembrando-me sempre de você",
+      "feedbackCorrect": "Agradece → lembra → ora.",
+      "feedbackWrong": {
+        "default": "Comece por Agradeço."
+      },
+      "hint": "O versículo abre com Agradeço.",
+      "learningObjective": "Reconhecer a ordem de 1:4.",
+      "evidence": [
+        "Filemom 1:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Filemom 1:6, a comunhão da fé deve permanecer inerte.",
+      "verseRef": "Filemom 1:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Para que a comunhão da sua fé se torne eficaz",
+      "feedbackCorrect": "O Para que pede eficácia.",
+      "feedbackWrong": {
+        "true": "O texto pede que se torne eficaz."
+      },
+      "hint": "Repare no Para que e em eficaz.",
+      "learningObjective": "Compreender o propósito.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Filemom 1:6, toque a expressão que marca o propósito.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "Cristo Jesus"
+        },
+        {
+          "id": "c",
+          "text": "todo o bem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que a comunhão da sua fé se torne eficaz",
+      "feedbackCorrect": "Para que introduz o pedido.",
+      "feedbackWrong": {
+        "b": "Cristo é o eixo do bem.",
+        "c": "É o conteúdo conhecido."
+      },
+      "hint": "Procure o início.",
+      "learningObjective": "Reconhecer o propósito.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Filemom 1:4–5 se liga à ação de graças?",
+      "verseRef": "Filemom 1:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele agradece porque ouve do amor e da fé"
+        },
+        {
+          "id": "b",
+          "text": "Ele agradece apesar de Filemom não ter fé"
+        },
+        {
+          "id": "c",
+          "text": "Ele deixa de orar"
+        },
+        {
+          "id": "d",
+          "text": "Ele ignora o amor aos santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Agradeço ao meu Deus, lembrando-me sempre de você",
+      "feedbackCorrect": "Gratidão nasce do que Paulo ouve.",
+      "feedbackWrong": {
+        "b": "Há fé.",
+        "c": "Há orações.",
+        "d": "O amor inclui os santos."
+      },
+      "hint": "Una agradecer e ouvir.",
+      "learningObjective": "Relacionar gratidão e testemunho.",
+      "evidence": [
+        "Filemom 1:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o argumento em Filemom 1:4–6?",
+      "verseRef": "Filemom 1:4–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ação de graças nas orações"
+        },
+        {
+          "id": "b",
+          "text": "Motivo: amor e fé ouvidos"
+        },
+        {
+          "id": "c",
+          "text": "Pedido: comunhão eficaz"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Agradeço ao meu Deus, lembrando-me sempre de você",
+      "feedbackCorrect": "Agradece → motivo → propósito.",
+      "feedbackWrong": {
+        "default": "Siga: gratidão → motivo → propósito."
+      },
+      "hint": "O Para que fecha.",
+      "learningObjective": "Ver o movimento da gratidão.",
+      "evidence": [
+        "Filemom 1:4–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Filemom 1:6, Paulo fala da ___ da sua fé.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "comunhão"
+        },
+        {
+          "id": "b",
+          "text": "solidão"
+        },
+        {
+          "id": "c",
+          "text": "rivalidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a comunhão da sua fé se torne eficaz",
+      "feedbackCorrect": "A palavra-chave é comunhão.",
+      "feedbackWrong": {
+        "b": "Não é solidão.",
+        "c": "Não é rivalidade."
+      },
+      "hint": "Qual substantivo abre o pedido?",
+      "learningObjective": "Lembrar comunhão.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Filemom 1:4–5 a Filipenses 1:3–5?",
+      "verseRef": "Filemom 1:4–5",
+      "passageA": {
+        "ref": "Filemom 1:4–5"
+      },
+      "passageB": {
+        "ref": "Filipenses 1:3–5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ação de graças e comunhão"
+        },
+        {
+          "id": "b",
+          "text": "Esquecimento na oração"
+        },
+        {
+          "id": "c",
+          "text": "Fé sem partilha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Agradeço ao meu Deus, lembrando-me sempre de você",
+      "feedbackCorrect": "Nos dois textos, Paulo agradece e liga à comunhão.",
+      "feedbackWrong": {
+        "b": "Há memória nas orações.",
+        "c": "Há comunhão da fé."
+      },
+      "hint": "Compare gratidão e partilha.",
+      "learningObjective": "Relacionar ação de graças.",
+      "evidence": [
+        "Filemom 1:4–5",
+        "Filipenses 1:3–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Filemom 1:5, toque o que Paulo ouve junto com o amor.",
+      "verseRef": "Filemom 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "Senhor Jesus"
+        },
+        {
+          "id": "c",
+          "text": "santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do amor que você tem e da fé que possui",
+      "feedbackCorrect": "Amor e fé vêm juntos.",
+      "feedbackWrong": {
+        "b": "Senhor Jesus é em quem está a fé.",
+        "c": "Santos recebem o amor; a pergunta pede o par com amor."
+      },
+      "hint": "Procure o par com amor.",
+      "learningObjective": "Identificar a fé ouvida.",
+      "evidence": [
+        "Filemom 1:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a saudação em Filemom 1:1–3?",
+      "verseRef": "Filemom 1:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paulo prisioneiro e Timóteo"
+        },
+        {
+          "id": "b",
+          "text": "Filemom, Áfia, Arquipo e a igreja"
+        },
+        {
+          "id": "c",
+          "text": "Graça e paz de Deus e de Cristo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Paulo, prisioneiro de Cristo Jesus",
+      "feedbackCorrect": "Remetentes → destinatários → bênção.",
+      "feedbackWrong": {
+        "default": "Comece pelos remetentes."
+      },
+      "hint": "Quem escreve, a quem, a bênção.",
+      "learningObjective": "Ver a ordem da saudação.",
+      "evidence": [
+        "Filemom 1:1–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Filemom 1:6 apresenta o bem conhecido como bem que há em nós por Cristo Jesus.",
+      "verseRef": "Filemom 1:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "todo o bem que há em nós, por Cristo Jesus",
+      "feedbackCorrect": "O bem está em nós por Cristo.",
+      "feedbackWrong": {
+        "false": "O versículo fecha com por Cristo Jesus."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Interpretar a origem do bem.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Filemom 1:6, toque o trecho que sustenta a origem do bem em Cristo.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "por Cristo Jesus"
+        },
+        {
+          "id": "b",
+          "text": "sua fé"
+        },
+        {
+          "id": "c",
+          "text": "conhecimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo o bem que há em nós, por Cristo Jesus",
+      "feedbackCorrect": "Por Cristo Jesus ancora o bem.",
+      "feedbackWrong": {
+        "b": "Nomeia a comunhão.",
+        "c": "Fala do modo do conhecimento."
+      },
+      "hint": "Procure o fechamento.",
+      "learningObjective": "Sustentar a leitura cristocêntrica.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Filemom 1:1–6 sustenta?",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé e amor se tornam comunhão eficaz em Cristo"
+        },
+        {
+          "id": "b",
+          "text": "A fé não precisa de comunhão"
+        },
+        {
+          "id": "c",
+          "text": "O bem independe de Cristo"
+        },
+        {
+          "id": "d",
+          "text": "Paulo agradece sem orar por eficácia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a comunhão da sua fé se torne eficaz",
+      "feedbackCorrect": "Do testemunho nasce a oração pela comunhão eficaz.",
+      "feedbackWrong": {
+        "b": "Há pedido pela comunhão.",
+        "c": "O bem é por Cristo.",
+        "d": "Há Para que de eficácia."
+      },
+      "hint": "Una amor, fé e o Para que.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Filemom 1:4–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da comunhão?",
+      "verseRef": "Filemom 1:1–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paulo prisioneiro saúda a casa-igreja"
+        },
+        {
+          "id": "b",
+          "text": "Agradece o amor e a fé"
+        },
+        {
+          "id": "c",
+          "text": "Pede comunhão da fé eficaz"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Paulo, prisioneiro de Cristo Jesus",
+      "feedbackCorrect": "Saudação → gratidão → pedido.",
+      "feedbackWrong": {
+        "default": "Comece pela saudação."
+      },
+      "hint": "Quem escreve, o que ouve, o que pede.",
+      "learningObjective": "Ver saudação–gratidão–pedido.",
+      "evidence": [
+        "Filemom 1:1–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Filemom 1:6, a comunhão se torna eficaz no pleno ___.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "conhecimento"
+        },
+        {
+          "id": "b",
+          "text": "esquecimento"
+        },
+        {
+          "id": "c",
+          "text": "silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "no pleno conhecimento de todo o bem",
+      "feedbackCorrect": "O âmbito da eficácia é o pleno conhecimento do bem.",
+      "feedbackWrong": {
+        "b": "Não é esquecimento.",
+        "c": "Não é silêncio."
+      },
+      "hint": "Qual palavra vem depois de pleno?",
+      "learningObjective": "Lembrar a palavra conhecimento.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Filemom 1:5 a Colossenses 1:3–4?",
+      "verseRef": "Filemom 1:5",
+      "passageA": {
+        "ref": "Filemom 1:5"
+      },
+      "passageB": {
+        "ref": "Colossenses 1:3–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé e amor aos santos"
+        },
+        {
+          "id": "b",
+          "text": "Fé sem amor"
+        },
+        {
+          "id": "c",
+          "text": "Amor sem Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do amor que você tem e da fé que possui no Senhor Jesus e em todos os santos",
+      "feedbackCorrect": "Nos dois textos, Paulo celebra fé e amor.",
+      "feedbackWrong": {
+        "b": "Ambos unem fé e amor.",
+        "c": "A fé está no Senhor."
+      },
+      "hint": "Compare fé e amor.",
+      "learningObjective": "Ligar fé e amor.",
+      "evidence": [
+        "Filemom 1:5",
+        "Colossenses 1:3–4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Filemom 1:6, toque o que há em nós por Cristo Jesus.",
+      "verseRef": "Filemom 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "todo o bem"
+        },
+        {
+          "id": "b",
+          "text": "comunhão"
+        },
+        {
+          "id": "c",
+          "text": "eficaz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo o bem que há em nós, por Cristo Jesus",
+      "feedbackCorrect": "O bem em nós é o que a comunhão faz conhecer.",
+      "feedbackWrong": {
+        "b": "Comunhão é o sujeito do pedido.",
+        "c": "Eficaz descreve a comunhão, não o que há em nós."
+      },
+      "hint": "Procure o que há em nós.",
+      "learningObjective": "Sustentar o bem em Cristo.",
+      "evidence": [
+        "Filemom 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da oração em 1:4–6?",
+      "verseRef": "Filemom 1:4–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agradecer a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ouvir amor e fé"
+        },
+        {
+          "id": "c",
+          "text": "Pedir comunhão eficaz em Cristo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Agradeço ao meu Deus, lembrando-me sempre de você",
+      "feedbackCorrect": "Gratidão → testemunho → pedido.",
+      "feedbackWrong": {
+        "default": "Comece pelo agradecer."
+      },
+      "hint": "Gratidão, motivo, propósito.",
+      "learningObjective": "Ver o fio da oração.",
+      "evidence": [
+        "Filemom 1:4–6"
+      ]
+    }
+  ]
+}

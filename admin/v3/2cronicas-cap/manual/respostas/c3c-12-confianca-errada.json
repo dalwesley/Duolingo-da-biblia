@@ -1,0 +1,502 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 16:7–14",
+    "passages": [
+      {
+        "ref": "2 Crônicas 16:7–14"
+      }
+    ],
+    "context": "Hanani repreende Asa por confiar no rei da Síria e não no Senhor. Asa se ira, prende o profeta e, doente, busca médicos em vez de Deus.",
+    "keyword": "confiado",
+    "keywordGloss": "O verbo que Hanani usa: Asa confiou no rei da Síria e não no Senhor.",
+    "focusQuestion": "Em quem você apoia a mão quando a pressão aperta: no Senhor ou em alianças humanas?",
+    "reflectionPrompts": [
+      "Confiança errada",
+      "Olhos do Senhor",
+      "Doença sem busca"
+    ],
+    "facts": [
+      {
+        "text": "Hanani diz que Asa confiou no rei da Síria e não no Senhor, e o exército inimigo escapou.",
+        "evidenceRef": "2 Crônicas 16:7",
+        "evidenceSpan": "Por você ter confiado no rei da Síria e não no Senhor"
+      },
+      {
+        "text": "Ao confiar no Senhor, Asa antes entregou etíopes e líbios em suas mãos.",
+        "evidenceRef": "2 Crônicas 16:8",
+        "evidenceSpan": "ao confiar no Senhor, ele os entregou em suas mãos"
+      },
+      {
+        "text": "Os olhos do Senhor percorrem toda a terra para fortalecer quem é totalmente dele.",
+        "evidenceRef": "2 Crônicas 16:9",
+        "evidenceSpan": "os olhos do Senhor percorrem toda a terra"
+      },
+      {
+        "text": "Asa ficou irado, prendeu Hanani e oprimiu parte do povo.",
+        "evidenceRef": "2 Crônicas 16:10",
+        "evidenceSpan": "ficou irado com o profeta e o mandou prender"
+      },
+      {
+        "text": "Doente dos pés, Asa não buscou ao Senhor, mas confiou nos médicos.",
+        "evidenceRef": "2 Crônicas 16:12",
+        "evidenceSpan": "não buscou ao Senhor, mas confiou nos médicos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "confiado",
+        "gloss": "Apoio colocado no rei da Síria em vez de no Senhor."
+      },
+      {
+        "term": "olhos do Senhor",
+        "gloss": "A vigilância de Deus que fortalece o coração totalmente dele."
+      },
+      {
+        "term": "médicos",
+        "gloss": "Recurso humano em que Asa confiou na doença, sem buscar ao Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Hanani denuncia a confiança no rei da Síria",
+        "evidenceRef": "2 Crônicas 16:7–8"
+      },
+      {
+        "label": "Os olhos do Senhor e a loucura de Asa",
+        "evidenceRef": "2 Crônicas 16:9"
+      },
+      {
+        "label": "Asa prende o profeta e oprime o povo",
+        "evidenceRef": "2 Crônicas 16:10"
+      },
+      {
+        "label": "Doença grave sem buscar ao Senhor",
+        "evidenceRef": "2 Crônicas 16:12–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Por ter confiado no rei e não no Senhor, o exército inimigo escapou.",
+        "marker": "Por você ter",
+        "evidenceRef": "2 Crônicas 16:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Antes, ao confiar no Senhor, etíopes e líbios foram entregues; agora a confiança mudou de alvo.",
+        "marker": "Contudo",
+        "evidenceRef": "2 Crônicas 16:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por agir loucamente, Asa terá guerras daí em diante.",
+        "marker": "por isso",
+        "evidenceRef": "2 Crônicas 16:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Confiar no nome do Senhor"
+      },
+      {
+        "ref": "Jeremias 17:5",
+        "bridge": "Maldição a quem confia no homem"
+      },
+      {
+        "ref": "Provérbios 3:5",
+        "bridge": "Confiar no Senhor de todo coração"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Hanani elogia Asa por fazer aliança com a Síria.",
+        "why": "O profeta repreende: confiar no rei e não no Senhor fez o inimigo escapar."
+      },
+      {
+        "text": "Asa acolheu a repreensão com humildade e libertou Hanani.",
+        "why": "16:10 diz que Asa se irou, prendeu o profeta e oprimiu o povo."
+      },
+      {
+        "text": "Na doença, Asa buscou ao Senhor antes de qualquer médico.",
+        "why": "16:12: mesmo doente, não buscou ao Senhor, mas confiou nos médicos."
+      }
+    ],
+    "centralInsight": "Porque confiaste no rei e não no Senhor, o exército inimigo escapou das tuas mãos.",
+    "anchorQuestion": "Segundo Hanani em 2 Crônicas 16:7, em quem Asa confiou em vez de no Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 16:7, Hanani diz que Asa confiou no rei da Síria e não no Senhor.",
+      "verseRef": "2 Crônicas 16:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "confiado no rei da Síria e não no Senhor",
+      "feedbackCorrect": "O profeta aponta a troca: rei da Síria no lugar do Senhor.",
+      "feedbackWrong": {
+        "false": "Releia a fala de Hanani: confiança no rei, não no Senhor."
+      },
+      "hint": "Olhe o motivo dado na repreensão.",
+      "learningObjective": "Observar a acusação literal de Hanani.",
+      "evidence": ["2 Crônicas 16:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 16:9, toque o que percorre toda a terra.",
+      "verseRef": "2 Crônicas 16:9",
+      "options": [
+        { "id": "a", "text": "olhos do Senhor" },
+        { "id": "b", "text": "toda a terra" },
+        { "id": "c", "text": "agora haverá" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os olhos do Senhor percorrem toda a terra",
+      "feedbackCorrect": "São os olhos do Senhor que percorrem toda a terra.",
+      "feedbackWrong": {
+        "b": "\"Toda a terra\" é o alcance; o sujeito que percorre vem antes.",
+        "c": "\"Agora haverá\" aponta para guerras; não é o que percorre."
+      },
+      "hint": "Procure o sujeito de \"percorrem\".",
+      "learningObjective": "Identificar os olhos do Senhor no texto.",
+      "evidence": ["2 Crônicas 16:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 16:12, o que Asa fez na doença grave dos pés?",
+      "verseRef": "2 Crônicas 16:12",
+      "options": [
+        { "id": "a", "text": "Não buscou ao Senhor, mas confiou nos médicos" },
+        { "id": "b", "text": "Buscou ao Senhor antes de qualquer médico" },
+        { "id": "c", "text": "Pediu ajuda só ao rei da Síria" },
+        { "id": "d", "text": "Libertou Hanani e pediu perdão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não buscou ao Senhor, mas confiou nos médicos",
+      "feedbackCorrect": "Mesmo doente, Asa não buscou ao Senhor; confiou nos médicos.",
+      "feedbackWrong": {
+        "b": "O texto diz o contrário: não buscou ao Senhor.",
+        "c": "Aqui a confiança é nos médicos, não na Síria.",
+        "d": "Não há libertação de Hanani neste versículo."
+      },
+      "hint": "Leia o contraste no fim do versículo.",
+      "learningObjective": "Observar a confiança nos médicos.",
+      "evidence": ["2 Crônicas 16:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 16:10 na ordem do texto.",
+      "verseRef": "2 Crônicas 16:10",
+      "options": [
+        { "id": "a", "text": "Asa, contudo, ficou irado com o profeta" },
+        { "id": "b", "text": "e o mandou prender na cela do cárcere" },
+        { "id": "c", "text": "Asa oprimiu alguns do povo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ficou irado com o profeta e o mandou prender",
+      "feedbackCorrect": "Ira, prisão do profeta e opressão do povo, nessa ordem.",
+      "feedbackWrong": {
+        "default": "Comece pela ira de Asa; a opressão fecha o versículo."
+      },
+      "hint": "O versículo começa com a reação de Asa.",
+      "learningObjective": "Reconhecer a sequência de 16:10.",
+      "evidence": ["2 Crônicas 16:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 16:8, ao confiar no Senhor, ele os ___ em suas mãos.",
+      "verseRef": "2 Crônicas 16:8",
+      "options": [
+        { "id": "a", "text": "entregou" },
+        { "id": "b", "text": "expulsou" },
+        { "id": "c", "text": "esqueceu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele os entregou em suas mãos",
+      "feedbackCorrect": "Ao confiar no Senhor, Asa viu o inimigo entregue em suas mãos.",
+      "feedbackWrong": {
+        "b": "O verbo do texto é \"entregou\", não \"expulsou\".",
+        "c": "O texto fala de entrega, não de esquecimento."
+      },
+      "hint": "Veja o resultado de confiar no Senhor.",
+      "learningObjective": "Lembrar o verbo da vitória passada.",
+      "evidence": ["2 Crônicas 16:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 16:7 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 16:7",
+      "passageA": { "ref": "2 Crônicas 16:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Asa foi repreendido por trocar o Senhor pelo rei da Síria."
+      },
+      "options": [
+        { "id": "a", "text": "Confiança no rei traz perda" },
+        { "id": "b", "text": "A Síria protege Judá" },
+        { "id": "c", "text": "Hanani elogia Asa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o exército do rei da Síria escapou das suas mãos",
+      "feedbackCorrect": "Confiar no rei fez o exército inimigo escapar.",
+      "feedbackWrong": {
+        "b": "O texto mostra perda, não proteção síria.",
+        "c": "Hanani repreende, não elogia."
+      },
+      "hint": "Veja o resultado da confiança errada.",
+      "learningObjective": "Ligar o versículo à perda por confiar em reis.",
+      "evidence": ["2 Crônicas 16:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 16:8–9, o texto apresenta a confiança passada no Senhor como contraste com a loucura atual de Asa.",
+      "verseRef": "2 Crônicas 16:8–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "ao confiar no Senhor, ele os entregou em suas mãos",
+      "feedbackCorrect": "A vitória antiga por confiar no Senhor destaca a loucura presente.",
+      "feedbackWrong": {
+        "false": "16:8 lembra a confiança no Senhor; 16:9 chama a escolha atual de loucura."
+      },
+      "hint": "Compare o \"Contudo\" de 16:8 com o \"por isso\" de 16:9.",
+      "learningObjective": "Compreender o contraste entre confiança e loucura.",
+      "evidence": ["2 Crônicas 16:8–9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 16:8, toque a palavra que marca o contraste com a confiança no Senhor.",
+      "verseRef": "2 Crônicas 16:8",
+      "options": [
+        { "id": "a", "text": "Contudo" },
+        { "id": "b", "text": "etíopes" },
+        { "id": "c", "text": "carros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contudo, ao confiar no Senhor",
+      "feedbackCorrect": "\"Contudo\" vira a cena: apesar do grande exército, a confiança no Senhor venceu.",
+      "feedbackWrong": {
+        "b": "\"Etíopes\" nomeia o inimigo, não o contraste.",
+        "c": "\"Carros\" descreve o exército, não a virada."
+      },
+      "hint": "Procure a palavra que introduz a virada.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["2 Crônicas 16:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 16:9 se relaciona com a escolha de Asa?",
+      "verseRef": "2 Crônicas 16:9",
+      "options": [
+        { "id": "a", "text": "Por agir loucamente, haverá guerras contra ele" },
+        { "id": "b", "text": "Deus o elogia por alianças políticas" },
+        { "id": "c", "text": "Os olhos do Senhor ignoram Judá" },
+        { "id": "d", "text": "A paz permanente é prometida a Asa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você agiu loucamente e a partir de agora haverá guerras",
+      "feedbackCorrect": "A loucura da confiança errada resulta em guerras futuras.",
+      "feedbackWrong": {
+        "b": "O texto fala de loucura, não de elogio.",
+        "c": "Os olhos do Senhor percorrem toda a terra.",
+        "d": "O anúncio é de guerras, não de paz."
+      },
+      "hint": "Veja o \"por isso\" no meio do versículo.",
+      "learningObjective": "Relacionar loucura e guerras.",
+      "evidence": ["2 Crônicas 16:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 2 Crônicas 16:7–12?",
+      "verseRef": "2 Crônicas 16:7–12",
+      "options": [
+        { "id": "a", "text": "Hanani denuncia a confiança errada" },
+        { "id": "b", "text": "Asa prende o profeta e oprime o povo" },
+        { "id": "c", "text": "Doente, Asa confia nos médicos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não buscou ao Senhor, mas confiou nos médicos",
+      "feedbackCorrect": "Repreensão, rejeição do profeta e doença sem buscar a Deus.",
+      "feedbackWrong": {
+        "default": "A doença e os médicos fecham o movimento."
+      },
+      "hint": "Comece pela fala de Hanani.",
+      "learningObjective": "Compreender o arco da repreensão à doença.",
+      "evidence": ["2 Crônicas 16:7–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 16:9, Asa agiu ___ e haverá guerras contra ele.",
+      "verseRef": "2 Crônicas 16:9",
+      "options": [
+        { "id": "a", "text": "sabiamente" },
+        { "id": "b", "text": "loucamente" },
+        { "id": "c", "text": "caladamente" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "você agiu loucamente",
+      "feedbackCorrect": "O texto chama a escolha de Asa de loucura.",
+      "feedbackWrong": {
+        "a": "O advérbio do texto é \"loucamente\", não \"sabiamente\".",
+        "c": "Não é silêncio; é loucura nomeada."
+      },
+      "hint": "Veja como Hanani avalia a ação de Asa.",
+      "learningObjective": "Lembrar o julgamento sobre a escolha de Asa.",
+      "evidence": ["2 Crônicas 16:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 16:7 a Jeremias 17:5?",
+      "verseRef": "2 Crônicas 16:7",
+      "passageA": { "ref": "2 Crônicas 16:7" },
+      "passageB": { "ref": "Jeremias 17:5" },
+      "options": [
+        { "id": "a", "text": "Maldição a quem confia no homem" },
+        { "id": "b", "text": "Louvor às alianças reais" },
+        { "id": "c", "text": "Vitória sem o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "confiado no rei da Síria e não no Senhor",
+      "evidence": ["2 Crônicas 16:7", "Jeremias 17:5"],
+      "feedbackCorrect": "Nos dois textos, confiar no homem em vez de Deus traz prejuízo.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos louva alianças no lugar de Deus.",
+        "c": "Aqui a confiança errada traz perda, não vitória."
+      },
+      "hint": "Compare o alvo da confiança nos dois trechos.",
+      "learningObjective": "Relacionar a repreensão de Hanani a Jeremias 17:5."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 16:7–12 apresenta Asa como modelo de quem recebe a repreensão profética com arrependimento.",
+      "verseRef": "2 Crônicas 16:10–12",
+      "correctOptionId": "false",
+      "evidenceSpan": "ficou irado com o profeta e o mandou prender",
+      "feedbackCorrect": "Asa se ira, prende Hanani e, doente, ainda não busca ao Senhor.",
+      "feedbackWrong": {
+        "true": "O texto mostra ira, prisão e confiança nos médicos, não arrependimento."
+      },
+      "hint": "Veja a reação de Asa em 16:10 e 16:12.",
+      "learningObjective": "Interpretar a rejeição da repreensão.",
+      "evidence": ["2 Crônicas 16:10–12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 16:12, toque o trecho que sustenta a leitura de confiança deslocada na doença.",
+      "verseRef": "2 Crônicas 16:12",
+      "options": [
+        { "id": "a", "text": "confiou nos médicos" },
+        { "id": "b", "text": "trigésimo nono ano" },
+        { "id": "c", "text": "adoeceu dos pés" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "confiou nos médicos",
+      "feedbackCorrect": "A leitura se sustenta no contraste: não buscou ao Senhor, confiou nos médicos.",
+      "feedbackWrong": {
+        "b": "A data situa o fato; o alvo da confiança vem no fim.",
+        "c": "A doença é o cenário; o erro é a confiança nos médicos."
+      },
+      "hint": "Procure em quem Asa pôs a confiança.",
+      "learningObjective": "Sustentar com o texto a confiança deslocada.",
+      "evidence": ["2 Crônicas 16:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 16:7–9 sustenta sobre a confiança?",
+      "verseRef": "2 Crônicas 16:7–9",
+      "options": [
+        { "id": "a", "text": "Confiar no Senhor fortalece; confiar em reis traz perda" },
+        { "id": "b", "text": "Alianças humanas substituem a busca a Deus" },
+        { "id": "c", "text": "Os olhos do Senhor só veem o templo" },
+        { "id": "d", "text": "A loucura de Asa é elogiada como prudência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para mostrar-se forte para com aqueles cujo coração é totalmente dele",
+      "feedbackCorrect": "Deus fortalece o coração totalmente dele; confiar em reis fez o inimigo escapar.",
+      "feedbackWrong": {
+        "b": "Hanani condena justamente essa troca.",
+        "c": "Os olhos do Senhor percorrem toda a terra.",
+        "d": "O texto chama a escolha de loucura."
+      },
+      "hint": "Compare 16:7 com a promessa de 16:9.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["2 Crônicas 16:7–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da confiança que começa em 2 Crônicas 16:7?",
+      "verseRef": "2 Crônicas 16:7",
+      "options": [
+        { "id": "a", "text": "Asa confia no rei e perde o exército inimigo" },
+        { "id": "b", "text": "Maldito quem confia no homem e desvia do Senhor" },
+        { "id": "c", "text": "Confie no Senhor de todo o coração" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "confiado no rei da Síria e não no Senhor",
+      "evidence": ["2 Crônicas 16:7", "Jeremias 17:5", "Provérbios 3:5"],
+      "feedbackCorrect": "A perda de Asa ecoa o aviso dos profetas e o chamado a confiar no Senhor.",
+      "feedbackWrong": {
+        "default": "Siga: fato em Asa, aviso em Jeremias, chamado em Provérbios."
+      },
+      "hint": "Comece pelo fato de Asa; termine no chamado a confiar.",
+      "learningObjective": "Ver a confiança errada no fio da Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 16:9, os ___ do Senhor percorrem toda a terra.",
+      "verseRef": "2 Crônicas 16:9",
+      "options": [
+        { "id": "a", "text": "olhos" },
+        { "id": "b", "text": "anjos" },
+        { "id": "c", "text": "exércitos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os olhos do Senhor percorrem toda a terra",
+      "feedbackCorrect": "O termo carrega a vigilância de Deus sobre quem é totalmente dele.",
+      "feedbackWrong": {
+        "b": "O texto fala de olhos do Senhor, não de anjos.",
+        "c": "Não são exércitos que percorrem; são os olhos do Senhor."
+      },
+      "hint": "É a palavra que abre a promessa de força.",
+      "learningObjective": "Lembrar o termo teológico da vigilância divina.",
+      "evidence": ["2 Crônicas 16:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 16:9 a Salmos 20:7?",
+      "verseRef": "2 Crônicas 16:9",
+      "passageA": { "ref": "2 Crônicas 16:9" },
+      "passageB": { "ref": "Salmos 20:7" },
+      "options": [
+        { "id": "a", "text": "Confiar no nome do Senhor" },
+        { "id": "b", "text": "Confiar em carros de guerra" },
+        { "id": "c", "text": "Ignorar o coração diante de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coração é totalmente dele",
+      "evidence": ["2 Crônicas 16:9", "Salmos 20:7"],
+      "feedbackCorrect": "Nos dois textos, o Senhor fortalece quem nele confia de coração.",
+      "feedbackWrong": {
+        "b": "O salmo contrapõe carros à confiança no Senhor.",
+        "c": "16:9 fala de coração totalmente dele."
+      },
+      "hint": "Compare o alvo da confiança e o coração.",
+      "learningObjective": "Ligar os olhos do Senhor à confiança do salmo."
+    }
+  ]
+}

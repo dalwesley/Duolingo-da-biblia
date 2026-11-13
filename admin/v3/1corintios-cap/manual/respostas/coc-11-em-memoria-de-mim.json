@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "1 Coríntios 11:23–28",
+    "passages": [
+      { "ref": "1 Coríntios 11:23–28" },
+      { "ref": "1 Coríntios 11:29" }
+    ],
+    "context": "Em meio a abusos na ceia, Paulo entrega o que recebeu do Senhor: pão e cálice na noite da traição, memória de Jesus até que Ele venha.",
+    "keyword": "em memória",
+    "keywordGloss": "A ceia não é rotina vazia: anuncia a morte do Senhor e pede exame de si.",
+    "focusQuestion": "Quando você parte o pão, o que anuncia de fato sobre a morte do Senhor?",
+    "reflectionPrompts": [
+      "Recebido do Senhor",
+      "Anunciar a morte",
+      "Examinar-se a si"
+    ],
+    "facts": [
+      {
+        "text": "Paulo recebeu do Senhor o que também entregou sobre a ceia.",
+        "evidenceRef": "1 Coríntios 11:23",
+        "evidenceSpan": "recebi do Senhor o que também lhes entreguei"
+      },
+      {
+        "text": "Na noite em que foi traído, o Senhor Jesus tomou o pão.",
+        "evidenceRef": "1 Coríntios 11:23",
+        "evidenceSpan": "na noite em que foi traído, tomou o pão"
+      },
+      {
+        "text": "O pão é o corpo de Jesus, dado por vocês; façam isto em memória dele.",
+        "evidenceRef": "1 Coríntios 11:24",
+        "evidenceSpan": "façam isto em memória de mim"
+      },
+      {
+        "text": "O cálice é a nova aliança no sangue de Jesus.",
+        "evidenceRef": "1 Coríntios 11:25",
+        "evidenceSpan": "Este cálice é a nova aliança no meu sangue"
+      },
+      {
+        "text": "Comer o pão e beber o cálice anuncia a morte do Senhor até que Ele venha.",
+        "evidenceRef": "1 Coríntios 11:26",
+        "evidenceSpan": "anunciam a morte do Senhor, até que Ele venha"
+      },
+      {
+        "text": "Quem come de maneira indigna, sem discernir o corpo, come juízo para si.",
+        "evidenceRef": "1 Coríntios 11:29",
+        "evidenceSpan": "come e bebe juízo para si, não discernindo o corpo do Senhor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "memória",
+        "gloss": "Lembrar Jesus no pão e no cálice: a ceia aponta para a cruz."
+      },
+      {
+        "term": "aliança",
+        "gloss": "A nova aliança no sangue de Cristo, selada no cálice."
+      },
+      {
+        "term": "indigna",
+        "gloss": "Participar sem exame e sem discernir o corpo: caminho de juízo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Tradição recebida do Senhor",
+        "evidenceRef": "1 Coríntios 11:23"
+      },
+      {
+        "label": "Pão e cálice em memória",
+        "evidenceRef": "1 Coríntios 11:24–25"
+      },
+      {
+        "label": "Anúncio até que Ele venha",
+        "evidenceRef": "1 Coríntios 11:26"
+      },
+      {
+        "label": "Exame de si e discernimento",
+        "evidenceRef": "1 Coríntios 11:27–29"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Sempre que comem e bebem, anunciam a morte do Senhor até que Ele venha.",
+        "marker": "Porque",
+        "evidenceRef": "1 Coríntios 11:26"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto, comer de forma indigna traz responsabilidade pelo corpo e sangue.",
+        "marker": "Portanto",
+        "evidenceRef": "1 Coríntios 11:27"
+      },
+      {
+        "kind": "causa",
+        "text": "Quem não discerne o corpo come e bebe juízo para si.",
+        "marker": "Pois",
+        "evidenceRef": "1 Coríntios 11:29"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 22:19–20",
+        "bridge": "Instituição da ceia"
+      },
+      {
+        "ref": "Êxodo 24:8",
+        "bridge": "Sangue da aliança"
+      },
+      {
+        "ref": "Hebreus 9:15",
+        "bridge": "Nova aliança em Cristo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A ceia é só refeição social, sem anúncio da morte de Jesus.",
+        "why": "Sempre que comem e bebem, anunciam a morte do Senhor até que Ele venha."
+      },
+      {
+        "text": "Qualquer participação automática é segura, sem exame de si.",
+        "why": "Paulo manda examinar-se e avisa sobre juízo a quem não discerne o corpo."
+      },
+      {
+        "text": "Paulo inventou a ceia; não veio do Senhor.",
+        "why": "Ele diz: recebi do Senhor o que também lhes entreguei."
+      }
+    ],
+    "centralInsight": "Comer o pão e beber o cálice anuncia a morte do Senhor: examine-se a si mesmo.",
+    "anchorQuestion": "O que se anuncia sempre que se come o pão e se bebe o cálice, segundo 11:26?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 11:23, Paulo diz que recebeu do Senhor o que também entregou sobre a ceia.",
+      "verseRef": "1 Coríntios 11:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "recebi do Senhor o que também lhes entreguei",
+      "feedbackCorrect": "A tradição da ceia vem do Senhor, não de invenção de Paulo.",
+      "feedbackWrong": {
+        "false": "Releia o começo de 11:23: recebi do Senhor o que também lhes entreguei."
+      },
+      "hint": "Olhe a primeira frase do versículo.",
+      "learningObjective": "Observar a origem da tradição da ceia.",
+      "evidence": ["1 Coríntios 11:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 11:24, toque o que Jesus pede que façam com o pão.",
+      "verseRef": "1 Coríntios 11:24",
+      "options": [
+        { "id": "a", "text": "dado graças" },
+        { "id": "b", "text": "em memória" },
+        { "id": "c", "text": "meu corpo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "façam isto em memória de mim",
+      "feedbackCorrect": "O gesto é em memória dele: lembrar a entrega do corpo.",
+      "feedbackWrong": {
+        "a": "\"Dado graças\" é o que Jesus fez; o pedido é \"em memória\".",
+        "c": "\"Meu corpo\" explica o pão; o pedido é fazê-lo em memória."
+      },
+      "hint": "Procure o fim da fala de Jesus.",
+      "learningObjective": "Identificar o pedido de memória.",
+      "evidence": ["1 Coríntios 11:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Coríntios 11:26, o que se anuncia ao comer e beber?",
+      "verseRef": "1 Coríntios 11:26",
+      "options": [
+        { "id": "a", "text": "A riqueza da igreja em Corinto" },
+        { "id": "b", "text": "A morte do Senhor, até que Ele venha" },
+        { "id": "c", "text": "A vitória política de Israel" },
+        { "id": "d", "text": "O fim imediato de toda tentação" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "anunciam a morte do Senhor, até que Ele venha",
+      "feedbackCorrect": "A ceia anuncia a morte do Senhor e aponta para a vinda dele.",
+      "feedbackWrong": {
+        "a": "O anúncio é a morte do Senhor, não a riqueza local.",
+        "c": "Não há vitória política no versículo.",
+        "d": "O horizonte é \"até que Ele venha\", não o fim imediato da tentação."
+      },
+      "hint": "Leia o verbo \"anunciam\" e o objeto.",
+      "learningObjective": "Observar o anúncio da morte do Senhor.",
+      "evidence": ["1 Coríntios 11:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 11:23–24 na ordem do texto.",
+      "verseRef": "1 Coríntios 11:23–24",
+      "options": [
+        { "id": "a", "text": "o Senhor Jesus, na noite em que foi traído, tomou o pão" },
+        { "id": "b", "text": "E, tendo dado graças, partiu e disse" },
+        { "id": "c", "text": "Tomem e comam: isto é o meu corpo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tomou o pão",
+      "feedbackCorrect": "Jesus toma o pão, dá graças, parte e interpreta: isto é o meu corpo.",
+      "feedbackWrong": {
+        "default": "Comece pela noite da traição; a fala sobre o corpo vem depois."
+      },
+      "hint": "A cena começa com Jesus tomando o pão.",
+      "learningObjective": "Reconhecer a sequência da instituição.",
+      "evidence": ["1 Coríntios 11:23–24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Coríntios 11:28, o que o homem deve fazer a si mesmo antes de comer?",
+      "verseRef": "1 Coríntios 11:28",
+      "options": [
+        { "id": "a", "text": "desculpe" },
+        { "id": "b", "text": "Examine-se" },
+        { "id": "c", "text": "esconda" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Examine-se, pois, o homem a si mesmo",
+      "feedbackCorrect": "Antes do pão e do cálice, examine-se a si mesmo.",
+      "feedbackWrong": {
+        "a": "O verbo do texto é examinar-se, não só pedir desculpas.",
+        "c": "Não é esconder; é examinar-se."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o exame de si antes da ceia.",
+      "evidence": ["1 Coríntios 11:28"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Coríntios 11:25 comunica que se liga a este contexto?",
+      "verseRef": "1 Coríntios 11:25",
+      "passageA": { "ref": "1 Coríntios 11:25" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O cálice aponta para a nova aliança no sangue de Jesus."
+      },
+      "options": [
+        { "id": "a", "text": "Nova aliança no sangue" },
+        { "id": "b", "text": "Cálice sem aliança" },
+        { "id": "c", "text": "Só memória humana" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+      "feedbackCorrect": "Jesus liga o cálice à nova aliança no seu sangue.",
+      "feedbackWrong": {
+        "b": "O texto define o cálice como nova aliança.",
+        "c": "Há memória, mas selada na aliança do sangue."
+      },
+      "hint": "Veja como Jesus nomeia o cálice.",
+      "learningObjective": "Ligar o cálice à nova aliança.",
+      "evidence": ["1 Coríntios 11:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 11:27, comer o pão de forma indigna não traz qualquer responsabilidade.",
+      "verseRef": "1 Coríntios 11:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "será responsável pelo corpo e pelo sangue do Senhor",
+      "feedbackCorrect": "O \"Portanto\" liga o anúncio à responsabilidade de quem come indignamente.",
+      "feedbackWrong": {
+        "true": "Releia 11:27: será responsável pelo corpo e pelo sangue do Senhor."
+      },
+      "hint": "Olhe o que acontece com quem come de forma indigna.",
+      "learningObjective": "Compreender a responsabilidade na ceia.",
+      "evidence": ["1 Coríntios 11:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 11:27, toque a palavra que liga o aviso ao anúncio anterior.",
+      "verseRef": "1 Coríntios 11:27",
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "indigna" },
+        { "id": "c", "text": "sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, todo aquele que comer o pão",
+      "feedbackCorrect": "\"Portanto\" amarra o anúncio da morte à responsabilidade na mesa.",
+      "feedbackWrong": {
+        "b": "\"Indigna\" descreve o modo; a ligação é \"Portanto\".",
+        "c": "\"Sangue\" é parte da responsabilidade, não o conector."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": ["1 Coríntios 11:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Coríntios 11:28–29 se relaciona com 11:26?",
+      "verseRef": "1 Coríntios 11:28–29",
+      "options": [
+        { "id": "a", "text": "Quem anuncia a morte deve examinar-se e discernir o corpo" },
+        { "id": "b", "text": "O anúncio dispensa qualquer exame pessoal" },
+        { "id": "c", "text": "Só líderes precisam discernir o corpo" },
+        { "id": "d", "text": "Juízo só cai sobre quem nunca comeu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Examine-se, pois, o homem a si mesmo",
+      "feedbackCorrect": "Anunciar a morte do Senhor pede exame de si e discernimento do corpo.",
+      "feedbackWrong": {
+        "b": "11:28 manda examinar-se antes de comer.",
+        "c": "O aviso é a \"todo aquele\" e \"o homem\".",
+        "d": "Quem come indignamente come juízo para si."
+      },
+      "hint": "Ligue anúncio, exame e juízo.",
+      "learningObjective": "Relacionar anúncio e exame de si.",
+      "evidence": ["1 Coríntios 11:28–29"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Coríntios 11:23–29?",
+      "verseRef": "1 Coríntios 11:23–24",
+      "options": [
+        { "id": "a", "text": "Tradição recebida do Senhor" },
+        { "id": "b", "text": "Anúncio até que Ele venha" },
+        { "id": "c", "text": "Exame de si e discernimento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "recebi do Senhor o que também lhes entreguei",
+      "feedbackCorrect": "Da tradição ao anúncio, e do anúncio ao exame responsável.",
+      "feedbackWrong": {
+        "default": "Comece por 11:23; o exame fecha em 11:28–29."
+      },
+      "hint": "O exame de si é o ponto de chegada.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": ["1 Coríntios 11:23", "1 Coríntios 11:26", "1 Coríntios 11:28"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Coríntios 11:29, que palavra explica por que há juízo ao comer?",
+      "verseRef": "1 Coríntios 11:29",
+      "options": [
+        { "id": "a", "text": "Pois" },
+        { "id": "b", "text": "Assim" },
+        { "id": "c", "text": "Depois" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois quem come e bebe de maneira indigna",
+      "feedbackCorrect": "\"Pois\" introduz a causa: não discernir o corpo traz juízo.",
+      "feedbackWrong": {
+        "b": "O marcador causal no texto é \"Pois\".",
+        "c": "Não há \"Depois\" abrindo a explicação."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Notar o marcador de causa do juízo.",
+      "evidence": ["1 Coríntios 11:29"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 11:25 a Lucas 22:19–20?",
+      "verseRef": "1 Coríntios 11:25",
+      "passageA": { "ref": "1 Coríntios 11:25" },
+      "passageB": { "ref": "Lucas 22:19–20" },
+      "options": [
+        { "id": "a", "text": "Instituição da ceia" },
+        { "id": "b", "text": "Ceia inventada depois" },
+        { "id": "c", "text": "Cálice sem sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+      "feedbackCorrect": "Paulo entrega a mesma instituição que Lucas relata da noite.",
+      "feedbackWrong": {
+        "b": "Ele recebeu do Senhor; Lucas mostra Jesus na noite.",
+        "c": "Nos dois textos o cálice está ligado ao sangue."
+      },
+      "hint": "Compare as palavras sobre pão e cálice.",
+      "learningObjective": "Relacionar Paulo e Lucas na ceia.",
+      "evidence": ["1 Coríntios 11:25", "Lucas 22:19–20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 11:26–29, a ceia anuncia a morte do Senhor e exige discernir o corpo.",
+      "verseRef": "1 Coríntios 11:26",
+      "correctOptionId": "true",
+      "evidenceSpan": "anunciam a morte do Senhor, até que Ele venha",
+      "feedbackCorrect": "Anúncio e exame caminham juntos: memória viva, não rotina cega.",
+      "feedbackWrong": {
+        "false": "11:26 anuncia a morte; 11:29 exige discernir o corpo."
+      },
+      "hint": "Una o anúncio de 11:26 ao aviso de 11:29.",
+      "learningObjective": "Interpretar ceia como anúncio com responsabilidade.",
+      "evidence": ["1 Coríntios 11:26", "1 Coríntios 11:29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 11:29, toque o trecho que mostra a falha de quem come juízo.",
+      "verseRef": "1 Coríntios 11:29",
+      "options": [
+        { "id": "a", "text": "não discernindo" },
+        { "id": "b", "text": "maneira indigna" },
+        { "id": "c", "text": "para si" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não discernindo o corpo do Senhor",
+      "feedbackCorrect": "O juízo vem de não discernir o corpo do Senhor.",
+      "feedbackWrong": {
+        "b": "\"Maneira indigna\" descreve o modo; a falha nomeada é não discernir.",
+        "c": "\"Para si\" diz a quem cai o juízo, não a falha."
+      },
+      "hint": "Procure o gerúndio no fim do versículo.",
+      "learningObjective": "Sustentar que o juízo liga-se a não discernir.",
+      "evidence": ["1 Coríntios 11:29"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Coríntios 11:23–29 sustenta sobre a ceia?",
+      "verseRef": "1 Coríntios 11:26",
+      "options": [
+        { "id": "a", "text": "Anuncia a morte do Senhor e pede exame de si" },
+        { "id": "b", "text": "É só refeição social sem anúncio" },
+        { "id": "c", "text": "Participação automática é sempre segura" },
+        { "id": "d", "text": "Paulo inventou a ceia sem o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "anunciam a morte do Senhor, até que Ele venha",
+      "feedbackCorrect": "Recebida do Senhor, a ceia anuncia a cruz e exige examinar-se.",
+      "feedbackWrong": {
+        "b": "11:26 fala em anunciar a morte do Senhor.",
+        "c": "11:27–29 avisam sobre responsabilidade e juízo.",
+        "d": "11:23: recebi do Senhor o que também lhes entreguei."
+      },
+      "hint": "Compare cada opção com 11:23, 26 e 28.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": ["1 Coríntios 11:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da aliança no sangue?",
+      "verseRef": "1 Coríntios 11:25",
+      "options": [
+        { "id": "a", "text": "Sangue da aliança no Sinai" },
+        { "id": "b", "text": "Cálice da nova aliança em Jesus" },
+        { "id": "c", "text": "Cristo mediador da nova aliança" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Este cálice é a nova aliança no meu sangue",
+      "feedbackCorrect": "Do Sinai ao cálice e a Hebreus, a aliança se cumpre em Cristo.",
+      "feedbackWrong": {
+        "default": "Siga: Êx 24:8 → 1 Co 11:25 → Hb 9:15."
+      },
+      "hint": "Comece pela aliança antiga e chegue ao mediador.",
+      "learningObjective": "Ver a nova aliança como fio bíblico.",
+      "evidence": ["Êxodo 24:8", "1 Coríntios 11:25", "Hebreus 9:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Coríntios 11:25, que palavra descreve a aliança no sangue de Jesus?",
+      "verseRef": "1 Coríntios 11:25",
+      "options": [
+        { "id": "a", "text": "antiga" },
+        { "id": "b", "text": "nova" },
+        { "id": "c", "text": "fraca" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a nova aliança no meu sangue",
+      "feedbackCorrect": "O cálice é a nova aliança no sangue de Cristo.",
+      "feedbackWrong": {
+        "a": "O texto diz nova aliança, não antiga.",
+        "c": "Não há \"fraca\"; há \"nova\"."
+      },
+      "hint": "É o adjetivo diante de \"aliança\".",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": ["1 Coríntios 11:25"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 11:25 a Hebreus 9:15?",
+      "verseRef": "1 Coríntios 11:25",
+      "passageA": { "ref": "1 Coríntios 11:25" },
+      "passageB": { "ref": "Hebreus 9:15" },
+      "options": [
+        { "id": "a", "text": "Nova aliança em Cristo" },
+        { "id": "b", "text": "Aliança sem mediador" },
+        { "id": "c", "text": "Sangue sem promessa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a nova aliança no meu sangue",
+      "feedbackCorrect": "O cálice anuncia o que Hebreus explica: Cristo mediador da nova aliança.",
+      "feedbackWrong": {
+        "b": "Hebreus fala de mediador; o cálice aponta para o sangue dele.",
+        "c": "Há aliança e sangue nos dois textos."
+      },
+      "hint": "Compare \"nova aliança\" nos dois trechos.",
+      "learningObjective": "Ligar o cálice ao mediador da nova aliança.",
+      "evidence": ["1 Coríntios 11:25", "Hebreus 9:15"]
+    }
+  ]
+}

@@ -250,7 +250,7 @@ class _MemberRow extends StatelessWidget {
                         bottom: -2,
                         child: _Badge(
                           color: a.cardFill,
-                          ink: a.chrome,
+                          ink: a.place,
                           glyph: CinematicGlyph.crown,
                         ),
                       ),
@@ -287,8 +287,36 @@ class _MemberRow extends StatelessWidget {
                               style: AppTypography.label(
                                 size: 9,
                                 letterSpacing: 0.4,
-                                color: a.chrome,
+                                color: a.place,
                               ),
+                            ),
+                          ),
+                        ],
+                        // Selos "Fiel na semana" ganhos neste grupo.
+                        if (member.sealWeeks.isNotEmpty) ...[
+                          const SizedBox(width: 6),
+                          Tooltip(
+                            message: l10n.roomSealCount(
+                              member.sealWeeks.length,
+                            ),
+                            child: Row(
+                              mainAxisSize: MainAxisSize.min,
+                              children: [
+                                const CinematicIcon(
+                                  glyph: CinematicGlyph.shield,
+                                  size: 12,
+                                  accent: AppRoles.reward,
+                                  framed: false,
+                                ),
+                                const SizedBox(width: 2),
+                                Text(
+                                  '${member.sealWeeks.length}',
+                                  style: AppTypography.label(
+                                    size: 11,
+                                    color: AppRoles.reward,
+                                  ),
+                                ),
+                              ],
                             ),
                           ),
                         ],
@@ -308,9 +336,9 @@ class _MemberRow extends StatelessWidget {
                         ],
                         Flexible(
                           child: Text(
-                            didStudy && state != SeatState.today
-                                ? l10n.groupMemberDidStudy
-                                : status,
+                            // O estudo do grupo vale mais que caminhar hoje:
+                            // são coisas diferentes e o grupo quer ver este.
+                            didStudy ? l10n.groupMemberDidStudy : status,
                             maxLines: 1,
                             overflow: TextOverflow.ellipsis,
                             style: AppTypography.body(
@@ -450,7 +478,7 @@ class _InviteRow extends StatelessWidget {
                       child: CinematicIcon(
                         glyph: CinematicGlyph.plus,
                         size: AppMetrics.iconSm,
-                        accent: a.chrome,
+                        accent: a.place,
                         framed: false,
                       ),
                     ),

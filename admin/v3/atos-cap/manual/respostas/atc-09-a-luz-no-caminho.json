@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Atos 9:1–6",
+    "passages": [
+      {
+        "ref": "Atos 9:1–6"
+      },
+      {
+        "ref": "Atos 9:7–9"
+      }
+    ],
+    "context": "Saulo persegue os discípulos e vai a Damasco com cartas para prendê-los. No caminho, uma luz do céu o derruba e uma voz o confronta.",
+    "keyword": "persegues",
+    "keywordGloss": "Jesus se identifica com a igreja: perseguir os discípulos é perseguir a ele.",
+    "focusQuestion": "Se Jesus se identifica com o povo dele, como você trata quem o segue?",
+    "reflectionPrompts": [
+      "Ameaças no caminho",
+      "Quem és, Senhor?",
+      "Levanta-te e entra"
+    ],
+    "facts": [
+      {
+        "text": "Saulo ainda respirava ameaças e mortes contra os discípulos do Senhor.",
+        "evidenceRef": "Atos 9:1",
+        "evidenceSpan": "ainda respirando ameaças e mortes contra os discípulos do Senhor"
+      },
+      {
+        "text": "Ele pediu cartas para prender em Damasco quem pertencia ao Caminho.",
+        "evidenceRef": "Atos 9:2",
+        "evidenceSpan": "caso se encontrasse alguns que pertenciam ao Caminho"
+      },
+      {
+        "text": "Ao se aproximar de Damasco, uma luz brilhante do céu o rodeou.",
+        "evidenceRef": "Atos 9:3",
+        "evidenceSpan": "foi rodeado por uma luz brilhante que veio do céu"
+      },
+      {
+        "text": "A voz perguntou: Saulo, Saulo, por que me persegues?",
+        "evidenceRef": "Atos 9:4",
+        "evidenceSpan": "Saulo, Saulo, por que me persegues?"
+      },
+      {
+        "text": "A voz se identificou: Eu sou Jesus, a quem você persegue.",
+        "evidenceRef": "Atos 9:5",
+        "evidenceSpan": "Eu sou Jesus, a quem você persegue"
+      },
+      {
+        "text": "Saulo ficou três dias sem ver, e não comeu nem bebeu.",
+        "evidenceRef": "Atos 9:9",
+        "evidenceSpan": "permaneceu três dias sem ver, durante os quais não comeu nem bebeu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Caminho",
+        "gloss": "Nome dos discípulos que Saulo queria prender: o movimento de quem segue Jesus."
+      },
+      {
+        "term": "persegues",
+        "gloss": "A acusação de Jesus: atacar a igreja é atacar a ele mesmo."
+      },
+      {
+        "term": "Levanta-te",
+        "gloss": "A ordem de Jesus: Saulo deve entrar na cidade e receber o que deve fazer."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Saulo parte para prender discípulos",
+        "evidenceRef": "Atos 9:1–2"
+      },
+      {
+        "label": "A luz do céu o derruba",
+        "evidenceRef": "Atos 9:3–4"
+      },
+      {
+        "label": "Jesus se identifica e dá ordem",
+        "evidenceRef": "Atos 9:5–6"
+      },
+      {
+        "label": "Saulo fica cego e é levado a Damasco",
+        "evidenceRef": "Atos 9:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Jesus explica a perseguição: \"a quem você persegue\" é ele mesmo.",
+        "marker": "a quem",
+        "evidenceRef": "Atos 9:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois da luz e da voz, Saulo não consegue ver e é guiado pela mão.",
+        "marker": "guiando-o",
+        "evidenceRef": "Atos 9:8"
+      },
+      {
+        "kind": "sequência",
+        "text": "Saulo pergunta o que fazer, e o Senhor ordena: levanta-te e entra na cidade.",
+        "marker": "Levanta-te",
+        "evidenceRef": "Atos 9:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 9:15",
+        "bridge": "Instrumento escolhido por Jesus"
+      },
+      {
+        "ref": "Gálatas 1:13",
+        "bridge": "Paulo perseguia a igreja"
+      },
+      {
+        "ref": "1 Timóteo 1:13",
+        "bridge": "Misericórdia ao perseguidor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Saulo só perseguia ideias; Jesus não se importa com a igreja.",
+        "why": "Jesus pergunta \"por que me persegues?\" e se identifica com os discípulos."
+      },
+      {
+        "text": "A luz foi um acidente; Saulo não ouviu nenhuma ordem de Jesus.",
+        "why": "Ele ouve a voz, pergunta quem é, e recebe ordem: levanta-te e entra na cidade."
+      },
+      {
+        "text": "Os companheiros viram Jesus claramente e explicaram tudo a Saulo.",
+        "why": "Eles ouviram a voz, mas não viram ninguém; Saulo é quem é confrontado."
+      }
+    ],
+    "centralInsight": "Quem persegue a igreja persegue Jesus, e Jesus muda até o perseguidor.",
+    "anchorQuestion": "Com quem Jesus se identifica quando pergunta a Saulo por que o persegue?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 9:2, Saulo pediu cartas para levar a Damasco os que pertenciam ao Caminho.",
+      "verseRef": "Atos 9:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "os levasse presos a Jerusalém",
+      "feedbackCorrect": "As cartas eram para Damasco; os presos seriam levados a Jerusalém.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 9:2: os levaria presos a Jerusalém."
+      },
+      "hint": "Veja para onde os presos seriam levados.",
+      "learningObjective": "Observar o destino dos presos no plano de Saulo.",
+      "evidence": [
+        "Atos 9:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 9:3, toque de onde veio a luz brilhante.",
+      "verseRef": "Atos 9:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "do céu"
+        },
+        {
+          "id": "b",
+          "text": "de Damasco"
+        },
+        {
+          "id": "c",
+          "text": "de repente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma luz brilhante que veio do céu",
+      "feedbackCorrect": "A luz não é da cidade: veio do céu.",
+      "feedbackWrong": {
+        "b": "Damasco é o destino da viagem, não a origem da luz.",
+        "c": "A luz veio do céu, não da cidade."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Identificar a origem da luz.",
+      "evidence": [
+        "Atos 9:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 9:5, quem a voz diz ser?",
+      "verseRef": "Atos 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um anjo enviado de Damasco"
+        },
+        {
+          "id": "b",
+          "text": "O sumo sacerdote de Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Jesus, a quem Saulo perseguia"
+        },
+        {
+          "id": "d",
+          "text": "Um dos discípulos do Caminho"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "A voz se apresenta: Jesus, e Saulo o perseguia.",
+      "feedbackWrong": {
+        "a": "A resposta é Jesus, não um anjo.",
+        "b": "Saulo tinha ido ao sumo sacerdote; a voz é de Jesus.",
+        "d": "A voz é de Jesus, não de um discípulo."
+      },
+      "hint": "Leia a resposta à pergunta \"Quem és, Senhor?\".",
+      "learningObjective": "Observar a identidade da voz.",
+      "evidence": [
+        "Atos 9:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 9:4 na ordem do texto.",
+      "verseRef": "Atos 9:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caindo por terra"
+        },
+        {
+          "id": "b",
+          "text": "ele ouviu uma voz que dizia"
+        },
+        {
+          "id": "c",
+          "text": "Saulo, Saulo, por que me persegues?"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Saulo, Saulo, por que me persegues?",
+      "feedbackCorrect": "Ele cai, ouve a voz e recebe a pergunta de Jesus.",
+      "feedbackWrong": {
+        "default": "Comece pela queda; a pergunta fecha o versículo."
+      },
+      "hint": "O versículo começa com a queda.",
+      "learningObjective": "Reconhecer a sequência de Atos 9:4.",
+      "evidence": [
+        "Atos 9:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 9:9, quantos dias Saulo permaneceu sem ver?",
+      "verseRef": "Atos 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "dois"
+        },
+        {
+          "id": "b",
+          "text": "três"
+        },
+        {
+          "id": "c",
+          "text": "sete"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "permaneceu três dias sem ver",
+      "feedbackCorrect": "Foram três dias sem ver, sem comer e sem beber.",
+      "feedbackWrong": {
+        "a": "O texto diz três dias, não dois.",
+        "c": "O texto diz três dias, não sete."
+      },
+      "hint": "Olhe o número no começo do versículo.",
+      "learningObjective": "Lembrar a duração da cegueira.",
+      "evidence": [
+        "Atos 9:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 9:1 comunica que se liga a este contexto?",
+      "verseRef": "Atos 9:1",
+      "passageA": {
+        "ref": "Atos 9:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Saulo ainda respirava ameaças contra os discípulos do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Saulo já era discípulo"
+        },
+        {
+          "id": "b",
+          "text": "O perseguidor ainda ameaça"
+        },
+        {
+          "id": "c",
+          "text": "A perseguição tinha acabado"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ainda respirando ameaças e mortes",
+      "feedbackCorrect": "O \"ainda\" mostra que a hostilidade continua ativa.",
+      "feedbackWrong": {
+        "a": "Ele ainda respira ameaças contra os discípulos.",
+        "c": "O texto diz \"ainda\": a perseguição não acabou."
+      },
+      "hint": "Repare na palavra \"ainda\".",
+      "learningObjective": "Ligar Atos 9:1 ao clima de perseguição.",
+      "evidence": [
+        "Atos 9:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 9:4–5, Jesus trata a perseguição aos discípulos como perseguição a si mesmo.",
+      "verseRef": "Atos 9:4–5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "\"Por que me persegues?\" e \"a quem você persegue\" identificam Jesus com a igreja.",
+      "feedbackWrong": {
+        "false": "Releia 9:4–5: Jesus diz que Saulo o persegue."
+      },
+      "hint": "Compare a pergunta da voz com a resposta.",
+      "learningObjective": "Compreender a identificação de Jesus com a igreja.",
+      "evidence": [
+        "Atos 9:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 9:8, toque a ação que mostra o resultado da cena sobre Saulo.",
+      "verseRef": "Atos 9:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "guiando-o"
+        },
+        {
+          "id": "b",
+          "text": "chão"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "guiando-o pela mão, levaram-no a Damasco",
+      "feedbackCorrect": "Cego, ele precisa ser guiado pela mão até a cidade.",
+      "feedbackWrong": {
+        "b": "\"Chão\" lembra a queda; o resultado agora é ser guiado.",
+        "c": "\"Olhos\" descrevem a cegueira; a ação seguinte é guiá-lo."
+      },
+      "hint": "Veja como o levam a Damasco.",
+      "learningObjective": "Reconhecer o resultado da confrontação.",
+      "evidence": [
+        "Atos 9:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Atos 9:6 se relaciona com a pergunta de Saulo?",
+      "verseRef": "Atos 9:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus manda-o voltar e esquecer o encontro"
+        },
+        {
+          "id": "b",
+          "text": "Jesus dá ordem: entrar na cidade e receber o que fazer"
+        },
+        {
+          "id": "c",
+          "text": "Jesus confirma as cartas do sumo sacerdote"
+        },
+        {
+          "id": "d",
+          "text": "Jesus diz que Saulo já sabe tudo sozinho"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Levanta-te e entra na cidade, onde te dirão o que deves fazer",
+      "feedbackCorrect": "À pergunta \"o que queres que eu faça?\" vem a ordem de entrar e ouvir.",
+      "feedbackWrong": {
+        "a": "A ordem é entrar na cidade, não voltar esquecendo.",
+        "c": "Jesus não valida as cartas; redireciona Saulo.",
+        "d": "Alguém na cidade lhe dirá o que fazer."
+      },
+      "hint": "Leia a resposta do Senhor à pergunta de Saulo.",
+      "learningObjective": "Relacionar a pergunta de Saulo à ordem de Jesus.",
+      "evidence": [
+        "Atos 9:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Atos 9:3–5?",
+      "verseRef": "Atos 9:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A luz do céu rodeia Saulo"
+        },
+        {
+          "id": "b",
+          "text": "Ele cai e ouve a pergunta"
+        },
+        {
+          "id": "c",
+          "text": "Jesus se identifica como o perseguido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "Luz, queda e identidade: o perseguidor encontra Jesus.",
+      "feedbackWrong": {
+        "default": "Comece pela luz; a identidade de Jesus vem por último."
+      },
+      "hint": "A luz vem antes da voz.",
+      "learningObjective": "Compreender o movimento do encontro.",
+      "evidence": [
+        "Atos 9:4–5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 9:4, que verbo a voz usa sobre a ação de Saulo?",
+      "verseRef": "Atos 9:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "persegues"
+        },
+        {
+          "id": "b",
+          "text": "ignoras"
+        },
+        {
+          "id": "c",
+          "text": "serves"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por que me persegues?",
+      "feedbackCorrect": "A pergunta carrega a acusação: perseguir.",
+      "feedbackWrong": {
+        "b": "A voz não fala de ignorar; fala de perseguir.",
+        "c": "A voz não fala de servir; fala de perseguir."
+      },
+      "hint": "Complete: \"por que me ___?\"",
+      "learningObjective": "Lembrar a palavra que liga Saulo a Jesus.",
+      "evidence": [
+        "Atos 9:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 9:1 a Gálatas 1:13?",
+      "verseRef": "Atos 9:1",
+      "passageA": {
+        "ref": "Atos 9:1"
+      },
+      "passageB": {
+        "ref": "Gálatas 1:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Paulo perseguia a igreja"
+        },
+        {
+          "id": "b",
+          "text": "Paulo sempre foi apóstolo"
+        },
+        {
+          "id": "c",
+          "text": "A igreja nunca foi atacada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ameaças e mortes contra os discípulos do Senhor",
+      "feedbackCorrect": "Atos narra e Gálatas confirma: Paulo perseguia a igreja.",
+      "feedbackWrong": {
+        "b": "Os dois textos falam do passado de perseguidor.",
+        "c": "Os dois textos mostram a igreja sob ataque de Saulo."
+      },
+      "hint": "Compare o que Saulo fazia à igreja.",
+      "learningObjective": "Relacionar Atos 9 ao testemunho de Paulo.",
+      "evidence": [
+        "Atos 9:1",
+        "Gálatas 1:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Atos 9:4–5 apresenta a perseguição à igreja como assunto menor, sem ligação com Jesus.",
+      "verseRef": "Atos 9:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "Jesus se coloca no centro: perseguir a igreja é persegui-lo.",
+      "feedbackWrong": {
+        "true": "A voz diz \"me persegues\" e \"a quem você persegue\"."
+      },
+      "hint": "Veja com quem Jesus se identifica.",
+      "learningObjective": "Interpretar a união de Jesus com a igreja.",
+      "evidence": [
+        "Atos 9:4–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 9:5, toque o trecho que sustenta a identidade da voz.",
+      "verseRef": "Atos 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu sou Jesus"
+        },
+        {
+          "id": "b",
+          "text": "aguilhões"
+        },
+        {
+          "id": "c",
+          "text": "Quem és"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "A voz não fica anônima: \"Eu sou Jesus\".",
+      "feedbackWrong": {
+        "b": "\"Aguilhões\" ilustra a resistência; a identidade está antes.",
+        "c": "\"Quem és\" é a pergunta de Saulo, não a resposta."
+      },
+      "hint": "Procure a resposta à pergunta de Saulo.",
+      "learningObjective": "Sustentar com o texto a identidade de Jesus.",
+      "evidence": [
+        "Atos 9:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Atos 9:1–9 sustenta sobre o encontro de Saulo?",
+      "verseRef": "Atos 9:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus muda o perseguidor e se une à igreja"
+        },
+        {
+          "id": "b",
+          "text": "Saulo só teve um acidente de viagem"
+        },
+        {
+          "id": "c",
+          "text": "Os companheiros explicaram tudo a Saulo"
+        },
+        {
+          "id": "d",
+          "text": "Jesus aprova as cartas do sumo sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "O perseguidor é confrontado, recebe ordem e é mudado.",
+      "feedbackWrong": {
+        "b": "Há voz, identidade e ordem, não só luz.",
+        "c": "Eles ouviram a voz, mas não viram ninguém.",
+        "d": "Jesus redireciona Saulo; não confirma a missão de prender."
+      },
+      "hint": "Una a identidade de Jesus com a ordem que ele dá.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Atos 9:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do perseguidor na Bíblia?",
+      "verseRef": "Atos 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Saulo persegue a igreja e encontra Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Paulo lembra que foi perseguidor e recebeu misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "Jesus o torna instrumento para os gentios"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "evidence": [
+        "Atos 9:5",
+        "1 Timóteo 1:13",
+        "Atos 9:15"
+      ],
+      "feedbackCorrect": "Do encontro à misericórdia e ao chamado: Jesus transforma.",
+      "feedbackWrong": {
+        "default": "Siga: encontro (9:5), misericórdia (1Tm 1:13), chamado (9:15)."
+      },
+      "hint": "Comece pelo encontro no caminho.",
+      "learningObjective": "Ver o fio do perseguidor transformado."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 9:2, como o texto chama o grupo que Saulo queria prender?",
+      "verseRef": "Atos 9:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caminho"
+        },
+        {
+          "id": "b",
+          "text": "partido"
+        },
+        {
+          "id": "c",
+          "text": "exército"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pertenciam ao Caminho",
+      "feedbackCorrect": "\"Caminho\" é o nome dos discípulos neste trecho.",
+      "feedbackWrong": {
+        "b": "O texto usa Caminho, não partido.",
+        "c": "O texto usa Caminho, não exército."
+      },
+      "hint": "Procure o nome do grupo em 9:2.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": [
+        "Atos 9:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 9:5 a 1 Timóteo 1:13?",
+      "verseRef": "Atos 9:5",
+      "passageA": {
+        "ref": "Atos 9:5"
+      },
+      "passageB": {
+        "ref": "1 Timóteo 1:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Misericórdia ao perseguidor"
+        },
+        {
+          "id": "b",
+          "text": "Orgulho do passado de Saulo"
+        },
+        {
+          "id": "c",
+          "text": "Negação do encontro no caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou Jesus, a quem você persegue",
+      "feedbackCorrect": "O encontro em Atos vira testemunho: o perseguidor obteve misericórdia.",
+      "feedbackWrong": {
+        "b": "Paulo não se orgulha; lembra a misericórdia.",
+        "c": "Os dois textos afirmam o passado de perseguidor e a virada."
+      },
+      "hint": "Veja o que Paulo diz do próprio passado.",
+      "learningObjective": "Ligar o encontro à misericórdia confessada.",
+      "evidence": [
+        "Atos 9:5",
+        "1 Timóteo 1:13"
+      ]
+    }
+  ]
+}

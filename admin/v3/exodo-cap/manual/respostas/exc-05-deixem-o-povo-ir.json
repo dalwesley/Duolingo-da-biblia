@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Êxodo 5:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 5:1–9"
+      }
+    ],
+    "context": "Moisés e Arão pedem a Faraó que deixe Israel ir. Ele diz não conhecer o Senhor e agrava o trabalho dos tijolos.",
+    "keyword": "Deixe ir",
+    "keywordGloss": "Ordem do Senhor a Faraó: libertar o povo para celebrar no deserto.",
+    "focusQuestion": "Quando alguém diz que não conhece o Senhor, como você responde sem desistir?",
+    "reflectionPrompts": [
+      "Não conheço o Senhor",
+      "Opressão aumenta",
+      "Palavras e tijolos"
+    ],
+    "facts": [
+      {
+        "text": "Moisés e Arão pedem a Faraó que deixe ir o povo do Senhor.",
+        "evidenceRef": "Êxodo 5:1",
+        "evidenceSpan": "Deixe ir o meu povo"
+      },
+      {
+        "text": "Faraó diz que não conhece o Senhor e não deixará Israel ir.",
+        "evidenceRef": "Êxodo 5:2",
+        "evidenceSpan": "Não conheço o Senhor e não deixarei Israel ir"
+      },
+      {
+        "text": "Pedem caminho de três dias no deserto para sacrificar.",
+        "evidenceRef": "Êxodo 5:3",
+        "evidenceSpan": "caminho de três dias no deserto"
+      },
+      {
+        "text": "Faraó manda Moisés e Arão voltarem às tarefas.",
+        "evidenceRef": "Êxodo 5:4",
+        "evidenceSpan": "Vão às suas tarefas"
+      },
+      {
+        "text": "Sem palha fornecida, o povo deve ajuntar a própria palha.",
+        "evidenceRef": "Êxodo 5:7",
+        "evidenceSpan": "eles mesmos devem ir e ajuntar a palha"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome que Faraó diz não conhecer e a quem Israel deve celebrar."
+      },
+      {
+        "term": "tijolos",
+        "gloss": "Carga que Faraó mantém igual mesmo sem fornecer palha."
+      },
+      {
+        "term": "palha",
+        "gloss": "Material que deixa de ser fornecido para aumentar a opressão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pedido de libertação ao faraó",
+        "evidenceRef": "Êxodo 5:1–3"
+      },
+      {
+        "label": "Faraó rejeita o Senhor",
+        "evidenceRef": "Êxodo 5:2"
+      },
+      {
+        "label": "Acusa Moisés de interromper o trabalho",
+        "evidenceRef": "Êxodo 5:4–5"
+      },
+      {
+        "label": "Agrava a carga dos tijolos",
+        "evidenceRef": "Êxodo 5:6–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Diante do pedido do Senhor, Faraó responde que não o conhece.",
+        "marker": "Mas",
+        "evidenceRef": "Êxodo 5:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por ver o povo ocioso, Faraó exige a mesma quantidade de tijolos sem palha.",
+        "marker": "Por isso",
+        "evidenceRef": "Êxodo 5:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "Agravar o trabalho para que não ouçam palavras mentirosas.",
+        "marker": "para que",
+        "evidenceRef": "Êxodo 5:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 3:18",
+        "bridge": "Pedido de três dias"
+      },
+      {
+        "ref": "Salmos 105:25",
+        "bridge": "Coração voltado contra"
+      },
+      {
+        "ref": "Atos 7:34",
+        "bridge": "Deus ouviu a opressão"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Faraó só queria mais tijolos por ganância econômica.",
+        "why": "O texto liga a carga ao desprezo pelo Senhor e às palavras do pedido."
+      },
+      {
+        "text": "Moisés inventou o pedido sem ordem de Deus.",
+        "why": "Eles falam: Assim diz o Senhor, Deus de Israel."
+      },
+      {
+        "text": "Faraó já conhecia o Senhor e só fingia.",
+        "why": "Ele declara: Não conheço o Senhor."
+      }
+    ],
+    "centralInsight": "Faraó não conhece o Senhor e responde à libertação com mais opressão.",
+    "anchorQuestion": "O que Faraó respondeu quando ouviu o pedido do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Faraó respondeu que não conhece o Senhor e não deixará Israel ir.",
+      "verseRef": "Êxodo 5:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não conheço o Senhor e não deixarei Israel ir",
+      "feedbackCorrect": "Ele rejeita o Senhor e a saída de Israel na mesma frase.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 5:2: ele diz não conhecer o Senhor."
+      },
+      "hint": "Leia a resposta completa de Faraó.",
+      "learningObjective": "Observar a rejeição explícita de Faraó.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 5:1, toque quem Moisés e Arão dizem que fala.",
+      "verseRef": "Êxodo 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faraó"
+        },
+        {
+          "id": "b",
+          "text": "o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Assim diz o Senhor",
+      "feedbackCorrect": "O Senhor pede que o povo o celebre no deserto.",
+      "feedbackWrong": {
+        "a": "Faraó ouve; quem fala é o Senhor.",
+        "c": "O deserto é o lugar da festa."
+      },
+      "hint": "Quem fala na mensagem a Faraó?",
+      "learningObjective": "Identificar o propósito da saída.",
+      "evidence": [
+        "Êxodo 5:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 5:7, o que os supervisores não devem mais fornecer?",
+      "verseRef": "Êxodo 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Água do rio"
+        },
+        {
+          "id": "b",
+          "text": "Palha para os tijolos"
+        },
+        {
+          "id": "c",
+          "text": "Ouro e prata"
+        },
+        {
+          "id": "d",
+          "text": "Vestuário novo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não devem mais fornecer palha ao povo",
+      "feedbackCorrect": "A ordem é: não forneçam mais palha; o povo ajunte.",
+      "feedbackWrong": {
+        "a": "O texto fala de palha, não de água.",
+        "c": "Ouro e prata não aparecem aqui.",
+        "d": "Não há ordem sobre vestuário."
+      },
+      "hint": "O que faltará para fazer tijolos?",
+      "learningObjective": "Observar o agravamento da carga.",
+      "evidence": [
+        "Êxodo 5:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 5:2 na ordem do texto.",
+      "verseRef": "Êxodo 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas Faraó respondeu: Quem é o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "para que eu ouça a sua voz e deixe Israel partir"
+        },
+        {
+          "id": "c",
+          "text": "Não conheço o Senhor e não deixarei Israel ir"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "Pergunta, motivo e recusa completa.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta \"Quem é o Senhor\"."
+      },
+      "hint": "A frase começa com \"Mas Faraó\".",
+      "learningObjective": "Reconhecer a sequência da resposta.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 5:9, o que Faraó manda agravar?",
+      "verseRef": "Êxodo 5:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "trabalho"
+        },
+        {
+          "id": "b",
+          "text": "salário"
+        },
+        {
+          "id": "c",
+          "text": "descanso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Agravem o trabalho desses homens",
+      "feedbackCorrect": "A ordem é agravar o trabalho para silenciar o pedido.",
+      "feedbackWrong": {
+        "b": "O texto não fala de salário.",
+        "c": "Ele agrava o trabalho, não o descanso."
+      },
+      "hint": "O que deve ser agravado no versículo?",
+      "learningObjective": "Lembrar a ordem final de Faraó.",
+      "evidence": [
+        "Êxodo 5:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 5:2 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 5:2",
+      "passageA": {
+        "ref": "Êxodo 5:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Moisés e Arão pedem libertação em nome do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Faraó rejeita o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Faraó já conhece Deus"
+        },
+        {
+          "id": "c",
+          "text": "Israel parte na hora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "A resposta é rejeição: não conheço e não deixarei ir.",
+      "feedbackWrong": {
+        "b": "Ele declara o contrário.",
+        "c": "Ele recusa a partida."
+      },
+      "hint": "Compare o pedido com a resposta.",
+      "learningObjective": "Ligar o pedido à rejeição de Faraó.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 5:8, Faraó diminui a quantidade de tijolos porque o povo está cansado.",
+      "verseRef": "Êxodo 5:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "exigirão a mesma quantidade de tijolos",
+      "feedbackCorrect": "Ele mantém a mesma quantidade e acusa ociosidade.",
+      "feedbackWrong": {
+        "true": "Releia: a mesma quantidade; não diminuirão nada."
+      },
+      "hint": "O que acontece com a quantidade?",
+      "learningObjective": "Compreender a lógica da opressão.",
+      "evidence": [
+        "Êxodo 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 5:8, toque as palavras que marcam o motivo da ordem.",
+      "verseRef": "Êxodo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Por isso"
+        },
+        {
+          "id": "b",
+          "text": "tijolos"
+        },
+        {
+          "id": "c",
+          "text": "quantidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, clamam",
+      "feedbackCorrect": "\"Por isso\" liga a acusação de ociosidade ao clamor.",
+      "feedbackWrong": {
+        "b": "Tijolos são o objeto; o marcador é \"Por isso\".",
+        "c": "Quantidade é o que se exige; o motivo vem em \"Por isso\"."
+      },
+      "hint": "Procure o marcador de causa perto do clamor.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": [
+        "Êxodo 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 5:9 liga o trabalho agravado ao pedido de Moisés?",
+      "verseRef": "Êxodo 5:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agravar o trabalho para não ouvir palavras mentirosas"
+        },
+        {
+          "id": "b",
+          "text": "Aumentar o descanso para ouvir melhor"
+        },
+        {
+          "id": "c",
+          "text": "Pagar mais para aceitar a festa"
+        },
+        {
+          "id": "d",
+          "text": "Libertar Israel no mesmo dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não ouçam palavras mentirosas",
+      "feedbackCorrect": "O propósito é silenciar o que Faraó chama de mentira.",
+      "feedbackWrong": {
+        "b": "Ele agrava o trabalho, não o descanso.",
+        "c": "Não há oferta de pagamento.",
+        "d": "Ele recusa a libertação."
+      },
+      "hint": "Leia o \"para que\" no fim.",
+      "learningObjective": "Relacionar carga e silêncio.",
+      "evidence": [
+        "Êxodo 5:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 5:1–9?",
+      "verseRef": "Êxodo 5:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés pede libertação em nome do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Faraó diz que não conhece o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "A carga dos tijolos é agravada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "Pedido, rejeição e opressão maior.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido; a carga vem depois."
+      },
+      "hint": "A rejeição vem antes da ordem aos capatazes.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Êxodo 5:1",
+        "Êxodo 5:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 5:7, o que o povo deve ajuntar?",
+      "verseRef": "Êxodo 5:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouro"
+        },
+        {
+          "id": "b",
+          "text": "palha"
+        },
+        {
+          "id": "c",
+          "text": "trigo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ajuntar a palha",
+      "feedbackCorrect": "Sem fornecimento, eles mesmos ajuntam a palha.",
+      "feedbackWrong": {
+        "a": "Não é ouro neste versículo.",
+        "c": "O texto fala de palha para tijolos."
+      },
+      "hint": "Material dos tijolos.",
+      "learningObjective": "Lembrar o detalhe da nova ordem.",
+      "evidence": [
+        "Êxodo 5:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 5:3 a Êxodo 3:18?",
+      "verseRef": "Êxodo 5:3",
+      "passageA": {
+        "ref": "Êxodo 5:3"
+      },
+      "passageB": {
+        "ref": "Êxodo 3:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedido de três dias"
+        },
+        {
+          "id": "b",
+          "text": "Construção de pirâmides"
+        },
+        {
+          "id": "c",
+          "text": "Coroação de Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "caminho de três dias no deserto",
+      "feedbackCorrect": "Nos dois textos, o pedido é caminho de três dias.",
+      "feedbackWrong": {
+        "b": "Não é o tema deste elo.",
+        "c": "Não há coroação nesses versos."
+      },
+      "hint": "Compare o prazo do caminho.",
+      "learningObjective": "Relacionar o pedido anunciado e cumprido.",
+      "evidence": [
+        "Êxodo 5:3",
+        "Êxodo 3:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 5:1–9 sustenta que rejeitar o Senhor pode virar opressão maior contra o povo que pede liberdade.",
+      "verseRef": "Êxodo 5:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não conheço o Senhor e não deixarei Israel ir",
+      "feedbackCorrect": "A recusa ao Senhor abre caminho para agravar o trabalho.",
+      "feedbackWrong": {
+        "false": "O texto une rejeição ao Senhor e carga maior."
+      },
+      "hint": "Una a resposta de 5:2 com a ordem de 5:9.",
+      "learningObjective": "Interpretar a ligação entre rejeição e opressão.",
+      "evidence": [
+        "Êxodo 5:2",
+        "Êxodo 5:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 5:9, toque o trecho que mostra como Faraó chama o pedido de Moisés.",
+      "verseRef": "Êxodo 5:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Agravem"
+        },
+        {
+          "id": "b",
+          "text": "palavras mentirosas"
+        },
+        {
+          "id": "c",
+          "text": "homens"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não ouçam palavras mentirosas",
+      "feedbackCorrect": "Ele trata a palavra do Senhor como mentira.",
+      "feedbackWrong": {
+        "a": "Agravem é a ordem; o rótulo é palavras mentirosas.",
+        "c": "Homens são os trabalhadores, não o rótulo."
+      },
+      "hint": "O que ele não quer que ouçam?",
+      "learningObjective": "Sustentar a leitura da rejeição.",
+      "evidence": [
+        "Êxodo 5:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 5:1–9 sustenta sobre a oposição à libertação?",
+      "verseRef": "Êxodo 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignorar o Senhor e oprimir mais quem pede liberdade"
+        },
+        {
+          "id": "b",
+          "text": "Faraó só discute logística de tijolos"
+        },
+        {
+          "id": "c",
+          "text": "Moisés fala sem ordem divina"
+        },
+        {
+          "id": "d",
+          "text": "Israel já estava livre no Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "Rejeição teológica e opressão prática andam juntas.",
+      "feedbackWrong": {
+        "b": "O centro é \"Quem é o Senhor\".",
+        "c": "Eles dizem: Assim diz o Senhor.",
+        "d": "O povo ainda está sob carga."
+      },
+      "hint": "Ligue 5:2 e 5:9.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 5:2",
+        "Êxodo 5:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da oposição neste trecho?",
+      "verseRef": "Êxodo 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Faraó rejeita o Senhor e oprime mais"
+        },
+        {
+          "id": "b",
+          "text": "O Salmo lembra o ódio do Egito"
+        },
+        {
+          "id": "c",
+          "text": "Estêvão lembra que Deus ouviu a opressão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não conheço o Senhor",
+      "evidence": [
+        "Êxodo 5:2",
+        "Salmos 105:25",
+        "Atos 7:34"
+      ],
+      "feedbackCorrect": "Da recusa de Faraó à memória de Israel e da igreja.",
+      "feedbackWrong": {
+        "default": "Comece por Êxodo; depois Salmo e Atos."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver a opressão ecoar na Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 5:2, quem Faraó diz não conhecer?",
+      "verseRef": "Êxodo 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Arão"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Não conheço o Senhor",
+      "feedbackCorrect": "A crise é teológica: Não conheço o Senhor.",
+      "feedbackWrong": {
+        "a": "Ele responde sobre o Senhor, não só sobre Moisés.",
+        "b": "Arão não é o objeto da frase."
+      },
+      "hint": "Nome no centro da recusa.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": [
+        "Êxodo 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 5:2 a Atos 7:34?",
+      "verseRef": "Êxodo 5:2",
+      "passageA": {
+        "ref": "Êxodo 5:2"
+      },
+      "passageB": {
+        "ref": "Atos 7:34"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Opressão que Deus ouve"
+        },
+        {
+          "id": "b",
+          "text": "Construção do tabernáculo"
+        },
+        {
+          "id": "c",
+          "text": "Queda de Jericó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não deixarei Israel ir",
+      "feedbackCorrect": "A rejeição de Faraó é a opressão que Deus ouve.",
+      "feedbackWrong": {
+        "b": "Não é o tema deste elo.",
+        "c": "Outra história."
+      },
+      "hint": "O que Deus faz diante da opressão?",
+      "learningObjective": "Ligar a recusa de Faraó ao clamor ouvido.",
+      "evidence": [
+        "Êxodo 5:2",
+        "Atos 7:34"
+      ]
+    }
+  ]
+}

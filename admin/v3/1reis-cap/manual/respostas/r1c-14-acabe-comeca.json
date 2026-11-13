@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "1 Reis 16:29–34",
+    "passages": [
+      {
+        "ref": "1 Reis 16:29–34"
+      }
+    ],
+    "context": "Acabe, filho de Omri, sobe ao trono em Samaria. O texto compara seu mal ao dos reis anteriores e mostra Baal, Jezabel e a reedificação de Jericó.",
+    "keyword": "Baal",
+    "keywordGloss": "O deus a quem Acabe serve e para quem ergue altar em Samaria.",
+    "focusQuestion": "O que você trata como \"insignificante\" e acaba abrindo porta a um mal maior?",
+    "reflectionPrompts": [
+      "Mais do que os anteriores",
+      "Servir a Baal",
+      "Palavra cumprida"
+    ],
+    "facts": [
+      {
+        "text": "Acabe iniciou o reinado no trigésimo oitavo ano de Asa e governou 22 anos.",
+        "evidenceRef": "1 Reis 16:29",
+        "evidenceSpan": "governou Israel em Samaria durante vinte e dois anos"
+      },
+      {
+        "text": "Acabe fez o que era mau diante do Senhor, mais do que todos antes dele.",
+        "evidenceRef": "1 Reis 16:30",
+        "evidenceSpan": "fez o que era mau diante do SENHOR, mais do que todos"
+      },
+      {
+        "text": "Tomou Jezabel por mulher e serviu a Baal e o adorou.",
+        "evidenceRef": "1 Reis 16:31",
+        "evidenceSpan": "serviu a Baal e o adorou"
+      },
+      {
+        "text": "Levantou altar para Baal na casa de Baal em Samaria.",
+        "evidenceRef": "1 Reis 16:32",
+        "evidenceSpan": "levantou um altar para Baal na casa de Baal"
+      },
+      {
+        "text": "Fez um poste-ídolo e cometeu mais abominações que os reis anteriores.",
+        "evidenceRef": "1 Reis 16:33",
+        "evidenceSpan": "Acabe fez um poste-ídolo"
+      },
+      {
+        "text": "Hiel edificou Jericó e perdeu o primogênito e o último filho.",
+        "evidenceRef": "1 Reis 16:34",
+        "evidenceSpan": "Hiel, o betelita, edificou Jericó"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Baal",
+        "gloss": "O ídolo a quem Acabe serve, adora e ergue altar."
+      },
+      {
+        "term": "Jezabel",
+        "gloss": "A mulher sidônia que Acabe toma; marca a aliança com Baal."
+      },
+      {
+        "term": "poste-ídolo",
+        "gloss": "O símbolo cultual que Acabe faz, somando abominações aos reis anteriores."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acabe sobe e faz o mal em excesso",
+        "evidenceRef": "1 Reis 16:29–30"
+      },
+      {
+        "label": "Casa com Jezabel e culto a Baal",
+        "evidenceRef": "1 Reis 16:31–32"
+      },
+      {
+        "label": "Poste-ídolo e abominações maiores",
+        "evidenceRef": "1 Reis 16:33"
+      },
+      {
+        "label": "Jericó reedificada e a palavra cumprida",
+        "evidenceRef": "1 Reis 16:34"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Andar nos pecados de Jeroboão parece pouco diante do passo seguinte: Jezabel e Baal.",
+        "marker": "insignificante",
+        "evidenceRef": "1 Reis 16:31"
+      },
+      {
+        "kind": "resultado",
+        "text": "Acabe faz o poste-ídolo de maneira que comete mais abominações que os anteriores.",
+        "marker": "de maneira que",
+        "evidenceRef": "1 Reis 16:33"
+      },
+      {
+        "kind": "causa",
+        "text": "A morte dos filhos de Hiel acontece segundo a palavra do Senhor por Josué.",
+        "marker": "segundo",
+        "evidenceRef": "1 Reis 16:34"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Josué 6:26",
+        "bridge": "Maldição sobre quem reeditar Jericó"
+      },
+      {
+        "ref": "1 Reis 18:21",
+        "bridge": "Escolha entre Senhor e Baal"
+      },
+      {
+        "ref": "2 Reis 9:22",
+        "bridge": "Jezabel e as prostituições"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Acabe apenas continua o pecado de Jeroboão, sem ir além.",
+        "why": "O texto diz que isso lhe pareceu insignificante; ele serve a Baal e comete mais abominações."
+      },
+      {
+        "text": "A reedificação de Jericó é um sucesso sem custo.",
+        "why": "Hiel perde o primogênito e o último filho, segundo a palavra do Senhor."
+      },
+      {
+        "text": "O altar em Samaria é para o Senhor.",
+        "why": "É altar para Baal na casa de Baal que edificara em Samaria."
+      }
+    ],
+    "centralInsight": "Servir a Baal e reedificar Jericó marcam um reinado que desafia o Senhor.",
+    "anchorQuestion": "Segundo 1 Reis 16:31, a quem Acabe serviu e adorou?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Reis 16 —30, Acabe fez o que era mau diante do Senhor, mais do que todos os que viveram antes dele.",
+      "verseRef": "1 Reis 16:30",
+      "correctOptionId": "true",
+      "evidenceSpan": "fez o que era mau diante do SENHOR, mais do que todos",
+      "feedbackCorrect": "O texto coloca Acabe acima de todos os anteriores no mal.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Compare Acabe com os que o precederam.",
+      "learningObjective": "Observar a avaliação extrema de Acabe.",
+      "evidence": [
+        "1 Reis 16:30"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 16:31, toque a quem Acabe serviu e adorou.",
+      "verseRef": "1 Reis 16:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jezabel"
+        },
+        {
+          "id": "b",
+          "text": "Baal"
+        },
+        {
+          "id": "c",
+          "text": "Jeroboão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "serviu a Baal e o adorou",
+      "feedbackCorrect": "Depois de tomar Jezabel, Acabe serve e adora a Baal.",
+      "feedbackWrong": {
+        "a": "Jezabel é a mulher; o culto é a Baal.",
+        "c": "Jeroboão é o padrão anterior de pecado, não o ídolo."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Identificar o culto a Baal.",
+      "evidence": [
+        "1 Reis 16:31"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Reis 16:32, onde Acabe levantou um altar para Baal?",
+      "verseRef": "1 Reis 16:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Na casa de Baal em Samaria"
+        },
+        {
+          "id": "b",
+          "text": "No templo de Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Em Jericó"
+        },
+        {
+          "id": "d",
+          "text": "Em Betel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na casa de Baal que edificara em Samaria",
+      "feedbackCorrect": "O culto a Baal ganha casa e altar em Samaria.",
+      "feedbackWrong": {
+        "b": "Jericó não é o tema de 18:21.",
+        "c": "Não há aliança davídica nestes versos.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a cidade onde a casa de Baal foi edificada.",
+      "learningObjective": "Observar o altar em Samaria.",
+      "evidence": [
+        "1 Reis 16:32"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Reis 16:34 na ordem do texto.",
+      "verseRef": "1 Reis 16:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em seus dias, Hiel, o betelita, edificou Jericó"
+        },
+        {
+          "id": "b",
+          "text": "quando lhe lançou os fundamentos, morreu Abirão, seu primogênito"
+        },
+        {
+          "id": "c",
+          "text": "quando lhe pôs as portas, morreu Segube, seu último"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Hiel, o betelita, edificou Jericó",
+      "feedbackCorrect": "Fundamentos custam o primogênito; as portas, o último.",
+      "feedbackWrong": {
+        "default": "Comece pela reedificação; depois fundamentos e portas."
+      },
+      "hint": "O verso abre com Hiel edificando.",
+      "learningObjective": "Reconhecer a sequência da maldição cumprida.",
+      "evidence": [
+        "1 Reis 16:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Reis 16:31, quem Acabe tomou por mulher?",
+      "verseRef": "1 Reis 16:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maaca"
+        },
+        {
+          "id": "b",
+          "text": "Jezabel"
+        },
+        {
+          "id": "c",
+          "text": "Atalia"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ele tomou por mulher Jezabel",
+      "feedbackCorrect": "Jezabel, filha de Etbaal, marca a virada para Baal.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Não há aliança davídica nestes versos."
+      },
+      "hint": "Leia quem ele tomou por mulher.",
+      "learningObjective": "Lembrar o nome de Jezabel.",
+      "evidence": [
+        "1 Reis 16:31"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Reis 16:30 comunica que se liga a este contexto?",
+      "verseRef": "1 Reis 16:30",
+      "passageA": {
+        "ref": "1 Reis 16:30"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O reinado de Acabe é marcado como pior que o de todos os anteriores."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Acabe supera os anteriores no mal"
+        },
+        {
+          "id": "b",
+          "text": "Acabe restaura o culto a Davi"
+        },
+        {
+          "id": "c",
+          "text": "Acabe governa só um ano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mais do que todos os que viveram antes dele",
+      "feedbackCorrect": "O verso mede Acabe pelo excesso de maldade.",
+      "feedbackWrong": {
+        "b": "Jericó não é o tema de 18:21.",
+        "c": "Não há aliança davídica nestes versos."
+      },
+      "hint": "Compare Acabe com os que vieram antes.",
+      "learningObjective": "Ligar a avaliação de Acabe ao contexto.",
+      "evidence": [
+        "1 Reis 16:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Reis 16 —31, o texto trata o casamento com Jezabel e o culto a Baal como se fossem pouco além dos pecados de Jeroboão.",
+      "verseRef": "1 Reis 16:31",
+      "correctOptionId": "true",
+      "evidenceSpan": "como se fosse algo insignificante andar nos pecados de Jeroboão",
+      "feedbackCorrect": "O \"como se fosse algo insignificante\" marca o salto de Jeroboão para Baal.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja a expressão que abre a comparação.",
+      "learningObjective": "Compreender o contraste com Jeroboão.",
+      "evidence": [
+        "1 Reis 16:31"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 16:34, toque a palavra que liga a morte dos filhos à palavra do Senhor.",
+      "verseRef": "1 Reis 16:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "segundo"
+        },
+        {
+          "id": "b",
+          "text": "edificou"
+        },
+        {
+          "id": "c",
+          "text": "portas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo a palavra do SENHOR",
+      "feedbackCorrect": "\"Segundo\" marca o cumprimento da palavra falada por Josué.",
+      "feedbackWrong": {
+        "b": "\"Edificou\" é a ação de Hiel, não a ligação com a palavra.",
+        "c": "\"Portas\" marca a segunda morte, não a causa."
+      },
+      "hint": "Procure a palavra antes de \"a palavra do SENHOR\".",
+      "learningObjective": "Reconhecer o marcador de cumprimento.",
+      "evidence": [
+        "1 Reis 16:34"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Reis 16:33 se relaciona com o mal descrito em 16:30?",
+      "verseRef": "1 Reis 16:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confirma que Acabe ultrapassa os reis anteriores em abominações"
+        },
+        {
+          "id": "b",
+          "text": "Mostra que Acabe se arrepende e remove Baal"
+        },
+        {
+          "id": "c",
+          "text": "Diz que Acabe só repetiu o pecado de Jeroboão"
+        },
+        {
+          "id": "d",
+          "text": "Afirma que o poste-ídolo era dedicado ao Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cometeu mais abominações para irritar o SENHOR",
+      "feedbackCorrect": "O poste-ídolo leva Acabe além de todos os reis de Israel anteriores.",
+      "feedbackWrong": {
+        "b": "Jericó não é o tema de 18:21.",
+        "c": "Não há aliança davídica nestes versos.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a medida do mal nos dois versos.",
+      "learningObjective": "Relacionar o excesso de Acabe nos dois trechos.",
+      "evidence": [
+        "1 Reis 16:33"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o reinado de Acabe em 1 Reis 16:30–33?",
+      "verseRef": "1 Reis 16:30–31",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acabe é avaliado como pior que os anteriores"
+        },
+        {
+          "id": "b",
+          "text": "Casa com Jezabel e serve a Baal"
+        },
+        {
+          "id": "c",
+          "text": "Ergue altar e faz poste-ídolo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "fez o que era mau diante do SENHOR, mais do que todos",
+      "feedbackCorrect": "Avaliação, aliança idólatra e estruturas de culto.",
+      "feedbackWrong": {
+        "default": "Comece pela avaliação; o altar vem depois de Jezabel."
+      },
+      "hint": "Siga: avaliação, casamento, altar.",
+      "learningObjective": "Compreender o movimento do mal de Acabe.",
+      "evidence": [
+        "1 Reis 16:30–31"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Reis 16:33, que palavra resume o excesso de Acabe diante do Senhor?",
+      "verseRef": "1 Reis 16:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "vitórias"
+        },
+        {
+          "id": "b",
+          "text": "abominações"
+        },
+        {
+          "id": "c",
+          "text": "alianças"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cometeu mais abominações para irritar o SENHOR",
+      "feedbackCorrect": "\"Abominações\" carrega o resultado do poste-ídolo.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Não há aliança davídica nestes versos."
+      },
+      "hint": "Veja o que ele cometeu mais do que os outros reis.",
+      "learningObjective": "Lembrar a palavra que mede o excesso.",
+      "evidence": [
+        "1 Reis 16:33"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Reis 16:34 a Josué 6:26?",
+      "verseRef": "1 Reis 16:34",
+      "passageA": {
+        "ref": "1 Reis 16:34"
+      },
+      "passageB": {
+        "ref": "Josué 6:26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cumprimento da maldição de Jericó"
+        },
+        {
+          "id": "b",
+          "text": "Vitória militar em Ai"
+        },
+        {
+          "id": "c",
+          "text": "Construção do templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo a palavra do SENHOR, que falara por intermédio de Josué",
+      "evidence": [
+        "1 Reis 16:34",
+        "Josué 6:26"
+      ],
+      "feedbackCorrect": "A morte dos filhos de Hiel cumpre a palavra de Josué.",
+      "feedbackWrong": {
+        "b": "Jericó não é o tema de 18:21.",
+        "c": "Não há aliança davídica nestes versos."
+      },
+      "hint": "Veja por intermédio de quem a palavra fora falada.",
+      "learningObjective": "Relacionar Jericó em Josué e em Acabe."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Reis 16 —31–32, o altar em Samaria é apresentado como culto legítimo ao Senhor.",
+      "verseRef": "1 Reis 16:31–32",
+      "correctOptionId": "false",
+      "evidenceSpan": "levantou um altar para Baal na casa de Baal",
+      "feedbackCorrect": "O altar e a casa são de Baal, depois de servir e adorar a Baal.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Veja a quem o altar e a casa pertencem.",
+      "learningObjective": "Interpretar o culto de Acabe como idolatria.",
+      "evidence": [
+        "1 Reis 16:31–32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Reis 16:34, toque o trecho que mostra o cumprimento da palavra antiga.",
+      "verseRef": "1 Reis 16:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "palavra do SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "betelita"
+        },
+        {
+          "id": "c",
+          "text": "fundamentos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "segundo a palavra do SENHOR, que falara por intermédio de Josué",
+      "feedbackCorrect": "A morte dos filhos não é acaso: cumpre a palavra do Senhor.",
+      "feedbackWrong": {
+        "b": "\"Betelita\" identifica Hiel, não o cumprimento.",
+        "c": "\"Fundamentos\" marca o momento da primeira morte."
+      },
+      "hint": "Procure o que governa o desfecho.",
+      "learningObjective": "Sustentar a leitura do cumprimento da palavra.",
+      "evidence": [
+        "1 Reis 16:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Reis 16:31–34 sustenta sobre o reinado de Acabe?",
+      "verseRef": "1 Reis 16:31–32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele desafia o Senhor com Baal e vê a palavra antiga cumprir-se em Jericó"
+        },
+        {
+          "id": "b",
+          "text": "Ele só repete Jeroboão, sem cultuar Baal"
+        },
+        {
+          "id": "c",
+          "text": "A reedificação de Jericó é bênção sem custo"
+        },
+        {
+          "id": "d",
+          "text": "O altar em Samaria é para o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serviu a Baal e o adorou",
+      "feedbackCorrect": "Baal em Samaria e a maldição em Jericó marcam o desafio ao Senhor.",
+      "feedbackWrong": {
+        "b": "Jericó não é o tema de 18:21.",
+        "c": "Não há aliança davídica nestes versos.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una o culto a Baal com o episódio de Hiel.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "1 Reis 16:31–32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o confronto com Baal na história bíblica?",
+      "verseRef": "1 Reis 16:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acabe serve e adora a Baal"
+        },
+        {
+          "id": "b",
+          "text": "O povo é chamado a escolher entre Senhor e Baal"
+        },
+        {
+          "id": "c",
+          "text": "Jezabel é lembrada por suas prostituições idólatras"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "serviu a Baal e o adorou",
+      "evidence": [
+        "1 Reis 16:31",
+        "1 Reis 18:21",
+        "2 Reis 9:22"
+      ],
+      "feedbackCorrect": "O culto começa com Acabe; o Carmelo confronta; Jezabel ecoa depois.",
+      "feedbackWrong": {
+        "default": "Comece pelo culto de Acabe; depois o Carmelo; por fim Jezabel."
+      },
+      "hint": "Siga a ordem da narrativa nos Reis.",
+      "learningObjective": "Ver Baal como fio que atravessa os Reis."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Reis 16:33, que palavra resume o excesso cultual de Acabe?",
+      "verseRef": "1 Reis 16:33",
+      "options": [
+        {
+          "id": "a",
+          "text": "vitórias"
+        },
+        {
+          "id": "b",
+          "text": "poste-ídolo"
+        },
+        {
+          "id": "c",
+          "text": "alianças"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Acabe fez um poste-ídolo",
+      "feedbackCorrect": "O poste-ídolo marca o excesso que irrita o Senhor.",
+      "feedbackWrong": {
+        "a": "O texto não fala de vitórias aqui.",
+        "c": "A aliança com Jezabel já veio; aqui o foco é o poste-ídolo."
+      },
+      "hint": "Veja o que Acabe fez além do altar.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": [
+        "1 Reis 16:33"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Reis 16:31 a 1 Reis 18:21?",
+      "verseRef": "1 Reis 16:31",
+      "passageA": {
+        "ref": "1 Reis 16:31"
+      },
+      "passageB": {
+        "ref": "1 Reis 18:21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confronto entre Senhor e Baal"
+        },
+        {
+          "id": "b",
+          "text": "Reedificação pacífica de Jericó"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com a casa de Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serviu a Baal e o adorou",
+      "evidence": [
+        "1 Reis 16:31",
+        "1 Reis 18:21"
+      ],
+      "feedbackCorrect": "O culto que Acabe inicia torna-se o dilema do Carmelo.",
+      "feedbackWrong": {
+        "b": "Jericó não é o tema de 18:21.",
+        "c": "Não há aliança davídica nestes versos."
+      },
+      "hint": "Veja o ídolo que os dois textos colocam em jogo.",
+      "learningObjective": "Ligar o culto de Acabe ao desafio do Carmelo."
+    }
+  ]
+}

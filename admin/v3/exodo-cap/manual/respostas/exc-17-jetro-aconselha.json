@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Êxodo 18:13–18",
+    "passages": [
+      {
+        "ref": "Êxodo 18:13–23"
+      }
+    ],
+    "context": "Moisés julga o povo sozinho o dia inteiro. Jetro, seu sogro, vê o peso e aconselha partilhar a carga.",
+    "keyword": "Aconselhar",
+    "keywordGloss": "Jetro oferece conselho sábio para Moisés não carregar tudo sozinho.",
+    "focusQuestion": "Que carga você ainda insiste em carregar sozinho?",
+    "reflectionPrompts": [
+      "Julgar sozinho",
+      "Tarefa pesada",
+      "Homens capazes"
+    ],
+    "facts": [
+      {
+        "text": "Moisés se assentou para julgar o povo o dia inteiro.",
+        "evidenceRef": "Êxodo 18:13",
+        "evidenceSpan": "Moisés se assentou para julgar o povo"
+      },
+      {
+        "text": "Jetro perguntou por que Moisés se assentava sozinho.",
+        "evidenceRef": "Êxodo 18:14",
+        "evidenceSpan": "Por que você se assenta sozinho"
+      },
+      {
+        "text": "Jetro disse que não era bom o que Moisés fazia.",
+        "evidenceRef": "Êxodo 18:17",
+        "evidenceSpan": "Não é bom o que você faz"
+      },
+      {
+        "text": "A tarefa era demasiadamente pesada para um só.",
+        "evidenceRef": "Êxodo 18:18",
+        "evidenceSpan": "essa tarefa é demasiadamente pesada para você"
+      },
+      {
+        "text": "Jetro mandou procurar homens capazes, tementes a Deus.",
+        "evidenceRef": "Êxodo 18:21",
+        "evidenceSpan": "homens capazes, tementes a Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "aconselharei",
+        "gloss": "Jetro oferece orientação para aliviar a carga."
+      },
+      {
+        "term": "pesada",
+        "gloss": "A tarefa de julgar sozinho ultrapassa um homem."
+      },
+      {
+        "term": "juízes",
+        "gloss": "Homens que julgam as causas simples com Moisés."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Moisés julga o povo sozinho",
+        "evidenceRef": "Êxodo 18:13–16"
+      },
+      {
+        "label": "Jetro diz que não é bom",
+        "evidenceRef": "Êxodo 18:17–18"
+      },
+      {
+        "label": "Conselho: ensinar e escolher líderes",
+        "evidenceRef": "Êxodo 18:19–21"
+      },
+      {
+        "label": "Juízes aliviam a carga em paz",
+        "evidenceRef": "Êxodo 18:22–23"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jetro contrasta o costume: porém, não é bom.",
+        "marker": "porém",
+        "evidenceRef": "Êxodo 18:17"
+      },
+      {
+        "kind": "causa",
+        "text": "A tarefa é pesada; por isso não consegue sozinho.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 18:18"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se fizer isso, poderá suportar e o povo volta em paz.",
+        "marker": "então",
+        "evidenceRef": "Êxodo 18:23"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 6:3",
+        "bridge": "Escolher homens capazes"
+      },
+      {
+        "ref": "Deuteronômio 1:16–17",
+        "bridge": "Juízes com justiça"
+      },
+      {
+        "ref": "Números 11:17",
+        "bridge": "Espírito sobre setenta"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jetro manda Moisés abandonar o povo.",
+        "why": "O conselho é partilhar a carga, não abandonar."
+      },
+      {
+        "text": "Qualquer homem serve como juiz, sem caráter.",
+        "why": "O texto pede capazes, tementes a Deus, que aborreçam a avareza."
+      },
+      {
+        "text": "Moisés já estava bem sozinho.",
+        "why": "Jetro diz: não é bom; a tarefa é demasiadamente pesada."
+      }
+    ],
+    "centralInsight": "O peso não é para um só: Deus usa conselho sábio para cuidar do povo.",
+    "anchorQuestion": "Por que Jetro disse que não era bom Moisés julgar sozinho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Moisés se assentou para julgar o povo desde a manhã até ao pôr do sol.",
+      "verseRef": "Êxodo 18:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "desde a manhã até ao pôr do sol",
+      "feedbackCorrect": "O texto marca o dia inteiro: manhã até o pôr do sol.",
+      "feedbackWrong": {
+        "false": "Releia: o povo ficou em pé desde a manhã até ao pôr do sol."
+      },
+      "hint": "Veja até quando o povo ficou em pé.",
+      "learningObjective": "Observar o ritmo exaustivo do julgamento.",
+      "evidence": [
+        "Êxodo 18:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 18:17, toque a palavra que resume o juízo de Jetro.",
+      "verseRef": "Êxodo 18:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "bom"
+        },
+        {
+          "id": "b",
+          "text": "faz"
+        },
+        {
+          "id": "c",
+          "text": "sogro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não é bom o que você faz",
+      "feedbackCorrect": "Jetro resume: não é bom o que você faz.",
+      "feedbackWrong": {
+        "b": "\"faz\" é a ação; o juízo é \"bom\".",
+        "c": "\"sogro\" quem fala; a palavra é \"bom\"."
+      },
+      "hint": "Veja o adjetivo da frase de Jetro.",
+      "learningObjective": "Identificar o veredito de Jetro.",
+      "evidence": [
+        "Êxodo 18:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 18:18, por que Moisés não conseguiria sozinho?",
+      "verseRef": "Êxodo 18:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "A tarefa era demasiadamente pesada"
+        },
+        {
+          "id": "b",
+          "text": "O povo não queria ouvir"
+        },
+        {
+          "id": "c",
+          "text": "Deus proibiu juízes"
+        },
+        {
+          "id": "d",
+          "text": "Jetro queria o trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "essa tarefa é demasiadamente pesada para você",
+      "feedbackCorrect": "A tarefa é demasiadamente pesada para um só.",
+      "feedbackWrong": {
+        "b": "O texto fala do peso, não da recusa.",
+        "c": "Jetro propõe juízes.",
+        "d": "Jetro aconselha; não busca o trono."
+      },
+      "hint": "Leia o motivo da fadiga.",
+      "learningObjective": "Observar o peso da tarefa.",
+      "evidence": [
+        "Êxodo 18:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 18:17 na ordem do texto.",
+      "verseRef": "Êxodo 18:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sogro de Moisés, porém, lhe disse"
+        },
+        {
+          "id": "b",
+          "text": "Não é bom"
+        },
+        {
+          "id": "c",
+          "text": "o que você faz"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não é bom o que você faz",
+      "feedbackCorrect": "Primeiro quem fala; depois o juízo e a ação.",
+      "feedbackWrong": {
+        "default": "Comece pelo sogro; o juízo vem depois."
+      },
+      "hint": "O versículo começa pelo sogro.",
+      "learningObjective": "Reconhecer a ordem de 18:17.",
+      "evidence": [
+        "Êxodo 18:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 18:18, como Jetro descreve a tarefa?",
+      "verseRef": "Êxodo 18:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "pesada"
+        },
+        {
+          "id": "b",
+          "text": "leve"
+        },
+        {
+          "id": "c",
+          "text": "inútil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "demasiadamente pesada para você",
+      "feedbackCorrect": "A tarefa é demasiadamente pesada.",
+      "feedbackWrong": {
+        "b": "O texto diz pesada, não leve.",
+        "c": "Não chama a tarefa de inútil."
+      },
+      "hint": "Veja o adjetivo da tarefa.",
+      "learningObjective": "Lembrar o peso da tarefa.",
+      "evidence": [
+        "Êxodo 18:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 18:17 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 18:17",
+      "passageA": {
+        "ref": "Êxodo 18:17"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Moisés julga sozinho o dia inteiro e Jetro intervém."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sozinho não é bom"
+        },
+        {
+          "id": "b",
+          "text": "Abandone o povo"
+        },
+        {
+          "id": "c",
+          "text": "Ignore o sogro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não é bom o que você faz",
+      "feedbackCorrect": "O conselho parte do diagnóstico: sozinho não é bom.",
+      "feedbackWrong": {
+        "b": "Jetro quer partilha, não abandono.",
+        "c": "O texto valoriza o conselho do sogro."
+      },
+      "hint": "Compare o diagnóstico com a cena.",
+      "learningObjective": "Ligar o veredito ao contexto.",
+      "evidence": [
+        "Êxodo 18:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 18:18, Jetro diz que Moisés conseguiria realizar a tarefa sozinho com facilidade.",
+      "verseRef": "Êxodo 18:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "você não conseguirá realizá-la sozinho",
+      "feedbackCorrect": "O texto diz o contrário: não conseguirá sozinho.",
+      "feedbackWrong": {
+        "true": "Releia: você não conseguirá realizá-la sozinho."
+      },
+      "hint": "Veja a conclusão de Jetro.",
+      "learningObjective": "Compreender o limite de Moisés.",
+      "evidence": [
+        "Êxodo 18:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 18:17, toque a palavra que marca o contraste com o costume de Moisés.",
+      "verseRef": "Êxodo 18:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O sogro de Moisés, porém, lhe disse",
+      "feedbackCorrect": "\"Porém\" introduz a correção de Jetro.",
+      "feedbackWrong": {
+        "b": "Moisés é o ouvinte; o marcador é porém.",
+        "c": "\"disse\" é o verbo; o contraste é porém."
+      },
+      "hint": "Procure a palavra após \"Moisés\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Êxodo 18:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 18:21–22 liga o caráter dos líderes ao alívio de Moisés?",
+      "verseRef": "Êxodo 18:21–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Homens capazes julgam o simples e aliviam a carga"
+        },
+        {
+          "id": "b",
+          "text": "Só ricos devem julgar as causas"
+        },
+        {
+          "id": "c",
+          "text": "Moisés deve parar de ensinar as leis"
+        },
+        {
+          "id": "d",
+          "text": "O povo não precisa de juízes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você possa aliviar sua carga",
+      "feedbackCorrect": "Líderes capazes julgam o simples e aliviam Moisés.",
+      "feedbackWrong": {
+        "b": "O critério é caráter, não riqueza.",
+        "c": "Jetro manda ensinar estatutos e leis.",
+        "d": "O conselho é escolher juízes."
+      },
+      "hint": "Una a escolha dos homens e o alívio.",
+      "learningObjective": "Relacionar líderes e alívio.",
+      "evidence": [
+        "Êxodo 18:21",
+        "Êxodo 18:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o conselho de Jetro em Êxodo 18:13–23?",
+      "verseRef": "Êxodo 18:17–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés julga o povo sozinho"
+        },
+        {
+          "id": "b",
+          "text": "Jetro diz que a tarefa é pesada"
+        },
+        {
+          "id": "c",
+          "text": "Juízes capazes aliviam a carga"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "demasiadamente pesada para você",
+      "feedbackCorrect": "Do esgotamento ao diagnóstico e à partilha.",
+      "feedbackWrong": {
+        "default": "Comece pelo julgamento solo; os juízes fecham."
+      },
+      "hint": "Siga problema, diagnóstico e solução.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "Êxodo 18:13",
+        "Êxodo 18:18",
+        "Êxodo 18:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 18:22, o que os juízes ajudam Moisés a fazer com a carga?",
+      "verseRef": "Êxodo 18:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliviar"
+        },
+        {
+          "id": "b",
+          "text": "aumentar"
+        },
+        {
+          "id": "c",
+          "text": "esconder"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você possa aliviar sua carga",
+      "feedbackCorrect": "Os juízes existem para aliviar a carga.",
+      "feedbackWrong": {
+        "b": "O alvo é aliviar, não aumentar.",
+        "c": "O texto fala em aliviar."
+      },
+      "hint": "Veja o verbo do propósito.",
+      "learningObjective": "Lembrar o verbo do alívio.",
+      "evidence": [
+        "Êxodo 18:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 18:21 a Atos 6:3?",
+      "verseRef": "Êxodo 18:21",
+      "passageA": {
+        "ref": "Êxodo 18:21"
+      },
+      "passageB": {
+        "ref": "Atos 6:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Escolher homens capazes"
+        },
+        {
+          "id": "b",
+          "text": "Rejeitar todo serviço"
+        },
+        {
+          "id": "c",
+          "text": "Centralizar tudo num só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homens capazes, tementes a Deus",
+      "feedbackCorrect": "Nos dois textos, escolhem-se homens capazes para servir.",
+      "feedbackWrong": {
+        "b": "O elo é escolha para o serviço.",
+        "c": "O ponto é partilhar, não centralizar."
+      },
+      "hint": "Compare o critério dos escolhidos.",
+      "learningObjective": "Relacionar Jetro e Atos.",
+      "evidence": [
+        "Êxodo 18:21",
+        "Atos 6:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 18:17–23 sustenta que Moisés deve rejeitar qualquer conselho e julgar tudo sozinho.",
+      "verseRef": "Êxodo 18:17–18",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não é bom o que você faz",
+      "feedbackCorrect": "O texto sustenta ouvir conselho e partilhar a carga.",
+      "feedbackWrong": {
+        "true": "Jetro corrige o solo: não é bom; a tarefa é pesada."
+      },
+      "hint": "O texto apoia partilha ou isolamento?",
+      "learningObjective": "Interpretar liderança que ouve conselho.",
+      "evidence": [
+        "Êxodo 18:17",
+        "Êxodo 18:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 18:21, toque o trecho que sustenta o temor a Deus nos líderes.",
+      "verseRef": "Êxodo 18:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "tementes"
+        },
+        {
+          "id": "b",
+          "text": "mil"
+        },
+        {
+          "id": "c",
+          "text": "avareza"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tementes a Deus",
+      "feedbackCorrect": "Os líderes devem ser tementes a Deus.",
+      "feedbackWrong": {
+        "b": "\"mil\" é escala; o caráter é tementes.",
+        "c": "Aborrecer avareza acompanha; o trecho é tementes."
+      },
+      "hint": "Procure quem eles devem temer.",
+      "learningObjective": "Sustentar o critério do temor.",
+      "evidence": [
+        "Êxodo 18:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 18:17–23 sustenta sobre liderança?",
+      "verseRef": "Êxodo 18:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvir conselho e partilhar a carga cuida do povo"
+        },
+        {
+          "id": "b",
+          "text": "Líder fiel nunca divide tarefas"
+        },
+        {
+          "id": "c",
+          "text": "Caráter não importa nos juízes"
+        },
+        {
+          "id": "d",
+          "text": "Jetro manda Moisés fugir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eles a suportarão com você",
+      "feedbackCorrect": "Partilhar com homens capazes cuida de Moisés e do povo.",
+      "feedbackWrong": {
+        "b": "O texto corrige o isolamento.",
+        "c": "Jetro exige caráter claro.",
+        "d": "O conselho é permanecer com ajuda."
+      },
+      "hint": "Una diagnóstico e solução.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 18:18",
+        "Êxodo 18:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o conselho de Jetro à Escritura?",
+      "verseRef": "Êxodo 18:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jetro pede homens capazes"
+        },
+        {
+          "id": "b",
+          "text": "Moisés depois nomeia juízes justos"
+        },
+        {
+          "id": "c",
+          "text": "A igreja escolhe sete para servir"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "homens capazes, tementes a Deus",
+      "feedbackCorrect": "Do conselho no deserto a Deuteronômio e Atos.",
+      "feedbackWrong": {
+        "default": "Comece por Jetro; depois juízes e Atos."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver a partilha ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 18:21",
+        "Deuteronômio 1:16–17",
+        "Atos 6:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 18:19, que verbo nomeia o que Jetro fará por Moisés?",
+      "verseRef": "Êxodo 18:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "aconselharei"
+        },
+        {
+          "id": "b",
+          "text": "abandonarei"
+        },
+        {
+          "id": "c",
+          "text": "condenarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu te aconselharei",
+      "feedbackCorrect": "Jetro diz: eu te aconselharei.",
+      "feedbackWrong": {
+        "b": "Ele aconselha, não abandona.",
+        "c": "O verbo é aconselhar."
+      },
+      "hint": "Veja o que Jetro promete fazer.",
+      "learningObjective": "Lembrar o termo do conselho.",
+      "evidence": [
+        "Êxodo 18:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 18:21 a Deuteronômio 1:16–17?",
+      "verseRef": "Êxodo 18:21",
+      "passageA": {
+        "ref": "Êxodo 18:21"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 1:16–17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízes com justiça"
+        },
+        {
+          "id": "b",
+          "text": "Fuga do monte"
+        },
+        {
+          "id": "c",
+          "text": "Bezerro de ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "coloca-os como líderes sobre o povo",
+      "feedbackCorrect": "Os dois textos pedem juízes justos sobre o povo.",
+      "feedbackWrong": {
+        "b": "O elo é julgamento justo.",
+        "c": "O bezerro não está neste elo."
+      },
+      "hint": "Compare a função dos juízes.",
+      "learningObjective": "Ligar Jetro a Deuteronômio.",
+      "evidence": [
+        "Êxodo 18:21",
+        "Deuteronômio 1:16–17"
+      ]
+    }
+  ]
+}

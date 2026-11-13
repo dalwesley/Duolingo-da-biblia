@@ -1,0 +1,935 @@
+{
+  "study": {
+    "passageRef": "1 Timóteo 4:1–6",
+    "passages": [
+      {
+        "ref": "1 Timóteo 4:1–6"
+      },
+      {
+        "ref": "1 Timóteo 4:7–10"
+      },
+      {
+        "ref": "1 Timóteo 5:1–6"
+      },
+      {
+        "ref": "1 Timóteo 5:7–8"
+      },
+      {
+        "ref": "1 Timóteo 6:6–11"
+      },
+      {
+        "ref": "1 Timóteo 6:12–16"
+      }
+    ],
+    "context": "Este desafio revisa piedade, cuidado da casa e contentamento na boa luta da fé.",
+    "keyword": "piedade",
+    "keywordGloss": "Exercício proveitoso que se prova no cuidado e no contentamento.",
+    "focusQuestion": "Sua piedade aparece em casa e no contentamento?",
+    "reflectionPrompts": [
+      "Exercitar a piedade",
+      "Cuidar da casa",
+      "Boa luta"
+    ],
+    "facts": [
+      {
+        "text": "Piedade proveitosa.",
+        "evidenceRef": "1 Timóteo 4:8",
+        "evidenceSpan": "a piedade é proveitosa em todas as coisas"
+      },
+      {
+        "text": "Não cuidar nega a fé.",
+        "evidenceRef": "1 Timóteo 5:8",
+        "evidenceSpan": "negou a fé"
+      },
+      {
+        "text": "Piedade com contentamento.",
+        "evidenceRef": "1 Timóteo 6:6",
+        "evidenceSpan": "piedade unida ao contentamento"
+      },
+      {
+        "text": "Amor ao dinheiro é raiz.",
+        "evidenceRef": "1 Timóteo 6:10",
+        "evidenceSpan": "o amor ao dinheiro é a raiz de todos os males"
+      },
+      {
+        "text": "Lutar a boa luta.",
+        "evidenceRef": "1 Timóteo 6:12",
+        "evidenceSpan": "Luta o bom combate da fé"
+      },
+      {
+        "text": "Esperança no Deus vivo.",
+        "evidenceRef": "1 Timóteo 4:10",
+        "evidenceSpan": "esperança no Deus vivo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "piedade",
+        "gloss": "Proveitosa com promessa."
+      },
+      {
+        "term": "contentamento",
+        "gloss": "Grande ganho com a piedade."
+      },
+      {
+        "term": "fé",
+        "gloss": "Negada sem cuidado; combatida na luta."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Exercitar a piedade",
+        "evidenceRef": "1 Timóteo 4:7"
+      },
+      {
+        "label": "Cuidar da casa",
+        "evidenceRef": "1 Timóteo 5:8"
+      },
+      {
+        "label": "Contentamento",
+        "evidenceRef": "1 Timóteo 6:6"
+      },
+      {
+        "label": "Boa luta",
+        "evidenceRef": "1 Timóteo 6:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Físico pouco; piedade em tudo.",
+        "marker": "mas",
+        "evidenceRef": "1 Timóteo 4:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Não cuidar nega a fé.",
+        "marker": null,
+        "evidenceRef": "1 Timóteo 5:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Foge; antes persegue.",
+        "marker": "antes",
+        "evidenceRef": "1 Timóteo 6:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:5",
+        "bridge": "Contentamento"
+      },
+      {
+        "ref": "2 Timóteo 4:7",
+        "bridge": "Boa luta"
+      },
+      {
+        "ref": "Tiago 1:27",
+        "bridge": "Cuidar de viúvas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Enriquecer é o ganho.",
+        "why": "Piedade com contentamento."
+      },
+      {
+        "text": "Fé sem cuidado da casa.",
+        "why": "Negou a fé."
+      },
+      {
+        "text": "Físico supera piedade.",
+        "why": "Piedade é proveitosa."
+      }
+    ],
+    "centralInsight": "Piedade com contentamento sustenta a boa luta da fé",
+    "anchorQuestion": "O que 1 Timóteo 6:6 chama de grande ganho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 4:8, o exercício físico supera a piedade.",
+      "verseRef": "1 Timóteo 4:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "o exercício físico tem pouco valor, mas a piedade é proveitosa",
+      "feedbackCorrect": "Piedade supera.",
+      "feedbackWrong": {
+        "true": "Releia o mas."
+      },
+      "hint": "Olhe o contraste.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 5:8, toque o que foi negado.",
+      "verseRef": "1 Timóteo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "a fé"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "infiel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé",
+      "feedbackCorrect": "A fé.",
+      "feedbackWrong": {
+        "b": "Quem cuidar.",
+        "c": "Comparação."
+      },
+      "hint": "O objeto.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Timóteo 6:6, o grande ganho é quê?",
+      "verseRef": "1 Timóteo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade unida ao contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Só enriquecer"
+        },
+        {
+          "id": "c",
+          "text": "Amor ao dinheiro"
+        },
+        {
+          "id": "d",
+          "text": "Abandonar a fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Contentamento.",
+      "feedbackWrong": {
+        "b": "É o contraste.",
+        "c": "É a raiz.",
+        "d": "Há luta."
+      },
+      "hint": "Leia.",
+      "learningObjective": "Observar.",
+      "evidence": [
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 4:8 na ordem.",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o exercício físico tem pouco valor"
+        },
+        {
+          "id": "b",
+          "text": "mas a piedade é proveitosa em todas as coisas"
+        },
+        {
+          "id": "c",
+          "text": "pois traz a promessa da vida que agora é e da que há de ser"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "Contraste.",
+      "feedbackWrong": {
+        "default": "Comece pelo físico."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Timóteo 6:12, Luta o bom combate da ___.",
+      "verseRef": "1 Timóteo 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "ganância"
+        },
+        {
+          "id": "c",
+          "text": "ruína"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "bom combate da fé",
+      "feedbackCorrect": "Fé.",
+      "feedbackWrong": {
+        "b": "Fugir.",
+        "c": "Perigo."
+      },
+      "hint": "O combate.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Timóteo 6:6 comunica que se liga a este contexto?",
+      "verseRef": "1 Timóteo 6:6",
+      "passageA": {
+        "ref": "1 Timóteo 6:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O verdadeiro ganho é piedade com contentamento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade com contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Só enriquecer"
+        },
+        {
+          "id": "c",
+          "text": "Sem ganho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Ganho.",
+      "feedbackWrong": {
+        "b": "Contraste.",
+        "c": "Há ganho."
+      },
+      "hint": "A definição.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 4:7, toque o que exercitar.",
+      "verseRef": "1 Timóteo 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "piedade"
+        },
+        {
+          "id": "b",
+          "text": "fábulas"
+        },
+        {
+          "id": "c",
+          "text": "histórias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exercita-te pessoalmente na piedade",
+      "feedbackCorrect": "Piedade.",
+      "feedbackWrong": {
+        "b": "Rejeitar.",
+        "c": "Rejeitar."
+      },
+      "hint": "O objeto.",
+      "learningObjective": "Identificar.",
+      "evidence": [
+        "1 Timóteo 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Timóteo 5:1 na ordem.",
+      "verseRef": "1 Timóteo 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não repreenda os mais velhos com severidade"
+        },
+        {
+          "id": "b",
+          "text": "mas exorte-os como a pais"
+        },
+        {
+          "id": "c",
+          "text": "aos jovens, como a irmãos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não repreenda os mais velhos com severidade",
+      "feedbackCorrect": "Trato.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição."
+      },
+      "hint": "Comece.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 5:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Timóteo 6:11, Timóteo deve fugir do amor ao dinheiro e perseguir a justiça.",
+      "verseRef": "1 Timóteo 6:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "foge dessas coisas; antes, persegue a justiça",
+      "feedbackCorrect": "Fuga e perseguição.",
+      "feedbackWrong": {
+        "false": "Releia o antes."
+      },
+      "hint": "Repare no contraste.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 6:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 4:8, toque o marcador de contraste.",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "pouco"
+        },
+        {
+          "id": "c",
+          "text": "vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a piedade é proveitosa",
+      "feedbackCorrect": "Mas.",
+      "feedbackWrong": {
+        "b": "Do físico.",
+        "c": "Da promessa."
+      },
+      "hint": "A conjunção.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como piedade, casa e contentamento se relacionam?",
+      "verseRef": "1 Timóteo 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade se prova no cuidado da casa e no contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Piedade dispensa a casa"
+        },
+        {
+          "id": "c",
+          "text": "Contentamento é enriquecer"
+        },
+        {
+          "id": "d",
+          "text": "Sem luta da fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negou a fé e é pior do que um infiel",
+      "feedbackCorrect": "Cuidado e fé.",
+      "feedbackWrong": {
+        "b": "Há cuidar.",
+        "c": "Há contentamento.",
+        "d": "Há luta."
+      },
+      "hint": "Una.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco 4–6?",
+      "verseRef": "1 Timóteo 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exercitar a piedade"
+        },
+        {
+          "id": "b",
+          "text": "Cuidar da casa"
+        },
+        {
+          "id": "c",
+          "text": "Contentamento e boa luta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Piedade, casa e luta.",
+      "feedbackWrong": {
+        "default": "Comece pela piedade."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 4:7",
+        "1 Timóteo 5:8",
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Timóteo 6:11, foge; ___, persegue.",
+      "verseRef": "1 Timóteo 6:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "antes"
+        },
+        {
+          "id": "b",
+          "text": "nunca"
+        },
+        {
+          "id": "c",
+          "text": "talvez"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes, persegue a justiça",
+      "feedbackCorrect": "Antes.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "Contraste.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 6:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 6:6 a Hebreus 13:5?",
+      "verseRef": "1 Timóteo 6:6",
+      "passageA": {
+        "ref": "1 Timóteo 6:6"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Avareza"
+        },
+        {
+          "id": "c",
+          "text": "Sem piedade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Contentamento.",
+      "feedbackWrong": {
+        "b": "Oposto.",
+        "c": "Há piedade."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Relacionar.",
+      "evidence": [
+        "1 Timóteo 6:6",
+        "Hebreus 13:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 5:4, toque o marcador de causa.",
+      "verseRef": "1 Timóteo 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "primeiro"
+        },
+        {
+          "id": "c",
+          "text": "netos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois isto é aceitável diante de Deus",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "Ordem.",
+        "c": "Quem."
+      },
+      "hint": "A ligação.",
+      "learningObjective": "Reconhecer.",
+      "evidence": [
+        "1 Timóteo 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Timóteo 6:6–12?",
+      "verseRef": "1 Timóteo 6:6–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade com contentamento"
+        },
+        {
+          "id": "b",
+          "text": "Perigo de enriquecer"
+        },
+        {
+          "id": "c",
+          "text": "Boa luta da fé"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Ganho, perigo e luta.",
+      "feedbackWrong": {
+        "default": "Comece pelo ganho."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Compreender.",
+      "evidence": [
+        "1 Timóteo 6:6",
+        "1 Timóteo 6:9",
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O bloco 4–6 ensina que o amor ao dinheiro é o caminho da piedade.",
+      "verseRef": "1 Timóteo 6:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "o amor ao dinheiro é a raiz de todos os males",
+      "feedbackCorrect": "É a raiz de males.",
+      "feedbackWrong": {
+        "true": "Releia a raiz."
+      },
+      "hint": "Veja o amor ao dinheiro.",
+      "learningObjective": "Interpretar.",
+      "evidence": [
+        "1 Timóteo 6:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 6:12, toque o que aproveitar.",
+      "verseRef": "1 Timóteo 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "vida eterna"
+        },
+        {
+          "id": "b",
+          "text": "combate"
+        },
+        {
+          "id": "c",
+          "text": "chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aproveita a vida eterna",
+      "feedbackCorrect": "Vida eterna.",
+      "feedbackWrong": {
+        "b": "Combate é a luta da fé, não o que se aproveita.",
+        "c": "Chamado marca o propósito da vida eterna."
+      },
+      "hint": "O objeto.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 6:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o desafio sustenta?",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Piedade, cuidado da casa e luta contra o amor ao dinheiro"
+        },
+        {
+          "id": "b",
+          "text": "Só enriquecer"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar a família"
+        },
+        {
+          "id": "d",
+          "text": "Fábulas como centro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a piedade é proveitosa em todas as coisas",
+      "feedbackCorrect": "Piedade integral.",
+      "feedbackWrong": {
+        "b": "É o perigo.",
+        "c": "Há cuidar.",
+        "d": "Rejeitar."
+      },
+      "hint": "Una.",
+      "learningObjective": "Escolher.",
+      "evidence": [
+        "1 Timóteo 4:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio?",
+      "verseRef": "1 Timóteo 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treinar na piedade"
+        },
+        {
+          "id": "b",
+          "text": "Sustentar a casa"
+        },
+        {
+          "id": "c",
+          "text": "Lutar e contentar-se"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Piedade, casa e contentamento.",
+      "feedbackWrong": {
+        "default": "Comece pela piedade."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 4:8",
+        "1 Timóteo 5:8",
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Timóteo 6:6, piedade unida ao ___.",
+      "verseRef": "1 Timóteo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "contentamento"
+        },
+        {
+          "id": "b",
+          "text": "orgulho"
+        },
+        {
+          "id": "c",
+          "text": "ódio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piedade unida ao contentamento",
+      "feedbackCorrect": "Contentamento.",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      },
+      "hint": "O parceiro.",
+      "learningObjective": "Lembrar.",
+      "evidence": [
+        "1 Timóteo 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Timóteo 6:12 a 2 Timóteo 4:7?",
+      "verseRef": "1 Timóteo 6:12",
+      "passageA": {
+        "ref": "1 Timóteo 6:12"
+      },
+      "passageB": {
+        "ref": "2 Timóteo 4:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Boa luta da fé"
+        },
+        {
+          "id": "b",
+          "text": "Luta abandonada"
+        },
+        {
+          "id": "c",
+          "text": "Sem fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Boa luta.",
+      "feedbackWrong": {
+        "b": "Há luta.",
+        "c": "Há fé."
+      },
+      "hint": "Compare.",
+      "learningObjective": "Ligar.",
+      "evidence": [
+        "1 Timóteo 6:12",
+        "2 Timóteo 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Timóteo 4:10, toque em quem está a esperança.",
+      "verseRef": "1 Timóteo 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus vivo"
+        },
+        {
+          "id": "b",
+          "text": "esperança"
+        },
+        {
+          "id": "c",
+          "text": "fiéis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esperança no Deus vivo",
+      "feedbackCorrect": "Deus vivo.",
+      "feedbackWrong": {
+        "b": "Esperança é o que se colocou; o alvo é outra pessoa.",
+        "c": "Fiéis são o grupo especial, não o objeto da esperança."
+      },
+      "hint": "Em quem.",
+      "learningObjective": "Sustentar.",
+      "evidence": [
+        "1 Timóteo 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga piedade e luta?",
+      "verseRef": "1 Timóteo 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Treino da piedade"
+        },
+        {
+          "id": "b",
+          "text": "Fugir do amor ao dinheiro"
+        },
+        {
+          "id": "c",
+          "text": "Combater a boa luta"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Luta o bom combate da fé",
+      "feedbackCorrect": "Piedade, fuga e luta.",
+      "feedbackWrong": {
+        "default": "Comece pela piedade."
+      },
+      "hint": "Siga.",
+      "learningObjective": "Ver.",
+      "evidence": [
+        "1 Timóteo 4:7",
+        "1 Timóteo 6:11",
+        "1 Timóteo 6:12"
+      ]
+    }
+  ]
+}

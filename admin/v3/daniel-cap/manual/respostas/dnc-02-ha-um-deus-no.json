@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Daniel 2:19–24",
+    "passages": [
+      { "ref": "Daniel 2:19–24" },
+      { "ref": "Daniel 2:25–28" }
+    ],
+    "context": "Nabucodonosor exige o sonho e a interpretação, sob pena de morte aos sábios. Daniel pede tempo, e o mistério lhe é revelado numa visão de noite.",
+    "keyword": "mistério",
+    "keywordGloss": "O que só Deus revela — o sonho do rei e seu sentido, inacessíveis aos sábios da Babilônia.",
+    "focusQuestion": "Quando você enfrenta o que não entende, a quem você pede revelação primeiro?",
+    "reflectionPrompts": [
+      "Deus revela mistérios",
+      "Louvor antes da resposta",
+      "Há um Deus nos céus"
+    ],
+    "facts": [
+      {
+        "text": "O mistério foi revelado a Daniel numa visão de noite.",
+        "evidenceRef": "Daniel 2:19",
+        "evidenceSpan": "o mistério foi revelado a Daniel em uma visão de noite"
+      },
+      {
+        "text": "Daniel louvou o Deus dos céus.",
+        "evidenceRef": "Daniel 2:19",
+        "evidenceSpan": "Daniel louvou o Deus dos céus"
+      },
+      {
+        "text": "De Deus são a sabedoria e o poder.",
+        "evidenceRef": "Daniel 2:20",
+        "evidenceSpan": "dele são a sabedoria e o poder"
+      },
+      {
+        "text": "Ele remove os reis e estabelece os reis.",
+        "evidenceRef": "Daniel 2:21",
+        "evidenceSpan": "remove os reis e estabelece os reis"
+      },
+      {
+        "text": "Nenhum sábio, astrólogo, mago ou adivinho pode revelar o mistério ao rei.",
+        "evidenceRef": "Daniel 2:27",
+        "evidenceSpan": "nenhum sábio nem astrólogo nem mago nem adivinho pode revelar"
+      },
+      {
+        "text": "Há um Deus nos céus que revela os mistérios.",
+        "evidenceRef": "Daniel 2:28",
+        "evidenceSpan": "há um Deus nos céus que revela os mistérios"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "mistério",
+        "gloss": "O que o rei exige e só Deus pode revelar."
+      },
+      {
+        "term": "sabedoria",
+        "gloss": "Dom que vem de Deus, não da corte babilônica."
+      },
+      {
+        "term": "revela",
+        "gloss": "Ação de Deus ao abrir o profundo e o escondido."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Mistério revelado e louvor",
+        "evidenceRef": "Daniel 2:19–20"
+      },
+      {
+        "label": "Deus muda tempos e reis",
+        "evidenceRef": "Daniel 2:21–23"
+      },
+      {
+        "label": "Daniel impede a morte dos sábios",
+        "evidenceRef": "Daniel 2:24–25"
+      },
+      {
+        "label": "Só Deus revela o mistério ao rei",
+        "evidenceRef": "Daniel 2:26–28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O mistério é revelado; por isso Daniel louva o Deus dos céus.",
+        "marker": "por isso",
+        "evidenceRef": "Daniel 2:19"
+      },
+      {
+        "kind": "contraste",
+        "text": "Nenhum sábio pode revelar; mas há um Deus nos céus que revela.",
+        "marker": "Mas",
+        "evidenceRef": "Daniel 2:27–28"
+      },
+      {
+        "kind": "causa",
+        "text": "Daniel louva porque dele são a sabedoria e o poder.",
+        "marker": "porque",
+        "evidenceRef": "Daniel 2:20"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Amós 3:7", "bridge": "Deus revela aos profetas" },
+      { "ref": "1 Coríntios 2:10", "bridge": "Espírito revela o profundo" },
+      { "ref": "Gênesis 41:16", "bridge": "Deus dá a interpretação" }
+    ],
+    "misreadings": [
+      {
+        "text": "Daniel descobriu o sonho por técnica dos magos da corte.",
+        "why": "2:19 e 2:28 atribuem a revelação a Deus, não à técnica humana."
+      },
+      {
+        "text": "Os sábios da Babilônia também poderiam revelar o mistério.",
+        "why": "2:27 diz que nenhum sábio, astrólogo, mago ou adivinho pode revelar."
+      },
+      {
+        "text": "Daniel só pensou em si e deixou os sábios morrerem.",
+        "why": "Em 2:24 ele pede a Arioque: não mates os sábios da Babilônia."
+      }
+    ],
+    "centralInsight": "Há um Deus no céu que revela os mistérios; a sabedoria não vem do rei.",
+    "anchorQuestion": "Segundo Daniel 2:28, quem revela os mistérios?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 2:27, qualquer mago da Babilônia podia revelar o mistério ao rei.",
+      "verseRef": "Daniel 2:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "nenhum sábio nem astrólogo nem mago nem adivinho pode revelar",
+      "feedbackCorrect": "Daniel afirma que nenhum deles pode revelar o mistério.",
+      "feedbackWrong": { "true": "Releia 2:27: nenhum deles pode revelar ao rei." },
+      "hint": "Veja o que Daniel diz sobre sábios e magos.",
+      "learningObjective": "Observar a impossibilidade humana no texto.",
+      "evidence": ["Daniel 2:27"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 2:19, toque o que foi revelado a Daniel.",
+      "verseRef": "Daniel 2:19",
+      "evidenceSpan": "o mistério foi revelado a Daniel",
+      "feedbackCorrect": "O mistério foi revelado a Daniel numa visão de noite.",
+      "hint": "Procure o sujeito do que foi revelado.",
+      "learningObjective": "Identificar o que Deus revelou.",
+      "evidence": ["Daniel 2:19"],
+      "options": [
+        { "id": "a", "text": "mistério" },
+        { "id": "b", "text": "noite" },
+        { "id": "c", "text": "céus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Noite\" é quando veio a visão, não o que foi revelado.",
+        "c": "\"Céus\" aponta a Deus, não o conteúdo revelado."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 2:20, de quem são a sabedoria e o poder?",
+      "verseRef": "Daniel 2:20",
+      "evidenceSpan": "dele são a sabedoria e o poder",
+      "feedbackCorrect": "De Deus são a sabedoria e o poder.",
+      "hint": "Veja a razão do louvor no versículo.",
+      "learningObjective": "Observar a origem da sabedoria e do poder.",
+      "evidence": ["Daniel 2:20"],
+      "options": [
+        { "id": "a", "text": "Do rei Nabucodonosor" },
+        { "id": "b", "text": "Dos magos da Babilônia" },
+        { "id": "c", "text": "De Deus" },
+        { "id": "d", "text": "De Arioque" }
+      ],
+      "correctOptionId": "c",
+      "feedbackWrong": {
+        "a": "O louvor é ao nome de Deus, não ao rei.",
+        "b": "Os magos não podem revelar o mistério.",
+        "d": "Arioque só introduz Daniel ao rei."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 2:19 na ordem do texto.",
+      "verseRef": "Daniel 2:19",
+      "evidenceSpan": "o mistério foi revelado a Daniel em uma visão de noite",
+      "feedbackCorrect": "Primeiro a revelação; por isso vem o louvor.",
+      "hint": "Comece pelo mistério revelado.",
+      "learningObjective": "Reconhecer a sequência de 2:19.",
+      "evidence": ["Daniel 2:19"],
+      "options": [
+        { "id": "a", "text": "Então, o mistério foi revelado a Daniel" },
+        { "id": "b", "text": "em uma visão de noite" },
+        { "id": "c", "text": "por isso, Daniel louvou o Deus dos céus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "A revelação vem antes do louvor." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 2:28, o que há um Deus nos céus que faz?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "que revela os mistérios",
+      "feedbackCorrect": "Há um Deus nos céus que revela os mistérios.",
+      "hint": "É o verbo da ação de Deus no versículo.",
+      "learningObjective": "Lembrar a ação de Deus sobre os mistérios.",
+      "evidence": ["Daniel 2:28"],
+      "options": [
+        { "id": "a", "text": "esconde" },
+        { "id": "b", "text": "revela" },
+        { "id": "c", "text": "vende" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto diz que Ele revela, não esconde.",
+        "c": "\"Vende\" não aparece; Deus revela."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 2:28 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "O mistério do rei só se abre porque há Deus que revela.",
+      "hint": "Compare a incapacidade dos sábios com Deus.",
+      "learningObjective": "Ligar 2:28 à revelação no conflito da corte.",
+      "evidence": ["Daniel 2:28"],
+      "passageA": { "ref": "Daniel 2:28" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os sábios da Babilônia não podem revelar o sonho; Daniel aponta para Deus."
+      },
+      "options": [
+        { "id": "a", "text": "Deus revela o inacessível" },
+        { "id": "b", "text": "Magos resolvem sozinhos" },
+        { "id": "c", "text": "O rei inventa o sonho" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "2:27 nega que magos possam revelar.",
+        "c": "O texto trata o sonho como real e revelado por Deus."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 2:19, Daniel louva o Deus dos céus porque o mistério lhe foi revelado.",
+      "verseRef": "Daniel 2:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "por isso, Daniel louvou o Deus dos céus",
+      "feedbackCorrect": "\"Por isso\" liga a revelação ao louvor.",
+      "feedbackWrong": { "false": "Releia 2:19: a revelação leva ao louvor." },
+      "hint": "Veja a expressão que liga revelação e louvor.",
+      "learningObjective": "Compreender a relação revelação → louvor.",
+      "evidence": ["Daniel 2:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 2:19, toque a expressão que liga a revelação ao louvor.",
+      "verseRef": "Daniel 2:19",
+      "evidenceSpan": "por isso, Daniel louvou",
+      "feedbackCorrect": "\"Por isso\" marca o resultado: revelado, Daniel louva.",
+      "hint": "É a expressão entre a visão e o louvor.",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": ["Daniel 2:19"],
+      "options": [
+        { "id": "a", "text": "por isso" },
+        { "id": "b", "text": "visão" },
+        { "id": "c", "text": "noite" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Visão\" é o meio, não o marcador.",
+        "c": "\"Noite\" indica quando, não a ligação lógica."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 2:27–28 relaciona sábios humanos e Deus?",
+      "verseRef": "Daniel 2:27–28",
+      "evidenceSpan": "Mas há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "Humanos não podem; Deus nos céus revela o mistério.",
+      "hint": "Repare no contraste depois de \"Mas\".",
+      "learningObjective": "Relacionar incapacidade humana e revelação divina.",
+      "evidence": ["Daniel 2:27–28"],
+      "options": [
+        { "id": "a", "text": "Sábios e Deus revelam com o mesmo poder" },
+        { "id": "b", "text": "Só Deus revela o que nenhum sábio pode" },
+        { "id": "c", "text": "Os magos corrigem o que Deus esconde" },
+        { "id": "d", "text": "Daniel nega que exista Deus nos céus" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O texto nega a capacidade dos sábios.",
+        "c": "Não há correção dos magos sobre Deus.",
+        "d": "Daniel afirma que há um Deus nos céus."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Daniel 2:19–28?",
+      "verseRef": "Daniel 2:19–28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "Revelação e louvor, ação de Deus, ida a Arioque, testemunho ao rei.",
+      "hint": "Comece pela visão de noite.",
+      "learningObjective": "Seguir o movimento do trecho.",
+      "evidence": ["Daniel 2:19–28"],
+      "options": [
+        { "id": "a", "text": "Mistério revelado e louvor a Deus" },
+        { "id": "b", "text": "Daniel impede a morte dos sábios" },
+        { "id": "c", "text": "Testemunho: só Deus revela ao rei" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela revelação; o testemunho ao rei fecha." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 2:28, que palavra marca o contraste com a incapacidade dos sábios?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "Mas há um Deus nos céus",
+      "feedbackCorrect": "\"Mas\" abre o contraste: humanos não podem; Deus revela.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de contraste em 2:28.",
+      "evidence": ["Daniel 2:28"],
+      "options": [
+        { "id": "a", "text": "Assim" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "Logo" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Assim\" não abre 2:28.",
+        "c": "\"Logo\" não abre 2:28."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 2:28 a Gênesis 41:16?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "José e Daniel apontam: a interpretação vem de Deus.",
+      "hint": "Compare quem dá a interpretação do sonho.",
+      "learningObjective": "Relacionar Daniel e José na revelação de sonhos.",
+      "evidence": ["Daniel 2:28", "Gênesis 41:16"],
+      "passageA": { "ref": "Daniel 2:28" },
+      "passageB": { "ref": "Gênesis 41:16" },
+      "options": [
+        { "id": "a", "text": "Deus dá a interpretação" },
+        { "id": "b", "text": "Reis inventam mistérios" },
+        { "id": "c", "text": "Magos vencem sozinhos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos não dizem que reis inventam o mistério.",
+        "c": "Os textos apontam Deus, não magos."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 2:19–28, a sabedoria da corte babilônica basta para abrir o mistério do rei.",
+      "verseRef": "Daniel 2:27–28",
+      "correctOptionId": "false",
+      "evidenceSpan": "nenhum sábio nem astrólogo nem mago nem adivinho pode revelar",
+      "feedbackCorrect": "O texto nega a suficiência da corte e aponta para Deus.",
+      "feedbackWrong": { "true": "2:27–28 nega que a corte possa revelar." },
+      "hint": "Compare 2:27 com a afirmação de 2:28.",
+      "learningObjective": "Interpretar a insuficiência da sabedoria da corte.",
+      "evidence": ["Daniel 2:27–28"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 2:28, toque o trecho que sustenta quem revela os mistérios.",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "Há um Deus nos céus que revela os mistérios.",
+      "hint": "Procure quem age sobre os mistérios.",
+      "learningObjective": "Sustentar com o texto a fonte da revelação.",
+      "evidence": ["Daniel 2:28"],
+      "options": [
+        { "id": "a", "text": "Deus nos céus" },
+        { "id": "b", "text": "últimos dias" },
+        { "id": "c", "text": "teu leito" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Últimos dias\" é o horizonte do sonho, não quem revela.",
+        "c": "\"Teu leito\" é o lugar do sonho, não a fonte."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Daniel 2:19–28 sustenta sobre a origem da revelação?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "A revelação vem de Deus nos céus, não da técnica da corte.",
+      "hint": "Compare cada opção com 2:27–28.",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": ["Daniel 2:28"],
+      "options": [
+        { "id": "a", "text": "Deus nos céus revela o que a corte não pode" },
+        { "id": "b", "text": "Daniel inventou o sonho para se salvar" },
+        { "id": "c", "text": "Os magos e Deus revelam em parceria igual" },
+        { "id": "d", "text": "O mistério permanece fechado para sempre" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de revelação recebida, não de invenção.",
+        "c": "2:27 exclui magos; 2:28 aponta só a Deus.",
+        "d": "O mistério é revelado a Daniel e anunciado ao rei."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da revelação de mistérios?",
+      "verseRef": "Daniel 2:28",
+      "evidenceSpan": "há um Deus nos céus que revela os mistérios",
+      "feedbackCorrect": "José aponta a Deus; Daniel afirma o mesmo; Paulo fala do Espírito que revela.",
+      "hint": "Parta de José e avance.",
+      "learningObjective": "Ver Daniel no fio bíblico da revelação.",
+      "evidence": ["Gênesis 41:16", "Daniel 2:28", "1 Coríntios 2:10"],
+      "options": [
+        { "id": "a", "text": "José: a interpretação pertence a Deus" },
+        { "id": "b", "text": "Daniel: há Deus nos céus que revela" },
+        { "id": "c", "text": "Paulo: o Espírito revela o profundo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Gênesis 41, Daniel 2 e 1 Coríntios 2." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 2:20, que palavra completa: dele são a ___ e o poder?",
+      "verseRef": "Daniel 2:20",
+      "evidenceSpan": "dele são a sabedoria e o poder",
+      "feedbackCorrect": "Dele são a sabedoria e o poder — termo que carrega o sentido da cena.",
+      "hint": "É o que Daniel liga ao nome de Deus.",
+      "learningObjective": "Lembrar o termo-chave do louvor.",
+      "evidence": ["Daniel 2:20"],
+      "options": [
+        { "id": "a", "text": "riqueza" },
+        { "id": "b", "text": "sabedoria" },
+        { "id": "c", "text": "coroa" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Riqueza\" não é o par com poder em 2:20.",
+        "c": "\"Coroa\" não aparece em 2:20."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 2:22 a 1 Coríntios 2:10?",
+      "verseRef": "Daniel 2:22",
+      "evidenceSpan": "Ele revela o profundo e o escondido",
+      "feedbackCorrect": "Nos dois textos, Deus revela o profundo que estava escondido.",
+      "hint": "Compare o que é revelado do profundo.",
+      "learningObjective": "Ligar a revelação do profundo em Daniel e em Paulo.",
+      "evidence": ["Daniel 2:22", "1 Coríntios 2:10"],
+      "passageA": { "ref": "Daniel 2:22" },
+      "passageB": { "ref": "1 Coríntios 2:10" },
+      "options": [
+        { "id": "a", "text": "Deus revela o profundo" },
+        { "id": "b", "text": "Trevas vencem a luz" },
+        { "id": "c", "text": "Reis escondem a verdade" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos falam de revelação, não de vitória das trevas.",
+        "c": "O foco é Deus que revela, não reis que escondem."
+      }
+    }
+  ]
+}

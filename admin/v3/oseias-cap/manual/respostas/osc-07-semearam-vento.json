@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Oséias 8:1–6",
+    "passages": [
+      {
+        "ref": "Oséias 8:1–6"
+      }
+    ],
+    "context": "A trombeta soa: Israel rejeitou o bem e fez ídolos; semearam vento.",
+    "keyword": "Sopre",
+    "keywordGloss": "Palavra-chave do trecho em Semearam vento.",
+    "focusQuestion": "Onde esta palavra de Oséias encontra a sua vida agora?",
+    "reflectionPrompts": [
+      "Sopre a trombeta! Ele vem como águia",
+      "Então clamarão a mim: 'Deus meu! Nós,",
+      "Israel rejeitou o bem"
+    ],
+    "facts": [
+      {
+        "text": "Sopre a trombeta! Ele vem como águia contra a casa do Senhor, porque.",
+        "evidenceRef": "Oséias 8:1",
+        "evidenceSpan": "Sopre a trombeta! Ele vem como águia contra a casa do Senhor, porque"
+      },
+      {
+        "text": "Então clamarão a mim: 'Deus meu! Nós, Israel, te conhecemos.'.",
+        "evidenceRef": "Oséias 8:2",
+        "evidenceSpan": "Então clamarão a mim: 'Deus meu! Nós, Israel, te conhecemos.'"
+      },
+      {
+        "text": "Israel rejeitou o bem.",
+        "evidenceRef": "Oséias 8:3",
+        "evidenceSpan": "Israel rejeitou o bem"
+      },
+      {
+        "text": "Fizeram reis, mas não por minha vontade.",
+        "evidenceRef": "Oséias 8:4",
+        "evidenceSpan": "Fizeram reis, mas não por minha vontade"
+      },
+      {
+        "text": "O teu bezerro, ó Samaria, é rejeitado.",
+        "evidenceRef": "Oséias 8:5",
+        "evidenceSpan": "O teu bezerro, ó Samaria, é rejeitado"
+      },
+      {
+        "text": "Porque isso também vem de Israel.",
+        "evidenceRef": "Oséias 8:6",
+        "evidenceSpan": "Porque isso também vem de Israel"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Sopre",
+        "gloss": "Palavra-chave do trecho em Semearam vento."
+      },
+      {
+        "term": "Senhor",
+        "gloss": "Palavra-chave do trecho em Semearam vento."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra-chave do trecho em Semearam vento."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sopre a trombeta! Ele vem como águia contra a",
+        "evidenceRef": "Oséias 8:1"
+      },
+      {
+        "label": "Então clamarão a mim: 'Deus meu! Nós, Israel, te",
+        "evidenceRef": "Oséias 8:2"
+      },
+      {
+        "label": "Israel rejeitou o bem",
+        "evidenceRef": "Oséias 8:3"
+      },
+      {
+        "label": "Fizeram reis, mas não por minha vontade",
+        "evidenceRef": "Oséias 8:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Sopre a trombeta! Ele vem como águia contra a casa do Senhor, porque transgrediram a",
+        "marker": "porque",
+        "evidenceRef": "Oséias 8:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Então clamarão a mim: 'Deus meu! Nós, Israel, te conhecemos.'",
+        "marker": "Então",
+        "evidenceRef": "Oséias 8:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Fizeram reis, mas não por minha vontade",
+        "marker": "mas",
+        "evidenceRef": "Oséias 8:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 3:1",
+        "bridge": "Volta da esposa"
+      },
+      {
+        "ref": "Romanos 9:25",
+        "bridge": "Povo chamado de novo"
+      },
+      {
+        "ref": "Lucas 15:18",
+        "bridge": "Voltar ao pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O texto não exige resposta prática.",
+        "why": "A cena chama a ouvir e voltar ao Senhor."
+      },
+      {
+        "text": "O juízo apaga qualquer esperança.",
+        "why": "Há convite e promessa no bloco da trilha."
+      },
+      {
+        "text": "Os ídolos são fonte real das bênçãos.",
+        "why": "O Senhor é quem dá o necessário."
+      }
+    ],
+    "centralInsight": "Quem semeia vento colhe tempestade; um ídolo feito por mãos não é Deus.",
+    "anchorQuestion": "Segundo Oséias 8:1, o que o texto destaca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Oséias 8:1, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 8:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Sopre a trombeta! Ele vem como águia contra a casa do Senhor, porque",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler semente em Oséias 8:1.",
+      "evidence": [
+        "Oséias 8:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Oséias 8:1, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 8:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sopre"
+        },
+        {
+          "id": "b",
+          "text": "trombeta"
+        },
+        {
+          "id": "c",
+          "text": "como"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sopre",
+      "feedbackCorrect": "O texto traz \"Sopre\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 8:1.",
+      "evidence": [
+        "Oséias 8:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Oséias 8:2, o que o texto afirma?",
+      "verseRef": "Oséias 8:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então clamarão a mim: 'Deus meu! Nós, Israel, te conhecemos.'"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então clamarão a mim: 'Deus meu! Nós, Israel, te conhecemos.'",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 8:2.",
+      "evidence": [
+        "Oséias 8:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o versículo na ordem do texto. (Oséias 8:2)",
+      "verseRef": "Oséias 8:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então clamarão"
+        },
+        {
+          "id": "b",
+          "text": "a mim: 'Deus meu!"
+        },
+        {
+          "id": "c",
+          "text": "Nós, Israel, te conhecemos.'"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então clamarão",
+      "feedbackCorrect": "A ordem segue o versículo.",
+      "feedbackWrong": {
+        "default": "Comece pelo início do verso."
+      },
+      "hint": "Siga a ordem das palavras no palco.",
+      "learningObjective": "Ordenar Oséias 8:2.",
+      "evidence": [
+        "Oséias 8:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Oséias 8:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 8:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "Sopre"
+        },
+        {
+          "id": "c",
+          "text": "trombeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "A palavra do texto é \"Israel\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 8:3.",
+      "evidence": [
+        "Oséias 8:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Oséias 8:1 comunica que se liga a este contexto?",
+      "verseRef": "Oséias 8:1",
+      "passageA": {
+        "ref": "Oséias 8:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A trombeta soa: Israel rejeitou o bem e fez ídolos; semearam vento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a voltar"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sopre a trombeta! Ele vem como águia contra a casa do Senhor, porque",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 8:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Oséias 8:3, israel rejeitou o bem.",
+      "verseRef": "Oséias 8:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Israel rejeitou o bem",
+      "feedbackCorrect": "O texto confirma.",
+      "feedbackWrong": {
+        "false": "O versículo confirma a afirmação."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler caminhada em Oséias 8:3.",
+      "evidence": [
+        "Oséias 8:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Oséias 8:3, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 8:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "rejeitou"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rejeitou",
+      "feedbackCorrect": "O texto traz \"rejeitou\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 8:3.",
+      "evidence": [
+        "Oséias 8:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Oséias 8:4, o que o texto afirma?",
+      "verseRef": "Oséias 8:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeram e reis"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fizeram reis, mas não por minha vontade",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 8:4.",
+      "evidence": [
+        "Oséias 8:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento desta cena. (Oséias 8:4)",
+      "verseRef": "Oséias 8:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeram e reis"
+        },
+        {
+          "id": "b",
+          "text": "bezerro e Samaria"
+        },
+        {
+          "id": "c",
+          "text": "vem e Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fizeram reis, mas não por minha vontade",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 8:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Oséias 8:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 8:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "bezerro"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "rejeitou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "bezerro",
+      "feedbackCorrect": "A palavra do texto é \"bezerro\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 8:5.",
+      "evidence": [
+        "Oséias 8:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Oséias 8:3 a Romanos 9:25?",
+      "verseRef": "Oséias 8:3",
+      "passageA": {
+        "ref": "Oséias 8:3"
+      },
+      "passageB": {
+        "ref": "Romanos 9:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo chamado de novo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Israel rejeitou o bem",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 8:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Oséias 8:5, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 8:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "O teu bezerro, ó Samaria, é rejeitado",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler profundezas em Oséias 8:5.",
+      "evidence": [
+        "Oséias 8:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Oséias 8:5, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 8:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Samaria"
+        },
+        {
+          "id": "b",
+          "text": "bezerro"
+        },
+        {
+          "id": "c",
+          "text": "rejeitado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Samaria",
+      "feedbackCorrect": "O texto traz \"Samaria\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 8:5.",
+      "evidence": [
+        "Oséias 8:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Oséias 8:6, o que o texto afirma?",
+      "verseRef": "Oséias 8:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "vem e Israel"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque isso também vem de Israel",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 8:6.",
+      "evidence": [
+        "Oséias 8:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica que o texto sustenta. (Oséias 8:6)",
+      "verseRef": "Oséias 8:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "semeiam e ventos"
+        },
+        {
+          "id": "b",
+          "text": "Sopre e trombeta"
+        },
+        {
+          "id": "c",
+          "text": "clamarão e mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porque isso também vem de Israel",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 8:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Oséias 8:7, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "semeiam"
+        },
+        {
+          "id": "b",
+          "text": "bezerro"
+        },
+        {
+          "id": "c",
+          "text": "Samaria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "semeiam",
+      "feedbackCorrect": "A palavra do texto é \"semeiam\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 8:7.",
+      "evidence": [
+        "Oséias 8:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Oséias 8:5 a Lucas 15:18?",
+      "verseRef": "Oséias 8:5",
+      "passageA": {
+        "ref": "Oséias 8:5"
+      },
+      "passageB": {
+        "ref": "Lucas 15:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voltar ao pai"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O teu bezerro, ó Samaria, é rejeitado",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 8:5"
+      ]
+    }
+  ]
+}

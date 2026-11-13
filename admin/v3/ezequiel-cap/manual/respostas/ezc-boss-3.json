@@ -1,0 +1,629 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 14:1–6",
+    "passages": [
+      { "ref": "Ezequiel 13:1–10" },
+      { "ref": "Ezequiel 14:1–8" },
+      { "ref": "Ezequiel 15:1–8" },
+      { "ref": "Ezequiel 16:1–8" },
+      { "ref": "Ezequiel 17:1–10" },
+      { "ref": "Ezequiel 18:1–9" }
+    ],
+    "context": "Esta travessia reúne os falsos profetas, os ídolos no coração, a videira inútil, Jerusalém achada, a águia e a responsabilidade de cada alma.",
+    "keyword": "aliança",
+    "keywordGloss": "O vínculo que Deus estabelece por graça e que a mentira, os ídolos e a infidelidade tentam romper.",
+    "focusQuestion": "Quando Deus confronta mentira e chama você a viver, o que você ainda ergue no lugar dEle?",
+    "reflectionPrompts": [
+      "Falsos e ídolos",
+      "Videira e aliança",
+      "Águia e alma"
+    ],
+    "facts": [
+      {
+        "text": "Os falsos profetas são como raposas entre as ruínas.",
+        "evidenceRef": "Ezequiel 13:4",
+        "evidenceSpan": "são como raposas entre as ruínas"
+      },
+      {
+        "text": "Anciãos ergueram ídolos dentro do coração.",
+        "evidenceRef": "Ezequiel 14:3",
+        "evidenceSpan": "ergueram seus ídolos dentro do coração"
+      },
+      {
+        "text": "Como o sarmento ao fogo, Deus entregará os habitantes de Jerusalém.",
+        "evidenceRef": "Ezequiel 15:6",
+        "evidenceSpan": "assim entregarei os habitantes de Jerusalém"
+      },
+      {
+        "text": "O Senhor passou e disse: vive, mesmo no sangue.",
+        "evidenceRef": "Ezequiel 16:6",
+        "evidenceSpan": "Mesmo que estejas no teu sangue, vive"
+      },
+      {
+        "text": "Uma grande águia veio ao Líbano e levou a ponta de um cedro.",
+        "evidenceRef": "Ezequiel 17:3",
+        "evidenceSpan": "veio ao Líbano e levou a ponta de um cedro"
+      },
+      {
+        "text": "A alma que pecar, essa morrerá.",
+        "evidenceRef": "Ezequiel 18:4",
+        "evidenceSpan": "a alma que pecar, essa morrerá"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ídolos",
+        "gloss": "O que é erguido no coração no lugar de Deus."
+      },
+      {
+        "term": "sarmento",
+        "gloss": "O ramo inútil da videira entregue ao fogo."
+      },
+      {
+        "term": "alma",
+        "gloss": "A pessoa que responde por si diante de Deus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Falsos profetas e ídolos no coração",
+        "evidenceRef": "Ezequiel 13:3–6"
+      },
+      {
+        "label": "Videira inútil e Jerusalém achada",
+        "evidenceRef": "Ezequiel 15:6"
+      },
+      {
+        "label": "Águia, cedro e responsabilidade da alma",
+        "evidenceRef": "Ezequiel 17:3"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Dizem \"O Senhor disse\"; porém, o Senhor não os enviou.",
+        "marker": "porém",
+        "evidenceRef": "Ezequiel 13:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "A resposta conforme os ídolos visa conquistar o coração de Israel.",
+        "marker": "Para que",
+        "evidenceRef": "Ezequiel 14:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Como o sarmento ao fogo, assim Deus entregará Jerusalém.",
+        "marker": "Como",
+        "evidenceRef": "Ezequiel 15:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 23:16",
+        "bridge": "Não ouçam visões vãs"
+      },
+      {
+        "ref": "João 15:6",
+        "bridge": "Ramo seco ao fogo"
+      },
+      {
+        "ref": "Deuteronômio 24:16",
+        "bridge": "Filho não morre pelo pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Consultar o profeta basta, mesmo com ídolos no coração.",
+        "why": "Deus responde conforme os ídolos e chama à conversão."
+      },
+      {
+        "text": "Os filhos sempre pagam o pecado dos pais; o provérbio continua.",
+        "why": "Deus cancela o provérbio; a alma que pecar, essa morrerá."
+      },
+      {
+        "text": "A videira é sempre útil; o texto só elogia Israel.",
+        "why": "O sarmento não serve para obra e é entregue ao fogo."
+      }
+    ],
+    "centralInsight": "Deus confronta mentira e chama cada um a viver",
+    "anchorQuestion": "O que acontece com a alma que pecar em Ezequiel 18:4?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 13:4, os profetas de Israel são comparados a raposas entre as ruínas.",
+      "verseRef": "Ezequiel 13:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "são como raposas entre as ruínas",
+      "feedbackCorrect": "O texto compara os profetas a raposas entre as ruínas.",
+      "feedbackWrong": {
+        "false": "O versículo diz que são como raposas entre as ruínas."
+      },
+      "hint": "Veja a comparação no versículo.",
+      "learningObjective": "Identificar a comparação dos falsos.",
+      "evidence": ["Ezequiel 13:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 14:3, toque o que os anciãos ergueram dentro do coração.",
+      "verseRef": "Ezequiel 14:3",
+      "options": [
+        { "id": "a", "text": "seus ídolos" },
+        { "id": "b", "text": "Filho do homem" },
+        { "id": "c", "text": "diante de si" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ergueram seus ídolos dentro do coração",
+      "feedbackCorrect": "Eles ergueram seus ídolos dentro do coração.",
+      "feedbackWrong": {
+        "b": "É o vocativo, não o que ergueram.",
+        "c": "Indica posição do tropeço, não o erguido."
+      },
+      "hint": "Procure o objeto de ergueram.",
+      "learningObjective": "Identificar os ídolos interiores.",
+      "evidence": ["Ezequiel 14:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 15:6, a quem Deus entrega como o sarmento ao fogo?",
+      "verseRef": "Ezequiel 15:6",
+      "options": [
+        { "id": "a", "text": "Os habitantes de Jerusalém" },
+        { "id": "b", "text": "Os mercadores do Líbano" },
+        { "id": "c", "text": "As raposas das ruínas" },
+        { "id": "d", "text": "Os anciãos sem ídolos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "A comparação aponta aos habitantes de Jerusalém.",
+      "feedbackWrong": {
+        "b": "Não são os mercadores neste versículo.",
+        "c": "A imagem das raposas é de outra cena.",
+        "d": "O alvo são os habitantes de Jerusalém."
+      },
+      "hint": "Leia o fim da comparação com o sarmento.",
+      "learningObjective": "Reconhecer o alvo do juízo da videira.",
+      "evidence": ["Ezequiel 15:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 18:4 na ordem do texto.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "Eis que todas as almas Me pertencem" },
+        { "id": "b", "text": "assim como a alma do pai, a alma do filho também é Minha" },
+        { "id": "c", "text": "a alma que pecar, essa morrerá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Posse, comparação pai-filho e destino de quem peca.",
+      "feedbackWrong": {
+        "default": "Comece pela posse; o pecar e morrer fecha."
+      },
+      "hint": "Siga posse, comparação e resultado.",
+      "learningObjective": "Reconhecer a ordem de Ezequiel 18:4.",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 17:3, levou a ponta de um ___.",
+      "verseRef": "Ezequiel 17:3",
+      "options": [
+        { "id": "a", "text": "cedro" },
+        { "id": "b", "text": "salgueiro" },
+        { "id": "c", "text": "trigo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levou a ponta de um cedro",
+      "feedbackCorrect": "A árvore da ponta levada é o cedro.",
+      "feedbackWrong": {
+        "b": "O salgueiro aparece depois, na muda.",
+        "c": "Não é trigo: é cedro."
+      },
+      "hint": "Veja o substantivo depois de ponta de um.",
+      "learningObjective": "Lembrar a árvore do topo cortado.",
+      "evidence": ["Ezequiel 17:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 16:6 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 16:6",
+      "passageA": { "ref": "Ezequiel 16:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus acha a abandonada e chama a viver por graça."
+      },
+      "options": [
+        { "id": "a", "text": "Vida no abandono" },
+        { "id": "b", "text": "Raposa nas ruínas" },
+        { "id": "c", "text": "Vento oriental" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mesmo que estejas no teu sangue, vive",
+      "feedbackCorrect": "O vive no sangue liga ao contexto da graça.",
+      "feedbackWrong": {
+        "b": "É de outra cena da etapa.",
+        "c": "Não está neste trecho do boss."
+      },
+      "hint": "Una o comando vive ao tema da etapa.",
+      "learningObjective": "Ligar o vive ao contexto.",
+      "evidence": ["Ezequiel 16:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 18:4, toque o que acontece à alma que pecar.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "essa morrerá" },
+        { "id": "b", "text": "alma do pai" },
+        { "id": "c", "text": "Me pertencem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "A alma que pecar, essa morrerá.",
+      "feedbackWrong": {
+        "b": "É comparação de posse, não o resultado.",
+        "c": "Afirma a posse, não o destino de quem peca."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Identificar o destino da alma que peca.",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 17:3 na ordem do texto.",
+      "verseRef": "Ezequiel 17:3",
+      "options": [
+        { "id": "a", "text": "Uma grande águia, de grandes asas, de plumagem longa" },
+        { "id": "b", "text": "farta de penas de diversas cores, veio ao Líbano" },
+        { "id": "c", "text": "e levou a ponta de um cedro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Uma grande águia, de grandes asas, de plumagem longa",
+      "feedbackCorrect": "Descrição, chegada ao Líbano e o cedro levado.",
+      "feedbackWrong": {
+        "default": "Comece pela águia; o cedro fecha."
+      },
+      "hint": "Siga descrição, lugar e ação.",
+      "learningObjective": "Reconhecer a ordem da parábola.",
+      "evidence": ["Ezequiel 17:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 13:6, os falsos dizem \"O Senhor disse\", porém o Senhor não os enviou.",
+      "verseRef": "Ezequiel 13:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "porém, o Senhor não os enviou",
+      "feedbackCorrect": "O \"porém\" marca o contraste: falam, mas não foram enviados.",
+      "feedbackWrong": {
+        "false": "O versículo diz que o Senhor não os enviou."
+      },
+      "hint": "Leia a palavra que marca o contraste.",
+      "learningObjective": "Compreender o contraste dos falsos.",
+      "evidence": ["Ezequiel 13:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 13:6, toque a palavra que marca o contraste.",
+      "verseRef": "Ezequiel 13:6",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "visões falsas" },
+        { "id": "c", "text": "cumprimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, o Senhor não os enviou",
+      "feedbackCorrect": "\"Porém\" introduz o contraste com o envio falso.",
+      "feedbackWrong": {
+        "b": "É o conteúdo da mentira, não o marcador.",
+        "c": "É o que eles esperam, não o contraste."
+      },
+      "hint": "Procure a palavra curta que vira a frase.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["Ezequiel 13:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 14:3 se liga a 14:5–6?",
+      "verseRef": "Ezequiel 14:3",
+      "options": [
+        { "id": "a", "text": "Ídolos no coração exigem resposta e conversão" },
+        { "id": "b", "text": "Os ídolos no coração dispensam qualquer mudança" },
+        { "id": "c", "text": "Consultar basta sem apartar-se" },
+        { "id": "d", "text": "A conversão é só para estrangeiros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ergueram seus ídolos dentro do coração",
+      "feedbackCorrect": "O diagnóstico interior leva à conquista do coração e ao chamado.",
+      "feedbackWrong": {
+        "b": "Há chamado claro à conversão.",
+        "c": "A consulta com ídolos é confrontada.",
+        "d": "O chamado é à casa de Israel."
+      },
+      "hint": "Una o diagnóstico ao propósito e ao chamado.",
+      "learningObjective": "Relacionar ídolos e conversão.",
+      "evidence": ["Ezequiel 14:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa nesta travessia?",
+      "verseRef": "Ezequiel 13:4",
+      "options": [
+        { "id": "a", "text": "Falsos profetas e ídolos no coração" },
+        { "id": "b", "text": "Videira inútil e Jerusalém achada" },
+        { "id": "c", "text": "Águia, cedro e responsabilidade da alma" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "são como raposas entre as ruínas",
+      "feedbackCorrect": "Falsos e ídolos, videira e aliança, águia e alma.",
+      "feedbackWrong": {
+        "default": "Comece nos falsos; feche na responsabilidade."
+      },
+      "hint": "Pense em mentira, graça e responsabilidade.",
+      "learningObjective": "Ordenar os movimentos da etapa.",
+      "evidence": ["Ezequiel 13:4", "Ezequiel 14:3", "Ezequiel 15:6", "Ezequiel 16:6", "Ezequiel 17:3", "Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 14:5, Para que eu possa conquistar o ___ da casa de Israel.",
+      "verseRef": "Ezequiel 14:5",
+      "options": [
+        { "id": "a", "text": "coração" },
+        { "id": "b", "text": "templo" },
+        { "id": "c", "text": "exército" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que eu possa conquistar o coração da casa de Israel",
+      "feedbackCorrect": "O objeto do propósito é o coração.",
+      "feedbackWrong": {
+        "b": "Não é templo: é coração.",
+        "c": "Não é exército: é coração."
+      },
+      "hint": "Veja o substantivo depois de conquistar o.",
+      "learningObjective": "Lembrar o objeto do propósito.",
+      "evidence": ["Ezequiel 14:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 15:6 a João 15:6?",
+      "verseRef": "Ezequiel 15:6",
+      "passageA": { "ref": "Ezequiel 15:6" },
+      "passageB": { "ref": "João 15:6" },
+      "options": [
+        { "id": "a", "text": "Ramo seco ao fogo" },
+        { "id": "b", "text": "Aliança coberta" },
+        { "id": "c", "text": "Águia no Líbano" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entreguei ao fogo para que seja consumido",
+      "feedbackCorrect": "Os dois ligam o ramo inútil ao fogo.",
+      "feedbackWrong": {
+        "b": "É de outra cena.",
+        "c": "É de outra cena."
+      },
+      "hint": "Compare o destino do ramo.",
+      "learningObjective": "Relacionar a videira a João 15.",
+      "evidence": ["Ezequiel 15:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 14:5, toque as palavras que marcam o propósito.",
+      "verseRef": "Ezequiel 14:5",
+      "options": [
+        { "id": "a", "text": "Para que" },
+        { "id": "b", "text": "seus ídolos" },
+        { "id": "c", "text": "casa de Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que eu possa conquistar o coração da casa de Israel",
+      "feedbackCorrect": "\"Para que\" introduz o propósito.",
+      "feedbackWrong": {
+        "b": "São a causa do afastamento, não o marcador.",
+        "c": "É o objeto do propósito, não o marcador."
+      },
+      "hint": "Procure a expressão de finalidade no início.",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": ["Ezequiel 14:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os passos de Ezequiel 16:5–6?",
+      "verseRef": "Ezequiel 16:5–6",
+      "options": [
+        { "id": "a", "text": "Nenhum olhar se compadeceu; ela ficou exposta" },
+        { "id": "b", "text": "O Senhor passou e a viu no sangue" },
+        { "id": "c", "text": "Ele disse: vive, mesmo no sangue" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Mesmo que estejas no teu sangue, vive",
+      "feedbackCorrect": "Abandono, passagem de Deus e chamado a viver.",
+      "feedbackWrong": {
+        "default": "Comece na exposição; o vive fecha."
+      },
+      "hint": "Siga abandono, passagem e vive.",
+      "learningObjective": "Compreender a sequência da graça.",
+      "evidence": ["Ezequiel 16:5", "Ezequiel 16:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 18:2–4, os filhos sempre pagam o pecado dos pais; o provérbio permanece válido.",
+      "verseRef": "Ezequiel 18:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "nunca mais direis este provérbio em Israel",
+      "feedbackCorrect": "Deus cancela o provérbio; a alma que pecar, essa morrerá.",
+      "feedbackWrong": {
+        "true": "Ele jura que nunca mais dirão esse provérbio."
+      },
+      "hint": "Veja o que Deus jura sobre o ditado.",
+      "learningObjective": "Rejeitar a leitura do provérbio permanente.",
+      "evidence": ["Ezequiel 18:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 15:6, toque o trecho que sustenta a comparação do juízo.",
+      "verseRef": "Ezequiel 15:6",
+      "options": [
+        { "id": "a", "text": "assim entregarei" },
+        { "id": "b", "text": "árvores do bosque" },
+        { "id": "c", "text": "Senhor Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim entregarei os habitantes de Jerusalém",
+      "feedbackCorrect": "\"Assim entregarei\" aplica o juízo do sarmento a Jerusalém.",
+      "feedbackWrong": {
+        "b": "É o cenário da comparação, não a aplicação.",
+        "c": "É quem fala; a aplicação é assim entregarei."
+      },
+      "hint": "Procure a aplicação da comparação.",
+      "learningObjective": "Tocar o trecho da aplicação do juízo.",
+      "evidence": ["Ezequiel 15:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura desta etapa o texto sustenta melhor?",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "Deus confronta mentira e chama cada um a viver" },
+        { "id": "b", "text": "Consultar basta, mesmo com ídolos no coração" },
+        { "id": "c", "text": "Os filhos sempre carregam a iniquidade dos pais" },
+        { "id": "d", "text": "A videira é sempre útil e só elogia Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Mentira, ídolos e responsabilidade pessoal atravessam a etapa.",
+      "feedbackWrong": {
+        "b": "Os ídolos no coração são confrontados.",
+        "c": "O provérbio é cancelado.",
+        "d": "O sarmento vai ao fogo."
+      },
+      "hint": "Una falsos, ídolos, graça e alma.",
+      "learningObjective": "Escolher a interpretação da etapa.",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da etapa.",
+      "verseRef": "Ezequiel 13:6",
+      "options": [
+        { "id": "a", "text": "Mentira dos falsos e ídolos no coração" },
+        { "id": "b", "text": "Juízo da videira e graça que acha" },
+        { "id": "c", "text": "Infidelidade da águia e alma que responde" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "porém, o Senhor não os enviou",
+      "feedbackCorrect": "Mentira, juízo com graça e responsabilidade pessoal.",
+      "feedbackWrong": {
+        "default": "Comece na mentira; feche na alma que responde."
+      },
+      "hint": "Pense em mentira, graça e responsabilidade.",
+      "learningObjective": "Encadear a lógica da etapa.",
+      "evidence": ["Ezequiel 13:6", "Ezequiel 14:3", "Ezequiel 15:6", "Ezequiel 16:6", "Ezequiel 17:3", "Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 18:4, a alma que pecar, essa ___.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "morrerá" },
+        { "id": "b", "text": "herdará" },
+        { "id": "c", "text": "escapará" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "A palavra do destino é morrerá.",
+      "feedbackWrong": {
+        "b": "Não é herdará: é morrerá.",
+        "c": "Não é escapará: é morrerá."
+      },
+      "hint": "Veja o verbo no fim da frase.",
+      "learningObjective": "Lembrar o verbo do juízo pessoal.",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 18:4 a Deuteronômio 24:16?",
+      "verseRef": "Ezequiel 18:4",
+      "passageA": { "ref": "Ezequiel 18:4" },
+      "passageB": { "ref": "Deuteronômio 24:16" },
+      "options": [
+        { "id": "a", "text": "Filho não morre pelo pai" },
+        { "id": "b", "text": "Sarmento ao fogo" },
+        { "id": "c", "text": "Águia leva o cedro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Os dois afirmam juízo pessoal, não transferência.",
+      "feedbackWrong": {
+        "b": "Não é o elo.",
+        "c": "É de outra cena."
+      },
+      "hint": "Compare quem morre por quem.",
+      "learningObjective": "Ligar a responsabilidade à lei.",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 16:6, toque o trecho que sustenta o chamado da graça.",
+      "verseRef": "Ezequiel 16:6",
+      "options": [
+        { "id": "a", "text": "vive" },
+        { "id": "b", "text": "sangue" },
+        { "id": "c", "text": "passar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mesmo que estejas no teu sangue, vive",
+      "feedbackCorrect": "O chamado da graça é vive.",
+      "feedbackWrong": {
+        "b": "É o estado em que ela está.",
+        "c": "Descreve a ação de Deus, não o comando."
+      },
+      "hint": "Procure o imperativo repetido.",
+      "learningObjective": "Tocar o trecho do chamado a viver.",
+      "evidence": ["Ezequiel 16:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da responsabilidade pessoal?",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "Deus cancela o provérbio dos pais" },
+        { "id": "b", "text": "Cada um morrerá pela própria iniquidade" },
+        { "id": "c", "text": "Cada um de nós prestará contas a Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Ezequiel, Jeremias e Paulo afirmam responsabilidade pessoal.",
+      "feedbackWrong": {
+        "default": "Siga Ez 18:3–4, Jr 31:30 e Rm 14:12."
+      },
+      "hint": "Siga a ordem: Ezequiel, Jeremias, Romanos.",
+      "learningObjective": "Ver o fio da responsabilidade na Bíblia.",
+      "evidence": ["Ezequiel 18:4", "Jeremias 31:30", "Romanos 14:12"]
+    }
+  ]
+}

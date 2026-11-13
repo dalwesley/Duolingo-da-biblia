@@ -1,0 +1,367 @@
+{
+ "study": {
+  "passageRef": "Jó 7:16–21",
+  "passages": [{ "ref": "Jó 7:11–21" }],
+  "context": "Jó não cala a boca. Leva a Deus a angústia e pergunta por que o olhar divino parece vigiá-lo como a um alvo.",
+  "keyword": "alvo",
+  "keywordGloss": "Imagem de Jó: sente-se marcado pelo Vigilante dos homens.",
+  "focusQuestion": "Quando a dor aperta, você leva a Deus a pergunta crua ou só a versão educada?",
+  "reflectionPrompts": ["Boca aberta", "Olhar que pesa", "Vida como sopro"],
+  "facts": [
+   { "text": "Jó decide não reter a boca e falar na angústia.", "evidenceRef": "Jó 7:11", "evidenceSpan": "não reterei a minha boca" },
+   { "text": "Ele pergunta se é o mar para que lhe imponham uma guarda.", "evidenceRef": "Jó 7:12", "evidenceSpan": "Sou eu, por acaso, o mar ou a serpente marinha" },
+   { "text": "Deus o assombra com sonhos e o inquieta com visões.", "evidenceRef": "Jó 7:14", "evidenceSpan": "me assombras com sonhos, e com visões me inquietas" },
+   { "text": "Jó diz que seus dias são como um sopro.", "evidenceRef": "Jó 7:16", "evidenceSpan": "os meus dias são como um sopro" },
+   { "text": "Ele pergunta até quando Deus não apartará o olhar.", "evidenceRef": "Jó 7:19", "evidenceSpan": "não apartarás de mim o teu olhar" },
+   { "text": "Jó pergunta por que se tornou um alvo.", "evidenceRef": "Jó 7:20", "evidenceSpan": "Por que me tornaste um alvo" }
+  ],
+  "keyTerms": [
+   { "term": "alvo", "gloss": "Como Jó se sente diante do Vigilante: marcado e pressionado." },
+   { "term": "sopro", "gloss": "Imagem da vida breve que Jó usa ao pedir distância." },
+   { "term": "Vigilante", "gloss": "Título com que Jó se dirige a Deus em 7:20." }
+  ],
+  "structure": [
+   { "label": "Jó abre a boca na angústia", "evidenceRef": "Jó 7:11–12" },
+   { "label": "Sonhos inquietam e a vida parece sopro", "evidenceRef": "Jó 7:13–16" },
+   { "label": "Pergunta sobre o olhar e o exame", "evidenceRef": "Jó 7:17–19" },
+   { "label": "Clamor do alvo e pedido de perdão", "evidenceRef": "Jó 7:20–21" }
+  ],
+  "relations": [
+   { "kind": "resultado", "text": "Jó espera alívio na cama; então Deus o assombra com sonhos.", "marker": "Então", "evidenceRef": "Jó 7:14" },
+   { "kind": "causa", "text": "Pede que Deus se afaste, pois seus dias são como um sopro.", "marker": "pois", "evidenceRef": "Jó 7:16" },
+   { "kind": "contraste", "text": "Deus estima e examina o homem; Jó, porém, pede que o olhar se aparte.", "marker": null, "evidenceRef": "Jó 7:17–19" }
+  ],
+  "crossRefs": [
+   { "ref": "Salmos 8:4", "bridge": "Que é o homem" },
+   { "ref": "Salmos 39:5", "bridge": "Dias como sopro" },
+   { "ref": "Salmos 13:1", "bridge": "Até quando, Senhor" }
+  ],
+  "misreadings": [
+   { "text": "Perguntar a Deus sobre o sofrimento é pecar.", "why": "Jó fala a Deus na angústia; o livro deixa o clamor chegar até o fim." },
+   { "text": "Jó quer fugir da fé e nunca mais falar com Deus.", "why": "Ele se dirige ao Vigilante, pede perdão e fala de ser buscado." },
+   { "text": "Ser alvo prova que Deus é injusto e cruel por natureza.", "why": "Jó expressa dor e pergunta; não fecha o caso teológico contra Deus." }
+  ],
+  "centralInsight": "Jó leva a Deus a pergunta que dói: por que o olhar divino parece contra mim?",
+  "anchorQuestion": "Em Jó 7:20, como Jó se descreve diante do Vigilante dos homens?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 7:16, Jó diz que os seus dias são como um sopro.",
+   "verseRef": "Jó 7:16",
+   "correctOptionId": "true",
+   "evidenceSpan": "os meus dias são como um sopro",
+   "feedbackCorrect": "A imagem é literal: a vida breve como um sopro.",
+   "feedbackWrong": { "false": "Releia o fim de 7:16: os dias são como um sopro." },
+   "hint": "Olhe a razão depois de \"pois\".",
+   "learningObjective": "Observar a imagem da vida breve.",
+   "evidence": ["Jó 7:16"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 7:20, toque o que Jó diz que Deus o tornou.",
+   "verseRef": "Jó 7:20",
+   "options": [
+    { "id": "a", "text": "um alvo" },
+    { "id": "b", "text": "Se pequei" },
+    { "id": "c", "text": "Vigilante" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que me tornaste um alvo",
+   "feedbackCorrect": "A imagem dolorosa é clara: tornou-se um alvo.",
+   "feedbackWrong": { "b": "Abre a hipótese; o que ele se tornou é alvo.", "c": "É o título de Deus; a imagem é o alvo." },
+   "hint": "Procure o objeto depois de \"tornaste\".",
+   "learningObjective": "Identificar a imagem do alvo.",
+   "evidence": ["Jó 7:20"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 7:14, com o que Deus assombra Jó?",
+   "verseRef": "Jó 7:14",
+   "options": [
+    { "id": "a", "text": "Com sonhos" },
+    { "id": "b", "text": "Com ouro e prata" },
+    { "id": "c", "text": "Com festa na cidade" },
+    { "id": "d", "text": "Com anjos mensageiros" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "me assombras com sonhos",
+   "feedbackCorrect": "O texto liga o assombro aos sonhos e às visões.",
+   "feedbackWrong": { "b": "Não há ouro neste versículo.", "c": "Não há festa aqui.", "d": "O texto fala de sonhos e visões." },
+   "hint": "Primeira parte do versículo.",
+   "learningObjective": "Registrar o que inquieta o sono de Jó.",
+   "evidence": ["Jó 7:14"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Ordene as peças de Jó 7:20 na ordem do texto.",
+   "verseRef": "Jó 7:20",
+   "options": [
+    { "id": "a", "text": "ó Vigilante dos homens?" },
+    { "id": "b", "text": "Por que me tornaste um alvo" },
+    { "id": "c", "text": "para que eu tropece" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "ó Vigilante dos homens",
+   "feedbackCorrect": "Título, pergunta do alvo, e o efeito do tropeço.",
+   "feedbackWrong": { "default": "Comece pelo título Vigilante; depois o alvo." },
+   "hint": "A pergunta do alvo vem depois do título.",
+   "learningObjective": "Seguir a ordem literal de 7:20.",
+   "evidence": ["Jó 7:20"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 7:19, que palavra nomeia o que Jó pede que Deus aparte?",
+   "verseRef": "Jó 7:19",
+   "options": [
+    { "id": "a", "text": "olhar" },
+    { "id": "b", "text": "templo" },
+    { "id": "c", "text": "ouro" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não apartarás de mim o teu olhar",
+   "feedbackCorrect": "O pedido é sobre o olhar que não se afasta.",
+   "feedbackWrong": { "b": "Não há templo neste versículo.", "c": "O texto fala do olhar, não de ouro." },
+   "hint": "Fim da primeira pergunta do versículo.",
+   "learningObjective": "Lembrar a palavra do olhar divino.",
+   "evidence": ["Jó 7:19"]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 7:20 comunica que se liga a este contexto?",
+   "verseRef": "Jó 7:20",
+   "passageA": { "ref": "Jó 7:20", "text": "Por que me tornaste um alvo" },
+   "passageB": { "ref": "Contexto", "text": "Jó leva a Deus a dor de se sentir vigiado e marcado." },
+   "options": [
+    { "id": "a", "text": "Dor do olhar que marca" },
+    { "id": "b", "text": "Festa sem pergunta" },
+    { "id": "c", "text": "Silêncio absoluto" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que me tornaste um alvo",
+   "feedbackCorrect": "A imagem do alvo traduz a pergunta dolorosa a Deus.",
+   "feedbackWrong": { "b": "Não há festa neste clamor.", "c": "Jó fala; não se cala." },
+   "hint": "Pense na imagem central do versículo.",
+   "learningObjective": "Ligar o versículo ao clamor da cena.",
+   "evidence": ["Jó 7:20"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 7:16, Jó pede que Deus se afaste e justifica o pedido dizendo que seus dias são como um sopro.",
+   "verseRef": "Jó 7:16",
+   "correctOptionId": "true",
+   "evidenceSpan": "Afaste-se de mim, pois os meus dias são como um sopro",
+   "feedbackCorrect": "O \"pois\" liga o pedido de afastamento à vida breve.",
+   "feedbackWrong": { "false": "Releia: Afaste-se, pois os dias são como um sopro." },
+   "hint": "Ache a palavra que introduz a razão.",
+   "learningObjective": "Compreender a relação pedido → razão.",
+   "evidence": ["Jó 7:16"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 7:16, toque a palavra que marca a razão do pedido de afastamento.",
+   "verseRef": "Jó 7:16",
+   "options": [
+    { "id": "a", "text": "pois" },
+    { "id": "b", "text": "Abomino" },
+    { "id": "c", "text": "eternamente" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Afaste-se de mim, pois os meus dias são como um sopro",
+   "feedbackCorrect": "\"Pois\" introduz a causa: a vida breve.",
+   "feedbackWrong": { "b": "\"Abomino\" abre o versículo; o marcador da razão é \"pois\".", "c": "\"Eternamente\" faz parte do desejo, não da razão." },
+   "hint": "Entre \"mim\" e \"os meus dias\".",
+   "learningObjective": "Tocar o marcador de causa.",
+   "evidence": ["Jó 7:16"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Qual relação Jó 7:13–14 mostra entre o leito e os sonhos?",
+   "verseRef": "Jó 7:13–14",
+   "options": [
+    { "id": "a", "text": "Espera conforto na cama, mas é assombrado com sonhos" },
+    { "id": "b", "text": "Dorme em paz e acorda curado" },
+    { "id": "c", "text": "A cama resolve toda a angústia" },
+    { "id": "d", "text": "Os sonhos trazem respostas claras de Deus" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, me assombras com sonhos",
+   "feedbackCorrect": "O \"Então\" marca o resultado: em vez de alívio, assombro.",
+   "feedbackWrong": { "b": "Não há cura no sono aqui.", "c": "A cama não resolve; vem o assombro.", "d": "O texto fala de inquietação, não de respostas claras." },
+   "hint": "Veja o que vem depois da esperança no leito.",
+   "learningObjective": "Compreender a virada do conforto ao assombro.",
+   "evidence": ["Jó 7:13", "Jó 7:14"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Ordene os movimentos do clamor de Jó.",
+   "verseRef": "Jó 7:11–21",
+   "options": [
+    { "id": "a", "text": "Jó abre a boca na angústia" },
+    { "id": "b", "text": "Sonhos inquietam e a vida parece sopro" },
+    { "id": "c", "text": "Clamor do alvo e pedido de perdão" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "não reterei a minha boca",
+   "feedbackCorrect": "Boca aberta, sono inquieto, pergunta do alvo.",
+   "feedbackWrong": { "default": "Comece pela decisão de falar." },
+   "hint": "Siga a ordem do capítulo.",
+   "learningObjective": "Ordenar a estrutura do clamor.",
+   "evidence": ["Jó 7:11", "Jó 7:14", "Jó 7:20"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 7:14, que palavra introduz o resultado depois da esperança no leito?",
+   "verseRef": "Jó 7:14",
+   "options": [
+    { "id": "a", "text": "Então" },
+    { "id": "b", "text": "Nunca" },
+    { "id": "c", "text": "Talvez" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, me assombras com sonhos",
+   "feedbackCorrect": "\"Então\" marca o resultado: o assombro no lugar do alívio.",
+   "feedbackWrong": { "b": "Não há \"Nunca\": o versículo abre com \"Então\".", "c": "O marcador da sequência é \"Então\"." },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Lembrar o marcador de resultado.",
+   "evidence": ["Jó 7:14"]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 7:17 a Salmos 8:4?",
+   "verseRef": "Jó 7:17",
+   "passageA": { "ref": "Jó 7:17", "text": "Que é o homem, para que tanto o estimes" },
+   "passageB": { "ref": "Salmos 8:4" },
+   "options": [
+    { "id": "a", "text": "Que é o homem" },
+    { "id": "b", "text": "Fuga do exame" },
+    { "id": "c", "text": "Trono dos ímpios" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Que é o homem, para que tanto o estimes",
+   "feedbackCorrect": "Os dois textos perguntam o que é o homem diante de Deus.",
+   "feedbackWrong": { "b": "Não é o paralelo: a pergunta comum é sobre o homem.", "c": "Não há trono neste cruzamento." },
+   "hint": "Compare a pergunta de abertura.",
+   "learningObjective": "Cruzar a pergunta sobre o homem.",
+   "evidence": ["Jó 7:17"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 7:11–21, perguntar a Deus por que o olhar pesa prova que Jó abandonou a fé.",
+   "verseRef": "Jó 7:20–21",
+   "correctOptionId": "false",
+   "evidenceSpan": "Por que não me perdoas a minha transgressão",
+   "feedbackCorrect": "Jó clama ao Vigilante e fala de perdão: a fé ainda fala a Deus.",
+   "feedbackWrong": { "true": "Ele se dirige a Deus e pede perdão; não abandona o diálogo." },
+   "hint": "Veja a quem ele fala em 7:20–21.",
+   "learningObjective": "Rejeitar a leitura que confunde clamor com abandono.",
+   "evidence": ["Jó 7:20", "Jó 7:21"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 7:21, toque o trecho que sustenta que Jó ainda pede perdão a Deus.",
+   "verseRef": "Jó 7:21",
+   "options": [
+    { "id": "a", "text": "não me perdoas" },
+    { "id": "b", "text": "no pó" },
+    { "id": "c", "text": "já não" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Por que não me perdoas a minha transgressão",
+   "feedbackCorrect": "O pedido de perdão mostra que o diálogo com Deus continua.",
+   "feedbackWrong": { "b": "O pó é o destino; o pedido está em \"não me perdoas\".", "c": "\"Já não\" fala da ausência; o clamor de perdão vem antes." },
+   "hint": "Começo do versículo.",
+   "learningObjective": "Tocar a evidência do pedido de perdão.",
+   "evidence": ["Jó 7:21"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Qual leitura o trecho sustenta melhor?",
+   "verseRef": "Jó 7:19–21",
+   "options": [
+    { "id": "a", "text": "A fé pode gemer e perguntar a Deus sem calar a dor" },
+    { "id": "b", "text": "Jó prova que Deus é cruel por natureza" },
+    { "id": "c", "text": "Perguntar a Deus é sempre pecado" },
+    { "id": "d", "text": "Jó deixa de falar com Deus para sempre" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ó Vigilante dos homens",
+   "feedbackCorrect": "O clamor vai a Deus: olhar, alvo e perdão.",
+   "feedbackWrong": { "b": "Jó pergunta; não fecha um veredito final.", "c": "O livro deixa a pergunta chegar a Deus.", "d": "Ele continua falando ao Vigilante." },
+   "hint": "Una o título Vigilante ao pedido de perdão.",
+   "learningObjective": "Escolher a interpretação sustentável.",
+   "evidence": ["Jó 7:20", "Jó 7:21"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Ordene a lógica do clamor de Jó diante de Deus.",
+   "verseRef": "Jó 7:16–21",
+   "options": [
+    { "id": "a", "text": "Confessar a vida breve como sopro" },
+    { "id": "b", "text": "Perguntar pelo olhar que não se afasta" },
+    { "id": "c", "text": "Pedir perdão e nomear-se alvo" }
+   ],
+   "correctOrder": ["a", "b", "c"],
+   "evidenceSpan": "Por que me tornaste um alvo",
+   "feedbackCorrect": "Sopro, olhar, alvo e perdão.",
+   "feedbackWrong": { "default": "Comece pela vida como sopro." },
+   "hint": "Do sopro ao olhar, depois ao alvo.",
+   "learningObjective": "Encadear a lógica do clamor.",
+   "evidence": ["Jó 7:16", "Jó 7:19", "Jó 7:20"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 7:20, que título Jó dá a Deus ao perguntar pelo alvo?",
+   "verseRef": "Jó 7:20",
+   "options": [
+    { "id": "a", "text": "Vigilante" },
+    { "id": "b", "text": "Pastor" },
+    { "id": "c", "text": "Juiz" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ó Vigilante dos homens",
+   "feedbackCorrect": "O termo teológico da cena é Vigilante.",
+   "feedbackWrong": { "b": "\"Pastor\" não aparece neste versículo.", "c": "O título no texto é Vigilante." },
+   "hint": "Depois de \"ó\".",
+   "learningObjective": "Lembrar o título que carrega a cena.",
+   "evidence": ["Jó 7:20"]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 7:19 a Salmos 13:1?",
+   "verseRef": "Jó 7:19",
+   "passageA": { "ref": "Jó 7:19", "text": "Até quando não apartarás de mim o teu olhar?" },
+   "passageB": { "ref": "Salmos 13:1" },
+   "options": [
+    { "id": "a", "text": "Até quando, Senhor" },
+    { "id": "b", "text": "Festa da colheita" },
+    { "id": "c", "text": "Vitória fácil" }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Até quando não apartarás de mim o teu olhar",
+   "feedbackCorrect": "Os dois clamores perguntam \"até quando\" diante de Deus.",
+   "feedbackWrong": { "b": "Não há colheita neste paralelo.", "c": "O tom é de espera dolorosa, não de vitória fácil." },
+   "hint": "Compare a abertura \"Até quando\".",
+   "learningObjective": "Cruzar o clamor do tempo que pesa.",
+   "evidence": ["Jó 7:19"]
+  }
+ ]
+}

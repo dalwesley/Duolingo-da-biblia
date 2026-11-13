@@ -1,0 +1,719 @@
+{
+  "study": {
+    "passageRef": "Provérbios 21:1–4",
+    "passages": [
+      {
+        "ref": "Provérbios 21:1–4"
+      },
+      {
+        "ref": "Provérbios 21:5–8"
+      }
+    ],
+    "context": "O coração do rei está na mão do Senhor. Justiça pesa mais que sacrifício; diligência leva à abundância; pressa, à pobreza.",
+    "keyword": "Justiça",
+    "keywordGloss": "Fazer justiça e juízo é mais aceitável ao Senhor do que sacrifícios.",
+    "focusQuestion": "Onde você tem preferido ritual à justiça prática?",
+    "reflectionPrompts": [
+      "Coração do rei",
+      "Justiça e juízo",
+      "Planos do diligente"
+    ],
+    "facts": [
+      {
+        "text": "O coração do rei está na mão do Senhor.",
+        "evidenceRef": "Provérbios 21:1",
+        "evidenceSpan": "o coração do rei na mão do Senhor"
+      },
+      {
+        "text": "O Senhor sonda os corações.",
+        "evidenceRef": "Provérbios 21:2",
+        "evidenceSpan": "o Senhor sonda os corações"
+      },
+      {
+        "text": "Justiça e juízo são mais aceitáveis que sacrifícios.",
+        "evidenceRef": "Provérbios 21:3",
+        "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor"
+      },
+      {
+        "text": "Os planos do diligente levam à abundância.",
+        "evidenceRef": "Provérbios 21:5",
+        "evidenceSpan": "Os planos do diligente levam à abundância"
+      },
+      {
+        "text": "A pressa exagerada resulta em pobreza.",
+        "evidenceRef": "Provérbios 21:5",
+        "evidenceSpan": "a pressa exagerada resulta apenas em pobreza"
+      },
+      {
+        "text": "A ação do íntegro é reta.",
+        "evidenceRef": "Provérbios 21:8",
+        "evidenceSpan": "a ação do íntegro é reta"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justiça",
+        "gloss": "Junto com o juízo, mais aceitável que sacrifícios."
+      },
+      {
+        "term": "diligente",
+        "gloss": "Cujos planos levam à abundância."
+      },
+      {
+        "term": "íntegro",
+        "gloss": "Cuja ação é reta, em contraste com o caminho tortuoso."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Coração do rei e sonda",
+        "evidenceRef": "Provérbios 21:1–2"
+      },
+      {
+        "label": "Justiça acima do ritual",
+        "evidenceRef": "Provérbios 21:3–4"
+      },
+      {
+        "label": "Diligência e pressa",
+        "evidenceRef": "Provérbios 21:5–6"
+      },
+      {
+        "label": "Ímpios e íntegro",
+        "evidenceRef": "Provérbios 21:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Caminho parece reto; Senhor sonda os corações.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 21:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Diligência dá abundância; pressa dá pobreza.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 21:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Caminho tortuoso; ação do íntegro é reta.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 21:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 16:7",
+        "bridge": "Senhor vê o coração"
+      },
+      {
+        "ref": "Miqueias 6:8",
+        "bridge": "Justiça e misericórdia"
+      },
+      {
+        "ref": "Oséias 6:6",
+        "bridge": "Misericórdia e não sacrifício"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O rei governa o próprio coração sem Deus.",
+        "why": "21:1 diz que o coração do rei está na mão do Senhor."
+      },
+      {
+        "text": "Sacrifício vale mais que justiça e juízo.",
+        "why": "21:3 diz que justiça e juízo são mais aceitáveis."
+      },
+      {
+        "text": "Pressa exagerada leva à abundância.",
+        "why": "21:5 diz que resulta apenas em pobreza."
+      }
+    ],
+    "centralInsight": "Deus governa até o coração poderoso; justiça pesa mais que ritual.",
+    "anchorQuestion": "Segundo Provérbios 21:3, o que é mais aceitável ao Senhor do que sacrifícios?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Provérbios 21:1, o coração do rei está na mão do Senhor.",
+      "verseRef": "Provérbios 21:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "o coração do rei na mão do Senhor",
+      "feedbackCorrect": "O coração do rei está na mão do Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 21:1: na mão do Senhor."
+      },
+      "hint": "Compare coração e mão.",
+      "learningObjective": "Observar o governo de Deus sobre o rei.",
+      "evidence": [
+        "Provérbios 21:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Provérbios 21:3, toque o que é mais aceitável ao Senhor.",
+      "verseRef": "Provérbios 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fazer justiça"
+        },
+        {
+          "id": "b",
+          "text": "sacrifícios"
+        },
+        {
+          "id": "c",
+          "text": "orgulho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor",
+      "feedbackCorrect": "Fazer justiça e juízo é mais aceitável.",
+      "feedbackWrong": {
+        "b": "Sacrifícios são o contraste inferior.",
+        "c": "Orgulho é pecado em 21:4."
+      },
+      "hint": "Início do versículo.",
+      "learningObjective": "Identificar o que Deus prefere.",
+      "evidence": [
+        "Provérbios 21:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Provérbios 21:5, a que levam os planos do diligente?",
+      "verseRef": "Provérbios 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "À abundância"
+        },
+        {
+          "id": "b",
+          "text": "Só à pobreza"
+        },
+        {
+          "id": "c",
+          "text": "À ruína certa"
+        },
+        {
+          "id": "d",
+          "text": "Ao laço mortal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os planos do diligente levam à abundância",
+      "feedbackCorrect": "Os planos do diligente levam à abundância.",
+      "feedbackWrong": {
+        "b": "Pobreza é da pressa.",
+        "c": "Ruína é dos ímpios em 21:7.",
+        "d": "Laço é de 21:6."
+      },
+      "hint": "Complemento de levam.",
+      "learningObjective": "Observar o fruto da diligência.",
+      "evidence": [
+        "Provérbios 21:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Provérbios 21:5 na ordem do texto.",
+      "verseRef": "Provérbios 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os planos do diligente levam à abundância"
+        },
+        {
+          "id": "b",
+          "text": "mas a pressa exagerada"
+        },
+        {
+          "id": "c",
+          "text": "resulta apenas em pobreza"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os planos do diligente levam à abundância",
+      "feedbackCorrect": "Diligência primeiro; pressa e pobreza depois.",
+      "feedbackWrong": {
+        "default": "Comece pelos planos do diligente."
+      },
+      "hint": "Abre com Os planos.",
+      "learningObjective": "Seguir a ordem do contraste.",
+      "evidence": [
+        "Provérbios 21:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Provérbios 21:2, o Senhor sonda os quê?",
+      "verseRef": "Provérbios 21:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "corações"
+        },
+        {
+          "id": "b",
+          "text": "sacrifícios"
+        },
+        {
+          "id": "c",
+          "text": "ribeiros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor sonda os corações",
+      "feedbackCorrect": "O Senhor sonda os corações.",
+      "feedbackWrong": {
+        "b": "Sacrifícios aparecem em 21:3.",
+        "c": "Ribeiros são a imagem de 21:1."
+      },
+      "hint": "Objeto de sonda.",
+      "learningObjective": "Lembrar o que Deus sonda.",
+      "evidence": [
+        "Provérbios 21:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Provérbios 21:3 comunica que se liga a este contexto?",
+      "verseRef": "Provérbios 21:3",
+      "passageA": {
+        "ref": "Provérbios 21:3",
+        "text": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Justiça pesa mais que ritual diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça acima do ritual"
+        },
+        {
+          "id": "b",
+          "text": "Sacrifício acima de tudo"
+        },
+        {
+          "id": "c",
+          "text": "Juízo sem valor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor",
+      "feedbackCorrect": "Justiça e juízo ligam o versículo ao tema da cena.",
+      "feedbackWrong": {
+        "b": "Sacrifício é inferior aqui.",
+        "c": "Juízo é valorizado."
+      },
+      "hint": "Veja o que é mais aceitável.",
+      "learningObjective": "Ligar 21:3 à justiça.",
+      "evidence": [
+        "Provérbios 21:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Provérbios 21:5, os planos do diligente são apresentados como caminho para a abundância, em contraste com a pressa.",
+      "verseRef": "Provérbios 21:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Os planos do diligente levam à abundância",
+      "feedbackCorrect": "A diligência leva à abundância; a pressa, à pobreza.",
+      "feedbackWrong": {
+        "false": "Releia 21:5: os planos do diligente levam à abundância."
+      },
+      "hint": "Compare diligência e pressa.",
+      "learningObjective": "Compreender diligência e pressa.",
+      "evidence": [
+        "Provérbios 21:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Provérbios 21:5, toque a palavra que marca o contraste.",
+      "verseRef": "Provérbios 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "abundância"
+        },
+        {
+          "id": "c",
+          "text": "planos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a pressa exagerada resulta apenas em pobreza",
+      "feedbackCorrect": "\"Mas\" introduz a pressa e a pobreza.",
+      "feedbackWrong": {
+        "b": "Abundância é da diligência.",
+        "c": "Planos são do diligente."
+      },
+      "hint": "Palavra curta no meio.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Provérbios 21:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Provérbios 21:3 estabelece com o culto?",
+      "verseRef": "Provérbios 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça e juízo pesam mais que sacrifícios"
+        },
+        {
+          "id": "b",
+          "text": "Sacrifício basta sem justiça"
+        },
+        {
+          "id": "c",
+          "text": "Deus rejeita todo juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ritual substitui a vida reta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é mais aceitável ao Senhor do que oferecer sacrifícios",
+      "feedbackCorrect": "Justiça e juízo são mais aceitáveis que sacrifícios.",
+      "feedbackWrong": {
+        "b": "Há prioridade clara.",
+        "c": "Juízo é valorizado.",
+        "d": "O texto inverte essa lógica."
+      },
+      "hint": "Compare as duas metades.",
+      "learningObjective": "Relacionar justiça e ritual.",
+      "evidence": [
+        "Provérbios 21:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança Provérbios 21:1–8?",
+      "verseRef": "Provérbios 21:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração do rei e sonda"
+        },
+        {
+          "id": "b",
+          "text": "Justiça acima do ritual"
+        },
+        {
+          "id": "c",
+          "text": "Diligência e pressa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o coração do rei na mão do Senhor",
+      "feedbackCorrect": "Do coração do rei à justiça e à diligência.",
+      "feedbackWrong": {
+        "default": "Comece pelo coração do rei."
+      },
+      "hint": "Depois da justiça vem a diligência.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Provérbios 21:1",
+        "Provérbios 21:3",
+        "Provérbios 21:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Provérbios 21:1, o coração do rei está na mão do quê?",
+      "verseRef": "Provérbios 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "ímpio"
+        },
+        {
+          "id": "c",
+          "text": "diligente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na mão do Senhor",
+      "feedbackCorrect": "Está na mão do Senhor.",
+      "feedbackWrong": {
+        "b": "Não é do ímpio.",
+        "c": "Diligente aparece em 21:5."
+      },
+      "hint": "Palavra após \"mão do\".",
+      "learningObjective": "Lembrar de quem é a mão.",
+      "evidence": [
+        "Provérbios 21:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Provérbios 21:3 a Miqueias 6:8?",
+      "verseRef": "Provérbios 21:3",
+      "passageA": {
+        "ref": "Provérbios 21:3"
+      },
+      "passageB": {
+        "ref": "Miqueias 6:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça e misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "Sacrifício acima de tudo"
+        },
+        {
+          "id": "c",
+          "text": "Juízo sem valor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor",
+      "feedbackCorrect": "Justiça prática une Provérbios e Miqueias.",
+      "feedbackWrong": {
+        "b": "Sacrifício é relativizado.",
+        "c": "Juízo é valorizado."
+      },
+      "hint": "Compare o pedido de justiça.",
+      "learningObjective": "Cruzar justiça prática.",
+      "evidence": [
+        "Provérbios 21:3",
+        "Miqueias 6:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Provérbios 21:3, oferecer sacrifícios é apresentado como mais aceitável ao Senhor do que fazer justiça.",
+      "verseRef": "Provérbios 21:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor",
+      "feedbackCorrect": "Justiça e juízo são mais aceitáveis que sacrifícios.",
+      "feedbackWrong": {
+        "true": "Releia 21:3: justiça é mais aceitável."
+      },
+      "hint": "Veja o que é mais aceitável.",
+      "learningObjective": "Corrigir a leitura sobre ritual.",
+      "evidence": [
+        "Provérbios 21:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Provérbios 21:1, toque o trecho que sustenta o governo de Deus sobre o rei.",
+      "verseRef": "Provérbios 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "mão do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "ribeiros"
+        },
+        {
+          "id": "c",
+          "text": "águas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na mão do Senhor",
+      "feedbackCorrect": "O coração do rei está na mão do Senhor.",
+      "feedbackWrong": {
+        "b": "Ribeiros é a imagem comparativa.",
+        "c": "Águas completa a imagem."
+      },
+      "hint": "Onde está o coração.",
+      "learningObjective": "Sustentar o governo divino.",
+      "evidence": [
+        "Provérbios 21:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Provérbios 21:1–8 sustenta?",
+      "verseRef": "Provérbios 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus governa o poderoso; justiça pesa mais que ritual"
+        },
+        {
+          "id": "b",
+          "text": "O rei controla o próprio coração sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Sacrifício basta sem justiça"
+        },
+        {
+          "id": "d",
+          "text": "Pressa é o caminho da abundância"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o coração do rei na mão do Senhor",
+      "feedbackCorrect": "Governo divino, justiça e diligência percorrem o trecho.",
+      "feedbackWrong": {
+        "b": "21:1 põe o coração na mão de Deus.",
+        "c": "21:3 prefere justiça.",
+        "d": "21:5 liga pressa à pobreza."
+      },
+      "hint": "Una rei, justiça e diligência.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Provérbios 21:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da justiça sobre o ritual?",
+      "verseRef": "Provérbios 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça e juízo são mais aceitáveis"
+        },
+        {
+          "id": "b",
+          "text": "Miqueias pede justiça e misericórdia"
+        },
+        {
+          "id": "c",
+          "text": "Oséias prefere misericórdia a sacrifício"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fazer justiça e exercer o juízo é mais aceitável ao Senhor",
+      "feedbackCorrect": "De Provérbios a Miqueias e Oséias.",
+      "feedbackWrong": {
+        "default": "Comece por 21:3; depois Miqueias 6:8 e Oséias 6:6."
+      },
+      "hint": "Da justiça ao profeta e a Oséias.",
+      "learningObjective": "Ver o fio da justiça.",
+      "evidence": [
+        "Provérbios 21:3",
+        "Miqueias 6:8",
+        "Oséias 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Provérbios 21:8, a ação do íntegro é quê?",
+      "verseRef": "Provérbios 21:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "reta"
+        },
+        {
+          "id": "b",
+          "text": "tortuosa"
+        },
+        {
+          "id": "c",
+          "text": "mortal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a ação do íntegro é reta",
+      "feedbackCorrect": "A ação do íntegro é reta.",
+      "feedbackWrong": {
+        "b": "Tortuoso é o caminho do outro.",
+        "c": "Laço mortal é de 21:6."
+      },
+      "hint": "Predicado após \"é\".",
+      "learningObjective": "Lembrar a ação do íntegro.",
+      "evidence": [
+        "Provérbios 21:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Provérbios 21:2 a 1 Samuel 16:7?",
+      "verseRef": "Provérbios 21:2",
+      "passageA": {
+        "ref": "Provérbios 21:2"
+      },
+      "passageB": {
+        "ref": "1 Samuel 16:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor vê o coração"
+        },
+        {
+          "id": "b",
+          "text": "Aparência basta"
+        },
+        {
+          "id": "c",
+          "text": "Corações sem sonda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor sonda os corações",
+      "feedbackCorrect": "Sondar e ver o coração se encontram.",
+      "feedbackWrong": {
+        "b": "O Senhor vai além da aparência.",
+        "c": "Há sondagem explícita."
+      },
+      "hint": "Compare o olhar de Deus ao coração.",
+      "learningObjective": "Ligar a sonda dos corações.",
+      "evidence": [
+        "Provérbios 21:2",
+        "1 Samuel 16:7"
+      ]
+    }
+  ]
+}

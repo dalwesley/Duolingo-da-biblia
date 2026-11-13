@@ -1,0 +1,47 @@
+{
+  "slug": "2pedro-cap",
+  "prefix": "p2c",
+  "book": "2 Pedro",
+  "chapters": 3,
+  "title": "2 Pedro",
+  "description": "2 Pedro capítulo a capítulo: crescimento na fé, alerta contra falsos e espera do dia.",
+  "icon": "🪨",
+  "color": "#00695C",
+  "order": 75,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["pedro"],
+  "modules": [
+    {
+      "title": "Crescimento e alerta · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "2 Pedro 1:3–11",
+          "title": "Tudo para a vida",
+          "intro": "O poder divino deu tudo o que é necessário à vida e à piedade.",
+          "insight": "Acrecentai à fé virtude, conhecimento e amor: assim a entrada no reino será amplamente concedida.",
+          "objective": "Crescer na fé"
+        },
+        {
+          "ref": "2 Pedro 2:1–9",
+          "title": "Falsos mestres",
+          "intro": "Como houve falsos profetas, haverá falsos mestres que introduzem heresias.",
+          "insight": "O Senhor sabe livrar os piedosos da tentação e reservar os injustos para o juízo.",
+          "objective": "Discernir e confiar"
+        },
+        {
+          "ref": "2 Pedro 3:14–18",
+          "title": "Crescei na graça",
+          "intro": "Enquanto esperam o dia, Pedro pede diligência e crescimento até o fim.",
+          "insight": "Esforçai-vos por ser achados sem mácula; crescei na graça e no conhecimento de Cristo.",
+          "objective": "Crescer até o fim"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Crescimento e alerta",
+        "intro": "Revise o crescimento, o alerta contra falsos e a espera diligente.",
+        "insight": "Cresçam na graça e fiquem firmes até o dia do Senhor"
+      }
+    }
+  ]
+}

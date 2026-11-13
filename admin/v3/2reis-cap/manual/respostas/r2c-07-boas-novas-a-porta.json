@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "2 Reis 7:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 7:1–9"
+      }
+    ],
+    "context": "Samaria está sob cerco e fome. Eliseu anuncia abundância para o dia seguinte; quatro leprosos descobrem o acampamento sírio vazio.",
+    "keyword": "boas novas",
+    "keywordGloss": "O livramento achado pelos leprosos — notícia que não pode ficar em silêncio.",
+    "focusQuestion": "Quando Deus te livra, você guarda a notícia ou corre para anunciá-la?",
+    "reflectionPrompts": [
+      "Promessa na fome",
+      "Acampamento vazio",
+      "Dia de anunciar"
+    ],
+    "facts": [
+      {
+        "text": "Eliseu anuncia abundância barata à porta de Samaria no dia seguinte.",
+        "evidenceRef": "2 Reis 7:1",
+        "evidenceSpan": "um alqueire de flor de farinha custará um siclo"
+      },
+      {
+        "text": "O capitão duvida e ouve que verá, mas não comerá.",
+        "evidenceRef": "2 Reis 7:2",
+        "evidenceSpan": "você verá com seus próprios olhos, mas não comerá disso"
+      },
+      {
+        "text": "Quatro leprosos estavam à entrada da porta.",
+        "evidenceRef": "2 Reis 7:3",
+        "evidenceSpan": "quatro homens leprosos estavam à entrada da porta"
+      },
+      {
+        "text": "O Senhor fez ouvir no acampamento o som de um grande exército.",
+        "evidenceRef": "2 Reis 7:6",
+        "evidenceSpan": "o Senhor fez ouvir no acampamento dos sírios o som de carros"
+      },
+      {
+        "text": "Os sírios fugiram e deixaram o acampamento como estava.",
+        "evidenceRef": "2 Reis 7:7",
+        "evidenceSpan": "deixaram suas tendas, seus cavalos, seus jumentos e o acampamento como estava"
+      },
+      {
+        "text": "Os leprosos reconhecem que é dia de boas novas e vão anunciar.",
+        "evidenceRef": "2 Reis 7:9",
+        "evidenceSpan": "este dia é dia de boas novas, e estamos em silêncio"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "boas novas",
+        "gloss": "O livramento que os leprosos acham e não podem calar."
+      },
+      {
+        "term": "silêncio",
+        "gloss": "O erro que eles confessam: guardar a notícia só para si."
+      },
+      {
+        "term": "acampamento",
+        "gloss": "O lugar vazio onde Deus já derrotou o inimigo sem batalha humana."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Eliseu anuncia abundância e o capitão duvida",
+        "evidenceRef": "2 Reis 7:1–2"
+      },
+      {
+        "label": "Os leprosos decidem ir ao acampamento",
+        "evidenceRef": "2 Reis 7:3–4"
+      },
+      {
+        "label": "O Senhor faz os sírios fugir",
+        "evidenceRef": "2 Reis 7:5–7"
+      },
+      {
+        "label": "Boas novas quebram o silêncio",
+        "evidenceRef": "2 Reis 7:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O acampamento está vazio porque o Senhor fez ouvir o som de um grande exército.",
+        "marker": "Porque",
+        "evidenceRef": "2 Reis 7:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "É dia de boas novas, e estamos em silêncio.",
+        "marker": "e",
+        "evidenceRef": "2 Reis 7:9"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se esperarem até a manhã, serão considerados culpados; por isso vão anunciar.",
+        "marker": "portanto",
+        "evidenceRef": "2 Reis 7:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 52:7",
+        "bridge": "Pés que anunciam boas novas"
+      },
+      {
+        "ref": "Lucas 2:10",
+        "bridge": "Boas novas de grande alegria"
+      },
+      {
+        "ref": "2 Reis 7:16",
+        "bridge": "Cumprimento da palavra de Eliseu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os leprosos podem guardar o achado sem contar a ninguém.",
+        "why": "Eles mesmos dizem: este dia é dia de boas novas, e estamos em silêncio."
+      },
+      {
+        "text": "Os sírios fugiram por estratégia de Israel.",
+        "why": "O texto atribui ao Senhor o som de carros e o pânico."
+      },
+      {
+        "text": "A dúvida do capitão é fé madura e prudente.",
+        "why": "Eliseu responde que ele verá, mas não comerá."
+      }
+    ],
+    "centralInsight": "Não é dia de calar: quem acha livramento precisa anunciar ao povo.",
+    "anchorQuestion": "Segundo 2 Reis 7:9, o que os leprosos decidem fazer com as boas novas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 7 —3, havia quatro homens leprosos à entrada da porta.",
+      "verseRef": "2 Reis 7:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "quatro homens leprosos estavam à entrada da porta",
+      "feedbackCorrect": "O texto abre a cena com quatro leprosos à porta.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Conte quantos homens o versículo nomeia.",
+      "learningObjective": "Observar quem inicia a descoberta.",
+      "evidence": [
+        "2 Reis 7:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 7:5, toque o que os leprosos perceberam no acampamento.",
+      "verseRef": "2 Reis 7:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "anoitecer"
+        },
+        {
+          "id": "b",
+          "text": "levantaram"
+        },
+        {
+          "id": "c",
+          "text": "encaminharem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "levantaram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o acampamento vazio.",
+      "evidence": [
+        "2 Reis 7:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 7:1, o que Eliseu anuncia para o dia seguinte à porta de Samaria?",
+      "verseRef": "2 Reis 7:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Farinha e cevada a preço baixo"
+        },
+        {
+          "id": "b",
+          "text": "Mais um ano de cerco"
+        },
+        {
+          "id": "c",
+          "text": "Fuga imediata do rei"
+        },
+        {
+          "id": "d",
+          "text": "Chuva sobre a cidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um alqueire de flor de farinha custará um siclo, e dois alqueires de cevada, por um siclo",
+      "feedbackCorrect": "Ele anuncia abundância barata à porta no dia seguinte.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia os preços anunciados.",
+      "learningObjective": "Observar a promessa de abundância.",
+      "evidence": [
+        "2 Reis 7:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 7:9 na ordem do texto.",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "este dia é dia de boas novas, e estamos em silêncio"
+        },
+        {
+          "id": "b",
+          "text": "Se esperarmos até a luz da manhã, seremos considerados culpados"
+        },
+        {
+          "id": "c",
+          "text": "vamos e anunciemos à casa do rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "este dia é dia de boas novas, e estamos em silêncio",
+      "feedbackCorrect": "Primeiro o diagnóstico do silêncio, depois o risco, e então o anúncio.",
+      "feedbackWrong": {
+        "default": "Comece pelas boas novas em silêncio; o anúncio fecha o versículo."
+      },
+      "hint": "O anúncio à casa do rei vem no fim.",
+      "learningObjective": "Reconhecer a sequência da decisão.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 7:9, que dia os leprosos dizem que é este?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "nunca"
+        },
+        {
+          "id": "b",
+          "text": "boas"
+        },
+        {
+          "id": "c",
+          "text": "talvez"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "este dia é dia de boas novas",
+      "feedbackCorrect": "É dia de boas novas — e por isso não podem ficar calados.",
+      "feedbackWrong": {
+        "a": "Volte ao texto.",
+        "c": "Volte ao texto."
+      },
+      "hint": "Leia como eles nomeiam o dia.",
+      "learningObjective": "Lembrar o nome do dia.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 7:9 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 7:9",
+      "passageA": {
+        "ref": "2 Reis 7:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem acha livramento não pode guardar a notícia só para si."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Calar é sempre prudente"
+        },
+        {
+          "id": "b",
+          "text": "A fome não tem solução"
+        },
+        {
+          "id": "c",
+          "text": "Livramento pede anúncio"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "vamos e anunciemos à casa do rei",
+      "feedbackCorrect": "Eles reconhecem: boas novas exigem anúncio, não silêncio.",
+      "feedbackWrong": {
+        "a": "Volte ao texto.",
+        "b": "Volte ao texto."
+      },
+      "hint": "Veja a decisão final dos leprosos.",
+      "learningObjective": "Ligar o achado ao dever de anunciar.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 7 —6, os sírios fogem porque o rei de Israel atacou o acampamento com suas tropas.",
+      "verseRef": "2 Reis 7:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Senhor fez ouvir no acampamento dos sírios o som de carros",
+      "feedbackCorrect": "A causa é o Senhor: ele faz ouvir o som de um grande exército.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Veja quem age no começo do versículo.",
+      "learningObjective": "Compreender a causa da fuga.",
+      "evidence": [
+        "2 Reis 7:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 7:6, toque a palavra que marca a causa do acampamento vazio.",
+      "verseRef": "2 Reis 7:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Porque"
+        },
+        {
+          "id": "c",
+          "text": "ouvir"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "2 Reis 7:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 7:9 se relaciona com o que os leprosos acharam?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O achado gera dever de anunciar, não de calar"
+        },
+        {
+          "id": "b",
+          "text": "Eles decidem esconder tudo até o fim do cerco"
+        },
+        {
+          "id": "c",
+          "text": "Eles voltam para morrer à porta sem contar"
+        },
+        {
+          "id": "d",
+          "text": "Eles pedem ao rei para ficar com o espólio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este dia é dia de boas novas, e estamos em silêncio",
+      "feedbackCorrect": "O contraste é claro: boas novas versus silêncio culpável.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o julgamento que fazem de si mesmos.",
+      "learningObjective": "Relacionar achado e anúncio.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena até as boas novas?",
+      "verseRef": "2 Reis 7:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eliseu anuncia abundância e o capitão duvida"
+        },
+        {
+          "id": "b",
+          "text": "Os leprosos decidem ir ao acampamento"
+        },
+        {
+          "id": "c",
+          "text": "Boas novas quebram o silêncio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Por que devemos ficar aqui sentados até a morte?",
+      "feedbackCorrect": "Da promessa à descoberta, e da descoberta ao anúncio.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio de Eliseu; o fim é o anúncio dos leprosos."
+      },
+      "hint": "A decisão dos leprosos fica no meio.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "2 Reis 7:3",
+        "2 Reis 7:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 7:9, que palavra marca a decisão de ir anunciar?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "nunca"
+        },
+        {
+          "id": "b",
+          "text": "talvez"
+        },
+        {
+          "id": "c",
+          "text": "portanto"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "agora, portanto, vamos e anunciemos",
+      "feedbackCorrect": "\"Portanto\" amarra o risco do silêncio à decisão de anunciar.",
+      "feedbackWrong": {
+        "a": "Volte ao texto.",
+        "b": "Volte ao texto."
+      },
+      "hint": "Procure a palavra antes de \"vamos e anunciemos\".",
+      "learningObjective": "Lembrar o marcador da decisão.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 7:9 a Isaías 52:7?",
+      "verseRef": "2 Reis 7:9",
+      "passageA": {
+        "ref": "2 Reis 7:9"
+      },
+      "passageB": {
+        "ref": "Isaías 52:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Silêncio como virtude final"
+        },
+        {
+          "id": "b",
+          "text": "Pés que anunciam boas novas"
+        },
+        {
+          "id": "c",
+          "text": "Fuga sem qualquer notícia"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vamos e anunciemos à casa do rei",
+      "evidence": [
+        "2 Reis 7:9",
+        "Isaías 52:7"
+      ],
+      "feedbackCorrect": "Nos dois textos, boas novas pedem quem as leve.",
+      "feedbackWrong": {
+        "a": "Volte ao texto.",
+        "c": "Volte ao texto."
+      },
+      "hint": "Compare o ato de anunciar boas novas.",
+      "learningObjective": "Relacionar o anúncio dos leprosos a Isaías."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 7 —9, os leprosos concluem que podem guardar o livramento em silêncio sem culpa.",
+      "verseRef": "2 Reis 7:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não fazemos o que é certo; este dia é dia de boas novas, e estamos em silêncio",
+      "feedbackCorrect": "Eles confessam que o silêncio não é certo e vão anunciar.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o julgamento que fazem de si.",
+      "learningObjective": "Interpretar o dever de anunciar o livramento.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 7:9, toque o trecho que nomeia o que não podem calar.",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "outros"
+        },
+        {
+          "id": "b",
+          "text": "disseram"
+        },
+        {
+          "id": "c",
+          "text": "fazemos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disseram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura das boas novas.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 7:6–9 sustenta sobre o livramento?",
+      "verseRef": "2 Reis 7:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus livra e a notícia deve ser anunciada"
+        },
+        {
+          "id": "b",
+          "text": "Israel venceu pela própria estratégia"
+        },
+        {
+          "id": "c",
+          "text": "Os leprosos podem calar sem problema"
+        },
+        {
+          "id": "d",
+          "text": "A dúvida do capitão é o modelo de fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor fez ouvir no acampamento dos sírios o som de carros",
+      "feedbackCorrect": "O Senhor causa a fuga; os leprosos reconhecem o dever de anunciar.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una a causa da fuga ao dever do anúncio.",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": [
+        "2 Reis 7:6",
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho das boas novas na Bíblia?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leprosos acham livramento e anunciam"
+        },
+        {
+          "id": "b",
+          "text": "O mensageiro anuncia a paz de Sião"
+        },
+        {
+          "id": "c",
+          "text": "O anjo traz boas novas de grande alegria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vamos e anunciemos à casa do rei",
+      "evidence": [
+        "2 Reis 7:9",
+        "Isaías 52:7",
+        "Lucas 2:10"
+      ],
+      "feedbackCorrect": "Das boas novas na porta ao anúncio messiânico, o fio é o mesmo.",
+      "feedbackWrong": {
+        "default": "Siga: 2 Reis 7, Isaías 52 e Lucas 2."
+      },
+      "hint": "Comece pelos leprosos.",
+      "learningObjective": "Ver as boas novas num fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 7:9, que palavra denuncia o erro dos leprosos?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "nunca"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "talvez"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "estamos em silêncio",
+      "feedbackCorrect": "O silêncio diante das boas novas é o que eles condenam.",
+      "feedbackWrong": {
+        "a": "Volte ao texto.",
+        "c": "Volte ao texto."
+      },
+      "hint": "Veja o que eles confessam estar fazendo.",
+      "learningObjective": "Lembrar o termo que carrega a leitura da cena.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 7:9 a Lucas 2:10?",
+      "verseRef": "2 Reis 7:9",
+      "passageA": {
+        "ref": "2 Reis 7:9"
+      },
+      "passageB": {
+        "ref": "Lucas 2:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Notícia só para poucos"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio ordenado por Deus"
+        },
+        {
+          "id": "c",
+          "text": "Boas novas de grande alegria"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "este dia é dia de boas novas",
+      "evidence": [
+        "2 Reis 7:9",
+        "Lucas 2:10"
+      ],
+      "feedbackCorrect": "Boas novas pedem anúncio: na porta de Samaria e no campo de Belém.",
+      "feedbackWrong": {
+        "a": "Volte ao texto.",
+        "b": "Volte ao texto."
+      },
+      "hint": "Compare o que se anuncia nos dois trechos.",
+      "learningObjective": "Ligar as boas novas ao anúncio do Evangelho."
+    }
+  ]
+}

@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 20:4–9",
+  "passages": [
+   {
+    "ref": "Jó 20:4–9"
+   },
+   {
+    "ref": "Jó 20:10–14"
+   }
+  ],
+  "context": "Zofar insiste: o júbilo dos ímpios é passageiro e a comida vira fel — justiça real aplicada cegamente a Jó.",
+  "keyword": "Júbilo passageiro",
+  "keywordGloss": "A alegria dos ímpios não dura; Zofar usa isso como arma.",
+  "focusQuestion": "Você aplica a justiça de Deus com pressa a quem sofre?",
+  "reflectionPrompts": [
+   "Júbilo que passa",
+   "Comida que vira fel",
+   "Justiça mal aplicada"
+  ],
+  "facts": [
+   {
+    "text": "O júbilo dos ímpios é passageiro.",
+    "evidenceRef": "Jó 20:5",
+    "evidenceSpan": "o júbilo dos ímpios é passageiro"
+   },
+   {
+    "text": "A alegria dos hipócritas é momentânea.",
+    "evidenceRef": "Jó 20:5",
+    "evidenceSpan": "a alegria dos hipócritas é momentânea"
+   },
+   {
+    "text": "Ainda que a presunção atinja os céus, apodrecerá.",
+    "evidenceRef": "Jó 20:6–7",
+    "evidenceSpan": "ele apodrecerá para sempre"
+   },
+   {
+    "text": "Como um sonho, ele voa e não é encontrado.",
+    "evidenceRef": "Jó 20:8",
+    "evidenceSpan": "Como um sonho, ele voa"
+   },
+   {
+    "text": "A comida se transformará em fel de áspides.",
+    "evidenceRef": "Jó 20:14",
+    "evidenceSpan": "será fel de áspides no seu interior"
+   },
+   {
+    "text": "Todavia a comida se transforma nas entranhas.",
+    "evidenceRef": "Jó 20:14",
+    "evidenceSpan": "a sua comida se transformará em suas entranhas"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "júbilo",
+    "gloss": "Alegria dos ímpios que Zofar diz ser passageira."
+   },
+   {
+    "term": "hipócritas",
+    "gloss": "Aqueles cuja alegria é momentânea."
+   },
+   {
+    "term": "áspides",
+    "gloss": "Imagem do fel em que a comida se transforma."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Zofar lembra o fim antigo dos ímpios",
+    "evidenceRef": "Jó 20:4–5"
+   },
+   {
+    "label": "Presunção alta e apodrecimento",
+    "evidenceRef": "Jó 20:6–9"
+   },
+   {
+    "label": "Filhos e bens não salvam",
+    "evidenceRef": "Jó 20:10–12"
+   },
+   {
+    "label": "A comida doce vira fel",
+    "evidenceRef": "Jó 20:13–14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Ainda que a presunção atinja os céus, contudo apodrecerá.",
+    "marker": "Contudo",
+    "evidenceRef": "Jó 20:7"
+   },
+   {
+    "kind": "resultado",
+    "text": "Todavia a comida se transforma em fel.",
+    "marker": "Todavia",
+    "evidenceRef": "Jó 20:14"
+   },
+   {
+    "kind": "causa",
+    "text": "Desde todos os tempos o júbilo dos ímpios é passageiro.",
+    "marker": null,
+    "evidenceRef": "Jó 20:4–5"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 73:18–19",
+    "bridge": "Ímpios em lugar escorregadio"
+   },
+   {
+    "ref": "Lucas 12:19–20",
+    "bridge": "Insensato, esta noite"
+   },
+   {
+    "ref": "Tiago 5:1–3",
+    "bridge": "Riqueza que apodrece"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Zofar prova que Jó é o ímpio do discurso.",
+    "why": "É aplicação cega; o livro corrigirá os amigos."
+   },
+   {
+    "text": "A justiça de Deus é falsa.",
+    "why": "O problema é a aplicação a Jó, não a justiça em si."
+   },
+   {
+    "text": "O júbilo dos ímpios dura para sempre.",
+    "why": "20:5 diz passageiro."
+   }
+  ],
+  "centralInsight": "A justiça de Deus é real — mas aplicá-la cegamente a Jó é violência.",
+  "anchorQuestion": "Como é o júbilo dos ímpios, segundo Zofar em Jó 20:5?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 20:5, Zofar diz que o júbilo dos ímpios dura para sempre.",
+   "verseRef": "Jó 20:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "O júbilo é passageiro.",
+   "feedbackWrong": {
+    "true": "Releia 20:5."
+   },
+   "hint": "Veja o adjetivo do júbilo.",
+   "learningObjective": "Observar o júbilo passageiro.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 20:5, toque como é o júbilo dos ímpios.",
+   "verseRef": "Jó 20:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "passageiro"
+    },
+    {
+     "id": "b",
+     "text": "momentânea"
+    },
+    {
+     "id": "c",
+     "text": "hipócritas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "É passageiro.",
+   "feedbackWrong": {
+    "b": "Momentânea descreve a alegria dos hipócritas.",
+    "c": "Hipócritas são o segundo grupo."
+   },
+   "hint": "Veja o predicado.",
+   "learningObjective": "Identificar o adjetivo.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 20:14, em que a comida se transformará?",
+   "verseRef": "Jó 20:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fel de áspides"
+    },
+    {
+     "id": "b",
+     "text": "Mel puro"
+    },
+    {
+     "id": "c",
+     "text": "Ouro fino"
+    },
+    {
+     "id": "d",
+     "text": "Pão doce"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será fel de áspides no seu interior",
+   "feedbackCorrect": "Vira fel de áspides.",
+   "feedbackWrong": {
+    "b": "Não há mel.",
+    "c": "Não há ouro.",
+    "d": "Não há pão doce."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar a transformação.",
+   "evidence": [
+    "Jó 20:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 20:5 na ordem do texto.",
+   "verseRef": "Jó 20:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "A saber: que o júbilo dos ímpios é passageiro"
+    },
+    {
+     "id": "b",
+     "text": "e a alegria dos hipócritas"
+    },
+    {
+     "id": "c",
+     "text": "é momentânea."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "Júbilo; depois alegria.",
+   "feedbackWrong": {
+    "default": "Comece por A saber."
+   },
+   "hint": "Comece por A saber.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 20:5, a alegria dos hipócritas é…?",
+   "verseRef": "Jó 20:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "momentânea"
+    },
+    {
+     "id": "b",
+     "text": "eterna"
+    },
+    {
+     "id": "c",
+     "text": "doce"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "é momentânea",
+   "feedbackCorrect": "A palavra é momentânea.",
+   "feedbackWrong": {
+    "b": "Não diz eterna.",
+    "c": "Não diz doce."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar o adjetivo.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 20:5 comunica que se liga a este contexto?",
+   "verseRef": "Jó 20:5",
+   "passageA": {
+    "ref": "Jó 20:5"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Zofar usa a justiça real dos ímpios como arma contra Jó."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Justiça usada como arma"
+    },
+    {
+     "id": "b",
+     "text": "Consolo sem acusação"
+    },
+    {
+     "id": "c",
+     "text": "Vitória de Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "O júbilo passageiro vira acusação.",
+   "feedbackWrong": {
+    "b": "Não há consolo puro.",
+    "c": "Não há vitória de Jó."
+   },
+   "hint": "Pense no tom de Zofar.",
+   "learningObjective": "Ligar o versículo ao ataque.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 20:6–7, ainda que a presunção atinja os céus, contudo o ímpio apodrecerá.",
+   "verseRef": "Jó 20:6–7",
+   "correctOptionId": "true",
+   "evidenceSpan": "Contudo, como seu próprio excremento ele apodrecerá",
+   "feedbackCorrect": "O Contudo marca o contraste.",
+   "feedbackWrong": {
+    "false": "Releia 20:7."
+   },
+   "hint": "Olhe a palavra Contudo.",
+   "learningObjective": "Compreender o contraste.",
+   "evidence": [
+    "Jó 20:6–7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 20:7, toque a palavra que marca o contraste.",
+   "verseRef": "Jó 20:7",
+   "options": [
+    {
+     "id": "a",
+     "text": "Contudo"
+    },
+    {
+     "id": "b",
+     "text": "excremento"
+    },
+    {
+     "id": "c",
+     "text": "sempre"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Contudo, como seu próprio excremento",
+   "feedbackCorrect": "Contudo introduz o contraste.",
+   "feedbackWrong": {
+    "b": "Excremento é a imagem da queda.",
+    "c": "Sempre mede a duração da queda."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 20:7"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 20:4–14 se relaciona com o caso de Jó?",
+   "verseRef": "Jó 20:4–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Aplica o fim dos ímpios como acusação cega"
+    },
+    {
+     "id": "b",
+     "text": "Absolve Jó claramente"
+    },
+    {
+     "id": "c",
+     "text": "Nega qualquer justiça de Deus"
+    },
+    {
+     "id": "d",
+     "text": "Consola sem falar de ímpios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "A justiça real vira violência na aplicação.",
+   "feedbackWrong": {
+    "b": "O tom é de ataque.",
+    "c": "A justiça é afirmada.",
+    "d": "O discurso é sobre ímpios."
+   },
+   "hint": "Pense na aplicação a Jó.",
+   "learningObjective": "Relacionar justiça e ataque.",
+   "evidence": [
+    "Jó 20:4–14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o discurso de Zofar em 20:4–14?",
+   "verseRef": "Jó 20:4–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Lembra o júbilo passageiro dos ímpios"
+    },
+    {
+     "id": "b",
+     "text": "Descreve a queda da presunção"
+    },
+    {
+     "id": "c",
+     "text": "Mostra a comida que vira fel"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "será fel de áspides no seu interior",
+   "feedbackCorrect": "Júbilo, queda e fel.",
+   "feedbackWrong": {
+    "default": "Comece pelo júbilo."
+   },
+   "hint": "Pense: júbilo → queda → fel.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 20:4–14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 20:14, o que a comida será no interior?",
+   "verseRef": "Jó 20:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "fel"
+    },
+    {
+     "id": "b",
+     "text": "mel"
+    },
+    {
+     "id": "c",
+     "text": "leite"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será fel de áspides",
+   "feedbackCorrect": "A palavra é fel.",
+   "feedbackWrong": {
+    "b": "Não há mel.",
+    "c": "Não há leite."
+   },
+   "hint": "Veja o predicado.",
+   "learningObjective": "Lembrar a transformação.",
+   "evidence": [
+    "Jó 20:14"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 20:5 a Salmos 73:18–19?",
+   "verseRef": "Jó 20:5",
+   "passageA": {
+    "ref": "Jó 20:5"
+   },
+   "passageB": {
+    "ref": "Salmos 73:18–19"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ímpios em lugar escorregadio"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "Nos dois textos, o fim dos ímpios é súbito.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare o fim dos ímpios.",
+   "learningObjective": "Relacionar Zofar ao Salmo.",
+   "evidence": [
+    "Jó 20:5",
+    "Salmos 73:18–19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 20:4–14 sustenta que a justiça de Deus é real, mas aplicá-la cegamente a Jó é violência.",
+   "verseRef": "Jó 20:4–14",
+   "correctOptionId": "true",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "Justiça real no discurso; aplicação cega no contexto do livro.",
+   "feedbackWrong": {
+    "false": "Pense na aplicação a Jó."
+   },
+   "hint": "Veja o tom acusador.",
+   "learningObjective": "Interpretar justiça mal aplicada.",
+   "evidence": [
+    "Jó 20:4–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 20:14, toque o trecho que sustenta a transformação amarga.",
+   "verseRef": "Jó 20:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "fel de áspides"
+    },
+    {
+     "id": "b",
+     "text": "suas entranhas"
+    },
+    {
+     "id": "c",
+     "text": "sua comida"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será fel de áspides no seu interior",
+   "feedbackCorrect": "Fel de áspides sustenta o amargo.",
+   "feedbackWrong": {
+    "b": "Entranhas é onde acontece.",
+    "c": "Comida é o que se transforma."
+   },
+   "hint": "Veja o fim.",
+   "learningObjective": "Sustentar a leitura do fel.",
+   "evidence": [
+    "Jó 20:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 20:4–14 sustenta?",
+   "verseRef": "Jó 20:4–14",
+   "options": [
+    {
+     "id": "a",
+     "text": "A justiça de Deus é real — mas aplicá-la cegamente a Jó é violência"
+    },
+    {
+     "id": "b",
+     "text": "Zofar prova a inocência de Jó"
+    },
+    {
+     "id": "c",
+     "text": "O júbilo dos ímpios é eterno"
+    },
+    {
+     "id": "d",
+     "text": "Não há transformação da comida"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "Justiça real e aplicação cega.",
+   "feedbackWrong": {
+    "b": "O tom é de ataque.",
+    "c": "20:5 diz passageiro.",
+    "d": "20:14 fala de fel."
+   },
+   "hint": "Una o discurso e o alvo.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 20:4–14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fim dos ímpios na Bíblia?",
+   "verseRef": "Jó 20:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Zofar fala do júbilo passageiro"
+    },
+    {
+     "id": "b",
+     "text": "O salmista vê os ímpios no escorregadio"
+    },
+    {
+     "id": "c",
+     "text": "Jesus conta do insensato cuja vida é pedida"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "O fio vai de Zofar ao Salmo e a Lucas.",
+   "feedbackWrong": {
+    "default": "Comece por Zofar."
+   },
+   "hint": "Siga: Zofar → Salmo → Jesus.",
+   "learningObjective": "Ver o fio do fim dos ímpios.",
+   "evidence": [
+    "Jó 20:5",
+    "Salmos 73:18–19",
+    "Lucas 12:19–20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 20:5, o que dos ímpios é passageiro?",
+   "verseRef": "Jó 20:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "júbilo"
+    },
+    {
+     "id": "b",
+     "text": "fel"
+    },
+    {
+     "id": "c",
+     "text": "sonho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "O termo é júbilo.",
+   "feedbackWrong": {
+    "b": "Fel está em 20:14.",
+    "c": "Sonho está em 20:8."
+   },
+   "hint": "Veja o sujeito.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 20:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 20:5 a Tiago 5:1–3?",
+   "verseRef": "Jó 20:5",
+   "passageA": {
+    "ref": "Jó 20:5"
+   },
+   "passageB": {
+    "ref": "Tiago 5:1–3"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Riqueza que apodrece"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o júbilo dos ímpios é passageiro",
+   "feedbackCorrect": "Nos dois textos, a prosperidade ímpia não dura.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare prosperidade e fim.",
+   "learningObjective": "Ligar Zofar a Tiago.",
+   "evidence": [
+    "Jó 20:5",
+    "Tiago 5:1–3"
+   ]
+  }
+ ]
+}

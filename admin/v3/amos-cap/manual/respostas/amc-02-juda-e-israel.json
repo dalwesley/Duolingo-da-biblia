@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 2:4–9",
+    "passages": [
+      { "ref": "Amós 2:4–9" },
+      { "ref": "Amós 2:10–12" }
+    ],
+    "context": "Depois das nações, Amós volta o oráculo contra Judá e Israel. O povo da aliança também responde: rejeitaram a lei e venderam o justo.",
+    "keyword": "justos",
+    "keywordGloss": "Os justos vendidos por dinheiro: sinal da injustiça de Israel.",
+    "focusQuestion": "Onde o povo da aliança ainda vende o justo por vantagem pequena?",
+    "reflectionPrompts": [
+      "Lei rejeitada",
+      "Justo por dinheiro",
+      "Não profetizem"
+    ],
+    "facts": [
+      {
+        "text": "Judá rejeitou a lei do Senhor e não guardou os estatutos.",
+        "evidenceRef": "Amós 2:4",
+        "evidenceSpan": "rejeitaram a lei do Senhor e não guardaram os seus estatutos"
+      },
+      {
+        "text": "O Senhor acenderá fogo em Judá contra os castelos de Jerusalém.",
+        "evidenceRef": "Amós 2:5",
+        "evidenceSpan": "acenderei um fogo em Judá, que consumirá os castelos de Jerusalém"
+      },
+      {
+        "text": "Em Israel os justos são vendidos por dinheiro e o necessitado por sandálias.",
+        "evidenceRef": "Amós 2:6",
+        "evidenceSpan": "os justos são vendidos por dinheiro"
+      },
+      {
+        "text": "Profanam o santo nome com práticas sexuais ilícitas.",
+        "evidenceRef": "Amós 2:7",
+        "evidenceSpan": "assim profanando o meu santo nome"
+      },
+      {
+        "text": "Deus fez subir Israel do Egito e conduziu pelo deserto.",
+        "evidenceRef": "Amós 2:10",
+        "evidenceSpan": "vos fiz subir da terra do Egito"
+      },
+      {
+        "text": "Deram vinho aos nazireus e mandaram os profetas não profetizarem.",
+        "evidenceRef": "Amós 2:12",
+        "evidenceSpan": "deram vinho aos nazireus e disseram aos profetas: Não profetizem"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "lei",
+        "gloss": "A lei do Senhor que Judá rejeitou."
+      },
+      {
+        "term": "justos",
+        "gloss": "Pessoas vendidas por dinheiro em Israel."
+      },
+      {
+        "term": "nazireus",
+        "gloss": "Jovens consagrados a quem deram vinho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Juízo sobre Judá por rejeitar a lei",
+        "evidenceRef": "Amós 2:4–5"
+      },
+      {
+        "label": "Juízo sobre Israel por oprimir o justo",
+        "evidenceRef": "Amós 2:6–8"
+      },
+      {
+        "label": "Memória do êxodo e rejeição dos enviados",
+        "evidenceRef": "Amós 2:9–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O castigo de Judá vem porque rejeitaram a lei do Senhor.",
+        "marker": "porque",
+        "evidenceRef": "Amós 2:4"
+      },
+      {
+        "kind": "causa",
+        "text": "O castigo de Israel vem pois os justos são vendidos por dinheiro.",
+        "marker": "pois",
+        "evidenceRef": "Amós 2:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Deus suscitou profetas e nazireus, mas o povo calou e corrompeu.",
+        "marker": "Mas",
+        "evidenceRef": "Amós 2:12"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Deuteronômio 16:19", "bridge": "Não torcer o direito" },
+      { "ref": "Miqueias 3:1–3", "bridge": "Príncipes que oprimem" },
+      { "ref": "Atos 7:51–52", "bridge": "Resistir aos enviados" }
+    ],
+    "misreadings": [
+      {
+        "text": "Só as nações pagãs são julgadas; Judá e Israel escapam.",
+        "why": "Amós 2 vira o oráculo contra Judá e Israel."
+      },
+      {
+        "text": "Vender o justo por dinheiro é detalhe econômico sem peso moral.",
+        "why": "É a razão explícita do castigo em 2:6."
+      },
+      {
+        "text": "Calar os profetas não ofende a Deus.",
+        "why": "2:12 registra o mandato \"Não profetizem\" como pecado."
+      }
+    ],
+    "centralInsight": "O povo da aliança também responde: venderam o justo por dinheiro.",
+    "anchorQuestion": "Segundo Amós 2:6, por que o Senhor não sustará o castigo de Israel?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 2:4, Judá rejeitou a lei do Senhor e não guardou os estatutos.",
+      "verseRef": "Amós 2:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "rejeitaram a lei do Senhor e não guardaram os seus estatutos",
+      "feedbackCorrect": "A razão do castigo de Judá é rejeitar a lei e os estatutos.",
+      "feedbackWrong": { "false": "Releia a razão depois de \"porque\" em 2:4." },
+      "hint": "Veja o que Judá fez com a lei.",
+      "learningObjective": "Observar a rejeição da lei por Judá.",
+      "evidence": ["Amós 2:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 2:6, toque o preço pelo qual os justos são vendidos.",
+      "verseRef": "Amós 2:6",
+      "evidenceSpan": "os justos são vendidos por dinheiro",
+      "feedbackCorrect": "Os justos são vendidos por dinheiro.",
+      "hint": "Procure a palavra depois de \"vendidos por\".",
+      "learningObjective": "Identificar o preço da injustiça.",
+      "evidence": ["Amós 2:6"],
+      "options": [
+        { "id": "a", "text": "dinheiro" },
+        { "id": "b", "text": "sandálias" },
+        { "id": "c", "text": "castigo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Sandálias são o preço do necessitado, não dos justos neste trecho.",
+        "c": "Castigo é o que não se sustará, não o preço da venda."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 2:12, o que o povo disse aos profetas?",
+      "verseRef": "Amós 2:12",
+      "evidenceSpan": "disseram aos profetas: Não profetizem",
+      "feedbackCorrect": "Mandaram: Não profetizem.",
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar o silenciamento dos profetas.",
+      "evidence": ["Amós 2:12"],
+      "options": [
+        { "id": "a", "text": "Não profetizem" },
+        { "id": "b", "text": "Profetizem mais alto" },
+        { "id": "c", "text": "Voltem ao Egito" },
+        { "id": "d", "text": "Edifiquem um altar" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto manda calar, não falar mais alto.",
+        "c": "Não há ordem de voltar ao Egito aqui.",
+        "d": "O versículo não manda edificar altar."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 2:6 na ordem do texto.",
+      "verseRef": "Amós 2:6",
+      "evidenceSpan": "Por três transgressões de Israel e por quatro",
+      "feedbackCorrect": "Fórmula do Senhor; depois a venda do justo e do necessitado.",
+      "hint": "Comece pela fórmula \"Assim diz o Senhor\".",
+      "learningObjective": "Reconhecer a sequência do oráculo de Israel.",
+      "evidence": ["Amós 2:6"],
+      "options": [
+        { "id": "a", "text": "Assim diz o Senhor: Por três transgressões de Israel" },
+        { "id": "b", "text": "e por quatro, não sustarei o castigo" },
+        { "id": "c", "text": "pois os justos são vendidos por dinheiro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela palavra do Senhor; a venda fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 2:4, o que Judá rejeitou do Senhor?",
+      "verseRef": "Amós 2:4",
+      "evidenceSpan": "rejeitaram a lei do Senhor",
+      "feedbackCorrect": "Rejeitaram a lei do Senhor.",
+      "hint": "É a palavra depois de \"rejeitaram a\".",
+      "learningObjective": "Lembrar o que Judá rejeitou.",
+      "evidence": ["Amós 2:4"],
+      "options": [
+        { "id": "a", "text": "lei" },
+        { "id": "b", "text": "chuva" },
+        { "id": "c", "text": "muralha" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Chuva\" não aparece em 2:4.",
+        "c": "\"Muralha\" não é o que rejeitaram."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 2:6 comunica que se liga a este contexto?",
+      "verseRef": "Amós 2:6",
+      "evidenceSpan": "os justos são vendidos por dinheiro",
+      "feedbackCorrect": "O povo da aliança também responde: vende o justo por dinheiro.",
+      "hint": "Ligue a venda do justo ao juízo sobre Israel.",
+      "learningObjective": "Ligar a opressão ao juízo do povo da aliança.",
+      "evidence": ["Amós 2:6"],
+      "passageA": { "ref": "Amós 2:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Judá e Israel também entram no oráculo do Senhor."
+      },
+      "options": [
+        { "id": "a", "text": "Aliança também responde" },
+        { "id": "b", "text": "Israel isento do juízo" },
+        { "id": "c", "text": "Só nações pagãs pagam" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O castigo de Israel não será sustado.",
+        "c": "O capítulo 2 vira contra Judá e Israel."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 2:12, o povo acolheu os profetas e pediu mais profecia.",
+      "verseRef": "Amós 2:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "disseram aos profetas: Não profetizem",
+      "feedbackCorrect": "O \"Mas\" introduz a rejeição: mandaram não profetizar.",
+      "feedbackWrong": { "true": "Releia 2:12: \"Não profetizem\"." },
+      "hint": "Veja o que disseram aos profetas.",
+      "learningObjective": "Compreender a rejeição dos enviados.",
+      "evidence": ["Amós 2:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 2:6, toque a palavra que marca a razão do castigo de Israel.",
+      "verseRef": "Amós 2:6",
+      "evidenceSpan": "castigo, pois os justos são vendidos",
+      "feedbackCorrect": "\"Pois\" liga o castigo à venda dos justos.",
+      "hint": "É a palavra curta antes de \"os justos\".",
+      "learningObjective": "Reconhecer o marcador de causa em 2:6.",
+      "evidence": ["Amós 2:6"],
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "Israel" },
+        { "id": "c", "text": "quatro" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Israel\" nomeia o povo, não a razão gramatical.",
+        "c": "\"Quatro\" faz parte da fórmula, não da razão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 2:4–12 relaciona o passado de Deus e a resposta de Israel?",
+      "verseRef": "Amós 2:10–12",
+      "evidenceSpan": "deram vinho aos nazireus",
+      "feedbackCorrect": "Deus libertou e suscitou enviados; o povo corrompeu e calou.",
+      "hint": "Compare 2:10–11 com o \"Mas\" de 2:12.",
+      "learningObjective": "Relacionar graça passada e rejeição presente.",
+      "evidence": ["Amós 2:10–12"],
+      "options": [
+        { "id": "a", "text": "Deus libertou e enviou; o povo calou e corrompeu" },
+        { "id": "b", "text": "Israel nunca recebeu libertação alguma" },
+        { "id": "c", "text": "Os profetas foram sempre bem acolhidos" },
+        { "id": "d", "text": "Os nazireus pediram vinho ao Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "2:10 lembra o êxodo e o deserto.",
+        "c": "2:12 manda: Não profetizem.",
+        "d": "O povo deu vinho aos nazireus, corrompendo-os."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 2:4–12?",
+      "verseRef": "Amós 2:4–12",
+      "evidenceSpan": "Não profetizem",
+      "feedbackCorrect": "Judá rejeita a lei; Israel oprime; depois rejeitam os enviados.",
+      "hint": "Comece por Judá; o silenciamento fecha.",
+      "learningObjective": "Seguir o movimento do oráculo duplo.",
+      "evidence": ["Amós 2:4–12"],
+      "options": [
+        { "id": "a", "text": "Juízo sobre Judá por rejeitar a lei" },
+        { "id": "b", "text": "Juízo sobre Israel por oprimir o justo" },
+        { "id": "c", "text": "Memória do êxodo e rejeição dos enviados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Judá primeiro; rejeição dos enviados por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 2:12, a quem o povo deu vinho?",
+      "verseRef": "Amós 2:12",
+      "evidenceSpan": "deram vinho aos nazireus",
+      "feedbackCorrect": "Deram vinho aos nazireus, corrompendo o consagrado.",
+      "hint": "É a palavra depois de \"vinho aos\".",
+      "learningObjective": "Lembrar quem foi corrompido com vinho.",
+      "evidence": ["Amós 2:12"],
+      "options": [
+        { "id": "a", "text": "nazireus" },
+        { "id": "b", "text": "anjos" },
+        { "id": "c", "text": "reis" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Anjos\" não aparece em 2:12.",
+        "c": "\"Reis\" não é o objeto dessa frase."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 2:6 a Deuteronômio 16:19?",
+      "verseRef": "Amós 2:6",
+      "evidenceSpan": "os justos são vendidos por dinheiro",
+      "feedbackCorrect": "Nos dois textos, torcer o direito do justo é pecado grave.",
+      "hint": "Compare a venda do justo e o direito.",
+      "learningObjective": "Relacionar a opressão de Amós à Lei.",
+      "evidence": ["Amós 2:6", "Deuteronômio 16:19"],
+      "passageA": { "ref": "Amós 2:6" },
+      "passageB": { "ref": "Deuteronômio 16:19" },
+      "options": [
+        { "id": "a", "text": "Não torcer o direito" },
+        { "id": "b", "text": "Vender o justo é lícito" },
+        { "id": "c", "text": "Sandálias sem valor moral" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos condenam torcer o direito.",
+        "c": "O preço baixo mostra desprezo pelo necessitado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 2:4–12, só as nações pagãs são julgadas; Judá e Israel escapam.",
+      "verseRef": "Amós 2:4–6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Por três transgressões de Judá",
+      "feedbackCorrect": "O oráculo vira contra Judá e Israel com razões claras.",
+      "feedbackWrong": { "true": "2:4 e 2:6 nomeiam Judá e Israel no juízo." },
+      "hint": "Veja contra quem o Senhor fala neste capítulo.",
+      "learningObjective": "Interpretar o juízo sobre o povo da aliança.",
+      "evidence": ["Amós 2:4–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 2:7, toque o trecho que mostra o que é profanado.",
+      "verseRef": "Amós 2:7",
+      "evidenceSpan": "profanando o meu santo nome",
+      "feedbackCorrect": "Profanam o santo nome do Senhor.",
+      "hint": "Procure o fim do versículo.",
+      "learningObjective": "Sustentar a profanação do nome com o texto.",
+      "evidence": ["Amós 2:7"],
+      "options": [
+        { "id": "a", "text": "santo nome" },
+        { "id": "b", "text": "pó da terra" },
+        { "id": "c", "text": "caminho" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Pó da terra\" descreve a opressão, não o que é profanado.",
+        "c": "\"Caminho\" dos mansos é pervertido, não o nome."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 2:4–12 sustenta sobre o povo da aliança?",
+      "verseRef": "Amós 2:6–12",
+      "evidenceSpan": "os justos são vendidos por dinheiro",
+      "feedbackCorrect": "Também responde: vende o justo e cala os enviados.",
+      "hint": "Una venda do justo, êxodo e \"Não profetizem\".",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Amós 2:6–12"],
+      "options": [
+        { "id": "a", "text": "O povo da aliança também responde por opressão" },
+        { "id": "b", "text": "Só nações pagãs entram no juízo" },
+        { "id": "c", "text": "Vender o justo não tem peso moral" },
+        { "id": "d", "text": "Calar profetas não ofende a Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Judá e Israel são nomeados no castigo.",
+        "c": "2:6 faz disso a razão do juízo.",
+        "d": "2:12 registra o silenciamento como pecado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a resistência aos enviados na Escritura?",
+      "verseRef": "Amós 2:11–12",
+      "evidenceSpan": "Não profetizem",
+      "feedbackCorrect": "Amós: Deus suscita e o povo cala; Miqueias denuncia opressão; Atos resume a resistência.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver a rejeição dos enviados no fio bíblico.",
+      "evidence": ["Amós 2:11–12", "Miqueias 3:1–3", "Atos 7:51–52"],
+      "options": [
+        { "id": "a", "text": "Amós: Deus suscita e o povo cala" },
+        { "id": "b", "text": "Miqueias denuncia príncipes que oprimem" },
+        { "id": "c", "text": "Atos resume a resistência aos enviados" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 2, Miqueias 3 e Atos 7." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 2:6, que palavra nomeia os que são vendidos por dinheiro?",
+      "verseRef": "Amós 2:6",
+      "evidenceSpan": "os justos são vendidos por dinheiro",
+      "feedbackCorrect": "Justos é o termo que carrega a injustiça de Israel.",
+      "hint": "É o sujeito de \"são vendidos\".",
+      "learningObjective": "Lembrar o termo central da opressão.",
+      "evidence": ["Amós 2:6"],
+      "options": [
+        { "id": "a", "text": "justos" },
+        { "id": "b", "text": "anjos" },
+        { "id": "c", "text": "muros" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Anjos\" não aparece em 2:6.",
+        "c": "\"Muros\" não é quem é vendido."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 2:12 a Atos 7:51–52?",
+      "verseRef": "Amós 2:12",
+      "evidenceSpan": "disseram aos profetas: Não profetizem",
+      "feedbackCorrect": "Nos dois textos, o povo resiste aos enviados de Deus.",
+      "hint": "Compare o tratamento dos profetas.",
+      "learningObjective": "Ligar o silenciamento em Amós à resistência em Atos.",
+      "evidence": ["Amós 2:12", "Atos 7:51–52"],
+      "passageA": { "ref": "Amós 2:12" },
+      "passageB": { "ref": "Atos 7:51–52" },
+      "options": [
+        { "id": "a", "text": "Resistir aos enviados" },
+        { "id": "b", "text": "Acolher toda profecia" },
+        { "id": "c", "text": "Silêncio sem culpa" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram rejeição, não acolhida plena.",
+        "c": "Calar os enviados é tratado como pecado."
+      }
+    }
+  ]
+}

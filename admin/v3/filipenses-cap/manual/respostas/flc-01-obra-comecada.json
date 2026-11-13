@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Filipenses 1:3–8",
+    "passages": [
+      {
+        "ref": "Filipenses 1:3–8"
+      },
+      {
+        "ref": "Filipenses 1:9–11"
+      }
+    ],
+    "context": "Paulo agradece e ora pela igreja que colabora no evangelho, convicto de que Deus completará a boa obra até o Dia de Cristo.",
+    "keyword": "obra",
+    "keywordGloss": "A boa obra que Deus iniciou e aperfeiçoará até o Dia de Cristo Jesus.",
+    "focusQuestion": "Onde você precisa confiar que Deus completa o que começou?",
+    "reflectionPrompts": [
+      "Obra começada",
+      "Colaboração no evangelho",
+      "Amor que cresce"
+    ],
+    "facts": [
+      {
+        "text": "Paulo agradece a Deus pela memória deles.",
+        "evidenceRef": "Filipenses 1:3",
+        "evidenceSpan": "Agradeço ao meu Deus por tudo que me vem à memória a respeito de vocês"
+      },
+      {
+        "text": "Ora com alegria por causa da colaboração no evangelho.",
+        "evidenceRef": "Filipenses 1:5",
+        "evidenceSpan": "Pela sua colaboração no evangelho, desde o primeiro dia até agora"
+      },
+      {
+        "text": "Aquele que iniciou a boa obra a aperfeiçoará até o Dia de Cristo.",
+        "evidenceRef": "Filipenses 1:6",
+        "evidenceSpan": "aquele que iniciou a boa obra em vocês a aperfeiçoará até o Dia de Cristo Jesus"
+      },
+      {
+        "text": "Eles são participantes da graça com Paulo.",
+        "evidenceRef": "Filipenses 1:7",
+        "evidenceSpan": "todos sois participantes da graça comigo"
+      },
+      {
+        "text": "Pede que o amor aumente em conhecimento e percepção.",
+        "evidenceRef": "Filipenses 1:9",
+        "evidenceSpan": "que o amor de vocês aumente mais e mais em pleno conhecimento e em toda a percepção"
+      },
+      {
+        "text": "Cheios do fruto de justiça por meio de Jesus Cristo.",
+        "evidenceRef": "Filipenses 1:11",
+        "evidenceSpan": "Cheios do fruto de justiça, que é por meio de Jesus Cristo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "obra",
+        "gloss": "Boa obra que Deus inicia e aperfeiçoa."
+      },
+      {
+        "term": "colaboração",
+        "gloss": "Parceria no evangelho desde o primeiro dia."
+      },
+      {
+        "term": "amor",
+        "gloss": "Amor que deve aumentar em conhecimento e percepção."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ação de graças e oração com alegria",
+        "evidenceRef": "Filipenses 1:3–4"
+      },
+      {
+        "label": "Convicção: Deus completa a obra",
+        "evidenceRef": "Filipenses 1:5–6"
+      },
+      {
+        "label": "Participantes da graça no coração de Paulo",
+        "evidenceRef": "Filipenses 1:7–8"
+      },
+      {
+        "label": "Oração pelo amor e fruto de justiça",
+        "evidenceRef": "Filipenses 1:9–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Ora com alegria pela colaboração no evangelho.",
+        "marker": "Pela",
+        "evidenceRef": "Filipenses 1:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "A obra será aperfeiçoada até o Dia de Cristo.",
+        "marker": "até",
+        "evidenceRef": "Filipenses 1:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "Amor aumenta para aprovarem as coisas excelentes.",
+        "marker": "Para que",
+        "evidenceRef": "Filipenses 1:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Tessalonicenses 5:24",
+        "bridge": "Fiel é quem chama"
+      },
+      {
+        "ref": "1 Coríntios 1:8",
+        "bridge": "Confirmará até o fim"
+      },
+      {
+        "ref": "Hebreus 12:2",
+        "bridge": "Autor e consumador"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A boa obra depende só do esforço humano.",
+        "why": "Aquele que iniciou é Deus, que aperfeiçoará."
+      },
+      {
+        "text": "A colaboração no evangelho já terminou.",
+        "why": "É desde o primeiro dia até agora."
+      },
+      {
+        "text": "O amor não precisa de conhecimento.",
+        "why": "Deve aumentar em conhecimento e percepção."
+      }
+    ],
+    "centralInsight": "Aquele que começou a boa obra a completará até o dia de Cristo Jesus.",
+    "anchorQuestion": "Segundo Filipenses 1:6, o que Deus fará com a boa obra?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Filipenses 1:6, aquele que iniciou a boa obra a aperfeiçoará até o Dia de Cristo Jesus.",
+      "verseRef": "Filipenses 1:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Deus completa a obra até o Dia.",
+      "feedbackWrong": {
+        "false": "Releia a convicção."
+      },
+      "hint": "Olhe o verbo aperfeiçoará.",
+      "learningObjective": "Observar a obra completada.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Filipenses 1:5, toque o objeto da colaboração.",
+      "verseRef": "Filipenses 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "evangelho"
+        },
+        {
+          "id": "b",
+          "text": "dia"
+        },
+        {
+          "id": "c",
+          "text": "agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "colaboração no evangelho",
+      "feedbackCorrect": "Colaboração no evangelho.",
+      "feedbackWrong": {
+        "b": "Dia marca o início.",
+        "c": "Agora marca a continuidade."
+      },
+      "hint": "Veja o complemento no.",
+      "learningObjective": "Identificar o evangelho.",
+      "evidence": [
+        "Filipenses 1:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Filipenses 1:11, de que devem estar cheios?",
+      "verseRef": "Filipenses 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fruto de justiça por meio de Jesus Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Só memória sem oração"
+        },
+        {
+          "id": "c",
+          "text": "Algemas sem graça"
+        },
+        {
+          "id": "d",
+          "text": "Amor sem conhecimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cheios do fruto de justiça, que é por meio de Jesus Cristo",
+      "feedbackCorrect": "Fruto de justiça em Cristo.",
+      "feedbackWrong": {
+        "b": "Há oração.",
+        "c": "Há graça.",
+        "d": "Amor com conhecimento."
+      },
+      "hint": "Leia o versículo.",
+      "learningObjective": "Ver o fruto de justiça.",
+      "evidence": [
+        "Filipenses 1:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Filipenses 1:5–6 na ordem do texto.",
+      "verseRef": "Filipenses 1:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pela sua colaboração no evangelho, desde o primeiro dia até agora"
+        },
+        {
+          "id": "b",
+          "text": "Estou plenamente convicto de que aquele que iniciou a boa obra"
+        },
+        {
+          "id": "c",
+          "text": "a aperfeiçoará até o Dia de Cristo Jesus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Colaboração, convicção e aperfeiçoamento.",
+      "feedbackWrong": {
+        "default": "Comece pela colaboração."
+      },
+      "hint": "Siga 1:5–6.",
+      "learningObjective": "Seguir a ordem da obra.",
+      "evidence": [
+        "Filipenses 1:5–6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Filipenses 1:6, complete: iniciou a boa ___.",
+      "verseRef": "Filipenses 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "obra"
+        },
+        {
+          "id": "b",
+          "text": "algema"
+        },
+        {
+          "id": "c",
+          "text": "memória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "iniciou a boa obra",
+      "feedbackCorrect": "Obra é o que Deus iniciou.",
+      "feedbackWrong": {
+        "b": "Algemas aparecem em 1:7.",
+        "c": "Memória em 1:3."
+      },
+      "hint": "Veja o objeto de iniciou.",
+      "learningObjective": "Lembrar a palavra obra.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Filipenses 1:6 comunica que se liga a este contexto?",
+      "verseRef": "Filipenses 1:6",
+      "passageA": {
+        "ref": "Filipenses 1:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Paulo agradece a igreja colaboradora e confia que Deus completa a obra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus aperfeiçoa a obra"
+        },
+        {
+          "id": "b",
+          "text": "Obra só humana"
+        },
+        {
+          "id": "c",
+          "text": "Fim da colaboração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Deus completa o que começou.",
+      "feedbackWrong": {
+        "b": "Ele iniciou.",
+        "c": "A colaboração continua."
+      },
+      "hint": "Ligue colaboração e obra.",
+      "learningObjective": "Ligar o contexto à obra.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Filipenses 1:5–6, a colaboração no evangelho sustenta a convicção de que Deus completa a obra.",
+      "verseRef": "Filipenses 1:5–6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Pela sua colaboração no evangelho",
+      "feedbackCorrect": "A colaboração liga-se à convicção da obra.",
+      "feedbackWrong": {
+        "false": "O Pela introduz a causa da alegria e da confiança."
+      },
+      "hint": "Olhe a ligação 1:5–6.",
+      "learningObjective": "Ver colaboração e obra.",
+      "evidence": [
+        "Filipenses 1:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Filipenses 1:5, toque a palavra que introduz a causa.",
+      "verseRef": "Filipenses 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pela"
+        },
+        {
+          "id": "b",
+          "text": "desde"
+        },
+        {
+          "id": "c",
+          "text": "agora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pela sua colaboração no evangelho",
+      "feedbackCorrect": "Pela marca a causa.",
+      "feedbackWrong": {
+        "b": "Desde marca o início.",
+        "c": "Agora a continuidade."
+      },
+      "hint": "Procure a preposição inicial.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "Filipenses 1:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Filipenses 1:9–10 estabelece entre amor e aprovação?",
+      "verseRef": "Filipenses 1:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Amor que cresce mira aprovar as coisas excelentes"
+        },
+        {
+          "id": "b",
+          "text": "Amor dispensa percepção"
+        },
+        {
+          "id": "c",
+          "text": "Aprovação anula o amor"
+        },
+        {
+          "id": "d",
+          "text": "Conhecimento exclui o Dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que aprovem as coisas excelentes",
+      "feedbackCorrect": "Amor com conhecimento mira a aprovação.",
+      "feedbackWrong": {
+        "b": "Há percepção.",
+        "c": "Amor aumenta.",
+        "d": "Há Dia de Cristo."
+      },
+      "hint": "Una 1:9 e 1:10.",
+      "learningObjective": "Relacionar amor e aprovação.",
+      "evidence": [
+        "Filipenses 1:9–10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Filipenses 1:3–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ação de graças e oração com alegria"
+        },
+        {
+          "id": "b",
+          "text": "Convicção: Deus completa a obra"
+        },
+        {
+          "id": "c",
+          "text": "Oração pelo amor e fruto de justiça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Graças, obra e oração pelo amor.",
+      "feedbackWrong": {
+        "default": "Comece pelas graças."
+      },
+      "hint": "Pense no fluxo.",
+      "learningObjective": "Ordenar graças, obra e amor.",
+      "evidence": [
+        "Filipenses 1:3–11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Filipenses 1:10, complete: ___ que aprovem as coisas excelentes.",
+      "verseRef": "Filipenses 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para"
+        },
+        {
+          "id": "b",
+          "text": "Pela"
+        },
+        {
+          "id": "c",
+          "text": "Pois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Para que aprovem as coisas excelentes",
+      "feedbackCorrect": "Para que marca o propósito.",
+      "feedbackWrong": {
+        "b": "Pela é de 1:5.",
+        "c": "Pois aparece em 1:8."
+      },
+      "hint": "Veja a finalidade.",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": [
+        "Filipenses 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Filipenses 1:6 a 1 Tessalonicenses 5:24?",
+      "verseRef": "Filipenses 1:6",
+      "passageA": {
+        "ref": "Filipenses 1:6"
+      },
+      "passageB": {
+        "ref": "1 Tessalonicenses 5:24"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus completa o que começa"
+        },
+        {
+          "id": "b",
+          "text": "Só esforço humano"
+        },
+        {
+          "id": "c",
+          "text": "Fim da graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Ambos confiam na fidelidade de Deus.",
+      "feedbackWrong": {
+        "b": "Deus iniciou.",
+        "c": "Há graça compartilhada."
+      },
+      "hint": "Compare quem completa.",
+      "learningObjective": "Ligar a fidelidade de Deus.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Filipenses 1:6, a boa obra depende só do esforço humano até o Dia.",
+      "verseRef": "Filipenses 1:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "aquele que iniciou a boa obra em vocês a aperfeiçoará",
+      "feedbackCorrect": "Quem inicia e aperfeiçoa é Deus.",
+      "feedbackWrong": {
+        "true": "O sujeito é aquele que iniciou."
+      },
+      "hint": "Leia o sujeito do verbo.",
+      "learningObjective": "Avaliar a leitura da obra.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Filipenses 1:6, toque o trecho que sustenta quem completa a obra.",
+      "verseRef": "Filipenses 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "aperfeiçoará"
+        },
+        {
+          "id": "b",
+          "text": "convicto"
+        },
+        {
+          "id": "c",
+          "text": "vocês"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Aperfeiçoará sustenta a ação de Deus.",
+      "feedbackWrong": {
+        "b": "Convicto é Paulo.",
+        "c": "Vocês recebem a obra."
+      },
+      "hint": "Veja o verbo da conclusão.",
+      "learningObjective": "Tocar o trecho do aperfeiçoar.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Filipenses 1:3–11 sustenta melhor?",
+      "verseRef": "Filipenses 1:3–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus completa a obra; o amor cresce até o fruto"
+        },
+        {
+          "id": "b",
+          "text": "A obra já acabou no primeiro dia"
+        },
+        {
+          "id": "c",
+          "text": "Amor sem conhecimento basta"
+        },
+        {
+          "id": "d",
+          "text": "Graça exclui colaboração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Obra de Deus e amor que cresce.",
+      "feedbackWrong": {
+        "b": "Colaboração continua.",
+        "c": "Amor com conhecimento.",
+        "d": "Há colaboração e graça."
+      },
+      "hint": "Una obra e amor.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Filipenses 1:3–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até o fruto.",
+      "verseRef": "Filipenses 1:6–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus aperfeiçoa a boa obra"
+        },
+        {
+          "id": "b",
+          "text": "Amor cresce em conhecimento"
+        },
+        {
+          "id": "c",
+          "text": "Fruto de justiça para glória de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cheios do fruto de justiça",
+      "feedbackCorrect": "Obra, amor e fruto.",
+      "feedbackWrong": {
+        "default": "O fruto fecha."
+      },
+      "hint": "Siga até 1:11.",
+      "learningObjective": "Encadear obra, amor e fruto.",
+      "evidence": [
+        "Filipenses 1:6–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Filipenses 1:9, complete: que o ___ de vocês aumente mais e mais.",
+      "verseRef": "Filipenses 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "evangelho"
+        },
+        {
+          "id": "c",
+          "text": "algema"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que o amor de vocês aumente mais e mais",
+      "feedbackCorrect": "Amor é o que deve aumentar em conhecimento.",
+      "feedbackWrong": {
+        "b": "Evangelho é o campo da colaboração.",
+        "c": "Algemas aparecem em 1:7."
+      },
+      "hint": "Veja o sujeito do aumente.",
+      "learningObjective": "Lembrar o termo amor.",
+      "evidence": [
+        "Filipenses 1:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Filipenses 1:6 a Hebreus 12:2?",
+      "verseRef": "Filipenses 1:6",
+      "passageA": {
+        "ref": "Filipenses 1:6"
+      },
+      "passageB": {
+        "ref": "Hebreus 12:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus leva a obra ao fim"
+        },
+        {
+          "id": "b",
+          "text": "Só memória humana"
+        },
+        {
+          "id": "c",
+          "text": "Fim da oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a aperfeiçoará até o Dia de Cristo Jesus",
+      "feedbackCorrect": "Ambos apontam quem leva a fé ao fim.",
+      "feedbackWrong": {
+        "b": "Há oração contínua.",
+        "c": "Há memória com graças."
+      },
+      "hint": "Compare quem completa.",
+      "learningObjective": "Ligar o consumar da obra.",
+      "evidence": [
+        "Filipenses 1:6"
+      ]
+    }
+  ]
+}

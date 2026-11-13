@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 7:3–14",
+    "passages": [
+      {
+        "ref": "Juízes 7:3–14"
+      }
+    ],
+    "context": "O Senhor reduz o exército a trezentos. Gideão ouve o sonho do pão de cevada e se fortalece: a vitória é do Senhor.",
+    "keyword": "trezentos",
+    "keywordGloss": "Número que mostra que o livramento é do Senhor.",
+    "focusQuestion": "Onde você precisa confiar no Senhor sem depender do número?",
+    "reflectionPrompts": [
+      "Povo demais",
+      "Trezentos",
+      "Sonho do pão"
+    ],
+    "facts": [
+      {
+        "text": "Voltaram vinte e dois mil medrosos.",
+        "evidenceRef": "Juízes 7:3",
+        "evidenceSpan": "voltaram vinte e dois mil"
+      },
+      {
+        "text": "O Senhor diz que ainda há povo demais.",
+        "evidenceRef": "Juízes 7:4",
+        "evidenceSpan": "Ainda há povo demais"
+      },
+      {
+        "text": "Trezentos lamberam a água.",
+        "evidenceRef": "Juízes 7:6",
+        "evidenceSpan": "foi de trezentos homens"
+      },
+      {
+        "text": "Com os trezentos o Senhor livrará.",
+        "evidenceRef": "Juízes 7:7",
+        "evidenceSpan": "Com estes trezentos homens que lamberam a água, eu vos livrarei"
+      },
+      {
+        "text": "Um homem sonha com pão de cevada.",
+        "evidenceRef": "Juízes 7:13",
+        "evidenceSpan": "um pão de cevada rolava pelo acampamento"
+      },
+      {
+        "text": "O companheiro interpreta: espada de Gideão.",
+        "evidenceRef": "Juízes 7:14",
+        "evidenceSpan": "a espada de Gideão, filho de Joás"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "trezentos",
+        "gloss": "Remanescente com quem o Senhor livra."
+      },
+      {
+        "term": "provarei",
+        "gloss": "Teste nas águas para reduzir o povo."
+      },
+      {
+        "term": "sonho",
+        "gloss": "Sinal que fortalece as mãos de Gideão."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Medrosos voltam",
+        "evidenceRef": "Juízes 7:3"
+      },
+      {
+        "label": "Prova nas águas e trezentos",
+        "evidenceRef": "Juízes 7:4–8"
+      },
+      {
+        "label": "Sonho no acampamento",
+        "evidenceRef": "Juízes 7:9–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Irá; porém o outro não irá.",
+        "marker": "porém",
+        "evidenceRef": "Juízes 7:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Desça pois eu o entreguei.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 7:9"
+      },
+      {
+        "kind": "sequência",
+        "text": "Ouvirá; então as mãos se fortalecerão.",
+        "marker": "então",
+        "evidenceRef": "Juízes 7:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Zacarias 4:6",
+        "bridge": "Não por força"
+      },
+      {
+        "ref": "1 Samuel 14:6",
+        "bridge": "Senhor salva com poucos"
+      },
+      {
+        "ref": "2 Crônicas 14:11",
+        "bridge": "Nada para ti ajudar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A vitória depende do número.",
+        "why": "O Senhor reduz a trezentos."
+      },
+      {
+        "text": "O sonho é irrelevante.",
+        "why": "Fortalece Gideão para descer."
+      },
+      {
+        "text": "Todos permaneceram.",
+        "why": "Vinte e dois mil voltaram."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 7:7, com quantos o Senhor livrará?",
+    "centralInsight": "Com poucos, o Senhor mostra que a vitória é dele, não do número de Israel."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 7:7, o Senhor livrará com os trezentos que lamberam a água.",
+      "verseRef": "Juízes 7:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Com estes trezentos homens que lamberam a água, eu vos livrarei",
+      "feedbackCorrect": "Trezentos.",
+      "feedbackWrong": {
+        "false": "O texto fixa o número."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Observar os trezentos.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 7:6, toque o número dos que lamberam.",
+      "verseRef": "Juízes 7:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "trezentos"
+        },
+        {
+          "id": "b",
+          "text": "água"
+        },
+        {
+          "id": "c",
+          "text": "joelhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi de trezentos homens",
+      "feedbackCorrect": "Trezentos.",
+      "feedbackWrong": {
+        "b": "Água é o teste.",
+        "c": "Joelhos descrevem os outros."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Identificar trezentos.",
+      "evidence": [
+        "Juízes 7:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 7:4, o Senhor diz que:",
+      "verseRef": "Juízes 7:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ainda há povo demais"
+        },
+        {
+          "id": "b",
+          "text": "Falta povo"
+        },
+        {
+          "id": "c",
+          "text": "Sem prova nas águas"
+        },
+        {
+          "id": "d",
+          "text": "Só medrosos ficam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ainda há povo demais",
+      "feedbackCorrect": "Povo demais.",
+      "feedbackWrong": {
+        "b": "Não falta.",
+        "c": "Há prova.",
+        "d": "Medrosos já voltaram."
+      },
+      "hint": "Leia a avaliação.",
+      "learningObjective": "Reconhecer o excesso.",
+      "evidence": [
+        "Juízes 7:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 7:3 na ordem do texto.",
+      "verseRef": "Juízes 7:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem for tímido e medroso volte"
+        },
+        {
+          "id": "b",
+          "text": "do povo voltaram vinte e dois mil"
+        },
+        {
+          "id": "c",
+          "text": "e dez mil permaneceram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "voltaram vinte e dois mil, e dez mil permaneceram",
+      "feedbackCorrect": "Medrosos, volta e resto.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio."
+      },
+      "hint": "Quantos ficam?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 7:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 7:13, complete: um pão de ___ rolava pelo acampamento.",
+      "verseRef": "Juízes 7:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "cevada"
+        },
+        {
+          "id": "b",
+          "text": "trigo"
+        },
+        {
+          "id": "c",
+          "text": "ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um pão de cevada rolava pelo acampamento",
+      "feedbackCorrect": "Cevada.",
+      "feedbackWrong": {
+        "b": "Não é trigo.",
+        "c": "Não é ferro."
+      },
+      "hint": "Veja o tipo de pão.",
+      "learningObjective": "Lembrar cevada.",
+      "evidence": [
+        "Juízes 7:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 7:14 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 7:14",
+      "passageA": {
+        "ref": "Juízes 7:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O sonho confirma que Deus entrega Midiã a Gideão."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus entrega Midiã"
+        },
+        {
+          "id": "b",
+          "text": "Gideão perde"
+        },
+        {
+          "id": "c",
+          "text": "Sonho sem sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus entregou nas suas mãos os midianitas",
+      "feedbackCorrect": "Entrega divina.",
+      "feedbackWrong": {
+        "b": "Não perde.",
+        "c": "Há sentido."
+      },
+      "hint": "Quem entrega?",
+      "learningObjective": "Ligar sonho e vitória.",
+      "evidence": [
+        "Juízes 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 7:4, o Senhor diz que já há povo de menos para a batalha.",
+      "verseRef": "Juízes 7:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ainda há povo demais",
+      "feedbackCorrect": "Ainda há demais.",
+      "feedbackWrong": {
+        "true": "O texto diz demais."
+      },
+      "hint": "Leia a avaliação.",
+      "learningObjective": "Ver a redução.",
+      "evidence": [
+        "Juízes 7:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 7:4, toque o marcador de contraste.",
+      "verseRef": "Juízes 7:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "águas"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém aquele de quem eu disser",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Águas são o teste.",
+        "c": "Povo é o objeto."
+      },
+      "hint": "Procure a alternativa.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 7:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 7:9 faz?",
+      "verseRef": "Juízes 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Desça pois o Senhor entregou o acampamento"
+        },
+        {
+          "id": "b",
+          "text": "Fuja pois nada foi dado"
+        },
+        {
+          "id": "c",
+          "text": "Espere pois o sonho basta"
+        },
+        {
+          "id": "d",
+          "text": "Calem pois Pura manda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "desça até o acampamento, pois eu o entreguei nas suas mãos",
+      "feedbackCorrect": "Causa do descer.",
+      "feedbackWrong": {
+        "b": "Há entrega.",
+        "c": "Há ação.",
+        "d": "Pura acompanha."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 7:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da redução.",
+      "verseRef": "Juízes 7:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medrosos voltam"
+        },
+        {
+          "id": "b",
+          "text": "Prova nas águas e trezentos"
+        },
+        {
+          "id": "c",
+          "text": "Sonho no acampamento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "voltaram vinte e dois mil",
+      "feedbackCorrect": "Volta, prova e sonho.",
+      "feedbackWrong": {
+        "default": "Comece pelos medrosos."
+      },
+      "hint": "O que fecha o sonho?",
+      "learningObjective": "Ordenar a redução",
+      "evidence": [
+        "Juízes 7:3",
+        "Juízes 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 7:7, complete: eu vos ___ e entregarei os midianitas.",
+      "verseRef": "Juízes 7:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "livrarei"
+        },
+        {
+          "id": "b",
+          "text": "abandonarei"
+        },
+        {
+          "id": "c",
+          "text": "contarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos livrarei e entregarei os midianitas",
+      "feedbackCorrect": "Livrarei.",
+      "feedbackWrong": {
+        "b": "Não é abandonarei.",
+        "c": "Não é contarei."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar livrarei.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 7:7 a 1 Samuel 14:6?",
+      "verseRef": "Juízes 7:7",
+      "passageA": {
+        "ref": "Juízes 7:7"
+      },
+      "passageB": {
+        "ref": "1 Samuel 14:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor salva com poucos"
+        },
+        {
+          "id": "b",
+          "text": "Só multidão vence"
+        },
+        {
+          "id": "c",
+          "text": "Sem livramento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Com estes trezentos homens que lamberam a água, eu vos livrarei",
+      "feedbackCorrect": "Poucos bastam.",
+      "feedbackWrong": {
+        "b": "Não só multidão.",
+        "c": "Há livramento."
+      },
+      "hint": "Compare poucos.",
+      "learningObjective": "Ligar a Samuel.",
+      "evidence": [
+        "Juízes 7:7",
+        "1 Samuel 14:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 7:7, os trezentos mostram que a vitória depende do número de Israel.",
+      "verseRef": "Juízes 7:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Com estes trezentos homens que lamberam a água, eu vos livrarei",
+      "feedbackCorrect": "O Senhor livra com poucos.",
+      "feedbackWrong": {
+        "true": "Eu vos livrarei."
+      },
+      "hint": "Leia quem livra.",
+      "learningObjective": "Avaliar a glória.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 7:14, toque a interpretação do sonho.",
+      "verseRef": "Juízes 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "espada de Gideão"
+        },
+        {
+          "id": "b",
+          "text": "midianitas"
+        },
+        {
+          "id": "c",
+          "text": "arraial"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a espada de Gideão, filho de Joás",
+      "feedbackCorrect": "Espada de Gideão.",
+      "feedbackWrong": {
+        "b": "Midianitas são entregues.",
+        "c": "Arraial é o alvo."
+      },
+      "hint": "Veja a interpretação.",
+      "learningObjective": "Tocar a espada.",
+      "evidence": [
+        "Juízes 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une redução e livramento?",
+      "verseRef": "Juízes 7:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com poucos, o Senhor mostra que a vitória é dele"
+        },
+        {
+          "id": "b",
+          "text": "Mais gente garante glória a Israel"
+        },
+        {
+          "id": "c",
+          "text": "O sonho cancela a redução"
+        },
+        {
+          "id": "d",
+          "text": "Medrosos vencem sozinhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos livrarei",
+      "feedbackCorrect": "Vitória do Senhor.",
+      "feedbackWrong": {
+        "b": "Há redução.",
+        "c": "Há sonho.",
+        "d": "Medrosos voltam."
+      },
+      "hint": "Una trezentos e livrarei.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da confiança.",
+      "verseRef": "Juízes 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor reduz o exército"
+        },
+        {
+          "id": "b",
+          "text": "Gideão ouve o sonho"
+        },
+        {
+          "id": "c",
+          "text": "Interpretação fortalece as mãos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Deus entregou nas suas mãos os midianitas",
+      "feedbackCorrect": "Redução, sonho e força.",
+      "feedbackWrong": {
+        "default": "Comece pela redução."
+      },
+      "hint": "O que a interpretação confirma?",
+      "learningObjective": "Encadear a confiança",
+      "evidence": [
+        "Juízes 7:7",
+        "Juízes 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 7:4, complete: Ainda há povo ___.",
+      "verseRef": "Juízes 7:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "demais"
+        },
+        {
+          "id": "b",
+          "text": "ausente"
+        },
+        {
+          "id": "c",
+          "text": "único"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ainda há povo demais",
+      "feedbackCorrect": "Demais.",
+      "feedbackWrong": {
+        "b": "Não é ausente.",
+        "c": "Não é único."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar demais.",
+      "evidence": [
+        "Juízes 7:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 7:7 a Zacarias 4:6?",
+      "verseRef": "Juízes 7:7",
+      "passageA": {
+        "ref": "Juízes 7:7"
+      },
+      "passageB": {
+        "ref": "Zacarias 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não por força"
+        },
+        {
+          "id": "b",
+          "text": "Só por número"
+        },
+        {
+          "id": "c",
+          "text": "Sem o Espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos livrarei",
+      "feedbackCorrect": "Livramento divino.",
+      "feedbackWrong": {
+        "b": "Não só número.",
+        "c": "Há Senhor."
+      },
+      "hint": "Compare a origem.",
+      "learningObjective": "Ligar a Zacarias.",
+      "evidence": [
+        "Juízes 7:7",
+        "Zacarias 4:6"
+      ]
+    }
+  ]
+}

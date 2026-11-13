@@ -1,0 +1,502 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 18:1–9",
+    "passages": [
+      {
+        "ref": "Ezequiel 18:1–9"
+      }
+    ],
+    "context": "O povo cita o provérbio dos pais e das uvas verdes. Deus o cancela: cada alma é dEle; a que pecar morrerá, e o justo viverá.",
+    "keyword": "alma",
+    "keywordGloss": "A pessoa diante de Deus: cada uma responde por si, sem transferir a culpa do pai ao filho.",
+    "focusQuestion": "Você ainda culpa a geração passada pelo que só você pode decidir hoje?",
+    "reflectionPrompts": [
+      "Provérbio cancelado",
+      "Alma que pecar",
+      "Justo que vive"
+    ],
+    "facts": [
+      {
+        "text": "O povo usa o provérbio dos pais e das uvas verdes.",
+        "evidenceRef": "Ezequiel 18:2",
+        "evidenceSpan": "Os pais comeram uvas verdes, e os dentes dos filhos se embotaram"
+      },
+      {
+        "text": "Deus jura que nunca mais dirão esse provérbio em Israel.",
+        "evidenceRef": "Ezequiel 18:3",
+        "evidenceSpan": "nunca mais direis este provérbio em Israel"
+      },
+      {
+        "text": "Todas as almas pertencem ao Senhor; a que pecar morrerá.",
+        "evidenceRef": "Ezequiel 18:4",
+        "evidenceSpan": "a alma que pecar, essa morrerá"
+      },
+      {
+        "text": "O justo não oprime, dá pão ao faminto e cobre o nu.",
+        "evidenceRef": "Ezequiel 18:7",
+        "evidenceSpan": "dar o seu pão ao faminto e cobrir o nu com vestes"
+      },
+      {
+        "text": "Quem anda nos estatutos e procede retamente certamente viverá.",
+        "evidenceRef": "Ezequiel 18:9",
+        "evidenceSpan": "esse justo certamente viverá, diz o Senhor Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "alma",
+        "gloss": "A pessoa que pertence a Deus e responde pelo próprio pecado."
+      },
+      {
+        "term": "provérbio",
+        "gloss": "O ditado dos pais e filhos que Deus manda nunca mais dizer."
+      },
+      {
+        "term": "justo",
+        "gloss": "Quem exerce juízo e justiça e, segundo o texto, viverá."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O provérbio dos pais é confrontado",
+        "evidenceRef": "Ezequiel 18:1–3"
+      },
+      {
+        "label": "Cada alma pertence a Deus e responde",
+        "evidenceRef": "Ezequiel 18:4"
+      },
+      {
+        "label": "Retrato do homem justo",
+        "evidenceRef": "Ezequiel 18:5–8"
+      },
+      {
+        "label": "O justo certamente viverá",
+        "evidenceRef": "Ezequiel 18:9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Assim como a alma do pai, a alma do filho também é Minha.",
+        "marker": "assim como",
+        "evidenceRef": "Ezequiel 18:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "A alma que pecar, essa morrerá.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 18:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem procede retamente, esse justo certamente viverá.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 18:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 24:16",
+        "bridge": "Filho não morre pelo pai"
+      },
+      {
+        "ref": "Jeremias 31:29–30",
+        "bridge": "Cada um pela iniquidade"
+      },
+      {
+        "ref": "Romanos 14:12",
+        "bridge": "Cada um prestará contas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os filhos sempre pagam o pecado dos pais; o provérbio continua válido.",
+        "why": "Deus manda nunca mais dizer o provérbio; a alma que pecar, essa morrerá."
+      },
+      {
+        "text": "Basta ser filho de justo para viver, sem proceder retamente.",
+        "why": "O texto descreve o justo que exerce juízo e vive por suas ações."
+      },
+      {
+        "text": "A justiça aqui é só sentimento, sem obras concretas.",
+        "why": "Há lista concreta: não oprimir, dar pão, cobrir o nu, sem usura."
+      }
+    ],
+    "centralInsight": "A alma que pecar, essa morrerá; o filho não levará a iniquidade do pai.",
+    "anchorQuestion": "O que acontece com a alma que pecar, segundo Ezequiel 18:4?"
+  },
+  "questions": [
+    {
+      "question": "Em Ezequiel 18:3, o Senhor permite que Israel continue usando o provérbio das uvas verdes.",
+      "verseRef": "Ezequiel 18:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "nunca mais direis este provérbio em Israel",
+      "feedbackCorrect": "Ele jura que nunca mais dirão esse provérbio.",
+      "feedbackWrong": {
+        "true": "O versículo diz que nunca mais direis este provérbio."
+      },
+      "hint": "Veja o que Deus jura sobre o provérbio.",
+      "learningObjective": "Identificar o cancelamento do provérbio.",
+      "difficulty": "semente",
+      "type": "true_false",
+      "evidence": ["Ezequiel 18:3"]
+    },
+    {
+      "question": "Em Ezequiel 18:4, toque o que acontece à alma que pecar.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "essa morrerá" },
+        { "id": "b", "text": "alma do pai" },
+        { "id": "c", "text": "Me pertencem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "A alma que pecar, essa morrerá.",
+      "feedbackWrong": {
+        "b": "É comparação de posse, não o resultado do pecado.",
+        "c": "Afirma a posse de Deus, não o destino de quem peca."
+      },
+      "hint": "Leia o fim do versículo sobre quem peca.",
+      "learningObjective": "Identificar o destino da alma que peca.",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Segundo Ezequiel 18:9, o que acontece ao justo que procede retamente?",
+      "verseRef": "Ezequiel 18:9",
+      "options": [
+        { "id": "a", "text": "Esse justo certamente viverá" },
+        { "id": "b", "text": "Os filhos pagarão por ele" },
+        { "id": "c", "text": "Ele deve repetir o provérbio antigo" },
+        { "id": "d", "text": "Só o pai dele será julgado" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esse justo certamente viverá",
+      "feedbackCorrect": "O justo que procede retamente certamente viverá.",
+      "feedbackWrong": {
+        "b": "O capítulo afirma responsabilidade pessoal.",
+        "c": "O provérbio é cancelado.",
+        "d": "Cada alma responde por si."
+      },
+      "hint": "Leia a conclusão do retrato do justo.",
+      "learningObjective": "Reconhecer o destino do justo.",
+      "difficulty": "semente",
+      "type": "choice",
+      "evidence": ["Ezequiel 18:9"]
+    },
+    {
+      "question": "Monte Ezequiel 18:4 na ordem do texto.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "Eis que todas as almas Me pertencem" },
+        { "id": "b", "text": "assim como a alma do pai, a alma do filho também é Minha" },
+        { "id": "c", "text": "a alma que pecar, essa morrerá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Posse de todas as almas, igualdade pai-filho, e a que peca morre.",
+      "feedbackWrong": {
+        "default": "Comece pela posse; o pecar e morrer fecha."
+      },
+      "hint": "Siga posse, comparação e resultado.",
+      "learningObjective": "Reconhecer a ordem do versículo.",
+      "difficulty": "semente",
+      "type": "order",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Em Ezequiel 18:4, a alma que pecar, essa ___.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "morrerá" },
+        { "id": "b", "text": "herdará" },
+        { "id": "c", "text": "escapará" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "A palavra do destino é morrerá.",
+      "feedbackWrong": {
+        "b": "Não é herdará: é morrerá.",
+        "c": "Não é escapará: é morrerá."
+      },
+      "hint": "Veja o verbo no fim da frase.",
+      "learningObjective": "Lembrar o verbo do juízo pessoal.",
+      "difficulty": "semente",
+      "type": "complete",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "O que Ezequiel 18:4 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 18:4",
+      "passageA": { "ref": "Ezequiel 18:4" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cada alma responde por si; o provérbio dos pais é cancelado."
+      },
+      "options": [
+        { "id": "a", "text": "Responsabilidade pessoal" },
+        { "id": "b", "text": "Águia no Líbano" },
+        { "id": "c", "text": "Sarmento no fogo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "A alma que peca morre: núcleo da responsabilidade pessoal.",
+      "feedbackWrong": {
+        "b": "É de outra cena.",
+        "c": "É de outra cena."
+      },
+      "hint": "Una o versículo ao cancelamento do provérbio.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "difficulty": "semente",
+      "type": "connect",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Em Ezequiel 18:4, a alma do filho não pertence a Deus; só a do pai é dEle.",
+      "verseRef": "Ezequiel 18:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "assim como a alma do pai, a alma do filho também é Minha",
+      "feedbackCorrect": "Pai e filho: ambas as almas são dEle.",
+      "feedbackWrong": {
+        "true": "O texto iguala a alma do pai e a do filho como Minha."
+      },
+      "hint": "Leia a comparação entre pai e filho.",
+      "learningObjective": "Compreender a posse igual das almas.",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Em Ezequiel 18:4, toque as palavras que marcam a comparação.",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "assim como" },
+        { "id": "b", "text": "essa morrerá" },
+        { "id": "c", "text": "todas as almas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim como a alma do pai, a alma do filho também é Minha",
+      "feedbackCorrect": "\"Assim como\" marca a comparação entre pai e filho.",
+      "feedbackWrong": {
+        "b": "É o resultado do pecar, não o marcador da comparação.",
+        "c": "Abre a posse geral; a comparação vem depois."
+      },
+      "hint": "Procure a expressão que compara pai e filho.",
+      "learningObjective": "Tocar o marcador de comparação.",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Como Ezequiel 18:2 se liga a 18:4?",
+      "verseRef": "Ezequiel 18:2",
+      "options": [
+        { "id": "a", "text": "O provérbio dos pais é substituído pela responsabilidade pessoal" },
+        { "id": "b", "text": "Os filhos sempre pagam o que os pais comeram" },
+        { "id": "c", "text": "O provérbio continua como regra de juízo" },
+        { "id": "d", "text": "Só o pai responde; o filho fica isento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os pais comeram uvas verdes",
+      "feedbackCorrect": "O ditado é cancelado; cada alma responde por si.",
+      "feedbackWrong": {
+        "b": "É exatamente o que Deus rejeita.",
+        "c": "Ele manda nunca mais dizê-lo.",
+        "d": "Pai e filho: cada alma é julgada."
+      },
+      "hint": "Una o ditado ao destino da alma que peca.",
+      "learningObjective": "Relacionar provérbio e responsabilidade.",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "evidence": ["Ezequiel 18:2"]
+    },
+    {
+      "question": "Como a cena avança em Ezequiel 18?",
+      "verseRef": "Ezequiel 18:2–9",
+      "options": [
+        { "id": "a", "text": "O provérbio dos pais é confrontado" },
+        { "id": "b", "text": "Cada alma pertence a Deus e responde" },
+        { "id": "c", "text": "O justo certamente viverá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esse justo certamente viverá",
+      "feedbackCorrect": "Provérbio, responsabilidade e vida do justo.",
+      "feedbackWrong": {
+        "default": "Comece no provérbio; feche na vida do justo."
+      },
+      "hint": "Pense em ditado, alma e justo.",
+      "learningObjective": "Ordenar os movimentos da cena.",
+      "difficulty": "caminhada",
+      "type": "order",
+      "evidence": ["Ezequiel 18:2", "Ezequiel 18:3", "Ezequiel 18:4", "Ezequiel 18:5", "Ezequiel 18:6", "Ezequiel 18:7", "Ezequiel 18:8", "Ezequiel 18:9"]
+    },
+    {
+      "question": "Em Ezequiel 18:3, nunca mais direis este ___ em Israel.",
+      "verseRef": "Ezequiel 18:3",
+      "options": [
+        { "id": "a", "text": "provérbio" },
+        { "id": "b", "text": "estatuto" },
+        { "id": "c", "text": "júbilo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca mais direis este provérbio em Israel",
+      "feedbackCorrect": "O que é cancelado é o provérbio.",
+      "feedbackWrong": {
+        "b": "Não é estatuto: é provérbio.",
+        "c": "Não é júbilo: é provérbio."
+      },
+      "hint": "Veja o substantivo depois de este.",
+      "learningObjective": "Lembrar o objeto cancelado.",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "evidence": ["Ezequiel 18:3"]
+    },
+    {
+      "question": "O que liga Ezequiel 18:4 a Deuteronômio 24:16?",
+      "verseRef": "Ezequiel 18:4",
+      "passageA": { "ref": "Ezequiel 18:4" },
+      "passageB": { "ref": "Deuteronômio 24:16" },
+      "options": [
+        { "id": "a", "text": "Filho não morre pelo pai" },
+        { "id": "b", "text": "Águia leva o cedro" },
+        { "id": "c", "text": "Manto cobre a nudez" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Os dois afirmam juízo pessoal, não transferência ao filho.",
+      "feedbackWrong": {
+        "b": "É de outra cena.",
+        "c": "É de outra cena."
+      },
+      "hint": "Compare quem morre por quem.",
+      "learningObjective": "Relacionar juízo pessoal à lei.",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Em Ezequiel 18:5–9, a justiça que Deus descreve inclui dar pão ao faminto e cobrir o nu.",
+      "verseRef": "Ezequiel 18:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "dar o seu pão ao faminto e cobrir o nu com vestes",
+      "feedbackCorrect": "O retrato do justo inclui pão ao faminto e vestes ao nu.",
+      "feedbackWrong": {
+        "false": "O versículo lista dar pão ao faminto e cobrir o nu."
+      },
+      "hint": "Leia as ações concretas do justo.",
+      "learningObjective": "Sustentar a leitura de justiça concreta.",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "evidence": ["Ezequiel 18:7"]
+    },
+    {
+      "question": "Em Ezequiel 18:9, toque o trecho que sustenta o destino do justo.",
+      "verseRef": "Ezequiel 18:9",
+      "options": [
+        { "id": "a", "text": "certamente viverá" },
+        { "id": "b", "text": "meus estatutos" },
+        { "id": "c", "text": "Senhor Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esse justo certamente viverá",
+      "feedbackCorrect": "O destino anunciado é certamente viverá.",
+      "feedbackWrong": {
+        "b": "É o caminho do justo, não o destino em si.",
+        "c": "É quem fala; o destino é viverá."
+      },
+      "hint": "Procure o fim do anúncio sobre o justo.",
+      "learningObjective": "Tocar o trecho da vida do justo.",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "evidence": ["Ezequiel 18:9"]
+    },
+    {
+      "question": "Qual leitura de Ezequiel 18 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 18:4",
+      "options": [
+        { "id": "a", "text": "Cada um responde por si; o justo vive e quem peca morre" },
+        { "id": "b", "text": "Os filhos sempre carregam a iniquidade dos pais" },
+        { "id": "c", "text": "Basta ser filho de justo, sem proceder retamente" },
+        { "id": "d", "text": "A justiça é só sentimento, sem obras concretas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Responsabilidade pessoal e destino conforme o caminho.",
+      "feedbackWrong": {
+        "b": "O provérbio é cancelado.",
+        "c": "O justo é descrito por ações concretas.",
+        "d": "Há lista de obras no retrato do justo."
+      },
+      "hint": "Una o cancelamento do ditado ao destino da alma.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "evidence": ["Ezequiel 18:4"]
+    },
+    {
+      "question": "Ordene a lógica da cena.",
+      "verseRef": "Ezequiel 18:2–9",
+      "options": [
+        { "id": "a", "text": "Provérbio dos pais confrontado" },
+        { "id": "b", "text": "Alma que peca morre; cada um responde" },
+        { "id": "c", "text": "Retrato do justo que viverá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esse justo certamente viverá",
+      "feedbackCorrect": "Ditados rejeitados, juízo pessoal e vida do justo.",
+      "feedbackWrong": {
+        "default": "Comece no provérbio; feche no justo que vive."
+      },
+      "hint": "Pense em ditado, alma e justo.",
+      "learningObjective": "Encadear a lógica da responsabilidade.",
+      "difficulty": "profundezas",
+      "type": "order",
+      "evidence": ["Ezequiel 18:2", "Ezequiel 18:3", "Ezequiel 18:4", "Ezequiel 18:5", "Ezequiel 18:6", "Ezequiel 18:7", "Ezequiel 18:8", "Ezequiel 18:9"]
+    },
+    {
+      "question": "Em Ezequiel 18:5, se o homem é ___ e exerce o juízo e a justiça.",
+      "verseRef": "Ezequiel 18:5",
+      "options": [
+        { "id": "a", "text": "justo" },
+        { "id": "b", "text": "rebelde" },
+        { "id": "c", "text": "estranho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se o homem é justo e exerce o juízo e a justiça",
+      "feedbackCorrect": "O termo que abre o retrato é justo.",
+      "feedbackWrong": {
+        "b": "Não é rebelde: é justo.",
+        "c": "Não é estranho: é justo."
+      },
+      "hint": "Veja o adjetivo depois de o homem é.",
+      "learningObjective": "Lembrar o termo do homem que vive.",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "evidence": ["Ezequiel 18:5"]
+    },
+    {
+      "question": "O que liga Ezequiel 18:4 a Jeremias 31:29–30?",
+      "verseRef": "Ezequiel 18:4",
+      "passageA": { "ref": "Ezequiel 18:4" },
+      "passageB": { "ref": "Jeremias 31:29–30" },
+      "options": [
+        { "id": "a", "text": "Cada um pela iniquidade" },
+        { "id": "b", "text": "Videira ao fogo" },
+        { "id": "c", "text": "Imagem da inveja" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a alma que pecar, essa morrerá",
+      "feedbackCorrect": "Os dois rejeitam o ditado e afirmam responsabilidade pessoal.",
+      "feedbackWrong": {
+        "b": "Não é o elo.",
+        "c": "É de outra cena."
+      },
+      "hint": "Compare o fim do provérbio das uvas.",
+      "learningObjective": "Ligar Ezequiel a Jeremias no mesmo tema.",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "evidence": ["Ezequiel 18:4"]
+    }
+  ]
+}

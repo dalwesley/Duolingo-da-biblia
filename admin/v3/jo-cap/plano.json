@@ -1,0 +1,355 @@
+{
+  "slug": "jo-cap",
+  "prefix": "jbc",
+  "book": "Jó",
+  "chapters": 42,
+  "title": "Jó",
+  "description": "Jó capítulo a capítulo: sofrimento, diálogo e o Deus que responde.",
+  "icon": "🌪️",
+  "color": "#6C7A89",
+  "order": 20,
+  "realm": "antigo-testamento",
+  "category": "poeticos",
+  "avoidTrails": [
+    "jo"
+  ],
+  "modules": [
+    {
+      "title": "A prova · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "Jó 2:1–10",
+          "title": "A segunda prova",
+          "intro": "No céu, outra conversa. Na terra, a mulher de Jó fala, e ele responde do meio da dor.",
+          "insight": "Mesmo doente e sozinho, Jó não peca com os lábios: o bem e o mal vêm da mão de Deus.",
+          "objective": "Fidelidade na dor",
+          "chapters": "1–2"
+        },
+        {
+          "ref": "Jó 3:3–12",
+          "title": "Amaldiçoa o dia",
+          "intro": "Depois de sete dias em silêncio, Jó abre a boca e deseja que o dia do seu nascimento se apague.",
+          "insight": "A fé de Jó não esconde o lamento: ele leva a dor até Deus com palavras duras.",
+          "objective": "Lamento sem máscara"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: A prova",
+        "intro": "Revise a segunda prova e o lamento de Jó.",
+        "insight": "A fé verdadeira também geme e pergunta"
+      }
+    },
+    {
+      "title": "Primeiro ciclo · cap. 4–14",
+      "scenes": [
+        {
+          "ref": "Jó 4:7–17",
+          "title": "Elifaz acusa",
+          "intro": "Elifaz lembra que o inocente não perece e conta uma visão noturna que o assustou.",
+          "insight": "Os amigos começam com uma teologia rígida: se há sofrimento, deve haver culpa.",
+          "objective": "Cuidado com acusações fáceis"
+        },
+        {
+          "ref": "Jó 5:17–27",
+          "title": "Feliz o corrigido",
+          "intro": "Elifaz fala da correção de Deus e promete restauração a quem aceitar a disciplina.",
+          "insight": "Nem toda dor é castigo simples, mas Deus pode usar a ferida para curar.",
+          "objective": "Deus também corrige"
+        },
+        {
+          "ref": "Jó 6:8–14",
+          "title": "Que Deus me esmague",
+          "intro": "Jó pede que Deus acabe com ele e lamenta amigos que falham como riacho seco.",
+          "insight": "Quem sofre precisa de lealdade, não de discursos que pesam mais que a dor.",
+          "objective": "Amizade na aflição"
+        },
+        {
+          "ref": "Jó 7:11–21",
+          "title": "Por que me tomas por alvo",
+          "intro": "Jó fala da vida curta e pergunta a Deus por que o vigia como se fosse o mar.",
+          "insight": "Jó leva a Deus a pergunta que dói: por que o olhar divino parece contra mim?",
+          "objective": "Orar a pergunta"
+        },
+        {
+          "ref": "Jó 8:5–13",
+          "title": "Bildade e a tradição",
+          "intro": "Bildade manda Jó buscar a Deus e cita o que os antigos diziam sobre os ímpios.",
+          "insight": "A tradição sem compaixão vira arma: nem todo caminho dos pais enxerga a dor de agora.",
+          "objective": "Tradição com cuidado"
+        },
+        {
+          "ref": "Jó 9:1–12",
+          "title": "Como ser justo",
+          "intro": "Jó admite: quem discutirá com Deus? Ele move montes e passa, e ninguém o detém.",
+          "insight": "Diante do Santo, Jó sabe que não há tribunal humano capaz de empatar com Deus.",
+          "objective": "Deus não é réu"
+        },
+        {
+          "ref": "Jó 10:8–17",
+          "title": "Tuas mãos me fizeram",
+          "intro": "Jó lembra que Deus o formou como quem molda barro — e agora parece destruí-lo.",
+          "insight": "A mesma mão que cria é a que Jó não entende na dor; a fé segura o paradoxo.",
+          "objective": "Criado e ferido"
+        },
+        {
+          "ref": "Jó 11:7–20",
+          "title": "Zofar e o mistério",
+          "intro": "Zofar pergunta se Jó alcançará as profundezas de Deus e promete esperança ao justo.",
+          "insight": "Os amigos acertam que Deus é maior — e erram ao usar isso para silenciar a dor.",
+          "objective": "Deus além da nossa medida"
+        },
+        {
+          "ref": "Jó 12:7–16",
+          "title": "Pergunta aos animais",
+          "intro": "Jó manda os amigos aprenderem com a criação: nas mãos de Deus estão vida e fôlego.",
+          "insight": "A sabedoria de Jó vê o governo de Deus em tudo — também no que os sábios não explicam.",
+          "objective": "Deus governa tudo"
+        },
+        {
+          "ref": "Jó 13:13–22",
+          "title": "Ainda que me mate",
+          "intro": "Jó pede silêncio aos amigos e diz que, mesmo que Deus o mate, nele esperará.",
+          "insight": "A confiança de Jó não depende de entender: ele quer falar com Deus face a face.",
+          "objective": "Esperar em Deus"
+        },
+        {
+          "ref": "Jó 14:1–12",
+          "title": "O homem nasce para o sofrimento",
+          "intro": "Jó compara a vida humana à flor que murcha e pergunta se os mortos tornarão a viver.",
+          "insight": "No chão da mortalidade, Jó ainda ergue a pergunta da esperança além da sepultura.",
+          "objective": "Vida breve, pergunta eterna"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Primeiro ciclo",
+        "intro": "Revise as falas de Elifaz, Bildade, Zofar e as respostas de Jó até o capítulo 14.",
+        "insight": "Acusar é fácil; acompanhar a dor e buscar a Deus é outra coisa"
+      }
+    },
+    {
+      "title": "Segundo ciclo · cap. 15–21",
+      "scenes": [
+        {
+          "ref": "Jó 15:14–25",
+          "title": "Elifaz aperta o cerco",
+          "intro": "No segundo round, Elifaz insiste: o homem é impuro, e o ímpio vive em pavor.",
+          "insight": "Quando a teologia vira ataque, o sofredor fica sem espaço para respirar.",
+          "objective": "Teologia sem misericórdia"
+        },
+        {
+          "ref": "Jó 16:18–22",
+          "title": "Testemunha no céu",
+          "intro": "Jó pede que a terra não cubra seu sangue e diz que tem testemunha junto a Deus.",
+          "insight": "No meio da acusação, Jó ergue os olhos: alguém no céu fala por ele.",
+          "objective": "Há quem defenda no céu"
+        },
+        {
+          "ref": "Jó 17:1–9",
+          "title": "O justo segue firme",
+          "intro": "Jó sente o espírito quebrantado, mas afirma que o justo se firmará no seu caminho.",
+          "insight": "A dor não apaga a distinção: o reto ainda segura o caminho, mesmo humilhado.",
+          "objective": "Firmeza do justo"
+        },
+        {
+          "ref": "Jó 18:5–14",
+          "title": "Bildade e a lâmpada",
+          "intro": "Bildade descreve a lâmpada do ímpio que se apaga e o terror que o cerca.",
+          "insight": "Os amigos pintam o fim dos maus como se Jó fosse o retrato — e erram o alvo.",
+          "objective": "Não julgar pelo fim"
+        },
+        {
+          "ref": "Jó 19:23–29",
+          "title": "Meu Redentor vive",
+          "intro": "Jó deseja palavras gravadas e confessa: sei que o meu Redentor vive e por fim se levantará.",
+          "insight": "No fundo do poço, a fé de Jó vê além da pele: ele verá a Deus.",
+          "objective": "Esperança do Redentor"
+        },
+        {
+          "ref": "Jó 20:4–14",
+          "title": "Zofar e o ímpio",
+          "intro": "Zofar lembra que a alegria do ímpio é breve e o veneno vira comida doce na boca.",
+          "insight": "A justiça de Deus é real — mas aplicá-la cegamente a Jó é violência.",
+          "objective": "Justiça sem pressa"
+        },
+        {
+          "ref": "Jó 21:7–16",
+          "title": "Por que prosperam",
+          "intro": "Jó aponta o que os amigos omitem: há ímpios que envelhecem em paz e poder.",
+          "insight": "A realidade quebra o esquema fácil: prosperidade não prova inocência, nem dor prova culpa.",
+          "objective": "Esquema que não fecha"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Segundo ciclo",
+        "intro": "Revise o segundo ciclo até a confissão do Redentor e a pergunta sobre os ímpios.",
+        "insight": "A fé atravessa a acusação e ainda confessa: meu Redentor vive"
+      }
+    },
+    {
+      "title": "Terceiro ciclo e sabedoria · cap. 22–28",
+      "scenes": [
+        {
+          "ref": "Jó 22:21–30",
+          "title": "Elifaz: reconcilia-te",
+          "intro": "Elifaz manda Jó reconciliar-se com Deus, guardar as palavras e devolver o ouro.",
+          "insight": "O conselho certo na boca errada ainda fere: reconciliação não se impõe com acusação.",
+          "objective": "Conselho e tom"
+        },
+        {
+          "ref": "Jó 23:8–17",
+          "title": "Se eu soubesse onde",
+          "intro": "Jó busca a Deus à frente e atrás, e diz que, quando for provado, sairá como ouro.",
+          "insight": "Mesmo sem achar o caminho de Deus, Jó confia no propósito que o prova.",
+          "objective": "Provado como ouro"
+        },
+        {
+          "ref": "Jó 24:1–12",
+          "title": "Os oprimidos gritam",
+          "intro": "Jó descreve os que roubam o pobre e pergunta por que Deus não marca os tempos do juízo.",
+          "insight": "A injustiça do mundo também entra na oração de Jó: ele não fecha os olhos.",
+          "objective": "Grito dos oprimidos"
+        },
+        {
+          "ref": "Jó 26:5–14",
+          "title": "Beira dos caminhos de Deus",
+          "intro": "Após a fala curta de Bildade, Jó canta o poder de Deus sobre o abismo e as nuvens.",
+          "insight": "Mesmo o trovão das obras de Deus é só a beira dos seus caminhos.",
+          "objective": "Poder que não se esgota",
+          "chapters": "25–26"
+        },
+        {
+          "ref": "Jó 27:1–12",
+          "title": "Não nego a minha integridade",
+          "intro": "Jó jura pela vida de Deus que não soltará a sua inocência enquanto viver.",
+          "insight": "A integridade de Jó não é orgulho vazio: é recusa de confessar um crime que não cometeu.",
+          "objective": "Segurar a integridade"
+        },
+        {
+          "ref": "Jó 28:20–28",
+          "title": "Onde acha a sabedoria",
+          "intro": "O poema pergunta de onde vem a sabedoria — e Deus responde ao homem: o temor do Senhor.",
+          "insight": "A sabedoria não se compra: Deus a vê, e ao homem diz que o princípio é temê-lo.",
+          "objective": "Temor do Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Terceiro ciclo e sabedoria",
+        "intro": "Revise a busca de Jó, o grito dos oprimidos, o poder de Deus e o hino da sabedoria.",
+        "insight": "A sabedoria começa no temor — não na acusação dos amigos"
+      }
+    },
+    {
+      "title": "Defesa de Jó e Eliú · cap. 29–37",
+      "scenes": [
+        {
+          "ref": "Jó 29:1–12",
+          "title": "Como eram os dias",
+          "intro": "Jó lembra os dias em que a lâmpada de Deus brilhava sobre a sua cabeça.",
+          "insight": "A saudade do tempo da bênção torna a noite atual ainda mais escura.",
+          "objective": "Lembrar a bênção"
+        },
+        {
+          "ref": "Jó 30:16–26",
+          "title": "Agora zombam de mim",
+          "intro": "Jó descreve a agonia presente: Deus o lançou na lama, e o bem que esperava não veio.",
+          "insight": "A honestidade de Jó inclui dizer a Deus: eu esperei o bem, e veio o mal.",
+          "objective": "Dor sem verniz"
+        },
+        {
+          "ref": "Jó 31:1–12",
+          "title": "Pacto com os olhos",
+          "intro": "Jó faz o juramento de inocência: pacto com os olhos, justiça ao servo, cuidado ao pobre.",
+          "insight": "Antes de Deus falar, Jó coloca a vida no altar: integridade se mede no cotidiano.",
+          "objective": "Integridade prática"
+        },
+        {
+          "ref": "Jó 32:6–14",
+          "title": "Eliú se aquece",
+          "intro": "O jovem Eliú se ira contra Jó e contra os três: a idade não garante sabedoria.",
+          "insight": "Uma voz nova entra: Deus pode ensinar, e os discursos dos amigos falharam.",
+          "objective": "Sabedoria não é idade"
+        },
+        {
+          "ref": "Jó 33:14–26",
+          "title": "Deus fala de modos",
+          "intro": "Eliú diz que Deus fala em sonhos e pela dor, para desviar o homem da cova.",
+          "insight": "A dor pode ser aviso de misericórdia — não só sentença de culpa.",
+          "objective": "Deus alerta pela dor"
+        },
+        {
+          "ref": "Jó 34:10–19",
+          "title": "Deus não perverte o juízo",
+          "intro": "Eliú defende que o Todo-Poderoso não faz injustiça e trata príncipe e pobre iguais.",
+          "insight": "O caráter de Deus é justo: ele não favorece rostos, ainda que o caso de Jó seja mistério.",
+          "objective": "Deus justo"
+        },
+        {
+          "ref": "Jó 35:5–14",
+          "title": "Olha para os céus",
+          "intro": "Eliú manda olhar os céus: o pecado de Jó não o atinge, nem a justiça o beneficia.",
+          "insight": "Deus não é refém do nosso bem ou mal — e mesmo assim ouve o aflito.",
+          "objective": "Deus acima de nós"
+        },
+        {
+          "ref": "Jó 36:5–16",
+          "title": "Deus é poderoso",
+          "intro": "Eliú fala do Deus que não despreza o justo e usa a aflição para abrir o ouvido.",
+          "insight": "A disciplina pode abrir o ouvido que a prosperidade fechou.",
+          "objective": "Ouvido aberto na aflição"
+        },
+        {
+          "ref": "Jó 37:14–24",
+          "title": "Para e considera",
+          "intro": "Eliú convida Jó a parar e considerar as maravilhas de Deus no trovão e no frio.",
+          "insight": "Antes da teofania, o convite é silêncio reverente diante do que não controlamos.",
+          "objective": "Parar e considerar"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Defesa de Jó e Eliú",
+        "intro": "Revise a memória de Jó, o juramento, e as falas de Eliú até o convite a considerar.",
+        "insight": "Antes de Deus falar, a criação já convida ao silêncio"
+      }
+    },
+    {
+      "title": "Deus responde · cap. 38–42",
+      "scenes": [
+        {
+          "ref": "Jó 39:19–30",
+          "title": "O cavalo e a águia",
+          "intro": "Deus aponta o cavalo de guerra e a águia no alto: quem deu essa força e esse olhar?",
+          "insight": "A criação humilha a pretensão de julgar os caminhos de Deus.",
+          "objective": "Criação que questiona",
+          "chapters": "38–39"
+        },
+        {
+          "ref": "Jó 40:1–14",
+          "title": "Cinge os lombos",
+          "intro": "Deus pergunta se o censor quer anular o juízo divino, e Jó põe a mão na boca.",
+          "insight": "Quem acusa a Deus precisa do mesmo poder — e Jó reconhece o limite.",
+          "objective": "Mão na boca"
+        },
+        {
+          "ref": "Jó 41:1–11",
+          "title": "O Leviatã",
+          "intro": "Deus descreve a criatura que ninguém doma e pergunta quem tem crédito contra ele.",
+          "insight": "Se não dominamos a criação, como chamar Deus a depor no nosso tribunal?",
+          "objective": "Quem domará a Deus"
+        },
+        {
+          "ref": "Jó 42:7–17",
+          "title": "Restauração e intercessão",
+          "intro": "Deus repreende os amigos, aceita a oração de Jó por eles e restaura a fortuna em dobro.",
+          "insight": "O fim não explica toda a dor — mas mostra um Deus que restaura e ensina a interceder.",
+          "objective": "Restauração e perdão",
+          "chapters": "42"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Deus responde",
+        "intro": "Revise a criação, o Leviatã, o silêncio de Jó e a restauração.",
+        "insight": "Deus não deve explicações — e ainda assim restaura e ensina"
+      }
+    }
+  ]
+}

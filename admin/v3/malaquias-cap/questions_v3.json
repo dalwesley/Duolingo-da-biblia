@@ -1,0 +1,4091 @@
+[
+  {
+    "id": "malaquias-cap-sem-mlc-01-ofertas-desprezadas-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Malaquias 1:6, o Senhor diz aos sacerdotes que eles desprezam o seu nome.",
+    "prompt": "Em Malaquias 1:6, o Senhor diz aos sacerdotes que eles desprezam o seu nome.",
+    "cue": "Em Malaquias 1:6, o Senhor diz aos sacerdotes que eles desprezam o seu nome.",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ó sacerdotes que desprezam o meu nome",
+    "feedbackCorrect": "O Senhor fala direto aos sacerdotes: eles desprezam o seu nome.",
+    "feedbackWrong": {
+      "false": "Releia o fim da pergunta: o Senhor chama sacerdotes que desprezam o seu nome."
+    },
+    "hint": "Veja a quem o Senhor dos Exércitos se dirige.",
+    "learningObjective": "Observar a acusação contra os sacerdotes.",
+    "evidence": [
+      "Malaquias 1:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-01-ofertas-desprezadas-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Malaquias 1:6, toque a quem o Senhor diz que desprezam o seu nome.",
+    "prompt": "Em Malaquias 1:6, toque a quem o Senhor diz que desprezam o seu nome.",
+    "cue": "Em Malaquias 1:6, toque a quem o Senhor diz que desprezam o seu nome.",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "filho"
+      },
+      {
+        "id": "b",
+        "text": "servo"
+      },
+      {
+        "id": "c",
+        "text": "sacerdotes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ó sacerdotes que desprezam o meu nome",
+    "feedbackCorrect": "A acusação cai sobre os sacerdotes, não sobre um filho ou um servo genérico.",
+    "feedbackWrong": {
+      "a": "\"Filho\" entra na comparação; quem é acusado são os sacerdotes.",
+      "b": "\"Servo\" ilustra o respeito devido; os acusados são os sacerdotes."
+    },
+    "hint": "Procure o vocativo depois de \"diz o Senhor\".",
+    "learningObjective": "Identificar os destinatários da acusação.",
+    "evidence": [
+      "Malaquias 1:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-01-ofertas-desprezadas-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Malaquias 1:8, que tipo de animal o povo traz para sacrificar?",
+    "prompt": "Segundo Malaquias 1:8, que tipo de animal o povo traz para sacrificar?",
+    "cue": "Segundo Malaquias 1:8, que tipo de animal o povo traz para sacrificar?",
+    "verseRef": "Malaquias 1:8",
+    "passageText": "Pois quando vocês trazem um animal cego para sacrificar, isso não é mau? E quando oferecem o coxo ou o enfermo, não é isso mau? Apresente-o ao seu governador; acaso ele se agradará de você e aceitará a sua oferta? — diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Animais comprados do governador"
+      },
+      {
+        "id": "b",
+        "text": "Somente cordeiros primogênitos"
+      },
+      {
+        "id": "c",
+        "text": "Um animal cego, coxo ou enfermo"
+      },
+      {
+        "id": "d",
+        "text": "O melhor do rebanho, sem defeito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "trazem um animal cego para sacrificar",
+    "feedbackCorrect": "O texto lista cego, coxo e enfermo: ofertas ruins no altar.",
+    "feedbackWrong": {
+      "a": "O governador aparece como quem não aceitaria tal oferta.",
+      "b": "Não há menção a primogênitos neste versículo.",
+      "d": "O texto denuncia o contrário: trazem o defeituoso."
+    },
+    "hint": "Leia os animais citados na pergunta do Senhor.",
+    "learningObjective": "Observar a qualidade das ofertas trazidas.",
+    "evidence": [
+      "Malaquias 1:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-01-ofertas-desprezadas-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Malaquias 1:10 na ordem do texto.",
+    "prompt": "Monte Malaquias 1:10 na ordem do texto.",
+    "cue": "Monte Malaquias 1:10 na ordem do texto.",
+    "verseRef": "Malaquias 1:10",
+    "passageText": "Quem entre vocês também fecharia as portas em vão? E não acendem o fogo do meu altar inutilmente. Eu não tenho prazer em vocês, diz o Senhor dos Exércitos, nem aceitarei da sua mão a oferta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem entre vocês também fecharia as portas em vão?"
+      },
+      {
+        "id": "b",
+        "text": "E não acendem o fogo do meu altar inutilmente"
+      },
+      {
+        "id": "c",
+        "text": "Eu não tenho prazer em vocês"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Eu não tenho prazer em vocês",
+    "feedbackCorrect": "Primeiro as portas, depois o fogo inútil, e então a rejeição do Senhor.",
+    "feedbackWrong": {
+      "default": "Comece pela pergunta sobre as portas; o prazer do Senhor vem no fim."
+    },
+    "hint": "O versículo começa com uma pergunta.",
+    "learningObjective": "Reconhecer a sequência de Malaquias 1:10.",
+    "evidence": [
+      "Malaquias 1:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-01-ofertas-desprezadas-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Malaquias 1:7, como o povo chama a mesa do Senhor?",
+    "prompt": "Em Malaquias 1:7, como o povo chama a mesa do Senhor?",
+    "cue": "Em Malaquias 1:7, como o povo chama a mesa do Senhor?",
+    "verseRef": "Malaquias 1:7",
+    "passageText": "Ofereceis sobre o meu altar pão imundo e perguntais: \"Em que te havemos profanado?\" Na afirmação de que a mesa do SENHOR é desprezível.",
+    "template": "Ofereceis sobre o meu altar pão imundo e perguntais: \"Em que te havemos profanado?\" Na afirmação de que a mesa do SENHOR é ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "desprezível"
+      },
+      {
+        "id": "b",
+        "text": "eterna"
+      },
+      {
+        "id": "c",
+        "text": "santa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a mesa do SENHOR é desprezível",
+    "feedbackCorrect": "Eles afirmam que a mesa do Senhor é desprezível: aí está o desprezo do nome.",
+    "feedbackWrong": {
+      "b": "Não há \"eterna\" neste versículo; a palavra é desprezível.",
+      "c": "O texto não chama a mesa de santa; chama de desprezível."
+    },
+    "hint": "Veja a afirmação com que o Senhor responde à pergunta deles.",
+    "learningObjective": "Lembrar como o povo trata a mesa do Senhor.",
+    "evidence": [
+      "Malaquias 1:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-01-ofertas-desprezadas-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Malaquias 1:6 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:6 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:6 comunica que se liga a este contexto?",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "passageA": {
+      "ref": "Malaquias 1:6",
+      "text": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\""
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Senhor exige dos sacerdotes a honra devida a um pai e a um senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Honra devida ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Liberdade para qualquer oferta"
+      },
+      {
+        "id": "c",
+        "text": "Culto sem relação com Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "onde está a minha honra",
+    "feedbackCorrect": "Se ele é Pai e Senhor, a pergunta é pela honra e pelo respeito.",
+    "feedbackWrong": {
+      "b": "A honra pedida exclui ofertas que desprezam o nome.",
+      "c": "O texto parte da relação pai–filho e senhor–servo."
+    },
+    "hint": "Veja as duas perguntas do Senhor no versículo.",
+    "learningObjective": "Ligar Malaquias 1:6 à exigência de honra.",
+    "evidence": [
+      "Malaquias 1:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-01-ofertas-desprezadas-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Malaquias 1:11–12, o povo glorifica o nome do Senhor entre as nações com ofertas puras.",
+    "prompt": "Em Malaquias 1:11–12, o povo glorifica o nome do Senhor entre as nações com ofertas puras.",
+    "cue": "Em Malaquias 1:11–12, o povo glorifica o nome do Senhor entre as nações com ofertas puras.",
+    "verseRef": "Malaquias 1:11–12",
+    "passageText": "Desde o nascente do sol até ao poente, o meu nome é grande entre as nações; em todo lugar se queima incenso e se trazem ofertas puras a mim, porque o meu nome é grande entre as nações, diz o Senhor dos Exércitos. Mas vocês a profanam ao dizerem: \"A mesa do Senhor é imunda, e, quanto ao seu fruto, a comida que nela se oferece é desprezível.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas vocês a profanam ao dizerem",
+    "feedbackCorrect": "O Senhor diz que seu nome é grande entre as nações; o povo, porém, profana a mesa.",
+    "feedbackWrong": {
+      "true": "Releia o \"Mas\": quem traz ofertas puras não são eles; eles profanam."
+    },
+    "hint": "Compare o nome grande com o que \"vocês\" fazem em seguida.",
+    "learningObjective": "Compreender o contraste entre as nações e Judá.",
+    "evidence": [
+      "Malaquias 1:11–12"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-01-ofertas-desprezadas-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Malaquias 1:12, toque a palavra que marca o contraste com o nome grande entre as nações.",
+    "prompt": "Em Malaquias 1:12, toque a palavra que marca o contraste com o nome grande entre as nações.",
+    "cue": "Em Malaquias 1:12, toque a palavra que marca o contraste com o nome grande entre as nações.",
+    "verseRef": "Malaquias 1:12",
+    "passageText": "Mas vocês a profanam ao dizerem: \"A mesa do Senhor é imunda, e, quanto ao seu fruto, a comida que nela se oferece é desprezível.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "mesa"
+      },
+      {
+        "id": "c",
+        "text": "fruto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas vocês a profanam",
+    "feedbackCorrect": "\"Mas\" vira a página: o nome é grande, porém vocês profanam.",
+    "feedbackWrong": {
+      "b": "\"Mesa\" é o objeto da profanação, não o marcador do contraste.",
+      "c": "\"Fruto\" descreve a oferta; o contraste começa com \"Mas\"."
+    },
+    "hint": "Procure a palavra curta no início do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste no texto.",
+    "evidence": [
+      "Malaquias 1:12"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-01-ofertas-desprezadas-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Malaquias 1:10 se relaciona com as ofertas de Malaquias 1:8?",
+    "prompt": "Como Malaquias 1:10 se relaciona com as ofertas de Malaquias 1:8?",
+    "cue": "Como Malaquias 1:10 se relaciona com as ofertas de Malaquias 1:8?",
+    "verseRef": "Malaquias 1:10",
+    "passageText": "Quem entre vocês também fecharia as portas em vão? E não acendem o fogo do meu altar inutilmente. Eu não tenho prazer em vocês, diz o Senhor dos Exércitos, nem aceitarei da sua mão a oferta.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O governador decide o que Deus aceita"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor aceita o coxo se houver fervor"
+      },
+      {
+        "id": "c",
+        "text": "O altar deve ficar aceso mesmo sem oferta"
+      },
+      {
+        "id": "d",
+        "text": "Ofertas ruins levam o Senhor a rejeitar a oferta"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "nem aceitarei da sua mão a oferta",
+    "feedbackCorrect": "Depois de denunciar o coxo e o enfermo, o Senhor diz que não aceitará a oferta.",
+    "feedbackWrong": {
+      "a": "O governador é comparação; quem rejeita é o Senhor.",
+      "b": "O texto não fala de fervor; fala de rejeição da oferta da mão deles.",
+      "c": "Acender o fogo inutilmente é criticado, não recomendado."
+    },
+    "hint": "Veja o que o Senhor diz sobre prazer e oferta em 1:10.",
+    "learningObjective": "Relacionar ofertas ruins e rejeição do Senhor.",
+    "evidence": [
+      "Malaquias 1:8",
+      "Malaquias 1:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-01-ofertas-desprezadas-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a acusação em Malaquias 1:6–7?",
+    "prompt": "Como avança a acusação em Malaquias 1:6–7?",
+    "cue": "Como avança a acusação em Malaquias 1:6–7?",
+    "verseRef": "Malaquias 1:6–7",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\" Ofereceis sobre o meu altar pão imundo e perguntais: \"Em que te havemos profanado?\" Na afirmação de que a mesa do SENHOR é desprezível.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor pergunta pela honra devida"
+      },
+      {
+        "id": "b",
+        "text": "Acusa os que desprezam o nome"
+      },
+      {
+        "id": "c",
+        "text": "Aponta pão imundo e mesa desprezada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a mesa do SENHOR é desprezível",
+    "feedbackCorrect": "Primeiro a honra, depois o nome desprezado, e então a mesa.",
+    "feedbackWrong": {
+      "default": "Comece pela pergunta de 1:6; a mesa vem em 1:7."
+    },
+    "hint": "Siga a ordem dos versículos 6 e 7.",
+    "learningObjective": "Compreender o movimento da acusação.",
+    "evidence": [
+      "Malaquias 1:6–7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-01-ofertas-desprezadas-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Malaquias 1:14, que palavra explica por que o enganador é maldito?",
+    "prompt": "Em Malaquias 1:14, que palavra explica por que o enganador é maldito?",
+    "cue": "Em Malaquias 1:14, que palavra explica por que o enganador é maldito?",
+    "verseRef": "Malaquias 1:14",
+    "passageText": "Maldito seja o enganador que, tendo um animal sadio em seu rebanho, promete e oferece ao Senhor um defeituoso; porque eu sou grande Rei, diz o Senhor dos Exércitos, e o meu nome é terrível entre as nações.",
+    "template": "Maldito seja o enganador que, tendo um animal sadio em seu rebanho, promete e oferece ao Senhor um defeituoso; ___ eu sou grande Rei, diz o Senhor dos Exércitos, e o meu nome é terrível entre as nações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "embora"
+      },
+      {
+        "id": "b",
+        "text": "porque"
+      },
+      {
+        "id": "c",
+        "text": "enquanto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque eu sou grande Rei",
+    "feedbackCorrect": "\"Porque\" liga a maldição à identidade do Senhor: ele é grande Rei.",
+    "feedbackWrong": {
+      "a": "Não há \"embora\" aqui; a ligação é \"porque\".",
+      "c": "O texto usa \"porque\", não \"enquanto\"."
+    },
+    "hint": "Procure a palavra que introduz a razão no fim do versículo.",
+    "learningObjective": "Compreender a causa da maldição ao enganador.",
+    "evidence": [
+      "Malaquias 1:14"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-01-ofertas-desprezadas-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Malaquias 1:8 a Levítico 22:20?",
+    "prompt": "O que liga Malaquias 1:8 a Levítico 22:20?",
+    "cue": "O que liga Malaquias 1:8 a Levítico 22:20?",
+    "verseRef": "Malaquias 1:8",
+    "passageText": "Pois quando vocês trazem um animal cego para sacrificar, isso não é mau? E quando oferecem o coxo ou o enfermo, não é isso mau? Apresente-o ao seu governador; acaso ele se agradará de você e aceitará a sua oferta? — diz o Senhor dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 1:8",
+      "text": "Pois quando vocês trazem um animal cego para sacrificar, isso não é mau? E quando oferecem o coxo ou o enfermo, não é isso mau? Apresente-o ao seu governador; acaso ele se agradará de você e aceitará a sua oferta? — diz o Senhor dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Levítico 22:20",
+      "text": "Nenhum animal que tenha defeito será oferecido, pois não será aceito a favor de vocês."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só o governador julga"
+      },
+      {
+        "id": "b",
+        "text": "Animal sem defeito"
+      },
+      {
+        "id": "c",
+        "text": "Qualquer animal serve"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "quando oferecem o coxo ou o enfermo",
+    "feedbackCorrect": "A lei pedia oferta sem defeito; Malaquias denuncia o contrário.",
+    "feedbackWrong": {
+      "a": "Quem define a oferta aceitável é o Senhor, não o governador.",
+      "c": "Os dois textos rejeitam o defeituoso no altar."
+    },
+    "hint": "Compare o que cada texto exige do animal.",
+    "learningObjective": "Relacionar a denúncia de Malaquias à lei da oferta.",
+    "evidence": [
+      "Malaquias 1:8",
+      "Levítico 22:20"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-01-ofertas-desprezadas-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Malaquias 1:7–14, desprezar a mesa do Senhor com ofertas ruins é tratado como desprezo ao seu nome.",
+    "prompt": "Em Malaquias 1:7–14, desprezar a mesa do Senhor com ofertas ruins é tratado como desprezo ao seu nome.",
+    "cue": "Em Malaquias 1:7–14, desprezar a mesa do Senhor com ofertas ruins é tratado como desprezo ao seu nome.",
+    "verseRef": "Malaquias 1:7–8",
+    "passageText": "Ofereceis sobre o meu altar pão imundo e perguntais: \"Em que te havemos profanado?\" Na afirmação de que a mesa do SENHOR é desprezível. Pois quando vocês trazem um animal cego para sacrificar, isso não é mau? E quando oferecem o coxo ou o enfermo, não é isso mau? Apresente-o ao seu governador; acaso ele se agradará de você e aceitará a sua oferta? — diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a mesa do SENHOR é desprezível",
+    "feedbackCorrect": "O Senhor liga a mesa desprezada ao nome desprezado e rejeita a oferta.",
+    "feedbackWrong": {
+      "false": "O texto une mesa desprezível e nome desprezado desde 1:6–7."
+    },
+    "hint": "Veja como o Senhor responde à pergunta \"Em que desprezamos\".",
+    "learningObjective": "Interpretar a ligação entre mesa e nome do Senhor.",
+    "evidence": [
+      "Malaquias 1:7–8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-01-ofertas-desprezadas-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Malaquias 1:14, toque o trecho que mostra quem o Senhor diz ser.",
+    "prompt": "Em Malaquias 1:14, toque o trecho que mostra quem o Senhor diz ser.",
+    "cue": "Em Malaquias 1:14, toque o trecho que mostra quem o Senhor diz ser.",
+    "verseRef": "Malaquias 1:14",
+    "passageText": "Maldito seja o enganador que, tendo um animal sadio em seu rebanho, promete e oferece ao Senhor um defeituoso; porque eu sou grande Rei, diz o Senhor dos Exércitos, e o meu nome é terrível entre as nações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "enganador"
+      },
+      {
+        "id": "b",
+        "text": "grande Rei"
+      },
+      {
+        "id": "c",
+        "text": "rebanho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "porque eu sou grande Rei",
+    "feedbackCorrect": "Ele se apresenta como grande Rei: por isso a oferta defeituosa é insulto.",
+    "feedbackWrong": {
+      "a": "\"Enganador\" é quem é maldito, não quem o Senhor é.",
+      "c": "\"Rebanho\" é o lugar do animal; a identidade do Senhor vem depois."
+    },
+    "hint": "Procure o que o Senhor diz de si depois de \"porque\".",
+    "learningObjective": "Sustentar com o texto a identidade régia do Senhor.",
+    "evidence": [
+      "Malaquias 1:14"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-01-ofertas-desprezadas-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Malaquias 1:11–14 sustenta sobre o culto e o nome do Senhor?",
+    "prompt": "Que leitura Malaquias 1:11–14 sustenta sobre o culto e o nome do Senhor?",
+    "cue": "Que leitura Malaquias 1:11–14 sustenta sobre o culto e o nome do Senhor?",
+    "verseRef": "Malaquias 1:13–14",
+    "passageText": "E vocês dizem: \"Que canseira!\" e me desprezam, diz o Senhor dos Exércitos; vocês oferecem o dilacerado, o coxo e o enfermo; assim fazem a oferta. Aceitaria eu isso da sua mão? —diz o Senhor. Maldito seja o enganador que, tendo um animal sadio em seu rebanho, promete e oferece ao Senhor um defeituoso; porque eu sou grande Rei, diz o Senhor dos Exércitos, e o meu nome é terrível entre as nações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Faltar animal bom justifica oferecer o defeituoso"
+      },
+      {
+        "id": "b",
+        "text": "O nome do Senhor é grande; ofertas ruins o desprezam"
+      },
+      {
+        "id": "c",
+        "text": "Desprezar a mesa não toca o nome de Deus"
+      },
+      {
+        "id": "d",
+        "text": "O Senhor já rejeitou para sempre o culto de Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu sou grande Rei",
+    "feedbackCorrect": "O nome é grande; oferecer o defeituoso é engano contra o grande Rei.",
+    "feedbackWrong": {
+      "a": "O enganador tem animal sadio e ainda assim oferece o defeituoso.",
+      "c": "Desde 1:6–7, mesa e nome estão ligados.",
+      "d": "Ele rejeita a oferta ruim, não anula o valor do seu nome."
+    },
+    "hint": "Compare o nome grande com a maldição ao enganador.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Malaquias 1:11",
+      "Malaquias 1:14"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-01-ofertas-desprezadas-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da honra a Deus na Bíblia?",
+    "prompt": "Qual sequência revela o caminho da honra a Deus na Bíblia?",
+    "cue": "Qual sequência revela o caminho da honra a Deus na Bíblia?",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor pede a honra devida ao Pai"
+      },
+      {
+        "id": "b",
+        "text": "Quem honra a Deus é honrado por ele"
+      },
+      {
+        "id": "c",
+        "text": "Apresentar o corpo como oferta viva"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "onde está a minha honra",
+    "feedbackCorrect": "A honra pedida em Malaquias ecoa a promessa a Eli e o culto vivo em Cristo.",
+    "feedbackWrong": {
+      "default": "Siga a história: Malaquias, 1 Samuel 2:30 e Romanos 12:1."
+    },
+    "hint": "Siga a ordem: denúncia, princípio e resposta cristã.",
+    "learningObjective": "Ver a honra a Deus como fio que atravessa a Bíblia.",
+    "evidence": [
+      "Malaquias 1:6",
+      "1 Samuel 2:30",
+      "Romanos 12:1"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-01-ofertas-desprezadas-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Malaquias 1:6, que verbo resume o que os sacerdotes fazem ao nome do Senhor?",
+    "prompt": "Em Malaquias 1:6, que verbo resume o que os sacerdotes fazem ao nome do Senhor?",
+    "cue": "Em Malaquias 1:6, que verbo resume o que os sacerdotes fazem ao nome do Senhor?",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "template": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que ___ o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "escondem"
+      },
+      {
+        "id": "b",
+        "text": "desprezam"
+      },
+      {
+        "id": "c",
+        "text": "exaltam"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ó sacerdotes que desprezam o meu nome",
+    "feedbackCorrect": "O verbo é \"desprezam\": tratar o nome do Senhor como sem valor.",
+    "feedbackWrong": {
+      "a": "Não há \"escondem\"; a acusação é desprezar o nome.",
+      "c": "O texto não diz que exaltam; diz que desprezam."
+    },
+    "hint": "É o verbo ligado aos sacerdotes no vocativo.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+    "evidence": [
+      "Malaquias 1:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-01-ofertas-desprezadas-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-01-ofertas-desprezadas",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Malaquias 1:6 a 1 Samuel 2:30?",
+    "prompt": "O que liga Malaquias 1:6 a 1 Samuel 2:30?",
+    "cue": "O que liga Malaquias 1:6 a 1 Samuel 2:30?",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "passageA": {
+      "ref": "Malaquias 1:6",
+      "text": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\""
+    },
+    "passageB": {
+      "ref": "1 Samuel 2:30",
+      "text": "Portanto, diz o Senhor, Deus de Israel: \"Na verdade, eu dissera que a tua casa e a casa de teu pai andariam diante de mim perpetuamente; mas agora diz o Senhor: 'Longe de mim tal coisa, porque aos que me honram, eu honrarei; porém os que me desprezam serão desmerecidos.'\""
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto sem julgamento"
+      },
+      {
+        "id": "b",
+        "text": "Honrar quem honra"
+      },
+      {
+        "id": "c",
+        "text": "Sacerdotes acima de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "onde está a minha honra",
+    "feedbackCorrect": "Nos dois textos, a honra a Deus não é opcional para quem serve no culto.",
+    "feedbackWrong": {
+      "a": "Os dois textos mostram que Deus julga o culto sem honra.",
+      "c": "O Senhor exige honra dos sacerdotes; eles não estão acima dele."
+    },
+    "hint": "Compare o que cada texto diz sobre honrar a Deus.",
+    "learningObjective": "Ligar a pergunta de Malaquias ao princípio de 1 Samuel.",
+    "evidence": [
+      "Malaquias 1:6",
+      "1 Samuel 2:30"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-02-a-alianca-com-levi-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Malaquias 2:7, os lábios do sacerdote devem guardar o conhecimento.",
+    "prompt": "Em Malaquias 2:7, os lábios do sacerdote devem guardar o conhecimento.",
+    "cue": "Em Malaquias 2:7, os lábios do sacerdote devem guardar o conhecimento.",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento",
+    "feedbackCorrect": "O texto afirma: os lábios do sacerdote devem guardar o conhecimento.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 2:7: os lábios devem guardar o conhecimento."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Observar a tarefa dos lábios do sacerdote.",
+    "evidence": [
+      "Malaquias 2:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-02-a-alianca-com-levi-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+    "prompt": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+    "cue": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "instrução"
+      },
+      {
+        "id": "c",
+        "text": "mensageiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele é o mensageiro do Senhor dos Exércitos",
+    "feedbackCorrect": "O sacerdote é o mensageiro do Senhor dos Exércitos.",
+    "feedbackWrong": {
+      "a": "\"Conhecimento\" é o que os lábios guardam, não o título do sacerdote.",
+      "b": "\"Instrução\" é o que se busca na boca dele; o título é mensageiro."
+    },
+    "hint": "Veja o fim do versículo, depois de \"pois\".",
+    "learningObjective": "Identificar o título do sacerdote no texto.",
+    "evidence": [
+      "Malaquias 2:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-02-a-alianca-com-levi-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Malaquias 2:5, de que foi o pacto do Senhor com Levi?",
+    "prompt": "Segundo Malaquias 2:5, de que foi o pacto do Senhor com Levi?",
+    "cue": "Segundo Malaquias 2:5, de que foi o pacto do Senhor com Levi?",
+    "verseRef": "Malaquias 2:5",
+    "passageText": "Meu pacto com ele foi de vida e de paz; eu as lhe concedi para que ele me temesse; ele me temeu e tremeu por causa do meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "De guerra e conquista"
+      },
+      {
+        "id": "b",
+        "text": "De vida e de paz"
+      },
+      {
+        "id": "c",
+        "text": "De silêncio e isolamento"
+      },
+      {
+        "id": "d",
+        "text": "De riqueza e poder"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Meu pacto com ele foi de vida e de paz",
+    "feedbackCorrect": "O pacto foi de vida e de paz, para que Levi temesse o Senhor.",
+    "feedbackWrong": {
+      "a": "Não há guerra neste pacto; há vida e paz.",
+      "c": "Levi andou com o Senhor; o pacto não é de isolamento.",
+      "d": "O texto fala de vida e paz, não de riqueza."
+    },
+    "hint": "Leia as duas palavras que descrevem o pacto.",
+    "learningObjective": "Observar o conteúdo do pacto com Levi.",
+    "evidence": [
+      "Malaquias 2:5"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-02-a-alianca-com-levi-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Malaquias 2:8 na ordem do texto.",
+    "prompt": "Monte Malaquias 2:8 na ordem do texto.",
+    "cue": "Monte Malaquias 2:8 na ordem do texto.",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vocês se desviaram do caminho"
+      },
+      {
+        "id": "b",
+        "text": "por causa de sua instrução, fizeram muitos tropeçarem"
+      },
+      {
+        "id": "c",
+        "text": "violaram a aliança de Levi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "violaram a aliança de Levi",
+    "feedbackCorrect": "Desvio, tropeço do povo e violação da aliança, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo desvio do caminho; a aliança vem no fim."
+    },
+    "hint": "O versículo começa com o desvio de vocês.",
+    "learningObjective": "Reconhecer a sequência de Malaquias 2:8.",
+    "evidence": [
+      "Malaquias 2:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-02-a-alianca-com-levi-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Malaquias 2:6, o que estava na boca de Levi?",
+    "prompt": "Em Malaquias 2:6, o que estava na boca de Levi?",
+    "cue": "Em Malaquias 2:6, o que estava na boca de Levi?",
+    "verseRef": "Malaquias 2:6",
+    "passageText": "A verdadeira instrução estava em sua boca, e a injustiça não se encontrou em seus lábios; ele andou comigo em paz e em retidão e afastou muitos da iniquidade.",
+    "template": "A ___ instrução estava em sua boca, e a injustiça não se encontrou em seus lábios; ele andou comigo em paz e em retidão e afastou muitos da iniquidade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "iniquidade"
+      },
+      {
+        "id": "b",
+        "text": "injustiça"
+      },
+      {
+        "id": "c",
+        "text": "verdadeira"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "A verdadeira instrução estava em sua boca",
+    "feedbackCorrect": "A verdadeira instrução estava na boca dele; a injustiça não se encontrou nos lábios.",
+    "feedbackWrong": {
+      "a": "Ele afastou muitos da iniquidade; não a tinha na boca.",
+      "b": "A injustiça não se encontrou nos lábios; o que estava na boca era a instrução verdadeira."
+    },
+    "hint": "Leia a primeira frase do versículo.",
+    "learningObjective": "Lembrar o que caracterizava a boca de Levi.",
+    "evidence": [
+      "Malaquias 2:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-02-a-alianca-com-levi-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Malaquias 2:7 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 2:7 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 2:7 comunica que se liga a este contexto?",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 2:7",
+      "text": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O sacerdote deve guardar e transmitir o conhecimento do Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdócio só ritual"
+      },
+      {
+        "id": "b",
+        "text": "Lábios guardam conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "Povo ensina o sacerdote"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento",
+    "feedbackCorrect": "Os lábios guardam o conhecimento; da boca se busca a instrução.",
+    "feedbackWrong": {
+      "a": "O texto enfatiza conhecimento e instrução, não só ritual.",
+      "c": "É da boca do sacerdote que se busca a instrução."
+    },
+    "hint": "Veja o que os lábios devem fazer.",
+    "learningObjective": "Ligar 2:7 à tarefa de ensinar.",
+    "evidence": [
+      "Malaquias 2:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-02-a-alianca-com-levi-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Malaquias 2:8, a instrução dos sacerdotes ajudou o povo a andar firme na aliança.",
+    "prompt": "Em Malaquias 2:8, a instrução dos sacerdotes ajudou o povo a andar firme na aliança.",
+    "cue": "Em Malaquias 2:8, a instrução dos sacerdotes ajudou o povo a andar firme na aliança.",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "por causa de sua instrução, fizeram muitos tropeçarem",
+    "feedbackCorrect": "Foi por causa da instrução deles que muitos tropeçaram.",
+    "feedbackWrong": {
+      "true": "Releia: por causa da instrução deles, muitos tropeçaram."
+    },
+    "hint": "Veja o efeito da instrução sobre o povo.",
+    "learningObjective": "Compreender a causa do tropeço do povo.",
+    "evidence": [
+      "Malaquias 2:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-02-a-alianca-com-levi-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+    "prompt": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+    "cue": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "por causa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por causa de sua instrução",
+    "feedbackCorrect": "\"Por causa\" liga a instrução deles ao tropeço de muitos.",
+    "feedbackWrong": {
+      "a": "\"Caminho\" é de onde se desviaram; a causa do tropeço vem depois.",
+      "b": "\"Aliança\" é o que violaram; a causa marcada é \"por causa\"."
+    },
+    "hint": "Procure as duas palavras antes de \"de sua instrução\".",
+    "learningObjective": "Reconhecer o marcador de causa no texto.",
+    "evidence": [
+      "Malaquias 2:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-02-a-alianca-com-levi-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Malaquias 2:9 se relaciona com Malaquias 2:8?",
+    "prompt": "Como Malaquias 2:9 se relaciona com Malaquias 2:8?",
+    "cue": "Como Malaquias 2:9 se relaciona com Malaquias 2:8?",
+    "verseRef": "Malaquias 2:8–9",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos. Por isso, também eu os fiz desprezíveis e indignos diante de todo o povo, visto que não guardastes os meus caminhos e vos mostrastes parciais ao aplicar a lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A lei parcial corrije o tropeço do povo"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor os honra apesar da aliança violada"
+      },
+      {
+        "id": "c",
+        "text": "O povo é culpado; os sacerdotes ficam isentos"
+      },
+      {
+        "id": "d",
+        "text": "O desvio leva o Senhor a fazê-los desprezíveis"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "eu os fiz desprezíveis e indignos diante de todo o povo",
+    "feedbackCorrect": "\"Por isso\" liga o desvio ao julgamento: desprezíveis diante do povo.",
+    "feedbackWrong": {
+      "a": "A parcialidade na lei é parte da acusação, não a correção.",
+      "b": "O texto diz o contrário: foram feitos desprezíveis.",
+      "c": "O julgamento cai sobre os sacerdotes que se desviaram."
+    },
+    "hint": "Veja a expressão \"Por isso\" no início de 2:9.",
+    "learningObjective": "Relacionar desvio e julgamento.",
+    "evidence": [
+      "Malaquias 2:8–9"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-02-a-alianca-com-levi-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o trecho em Malaquias 2:4–7?",
+    "prompt": "Como avança o trecho em Malaquias 2:4–7?",
+    "cue": "Como avança o trecho em Malaquias 2:4–7?",
+    "verseRef": "Malaquias 2:4–5",
+    "passageText": "Então, vocês saberão que eu lhes enviei este mandamento, para que minha aliança permaneça com Levi, diz o Senhor dos Exércitos. Meu pacto com ele foi de vida e de paz; eu as lhe concedi para que ele me temesse; ele me temeu e tremeu por causa do meu nome.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandamento para a aliança permanecer"
+      },
+      {
+        "id": "b",
+        "text": "Pacto de vida, paz e temor"
+      },
+      {
+        "id": "c",
+        "text": "Instrução verdadeira nos lábios"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "para que minha aliança permaneça com Levi",
+    "feedbackCorrect": "Primeiro o mandamento, depois o pacto, e então a instrução fiel.",
+    "feedbackWrong": {
+      "default": "Comece pelo mandamento de 2:4; a instrução vem em 2:6–7."
+    },
+    "hint": "Siga a ordem: mandamento, pacto, boca fiel.",
+    "learningObjective": "Compreender o movimento do ideal sacerdotal.",
+    "evidence": [
+      "Malaquias 2:4",
+      "Malaquias 2:5",
+      "Malaquias 2:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-02-a-alianca-com-levi-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Malaquias 2:9, que expressão introduz o resultado do desvio?",
+    "prompt": "Em Malaquias 2:9, que expressão introduz o resultado do desvio?",
+    "cue": "Em Malaquias 2:9, que expressão introduz o resultado do desvio?",
+    "verseRef": "Malaquias 2:9",
+    "passageText": "Por isso, também eu os fiz desprezíveis e indignos diante de todo o povo, visto que não guardastes os meus caminhos e vos mostrastes parciais ao aplicar a lei.",
+    "template": "Por isso, ___ eu os fiz desprezíveis e indignos diante de todo o povo, visto que não guardastes os meus caminhos e vos mostrastes parciais ao aplicar a lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Talvez"
+      },
+      {
+        "id": "b",
+        "text": "Porém"
+      },
+      {
+        "id": "c",
+        "text": "também"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Por isso, também eu os fiz desprezíveis",
+    "feedbackCorrect": "\"Também\" marca a resposta do Senhor: ele os fez desprezíveis.",
+    "feedbackWrong": {
+      "a": "Não há dúvida no texto; o Senhor age.",
+      "b": "O marcador de resultado aqui é \"Por isso, também\", não \"Porém\"."
+    },
+    "hint": "Veja a palavra depois de \"Por isso,\" no início.",
+    "learningObjective": "Compreender o marcador do julgamento.",
+    "evidence": [
+      "Malaquias 2:9"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-02-a-alianca-com-levi-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+    "prompt": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+    "cue": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 2:7",
+      "text": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 33:10",
+      "text": "Ensinou os teus juízos a Jacó e a tua lei a Israel; ofereceu incenso às tuas narinas e holocaustos sobre o teu altar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensinar os juízos"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio dos lábios"
+      },
+      {
+        "id": "c",
+        "text": "Guardar só o templo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "da sua boca devem buscar a instrução",
+    "feedbackCorrect": "Nos dois textos, Levi ensina: juízos, conhecimento e instrução.",
+    "feedbackWrong": {
+      "b": "Os lábios devem guardar e transmitir, não calar.",
+      "c": "O foco é ensinar, não só cuidar do prédio."
+    },
+    "hint": "Compare a tarefa de ensinar em cada texto.",
+    "learningObjective": "Relacionar o mensageiro de Malaquias à bênção de Levi.",
+    "evidence": [
+      "Malaquias 2:7",
+      "Deuteronômio 33:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-02-a-alianca-com-levi-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Malaquias 2:7–8, a fidelidade do mensageiro não afeta o caminho do povo.",
+    "prompt": "Em Malaquias 2:7–8, a fidelidade do mensageiro não afeta o caminho do povo.",
+    "cue": "Em Malaquias 2:7–8, a fidelidade do mensageiro não afeta o caminho do povo.",
+    "verseRef": "Malaquias 2:7–8",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos. Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fizeram muitos tropeçarem",
+    "feedbackCorrect": "Sem fidelidade, a instrução faz muitos tropeçarem.",
+    "feedbackWrong": {
+      "true": "O texto liga a instrução deles ao tropeço de muitos."
+    },
+    "hint": "Veja o efeito descrito em 2:8.",
+    "learningObjective": "Interpretar o impacto do mensageiro sobre o povo.",
+    "evidence": [
+      "Malaquias 2:7–8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-02-a-alianca-com-levi-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Malaquias 2:7, toque o que os lábios do sacerdote devem guardar.",
+    "prompt": "Em Malaquias 2:7, toque o que os lábios do sacerdote devem guardar.",
+    "cue": "Em Malaquias 2:7, toque o que os lábios do sacerdote devem guardar.",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "lábios"
+      },
+      {
+        "id": "b",
+        "text": "buscar"
+      },
+      {
+        "id": "c",
+        "text": "conhecimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "os lábios do sacerdote devem guardar o conhecimento",
+    "feedbackCorrect": "Guardar o conhecimento sustenta o ofício de mensageiro do Senhor.",
+    "feedbackWrong": {
+      "a": "\"Lábios\" são quem guarda; o que se guarda é o conhecimento.",
+      "b": "\"Buscar\" é o que o povo faz na boca do sacerdote."
+    },
+    "hint": "Veja o objeto do verbo \"guardar\".",
+    "learningObjective": "Sustentar com o texto a tarefa de guardar o conhecimento.",
+    "evidence": [
+      "Malaquias 2:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-02-a-alianca-com-levi-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Malaquias 2:7–9 sustenta sobre o ensino sacerdotal?",
+    "prompt": "Que leitura Malaquias 2:7–9 sustenta sobre o ensino sacerdotal?",
+    "cue": "Que leitura Malaquias 2:7–9 sustenta sobre o ensino sacerdotal?",
+    "verseRef": "Malaquias 2:8–9",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos. Por isso, também eu os fiz desprezíveis e indignos diante de todo o povo, visto que não guardastes os meus caminhos e vos mostrastes parciais ao aplicar a lei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O ensino é opcional; só o ritual importa"
+      },
+      {
+        "id": "b",
+        "text": "O povo tropeça sem ligação com os sacerdotes"
+      },
+      {
+        "id": "c",
+        "text": "Parcialidade na lei honra a aliança de Levi"
+      },
+      {
+        "id": "d",
+        "text": "Sem fidelidade do mensageiro, o povo tropeça"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "fizeram muitos tropeçarem; violaram a aliança de Levi",
+    "feedbackCorrect": "Instrução torta e aliança violada fazem o povo cair.",
+    "feedbackWrong": {
+      "a": "O texto centra conhecimento e instrução nos lábios.",
+      "b": "O tropeço vem \"por causa de sua instrução\".",
+      "c": "A parcialidade é motivo de desprezo, não de honra."
+    },
+    "hint": "Una o ideal de 2:7 ao resultado de 2:8–9.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Malaquias 2:8–9"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-02-a-alianca-com-levi-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do ensino fiel na Bíblia?",
+    "prompt": "Qual sequência revela o caminho do ensino fiel na Bíblia?",
+    "cue": "Qual sequência revela o caminho do ensino fiel na Bíblia?",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Levi deve ensinar os juízos de Deus"
+      },
+      {
+        "id": "b",
+        "text": "O sacerdote guarda o conhecimento"
+      },
+      {
+        "id": "c",
+        "text": "Mestres serão julgados com maior rigor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ele é o mensageiro do Senhor dos Exércitos",
+    "feedbackCorrect": "Do chamado de Levi ao aviso aos mestres, ensinar é responsabilidade diante de Deus.",
+    "feedbackWrong": {
+      "default": "Siga a história: Deuteronômio, Malaquias e Tiago."
+    },
+    "hint": "Siga a ordem: lei, profeta e carta.",
+    "learningObjective": "Ver o ensino fiel como fio bíblico.",
+    "evidence": [
+      "Deuteronômio 33:10",
+      "Malaquias 2:7",
+      "Tiago 3:1"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-02-a-alianca-com-levi-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Malaquias 2:8, que palavra nomeia o pacto que os sacerdotes violaram?",
+    "prompt": "Em Malaquias 2:8, que palavra nomeia o pacto que os sacerdotes violaram?",
+    "cue": "Em Malaquias 2:8, que palavra nomeia o pacto que os sacerdotes violaram?",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "template": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a ___ de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "nação"
+      },
+      {
+        "id": "b",
+        "text": "templo"
+      },
+      {
+        "id": "c",
+        "text": "aliança"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "violaram a aliança de Levi",
+    "feedbackCorrect": "Violaram a aliança de Levi: o pacto de vida e paz foi quebrado.",
+    "feedbackWrong": {
+      "a": "O texto não fala de nação aqui; fala da aliança de Levi.",
+      "b": "Não há \"templo\" neste versículo; a palavra é aliança."
+    },
+    "hint": "Veja o que foi violado no fim do versículo.",
+    "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+    "evidence": [
+      "Malaquias 2:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-02-a-alianca-com-levi-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-02-a-alianca-com-levi",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Malaquias 2:8 a Oséias 4:6?",
+    "prompt": "O que liga Malaquias 2:8 a Oséias 4:6?",
+    "cue": "O que liga Malaquias 2:8 a Oséias 4:6?",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 2:8",
+      "text": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Oséias 4:6",
+      "text": "Meu povo está sendo destruído, porque lhe falta o conhecimento. Como você rejeitou o conhecimento, também eu o rejeitarei, para que não seja sacerdote diante de mim; e, uma vez que se esqueceu da lei do seu Deus, também eu me esquecerei de seus filhos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Prosperidade sem ensino"
+      },
+      {
+        "id": "b",
+        "text": "Aliança sem responsabilidade"
+      },
+      {
+        "id": "c",
+        "text": "Povo sem conhecimento"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por causa de sua instrução, fizeram muitos tropeçarem",
+    "feedbackCorrect": "Nos dois textos, falta ou distorção do conhecimento destrói o povo.",
+    "feedbackWrong": {
+      "a": "O tema é conhecimento e instrução, não prosperidade.",
+      "b": "A aliança violaada traz juízo, não isenção."
+    },
+    "hint": "Compare o efeito da falta de conhecimento fiel.",
+    "learningObjective": "Ligar o tropeço em Malaquias à ruína em Oséias.",
+    "evidence": [
+      "Malaquias 2:8",
+      "Oséias 4:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Malaquias 3:10, o Senhor manda trazer todos os dízimos à casa do tesouro.",
+    "prompt": "Em Malaquias 3:10, o Senhor manda trazer todos os dízimos à casa do tesouro.",
+    "cue": "Em Malaquias 3:10, o Senhor manda trazer todos os dízimos à casa do tesouro.",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "O comando é claro: trazer todos os dízimos à casa do tesouro.",
+    "feedbackWrong": {
+      "false": "Releia o começo de 3:10: Trazei todos os dízimos à casa do tesouro."
+    },
+    "hint": "Olhe a ordem no início do versículo.",
+    "learningObjective": "Observar o comando sobre os dízimos.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Malaquias 3:8, toque em que o povo rouba a Deus.",
+    "prompt": "Em Malaquias 3:8, toque em que o povo rouba a Deus.",
+    "cue": "Em Malaquias 3:8, toque em que o povo rouba a Deus.",
+    "verseRef": "Malaquias 3:8–9",
+    "passageText": "Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas. Com maldição sois amaldiçoados, porque me roubais, a nação toda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dízimos"
+      },
+      {
+        "id": "b",
+        "text": "homem"
+      },
+      {
+        "id": "c",
+        "text": "nação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Nos dízimos e nas ofertas",
+    "feedbackCorrect": "O roubo está nos dízimos e nas ofertas.",
+    "feedbackWrong": {
+      "b": "\"Homem\" abre a pergunta; a resposta do Senhor é dízimos e ofertas.",
+      "c": "A nação aparece em 3:9; aqui o ponto são os dízimos."
+    },
+    "hint": "Veja a resposta final do Senhor no versículo.",
+    "learningObjective": "Identificar em que o povo rouba a Deus.",
+    "evidence": [
+      "Malaquias 3:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Malaquias 3:6, por que os filhos de Jacó não serão consumidos?",
+    "prompt": "Segundo Malaquias 3:6, por que os filhos de Jacó não serão consumidos?",
+    "cue": "Segundo Malaquias 3:6, por que os filhos de Jacó não serão consumidos?",
+    "verseRef": "Malaquias 3:6",
+    "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o Senhor não muda"
+      },
+      {
+        "id": "b",
+        "text": "Porque já pagaram todos os dízimos"
+      },
+      {
+        "id": "c",
+        "text": "Porque o templo está completo"
+      },
+      {
+        "id": "d",
+        "text": "Porque as nações os protegem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu, o Senhor, não mudo; por isso",
+    "feedbackCorrect": "O Senhor não muda; por isso Jacó não é consumido.",
+    "feedbackWrong": {
+      "b": "O texto ainda os acusa de roubo nos dízimos.",
+      "c": "A razão dada é a imutabilidade do Senhor.",
+      "d": "Não há proteção das nações neste versículo."
+    },
+    "hint": "Leia a primeira afirmação e o \"por isso\".",
+    "learningObjective": "Observar a razão da preservação de Jacó.",
+    "evidence": [
+      "Malaquias 3:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Malaquias 3:10 na ordem do texto.",
+    "prompt": "Monte Malaquias 3:10 na ordem do texto.",
+    "cue": "Monte Malaquias 3:10 na ordem do texto.",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trazei todos os dízimos à casa do tesouro"
+      },
+      {
+        "id": "b",
+        "text": "para que haja mantimento na minha casa"
+      },
+      {
+        "id": "c",
+        "text": "e provai-me nisto"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Trazer, haver mantimento, e então a prova ao Senhor.",
+    "feedbackWrong": {
+      "default": "Comece pelo comando de trazer; a prova vem depois."
+    },
+    "hint": "O versículo começa com o verbo \"Trazei\".",
+    "learningObjective": "Reconhecer a sequência de Malaquias 3:10.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Malaquias 3:7, o que o Senhor manda o povo fazer em relação a ele?",
+    "prompt": "Em Malaquias 3:7, o que o Senhor manda o povo fazer em relação a ele?",
+    "cue": "Em Malaquias 3:7, o que o Senhor manda o povo fazer em relação a ele?",
+    "verseRef": "Malaquias 3:7",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+    "template": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. ___ para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Escondam"
+      },
+      {
+        "id": "b",
+        "text": "Retornem"
+      },
+      {
+        "id": "c",
+        "text": "Adiem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "O chamado é \"Retornem\": voltar ao Senhor que também retorna.",
+    "feedbackWrong": {
+      "a": "O texto não manda esconder; manda retornar.",
+      "c": "Não há adiamento; o Senhor chama a retornar."
+    },
+    "hint": "Procure o imperativo no meio do versículo.",
+    "learningObjective": "Lembrar o verbo do chamado ao retorno.",
+    "evidence": [
+      "Malaquias 3:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-03-voltai-a-mim-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Malaquias 3:10 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 3:10 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 3:10 comunica que se liga a este contexto?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "passageA": {
+      "ref": "Malaquias 3:10",
+      "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Voltar ao Senhor inclui fidelidade no que é dele."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fidelidade nos dízimos"
+      },
+      {
+        "id": "b",
+        "text": "Bênção sem qualquer prova"
+      },
+      {
+        "id": "c",
+        "text": "Culto sem responsabilidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Trazer os dízimos é parte concreta do retorno ao Senhor.",
+    "feedbackWrong": {
+      "b": "O Senhor diz \"provai-me nisto\", não bênção sem prova.",
+      "c": "O texto exige ação concreta na casa do tesouro."
+    },
+    "hint": "Veja o que deve ser trazido à casa do tesouro.",
+    "learningObjective": "Ligar 3:10 à fidelidade do retorno.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Malaquias 3:7, o Senhor promete retornar para o povo se eles retornarem para ele.",
+    "prompt": "Em Malaquias 3:7, o Senhor promete retornar para o povo se eles retornarem para ele.",
+    "cue": "Em Malaquias 3:7, o Senhor promete retornar para o povo se eles retornarem para ele.",
+    "verseRef": "Malaquias 3:7",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "O retorno é mútuo: o povo volta, e o Senhor também volta.",
+    "feedbackWrong": {
+      "false": "Releia a promessa: Retornem para mim, e eu retornarei para vocês."
+    },
+    "hint": "Veja as duas metades da frase com \"Retornem\".",
+    "learningObjective": "Compreender a promessa ligada ao retorno.",
+    "evidence": [
+      "Malaquias 3:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Malaquias 3:6, toque a expressão que marca o resultado de o Senhor não mudar.",
+    "prompt": "Em Malaquias 3:6, toque a expressão que marca o resultado de o Senhor não mudar.",
+    "cue": "Em Malaquias 3:6, toque a expressão que marca o resultado de o Senhor não mudar.",
+    "verseRef": "Malaquias 3:6",
+    "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "por isso"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por isso, vocês, ó filhos de Jacó, não serão consumidos",
+    "feedbackCorrect": "\"Por isso\" liga a imutabilidade do Senhor à preservação de Jacó.",
+    "feedbackWrong": {
+      "a": "\"Senhor\" é quem não muda; o marcador do resultado é \"por isso\".",
+      "b": "\"Porque\" abre a causa; o resultado vem em \"por isso\"."
+    },
+    "hint": "Procure as duas palavras depois do ponto e vírgula.",
+    "learningObjective": "Reconhecer o marcador de resultado.",
+    "evidence": [
+      "Malaquias 3:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+    "prompt": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+    "cue": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transfere o dízimo só para as nações"
+      },
+      {
+        "id": "b",
+        "text": "Ignora o roubo e fala só de bênção"
+      },
+      {
+        "id": "c",
+        "text": "Responde ao roubo com o chamado a trazer os dízimos"
+      },
+      {
+        "id": "d",
+        "text": "Anula os dízimos como prática antiga"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Acusados de roubo nos dízimos, são chamados a trazê-los de volta.",
+    "feedbackWrong": {
+      "a": "A casa do tesouro é a do Senhor, no meio do povo.",
+      "b": "A bênção vem depois da ordem de trazer os dízimos.",
+      "d": "O texto reforça os dízimos, não os anula."
+    },
+    "hint": "Compare o que falta em 3:8 com o que se manda em 3:10.",
+    "learningObjective": "Relacionar acusação e chamado prático.",
+    "evidence": [
+      "Malaquias 3:8",
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o chamado em Malaquias 3:7–10?",
+    "prompt": "Como avança o chamado em Malaquias 3:7–10?",
+    "cue": "Como avança o chamado em Malaquias 3:7–10?",
+    "verseRef": "Malaquias 3:7–8",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado a retornar ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Acusação de roubo nos dízimos"
+      },
+      {
+        "id": "c",
+        "text": "Ordem de trazer os dízimos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "Primeiro o retorno, depois o roubo, e então a ordem de trazer.",
+    "feedbackWrong": {
+      "default": "Comece pelo \"Retornem\"; a ordem de trazer vem em 3:10."
+    },
+    "hint": "Siga 3:7, 3:8 e 3:10.",
+    "learningObjective": "Compreender o movimento do retorno.",
+    "evidence": [
+      "Malaquias 3:7",
+      "Malaquias 3:8",
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Malaquias 3:10, que palavra liga o trazer dos dízimos ao mantimento na casa?",
+    "prompt": "Em Malaquias 3:10, que palavra liga o trazer dos dízimos ao mantimento na casa?",
+    "cue": "Em Malaquias 3:10, que palavra liga o trazer dos dízimos ao mantimento na casa?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "template": "Trazei todos os dízimos à casa do tesouro, ___ que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "para"
+      },
+      {
+        "id": "b",
+        "text": "depois"
+      },
+      {
+        "id": "c",
+        "text": "embora"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que haja mantimento na minha casa",
+    "feedbackCorrect": "\"Para\" marca o propósito: haver mantimento na casa do Senhor.",
+    "feedbackWrong": {
+      "b": "O texto usa \"para\", não \"depois\".",
+      "c": "Não há concessão; há propósito."
+    },
+    "hint": "Procure a palavra antes de \"que haja mantimento\".",
+    "learningObjective": "Compreender o propósito dos dízimos no texto.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-03-voltai-a-mim-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Malaquias 3:10 a Neemias 13:12?",
+    "prompt": "O que liga Malaquias 3:10 a Neemias 13:12?",
+    "cue": "O que liga Malaquias 3:10 a Neemias 13:12?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "passageA": {
+      "ref": "Malaquias 3:10",
+      "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+    },
+    "passageB": {
+      "ref": "Neemias 13:12",
+      "text": "Então, todo o Judá trouxe os dízimos dos cereais, do vinho e do azeite aos depósitos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dízimos à casa do tesouro"
+      },
+      {
+        "id": "b",
+        "text": "Fim do culto em Judá"
+      },
+      {
+        "id": "c",
+        "text": "Imposto só aos estrangeiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Nos dois textos, os dízimos voltam à casa do tesouro.",
+    "feedbackWrong": {
+      "b": "Os textos reforçam o cuidado da casa, não o fim do culto.",
+      "c": "O foco é o povo trazer o que é do Senhor."
+    },
+    "hint": "Compare o destino dos dízimos em cada texto.",
+    "learningObjective": "Relacionar Malaquias e Neemias sobre os dízimos.",
+    "evidence": [
+      "Malaquias 3:10",
+      "Neemias 13:12"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Malaquias 3:6–10, voltar ao Senhor é só sentimento, sem fidelidade nos dízimos e ofertas.",
+    "prompt": "Em Malaquias 3:6–10, voltar ao Senhor é só sentimento, sem fidelidade nos dízimos e ofertas.",
+    "cue": "Em Malaquias 3:6–10, voltar ao Senhor é só sentimento, sem fidelidade nos dízimos e ofertas.",
+    "verseRef": "Malaquias 3:8",
+    "passageText": "Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Nos dízimos e nas ofertas",
+    "feedbackCorrect": "O retorno passa pelo concreto: dízimos, ofertas e a casa do tesouro.",
+    "feedbackWrong": {
+      "true": "O texto aponta dízimos e ofertas como o ponto do retorno."
+    },
+    "hint": "Veja a resposta à pergunta \"Em que devemos retornar?\".",
+    "learningObjective": "Interpretar o retorno como fidelidade concreta.",
+    "evidence": [
+      "Malaquias 3:8–10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Malaquias 3:10, toque o trecho que sustenta a promessa de bênção abundante.",
+    "prompt": "Em Malaquias 3:10, toque o trecho que sustenta a promessa de bênção abundante.",
+    "cue": "Em Malaquias 3:10, toque o trecho que sustenta a promessa de bênção abundante.",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "janelas do céu"
+      },
+      {
+        "id": "b",
+        "text": "casa do tesouro"
+      },
+      {
+        "id": "c",
+        "text": "mantimento"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "abrir as janelas do céu",
+    "feedbackCorrect": "As janelas do céu e a bênção sem medida são a promessa após a prova.",
+    "feedbackWrong": {
+      "b": "A casa do tesouro é o destino dos dízimos, não a imagem da bênção.",
+      "c": "\"Mantimento\" é o propósito na casa; a bênção abundante está nas janelas."
+    },
+    "hint": "Procure o que o Senhor promete abrir.",
+    "learningObjective": "Sustentar com o texto a promessa de bênção.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Malaquias 3:6–10 sustenta sobre o retorno ao Senhor?",
+    "prompt": "Que leitura Malaquias 3:6–10 sustenta sobre o retorno ao Senhor?",
+    "cue": "Que leitura Malaquias 3:6–10 sustenta sobre o retorno ao Senhor?",
+    "verseRef": "Malaquias 3:6–7",
+    "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos. Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Bênção vem sem qualquer prova de fidelidade"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor muda e por isso consome Jacó"
+      },
+      {
+        "id": "c",
+        "text": "Voltar inclui fidelidade no que é dele"
+      },
+      {
+        "id": "d",
+        "text": "Retorno é só palavra, sem dízimos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "O Senhor não muda; chama a retornar com fidelidade concreta.",
+    "feedbackWrong": {
+      "a": "Ele diz \"provai-me nisto\" após trazer os dízimos.",
+      "b": "Ele não muda; por isso Jacó não é consumido.",
+      "d": "A resposta ao \"em que retornar\" aponta dízimos e ofertas."
+    },
+    "hint": "Una a imutabilidade, o chamado e os dízimos.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Malaquias 3:6–7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da provisão fiel na Bíblia?",
+    "prompt": "Qual sequência revela o caminho da provisão fiel na Bíblia?",
+    "cue": "Qual sequência revela o caminho da provisão fiel na Bíblia?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor abre o tesouro do céu"
+      },
+      {
+        "id": "b",
+        "text": "O povo traz os dízimos à casa"
+      },
+      {
+        "id": "c",
+        "text": "Deus faz abundar toda graça"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "abrir as janelas do céu",
+    "feedbackCorrect": "Da promessa na lei à graça em Cristo, Deus prove generosamente.",
+    "feedbackWrong": {
+      "default": "Siga: Deuteronômio, Malaquias e 2 Coríntios."
+    },
+    "hint": "Siga a ordem: lei, profeta e carta.",
+    "learningObjective": "Ver a provisão de Deus como fio bíblico.",
+    "evidence": [
+      "Deuteronômio 28:12",
+      "Malaquias 3:10",
+      "2 Coríntios 9:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Malaquias 3:10, que palavra nomeia o propósito de haver na casa do Senhor?",
+    "prompt": "Em Malaquias 3:10, que palavra nomeia o propósito de haver na casa do Senhor?",
+    "cue": "Em Malaquias 3:10, que palavra nomeia o propósito de haver na casa do Senhor?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "template": "Trazei todos os dízimos à casa do tesouro, para que haja ___ na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exércitos"
+      },
+      {
+        "id": "b",
+        "text": "mantimento"
+      },
+      {
+        "id": "c",
+        "text": "nações"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que haja mantimento na minha casa",
+    "feedbackCorrect": "O propósito é haver mantimento na casa do Senhor.",
+    "feedbackWrong": {
+      "a": "\"Exércitos\" faz parte do título do Senhor, não do propósito da casa.",
+      "c": "As nações aparecem em 3:12; aqui o propósito é o mantimento."
+    },
+    "hint": "Veja o que deve haver na casa depois de \"para que\".",
+    "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-03-voltai-a-mim-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-03-voltai-a-mim",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Malaquias 3:10 a 2 Coríntios 9:8?",
+    "prompt": "O que liga Malaquias 3:10 a 2 Coríntios 9:8?",
+    "cue": "O que liga Malaquias 3:10 a 2 Coríntios 9:8?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "passageA": {
+      "ref": "Malaquias 3:10",
+      "text": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida."
+    },
+    "passageB": {
+      "ref": "2 Coríntios 9:8",
+      "text": "E Deus é poderoso para fazer-vos abundar em toda a graça, a fim de que, tendo sempre, em tudo, ampla suficiência, transbordem em toda boa obra."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça abundante de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Bênção só para reis"
+      },
+      {
+        "id": "c",
+        "text": "Escassez como regra final"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "bênção sem medida",
+    "feedbackCorrect": "Os dois textos apontam a generosidade de Deus que sobra para toda boa obra.",
+    "feedbackWrong": {
+      "b": "A promessa alcança o povo que prova o Senhor, não só reis.",
+      "c": "Os textos falam de abundância, não de escassez permanente."
+    },
+    "hint": "Compare a abundância prometida em cada texto.",
+    "learningObjective": "Ligar as janelas do céu à graça abundante.",
+    "evidence": [
+      "Malaquias 3:10",
+      "2 Coríntios 9:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-04-o-sol-da-justica-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Malaquias 4:2, para os que temem o nome do Senhor nascerá o sol da justiça.",
+    "prompt": "Em Malaquias 4:2, para os que temem o nome do Senhor nascerá o sol da justiça.",
+    "cue": "Em Malaquias 4:2, para os que temem o nome do Senhor nascerá o sol da justiça.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "nascerá o sol da justiça",
+    "feedbackCorrect": "O texto promete o sol da justiça a quem teme o nome do Senhor.",
+    "feedbackWrong": {
+      "false": "Releia 4:2: para vocês que temem, nascerá o sol da justiça."
+    },
+    "hint": "Veja o que nasce para os que temem.",
+    "learningObjective": "Observar a promessa aos que temem.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-04-o-sol-da-justica-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia do Senhor.",
+    "prompt": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia do Senhor.",
+    "cue": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia do Senhor.",
+    "verseRef": "Malaquias 4:5",
+    "passageText": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR.",
+    "options": [
+      {
+        "id": "a",
+        "text": "profeta"
+      },
+      {
+        "id": "b",
+        "text": "terrível"
+      },
+      {
+        "id": "c",
+        "text": "Elias"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu vos envio o profeta Elias",
+    "feedbackCorrect": "O Senhor envia o profeta Elias antes do grande e terrível Dia.",
+    "feedbackWrong": {
+      "a": "\"Profeta\" é o ofício; o nome do enviado é Elias.",
+      "b": "\"Terrível\" descreve o Dia; quem é enviado é Elias."
+    },
+    "hint": "Leia o nome do enviado no versículo.",
+    "learningObjective": "Identificar o profeta enviado antes do Dia.",
+    "evidence": [
+      "Malaquias 4:5"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-04-o-sol-da-justica-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Malaquias 4:1, a que o dia que vem é comparado?",
+    "prompt": "Segundo Malaquias 4:1, a que o dia que vem é comparado?",
+    "cue": "Segundo Malaquias 4:1, a que o dia que vem é comparado?",
+    "verseRef": "Malaquias 4:1",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A uma fornalha"
+      },
+      {
+        "id": "b",
+        "text": "A uma colheita alegre"
+      },
+      {
+        "id": "c",
+        "text": "A uma brisa suave"
+      },
+      {
+        "id": "d",
+        "text": "A uma noite sem fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vem o dia ardendo como uma fornalha",
+    "feedbackCorrect": "O dia vem ardendo como uma fornalha para os arrogantes.",
+    "feedbackWrong": {
+      "b": "Para os arrogantes o dia consome; não é colheita alegre.",
+      "c": "O texto fala de fornalha, não de brisa.",
+      "d": "A imagem é fogo de fornalha, não noite."
+    },
+    "hint": "Veja a comparação depois de \"ardendo como\".",
+    "learningObjective": "Observar a imagem do dia do Senhor.",
+    "evidence": [
+      "Malaquias 4:1"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-04-o-sol-da-justica-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Malaquias 4:2 na ordem do texto.",
+    "prompt": "Monte Malaquias 4:2 na ordem do texto.",
+    "cue": "Monte Malaquias 4:2 na ordem do texto.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas para vocês, que temem o meu nome"
+      },
+      {
+        "id": "b",
+        "text": "nascerá o sol da justiça"
+      },
+      {
+        "id": "c",
+        "text": "trazendo salvação em suas asas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nascerá o sol da justiça",
+    "feedbackCorrect": "Primeiro quem teme, depois o sol, e então a salvação nas asas.",
+    "feedbackWrong": {
+      "default": "Comece pelo \"Mas para vocês\"; as asas fecham a frase."
+    },
+    "hint": "O versículo começa com o contraste \"Mas\".",
+    "learningObjective": "Reconhecer a sequência de Malaquias 4:2.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-04-o-sol-da-justica-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Malaquias 4:1, a que os arrogantes serão semelhantes?",
+    "prompt": "Em Malaquias 4:1, a que os arrogantes serão semelhantes?",
+    "cue": "Em Malaquias 4:1, a que os arrogantes serão semelhantes?",
+    "verseRef": "Malaquias 4:1",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo.",
+    "template": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a ___. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "palha"
+      },
+      {
+        "id": "b",
+        "text": "ouro"
+      },
+      {
+        "id": "c",
+        "text": "rocha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "serão como a palha",
+    "feedbackCorrect": "Arrogantes e perversos serão como a palha no dia que consome.",
+    "feedbackWrong": {
+      "b": "O texto não fala de ouro; fala de palha.",
+      "c": "Não há rocha aqui; a comparação é com a palha."
+    },
+    "hint": "Veja a comparação depois de \"serão como\".",
+    "learningObjective": "Lembrar a imagem dos arrogantes no dia.",
+    "evidence": [
+      "Malaquias 4:1"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-04-o-sol-da-justica-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Malaquias 4:2 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 4:2 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 4:2 comunica que se liga a este contexto?",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "passageA": {
+      "ref": "Malaquias 4:2",
+      "text": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Quem teme o nome do Senhor recebe salvação, não fornalha."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mesmo destino para todos"
+      },
+      {
+        "id": "b",
+        "text": "Salvação para quem teme"
+      },
+      {
+        "id": "c",
+        "text": "Fim sem qualquer esperança"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "trazendo salvação em suas asas",
+    "feedbackCorrect": "O sol da justiça traz salvação em suas asas para quem teme.",
+    "feedbackWrong": {
+      "a": "Há contraste: fornalha para uns, sol para outros.",
+      "c": "Há salvação e salto de alegria no texto."
+    },
+    "hint": "Veja o que o sol traz em suas asas.",
+    "learningObjective": "Ligar 4:2 à salvação dos que temem.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-04-o-sol-da-justica-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+    "prompt": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+    "cue": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+    "verseRef": "Malaquias 4:1–2",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo. Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas para vocês, que temem o meu nome",
+    "feedbackCorrect": "O \"Mas\" marca o contraste: fornalha para uns, sol da justiça para outros.",
+    "feedbackWrong": {
+      "true": "Releia o início de 4:2: o destino muda para quem teme."
+    },
+    "hint": "Compare 4:1 com a abertura de 4:2.",
+    "learningObjective": "Compreender o contraste do dia do Senhor.",
+    "evidence": [
+      "Malaquias 4:1–2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-04-o-sol-da-justica-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+    "prompt": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+    "cue": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "sol"
+      },
+      {
+        "id": "c",
+        "text": "asas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas para vocês, que temem o meu nome",
+    "feedbackCorrect": "\"Mas\" vira a página: do fogo dos arrogantes ao sol dos que temem.",
+    "feedbackWrong": {
+      "b": "\"Sol\" é a promessa; o contraste começa com \"Mas\".",
+      "c": "\"Asas\" descrevem a salvação; o marcador é \"Mas\"."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-04-o-sol-da-justica-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Malaquias 4:5–6 se relaciona com o Dia do Senhor?",
+    "prompt": "Como Malaquias 4:5–6 se relaciona com o Dia do Senhor?",
+    "cue": "Como Malaquias 4:5–6 se relaciona com o Dia do Senhor?",
+    "verseRef": "Malaquias 4:5–6",
+    "passageText": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR. Ele converterá o coração dos pais aos filhos, e o coração dos filhos aos pais; para que eu não venha e fira a terra com maldição.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A Lei substitui qualquer envio de profeta"
+      },
+      {
+        "id": "b",
+        "text": "Elias é enviado antes, para converter corações"
+      },
+      {
+        "id": "c",
+        "text": "A maldição já caiu e não pode ser evitada"
+      },
+      {
+        "id": "d",
+        "text": "Elias vem depois do Dia, só para celebrar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "antes que venha o grande e terrível Dia do SENHOR",
+    "feedbackCorrect": "Elias vem antes do Dia e converte corações para evitar a maldição.",
+    "feedbackWrong": {
+      "a": "A Lei deve ser lembrada; Elias ainda é anunciado.",
+      "c": "A conversão existe \"para que eu não venha e fira\".",
+      "d": "O texto diz \"antes\", não depois."
+    },
+    "hint": "Veja a palavra \"antes\" em 4:5 e o \"para que\" em 4:6.",
+    "learningObjective": "Relacionar o envio de Elias ao Dia.",
+    "evidence": [
+      "Malaquias 4:5–6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-04-o-sol-da-justica-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o fechamento em Malaquias 4:1–5?",
+    "prompt": "Como avança o fechamento em Malaquias 4:1–5?",
+    "cue": "Como avança o fechamento em Malaquias 4:1–5?",
+    "verseRef": "Malaquias 4:1–2",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo. Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia como fornalha para os arrogantes"
+      },
+      {
+        "id": "b",
+        "text": "O sol da justiça para quem teme"
+      },
+      {
+        "id": "c",
+        "text": "O envio de Elias antes do Dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "vem o dia ardendo como uma fornalha",
+    "feedbackCorrect": "Primeiro o juízo, depois a salvação, e então o enviado.",
+    "feedbackWrong": {
+      "default": "Comece pela fornalha; Elias fecha o movimento."
+    },
+    "hint": "Siga 4:1, 4:2 e 4:5.",
+    "learningObjective": "Compreender o movimento do fechamento do livro.",
+    "evidence": [
+      "Malaquias 4:1",
+      "Malaquias 4:2",
+      "Malaquias 4:5"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-04-o-sol-da-justica-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Malaquias 4:5, que palavra marca o tempo do envio de Elias em relação ao Dia?",
+    "prompt": "Em Malaquias 4:5, que palavra marca o tempo do envio de Elias em relação ao Dia?",
+    "cue": "Em Malaquias 4:5, que palavra marca o tempo do envio de Elias em relação ao Dia?",
+    "verseRef": "Malaquias 4:5",
+    "passageText": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR.",
+    "template": "Eis que eu vos envio o profeta Elias, ___ que venha o grande e terrível Dia do SENHOR.",
+    "options": [
+      {
+        "id": "a",
+        "text": "depois"
+      },
+      {
+        "id": "b",
+        "text": "antes"
+      },
+      {
+        "id": "c",
+        "text": "durante"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "antes que venha o grande e terrível Dia do SENHOR",
+    "feedbackCorrect": "\"Antes\" marca a sequência: Elias vem, e então o Dia.",
+    "feedbackWrong": {
+      "a": "O texto não diz depois; diz antes.",
+      "c": "Não é durante o Dia; é antes que ele venha."
+    },
+    "hint": "Olhe a relação entre o envio e o Dia no versículo.",
+    "learningObjective": "Compreender a sequência anunciada.",
+    "evidence": [
+      "Malaquias 4:5"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-04-o-sol-da-justica-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Malaquias 4:5 a Lucas 1:17?",
+    "prompt": "O que liga Malaquias 4:5 a Lucas 1:17?",
+    "cue": "O que liga Malaquias 4:5 a Lucas 1:17?",
+    "verseRef": "Malaquias 4:5",
+    "passageText": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR.",
+    "passageA": {
+      "ref": "Malaquias 4:5",
+      "text": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR."
+    },
+    "passageB": {
+      "ref": "Lucas 1:17",
+      "text": "Irá adiante dele no espírito e poder de Elias, para converter os corações dos pais aos filhos e os desobedientes à prudência dos justos, a fim de preparar para o Senhor um povo preparado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito e poder de Elias"
+      },
+      {
+        "id": "b",
+        "text": "Dia sem qualquer preparo"
+      },
+      {
+        "id": "c",
+        "text": "Fim da profecia em Israel"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu vos envio o profeta Elias",
+    "feedbackCorrect": "Lucas lê o envio de Elias no preparo do caminho do Senhor.",
+    "feedbackWrong": {
+      "b": "Há enviado antes do Dia; há preparo.",
+      "c": "Os textos anunciam envio e preparo, não o fim da profecia."
+    },
+    "hint": "Compare o enviado e a conversão dos corações.",
+    "learningObjective": "Relacionar Elias em Malaquias e em Lucas.",
+    "evidence": [
+      "Malaquias 4:5",
+      "Lucas 1:17"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-04-o-sol-da-justica-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Malaquias 4:4–5, basta esperar Elias; lembrar a Lei de Moisés já não importa.",
+    "prompt": "Em Malaquias 4:4–5, basta esperar Elias; lembrar a Lei de Moisés já não importa.",
+    "cue": "Em Malaquias 4:4–5, basta esperar Elias; lembrar a Lei de Moisés já não importa.",
+    "verseRef": "Malaquias 4:4–5",
+    "passageText": "Lembrem-se da Lei de Moisés, meu servo, que lhe prescrevi em Horebe para todo o Israel, ou seja, estatutos e juízos. Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Lembrem-se da Lei de Moisés, meu servo",
+    "feedbackCorrect": "Antes de anunciar Elias, o Senhor manda lembrar a Lei.",
+    "feedbackWrong": {
+      "true": "O texto coloca a Lei e o envio de Elias juntos, sem anular a Lei."
+    },
+    "hint": "Veja o que vem imediatamente antes do anúncio de Elias.",
+    "learningObjective": "Interpretar Lei e Elias como chamados juntos.",
+    "evidence": [
+      "Malaquias 4:4–5"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-04-o-sol-da-justica-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Malaquias 4:2, toque o trecho que sustenta a leitura de salvação real, não só metáfora vazia.",
+    "prompt": "Em Malaquias 4:2, toque o trecho que sustenta a leitura de salvação real, não só metáfora vazia.",
+    "cue": "Em Malaquias 4:2, toque o trecho que sustenta a leitura de salvação real, não só metáfora vazia.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estrebaria"
+      },
+      {
+        "id": "b",
+        "text": "bezerros"
+      },
+      {
+        "id": "c",
+        "text": "salvação"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "trazendo salvação em suas asas",
+    "feedbackCorrect": "O sol traz salvação em suas asas: há livramento concreto.",
+    "feedbackWrong": {
+      "a": "\"Estrebaria\" fecha a imagem; o que sustenta a leitura é salvação.",
+      "b": "\"Bezerros\" ilustram a alegria; a salvação está antes."
+    },
+    "hint": "Procure o que o sol traz em suas asas.",
+    "learningObjective": "Sustentar com o texto a salvação prometida.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-04-o-sol-da-justica-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Malaquias 4:1–2 sustenta sobre o dia do Senhor?",
+    "prompt": "Que leitura Malaquias 4:1–2 sustenta sobre o dia do Senhor?",
+    "cue": "Que leitura Malaquias 4:1–2 sustenta sobre o dia do Senhor?",
+    "verseRef": "Malaquias 4:1–2",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo. Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há juízo e salvação, conforme o temor ao nome"
+      },
+      {
+        "id": "b",
+        "text": "O sol da justiça dispensa temer o nome"
+      },
+      {
+        "id": "c",
+        "text": "Só existe fornalha, sem qualquer esperança"
+      },
+      {
+        "id": "d",
+        "text": "O dia é igual para arrogantes e tementes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas para vocês, que temem o meu nome",
+    "feedbackCorrect": "Fornalha para os arrogantes; sol da justiça para quem teme.",
+    "feedbackWrong": {
+      "b": "A promessa é justamente para quem teme o nome.",
+      "c": "Há salvação e alegria para os que temem.",
+      "d": "O \"Mas\" de 4:2 mostra destinos diferentes."
+    },
+    "hint": "Compare as duas imagens: fornalha e sol.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Malaquias 4:1–2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-04-o-sol-da-justica-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da luz prometida em Malaquias 4:2?",
+    "prompt": "Qual sequência revela o caminho da luz prometida em Malaquias 4:2?",
+    "cue": "Qual sequência revela o caminho da luz prometida em Malaquias 4:2?",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nasce o sol da justiça com salvação"
+      },
+      {
+        "id": "b",
+        "text": "Elias restaura e prepara o caminho"
+      },
+      {
+        "id": "c",
+        "text": "Cristo se apresenta como estrela da manhã"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nascerá o sol da justiça",
+    "feedbackCorrect": "A promessa de luz aponta para o preparo e para Cristo, a estrela da manhã.",
+    "feedbackWrong": {
+      "default": "Siga: Malaquias, Mateus e Apocalipse."
+    },
+    "hint": "Siga a ordem: promessa, preparo e cumprimento.",
+    "learningObjective": "Ver o sol da justiça no fio da Bíblia.",
+    "evidence": [
+      "Malaquias 4:2",
+      "Mateus 17:11",
+      "Apocalipse 22:16"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-04-o-sol-da-justica-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Malaquias 4:1, que palavra nomeia a imagem do dia que consome?",
+    "prompt": "Em Malaquias 4:1, que palavra nomeia a imagem do dia que consome?",
+    "cue": "Em Malaquias 4:1, que palavra nomeia a imagem do dia que consome?",
+    "verseRef": "Malaquias 4:1",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo.",
+    "template": "Pois eis que vem o dia ardendo como uma ___; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Horebe"
+      },
+      {
+        "id": "b",
+        "text": "estrebaria"
+      },
+      {
+        "id": "c",
+        "text": "fornalha"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vem o dia ardendo como uma fornalha",
+    "feedbackCorrect": "A fornalha nomeia o juízo do dia sobre arrogantes e perversos.",
+    "feedbackWrong": {
+      "a": "\"Horebe\" é o lugar da Lei em 4:4.",
+      "b": "\"Estrebaria\" aparece na alegria de 4:2, não no juízo."
+    },
+    "hint": "Veja a comparação do dia que arde.",
+    "learningObjective": "Lembrar o termo que carrega o juízo da cena.",
+    "evidence": [
+      "Malaquias 4:1"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-04-o-sol-da-justica-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-04-o-sol-da-justica",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Malaquias 4:2 a Apocalipse 22:16?",
+    "prompt": "O que liga Malaquias 4:2 a Apocalipse 22:16?",
+    "cue": "O que liga Malaquias 4:2 a Apocalipse 22:16?",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "passageA": {
+      "ref": "Malaquias 4:2",
+      "text": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria."
+    },
+    "passageB": {
+      "ref": "Apocalipse 22:16",
+      "text": "Eu, Jesus, enviei o meu anjo para vos testemunhar estas coisas nas igrejas: eu sou a raiz e a geração de Davi, a radiante estrela da manhã."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Estrela da manhã"
+      },
+      {
+        "id": "b",
+        "text": "Fim sem luz alguma"
+      },
+      {
+        "id": "c",
+        "text": "Juízo sem salvação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nascerá o sol da justiça",
+    "feedbackCorrect": "A luz prometida aos que temem encontra eco em Cristo, a estrela da manhã.",
+    "feedbackWrong": {
+      "b": "Os dois textos falam de luz, não de escuridão final.",
+      "c": "Malaquias fala de salvação; Apocalipse apresenta a estrela."
+    },
+    "hint": "Compare as imagens de luz nos dois textos.",
+    "learningObjective": "Ligar o sol da justiça à estrela da manhã.",
+    "evidence": [
+      "Malaquias 4:2",
+      "Apocalipse 22:16"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Malaquias 1:6, o Senhor diz aos sacerdotes que eles desprezam o seu nome.",
+    "prompt": "Em Malaquias 1:6, o Senhor diz aos sacerdotes que eles desprezam o seu nome.",
+    "cue": "Em Malaquias 1:6, o Senhor diz aos sacerdotes que eles desprezam o seu nome.",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "ó sacerdotes que desprezam o meu nome",
+    "feedbackCorrect": "A acusação é direta: sacerdotes que desprezam o nome do Senhor.",
+    "feedbackWrong": {
+      "false": "Releia o vocativo: ó sacerdotes que desprezam o meu nome."
+    },
+    "hint": "Veja a quem o Senhor se dirige no versículo.",
+    "learningObjective": "Observar a acusação sobre o nome do Senhor.",
+    "evidence": [
+      "Malaquias 1:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+    "prompt": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+    "cue": "Em Malaquias 2:7, toque o que o sacerdote é chamado de ser.",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "conhecimento"
+      },
+      {
+        "id": "b",
+        "text": "instrução"
+      },
+      {
+        "id": "c",
+        "text": "mensageiro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ele é o mensageiro do Senhor dos Exércitos",
+    "feedbackCorrect": "O sacerdote é o mensageiro do Senhor dos Exércitos.",
+    "feedbackWrong": {
+      "a": "\"Conhecimento\" é o que os lábios guardam, não o título.",
+      "b": "\"Instrução\" é o que se busca; o título é mensageiro."
+    },
+    "hint": "Olhe o fim do versículo, depois de \"pois\".",
+    "learningObjective": "Identificar o título do sacerdote.",
+    "evidence": [
+      "Malaquias 2:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Malaquias 3:8, em que o povo rouba a Deus?",
+    "prompt": "Segundo Malaquias 3:8, em que o povo rouba a Deus?",
+    "cue": "Segundo Malaquias 3:8, em que o povo rouba a Deus?",
+    "verseRef": "Malaquias 3:8",
+    "passageText": "Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nas guerras contra as nações"
+      },
+      {
+        "id": "b",
+        "text": "Só em palavras ofensivas"
+      },
+      {
+        "id": "c",
+        "text": "No descanso do sábado apenas"
+      },
+      {
+        "id": "d",
+        "text": "Nos dízimos e nas ofertas"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Nos dízimos e nas ofertas",
+    "feedbackCorrect": "A resposta do Senhor é clara: nos dízimos e nas ofertas.",
+    "feedbackWrong": {
+      "a": "Não há guerra neste versículo.",
+      "b": "O texto aponta dízimos e ofertas, não só palavras.",
+      "c": "O ponto aqui são dízimos e ofertas."
+    },
+    "hint": "Veja a resposta final do Senhor no versículo.",
+    "learningObjective": "Observar o conteúdo do roubo a Deus.",
+    "evidence": [
+      "Malaquias 3:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Malaquias 4:2 na ordem do texto.",
+    "prompt": "Monte Malaquias 4:2 na ordem do texto.",
+    "cue": "Monte Malaquias 4:2 na ordem do texto.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas para vocês, que temem o meu nome"
+      },
+      {
+        "id": "b",
+        "text": "nascerá o sol da justiça"
+      },
+      {
+        "id": "c",
+        "text": "trazendo salvação em suas asas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "nascerá o sol da justiça",
+    "feedbackCorrect": "Quem teme, o sol nasce, e a salvação vem nas asas.",
+    "feedbackWrong": {
+      "default": "Comece pelo \"Mas para vocês\"; as asas fecham a frase."
+    },
+    "hint": "O versículo começa com o contraste.",
+    "learningObjective": "Reconhecer a sequência de Malaquias 4:2.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Malaquias 3:7, o que o Senhor manda o povo fazer?",
+    "prompt": "Em Malaquias 3:7, o que o Senhor manda o povo fazer?",
+    "cue": "Em Malaquias 3:7, o que o Senhor manda o povo fazer?",
+    "verseRef": "Malaquias 3:7",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+    "template": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. ___ para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Adiem"
+      },
+      {
+        "id": "b",
+        "text": "Escondam"
+      },
+      {
+        "id": "c",
+        "text": "Retornem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "O chamado é Retornem: voltar ao Senhor que também retorna.",
+    "feedbackWrong": {
+      "a": "Não há adiamento; o Senhor chama a retornar.",
+      "b": "O texto não manda esconder; manda retornar."
+    },
+    "hint": "Procure o imperativo no meio do versículo.",
+    "learningObjective": "Lembrar o verbo do chamado ao retorno.",
+    "evidence": [
+      "Malaquias 3:7"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Malaquias 1:10 comunica que se liga a este contexto?",
+    "prompt": "O que Malaquias 1:10 comunica que se liga a este contexto?",
+    "cue": "O que Malaquias 1:10 comunica que se liga a este contexto?",
+    "verseRef": "Malaquias 1:10",
+    "passageText": "Quem entre vocês também fecharia as portas em vão? E não acendem o fogo do meu altar inutilmente. Eu não tenho prazer em vocês, diz o Senhor dos Exércitos, nem aceitarei da sua mão a oferta.",
+    "passageA": {
+      "ref": "Malaquias 1:10",
+      "text": "Quem entre vocês também fecharia as portas em vão? E não acendem o fogo do meu altar inutilmente. Eu não tenho prazer em vocês, diz o Senhor dos Exércitos, nem aceitarei da sua mão a oferta."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Ofertas ruins levam o Senhor a rejeitar o culto da mão do povo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Aceitação automática da oferta"
+      },
+      {
+        "id": "b",
+        "text": "Culto sem qualquer juízo"
+      },
+      {
+        "id": "c",
+        "text": "Rejeição da oferta ruim"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nem aceitarei da sua mão a oferta",
+    "feedbackCorrect": "O Senhor não tem prazer neles e não aceita a oferta da mão deles.",
+    "feedbackWrong": {
+      "a": "O texto afirma o contrário: não aceitará a oferta.",
+      "b": "Há juízo claro sobre o culto sem honra."
+    },
+    "hint": "Veja o que o Senhor diz sobre a oferta no fim.",
+    "learningObjective": "Ligar 1:10 à rejeição das ofertas ruins.",
+    "evidence": [
+      "Malaquias 1:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-07",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia.",
+    "prompt": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia.",
+    "cue": "Em Malaquias 4:5, toque quem o Senhor envia antes do Dia.",
+    "verseRef": "Malaquias 4:5",
+    "passageText": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Elias"
+      },
+      {
+        "id": "b",
+        "text": "profeta"
+      },
+      {
+        "id": "c",
+        "text": "terrível"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "eu vos envio o profeta Elias",
+    "feedbackCorrect": "O enviado é o profeta Elias, antes do grande e terrível Dia.",
+    "feedbackWrong": {
+      "b": "\"Profeta\" é o ofício; o nome é Elias.",
+      "c": "\"Terrível\" descreve o Dia, não o enviado."
+    },
+    "hint": "Leia o nome do enviado no versículo.",
+    "learningObjective": "Identificar o profeta enviado antes do Dia.",
+    "evidence": [
+      "Malaquias 4:5"
+    ]
+  },
+  {
+    "id": "malaquias-cap-sem-mlc-boss-1-08",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Malaquias 2:8 na ordem do texto.",
+    "prompt": "Monte Malaquias 2:8 na ordem do texto.",
+    "cue": "Monte Malaquias 2:8 na ordem do texto.",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vocês se desviaram do caminho"
+      },
+      {
+        "id": "b",
+        "text": "por causa de sua instrução, fizeram muitos tropeçarem"
+      },
+      {
+        "id": "c",
+        "text": "violaram a aliança de Levi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "violaram a aliança de Levi",
+    "feedbackCorrect": "Desvio, tropeço e violação da aliança, nessa ordem.",
+    "feedbackWrong": {
+      "default": "Comece pelo desvio do caminho; a aliança vem no fim."
+    },
+    "hint": "O versículo começa com o desvio de vocês.",
+    "learningObjective": "Reconhecer a sequência de Malaquias 2:8.",
+    "evidence": [
+      "Malaquias 2:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+    "prompt": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+    "cue": "Em Malaquias 4:1–2, o dia do Senhor trata arrogantes e tementes da mesma forma.",
+    "verseRef": "Malaquias 4:1–2",
+    "passageText": "Pois eis que vem o dia ardendo como uma fornalha; todos os arrogantes e todos os que praticam a perversidade serão como a palha. O dia que está por vir os consumirá, diz o SENHOR dos Exércitos, de sorte que não deixará nem raiz nem ramo. Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Mas para vocês, que temem o meu nome",
+    "feedbackCorrect": "O \"Mas\" marca destinos diferentes: fornalha e sol da justiça.",
+    "feedbackWrong": {
+      "true": "Releia 4:2: o destino muda para quem teme o nome."
+    },
+    "hint": "Compare 4:1 com a abertura de 4:2.",
+    "learningObjective": "Compreender o contraste do dia do Senhor.",
+    "evidence": [
+      "Malaquias 4:1–2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+    "prompt": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+    "cue": "Em Malaquias 2:8, toque o trecho que marca a causa do tropeço de muitos.",
+    "verseRef": "Malaquias 2:8",
+    "passageText": "Vocês se desviaram do caminho e, por causa de sua instrução, fizeram muitos tropeçarem; violaram a aliança de Levi, diz o Senhor dos Exércitos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "caminho"
+      },
+      {
+        "id": "b",
+        "text": "aliança"
+      },
+      {
+        "id": "c",
+        "text": "por causa"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "por causa de sua instrução",
+    "feedbackCorrect": "\"Por causa\" liga a instrução deles ao tropeço de muitos.",
+    "feedbackWrong": {
+      "a": "\"Caminho\" é de onde se desviaram; a causa vem depois.",
+      "b": "\"Aliança\" é o que violaram; o marcador de causa é \"por causa\"."
+    },
+    "hint": "Procure as duas palavras antes de \"de sua instrução\".",
+    "learningObjective": "Reconhecer o marcador de causa.",
+    "evidence": [
+      "Malaquias 2:8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+    "prompt": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+    "cue": "Como Malaquias 3:10 se relaciona com a acusação de Malaquias 3:8?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Transfere o dízimo só para as nações"
+      },
+      {
+        "id": "b",
+        "text": "Anula os dízimos como prática antiga"
+      },
+      {
+        "id": "c",
+        "text": "Ignora o roubo e fala só de bênção"
+      },
+      {
+        "id": "d",
+        "text": "Responde ao roubo com o chamado a trazer os dízimos"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Acusados de roubo, são chamados a trazer os dízimos de volta.",
+    "feedbackWrong": {
+      "a": "A casa do tesouro é a do Senhor, no meio do povo.",
+      "b": "O texto reforça os dízimos, não os anula.",
+      "c": "A bênção vem depois da ordem de trazer."
+    },
+    "hint": "Compare o que falta em 3:8 com o que se manda em 3:10.",
+    "learningObjective": "Relacionar acusação e chamado prático.",
+    "evidence": [
+      "Malaquias 3:8",
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a etapa em Malaquias 1–3?",
+    "prompt": "Como avança a etapa em Malaquias 1–3?",
+    "cue": "Como avança a etapa em Malaquias 1–3?",
+    "verseRef": "Malaquias 1:6–7",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\" Ofereceis sobre o meu altar pão imundo e perguntais: \"Em que te havemos profanado?\" Na afirmação de que a mesa do SENHOR é desprezível.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Honra negada e ofertas rejeitadas"
+      },
+      {
+        "id": "b",
+        "text": "Aliança de Levi violada"
+      },
+      {
+        "id": "c",
+        "text": "Chamado a retornar com os dízimos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "ó sacerdotes que desprezam o meu nome",
+    "feedbackCorrect": "Da mesa desprezada à aliança quebrada, e então ao retorno.",
+    "feedbackWrong": {
+      "default": "Comece pelas ofertas; o retorno com dízimos vem depois."
+    },
+    "hint": "Siga a ordem das cenas da etapa.",
+    "learningObjective": "Compreender o arco da etapa.",
+    "evidence": [
+      "Malaquias 1:6",
+      "Malaquias 2:8",
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Malaquias 3:6, que verbo afirma o que o Senhor não faz?",
+    "prompt": "Em Malaquias 3:6, que verbo afirma o que o Senhor não faz?",
+    "cue": "Em Malaquias 3:6, que verbo afirma o que o Senhor não faz?",
+    "verseRef": "Malaquias 3:6",
+    "passageText": "Porque eu, o Senhor, não mudo; por isso, vocês, ó filhos de Jacó, não serão consumidos.",
+    "template": "Porque eu, o Senhor, não ___; por isso, vocês, ó filhos de Jacó, não serão consumidos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouve"
+      },
+      {
+        "id": "b",
+        "text": "espera"
+      },
+      {
+        "id": "c",
+        "text": "mudo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "eu, o Senhor, não mudo",
+    "feedbackCorrect": "O Senhor não muda; por isso Jacó não é consumido.",
+    "feedbackWrong": {
+      "a": "O texto não fala de ouvir; fala de não mudar.",
+      "b": "Não há \"espera\" aqui; o verbo é \"mudo\"."
+    },
+    "hint": "Leia a afirmação que o Senhor faz sobre si mesmo.",
+    "learningObjective": "Compreender a imutabilidade do Senhor no texto.",
+    "evidence": [
+      "Malaquias 3:6"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+    "prompt": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+    "cue": "O que liga Malaquias 2:7 a Deuteronômio 33:10?",
+    "verseRef": "Malaquias 2:7",
+    "passageText": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos.",
+    "passageA": {
+      "ref": "Malaquias 2:7",
+      "text": "Porque os lábios do sacerdote devem guardar o conhecimento, e da sua boca devem buscar a instrução, pois ele é o mensageiro do Senhor dos Exércitos."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 33:10",
+      "text": "Ensinou os teus juízos a Jacó e a tua lei a Israel; ofereceu incenso às tuas narinas e holocaustos sobre o teu altar."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Culto sem ensino"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio dos lábios"
+      },
+      {
+        "id": "c",
+        "text": "Ensinar os juízos"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "da sua boca devem buscar a instrução",
+    "feedbackCorrect": "Nos dois textos, Levi ensina: juízos, conhecimento e instrução.",
+    "feedbackWrong": {
+      "a": "O foco é ensinar, não culto sem palavra.",
+      "b": "Os lábios devem guardar e transmitir, não calar."
+    },
+    "hint": "Compare a tarefa de ensinar em cada texto.",
+    "learningObjective": "Relacionar o mensageiro à bênção de Levi.",
+    "evidence": [
+      "Malaquias 2:7",
+      "Deuteronômio 33:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-07",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+    "prompt": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+    "cue": "Em Malaquias 4:2, toque a palavra que marca o contraste com o dia como fornalha.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "asas"
+      },
+      {
+        "id": "c",
+        "text": "sol"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas para vocês, que temem o meu nome",
+    "feedbackCorrect": "\"Mas\" vira a página: do fogo dos arrogantes ao sol dos que temem.",
+    "feedbackWrong": {
+      "b": "\"Asas\" descrevem a salvação; o marcador é \"Mas\".",
+      "c": "\"Sol\" é a promessa; o contraste começa com \"Mas\"."
+    },
+    "hint": "Procure a primeira palavra do versículo.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-cam-mlc-boss-1-08",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se encadeiam os movimentos de Malaquias 3:7–10?",
+    "prompt": "Como se encadeiam os movimentos de Malaquias 3:7–10?",
+    "cue": "Como se encadeiam os movimentos de Malaquias 3:7–10?",
+    "verseRef": "Malaquias 3:7–8",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Chamado a retornar ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Acusação de roubo nos dízimos"
+      },
+      {
+        "id": "c",
+        "text": "Ordem de trazer os dízimos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "Primeiro o retorno, depois o roubo, e então a ordem de trazer.",
+    "feedbackWrong": {
+      "default": "Comece pelo \"Retornem\"; a ordem de trazer vem em 3:10."
+    },
+    "hint": "Siga 3:7, 3:8 e 3:10.",
+    "learningObjective": "Compreender o movimento do retorno.",
+    "evidence": [
+      "Malaquias 3:7",
+      "Malaquias 3:8",
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-01",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Malaquias 1–3, desprezar a mesa e roubar nos dízimos são tratados como falta de fidelidade ao Senhor que chama a voltar.",
+    "prompt": "Em Malaquias 1–3, desprezar a mesa e roubar nos dízimos são tratados como falta de fidelidade ao Senhor que chama a voltar.",
+    "cue": "Em Malaquias 1–3, desprezar a mesa e roubar nos dízimos são tratados como falta de fidelidade ao Senhor que chama a voltar.",
+    "verseRef": "Malaquias 3:7–8",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "O Senhor liga culto, aliança e dízimos ao chamado a retornar.",
+    "feedbackWrong": {
+      "false": "O texto une mesa desprezada, aliança violada e roubo ao chamado de voltar."
+    },
+    "hint": "Una a acusação de 3:8 ao chamado de 3:7.",
+    "learningObjective": "Interpretar o arco da fidelidade pedida.",
+    "evidence": [
+      "Malaquias 3:7–8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-02",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Malaquias 4:2, toque o trecho que sustenta salvação real para quem teme.",
+    "prompt": "Em Malaquias 4:2, toque o trecho que sustenta salvação real para quem teme.",
+    "cue": "Em Malaquias 4:2, toque o trecho que sustenta salvação real para quem teme.",
+    "verseRef": "Malaquias 4:2",
+    "passageText": "Mas para vocês, que temem o meu nome, nascerá o sol da justiça, trazendo salvação em suas asas; e vocês sairão e saltarão como bezerros soltos da estrebaria.",
+    "options": [
+      {
+        "id": "a",
+        "text": "estrebaria"
+      },
+      {
+        "id": "b",
+        "text": "salvação"
+      },
+      {
+        "id": "c",
+        "text": "bezerros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "trazendo salvação em suas asas",
+    "feedbackCorrect": "O sol traz salvação em suas asas: há livramento concreto.",
+    "feedbackWrong": {
+      "a": "\"Estrebaria\" fecha a imagem; o que sustenta é salvação.",
+      "c": "\"Bezerros\" ilustram alegria; a salvação está antes."
+    },
+    "hint": "Procure o que o sol traz em suas asas.",
+    "learningObjective": "Sustentar com o texto a salvação prometida.",
+    "evidence": [
+      "Malaquias 4:2"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-03",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o bloco de Malaquias sustenta sobre o povo e o Senhor?",
+    "prompt": "Que leitura o bloco de Malaquias sustenta sobre o povo e o Senhor?",
+    "cue": "Que leitura o bloco de Malaquias sustenta sobre o povo e o Senhor?",
+    "verseRef": "Malaquias 3:7–8",
+    "passageText": "Desde os dias de seus pais, vocês se desviaram dos meus estatutos e não os obedeceram. Retornem para mim, e eu retornarei para vocês, diz o Senhor dos Exércitos; mas vocês perguntam: \"Em que devemos retornar?\" Pode um homem roubar a Deus? No entanto, vocês me roubam e perguntam: Em que te roubamos? Nos dízimos e nas ofertas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O dia do Senhor é igual para todos"
+      },
+      {
+        "id": "b",
+        "text": "O ensino sacerdotal não afeta o povo"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor rejeita Israel sem qualquer convite"
+      },
+      {
+        "id": "d",
+        "text": "O Senhor chama a voltar com fidelidade concreta"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "Retornem para mim, e eu retornarei para vocês",
+    "feedbackCorrect": "Há juízo, mas também chamado a retornar e promessa aos que temem.",
+    "feedbackWrong": {
+      "a": "Há fornalha e sol da justiça, destinos diferentes.",
+      "b": "Por causa da instrução, muitos tropeçaram.",
+      "c": "O Senhor manda retornar e promete retornar."
+    },
+    "hint": "Una o chamado de 3:7 ao contraste de 4:1–2.",
+    "learningObjective": "Escolher a interpretação do bloco.",
+    "evidence": [
+      "Malaquias 3:7–8"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-04",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da honra a Deus nesta etapa?",
+    "prompt": "Qual sequência revela o caminho da honra a Deus nesta etapa?",
+    "cue": "Qual sequência revela o caminho da honra a Deus nesta etapa?",
+    "verseRef": "Malaquias 1:6",
+    "passageText": "Um filho honra seu pai, e um servo, seu senhor. Se eu sou pai, onde está a minha honra? E, se eu sou Senhor, onde está o respeito para comigo? —diz o Senhor dos Exércitos a vocês, ó sacerdotes que desprezam o meu nome. Mas vocês perguntam: \"Em que desprezamos o teu nome?\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor pede a honra devida ao Pai"
+      },
+      {
+        "id": "b",
+        "text": "Quem honra a Deus é honrado por ele"
+      },
+      {
+        "id": "c",
+        "text": "Elias prepara corações antes do Dia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "onde está a minha honra",
+    "feedbackCorrect": "Da honra pedida ao preparo dos corações, o Senhor quer um povo fiel.",
+    "feedbackWrong": {
+      "default": "Siga: Malaquias 1:6, 1 Samuel 2:30 e Lucas 1:17."
+    },
+    "hint": "Siga a ordem: denúncia, princípio e preparo.",
+    "learningObjective": "Ver a honra a Deus no fio da Bíblia.",
+    "evidence": [
+      "Malaquias 1:6",
+      "1 Samuel 2:30",
+      "Lucas 1:17"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-05",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Malaquias 3:10, que palavra nomeia o que deve ser trazido à casa do tesouro?",
+    "prompt": "Em Malaquias 3:10, que palavra nomeia o que deve ser trazido à casa do tesouro?",
+    "cue": "Em Malaquias 3:10, que palavra nomeia o que deve ser trazido à casa do tesouro?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "template": "Trazei todos os ___ à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "dízimos"
+      },
+      {
+        "id": "b",
+        "text": "exércitos"
+      },
+      {
+        "id": "c",
+        "text": "fornalha"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Os dízimos são o termo concreto do retorno e da prova.",
+    "feedbackWrong": {
+      "b": "\"Exércitos\" faz parte do título do Senhor.",
+      "c": "\"Fornalha\" é imagem do dia em 4:1, não do que se traz."
+    },
+    "hint": "É o objeto do verbo \"Trazei\".",
+    "learningObjective": "Lembrar o termo concreto do retorno.",
+    "evidence": [
+      "Malaquias 3:10"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-06",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Malaquias 4:5 a Lucas 1:17?",
+    "prompt": "O que liga Malaquias 4:5 a Lucas 1:17?",
+    "cue": "O que liga Malaquias 4:5 a Lucas 1:17?",
+    "verseRef": "Malaquias 4:5",
+    "passageText": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR.",
+    "passageA": {
+      "ref": "Malaquias 4:5",
+      "text": "Eis que eu vos envio o profeta Elias, antes que venha o grande e terrível Dia do SENHOR."
+    },
+    "passageB": {
+      "ref": "Lucas 1:17",
+      "text": "Irá adiante dele no espírito e poder de Elias, para converter os corações dos pais aos filhos e os desobedientes à prudência dos justos, a fim de preparar para o Senhor um povo preparado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia sem qualquer preparo"
+      },
+      {
+        "id": "b",
+        "text": "Espírito e poder de Elias"
+      },
+      {
+        "id": "c",
+        "text": "Fim da profecia em Israel"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "eu vos envio o profeta Elias",
+    "feedbackCorrect": "Lucas lê o envio de Elias no preparo do caminho do Senhor.",
+    "feedbackWrong": {
+      "a": "Há enviado antes do Dia; há preparo.",
+      "c": "Os textos anunciam envio e preparo, não o fim da profecia."
+    },
+    "hint": "Compare o enviado e a conversão dos corações.",
+    "learningObjective": "Ligar Elias em Malaquias e em Lucas.",
+    "evidence": [
+      "Malaquias 4:5",
+      "Lucas 1:17"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-07",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Malaquias 1:14, toque o trecho que mostra quem o Senhor diz ser.",
+    "prompt": "Em Malaquias 1:14, toque o trecho que mostra quem o Senhor diz ser.",
+    "cue": "Em Malaquias 1:14, toque o trecho que mostra quem o Senhor diz ser.",
+    "verseRef": "Malaquias 1:14",
+    "passageText": "Maldito seja o enganador que, tendo um animal sadio em seu rebanho, promete e oferece ao Senhor um defeituoso; porque eu sou grande Rei, diz o Senhor dos Exércitos, e o meu nome é terrível entre as nações.",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande Rei"
+      },
+      {
+        "id": "b",
+        "text": "enganador"
+      },
+      {
+        "id": "c",
+        "text": "rebanho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "porque eu sou grande Rei",
+    "feedbackCorrect": "Ele se apresenta como grande Rei: a oferta defeituosa é insulto.",
+    "feedbackWrong": {
+      "b": "\"Enganador\" é quem é maldito, não quem o Senhor é.",
+      "c": "\"Rebanho\" é o lugar do animal; a identidade vem depois."
+    },
+    "hint": "Procure o que o Senhor diz de si depois de \"porque\".",
+    "learningObjective": "Sustentar a identidade régia do Senhor.",
+    "evidence": [
+      "Malaquias 1:14"
+    ]
+  },
+  {
+    "id": "malaquias-cap-pro-mlc-boss-1-08",
+    "trail": "malaquias-cap",
+    "section": "mlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho da fidelidade pedida em Malaquias?",
+    "prompt": "Qual sequência revela o caminho da fidelidade pedida em Malaquias?",
+    "cue": "Qual sequência revela o caminho da fidelidade pedida em Malaquias?",
+    "verseRef": "Malaquias 3:10",
+    "passageText": "Trazei todos os dízimos à casa do tesouro, para que haja mantimento na minha casa; e provai-me nisto, diz o Senhor dos Exércitos: se eu não vos abrir as janelas do céu e não derramar sobre vós bênção sem medida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Honrar o nome com ofertas dignas"
+      },
+      {
+        "id": "b",
+        "text": "Guardar e ensinar a aliança"
+      },
+      {
+        "id": "c",
+        "text": "Retornar com os dízimos"
+      },
+      {
+        "id": "d",
+        "text": "Temer o nome e esperar o sol"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "correctAnswer": "a,b,c,d",
+    "evidenceSpan": "Trazei todos os dízimos à casa do tesouro",
+    "feedbackCorrect": "Honra, aliança, retorno e temor: o arco da etapa.",
+    "feedbackWrong": {
+      "default": "Siga a ordem das quatro cenas da etapa."
+    },
+    "hint": "Siga a ordem dos capítulos 1 a 4.",
+    "learningObjective": "Ver o arco completo da etapa.",
+    "evidence": [
+      "Malaquias 1:6",
+      "Malaquias 2:7",
+      "Malaquias 3:10",
+      "Malaquias 4:2"
+    ]
+  }
+]

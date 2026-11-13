@@ -1,0 +1,33 @@
+{
+  "slug": "judas-cap",
+  "prefix": "jdc",
+  "book": "Judas",
+  "chapters": 1,
+  "title": "Judas",
+  "description": "Judas capítulo a capítulo: contender pela fé e lembrar o juízo dos ímpios.",
+  "icon": "⚔️",
+  "color": "#004D40",
+  "order": 77,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["judas"],
+  "modules": [
+    {
+      "title": "Alerta e juízo · cap. 1",
+      "scenes": [
+        {
+          "ref": "Judas 1:7–13",
+          "title": "Exemplos de juízo",
+          "intro": "Judas lembra Sodoma, Caim, Balaão e Coré como advertência contra os ímpios.",
+          "insight": "Esses são manchas nos ágapes: nuvens sem água, árvores sem fruto, para quem está reservada a escuridão.",
+          "objective": "Levar a sério o juízo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Alerta e juízo",
+        "intro": "Revise os exemplos de juízo e o perfil dos que se infiltraram.",
+        "insight": "A fé entregue uma vez exige vigilância contra o engano"
+      }
+    }
+  ]
+}

@@ -1,0 +1,343 @@
+{
+  "study": {
+    "passageRef": "Colossenses 3:12–17",
+    "passages": [{"ref": "Colossenses 3:12–17"}],
+    "context": "Depois de falar da vida escondida com Cristo, Paulo descreve as vestes da comunidade: misericórdia, perdão, amor, paz e gratidão em nome de Jesus.",
+    "keyword": "amor",
+    "keywordGloss": "Acima de tudo, o vínculo da perfeição que une as outras virtudes.",
+    "focusQuestion": "O que muda na sua casa se o amor for o que você veste por cima de tudo?",
+    "reflectionPrompts": ["Revestir-se de amor", "Paz no corpo", "Tudo em nome de Jesus"],
+    "facts": [
+      {"text": "Como eleitos, devem revestir-se de misericórdia, bondade, humildade, mansidão e longanimidade.", "evidenceRef": "Colossenses 3:12", "evidenceSpan": "Revesti-vos, portanto, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia"},
+      {"text": "Devem suportar-se e perdoar-se como o Senhor perdoou.", "evidenceRef": "Colossenses 3:13", "evidenceSpan": "assim como o Senhor vos perdoou, assim também perdoai-vos"},
+      {"text": "Acima de tudo, revestir-se de amor, vínculo da perfeição.", "evidenceRef": "Colossenses 3:14", "evidenceSpan": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição"},
+      {"text": "A paz de Cristo deve reinar nos corações; foram chamados em um só corpo.", "evidenceRef": "Colossenses 3:15", "evidenceSpan": "que a paz de Cristo reine em seus corações"},
+      {"text": "A palavra de Cristo deve habitar ricamente, com ensino e cântico.", "evidenceRef": "Colossenses 3:16", "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós"},
+      {"text": "Tudo em palavra ou ação deve ser feito em nome do Senhor Jesus.", "evidenceRef": "Colossenses 3:17", "evidenceSpan": "façam em nome do Senhor Jesus"}
+    ],
+    "keyTerms": [
+      {"term": "amor", "gloss": "O vínculo da perfeição colocado acima de tudo."},
+      {"term": "paz de Cristo", "gloss": "O que deve reinar nos corações do corpo único."},
+      {"term": "palavra de Cristo", "gloss": "O que deve habitar ricamente, ensinando e louvando."}
+    ],
+    "structure": [
+      {"label": "Revestir virtudes do eleito", "evidenceRef": "Colossenses 3:12"},
+      {"label": "Suportar e perdoar como o Senhor", "evidenceRef": "Colossenses 3:13"},
+      {"label": "Amar como vínculo da perfeição", "evidenceRef": "Colossenses 3:14"},
+      {"label": "Paz, palavra e nome de Jesus", "evidenceRef": "Colossenses 3:15"}
+    ],
+    "relations": [
+      {"kind": "propósito", "text": "Revestem-se porque são eleitos, santos e amados.", "marker": "portanto", "evidenceRef": "Colossenses 3:12"},
+      {"kind": "causa", "text": "Perdoam porque o Senhor os perdoou.", "marker": "assim como", "evidenceRef": "Colossenses 3:13"},
+      {"kind": "resultado", "text": "A paz reina nos corações chamados em um só corpo.", "marker": null, "evidenceRef": "Colossenses 3:15"}
+    ],
+    "crossRefs": [
+      {"ref": "Efésios 4:32", "bridge": "Perdoar como Cristo"},
+      {"ref": "1 Coríntios 13:13", "bridge": "Amor acima de tudo"},
+      {"ref": "Filipenses 4:7", "bridge": "Paz de Deus no coração"}
+    ],
+    "misreadings": [
+      {"text": "As virtudes são opcionais para quem já é eleito.", "why": "O texto manda revestir-se precisamente porque são eleitos."},
+      {"text": "O perdão cristão independe do perdão do Senhor.", "why": "O modelo explícito é: assim como o Senhor vos perdoou."},
+      {"text": "Basta o amor; a palavra de Cristo e o nome de Jesus são secundários.", "why": "O trecho une amor, paz, palavra e tudo em nome de Jesus."}
+    ],
+    "centralInsight": "Sobre tudo, revesti-vos de amor; a paz de Cristo reine, e tudo se faça em nome do Senhor Jesus.",
+    "anchorQuestion": "Segundo Colossenses 3:14, o que é o amor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Colossenses 3:14, Paulo coloca o amor abaixo das outras virtudes da lista.",
+      "verseRef": "Colossenses 3:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+      "feedbackCorrect": "O texto diz o contrário: acima de tudo, revesti-vos de amor.",
+      "feedbackWrong": {"true": "Releia: acima de tudo, revesti-vos de amor."},
+      "hint": "Olhe as primeiras palavras do versículo.",
+      "learningObjective": "Observar o lugar do amor no texto.",
+      "evidence": ["Colossenses 3:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Colossenses 3:14, toque o que o amor é.",
+      "verseRef": "Colossenses 3:14",
+      "options": [{"id": "a", "text": "vínculo da perfeição"}, {"id": "b", "text": "Acima de tudo"}, {"id": "c", "text": "revesti-vos"}],
+      "correctOptionId": "a",
+      "evidenceSpan": "amor que é o vínculo da perfeição",
+      "feedbackCorrect": "O amor é o vínculo da perfeição.",
+      "feedbackWrong": {"b": "\"Acima de tudo\" marca a prioridade, não o que o amor é.", "c": "\"Revesti-vos\" é o verbo; a definição vem depois."},
+      "hint": "Procure a explicação depois de \"amor\".",
+      "learningObjective": "Identificar o amor como vínculo da perfeição.",
+      "evidence": ["Colossenses 3:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Colossenses 3:13, qual é o modelo do perdão mútuo?",
+      "verseRef": "Colossenses 3:13",
+      "options": [
+        {"id": "a", "text": "Assim como o Senhor vos perdoou"},
+        {"id": "b", "text": "Assim como o ofensor pedir primeiro"},
+        {"id": "c", "text": "Assim como a lei de Moisés exige"},
+        {"id": "d", "text": "Assim como a paz romana ordena"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim como o Senhor vos perdoou, assim também perdoai-vos",
+      "feedbackCorrect": "O perdão mútuo espelha o perdão do Senhor.",
+      "feedbackWrong": {"b": "O texto não condiciona ao pedido do ofensor.", "c": "O modelo é o Senhor, não a lei.", "d": "Não há menção à paz romana."},
+      "hint": "Leia a comparação no fim do versículo.",
+      "learningObjective": "Observar o modelo do perdão.",
+      "evidence": ["Colossenses 3:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Colossenses 3:14 na ordem do texto.",
+      "verseRef": "Colossenses 3:14",
+      "options": [
+        {"id": "a", "text": "Acima de tudo"},
+        {"id": "b", "text": "revesti-vos de amor"},
+        {"id": "c", "text": "que é o vínculo da perfeição"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+      "feedbackCorrect": "Prioridade, vestimenta e definição do amor.",
+      "feedbackWrong": {"default": "Comece por \"Acima de tudo\"; a definição fecha."},
+      "hint": "O versículo começa pela prioridade.",
+      "learningObjective": "Reconhecer a sequência de Colossenses 3:14.",
+      "evidence": ["Colossenses 3:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Colossenses 3:15, que a ___ de Cristo reine em seus corações.",
+      "verseRef": "Colossenses 3:15",
+      "options": [{"id": "a", "text": "paz"}, {"id": "b", "text": "ira"}, {"id": "c", "text": "lei"}],
+      "correctOptionId": "a",
+      "evidenceSpan": "que a paz de Cristo reine em seus corações",
+      "feedbackCorrect": "É a paz de Cristo que deve reinar nos corações.",
+      "feedbackWrong": {"b": "O texto fala de paz, não de ira.", "c": "A palavra é paz, não lei."},
+      "hint": "Veja o que deve reinar nos corações.",
+      "learningObjective": "Lembrar a paz de Cristo no corpo.",
+      "evidence": ["Colossenses 3:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Colossenses 3:14 comunica que se liga a este contexto?",
+      "verseRef": "Colossenses 3:14",
+      "passageA": {"ref": "Colossenses 3:14"},
+      "passageB": {"ref": "Contexto", "text": "As virtudes se unem quando o amor fica por cima de tudo."},
+      "options": [
+        {"id": "a", "text": "Amor une em perfeição"},
+        {"id": "b", "text": "Amor é opcional"},
+        {"id": "c", "text": "Só humildade basta"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amor que é o vínculo da perfeição",
+      "feedbackCorrect": "O amor é o vínculo que aperfeiçoa o restante.",
+      "feedbackWrong": {"b": "O texto coloca o amor acima de tudo.", "c": "Humildade está na lista; o vínculo é o amor."},
+      "hint": "Veja como o amor é definido.",
+      "learningObjective": "Ligar o amor ao vínculo da perfeição.",
+      "evidence": ["Colossenses 3:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Colossenses 3:13, o perdão mútuo segue o perdão que o Senhor já concedeu.",
+      "verseRef": "Colossenses 3:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "assim como o Senhor vos perdoou, assim também perdoai-vos",
+      "feedbackCorrect": "O \"assim como\" marca a causa-modelo: o Senhor perdoou; portanto perdoai.",
+      "feedbackWrong": {"false": "Releia a comparação: assim como o Senhor vos perdoou."},
+      "hint": "Repare na expressão \"assim como\".",
+      "learningObjective": "Compreender a relação entre perdão recebido e oferecido.",
+      "evidence": ["Colossenses 3:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Colossenses 3:13, toque a expressão que marca o modelo do perdão.",
+      "verseRef": "Colossenses 3:13",
+      "options": [{"id": "a", "text": "assim como"}, {"id": "b", "text": "queixa"}, {"id": "c", "text": "uns aos outros"}],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim como o Senhor vos perdoou",
+      "feedbackCorrect": "\"Assim como\" liga o perdão deles ao do Senhor.",
+      "feedbackWrong": {"b": "\"Queixa\" é o conflito; o modelo é \"assim como\".", "c": "Descreve o alvo mútuo, não o modelo."},
+      "hint": "Procure a comparação no fim.",
+      "learningObjective": "Reconhecer o marcador de relação.",
+      "evidence": ["Colossenses 3:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Colossenses 3:12 se relaciona com serem eleitos?",
+      "verseRef": "Colossenses 3:12",
+      "options": [
+        {"id": "a", "text": "Porque são eleitos, devem revestir-se dessas virtudes"},
+        {"id": "b", "text": "Porque são eleitos, as virtudes são desnecessárias"},
+        {"id": "c", "text": "As virtudes servem para merecer a eleição"},
+        {"id": "d", "text": "A eleição cancela humildade e mansidão"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Revesti-vos, portanto, como eleitos de Deus",
+      "feedbackCorrect": "O \"portanto\" e o \"como eleitos\" pedem vestes coerentes com o chamado.",
+      "feedbackWrong": {"b": "O texto manda revestir-se, não dispensar.", "c": "A eleição é o ponto de partida, não o prêmio das virtudes.", "d": "Humildade e mansidão estão na lista."},
+      "hint": "Una \"portanto\" e \"como eleitos\".",
+      "learningObjective": "Relacionar identidade e conduta.",
+      "evidence": ["Colossenses 3:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Colossenses 3:12–15?",
+      "verseRef": "Colossenses 3:12–14",
+      "options": [
+        {"id": "a", "text": "Revestir misericórdia e humildade"},
+        {"id": "b", "text": "Perdoar como o Senhor"},
+        {"id": "c", "text": "Colocar o amor acima de tudo"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Acima de tudo, revesti-vos de amor",
+      "feedbackCorrect": "Virtudes, perdão e, por cima, o amor.",
+      "feedbackWrong": {"default": "Comece pelas virtudes; o amor fecha por cima."},
+      "hint": "Siga a ordem do parágrafo.",
+      "learningObjective": "Compreender o movimento das vestes.",
+      "evidence": ["Colossenses 3:12–14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Colossenses 3:12, revesti-vos, ___, como eleitos de Deus.",
+      "verseRef": "Colossenses 3:12",
+      "options": [{"id": "a", "text": "portanto"}, {"id": "b", "text": "jamais"}, {"id": "c", "text": "apenas"}],
+      "correctOptionId": "a",
+      "evidenceSpan": "Revesti-vos, portanto, como eleitos de Deus",
+      "feedbackCorrect": "\"Portanto\" liga a identidade eleita à conduta.",
+      "feedbackWrong": {"b": "Não é \"jamais\"; a palavra é portanto.", "c": "Não é \"apenas\"; a palavra é portanto."},
+      "hint": "Procure a palavra entre vírgulas.",
+      "learningObjective": "Lembrar o marcador que liga eleição e vestes.",
+      "evidence": ["Colossenses 3:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Colossenses 3:13 a Efésios 4:32?",
+      "verseRef": "Colossenses 3:13",
+      "passageA": {"ref": "Colossenses 3:13"},
+      "passageB": {"ref": "Efésios 4:32"},
+      "options": [
+        {"id": "a", "text": "Perdoar como Cristo"},
+        {"id": "b", "text": "Guardar a queixa"},
+        {"id": "c", "text": "Perdoar só uma vez"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "assim como o Senhor vos perdoou",
+      "evidence": ["Colossenses 3:13", "Efésios 4:32"],
+      "feedbackCorrect": "Nos dois textos, o perdão mútuo espelha o de Cristo.",
+      "feedbackWrong": {"b": "O texto manda perdoar a queixa, não guardá-la.", "c": "O modelo é o perdão do Senhor, sem esse limite."},
+      "hint": "Compare o modelo do perdão nos dois trechos.",
+      "learningObjective": "Relacionar o perdão em Colossenses e Efésios."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Colossenses 3:16–17 apresenta a vida nova só como sentimento interno, sem palavra, cântico ou nome de Jesus.",
+      "verseRef": "Colossenses 3:16–17",
+      "correctOptionId": "false",
+      "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós",
+      "feedbackCorrect": "Há palavra habitando, cânticos e tudo em nome de Jesus.",
+      "feedbackWrong": {"true": "Releia: palavra, cânticos e nome do Senhor Jesus."},
+      "hint": "Veja o que deve habitar e em cujo nome agir.",
+      "learningObjective": "Interpretar a vida nova como palavra e ação em Jesus.",
+      "evidence": ["Colossenses 3:16–17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Colossenses 3:16, toque o trecho que mostra o que deve habitar ricamente.",
+      "verseRef": "Colossenses 3:16",
+      "options": [{"id": "a", "text": "palavra de Cristo"}, {"id": "b", "text": "salmos"}, {"id": "c", "text": "gratidão"}],
+      "correctOptionId": "a",
+      "evidenceSpan": "Que a palavra de Cristo habite ricamente em vós",
+      "feedbackCorrect": "É a palavra de Cristo que deve habitar ricamente.",
+      "feedbackWrong": {"b": "Salmos são forma de louvor; o que habita é a palavra.", "c": "Gratidão acompanha o cântico; o sujeito é a palavra."},
+      "hint": "Procure o sujeito de \"habite\".",
+      "learningObjective": "Sustentar a centralidade da palavra de Cristo.",
+      "evidence": ["Colossenses 3:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Colossenses 3:12–17 sustenta sobre a vida da igreja?",
+      "verseRef": "Colossenses 3:14–15",
+      "options": [
+        {"id": "a", "text": "Amor, paz e palavra unem o corpo em nome de Jesus"},
+        {"id": "b", "text": "Virtudes dispensam perdão e gratidão"},
+        {"id": "c", "text": "O nome de Jesus vale só para cultos, não para ações"},
+        {"id": "d", "text": "Eleitos não precisam revestir-se de nada"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "revesti-vos de amor que é o vínculo da perfeição",
+      "feedbackCorrect": "O parágrafo une vestes, amor, paz, palavra e nome de Jesus.",
+      "feedbackWrong": {"b": "Perdão e gratidão estão explícitos.", "c": "Tudo em palavras ou ações é em nome de Jesus.", "d": "O texto manda revestir-se justamente como eleitos."},
+      "hint": "Una amor, paz e o \"tudo\" do versículo 17.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": ["Colossenses 3:14–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do perdão ao amor?",
+      "verseRef": "Colossenses 3:13–14",
+      "options": [
+        {"id": "a", "text": "O Senhor perdoa o povo"},
+        {"id": "b", "text": "O povo se perdoa mutuamente"},
+        {"id": "c", "text": "O amor cobre como vínculo"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "assim como o Senhor vos perdoou",
+      "evidence": ["Colossenses 3:13–14"],
+      "feedbackCorrect": "Do perdão de Cristo ao mútuo, e então ao amor que une.",
+      "feedbackWrong": {"default": "Comece pelo Senhor; o amor fecha por cima."},
+      "hint": "Siga: Senhor → mútuo → amor.",
+      "learningObjective": "Ver o encadeamento do perdão ao amor."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Colossenses 3:14, o amor é o ___ da perfeição.",
+      "verseRef": "Colossenses 3:14",
+      "options": [{"id": "a", "text": "vínculo"}, {"id": "b", "text": "peso"}, {"id": "c", "text": "fim"}],
+      "correctOptionId": "a",
+      "evidenceSpan": "amor que é o vínculo da perfeição",
+      "feedbackCorrect": "O termo teológico da cena é vínculo da perfeição.",
+      "feedbackWrong": {"b": "Não é peso; é vínculo.", "c": "A palavra é vínculo."},
+      "hint": "Veja a definição depois de \"amor\".",
+      "learningObjective": "Lembrar o termo que carrega o sentido do amor.",
+      "evidence": ["Colossenses 3:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Colossenses 3:15 a Filipenses 4:7?",
+      "verseRef": "Colossenses 3:15",
+      "passageA": {"ref": "Colossenses 3:15"},
+      "passageB": {"ref": "Filipenses 4:7"},
+      "options": [
+        {"id": "a", "text": "Paz no coração"},
+        {"id": "b", "text": "Ansiedade no comando"},
+        {"id": "c", "text": "Paz só no culto"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que a paz de Cristo reine em seus corações",
+      "evidence": ["Colossenses 3:15", "Filipenses 4:7"],
+      "feedbackCorrect": "Nos dois textos, a paz de Cristo/Deus guarda o coração.",
+      "feedbackWrong": {"b": "A paz reina; não a ansiedade.", "c": "A paz é nos corações, não só no culto."},
+      "hint": "Compare o que reina ou guarda o coração.",
+      "learningObjective": "Ligar a paz de Cristo em Colossenses e Filipenses."
+    }
+  ]
+}

@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "Neemias 7:5–9",
+    "passages": [
+      {
+        "ref": "Neemias 7:5–9"
+      },
+      {
+        "ref": "Neemias 9:5–9"
+      },
+      {
+        "ref": "Neemias 10:28–32"
+      },
+      {
+        "ref": "Neemias 12:27–31"
+      },
+      {
+        "ref": "Neemias 13:15–19"
+      }
+    ],
+    "context": "Cena de Travessia: Lei e renovação: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "SENHOR",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Lei e renovação",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Então.",
+        "evidenceRef": "Neemias 7:5",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Os.",
+        "evidenceRef": "Neemias 7:9",
+        "evidenceSpan": "Os"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Neemias 9:5",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "E viste a aflição de nossos pais no.",
+        "evidenceRef": "Neemias 9:9",
+        "evidenceSpan": "E viste a aflição de nossos pais no"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Neemias 10:28",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "Também nos comprometemos a estabelecer preceitos impondo a.",
+        "evidenceRef": "Neemias 10:32",
+        "evidenceSpan": "Também nos comprometemos a estabelecer preceitos impondo a"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "SENHOR",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Então",
+        "gloss": "Termo que carrega o sentido desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Então meu deus colocou no meu",
+        "evidenceRef": "Neemias 7:5"
+      },
+      {
+        "label": "Os filhos de sephatias trezentos",
+        "evidenceRef": "Neemias 7:9"
+      },
+      {
+        "label": "E os levitas jesua cadmiel bani",
+        "evidenceRef": "Neemias 9:5"
+      },
+      {
+        "label": "E viste a aflição de nossos",
+        "evidenceRef": "Neemias 9:9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Neemias 7:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Também\".",
+        "marker": "Também",
+        "evidenceRef": "Neemias 10:32"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Neemias 12:27"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Esdras 7:10",
+        "bridge": "Buscar e praticar a Lei"
+      },
+      {
+        "ref": "Deuteronômio 5:12",
+        "bridge": "Guardar o sábado"
+      },
+      {
+        "ref": "Êxodo 20:8",
+        "bridge": "Lembrar o sábado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Muro pronto pede povo renovado na Lei e no culto",
+    "anchorQuestion": "O que Neemias 7:5 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Neemias 7:5, o texto inclui Então.",
+      "verseRef": "Neemias 7:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 7:5 afirma.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Neemias 7:5, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Neemias 7:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "meu"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Neemias 9:5, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "E"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 9:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Neemias 7:9 na ordem do texto.",
+      "verseRef": "Neemias 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os filhos"
+        },
+        {
+          "id": "b",
+          "text": "Sephatias"
+        },
+        {
+          "id": "c",
+          "text": "setenta e dois"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os filhos",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Neemias 7:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Neemias 9:9, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "viste"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "viste",
+      "feedbackCorrect": "A palavra do versículo é viste.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 9:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Neemias 7:5 comunica que se liga a este contexto.",
+      "verseRef": "Neemias 7:5",
+      "passageA": {
+        "ref": "Neemias 7:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Lei e renovação: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Neemias 12:27, toque outra palavra central do trecho.",
+      "verseRef": "Neemias 12:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "dedicação"
+        },
+        {
+          "id": "b",
+          "text": "E"
+        },
+        {
+          "id": "c",
+          "text": "na"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dedicação",
+      "feedbackCorrect": "O trecho destaca dedicação.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Neemias 12:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Neemias 13:22 na ordem correta do texto.",
+      "verseRef": "Neemias 13:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "mim e perdoa"
+        },
+        {
+          "id": "c",
+          "text": "segundo a abundância da tua misericórdia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Neemias 13:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Neemias 7:5, a palavra Então liga ideias no fluxo do texto.",
+      "verseRef": "Neemias 7:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 7:5 afirma.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Neemias 7:5, toque a palavra que marca a relação no texto.",
+      "verseRef": "Neemias 7:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "meu",
+      "feedbackCorrect": "O versículo destaca meu.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Neemias 9:9, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 9:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Neemias 7:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então meu deus colocou no meu"
+        },
+        {
+          "id": "b",
+          "text": "Os filhos de sephatias trezentos"
+        },
+        {
+          "id": "c",
+          "text": "E os levitas jesua cadmiel bani"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Neemias 9:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 9:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "levitas"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levitas",
+      "feedbackCorrect": "A palavra do versículo é levitas.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 9:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Neemias 7:5 a Esdras 7:10.",
+      "verseRef": "Neemias 7:5",
+      "passageA": {
+        "ref": "Neemias 7:5"
+      },
+      "passageB": {
+        "ref": "Esdras 7:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Buscar e praticar a Lei"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Neemias 12:31, toque outra palavra central do trecho.",
+      "verseRef": "Neemias 12:31",
+      "options": [
+        {
+          "id": "a",
+          "text": "fiz"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "subir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fiz",
+      "feedbackCorrect": "O trecho destaca fiz.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Neemias 12:31"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os passos deste trecho do bloco.",
+      "verseRef": "Neemias 13:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "A tensão do bloco aparece"
+        },
+        {
+          "id": "b",
+          "text": "Alguém decide e age com firmeza"
+        },
+        {
+          "id": "c",
+          "text": "O desfecho do bloco chega"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Aconteceu",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Neemias 13:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Neemias 13:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "Aconteceu",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 13:19 afirma.",
+      "evidence": [
+        "Neemias 13:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Neemias 10:32, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Neemias 10:32",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também"
+        },
+        {
+          "id": "b",
+          "text": "comprometemos"
+        },
+        {
+          "id": "c",
+          "text": "estabelecer"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O versículo destaca Também.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 10:32"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Neemias 10:28, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 10:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 10:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Neemias 7:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Neemias 10:28, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 10:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "restante"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "restante",
+      "feedbackCorrect": "A palavra do versículo é restante.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 10:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Neemias 7:5 a Deuteronômio 5:12.",
+      "verseRef": "Neemias 7:5",
+      "passageA": {
+        "ref": "Neemias 7:5"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 5:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Guardar o sábado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Neemias 13:15, toque outra palavra central do trecho.",
+      "verseRef": "Neemias 13:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias"
+        },
+        {
+          "id": "b",
+          "text": "Nos"
+        },
+        {
+          "id": "c",
+          "text": "em"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dias",
+      "feedbackCorrect": "O trecho destaca dias.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Encadeie a lógica deste trecho do bloco.",
+      "verseRef": "Neemias 7:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O risco ou o desafio se mostra"
+        },
+        {
+          "id": "b",
+          "text": "A resposta fiel entra em cena"
+        },
+        {
+          "id": "c",
+          "text": "O plano chega ao seu termo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Neemias 7:5"
+      ]
+    }
+  ]
+}

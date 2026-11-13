@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Levítico 23:15–20",
+    "passages": [
+      {
+        "ref": "Levítico 23:15–20"
+      },
+      {
+        "ref": "Levítico 23:21–22"
+      }
+    ],
+    "context": "Cena de Festas e espigas: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Festas e espigas",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Contarão para vocês desde o dia seguinte ao.",
+        "evidenceRef": "Levítico 23:15",
+        "evidenceSpan": "Contarão para vocês desde o dia seguinte ao"
+      },
+      {
+        "text": "Até.",
+        "evidenceRef": "Levítico 23:16",
+        "evidenceSpan": "Até"
+      },
+      {
+        "text": "Trareis de vossas moradas dois pães de oferta.",
+        "evidenceRef": "Levítico 23:17",
+        "evidenceSpan": "Trareis de vossas moradas dois pães de oferta"
+      },
+      {
+        "text": "Também.",
+        "evidenceRef": "Levítico 23:18",
+        "evidenceSpan": "Também"
+      },
+      {
+        "text": "Também ofereceréis um bode para expiação do pecado.",
+        "evidenceRef": "Levítico 23:19",
+        "evidenceSpan": "Também ofereceréis um bode para expiação do pecado"
+      },
+      {
+        "text": "O.",
+        "evidenceRef": "Levítico 23:20",
+        "evidenceSpan": "O"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "holocausto",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Contarão para vocês desde o dia",
+        "evidenceRef": "Levítico 23:15"
+      },
+      {
+        "label": "Até o dia seguinte ao sétimo",
+        "evidenceRef": "Levítico 23:16"
+      },
+      {
+        "label": "Trareis de vossas moradas dois pães",
+        "evidenceRef": "Levítico 23:17"
+      },
+      {
+        "label": "Também com o pão oferecerão sete",
+        "evidenceRef": "Levítico 23:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"então\".",
+        "marker": "então",
+        "evidenceRef": "Levítico 23:16"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Também\".",
+        "marker": "Também",
+        "evidenceRef": "Levítico 23:18"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Também\".",
+        "marker": "Também",
+        "evidenceRef": "Levítico 23:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 1:29",
+        "bridge": "Cordeiro que tira o pecado"
+      },
+      {
+        "ref": "Romanos 12:1",
+        "bridge": "Corpo como oferta viva"
+      },
+      {
+        "ref": "Mateus 22:39",
+        "bridge": "Amar o próximo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Celebrar ao Senhor e cuidar do pobre caminham juntos no calendário santo.",
+    "anchorQuestion": "O que Levítico 23:15 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 23:15, o texto inclui Contarão para vocês desde o dia seguinte ao.",
+      "verseRef": "Levítico 23:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Contarão para vocês desde o dia seguinte ao",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 23:15 afirma.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 23:15, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 23:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarão"
+        },
+        {
+          "id": "b",
+          "text": "vocês"
+        },
+        {
+          "id": "c",
+          "text": "desde"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "O versículo destaca Contarão.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 23:17, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 23:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trareis de vossas moradas dois pães de oferta"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Trareis de vossas moradas dois pães de oferta",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 23:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 23:16 na ordem do texto.",
+      "verseRef": "Levítico 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Até o dia seguinte"
+        },
+        {
+          "id": "b",
+          "text": "ao sétimo sábado"
+        },
+        {
+          "id": "c",
+          "text": "cinquenta dias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Até o dia seguinte",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 23:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 23:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 23:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também"
+        },
+        {
+          "id": "b",
+          "text": "Contarão"
+        },
+        {
+          "id": "c",
+          "text": "para"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "A palavra do versículo é Também.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 23:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 23:15 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 23:15",
+      "passageA": {
+        "ref": "Levítico 23:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Festas e espigas: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 23:16, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Levítico 23:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "então",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 23:16 afirma.",
+      "evidence": [
+        "Levítico 23:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 23:16, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "então"
+        },
+        {
+          "id": "b",
+          "text": "dia"
+        },
+        {
+          "id": "c",
+          "text": "seguinte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então",
+      "feedbackCorrect": "O versículo destaca então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 23:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 23:18, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 23:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra também"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 23:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 23:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarão para vocês desde o dia"
+        },
+        {
+          "id": "b",
+          "text": "Até o dia seguinte ao sétimo"
+        },
+        {
+          "id": "c",
+          "text": "Trareis de vossas moradas dois pães"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 23:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 23:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trareis"
+        },
+        {
+          "id": "b",
+          "text": "Contarão"
+        },
+        {
+          "id": "c",
+          "text": "para"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Trareis",
+      "feedbackCorrect": "A palavra do versículo é Trareis.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 23:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 23:15 a João 1:29.",
+      "verseRef": "Levítico 23:15",
+      "passageA": {
+        "ref": "Levítico 23:15"
+      },
+      "passageB": {
+        "ref": "João 1:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cordeiro que tira o pecado"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 23:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 23:22 afirma.",
+      "evidence": [
+        "Levítico 23:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 23:20, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 23:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "moverá"
+        },
+        {
+          "id": "c",
+          "text": "juntamente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sacerdote",
+      "feedbackCorrect": "O versículo destaca sacerdote.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 23:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 23:19, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 23:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra também"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 23:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 23:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 23:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 23:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "ofereceréis"
+        },
+        {
+          "id": "b",
+          "text": "Contarão"
+        },
+        {
+          "id": "c",
+          "text": "para"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ofereceréis",
+      "feedbackCorrect": "A palavra do versículo é ofereceréis.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 23:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 23:15 a Romanos 12:1.",
+      "verseRef": "Levítico 23:15",
+      "passageA": {
+        "ref": "Levítico 23:15"
+      },
+      "passageB": {
+        "ref": "Romanos 12:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Corpo como oferta viva"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    }
+  ]
+}

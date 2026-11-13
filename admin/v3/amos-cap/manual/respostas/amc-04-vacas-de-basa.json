@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 4:1–6",
+    "passages": [
+      { "ref": "Amós 4:1–6" },
+      { "ref": "Amós 4:7–8" }
+    ],
+    "context": "Amós chama as \"vacas de Basã\" que oprimem pobres. Deus envia fome, sede e chuva seletiva; mesmo assim o povo não se converte.",
+    "keyword": "converteram",
+    "keywordGloss": "O retorno a Deus que o povo recusou apesar da escassez.",
+    "focusQuestion": "Quando a escassez chega, você se volta a Deus ou endurece mais?",
+    "reflectionPrompts": [
+      "Vacas de Basã",
+      "Escassez de alimento",
+      "Não se converteram"
+    ],
+    "facts": [
+      {
+        "text": "As vacas de Basã oprimem os pobres e esmagam os necessitados.",
+        "evidenceRef": "Amós 4:1",
+        "evidenceSpan": "oprimem os pobres e esmagam os necessitados"
+      },
+      {
+        "text": "O Senhor jurou que as levarão com anzóis.",
+        "evidenceRef": "Amós 4:2",
+        "evidenceSpan": "vos levarão com anzóis"
+      },
+      {
+        "text": "Em Betel e Gilgal aumentam as transgressões com rituais.",
+        "evidenceRef": "Amós 4:4",
+        "evidenceSpan": "Vão a Betel e transgridam; em Gilgal aumentem as transgressões"
+      },
+      {
+        "text": "Deus deixou escassez de alimento e falta de pão.",
+        "evidenceRef": "Amós 4:6",
+        "evidenceSpan": "vos deixei com escassez de alimento"
+      },
+      {
+        "text": "Mesmo assim não se converteram a ele.",
+        "evidenceRef": "Amós 4:6",
+        "evidenceSpan": "não vos convertestes a mim"
+      },
+      {
+        "text": "Cidades vagaram por água e não se saciaram; ainda assim não se converteram.",
+        "evidenceRef": "Amós 4:8",
+        "evidenceSpan": "não se converteram a mim"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pobres",
+        "gloss": "Quem as vacas de Basã oprimem."
+      },
+      {
+        "term": "escassez",
+        "gloss": "A falta de alimento enviada pelo Senhor."
+      },
+      {
+        "term": "converteram",
+        "gloss": "O retorno a Deus que o povo recusou."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acusação às vacas de Basã",
+        "evidenceRef": "Amós 4:1–3"
+      },
+      {
+        "label": "Culto em Betel que aumenta transgressão",
+        "evidenceRef": "Amós 4:4–5"
+      },
+      {
+        "label": "Escassez e chuva sem conversão",
+        "evidenceRef": "Amós 4:6–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Por isso Deus deixou escassez de alimento nas cidades.",
+        "marker": "Por isso",
+        "evidenceRef": "Amós 4:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Houve escassez; no entanto, não se converteram.",
+        "marker": "no entanto",
+        "evidenceRef": "Amós 4:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Buscaram água e não se saciaram; no entanto, não se converteram.",
+        "marker": "no entanto",
+        "evidenceRef": "Amós 4:8"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Levítico 26:18–20", "bridge": "Disciplina sem conversão" },
+      { "ref": "Isaías 9:13", "bridge": "Povo que não busca o Senhor" },
+      { "ref": "Apocalipse 9:20–21", "bridge": "Pragas sem arrependimento" }
+    ],
+    "misreadings": [
+      {
+        "text": "A escassez veio por acaso, sem ação de Deus.",
+        "why": "4:6–7 diz que o Senhor deixou escassez e reteve a chuva."
+      },
+      {
+        "text": "O culto em Betel prova conversão sincera.",
+        "why": "4:4 ironiza: vão e transgridam; aumentem as transgressões."
+      },
+      {
+        "text": "Oprimir pobres não entra no oráculo.",
+        "why": "4:1 abre acusando opressão aos pobres e necessitados."
+      }
+    ],
+    "centralInsight": "Mesmo com fome e sede enviadas por Deus, o povo não voltou a ele.",
+    "anchorQuestion": "Segundo Amós 4:6, o que o povo não fez apesar da escassez?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 4:1, as vacas de Basã oprimem os pobres e esmagam os necessitados.",
+      "verseRef": "Amós 4:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "oprimem os pobres e esmagam os necessitados",
+      "feedbackCorrect": "A acusação abre com opressão aos pobres.",
+      "feedbackWrong": { "false": "Releia a descrição das vacas de Basã em 4:1." },
+      "hint": "Veja o que fazem aos pobres.",
+      "learningObjective": "Observar a opressão das vacas de Basã.",
+      "evidence": ["Amós 4:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 4:1, toque quem é oprimido pelas vacas de Basã.",
+      "verseRef": "Amós 4:1",
+      "evidenceSpan": "oprimem os pobres",
+      "feedbackCorrect": "Oprimem os pobres e esmagam os necessitados.",
+      "hint": "Procure o objeto de \"oprimem\".",
+      "learningObjective": "Identificar os oprimidos.",
+      "evidence": ["Amós 4:1"],
+      "options": [
+        { "id": "a", "text": "pobres" },
+        { "id": "b", "text": "maridos" },
+        { "id": "c", "text": "monte" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os maridos ouvem a ordem \"Dá cá\"; não são os oprimidos nomeados.",
+        "c": "O monte é o lugar de Samaria, não a vítima."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 4:6, o que Deus deixou nas cidades?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "vos deixei com escassez de alimento",
+      "feedbackCorrect": "Deixou escassez de alimento e falta de pão.",
+      "hint": "Veja o que Deus deixou em todas as cidades.",
+      "learningObjective": "Observar a escassez enviada.",
+      "evidence": ["Amós 4:6"],
+      "options": [
+        { "id": "a", "text": "Escassez de alimento" },
+        { "id": "b", "text": "Chuva abundante em toda parte" },
+        { "id": "c", "text": "Ouro nos palácios" },
+        { "id": "d", "text": "Paz com os vizinhos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "4:7 mostra chuva seletiva, não abundância geral.",
+        "c": "O trecho fala de falta de pão, não de ouro.",
+        "d": "Não há anúncio de paz aqui."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 4:6 na ordem do texto.",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "vos deixei com escassez de alimento",
+      "feedbackCorrect": "Escassez e falta de pão; no entanto, sem conversão.",
+      "hint": "Comece pelo \"Por isso\" e a escassez.",
+      "learningObjective": "Reconhecer a sequência de 4:6.",
+      "evidence": ["Amós 4:6"],
+      "options": [
+        { "id": "a", "text": "Por isso, também vos deixei com escassez de alimento" },
+        { "id": "b", "text": "e com falta de pão em todos os vossos lugares" },
+        { "id": "c", "text": "no entanto, não vos convertestes a mim" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela escassez; a não conversão fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 4:6, com que Deus deixou as cidades além da falta de pão?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "vos deixei com escassez de alimento",
+      "feedbackCorrect": "Escassez de alimento em todas as cidades.",
+      "hint": "É a palavra depois de \"com\".",
+      "learningObjective": "Lembrar a palavra da falta enviada.",
+      "evidence": ["Amós 4:6"],
+      "options": [
+        { "id": "a", "text": "escassez" },
+        { "id": "b", "text": "abundância" },
+        { "id": "c", "text": "festa" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Abundância\" contradiz o texto.",
+        "c": "\"Festa\" não aparece em 4:6."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 4:6 comunica que se liga a este contexto?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "não vos convertestes a mim",
+      "feedbackCorrect": "Mesmo com fome enviada, o povo não voltou a Deus.",
+      "hint": "Ligue a escassez à recusa de conversão.",
+      "learningObjective": "Ligar disciplina e coração duro.",
+      "evidence": ["Amós 4:6"],
+      "passageA": { "ref": "Amós 4:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus enviou fome e sede, mas o povo não se voltou a ele."
+      },
+      "options": [
+        { "id": "a", "text": "Fome sem conversão" },
+        { "id": "b", "text": "Escassez que gera fé imediata" },
+        { "id": "c", "text": "Povo sempre arrependido" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que não se converteram.",
+        "c": "A refrain é a não conversão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 4:6, apesar da escassez o povo se converteu plenamente ao Senhor.",
+      "verseRef": "Amós 4:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "no entanto, não vos convertestes a mim",
+      "feedbackCorrect": "O \"no entanto\" marca a recusa: não se converteram.",
+      "feedbackWrong": { "true": "Releia o fim de 4:6: não vos convertestes." },
+      "hint": "Procure o contraste no fim do versículo.",
+      "learningObjective": "Compreender o contraste escassez/não conversão.",
+      "evidence": ["Amós 4:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 4:6, toque as palavras que marcam o contraste com a escassez.",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "no entanto, não vos convertestes a mim",
+      "feedbackCorrect": "\"No entanto\" introduz a recusa de conversão.",
+      "hint": "São as duas palavras antes de \"não vos convertestes\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Amós 4:6"],
+      "options": [
+        { "id": "a", "text": "no entanto" },
+        { "id": "b", "text": "alimento" },
+        { "id": "c", "text": "cidades" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Alimento\" descreve a falta, não o contraste.",
+        "c": "\"Cidades\" situam a escassez, não o contraste."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 4:1–8 relaciona opressão, culto e disciplina?",
+      "verseRef": "Amós 4:1–6",
+      "evidenceSpan": "não vos convertestes a mim",
+      "feedbackCorrect": "Oprimem pobres, ritualizam em Betel, e mesmo assim não se convertem.",
+      "hint": "Una 4:1, 4:4 e o refrão de 4:6–8.",
+      "learningObjective": "Relacionar opressão, culto e coração duro.",
+      "evidence": ["Amós 4:1–6"],
+      "options": [
+        { "id": "a", "text": "Opressão e culto vazio resistem à disciplina" },
+        { "id": "b", "text": "A escassez prova conversão sincera" },
+        { "id": "c", "text": "Betel mostra arrependimento verdadeiro" },
+        { "id": "d", "text": "Oprimir pobres fica fora do oráculo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que não se converteram.",
+        "c": "4:4 ironiza o culto que aumenta transgressão.",
+        "d": "4:1 abre com a opressão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 4:1–8?",
+      "verseRef": "Amós 4:1–8",
+      "evidenceSpan": "não se converteram a mim",
+      "feedbackCorrect": "Acusação, culto transgressor, e disciplina sem conversão.",
+      "hint": "Comece pelas vacas de Basã.",
+      "learningObjective": "Seguir o movimento do oráculo.",
+      "evidence": ["Amós 4:1–8"],
+      "options": [
+        { "id": "a", "text": "Acusação às vacas de Basã" },
+        { "id": "b", "text": "Culto em Betel que aumenta transgressão" },
+        { "id": "c", "text": "Escassez e chuva sem conversão" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Acusação primeiro; não conversão por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 4:6, que expressão introduz o resultado da opressão e do culto?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "Por isso, também vos deixei com escassez",
+      "feedbackCorrect": "\"Por isso\" liga o comportamento à escassez enviada.",
+      "hint": "São as duas primeiras palavras do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": ["Amós 4:6"],
+      "options": [
+        { "id": "a", "text": "Por isso" },
+        { "id": "b", "text": "Por acaso" },
+        { "id": "c", "text": "Por nada" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Por acaso\" não aparece; a escassez tem causa.",
+        "c": "\"Por nada\" não é o texto."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 4:6 a Isaías 9:13?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "não vos convertestes a mim",
+      "feedbackCorrect": "Nos dois textos, o povo sofre e ainda assim não busca o Senhor.",
+      "hint": "Compare a recusa de voltar-se a Deus.",
+      "learningObjective": "Relacionar a não conversão em Amós e Isaías.",
+      "evidence": ["Amós 4:6", "Isaías 9:13"],
+      "passageA": { "ref": "Amós 4:6" },
+      "passageB": { "ref": "Isaías 9:13" },
+      "options": [
+        { "id": "a", "text": "Povo que não busca o Senhor" },
+        { "id": "b", "text": "Arrependimento imediato total" },
+        { "id": "c", "text": "Escassez sem nenhuma mensagem" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam a recusa de buscar.",
+        "c": "A escassez vem como disciplina com chamado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 4:1–8, a escassez veio por acaso, sem ação do Senhor.",
+      "verseRef": "Amós 4:6–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "também vos deixei com escassez de alimento",
+      "feedbackCorrect": "O Senhor deixou escassez e reteve a chuva; o povo não se converteu.",
+      "feedbackWrong": { "true": "4:6–7 usa a primeira pessoa: \"vos deixei\", \"retenho\"." },
+      "hint": "Veja quem fala sobre deixar escassez e reter chuva.",
+      "learningObjective": "Interpretar a escassez como disciplina divina.",
+      "evidence": ["Amós 4:6–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 4:8, toque o trecho que mostra que a água não bastou.",
+      "verseRef": "Amós 4:8",
+      "evidenceSpan": "mas não se saciaram",
+      "feedbackCorrect": "Vagaram por água, mas não se saciaram.",
+      "hint": "Procure o verbo depois de \"mas não se\".",
+      "learningObjective": "Sustentar a sede sem alívio com o texto.",
+      "evidence": ["Amós 4:8"],
+      "options": [
+        { "id": "a", "text": "saciaram" },
+        { "id": "b", "text": "cidades" },
+        { "id": "c", "text": "água" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Cidades\" descrevem quem vagou, não o resultado da sede.",
+        "c": "\"Água\" é o que buscavam; o verbo mostra que não bastou."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 4:1–8 sustenta sobre a disciplina de Deus?",
+      "verseRef": "Amós 4:6–8",
+      "evidenceSpan": "não se converteram a mim",
+      "feedbackCorrect": "Mesmo com fome e sede enviadas, o povo não voltou a ele.",
+      "hint": "Una opressão, culto irônico e o refrão.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Amós 4:6–8"],
+      "options": [
+        { "id": "a", "text": "Fome e sede vieram, e mesmo assim não voltaram" },
+        { "id": "b", "text": "A escassez veio por acaso sem Deus" },
+        { "id": "c", "text": "O culto em Betel prova conversão sincera" },
+        { "id": "d", "text": "Oprimir pobres não entra no oráculo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O Senhor diz \"vos deixei\" e \"retenho\".",
+        "c": "4:4 ironiza o culto transgressor.",
+        "d": "4:1 acusa a opressão."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra disciplina sem arrependimento na Escritura?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "não vos convertestes a mim",
+      "feedbackCorrect": "Amós: escassez sem conversão; Isaías e Apocalipse ecoam o endurecimento.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o endurecimento sob disciplina no fio bíblico.",
+      "evidence": ["Amós 4:6", "Isaías 9:13", "Apocalipse 9:20–21"],
+      "options": [
+        { "id": "a", "text": "Amós: escassez e não conversão" },
+        { "id": "b", "text": "Isaías: povo que não busca o Senhor" },
+        { "id": "c", "text": "Apocalipse: pragas sem arrependimento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 4, Isaías 9 e Apocalipse 9." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 4:8, o que o povo não fez a respeito do Senhor?",
+      "verseRef": "Amós 4:8",
+      "evidenceSpan": "não se converteram a mim",
+      "feedbackCorrect": "Não se converteram a ele, apesar da sede.",
+      "hint": "É o verbo do refrão final.",
+      "learningObjective": "Lembrar o termo da recusa central.",
+      "evidence": ["Amós 4:8"],
+      "options": [
+        { "id": "a", "text": "converteram" },
+        { "id": "b", "text": "viajaram" },
+        { "id": "c", "text": "beberam" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Eles vagaram; o problema é não se converterem.",
+        "c": "Buscaram beber e não se saciaram; a falha é a conversão."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 4:6 a Levítico 26:18–20?",
+      "verseRef": "Amós 4:6",
+      "evidenceSpan": "vos deixei com escassez de alimento",
+      "feedbackCorrect": "Nos dois textos, disciplina por escassez chama à conversão.",
+      "hint": "Compare a falta de alimento como disciplina.",
+      "learningObjective": "Ligar a escassez de Amós à disciplina da Lei.",
+      "evidence": ["Amós 4:6", "Levítico 26:18–20"],
+      "passageA": { "ref": "Amós 4:6" },
+      "passageB": { "ref": "Levítico 26:18–20" },
+      "options": [
+        { "id": "a", "text": "Disciplina sem conversão" },
+        { "id": "b", "text": "Chuva sempre abundante" },
+        { "id": "c", "text": "Escassez sem propósito" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos falam de retenção e falta.",
+        "c": "A escassez visa chamar ao retorno."
+      }
+    }
+  ]
+}

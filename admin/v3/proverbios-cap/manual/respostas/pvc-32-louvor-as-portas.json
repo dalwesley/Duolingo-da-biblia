@@ -1,0 +1,722 @@
+{
+ "study": {
+  "passageRef": "Provérbios 31:22–27",
+  "passages": [
+   {
+    "ref": "Provérbios 31:22–27"
+   },
+   {
+    "ref": "Provérbios 31:28–31"
+   }
+  ],
+  "context": "Força e dignidade são suas vestes; ela fala com sabedoria. O temor do Senhor é louvado; as obras a louvam em público.",
+  "keyword": "Louvor",
+  "keywordGloss": "As obras a louvam nas portas; o temor do Senhor permanece.",
+  "focusQuestion": "O que as suas obras estariam dizendo de você nas portas da cidade?",
+  "reflectionPrompts": [
+   "Força e dignidade",
+   "Temor do Senhor",
+   "Obras nas portas"
+  ],
+  "facts": [
+   {
+    "text": "A força e a dignidade são suas vestes.",
+    "evidenceRef": "Provérbios 31:25",
+    "evidenceSpan": "A força e a dignidade são suas vestes"
+   },
+   {
+    "text": "Ela fala com sabedoria; a instrução da bondade está na língua.",
+    "evidenceRef": "Provérbios 31:26",
+    "evidenceSpan": "Ela fala com sabedoria"
+   },
+   {
+    "text": "Não come o pão da preguiça.",
+    "evidenceRef": "Provérbios 31:27",
+    "evidenceSpan": "não come o pão da preguiça"
+   },
+   {
+    "text": "Filhos a chamam bem-aventurada; o marido a louva.",
+    "evidenceRef": "Provérbios 31:28",
+    "evidenceSpan": "a chamam de bem-aventurada"
+   },
+   {
+    "text": "Enganosa é a graça e vã a formosura; a que teme ao SENHOR será louvada.",
+    "evidenceRef": "Provérbios 31:30",
+    "evidenceSpan": "a mulher que teme ao SENHOR, essa será louvada"
+   },
+   {
+    "text": "Suas obras a louvem em público.",
+    "evidenceRef": "Provérbios 31:31",
+    "evidenceSpan": "suas obras a louvem em público"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "SENHOR",
+    "gloss": "Quem ela teme; base do louvor que permanece."
+   },
+   {
+    "term": "dignidade",
+    "gloss": "Veste junto com a força."
+   },
+   {
+    "term": "obras",
+    "gloss": "O que a louva em público."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Vestes, comércio e força",
+    "evidenceRef": "Provérbios 31:22–25"
+   },
+   {
+    "label": "Fala sábia e zelo da casa",
+    "evidenceRef": "Provérbios 31:26–27"
+   },
+   {
+    "label": "Louvor da família",
+    "evidenceRef": "Provérbios 31:28–29"
+   },
+   {
+    "label": "Temor do Senhor e obras públicas",
+    "evidenceRef": "Provérbios 31:30–31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Graça enganosa e formosura vã vs temor louvado.",
+    "marker": "mas",
+    "evidenceRef": "Provérbios 31:30"
+   },
+   {
+    "kind": "resultado",
+    "text": "Que suas obras a louvem em público.",
+    "marker": null,
+    "evidenceRef": "Provérbios 31:31"
+   },
+   {
+    "kind": "contraste",
+    "text": "Zela pela casa e não come o pão da preguiça.",
+    "marker": null,
+    "evidenceRef": "Provérbios 31:27"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "1 Pedro 3:4",
+    "bridge": "Adorno interior que permanece"
+   },
+   {
+    "ref": "Mateus 5:16",
+    "bridge": "Obras que glorificam o Pai"
+   },
+   {
+    "ref": "Provérbios 9:10",
+    "bridge": "Temor inicia a sabedoria"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A formosura é o critério final do louvor.",
+    "why": "31:30 chama a formosura de vã e louva quem teme ao SENHOR."
+   },
+   {
+    "text": "As obras não precisam aparecer em público.",
+    "why": "31:31 manda que as obras a louvem em público."
+   },
+   {
+    "text": "Ela come o pão da preguiça.",
+    "why": "31:27 diz que não come o pão da preguiça."
+   }
+  ],
+  "centralInsight": "O temor do Senhor é o belo que permanece — e as obras falam nas portas da cidade.",
+  "anchorQuestion": "Quem Provérbios 31:30 diz que será louvada?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 31:30, a formosura é o critério final do louvor.",
+   "verseRef": "Provérbios 31:30",
+   "correctOptionId": "false",
+   "evidenceSpan": "vã é a formosura",
+   "feedbackCorrect": "A formosura é vã; quem teme ao SENHOR será louvada.",
+   "feedbackWrong": {
+    "true": "Releia 31:30: vã é a formosura."
+   },
+   "hint": "Compare graça, formosura e temor.",
+   "learningObjective": "Observar o critério do louvor.",
+   "evidence": [
+    "Provérbios 31:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:30, toque a quem será louvada.",
+   "verseRef": "Provérbios 31:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "teme ao SENHOR"
+    },
+    {
+     "id": "b",
+     "text": "graça"
+    },
+    {
+     "id": "c",
+     "text": "formosura"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a mulher que teme ao SENHOR, essa será louvada",
+   "feedbackCorrect": "Quem teme ao SENHOR será louvada.",
+   "feedbackWrong": {
+    "b": "Graça é enganosa.",
+    "c": "Formosura é vã."
+   },
+   "hint": "Cláusula após mas.",
+   "learningObjective": "Identificar quem é louvada.",
+   "evidence": [
+    "Provérbios 31:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 31:31, o que deve louvá-la em público?",
+   "verseRef": "Provérbios 31:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Suas obras"
+    },
+    {
+     "id": "b",
+     "text": "Só a formosura"
+    },
+    {
+     "id": "c",
+     "text": "Apenas a graça"
+    },
+    {
+     "id": "d",
+     "text": "Somente o silêncio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas obras a louvem em público",
+   "feedbackCorrect": "As obras a louvem em público.",
+   "feedbackWrong": {
+    "b": "Formosura é vã em 31:30.",
+    "c": "Graça é enganosa.",
+    "d": "Há louvor público das obras."
+   },
+   "hint": "Sujeito do louvor público.",
+   "learningObjective": "Observar o louvor das obras.",
+   "evidence": [
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 31:25 na ordem do texto.",
+   "verseRef": "Provérbios 31:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "A força e a dignidade são suas vestes"
+    },
+    {
+     "id": "b",
+     "text": "e, quanto ao dia de amanhã"
+    },
+    {
+     "id": "c",
+     "text": "não tem preocupações"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "A força e a dignidade são suas vestes",
+   "feedbackCorrect": "Vestes de força e sem medo do amanhã.",
+   "feedbackWrong": {
+    "default": "Comece pela força e dignidade."
+   },
+   "hint": "O versículo abre com A força.",
+   "learningObjective": "Seguir a ordem do verso.",
+   "evidence": [
+    "Provérbios 31:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 31:27, ela não come o pão da quê?",
+   "verseRef": "Provérbios 31:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "preguiça"
+    },
+    {
+     "id": "b",
+     "text": "púrpura"
+    },
+    {
+     "id": "c",
+     "text": "bondade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o pão da preguiça",
+   "feedbackCorrect": "Não come o pão da preguiça.",
+   "feedbackWrong": {
+    "b": "Púrpura é da vestimenta.",
+    "c": "Bondade está na língua."
+   },
+   "hint": "Complemento do pão.",
+   "learningObjective": "Lembrar a recusa da preguiça.",
+   "evidence": [
+    "Provérbios 31:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 31:30 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 31:30",
+   "passageA": {
+    "ref": "Provérbios 31:30",
+    "text": "a mulher que teme ao SENHOR, essa será louvada"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "O temor do Senhor é o belo que permanece."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Formosura é final"
+    },
+    {
+     "id": "b",
+     "text": "Temor permanece e louva"
+    },
+    {
+     "id": "c",
+     "text": "Graça basta"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "a mulher que teme ao SENHOR, essa será louvada",
+   "feedbackCorrect": "O temor liga o verso ao louvor que permanece.",
+   "feedbackWrong": {
+    "a": "Formosura é vã.",
+    "c": "Graça é enganosa."
+   },
+   "hint": "Pense no que permanece.",
+   "learningObjective": "Ligar 31:30 ao temor.",
+   "evidence": [
+    "Provérbios 31:30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 31:30, o mas contrapõe graça e formosura ao temor louvado.",
+   "verseRef": "Provérbios 31:30",
+   "correctOptionId": "true",
+   "evidenceSpan": "mas a mulher que teme ao SENHOR",
+   "feedbackCorrect": "O mas introduz quem será louvada.",
+   "feedbackWrong": {
+    "false": "Releia 31:30: mas a mulher que teme."
+   },
+   "hint": "Veja o mas.",
+   "learningObjective": "Compreender o contraste do louvor.",
+   "evidence": [
+    "Provérbios 31:30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:30, toque a palavra que marca o contraste.",
+   "verseRef": "Provérbios 31:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "mas"
+    },
+    {
+     "id": "b",
+     "text": "graça"
+    },
+    {
+     "id": "c",
+     "text": "formosura"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "mas a mulher que teme ao SENHOR",
+   "feedbackCorrect": "\"Mas\" introduz o contraste.",
+   "feedbackWrong": {
+    "b": "Graça é chamada enganosa.",
+    "c": "Formosura é chamada vã."
+   },
+   "hint": "Marcador antes de quem é louvada.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Provérbios 31:30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 31:30–31 estabelece com o louvor?",
+   "verseRef": "Provérbios 31:30–31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor e obras, não aparência, sustentam o louvor"
+    },
+    {
+     "id": "b",
+     "text": "Só a graça basta"
+    },
+    {
+     "id": "c",
+     "text": "Formosura garante o louvor público"
+    },
+    {
+     "id": "d",
+     "text": "Obras devem ficar ocultas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas obras a louvem em público",
+   "feedbackCorrect": "Temor louvado e obras públicas fecham o retrato.",
+   "feedbackWrong": {
+    "b": "Graça é enganosa.",
+    "c": "Formosura é vã.",
+    "d": "31:31 pede louvor público."
+   },
+   "hint": "Una o mas às obras.",
+   "learningObjective": "Relacionar temor e obras.",
+   "evidence": [
+    "Provérbios 31:30",
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o fechamento em Provérbios 31:22–31?",
+   "verseRef": "Provérbios 31:25–26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Vestes de força e fala sábia"
+    },
+    {
+     "id": "b",
+     "text": "Louvor da família"
+    },
+    {
+     "id": "c",
+     "text": "Temor do Senhor e obras públicas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "A força e a dignidade são suas vestes",
+   "feedbackCorrect": "Da força ao louvor familiar e ao temor.",
+   "feedbackWrong": {
+    "default": "Comece pelas vestes."
+   },
+   "hint": "O fim fala de temor e obras.",
+   "learningObjective": "Compreender o movimento do fechamento.",
+   "evidence": [
+    "Provérbios 31:25",
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 31:30, vã é a quê?",
+   "verseRef": "Provérbios 31:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "formosura"
+    },
+    {
+     "id": "b",
+     "text": "sabedoria"
+    },
+    {
+     "id": "c",
+     "text": "dignidade"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vã é a formosura",
+   "feedbackCorrect": "Vã é a formosura.",
+   "feedbackWrong": {
+    "b": "Sabedoria está na fala.",
+    "c": "Dignidade é veste."
+   },
+   "hint": "O que é chamada vã.",
+   "learningObjective": "Lembrar a formosura vã.",
+   "evidence": [
+    "Provérbios 31:30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 31:30 a Provérbios 9:10?",
+   "verseRef": "Provérbios 31:30",
+   "passageA": {
+    "ref": "Provérbios 31:30",
+    "text": "a mulher que teme ao SENHOR"
+   },
+   "passageB": {
+    "ref": "Provérbios 9:10"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor inicia a sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Formosura é o início"
+    },
+    {
+     "id": "c",
+     "text": "Preguiça edifica"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a mulher que teme ao SENHOR",
+   "feedbackCorrect": "Os dois textos põem o temor no centro da sabedoria.",
+   "feedbackWrong": {
+    "b": "Formosura é vã.",
+    "c": "Preguiça é recusada."
+   },
+   "hint": "Compare o papel do temor.",
+   "learningObjective": "Cruzar o temor do Senhor.",
+   "evidence": [
+    "Provérbios 31:30",
+    "Provérbios 9:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 31:31, as obras devem permanecer ocultas, sem louvor público.",
+   "verseRef": "Provérbios 31:31",
+   "correctOptionId": "false",
+   "evidenceSpan": "suas obras a louvem em público",
+   "feedbackCorrect": "O texto manda que as obras a louvem em público.",
+   "feedbackWrong": {
+    "true": "Releia 31:31: louvem em público."
+   },
+   "hint": "Veja o lugar do louvor.",
+   "learningObjective": "Corrigir a leitura das obras ocultas.",
+   "evidence": [
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 31:31, toque o trecho que sustenta o louvor público.",
+   "verseRef": "Provérbios 31:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "em público"
+    },
+    {
+     "id": "b",
+     "text": "fruto"
+    },
+    {
+     "id": "c",
+     "text": "mãos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas obras a louvem em público",
+   "feedbackCorrect": "As obras a louvam em público.",
+   "feedbackWrong": {
+    "b": "Fruto das mãos é o que se dá a ela.",
+    "c": "Mãos produzem o fruto."
+   },
+   "hint": "Local do louvor.",
+   "learningObjective": "Sustentar o louvor público.",
+   "evidence": [
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 31:30–31 sustenta?",
+   "verseRef": "Provérbios 31:30–31",
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor do Senhor e obras públicas são o belo que permanece"
+    },
+    {
+     "id": "b",
+     "text": "Formosura é o louvor final"
+    },
+    {
+     "id": "c",
+     "text": "Graça enganosa basta"
+    },
+    {
+     "id": "d",
+     "text": "Preguiça é louvada nas portas"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a mulher que teme ao SENHOR, essa será louvada",
+   "feedbackCorrect": "Temor e obras fecham o retrato contra a aparência. ",
+   "feedbackWrong": {
+    "b": "Formosura é vã.",
+    "c": "Graça é enganosa.",
+    "d": "Ela não come o pão da preguiça."
+   },
+   "hint": "Una temor e obras.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Provérbios 31:30",
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o fio do louvor que permanece?",
+   "verseRef": "Provérbios 31:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "Teme ao SENHOR e será louvada"
+    },
+    {
+     "id": "b",
+     "text": "Obras glorificam o Pai"
+    },
+    {
+     "id": "c",
+     "text": "Temor inicia a sabedoria"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a mulher que teme ao SENHOR, essa será louvada",
+   "feedbackCorrect": "Do temor ao eco em Mateus e Provérbios 9.",
+   "feedbackWrong": {
+    "default": "Comece por 31:30."
+   },
+   "hint": "De 31:30 a Mateus e 9:10.",
+   "learningObjective": "Ver o tema atravessar a Bíblia.",
+   "evidence": [
+    "Provérbios 31:30",
+    "Mateus 5:16",
+    "Provérbios 9:10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 31:31, o que a louva em público?",
+   "verseRef": "Provérbios 31:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "obras"
+    },
+    {
+     "id": "b",
+     "text": "graça"
+    },
+    {
+     "id": "c",
+     "text": "formosura"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas obras a louvem",
+   "feedbackCorrect": "O termo é obras.",
+   "feedbackWrong": {
+    "b": "Graça é enganosa.",
+    "c": "Formosura é vã."
+   },
+   "hint": "Sujeito do louvor.",
+   "learningObjective": "Lembrar o termo das obras.",
+   "evidence": [
+    "Provérbios 31:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 31:31 a Mateus 5:16?",
+   "verseRef": "Provérbios 31:31",
+   "passageA": {
+    "ref": "Provérbios 31:31",
+    "text": "suas obras a louvem em público"
+   },
+   "passageB": {
+    "ref": "Mateus 5:16"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Obras que glorificam o Pai"
+    },
+    {
+     "id": "b",
+     "text": "Formosura pública"
+    },
+    {
+     "id": "c",
+     "text": "Graça enganosa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "suas obras a louvem em público",
+   "feedbackCorrect": "Os dois textos põem as obras à vista para glória.",
+   "feedbackWrong": {
+    "b": "Formosura é vã.",
+    "c": "Graça é enganosa."
+   },
+   "hint": "Compare o papel das obras.",
+   "learningObjective": "Ligar obras públicas ao sermão.",
+   "evidence": [
+    "Provérbios 31:31",
+    "Mateus 5:16"
+   ]
+  }
+ ]
+}

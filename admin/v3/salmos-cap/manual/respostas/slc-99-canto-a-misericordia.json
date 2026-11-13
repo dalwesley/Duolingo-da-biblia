@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 101:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 101:1–6"
+      },
+      {
+        "ref": "Salmos 101:7–8"
+      }
+    ],
+    "context": "Cantarei a misericórdia e o juízo; não porei coisa vil diante dos meus olhos.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Canto à misericórdia",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Cantarei sobre a bondade e a justiça.",
+        "evidenceRef": "Salmos 101:1",
+        "evidenceSpan": "Cantarei sobre a bondade e a justiça"
+      },
+      {
+        "text": "Andarei sabiamente no caminho da perfeição.",
+        "evidenceRef": "Salmos 101:2",
+        "evidenceSpan": "Andarei sabiamente no caminho da perfeição"
+      },
+      {
+        "text": "Não colocarei nada de injusto diante dos meus.",
+        "evidenceRef": "Salmos 101:3",
+        "evidenceSpan": "Não colocarei nada de injusto diante dos meus"
+      },
+      {
+        "text": "Afastar-se-á de mim um coração perverso.",
+        "evidenceRef": "Salmos 101:4",
+        "evidenceSpan": "Afastar-se-á de mim um coração perverso"
+      },
+      {
+        "text": "Aquele que murmura às ocultas contra o seu.",
+        "evidenceRef": "Salmos 101:5",
+        "evidenceSpan": "Aquele que murmura às ocultas contra o seu"
+      },
+      {
+        "text": "Os meus olhos estarão sobre os fiéis da.",
+        "evidenceRef": "Salmos 101:6",
+        "evidenceSpan": "Os meus olhos estarão sobre os fiéis da"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Cantarei",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "bondade",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cantarei sobre a bondade e a",
+        "evidenceRef": "Salmos 101:1"
+      },
+      {
+        "label": "Andarei sabiamente no caminho da perfeição",
+        "evidenceRef": "Salmos 101:2"
+      },
+      {
+        "label": "Não colocarei nada de injusto diante",
+        "evidenceRef": "Salmos 101:3"
+      },
+      {
+        "label": "Afastar-se-á de mim um coração perverso",
+        "evidenceRef": "Salmos 101:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Salmos 101:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 101:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 101:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 13:15",
+        "bridge": "Sacrifício de louvor"
+      },
+      {
+        "ref": "João 10:11",
+        "bridge": "Bom Pastor"
+      },
+      {
+        "ref": "2 Coríntios 1:3",
+        "bridge": "Deus de toda consolação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "O rei promete casa íntegra: longe do perverso, perto dos fiéis da terra."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "O rei promete casa íntegra: longe do perverso, perto dos fiéis da terra.",
+    "anchorQuestion": "O que Salmos 101:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 101:1, cantarei sobre a bondade e a justiça.",
+      "verseRef": "Salmos 101:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Cantarei sobre a bondade e a justiça",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 101:1 afirma.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 101:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 101:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarei"
+        },
+        {
+          "id": "b",
+          "text": "sobre"
+        },
+        {
+          "id": "c",
+          "text": "bondade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "O versículo destaca «Cantarei».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 101:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 101:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não colocarei nada de injusto diante dos meus"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não colocarei nada de injusto diante dos meus",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 101:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 101:1 na ordem do texto.",
+      "verseRef": "Salmos 101:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarei"
+        },
+        {
+          "id": "b",
+          "text": "sobre"
+        },
+        {
+          "id": "c",
+          "text": "a"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 101:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 101:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Afastar-se-á"
+        },
+        {
+          "id": "b",
+          "text": "Cantarei"
+        },
+        {
+          "id": "c",
+          "text": "sobre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Afastar-se-á",
+      "feedbackCorrect": "A palavra do versículo é «Afastar-se-á».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 101:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 101:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 101:1",
+      "passageA": {
+        "ref": "Salmos 101:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cantarei a misericórdia e o juízo; não porei coisa vil diante dos meus olhos."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 101:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 101:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 101:2 afirma.",
+      "evidence": [
+        "Salmos 101:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 101:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 101:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andarei"
+        },
+        {
+          "id": "b",
+          "text": "sabiamente"
+        },
+        {
+          "id": "c",
+          "text": "caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Andarei",
+      "feedbackCorrect": "O versículo destaca «Quando».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 101:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 101:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 101:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Afastar-se-á de mim um coração perverso",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 101:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 101:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cantarei sobre a bondade"
+        },
+        {
+          "id": "b",
+          "text": "Andarei sabiamente no caminho da perfeição"
+        },
+        {
+          "id": "c",
+          "text": "Não colocarei nada de injusto diante"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 101:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 101:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "colocarei"
+        },
+        {
+          "id": "b",
+          "text": "Cantarei"
+        },
+        {
+          "id": "c",
+          "text": "sobre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "colocarei",
+      "feedbackCorrect": "A palavra do versículo é «colocarei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 101:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 101:1 a Hebreus 13:15.",
+      "verseRef": "Salmos 101:1",
+      "passageA": {
+        "ref": "Salmos 101:1"
+      },
+      "passageB": {
+        "ref": "Hebreus 13:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacrifício de louvor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 101:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "Pela",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 101:8 afirma.",
+      "evidence": [
+        "Salmos 101:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 101:8, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 101:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pela"
+        },
+        {
+          "id": "b",
+          "text": "manhã"
+        },
+        {
+          "id": "c",
+          "text": "exterminarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pela",
+      "feedbackCorrect": "O versículo destaca «Pela».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 101:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 101:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 101:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele que murmura às ocultas contra o seu",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 101:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 101:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 101:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 101:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aquele"
+        },
+        {
+          "id": "b",
+          "text": "Cantarei"
+        },
+        {
+          "id": "c",
+          "text": "sobre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aquele",
+      "feedbackCorrect": "A palavra do versículo é «Aquele».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 101:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 101:1 a João 10:11.",
+      "verseRef": "Salmos 101:1",
+      "passageA": {
+        "ref": "Salmos 101:1"
+      },
+      "passageB": {
+        "ref": "João 10:11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bom Pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cantarei",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 101:1"
+      ]
+    }
+  ]
+}

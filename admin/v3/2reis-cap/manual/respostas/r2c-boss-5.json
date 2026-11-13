@@ -1,0 +1,927 @@
+{
+  "study": {
+    "passageRef": "2 Reis 18:3–8",
+    "passages": [
+      {
+        "ref": "2 Reis 18:1–8"
+      },
+      {
+        "ref": "2 Reis 19:32–37"
+      },
+      {
+        "ref": "2 Reis 20:1–6"
+      },
+      {
+        "ref": "2 Reis 21:1–9"
+      }
+    ],
+    "context": "Esta Travessia revisa Ezequias: confiança e reforma, o anjo no acampamento, quinze anos a mais e o desvio de Manassés.",
+    "keyword": "confiou",
+    "keywordGloss": "Ezequias confia e é livrado; Manassés desfaz a reforma e prepara a queda.",
+    "focusQuestion": "Você guarda a fidelidade que livra, ou desfaz o bem que herdou?",
+    "reflectionPrompts": [
+      "Confiar e reformar",
+      "Deus defende",
+      "Não desfazer o bem"
+    ],
+    "facts": [
+      {
+        "text": "Ezequias confiou no Senhor sem semelhante em Judá.",
+        "evidenceRef": "2 Reis 18:5",
+        "evidenceSpan": "Ele confiou no Senhor, Deus de Israel"
+      },
+      {
+        "text": "O anjo do Senhor feriu cento e oitenta e cinco mil assírios.",
+        "evidenceRef": "2 Reis 19:35",
+        "evidenceSpan": "feriu, no acampamento dos assírios, a cento e oitenta e cinco mil"
+      },
+      {
+        "text": "O Senhor acrescentou quinze anos aos dias de Ezequias.",
+        "evidenceRef": "2 Reis 20:6",
+        "evidenceSpan": "acrescentarei aos teus dias quinze anos"
+      },
+      {
+        "text": "Ezequias pediu que a sombra retrocedesse dez graus.",
+        "evidenceRef": "2 Reis 20:10",
+        "evidenceSpan": "não, mas que retroceda dez graus"
+      },
+      {
+        "text": "Manassés reconstruiu os altares que Ezequias destruíra.",
+        "evidenceRef": "2 Reis 21:3",
+        "evidenceSpan": "voltou a edificar os altares que Ezequias, seu pai, havia destruído"
+      },
+      {
+        "text": "Judá ficou pior do que as nações expulsas.",
+        "evidenceRef": "2 Reis 21:9",
+        "evidenceSpan": "se tornaram piores do que as nações"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "confiou",
+        "gloss": "A confiança de Ezequias que marca o livramento."
+      },
+      {
+        "term": "defenderei",
+        "gloss": "Promessa do Senhor sobre Jerusalém."
+      },
+      {
+        "term": "altares",
+        "gloss": "O que Ezequias remove e Manassés reconstrói."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ezequias confia e reforma",
+        "evidenceRef": "2 Reis 18:3–8"
+      },
+      {
+        "label": "Anjo fere e Senaqueribe cai",
+        "evidenceRef": "2 Reis 19:32–37"
+      },
+      {
+        "label": "Oração, cura e quinze anos",
+        "evidenceRef": "2 Reis 20:1–6"
+      },
+      {
+        "label": "Manassés desfaz e o povo piora",
+        "evidenceRef": "2 Reis 21:1–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Não houve rei semelhante porque se apegou ao Senhor.",
+        "marker": "Pois",
+        "evidenceRef": "2 Reis 18:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "Defende a cidade para livrá-la por amor a si e a Davi.",
+        "marker": "para",
+        "evidenceRef": "2 Reis 19:34"
+      },
+      {
+        "kind": "resultado",
+        "text": "Não escutaram; Manassés os fez errar até piorarem.",
+        "marker": "Entretanto",
+        "evidenceRef": "2 Reis 21:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 37:36",
+        "bridge": "Anjo fere o acampamento"
+      },
+      {
+        "ref": "Isaías 38:5",
+        "bridge": "Quinze anos pela oração"
+      },
+      {
+        "ref": "Jeremias 15:4",
+        "bridge": "Juízo por causa de Manassés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ezequias e Manassés seguem o mesmo caminho de fidelidade.",
+        "why": "Ezequias confia e reforma; Manassés reconstrói ídolos."
+      },
+      {
+        "text": "Jerusalém caiu sob Senaqueribe nesta cena.",
+        "why": "O anjo fere o acampamento e o rei volta a Nínive."
+      },
+      {
+        "text": "O Senhor ignorou a oração na doença de Ezequias.",
+        "why": "Ouviu a oração, curou e acrescentou quinze anos."
+      }
+    ],
+    "anchorQuestion": "Qual contraste 2 Reis 18 e 21 mostram entre Ezequias e Manassés?",
+    "centralInsight": "Fidelidade traz livramento; a idolatria seguinte prepara a queda"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 18:5, Ezequias confiou no Senhor, Deus de Israel, de forma singular entre os reis de Judá.",
+      "verseRef": "2 Reis 18:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ele confiou no Senhor, Deus de Israel",
+      "feedbackCorrect": "A confiança singular abre o bloco de Ezequias.",
+      "feedbackWrong": {
+        "false": "Releia 18:5: confiou sem semelhante em Judá."
+      },
+      "hint": "Veja a comparação com os outros reis.",
+      "learningObjective": "Observar a confiança de Ezequias.",
+      "evidence": [
+        "2 Reis 18:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 19:35, toque quem feriu o acampamento dos assírios.",
+      "verseRef": "2 Reis 19:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "anjo do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Senaqueribe"
+        },
+        {
+          "id": "c",
+          "text": "cadáveres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o anjo do Senhor saiu e feriu",
+      "feedbackCorrect": "O anjo do Senhor executa o golpe.",
+      "feedbackWrong": {
+        "b": "Senaqueribe é o rei atingido.",
+        "c": "É o resultado na manhã."
+      },
+      "hint": "Quem saiu na noite?",
+      "learningObjective": "Identificar o anjo no acampamento.",
+      "evidence": [
+        "2 Reis 19:35"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 20:6, o que o Senhor acrescenta a Ezequias?",
+      "verseRef": "2 Reis 20:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quinze anos aos seus dias"
+        },
+        {
+          "id": "b",
+          "text": "O trono da Assíria"
+        },
+        {
+          "id": "c",
+          "text": "Altares a Baal em Judá"
+        },
+        {
+          "id": "d",
+          "text": "Um cerco contra Jerusalém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "acrescentarei aos teus dias quinze anos",
+      "feedbackCorrect": "Quinze anos são acrescentados.",
+      "feedbackWrong": {
+        "b": "Ele é livrado da Assíria, não a herda.",
+        "c": "Isso é Manassés.",
+        "d": "A cidade é defendida."
+      },
+      "hint": "Leia o número de anos.",
+      "learningObjective": "Notar os quinze anos.",
+      "evidence": [
+        "2 Reis 20:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 21:3 na ordem do texto.",
+      "verseRef": "2 Reis 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque voltou a edificar os altares"
+        },
+        {
+          "id": "b",
+          "text": "que Ezequias, seu pai, havia destruído"
+        },
+        {
+          "id": "c",
+          "text": "e levantou altares a Baal"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porque voltou a edificar os altares que Ezequias, seu pai, havia destruído",
+      "feedbackCorrect": "Reconstrói, ergue Baal e serve os céus.",
+      "feedbackWrong": {
+        "default": "Comece pela reconstrução dos altares."
+      },
+      "hint": "O verso abre com Porque.",
+      "learningObjective": "Seguir a ordem do desvio.",
+      "evidence": [
+        "2 Reis 21:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 18:4, complete: a chamavam ___.",
+      "verseRef": "2 Reis 18:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neustã"
+        },
+        {
+          "id": "b",
+          "text": "Baal"
+        },
+        {
+          "id": "c",
+          "text": "Asera"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a chamavam Neustã",
+      "feedbackCorrect": "O povo a chamava Neustã.",
+      "feedbackWrong": {
+        "b": "Não é Baal neste verso.",
+        "c": "Não é Asera neste verso."
+      },
+      "hint": "Nome no fim do verso.",
+      "learningObjective": "Lembrar Neustã.",
+      "evidence": [
+        "2 Reis 18:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 19:34 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 19:34",
+      "passageA": {
+        "ref": "2 Reis 19:34"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor defende Jerusalém por amor a si e a Davi."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Defesa por amor a Davi"
+        },
+        {
+          "id": "b",
+          "text": "Queda imediata de Sião"
+        },
+        {
+          "id": "c",
+          "text": "Vitória só humana de Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por amor de mim e por amor do meu servo Davi",
+      "feedbackCorrect": "A defesa liga verso e contexto.",
+      "feedbackWrong": {
+        "b": "A cidade é defendida.",
+        "c": "O anjo age."
+      },
+      "hint": "Por amor de quem?",
+      "learningObjective": "Ligar defesa e contexto.",
+      "evidence": [
+        "2 Reis 19:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 20:2, toque o gesto de Ezequias antes de orar.",
+      "verseRef": "2 Reis 20:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "virou o rosto"
+        },
+        {
+          "id": "b",
+          "text": "Isaías"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "virou o rosto para a parede e orou ao Senhor",
+      "feedbackCorrect": "Virou o rosto para a parede.",
+      "feedbackWrong": {
+        "b": "Isaías já tinha falado.",
+        "c": "É a quem ora."
+      },
+      "hint": "Procure o gesto inicial.",
+      "learningObjective": "Observar o gesto da oração.",
+      "evidence": [
+        "2 Reis 20:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 19:36 na ordem do texto.",
+      "verseRef": "2 Reis 19:36",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então, Senaqueribe, rei da Assíria, retirou-se"
+        },
+        {
+          "id": "b",
+          "text": "e foi embora"
+        },
+        {
+          "id": "c",
+          "text": "voltou e permaneceu em Nínive"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "voltou e permaneceu em Nínive",
+      "feedbackCorrect": "Retira-se, vai embora e fica em Nínive.",
+      "feedbackWrong": {
+        "default": "Comece pela retirada de Senaqueribe."
+      },
+      "hint": "O verso começa com Então.",
+      "learningObjective": "Seguir a retirada do rei.",
+      "evidence": [
+        "2 Reis 19:36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 18:6–7, Ezequias se apegou ao Senhor; assim o Senhor esteve com ele e ele não serviu ao rei da Assíria.",
+      "verseRef": "2 Reis 18:6–7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Assim foi o Senhor com ele",
+      "feedbackCorrect": "Apego, presença e rebelião formam o resultado.",
+      "feedbackWrong": {
+        "false": "Leia 18:6–7: apego, Assim, e não o serviu."
+      },
+      "hint": "Olhe o Assim e o fim do verso.",
+      "learningObjective": "Compreender causa e resultado.",
+      "evidence": [
+        "2 Reis 18:6",
+        "2 Reis 18:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 19:34, toque o marcador de causa no início do verso.",
+      "verseRef": "2 Reis 19:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque eu defenderei esta cidade",
+      "feedbackCorrect": "\"Porque\" abre a causa da defesa.",
+      "feedbackWrong": {
+        "b": "Cidade é o objeto.",
+        "c": "Davi é o servo nomeado."
+      },
+      "hint": "Primeira palavra do verso.",
+      "learningObjective": "Tocar o marcador de causa.",
+      "evidence": [
+        "2 Reis 19:34"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 21:3 se relaciona com 2 Reis 18:4?",
+      "verseRef": "2 Reis 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manassés reconstrói o que Ezequias destruíra"
+        },
+        {
+          "id": "b",
+          "text": "Manassés completa a reforma do pai"
+        },
+        {
+          "id": "c",
+          "text": "Os dois removem juntos a serpente"
+        },
+        {
+          "id": "d",
+          "text": "Manassés nunca toca nos altares"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltou a edificar os altares que Ezequias, seu pai, havia destruído",
+      "feedbackCorrect": "Há reversão explícita da reforma.",
+      "feedbackWrong": {
+        "b": "Ele desfaz a reforma.",
+        "c": "Só Ezequias destrói a serpente.",
+        "d": "Ele reconstrói altares."
+      },
+      "hint": "Compare destruir e edificar.",
+      "learningObjective": "Relacionar pai e filho.",
+      "evidence": [
+        "2 Reis 21:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "2 Reis 18:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ezequias confia e reforma"
+        },
+        {
+          "id": "b",
+          "text": "Anjo fere e Senaqueribe cai"
+        },
+        {
+          "id": "c",
+          "text": "Manassés desfaz e o povo piora"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele confiou no Senhor, Deus de Israel",
+      "feedbackCorrect": "Fidelidade, livramento e desvio.",
+      "feedbackWrong": {
+        "default": "Comece pela confiança de Ezequias."
+      },
+      "hint": "Quem vem antes de Manassés?",
+      "learningObjective": "Ordenar a estrutura do bloco.",
+      "evidence": [
+        "2 Reis 18:5",
+        "2 Reis 21:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 19:34, complete: Porque eu ___ esta cidade.",
+      "verseRef": "2 Reis 19:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "defenderei"
+        },
+        {
+          "id": "b",
+          "text": "entregarei"
+        },
+        {
+          "id": "c",
+          "text": "queimarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque eu defenderei esta cidade",
+      "feedbackCorrect": "O Senhor promete defender.",
+      "feedbackWrong": {
+        "b": "Não é entregar.",
+        "c": "Não é queimar."
+      },
+      "hint": "Verbo da proteção.",
+      "learningObjective": "Lembrar defenderei.",
+      "evidence": [
+        "2 Reis 19:34"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 19:35 a Isaías 37:36?",
+      "verseRef": "2 Reis 19:35",
+      "passageA": {
+        "ref": "2 Reis 19:35"
+      },
+      "passageB": {
+        "ref": "Isaías 37:36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Anjo fere o acampamento"
+        },
+        {
+          "id": "b",
+          "text": "Queda de Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com a Assíria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o anjo do Senhor saiu e feriu",
+      "feedbackCorrect": "Isaías ecoa o mesmo golpe do anjo.",
+      "feedbackWrong": {
+        "b": "A cidade é defendida.",
+        "c": "Não há aliança."
+      },
+      "hint": "Compare o agente do golpe.",
+      "learningObjective": "Ligar ao paralelo em Isaías.",
+      "evidence": [
+        "2 Reis 19:35",
+        "Isaías 37:36"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 21:9, toque o marcador que introduz o contraste.",
+      "verseRef": "2 Reis 21:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "Manassés"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, eles não escutaram",
+      "feedbackCorrect": "\"Entretanto\" marca o contraste.",
+      "feedbackWrong": {
+        "b": "Manassés é o agente.",
+        "c": "Aparece no fim do verso."
+      },
+      "hint": "Primeira palavra do verso.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "2 Reis 21:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene a sequência da doença de Ezequias.",
+      "verseRef": "2 Reis 20:1–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anúncio de morte e oração na parede"
+        },
+        {
+          "id": "b",
+          "text": "Palavra: cura, quinze anos e defesa"
+        },
+        {
+          "id": "c",
+          "text": "Sombra retrocede dez graus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "virou o rosto para a parede e orou ao Senhor",
+      "feedbackCorrect": "Anúncio, resposta e sinal.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio de morte."
+      },
+      "hint": "O que vem antes da cura?",
+      "learningObjective": "Ordenar oração e sinal.",
+      "evidence": [
+        "2 Reis 20:1",
+        "2 Reis 20:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 18–21, Ezequias e Manassés seguem o mesmo caminho de fidelidade ao Senhor.",
+      "verseRef": "2 Reis 21:2–3",
+      "correctOptionId": "false",
+      "evidenceSpan": "voltou a edificar os altares que Ezequias, seu pai, havia destruído",
+      "feedbackCorrect": "Há contraste: confiança e depois idolatria.",
+      "feedbackWrong": {
+        "true": "18 confia; 21 reconstrói ídolos."
+      },
+      "hint": "Compare reforma e reconstrução.",
+      "learningObjective": "Corrigir a leitura do contraste.",
+      "evidence": [
+        "2 Reis 21:2",
+        "2 Reis 21:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 18:5, toque o verbo que sustenta a singularidade de Ezequias.",
+      "verseRef": "2 Reis 18:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "confiou"
+        },
+        {
+          "id": "b",
+          "text": "Judá"
+        },
+        {
+          "id": "c",
+          "text": "reis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele confiou no Senhor, Deus de Israel",
+      "feedbackCorrect": "A singularidade começa em confiou.",
+      "feedbackWrong": {
+        "b": "Judá é o reino.",
+        "c": "É a comparação, não o verbo."
+      },
+      "hint": "Procure a ação do rei.",
+      "learningObjective": "Sustentar a leitura da confiança.",
+      "evidence": [
+        "2 Reis 18:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une o bloco de Ezequias?",
+      "verseRef": "2 Reis 18:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fidelidade traz livramento; idolatria seguinte prepara queda"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém cai sob Senaqueribe nesta etapa"
+        },
+        {
+          "id": "c",
+          "text": "Manassés apenas mantém a reforma do pai"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor ignora a oração na doença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele confiou no Senhor, Deus de Israel",
+      "feedbackCorrect": "Confiança, livramento e desvio formam o arco.",
+      "feedbackWrong": {
+        "b": "O anjo impede a tomada.",
+        "c": "Manassés desfaz a reforma.",
+        "d": "Há cura e quinze anos."
+      },
+      "hint": "Una confiança, anjo e Manassés.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "2 Reis 18:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do arco de Ezequias a Manassés.",
+      "verseRef": "2 Reis 18:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança e reforma em Judá"
+        },
+        {
+          "id": "b",
+          "text": "Livramento do acampamento assírio"
+        },
+        {
+          "id": "c",
+          "text": "Desvio idólatra sob Manassés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ele confiou no Senhor, Deus de Israel",
+      "feedbackCorrect": "Fidelidade, livramento e queda moral.",
+      "feedbackWrong": {
+        "default": "Comece pela confiança."
+      },
+      "hint": "O que vem antes do desvio?",
+      "learningObjective": "Encadear o arco do bloco.",
+      "evidence": [
+        "2 Reis 18:5",
+        "2 Reis 21:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 21:9, complete: piores do que as ___.",
+      "verseRef": "2 Reis 21:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "nações"
+        },
+        {
+          "id": "b",
+          "text": "tribos"
+        },
+        {
+          "id": "c",
+          "text": "cidades"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "piores do que as nações",
+      "feedbackCorrect": "A comparação é com as nações.",
+      "feedbackWrong": {
+        "b": "Não é tribos.",
+        "c": "Não é cidades."
+      },
+      "hint": "Com quem Judá é comparado?",
+      "learningObjective": "Lembrar nações no desvio.",
+      "evidence": [
+        "2 Reis 21:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 20:5 a Isaías 38:5?",
+      "verseRef": "2 Reis 20:5",
+      "passageA": {
+        "ref": "2 Reis 20:5"
+      },
+      "passageB": {
+        "ref": "Isaías 38:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Quinze anos pela oração"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio na doença"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de curar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu ouvi a tua oração e vi as tuas lágrimas",
+      "feedbackCorrect": "Isaías ecoa a oração ouvida e os anos.",
+      "feedbackWrong": {
+        "b": "Há resposta clara.",
+        "c": "Há promessa de cura."
+      },
+      "hint": "Compare oração e anos.",
+      "learningObjective": "Ligar à resposta em Isaías.",
+      "evidence": [
+        "2 Reis 20:5",
+        "Isaías 38:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 21:4, toque onde Manassés construiu altares.",
+      "verseRef": "2 Reis 21:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "meu nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "construiu altares na casa do Senhor",
+      "feedbackCorrect": "Os altares entram na casa do Senhor.",
+      "feedbackWrong": {
+        "b": "É a cidade da promessa.",
+        "c": "É a promessa de Deus."
+      },
+      "hint": "Onde ele construiu?",
+      "learningObjective": "Sustentar a leitura da profanação.",
+      "evidence": [
+        "2 Reis 21:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o caminho do livramento à idolatria.",
+      "verseRef": "2 Reis 19:35",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor defende Sião do opressor"
+        },
+        {
+          "id": "b",
+          "text": "Ezequias é ouvido na doença"
+        },
+        {
+          "id": "c",
+          "text": "Manassés faz o povo errar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o anjo do Senhor saiu e feriu",
+      "feedbackCorrect": "Defesa, oração respondida e desvio.",
+      "feedbackWrong": {
+        "default": "Comece pela defesa de Sião."
+      },
+      "hint": "Siga livramento, doença e Manassés.",
+      "learningObjective": "Encadear livramento e queda.",
+      "evidence": [
+        "2 Reis 19:35",
+        "2 Reis 21:9"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Gálatas 1:13–18",
+    "passages": [
+      { "ref": "Gálatas 1:13–18" },
+      { "ref": "Gálatas 1:19–21" }
+    ],
+    "context": "Paulo conta aos gálatas o que era antes: perseguidor zeloso. Depois mostra que o chamado veio de Deus, por graça, e o evangelho não veio de homens.",
+    "keyword": "graça",
+    "keywordGloss": "O favor de Deus que separa e chama Paulo, independente do mérito do perseguidor.",
+    "focusQuestion": "Onde você ainda confia mais em tradição humana do que no chamado de Deus?",
+    "reflectionPrompts": [
+      "Chamado pela graça",
+      "Revelação, não homens",
+      "Enviado aos gentios"
+    ],
+    "facts": [
+      {
+        "text": "Paulo perseguia intensamente a igreja de Deus e a devastava.",
+        "evidenceRef": "Gálatas 1:13",
+        "evidenceSpan": "eu perseguia intensamente a igreja de Deus e a devastava"
+      },
+      {
+        "text": "Ele se destacava no judaísmo e era extremamente zeloso das tradições dos pais.",
+        "evidenceRef": "Gálatas 1:14",
+        "evidenceSpan": "sendo extremamente zeloso das tradições de meus pais"
+      },
+      {
+        "text": "Deus o separou desde o ventre e o chamou pela sua graça.",
+        "evidenceRef": "Gálatas 1:15",
+        "evidenceSpan": "me separou desde o ventre de minha mãe e me chamou pela sua graça"
+      },
+      {
+        "text": "Deus revelou seu Filho nele para que o pregasse entre os gentios.",
+        "evidenceRef": "Gálatas 1:16",
+        "evidenceSpan": "Revelar seu Filho em mim, para que eu o pregasse entre os gentios"
+      },
+      {
+        "text": "Ele não consultou carne e sangue nem foi logo a Jerusalém aos apóstolos.",
+        "evidenceRef": "Gálatas 1:16",
+        "evidenceSpan": "não consultei carne e sangue"
+      },
+      {
+        "text": "Depois de três anos subiu a Jerusalém e ficou quinze dias com Pedro.",
+        "evidenceRef": "Gálatas 1:18",
+        "evidenceSpan": "subi a Jerusalém para me encontrar com Pedro, e permaneci com ele durante quinze dias"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "graça",
+        "gloss": "O favor pelo qual Deus chama Paulo, sem base no zelo anterior."
+      },
+      {
+        "term": "gentios",
+        "gloss": "Os povos aos quais Paulo é enviado a pregar o Filho."
+      },
+      {
+        "term": "Revelar",
+        "gloss": "Deus mostra o Filho em Paulo; o evangelho não nasce de consulta humana."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Paulo perseguia a igreja com zelo",
+        "evidenceRef": "Gálatas 1:13–14"
+      },
+      {
+        "label": "Deus chama pela graça e revela o Filho",
+        "evidenceRef": "Gálatas 1:15–16"
+      },
+      {
+        "label": "Sem consulta a homens, parte à Arábia",
+        "evidenceRef": "Gálatas 1:16–17"
+      },
+      {
+        "label": "Só depois encontra Pedro e Tiago",
+        "evidenceRef": "Gálatas 1:18–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Depois do zelo perseguidor, Deus chama pela graça e revela o Filho.",
+        "marker": "Mas",
+        "evidenceRef": "Gálatas 1:15"
+      },
+      {
+        "kind": "propósito",
+        "text": "A revelação do Filho mira a pregação entre os gentios.",
+        "marker": "para que",
+        "evidenceRef": "Gálatas 1:16"
+      },
+      {
+        "kind": "sequência",
+        "text": "Só depois de três anos Paulo sobe a Jerusalém para ver Pedro.",
+        "marker": "Depois",
+        "evidenceRef": "Gálatas 1:18"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Atos 9:15", "bridge": "Escolhido para os gentios" },
+      { "ref": "Jeremias 1:5", "bridge": "Separado desde o ventre" },
+      { "ref": "1 Coríntios 15:8", "bridge": "Cristo apareceu a Paulo" }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo inventou o evangelho depois de aprender com os apóstolos em Jerusalém.",
+        "why": "Ele diz que não consultou carne e sangue e só foi a Jerusalém três anos depois."
+      },
+      {
+        "text": "O chamado veio do mérito do zelo judaico de Paulo.",
+        "why": "O texto liga o chamado à graça de Deus, não às tradições dos pais."
+      },
+      {
+        "text": "Paulo ficou logo sob a autoridade de todos os apóstolos em Jerusalém.",
+        "why": "Ele foi à Arábia e a Damasco; em Jerusalém só viu Pedro e Tiago."
+      }
+    ],
+    "centralInsight": "Deus revelou o Filho nele e o enviou aos gentios: o evangelho veio por revelação, não por homens.",
+    "anchorQuestion": "Segundo Gálatas 1:15–16, quem revelou o Filho em Paulo e para que fim?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Gálatas 1:13, Paulo diz que perseguia intensamente a igreja de Deus e a devastava.",
+      "verseRef": "Gálatas 1:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "eu perseguia intensamente a igreja de Deus e a devastava",
+      "feedbackCorrect": "O próprio Paulo descreve sua conduta anterior: perseguia e devastava a igreja.",
+      "feedbackWrong": {
+        "false": "Releia o fim do versículo: ele perseguia intensamente e devastava a igreja."
+      },
+      "hint": "Olhe o que ele diz sobre a própria conduta no judaísmo.",
+      "learningObjective": "Observar o passado perseguidor de Paulo no texto.",
+      "evidence": ["Gálatas 1:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 1:16, toque a quem Paulo deveria pregar o Filho.",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        { "id": "a", "text": "gentios" },
+        { "id": "b", "text": "Filho" },
+        { "id": "c", "text": "sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu o pregasse entre os gentios",
+      "feedbackCorrect": "O propósito da revelação é pregar o Filho entre os gentios.",
+      "feedbackWrong": {
+        "b": "Filho é quem foi revelado, não o público da pregação.",
+        "c": "Sangue aparece na recusa de consultar homens, não no alvo da missão."
+      },
+      "hint": "Veja a finalidade introduzida por para que.",
+      "learningObjective": "Identificar o público da missão de Paulo no versículo.",
+      "evidence": ["Gálatas 1:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gálatas 1:18, quanto tempo Paulo permaneceu com Pedro em Jerusalém?",
+      "verseRef": "Gálatas 1:18",
+      "options": [
+        { "id": "a", "text": "Quinze dias" },
+        { "id": "b", "text": "Três anos seguidos" },
+        { "id": "c", "text": "Um mês inteiro" },
+        { "id": "d", "text": "Só um dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneci com ele durante quinze dias",
+      "feedbackCorrect": "Depois de três anos sobe; a estadia com Pedro dura quinze dias.",
+      "feedbackWrong": {
+        "b": "Três anos é o intervalo até subir, não o tempo com Pedro.",
+        "c": "O texto não fala em um mês; diz quinze dias.",
+        "d": "Não foi um dia só: permaneceu quinze dias."
+      },
+      "hint": "Separe o intervalo de três anos do tempo da visita.",
+      "learningObjective": "Distinguir o intervalo e a duração da visita a Pedro.",
+      "evidence": ["Gálatas 1:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 1:15–16 na ordem do texto.",
+      "verseRef": "Gálatas 1:15–16",
+      "options": [
+        { "id": "a", "text": "Mas, quando agradou a Deus, que me separou desde o ventre" },
+        { "id": "b", "text": "e me chamou pela sua graça, aprouve" },
+        { "id": "c", "text": "Revelar seu Filho em mim, para que eu o pregasse entre os gentios" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "me chamou pela sua graça",
+      "feedbackCorrect": "Primeiro o agrado de Deus e a separação; depois o chamado; então a revelação do Filho.",
+      "feedbackWrong": {
+        "default": "Comece pelo Mas, quando agradou a Deus; a revelação do Filho vem depois."
+      },
+      "hint": "A virada começa com Mas, quando agradou a Deus.",
+      "learningObjective": "Seguir a ordem do chamado e da revelação no texto.",
+      "evidence": ["Gálatas 1:15–16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gálatas 1:15, complete: me chamou pela sua ___.",
+      "verseRef": "Gálatas 1:15",
+      "options": [
+        { "id": "a", "text": "graça" },
+        { "id": "b", "text": "tradição" },
+        { "id": "c", "text": "nação" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me chamou pela sua graça",
+      "feedbackCorrect": "O chamado de Paulo é pela graça de Deus, não pelo zelo anterior.",
+      "feedbackWrong": {
+        "b": "Tradição aparece no zelo dos pais, não no chamado.",
+        "c": "Nação descreve o destaque anterior; o chamado é pela graça."
+      },
+      "hint": "Veja a palavra ligada a me chamou pela sua.",
+      "learningObjective": "Lembrar a palavra que nomeia o modo do chamado.",
+      "evidence": ["Gálatas 1:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gálatas 1:16 comunica que se liga a este contexto?",
+      "verseRef": "Gálatas 1:16",
+      "passageA": { "ref": "Gálatas 1:16" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Paulo era perseguidor zeloso; o evangelho não veio de consulta a homens."
+      },
+      "options": [
+        { "id": "a", "text": "Revelação para pregar aos gentios" },
+        { "id": "b", "text": "Zelo pelas tradições dos pais" },
+        { "id": "c", "text": "Devastação da igreja de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Revelar seu Filho em mim, para que eu o pregasse entre os gentios",
+      "feedbackCorrect": "Diante do passado perseguidor, Deus revela o Filho para a missão aos gentios.",
+      "feedbackWrong": {
+        "b": "O zelo das tradições é o passado, não a virada do chamado.",
+        "c": "Devastar a igreja é a conduta antiga, não o conteúdo da revelação."
+      },
+      "hint": "Ligue a revelação do Filho ao propósito da pregação.",
+      "learningObjective": "Ligar o contexto do chamado à revelação para os gentios.",
+      "evidence": ["Gálatas 1:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gálatas 1:15–16, o contraste com o passado aponta que Deus chama Paulo pela graça para revelar o Filho nele.",
+      "verseRef": "Gálatas 1:15–16",
+      "correctOptionId": "true",
+      "evidenceSpan": "me chamou pela sua graça",
+      "feedbackCorrect": "O Mas introduz a virada: Deus chama pela graça e revela o Filho.",
+      "feedbackWrong": {
+        "false": "O Mas marca a virada do zelo para o chamado pela graça e a revelação."
+      },
+      "hint": "Observe o Mas e o que Deus faz em seguida.",
+      "learningObjective": "Ver o contraste entre o passado e o chamado pela graça.",
+      "evidence": ["Gálatas 1:15–16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 1:15, toque a palavra que marca a virada em relação à conduta anterior.",
+      "verseRef": "Gálatas 1:15",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "ventre" },
+        { "id": "c", "text": "mãe" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas, quando agradou a Deus",
+      "feedbackCorrect": "O Mas introduz o contraste: agora é Deus quem age pela graça.",
+      "feedbackWrong": {
+        "b": "Ventre fala do tempo da separação, não da virada do argumento.",
+        "c": "Mãe completa a imagem do ventre; a marca da virada é Mas."
+      },
+      "hint": "Procure a conjunção que abre o versículo.",
+      "learningObjective": "Tocar o marcador de contraste no chamado de Paulo.",
+      "evidence": ["Gálatas 1:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Gálatas 1:16 estabelece entre a revelação do Filho e a missão?",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        { "id": "a", "text": "A revelação tem o propósito de pregar entre os gentios" },
+        { "id": "b", "text": "A revelação serve para consultar logo Jerusalém" },
+        { "id": "c", "text": "A revelação confirma o zelo das tradições" },
+        { "id": "d", "text": "A revelação manda voltar a devastar a igreja" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu o pregasse entre os gentios",
+      "feedbackCorrect": "O para que liga a revelação ao envio: pregar o Filho entre os gentios.",
+      "feedbackWrong": {
+        "b": "Ele diz que não consultou carne e sangue.",
+        "c": "As tradições são o passado; o chamado é pela graça.",
+        "d": "A missão é pregar, não devastar."
+      },
+      "hint": "Leia a finalidade depois de Revelar seu Filho.",
+      "learningObjective": "Relacionar revelação e propósito missionário no texto.",
+      "evidence": ["Gálatas 1:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do relato em Gálatas 1:13–19.",
+      "verseRef": "Gálatas 1:13–16",
+      "options": [
+        { "id": "a", "text": "Paulo perseguia a igreja com zelo" },
+        { "id": "b", "text": "Deus chama pela graça e revela o Filho" },
+        { "id": "c", "text": "Sem consulta a homens, parte à Arábia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não consultei carne e sangue",
+      "feedbackCorrect": "Primeiro o passado; depois o chamado; então a recusa de consulta humana.",
+      "feedbackWrong": {
+        "default": "Comece pela perseguição; a partida sem consulta vem depois da revelação."
+      },
+      "hint": "Pense no fluxo: passado, chamado, independência dos homens.",
+      "learningObjective": "Ordenar os movimentos do relato do chamado.",
+      "evidence": ["Gálatas 1:13–16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gálatas 1:16, complete o propósito: ___ que eu o pregasse entre os gentios.",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        { "id": "a", "text": "para" },
+        { "id": "b", "text": "porém" },
+        { "id": "c", "text": "depois" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu o pregasse entre os gentios",
+      "feedbackCorrect": "O para que marca o propósito da revelação: a pregação aos gentios.",
+      "feedbackWrong": {
+        "b": "Porém marca contraste; aqui a relação é de propósito.",
+        "c": "Depois aparece na sequência temporal; aqui é para que."
+      },
+      "hint": "Veja a expressão que introduz a finalidade da revelação.",
+      "learningObjective": "Lembrar o marcador de propósito na missão de Paulo.",
+      "evidence": ["Gálatas 1:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gálatas 1:15 a Jeremias 1:5?",
+      "verseRef": "Gálatas 1:15",
+      "passageA": { "ref": "Gálatas 1:15" },
+      "passageB": { "ref": "Jeremias 1:5" },
+      "options": [
+        { "id": "a", "text": "Separado desde o ventre" },
+        { "id": "b", "text": "Zelo das tradições" },
+        { "id": "c", "text": "Quinze dias com Pedro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me separou desde o ventre de minha mãe",
+      "feedbackCorrect": "Em ambos, Deus separa o servo desde o ventre para a missão.",
+      "feedbackWrong": {
+        "b": "Tradições dos pais não ligam os dois textos.",
+        "c": "A visita a Pedro é só em Gálatas 1:18."
+      },
+      "hint": "Compare o tempo da separação em Deus.",
+      "learningObjective": "Ligar o chamado de Paulo ao tema da separação desde o ventre.",
+      "evidence": ["Gálatas 1:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Gálatas 1:16–17, o evangelho de Paulo depende de ele ter aprendido logo com os apóstolos em Jerusalém.",
+      "verseRef": "Gálatas 1:16–17",
+      "correctOptionId": "false",
+      "evidenceSpan": "não consultei carne e sangue",
+      "feedbackCorrect": "Ele não consultou homens e não foi logo a Jerusalém; foi à Arábia.",
+      "feedbackWrong": {
+        "true": "O texto nega consulta a carne e sangue e a ida imediata a Jerusalém."
+      },
+      "hint": "Veja o que ele faz logo após a revelação.",
+      "learningObjective": "Avaliar a leitura errada de dependência imediata dos apóstolos.",
+      "evidence": ["Gálatas 1:16–17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 1:16, toque o trecho que sustenta que Paulo não buscou aprovação humana imediata.",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        { "id": "a", "text": "não consultei" },
+        { "id": "b", "text": "seu Filho" },
+        { "id": "c", "text": "sem detença" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não consultei carne e sangue",
+      "feedbackCorrect": "Não consultei carne e sangue sustenta a independência da revelação.",
+      "feedbackWrong": {
+        "b": "Seu Filho nomeia quem foi revelado, não a recusa de consulta.",
+        "c": "Sem detença fala de prontidão; o sustento da leitura é não consultei."
+      },
+      "hint": "Procure a negação ligada a carne e sangue.",
+      "learningObjective": "Tocar o trecho que sustenta a independência do evangelho de Paulo.",
+      "evidence": ["Gálatas 1:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Gálatas 1:15–17 sustenta melhor?",
+      "verseRef": "Gálatas 1:15–17",
+      "options": [
+        { "id": "a", "text": "O chamado vem da graça e da revelação, não do mérito ou de homens" },
+        { "id": "b", "text": "O zelo judaico de Paulo gerou o evangelho" },
+        { "id": "c", "text": "Paulo precisou da aprovação imediata de Jerusalém" },
+        { "id": "d", "text": "A missão aos gentios foi ideia dos apóstolos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me chamou pela sua graça",
+      "feedbackCorrect": "Deus chama pela graça, revela o Filho e Paulo não consulta homens.",
+      "feedbackWrong": {
+        "b": "O zelo é o passado contrastado pelo chamado.",
+        "c": "Ele não foi logo a Jerusalém.",
+        "d": "A missão nasce da revelação, não da consulta aos apóstolos."
+      },
+      "hint": "Una graça, revelação e a recusa de consultar homens.",
+      "learningObjective": "Escolher a interpretação alinhada à origem do evangelho de Paulo.",
+      "evidence": ["Gálatas 1:15–17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do argumento sobre a origem do evangelho.",
+      "verseRef": "Gálatas 1:15–18",
+      "options": [
+        { "id": "a", "text": "Deus chama pela graça" },
+        { "id": "b", "text": "Revela o Filho para os gentios" },
+        { "id": "c", "text": "Só depois Paulo encontra Pedro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Depois de três anos, subi a Jerusalém",
+      "feedbackCorrect": "Primeiro o chamado; depois a revelação missionária; só então a visita a Pedro.",
+      "feedbackWrong": {
+        "default": "A visita a Pedro não vem antes do chamado e da revelação."
+      },
+      "hint": "Siga o fio de 1:15 até 1:18.",
+      "learningObjective": "Encadear chamado, revelação e visita tardia a Pedro.",
+      "evidence": ["Gálatas 1:15–18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gálatas 1:16, complete o verbo que carrega a iniciativa divina: ___ seu Filho em mim.",
+      "verseRef": "Gálatas 1:16",
+      "options": [
+        { "id": "a", "text": "Revelar" },
+        { "id": "b", "text": "Consultar" },
+        { "id": "c", "text": "Devastar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Revelar seu Filho em mim",
+      "feedbackCorrect": "Revelar nomeia a ação de Deus: o Filho é mostrado em Paulo.",
+      "feedbackWrong": {
+        "b": "Consultar é o que Paulo não fez com carne e sangue.",
+        "c": "Devastar descreve o passado; aqui o verbo é Revelar."
+      },
+      "hint": "Veja o primeiro verbo do versículo 16.",
+      "learningObjective": "Lembrar o termo que nomeia a revelação do Filho.",
+      "evidence": ["Gálatas 1:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gálatas 1:16 a Atos 9:15?",
+      "verseRef": "Gálatas 1:16",
+      "passageA": { "ref": "Gálatas 1:16" },
+      "passageB": { "ref": "Atos 9:15" },
+      "options": [
+        { "id": "a", "text": "Enviado aos gentios" },
+        { "id": "b", "text": "Quinze dias com Pedro" },
+        { "id": "c", "text": "Zelo das tradições" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu o pregasse entre os gentios",
+      "feedbackCorrect": "Em ambos, Paulo é escolhido para levar o nome de Cristo aos gentios.",
+      "feedbackWrong": {
+        "b": "A visita a Pedro não aparece em Atos 9:15.",
+        "c": "O zelo das tradições é o passado de Paulo, não a ponte."
+      },
+      "hint": "Pense no público da missão de Paulo.",
+      "learningObjective": "Ligar a revelação em Gálatas ao envio aos gentios em Atos.",
+      "evidence": ["Gálatas 1:16"]
+    }
+  ]
+}

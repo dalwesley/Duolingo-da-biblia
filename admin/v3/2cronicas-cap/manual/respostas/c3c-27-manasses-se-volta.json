@@ -1,0 +1,697 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 33:10–16",
+    "passages": [
+      {
+        "ref": "2 Crônicas 33:10–16"
+      }
+    ],
+    "context": "Levado a Babilônia, Manassés se humilha e o Senhor o restaura. Humilhar-se mesmo tarde",
+    "keyword": "Senhor",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Manassés se volta",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Crônicas 33:10 afirma: E o Senhor falou a Manassés e ao seu povo.",
+        "evidenceRef": "2 Crônicas 33:10",
+        "evidenceSpan": "E o Senhor falou a Manassés e ao seu povo"
+      },
+      {
+        "text": "O texto em 2 Crônicas 33:12 afirma: E ele, angustiado, suplicou deveras ao Senhor, seu.",
+        "evidenceRef": "2 Crônicas 33:12",
+        "evidenceSpan": "E ele, angustiado, suplicou deveras ao Senhor, seu"
+      },
+      {
+        "text": "O texto em 2 Crônicas 33:14 afirma: Depois disso.",
+        "evidenceRef": "2 Crônicas 33:14",
+        "evidenceSpan": "Depois disso"
+      },
+      {
+        "text": "O texto em 2 Crônicas 33:16 afirma: Restaurou o altar do Senhor.",
+        "evidenceRef": "2 Crônicas 33:16",
+        "evidenceSpan": "Restaurou o altar do Senhor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "falou",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "Manassés",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "2 Crônicas 33:10"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "2 Crônicas 33:12"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "2 Crônicas 33:16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 2 Crônicas 33:14.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 33:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 2 Crônicas 33:16.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 33:16"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 2 Crônicas 33:10 a 2 Crônicas 33:16.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 33:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "Angustiado, ele suplicou ao Senhor; Deus se deixou achar e o trouxe de volta a Jerusalém.",
+    "anchorQuestion": "O que 2 Crônicas 33:10–16 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 33:10 o nome Senhor está ausente do versículo",
+      "verseRef": "2 Crônicas 33:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo contém \"Senhor\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 33:10: \"Senhor\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 33:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 33:10, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Crônicas 33:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "falou"
+        },
+        {
+          "id": "b",
+          "text": "Manassés"
+        },
+        {
+          "id": "c",
+          "text": "seu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "falou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 33:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 33:12, o que o texto destaca?",
+      "verseRef": "2 Crônicas 33:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de E ele no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E ele, angustiado, suplicou deveras ao",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "O texto nomeia pessoas e ações.",
+        "c": "Não há essa proibição aqui.",
+        "d": "Isso não é o que o versículo diz."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "2 Crônicas 33:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 33:10 na ordem do texto.",
+      "verseRef": "2 Crônicas 33:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "E o Senhor falou"
+        },
+        {
+          "id": "b",
+          "text": "Manassés e ao seu povo"
+        },
+        {
+          "id": "c",
+          "text": "mas eles não deram ouvidos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E o Senhor falou a",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "2 Crônicas 33:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 33:12, que palavra importante o texto usa?",
+      "verseRef": "2 Crônicas 33:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "suplicou"
+        },
+        {
+          "id": "b",
+          "text": "angustiado"
+        },
+        {
+          "id": "c",
+          "text": "deveras"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E ele, angustiado, suplicou deveras ao Senhor, seu",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 33:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 33:10 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 33:10",
+      "passageA": {
+        "ref": "2 Crônicas 33:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Levado a Babilônia, Manassés se humilha e o Senhor o restaura."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tema da passagem"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E o Senhor falou a Manassés e ao seu",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "O texto afirma, não nega tudo.",
+        "c": "Há nomes e ações no trecho."
+      },
+      "hint": "Compare os dois textos com atenção.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "2 Crônicas 33:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 33:14 o nome Depois está ausente do versículo",
+      "verseRef": "2 Crônicas 33:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "O versículo contém \"Depois\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 33:14: \"Depois\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 33:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 33:10, toque a palavra que marca a relação no texto.",
+      "verseRef": "2 Crônicas 33:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Manassés"
+        },
+        {
+          "id": "b",
+          "text": "seu"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Manassés",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 33:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 33:14 se relaciona com o restante do trecho?",
+      "verseRef": "2 Crônicas 33:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois disso",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "O texto continua a mesma cena.",
+        "c": "Continuamos no mesmo livro.",
+        "d": "O trecho registra a ação divina ou humana."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "2 Crônicas 33:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "2 Crônicas 33:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E ele, angustiado, suplicou deveras ao",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 33:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 33:14, que palavra carrega a relação ou a ação?",
+      "verseRef": "2 Crônicas 33:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "disso"
+        },
+        {
+          "id": "b",
+          "text": "Depois"
+        },
+        {
+          "id": "c",
+          "text": "edificou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Depois disso",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 33:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 33:12 a Salmos 23:1?",
+      "verseRef": "2 Crônicas 33:12",
+      "passageA": {
+        "ref": "2 Crônicas 33:12"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E ele, angustiado, suplicou deveras ao",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "O vínculo é de fé, não de negação.",
+        "c": "Não é o fim da oração."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "2 Crônicas 33:12",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 33:16 aparece a palavra Restaurou",
+      "verseRef": "2 Crônicas 33:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "Restaurou o altar do Senhor",
+      "feedbackCorrect": "O versículo traz \"Restaurou\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia 2 Crônicas 33:16: a palavra está no versículo."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 33:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 33:16, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "2 Crônicas 33:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Restaurou"
+        },
+        {
+          "id": "b",
+          "text": "altar"
+        },
+        {
+          "id": "c",
+          "text": "ofereceu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Restaurou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 33:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "2 Crônicas 33:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Angustiado, ele suplicou ao Senhor; Deus se deixou achar e o trouxe de volta a Jerusa"
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Restaurou o altar do Senhor",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "O trecho registra a ação de Deus.",
+        "c": "O texto não elogia a idolatria.",
+        "d": "Há falhas e juízos no relato bíblico."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "2 Crônicas 33:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "2 Crônicas 33:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Restaurou o altar do Senhor",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 33:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 33:10, que termo carrega o sentido da cena?",
+      "verseRef": "2 Crônicas 33:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "falou"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Manassés"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E o Senhor falou a Manassés e ao seu povo",
+      "feedbackCorrect": "O termo \"Senhor\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Esse não é o termo central aqui.",
+        "c": "Esse não é o termo central aqui."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "2 Crônicas 33:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 33:16 a Salmos 46:1?",
+      "verseRef": "2 Crônicas 33:16",
+      "passageA": {
+        "ref": "2 Crônicas 33:16"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Restaurou o altar do Senhor",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "O vínculo aponta esperança, não recusa.",
+        "c": "Não é culto idólatra."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "2 Crônicas 33:16",
+        "Salmos 46:1"
+      ]
+    }
+  ]
+}

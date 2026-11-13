@@ -396,6 +396,16 @@ class _InviteQrSheetState extends State<_InviteQrSheet> {
                 textAlign: TextAlign.center,
                 style: AppTypography.body(size: 11, color: a.textFaint),
               ),
+              const SizedBox(height: 4),
+              Text(
+                context.l10n.referralInviteLine,
+                textAlign: TextAlign.center,
+                style: AppTypography.body(
+                  size: 11,
+                  weight: FontWeight.w700,
+                  color: AppRoles.reward,
+                ),
+              ),
             ],
           ),
         ),

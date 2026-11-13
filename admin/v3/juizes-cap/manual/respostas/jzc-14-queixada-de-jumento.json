@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 15:9–20",
+    "passages": [
+      {
+        "ref": "Juízes 15:9–20"
+      }
+    ],
+    "context": "Os filisteus sobem a Judá por Sansão; Judá o entrega amarrado; o Espírito o apossa e ele fere mil com uma queixada.",
+    "keyword": "queixada",
+    "keywordGloss": "Arma improvisada com que o Senhor livra Sansão.",
+    "focusQuestion": "Onde você ainda precisa clamar ao Senhor depois de um livramento?",
+    "reflectionPrompts": [
+      "Entrega amarrada",
+      "Espírito apossa",
+      "Clamor e água"
+    ],
+    "facts": [
+      {
+        "text": "Os filisteus acamparam contra Judá em Leí.",
+        "evidenceRef": "Juízes 15:9",
+        "evidenceSpan": "acamparam-se contra Judá, estendendo-se por Leí"
+      },
+      {
+        "text": "Três mil de Judá desceram para prender Sansão.",
+        "evidenceRef": "Juízes 15:11",
+        "evidenceSpan": "três mil homens de Judá desceram"
+      },
+      {
+        "text": "Amarraram Sansão com duas cordas novas.",
+        "evidenceRef": "Juízes 15:13",
+        "evidenceSpan": "amarraram-no com duas cordas novas"
+      },
+      {
+        "text": "O Espírito do Senhor se apossou de Sansão.",
+        "evidenceRef": "Juízes 15:14",
+        "evidenceSpan": "o Espírito do Senhor se apossou dele"
+      },
+      {
+        "text": "Com a queixada Sansão feriu mil homens.",
+        "evidenceRef": "Juízes 15:15",
+        "evidenceSpan": "tomou-a e feriu com ela mil homens"
+      },
+      {
+        "text": "O Senhor fendeu a rocha e saiu água.",
+        "evidenceRef": "Juízes 15:19",
+        "evidenceSpan": "o Senhor fendeu a rocha que estava em Leí, e dela saiu água"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "queixada",
+        "gloss": "Osso fresco com que Sansão fere os filisteus."
+      },
+      {
+        "term": "Espírito",
+        "gloss": "O Senhor apossa Sansão e solta as cordas."
+      },
+      {
+        "term": "sede",
+        "gloss": "Após a vitória, Sansão clama por água."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Filisteus e entrega de Judá",
+        "evidenceRef": "Juízes 15:9–13"
+      },
+      {
+        "label": "Espírito e queixada",
+        "evidenceRef": "Juízes 15:14–17"
+      },
+      {
+        "label": "Clamor, água e juízo",
+        "evidenceRef": "Juízes 15:18–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Amarram Sansão; porém não o matam.",
+        "marker": "porém",
+        "evidenceRef": "Juízes 15:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Espírito apossa; as cordas se desfazem.",
+        "marker": "de tal maneira",
+        "evidenceRef": "Juízes 15:14"
+      },
+      {
+        "kind": "causa",
+        "text": "Por sede clama; o Senhor dá água.",
+        "marker": "Então",
+        "evidenceRef": "Juízes 15:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Zacarias 4:6",
+        "bridge": "Não por força, pelo Espírito"
+      },
+      {
+        "ref": "Salmos 18:2",
+        "bridge": "O Senhor é livramento"
+      },
+      {
+        "ref": "1 Samuel 17:47",
+        "bridge": "A batalha é do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Sansão vence só pela própria força.",
+        "why": "O Espírito do Senhor se apossou dele."
+      },
+      {
+        "text": "Judá luta ao lado de Sansão.",
+        "why": "Judá o amarra e o entrega."
+      },
+      {
+        "text": "Após a vitória Sansão não precisa de Deus.",
+        "why": "Clama com sede e o Senhor dá água."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 15:15, com o que Sansão feriu mil homens?",
+    "centralInsight": "O Senhor ainda livra: até uma queixada serve quando o Espírito apossa e o servo clama."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 15:15, Sansão feriu mil homens com uma queixada de jumento.",
+      "verseRef": "Juízes 15:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "tomou-a e feriu com ela mil homens",
+      "feedbackCorrect": "Queixada e mil.",
+      "feedbackWrong": {
+        "false": "O texto diz mil homens."
+      },
+      "hint": "Veja o número e a arma.",
+      "learningObjective": "Observar a queixada.",
+      "evidence": [
+        "Juízes 15:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 15:15, toque o que Sansão encontrou.",
+      "verseRef": "Juízes 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "queixada"
+        },
+        {
+          "id": "b",
+          "text": "jumento"
+        },
+        {
+          "id": "c",
+          "text": "homens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "encontrou uma queixada de jumento",
+      "feedbackCorrect": "Queixada.",
+      "feedbackWrong": {
+        "b": "Jumento descreve a queixada.",
+        "c": "Homens são os feridos."
+      },
+      "hint": "O que ele toma na mão?",
+      "learningObjective": "Identificar a queixada.",
+      "evidence": [
+        "Juízes 15:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 15:13, com o que amarraram Sansão?",
+      "verseRef": "Juízes 15:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Duas cordas novas"
+        },
+        {
+          "id": "b",
+          "text": "Correntes de bronze"
+        },
+        {
+          "id": "c",
+          "text": "Fios de linho"
+        },
+        {
+          "id": "d",
+          "text": "Uma queixada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amarraram-no com duas cordas novas",
+      "feedbackCorrect": "Duas cordas novas.",
+      "feedbackWrong": {
+        "b": "Não há bronze aqui.",
+        "c": "Linho aparece depois.",
+        "d": "Queixada é a arma."
+      },
+      "hint": "Leia o que Judá usa.",
+      "learningObjective": "Reconhecer as cordas.",
+      "evidence": [
+        "Juízes 15:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 15:15 na ordem do texto.",
+      "verseRef": "Juízes 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "E encontrou uma queixada de jumento, ainda fresca"
+        },
+        {
+          "id": "b",
+          "text": "e, estendendo a mão, tomou-a"
+        },
+        {
+          "id": "c",
+          "text": "e feriu com ela mil homens"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "feriu com ela mil homens",
+      "feedbackCorrect": "Acha, toma e fere.",
+      "feedbackWrong": {
+        "default": "Comece pelo encontro."
+      },
+      "hint": "O que ele acha primeiro?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 15:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 15:15, complete: feriu com ela ___ homens.",
+      "verseRef": "Juízes 15:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "mil"
+        },
+        {
+          "id": "b",
+          "text": "cem"
+        },
+        {
+          "id": "c",
+          "text": "dois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "feriu com ela mil homens",
+      "feedbackCorrect": "Mil.",
+      "feedbackWrong": {
+        "b": "Não é cem.",
+        "c": "Não é dois."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Lembrar mil.",
+      "evidence": [
+        "Juízes 15:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 15:14 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 15:14",
+      "passageA": {
+        "ref": "Juízes 15:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Espírito apossa Sansão e as cordas se desfazem."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito solta as cordas"
+        },
+        {
+          "id": "b",
+          "text": "Judá vence sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Sem livramento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apossou dele",
+      "feedbackCorrect": "O Espírito age.",
+      "feedbackWrong": {
+        "b": "Judá entrega Sansão.",
+        "c": "Há livramento."
+      },
+      "hint": "Quem se apossa?",
+      "learningObjective": "Ligar Espírito e livramento.",
+      "evidence": [
+        "Juízes 15:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 15:13, Judá promete matar Sansão antes de entregá-lo.",
+      "verseRef": "Juízes 15:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém, de nenhuma sorte te mataremos",
+      "feedbackCorrect": "Não o matam; só amarram.",
+      "feedbackWrong": {
+        "true": "O porém nega a morte."
+      },
+      "hint": "Leia o porém.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 15:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 15:13, toque o marcador de contraste.",
+      "verseRef": "Juízes 15:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "cordas"
+        },
+        {
+          "id": "c",
+          "text": "mãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, de nenhuma sorte te mataremos",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Cordas são o meio.",
+        "c": "Mãos recebem."
+      },
+      "hint": "Olhe a virada.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 15:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 15:14 mostra?",
+      "verseRef": "Juízes 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Espírito apossa e as cordas se desfazem"
+        },
+        {
+          "id": "b",
+          "text": "Sansão corta as cordas sem Deus"
+        },
+        {
+          "id": "c",
+          "text": "Os filisteus soltam Sansão"
+        },
+        {
+          "id": "d",
+          "text": "Judá pelea ao lado dele"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apossou dele de tal maneira que as cordas",
+      "feedbackCorrect": "Espírito e resultado.",
+      "feedbackWrong": {
+        "b": "Há Espírito.",
+        "c": "Eles jubilam.",
+        "d": "Judá já entregou."
+      },
+      "hint": "Leia o de tal maneira.",
+      "learningObjective": "Compreender o resultado.",
+      "evidence": [
+        "Juízes 15:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "Juízes 15:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Filisteus e entrega de Judá"
+        },
+        {
+          "id": "b",
+          "text": "Espírito e queixada"
+        },
+        {
+          "id": "c",
+          "text": "Clamor, água e juízo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "acamparam-se contra Judá",
+      "feedbackCorrect": "Entrega, golpe e clamor.",
+      "feedbackWrong": {
+        "default": "Comece pelos filisteus."
+      },
+      "hint": "O que fecha a sede?",
+      "learningObjective": "Ordenar a cena",
+      "evidence": [
+        "Juízes 15:9",
+        "Juízes 15:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 15:14, complete: o ___ do Senhor se apossou dele.",
+      "verseRef": "Juízes 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apossou dele",
+      "feedbackCorrect": "Espírito.",
+      "feedbackWrong": {
+        "b": "Não é o povo.",
+        "c": "Não é rei."
+      },
+      "hint": "Quem se apossa?",
+      "learningObjective": "Lembrar Espírito.",
+      "evidence": [
+        "Juízes 15:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 15:14 a Zacarias 4:6?",
+      "verseRef": "Juízes 15:14",
+      "passageA": {
+        "ref": "Juízes 15:14"
+      },
+      "passageB": {
+        "ref": "Zacarias 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não por força, pelo Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Só braço humano"
+        },
+        {
+          "id": "c",
+          "text": "Sem livramento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apossou dele",
+      "feedbackCorrect": "O Espírito livra.",
+      "feedbackWrong": {
+        "b": "Há Espírito.",
+        "c": "Há livramento."
+      },
+      "hint": "Compare o Espírito.",
+      "learningObjective": "Ligar a Zacarias.",
+      "evidence": [
+        "Juízes 15:14",
+        "Zacarias 4:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 15:18–19, Sansão clama após a vitória e o Senhor responde com água.",
+      "verseRef": "Juízes 15:18–19",
+      "correctOptionId": "true",
+      "evidenceSpan": "clamou ao Senhor",
+      "feedbackCorrect": "Clamor e água.",
+      "feedbackWrong": {
+        "false": "Há clamor e fenda."
+      },
+      "hint": "Leia o clamor e a rocha.",
+      "learningObjective": "Avaliar o clamor.",
+      "evidence": [
+        "Juízes 15:18–19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 15:18, toque o que Sansão sente.",
+      "verseRef": "Juízes 15:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "sede"
+        },
+        {
+          "id": "b",
+          "text": "servo"
+        },
+        {
+          "id": "c",
+          "text": "salvação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sentindo grande sede",
+      "feedbackCorrect": "Sede.",
+      "feedbackWrong": {
+        "b": "Servo é o título.",
+        "c": "Salvação já veio."
+      },
+      "hint": "O que o faz clamar?",
+      "learningObjective": "Tocar a sede.",
+      "evidence": [
+        "Juízes 15:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une queixada e clamor?",
+      "verseRef": "Juízes 15:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor livra e ainda sustenta quem clama"
+        },
+        {
+          "id": "b",
+          "text": "A vitória dispensa oração"
+        },
+        {
+          "id": "c",
+          "text": "Judá é o verdadeiro herói"
+        },
+        {
+          "id": "d",
+          "text": "A queixada basta sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por intermédio do teu servo, deste esta grande salvação",
+      "feedbackCorrect": "Livra e sustenta.",
+      "feedbackWrong": {
+        "b": "Há clamor.",
+        "c": "Judá entrega.",
+        "d": "Há Espírito."
+      },
+      "hint": "Una golpe e sede.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 15:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do livramento.",
+      "verseRef": "Juízes 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cordas prendem Sansão"
+        },
+        {
+          "id": "b",
+          "text": "Espírito apossa e solta"
+        },
+        {
+          "id": "c",
+          "text": "Queixada fere mil"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Espírito do Senhor se apossou dele",
+      "feedbackCorrect": "Prisão, Espírito e golpe.",
+      "feedbackWrong": {
+        "default": "Comece pelas cordas."
+      },
+      "hint": "O que vem após o Espírito?",
+      "learningObjective": "Encadear o livramento",
+      "evidence": [
+        "Juízes 15:13",
+        "Juízes 15:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 15:19, complete: o Senhor fendeu a ___.",
+      "verseRef": "Juízes 15:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "rocha"
+        },
+        {
+          "id": "b",
+          "text": "porta"
+        },
+        {
+          "id": "c",
+          "text": "tenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor fendeu a rocha",
+      "feedbackCorrect": "Rocha.",
+      "feedbackWrong": {
+        "b": "Não é porta.",
+        "c": "Não é tenda."
+      },
+      "hint": "De onde sai a água?",
+      "learningObjective": "Lembrar rocha.",
+      "evidence": [
+        "Juízes 15:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 15:18 a Salmos 18:2?",
+      "verseRef": "Juízes 15:18",
+      "passageA": {
+        "ref": "Juízes 15:18"
+      },
+      "passageB": {
+        "ref": "Salmos 18:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é livramento"
+        },
+        {
+          "id": "b",
+          "text": "Sansão basta sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Sem clamor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deste esta grande salvação",
+      "feedbackCorrect": "Salvação do Senhor.",
+      "feedbackWrong": {
+        "b": "Ele clama.",
+        "c": "Há clamor."
+      },
+      "hint": "Compare a salvação.",
+      "learningObjective": "Ligar ao Salmo.",
+      "evidence": [
+        "Juízes 15:18",
+        "Salmos 18:2"
+      ]
+    }
+  ]
+}

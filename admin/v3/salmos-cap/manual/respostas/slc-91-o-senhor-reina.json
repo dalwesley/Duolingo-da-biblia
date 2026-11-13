@@ -1,0 +1,704 @@
+{
+  "study": {
+    "passageRef": "Salmos 93:1–5",
+    "passages": [
+      {
+        "ref": "Salmos 93:1–5"
+      }
+    ],
+    "context": "O Senhor reina; está vestido de majestade. Mais que a voz das muitas águas é o Senhor.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "O Senhor reina",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor reina; está revestido de majestade; o Senhor se cingiu de poder. O mundo está firme e não…",
+        "evidenceRef": "Salmos 93:1",
+        "evidenceSpan": "O Senhor reina"
+      },
+      {
+        "text": "O teu trono está firme desde a antiguidade.",
+        "evidenceRef": "Salmos 93:2",
+        "evidenceSpan": "O teu trono está firme desde a antiguidade"
+      },
+      {
+        "text": "Os rios rugem ó Deus os rios rugem.",
+        "evidenceRef": "Salmos 93:3",
+        "evidenceSpan": "Os rios rugem ó Deus os rios rugem"
+      },
+      {
+        "text": "Mas o Senhor nas alturas é mais poderoso.",
+        "evidenceRef": "Salmos 93:4",
+        "evidenceSpan": "Mas o Senhor nas alturas é mais poderoso"
+      },
+      {
+        "text": "Fidelíssimos são os teus testemunhos.",
+        "evidenceRef": "Salmos 93:5",
+        "evidenceSpan": "Fidelíssimos são os teus testemunhos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "reina",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O senhor reina está revestido de",
+        "evidenceRef": "Salmos 93:1"
+      },
+      {
+        "label": "O teu trono está firme desde",
+        "evidenceRef": "Salmos 93:2"
+      },
+      {
+        "label": "Os rios rugem ó deus os",
+        "evidenceRef": "Salmos 93:3"
+      },
+      {
+        "label": "Mas o senhor nas alturas é",
+        "evidenceRef": "Salmos 93:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": null,
+        "evidenceRef": "Salmos 93:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 93:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Mas\".",
+        "marker": "Mas",
+        "evidenceRef": "Salmos 93:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      },
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Trono firme desde a antiguidade: a santidade ornamente a casa de Deus."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Trono firme desde a antiguidade: a santidade ornamente a casa de Deus.",
+    "anchorQuestion": "O que Salmos 93:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 93:1, o Senhor reina.",
+      "verseRef": "Salmos 93:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor reina",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 93:1 afirma.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 93:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 93:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "reina"
+        },
+        {
+          "id": "c",
+          "text": "está"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 93:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 93:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os rios rugem ó Deus os rios rugem"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os rios rugem ó Deus os rios rugem",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 93:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 93:1 na ordem do texto.",
+      "verseRef": "Salmos 93:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 93:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 93:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "alturas"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "alturas",
+      "feedbackCorrect": "A palavra do versículo é «alturas».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 93:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 93:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 93:1",
+      "passageA": {
+        "ref": "Salmos 93:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor reina; está vestido de majestade. Mais que a voz das muitas águas é o Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 93:1, o marcador Se une ideias no fluxo do texto.",
+      "verseRef": "Salmos 93:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 93:1 afirma.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 93:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 93:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "reina"
+        },
+        {
+          "id": "b",
+          "text": "O"
+        },
+        {
+          "id": "c",
+          "text": "está"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reina",
+      "feedbackCorrect": "O versículo destaca «Se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 93:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 93:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas o Senhor nas alturas é mais poderoso",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 93:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 93:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O senhor reina está revestido"
+        },
+        {
+          "id": "b",
+          "text": "O teu trono está firme desde"
+        },
+        {
+          "id": "c",
+          "text": "Os rios rugem ó deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 93:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 93:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "rios"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "reina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rios",
+      "feedbackCorrect": "A palavra do versículo é «rios».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 93:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 93:1 a Salmos 51:10.",
+      "verseRef": "Salmos 93:1",
+      "passageA": {
+        "ref": "Salmos 93:1"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 93:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Fidelíssimos",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 93:5 afirma.",
+      "evidence": [
+        "Salmos 93:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 93:5, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 93:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fidelíssimos"
+        },
+        {
+          "id": "b",
+          "text": "são"
+        },
+        {
+          "id": "c",
+          "text": "teus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fidelíssimos",
+      "feedbackCorrect": "O versículo destaca «Fidelíssimos».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 93:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 93:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 93:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fidelíssimos são os teus testemunhos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 93:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 93:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 93:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 93:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "está"
+        },
+        {
+          "id": "b",
+          "text": "O"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "está",
+      "feedbackCorrect": "A palavra do versículo é «reina».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 93:1 a Salmos 119:105.",
+      "verseRef": "Salmos 93:1",
+      "passageA": {
+        "ref": "Salmos 93:1"
+      },
+      "passageB": {
+        "ref": "Salmos 119:105"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâmpada para os pés"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 93:1"
+      ]
+    }
+  ]
+}

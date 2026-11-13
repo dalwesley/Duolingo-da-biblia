@@ -1,0 +1,469 @@
+{
+  "study": {
+    "passageRef": "Atos 13:44–49",
+    "passages": [
+      { "ref": "Atos 13:44–49" }
+    ],
+    "context": "Em Antioquia da Pisídia, Paulo e Barnabé anunciam a palavra. No sábado seguinte, quase toda a cidade vem ouvir, e a rejeição de alguns abre porta aos gentios.",
+    "keyword": "gentios",
+    "keywordGloss": "Os povos a quem Paulo e Barnabé se voltam quando a palavra é rejeitada.",
+    "focusQuestion": "Quando a porta se fecha num lugar, você está pronto a levar a luz a outro?",
+    "reflectionPrompts": [
+      "Quase toda a cidade",
+      "Volvemos para os gentios",
+      "Luz até os confins"
+    ],
+    "facts": [
+      {
+        "text": "No sábado seguinte, quase toda a cidade veio ouvir a palavra de Deus.",
+        "evidenceRef": "Atos 13:44",
+        "evidenceSpan": "quase toda a cidade afluiu para ouvir a palavra de Deus"
+      },
+      {
+        "text": "Os judeus, tomados de inveja, blasfemavam e se opunham a Paulo.",
+        "evidenceRef": "Atos 13:45",
+        "evidenceSpan": "tomaram-se de inveja e, blasfemando, opunham-se ao que Paulo falava"
+      },
+      {
+        "text": "Paulo e Barnabé disseram que se volviam para os gentios.",
+        "evidenceRef": "Atos 13:46",
+        "evidenceSpan": "eis que nos volvemos para os gentios"
+      },
+      {
+        "text": "O Senhor os constituiu como luz para os gentios até os confins da terra.",
+        "evidenceRef": "Atos 13:47",
+        "evidenceSpan": "luz para os gentios, a fim de que sejas salvação até os confins da terra"
+      },
+      {
+        "text": "Os gentios se regozijaram e glorificaram a palavra do Senhor.",
+        "evidenceRef": "Atos 13:48",
+        "evidenceSpan": "os gentios, ao ouvirem isso, se regozijaram e glorificaram a palavra do Senhor"
+      },
+      {
+        "text": "A palavra do Senhor era divulgada por toda aquela região.",
+        "evidenceRef": "Atos 13:49",
+        "evidenceSpan": "a palavra do Senhor era divulgada por toda aquela região"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "gentios",
+        "gloss": "Os povos a quem a palavra se volta quando é rejeitada."
+      },
+      {
+        "term": "luz",
+        "gloss": "O encargo do Senhor: ser luz para os gentios até os confins."
+      },
+      {
+        "term": "salvação",
+        "gloss": "O alcance da missão: até os confins da terra."
+      }
+    ],
+    "structure": [
+      { "label": "A cidade inteira vem ouvir", "evidenceRef": "Atos 13:44" },
+      { "label": "Surge oposição com inveja", "evidenceRef": "Atos 13:45" },
+      { "label": "Paulo e Barnabé se voltam aos gentios", "evidenceRef": "Atos 13:46–47" },
+      { "label": "Os gentios se alegram e a palavra se espalha", "evidenceRef": "Atos 13:48–49" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A multidão vem ouvir; porém os judeus, com inveja, se opõem.",
+        "marker": "Porém",
+        "evidenceRef": "Atos 13:45"
+      },
+      {
+        "kind": "resultado",
+        "text": "Com a rejeição, Paulo e Barnabé se voltam para os gentios.",
+        "marker": "eis",
+        "evidenceRef": "Atos 13:46"
+      },
+      {
+        "kind": "propósito",
+        "text": "Foram constituídos luz para que haja salvação até os confins.",
+        "marker": "a fim de",
+        "evidenceRef": "Atos 13:47"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 49:6", "bridge": "Luz para os gentios" },
+      { "ref": "Atos 13:52", "bridge": "Alegria e Espírito Santo" },
+      { "ref": "Atos 14:27", "bridge": "Porta da fé aos gentios" }
+    ],
+    "misreadings": [
+      {
+        "text": "Paulo desistiu da missão quando surgiu oposição.",
+        "why": "Eles falam ousadamente e se voltam aos gentios; a palavra se espalha."
+      },
+      {
+        "text": "A salvação ficou só para Israel, sem alcance aos povos.",
+        "why": "O Senhor os constitui luz para os gentios até os confins da terra."
+      },
+      {
+        "text": "Os gentios rejeitaram a palavra e se entristeceram.",
+        "why": "Eles se regozijaram, glorificaram a palavra e creram."
+      }
+    ],
+    "centralInsight": "A salvação chega até os confins da terra, e os gentios se alegram.",
+    "anchorQuestion": "Para quem Paulo e Barnabé se voltaram ao serem rejeitados?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 13:44, quase toda a cidade afluiu para ouvir a palavra de Deus.",
+      "verseRef": "Atos 13:44",
+      "correctOptionId": "true",
+      "evidenceSpan": "quase toda a cidade afluiu para ouvir a palavra de Deus",
+      "feedbackCorrect": "No sábado seguinte, a cidade quase inteira veio ouvir.",
+      "feedbackWrong": { "false": "Releia Atos 13:44: quase toda a cidade afluiu." },
+      "hint": "Veja quem veio ouvir.",
+      "learningObjective": "Observar a afluência da cidade.",
+      "evidence": ["Atos 13:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 13:44, toque o que a cidade veio ouvir.",
+      "verseRef": "Atos 13:44",
+      "options": [
+        { "id": "a", "text": "palavra de Deus" },
+        { "id": "b", "text": "sábado seguinte" },
+        { "id": "c", "text": "toda a cidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para ouvir a palavra de Deus",
+      "feedbackCorrect": "A cidade afluiu para ouvir a palavra de Deus.",
+      "feedbackWrong": {
+        "b": "O sábado marca o dia; o que ouvem é a palavra.",
+        "c": "A cidade é quem vem; o que ouvem é a palavra."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Identificar o que a cidade veio ouvir.",
+      "evidence": ["Atos 13:44"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 13:45, o que tomou os judeus ao verem as multidões?",
+      "verseRef": "Atos 13:45",
+      "options": [
+        { "id": "a", "text": "Alegria" },
+        { "id": "b", "text": "Inveja" },
+        { "id": "c", "text": "Sono" },
+        { "id": "d", "text": "Fome" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "tomaram-se de inveja",
+      "feedbackCorrect": "A oposição nasce da inveja diante das multidões.",
+      "feedbackWrong": {
+        "a": "O texto fala de inveja, não de alegria.",
+        "c": "O texto fala de inveja, não de sono.",
+        "d": "O texto fala de inveja, não de fome."
+      },
+      "hint": "Leia o que os tomou ao verem as multidões.",
+      "learningObjective": "Observar o motivo da oposição.",
+      "evidence": ["Atos 13:45"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 13:48 na ordem do texto.",
+      "verseRef": "Atos 13:48",
+      "options": [
+        { "id": "a", "text": "E os gentios, ao ouvirem isso, se regozijaram" },
+        { "id": "b", "text": "e glorificaram a palavra do Senhor" },
+        { "id": "c", "text": "e creram todos os que haviam sido destinados para a vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "se regozijaram e glorificaram a palavra do Senhor",
+      "feedbackCorrect": "Ouvir, alegrar-se, glorificar e crer.",
+      "feedbackWrong": { "default": "Comece pela reação dos gentios ao ouvir." },
+      "hint": "O versículo começa com os gentios.",
+      "learningObjective": "Reconhecer a sequência de Atos 13:48.",
+      "evidence": ["Atos 13:48"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 13:47, o Senhor os constituiu como o quê para os gentios?",
+      "verseRef": "Atos 13:47",
+      "options": [
+        { "id": "a", "text": "luz" },
+        { "id": "b", "text": "muro" },
+        { "id": "c", "text": "sombra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "luz para os gentios",
+      "feedbackCorrect": "A missão é ser luz, até os confins da terra.",
+      "feedbackWrong": {
+        "b": "O texto fala de luz, não de muro.",
+        "c": "O texto fala de luz, não de sombra."
+      },
+      "hint": "Complete: \"constituí como ___ para os gentios\".",
+      "learningObjective": "Lembrar a imagem da missão.",
+      "evidence": ["Atos 13:47"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 13:46 comunica que se liga a este contexto?",
+      "verseRef": "Atos 13:46",
+      "passageA": { "ref": "Atos 13:46" },
+      "passageB": { "ref": "Contexto", "text": "Rejeitada a palavra, Paulo e Barnabé se voltam para os gentios." },
+      "options": [
+        { "id": "a", "text": "Eles abandonam a missão" },
+        { "id": "b", "text": "A missão se volta aos gentios" },
+        { "id": "c", "text": "Só Israel ouvirá para sempre" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "eis que nos volvemos para os gentios",
+      "feedbackCorrect": "A rejeição abre a virada missionária.",
+      "feedbackWrong": {
+        "a": "Eles não param: mudam o destino do anúncio.",
+        "c": "Eles se voltam explicitamente aos gentios."
+      },
+      "hint": "Leia a decisão no fim do versículo.",
+      "learningObjective": "Ligar Atos 13:46 à virada aos gentios.",
+      "evidence": ["Atos 13:46"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 13:45, porém, os judeus, ao verem as multidões, tomaram-se de inveja e se opuseram.",
+      "verseRef": "Atos 13:45",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porém, os judeus, ao verem as multidões, tomaram-se de inveja",
+      "feedbackCorrect": "O \"Porém\" marca o contraste com a afluência da cidade.",
+      "feedbackWrong": { "false": "Releia 13:45: Porém… tomaram-se de inveja." },
+      "hint": "Repare na primeira palavra do versículo.",
+      "learningObjective": "Compreender o contraste da oposição.",
+      "evidence": ["Atos 13:45"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 13:45, toque a palavra que marca o contraste com a afluência da cidade.",
+      "verseRef": "Atos 13:45",
+      "options": [
+        { "id": "a", "text": "Porém" },
+        { "id": "b", "text": "multidões" },
+        { "id": "c", "text": "Paulo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, os judeus, ao verem as multidões",
+      "feedbackCorrect": "\"Porém\" vira a página: a cidade vem; a oposição surge.",
+      "feedbackWrong": {
+        "b": "\"Multidões\" é o que eles veem; o contraste está no início.",
+        "c": "\"Paulo\" é o alvo da oposição, não o marcador."
+      },
+      "hint": "Procure a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Atos 13:45"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Atos 13:47 se relaciona com a decisão de Atos 13:46?",
+      "verseRef": "Atos 13:46–47",
+      "options": [
+        { "id": "a", "text": "Fundamenta a virada com a ordem do Senhor" },
+        { "id": "b", "text": "Cancela a missão aos gentios" },
+        { "id": "c", "text": "Manda Paulo voltar só a Jerusalém" },
+        { "id": "d", "text": "Explica que a salvação não tem alcance" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque o Senhor assim no-lo determinou",
+      "feedbackCorrect": "A virada não é capricho: o Senhor os constituiu luz para os gentios.",
+      "feedbackWrong": {
+        "b": "13:47 confirma a missão aos gentios.",
+        "c": "O alcance é até os confins da terra.",
+        "d": "O texto fala de salvação até os confins."
+      },
+      "hint": "Veja o \"Porque\" que abre 13:47.",
+      "learningObjective": "Relacionar a decisão à determinação do Senhor.",
+      "evidence": ["Atos 13:46–47"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Atos 13:46–48?",
+      "verseRef": "Atos 13:46–47",
+      "options": [
+        { "id": "a", "text": "Eles anunciam a virada para os gentios" },
+        { "id": "b", "text": "Citam a ordem de ser luz para os gentios" },
+        { "id": "c", "text": "Os gentios se alegram e creem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "luz para os gentios",
+      "feedbackCorrect": "Virada, fundamento na Escritura e alegria dos gentios.",
+      "feedbackWrong": { "default": "Comece pela decisão; a alegria dos gentios fecha." },
+      "hint": "A citação de 13:47 fundamenta a virada.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": ["Atos 13:46–47"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 13:47, a luz é para que haja o quê até os confins da terra?",
+      "verseRef": "Atos 13:47",
+      "options": [
+        { "id": "a", "text": "salvação" },
+        { "id": "b", "text": "ruína" },
+        { "id": "c", "text": "silêncio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a fim de que sejas salvação até os confins da terra",
+      "feedbackCorrect": "O propósito da luz é salvação até os confins.",
+      "feedbackWrong": {
+        "b": "O texto fala de salvação, não de ruína.",
+        "c": "O texto fala de salvação, não de silêncio."
+      },
+      "hint": "Complete: \"a fim de que sejas ___\".",
+      "learningObjective": "Lembrar o propósito da missão.",
+      "evidence": ["Atos 13:47"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 13:47 a Isaías 49:6?",
+      "verseRef": "Atos 13:47",
+      "passageA": { "ref": "Atos 13:47" },
+      "passageB": { "ref": "Isaías 49:6" },
+      "options": [
+        { "id": "a", "text": "Luz para os gentios" },
+        { "id": "b", "text": "Fechamento só a Israel" },
+        { "id": "c", "text": "Fim de toda missão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "luz para os gentios",
+      "feedbackCorrect": "Paulo cita o encargo: luz e salvação até os confins.",
+      "feedbackWrong": {
+        "b": "Os dois textos abrem aos gentios.",
+        "c": "Os dois textos impulsam a missão, não a encerram."
+      },
+      "hint": "Compare a imagem da luz nos dois textos.",
+      "learningObjective": "Relacionar Atos 13:47 a Isaías 49:6.",
+      "evidence": ["Atos 13:47", "Isaías 49:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Atos 13:46–47 apresenta a rejeição como fim da missão, sem abertura aos gentios.",
+      "verseRef": "Atos 13:46–47",
+      "correctOptionId": "false",
+      "evidenceSpan": "eis que nos volvemos para os gentios",
+      "feedbackCorrect": "A rejeição abre a virada; o Senhor os constitui luz para os gentios.",
+      "feedbackWrong": { "true": "Releia 13:46–47: eles se voltam aos gentios por ordem do Senhor." },
+      "hint": "Veja o que acontece depois da rejeição.",
+      "learningObjective": "Interpretar a rejeição como abertura, não como fim.",
+      "evidence": ["Atos 13:46–47"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 13:47, toque o trecho que sustenta o alcance da missão.",
+      "verseRef": "Atos 13:47",
+      "options": [
+        { "id": "a", "text": "confins da terra" },
+        { "id": "b", "text": "determinou" },
+        { "id": "c", "text": "dizendo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "salvação até os confins da terra",
+      "feedbackCorrect": "O alcance não é local: vai até os confins da terra.",
+      "feedbackWrong": {
+        "b": "\"Determinou\" fala da origem da ordem; o alcance está no fim.",
+        "c": "\"Dizendo\" introduz a citação; o alcance vem depois."
+      },
+      "hint": "Procure até onde vai a salvação.",
+      "learningObjective": "Sustentar com o texto o alcance universal.",
+      "evidence": ["Atos 13:47"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Atos 13:44–49 sustenta sobre a missão?",
+      "verseRef": "Atos 13:47",
+      "options": [
+        { "id": "a", "text": "A salvação é luz para os gentios até os confins" },
+        { "id": "b", "text": "A oposição encerra toda a pregação" },
+        { "id": "c", "text": "Os gentios rejeitam e se entristecem" },
+        { "id": "d", "text": "A palavra fica só dentro da cidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "luz para os gentios, a fim de que sejas salvação até os confins da terra",
+      "feedbackCorrect": "O Senhor determina luz e salvação até os confins.",
+      "feedbackWrong": {
+        "b": "Eles falam ousadamente e a palavra se espalha.",
+        "c": "Os gentios se regozijam e creem.",
+        "d": "A palavra é divulgada por toda a região."
+      },
+      "hint": "Una 13:47 com a reação de 13:48–49.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Atos 13:47"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da luz aos gentios?",
+      "verseRef": "Atos 13:47",
+      "options": [
+        { "id": "a", "text": "O Senhor constitui luz para os gentios" },
+        { "id": "b", "text": "Os gentios se alegram e a palavra se espalha" },
+        { "id": "c", "text": "Deus abre aos gentios a porta da fé" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "luz para os gentios",
+      "evidence": ["Atos 13:47", "Atos 13:48–49", "Atos 14:27"],
+      "feedbackCorrect": "Encargo, alegria e porta da fé: a missão avança.",
+      "feedbackWrong": { "default": "Siga: 13:47 → 13:48–49 → 14:27." },
+      "hint": "Comece pela determinação do Senhor.",
+      "learningObjective": "Ver o fio da luz até a porta da fé."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 13:46, para quem Paulo e Barnabé se voltam?",
+      "verseRef": "Atos 13:46",
+      "options": [
+        { "id": "a", "text": "gentios" },
+        { "id": "b", "text": "soldados" },
+        { "id": "c", "text": "comerciantes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nos volvemos para os gentios",
+      "feedbackCorrect": "O termo carrega a virada da missão.",
+      "feedbackWrong": {
+        "b": "O texto diz gentios, não soldados.",
+        "c": "O texto diz gentios, não comerciantes."
+      },
+      "hint": "É a última palavra da decisão deles.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": ["Atos 13:46"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 13:48 a Atos 14:27?",
+      "verseRef": "Atos 13:48",
+      "passageA": { "ref": "Atos 13:48" },
+      "passageB": { "ref": "Atos 14:27" },
+      "options": [
+        { "id": "a", "text": "Porta da fé aos gentios" },
+        { "id": "b", "text": "Fechamento total aos povos" },
+        { "id": "c", "text": "Fim da alegria dos gentios" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "creram todos os que haviam sido destinados para a vida eterna",
+      "feedbackCorrect": "A fé dos gentios em 13:48 ecoa a porta da fé aberta em 14:27.",
+      "feedbackWrong": {
+        "b": "Os dois textos celebram a abertura aos gentios.",
+        "c": "13:48 fala de regozijo; 14:27 de porta da fé."
+      },
+      "hint": "Compare a fé dos gentios com o relato em Antioquia.",
+      "learningObjective": "Ligar a alegria dos gentios à porta da fé.",
+      "evidence": ["Atos 13:48", "Atos 14:27"]
+    }
+  ]
+}

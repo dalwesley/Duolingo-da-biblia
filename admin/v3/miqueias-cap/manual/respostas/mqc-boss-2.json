@@ -1,0 +1,630 @@
+{
+  "study": {
+    "passageRef": "Miqueias 5:7–12",
+    "passages": [
+      { "ref": "Miqueias 5:7–12" },
+      { "ref": "Miqueias 6:3–8" },
+      { "ref": "Miqueias 7:1–7" }
+    ],
+    "context": "Nesta travessia, revise o remanescente que depende do Senhor, o pedido de justiça e misericórdia, e a espera fiel quando a confiança humana falha.",
+    "keyword": "humildemente",
+    "keywordGloss": "Modo de andar com Deus que resume o pedido do Senhor nesta etapa.",
+    "focusQuestion": "O que muda quando você depende do Senhor, pratica o que ele pede e espera nele?",
+    "reflectionPrompts": [
+      "Remanescente dependente",
+      "O que o Senhor pede",
+      "Olhar e esperar"
+    ],
+    "facts": [
+      {
+        "text": "O remanescente está como orvalho do Senhor e não depende do homem.",
+        "evidenceRef": "Miqueias 5:7",
+        "evidenceSpan": "como o orvalho do Senhor"
+      },
+      {
+        "text": "O Senhor eliminará cavalos e deitará abaixo fortalezas.",
+        "evidenceRef": "Miqueias 5:10",
+        "evidenceSpan": "eliminarei do meio de ti os teus cavalos"
+      },
+      {
+        "text": "O SENHOR exige justiça, misericórdia e andar humildemente.",
+        "evidenceRef": "Miqueias 6:8",
+        "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente"
+      },
+      {
+        "text": "Já desapareceu o homem justo da terra.",
+        "evidenceRef": "Miqueias 7:2",
+        "evidenceSpan": "Já desapareceu o homem justo da terra"
+      },
+      {
+        "text": "O juiz aceita suborno na trama corrupta.",
+        "evidenceRef": "Miqueias 7:3",
+        "evidenceSpan": "o juiz aceita suborno"
+      },
+      {
+        "text": "Miquéias olhará para o Senhor e esperará no Deus da salvação.",
+        "evidenceRef": "Miqueias 7:7",
+        "evidenceSpan": "Eu, porém, olharei para o Senhor e esperarei"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "remanescente",
+        "gloss": "O restante que vive pelo Senhor entre os povos."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "Parte do trio que o Senhor exige."
+      },
+      {
+        "term": "esperarei",
+        "gloss": "Resposta do justo quando a confiança humana falha."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Remanescente dependente do Senhor",
+        "evidenceRef": "Miqueias 5:7–11"
+      },
+      {
+        "label": "O que o Senhor exige",
+        "evidenceRef": "Miqueias 6:6–8"
+      },
+      {
+        "label": "Corrupção e quebra de confiança",
+        "evidenceRef": "Miqueias 7:2–6"
+      },
+      {
+        "label": "Olhar e esperar no Senhor",
+        "evidenceRef": "Miqueias 7:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O remanescente não depende do homem, e sim do Senhor.",
+        "marker": "nem",
+        "evidenceRef": "Miqueias 5:7"
+      },
+      {
+        "kind": "causa",
+        "text": "Os montes ouvem porque há controvérsia com o povo.",
+        "marker": "porque",
+        "evidenceRef": "Miqueias 6:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "A terra está corrupta, porém Miquéias olhará para o Senhor.",
+        "marker": "porém",
+        "evidenceRef": "Miqueias 7:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Zacarias 4:6",
+        "bridge": "Não por força, pelo Espírito"
+      },
+      {
+        "ref": "Oséias 6:6",
+        "bridge": "Misericórdia, não só sacrifício"
+      },
+      {
+        "ref": "Salmos 42:5",
+        "bridge": "Esperar em Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O remanescente pode depender de fortalezas e ídolos.",
+        "why": "5:10–13 cortam cavalos, fortalezas e ídolos."
+      },
+      {
+        "text": "Ofertas substituem justiça e misericórdia.",
+        "why": "6:7–8 relativizam ofertas e declaram o trio exigido."
+      },
+      {
+        "text": "Sem confiança humana, não resta a quem olhar.",
+        "why": "7:7 mostra o olhar e a espera no Senhor."
+      }
+    ],
+    "centralInsight": "O Senhor pede um caminhar justo, misericordioso e humilde",
+    "anchorQuestion": "Como esta etapa liga dependência do Senhor, o que ele pede e a espera fiel?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 6:8, o SENHOR exige praticar a justiça, amar a misericórdia e andar humildemente.",
+      "verseRef": "Miqueias 6:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "O versículo resume o pedido central da etapa.",
+      "feedbackWrong": {
+        "false": "Releia 6:8: justiça, misericórdia e humildade."
+      },
+      "hint": "Veja os três pedidos do versículo.",
+      "learningObjective": "Observar o que o Senhor exige.",
+      "evidence": ["Miqueias 6:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 5:7, toque a imagem do remanescente perante o Senhor.",
+      "verseRef": "Miqueias 5:7",
+      "evidenceSpan": "como o orvalho do Senhor",
+      "feedbackCorrect": "É como o orvalho do Senhor.",
+      "hint": "Procure a primeira comparação.",
+      "learningObjective": "Identificar a imagem do orvalho.",
+      "evidence": ["Miqueias 5:7"],
+      "options": [
+        { "id": "a", "text": "orvalho" },
+        { "id": "b", "text": "erva" },
+        { "id": "c", "text": "povos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Erva completa a comparação; a imagem principal é o orvalho.",
+        "c": "Povos é o cenário, não a imagem do remanescente."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 7:7, o que Miquéias fará?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor e esperarei",
+      "feedbackCorrect": "Olhará para o Senhor e esperará no Deus da salvação.",
+      "hint": "Veja os dois verbos da resposta.",
+      "learningObjective": "Observar a espera fiel.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "Olhará e esperará no Senhor" },
+        { "id": "b", "text": "Confiará só no suborno" },
+        { "id": "c", "text": "Desistirá de qualquer espera" },
+        { "id": "d", "text": "Calará o Deus da salvação" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O suborno é denunciado em 7:3.",
+        "c": "O texto mostra espera ativa.",
+        "d": "Ele afirma que Deus o ouvirá."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 6:8 na ordem do texto.",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "O que é bom; o que o SENHOR exige; o trio prático.",
+      "hint": "Comece pelo que já foi declarado.",
+      "learningObjective": "Reconhecer a sequência de 6:8.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "Já te foi declarado, ó homem, o que é bom" },
+        { "id": "b", "text": "e o que o SENHOR exige de ti" },
+        { "id": "c", "text": "é que pratiques a justiça, ames a misericórdia e andes humildemente" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Declaração primeiro; o trio fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 7:3, que palavra o juiz aceita?",
+      "verseRef": "Miqueias 7:3",
+      "evidenceSpan": "o juiz aceita suborno",
+      "feedbackCorrect": "Aceita suborno.",
+      "hint": "É o objeto após aceita.",
+      "learningObjective": "Lembrar a corrupção do juiz.",
+      "evidence": ["Miqueias 7:3"],
+      "options": [
+        { "id": "a", "text": "louvor" },
+        { "id": "b", "text": "suborno" },
+        { "id": "c", "text": "jejum" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Louvor\" não aparece em 7:3.",
+        "c": "\"Jejum\" não é o que o juiz aceita."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 5:7 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 5:7",
+      "evidenceSpan": "não esperam pelo homem, nem dependem dos filhos dos homens",
+      "feedbackCorrect": "A etapa ensina depender do Senhor, praticar o que ele pede e esperar nele.",
+      "hint": "Veja de quem o remanescente não depende.",
+      "learningObjective": "Ligar o remanescente ao tema da etapa.",
+      "evidence": ["Miqueias 5:7"],
+      "passageA": { "ref": "Miqueias 5:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A etapa une dependência do Senhor, o que ele exige e a espera fiel."
+      },
+      "options": [
+        { "id": "a", "text": "Dependência só do Senhor" },
+        { "id": "b", "text": "Confiança nas fortalezas" },
+        { "id": "c", "text": "Fé só em ofertas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As fortalezas são deitadas abaixo.",
+        "c": "6:8 exige prática, não só ritual."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 5:10, toque o que o Senhor eliminará.",
+      "verseRef": "Miqueias 5:10",
+      "evidenceSpan": "eliminarei do meio de ti os teus cavalos",
+      "feedbackCorrect": "Eliminará os cavalos.",
+      "hint": "Procure o objeto após eliminarei.",
+      "learningObjective": "Identificar o corte das armas.",
+      "evidence": ["Miqueias 5:10"],
+      "options": [
+        { "id": "a", "text": "cavalos" },
+        { "id": "b", "text": "carros" },
+        { "id": "c", "text": "dia" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os carros são destruídos depois; o objeto de eliminarei é cavalos.",
+        "c": "\"Dia\" marca o tempo, não o que se elimina."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 7:7 na ordem do texto.",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "Olhar; esperar; Deus ouvirá.",
+      "hint": "Comece pelo olhar.",
+      "learningObjective": "Reconhecer a sequência da esperança.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "Eu, porém, olharei para o Senhor" },
+        { "id": "b", "text": "e esperarei no Deus da minha salvação" },
+        { "id": "c", "text": "meu Deus me ouvirá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Olhar primeiro; ser ouvido fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 6:6–8, milhares de ofertas substituem justiça, misericórdia e humildade.",
+      "verseRef": "Miqueias 6:6–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "o que o SENHOR exige de ti é que pratiques a justiça",
+      "feedbackCorrect": "6:7 questiona as ofertas; 6:8 declara o que se exige.",
+      "feedbackWrong": {
+        "true": "Releia 6:7–8: ofertas não cancelam o trio exigido."
+      },
+      "hint": "Compare a pergunta de 6:7 com 6:8.",
+      "learningObjective": "Compreender o limite do ritual sem ética.",
+      "evidence": ["Miqueias 6:6–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 7:7, toque a palavra que marca o contraste da esperança.",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "\"Porém\" introduz o olhar para o Senhor.",
+      "hint": "É a palavra entre vírgulas após Eu.",
+      "learningObjective": "Reconhecer o contraste em 7:7.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "salvação" },
+        { "id": "c", "text": "Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Salvação é o conteúdo da espera.",
+        "c": "Deus é a quem se espera."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 5:7 e 6:8 se relacionam nesta etapa?",
+      "verseRef": "Miqueias 5:7",
+      "evidenceSpan": "não esperam pelo homem, nem dependem dos filhos dos homens",
+      "feedbackCorrect": "Depender do Senhor e praticar o que ele exige andam juntos.",
+      "hint": "Una independência do homem ao trio de 6:8.",
+      "learningObjective": "Relacionar dependência e prática exigida.",
+      "evidence": ["Miqueias 5:7", "Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "Depender do Senhor e praticar o que ele pede" },
+        { "id": "b", "text": "Depender do homem e ignorar a justiça" },
+        { "id": "c", "text": "Guardar fortalezas e esquecer a misericórdia" },
+        { "id": "d", "text": "Trocar humildade por só holocaustos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:7 nega depender do homem.",
+        "c": "5:11 corta fortalezas; 6:8 pede misericórdia.",
+        "d": "6:8 exige andar humildemente."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa O que o Senhor pede?",
+      "verseRef": "Miqueias 5:7",
+      "evidenceSpan": "como o orvalho do Senhor",
+      "feedbackCorrect": "Remanescente; pedido ético; espera fiel.",
+      "hint": "Comece pelo remanescente.",
+      "learningObjective": "Seguir o arco da etapa.",
+      "evidence": ["Miqueias 5:7", "Miqueias 6:8", "Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "O remanescente depende do Senhor" },
+        { "id": "b", "text": "O Senhor exige justiça e misericórdia" },
+        { "id": "c", "text": "O justo olha e espera no Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Dependência primeiro; a espera fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 5:7, que palavra reforça a negação da dependência humana?",
+      "verseRef": "Miqueias 5:7",
+      "evidenceSpan": "nem dependem dos filhos dos homens",
+      "feedbackCorrect": "\"Nem\" reforça: não esperam e também não dependem.",
+      "hint": "É a palavra curta antes de \"dependem\".",
+      "learningObjective": "Lembrar o marcador de reforço negativo.",
+      "evidence": ["Miqueias 5:7"],
+      "options": [
+        { "id": "a", "text": "nem" },
+        { "id": "b", "text": "logo" },
+        { "id": "c", "text": "quase" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Logo\" não marca essa negação.",
+        "c": "\"Quase\" não aparece em 5:7."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 6:8 a Oséias 6:6?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "ames a misericórdia",
+      "feedbackCorrect": "Nos dois textos, misericórdia pesa mais que só sacrifício.",
+      "hint": "Compare misericórdia e culto.",
+      "learningObjective": "Relacionar misericórdia em Miquéias e Oséias.",
+      "evidence": ["Miqueias 6:8", "Oséias 6:6"],
+      "passageA": { "ref": "Miqueias 6:8" },
+      "passageB": { "ref": "Oséias 6:6" },
+      "options": [
+        { "id": "a", "text": "Misericórdia, não só sacrifício" },
+        { "id": "b", "text": "Só holocaustos bastam" },
+        { "id": "c", "text": "Culto sem nenhuma ética" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos relativizam ofertas isoladas.",
+        "c": "A ética é exigida."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 6:2, toque a palavra que marca a razão da contenda.",
+      "verseRef": "Miqueias 6:2",
+      "evidenceSpan": "porque o Senhor tem uma controvérsia",
+      "feedbackCorrect": "\"Porque\" introduz a controvérsia.",
+      "hint": "É a palavra antes de \"o Senhor tem\".",
+      "learningObjective": "Reconhecer o marcador de causa em 6:2.",
+      "evidence": ["Miqueias 6:2"],
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "montes" },
+        { "id": "c", "text": "terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Montes são os ouvintes.",
+        "c": "Terra é o cenário."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se ligam dependência, pedido e espera?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia",
+      "feedbackCorrect": "Depender; praticar o pedido; esperar quando a confiança falha.",
+      "hint": "Termine com 7:7.",
+      "learningObjective": "Ordenar a lógica da etapa.",
+      "evidence": ["Miqueias 5:7", "Miqueias 6:8", "Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "O remanescente não depende do homem" },
+        { "id": "b", "text": "O Senhor exige justiça e misericórdia" },
+        { "id": "c", "text": "O justo espera o Deus da salvação" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Dependência e pedido primeiro; a espera fecha."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 5–7, o Senhor pede um caminhar justo e misericordioso, e o justo espera nele quando a confiança humana falha.",
+      "verseRef": "Miqueias 6:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia e andes humildemente",
+      "feedbackCorrect": "6:8 resume o pedido; 7:7 mostra a espera; 5:7 a dependência.",
+      "feedbackWrong": {
+        "false": "A etapa une 5:7, 6:8 e 7:7 nesse sentido."
+      },
+      "hint": "Una o pedido de 6:8 à espera de 7:7.",
+      "learningObjective": "Interpretar o fio da etapa.",
+      "evidence": ["Miqueias 6:8", "Miqueias 7:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 6:8, toque o advérbio do modo de andar com Deus.",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "andes humildemente com o teu Deus",
+      "feedbackCorrect": "O modo é humildemente.",
+      "hint": "Procure o advérbio ligado a andes.",
+      "learningObjective": "Sustentar o modo do caminhar.",
+      "evidence": ["Miqueias 6:8"],
+      "options": [
+        { "id": "a", "text": "humildemente" },
+        { "id": "b", "text": "homem" },
+        { "id": "c", "text": "bom" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Homem é o destinatário.",
+        "c": "Bom descreve o que foi declarado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa O que o Senhor pede sustenta?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "Depender do Senhor, praticar o que ele pede e esperar nele.",
+      "hint": "Una 5:7, 6:8 e 7:7.",
+      "learningObjective": "Escolher a leitura da etapa.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "Depender do Senhor, praticar o pedido e esperar nele" },
+        { "id": "b", "text": "Confiar em fortalezas e esquecer a misericórdia" },
+        { "id": "c", "text": "Trocar a espera por só suborno e ofertas" },
+        { "id": "d", "text": "Andar com Deus é opcional nesta etapa" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "5:11 e 6:8 apontam o contrário.",
+        "c": "7:3 e 6:7–8 rejeitam essa troca.",
+        "d": "6:8 exige andar humildemente."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio desta etapa na Escritura?",
+      "verseRef": "Miqueias 6:8",
+      "evidenceSpan": "pratiques a justiça, ames a misericórdia",
+      "feedbackCorrect": "Dependência no Espírito; misericórdia; espera em Deus.",
+      "hint": "Parta da prática exigida.",
+      "learningObjective": "Ver a etapa no fio bíblico.",
+      "evidence": ["Miqueias 6:8", "Zacarias 4:6", "Salmos 42:5"],
+      "options": [
+        { "id": "a", "text": "Miquéias exige justiça e misericórdia" },
+        { "id": "b", "text": "Zacarias aponta o Espírito, não a força" },
+        { "id": "c", "text": "O Salmo chama a esperar em Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 6:8, Zacarias 4:6 e Salmos 42:5."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 7:7, que verbo carrega a espera do justo?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "O verbo é esperarei.",
+      "hint": "É o verbo após \"e\".",
+      "learningObjective": "Lembrar o termo da espera fiel.",
+      "evidence": ["Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "fugirei" },
+        { "id": "b", "text": "esperarei" },
+        { "id": "c", "text": "esquecerei" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Fugirei\" não é a resposta de 7:7.",
+        "c": "\"Esquecerei\" não aparece no versículo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 7:7 a Salmos 42:5?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "esperarei no Deus da minha salvação",
+      "feedbackCorrect": "Nos dois textos, a esperança se firma em Deus.",
+      "hint": "Compare a espera em Deus.",
+      "learningObjective": "Ligar a espera de Miquéias à do Salmo.",
+      "evidence": ["Miqueias 7:7", "Salmos 42:5"],
+      "passageA": { "ref": "Miqueias 7:7" },
+      "passageB": { "ref": "Salmos 42:5" },
+      "options": [
+        { "id": "a", "text": "Esperar em Deus" },
+        { "id": "b", "text": "Confiar só no amigo" },
+        { "id": "c", "text": "Desistir da oração" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "7:5 desaconselha essa confiança.",
+        "c": "Os textos apontam espera."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 5:7, toque o trecho que nega a dependência humana.",
+      "verseRef": "Miqueias 5:7",
+      "evidenceSpan": "não esperam pelo homem",
+      "feedbackCorrect": "Não esperam pelo homem.",
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Sustentar a independência do homem.",
+      "evidence": ["Miqueias 5:7"],
+      "options": [
+        { "id": "a", "text": "pelo homem" },
+        { "id": "b", "text": "chuviscos" },
+        { "id": "c", "text": "erva" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Chuviscos é comparação.",
+        "c": "Erva completa a imagem."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica une remanescente, pedido e espera?",
+      "verseRef": "Miqueias 7:7",
+      "evidenceSpan": "Eu, porém, olharei para o Senhor",
+      "feedbackCorrect": "Depender; praticar; esperar quando a casa falha.",
+      "hint": "Termine com o olhar ao Senhor.",
+      "learningObjective": "Ordenar a lógica teológica da etapa.",
+      "evidence": ["Miqueias 5:7", "Miqueias 6:8", "Miqueias 7:7"],
+      "options": [
+        { "id": "a", "text": "O remanescente vive pelo Senhor" },
+        { "id": "b", "text": "O Senhor pede justiça e misericórdia" },
+        { "id": "c", "text": "O justo olha para o Senhor na crise" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Dependência e pedido primeiro; a espera fecha."
+      }
+    }
+  ]
+}

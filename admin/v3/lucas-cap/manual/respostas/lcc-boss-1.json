@@ -1,0 +1,634 @@
+{
+  "study": {
+    "passageRef": "Lucas 4:16–21",
+    "passages": [
+      { "ref": "Lucas 4:16–21" },
+      { "ref": "Lucas 1:26–31" },
+      { "ref": "Lucas 1:32–35" },
+      { "ref": "Lucas 2:41–46" },
+      { "ref": "Lucas 2:47–50" },
+      { "ref": "Lucas 3:7–12" },
+      { "ref": "Lucas 3:13–14" }
+    ],
+    "context": "Esta travessia revisa o anúncio a Maria, o menino no templo, a pregação de João e a leitura em Nazaré. Gabriel fala com Maria. Aos doze anos, Jesus fica em Jerusalém. João pede frutos. Depois, Jesus lê na sinagoga.",
+    "keyword": "cumpriu",
+    "keywordGloss": "Na sinagoga, Jesus diz que a Escritura lida se cumpriu naquele dia, diante dos ouvintes.",
+    "focusQuestion": "Que passo concreto a palavra de Deus pede de você hoje?",
+    "reflectionPrompts": [
+      "O favor no anúncio",
+      "A casa do Pai",
+      "A leitura que se cumpre"
+    ],
+    "facts": [
+      {
+        "text": "O anjo Gabriel é enviado por Deus a uma cidade chamada Nazaré.",
+        "evidenceRef": "Lucas 1:26",
+        "evidenceSpan": "o anjo Gabriel foi enviado da parte de Deus"
+      },
+      {
+        "text": "O anúncio diz que ela dará à luz um filho e lhe dará o nome de Jesus.",
+        "evidenceRef": "Lucas 1:31",
+        "evidenceSpan": "dará à luz um filho, a quem dará o nome de Jesus"
+      },
+      {
+        "text": "Depois de três dias, encontram Jesus no templo, no meio dos doutores.",
+        "evidenceRef": "Lucas 2:46",
+        "evidenceSpan": "encontraram-no no templo, assentado no meio dos doutores"
+      },
+      {
+        "text": "Quem tem duas túnicas deve compartilhar com quem não tem.",
+        "evidenceRef": "Lucas 3:11",
+        "evidenceSpan": "compartilhe com quem não tem"
+      },
+      {
+        "text": "O Espírito está sobre Jesus porque ele foi ungido para evangelizar os pobres.",
+        "evidenceRef": "Lucas 4:18",
+        "evidenceSpan": "porque me ungiu para evangelizar os pobres"
+      },
+      {
+        "text": "Jesus declara que essa Escritura se cumpriu diante dos ouvintes.",
+        "evidenceRef": "Lucas 4:21",
+        "evidenceSpan": "esta Escritura se cumpriu diante de vocês"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "graça",
+        "gloss": "O anjo apresenta o anúncio como favor de Deus, não como prêmio das obras de Maria."
+      },
+      {
+        "term": "arrependimento",
+        "gloss": "João pede frutos visíveis: a mudança de caminho aparece no que a pessoa faz."
+      },
+      {
+        "term": "cumpriu",
+        "gloss": "Jesus situa a leitura de Isaías no dia em que a sinagoga acaba de ouvir."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O anjo anuncia o filho a Maria",
+        "evidenceRef": "Lucas 1:31"
+      },
+      {
+        "label": "O menino afirma a casa do Pai",
+        "evidenceRef": "Lucas 2:49"
+      },
+      {
+        "label": "João pede frutos no cotidiano",
+        "evidenceRef": "Lucas 3:11"
+      },
+      {
+        "label": "Jesus declara a Escritura cumprida",
+        "evidenceRef": "Lucas 4:21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "A vinda do Espírito leva ao título do menino, que será chamado Filho de Deus.",
+        "marker": "portanto",
+        "evidenceRef": "Lucas 1:35"
+      },
+      {
+        "kind": "causa",
+        "text": "O Espírito está sobre Jesus porque ele foi ungido para evangelizar os pobres.",
+        "marker": "porque",
+        "evidenceRef": "Lucas 4:18"
+      },
+      {
+        "kind": "contraste",
+        "text": "Jesus fala da casa do Pai, porém os pais não compreendem essas palavras.",
+        "marker": "porém",
+        "evidenceRef": "Lucas 2:50"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 61:1",
+        "bridge": "O Espírito sobre o ungido"
+      },
+      {
+        "ref": "2 Samuel 7:16",
+        "bridge": "Trono firme para sempre"
+      },
+      {
+        "ref": "Isaías 61:2",
+        "bridge": "Ano aceitável do Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Maria recebe o anúncio porque suas obras já a tornaram digna.",
+        "why": "O anjo não apresenta méritos; diz que ela achou graça diante de Deus."
+      },
+      {
+        "text": "O menino ficou no templo sem necessidade, apenas por distração.",
+        "why": "Jesus diz que lhe é necessário estar na casa de seu Pai."
+      },
+      {
+        "text": "A leitura em Nazaré fica só como memória de Isaías, sem chegar ao dia deles.",
+        "why": "Jesus declara que essa Escritura se cumpriu diante de quem acabou de ouvir."
+      }
+    ],
+    "centralInsight": "Deus cumpre o que promete em Jesus",
+    "anchorQuestion": "O que Jesus afirmou sobre a Escritura depois de ler na sinagoga de Nazaré?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 1:31, o anúncio afirma a concepção de um filho e o nome de Jesus.",
+      "verseRef": "Lucas 1:31",
+      "correctOptionId": "true",
+      "evidenceSpan": "você conceberá e dará à luz um filho, a quem dará o nome de Jesus",
+      "feedbackCorrect": "O versículo une as duas coisas: um filho que nasce e o nome de Jesus.",
+      "feedbackWrong": {
+        "false": "Lucas 1:31 afirma a concepção do filho e também o nome de Jesus."
+      },
+      "hint": "Leia o que se diz do filho e do nome.",
+      "learningObjective": "Observar o anúncio do filho e do nome de Jesus.",
+      "evidence": ["Lucas 1:31"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 1:26, toque quem foi enviado da parte de Deus.",
+      "verseRef": "Lucas 1:26",
+      "options": [
+        { "id": "a", "text": "sexto mês" },
+        { "id": "b", "text": "anjo Gabriel" },
+        { "id": "c", "text": "Nazaré" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o anjo Gabriel foi enviado da parte de Deus",
+      "feedbackCorrect": "Gabriel é o mensageiro enviado da parte de Deus para Nazaré.",
+      "feedbackWrong": {
+        "a": "O sexto mês marca o tempo, não quem recebeu a missão.",
+        "c": "Nazaré é a cidade de destino, não o mensageiro enviado."
+      },
+      "hint": "Procure o nome de quem parte da presença de Deus.",
+      "learningObjective": "Identificar o mensageiro enviado a Nazaré.",
+      "evidence": ["Lucas 1:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 2:46, onde acharam o menino Jesus?",
+      "verseRef": "Lucas 2:46",
+      "options": [
+        { "id": "a", "text": "No templo, sentado no meio dos doutores" },
+        { "id": "b", "text": "Na estrada, entre os parentes e conhecidos" },
+        { "id": "c", "text": "Em Nazaré, na casa onde ele morava" },
+        { "id": "d", "text": "No palácio, diante das autoridades" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "encontraram-no no templo, assentado no meio dos doutores",
+      "feedbackCorrect": "Três dias depois, eles o acham no templo, entre os doutores.",
+      "feedbackWrong": {
+        "b": "A busca entre parentes acontece na viagem, antes do retorno a Jerusalém.",
+        "c": "Nazaré é a cidade de origem, não o lugar deste encontro.",
+        "d": "O texto fala do templo e dos doutores, não de um palácio."
+      },
+      "hint": "Veja o lugar citado depois dos três dias.",
+      "learningObjective": "Observar onde Jesus foi encontrado depois da festa.",
+      "evidence": ["Lucas 2:46"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 1:32 na ordem do texto.",
+      "verseRef": "Lucas 1:32",
+      "options": [
+        { "id": "a", "text": "Este será grande" },
+        { "id": "b", "text": "será chamado Filho do Altíssimo" },
+        { "id": "c", "text": "o trono de Davi, seu pai" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "será chamado Filho do Altíssimo",
+      "feedbackCorrect": "O versículo vai da grandeza do filho ao título e, então, ao trono.",
+      "feedbackWrong": {
+        "default": "Comece pela grandeza, siga pelo título e termine no trono."
+      },
+      "hint": "A frase começa dizendo o que este será.",
+      "learningObjective": "Reconhecer a sequência do anúncio em Lucas 1:32.",
+      "evidence": ["Lucas 1:32"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 3:11, o que deve fazer quem tiver duas túnicas?",
+      "verseRef": "Lucas 3:11",
+      "options": [
+        { "id": "a", "text": "divida" },
+        { "id": "b", "text": "compartilhe" },
+        { "id": "c", "text": "troque" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "compartilhe com quem não tem",
+      "feedbackCorrect": "João pede partilha: quem tem duas túnicas reparte com quem não tem.",
+      "feedbackWrong": {
+        "a": "Dividir se aproxima da ideia, mas o verbo do versículo é outro.",
+        "c": "Trocar não é o pedido; João fala em repartir com quem não tem."
+      },
+      "hint": "Leia o verbo dirigido a quem tem duas túnicas.",
+      "learningObjective": "Lembrar a ação concreta pedida a quem tem duas túnicas.",
+      "evidence": ["Lucas 3:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 4:21 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 4:21",
+      "passageA": { "ref": "Lucas 4:21" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na sinagoga de Nazaré, Jesus lê o profeta e fala aos ouvintes daquele dia."
+      },
+      "options": [
+        { "id": "a", "text": "A festa segue sem leitura" },
+        { "id": "b", "text": "O livro permanece fechado" },
+        { "id": "c", "text": "A Escritura se cumpre hoje" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "esta Escritura se cumpriu diante de vocês",
+      "feedbackCorrect": "Jesus não deixa a leitura no passado: diz que ela se cumpre naquele dia.",
+      "feedbackWrong": {
+        "a": "A cena é uma leitura na sinagoga, não a festa da Páscoa.",
+        "b": "Jesus abre o livro, lê e depois declara o cumprimento."
+      },
+      "hint": "Veja o que Jesus diz logo depois da leitura.",
+      "learningObjective": "Ligar Lucas 4:21 ao cumprimento anunciado na sinagoga.",
+      "evidence": ["Lucas 4:21"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 2:49, toque de quem é a casa onde Jesus diz que precisa estar.",
+      "verseRef": "Lucas 2:49",
+      "options": [
+        { "id": "a", "text": "vocês" },
+        { "id": "b", "text": "buscavam" },
+        { "id": "c", "text": "meu Pai" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "estar na casa de meu Pai",
+      "feedbackCorrect": "Jesus aponta a casa de seu Pai como o lugar onde lhe é preciso estar.",
+      "feedbackWrong": {
+        "a": "Vocês são os pais a quem ele responde, não o dono da casa.",
+        "b": "Buscar é o que os pais fizeram; a casa pertence a outro."
+      },
+      "hint": "Leia de quem é a casa no fim da resposta.",
+      "learningObjective": "Observar a quem Jesus liga a casa onde precisa estar.",
+      "evidence": ["Lucas 2:49"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 4:16 na ordem do texto.",
+      "verseRef": "Lucas 4:16",
+      "options": [
+        { "id": "a", "text": "ao chegar a Nazaré" },
+        { "id": "b", "text": "entrou na sinagoga" },
+        { "id": "c", "text": "levantou-se para ler" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "entrou na sinagoga e levantou-se para ler",
+      "feedbackCorrect": "Jesus chega a Nazaré, entra na sinagoga e se levanta para ler.",
+      "feedbackWrong": {
+        "default": "Comece pela chegada a Nazaré; a leitura vem depois da entrada."
+      },
+      "hint": "O versículo começa com a chegada.",
+      "learningObjective": "Reconhecer a sequência da chegada de Jesus à sinagoga.",
+      "evidence": ["Lucas 4:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 4:18, a presença do Espírito aparece desligada da unção para evangelizar os pobres.",
+      "verseRef": "Lucas 4:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque me ungiu para evangelizar os pobres",
+      "feedbackCorrect": "A ligação é direta: o Espírito está sobre ele pela unção aos pobres.",
+      "feedbackWrong": {
+        "true": "O versículo não separa as partes: ele foi ungido para evangelizar os pobres."
+      },
+      "hint": "Observe a palavra que une o Espírito à unção.",
+      "learningObjective": "Compreender a ligação entre o Espírito e a unção no texto.",
+      "evidence": ["Lucas 4:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 2:50, toque a palavra que marca o contraste com a resposta de Jesus.",
+      "verseRef": "Lucas 2:50",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "compreenderam" },
+        { "id": "c", "text": "palavras" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, não compreenderam",
+      "feedbackCorrect": "Porém marca o contraste: Jesus falou da casa do Pai, e eles não compreenderam.",
+      "feedbackWrong": {
+        "b": "Compreenderam diz o que faltou; a virada do contraste está noutra palavra.",
+        "c": "Palavras nomeia o que Jesus dissera, não o contraste."
+      },
+      "hint": "Procure a palavra curta que muda a direção do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste na reação dos pais.",
+      "evidence": ["Lucas 2:50"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como a resposta de Lucas 3:11 se liga à pergunta da multidão?",
+      "verseRef": "Lucas 3:10–11",
+      "options": [
+        { "id": "a", "text": "João traduz o arrependimento em partilha concreta" },
+        { "id": "b", "text": "João manda esperar o machado sem agir agora" },
+        { "id": "c", "text": "João troca a pergunta por um ritual secreto" },
+        { "id": "d", "text": "João pede que cada um guarde o que possui" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "compartilhe com quem não tem",
+      "feedbackCorrect": "A pergunta pede um caminho; João responde com partilha de roupa e comida.",
+      "feedbackWrong": {
+        "b": "O machado aparece antes; aqui a resposta é uma ação de partilha.",
+        "c": "Não há ritual secreto: João fala de túnicas e de alimento.",
+        "d": "A ordem é repartir com quem não tem, não guardar para si."
+      },
+      "hint": "Veja o que João manda fazer com a túnica e o alimento.",
+      "learningObjective": "Relacionar a pergunta da multidão com a partilha pedida por João.",
+      "evidence": ["Lucas 3:10–11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena de Nazaré avança em Lucas 4?",
+      "verseRef": "Lucas 4:20–21",
+      "options": [
+        { "id": "a", "text": "Jesus abre o livro na sinagoga" },
+        { "id": "b", "text": "A leitura anuncia liberdade aos pobres" },
+        { "id": "c", "text": "Ele declara o cumprimento naquele dia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esta Escritura se cumpriu",
+      "feedbackCorrect": "Jesus lê na sinagoga, a leitura anuncia liberdade, e ele declara o cumprimento.",
+      "feedbackWrong": {
+        "default": "A leitura vem primeiro; a declaração do cumprimento fecha a cena."
+      },
+      "hint": "Siga da abertura do livro até a palavra final de Jesus.",
+      "learningObjective": "Compreender os movimentos da leitura em Nazaré.",
+      "evidence": ["Lucas 4:17", "Lucas 4:18", "Lucas 4:21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 1:35, que palavra liga a vinda do Espírito ao nome do menino?",
+      "verseRef": "Lucas 1:35",
+      "options": [
+        { "id": "a", "text": "contudo" },
+        { "id": "b", "text": "todavia" },
+        { "id": "c", "text": "portanto" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "portanto, também o Santo que há de nascer",
+      "feedbackCorrect": "Portanto une a vinda do Espírito ao título do menino: Filho de Deus.",
+      "feedbackWrong": {
+        "a": "Contudo marcaria oposição; o texto apresenta uma consequência.",
+        "b": "Todavia também oporia as partes; aqui uma leva à outra."
+      },
+      "hint": "Veja a palavra entre a sombra do Altíssimo e o título do menino.",
+      "learningObjective": "Reconhecer a palavra que liga o Espírito ao título do menino.",
+      "evidence": ["Lucas 1:35"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 4:18 a Isaías 61:1?",
+      "verseRef": "Lucas 4:18",
+      "passageA": { "ref": "Lucas 4:18" },
+      "passageB": { "ref": "Isaías 61:1" },
+      "options": [
+        { "id": "a", "text": "O Espírito sobre o ungido" },
+        { "id": "b", "text": "A Páscoa em Jerusalém" },
+        { "id": "c", "text": "O silêncio dos doutores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Espírito do Senhor está sobre mim, porque me ungiu",
+      "feedbackCorrect": "Isaías e Lucas falam do Espírito sobre quem foi ungido para anunciar.",
+      "feedbackWrong": {
+        "b": "A Páscoa aparece na infância de Jesus, não nesta leitura.",
+        "c": "Os doutores estão no templo; aqui o vínculo é a unção do Espírito."
+      },
+      "hint": "Compare quem recebe o Espírito nos dois textos.",
+      "learningObjective": "Relacionar a leitura de Nazaré com Isaías 61:1.",
+      "evidence": ["Lucas 4:18", "Isaías 61:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 3:8, toque o que João manda produzir como sinal de mudança.",
+      "verseRef": "Lucas 3:8",
+      "options": [
+        { "id": "a", "text": "Abraão" },
+        { "id": "b", "text": "frutos dignos" },
+        { "id": "c", "text": "estas pedras" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Produzam frutos dignos de arrependimento",
+      "feedbackCorrect": "João pede frutos dignos: a mudança aparece em atos, não só em palavras.",
+      "feedbackWrong": {
+        "a": "Abraão é a origem que eles não devem usar como desculpa.",
+        "c": "As pedras entram na advertência de João, não no que ele manda produzir."
+      },
+      "hint": "Leia o que João manda produzir no início do versículo.",
+      "learningObjective": "Identificar o sinal concreto que João exige da multidão.",
+      "evidence": ["Lucas 3:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como o anúncio a Maria avança em Lucas 1:30–31?",
+      "verseRef": "Lucas 1:30–31",
+      "options": [
+        { "id": "a", "text": "O anjo diz a Maria que não tema" },
+        { "id": "b", "text": "Ele anuncia a concepção do filho" },
+        { "id": "c", "text": "O menino recebe o nome Jesus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Maria, não temas",
+      "feedbackCorrect": "O anjo acalma Maria, anuncia o filho e diz o nome que ele receberá.",
+      "feedbackWrong": {
+        "default": "O medo vem primeiro; o nome do menino fecha o anúncio."
+      },
+      "hint": "Comece pela palavra que tira o medo.",
+      "learningObjective": "Compreender os passos do anúncio em Lucas 1:30–31.",
+      "evidence": ["Lucas 1:30–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 4:21, Jesus declara cumprida a Escritura diante dos que acabaram de ouvir.",
+      "verseRef": "Lucas 4:21",
+      "correctOptionId": "true",
+      "evidenceSpan": "esta Escritura se cumpriu diante de vocês, que acabaram de ouvir",
+      "feedbackCorrect": "Jesus aplica a leitura ao momento: ela se cumpriu diante de quem ouviu.",
+      "feedbackWrong": {
+        "false": "O texto não adia o fato: a Escritura se cumpriu diante de quem acabou de ouvir."
+      },
+      "hint": "Veja quando Jesus situa a Escritura e diante de quem.",
+      "learningObjective": "Interpretar o cumprimento da Escritura como algo já realizado ali.",
+      "evidence": ["Lucas 4:21"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 1:33, toque o que o texto afirma sobre o fim do reino anunciado.",
+      "verseRef": "Lucas 1:33",
+      "options": [
+        { "id": "a", "text": "casa de Jacó" },
+        { "id": "b", "text": "não conhecerá fim" },
+        { "id": "c", "text": "reinará" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o seu reino não conhecerá fim",
+      "feedbackCorrect": "O reino anunciado não tem prazo: o texto diz que ele não conhecerá fim.",
+      "feedbackWrong": {
+        "a": "A casa de Jacó indica sobre quem ele reina, não até quando.",
+        "c": "Reinar é a ação; o alcance no tempo aparece noutra expressão."
+      },
+      "hint": "Leia a frase final, depois da casa de Jacó.",
+      "learningObjective": "Localizar no texto o alcance do reino anunciado a Maria.",
+      "evidence": ["Lucas 1:33"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 1:30 sustenta sobre o anúncio feito a Maria?",
+      "verseRef": "Lucas 1:30",
+      "options": [
+        { "id": "a", "text": "Maria já merecia o anúncio por suas próprias obras" },
+        { "id": "b", "text": "O anúncio nasce do favor de Deus, não de um mérito de Maria" },
+        { "id": "c", "text": "O anjo repreende Maria por ter buscado essa honra" },
+        { "id": "d", "text": "A mensagem depende do medo que Maria deveria manter" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "você achou graça diante de Deus",
+      "feedbackCorrect": "O anjo fala de graça: o anúncio vem do favor de Deus, não de mérito.",
+      "feedbackWrong": {
+        "a": "O texto não lista obras de Maria; diz que ela achou graça diante de Deus.",
+        "c": "Não há repreensão: o anjo diz que ela não tema e que achou graça.",
+        "d": "O medo é o que o anjo pede que ela deixe, não a base da mensagem."
+      },
+      "hint": "Observe o que Maria achou diante de Deus.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o favor de Deus.",
+      "evidence": ["Lucas 1:30"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a promessa lida em Nazaré chegando a Jesus?",
+      "verseRef": "Lucas 4:21",
+      "options": [
+        { "id": "a", "text": "Isaías anuncia boas-novas aos quebrantados" },
+        { "id": "b", "text": "Jesus lê o profeta na sinagoga" },
+        { "id": "c", "text": "Jesus diz que a Escritura se cumpre hoje" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esta Escritura se cumpriu",
+      "feedbackCorrect": "A palavra de Isaías é lida na sinagoga, e Jesus diz que ela se cumpre hoje.",
+      "feedbackWrong": {
+        "default": "Comece pelo profeta, passe pela leitura e termine na declaração de Jesus."
+      },
+      "hint": "Siga a Bíblia: o profeta, a leitura, a palavra de Jesus.",
+      "learningObjective": "Ver o cumprimento em Nazaré como continuação da palavra de Isaías.",
+      "evidence": ["Isaías 61:1", "Lucas 4:17", "Lucas 4:21"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 3:8, João pede frutos dignos de quê?",
+      "verseRef": "Lucas 3:8",
+      "options": [
+        { "id": "a", "text": "vaidade" },
+        { "id": "b", "text": "arrependimento" },
+        { "id": "c", "text": "vingança" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "frutos dignos de arrependimento",
+      "feedbackCorrect": "Os frutos que João pede são dignos de arrependimento: a vida mostra a mudança.",
+      "feedbackWrong": {
+        "a": "Vaidade não cabe no pedido; João fala de uma mudança real.",
+        "c": "Vingança não é o termo; João pede fruto que mostre mudança de caminho."
+      },
+      "hint": "Leia a palavra que vem logo após dignos de.",
+      "learningObjective": "Lembrar o termo que dá sentido aos frutos pedidos por João.",
+      "evidence": ["Lucas 3:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 1:32–33 a 2 Samuel 7:16?",
+      "verseRef": "Lucas 1:32–33",
+      "passageA": { "ref": "Lucas 1:32–33" },
+      "passageB": { "ref": "2 Samuel 7:16" },
+      "options": [
+        { "id": "a", "text": "A promessa fica cancelada" },
+        { "id": "b", "text": "O trono de Davi permanece" },
+        { "id": "c", "text": "Maria recusa o anúncio" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lhe concederá o trono de Davi",
+      "feedbackCorrect": "Samuel fala de um trono firme para sempre; o anjo anuncia esse trono a Maria.",
+      "feedbackWrong": {
+        "a": "Nada é cancelado: os dois textos falam de um reino que permanece.",
+        "c": "Maria faz uma pergunta depois; aqui o vínculo é o trono prometido."
+      },
+      "hint": "Compare o que os dois textos dizem do trono.",
+      "learningObjective": "Ligar o anúncio a Maria à promessa do trono de Davi.",
+      "evidence": ["Lucas 1:32–33", "2 Samuel 7:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 2:49, toque a palavra que mostra a permanência no templo como dever.",
+      "verseRef": "Lucas 2:49",
+      "options": [
+        { "id": "a", "text": "necessário" },
+        { "id": "b", "text": "buscavam" },
+        { "id": "c", "text": "sabem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me é necessário estar na casa de meu Pai",
+      "feedbackCorrect": "Necessário mostra que ficar ali não foi acaso: Jesus fala de um dever.",
+      "feedbackWrong": {
+        "b": "Buscavam descreve a procura dos pais, não o dever de Jesus.",
+        "c": "Sabem abre a pergunta; o dever está no que ele diz ser preciso."
+      },
+      "hint": "Procure o termo que qualifica o estar na casa.",
+      "learningObjective": "Sustentar com o texto que a permanência no templo era necessária.",
+      "evidence": ["Lucas 2:49"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o arrependimento que João pede?",
+      "verseRef": "Lucas 3:10–11",
+      "options": [
+        { "id": "a", "text": "João pede fruto que mostre mudança" },
+        { "id": "b", "text": "A multidão pergunta o que fazer" },
+        { "id": "c", "text": "A resposta é repartir o que tem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "compartilhe com quem não tem",
+      "feedbackCorrect": "João pede fruto, o povo pergunta o caminho, e a resposta chega na partilha.",
+      "feedbackWrong": {
+        "default": "O pedido de fruto vem antes; a partilha responde à pergunta do povo."
+      },
+      "hint": "Comece pelo pedido de João e termine na ação concreta.",
+      "learningObjective": "Interpretar o arrependimento como mudança que aparece no dia a dia.",
+      "evidence": ["Lucas 3:8", "Lucas 3:10", "Lucas 3:11"]
+    }
+  ]
+}

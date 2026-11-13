@@ -1,0 +1,452 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 19:1–9",
+    "passages": [{ "ref": "Ezequiel 19:1–9" }],
+    "context": "No exílio, Ezequiel levanta um lamento: Israel como leoa cujos filhotes viram leõezinhos e acabam presos no Egito e na Babilônia.",
+    "keyword": "lamentação",
+    "keywordGloss": "Canto de dor sobre a queda dos príncipes; a leoa perde os filhotes que viraram leões.",
+    "focusQuestion": "Quando a liderança cai por violência, você lamenta ou só assiste?",
+    "reflectionPrompts": ["A leoa e os filhotes", "A cova das nações", "A voz silenciada"],
+    "facts": [
+      {
+        "text": "O Senhor manda levantar uma lamentação pelos príncipes de Israel.",
+        "evidenceRef": "Ezequiel 19:1",
+        "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel"
+      },
+      {
+        "text": "A mãe é descrita como leoa que criou seus filhotes entre leões.",
+        "evidenceRef": "Ezequiel 19:2",
+        "evidenceSpan": "Uma leoa entre leões, que, deitada entre os leõezinhos, criou seus filhotes"
+      },
+      {
+        "text": "Um filhote virou leãozinho, aprendeu a apanhar a presa e devorou homens.",
+        "evidenceRef": "Ezequiel 19:3",
+        "evidenceSpan": "se tornou um leãozinho; aprendeu a apanhar a presa e devorou os homens"
+      },
+      {
+        "text": "As nações o apanharam na cova e o levaram com ganchos ao Egito.",
+        "evidenceRef": "Ezequiel 19:4",
+        "evidenceSpan": "as nações o apanharam na cova que tinham feito e o levaram com ganchos para a terra do Egito"
+      },
+      {
+        "text": "O segundo filhote foi preso e levado ao rei da Babilônia.",
+        "evidenceRef": "Ezequiel 19:9",
+        "evidenceSpan": "o prenderam com ganchos e o levaram ao rei da Babilônia"
+      }
+    ],
+    "keyTerms": [
+      { "term": "lamentação", "gloss": "Canto de luto ordenado sobre a queda dos príncipes." },
+      { "term": "leãozinho", "gloss": "Filhote que cresce em violência e acaba na cova." },
+      { "term": "ganchos", "gloss": "Instrumento com que as nações levam o príncipe cativo." }
+    ],
+    "structure": [
+      { "label": "Ordem de levantar o lamento", "evidenceRef": "Ezequiel 19:1" },
+      { "label": "A leoa cria e o primeiro filhote cai no Egito", "evidenceRef": "Ezequiel 19:2–4" },
+      { "label": "O segundo filhote ruge e as nações o cercam", "evidenceRef": "Ezequiel 19:5–8" },
+      { "label": "Levado à Babilônia, a voz some em Israel", "evidenceRef": "Ezequiel 19:9" }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Depois de rugir e arrasar, as nações se ajuntam e o apanham na cova.",
+        "marker": "Então",
+        "evidenceRef": "Ezequiel 19:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "Levaram-no aos lugares fortes para que sua voz não se ouvisse mais.",
+        "marker": "para que",
+        "evidenceRef": "Ezequiel 19:9"
+      },
+      {
+        "kind": "causa",
+        "text": "A esperança da leoa frustrada a leva a erguer outro leãozinho.",
+        "marker": "pois",
+        "evidenceRef": "Ezequiel 19:5"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "2 Reis 23:33–34", "bridge": "Príncipe levado ao Egito" },
+      { "ref": "2 Reis 24:15", "bridge": "Rei levado à Babilônia" },
+      { "ref": "Gênesis 49:9", "bridge": "Judá como leãozinho" }
+    ],
+    "misreadings": [
+      {
+        "text": "O lamento celebra a força dos príncipes que nunca caem.",
+        "why": "É lamentação: os filhotes são apanhados na cova e levados cativos."
+      },
+      {
+        "text": "Só o Egito prende; a Babilônia não aparece no lamento.",
+        "why": "O segundo filhote é levado ao rei da Babilônia."
+      },
+      {
+        "text": "Os leõezinhos são animais literais sem relação com príncipes.",
+        "why": "O texto abre como lamentação em favor dos príncipes de Israel."
+      }
+    ],
+    "centralInsight": "Os príncipes crescem em violência e caem na cova das nações.",
+    "anchorQuestion": "Para onde o segundo filhote é levado em Ezequiel 19:9?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 19:4, as nações levaram o filhote com ganchos para a terra do Egito.",
+      "verseRef": "Ezequiel 19:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "o levaram com ganchos para a terra do Egito",
+      "feedbackCorrect": "O primeiro leãozinho é apanhado na cova e levado ao Egito.",
+      "feedbackWrong": { "false": "O versículo diz que o levaram com ganchos para o Egito." },
+      "hint": "Veja o destino depois dos ganchos.",
+      "learningObjective": "Identificar o destino do primeiro filhote.",
+      "evidence": ["Ezequiel 19:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 19:2, toque quem é a mãe descrita no lamento.",
+      "verseRef": "Ezequiel 19:2",
+      "options": [
+        { "id": "a", "text": "Uma leoa" },
+        { "id": "b", "text": "seus filhotes" },
+        { "id": "c", "text": "entre leões" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Uma leoa entre leões",
+      "feedbackCorrect": "A mãe é uma leoa entre leões.",
+      "feedbackWrong": {
+        "b": "Os filhotes são criados por ela, não são a mãe.",
+        "c": "Indica o lugar, não quem é a mãe."
+      },
+      "hint": "Procure a resposta à pergunta \"Quem é a sua mãe?\".",
+      "learningObjective": "Identificar a figura da mãe no lamento.",
+      "evidence": ["Ezequiel 19:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 19:9, para onde levaram o segundo filhote?",
+      "verseRef": "Ezequiel 19:9",
+      "options": [
+        { "id": "a", "text": "Ao rei da Babilônia" },
+        { "id": "b", "text": "À terra do Egito" },
+        { "id": "c", "text": "Aos montes de Israel" },
+        { "id": "d", "text": "Às províncias vizinhas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o levaram ao rei da Babilônia",
+      "feedbackCorrect": "O destino do segundo é o rei da Babilônia.",
+      "feedbackWrong": {
+        "b": "O Egito foi o destino do primeiro filhote.",
+        "c": "A voz some nos montes; o destino é a Babilônia.",
+        "d": "As províncias se ajuntaram; o destino é a Babilônia."
+      },
+      "hint": "Leia para quem o levaram com ganchos.",
+      "learningObjective": "Distinguir o destino do segundo filhote.",
+      "evidence": ["Ezequiel 19:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 19:3 na ordem do texto.",
+      "verseRef": "Ezequiel 19:3",
+      "options": [
+        { "id": "a", "text": "Fez crescer um de seus filhotes" },
+        { "id": "b", "text": "que se tornou um leãozinho" },
+        { "id": "c", "text": "aprendeu a apanhar a presa e devorou os homens" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Fez crescer um de seus filhotes, que se tornou um leãozinho",
+      "feedbackCorrect": "Cresce, vira leãozinho e depois aprende a caçar.",
+      "feedbackWrong": { "default": "Comece pelo crescimento; a presa fecha a frase." },
+      "hint": "Siga o que a leoa faz com o filhote.",
+      "learningObjective": "Reconhecer a sequência do primeiro filhote.",
+      "evidence": ["Ezequiel 19:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 19:1, Levanta uma ___ em favor dos príncipes de Israel.",
+      "verseRef": "Ezequiel 19:1",
+      "options": [
+        { "id": "a", "text": "lamentação" },
+        { "id": "b", "text": "festa" },
+        { "id": "c", "text": "aliança" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel",
+      "feedbackCorrect": "A palavra do texto é lamentação.",
+      "feedbackWrong": {
+        "b": "Não é festa: é lamentação.",
+        "c": "Não é aliança: é lamentação."
+      },
+      "hint": "Veja o substantivo depois de \"Levanta uma\".",
+      "learningObjective": "Lembrar o gênero do canto ordenado.",
+      "evidence": ["Ezequiel 19:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 19:1 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 19:1",
+      "passageA": { "ref": "Ezequiel 19:1" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No exílio, o Senhor manda cantar a queda dos príncipes sob a figura da leoa."
+      },
+      "options": [
+        { "id": "a", "text": "Lamento pelos príncipes" },
+        { "id": "b", "text": "Rede das províncias" },
+        { "id": "c", "text": "Rugido nas cidades" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel",
+      "feedbackCorrect": "O versículo abre o lamento que o contexto descreve.",
+      "feedbackWrong": {
+        "b": "A rede aparece depois, no segundo filhote.",
+        "c": "O rugido é do leãozinho, não o elo do contexto."
+      },
+      "hint": "Compare a ordem inicial com o tema da cena.",
+      "learningObjective": "Ligar a ordem de lamento ao contexto.",
+      "evidence": ["Ezequiel 19:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 19:9, levaram o filhote à Babilônia para que sua voz ainda ecoasse nos montes de Israel.",
+      "verseRef": "Ezequiel 19:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "para que não se ouvisse mais a sua voz nos montes de Israel",
+      "feedbackCorrect": "O propósito é o contrário: a voz não se ouça mais.",
+      "feedbackWrong": { "true": "O texto diz para que não se ouvisse mais a sua voz." },
+      "hint": "Leia a finalidade no fim do versículo.",
+      "learningObjective": "Perceber o propósito do cativeiro.",
+      "evidence": ["Ezequiel 19:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 19:8, toque a palavra que marca o resultado após o rugido.",
+      "verseRef": "Ezequiel 19:8",
+      "options": [
+        { "id": "a", "text": "Então" },
+        { "id": "b", "text": "províncias" },
+        { "id": "c", "text": "rede" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, as nações das províncias se ajuntaram contra ele",
+      "feedbackCorrect": "\"Então\" introduz o resultado: as nações se ajuntam.",
+      "feedbackWrong": {
+        "b": "As províncias localizam as nações; o marcador abre a frase.",
+        "c": "A rede é o instrumento, não o marcador."
+      },
+      "hint": "Procure a palavra que abre o versículo.",
+      "learningObjective": "Tocar o marcador de resultado.",
+      "evidence": ["Ezequiel 19:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 19:5 e 19:9 se relacionam?",
+      "verseRef": "Ezequiel 19:5",
+      "options": [
+        { "id": "a", "text": "A leoa ergue outro filhote que também acaba cativo" },
+        { "id": "b", "text": "A leoa abandona o lamento e celebra a vitória" },
+        { "id": "c", "text": "O segundo filhote liberta o primeiro do Egito" },
+        { "id": "d", "text": "A Babilônia devolve o filhote aos montes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou um de seus filhotes e fez dele um leãozinho",
+      "feedbackCorrect": "Após a esperança frustrada, ergue outro que também é levado cativo.",
+      "feedbackWrong": {
+        "b": "O texto continua como lamentação, não celebração.",
+        "c": "Não há libertação do primeiro; o segundo também cai.",
+        "d": "Ele é levado à Babilônia; a voz some nos montes."
+      },
+      "hint": "Una a nova criação do leãozinho ao destino final.",
+      "learningObjective": "Relacionar o segundo filhote ao cativeiro.",
+      "evidence": ["Ezequiel 19:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 19?",
+      "verseRef": "Ezequiel 19:1–9",
+      "options": [
+        { "id": "a", "text": "Ordem de levantar o lamento" },
+        { "id": "b", "text": "O primeiro filhote cai no Egito" },
+        { "id": "c", "text": "O segundo é levado à Babilônia" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o levaram ao rei da Babilônia",
+      "feedbackCorrect": "Lamento → Egito → Babilônia.",
+      "feedbackWrong": { "default": "Comece pela ordem; feche na Babilônia." },
+      "hint": "Pense em ordem, primeiro cativeiro e segundo.",
+      "learningObjective": "Ordenar os movimentos do lamento.",
+      "evidence": ["Ezequiel 19:1", "Ezequiel 19:4", "Ezequiel 19:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 19:8, estenderam uma ___ sobre ele.",
+      "verseRef": "Ezequiel 19:8",
+      "options": [
+        { "id": "a", "text": "rede" },
+        { "id": "b", "text": "coroa" },
+        { "id": "c", "text": "tenda" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estenderam uma rede sobre ele",
+      "feedbackCorrect": "O instrumento das nações é a rede.",
+      "feedbackWrong": {
+        "b": "Não é coroa: é rede.",
+        "c": "Não é tenda: é rede."
+      },
+      "hint": "Veja o que estenderam sobre o leãozinho.",
+      "learningObjective": "Lembrar o instrumento da captura.",
+      "evidence": ["Ezequiel 19:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 19:4 a 2 Reis 23:33–34?",
+      "verseRef": "Ezequiel 19:4",
+      "passageA": { "ref": "Ezequiel 19:4" },
+      "passageB": { "ref": "2 Reis 23:33–34" },
+      "options": [
+        { "id": "a", "text": "Príncipe levado ao Egito" },
+        { "id": "b", "text": "Rede nas províncias" },
+        { "id": "c", "text": "Rugido nos palácios" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o levaram com ganchos para a terra do Egito",
+      "feedbackCorrect": "Nos dois textos, um príncipe de Judá é levado ao Egito.",
+      "feedbackWrong": {
+        "b": "A rede é do segundo filhote, não o elo com 2 Reis.",
+        "c": "O rugido não é o elo histórico com 2 Reis."
+      },
+      "hint": "Compare o destino no Egito.",
+      "learningObjective": "Relacionar o lamento ao cativeiro no Egito.",
+      "evidence": ["Ezequiel 19:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 19, o lamento apresenta os príncipes como leõezinhos que nunca enfrentam a cova das nações.",
+      "verseRef": "Ezequiel 19:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "as nações o apanharam na cova que tinham feito",
+      "feedbackCorrect": "A leitura errada: os filhotes caem na cova e no cativeiro.",
+      "feedbackWrong": { "true": "O texto mostra captura na cova e cativeiro." },
+      "hint": "Veja o que acontece depois que o leãozinho caça.",
+      "learningObjective": "Rejeitar a leitura que nega a queda.",
+      "evidence": ["Ezequiel 19:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 19:9, toque o trecho que mostra o destino final do segundo filhote.",
+      "verseRef": "Ezequiel 19:9",
+      "options": [
+        { "id": "a", "text": "rei da Babilônia" },
+        { "id": "b", "text": "lugares fortes" },
+        { "id": "c", "text": "montes de Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o levaram ao rei da Babilônia",
+      "feedbackCorrect": "O destino nomeado é o rei da Babilônia.",
+      "feedbackWrong": {
+        "b": "É o tipo de lugar onde o põem, não o destinatário.",
+        "c": "É onde a voz some, não para onde o levam."
+      },
+      "hint": "Procure para quem o levaram.",
+      "learningObjective": "Tocar o destino do segundo cativeiro.",
+      "evidence": ["Ezequiel 19:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 19 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 19:1",
+      "options": [
+        { "id": "a", "text": "Os príncipes crescem em violência e caem cativos" },
+        { "id": "b", "text": "Os príncipes são elogiados por nunca caírem" },
+        { "id": "c", "text": "Só animais são descritos, sem líderes humanos" },
+        { "id": "d", "text": "O Egito e a Babilônia libertam os filhotes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta uma lamentação em favor dos príncipes de Israel",
+      "feedbackCorrect": "É lamento: violência dos leõezinhos e cativeiro nas nações.",
+      "feedbackWrong": {
+        "b": "O texto é lamentação, não elogio.",
+        "c": "Abre falando dos príncipes de Israel.",
+        "d": "As nações prendem; não libertam."
+      },
+      "hint": "Una lamento, violência e cativeiro.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": ["Ezequiel 19:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do lamento nesta cena.",
+      "verseRef": "Ezequiel 19:1–9",
+      "options": [
+        { "id": "a", "text": "A leoa cria filhotes violentos" },
+        { "id": "b", "text": "As nações os apanham na cova" },
+        { "id": "c", "text": "A voz some nos montes de Israel" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "para que não se ouvisse mais a sua voz nos montes de Israel",
+      "feedbackCorrect": "Criação violenta → captura → silêncio.",
+      "feedbackWrong": { "default": "Comece na criação; feche no silêncio." },
+      "hint": "Pense em crescimento, captura e silêncio.",
+      "learningObjective": "Encadear a lógica do lamento.",
+      "evidence": ["Ezequiel 19:3", "Ezequiel 19:8", "Ezequiel 19:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 19:3, o filhote se tornou um ___.",
+      "verseRef": "Ezequiel 19:3",
+      "options": [
+        { "id": "a", "text": "leãozinho" },
+        { "id": "b", "text": "cordeiro" },
+        { "id": "c", "text": "pastor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que se tornou um leãozinho",
+      "feedbackCorrect": "O termo da figura é leãozinho.",
+      "feedbackWrong": {
+        "b": "Não é cordeiro: é leãozinho.",
+        "c": "Não é pastor: é leãozinho."
+      },
+      "hint": "Veja o que o filhote se tornou.",
+      "learningObjective": "Lembrar a figura do príncipe.",
+      "evidence": ["Ezequiel 19:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 19:9 a 2 Reis 24:15?",
+      "verseRef": "Ezequiel 19:9",
+      "passageA": { "ref": "Ezequiel 19:9" },
+      "passageB": { "ref": "2 Reis 24:15" },
+      "options": [
+        { "id": "a", "text": "Rei levado à Babilônia" },
+        { "id": "b", "text": "Rede sobre o leãozinho" },
+        { "id": "c", "text": "Lamento pela leoa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o levaram ao rei da Babilônia",
+      "feedbackCorrect": "Nos dois, o líder de Judá é levado à Babilônia.",
+      "feedbackWrong": {
+        "b": "A rede é imagem do lamento, não o elo com 2 Reis.",
+        "c": "O lamento não é o elo histórico com 2 Reis."
+      },
+      "hint": "Compare o destino na Babilônia.",
+      "learningObjective": "Ligar o segundo filhote ao exílio babilônico.",
+      "evidence": ["Ezequiel 19:9"]
+    }
+  ]
+}

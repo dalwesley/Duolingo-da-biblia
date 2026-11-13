@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Joel 3:14–19",
+    "passages": [
+      { "ref": "Joel 3:14–19" },
+      { "ref": "Joel 3:20–21" }
+    ],
+    "context": "Multidões se reúnem no vale da Decisão. O Senhor ruge de Sião, mas é refúgio do seu povo e promete restaurar Judá.",
+    "keyword": "refúgio",
+    "keywordGloss": "O Senhor como abrigo do seu povo enquanto céus e terra tremem.",
+    "focusQuestion": "Em que crise você precisa lembrar que o Senhor é o seu refúgio?",
+    "reflectionPrompts": [
+      "Vale da Decisão",
+      "Senhor como refúgio",
+      "Judá habitada"
+    ],
+    "facts": [
+      {
+        "text": "Há multidões no vale da Decisão porque o Dia do Senhor se aproxima.",
+        "evidenceRef": "Joel 3:14",
+        "evidenceSpan": "Multidões, multidões no vale da Decisão"
+      },
+      {
+        "text": "O sol e a lua se escurecerão e as estrelas deixarão de brilhar.",
+        "evidenceRef": "Joel 3:15",
+        "evidenceSpan": "O sol e a lua se escurecerão e as estrelas deixarão de brilhar"
+      },
+      {
+        "text": "O Senhor bramará de Sião e será o refúgio do seu povo.",
+        "evidenceRef": "Joel 3:16",
+        "evidenceSpan": "o Senhor será o refúgio do seu povo"
+      },
+      {
+        "text": "Jerusalém será considerada santa; estrangeiros não passarão mais por ela.",
+        "evidenceRef": "Joel 3:17",
+        "evidenceSpan": "Jerusalém será considerada santa; estrangeiros não passarão mais por ela"
+      },
+      {
+        "text": "Uma fonte sairá da casa do Senhor e regará o vale de Sitim.",
+        "evidenceRef": "Joel 3:18",
+        "evidenceSpan": "sairá uma fonte da casa do Senhor e regará o vale de Sitim"
+      },
+      {
+        "text": "Judá será habitada para sempre e Jerusalém de geração em geração.",
+        "evidenceRef": "Joel 3:20",
+        "evidenceSpan": "Judá, porém, será habitada para sempre"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Decisão",
+        "gloss": "Nome do vale onde as multidões se reúnem no Dia do Senhor."
+      },
+      {
+        "term": "refúgio",
+        "gloss": "O Senhor como abrigo do seu povo no meio do tremor."
+      },
+      {
+        "term": "habitada",
+        "gloss": "Promessa de permanência para Judá e Jerusalém."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Multidões no vale da Decisão",
+        "evidenceRef": "Joel 3:14–15"
+      },
+      {
+        "label": "O Senhor ruge e é refúgio do povo",
+        "evidenceRef": "Joel 3:16"
+      },
+      {
+        "label": "Sião santa e fonte da casa do Senhor",
+        "evidenceRef": "Joel 3:17–18"
+      },
+      {
+        "label": "Juízo sobre Egito e Edom; Judá permanece",
+        "evidenceRef": "Joel 3:19–21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Há multidões no vale porque o Dia do Senhor se aproxima.",
+        "marker": "Porque",
+        "evidenceRef": "Joel 3:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Céus e terra tremem, mas o Senhor é refúgio do seu povo.",
+        "marker": "mas",
+        "evidenceRef": "Joel 3:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Egito e Edom viram desolação; Judá, porém, será habitada para sempre.",
+        "marker": "porém",
+        "evidenceRef": "Joel 3:20"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 46:1", "bridge": "Deus é refúgio e força" },
+      { "ref": "Zacarias 14:8", "bridge": "Águas vivas de Jerusalém" },
+      { "ref": "Apocalipse 22:1–2", "bridge": "Rio da vida de Deus" }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor só ruge; não oferece abrigo ao seu povo.",
+        "why": "Joel 3:16 diz que o Senhor será o refúgio do seu povo."
+      },
+      {
+        "text": "Judá e Egito terão o mesmo destino de desolação.",
+        "why": "Egito vira desolação; Judá será habitada para sempre."
+      },
+      {
+        "text": "O vale da Decisão é só geografia sem juízo.",
+        "why": "O Dia do Senhor se aproxima nesse vale; há juízo e restauração."
+      }
+    ],
+    "centralInsight": "O Senhor é refúgio do seu povo e promete restaurar Judá.",
+    "anchorQuestion": "Segundo Joel 3:16, o que o Senhor será para o seu povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Joel 3:16, o Senhor será o refúgio do seu povo.",
+      "verseRef": "Joel 3:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor será o refúgio do seu povo",
+      "feedbackCorrect": "Mesmo com céus e terra tremendo, o Senhor é refúgio do povo.",
+      "feedbackWrong": { "false": "Releia o fim de 3:16: o Senhor será o refúgio." },
+      "hint": "Olhe o que o Senhor será para o seu povo.",
+      "learningObjective": "Observar que o Senhor é refúgio do povo.",
+      "evidence": ["Joel 3:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Joel 3:14, toque o nome do vale onde há multidões.",
+      "verseRef": "Joel 3:14",
+      "evidenceSpan": "vale da Decisão",
+      "feedbackCorrect": "As multidões estão no vale da Decisão.",
+      "hint": "Procure o nome próprio depois de \"vale da\".",
+      "learningObjective": "Identificar o vale da Decisão.",
+      "evidence": ["Joel 3:14"],
+      "options": [
+        { "id": "a", "text": "Decisão" },
+        { "id": "b", "text": "Multidões" },
+        { "id": "c", "text": "Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Multidões\" descreve quem está no vale, não o nome do vale.",
+        "c": "\"Senhor\" aparece na frase do Dia, não como nome do vale."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Joel 3:18, de onde sai a fonte que rega o vale de Sitim?",
+      "verseRef": "Joel 3:18",
+      "evidenceSpan": "sairá uma fonte da casa do Senhor",
+      "feedbackCorrect": "A fonte sai da casa do Senhor e rega o vale de Sitim.",
+      "hint": "Veja a origem da fonte no versículo.",
+      "learningObjective": "Observar a origem da fonte restauradora.",
+      "evidence": ["Joel 3:18"],
+      "options": [
+        { "id": "a", "text": "Do deserto de Edom" },
+        { "id": "b", "text": "Da casa do Senhor" },
+        { "id": "c", "text": "Do Egito desolado" },
+        { "id": "d", "text": "Das estrelas que brilham" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "Edom vira deserto; não é a origem da fonte.",
+        "c": "O Egito se torna desolação, não fonte.",
+        "d": "As estrelas deixam de brilhar; não são a fonte."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Joel 3:16 na ordem do texto.",
+      "verseRef": "Joel 3:16",
+      "evidenceSpan": "E o Senhor bramará de Sião",
+      "feedbackCorrect": "O Senhor brama; céus e terra tremem; ele é refúgio do povo.",
+      "hint": "O versículo começa com o bramido do Senhor.",
+      "learningObjective": "Reconhecer a sequência de 3:16.",
+      "evidence": ["Joel 3:16"],
+      "options": [
+        { "id": "a", "text": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém" },
+        { "id": "b", "text": "e os céus e a terra tremerão" },
+        { "id": "c", "text": "mas o Senhor será o refúgio do seu povo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo bramido; o refúgio fecha o contraste." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Joel 3:20, o que Judá será para sempre?",
+      "verseRef": "Joel 3:20",
+      "evidenceSpan": "Judá, porém, será habitada para sempre",
+      "feedbackCorrect": "Judá será habitada para sempre; Jerusalém, de geração em geração.",
+      "hint": "É o particípio depois de \"será\".",
+      "learningObjective": "Lembrar a promessa de permanência de Judá.",
+      "evidence": ["Joel 3:20"],
+      "options": [
+        { "id": "a", "text": "habitada" },
+        { "id": "b", "text": "apagada" },
+        { "id": "c", "text": "esquecida" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Apagada\" contradiz a promessa de 3:20.",
+        "c": "\"Esquecida\" não aparece em 3:20."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Joel 3:16 comunica que se liga a este contexto?",
+      "verseRef": "Joel 3:16",
+      "evidenceSpan": "o Senhor será o refúgio do seu povo",
+      "feedbackCorrect": "No tremor do Dia, o Senhor é refúgio e fortaleza do povo.",
+      "hint": "Ligue o tremor ao que o Senhor será.",
+      "learningObjective": "Ligar o bramido ao refúgio do povo.",
+      "evidence": ["Joel 3:16"],
+      "passageA": { "ref": "Joel 3:16" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No Dia do Senhor, o povo precisa de abrigo firme."
+      },
+      "options": [
+        { "id": "a", "text": "Senhor como refúgio" },
+        { "id": "b", "text": "Povo sem nenhum abrigo" },
+        { "id": "c", "text": "Sião abandonada para sempre" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto afirma que o Senhor será o refúgio.",
+        "c": "O Senhor habita em Sião; não a abandona."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Joel 3:16, céus e terra tremem, mas o Senhor é refúgio do seu povo.",
+      "verseRef": "Joel 3:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo",
+      "feedbackCorrect": "O \"mas\" marca o contraste: tremor geral, refúgio para o povo.",
+      "feedbackWrong": { "false": "Releia o contraste no fim de 3:16." },
+      "hint": "Procure a palavra que liga tremor e refúgio.",
+      "learningObjective": "Compreender o contraste tremor/refúgio.",
+      "evidence": ["Joel 3:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Joel 3:16, toque a palavra que marca o contraste com o tremor.",
+      "verseRef": "Joel 3:16",
+      "evidenceSpan": "tremerão; mas o Senhor será o refúgio",
+      "feedbackCorrect": "\"Mas\" vira a página: tremor, porém refúgio.",
+      "hint": "É a palavra curta antes de \"o Senhor será\".",
+      "learningObjective": "Reconhecer o marcador de contraste em 3:16.",
+      "evidence": ["Joel 3:16"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "voz" },
+        { "id": "c", "text": "terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Voz\" descreve o bramido, não o contraste.",
+        "c": "\"Terra\" faz parte do tremor, não do marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Joel 3:19–20 relaciona Egito/Edom e Judá?",
+      "verseRef": "Joel 3:19–20",
+      "evidenceSpan": "Judá, porém, será habitada para sempre",
+      "feedbackCorrect": "Egito e Edom viram desolação; Judá, porém, permanece habitada.",
+      "hint": "Compare o destino das nações com o de Judá.",
+      "learningObjective": "Relacionar juízo sobre as nações e permanência de Judá.",
+      "evidence": ["Joel 3:19–20"],
+      "options": [
+        { "id": "a", "text": "Nações vizinhos desolam; Judá permanece habitada" },
+        { "id": "b", "text": "Judá e Egito compartilham a mesma desolação" },
+        { "id": "c", "text": "Edom é restaurado e Judá some" },
+        { "id": "d", "text": "Não há diferença entre os destinos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O \"porém\" separa Judá da desolação de Egito e Edom.",
+        "c": "Edom vira deserto; Judá é habitada.",
+        "d": "O texto marca contraste claro com \"porém\"."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Joel 3:14–21?",
+      "verseRef": "Joel 3:14–20",
+      "evidenceSpan": "Judá, porém, será habitada para sempre",
+      "feedbackCorrect": "Vale e trevas, refúgio em Sião, fonte e juízo; Judá permanece.",
+      "hint": "Comece pelo vale; a permanência de Judá fecha.",
+      "learningObjective": "Seguir o movimento do vale à restauração.",
+      "evidence": ["Joel 3:14–20"],
+      "options": [
+        { "id": "a", "text": "Multidões no vale da Decisão" },
+        { "id": "b", "text": "O Senhor ruge e é refúgio do povo" },
+        { "id": "c", "text": "Juízo sobre Egito e Edom; Judá permanece" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pelo vale; Judá habitada vem por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Joel 3:14, que palavra introduz a razão das multidões no vale?",
+      "verseRef": "Joel 3:14",
+      "evidenceSpan": "Porque o Dia do Senhor se aproxima",
+      "feedbackCorrect": "\"Porque\" liga as multidões à aproximação do Dia do Senhor.",
+      "hint": "É a primeira palavra da segunda frase.",
+      "learningObjective": "Lembrar o marcador de causa em 3:14.",
+      "evidence": ["Joel 3:14"],
+      "options": [
+        { "id": "a", "text": "Porque" },
+        { "id": "b", "text": "Embora" },
+        { "id": "c", "text": "Depois" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Embora\" não aparece em 3:14.",
+        "c": "\"Depois\" não introduz a razão no versículo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Joel 3:16 a Salmos 46:1?",
+      "verseRef": "Joel 3:16",
+      "evidenceSpan": "o Senhor será o refúgio do seu povo",
+      "feedbackCorrect": "Nos dois textos, Deus é refúgio e força do seu povo.",
+      "hint": "Compare a imagem de abrigo.",
+      "learningObjective": "Relacionar o refúgio em Joel e no Salmo.",
+      "evidence": ["Joel 3:16", "Salmos 46:1"],
+      "passageA": { "ref": "Joel 3:16" },
+      "passageB": { "ref": "Salmos 46:1" },
+      "options": [
+        { "id": "a", "text": "Deus é refúgio e força" },
+        { "id": "b", "text": "Deus abandona o povo" },
+        { "id": "c", "text": "Só muros humanos protegem" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam refúgio, não abandono.",
+        "c": "O abrigo é o Senhor, não só muros."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Joel 3:14–21, o Senhor só ruge e não oferece abrigo ao seu povo.",
+      "verseRef": "Joel 3:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas o Senhor será o refúgio do seu povo",
+      "feedbackCorrect": "Ele brama e, ao mesmo tempo, é refúgio e fortaleza.",
+      "feedbackWrong": { "true": "O contraste de 3:16 mostra refúgio, não só bramido." },
+      "hint": "Leia o que vem depois do tremor em 3:16.",
+      "learningObjective": "Interpretar o Senhor como juiz e refúgio.",
+      "evidence": ["Joel 3:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Joel 3:16, toque o trecho que mostra a fortaleza de Israel.",
+      "verseRef": "Joel 3:16",
+      "evidenceSpan": "a fortaleza dos filhos de Israel",
+      "feedbackCorrect": "O Senhor é também a fortaleza dos filhos de Israel.",
+      "hint": "Procure a palavra de força no fim do versículo.",
+      "learningObjective": "Sustentar com o texto o Senhor como fortaleza.",
+      "evidence": ["Joel 3:16"],
+      "options": [
+        { "id": "a", "text": "fortaleza" },
+        { "id": "b", "text": "tremerão" },
+        { "id": "c", "text": "bramará" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Tremerão\" descreve céus e terra, não a fortaleza.",
+        "c": "\"Bramará\" é a voz de juízo, não o nome da fortaleza."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Joel 3:14–21 sustenta sobre o destino de Judá?",
+      "verseRef": "Joel 3:16–20",
+      "evidenceSpan": "Judá, porém, será habitada para sempre",
+      "feedbackCorrect": "O Senhor é refúgio e promete Judá habitada; as nações opressoras desolam.",
+      "hint": "Compare refúgio, fonte e o \"porém\" de 3:20.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Joel 3:16–20"],
+      "options": [
+        { "id": "a", "text": "O Senhor abriga o povo e restaura Judá para sempre" },
+        { "id": "b", "text": "Judá e Egito terão o mesmo destino de desolação" },
+        { "id": "c", "text": "O vale da Decisão é só geografia sem juízo" },
+        { "id": "d", "text": "O Senhor ruge e abandona Sião de vez" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O \"porém\" separa Judá da desolação.",
+        "c": "O Dia se aproxima no vale; há juízo e restauração.",
+        "d": "O Senhor habita em Sião e é refúgio."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o tema do refúgio e das águas na Escritura?",
+      "verseRef": "Joel 3:16–18",
+      "evidenceSpan": "sairá uma fonte da casa do Senhor",
+      "feedbackCorrect": "Joel: refúgio e fonte; o Salmo ecoa o refúgio; Apocalipse mostra o rio da vida.",
+      "hint": "Parta de Joel e avance na Escritura.",
+      "learningObjective": "Ver refúgio e fonte de Joel no fio bíblico.",
+      "evidence": ["Joel 3:16", "Salmos 46:1", "Apocalipse 22:1–2"],
+      "options": [
+        { "id": "a", "text": "Joel: o Senhor é refúgio e da casa sai fonte" },
+        { "id": "b", "text": "O Salmo afirma que Deus é refúgio e força" },
+        { "id": "c", "text": "Apocalipse mostra o rio da vida de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Joel 3, Salmos 46 e Apocalipse 22." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Joel 3:16, que palavra nomeia o abrigo que o Senhor será?",
+      "verseRef": "Joel 3:16",
+      "evidenceSpan": "o Senhor será o refúgio do seu povo",
+      "feedbackCorrect": "Refúgio é o termo que carrega o abrigo no tremor do Dia.",
+      "hint": "É a palavra depois de \"será o\".",
+      "learningObjective": "Lembrar o termo teológico central da cena.",
+      "evidence": ["Joel 3:16"],
+      "options": [
+        { "id": "a", "text": "refúgio" },
+        { "id": "b", "text": "deserto" },
+        { "id": "c", "text": "exílio" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Deserto\" descreve Edom, não o abrigo do povo.",
+        "c": "\"Exílio\" não aparece em 3:16."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Joel 3:18 a Zacarias 14:8?",
+      "verseRef": "Joel 3:18",
+      "evidenceSpan": "sairá uma fonte da casa do Senhor",
+      "feedbackCorrect": "Nos dois textos, águas vivas saem de Jerusalém/casa do Senhor.",
+      "hint": "Compare a origem das águas.",
+      "learningObjective": "Ligar a fonte de Joel às águas vivas de Zacarias.",
+      "evidence": ["Joel 3:18", "Zacarias 14:8"],
+      "passageA": { "ref": "Joel 3:18" },
+      "passageB": { "ref": "Zacarias 14:8" },
+      "options": [
+        { "id": "a", "text": "Águas vivas de Jerusalém" },
+        { "id": "b", "text": "Seca eterna sem fonte" },
+        { "id": "c", "text": "Rio que some no Egito" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam águas que saem, não seca eterna.",
+        "c": "A origem é a casa/Jerusalém, não o Egito."
+      }
+    }
+  ]
+}

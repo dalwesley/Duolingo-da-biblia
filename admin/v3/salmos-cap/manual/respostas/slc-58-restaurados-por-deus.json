@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 60:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 60:1–6"
+      },
+      {
+        "ref": "Salmos 60:7–12"
+      }
+    ],
+    "context": "Ó Deus, tu nos rejeitaste; dá-nos socorro na angústia, porque vão é o socorro humano.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Restaurados por Deus",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Ó Deus, tu nos rejeitaste e nos dispersaste; tens estado indignado; oh! Restabelece-nos!",
+        "evidenceRef": "Salmos 60:1",
+        "evidenceSpan": "Ó Deus"
+      },
+      {
+        "text": "Tu abalaste a terra e a fendeste.",
+        "evidenceRef": "Salmos 60:2",
+        "evidenceSpan": "Tu abalaste a terra e a fendeste"
+      },
+      {
+        "text": "Fizeste o teu povo experimentar reveses.",
+        "evidenceRef": "Salmos 60:3",
+        "evidenceSpan": "Fizeste o teu povo experimentar reveses"
+      },
+      {
+        "text": "Deste um estandarte aos que te temem.",
+        "evidenceRef": "Salmos 60:4",
+        "evidenceSpan": "Deste um estandarte aos que te temem"
+      },
+      {
+        "text": "Salva com a tua mão direita e responde-nos.",
+        "evidenceRef": "Salmos 60:5",
+        "evidenceSpan": "Salva com a tua mão direita e responde-nos"
+      },
+      {
+        "text": "Deus falou na sua santidade.",
+        "evidenceRef": "Salmos 60:6",
+        "evidenceSpan": "Deus falou na sua santidade"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "rejeitaste",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "dispersaste",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ó deus tu nos rejeitaste e",
+        "evidenceRef": "Salmos 60:1"
+      },
+      {
+        "label": "Tu abalaste a terra e a",
+        "evidenceRef": "Salmos 60:2"
+      },
+      {
+        "label": "Fizeste o teu povo experimentar reveses",
+        "evidenceRef": "Salmos 60:3"
+      },
+      {
+        "label": "Deste um estandarte aos que te",
+        "evidenceRef": "Salmos 60:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 60:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Salmos 60:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"para que\".",
+        "marker": "para que",
+        "evidenceRef": "Salmos 60:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      },
+      {
+        "ref": "Isaías 40:31",
+        "bridge": "Renovam as forças"
+      },
+      {
+        "ref": "1 Pedro 5:7",
+        "bridge": "Lançar o cuidado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Quando a terra treme, só Deus pisa os inimigos e firma o estandarte."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Quando a terra treme, só Deus pisa os inimigos e firma o estandarte.",
+    "anchorQuestion": "O que Salmos 60:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 60:1, ó Deus.",
+      "verseRef": "Salmos 60:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ó Deus",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 60:1 afirma.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 60:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 60:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "nos"
+        },
+        {
+          "id": "c",
+          "text": "rejeitaste"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O versículo destaca «Deus».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 60:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 60:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeste o teu povo experimentar reveses"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fizeste o teu povo experimentar reveses",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 60:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 60:1 na ordem do texto.",
+      "verseRef": "Salmos 60:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ó"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "tu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 60:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 60:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deste"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "nos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deste",
+      "feedbackCorrect": "A palavra do versículo é «Deste».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 60:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 60:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 60:1",
+      "passageA": {
+        "ref": "Salmos 60:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ó Deus, tu nos rejeitaste; dá-nos socorro na angústia, porque vão é o socorro humano."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 60:2, o marcador pois une ideias no fluxo do texto.",
+      "verseRef": "Salmos 60:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 60:2 afirma.",
+      "evidence": [
+        "Salmos 60:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 60:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 60:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "abalaste"
+        },
+        {
+          "id": "b",
+          "text": "terra"
+        },
+        {
+          "id": "c",
+          "text": "fendeste"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abalaste",
+      "feedbackCorrect": "O versículo destaca «pois».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 60:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 60:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 60:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deste um estandarte aos que te temem",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 60:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 60:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ó deus tu nos rejeitaste"
+        },
+        {
+          "id": "b",
+          "text": "Tu abalaste a terra"
+        },
+        {
+          "id": "c",
+          "text": "Fizeste o teu povo experimentar reveses"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 60:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 60:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeste"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "nos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fizeste",
+      "feedbackCorrect": "A palavra do versículo é «Fizeste».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 60:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 60:1 a Salmos 119:105.",
+      "verseRef": "Salmos 60:1",
+      "passageA": {
+        "ref": "Salmos 60:1"
+      },
+      "passageB": {
+        "ref": "Salmos 119:105"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lâmpada para os pés"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 60:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Em",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 60:12 afirma.",
+      "evidence": [
+        "Salmos 60:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 60:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 60:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "realizaremos"
+        },
+        {
+          "id": "b",
+          "text": "Em"
+        },
+        {
+          "id": "c",
+          "text": "proezas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "realizaremos",
+      "feedbackCorrect": "O versículo destaca «realizaremos».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 60:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 60:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 60:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Salva com a tua mão direita e responde-nos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 60:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 60:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 60:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 60:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salva"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "nos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Salva",
+      "feedbackCorrect": "A palavra do versículo é «Salva».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 60:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 60:1 a Isaías 40:31.",
+      "verseRef": "Salmos 60:1",
+      "passageA": {
+        "ref": "Salmos 60:1"
+      },
+      "passageB": {
+        "ref": "Isaías 40:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Renovam as forças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ó",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 60:1"
+      ]
+    }
+  ]
+}

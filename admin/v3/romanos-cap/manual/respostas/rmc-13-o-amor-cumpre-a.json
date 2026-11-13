@@ -1,0 +1,713 @@
+{
+ "study": {
+  "passageRef": "Romanos 13:8–14",
+  "passages": [
+   {
+    "ref": "Romanos 13:8–14"
+   }
+  ],
+  "context": "Depois de falar das autoridades, Paulo resume a dívida que permanece: o amor. Quem ama cumpre a lei e é chamado a despertar e revestir-se de Cristo.",
+  "keyword": "amor",
+  "keywordGloss": "A dívida permanente que cumpre a lei ao não fazer o mal ao próximo.",
+  "focusQuestion": "O que ainda compete com o revestir-se de Cristo na sua vida?",
+  "reflectionPrompts": [
+   "Dívida de amor",
+   "Cumprir a lei",
+   "Revestir-se de Cristo"
+  ],
+  "facts": [
+   {
+    "text": "A única dívida permanente é o amor uns pelos outros.",
+    "evidenceRef": "Romanos 13:8",
+    "evidenceSpan": "exceto o amor que têm uns pelos outros"
+   },
+   {
+    "text": "Quem ama o próximo tem cumprido a lei.",
+    "evidenceRef": "Romanos 13:8",
+    "evidenceSpan": "quem ama o próximo tem cumprido a lei"
+   },
+   {
+    "text": "Os mandamentos se resumem em amar o próximo como a si mesmo.",
+    "evidenceRef": "Romanos 13:9",
+    "evidenceSpan": "tudo se resume nesta palavra: Amarás o teu próximo como a ti mesmo"
+   },
+   {
+    "text": "O amor não faz o mal ao próximo.",
+    "evidenceRef": "Romanos 13:10",
+    "evidenceSpan": "O amor não faz o mal ao próximo"
+   },
+   {
+    "text": "Já é hora de despertar do sono.",
+    "evidenceRef": "Romanos 13:11",
+    "evidenceSpan": "já é hora de despertarmos do sono"
+   },
+   {
+    "text": "Devem revestir-se do Senhor Jesus Cristo.",
+    "evidenceRef": "Romanos 13:14",
+    "evidenceSpan": "revistam-se do Senhor Jesus Cristo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "cumprido",
+    "gloss": "O amor realiza o que a lei exige em relação ao próximo."
+   },
+   {
+    "term": "revistam-se",
+    "gloss": "Vestir-se de Cristo: assumir sua vida no lugar das obras das trevas."
+   },
+   {
+    "term": "próximo",
+    "gloss": "Aquele a quem o amor não faz mal e a quem se ama como a si mesmo."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A dívida do amor cumpre a lei",
+    "evidenceRef": "Romanos 13:8"
+   },
+   {
+    "label": "Os mandamentos resumidos no amor",
+    "evidenceRef": "Romanos 13:9–10"
+   },
+   {
+    "label": "Hora de despertar do sono",
+    "evidenceRef": "Romanos 13:11–12"
+   },
+   {
+    "label": "Revestir-se de Cristo, não da carne",
+    "evidenceRef": "Romanos 13:13–14"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Quem ama o próximo tem cumprido a lei.",
+    "marker": "pois",
+    "evidenceRef": "Romanos 13:8"
+   },
+   {
+    "kind": "propósito",
+    "text": "Abandonar as trevas para revestir-se das armas da luz.",
+    "marker": "Portanto",
+    "evidenceRef": "Romanos 13:12"
+   },
+   {
+    "kind": "contraste",
+    "text": "Revestir-se de Cristo e não planejar para a carne.",
+    "marker": "Mas",
+    "evidenceRef": "Romanos 13:14"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Gálatas 5:14",
+    "bridge": "A lei se cumpre no amor"
+   },
+   {
+    "ref": "Levítico 19:18",
+    "bridge": "Amar o próximo como a si"
+   },
+   {
+    "ref": "Efésios 4:24",
+    "bridge": "Revestir-se do novo homem"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O amor dispensa qualquer cuidado com a lei e o próximo.",
+    "why": "13:8–10: o amor cumpre a lei e não faz o mal ao próximo."
+   },
+   {
+    "text": "Revestir-se de Cristo é só sentimento, sem deixar as obras das trevas.",
+    "why": "13:12–14 manda abandonar as trevas e não planejar para a carne."
+   },
+   {
+    "text": "A salvação já chegou por completo; não há urgência de despertar.",
+    "why": "13:11: a salvação está agora mais próxima do que quando cremos."
+   }
+  ],
+  "centralInsight": "Quem ama o próximo cumpriu a lei: revista-se do Senhor Jesus Cristo.",
+  "anchorQuestion": "Segundo Romanos 13:14, de quem devemos nos revestir?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Romanos 13:8, quem ama o próximo tem cumprido a lei.",
+   "verseRef": "Romanos 13:8",
+   "correctOptionId": "true",
+   "evidenceSpan": "quem ama o próximo tem cumprido a lei",
+   "feedbackCorrect": "O amor é a dívida que cumpre a lei.",
+   "feedbackWrong": {
+    "false": "Releia o fim de Romanos 13:8."
+   },
+   "hint": "Veja o resultado de amar o próximo.",
+   "learningObjective": "Observar que o amor cumpre a lei.",
+   "evidence": [
+    "Romanos 13:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 13:14, toque de quem devem se revestir.",
+   "verseRef": "Romanos 13:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Senhor Jesus Cristo"
+    },
+    {
+     "id": "b",
+     "text": "carne"
+    },
+    {
+     "id": "c",
+     "text": "desejos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "revistam-se do Senhor Jesus Cristo",
+   "feedbackCorrect": "O revestir-se é de Cristo, não da carne.",
+   "feedbackWrong": {
+    "b": "A carne é o que não se deve planejar.",
+    "c": "Os desejos da carne são rejeitados no fim."
+   },
+   "hint": "Leia o começo do versículo.",
+   "learningObjective": "Identificar de quem se revestir.",
+   "evidence": [
+    "Romanos 13:14"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Romanos 13:10, o que o amor não faz ao próximo?",
+   "verseRef": "Romanos 13:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "O mal"
+    },
+    {
+     "id": "b",
+     "text": "O bem"
+    },
+    {
+     "id": "c",
+     "text": "A oração"
+    },
+    {
+     "id": "d",
+     "text": "A paz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O amor não faz o mal ao próximo",
+   "feedbackCorrect": "Não fazer o mal ao próximo é o cumprimento da lei.",
+   "feedbackWrong": {
+    "b": "O amor não se define por negar o bem.",
+    "c": "O texto não fala de oração aqui.",
+    "d": "Não é a paz o que o amor \"não faz\"."
+   },
+   "hint": "Leia a primeira frase.",
+   "learningObjective": "Observar o que o amor recusa.",
+   "evidence": [
+    "Romanos 13:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 13:12 na ordem do texto.",
+   "verseRef": "Romanos 13:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "A noite já passou, e o dia está se aproximando"
+    },
+    {
+     "id": "b",
+     "text": "Portanto, abandonemos as obras das trevas"
+    },
+    {
+     "id": "c",
+     "text": "e revistamo-nos das armas da luz"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "abandonemos as obras das trevas e revistamo-nos das armas da luz",
+   "feedbackCorrect": "Tempo novo, abandono das trevas e armas da luz.",
+   "feedbackWrong": {
+    "default": "Comece pela noite e o dia; as armas da luz fecham."
+   },
+   "hint": "O versículo começa com a noite.",
+   "learningObjective": "Reconhecer a sequência de Romanos 13:12.",
+   "evidence": [
+    "Romanos 13:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Romanos 13:11, já é hora de despertarmos do ___.",
+   "verseRef": "Romanos 13:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "sono"
+    },
+    {
+     "id": "b",
+     "text": "culto"
+    },
+    {
+     "id": "c",
+     "text": "jejum"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "já é hora de despertarmos do sono",
+   "feedbackCorrect": "O tempo pede despertar, não permanência no sono.",
+   "feedbackWrong": {
+    "b": "Não é culto; é sono.",
+    "c": "Não é jejum; é sono."
+   },
+   "hint": "Veja de que devemos despertar.",
+   "learningObjective": "Lembrar o chamado a despertar.",
+   "evidence": [
+    "Romanos 13:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Romanos 13:8 comunica que se liga a este contexto?",
+   "verseRef": "Romanos 13:8",
+   "passageA": {
+    "ref": "Romanos 13:8"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A dívida que permanece é amar uns aos outros."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Dívida permanente de amor"
+    },
+    {
+     "id": "b",
+     "text": "Dívida só de dinheiro"
+    },
+    {
+     "id": "c",
+     "text": "Amor opcional e raro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "exceto o amor que têm uns pelos outros",
+   "feedbackCorrect": "Tudo se paga, menos a dívida contínua do amor.",
+   "feedbackWrong": {
+    "b": "O texto destaca o amor, não só o dinheiro.",
+    "c": "O amor é a dívida que permanece."
+   },
+   "hint": "Veja a exceção da dívida.",
+   "learningObjective": "Ligar 13:8 à dívida do amor.",
+   "evidence": [
+    "Romanos 13:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Romanos 13:12, Paulo manda permanecer nas obras das trevas até o dia chegar.",
+   "verseRef": "Romanos 13:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "abandonemos as obras das trevas e revistamo-nos das armas da luz",
+   "feedbackCorrect": "O \"Portanto\" pede abandono das trevas agora.",
+   "feedbackWrong": {
+    "true": "Releia 13:12: abandonemos as obras das trevas."
+   },
+   "hint": "Veja o que se faz com as obras das trevas.",
+   "learningObjective": "Compreender o abandono das trevas.",
+   "evidence": [
+    "Romanos 13:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 13:12, toque a palavra que marca a conclusão prática.",
+   "verseRef": "Romanos 13:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Portanto"
+    },
+    {
+     "id": "b",
+     "text": "noite"
+    },
+    {
+     "id": "c",
+     "text": "luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Portanto, abandonemos as obras das trevas",
+   "feedbackCorrect": "\"Portanto\" liga o tempo novo à decisão prática.",
+   "feedbackWrong": {
+    "b": "\"Noite\" descreve o tempo que passou.",
+    "c": "\"Luz\" é o destino do revestir-se."
+   },
+   "hint": "Procure a conjunção no meio do versículo.",
+   "learningObjective": "Reconhecer o marcador de conclusão.",
+   "evidence": [
+    "Romanos 13:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Romanos 13:9 se relaciona com Romanos 13:8?",
+   "verseRef": "Romanos 13:8–9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Explica que os mandamentos se resumem no amor ao próximo"
+    },
+    {
+     "id": "b",
+     "text": "Cancela todos os mandamentos sem o amor"
+    },
+    {
+     "id": "c",
+     "text": "Diz que o amor é inferior à lei"
+    },
+    {
+     "id": "d",
+     "text": "Lista mandamentos sem ligação com o amor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "tudo se resume nesta palavra: Amarás o teu próximo como a ti mesmo",
+   "feedbackCorrect": "A lista de mandamentos desemboca no amor ao próximo.",
+   "feedbackWrong": {
+    "b": "O amor cumpre, não cancela a lei.",
+    "c": "O amor é o cumprimento da lei.",
+    "d": "A lista se resume no amor."
+   },
+   "hint": "Veja a frase de resumo em 13:9.",
+   "learningObjective": "Relacionar mandamentos e amor.",
+   "evidence": [
+    "Romanos 13:8–9"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o chamado em Romanos 13:11–12?",
+   "verseRef": "Romanos 13:11–12",
+   "options": [
+    {
+     "id": "a",
+     "text": "Despertar porque a salvação se aproxima"
+    },
+    {
+     "id": "b",
+     "text": "A noite passou e o dia se aproxima"
+    },
+    {
+     "id": "c",
+     "text": "Abandonar as trevas e vestir a luz"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "abandonemos as obras das trevas e revistamo-nos das armas da luz",
+   "feedbackCorrect": "Despertar, tempo novo e troca de roupa: o avanço do chamado.",
+   "feedbackWrong": {
+    "default": "Comece pelo despertar; as armas da luz fecham."
+   },
+   "hint": "Siga a ordem de 11 a 12.",
+   "learningObjective": "Compreender o avanço do chamado.",
+   "evidence": [
+    "Romanos 13:11–12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Romanos 13:10, o cumprimento da lei é o ___.",
+   "verseRef": "Romanos 13:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "amor"
+    },
+    {
+     "id": "b",
+     "text": "medo"
+    },
+    {
+     "id": "c",
+     "text": "orgulho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o cumprimento da lei é o amor",
+   "feedbackCorrect": "O amor é o cumprimento da lei.",
+   "feedbackWrong": {
+    "b": "Não é medo; é amor.",
+    "c": "Não é orgulho; é amor."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar o que cumpre a lei.",
+   "evidence": [
+    "Romanos 13:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Romanos 13:9 a Levítico 19:18?",
+   "verseRef": "Romanos 13:9",
+   "passageA": {
+    "ref": "Romanos 13:9"
+   },
+   "passageB": {
+    "ref": "Levítico 19:18"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Amar o próximo como a si"
+    },
+    {
+     "id": "b",
+     "text": "Ignorar o próximo"
+    },
+    {
+     "id": "c",
+     "text": "Amar só a si mesmo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Amarás o teu próximo como a ti mesmo",
+   "feedbackCorrect": "Paulo resume a lei com a palavra antiga do amor ao próximo.",
+   "feedbackWrong": {
+    "b": "Os dois textos mandam amar.",
+    "c": "O padrão inclui o próximo."
+   },
+   "hint": "Compare a frase do amor ao próximo.",
+   "learningObjective": "Relacionar Romanos 13 e Levítico 19.",
+   "evidence": [
+    "Romanos 13:9",
+    "Levítico 19:18"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Romanos 13:11–14 trata o revestir-se de Cristo como algo que pode esperar, sem urgência.",
+   "verseRef": "Romanos 13:11–12",
+   "correctOptionId": "false",
+   "evidenceSpan": "já é hora de despertarmos do sono",
+   "feedbackCorrect": "O texto fala de hora de despertar: a salvação está mais próxima.",
+   "feedbackWrong": {
+    "true": "Releia 13:11: já é hora de despertar do sono."
+   },
+   "hint": "Veja o tom de tempo no versículo 11.",
+   "learningObjective": "Interpretar a urgência do revestir-se.",
+   "evidence": [
+    "Romanos 13:11–12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 13:8, toque o trecho que mostra o resultado de amar o próximo.",
+   "verseRef": "Romanos 13:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "cumprido a lei"
+    },
+    {
+     "id": "b",
+     "text": "devendo nada"
+    },
+    {
+     "id": "c",
+     "text": "uns pelos outros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem ama o próximo tem cumprido a lei",
+   "feedbackCorrect": "Amar o próximo é cumprir a lei.",
+   "feedbackWrong": {
+    "b": "\"Devendo nada\" introduz a dívida; o resultado está no fim.",
+    "c": "Isso descreve a direção do amor, não o resultado."
+   },
+   "hint": "Procure o fim do versículo.",
+   "learningObjective": "Sustentar com o texto o cumprimento da lei.",
+   "evidence": [
+    "Romanos 13:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Romanos 13:8–14 sustenta sobre amor e conduta?",
+   "verseRef": "Romanos 13:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Amar o próximo e revestir-se de Cristo, deixando as trevas"
+    },
+    {
+     "id": "b",
+     "text": "O amor dispensa deixar as obras das trevas"
+    },
+    {
+     "id": "c",
+     "text": "Revestir-se de Cristo sem cuidar do próximo"
+    },
+    {
+     "id": "d",
+     "text": "Planejar para a carne é compatível com Cristo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "revistam-se do Senhor Jesus Cristo e não façam planos para a carne",
+   "feedbackCorrect": "Amor que cumpre a lei e vida revestida de Cristo cabem juntos.",
+   "feedbackWrong": {
+    "b": "13:12 manda abandonar as trevas.",
+    "c": "13:8–10 centra o amor ao próximo.",
+    "d": "13:14 rejeita planos para a carne."
+   },
+   "hint": "Una 13:8–10 e 13:12–14.",
+   "learningObjective": "Escolher a leitura que une amor e revestir-se.",
+   "evidence": [
+    "Romanos 13:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho de Romanos 13:8–14?",
+   "verseRef": "Romanos 13:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "O amor cumpre a lei para com o próximo"
+    },
+    {
+     "id": "b",
+     "text": "Despertar porque o dia se aproxima"
+    },
+    {
+     "id": "c",
+     "text": "Revestir-se de Cristo e deixar a carne"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "quem ama o próximo tem cumprido a lei",
+   "feedbackCorrect": "Amor, urgência e revestir-se: o arco do trecho.",
+   "feedbackWrong": {
+    "default": "Comece pelo amor; revestir-se de Cristo fecha."
+   },
+   "hint": "Siga 8–10 → 11–12 → 14.",
+   "learningObjective": "Ver o encadeamento do trecho.",
+   "evidence": [
+    "Romanos 13:8",
+    "Romanos 13:11",
+    "Romanos 13:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Romanos 13:14, revistam-se do Senhor Jesus ___.",
+   "verseRef": "Romanos 13:14",
+   "options": [
+    {
+     "id": "a",
+     "text": "Cristo"
+    },
+    {
+     "id": "b",
+     "text": "templo"
+    },
+    {
+     "id": "c",
+     "text": "império"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "revistam-se do Senhor Jesus Cristo",
+   "feedbackCorrect": "O termo final carrega a identidade nova.",
+   "feedbackWrong": {
+    "b": "Não é templo; é Cristo.",
+    "c": "Não é império; é Cristo."
+   },
+   "hint": "Complete o nome.",
+   "learningObjective": "Lembrar de quem se revestir.",
+   "evidence": [
+    "Romanos 13:14"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Romanos 13:8 a Gálatas 5:14?",
+   "verseRef": "Romanos 13:8",
+   "passageA": {
+    "ref": "Romanos 13:8"
+   },
+   "passageB": {
+    "ref": "Gálatas 5:14"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "A lei se cumpre no amor"
+    },
+    {
+     "id": "b",
+     "text": "A lei anula o amor"
+    },
+    {
+     "id": "c",
+     "text": "O amor ignora o próximo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem ama o próximo tem cumprido a lei",
+   "feedbackCorrect": "Nos dois textos, amar o próximo cumpre a lei.",
+   "feedbackWrong": {
+    "b": "O amor cumpre a lei, não a anula.",
+    "c": "O próximo é o alvo do amor."
+   },
+   "hint": "Compare o cumprimento da lei.",
+   "learningObjective": "Ligar o cumprimento da lei em Romanos e Gálatas.",
+   "evidence": [
+    "Romanos 13:8",
+    "Gálatas 5:14"
+   ]
+  }
+ ]
+}

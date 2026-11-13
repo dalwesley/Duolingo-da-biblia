@@ -1,0 +1,924 @@
+{
+  "study": {
+    "slug": "joc-11-eu-sou-a-ressurreicao",
+    "passageRef": "João 11:21–26",
+    "passageText": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá. Jesus lhe declarou: Teu irmão irá ressurgir. Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia. Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso?",
+    "passages": [
+      {
+        "ref": "João 11:21–26",
+        "text": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá. Jesus lhe declarou: Teu irmão irá ressurgir. Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia. Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso?"
+      },
+      {
+        "ref": "João 11:27",
+        "text": "Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo."
+      }
+    ],
+    "context": "Lázaro, irmão de Marta, já morreu. Ela sai ao encontro de Jesus, lembra a ausência dele na hora da morte e ainda afirma que Deus atende o que ele pedir.",
+    "keyword": "ressurreição",
+    "keywordGloss": "Jesus aplica essa palavra a si mesmo, e não só a uma data futura.",
+    "focusQuestion": "Diante da morte de alguém querido, em quem você apoia a esperança?",
+    "reflectionPrompts": [
+      "A queixa de Marta",
+      "A vida em Jesus",
+      "A confissão dela"
+    ],
+    "facts": [
+      {
+        "text": "Marta diz que, se Jesus estivesse ali, o irmão dela não teria morrido.",
+        "evidenceRef": "João 11:21",
+        "evidenceSpan": "se estivesses aqui, meu irmão não teria morrido"
+      },
+      {
+        "text": "Marta afirma que Deus concederá o que Jesus pedir.",
+        "evidenceRef": "João 11:22",
+        "evidenceSpan": "tudo o que pedires a Deus, Deus te concederá"
+      },
+      {
+        "text": "Jesus declara que o irmão de Marta irá ressurgir.",
+        "evidenceRef": "João 11:23",
+        "evidenceSpan": "Teu irmão irá ressurgir"
+      },
+      {
+        "text": "Marta espera a ressurreição do irmão no último dia.",
+        "evidenceRef": "João 11:24",
+        "evidenceSpan": "há de ressurgir na ressurreição, no último dia"
+      },
+      {
+        "text": "Jesus diz que é a ressurreição e a vida.",
+        "evidenceRef": "João 11:25",
+        "evidenceSpan": "Eu sou a ressurreição e a vida"
+      },
+      {
+        "text": "Marta confessa que Jesus é o Cristo, o Filho de Deus.",
+        "evidenceRef": "João 11:27",
+        "evidenceSpan": "tu és o Cristo, o Filho de Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ressurreição",
+        "gloss": "Jesus aplica essa palavra a si mesmo, e não só a uma data futura."
+      },
+      {
+        "term": "vida",
+        "gloss": "Ele a coloca ao lado da ressurreição: quem crê nele vive, ainda que morra."
+      },
+      {
+        "term": "Cristo",
+        "gloss": "Título que Marta confessa ao dizer quem Jesus é."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Marta leva a queixa a Jesus",
+        "evidenceRef": "João 11:21"
+      },
+      {
+        "label": "Ela ainda confia no pedido dele",
+        "evidenceRef": "João 11:22"
+      },
+      {
+        "label": "Jesus se apresenta como a vida",
+        "evidenceRef": "João 11:25"
+      },
+      {
+        "label": "Marta confessa o Cristo",
+        "evidenceRef": "João 11:27"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Depois da queixa, Marta afirma que, mesmo agora, Deus concederá o que Jesus pedir.",
+        "marker": "Mas",
+        "evidenceRef": "João 11:22"
+      },
+      {
+        "kind": "contraste",
+        "text": "Marta põe a ressurreição no último dia; Jesus a identifica consigo mesmo.",
+        "marker": null,
+        "evidenceRef": "João 11:25"
+      },
+      {
+        "kind": "resultado",
+        "text": "Crer em Jesus resulta em vida, ainda que a pessoa morra.",
+        "marker": "viverá",
+        "evidenceRef": "João 11:25"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "João 5:21",
+        "bridge": "O Filho dá vida",
+        "text": "Porque assim como o Pai ressuscita e dá vida aos mortos, assim também o Filho dá vida a quem deseja."
+      },
+      {
+        "ref": "João 6:40",
+        "bridge": "Ressuscitar no último dia",
+        "text": "E esta é a vontade daquele que me enviou: que todo homem que vê o Filho e nele crê tenha a vida eterna, e eu o ressuscitarei no último dia."
+      },
+      {
+        "ref": "João 20:31",
+        "bridge": "Jesus é o Cristo",
+        "text": "Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus só confirma a data de Marta: a ressurreição fica no último dia.",
+        "why": "Ele não repete a data. Diz que ele mesmo é a ressurreição e a vida."
+      },
+      {
+        "text": "Quem crê em Jesus não chega a passar pela morte.",
+        "why": "Ele diz que, ainda que a pessoa morra, viverá. A morte acontece, e não é a última palavra."
+      },
+      {
+        "text": "Marta reconhece Jesus apenas como alguém a quem Deus atende.",
+        "why": "Ela vai além: confessa que ele é o Cristo, o Filho de Deus que havia de vir ao mundo."
+      }
+    ],
+    "centralInsight": "Jesus é a ressurreição e a vida: quem crê nele, ainda que morra, viverá.",
+    "anchorQuestion": "O que Jesus diz que ele é, ao falar com Marta sobre a morte do irmão?",
+    "relatedVerses": [
+      {
+        "reference": "João 5:21",
+        "reason": "O Filho dá vida"
+      },
+      {
+        "reference": "João 6:40",
+        "reason": "Ressuscitar no último dia"
+      },
+      {
+        "reference": "João 20:31",
+        "reason": "Jesus é o Cristo"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "joao-cap-sem-joc-11-eu-sou-a-ressurreicao-01",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em João 11:27, Marta afirma crer que Jesus é o Cristo, o Filho de Deus.",
+      "prompt": "Em João 11:27, Marta afirma crer que Jesus é o Cristo, o Filho de Deus.",
+      "cue": "Em João 11:27, Marta afirma crer que Jesus é o Cristo, o Filho de Deus.",
+      "verseRef": "João 11:27",
+      "passageText": "Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "tu és o Cristo, o Filho de Deus",
+      "feedbackCorrect": "Marta diz sim e confessa que Jesus é o Cristo, o Filho de Deus.",
+      "feedbackWrong": {
+        "false": "Releia o fim do versículo: ela crê que ele é o Cristo, o Filho de Deus."
+      },
+      "hint": "Olhe a resposta de Marta no fim da conversa.",
+      "learningObjective": "Reconhecer a confissão de Marta sobre quem é Jesus.",
+      "evidence": [
+        "João 11:27"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-11-eu-sou-a-ressurreicao-02",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em João 11:21, toque quem fala com Jesus.",
+      "prompt": "Em João 11:21, toque quem fala com Jesus.",
+      "cue": "Em João 11:21, toque quem fala com Jesus.",
+      "verseRef": "João 11:21",
+      "passageText": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido.",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu irmão"
+        },
+        {
+          "id": "b",
+          "text": "Marta"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "Disse então Marta a Jesus",
+      "feedbackCorrect": "Quem abre a fala e se dirige a Jesus é Marta.",
+      "feedbackWrong": {
+        "a": "O irmão é de quem ela fala; quem fala é outra pessoa.",
+        "c": "Senhor é o modo como ela o chama, não quem fala."
+      },
+      "hint": "Procure o nome de quem se dirige a Jesus.",
+      "learningObjective": "Identificar quem toma a palavra diante de Jesus.",
+      "evidence": [
+        "João 11:21"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-11-eu-sou-a-ressurreicao-03",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo João 11:24, para quando Marta espera a ressurreição do irmão?",
+      "prompt": "Segundo João 11:24, para quando Marta espera a ressurreição do irmão?",
+      "cue": "Segundo João 11:24, para quando Marta espera a ressurreição do irmão?",
+      "verseRef": "João 11:24",
+      "passageText": "Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela espera esse fato para o último dia"
+        },
+        {
+          "id": "b",
+          "text": "Ela espera o dia em que ele adoeceu"
+        },
+        {
+          "id": "c",
+          "text": "Ela espera o fim desta conversa"
+        },
+        {
+          "id": "d",
+          "text": "Ela espera que aconteça naquela hora"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "no último dia",
+      "feedbackCorrect": "Marta espera a ressurreição do irmão para o último dia.",
+      "feedbackWrong": {
+        "b": "O texto não liga a ressurreição ao dia em que ele adoeceu.",
+        "c": "Ela não marca o fim da conversa; marca o último dia.",
+        "d": "A hora presente não é o prazo que ela nomeia neste versículo."
+      },
+      "hint": "Veja a data no fim da resposta de Marta.",
+      "learningObjective": "Observar o prazo que Marta dá para a ressurreição do irmão.",
+      "evidence": [
+        "João 11:24"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-11-eu-sou-a-ressurreicao-04",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte a fala de João 11:25 na ordem do texto.",
+      "prompt": "Monte a fala de João 11:25 na ordem do texto.",
+      "cue": "Monte a fala de João 11:25 na ordem do texto.",
+      "verseRef": "João 11:25",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse-lhe Jesus: Eu sou a ressurreição e a vida"
+        },
+        {
+          "id": "b",
+          "text": "aquele que crê em mim"
+        },
+        {
+          "id": "c",
+          "text": "ainda que morra, viverá"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "A ordem vai de quem Jesus é para quem crê e, no fim, para a vida.",
+      "feedbackWrong": {
+        "default": "Comece pela apresentação de Jesus; a vida de quem crê vem no fim."
+      },
+      "hint": "A fala começa com o que Jesus diz de si.",
+      "learningObjective": "Reconhecer a ordem da declaração de Jesus em João 11:25.",
+      "evidence": [
+        "João 11:25"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-11-eu-sou-a-ressurreicao-05",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em João 11:23, o que Jesus diz que o irmão de Marta irá fazer?",
+      "prompt": "Em João 11:23, o que Jesus diz que o irmão de Marta irá fazer?",
+      "cue": "Em João 11:23, o que Jesus diz que o irmão de Marta irá fazer?",
+      "verseRef": "João 11:23",
+      "passageText": "Jesus lhe declarou: Teu irmão irá ressurgir.",
+      "template": "Jesus lhe declarou: Teu irmão irá ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ficar"
+        },
+        {
+          "id": "b",
+          "text": "partir"
+        },
+        {
+          "id": "c",
+          "text": "ressurgir"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "irá ressurgir",
+      "feedbackCorrect": "Jesus declara que o irmão de Marta irá ressurgir.",
+      "feedbackWrong": {
+        "a": "Ficar caberia na gramática. O texto fala de outro desfecho.",
+        "b": "Partir caberia na frase. O verbo que Jesus usa é outro."
+      },
+      "hint": "É o verbo no fim da frase de Jesus.",
+      "learningObjective": "Lembrar o que Jesus declara sobre o irmão de Marta.",
+      "evidence": [
+        "João 11:23"
+      ]
+    },
+    {
+      "id": "joao-cap-sem-joc-11-eu-sou-a-ressurreicao-06",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que João 11:22 comunica que se liga a este contexto?",
+      "prompt": "O que João 11:22 comunica que se liga a este contexto?",
+      "cue": "O que João 11:22 comunica que se liga a este contexto?",
+      "verseRef": "João 11:22",
+      "passageText": "Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá.",
+      "passageA": {
+        "ref": "João 11:22",
+        "text": "Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Lázaro já morreu, e Marta ainda confia no que Jesus pedir a Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus atenderá a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "A morte é o fim"
+        },
+        {
+          "id": "c",
+          "text": "Marta retira a queixa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Deus te concederá",
+      "feedbackCorrect": "Com Lázaro morto, Marta ainda diz que Deus concederá o que Jesus pedir.",
+      "feedbackWrong": {
+        "b": "Ela não trata a morte como o fim; ainda espera a resposta de Deus.",
+        "c": "O Mas não apaga a queixa; ela soma a confiança ao que já disse."
+      },
+      "hint": "Veja o que ela afirma que Deus fará.",
+      "learningObjective": "Ligar a fala de Marta à confiança que ela mantém depois da morte.",
+      "evidence": [
+        "João 11:22"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-11-eu-sou-a-ressurreicao-01",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em João 11:24–25, Jesus concorda com Marta e deixa a ressurreição só para o último dia.",
+      "prompt": "Em João 11:24–25, Jesus concorda com Marta e deixa a ressurreição só para o último dia.",
+      "cue": "Em João 11:24–25, Jesus concorda com Marta e deixa a ressurreição só para o último dia.",
+      "verseRef": "João 11:24–25",
+      "passageText": "Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia. Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "Ele não confirma só o último dia: diz que é a ressurreição e a vida.",
+      "feedbackWrong": {
+        "true": "Ele não repete a data de Marta; diz que a ressurreição é ele mesmo."
+      },
+      "hint": "Compare a data de Marta com o que Jesus diz de si.",
+      "learningObjective": "Compreender que Jesus não reduz a ressurreição à data de Marta.",
+      "evidence": [
+        "João 11:24–25"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-11-eu-sou-a-ressurreicao-02",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em João 11:22, toque a palavra que marca o contraste na fala de Marta.",
+      "prompt": "Em João 11:22, toque a palavra que marca o contraste na fala de Marta.",
+      "cue": "Em João 11:22, toque a palavra que marca o contraste na fala de Marta.",
+      "verseRef": "João 11:22",
+      "passageText": "Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá.",
+      "options": [
+        {
+          "id": "a",
+          "text": "sei"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "Mas"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Mas também sei",
+      "feedbackCorrect": "Mas vira a fala: depois da queixa, ela ainda confia.",
+      "feedbackWrong": {
+        "a": "Sei diz o que ela sabe; a marca do contraste abre a frase.",
+        "b": "Deus é quem concede; a virada está na palavra que abre o versículo."
+      },
+      "hint": "Procure a palavra curta que abre o versículo.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na fala de Marta.",
+      "evidence": [
+        "João 11:22"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-11-eu-sou-a-ressurreicao-03",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como o Mas de João 11:22 se liga à queixa de Marta?",
+      "prompt": "Como o Mas de João 11:22 se liga à queixa de Marta?",
+      "cue": "Como o Mas de João 11:22 se liga à queixa de Marta?",
+      "verseRef": "João 11:21–22",
+      "passageText": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela passa a falar só do último dia"
+        },
+        {
+          "id": "b",
+          "text": "Ela diz que Deus já negou o pedido"
+        },
+        {
+          "id": "c",
+          "text": "Ela anula a frase sobre a morte do irmão"
+        },
+        {
+          "id": "d",
+          "text": "Ela segue confiando, mesmo após a queixa"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "Deus te concederá",
+      "feedbackCorrect": "O Mas não apaga a queixa: ela segue confiando no que Jesus pedir.",
+      "feedbackWrong": {
+        "a": "O último dia vem depois; aqui ela fala do que Deus fará agora.",
+        "b": "Ela afirma o contrário: Deus concederá o que Jesus pedir.",
+        "c": "A queixa permanece; o Mas acrescenta confiança, não a retira."
+      },
+      "hint": "Veja o que ela afirma logo depois da queixa.",
+      "learningObjective": "Relacionar a queixa de Marta com a confiança que o Mas introduz.",
+      "evidence": [
+        "João 11:21–22"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-11-eu-sou-a-ressurreicao-04",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança a conversa até Jesus se apresentar?",
+      "prompt": "Como avança a conversa até Jesus se apresentar?",
+      "cue": "Como avança a conversa até Jesus se apresentar?",
+      "verseRef": "João 11:21–22",
+      "passageText": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Marta leva a queixa a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Ela ainda confia no pedido dele"
+        },
+        {
+          "id": "c",
+          "text": "Jesus se apresenta como a vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Mas também sei",
+      "feedbackCorrect": "A cena vai da queixa à confiança e, então, a Jesus como a vida.",
+      "feedbackWrong": {
+        "default": "A queixa vem primeiro; Jesus se apresenta depois da confiança dela."
+      },
+      "hint": "A queixa abre a conversa.",
+      "learningObjective": "Acompanhar o movimento da queixa até Jesus se apresentar.",
+      "evidence": [
+        "João 11:21",
+        "João 11:22",
+        "João 11:25"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-11-eu-sou-a-ressurreicao-05",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em João 11:25, o que Jesus diz que fará quem crê nele, ainda que morra?",
+      "prompt": "Em João 11:25, o que Jesus diz que fará quem crê nele, ainda que morra?",
+      "cue": "Em João 11:25, o que Jesus diz que fará quem crê nele, ainda que morra?",
+      "verseRef": "João 11:25",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "template": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "partirá"
+        },
+        {
+          "id": "b",
+          "text": "morrerá"
+        },
+        {
+          "id": "c",
+          "text": "viverá"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "ainda que morra, viverá",
+      "feedbackCorrect": "Quem crê, ainda que morra, viverá: a morte não é a última palavra.",
+      "feedbackWrong": {
+        "a": "Partirá caberia no fim da frase. O resultado que Jesus diz é outro.",
+        "b": "A frase já falou em morrer; o desfecho de quem crê é outro."
+      },
+      "hint": "Olhe o verbo que fecha a frase.",
+      "learningObjective": "Compreender o resultado de crer, ainda que a pessoa morra.",
+      "evidence": [
+        "João 11:25"
+      ]
+    },
+    {
+      "id": "joao-cap-cam-joc-11-eu-sou-a-ressurreicao-06",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga João 11:25 a João 5:21?",
+      "prompt": "O que liga João 11:25 a João 5:21?",
+      "cue": "O que liga João 11:25 a João 5:21?",
+      "verseRef": "João 11:25",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "passageA": {
+        "ref": "João 11:25",
+        "text": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá."
+      },
+      "passageB": {
+        "ref": "João 5:21",
+        "text": "Porque assim como o Pai ressuscita e dá vida aos mortos, assim também o Filho dá vida a quem deseja."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A morte encerra tudo"
+        },
+        {
+          "id": "b",
+          "text": "Só o Pai ressuscita"
+        },
+        {
+          "id": "c",
+          "text": "O Filho dá vida"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "Nos dois textos, o Filho dá vida, e a morte não fica com a última palavra.",
+      "feedbackWrong": {
+        "a": "Os dois textos falam de vida para além da morte, não do fim dela.",
+        "b": "João 5:21 também atribui ao Filho o dar vida, não só ao Pai."
+      },
+      "hint": "Veja o que o Filho faz, e não só o Pai.",
+      "learningObjective": "Relacionar a palavra de Jesus com o Filho que dá vida.",
+      "evidence": [
+        "João 11:25",
+        "João 5:21"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-11-eu-sou-a-ressurreicao-01",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em João 11:25, Jesus apresenta a si mesmo como a ressurreição, e não apenas uma data futura.",
+      "prompt": "Em João 11:25, Jesus apresenta a si mesmo como a ressurreição, e não apenas uma data futura.",
+      "cue": "Em João 11:25, Jesus apresenta a si mesmo como a ressurreição, e não apenas uma data futura.",
+      "verseRef": "João 11:25",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "A ressurreição, neste versículo, é a pessoa de Jesus, não só uma data.",
+      "feedbackWrong": {
+        "false": "Ele não aponta apenas um dia; diz que ele mesmo é a ressurreição."
+      },
+      "hint": "Veja o que Jesus diz que ele é.",
+      "learningObjective": "Interpretar a ressurreição como a pessoa de Jesus, não só como uma data.",
+      "evidence": [
+        "João 11:25"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-11-eu-sou-a-ressurreicao-02",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em João 11:25, toque a expressão com que Jesus fala de si mesmo.",
+      "prompt": "Em João 11:25, toque a expressão com que Jesus fala de si mesmo.",
+      "cue": "Em João 11:25, toque a expressão com que Jesus fala de si mesmo.",
+      "verseRef": "João 11:25",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu sou"
+        },
+        {
+          "id": "b",
+          "text": "viverá"
+        },
+        {
+          "id": "c",
+          "text": "morra"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "Jesus fala de si com Eu sou, antes de falar de quem crê.",
+      "feedbackWrong": {
+        "b": "Viverá é o desfecho de quem crê; a fala sobre Jesus vem antes.",
+        "c": "Morra fala do que pode acontecer com quem crê, não de quem Jesus é."
+      },
+      "hint": "Procure como a frase dele começa, antes de falar de quem crê.",
+      "learningObjective": "Sustentar com o texto que Jesus fala de si mesmo como a ressurreição.",
+      "evidence": [
+        "João 11:25"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-11-eu-sou-a-ressurreicao-03",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura João 11:25–26 sustenta sobre quem crê em Jesus?",
+      "prompt": "Que leitura João 11:25–26 sustenta sobre quem crê em Jesus?",
+      "cue": "Que leitura João 11:25–26 sustenta sobre quem crê em Jesus?",
+      "verseRef": "João 11:25–26",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quem crê nunca chega a morrer"
+        },
+        {
+          "id": "b",
+          "text": "Quem crê vive, mesmo passando pela morte"
+        },
+        {
+          "id": "c",
+          "text": "A vida prometida só começa no último dia"
+        },
+        {
+          "id": "d",
+          "text": "A promessa não depende de crer nele"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "ainda que morra, viverá",
+      "feedbackCorrect": "Quem crê pode morrer e ainda assim viver, porque a vida está em Jesus.",
+      "feedbackWrong": {
+        "a": "O texto admite a morte: ainda que morra. O que muda é o desfecho.",
+        "c": "Nestes versículos Jesus não marca a data; liga a vida a quem crê nele.",
+        "d": "A frase depende de crer: aquele que crê em mim é quem viverá."
+      },
+      "hint": "Leia o que acontece com quem crê, ainda que morra.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre crer e morrer.",
+      "evidence": [
+        "João 11:25–26"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-11-eu-sou-a-ressurreicao-04",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual é a lógica da fala de Jesus até a confissão de Marta?",
+      "prompt": "Qual é a lógica da fala de Jesus até a confissão de Marta?",
+      "cue": "Qual é a lógica da fala de Jesus até a confissão de Marta?",
+      "verseRef": "João 11:26–27",
+      "passageText": "E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso? Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus chama a ressurreição de si"
+        },
+        {
+          "id": "b",
+          "text": "Quem crê atravessa a morte"
+        },
+        {
+          "id": "c",
+          "text": "Marta confessa o Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "eu creio que tu és o Cristo",
+      "feedbackCorrect": "Jesus se apresenta, a fé atravessa a morte, e Marta confessa quem ele é.",
+      "feedbackWrong": {
+        "default": "Comece por quem Jesus diz ser; a confissão de Marta fecha a cena."
+      },
+      "hint": "A confissão de Marta é o ponto de chegada.",
+      "learningObjective": "Encadear a apresentação de Jesus, a fé e a confissão de Marta.",
+      "evidence": [
+        "João 11:25",
+        "João 11:26",
+        "João 11:27"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-11-eu-sou-a-ressurreicao-05",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em João 11:25, que palavra Jesus usa para se nomear, junto com a vida?",
+      "prompt": "Em João 11:25, que palavra Jesus usa para se nomear, junto com a vida?",
+      "cue": "Em João 11:25, que palavra Jesus usa para se nomear, junto com a vida?",
+      "verseRef": "João 11:25",
+      "passageText": "Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "template": "Disse-lhe Jesus: Eu sou a ___ e a vida; aquele que crê em mim, ainda que morra, viverá.",
+      "options": [
+        {
+          "id": "a",
+          "text": "ressurreição"
+        },
+        {
+          "id": "b",
+          "text": "libertação"
+        },
+        {
+          "id": "c",
+          "text": "consolação"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Eu sou a ressurreição e a vida",
+      "feedbackCorrect": "Jesus não aponta só um evento: ele diz que é a ressurreição e a vida.",
+      "feedbackWrong": {
+        "b": "Libertação caberia na frase. O texto usa outra palavra.",
+        "c": "Consolação caberia no lugar. O nome que ele toma é outro."
+      },
+      "hint": "É o primeiro nome que ele toma logo depois de se apresentar.",
+      "learningObjective": "Lembrar o termo com que Jesus se nomeia ao lado da vida.",
+      "evidence": [
+        "João 11:25"
+      ]
+    },
+    {
+      "id": "joao-cap-pro-joc-11-eu-sou-a-ressurreicao-06",
+      "trail": "joao-cap",
+      "section": "joc-11-eu-sou-a-ressurreicao",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga João 11:27 a João 20:31?",
+      "prompt": "O que liga João 11:27 a João 20:31?",
+      "cue": "O que liga João 11:27 a João 20:31?",
+      "verseRef": "João 11:27",
+      "passageText": "Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo.",
+      "passageA": {
+        "ref": "João 11:27",
+        "text": "Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo."
+      },
+      "passageB": {
+        "ref": "João 20:31",
+        "text": "Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus apenas o atende"
+        },
+        {
+          "id": "b",
+          "text": "Jesus é o Cristo"
+        },
+        {
+          "id": "c",
+          "text": "A fé fica para depois"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "tu és o Cristo",
+      "feedbackCorrect": "Marta confessa o que o livro pede: que Jesus é o Cristo, o Filho de Deus.",
+      "feedbackWrong": {
+        "a": "Ela não para em quem Deus atende; confessa o Cristo, o Filho de Deus.",
+        "c": "A fé não fica para depois: ela responde sim e diz em quem crê."
+      },
+      "hint": "Compare o título da confissão de Marta com o alvo do livro.",
+      "learningObjective": "Ligar a confissão de Marta ao propósito do evangelho.",
+      "evidence": [
+        "João 11:27",
+        "João 20:31"
+      ]
+    }
+  ]
+}

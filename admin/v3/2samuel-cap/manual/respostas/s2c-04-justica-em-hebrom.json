@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 4:5–12",
+    "passages": [
+      {
+        "ref": "2 Samuel 4:5–12"
+      }
+    ],
+    "context": "Recabe e Baana matam Isbosete dormindo e levam a cabeça a Davi. Em vez de recompensa, Davi os julga como ímpios.",
+    "keyword": "justo",
+    "keywordGloss": "Isbosete é chamado homem justo, morto em sua própria casa e leito.",
+    "focusQuestion": "Você recusa ganho fácil que nasce de violência injusta?",
+    "reflectionPrompts": [
+      "Assassinato no leito",
+      "Cabeça trazida a Davi",
+      "Justiça em Hebrom"
+    ],
+    "facts": [
+      {
+        "text": "Recabe e Baana entraram na casa de Isbosete ao meio-dia.",
+        "evidenceRef": "2 Samuel 4:5",
+        "evidenceSpan": "entraram na casa de Isbosete, no maior calor do dia"
+      },
+      {
+        "text": "Eles o feriram no abdômen e escaparam.",
+        "evidenceRef": "2 Samuel 4:6",
+        "evidenceSpan": "o feriram no abdômen"
+      },
+      {
+        "text": "Cortaram-lhe a cabeça e a levaram a Davi em Hebrom.",
+        "evidenceRef": "2 Samuel 4:8",
+        "evidenceSpan": "trouxeram a cabeça de Isbosete a Davi, em Hebrom"
+      },
+      {
+        "text": "Davi responde invocando o Senhor que remiu sua alma.",
+        "evidenceRef": "2 Samuel 4:9",
+        "evidenceSpan": "Tão certo como vive o Senhor, que remiu a minha alma"
+      },
+      {
+        "text": "Davi chama Isbosete de homem justo morto no leito.",
+        "evidenceRef": "2 Samuel 4:11",
+        "evidenceSpan": "mataram um homem justo em sua própria casa, no seu leito"
+      },
+      {
+        "text": "Davi manda matá-los e sepulta a cabeça na tumba de Abner.",
+        "evidenceRef": "2 Samuel 4:12",
+        "evidenceSpan": "tomaram a cabeça de Isbosete e a sepultaram na tumba de Abner"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justo",
+        "gloss": "Isbosete, morto em casa e no leito, sem julgamento."
+      },
+      {
+        "term": "Hebrom",
+        "gloss": "Lugar onde Davi julga os assassinos."
+      },
+      {
+        "term": "ímpios",
+        "gloss": "Assim Davi nomeia quem mata um justo no leito."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Assassinato de Isbosete no leito",
+        "evidenceRef": "2 Samuel 4:5–7"
+      },
+      {
+        "label": "Cabeça apresentada a Davi como vitória",
+        "evidenceRef": "2 Samuel 4:8"
+      },
+      {
+        "label": "Davi recusa a lógica da recompensa",
+        "evidenceRef": "2 Samuel 4:9–11"
+      },
+      {
+        "label": "Execução dos ímpios e sepultura da cabeça",
+        "evidenceRef": "2 Samuel 4:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Eles esperam recompensa; porém Davi responde com juramento.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 4:9"
+      },
+      {
+        "kind": "causa",
+        "text": "Pois quem trouxe a morte de Saul foi morto em Ziglag.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 4:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quanto mais a ímpios: Davi exige o sangue deles.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 4:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Samuel 1:14–16",
+        "bridge": "Davi julga o mensageiro"
+      },
+      {
+        "ref": "Êxodo 23:7",
+        "bridge": "Não matar o inocente"
+      },
+      {
+        "ref": "Provérbios 17:15",
+        "bridge": "Justificar o ímpio"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Davi recompensa quem elimina o rival da casa de Saul.",
+        "why": "Ele os chama ímpios e manda executá-los."
+      },
+      {
+        "text": "Isbosete morreu em combate justo.",
+        "why": "Foi morto dormindo em sua casa e leito."
+      },
+      {
+        "text": "Davi despreza a cabeça e a joga fora.",
+        "why": "Ele a sepulta na tumba de Abner em Hebrom."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 4:11, como Davi chama o homem que mataram no leito?",
+    "centralInsight": "Davi não recompensa assassinato: castiga quem mata um justo em sua cama."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 4:8, Recabe e Baana trouxeram a cabeça de Isbosete a Davi em Hebrom.",
+      "verseRef": "2 Samuel 4:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "trouxeram a cabeça de Isbosete a Davi, em Hebrom",
+      "feedbackCorrect": "Levaram a cabeça ao rei.",
+      "feedbackWrong": {
+        "false": "O verso diz Hebrom."
+      },
+      "hint": "Veja o destino.",
+      "learningObjective": "Observar a entrega.",
+      "evidence": [
+        "2 Samuel 4:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 4:5, toque quem estava deitado dormindo.",
+      "verseRef": "2 Samuel 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rimom"
+        },
+        {
+          "id": "b",
+          "text": "filhos"
+        },
+        {
+          "id": "c",
+          "text": "beerotita"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "filhos",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar Isbosete.",
+      "evidence": [
+        "2 Samuel 4:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 4:11, onde mataram o homem justo?",
+      "verseRef": "2 Samuel 4:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em sua própria casa, no seu leito"
+        },
+        {
+          "id": "b",
+          "text": "No campo de batalha"
+        },
+        {
+          "id": "c",
+          "text": "Na porta da cidade"
+        },
+        {
+          "id": "d",
+          "text": "No templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mataram um homem justo em sua própria casa, no seu leito",
+      "feedbackCorrect": "No leito.",
+      "feedbackWrong": {
+        "b": "Não foi em batalha.",
+        "c": "Não foi na porta.",
+        "d": "Não foi no templo."
+      },
+      "hint": "Leia o lugar.",
+      "learningObjective": "Reconhecer o crime.",
+      "evidence": [
+        "2 Samuel 4:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 4:8 na ordem do texto.",
+      "verseRef": "2 Samuel 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "trouxeram a cabeça de Isbosete a Davi, em Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "Eis aqui a cabeça de Isbosete, filho de Saul"
+        },
+        {
+          "id": "c",
+          "text": "Assim, o Senhor hoje vingou o rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "trouxeram a cabeça de Isbosete a Davi, em Hebrom",
+      "feedbackCorrect": "Entrega, anúncio e pretensa vingança.",
+      "feedbackWrong": {
+        "default": "Comece pela chegada."
+      },
+      "hint": "O que eles dizem?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 4:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 4:11, complete: mataram um homem ___.",
+      "verseRef": "2 Samuel 4:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "justo"
+        },
+        {
+          "id": "b",
+          "text": "ímpio"
+        },
+        {
+          "id": "c",
+          "text": "covarde"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mataram um homem justo",
+      "feedbackCorrect": "Justo.",
+      "feedbackWrong": {
+        "b": "Não é ímpio.",
+        "c": "Não é covarde."
+      },
+      "hint": "Como Davi o chama?",
+      "learningObjective": "Lembrar justo.",
+      "evidence": [
+        "2 Samuel 4:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 4:9 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 4:9",
+      "passageA": {
+        "ref": "2 Samuel 4:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Davi recusa recompensar o assassinato de Isbosete."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juramento pelo Senhor vivo"
+        },
+        {
+          "id": "b",
+          "text": "Aceite da recompensa"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com Recabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tão certo como vive o Senhor",
+      "feedbackCorrect": "Há juramento, não prêmio.",
+      "feedbackWrong": {
+        "b": "Há julgamento.",
+        "c": "Há condenação."
+      },
+      "hint": "Como Davi responde?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 4:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 4:9, o texto traz o trecho — Porém, Davi, respondendo a Recabe e a Baana.",
+      "verseRef": "2 Samuel 4:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porém, Davi, respondendo a Recabe e a Baana",
+      "feedbackCorrect": "O versículo confirma a afirmação.",
+      "feedbackWrong": {
+        "false": "O trecho está no versículo."
+      },
+      "hint": "Compare com o palco.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "2 Samuel 4:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 4:9, toque o marcador de contraste.",
+      "verseRef": "2 Samuel 4:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "Porém"
+        },
+        {
+          "id": "c",
+          "text": "respondendo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o Porém.",
+      "evidence": [
+        "2 Samuel 4:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 4:9–11 faz?",
+      "verseRef": "2 Samuel 4:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recusa a recompensa porque já julgou lógica semelhante"
+        },
+        {
+          "id": "b",
+          "text": "Aceita a cabeça como dom do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Perdoa os assassinos por lealdade"
+        },
+        {
+          "id": "d",
+          "text": "Nomeia Isbosete como ímpio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, Davi, respondendo",
+      "feedbackCorrect": "Contraste e causa.",
+      "feedbackWrong": {
+        "b": "Ele rejeita.",
+        "c": "Há execução.",
+        "d": "Chama Isbosete justo."
+      },
+      "hint": "Una Porém e Pois.",
+      "learningObjective": "Compreender a recusa.",
+      "evidence": [
+        "2 Samuel 4:9–10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assassinato de Isbosete no leito"
+        },
+        {
+          "id": "b",
+          "text": "Cabeça apresentada a Davi como vitória"
+        },
+        {
+          "id": "c",
+          "text": "Execução dos ímpios e sepultura da cabeça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "entraram na casa de Isbosete",
+      "feedbackCorrect": "Crime, oferta e julgamento.",
+      "feedbackWrong": {
+        "default": "Comece pelo assassinato."
+      },
+      "hint": "O que fecha o juízo?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 4:5",
+        "2 Samuel 4:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 4:11, complete: Quanto mais, pois, a homens ___.",
+      "verseRef": "2 Samuel 4:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "ímpios"
+        },
+        {
+          "id": "b",
+          "text": "justos"
+        },
+        {
+          "id": "c",
+          "text": "fiéis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a homens ímpios",
+      "feedbackCorrect": "Ímpios.",
+      "feedbackWrong": {
+        "b": "Não é justos.",
+        "c": "Não é fiéis."
+      },
+      "hint": "Como chama os assassinos?",
+      "learningObjective": "Lembrar ímpios.",
+      "evidence": [
+        "2 Samuel 4:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 4:10 a 2 Samuel 1:14–16?",
+      "verseRef": "2 Samuel 4:10",
+      "passageA": {
+        "ref": "2 Samuel 4:10"
+      },
+      "passageB": {
+        "ref": "2 Samuel 1:14–16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi julga o mensageiro"
+        },
+        {
+          "id": "b",
+          "text": "Davi premia o mensageiro"
+        },
+        {
+          "id": "c",
+          "text": "Davi foge de Ziglag"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu o capturei e o matei em Ziglag",
+      "feedbackCorrect": "Mesma lógica de juízo.",
+      "feedbackWrong": {
+        "b": "Há julgamento.",
+        "c": "Há memória de Ziglag."
+      },
+      "hint": "Compare o mensageiro.",
+      "learningObjective": "Ligar ao juízo anterior.",
+      "evidence": [
+        "2 Samuel 4:10",
+        "2 Samuel 1:14–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 4:11–12, Davi recompensa Recabe e Baana por eliminarem Isbosete.",
+      "verseRef": "2 Samuel 4:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "mataram um homem justo em sua própria casa, no seu leito",
+      "feedbackCorrect": "Ele os julga como ímpios.",
+      "feedbackWrong": {
+        "true": "Há juízo, não recompensa."
+      },
+      "hint": "Veja como ele os chama.",
+      "learningObjective": "Avaliar a justiça do rei.",
+      "evidence": [
+        "2 Samuel 4:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 4:11, toque o lugar do crime que sustenta a leitura.",
+      "verseRef": "2 Samuel 4:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "homens"
+        },
+        {
+          "id": "b",
+          "text": "Quanto"
+        },
+        {
+          "id": "c",
+          "text": "mataram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Quanto",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o leito.",
+      "evidence": [
+        "2 Samuel 4:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une a oferta da cabeça e a resposta de Davi?",
+      "verseRef": "2 Samuel 4:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assassinato não compra favor do rei ungido"
+        },
+        {
+          "id": "b",
+          "text": "Davi precisa do crime alheio para reinar"
+        },
+        {
+          "id": "c",
+          "text": "Isbosete era ímpio e merecia a cama"
+        },
+        {
+          "id": "d",
+          "text": "Hebrom celebra os assassinos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis aqui a cabeça de Isbosete",
+      "feedbackCorrect": "Recusa do atalho.",
+      "feedbackWrong": {
+        "b": "Ele os julga.",
+        "c": "Chama-o justo.",
+        "d": "Há execução."
+      },
+      "hint": "Una oferta e juízo.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 4:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da justiça em Hebrom.",
+      "verseRef": "2 Samuel 4:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Crime no leito"
+        },
+        {
+          "id": "b",
+          "text": "Oferta da cabeça"
+        },
+        {
+          "id": "c",
+          "text": "Juízo sem recompensa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mataram um homem justo",
+      "feedbackCorrect": "Crime, oferta e juízo.",
+      "feedbackWrong": {
+        "default": "Comece pelo crime."
+      },
+      "hint": "O que Davi recusa?",
+      "learningObjective": "Encadear a justiça.",
+      "evidence": [
+        "2 Samuel 4:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 4:12, complete: a sepultaram na tumba de ___.",
+      "verseRef": "2 Samuel 4:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abner"
+        },
+        {
+          "id": "b",
+          "text": "Saul"
+        },
+        {
+          "id": "c",
+          "text": "Joabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sepultaram na tumba de Abner",
+      "feedbackCorrect": "Abner.",
+      "feedbackWrong": {
+        "b": "Não é Saul.",
+        "c": "Não é Joabe."
+      },
+      "hint": "Veja a tumba.",
+      "learningObjective": "Lembrar Abner.",
+      "evidence": [
+        "2 Samuel 4:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 4:11 a Êxodo 23:7?",
+      "verseRef": "2 Samuel 4:11",
+      "passageA": {
+        "ref": "2 Samuel 4:11"
+      },
+      "passageB": {
+        "ref": "Êxodo 23:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não matar o inocente"
+        },
+        {
+          "id": "b",
+          "text": "Premiar o assassino"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar o sangue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mataram um homem justo",
+      "feedbackCorrect": "Justo e inocente.",
+      "feedbackWrong": {
+        "b": "Há juízo.",
+        "c": "Há cobrança."
+      },
+      "hint": "Compare o justo.",
+      "learningObjective": "Ligar à proteção do inocente.",
+      "evidence": [
+        "2 Samuel 4:11",
+        "Êxodo 23:7"
+      ]
+    }
+  ]
+}

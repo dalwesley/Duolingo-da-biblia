@@ -1,0 +1,41 @@
+{
+  "referralInviteLine": {
+    "pt": "Se a pessoa assinar o Peregrino+, você ganha 1 mês de Plus.",
+    "en": "If they subscribe to Peregrino+, you get 1 month of Plus.",
+    "es": "Si la persona se suscribe a Peregrino+, ganas 1 mes de Plus."
+  },
+  "referralRewardGranted": {
+    "pt": "{name} assinou o Peregrino+ pelo seu convite. Você ganhou 1 mês de Plus!",
+    "en": "{name} subscribed to Peregrino+ through your invite. You got 1 month of Plus!",
+    "es": "{name} se suscribió a Peregrino+ con tu invitación. ¡Ganaste 1 mes de Plus!",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "referralRewardGrantedAnon": {
+    "pt": "Alguém assinou o Peregrino+ pelo seu convite. Você ganhou 1 mês de Plus!",
+    "en": "Someone subscribed to Peregrino+ through your invite. You got 1 month of Plus!",
+    "es": "Alguien se suscribió a Peregrino+ con tu invitación. ¡Ganaste 1 mes de Plus!"
+  },
+  "referralRewardKept": {
+    "pt": "{name} assinou o Peregrino+ pelo seu convite. Seu mês ganho fica guardado para quando o seu Plus acabar.",
+    "en": "{name} subscribed to Peregrino+ through your invite. Your free month is saved for when your Plus ends.",
+    "es": "{name} se suscribió a Peregrino+ con tu invitación. Tu mes ganado queda guardado para cuando termine tu Plus.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "referralRewardKeptAnon": {
+    "pt": "Alguém assinou o Peregrino+ pelo seu convite. Seu mês ganho fica guardado para quando o seu Plus acabar.",
+    "en": "Someone subscribed to Peregrino+ through your invite. Your free month is saved for when your Plus ends.",
+    "es": "Alguien se suscribió a Peregrino+ con tu invitación. Tu mes ganado queda guardado para cuando termine tu Plus."
+  },
+  "referralBankedLine": {
+    "pt": "{count, plural, =1{1 mês de Plus guardado por convites} other{{count} meses de Plus guardados por convites}}",
+    "en": "{count, plural, =1{1 month of Plus saved from invites} other{{count} months of Plus saved from invites}}",
+    "es": "{count, plural, =1{1 mes de Plus guardado por invitaciones} other{{count} meses de Plus guardados por invitaciones}}",
+    "placeholders": {
+      "count": "int"
+    }
+  }
+}

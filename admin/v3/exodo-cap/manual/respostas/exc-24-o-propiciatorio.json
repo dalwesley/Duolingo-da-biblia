@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Êxodo 25:17–22",
+    "passages": [
+      {
+        "ref": "Êxodo 25:17–22"
+      }
+    ],
+    "context": "Deus manda fazer o propiciatório de ouro com querubins. Ali, sobre a arca, Ele promete encontrar-se com Moisés.",
+    "keyword": "Propiciatório",
+    "keywordGloss": "Tampa da arca onde o Senhor fala, entre os querubins.",
+    "focusQuestion": "Onde você espera ouvir o Senhor quando precisa de direção?",
+    "reflectionPrompts": [
+      "Ouro e querubins",
+      "Encontro no meio",
+      "Falar e ordenar"
+    ],
+    "facts": [
+      {
+        "text": "O propiciatório seria de ouro puro, com medida de côvados.",
+        "evidenceRef": "Êxodo 25:17",
+        "evidenceSpan": "propiciatório de ouro puro"
+      },
+      {
+        "text": "Dois querubins de ouro batido ficam nas extremidades.",
+        "evidenceRef": "Êxodo 25:18",
+        "evidenceSpan": "dois querubins de ouro"
+      },
+      {
+        "text": "Os querubins cobrem o propiciatório com as asas e olham para ele.",
+        "evidenceRef": "Êxodo 25:20",
+        "evidenceSpan": "cobrindo com elas o propiciatório"
+      },
+      {
+        "text": "O propiciatório vai sobre a arca; dentro dela, o Testemunho.",
+        "evidenceRef": "Êxodo 25:21",
+        "evidenceSpan": "colocarás o propiciatório sobre a arca"
+      },
+      {
+        "text": "Ali o Senhor se encontra e fala do alto do propiciatório.",
+        "evidenceRef": "Êxodo 25:22",
+        "evidenceSpan": "ali me encontrarei com você"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "propiciatório",
+        "gloss": "Tampa de ouro da arca, lugar do encontro com Deus."
+      },
+      {
+        "term": "querubins",
+        "gloss": "Figuras de ouro que cobrem e olham para o propiciatório."
+      },
+      {
+        "term": "Testemunho",
+        "gloss": "O que Deus dá para guardar dentro da arca."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Medidas do propiciatório de ouro",
+        "evidenceRef": "Êxodo 25:17"
+      },
+      {
+        "label": "Querubins nas extremidades",
+        "evidenceRef": "Êxodo 25:18–20"
+      },
+      {
+        "label": "Propiciatório e Testemunho na arca",
+        "evidenceRef": "Êxodo 25:21"
+      },
+      {
+        "label": "Encontro e fala entre os querubins",
+        "evidenceRef": "Êxodo 25:22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "As asas dos querubins existem para cobrir o propiciatório.",
+        "marker": "cobrindo",
+        "evidenceRef": "Êxodo 25:20"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ali Deus se encontra e fala o que ordenar a Israel.",
+        "marker": "ali",
+        "evidenceRef": "Êxodo 25:22"
+      },
+      {
+        "kind": "sequência",
+        "text": "Primeiro o propiciatório sobre a arca; depois o Testemunho dentro.",
+        "marker": "e",
+        "evidenceRef": "Êxodo 25:21"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 9:5",
+        "bridge": "Querubins sobre o propiciatório"
+      },
+      {
+        "ref": "Números 7:89",
+        "bridge": "Voz de cima do propiciatório"
+      },
+      {
+        "ref": "Levítico 16:2",
+        "bridge": "Deus aparece na nuvem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O propiciatório é só decoração da arca.",
+        "why": "O texto marca ali o encontro e a fala de Deus."
+      },
+      {
+        "text": "Deus fala de qualquer lugar do acampamento da mesma forma.",
+        "why": "Ele localiza o encontro no alto do propiciatório, entre os querubins."
+      },
+      {
+        "text": "Os querubins voltam as faces para o povo.",
+        "why": "As faces estão voltadas uma para a outra, olhando para o propiciatório."
+      }
+    ],
+    "centralInsight": "O Senhor fala de cima do propiciatório, no meio do seu povo.",
+    "anchorQuestion": "De onde o Senhor promete falar a Moisés?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O propiciatório seria feito de ouro puro, com comprimento de dois côvados e meio.",
+      "verseRef": "Êxodo 25:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "propiciatório de ouro puro",
+      "feedbackCorrect": "O texto manda fazer o propiciatório de ouro puro, com essa medida.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 25:17: ouro puro e dois côvados e meio."
+      },
+      "hint": "Veja o material e a medida.",
+      "learningObjective": "Observar o material do propiciatório.",
+      "evidence": [
+        "Êxodo 25:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 25:18, toque o que se fará de ouro batido nas extremidades.",
+      "verseRef": "Êxodo 25:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "querubins"
+        },
+        {
+          "id": "b",
+          "text": "extremidades"
+        },
+        {
+          "id": "c",
+          "text": "ouro batido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dois querubins de ouro",
+      "feedbackCorrect": "São dois querubins de ouro batido nas extremidades.",
+      "feedbackWrong": {
+        "b": "Extremidades é o lugar; o que se faz são os querubins.",
+        "c": "Ouro batido é o material; o objeto são os querubins."
+      },
+      "hint": "O que fica nas duas extremidades?",
+      "learningObjective": "Identificar os querubins no texto.",
+      "evidence": [
+        "Êxodo 25:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 25:21, onde se coloca o propiciatório?",
+      "verseRef": "Êxodo 25:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sob a mesa"
+        },
+        {
+          "id": "b",
+          "text": "Sobre a arca"
+        },
+        {
+          "id": "c",
+          "text": "À porta do acampamento"
+        },
+        {
+          "id": "d",
+          "text": "Sobre o altar de bronze"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "colocarás o propiciatório sobre a arca",
+      "feedbackCorrect": "O propiciatório vai sobre a arca.",
+      "feedbackWrong": {
+        "a": "O texto diz sobre a arca.",
+        "c": "Não é à porta do acampamento.",
+        "d": "Não é o altar de bronze."
+      },
+      "hint": "Leia onde colocar o propiciatório.",
+      "learningObjective": "Observar a posição do propiciatório.",
+      "evidence": [
+        "Êxodo 25:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 25:22 na ordem do texto.",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "E ali me encontrarei com você"
+        },
+        {
+          "id": "b",
+          "text": "e, do alto do propiciatório, entre os dois querubins"
+        },
+        {
+          "id": "c",
+          "text": "falarei tudo o que eu lhe ordenar para os filhos de Israel"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Encontro, lugar entre os querubins, e a fala a Israel.",
+      "feedbackWrong": {
+        "default": "Comece pelo encontro; a fala a Israel vem no fim."
+      },
+      "hint": "O versículo começa com \"E ali\".",
+      "learningObjective": "Reconhecer a sequência de Êxodo 25:22.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 25:21, o que se coloca dentro da arca?",
+      "verseRef": "Êxodo 25:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "maná"
+        },
+        {
+          "id": "b",
+          "text": "Testemunho"
+        },
+        {
+          "id": "c",
+          "text": "incenso"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "colocarás o Testemunho que eu te darei",
+      "feedbackCorrect": "Dentro da arca fica o Testemunho que Deus dará.",
+      "feedbackWrong": {
+        "a": "Neste versículo é o Testemunho, não o maná.",
+        "c": "O texto fala do Testemunho."
+      },
+      "hint": "O que Deus diz que dará para dentro da arca?",
+      "learningObjective": "Lembrar o conteúdo da arca neste trecho.",
+      "evidence": [
+        "Êxodo 25:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 25:22 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 25:22",
+      "passageA": {
+        "ref": "Êxodo 25:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus descreve a tampa da arca com querubins; ali Ele se encontrará com Moisés."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Encontro sobre o propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Arca sem tampa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "Ali, do alto do propiciatório, Deus se encontra e fala.",
+      "feedbackWrong": {
+        "b": "O texto promete fala, não silêncio.",
+        "c": "Há propiciatório sobre a arca."
+      },
+      "hint": "Compare o lugar do encontro com a descrição da tampa.",
+      "learningObjective": "Ligar o encontro ao propiciatório.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 25:20, as faces dos querubins ficam voltadas para o povo do acampamento.",
+      "verseRef": "Êxodo 25:20",
+      "correctOptionId": "false",
+      "evidenceSpan": "voltadas uma para a outra, olhando para o propiciatório",
+      "feedbackCorrect": "As faces se voltam uma para a outra, olhando para o propiciatório.",
+      "feedbackWrong": {
+        "true": "Releia: faces voltadas uma para a outra, para o propiciatório."
+      },
+      "hint": "Para onde as faces olham?",
+      "learningObjective": "Compreender a orientação dos querubins.",
+      "evidence": [
+        "Êxodo 25:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 25:20, toque a palavra que diz o que as asas fazem com o propiciatório.",
+      "verseRef": "Êxodo 25:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "cobrindo"
+        },
+        {
+          "id": "b",
+          "text": "estenderão"
+        },
+        {
+          "id": "c",
+          "text": "olhando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cobrindo com elas o propiciatório",
+      "feedbackCorrect": "\"Cobrindo\" marca o propósito das asas sobre o propiciatório.",
+      "feedbackWrong": {
+        "b": "Estenderão descreve o gesto; o propósito é cobrindo.",
+        "c": "Olhando fala das faces; as asas cobrem."
+      },
+      "hint": "O que as asas fazem por cima?",
+      "learningObjective": "Tocar o marcador de propósito das asas.",
+      "evidence": [
+        "Êxodo 25:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 25:22 liga o lugar do propiciatório à ação de Deus?",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ali Ele se encontra e fala o que ordenar"
+        },
+        {
+          "id": "b",
+          "text": "Ali o povo escolhe seus próprios deuses"
+        },
+        {
+          "id": "c",
+          "text": "Ali Moisés guarda ouro em silêncio"
+        },
+        {
+          "id": "d",
+          "text": "Ali os querubins substituem a voz de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "O lugar do encontro é também o lugar da fala ordenadora.",
+      "feedbackWrong": {
+        "b": "Não há escolha de deuses neste versículo.",
+        "c": "Deus fala; não é silêncio de Moisés.",
+        "d": "Deus fala; os querubins não substituem Sua voz."
+      },
+      "hint": "Veja o que Deus faz \"ali\".",
+      "learningObjective": "Relacionar encontro e fala divina.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a instrução em Êxodo 25:17–22?",
+      "verseRef": "Êxodo 25:17–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Medidas do propiciatório de ouro"
+        },
+        {
+          "id": "b",
+          "text": "Querubins nas extremidades"
+        },
+        {
+          "id": "c",
+          "text": "Encontro e fala entre os querubins"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "propiciatório de ouro puro",
+      "feedbackCorrect": "Objeto, querubins, depois o encontro falado.",
+      "feedbackWrong": {
+        "default": "Comece pelas medidas; o encontro vem por último."
+      },
+      "hint": "Primeiro o objeto; depois as figuras; no fim o encontro.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 25:17–22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 25:22, de onde Deus fala a Moisés?",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "alto"
+        },
+        {
+          "id": "b",
+          "text": "vale"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do alto do propiciatório",
+      "feedbackCorrect": "A fala vem do alto do propiciatório, entre os querubins.",
+      "feedbackWrong": {
+        "b": "Não é do vale.",
+        "c": "O lugar marcado é o alto do propiciatório."
+      },
+      "hint": "A frase é \"do ___ do propiciatório\".",
+      "learningObjective": "Lembrar de onde vem a fala.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 25:22 a Números 7:89?",
+      "verseRef": "Êxodo 25:22",
+      "passageA": {
+        "ref": "Êxodo 25:22"
+      },
+      "passageB": {
+        "ref": "Números 7:89"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voz sobre o propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "Sacrifício no altar externo"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio na tenda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "do alto do propiciatório",
+      "feedbackCorrect": "Nos dois textos, Deus fala de cima do propiciatório.",
+      "feedbackWrong": {
+        "b": "O elo é a voz sobre o propiciatório.",
+        "c": "Há fala, não silêncio."
+      },
+      "hint": "De onde Moisés ouve a voz?",
+      "learningObjective": "Relacionar a promessa à voz ouvida.",
+      "evidence": [
+        "Êxodo 25:22",
+        "Números 7:89"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 25:22 sustenta que Deus escolhe encontrar-se e falar no meio do seu povo, do alto do propiciatório.",
+      "verseRef": "Êxodo 25:22",
+      "correctOptionId": "true",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "O encontro e a fala ficam localizados entre os querubins, sobre a arca.",
+      "feedbackWrong": {
+        "false": "O texto marca encontro e fala no alto do propiciatório."
+      },
+      "hint": "Leia o que Deus promete fazer \"ali\".",
+      "learningObjective": "Interpretar o encontro no meio do povo.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 25:22, toque o trecho que marca o encontro prometido.",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "me encontrarei"
+        },
+        {
+          "id": "b",
+          "text": "filhos de Israel"
+        },
+        {
+          "id": "c",
+          "text": "testemunho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "\"Me encontrarei\" sustenta a promessa do encontro.",
+      "feedbackWrong": {
+        "b": "Israel recebe a ordem; o encontro é \"me encontrarei\".",
+        "c": "Testemunho está na arca; o encontro é outra frase."
+      },
+      "hint": "Qual verbo promete o encontro?",
+      "learningObjective": "Sustentar a leitura com o verbo do encontro.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 25:17–22 sustenta sobre o propiciatório?",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "É o lugar onde Deus se encontra e fala ao povo"
+        },
+        {
+          "id": "b",
+          "text": "É só enfeite sem relação com a presença de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Serve para o povo ver a face de Deus sem risco"
+        },
+        {
+          "id": "d",
+          "text": "Substitui qualquer necessidade de ouvir a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali me encontrarei com você",
+      "feedbackCorrect": "O texto une objeto sagrado e encontro falado de Deus.",
+      "feedbackWrong": {
+        "b": "O encontro e a fala desmentem o \"só enfeite\".",
+        "c": "O texto não promete ver a face de Deus.",
+        "d": "Deus fala o que ordenar; não há substituição."
+      },
+      "hint": "Una a tampa de ouro à promessa \"ali\".",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Êxodo 25:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga a arca à voz de Deus na Escritura?",
+      "verseRef": "Êxodo 25:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus promete falar do propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "Moisés ouve a voz entre os querubins"
+        },
+        {
+          "id": "c",
+          "text": "Hebreus lembra os querubins da glória"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "entre os dois querubins",
+      "feedbackCorrect": "Promessa, cumprimento em Números, eco em Hebreus.",
+      "feedbackWrong": {
+        "default": "Comece pela promessa em Êxodo; Hebreus vem por último."
+      },
+      "hint": "Siga a ordem da história bíblica.",
+      "learningObjective": "Ver o fio do propiciatório na Escritura.",
+      "evidence": [
+        "Êxodo 25:22",
+        "Números 7:89",
+        "Hebreus 9:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 25:17, qual palavra nomeia a tampa de ouro da arca?",
+      "verseRef": "Êxodo 25:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "candeeiro"
+        },
+        {
+          "id": "c",
+          "text": "reposteiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um propiciatório de ouro puro",
+      "feedbackCorrect": "A palavra-chave da cena é propiciatório.",
+      "feedbackWrong": {
+        "b": "Não é o candeeiro neste versículo.",
+        "c": "O texto fala do propiciatório."
+      },
+      "hint": "É o objeto que se fará de ouro puro.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": [
+        "Êxodo 25:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 25:22 a Hebreus 9:5?",
+      "verseRef": "Êxodo 25:22",
+      "passageA": {
+        "ref": "Êxodo 25:22"
+      },
+      "passageB": {
+        "ref": "Hebreus 9:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Querubins e propiciatório"
+        },
+        {
+          "id": "b",
+          "text": "Altar de bronze no átrio"
+        },
+        {
+          "id": "c",
+          "text": "Maná no deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entre os dois querubins",
+      "feedbackCorrect": "Hebreus ecoa os querubins sobre o propiciatório.",
+      "feedbackWrong": {
+        "b": "O elo é querubins e propiciatório.",
+        "c": "Maná não é o tema destes textos."
+      },
+      "hint": "Quais figuras Hebreus menciona sobre a arca?",
+      "learningObjective": "Ligar Êxodo a Hebreus no propiciatório.",
+      "evidence": [
+        "Êxodo 25:22",
+        "Hebreus 9:5"
+      ]
+    }
+  ]
+}

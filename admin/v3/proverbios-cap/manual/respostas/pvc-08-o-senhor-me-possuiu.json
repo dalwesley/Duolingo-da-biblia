@@ -1,0 +1,719 @@
+{
+ "study": {
+  "passageRef": "Provérbios 8:22–27",
+  "passages": [
+   {
+    "ref": "Provérbios 8:22–31"
+   }
+  ],
+  "context": "A sabedoria fala: o Senhor a possuía desde o princípio, antes da terra e dos abismos. Ela estava com ele na criação e se alegrava entre os filhos dos homens.",
+  "keyword": "Princípio",
+  "keywordGloss": "A sabedoria presente desde o início dos caminhos do Senhor, antes das obras antigas.",
+  "focusQuestion": "O que muda quando você lembra que a sabedoria é mais antiga que a sua pressa?",
+  "reflectionPrompts": [
+   "Antes da terra",
+   "Com ele na criação",
+   "Delícias entre os homens"
+  ],
+  "facts": [
+   {
+    "text": "O Senhor possuía a sabedoria como princípio de seus caminhos.",
+    "evidenceRef": "Provérbios 8:22",
+    "evidenceSpan": "O Senhor me possuía como o princípio de seus caminhos"
+   },
+   {
+    "text": "Ela foi estabelecida desde a eternidade, antes da terra.",
+    "evidenceRef": "Provérbios 8:23",
+    "evidenceSpan": "Desde a eternidade fui estabelecida"
+   },
+   {
+    "text": "Foi gerada antes dos abismos e das fontes.",
+    "evidenceRef": "Provérbios 8:24",
+    "evidenceSpan": "Antes de haver abismos, fui gerada"
+   },
+   {
+    "text": "Quando ele preparava os céus, ela estava ali.",
+    "evidenceRef": "Provérbios 8:27",
+    "evidenceSpan": "Quando ele preparava os céus, ali estava eu"
+   },
+   {
+    "text": "Estava com ele como arquiteto, suas delícias dia após dia.",
+    "evidenceRef": "Provérbios 8:30",
+    "evidenceSpan": "eu estava com ele como um arquiteto"
+   },
+   {
+    "text": "Encontrava delícias entre os filhos dos homens.",
+    "evidenceRef": "Provérbios 8:31",
+    "evidenceSpan": "encontrando as minhas delícias entre os filhos dos homens"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "possuía",
+    "gloss": "O Senhor tinha a sabedoria desde o princípio."
+   },
+   {
+    "term": "arquiteto",
+    "gloss": "Imagem da sabedoria junto ao Senhor na obra."
+   },
+   {
+    "term": "eternidade",
+    "gloss": "Horizonte temporal: antes do começo da terra."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Possuída desde o princípio",
+    "evidenceRef": "Provérbios 8:22–23"
+   },
+   {
+    "label": "Antes de abismos e montes",
+    "evidenceRef": "Provérbios 8:24–26"
+   },
+   {
+    "label": "Presente na preparação dos céus",
+    "evidenceRef": "Provérbios 8:27–29"
+   },
+   {
+    "label": "Delícias com Deus e com os homens",
+    "evidenceRef": "Provérbios 8:30–31"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "sequência",
+    "text": "Então ela estava com ele como arquiteto, após a firmamento da terra.",
+    "marker": "Então",
+    "evidenceRef": "Provérbios 8:30"
+   },
+   {
+    "kind": "contraste",
+    "text": "Antes de haver terra e abismos, ela já havia sido gerada.",
+    "marker": "Antes",
+    "evidenceRef": "Provérbios 8:24"
+   },
+   {
+    "kind": "resultado",
+    "text": "Sua alegria resulta em delícias entre os filhos dos homens.",
+    "marker": null,
+    "evidenceRef": "Provérbios 8:31"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "João 1:1",
+    "bridge": "No princípio era o Verbo"
+   },
+   {
+    "ref": "João 1:3",
+    "bridge": "Tudo feito por meio dele"
+   },
+   {
+    "ref": "Colossenses 1:16",
+    "bridge": "Tudo criado nele"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A sabedoria surgiu só depois que o mundo já estava pronto.",
+    "why": "8:22–26 a coloca antes da terra, dos abismos e dos montes."
+   },
+   {
+    "text": "Ela estava ausente quando Deus preparava os céus.",
+    "why": "8:27 diz: quando ele preparava os céus, ali estava eu."
+   },
+   {
+    "text": "A alegria da sabedoria fica só no céu, longe dos homens.",
+    "why": "8:31 fala de delícias entre os filhos dos homens."
+   }
+  ],
+  "centralInsight": "Antes da criação, a sabedoria estava com Deus — e ainda chama à vida.",
+  "anchorQuestion": "Desde quando Provérbios 8:22 diz que o Senhor possuía a sabedoria?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Provérbios 8:22, a sabedoria diz que o Senhor a possuía só depois de criar a terra.",
+   "verseRef": "Provérbios 8:22",
+   "correctOptionId": "false",
+   "evidenceSpan": "antes de suas obras mais antigas",
+   "feedbackCorrect": "Ela é princípio dos caminhos, antes das obras mais antigas.",
+   "feedbackWrong": {
+    "true": "Releia 8:22: antes das obras mais antigas."
+   },
+   "hint": "Veja a expressão temporal no fim.",
+   "learningObjective": "Observar a anterioridade da sabedoria.",
+   "evidence": [
+    "Provérbios 8:22"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Provérbios 8:22, toque quem possuía a sabedoria.",
+   "verseRef": "Provérbios 8:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor"
+    },
+    {
+     "id": "b",
+     "text": "obras"
+    },
+    {
+     "id": "c",
+     "text": "caminhos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Senhor me possuía",
+   "feedbackCorrect": "Quem possuía é o Senhor, desde o princípio.",
+   "feedbackWrong": {
+    "b": "\"Obras\" são posteriores; quem possui é o Senhor.",
+    "c": "Os caminhos são o âmbito; o sujeito é o Senhor."
+   },
+   "hint": "Sujeito no começo do versículo.",
+   "learningObjective": "Identificar quem possui a sabedoria.",
+   "evidence": [
+    "Provérbios 8:22"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Provérbios 8:27, onde estava a sabedoria quando os céus eram preparados?",
+   "verseRef": "Provérbios 8:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ali, presente com ele"
+    },
+    {
+     "id": "b",
+     "text": "Ausente até o fim da obra"
+    },
+    {
+     "id": "c",
+     "text": "Só entre os homens, longe"
+    },
+    {
+     "id": "d",
+     "text": "Ainda não existia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ali estava eu",
+   "feedbackCorrect": "Quando ele preparava os céus, ela estava ali.",
+   "feedbackWrong": {
+    "b": "O texto diz que ela estava ali.",
+    "c": "Aqui ela está na preparação dos céus.",
+    "d": "Ela já fala de si como presente."
+   },
+   "hint": "Fim da primeira cláusula.",
+   "learningObjective": "Observar a presença na criação.",
+   "evidence": [
+    "Provérbios 8:27"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Provérbios 8:22 na ordem do texto.",
+   "verseRef": "Provérbios 8:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor me possuía como o princípio de seus caminhos"
+    },
+    {
+     "id": "b",
+     "text": "desde o início"
+    },
+    {
+     "id": "c",
+     "text": "antes de suas obras mais antigas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O Senhor me possuía como o princípio de seus caminhos",
+   "feedbackCorrect": "Possuir, início e anterioridade às obras, nesta ordem.",
+   "feedbackWrong": {
+    "default": "Comece pela posse do Senhor."
+   },
+   "hint": "O versículo abre com O Senhor.",
+   "learningObjective": "Seguir a ordem de 8:22.",
+   "evidence": [
+    "Provérbios 8:22"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Provérbios 8:30, como a sabedoria estava com ele?",
+   "verseRef": "Provérbios 8:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "arquiteto"
+    },
+    {
+     "id": "b",
+     "text": "rival"
+    },
+    {
+     "id": "c",
+     "text": "sombra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "como um arquiteto",
+   "feedbackCorrect": "Estava com ele como um arquiteto, suas delícias dia após dia.",
+   "feedbackWrong": {
+    "b": "Não é rival; é arquiteto.",
+    "c": "Não é sombra; é arquiteto."
+   },
+   "hint": "Comparação no meio do versículo.",
+   "learningObjective": "Lembrar a imagem junto ao Senhor.",
+   "evidence": [
+    "Provérbios 8:30"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Provérbios 8:22 comunica que se liga a este contexto?",
+   "verseRef": "Provérbios 8:22",
+   "passageA": {
+    "ref": "Provérbios 8:22",
+    "text": "O Senhor me possuía como o princípio de seus caminhos"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Antes da criação, a sabedoria já estava com Deus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria tardia"
+    },
+    {
+     "id": "b",
+     "text": "Presença desde o princípio"
+    },
+    {
+     "id": "c",
+     "text": "Ausência na criação"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "princípio de seus caminhos",
+   "feedbackCorrect": "O princípio dos caminhos liga o versículo à anterioridade da cena.",
+   "feedbackWrong": {
+    "a": "O texto a põe no princípio, não tarde.",
+    "c": "Ela é possuída desde o início."
+   },
+   "hint": "Foque a palavra princípio.",
+   "learningObjective": "Ligar 8:22 à anterioridade.",
+   "evidence": [
+    "Provérbios 8:22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Provérbios 8:30, a palavra Então marca a presença da sabedoria com o Senhor na obra.",
+   "verseRef": "Provérbios 8:30",
+   "correctOptionId": "true",
+   "evidenceSpan": "Então eu estava com ele como um arquiteto",
+   "feedbackCorrect": "\"Então\" introduz sua presença como arquiteto junto dele.",
+   "feedbackWrong": {
+    "false": "Releia o começo de 8:30: Então eu estava com ele."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Compreender o marcador de sequência em 8:30.",
+   "evidence": [
+    "Provérbios 8:30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Provérbios 8:30, toque a palavra que marca a sequência da presença.",
+   "verseRef": "Provérbios 8:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então"
+    },
+    {
+     "id": "b",
+     "text": "delícias"
+    },
+    {
+     "id": "c",
+     "text": "tempo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então eu estava com ele",
+   "feedbackCorrect": "\"Então\" liga a obra descrita antes à presença dela.",
+   "feedbackWrong": {
+    "b": "\"Delícias\" descreve a alegria; o marcador é Então.",
+    "c": "\"Tempo\" fecha a frase; não marca a sequência."
+   },
+   "hint": "Abertura do versículo.",
+   "learningObjective": "Reconhecer o marcador de sequência.",
+   "evidence": [
+    "Provérbios 8:30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Que relação Provérbios 8:22–27 estabelece?",
+   "verseRef": "Provérbios 8:22–23",
+   "options": [
+    {
+     "id": "a",
+     "text": "A sabedoria precede a terra e está na preparação dos céus"
+    },
+    {
+     "id": "b",
+     "text": "A sabedoria nasce só depois dos montes"
+    },
+    {
+     "id": "c",
+     "text": "Ela falta quando os céus são preparados"
+    },
+    {
+     "id": "d",
+     "text": "A eternidade começa após a terra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Desde a eternidade fui estabelecida",
+   "feedbackCorrect": "Anterioridade e presença na obra andam juntas no texto.",
+   "feedbackWrong": {
+    "b": "8:25 a põe antes dos montes.",
+    "c": "8:27 diz que ela estava ali.",
+    "d": "Ela é desde a eternidade, antes da terra."
+   },
+   "hint": "Una 8:23 e 8:27.",
+   "learningObjective": "Relacionar anterioridade e presença.",
+   "evidence": [
+    "Provérbios 8:23",
+    "Provérbios 8:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança Provérbios 8:22–31?",
+   "verseRef": "Provérbios 8:22–23",
+   "options": [
+    {
+     "id": "a",
+     "text": "Possuída desde o princípio"
+    },
+    {
+     "id": "b",
+     "text": "Presente na preparação dos céus"
+    },
+    {
+     "id": "c",
+     "text": "Delícias com Deus e com os homens"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O Senhor me possuía como o princípio de seus caminhos",
+   "feedbackCorrect": "Da posse antiga à obra e à alegria com os homens.",
+   "feedbackWrong": {
+    "default": "As delícias com os homens fecham o trecho."
+   },
+   "hint": "O fim fala dos filhos dos homens.",
+   "learningObjective": "Compreender o movimento do poema.",
+   "evidence": [
+    "Provérbios 8:22",
+    "Provérbios 8:27",
+    "Provérbios 8:31"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Provérbios 8:24, que palavra marca a anterioridade aos abismos?",
+   "verseRef": "Provérbios 8:24",
+   "options": [
+    {
+     "id": "a",
+     "text": "Antes"
+    },
+    {
+     "id": "b",
+     "text": "Depois"
+    },
+    {
+     "id": "c",
+     "text": "Durante"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Antes de haver abismos",
+   "feedbackCorrect": "\"Antes\" carrega a relação temporal da geração da sabedoria.",
+   "feedbackWrong": {
+    "b": "Não é depois; é antes.",
+    "c": "Não é durante; é antes."
+   },
+   "hint": "Primeira palavra do versículo.",
+   "learningObjective": "Lembrar o marcador de anterioridade.",
+   "evidence": [
+    "Provérbios 8:24"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Provérbios 8:22 a João 1:1?",
+   "verseRef": "Provérbios 8:22",
+   "passageA": {
+    "ref": "Provérbios 8:22"
+   },
+   "passageB": {
+    "ref": "João 1:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "No princípio com Deus"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria só humana"
+    },
+    {
+     "id": "c",
+     "text": "Criação sem presença"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "princípio de seus caminhos",
+   "feedbackCorrect": "Princípio e posse junto ao Senhor ecoam no Verbo no princípio.",
+   "feedbackWrong": {
+    "b": "O horizonte é divino, não só humano.",
+    "c": "Há presença desde o princípio."
+   },
+   "hint": "Compare a palavra princípio.",
+   "learningObjective": "Cruzar o princípio em Provérbios e João.",
+   "evidence": [
+    "Provérbios 8:22",
+    "João 1:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Provérbios 8:31, a sabedoria encontra delícias apenas longe dos filhos dos homens.",
+   "verseRef": "Provérbios 8:31",
+   "correctOptionId": "false",
+   "evidenceSpan": "encontrando as minhas delícias entre os filhos dos homens",
+   "feedbackCorrect": "O texto diz delícias entre os filhos dos homens.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 8:31: entre os filhos dos homens."
+   },
+   "hint": "Veja onde ela encontra delícias.",
+   "learningObjective": "Corrigir a leitura de uma sabedoria distante.",
+   "evidence": [
+    "Provérbios 8:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Provérbios 8:31, toque o trecho que sustenta a alegria junto aos homens.",
+   "verseRef": "Provérbios 8:31",
+   "options": [
+    {
+     "id": "a",
+     "text": "filhos dos homens"
+    },
+    {
+     "id": "b",
+     "text": "mundo"
+    },
+    {
+     "id": "c",
+     "text": "Alegre"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "delícias entre os filhos dos homens",
+   "feedbackCorrect": "\"Filhos dos homens\" sustenta a alegria próxima da humanidade.",
+   "feedbackWrong": {
+    "b": "\"Mundo\" é o cenário habitável; o foco é os filhos dos homens.",
+    "c": "\"Alegre\" descreve o ânimo; o lugar é entre os homens."
+   },
+   "hint": "Fim do versículo.",
+   "learningObjective": "Sustentar no texto a alegria com a humanidade.",
+   "evidence": [
+    "Provérbios 8:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Provérbios 8:22–31 sustenta?",
+   "verseRef": "Provérbios 8:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "A sabedoria precede a criação e se alegra com Deus e com os homens"
+    },
+    {
+     "id": "b",
+     "text": "A sabedoria surge só depois do mundo pronto"
+    },
+    {
+     "id": "c",
+     "text": "Ela esteve ausente na preparação dos céus"
+    },
+    {
+     "id": "d",
+     "text": "Sua alegria nunca toca os filhos dos homens"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Senhor me possuía como o princípio de seus caminhos",
+   "feedbackCorrect": "Anterioridade, presença na obra e delícias com os homens.",
+   "feedbackWrong": {
+    "b": "8:22–26 a põe antes.",
+    "c": "8:27 a põe ali.",
+    "d": "8:31 fala dos filhos dos homens."
+   },
+   "hint": "Una princípio, ali estava eu e delícias.",
+   "learningObjective": "Escolher a leitura que o texto sustenta.",
+   "evidence": [
+    "Provérbios 8:22",
+    "Provérbios 8:31"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência liga a sabedoria na criação?",
+   "verseRef": "Provérbios 8:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Senhor possuía a sabedoria no princípio"
+    },
+    {
+     "id": "b",
+     "text": "O Verbo estava no princípio com Deus"
+    },
+    {
+     "id": "c",
+     "text": "Tudo foi feito por meio dele"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "O Senhor me possuía como o princípio de seus caminhos",
+   "feedbackCorrect": "Provérbios 8 ecoa em João 1:1 e 1:3.",
+   "feedbackWrong": {
+    "default": "Comece por Provérbios 8:22; depois João 1:1 e 1:3."
+   },
+   "hint": "Do AT ao prólogo de João.",
+   "learningObjective": "Ver a sabedoria na criação no fio bíblico.",
+   "evidence": [
+    "Provérbios 8:22",
+    "João 1:1",
+    "João 1:3"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Provérbios 8:23, desde quando a sabedoria foi estabelecida?",
+   "verseRef": "Provérbios 8:23",
+   "options": [
+    {
+     "id": "a",
+     "text": "eternidade"
+    },
+    {
+     "id": "b",
+     "text": "ontem"
+    },
+    {
+     "id": "c",
+     "text": "sega"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Desde a eternidade fui estabelecida",
+   "feedbackCorrect": "\"Eternidade\" carrega o horizonte teológico da cena.",
+   "feedbackWrong": {
+    "b": "Não é ontem; é desde a eternidade.",
+    "c": "Sega não aparece; é eternidade."
+   },
+   "hint": "Tempo no começo do versículo.",
+   "learningObjective": "Lembrar o termo da anterioridade.",
+   "evidence": [
+    "Provérbios 8:23"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Provérbios 8:27 a João 1:3?",
+   "verseRef": "Provérbios 8:27",
+   "passageA": {
+    "ref": "Provérbios 8:27",
+    "text": "ali estava eu"
+   },
+   "passageB": {
+    "ref": "João 1:3"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Presença na criação"
+    },
+    {
+     "id": "b",
+     "text": "Ausência na obra"
+    },
+    {
+     "id": "c",
+     "text": "Criação sem sentido"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ali estava eu",
+   "feedbackCorrect": "Estar ali na preparação dos céus ecoa em tudo feito por meio do Verbo.",
+   "feedbackWrong": {
+    "b": "Os textos afirmam presença, não ausência.",
+    "c": "Há ordem e presença na obra."
+   },
+   "hint": "Compare presença na obra criadora.",
+   "learningObjective": "Ligar a presença de Provérbios a João.",
+   "evidence": [
+    "Provérbios 8:27",
+    "João 1:3"
+   ]
+  }
+ ]
+}

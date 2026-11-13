@@ -1,0 +1,707 @@
+{
+  "study": {
+    "passageRef": "Jeremias 43:1–6",
+    "passages": [
+      {
+        "ref": "Jeremias 43:1–6"
+      }
+    ],
+    "context": "Neste trecho, a palavra do Senhor alcança o povo com juízo e esperança. Observe o que o texto afirma antes de interpretar.",
+    "keyword": "aconteceu",
+    "keywordGloss": "Termo do trecho ligado ao sentido da cena.",
+    "focusQuestion": "O que este trecho pede de você diante do Senhor?",
+    "reflectionPrompts": [
+      "Ouvir a palavra",
+      "Confiar no Senhor",
+      "Responder com fé"
+    ],
+    "facts": [
+      {
+        "text": "Em Jeremias 43:1, o texto registra: E aconteceu que, após Jeremias ter acabado de.",
+        "evidenceRef": "Jeremias 43:1",
+        "evidenceSpan": "E aconteceu que, após Jeremias ter acabado de"
+      },
+      {
+        "text": "Em Jeremias 43:2, o texto registra: Azarias, filho de Hosaías, e Joanã, filho de.",
+        "evidenceRef": "Jeremias 43:2",
+        "evidenceSpan": "Azarias, filho de Hosaías, e Joanã, filho de"
+      },
+      {
+        "text": "Em Jeremias 43:3, o texto registra: Antes, Baruque, filho de Nerias, o incita contra.",
+        "evidenceRef": "Jeremias 43:3",
+        "evidenceSpan": "Antes, Baruque, filho de Nerias, o incita contra"
+      },
+      {
+        "text": "Em Jeremias 43:4, o texto registra: Joanã, filho de Careá, e todos os capitães.",
+        "evidenceRef": "Jeremias 43:4",
+        "evidenceSpan": "Joanã, filho de Careá, e todos os capitães"
+      },
+      {
+        "text": "Em Jeremias 43:5, o texto registra: Então, Joanã, filho de Careá, e todos os.",
+        "evidenceRef": "Jeremias 43:5",
+        "evidenceSpan": "Então, Joanã, filho de Careá, e todos os"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "aconteceu",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "após",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      },
+      {
+        "term": "Jeremias",
+        "gloss": "Termo do trecho ligado ao sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "aconteceu após Jeremias acabado",
+        "evidenceRef": "Jeremias 43:1"
+      },
+      {
+        "label": "Azarias filho Hosaías Joanã",
+        "evidenceRef": "Jeremias 43:2"
+      },
+      {
+        "label": "Antes Baruque filho Nerias",
+        "evidenceRef": "Jeremias 43:3"
+      },
+      {
+        "label": "Joanã filho Careá todos",
+        "evidenceRef": "Jeremias 43:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Relação de causa presente em Jeremias 43:5.",
+        "marker": "Então",
+        "evidenceRef": "Jeremias 43:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Relação de contraste presente em Jeremias 43:2.",
+        "marker": null,
+        "evidenceRef": "Jeremias 43:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Relação de resultado presente em Jeremias 43:3.",
+        "marker": null,
+        "evidenceRef": "Jeremias 43:3"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 6:8",
+        "bridge": "Envio do profeta"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro pedido"
+      },
+      {
+        "ref": "Deuteronômio 30:2",
+        "bridge": "Voltar ao Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não exige mudança concreta de vida.",
+        "why": "A palavra do Senhor chama a ouvir e agir."
+      },
+      {
+        "text": "A mensagem vale só para lideranças, nunca para o povo.",
+        "why": "O endereço do texto alcança o povo e a cidade."
+      },
+      {
+        "text": "O Senhor anuncia sem compromisso com o cumprimento.",
+        "why": "O texto liga a palavra de Deus ao que Ele faz."
+      }
+    ],
+    "centralInsight": "Não obedeceram à voz do Senhor, para ficarem na terra de Judá.",
+    "anchorQuestion": "O que Jeremias 43:1 afirma de modo claro?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Jeremias 43:1, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 43:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "E aconteceu que, após Jeremias ter acabado de falar a",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 43:1.",
+      "evidence": [
+        "Jeremias 43:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Jeremias 43:2, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 43:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azarias"
+        },
+        {
+          "id": "b",
+          "text": "filho"
+        },
+        {
+          "id": "c",
+          "text": "Hosaías"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Azarias, filho",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 43:2.",
+      "evidence": [
+        "Jeremias 43:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Jeremias 43:3, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 43:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antes, Baruque, filho de Nerias, o incita"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Antes, Baruque, filho de Nerias, o incita",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 43:3.",
+      "evidence": [
+        "Jeremias 43:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 43:4.",
+      "verseRef": "Jeremias 43:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joanã, filho de Careá, e todos os capitães dos exércitos"
+        },
+        {
+          "id": "b",
+          "text": "assim como todo o povo não obedeceram à voz do SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "para permanecerem na terra de Judá."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Joanã, filho de Careá, e todos os capitães dos exé",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 43:4.",
+      "evidence": [
+        "Jeremias 43:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Jeremias 43:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 43:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joanã"
+        },
+        {
+          "id": "b",
+          "text": "filho"
+        },
+        {
+          "id": "c",
+          "text": "Careá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, Joanã, filho de",
+      "feedbackCorrect": "A palavra do texto é Joanã.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 43:5.",
+      "evidence": [
+        "Jeremias 43:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Jeremias 43:6 comunica que se liga a este contexto?",
+      "verseRef": "Jeremias 43:6",
+      "passageA": {
+        "ref": "Jeremias 43:6",
+        "text": "Tomaram os homens, as mulheres, os meninos, as filhas do rei e a todos que Nebuz"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor dirige a palavra ao seu povo neste trecho."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra ao povo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Sem chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tomaram os homens, as mulheres, os meninos, as fil",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 43:6.",
+      "evidence": [
+        "Jeremias 43:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Jeremias 43:3, o texto inclui a ideia de Antes, Baruque, filho de Nerias, o.",
+      "verseRef": "Jeremias 43:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Antes, Baruque, filho de Nerias, o incita contra nós, para",
+      "feedbackCorrect": "A afirmação acompanha o que o texto diz.",
+      "feedbackWrong": {
+        "false": "O versículo sustenta essa afirmação."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 43:3.",
+      "evidence": [
+        "Jeremias 43:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Jeremias 43:4, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 43:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "filho"
+        },
+        {
+          "id": "b",
+          "text": "Careá"
+        },
+        {
+          "id": "c",
+          "text": "todos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Joanã, filho de Care",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 43:4.",
+      "evidence": [
+        "Jeremias 43:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Jeremias 43:5, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 43:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, Joanã, filho de Careá, e todos os",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 43:5.",
+      "evidence": [
+        "Jeremias 43:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 43:6.",
+      "verseRef": "Jeremias 43:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomaram homens mulheres"
+        },
+        {
+          "id": "b",
+          "text": "meninos filhas todos Nebuzaradã"
+        },
+        {
+          "id": "c",
+          "text": "chefe guarda havia deixado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Tomaram os homens, as mulheres, os meninos, as fil",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 43:6.",
+      "evidence": [
+        "Jeremias 43:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Jeremias 43:1, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 43:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "aconteceu"
+        },
+        {
+          "id": "b",
+          "text": "após"
+        },
+        {
+          "id": "c",
+          "text": "Jeremias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E aconteceu que, após",
+      "feedbackCorrect": "A palavra do texto é aconteceu.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 43:1.",
+      "evidence": [
+        "Jeremias 43:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Jeremias 43:2 a Isaías 6:8?",
+      "verseRef": "Jeremias 43:2",
+      "passageA": {
+        "ref": "Jeremias 43:2",
+        "text": "Azarias, filho de Hosaías, e Joanã, filho de Careá, e todos os homens soberbos d"
+      },
+      "passageB": {
+        "ref": "Isaías 6:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Envio do profeta"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Azarias, filho de Hosaías, e Joanã, filho de Careá",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 43:2.",
+      "evidence": [
+        "Jeremias 43:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Jeremias 43:5, o versículo nega tudo o que ele próprio afirma.",
+      "verseRef": "Jeremias 43:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Então, Joanã, filho de Careá, e todos os capitães dos",
+      "feedbackCorrect": "O versículo não sustenta essa negação total.",
+      "feedbackWrong": {
+        "true": "A afirmação contradiz o versículo."
+      },
+      "hint": "Compare a frase com o versículo.",
+      "learningObjective": "Avaliar a afirmação com Jeremias 43:5.",
+      "evidence": [
+        "Jeremias 43:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Jeremias 43:6, toque a expressão pedida no versículo.",
+      "verseRef": "Jeremias 43:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomaram"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "mulheres"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tomaram os home",
+      "feedbackCorrect": "A expressão está no texto.",
+      "feedbackWrong": {
+        "b": "Não é o trecho pedido.",
+        "c": "Não é o trecho pedido."
+      },
+      "hint": "Procure no versículo a expressão que responde.",
+      "learningObjective": "Tocar a expressão em Jeremias 43:6.",
+      "evidence": [
+        "Jeremias 43:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Jeremias 43:1, qual leitura o texto sustenta?",
+      "verseRef": "Jeremias 43:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor age conforme a sua palavra neste trecho"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor permanece em silêncio absoluto"
+        },
+        {
+          "id": "c",
+          "text": "O povo já cumpriu tudo sem falha"
+        },
+        {
+          "id": "d",
+          "text": "Não há chamada prática no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E aconteceu que, após Jeremias ter acabado de",
+      "feedbackCorrect": "Essa opção acompanha o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto mostra Deus falando e agindo.",
+        "c": "O trecho confronta falhas, não perfeição.",
+        "d": "Há exigência e conteúdo claros."
+      },
+      "hint": "Fique com o que o versículo realmente afirma.",
+      "learningObjective": "Escolher a leitura de Jeremias 43:1.",
+      "evidence": [
+        "Jeremias 43:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o movimento de Jeremias 43:2.",
+      "verseRef": "Jeremias 43:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azarias filho Hosaías"
+        },
+        {
+          "id": "b",
+          "text": "Joanã filho Careá todos"
+        },
+        {
+          "id": "c",
+          "text": "morar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Azarias, filho de Hosaías, e Joanã, filho de Careá",
+      "feedbackCorrect": "Essa é a ordem do trecho.",
+      "feedbackWrong": {
+        "default": "Releia e siga a sequência do texto."
+      },
+      "hint": "Siga a ordem das ideias no versículo.",
+      "learningObjective": "Ordenar Jeremias 43:2.",
+      "evidence": [
+        "Jeremias 43:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Jeremias 43:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Jeremias 43:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antes"
+        },
+        {
+          "id": "b",
+          "text": "Baruque"
+        },
+        {
+          "id": "c",
+          "text": "Nerias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Antes, Baruque",
+      "feedbackCorrect": "A palavra do texto é Antes.",
+      "feedbackWrong": {
+        "b": "Não é a palavra retirada.",
+        "c": "Não é a palavra retirada."
+      },
+      "hint": "A palavra certa aparece no versículo.",
+      "learningObjective": "Completar Jeremias 43:3.",
+      "evidence": [
+        "Jeremias 43:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Jeremias 43:4 a Salmos 51:10?",
+      "verseRef": "Jeremias 43:4",
+      "passageA": {
+        "ref": "Jeremias 43:4",
+        "text": "Joanã, filho de Careá, e todos os capitães dos exércitos, assim como todo o povo"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro pedido"
+        },
+        {
+          "id": "b",
+          "text": "Nada em comum"
+        },
+        {
+          "id": "c",
+          "text": "Só coincidência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Joanã, filho de Careá, e todos os capitães dos exé",
+      "feedbackCorrect": "A ponte correta nomeia o tema comum.",
+      "feedbackWrong": {
+        "b": "Há ligação temática.",
+        "c": "A ponte descreve o tema compartilhado."
+      },
+      "hint": "Pense no tema compartilhado entre os lados.",
+      "learningObjective": "Conectar Jeremias 43:4.",
+      "evidence": [
+        "Jeremias 43:4"
+      ]
+    }
+  ]
+}

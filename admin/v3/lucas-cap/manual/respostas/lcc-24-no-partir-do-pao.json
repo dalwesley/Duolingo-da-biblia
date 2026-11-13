@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Lucas 24:30–35",
+    "passages": [
+      { "ref": "Lucas 24:30–35" },
+      { "ref": "Lucas 24:28–29" }
+    ],
+    "context": "Dois discípulos vão a uma aldeia com um caminhante ainda desconhecido. Na chegada, o dia declina, e eles não querem que ele siga viagem.",
+    "keyword": "partir o pão",
+    "keywordGloss": "É o gesto à mesa em que os olhos se abrem e o caminhante é reconhecido.",
+    "focusQuestion": "O que você faz quando percebe que Jesus esteve perto e você ainda não o reconheceu?",
+    "reflectionPrompts": [
+      "O pedido para ficar",
+      "Olhos que se abrem",
+      "Coração no caminho"
+    ],
+    "facts": [
+      {
+        "text": "Eles o constrangeram a ficar, porque já era tarde e o dia declinava.",
+        "evidenceRef": "Lucas 24:29",
+        "evidenceSpan": "pois já é tarde e o dia já declina"
+      },
+      {
+        "text": "À mesa, ele tomou o pão, abençoou-o, partiu-o e lhes deu.",
+        "evidenceRef": "Lucas 24:30",
+        "evidenceSpan": "tomou o pão, abençoou-o, partiu-o e lhes deu"
+      },
+      {
+        "text": "Os olhos deles foram abertos, eles o reconheceram, e ele desapareceu da vista deles.",
+        "evidenceRef": "Lucas 24:31",
+        "evidenceSpan": "os olhos deles foram abertos e o reconheceram, mas ele desapareceu de sua vista"
+      },
+      {
+        "text": "O coração deles ardia quando ele falava pelo caminho e expunha as Escrituras.",
+        "evidenceRef": "Lucas 24:32",
+        "evidenceSpan": "ardia o nosso coração quando ele nos falava pelo caminho e nos expunha as Escrituras"
+      },
+      {
+        "text": "A notícia em Jerusalém é que o Senhor ressuscitou e já se apresentou a Simão.",
+        "evidenceRef": "Lucas 24:34",
+        "evidenceSpan": "o Senhor ressuscitou e já se apresentou a Simão"
+      },
+      {
+        "text": "Eles relataram que ele foi reconhecido ao partir o pão.",
+        "evidenceRef": "Lucas 24:35",
+        "evidenceSpan": "foi reconhecido ao partir o pão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pão",
+        "gloss": "O alimento que ele toma, abençoa, parte e dá, e no qual é reconhecido."
+      },
+      {
+        "term": "coração",
+        "gloss": "O que ardia neles no caminho, enquanto ele falava e expunha as Escrituras."
+      },
+      {
+        "term": "ressuscitou",
+        "gloss": "O que se anuncia sobre o Senhor em Jerusalém, antes do relato dos dois."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O pedido faz o caminhante ficar",
+        "evidenceRef": "Lucas 24:29"
+      },
+      {
+        "label": "O pão partido abre os olhos",
+        "evidenceRef": "Lucas 24:30–31"
+      },
+      {
+        "label": "A memória do caminho os faz voltar",
+        "evidenceRef": "Lucas 24:32–33"
+      },
+      {
+        "label": "O anúncio confirma o Senhor vivo",
+        "evidenceRef": "Lucas 24:34–35"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Eles pedem que ele fique porque já é tarde e o dia declina.",
+        "marker": "pois",
+        "evidenceRef": "Lucas 24:29"
+      },
+      {
+        "kind": "resultado",
+        "text": "Depois do pão à mesa, os olhos se abrem e eles o reconhecem.",
+        "marker": "Então",
+        "evidenceRef": "Lucas 24:31"
+      },
+      {
+        "kind": "contraste",
+        "text": "Eles o reconhecem, mas ele desaparece da vista deles.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 24:31"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Atos 2:42", "bridge": "No partir do pão" },
+      { "ref": "João 21:12–13", "bridge": "Reconhecem o Senhor" },
+      { "ref": "1 Coríntios 15:5", "bridge": "Visto por Cefas" }
+    ],
+    "misreadings": [
+      {
+        "text": "O coração só passou a arder depois que eles o reconheceram à mesa.",
+        "why": "Eles situam o ardor no caminho, enquanto ele falava e expunha as Escrituras, antes desse reconhecimento."
+      },
+      {
+        "text": "Eles o reconheceram porque ele permaneceu visível o tempo todo.",
+        "why": "Ao reconhecê-lo, ele desapareceu da vista deles. A presença visível não continuou."
+      },
+      {
+        "text": "Eles já sabiam quem era o caminhante desde o início do caminho.",
+        "why": "Os olhos foram abertos só à mesa. Antes disso, ainda não o reconheciam."
+      }
+    ],
+    "centralInsight": "Jesus ressuscitado se revela ao partir o pão e faz o coração arder.",
+    "anchorQuestion": "Em que gesto os discípulos reconheceram Jesus à mesa?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 24:31, os olhos deles foram abertos e ele permaneceu visível diante deles.",
+      "verseRef": "Lucas 24:31",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele desapareceu de sua vista",
+      "feedbackCorrect": "Os olhos se abrem e eles o reconhecem, mas ele desaparece da vista.",
+      "feedbackWrong": {
+        "true": "O versículo não para no reconhecimento. Em seguida ele desaparece da vista."
+      },
+      "hint": "Leia o que ocorre com ele logo após o reconhecimento.",
+      "learningObjective": "Observar que, ao ser reconhecido, ele desaparece da vista deles.",
+      "evidence": ["Lucas 24:31"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 24:30, toque o que ele tomou com as mãos.",
+      "verseRef": "Lucas 24:30",
+      "options": [
+        { "id": "a", "text": "o pão" },
+        { "id": "b", "text": "à mesa" },
+        { "id": "c", "text": "lhes deu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou o pão",
+      "feedbackCorrect": "À mesa ele toma o pão, e é esse alimento que parte e entrega.",
+      "feedbackWrong": {
+        "b": "À mesa indica o lugar. A pergunta pede o que ele tomou.",
+        "c": "Dar é o que ele faz depois. A pergunta pede o que ele tomou."
+      },
+      "hint": "Procure o alimento que ele toma nas mãos.",
+      "learningObjective": "Identificar o que ele toma quando estão à mesa.",
+      "evidence": ["Lucas 24:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lucas 24:33, para onde os dois voltaram naquela mesma hora?",
+      "verseRef": "Lucas 24:33",
+      "options": [
+        { "id": "a", "text": "Para Jerusalém, onde estavam os onze" },
+        { "id": "b", "text": "Para a aldeia, a fim de pernoitar" },
+        { "id": "c", "text": "Para o caminho, atrás do caminhante" },
+        { "id": "d", "text": "Para a casa de Simão, ainda à mesa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltaram para Jerusalém, onde acharam reunidos os onze",
+      "feedbackCorrect": "Naquela mesma hora eles se levantam e voltam para Jerusalém.",
+      "feedbackWrong": {
+        "b": "Eles não permanecem na aldeia. A volta é imediata.",
+        "c": "O texto não os manda seguir o caminhante. O rumo é Jerusalém.",
+        "d": "Simão aparece em outro versículo. Aqui o destino é Jerusalém."
+      },
+      "hint": "Veja o lugar nomeado depois que eles se levantam.",
+      "learningObjective": "Reconhecer o destino da volta naquela mesma hora.",
+      "evidence": ["Lucas 24:33"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 24:30 na ordem do texto.",
+      "verseRef": "Lucas 24:30",
+      "options": [
+        { "id": "a", "text": "E aconteceu que, estando eles à mesa" },
+        { "id": "b", "text": "tomou o pão, abençoou-o" },
+        { "id": "c", "text": "partiu-o e lhes deu" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tomou o pão, abençoou-o, partiu-o e lhes deu",
+      "feedbackCorrect": "A frase vai da mesa ao pão abençoado e termina na entrega.",
+      "feedbackWrong": {
+        "default": "Comece pela mesa. Depois o pão é tomado e abençoado. A entrega fecha."
+      },
+      "hint": "Siga a frase desde o momento em que estão à mesa.",
+      "learningObjective": "Reconhecer a sequência dos gestos à mesa em Lucas 24:30.",
+      "evidence": ["Lucas 24:30"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 24:29, o que o dia já faz na fala dos dois?",
+      "verseRef": "Lucas 24:29",
+      "options": [
+        { "id": "a", "text": "declina" },
+        { "id": "b", "text": "nasce" },
+        { "id": "c", "text": "chega" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o dia já declina",
+      "feedbackCorrect": "O dia já declina. Por isso eles pedem que ele fique.",
+      "feedbackWrong": {
+        "b": "O dia não nasce nessa fala. O movimento é o oposto.",
+        "c": "A fala não diz que o dia chega. O verbo é outro."
+      },
+      "hint": "Olhe o verbo do dia no fim do convite.",
+      "learningObjective": "Lembrar o que o dia já faz quando eles pedem que ele fique.",
+      "evidence": ["Lucas 24:29"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 24:35 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 24:35",
+      "passageA": { "ref": "Lucas 24:35" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O caminhante é reconhecido quando o pão é partido à mesa."
+      },
+      "options": [
+        { "id": "a", "text": "Reconhecimento ao partir o pão" },
+        { "id": "b", "text": "Convite para seguir viagem" },
+        { "id": "c", "text": "Busca pelos onze reunidos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi reconhecido ao partir o pão",
+      "feedbackCorrect": "O versículo fecha a cena nesse reconhecimento, no gesto do pão.",
+      "feedbackWrong": {
+        "b": "Seguir em frente foi só uma menção dele. Eles pediram o contrário.",
+        "c": "Os onze surgem na volta. Este versículo fala do reconhecimento."
+      },
+      "hint": "Leia o fim do versículo, no modo do reconhecimento.",
+      "learningObjective": "Ligar o relato final ao reconhecimento no gesto do pão.",
+      "evidence": ["Lucas 24:35"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 24:29, eles o constrangeram a ficar porque o dia já declina.",
+      "verseRef": "Lucas 24:29",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois já é tarde e o dia já declina",
+      "feedbackCorrect": "O pois amarra o pedido à hora. Já é tarde e o dia declina.",
+      "feedbackWrong": {
+        "false": "O pedido traz um motivo. A hora do dia está na própria fala."
+      },
+      "hint": "Repare na palavra que liga o pedido à hora.",
+      "learningObjective": "Compreender a causa do pedido para que ele fique.",
+      "evidence": ["Lucas 24:29"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 24:31, toque a palavra que introduz o que acontece em seguida.",
+      "verseRef": "Lucas 24:31",
+      "options": [
+        { "id": "a", "text": "Então" },
+        { "id": "b", "text": "olhos" },
+        { "id": "c", "text": "desapareceu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, os olhos deles foram abertos",
+      "feedbackCorrect": "Então abre o versículo e marca o que segue o gesto à mesa.",
+      "feedbackWrong": {
+        "b": "Olhos diz o que se abre. A palavra que introduz a cena vem antes.",
+        "c": "Esse verbo é o desfecho. Quem introduz a sequência vem no início."
+      },
+      "hint": "Ela abre o versículo, antes de falar dos olhos.",
+      "learningObjective": "Reconhecer a palavra que marca o resultado depois da mesa.",
+      "evidence": ["Lucas 24:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que Lucas 24:31 mostra logo depois que eles o reconhecem?",
+      "verseRef": "Lucas 24:31",
+      "options": [
+        { "id": "a", "text": "Ele some da vista logo em seguida" },
+        { "id": "b", "text": "Ele permanece sentado e visível com eles" },
+        { "id": "c", "text": "O fato só se confirma em Jerusalém" },
+        { "id": "d", "text": "O coração deixa de arder nesse instante" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas ele desapareceu de sua vista",
+      "feedbackCorrect": "O reconhecimento e o sumiço vêm juntos. Ele não fica à vista.",
+      "feedbackWrong": {
+        "b": "O texto não o deixa sentado à vista. Ele some em seguida.",
+        "c": "O reconhecimento é à mesa, antes da volta a Jerusalém.",
+        "d": "O ardor é memória do caminho. Não se apaga nesse instante."
+      },
+      "hint": "Leia a frase que vem depois de eles o reconhecerem.",
+      "learningObjective": "Relacionar o reconhecimento ao desaparecimento da vista deles.",
+      "evidence": ["Lucas 24:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da cena, do pedido até a volta?",
+      "verseRef": "Lucas 24:29–30",
+      "options": [
+        { "id": "a", "text": "O pedido faz o caminhante ficar" },
+        { "id": "b", "text": "O pão partido abre os olhos" },
+        { "id": "c", "text": "A memória do caminho os faz voltar" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Fica conosco, pois já é tarde e o dia já declina",
+      "feedbackCorrect": "O pedido leva à mesa. Os olhos se abrem. A memória os traz de volta.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido para ficar. A mesa fica no meio. A volta fecha."
+      },
+      "hint": "O primeiro movimento é o pedido para ele ficar.",
+      "learningObjective": "Compreender os movimentos do pedido à mesa e à volta.",
+      "evidence": ["Lucas 24:29", "Lucas 24:30–31", "Lucas 24:32–33"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 24:32, o que fazia o coração deles no caminho?",
+      "verseRef": "Lucas 24:32",
+      "options": [
+        { "id": "a", "text": "ardia" },
+        { "id": "b", "text": "batia" },
+        { "id": "c", "text": "doía" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ardia o nosso coração",
+      "feedbackCorrect": "Eles lembram que o coração ardia enquanto ele falava no caminho.",
+      "feedbackWrong": {
+        "b": "O texto não fala de batida. O verbo do coração é outro.",
+        "c": "Não é dor. Eles lembram um ardor enquanto ele falava."
+      },
+      "hint": "Ouça o verbo que eles usam ao falar do coração.",
+      "learningObjective": "Identificar o que o coração fazia enquanto ele falava no caminho.",
+      "evidence": ["Lucas 24:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 24:35 a Atos 2:42?",
+      "verseRef": "Lucas 24:35",
+      "passageA": { "ref": "Lucas 24:35" },
+      "passageB": { "ref": "Atos 2:42" },
+      "options": [
+        { "id": "a", "text": "No partir do pão" },
+        { "id": "b", "text": "Doutrina dos apóstolos" },
+        { "id": "c", "text": "Orações da comunidade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi reconhecido ao partir o pão",
+      "feedbackCorrect": "Os dois textos apontam o partir do pão como gesto da comunhão.",
+      "feedbackWrong": {
+        "b": "A doutrina está em Atos, mas Lucas 24:35 destaca outro gesto.",
+        "c": "As orações fecham o versículo de Atos. O elo com Lucas é outro."
+      },
+      "hint": "Compare o gesto nomeado no fim de cada texto.",
+      "learningObjective": "Relacionar o reconhecimento à mesa ao partir do pão em Atos.",
+      "evidence": ["Lucas 24:35", "Atos 2:42"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 24:32, o coração deles ardia somente depois do reconhecimento à mesa.",
+      "verseRef": "Lucas 24:32",
+      "correctOptionId": "false",
+      "evidenceSpan": "ardia o nosso coração quando ele nos falava pelo caminho",
+      "feedbackCorrect": "O ardor fica no caminho, enquanto ele falava e abria as Escrituras.",
+      "feedbackWrong": {
+        "true": "Eles olham para trás. O coração ardia no caminho, não só após a mesa."
+      },
+      "hint": "Veja em que momento do caminho eles situam o coração.",
+      "learningObjective": "Interpretar o momento em que o coração ardia, antes da mesa.",
+      "evidence": ["Lucas 24:32"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 24:35, toque o trecho que mostra como ele foi reconhecido.",
+      "verseRef": "Lucas 24:35",
+      "options": [
+        { "id": "a", "text": "partir o pão" },
+        { "id": "b", "text": "no caminho" },
+        { "id": "c", "text": "havia ocorrido" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reconhecido ao partir o pão",
+      "feedbackCorrect": "O versículo fecha dizendo em que gesto ocorreu o reconhecimento.",
+      "feedbackWrong": {
+        "b": "O caminho é o que houve antes. O modo do reconhecimento vem no fim.",
+        "c": "Isso abre o relato do caminho, não o modo do reconhecimento."
+      },
+      "hint": "Olhe o fim do versículo, depois da palavra reconhecido.",
+      "learningObjective": "Localizar o trecho que sustenta como ele foi reconhecido.",
+      "evidence": ["Lucas 24:35"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 24:30–31 sustenta sobre o reconhecimento?",
+      "verseRef": "Lucas 24:30–31",
+      "options": [
+        { "id": "a", "text": "O reconhecimento ocorre quando ele parte e entrega o pão" },
+        { "id": "b", "text": "O reconhecimento ocorre porque ele segue visível à mesa" },
+        { "id": "c", "text": "O reconhecimento já tinha ocorrido no caminho inteiro" },
+        { "id": "d", "text": "O ardor do coração nasce só depois desse reconhecimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou o pão, abençoou-o, partiu-o e lhes deu",
+      "feedbackCorrect": "Quem toma, abençoa, parte e dá é ele. Nesse gesto os olhos se abrem.",
+      "feedbackWrong": {
+        "b": "Ao reconhecê-lo, ele desaparece. A visão não permanece.",
+        "c": "Os olhos só se abrem à mesa. Antes, ainda não o reconheciam.",
+        "d": "O ardor já vinha do caminho. Não nasce depois do reconhecimento."
+      },
+      "hint": "Compare cada leitura com o gesto dele à mesa.",
+      "learningObjective": "Escolher a leitura do reconhecimento que o texto sustenta.",
+      "evidence": ["Lucas 24:30–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica une o caminho, a mesa e o anúncio?",
+      "verseRef": "Lucas 24:32–33",
+      "options": [
+        { "id": "a", "text": "As Escrituras aquecem o coração no caminho" },
+        { "id": "b", "text": "O gesto à mesa torna o caminhante conhecido" },
+        { "id": "c", "text": "Jerusalém ouve que o Senhor vive" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ardia o nosso coração quando ele nos falava pelo caminho",
+      "feedbackCorrect": "As Escrituras aquecem o coração, a mesa abre os olhos e Jerusalém ouve.",
+      "feedbackWrong": {
+        "default": "Comece pelas Escrituras no caminho. A mesa vem depois. O anúncio fecha."
+      },
+      "hint": "O coração no caminho é o primeiro passo.",
+      "learningObjective": "Interpretar a lógica que vai das Escrituras ao anúncio em Jerusalém.",
+      "evidence": ["Lucas 24:32", "Lucas 24:30–31", "Lucas 24:34"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 24:34, qual verbo vem logo depois de o Senhor?",
+      "verseRef": "Lucas 24:34",
+      "options": [
+        { "id": "a", "text": "ressuscitou" },
+        { "id": "b", "text": "apareceu" },
+        { "id": "c", "text": "falou" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor ressuscitou",
+      "feedbackCorrect": "A fala dos onze começa por aí. O Senhor ressuscitou.",
+      "feedbackWrong": {
+        "b": "Aparecer não é o verbo logo após o Senhor. O texto diz outro.",
+        "c": "Falar foi no caminho. Aqui os onze afirmam outro verbo."
+      },
+      "hint": "Leia o primeiro verbo que vem depois de o Senhor.",
+      "learningObjective": "Lembrar o verbo que anuncia o que ocorreu com o Senhor.",
+      "evidence": ["Lucas 24:34"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 24:30–31 a João 21:12–13?",
+      "verseRef": "Lucas 24:30–31",
+      "passageA": { "ref": "Lucas 24:30–31" },
+      "passageB": { "ref": "João 21:12–13" },
+      "options": [
+        { "id": "a", "text": "Reconhecem o Senhor" },
+        { "id": "b", "text": "Perguntam quem ele é" },
+        { "id": "c", "text": "Peixe no lugar do pão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os olhos deles foram abertos e o reconheceram",
+      "feedbackCorrect": "À mesa os olhos se abrem. No lago, eles já sabiam que era o Senhor.",
+      "feedbackWrong": {
+        "b": "Em João ninguém ousa perguntar quem ele é, porque já sabiam.",
+        "c": "O peixe também é servido. O elo é reconhecer o Senhor."
+      },
+      "hint": "Leia o que os discípulos já sabiam sem precisar perguntar.",
+      "learningObjective": "Ligar o reconhecimento à mesa ao saber que ele é o Senhor.",
+      "evidence": ["Lucas 24:30–31", "João 21:12–13"]
+    }
+  ]
+}

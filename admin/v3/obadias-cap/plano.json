@@ -1,0 +1,35 @@
+{
+  "slug": "obadias-cap",
+  "prefix": "obc",
+  "book": "Obadias",
+  "chapters": 1,
+  "title": "Obadias",
+  "description": "Obadias capítulo a capítulo: o orgulho de Edom e o dia do Senhor.",
+  "icon": "🏔️",
+  "color": "#7A6B4F",
+  "order": 38,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": [
+    "obadias"
+  ],
+  "modules": [
+    {
+      "title": "Edom e o dia do Senhor · cap. 1",
+      "scenes": [
+        {
+          "ref": "Obadias 1:8–16",
+          "title": "O dia do Senhor",
+          "intro": "O Senhor anuncia juízo sobre Edom por causa da violência contra o irmão Jacó.",
+          "insight": "O dia do Senhor alcança as nações: como fizeram, assim será feito a elas.",
+          "objective": "Não se alegrar com a queda do irmão"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Edom e o dia do Senhor",
+        "intro": "Revise o juízo sobre o orgulho de Edom e o dia do Senhor.",
+        "insight": "Deus juíza o orgulho e a violência contra o irmão"
+      }
+    }
+  ]
+}

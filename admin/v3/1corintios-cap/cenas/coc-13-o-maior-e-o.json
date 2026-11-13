@@ -1,0 +1,915 @@
+{
+  "study": {
+    "slug": "coc-13-o-maior-e-o",
+    "passageRef": "1 Coríntios 13:8–13",
+    "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará. Porque conhecemos apenas em parte e profetizamos também em parte; Quando, porém, vier o que é perfeito, então, o que é parcial será abolido. Quando eu era menino, falava como menino, sentia como menino, pensava como menino; mas, quando me tornei homem, deixei de lado as coisas próprias de menino. Porque agora vemos como em um espelho, de maneira obscura; então veremos face a face. Agora conheço apenas em parte; mas então conhecerei completamente, assim como também sou completamente conhecido. Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor.",
+    "passages": [
+      {
+        "ref": "1 Coríntios 13:8–13",
+        "text": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará. Porque conhecemos apenas em parte e profetizamos também em parte; Quando, porém, vier o que é perfeito, então, o que é parcial será abolido. Quando eu era menino, falava como menino, sentia como menino, pensava como menino; mas, quando me tornei homem, deixei de lado as coisas próprias de menino. Porque agora vemos como em um espelho, de maneira obscura; então veremos face a face. Agora conheço apenas em parte; mas então conhecerei completamente, assim como também sou completamente conhecido. Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor."
+      }
+    ],
+    "context": "Depois de listar dons, Paulo mostra o que permanece: profecias, línguas e ciência passam; o amor nunca acaba. Agora vemos em espelho; o maior é o amor.",
+    "keyword": "amor",
+    "keywordGloss": "O que nunca acaba e é o maior entre fé, esperança e amor.",
+    "focusQuestion": "O que você está tratando como eterno — dons, saber — e o que o texto chama de maior?",
+    "reflectionPrompts": [
+      "O amor nunca acaba",
+      "Conhecer em parte",
+      "O maior é o amor"
+    ],
+    "facts": [
+      {
+        "text": "O amor nunca acaba; profecias, línguas e ciência passam.",
+        "evidenceRef": "1 Coríntios 13:8",
+        "evidenceSpan": "O amor nunca acaba"
+      },
+      {
+        "text": "Conhecemos e profetizamos apenas em parte.",
+        "evidenceRef": "1 Coríntios 13:9",
+        "evidenceSpan": "conhecemos apenas em parte e profetizamos também em parte"
+      },
+      {
+        "text": "Quando vier o que é perfeito, o que é parcial será abolido.",
+        "evidenceRef": "1 Coríntios 13:10",
+        "evidenceSpan": "o que é parcial será abolido"
+      },
+      {
+        "text": "Agora vemos como em um espelho, de maneira obscura; então face a face.",
+        "evidenceRef": "1 Coríntios 13:12",
+        "evidenceSpan": "agora vemos como em um espelho, de maneira obscura"
+      },
+      {
+        "text": "Permanecem fé, esperança e amor; o maior entre eles é o amor.",
+        "evidenceRef": "1 Coríntios 13:13",
+        "evidenceSpan": "o maior entre eles é o amor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "perfeito",
+        "gloss": "O que vem e abolirá o parcial: o conhecimento completo diante de Deus."
+      },
+      {
+        "term": "espelho",
+        "gloss": "Imagem do conhecimento atual: obscuro, indireto, ainda em parte."
+      },
+      {
+        "term": "maior",
+        "gloss": "Entre fé, esperança e amor, o amor ocupa o primeiro lugar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O amor permanece; os dons passam",
+        "evidenceRef": "1 Coríntios 13:8"
+      },
+      {
+        "label": "Conhecimento parcial até o perfeito",
+        "evidenceRef": "1 Coríntios 13:9–10"
+      },
+      {
+        "label": "De menino a homem; de espelho a face",
+        "evidenceRef": "1 Coríntios 13:11–12"
+      },
+      {
+        "label": "Fé, esperança e o maior: amor",
+        "evidenceRef": "1 Coríntios 13:13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O amor nunca acaba; as profecias, porém, serão eliminadas.",
+        "marker": "porém",
+        "evidenceRef": "1 Coríntios 13:8"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quando vier o que é perfeito, então o parcial será abolido.",
+        "marker": "então",
+        "evidenceRef": "1 Coríntios 13:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Agora em espelho; então face a face e conhecimento completo.",
+        "marker": "então",
+        "evidenceRef": "1 Coríntios 13:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 João 4:8",
+        "bridge": "Deus é amor",
+        "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+      },
+      {
+        "ref": "Colossenses 3:14",
+        "bridge": "Amor vínculo da perfeição",
+        "text": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição."
+      },
+      {
+        "ref": "Romanos 13:10",
+        "bridge": "Amor cumpre a lei",
+        "text": "O amor não faz o mal ao próximo; assim, o cumprimento da lei é o amor."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Dons como línguas e ciência são eternos como o amor.",
+        "why": "13:8: o amor nunca acaba; línguas cessarão e a ciência passará."
+      },
+      {
+        "text": "Já conhecemos a Deus de modo completo, sem espelho.",
+        "why": "Agora vemos em espelho, de maneira obscura; conhecemos apenas em parte."
+      },
+      {
+        "text": "Fé e esperança são maiores que o amor.",
+        "why": "Permanecem as três, porém o maior entre elas é o amor."
+      }
+    ],
+    "centralInsight": "O amor nunca acaba: agora vemos em espelho; o maior entre eles é o amor.",
+    "anchorQuestion": "Qual é o maior entre fé, esperança e amor, segundo 1 Coríntios 13:13?",
+    "relatedVerses": [
+      {
+        "reference": "1 João 4:8",
+        "reason": "Deus é amor"
+      },
+      {
+        "reference": "Colossenses 3:14",
+        "reason": "Amor vínculo da perfeição"
+      },
+      {
+        "reference": "Romanos 13:10",
+        "reason": "Amor cumpre a lei"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "1corintios-cap-sem-coc-13-o-maior-e-o-01",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em 1 Coríntios 13:8, as línguas nunca cessarão, como o amor.",
+      "prompt": "Em 1 Coríntios 13:8, as línguas nunca cessarão, como o amor.",
+      "cue": "Em 1 Coríntios 13:8, as línguas nunca cessarão, como o amor.",
+      "verseRef": "1 Coríntios 13:8",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "as línguas, cessarão",
+      "feedbackCorrect": "O amor nunca acaba; as línguas, porém, cessarão.",
+      "feedbackWrong": {
+        "true": "Releia 13:8: o amor nunca acaba; as línguas, cessarão."
+      },
+      "hint": "Compare o amor com o que acontece às línguas.",
+      "learningObjective": "Observar que línguas cessam; o amor permanece.",
+      "evidence": [
+        "1 Coríntios 13:8"
+      ]
+    },
+    {
+      "id": "1corintios-cap-sem-coc-13-o-maior-e-o-02",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em 1 Coríntios 13:13, toque o que é o maior entre as três.",
+      "prompt": "Em 1 Coríntios 13:13, toque o que é o maior entre as três.",
+      "cue": "Em 1 Coríntios 13:13, toque o que é o maior entre as três.",
+      "verseRef": "1 Coríntios 13:13",
+      "passageText": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "esperança"
+        },
+        {
+          "id": "c",
+          "text": "fé"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o maior entre eles é o amor",
+      "feedbackCorrect": "Permanecem três; o maior entre elas é o amor.",
+      "feedbackWrong": {
+        "b": "A esperança permanece, mas o maior é o amor.",
+        "c": "A fé permanece, mas o maior é o amor."
+      },
+      "hint": "Olhe a última frase do versículo.",
+      "learningObjective": "Identificar o amor como o maior.",
+      "evidence": [
+        "1 Coríntios 13:13"
+      ]
+    },
+    {
+      "id": "1corintios-cap-sem-coc-13-o-maior-e-o-03",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo 1 Coríntios 13:12, como vemos agora?",
+      "prompt": "Segundo 1 Coríntios 13:12, como vemos agora?",
+      "cue": "Segundo 1 Coríntios 13:12, como vemos agora?",
+      "verseRef": "1 Coríntios 13:12",
+      "passageText": "Porque agora vemos como em um espelho, de maneira obscura; então veremos face a face. Agora conheço apenas em parte; mas então conhecerei completamente, assim como também sou completamente conhecido.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como em um espelho, de maneira obscura"
+        },
+        {
+          "id": "b",
+          "text": "Com ciência completa já agora"
+        },
+        {
+          "id": "c",
+          "text": "Face a face, sem sombra"
+        },
+        {
+          "id": "d",
+          "text": "Sem qualquer conhecimento de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "agora vemos como em um espelho, de maneira obscura",
+      "feedbackCorrect": "Agora o ver é em espelho, obscuro; o face a face é \"então\".",
+      "feedbackWrong": {
+        "b": "Agora conhecemos apenas em parte.",
+        "c": "Face a face é o \"então\", não o agora.",
+        "d": "Há conhecimento, porém parcial e obscuro."
+      },
+      "hint": "Leia o que se diz do \"agora\".",
+      "learningObjective": "Observar o conhecimento parcial atual.",
+      "evidence": [
+        "1 Coríntios 13:12"
+      ]
+    },
+    {
+      "id": "1corintios-cap-sem-coc-13-o-maior-e-o-04",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte 1 Coríntios 13:8 na ordem do texto.",
+      "prompt": "Monte 1 Coríntios 13:8 na ordem do texto.",
+      "cue": "Monte 1 Coríntios 13:8 na ordem do texto.",
+      "verseRef": "1 Coríntios 13:8",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor nunca acaba"
+        },
+        {
+          "id": "b",
+          "text": "as profecias, porém, serão eliminadas"
+        },
+        {
+          "id": "c",
+          "text": "as línguas, cessarão; e a ciência, passará"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "O amor nunca acaba",
+      "feedbackCorrect": "Primeiro o amor que permanece; depois o que passa.",
+      "feedbackWrong": {
+        "default": "Comece pelo amor; o que cessa vem depois do \"porém\"."
+      },
+      "hint": "O versículo começa pelo amor.",
+      "learningObjective": "Reconhecer a sequência de 13:8.",
+      "evidence": [
+        "1 Coríntios 13:8"
+      ]
+    },
+    {
+      "id": "1corintios-cap-sem-coc-13-o-maior-e-o-05",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em 1 Coríntios 13:10, o que será abolido quando vier o perfeito?",
+      "prompt": "Em 1 Coríntios 13:10, o que será abolido quando vier o perfeito?",
+      "cue": "Em 1 Coríntios 13:10, o que será abolido quando vier o perfeito?",
+      "verseRef": "1 Coríntios 13:10",
+      "passageText": "Quando, porém, vier o que é perfeito, então, o que é parcial será abolido.",
+      "template": "Quando, porém, vier o que é perfeito, então, o que é ___ será abolido.",
+      "options": [
+        {
+          "id": "a",
+          "text": "amor"
+        },
+        {
+          "id": "b",
+          "text": "eterno"
+        },
+        {
+          "id": "c",
+          "text": "parcial"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "o que é parcial será abolido",
+      "feedbackCorrect": "O perfeito abole o parcial; o amor, porém, não acaba.",
+      "feedbackWrong": {
+        "a": "O amor nunca acaba; o abolido é o parcial.",
+        "b": "O abolido é o parcial, não o eterno."
+      },
+      "hint": "Olhe o que será abolido no fim.",
+      "learningObjective": "Lembrar que o parcial será abolido.",
+      "evidence": [
+        "1 Coríntios 13:10"
+      ]
+    },
+    {
+      "id": "1corintios-cap-sem-coc-13-o-maior-e-o-06",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que 1 Coríntios 13:9 comunica que se liga a este contexto?",
+      "prompt": "O que 1 Coríntios 13:9 comunica que se liga a este contexto?",
+      "cue": "O que 1 Coríntios 13:9 comunica que se liga a este contexto?",
+      "verseRef": "1 Coríntios 13:9",
+      "passageText": "Porque conhecemos apenas em parte e profetizamos também em parte;",
+      "passageA": {
+        "ref": "1 Coríntios 13:9",
+        "text": "Porque conhecemos apenas em parte e profetizamos também em parte;"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Nosso conhecimento e nossa profecia ainda são limitados."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Conhecemos apenas em parte"
+        },
+        {
+          "id": "b",
+          "text": "Já sabemos tudo"
+        },
+        {
+          "id": "c",
+          "text": "Profecia nunca é parcial"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "conhecemos apenas em parte",
+      "feedbackCorrect": "Conhecer e profetizar ainda são \"em parte\".",
+      "feedbackWrong": {
+        "b": "O texto diz \"apenas em parte\".",
+        "c": "Profetizamos também em parte."
+      },
+      "hint": "Veja o alcance do conhecimento no versículo.",
+      "learningObjective": "Ligar o versículo ao conhecimento parcial.",
+      "evidence": [
+        "1 Coríntios 13:9"
+      ]
+    },
+    {
+      "id": "1corintios-cap-cam-coc-13-o-maior-e-o-01",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em 1 Coríntios 13:8, o amor e as profecias têm o mesmo destino final.",
+      "prompt": "Em 1 Coríntios 13:8, o amor e as profecias têm o mesmo destino final.",
+      "cue": "Em 1 Coríntios 13:8, o amor e as profecias têm o mesmo destino final.",
+      "verseRef": "1 Coríntios 13:8",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "O amor nunca acaba; as profecias, porém, serão eliminadas",
+      "feedbackCorrect": "O \"porém\" marca contraste: amor permanece; profecias serão eliminadas.",
+      "feedbackWrong": {
+        "true": "Releia 13:8: o amor nunca acaba; as profecias, porém, serão eliminadas."
+      },
+      "hint": "Repare na palavra entre amor e profecias.",
+      "learningObjective": "Compreender o contraste entre amor e dons que passam.",
+      "evidence": [
+        "1 Coríntios 13:8"
+      ]
+    },
+    {
+      "id": "1corintios-cap-cam-coc-13-o-maior-e-o-02",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em 1 Coríntios 13:8, toque a palavra que marca o contraste com o amor que não acaba.",
+      "prompt": "Em 1 Coríntios 13:8, toque a palavra que marca o contraste com o amor que não acaba.",
+      "cue": "Em 1 Coríntios 13:8, toque a palavra que marca o contraste com o amor que não acaba.",
+      "verseRef": "1 Coríntios 13:8",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+      "options": [
+        {
+          "id": "a",
+          "text": "nunca"
+        },
+        {
+          "id": "b",
+          "text": "ciência"
+        },
+        {
+          "id": "c",
+          "text": "porém"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "as profecias, porém, serão eliminadas",
+      "feedbackCorrect": "\"Porém\" separa o que permanece do que será eliminado.",
+      "feedbackWrong": {
+        "a": "\"Nunca\" afirma a duração do amor; o contraste é \"porém\".",
+        "b": "\"Ciência\" é o que passa; o marcador é \"porém\"."
+      },
+      "hint": "Procure a conjunção após \"profecias\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "1 Coríntios 13:8"
+      ]
+    },
+    {
+      "id": "1corintios-cap-cam-coc-13-o-maior-e-o-03",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Como 1 Coríntios 13:10 se relaciona com 13:9?",
+      "prompt": "Como 1 Coríntios 13:10 se relaciona com 13:9?",
+      "cue": "Como 1 Coríntios 13:10 se relaciona com 13:9?",
+      "verseRef": "1 Coríntios 13:9–10",
+      "passageText": "Porque conhecemos apenas em parte e profetizamos também em parte; Quando, porém, vier o que é perfeito, então, o que é parcial será abolido.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nada do que é parcial mudará jamais"
+        },
+        {
+          "id": "b",
+          "text": "O perfeito já veio e aboliu o amor"
+        },
+        {
+          "id": "c",
+          "text": "O parcial já é o perfeito completo"
+        },
+        {
+          "id": "d",
+          "text": "O perfeito virá e abolirá o que agora é parcial"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "Quando, porém, vier o que é perfeito, então, o que é parcial será abolido",
+      "feedbackCorrect": "Conhecemos em parte; quando vier o perfeito, o parcial cai.",
+      "feedbackWrong": {
+        "a": "13:10 diz que o parcial será abolido.",
+        "b": "O amor nunca acaba; o abolido é o parcial.",
+        "c": "13:9 insiste no \"em parte\"."
+      },
+      "hint": "Ligue \"em parte\" a \"quando vier o perfeito\".",
+      "learningObjective": "Relacionar parcial e perfeito.",
+      "evidence": [
+        "1 Coríntios 13:9–10"
+      ]
+    },
+    {
+      "id": "1corintios-cap-cam-coc-13-o-maior-e-o-04",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o argumento em 1 Coríntios 13:8–13?",
+      "prompt": "Como avança o argumento em 1 Coríntios 13:8–13?",
+      "cue": "Como avança o argumento em 1 Coríntios 13:8–13?",
+      "verseRef": "1 Coríntios 13:8–9",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará. Porque conhecemos apenas em parte e profetizamos também em parte;",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor permanece; os dons passam"
+        },
+        {
+          "id": "b",
+          "text": "De espelho a face a face"
+        },
+        {
+          "id": "c",
+          "text": "Fé, esperança e o maior: amor"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "O amor nunca acaba",
+      "feedbackCorrect": "Do que passa ao como vemos agora, até o maior que permanece.",
+      "feedbackWrong": {
+        "default": "Comece por 13:8; o \"maior\" fecha em 13:13."
+      },
+      "hint": "O maior entre as três é o ponto final.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "1 Coríntios 13:8",
+        "1 Coríntios 13:12",
+        "1 Coríntios 13:13"
+      ]
+    },
+    {
+      "id": "1corintios-cap-cam-coc-13-o-maior-e-o-05",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em 1 Coríntios 13:10, que palavra marca o resultado quando vem o perfeito?",
+      "prompt": "Em 1 Coríntios 13:10, que palavra marca o resultado quando vem o perfeito?",
+      "cue": "Em 1 Coríntios 13:10, que palavra marca o resultado quando vem o perfeito?",
+      "verseRef": "1 Coríntios 13:10",
+      "passageText": "Quando, porém, vier o que é perfeito, então, o que é parcial será abolido.",
+      "template": "Quando, porém, vier o que é perfeito, ___, o que é parcial será abolido.",
+      "options": [
+        {
+          "id": "a",
+          "text": "nunca"
+        },
+        {
+          "id": "b",
+          "text": "apenas"
+        },
+        {
+          "id": "c",
+          "text": "então"
+        }
+      ],
+      "correctOptionId": "c",
+      "correctAnswer": "c",
+      "evidenceSpan": "então, o que é parcial será abolido",
+      "feedbackCorrect": "\"Então\" marca o resultado: o parcial é abolido.",
+      "feedbackWrong": {
+        "a": "\"Nunca\" está em 13:8 sobre o amor.",
+        "b": "\"Apenas\" está em 13:9; aqui o resultado é \"então\"."
+      },
+      "hint": "Procure a palavra antes de \"o que é parcial\".",
+      "learningObjective": "Notar o marcador de resultado.",
+      "evidence": [
+        "1 Coríntios 13:10"
+      ]
+    },
+    {
+      "id": "1corintios-cap-cam-coc-13-o-maior-e-o-06",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga 1 Coríntios 13:13 a Colossenses 3:14?",
+      "prompt": "O que liga 1 Coríntios 13:13 a Colossenses 3:14?",
+      "cue": "O que liga 1 Coríntios 13:13 a Colossenses 3:14?",
+      "verseRef": "1 Coríntios 13:13",
+      "passageText": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor.",
+      "passageA": {
+        "ref": "1 Coríntios 13:13",
+        "text": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor."
+      },
+      "passageB": {
+        "ref": "Colossenses 3:14",
+        "text": "Acima de tudo, revesti-vos de amor que é o vínculo da perfeição."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amor menor que a fé"
+        },
+        {
+          "id": "b",
+          "text": "Amor vínculo da perfeição"
+        },
+        {
+          "id": "c",
+          "text": "Amor que logo acaba"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "o maior entre eles é o amor",
+      "feedbackCorrect": "Nos dois textos o amor ocupa o lugar máximo na vida cristã.",
+      "feedbackWrong": {
+        "a": "Em 13:13 o amor é o maior.",
+        "c": "O amor nunca acaba (13:8)."
+      },
+      "hint": "Compare o lugar do amor nos dois trechos.",
+      "learningObjective": "Relacionar o amor como vínculo máximo.",
+      "evidence": [
+        "1 Coríntios 13:13",
+        "Colossenses 3:14"
+      ]
+    },
+    {
+      "id": "1corintios-cap-pro-coc-13-o-maior-e-o-01",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em 1 Coríntios 13:8–13, o amor é passageiro como a ciência e as línguas.",
+      "prompt": "Em 1 Coríntios 13:8–13, o amor é passageiro como a ciência e as línguas.",
+      "cue": "Em 1 Coríntios 13:8–13, o amor é passageiro como a ciência e as línguas.",
+      "verseRef": "1 Coríntios 13:8",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "O amor nunca acaba",
+      "feedbackCorrect": "Ciência e línguas passam; o amor nunca acaba e é o maior.",
+      "feedbackWrong": {
+        "true": "13:8: o amor nunca acaba; a ciência passará e as línguas cessarão."
+      },
+      "hint": "Compare o destino do amor com o da ciência.",
+      "learningObjective": "Interpretar o amor como o que permanece.",
+      "evidence": [
+        "1 Coríntios 13:8"
+      ]
+    },
+    {
+      "id": "1corintios-cap-pro-coc-13-o-maior-e-o-02",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em 1 Coríntios 13:12, toque o trecho que sustenta o conhecimento futuro completo.",
+      "prompt": "Em 1 Coríntios 13:12, toque o trecho que sustenta o conhecimento futuro completo.",
+      "cue": "Em 1 Coríntios 13:12, toque o trecho que sustenta o conhecimento futuro completo.",
+      "verseRef": "1 Coríntios 13:12",
+      "passageText": "Porque agora vemos como em um espelho, de maneira obscura; então veremos face a face. Agora conheço apenas em parte; mas então conhecerei completamente, assim como também sou completamente conhecido.",
+      "options": [
+        {
+          "id": "a",
+          "text": "espelho"
+        },
+        {
+          "id": "b",
+          "text": "conhecerei completamente"
+        },
+        {
+          "id": "c",
+          "text": "obscura"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "então conhecerei completamente",
+      "feedbackCorrect": "O \"então\" traz conhecimento completo, como somos conhecidos.",
+      "feedbackWrong": {
+        "a": "\"Espelho\" descreve o agora, não o conhecimento completo.",
+        "c": "\"Obscura\" é o modo atual; o completo é \"então\"."
+      },
+      "hint": "Procure o que acontece \"então\" quanto ao conhecer.",
+      "learningObjective": "Sustentar a esperança do conhecimento completo.",
+      "evidence": [
+        "1 Coríntios 13:12"
+      ]
+    },
+    {
+      "id": "1corintios-cap-pro-coc-13-o-maior-e-o-03",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura 1 Coríntios 13:8–13 sustenta sobre dons e amor?",
+      "prompt": "Que leitura 1 Coríntios 13:8–13 sustenta sobre dons e amor?",
+      "cue": "Que leitura 1 Coríntios 13:8–13 sustenta sobre dons e amor?",
+      "verseRef": "1 Coríntios 13:13",
+      "passageText": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé e esperança superam o amor"
+        },
+        {
+          "id": "b",
+          "text": "Já vemos face a face, sem espelho"
+        },
+        {
+          "id": "c",
+          "text": "Línguas e ciência são eternas como o amor"
+        },
+        {
+          "id": "d",
+          "text": "O amor permanece e é o maior; dons passam"
+        }
+      ],
+      "correctOptionId": "d",
+      "correctAnswer": "d",
+      "evidenceSpan": "o maior entre eles é o amor",
+      "feedbackCorrect": "O que passa cede; o que permanece tem o amor no topo.",
+      "feedbackWrong": {
+        "a": "O maior entre eles é o amor.",
+        "b": "Agora vemos em espelho, de maneira obscura.",
+        "c": "13:8: línguas cessarão e a ciência passará."
+      },
+      "hint": "Una 13:8 e 13:13.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "1 Coríntios 13:13"
+      ]
+    },
+    {
+      "id": "1corintios-cap-pro-coc-13-o-maior-e-o-04",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência revela o caminho do amor na Bíblia?",
+      "prompt": "Qual sequência revela o caminho do amor na Bíblia?",
+      "cue": "Qual sequência revela o caminho do amor na Bíblia?",
+      "verseRef": "1 Coríntios 13:13",
+      "passageText": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O maior entre eles é o amor"
+        },
+        {
+          "id": "b",
+          "text": "Deus é amor"
+        },
+        {
+          "id": "c",
+          "text": "O amor é o cumprimento da lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "o maior entre eles é o amor",
+      "feedbackCorrect": "De Coríntios a João e Romanos, o amor está no centro da vida com Deus.",
+      "feedbackWrong": {
+        "default": "Siga: 1 Co 13:13 → 1 Jo 4:8 → Rm 13:10."
+      },
+      "hint": "Comece pelo \"maior\" em Coríntios.",
+      "learningObjective": "Ver o amor como fio bíblico.",
+      "evidence": [
+        "1 Coríntios 13:13",
+        "1 João 4:8",
+        "Romanos 13:10"
+      ]
+    },
+    {
+      "id": "1corintios-cap-pro-coc-13-o-maior-e-o-05",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em 1 Coríntios 13:13, que palavra define o lugar do amor entre as três?",
+      "prompt": "Em 1 Coríntios 13:13, que palavra define o lugar do amor entre as três?",
+      "cue": "Em 1 Coríntios 13:13, que palavra define o lugar do amor entre as três?",
+      "verseRef": "1 Coríntios 13:13",
+      "passageText": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o maior entre eles é o amor.",
+      "template": "Agora, permanecem essas três: a fé, a esperança e o amor; entretanto, o ___ entre eles é o amor.",
+      "options": [
+        {
+          "id": "a",
+          "text": "igual"
+        },
+        {
+          "id": "b",
+          "text": "maior"
+        },
+        {
+          "id": "c",
+          "text": "menor"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "o maior entre eles é o amor",
+      "feedbackCorrect": "Entre fé, esperança e amor, o maior é o amor.",
+      "feedbackWrong": {
+        "a": "Não são iguais em lugar: o maior é o amor.",
+        "c": "O texto diz maior, não menor."
+      },
+      "hint": "É o adjetivo antes de \"entre eles\".",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": [
+        "1 Coríntios 13:13"
+      ]
+    },
+    {
+      "id": "1corintios-cap-pro-coc-13-o-maior-e-o-06",
+      "trail": "1corintios-cap",
+      "section": "coc-13-o-maior-e-o",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga 1 Coríntios 13:8 a 1 João 4:8?",
+      "prompt": "O que liga 1 Coríntios 13:8 a 1 João 4:8?",
+      "cue": "O que liga 1 Coríntios 13:8 a 1 João 4:8?",
+      "verseRef": "1 Coríntios 13:8",
+      "passageText": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará.",
+      "passageA": {
+        "ref": "1 Coríntios 13:8",
+        "text": "O amor nunca acaba; as profecias, porém, serão eliminadas; as línguas, cessarão; e a ciência, passará."
+      },
+      "passageB": {
+        "ref": "1 João 4:8",
+        "text": "Aquele que não ama não conhece a Deus, pois Deus é amor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ciência acima do amor"
+        },
+        {
+          "id": "b",
+          "text": "Amor que não acaba"
+        },
+        {
+          "id": "c",
+          "text": "Amor só passageiro"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "O amor nunca acaba",
+      "feedbackCorrect": "O amor que não acaba ecoa quem Deus é: Deus é amor.",
+      "feedbackWrong": {
+        "a": "A ciência passará; o amor permanece.",
+        "c": "13:8: o amor nunca acaba."
+      },
+      "hint": "Compare a duração do amor com quem Deus é.",
+      "learningObjective": "Ligar o amor que permanece a Deus que é amor.",
+      "evidence": [
+        "1 Coríntios 13:8",
+        "1 João 4:8"
+      ]
+    }
+  ]
+}

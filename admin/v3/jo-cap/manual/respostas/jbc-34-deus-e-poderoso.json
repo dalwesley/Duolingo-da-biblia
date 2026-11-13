@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 36:5–10",
+  "passages": [
+   {
+    "ref": "Jó 36:5–10"
+   },
+   {
+    "ref": "Jó 36:11–16"
+   }
+  ],
+  "context": "Eliú apresenta um Deus grande que não despreza ninguém: na aflição ele mostra transgressões e abre os ouvidos — a disciplina pode ensinar.",
+  "keyword": "Abre os ouvidos",
+  "keywordGloss": "Na opressão, Deus pode abrir o ouvido que a prosperidade fechou.",
+  "focusQuestion": "Sua prosperidade tem fechado ouvidos que só a disciplina consegue abrir?",
+  "reflectionPrompts": [
+   "Deus que não despreza",
+   "Ouvidos na aflição",
+   "Lugar espaçoso"
+  ],
+  "facts": [
+   {
+    "text": "Deus é extremamente grande e a ninguém despreza.",
+    "evidenceRef": "Jó 36:5",
+    "evidenceSpan": "a ninguém despreza"
+   },
+   {
+    "text": "Deus faz justiça aos oprimidos.",
+    "evidenceRef": "Jó 36:6",
+    "evidenceSpan": "faz justiça aos oprimidos"
+   },
+   {
+    "text": "Se estão em grilhões, ele mostra suas transgressões.",
+    "evidenceRef": "Jó 36:8–9",
+    "evidenceSpan": "lhes mostra as suas obras e transgressões"
+   },
+   {
+    "text": "Deus abre os ouvidos para a instrução.",
+    "evidenceRef": "Jó 36:10",
+    "evidenceSpan": "abre-lhes também os ouvidos para a instrução"
+   },
+   {
+    "text": "Ele livra o aflito e, pela opressão, abre os ouvidos.",
+    "evidenceRef": "Jó 36:15",
+    "evidenceSpan": "por meio da opressão, lhe abre os ouvidos"
+   },
+   {
+    "text": "Deus pode livrar para um lugar espaçoso.",
+    "evidenceRef": "Jó 36:16",
+    "evidenceSpan": "para um lugar espaçoso"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "ouvidos",
+    "gloss": "O que Deus abre na aflição para a instrução."
+   },
+   {
+    "term": "opressão",
+    "gloss": "Meio pelo qual Deus pode abrir os ouvidos do aflito."
+   },
+   {
+    "term": "instrução",
+    "gloss": "O conteúdo para o qual Deus abre os ouvidos."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus grande que não despreza e faz justiça",
+    "evidenceRef": "Jó 36:5–7"
+   },
+   {
+    "label": "Nos grilhões, Deus mostra transgressões",
+    "evidenceRef": "Jó 36:8–9"
+   },
+   {
+    "label": "Deus abre os ouvidos e chama à conversão",
+    "evidenceRef": "Jó 36:10–12"
+   },
+   {
+    "label": "Livramento do aflito para lugar espaçoso",
+    "evidenceRef": "Jó 36:13–16"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Deus é extremamente grande; contudo, a ninguém despreza.",
+    "marker": "contudo",
+    "evidenceRef": "Jó 36:5"
+   },
+   {
+    "kind": "resultado",
+    "text": "Se estiverem em grilhões, então ele mostra as transgressões.",
+    "marker": "Então",
+    "evidenceRef": "Jó 36:9"
+   },
+   {
+    "kind": "propósito",
+    "text": "Deus abre os ouvidos para a instrução e a conversão.",
+    "marker": "para",
+    "evidenceRef": "Jó 36:10"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 119:67",
+    "bridge": "Aflito antes de guardar"
+   },
+   {
+    "ref": "Hebreus 12:11",
+    "bridge": "Disciplina depois dá fruto"
+   },
+   {
+    "ref": "Salmos 18:19",
+    "bridge": "Lugar espaçoso do livramento"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Deus grande despreza os pequenos.",
+    "why": "36:5 diz que, contudo, a ninguém despreza."
+   },
+   {
+    "text": "A opressão nunca ensina nada.",
+    "why": "36:15 diz que, por meio da opressão, Deus abre os ouvidos."
+   },
+   {
+    "text": "Abrir os ouvidos é só ameaça, sem livramento.",
+    "why": "36:16 fala de livrar para um lugar espaçoso."
+   }
+  ],
+  "centralInsight": "A disciplina pode abrir o ouvido que a prosperidade fechou.",
+  "anchorQuestion": "O que Deus abre por meio da opressão, segundo Jó 36:15?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 36:5, Deus é extremamente grande; contudo, a ninguém despreza.",
+   "verseRef": "Jó 36:5",
+   "correctOptionId": "true",
+   "evidenceSpan": "a ninguém despreza",
+   "feedbackCorrect": "Grandeza e cuidado juntos: Deus a ninguém despreza.",
+   "feedbackWrong": {
+    "false": "Releia 36:5 até \"a ninguém despreza\"."
+   },
+   "hint": "Veja o que vem depois de \"contudo\".",
+   "learningObjective": "Observar o caráter de Deus grande.",
+   "evidence": [
+    "Jó 36:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 36:15, toque o que Deus abre por meio da opressão.",
+   "verseRef": "Jó 36:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "ouvidos"
+    },
+    {
+     "id": "b",
+     "text": "aflição"
+    },
+    {
+     "id": "c",
+     "text": "angústia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "lhe abre os ouvidos",
+   "feedbackCorrect": "Pela opressão, Deus abre os ouvidos.",
+   "feedbackWrong": {
+    "b": "\"Aflição\" é o que ele livra, não o que abre.",
+    "c": "\"Angústia\" está em 36:16."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Identificar o que a opressão abre.",
+   "evidence": [
+    "Jó 36:15"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 36:6, o que Deus faz aos oprimidos?",
+   "verseRef": "Jó 36:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Faz justiça aos oprimidos"
+    },
+    {
+     "id": "b",
+     "text": "Preserva a vida do ímpio"
+    },
+    {
+     "id": "c",
+     "text": "Ignora os oprimidos"
+    },
+    {
+     "id": "d",
+     "text": "Fecha os ouvidos deles"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "faz justiça aos oprimidos",
+   "feedbackCorrect": "Deus faz justiça aos oprimidos.",
+   "feedbackWrong": {
+    "b": "Ele não preserva a vida do ímpio.",
+    "c": "O texto afirma justiça, não ignorância.",
+    "d": "Abrir ouvidos vem depois, em 36:10."
+   },
+   "hint": "Leia a segunda metade do versículo.",
+   "learningObjective": "Observar o trato com os oprimidos.",
+   "evidence": [
+    "Jó 36:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 36:5 na ordem do texto.",
+   "verseRef": "Jó 36:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Eis que Deus é extremamente grande"
+    },
+    {
+     "id": "b",
+     "text": "contudo, a ninguém despreza"
+    },
+    {
+     "id": "c",
+     "text": "é poderoso na força e na sabedoria."
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a ninguém despreza",
+   "feedbackCorrect": "Primeiro a grandeza; depois o \"contudo\" e o poder.",
+   "feedbackWrong": {
+    "default": "Comece por \"Eis que\"; a sabedoria fecha."
+   },
+   "hint": "Comece pela expressão \"Eis que\".",
+   "learningObjective": "Reconhecer a sequência de 36:5.",
+   "evidence": [
+    "Jó 36:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 36:10, para que Deus abre os ouvidos?",
+   "verseRef": "Jó 36:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "instrução"
+    },
+    {
+     "id": "b",
+     "text": "grilhões"
+    },
+    {
+     "id": "c",
+     "text": "espada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "os ouvidos para a instrução",
+   "feedbackCorrect": "O alvo é a instrução.",
+   "feedbackWrong": {
+    "b": "\"Grilhões\" está em 36:8.",
+    "c": "\"Espada\" está em 36:12."
+   },
+   "hint": "Veja o fim da primeira frase.",
+   "learningObjective": "Lembrar o alvo dos ouvidos abertos.",
+   "evidence": [
+    "Jó 36:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 36:15 comunica que se liga a este contexto?",
+   "verseRef": "Jó 36:15",
+   "passageA": {
+    "ref": "Jó 36:15"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Eliú ensina que a aflição pode abrir o ouvido que a prosperidade fechou."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Opressão que abre ouvidos"
+    },
+    {
+     "id": "b",
+     "text": "Riqueza sem ensino"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio eterno de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por meio da opressão, lhe abre os ouvidos",
+   "feedbackCorrect": "A opressão vira caminho de instrução.",
+   "feedbackWrong": {
+    "b": "O texto fala de abrir ouvidos, não de riqueza sem ensino.",
+    "c": "Deus age abrindo ouvidos."
+   },
+   "hint": "Veja o meio pelo qual Deus age.",
+   "learningObjective": "Ligar o versículo à disciplina.",
+   "evidence": [
+    "Jó 36:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 36:5, a grandeza de Deus implica que ele despreza os pequenos.",
+   "verseRef": "Jó 36:5",
+   "correctOptionId": "false",
+   "evidenceSpan": "contudo, a ninguém despreza",
+   "feedbackCorrect": "O \"contudo\" corrige: grande, mas não despreza.",
+   "feedbackWrong": {
+    "true": "36:5 diz que a ninguém despreza."
+   },
+   "hint": "Olhe a palavra \"contudo\".",
+   "learningObjective": "Compreender o contraste da grandeza.",
+   "evidence": [
+    "Jó 36:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 36:5, toque a palavra que marca o contraste com a grandeza.",
+   "verseRef": "Jó 36:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "contudo"
+    },
+    {
+     "id": "b",
+     "text": "grande"
+    },
+    {
+     "id": "c",
+     "text": "sabedoria"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "contudo, a ninguém despreza",
+   "feedbackCorrect": "\"Contudo\" marca o contraste.",
+   "feedbackWrong": {
+    "b": "\"Grande\" é o ponto de partida.",
+    "c": "\"Sabedoria\" fecha o versículo."
+   },
+   "hint": "Procure a palavra entre vírgulas.",
+   "learningObjective": "Reconhecer o marcador de contraste.",
+   "evidence": [
+    "Jó 36:5"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 36:8–10 se relaciona com a justiça de 36:6?",
+   "verseRef": "Jó 36:6–10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra como Deus trata o justo na aflição: revela e instrui"
+    },
+    {
+     "id": "b",
+     "text": "Nega que Deus faça justiça aos oprimidos"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que grilhões são o fim sem ensino"
+    },
+    {
+     "id": "d",
+     "text": "Diz que Deus fecha os ouvidos na dor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "abre-lhes também os ouvidos para a instrução",
+   "feedbackCorrect": "Nos grilhões, Deus mostra transgressões e abre os ouvidos.",
+   "feedbackWrong": {
+    "b": "36:6 afirma a justiça.",
+    "c": "36:10 mostra instrução.",
+    "d": "O texto fala de abrir, não fechar."
+   },
+   "hint": "Leia o que Deus faz nos grilhões.",
+   "learningObjective": "Relacionar justiça e instrução.",
+   "evidence": [
+    "Jó 36:6–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o argumento de Eliú em 36:5–16?",
+   "verseRef": "Jó 36:5–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus grande que não despreza"
+    },
+    {
+     "id": "b",
+     "text": "Nos grilhões, abre os ouvidos"
+    },
+    {
+     "id": "c",
+     "text": "Livra o aflito para lugar espaçoso"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "para um lugar espaçoso",
+   "feedbackCorrect": "O fio vai do caráter à disciplina e ao livramento.",
+   "feedbackWrong": {
+    "default": "Comece pelo caráter; o lugar espaçoso fecha."
+   },
+   "hint": "Pense: caráter → ouvidos → livramento.",
+   "learningObjective": "Compreender a estrutura do trecho.",
+   "evidence": [
+    "Jó 36:5–16"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 36:15, por meio de que Deus abre os ouvidos?",
+   "verseRef": "Jó 36:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "opressão"
+    },
+    {
+     "id": "b",
+     "text": "felicidade"
+    },
+    {
+     "id": "c",
+     "text": "delícias"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por meio da opressão, lhe abre os ouvidos",
+   "feedbackCorrect": "O meio é a opressão.",
+   "feedbackWrong": {
+    "b": "\"Felicidade\" está em 36:11.",
+    "c": "\"Delícias\" está em 36:11."
+   },
+   "hint": "Veja a expressão \"por meio\".",
+   "learningObjective": "Lembrar o meio da instrução.",
+   "evidence": [
+    "Jó 36:15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 36:15 a Salmos 119:67?",
+   "verseRef": "Jó 36:15",
+   "passageA": {
+    "ref": "Jó 36:15"
+   },
+   "passageB": {
+    "ref": "Salmos 119:67"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Aflito antes de guardar"
+    },
+    {
+     "id": "b",
+     "text": "Lista de inimigos"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem luz"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por meio da opressão, lhe abre os ouvidos",
+   "feedbackCorrect": "Nos dois textos, a aflição precede o aprendizado.",
+   "feedbackWrong": {
+    "b": "Não há lista de inimigos.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare aflição e ensino.",
+   "learningObjective": "Relacionar Eliú ao Salmo.",
+   "evidence": [
+    "Jó 36:15",
+    "Salmos 119:67"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 36:5–16 sustenta que a disciplina serve só para destruir, sem abrir ouvidos nem livrar.",
+   "verseRef": "Jó 36:15–16",
+   "correctOptionId": "false",
+   "evidenceSpan": "lhe abre os ouvidos",
+   "feedbackCorrect": "O trecho une abrir ouvidos e livrar para lugar espaçoso.",
+   "feedbackWrong": {
+    "true": "36:15–16 fala de abrir ouvidos e livrar."
+   },
+   "hint": "Leia o fim do trecho.",
+   "learningObjective": "Interpretar a disciplina como ensino.",
+   "evidence": [
+    "Jó 36:15–16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 36:16, toque o destino do livramento.",
+   "verseRef": "Jó 36:16",
+   "options": [
+    {
+     "id": "a",
+     "text": "lugar espaçoso"
+    },
+    {
+     "id": "b",
+     "text": "boca da angústia"
+    },
+    {
+     "id": "c",
+     "text": "tua mesa"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para um lugar espaçoso",
+   "feedbackCorrect": "O destino é um lugar espaçoso.",
+   "feedbackWrong": {
+    "b": "Isso e de onde ele livra, nao o destino.",
+    "c": "A mesa fecha o versiculo; o destino do livramento vem antes."
+   },
+   "hint": "Veja para onde Deus livra.",
+   "learningObjective": "Sustentar a leitura do livramento.",
+   "evidence": [
+    "Jó 36:16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 36:5–16 sustenta sobre a aflição?",
+   "verseRef": "Jó 36:5–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "A disciplina pode abrir o ouvido que a prosperidade fechou"
+    },
+    {
+     "id": "b",
+     "text": "Deus grande despreza os aflitos"
+    },
+    {
+     "id": "c",
+     "text": "Abrir os ouvidos é impossível na dor"
+    },
+    {
+     "id": "d",
+     "text": "O lugar espaçoso nunca vem depois da angústia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "por meio da opressão, lhe abre os ouvidos",
+   "feedbackCorrect": "Ouvidos abertos e lugar espaçoso sustentam a leitura.",
+   "feedbackWrong": {
+    "b": "36:5 diz que a ninguém despreza.",
+    "c": "36:10 e 36:15 falam de abrir ouvidos.",
+    "d": "36:16 fala do lugar espaçoso."
+   },
+   "hint": "Una 36:15 e 36:16.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 36:5–16"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra aflição que ensina e livra?",
+   "verseRef": "Jó 36:15–16",
+   "options": [
+    {
+     "id": "a",
+     "text": "A opressão abre os ouvidos do aflito"
+    },
+    {
+     "id": "b",
+     "text": "A disciplina depois produz fruto de paz"
+    },
+    {
+     "id": "c",
+     "text": "O Senhor tira para um lugar espaçoso"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "para um lugar espaçoso",
+   "feedbackCorrect": "O fio vai de Eliú a Hebreus e ao Salmo 18.",
+   "feedbackWrong": {
+    "default": "Comece pela opressão; o lugar espaçoso fecha."
+   },
+   "hint": "Siga: opressão → disciplina → lugar espaçoso.",
+   "learningObjective": "Ver o fio da disciplina.",
+   "evidence": [
+    "Jó 36:15",
+    "Hebreus 12:11",
+    "Salmos 18:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 36:5, Deus a ninguém…?",
+   "verseRef": "Jó 36:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "despreza"
+    },
+    {
+     "id": "b",
+     "text": "exalta"
+    },
+    {
+     "id": "c",
+     "text": "chama"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a ninguém despreza",
+   "feedbackCorrect": "O termo do caráter é despreza — o que Deus não faz.",
+   "feedbackWrong": {
+    "b": "O texto não diz \"exalta\" aqui.",
+    "c": "O texto não diz \"chama\" aqui."
+   },
+   "hint": "Veja o verbo depois de \"ninguém\".",
+   "learningObjective": "Lembrar o termo do caráter de Deus.",
+   "evidence": [
+    "Jó 36:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 36:16 a Salmos 18:19?",
+   "verseRef": "Jó 36:16",
+   "passageA": {
+    "ref": "Jó 36:16"
+   },
+   "passageB": {
+    "ref": "Salmos 18:19"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Lugar espaçoso do livramento"
+    },
+    {
+     "id": "b",
+     "text": "Lista de armas"
+    },
+    {
+     "id": "c",
+     "text": "Cântico sem palavras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "para um lugar espaçoso",
+   "feedbackCorrect": "Nos dois textos, o livramento leva a um lugar amplo.",
+   "feedbackWrong": {
+    "b": "Não há lista de armas.",
+    "c": "Não se fala de cântico sem palavras."
+   },
+   "hint": "Compare o destino do livramento.",
+   "learningObjective": "Ligar o lugar espaçoso ao Salmo.",
+   "evidence": [
+    "Jó 36:16",
+    "Salmos 18:19"
+   ]
+  }
+ ]
+}

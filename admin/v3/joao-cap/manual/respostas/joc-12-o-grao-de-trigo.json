@@ -1,0 +1,484 @@
+{
+  "study": {
+    "passageRef": "João 12:23–28",
+    "passages": [
+      { "ref": "João 12:23–28" }
+    ],
+    "context": "Alguns gregos queriam ver Jesus. Ele não marca um encontro e passa a falar da hora do Filho do Homem.",
+    "keyword": "grão de trigo",
+    "keywordGloss": "A imagem com que Jesus fala da hora que acaba de anunciar.",
+    "focusQuestion": "O que você ainda segura quando a hora pede para soltar?",
+    "reflectionPrompts": [
+      "A hora chegou",
+      "O grão na terra",
+      "A voz do céu"
+    ],
+    "facts": [
+      {
+        "text": "Jesus anuncia que chegou a hora em que o Filho do Homem será glorificado.",
+        "evidenceRef": "João 12:23",
+        "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado"
+      },
+      {
+        "text": "Se o grão de trigo não morrer, permanecerá só.",
+        "evidenceRef": "João 12:24",
+        "evidenceSpan": "não morrer, permanecerá só"
+      },
+      {
+        "text": "Se o grão morrer, produzirá abundantes frutos.",
+        "evidenceRef": "João 12:24",
+        "evidenceSpan": "se morrer, produzirá abundantes frutos"
+      },
+      {
+        "text": "Quem ama a sua vida a perderá, mas quem a aborrece neste mundo a preservará para a vida eterna.",
+        "evidenceRef": "João 12:25",
+        "evidenceSpan": "Quem ama a sua vida a perderá; mas aquele que aborrece a sua vida neste mundo a preservará para a vida eterna"
+      },
+      {
+        "text": "Quem servir a Jesus será honrado pelo Pai.",
+        "evidenceRef": "João 12:26",
+        "evidenceSpan": "se alguém me servir, o Pai o honrará"
+      },
+      {
+        "text": "Uma voz do céu diz que já glorificou e ainda glorificará.",
+        "evidenceRef": "João 12:28",
+        "evidenceSpan": "Já o glorifiquei e ainda o glorificarei"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "grão de trigo",
+        "gloss": "A imagem do que cai na terra: sem morrer fica só, e morrendo produz fruto."
+      },
+      {
+        "term": "glorificado",
+        "gloss": "O que Jesus diz que acontecerá ao Filho do Homem quando a hora chegar."
+      },
+      {
+        "term": "vida eterna",
+        "gloss": "O horizonte para o qual fica preservada a vida de quem a aborrece neste mundo."
+      }
+    ],
+    "structure": [
+      { "label": "A hora da glória é anunciada", "evidenceRef": "João 12:23" },
+      { "label": "Sem morte o grão fica só", "evidenceRef": "João 12:24" },
+      { "label": "A morte do grão produz fruto", "evidenceRef": "João 12:24" },
+      { "label": "A voz do céu responde ao pedido", "evidenceRef": "João 12:28" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Quem ama a sua vida a perde, mas quem a aborrece neste mundo a preserva para a vida eterna.",
+        "marker": "mas",
+        "evidenceRef": "João 12:25"
+      },
+      {
+        "kind": "propósito",
+        "text": "Jesus pede para ser salvo desta hora, mas afirma que veio para ela.",
+        "marker": "para",
+        "evidenceRef": "João 12:27"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do pedido para glorificar o nome, uma voz do céu responde.",
+        "marker": "Então",
+        "evidenceRef": "João 12:28"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Marcos 8:35", "bridge": "Perder para salvar a vida" },
+      { "ref": "João 17:1", "bridge": "A hora de ser glorificado" },
+      { "ref": "1 Coríntios 15:36", "bridge": "Morrer para ter vida" }
+    ],
+    "misreadings": [
+      {
+        "text": "O fruto da hora chega sem morte, como glória que não passa pelo grão.",
+        "why": "Jesus diz que, se o grão não morrer, permanece só. O fruto vem se ele morrer."
+      },
+      {
+        "text": "Aborrecer a vida neste mundo é jogá-la fora, sem futuro pela frente.",
+        "why": "Quem aborrece a vida neste mundo a preservará para a vida eterna. Não é um fim sem amanhã."
+      },
+      {
+        "text": "O pedido para ser salvo desta hora mostra que Jesus desiste dela.",
+        "why": "Na mesma frase ele diz que veio para esta hora e, em seguida, pede que o Pai glorifique o nome."
+      }
+    ],
+    "centralInsight": "Como o grão que morre e dá muito fruto, a vida entregue é a que permanece.",
+    "anchorQuestion": "O que Jesus diz que acontece se o grão de trigo morrer?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 12:28, Jesus é quem diz que já glorificou e ainda glorificará.",
+      "verseRef": "João 12:28",
+      "correctOptionId": "false",
+      "evidenceSpan": "veio uma voz do céu, que disse",
+      "feedbackCorrect": "Quem diz isso é a voz do céu. Jesus pede que o Pai glorifique o nome.",
+      "feedbackWrong": {
+        "true": "Jesus só pede que o nome seja glorificado. A frase seguinte é da voz do céu."
+      },
+      "hint": "Veja quem fala logo depois do pedido ao Pai.",
+      "learningObjective": "Observar que a voz do céu, e não Jesus, diz já ter glorificado.",
+      "evidence": ["João 12:28"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 12:23, toque quem será glorificado.",
+      "verseRef": "João 12:23",
+      "options": [
+        { "id": "a", "text": "Jesus" },
+        { "id": "b", "text": "Filho do Homem" },
+        { "id": "c", "text": "a hora" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Filho do Homem será glorificado",
+      "feedbackCorrect": "O glorificado na frase é o Filho do Homem. Jesus é quem anuncia.",
+      "feedbackWrong": {
+        "a": "Jesus é quem responde. Quem será glorificado é o título da frase.",
+        "c": "A hora é o momento que chegou, não quem será glorificado."
+      },
+      "hint": "Procure o título de quem recebe a glória.",
+      "learningObjective": "Identificar quem Jesus diz que será glorificado nesta hora.",
+      "evidence": ["João 12:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 12:25, o que acontece com quem ama a sua vida?",
+      "verseRef": "João 12:25",
+      "options": [
+        { "id": "a", "text": "Ela fica guardada para sempre" },
+        { "id": "b", "text": "O Pai lhe dá honra na hora" },
+        { "id": "c", "text": "Essa vida acaba sendo perdida" },
+        { "id": "d", "text": "Uma voz do céu a confirma" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Quem ama a sua vida a perderá",
+      "feedbackCorrect": "A primeira frase diz que quem ama a sua vida a perderá.",
+      "feedbackWrong": {
+        "a": "Guardar para sempre é o outro lado da frase, não este.",
+        "b": "A honra do Pai está no versículo seguinte, para quem serve.",
+        "d": "A voz do céu só aparece em João 12:28."
+      },
+      "hint": "Leia a primeira frase, antes do mas.",
+      "learningObjective": "Observar o que o texto diz de quem ama a sua vida.",
+      "evidence": ["João 12:25"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 12:24 na ordem do texto.",
+      "verseRef": "João 12:24",
+      "options": [
+        { "id": "a", "text": "se o grão de trigo, caindo na terra" },
+        { "id": "b", "text": "não morrer, permanecerá só" },
+        { "id": "c", "text": "se morrer, produzirá abundantes frutos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "se o grão de trigo, caindo na terra",
+      "feedbackCorrect": "O grão cai na terra, fica só se não morre, e frutifica se morre.",
+      "feedbackWrong": {
+        "default": "Comece pelo grão que cai na terra. O fruto fica no fim."
+      },
+      "hint": "A imagem começa com o grão caindo na terra.",
+      "learningObjective": "Reconhecer a ordem das partes de João 12:24.",
+      "evidence": ["João 12:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 12:24, de que grão Jesus fala?",
+      "verseRef": "João 12:24",
+      "options": [
+        { "id": "a", "text": "cevada" },
+        { "id": "b", "text": "mostarda" },
+        { "id": "c", "text": "trigo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o grão de trigo",
+      "feedbackCorrect": "O grão nomeado é o de trigo, a semente que cai na terra.",
+      "feedbackWrong": {
+        "a": "Cevada não aparece. O grão da frase tem outro nome.",
+        "b": "Mostarda é outra imagem. Aqui o nome do grão é outro."
+      },
+      "hint": "Leia a palavra que vem logo depois de grão de.",
+      "learningObjective": "Lembrar o grão concreto com que Jesus fala da hora.",
+      "evidence": ["João 12:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 12:23 comunica que se liga a este contexto?",
+      "verseRef": "João 12:23",
+      "passageA": { "ref": "João 12:23" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Gregos queriam ver Jesus, e a resposta dele fala da hora."
+      },
+      "options": [
+        { "id": "a", "text": "Um encontro já marcado" },
+        { "id": "b", "text": "Resposta sobre a hora" },
+        { "id": "c", "text": "Silêncio aos visitantes" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado",
+      "feedbackCorrect": "Quem quer vê-lo ouve, em resposta, que a hora chegou.",
+      "feedbackWrong": {
+        "a": "Ele não marca encontro. A frase anuncia a hora.",
+        "c": "Jesus não fica em silêncio. Ele responde falando da hora."
+      },
+      "hint": "Veja de que tema é a frase da resposta.",
+      "learningObjective": "Ligar o anúncio da hora à resposta de Jesus a quem quer vê-lo.",
+      "evidence": ["João 12:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 12:28, uma voz do céu fala depois do pedido de Jesus.",
+      "verseRef": "João 12:28",
+      "correctOptionId": "true",
+      "evidenceSpan": "veio uma voz do céu, que disse",
+      "feedbackCorrect": "O pedido ao Pai vem primeiro. Depois, uma voz do céu responde.",
+      "feedbackWrong": {
+        "false": "A ordem do versículo é o pedido primeiro e a voz do céu depois."
+      },
+      "hint": "Veja o que o texto narra logo após o pedido.",
+      "learningObjective": "Compreender a sequência entre o pedido de Jesus e a voz do céu.",
+      "evidence": ["João 12:28"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 12:28, toque a palavra que marca a passagem do pedido à voz.",
+      "verseRef": "João 12:28",
+      "options": [
+        { "id": "a", "text": "nome" },
+        { "id": "b", "text": "céu" },
+        { "id": "c", "text": "Então" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Então, veio uma voz do céu",
+      "feedbackCorrect": "Essa palavra vira a cena do pedido de Jesus para a voz do céu.",
+      "feedbackWrong": {
+        "a": "Nome é o que se pede que seja glorificado, não a virada.",
+        "b": "Céu diz de onde a voz vem. A virada é a palavra anterior."
+      },
+      "hint": "Olhe a palavra entre o pedido e a chegada da voz.",
+      "learningObjective": "Reconhecer a palavra que marca a passagem do pedido à voz.",
+      "evidence": ["João 12:28"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que contraste João 12:25 faz entre as duas atitudes?",
+      "verseRef": "João 12:25",
+      "options": [
+        { "id": "a", "text": "Apegar-se perde a vida e soltá-la a guarda" },
+        { "id": "b", "text": "As duas atitudes terminam no mesmo lugar" },
+        { "id": "c", "text": "Aborrecer a vida aqui cancela o futuro" },
+        { "id": "d", "text": "Amar a vida já garante o que vem depois" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas aquele que aborrece a sua vida neste mundo a preservará",
+      "feedbackCorrect": "O mas separa dois fins: apegar-se e perder, ou soltar e guardar.",
+      "feedbackWrong": {
+        "b": "As frases não têm o mesmo fim. Uma perde e a outra guarda.",
+        "c": "Aborrecer a vida neste mundo não apaga o futuro. Há vida eterna.",
+        "d": "Amar a vida não a garante. O texto diz que essa pessoa a perde."
+      },
+      "hint": "Compare o fim que cada frase anuncia para a vida.",
+      "learningObjective": "Relacionar as duas atitudes de João 12:25 e o fim de cada uma.",
+      "evidence": ["João 12:25"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual a ordem da fala, da hora anunciada ao fruto?",
+      "verseRef": "João 12:23–24",
+      "options": [
+        { "id": "a", "text": "A hora da glória é anunciada" },
+        { "id": "b", "text": "Sem morte o grão fica só" },
+        { "id": "c", "text": "A morte do grão produz fruto" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "produzirá abundantes frutos",
+      "feedbackCorrect": "A hora é anunciada, o grão sem morte fica só, e a morte gera fruto.",
+      "feedbackWrong": {
+        "default": "Abra pela hora anunciada. O fruto é o último passo."
+      },
+      "hint": "O fruto é o ponto de chegada, não o começo.",
+      "learningObjective": "Compreender o movimento da hora anunciada até o fruto.",
+      "evidence": ["João 12:23", "João 12:24"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 12:26, o que o Pai fará a quem servir?",
+      "verseRef": "João 12:26",
+      "options": [
+        { "id": "a", "text": "deixará" },
+        { "id": "b", "text": "honrará" },
+        { "id": "c", "text": "julgará" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Pai o honrará",
+      "feedbackCorrect": "Quem servir será honrado pelo Pai. É o verbo que fecha o versículo.",
+      "feedbackWrong": {
+        "a": "Deixar não é o verbo do texto. O Pai faz outra coisa.",
+        "c": "Julgar não aparece. O versículo diz outra ação do Pai."
+      },
+      "hint": "Olhe o último verbo, a ação do Pai.",
+      "learningObjective": "Lembrar o que o Pai faz por quem serve a Jesus.",
+      "evidence": ["João 12:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 12:25 a Marcos 8:35?",
+      "verseRef": "João 12:25",
+      "passageA": { "ref": "João 12:25" },
+      "passageB": { "ref": "Marcos 8:35" },
+      "options": [
+        { "id": "a", "text": "Honra imediata do Pai" },
+        { "id": "b", "text": "Perder para salvar a vida" },
+        { "id": "c", "text": "Fuga da hora anunciada" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Quem ama a sua vida a perderá",
+      "feedbackCorrect": "Nos dois, reter a vida a perde e entregá-la a guarda.",
+      "feedbackWrong": {
+        "a": "A honra do Pai é outro versículo. Marcos fala da vida.",
+        "c": "Nenhum dos dois fala em fugir. Os dois falam do destino da vida."
+      },
+      "hint": "Compare o destino de quem segura a própria vida.",
+      "learningObjective": "Relacionar João 12:25 ao dizer de Jesus sobre perder e salvar a vida.",
+      "evidence": ["João 12:25", "Marcos 8:35"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 12:27, Jesus desiste da hora ao pedir que o Pai o salve dela.",
+      "verseRef": "João 12:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "foi para isso que vim a esta hora",
+      "feedbackCorrect": "O pedido de socorro não é a última palavra. Ele afirma o propósito da hora.",
+      "feedbackWrong": {
+        "true": "A frase não termina no pedido. O texto ainda diz para que ele veio."
+      },
+      "hint": "Leia a frase até o fim, depois do pedido.",
+      "learningObjective": "Recusar a leitura de que Jesus abandona a hora ao pedir socorro.",
+      "evidence": ["João 12:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 12:27, toque o trecho que mostra que Jesus veio para a hora.",
+      "verseRef": "João 12:27",
+      "options": [
+        { "id": "a", "text": "minha alma" },
+        { "id": "b", "text": "vim a esta" },
+        { "id": "c", "text": "salva-me" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vim a esta hora",
+      "feedbackCorrect": "Essas palavras mostram a vinda: ele veio para esta hora, não para sair.",
+      "feedbackWrong": {
+        "a": "Minha alma nomeia quem sofre. A vinda está no fim da frase.",
+        "c": "Salva-me é o lamento. O propósito da vinda vem depois."
+      },
+      "hint": "Olhe o fim da frase, depois de foi para isso.",
+      "learningObjective": "Sustentar com o texto que Jesus veio para esta hora.",
+      "evidence": ["João 12:27"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 12:24 sustenta sobre o grão?",
+      "verseRef": "João 12:24",
+      "options": [
+        { "id": "a", "text": "O fruto vem mesmo sem o grão morrer" },
+        { "id": "b", "text": "Morrer deixa o grão só e sem fruto" },
+        { "id": "c", "text": "Ficar só já é o fruto da hora" },
+        { "id": "d", "text": "A morte do grão é o caminho do fruto" }
+      ],
+      "correctOptionId": "d",
+      "evidenceSpan": "se morrer, produzirá abundantes frutos",
+      "feedbackCorrect": "O fruto depende da morte do grão. Sem ela, ele permanece só.",
+      "feedbackWrong": {
+        "a": "Sem morte não há fruto. O grão que não morre permanece só.",
+        "b": "Morrer não deixa o grão estéril. É morrendo que ele produz fruto.",
+        "c": "Ficar só é o que acontece sem morte, não o fruto."
+      },
+      "hint": "Compare cada leitura com a condição de morrer.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o grão e o fruto.",
+      "evidence": ["João 12:24"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento vai da hora anunciada à glória do Filho?",
+      "verseRef": "João 12:23–24",
+      "options": [
+        { "id": "a", "text": "Jesus anuncia a hora da sua glória" },
+        { "id": "b", "text": "A morte do grão gera muito fruto" },
+        { "id": "c", "text": "O Pai glorifica o Filho nessa hora" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado",
+      "feedbackCorrect": "A hora é anunciada, o grão morre e frutifica, e o Pai glorifica o Filho.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio da hora. A glória do Filho é o passo final."
+      },
+      "hint": "A glória do Filho é o passo final, não o primeiro.",
+      "learningObjective": "Interpretar o caminho da hora anunciada até o Pai glorificar o Filho.",
+      "evidence": ["João 12:23", "João 12:24", "João 17:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 12:23, que palavra diz o destino do Filho do Homem?",
+      "verseRef": "João 12:23",
+      "options": [
+        { "id": "a", "text": "esquecido" },
+        { "id": "b", "text": "julgado" },
+        { "id": "c", "text": "glorificado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "será glorificado",
+      "feedbackCorrect": "A hora anuncia isto: o Filho do Homem será glorificado.",
+      "feedbackWrong": {
+        "a": "Esquecido não está na frase. O desfecho da hora é outro.",
+        "b": "Julgado não é a palavra. A hora aponta para outro verbo."
+      },
+      "hint": "Leia a última palavra da resposta de Jesus.",
+      "learningObjective": "Lembrar o termo que diz o que a hora faz com o Filho do Homem.",
+      "evidence": ["João 12:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 12:23 a João 17:1?",
+      "verseRef": "João 12:23",
+      "passageA": { "ref": "João 12:23" },
+      "passageB": { "ref": "João 17:1" },
+      "options": [
+        { "id": "a", "text": "A hora de ser glorificado" },
+        { "id": "b", "text": "O grão que fica só" },
+        { "id": "c", "text": "A voz que pede fuga" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado",
+      "feedbackCorrect": "Nos dois textos a hora chegou, e o Filho há de ser glorificado.",
+      "feedbackWrong": {
+        "b": "O grão que fica só é outra frase. João 17:1 fala da hora.",
+        "c": "João 17:1 não pede fuga. O pedido é que o Pai glorifique o Filho."
+      },
+      "hint": "Veja o que Jesus diz que chegou nos dois textos.",
+      "learningObjective": "Ligar o anúncio da hora em João 12 à oração em que Jesus a retoma.",
+      "evidence": ["João 12:23", "João 17:1"]
+    }
+  ]
+}

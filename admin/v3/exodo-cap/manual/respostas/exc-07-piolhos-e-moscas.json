@@ -1,0 +1,452 @@
+{
+  "study": {
+    "passageRef": "Êxodo 8:16–21",
+    "passages": [{ "ref": "Êxodo 8:16–24" }],
+    "context": "Arão fere o pó e nascem piolhos; os magos falham e confessam o dedo de Deus. Depois vêm moscas, e Gósen é separada.",
+    "keyword": "Dedo de Deus",
+    "keywordGloss": "Confissão dos magos: o sinal ultrapassa suas artes.",
+    "focusQuestion": "Onde você ainda tenta rivalizar com o que só Deus pode fazer?",
+    "reflectionPrompts": ["Magos falham", "Dedo de Deus", "Distinção do povo"],
+    "facts": [
+      {
+        "text": "Arão fere o pó e surgem piolhos no Egito.",
+        "evidenceRef": "Êxodo 8:17",
+        "evidenceSpan": "surgiram muitos piolhos"
+      },
+      {
+        "text": "Os magos não conseguiram produzir piolhos.",
+        "evidenceRef": "Êxodo 8:18",
+        "evidenceSpan": "mas não conseguiram"
+      },
+      {
+        "text": "Os magos disseram: Isto é o dedo de Deus.",
+        "evidenceRef": "Êxodo 8:19",
+        "evidenceSpan": "Isto é o dedo de Deus"
+      },
+      {
+        "text": "Deus separará a terra de Gósen das moscas.",
+        "evidenceRef": "Êxodo 8:22",
+        "evidenceSpan": "separarei a terra de Gósen"
+      },
+      {
+        "text": "Farão distinção entre o povo de Deus e o de Faraó.",
+        "evidenceRef": "Êxodo 8:23",
+        "evidenceSpan": "farei distinção entre o meu povo e o seu povo"
+      }
+    ],
+    "keyTerms": [
+      { "term": "piolhos", "gloss": "Praga que nasce do pó e os magos não repetem." },
+      { "term": "dedo", "gloss": "Imagem que os magos usam para confessar o poder de Deus." },
+      { "term": "distinção", "gloss": "Separação entre o povo de Deus e o Egito." }
+    ],
+    "structure": [
+      { "label": "Piolhos cobrem o Egito", "evidenceRef": "Êxodo 8:16–17" },
+      { "label": "Magos falham e confessam", "evidenceRef": "Êxodo 8:18–19" },
+      { "label": "Aviso das moscas", "evidenceRef": "Êxodo 8:20–21" },
+      { "label": "Gósen separada e moscas vêm", "evidenceRef": "Êxodo 8:22–24" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os magos confessam, porém o coração de Faraó se endurece.",
+        "marker": "Porém",
+        "evidenceRef": "Êxodo 8:19"
+      },
+      {
+        "kind": "propósito",
+        "text": "Separar Gósen para Faraó saber que o Senhor está no meio da terra.",
+        "marker": "para que",
+        "evidenceRef": "Êxodo 8:22"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Senhor fez isso e a terra ficou arruinada com os enxames.",
+        "marker": null,
+        "evidenceRef": "Êxodo 8:24"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Lucas 11:20", "bridge": "Dedo de Deus no reino" },
+      { "ref": "Êxodo 9:4", "bridge": "Distinção do gado" },
+      { "ref": "Salmos 8:3", "bridge": "Obra dos dedos de Deus" }
+    ],
+    "misreadings": [
+      {
+        "text": "Os magos igualaram Deus até o fim.",
+        "why": "Aqui eles falham e confessam o dedo de Deus."
+      },
+      {
+        "text": "As moscas atingem Israel e o Egito igualmente.",
+        "why": "Gósen é separada; há distinção."
+      },
+      {
+        "text": "Faraó ouviu os magos e se arrependeu.",
+        "why": "O coração se endureceu e não os ouviu."
+      }
+    ],
+    "centralInsight": "Os magos confessam o dedo de Deus, e o Senhor faz distinção do seu povo.",
+    "anchorQuestion": "O que os magos confessaram quando falharam com os piolhos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Os magos produziram piolhos com suas artes ocultas sem dificuldade.",
+      "verseRef": "Êxodo 8:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não conseguiram",
+      "feedbackCorrect": "Eles tentaram e não conseguiram.",
+      "feedbackWrong": { "true": "Releia: não conseguiram." },
+      "hint": "O que aconteceu com a tentativa?",
+      "learningObjective": "Observar o limite dos magos.",
+      "evidence": ["Êxodo 8:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 8:19, toque o que os magos disseram ser aquilo.",
+      "verseRef": "Êxodo 8:19",
+      "options": [
+        { "id": "a", "text": "dedo de Deus" },
+        { "id": "b", "text": "coração" },
+        { "id": "c", "text": "Faraó" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Isto é o dedo de Deus",
+      "feedbackCorrect": "A confissão é: Isto é o dedo de Deus.",
+      "feedbackWrong": {
+        "b": "Coração é o de Faraó que endurece.",
+        "c": "Faraó ouve; a confissão é sobre Deus."
+      },
+      "hint": "A frase depois de \"Isto é\".",
+      "learningObjective": "Identificar a confissão dos magos.",
+      "evidence": ["Êxodo 8:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 8:22, o que Deus fará com a terra de Gósen?",
+      "verseRef": "Êxodo 8:22",
+      "options": [
+        { "id": "a", "text": "Separá-la para não haver moscas" },
+        { "id": "b", "text": "Entregá-la a Faraó" },
+        { "id": "c", "text": "Queimá-la com fogo" },
+        { "id": "d", "text": "Afogá-la no Nilo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "separarei a terra de Gósen",
+      "feedbackCorrect": "Gósen é separada; nela não haverá enxames.",
+      "feedbackWrong": {
+        "b": "Não a entrega a Faraó.",
+        "c": "Não fala de fogo.",
+        "d": "Não fala de afogar."
+      },
+      "hint": "Verbo principal do versículo.",
+      "learningObjective": "Observar a proteção de Gósen.",
+      "evidence": ["Êxodo 8:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 8:19 na ordem do texto.",
+      "verseRef": "Êxodo 8:19",
+      "options": [
+        { "id": "a", "text": "Então, os magos disseram a Faraó: Isto é o dedo de Deus" },
+        { "id": "b", "text": "Porém, o coração de Faraó se endureceu" },
+        { "id": "c", "text": "e não os ouviu como o SENHOR havia dito" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Isto é o dedo de Deus",
+      "feedbackCorrect": "Confissão, endurecimento e surdez.",
+      "feedbackWrong": { "default": "Comece pela fala dos magos." },
+      "hint": "O \"Porém\" vem depois da confissão.",
+      "learningObjective": "Reconhecer a sequência de 8:19.",
+      "evidence": ["Êxodo 8:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 8:23, o que Deus fará entre os dois povos?",
+      "verseRef": "Êxodo 8:23",
+      "options": [
+        { "id": "a", "text": "aliança" },
+        { "id": "b", "text": "distinção" },
+        { "id": "c", "text": "guerra" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "farei distinção entre o meu povo",
+      "feedbackCorrect": "Haverá distinção entre o povo de Deus e o de Faraó.",
+      "feedbackWrong": {
+        "a": "Aqui o termo é distinção.",
+        "c": "Não diz guerra neste verso."
+      },
+      "hint": "Verbo: farei ___.",
+      "learningObjective": "Lembrar a palavra da separação.",
+      "evidence": ["Êxodo 8:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 8:19 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 8:19",
+      "passageA": { "ref": "Êxodo 8:19" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os magos tentaram repetir a praga e falharam."
+      },
+      "options": [
+        { "id": "a", "text": "Confessam o dedo de Deus" },
+        { "id": "b", "text": "Vencem Moisés e Arão" },
+        { "id": "c", "text": "Faraó se converte" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Isto é o dedo de Deus",
+      "feedbackCorrect": "A falha leva à confissão do dedo de Deus.",
+      "feedbackWrong": {
+        "b": "Eles não conseguiram.",
+        "c": "O coração endureceu."
+      },
+      "hint": "O que dizem após falhar?",
+      "learningObjective": "Ligar falha e confissão.",
+      "evidence": ["Êxodo 8:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 8:19, depois da confissão dos magos, Faraó ouviu e libertou o povo.",
+      "verseRef": "Êxodo 8:19",
+      "correctOptionId": "false",
+      "evidenceSpan": "o coração de Faraó se endureceu e não os ouviu",
+      "feedbackCorrect": "O \"Porém\" marca o contraste: endureceu e não ouviu.",
+      "feedbackWrong": { "true": "Releia: endureceu e não os ouviu." },
+      "hint": "O que vem depois de \"Porém\"?",
+      "learningObjective": "Compreender o contraste confissão–endurecimento.",
+      "evidence": ["Êxodo 8:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 8:19, toque a palavra que marca o contraste com a confissão.",
+      "verseRef": "Êxodo 8:19",
+      "options": [
+        { "id": "a", "text": "Porém" },
+        { "id": "b", "text": "magos" },
+        { "id": "c", "text": "dito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, o coração de Faraó",
+      "feedbackCorrect": "\"Porém\" vira a cena do reconhecimento ao endurecimento.",
+      "feedbackWrong": {
+        "b": "Magos confessam; o contraste é Porém.",
+        "c": "Dito fecha a frase; o marcador é Porém."
+      },
+      "hint": "Palavra curta após a confissão.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Êxodo 8:19"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 8:22 liga a separação de Gósen ao conhecimento de Deus?",
+      "verseRef": "Êxodo 8:22",
+      "options": [
+        { "id": "a", "text": "Separar Gósen para saber que o Senhor está no meio" },
+        { "id": "b", "text": "Separar Gósen para esconder Israel" },
+        { "id": "c", "text": "Separar Gósen para agradar aos magos" },
+        { "id": "d", "text": "Separar Gósen sem nenhum propósito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saiba que eu sou o Senhor no meio desta terra",
+      "feedbackCorrect": "A distinção serve para Faraó saber quem é o Senhor.",
+      "feedbackWrong": {
+        "b": "O fim declarado é conhecimento.",
+        "c": "Não é para os magos.",
+        "d": "Há propósito explícito."
+      },
+      "hint": "Leia o \"para que\".",
+      "learningObjective": "Relacionar distinção e conhecimento.",
+      "evidence": ["Êxodo 8:22"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 8:17–24?",
+      "verseRef": "Êxodo 8:17–19",
+      "options": [
+        { "id": "a", "text": "Piolhos cobrem homens e gado" },
+        { "id": "b", "text": "Magos falham e confessam Deus" },
+        { "id": "c", "text": "Moscas vêm e Gósen é poupada" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Isto é o dedo de Deus",
+      "feedbackCorrect": "Praga, confissão e distinção com moscas.",
+      "feedbackWrong": { "default": "As moscas vêm depois dos piolhos." },
+      "hint": "A confissão fica no meio.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": ["Êxodo 8:17", "Êxodo 8:24"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 8:17, o que Arão feriu com a vara?",
+      "verseRef": "Êxodo 8:17",
+      "options": [
+        { "id": "a", "text": "pó" },
+        { "id": "b", "text": "rio" },
+        { "id": "c", "text": "altar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "feriu o pó da terra",
+      "feedbackCorrect": "Ele feriu o pó; o pó virou piolhos.",
+      "feedbackWrong": {
+        "b": "Não é o rio neste sinal.",
+        "c": "Não há altar aqui."
+      },
+      "hint": "O que se transforma em piolhos?",
+      "learningObjective": "Lembrar o gesto de Arão.",
+      "evidence": ["Êxodo 8:17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 8:19 a Lucas 11:20?",
+      "verseRef": "Êxodo 8:19",
+      "passageA": { "ref": "Êxodo 8:19" },
+      "passageB": { "ref": "Lucas 11:20" },
+      "options": [
+        { "id": "a", "text": "Dedo de Deus age" },
+        { "id": "b", "text": "Lei cerimonial" },
+        { "id": "c", "text": "Lista de reis" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dedo de Deus",
+      "feedbackCorrect": "Nos dois, o dedo de Deus marca ação divina.",
+      "feedbackWrong": {
+        "b": "Não é o tema deste elo.",
+        "c": "Não há lista de reis."
+      },
+      "hint": "A mesma imagem nos dois textos.",
+      "learningObjective": "Relacionar Êxodo e o evangelho.",
+      "evidence": ["Êxodo 8:19", "Lucas 11:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 8:16–24 sustenta que Deus pode distinguir o seu povo no meio do julgamento do Egito.",
+      "verseRef": "Êxodo 8:22–23",
+      "correctOptionId": "true",
+      "evidenceSpan": "farei distinção entre o meu povo e o seu povo",
+      "feedbackCorrect": "Separar Gósen e fazer distinção é o ponto do sinal.",
+      "feedbackWrong": { "false": "O texto declara distinção e separação." },
+      "hint": "Leia 8:22–23 juntos.",
+      "learningObjective": "Interpretar a distinção divina.",
+      "evidence": ["Êxodo 8:22", "Êxodo 8:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 8:22, toque o trecho que mostra onde habita o povo de Deus.",
+      "verseRef": "Êxodo 8:22",
+      "options": [
+        { "id": "a", "text": "Gósen" },
+        { "id": "b", "text": "moscas" },
+        { "id": "c", "text": "oficiais" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "terra de Gósen, onde habita o meu povo",
+      "feedbackCorrect": "O povo habita em Gósen, terra separada.",
+      "feedbackWrong": {
+        "b": "Moscas são a praga do Egito.",
+        "c": "Oficiais são do Egito."
+      },
+      "hint": "Nome da terra no versículo.",
+      "learningObjective": "Sustentar a localização do povo.",
+      "evidence": ["Êxodo 8:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 8:16–24 sustenta sobre os magos e Deus?",
+      "verseRef": "Êxodo 8:18–19",
+      "options": [
+        { "id": "a", "text": "Há limite humano; Deus age e distingue o seu" },
+        { "id": "b", "text": "Magos e Deus têm o mesmo poder" },
+        { "id": "c", "text": "Israel sofre as moscas como o Egito" },
+        { "id": "d", "text": "Faraó obedece assim que ouve" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Isto é o dedo de Deus",
+      "feedbackCorrect": "Falha, confissão e distinção mostram o Senhor.",
+      "feedbackWrong": {
+        "b": "Eles não conseguiram.",
+        "c": "Gósen é poupada.",
+        "d": "O coração endureceu."
+      },
+      "hint": "Una 8:18, 8:19 e 8:23.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": ["Êxodo 8:19", "Êxodo 8:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do dedo de Deus?",
+      "verseRef": "Êxodo 8:19",
+      "options": [
+        { "id": "a", "text": "Magos confessam o dedo de Deus" },
+        { "id": "b", "text": "Jesus liga o dedo de Deus ao reino" },
+        { "id": "c", "text": "O Salmo louva a obra dos dedos de Deus" }
+      ],
+      "correctOrder": ["a", "c", "b"],
+      "evidenceSpan": "dedo de Deus",
+      "evidence": ["Êxodo 8:19", "Salmos 8:3", "Lucas 11:20"],
+      "feedbackCorrect": "Do Egito ao louvo e ao evangelho.",
+      "feedbackWrong": { "default": "Comece pelos magos; depois Salmo e Lucas." },
+      "hint": "Ordem: Êxodo, Salmo, evangelho.",
+      "learningObjective": "Ver o dedo de Deus na Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 8:19, o que é o sinal segundo os magos?",
+      "verseRef": "Êxodo 8:19",
+      "options": [
+        { "id": "a", "text": "dedo" },
+        { "id": "b", "text": "sono" },
+        { "id": "c", "text": "vento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Isto é o dedo de Deus",
+      "feedbackCorrect": "O termo-chave da confissão é dedo.",
+      "feedbackWrong": {
+        "b": "Não é sono.",
+        "c": "Não é vento."
+      },
+      "hint": "Isto é o ___ de Deus.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": ["Êxodo 8:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 8:23 a Êxodo 9:4?",
+      "verseRef": "Êxodo 8:23",
+      "passageA": { "ref": "Êxodo 8:23" },
+      "passageB": { "ref": "Êxodo 9:4" },
+      "options": [
+        { "id": "a", "text": "Distinção do povo" },
+        { "id": "b", "text": "Construção do altar" },
+        { "id": "c", "text": "Censo de Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farei distinção",
+      "feedbackCorrect": "Nos dois sinais, o Senhor distingue o seu.",
+      "feedbackWrong": {
+        "b": "Não é o tema.",
+        "c": "Não há censo aqui."
+      },
+      "hint": "A mesma ação de separar.",
+      "learningObjective": "Ligar distinção em pragas seguidas.",
+      "evidence": ["Êxodo 8:23", "Êxodo 9:4"]
+    }
+  ]
+}

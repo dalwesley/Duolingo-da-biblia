@@ -1,0 +1,483 @@
+{
+  "study": {
+    "passageRef": "João 13:3–8",
+    "passages": [
+      { "ref": "João 13:3–8" },
+      { "ref": "João 13:9–11" },
+      { "ref": "João 13:12–15" }
+    ],
+    "context": "Jesus está à mesa com os discípulos e sabe que o Pai lhe entregou todas as coisas. Ele veio de Deus e volta para Deus. Pedro estranha quando Jesus se aproxima.",
+    "keyword": "exemplo",
+    "keywordGloss": "É o gesto que Jesus entrega aos discípulos para que eles façam o mesmo.",
+    "focusQuestion": "Onde você ainda espera ser servido, quando cabe a você se abaixar e servir?",
+    "reflectionPrompts": [
+      "Ciente de quem é",
+      "A água na bacia",
+      "Fazer como ele fez"
+    ],
+    "facts": [
+      {
+        "text": "O Pai entregara todas as coisas às mãos de Jesus.",
+        "evidenceRef": "João 13:3",
+        "evidenceSpan": "o Pai entregara todas as coisas às suas mãos"
+      },
+      {
+        "text": "Jesus aproximou-se de Simão Pedro.",
+        "evidenceRef": "João 13:6",
+        "evidenceSpan": "Aproximou-se, então, de Simão Pedro"
+      },
+      {
+        "text": "Jesus começou a lavar os pés dos discípulos.",
+        "evidenceRef": "João 13:5",
+        "evidenceSpan": "começou a lavar os pés dos discípulos"
+      },
+      {
+        "text": "Jesus diz que, se não lavar Pedro, ele não terá parte consigo.",
+        "evidenceRef": "João 13:8",
+        "evidenceSpan": "Se eu não os lavar, você não terá parte comigo"
+      },
+      {
+        "text": "Jesus disse que nem todos estão limpos porque sabia quem o trairia.",
+        "evidenceRef": "João 13:11",
+        "evidenceSpan": "Porque sabia bem quem o trairia; por isso disse: Nem todos estão limpos."
+      },
+      {
+        "text": "Jesus deu o exemplo aos discípulos.",
+        "evidenceRef": "João 13:15",
+        "evidenceSpan": "eu vos dei o exemplo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "toalha",
+        "gloss": "Pano com que Jesus se cinge e enxuga os pés dos discípulos."
+      },
+      {
+        "term": "Mestre",
+        "gloss": "Título que os discípulos dão a Jesus e que ele confirma ao servir."
+      },
+      {
+        "term": "exemplo",
+        "gloss": "O gesto que Jesus entrega para que os discípulos façam o mesmo."
+      }
+    ],
+    "structure": [
+      { "label": "Jesus se levanta e deixa a mesa", "evidenceRef": "João 13:4" },
+      { "label": "Ele se cinge com uma toalha", "evidenceRef": "João 13:4" },
+      { "label": "Passa a lavar e enxugar os pés", "evidenceRef": "João 13:5" },
+      { "label": "O gesto vira exemplo a repetir", "evidenceRef": "João 13:15" }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jesus deu o exemplo para que os discípulos façam como ele fez.",
+        "marker": "para",
+        "evidenceRef": "João 13:15"
+      },
+      {
+        "kind": "causa",
+        "text": "Jesus diz que nem todos estão limpos porque sabia quem o trairia.",
+        "marker": "Porque",
+        "evidenceRef": "João 13:11"
+      },
+      {
+        "kind": "contraste",
+        "text": "Jesus afirma que os discípulos estão limpos, mas logo diz que não são todos.",
+        "marker": "mas",
+        "evidenceRef": "João 13:10"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Marcos 10:45", "bridge": "Jesus veio para servir" },
+      { "ref": "Lucas 22:27", "bridge": "Serve no meio do grupo" },
+      { "ref": "1 Pedro 2:21", "bridge": "Cristo deixou o exemplo" }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus lava os pés porque não sabia que viera de Deus e voltava para Deus.",
+        "why": "O texto abre dizendo que ele estava ciente disso antes de se levantar da mesa."
+      },
+      {
+        "text": "Os discípulos erram ao chamar Jesus de Mestre e Senhor.",
+        "why": "Jesus diz que eles afirmam com razão, porque ele realmente é Mestre e Senhor."
+      },
+      {
+        "text": "O exemplo dispensa os discípulos de lavar os pés uns dos outros.",
+        "why": "Jesus diz que eles também devem lavar os pés uns dos outros e fazer como ele fez."
+      }
+    ],
+    "centralInsight": "O Mestre lava os pés dos discípulos e deixa o exemplo do serviço.",
+    "anchorQuestion": "O que Jesus pede que os discípulos façam depois de terem os pés lavados?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 13:5, Jesus começou a lavar os pés dos discípulos.",
+      "verseRef": "João 13:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "começou a lavar os pés dos discípulos",
+      "feedbackCorrect": "Jesus derrama a água e começa a lavar os pés dos discípulos.",
+      "feedbackWrong": {
+        "false": "O versículo diz que ele começou a lavar os pés dos discípulos."
+      },
+      "hint": "Olhe o que Jesus começa a fazer depois da água.",
+      "learningObjective": "Observar que Jesus começou a lavar os pés dos discípulos.",
+      "evidence": ["João 13:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 13:6, toque de quem Jesus se aproximou.",
+      "verseRef": "João 13:6",
+      "options": [
+        { "id": "a", "text": "Senhor" },
+        { "id": "b", "text": "Simão Pedro" },
+        { "id": "c", "text": "os pés" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Aproximou-se, então, de Simão Pedro",
+      "feedbackCorrect": "Jesus se aproxima de Simão Pedro, e é Pedro quem fala em seguida.",
+      "feedbackWrong": {
+        "a": "Senhor é o título com que Pedro fala a Jesus, não de quem ele se aproxima.",
+        "c": "Os pés são o que seria lavado, não a pessoa de quem Jesus se aproxima."
+      },
+      "hint": "Veja o nome de quem Jesus se aproxima.",
+      "learningObjective": "Identificar de quem Jesus se aproximou na ceia.",
+      "evidence": ["João 13:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que Jesus responde à recusa de Pedro?",
+      "verseRef": "João 13:8",
+      "options": [
+        { "id": "a", "text": "Pedro fica sem parte com ele" },
+        { "id": "b", "text": "A recusa é um respeito aceito" },
+        { "id": "c", "text": "A lavagem passa a outro discípulo" },
+        { "id": "d", "text": "Jesus adia o gesto para depois" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você não terá parte comigo",
+      "feedbackCorrect": "Sem essa lavagem, Pedro não teria parte com Jesus.",
+      "feedbackWrong": {
+        "b": "Jesus não elogia a recusa; ele avisa que Pedro ficaria sem parte com ele.",
+        "c": "O texto não transfere a lavagem; Jesus fala de lavar Pedro ele mesmo.",
+        "d": "A resposta não adia o gesto; sem a lavagem, Pedro não tem parte com ele."
+      },
+      "hint": "Leia a frase de Jesus depois da recusa.",
+      "learningObjective": "Observar o que Jesus responde à recusa de Pedro.",
+      "evidence": ["João 13:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 13:4 na ordem do texto.",
+      "verseRef": "João 13:4",
+      "options": [
+        { "id": "a", "text": "Levantou-se da mesa" },
+        { "id": "b", "text": "despindo-se de suas vestes" },
+        { "id": "c", "text": "pegando uma toalha, cingiu-se com ela" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Levantou-se da mesa",
+      "feedbackCorrect": "A ordem é a do versículo: levanta, tira as vestes e se cinge com a toalha.",
+      "feedbackWrong": {
+        "default": "Comece por ele se levantar da mesa; a toalha vem no fim."
+      },
+      "hint": "A primeira ação é deixar a mesa.",
+      "learningObjective": "Reconhecer a sequência de ações em João 13:4.",
+      "evidence": ["João 13:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 13:5, em que Jesus derramou a água?",
+      "verseRef": "João 13:5",
+      "options": [
+        { "id": "a", "text": "jarra" },
+        { "id": "b", "text": "tigela" },
+        { "id": "c", "text": "bacia" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "derramou água na bacia",
+      "feedbackCorrect": "Jesus derrama a água na bacia e, com ela, começa a lavar os pés.",
+      "feedbackWrong": {
+        "a": "O texto não fala em jarra; a água vai para a bacia.",
+        "b": "A tigela não aparece; ele derrama a água na bacia."
+      },
+      "hint": "Veja em que vasilha a água é derramada.",
+      "learningObjective": "Lembrar o recipiente em que Jesus derramou a água.",
+      "evidence": ["João 13:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 13:14 comunica que se liga a este contexto?",
+      "verseRef": "João 13:14",
+      "passageA": { "ref": "João 13:14" },
+      "passageB": { "ref": "Contexto", "text": "Quem é Senhor e Mestre também serve os seus." },
+      "options": [
+        { "id": "a", "text": "O título isenta do serviço" },
+        { "id": "b", "text": "Só Pedro deve servir" },
+        { "id": "c", "text": "O Mestre serve os seus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "sou o Senhor e o Mestre, lavei os pés",
+      "feedbackCorrect": "Sendo Senhor e Mestre, ele lava os pés e chama os seus a servir.",
+      "feedbackWrong": {
+        "a": "O título não isenta: justamente por ser Mestre, ele serve e pede o mesmo.",
+        "b": "O texto não reduz o serviço a Pedro; o Mestre serve o grupo todo."
+      },
+      "hint": "Veja o que o título de Jesus faz com o serviço.",
+      "learningObjective": "Ligar João 13:14 ao serviço de quem é Senhor e Mestre.",
+      "evidence": ["João 13:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 13:11, Jesus diz que nem todos estão limpos porque sabia quem o trairia.",
+      "verseRef": "João 13:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porque sabia bem quem o trairia; por isso disse: Nem todos estão limpos.",
+      "feedbackCorrect": "Ele sabia quem o trairia e, por isso, disse que nem todos estão limpos.",
+      "feedbackWrong": {
+        "false": "O versículo liga as frases: ele sabia quem o trairia e por isso falou assim."
+      },
+      "hint": "Veja o motivo que abre o versículo.",
+      "learningObjective": "Compreender por que Jesus diz que nem todos estão limpos.",
+      "evidence": ["João 13:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 13:15, toque a palavra que introduz a finalidade do exemplo.",
+      "verseRef": "João 13:15",
+      "options": [
+        { "id": "a", "text": "assim" },
+        { "id": "b", "text": "para" },
+        { "id": "c", "text": "exemplo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que, assim como eu vos fiz",
+      "feedbackCorrect": "Para abre a finalidade: o exemplo existe para que eles também façam.",
+      "feedbackWrong": {
+        "a": "Assim marca o modo da comparação, não a finalidade do exemplo.",
+        "c": "Exemplo é o que Jesus deu; a finalidade vem na palavra seguinte."
+      },
+      "hint": "Veja a palavra curta que abre o que eles devem fazer.",
+      "learningObjective": "Reconhecer a palavra que marca a finalidade do exemplo.",
+      "evidence": ["João 13:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que a frase final de João 13:10 faz com a limpeza do grupo?",
+      "verseRef": "João 13:10",
+      "options": [
+        { "id": "a", "text": "Afirma a limpeza e logo a limita" },
+        { "id": "b", "text": "Garante a mesma limpeza a cada um" },
+        { "id": "c", "text": "Cancela a limpeza de quem se banhou" },
+        { "id": "d", "text": "Aplica a limpeza somente a Pedro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vocês estão limpos, mas não todos",
+      "feedbackCorrect": "Ele diz que estão limpos e, na mesma frase, avisa que não são todos.",
+      "feedbackWrong": {
+        "b": "A frase não iguala o grupo: depois de limpos vem a ressalva de que não são todos.",
+        "c": "Quem já se banhou continua limpo; a ressalva é que isso não vale para todos.",
+        "d": "O texto não reduz a limpeza a Pedro; diz que estão limpos, mas não todos."
+      },
+      "hint": "Olhe a última oração do versículo.",
+      "learningObjective": "Relacionar a afirmação de limpeza com o limite que a segue.",
+      "evidence": ["João 13:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o gesto em João 13:4–5?",
+      "verseRef": "João 13:4–5",
+      "options": [
+        { "id": "a", "text": "Jesus se levanta e deixa a mesa" },
+        { "id": "b", "text": "Ele se cinge com uma toalha" },
+        { "id": "c", "text": "Passa a lavar e enxugar os pés" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "começou a lavar os pés dos discípulos",
+      "feedbackCorrect": "Ele deixa a mesa, se cinge com a toalha e então lava os pés.",
+      "feedbackWrong": {
+        "default": "A lavagem é o ponto de chegada; antes vêm a mesa e a toalha."
+      },
+      "hint": "A lavagem dos pés é o último passo.",
+      "learningObjective": "Compreender o movimento da mesa até a lavagem dos pés.",
+      "evidence": ["João 13:4–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 13:10, que palavra mostra o limite da limpeza do grupo?",
+      "verseRef": "João 13:10",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "contudo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "limpos, mas não todos",
+      "feedbackCorrect": "A palavra mas limita a frase: estão limpos, mas não todos.",
+      "feedbackWrong": {
+        "a": "Porém caberia no sentido, mas a palavra do versículo é outra.",
+        "c": "Contudo não aparece; a frase diz que estão limpos, mas não todos."
+      },
+      "hint": "Olhe a palavra entre limpos e não todos.",
+      "learningObjective": "Lembrar a palavra que limita a limpeza do grupo.",
+      "evidence": ["João 13:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 13:14 a Marcos 10:45?",
+      "verseRef": "João 13:14",
+      "passageA": { "ref": "João 13:14" },
+      "passageB": { "ref": "Marcos 10:45" },
+      "options": [
+        { "id": "a", "text": "Jesus veio para ser servido" },
+        { "id": "b", "text": "Jesus veio para servir" },
+        { "id": "c", "text": "Só o resgate sem serviço" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lavei os pés de vocês",
+      "feedbackCorrect": "Nos dois textos, Jesus não espera ser servido: ele veio para servir.",
+      "feedbackWrong": {
+        "a": "Marcos 10:45 nega isso: ele não veio para ser servido, mas para servir.",
+        "c": "O resgate está no versículo junto com servir, não no lugar dele."
+      },
+      "hint": "Veja se a missão de Jesus nos dois textos é receber ou dar.",
+      "learningObjective": "Relacionar a lavagem dos pés à missão de Jesus de servir.",
+      "evidence": ["João 13:14", "Marcos 10:45"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 13:15, o exemplo de Jesus dispensa os discípulos de fazer como ele fez.",
+      "verseRef": "João 13:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "façam vocês também",
+      "feedbackCorrect": "O exemplo não substitui o gesto: o versículo manda que façam também.",
+      "feedbackWrong": {
+        "true": "O texto não dispensa ninguém: a finalidade é que eles façam como Jesus fez."
+      },
+      "hint": "Veja a finalidade que o versículo dá ao exemplo.",
+      "learningObjective": "Rejeitar a leitura de que o exemplo dispensa os discípulos de servir.",
+      "evidence": ["João 13:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 13:3, toque quem entregou todas as coisas às mãos de Jesus.",
+      "verseRef": "João 13:3",
+      "options": [
+        { "id": "a", "text": "o Pai" },
+        { "id": "b", "text": "Jesus" },
+        { "id": "c", "text": "suas mãos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Pai entregara todas as coisas às suas mãos",
+      "feedbackCorrect": "O Pai é quem entregou todas as coisas às mãos de Jesus.",
+      "feedbackWrong": {
+        "b": "Jesus é quem recebe; quem entrega todas as coisas é o Pai.",
+        "c": "As mãos são o lugar da entrega, não quem entregou."
+      },
+      "hint": "Procure quem entregou todas as coisas.",
+      "learningObjective": "Sustentar com o texto que Jesus serve ciente do que o Pai lhe entregou.",
+      "evidence": ["João 13:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 13:13–14 sustenta?",
+      "verseRef": "João 13:13–14",
+      "options": [
+        { "id": "a", "text": "Eles erram ao chamá-lo de Mestre e Senhor" },
+        { "id": "b", "text": "O Mestre serve e chama os outros a servir" },
+        { "id": "c", "text": "O exemplo dispensa o serviço entre eles" },
+        { "id": "d", "text": "Ele lava os pés por ignorar quem é" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "também vocês devem lavar os pés uns dos outros",
+      "feedbackCorrect": "Ele confirma ser Mestre e Senhor e, por isso, chama os discípulos a servir.",
+      "feedbackWrong": {
+        "a": "Jesus diz que eles afirmam com razão, porque ele realmente é Mestre e Senhor.",
+        "c": "O gesto não dispensa ninguém: eles também devem lavar os pés uns dos outros.",
+        "d": "Ele serve sabendo quem é: afirma que realmente é Mestre e Senhor."
+      },
+      "hint": "Veja o que ele confirma sobre si e o que pede em seguida.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o Mestre que serve.",
+      "evidence": ["João 13:13–14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual a lógica do gesto de Jesus nesta cena?",
+      "verseRef": "João 13:3–4",
+      "options": [
+        { "id": "a", "text": "Jesus conhece a origem e o destino dele" },
+        { "id": "b", "text": "Ele lava os pés mesmo sendo o Mestre" },
+        { "id": "c", "text": "O serviço vira modelo para os discípulos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "viera de Deus",
+      "feedbackCorrect": "Ele sabe de onde veio, serve mesmo assim e entrega esse gesto como modelo.",
+      "feedbackWrong": {
+        "default": "Comece pelo que Jesus sabe sobre si; o modelo para os discípulos vem no fim."
+      },
+      "hint": "Comece pelo que Jesus já sabe sobre si.",
+      "learningObjective": "Encadear o saber de Jesus, o serviço e o modelo deixado aos discípulos.",
+      "evidence": ["João 13:3", "João 13:14", "João 13:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 13:15, o que Jesus diz que deu aos discípulos?",
+      "verseRef": "João 13:15",
+      "options": [
+        { "id": "a", "text": "mandamento" },
+        { "id": "b", "text": "serviço" },
+        { "id": "c", "text": "exemplo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "eu vos dei o exemplo",
+      "feedbackCorrect": "Ele deu o exemplo para que os discípulos façam como ele fez.",
+      "feedbackWrong": {
+        "a": "O mandamento do amor vem depois; aqui ele diz que deu o exemplo.",
+        "b": "Serviço descreve o gesto, mas a palavra que ele diz ter dado é outra."
+      },
+      "hint": "É o que Jesus diz ter dado aos discípulos.",
+      "learningObjective": "Lembrar o termo com que Jesus nomeia o gesto que deve ser repetido.",
+      "evidence": ["João 13:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 13:15 a 1 Pedro 2:21?",
+      "verseRef": "João 13:15",
+      "passageA": { "ref": "João 13:15" },
+      "passageB": { "ref": "1 Pedro 2:21" },
+      "options": [
+        { "id": "a", "text": "Um exemplo só para olhar" },
+        { "id": "b", "text": "Imitar apenas a dor dele" },
+        { "id": "c", "text": "Seguir o exemplo deixado" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "eu vos dei o exemplo",
+      "feedbackCorrect": "Os dois textos dão um exemplo para ser seguido, não só contemplado.",
+      "feedbackWrong": {
+        "a": "O exemplo não é para olhar apenas: os dois textos pedem que se faça como ele.",
+        "b": "Pedro fala de sofrimento, mas o elo é o exemplo deixado para ser seguido."
+      },
+      "hint": "Veja o que os dois textos pedem que se faça com o gesto.",
+      "learningObjective": "Ligar o exemplo de João 13:15 ao exemplo que Cristo deixou para ser seguido.",
+      "evidence": ["João 13:15", "1 Pedro 2:21"]
+    }
+  ]
+}

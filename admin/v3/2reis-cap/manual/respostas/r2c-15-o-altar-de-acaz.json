@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "2 Reis 16:7–12",
+    "passages": [
+      {
+        "ref": "2 Reis 16:5–12"
+      }
+    ],
+    "context": "Rezim e Peca cercam Acaz. Em vez de confiar no Senhor, Acaz pede socorro à Assíria, esvazia a Casa do Senhor e copia um altar de Damasco.",
+    "keyword": "altar",
+    "keywordGloss": "O modelo estrangeiro que Acaz manda Urias edificar e sobre o qual ele sacrifica.",
+    "focusQuestion": "Quando a pressão sobe, você pede socorro a quem muda o seu culto?",
+    "reflectionPrompts": [
+      "Socorro à Assíria",
+      "Tesouro da Casa",
+      "Altar copiado"
+    ],
+    "facts": [
+      {
+        "text": "Rezim e Peca cercaram Acaz, mas não prevaleceram.",
+        "evidenceRef": "2 Reis 16:5",
+        "evidenceSpan": "cercaram Acaz, mas não conseguiram prevalecer contra ele"
+      },
+      {
+        "text": "Acaz se chama servo e filho de Tiglate-Pileser e pede livramento.",
+        "evidenceRef": "2 Reis 16:7",
+        "evidenceSpan": "Sou teu servo e teu filho; vem e livra-me"
+      },
+      {
+        "text": "Acaz tomou prata e ouro da Casa do SENHOR como presente à Assíria.",
+        "evidenceRef": "2 Reis 16:8",
+        "evidenceSpan": "tomou a prata e o ouro que se encontraram na Casa do SENHOR"
+      },
+      {
+        "text": "O rei da Assíria tomou Damasco e matou Rezin.",
+        "evidenceRef": "2 Reis 16:9",
+        "evidenceSpan": "subiu contra Damasco, tomou-a, levou os habitantes como prisioneiros para Quir e matou Rezin"
+      },
+      {
+        "text": "Acaz enviou a Urias a planta e o modelo do altar de Damasco.",
+        "evidenceRef": "2 Reis 16:10",
+        "evidenceSpan": "enviou ao sacerdote Urias a planta e o modelo, conforme toda a sua obra"
+      },
+      {
+        "text": "Urias edificou o altar e Acaz sacrificou sobre ele.",
+        "evidenceRef": "2 Reis 16:11",
+        "evidenceSpan": "Urias, o sacerdote, edificou um altar"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "altar",
+        "gloss": "O culto estrangeiro que Acaz copia e passa a usar."
+      },
+      {
+        "term": "servo",
+        "gloss": "Como Acaz se apresenta ao rei da Assíria, trocando a confiança."
+      },
+      {
+        "term": "Damasco",
+        "gloss": "Cidade de onde vem o modelo do altar e onde Rezin cai."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cerco de Rezim e Peca sem vitória",
+        "evidenceRef": "2 Reis 16:5–6"
+      },
+      {
+        "label": "Pedido e presente à Assíria",
+        "evidenceRef": "2 Reis 16:7–9"
+      },
+      {
+        "label": "Planta do altar enviada a Urias",
+        "evidenceRef": "2 Reis 16:10–11"
+      },
+      {
+        "label": "Acaz sacrifica no altar novo",
+        "evidenceRef": "2 Reis 16:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Cercaram Acaz, mas não conseguiram prevalecer.",
+        "marker": "mas",
+        "evidenceRef": "2 Reis 16:5"
+      },
+      {
+        "kind": "propósito",
+        "text": "Acaz pede que a Assíria venha e o livramento do poder dos reis inimigos.",
+        "marker": null,
+        "evidenceRef": "2 Reis 16:7"
+      },
+      {
+        "kind": "sequência",
+        "text": "Vê o altar em Damasco, manda o modelo, Urias edifica, Acaz sacrifica.",
+        "marker": null,
+        "evidenceRef": "2 Reis 16:10–12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 7:1–2",
+        "bridge": "Mesmo cerco contra Acaz"
+      },
+      {
+        "ref": "2 Crônicas 28:16",
+        "bridge": "Ajuda pedida à Assíria"
+      },
+      {
+        "ref": "Deuteronômio 12:13–14",
+        "bridge": "Culto no lugar escolhido"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Acaz confia no Senhor e só usa a Assíria como aliado neutro.",
+        "why": "Ele se chama servo do rei da Assíria e esvazia a Casa do Senhor."
+      },
+      {
+        "text": "O altar novo é ordem do Senhor a Urias.",
+        "why": "Urias edifica segundo o que Acaz ordenou de Damasco."
+      },
+      {
+        "text": "Acaz recusa sacrificar no altar copiado.",
+        "why": "Ele se aproxima e sacrifica sobre ele."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Reis 16:10–12, de onde veio o altar que Acaz passou a usar?",
+    "centralInsight": "Pedir socorro aos ímpios e mudar o culto: Acaz troca a confiança no Senhor."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 16 —8, Acaz tomou a prata e o ouro da Casa do SENHOR e enviou como presente ao rei da Assíria.",
+      "verseRef": "2 Reis 16:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "tomou a prata e o ouro que se encontraram na Casa do SENHOR",
+      "feedbackCorrect": "O tesouro da Casa vira presente.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "De onde saiu o presente?",
+      "learningObjective": "Observar o presente à Assíria.",
+      "evidence": [
+        "2 Reis 16:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 16:10, toque quem foi a Damasco encontrar-se com Tiglate-Pileser.",
+      "verseRef": "2 Reis 16:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acaz"
+        },
+        {
+          "id": "b",
+          "text": "Damasco"
+        },
+        {
+          "id": "c",
+          "text": "altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rei Acaz",
+      "feedbackCorrect": "O texto destaca Acaz como o rei que vai a Damasco.",
+      "feedbackWrong": {
+        "b": "Damasco é o lugar, não quem foi.",
+        "c": "O altar é o que ele viu, não quem foi."
+      },
+      "hint": "Procure o nome do rei no início do versículo.",
+      "learningObjective": "Identificar o altar.",
+      "evidence": [
+        "2 Reis 16:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 16:7, como Acaz se apresenta a Tiglate-Pileser?",
+      "verseRef": "2 Reis 16:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como servo e filho dele"
+        },
+        {
+          "id": "b",
+          "text": "Como igual em aliança"
+        },
+        {
+          "id": "c",
+          "text": "Como inimigo declarado"
+        },
+        {
+          "id": "d",
+          "text": "Como sacerdote de Urias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou teu servo e teu filho",
+      "feedbackCorrect": "Servo e filho do rei da Assíria.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia as palavras do pedido.",
+      "learningObjective": "Notar a submissão de Acaz.",
+      "evidence": [
+        "2 Reis 16:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 16:10 na ordem do texto.",
+      "verseRef": "2 Reis 16:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "o rei Acaz foi a Damasco"
+        },
+        {
+          "id": "b",
+          "text": "vendo ali um altar"
+        },
+        {
+          "id": "c",
+          "text": "enviou ao sacerdote Urias a planta e o modelo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "enviou ao sacerdote Urias a planta e o modelo",
+      "feedbackCorrect": "Vai, vê e envia o modelo.",
+      "feedbackWrong": {
+        "default": "Comece pela ida a Damasco."
+      },
+      "hint": "O que Acaz faz primeiro?",
+      "learningObjective": "Seguir a ordem do verso.",
+      "evidence": [
+        "2 Reis 16:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 16:7, complete: Sou teu ___ e teu filho.",
+      "verseRef": "2 Reis 16:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "servo"
+        },
+        {
+          "id": "b",
+          "text": "irmão"
+        },
+        {
+          "id": "c",
+          "text": "amigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou teu servo e teu filho",
+      "feedbackCorrect": "Servo.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Como ele se chama.",
+      "learningObjective": "Lembrar servo.",
+      "evidence": [
+        "2 Reis 16:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 16:10 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 16:10",
+      "passageA": {
+        "ref": "2 Reis 16:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Acaz troca a confiança no Senhor ao pedir socorro ímpio e mudar o culto."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cópia do altar"
+        },
+        {
+          "id": "b",
+          "text": "Culto intacto em Sião"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de modelos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviou ao sacerdote Urias a planta e o modelo",
+      "feedbackCorrect": "Ele copia o altar estrangeiro.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O que ele envia a Urias?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Reis 16:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 16 —5, Rezim e Peca cercaram Acaz e conseguiram prevalecer contra ele.",
+      "verseRef": "2 Reis 16:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "cercaram Acaz, mas não conseguiram prevalecer contra ele",
+      "feedbackCorrect": "O mas nega a vitória deles.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Olhe o contraste no fim.",
+      "learningObjective": "Ver o contraste do cerco.",
+      "evidence": [
+        "2 Reis 16:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 16:5, toque o marcador de contraste.",
+      "verseRef": "2 Reis 16:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rezim"
+        },
+        {
+          "id": "b",
+          "text": "subiu"
+        },
+        {
+          "id": "c",
+          "text": "Síria"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "subiu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o mas.",
+      "evidence": [
+        "2 Reis 16:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Reis 16:7–8 faz entre o pedido de Acaz e a Casa do SENHOR?",
+      "verseRef": "2 Reis 16:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pede livramento e paga com o tesouro da Casa"
+        },
+        {
+          "id": "b",
+          "text": "Pede socorro sem tocar no templo"
+        },
+        {
+          "id": "c",
+          "text": "Devolve o ouro à Casa depois da ajuda"
+        },
+        {
+          "id": "d",
+          "text": "Manda Urias fechar a Casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tomou a prata e o ouro que se encontraram na Casa do SENHOR",
+      "feedbackCorrect": "Pedido e presente saem da Casa.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una o pedido ao presente.",
+      "learningObjective": "Compreender o custo do socorro.",
+      "evidence": [
+        "2 Reis 16:7",
+        "2 Reis 16:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Reis 16:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cerco de Rezim e Peca sem vitória"
+        },
+        {
+          "id": "b",
+          "text": "Pedido e presente à Assíria"
+        },
+        {
+          "id": "c",
+          "text": "Acaz sacrifica no altar novo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sou teu servo e teu filho; vem e livra-me",
+      "feedbackCorrect": "Cerco, pedido e culto mudado.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco."
+      },
+      "hint": "O que vem antes do pedido?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Reis 16:5",
+        "2 Reis 16:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 16:11, complete: Urias, o ___, edificou um altar.",
+      "verseRef": "2 Reis 16:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "general"
+        },
+        {
+          "id": "c",
+          "text": "profeta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Urias, o sacerdote, edificou um altar",
+      "feedbackCorrect": "Sacerdote.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "O título de Urias.",
+      "learningObjective": "Lembrar sacerdote.",
+      "evidence": [
+        "2 Reis 16:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 16:5 a Isaías 7:1–2?",
+      "verseRef": "2 Reis 16:5",
+      "passageA": {
+        "ref": "2 Reis 16:5"
+      },
+      "passageB": {
+        "ref": "Isaías 7:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesmo cerco contra Acaz"
+        },
+        {
+          "id": "b",
+          "text": "Vitória plena de Rezim"
+        },
+        {
+          "id": "c",
+          "text": "Paz imediata em Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rezim, rei da Síria, junto com Peca",
+      "feedbackCorrect": "Os dois textos narram o mesmo cerco.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare os inimigos.",
+      "learningObjective": "Ligar a Isaías 7.",
+      "evidence": [
+        "2 Reis 16:5",
+        "Isaías 7:1–2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 16 —10–12, o altar novo é ordem do Senhor a Urias, e Acaz recusa sacrificar nele.",
+      "verseRef": "2 Reis 16:11–12",
+      "correctOptionId": "false",
+      "evidenceSpan": "edificou um altar segundo tudo o que o rei Acaz tinha ordenado",
+      "feedbackCorrect": "A ordem é de Acaz; ele sacrifica no altar.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Quem ordena e quem sacrifica?",
+      "learningObjective": "Rejeitar a leitura do altar santo.",
+      "evidence": [
+        "2 Reis 16:11",
+        "2 Reis 16:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 16:12, toque o que sustenta que Acaz adotou o culto copiado.",
+      "verseRef": "2 Reis 16:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "altar"
+        },
+        {
+          "id": "b",
+          "text": "Vindo"
+        },
+        {
+          "id": "c",
+          "text": "aproximou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Vindo",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o sacrifício.",
+      "evidence": [
+        "2 Reis 16:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une o pedido à Assíria e o altar de Damasco?",
+      "verseRef": "2 Reis 16:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acaz troca a confiança no Senhor ao socorro ímpio e ao culto copiado"
+        },
+        {
+          "id": "b",
+          "text": "Acaz só busca ajuda sem mudar o culto"
+        },
+        {
+          "id": "c",
+          "text": "Urias inventa o altar contra a vontade de Acaz"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor ordena o modelo de Damasco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou teu servo e teu filho; vem e livra-me",
+      "feedbackCorrect": "Socorro ímpio e culto mudado.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Una servo, presente e altar.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Reis 16:7",
+        "2 Reis 16:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da troca de confiança.",
+      "verseRef": "2 Reis 16:10–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedido de socorro à Assíria"
+        },
+        {
+          "id": "b",
+          "text": "Cópia do altar de Damasco"
+        },
+        {
+          "id": "c",
+          "text": "Sacrifício no altar novo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se aproximou dele, sacrificando sobre ele",
+      "feedbackCorrect": "Socorro, cópia e sacrifício.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido de ajuda."
+      },
+      "hint": "O que vem antes do altar?",
+      "learningObjective": "Encadear socorro e culto.",
+      "evidence": [
+        "2 Reis 16:7",
+        "2 Reis 16:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 16:10, complete: Acaz foi a ___.",
+      "verseRef": "2 Reis 16:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Damasco"
+        },
+        {
+          "id": "b",
+          "text": "Samaria"
+        },
+        {
+          "id": "c",
+          "text": "Quir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei Acaz foi a Damasco",
+      "feedbackCorrect": "Damasco.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Para onde o rei foi.",
+      "learningObjective": "Lembrar Damasco.",
+      "evidence": [
+        "2 Reis 16:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 16:7 a 2 Crônicas 28:16?",
+      "verseRef": "2 Reis 16:7",
+      "passageA": {
+        "ref": "2 Reis 16:7"
+      },
+      "passageB": {
+        "ref": "2 Crônicas 28:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ajuda pedida à Assíria"
+        },
+        {
+          "id": "b",
+          "text": "Confiança só no Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de alianças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Acaz enviou mensageiros a Tiglate-Pileser, rei da Assíria",
+      "feedbackCorrect": "Os dois relatos marcam o pedido à Assíria.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o destinatário do pedido.",
+      "learningObjective": "Ligar ao paralelo em Crônicas.",
+      "evidence": [
+        "2 Reis 16:7",
+        "2 Crônicas 28:16"
+      ]
+    }
+  ]
+}

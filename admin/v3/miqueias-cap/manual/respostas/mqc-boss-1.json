@@ -1,0 +1,631 @@
+{
+  "study": {
+    "passageRef": "Miqueias 1:2–7",
+    "passages": [
+      { "ref": "Miqueias 1:2–7" },
+      { "ref": "Miqueias 2:1–6" },
+      { "ref": "Miqueias 3:1–6" },
+      { "ref": "Miqueias 4:6–11" }
+    ],
+    "context": "Nesta travessia, revise o juízo que desce, a opressão que maquina o mal, os líderes e profetas corruptos, e a promessa de reunir a claudicante em Sião.",
+    "keyword": "juízo",
+    "keywordGloss": "O Senhor responde ao pecado e à opressão, e ainda promete reinado em Sião.",
+    "focusQuestion": "O que muda quando você vê juízo e esperança juntos nesta etapa?",
+    "reflectionPrompts": [
+      "Senhor desce",
+      "Mal maquinado",
+      "Sião reunida"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor sai do lugar, desce e caminha sobre a terra.",
+        "evidenceRef": "Miqueias 1:3",
+        "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha"
+      },
+      {
+        "text": "A transgressão de Jacó se liga a Samaria e Jerusalém.",
+        "evidenceRef": "Miqueias 1:5",
+        "evidenceSpan": "Tudo isso por causa da transgressão de Jacó"
+      },
+      {
+        "text": "Há quem maquina o mal nas camas e o realiza ao amanhecer.",
+        "evidenceRef": "Miqueias 2:1",
+        "evidenceSpan": "maquinam o mal"
+      },
+      {
+        "text": "O Senhor trama um mal contra a família opressora.",
+        "evidenceRef": "Miqueias 2:3",
+        "evidenceSpan": "estou tramando um mal contra esta família"
+      },
+      {
+        "text": "Miquéias está cheio do Espírito do SENHOR para declarar a transgressão.",
+        "evidenceRef": "Miqueias 3:8",
+        "evidenceSpan": "estou cheio do poder do Espírito do SENHOR"
+      },
+      {
+        "text": "O Senhor reinará sobre eles no monte Sião.",
+        "evidenceRef": "Miqueias 4:7",
+        "evidenceSpan": "o Senhor reinará sobre eles no monte Sião"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "desce",
+        "gloss": "O Senhor vem do templo em juízo."
+      },
+      {
+        "term": "maquinam",
+        "gloss": "Planejar o mal antes de executá-lo com poder."
+      },
+      {
+        "term": "reinará",
+        "gloss": "Promessa de domínio do Senhor em Sião."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Senhor desce em juízo",
+        "evidenceRef": "Miqueias 1:3–5"
+      },
+      {
+        "label": "Ai aos que maquinam e oprimem",
+        "evidenceRef": "Miqueias 2:1–3"
+      },
+      {
+        "label": "Príncipes e profetas corruptos",
+        "evidenceRef": "Miqueias 3:1–5"
+      },
+      {
+        "label": "A claudicante reunida em Sião",
+        "evidenceRef": "Miqueias 4:6–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O juízo vem por causa da transgressão de Jacó.",
+        "marker": "por causa",
+        "evidenceRef": "Miqueias 1:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso o Senhor trama juízo contra a família opressora.",
+        "marker": "Portanto",
+        "evidenceRef": "Miqueias 2:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Em Babilônia haverá dor, porém também libertação.",
+        "marker": "porém",
+        "evidenceRef": "Miqueias 4:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 26:21",
+        "bridge": "Senhor sai do lugar"
+      },
+      {
+        "ref": "Isaías 5:8",
+        "bridge": "Ai aos que juntam casas"
+      },
+      {
+        "ref": "Sofonias 3:19",
+        "bridge": "Senhor reúne a claudicante"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo é só contra Samaria; Sião não precisa de esperança.",
+        "why": "1:9 inclui Judá; 4:6–7 promete reunião e reinado em Sião."
+      },
+      {
+        "text": "Opressão e paz falsa não provocam resposta de Deus.",
+        "why": "2:3 trama juízo; 3:4–5 mostram silêncio divino e denúncia."
+      },
+      {
+        "text": "A etapa termina só em ruína, sem reinado.",
+        "why": "4:7 afirma que o Senhor reinará no monte Sião."
+      }
+    ],
+    "centralInsight": "Deus juíza a opressão e promete reunir o seu povo",
+    "anchorQuestion": "Como esta etapa liga o juízo do Senhor à promessa de reinado em Sião?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 1:3, o Senhor sai do seu lugar, desce e caminha sobre as alturas da terra.",
+      "verseRef": "Miqueias 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "O texto mostra a descida do Senhor em juízo.",
+      "feedbackWrong": {
+        "false": "Releia 1:3: o Senhor sai, desce e caminha."
+      },
+      "hint": "Veja os verbos do Senhor no versículo.",
+      "learningObjective": "Observar a descida do Senhor.",
+      "evidence": ["Miqueias 1:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 2:1, toque o que maquinam nas camas.",
+      "verseRef": "Miqueias 2:1",
+      "evidenceSpan": "maquinam o mal",
+      "feedbackCorrect": "Maquinam o mal e o realizam ao amanhecer.",
+      "hint": "É o objeto após maquinam.",
+      "learningObjective": "Identificar o mal planejado.",
+      "evidence": ["Miqueias 2:1"],
+      "options": [
+        { "id": "a", "text": "o mal" },
+        { "id": "b", "text": "camas" },
+        { "id": "c", "text": "amanhecer" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Camas é o lugar do plano, não o que maquinam.",
+        "c": "Amanhecer é o tempo da execução."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 4:7, o que o Senhor fará no monte Sião?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "Ele reinará sobre eles no monte Sião.",
+      "hint": "Veja o verbo ligado ao Senhor no fim.",
+      "learningObjective": "Observar o reinado prometido.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "Reinará sobre eles" },
+        { "id": "b", "text": "Abandonará o restante" },
+        { "id": "c", "text": "Calará toda esperança" },
+        { "id": "d", "text": "Entregará Sião às nações para sempre" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ele faz um restante, não abandona.",
+        "c": "O reinado é esperança, não silêncio.",
+        "d": "Quem reina é o Senhor."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 3:2 na ordem do texto.",
+      "verseRef": "Miqueias 3:2",
+      "evidenceSpan": "detestam o bem e amam o mal",
+      "feedbackCorrect": "Detestam o bem; amam o mal; arrancam pele e carne.",
+      "hint": "Comece pelo que detestam.",
+      "learningObjective": "Reconhecer a sequência de 3:2.",
+      "evidence": ["Miqueias 3:2"],
+      "options": [
+        { "id": "a", "text": "Vocês que detestam o bem" },
+        { "id": "b", "text": "e amam o mal" },
+        { "id": "c", "text": "que arrancam a pele e a carne de seus ossos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Bem e mal primeiro; a violência fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 1:5, qual cidade é a transgressão de Jacó?",
+      "verseRef": "Miqueias 1:5",
+      "evidenceSpan": "Não é Samaria?",
+      "feedbackCorrect": "A transgressão de Jacó é Samaria.",
+      "hint": "É a primeira cidade nomeada na pergunta.",
+      "learningObjective": "Lembrar Samaria no juízo.",
+      "evidence": ["Miqueias 1:5"],
+      "options": [
+        { "id": "a", "text": "Nínive" },
+        { "id": "b", "text": "Samaria" },
+        { "id": "c", "text": "Tiro" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Nínive\" não aparece em 1:5.",
+        "c": "\"Tiro\" não aparece em 1:5."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 2:3 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "estou tramando um mal contra esta família",
+      "feedbackCorrect": "O Senhor responde à opressão com juízo tramado.",
+      "hint": "Veja o que o Senhor declara fazer.",
+      "learningObjective": "Ligar opressão e juízo na etapa.",
+      "evidence": ["Miqueias 2:3"],
+      "passageA": { "ref": "Miqueias 2:3" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A etapa mostra juízo contra opressão e esperança de reunião em Sião."
+      },
+      "options": [
+        { "id": "a", "text": "Juízo contra a opressão" },
+        { "id": "b", "text": "Prêmio aos violentos" },
+        { "id": "c", "text": "Fim de todo reinado" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O Senhor trama mal, não prêmio.",
+        "c": "4:7 ainda promete reinado em Sião."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 4:6, toque a quem o Senhor congregará.",
+      "verseRef": "Miqueias 4:6",
+      "evidenceSpan": "congregarei os que coxeiam",
+      "feedbackCorrect": "Congregará os que coxeiam.",
+      "hint": "Procure o objeto após congregarei.",
+      "learningObjective": "Identificar a claudicante reunida.",
+      "evidence": ["Miqueias 4:6"],
+      "options": [
+        { "id": "a", "text": "os que coxeiam" },
+        { "id": "b", "text": "Naquele dia" },
+        { "id": "c", "text": "diz o Senhor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Marca o tempo, não quem é congregado.",
+        "c": "É a voz divina, não o objeto."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 2:2 na ordem do texto.",
+      "verseRef": "Miqueias 2:2",
+      "evidenceSpan": "Cobiçam campos e os tomam",
+      "feedbackCorrect": "Campos; casas; violência contra homem e herança.",
+      "hint": "Comece pelos campos.",
+      "learningObjective": "Reconhecer a sequência da cobiça.",
+      "evidence": ["Miqueias 2:2"],
+      "options": [
+        { "id": "a", "text": "Cobiçam campos e os tomam" },
+        { "id": "b", "text": "casas e se apossam delas" },
+        { "id": "c", "text": "praticam violência contra um homem e sua casa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Campos primeiro; a violência fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 4:10, ir a Babilônia exclui qualquer libertação pelo Senhor.",
+      "verseRef": "Miqueias 4:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "ali, porém, serás libertada",
+      "feedbackCorrect": "O \"porém\" promete libertação em Babilônia.",
+      "feedbackWrong": {
+        "true": "Releia 4:10: ali, porém, serás libertada."
+      },
+      "hint": "Veja o contraste após chegar a Babilônia.",
+      "learningObjective": "Compreender o contraste no exílio.",
+      "evidence": ["Miqueias 4:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 1:5, toque o trecho que marca a causa do juízo.",
+      "verseRef": "Miqueias 1:5",
+      "evidenceSpan": "por causa da transgressão de Jacó",
+      "feedbackCorrect": "\"Por causa\" introduz a transgressão como motivo.",
+      "hint": "Procure a expressão após \"Tudo isso\".",
+      "learningObjective": "Reconhecer o marcador de causa em 1:5.",
+      "evidence": ["Miqueias 1:5"],
+      "options": [
+        { "id": "a", "text": "por causa" },
+        { "id": "b", "text": "Jerusalém" },
+        { "id": "c", "text": "altos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Jerusalém é apontada depois, não o marcador.",
+        "c": "Altos descrevem Judá, não a causa gramatical."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 2:1–3 e 3:5 se relacionam sobre a etapa?",
+      "verseRef": "Miqueias 2:1–3",
+      "evidenceSpan": "estou tramando um mal contra esta família",
+      "feedbackCorrect": "Opressão e paz falsa encontram juízo e denúncia do Senhor.",
+      "hint": "Ligue o mal maquinado à paz vendida.",
+      "learningObjective": "Relacionar opressão e profecia falsa.",
+      "evidence": ["Miqueias 2:1–3"],
+      "options": [
+        { "id": "a", "text": "Opressão e paz falsa provocam juízo e denúncia" },
+        { "id": "b", "text": "O Senhor ignora quem maquina o mal" },
+        { "id": "c", "text": "Paz comprada prova fidelidade dos profetas" },
+        { "id": "d", "text": "Não há ligação entre poder e juízo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "2:3 mostra o Senhor tramando juízo.",
+        "c": "3:5 denuncia essa paz.",
+        "d": "2:1–3 une poder e juízo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa Juízo e pastor?",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "Juízo que desce; opressão; líderes corruptos; Sião reunida.",
+      "hint": "Comece pela descida do Senhor.",
+      "learningObjective": "Seguir o arco da etapa.",
+      "evidence": ["Miqueias 1:3", "Miqueias 2:1", "Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "O Senhor desce em juízo" },
+        { "id": "b", "text": "Ai aos que maquinam o mal" },
+        { "id": "c", "text": "A claudicante é reunida em Sião" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Juízo primeiro; a reunião em Sião fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 2:3, que palavra abre a resposta do Senhor?",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "Portanto, assim diz o Senhor",
+      "feedbackCorrect": "\"Portanto\" introduz o juízo tramado.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado.",
+      "evidence": ["Miqueias 2:3"],
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "Talvez" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Talvez\" não abre 2:3.",
+        "c": "\"Nunca\" não aparece ali."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 1:3 a Isaías 26:21?",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar",
+      "feedbackCorrect": "Nos dois textos, o Senhor sai do lugar para agir.",
+      "hint": "Compare a saída do Senhor.",
+      "learningObjective": "Relacionar a saída do Senhor nos dois textos.",
+      "evidence": ["Miqueias 1:3", "Isaías 26:21"],
+      "passageA": { "ref": "Miqueias 1:3" },
+      "passageB": { "ref": "Isaías 26:21" },
+      "options": [
+        { "id": "a", "text": "Senhor sai do lugar" },
+        { "id": "b", "text": "Povo sem nenhum juízo" },
+        { "id": "c", "text": "Templo vazio para sempre" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam intervenção.",
+        "c": "O Senhor sai do lugar; não some do relato."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 3:5, toque a palavra que marca o contraste com Paz.",
+      "verseRef": "Miqueias 3:5",
+      "evidenceSpan": "Paz! mas preparam guerra",
+      "feedbackCorrect": "\"Mas\" liga o clamor de paz à guerra preparada.",
+      "hint": "É a palavra curta entre Paz e guerra.",
+      "learningObjective": "Reconhecer o contraste nos falsos profetas.",
+      "evidence": ["Miqueias 3:5"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "povo" },
+        { "id": "c", "text": "dentes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Povo é o alvo, não o marcador.",
+        "c": "Dentes descreve o morder."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se ligam juízo, opressão e esperança na etapa?",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "para declarar a Jacó a sua transgressão",
+      "feedbackCorrect": "Denúncia; juízo à opressão; reunião e reinado.",
+      "hint": "Termine com Sião.",
+      "learningObjective": "Ordenar o movimento da etapa.",
+      "evidence": ["Miqueias 3:8", "Miqueias 2:3", "Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "Miquéias declara a transgressão" },
+        { "id": "b", "text": "O Senhor trama juízo aos opressores" },
+        { "id": "c", "text": "O Senhor reinará em Sião" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Denúncia e juízo primeiro; o reinado fecha."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 1–4, o juízo do Senhor e a promessa de reinado em Sião aparecem juntos na etapa.",
+      "verseRef": "Miqueias 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "A etapa une descida em juízo e, em 4:7, reinado em Sião.",
+      "feedbackWrong": {
+        "false": "A etapa tem juízo (cap. 1–3) e reinado prometido (4:7)."
+      },
+      "hint": "Lembre 1:3 e 4:7 juntos.",
+      "learningObjective": "Interpretar juízo e esperança na etapa.",
+      "evidence": ["Miqueias 1:3", "Miqueias 4:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 3:8, toque o trecho que sustenta a coragem de Miquéias.",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "poder do Espírito do SENHOR",
+      "feedbackCorrect": "Ele está cheio do Espírito do SENHOR.",
+      "hint": "Procure de quem é o Espírito.",
+      "learningObjective": "Sustentar a origem do poder profético.",
+      "evidence": ["Miqueias 3:8"],
+      "options": [
+        { "id": "a", "text": "Espírito do SENHOR" },
+        { "id": "b", "text": "Jacó" },
+        { "id": "c", "text": "pecado" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Jacó é o alvo da denúncia.",
+        "c": "Pecado é o conteúdo declarado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa Juízo e pastor sustenta?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "Deus julga a opressão e promete reunir o povo sob seu reinado.",
+      "hint": "Una juízo dos caps. 1–3 à promessa de 4.",
+      "learningObjective": "Escolher a leitura da etapa.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "Deus julga a opressão e promete reunir o povo" },
+        { "id": "b", "text": "Só há ruína, sem nenhuma esperança em Sião" },
+        { "id": "c", "text": "Opressão e paz falsa ficam sem resposta" },
+        { "id": "d", "text": "O Senhor nunca desce nem reina" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "4:6–7 promete reunião e reinado.",
+        "c": "2:3 e 3:4–5 mostram resposta.",
+        "d": "1:3 e 4:7 afirmam descida e reinado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra juízo e restauração na Escritura?",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar",
+      "feedbackCorrect": "Miquéias vê a saída; Isaías ecoa; Sofonias aponta a reunião.",
+      "hint": "Parta da descida do Senhor.",
+      "learningObjective": "Ver juízo e reunião no fio bíblico.",
+      "evidence": ["Miqueias 1:3", "Isaías 26:21", "Sofonias 3:19"],
+      "options": [
+        { "id": "a", "text": "Miquéias vê o Senhor descer em juízo" },
+        { "id": "b", "text": "Isaías anuncia o Senhor saindo do lugar" },
+        { "id": "c", "text": "Sofonias mostra o Senhor reunindo a claudicante" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 1:3, Isaías 26:21 e Sofonias 3:19."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 4:7, que verbo carrega a esperança da etapa?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles",
+      "feedbackCorrect": "O verbo é reinará: domínio do Senhor em Sião.",
+      "hint": "É o verbo ligado ao Senhor no monte Sião.",
+      "learningObjective": "Lembrar o termo do reinado prometido.",
+      "evidence": ["Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "cairá" },
+        { "id": "b", "text": "reinará" },
+        { "id": "c", "text": "fugirá" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Cairá\" não é a esperança de 4:7.",
+        "c": "\"Fugirá\" não descreve o Senhor ali."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 4:6 a Sofonias 3:19?",
+      "verseRef": "Miqueias 4:6",
+      "evidenceSpan": "congregarei os que coxeiam",
+      "feedbackCorrect": "Nos dois textos, o Senhor reúne a claudicante.",
+      "hint": "Compare a reunião da que coxeia.",
+      "learningObjective": "Ligar a reunião em Miquéias e Sofonias.",
+      "evidence": ["Miqueias 4:6", "Sofonias 3:19"],
+      "passageA": { "ref": "Miqueias 4:6" },
+      "passageB": { "ref": "Sofonias 3:19" },
+      "options": [
+        { "id": "a", "text": "Senhor reúne a claudicante" },
+        { "id": "b", "text": "Abandono sem restauração" },
+        { "id": "c", "text": "Vitória só das nações" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram reunião.",
+        "c": "O foco é a ação do Senhor."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 2:3, toque o verbo da ação do Senhor contra a família.",
+      "verseRef": "Miqueias 2:3",
+      "evidenceSpan": "estou tramando um mal",
+      "feedbackCorrect": "O verbo é tramando.",
+      "hint": "Procure o verbo após estou.",
+      "learningObjective": "Sustentar o juízo tramado pelo Senhor.",
+      "evidence": ["Miqueias 2:3"],
+      "options": [
+        { "id": "a", "text": "tramando" },
+        { "id": "b", "text": "família" },
+        { "id": "c", "text": "cerviz" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Família é o alvo.",
+        "c": "Cerviz descreve o orgulho quebrado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica une denúncia, juízo e reinado nesta etapa?",
+      "verseRef": "Miqueias 4:7",
+      "evidenceSpan": "o Senhor reinará sobre eles no monte Sião",
+      "feedbackCorrect": "Pecado denunciado; opressão julgada; povo reunido sob o Senhor.",
+      "hint": "Termine com o reinado.",
+      "learningObjective": "Ordenar a lógica teológica da etapa.",
+      "evidence": ["Miqueias 1:5", "Miqueias 2:3", "Miqueias 4:7"],
+      "options": [
+        { "id": "a", "text": "A transgressão provoca a descida do Senhor" },
+        { "id": "b", "text": "A opressão encontra juízo tramado" },
+        { "id": "c", "text": "O Senhor reúne e reinará em Sião" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Culpa e juízo primeiro; o reinado fecha."
+      }
+    }
+  ]
+}

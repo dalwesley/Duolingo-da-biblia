@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 5:18–26",
+    "passages": [
+      {
+        "ref": "1 Crônicas 5:18–26"
+      }
+    ],
+    "context": "As tribos a leste do Jordão — Rúben, Gade e meia Manassés — lutam contra os hagarenos. Depois da vitória, o texto registra a idolatria e o exílio.",
+    "keyword": "confiaram",
+    "keywordGloss": "É o motivo pelo qual Deus ouviu o clamor na peleja: eles confiaram nele.",
+    "focusQuestion": "Na sua guerra de hoje, você clama a Deus ou corre atrás de outro apoio?",
+    "reflectionPrompts": [
+      "Clamor na peleja",
+      "A peleja era de Deus",
+      "Ídolos e exílio"
+    ],
+    "facts": [
+      {
+        "text": "Havia 44.760 homens valentes de Rúben, Gade e meia Manassés, prontos para a batalha.",
+        "evidenceRef": "1 Crônicas 5:18",
+        "evidenceSpan": "quarenta e quatro mil setecentos e sessenta, prontos para a batalha"
+      },
+      {
+        "text": "Eles clamaram a Deus na peleja, e Ele lhes deu ouvidos, pois confiaram nele.",
+        "evidenceRef": "1 Crônicas 5:20",
+        "evidenceSpan": "porque clamaram a Deus na peleja, e Ele lhes deu ouvidos, pois confiaram nele"
+      },
+      {
+        "text": "A peleja era de Deus, e muitos caíram feridos à espada.",
+        "evidenceRef": "1 Crônicas 5:22",
+        "evidenceSpan": "pois a peleja era de Deus"
+      },
+      {
+        "text": "Transgrediram contra o Deus de seus pais e se entregaram à idolatria.",
+        "evidenceRef": "1 Crônicas 5:25",
+        "evidenceSpan": "transgrediram contra o Deus de seus pais e se entregaram à idolatria"
+      },
+      {
+        "text": "Deus suscitou Pul e Tiglate-Pileser, que levaram cativos os rubenitas, gaditas e meia Manassés.",
+        "evidenceRef": "1 Crônicas 5:26",
+        "evidenceSpan": "levou cativos os rubenitas, os gaditas e a meia tribo de Manassés"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "clamaram",
+        "gloss": "Ação na peleja que Deus ouviu porque eles confiaram nele."
+      },
+      {
+        "term": "confiaram",
+        "gloss": "Motivo explícito do atendimento divino na guerra."
+      },
+      {
+        "term": "idolatria",
+        "gloss": "Entrega aos deuses dos povos; leva ao exílio."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Os guerreiros do leste entram em batalha",
+        "evidenceRef": "1 Crônicas 5:18–19"
+      },
+      {
+        "label": "Clamam a Deus e vencem porque confiam",
+        "evidenceRef": "1 Crônicas 5:20–22"
+      },
+      {
+        "label": "Habitam a terra com chefes famosos",
+        "evidenceRef": "1 Crônicas 5:23–24"
+      },
+      {
+        "label": "Transgridem e vão ao exílio assírio",
+        "evidenceRef": "1 Crônicas 5:25–26"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Foram ajudados porque clamaram a Deus e confiaram nele.",
+        "marker": "porque",
+        "evidenceRef": "1 Crônicas 5:20"
+      },
+      {
+        "kind": "resultado",
+        "text": "Muitos caíram porque a peleja era de Deus.",
+        "marker": "pois",
+        "evidenceRef": "1 Crônicas 5:22"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por causa da idolatria, Deus suscitou a Assíria e os levou cativos.",
+        "marker": "Por isso",
+        "evidenceRef": "1 Crônicas 5:26"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Confiança no nome do Senhor"
+      },
+      {
+        "ref": "2 Reis 17:6",
+        "bridge": "Assíria leva Israel cativo"
+      },
+      {
+        "ref": "Josué 24:20",
+        "bridge": "Deixar o Senhor traz mal"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A vitória veio só do número de guerreiros e das armas.",
+        "why": "O texto diz que foram ajudados porque clamaram e confiaram em Deus."
+      },
+      {
+        "text": "Depois da vitória, permaneceram fiéis ao Deus dos pais.",
+        "why": "5:25 diz que transgrediram e se entregaram à idolatria."
+      },
+      {
+        "text": "O exílio foi acaso político, sem relação com o pecado.",
+        "why": "5:26 abre com \"Por isso\": Deus suscitou a Assíria após a idolatria."
+      }
+    ],
+    "centralInsight": "Quem confia no Senhor é ouvido na guerra; quem se entrega aos ídolos vai ao exílio.",
+    "anchorQuestion": "Por que, em 1 Crônicas 5:20, Deus deu ouvidos ao clamor na peleja?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 5 —20, o povo foi ajudado porque clamou a Deus e confiou nele.",
+      "verseRef": "1 Crônicas 5:20",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque clamaram a Deus na peleja, e Ele lhes deu ouvidos, pois confiaram nele",
+      "feedbackCorrect": "O texto liga a ajuda ao clamor e à confiança em Deus.",
+      "feedbackWrong": {
+        "false": "Releia 5:20: clamaram e confiaram; por isso foram ouvidos."
+      },
+      "hint": "Veja a razão dada depois de \"porque\".",
+      "learningObjective": "Observar a causa da ajuda na peleja.",
+      "evidence": [
+        "1 Crônicas 5:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 5:22, toque de quem era a peleja.",
+      "verseRef": "1 Crônicas 5:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "muitos"
+        },
+        {
+          "id": "b",
+          "text": "Porque"
+        },
+        {
+          "id": "c",
+          "text": "caíram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar que a peleja era de Deus.",
+      "evidence": [
+        "1 Crônicas 5:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 5:25, o que o povo fez contra o Deus de seus pais?",
+      "verseRef": "1 Crônicas 5:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Transgrediu e se entregou à idolatria"
+        },
+        {
+          "id": "b",
+          "text": "Reconstruiu o templo em Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Pediu um rei como as nações"
+        },
+        {
+          "id": "d",
+          "text": "Jejuou quarenta dias no deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "transgrediram contra o Deus de seus pais e se entregaram à idolatria",
+      "feedbackCorrect": "O texto afirma transgressão e entrega aos deuses dos povos.",
+      "feedbackWrong": {
+        "b": "Não há reconstrução do templo neste trecho.",
+        "c": "Não se pede rei aqui.",
+        "d": "Não há jejum de quarenta dias neste texto."
+      },
+      "hint": "Leia o verbo principal do versículo.",
+      "learningObjective": "Identificar a idolatria após a vitória.",
+      "evidence": [
+        "1 Crônicas 5:25"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 5:20 na ordem do texto.",
+      "verseRef": "1 Crônicas 5:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Foram ajudados contra eles"
+        },
+        {
+          "id": "b",
+          "text": "porque clamaram a Deus na peleja"
+        },
+        {
+          "id": "c",
+          "text": "pois confiaram nele"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "porque clamaram a Deus na peleja",
+      "feedbackCorrect": "Primeiro a ajuda, depois o clamor e a confiança.",
+      "feedbackWrong": {
+        "default": "Comece pela ajuda; a confiança fecha o versículo."
+      },
+      "hint": "O versículo começa com a ajuda recebida.",
+      "learningObjective": "Reconhecer a ordem de 5:20.",
+      "evidence": [
+        "1 Crônicas 5:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 5:20, o que fizeram a Deus na peleja?",
+      "verseRef": "1 Crônicas 5:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "fugiram"
+        },
+        {
+          "id": "b",
+          "text": "clamaram"
+        },
+        {
+          "id": "c",
+          "text": "esqueceram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "clamaram a Deus na peleja",
+      "feedbackCorrect": "Eles clamaram a Deus na peleja, e Ele lhes deu ouvidos.",
+      "feedbackWrong": {
+        "a": "O texto não diz que fugiram; diz que clamaram.",
+        "c": "Eles se lembraram de Deus no clamor."
+      },
+      "hint": "Veja o verbo ligado a Deus na peleja.",
+      "learningObjective": "Lembrar o clamor na peleja.",
+      "evidence": [
+        "1 Crônicas 5:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 5:22 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 5:22",
+      "passageA": {
+        "ref": "1 Crônicas 5:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A vitória não foi só humana: muitos caíram porque a peleja era de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A peleja era de Deus"
+        },
+        {
+          "id": "b",
+          "text": "A Assíria lutou sozinha"
+        },
+        {
+          "id": "c",
+          "text": "Não houve feridos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois a peleja era de Deus",
+      "feedbackCorrect": "O contexto e o versículo batem: a peleja pertencia a Deus.",
+      "feedbackWrong": {
+        "b": "A Assíria entra no exílio, não nesta peleja.",
+        "c": "O texto diz que muitos caíram feridos."
+      },
+      "hint": "Veja de quem era a peleja.",
+      "learningObjective": "Ligar o versículo à vitória como obra de Deus.",
+      "evidence": [
+        "1 Crônicas 5:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 5 —25–26, o exílio assírio acontece sem ligação com a idolatria do povo.",
+      "verseRef": "1 Crônicas 5:25–26",
+      "correctOptionId": "false",
+      "evidenceSpan": "Por isso, o Deus de Israel suscitou o espírito de Pul",
+      "feedbackCorrect": "\"Por isso\" liga a idolatria ao exílio que Deus suscita.",
+      "feedbackWrong": {
+        "true": "Releia 5:26: \"Por isso\" aponta para a transgressão de 5:25."
+      },
+      "hint": "Repare na expressão que abre 5:26.",
+      "learningObjective": "Compreender a relação entre idolatria e exílio.",
+      "evidence": [
+        "1 Crônicas 5:25–26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 5:20, toque a palavra que marca a causa da ajuda.",
+      "verseRef": "1 Crônicas 5:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "ajudados"
+        },
+        {
+          "id": "b",
+          "text": "Foram"
+        },
+        {
+          "id": "c",
+          "text": "contra"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Foram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de causa em 5:20.",
+      "evidence": [
+        "1 Crônicas 5:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 5:26 se relaciona com 5:25?",
+      "verseRef": "1 Crônicas 5:25–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "A idolatria traz o exílio que Deus suscita"
+        },
+        {
+          "id": "b",
+          "text": "O exílio acontece apesar da fidelidade do povo"
+        },
+        {
+          "id": "c",
+          "text": "Pul recompensa a confiança na peleja"
+        },
+        {
+          "id": "d",
+          "text": "A Assíria restaura o culto em Basã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Por isso, o Deus de Israel suscitou o espírito de Pul",
+      "feedbackCorrect": "Depois da idolatria, Deus suscita a Assíria e leva o povo cativo.",
+      "feedbackWrong": {
+        "b": "O povo tinha transgredido; não estava fiel.",
+        "c": "Pul é instrumento do juízo, não prêmio da confiança.",
+        "d": "O texto fala de cativeiro, não de restauração."
+      },
+      "hint": "Pense no que \"Por isso\" conecta.",
+      "learningObjective": "Relacionar idolatria e cativeiro.",
+      "evidence": [
+        "1 Crônicas 5:25–26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em 1 Crônicas 5:18–26?",
+      "verseRef": "1 Crônicas 5:18–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os guerreiros clamam e vencem"
+        },
+        {
+          "id": "b",
+          "text": "Habitam a terra com chefes valentes"
+        },
+        {
+          "id": "c",
+          "text": "Transgridem e vão ao exílio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se entregaram à idolatria",
+      "feedbackCorrect": "Vitória, habitação e, por fim, queda e exílio.",
+      "feedbackWrong": {
+        "default": "A idolatria e o exílio fecham o trecho."
+      },
+      "hint": "O exílio é o ponto de chegada.",
+      "learningObjective": "Compreender o arco da vitória ao cativeiro.",
+      "evidence": [
+        "1 Crônicas 5:18–26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 5:26, que expressão liga a idolatria ao exílio?",
+      "verseRef": "1 Crônicas 5:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia"
+        },
+        {
+          "id": "b",
+          "text": "Porém"
+        },
+        {
+          "id": "c",
+          "text": "Por isso"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Por isso, o Deus de Israel suscitou",
+      "feedbackCorrect": "\"Por isso\" marca o resultado: a Assíria vem após a idolatria.",
+      "feedbackWrong": {
+        "a": "Neste versículo a expressão é \"Por isso\".",
+        "b": "Não é \"Porém\" que abre 5:26."
+      },
+      "hint": "Veja as duas primeiras palavras de 5:26.",
+      "learningObjective": "Lembrar o marcador que liga pecado e juízo.",
+      "evidence": [
+        "1 Crônicas 5:26"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 5:20 a Salmos 20:7?",
+      "verseRef": "1 Crônicas 5:20",
+      "passageA": {
+        "ref": "1 Crônicas 5:20"
+      },
+      "passageB": {
+        "ref": "Salmos 20:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança no nome do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Vitória pelos carros de guerra"
+        },
+        {
+          "id": "c",
+          "text": "Exílio sem clamor a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois confiaram nele",
+      "evidence": [
+        "1 Crônicas 5:20",
+        "Salmos 20:7"
+      ],
+      "feedbackCorrect": "Nos dois textos, a confiança no Senhor, não nas armas, é o centro.",
+      "feedbackWrong": {
+        "b": "O salmo contrapõe carros à confiança no Senhor.",
+        "c": "Em 5:20 há clamor e confiança."
+      },
+      "hint": "Compare em quem cada texto põe a confiança.",
+      "learningObjective": "Relacionar a confiança na peleja ao salmo."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Crônicas 5 —18–26 ensina que a vitória militar garante fidelidade permanente ao Senhor.",
+      "verseRef": "1 Crônicas 5:20–25",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas transgrediram contra o Deus de seus pais",
+      "feedbackCorrect": "Depois de vencer confiando, o povo se entrega aos ídolos.",
+      "feedbackWrong": {
+        "true": "O texto mostra vitória e, depois, transgressão e idolatria."
+      },
+      "hint": "Compare 5:20 com 5:25.",
+      "learningObjective": "Interpretar que vitória passada não substitui fidelidade.",
+      "evidence": [
+        "1 Crônicas 5:20–25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 5:25, toque o trecho que sustenta a queda após a vitória.",
+      "verseRef": "1 Crônicas 5:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "contra"
+        },
+        {
+          "id": "b",
+          "text": "transgrediram"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "transgrediram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar com o texto a transgressão pós-vitória.",
+      "evidence": [
+        "1 Crônicas 5:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Crônicas 5:18–26 sustenta?",
+      "verseRef": "1 Crônicas 5:18–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança é ouvida; idolatria leva ao exílio"
+        },
+        {
+          "id": "b",
+          "text": "Vitória prova fidelidade para sempre"
+        },
+        {
+          "id": "c",
+          "text": "O exílio foi acaso sem pecado prévio"
+        },
+        {
+          "id": "d",
+          "text": "Armas sozinhas explicam a vitória"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois confiaram nele",
+      "feedbackCorrect": "O arco do trecho une clamor atendido e juízo pela idolatria.",
+      "feedbackWrong": {
+        "b": "5:25 mostra transgressão depois da vitória.",
+        "c": "\"Por isso\" em 5:26 liga pecado e cativeiro.",
+        "d": "5:20 atribui a ajuda ao clamor e à confiança."
+      },
+      "hint": "Una o começo (confiança) e o fim (exílio).",
+      "learningObjective": "Escolher a interpretação que o arco do texto sustenta.",
+      "evidence": [
+        "1 Crônicas 5:18–26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da confiança ao juízo?",
+      "verseRef": "1 Crônicas 5:20–26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamam e confiam; Deus ouve na peleja"
+        },
+        {
+          "id": "b",
+          "text": "Transgridem e seguem ídolos dos povos"
+        },
+        {
+          "id": "c",
+          "text": "Deus suscita a Assíria e os leva cativos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Por isso, o Deus de Israel suscitou",
+      "evidence": [
+        "1 Crônicas 5:20",
+        "1 Crônicas 5:25",
+        "1 Crônicas 5:26"
+      ],
+      "feedbackCorrect": "Confiança, queda e juízo formam a lógica do trecho.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor; o cativeiro fecha."
+      },
+      "hint": "Siga a ordem do próprio capítulo.",
+      "learningObjective": "Encadear confiança, idolatria e exílio."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 5:20, que verbo explica por que Deus deu ouvidos?",
+      "verseRef": "1 Crônicas 5:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "temeram"
+        },
+        {
+          "id": "b",
+          "text": "confiaram"
+        },
+        {
+          "id": "c",
+          "text": "fugiram"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pois confiaram nele",
+      "feedbackCorrect": "O termo carrega o sentido: Deus ouve quem confia nele.",
+      "feedbackWrong": {
+        "a": "O texto usa \"confiaram\", não \"temeram\".",
+        "c": "Eles não fugiram; confiaram."
+      },
+      "hint": "Veja a razão no fim do versículo.",
+      "learningObjective": "Lembrar o termo teológico da cena: confiaram.",
+      "evidence": [
+        "1 Crônicas 5:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 5:26 a 2 Reis 17:6?",
+      "verseRef": "1 Crônicas 5:26",
+      "passageA": {
+        "ref": "1 Crônicas 5:26"
+      },
+      "passageB": {
+        "ref": "2 Reis 17:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Assíria leva Israel cativo"
+        },
+        {
+          "id": "b",
+          "text": "Retorno imediato a Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com o Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levou cativos os rubenitas, os gaditas e a meia tribo de Manassés",
+      "evidence": [
+        "1 Crônicas 5:26",
+        "2 Reis 17:6"
+      ],
+      "feedbackCorrect": "Os dois textos registram o cativeiro pela Assíria.",
+      "feedbackWrong": {
+        "b": "O texto fala de cativeiro, não de retorno.",
+        "c": "Não há aliança com o Egito nestes versículos."
+      },
+      "hint": "Compare o destino do povo do norte.",
+      "learningObjective": "Ligar o exílio de Crônicas ao relato em Reis."
+    }
+  ]
+}

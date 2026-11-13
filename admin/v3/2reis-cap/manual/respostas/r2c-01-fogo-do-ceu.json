@@ -1,0 +1,697 @@
+{
+  "study": {
+    "passageRef": "2 Reis 1:9–16",
+    "passages": [
+      {
+        "ref": "2 Reis 1:9–16"
+      }
+    ],
+    "context": "O rei manda capitães buscar Elias, e o fogo do céu responde. Respeitar o profeta",
+    "keyword": "enviou",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Fogo do céu",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Reis 1:9 afirma: Então, o rei enviou um capitão de cinquenta soldados.",
+        "evidenceRef": "2 Reis 1:9",
+        "evidenceSpan": "Então, o rei enviou um capitão de cinquenta soldados"
+      },
+      {
+        "text": "O texto em 2 Reis 1:11 afirma: Enviou novamente um capitão de cinquenta com os seus.",
+        "evidenceRef": "2 Reis 1:11",
+        "evidenceSpan": "Enviou novamente um capitão de cinquenta com os seus"
+      },
+      {
+        "text": "O texto em 2 Reis 1:14 afirma: Eis que fogo desceu do céu e consumiu aqueles dois.",
+        "evidenceRef": "2 Reis 1:14",
+        "evidenceSpan": "Eis que fogo desceu do céu e consumiu aqueles dois"
+      },
+      {
+        "text": "O texto em 2 Reis 1:16 afirma: E disse-lhe: Assim diz o Senhor: Por que você enviou.",
+        "evidenceRef": "2 Reis 1:16",
+        "evidenceSpan": "E disse-lhe: Assim diz o Senhor: Por que você enviou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "enviou",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "capitão",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "cinquenta",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "2 Reis 1:9"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "2 Reis 1:11"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "2 Reis 1:16"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 2 Reis 1:14.",
+        "marker": null,
+        "evidenceRef": "2 Reis 1:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 2 Reis 1:16.",
+        "marker": null,
+        "evidenceRef": "2 Reis 1:16"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 2 Reis 1:9 a 2 Reis 1:16.",
+        "marker": null,
+        "evidenceRef": "2 Reis 1:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "Há um Deus em Israel: quem despreza o seu profeta encontra juízo.",
+    "anchorQuestion": "O que 2 Reis 1:9–16 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 1 —9 aparece a palavra enviou",
+      "verseRef": "2 Reis 1:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Então, o rei enviou um capitão de cinquenta",
+      "feedbackCorrect": "O versículo traz \"enviou\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Reis 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 1:9, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Reis 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "soldados"
+        },
+        {
+          "id": "b",
+          "text": "cinquenta"
+        },
+        {
+          "id": "c",
+          "text": "subirem"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cinquenta",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Reis 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 1:11, o que o texto destaca?",
+      "verseRef": "2 Reis 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de Enviou no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enviou novamente um capitão de cinquenta",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "2 Reis 1:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 1:9 na ordem do texto.",
+      "verseRef": "2 Reis 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "rei"
+        },
+        {
+          "id": "b",
+          "text": "enviou"
+        },
+        {
+          "id": "c",
+          "text": "capitão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "rei",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "2 Reis 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 1:11, que palavra importante o texto usa?",
+      "verseRef": "2 Reis 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "novamente"
+        },
+        {
+          "id": "b",
+          "text": "Enviou"
+        },
+        {
+          "id": "c",
+          "text": "capitão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Enviou novamente um capitão de cinquenta com os seus",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Reis 1:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 1:9 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 1:9",
+      "passageA": {
+        "ref": "2 Reis 1:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O rei manda capitães buscar Elias, e o fogo do céu responde."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tema da passagem"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, o rei enviou um capitão de",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare os dois textos com atenção.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "2 Reis 1:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 1 —14 aparece a palavra fogo",
+      "verseRef": "2 Reis 1:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eis que fogo desceu do céu e consumiu aqueles",
+      "feedbackCorrect": "O versículo traz \"fogo\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Reis 1:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 1:9, toque a palavra que marca a relação no texto.",
+      "verseRef": "2 Reis 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "subirem"
+        },
+        {
+          "id": "b",
+          "text": "soldados"
+        },
+        {
+          "id": "c",
+          "text": "profeta"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "soldados",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Reis 1:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 1:14 se relaciona com o restante do trecho?",
+      "verseRef": "2 Reis 1:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que fogo desceu do céu e consumiu",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "2 Reis 1:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "2 Reis 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Enviou novamente um capitão de",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Reis 1:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 1:14, que palavra carrega a relação ou a ação?",
+      "verseRef": "2 Reis 1:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "desceu"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "consumiu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Eis que fogo desceu do céu e consumiu aqueles dois",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Reis 1:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 1:11 a Salmos 23:1?",
+      "verseRef": "2 Reis 1:11",
+      "passageA": {
+        "ref": "2 Reis 1:11"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enviou novamente um capitão de",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "2 Reis 1:11",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 1 —16 o nome disse está ausente do versículo",
+      "verseRef": "2 Reis 1:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O versículo contém \"disse\".",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Reis 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 1:16, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "2 Reis 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "você"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Reis 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "2 Reis 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há um Deus em Israel: quem despreza o seu profeta encontra juízo."
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E disse-lhe: Assim diz o Senhor: Por que",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "2 Reis 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "2 Reis 1:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E disse-lhe: Assim diz o Senhor: Por",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Reis 1:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 1:9, que termo carrega o sentido da cena?",
+      "verseRef": "2 Reis 1:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "enviou"
+        },
+        {
+          "id": "b",
+          "text": "capitão"
+        },
+        {
+          "id": "c",
+          "text": "cinquenta"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Então, o rei enviou um capitão de cinquenta",
+      "feedbackCorrect": "O termo \"capitão\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "2 Reis 1:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 1:16 a Salmos 46:1?",
+      "verseRef": "2 Reis 1:16",
+      "passageA": {
+        "ref": "2 Reis 1:16"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E disse-lhe: Assim diz o Senhor: Por",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "2 Reis 1:16",
+        "Salmos 46:1"
+      ]
+    }
+  ]
+}

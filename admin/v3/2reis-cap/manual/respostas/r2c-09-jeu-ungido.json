@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "2 Reis 9:1–6",
+    "passages": [
+      {
+        "ref": "2 Reis 9:1–13"
+      }
+    ],
+    "context": "Eliseu envia um discípulo a Ramote-Gileade. Em segredo, Jeú é ungido rei e recebe a ordem de ferir a casa de Acabe.",
+    "keyword": "ungi",
+    "keywordGloss": "O Senhor declara Jeú rei sobre Israel pela unção com azeite.",
+    "focusQuestion": "Quando Deus chama alguém para cumprir juízo, você reconhece a autoridade dele ou só a política?",
+    "reflectionPrompts": [
+      "Unção secreta",
+      "Juízo sobre Acabe",
+      "Jeú é rei"
+    ],
+    "facts": [
+      {
+        "text": "Eliseu manda um discípulo levar azeite a Ramote-Gileade.",
+        "evidenceRef": "2 Reis 9:1",
+        "evidenceSpan": "leva contigo este vaso de azeite e vai-te a Ramote-Gileade"
+      },
+      {
+        "text": "O jovem deve ungir Jeú e declarar que o Senhor o ungiu rei sobre Israel.",
+        "evidenceRef": "2 Reis 9:3",
+        "evidenceSpan": "Assim diz o Senhor: Eu te ungi rei sobre Israel"
+      },
+      {
+        "text": "Jeú deve ferir a casa de Acabe para vingar o sangue dos profetas.",
+        "evidenceRef": "2 Reis 9:7",
+        "evidenceSpan": "ferirás a casa de Acabe, teu senhor, para que eu vingue o sangue de meus servos, os profetas"
+      },
+      {
+        "text": "Os cães devorarão Jezabel no campo de Jezreel.",
+        "evidenceRef": "2 Reis 9:10",
+        "evidenceSpan": "os cães devorarão Jezabel no campo de Jezreel"
+      },
+      {
+        "text": "Os capitães põem mantos sob Jeú e proclamam que Jeú é rei.",
+        "evidenceRef": "2 Reis 9:13",
+        "evidenceSpan": "tocaram a trombeta e exclamaram: “Jeú é rei”"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ungi",
+        "gloss": "Ato pelo qual o Senhor constitui Jeú rei sobre Israel."
+      },
+      {
+        "term": "azeite",
+        "gloss": "Sinal da unção derramada sobre a cabeça de Jeú."
+      },
+      {
+        "term": "ferirás",
+        "gloss": "Ordem de juízo contra a casa de Acabe."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Eliseu envia o discípulo com azeite",
+        "evidenceRef": "2 Reis 9:1–3"
+      },
+      {
+        "label": "Jeú é ungido rei sobre Israel",
+        "evidenceRef": "2 Reis 9:4–6"
+      },
+      {
+        "label": "Ordem de ferir a casa de Acabe",
+        "evidenceRef": "2 Reis 9:7–10"
+      },
+      {
+        "label": "Os capitães proclamam Jeú rei",
+        "evidenceRef": "2 Reis 9:11–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Jeú ferirá a casa de Acabe para que o Senhor vingue o sangue dos profetas.",
+        "marker": "para que",
+        "evidenceRef": "2 Reis 9:7"
+      },
+      {
+        "kind": "causa",
+        "text": "A casa de Acabe terá o mesmo fim das casas de Jeroboão e Baasa.",
+        "marker": "Porque",
+        "evidenceRef": "2 Reis 9:9"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da unção, os capitães se apressam e proclamam Jeú rei.",
+        "marker": "Então",
+        "evidenceRef": "2 Reis 9:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 19:16",
+        "bridge": "Jeú já havia sido indicado"
+      },
+      {
+        "ref": "1 Reis 21:23",
+        "bridge": "Juízo anunciado sobre Jezabel"
+      },
+      {
+        "ref": "1 Reis 19:15–16",
+        "bridge": "Missão de ungir reis"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jeú se unge sozinho e inventa a mensagem do Senhor.",
+        "why": "Um discípulo de Eliseu derrama o azeite e fala em nome do Senhor."
+      },
+      {
+        "text": "A unção é só golpe militar, sem juízo sobre a casa de Acabe.",
+        "why": "O Senhor manda ferir a casa de Acabe para vingar o sangue dos profetas."
+      },
+      {
+        "text": "O jovem profeta fica para aconselhar Jeú no trono.",
+        "why": "A ordem é abrir a porta, fugir e não se deter."
+      }
+    ],
+    "anchorQuestion": "Quem unge Jeú rei sobre Israel, segundo 2 Reis 9:3?",
+    "centralInsight": "O Senhor levanta Jeú para cumprir o juízo sobre a casa de Acabe."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 9:3, o Senhor declara que ungiu Jeú rei sobre Israel.",
+      "verseRef": "2 Reis 9:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Assim diz o Senhor: Eu te ungi rei sobre Israel",
+      "feedbackCorrect": "A unção vem da boca do Senhor.",
+      "feedbackWrong": {
+        "false": "O versículo traz a fala de unção sobre Israel."
+      },
+      "hint": "Leia a fala depois do azeite.",
+      "learningObjective": "Observar a unção de Jeú.",
+      "evidence": [
+        "2 Reis 9:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 9:1, toque o que o discípulo deve levar.",
+      "verseRef": "2 Reis 9:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "vaso de azeite"
+        },
+        {
+          "id": "b",
+          "text": "Ramote-Gileade"
+        },
+        {
+          "id": "c",
+          "text": "profeta Eliseu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "leva contigo este vaso de azeite",
+      "feedbackCorrect": "Ele leva o vaso de azeite.",
+      "feedbackWrong": {
+        "b": "Ramote-Gileade é o destino.",
+        "c": "Eliseu é quem envia."
+      },
+      "hint": "O que vai na mão do enviado?",
+      "learningObjective": "Identificar o vaso de azeite.",
+      "evidence": [
+        "2 Reis 9:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 9:13, o que os capitães proclamam?",
+      "verseRef": "2 Reis 9:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeú é rei"
+        },
+        {
+          "id": "b",
+          "text": "Acabe ainda reina"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu é rei"
+        },
+        {
+          "id": "d",
+          "text": "Jezabel governa Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exclamaram: “Jeú é rei”",
+      "feedbackCorrect": "Tocam a trombeta e dizem que Jeú é rei.",
+      "feedbackWrong": {
+        "b": "A proclamação é de Jeú, não de Acabe.",
+        "c": "Eliseu envia; quem é proclamado é Jeú.",
+        "d": "Jezabel não é proclamada."
+      },
+      "hint": "Ouça a trombeta no fim.",
+      "learningObjective": "Observar a proclamação de Jeú.",
+      "evidence": [
+        "2 Reis 9:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 9:3 na ordem do texto.",
+      "verseRef": "2 Reis 9:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "E pega o vaso de azeite, derrama-o sobre a cabeça dele"
+        },
+        {
+          "id": "b",
+          "text": "e diz: Assim diz o Senhor: Eu te ungi rei sobre Israel"
+        },
+        {
+          "id": "c",
+          "text": "Então, abre a porta, foge e não te detenhas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu te ungi rei sobre Israel",
+      "feedbackCorrect": "Derrama, fala e foge.",
+      "feedbackWrong": {
+        "default": "Comece pelo vaso de azeite; a fuga fecha o verso."
+      },
+      "hint": "O que vem primeiro, derramar ou fugir?",
+      "learningObjective": "Seguir a ordem da unção.",
+      "evidence": [
+        "2 Reis 9:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 9:6, complete a fala. Eu te ___ rei sobre o povo do Senhor.",
+      "verseRef": "2 Reis 9:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "ungi"
+        },
+        {
+          "id": "b",
+          "text": "chamei"
+        },
+        {
+          "id": "c",
+          "text": "enviei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu te ungi rei sobre o povo do Senhor, sobre Israel",
+      "feedbackCorrect": "O verbo da cena é ungi.",
+      "feedbackWrong": {
+        "b": "O texto diz ungi, não chamei.",
+        "c": "O texto diz ungi, não enviei."
+      },
+      "hint": "É o verbo da unção.",
+      "learningObjective": "Lembrar o verbo ungi.",
+      "evidence": [
+        "2 Reis 9:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 9:3 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 9:3",
+      "passageA": {
+        "ref": "2 Reis 9:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Um discípulo unge Jeú em segredo e o Senhor o declara rei."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Unção real pelo Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Jeú escolhe a si mesmo"
+        },
+        {
+          "id": "c",
+          "text": "Pacto com a casa de Acabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu te ungi rei sobre Israel",
+      "feedbackCorrect": "O Senhor unge; Jeú não se autoescolhe.",
+      "feedbackWrong": {
+        "b": "Quem unge é o Senhor, pela boca do enviado.",
+        "c": "A cena aponta juízo, não pacto com Acabe."
+      },
+      "hint": "Quem declara Jeú rei?",
+      "learningObjective": "Ligar o verso à unção do Senhor.",
+      "evidence": [
+        "2 Reis 9:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 9:7, Jeú deve ferir a casa de Acabe para que o Senhor vingue o sangue dos profetas.",
+      "verseRef": "2 Reis 9:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "ferirás a casa de Acabe, teu senhor, para que eu vingue o sangue de meus servos, os profetas",
+      "feedbackCorrect": "O para que marca o propósito do juízo.",
+      "feedbackWrong": {
+        "false": "Leia o para que. Vingar o sangue dos profetas."
+      },
+      "hint": "Olhe a finalidade da ordem.",
+      "learningObjective": "Compreender o propósito do juízo.",
+      "evidence": [
+        "2 Reis 9:7"
+      ],
+      "correctAnswer": "true"
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 9:7, toque o marcador de propósito.",
+      "verseRef": "2 Reis 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "para que"
+        },
+        {
+          "id": "b",
+          "text": "Jezabel"
+        },
+        {
+          "id": "c",
+          "text": "ferirás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que eu vingue o sangue de meus servos, os profetas",
+      "feedbackCorrect": "Para que introduz a finalidade.",
+      "feedbackWrong": {
+        "b": "Jezabel é o alvo do juízo, não o marcador.",
+        "c": "Férirás é a ordem, não o propósito."
+      },
+      "hint": "Procure a finalidade da ordem.",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "2 Reis 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 9:9 se relaciona com o fim da casa de Acabe?",
+      "verseRef": "2 Reis 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terá o mesmo fim das casas de Jeroboão e Baasa"
+        },
+        {
+          "id": "b",
+          "text": "Será poupada por aliança eterna"
+        },
+        {
+          "id": "c",
+          "text": "Passará o trono a Jezabel em paz"
+        },
+        {
+          "id": "d",
+          "text": "Receberá bênção igual à de Davi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "farei da casa de Acabe o que fiz à casa de Jeroboão",
+      "feedbackCorrect": "O Porque compara Acabe a Jeroboão e Baasa.",
+      "feedbackWrong": {
+        "b": "O texto anuncia juízo, não aliança.",
+        "c": "Jezabel também está sob juízo.",
+        "d": "Não há bênção davidica aqui."
+      },
+      "hint": "Compare com casas já julgadas.",
+      "learningObjective": "Relacionar o juízo às casas anteriores.",
+      "evidence": [
+        "2 Reis 9:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da unção de Jeú.",
+      "verseRef": "2 Reis 9:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eliseu envia o discípulo com azeite"
+        },
+        {
+          "id": "b",
+          "text": "Jeú é ungido rei sobre Israel"
+        },
+        {
+          "id": "c",
+          "text": "Os capitães proclamam Jeú rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vai-te a Ramote-Gileade",
+      "feedbackCorrect": "Envio, unção e proclamação.",
+      "feedbackWrong": {
+        "default": "Comece pelo envio de Eliseu."
+      },
+      "hint": "Quem age primeiro?",
+      "learningObjective": "Ordenar a estrutura da cena.",
+      "evidence": [
+        "2 Reis 9:1",
+        "2 Reis 9:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 9:7, complete. ___ a casa de Acabe, teu senhor.",
+      "verseRef": "2 Reis 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "ferirás"
+        },
+        {
+          "id": "b",
+          "text": "pouparás"
+        },
+        {
+          "id": "c",
+          "text": "honrarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E ferirás a casa de Acabe, teu senhor",
+      "feedbackCorrect": "A ordem é ferirás.",
+      "feedbackWrong": {
+        "b": "Não é poupar; é juízo.",
+        "c": "Não é honrar; é ferir."
+      },
+      "hint": "Qual verbo abre a ordem?",
+      "learningObjective": "Lembrar o verbo do juízo.",
+      "evidence": [
+        "2 Reis 9:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 9:3 a 1 Reis 19:16?",
+      "verseRef": "2 Reis 9:3",
+      "passageA": {
+        "ref": "2 Reis 9:3"
+      },
+      "passageB": {
+        "ref": "1 Reis 19:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeú já havia sido indicado"
+        },
+        {
+          "id": "b",
+          "text": "Jeú rejeita o Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu desobedece Elias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu te ungi rei sobre Israel",
+      "feedbackCorrect": "Elias já ouvira que ungiria Jeú rei.",
+      "feedbackWrong": {
+        "b": "A cena cumpre a unção, não a rejeição.",
+        "c": "O texto mostra cumprimento, não desobediência."
+      },
+      "hint": "Compare a ordem antiga com a unção.",
+      "learningObjective": "Ligar a unção à ordem de Elias.",
+      "evidence": [
+        "2 Reis 9:3",
+        "1 Reis 19:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 9:3, o jovem deve permanecer com Jeú para aconselhá-lo no trono.",
+      "verseRef": "2 Reis 9:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "abre a porta, foge e não te detenhas",
+      "feedbackCorrect": "A ordem é fugir, não ficar.",
+      "feedbackWrong": {
+        "true": "O fim do verso manda fugir sem se deter."
+      },
+      "hint": "O que fazer depois de falar?",
+      "learningObjective": "Corrigir a leitura de permanência.",
+      "evidence": [
+        "2 Reis 9:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 9:7, toque o trecho que mostra o alvo do juízo.",
+      "verseRef": "2 Reis 9:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "casa de Acabe"
+        },
+        {
+          "id": "b",
+          "text": "teu senhor"
+        },
+        {
+          "id": "c",
+          "text": "meus servos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ferirás a casa de Acabe, teu senhor",
+      "feedbackCorrect": "O alvo é a casa de Acabe.",
+      "feedbackWrong": {
+        "b": "Teu senhor descreve Acabe; o alvo nomeado é a casa.",
+        "c": "Os servos são os vingados, não o alvo."
+      },
+      "hint": "Quem deve ser ferido?",
+      "learningObjective": "Sustentar o alvo do juízo.",
+      "evidence": [
+        "2 Reis 9:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 9:6–7 sustenta sobre a unção de Jeú?",
+      "verseRef": "2 Reis 9:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor unge Jeú para cumprir juízo sobre Acabe"
+        },
+        {
+          "id": "b",
+          "text": "Jeú inventa a mensagem para tomar o trono"
+        },
+        {
+          "id": "c",
+          "text": "A unção é só política, sem juízo divino"
+        },
+        {
+          "id": "d",
+          "text": "O jovem fica para governar junto com Jeú"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu te ungi rei sobre o povo do Senhor, sobre Israel",
+      "feedbackCorrect": "Unção e juízo vêm juntos da boca do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto atribui a fala ao Senhor, Deus de Israel.",
+        "c": "O verso 7 liga a unção ao juízo sobre Acabe.",
+        "d": "O enviado deve fugir, não governar."
+      },
+      "hint": "Una a unção com a ordem seguinte.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": [
+        "2 Reis 9:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o juízo anunciado contra Jezabel?",
+      "verseRef": "2 Reis 9:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elias já havia dito o juízo sobre Jezabel"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor anuncia que os cães devorarão Jezabel"
+        },
+        {
+          "id": "c",
+          "text": "Oseias liga o sangue de Jezreel à casa de Jeú"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os cães devorarão Jezabel no campo de Jezreel",
+      "feedbackCorrect": "Promessa antiga, anúncio na unção e eco posterior.",
+      "feedbackWrong": {
+        "default": "Comece pela palavra a Elias; Oseias vem depois."
+      },
+      "hint": "Siga a linha Elias, unção, Oseias.",
+      "learningObjective": "Ver o fio do juízo na Bíblia.",
+      "evidence": [
+        "1 Reis 21:23",
+        "2 Reis 9:10",
+        "Oseias 1:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 9:10, complete. os ___ devorarão Jezabel no campo de Jezreel.",
+      "verseRef": "2 Reis 9:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "cães"
+        },
+        {
+          "id": "b",
+          "text": "lobos"
+        },
+        {
+          "id": "c",
+          "text": "corvos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os cães devorarão Jezabel no campo de Jezreel",
+      "feedbackCorrect": "O juízo nomeia os cães.",
+      "feedbackWrong": {
+        "b": "O texto diz cães, não lobos.",
+        "c": "O texto diz cães, não corvos."
+      },
+      "hint": "Que animais o verso nomeia?",
+      "learningObjective": "Lembrar o termo do juízo sobre Jezabel.",
+      "evidence": [
+        "2 Reis 9:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 9:10 a 1 Reis 21:23?",
+      "verseRef": "2 Reis 9:10",
+      "passageA": {
+        "ref": "2 Reis 9:10"
+      },
+      "passageB": {
+        "ref": "1 Reis 21:23"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo anunciado sobre Jezabel"
+        },
+        {
+          "id": "b",
+          "text": "Perdão imediato a Jezabel"
+        },
+        {
+          "id": "c",
+          "text": "Aliança nova com Acabe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os cães devorarão Jezabel no campo de Jezreel",
+      "feedbackCorrect": "A mesma sentença sobre Jezabel se repete.",
+      "feedbackWrong": {
+        "b": "Os dois textos anunciam juízo, não perdão.",
+        "c": "Não há aliança nova; há juízo."
+      },
+      "hint": "Compare o destino de Jezabel.",
+      "learningObjective": "Ligar o anúncio ao juízo anterior.",
+      "evidence": [
+        "2 Reis 9:10",
+        "1 Reis 21:23"
+      ]
+    }
+  ]
+}

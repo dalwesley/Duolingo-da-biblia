@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 90:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 90:1–6"
+      },
+      {
+        "ref": "Salmos 90:7–12"
+      }
+    ],
+    "context": "Senhor, tu tens sido o nosso refúgio; mil anos aos teus olhos são como o dia de ontem. Ensina-nos a contar os nossos dias.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Tu és Deus",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Senhor, tu tens sido o nosso refúgio de geração em geração.",
+        "evidenceRef": "Salmos 90:1",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "Antes que os montes nascessem.",
+        "evidenceRef": "Salmos 90:2",
+        "evidenceSpan": "Antes que os montes nascessem"
+      },
+      {
+        "text": "Tu reduzes o homem ao pó e dizes.",
+        "evidenceRef": "Salmos 90:3",
+        "evidenceSpan": "Tu reduzes o homem ao pó e dizes"
+      },
+      {
+        "text": "Porque mil anos.",
+        "evidenceRef": "Salmos 90:4",
+        "evidenceSpan": "Porque mil anos"
+      },
+      {
+        "text": "Tu os arrastas como uma corrente de águas.",
+        "evidenceRef": "Salmos 90:5",
+        "evidenceSpan": "Tu os arrastas como uma corrente de águas"
+      },
+      {
+        "text": "De madrugada floresce e viceja.",
+        "evidenceRef": "Salmos 90:6",
+        "evidenceSpan": "De madrugada floresce e viceja"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "tens",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Senhor tu tens sido o nosso",
+        "evidenceRef": "Salmos 90:1"
+      },
+      {
+        "label": "Antes que os montes nascessem e",
+        "evidenceRef": "Salmos 90:2"
+      },
+      {
+        "label": "Tu reduzes o homem ao pó",
+        "evidenceRef": "Salmos 90:3"
+      },
+      {
+        "label": "Porque mil anos aos teus olhos",
+        "evidenceRef": "Salmos 90:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Antes\".",
+        "marker": "Antes",
+        "evidenceRef": "Salmos 90:2"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"Porque\".",
+        "marker": "Porque",
+        "evidenceRef": "Salmos 90:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 90:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é pastor"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Mortalidade e misericórdia: a sabedoria do coração começa no eterno Deus."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Mortalidade e misericórdia: a sabedoria do coração começa no eterno Deus.",
+    "anchorQuestion": "O que Salmos 90:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 90:1, senhor.",
+      "verseRef": "Salmos 90:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 90:1 afirma.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 90:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 90:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "tens"
+        },
+        {
+          "id": "c",
+          "text": "sido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 90:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 90:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tu reduzes o homem ao pó e dizes"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu reduzes o homem ao pó e dizes",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 90:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 90:1 na ordem do texto.",
+      "verseRef": "Salmos 90:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "tens sido"
+        },
+        {
+          "id": "c",
+          "text": "o nosso"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 90:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 90:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "anos"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "tens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "anos",
+      "feedbackCorrect": "A palavra do versículo é «anos».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 90:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 90:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 90:1",
+      "passageA": {
+        "ref": "Salmos 90:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Senhor, tu tens sido o nosso refúgio; mil anos aos teus olhos são como o dia de ontem. Ensina-nos a contar os nossos dias."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 90:2, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 90:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Antes",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 90:2 afirma.",
+      "evidence": [
+        "Salmos 90:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 90:2, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 90:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antes"
+        },
+        {
+          "id": "b",
+          "text": "montes"
+        },
+        {
+          "id": "c",
+          "text": "nascessem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Antes",
+      "feedbackCorrect": "O versículo destaca «Antes».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 90:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 90:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 90:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque mil anos",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 90:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 90:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor tu tens sido o nosso"
+        },
+        {
+          "id": "b",
+          "text": "Antes que os montes nascessem"
+        },
+        {
+          "id": "c",
+          "text": "Tu reduzes o homem ao pó"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 90:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 90:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "reduzes"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "tens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "reduzes",
+      "feedbackCorrect": "A palavra do versículo é «reduzes».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 90:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 90:1 a Salmos 23:1.",
+      "verseRef": "Salmos 90:1",
+      "passageA": {
+        "ref": "Salmos 90:1"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 90:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ensina-nos",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 90:12 afirma.",
+      "evidence": [
+        "Salmos 90:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 90:12, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 90:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensina-nos"
+        },
+        {
+          "id": "b",
+          "text": "contar"
+        },
+        {
+          "id": "c",
+          "text": "nossos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ensina-nos",
+      "feedbackCorrect": "O versículo destaca «Ensina-nos».",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 90:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 90:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 90:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Tu os arrastas como uma corrente de águas",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 90:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 90:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 90:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 90:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "arrastas"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "tens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "arrastas",
+      "feedbackCorrect": "A palavra do versículo é «arrastas».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 90:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 90:1 a Salmos 51:10.",
+      "verseRef": "Salmos 90:1",
+      "passageA": {
+        "ref": "Salmos 90:1"
+      },
+      "passageB": {
+        "ref": "Salmos 51:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração puro"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 90:1"
+      ]
+    }
+  ]
+}

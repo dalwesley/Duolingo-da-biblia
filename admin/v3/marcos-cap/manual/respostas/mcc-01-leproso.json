@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Marcos 1:40–45",
+    "passages": [
+      {
+        "ref": "Marcos 1:40–45"
+      }
+    ],
+    "context": "Na Lei de Moisés, certas doenças de pele exigiam avaliação sacerdotal. A purificação também envolvia ofertas específicas e orientações para o reconhecimento da condição da pessoa.",
+    "keyword": "compaixão",
+    "keywordGloss": "A compaixão de Jesus se torna ação concreta: ele se aproxima, toca e purifica o homem.",
+    "focusQuestion": "Quando alguém é evitado por todos, você se aproxima ou mantém distância?",
+    "reflectionPrompts": [
+      "A confiança do homem",
+      "A compaixão que se aproxima",
+      "A ordem e a divulgação"
+    ],
+    "facts": [
+      {
+        "text": "Um homem com lepra se aproxima de Jesus e se ajoelha para pedir purificação.",
+        "evidenceRef": "Marcos 1:40",
+        "evidenceSpan": "um leproso aproximou-se dele, rogando-lhe de joelhos"
+      },
+      {
+        "text": "Jesus age com compaixão, estende a mão, toca o homem e fala com ele.",
+        "evidenceRef": "Marcos 1:41",
+        "evidenceSpan": "cheio de compaixão, estendeu a mão, tocou-o e disse-lhe: Quero, fica limpo!"
+      },
+      {
+        "text": "A lepra desaparece imediatamente e o homem fica limpo.",
+        "evidenceRef": "Marcos 1:42",
+        "evidenceSpan": "a lepra desapareceu de imediato e ele ficou limpo"
+      },
+      {
+        "text": "Jesus adverte o homem com veemência e o despede.",
+        "evidenceRef": "Marcos 1:43",
+        "evidenceSpan": "advertindo-o com veemência, logo o despediu"
+      },
+      {
+        "text": "Jesus manda o homem apresentar-se ao sacerdote e oferecer o que Moisés determinou.",
+        "evidenceRef": "Marcos 1:44",
+        "evidenceSpan": "apresente-se ao sacerdote e ofereça pela sua purificação o que Moisés determinou"
+      },
+      {
+        "text": "O homem divulga a notícia, e Jesus deixa de conseguir entrar publicamente nas cidades.",
+        "evidenceRef": "Marcos 1:45",
+        "evidenceSpan": "ele começou a propagar muitas coisas e a divulgar a notícia, de modo que Jesus já não conseguia entrar publicamente em nenhuma cidade"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "compaixão",
+        "gloss": "A atitude de Jesus diante do sofrimento humano, que se manifesta em aproximação e ação."
+      },
+      {
+        "term": "purificação",
+        "gloss": "A restauração do homem, reconhecida também pelas orientações dadas por Moisés."
+      },
+      {
+        "term": "testemunho",
+        "gloss": "O reconhecimento público da purificação por meio da apresentação ao sacerdote."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O homem apresenta seu pedido a Jesus",
+        "evidenceRef": "Marcos 1:40"
+      },
+      {
+        "label": "Jesus responde com toque, palavra e cura",
+        "evidenceRef": "Marcos 1:41–42"
+      },
+      {
+        "label": "A orientação é dada, mas a notícia se espalha",
+        "evidenceRef": "Marcos 1:43–45"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A compaixão de Jesus se expressa no gesto de estender a mão e tocar o homem.",
+        "marker": null,
+        "evidenceRef": "Marcos 1:41"
+      },
+      {
+        "kind": "resultado",
+        "text": "A purificação acontece em seguida à fala de Jesus, sem demora.",
+        "marker": "ao dizer isso",
+        "evidenceRef": "Marcos 1:42"
+      },
+      {
+        "kind": "contraste",
+        "text": "O homem divulga a notícia apesar da orientação de Jesus para não contar a ninguém.",
+        "marker": "Mas",
+        "evidenceRef": "Marcos 1:44–45"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Levítico 14:2–3",
+        "bridge": "Avaliação sacerdotal da purificação"
+      },
+      {
+        "ref": "Mateus 8:2–3",
+        "bridge": "Jesus toca e purifica"
+      },
+      {
+        "ref": "Mateus 8:16–17",
+        "bridge": "Curas ligadas à promessa do Servo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O homem duvida que Jesus tenha poder para purificá-lo.",
+        "why": "Ele afirma que Jesus pode purificá-lo; a dúvida expressa por 'se quiseres' é sobre a vontade."
+      },
+      {
+        "text": "O toque é um ritual independente que produz a purificação.",
+        "why": "O relato une o toque à palavra de Jesus e apresenta a purificação como resultado imediato de sua declaração."
+      },
+      {
+        "text": "O homem obedece a Jesus ao divulgar a notícia.",
+        "why": "Jesus ordena que não conte a ninguém; a divulgação em seguida contrasta com essa instrução."
+      }
+    ],
+    "centralInsight": "Jesus toca quem todos evitavam, e quem é tocado por ele fica limpo.",
+    "anchorQuestion": "O que Jesus fez antes de dizer ao homem que ficasse limpo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Marcos 1:41, Jesus estendeu a mão, tocou o homem e falou com ele.",
+      "verseRef": "Marcos 1:41",
+      "correctOptionId": "true",
+      "evidenceSpan": "estendeu a mão, tocou-o e disse-lhe",
+      "feedbackCorrect": "A compaixão de Jesus aparece em gesto e palavra: ele se aproxima e fala ao homem.",
+      "feedbackWrong": {
+        "false": "O versículo afirma que Jesus estendeu a mão, tocou o homem e falou com ele."
+      },
+      "hint": "Observe as ações de Jesus na segunda metade do versículo.",
+      "learningObjective": "Identificar as ações de Jesus em resposta ao pedido do homem.",
+      "evidence": [
+        "Marcos 1:41"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Marcos 1:40, toque quem se aproximou de Jesus e se ajoelhou diante dele.",
+      "verseRef": "Marcos 1:40",
+      "options": [
+        {
+          "id": "a",
+          "text": "um leproso"
+        },
+        {
+          "id": "b",
+          "text": "dele"
+        },
+        {
+          "id": "c",
+          "text": "de joelhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um leproso aproximou-se dele, rogando-lhe de joelhos",
+      "feedbackCorrect": "O sujeito que se aproxima e se ajoelha é o homem descrito como leproso.",
+      "feedbackWrong": {
+        "b": "O pronome indica a quem ele se aproximou, não quem realizou a ação.",
+        "c": "A expressão descreve a posição do homem, não quem se aproximou."
+      },
+      "hint": "Identifique quem realiza a ação de se aproximar.",
+      "learningObjective": "Identificar quem procura Jesus no início do relato.",
+      "evidence": [
+        "Marcos 1:40"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Marcos 1:44, o que Jesus orientou o homem a fazer?",
+      "verseRef": "Marcos 1:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apresentar-se ao sacerdote e oferecer o que Moisés determinou"
+        },
+        {
+          "id": "b",
+          "text": "Voltar à cidade e anunciar publicamente a cura"
+        },
+        {
+          "id": "c",
+          "text": "Permanecer fora das cidades até receber nova ordem"
+        },
+        {
+          "id": "d",
+          "text": "Pedir aos discípulos que confirmassem a purificação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apresente-se ao sacerdote e ofereça pela sua purificação o que Moisés determinou",
+      "feedbackCorrect": "Jesus orienta o homem a cumprir o que Moisés determinou e a apresentar-se ao sacerdote.",
+      "feedbackWrong": {
+        "b": "A orientação foi não contar a ninguém, não anunciar a cura.",
+        "c": "Jesus o despede e manda que vá ao sacerdote, não que permaneça fora.",
+        "d": "O texto menciona o sacerdote, não uma confirmação pelos discípulos."
+      },
+      "hint": "Leia a instrução que vem depois de 'mas vá'.",
+      "learningObjective": "Identificar as orientações dadas por Jesus ao homem purificado.",
+      "evidence": [
+        "Marcos 1:44"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte a resposta de Jesus em Marcos 1:41 na ordem do texto.",
+      "verseRef": "Marcos 1:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Jesus, cheio de compaixão"
+        },
+        {
+          "id": "b",
+          "text": "estendeu a mão, tocou-o"
+        },
+        {
+          "id": "c",
+          "text": "e disse-lhe: Quero, fica limpo!"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "cheio de compaixão, estendeu a mão, tocou-o e disse-lhe",
+      "feedbackCorrect": "O versículo passa da compaixão ao toque e, então, à palavra de Jesus.",
+      "feedbackWrong": {
+        "default": "A sequência começa com a compaixão, segue pelo toque e termina na fala."
+      },
+      "hint": "Observe como a frase avança depois de apresentar Jesus.",
+      "learningObjective": "Reconhecer a sequência da resposta de Jesus ao homem.",
+      "evidence": [
+        "Marcos 1:41"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Marcos 1:41, que atitude de Jesus é destacada antes de ele estender a mão?",
+      "verseRef": "Marcos 1:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "compaixão"
+        },
+        {
+          "id": "b",
+          "text": "indignação"
+        },
+        {
+          "id": "c",
+          "text": "hesitação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cheio de compaixão",
+      "feedbackCorrect": "A compaixão aparece antes do toque e acompanha a resposta de Jesus ao sofrimento.",
+      "feedbackWrong": {
+        "b": "O texto não descreve indignação; destaca a compaixão de Jesus.",
+        "c": "Jesus não hesita: estende a mão e declara que quer purificar o homem."
+      },
+      "hint": "Observe a expressão que descreve Jesus antes da ação.",
+      "learningObjective": "Reconhecer a atitude que caracteriza a resposta de Jesus.",
+      "evidence": [
+        "Marcos 1:41"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que liga Marcos 1:44 a este contexto?",
+      "verseRef": "Marcos 1:44",
+      "passageA": {
+        "ref": "Marcos 1:44"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na Lei de Moisés, a purificação de certas doenças de pele exigia avaliação sacerdotal e uma oferta."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Apresentação ao sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "Divulgação pública da cura"
+        },
+        {
+          "id": "c",
+          "text": "Pedido de purificação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apresente-se ao sacerdote",
+      "feedbackCorrect": "A orientação de Jesus segue a Lei, que previa avaliação sacerdotal após a purificação.",
+      "feedbackWrong": {
+        "b": "A divulgação contraria a ordem de silêncio e não é a ponte com a Lei.",
+        "c": "O pedido inicia a cena, mas o contexto trata da avaliação sacerdotal."
+      },
+      "hint": "Compare a orientação de Jesus com a prática prevista na Lei.",
+      "learningObjective": "Ligar a instrução de Jesus à avaliação sacerdotal prevista na Lei.",
+      "evidence": [
+        "Marcos 1:44"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Marcos 1:42, a lepra desapareceu antes de Jesus dizer ao homem que ficasse limpo.",
+      "verseRef": "Marcos 1:41–42",
+      "correctOptionId": "false",
+      "evidenceSpan": "ao dizer isso, a lepra desapareceu de imediato",
+      "feedbackCorrect": "O resultado vem após a fala de Jesus: a lepra desaparece ao ele dizer isso.",
+      "feedbackWrong": {
+        "true": "A expressão 'ao dizer isso' situa a purificação depois da fala de Jesus."
+      },
+      "hint": "Observe a expressão que liga a fala ao resultado.",
+      "learningObjective": "Compreender a relação temporal entre a palavra de Jesus e a purificação.",
+      "evidence": [
+        "Marcos 1:41–42"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Marcos 1:45, toque a palavra que contrasta a ordem de Jesus com a atitude do homem.",
+      "verseRef": "Marcos 1:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "ao sair"
+        },
+        {
+          "id": "c",
+          "text": "de modo que"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas, ao sair, ele começou a propagar muitas coisas",
+      "feedbackCorrect": "Mas introduz o contraste entre a ordem de silêncio e a divulgação da notícia.",
+      "feedbackWrong": {
+        "b": "A expressão indica quando o homem saiu, não o contraste com a ordem.",
+        "c": "A expressão apresenta uma consequência, não o contraste entre as atitudes."
+      },
+      "hint": "Procure a palavra que abre o versículo e muda a direção do relato.",
+      "learningObjective": "Reconhecer o marcador de contraste entre a orientação e a atitude do homem.",
+      "evidence": [
+        "Marcos 1:45"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual é o propósito da orientação dada em Marcos 1:44?",
+      "verseRef": "Marcos 1:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "Que a purificação servisse de testemunho ao povo."
+        },
+        {
+          "id": "b",
+          "text": "Que os sacerdotes ajudassem o homem a divulgar a notícia."
+        },
+        {
+          "id": "c",
+          "text": "Que o homem permanecesse afastado da comunidade por mais tempo."
+        },
+        {
+          "id": "d",
+          "text": "Que a cura fosse escondida até Jesus voltar à cidade."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para servir de testemunho ao povo",
+      "feedbackCorrect": "A apresentação ao sacerdote faria da purificação um testemunho diante do povo.",
+      "feedbackWrong": {
+        "b": "O texto não pede divulgação; a orientação inicial é não contar a ninguém.",
+        "c": "A apresentação ao sacerdote e a oferta dizem respeito à purificação, não a prolongar o afastamento.",
+        "d": "Jesus pede silêncio e a apresentação ao sacerdote; não condiciona a cura ao retorno dele."
+      },
+      "hint": "Observe a finalidade declarada no fim da instrução.",
+      "learningObjective": "Compreender a finalidade da apresentação ao sacerdote.",
+      "evidence": [
+        "Marcos 1:44"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança de Marcos 1:40 a 1:45?",
+      "verseRef": "Marcos 1:40–41",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem apresenta seu pedido a Jesus"
+        },
+        {
+          "id": "b",
+          "text": "Jesus responde com toque, palavra e cura"
+        },
+        {
+          "id": "c",
+          "text": "A orientação é dada, mas a notícia se espalha"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "um leproso aproximou-se dele, rogando-lhe de joelhos",
+      "feedbackCorrect": "O pedido leva à resposta de Jesus; depois, a orientação é seguida pela divulgação.",
+      "feedbackWrong": {
+        "default": "A sequência parte do pedido, passa pela cura e termina nas consequências da notícia."
+      },
+      "hint": "Siga o percurso do pedido inicial até o que acontece depois da orientação.",
+      "learningObjective": "Compreender os três movimentos principais do relato.",
+      "evidence": [
+        "Marcos 1:40",
+        "Marcos 1:41–42",
+        "Marcos 1:43–45"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Marcos 1:45, o que o homem começou a fazer ao sair?",
+      "verseRef": "Marcos 1:45",
+      "options": [
+        {
+          "id": "a",
+          "text": "propagar"
+        },
+        {
+          "id": "b",
+          "text": "obedecer"
+        },
+        {
+          "id": "c",
+          "text": "esconder"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "começou a propagar muitas coisas",
+      "feedbackCorrect": "Ele começa a espalhar a notícia, contrariando a orientação de Jesus para manter silêncio.",
+      "feedbackWrong": {
+        "b": "O texto relata que ele divulgou a notícia, não que obedeceu à ordem de silêncio.",
+        "c": "Ele não esconde a cura: começa a propagar muitas coisas."
+      },
+      "hint": "Observe o verbo que descreve a ação do homem.",
+      "learningObjective": "Identificar a ação que contrasta com a orientação de Jesus.",
+      "evidence": [
+        "Marcos 1:45"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Marcos 1:44 a Levítico 14:2–3?",
+      "verseRef": "Marcos 1:44",
+      "passageA": {
+        "ref": "Marcos 1:44"
+      },
+      "passageB": {
+        "ref": "Levítico 14:2–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Purificação reconhecida pelo sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "Cura realizada pelo sacerdote"
+        },
+        {
+          "id": "c",
+          "text": "Divulgação da notícia ao povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apresente-se ao sacerdote",
+      "feedbackCorrect": "Levítico orienta a avaliação sacerdotal; Jesus manda o homem apresentar-se ao sacerdote.",
+      "feedbackWrong": {
+        "b": "O sacerdote avalia a purificação; o texto não atribui a ele a cura.",
+        "c": "A divulgação é o que Jesus pediu que não acontecesse."
+      },
+      "hint": "Compare a função do sacerdote nos dois textos.",
+      "learningObjective": "Relacionar a orientação de Marcos com a lei de purificação em Levítico.",
+      "evidence": [
+        "Marcos 1:44",
+        "Levítico 14:2–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Marcos 1:44–45, a divulgação da notícia contraria a orientação explícita de Jesus ao homem.",
+      "verseRef": "Marcos 1:44–45",
+      "correctOptionId": "true",
+      "evidenceSpan": "não conte nada a ninguém",
+      "feedbackCorrect": "Jesus pede silêncio, mas o homem divulga a notícia; o relato mostra o contraste.",
+      "feedbackWrong": {
+        "false": "A ordem de Jesus é explícita: não conte nada a ninguém; depois, o homem divulga a notícia."
+      },
+      "hint": "Compare a instrução com a ação narrada em seguida.",
+      "learningObjective": "Interpretar a divulgação da notícia à luz da ordem de Jesus.",
+      "evidence": [
+        "Marcos 1:44–45"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Marcos 1:41, toque a ação que mostra que Jesus não evitou o homem.",
+      "verseRef": "Marcos 1:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "tocou-o"
+        },
+        {
+          "id": "b",
+          "text": "disse-lhe"
+        },
+        {
+          "id": "c",
+          "text": "Quero"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estendeu a mão, tocou-o",
+      "feedbackCorrect": "Jesus não se limita a sentir compaixão: ele estende a mão e toca o homem.",
+      "feedbackWrong": {
+        "b": "Falar faz parte da resposta, mas o contato aparece no verbo tocar.",
+        "c": "A palavra expressa a vontade de Jesus, mas não descreve o contato físico."
+      },
+      "hint": "Procure o verbo que descreve o contato físico.",
+      "learningObjective": "Localizar a ação que expressa a proximidade de Jesus.",
+      "evidence": [
+        "Marcos 1:41"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Marcos 1:40–42 é mais fiel ao relato?",
+      "verseRef": "Marcos 1:40–41",
+      "options": [
+        {
+          "id": "a",
+          "text": "O homem reconhece o poder de Jesus e pergunta se ele quer purificá-lo."
+        },
+        {
+          "id": "b",
+          "text": "O homem duvida que Jesus tenha poder para purificá-lo."
+        },
+        {
+          "id": "c",
+          "text": "O toque funciona como um ritual independente da palavra de Jesus."
+        },
+        {
+          "id": "d",
+          "text": "A divulgação da notícia cumpre a orientação de Jesus."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se quiseres, podes purificar-me",
+      "feedbackCorrect": "O homem afirma que Jesus pode purificá-lo; sua pergunta é se ele quer fazê-lo.",
+      "feedbackWrong": {
+        "b": "O homem diz que Jesus pode purificá-lo; a dúvida é sobre a vontade, não o poder.",
+        "c": "O relato une o toque à palavra de Jesus e diz que a lepra desapareceu ao ele falar.",
+        "d": "Jesus pediu que ele não contasse a ninguém; divulgar a notícia contraria a ordem."
+      },
+      "hint": "Observe a diferença entre reconhecer o poder e perguntar pela vontade.",
+      "learningObjective": "Distinguir a confiança no poder de Jesus da pergunta sobre sua vontade.",
+      "evidence": [
+        "Marcos 1:40"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Como o relato conecta a purificação de Jesus à orientação de Moisés?",
+      "verseRef": "Marcos 1:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Lei prevê a avaliação sacerdotal da purificação"
+        },
+        {
+          "id": "b",
+          "text": "Jesus purifica o homem por sua palavra e toque"
+        },
+        {
+          "id": "c",
+          "text": "O homem deve apresentar-se ao sacerdote"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "apresente-se ao sacerdote e ofereça pela sua purificação o que Moisés determinou",
+      "feedbackCorrect": "A Lei orienta a avaliação; Jesus purifica o homem; depois, ele deve apresentar-se ao sacerdote.",
+      "feedbackWrong": {
+        "default": "A orientação de Jesus retoma a Lei e vem depois da purificação realizada por ele."
+      },
+      "hint": "Comece pela orientação dada a Israel antes deste encontro.",
+      "learningObjective": "Interpretar a cura em relação à Lei e à reintegração do homem.",
+      "evidence": [
+        "Levítico 14:2–3",
+        "Marcos 1:41",
+        "Marcos 1:44"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Marcos 1:44, a purificação deveria servir de quê ao povo?",
+      "verseRef": "Marcos 1:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "testemunho"
+        },
+        {
+          "id": "b",
+          "text": "castigo"
+        },
+        {
+          "id": "c",
+          "text": "segredo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para servir de testemunho ao povo",
+      "feedbackCorrect": "A apresentação e a oferta tornariam a purificação um testemunho diante do povo.",
+      "feedbackWrong": {
+        "b": "O texto não fala de castigo; fala de testemunho após a purificação.",
+        "c": "O silêncio pedido a respeito da notícia não transforma a oferta em segredo."
+      },
+      "hint": "Leia a finalidade da oferta no fim do versículo.",
+      "learningObjective": "Compreender o papel público do testemunho previsto na orientação.",
+      "evidence": [
+        "Marcos 1:44"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Marcos 1:41–42 a Mateus 8:16–17?",
+      "verseRef": "Marcos 1:41–42",
+      "passageA": {
+        "ref": "Marcos 1:41–42"
+      },
+      "passageB": {
+        "ref": "Mateus 8:16–17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus, o Servo que cura"
+        },
+        {
+          "id": "b",
+          "text": "Aprovação sacerdotal para curar"
+        },
+        {
+          "id": "c",
+          "text": "Anúncio que substitui a compaixão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a lepra desapareceu de imediato e ele ficou limpo",
+      "feedbackCorrect": "Mateus apresenta as curas de Jesus como cumprimento da palavra profética sobre o Servo.",
+      "feedbackWrong": {
+        "b": "A aprovação sacerdotal aparece em Marcos 1:44, mas não explica a cura.",
+        "c": "O anúncio não é a causa da cura; Jesus age com compaixão e poder."
+      },
+      "hint": "Leia Mateus como explicação do sentido das curas de Jesus.",
+      "learningObjective": "Relacionar a cura narrada por Marcos ao cumprimento apresentado por Mateus.",
+      "evidence": [
+        "Marcos 1:41–42",
+        "Mateus 8:16–17"
+      ]
+    }
+  ]
+}

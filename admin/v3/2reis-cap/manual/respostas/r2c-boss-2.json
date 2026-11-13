@@ -1,0 +1,929 @@
+{
+  "study": {
+    "passageRef": "2 Reis 5:10–14",
+    "passages": [
+      {
+        "ref": "2 Reis 5:8–14"
+      },
+      {
+        "ref": "2 Reis 6:15–23"
+      },
+      {
+        "ref": "2 Reis 7:1–9"
+      },
+      {
+        "ref": "2 Reis 8:7–15"
+      }
+    ],
+    "context": "Esta Travessia revisa os sinais de Eliseu: a cura de Naamã, os carros de fogo, os leprosos anunciantes e a lágrima diante de Hazael.",
+    "keyword": "profeta",
+    "keywordGloss": "Eliseu, homem de Deus, por quem o Senhor cura, protege, livra e revela juízos.",
+    "focusQuestion": "Você reconhece o Senhor tanto na cura e no livramento quanto no juízo que faz chorar?",
+    "reflectionPrompts": [
+      "Obedecer e ser limpo",
+      "Ver a proteção",
+      "Anunciar e chorar"
+    ],
+    "facts": [
+      {
+        "text": "Naamã mergulha sete vezes e é curado.",
+        "evidenceRef": "2 Reis 5:14",
+        "evidenceSpan": "mergulhou no Jordão sete vezes"
+      },
+      {
+        "text": "Eliseu diz que são mais os que estão conosco.",
+        "evidenceRef": "2 Reis 6:16",
+        "evidenceSpan": "são mais os que estão conosco"
+      },
+      {
+        "text": "O monte estava cheio de carros de fogo.",
+        "evidenceRef": "2 Reis 6:17",
+        "evidenceSpan": "carros de fogo ao redor de Eliseu"
+      },
+      {
+        "text": "Os leprosos dizem que é dia de boas novas.",
+        "evidenceRef": "2 Reis 7:9",
+        "evidenceSpan": "este dia é dia de boas novas"
+      },
+      {
+        "text": "Eliseu chora diante de Hazael.",
+        "evidenceRef": "2 Reis 8:11",
+        "evidenceSpan": "chorou o homem de Deus"
+      },
+      {
+        "text": "Hazael mata o rei e reina em seu lugar.",
+        "evidenceRef": "2 Reis 8:15",
+        "evidenceSpan": "Hazael reinou em seu lugar"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Jordão",
+        "gloss": "O rio da obediência simples onde Naamã é limpo."
+      },
+      {
+        "term": "boas novas",
+        "gloss": "O livramento que os leprosos não podem calar."
+      },
+      {
+        "term": "chorou",
+        "gloss": "A resposta de Eliseu ao mal revelado sobre Hazael."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Naamã obedece e é curado",
+        "evidenceRef": "2 Reis 5:10–14"
+      },
+      {
+        "label": "Olhos abertos e carros de fogo",
+        "evidenceRef": "2 Reis 6:15–17"
+      },
+      {
+        "label": "Leprosos anunciam o livramento",
+        "evidenceRef": "2 Reis 7:5–9"
+      },
+      {
+        "label": "Eliseu chora o mal de Hazael",
+        "evidenceRef": "2 Reis 8:10–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Naamã, porém, se indigna com a ordem simples.",
+        "marker": "porém",
+        "evidenceRef": "2 Reis 5:11"
+      },
+      {
+        "kind": "causa",
+        "text": "Não tema, porque são mais os que estão conosco.",
+        "marker": "porque",
+        "evidenceRef": "2 Reis 6:16"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque o Senhor fez ouvir o som, os sírios fogem.",
+        "marker": "Porque",
+        "evidenceRef": "2 Reis 7:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Lucas 4:27",
+        "bridge": "Jesus cita Naamã"
+      },
+      {
+        "ref": "Salmos 34:7",
+        "bridge": "Anjo acampa ao redor"
+      },
+      {
+        "ref": "Isaías 52:7",
+        "bridge": "Anunciar boas novas"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Eliseu só faz milagres de bênção; nunca há juízo nem lágrima.",
+        "why": "Ele também chora o mal de Hazael e anuncia a morte do rei."
+      },
+      {
+        "text": "A proteção divina é só metáfora; não há o que ver.",
+        "why": "O Senhor abre os olhos e o jovem vê carros de fogo."
+      },
+      {
+        "text": "Quem acha livramento pode calar sem culpa.",
+        "why": "Os leprosos confessam que o silêncio não é certo."
+      }
+    ],
+    "centralInsight": "Deus cura, protege, livra e também anuncia juízos duros",
+    "anchorQuestion": "Em 2 Reis 6:16, o que Eliseu diz sobre os que estão conosco?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 6:22, Eliseu manda o rei matar imediatamente todos os sírios cegos.",
+      "verseRef": "2 Reis 6:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não os ferirás",
+      "feedbackCorrect": "Ele diz o contrário: não os ferirás; põe pão e água.",
+      "feedbackWrong": {
+        "true": "Releia a ordem: Não os ferirás."
+      },
+      "hint": "Veja a primeira resposta de Eliseu ao rei.",
+      "learningObjective": "Observar a misericórdia com os sírios.",
+      "evidence": [
+        "2 Reis 6:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 5:14, toque onde Naamã mergulhou.",
+      "verseRef": "2 Reis 5:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jordão"
+        },
+        {
+          "id": "b",
+          "text": "criança"
+        },
+        {
+          "id": "c",
+          "text": "homem de Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mergulhou no Jordão sete vezes",
+      "feedbackCorrect": "Ele mergulha no Jordão, conforme a palavra.",
+      "feedbackWrong": {
+        "b": "A criança compara a carne renovada; o lugar do mergulho é outro.",
+        "c": "O homem de Deus deu a palavra; o rio é o lugar do banho."
+      },
+      "hint": "Procure o nome do rio.",
+      "learningObjective": "Identificar o Jordão na cura.",
+      "evidence": [
+        "2 Reis 5:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 7:9, o que os leprosos decidem fazer?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Anunciar à casa do rei"
+        },
+        {
+          "id": "b",
+          "text": "Ficar em silêncio até a noite"
+        },
+        {
+          "id": "c",
+          "text": "Voltar a Damasco com o ouro"
+        },
+        {
+          "id": "d",
+          "text": "Entregar-se de novo aos sírios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vamos e anunciemos à casa do rei",
+      "feedbackCorrect": "Eles quebram o silêncio e vão anunciar.",
+      "feedbackWrong": {
+        "b": "Eles rejeitam esperar e calar.",
+        "c": "O destino do anúncio é a casa do rei.",
+        "d": "O acampamento já está vazio; a decisão é anunciar."
+      },
+      "hint": "Leia a decisão final do versículo.",
+      "learningObjective": "Observar o anúncio das boas novas.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 6:16 na ordem do texto.",
+      "verseRef": "2 Reis 6:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tema"
+        },
+        {
+          "id": "b",
+          "text": "porque são mais os que estão conosco"
+        },
+        {
+          "id": "c",
+          "text": "do que os que estão com eles"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não tema, porque são mais os que estão conosco",
+      "feedbackCorrect": "Primeiro o ânimo, depois a causa, e então a comparação.",
+      "feedbackWrong": {
+        "default": "Comece por \"Não tema\"; a comparação fecha a frase."
+      },
+      "hint": "O versículo começa com o mandato.",
+      "learningObjective": "Reconhecer a sequência do ânimo.",
+      "evidence": [
+        "2 Reis 6:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 8:11, o que fez o homem de Deus?",
+      "verseRef": "2 Reis 8:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "dançou"
+        },
+        {
+          "id": "b",
+          "text": "chorou"
+        },
+        {
+          "id": "c",
+          "text": "fugiu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chorou o homem de Deus",
+      "feedbackCorrect": "O homem de Deus chorou diante de Hazael.",
+      "feedbackWrong": {
+        "a": "O texto não fala de dança; fala de choro.",
+        "c": "Eliseu não foge; ele chora."
+      },
+      "hint": "Leia a última ação do versículo.",
+      "learningObjective": "Lembrar a lágrima de Eliseu.",
+      "evidence": [
+        "2 Reis 8:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 5:14 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 5:14",
+      "passageA": {
+        "ref": "2 Reis 5:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na etapa, Deus cura Naamã quando ele obedece à ordem simples."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cura pela obediência"
+        },
+        {
+          "id": "b",
+          "text": "Cura pelo orgulho"
+        },
+        {
+          "id": "c",
+          "text": "Cura sem qualquer ordem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra do homem de Deus; e a sua carne se tornou",
+      "feedbackCorrect": "Ele mergulha conforme a palavra e a carne se renova.",
+      "feedbackWrong": {
+        "b": "O orgulho atrasou; a cura veio na obediência.",
+        "c": "A cura segue a palavra cumprida."
+      },
+      "hint": "Veja o que acontece depois do mergulho.",
+      "learningObjective": "Ligar a cura à obediência.",
+      "evidence": [
+        "2 Reis 5:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 7:6, toque quem fez ouvir o som no acampamento.",
+      "verseRef": "2 Reis 7:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "ouvir"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "acampamento"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Observar quem causa a fuga.",
+      "evidence": [
+        "2 Reis 7:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 8:15 na ordem do texto.",
+      "verseRef": "2 Reis 8:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hazael tomou um cobertor, molhou-o em água"
+        },
+        {
+          "id": "b",
+          "text": "o estendeu sobre o rosto do rei até que morreu"
+        },
+        {
+          "id": "c",
+          "text": "e Hazael reinou em seu lugar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Hazael reinou em seu lugar",
+      "feedbackCorrect": "Do cobertor à morte, e então ao trono.",
+      "feedbackWrong": {
+        "default": "Comece pelo cobertor; o reinado fecha o versículo."
+      },
+      "hint": "O reinado é o fim.",
+      "learningObjective": "Reconhecer a sequência do golpe de Hazael.",
+      "evidence": [
+        "2 Reis 8:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 5:11, Naamã recebe a ordem do mensageiro com humildade imediata.",
+      "verseRef": "2 Reis 5:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "Naamã, porém, se indignou com isso e se retirou",
+      "feedbackCorrect": "O \"porém\" marca indignação e retirada, não humildade imediata.",
+      "feedbackWrong": {
+        "true": "Releia: Naamã, porém, se indignou e se retirou."
+      },
+      "hint": "Repare na reação logo após a ordem.",
+      "learningObjective": "Compreender o contraste da indignação.",
+      "evidence": [
+        "2 Reis 5:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 6:16, toque a palavra que marca a causa do ânimo.",
+      "verseRef": "2 Reis 6:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "tema"
+        },
+        {
+          "id": "b",
+          "text": "porque"
+        },
+        {
+          "id": "c",
+          "text": "eles"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não tema, porque são mais",
+      "feedbackCorrect": "\"Porque\" liga o ânimo à proteção maior.",
+      "feedbackWrong": {
+        "a": "\"Tema\" é o que se proíbe; a causa vem depois.",
+        "c": "\"Eles\" é o outro lado, não o marcador."
+      },
+      "hint": "Procure a palavra que introduz a razão.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "2 Reis 6:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 7:6 explica o acampamento vazio?",
+      "verseRef": "2 Reis 7:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor fez ouvir o som de um grande exército"
+        },
+        {
+          "id": "b",
+          "text": "Israel atacou de surpresa ao meio-dia"
+        },
+        {
+          "id": "c",
+          "text": "Os leprosos expulsaram os sírios"
+        },
+        {
+          "id": "d",
+          "text": "O rei pagou os sírios para partir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor fez ouvir no acampamento dos sírios o som de carros",
+      "feedbackCorrect": "A causa é divina: o Senhor faz ouvir o som.",
+      "feedbackWrong": {
+        "b": "Não há ataque israelita descrito aqui.",
+        "c": "Os leprosos acham o acampamento já vazio.",
+        "d": "Não há pagamento; há pânico causado pelo Senhor."
+      },
+      "hint": "Veja quem faz ouvir o som.",
+      "learningObjective": "Relacionar a fuga à ação do Senhor.",
+      "evidence": [
+        "2 Reis 7:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa dos sinais de Eliseu?",
+      "verseRef": "2 Reis 5:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naamã obedece e é curado"
+        },
+        {
+          "id": "b",
+          "text": "Olhos abertos e carros de fogo"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu chora o mal de Hazael"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ele foi curado",
+      "feedbackCorrect": "Da cura à proteção, e depois à lágrima do juízo.",
+      "feedbackWrong": {
+        "default": "Comece por Naamã; a lágrima de Hazael é o fim da etapa."
+      },
+      "hint": "Siga a ordem das cenas do bloco.",
+      "learningObjective": "Compreender o arco da etapa.",
+      "evidence": [
+        "2 Reis 5:14",
+        "2 Reis 6:17",
+        "2 Reis 8:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 8:10, que verbo mostra o que o Senhor fez a Eliseu?",
+      "verseRef": "2 Reis 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "revelou"
+        },
+        {
+          "id": "b",
+          "text": "escondeu"
+        },
+        {
+          "id": "c",
+          "text": "negou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor me revelou que ele morrerá",
+      "feedbackCorrect": "O Senhor revelou a Eliseu que o rei morreria.",
+      "feedbackWrong": {
+        "b": "Nada é escondido aqui; há revelação.",
+        "c": "O texto afirma revelação, não negação."
+      },
+      "hint": "Leia o que o Senhor fez na segunda frase.",
+      "learningObjective": "Lembrar o verbo da revelação.",
+      "evidence": [
+        "2 Reis 8:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 6:16 a Salmos 34:7?",
+      "verseRef": "2 Reis 6:16",
+      "passageA": {
+        "ref": "2 Reis 6:16"
+      },
+      "passageB": {
+        "ref": "Salmos 34:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Anjo acampa ao redor"
+        },
+        {
+          "id": "b",
+          "text": "Deus abandona os seus"
+        },
+        {
+          "id": "c",
+          "text": "Só o medo governa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "são mais os que estão conosco",
+      "evidence": [
+        "2 Reis 6:16",
+        "Salmos 34:7"
+      ],
+      "feedbackCorrect": "Nos dois textos, a proteção de Deus cerca quem confia.",
+      "feedbackWrong": {
+        "b": "Os dois afirmam presença protetora.",
+        "c": "Eliseu manda não temer."
+      },
+      "hint": "Compare a proteção ao redor.",
+      "learningObjective": "Relacionar Eliseu e o Salmo."
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 5:11, toque a palavra que marca o contraste com a ordem.",
+      "verseRef": "2 Reis 5:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "indignou"
+        },
+        {
+          "id": "b",
+          "text": "Naamã"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Naamã",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o contraste de Naamã.",
+      "evidence": [
+        "2 Reis 5:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam livramento e anúncio em 2 Reis 7?",
+      "verseRef": "2 Reis 7:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Leprosos acham o acampamento vazio"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor fez os sírios ouvir um exército"
+        },
+        {
+          "id": "c",
+          "text": "Eles decidem anunciar à casa do rei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "perceberam que não havia ali ninguém",
+      "feedbackCorrect": "A descoberta, a causa divina e o anúncio fecham o arco.",
+      "feedbackWrong": {
+        "default": "A causa divina explica o vazio; o anúncio vem depois."
+      },
+      "hint": "O anúncio é o último passo.",
+      "learningObjective": "Compreender causa e anúncio.",
+      "evidence": [
+        "2 Reis 7:5",
+        "2 Reis 7:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 7:9, os leprosos reconhecem que o silêncio diante das boas novas não é certo.",
+      "verseRef": "2 Reis 7:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não fazemos o que é certo; este dia é dia de boas novas, e estamos em silêncio",
+      "feedbackCorrect": "Eles confessam o erro do silêncio e vão anunciar.",
+      "feedbackWrong": {
+        "false": "Releia: eles mesmos dizem que não fazem o que é certo ao calar."
+      },
+      "hint": "Veja o julgamento que fazem de si.",
+      "learningObjective": "Interpretar o dever de anunciar.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 7:9, toque o trecho que nomeia o que não podem calar.",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "boas novas"
+        },
+        {
+          "id": "b",
+          "text": "casa do rei"
+        },
+        {
+          "id": "c",
+          "text": "luz da manhã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "este dia é dia de boas novas",
+      "feedbackCorrect": "As boas novas tornam o silêncio culpável.",
+      "feedbackWrong": {
+        "b": "A casa do rei é o destino, não o conteúdo.",
+        "c": "A manhã marca o prazo, não a notícia."
+      },
+      "hint": "Procure como chamam o dia.",
+      "learningObjective": "Sustentar a leitura das boas novas.",
+      "evidence": [
+        "2 Reis 7:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa sustenta sobre a obra do Senhor com Eliseu?",
+      "verseRef": "2 Reis 8:11–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus cura, protege, livra e também revela juízos duros"
+        },
+        {
+          "id": "b",
+          "text": "Só há bênção; nunca há lágrima nem juízo"
+        },
+        {
+          "id": "c",
+          "text": "A proteção divina é só metáfora vazia"
+        },
+        {
+          "id": "d",
+          "text": "Quem acha livramento deve calar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque sei o mal que você fará aos filhos de Israel",
+      "feedbackCorrect": "A etapa une cura, carros de fogo, boas novas e a lágrima do juízo.",
+      "feedbackWrong": {
+        "b": "Eliseu chora o mal de Hazael.",
+        "c": "O jovem vê carros de fogo reais no monte.",
+        "d": "Os leprosos condenam o silêncio."
+      },
+      "hint": "Una Naamã, os carros, os leprosos e Hazael.",
+      "learningObjective": "Escolher a leitura do arco da etapa.",
+      "evidence": [
+        "2 Reis 8:11",
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da proteção e do anúncio?",
+      "verseRef": "2 Reis 6:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor mostra carros de fogo ao redor"
+        },
+        {
+          "id": "b",
+          "text": "O anjo do Senhor acampa ao redor"
+        },
+        {
+          "id": "c",
+          "text": "Os pés anunciam boas novas de paz"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "carros de fogo ao redor de Eliseu",
+      "evidence": [
+        "2 Reis 6:17",
+        "Salmos 34:7",
+        "Isaías 52:7"
+      ],
+      "feedbackCorrect": "Da visão de Eliseu à proteção do Salmo e ao anúncio de Isaías.",
+      "feedbackWrong": {
+        "default": "Siga: 2 Reis 6, Salmo 34 e Isaías 52."
+      },
+      "hint": "Comece pelos carros de fogo.",
+      "learningObjective": "Ver proteção e anúncio num fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 5:14, que palavra resume o resultado final de Naamã?",
+      "verseRef": "2 Reis 5:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "curado"
+        },
+        {
+          "id": "b",
+          "text": "ferido"
+        },
+        {
+          "id": "c",
+          "text": "esquecido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "e ele foi curado",
+      "feedbackCorrect": "O fim da cena de Naamã: ele foi curado.",
+      "feedbackWrong": {
+        "b": "O texto fecha com cura, não ferimento.",
+        "c": "Não há esquecimento; há cura."
+      },
+      "hint": "Leia a última ação do versículo.",
+      "learningObjective": "Lembrar o termo da cura.",
+      "evidence": [
+        "2 Reis 5:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 5:14 a Lucas 4:27?",
+      "verseRef": "2 Reis 5:14",
+      "passageA": {
+        "ref": "2 Reis 5:14"
+      },
+      "passageB": {
+        "ref": "Lucas 4:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jesus cita Naamã"
+        },
+        {
+          "id": "b",
+          "text": "Lucas nega a cura"
+        },
+        {
+          "id": "c",
+          "text": "Só israelitas são limpos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele foi curado",
+      "evidence": [
+        "2 Reis 5:14",
+        "Lucas 4:27"
+      ],
+      "feedbackCorrect": "Jesus lembra a limpeza de Naamã, o sírio.",
+      "feedbackWrong": {
+        "b": "Lucas registra a citação, não a negação.",
+        "c": "O ponto de Jesus inclui o sírio limpo."
+      },
+      "hint": "Veja quem Jesus menciona em Nazaré.",
+      "learningObjective": "Ligar Naamã à leitura de Jesus."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 8:12, toque o trecho que sustenta o motivo do choro.",
+      "verseRef": "2 Reis 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "o mal"
+        },
+        {
+          "id": "b",
+          "text": "meu senhor"
+        },
+        {
+          "id": "c",
+          "text": "pequeninos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sei o mal que você fará aos filhos de Israel",
+      "feedbackCorrect": "O motivo resume-se no mal que Hazael fará.",
+      "feedbackWrong": {
+        "b": "\"Meu senhor\" é tratamento, não o motivo.",
+        "c": "Os pequeninos entram na lista; o núcleo é o mal."
+      },
+      "hint": "Procure o que Eliseu diz saber.",
+      "learningObjective": "Sustentar a leitura da lágrima.",
+      "evidence": [
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência resume a etapa dos sinais?",
+      "verseRef": "2 Reis 7:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Naamã é limpo no Jordão"
+        },
+        {
+          "id": "b",
+          "text": "Leprosos anunciam boas novas"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu chora diante de Hazael"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vamos e anunciemos à casa do rei",
+      "evidence": [
+        "2 Reis 5:14",
+        "2 Reis 7:9",
+        "2 Reis 8:11"
+      ],
+      "feedbackCorrect": "Cura, anúncio e lágrima: o arco da etapa.",
+      "feedbackWrong": {
+        "default": "Siga a ordem: Naamã, leprosos e Hazael."
+      },
+      "hint": "Comece pela cura de Naamã.",
+      "learningObjective": "Rever o arco completo da etapa."
+    }
+  ]
+}

@@ -1,0 +1,916 @@
+{
+  "study": {
+    "passageRef": "Efésios 4:1–7",
+    "passages": [
+      {
+        "ref": "Efésios 4:1–7"
+      },
+      {
+        "ref": "Efésios 5:15–21"
+      },
+      {
+        "ref": "Efésios 6:18–24"
+      }
+    ],
+    "context": "Esta Travessia revisa a unidade do Espírito, o andar cheio do Espírito e a oração perseverante pelo evangelho.",
+    "keyword": "Espírito",
+    "keywordGloss": "Unidade, enchimento e oração no Espírito marcam o andar da igreja.",
+    "focusQuestion": "Onde a unidade, o enchimento ou a oração mais precisa de atenção em você?",
+    "reflectionPrompts": [
+      "Unidade na paz",
+      "Cheios do Espírito",
+      "Oração perseverante"
+    ],
+    "facts": [
+      {
+        "text": "Preservar a unidade do Espírito no vínculo da paz.",
+        "evidenceRef": "Efésios 4:3",
+        "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz"
+      },
+      {
+        "text": "Um só Senhor, uma fé, um batismo.",
+        "evidenceRef": "Efésios 4:5",
+        "evidenceSpan": "Um só Senhor, uma única fé, um único batismo"
+      },
+      {
+        "text": "Encham-se do Espírito, não do vinho.",
+        "evidenceRef": "Efésios 5:18",
+        "evidenceSpan": "mas encham-se do Espírito"
+      },
+      {
+        "text": "Sujeitem-se uns aos outros no temor de Cristo.",
+        "evidenceRef": "Efésios 5:21",
+        "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo"
+      },
+      {
+        "text": "Orando em todo o tempo no Espírito.",
+        "evidenceRef": "Efésios 6:18",
+        "evidenceSpan": "Orando em todo o tempo com toda oração e súplica, no Espírito"
+      },
+      {
+        "text": "Pedido de intrepidez para o mistério do evangelho.",
+        "evidenceRef": "Efésios 6:19",
+        "evidenceSpan": "com intrepidez fazer conhecido o mistério do evangelho"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "unidade",
+        "gloss": "Unidade do Espírito no vínculo da paz."
+      },
+      {
+        "term": "Espírito",
+        "gloss": "Enchimento e oração no Espírito."
+      },
+      {
+        "term": "oração",
+        "gloss": "Oração perseverante por santos e evangelho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Andar digno e unidade",
+        "evidenceRef": "Efésios 4:1–3"
+      },
+      {
+        "label": "Um só Senhor; graça a cada um",
+        "evidenceRef": "Efésios 4:4–7"
+      },
+      {
+        "label": "Encher-se do Espírito e sujeitar-se",
+        "evidenceRef": "Efésios 5:18–21"
+      },
+      {
+        "label": "Oração e intrepidez no evangelho",
+        "evidenceRef": "Efésios 6:18–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não vinho, mas Espírito.",
+        "marker": "mas",
+        "evidenceRef": "Efésios 5:18"
+      },
+      {
+        "kind": "propósito",
+        "text": "Orar para que Paulo tenha palavra com intrepidez.",
+        "marker": "para que",
+        "evidenceRef": "Efésios 6:19"
+      },
+      {
+        "kind": "contraste",
+        "text": "Unidade do um só; graça a cada um.",
+        "marker": "Entretanto",
+        "evidenceRef": "Efésios 4:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 12:13",
+        "bridge": "Um Espírito"
+      },
+      {
+        "ref": "Colossenses 3:16",
+        "bridge": "Cânticos"
+      },
+      {
+        "ref": "Colossenses 4:2",
+        "bridge": "Perseverar na oração"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Unidade dispensa esforço.",
+        "why": "Manda esforçar-se diligentemente."
+      },
+      {
+        "text": "Encher-se do Espírito e embriagar-se são iguais.",
+        "why": "O texto opõe vinho e Espírito."
+      },
+      {
+        "text": "Oração basta ser só por si.",
+        "why": "Há súplica pelos santos e pelo evangelho."
+      }
+    ],
+    "centralInsight": "A igreja anda unida, cheia do Espírito e firme na oração",
+    "anchorQuestion": "Como o bloco une unidade, enchimento e oração?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Efésios 4:3, devem preservar a unidade do Espírito no vínculo da paz.",
+      "verseRef": "Efésios 4:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "Unidade no vínculo da paz.",
+      "feedbackWrong": {
+        "false": "Releia o objeto."
+      },
+      "hint": "Olhe o que preservar.",
+      "learningObjective": "Relembrar a unidade.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Efésios 5:18, toque de quem devem encher-se.",
+      "verseRef": "Efésios 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "dissolução"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "Do Espírito.",
+      "feedbackWrong": {
+        "b": "Vinho é o oposto.",
+        "c": "Dissolução é o efeito do vinho."
+      },
+      "hint": "Veja o complemento.",
+      "learningObjective": "Identificar o Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Efésios 6:19, o que pedem para Paulo?",
+      "verseRef": "Efésios 6:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Intrepidez para o evangelho"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio"
+        },
+        {
+          "id": "c",
+          "text": "Fim da oração"
+        },
+        {
+          "id": "d",
+          "text": "Esquecer santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com intrepidez fazer conhecido o mistério do evangelho",
+      "feedbackCorrect": "Intrepidez no evangelho.",
+      "feedbackWrong": {
+        "b": "Ele quer falar.",
+        "c": "Há oração.",
+        "d": "Há santos."
+      },
+      "hint": "Leia o pedido.",
+      "learningObjective": "Ver a intrepidez.",
+      "evidence": [
+        "Efésios 6:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Efésios 4:4–5 na ordem do texto.",
+      "verseRef": "Efésios 4:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há um só corpo e um só Espírito"
+        },
+        {
+          "id": "b",
+          "text": "uma única esperança da vossa vocação"
+        },
+        {
+          "id": "c",
+          "text": "Um só Senhor, uma única fé, um único batismo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Um só Senhor, uma única fé, um único batismo",
+      "feedbackCorrect": "Corpo, esperança e Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo corpo."
+      },
+      "hint": "Siga 4:4–5.",
+      "learningObjective": "Seguir os uns.",
+      "evidence": [
+        "Efésios 4:4–5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Efésios 4:3, complete: vínculo da ___.",
+      "verseRef": "Efésios 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "paz"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vínculo da paz",
+      "feedbackCorrect": "Paz é o vínculo.",
+      "feedbackWrong": {
+        "b": "Vinho é rejeitado.",
+        "c": "Medo não aparece."
+      },
+      "hint": "Veja o complemento.",
+      "learningObjective": "Lembrar paz.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Efésios 5:18 comunica que se liga a este contexto?",
+      "verseRef": "Efésios 5:18",
+      "passageA": {
+        "ref": "Efésios 5:18"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A igreja anda unida, cheia do Espírito e firme na oração."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Encher-se do Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Embriaguez como meta"
+        },
+        {
+          "id": "c",
+          "text": "Oração sem santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O Espírito une o bloco.",
+      "feedbackWrong": {
+        "b": "Vinho é oposto.",
+        "c": "Há oração pelos santos."
+      },
+      "hint": "Ligue Espírito ao bloco.",
+      "learningObjective": "Ligar o contexto ao Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Efésios 6:20, toque o que Paulo é.",
+      "verseRef": "Efésios 6:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "embaixador"
+        },
+        {
+          "id": "b",
+          "text": "cadeias"
+        },
+        {
+          "id": "c",
+          "text": "dever"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sou embaixador em cadeias",
+      "feedbackCorrect": "Embaixador em cadeias.",
+      "feedbackWrong": {
+        "b": "Cadeias é a situação.",
+        "c": "Dever é o falar."
+      },
+      "hint": "Veja o predicado.",
+      "learningObjective": "Identificar o embaixador.",
+      "evidence": [
+        "Efésios 6:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Efésios 5:18–19 na ordem do texto.",
+      "verseRef": "Efésios 5:18–19",
+      "options": [
+        {
+          "id": "a",
+          "text": "não fiquem embriagados com vinho"
+        },
+        {
+          "id": "b",
+          "text": "mas encham-se do Espírito"
+        },
+        {
+          "id": "c",
+          "text": "Falando entre vocês com salmos, hinos e cânticos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "Vinho, Espírito e louvor.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição."
+      },
+      "hint": "Siga 5:18–19.",
+      "learningObjective": "Seguir até o louvor.",
+      "evidence": [
+        "Efésios 5:18–19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Efésios 5:18, o mas iguala vinho e Espírito.",
+      "verseRef": "Efésios 5:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O mas opõe.",
+      "feedbackWrong": {
+        "true": "São opostos."
+      },
+      "hint": "Leia o contraste.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Efésios 5:18, toque a palavra que marca o contraste.",
+      "verseRef": "Efésios 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "vinho"
+        },
+        {
+          "id": "c",
+          "text": "dissolução"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O mas marca o contraste.",
+      "feedbackWrong": {
+        "b": "Vinho é rejeitado.",
+        "c": "Dissolução é o efeito."
+      },
+      "hint": "Procure a conjunção.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Efésios 4:1–3 estabelece entre andar e unidade?",
+      "verseRef": "Efésios 4:1–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar digno inclui esforço pela unidade"
+        },
+        {
+          "id": "b",
+          "text": "Unidade dispensa o andar"
+        },
+        {
+          "id": "c",
+          "text": "Amor exclui a paz"
+        },
+        {
+          "id": "d",
+          "text": "Vocação anula esforço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "Andar e unidade juntos.",
+      "feedbackWrong": {
+        "b": "Há esforço.",
+        "c": "Há amor e paz.",
+        "d": "Há vocação."
+      },
+      "hint": "Una 4:1 e 4:3.",
+      "learningObjective": "Relacionar andar e unidade.",
+      "evidence": [
+        "Efésios 4:1–3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco em rótulos.",
+      "verseRef": "Efésios 4:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andar digno e unidade na paz"
+        },
+        {
+          "id": "b",
+          "text": "Encher-se do Espírito e sujeitar-se"
+        },
+        {
+          "id": "c",
+          "text": "Oração e intrepidez no evangelho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "preservar a unidade do Espírito no vínculo da paz",
+      "feedbackCorrect": "Unidade, enchimento e oração.",
+      "feedbackWrong": {
+        "default": "Comece pela unidade."
+      },
+      "hint": "Pense no arco.",
+      "learningObjective": "Ordenar o bloco.",
+      "evidence": [
+        "Efésios 4:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Efésios 6:19, complete: com ___ fazer conhecido.",
+      "verseRef": "Efésios 6:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "intrepidez"
+        },
+        {
+          "id": "b",
+          "text": "silêncio"
+        },
+        {
+          "id": "c",
+          "text": "medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com intrepidez fazer conhecido",
+      "feedbackCorrect": "Intrepidez é o modo.",
+      "feedbackWrong": {
+        "b": "Silêncio é oposto.",
+        "c": "Medo não é o pedido."
+      },
+      "hint": "Veja o modo.",
+      "learningObjective": "Lembrar intrepidez.",
+      "evidence": [
+        "Efésios 6:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Efésios 4:4 a 1 Coríntios 12:13?",
+      "verseRef": "Efésios 4:4",
+      "passageA": {
+        "ref": "Efésios 4:4"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 12:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um corpo e um Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Muitos Senhores"
+        },
+        {
+          "id": "c",
+          "text": "Sem oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Há um só corpo e um só Espírito",
+      "feedbackCorrect": "Ambos afirmam um corpo e um Espírito.",
+      "feedbackWrong": {
+        "b": "Há um Senhor.",
+        "c": "Há oração no bloco."
+      },
+      "hint": "Compare corpo e Espírito.",
+      "learningObjective": "Ligar o um corpo.",
+      "evidence": [
+        "Efésios 4:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Efésios 4:7, toque a palavra que marca o contraste.",
+      "verseRef": "Efésios 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "graça"
+        },
+        {
+          "id": "c",
+          "text": "medida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, a graça foi concedida",
+      "feedbackCorrect": "Entretanto marca a virada.",
+      "feedbackWrong": {
+        "b": "Graça é o dom.",
+        "c": "Medida qualifica."
+      },
+      "hint": "Procure a conjunção.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Efésios 4:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da oração.",
+      "verseRef": "Efésios 6:18–19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração no Espírito pelos santos"
+        },
+        {
+          "id": "b",
+          "text": "Pedido de palavra com intrepidez"
+        },
+        {
+          "id": "c",
+          "text": "Embaixador em cadeias fala"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "com intrepidez fazer conhecido o mistério do evangelho",
+      "feedbackCorrect": "Oração, pedido e missão.",
+      "feedbackWrong": {
+        "default": "Comece pela oração."
+      },
+      "hint": "Siga 6:18–20.",
+      "learningObjective": "Ordenar a oração.",
+      "evidence": [
+        "Efésios 6:18–19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Efésios 5:18, encher-se do Espírito e embriagar-se são o mesmo caminho.",
+      "verseRef": "Efésios 5:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "O texto opõe vinho e Espírito.",
+      "feedbackWrong": {
+        "true": "São contrastes."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Avaliar a leitura do Espírito.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Efésios 4:3, toque o trecho do esforço.",
+      "verseRef": "Efésios 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esforcem-se"
+        },
+        {
+          "id": "b",
+          "text": "vínculo"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Esforcem-se diligentemente para preservar",
+      "feedbackCorrect": "Esforcem-se sustenta o esforço.",
+      "feedbackWrong": {
+        "b": "Vínculo é o meio.",
+        "c": "Paz qualifica."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Tocar o esforço.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura o bloco sustenta melhor?",
+      "verseRef": "Efésios 6:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Unidos, cheios do Espírito e firmes na oração"
+        },
+        {
+          "id": "b",
+          "text": "Unidade sem esforço"
+        },
+        {
+          "id": "c",
+          "text": "Vinho no lugar do Espírito"
+        },
+        {
+          "id": "d",
+          "text": "Oração só por si"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Orando em todo o tempo com toda oração e súplica, no Espírito",
+      "feedbackCorrect": "Unidade, Espírito e oração.",
+      "feedbackWrong": {
+        "b": "Há esforço.",
+        "c": "Há contraste com vinho.",
+        "d": "Há santos e evangelho."
+      },
+      "hint": "Una o bloco.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Efésios 6:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do bloco em rótulos.",
+      "verseRef": "Efésios 5:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preservar a unidade na paz"
+        },
+        {
+          "id": "b",
+          "text": "Encher-se do Espírito e louvar"
+        },
+        {
+          "id": "c",
+          "text": "Orar com intrepidez pelo evangelho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas encham-se do Espírito",
+      "feedbackCorrect": "Unidade, enchimento e oração.",
+      "feedbackWrong": {
+        "default": "Comece pela unidade."
+      },
+      "hint": "Pense no arco.",
+      "learningObjective": "Encadear o bloco.",
+      "evidence": [
+        "Efésios 5:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Efésios 4:3, complete: preservar a ___.",
+      "verseRef": "Efésios 4:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "unidade"
+        },
+        {
+          "id": "b",
+          "text": "embriaguez"
+        },
+        {
+          "id": "c",
+          "text": "cadeia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "unidade do Espírito",
+      "feedbackCorrect": "Unidade é o objeto.",
+      "feedbackWrong": {
+        "b": "Embriaguez é rejeitada.",
+        "c": "Cadeia é de Paulo."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar unidade.",
+      "evidence": [
+        "Efésios 4:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Efésios 6:18 a Colossenses 4:2?",
+      "verseRef": "Efésios 6:18",
+      "passageA": {
+        "ref": "Efésios 6:18"
+      },
+      "passageB": {
+        "ref": "Colossenses 4:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Perseverar na oração"
+        },
+        {
+          "id": "b",
+          "text": "Embriaguez"
+        },
+        {
+          "id": "c",
+          "text": "Muitos Senhores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Orando em todo o tempo",
+      "feedbackCorrect": "Ambos pedem perseverança na oração.",
+      "feedbackWrong": {
+        "b": "Embriaguez é rejeitada.",
+        "c": "Há um Senhor."
+      },
+      "hint": "Compare a oração.",
+      "learningObjective": "Ligar a perseverança na oração.",
+      "evidence": [
+        "Efésios 6:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Efésios 6:24, toque o trecho dos destinatários da graça.",
+      "verseRef": "Efésios 6:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "amam sinceramente"
+        },
+        {
+          "id": "b",
+          "text": "A graça"
+        },
+        {
+          "id": "c",
+          "text": "Amém"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amam sinceramente o nosso Senhor Jesus Cristo",
+      "feedbackCorrect": "Amam sinceramente.",
+      "feedbackWrong": {
+        "b": "A graça é o desejo.",
+        "c": "Amém fecha."
+      },
+      "hint": "Veja o critério.",
+      "learningObjective": "Tocar o amor sincero.",
+      "evidence": [
+        "Efésios 6:24"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até a sujeição e a oração.",
+      "verseRef": "Efésios 5:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Encher-se do Espírito"
+        },
+        {
+          "id": "b",
+          "text": "Sujeição no temor de Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Oração perseverante pelos santos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sujeitem-se uns aos outros no temor de Cristo",
+      "feedbackCorrect": "Espírito, sujeição e oração.",
+      "feedbackWrong": {
+        "default": "A oração fecha o arco prático."
+      },
+      "hint": "Siga o fio.",
+      "learningObjective": "Encadear Espírito, sujeição e oração.",
+      "evidence": [
+        "Efésios 5:21"
+      ]
+    }
+  ]
+}

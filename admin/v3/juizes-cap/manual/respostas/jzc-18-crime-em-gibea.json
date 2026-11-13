@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 19:22–30",
+    "passages": [
+      {
+        "ref": "Juízes 19:22–30"
+      }
+    ],
+    "context": "Em Gibeá, homens de Belial cometem violência; a concubina é despedaçada e Israel se horroriza.",
+    "keyword": "loucura",
+    "keywordGloss": "O mal que o dono da casa pede que não façam.",
+    "focusQuestion": "Onde a violência precisa ser confrontada sem relativizar?",
+    "reflectionPrompts": [
+      "Filhos de Belial",
+      "Não façais tal loucura",
+      "Nunca se viu"
+    ],
+    "facts": [
+      {
+        "text": "Homens de Belial cercaram a casa.",
+        "evidenceRef": "Juízes 19:22",
+        "evidenceSpan": "filhos de Belial, cercaram a casa"
+      },
+      {
+        "text": "O dono pede que não façam tal loucura.",
+        "evidenceRef": "Juízes 19:23",
+        "evidenceSpan": "não façais tal loucura"
+      },
+      {
+        "text": "Não quiseram ouvi-lo.",
+        "evidenceRef": "Juízes 19:25",
+        "evidenceSpan": "não quiseram ouvi-lo"
+      },
+      {
+        "text": "A mulher jazia à porta com as mãos no limiar.",
+        "evidenceRef": "Juízes 19:27",
+        "evidenceSpan": "jazia à porta da casa, com as mãos sobre o limiar"
+      },
+      {
+        "text": "Despedaçou-a em doze partes.",
+        "evidenceRef": "Juízes 19:29",
+        "evidenceSpan": "a despedaçou por seus ossos em doze partes"
+      },
+      {
+        "text": "Nunca se viu algo semelhante desde o Egito.",
+        "evidenceRef": "Juízes 19:30",
+        "evidenceSpan": "Nunca se fez nem se viu algo semelhante"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Belial",
+        "gloss": "Homens que cercam a casa para o crime."
+      },
+      {
+        "term": "loucura",
+        "gloss": "O mal que não deve ser feito ao hóspede."
+      },
+      {
+        "term": "doze",
+        "gloss": "Partes enviadas por todo Israel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cerco e pedido",
+        "evidenceRef": "Juízes 19:22–24"
+      },
+      {
+        "label": "Violência e manhã",
+        "evidenceRef": "Juízes 19:25–28"
+      },
+      {
+        "label": "Doze partes e horror",
+        "evidenceRef": "Juízes 19:29–30"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Não façais mal visto que está sob proteção.",
+        "marker": "visto que",
+        "evidenceRef": "Juízes 19:23"
+      },
+      {
+        "kind": "contraste",
+        "text": "Oferece outras; porém não ao homem.",
+        "marker": "porém",
+        "evidenceRef": "Juízes 19:24"
+      },
+      {
+        "kind": "contraste",
+        "text": "Disse vamos; porém ela não respondeu.",
+        "marker": "porém",
+        "evidenceRef": "Juízes 19:28"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 19:4–5",
+        "bridge": "Cerco semelhante em Sodoma"
+      },
+      {
+        "ref": "Deuteronômio 22:25",
+        "bridge": "Violência é crime"
+      },
+      {
+        "ref": "Romanos 12:9",
+        "bridge": "Aborrecei o mal"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O crime foi pequeno.",
+        "why": "Nunca se viu semelhante desde o Egito."
+      },
+      {
+        "text": "Ouviram o dono da casa.",
+        "why": "Não quiseram ouvi-lo."
+      },
+      {
+        "text": "Israel ficou indiferente.",
+        "why": "Considerem, reflitam e comentem."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 19:30, desde quando algo assim não se vira?",
+    "centralInsight": "A violência em Gibeá choca Israel: algo assim ainda não se viu desde o Egito."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 19:30, algo semelhante nunca se vira desde o Egito.",
+      "verseRef": "Juízes 19:30",
+      "correctOptionId": "true",
+      "evidenceSpan": "Nunca se fez nem se viu algo semelhante",
+      "feedbackCorrect": "Nunca se viu.",
+      "feedbackWrong": {
+        "false": "O texto afirma o horror."
+      },
+      "hint": "Veja o Nunca.",
+      "learningObjective": "Observar o choque.",
+      "evidence": [
+        "Juízes 19:30"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 19:22, toque quem cercou a casa.",
+      "verseRef": "Juízes 19:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Belial"
+        },
+        {
+          "id": "b",
+          "text": "porta"
+        },
+        {
+          "id": "c",
+          "text": "velho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "filhos de Belial, cercaram a casa",
+      "feedbackCorrect": "Belial.",
+      "feedbackWrong": {
+        "b": "Porta é onde batem.",
+        "c": "Velho é o senhor."
+      },
+      "hint": "Veja quem cerca.",
+      "learningObjective": "Identificar Belial.",
+      "evidence": [
+        "Juízes 19:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 19:29, em quantas partes foi despedaçada?",
+      "verseRef": "Juízes 19:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "Doze"
+        },
+        {
+          "id": "b",
+          "text": "Três"
+        },
+        {
+          "id": "c",
+          "text": "Sete"
+        },
+        {
+          "id": "d",
+          "text": "Uma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em doze partes",
+      "feedbackCorrect": "Doze.",
+      "feedbackWrong": {
+        "b": "Não são três.",
+        "c": "Não são sete.",
+        "d": "Não é uma."
+      },
+      "hint": "Leia o número.",
+      "learningObjective": "Reconhecer doze.",
+      "evidence": [
+        "Juízes 19:29"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 19:23 na ordem do texto.",
+      "verseRef": "Juízes 19:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não, irmãos meus, não pratiqueis esse mal"
+        },
+        {
+          "id": "b",
+          "text": "visto que o homem está sob minha proteção"
+        },
+        {
+          "id": "c",
+          "text": "não façais tal loucura"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não façais tal loucura",
+      "feedbackCorrect": "Pedido, proteção e loucura.",
+      "feedbackWrong": {
+        "default": "Comece pelo Não."
+      },
+      "hint": "O que não façais?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 19:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 19:23, complete: não façais tal ___.",
+      "verseRef": "Juízes 19:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "loucura"
+        },
+        {
+          "id": "b",
+          "text": "festa"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não façais tal loucura",
+      "feedbackCorrect": "Loucura.",
+      "feedbackWrong": {
+        "b": "Não é festa.",
+        "c": "Não é paz."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar loucura.",
+      "evidence": [
+        "Juízes 19:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 19:25 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 19:25",
+      "passageA": {
+        "ref": "Juízes 19:25"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os homens recusam ouvir e cometem a violência."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Recusa e violência"
+        },
+        {
+          "id": "b",
+          "text": "Obediência plena"
+        },
+        {
+          "id": "c",
+          "text": "Sem noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não quiseram ouvi-lo",
+      "feedbackCorrect": "Recusa.",
+      "feedbackWrong": {
+        "b": "Não obedecem.",
+        "c": "Há noite."
+      },
+      "hint": "O que não quiseram?",
+      "learningObjective": "Ligar recusa e crime.",
+      "evidence": [
+        "Juízes 19:25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 19:24, o dono pede que não façam loucura ao homem; porém oferece outras.",
+      "verseRef": "Juízes 19:24",
+      "correctOptionId": "true",
+      "evidenceSpan": "porém, a este homem não façais semelhante loucura",
+      "feedbackCorrect": "Contraste cruel.",
+      "feedbackWrong": {
+        "false": "O porém protege só o homem."
+      },
+      "hint": "Leia o porém.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 19:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 19:24, toque o marcador de contraste.",
+      "verseRef": "Juízes 19:24",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "filha"
+        },
+        {
+          "id": "c",
+          "text": "concubina"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém, a este homem não façais semelhante loucura",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Filha é oferecida.",
+        "c": "Concubina é oferecida."
+      },
+      "hint": "Olhe a reserva.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 19:24"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 19:23 faz?",
+      "verseRef": "Juízes 19:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não façais mal visto que está sob proteção"
+        },
+        {
+          "id": "b",
+          "text": "Façais mal visto que é estrangeiro"
+        },
+        {
+          "id": "c",
+          "text": "Sem proteção não há casa"
+        },
+        {
+          "id": "d",
+          "text": "Belial obedece"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "visto que o homem está sob minha proteção",
+      "feedbackCorrect": "Causa do pedido.",
+      "feedbackWrong": {
+        "b": "Há proteção.",
+        "c": "Há casa.",
+        "d": "Belial não obedece."
+      },
+      "hint": "Leia o visto que.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 19:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do crime.",
+      "verseRef": "Juízes 19:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cerco e pedido"
+        },
+        {
+          "id": "b",
+          "text": "Violência e manhã"
+        },
+        {
+          "id": "c",
+          "text": "Doze partes e horror"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "filhos de Belial, cercaram a casa",
+      "feedbackCorrect": "Cerco, violência e horror.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco."
+      },
+      "hint": "O que fecha o horror?",
+      "learningObjective": "Ordenar o crime",
+      "evidence": [
+        "Juízes 19:22",
+        "Juízes 19:30"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 19:29, complete: em ___ partes.",
+      "verseRef": "Juízes 19:29",
+      "options": [
+        {
+          "id": "a",
+          "text": "doze"
+        },
+        {
+          "id": "b",
+          "text": "vinte"
+        },
+        {
+          "id": "c",
+          "text": "cinco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em doze partes",
+      "feedbackCorrect": "Doze.",
+      "feedbackWrong": {
+        "b": "Não são vinte.",
+        "c": "Não são cinco."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Lembrar doze.",
+      "evidence": [
+        "Juízes 19:29"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 19:22 a Gênesis 19:4–5?",
+      "verseRef": "Juízes 19:22",
+      "passageA": {
+        "ref": "Juízes 19:22"
+      },
+      "passageB": {
+        "ref": "Gênesis 19:4–5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cerco semelhante em Sodoma"
+        },
+        {
+          "id": "b",
+          "text": "Hospitalidade plena"
+        },
+        {
+          "id": "c",
+          "text": "Sem violência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cercaram a casa, batendo à porta",
+      "feedbackCorrect": "Cerco.",
+      "feedbackWrong": {
+        "b": "Não é hospitalidade.",
+        "c": "Há violência."
+      },
+      "hint": "Compare o cerco.",
+      "learningObjective": "Ligar a Gênesis.",
+      "evidence": [
+        "Juízes 19:22",
+        "Gênesis 19:4–5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 19:30, o texto trata o crime como fato comum e sem peso moral.",
+      "verseRef": "Juízes 19:30",
+      "correctOptionId": "false",
+      "evidenceSpan": "Nunca se fez nem se viu algo semelhante",
+      "feedbackCorrect": "É inédito e chocante.",
+      "feedbackWrong": {
+        "true": "Nunca se viu."
+      },
+      "hint": "Leia o Nunca.",
+      "learningObjective": "Avaliar o peso.",
+      "evidence": [
+        "Juízes 19:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 19:30, toque o marco histórico.",
+      "verseRef": "Juízes 19:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "Egito"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "corações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "subiram da terra do Egito",
+      "feedbackCorrect": "Egito.",
+      "feedbackWrong": {
+        "b": "Israel é o povo.",
+        "c": "Corações devem refletir."
+      },
+      "hint": "Veja desde quando.",
+      "learningObjective": "Tocar o Egito.",
+      "evidence": [
+        "Juízes 19:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une o crime e o chamado a Israel?",
+      "verseRef": "Juízes 19:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "O horror exige reflexão e resposta"
+        },
+        {
+          "id": "b",
+          "text": "Ignore e siga"
+        },
+        {
+          "id": "c",
+          "text": "Só Gibeá importa"
+        },
+        {
+          "id": "d",
+          "text": "Sem corte não há mensagem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Considerem isso em seus corações, reflitam e comentem",
+      "feedbackCorrect": "Chamado a refletir.",
+      "feedbackWrong": {
+        "b": "Há reflexão.",
+        "c": "Há Israel.",
+        "d": "Há mensagem."
+      },
+      "hint": "Una horror e considerem.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 19:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do choque.",
+      "verseRef": "Juízes 19:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "Violência em Gibeá"
+        },
+        {
+          "id": "b",
+          "text": "Corpo enviado em doze partes"
+        },
+        {
+          "id": "c",
+          "text": "Israel é chamado a refletir"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Considerem isso em seus corações, reflitam e comentem",
+      "feedbackCorrect": "Crime, envio e reflexão.",
+      "feedbackWrong": {
+        "default": "Comece pela violência."
+      },
+      "hint": "O que Israel deve fazer?",
+      "learningObjective": "Encadear o choque",
+      "evidence": [
+        "Juízes 19:25",
+        "Juízes 19:30"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 19:27, complete: com as mãos sobre o ___.",
+      "verseRef": "Juízes 19:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "limiar"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com as mãos sobre o limiar",
+      "feedbackCorrect": "Limiar.",
+      "feedbackWrong": {
+        "b": "Não é trono.",
+        "c": "Não é altar."
+      },
+      "hint": "Veja o lugar.",
+      "learningObjective": "Lembrar limiar.",
+      "evidence": [
+        "Juízes 19:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 19:30 a Romanos 12:9?",
+      "verseRef": "Juízes 19:30",
+      "passageA": {
+        "ref": "Juízes 19:30"
+      },
+      "passageB": {
+        "ref": "Romanos 12:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aborrecei o mal"
+        },
+        {
+          "id": "b",
+          "text": "Aprovai o crime"
+        },
+        {
+          "id": "c",
+          "text": "Calai o horror"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca se fez nem se viu algo semelhante",
+      "feedbackCorrect": "Aborrecer o mal.",
+      "feedbackWrong": {
+        "b": "Não aprovar.",
+        "c": "Não calar."
+      },
+      "hint": "Compare o mal.",
+      "learningObjective": "Ligar a Romanos.",
+      "evidence": [
+        "Juízes 19:30",
+        "Romanos 12:9"
+      ]
+    }
+  ]
+}

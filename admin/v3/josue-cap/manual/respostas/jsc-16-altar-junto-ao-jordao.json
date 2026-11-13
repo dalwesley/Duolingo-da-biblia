@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 22:10–15",
+    "passages": [
+      {
+        "ref": "Josué 22:10–20"
+      }
+    ],
+    "context": "As tribos do leste edificam um altar junto ao Jordão; Israel se reúne em Siló para pelear, mas primeiro envia Finéias.",
+    "keyword": "altar",
+    "keywordGloss": "Construção que Israel teme como rebelião, antes de ouvir o motivo.",
+    "focusQuestion": "Antes de acusar um irmão, você pergunta primeiro?",
+    "reflectionPrompts": [
+      "Altar no Jordão",
+      "Reunião em Siló",
+      "Perguntar antes de pelear"
+    ],
+    "facts": [
+      {
+        "text": "As tribos do leste edificaram um altar junto ao Jordão.",
+        "evidenceRef": "Josué 22:10",
+        "evidenceSpan": "edificaram um altar junto ao Jordão"
+      },
+      {
+        "text": "Israel se reuniu em Siló para sair à peleja.",
+        "evidenceRef": "Josué 22:12",
+        "evidenceSpan": "toda a congregação se juntou em Siló para saírem à peleja"
+      },
+      {
+        "text": "Enviaram Finéias, filho de Eleazar, o sacerdote.",
+        "evidenceRef": "Josué 22:13",
+        "evidenceSpan": "enviaram Finéias, filho de Eleazar, o sacerdote"
+      },
+      {
+        "text": "Acusaram de infidelidade contra o Deus de Israel.",
+        "evidenceRef": "Josué 22:16",
+        "evidenceSpan": "Que infidelidade é esta que cometestes contra o Deus de Israel"
+      },
+      {
+        "text": "Lembraram a iniquidade de Peor.",
+        "evidenceRef": "Josué 22:17",
+        "evidenceSpan": "É tão pouca a iniquidade de Peor"
+      },
+      {
+        "text": "Temeram que a ira se acendesse contra toda a congregação.",
+        "evidenceRef": "Josué 22:18",
+        "evidenceSpan": "amanhã a ira dele se acenderá contra toda a congregação"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "altar",
+        "gloss": "Construção junto ao Jordão que provoca suspeita."
+      },
+      {
+        "term": "infidelidade",
+        "gloss": "Acusação de deixar o Senhor ao edificar o altar."
+      },
+      {
+        "term": "Siló",
+        "gloss": "Lugar onde a congregação se reúne para decidir."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Altar edificado junto ao Jordão",
+        "evidenceRef": "Josué 22:10–11"
+      },
+      {
+        "label": "Israel se reúne para pelear",
+        "evidenceRef": "Josué 22:12"
+      },
+      {
+        "label": "Envio de Finéias e príncipes",
+        "evidenceRef": "Josué 22:13–15"
+      },
+      {
+        "label": "Acusação de rebelião e memória de Acã",
+        "evidenceRef": "Josué 22:16–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Ouvindo o altar, reúnem-se para pelear.",
+        "marker": null,
+        "evidenceRef": "Josué 22:12"
+      },
+      {
+        "kind": "causa",
+        "text": "Temem ira amanhã se houver rebelião hoje.",
+        "marker": null,
+        "evidenceRef": "Josué 22:18"
+      },
+      {
+        "kind": "sequência",
+        "text": "Antes da guerra, enviam mensageiros.",
+        "marker": null,
+        "evidenceRef": "Josué 22:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 12:5–6",
+        "bridge": "Um lugar para o altar"
+      },
+      {
+        "ref": "Josué 7:1",
+        "bridge": "Infidelidade de Acã"
+      },
+      {
+        "ref": "Números 25:3",
+        "bridge": "Iniquidade de Peor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Israel atacou sem enviar ninguém.",
+        "why": "Enviaram Finéias e dez príncipes primeiro."
+      },
+      {
+        "text": "O altar não gerou nenhuma preocupação.",
+        "why": "Reuniram-se para sair à peleja."
+      },
+      {
+        "text": "Esqueceram o caso de Acã.",
+        "why": "Citam Acã como aviso."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 22:13, a quem Israel enviou primeiro?",
+    "centralInsight": "Antes de guerrear, Israel pergunta: o altar pode ser testemunho, não rebelião."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 22:10, as tribos do leste edificaram um altar junto ao Jordão.",
+      "verseRef": "Josué 22:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "edificaram um altar junto ao Jordão",
+      "feedbackCorrect": "Edificaram um altar.",
+      "feedbackWrong": {
+        "false": "O texto diz que edificaram um altar."
+      },
+      "hint": "Veja o que edificaram.",
+      "learningObjective": "Observar o altar no Jordão.",
+      "evidence": [
+        "Josué 22:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 22:13, toque a quem enviaram.",
+      "verseRef": "Josué 22:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Finéias"
+        },
+        {
+          "id": "b",
+          "text": "Siló"
+        },
+        {
+          "id": "c",
+          "text": "peleja"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram Finéias, filho de Eleazar",
+      "feedbackCorrect": "Enviaram Finéias.",
+      "feedbackWrong": {
+        "b": "Siló é onde se reuniram.",
+        "c": "Peleja é o plano."
+      },
+      "hint": "Veja o objeto de enviaram.",
+      "learningObjective": "Identificar o enviado.",
+      "evidence": [
+        "Josué 22:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 22:12, para que se reuniram em Siló?",
+      "verseRef": "Josué 22:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para saírem à peleja"
+        },
+        {
+          "id": "b",
+          "text": "Para celebrar a Páscoa"
+        },
+        {
+          "id": "c",
+          "text": "Para lançar sortes"
+        },
+        {
+          "id": "d",
+          "text": "Para edificar outro altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para saírem à peleja",
+      "feedbackCorrect": "Reunião com intenção de pelear.",
+      "feedbackWrong": {
+        "b": "Não é Páscoa aqui.",
+        "c": "Não são sortes.",
+        "d": "O altar já foi dos do leste."
+      },
+      "hint": "Leia o para.",
+      "learningObjective": "Reconhecer a intenção de pelear.",
+      "evidence": [
+        "Josué 22:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 22:13 na ordem do texto.",
+      "verseRef": "Josué 22:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os filhos de Israel enviaram Finéias"
+        },
+        {
+          "id": "b",
+          "text": "filho de Eleazar, o sacerdote"
+        },
+        {
+          "id": "c",
+          "text": "aos filhos de Rúben"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "enviaram Finéias, filho de Eleazar, o sacerdote",
+      "feedbackCorrect": "Envio e destinatários.",
+      "feedbackWrong": {
+        "default": "Comece pelo envio."
+      },
+      "hint": "Quem envia primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 22:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 22:10, complete: edificaram um ___ junto ao Jordão.",
+      "verseRef": "Josué 22:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "altar"
+        },
+        {
+          "id": "b",
+          "text": "muro"
+        },
+        {
+          "id": "c",
+          "text": "barco"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "edificaram um altar junto ao Jordão",
+      "feedbackCorrect": "Um altar.",
+      "feedbackWrong": {
+        "b": "Não é muro.",
+        "c": "A palavra é altar."
+      },
+      "hint": "Veja o objeto de edificaram.",
+      "learningObjective": "Lembrar o altar.",
+      "evidence": [
+        "Josué 22:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 22:13 comunica que se liga a este contexto?",
+      "verseRef": "Josué 22:13",
+      "passageA": {
+        "ref": "Josué 22:13"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel ouve do altar e se prepara para pelear."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Envio antes da guerra"
+        },
+        {
+          "id": "b",
+          "text": "Ataque sem aviso"
+        },
+        {
+          "id": "c",
+          "text": "Fuga para o Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram Finéias, filho de Eleazar",
+      "feedbackCorrect": "Antes de pelear, enviam mensageiros.",
+      "feedbackWrong": {
+        "b": "Há envio.",
+        "c": "Não fogem."
+      },
+      "hint": "Veja o que fazem primeiro.",
+      "learningObjective": "Ligar a crise ao envio.",
+      "evidence": [
+        "Josué 22:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 22:18, a rebelião de alguns não traria risco de ira sobre a congregação.",
+      "verseRef": "Josué 22:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "Que infidelidade é esta que cometestes contra o Deus de Israel",
+      "feedbackCorrect": "A congregação teme que a infidelidade de alguns os atinja a todos.",
+      "feedbackWrong": {
+        "true": "O alerta de 22:16–18 mostra medo de ira coletiva."
+      },
+      "hint": "Veja o tom da acusação enviada.",
+      "learningObjective": "Ver o risco coletivo.",
+      "evidence": [
+        "Josué 22:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 22:16, toque a palavra que nomeia a acusação.",
+      "verseRef": "Josué 22:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "infidelidade"
+        },
+        {
+          "id": "b",
+          "text": "altar"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Que infidelidade é esta",
+      "feedbackCorrect": "Infidelidade nomeia a acusação.",
+      "feedbackWrong": {
+        "b": "Altar é o objeto.",
+        "c": "Deus é ofendido."
+      },
+      "hint": "Veja a pergunta inicial.",
+      "learningObjective": "Tocar o termo da acusação.",
+      "evidence": [
+        "Josué 22:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre o envio e a acusação?",
+      "verseRef": "Josué 22:13–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perguntam antes de concluir a guerra"
+        },
+        {
+          "id": "b",
+          "text": "Atacam e só depois perguntam"
+        },
+        {
+          "id": "c",
+          "text": "Ignoram Peor e Acã"
+        },
+        {
+          "id": "d",
+          "text": "Elogiam o altar de imediato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Que infidelidade é esta que cometestes",
+      "feedbackCorrect": "Envio e pergunta abrem o diálogo.",
+      "feedbackWrong": {
+        "b": "Não atacaram ainda.",
+        "c": "Citam Peor.",
+        "d": "Acusam, não elogiam."
+      },
+      "hint": "Veja a ordem dos eventos.",
+      "learningObjective": "Compreender pergunta antes da guerra.",
+      "evidence": [
+        "Josué 22:13–16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 22:10–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Altar edificado junto ao Jordão"
+        },
+        {
+          "id": "b",
+          "text": "Israel se reúne para pelear"
+        },
+        {
+          "id": "c",
+          "text": "Envio de Finéias e príncipes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "edificaram um altar junto ao Jordão",
+      "feedbackCorrect": "Altar, reunião e envio.",
+      "feedbackWrong": {
+        "default": "Comece pelo altar."
+      },
+      "hint": "O que dispara a crise?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 22:10",
+        "Josué 22:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 22:16, complete: cometestes contra o Deus de ___.",
+      "verseRef": "Josué 22:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "Moabe"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contra o Deus de Israel",
+      "feedbackCorrect": "Contra o Deus de Israel.",
+      "feedbackWrong": {
+        "b": "Não é Moabe.",
+        "c": "A palavra é Israel."
+      },
+      "hint": "Veja o nome do povo de Deus.",
+      "learningObjective": "Lembrar contra quem foi a acusação.",
+      "evidence": [
+        "Josué 22:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 22:20 a Josué 7:1?",
+      "verseRef": "Josué 22:20",
+      "passageA": {
+        "ref": "Josué 22:20"
+      },
+      "passageB": {
+        "ref": "Josué 7:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Infidelidade de Acã"
+        },
+        {
+          "id": "b",
+          "text": "Vitória em Ai"
+        },
+        {
+          "id": "c",
+          "text": "Trombetas de Jericó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não cometeu Acã, filho de Zera, infidelidade",
+      "feedbackCorrect": "O aviso cita Acã.",
+      "feedbackWrong": {
+        "b": "O elo é Acã.",
+        "c": "Há infidelidade."
+      },
+      "hint": "Compare Acã.",
+      "learningObjective": "Ligar o aviso à derrota em Ai.",
+      "evidence": [
+        "Josué 22:20",
+        "Josué 7:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 22:12–16, reunir-se para pelear e mesmo assim enviar mensageiros sustenta que o altar pode ser testemunho, não rebelião — e precisa ser ouvido.",
+      "verseRef": "Josué 22:12–16",
+      "correctOptionId": "true",
+      "evidenceSpan": "enviaram Finéias, filho de Eleazar, o sacerdote",
+      "feedbackCorrect": "A pelea espera a conversa.",
+      "feedbackWrong": {
+        "false": "O texto une reunião e envio."
+      },
+      "hint": "Una 22:12 e 22:13.",
+      "learningObjective": "Avaliar a leitura do conflito.",
+      "evidence": [
+        "Josué 22:12–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 22:13, toque o trecho que sustenta a via do diálogo.",
+      "verseRef": "Josué 22:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "enviaram"
+        },
+        {
+          "id": "b",
+          "text": "sacerdote"
+        },
+        {
+          "id": "c",
+          "text": "Eleazar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram Finéias",
+      "feedbackCorrect": "Enviaram marca o diálogo.",
+      "feedbackWrong": {
+        "b": "Sacerdote descreve Finéias; a ação é enviaram.",
+        "c": "Eleazar é o pai; a ação é enviaram."
+      },
+      "hint": "Veja o verbo do envio.",
+      "learningObjective": "Tocar o que sustenta o diálogo.",
+      "evidence": [
+        "Josué 22:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 22:10–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Antes de guerrear, Israel pergunta"
+        },
+        {
+          "id": "b",
+          "text": "O altar prova rebelião sem ouvir"
+        },
+        {
+          "id": "c",
+          "text": "Finéias foi enviado só para atacar"
+        },
+        {
+          "id": "d",
+          "text": "Peor e Acã são irrelevantes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram Finéias, filho de Eleazar, o sacerdote",
+      "feedbackCorrect": "Pergunta antes da espada.",
+      "feedbackWrong": {
+        "b": "Ainda não ouviram a defesa.",
+        "c": "O envio é de diálogo.",
+        "d": "Citam Peor e Acã."
+      },
+      "hint": "Una reunião e envio.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 22:10–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do conflito fraterno.",
+      "verseRef": "Josué 22:12–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reúnem-se prontos para pelear"
+        },
+        {
+          "id": "b",
+          "text": "Enviam Finéias e príncipes"
+        },
+        {
+          "id": "c",
+          "text": "Acusam lembrando Peor e Acã"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "toda a congregação se juntou em Siló",
+      "feedbackCorrect": "Reunião, envio e acusação.",
+      "feedbackWrong": {
+        "default": "Comece pela reunião."
+      },
+      "hint": "O que vem antes do envio?",
+      "learningObjective": "Encadear crise e pergunta",
+      "evidence": [
+        "Josué 22:12",
+        "Josué 22:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 22:12, complete: se juntou em ___.",
+      "verseRef": "Josué 22:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Siló"
+        },
+        {
+          "id": "b",
+          "text": "Ai"
+        },
+        {
+          "id": "c",
+          "text": "Hebrom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se juntou em Siló",
+      "feedbackCorrect": "Em Siló.",
+      "feedbackWrong": {
+        "b": "Não é Ai.",
+        "c": "O lugar é Siló."
+      },
+      "hint": "Veja o lugar da reunião.",
+      "learningObjective": "Lembrar Siló.",
+      "evidence": [
+        "Josué 22:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 22:16 a Deuteronômio 12:5–6?",
+      "verseRef": "Josué 22:16",
+      "passageA": {
+        "ref": "Josué 22:16"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 12:5–6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um lugar para o altar"
+        },
+        {
+          "id": "b",
+          "text": "Qualquer altar serve"
+        },
+        {
+          "id": "c",
+          "text": "Altar só em Gileade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "edificando um altar para vos rebelardes",
+      "feedbackCorrect": "O medo é altar rival ao lugar escolhido.",
+      "feedbackWrong": {
+        "b": "O elo é o lugar do culto.",
+        "c": "Há preocupação com altar."
+      },
+      "hint": "Pense no lugar único.",
+      "learningObjective": "Ligar a acusação a Deuteronômio.",
+      "evidence": [
+        "Josué 22:16",
+        "Deuteronômio 12:5–6"
+      ]
+    }
+  ]
+}

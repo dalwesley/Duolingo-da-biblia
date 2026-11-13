@@ -1,0 +1,50 @@
+{
+  "slug": "filemom-cap",
+  "title": "Filemom",
+  "description": "Filemom capítulo a capítulo: amor, comunhão e confiança no Senhor entre irmãos.",
+  "icon": "🤝",
+  "color": "#5D6D7E",
+  "order": 70,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Amor e confiança · cap. 1",
+      "icon": "zap",
+      "section": "Filemom",
+      "missions": [
+        {
+          "slug": "fmc-01-fe-que-se-torna",
+          "title": "Fé que se torna eficaz",
+          "subtitle": "Filemom 1:1–6",
+          "intro": "Paulo, prisioneiro, escreve a Filemom e agradece o amor e a fé dele.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Filemom 1:1–6",
+          "hookVerse": "Paulo, prisioneiro de Cristo Jesus, e o irmão Timóteo, ao amado Filemom, nosso colaborador, E à amada Áfia, e a Arquipo, nosso companheiro de lutas, e à igreja que está em tua casa:",
+          "hookNote": "A comunhão da fé se torna eficaz no conhecimento de todo o bem que há em nós por Cristo.",
+          "centralInsight": "A comunhão da fé se torna eficaz no conhecimento de todo o bem que há em nós por Cristo.",
+          "objective": "Viver a comunhão da fé"
+        },
+        {
+          "slug": "fmc-boss-1",
+          "title": "Travessia: Amor e confiança",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a fé e o amor que tornam a comunhão eficaz em Cristo.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Amor e confiança",
+          "hookVerse": "Revise a fé e o amor que tornam a comunhão eficaz em Cristo.",
+          "hookNote": "Revise a fé e o amor que tornam a comunhão eficaz em Cristo.",
+          "centralInsight": "A fé compartilhada produz o bem em Cristo Jesus",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

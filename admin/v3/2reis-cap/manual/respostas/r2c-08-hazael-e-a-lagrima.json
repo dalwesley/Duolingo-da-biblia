@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "2 Reis 8:7–12",
+    "passages": [
+      {
+        "ref": "2 Reis 8:7–15"
+      }
+    ],
+    "context": "Eliseu chega a Damasco enquanto Ben-Hadade está doente. Hazael vem perguntar se o rei sarará; o profeta vê o futuro cruel e chora.",
+    "keyword": "chorou",
+    "keywordGloss": "A lágrima de Eliseu diante do mal que Hazael fará a Israel.",
+    "focusQuestion": "Você consegue chorar o mal anunciado, mesmo quando ele ainda não aconteceu?",
+    "reflectionPrompts": [
+      "Pergunta do rei",
+      "Lágrima do profeta",
+      "Cobertor e trono"
+    ],
+    "facts": [
+      {
+        "text": "Eliseu chegou a Damasco, onde Ben-Hadade estava doente.",
+        "evidenceRef": "2 Reis 8:7",
+        "evidenceSpan": "Ben-Hadade, rei da Síria, se encontrava doente"
+      },
+      {
+        "text": "O rei manda Hazael perguntar se sarará da doença.",
+        "evidenceRef": "2 Reis 8:8",
+        "evidenceSpan": "pergunte ao Senhor por intermédio dele: Sararei eu desta doença?"
+      },
+      {
+        "text": "Eliseu diz para anunciar cura, porém o Senhor revelou que ele morrerá.",
+        "evidenceRef": "2 Reis 8:10",
+        "evidenceSpan": "Certamente, sararás. Porém o Senhor me revelou que ele morrerá"
+      },
+      {
+        "text": "Eliseu olhou para Hazael e chorou.",
+        "evidenceRef": "2 Reis 8:11",
+        "evidenceSpan": "chorou o homem de Deus"
+      },
+      {
+        "text": "Eliseu vê o mal que Hazael fará aos filhos de Israel.",
+        "evidenceRef": "2 Reis 8:12",
+        "evidenceSpan": "sei o mal que você fará aos filhos de Israel"
+      },
+      {
+        "text": "Hazael mata o rei com um cobertor molhado e reina em seu lugar.",
+        "evidenceRef": "2 Reis 8:15",
+        "evidenceSpan": "o estendeu sobre o rosto do rei até que morreu; e Hazael reinou em seu lugar"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "chorou",
+        "gloss": "A resposta do coração do profeta ao mal que o Senhor revela."
+      },
+      {
+        "term": "mal",
+        "gloss": "A violência futura de Hazael contra Israel."
+      },
+      {
+        "term": "revelou",
+        "gloss": "O Senhor mostra a Eliseu o que Hazael e a morte do rei envolvem."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Hazael consulta o homem de Deus",
+        "evidenceRef": "2 Reis 8:7–9"
+      },
+      {
+        "label": "Dupla palavra: sararás, porém morrerá",
+        "evidenceRef": "2 Reis 8:10"
+      },
+      {
+        "label": "Lágrima e anúncio do mal",
+        "evidenceRef": "2 Reis 8:11–13"
+      },
+      {
+        "label": "Hazael mata o rei e sobe ao trono",
+        "evidenceRef": "2 Reis 8:14–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Diga que sarará; porém o Senhor revelou que ele morrerá.",
+        "marker": "Porém",
+        "evidenceRef": "2 Reis 8:10"
+      },
+      {
+        "kind": "causa",
+        "text": "Eliseu chora porque sabe o mal que Hazael fará a Israel.",
+        "marker": "Porque",
+        "evidenceRef": "2 Reis 8:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "No dia seguinte Hazael mata o rei e reina em seu lugar.",
+        "marker": null,
+        "evidenceRef": "2 Reis 8:15"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 19:15",
+        "bridge": "Hazael já anunciado a Elias"
+      },
+      {
+        "ref": "Jeremias 9:1",
+        "bridge": "Profeta que chora o povo"
+      },
+      {
+        "ref": "Lucas 19:41",
+        "bridge": "Jesus chora sobre a cidade"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Eliseu mente ao rei sem razão: a doença o mataria sozinha.",
+        "why": "Ele distingue: a doença não mata; Hazael matará — e o Senhor revelou a morte."
+      },
+      {
+        "text": "Eliseu chora de medo pessoal diante de Hazael.",
+        "why": "Ele explica: chora pelo mal que Hazael fará aos filhos de Israel."
+      },
+      {
+        "text": "Hazael só transmite a mensagem e não toma o trono.",
+        "why": "No dia seguinte ele mata o rei e reina em seu lugar."
+      }
+    ],
+    "centralInsight": "O profeta vê o futuro cruel e chora: o Senhor revela, e o coração humano responde.",
+    "anchorQuestion": "Segundo 2 Reis 8:12, por que Eliseu chora diante de Hazael?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 8 —11, Eliseu olhou para Hazael e o homem de Deus chorou.",
+      "verseRef": "2 Reis 8:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "chorou o homem de Deus",
+      "feedbackCorrect": "O texto fecha o olhar intenso com a lágrima do profeta.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Veja o que Eliseu faz no fim do versículo.",
+      "learningObjective": "Observar a lágrima de Eliseu.",
+      "evidence": [
+        "2 Reis 8:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 8:15, toque o que Hazael estendeu sobre o rosto do rei.",
+      "verseRef": "2 Reis 8:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "seguinte"
+        },
+        {
+          "id": "b",
+          "text": "aconteceu"
+        },
+        {
+          "id": "c",
+          "text": "Hazael"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "aconteceu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar o cobertor.",
+      "evidence": [
+        "2 Reis 8:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 8:12, o que Eliseu diz saber sobre Hazael?",
+      "verseRef": "2 Reis 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O mal que fará aos filhos de Israel"
+        },
+        {
+          "id": "b",
+          "text": "Que ele curará Ben-Hadade"
+        },
+        {
+          "id": "c",
+          "text": "Que nunca será rei"
+        },
+        {
+          "id": "d",
+          "text": "Que voltará em paz a Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sei o mal que você fará aos filhos de Israel",
+      "feedbackCorrect": "A lágrima tem motivo: o mal futuro contra Israel.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a resposta à pergunta \"Por que chora?\".",
+      "learningObjective": "Observar o motivo da lágrima.",
+      "evidence": [
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 8:15 na ordem do texto.",
+      "verseRef": "2 Reis 8:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hazael tomou um cobertor, molhou-o em água"
+        },
+        {
+          "id": "b",
+          "text": "o estendeu sobre o rosto do rei até que morreu"
+        },
+        {
+          "id": "c",
+          "text": "e Hazael reinou em seu lugar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Hazael tomou um cobertor, molhou-o em água",
+      "feedbackCorrect": "Primeiro o cobertor, depois a morte, e então o trono.",
+      "feedbackWrong": {
+        "default": "Comece pelo cobertor; o reinado fecha o versículo."
+      },
+      "hint": "O versículo termina com quem reina.",
+      "learningObjective": "Reconhecer a sequência do golpe.",
+      "evidence": [
+        "2 Reis 8:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 8:11, o que fez o homem de Deus?",
+      "verseRef": "2 Reis 8:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "riu"
+        },
+        {
+          "id": "b",
+          "text": "chorou"
+        },
+        {
+          "id": "c",
+          "text": "fugiu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "chorou o homem de Deus",
+      "feedbackCorrect": "Depois do olhar intenso, o homem de Deus chorou.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a última ação do versículo.",
+      "learningObjective": "Lembrar a reação de Eliseu.",
+      "evidence": [
+        "2 Reis 8:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 8:12 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 8:12",
+      "passageA": {
+        "ref": "2 Reis 8:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O profeta chora porque já vê o mal que Hazael fará a Israel."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lágrima ante o mal futuro"
+        },
+        {
+          "id": "b",
+          "text": "Alegria com a violência"
+        },
+        {
+          "id": "c",
+          "text": "Indiferença ao povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque sei o mal que você fará aos filhos de Israel",
+      "feedbackCorrect": "A causa da lágrima é o mal anunciado contra Israel.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Veja a razão que Eliseu dá a Hazael.",
+      "learningObjective": "Ligar a lágrima ao mal revelado.",
+      "evidence": [
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 8 —10, Eliseu diz apenas que o rei morrerá da doença, sem qualquer outra palavra.",
+      "verseRef": "2 Reis 8:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Certamente, sararás. Porém o Senhor me revelou que ele morrerá",
+      "feedbackCorrect": "Há contraste: diga que sarará; porém o Senhor revelou que morrerá.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Repare na palavra que liga as duas frases.",
+      "learningObjective": "Compreender o contraste da dupla palavra.",
+      "evidence": [
+        "2 Reis 8:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 8:10, toque a palavra que marca o contraste entre sarar e morrer.",
+      "verseRef": "2 Reis 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "respondeu"
+        },
+        {
+          "id": "b",
+          "text": "Eliseu"
+        },
+        {
+          "id": "c",
+          "text": "diga"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Eliseu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "2 Reis 8:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 8:12 explica a lágrima de Eliseu?",
+      "verseRef": "2 Reis 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele chora porque conhece o mal futuro de Hazael"
+        },
+        {
+          "id": "b",
+          "text": "Ele chora por ter perdido o presente dos camelos"
+        },
+        {
+          "id": "c",
+          "text": "Ele chora de medo de Ben-Hadade"
+        },
+        {
+          "id": "d",
+          "text": "Ele chora porque Hazael se recusou a ouvir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque sei o mal que você fará aos filhos de Israel",
+      "feedbackCorrect": "A causa é explícita: o mal que Hazael fará a Israel.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a resposta que começa com \"Porque\".",
+      "learningObjective": "Relacionar lágrima e revelação do mal.",
+      "evidence": [
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena de Hazael?",
+      "verseRef": "2 Reis 8:10–11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hazael consulta o homem de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Dupla palavra: sararás, porém morrerá"
+        },
+        {
+          "id": "c",
+          "text": "Lágrima e anúncio do mal"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porém o Senhor me revelou que ele morrerá",
+      "feedbackCorrect": "Da consulta à palavra dupla, e então à lágrima que explica o futuro.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta; a lágrima vem depois da revelação."
+      },
+      "hint": "A lágrima não é o primeiro passo.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": [
+        "2 Reis 8:10",
+        "2 Reis 8:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 8:12, que palavra introduz a causa do choro?",
+      "verseRef": "2 Reis 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "Embora"
+        },
+        {
+          "id": "c",
+          "text": "Quando"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque sei o mal que você fará",
+      "feedbackCorrect": "\"Porque\" liga a lágrima ao mal que Hazael fará.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia a primeira palavra da resposta de Eliseu.",
+      "learningObjective": "Lembrar o marcador de causa.",
+      "evidence": [
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 8:12 a Jeremias 9:1?",
+      "verseRef": "2 Reis 8:12",
+      "passageA": {
+        "ref": "2 Reis 8:12"
+      },
+      "passageB": {
+        "ref": "Jeremias 9:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Profeta que chora o povo"
+        },
+        {
+          "id": "b",
+          "text": "Profeta indiferente ao juízo"
+        },
+        {
+          "id": "c",
+          "text": "Alegria com a queda de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque sei o mal que você fará aos filhos de Israel",
+      "evidence": [
+        "2 Reis 8:12",
+        "Jeremias 9:1"
+      ],
+      "feedbackCorrect": "Nos dois textos, o profeta chora o mal que cai sobre o povo.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a reação do profeta ao sofrimento do povo.",
+      "learningObjective": "Relacionar a lágrima de Eliseu à de Jeremias."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 8 —11–12, a lágrima de Eliseu responde ao mal futuro que o Senhor lhe revela sobre Hazael.",
+      "verseRef": "2 Reis 8:11–12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porque sei o mal que você fará aos filhos de Israel",
+      "feedbackCorrect": "O Senhor revela; o coração do profeta responde com lágrimas.",
+      "feedbackWrong": {
+        "false": "Releia o versículo com atenção."
+      },
+      "hint": "Una o choro à razão dada a Hazael.",
+      "learningObjective": "Interpretar a lágrima como resposta à revelação.",
+      "evidence": [
+        "2 Reis 8:11",
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 8:12, toque o trecho que sustenta o motivo do choro.",
+      "verseRef": "2 Reis 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "perguntou"
+        },
+        {
+          "id": "b",
+          "text": "Hazael"
+        },
+        {
+          "id": "c",
+          "text": "chora"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Hazael",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Sustentar a leitura do choro pelo mal revelado.",
+      "evidence": [
+        "2 Reis 8:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Reis 8:10–15 sustenta sobre Hazael?",
+      "verseRef": "2 Reis 8:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele ouve a palavra e depois toma o trono com violência"
+        },
+        {
+          "id": "b",
+          "text": "Ele só transmite a mensagem e some da história"
+        },
+        {
+          "id": "c",
+          "text": "Eliseu chora de medo pessoal sem motivo"
+        },
+        {
+          "id": "d",
+          "text": "A doença sozinha cumpre tudo sem Hazael"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Hazael reinou em seu lugar",
+      "feedbackCorrect": "Ele reporta a cura aparente e, no dia seguinte, mata e reina.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções.",
+        "d": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a mensagem de 8:14 com a ação de 8:15.",
+      "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+      "evidence": [
+        "2 Reis 8:14",
+        "2 Reis 8:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o choro do servo de Deus diante do juízo?",
+      "verseRef": "2 Reis 8:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eliseu chora o mal que Hazael fará"
+        },
+        {
+          "id": "b",
+          "text": "Jeremias deseja chorar pelo povo ferido"
+        },
+        {
+          "id": "c",
+          "text": "Jesus chora sobre Jerusalém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "chorou o homem de Deus",
+      "evidence": [
+        "2 Reis 8:11",
+        "Jeremias 9:1",
+        "Lucas 19:41"
+      ],
+      "feedbackCorrect": "A lágrima do profeta ecoa em Jeremias e em Jesus.",
+      "feedbackWrong": {
+        "default": "Siga: Eliseu, Jeremias e Jesus."
+      },
+      "hint": "Comece pela lágrima de Eliseu.",
+      "learningObjective": "Ver o choro profético num fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 8:10, que verbo mostra o que o Senhor fez a Eliseu?",
+      "verseRef": "2 Reis 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "escondeu"
+        },
+        {
+          "id": "b",
+          "text": "revelou"
+        },
+        {
+          "id": "c",
+          "text": "negou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Senhor me revelou que ele morrerá",
+      "feedbackCorrect": "O Senhor revela: a morte virá, ainda que a doença não mate.",
+      "feedbackWrong": {
+        "a": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Leia o que o Senhor fez na segunda frase.",
+      "learningObjective": "Lembrar o termo que carrega a revelação.",
+      "evidence": [
+        "2 Reis 8:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 8:11 a Lucas 19:41?",
+      "verseRef": "2 Reis 8:11",
+      "passageA": {
+        "ref": "2 Reis 8:11"
+      },
+      "passageB": {
+        "ref": "Lucas 19:41"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chorar o juízo que vem"
+        },
+        {
+          "id": "b",
+          "text": "Celebrar a queda da cidade"
+        },
+        {
+          "id": "c",
+          "text": "Calar diante do sofrimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "chorou o homem de Deus",
+      "evidence": [
+        "2 Reis 8:11",
+        "Lucas 19:41"
+      ],
+      "feedbackCorrect": "Eliseu e Jesus choram ao ver o juízo que se aproxima.",
+      "feedbackWrong": {
+        "b": "Volte ao texto e compare as opções.",
+        "c": "Volte ao texto e compare as opções."
+      },
+      "hint": "Compare a reação diante do juízo anunciado.",
+      "learningObjective": "Ligar a lágrima de Eliseu à de Jesus."
+    }
+  ]
+}

@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "1 Tessalonicenses 2:1–6",
+    "passages": [
+      {
+        "ref": "1 Tessalonicenses 2:1–6"
+      },
+      {
+        "ref": "1 Tessalonicenses 2:7–8"
+      }
+    ],
+    "context": "Paulo lembra Tessalônica de como anunciou o evangelho: sem engano nem bajulação, com ousadia e carinho de mãe.",
+    "keyword": "carinhosos",
+    "keywordGloss": "Como mãe que acaricia os filhos: o tom do ministério entre eles.",
+    "focusQuestion": "Você busca glória humana ou oferece a vida com o evangelho?",
+    "reflectionPrompts": [
+      "Sem bajulação",
+      "Como uma mãe",
+      "Oferecer a vida"
+    ],
+    "facts": [
+      {
+        "text": "A estada entre eles não foi infrutífera.",
+        "evidenceRef": "1 Tessalonicenses 2:1",
+        "evidenceSpan": "a nossa estada entre vocês não foi infrutífera"
+      },
+      {
+        "text": "Em Filipos sofreram e ainda assim anunciaram com ousadia.",
+        "evidenceRef": "1 Tessalonicenses 2:2",
+        "evidenceSpan": "tivemos ousadia em nosso Deus, para lhes anunciar o evangelho"
+      },
+      {
+        "text": "A exortação não vem de engano, impureza ou dolo.",
+        "evidenceRef": "1 Tessalonicenses 2:3",
+        "evidenceSpan": "não provém de engano, nem de impureza, nem se baseia em dolo"
+      },
+      {
+        "text": "Falam para agradar a Deus, não aos homens.",
+        "evidenceRef": "1 Tessalonicenses 2:4",
+        "evidenceSpan": "não para agradar aos homens, mas a Deus"
+      },
+      {
+        "text": "Não usaram bajulação nem pretexto para ganância.",
+        "evidenceRef": "1 Tessalonicenses 2:5",
+        "evidenceSpan": "nunca empregamos palavras de bajulação, nem usamos um pretexto para a ganância"
+      },
+      {
+        "text": "Foram carinhosos como mãe e prontos a oferecer a própria vida.",
+        "evidenceRef": "1 Tessalonicenses 2:7",
+        "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ousadia",
+        "gloss": "Coragem em Deus para anunciar apesar da luta."
+      },
+      {
+        "term": "carinhosos",
+        "gloss": "Tom maternal do ministério."
+      },
+      {
+        "term": "evangelho",
+        "gloss": "Mensagem confiada por Deus, não para bajular homens."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Estada frutífera apesar da luta",
+        "evidenceRef": "1 Tessalonicenses 2:1"
+      },
+      {
+        "label": "Exortação sem engano",
+        "evidenceRef": "1 Tessalonicenses 2:3"
+      },
+      {
+        "label": "Agradar a Deus, não homens",
+        "evidenceRef": "1 Tessalonicenses 2:4"
+      },
+      {
+        "label": "Carinho de mãe e oferta da vida",
+        "evidenceRef": "1 Tessalonicenses 2:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Aprovados por Deus, não falam para agradar homens.",
+        "marker": "mas",
+        "evidenceRef": "1 Tessalonicenses 2:4"
+      },
+      {
+        "kind": "causa",
+        "text": "A exortação não vem de engano.",
+        "marker": "Porque",
+        "evidenceRef": "1 Tessalonicenses 2:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por amor, prontos a oferecer a própria vida.",
+        "marker": "por isso",
+        "evidenceRef": "1 Tessalonicenses 2:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 16:22–24",
+        "bridge": "Sofrimento em Filipos"
+      },
+      {
+        "ref": "Gálatas 1:10",
+        "bridge": "Agradar a Deus"
+      },
+      {
+        "ref": "2 Coríntios 12:15",
+        "bridge": "Gastar-se pelos filhos"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O ministério apostólico buscava glória e ganância.",
+        "why": "Negam bajulação, ganância e glória dos homens."
+      },
+      {
+        "text": "Ousadia exclui carinho.",
+        "why": "Há ousadia e carinho de mãe no mesmo trecho."
+      },
+      {
+        "text": "Bastava o evangelho sem a oferta da vida.",
+        "why": "Estavam prontos a oferecer também as próprias vidas."
+      }
+    ],
+    "centralInsight": "Não buscamos glória humana: como mãe, damos a própria vida; como pai, exortamos a andar dignamente.",
+    "anchorQuestion": "Segundo 1 Tessalonicenses 2:7, como Paulo descreve o cuidado entre eles?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Tessalonicenses 2:7, Paulo diz que foram carinhosos como uma mãe.",
+      "verseRef": "1 Tessalonicenses 2:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe que acaricia seus próprios filhos",
+      "feedbackCorrect": "O tom maternal está explícito.",
+      "feedbackWrong": {
+        "false": "Releia a comparação com a mãe."
+      },
+      "hint": "Olhe a comparação.",
+      "learningObjective": "Observar o carinho maternal.",
+      "evidence": [
+        "1 Tessalonicenses 2:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 2:4, toque a quem querem agradar.",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "evangelho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "Agradam a Deus.",
+      "feedbackWrong": {
+        "b": "Homens são o contraste.",
+        "c": "Evangelho é o conteúdo."
+      },
+      "hint": "Procure o contraste.",
+      "learningObjective": "Identificar o alvo.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Tessalonicenses 2:5, o que nunca empregaram?",
+      "verseRef": "1 Tessalonicenses 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavras de bajulação nem pretexto para ganância"
+        },
+        {
+          "id": "b",
+          "text": "Ousadia para anunciar"
+        },
+        {
+          "id": "c",
+          "text": "Carinho como de mãe"
+        },
+        {
+          "id": "d",
+          "text": "Oferta da própria vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nunca empregamos palavras de bajulação, nem usamos um pretexto para a ganância",
+      "feedbackCorrect": "Sem bajulação nem ganância.",
+      "feedbackWrong": {
+        "b": "Ousadia está em 2:2.",
+        "c": "Carinho está em 2:7.",
+        "d": "Oferta está em 2:8."
+      },
+      "hint": "Leia o que nunca fizeram.",
+      "learningObjective": "Observar a integridade.",
+      "evidence": [
+        "1 Tessalonicenses 2:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Tessalonicenses 2:7 na ordem do texto.",
+      "verseRef": "1 Tessalonicenses 2:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fomos carinhosos entre vocês"
+        },
+        {
+          "id": "b",
+          "text": "como uma mãe"
+        },
+        {
+          "id": "c",
+          "text": "que acaricia seus próprios filhos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fomos carinhosos entre vocês, como uma mãe",
+      "feedbackCorrect": "Carinho e comparação.",
+      "feedbackWrong": {
+        "default": "Comece por Fomos carinhosos."
+      },
+      "hint": "Comece pelo carinho.",
+      "learningObjective": "Reconhecer 2:7.",
+      "evidence": [
+        "1 Tessalonicenses 2:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 2:2, tiveram ___ em nosso Deus para anunciar.",
+      "verseRef": "1 Tessalonicenses 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "ousadia"
+        },
+        {
+          "id": "b",
+          "text": "bajulação"
+        },
+        {
+          "id": "c",
+          "text": "ganância"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tivemos ousadia em nosso Deus",
+      "feedbackCorrect": "Ousadia apesar da luta.",
+      "feedbackWrong": {
+        "b": "Bajulação é negada.",
+        "c": "Ganância é negada."
+      },
+      "hint": "Veja o que tiveram.",
+      "learningObjective": "Lembrar a ousadia.",
+      "evidence": [
+        "1 Tessalonicenses 2:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Tessalonicenses 2:7 comunica que se liga a este contexto?",
+      "verseRef": "1 Tessalonicenses 2:7",
+      "passageA": {
+        "ref": "1 Tessalonicenses 2:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O ministério foi maternal, não explorador."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cuidado como de mãe"
+        },
+        {
+          "id": "b",
+          "text": "Busca de glória"
+        },
+        {
+          "id": "c",
+          "text": "Ministério frio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como uma mãe que acaricia seus próprios filhos",
+      "feedbackCorrect": "Tom maternal.",
+      "feedbackWrong": {
+        "b": "Negam busca de glória.",
+        "c": "Há carinho."
+      },
+      "hint": "Veja a comparação.",
+      "learningObjective": "Ligar ao carinho.",
+      "evidence": [
+        "1 Tessalonicenses 2:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Tessalonicenses 2:4, Paulo fala para agradar aos homens, não a Deus.",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "O contraste é o oposto.",
+      "feedbackWrong": {
+        "true": "Releia o mas: agradar a Deus."
+      },
+      "hint": "Repare no contraste.",
+      "learningObjective": "Compreender o alvo.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 2:4, toque a palavra que marca o contraste.",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "assim"
+        },
+        {
+          "id": "c",
+          "text": "corações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "Mas vira para Deus.",
+      "feedbackWrong": {
+        "b": "Assim introduz a aprovação.",
+        "c": "Deus sonda os corações."
+      },
+      "hint": "Procure a conjunção.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Tessalonicenses 2:8 se relaciona com o evangelho?",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oferecem evangelho e também a própria vida"
+        },
+        {
+          "id": "b",
+          "text": "Oferecem só discurso sem afeto"
+        },
+        {
+          "id": "c",
+          "text": "Guardam a vida e omitem o evangelho"
+        },
+        {
+          "id": "d",
+          "text": "Buscam glória dos ouvintes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+      "feedbackCorrect": "Evangelho e vida juntos.",
+      "feedbackWrong": {
+        "b": "Há oferta da vida.",
+        "c": "Há evangelho e vidas.",
+        "d": "Negam glória."
+      },
+      "hint": "Una não apenas e mas também.",
+      "learningObjective": "Relacionar mensagem e vida.",
+      "evidence": [
+        "1 Tessalonicenses 2:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 1 Tessalonicenses 2:1–7?",
+      "verseRef": "1 Tessalonicenses 2:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estada não infrutífera"
+        },
+        {
+          "id": "b",
+          "text": "Ousadia após sofrer"
+        },
+        {
+          "id": "c",
+          "text": "Carinho como de mãe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fomos carinhosos entre vocês",
+      "feedbackCorrect": "Fruto, ousadia e carinho.",
+      "feedbackWrong": {
+        "default": "Comece pela estada."
+      },
+      "hint": "Siga fruto → ousadia → mãe.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "1 Tessalonicenses 2:1–2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 2:4, Deus sonda os nossos ___.",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "corações"
+        },
+        {
+          "id": "b",
+          "text": "homens"
+        },
+        {
+          "id": "c",
+          "text": "engano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que sonda os nossos corações",
+      "feedbackCorrect": "O contraste termina com Deus, que sonda os corações.",
+      "feedbackWrong": {
+        "b": "Homens são quem não se busca agradar.",
+        "c": "Engano aparece antes; aqui o foco é o exame de Deus."
+      },
+      "hint": "Toque o que Deus sonda.",
+      "learningObjective": "Lembrar o marcador.",
+      "evidence": [
+        "1 Tessalonicenses 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Tessalonicenses 2:4 a Gálatas 1:10?",
+      "verseRef": "1 Tessalonicenses 2:4",
+      "passageA": {
+        "ref": "1 Tessalonicenses 2:4"
+      },
+      "passageB": {
+        "ref": "Gálatas 1:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Agradar a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Agradar homens"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar o evangelho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não para agradar aos homens, mas a Deus",
+      "feedbackCorrect": "Servo de Cristo agrada a Deus.",
+      "feedbackWrong": {
+        "b": "É o contraste.",
+        "c": "O evangelho é anunciado."
+      },
+      "hint": "Compare o alvo.",
+      "learningObjective": "Relacionar agradar a Deus.",
+      "evidence": [
+        "1 Tessalonicenses 2:4",
+        "Gálatas 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "1 Tessalonicenses 2:1–8 apresenta um ministério sem engano, sem glória humana e com oferta da vida.",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+      "feedbackCorrect": "Integridade e doação marcam o trecho.",
+      "feedbackWrong": {
+        "false": "Una 2:3–6 com 2:8."
+      },
+      "hint": "Una o que negam e o que oferecem.",
+      "learningObjective": "Interpretar o ministério.",
+      "evidence": [
+        "1 Tessalonicenses 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Tessalonicenses 2:8, toque o que oferecem além do evangelho.",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "nossas próprias vidas"
+        },
+        {
+          "id": "b",
+          "text": "evangelho"
+        },
+        {
+          "id": "c",
+          "text": "amados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas também nossas próprias vidas",
+      "feedbackCorrect": "Oferecem a vida.",
+      "feedbackWrong": {
+        "b": "O evangelho já está na oferta; o acréscimo é outro.",
+        "c": "Amados descreve o resultado, não o que oferecem."
+      },
+      "hint": "Procure mas também.",
+      "learningObjective": "Sustentar a oferta.",
+      "evidence": [
+        "1 Tessalonicenses 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Tessalonicenses 2:1–8 sustenta?",
+      "verseRef": "1 Tessalonicenses 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ministério sem glória humana, com ousadia e carinho"
+        },
+        {
+          "id": "b",
+          "text": "Ministério movido por ganância"
+        },
+        {
+          "id": "c",
+          "text": "Ousadia sem qualquer afeto"
+        },
+        {
+          "id": "d",
+          "text": "Evangelho só para agradar ouvintes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não buscamos a glória dos homens",
+      "feedbackCorrect": "Sem glória humana; com ousadia e carinho.",
+      "feedbackWrong": {
+        "b": "Ganância é negada.",
+        "c": "Há carinho de mãe.",
+        "d": "Agradam a Deus."
+      },
+      "hint": "Una o que negam e o tom maternal.",
+      "learningObjective": "Escolher a leitura.",
+      "evidence": [
+        "1 Tessalonicenses 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do ministério?",
+      "verseRef": "1 Tessalonicenses 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sofrem em Filipos"
+        },
+        {
+          "id": "b",
+          "text": "Anunciam com ousadia"
+        },
+        {
+          "id": "c",
+          "text": "Oferecem evangelho e vida"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tivemos ousadia em nosso Deus",
+      "feedbackCorrect": "Sofrimento, ousadia e doação.",
+      "feedbackWrong": {
+        "default": "Comece pelo sofrimento."
+      },
+      "hint": "Siga luta → ousadia → oferta.",
+      "learningObjective": "Ver o encadeamento.",
+      "evidence": [
+        "1 Tessalonicenses 2:2",
+        "1 Tessalonicenses 2:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Tessalonicenses 2:6, não buscamos a ___ dos homens.",
+      "verseRef": "1 Tessalonicenses 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "glória"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não buscamos a glória dos homens",
+      "feedbackCorrect": "Sem busca de glória humana.",
+      "feedbackWrong": {
+        "b": "Não é fé.",
+        "c": "Não é paz."
+      },
+      "hint": "O que não buscam.",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "1 Tessalonicenses 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Tessalonicenses 2:8 a 2 Coríntios 12:15?",
+      "verseRef": "1 Tessalonicenses 2:8",
+      "passageA": {
+        "ref": "1 Tessalonicenses 2:8"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 12:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Gastar-se pelos filhos"
+        },
+        {
+          "id": "b",
+          "text": "Buscar glória"
+        },
+        {
+          "id": "c",
+          "text": "Evitar o afeto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "prontos a oferecer não apenas o evangelho de Deus, mas também nossas próprias vidas",
+      "feedbackCorrect": "Doação pelos amados.",
+      "feedbackWrong": {
+        "b": "Negam glória.",
+        "c": "Há desejo e amor."
+      },
+      "hint": "Compare a oferta da vida.",
+      "learningObjective": "Ligar a doação pastoral.",
+      "evidence": [
+        "1 Tessalonicenses 2:8",
+        "2 Coríntios 12:15"
+      ]
+    }
+  ]
+}

@@ -533,7 +533,7 @@ class _BibleLibrary extends StatelessWidget {
 
   Widget _testament(BuildContext context, bool nt) {
     const otEnd = BibleService.oldTestamentCount;
-    final accent = Appearance.of(context).chrome;
+    final accent = Appearance.of(context).place;
     final id = nt ? 'nt' : 'ot';
     final open = _sectionOpen(id);
     final groups = [
@@ -973,7 +973,7 @@ class _PlanCard extends StatelessWidget {
             CinematicIcon(
               glyph: CinematicGlyph.calendar,
               size: AppMetrics.leadingIcon,
-              accent: a.chrome,
+              accent: a.place,
             ),
             const SizedBox(width: AppSpace.md),
             Expanded(

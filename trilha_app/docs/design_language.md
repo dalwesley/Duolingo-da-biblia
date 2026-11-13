@@ -44,7 +44,7 @@ são matéria-prima do tema, não se usam direto em tela nova.
 | Aba ativa (shell) | fill escuro + rim do `accent` | `AppSegmentedTabs(accent:)` — presença do bloco |
 | Idle (cena) | `nightElevated` + texto claro | placas de resposta no céu escuro |
 | Acerto na cena | `AppRoles.action` (ouro) | placa da resposta certa |
-| Presença / vida | `AppRoles.presence` (`#51AEF0`, azul da nuvem) | acertos, "estudou hoje", borda da próxima cena, lâmpada acesa |
+| Presença / vida | `AppRoles.presence` (`#51AEF0`, azul da nuvem) | acertos, "caminhou hoje", borda da próxima cena, lâmpada acesa |
 | Lâmpadas (vidas) | `AppRoles.presence` | acesas = a luz da nuvem |
 | Sequência | `AppRoles.streak` (o mesmo ouro) | a chama, o mesmo metal do botão |
 | Risco / erro | `AppRoles.error` | flash da resposta errada na cena; ação destrutiva (sair, apagar) |
@@ -266,6 +266,7 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Grupo de cenas dentro da trilha (módulo) | **etapa** ("Etapa II") | cena (colide com a unidade) |
 | Aba das coleções (AT, NT, Temas, Vida Cristã, Teologia) | **Explorar** | Trilhas (como nome da aba), Mapas, Caminhos, Portais |
 | Card da aba Explorar (AT, NT, Temas…), que junta trilhas | **coleção** ("a coleção Novo Testamento"); em frase solta, o próprio nome ("no Novo Testamento") | área, seção, caminho, reino, mapa, trilha (é o nível de dentro) |
+| Coleção da Bíblia com os pontos altos de cada livro e as trilhas de vários livros | **Panorama** (EN Overview); o livro capítulo a capítulo fica em AT/NT; a trilha entra pelo campo `collection: panorama` | Visão geral, Resumo, Destaques |
 | Grupo de coleções na aba (Bíblia, Temas, Vida Cristã, Teologia e as criadas no painel) | **porta** (só no painel e no código; na fala com a pessoa, o próprio nome) | linha, prateleira, card |
 | Onde a pessoa está | **Novo Testamento › Mateus › Cena 3** (coleção › trilha › cena), igual no app e no painel | prateleira, linha, fase ou etapa no endereço |
 | Abertura da cena (título, verso âncora, nota, frase Hoje) | **entrada** | intro, preparo |
@@ -286,6 +287,8 @@ como nome de coisa: não é área, não é progresso salvo, não é assinatura.
 | Nível da caravana | **nível**; nome da árvore sozinho ("Você subiu para Oliveira"). Sobe com 3 **semanas firmes** (5 cenas novas cada), nunca desce | "Caravana da Oliveira", divisão, rebaixar |
 | Par 1:1 | **companhia**; a pessoa é **companheiro(a)** | dupla, parceria, par, amizade, amigo |
 | Grupo de estudo | **grupo** | sala |
+| Fez qualquer cena no dia (lista do grupo, companhia) | **caminhou** ("caminhou hoje", "3 dias sem caminhar") | estudou (fica para o estudo do grupo) |
+| Fez o que o grupo marcou (cena da semana, dia do propósito) | **fez o estudo** / **feito** | caminhou |
 | Peer challenge (mesma cena até domingo) | **desafio** — é disputa: ganhar, perder, empate | esquina, PvP; "não é duelo" |
 | Boss / revisão de módulo | **travessia** (shipped na UI; títulos de conteúdo ainda podem dizer “Desafio: …”) | reusar “desafio” sozinho |
 | Desafio litúrgico | **desafio da estação** | só “desafio” |

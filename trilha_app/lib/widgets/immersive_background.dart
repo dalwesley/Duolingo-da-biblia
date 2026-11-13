@@ -189,7 +189,7 @@ class GlassCard extends StatelessWidget {
         gradient: LinearGradient(
           begin: AppLight.keyFrom,
           end: AppLight.keyTo,
-          colors: [Color.lerp(fill, Colors.white, 0.06)!, fill],
+          colors: [Color.lerp(fill, Colors.white, 0.1)!, fill],
           stops: const [0, 0.45],
         ),
         border: Border.all(

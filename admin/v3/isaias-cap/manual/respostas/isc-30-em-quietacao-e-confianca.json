@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Isaías 30:15–21",
+    "passages": [
+      {
+        "ref": "Isaías 30:15–21"
+      }
+    ],
+    "context": "Judá prefere fuga a cavalo à quietação no Senhor. Mesmo assim Ele aguarda para ter misericórdia e promete voz atrás: este é o caminho.",
+    "keyword": "confiança",
+    "keywordGloss": "Junto com a tranquilidade, é onde está a força que o povo rejeitou.",
+    "focusQuestion": "Onde você ainda escolhe fuga veloz em vez de converter-se e sossegar no Senhor?",
+    "reflectionPrompts": [
+      "Quietação rejeitada",
+      "Misericórdia que aguarda",
+      "Este é o caminho"
+    ],
+    "facts": [
+      {
+        "text": "A salvação está em converter-se e sossegar; a força, na tranquilidade e na confiança.",
+        "evidenceRef": "Isaías 30:15",
+        "evidenceSpan": "Em vos converterdes e em sossegardes, está a vossa salvação"
+      },
+      {
+        "text": "O povo não quis essa quietação.",
+        "evidenceRef": "Isaías 30:15",
+        "evidenceSpan": "mas não quisestes"
+      },
+      {
+        "text": "Preferiram fugir montados em cavalos; por isso fugirão.",
+        "evidenceRef": "Isaías 30:16",
+        "evidenceSpan": "antes fugiremos montados em cavalos; por isso, fugireis"
+      },
+      {
+        "text": "O Senhor aguardará para ter misericórdia, porque é Deus de justiça.",
+        "evidenceRef": "Isaías 30:18",
+        "evidenceSpan": "o Senhor aguardará para ter misericórdia de vós"
+      },
+      {
+        "text": "O povo habitará em Sião; Ele responderá ao clamor.",
+        "evidenceRef": "Isaías 30:19",
+        "evidenceSpan": "ele se compadecerá de ti, à voz do teu clamor"
+      },
+      {
+        "text": "Os ouvidos ouvirão atrás a palavra: este é o caminho, anda por ele.",
+        "evidenceRef": "Isaías 30:21",
+        "evidenceSpan": "Este é o caminho, anda por ele"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "confiança",
+        "gloss": "Junto com a tranquilidade, lugar da força que o povo recusou."
+      },
+      {
+        "term": "misericórdia",
+        "gloss": "O que o Senhor aguarda para mostrar, apesar da rejeição."
+      },
+      {
+        "term": "caminho",
+        "gloss": "Direção que a voz atrás indica, sem desvio à direita ou à esquerda."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Salvação na quietação; povo rejeita",
+        "evidenceRef": "Isaías 30:15"
+      },
+      {
+        "label": "Fuga a cavalo e pânico multiplicado",
+        "evidenceRef": "Isaías 30:16–17"
+      },
+      {
+        "label": "Senhor aguarda para ter misericórdia",
+        "evidenceRef": "Isaías 30:18–19"
+      },
+      {
+        "label": "Mestres visíveis e voz do caminho",
+        "evidenceRef": "Isaías 30:20–21"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A salvação está na quietação, mas eles não quiseram.",
+        "marker": "mas",
+        "evidenceRef": "Isaías 30:15"
+      },
+      {
+        "kind": "resultado",
+        "text": "Querem fugir a cavalo; por isso fugirão.",
+        "marker": "por isso",
+        "evidenceRef": "Isaías 30:16"
+      },
+      {
+        "kind": "causa",
+        "text": "Ele aguarda para ter misericórdia porque é Deus de justiça.",
+        "marker": "porque",
+        "evidenceRef": "Isaías 30:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:10",
+        "bridge": "Aquietai-vos e conhecei a Deus"
+      },
+      {
+        "ref": "Mateus 11:28–29",
+        "bridge": "Descanso em Cristo"
+      },
+      {
+        "ref": "João 10:27",
+        "bridge": "Ovelhas ouvem a voz"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A força está na velocidade da fuga e nos cavalos.",
+        "why": "O texto põe a força na tranquilidade e na confiança; a fuga é juízo."
+      },
+      {
+        "text": "Depois da rejeição, o Senhor não aguarda mais misericórdia.",
+        "why": "Isaías 30:18 diz que Ele aguardará para ter misericórdia."
+      },
+      {
+        "text": "A voz atrás deixa o povo escolher qualquer caminho.",
+        "why": "A palavra indica um caminho, sem desviar à direita nem à esquerda."
+      }
+    ],
+    "centralInsight": "Os vossos ouvidos ouvirão a palavra atrás de vós: este é o caminho, andai nele.",
+    "anchorQuestion": "Segundo Isaías 30:15 e 30:21, onde está a salvação e o que a voz dirá?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 30:15, o povo aceitou de imediato a quietação e a confiança propostas pelo Senhor.",
+      "verseRef": "Isaías 30:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não quisestes",
+      "feedbackCorrect": "O versículo fecha com a rejeição: mas não quisestes.",
+      "feedbackWrong": {
+        "true": "Releia o fim: \"mas não quisestes\"."
+      },
+      "hint": "Olhe a última cláusula do versículo.",
+      "learningObjective": "Observar a rejeição da quietação.",
+      "evidence": [
+        "Isaías 30:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 30:21, toque o que a voz diz que é o caminho.",
+      "verseRef": "Isaías 30:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "caminho"
+        },
+        {
+          "id": "b",
+          "text": "ouvidos"
+        },
+        {
+          "id": "c",
+          "text": "esquerda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Este é o caminho, anda por ele",
+      "feedbackCorrect": "A voz aponta: este é o caminho, anda por ele.",
+      "feedbackWrong": {
+        "b": "Os ouvidos ouvem; o que a voz nomeia é o caminho.",
+        "c": "Esquerda é o que se deve evitar; o centro é o caminho."
+      },
+      "hint": "Leia a palavra que a voz declara.",
+      "learningObjective": "Identificar o caminho indicado pela voz.",
+      "evidence": [
+        "Isaías 30:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 30:15, onde está a força do povo?",
+      "verseRef": "Isaías 30:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Na tranquilidade e na confiança"
+        },
+        {
+          "id": "b",
+          "text": "Nos cavalos ligeiros"
+        },
+        {
+          "id": "c",
+          "text": "Na fuga diante de um só"
+        },
+        {
+          "id": "d",
+          "text": "No mastro no cimo do monte"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na tranquilidade e na confiança, está a vossa força",
+      "feedbackCorrect": "A força está na tranquilidade e na confiança, não na fuga.",
+      "feedbackWrong": {
+        "b": "Os cavalos são a escolha rejeitada no versículo seguinte.",
+        "c": "A fuga é o juízo descrito em 30:17.",
+        "d": "O mastro é imagem do remanescente isolado após a fuga."
+      },
+      "hint": "Leia onde o texto localiza a força.",
+      "learningObjective": "Observar onde está a força segundo o Senhor.",
+      "evidence": [
+        "Isaías 30:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 30:15 na ordem do texto.",
+      "verseRef": "Isaías 30:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em vos converterdes e em sossegardes, está a vossa salvação"
+        },
+        {
+          "id": "b",
+          "text": "na tranquilidade e na confiança, está a vossa força"
+        },
+        {
+          "id": "c",
+          "text": "mas não quisestes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas não quisestes",
+      "feedbackCorrect": "Salvação, força e rejeição nesta ordem.",
+      "feedbackWrong": {
+        "default": "Comece pela salvação; a rejeição fecha o versículo."
+      },
+      "hint": "O \"mas\" vem por último.",
+      "learningObjective": "Reconhecer a sequência de Isaías 30:15.",
+      "evidence": [
+        "Isaías 30:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 30:18, o que o Senhor aguardará para ter?",
+      "verseRef": "Isaías 30:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "cavalos"
+        },
+        {
+          "id": "c",
+          "text": "fuga"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor aguardará para ter misericórdia de vós",
+      "feedbackCorrect": "Ele aguarda para ter misericórdia e se compadecer.",
+      "feedbackWrong": {
+        "b": "Cavalos são a escolha do povo, não o que o Senhor aguarda dar.",
+        "c": "A fuga é juízo; Ele aguarda para ter misericórdia."
+      },
+      "hint": "O que Ele aguarda para ter?",
+      "learningObjective": "Lembrar a misericórdia que o Senhor aguarda mostrar.",
+      "evidence": [
+        "Isaías 30:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 30:15 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 30:15",
+      "passageA": {
+        "ref": "Isaías 30:15",
+        "text": "na tranquilidade e na confiança, está a vossa força"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O povo prefere fuga a cavalo à quietação que o Senhor oferece."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Força na quietação"
+        },
+        {
+          "id": "b",
+          "text": "Força na fuga"
+        },
+        {
+          "id": "c",
+          "text": "Salvação nos perseguidores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na tranquilidade e na confiança, está a vossa força",
+      "feedbackCorrect": "A força está na tranquilidade e na confiança, não na fuga.",
+      "feedbackWrong": {
+        "b": "A fuga é o que eles escolheram e o juízo que virá.",
+        "c": "Os perseguidores serão velozes; não são salvação."
+      },
+      "hint": "Compare a oferta do Senhor com a escolha do povo.",
+      "learningObjective": "Ligar a quietação ao contraste com a fuga.",
+      "evidence": [
+        "Isaías 30:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 30:16, o desejo de fugir a cavalo resulta em fuga, segundo a palavra do Senhor.",
+      "verseRef": "Isaías 30:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "antes fugiremos montados em cavalos; por isso, fugireis",
+      "feedbackCorrect": "O \"por isso\" marca o resultado: quem escolhe fuga, fugirá.",
+      "feedbackWrong": {
+        "false": "Releia: \"por isso, fugireis\" responde ao plano de fugir."
+      },
+      "hint": "Procure a expressão \"por isso\".",
+      "learningObjective": "Compreender o resultado da escolha pela fuga.",
+      "evidence": [
+        "Isaías 30:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 30:16, toque a expressão que marca o resultado da escolha pelos cavalos.",
+      "verseRef": "Isaías 30:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "por isso"
+        },
+        {
+          "id": "b",
+          "text": "cavalos"
+        },
+        {
+          "id": "c",
+          "text": "ligeiros"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por isso, fugireis",
+      "feedbackCorrect": "\"Por isso\" liga o plano de fuga ao juízo da fuga.",
+      "feedbackWrong": {
+        "b": "Cavalos são o meio escolhido; o marcador do resultado é \"por isso\".",
+        "c": "\"Ligeiros\" descreve os cavalos; o resultado vem em \"por isso\"."
+      },
+      "hint": "É a expressão que introduz \"fugireis\".",
+      "learningObjective": "Reconhecer o marcador de resultado em 30:16.",
+      "evidence": [
+        "Isaías 30:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 30:18 se relaciona com a rejeição de Isaías 30:15?",
+      "verseRef": "Isaías 30:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesmo rejeitado, o Senhor aguarda para ter misericórdia"
+        },
+        {
+          "id": "b",
+          "text": "A rejeição cancela qualquer misericórdia futura"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor elogia a fuga a cavalo"
+        },
+        {
+          "id": "d",
+          "text": "A justiça impede toda compaixão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor aguardará para ter misericórdia de vós",
+      "feedbackCorrect": "Depois do \"não quisestes\", Ele ainda aguarda para se compadecer.",
+      "feedbackWrong": {
+        "b": "O texto afirma que Ele aguardará para ter misericórdia.",
+        "c": "A fuga é juízo, não elogio.",
+        "d": "Ele é Deus de justiça e, por isso, se compadece dos que esperam nele."
+      },
+      "hint": "Leia o que o Senhor faz em 30:18.",
+      "learningObjective": "Relacionar rejeição e misericórdia que aguarda.",
+      "evidence": [
+        "Isaías 30:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 30:15–18?",
+      "verseRef": "Isaías 30:15–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quietação oferecida e rejeitada"
+        },
+        {
+          "id": "b",
+          "text": "Fuga a cavalo e pânico"
+        },
+        {
+          "id": "c",
+          "text": "Senhor aguarda para ter misericórdia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor aguardará para ter misericórdia de vós",
+      "feedbackCorrect": "Oferta, rejeição com fuga e misericórdia que ainda aguarda.",
+      "feedbackWrong": {
+        "default": "Comece pela quietação; a misericórdia fecha o movimento."
+      },
+      "hint": "Siga a ordem: oferta, fuga, misericórdia.",
+      "learningObjective": "Compreender o movimento da rejeição à misericórdia.",
+      "evidence": [
+        "Isaías 30:15–18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 30:18, que tipo de Deus o Senhor é, segundo o texto?",
+      "verseRef": "Isaías 30:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "justiça"
+        },
+        {
+          "id": "b",
+          "text": "fuga"
+        },
+        {
+          "id": "c",
+          "text": "cavalo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor é um Deus de justiça",
+      "feedbackCorrect": "Porque é Deus de justiça, Ele se compadece e abençoa quem espera nele.",
+      "feedbackWrong": {
+        "b": "Fuga descreve o juízo do povo, não o caráter de Deus aqui.",
+        "c": "Cavalo é a escolha humana rejeitada."
+      },
+      "hint": "Deus de quê?",
+      "learningObjective": "Compreender o vínculo entre justiça e misericórdia.",
+      "evidence": [
+        "Isaías 30:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 30:15 a Salmos 46:10?",
+      "verseRef": "Isaías 30:15",
+      "passageA": {
+        "ref": "Isaías 30:15",
+        "text": "Em vos converterdes e em sossegardes, está a vossa salvação"
+      },
+      "passageB": {
+        "ref": "Salmos 46:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aquietai-vos e conhecei a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Fugi nos cavalos"
+        },
+        {
+          "id": "c",
+          "text": "Confiai na velocidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Em vos converterdes e em sossegardes, está a vossa salvação",
+      "feedbackCorrect": "Nos dois textos, aquietar-se diante de Deus é o caminho.",
+      "feedbackWrong": {
+        "b": "A fuga é a escolha rejeitada em Isaías.",
+        "c": "A força está na tranquilidade, não na velocidade."
+      },
+      "hint": "Compare a quietação nos dois textos.",
+      "learningObjective": "Relacionar a quietação de Isaías ao Salmo.",
+      "evidence": [
+        "Isaías 30:15",
+        "Salmos 46:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 30:21 apresenta a voz atrás como licença para desviar à direita ou à esquerda.",
+      "verseRef": "Isaías 30:21",
+      "correctOptionId": "false",
+      "evidenceSpan": "sem te desviares nem para a direita nem para a esquerda",
+      "feedbackCorrect": "A voz indica o caminho e proíbe o desvio.",
+      "feedbackWrong": {
+        "true": "O fim do versículo veda desvio à direita ou à esquerda."
+      },
+      "hint": "Leia o que a voz exige sobre o caminho.",
+      "learningObjective": "Interpretar a voz como guia sem desvio.",
+      "evidence": [
+        "Isaías 30:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 30:19, toque o trecho que mostra a resposta de Deus ao clamor.",
+      "verseRef": "Isaías 30:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "te responderá"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém"
+        },
+        {
+          "id": "c",
+          "text": "chorarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ouvindo-a, te responderá",
+      "feedbackCorrect": "Ele se compadece à voz do clamor e responde.",
+      "feedbackWrong": {
+        "b": "Jerusalém é o lugar da habitação; a resposta está no fim.",
+        "c": "\"Não chorarás mais\" é promessa; a resposta ao clamor é \"te responderá\"."
+      },
+      "hint": "O que Ele faz ao ouvir o clamor?",
+      "learningObjective": "Sustentar que o Senhor responde ao clamor.",
+      "evidence": [
+        "Isaías 30:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 30:15–21 sustenta sobre a salvação?",
+      "verseRef": "Isaías 30:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quietação no Senhor e voz que guia o caminho"
+        },
+        {
+          "id": "b",
+          "text": "Salvação pela velocidade dos cavalos"
+        },
+        {
+          "id": "c",
+          "text": "Misericórdia impossível após qualquer rejeição"
+        },
+        {
+          "id": "d",
+          "text": "Caminho livre para qualquer desvio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Em vos converterdes e em sossegardes, está a vossa salvação",
+      "feedbackCorrect": "Salvação na quietação e voz que diz: este é o caminho.",
+      "feedbackWrong": {
+        "b": "A fuga a cavalo é juízo, não salvação.",
+        "c": "Ele aguarda para ter misericórdia.",
+        "d": "A voz veda desvio à direita ou à esquerda."
+      },
+      "hint": "Una 30:15 e 30:21.",
+      "learningObjective": "Escolher a interpretação sustentada sobre quietação e caminho.",
+      "evidence": [
+        "Isaías 30:15–21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o descanso que começa em Isaías 30:15?",
+      "verseRef": "Isaías 30:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor oferece salvação na quietação"
+        },
+        {
+          "id": "b",
+          "text": "Jesus chama os cansados ao seu descanso"
+        },
+        {
+          "id": "c",
+          "text": "As ovelhas ouvem a voz do pastor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Em vos converterdes e em sossegardes, está a vossa salvação",
+      "feedbackCorrect": "A quietação de Isaías aponta para o descanso e a voz de Cristo.",
+      "feedbackWrong": {
+        "default": "Siga: Isaías 30:15, Mateus 11:28–29 e João 10:27."
+      },
+      "hint": "Siga a ordem: Isaías, Evangelhos.",
+      "learningObjective": "Ver a quietação como fio até a voz de Cristo.",
+      "evidence": [
+        "Isaías 30:15",
+        "Mateus 11:28–29",
+        "João 10:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 30:15, o que está na tranquilidade e na confiança?",
+      "verseRef": "Isaías 30:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "força"
+        },
+        {
+          "id": "b",
+          "text": "fuga"
+        },
+        {
+          "id": "c",
+          "text": "pânico"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na tranquilidade e na confiança, está a vossa força",
+      "feedbackCorrect": "A força está na tranquilidade e na confiança.",
+      "feedbackWrong": {
+        "b": "A fuga é a escolha rejeitada.",
+        "c": "O pânico descreve o juízo da fuga em 30:17."
+      },
+      "hint": "O que está na tranquilidade e na confiança?",
+      "learningObjective": "Lembrar o termo que carrega a força do povo.",
+      "evidence": [
+        "Isaías 30:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 30:21 a João 10:27?",
+      "verseRef": "Isaías 30:21",
+      "passageA": {
+        "ref": "Isaías 30:21",
+        "text": "os teus ouvidos ouvirão atrás de ti a palavra"
+      },
+      "passageB": {
+        "ref": "João 10:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ovelhas ouvem a voz"
+        },
+        {
+          "id": "b",
+          "text": "Voz que se cala"
+        },
+        {
+          "id": "c",
+          "text": "Caminho sem direção"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os teus ouvidos ouvirão atrás de ti a palavra",
+      "feedbackCorrect": "Nos dois textos, o povo de Deus ouve a voz que guia.",
+      "feedbackWrong": {
+        "b": "A voz fala e indica o caminho.",
+        "c": "A voz define o caminho sem desvio."
+      },
+      "hint": "Compare quem ouve a voz.",
+      "learningObjective": "Ligar a voz atrás à voz do pastor.",
+      "evidence": [
+        "Isaías 30:21",
+        "João 10:27"
+      ]
+    }
+  ]
+}

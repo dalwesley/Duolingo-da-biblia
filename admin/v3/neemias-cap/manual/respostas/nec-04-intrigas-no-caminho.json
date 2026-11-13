@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Neemias 6:1–6",
+    "passages": [
+      {
+        "ref": "Neemias 6:1–6"
+      },
+      {
+        "ref": "Neemias 6:7–9"
+      }
+    ],
+    "context": "Cena de Intrigas no caminho: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Deus",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Intrigas no caminho",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Sucedendo.",
+        "evidenceRef": "Neemias 6:1",
+        "evidenceSpan": "Sucedendo"
+      },
+      {
+        "text": "Sambalate.",
+        "evidenceRef": "Neemias 6:2",
+        "evidenceSpan": "Sambalate"
+      },
+      {
+        "text": "Enviei.",
+        "evidenceRef": "Neemias 6:3",
+        "evidenceSpan": "Enviei"
+      },
+      {
+        "text": "E me enviaram o mesmo pedido quatro vezes.",
+        "evidenceRef": "Neemias 6:4",
+        "evidenceSpan": "E me enviaram o mesmo pedido quatro vezes"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Neemias 6:5",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Neemias 6:6",
+        "evidenceSpan": "E"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Sucedendo",
+        "gloss": "Termo que carrega o sentido desta cena."
+      },
+      {
+        "term": "isso",
+        "gloss": "Termo que carrega o sentido desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sucedendo isso ao ouvirem sambalate tobias",
+        "evidenceRef": "Neemias 6:1"
+      },
+      {
+        "label": "Sambalate e gesém enviaram uma mensagem",
+        "evidenceRef": "Neemias 6:2"
+      },
+      {
+        "label": "Enviei mensageiros a eles para dizer",
+        "evidenceRef": "Neemias 6:3"
+      },
+      {
+        "label": "E me enviaram o mesmo pedido",
+        "evidenceRef": "Neemias 6:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"porém\".",
+        "marker": "porém",
+        "evidenceRef": "Neemias 6:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Neemias 6:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"por isso\".",
+        "marker": "por isso",
+        "evidenceRef": "Neemias 6:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 127:1",
+        "bridge": "Senhor edifica a casa"
+      },
+      {
+        "ref": "Josué 1:9",
+        "bridge": "Sede fortes e corajosos"
+      },
+      {
+        "ref": "2 Crônicas 7:14",
+        "bridge": "Povo que se humilha"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Estou fazendo uma grande obra: não posso descer. Ó Deus, fortalece as minhas mãos.",
+    "anchorQuestion": "O que Neemias 6:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Neemias 6:1, o texto inclui Sucedendo.",
+      "verseRef": "Neemias 6:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 6:1 afirma.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Neemias 6:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Neemias 6:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sucedendo"
+        },
+        {
+          "id": "b",
+          "text": "isso"
+        },
+        {
+          "id": "c",
+          "text": "ouvirem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "O versículo destaca Sucedendo.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Neemias 6:3, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 6:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enviei"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enviei",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 6:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Neemias 6:2 na ordem do texto.",
+      "verseRef": "Neemias 6:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sambalate e Gesém enviaram"
+        },
+        {
+          "id": "b",
+          "text": "uma mensagem dizendo"
+        },
+        {
+          "id": "c",
+          "text": "encontra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sambalate e Gesém enviaram",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Neemias 6:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Neemias 6:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 6:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "enviaram"
+        },
+        {
+          "id": "b",
+          "text": "Sucedendo"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "enviaram",
+      "feedbackCorrect": "A palavra do versículo é enviaram.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 6:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Neemias 6:1 comunica que se liga a este contexto.",
+      "verseRef": "Neemias 6:1",
+      "passageA": {
+        "ref": "Neemias 6:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Intrigas no caminho: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Neemias 6:4, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Neemias 6:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "porém",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 6:4 afirma.",
+      "evidence": [
+        "Neemias 6:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Neemias 6:4, toque a palavra que marca a relação no texto.",
+      "verseRef": "Neemias 6:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "enviaram"
+        },
+        {
+          "id": "c",
+          "text": "mesmo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém",
+      "feedbackCorrect": "O versículo destaca porém.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 6:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Neemias 6:4, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 6:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E me enviaram o mesmo pedido quatro vezes",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 6:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Neemias 6:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sucedendo isso ao ouvirem sambalate tobias"
+        },
+        {
+          "id": "b",
+          "text": "Sambalate e gesém enviaram uma mensagem"
+        },
+        {
+          "id": "c",
+          "text": "Enviei mensageiros a eles para dizer"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Neemias 6:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 6:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enviei"
+        },
+        {
+          "id": "b",
+          "text": "Sucedendo"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enviei",
+      "feedbackCorrect": "A palavra do versículo é Enviei.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 6:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Neemias 6:1 a Salmos 127:1.",
+      "verseRef": "Neemias 6:1",
+      "passageA": {
+        "ref": "Neemias 6:1"
+      },
+      "passageB": {
+        "ref": "Salmos 127:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor edifica a casa"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Neemias 6:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porque",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 6:9 afirma.",
+      "evidence": [
+        "Neemias 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Neemias 6:6, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Neemias 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "estava"
+        },
+        {
+          "id": "b",
+          "text": "escrito"
+        },
+        {
+          "id": "c",
+          "text": "nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estava",
+      "feedbackCorrect": "O versículo destaca estava.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Neemias 6:5, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 6:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 6:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Neemias 6:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Neemias 6:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 6:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Sucedendo"
+        },
+        {
+          "id": "c",
+          "text": "isso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A palavra do versículo é Então.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 6:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Neemias 6:1 a Josué 1:9.",
+      "verseRef": "Neemias 6:1",
+      "passageA": {
+        "ref": "Neemias 6:1"
+      },
+      "passageB": {
+        "ref": "Josué 1:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sede fortes e corajosos"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sucedendo",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Neemias 6:1"
+      ]
+    }
+  ]
+}

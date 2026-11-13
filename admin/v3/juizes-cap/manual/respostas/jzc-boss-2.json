@@ -1,0 +1,925 @@
+{
+  "study": {
+    "passageRef": "Juízes 7:3–7",
+    "passages": [
+      {
+        "ref": "Juízes 6:11–24"
+      },
+      {
+        "ref": "Juízes 7:3–14"
+      },
+      {
+        "ref": "Juízes 8:22–28"
+      },
+      {
+        "ref": "Juízes 9:7–15"
+      }
+    ],
+    "context": "Esta Travessia revisa Gideão e o espinheiro: chamado, trezentos, recusa do reinado, éfode e parábola.",
+    "keyword": "trezentos",
+    "keywordGloss": "Número que mostra que a vitória é do Senhor.",
+    "focusQuestion": "Onde você precisa confiar no Senhor sem depender do número nem do trono?",
+    "reflectionPrompts": [
+      "Homem valoroso",
+      "Trezentos",
+      "Espinheiro aceita"
+    ],
+    "facts": [
+      {
+        "text": "O anjo chama Gideão homem valoroso.",
+        "evidenceRef": "Juízes 6:12",
+        "evidenceSpan": "homem valoroso"
+      },
+      {
+        "text": "Com trezentos o Senhor livrará.",
+        "evidenceRef": "Juízes 7:7",
+        "evidenceSpan": "Com estes trezentos homens"
+      },
+      {
+        "text": "Gideão diz que o Senhor dominará.",
+        "evidenceRef": "Juízes 8:23",
+        "evidenceSpan": "o SENHOR dominará sobre vocês"
+      },
+      {
+        "text": "O éfode virou laço.",
+        "evidenceRef": "Juízes 8:27",
+        "evidenceSpan": "isso se tornou um laço"
+      },
+      {
+        "text": "O espinheiro aceita reinado.",
+        "evidenceRef": "Juízes 9:14",
+        "evidenceSpan": "disseram ao espinheiro"
+      },
+      {
+        "text": "O espinheiro ameaça fogo.",
+        "evidenceRef": "Juízes 9:15",
+        "evidenceSpan": "que saia fogo do espinheiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "valoroso",
+        "gloss": "Como o Senhor chama Gideão."
+      },
+      {
+        "term": "éfode",
+        "gloss": "Objeto que virou laço em Ofra."
+      },
+      {
+        "term": "espinheiro",
+        "gloss": "Quem aceita reinado sem fruto."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado de Gideão",
+        "evidenceRef": "Juízes 6:11–16"
+      },
+      {
+        "label": "Trezentos",
+        "evidenceRef": "Juízes 7:3–7"
+      },
+      {
+        "label": "Recusa e éfode",
+        "evidenceRef": "Juízes 8:22–27"
+      },
+      {
+        "label": "Parábola do espinheiro",
+        "evidenceRef": "Juízes 9:7–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porquanto eu hei de ser contigo.",
+        "marker": "Porquanto",
+        "evidenceRef": "Juízes 6:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Pedem domínio; porém Gideão recusa.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 8:23"
+      },
+      {
+        "kind": "contraste",
+        "text": "Pedem; porém a oliveira recusa.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 9:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Zacarias 4:6",
+        "bridge": "Não por força"
+      },
+      {
+        "ref": "1 Samuel 8:7",
+        "bridge": "A mim me rejeitaram"
+      },
+      {
+        "ref": "Mateus 7:16",
+        "bridge": "Pelos frutos os conhecereis"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A vitória depende do número.",
+        "why": "Trezentos bastam ao Senhor."
+      },
+      {
+        "text": "Gideão aceita dinastia.",
+        "why": "O Senhor dominará."
+      },
+      {
+        "text": "Toda árvore aceita reinado.",
+        "why": "Só o espinheiro aceita."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 7:7, com quantos o Senhor livrará?",
+    "centralInsight": "O Senhor livra com poucos; reinado humano sem fruto destrói"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 7:7, o Senhor livrará com os trezentos.",
+      "verseRef": "Juízes 7:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Com estes trezentos homens que lamberam a água, eu vos livrarei",
+      "feedbackCorrect": "Trezentos.",
+      "feedbackWrong": {
+        "false": "O texto fixa o número."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Observar os trezentos.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 6:12, toque como o anjo chama Gideão.",
+      "verseRef": "Juízes 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "valoroso"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "anjo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem valoroso",
+      "feedbackCorrect": "Valoroso.",
+      "feedbackWrong": {
+        "b": "Senhor está contigo.",
+        "c": "Anjo aparece."
+      },
+      "hint": "Quantos ficam?",
+      "learningObjective": "Identificar trezentos.",
+      "evidence": [
+        "Juízes 6:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 8:23, quem dominará?",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor"
+        },
+        {
+          "id": "b",
+          "text": "O filho de Gideão"
+        },
+        {
+          "id": "c",
+          "text": "O espinheiro"
+        },
+        {
+          "id": "d",
+          "text": "Midiã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "O Senhor.",
+      "feedbackWrong": {
+        "b": "Não o filho.",
+        "c": "Não o espinheiro.",
+        "d": "Não Midiã."
+      },
+      "hint": "Leia o fim.",
+      "learningObjective": "Reconhecer o reinado.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 7:7 na ordem do texto.",
+      "verseRef": "Juízes 7:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com estes trezentos homens que lamberam a água"
+        },
+        {
+          "id": "b",
+          "text": "eu vos livrarei"
+        },
+        {
+          "id": "c",
+          "text": "entregarei os midianitas em suas mãos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eu vos livrarei",
+      "feedbackCorrect": "Trezentos, livramento e entrega.",
+      "feedbackWrong": {
+        "default": "Comece pelos trezentos."
+      },
+      "hint": "O que entrega?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 7:7, a quem o Senhor entregará?",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "midianitas"
+        },
+        {
+          "id": "b",
+          "text": "filisteus"
+        },
+        {
+          "id": "c",
+          "text": "moabitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entregarei os midianitas",
+      "feedbackCorrect": "Midianitas.",
+      "feedbackWrong": {
+        "b": "Não são filisteus.",
+        "c": "Não são moabitas."
+      },
+      "hint": "Veja o resultado.",
+      "learningObjective": "Lembrar laço.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 9:14 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 9:14",
+      "passageA": {
+        "ref": "Juízes 9:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Só o espinheiro aceita o reinado que as frutíferas recusam."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espinheiro aceita reinado"
+        },
+        {
+          "id": "b",
+          "text": "Oliveira aceita"
+        },
+        {
+          "id": "c",
+          "text": "Sem pedido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disseram ao espinheiro: Vem tu e reina sobre nós",
+      "feedbackCorrect": "Pedido ao espinheiro.",
+      "feedbackWrong": {
+        "b": "Oliveira recusa.",
+        "c": "Há pedido."
+      },
+      "hint": "A quem pedem?",
+      "learningObjective": "Ligar parábola e poder.",
+      "evidence": [
+        "Juízes 9:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 9:15, toque quem fala às árvores.",
+      "verseRef": "Juízes 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "espinheiro"
+        },
+        {
+          "id": "b",
+          "text": "sombra"
+        },
+        {
+          "id": "c",
+          "text": "fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse o espinheiro às árvores",
+      "feedbackCorrect": "Espinheiro.",
+      "feedbackWrong": {
+        "b": "Sombra é a oferta.",
+        "c": "Fogo é a ameaça."
+      },
+      "hint": "A quem falam?",
+      "learningObjective": "Identificar oliveira.",
+      "evidence": [
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 8:23 na ordem do texto.",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não dominarei sobre vocês"
+        },
+        {
+          "id": "b",
+          "text": "nem meu filho dominará sobre vocês"
+        },
+        {
+          "id": "c",
+          "text": "o SENHOR dominará sobre vocês"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "Recusa, filho e Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa."
+      },
+      "hint": "Quem domina?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 6:16, Gideão ferirá Midiã porque o Senhor será com ele.",
+      "verseRef": "Juízes 6:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porquanto eu hei de ser contigo",
+      "feedbackCorrect": "Causa da vitória.",
+      "feedbackWrong": {
+        "false": "O Porquanto liga presença e vitória."
+      },
+      "hint": "Leia o Porquanto.",
+      "learningObjective": "Ver a causa.",
+      "evidence": [
+        "Juízes 6:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 6:16, toque o marcador de causa.",
+      "verseRef": "Juízes 6:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porquanto"
+        },
+        {
+          "id": "b",
+          "text": "midianitas"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porquanto eu hei de ser contigo",
+      "feedbackCorrect": "Porquanto.",
+      "feedbackWrong": {
+        "b": "Midianitas são o alvo.",
+        "c": "Homem fecha a imagem."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Juízes 6:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 8:23 faz?",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedem domínio; porém Gideão recusa"
+        },
+        {
+          "id": "b",
+          "text": "Aceita; porém o Senhor some"
+        },
+        {
+          "id": "c",
+          "text": "Sem pedido; porém há trono"
+        },
+        {
+          "id": "d",
+          "text": "Foge; porém Midiã louva"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém Gideão lhes disse",
+      "feedbackCorrect": "Contraste da recusa.",
+      "feedbackWrong": {
+        "b": "Há recusa.",
+        "c": "Há Senhor.",
+        "d": "Há pedido."
+      },
+      "hint": "Leia o Porém.",
+      "learningObjective": "Compreender o contraste.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "Juízes 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado de Gideão"
+        },
+        {
+          "id": "b",
+          "text": "Trezentos"
+        },
+        {
+          "id": "c",
+          "text": "Recusa e éfode"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "homem valoroso",
+      "feedbackCorrect": "Chamado, redução e laço.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado."
+      },
+      "hint": "O que fecha o éfode?",
+      "learningObjective": "Ordenar o bloco",
+      "evidence": [
+        "Juízes 6:12",
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 7:4, complete: Ainda há povo ___.",
+      "verseRef": "Juízes 7:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "demais"
+        },
+        {
+          "id": "b",
+          "text": "ausente"
+        },
+        {
+          "id": "c",
+          "text": "único"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ainda há povo demais",
+      "feedbackCorrect": "Demais.",
+      "feedbackWrong": {
+        "b": "Não é ausente.",
+        "c": "Não é único."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar demais.",
+      "evidence": [
+        "Juízes 7:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 7:7 a Zacarias 4:6?",
+      "verseRef": "Juízes 7:7",
+      "passageA": {
+        "ref": "Juízes 7:7"
+      },
+      "passageB": {
+        "ref": "Zacarias 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não por força"
+        },
+        {
+          "id": "b",
+          "text": "Só por número"
+        },
+        {
+          "id": "c",
+          "text": "Sem livramento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos livrarei",
+      "feedbackCorrect": "Livramento divino.",
+      "feedbackWrong": {
+        "b": "Não só número.",
+        "c": "Há livramento."
+      },
+      "hint": "Compare a origem.",
+      "learningObjective": "Ligar a Zacarias.",
+      "evidence": [
+        "Juízes 7:7",
+        "Zacarias 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 9:9, toque o que a oliveira não deixaria.",
+      "verseRef": "Juízes 9:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "óleo"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "homens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deixaria eu o meu óleo",
+      "feedbackCorrect": "Óleo.",
+      "feedbackWrong": {
+        "b": "Deus estima o óleo.",
+        "c": "Homens também."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 9:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene até o espinheiro.",
+      "verseRef": "Juízes 9:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oliveira recusa"
+        },
+        {
+          "id": "b",
+          "text": "Videira recusa"
+        },
+        {
+          "id": "c",
+          "text": "Espinheiro aceita"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "disseram ao espinheiro: Vem tu e reina sobre nós",
+      "feedbackCorrect": "Recusas e aceitação.",
+      "feedbackWrong": {
+        "default": "Comece pela oliveira."
+      },
+      "hint": "Quem aceita?",
+      "learningObjective": "Ordenar a parábola",
+      "evidence": [
+        "Juízes 9:9",
+        "Juízes 9:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 8:27, confessar o Senhor como rei torna o éfode inofensivo.",
+      "verseRef": "Juízes 8:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "isso se tornou um laço",
+      "feedbackCorrect": "O éfode virou laço.",
+      "feedbackWrong": {
+        "true": "Laço para a casa."
+      },
+      "hint": "Leia o resultado.",
+      "learningObjective": "Avaliar a contradição.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 8:27, toque o que Gideão fez.",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "éfode"
+        },
+        {
+          "id": "b",
+          "text": "Ofra"
+        },
+        {
+          "id": "c",
+          "text": "laço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Gideão fez com isso um éfode",
+      "feedbackCorrect": "Éfode.",
+      "feedbackWrong": {
+        "b": "Ofra é a cidade.",
+        "c": "Laço é o resultado."
+      },
+      "hint": "De onde sai o fogo?",
+      "learningObjective": "Identificar o espinheiro.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une redução e reinado?",
+      "verseRef": "Juízes 7:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com poucos o Senhor livra; reinado humano sem fruto destrói"
+        },
+        {
+          "id": "b",
+          "text": "Mais gente garante glória"
+        },
+        {
+          "id": "c",
+          "text": "O espinheiro é modelo"
+        },
+        {
+          "id": "d",
+          "text": "O éfode prova fidelidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu vos livrarei",
+      "feedbackCorrect": "Vitória do Senhor.",
+      "feedbackWrong": {
+        "b": "Há redução.",
+        "c": "Há laço.",
+        "d": "Há parábola."
+      },
+      "hint": "Una trezentos e espinheiro.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 7:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do bloco.",
+      "verseRef": "Juízes 9:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor reduz e livra"
+        },
+        {
+          "id": "b",
+          "text": "Gideão recusa e faz éfode"
+        },
+        {
+          "id": "c",
+          "text": "Espinheiro ameaça fogo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que saia fogo do espinheiro",
+      "feedbackCorrect": "Livramento, laço e fogo.",
+      "feedbackWrong": {
+        "default": "Comece pela redução."
+      },
+      "hint": "O que o fogo ameaça?",
+      "learningObjective": "Encadear o bloco",
+      "evidence": [
+        "Juízes 7:7",
+        "Juízes 9:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 6:15, complete: eu o ___ na casa de meu pai.",
+      "verseRef": "Juízes 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "menor"
+        },
+        {
+          "id": "b",
+          "text": "maior"
+        },
+        {
+          "id": "c",
+          "text": "único"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu o menor na casa de meu pai",
+      "feedbackCorrect": "Menor.",
+      "feedbackWrong": {
+        "b": "Não é maior.",
+        "c": "Não é único."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar menor.",
+      "evidence": [
+        "Juízes 6:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 9:15 a Mateus 7:16?",
+      "verseRef": "Juízes 9:15",
+      "passageA": {
+        "ref": "Juízes 9:15"
+      },
+      "passageB": {
+        "ref": "Mateus 7:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pelos frutos os conhecereis"
+        },
+        {
+          "id": "b",
+          "text": "Sombra basta"
+        },
+        {
+          "id": "c",
+          "text": "Fogo é fruto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que saia fogo do espinheiro",
+      "feedbackCorrect": "Sem fruto bom.",
+      "feedbackWrong": {
+        "b": "Sombra não basta.",
+        "c": "Fogo não é fruto."
+      },
+      "hint": "Compare o fruto.",
+      "learningObjective": "Ligar a Mateus.",
+      "evidence": [
+        "Juízes 9:15",
+        "Mateus 7:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 7:6, toque o número dos que lamberam.",
+      "verseRef": "Juízes 7:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "trezentos"
+        },
+        {
+          "id": "b",
+          "text": "mão"
+        },
+        {
+          "id": "c",
+          "text": "água"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "foi de trezentos homens",
+      "feedbackCorrect": "Trezentos.",
+      "feedbackWrong": {
+        "b": "Mão à boca.",
+        "c": "Água é o teste."
+      },
+      "hint": "Como o chama?",
+      "learningObjective": "Tocar valoroso.",
+      "evidence": [
+        "Juízes 7:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene fé e laço.",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confessa o Senhor como rei"
+        },
+        {
+          "id": "b",
+          "text": "Faz o éfode"
+        },
+        {
+          "id": "c",
+          "text": "Laço alcança a casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "Confissão, éfode e laço.",
+      "feedbackWrong": {
+        "default": "Comece pela confissão."
+      },
+      "hint": "O que alcança a casa?",
+      "learningObjective": "Encadear fé e laço",
+      "evidence": [
+        "Juízes 8:23",
+        "Juízes 8:27"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,925 @@
+{
+  "study": {
+    "passageRef": "Cantares 8:7–14",
+    "passages": [
+      {
+        "ref": "Cantares 5:2–8"
+      },
+      {
+        "ref": "Cantares 6:1–9"
+      },
+      {
+        "ref": "Cantares 7:6–13"
+      },
+      {
+        "ref": "Cantares 8:7–14"
+      }
+    ],
+    "context": "Esta Travessia revisa o bloco da busca e do selo: atraso e procura, escolha de uma, convite mútuo e amor maduro que ainda diz vem.",
+    "keyword": "permanece",
+    "keywordGloss": "O amor da aliança busca, escolhe e permanece.",
+    "focusQuestion": "Onde você precisa buscar, escolher de novo ou permanecer pedindo vem?",
+    "reflectionPrompts": [
+      "Sair à procura",
+      "Escolher uma",
+      "Ainda dizer vem"
+    ],
+    "facts": [
+      {
+        "text": "A voz do amado bate pedindo: Abre-me.",
+        "evidenceRef": "Cantares 5:2",
+        "evidenceSpan": "Abre-me, minha irmã, querida minha"
+      },
+      {
+        "text": "Ela abriu, mas ele já se retirara; buscou e não encontrou.",
+        "evidenceRef": "Cantares 5:6",
+        "evidenceSpan": "Abri ao meu amado, mas ele já se retirara e tinha ido embora"
+      },
+      {
+        "text": "Entre muitas, uma é a minha pomba, a minha imaculada.",
+        "evidenceRef": "Cantares 6:9",
+        "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada"
+      },
+      {
+        "text": "Nas vinhas ela promete: ali te darei o meu amor.",
+        "evidenceRef": "Cantares 7:12",
+        "evidenceSpan": "ali te darei o meu amor"
+      },
+      {
+        "text": "As muitas águas não poderiam apagar esse amor.",
+        "evidenceRef": "Cantares 8:7",
+        "evidenceSpan": "As muitas águas não poderiam apagar esse amor"
+      },
+      {
+        "text": "Ela se declara muro e ainda pede: vem depressa.",
+        "evidenceRef": "Cantares 8:10",
+        "evidenceSpan": "Sou um muro, e meus seios são como torres"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "amado",
+        "gloss": "O amado buscado, louvado e chamado a vir."
+      },
+      {
+        "term": "uma",
+        "gloss": "A escolha exclusiva da aliança."
+      },
+      {
+        "term": "muro",
+        "gloss": "Maturidade que ainda deseja a presença."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Atraso, ausência e procura",
+        "evidenceRef": "Cantares 5:2–8"
+      },
+      {
+        "label": "Entre muitas, uma é escolhida",
+        "evidenceRef": "Cantares 6:8–9"
+      },
+      {
+        "label": "O convite mútuo nas vinhas",
+        "evidenceRef": "Cantares 7:10–12"
+      },
+      {
+        "label": "Amor inapagável e vem depressa",
+        "evidenceRef": "Cantares 8:7–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Porque ela atrasou, ao abrir ele já se havia retirado.",
+        "marker": "mas",
+        "evidenceRef": "Cantares 5:6"
+      },
+      {
+        "kind": "contraste",
+        "text": "Há muitas rainhas, mas uma é a pomba.",
+        "marker": "Mas",
+        "evidenceRef": "Cantares 6:8–9"
+      },
+      {
+        "kind": "propósito",
+        "text": "Elas vão às vinhas para ali dar o amor.",
+        "marker": "ali",
+        "evidenceRef": "Cantares 7:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 3:20",
+        "bridge": "Eis que estou à porta"
+      },
+      {
+        "ref": "Romanos 8:38–39",
+        "bridge": "Nada separa do amor"
+      },
+      {
+        "ref": "Apocalipse 22:17",
+        "bridge": "O Espírito e a noiva dizem"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Quem ama nunca hesita nem precisa buscar.",
+        "why": "O bloco mostra atraso real e procura ativa."
+      },
+      {
+        "text": "O amor da aliança trata todos os vínculos como iguais.",
+        "why": "Há escolha explícita de uma."
+      },
+      {
+        "text": "Maturidade apaga o desejo da presença.",
+        "why": "O livro fecha com vem depressa."
+      }
+    ],
+    "centralInsight": "O amor da aliança busca, escolhe e permanece",
+    "anchorQuestion": "Segundo Cantares 6:9, quantas são a pomba imaculada?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 6:9, uma é a minha pomba, a minha imaculada.",
+      "verseRef": "Cantares 6:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada",
+      "feedbackCorrect": "Entre muitas, ele escolhe uma.",
+      "feedbackWrong": {
+        "false": "Releia 6:9: uma é a pomba."
+      },
+      "hint": "Veja a palavra depois de Mas.",
+      "learningObjective": "Observar a escolha de uma.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 5:2, toque o pedido à porta.",
+      "verseRef": "Cantares 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abre-me"
+        },
+        {
+          "id": "b",
+          "text": "orvalho"
+        },
+        {
+          "id": "c",
+          "text": "noite"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abre-me, minha irmã, querida minha",
+      "feedbackCorrect": "O pedido é Abre-me.",
+      "feedbackWrong": {
+        "b": "Orvalho descreve a cabeça.",
+        "c": "Noite fecha a descrição."
+      },
+      "hint": "Ouça o que a voz pede.",
+      "learningObjective": "Identificar o pedido de abertura.",
+      "evidence": [
+        "Cantares 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 7:12, o que ela dará nas vinhas?",
+      "verseRef": "Cantares 7:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O meu amor"
+        },
+        {
+          "id": "b",
+          "text": "Os guardas"
+        },
+        {
+          "id": "c",
+          "text": "A liteira"
+        },
+        {
+          "id": "d",
+          "text": "Os escudos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "Ela dará o seu amor.",
+      "feedbackWrong": {
+        "b": "Guardas estão em 5:7.",
+        "c": "Liteira está no bloco anterior.",
+        "d": "Escudos estão em 4:4."
+      },
+      "hint": "Leia o fim de 7:12.",
+      "learningObjective": "Reconhecer a oferta do amor.",
+      "evidence": [
+        "Cantares 7:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 6:9 na ordem do texto.",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas uma é a minha pomba"
+        },
+        {
+          "id": "b",
+          "text": "a minha imaculada"
+        },
+        {
+          "id": "c",
+          "text": "a única de sua mãe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada, a única de sua mãe",
+      "feedbackCorrect": "Uma → imaculada → única.",
+      "feedbackWrong": {
+        "default": "Comece por Mas uma; a mãe fecha."
+      },
+      "hint": "Siga pomba → imaculada → única.",
+      "learningObjective": "Seguir a ordem da escolha.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 8:10, o que ela declara ser?",
+      "verseRef": "Cantares 8:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "muro"
+        },
+        {
+          "id": "b",
+          "text": "porta"
+        },
+        {
+          "id": "c",
+          "text": "rio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sou um muro",
+      "feedbackCorrect": "Ela declara ser muro.",
+      "feedbackWrong": {
+        "b": "Porta aparece na hipótese de 8:9.",
+        "c": "Rios aparecem em 8:7."
+      },
+      "hint": "Veja a primeira afirmação.",
+      "learningObjective": "Lembrar a declaração do muro.",
+      "evidence": [
+        "Cantares 8:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 6:9 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 6:9",
+      "passageA": {
+        "ref": "Cantares 6:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amor da aliança busca, escolhe e permanece."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Escolha de uma só"
+        },
+        {
+          "id": "b",
+          "text": "Igualdade de todas"
+        },
+        {
+          "id": "c",
+          "text": "Recusa de nomear"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "O \"Mas uma\" marca a escolha.",
+      "feedbackWrong": {
+        "b": "Há contraste com a multidão.",
+        "c": "Há nomeação clara."
+      },
+      "hint": "Veja a palavra Mas.",
+      "learningObjective": "Ligar o contexto à escolha.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 8:14, toque o pedido final.",
+      "verseRef": "Cantares 8:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vem depressa"
+        },
+        {
+          "id": "b",
+          "text": "cervo"
+        },
+        {
+          "id": "c",
+          "text": "montes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "O pedido final é Vem depressa.",
+      "feedbackWrong": {
+        "b": "Cervo é a comparação.",
+        "c": "Montes são o cenário."
+      },
+      "hint": "Ouça as primeiras palavras.",
+      "learningObjective": "Tocar o vem final.",
+      "evidence": [
+        "Cantares 8:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Ordene a ausência de Cantares 5:6.",
+      "verseRef": "Cantares 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abri ao meu amado"
+        },
+        {
+          "id": "b",
+          "text": "mas ele já se retirara"
+        },
+        {
+          "id": "c",
+          "text": "Busquei-o, mas não o encontrei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Abri ao meu amado, mas ele já se retirara",
+      "feedbackCorrect": "Abrir → ausência → busca.",
+      "feedbackWrong": {
+        "default": "Comece por Abri; a busca fecha."
+      },
+      "hint": "Siga abrir → retirar → buscar.",
+      "learningObjective": "Ordenar abertura e procura.",
+      "evidence": [
+        "Cantares 5:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 5:6, ao abrir, ela encontrou o amado ainda à porta.",
+      "verseRef": "Cantares 5:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele já se retirara e tinha ido embora",
+      "feedbackCorrect": "Ele já se retirara quando ela abriu.",
+      "feedbackWrong": {
+        "true": "Releia 5:6: ele já se retirara."
+      },
+      "hint": "Veja o que aconteceu ao abrir.",
+      "learningObjective": "Ver a ausência após a hesitação.",
+      "evidence": [
+        "Cantares 5:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 5:6, toque o verbo da procura.",
+      "verseRef": "Cantares 5:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Busquei-o"
+        },
+        {
+          "id": "b",
+          "text": "Abri"
+        },
+        {
+          "id": "c",
+          "text": "falou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Busquei-o, mas não o encontrei",
+      "feedbackCorrect": "A procura está em Busquei-o.",
+      "feedbackWrong": {
+        "b": "Abrir vem antes.",
+        "c": "Ele falou; ela buscou."
+      },
+      "hint": "Ache o verbo da busca.",
+      "learningObjective": "Tocar o verbo da procura.",
+      "evidence": [
+        "Cantares 5:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 7:10–12 estabelece entre saudade e convite?",
+      "verseRef": "Cantares 7:10–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "A saudade dele encontra resposta no convite dela"
+        },
+        {
+          "id": "b",
+          "text": "A saudade anula qualquer encontro"
+        },
+        {
+          "id": "c",
+          "text": "Não há convite no texto"
+        },
+        {
+          "id": "d",
+          "text": "Ela recusa sair ao campo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele tem saudades de mim",
+      "feedbackCorrect": "Saudade e Vem se respondem.",
+      "feedbackWrong": {
+        "b": "Há convite ao encontro.",
+        "c": "Há Vem e saiamos.",
+        "d": "Ela propõe o campo."
+      },
+      "hint": "Ligue 7:10 a 7:11.",
+      "learningObjective": "Relacionar saudade e convite.",
+      "evidence": [
+        "Cantares 7:10–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco 5–8.",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atraso, ausência e procura"
+        },
+        {
+          "id": "b",
+          "text": "Entre muitas, uma é escolhida"
+        },
+        {
+          "id": "c",
+          "text": "Amor inapagável e vem depressa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "Buscar → escolher → permanecer.",
+      "feedbackWrong": {
+        "default": "Comece pela procura; o vem fecha."
+      },
+      "hint": "Siga buscar → escolher → permanecer.",
+      "learningObjective": "Ordenar a estrutura do bloco.",
+      "evidence": [
+        "Cantares 5:6",
+        "Cantares 6:9",
+        "Cantares 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 7:10, o que ele tem dela?",
+      "verseRef": "Cantares 7:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "saudades"
+        },
+        {
+          "id": "b",
+          "text": "ódio"
+        },
+        {
+          "id": "c",
+          "text": "medo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele tem saudades de mim",
+      "feedbackCorrect": "Ele tem saudades dela.",
+      "feedbackWrong": {
+        "b": "O texto diz saudades.",
+        "c": "O texto diz saudades."
+      },
+      "hint": "Veja a segunda metade.",
+      "learningObjective": "Lembrar as saudades.",
+      "evidence": [
+        "Cantares 7:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 5:2 a Apocalipse 3:20?",
+      "verseRef": "Cantares 5:2",
+      "passageA": {
+        "ref": "Cantares 5:2"
+      },
+      "passageB": {
+        "ref": "Apocalipse 3:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que estou à porta"
+        },
+        {
+          "id": "b",
+          "text": "Fugir da voz"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar o chamado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eis a voz do meu amado batendo",
+      "feedbackCorrect": "Nos dois textos alguém bate e pede abertura.",
+      "feedbackWrong": {
+        "b": "Há pedido de abertura.",
+        "c": "A voz chama."
+      },
+      "hint": "Compare a porta e o pedido.",
+      "learningObjective": "Ligar a batida à porta.",
+      "evidence": [
+        "Cantares 5:2",
+        "Apocalipse 3:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 8:7, toque o que as águas não poderiam fazer.",
+      "verseRef": "Cantares 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "apagar esse amor"
+        },
+        {
+          "id": "b",
+          "text": "rios"
+        },
+        {
+          "id": "c",
+          "text": "bens"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não poderiam apagar esse amor",
+      "feedbackCorrect": "As águas não apagam esse amor.",
+      "feedbackWrong": {
+        "b": "Rios falam de afogar.",
+        "c": "Bens tentam comprar."
+      },
+      "hint": "Veja o verbo após poderiam.",
+      "learningObjective": "Tocar o amor inapagável.",
+      "evidence": [
+        "Cantares 8:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o caminho de Cantares 8:10–14.",
+      "verseRef": "Cantares 8:10–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela se declara muro"
+        },
+        {
+          "id": "b",
+          "text": "A vinha está ao seu dispor"
+        },
+        {
+          "id": "c",
+          "text": "Ainda pede: vem depressa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Muro → vinha → vem.",
+      "feedbackWrong": {
+        "default": "Comece pelo muro; o vem fecha."
+      },
+      "hint": "Siga muro → vinha → vem.",
+      "learningObjective": "Ordenar maturidade e desejo.",
+      "evidence": [
+        "Cantares 8:10–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 8:10–14 ensina que maturidade no amor significa não desejar mais a presença.",
+      "verseRef": "Cantares 8:13–14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Vem depressa, meu amado",
+      "feedbackCorrect": "Mesmo muro, ela ainda pede a vinda.",
+      "feedbackWrong": {
+        "true": "O texto termina com desejo da presença."
+      },
+      "hint": "Veja 8:13–14.",
+      "learningObjective": "Rejeitar a leitura sem desejo.",
+      "evidence": [
+        "Cantares 8:13–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 6:9, toque o marcador do contraste.",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas uma"
+        },
+        {
+          "id": "b",
+          "text": "donzelas"
+        },
+        {
+          "id": "c",
+          "text": "louvaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas uma é a minha pomba",
+      "feedbackCorrect": "\"Mas uma\" marca o contraste.",
+      "feedbackWrong": {
+        "b": "Donzelas a veem depois.",
+        "c": "O louvor é o resultado."
+      },
+      "hint": "Comece pelas primeiras palavras.",
+      "learningObjective": "Tocar o marcador do contraste.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o bloco 5–8 sustenta sobre o amor da aliança?",
+      "verseRef": "Cantares 6:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amor da aliança busca, escolhe e permanece"
+        },
+        {
+          "id": "b",
+          "text": "O amor nunca precisa buscar"
+        },
+        {
+          "id": "c",
+          "text": "O amor trata todos os vínculos como iguais"
+        },
+        {
+          "id": "d",
+          "text": "A maturidade apaga o desejo da presença"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas uma é a minha pomba, a minha imaculada",
+      "feedbackCorrect": "Procura, escolha e vem sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "Há busca em 5:6.",
+        "c": "Há escolha de uma.",
+        "d": "Há Vem depressa."
+      },
+      "hint": "Una buscar, escolher e permanecer.",
+      "learningObjective": "Escolher a interpretação do bloco.",
+      "evidence": [
+        "Cantares 6:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho da hesitação à procura?",
+      "verseRef": "Cantares 5:3–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela hesita com vestes e pés"
+        },
+        {
+          "id": "b",
+          "text": "O coração se comove e ela se levanta"
+        },
+        {
+          "id": "c",
+          "text": "Abre tarde e sai à procura"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Busquei-o, mas não o encontrei",
+      "feedbackCorrect": "Hesitar → comover → procurar.",
+      "feedbackWrong": {
+        "default": "Comece pela hesitação; a procura fecha."
+      },
+      "hint": "Siga hesitar → comover → buscar.",
+      "learningObjective": "Ver o encadeamento da procura.",
+      "evidence": [
+        "Cantares 5:3–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 8:12, a vinha dela está ao seu quê?",
+      "verseRef": "Cantares 8:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "dispor"
+        },
+        {
+          "id": "b",
+          "text": "abandono"
+        },
+        {
+          "id": "c",
+          "text": "esquecimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A minha vinha está ao meu dispor",
+      "feedbackCorrect": "A vinha está ao seu dispor.",
+      "feedbackWrong": {
+        "b": "O texto diz dispor.",
+        "c": "O texto diz dispor."
+      },
+      "hint": "Veja o fim da primeira frase.",
+      "learningObjective": "Lembrar a vinha ao dispor.",
+      "evidence": [
+        "Cantares 8:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 8:7 a Romanos 8:38–39?",
+      "verseRef": "Cantares 8:7",
+      "passageA": {
+        "ref": "Cantares 8:7"
+      },
+      "passageB": {
+        "ref": "Romanos 8:38–39"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nada separa do amor"
+        },
+        {
+          "id": "b",
+          "text": "Águas apagam tudo"
+        },
+        {
+          "id": "c",
+          "text": "O amor se compra fácil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não poderiam apagar esse amor",
+      "feedbackCorrect": "Os dois textos afirmam um amor que não se apaga.",
+      "feedbackWrong": {
+        "b": "As águas não apagam.",
+        "c": "Bens seriam desprezados."
+      },
+      "hint": "Compare a inapagabilidade.",
+      "learningObjective": "Ligar o amor a Romanos 8.",
+      "evidence": [
+        "Cantares 8:7",
+        "Romanos 8:38–39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 7:12, toque a promessa do amor.",
+      "verseRef": "Cantares 7:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "meu amor"
+        },
+        {
+          "id": "b",
+          "text": "romeiras"
+        },
+        {
+          "id": "c",
+          "text": "vides"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ali te darei o meu amor",
+      "feedbackCorrect": "A promessa é te darei o meu amor.",
+      "feedbackWrong": {
+        "b": "Romeiras são o que se verifica.",
+        "c": "Vides são o que florescem."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Tocar a promessa do amor.",
+      "evidence": [
+        "Cantares 7:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o arco da etapa no Cântico?",
+      "verseRef": "Cantares 8:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O amado bate e a busca começa"
+        },
+        {
+          "id": "b",
+          "text": "Uma é escolhida entre muitas"
+        },
+        {
+          "id": "c",
+          "text": "O amor resiste às muitas águas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "As muitas águas não poderiam apagar esse amor",
+      "feedbackCorrect": "Busca, escolha singular e amor que as águas não apagam.",
+      "feedbackWrong": {
+        "default": "Comece pela busca; o amor inapagável fecha."
+      },
+      "hint": "Siga do pedido da porta ao amor final.",
+      "learningObjective": "Ordenar o contraste da escolha.",
+      "evidence": [
+        "Cantares 5:2",
+        "Cantares 6:9",
+        "Cantares 8:7"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 17:12–18",
+    "passages": [
+      {
+        "ref": "Josué 17:11–18"
+      }
+    ],
+    "context": "A casa de José reclama um quinhão só; Josué manda subir ao bosque e expulsar, mesmo com carros de ferro.",
+    "keyword": "quinhão",
+    "keywordGloss": "A sorte de herança que a casa de José acha pequena demais.",
+    "focusQuestion": "Onde você reclama de pouco terreno em vez de tomar posse do que já foi dado?",
+    "reflectionPrompts": [
+      "Um quinhão só",
+      "Bosque a cortar",
+      "Carros de ferro"
+    ],
+    "facts": [
+      {
+        "text": "Manassés não pôde expulsar os cananeus daquelas cidades.",
+        "evidenceRef": "Josué 17:12",
+        "evidenceSpan": "não puderam expulsar os habitantes daquelas cidades"
+      },
+      {
+        "text": "Tornando-se fortes, impuseram trabalhos forçados, mas não expulsaram de todo.",
+        "evidenceRef": "Josué 17:13",
+        "evidenceSpan": "não os expulsaram de todo"
+      },
+      {
+        "text": "Os filhos de José pediram mais que uma sorte e um quinhão.",
+        "evidenceRef": "Josué 17:14",
+        "evidenceSpan": "uma sorte apenas e um quinhão"
+      },
+      {
+        "text": "Josué mandou subir ao bosque e fazer uma clareira.",
+        "evidenceRef": "Josué 17:15",
+        "evidenceSpan": "subam ao bosque e façam para si lá uma clareira"
+      },
+      {
+        "text": "Eles alegaram carros de ferro no vale.",
+        "evidenceRef": "Josué 17:16",
+        "evidenceSpan": "têm carros de ferro"
+      },
+      {
+        "text": "Josué disse que expulsariam os cananeus ainda que fortes.",
+        "evidenceRef": "Josué 17:18",
+        "evidenceSpan": "você expulsará os cananeus, ainda que tenham carros de ferro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "quinhão",
+        "gloss": "Parte da herança reclamada como insuficiente."
+      },
+      {
+        "term": "Porém",
+        "gloss": "Marca a virada: a montanha será deles se cortarem e expulsarem."
+      },
+      {
+        "term": "bosque",
+        "gloss": "Área a ser aberta para ampliar a posse."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cananeus não expulsos de todo",
+        "evidenceRef": "Josué 17:12–13"
+      },
+      {
+        "label": "José reclama um quinhão só",
+        "evidenceRef": "Josué 17:14"
+      },
+      {
+        "label": "Josué manda ao bosque",
+        "evidenceRef": "Josué 17:15–16"
+      },
+      {
+        "label": "Promessa: expulsarão mesmo com carros",
+        "evidenceRef": "Josué 17:17–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "São grandes; porém a montanha será deles se cortarem.",
+        "marker": "Porém",
+        "evidenceRef": "Josué 17:18"
+      },
+      {
+        "kind": "causa",
+        "text": "Reclamam porque o Senhor os abençoou como grande povo.",
+        "marker": "visto que",
+        "evidenceRef": "Josué 17:14"
+      },
+      {
+        "kind": "resultado",
+        "text": "Mesmo fortes, não expulsaram de todo.",
+        "marker": "contudo",
+        "evidenceRef": "Josué 17:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 13:28",
+        "bridge": "Povos fortes e cidades"
+      },
+      {
+        "ref": "Josué 1:6",
+        "bridge": "Tomar posse da terra"
+      },
+      {
+        "ref": "Deuteronômio 20:1",
+        "bridge": "Não temer carros"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Josué concorda que nada mais há a tomar.",
+        "why": "Manda subir ao bosque e promete expulsão."
+      },
+      {
+        "text": "Os carros de ferro tornam a expulsão impossível.",
+        "why": "Josué diz que expulsarão ainda que tenham carros de ferro."
+      },
+      {
+        "text": "Já tinham expulsado todos os cananeus.",
+        "why": "Não os expulsaram de todo."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 17:15, o que Josué manda o grande povo fazer?",
+    "centralInsight": "Josué manda subir ao bosque e expulsar: o Senhor já os abençoou como grande povo."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 17:14, os filhos de José reclamam de uma sorte apenas e um quinhão.",
+      "verseRef": "Josué 17:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "uma sorte apenas e um quinhão",
+      "feedbackCorrect": "Eles pedem mais herança.",
+      "feedbackWrong": {
+        "false": "O texto traz a reclamação do quinhão."
+      },
+      "hint": "Veja o pedido.",
+      "learningObjective": "Observar a reclamação.",
+      "evidence": [
+        "Josué 17:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 17:15, toque o lugar para onde Josué manda subir.",
+      "verseRef": "Josué 17:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "bosque"
+        },
+        {
+          "id": "b",
+          "text": "clareira"
+        },
+        {
+          "id": "c",
+          "text": "Efraim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "subam ao bosque",
+      "feedbackCorrect": "Manda subir ao bosque.",
+      "feedbackWrong": {
+        "b": "Clareira é o que farão lá.",
+        "c": "Efraim é a região estreita."
+      },
+      "hint": "Veja o destino de subam.",
+      "learningObjective": "Identificar o bosque.",
+      "evidence": [
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 17:13, o que Israel fez aos cananeus ao ficar forte?",
+      "verseRef": "Josué 17:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Impôs trabalhos forçados, sem expulsar de todo"
+        },
+        {
+          "id": "b",
+          "text": "Expulsou todos de imediato"
+        },
+        {
+          "id": "c",
+          "text": "Fez aliança de igualdade"
+        },
+        {
+          "id": "d",
+          "text": "Abandonou as cidades"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "impuseram aos cananeus trabalhos forçados",
+      "feedbackCorrect": "Trabalho forçado, não expulsão total.",
+      "feedbackWrong": {
+        "b": "Não expulsaram de todo.",
+        "c": "Não há aliança igual.",
+        "d": "Permaneceram na terra."
+      },
+      "hint": "Leia o contudo.",
+      "learningObjective": "Reconhecer a expulsão incompleta.",
+      "evidence": [
+        "Josué 17:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 17:15 na ordem do texto.",
+      "verseRef": "Josué 17:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se vocês são um povo tão grande"
+        },
+        {
+          "id": "b",
+          "text": "subam ao bosque"
+        },
+        {
+          "id": "c",
+          "text": "e façam para si lá uma clareira"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "subam ao bosque e façam para si lá uma clareira",
+      "feedbackCorrect": "Condição e ordem.",
+      "feedbackWrong": {
+        "default": "Comece pela condição."
+      },
+      "hint": "O que Josué diz primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 17:14, complete: uma sorte apenas e um ___.",
+      "verseRef": "Josué 17:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "quinhão"
+        },
+        {
+          "id": "b",
+          "text": "exército"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma sorte apenas e um quinhão",
+      "feedbackCorrect": "Um quinhão.",
+      "feedbackWrong": {
+        "b": "Não é exército.",
+        "c": "A palavra é quinhão."
+      },
+      "hint": "Veja o segundo pedido.",
+      "learningObjective": "Lembrar a palavra quinhão.",
+      "evidence": [
+        "Josué 17:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 17:15 comunica que se liga a este contexto?",
+      "verseRef": "Josué 17:15",
+      "passageA": {
+        "ref": "Josué 17:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A casa de José reclama herança pequena."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Subir e abrir o bosque"
+        },
+        {
+          "id": "b",
+          "text": "Desistir da terra"
+        },
+        {
+          "id": "c",
+          "text": "Pedir carros de ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "subam ao bosque e façam para si lá uma clareira",
+      "feedbackCorrect": "A resposta é tomar posse no bosque.",
+      "feedbackWrong": {
+        "b": "Não é desistir.",
+        "c": "Não pedem carros."
+      },
+      "hint": "Veja a ordem de Josué.",
+      "learningObjective": "Ligar a reclamação à ordem.",
+      "evidence": [
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 17:18, os carros de ferro tornam a expulsão impossível segundo Josué.",
+      "verseRef": "Josué 17:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "você expulsará os cananeus, ainda que tenham carros de ferro",
+      "feedbackCorrect": "Ele promete expulsão apesar dos carros.",
+      "feedbackWrong": {
+        "true": "O texto diz ainda que tenham carros."
+      },
+      "hint": "Leia o ainda que.",
+      "learningObjective": "Ver a superação do medo.",
+      "evidence": [
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 17:18, toque a palavra que marca o contraste com a reclamação.",
+      "verseRef": "Josué 17:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "ferro"
+        },
+        {
+          "id": "c",
+          "text": "floresta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, a região montanhosa será sua",
+      "feedbackCorrect": "Porém introduz a posse da montanha.",
+      "feedbackWrong": {
+        "b": "Ferro é o medo.",
+        "c": "Floresta é o terreno."
+      },
+      "hint": "Olhe a primeira palavra.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação há entre a reclamação e a ordem?",
+      "verseRef": "Josué 17:14–15",
+      "options": [
+        {
+          "id": "a",
+          "text": "São grandes; por isso devem abrir o bosque"
+        },
+        {
+          "id": "b",
+          "text": "São pequenos; por isso pedem menos"
+        },
+        {
+          "id": "c",
+          "text": "Josué nega qualquer ampliação"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor não os abençoou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Se vocês são um povo tão grande, subam ao bosque",
+      "feedbackCorrect": "A grandeza vira missão.",
+      "feedbackWrong": {
+        "b": "Não são tratados como pequenos.",
+        "c": "Há ordem de ampliar.",
+        "d": "Eles mesmos citam a bênção."
+      },
+      "hint": "Compare reclamação e resposta.",
+      "learningObjective": "Compreender a lógica de Josué.",
+      "evidence": [
+        "Josué 17:14–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 17:12–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cananeus não expulsos de todo"
+        },
+        {
+          "id": "b",
+          "text": "José reclama um quinhão só"
+        },
+        {
+          "id": "c",
+          "text": "Josué manda ao bosque"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não puderam expulsar os habitantes",
+      "feedbackCorrect": "Incompleto, reclamação e ordem.",
+      "feedbackWrong": {
+        "default": "Comece pela expulsão incompleta."
+      },
+      "hint": "O que vem antes da reclamação?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 17:12",
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 17:16, complete: têm carros de ___.",
+      "verseRef": "Josué 17:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "ferro"
+        },
+        {
+          "id": "b",
+          "text": "ouro"
+        },
+        {
+          "id": "c",
+          "text": "barro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "têm carros de ferro",
+      "feedbackCorrect": "Carros de ferro.",
+      "feedbackWrong": {
+        "b": "Não é ouro.",
+        "c": "A palavra é ferro."
+      },
+      "hint": "Veja o material dos carros.",
+      "learningObjective": "Lembrar o medo nomeado.",
+      "evidence": [
+        "Josué 17:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 17:18 a Deuteronômio 20:1?",
+      "verseRef": "Josué 17:18",
+      "passageA": {
+        "ref": "Josué 17:18"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 20:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não temer carros"
+        },
+        {
+          "id": "b",
+          "text": "Fugir dos carros"
+        },
+        {
+          "id": "c",
+          "text": "Adorar o ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda que tenham carros de ferro",
+      "feedbackCorrect": "Nos dois textos carros não cancelam a ordem.",
+      "feedbackWrong": {
+        "b": "O elo é não temer.",
+        "c": "Há expulsão."
+      },
+      "hint": "Compare o medo dos carros.",
+      "learningObjective": "Ligar carros a Deuteronômio.",
+      "evidence": [
+        "Josué 17:18",
+        "Deuteronômio 20:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 17:14–18, a ordem de cortar e expulsar sustenta que a bênção pede posse corajosa, não só reclamação.",
+      "verseRef": "Josué 17:14–18",
+      "correctOptionId": "true",
+      "evidenceSpan": "você expulsará os cananeus, ainda que tenham carros de ferro",
+      "feedbackCorrect": "Bênção e missão andam juntas.",
+      "feedbackWrong": {
+        "false": "O texto une grandeza e expulsão."
+      },
+      "hint": "Una 17:14 e 17:18.",
+      "learningObjective": "Avaliar a leitura da reclamação.",
+      "evidence": [
+        "Josué 17:14–18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 17:18, toque o trecho que sustenta a vitória possível.",
+      "verseRef": "Josué 17:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "expulsará"
+        },
+        {
+          "id": "b",
+          "text": "ferro"
+        },
+        {
+          "id": "c",
+          "text": "floresta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você expulsará os cananeus",
+      "feedbackCorrect": "Expulsará marca a promessa.",
+      "feedbackWrong": {
+        "b": "Ferro é o obstáculo.",
+        "c": "Floresta é o terreno."
+      },
+      "hint": "Veja o verbo da promessa.",
+      "learningObjective": "Tocar o que sustenta a vitória.",
+      "evidence": [
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 17:12–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor já abençoou; falta tomar posse com fé"
+        },
+        {
+          "id": "b",
+          "text": "O quinhão prova abandono divino"
+        },
+        {
+          "id": "c",
+          "text": "Carros de ferro anulam a promessa"
+        },
+        {
+          "id": "d",
+          "text": "Josué manda desistir do bosque"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "você expulsará os cananeus, ainda que tenham carros de ferro",
+      "feedbackCorrect": "Bênção e expulsão.",
+      "feedbackWrong": {
+        "b": "Há bênção citada.",
+        "c": "Carros não anulam.",
+        "d": "Há ordem de subir."
+      },
+      "hint": "Una bênção e ordem.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 17:12–18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da posse pedida.",
+      "verseRef": "Josué 17:14–18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reclamam do quinhão único"
+        },
+        {
+          "id": "b",
+          "text": "Recebem ordem de abrir o bosque"
+        },
+        {
+          "id": "c",
+          "text": "Promessa de expulsar apesar do ferro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "uma sorte apenas e um quinhão",
+      "feedbackCorrect": "Reclamação, ordem e promessa.",
+      "feedbackWrong": {
+        "default": "Comece pela reclamação."
+      },
+      "hint": "O que vem antes da ordem?",
+      "learningObjective": "Encadear reclamação e fé",
+      "evidence": [
+        "Josué 17:14",
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 17:18, complete: a região montanhosa será ___.",
+      "verseRef": "Josué 17:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua"
+        },
+        {
+          "id": "b",
+          "text": "deles"
+        },
+        {
+          "id": "c",
+          "text": "nossa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a região montanhosa será sua",
+      "feedbackCorrect": "Será sua.",
+      "feedbackWrong": {
+        "b": "O possessivo é sua.",
+        "c": "O texto diz sua."
+      },
+      "hint": "Veja o possessivo.",
+      "learningObjective": "Lembrar a posse prometida.",
+      "evidence": [
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 17:15 a Josué 1:6?",
+      "verseRef": "Josué 17:15",
+      "passageA": {
+        "ref": "Josué 17:15"
+      },
+      "passageB": {
+        "ref": "Josué 1:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomar posse da terra"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar a herança"
+        },
+        {
+          "id": "c",
+          "text": "Temer o bosque"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "subam ao bosque e façam para si lá uma clareira",
+      "feedbackCorrect": "Nos dois textos há ordem de tomar posse.",
+      "feedbackWrong": {
+        "b": "O elo é posse.",
+        "c": "Não é abandono."
+      },
+      "hint": "Pense no ânimo para possuir.",
+      "learningObjective": "Ligar o bosque à ordem inicial.",
+      "evidence": [
+        "Josué 17:15",
+        "Josué 1:6"
+      ]
+    }
+  ]
+}

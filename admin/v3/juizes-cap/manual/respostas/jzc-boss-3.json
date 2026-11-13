@@ -1,0 +1,929 @@
+{
+  "study": {
+    "passageRef": "Juízes 11:29–34",
+    "passages": [
+      {
+        "ref": "Juízes 11:29–40"
+      },
+      {
+        "ref": "Juízes 12:1–7"
+      },
+      {
+        "ref": "Juízes 13:2–14"
+      },
+      {
+        "ref": "Juízes 14:5–14"
+      },
+      {
+        "ref": "Juízes 15:9–20"
+      },
+      {
+        "ref": "Juízes 16:15–24"
+      }
+    ],
+    "context": "Esta Travessia revisa Jefté, Efraim, o anúncio a Manoá, o leão, a queixada e Dalila.",
+    "keyword": "nazireu",
+    "keywordGloss": "Consagrado desde o ventre, cuja cabeça não conhece navalha.",
+    "focusQuestion": "Onde um voto ou um segredo ainda precisa de temor ao Senhor?",
+    "reflectionPrompts": [
+      "Voto de Jefté",
+      "Nazireu",
+      "Tranças raspadas"
+    ],
+    "facts": [
+      {
+        "text": "Jefté fez um voto ao Senhor.",
+        "evidenceRef": "Juízes 11:30",
+        "evidenceSpan": "Jefté fez um voto ao SENHOR"
+      },
+      {
+        "text": "A filha saiu ao encontro com adufes.",
+        "evidenceRef": "Juízes 11:34",
+        "evidenceSpan": "sua filha saindo ao seu encontro, com adufes e danças"
+      },
+      {
+        "text": "O menino seria nazireu consagrado.",
+        "evidenceRef": "Juízes 13:5",
+        "evidenceSpan": "o menino será nazireu consagrado"
+      },
+      {
+        "text": "O Espírito se apoderou de Sansão.",
+        "evidenceRef": "Juízes 14:6",
+        "evidenceSpan": "o Espírito do Senhor se apoderou dele"
+      },
+      {
+        "text": "Sansão revelou todo o coração a Dalila.",
+        "evidenceRef": "Juízes 16:17",
+        "evidenceSpan": "revelou-lhe todo o seu coração"
+      },
+      {
+        "text": "Rasparam as sete tranças de sua cabeça.",
+        "evidenceRef": "Juízes 16:19",
+        "evidenceSpan": "raspou as sete tranças de sua cabeça"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "voto",
+        "gloss": "Promessa de Jefté antes da batalha."
+      },
+      {
+        "term": "nazireu",
+        "gloss": "Consagração anunciada: nazireu consagrado."
+      },
+      {
+        "term": "tranças",
+        "gloss": "Sinal raspado por Dalila."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Voto e filha",
+        "evidenceRef": "Juízes 11:30–34"
+      },
+      {
+        "label": "Conflito com Efraim",
+        "evidenceRef": "Juízes 12:1–6"
+      },
+      {
+        "label": "Nazireu anunciado",
+        "evidenceRef": "Juízes 13:2–7"
+      },
+      {
+        "label": "Leão, queixada e Dalila",
+        "evidenceRef": "Juízes 16:15–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Navalha não passa, pois será nazireu consagrado.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 13:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "Espírito apossa; no entanto há segredo depois.",
+        "marker": null,
+        "evidenceRef": "Juízes 14:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "Revela o coração; as tranças são raspadas.",
+        "marker": null,
+        "evidenceRef": "Juízes 16:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 6:5",
+        "bridge": "Navalha e nazireu"
+      },
+      {
+        "ref": "Eclesiastes 5:4",
+        "bridge": "Pagar o voto"
+      },
+      {
+        "ref": "Provérbios 11:13",
+        "bridge": "Guardar o segredo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jefté não fez nenhum voto.",
+        "why": "Fez um voto ao Senhor."
+      },
+      {
+        "text": "Sansão nunca foi nazireu.",
+        "why": "O anúncio diz que seria nazireu."
+      },
+      {
+        "text": "Dalila nunca raspou as tranças.",
+        "why": "Rasparam as sete tranças."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 13:5, o que o menino seria?",
+    "centralInsight": "Voto precipitado e segredo entregue mostram o custo de tratar o consagrado com leveza."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "feedbackCorrect": "Há voto.",
+      "hint": "Leia o início.",
+      "learningObjective": "Observar o voto.",
+      "question": "Em Juízes 11:30, Jefté fez um voto ao Senhor.",
+      "verseRef": "Juízes 11:30",
+      "correctOptionId": "true",
+      "evidenceSpan": "Jefté fez um voto ao SENHOR",
+      "feedbackWrong": {
+        "false": "O texto afirma o voto."
+      },
+      "evidence": [
+        "Juízes 11:30"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "Nazireu.",
+      "hint": "Qual título?",
+      "learningObjective": "Identificar nazireu.",
+      "question": "Em Juízes 13:5, toque o termo da consagração.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "nazireu"
+        },
+        {
+          "id": "b",
+          "text": "navalha"
+        },
+        {
+          "id": "c",
+          "text": "filisteus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o menino será nazireu consagrado a Deus",
+      "feedbackWrong": {
+        "b": "Navalha não passa.",
+        "c": "Filisteus são o alvo."
+      },
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "feedbackCorrect": "Sete tranças.",
+      "hint": "Veja a cabeça.",
+      "learningObjective": "Reconhecer as tranças.",
+      "question": "Segundo Juízes 16:19, o que Dalila raspou?",
+      "verseRef": "Juízes 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "As sete tranças"
+        },
+        {
+          "id": "b",
+          "text": "A queixada"
+        },
+        {
+          "id": "c",
+          "text": "O voto de Jefté"
+        },
+        {
+          "id": "d",
+          "text": "O lagar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "raspou as sete tranças de sua cabeça",
+      "feedbackWrong": {
+        "b": "Queixada é noutro ciclo.",
+        "c": "Voto é de Jefté.",
+        "d": "Lagar é de Gideão."
+      },
+      "evidence": [
+        "Juízes 16:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Encontro, danças e única.",
+      "hint": "Quem sai?",
+      "learningObjective": "Seguir a ordem.",
+      "question": "Monte Juízes 11:34 na ordem do texto.",
+      "verseRef": "Juízes 11:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "viu sua filha saindo ao seu encontro"
+        },
+        {
+          "id": "b",
+          "text": "com adufes e danças"
+        },
+        {
+          "id": "c",
+          "text": "ela era única"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sua filha saindo ao seu encontro, com adufes e danças",
+      "feedbackWrong": {
+        "default": "Comece pela filha."
+      },
+      "evidence": [
+        "Juízes 11:34"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "feedbackCorrect": "Apoderou.",
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar apoderou.",
+      "question": "Em Juízes 14:6, complete: o Espírito do Senhor se ___ dele.",
+      "verseRef": "Juízes 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "apoderou"
+        },
+        {
+          "id": "b",
+          "text": "esqueceu"
+        },
+        {
+          "id": "c",
+          "text": "afastou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apoderou dele",
+      "feedbackWrong": {
+        "b": "Não é esqueceu.",
+        "c": "Não é afastou."
+      },
+      "evidence": [
+        "Juízes 14:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "feedbackCorrect": "Segredo entregue.",
+      "hint": "O que ele faz?",
+      "learningObjective": "Ligar segredo e queda.",
+      "question": "O que Juízes 16:17 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 16:17",
+      "passageA": {
+        "ref": "Juízes 16:17"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Sansão entrega a Dalila o segredo da consagração."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Revelou o coração"
+        },
+        {
+          "id": "b",
+          "text": "Guardou o voto"
+        },
+        {
+          "id": "c",
+          "text": "Raspa sozinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "revelou-lhe todo o seu coração",
+      "feedbackWrong": {
+        "b": "Há revelação.",
+        "c": "Dalila chama um homem."
+      },
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "feedbackCorrect": "Chibolete.",
+      "hint": "O que pedem para dizer?",
+      "learningObjective": "Identificar chibolete.",
+      "question": "Em Juízes 12:6, toque a palavra pedida no vau.",
+      "verseRef": "Juízes 12:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "chibolete"
+        },
+        {
+          "id": "b",
+          "text": "sibolete"
+        },
+        {
+          "id": "c",
+          "text": "Jordão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Diga, pois, chibolete",
+      "feedbackWrong": {
+        "b": "Sibolete é o erro.",
+        "c": "Jordão é o lugar."
+      },
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "feedbackCorrect": "Navalha, nazireu e ventre.",
+      "hint": "O que não passa?",
+      "learningObjective": "Seguir a ordem.",
+      "question": "Monte Juízes 13:5 na ordem do texto.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "sobre cuja cabeça não passará navalha"
+        },
+        {
+          "id": "b",
+          "text": "pois o menino será nazireu consagrado a Deus"
+        },
+        {
+          "id": "c",
+          "text": "desde o ventre de sua mãe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não passará navalha",
+      "feedbackWrong": {
+        "default": "Comece pela cabeça."
+      },
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "feedbackCorrect": "É estéril; porém conceberá.",
+      "hint": "Leia o porém.",
+      "learningObjective": "Ver o contraste.",
+      "question": "Em Juízes 13:3, o anjo diz que a mulher já tem muitos filhos.",
+      "verseRef": "Juízes 13:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "tu és estéril e nunca tiveste filhos; porém conceberás",
+      "feedbackWrong": {
+        "true": "O porém marca a virada."
+      },
+      "evidence": [
+        "Juízes 13:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "Porém.",
+      "hint": "Olhe a virada.",
+      "learningObjective": "Tocar o contraste.",
+      "question": "Em Juízes 13:3, toque o marcador de contraste.",
+      "verseRef": "Juízes 13:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "estéril"
+        },
+        {
+          "id": "c",
+          "text": "filho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porém conceberás e darás à luz um filho",
+      "feedbackWrong": {
+        "b": "Estéril é o estado.",
+        "c": "Filho é a promessa."
+      },
+      "evidence": [
+        "Juízes 13:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "feedbackCorrect": "Segredo e queda.",
+      "hint": "Siga a revelação.",
+      "learningObjective": "Compreender o resultado.",
+      "question": "Que relação Juízes 16:17–19 faz?",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Revela o coração; as tranças são raspadas"
+        },
+        {
+          "id": "b",
+          "text": "Guarda o segredo; Dalila desiste"
+        },
+        {
+          "id": "c",
+          "text": "Sem revelação; o Espírito some"
+        },
+        {
+          "id": "d",
+          "text": "Voto pago; Jefté canta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "revelou-lhe todo o seu coração",
+      "feedbackWrong": {
+        "b": "Há revelação.",
+        "c": "Há revelação.",
+        "d": "Outro ciclo."
+      },
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Voto, briga e anúncio.",
+      "hint": "O nazireado vem depois.",
+      "learningObjective": "Ordenar a etapa",
+      "question": "Ordene os movimentos da etapa.",
+      "verseRef": "Juízes 11:30",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voto e filha de Jefté"
+        },
+        {
+          "id": "b",
+          "text": "Efraim e chibolete"
+        },
+        {
+          "id": "c",
+          "text": "Anúncio e nazireado"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Jefté fez um voto ao SENHOR",
+      "feedbackWrong": {
+        "default": "Comece pelo voto."
+      },
+      "evidence": [
+        "Juízes 11:30",
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "feedbackCorrect": "Lâmina.",
+      "hint": "O que nunca passou?",
+      "learningObjective": "Lembrar lâmina.",
+      "question": "Em Juízes 16:17, complete: Nunca passou uma ___ sobre a minha cabeça.",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "lâmina"
+        },
+        {
+          "id": "b",
+          "text": "coroa"
+        },
+        {
+          "id": "c",
+          "text": "água"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nunca passou uma lâmina sobre a minha cabeça",
+      "feedbackWrong": {
+        "b": "Não é coroa.",
+        "c": "Não é água."
+      },
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "feedbackCorrect": "Voto tem peso.",
+      "hint": "Compare o voto.",
+      "learningObjective": "Ligar a Eclesiastes.",
+      "question": "O que liga Juízes 11:30 a Eclesiastes 5:4?",
+      "verseRef": "Juízes 11:30",
+      "passageA": {
+        "ref": "Juízes 11:30"
+      },
+      "passageB": {
+        "ref": "Eclesiastes 5:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pagar o voto"
+        },
+        {
+          "id": "b",
+          "text": "Voto sem custo"
+        },
+        {
+          "id": "c",
+          "text": "Promessa vazia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jefté fez um voto ao SENHOR",
+      "feedbackWrong": {
+        "b": "Há custo.",
+        "c": "Há voto real."
+      },
+      "evidence": [
+        "Juízes 11:30",
+        "Eclesiastes 5:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "feedbackCorrect": "Espírito.",
+      "hint": "Quem age nele?",
+      "learningObjective": "Tocar o Espírito.",
+      "question": "Em Juízes 14:6, toque quem se apoderou de Sansão.",
+      "verseRef": "Juízes 14:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "cabrito"
+        },
+        {
+          "id": "c",
+          "text": "mãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Espírito do Senhor se apoderou dele",
+      "feedbackWrong": {
+        "b": "Cabrito é a comparação.",
+        "c": "Mãos estão vazias."
+      },
+      "evidence": [
+        "Juízes 14:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "feedbackCorrect": "Sono, raspagem e cabeça.",
+      "hint": "O que ela faz primeiro?",
+      "learningObjective": "Seguir a queda.",
+      "question": "Monte Juízes 16:19 na ordem do texto.",
+      "verseRef": "Juízes 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "ela o fez dormir em seus joelhos"
+        },
+        {
+          "id": "b",
+          "text": "raspou as sete tranças"
+        },
+        {
+          "id": "c",
+          "text": "de sua cabeça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "ela o fez dormir em seus joelhos",
+      "feedbackWrong": {
+        "default": "Comece pelo sono."
+      },
+      "evidence": [
+        "Juízes 16:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "feedbackCorrect": "Ele revela.",
+      "hint": "Leia o verbo.",
+      "learningObjective": "Avaliar o segredo.",
+      "question": "Em Juízes 16:17, Sansão guarda o segredo e não revela o coração.",
+      "verseRef": "Juízes 16:17",
+      "correctOptionId": "false",
+      "evidenceSpan": "revelou-lhe todo o seu coração",
+      "feedbackWrong": {
+        "true": "O texto diz revelou."
+      },
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "Única.",
+      "hint": "Quantos filhos?",
+      "learningObjective": "Tocar única.",
+      "question": "Em Juízes 11:34, toque o que a filha era.",
+      "verseRef": "Juízes 11:34",
+      "options": [
+        {
+          "id": "a",
+          "text": "única"
+        },
+        {
+          "id": "b",
+          "text": "adufes"
+        },
+        {
+          "id": "c",
+          "text": "danças"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ela era única",
+      "feedbackWrong": {
+        "b": "Adufes acompanham.",
+        "c": "Danças acompanham."
+      },
+      "evidence": [
+        "Juízes 11:34"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "feedbackCorrect": "Consagração ferida.",
+      "hint": "Una nazireu e revelação.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "question": "Qual leitura melhor une voto e consagração?",
+      "verseRef": "Juízes 16:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tratar o consagrado com leveza custa caro"
+        },
+        {
+          "id": "b",
+          "text": "O voto de Jefté é irrelevante"
+        },
+        {
+          "id": "c",
+          "text": "Dalila fortalece o nazireado"
+        },
+        {
+          "id": "d",
+          "text": "Sem Espírito não há leão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois sou nazireu de Deus desde o ventre de minha mãe",
+      "feedbackWrong": {
+        "b": "O voto pesa.",
+        "c": "Há raspagem.",
+        "d": "Há Espírito antes."
+      },
+      "evidence": [
+        "Juízes 16:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Poder, segredo e queda.",
+      "hint": "O que fecha a queda?",
+      "learningObjective": "Encadear o risco",
+      "question": "Ordene o encadeamento do risco.",
+      "verseRef": "Juízes 16:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voto e poder"
+        },
+        {
+          "id": "b",
+          "text": "Segredo entregue"
+        },
+        {
+          "id": "c",
+          "text": "Tranças raspadas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "raspou as sete tranças de sua cabeça",
+      "feedbackWrong": {
+        "default": "Comece pelo poder."
+      },
+      "evidence": [
+        "Juízes 16:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "feedbackCorrect": "Navalha.",
+      "hint": "O que não passa na cabeça?",
+      "learningObjective": "Lembrar navalha.",
+      "question": "Em Juízes 13:5, complete: não passará ___.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "navalha"
+        },
+        {
+          "id": "b",
+          "text": "água"
+        },
+        {
+          "id": "c",
+          "text": "sombra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não passará navalha",
+      "feedbackWrong": {
+        "b": "Não é água.",
+        "c": "Não é sombra."
+      },
+      "evidence": [
+        "Juízes 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "feedbackCorrect": "Mesma regra.",
+      "hint": "Compare a navalha.",
+      "learningObjective": "Ligar a Números.",
+      "question": "O que liga Juízes 13:5 a Números 6:5?",
+      "verseRef": "Juízes 13:5",
+      "passageA": {
+        "ref": "Juízes 13:5"
+      },
+      "passageB": {
+        "ref": "Números 6:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Navalha e nazireu"
+        },
+        {
+          "id": "b",
+          "text": "Trono e espada"
+        },
+        {
+          "id": "c",
+          "text": "Sem consagração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não passará navalha, pois o menino será nazireu consagrado",
+      "feedbackWrong": {
+        "b": "Não é trono.",
+        "c": "Há consagração."
+      },
+      "evidence": [
+        "Juízes 13:5",
+        "Números 6:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "feedbackCorrect": "Cordas.",
+      "hint": "O que se desfaz?",
+      "learningObjective": "Tocar cordas.",
+      "question": "Em Juízes 15:14, toque o que se tornou como fios de linho.",
+      "verseRef": "Juízes 15:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "cordas"
+        },
+        {
+          "id": "b",
+          "text": "filisteus"
+        },
+        {
+          "id": "c",
+          "text": "braços"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "as cordas que ele tinha nos braços se tornaram como fios de linho",
+      "feedbackWrong": {
+        "b": "Filisteus jubilam.",
+        "c": "Braços têm as cordas."
+      },
+      "evidence": [
+        "Juízes 15:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "feedbackCorrect": "Consagração, força e queda.",
+      "hint": "O afastamento fecha.",
+      "learningObjective": "Encadear Sansão",
+      "question": "Ordene o encadeamento da etapa.",
+      "verseRef": "Juízes 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consagrado desde o ventre"
+        },
+        {
+          "id": "b",
+          "text": "Força no leão e na queixada"
+        },
+        {
+          "id": "c",
+          "text": "Segredo entregue e afastamento"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "será nazireu consagrado a Deus",
+      "feedbackWrong": {
+        "default": "Comece pelo nazireado."
+      },
+      "evidence": [
+        "Juízes 13:5",
+        "Juízes 16:20"
+      ]
+    }
+  ]
+}

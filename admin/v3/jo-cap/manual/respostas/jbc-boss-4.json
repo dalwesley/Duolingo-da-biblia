@@ -1,0 +1,937 @@
+{
+ "study": {
+  "passageRef": "Jó 28:20–28",
+  "passages": [
+   {
+    "ref": "Jó 22:21–30"
+   },
+   {
+    "ref": "Jó 23:8–17"
+   },
+   {
+    "ref": "Jó 24:1–12"
+   },
+   {
+    "ref": "Jó 26:5–14"
+   },
+   {
+    "ref": "Jó 27:1–12"
+   },
+   {
+    "ref": "Jó 28:20–28"
+   }
+  ],
+  "context": "Travessia: Elifaz chama à reconciliação, Jó busca e não acha, vê a opressão, descreve o poder de Deus e conclui que a sabedoria começa no temor.",
+  "keyword": "sabedoria",
+  "keywordGloss": "Oculta aos olhos, conhecida por Deus; começa no temor do Senhor.",
+  "focusQuestion": "Você procura sabedoria na acusação fácil ou no temor de Deus?",
+  "reflectionPrompts": [
+   "Reconcilia-te",
+   "Caminho provado",
+   "Temor e sabedoria"
+  ],
+  "facts": [
+   {
+    "text": "Elifaz manda reconciliar-se com Deus e ter paz.",
+    "evidenceRef": "Jó 22:21",
+    "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz"
+   },
+   {
+    "text": "Jó diz que, se Deus o provar, sairá como o ouro.",
+    "evidenceRef": "Jó 23:10",
+    "evidenceSpan": "se ele me provar sairei como o ouro"
+   },
+   {
+    "text": "Os opressores tomam o jumento do órfão e o boi da viúva.",
+    "evidenceRef": "Jó 24:3",
+    "evidenceSpan": "Tomam o jumento do órfão e tomam o boi da viúva em penhor"
+   },
+   {
+    "text": "O Sheol está nu diante de Deus.",
+    "evidenceRef": "Jó 26:6",
+    "evidenceSpan": "O Sheol está nu diante dele"
+   },
+   {
+    "text": "Jó não renunciará à sua integridade até morrer.",
+    "evidenceRef": "Jó 27:5",
+    "evidenceSpan": "jamais renunciarei à minha integridade"
+   },
+   {
+    "text": "Deus compreende o caminho da sabedoria.",
+    "evidenceRef": "Jó 28:23",
+    "evidenceSpan": "Deus compreende o seu caminho"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "sabedoria",
+    "gloss": "Oculta aos vivos; Deus conhece o seu lugar."
+   },
+   {
+    "term": "integridade",
+    "gloss": "O que Jó não renuncia até a morte."
+   },
+   {
+    "term": "ouro",
+    "gloss": "Imagem da prova: sair como ouro."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Elifaz chama à reconciliação",
+    "evidenceRef": "Jó 22:21–23"
+   },
+   {
+    "label": "Jó busca e é provado como ouro",
+    "evidenceRef": "Jó 23:8–10"
+   },
+   {
+    "label": "Opressão e poder de Deus",
+    "evidenceRef": "Jó 24:1–4"
+   },
+   {
+    "label": "Sabedoria no temor de Deus",
+    "evidenceRef": "Jó 28:20–28"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Jó vai adiante e para trás, e não encontra Deus.",
+    "marker": "não",
+    "evidenceRef": "Jó 23:8"
+   },
+   {
+    "kind": "resultado",
+    "text": "Se Deus o provar, sairá como o ouro.",
+    "marker": "se",
+    "evidenceRef": "Jó 23:10"
+   },
+   {
+    "kind": "propósito",
+    "text": "A pergunta pela sabedoria aponta para Deus que conhece o lugar.",
+    "marker": "De onde",
+    "evidenceRef": "Jó 28:20"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Provérbios 9:10",
+    "bridge": "Temor início da sabedoria"
+   },
+   {
+    "ref": "Tiago 1:5",
+    "bridge": "Deus dá sabedoria"
+   },
+   {
+    "ref": "1 Pedro 1:7",
+    "bridge": "Fé provada como ouro"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "A sabedoria está à vista de todo vivente.",
+    "why": "28:21 diz que está oculta aos olhos de todo vivente."
+   },
+   {
+    "text": "Jó abandona a integridade sob pressão.",
+    "why": "27:5: até que morra, jamais renunciará à integridade."
+   },
+   {
+    "text": "A etapa reduz tudo à fórmula de Elifaz: reconcilie e o bem vem.",
+    "why": "Jó busca, vê opressão e conclui no temor — não só na fórmula."
+   }
+  ],
+  "centralInsight": "A sabedoria começa no temor — não na acusação dos amigos",
+  "anchorQuestion": "Segundo Jó 28, de onde vem a sabedoria, e o que Jó não renuncia em 27:5?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 22:21, Elifaz manda reconciliar-se com Deus e ter paz.",
+   "verseRef": "Jó 22:21",
+   "correctOptionId": "true",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Elifaz abre com reconciliação e paz.",
+   "feedbackWrong": {
+    "false": "Releia 22:21: Reconcilia-te e tem paz."
+   },
+   "hint": "Veja o começo do conselho de Elifaz.",
+   "learningObjective": "Observar o chamado de Elifaz.",
+   "evidence": [
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 23:10, toque com o que Jó sairá se for provado.",
+   "verseRef": "Jó 23:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "o ouro"
+    },
+    {
+     "id": "b",
+     "text": "meu caminho"
+    },
+    {
+     "id": "c",
+     "text": "provar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sairei como o ouro",
+   "feedbackCorrect": "A prova o faz sair como o ouro.",
+   "feedbackWrong": {
+    "b": "\"Caminho\" é o que Deus conhece.",
+    "c": "\"Provar\" é a ação, não o resultado."
+   },
+   "hint": "Veja a comparação no fim.",
+   "learningObjective": "Identificar a imagem do ouro.",
+   "evidence": [
+    "Jó 23:10"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 27:5, até quando Jó não renunciará à integridade?",
+   "verseRef": "Jó 27:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "Até que morra"
+    },
+    {
+     "id": "b",
+     "text": "Até os amigos cessarem"
+    },
+    {
+     "id": "c",
+     "text": "Só até a noite"
+    },
+    {
+     "id": "d",
+     "text": "Enquanto houver ouro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Até que eu morra jamais renunciarei à minha integridade",
+   "feedbackCorrect": "Até a morte, ele não renuncia à integridade.",
+   "feedbackWrong": {
+    "b": "O limite é a morte, não o silêncio dos amigos.",
+    "c": "Não há prazo de uma noite.",
+    "d": "O ouro é imagem de 23:10, não o limite aqui."
+   },
+   "hint": "Veja o \"Até que\" no versículo.",
+   "learningObjective": "Observar a firmeza de Jó.",
+   "evidence": [
+    "Jó 27:5"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 28:20 na ordem do texto.",
+   "verseRef": "Jó 28:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "De onde, pois, vem a sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "e onde se encontra o lugar"
+    },
+    {
+     "id": "c",
+     "text": "da inteligência?"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "feedbackCorrect": "A pergunta dupla: origem e lugar da inteligência.",
+   "feedbackWrong": {
+    "default": "Comece por De onde; a inteligência fecha."
+   },
+   "hint": "Comece pela origem da sabedoria.",
+   "learningObjective": "Reconhecer a pergunta de 28:20.",
+   "evidence": [
+    "Jó 28:20"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 26:6, o que está nu diante de Deus?",
+   "verseRef": "Jó 26:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sheol"
+    },
+    {
+     "id": "b",
+     "text": "norte"
+    },
+    {
+     "id": "c",
+     "text": "trono"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "O Sheol está nu diante dele",
+   "feedbackCorrect": "Até o Sheol está nu diante dele.",
+   "feedbackWrong": {
+    "b": "\"Norte\" aparece em 26:7.",
+    "c": "\"Trono\" aparece em 26:9."
+   },
+   "hint": "É o sujeito no início do versículo.",
+   "learningObjective": "Lembrar o alcance do olhar de Deus.",
+   "evidence": [
+    "Jó 26:6"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 28:23 comunica que se liga a este contexto?",
+   "verseRef": "Jó 28:23",
+   "options": [
+    {
+     "id": "a",
+     "text": "Sabedoria conhecida por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria à vista de todos"
+    },
+    {
+     "id": "c",
+     "text": "Fim da integridade de Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus compreende o seu caminho",
+   "passageA": {
+    "ref": "Jó 28:23"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "A etapa busca sabedoria além da acusação fácil dos amigos."
+   },
+   "feedbackCorrect": "Deus compreende o caminho da sabedoria.",
+   "feedbackWrong": {
+    "b": "28:21 diz que está oculta aos olhos.",
+    "c": "27:5 afirma a integridade."
+   },
+   "hint": "Veja quem compreende o caminho.",
+   "learningObjective": "Ligar 28:23 ao tema da etapa.",
+   "evidence": [
+    "Jó 28:23"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 24:3, toque de quem tomam o jumento.",
+   "verseRef": "Jó 24:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "do órfão"
+    },
+    {
+     "id": "b",
+     "text": "da viúva"
+    },
+    {
+     "id": "c",
+     "text": "em penhor"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Tomam o jumento do órfão",
+   "feedbackCorrect": "Tomam o jumento do órfão; da viúva, o boi.",
+   "feedbackWrong": {
+    "b": "Da viúva tomam o boi, não o jumento.",
+    "c": "\"Em penhor\" descreve o boi da viúva."
+   },
+   "hint": "Veja o dono do jumento.",
+   "learningObjective": "Identificar a opressão descrita.",
+   "evidence": [
+    "Jó 24:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 23:10 na ordem do texto.",
+   "verseRef": "Jó 23:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mas ele sabe qual é o meu caminho"
+    },
+    {
+     "id": "b",
+     "text": "se ele me provar"
+    },
+    {
+     "id": "c",
+     "text": "sairei como o ouro"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "sairei como o ouro",
+   "feedbackCorrect": "Deus conhece o caminho; a prova produz ouro.",
+   "feedbackWrong": {
+    "default": "Comece pelo saber de Deus; o ouro fecha."
+   },
+   "hint": "Comece por Mas ele sabe.",
+   "learningObjective": "Reconhecer a sequência de 23:10.",
+   "evidence": [
+    "Jó 23:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 28:21, a sabedoria está à vista de todo vivente, sem estar oculta.",
+   "verseRef": "Jó 28:21",
+   "correctOptionId": "false",
+   "evidenceSpan": "está oculta aos olhos de todo vivente",
+   "feedbackCorrect": "O texto diz que está oculta aos olhos de todo vivente.",
+   "feedbackWrong": {
+    "true": "Releia 28:21: oculta aos olhos de todo vivente."
+   },
+   "hint": "Veja o verbo ligado aos olhos.",
+   "learningObjective": "Compreender o ocultamento da sabedoria.",
+   "evidence": [
+    "Jó 28:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 23:10, toque a palavra que marca a condição da prova.",
+   "verseRef": "Jó 23:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "se"
+    },
+    {
+     "id": "b",
+     "text": "ouro"
+    },
+    {
+     "id": "c",
+     "text": "caminho"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se ele me provar sairei como o ouro",
+   "feedbackCorrect": "\"Se\" introduz a condição: a prova e o ouro.",
+   "feedbackWrong": {
+    "b": "\"Ouro\" é o resultado.",
+    "c": "\"Caminho\" é o que Deus conhece."
+   },
+   "hint": "É a palavra curta antes de ele me provar.",
+   "learningObjective": "Reconhecer o marcador condicional.",
+   "evidence": [
+    "Jó 23:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 22:21 e 28:20–23 se relacionam na etapa?",
+   "verseRef": "Jó 28:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "A fórmula de Elifaz não esgota a busca da sabedoria em Deus"
+    },
+    {
+     "id": "b",
+     "text": "Elifaz já revelou toda a sabedoria em 22:21"
+    },
+    {
+     "id": "c",
+     "text": "Jó abandona a busca e aceita só a acusação"
+    },
+    {
+     "id": "d",
+     "text": "Não há ligação entre reconciliação e sabedoria"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "feedbackCorrect": "A etapa vai da fórmula de Elifaz à pergunta pela sabedoria em Deus.",
+   "feedbackWrong": {
+    "b": "28:20 ainda pergunta de onde vem a sabedoria.",
+    "c": "27:5 e 28 mostram persistência.",
+    "d": "Os dois polos estruturam a etapa."
+   },
+   "hint": "Una o conselho de 22 ao mistério de 28.",
+   "learningObjective": "Relacionar Elifaz e a sabedoria.",
+   "evidence": [
+    "Jó 28:20",
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a etapa até a sabedoria?",
+   "verseRef": "Jó 28:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elifaz chama à reconciliação"
+    },
+    {
+     "id": "b",
+     "text": "Jó é provado como ouro"
+    },
+    {
+     "id": "c",
+     "text": "A sabedoria é perguntada a Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "feedbackCorrect": "Reconciliação proposta, prova e pergunta pela sabedoria.",
+   "feedbackWrong": {
+    "default": "Comece por Elifaz; 28:20 fecha."
+   },
+   "hint": "Siga 22, 23 e 28.",
+   "learningObjective": "Seguir o arco da etapa.",
+   "evidence": [
+    "Jó 22:21",
+    "Jó 23:10",
+    "Jó 28:20"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 28:23, quem compreende o caminho da sabedoria?",
+   "verseRef": "Jó 28:23",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus"
+    },
+    {
+     "id": "b",
+     "text": "aves"
+    },
+    {
+     "id": "c",
+     "text": "abismo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus compreende o seu caminho",
+   "feedbackCorrect": "Deus compreende o caminho e conhece o lugar.",
+   "feedbackWrong": {
+    "b": "As aves não a veem (28:21).",
+    "c": "O abismo só ouviu a fama (28:22)."
+   },
+   "hint": "É o sujeito no início do versículo.",
+   "learningObjective": "Compreender quem conhece a sabedoria.",
+   "evidence": [
+    "Jó 28:23"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 28:20 a Provérbios 9:10?",
+   "verseRef": "Jó 28:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Temor início da sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Sabedoria sem Deus"
+    },
+    {
+     "id": "c",
+     "text": "Acusação como sabedoria"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "passageA": {
+    "ref": "Jó 28:20"
+   },
+   "passageB": {
+    "ref": "Provérbios 9:10"
+   },
+   "feedbackCorrect": "A pergunta de Jó encontra resposta no temor do Senhor.",
+   "feedbackWrong": {
+    "b": "Os dois textos ligam sabedoria a Deus.",
+    "c": "A etapa rejeita reduzir sabedoria à acusação."
+   },
+   "hint": "Compare a origem da sabedoria.",
+   "learningObjective": "Relacionar Jó e Provérbios sobre sabedoria.",
+   "evidence": [
+    "Jó 28:20",
+    "Provérbios 9:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 23:8, toque a palavra que marca a ausência percebida.",
+   "verseRef": "Jó 23:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "não"
+    },
+    {
+     "id": "b",
+     "text": "adiante"
+    },
+    {
+     "id": "c",
+     "text": "Eis"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "ali não está",
+   "feedbackCorrect": "\"Não\" marca que ele busca e não encontra.",
+   "feedbackWrong": {
+    "b": "\"Adiante\" é a direção da busca.",
+    "c": "\"Eis\" abre a cena."
+   },
+   "hint": "Procure a negação após ali.",
+   "learningObjective": "Reconhecer o contraste da busca.",
+   "evidence": [
+    "Jó 23:8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como se ligam busca, opressão e sabedoria na etapa?",
+   "verseRef": "Jó 24:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó busca e não encontra"
+    },
+    {
+     "id": "b",
+     "text": "Os opressores ferem órfão e viúva"
+    },
+    {
+     "id": "c",
+     "text": "A sabedoria é conhecida por Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Tomam o jumento do órfão",
+   "feedbackCorrect": "Busca, denúncia da opressão e sabedoria em Deus.",
+   "feedbackWrong": {
+    "default": "Comece pela busca; 28:23 fecha."
+   },
+   "hint": "Siga 23, 24 e 28.",
+   "learningObjective": "Ordenar o movimento da etapa.",
+   "evidence": [
+    "Jó 23:8",
+    "Jó 24:3",
+    "Jó 28:23"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Em Jó 22–28, a sabedoria se reduz à acusação dos amigos, sem espaço para o temor de Deus.",
+   "verseRef": "Jó 28:20",
+   "correctOptionId": "false",
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "feedbackCorrect": "A etapa termina perguntando pela sabedoria que Deus conhece.",
+   "feedbackWrong": {
+    "true": "28:20–23 aponta além da acusação: Deus conhece a sabedoria."
+   },
+   "hint": "Veja onde a etapa desemboca no cap. 28.",
+   "learningObjective": "Interpretar o fim da etapa.",
+   "evidence": [
+    "Jó 28:20",
+    "Jó 28:23"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 27:5, toque o trecho que sustenta a firmeza de Jó.",
+   "verseRef": "Jó 27:5",
+   "options": [
+    {
+     "id": "a",
+     "text": "minha integridade"
+    },
+    {
+     "id": "b",
+     "text": "Longe de mim"
+    },
+    {
+     "id": "c",
+     "text": "justificar-vos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "jamais renunciarei à minha integridade",
+   "feedbackCorrect": "Ele não renuncia à integridade até a morte.",
+   "feedbackWrong": {
+    "b": "\"Longe de mim\" abre a recusa de justificar os amigos.",
+    "c": "\"Justificar-vos\" é o que ele recusa."
+   },
+   "hint": "Procure o objeto de renunciarei.",
+   "learningObjective": "Sustentar a integridade com o texto.",
+   "evidence": [
+    "Jó 27:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura a etapa sustenta sobre a sabedoria?",
+   "verseRef": "Jó 28:23",
+   "options": [
+    {
+     "id": "a",
+     "text": "A sabedoria começa no temor — não só na acusação dos amigos"
+    },
+    {
+     "id": "b",
+     "text": "Elifaz já esgotou toda a sabedoria em 22:21"
+    },
+    {
+     "id": "c",
+     "text": "A sabedoria está à vista de todo vivente"
+    },
+    {
+     "id": "d",
+     "text": "Jó abandona a integridade sob a prova"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus compreende o seu caminho",
+   "feedbackCorrect": "Deus conhece a sabedoria; a etapa aponta além da fórmula dos amigos.",
+   "feedbackWrong": {
+    "b": "28 ainda pergunta de onde vem.",
+    "c": "28:21 diz que está oculta.",
+    "d": "27:5 afirma a integridade."
+   },
+   "hint": "Una 27:5 e 28:20–23.",
+   "learningObjective": "Escolher a leitura da etapa.",
+   "evidence": [
+    "Jó 28:23"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência liga a sabedoria de Jó ao fio da Escritura?",
+   "verseRef": "Jó 28:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jó pergunta de onde vem a sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "Provérbios liga sabedoria ao temor"
+    },
+    {
+     "id": "c",
+     "text": "Tiago diz que Deus dá sabedoria"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "De onde, pois, vem a sabedoria",
+   "feedbackCorrect": "A pergunta de Jó ecoa no temor e no dom de Deus.",
+   "feedbackWrong": {
+    "default": "Siga: Jó 28:20, Provérbios 9:10 e Tiago 1:5."
+   },
+   "hint": "Parta de Jó 28:20.",
+   "learningObjective": "Ver a sabedoria no fio bíblico.",
+   "evidence": [
+    "Jó 28:20",
+    "Provérbios 9:10",
+    "Tiago 1:5"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 28:20, que palavra nomeia o que se busca?",
+   "verseRef": "Jó 28:20",
+   "options": [
+    {
+     "id": "a",
+     "text": "sabedoria"
+    },
+    {
+     "id": "b",
+     "text": "opressão"
+    },
+    {
+     "id": "c",
+     "text": "sepultura"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "vem a sabedoria",
+   "feedbackCorrect": "A pergunta central é pela sabedoria.",
+   "feedbackWrong": {
+    "b": "A opressão aparece no cap. 24.",
+    "c": "Não é o tema de 28:20."
+   },
+   "hint": "É o objeto após vem.",
+   "learningObjective": "Lembrar o termo teológico da etapa.",
+   "evidence": [
+    "Jó 28:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 23:10 a 1 Pedro 1:7?",
+   "verseRef": "Jó 23:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Fé provada como ouro"
+    },
+    {
+     "id": "b",
+     "text": "Prova sem nenhum fruto"
+    },
+    {
+     "id": "c",
+     "text": "Ouro sem qualquer prova"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "sairei como o ouro",
+   "passageA": {
+    "ref": "Jó 23:10"
+   },
+   "passageB": {
+    "ref": "1 Pedro 1:7"
+   },
+   "feedbackCorrect": "Nos dois textos, a prova é comparada ao ouro.",
+   "feedbackWrong": {
+    "b": "Ambos veem fruto na prova.",
+    "c": "O ouro vem depois da prova."
+   },
+   "hint": "Compare a imagem do ouro.",
+   "learningObjective": "Ligar a prova como ouro em Jó e Pedro.",
+   "evidence": [
+    "Jó 23:10",
+    "1 Pedro 1:7"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 28:21, toque o trecho que sustenta o ocultamento.",
+   "verseRef": "Jó 28:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "está oculta"
+    },
+    {
+     "id": "b",
+     "text": "todo vivente"
+    },
+    {
+     "id": "c",
+     "text": "aves do céu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "está oculta aos olhos de todo vivente",
+   "feedbackCorrect": "O ocultamento está no verbo: está oculta.",
+   "feedbackWrong": {
+    "b": "\"Todo vivente\" é o alcance, não o ocultamento.",
+    "c": "As aves também não a veem."
+   },
+   "hint": "Procure o verbo no início.",
+   "learningObjective": "Sustentar que a sabedoria está oculta.",
+   "evidence": [
+    "Jó 28:21"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual lógica une reconciliação, prova e sabedoria nesta etapa?",
+   "verseRef": "Jó 28:23",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elifaz oferece reconciliação e paz"
+    },
+    {
+     "id": "b",
+     "text": "Jó é provado e segura a integridade"
+    },
+    {
+     "id": "c",
+     "text": "O decreto aponta o temor do Senhor"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Deus compreende o seu caminho",
+   "feedbackCorrect": "Da fórmula dos amigos à prova e à sabedoria em Deus.",
+   "feedbackWrong": {
+    "default": "Comece por Elifaz; Deus e a sabedoria fecham."
+   },
+   "hint": "Siga 22:21, 27:5 e 28:23.",
+   "learningObjective": "Ordenar a lógica teológica da etapa.",
+   "evidence": [
+    "Jó 22:21",
+    "Jó 27:5",
+    "Jó 28:23"
+   ]
+  }
+ ]
+}

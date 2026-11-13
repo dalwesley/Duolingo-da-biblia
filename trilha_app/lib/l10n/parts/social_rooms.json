@@ -317,29 +317,29 @@
     "description": "Screen reader label for a tab with news."
   },
   "groupSeatToday": {
-    "pt": "estudou hoje",
-    "en": "studied today",
-    "es": "estudió hoy"
+    "pt": "caminhou hoje",
+    "en": "walked today",
+    "es": "caminó hoy"
   },
   "groupSeatWeek": {
-    "pt": "estudou nesta semana",
-    "en": "studied this week",
-    "es": "estudió esta semana"
+    "pt": "caminhou nesta semana",
+    "en": "walked this week",
+    "es": "caminó esta semana"
   },
   "groupSeatNever": {
-    "pt": "ainda não estudou",
-    "en": "hasn't studied yet",
-    "es": "aún no estudió"
+    "pt": "ainda não caminhou",
+    "en": "hasn't walked yet",
+    "es": "aún no caminó"
   },
   "groupSeatIdle": {
-    "pt": "ainda não estudou nesta semana",
-    "en": "hasn't studied this week yet",
-    "es": "aún no estudió esta semana"
+    "pt": "ainda não caminhou nesta semana",
+    "en": "hasn't walked this week yet",
+    "es": "aún no caminó esta semana"
   },
   "groupDaysAway": {
-    "pt": "{count, plural, =1{1 dia sem estudar} other{{count} dias sem estudar}}",
-    "en": "{count, plural, =1{1 day without studying} other{{count} days without studying}}",
-    "es": "{count, plural, =1{1 día sin estudiar} other{{count} días sin estudiar}}",
+    "pt": "{count, plural, =1{1 dia sem caminhar} other{{count} dias sem caminhar}}",
+    "en": "{count, plural, =1{1 day without walking} other{{count} days without walking}}",
+    "es": "{count, plural, =1{1 día sin caminar} other{{count} días sin caminar}}",
     "placeholders": {
       "count": "int"
     }
@@ -372,25 +372,6 @@
       "name": "String"
     },
     "description": "Leader role title followed by first name, e.g. 'Líder Ana'."
-  },
-  "groupStudyDoneCount": {
-    "pt": "{done} de {total} já fizeram",
-    "en": "{done} of {total} done",
-    "es": "{done} de {total} ya lo hicieron",
-    "placeholders": {
-      "done": "int",
-      "total": "int"
-    }
-  },
-  "groupStudyAgain": {
-    "pt": "Você já fez · Estudar de novo",
-    "en": "You're done · Study again",
-    "es": "Ya lo hiciste · Estudiar de nuevo"
-  },
-  "groupStudyCta": {
-    "pt": "Estudar com o grupo",
-    "en": "Study with the group",
-    "es": "Estudiar con el grupo"
   },
   "groupEmptyLeaderTitle": {
     "pt": "Qual texto o grupo vai estudar nesta semana?",
@@ -694,5 +675,44 @@
     "pt": "Escolher estudo da semana",
     "en": "Choose study of the week",
     "es": "Elegir estudio de la semana"
+  },
+  "waveSheetSubtitle": {
+    "pt": "Escolha o recado. Chega como notificação para {name}.",
+    "en": "Pick a message. It reaches {name} as a notification.",
+    "es": "Elige el mensaje. Le llega a {name} como notificación.",
+    "description": "Wave picker subtitle.",
+    "placeholders": {
+      "name": "String"
+    }
+  },
+  "waveKindPlan": {
+    "pt": "Entra no propósito com a gente?",
+    "en": "Join the plan with us?",
+    "es": "¿Entras al propósito con nosotros?",
+    "description": "Wave message: invite into the group plan."
+  },
+  "waveKindPray": {
+    "pt": "Estou orando por você",
+    "en": "I'm praying for you",
+    "es": "Estoy orando por ti",
+    "description": "Wave message: prayer support."
+  },
+  "waveKindCheer": {
+    "pt": "Força, o grupo está com você",
+    "en": "Hang in there, the group is with you",
+    "es": "Ánimo, el grupo está contigo",
+    "description": "Wave message: encouragement."
+  },
+  "waveKindMiss": {
+    "pt": "Sentimos sua falta",
+    "en": "We miss you",
+    "es": "Te extrañamos",
+    "description": "Wave message: missing them."
+  },
+  "waveKindStudy": {
+    "pt": "Vem estudar com o grupo",
+    "en": "Come study with the group",
+    "es": "Ven a estudiar con el grupo",
+    "description": "Wave message: default call to study."
   }
 }

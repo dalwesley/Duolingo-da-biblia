@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 23:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 23:1–9"
+      }
+    ],
+    "context": "A lei exige justiça limpa: não seguir a multidão no mal, não torcer o direito, nem odiar o inimigo no caminho.",
+    "keyword": "Multidão",
+    "keywordGloss": "A maioria não justifica o mal nem a perversão do direito.",
+    "focusQuestion": "Onde a pressão da maioria está pedindo que você torça o que é justo?",
+    "reflectionPrompts": [
+      "Não seguir o mal",
+      "Direito do pobre",
+      "Ajudar o inimigo"
+    ],
+    "facts": [
+      {
+        "text": "Não se deve seguir a multidão para praticar o mal.",
+        "evidenceRef": "Êxodo 23:2",
+        "evidenceSpan": "Não seguirás a multidão para praticar o mal"
+      },
+      {
+        "text": "Não se deve ser parcial em favor do pobre em sua causa.",
+        "evidenceRef": "Êxodo 23:3",
+        "evidenceSpan": "Não serás parcial em favor do pobre em sua causa"
+      },
+      {
+        "text": "O boi ou jumento do inimigo desgarrado deve ser levado de volta.",
+        "evidenceRef": "Êxodo 23:4",
+        "evidenceSpan": "deverás levá-lo de volta a ele"
+      },
+      {
+        "text": "Não se deve aceitar suborno.",
+        "evidenceRef": "Êxodo 23:8",
+        "evidenceSpan": "Não aceitarás suborno"
+      },
+      {
+        "text": "Não oprimir o forasteiro, pois foram forasteiros no Egito.",
+        "evidenceRef": "Êxodo 23:9",
+        "evidenceSpan": "não oprimireis o forasteiro, pois conheceis o coração do forasteiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "multidão",
+        "gloss": "Pressão da maioria que não justifica o mal."
+      },
+      {
+        "term": "suborno",
+        "gloss": "Presente que cega e perverte a justiça."
+      },
+      {
+        "term": "forasteiro",
+        "gloss": "Estrangeiro cujo coração Israel conhece."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Não seguir a maioria no mal",
+        "evidenceRef": "Êxodo 23:1–3"
+      },
+      {
+        "label": "Ajudar até o inimigo",
+        "evidenceRef": "Êxodo 23:4–5"
+      },
+      {
+        "label": "Direito do pobre e do inocente",
+        "evidenceRef": "Êxodo 23:6–7"
+      },
+      {
+        "label": "Sem suborno; cuidado ao forasteiro",
+        "evidenceRef": "Êxodo 23:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não seguir a multidão; nem inclinar-se à maioria no direito.",
+        "marker": "nem",
+        "evidenceRef": "Êxodo 23:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Não aceitar suborno, pois cega os sábios.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 23:8"
+      },
+      {
+        "kind": "causa",
+        "text": "Não oprimir o forasteiro, pois conheceis o coração dele.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 23:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Provérbios 17:15",
+        "bridge": "Justiça distorcida"
+      },
+      {
+        "ref": "Mateus 5:44",
+        "bridge": "Amar o inimigo"
+      },
+      {
+        "ref": "Isaías 1:17",
+        "bridge": "Buscar a justiça"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A maioria sempre define o que é justo.",
+        "why": "É proibido seguir a multidão para o mal."
+      },
+      {
+        "text": "Pode-se abandonar o jumento do inimigo.",
+        "why": "Deve-se ajudar a erguer e devolver."
+      },
+      {
+        "text": "Suborno é só problema financeiro, não moral.",
+        "why": "O texto diz que cega e perverte."
+      }
+    ],
+    "centralInsight": "Justiça não se curva à maioria, nem ao presente, nem ao ódio.",
+    "anchorQuestion": "O que a lei manda quando a multidão pratica o mal?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "A lei manda não seguir a multidão para praticar o mal.",
+      "verseRef": "Êxodo 23:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "A maioria não justifica o mal.",
+      "feedbackWrong": {
+        "false": "Releia: não seguirás a multidão para praticar o mal."
+      },
+      "hint": "Veja a proibição sobre a multidão.",
+      "learningObjective": "Observar a resistência à maioria.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 23:8, toque o que não se deve aceitar.",
+      "verseRef": "Êxodo 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "suborno"
+        },
+        {
+          "id": "b",
+          "text": "sábios"
+        },
+        {
+          "id": "c",
+          "text": "justos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não aceitarás suborno",
+      "feedbackCorrect": "É proibido aceitar suborno.",
+      "feedbackWrong": {
+        "b": "\"sábios\" sofrem o efeito; o objeto é suborno.",
+        "c": "\"justos\" são afetados; o objeto é suborno."
+      },
+      "hint": "Veja o objeto de Não aceitarás.",
+      "learningObjective": "Identificar o suborno.",
+      "evidence": [
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 23:4, o que fazer com o animal do inimigo desgarrado?",
+      "verseRef": "Êxodo 23:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Levá-lo de volta a ele"
+        },
+        {
+          "id": "b",
+          "text": "Ficar com o animal"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar e seguir"
+        },
+        {
+          "id": "d",
+          "text": "Vender no mercado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deverás levá-lo de volta a ele",
+      "feedbackCorrect": "Deve-se devolver ao inimigo.",
+      "feedbackWrong": {
+        "b": "Não é para ficar.",
+        "c": "Há obrigação de devolver.",
+        "d": "O texto manda devolver."
+      },
+      "hint": "Leia a ação devida.",
+      "learningObjective": "Observar a ajuda ao inimigo.",
+      "evidence": [
+        "Êxodo 23:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 23:2 na ordem do texto.",
+      "verseRef": "Êxodo 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não seguirás a multidão para praticar o mal"
+        },
+        {
+          "id": "b",
+          "text": "nem numa demanda perverterás o direito"
+        },
+        {
+          "id": "c",
+          "text": "inclinando-te para a maioria"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "Mal, direito e maioria na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece por Não seguirás."
+      },
+      "hint": "O versículo começa com Não seguirás.",
+      "learningObjective": "Reconhecer a ordem de 23:2.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 23:8, o que o suborno faz até aos sábios?",
+      "verseRef": "Êxodo 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "cega"
+        },
+        {
+          "id": "b",
+          "text": "ilumina"
+        },
+        {
+          "id": "c",
+          "text": "cura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o suborno cega até os sábios",
+      "feedbackCorrect": "O suborno cega até os sábios.",
+      "feedbackWrong": {
+        "b": "Não ilumina; cega.",
+        "c": "O verbo é cegar."
+      },
+      "hint": "Veja o verbo do efeito.",
+      "learningObjective": "Lembrar o efeito do suborno.",
+      "evidence": [
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 23:2 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 23:2",
+      "passageA": {
+        "ref": "Êxodo 23:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A justiça de Deus não se curva à pressão da maioria."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça acima da maioria"
+        },
+        {
+          "id": "b",
+          "text": "Seguir sempre a multidão"
+        },
+        {
+          "id": "c",
+          "text": "Odiar o inimigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "A lei coloca a justiça acima da maioria.",
+      "feedbackWrong": {
+        "b": "É proibido seguir no mal.",
+        "c": "Há ajuda ao inimigo noutros versos."
+      },
+      "hint": "Compare a proibição e o contexto.",
+      "learningObjective": "Ligar justiça e pressão.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 23:2, inclinando-se à maioria sempre se garante o direito justo.",
+      "verseRef": "Êxodo 23:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "nem numa demanda perverterás o direito, inclinando-te para a maioria",
+      "feedbackCorrect": "Inclinar-se à maioria pode perverter o direito.",
+      "feedbackWrong": {
+        "true": "Releia: não perverter o direito inclinando-se à maioria."
+      },
+      "hint": "Veja o que a inclinação pode fazer.",
+      "learningObjective": "Compreender o risco da maioria.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 23:8, toque a palavra que marca o motivo de rejeitar o suborno.",
+      "verseRef": "Êxodo 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "aceitarás"
+        },
+        {
+          "id": "c",
+          "text": "palavras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não aceitarás suborno, pois o suborno cega",
+      "feedbackCorrect": "\"Pois\" introduz o dano do suborno.",
+      "feedbackWrong": {
+        "b": "\"aceitarás\" é a proibição; o motivo é pois.",
+        "c": "\"palavras\" sofrem o efeito; o marcador é pois."
+      },
+      "hint": "Procure a palavra após suborno.",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 23:4–5 liga o inimigo à prática da justiça?",
+      "verseRef": "Êxodo 23:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesmo o inimigo merece ajuda concreta"
+        },
+        {
+          "id": "b",
+          "text": "O inimigo deve ser abandonado"
+        },
+        {
+          "id": "c",
+          "text": "Só amigos recebem ajuda"
+        },
+        {
+          "id": "d",
+          "text": "Ódio justifica negligência"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com certeza o ajudarás a se erguer",
+      "feedbackCorrect": "A justiça ajuda até quem aborrece.",
+      "feedbackWrong": {
+        "b": "O texto manda ajudar.",
+        "c": "Inclui o inimigo.",
+        "d": "Ódio não cancela a ajuda."
+      },
+      "hint": "Una devolver e erguer.",
+      "learningObjective": "Relacionar inimigo e ajuda.",
+      "evidence": [
+        "Êxodo 23:4",
+        "Êxodo 23:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a justiça em Êxodo 23:1–9?",
+      "verseRef": "Êxodo 23:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não seguir a maioria no mal"
+        },
+        {
+          "id": "b",
+          "text": "Ajudar até o inimigo"
+        },
+        {
+          "id": "c",
+          "text": "Recusar suborno e opressão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "Da maioria à ajuda e à pureza do juízo.",
+      "feedbackWrong": {
+        "default": "Comece pela multidão."
+      },
+      "hint": "Siga maioria, inimigo e suborno.",
+      "learningObjective": "Compreender o movimento da lei.",
+      "evidence": [
+        "Êxodo 23:2",
+        "Êxodo 23:4",
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 23:2, que verbo marca a inclinação perigosa à maioria?",
+      "verseRef": "Êxodo 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "inclinando-te"
+        },
+        {
+          "id": "b",
+          "text": "louvando"
+        },
+        {
+          "id": "c",
+          "text": "fugindo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "inclinando-te para a maioria",
+      "feedbackCorrect": "Inclinar-se à maioria pode perverter o direito.",
+      "feedbackWrong": {
+        "b": "Não é louvar.",
+        "c": "O verbo é inclinando-te."
+      },
+      "hint": "Veja o gerúndio no fim.",
+      "learningObjective": "Lembrar o verbo da pressão.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 23:4–5 a Mateus 5:44?",
+      "verseRef": "Êxodo 23:4",
+      "passageA": {
+        "ref": "Êxodo 23:4"
+      },
+      "passageB": {
+        "ref": "Mateus 5:44"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Amar o inimigo"
+        },
+        {
+          "id": "b",
+          "text": "Cobrar suborno"
+        },
+        {
+          "id": "c",
+          "text": "Seguir a multidão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "boi ou o jumento do teu inimigo",
+      "feedbackCorrect": "Ajudar o inimigo ecoa o amor aos inimigos.",
+      "feedbackWrong": {
+        "b": "O elo é ajuda, não suborno.",
+        "c": "É o contrário da multidão no mal."
+      },
+      "hint": "Compare o tratamento ao inimigo.",
+      "learningObjective": "Relacionar lei e Sermão.",
+      "evidence": [
+        "Êxodo 23:4",
+        "Mateus 5:44"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 23:1–9 sustenta que justiça se curva à maioria, ao presente e ao ódio.",
+      "verseRef": "Êxodo 23:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "A lei resiste a maioria, suborno e ódio.",
+      "feedbackWrong": {
+        "true": "O texto corta maioria no mal, suborno e abandono."
+      },
+      "hint": "Veja multidão, suborno e inimigo.",
+      "learningObjective": "Interpretar a justiça inflexível.",
+      "evidence": [
+        "Êxodo 23:2",
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 23:7, toque quem não se deve matar.",
+      "verseRef": "Êxodo 23:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "inocente"
+        },
+        {
+          "id": "b",
+          "text": "ímpio"
+        },
+        {
+          "id": "c",
+          "text": "acusações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não mate o inocente e o justo",
+      "feedbackCorrect": "É proibido matar o inocente e o justo.",
+      "feedbackWrong": {
+        "b": "O ímpio não será absolvido; o protegido é o inocente.",
+        "c": "\"acusações\" se afastam; o protegido é o inocente."
+      },
+      "hint": "Veja quem não se mata.",
+      "learningObjective": "Sustentar a proteção do inocente.",
+      "evidence": [
+        "Êxodo 23:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 23:1–9 sustenta sobre justiça?",
+      "verseRef": "Êxodo 23:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça não se curva a maioria, presente ou ódio"
+        },
+        {
+          "id": "b",
+          "text": "A maioria sempre tem razão"
+        },
+        {
+          "id": "c",
+          "text": "Suborno fortalece os sábios"
+        },
+        {
+          "id": "d",
+          "text": "O forasteiro pode ser oprimido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o suborno cega até os sábios e perverte",
+      "feedbackCorrect": "Multidão, suborno e ódio não mandam na justiça.",
+      "feedbackWrong": {
+        "b": "Seguir a multidão no mal é proibido.",
+        "c": "Suborno cega.",
+        "d": "O forasteiro é protegido."
+      },
+      "hint": "Una as proibições do bloco.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 23:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga essa justiça à Escritura?",
+      "verseRef": "Êxodo 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "A lei resiste à maioria no mal"
+        },
+        {
+          "id": "b",
+          "text": "Provérbios condena distorcer o justo"
+        },
+        {
+          "id": "c",
+          "text": "Jesus manda amar o inimigo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "Da lei à sabedoria e ao Sermão do Monte.",
+      "feedbackWrong": {
+        "default": "Comece por Êxodo; depois Provérbios e Jesus."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver a justiça ecoar na Escritura.",
+      "evidence": [
+        "Êxodo 23:2",
+        "Provérbios 17:15",
+        "Mateus 5:44"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 23:2, que termo nomeia a pressão a não seguir no mal?",
+      "verseRef": "Êxodo 23:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "multidão"
+        },
+        {
+          "id": "b",
+          "text": "templo"
+        },
+        {
+          "id": "c",
+          "text": "deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não seguirás a multidão para praticar o mal",
+      "feedbackCorrect": "O termo é multidão.",
+      "feedbackWrong": {
+        "b": "Não é templo.",
+        "c": "O termo é multidão."
+      },
+      "hint": "Veja a quem não se segue no mal.",
+      "learningObjective": "Lembrar o termo da pressão.",
+      "evidence": [
+        "Êxodo 23:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 23:8 a Provérbios 17:15?",
+      "verseRef": "Êxodo 23:8",
+      "passageA": {
+        "ref": "Êxodo 23:8"
+      },
+      "passageB": {
+        "ref": "Provérbios 17:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Justiça distorcida"
+        },
+        {
+          "id": "b",
+          "text": "Festa no Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Construção do arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "perverte as palavras dos justos",
+      "feedbackCorrect": "Os dois textos condenam torcer o justo.",
+      "feedbackWrong": {
+        "b": "O elo é justiça.",
+        "c": "Não é sobre a arca."
+      },
+      "hint": "Compare o que perverte o justo.",
+      "learningObjective": "Ligar lei e Provérbios.",
+      "evidence": [
+        "Êxodo 23:8",
+        "Provérbios 17:15"
+      ]
+    }
+  ]
+}

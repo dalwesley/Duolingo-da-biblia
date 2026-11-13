@@ -1,0 +1,113 @@
+{
+  "slug": "colossenses-cap",
+  "title": "Colossenses",
+  "description": "Colossenses capítulo a capítulo: Cristo suficiente para a fé e a vida nova.",
+  "icon": "👑",
+  "color": "#D35400",
+  "order": 66,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Cristo suficiente · cap. 1–2",
+      "icon": "zap",
+      "section": "Colossenses",
+      "missions": [
+        {
+          "slug": "clc-01-reconciliados-para-serem-santos",
+          "title": "Reconciliados para serem santos",
+          "subtitle": "Colossenses 1:21–29",
+          "intro": "Outrora afastados, agora reconciliados no corpo de Cristo pela morte.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Colossenses 1:21–29",
+          "hookVerse": "E a vocês, que outrora eram estranhos e inimigos no entendimento por causa de suas obras malignas, agora os reconciliou. no corpo da sua carne, por meio da sua morte, para apresentar-vos diante dele santos, irrepreensíveis e sem culpa",
+          "hookNote": "Cristo em vós, esperança da glória: Paulo anuncia a todo homem para apresentá-lo perfeito em Cristo.",
+          "centralInsight": "Cristo em vós, esperança da glória: Paulo anuncia a todo homem para apresentá-lo perfeito em Cristo.",
+          "objective": "Permanecer firmes na fé"
+        },
+        {
+          "slug": "clc-02-nao-vos-julgue-ninguem",
+          "title": "Não vos julgue ninguém",
+          "subtitle": "Colossenses 2:16–23",
+          "intro": "Paulo alerta contra regras sobre comida, festas e falsa humildade.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Colossenses 2:16–23",
+          "hookVerse": "Portanto, ninguém vos julgue por causa do que comeis ou bebeis, ou em relação aos dias de festa, às luas novas ou aos sábados. São apenas sombras das coisas que estavam por vir; mas o corpo é de Cristo.",
+          "hookNote": "A realidade é Cristo: regulamentos humanos não têm valor contra a sensualidade.",
+          "centralInsight": "A realidade é Cristo: regulamentos humanos não têm valor contra a sensualidade.",
+          "objective": "Apegar-se a Cristo"
+        },
+        {
+          "slug": "clc-boss-1",
+          "title": "Travessia: Cristo suficiente",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a reconciliação em Cristo e a liberdade das regras humanas.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Cristo suficiente",
+          "hookVerse": "Revise a reconciliação em Cristo e a liberdade das regras humanas.",
+          "hookNote": "Revise a reconciliação em Cristo e a liberdade das regras humanas.",
+          "centralInsight": "Cristo basta: nele há esperança e liberdade verdadeira",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Vida nova · cap. 3–4",
+      "icon": "zap",
+      "section": "Colossenses",
+      "missions": [
+        {
+          "slug": "clc-03-revesti-vos-de-amor",
+          "title": "Revesti-vos de amor",
+          "subtitle": "Colossenses 3:12–17",
+          "intro": "Como eleitos de Deus, a igreja veste misericórdia, humildade e amor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Colossenses 3:12–17",
+          "hookVerse": "Revesti-vos, portanto, como eleitos de Deus, santos e amados, de ternos afetos de misericórdia, bondade, humildade, mansidão e longanimidade. Suportai-vos uns aos outros e perdoai-vos mutuamente, caso alguém tiver uma queixa contra outro; assim como o Senhor vos perdoou, assim também perdoai-vos.",
+          "hookNote": "Sobre tudo, revesti-vos de amor; a paz de Cristo reine, e tudo se faça em nome do Senhor Jesus.",
+          "centralInsight": "Sobre tudo, revesti-vos de amor; a paz de Cristo reine, e tudo se faça em nome do Senhor Jesus.",
+          "objective": "Revestir-se de amor"
+        },
+        {
+          "slug": "clc-04-orar-e-aproveitar-o",
+          "title": "Orar e aproveitar o tempo",
+          "subtitle": "Colossenses 4:2–9",
+          "intro": "Paulo pede oração e sabedoria no trato com os de fora.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Colossenses 4:2–9",
+          "hookVerse": "Perseverem na oração, vigiando com gratidão. Orando também por nós, para que Deus nos abra uma porta para a palavra, a fim de que possamos falar do mistério de Cristo, pelo qual também estou algemado;",
+          "hookNote": "Perseverai na oração; andai com sabedoria para com os de fora, remindo o tempo.",
+          "centralInsight": "Perseverai na oração; andai com sabedoria para com os de fora, remindo o tempo.",
+          "objective": "Orar e remir o tempo"
+        },
+        {
+          "slug": "clc-boss-2",
+          "title": "Travessia: Vida nova",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise o amor que reveste e a oração que abre portas.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Vida nova",
+          "hookVerse": "Revise o amor que reveste e a oração que abre portas.",
+          "hookNote": "Revise o amor que reveste e a oração que abre portas.",
+          "centralInsight": "A vida nova em Cristo ama, ora e aproveita o tempo",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

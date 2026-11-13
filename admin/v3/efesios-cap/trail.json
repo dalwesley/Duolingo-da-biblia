@@ -1,0 +1,141 @@
+{
+  "slug": "efesios-cap",
+  "title": "Efésios",
+  "description": "Efésios capítulo a capítulo: a igreja em Cristo, unida e forte no Senhor.",
+  "icon": "🛡️",
+  "color": "#2980B9",
+  "order": 64,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Em Cristo · cap. 1–3",
+      "icon": "zap",
+      "section": "Efésios",
+      "missions": [
+        {
+          "slug": "efc-01-olhos-iluminados",
+          "title": "Olhos iluminados",
+          "subtitle": "Efésios 1:15–23",
+          "intro": "Paulo ora para que a igreja conheça a esperança e o poder de Deus.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Efésios 1:15–23",
+          "hookVerse": "Por isso, também eu, ouvindo da fé que existe entre vocês no Senhor Jesus e do amor que têm por todos os santos, Não deixo de dar graças a Deus por vocês mencionando-os em minhas orações.",
+          "hookNote": "Deus pôs todas as coisas debaixo dos pés de Cristo e o deu como cabeça à igreja.",
+          "centralInsight": "Deus pôs todas as coisas debaixo dos pés de Cristo e o deu como cabeça à igreja.",
+          "objective": "Conhecer a esperança em Cristo"
+        },
+        {
+          "slug": "efc-02-um-so-povo",
+          "title": "Um só povo",
+          "subtitle": "Efésios 2:13–22",
+          "intro": "Longe e perto foram aproximados pelo sangue de Cristo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Efésios 2:13–22",
+          "hookVerse": "Mas agora, em Cristo Jesus, vocês que antes estavam distantes, foram aproximados pelo sangue de Cristo. Porque Ele é a nossa paz, que de ambos fez um; e, tendo derrubado a parede de separação que havia entre nós, a inimizade.",
+          "hookNote": "Cristo é a nossa paz: de dois povos fez um e edifica a casa de Deus no Espírito.",
+          "centralInsight": "Cristo é a nossa paz: de dois povos fez um e edifica a casa de Deus no Espírito.",
+          "objective": "Viver em paz em Cristo"
+        },
+        {
+          "slug": "efc-03-compreender-o-amor",
+          "title": "Compreender o amor",
+          "subtitle": "Efésios 3:14–21",
+          "intro": "Paulo se ajoelha e pede força e compreensão do amor de Cristo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Efésios 3:14–21",
+          "hookVerse": "Por esta razão, me coloco de joelhos diante do Pai de nosso Senhor Jesus Cristo, Do qual toda a família recebe o nome tanto no céu como sobre a terra.",
+          "hookNote": "Cristo habita no coração pela fé; o amor dele ultrapassa o entendimento e enche de toda a plenitude de Deus.",
+          "centralInsight": "Cristo habita no coração pela fé; o amor dele ultrapassa o entendimento e enche de toda a plenitude de Deus.",
+          "objective": "Cheios do amor de Cristo"
+        },
+        {
+          "slug": "efc-boss-1",
+          "title": "Travessia: Em Cristo",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a cabeça Cristo, a paz que une e o amor que enche.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Em Cristo",
+          "hookVerse": "Revise a cabeça Cristo, a paz que une e o amor que enche.",
+          "hookNote": "Revise a cabeça Cristo, a paz que une e o amor que enche.",
+          "centralInsight": "Em Cristo a igreja conhece esperança, paz e amor",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    },
+    {
+      "title": "Andar e lutar · cap. 4–6",
+      "icon": "zap",
+      "section": "Efésios",
+      "missions": [
+        {
+          "slug": "efc-04-unidade-do-espirito",
+          "title": "Unidade do Espírito",
+          "subtitle": "Efésios 4:1–7",
+          "intro": "Paulo roga que a igreja ande de modo digno do chamado.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Efésios 4:1–7",
+          "hookVerse": "Exorto vocês, portanto, eu, prisioneiro no Senhor, que andem de maneira digna da vocação à qual foram chamados. Com toda a humildade e mansidão, com longanimidade, suportando-vos uns aos outros em amor,",
+          "hookNote": "Há um só corpo, um Espírito, um Senhor, uma fé, um batismo: guardai a unidade no vínculo da paz.",
+          "centralInsight": "Há um só corpo, um Espírito, um Senhor, uma fé, um batismo: guardai a unidade no vínculo da paz.",
+          "objective": "Guardar a unidade"
+        },
+        {
+          "slug": "efc-05-andar-com-sabedoria",
+          "title": "Andar com sabedoria",
+          "subtitle": "Efésios 5:15–21",
+          "intro": "Os dias são maus; a igreja precisa remir o tempo e entender a vontade do Senhor.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Efésios 5:15–21",
+          "hookVerse": "Portanto, vejam cuidadosamente como vocês andam, não como insensatos, mas como sábios. Remindo o tempo, pois os dias são maus.",
+          "hookNote": "Não vos embriagueis, mas enchei-vos do Espírito: cantai, dai graças e sujeitai-vos uns aos outros.",
+          "centralInsight": "Não vos embriagueis, mas enchei-vos do Espírito: cantai, dai graças e sujeitai-vos uns aos outros.",
+          "objective": "Andar cheios do Espírito"
+        },
+        {
+          "slug": "efc-06-orar-em-todo-tempo",
+          "title": "Orar em todo tempo",
+          "subtitle": "Efésios 6:18–24",
+          "intro": "Depois da armadura, Paulo insiste na oração por todos os santos e pelo evangelho.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Efésios 6:18–24",
+          "hookVerse": "Orando em todo o tempo com toda oração e súplica, no Espírito e vigiando com toda perseverança e súplica por todos os santos. E também por mim, para que me seja dada, no abrir da minha boca, a palavra, para com intrepidez fazer conhecido o mistério do evangelho.",
+          "hookNote": "Orai em todo tempo no Espírito, com perseverança, também pelos que anunciam o mistério do evangelho.",
+          "centralInsight": "Orai em todo tempo no Espírito, com perseverança, também pelos que anunciam o mistério do evangelho.",
+          "objective": "Perseverar em oração"
+        },
+        {
+          "slug": "efc-boss-2",
+          "title": "Travessia: Andar e lutar",
+          "subtitle": "Revisão da etapa 2",
+          "intro": "Revise a unidade, o andar no Espírito e a oração perseverante.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Andar e lutar",
+          "hookVerse": "Revise a unidade, o andar no Espírito e a oração perseverante.",
+          "hookNote": "Revise a unidade, o andar no Espírito e a oração perseverante.",
+          "centralInsight": "A igreja anda unida, cheia do Espírito e firme na oração",
+          "objective": "Revisão da etapa 2"
+        }
+      ]
+    }
+  ]
+}

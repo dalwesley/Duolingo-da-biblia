@@ -1,0 +1,493 @@
+{
+  "study": {
+    "passageRef": "João 6:32–35",
+    "passages": [
+      { "ref": "João 6:32–35" },
+      { "ref": "João 6:36–40" }
+    ],
+    "context": "Depois dos pães multiplicados, a multidão procura Jesus e recorda o maná do deserto. O diálogo trata de quem dá o pão que vem do céu.",
+    "keyword": "pão da vida",
+    "keywordGloss": "É o nome com que Jesus se apresenta: alimento verdadeiro para quem se aproxima dele.",
+    "focusQuestion": "Quando a fome aperta, você busca Jesus ou apenas o que ele pode dar?",
+    "reflectionPrompts": [
+      "O pão que o Pai dá",
+      "Quem vem é acolhido",
+      "Vontade e vida eterna"
+    ],
+    "facts": [
+      {
+        "text": "Não foi Moisés quem deu o pão do céu.",
+        "evidenceRef": "João 6:32",
+        "evidenceSpan": "não foi Moisés quem vos deu o pão do céu"
+      },
+      {
+        "text": "O pão de Deus desce do céu e dá vida ao mundo.",
+        "evidenceRef": "João 6:33",
+        "evidenceSpan": "desce do céu e dá vida ao mundo"
+      },
+      {
+        "text": "A multidão pede esse pão para sempre.",
+        "evidenceRef": "João 6:34",
+        "evidenceSpan": "dá-nos sempre desse pão"
+      },
+      {
+        "text": "Jesus diz que é o pão da vida.",
+        "evidenceRef": "João 6:35",
+        "evidenceSpan": "Eu sou o pão da vida"
+      },
+      {
+        "text": "Quem vem a Jesus não é lançado fora.",
+        "evidenceRef": "João 6:37",
+        "evidenceSpan": "de modo nenhum o lançarei fora"
+      },
+      {
+        "text": "Quem vê o Filho e nele crê tem a vida eterna.",
+        "evidenceRef": "João 6:40",
+        "evidenceSpan": "nele crê tenha a vida eterna"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "pão da vida",
+        "gloss": "O nome com que Jesus se identifica, ligando sua pessoa ao alimento que sacia."
+      },
+      {
+        "term": "verdadeiro",
+        "gloss": "Qualifica o pão que o Pai dá, distinto do pão associado a Moisés."
+      },
+      {
+        "term": "vontade",
+        "gloss": "O plano de quem enviou Jesus, que ele veio cumprir no lugar da própria."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Pai aponta o pão verdadeiro",
+        "evidenceRef": "João 6:32"
+      },
+      {
+        "label": "Jesus se nomeia o pão da vida",
+        "evidenceRef": "João 6:35"
+      },
+      {
+        "label": "Crer no Filho traz vida eterna",
+        "evidenceRef": "João 6:40"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jesus afasta Moisés da função de doador e apresenta o Pai como quem dá o pão verdadeiro.",
+        "marker": "mas",
+        "evidenceRef": "João 6:32"
+      },
+      {
+        "kind": "propósito",
+        "text": "A descida de Jesus tem um fim declarado: cumprir a vontade de quem o enviou.",
+        "marker": "para",
+        "evidenceRef": "João 6:38"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ver o Filho e crer nele resulta em vida eterna, com ressurreição no último dia.",
+        "marker": null,
+        "evidenceRef": "João 6:40"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Êxodo 16:15", "bridge": "Deus dá o pão" },
+      { "ref": "João 4:14", "bridge": "Sede saciada por Jesus" },
+      { "ref": "João 5:24", "bridge": "Crer traz vida eterna" }
+    ],
+    "misreadings": [
+      {
+        "text": "Moisés deu ao povo o verdadeiro pão do céu.",
+        "why": "Jesus afirma o contrário: não foi Moisés; o Pai é quem dá o verdadeiro pão."
+      },
+      {
+        "text": "Jesus lança fora quem vem a ele com fé ainda fraca.",
+        "why": "Ele diz que o que vem a ele, de modo nenhum o lançará fora."
+      },
+      {
+        "text": "Jesus desceu para fazer a própria vontade, à parte de quem o enviou.",
+        "why": "Ele desceu para fazer a vontade daquele que o enviou, não a sua própria."
+      }
+    ],
+    "centralInsight": "Jesus é o pão da vida: quem vem a ele nunca terá fome.",
+    "anchorQuestion": "O que Jesus promete a quem se aproxima dele?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 6:35, Jesus declara ser o pão da vida.",
+      "verseRef": "João 6:35",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu sou o pão da vida",
+      "feedbackCorrect": "Jesus se apresenta com esse nome: ele é o pão da vida.",
+      "feedbackWrong": {
+        "false": "A declaração está no versículo: Jesus diz ser o pão da vida."
+      },
+      "hint": "Olhe a frase em que Jesus se nomeia.",
+      "learningObjective": "Reconhecer a declaração de Jesus sobre si mesmo.",
+      "evidence": ["João 6:35"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 6:32, toque quem dá o verdadeiro pão do céu.",
+      "verseRef": "João 6:32",
+      "options": [
+        { "id": "a", "text": "Moisés" },
+        { "id": "b", "text": "meu Pai" },
+        { "id": "c", "text": "o pão" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "meu Pai quem vos dá o verdadeiro pão",
+      "feedbackCorrect": "O Pai é quem dá o verdadeiro pão; Moisés fica de fora.",
+      "feedbackWrong": {
+        "a": "Moisés é afastado na frase; o doador nomeado é outro.",
+        "c": "O pão é o dom entregue, não a pessoa que o dá."
+      },
+      "hint": "Veja quem Jesus nomeia como doador.",
+      "learningObjective": "Identificar quem Jesus apresenta como doador do pão verdadeiro.",
+      "evidence": ["João 6:32"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 6:37, o que Jesus afirma sobre quem vem a ele?",
+      "verseRef": "João 6:37",
+      "options": [
+        { "id": "a", "text": "Não o lança fora em hipótese alguma" },
+        { "id": "b", "text": "Exige um sinal novo antes de receber" },
+        { "id": "c", "text": "Devolve a pessoa ao cuidado de Moisés" },
+        { "id": "d", "text": "Adia o acolhimento para o último dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de modo nenhum o lançarei fora",
+      "feedbackCorrect": "Jesus é claro: quem vem a ele não é lançado fora.",
+      "feedbackWrong": {
+        "b": "Não há pedido de novo sinal; há acolhida para quem vem.",
+        "c": "A pessoa não volta a Moisés; Jesus a recebe.",
+        "d": "O último dia é da ressurreição, não da espera para acolher."
+      },
+      "hint": "Leia o que Jesus diz que não fará.",
+      "learningObjective": "Observar a promessa de Jesus a quem vem a ele.",
+      "evidence": ["João 6:37"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte a declaração de João 6:35 na ordem do texto.",
+      "verseRef": "João 6:35",
+      "options": [
+        { "id": "a", "text": "Eu sou o pão da vida" },
+        { "id": "b", "text": "quem se aproxima de mim nunca sentirá fome" },
+        { "id": "c", "text": "quem crê em mim jamais terá sede" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eu sou o pão da vida",
+      "feedbackCorrect": "A ordem vai do nome de Jesus à fome e, no fim, à sede.",
+      "feedbackWrong": {
+        "default": "Comece pelo nome de Jesus; fome e sede vêm em seguida."
+      },
+      "hint": "A frase abre com a apresentação de Jesus.",
+      "learningObjective": "Reconhecer a ordem da declaração em João 6:35.",
+      "evidence": ["João 6:35"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 6:33, o pão de Deus dá o quê ao mundo?",
+      "verseRef": "João 6:33",
+      "options": [
+        { "id": "a", "text": "luz" },
+        { "id": "b", "text": "paz" },
+        { "id": "c", "text": "vida" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "dá vida ao mundo",
+      "feedbackCorrect": "O pão de Deus dá vida ao mundo, não só comida.",
+      "feedbackWrong": {
+        "a": "Luz não entra nessa frase; o dom ao mundo tem outro nome.",
+        "b": "Paz caberia na gramática. O texto usa outra palavra."
+      },
+      "hint": "Olhe o substantivo imediatamente antes de ao mundo.",
+      "learningObjective": "Lembrar o que o pão de Deus dá ao mundo.",
+      "evidence": ["João 6:33"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 6:32 comunica que se liga a este contexto?",
+      "verseRef": "João 6:32",
+      "passageA": { "ref": "João 6:32" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A multidão espera pão vindo do céu, como no deserto."
+      },
+      "options": [
+        { "id": "a", "text": "Moisés repete o deserto" },
+        { "id": "b", "text": "O Pai dá o pão" },
+        { "id": "c", "text": "O céu fica fechado" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "meu Pai quem vos dá o verdadeiro pão",
+      "feedbackCorrect": "A multidão espera pão do céu, e Jesus aponta o Pai como doador.",
+      "feedbackWrong": {
+        "a": "Jesus não devolve o dom a Moisés; o doador é o Pai.",
+        "c": "O céu não se fecha; o Pai dá o verdadeiro pão."
+      },
+      "hint": "Veja quem Jesus apresenta como fonte do pão.",
+      "learningObjective": "Ligar a fala de Jesus à espera da multidão por pão do céu.",
+      "evidence": ["João 6:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 6:38, Jesus desceu do céu para fazer a própria vontade.",
+      "verseRef": "João 6:38",
+      "correctOptionId": "false",
+      "evidenceSpan": "não para fazer a minha própria vontade",
+      "feedbackCorrect": "O texto nega essa ideia: ele não veio fazer a própria vontade.",
+      "feedbackWrong": {
+        "true": "A negação está no meio: não para fazer a própria vontade."
+      },
+      "hint": "Repare na negação no meio do versículo.",
+      "learningObjective": "Compreender o propósito da descida de Jesus.",
+      "evidence": ["João 6:38"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 6:32, toque a palavra que marca o contraste na frase.",
+      "verseRef": "João 6:32",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "Moisés" },
+        { "id": "c", "text": "verdadeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas é meu Pai",
+      "feedbackCorrect": "A palavra mas inverte o sujeito: o doador passa a ser o Pai.",
+      "feedbackWrong": {
+        "b": "Moisés entra no contraste. A marca é uma palavra curta antes.",
+        "c": "Verdadeiro qualifica o pão. A marca do contraste vem antes."
+      },
+      "hint": "Procure a palavra curta entre os dois agentes.",
+      "learningObjective": "Reconhecer o marcador de contraste na resposta de Jesus.",
+      "evidence": ["João 6:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação João 6:32 estabelece entre Moisés e o Pai?",
+      "verseRef": "João 6:32",
+      "options": [
+        { "id": "a", "text": "Os dois entregam juntos o mesmo pão verdadeiro" },
+        { "id": "b", "text": "O Pai apenas confirma o pão que Moisés já deu" },
+        { "id": "c", "text": "O Pai dá o pão verdadeiro, e Moisés não foi o doador" },
+        { "id": "d", "text": "Moisés ocupa o lugar do Pai nesse dom" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não foi Moisés quem vos deu o pão do céu",
+      "feedbackCorrect": "O contraste separa os dois: o Pai dá, Moisés não foi o doador.",
+      "feedbackWrong": {
+        "a": "O texto não apresenta os dois como doadores do mesmo pão.",
+        "b": "Jesus não confirma um dom anterior de Moisés; ele o nega.",
+        "d": "O lugar de doador permanece com o Pai, não com Moisés."
+      },
+      "hint": "Veja quem a frase nega e quem ela afirma.",
+      "learningObjective": "Relacionar a negação sobre Moisés com o dom do Pai.",
+      "evidence": ["João 6:32"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência da fala de Jesus até a vida eterna?",
+      "verseRef": "João 6:35",
+      "options": [
+        { "id": "a", "text": "O Pai aponta o pão verdadeiro" },
+        { "id": "b", "text": "Jesus se nomeia o pão da vida" },
+        { "id": "c", "text": "Crer no Filho traz vida eterna" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eu sou o pão da vida",
+      "feedbackCorrect": "A fala segue do dom do Pai ao nome de Jesus e à vida eterna.",
+      "feedbackWrong": {
+        "default": "Parta do Pai, passe pelo nome de Jesus e termine na vida eterna."
+      },
+      "hint": "Siga os movimentos na ordem em que a fala avança.",
+      "learningObjective": "Compreender os três movimentos da fala de Jesus.",
+      "evidence": ["João 6:32", "João 6:35", "João 6:40"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 6:38, que verbo indica de onde Jesus veio?",
+      "verseRef": "João 6:38",
+      "options": [
+        { "id": "a", "text": "desci" },
+        { "id": "b", "text": "saí" },
+        { "id": "c", "text": "vim" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu desci do céu",
+      "feedbackCorrect": "O verbo desci situa a origem: Jesus veio do céu.",
+      "feedbackWrong": {
+        "b": "Sair não é o verbo usado; a frase tem outro movimento.",
+        "c": "Vir caberia no sentido. O texto escolhe outro verbo."
+      },
+      "hint": "Observe o verbo colocado entre eu e do céu.",
+      "learningObjective": "Identificar a ação que situa a origem de Jesus.",
+      "evidence": ["João 6:38"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 6:33 a Êxodo 16:15?",
+      "verseRef": "João 6:33",
+      "passageA": { "ref": "João 6:33" },
+      "passageB": { "ref": "Êxodo 16:15" },
+      "options": [
+        { "id": "a", "text": "Moisés fabrica o alimento" },
+        { "id": "b", "text": "Deus dá o pão" },
+        { "id": "c", "text": "Israel recusa o dom" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o pão de Deus",
+      "feedbackCorrect": "Nos dois textos, quem dá o pão é Deus, não uma mão humana.",
+      "feedbackWrong": {
+        "a": "Moisés anuncia o pão. Quem dá, nos dois textos, é Deus.",
+        "c": "O vínculo é o dom de Deus, não uma recusa de Israel."
+      },
+      "hint": "Compare quem fornece o alimento em cada texto.",
+      "learningObjective": "Relacionar o pão de Deus em João ao pão que o Senhor deu no deserto.",
+      "evidence": ["João 6:33", "Êxodo 16:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em João 6:40, a vontade de quem enviou o Filho inclui vida eterna para quem o vê e nele crê.",
+      "verseRef": "João 6:40",
+      "correctOptionId": "true",
+      "evidenceSpan": "que todo homem que vê o Filho e nele crê tenha a vida eterna",
+      "feedbackCorrect": "A vontade citada une visão, fé e vida eterna no mesmo versículo.",
+      "feedbackWrong": {
+        "false": "O versículo põe ver, crer e vida eterna dentro da mesma vontade."
+      },
+      "hint": "Leia o que a vontade determina no versículo.",
+      "learningObjective": "Interpretar a vontade do Pai como vida eterna para quem crê.",
+      "evidence": ["João 6:40"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 6:40, toque a fé que acompanha a visão.",
+      "verseRef": "João 6:40",
+      "options": [
+        { "id": "a", "text": "o Filho" },
+        { "id": "b", "text": "nele crê" },
+        { "id": "c", "text": "último dia" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "vê o Filho e nele crê",
+      "feedbackCorrect": "Ver o Filho vem acompanhado de crer nele na mesma frase.",
+      "feedbackWrong": {
+        "a": "O Filho é o alvo da visão. A fé está na expressão ao lado.",
+        "c": "O último dia marca a ressurreição, não a fé pedida agora."
+      },
+      "hint": "Procure a ação da pessoa, não o dia final.",
+      "learningObjective": "Sustentar com o texto que a vida eterna une ver e crer.",
+      "evidence": ["João 6:40"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 6:37–38 sustenta?",
+      "verseRef": "João 6:37–38",
+      "options": [
+        { "id": "a", "text": "Acolhe quem vem e ainda assim impõe a própria vontade" },
+        { "id": "b", "text": "Acolhe quem vem e realiza a vontade de quem o enviou" },
+        { "id": "c", "text": "Rejeita quem vem e segue apenas a própria vontade" },
+        { "id": "d", "text": "Veio sem envio e lança fora quem não crê" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas sim a vontade daquele que me enviou",
+      "feedbackCorrect": "Ele acolhe quem vem e faz a vontade de quem o enviou.",
+      "feedbackWrong": {
+        "a": "A própria vontade é justamente o que o texto nega.",
+        "c": "Quem vem não é rejeitado; Jesus diz que não o lança fora.",
+        "d": "Ele foi enviado e não lança fora quem vem a ele."
+      },
+      "hint": "Una o acolhimento ao fim declarado da descida.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a missão de Jesus.",
+      "evidence": ["João 6:37–38"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento o argumento de Jesus sustenta?",
+      "verseRef": "João 6:39–40",
+      "options": [
+        { "id": "a", "text": "O pão desce do céu com vida" },
+        { "id": "b", "text": "Quem vem a Jesus fica acolhido" },
+        { "id": "c", "text": "A fé no Filho inclui ressurreição" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eu o ressuscitarei no último dia",
+      "feedbackCorrect": "O caminho vai do pão que dá vida ao acolhimento e à ressurreição.",
+      "feedbackWrong": {
+        "default": "Siga do pão que dá vida para o acolhimento e a ressurreição."
+      },
+      "hint": "O desfecho está no último dia da fala.",
+      "learningObjective": "Acompanhar a lógica da fala de Jesus até a ressurreição.",
+      "evidence": ["João 6:33", "João 6:37", "João 6:40"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 6:38, o que Jesus recusa fazer por conta própria?",
+      "verseRef": "João 6:38",
+      "options": [
+        { "id": "a", "text": "glória" },
+        { "id": "b", "text": "vontade" },
+        { "id": "c", "text": "obra" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a minha própria vontade",
+      "feedbackCorrect": "O termo é vontade: a dele cede lugar à de quem o enviou.",
+      "feedbackWrong": {
+        "a": "Glória não aparece aí. O texto nomeia outro termo.",
+        "c": "Obra caberia na frase. Jesus usa outro termo nesse ponto."
+      },
+      "hint": "Leia o termo recusado no meio da frase.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da missão de Jesus.",
+      "evidence": ["João 6:38"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 6:35 a João 4:14?",
+      "verseRef": "João 6:35",
+      "passageA": { "ref": "João 6:35" },
+      "passageB": { "ref": "João 4:14" },
+      "options": [
+        { "id": "a", "text": "Dois pães no deserto" },
+        { "id": "b", "text": "Sede castigada para sempre" },
+        { "id": "c", "text": "Sede saciada por Jesus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "jamais terá sede",
+      "feedbackCorrect": "Nos dois textos, Jesus promete acabar com a sede de quem o recebe.",
+      "feedbackWrong": {
+        "a": "João 4 fala de água viva, não de pães no deserto.",
+        "b": "A sede não é castigo. Jesus promete que ela termina."
+      },
+      "hint": "Compare a promessa de Jesus sobre a sede.",
+      "learningObjective": "Ligar a promessa sobre a sede em João 6 à palavra de Jesus em João 4.",
+      "evidence": ["João 6:35", "João 4:14"]
+    }
+  ]
+}

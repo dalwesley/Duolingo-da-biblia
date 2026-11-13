@@ -1,0 +1,485 @@
+{
+  "study": {
+    "passageRef": "Joel 2:1–6",
+    "passages": [
+      { "ref": "Joel 2:1–6" },
+      { "ref": "Joel 2:7–9" }
+    ],
+    "context": "Joel anuncia o dia do Senhor com trombeta em Sião. Um povo grande e poderoso avança como fogo; a terra treme diante dele.",
+    "keyword": "trombeta",
+    "keywordGloss": "O sinal que desperta Sião: o Dia do Senhor vem e já está próximo.",
+    "focusQuestion": "O que no seu dia precisa ouvir o alerta da trombeta do Senhor?",
+    "reflectionPrompts": [
+      "Trombeta em Sião",
+      "Dia de trevas",
+      "Nada lhe escapa"
+    ],
+    "facts": [
+      {
+        "text": "A trombeta deve soar em Sião e clamar no monte santo.",
+        "evidenceRef": "Joel 2:1",
+        "evidenceSpan": "Toca a trombeta em Sião e clama em alta voz no meu monte santo"
+      },
+      {
+        "text": "O Dia do Senhor vem e já está próximo.",
+        "evidenceRef": "Joel 2:1",
+        "evidenceSpan": "o Dia do Senhor vem, já está próximo"
+      },
+      {
+        "text": "É dia de escuridão e densas trevas.",
+        "evidenceRef": "Joel 2:2",
+        "evidenceSpan": "Dia de escuridão e densas trevas"
+      },
+      {
+        "text": "Diante dele a terra é como o jardim do Éden; atrás, um deserto assolado.",
+        "evidenceRef": "Joel 2:3",
+        "evidenceSpan": "a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado"
+      },
+      {
+        "text": "Os povos tremem e os rostos se tornam pálidos.",
+        "evidenceRef": "Joel 2:6",
+        "evidenceSpan": "os povos tremem, e todos os rostos se tornam pálidos"
+      },
+      {
+        "text": "Assaltam a cidade e entram pelas janelas como um ladrão.",
+        "evidenceRef": "Joel 2:9",
+        "evidenceSpan": "entram pelas janelas como um ladrão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "trombeta",
+        "gloss": "Sinal de alerta no monte santo diante do Dia do Senhor."
+      },
+      {
+        "term": "trevas",
+        "gloss": "Imagem do dia: escuridão e densas trevas."
+      },
+      {
+        "term": "deserto",
+        "gloss": "O que fica atrás do avanço: terra assolada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Trombeta e alerta do Dia próximo",
+        "evidenceRef": "Joel 2:1"
+      },
+      {
+        "label": "Trevas e povo poderoso que avança",
+        "evidenceRef": "Joel 2:2–3"
+      },
+      {
+        "label": "Aspecto de cavaleiros e terror dos povos",
+        "evidenceRef": "Joel 2:4–6"
+      },
+      {
+        "label": "Assalto à cidade sem desvio de fila",
+        "evidenceRef": "Joel 2:7–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Os habitantes devem tremer porque o Dia do Senhor vem e já está próximo.",
+        "marker": "pois",
+        "evidenceRef": "Joel 2:1"
+      },
+      {
+        "kind": "contraste",
+        "text": "Diante dele a terra é como o Éden; atrás, um deserto assolado.",
+        "marker": "mas",
+        "evidenceRef": "Joel 2:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Diante dele os povos tremem e os rostos ficam pálidos.",
+        "marker": "Diante",
+        "evidenceRef": "Joel 2:6"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Sofonias 1:14–15", "bridge": "Dia grande e terrível" },
+      { "ref": "Amós 5:18–20", "bridge": "Dia do Senhor e trevas" },
+      { "ref": "Apocalipse 6:17", "bridge": "Dia da ira que vem" }
+    ],
+    "misreadings": [
+      {
+        "text": "O Dia do Senhor ainda está longe e pode ser ignorado.",
+        "why": "Joel 2:1 diz que o Dia vem e já está próximo."
+      },
+      {
+        "text": "O povo que avança deixa a terra mais fértil atrás de si.",
+        "why": "Atrás dele fica um deserto assolado; nada lhe escapa."
+      },
+      {
+        "text": "Os habitantes não precisam tremer; a trombeta é só festa.",
+        "why": "O texto manda tremer todos os habitantes da terra."
+      }
+    ],
+    "centralInsight": "O dia do Senhor é grande e terrível: ninguém o pode sofrer sem arrependimento.",
+    "anchorQuestion": "Segundo Joel 2:1, por que devem tremer os habitantes da terra?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Joel 2:1, o Dia do Senhor ainda está longe e não precisa preocupar.",
+      "verseRef": "Joel 2:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+      "feedbackCorrect": "O texto diz que o Dia vem e já está próximo.",
+      "feedbackWrong": { "true": "Releia o fim de 2:1: o Dia vem e já está próximo." },
+      "hint": "Veja o que se diz sobre a proximidade do Dia.",
+      "learningObjective": "Observar que o Dia do Senhor está próximo.",
+      "evidence": ["Joel 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Joel 2:1, toque o que deve soar em Sião.",
+      "verseRef": "Joel 2:1",
+      "evidenceSpan": "Toca a trombeta em Sião",
+      "feedbackCorrect": "A trombeta deve soar em Sião como alerta.",
+      "hint": "É o objeto do primeiro verbo do versículo.",
+      "learningObjective": "Identificar o sinal de alerta em Sião.",
+      "evidence": ["Joel 2:1"],
+      "options": [
+        { "id": "a", "text": "trombeta" },
+        { "id": "b", "text": "habitantes" },
+        { "id": "c", "text": "terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os habitantes devem tremer; não são o que se toca.",
+        "c": "A terra é o cenário do tremor, não o sinal."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Joel 2:3, como fica a terra atrás do avanço?",
+      "verseRef": "Joel 2:3",
+      "evidenceSpan": "atrás dele, um deserto assolado",
+      "feedbackCorrect": "Atrás fica um deserto assolado; nada lhe escapa.",
+      "hint": "Compare o que há diante e o que há atrás.",
+      "learningObjective": "Observar o contraste Éden/deserto.",
+      "evidence": ["Joel 2:3"],
+      "options": [
+        { "id": "a", "text": "Como o jardim do Éden" },
+        { "id": "b", "text": "Um deserto assolado" },
+        { "id": "c", "text": "Cheia de águas e mosto" },
+        { "id": "d", "text": "Coberta de cereais novos" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "O jardim do Éden descreve o que está diante, não atrás.",
+        "c": "O trecho não fala de águas e mosto atrás do avanço.",
+        "d": "Atrás fica desolação, não colheita nova."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Joel 2:1 na ordem do texto.",
+      "verseRef": "Joel 2:1",
+      "evidenceSpan": "Toca a trombeta em Sião e clama em alta voz no meu monte santo",
+      "feedbackCorrect": "Trombeta e clamor primeiro; depois o tremor e a proximidade do Dia.",
+      "hint": "O versículo começa com tocar e clamar.",
+      "learningObjective": "Reconhecer a sequência do alerta em 2:1.",
+      "evidence": ["Joel 2:1"],
+      "options": [
+        { "id": "a", "text": "Toca a trombeta em Sião e clama em alta voz no meu monte santo" },
+        { "id": "b", "text": "que tremam todos os habitantes da terra" },
+        { "id": "c", "text": "pois o Dia do Senhor vem, já está próximo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela trombeta; a proximidade do Dia fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Joel 2:2, de que é o dia anunciado além de escuridão?",
+      "verseRef": "Joel 2:2",
+      "evidenceSpan": "Dia de escuridão e densas trevas",
+      "feedbackCorrect": "É dia de escuridão e densas trevas.",
+      "hint": "É a palavra depois de \"densas\".",
+      "learningObjective": "Lembrar a imagem das trevas no Dia.",
+      "evidence": ["Joel 2:2"],
+      "options": [
+        { "id": "a", "text": "trevas" },
+        { "id": "b", "text": "flores" },
+        { "id": "c", "text": "vinhos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Flores\" não descreve o dia em 2:2.",
+        "c": "\"Vinhos\" não aparece em 2:2."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Joel 2:1 comunica que se liga a este contexto?",
+      "verseRef": "Joel 2:1",
+      "evidenceSpan": "Toca a trombeta em Sião",
+      "feedbackCorrect": "A trombeta em Sião alerta: o Dia do Senhor vem e já está próximo.",
+      "hint": "Ligue o sinal ao anúncio do Dia.",
+      "learningObjective": "Ligar a trombeta ao alerta do Dia próximo.",
+      "evidence": ["Joel 2:1"],
+      "passageA": { "ref": "Joel 2:1" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Dia do Senhor se aproxima e exige tremor e alerta."
+      },
+      "options": [
+        { "id": "a", "text": "Alerta do Dia próximo" },
+        { "id": "b", "text": "Festa sem temor algum" },
+        { "id": "c", "text": "Silêncio no monte santo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto manda tremer, não festejar sem temor.",
+        "c": "Há trombeta e clamor em alta voz, não silêncio."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Joel 2:3, a terra diante do avanço é como o jardim do Éden, mas atrás fica um deserto assolado.",
+      "verseRef": "Joel 2:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado",
+      "feedbackCorrect": "O \"mas\" marca o contraste: Éden diante, deserto atrás.",
+      "feedbackWrong": { "false": "Releia 2:3: o contraste Éden/deserto está explícito." },
+      "hint": "Compare o que há diante e o que há atrás.",
+      "learningObjective": "Compreender o contraste do avanço em 2:3.",
+      "evidence": ["Joel 2:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Joel 2:3, toque a palavra que marca o contraste entre diante e atrás.",
+      "verseRef": "Joel 2:3",
+      "evidenceSpan": "jardim do Éden, mas atrás dele",
+      "feedbackCorrect": "\"Mas\" vira a página: Éden diante, deserto atrás.",
+      "hint": "É a palavra curta entre as duas imagens da terra.",
+      "learningObjective": "Reconhecer o marcador de contraste em 2:3.",
+      "evidence": ["Joel 2:3"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "fogo" },
+        { "id": "c", "text": "chama" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Fogo\" descreve o avanço, não o contraste gramatical.",
+        "c": "\"Chama\" descreve o que abrasa atrás, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Joel 2:1–3 relaciona o alerta da trombeta com o avanço?",
+      "verseRef": "Joel 2:1–3",
+      "evidenceSpan": "nada lhe escapa",
+      "feedbackCorrect": "A trombeta alerta porque um povo poderoso avança e nada lhe escapa.",
+      "hint": "Ligue o Dia próximo ao que o povo deixa atrás de si.",
+      "learningObjective": "Relacionar o alerta ao avanço devastador.",
+      "evidence": ["Joel 2:1–3"],
+      "options": [
+        { "id": "a", "text": "A trombeta alerta porque o avanço nada deixa escapar" },
+        { "id": "b", "text": "A trombeta celebra a terra mais fértil depois" },
+        { "id": "c", "text": "O avanço é fraco e fácil de ignorar" },
+        { "id": "d", "text": "Só as nuvens mudam; a terra fica igual" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Atrás fica deserto, não fertilidade.",
+        "c": "É um povo grande e poderoso; os povos tremem.",
+        "d": "A terra muda de Éden a deserto."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Joel 2:1–9?",
+      "verseRef": "Joel 2:1–9",
+      "evidenceSpan": "Assaltam a cidade",
+      "feedbackCorrect": "Alerta, avanço com trevas, terror dos povos e assalto à cidade.",
+      "hint": "Comece pela trombeta; o assalto fecha.",
+      "learningObjective": "Seguir o movimento do alerta ao assalto.",
+      "evidence": ["Joel 2:1–9"],
+      "options": [
+        { "id": "a", "text": "Trombeta e alerta do Dia próximo" },
+        { "id": "b", "text": "Trevas e povo poderoso que avança" },
+        { "id": "c", "text": "Assalto à cidade sem desvio de fila" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela trombeta; o assalto vem por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Joel 2:1, que palavra liga o tremor à proximidade do Dia?",
+      "verseRef": "Joel 2:1",
+      "evidenceSpan": "pois o Dia do Senhor vem, já está próximo",
+      "feedbackCorrect": "\"Pois\" liga o tremor ao Dia que vem e já está próximo.",
+      "hint": "É a palavra curta antes de \"o Dia do Senhor\".",
+      "learningObjective": "Lembrar o marcador de causa em 2:1.",
+      "evidence": ["Joel 2:1"],
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "nunca" },
+        { "id": "c", "text": "quase" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Nunca\" não é o marcador em 2:1.",
+        "c": "\"Quase\" não aparece em 2:1."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Joel 2:2 a Amós 5:18–20?",
+      "verseRef": "Joel 2:2",
+      "evidenceSpan": "Dia de escuridão e densas trevas",
+      "feedbackCorrect": "Nos dois textos, o Dia do Senhor aparece ligado a trevas, não a alívio fácil.",
+      "hint": "Compare a imagem do Dia nos dois profetas.",
+      "learningObjective": "Relacionar as trevas do Dia em Joel e Amós.",
+      "evidence": ["Joel 2:2", "Amós 5:18–20"],
+      "passageA": { "ref": "Joel 2:2" },
+      "passageB": { "ref": "Amós 5:18–20" },
+      "options": [
+        { "id": "a", "text": "Dia do Senhor e trevas" },
+        { "id": "b", "text": "Dia só de luz plena" },
+        { "id": "c", "text": "Dia sem juízo algum" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos falam de escuridão e trevas.",
+        "c": "O Dia traz juízo, não ausência dele."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Joel 2:1–9, o povo que avança deixa a terra mais fértil atrás de si.",
+      "verseRef": "Joel 2:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "atrás dele, um deserto assolado; nada lhe escapa",
+      "feedbackCorrect": "Atrás fica deserto assolado; nada lhe escapa.",
+      "feedbackWrong": { "true": "Releia 2:3: atrás é deserto, não fertilidade." },
+      "hint": "Veja o que fica atrás do avanço.",
+      "learningObjective": "Interpretar o alcance devastador do avanço.",
+      "evidence": ["Joel 2:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Joel 2:3, toque o trecho que mostra que nada escapa ao avanço.",
+      "verseRef": "Joel 2:3",
+      "evidenceSpan": "nada lhe escapa",
+      "feedbackCorrect": "\"Nada lhe escapa\" fecha o contraste com totalidade.",
+      "hint": "Olhe a última cláusula do versículo.",
+      "learningObjective": "Sustentar a totalidade do avanço com o texto.",
+      "evidence": ["Joel 2:3"],
+      "options": [
+        { "id": "a", "text": "nada lhe escapa" },
+        { "id": "b", "text": "jardim do Éden" },
+        { "id": "c", "text": "fogo devorador" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O jardim descreve o que está diante, não a totalidade do alcance.",
+        "c": "O fogo descreve o avanço, mas a frase final afirma que nada escapa."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Joel 2:1–9 sustenta sobre o Dia do Senhor?",
+      "verseRef": "Joel 2:1–2",
+      "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+      "feedbackCorrect": "O Dia é grande e terrível: alerta, trevas e avanço que nada deixa escapar.",
+      "hint": "Compare cada opção com trombeta, trevas e deserto.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Joel 2:1–2"],
+      "options": [
+        { "id": "a", "text": "O Dia próximo exige tremor e não pode ser ignorado" },
+        { "id": "b", "text": "O Dia ainda está longe e pode ser adiado" },
+        { "id": "c", "text": "A trombeta é só festa sem juízo" },
+        { "id": "d", "text": "O avanço melhora a terra atrás de si" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que o Dia já está próximo.",
+        "c": "Há tremor e trevas, não só festa.",
+        "d": "Atrás fica deserto assolado."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o Dia do Senhor na Escritura?",
+      "verseRef": "Joel 2:1–2",
+      "evidenceSpan": "Dia de escuridão e densas trevas",
+      "feedbackCorrect": "Joel anuncia trevas; Amós e Sofonias ecoam o Dia terrível; Apocalipse fala da ira.",
+      "hint": "Parta de Joel e avance na Escritura.",
+      "learningObjective": "Ver o Dia de Joel no fio bíblico.",
+      "evidence": ["Joel 2:1–2", "Amós 5:18–20", "Apocalipse 6:17"],
+      "options": [
+        { "id": "a", "text": "Joel anuncia o Dia com trombeta e trevas" },
+        { "id": "b", "text": "Amós liga o Dia do Senhor às trevas" },
+        { "id": "c", "text": "Apocalipse fala do grande dia da ira" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Joel 2, Amós 5 e Apocalipse 6:17." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Joel 2:3, que palavra descreve o que fica atrás do avanço?",
+      "verseRef": "Joel 2:3",
+      "evidenceSpan": "atrás dele, um deserto assolado",
+      "feedbackCorrect": "Atrás fica um deserto assolado: a terra devastada pelo avanço.",
+      "hint": "É a palavra depois de \"um\" no contraste final.",
+      "learningObjective": "Lembrar o termo que carrega a desolação do avanço.",
+      "evidence": ["Joel 2:3"],
+      "options": [
+        { "id": "a", "text": "deserto" },
+        { "id": "b", "text": "colheita" },
+        { "id": "c", "text": "aliança" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Colheita\" não descreve o que fica atrás em 2:3.",
+        "c": "\"Aliança\" não aparece em 2:3."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Joel 2:1 a Sofonias 1:14–15?",
+      "verseRef": "Joel 2:1",
+      "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+      "feedbackCorrect": "Nos dois textos, o Dia do Senhor se aproxima como dia grande e terrível.",
+      "hint": "Compare a proximidade e o tom do Dia.",
+      "learningObjective": "Ligar o Dia próximo em Joel e Sofonias.",
+      "evidence": ["Joel 2:1", "Sofonias 1:14–15"],
+      "passageA": { "ref": "Joel 2:1" },
+      "passageB": { "ref": "Sofonias 1:14–15" },
+      "options": [
+        { "id": "a", "text": "Dia grande e terrível" },
+        { "id": "b", "text": "Dia sem proximidade" },
+        { "id": "c", "text": "Dia só de colheita" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos afirmam proximidade do Dia.",
+        "c": "O tom é de juízo e trevas, não só colheita."
+      }
+    }
+  ]
+}

@@ -17,6 +17,7 @@ import '../utils/appearance.dart';
 import '../utils/catalog_access.dart';
 import '../utils/content_filter.dart';
 import '../utils/plus_access.dart';
+import '../utils/reading_growth.dart';
 import '../utils/season_walk_debug.dart';
 import '../utils/tomorrow_hook.dart';
 import '../utils/trail_progress.dart';
@@ -322,6 +323,38 @@ class ProgressService extends ChangeNotifier {
   /// Capítulos lidos na Bíblia ("abbrev:capítulo", ex.: "gn:1").
   List<String> readBibleChapters = [];
 
+  /// Último dia (YYYY-MM-DD) em que cada capítulo foi lido ("jo:3").
+  /// A leitura da semana do grupo conta só o que foi lido na semana.
+  Map<String, String> bibleChapterReadOn = {};
+
+  /// Selos "Fiel na semana" ganhos em grupos ("CÓDIGO@segunda"). Público:
+  /// o Perfil mostra a contagem.
+  List<String> groupSealWeeks = [];
+
+  /// Junta selos de grupo (do fechamento visto ou de outro aparelho).
+  Future<void> addGroupSeals(Iterable<String> keys) async {
+    final add = {
+      for (final k in keys)
+        if (k.trim().isNotEmpty) k.trim(),
+    }.difference(groupSealWeeks.toSet());
+    if (add.isEmpty) return;
+    groupSealWeeks = [...groupSealWeeks, ...add];
+    await _save();
+  }
+
+  /// Teto de capítulos com data guardada (os mais antigos saem).
+  static const bibleChapterReadOnCap = 400;
+
+  /// Capítulos [from]..[to] de [bookAbbrev] lidos a partir de [sinceYmd].
+  int chaptersReadSince(String bookAbbrev, int from, int to, String sinceYmd) {
+    var n = 0;
+    for (var c = from; c <= to; c++) {
+      final day = bibleChapterReadOn[bibleChapterKey(bookAbbrev, c)];
+      if (day != null && day.compareTo(sinceYmd) >= 0) n++;
+    }
+    return n;
+  }
+
   /// Plano de leitura (canônico ou cronológico) pelo tempo disponível.
   BibleReadingPlan bibleReadingPlan = BibleReadingPlan.inactive;
 
@@ -434,6 +467,18 @@ class ProgressService extends ChangeNotifier {
   /// Dia (YYYY-MM-DD) em que cada cena foi feita pela primeira vez.
   Map<String, String> missionCompletedOn = {};
 
+  /// Dia (YYYY-MM-DD) da última vez que cada cena foi feita, refazer
+  /// incluído. O grupo usa para saber se a cena marcada foi feita na semana
+  /// ou no período do propósito, e não meses antes.
+  Map<String, String> sceneLastDoneOn = {};
+
+  /// A cena foi feita em [sinceYmd] ou depois? Sem a última data (feita
+  /// antes de existir o campo), vale a da primeira vez.
+  bool sceneDoneSince(String slug, String sinceYmd) {
+    final day = sceneLastDoneOn[slug] ?? missionCompletedOn[slug];
+    return day != null && day.compareTo(sinceYmd) >= 0;
+  }
+
   /// Minhas trilhas: quando cada uma foi escolhida (ISO). A ordem da
   /// escolha decide a principal, a 1ª ([TrailProgress.myTrails]). Entra
   /// ao abrir a 1ª cena pela própria trilha (Caminhada, grupo e Desafio não
@@ -533,6 +578,11 @@ class ProgressService extends ChangeNotifier {
   /// Acerto de primeira por "modo.gesto" (ex.: `semente.tap`).
   Map<String, int> answerCorrect = {};
   Map<String, int> answerTotal = {};
+
+  /// Acerto de primeira por semana e modo ("SEGUNDA.modo") — a evolução
+  /// da leitura no Perfil ([ReadingGrowth]). Guarda 26 semanas.
+  Map<String, int> weekAnswerCorrect = {};
+  Map<String, int> weekAnswerTotal = {};
 
   /// Acerto de primeira por trilha (slug). Coleta silenciosa desde
   /// out/2026: é a matéria-prima do futuro mapa de domínio por livro —
@@ -880,6 +930,8 @@ class ProgressService extends ChangeNotifier {
     };
     answerCorrect = {};
     answerTotal = {};
+    weekAnswerCorrect = {};
+    weekAnswerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
     domainAnswerCorrect = {};
@@ -1280,6 +1332,7 @@ class ProgressService extends ChangeNotifier {
     lastPlayedDate = null;
     completedMissions = [];
     missionCompletedOn = {};
+    sceneLastDoneOn = {};
     trailChosenAt = {};
     trailsLeftAt = {};
     leftMissionSlugs = [];
@@ -1289,6 +1342,8 @@ class ProgressService extends ChangeNotifier {
     giftedTrails = {};
     answerCorrect = {};
     answerTotal = {};
+    weekAnswerCorrect = {};
+    weekAnswerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
     domainAnswerCorrect = {};
@@ -1338,6 +1393,8 @@ class ProgressService extends ChangeNotifier {
     memoryRewardDay = null;
     missionReflections = {};
     readBibleChapters = [];
+    bibleChapterReadOn = {};
+    groupSealWeeks = [];
     bibleBookmarks = [];
     bibleNotes = {};
     lastBibleSpot = null;
@@ -1654,12 +1711,30 @@ class ProgressService extends ChangeNotifier {
   }
 
   /// Registra a leitura de um capítulo da Bíblia (missão diária "Palavra viva").
-  Future<void> recordBibleReading(String bookAbbrev, int chapter) async {
+  /// [attentive] false (concluído rápido demais, sem ouvir): conta para a
+  /// missão e o histórico, mas não para a leitura da semana do grupo.
+  Future<void> recordBibleReading(
+    String bookAbbrev,
+    int chapter, {
+    bool attentive = true,
+  }) async {
     final key = bibleChapterKey(bookAbbrev, chapter);
     if (!readBibleChapters.contains(key)) {
       readBibleChapters = [...readBibleChapters, key];
     }
-    lastBibleReadDate = _todayKey();
+    final today = _todayKey();
+    final readOn = attentive
+        ? {...bibleChapterReadOn, key: today}
+        : {...bibleChapterReadOn};
+    if (readOn.length > bibleChapterReadOnCap) {
+      final oldest = readOn.entries.toList()
+        ..sort((a, b) => a.value.compareTo(b.value));
+      for (final e in oldest.take(readOn.length - bibleChapterReadOnCap)) {
+        readOn.remove(e.key);
+      }
+    }
+    bibleChapterReadOn = readOn;
+    lastBibleReadDate = today;
     await _bumpQuest('read');
     await _bumpQuest('seasonal');
   }
@@ -2687,6 +2762,15 @@ class ProgressService extends ChangeNotifier {
     if (correct) {
       answerCorrect = {...answerCorrect, key: (answerCorrect[key] ?? 0) + 1};
     }
+    final wk = ReadingGrowth.key(ReadingGrowth.weekKey(DateTime.now()), mode);
+    weekAnswerTotal = ReadingGrowth.prune({
+      ...weekAnswerTotal,
+      wk: (weekAnswerTotal[wk] ?? 0) + 1,
+    });
+    weekAnswerCorrect = ReadingGrowth.prune({
+      ...weekAnswerCorrect,
+      if (correct) wk: (weekAnswerCorrect[wk] ?? 0) + 1,
+    });
     final trail = trailSlug?.trim() ?? '';
     if (trail.isNotEmpty) {
       trailAnswerTotal = {
@@ -3053,6 +3137,14 @@ class ProgressService extends ChangeNotifier {
     notifyListeners();
   }
 
+  /// Cena terminada (não falhada), primeira vez ou refeita: guarda o dia.
+  Future<void> markSceneDone(Iterable<String> slugs) async {
+    final today = _todayKey();
+    sceneLastDoneOn = {...sceneLastDoneOn, for (final s in slugs) s: today};
+    await _save();
+    notifyListeners();
+  }
+
   Future<void> markWalkDate(String campaignId, String ymd) async {
     final cur = walkDatesFor(campaignId);
     if (cur.contains(ymd)) return;
@@ -3252,6 +3344,8 @@ class ProgressService extends ChangeNotifier {
       'lastDailyChestRewardId': lastDailyChestRewardId,
       'memoryRewardDay': memoryRewardDay,
       'readBibleChapters': readBibleChapters,
+      'bibleChapterReadOn': bibleChapterReadOn,
+      'groupSealWeeks': groupSealWeeks,
       'bibleBookmarks': bibleBookmarks,
       'bibleNotes': {
         for (final e in bibleNotes.entries) e.key: e.value.toJson(),
@@ -3292,6 +3386,7 @@ class ProgressService extends ChangeNotifier {
       'lifetimeQuestionsCorrect': lifetimeQuestionsCorrect,
       'lifetimeQuestionsAnswered': lifetimeQuestionsAnswered,
       'missionCompletedOn': missionCompletedOn,
+      'sceneLastDoneOn': sceneLastDoneOn,
       'trailChosenAt': trailChosenAt,
       'trailsLeftAt': trailsLeftAt,
       'leftMissionSlugs': leftMissionSlugs,
@@ -3301,6 +3396,8 @@ class ProgressService extends ChangeNotifier {
       'giftedTrails': giftedTrails,
       'answerCorrect': answerCorrect,
       'answerTotal': answerTotal,
+      'weekAnswerCorrect': weekAnswerCorrect,
+      'weekAnswerTotal': weekAnswerTotal,
       'trailAnswerCorrect': trailAnswerCorrect,
       'trailAnswerTotal': trailAnswerTotal,
       'domainAnswerCorrect': domainAnswerCorrect,
@@ -3771,6 +3868,23 @@ class ProgressService extends ChangeNotifier {
           _asStringList(data['readBibleChapters']),
         );
       }
+      if (data.containsKey('groupSealWeeks')) {
+        groupSealWeeks = _unionStringLists(
+          groupSealWeeks,
+          _asStringList(data['groupSealWeeks']),
+        );
+      }
+      if (data.containsKey('bibleChapterReadOn')) {
+        final cloud = _asStringMap(data['bibleChapterReadOn']);
+        final merged = {...bibleChapterReadOn};
+        for (final e in cloud.entries) {
+          final mine = merged[e.key];
+          if (mine == null || e.value.compareTo(mine) > 0) {
+            merged[e.key] = e.value;
+          }
+        }
+        bibleChapterReadOn = merged;
+      }
       if (data.containsKey('bibleBookmarks')) {
         bibleBookmarks = _unionStringLists(
           bibleBookmarks,
@@ -4048,6 +4162,17 @@ class ProgressService extends ChangeNotifier {
         }
         missionCompletedOn = merged;
       }
+      if (data.containsKey('sceneLastDoneOn')) {
+        // Fica a data mais nova: a última vez que a cena foi feita.
+        final merged = Map<String, String>.from(sceneLastDoneOn);
+        for (final e in _asStringMap(data['sceneLastDoneOn']).entries) {
+          final cur = merged[e.key];
+          if (cur == null || e.value.compareTo(cur) > 0) {
+            merged[e.key] = e.value;
+          }
+        }
+        sceneLastDoneOn = merged;
+      }
       if (data.containsKey('postcardsOn')) {
         // Como a cena: fica o dia em que o postal foi revelado pela 1ª vez.
         final merged = Map<String, String>.from(postcardsOn);
@@ -4116,6 +4241,18 @@ class ProgressService extends ChangeNotifier {
         answerTotal = _mergeIntMapsMax(
           answerTotal,
           _asIntMap(data['answerTotal']),
+        );
+      }
+      if (data.containsKey('weekAnswerCorrect')) {
+        weekAnswerCorrect = _mergeIntMapsMax(
+          weekAnswerCorrect,
+          _asIntMap(data['weekAnswerCorrect']),
+        );
+      }
+      if (data.containsKey('weekAnswerTotal')) {
+        weekAnswerTotal = _mergeIntMapsMax(
+          weekAnswerTotal,
+          _asIntMap(data['weekAnswerTotal']),
         );
       }
       if (data.containsKey('trailAnswerCorrect')) {
@@ -4401,6 +4538,8 @@ class ProgressService extends ChangeNotifier {
     postcardRefs = {};
     answerCorrect = {};
     answerTotal = {};
+    weekAnswerCorrect = {};
+    weekAnswerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
     domainAnswerCorrect = {};
@@ -4449,6 +4588,8 @@ class ProgressService extends ChangeNotifier {
     memoryRewardDay = null;
     missionReflections = {};
     readBibleChapters = [];
+    bibleChapterReadOn = {};
+    groupSealWeeks = [];
     bibleBookmarks = [];
     bibleNotes = {};
     sharedVerses = [];
@@ -4504,6 +4645,8 @@ class ProgressService extends ChangeNotifier {
     lifetimeQuestionsAnswered = 0;
     answerCorrect = {};
     answerTotal = {};
+    weekAnswerCorrect = {};
+    weekAnswerTotal = {};
     trailAnswerCorrect = {};
     trailAnswerTotal = {};
     domainAnswerCorrect = {};

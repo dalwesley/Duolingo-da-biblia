@@ -1,0 +1,719 @@
+{
+  "study": {
+    "passageRef": "Isaías 29:13–18",
+    "passages": [
+      {
+        "ref": "Isaías 29:13–18"
+      },
+      {
+        "ref": "Isaías 29:19–21"
+      }
+    ],
+    "context": "O povo honra o Senhor com os lábios, mas o coração está longe. Ele promete obra maravilhosa: a sabedoria dos sábios cai, e surdos e cegos ouvem e veem.",
+    "keyword": "coração",
+    "keywordGloss": "O centro da pessoa, que neste texto está longe do Senhor apesar dos lábios.",
+    "focusQuestion": "Onde sua boca ainda honra a Deus enquanto o coração permanece longe?",
+    "reflectionPrompts": [
+      "Lábios sem coração",
+      "Obra maravilhosa",
+      "Surdos que ouvem"
+    ],
+    "facts": [
+      {
+        "text": "O povo se aproxima com a boca e honra com os lábios, mas o coração está longe.",
+        "evidenceRef": "Isaías 29:13",
+        "evidenceSpan": "me honra com os lábios, mas o seu coração está longe de mim"
+      },
+      {
+        "text": "O temor a Deus consiste apenas em mandamentos humanos.",
+        "evidenceRef": "Isaías 29:13",
+        "evidenceSpan": "o seu temor a mim consiste apenas em mandamentos humanos"
+      },
+      {
+        "text": "O Senhor realizará obra maravilhosa; a sabedoria dos sábios perecerá.",
+        "evidenceRef": "Isaías 29:14",
+        "evidenceSpan": "a sabedoria de seus sábios perecerá"
+      },
+      {
+        "text": "Ai dos que escondem o propósito do Senhor e trabalham nas trevas.",
+        "evidenceRef": "Isaías 29:15",
+        "evidenceSpan": "Ai daqueles que escondem profundamente o propósito do Senhor"
+      },
+      {
+        "text": "Naquele dia os surdos ouvirão as palavras do livro e os cegos verão.",
+        "evidenceRef": "Isaías 29:18",
+        "evidenceSpan": "os surdos ouvirão as palavras do livro"
+      },
+      {
+        "text": "Os humildes se alegrarão no Senhor e os necessitados exultarão no Santo de Israel.",
+        "evidenceRef": "Isaías 29:19",
+        "evidenceSpan": "Os humildes se alegrarão no SENHOR"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "coração",
+        "gloss": "Está longe do Senhor, embora a boca e os lábios se aproximem."
+      },
+      {
+        "term": "lábios",
+        "gloss": "Honram a Deus por fora, sem corresponder ao interior."
+      },
+      {
+        "term": "oleiro",
+        "gloss": "Imagem do Senhor como artífice; o barro não pode negar o criador."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Culto de lábios com coração longe",
+        "evidenceRef": "Isaías 29:13"
+      },
+      {
+        "label": "Obra maravilhosa; sabedoria dos sábios cai",
+        "evidenceRef": "Isaías 29:14"
+      },
+      {
+        "label": "Ai dos que se escondem nas trevas",
+        "evidenceRef": "Isaías 29:15–16"
+      },
+      {
+        "label": "Surdos ouvem, cegos veem, humildes alegram-se",
+        "evidenceRef": "Isaías 29:18–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Honra com os lábios, mas o coração está longe.",
+        "marker": "mas",
+        "evidenceRef": "Isaías 29:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso o Senhor fará obra maravilhosa e a sabedoria perecerá.",
+        "marker": "Portanto",
+        "evidenceRef": "Isaías 29:14"
+      },
+      {
+        "kind": "causa",
+        "text": "Os humildes se alegram porque o opressor será reduzido a nada.",
+        "marker": "Porque",
+        "evidenceRef": "Isaías 29:20"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 15:8–9",
+        "bridge": "Lábios que honram sem coração"
+      },
+      {
+        "ref": "1 Coríntios 1:19",
+        "bridge": "Sabedoria dos sábios destruída"
+      },
+      {
+        "ref": "Romanos 9:20–21",
+        "bridge": "Barro e oleiro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Bastam palavras certas e o Senhor aceita o culto.",
+        "why": "O texto condena honra de lábios com coração longe."
+      },
+      {
+        "text": "A sabedoria humana sobrevive intacta à obra do Senhor.",
+        "why": "A sabedoria dos sábios perecerá e o entendimento se esconderá."
+      },
+      {
+        "text": "O barro pode dizer ao oleiro que não foi feito por ele.",
+        "why": "Isaías 29:16 chama isso de perversidade."
+      }
+    ],
+    "centralInsight": "O Senhor fará uma obra maravilhosa; a sabedoria dos sábios perecerá.",
+    "anchorQuestion": "Segundo Isaías 29:13–14, o que há de errado no culto do povo e o que o Senhor fará?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 29:13, o povo honra o Senhor com os lábios, mas o coração está longe dele.",
+      "verseRef": "Isaías 29:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "me honra com os lábios, mas o seu coração está longe de mim",
+      "feedbackCorrect": "A boca se aproxima; o coração permanece longe.",
+      "feedbackWrong": {
+        "false": "Releia o contraste: lábios honram, coração longe."
+      },
+      "hint": "Procure a palavra \"mas\" no versículo.",
+      "learningObjective": "Observar o contraste entre lábios e coração.",
+      "evidence": [
+        "Isaías 29:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 29:13, toque o que está longe do Senhor.",
+      "verseRef": "Isaías 29:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "coração"
+        },
+        {
+          "id": "b",
+          "text": "lábios"
+        },
+        {
+          "id": "c",
+          "text": "boca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o seu coração está longe de mim",
+      "feedbackCorrect": "Os lábios honram; o coração é o que está longe.",
+      "feedbackWrong": {
+        "b": "Os lábios honram; o que está longe é o coração.",
+        "c": "A boca se aproxima; o coração está longe."
+      },
+      "hint": "Veja o que fica longe depois do \"mas\".",
+      "learningObjective": "Identificar o coração longe no culto falso.",
+      "evidence": [
+        "Isaías 29:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 29:14, o que acontecerá à sabedoria dos sábios?",
+      "verseRef": "Isaías 29:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perecerá"
+        },
+        {
+          "id": "b",
+          "text": "Será exaltada"
+        },
+        {
+          "id": "c",
+          "text": "Governará o povo"
+        },
+        {
+          "id": "d",
+          "text": "Substituirá a obra do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a sabedoria de seus sábios perecerá",
+      "feedbackCorrect": "Na obra maravilhosa, a sabedoria dos sábios perece.",
+      "feedbackWrong": {
+        "b": "O texto diz que a sabedoria perecerá.",
+        "c": "Não há governo dos sábios aqui; há queda da sabedoria.",
+        "d": "A obra do Senhor faz a sabedoria perecer, não o contrário."
+      },
+      "hint": "Olhe o destino da sabedoria dos sábios.",
+      "learningObjective": "Observar a queda da sabedoria humana.",
+      "evidence": [
+        "Isaías 29:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 29:13 na ordem do texto.",
+      "verseRef": "Isaías 29:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Este povo se aproxima de mim com a boca"
+        },
+        {
+          "id": "b",
+          "text": "me honra com os lábios"
+        },
+        {
+          "id": "c",
+          "text": "mas o seu coração está longe de mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas o seu coração está longe de mim",
+      "feedbackCorrect": "Boca, lábios e depois o contraste do coração.",
+      "feedbackWrong": {
+        "default": "Comece pela aproximação com a boca; o coração fecha."
+      },
+      "hint": "O contraste com \"mas\" vem por último.",
+      "learningObjective": "Reconhecer a sequência de Isaías 29:13.",
+      "evidence": [
+        "Isaías 29:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 29:18, o que os surdos ouvirão naquele dia?",
+      "verseRef": "Isaías 29:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "palavras"
+        },
+        {
+          "id": "b",
+          "text": "trevas"
+        },
+        {
+          "id": "c",
+          "text": "opressor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os surdos ouvirão as palavras do livro",
+      "feedbackCorrect": "Surdos ouvirão as palavras do livro.",
+      "feedbackWrong": {
+        "b": "As trevas são o que os cegos deixam; os surdos ouvem palavras.",
+        "c": "O opressor é reduzido a nada depois; aqui são as palavras do livro."
+      },
+      "hint": "O que os surdos ouvirão?",
+      "learningObjective": "Lembrar a restauração da audição naquele dia.",
+      "evidence": [
+        "Isaías 29:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 29:13 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 29:13",
+      "passageA": {
+        "ref": "Isaías 29:13",
+        "text": "me honra com os lábios, mas o seu coração está longe de mim"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O culto continua por fora, mas o interior não acompanha o Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Honra externa sem coração"
+        },
+        {
+          "id": "b",
+          "text": "Coração já perto"
+        },
+        {
+          "id": "c",
+          "text": "Lábios em silêncio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me honra com os lábios, mas o seu coração está longe de mim",
+      "feedbackCorrect": "Lábios honram; o coração permanece longe.",
+      "feedbackWrong": {
+        "b": "O texto diz que o coração está longe.",
+        "c": "Os lábios honram; não estão em silêncio."
+      },
+      "hint": "Compare boca e coração.",
+      "learningObjective": "Ligar o culto de lábios ao problema do coração.",
+      "evidence": [
+        "Isaías 29:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 29:13, a honra dos lábios e a distância do coração aparecem sem contraste marcado no texto.",
+      "verseRef": "Isaías 29:13",
+      "correctOptionId": "false",
+      "evidenceSpan": "me honra com os lábios, mas o seu coração está longe de mim",
+      "feedbackCorrect": "O \"mas\" marca o contraste entre lábios e coração.",
+      "feedbackWrong": {
+        "true": "Releia: a palavra \"mas\" introduz o contraste."
+      },
+      "hint": "Procure a palavra curta que vira a frase.",
+      "learningObjective": "Compreender o contraste entre lábios e coração.",
+      "evidence": [
+        "Isaías 29:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 29:13, toque a palavra que marca o contraste entre lábios e coração.",
+      "verseRef": "Isaías 29:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "honra"
+        },
+        {
+          "id": "c",
+          "text": "longe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas o seu coração está longe de mim",
+      "feedbackCorrect": "\"Mas\" vira a página: honra nos lábios, distância no coração.",
+      "feedbackWrong": {
+        "b": "\"Honra\" é a ação dos lábios; o contraste é \"mas\".",
+        "c": "\"Longe\" descreve o coração; o marcador é \"mas\"."
+      },
+      "hint": "É a palavra entre lábios e coração.",
+      "learningObjective": "Reconhecer o marcador de contraste em 29:13.",
+      "evidence": [
+        "Isaías 29:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 29:14 se relaciona com Isaías 29:13?",
+      "verseRef": "Isaías 29:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A obra maravilhosa responde ao culto de lábios sem coração"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor elogia a sabedoria dos sábios do povo"
+        },
+        {
+          "id": "c",
+          "text": "Os mandamentos humanos são confirmados como suficientes"
+        },
+        {
+          "id": "d",
+          "text": "O coração longe deixa de importar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, eis que continuarei a realizar uma obra maravilhosa",
+      "feedbackCorrect": "O \"Portanto\" liga o culto falso à obra que faz a sabedoria perecer.",
+      "feedbackWrong": {
+        "b": "A sabedoria dos sábios perecerá.",
+        "c": "O temor feito só de mandamentos humanos é condenado.",
+        "d": "O problema do coração longe é o ponto de partida."
+      },
+      "hint": "Veja a palavra que abre o versículo 14.",
+      "learningObjective": "Relacionar o culto vazio à obra maravilhosa.",
+      "evidence": [
+        "Isaías 29:13–14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 29:13–15?",
+      "verseRef": "Isaías 29:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Culto de lábios com coração longe"
+        },
+        {
+          "id": "b",
+          "text": "Obra maravilhosa e queda da sabedoria"
+        },
+        {
+          "id": "c",
+          "text": "Ai dos que se escondem nas trevas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Ai daqueles que escondem profundamente o propósito do Senhor",
+      "feedbackCorrect": "Culto falso, obra divina e denúncia dos que se escondem.",
+      "feedbackWrong": {
+        "default": "Comece pelo culto de lábios; o ai fecha o movimento."
+      },
+      "hint": "Siga a ordem dos versículos 13 a 15.",
+      "learningObjective": "Compreender o movimento do culto falso ao juízo.",
+      "evidence": [
+        "Isaías 29:13–15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 29:16, a quem a obra não deve dizer \"Não fui feito por ti\"?",
+      "verseRef": "Isaías 29:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "artífice"
+        },
+        {
+          "id": "b",
+          "text": "barro"
+        },
+        {
+          "id": "c",
+          "text": "vaso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a obra dissesse ao seu artífice",
+      "feedbackCorrect": "É perversidade a obra negar o artífice.",
+      "feedbackWrong": {
+        "b": "O barro é a criatura; o artífice é quem faz.",
+        "c": "O vaso formado fala ao oleiro; o termo pedido é artífice."
+      },
+      "hint": "Quem recebe a fala absurda da obra?",
+      "learningObjective": "Compreender a imagem do artífice e da obra.",
+      "evidence": [
+        "Isaías 29:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 29:13 a Mateus 15:8–9?",
+      "verseRef": "Isaías 29:13",
+      "passageA": {
+        "ref": "Isaías 29:13",
+        "text": "me honra com os lábios, mas o seu coração está longe de mim"
+      },
+      "passageB": {
+        "ref": "Mateus 15:8–9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Lábios que honram sem coração"
+        },
+        {
+          "id": "b",
+          "text": "Coração já transformado"
+        },
+        {
+          "id": "c",
+          "text": "Culto sem palavras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "me honra com os lábios, mas o seu coração está longe de mim",
+      "feedbackCorrect": "Jesus cita Isaías contra a religião só de lábios.",
+      "feedbackWrong": {
+        "b": "Nos dois textos o problema é o coração longe.",
+        "c": "Há honra de lábios; o problema é a distância do coração."
+      },
+      "hint": "Veja como Jesus usa este versículo.",
+      "learningObjective": "Relacionar Isaías 29:13 à citação de Jesus.",
+      "evidence": [
+        "Isaías 29:13",
+        "Mateus 15:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 29:16 sustenta que tratar o oleiro como igual ao barro é perversidade.",
+      "verseRef": "Isaías 29:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "A vossa perversidade é como se o oleiro fosse igual ao barro",
+      "feedbackCorrect": "Inverter criador e criatura é chamado de perversidade.",
+      "feedbackWrong": {
+        "false": "O versículo abre chamando essa inversão de perversidade."
+      },
+      "hint": "Leia a comparação do oleiro e do barro.",
+      "learningObjective": "Interpretar a relação entre oleiro e barro.",
+      "evidence": [
+        "Isaías 29:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 29:19, toque quem se alegrará no SENHOR.",
+      "verseRef": "Isaías 29:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "humildes"
+        },
+        {
+          "id": "b",
+          "text": "opressor"
+        },
+        {
+          "id": "c",
+          "text": "escarnecedor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os humildes se alegrarão no SENHOR",
+      "feedbackCorrect": "Os humildes se alegram; o opressor será reduzido a nada.",
+      "feedbackWrong": {
+        "b": "O opressor será reduzido a nada no versículo seguinte.",
+        "c": "O escarnecedor já não existirá."
+      },
+      "hint": "Quem se alegra no começo do versículo?",
+      "learningObjective": "Sustentar a alegria dos humildes no Senhor.",
+      "evidence": [
+        "Isaías 29:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 29:13–14 sustenta sobre o culto e a sabedoria?",
+      "verseRef": "Isaías 29:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor confronta culto vazio e derruba a sabedoria humana"
+        },
+        {
+          "id": "b",
+          "text": "Mandamentos humanos bastam como temor verdadeiro"
+        },
+        {
+          "id": "c",
+          "text": "A sabedoria dos sábios permanece intocada"
+        },
+        {
+          "id": "d",
+          "text": "Lábios e coração têm o mesmo valor no texto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a sabedoria de seus sábios perecerá",
+      "feedbackCorrect": "Culto de lábios é denunciado; a obra divina faz a sabedoria perecer.",
+      "feedbackWrong": {
+        "b": "O temor só de mandamentos humanos é o problema.",
+        "c": "A sabedoria perecerá.",
+        "d": "O contraste \"mas\" separa lábios e coração."
+      },
+      "hint": "Una o contraste de 29:13 à obra de 29:14.",
+      "learningObjective": "Escolher a interpretação sustentada sobre culto e sabedoria.",
+      "evidence": [
+        "Isaías 29:13–14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do culto verdadeiro que começa em Isaías 29:13?",
+      "verseRef": "Isaías 29:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Isaías denuncia lábios sem coração"
+        },
+        {
+          "id": "b",
+          "text": "Jesus cita o mesmo aviso ao povo"
+        },
+        {
+          "id": "c",
+          "text": "Paulo anuncia a queda da sabedoria do mundo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "me honra com os lábios, mas o seu coração está longe de mim",
+      "feedbackCorrect": "O aviso de Isaías ecoa em Jesus e na queda da sabedoria em Paulo.",
+      "feedbackWrong": {
+        "default": "Siga: Isaías 29:13, Mateus 15 e 1 Coríntios 1:19."
+      },
+      "hint": "Siga a ordem: Isaías, Evangelho, Paulo.",
+      "learningObjective": "Ver o fio do culto falso até a sabedoria derrubada.",
+      "evidence": [
+        "Isaías 29:13",
+        "Mateus 15:8–9",
+        "1 Coríntios 1:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 29:14, que tipo de obra o Senhor continuará a realizar?",
+      "verseRef": "Isaías 29:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "maravilhosa"
+        },
+        {
+          "id": "b",
+          "text": "humana"
+        },
+        {
+          "id": "c",
+          "text": "escondida"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "realizar uma obra maravilhosa",
+      "feedbackCorrect": "A obra maravilhosa faz perecer a sabedoria dos sábios.",
+      "feedbackWrong": {
+        "b": "A obra é do Senhor, não humana.",
+        "c": "Quem se esconde nas trevas são os denunciados em 29:15."
+      },
+      "hint": "Qual adjetivo descreve a obra?",
+      "learningObjective": "Lembrar o termo da obra do Senhor.",
+      "evidence": [
+        "Isaías 29:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 29:16 a Romanos 9:20–21?",
+      "verseRef": "Isaías 29:16",
+      "passageA": {
+        "ref": "Isaías 29:16",
+        "text": "como se o oleiro fosse igual ao barro"
+      },
+      "passageB": {
+        "ref": "Romanos 9:20–21"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Barro e oleiro"
+        },
+        {
+          "id": "b",
+          "text": "Barro acima do oleiro"
+        },
+        {
+          "id": "c",
+          "text": "Culto só de lábios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como se o oleiro fosse igual ao barro",
+      "feedbackCorrect": "Paulo ecoa a imagem: a criatura não julga o oleiro.",
+      "feedbackWrong": {
+        "b": "Nos dois textos o oleiro tem prioridade sobre o barro.",
+        "c": "Romanos usa a imagem do oleiro, não o tema dos lábios."
+      },
+      "hint": "Compare a imagem do oleiro.",
+      "learningObjective": "Ligar a imagem do oleiro em Isaías e em Paulo.",
+      "evidence": [
+        "Isaías 29:16",
+        "Romanos 9:20–21"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,713 @@
+{
+ "study": {
+  "passageRef": "Atos 4:8–13",
+  "passages": [
+   {
+    "ref": "Atos 4:8–13"
+   }
+  ],
+  "context": "Pedro e João estão diante das autoridades por causa da cura do coxo. Questionados sobre o milagre, Pedro fala cheio do Espírito Santo.",
+  "keyword": "salvação",
+  "keywordGloss": "Não há outro nome debaixo do céu pelo qual importa ser salvos.",
+  "focusQuestion": "Onde a coragem de quem esteve com Jesus precisa aparecer na sua boca?",
+  "reflectionPrompts": [
+   "Um só nome",
+   "Pedra rejeitada",
+   "Ousadia simples"
+  ],
+  "facts": [
+   {
+    "text": "Pedro fala cheio do Espírito Santo às autoridades e anciãos.",
+    "evidenceRef": "Atos 4:8",
+    "evidenceSpan": "Pedro, cheio do Espírito Santo, lhes disse"
+   },
+   {
+    "text": "O homem foi curado em nome de Jesus Cristo, o Nazareno.",
+    "evidenceRef": "Atos 4:10",
+    "evidenceSpan": "em nome de Jesus Cristo, o Nazareno"
+   },
+   {
+    "text": "Deus ressuscitou Jesus, a quem eles crucificaram.",
+    "evidenceRef": "Atos 4:10",
+    "evidenceSpan": "a quem Deus ressuscitou dentre os mortos"
+   },
+   {
+    "text": "Jesus é a pedra rejeitada que se tornou a pedra angular.",
+    "evidenceRef": "Atos 4:11",
+    "evidenceSpan": "a pedra que foi rejeitada por vocês, os construtores"
+   },
+   {
+    "text": "Não há salvação em nenhum outro nome debaixo do céu.",
+    "evidenceRef": "Atos 4:12",
+    "evidenceSpan": "não há salvação em nenhum outro"
+   },
+   {
+    "text": "As autoridades reconheceram que Pedro e João tinham estado com Jesus.",
+    "evidenceRef": "Atos 4:13",
+    "evidenceSpan": "reconheceram que tinham estado com Jesus"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "salvação",
+    "gloss": "O resgate que só vem pelo nome de Jesus, sem rival."
+   },
+   {
+    "term": "pedra angular",
+    "gloss": "A pedra rejeitada que Deus tornou base de tudo."
+   },
+   {
+    "term": "ousadia",
+    "gloss": "A coragem de homens simples que estiveram com Jesus."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Pedro fala cheio do Espírito",
+    "evidenceRef": "Atos 4:8"
+   },
+   {
+    "label": "A cura aponta para Jesus ressuscitado",
+    "evidenceRef": "Atos 4:10"
+   },
+   {
+    "label": "Jesus é a pedra angular",
+    "evidenceRef": "Atos 4:11"
+   },
+   {
+    "label": "Só nele há salvação e ousadia",
+    "evidenceRef": "Atos 4:12–13"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "causa",
+    "text": "São questionados sobre a cura, e por isso Pedro explica o nome de Jesus.",
+    "marker": "Uma vez que",
+    "evidenceRef": "Atos 4:9–10"
+   },
+   {
+    "kind": "resultado",
+    "text": "Ao verem a ousadia, ficam admirados e reconhecem que estiveram com Jesus.",
+    "marker": "Então",
+    "evidenceRef": "Atos 4:13"
+   },
+   {
+    "kind": "contraste",
+    "text": "Homens sem instrução falam com ousadia porque estiveram com Jesus.",
+    "marker": "sem instrução",
+    "evidenceRef": "Atos 4:13"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 118:22",
+    "bridge": "Pedra rejeitada exaltada"
+   },
+   {
+    "ref": "João 14:6",
+    "bridge": "Só Jesus leva ao Pai"
+   },
+   {
+    "ref": "Romanos 10:9",
+    "bridge": "Confessar Jesus e ser salvo"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Há vários nomes igualmente válidos para a salvação.",
+    "why": "Atos 4:12 afirma que não há salvação em nenhum outro nome."
+   },
+   {
+    "text": "A ousadia de Pedro vinha só da educação formal.",
+    "why": "Eram vistos como sem instrução; a marca era ter estado com Jesus."
+   },
+   {
+    "text": "A cura do enfermo não tem relação com Jesus.",
+    "why": "Pedro diz que é por meio de Jesus que o homem está curado."
+   }
+  ],
+  "centralInsight": "Não há salvação em nenhum outro nome, e homens simples falam com coragem porque estiveram com Jesus.",
+  "anchorQuestion": "Segundo Atos 4:12, há salvação em algum outro nome além do de Jesus?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Atos 4:12, Pedro afirma que há vários nomes debaixo do céu para a salvação.",
+   "verseRef": "Atos 4:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "não há salvação em nenhum outro",
+   "feedbackCorrect": "O texto é exclusivo: nenhum outro nome foi dado para sermos salvos.",
+   "feedbackWrong": {
+    "true": "Releia Atos 4:12: não há salvação em nenhum outro."
+   },
+   "hint": "Olhe a abertura do versículo.",
+   "learningObjective": "Observar a exclusividade do nome de Jesus.",
+   "evidence": [
+    "Atos 4:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 4:8, toque de que Pedro estava cheio ao falar.",
+   "verseRef": "Atos 4:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Espírito Santo"
+    },
+    {
+     "id": "b",
+     "text": "Autoridades"
+    },
+    {
+     "id": "c",
+     "text": "anciãos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Pedro, cheio do Espírito Santo",
+   "feedbackCorrect": "Ele fala cheio do Espírito Santo diante das autoridades.",
+   "feedbackWrong": {
+    "b": "As autoridades são os ouvintes, não o que o enche.",
+    "c": "Os anciãos ouvem; quem o enche é o Espírito Santo."
+   },
+   "hint": "Procure do que Pedro estava cheio.",
+   "learningObjective": "Identificar a fonte da fala de Pedro.",
+   "evidence": [
+    "Atos 4:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Atos 4:13, o que as autoridades reconheceram sobre Pedro e João?",
+   "verseRef": "Atos 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Que tinham estado com Jesus"
+    },
+    {
+     "id": "b",
+     "text": "Que eram doutores da lei"
+    },
+    {
+     "id": "c",
+     "text": "Que nunca tinham visto Jesus"
+    },
+    {
+     "id": "d",
+     "text": "Que falavam por medo do povo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "reconheceram que tinham estado com Jesus",
+   "feedbackCorrect": "A ousadia apontava para a convivência com Jesus.",
+   "feedbackWrong": {
+    "b": "O texto os chama de sem instrução e incultos.",
+    "c": "Reconheceram o contrário: tinham estado com Jesus.",
+    "d": "O destaque é a ousadia, não o medo."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Observar o reconhecimento das autoridades.",
+   "evidence": [
+    "Atos 4:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 4:11 na ordem do texto.",
+   "verseRef": "Atos 4:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Esta é a pedra que foi rejeitada por vocês"
+    },
+    {
+     "id": "b",
+     "text": "os construtores"
+    },
+    {
+     "id": "c",
+     "text": "a qual se tornou a pedra angular"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a pedra que foi rejeitada por vocês, os construtores",
+   "feedbackCorrect": "Rejeitada pelos construtores, tornou-se a pedra angular.",
+   "feedbackWrong": {
+    "default": "Comece pela pedra rejeitada; a pedra angular fecha."
+   },
+   "hint": "O versículo começa com \"Esta é a pedra\".",
+   "learningObjective": "Reconhecer a sequência da imagem da pedra.",
+   "evidence": [
+    "Atos 4:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Atos 4:12, o que não há em nenhum outro?",
+   "verseRef": "Atos 4:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "fama"
+    },
+    {
+     "id": "b",
+     "text": "salvação"
+    },
+    {
+     "id": "c",
+     "text": "riqueza"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "não há salvação em nenhum outro",
+   "feedbackCorrect": "Não há salvação em nenhum outro: só no nome de Jesus.",
+   "feedbackWrong": {
+    "a": "O texto fala de salvação, não de fama.",
+    "c": "Não é riqueza: é salvação em nenhum outro."
+   },
+   "hint": "É o que não existe em nenhum outro nome.",
+   "learningObjective": "Lembrar a palavra central de Atos 4:12.",
+   "evidence": [
+    "Atos 4:12"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Atos 4:12 comunica que se liga a este contexto?",
+   "verseRef": "Atos 4:12",
+   "passageA": {
+    "ref": "Atos 4:12"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Diante das autoridades, Pedro afirma um único nome que salva."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Muitos nomes salvam"
+    },
+    {
+     "id": "b",
+     "text": "Só um nome salva"
+    },
+    {
+     "id": "c",
+     "text": "Nenhum nome importa"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "nenhum outro nome pelo qual importa que devamos ser salvos",
+   "feedbackCorrect": "Debaixo do céu, só um nome importa para a salvação.",
+   "feedbackWrong": {
+    "a": "O texto nega salvação em qualquer outro.",
+    "c": "Há um nome dado: o de Jesus."
+   },
+   "hint": "Veja quantos nomes o versículo admite.",
+   "learningObjective": "Ligar a cena à exclusividade do nome.",
+   "evidence": [
+    "Atos 4:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Atos 4:9–10, Pedro liga a cura do enfermo ao nome de Jesus ressuscitado.",
+   "verseRef": "Atos 4:9–10",
+   "correctOptionId": "true",
+   "evidenceSpan": "é por meio dele que este homem está curado",
+   "feedbackCorrect": "Questionados sobre a cura, apontam para Jesus crucificado e ressuscitado.",
+   "feedbackWrong": {
+    "false": "Releia 4:10: a cura é por meio de Jesus."
+   },
+   "hint": "Veja a resposta ao questionamento sobre o benefício.",
+   "learningObjective": "Compreender a ligação entre cura e Jesus.",
+   "evidence": [
+    "Atos 4:9–10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 4:13, toque a palavra que marca o resultado de verem a ousadia.",
+   "verseRef": "Atos 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então"
+    },
+    {
+     "id": "b",
+     "text": "incultos"
+    },
+    {
+     "id": "c",
+     "text": "admirados"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, ao verem a ousadia de Pedro e João",
+   "feedbackCorrect": "\"Então\" liga a ousadia à admiração e ao reconhecimento.",
+   "feedbackWrong": {
+    "b": "\"Incultos\" descreve a formação; o marcador vem no início.",
+    "c": "\"Admirados\" é o efeito; o marcador é \"Então\"."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de resultado.",
+   "evidence": [
+    "Atos 4:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Atos 4:13 se relaciona com a ousadia de Pedro e João?",
+   "verseRef": "Atos 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "A ousadia surpreende porque eram simples e estiveram com Jesus"
+    },
+    {
+     "id": "b",
+     "text": "A ousadia vem do diploma que possuíam"
+    },
+    {
+     "id": "c",
+     "text": "As autoridades ignoram completamente a fala deles"
+    },
+    {
+     "id": "d",
+     "text": "Eles calaram porque não conheciam Jesus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "homens sem instrução e incultos, ficaram admirados",
+   "feedbackCorrect": "Sem instrução formal, mas com ousadia: tinham estado com Jesus.",
+   "feedbackWrong": {
+    "b": "O texto os chama de sem instrução e incultos.",
+    "c": "Ficaram admirados e reconheceram a convivência com Jesus.",
+    "d": "Reconheceram que tinham estado com Jesus."
+   },
+   "hint": "Una a formação deles ao que as autoridades reconhecem.",
+   "learningObjective": "Relacionar ousadia e convivência com Jesus.",
+   "evidence": [
+    "Atos 4:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Atos 4:8–13?",
+   "verseRef": "Atos 4:12–13",
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedro fala cheio do Espírito"
+    },
+    {
+     "id": "b",
+     "text": "A cura aponta para Jesus ressuscitado"
+    },
+    {
+     "id": "c",
+     "text": "Só nele há salvação e ousadia"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "não há salvação em nenhum outro",
+   "feedbackCorrect": "Do Espírito à cura, e daí ao único nome que salva.",
+   "feedbackWrong": {
+    "default": "A exclusividade da salvação fecha o movimento da fala."
+   },
+   "hint": "Comece pela condição de Pedro ao falar.",
+   "learningObjective": "Compreender o avanço do discurso de Pedro.",
+   "evidence": [
+    "Atos 4:8–13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Atos 4:10, que verbo diz o que Deus fez a Jesus dentre os mortos?",
+   "verseRef": "Atos 4:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "esqueceu"
+    },
+    {
+     "id": "b",
+     "text": "ressuscitou"
+    },
+    {
+     "id": "c",
+     "text": "abandonou"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "a quem Deus ressuscitou dentre os mortos",
+   "feedbackCorrect": "\"Ressuscitou\" liga a cura ao Jesus vivo: Deus o levantou dos mortos.",
+   "feedbackWrong": {
+    "a": "Deus não esqueceu Jesus; o ressuscitou dentre os mortos.",
+    "c": "O texto afirma ressurreição, não abandono."
+   },
+   "hint": "Olhe o que Deus fez \"dentre os mortos\".",
+   "learningObjective": "Perceber o verbo que carrega a ação de Deus.",
+   "evidence": [
+    "Atos 4:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Atos 4:11 a Salmos 118:22?",
+   "verseRef": "Atos 4:11",
+   "passageA": {
+    "ref": "Atos 4:11"
+   },
+   "passageB": {
+    "ref": "Salmos 118:22"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pedra rejeitada exaltada"
+    },
+    {
+     "id": "b",
+     "text": "Pedra sempre aceita"
+    },
+    {
+     "id": "c",
+     "text": "Construtores sem pedra"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a pedra que foi rejeitada por vocês, os construtores",
+   "evidence": [
+    "Atos 4:11",
+    "Salmos 118:22"
+   ],
+   "feedbackCorrect": "Pedro aplica o Salmo: a pedra rejeitada tornou-se angular.",
+   "feedbackWrong": {
+    "b": "Os dois textos falam de rejeição antes da exaltação.",
+    "c": "Há pedra: rejeitada, depois exaltada."
+   },
+   "hint": "Compare a imagem da pedra nos dois textos.",
+   "learningObjective": "Relacionar Atos 4:11 ao Salmo 118."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Atos 4:12–13 apresenta a salvação como aberta a qualquer nome, desde que haja ousadia.",
+   "verseRef": "Atos 4:12–13",
+   "correctOptionId": "false",
+   "evidenceSpan": "não há salvação em nenhum outro",
+   "feedbackCorrect": "A ousadia vem de estar com Jesus; a salvação, só no nome dele.",
+   "feedbackWrong": {
+    "true": "4:12 exclui outros nomes; 4:13 liga ousadia a Jesus."
+   },
+   "hint": "Separe o que salva do que explica a coragem.",
+   "learningObjective": "Interpretar exclusividade da salvação e origem da ousadia.",
+   "evidence": [
+    "Atos 4:12–13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 4:12, toque o trecho que limita onde há salvação.",
+   "verseRef": "Atos 4:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "nenhum outro"
+    },
+    {
+     "id": "b",
+     "text": "debaixo do céu"
+    },
+    {
+     "id": "c",
+     "text": "aos homens"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "não há salvação em nenhum outro",
+   "feedbackCorrect": "\"Nenhum outro\" fecha a porta: só um nome salva.",
+   "feedbackWrong": {
+    "b": "\"Debaixo do céu\" marca o alcance; a exclusão está em \"nenhum outro\".",
+    "c": "\"Aos homens\" diz a quem o nome foi dado, não a exclusão."
+   },
+   "hint": "Procure a expressão que nega alternativas.",
+   "learningObjective": "Sustentar a exclusividade com o texto.",
+   "evidence": [
+    "Atos 4:12"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Atos 4:8–13 sustenta sobre a coragem cristã?",
+   "verseRef": "Atos 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "A ousadia nasce de estar com Jesus, não de status"
+    },
+    {
+     "id": "b",
+     "text": "Só instruídos formalmente podem falar de Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Qualquer nome salva, desde que se fale alto"
+    },
+    {
+     "id": "d",
+     "text": "A cura do enfermo não aponta para Jesus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "reconheceram que tinham estado com Jesus",
+   "feedbackCorrect": "Homens simples, cheios do Espírito, apontam ao único nome.",
+   "feedbackWrong": {
+    "b": "Eram vistos como sem instrução e mesmo assim ousados.",
+    "c": "4:12 nega salvação em qualquer outro nome.",
+    "d": "4:10 liga a cura explicitamente a Jesus."
+   },
+   "hint": "Una 4:12 com o fim de 4:13.",
+   "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+   "evidence": [
+    "Atos 4:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do único nome que salva?",
+   "verseRef": "Atos 4:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Salmo anuncia a pedra rejeitada"
+    },
+    {
+     "id": "b",
+     "text": "Pedro declara um só nome que salva"
+    },
+    {
+     "id": "c",
+     "text": "Jesus diz ser o único caminho ao Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "c",
+    "b"
+   ],
+   "evidenceSpan": "não há salvação em nenhum outro",
+   "evidence": [
+    "Salmos 118:22",
+    "João 14:6",
+    "Atos 4:12"
+   ],
+   "feedbackCorrect": "A pedra rejeitada e o único caminho culminam no nome que salva.",
+   "feedbackWrong": {
+    "default": "Siga: Salmo 118, João 14:6, Atos 4:12."
+   },
+   "hint": "Comece pela pedra do Salmo.",
+   "learningObjective": "Ver a exclusividade de Jesus no fio bíblico."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Atos 4:13, que termo descreve a coragem que as autoridades viram?",
+   "verseRef": "Atos 4:13",
+   "options": [
+    {
+     "id": "a",
+     "text": "timidez"
+    },
+    {
+     "id": "b",
+     "text": "ousadia"
+    },
+    {
+     "id": "c",
+     "text": "dúvida"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "ao verem a ousadia de Pedro e João",
+   "feedbackCorrect": "\"Ousadia\" nomeia a coragem de quem esteve com Jesus.",
+   "feedbackWrong": {
+    "a": "O texto destaca ousadia, não timidez.",
+    "c": "Não é dúvida: é ousadia reconhecida."
+   },
+   "hint": "É o que as autoridades viram neles.",
+   "learningObjective": "Lembrar o termo que carrega a coragem da cena.",
+   "evidence": [
+    "Atos 4:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Atos 4:12 a João 14:6?",
+   "verseRef": "Atos 4:12",
+   "passageA": {
+    "ref": "Atos 4:12"
+   },
+   "passageB": {
+    "ref": "João 14:6"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Só Jesus leva ao Pai"
+    },
+    {
+     "id": "b",
+     "text": "Vários caminhos bastam"
+    },
+    {
+     "id": "c",
+     "text": "O nome é indiferente"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "nenhum outro nome pelo qual importa que devamos ser salvos",
+   "evidence": [
+    "Atos 4:12",
+    "João 14:6"
+   ],
+   "feedbackCorrect": "Jesus é o caminho; Atos ecoa: nenhum outro nome salva.",
+   "feedbackWrong": {
+    "b": "João e Atos afirmam exclusividade, não pluralidade.",
+    "c": "O nome de Jesus é decisivo nos dois textos."
+   },
+   "hint": "Compare a exclusividade nos dois textos.",
+   "learningObjective": "Ligar Atos 4:12 ao \"eu sou o caminho\"."
+  }
+ ]
+}

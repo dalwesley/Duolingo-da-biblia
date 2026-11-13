@@ -1,0 +1,510 @@
+{
+  "study": {
+    "passageRef": "Miqueias 3:1–6",
+    "passages": [
+      {
+        "ref": "Miqueias 3:1–6"
+      },
+      {
+        "ref": "Miqueias 3:7–8"
+      }
+    ],
+    "context": "Miquéias enfrenta cabeças e príncipes que odeiam o bem, e profetas que anunciam paz por comida. Ele se declara cheio do Espírito para denunciar a transgressão.",
+    "keyword": "Espírito",
+    "keywordGloss": "O poder do Senhor que enche Miquéias para declarar a transgressão.",
+    "focusQuestion": "Você fala a verdade com coragem ou só o que agrada quem paga?",
+    "reflectionPrompts": [
+      "Detestam o bem",
+      "Profetas de paz",
+      "Cheio do Espírito"
+    ],
+    "facts": [
+      {
+        "text": "Cabeças e príncipes deveriam saber o que é justo.",
+        "evidenceRef": "Miqueias 3:1",
+        "evidenceSpan": "acaso não é a vocês que cabe saber o que é justo"
+      },
+      {
+        "text": "Eles detestam o bem e amam o mal.",
+        "evidenceRef": "Miqueias 3:2",
+        "evidenceSpan": "Vocês que detestam o bem e amam o mal"
+      },
+      {
+        "text": "Quando clamarem, o Senhor não os ouvirá e esconderá a face.",
+        "evidenceRef": "Miqueias 3:4",
+        "evidenceSpan": "clamarão ao Senhor, mas não os ouvirá"
+      },
+      {
+        "text": "Profetas fazem o povo errar e clamam Paz enquanto preparam guerra.",
+        "evidenceRef": "Miqueias 3:5",
+        "evidenceSpan": "clamam: Paz! mas preparam guerra"
+      },
+      {
+        "text": "Haverá noite sem visão para esses profetas.",
+        "evidenceRef": "Miqueias 3:6",
+        "evidenceSpan": "vocês terão noite sem visão"
+      },
+      {
+        "text": "Miquéias está cheio do poder do Espírito do SENHOR para declarar a transgressão.",
+        "evidenceRef": "Miqueias 3:8",
+        "evidenceSpan": "estou cheio do poder do Espírito do SENHOR"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "justo",
+        "gloss": "O que cabe aos líderes conhecer e praticar."
+      },
+      {
+        "term": "Paz",
+        "gloss": "Anúncio falso dos profetas que cobram comida."
+      },
+      {
+        "term": "Espírito do SENHOR",
+        "gloss": "Fonte do poder de Miquéias para denunciar o pecado."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado aos príncipes injustos",
+        "evidenceRef": "Miqueias 3:1–3"
+      },
+      {
+        "label": "Clamor sem resposta de Deus",
+        "evidenceRef": "Miqueias 3:4"
+      },
+      {
+        "label": "Profetas de paz e noite sem visão",
+        "evidenceRef": "Miqueias 3:5–7"
+      },
+      {
+        "label": "Miquéias cheio do Espírito",
+        "evidenceRef": "Miqueias 3:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Clamarão, mas o Senhor não os ouvirá porque fizeram o mal.",
+        "marker": "mas",
+        "evidenceRef": "Miqueias 3:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Clamam Paz, mas preparam guerra contra quem não paga.",
+        "marker": "mas",
+        "evidenceRef": "Miqueias 3:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso terão noite sem visão e trevas.",
+        "marker": "Portanto",
+        "evidenceRef": "Miqueias 3:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Ezequiel 13:10",
+        "bridge": "Profetas que anunciam paz"
+      },
+      {
+        "ref": "Jeremias 6:14",
+        "bridge": "Paz falsa ao povo"
+      },
+      {
+        "ref": "Atos 4:31",
+        "bridge": "Cheios do Espírito para falar"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os líderes podem odiar o bem sem consequência no culto.",
+        "why": "3:4 diz que o Senhor esconderá a face porque fizeram o mal."
+      },
+      {
+        "text": "Anunciar paz sempre é sinal de profeta verdadeiro.",
+        "why": "3:5 denuncia quem clama Paz e prepara guerra por comida."
+      },
+      {
+        "text": "Miquéias fala só por raiva pessoal, sem o Espírito.",
+        "why": "3:8 afirma que está cheio do poder do Espírito do SENHOR."
+      }
+    ],
+    "centralInsight": "Miquéias está cheio do Espírito do Senhor para declarar a Jacó a sua transgressão.",
+    "anchorQuestion": "Segundo Miqueias 3:8, de que Miquéias está cheio?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 3:2, os líderes detestam o bem e amam o mal.",
+      "verseRef": "Miqueias 3:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vocês que detestam o bem e amam o mal",
+      "feedbackCorrect": "O texto os descreve como quem detesta o bem e ama o mal.",
+      "feedbackWrong": {
+        "false": "Releia 3:2: detestam o bem e amam o mal."
+      },
+      "hint": "Veja o que amam e o que detestam.",
+      "learningObjective": "Observar a inversão moral dos líderes.",
+      "evidence": ["Miqueias 3:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 3:5, toque a palavra que os falsos profetas clamam.",
+      "verseRef": "Miqueias 3:5",
+      "evidenceSpan": "clamam: Paz!",
+      "feedbackCorrect": "Clamam Paz enquanto preparam guerra.",
+      "hint": "É a palavra entre aspas do clamor.",
+      "learningObjective": "Identificar o anúncio falso dos profetas.",
+      "evidence": ["Miqueias 3:5"],
+      "options": [
+        { "id": "a", "text": "Paz" },
+        { "id": "b", "text": "guerra" },
+        { "id": "c", "text": "dentes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Guerra é o que preparam, não o que clamam.",
+        "c": "\"Dentes\" descreve o morder, não o clamor."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 3:1, o que cabe aos príncipes saber?",
+      "verseRef": "Miqueias 3:1",
+      "evidenceSpan": "cabe saber o que é justo",
+      "feedbackCorrect": "Cabe a eles saber o que é justo.",
+      "hint": "Veja a pergunta no fim do versículo.",
+      "learningObjective": "Observar a responsabilidade dos líderes.",
+      "evidence": ["Miqueias 3:1"],
+      "options": [
+        { "id": "a", "text": "O que é justo" },
+        { "id": "b", "text": "Como silenciar o povo" },
+        { "id": "c", "text": "Como enriquecer sem limite" },
+        { "id": "d", "text": "Como esconder a face de Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de justiça, não de silêncio.",
+        "c": "O texto não manda enriquecer sem limite.",
+        "d": "Esconder a face é ação do Senhor em 3:4."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 3:4 na ordem do texto.",
+      "verseRef": "Miqueias 3:4",
+      "evidenceSpan": "clamarão ao Senhor, mas não os ouvirá",
+      "feedbackCorrect": "Clamarão; o Senhor não ouve; esconde a face pelo mal.",
+      "hint": "Comece pelo clamor deles.",
+      "learningObjective": "Reconhecer a sequência do clamor sem resposta.",
+      "evidence": ["Miqueias 3:4"],
+      "options": [
+        { "id": "a", "text": "Então clamarão ao Senhor, mas não os ouvirá" },
+        { "id": "b", "text": "antes, esconderá deles a Sua face naquele tempo" },
+        { "id": "c", "text": "pois eles fizeram o mal em suas obras" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Clamor primeiro; a razão do mal fecha o versículo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 3:6, o que terão sem visão?",
+      "verseRef": "Miqueias 3:6",
+      "evidenceSpan": "vocês terão noite sem visão",
+      "feedbackCorrect": "Terão noite sem visão.",
+      "hint": "É o substantivo antes de \"sem visão\".",
+      "learningObjective": "Lembrar o juízo sobre os falsos profetas.",
+      "evidence": ["Miqueias 3:6"],
+      "options": [
+        { "id": "a", "text": "festa" },
+        { "id": "b", "text": "noite" },
+        { "id": "c", "text": "luz" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Festa\" não aparece em 3:6.",
+        "c": "O texto fala de noite e escuridão, não de luz."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 3:8 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "estou cheio do poder do Espírito do SENHOR",
+      "feedbackCorrect": "Miquéias fala cheio do Espírito para declarar a transgressão.",
+      "hint": "Veja de que ele está cheio e para quê.",
+      "learningObjective": "Ligar o Espírito à denúncia corajosa.",
+      "evidence": ["Miqueias 3:8"],
+      "passageA": { "ref": "Miqueias 3:8" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diante de líderes e profetas corruptos, Miquéias declara a transgressão pelo Espírito."
+      },
+      "options": [
+        { "id": "a", "text": "Espírito para declarar transgressão" },
+        { "id": "b", "text": "Silêncio por falta de coragem" },
+        { "id": "c", "text": "Paz comprada com comida" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto mostra poder e força para declarar.",
+        "c": "Isso descreve os falsos profetas de 3:5."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 3:5, os profetas clamam Paz e, ao mesmo tempo, preparam guerra contra quem nada lhes oferece.",
+      "verseRef": "Miqueias 3:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "clamam: Paz! mas preparam guerra",
+      "feedbackCorrect": "O \"mas\" marca o contraste entre o clamor de paz e a guerra.",
+      "feedbackWrong": {
+        "false": "Releia 3:5: clamam Paz, mas preparam guerra."
+      },
+      "hint": "Repare na palavra que liga Paz e guerra.",
+      "learningObjective": "Compreender o contraste nos falsos profetas.",
+      "evidence": ["Miqueias 3:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 3:5, toque a palavra que marca o contraste com o clamor de paz.",
+      "verseRef": "Miqueias 3:5",
+      "evidenceSpan": "Paz! mas preparam guerra",
+      "feedbackCorrect": "\"Mas\" vira a página: paz no discurso, guerra na prática.",
+      "hint": "Procure a palavra curta entre Paz e guerra.",
+      "learningObjective": "Reconhecer o marcador de contraste em 3:5.",
+      "evidence": ["Miqueias 3:5"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "dentes" },
+        { "id": "c", "text": "povo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Dentes\" descreve o morder, não o contraste.",
+        "c": "\"Povo\" é o alvo do erro, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 3:4–5 liga o mal dos líderes e o anúncio falso?",
+      "verseRef": "Miqueias 3:4–5",
+      "evidenceSpan": "pois eles fizeram o mal em suas obras",
+      "feedbackCorrect": "O mal nas obras fecha o ouvido de Deus; os profetas ainda vendem paz.",
+      "hint": "Una o \"pois\" de 3:4 ao contraste de 3:5.",
+      "learningObjective": "Relacionar juízo silencioso e paz falsa.",
+      "evidence": ["Miqueias 3:4–5"],
+      "options": [
+        { "id": "a", "text": "O mal fecha o ouvido de Deus enquanto vendem paz" },
+        { "id": "b", "text": "O Senhor sempre ouve quem clama, sem condição" },
+        { "id": "c", "text": "Os profetas certos cobram comida para anunciar guerra" },
+        { "id": "d", "text": "Não há ligação entre obras e resposta divina" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "3:4 diz que não os ouvirá.",
+        "c": "Quem cobra comida em 3:5 são os falsos.",
+        "d": "3:4 liga o mal nas obras ao silêncio de Deus."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Miqueias 3:1–8?",
+      "verseRef": "Miqueias 3:1–2",
+      "evidenceSpan": "detestam o bem e amam o mal",
+      "feedbackCorrect": "Príncipes injustos; clamor sem resposta; profetas falsos; Miquéias cheio do Espírito.",
+      "hint": "Comece pelos príncipes.",
+      "learningObjective": "Seguir o movimento da denúncia à coragem.",
+      "evidence": ["Miqueias 3:1–2"],
+      "options": [
+        { "id": "a", "text": "Príncipes que odeiam o bem" },
+        { "id": "b", "text": "Profetas que anunciam paz falsa" },
+        { "id": "c", "text": "Miquéias cheio do Espírito para declarar" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Líderes primeiro; o Espírito de Miquéias fecha o trecho."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 3:6, que palavra introduz o juízo de noite sem visão?",
+      "verseRef": "Miqueias 3:6",
+      "evidenceSpan": "Portanto, vocês terão noite sem visão",
+      "feedbackCorrect": "\"Portanto\" liga o engano dos profetas ao juízo.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de resultado em 3:6.",
+      "evidence": ["Miqueias 3:6"],
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "Talvez" },
+        { "id": "c", "text": "Nunca" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Talvez\" não abre 3:6.",
+        "c": "\"Nunca\" não aparece em 3:6."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 3:5 a Jeremias 6:14?",
+      "verseRef": "Miqueias 3:5",
+      "evidenceSpan": "clamam: Paz!",
+      "feedbackCorrect": "Nos dois textos, há anúncio de paz que não cura a ferida do povo.",
+      "hint": "Compare o clamor de paz falsa.",
+      "learningObjective": "Relacionar a paz falsa em Miquéias e Jeremias.",
+      "evidence": ["Miqueias 3:5", "Jeremias 6:14"],
+      "passageA": { "ref": "Miqueias 3:5" },
+      "passageB": { "ref": "Jeremias 6:14" },
+      "options": [
+        { "id": "a", "text": "Paz falsa ao povo" },
+        { "id": "b", "text": "Cura completa sem juízo" },
+        { "id": "c", "text": "Silêncio total dos profetas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos denunciam paz enganosa, não cura completa.",
+        "c": "Eles falam; o problema é o conteúdo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 3:5–8, anunciar paz por comida é o mesmo que falar cheio do Espírito do SENHOR.",
+      "verseRef": "Miqueias 3:5–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "estou cheio do poder do Espírito do SENHOR",
+      "feedbackCorrect": "3:5 denuncia a paz vendida; 3:8 mostra a coragem pelo Espírito.",
+      "feedbackWrong": {
+        "true": "Releia 3:5 e 3:8: paz falsa e Espírito não são a mesma coisa."
+      },
+      "hint": "Compare o clamor de 3:5 com a declaração de 3:8.",
+      "learningObjective": "Interpretar o contraste entre paz falsa e Espírito.",
+      "evidence": ["Miqueias 3:5–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 3:8, toque o trecho que mostra a fonte do poder de Miquéias.",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "poder do Espírito do SENHOR",
+      "feedbackCorrect": "A fonte é o Espírito do SENHOR.",
+      "hint": "Procure de quem é o Espírito no versículo.",
+      "learningObjective": "Sustentar com o texto a origem do poder.",
+      "evidence": ["Miqueias 3:8"],
+      "options": [
+        { "id": "a", "text": "Espírito do SENHOR" },
+        { "id": "b", "text": "Jacó" },
+        { "id": "c", "text": "pecado" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Jacó é o alvo da denúncia, não a fonte do poder.",
+        "c": "O pecado é o que ele declara, não a fonte."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Miqueias 3:1–8 sustenta sobre liderança e profecia?",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "para declarar a Jacó a sua transgressão",
+      "feedbackCorrect": "Líderes injustos e paz falsa pedem coragem cheia do Espírito.",
+      "hint": "Compare cada opção com 3:2, 3:5 e 3:8.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Miqueias 3:8"],
+      "options": [
+        { "id": "a", "text": "O Espírito enche para declarar a transgressão com coragem" },
+        { "id": "b", "text": "Odiar o bem não traz consequência alguma" },
+        { "id": "c", "text": "Paz comprada com comida é sinal de verdade" },
+        { "id": "d", "text": "Miquéias fala só por raiva pessoal" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "3:4 mostra o Senhor escondendo a face.",
+        "c": "3:5 denuncia essa paz.",
+        "d": "3:8 aponta o Espírito do SENHOR."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra voz verdadeira diante de paz falsa?",
+      "verseRef": "Miqueias 3:5",
+      "evidenceSpan": "clamam: Paz!",
+      "feedbackCorrect": "Miquéias denuncia; Jeremias ecoa; Atos mostra falar cheios do Espírito.",
+      "hint": "Parta de Miqueias 3.",
+      "learningObjective": "Ver a coragem profética no fio bíblico.",
+      "evidence": ["Miqueias 3:5", "Jeremias 6:14", "Atos 4:31"],
+      "options": [
+        { "id": "a", "text": "Miquéias denuncia a paz falsa dos profetas" },
+        { "id": "b", "text": "Jeremias também aponta paz enganosa" },
+        { "id": "c", "text": "Os discípulos falam cheios do Espírito" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 3, Jeremias 6:14 e Atos 4:31."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 3:8, que verbo mostra o que Miquéias fará a Jacó?",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "para declarar a Jacó a sua transgressão",
+      "feedbackCorrect": "O verbo é declarar: expor a transgressão.",
+      "hint": "É o infinitivo após \"para\".",
+      "learningObjective": "Lembrar o termo da missão de Miquéias.",
+      "evidence": ["Miqueias 3:8"],
+      "options": [
+        { "id": "a", "text": "esconder" },
+        { "id": "b", "text": "declarar" },
+        { "id": "c", "text": "vender" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Esconder\" é o oposto da missão em 3:8.",
+        "c": "\"Vender\" descreve os falsos, não Miquéias."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 3:8 a Atos 4:31?",
+      "verseRef": "Miqueias 3:8",
+      "evidenceSpan": "estou cheio do poder do Espírito do SENHOR",
+      "feedbackCorrect": "Nos dois textos, o Espírito enche para falar com coragem.",
+      "hint": "Compare Espírito e anúncio corajoso.",
+      "learningObjective": "Ligar o Espírito de Miquéias ao de Atos.",
+      "evidence": ["Miqueias 3:8", "Atos 4:31"],
+      "passageA": { "ref": "Miqueias 3:8" },
+      "passageB": { "ref": "Atos 4:31" },
+      "options": [
+        { "id": "a", "text": "Cheios do Espírito para falar" },
+        { "id": "b", "text": "Silêncio por medo do povo" },
+        { "id": "c", "text": "Paz vendida por comida" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram fala corajosa, não silêncio.",
+        "c": "Isso descreve os falsos profetas de 3:5."
+      }
+    }
+  ]
+}

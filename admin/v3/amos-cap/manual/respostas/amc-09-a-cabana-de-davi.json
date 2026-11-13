@@ -1,0 +1,481 @@
+{
+  "study": {
+    "passageRef": "Amós 9:8–13",
+    "passages": [
+      { "ref": "Amós 9:8–13" },
+      { "ref": "Amós 9:14–15" }
+    ],
+    "context": "Depois do juízo sobre o reino pecador, o Senhor promete levantar a tenda caída de Davi e plantar o povo na terra para não ser mais arrancado.",
+    "keyword": "tenda",
+    "keywordGloss": "A casa de Davi caída que o Senhor promete levantar e restaurar.",
+    "focusQuestion": "Você confia que o Senhor restaura o que o juízo derrubou?",
+    "reflectionPrompts": [
+      "Não destruirei de todo",
+      "Tenda de Davi",
+      "Plantados na terra"
+    ],
+    "facts": [
+      {
+        "text": "Os olhos do Senhor estão sobre o reino pecador para destruí-lo.",
+        "evidenceRef": "Amós 9:8",
+        "evidenceSpan": "os olhos do Senhor estão fixos sobre este reino pecador, e eu o destruirei"
+      },
+      {
+        "text": "Mesmo assim, não destruirá de todo a casa de Jacó.",
+        "evidenceRef": "Amós 9:8",
+        "evidenceSpan": "mas não destruirei de todo a casa de Jacó"
+      },
+      {
+        "text": "Sacudirá a casa de Israel entre as nações como grão no crivo.",
+        "evidenceRef": "Amós 9:9",
+        "evidenceSpan": "sacudirei a casa de Israel entre todas as nações, assim como se sacode o grão no crivo"
+      },
+      {
+        "text": "Naquele dia levantará a tenda caída de Davi.",
+        "evidenceRef": "Amós 9:11",
+        "evidenceSpan": "levantarei a tenda caída de Davi"
+      },
+      {
+        "text": "Restaurará a sorte do povo: reedificarão cidades e plantarão vinhedos.",
+        "evidenceRef": "Amós 9:14",
+        "evidenceSpan": "Restaurarei a sorte do meu povo Israel; eles reedificarão as cidades assoladas"
+      },
+      {
+        "text": "Os plantará na terra e não serão mais arrancados dela.",
+        "evidenceRef": "Amós 9:15",
+        "evidenceSpan": "eu os plantarei na sua terra, e não serão mais arrancados dela"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "tenda",
+        "gloss": "A casa de Davi caída que o Senhor promete levantar."
+      },
+      {
+        "term": "plantarei",
+        "gloss": "A ação do Senhor que firma o povo na terra."
+      },
+      {
+        "term": "Restaurarei",
+        "gloss": "A promessa de recuperar a sorte de Israel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Juízo sem destruir de todo a casa de Jacó",
+        "evidenceRef": "Amós 9:8–10"
+      },
+      {
+        "label": "Levantamento da tenda caída de Davi",
+        "evidenceRef": "Amós 9:11–12"
+      },
+      {
+        "label": "Restauração, plantio e segurança na terra",
+        "evidenceRef": "Amós 9:13–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Destruirá o reino pecador, mas não destruirá de todo a casa de Jacó.",
+        "marker": "mas",
+        "evidenceRef": "Amós 9:8"
+      },
+      {
+        "kind": "propósito",
+        "text": "Levanta a tenda de Davi para que possuam o remanescente de Edom.",
+        "marker": "Para que",
+        "evidenceRef": "Amós 9:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "Plantará o povo e não serão mais arrancados.",
+        "marker": null,
+        "evidenceRef": "Amós 9:15"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Atos 15:16–17", "bridge": "Tiago cita a tenda de Davi" },
+      { "ref": "Isaías 11:1", "bridge": "Ramo do tronco de Jessé" },
+      { "ref": "Jeremias 31:31–33", "bridge": "Nova aliança e restauração" }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo apaga por completo a casa de Jacó, sem remanescente.",
+        "why": "9:8: mas não destruirei de todo a casa de Jacó."
+      },
+      {
+        "text": "A tenda de Davi permanece caída para sempre.",
+        "why": "9:11: Naquele dia, levantarei a tenda caída de Davi."
+      },
+      {
+        "text": "Depois da restauração, o povo ainda será arrancado da terra.",
+        "why": "9:15: não serão mais arrancados dela."
+      }
+    ],
+    "centralInsight": "Deus restaura a tenda de Davi e planta o seu povo na terra para não ser mais arrancado.",
+    "anchorQuestion": "Segundo Amós 9:11, o que o Senhor levantará naquele dia?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 9:11, o Senhor promete levantar a tenda caída de Davi.",
+      "verseRef": "Amós 9:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Naquele dia ele levantará a tenda caída e fechará suas brechas.",
+      "feedbackWrong": { "false": "Releia Amós 9:11: levantarei a tenda caída de Davi." },
+      "hint": "Veja o que ele levantará naquele dia.",
+      "learningObjective": "Observar a promessa sobre a tenda de Davi.",
+      "evidence": ["Amós 9:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 9:11, toque o que o Senhor levantará.",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Levantará a tenda caída de Davi e fechará suas brechas.",
+      "hint": "Procure o objeto de \"levantarei\".",
+      "learningObjective": "Identificar a tenda de Davi.",
+      "evidence": ["Amós 9:11"],
+      "options": [
+        { "id": "a", "text": "tenda" },
+        { "id": "b", "text": "brechas" },
+        { "id": "c", "text": "ruínas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As brechas serão fechadas; o que se levanta é a tenda.",
+        "c": "As ruínas serão reerguidas; o objeto principal é a tenda."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 9:15, o que não acontecerá mais ao povo plantado?",
+      "verseRef": "Amós 9:15",
+      "evidenceSpan": "não serão mais arrancados dela",
+      "feedbackCorrect": "Serão plantados na terra e não serão mais arrancados.",
+      "hint": "Leia o fim da promessa.",
+      "learningObjective": "Observar a segurança na terra.",
+      "evidence": ["Amós 9:15"],
+      "options": [
+        { "id": "a", "text": "Ser arrancados da terra" },
+        { "id": "b", "text": "Habitar nas cidades" },
+        { "id": "c", "text": "Beber o vinho dos vinhedos" },
+        { "id": "d", "text": "Comer o fruto dos pomares" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Eles habitarão nas cidades reedificadas.",
+        "c": "Beberão o vinho que plantarem.",
+        "d": "Comerão o fruto dos pomares."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 9:11 na ordem do texto.",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Levanta a tenda, fecha brechas e restaura como na antiguidade.",
+      "hint": "Comece pelo levantamento da tenda.",
+      "learningObjective": "Reconhecer a sequência de Amós 9:11.",
+      "evidence": ["Amós 9:11"],
+      "options": [
+        { "id": "a", "text": "Naquele dia, levantarei a tenda caída de Davi" },
+        { "id": "b", "text": "fecharei suas brechas e reerguerei suas ruínas" },
+        { "id": "c", "text": "restaurando-a como nos dias da antiguidade" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece pela tenda; a antiguidade fecha." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 9:15, o que o Senhor fará com o povo na terra?",
+      "verseRef": "Amós 9:15",
+      "evidenceSpan": "eu os plantarei na sua terra",
+      "feedbackCorrect": "Ele os plantará na terra que lhes deu.",
+      "hint": "É o verbo da ação do Senhor.",
+      "learningObjective": "Lembrar o verbo do plantio.",
+      "evidence": ["Amós 9:15"],
+      "options": [
+        { "id": "a", "text": "plantarei" },
+        { "id": "b", "text": "arrancarei" },
+        { "id": "c", "text": "esquecerei" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz que não serão mais arrancados.",
+        "c": "Ele planta e firma; não esquece."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 9:11 comunica que se liga a este contexto?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Depois do juízo, o Senhor restaura a casa de Davi.",
+      "hint": "Ligue a tenda caída ao levantamento.",
+      "learningObjective": "Ligar juízo e restauração.",
+      "evidence": ["Amós 9:11"],
+      "passageA": { "ref": "Amós 9:11" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus restaura a tenda de Davi e planta o povo na terra."
+      },
+      "options": [
+        { "id": "a", "text": "Restauração da casa de Davi" },
+        { "id": "b", "text": "Tenda caída para sempre" },
+        { "id": "c", "text": "Juízo sem nenhuma esperança" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O Senhor promete levantá-la.",
+        "c": "Há promessa clara de restauração."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 9:8, destruir o reino pecador significa apagar por completo a casa de Jacó.",
+      "verseRef": "Amós 9:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não destruirei de todo a casa de Jacó",
+      "feedbackCorrect": "O \"mas\" marca o contraste: juízo sem extinção total.",
+      "feedbackWrong": { "true": "Releia o contraste no fim de Amós 9:8." },
+      "hint": "Procure a palavra que vira a frase.",
+      "learningObjective": "Compreender o contraste do juízo.",
+      "evidence": ["Amós 9:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 9:8, toque a palavra que marca o contraste com a destruição do reino.",
+      "verseRef": "Amós 9:8",
+      "evidenceSpan": "mas não destruirei de todo a casa de Jacó",
+      "feedbackCorrect": "\"Mas\" introduz a reserva: não destruirá de todo.",
+      "hint": "É a palavra curta antes de \"não destruirei\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": ["Amós 9:8"],
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "olhos" },
+        { "id": "c", "text": "reino" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Olhos\" descrevem o olhar do Senhor, não o contraste.",
+        "c": "\"Reino\" é o alvo do juízo, não o marcador."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 9:8–15 relaciona juízo e restauração?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Há juízo sem extinção total, e depois a tenda de Davi é levantada.",
+      "hint": "Una 9:8 ao \"Naquele dia\" de 9:11.",
+      "learningObjective": "Relacionar juízo e restauração.",
+      "evidence": ["Amós 9:11"],
+      "options": [
+        { "id": "a", "text": "Juízo sem extinção total, depois restauração" },
+        { "id": "b", "text": "Jacó é apagado sem remanescente" },
+        { "id": "c", "text": "A tenda de Davi permanece caída" },
+        { "id": "d", "text": "O povo será arrancado de novo da terra" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "9:8 reserva a casa de Jacó.",
+        "c": "9:11 promete levantá-la.",
+        "d": "9:15 diz que não serão mais arrancados."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 9:8–15?",
+      "verseRef": "Amós 9:8–15",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Juízo com reserva, tenda levantada, plantio seguro.",
+      "hint": "Comece pelo juízo sobre o reino.",
+      "learningObjective": "Seguir o movimento do oráculo.",
+      "evidence": ["Amós 9:8–15"],
+      "options": [
+        { "id": "a", "text": "Juízo sem destruir de todo a casa de Jacó" },
+        { "id": "b", "text": "Levantamento da tenda caída de Davi" },
+        { "id": "c", "text": "Restauração, plantio e segurança na terra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Juízo primeiro; plantio por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 9:12, que expressão introduz o propósito de levantar a tenda?",
+      "verseRef": "Amós 9:12",
+      "evidenceSpan": "Para que possuam o remanescente de Edom",
+      "feedbackCorrect": "\"Para que\" liga a restauração à posse das nações.",
+      "hint": "São as duas primeiras palavras do versículo.",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": ["Amós 9:12"],
+      "options": [
+        { "id": "a", "text": "Para que" },
+        { "id": "b", "text": "Por acaso" },
+        { "id": "c", "text": "Sem que" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Por acaso\" não introduz propósito.",
+        "c": "\"Sem que\" não é o texto."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 9:11 a Isaías 11:1?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Nos dois textos, a linha de Davi é restaurada após a queda.",
+      "hint": "Compare a restauração da casa de Davi.",
+      "learningObjective": "Relacionar a tenda de Davi ao ramo de Jessé.",
+      "evidence": ["Amós 9:11", "Isaías 11:1"],
+      "passageA": { "ref": "Amós 9:11" },
+      "passageB": { "ref": "Isaías 11:1" },
+      "options": [
+        { "id": "a", "text": "Ramo do tronco de Jessé" },
+        { "id": "b", "text": "Tenda caída para sempre" },
+        { "id": "c", "text": "Fim sem nenhuma restauração" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos prometem levantamento.",
+        "c": "Há promessa de restauração."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 9:11–15, a tenda de Davi permanece caída para sempre, sem restauração.",
+      "verseRef": "Amós 9:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "O Senhor promete levantar a tenda e plantar o povo.",
+      "feedbackWrong": { "true": "Releia Amós 9:11: levantarei a tenda caída." },
+      "hint": "Veja o verbo principal de 9:11.",
+      "learningObjective": "Interpretar a promessa de restauração.",
+      "evidence": ["Amós 9:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 9:15, toque o trecho que mostra a segurança final do povo.",
+      "verseRef": "Amós 9:15",
+      "evidenceSpan": "não serão mais arrancados dela",
+      "feedbackCorrect": "Plantados na terra, não serão mais arrancados.",
+      "hint": "Procure o verbo depois de \"não serão mais\".",
+      "learningObjective": "Sustentar a segurança na terra com o texto.",
+      "evidence": ["Amós 9:15"],
+      "options": [
+        { "id": "a", "text": "arrancados" },
+        { "id": "b", "text": "terra" },
+        { "id": "c", "text": "Deus" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Terra\" é o lugar; a segurança está em não serem arrancados.",
+        "c": "\"Deus\" fala; o verbo da segurança é outro."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 9:8–15 sustenta sobre o fim do juízo?",
+      "verseRef": "Amós 9:11–15",
+      "evidenceSpan": "eu os plantarei na sua terra, e não serão mais arrancados dela",
+      "feedbackCorrect": "Deus restaura a tenda de Davi e planta o povo para não ser arrancado.",
+      "hint": "Una 9:8, 9:11 e 9:15.",
+      "learningObjective": "Escolher a interpretação da restauração.",
+      "evidence": ["Amós 9:11–15"],
+      "options": [
+        { "id": "a", "text": "Deus restaura a tenda de Davi e planta o povo" },
+        { "id": "b", "text": "Jacó é apagado sem remanescente" },
+        { "id": "c", "text": "A tenda de Davi permanece caída" },
+        { "id": "d", "text": "O povo será arrancado de novo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "9:8 reserva a casa de Jacó.",
+        "c": "9:11 promete levantá-la.",
+        "d": "9:15 nega novo arrancamento."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a restauração da casa de Davi na Escritura?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Amós promete; Isaías e Atos ecoam a restauração davidica.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o fio da tenda de Davi na Bíblia.",
+      "evidence": ["Amós 9:11", "Isaías 11:1", "Atos 15:16–17"],
+      "options": [
+        { "id": "a", "text": "Amós: levantarei a tenda caída de Davi" },
+        { "id": "b", "text": "Isaías: ramo do tronco de Jessé" },
+        { "id": "c", "text": "Atos: Tiago cita a tenda de Davi" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Amós 9, Isaías 11 e Atos 15." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 9:14, que verbo abre a promessa sobre a sorte de Israel?",
+      "verseRef": "Amós 9:14",
+      "evidenceSpan": "Restaurarei a sorte do meu povo Israel",
+      "feedbackCorrect": "\"Restaurarei\": o Senhor recupera a sorte do seu povo.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o termo da restauração.",
+      "evidence": ["Amós 9:14"],
+      "options": [
+        { "id": "a", "text": "Restaurarei" },
+        { "id": "b", "text": "Esquecerei" },
+        { "id": "c", "text": "Arrancarei" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ele restaura, não esquece.",
+        "c": "O arrancamento é negado em 9:15."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 9:11 a Atos 15:16–17?",
+      "verseRef": "Amós 9:11",
+      "evidenceSpan": "levantarei a tenda caída de Davi",
+      "feedbackCorrect": "Tiago cita Amós: a tenda de Davi se levanta para as nações.",
+      "hint": "Veja como o NT lê esta promessa.",
+      "learningObjective": "Ligar a tenda de Davi à leitura de Atos.",
+      "evidence": ["Amós 9:11", "Atos 15:16–17"],
+      "passageA": { "ref": "Amós 9:11" },
+      "passageB": { "ref": "Atos 15:16–17" },
+      "options": [
+        { "id": "a", "text": "Tiago cita a tenda de Davi" },
+        { "id": "b", "text": "Tenda caída sem cumprimento" },
+        { "id": "c", "text": "Promessa só para Edom" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Atos trata como cumprimento em curso.",
+        "c": "A promessa alcança as nações."
+      }
+    }
+  ]
+}

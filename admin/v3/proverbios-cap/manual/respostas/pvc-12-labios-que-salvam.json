@@ -1,0 +1,719 @@
+{
+  "study": {
+    "passageRef": "Provérbios 12:13–18",
+    "passages": [
+      {
+        "ref": "Provérbios 12:13–18"
+      },
+      {
+        "ref": "Provérbios 12:19–22"
+      }
+    ],
+    "context": "O trecho contrapõe lábios, língua e coração: verdade e cura permanecem; mentira e tagarelice ferem e passam.",
+    "keyword": "Verdade",
+    "keywordGloss": "Lábios que falam a verdade permanecem e agradam ao Senhor.",
+    "focusQuestion": "Sua língua tem sido cura ou estocada nesta semana?",
+    "reflectionPrompts": [
+      "Lábios e laço",
+      "Língua que cura",
+      "Prazer do Senhor"
+    ],
+    "facts": [
+      {
+        "text": "O justo escapará da angústia.",
+        "evidenceRef": "Provérbios 12:13",
+        "evidenceSpan": "o justo escapará da angústia"
+      },
+      {
+        "text": "O sábio presta atenção aos conselhos.",
+        "evidenceRef": "Provérbios 12:15",
+        "evidenceSpan": "o sábio presta atenção aos conselhos"
+      },
+      {
+        "text": "A língua dos sábios é cura.",
+        "evidenceRef": "Provérbios 12:18",
+        "evidenceSpan": "a língua dos sábios é cura"
+      },
+      {
+        "text": "Os lábios que falam a verdade permanecem para sempre.",
+        "evidenceRef": "Provérbios 12:19",
+        "evidenceSpan": "Os lábios que falam a verdade permanecem para sempre"
+      },
+      {
+        "text": "Os lábios mentirosos são abomináveis ao Senhor.",
+        "evidenceRef": "Provérbios 12:22",
+        "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor"
+      },
+      {
+        "text": "Os que agem fielmente são o prazer do Senhor.",
+        "evidenceRef": "Provérbios 12:22",
+        "evidenceSpan": "os que agem fielmente são o seu prazer"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "verdade",
+        "gloss": "O que os lábios proclamam e o que permanece."
+      },
+      {
+        "term": "cura",
+        "gloss": "Imagem da língua dos sábios, oposta à espada."
+      },
+      {
+        "term": "engano",
+        "gloss": "O que há no coração dos que tramam o mal."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Lábios e fruto da boca",
+        "evidenceRef": "Provérbios 12:13–14"
+      },
+      {
+        "label": "Tolo, ira e prudência",
+        "evidenceRef": "Provérbios 12:15–16"
+      },
+      {
+        "label": "Verdade, espada e cura",
+        "evidenceRef": "Provérbios 12:17–19"
+      },
+      {
+        "label": "Coração, mal e prazer de Deus",
+        "evidenceRef": "Provérbios 12:20–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Tagarelice fere; língua sábia cura.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 12:18"
+      },
+      {
+        "kind": "contraste",
+        "text": "Verdade permanece; mentira dura pouco.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 12:19"
+      },
+      {
+        "kind": "contraste",
+        "text": "Lábios mentirosos abominam; fiéis agradam.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 12:22"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Efésios 4:29",
+        "bridge": "Palavra que edifica"
+      },
+      {
+        "ref": "Salmos 34:13",
+        "bridge": "Refrear língua do mal"
+      },
+      {
+        "ref": "João 8:44",
+        "bridge": "Mentira e seu pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A mentira ocasional não importa a Deus.",
+        "why": "12:22 chama os lábios mentirosos de abomináveis ao Senhor."
+      },
+      {
+        "text": "Falar muito sempre cura conflitos.",
+        "why": "12:18 compara tagarelice a estocadas de espada."
+      },
+      {
+        "text": "O tolo vê bem o próprio caminho sem conselho.",
+        "why": "12:15 diz que o caminho do tolo parece reto, mas o sábio ouve conselhos."
+      }
+    ],
+    "centralInsight": "A verdade agrada a Deus; a mentira é armadilha para quem a fala.",
+    "anchorQuestion": "Segundo Provérbios 12:22, o que são os lábios mentirosos para o Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Provérbios 12:18, a língua dos sábios é chamada de cura.",
+      "verseRef": "Provérbios 12:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "a língua dos sábios é cura",
+      "feedbackCorrect": "O versículo contrapõe espada e cura: a língua sábia cura.",
+      "feedbackWrong": {
+        "false": "Releia 12:18: a língua dos sábios é cura."
+      },
+      "hint": "Segunda metade do contraste.",
+      "learningObjective": "Observar a imagem da língua sábia.",
+      "evidence": [
+        "Provérbios 12:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Provérbios 12:22, toque o que são os lábios mentirosos para o Senhor.",
+      "verseRef": "Provérbios 12:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "abomináveis"
+        },
+        {
+          "id": "b",
+          "text": "prazer"
+        },
+        {
+          "id": "c",
+          "text": "fielmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor",
+      "feedbackCorrect": "Lábios mentirosos são abomináveis ao Senhor.",
+      "feedbackWrong": {
+        "b": "Prazer é dos que agem fielmente.",
+        "c": "Fielmente descreve quem agrada."
+      },
+      "hint": "Predicado da primeira metade.",
+      "learningObjective": "Identificar o juízo sobre a mentira.",
+      "evidence": [
+        "Provérbios 12:22"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Provérbios 12:19, o que permanece para sempre?",
+      "verseRef": "Provérbios 12:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os lábios que falam a verdade"
+        },
+        {
+          "id": "b",
+          "text": "A língua mentirosa"
+        },
+        {
+          "id": "c",
+          "text": "Um breve momento"
+        },
+        {
+          "id": "d",
+          "text": "A tagarelice como espada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os lábios que falam a verdade permanecem para sempre",
+      "feedbackCorrect": "Lábios verdadeiros permanecem; a mentira dura pouco.",
+      "feedbackWrong": {
+        "b": "A língua mentirosa dura um breve momento.",
+        "c": "Isso descreve a mentira.",
+        "d": "Tagarelice aparece em 12:18."
+      },
+      "hint": "Sujeito da primeira metade.",
+      "learningObjective": "Observar o que permanece.",
+      "evidence": [
+        "Provérbios 12:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Provérbios 12:18 na ordem do texto.",
+      "verseRef": "Provérbios 12:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há aqueles cuja tagarelice"
+        },
+        {
+          "id": "b",
+          "text": "é como estocadas de espada"
+        },
+        {
+          "id": "c",
+          "text": "mas a língua dos sábios é cura"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "a língua dos sábios é cura",
+      "feedbackCorrect": "Primeiro a espada da tagarelice; depois a cura.",
+      "feedbackWrong": {
+        "default": "Comece pela tagarelice; a cura fecha."
+      },
+      "hint": "O contraste fecha com cura.",
+      "learningObjective": "Seguir a ordem do contraste.",
+      "evidence": [
+        "Provérbios 12:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Provérbios 12:17, quem proclama a verdade manifesta o quê?",
+      "verseRef": "Provérbios 12:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "justiça"
+        },
+        {
+          "id": "b",
+          "text": "fraude"
+        },
+        {
+          "id": "c",
+          "text": "engano"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "proclama a verdade manifesta a justiça",
+      "feedbackCorrect": "Proclamar a verdade manifesta a justiça.",
+      "feedbackWrong": {
+        "b": "Fraude é da testemunha falsa.",
+        "c": "Engano aparece no coração em 12:20."
+      },
+      "hint": "Objeto de manifesta.",
+      "learningObjective": "Lembrar o fruto da verdade.",
+      "evidence": [
+        "Provérbios 12:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Provérbios 12:22 comunica que se liga a este contexto?",
+      "verseRef": "Provérbios 12:22",
+      "passageA": {
+        "ref": "Provérbios 12:22",
+        "text": "Os lábios mentirosos são abomináveis ao Senhor"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A verdade agrada; a mentira ofende a Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mentira ofende ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Mentira como prazer"
+        },
+        {
+          "id": "c",
+          "text": "Fidelidade sem juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor",
+      "feedbackCorrect": "Abominação liga a mentira ao juízo da cena.",
+      "feedbackWrong": {
+        "b": "Prazer é dos fiéis.",
+        "c": "Há juízo claro sobre a mentira."
+      },
+      "hint": "Veja o predicado dos lábios mentirosos.",
+      "learningObjective": "Ligar 12:22 ao tema da verdade.",
+      "evidence": [
+        "Provérbios 12:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Provérbios 12:19, os lábios que falam a verdade são apresentados como o que permanece para sempre.",
+      "verseRef": "Provérbios 12:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "Os lábios que falam a verdade permanecem para sempre",
+      "feedbackCorrect": "A verdade permanece; a mentira dura um breve momento.",
+      "feedbackWrong": {
+        "false": "Releia 12:19: a verdade permanece para sempre."
+      },
+      "hint": "Compare o que permanece e o que passa.",
+      "learningObjective": "Compreender o contraste verdade–mentira.",
+      "evidence": [
+        "Provérbios 12:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Provérbios 12:18, toque a palavra que marca o contraste.",
+      "verseRef": "Provérbios 12:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "tagarelice"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas a língua dos sábios é cura",
+      "feedbackCorrect": "\"Mas\" introduz a cura da língua sábia.",
+      "feedbackWrong": {
+        "b": "Espada é a imagem da tagarelice.",
+        "c": "Tagarelice é o primeiro polo."
+      },
+      "hint": "Palavra curta antes da cura.",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Provérbios 12:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Provérbios 12:22 estabelece com a fala?",
+      "verseRef": "Provérbios 12:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mentira abomina a Deus; fidelidade o agrada"
+        },
+        {
+          "id": "b",
+          "text": "Deus ignora lábios e ações"
+        },
+        {
+          "id": "c",
+          "text": "Só a tagarelice importa"
+        },
+        {
+          "id": "d",
+          "text": "Mentira e fidelidade têm o mesmo valor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor",
+      "feedbackCorrect": "O contraste une juízo e prazer de Deus à fala.",
+      "feedbackWrong": {
+        "b": "Há juízo explícito.",
+        "c": "O foco é mentira e fidelidade.",
+        "d": "São polos opostos."
+      },
+      "hint": "Compare abominação e prazer.",
+      "learningObjective": "Relacionar fala e prazer de Deus.",
+      "evidence": [
+        "Provérbios 12:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança Provérbios 12:13–22?",
+      "verseRef": "Provérbios 12:13–14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lábios e fruto da boca"
+        },
+        {
+          "id": "b",
+          "text": "Verdade, espada e cura"
+        },
+        {
+          "id": "c",
+          "text": "Coração, mal e prazer de Deus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o justo escapará da angústia",
+      "feedbackCorrect": "Da boca à cura, e fecha com o prazer do Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelos lábios; o prazer fecha."
+      },
+      "hint": "O fim fala do prazer do Senhor.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Provérbios 12:13",
+        "Provérbios 12:18",
+        "Provérbios 12:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Provérbios 12:18, que palavra descreve a língua dos sábios?",
+      "verseRef": "Provérbios 12:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "cura"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "fraude"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a língua dos sábios é cura",
+      "feedbackCorrect": "\"Cura\" carrega o contraste com a espada.",
+      "feedbackWrong": {
+        "b": "Espada é da tagarelice.",
+        "c": "Fraude é da testemunha falsa."
+      },
+      "hint": "Predicado após \"é\".",
+      "learningObjective": "Lembrar a palavra da língua sábia.",
+      "evidence": [
+        "Provérbios 12:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Provérbios 12:18 a Efésios 4:29?",
+      "verseRef": "Provérbios 12:18",
+      "passageA": {
+        "ref": "Provérbios 12:18"
+      },
+      "passageB": {
+        "ref": "Efésios 4:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavra que edifica"
+        },
+        {
+          "id": "b",
+          "text": "Tagarelice como virtude"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem cura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a língua dos sábios é cura",
+      "feedbackCorrect": "Nos dois textos, a fala boa edifica e cura.",
+      "feedbackWrong": {
+        "b": "Tagarelice é como espada.",
+        "c": "Há cura na língua sábia."
+      },
+      "hint": "Compare o efeito da boa fala.",
+      "learningObjective": "Cruzar língua que cura e edifica.",
+      "evidence": [
+        "Provérbios 12:18",
+        "Efésios 4:29"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Provérbios 12:22, os lábios mentirosos são apresentados como o prazer do Senhor.",
+      "verseRef": "Provérbios 12:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor",
+      "feedbackCorrect": "São abomináveis; o prazer é dos que agem fielmente.",
+      "feedbackWrong": {
+        "true": "Releia 12:22: mentirosos são abomináveis."
+      },
+      "hint": "Veja o predicado dos lábios mentirosos.",
+      "learningObjective": "Corrigir a leitura sobre mentira e prazer.",
+      "evidence": [
+        "Provérbios 12:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Provérbios 12:19, toque o trecho que sustenta a permanência da verdade.",
+      "verseRef": "Provérbios 12:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "permanecem para sempre"
+        },
+        {
+          "id": "b",
+          "text": "breve momento"
+        },
+        {
+          "id": "c",
+          "text": "língua mentirosa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os lábios que falam a verdade permanecem para sempre",
+      "feedbackCorrect": "A verdade permanece para sempre.",
+      "feedbackWrong": {
+        "b": "Breve momento é da mentira.",
+        "c": "A língua mentirosa passa."
+      },
+      "hint": "Resultado dos lábios verdadeiros.",
+      "learningObjective": "Sustentar a permanência da verdade.",
+      "evidence": [
+        "Provérbios 12:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Provérbios 12:13–22 sustenta?",
+      "verseRef": "Provérbios 12:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Verdade e fidelidade agradam; mentira e tagarelice ferem"
+        },
+        {
+          "id": "b",
+          "text": "Deus não se importa com a fala"
+        },
+        {
+          "id": "c",
+          "text": "Mentira e verdade têm o mesmo fim"
+        },
+        {
+          "id": "d",
+          "text": "Só o tolo presta atenção a conselhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os que agem fielmente são o seu prazer",
+      "feedbackCorrect": "O trecho une cura, permanência e prazer de Deus à verdade.",
+      "feedbackWrong": {
+        "b": "12:22 mostra juízo claro.",
+        "c": "12:19 opõe permanência e momento breve.",
+        "d": "12:15 diz que o sábio ouve conselhos."
+      },
+      "hint": "Una cura, verdade e prazer.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Provérbios 12:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da fala verdadeira?",
+      "verseRef": "Provérbios 12:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lábios mentirosos são abomináveis"
+        },
+        {
+          "id": "b",
+          "text": "O salmo manda refrear a língua"
+        },
+        {
+          "id": "c",
+          "text": "Paulo pede palavra que edifica"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor",
+      "feedbackCorrect": "Do juízo em Provérbios ao salmo e a Efésios.",
+      "feedbackWrong": {
+        "default": "Comece por 12:22; depois Salmos 34:13 e Efésios 4:29."
+      },
+      "hint": "Do juízo à guarda da língua e à edificação.",
+      "learningObjective": "Ver o fio da fala verdadeira.",
+      "evidence": [
+        "Provérbios 12:22",
+        "Salmos 34:13",
+        "Efésios 4:29"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Provérbios 12:20, o que há no coração dos que tramam o mal?",
+      "verseRef": "Provérbios 12:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "engano"
+        },
+        {
+          "id": "b",
+          "text": "alegria"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Há engano no coração dos que tramam o mal",
+      "feedbackCorrect": "Engano habita o coração que trama o mal.",
+      "feedbackWrong": {
+        "b": "Alegria é dos que aconselham a paz.",
+        "c": "Paz é o conselho dos outros."
+      },
+      "hint": "Palavra após \"Há\".",
+      "learningObjective": "Lembrar o termo do coração mau.",
+      "evidence": [
+        "Provérbios 12:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Provérbios 12:22 a Salmos 34:13?",
+      "verseRef": "Provérbios 12:22",
+      "passageA": {
+        "ref": "Provérbios 12:22"
+      },
+      "passageB": {
+        "ref": "Salmos 34:13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refrear língua do mal"
+        },
+        {
+          "id": "b",
+          "text": "Mentira como culto"
+        },
+        {
+          "id": "c",
+          "text": "Lábios sem juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os lábios mentirosos são abomináveis ao Senhor",
+      "feedbackCorrect": "Abominação e refrear a língua apontam o mesmo cuidado.",
+      "feedbackWrong": {
+        "b": "Mentira é abominação.",
+        "c": "Há juízo claro sobre os lábios."
+      },
+      "hint": "Compare o cuidado com a língua.",
+      "learningObjective": "Ligar juízo e guarda da língua.",
+      "evidence": [
+        "Provérbios 12:22",
+        "Salmos 34:13"
+      ]
+    }
+  ]
+}

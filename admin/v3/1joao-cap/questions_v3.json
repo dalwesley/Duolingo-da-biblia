@@ -1,0 +1,4838 @@
+[
+  {
+    "id": "1joao-cap-sem-j1c-01-o-que-vimos-e-01",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 1:5, a mensagem anunciada é que Deus é luz e nele não há treva nenhuma.",
+    "prompt": "Em 1 João 1:5, a mensagem anunciada é que Deus é luz e nele não há treva nenhuma.",
+    "cue": "Em 1 João 1:5, a mensagem anunciada é que Deus é luz e nele não há treva nenhuma.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "A mensagem central do versículo é Deus é luz.",
+    "feedbackWrong": {
+      "false": "O texto afirma isso sem reserva."
+    },
+    "hint": "Leia a mensagem depois dos dois-pontos.",
+    "learningObjective": "Observar a mensagem sobre Deus.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-01-o-que-vimos-e-02",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 1:1, toque o que contemplaram e tocaram.",
+    "prompt": "Em 1 João 1:1, toque o que contemplaram e tocaram.",
+    "cue": "Em 1 João 1:1, toque o que contemplaram e tocaram.",
+    "verseRef": "1 João 1:1",
+    "passageText": "O que era desde o princípio, o que ouvimos, o que vimos com nossos próprios olhos, o que contemplamos e tocamos com as nossas mãos a Palavra da vida.",
+    "options": [
+      {
+        "id": "a",
+        "text": "próprios olhos"
+      },
+      {
+        "id": "b",
+        "text": "princípio"
+      },
+      {
+        "id": "c",
+        "text": "Palavra da vida"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "tocamos com as nossas mãos a Palavra da vida",
+    "feedbackCorrect": "Tocaram a Palavra da vida.",
+    "feedbackWrong": {
+      "a": "Treva aparece no v.5.",
+      "b": "Alegria aparece no v.4."
+    },
+    "hint": "Veja o fim do versículo.",
+    "learningObjective": "Identificar o objeto do testemunho.",
+    "evidence": [
+      "1 João 1:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-01-o-que-vimos-e-03",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 1:3, para que anunciam o que viram e ouviram?",
+    "prompt": "Segundo 1 João 1:3, para que anunciam o que viram e ouviram?",
+    "cue": "Segundo 1 João 1:3, para que anunciam o que viram e ouviram?",
+    "verseRef": "1 João 1:3",
+    "passageText": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Para negar a vida eterna"
+      },
+      {
+        "id": "b",
+        "text": "Para evitar qualquer alegria"
+      },
+      {
+        "id": "c",
+        "text": "Para que mantenham comunhão conosco"
+      },
+      {
+        "id": "d",
+        "text": "Para que andem nas trevas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que igualmente mantenhais comunhão conosco",
+    "feedbackCorrect": "O propósito do anúncio é a comunhão.",
+    "feedbackWrong": {
+      "a": "Anunciam a vida eterna.",
+      "b": "Escrevem para alegria completa.",
+      "d": "Andar nas trevas é mentira."
+    },
+    "hint": "Leia a frase para que.",
+    "learningObjective": "Reconhecer o propósito do anúncio.",
+    "evidence": [
+      "1 João 1:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-01-o-que-vimos-e-04",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 1:5 na ordem do texto.",
+    "prompt": "Monte 1 João 1:5 na ordem do texto.",
+    "cue": "Monte 1 João 1:5 na ordem do texto.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus é luz"
+      },
+      {
+        "id": "b",
+        "text": "e nele não há"
+      },
+      {
+        "id": "c",
+        "text": "treva nenhuma"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "Primeiro a afirmação positiva; depois a exclusão da treva.",
+    "feedbackWrong": {
+      "default": "Comece com Deus é luz."
+    },
+    "hint": "A mensagem fecha o versículo.",
+    "learningObjective": "Seguir a ordem da mensagem.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-01-o-que-vimos-e-05",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 1:7, complete: o sangue de Jesus Cristo, seu Filho, nos ___.",
+    "prompt": "Em 1 João 1:7, complete: o sangue de Jesus Cristo, seu Filho, nos ___.",
+    "cue": "Em 1 João 1:7, complete: o sangue de Jesus Cristo, seu Filho, nos ___.",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "template": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos ___ de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mentimos"
+      },
+      {
+        "id": "b",
+        "text": "purifica"
+      },
+      {
+        "id": "c",
+        "text": "andarmos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nos purifica de todo pecado",
+    "feedbackCorrect": "O sangue purifica de todo pecado.",
+    "feedbackWrong": {
+      "a": "Mentimos descreve quem anda nas trevas.",
+      "c": "Andarmos é a condição do versículo."
+    },
+    "hint": "Veja o verbo depois de nos.",
+    "learningObjective": "Lembrar a ação do sangue.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-01-o-que-vimos-e-06",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 1:3 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:3 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:3 comunica que se liga a este contexto?",
+    "verseRef": "1 João 1:3",
+    "passageText": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo.",
+    "passageA": {
+      "ref": "1 João 1:3",
+      "text": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João testemunha o que viu e tocou para anunciar comunhão com o Pai e o Filho, sob a mensagem de que Deus é luz."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar nas trevas"
+      },
+      {
+        "id": "b",
+        "text": "Negar a luz"
+      },
+      {
+        "id": "c",
+        "text": "Anúncio para comunhão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que igualmente mantenhais comunhão conosco",
+    "feedbackCorrect": "No testemunho, o alvo é comunhão.",
+    "feedbackWrong": {
+      "a": "Trevas são incompatíveis com a comunhão.",
+      "b": "A mensagem afirma a luz."
+    },
+    "hint": "Veja o propósito para que.",
+    "learningObjective": "Ligar o contexto à comunhão.",
+    "evidence": [
+      "1 João 1:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-01-o-que-vimos-e-01",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 1:3, o anúncio do visto e ouvido tem o propósito de produzir comunhão.",
+    "prompt": "Em 1 João 1:3, o anúncio do visto e ouvido tem o propósito de produzir comunhão.",
+    "cue": "Em 1 João 1:3, o anúncio do visto e ouvido tem o propósito de produzir comunhão.",
+    "verseRef": "1 João 1:3",
+    "passageText": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que igualmente mantenhais comunhão conosco",
+    "feedbackCorrect": "Para que marca o propósito da comunhão.",
+    "feedbackWrong": {
+      "false": "O texto liga anúncio e comunhão."
+    },
+    "hint": "Leia a frase para que.",
+    "learningObjective": "Ver a relação anúncio-comunhão.",
+    "evidence": [
+      "1 João 1:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-01-o-que-vimos-e-02",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 1:7, toque a palavra que marca o contraste com andar nas trevas.",
+    "prompt": "Em 1 João 1:7, toque a palavra que marca o contraste com andar nas trevas.",
+    "cue": "Em 1 João 1:7, toque a palavra que marca o contraste com andar nas trevas.",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "pecado"
+      },
+      {
+        "id": "c",
+        "text": "sangue"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Se, porém, andarmos na luz",
+    "feedbackCorrect": "Porém vira das trevas para a luz.",
+    "feedbackWrong": {
+      "b": "Pecado é o que é purificado.",
+      "c": "Sangue é o meio da purificação."
+    },
+    "hint": "Procure a partícula depois de Se.",
+    "learningObjective": "Tocar o marcador do contraste.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-01-o-que-vimos-e-03",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 1 João 1:6–7 estabelece?",
+    "prompt": "Qual relação 1 João 1:6–7 estabelece?",
+    "cue": "Qual relação 1 João 1:6–7 estabelece?",
+    "verseRef": "1 João 1:6–7",
+    "passageText": "Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade. Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Comunhão falsa anda nas trevas; na luz há comunhão e purificação"
+      },
+      {
+        "id": "b",
+        "text": "Andar nas trevas prova comunhão verdadeira"
+      },
+      {
+        "id": "c",
+        "text": "O sangue purifica quem permanece nas trevas"
+      },
+      {
+        "id": "d",
+        "text": "Luz e trevas são iguais em Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Se, porém, andarmos na luz",
+    "feedbackCorrect": "O contraste distingue mentira nas trevas e comunhão na luz.",
+    "feedbackWrong": {
+      "b": "Andar nas trevas é mentir.",
+      "c": "A purificação liga-se a andar na luz.",
+      "d": "Nele não há treva."
+    },
+    "hint": "Compare o se do v.6 com o porém do v.7.",
+    "learningObjective": "Compreender o contraste luz-trevas.",
+    "evidence": [
+      "1 João 1:6–7"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-01-o-que-vimos-e-04",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do prólogo.",
+    "prompt": "Ordene os movimentos do prólogo.",
+    "cue": "Ordene os movimentos do prólogo.",
+    "verseRef": "1 João 1:5–6",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma. Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunho da Palavra da vida"
+      },
+      {
+        "id": "b",
+        "text": "Anúncio para comunhão e alegria"
+      },
+      {
+        "id": "c",
+        "text": "Andar na luz e purificação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "Do testemunho ao anúncio, até andar na luz.",
+    "feedbackWrong": {
+      "default": "Comece pelo testemunho; a luz fecha."
+    },
+    "hint": "Siga vv.1–2, 3–4 e 6–7.",
+    "learningObjective": "Ordenar a estrutura do prólogo.",
+    "evidence": [
+      "1 João 1:1",
+      "1 João 1:3",
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-01-o-que-vimos-e-05",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 1:3, complete: para que igualmente mantenhais ___.",
+    "prompt": "Em 1 João 1:3, complete: para que igualmente mantenhais ___.",
+    "cue": "Em 1 João 1:3, complete: para que igualmente mantenhais ___.",
+    "verseRef": "1 João 1:3",
+    "passageText": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais comunhão conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo.",
+    "template": "O que vimos e ouvimos, isso também vos anunciamos, para que igualmente mantenhais ___ conosco; e nossa comunhão é com o Pai e com seu Filho, Jesus Cristo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "comunhão"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "mentira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mantenhais comunhão conosco",
+    "feedbackCorrect": "O propósito é manter comunhão.",
+    "feedbackWrong": {
+      "b": "Trevas quebram a comunhão.",
+      "c": "Mentira descreve a falsa comunhão."
+    },
+    "hint": "É o substantivo depois de mantenhais.",
+    "learningObjective": "Lembrar o termo do propósito.",
+    "evidence": [
+      "1 João 1:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-01-o-que-vimos-e-06",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 1:1 a João 1:14?",
+    "prompt": "O que liga 1 João 1:1 a João 1:14?",
+    "cue": "O que liga 1 João 1:1 a João 1:14?",
+    "verseRef": "1 João 1:1",
+    "passageText": "O que era desde o princípio, o que ouvimos, o que vimos com nossos próprios olhos, o que contemplamos e tocamos com as nossas mãos a Palavra da vida.",
+    "passageA": {
+      "ref": "1 João 1:1",
+      "text": "O que era desde o princípio, o que ouvimos, o que vimos com nossos próprios olhos, o que contemplamos e tocamos com as nossas mãos a Palavra da vida."
+    },
+    "passageB": {
+      "ref": "João 1:14",
+      "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Verbo visto e tocado"
+      },
+      {
+        "id": "b",
+        "text": "Andar nas trevas"
+      },
+      {
+        "id": "c",
+        "text": "Negar o sangue"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tocamos com as nossas mãos a Palavra da vida",
+    "feedbackCorrect": "Ambos testemunham o Verbo/Palavra feito próximo.",
+    "feedbackWrong": {
+      "b": "Trevas não são a ponte.",
+      "c": "Sangue aparece no v.7."
+    },
+    "hint": "Compare o testemunho do Verbo.",
+    "learningObjective": "Ligar o testemunho em 1 João e João.",
+    "evidence": [
+      "1 João 1:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-01-o-que-vimos-e-01",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 1 João 1:6, basta dizer que tem comunhão com Deus, mesmo andando nas trevas.",
+    "prompt": "Segundo 1 João 1:6, basta dizer que tem comunhão com Deus, mesmo andando nas trevas.",
+    "cue": "Segundo 1 João 1:6, basta dizer que tem comunhão com Deus, mesmo andando nas trevas.",
+    "verseRef": "1 João 1:6",
+    "passageText": "Se dissermos que temos comunhão com Ele e andarmos nas trevas, mentimos e não praticamos a verdade.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mentimos e não praticamos a verdade",
+    "feedbackCorrect": "Quem faz isso mente e não pratica a verdade.",
+    "feedbackWrong": {
+      "true": "O versículo denuncia a falsa comunhão."
+    },
+    "hint": "Leia o resultado de andar nas trevas.",
+    "learningObjective": "Rejeitar a comunhão só de palavras.",
+    "evidence": [
+      "1 João 1:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-01-o-que-vimos-e-02",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas em Deus.",
+    "prompt": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas em Deus.",
+    "cue": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas em Deus.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "anunciamos"
+      },
+      {
+        "id": "b",
+        "text": "mensagem"
+      },
+      {
+        "id": "c",
+        "text": "treva nenhuma"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "nele não há treva nenhuma",
+    "feedbackCorrect": "Nele não há treva nenhuma.",
+    "feedbackWrong": {
+      "a": "Anunciamos descreve a ação.",
+      "b": "Mensagem introduz o conteúdo."
+    },
+    "hint": "Veja o fim da mensagem.",
+    "learningObjective": "Sustentar a pureza da luz.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-01-o-que-vimos-e-03",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 1:1–7 sustenta?",
+    "prompt": "Que leitura 1 João 1:1–7 sustenta?",
+    "cue": "Que leitura 1 João 1:1–7 sustenta?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunho real leva a comunhão na luz e purificação"
+      },
+      {
+        "id": "b",
+        "text": "Comunhão verbal basta sem andar na luz"
+      },
+      {
+        "id": "c",
+        "text": "Deus mistura luz e trevas"
+      },
+      {
+        "id": "d",
+        "text": "O sangue limpa quem recusa a luz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "andarmos na luz, assim como Ele está na luz",
+    "feedbackCorrect": "Testemunho, comunhão e luz formam o padrão.",
+    "feedbackWrong": {
+      "b": "Andar nas trevas é mentir.",
+      "c": "Não há treva nele.",
+      "d": "A purificação liga-se a andar na luz."
+    },
+    "hint": "Una o testemunho ao v.7.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-01-o-que-vimos-e-04",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do testemunho à purificação?",
+    "prompt": "Qual sequência mostra o fio do testemunho à purificação?",
+    "cue": "Qual sequência mostra o fio do testemunho à purificação?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunhar a Palavra da vida"
+      },
+      {
+        "id": "b",
+        "text": "Anunciar para comunhão"
+      },
+      {
+        "id": "c",
+        "text": "Andar na luz e ser purificado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado",
+    "feedbackCorrect": "Do testemunho ao anúncio, até a vida na luz.",
+    "feedbackWrong": {
+      "default": "Comece pelo testemunho; a purificação fecha."
+    },
+    "hint": "Siga vv.1, 3 e 7.",
+    "learningObjective": "Encadear testemunho, comunhão e luz.",
+    "evidence": [
+      "1 João 1:1",
+      "1 João 1:3",
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-01-o-que-vimos-e-05",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 1:5, complete: Deus é ___.",
+    "prompt": "Em 1 João 1:5, complete: Deus é ___.",
+    "cue": "Em 1 João 1:5, complete: Deus é ___.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "template": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é ___, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "treva"
+      },
+      {
+        "id": "b",
+        "text": "luz"
+      },
+      {
+        "id": "c",
+        "text": "mentira"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus é luz",
+    "feedbackCorrect": "A mensagem é Deus é luz.",
+    "feedbackWrong": {
+      "a": "Nele não há treva.",
+      "c": "Mentira descreve a falsa comunhão."
+    },
+    "hint": "É a palavra depois de Deus é.",
+    "learningObjective": "Lembrar o termo da mensagem.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-01-o-que-vimos-e-06",
+    "trail": "1joao-cap",
+    "section": "j1c-01-o-que-vimos-e",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 1:5 a João 8:12?",
+    "prompt": "O que liga 1 João 1:5 a João 8:12?",
+    "cue": "O que liga 1 João 1:5 a João 8:12?",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "passageA": {
+      "ref": "1 João 1:5",
+      "text": "Deus é luz, e nele não há treva nenhuma"
+    },
+    "passageB": {
+      "ref": "João 8:12",
+      "text": "Jesus lhes falou novamente, dizendo: Eu sou a luz do mundo; quem me segue não andará nas trevas; antes, terá a luz da vida."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar nas trevas"
+      },
+      {
+        "id": "b",
+        "text": "Deus e Cristo como luz"
+      },
+      {
+        "id": "c",
+        "text": "Negar a comunhão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Deus é luz",
+    "feedbackCorrect": "João une Deus/Cristo à luz que afasta trevas.",
+    "feedbackWrong": {
+      "a": "Trevas são rejeitadas.",
+      "c": "Comunhão é o alvo."
+    },
+    "hint": "Compare a linguagem da luz.",
+    "learningObjective": "Ligar a luz em 1 João e João.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-02-advogado-junto-ao-pai-01",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 2:1, se alguém pecar, os leitores não têm nenhum Advogado junto ao Pai.",
+    "prompt": "Em 1 João 2:1, se alguém pecar, os leitores não têm nenhum Advogado junto ao Pai.",
+    "cue": "Em 1 João 2:1, se alguém pecar, os leitores não têm nenhum Advogado junto ao Pai.",
+    "verseRef": "1 João 2:1",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "temos um Advogado junto ao Pai, Jesus Cristo, o Justo",
+    "feedbackCorrect": "Há Advogado: Jesus Cristo, o Justo.",
+    "feedbackWrong": {
+      "true": "O versículo afirma o Advogado."
+    },
+    "hint": "Leia depois de se alguém pecar.",
+    "learningObjective": "Observar o Advogado.",
+    "evidence": [
+      "1 João 2:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-02-advogado-junto-ao-pai-02",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 2:1, toque quem é o Advogado junto ao Pai.",
+    "prompt": "Em 1 João 2:1, toque quem é o Advogado junto ao Pai.",
+    "cue": "Em 1 João 2:1, toque quem é o Advogado junto ao Pai.",
+    "verseRef": "1 João 2:1–2",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo. E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "Jesus Cristo"
+      },
+      {
+        "id": "c",
+        "text": "filhinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Jesus Cristo, o Justo",
+    "feedbackCorrect": "O Advogado é Jesus Cristo, o Justo.",
+    "feedbackWrong": {
+      "a": "Mundo aparece no v.2.",
+      "c": "Filhinhos é o vocativo."
+    },
+    "hint": "Veja o nome depois de Advogado.",
+    "learningObjective": "Identificar o Advogado.",
+    "evidence": [
+      "1 João 2:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-02-advogado-junto-ao-pai-03",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 2:3, por que sabemos que o conhecemos?",
+    "prompt": "Segundo 1 João 2:3, por que sabemos que o conhecemos?",
+    "cue": "Segundo 1 João 2:3, por que sabemos que o conhecemos?",
+    "verseRef": "1 João 2:3",
+    "passageText": "Sabemos que o conhecemos por isto: se guardamos os Seus mandamentos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Se ignoramos a palavra"
+      },
+      {
+        "id": "b",
+        "text": "Se andamos contra o que ele andou"
+      },
+      {
+        "id": "c",
+        "text": "Se só dizemos conhecê-lo"
+      },
+      {
+        "id": "d",
+        "text": "Se guardamos os Seus mandamentos"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "se guardamos os Seus mandamentos",
+    "feedbackCorrect": "Guardar os mandamentos prova o conhecimento.",
+    "feedbackWrong": {
+      "a": "Guardar a palavra aperfeiçoa o amor.",
+      "b": "Devem andar como ele andou.",
+      "c": "Só dizer sem observar é mentira."
+    },
+    "hint": "Leia a frase se guardamos.",
+    "learningObjective": "Reconhecer a prova do conhecimento.",
+    "evidence": [
+      "1 João 2:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-02-advogado-junto-ao-pai-04",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 2:6 na ordem do texto.",
+    "prompt": "Monte 1 João 2:6 na ordem do texto.",
+    "cue": "Monte 1 João 2:6 na ordem do texto.",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aquele que diz que permanece nele"
+      },
+      {
+        "id": "b",
+        "text": "também deve andar"
+      },
+      {
+        "id": "c",
+        "text": "assim como ele andou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "Primeiro a confissão; depois o dever de andar como ele.",
+    "feedbackWrong": {
+      "default": "Comece com Aquele que diz."
+    },
+    "hint": "O versículo une dizer e andar.",
+    "learningObjective": "Seguir a ordem do v.6.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-02-advogado-junto-ao-pai-05",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 2:2, complete: ele é a ___ pelos nossos pecados.",
+    "prompt": "Em 1 João 2:2, complete: ele é a ___ pelos nossos pecados.",
+    "cue": "Em 1 João 2:2, complete: ele é a ___ pelos nossos pecados.",
+    "verseRef": "1 João 2:2",
+    "passageText": "E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "template": "E ele é a ___ pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "propiciação"
+      },
+      {
+        "id": "b",
+        "text": "filhinhos"
+      },
+      {
+        "id": "c",
+        "text": "mentiroso"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele é a propiciação pelos nossos pecados",
+    "feedbackCorrect": "Ele é a propiciação pelos pecados.",
+    "feedbackWrong": {
+      "b": "Filhinhos é o vocativo.",
+      "c": "Mentiroso descreve quem não observa."
+    },
+    "hint": "É o substantivo depois de ele é a.",
+    "learningObjective": "Lembrar o termo da obra de Cristo.",
+    "evidence": [
+      "1 João 2:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-02-advogado-junto-ao-pai-06",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 2:6 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 2:6 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 2:6 comunica que se liga a este contexto?",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "passageA": {
+      "ref": "1 João 2:6",
+      "text": "Aquele que diz que permanece nele também deve andar assim como ele andou."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João aponta o Advogado e a propiciação, e exige que o conhecimento se prove em obediência."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar o Advogado"
+      },
+      {
+        "id": "b",
+        "text": "Mentir sobre mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Andar como ele andou"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "No contexto do Advogado, permanecer exige andar como ele.",
+    "feedbackWrong": {
+      "a": "O Advogado é afirmado.",
+      "b": "Mentir é denunciado."
+    },
+    "hint": "Veja o dever depois de permanece nele.",
+    "learningObjective": "Ligar o contexto ao andar.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-02-advogado-junto-ao-pai-01",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 2:3–4, dizer conhecer a Deus sem guardar mandamentos é compatível com a verdade.",
+    "prompt": "Em 1 João 2:3–4, dizer conhecer a Deus sem guardar mandamentos é compatível com a verdade.",
+    "cue": "Em 1 João 2:3–4, dizer conhecer a Deus sem guardar mandamentos é compatível com a verdade.",
+    "verseRef": "1 João 2:3–4",
+    "passageText": "Sabemos que o conhecemos por isto: se guardamos os Seus mandamentos. Aquele que diz: \"Eu o conheço\" e não observa os seus mandamentos é mentiroso, e a verdade não está nele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "é mentiroso, e a verdade não está nele",
+    "feedbackCorrect": "Quem diz e não observa é mentiroso.",
+    "feedbackWrong": {
+      "true": "O contraste é explícito."
+    },
+    "hint": "Compare o v.3 com o v.4.",
+    "learningObjective": "Ver a relação dizer-guardar.",
+    "evidence": [
+      "1 João 2:3–4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-02-advogado-junto-ao-pai-02",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 2:5, toque a palavra que marca o contraste com o mentiroso.",
+    "prompt": "Em 1 João 2:5, toque a palavra que marca o contraste com o mentiroso.",
+    "cue": "Em 1 João 2:5, toque a palavra que marca o contraste com o mentiroso.",
+    "verseRef": "1 João 2:5",
+    "passageText": "Mas qualquer que guarda a sua palavra, o amor de Deus está nele verdadeiramente aperfeiçoado; nisto sabemos que estamos nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mas"
+      },
+      {
+        "id": "b",
+        "text": "palavra"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Mas qualquer que guarda a sua palavra",
+    "feedbackCorrect": "Mas vira do mentiroso para quem guarda.",
+    "feedbackWrong": {
+      "b": "Palavra é o que se guarda.",
+      "c": "Amor é o que se aperfeiçoa."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Tocar o marcador do contraste.",
+    "evidence": [
+      "1 João 2:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-02-advogado-junto-ao-pai-03",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 1 João 2:1–2 estabelece sobre o pecado?",
+    "prompt": "Qual relação 1 João 2:1–2 estabelece sobre o pecado?",
+    "cue": "Qual relação 1 João 2:1–2 estabelece sobre o pecado?",
+    "verseRef": "1 João 2:1–2",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo. E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Guardar mandamentos cancela o Advogado"
+      },
+      {
+        "id": "b",
+        "text": "Não pequem; se pecarem, há Advogado e propiciação"
+      },
+      {
+        "id": "c",
+        "text": "Pequem livremente, pois não há Advogado"
+      },
+      {
+        "id": "d",
+        "text": "A propiciação exclui todo o mundo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado",
+    "feedbackCorrect": "O alvo é não pecar; o recurso é o Advogado e a propiciação.",
+    "feedbackWrong": {
+      "a": "Obediência e Advogado convivem.",
+      "c": "Há Advogado.",
+      "d": "Inclui todo o mundo."
+    },
+    "hint": "Una o para que não pequeis ao se alguém pecar.",
+    "learningObjective": "Compreender pecado e Advogado.",
+    "evidence": [
+      "1 João 2:1–2"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-02-advogado-junto-ao-pai-04",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "1 João 2:1–2",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo. E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Advogado e propiciação"
+      },
+      {
+        "id": "b",
+        "text": "Conhecer é guardar mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer é andar como ele"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "temos um Advogado junto ao Pai",
+    "feedbackCorrect": "Do Advogado à prova do conhecimento, até andar como ele.",
+    "feedbackWrong": {
+      "default": "Comece pelo Advogado; o andar fecha."
+    },
+    "hint": "Siga vv.1–2, 3–4 e 6.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "1 João 2:1",
+      "1 João 2:3",
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-02-advogado-junto-ao-pai-05",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 2:1, complete: escrevo estas coisas para que não ___.",
+    "prompt": "Em 1 João 2:1, complete: escrevo estas coisas para que não ___.",
+    "cue": "Em 1 João 2:1, complete: escrevo estas coisas para que não ___.",
+    "verseRef": "1 João 2:1",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo.",
+    "template": "Meus filhinhos, escrevo estas coisas para que não ___; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pequeis"
+      },
+      {
+        "id": "b",
+        "text": "guardeis"
+      },
+      {
+        "id": "c",
+        "text": "andais"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que não pequeis",
+    "feedbackCorrect": "O propósito da escrita é que não pequem.",
+    "feedbackWrong": {
+      "b": "Guardar é a prova do conhecimento.",
+      "c": "Andar como ele é o dever do v.6."
+    },
+    "hint": "É o verbo depois de para que não.",
+    "learningObjective": "Lembrar o propósito da carta.",
+    "evidence": [
+      "1 João 2:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-02-advogado-junto-ao-pai-06",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 2:2 a Romanos 3:25?",
+    "prompt": "O que liga 1 João 2:2 a Romanos 3:25?",
+    "cue": "O que liga 1 João 2:2 a Romanos 3:25?",
+    "verseRef": "1 João 2:2",
+    "passageText": "E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "passageA": {
+      "ref": "1 João 2:2",
+      "text": "E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo."
+    },
+    "passageB": {
+      "ref": "Romanos 3:25",
+      "text": "A quem Deus propôs, por meio da fé no seu sangue, como propiciação para manifestar a sua justiça, visto que, na sua tolerância, deixou impunes os pecados cometidos anteriormente;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Propiciação pelos pecados"
+      },
+      {
+        "id": "b",
+        "text": "Mentira dos mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Negar o Justo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "ele é a propiciação pelos nossos pecados",
+    "feedbackCorrect": "Ambos falam de propiciação em Cristo.",
+    "feedbackWrong": {
+      "b": "Mentira não é a ponte.",
+      "c": "O Justo é o Advogado."
+    },
+    "hint": "Compare a propiciação.",
+    "learningObjective": "Ligar a propiciação.",
+    "evidence": [
+      "1 João 2:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-02-advogado-junto-ao-pai-01",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 1 João 2:6, quem diz que permanece nele deve andar assim como ele andou.",
+    "prompt": "Segundo 1 João 2:6, quem diz que permanece nele deve andar assim como ele andou.",
+    "cue": "Segundo 1 João 2:6, quem diz que permanece nele deve andar assim como ele andou.",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "A confissão de permanecer exige o andar de Cristo.",
+    "feedbackWrong": {
+      "false": "O dever é explícito."
+    },
+    "hint": "Leia o dever depois de permanece nele.",
+    "learningObjective": "Confirmar a leitura do permanecer.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-02-advogado-junto-ao-pai-02",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 2:4, toque o trecho que sustenta o veredito sobre quem só diz.",
+    "prompt": "Em 1 João 2:4, toque o trecho que sustenta o veredito sobre quem só diz.",
+    "cue": "Em 1 João 2:4, toque o trecho que sustenta o veredito sobre quem só diz.",
+    "verseRef": "1 João 2:4",
+    "passageText": "Aquele que diz: \"Eu o conheço\" e não observa os seus mandamentos é mentiroso, e a verdade não está nele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mentiroso"
+      },
+      {
+        "id": "b",
+        "text": "mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "verdade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "é mentiroso, e a verdade não está nele",
+    "feedbackCorrect": "O veredito é: mentiroso, sem a verdade nele.",
+    "feedbackWrong": {
+      "b": "Mandamentos são o que não observa.",
+      "c": "Conhece é a afirmação falsa."
+    },
+    "hint": "Veja o que ele é.",
+    "learningObjective": "Sustentar o veredito.",
+    "evidence": [
+      "1 João 2:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-02-advogado-junto-ao-pai-03",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 2:1–6 sustenta?",
+    "prompt": "Que leitura 1 João 2:1–6 sustenta?",
+    "cue": "Que leitura 1 João 2:1–6 sustenta?",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há Advogado; conhecer e permanecer exigem obediência e andar"
+      },
+      {
+        "id": "b",
+        "text": "Dizer conhecer basta sem mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer nele libera de andar como ele"
+      },
+      {
+        "id": "d",
+        "text": "A propiciação torna a obediência irrelevante"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "Advogado, obediência e andar como ele formam o padrão.",
+    "feedbackWrong": {
+      "b": "Só dizer é mentira.",
+      "c": "O dever de andar permanece.",
+      "d": "Guardar mandamentos prova o conhecimento."
+    },
+    "hint": "Una o Advogado ao v.6.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-02-advogado-junto-ao-pai-04",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do Advogado ao andar?",
+    "prompt": "Qual sequência mostra o fio do Advogado ao andar?",
+    "cue": "Qual sequência mostra o fio do Advogado ao andar?",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Advogado e propiciação no pecado"
+      },
+      {
+        "id": "b",
+        "text": "Prova do conhecimento pelos mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Andar como Jesus andou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "assim como ele andou",
+    "feedbackCorrect": "Do Advogado à prova, até o andar.",
+    "feedbackWrong": {
+      "default": "Comece pelo Advogado; o andar fecha."
+    },
+    "hint": "Siga vv.1–2, 3 e 6.",
+    "learningObjective": "Encadear Advogado, prova e andar.",
+    "evidence": [
+      "1 João 2:1",
+      "1 João 2:3",
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-02-advogado-junto-ao-pai-05",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+    "prompt": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+    "cue": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "template": "Aquele que diz que permanece nele também deve ___ assim como ele andou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "andar"
+      },
+      {
+        "id": "b",
+        "text": "negar"
+      },
+      {
+        "id": "c",
+        "text": "mentir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "O verbo do dever é andar.",
+    "feedbackWrong": {
+      "b": "Negar não está no versículo.",
+      "c": "Mentir descreve o falso no v.4."
+    },
+    "hint": "É o verbo depois de deve.",
+    "learningObjective": "Lembrar o verbo do permanecer.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-02-advogado-junto-ao-pai-06",
+    "trail": "1joao-cap",
+    "section": "j1c-02-advogado-junto-ao-pai",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 2:3 a João 14:15?",
+    "prompt": "O que liga 1 João 2:3 a João 14:15?",
+    "cue": "O que liga 1 João 2:3 a João 14:15?",
+    "verseRef": "1 João 2:3",
+    "passageText": "Sabemos que o conhecemos por isto: se guardamos os Seus mandamentos.",
+    "passageA": {
+      "ref": "1 João 2:3",
+      "text": "se guardamos os Seus mandamentos"
+    },
+    "passageB": {
+      "ref": "João 14:15",
+      "text": "Se vós me amais, guardareis os meus mandamentos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar o Advogado"
+      },
+      {
+        "id": "b",
+        "text": "Amar é guardar mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Andar nas trevas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "se guardamos os Seus mandamentos",
+    "feedbackCorrect": "Nos dois textos, guardar mandamentos marca o relacionamento.",
+    "feedbackWrong": {
+      "a": "O Advogado é afirmado.",
+      "c": "Trevas não são a ponte."
+    },
+    "hint": "Compare guardar mandamentos.",
+    "learningObjective": "Ligar a obediência.",
+    "evidence": [
+      "1 João 2:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-03-filhos-de-deus-01",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 3:2, agora somos filhos de Deus.",
+    "prompt": "Em 1 João 3:2, agora somos filhos de Deus.",
+    "cue": "Em 1 João 3:2, agora somos filhos de Deus.",
+    "verseRef": "1 João 3:2",
+    "passageText": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "agora somos filhos de Deus",
+    "feedbackCorrect": "A identidade de filhos é presente.",
+    "feedbackWrong": {
+      "false": "O versículo diz agora somos."
+    },
+    "hint": "Leia a palavra agora.",
+    "learningObjective": "Observar a identidade presente.",
+    "evidence": [
+      "1 João 3:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-03-filhos-de-deus-02",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 3:1, toque o que o Pai nos concedeu a ponto de sermos chamados.",
+    "prompt": "Em 1 João 3:1, toque o que o Pai nos concedeu a ponto de sermos chamados.",
+    "cue": "Em 1 João 3:1, toque o que o Pai nos concedeu a ponto de sermos chamados.",
+    "verseRef": "1 João 3:1",
+    "passageText": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "amor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "que grande amor o Pai nos concedeu",
+    "feedbackCorrect": "O Pai concedeu grande amor.",
+    "feedbackWrong": {
+      "a": "Pecado é removido no v.5.",
+      "b": "Mundo não nos conhece."
+    },
+    "hint": "Veja o que o Pai concedeu.",
+    "learningObjective": "Identificar o dom do Pai.",
+    "evidence": [
+      "1 João 3:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-03-filhos-de-deus-03",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 3:3, o que faz quem tem esta esperança?",
+    "prompt": "Segundo 1 João 3:3, o que faz quem tem esta esperança?",
+    "cue": "Segundo 1 João 3:3, o que faz quem tem esta esperança?",
+    "verseRef": "1 João 3:3",
+    "passageText": "E todo aquele que n'Ele tem esta esperança purifica a si mesmo, assim como Ele é puro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Continua no pecado sem cuidado"
+      },
+      {
+        "id": "b",
+        "text": "Espera sem qualquer mudança"
+      },
+      {
+        "id": "c",
+        "text": "Purifica a si mesmo, assim como Ele é puro"
+      },
+      {
+        "id": "d",
+        "text": "Nega ser filho agora"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "purifica a si mesmo, assim como Ele é puro",
+    "feedbackCorrect": "A esperança produz purificação.",
+    "feedbackWrong": {
+      "a": "Permanecer não convive com pecar.",
+      "b": "A esperança purifica.",
+      "d": "Já somos filhos."
+    },
+    "hint": "Leia o verbo principal.",
+    "learningObjective": "Reconhecer o efeito da esperança.",
+    "evidence": [
+      "1 João 3:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-03-filhos-de-deus-04",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 3:5 na ordem do texto.",
+    "prompt": "Monte 1 João 3:5 na ordem do texto.",
+    "cue": "Monte 1 João 3:5 na ordem do texto.",
+    "verseRef": "1 João 3:5",
+    "passageText": "E vocês sabem que Ele se manifestou para remover nossos pecados, e n'Ele não há pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele se manifestou para remover nossos pecados"
+      },
+      {
+        "id": "b",
+        "text": "e n'Ele"
+      },
+      {
+        "id": "c",
+        "text": "não há pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Ele se manifestou para remover nossos pecados, e n'Ele não há pecado",
+    "feedbackCorrect": "Primeiro o propósito; depois a pureza nele.",
+    "feedbackWrong": {
+      "default": "Comece com Ele se manifestou."
+    },
+    "hint": "O versículo une propósito e pureza.",
+    "learningObjective": "Seguir a ordem do v.5.",
+    "evidence": [
+      "1 João 3:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-03-filhos-de-deus-05",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 3:2, complete: seremos ___ a Ele.",
+    "prompt": "Em 1 João 3:2, complete: seremos ___ a Ele.",
+    "cue": "Em 1 João 3:2, complete: seremos ___ a Ele.",
+    "verseRef": "1 João 3:2",
+    "passageText": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "template": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos ___ a Ele, porque O veremos como Ele é.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ímpios"
+      },
+      {
+        "id": "b",
+        "text": "estranhos"
+      },
+      {
+        "id": "c",
+        "text": "semelhantes"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "seremos semelhantes a Ele",
+    "feedbackCorrect": "Quando Ele se manifestar, seremos semelhantes a Ele.",
+    "feedbackWrong": {
+      "a": "Ímpios não é o alvo.",
+      "b": "O mundo é que não nos conhece."
+    },
+    "hint": "É o adjetivo depois de seremos.",
+    "learningObjective": "Lembrar o termo da esperança.",
+    "evidence": [
+      "1 João 3:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-03-filhos-de-deus-06",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 3:1 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 3:1 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 3:1 comunica que se liga a este contexto?",
+    "verseRef": "1 João 3:1",
+    "passageText": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo.",
+    "passageA": {
+      "ref": "1 João 3:1",
+      "text": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João celebra o amor do Pai que nos faz filhos agora e chama a purificação e a permanência longe do pecado."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Permanecer no pecado"
+      },
+      {
+        "id": "b",
+        "text": "O mundo nos conhece bem"
+      },
+      {
+        "id": "c",
+        "text": "Somos filhos de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "de fato, somos filhos de Deus",
+    "feedbackCorrect": "No contexto, a base é a identidade de filhos.",
+    "feedbackWrong": {
+      "a": "Permanecer nele corta o pecado.",
+      "b": "O mundo não nos conhece."
+    },
+    "hint": "Veja a afirmação de fato.",
+    "learningObjective": "Ligar o contexto à filiação.",
+    "evidence": [
+      "1 João 3:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-03-filhos-de-deus-01",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 3:3, a esperança de vê-lo leva a purificar-se.",
+    "prompt": "Em 1 João 3:3, a esperança de vê-lo leva a purificar-se.",
+    "cue": "Em 1 João 3:3, a esperança de vê-lo leva a purificar-se.",
+    "verseRef": "1 João 3:3",
+    "passageText": "E todo aquele que n'Ele tem esta esperança purifica a si mesmo, assim como Ele é puro.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "todo aquele que n'Ele tem esta esperança purifica a si mesmo",
+    "feedbackCorrect": "A esperança produz purificação presente.",
+    "feedbackWrong": {
+      "false": "O texto liga esperança e purificar."
+    },
+    "hint": "Leia o verbo depois de esperança.",
+    "learningObjective": "Ver a relação esperança-purificação.",
+    "evidence": [
+      "1 João 3:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-03-filhos-de-deus-02",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 3:1, toque a palavra que marca a causa de o mundo não nos conhecer.",
+    "prompt": "Em 1 João 3:1, toque a palavra que marca a causa de o mundo não nos conhecer.",
+    "cue": "Em 1 João 3:1, toque a palavra que marca a causa de o mundo não nos conhecer.",
+    "verseRef": "1 João 3:1",
+    "passageText": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "grande"
+      },
+      {
+        "id": "b",
+        "text": "filhos"
+      },
+      {
+        "id": "c",
+        "text": "porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "porque não o conheceu a Ele mesmo",
+    "feedbackCorrect": "Porque introduz a causa.",
+    "feedbackWrong": {
+      "a": "Grande descreve o amor.",
+      "b": "Filhos é a identidade."
+    },
+    "hint": "Procure a partícula causal.",
+    "learningObjective": "Tocar o marcador causal.",
+    "evidence": [
+      "1 João 3:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-03-filhos-de-deus-03",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 1 João 3:5–6 estabelece?",
+    "prompt": "Qual relação 1 João 3:5–6 estabelece?",
+    "cue": "Qual relação 1 João 3:5–6 estabelece?",
+    "verseRef": "1 João 3:5–6",
+    "passageText": "E vocês sabem que Ele se manifestou para remover nossos pecados, e n'Ele não há pecado. Aquele que permanece n'Ele não peca; aquele que peca não o viu nem o conheceu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ele remove pecados; quem permanece nele não peca"
+      },
+      {
+        "id": "b",
+        "text": "NEle há pecado misturado"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer nele é indiferente ao pecado"
+      },
+      {
+        "id": "d",
+        "text": "Ele remove pecados para que continuemos neles"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aquele que permanece n'Ele não peca",
+    "feedbackCorrect": "A manifestação para remover pecados sustenta a permanência sem pecar.",
+    "feedbackWrong": {
+      "b": "NEle não há pecado.",
+      "c": "Permanecer e pecar se excluem.",
+      "d": "O propósito é remover."
+    },
+    "hint": "Una o v.5 ao v.6.",
+    "learningObjective": "Compreender remoção e permanência.",
+    "evidence": [
+      "1 João 3:5–6"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-03-filhos-de-deus-04",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "1 João 3:1–2",
+    "passageText": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo. Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Amor do Pai e identidade de filhos"
+      },
+      {
+        "id": "b",
+        "text": "Esperança da semelhança futura"
+      },
+      {
+        "id": "c",
+        "text": "Manifestação para remover pecados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora somos filhos de Deus",
+    "feedbackCorrect": "Da filiação à esperança, até a remoção do pecado.",
+    "feedbackWrong": {
+      "default": "Comece pelos filhos; a remoção fecha."
+    },
+    "hint": "Siga vv.1, 2–3 e 5.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "1 João 3:1",
+      "1 João 3:2",
+      "1 João 3:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-03-filhos-de-deus-05",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 3:5, complete: Ele se manifestou para ___ nossos pecados.",
+    "prompt": "Em 1 João 3:5, complete: Ele se manifestou para ___ nossos pecados.",
+    "cue": "Em 1 João 3:5, complete: Ele se manifestou para ___ nossos pecados.",
+    "verseRef": "1 João 3:5",
+    "passageText": "E vocês sabem que Ele se manifestou para remover nossos pecados, e n'Ele não há pecado.",
+    "template": "E vocês sabem que Ele se manifestou para ___ nossos pecados, e n'Ele não há pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "remover"
+      },
+      {
+        "id": "b",
+        "text": "ignorar"
+      },
+      {
+        "id": "c",
+        "text": "aumentar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para remover nossos pecados",
+    "feedbackCorrect": "O propósito é remover nossos pecados.",
+    "feedbackWrong": {
+      "b": "Ele age contra o pecado.",
+      "c": "Remover é o verbo."
+    },
+    "hint": "É o verbo depois de para.",
+    "learningObjective": "Lembrar o propósito da manifestação.",
+    "evidence": [
+      "1 João 3:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-03-filhos-de-deus-06",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 3:1 a João 1:12?",
+    "prompt": "O que liga 1 João 3:1 a João 1:12?",
+    "cue": "O que liga 1 João 3:1 a João 1:12?",
+    "verseRef": "1 João 3:1",
+    "passageText": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo.",
+    "passageA": {
+      "ref": "1 João 3:1",
+      "text": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo."
+    },
+    "passageB": {
+      "ref": "João 1:12",
+      "text": "Mas a todos quantos o receberam, deu-lhes o poder de se tornarem filhos de Deus, a saber, aos que creem no seu nome;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Continuar no pecado"
+      },
+      {
+        "id": "b",
+        "text": "Negar a esperança"
+      },
+      {
+        "id": "c",
+        "text": "Ser filhos de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sermos chamados filhos de Deus",
+    "feedbackCorrect": "Ambos afirmam a filiação dada por Deus.",
+    "feedbackWrong": {
+      "a": "Pecado é removido.",
+      "b": "A esperança purifica."
+    },
+    "hint": "Compare a linguagem de filhos.",
+    "learningObjective": "Ligar a filiação.",
+    "evidence": [
+      "1 João 3:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-03-filhos-de-deus-01",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 1 João 3:2, ser filho de Deus é só título futuro, sem realidade agora.",
+    "prompt": "Segundo 1 João 3:2, ser filho de Deus é só título futuro, sem realidade agora.",
+    "cue": "Segundo 1 João 3:2, ser filho de Deus é só título futuro, sem realidade agora.",
+    "verseRef": "1 João 3:2",
+    "passageText": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "agora somos filhos de Deus",
+    "feedbackCorrect": "Agora somos filhos; o futuro é a semelhança plena.",
+    "feedbackWrong": {
+      "true": "A palavra agora desmente o só futuro."
+    },
+    "hint": "Leia a palavra agora.",
+    "learningObjective": "Rejeitar a filiação só futura.",
+    "evidence": [
+      "1 João 3:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-03-filhos-de-deus-02",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 3:6, toque o trecho que sustenta a vida de quem permanece.",
+    "prompt": "Em 1 João 3:6, toque o trecho que sustenta a vida de quem permanece.",
+    "cue": "Em 1 João 3:6, toque o trecho que sustenta a vida de quem permanece.",
+    "verseRef": "1 João 3:6",
+    "passageText": "Aquele que permanece n'Ele não peca; aquele que peca não o viu nem o conheceu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "não peca"
+      },
+      {
+        "id": "b",
+        "text": "aquele que peca"
+      },
+      {
+        "id": "c",
+        "text": "permanece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aquele que permanece n'Ele não peca",
+    "feedbackCorrect": "Quem permanece não peca.",
+    "feedbackWrong": {
+      "b": "Não o conheceu também descreve quem peca.",
+      "c": "Não o viu descreve quem peca."
+    },
+    "hint": "Veja o predicado de quem permanece.",
+    "learningObjective": "Sustentar a permanência.",
+    "evidence": [
+      "1 João 3:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-03-filhos-de-deus-03",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 3:1–6 sustenta?",
+    "prompt": "Que leitura 1 João 3:1–6 sustenta?",
+    "cue": "Que leitura 1 João 3:1–6 sustenta?",
+    "verseRef": "1 João 3:6",
+    "passageText": "Aquele que permanece n'Ele não peca; aquele que peca não o viu nem o conheceu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filhos agora, esperança que purifica, permanência longe do pecado"
+      },
+      {
+        "id": "b",
+        "text": "Filhos só no futuro, sem purificação"
+      },
+      {
+        "id": "c",
+        "text": "Permanecer nele permite pecar sem tensão"
+      },
+      {
+        "id": "d",
+        "text": "Nele há pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Aquele que permanece n'Ele não peca",
+    "feedbackCorrect": "Filiação, esperança e permanência formam o padrão.",
+    "feedbackWrong": {
+      "b": "Agora somos filhos.",
+      "c": "Permanecer corta o pecar.",
+      "d": "NEle não há pecado."
+    },
+    "hint": "Una o agora ao permanece.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "1 João 3:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-03-filhos-de-deus-04",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da filiação à pureza?",
+    "prompt": "Qual sequência mostra o fio da filiação à pureza?",
+    "cue": "Qual sequência mostra o fio da filiação à pureza?",
+    "verseRef": "1 João 3:3",
+    "passageText": "E todo aquele que n'Ele tem esta esperança purifica a si mesmo, assim como Ele é puro.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ser chamados filhos pelo amor do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Esperar a semelhança na manifestação"
+      },
+      {
+        "id": "c",
+        "text": "Purificar-se e permanecer longe do pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "purifica a si mesmo, assim como Ele é puro",
+    "feedbackCorrect": "Da filiação à esperança, até a pureza.",
+    "feedbackWrong": {
+      "default": "Comece pelos filhos; a pureza fecha."
+    },
+    "hint": "Siga vv.1, 2 e 3–6.",
+    "learningObjective": "Encadear filiação, esperança e pureza.",
+    "evidence": [
+      "1 João 3:1",
+      "1 João 3:2",
+      "1 João 3:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-03-filhos-de-deus-05",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 3:6, complete: Aquele que permanece n'Ele não ___.",
+    "prompt": "Em 1 João 3:6, complete: Aquele que permanece n'Ele não ___.",
+    "cue": "Em 1 João 3:6, complete: Aquele que permanece n'Ele não ___.",
+    "verseRef": "1 João 3:6",
+    "passageText": "Aquele que permanece n'Ele não peca; aquele que peca não o viu nem o conheceu.",
+    "template": "Aquele que permanece n'Ele não ___; aquele que peca não o viu nem o conheceu.",
+    "options": [
+      {
+        "id": "a",
+        "text": "peca"
+      },
+      {
+        "id": "b",
+        "text": "purifica"
+      },
+      {
+        "id": "c",
+        "text": "espera"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não peca",
+    "feedbackCorrect": "Permanecer e pecar se excluem no texto.",
+    "feedbackWrong": {
+      "b": "Purificar é o efeito da esperança.",
+      "c": "A esperança é positiva no v.3."
+    },
+    "hint": "É o verbo depois de não.",
+    "learningObjective": "Lembrar o verbo da permanência.",
+    "evidence": [
+      "1 João 3:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-03-filhos-de-deus-06",
+    "trail": "1joao-cap",
+    "section": "j1c-03-filhos-de-deus",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 3:2 a Filipenses 3:21?",
+    "prompt": "O que liga 1 João 3:2 a Filipenses 3:21?",
+    "cue": "O que liga 1 João 3:2 a Filipenses 3:21?",
+    "verseRef": "1 João 3:2",
+    "passageText": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "passageA": {
+      "ref": "1 João 3:2",
+      "text": "seremos semelhantes a Ele"
+    },
+    "passageB": {
+      "ref": "Filipenses 3:21",
+      "text": "Ele transformará o nosso corpo de humilhação, para ser semelhante ao seu corpo glorioso, pelo seu poderoso e eficaz poder de submeter a si todas as coisas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Semelhança futura com Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Negar a filiação"
+      },
+      {
+        "id": "c",
+        "text": "Continuar no pecado"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "seremos semelhantes a Ele",
+    "feedbackCorrect": "Ambos apontam transformação à semelhança de Cristo.",
+    "feedbackWrong": {
+      "b": "A filiação é afirmada.",
+      "c": "Pecado é removido."
+    },
+    "hint": "Compare a semelhança futura.",
+    "learningObjective": "Ligar a esperança da semelhança.",
+    "evidence": [
+      "1 João 3:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-04-provai-os-espiritos-01",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 4:1, devem crer em qualquer espírito sem prova.",
+    "prompt": "Em 1 João 4:1, devem crer em qualquer espírito sem prova.",
+    "cue": "Em 1 João 4:1, devem crer em qualquer espírito sem prova.",
+    "verseRef": "1 João 4:1",
+    "passageText": "Amados, não creiam em qualquer espírito; antes, provem se os espíritos procedem de Deus, pois muitos falsos profetas já apareceram no mundo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não creiam em qualquer espírito; antes, provem",
+    "feedbackCorrect": "Devem provar, não crer em qualquer.",
+    "feedbackWrong": {
+      "true": "A ordem é clara: não creiam; provem."
+    },
+    "hint": "Leia a ordem no início.",
+    "learningObjective": "Observar a ordem de provar.",
+    "evidence": [
+      "1 João 4:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-04-provai-os-espiritos-02",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 4:2, toque o que Jesus Cristo veio em.",
+    "prompt": "Em 1 João 4:2, toque o que Jesus Cristo veio em.",
+    "cue": "Em 1 João 4:2, toque o que Jesus Cristo veio em.",
+    "verseRef": "1 João 4:2",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "carne"
+      },
+      {
+        "id": "b",
+        "text": "Deus"
+      },
+      {
+        "id": "c",
+        "text": "espírito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Jesus Cristo veio em carne",
+    "feedbackCorrect": "A confissão é que veio em carne.",
+    "feedbackWrong": {
+      "b": "Erro é o espírito oposto no v.6.",
+      "c": "Mundo aparece no contraste dos vv.4–5."
+    },
+    "hint": "Veja o fim da confissão.",
+    "learningObjective": "Identificar a confissão.",
+    "evidence": [
+      "1 João 4:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-04-provai-os-espiritos-03",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 4:4, por que já derrotaram os falsos profetas?",
+    "prompt": "Segundo 1 João 4:4, por que já derrotaram os falsos profetas?",
+    "cue": "Segundo 1 João 4:4, por que já derrotaram os falsos profetas?",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque o mundo é maior"
+      },
+      {
+        "id": "b",
+        "text": "Porque negam Jesus em carne"
+      },
+      {
+        "id": "c",
+        "text": "Porque não precisam provar espíritos"
+      },
+      {
+        "id": "d",
+        "text": "Porque maior é aquele que está em vocês"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+    "feedbackCorrect": "A vitória se apoia em quem está neles.",
+    "feedbackWrong": {
+      "a": "O texto diz o contrário.",
+      "b": "Negar marca o anticristo.",
+      "c": "Devem provar."
+    },
+    "hint": "Leia a frase pois maior.",
+    "learningObjective": "Reconhecer a causa da vitória.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-04-provai-os-espiritos-04",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 4:2 na ordem do texto.",
+    "prompt": "Monte 1 João 4:2 na ordem do texto.",
+    "cue": "Monte 1 João 4:2 na ordem do texto.",
+    "verseRef": "1 João 4:2",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todo espírito que confessa"
+      },
+      {
+        "id": "b",
+        "text": "que Jesus Cristo veio em carne"
+      },
+      {
+        "id": "c",
+        "text": "é de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "todo espírito que confessa que Jesus Cristo veio em carne é de Deus",
+    "feedbackCorrect": "Primeiro a confissão; depois a origem de Deus.",
+    "feedbackWrong": {
+      "default": "Comece com todo espírito que confessa."
+    },
+    "hint": "A confissão fecha em é de Deus.",
+    "learningObjective": "Seguir a ordem do critério.",
+    "evidence": [
+      "1 João 4:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-04-provai-os-espiritos-05",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 4:1, complete: antes, ___ se os espíritos procedem de Deus.",
+    "prompt": "Em 1 João 4:1, complete: antes, ___ se os espíritos procedem de Deus.",
+    "cue": "Em 1 João 4:1, complete: antes, ___ se os espíritos procedem de Deus.",
+    "verseRef": "1 João 4:1",
+    "passageText": "Amados, não creiam em qualquer espírito; antes, provem se os espíritos procedem de Deus, pois muitos falsos profetas já apareceram no mundo.",
+    "template": "Amados, não creiam em qualquer espírito; antes, ___ se os espíritos procedem de Deus, pois muitos falsos profetas já apareceram no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "neguem"
+      },
+      {
+        "id": "b",
+        "text": "creiam"
+      },
+      {
+        "id": "c",
+        "text": "provem"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "antes, provem se os espíritos procedem de Deus",
+    "feedbackCorrect": "O imperativo é provem.",
+    "feedbackWrong": {
+      "a": "Negar a carne marca o erro.",
+      "b": "Não creiam em qualquer."
+    },
+    "hint": "É o verbo depois de antes.",
+    "learningObjective": "Lembrar o verbo do teste.",
+    "evidence": [
+      "1 João 4:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-04-provai-os-espiritos-06",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 4:2 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 4:2 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 4:2 comunica que se liga a este contexto?",
+    "verseRef": "1 João 4:2",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "passageA": {
+      "ref": "1 João 4:2",
+      "text": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João manda provar espíritos porque há falsos profetas; a vitória vem de quem está nos crentes."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Crer em qualquer espírito"
+      },
+      {
+        "id": "b",
+        "text": "Confessar Jesus em carne"
+      },
+      {
+        "id": "c",
+        "text": "Temer o mundo como maior"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Jesus Cristo veio em carne é de Deus",
+    "feedbackCorrect": "No teste dos espíritos, o critério é confessar Jesus em carne.",
+    "feedbackWrong": {
+      "a": "Não devem crer em qualquer.",
+      "c": "Maior é quem está neles."
+    },
+    "hint": "Veja o critério do reconhecimento.",
+    "learningObjective": "Ligar o contexto ao critério.",
+    "evidence": [
+      "1 João 4:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-04-provai-os-espiritos-01",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 4:4, maior é aquele que está no mundo do que aquele que está nos crentes.",
+    "prompt": "Em 1 João 4:4, maior é aquele que está no mundo do que aquele que está nos crentes.",
+    "cue": "Em 1 João 4:4, maior é aquele que está no mundo do que aquele que está nos crentes.",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+    "feedbackCorrect": "Maior é quem está nos crentes.",
+    "feedbackWrong": {
+      "true": "A comparação é explícita."
+    },
+    "hint": "Compare quem está em vocês e no mundo.",
+    "learningObjective": "Ver a relação de grandeza.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-04-provai-os-espiritos-02",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 4:1, toque a palavra que marca a causa de provar.",
+    "prompt": "Em 1 João 4:1, toque a palavra que marca a causa de provar.",
+    "cue": "Em 1 João 4:1, toque a palavra que marca a causa de provar.",
+    "verseRef": "1 João 4:1",
+    "passageText": "Amados, não creiam em qualquer espírito; antes, provem se os espíritos procedem de Deus, pois muitos falsos profetas já apareceram no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pois"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "Amados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "pois muitos falsos profetas já apareceram no mundo",
+    "feedbackCorrect": "Pois introduz a causa: muitos falsos.",
+    "feedbackWrong": {
+      "b": "Mundo é onde apareceram.",
+      "c": "Amados é o vocativo."
+    },
+    "hint": "Procure a partícula causal.",
+    "learningObjective": "Tocar o marcador causal.",
+    "evidence": [
+      "1 João 4:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-04-provai-os-espiritos-03",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 1 João 4:2–3 estabelece?",
+    "prompt": "Qual relação 1 João 4:2–3 estabelece?",
+    "cue": "Qual relação 1 João 4:2–3 estabelece?",
+    "verseRef": "1 João 4:2–3",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus. E todo espírito que não confessa que Jesus Cristo veio em carne não é de Deus; pelo contrário, este é o espírito do anticristo, a respeito do qual já ouvistes que vem, e agora já está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Confessar e negar são iguais"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne ainda é de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Confessar Jesus em carne é de Deus; negar é do anticristo"
+      },
+      {
+        "id": "d",
+        "text": "O anticristo só virá no futuro remoto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "todo espírito que confessa que Jesus Cristo veio em carne é de Deus",
+    "feedbackCorrect": "O contraste define Deus e anticristo pela confissão.",
+    "feedbackWrong": {
+      "a": "Há contraste claro.",
+      "b": "Não confessar não é de Deus.",
+      "d": "Já está no mundo."
+    },
+    "hint": "Compare o v.2 com o v.3.",
+    "learningObjective": "Compreender o critério.",
+    "evidence": [
+      "1 João 4:2–3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-04-provai-os-espiritos-04",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "1 João 4:1–2",
+    "passageText": "Amados, não creiam em qualquer espírito; antes, provem se os espíritos procedem de Deus, pois muitos falsos profetas já apareceram no mundo. Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provar os espíritos"
+      },
+      {
+        "id": "b",
+        "text": "Confissão de Jesus em carne"
+      },
+      {
+        "id": "c",
+        "text": "Vitória porque maior é quem está em vós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "provem se os espíritos procedem de Deus",
+    "feedbackCorrect": "Do teste ao critério, até a vitória.",
+    "feedbackWrong": {
+      "default": "Comece pelo provar; a vitória fecha."
+    },
+    "hint": "Siga vv.1, 2–3 e 4.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "1 João 4:1",
+      "1 João 4:2",
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-04-provai-os-espiritos-05",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 4:4, complete: maior é aquele que está em ___.",
+    "prompt": "Em 1 João 4:4, complete: maior é aquele que está em ___.",
+    "cue": "Em 1 João 4:4, complete: maior é aquele que está em ___.",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "template": "Filhinhos, ___ são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "erro"
+      },
+      {
+        "id": "c",
+        "text": "vocês"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "maior é aquele que está em vocês",
+    "feedbackCorrect": "Maior é quem está em vocês.",
+    "feedbackWrong": {
+      "a": "O mundo é o termo menor da comparação.",
+      "b": "Erro é o espírito oposto."
+    },
+    "hint": "Veja o complemento de está em.",
+    "learningObjective": "Lembrar onde está o maior.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-04-provai-os-espiritos-06",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 4:2 a 2 João 1:7?",
+    "prompt": "O que liga 1 João 4:2 a 2 João 1:7?",
+    "cue": "O que liga 1 João 4:2 a 2 João 1:7?",
+    "verseRef": "1 João 4:2",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "passageA": {
+      "ref": "1 João 4:2",
+      "text": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus."
+    },
+    "passageB": {
+      "ref": "2 João 1:7",
+      "text": "Pois muitos enganadores já saíram pelo mundo, os quais não confessam que Jesus Cristo veio em carne; este é o enganador e o anticristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Crer em qualquer espírito"
+      },
+      {
+        "id": "b",
+        "text": "Confessar Jesus em carne"
+      },
+      {
+        "id": "c",
+        "text": "Temer o mundo maior"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Jesus Cristo veio em carne",
+    "feedbackCorrect": "Ambas as cartas marcam a confissão da carne de Cristo.",
+    "feedbackWrong": {
+      "a": "Não devem crer em qualquer.",
+      "c": "Maior é quem está nos crentes."
+    },
+    "hint": "Compare a confissão da carne.",
+    "learningObjective": "Ligar o critério nas cartas.",
+    "evidence": [
+      "1 João 4:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-04-provai-os-espiritos-01",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 1 João 4:2, todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "prompt": "Segundo 1 João 4:2, todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "cue": "Segundo 1 João 4:2, todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "verseRef": "1 João 4:2",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "todo espírito que confessa que Jesus Cristo veio em carne é de Deus",
+    "feedbackCorrect": "Esse é o critério do Espírito de Deus.",
+    "feedbackWrong": {
+      "false": "O versículo afirma o critério."
+    },
+    "hint": "Leia o reconhecimento do Espírito.",
+    "learningObjective": "Confirmar o critério.",
+    "evidence": [
+      "1 João 4:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-04-provai-os-espiritos-02",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+    "prompt": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+    "cue": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+    "verseRef": "1 João 4:3–4",
+    "passageText": "E todo espírito que não confessa que Jesus Cristo veio em carne não é de Deus; pelo contrário, este é o espírito do anticristo, a respeito do qual já ouvistes que vem, e agora já está no mundo. Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ouvistes"
+      },
+      {
+        "id": "b",
+        "text": "Filhinhos"
+      },
+      {
+        "id": "c",
+        "text": "anticristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "este é o espírito do anticristo",
+    "feedbackCorrect": "É o espírito do anticristo.",
+    "feedbackWrong": {
+      "a": "Ouvistes refere-se ao aviso prévio.",
+      "b": "Filhinhos é vocativo no v.4."
+    },
+    "hint": "Veja o que este é.",
+    "learningObjective": "Sustentar a identidade do erro.",
+    "evidence": [
+      "1 João 4:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-04-provai-os-espiritos-03",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 4:1–6 sustenta?",
+    "prompt": "Que leitura 1 João 4:1–6 sustenta?",
+    "cue": "Que leitura 1 João 4:1–6 sustenta?",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O mundo é maior que Deus nos crentes"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne ainda é ortodooxo"
+      },
+      {
+        "id": "c",
+        "text": "Crer em qualquer espírito religioso"
+      },
+      {
+        "id": "d",
+        "text": "Provar espíritos pela confissão de Jesus; maior é quem está em vós"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "maior é aquele que está em vocês",
+    "feedbackCorrect": "Teste, confissão e vitória formam o padrão.",
+    "feedbackWrong": {
+      "a": "Maior é quem está em vós.",
+      "b": "Negar marca o anticristo.",
+      "c": "Não creiam em qualquer."
+    },
+    "hint": "Una o provar ao maior.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-04-provai-os-espiritos-04",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do teste à vitória?",
+    "prompt": "Qual sequência mostra o fio do teste à vitória?",
+    "cue": "Qual sequência mostra o fio do teste à vitória?",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Provar se os espíritos são de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Confessar Jesus Cristo em carne"
+      },
+      {
+        "id": "c",
+        "text": "Vencer porque maior está em vós"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "já derrotaram os falsos profetas",
+    "feedbackCorrect": "Do teste à confissão, até a vitória.",
+    "feedbackWrong": {
+      "default": "Comece pelo provar; a vitória fecha."
+    },
+    "hint": "Siga vv.1, 2 e 4.",
+    "learningObjective": "Encadear teste, confissão e vitória.",
+    "evidence": [
+      "1 João 4:1",
+      "1 João 4:2",
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-04-provai-os-espiritos-05",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 4:6, complete: o espírito da verdade e o espírito do ___.",
+    "prompt": "Em 1 João 4:6, complete: o espírito da verdade e o espírito do ___.",
+    "cue": "Em 1 João 4:6, complete: o espírito da verdade e o espírito do ___.",
+    "verseRef": "1 João 4:6",
+    "passageText": "Nós somos de Deus; aquele que conhece a Deus nos ouve; aquele que não é da parte de Deus não nos escuta. Nisto reconhecemos o espírito da verdade e o espírito do erro.",
+    "template": "Nós somos de Deus; aquele que conhece a Deus nos ouve; aquele que não é da parte de Deus não nos escuta. Nisto reconhecemos o espírito da verdade e o espírito do ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Pai"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "erro"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o espírito da verdade e o espírito do erro",
+    "feedbackCorrect": "O contraste final é verdade e erro.",
+    "feedbackWrong": {
+      "a": "Pai não fecha este contraste.",
+      "b": "Carne é o conteúdo da confissão."
+    },
+    "hint": "É o oposto de verdade.",
+    "learningObjective": "Lembrar o termo do contraste.",
+    "evidence": [
+      "1 João 4:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-04-provai-os-espiritos-06",
+    "trail": "1joao-cap",
+    "section": "j1c-04-provai-os-espiritos",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 4:6 a João 16:13?",
+    "prompt": "O que liga 1 João 4:6 a João 16:13?",
+    "cue": "O que liga 1 João 4:6 a João 16:13?",
+    "verseRef": "1 João 4:6",
+    "passageText": "Nós somos de Deus; aquele que conhece a Deus nos ouve; aquele que não é da parte de Deus não nos escuta. Nisto reconhecemos o espírito da verdade e o espírito do erro.",
+    "passageA": {
+      "ref": "1 João 4:6",
+      "text": "o espírito da verdade"
+    },
+    "passageB": {
+      "ref": "João 16:13",
+      "text": "Quando ele, o Espírito da Verdade, vier, os guiará em toda a verdade; pois não falará por si mesmo, mas dirá tudo o que tiver ouvido e lhes anunciará as coisas que hão de vir."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito da verdade"
+      },
+      {
+        "id": "b",
+        "text": "Falsos sem prova"
+      },
+      {
+        "id": "c",
+        "text": "Espírito do anticristo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o espírito da verdade",
+    "feedbackCorrect": "Ambos apontam o Espírito da verdade.",
+    "feedbackWrong": {
+      "b": "A prova é mandada.",
+      "c": "Anticristo é o oposto."
+    },
+    "hint": "Compare a expressão nos dois textos.",
+    "learningObjective": "Ligar o Espírito da verdade.",
+    "evidence": [
+      "1 João 4:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-05-a-vitoria-da-fe-01",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 5:4, a vitória que vence o mundo é a nossa fé.",
+    "prompt": "Em 1 João 5:4, a vitória que vence o mundo é a nossa fé.",
+    "cue": "Em 1 João 5:4, a vitória que vence o mundo é a nossa fé.",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "A fé é nomeada como a vitória.",
+    "feedbackWrong": {
+      "false": "O versículo afirma isso."
+    },
+    "hint": "Leia depois dos dois-pontos.",
+    "learningObjective": "Observar a vitória.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-05-a-vitoria-da-fe-02",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 5:5, toque o que Jesus é, segundo a fé que vence.",
+    "prompt": "Em 1 João 5:5, toque o que Jesus é, segundo a fé que vence.",
+    "cue": "Em 1 João 5:5, toque o que Jesus é, segundo a fé que vence.",
+    "verseRef": "1 João 5:5",
+    "passageText": "Quem é aquele que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Filho de Deus"
+      },
+      {
+        "id": "b",
+        "text": "aquele"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "crê que Jesus é o Filho de Deus",
+    "feedbackCorrect": "A fé confessa Jesus como Filho de Deus.",
+    "feedbackWrong": {
+      "b": "Mandamentos aparecem nos vv.2–3.",
+      "c": "Mundo é o que se vence."
+    },
+    "hint": "Veja o fim da pergunta.",
+    "learningObjective": "Identificar o conteúdo da fé.",
+    "evidence": [
+      "1 João 5:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-05-a-vitoria-da-fe-03",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 5:1, quem é nascido de Deus?",
+    "prompt": "Segundo 1 João 5:1, quem é nascido de Deus?",
+    "cue": "Segundo 1 João 5:1, quem é nascido de Deus?",
+    "verseRef": "1 João 5:1",
+    "passageText": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus; e todo aquele que ama ao que o gerou também ama ao filho que dele é gerado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Quem acha os mandamentos pesados demais"
+      },
+      {
+        "id": "b",
+        "text": "Quem vence sem fé"
+      },
+      {
+        "id": "c",
+        "text": "Todo aquele que crê que Jesus é o Cristo"
+      },
+      {
+        "id": "d",
+        "text": "Quem nega que Jesus é o Cristo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus",
+    "feedbackCorrect": "Crer que Jesus é o Cristo marca o nascimento de Deus.",
+    "feedbackWrong": {
+      "a": "Os mandamentos não são pesados.",
+      "b": "A vitória é a fé.",
+      "d": "Negar contradiz o versículo."
+    },
+    "hint": "Leia o início do versículo.",
+    "learningObjective": "Reconhecer quem é nascido.",
+    "evidence": [
+      "1 João 5:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-05-a-vitoria-da-fe-04",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 5:4 na ordem do texto.",
+    "prompt": "Monte 1 João 5:4 na ordem do texto.",
+    "cue": "Monte 1 João 5:4 na ordem do texto.",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "todo aquele que é nascido de Deus vence o mundo"
+      },
+      {
+        "id": "b",
+        "text": "e esta é a vitória que vence o mundo"
+      },
+      {
+        "id": "c",
+        "text": "a nossa fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "Primeiro o nascido vence; depois a vitória é a fé.",
+    "feedbackWrong": {
+      "default": "Comece com todo aquele que é nascido."
+    },
+    "hint": "O versículo fecha nomeando a fé.",
+    "learningObjective": "Seguir a ordem do v.4.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-05-a-vitoria-da-fe-05",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 5:3, complete: os seus mandamentos não são ___.",
+    "prompt": "Em 1 João 5:3, complete: os seus mandamentos não são ___.",
+    "cue": "Em 1 João 5:3, complete: os seus mandamentos não são ___.",
+    "verseRef": "1 João 5:3",
+    "passageText": "Pois este é o amor de Deus: que guardemos os seus mandamentos; e os seus mandamentos não são pesados.",
+    "template": "Pois este é o amor de Deus: que guardemos os seus mandamentos; e os seus mandamentos não são ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "pesados"
+      },
+      {
+        "id": "b",
+        "text": "amados"
+      },
+      {
+        "id": "c",
+        "text": "guardados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "os seus mandamentos não são pesados",
+    "feedbackCorrect": "Os mandamentos não são pesados.",
+    "feedbackWrong": {
+      "b": "Amar a Deus inclui guardar.",
+      "c": "Guardar é o amor de Deus."
+    },
+    "hint": "É o adjetivo depois de não são.",
+    "learningObjective": "Lembrar a avaliação dos mandamentos.",
+    "evidence": [
+      "1 João 5:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-05-a-vitoria-da-fe-06",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 5:4 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 5:4 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 5:4 comunica que se liga a este contexto?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "passageA": {
+      "ref": "1 João 5:4",
+      "text": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "João une nascimento de Deus, amor, mandamentos e o testemunho de água, sangue e Espírito."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandamentos pesados"
+      },
+      {
+        "id": "b",
+        "text": "Vitória pela fé"
+      },
+      {
+        "id": "c",
+        "text": "Negar o Filho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "No fio da fé e do nascimento, a vitória é a fé.",
+    "feedbackWrong": {
+      "a": "Não são pesados.",
+      "c": "Crer no Filho vence."
+    },
+    "hint": "Veja o que é a vitória.",
+    "learningObjective": "Ligar o contexto à fé.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-05-a-vitoria-da-fe-01",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 5:3, os mandamentos de Deus são descritos como pesados.",
+    "prompt": "Em 1 João 5:3, os mandamentos de Deus são descritos como pesados.",
+    "cue": "Em 1 João 5:3, os mandamentos de Deus são descritos como pesados.",
+    "verseRef": "1 João 5:3",
+    "passageText": "Pois este é o amor de Deus: que guardemos os seus mandamentos; e os seus mandamentos não são pesados.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "os seus mandamentos não são pesados",
+    "feedbackCorrect": "O texto diz que não são pesados.",
+    "feedbackWrong": {
+      "true": "A negação é explícita."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Ver a avaliação dos mandamentos.",
+    "evidence": [
+      "1 João 5:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-05-a-vitoria-da-fe-02",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 5:4, toque a palavra que marca a causa da vitória do nascido.",
+    "prompt": "Em 1 João 5:4, toque a palavra que marca a causa da vitória do nascido.",
+    "cue": "Em 1 João 5:4, toque a palavra que marca a causa da vitória do nascido.",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "vitória"
+      },
+      {
+        "id": "c",
+        "text": "Porque"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Porque todo aquele que é nascido de Deus vence o mundo",
+    "feedbackCorrect": "Porque abre a causa.",
+    "feedbackWrong": {
+      "a": "Mundo é o que se vence.",
+      "b": "Vitória é o resultado nomeado."
+    },
+    "hint": "É a primeira palavra do versículo.",
+    "learningObjective": "Tocar o marcador causal.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-05-a-vitoria-da-fe-03",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 1 João 5:4–5 estabelece?",
+    "prompt": "Qual relação 1 João 5:4–5 estabelece?",
+    "cue": "Qual relação 1 João 5:4–5 estabelece?",
+    "verseRef": "1 João 5:4–5",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé. Quem é aquele que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os mandamentos pesados vencem o mundo"
+      },
+      {
+        "id": "b",
+        "text": "A vitória vem sem crer em Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Só água, sem sangue, basta"
+      },
+      {
+        "id": "d",
+        "text": "A fé no Filho de Deus é a vitória que vence o mundo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "A fé no Filho é a vitória.",
+    "feedbackWrong": {
+      "a": "Mandamentos não são pesados.",
+      "b": "Vence quem crê.",
+      "c": "Veio por água e sangue."
+    },
+    "hint": "Una o v.4 ao v.5.",
+    "learningObjective": "Compreender fé e vitória.",
+    "evidence": [
+      "1 João 5:4–5"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-05-a-vitoria-da-fe-04",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos do trecho.",
+    "prompt": "Ordene os movimentos do trecho.",
+    "cue": "Ordene os movimentos do trecho.",
+    "verseRef": "1 João 5:1–2",
+    "passageText": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus; e todo aquele que ama ao que o gerou também ama ao filho que dele é gerado. Nisto conhecemos que amamos os filhos de Deus: quando amamos a Deus e observamos os seus mandamentos.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crer e nascer de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Amar a Deus e guardar mandamentos"
+      },
+      {
+        "id": "c",
+        "text": "Vitória pela fé no Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Todo aquele que crê que Jesus é o Cristo é nascido de Deus",
+    "feedbackCorrect": "Do nascimento ao amor obediente, até a vitória da fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo crer; a fé vencedora fecha."
+    },
+    "hint": "Siga vv.1, 2–3 e 4–5.",
+    "learningObjective": "Ordenar a estrutura.",
+    "evidence": [
+      "1 João 5:1",
+      "1 João 5:2",
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-05-a-vitoria-da-fe-05",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 5:6, complete: não somente por água, mas também por água e por ___.",
+    "prompt": "Em 1 João 5:6, complete: não somente por água, mas também por água e por ___.",
+    "cue": "Em 1 João 5:6, complete: não somente por água, mas também por água e por ___.",
+    "verseRef": "1 João 5:6",
+    "passageText": "Este é o que veio por meio de água e sangue, Jesus Cristo; não somente por água, mas também por água e por sangue. E o Espírito é quem dá testemunho, porque o Espírito é a verdade.",
+    "template": "Este é o que veio por meio de água e ___, Jesus Cristo; não somente por água, mas também por água e por sangue. E o Espírito é quem dá testemunho, porque o Espírito é a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "erro"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também por água e por sangue",
+    "feedbackCorrect": "O contraste inclui o sangue.",
+    "feedbackWrong": {
+      "b": "Erro não está neste versículo.",
+      "c": "Mundo é o que se vence."
+    },
+    "hint": "Veja o que acompanha a água.",
+    "learningObjective": "Lembrar o contraste água-sangue.",
+    "evidence": [
+      "1 João 5:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-05-a-vitoria-da-fe-06",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 5:4 a João 16:33?",
+    "prompt": "O que liga 1 João 5:4 a João 16:33?",
+    "cue": "O que liga 1 João 5:4 a João 16:33?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "passageA": {
+      "ref": "1 João 5:4",
+      "text": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé."
+    },
+    "passageB": {
+      "ref": "João 16:33",
+      "text": "Eu lhes disse estas coisas para que em mim vocês tenham paz. No mundo, vocês enfrentarão aflições; mas tenham bom ânimo! Eu venci o mundo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar o Filho"
+      },
+      {
+        "id": "b",
+        "text": "Mandamentos pesados"
+      },
+      {
+        "id": "c",
+        "text": "Vitória sobre o mundo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vence o mundo",
+    "feedbackCorrect": "Ambos falam de vitória sobre o mundo em Cristo/fé.",
+    "feedbackWrong": {
+      "a": "Crer no Filho vence.",
+      "b": "Mandamentos não são pesados."
+    },
+    "hint": "Compare a linguagem de vitória nos dois textos.",
+    "learningObjective": "Ligar a vitória.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-05-a-vitoria-da-fe-01",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 1 João 5:5, quem vence o mundo é aquele que crê que Jesus é o Filho de Deus.",
+    "prompt": "Segundo 1 João 5:5, quem vence o mundo é aquele que crê que Jesus é o Filho de Deus.",
+    "cue": "Segundo 1 João 5:5, quem vence o mundo é aquele que crê que Jesus é o Filho de Deus.",
+    "verseRef": "1 João 5:5",
+    "passageText": "Quem é aquele que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "aquele que crê que Jesus é o Filho de Deus",
+    "feedbackCorrect": "A fé no Filho é a condição da vitória.",
+    "feedbackWrong": {
+      "false": "O versículo pergunta e responde assim."
+    },
+    "hint": "Leia a resposta da pergunta.",
+    "learningObjective": "Confirmar quem vence.",
+    "evidence": [
+      "1 João 5:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-05-a-vitoria-da-fe-02",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 5:6, toque o trecho que sustenta quem dá testemunho.",
+    "prompt": "Em 1 João 5:6, toque o trecho que sustenta quem dá testemunho.",
+    "cue": "Em 1 João 5:6, toque o trecho que sustenta quem dá testemunho.",
+    "verseRef": "1 João 5:6",
+    "passageText": "Este é o que veio por meio de água e sangue, Jesus Cristo; não somente por água, mas também por água e por sangue. E o Espírito é quem dá testemunho, porque o Espírito é a verdade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "água"
+      },
+      {
+        "id": "b",
+        "text": "sangue"
+      },
+      {
+        "id": "c",
+        "text": "Espírito"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Espírito é quem dá testemunho, porque o Espírito é a verdade",
+    "feedbackCorrect": "O Espírito dá testemunho porque é a verdade.",
+    "feedbackWrong": {
+      "a": "Água é meio da vinda, não o sujeito do testemunho aqui.",
+      "b": "Sangue também é meio da vinda."
+    },
+    "hint": "Veja quem dá testemunho.",
+    "learningObjective": "Sustentar o testemunho do Espírito.",
+    "evidence": [
+      "1 João 5:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-05-a-vitoria-da-fe-03",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura 1 João 5:1–6 e 5:8 sustentam?",
+    "prompt": "Que leitura 1 João 5:1–6 e 5:8 sustentam?",
+    "cue": "Que leitura 1 João 5:1–6 e 5:8 sustentam?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandamentos são pesados demais"
+      },
+      {
+        "id": "b",
+        "text": "Fé no Filho vence; água, sangue e Espírito testemunham"
+      },
+      {
+        "id": "c",
+        "text": "Vitória sem fé no Filho"
+      },
+      {
+        "id": "d",
+        "text": "Jesus veio só por água"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "Fé vencedora e testemunho triplo na terra formam o padrão.",
+    "feedbackWrong": {
+      "a": "Não são pesados.",
+      "c": "A fé é a vitória.",
+      "d": "Também por sangue."
+    },
+    "hint": "Una o v.4 ao v.6 e 5:8.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "1 João 5:4",
+      "1 João 5:6",
+      "1 João 5:8"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-05-a-vitoria-da-fe-04",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio do nascimento à vitória?",
+    "prompt": "Qual sequência mostra o fio do nascimento à vitória?",
+    "cue": "Qual sequência mostra o fio do nascimento à vitória?",
+    "verseRef": "1 João 5:5",
+    "passageText": "Quem é aquele que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Crer que Jesus é o Cristo e nascer de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Amar e guardar mandamentos leves"
+      },
+      {
+        "id": "c",
+        "text": "Vencer o mundo pela fé no Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "crê que Jesus é o Filho de Deus",
+    "feedbackCorrect": "Do nascimento ao amor obediente, até vencer pela fé.",
+    "feedbackWrong": {
+      "default": "Comece pelo crer; a vitória fecha."
+    },
+    "hint": "Siga vv.1, 3 e 5.",
+    "learningObjective": "Encadear nascimento, amor e vitória.",
+    "evidence": [
+      "1 João 5:1",
+      "1 João 5:3",
+      "1 João 5:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-05-a-vitoria-da-fe-05",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 5:4, complete: esta é a ___ que vence o mundo.",
+    "prompt": "Em 1 João 5:4, complete: esta é a ___ que vence o mundo.",
+    "cue": "Em 1 João 5:4, complete: esta é a ___ que vence o mundo.",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "template": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a ___ que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "vitória"
+      },
+      {
+        "id": "b",
+        "text": "água"
+      },
+      {
+        "id": "c",
+        "text": "carne"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "A vitória é nomeada e identificada com a fé.",
+    "feedbackWrong": {
+      "b": "Água aparece no testemunho.",
+      "c": "Carne não está neste versículo."
+    },
+    "hint": "É o substantivo depois de esta é a.",
+    "learningObjective": "Lembrar o termo teológico da fé.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-05-a-vitoria-da-fe-06",
+    "trail": "1joao-cap",
+    "section": "j1c-05-a-vitoria-da-fe",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 5:4 a 1 Coríntios 15:57?",
+    "prompt": "O que liga 1 João 5:4 a 1 Coríntios 15:57?",
+    "cue": "O que liga 1 João 5:4 a 1 Coríntios 15:57?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "passageA": {
+      "ref": "1 João 5:4",
+      "text": "esta é a vitória que vence o mundo: a nossa fé"
+    },
+    "passageB": {
+      "ref": "1 Coríntios 15:57",
+      "text": "Graças a Deus, que nos concede a vitória por intermédio de nosso Senhor Jesus Cristo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória por meio de Cristo"
+      },
+      {
+        "id": "b",
+        "text": "Negar o nascimento"
+      },
+      {
+        "id": "c",
+        "text": "Mandamentos pesados"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "a vitória que vence o mundo",
+    "feedbackCorrect": "Ambos celebram a vitória dada em Cristo/fé.",
+    "feedbackWrong": {
+      "b": "O nascimento é afirmado.",
+      "c": "Mandamentos não são pesados."
+    },
+    "hint": "Compare a linguagem da vitória.",
+    "learningObjective": "Ligar a vitória.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-01",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em 1 João 1:5, Deus é luz, mas nele também há treva.",
+    "prompt": "Em 1 João 1:5, Deus é luz, mas nele também há treva.",
+    "cue": "Em 1 João 1:5, Deus é luz, mas nele também há treva.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "nele não há treva nenhuma",
+    "feedbackCorrect": "Nele não há treva nenhuma.",
+    "feedbackWrong": {
+      "true": "A exclusão é total."
+    },
+    "hint": "Leia o fim da mensagem.",
+    "learningObjective": "Observar a pureza da luz.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-02",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 2:1, toque quem é o Advogado.",
+    "prompt": "Em 1 João 2:1, toque quem é o Advogado.",
+    "cue": "Em 1 João 2:1, toque quem é o Advogado.",
+    "verseRef": "1 João 2:1–2",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo. E ele é a propiciação pelos nossos pecados, e não somente pelos nossos, mas também pelos de todo o mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhinhos"
+      },
+      {
+        "id": "b",
+        "text": "Jesus Cristo"
+      },
+      {
+        "id": "c",
+        "text": "mundo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Jesus Cristo, o Justo",
+    "feedbackCorrect": "O Advogado é Jesus Cristo.",
+    "feedbackWrong": {
+      "a": "Filhinhos é o vocativo.",
+      "c": "Mundo aparece no v.2."
+    },
+    "hint": "Veja o nome do Advogado.",
+    "learningObjective": "Identificar o Advogado.",
+    "evidence": [
+      "1 João 2:1"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-03",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo 1 João 5:4, o que é a vitória que vence o mundo?",
+    "prompt": "Segundo 1 João 5:4, o que é a vitória que vence o mundo?",
+    "cue": "Segundo 1 João 5:4, o que é a vitória que vence o mundo?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandamentos pesados"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne de Jesus"
+      },
+      {
+        "id": "c",
+        "text": "Andar nas trevas"
+      },
+      {
+        "id": "d",
+        "text": "A nossa fé"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "A fé é a vitória.",
+    "feedbackWrong": {
+      "a": "Não são pesados.",
+      "b": "Confessar a carne é de Deus.",
+      "c": "Trevas quebram a comunhão."
+    },
+    "hint": "Leia depois dos dois-pontos.",
+    "learningObjective": "Reconhecer a vitória.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-04",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 3:2 na ordem do texto.",
+    "prompt": "Monte 1 João 3:2 na ordem do texto.",
+    "cue": "Monte 1 João 3:2 na ordem do texto.",
+    "verseRef": "1 João 3:2",
+    "passageText": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "options": [
+      {
+        "id": "a",
+        "text": "agora somos filhos de Deus"
+      },
+      {
+        "id": "b",
+        "text": "e ainda não se manifestou"
+      },
+      {
+        "id": "c",
+        "text": "o que haveremos de ser"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser",
+    "feedbackCorrect": "Primeiro a identidade agora; depois o ainda não.",
+    "feedbackWrong": {
+      "default": "Comece com agora somos."
+    },
+    "hint": "O versículo une agora e ainda não.",
+    "learningObjective": "Seguir a ordem do v.2.",
+    "evidence": [
+      "1 João 3:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-05",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em 1 João 4:2, complete: Jesus Cristo veio em ___.",
+    "prompt": "Em 1 João 4:2, complete: Jesus Cristo veio em ___.",
+    "cue": "Em 1 João 4:2, complete: Jesus Cristo veio em ___.",
+    "verseRef": "1 João 4:2",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus.",
+    "template": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em ___ é de Deus.",
+    "options": [
+      {
+        "id": "a",
+        "text": "treva"
+      },
+      {
+        "id": "b",
+        "text": "carne"
+      },
+      {
+        "id": "c",
+        "text": "erro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Jesus Cristo veio em carne",
+    "feedbackCorrect": "A confissão é veio em carne.",
+    "feedbackWrong": {
+      "a": "Treva é excluída de Deus.",
+      "c": "Erro é o espírito oposto."
+    },
+    "hint": "Veja o fim da confissão.",
+    "learningObjective": "Lembrar a confissão.",
+    "evidence": [
+      "1 João 4:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-06",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que 1 João 1:7 comunica que se liga a este contexto?",
+    "prompt": "O que 1 João 1:7 comunica que se liga a este contexto?",
+    "cue": "O que 1 João 1:7 comunica que se liga a este contexto?",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "passageA": {
+      "ref": "1 João 1:7",
+      "text": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A Travessia revisa comunhão na luz, Advogado, filiação, discernimento e fé vencedora."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Crer em qualquer espírito"
+      },
+      {
+        "id": "b",
+        "text": "Andar na luz e purificação"
+      },
+      {
+        "id": "c",
+        "text": "Negar o Advogado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "andarmos na luz, assim como Ele está na luz",
+    "feedbackCorrect": "No arco da carta, andar na luz abre a comunhão verdadeira.",
+    "feedbackWrong": {
+      "a": "Devem provar os espíritos.",
+      "c": "Há Advogado."
+    },
+    "hint": "Veja a condição Se, porém.",
+    "learningObjective": "Ligar o contexto à luz.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-07",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em 1 João 5:5, toque o título de Jesus na fé que vence.",
+    "prompt": "Em 1 João 5:5, toque o título de Jesus na fé que vence.",
+    "cue": "Em 1 João 5:5, toque o título de Jesus na fé que vence.",
+    "verseRef": "1 João 5:5",
+    "passageText": "Quem é aquele que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?",
+    "options": [
+      {
+        "id": "a",
+        "text": "vence"
+      },
+      {
+        "id": "b",
+        "text": "mundo"
+      },
+      {
+        "id": "c",
+        "text": "Filho de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Jesus é o Filho de Deus",
+    "feedbackCorrect": "A fé confessa o Filho de Deus.",
+    "feedbackWrong": {
+      "a": "Mundo é o que se vence.",
+      "b": "Anticristo nega a confissão."
+    },
+    "hint": "Veja o fim da pergunta.",
+    "learningObjective": "Identificar o título.",
+    "evidence": [
+      "1 João 5:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-sem-j1c-boss-1-08",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte 1 João 4:4 na ordem do texto.",
+    "prompt": "Monte 1 João 4:4 na ordem do texto.",
+    "cue": "Monte 1 João 4:4 na ordem do texto.",
+    "verseRef": "1 João 4:4",
+    "passageText": "Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "maior é aquele que está em vocês"
+      },
+      {
+        "id": "b",
+        "text": "do que aquele"
+      },
+      {
+        "id": "c",
+        "text": "que está no mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "maior é aquele que está em vocês do que aquele que está no mundo",
+    "feedbackCorrect": "Primeiro quem está em vocês; depois a comparação com o mundo.",
+    "feedbackWrong": {
+      "default": "Comece com maior é."
+    },
+    "hint": "A comparação fecha o versículo.",
+    "learningObjective": "Seguir a ordem da comparação.",
+    "evidence": [
+      "1 João 4:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-01",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em 1 João 2:4, dizer conhecer a Deus sem guardar mandamentos ainda é verdade.",
+    "prompt": "Em 1 João 2:4, dizer conhecer a Deus sem guardar mandamentos ainda é verdade.",
+    "cue": "Em 1 João 2:4, dizer conhecer a Deus sem guardar mandamentos ainda é verdade.",
+    "verseRef": "1 João 2:4",
+    "passageText": "Aquele que diz: \"Eu o conheço\" e não observa os seus mandamentos é mentiroso, e a verdade não está nele.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "é mentiroso, e a verdade não está nele",
+    "feedbackCorrect": "Quem diz e não observa é mentiroso.",
+    "feedbackWrong": {
+      "true": "O veredito é mentiroso."
+    },
+    "hint": "Leia o fim do versículo.",
+    "learningObjective": "Ver a relação dizer-guardar.",
+    "evidence": [
+      "1 João 2:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-02",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 1:7, toque o marcador do contraste com as trevas.",
+    "prompt": "Em 1 João 1:7, toque o marcador do contraste com as trevas.",
+    "cue": "Em 1 João 1:7, toque o marcador do contraste com as trevas.",
+    "verseRef": "1 João 1:7",
+    "passageText": "Se, porém, andarmos na luz, assim como Ele está na luz, temos comunhão uns com os outros, e o sangue de Jesus Cristo, seu Filho, nos purifica de todo pecado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sangue"
+      },
+      {
+        "id": "b",
+        "text": "porém"
+      },
+      {
+        "id": "c",
+        "text": "pecado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Se, porém, andarmos na luz",
+    "feedbackCorrect": "Porém vira para a luz.",
+    "feedbackWrong": {
+      "a": "Sangue é o meio da purificação.",
+      "c": "Pecado é o que é purificado."
+    },
+    "hint": "Procure a partícula depois de Se.",
+    "learningObjective": "Tocar o contraste.",
+    "evidence": [
+      "1 João 1:7"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-03",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Qual relação 1 João 4:2–3 estabelece?",
+    "prompt": "Qual relação 1 João 4:2–3 estabelece?",
+    "cue": "Qual relação 1 João 4:2–3 estabelece?",
+    "verseRef": "1 João 4:2–3",
+    "passageText": "Nisto vocês reconhecem o Espírito de Deus: todo espírito que confessa que Jesus Cristo veio em carne é de Deus. E todo espírito que não confessa que Jesus Cristo veio em carne não é de Deus; pelo contrário, este é o espírito do anticristo, a respeito do qual já ouvistes que vem, e agora já está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é preciso provar espíritos"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne ainda é de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Confessar e negar são iguais"
+      },
+      {
+        "id": "d",
+        "text": "Confessar Jesus em carne é de Deus; negar é do anticristo"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "todo espírito que confessa que Jesus Cristo veio em carne é de Deus",
+    "feedbackCorrect": "O critério divide Deus e anticristo.",
+    "feedbackWrong": {
+      "a": "Devem provar.",
+      "b": "Não confessar não é de Deus.",
+      "c": "Há contraste."
+    },
+    "hint": "Compare os vv.2–3.",
+    "learningObjective": "Compreender o critério.",
+    "evidence": [
+      "1 João 4:2–3"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-04",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os movimentos da carta.",
+    "prompt": "Ordene os movimentos da carta.",
+    "cue": "Ordene os movimentos da carta.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunho e Deus é luz"
+      },
+      {
+        "id": "b",
+        "text": "Advogado e andar como ele"
+      },
+      {
+        "id": "c",
+        "text": "Provar espíritos e vitória da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Deus é luz, e nele não há treva nenhuma",
+    "feedbackCorrect": "Da luz ao Advogado, até o discernimento e a fé.",
+    "feedbackWrong": {
+      "default": "Comece pela luz; a fé fecha."
+    },
+    "hint": "Siga o arco da carta.",
+    "learningObjective": "Ordenar o arco.",
+    "evidence": [
+      "1 João 1:5",
+      "1 João 2:1",
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-05",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em 1 João 3:2, complete: agora somos ___ de Deus.",
+    "prompt": "Em 1 João 3:2, complete: agora somos ___ de Deus.",
+    "cue": "Em 1 João 3:2, complete: agora somos ___ de Deus.",
+    "verseRef": "1 João 3:2",
+    "passageText": "Amados, agora somos filhos de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "template": "Amados, agora somos ___ de Deus, e ainda não se manifestou o que haveremos de ser. Sabemos que, quando Ele se manifestar, seremos semelhantes a Ele, porque O veremos como Ele é.",
+    "options": [
+      {
+        "id": "a",
+        "text": "filhos"
+      },
+      {
+        "id": "b",
+        "text": "trevas"
+      },
+      {
+        "id": "c",
+        "text": "inimigos"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "agora somos filhos de Deus",
+    "feedbackCorrect": "A identidade presente é filhos.",
+    "feedbackWrong": {
+      "b": "Trevas são rejeitadas.",
+      "c": "Somos filhos."
+    },
+    "hint": "É o substantivo depois de somos.",
+    "learningObjective": "Lembrar a filiação.",
+    "evidence": [
+      "1 João 3:2"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-06",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga 1 João 2:6 a João 14:15?",
+    "prompt": "O que liga 1 João 2:6 a João 14:15?",
+    "cue": "O que liga 1 João 2:6 a João 14:15?",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "passageA": {
+      "ref": "1 João 2:6",
+      "text": "Aquele que diz que permanece nele também deve andar assim como ele andou."
+    },
+    "passageB": {
+      "ref": "João 14:15",
+      "text": "Se vós me amais, guardareis os meus mandamentos."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negar a carne"
+      },
+      {
+        "id": "b",
+        "text": "Andar nas trevas"
+      },
+      {
+        "id": "c",
+        "text": "Amor e obediência a Jesus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "deve andar assim como ele andou",
+    "feedbackCorrect": "Permanecer/amar se prova em andar/obedecer.",
+    "feedbackWrong": {
+      "a": "A carne deve ser confessada.",
+      "b": "Trevas são mentira."
+    },
+    "hint": "Compare o dever prático.",
+    "learningObjective": "Ligar obediência.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-07",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em 1 João 5:4, toque o marcador causal da vitória.",
+    "prompt": "Em 1 João 5:4, toque o marcador causal da vitória.",
+    "cue": "Em 1 João 5:4, toque o marcador causal da vitória.",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "fé"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porque todo aquele que é nascido de Deus vence o mundo",
+    "feedbackCorrect": "Porque abre a causa.",
+    "feedbackWrong": {
+      "a": "Mundo é o que se vence.",
+      "c": "Fé é a vitória nomeada."
+    },
+    "hint": "É a primeira palavra.",
+    "learningObjective": "Tocar o marcador.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-cam-j1c-boss-1-08",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene a lógica da filiação à fé.",
+    "prompt": "Ordene a lógica da filiação à fé.",
+    "cue": "Ordene a lógica da filiação à fé.",
+    "verseRef": "1 João 3:1",
+    "passageText": "Vejam que grande amor o Pai nos concedeu, a ponto de sermos chamados filhos de Deus; e, de fato, somos filhos de Deus. Por essa razão, o mundo não nos conhece, porque não o conheceu a Ele mesmo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ser filhos pelo amor do Pai"
+      },
+      {
+        "id": "b",
+        "text": "Provar espíritos pela confissão"
+      },
+      {
+        "id": "c",
+        "text": "Vencer o mundo crendo no Filho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sermos chamados filhos de Deus",
+    "feedbackCorrect": "Da filiação ao discernimento, até a fé vencedora.",
+    "feedbackWrong": {
+      "default": "Comece pelos filhos; a fé fecha."
+    },
+    "hint": "Siga 3:1, 4:2 e 5:4.",
+    "learningObjective": "Ordenar filiação e fé.",
+    "evidence": [
+      "1 João 3:1",
+      "1 João 4:2",
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-01",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Segundo 1 João 2:6, quem diz permanecer nele deve andar como ele andou.",
+    "prompt": "Segundo 1 João 2:6, quem diz permanecer nele deve andar como ele andou.",
+    "cue": "Segundo 1 João 2:6, quem diz permanecer nele deve andar como ele andou.",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "A confissão exige o andar de Cristo.",
+    "feedbackWrong": {
+      "false": "O dever é explícito."
+    },
+    "hint": "Leia o dever.",
+    "learningObjective": "Confirmar o permanecer.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-02",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas.",
+    "prompt": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas.",
+    "cue": "Em 1 João 1:5, toque o trecho que sustenta a exclusão de trevas.",
+    "verseRef": "1 João 1:5",
+    "passageText": "Esta é a mensagem que ouvimos dele e que anunciamos a vocês: Deus é luz, e nele não há treva nenhuma.",
+    "options": [
+      {
+        "id": "a",
+        "text": "treva nenhuma"
+      },
+      {
+        "id": "b",
+        "text": "ouvimos"
+      },
+      {
+        "id": "c",
+        "text": "mensagem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "nele não há treva nenhuma",
+    "feedbackCorrect": "Não há treva nenhuma nele.",
+    "feedbackWrong": {
+      "b": "Ouvimos descreve a origem da mensagem.",
+      "c": "Mensagem introduz o conteúdo."
+    },
+    "hint": "Veja o fim da mensagem.",
+    "learningObjective": "Sustentar a pureza.",
+    "evidence": [
+      "1 João 1:5"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-03",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura o arco de 1 João sustenta?",
+    "prompt": "Que leitura o arco de 1 João sustenta?",
+    "cue": "Que leitura o arco de 1 João sustenta?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória sem fé no Filho"
+      },
+      {
+        "id": "b",
+        "text": "Negar a carne ainda é de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Palavras bastam sem andar na luz"
+      },
+      {
+        "id": "d",
+        "text": "Comunhão na luz, obediência, filiação, discernimento e fé vencedora"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "esta é a vitória que vence o mundo: a nossa fé",
+    "feedbackCorrect": "Luz, Advogado, filhos, prova e fé formam o fio.",
+    "feedbackWrong": {
+      "a": "A fé é a vitória.",
+      "b": "Negar marca o anticristo.",
+      "c": "Andar nas trevas é mentir."
+    },
+    "hint": "Una luz, Advogado e fé.",
+    "learningObjective": "Escolher a leitura sustentável.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-04",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da comunhão à vitória?",
+    "prompt": "Qual sequência mostra o fio da comunhão à vitória?",
+    "cue": "Qual sequência mostra o fio da comunhão à vitória?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Andar na luz com o Advogado"
+      },
+      {
+        "id": "b",
+        "text": "Viver como filhos e provar espíritos"
+      },
+      {
+        "id": "c",
+        "text": "A fé que vence o mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "a nossa fé",
+    "feedbackCorrect": "Da luz ao discernimento, até a fé vencedora.",
+    "feedbackWrong": {
+      "default": "Comece pela luz; a fé fecha."
+    },
+    "hint": "Siga 1:7, 3:1–4:2 e 5:4.",
+    "learningObjective": "Encadear comunhão e vitória.",
+    "evidence": [
+      "1 João 1:7",
+      "1 João 3:1",
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-05",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+    "prompt": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+    "cue": "Em 1 João 2:6, complete: também deve ___ assim como ele andou.",
+    "verseRef": "1 João 2:6",
+    "passageText": "Aquele que diz que permanece nele também deve andar assim como ele andou.",
+    "template": "Aquele que diz que permanece nele também deve ___ assim como ele andou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "andar"
+      },
+      {
+        "id": "b",
+        "text": "mentir"
+      },
+      {
+        "id": "c",
+        "text": "negar"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "também deve andar assim como ele andou",
+    "feedbackCorrect": "O verbo do dever é andar.",
+    "feedbackWrong": {
+      "b": "Mentir descreve a falsa confissão.",
+      "c": "Negar a carne é erro."
+    },
+    "hint": "É o verbo depois de deve.",
+    "learningObjective": "Lembrar o verbo do permanecer.",
+    "evidence": [
+      "1 João 2:6"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-06",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga 1 João 5:4 a João 16:33?",
+    "prompt": "O que liga 1 João 5:4 a João 16:33?",
+    "cue": "O que liga 1 João 5:4 a João 16:33?",
+    "verseRef": "1 João 5:4",
+    "passageText": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.",
+    "passageA": {
+      "ref": "1 João 5:4",
+      "text": "Porque todo aquele que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé."
+    },
+    "passageB": {
+      "ref": "João 16:33",
+      "text": "Eu lhes disse estas coisas para que em mim vocês tenham paz. No mundo, vocês enfrentarão aflições; mas tenham bom ânimo! Eu venci o mundo."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Vitória sobre o mundo"
+      },
+      {
+        "id": "b",
+        "text": "Negar o Advogado"
+      },
+      {
+        "id": "c",
+        "text": "Andar nas trevas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "vence o mundo",
+    "feedbackCorrect": "Ambos celebram vitória sobre o mundo em Cristo/fé.",
+    "feedbackWrong": {
+      "b": "Há Advogado.",
+      "c": "Trevas são rejeitadas."
+    },
+    "hint": "Compare a vitória.",
+    "learningObjective": "Ligar a vitória.",
+    "evidence": [
+      "1 João 5:4"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-07",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+    "prompt": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+    "cue": "Em 1 João 4:3, toque o trecho que sustenta a identidade do espírito que não confessa.",
+    "verseRef": "1 João 4:3–4",
+    "passageText": "E todo espírito que não confessa que Jesus Cristo veio em carne não é de Deus; pelo contrário, este é o espírito do anticristo, a respeito do qual já ouvistes que vem, e agora já está no mundo. Filhinhos, vocês são de Deus e já derrotaram os falsos profetas, pois maior é aquele que está em vocês do que aquele que está no mundo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mundo"
+      },
+      {
+        "id": "b",
+        "text": "anticristo"
+      },
+      {
+        "id": "c",
+        "text": "Filhinhos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "este é o espírito do anticristo",
+    "feedbackCorrect": "É o espírito do anticristo.",
+    "feedbackWrong": {
+      "a": "Mundo é onde já está.",
+      "c": "Filhinhos é vocativo no v.4."
+    },
+    "hint": "Veja o que este é.",
+    "learningObjective": "Sustentar a identidade.",
+    "evidence": [
+      "1 João 4:3"
+    ]
+  },
+  {
+    "id": "1joao-cap-pro-j1c-boss-1-08",
+    "trail": "1joao-cap",
+    "section": "j1c-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência revela o caminho do testemunho à fé?",
+    "prompt": "Qual sequência revela o caminho do testemunho à fé?",
+    "cue": "Qual sequência revela o caminho do testemunho à fé?",
+    "verseRef": "1 João 2:1",
+    "passageText": "Meus filhinhos, escrevo estas coisas para que não pequeis; e, se alguém pecar, temos um Advogado junto ao Pai, Jesus Cristo, o Justo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Testemunhar a Palavra da vida"
+      },
+      {
+        "id": "b",
+        "text": "Santificar a vida com o Advogado"
+      },
+      {
+        "id": "c",
+        "text": "Crer e vencer o mundo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "temos um Advogado junto ao Pai",
+    "feedbackCorrect": "Do testemunho ao Advogado, até a fé vencedora.",
+    "feedbackWrong": {
+      "default": "Comece pelo testemunho; a fé fecha."
+    },
+    "hint": "Siga 1:1, 2:1 e 5:4.",
+    "learningObjective": "Encadear testemunho e fé.",
+    "evidence": [
+      "1 João 1:1",
+      "1 João 2:1",
+      "1 João 5:4"
+    ]
+  }
+]

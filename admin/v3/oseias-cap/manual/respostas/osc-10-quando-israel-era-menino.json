@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Oséias 11:1–6",
+    "passages": [
+      {
+        "ref": "Oséias 11:1–6"
+      }
+    ],
+    "context": "O Senhor lembra que amou Israel desde menino e não consegue entregar Efraim.",
+    "keyword": "Israel",
+    "keywordGloss": "Palavra-chave do trecho em Quando Israel era menino.",
+    "focusQuestion": "Onde esta palavra de Oséias encontra a sua vida agora?",
+    "reflectionPrompts": [
+      "Quando Israel era jovem eu o amei",
+      "Mas, quanto mais eu os chamava, mais se",
+      "Eu, no entanto, ensinei a andar a Efraim"
+    ],
+    "facts": [
+      {
+        "text": "Quando Israel era jovem eu o amei.",
+        "evidenceRef": "Oséias 11:1",
+        "evidenceSpan": "Quando Israel era jovem eu o amei"
+      },
+      {
+        "text": "Mas, quanto mais eu os chamava, mais se afastavam de minha presença.",
+        "evidenceRef": "Oséias 11:2",
+        "evidenceSpan": "Mas, quanto mais eu os chamava, mais se afastavam de minha presença"
+      },
+      {
+        "text": "Eu, no entanto, ensinei a andar a Efraim.",
+        "evidenceRef": "Oséias 11:3",
+        "evidenceSpan": "Eu, no entanto, ensinei a andar a Efraim"
+      },
+      {
+        "text": "Atraí-os com cordas humanas, com laços de amor.",
+        "evidenceRef": "Oséias 11:4",
+        "evidenceSpan": "Atraí-os com cordas humanas, com laços de amor"
+      },
+      {
+        "text": "Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque se.",
+        "evidenceRef": "Oséias 11:5",
+        "evidenceSpan": "Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque se"
+      },
+      {
+        "text": "E a espada cairá sobre suas cidades, consumirá seus ferrolhos e devorará por.",
+        "evidenceRef": "Oséias 11:6",
+        "evidenceSpan": "E a espada cairá sobre suas cidades, consumirá seus ferrolhos e devorará por"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Israel",
+        "gloss": "Palavra-chave do trecho em Quando Israel era menino."
+      },
+      {
+        "term": "Egito",
+        "gloss": "Palavra-chave do trecho em Quando Israel era menino."
+      },
+      {
+        "term": "Efraim",
+        "gloss": "Palavra-chave do trecho em Quando Israel era menino."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Quando Israel era jovem eu o amei",
+        "evidenceRef": "Oséias 11:1"
+      },
+      {
+        "label": "Mas, quanto mais eu os chamava, mais se afastavam",
+        "evidenceRef": "Oséias 11:2"
+      },
+      {
+        "label": "Eu, no entanto, ensinei a andar a Efraim",
+        "evidenceRef": "Oséias 11:3"
+      },
+      {
+        "label": "Atraí-os com cordas humanas, com laços de amor",
+        "evidenceRef": "Oséias 11:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Mas, quanto mais eu os chamava, mais se afastavam de minha presença",
+        "marker": "Mas",
+        "evidenceRef": "Oséias 11:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Eu, no entanto, ensinei a andar a Efraim",
+        "marker": "mas",
+        "evidenceRef": "Oséias 11:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque se recusam a se",
+        "marker": "porque",
+        "evidenceRef": "Oséias 11:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 3:1",
+        "bridge": "Volta da esposa"
+      },
+      {
+        "ref": "Romanos 9:25",
+        "bridge": "Povo chamado de novo"
+      },
+      {
+        "ref": "Lucas 15:18",
+        "bridge": "Voltar ao pai"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O texto não exige resposta prática.",
+        "why": "A cena chama a ouvir e voltar ao Senhor."
+      },
+      {
+        "text": "O juízo apaga qualquer esperança.",
+        "why": "Há convite e promessa no bloco da trilha."
+      },
+      {
+        "text": "Os ídolos são fonte real das bênçãos.",
+        "why": "O Senhor é quem dá o necessário."
+      }
+    ],
+    "centralInsight": "O meu coração está comovido: não executarei o furor da minha ira.",
+    "anchorQuestion": "Segundo Oséias 11:1, o que o texto destaca?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Oséias 11:1, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 11:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quando Israel era jovem eu o amei",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler semente em Oséias 11:1.",
+      "evidence": [
+        "Oséias 11:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Oséias 11:1, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 11:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Israel"
+        },
+        {
+          "id": "b",
+          "text": "Quando"
+        },
+        {
+          "id": "c",
+          "text": "jovem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto traz \"Israel\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 11:1.",
+      "evidence": [
+        "Oséias 11:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Oséias 11:2, o que o texto afirma?",
+      "verseRef": "Oséias 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas, quanto mais eu os chamava, mais se afastavam de minha presença"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas, quanto mais eu os chamava, mais se afastavam de minha presença",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 11:2.",
+      "evidence": [
+        "Oséias 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte o versículo na ordem do texto. (Oséias 11:2)",
+      "verseRef": "Oséias 11:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas, quanto mais eu os chamava, mais"
+        },
+        {
+          "id": "b",
+          "text": "se afastavam de minha presença; sacrificavam"
+        },
+        {
+          "id": "c",
+          "text": "a baalins e queimavam incenso às imagens esculpidas."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas, quanto mais eu os chamava, mais",
+      "feedbackCorrect": "A ordem segue o versículo.",
+      "feedbackWrong": {
+        "default": "Comece pelo início do verso."
+      },
+      "hint": "Siga a ordem das palavras no palco.",
+      "learningObjective": "Ordenar Oséias 11:2.",
+      "evidence": [
+        "Oséias 11:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Oséias 11:3, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 11:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "entanto"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "jovem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "entanto",
+      "feedbackCorrect": "A palavra do texto é \"entanto\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 11:3.",
+      "evidence": [
+        "Oséias 11:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Oséias 11:1 comunica que se liga a este contexto?",
+      "verseRef": "Oséias 11:1",
+      "passageA": {
+        "ref": "Oséias 11:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor lembra que amou Israel desde menino e não consegue entregar Efraim."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado a voltar"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando Israel era jovem eu o amei",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 11:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Oséias 11:3, eu, no entanto, ensinei a andar a Efraim.",
+      "verseRef": "Oséias 11:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu, no entanto, ensinei a andar a Efraim",
+      "feedbackCorrect": "O texto confirma.",
+      "feedbackWrong": {
+        "false": "O versículo confirma a afirmação."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler caminhada em Oséias 11:3.",
+      "evidence": [
+        "Oséias 11:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Oséias 11:3, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 11:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "ensinei"
+        },
+        {
+          "id": "b",
+          "text": "entanto"
+        },
+        {
+          "id": "c",
+          "text": "andar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ensinei",
+      "feedbackCorrect": "O texto traz \"ensinei\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 11:3.",
+      "evidence": [
+        "Oséias 11:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Oséias 11:4, o que o texto afirma?",
+      "verseRef": "Oséias 11:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atraí-os e cordas"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Atraí-os com cordas humanas, com laços de amor",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 11:4.",
+      "evidence": [
+        "Oséias 11:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento desta cena. (Oséias 11:4)",
+      "verseRef": "Oséias 11:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Atraí-os e cordas"
+        },
+        {
+          "id": "b",
+          "text": "voltarão e terra"
+        },
+        {
+          "id": "c",
+          "text": "espada e cairá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Atraí-os com cordas humanas, com laços de amor",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 11:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Oséias 11:5, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 11:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "voltarão"
+        },
+        {
+          "id": "b",
+          "text": "entanto"
+        },
+        {
+          "id": "c",
+          "text": "ensinei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "voltarão",
+      "feedbackCorrect": "A palavra do texto é \"voltarão\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 11:5.",
+      "evidence": [
+        "Oséias 11:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Oséias 11:3 a Romanos 9:25?",
+      "verseRef": "Oséias 11:3",
+      "passageA": {
+        "ref": "Oséias 11:3"
+      },
+      "passageB": {
+        "ref": "Romanos 9:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo chamado de novo"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu, no entanto, ensinei a andar a Efraim",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 11:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Oséias 11:5, o Senhor aparece como ausente e indiferente ao que ocorre.",
+      "verseRef": "Oséias 11:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque se",
+      "feedbackCorrect": "A afirmação não corresponde ao texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo com atenção."
+      },
+      "hint": "Compare com o versículo do palco.",
+      "learningObjective": "Ler profundezas em Oséias 11:5.",
+      "evidence": [
+        "Oséias 11:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Oséias 11:5, toque o trecho que o texto destaca.",
+      "verseRef": "Oséias 11:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "terra"
+        },
+        {
+          "id": "b",
+          "text": "voltarão"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "terra",
+      "feedbackCorrect": "O texto traz \"terra\".",
+      "feedbackWrong": {
+        "b": "Olhe de novo o versículo.",
+        "c": "Outra parte do verso."
+      },
+      "hint": "Procure no palco a expressão pedida.",
+      "learningObjective": "Localizar em Oséias 11:5.",
+      "evidence": [
+        "Oséias 11:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Oséias 11:6, o que o texto afirma?",
+      "verseRef": "Oséias 11:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "espada e cairá"
+        },
+        {
+          "id": "b",
+          "text": "Elogio sem reserva à idolatria"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio total sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Ausência completa do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E a espada cairá sobre suas cidades, consumirá seus ferrolhos e devorará por",
+      "feedbackCorrect": "A opção acompanha o versículo.",
+      "feedbackWrong": {
+        "b": "Isso não está no texto.",
+        "c": "O trecho fala com clareza.",
+        "d": "Há palavra do Senhor."
+      },
+      "hint": "Fique perto do que está escrito.",
+      "learningObjective": "Escolher conforme Oséias 11:6.",
+      "evidence": [
+        "Oséias 11:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica que o texto sustenta. (Oséias 11:6)",
+      "verseRef": "Oséias 11:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "povo e inclina"
+        },
+        {
+          "id": "b",
+          "text": "poderia e deixá-lo"
+        },
+        {
+          "id": "c",
+          "text": "executarei e furor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E a espada cairá sobre suas cidades, consumirá seus ferrolhos e devorará por",
+      "feedbackCorrect": "A sequência acompanha o bloco.",
+      "feedbackWrong": {
+        "default": "Siga o fio da cena."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Ordenar o arco da cena.",
+      "evidence": [
+        "Oséias 11:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Oséias 11:7, qual palavra completa o sentido do versículo?",
+      "verseRef": "Oséias 11:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "povo"
+        },
+        {
+          "id": "b",
+          "text": "voltarão"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "povo",
+      "feedbackCorrect": "A palavra do texto é \"povo\".",
+      "feedbackWrong": {
+        "b": "Não é essa a palavra do versículo.",
+        "c": "Olhe de novo o palco."
+      },
+      "hint": "Uma palavra do próprio versículo.",
+      "learningObjective": "Completar Oséias 11:7.",
+      "evidence": [
+        "Oséias 11:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Oséias 11:5 a Lucas 15:18?",
+      "verseRef": "Oséias 11:5",
+      "passageA": {
+        "ref": "Oséias 11:5"
+      },
+      "passageB": {
+        "ref": "Lucas 15:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voltar ao pai"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio total de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Louvor à idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque se",
+      "feedbackCorrect": "A ponte acompanha o texto.",
+      "feedbackWrong": {
+        "b": "Há palavra e ação de Deus.",
+        "c": "O texto não louva ídolos."
+      },
+      "hint": "Nomeie a ponte, sem alongar.",
+      "learningObjective": "Conectar a passagem.",
+      "evidence": [
+        "Oséias 11:5"
+      ]
+    }
+  ]
+}

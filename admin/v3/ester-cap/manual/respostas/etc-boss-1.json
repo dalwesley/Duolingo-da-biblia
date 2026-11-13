@@ -1,0 +1,919 @@
+{
+  "study": {
+    "passageRef": "Ester 1:10–11",
+    "passages": [
+      {
+        "ref": "Ester 1:10–11"
+      },
+      {
+        "ref": "Ester 3:1–4"
+      },
+      {
+        "ref": "Ester 4:5–10"
+      },
+      {
+        "ref": "Ester 5:1–5"
+      }
+    ],
+    "context": "Cena de Travessia: Ameaça no palácio: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Ester",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Ameaça no palácio",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "No.",
+        "evidenceRef": "Ester 1:10",
+        "evidenceSpan": "No"
+      },
+      {
+        "text": "O que deveria ser feito à rainha Vasti.",
+        "evidenceRef": "Ester 1:15",
+        "evidenceSpan": "O que deveria ser feito à rainha Vasti"
+      },
+      {
+        "text": "Depois.",
+        "evidenceRef": "Ester 3:1",
+        "evidenceSpan": "Depois"
+      },
+      {
+        "text": "Sucedeu.",
+        "evidenceRef": "Ester 3:4",
+        "evidenceSpan": "Sucedeu"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Ester 4:5",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Ester 4:10",
+        "evidenceSpan": "Então"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Ester",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Mardoqueu",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Hamã",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "No sétimo dia quando o coração",
+        "evidenceRef": "Ester 1:10"
+      },
+      {
+        "label": "O que deveria ser feito à",
+        "evidenceRef": "Ester 1:15"
+      },
+      {
+        "label": "Depois disso o rei assuero engrandeceu",
+        "evidenceRef": "Ester 3:1"
+      },
+      {
+        "label": "Sucedeu que dizendo lhe isso dia",
+        "evidenceRef": "Ester 3:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Ester 1:10"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Ester 3:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Ester 4:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 54:17",
+        "bridge": "Nenhuma arma prosperará"
+      },
+      {
+        "ref": "Provérbios 21:1",
+        "bridge": "Coração do rei na mão"
+      },
+      {
+        "ref": "Salmos 7:15",
+        "bridge": "Cai na cova que abriu"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "No risco, Ester é chamada a usar o lugar que recebeu",
+    "anchorQuestion": "O que Ester 1:10 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ester 1:10, o texto inclui No.",
+      "verseRef": "Ester 1:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Ester 1:10 afirma.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ester 1:10, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Ester 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "sétimo"
+        },
+        {
+          "id": "b",
+          "text": "dia"
+        },
+        {
+          "id": "c",
+          "text": "coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sétimo",
+      "feedbackCorrect": "O versículo destaca sétimo.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ester 3:1, o que o texto apresenta com clareza.",
+      "verseRef": "Ester 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Ester 3:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ester 1:15 na ordem do texto.",
+      "verseRef": "Ester 1:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O que deveria ser"
+        },
+        {
+          "id": "b",
+          "text": "feito à rainha Vasti"
+        },
+        {
+          "id": "c",
+          "text": "conforme a lei"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O que deveria ser",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Ester 1:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ester 3:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Ester 3:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sucedeu"
+        },
+        {
+          "id": "b",
+          "text": "sétimo"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sucedeu",
+      "feedbackCorrect": "A palavra do versículo é Sucedeu.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Ester 3:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ester 1:10 comunica que se liga a este contexto.",
+      "verseRef": "Ester 1:10",
+      "passageA": {
+        "ref": "Ester 1:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Ameaça no palácio: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ester 5:1, toque outra palavra central do trecho.",
+      "verseRef": "Ester 5:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "terceiro"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "terceiro",
+      "feedbackCorrect": "O trecho destaca terceiro.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Ester 5:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ester 5:8 na ordem correta do texto.",
+      "verseRef": "Ester 5:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "favor aos olhos"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "bem ao rei atender à minha petição e cumprir o meu desejo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "favor aos olhos",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Ester 5:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ester 1:10, a palavra quando liga ideias no fluxo do texto.",
+      "verseRef": "Ester 1:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Ester 1:10 afirma.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ester 1:10, toque a palavra que marca a relação no texto.",
+      "verseRef": "Ester 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "quando"
+        },
+        {
+          "id": "b",
+          "text": "sétimo"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo destaca quando.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Ester 3:4, o que o texto apresenta com clareza.",
+      "verseRef": "Ester 3:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sucedeu",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Ester 3:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Ester 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "No sétimo dia quando o coração"
+        },
+        {
+          "id": "b",
+          "text": "O que deveria ser feito"
+        },
+        {
+          "id": "c",
+          "text": "Depois disso o rei assuero engrandeceu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "No",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ester 3:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Ester 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depois"
+        },
+        {
+          "id": "b",
+          "text": "sétimo"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Depois",
+      "feedbackCorrect": "A palavra do versículo é Depois.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Ester 3:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ester 1:10 a Isaías 54:17.",
+      "verseRef": "Ester 1:10",
+      "passageA": {
+        "ref": "Ester 1:10"
+      },
+      "passageB": {
+        "ref": "Isaías 54:17"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Nenhuma arma prosperará"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ester 5:5, toque outra palavra central do trecho.",
+      "verseRef": "Ester 5:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "o"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "O trecho destaca disse.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Ester 5:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os passos deste trecho do bloco.",
+      "verseRef": "Ester 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "A tensão do bloco aparece"
+        },
+        {
+          "id": "b",
+          "text": "Alguém decide e age com firmeza"
+        },
+        {
+          "id": "c",
+          "text": "O desfecho do bloco chega"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Que",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Ester 1:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Ester 1:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "Que",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Ester 1:11 afirma.",
+      "evidence": [
+        "Ester 1:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ester 4:10, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Ester 4:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Ester"
+        },
+        {
+          "id": "c",
+          "text": "respondeu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O versículo destaca Então.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Ester 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Ester 4:5, o que o texto apresenta com clareza.",
+      "verseRef": "Ester 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Ester 4:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Ester 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "No",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ester 4:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Ester 4:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ester"
+        },
+        {
+          "id": "b",
+          "text": "sétimo"
+        },
+        {
+          "id": "c",
+          "text": "dia"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ester",
+      "feedbackCorrect": "A palavra do versículo é Ester.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Ester 4:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ester 1:10 a Provérbios 21:1.",
+      "verseRef": "Ester 1:10",
+      "passageA": {
+        "ref": "Ester 1:10"
+      },
+      "passageB": {
+        "ref": "Provérbios 21:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Coração do rei na mão"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ester 1:10, toque outra palavra central do trecho.",
+      "verseRef": "Ester 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "dia"
+        },
+        {
+          "id": "b",
+          "text": "No"
+        },
+        {
+          "id": "c",
+          "text": "sétimo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dia",
+      "feedbackCorrect": "O trecho destaca dia.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Ester 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Encadeie a lógica deste trecho do bloco.",
+      "verseRef": "Ester 1:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O risco ou o desafio se mostra"
+        },
+        {
+          "id": "b",
+          "text": "A resposta fiel entra em cena"
+        },
+        {
+          "id": "c",
+          "text": "O plano chega ao seu termo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Ester 1:12"
+      ]
+    }
+  ]
+}

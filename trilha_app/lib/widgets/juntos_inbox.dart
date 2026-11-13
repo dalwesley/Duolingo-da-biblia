@@ -30,8 +30,9 @@ class JuntosInbox extends StatelessWidget {
         context.watch<CompanionService>().incomingNudge != null) {
       n++;
     }
-    if (rc.groupsEnabled) {
-      n += context.watch<RoomService>().incoming.length;
+    final rooms = context.watch<RoomService>();
+    if (rooms.groupsOpen(rc.groupsEnabled)) {
+      n += rooms.incoming.length;
     }
     return n;
   }

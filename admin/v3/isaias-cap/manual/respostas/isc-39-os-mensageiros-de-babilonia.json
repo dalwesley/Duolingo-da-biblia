@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Isaías 39:1–6",
+    "passages": [
+      { "ref": "Isaías 39:1–6" },
+      { "ref": "Isaías 39:7–8" }
+    ],
+    "context": "Ezequias convalesce e recebe mensageiros da Babilônia. Ele mostra todos os tesouros; Isaías anuncia que tudo irá para Babilônia.",
+    "keyword": "Babilônia",
+    "keywordGloss": "Potência que envia presente e, segundo a palavra do Senhor, levará os tesouros e os filhos.",
+    "focusQuestion": "Onde você expõe o que Deus confiou como se a segurança viesse do aplauso alheio?",
+    "reflectionPrompts": [
+      "Tesouros mostrados",
+      "Nada permanecerá",
+      "Paz nos meus dias"
+    ],
+    "facts": [
+      {
+        "text": "Merodaque-Baladã, rei da Babilônia, enviou cartas e um presente a Ezequias porque soube que ele convalesceu.",
+        "evidenceRef": "Isaías 39:1",
+        "evidenceSpan": "enviou cartas e um presente a Ezequias"
+      },
+      {
+        "text": "Ezequias se alegrou e mostrou aos mensageiros a casa do tesouro e tudo o que havia em seu domínio.",
+        "evidenceRef": "Isaías 39:2",
+        "evidenceSpan": "nada havia em sua casa nem em todo o seu domínio que Ezequias não lhes mostrasse"
+      },
+      {
+        "text": "Ezequias disse a Isaías que os homens vieram de uma terra longínqua, da Babilônia.",
+        "evidenceRef": "Isaías 39:3",
+        "evidenceSpan": "Eles vieram de uma terra longínqua, da Babilônia"
+      },
+      {
+        "text": "Isaías anuncia que tudo o que há na casa e o acumulado pelos pais será levado para a Babilônia.",
+        "evidenceRef": "Isaías 39:6",
+        "evidenceSpan": "será levado para a Babilônia; nada permanecerá"
+      },
+      {
+        "text": "Os filhos que Ezequias gerar serão levados para serem eunucos no palácio do rei da Babilônia.",
+        "evidenceRef": "Isaías 39:7",
+        "evidenceSpan": "serão levados para serem eunucos no palácio do rei da Babilônia"
+      },
+      {
+        "text": "Ezequias chama boa a palavra do Senhor e fala em paz e segurança durante os seus dias.",
+        "evidenceRef": "Isaías 39:8",
+        "evidenceSpan": "É boa a palavra do Senhor que você falou"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "tesouro",
+        "gloss": "O que Ezequias expõe por completo aos mensageiros da Babilônia."
+      },
+      {
+        "term": "Babilônia",
+        "gloss": "Origem dos mensageiros e destino do que será levado."
+      },
+      {
+        "term": "eunucos",
+        "gloss": "Destino anunciado dos filhos no palácio do rei da Babilônia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Presente e visita da Babilônia",
+        "evidenceRef": "Isaías 39:1"
+      },
+      {
+        "label": "Ezequias mostra todos os tesouros",
+        "evidenceRef": "Isaías 39:2"
+      },
+      {
+        "label": "Isaías interroga e anuncia o juízo",
+        "evidenceRef": "Isaías 39:3–6"
+      },
+      {
+        "label": "Filhos levados e resposta do rei",
+        "evidenceRef": "Isaías 39:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O presente veio porque o rei da Babilônia soube que Ezequias estivera doente e convalesceu.",
+        "marker": "porque",
+        "evidenceRef": "Isaías 39:1"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por mostrar tudo, a palavra anuncia que nada permanecerá: tudo irá à Babilônia.",
+        "marker": "nada permanecerá",
+        "evidenceRef": "Isaías 39:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do anúncio sobre a casa, Isaías acrescenta o destino dos filhos.",
+        "marker": "E ainda",
+        "evidenceRef": "Isaías 39:7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "2 Reis 20:12–13", "bridge": "Mesma visita e tesouros" },
+      { "ref": "2 Reis 20:17–18", "bridge": "Tudo levado a Babilônia" },
+      { "ref": "2 Crônicas 32:31", "bridge": "Deus prova o coração" }
+    ],
+    "misreadings": [
+      {
+        "text": "Mostrar os tesouros foi só cortesia inocente, sem consequência.",
+        "why": "Isaías liga a exposição total à palavra de que tudo será levado."
+      },
+      {
+        "text": "A palavra do Senhor sobre Babilônia era má e Ezequias a rejeitou.",
+        "why": "Ezequias chama a palavra de boa, ainda que fale só dos seus dias."
+      },
+      {
+        "text": "Só os bens materiais iriam; a família ficaria intacta.",
+        "why": "O texto inclui os filhos como eunucos no palácio de Babilônia."
+      }
+    ],
+    "centralInsight": "Dias virão em que tudo o que há em tua casa será levado a Babilônia.",
+    "anchorQuestion": "O que Isaías 39:6 diz que acontecerá com o que há na casa de Ezequias?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 39:1, o rei da Babilônia enviou cartas e um presente a Ezequias porque soube que ele convalesceu.",
+      "verseRef": "Isaías 39:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque soube que ele estivera doente e já tinha convalescido",
+      "feedbackCorrect": "O motivo do envio é a notícia da convalescença.",
+      "feedbackWrong": {
+        "false": "O texto liga o presente ao fato de Ezequias ter convalescido."
+      },
+      "hint": "Leia a cláusula depois de porque.",
+      "learningObjective": "Observar o motivo da visita babilônica.",
+      "evidence": ["Isaías 39:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 39:3, toque de onde Ezequias diz que os homens vieram.",
+      "verseRef": "Isaías 39:3",
+      "options": [
+        { "id": "a", "text": "Babilônia" },
+        { "id": "b", "text": "Isaías" },
+        { "id": "c", "text": "Ezequias" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eles vieram de uma terra longínqua, da Babilônia",
+      "feedbackCorrect": "Ezequias identifica a origem: a Babilônia.",
+      "feedbackWrong": {
+        "b": "Isaías é quem pergunta, não a origem dos mensageiros.",
+        "c": "Ezequias responde; a origem é a Babilônia."
+      },
+      "hint": "Veja a resposta depois de de onde vieram.",
+      "learningObjective": "Identificar a origem dos mensageiros.",
+      "evidence": ["Isaías 39:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 39:2, o que Ezequias mostrou aos mensageiros?",
+      "verseRef": "Isaías 39:2",
+      "options": [
+        { "id": "a", "text": "Tudo o que havia em sua casa e domínio" },
+        { "id": "b", "text": "Só a casa do templo" },
+        { "id": "c", "text": "Apenas as cartas recebidas" },
+        { "id": "d", "text": "Somente o arsenal vazio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nada havia em sua casa nem em todo o seu domínio que Ezequias não lhes mostrasse",
+      "feedbackCorrect": "Ele não omitiu nada do que havia em casa e domínio.",
+      "feedbackWrong": {
+        "b": "O texto fala da casa do tesouro e de todo o domínio.",
+        "c": "As cartas são o envio de Merodaque-Baladã, não o que ele mostrou.",
+        "d": "Ele mostrou todo o arsenal e os tesouros, não um arsenal vazio."
+      },
+      "hint": "Leia até a frase nada havia… que não lhes mostrasse.",
+      "learningObjective": "Reconhecer a extensão do que foi mostrado.",
+      "evidence": ["Isaías 39:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 39:6 na ordem do texto.",
+      "verseRef": "Isaías 39:6",
+      "options": [
+        { "id": "a", "text": "tudo o que há em sua casa" },
+        { "id": "b", "text": "será levado para a Babilônia" },
+        { "id": "c", "text": "nada permanecerá" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tudo o que há em sua casa, assim como o que seus pais acumularam até hoje, será levado para a Babilônia; nada permanecerá",
+      "feedbackCorrect": "Primeiro o conteúdo da casa; depois o destino; enfim, nada permanece.",
+      "feedbackWrong": {
+        "default": "Siga: o que há na casa → levado → nada permanecerá."
+      },
+      "hint": "O anúncio começa com Vêm dias e o conteúdo da casa.",
+      "learningObjective": "Seguir a ordem do anúncio sobre Babilônia.",
+      "evidence": ["Isaías 39:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 39:7, complete: serão levados para serem ___.",
+      "verseRef": "Isaías 39:7",
+      "options": [
+        { "id": "a", "text": "eunucos" },
+        { "id": "b", "text": "profetas" },
+        { "id": "c", "text": "mensageiros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serão levados para serem eunucos no palácio do rei da Babilônia",
+      "feedbackCorrect": "O destino anunciado dos filhos é serem eunucos no palácio.",
+      "feedbackWrong": {
+        "b": "Profetas não aparece neste anúncio.",
+        "c": "Mensageiros são os visitantes; os filhos serão eunucos."
+      },
+      "hint": "Veja o cargo no palácio do rei da Babilônia.",
+      "learningObjective": "Lembrar o destino anunciado dos filhos.",
+      "evidence": ["Isaías 39:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 39:6 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 39:6",
+      "passageA": { "ref": "Isaías 39:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ezequias mostrou todos os tesouros aos mensageiros; Isaías anuncia juízo sobre a casa e os filhos."
+      },
+      "options": [
+        { "id": "a", "text": "Tudo irá à Babilônia" },
+        { "id": "b", "text": "Presente inocente" },
+        { "id": "c", "text": "Templo destruído já" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será levado para a Babilônia; nada permanecerá",
+      "feedbackCorrect": "No contexto da exposição dos bens, o Senhor anuncia remoção total a Babilônia.",
+      "feedbackWrong": {
+        "b": "O texto não trata o episódio como sem consequência.",
+        "c": "O anúncio é de levar bens e filhos, não de destruição já ocorrida do templo."
+      },
+      "hint": "Veja o destino do que há na casa.",
+      "learningObjective": "Ligar o contexto à palavra sobre Babilônia.",
+      "evidence": ["Isaías 39:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 39:1, o presente de Merodaque-Baladã veio porque ele soube da doença e convalescença de Ezequias.",
+      "verseRef": "Isaías 39:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "porque soube que ele estivera doente e já tinha convalescido",
+      "feedbackCorrect": "Porque marca a causa do envio das cartas e do presente.",
+      "feedbackWrong": {
+        "false": "O texto usa porque para ligar o presente à notícia da convalescença."
+      },
+      "hint": "Procure a palavra porque no versículo.",
+      "learningObjective": "Ver a relação causal do envio babilônico.",
+      "evidence": ["Isaías 39:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 39:1, toque a palavra que marca a causa do envio do presente.",
+      "verseRef": "Isaías 39:1",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "cartas" },
+        { "id": "c", "text": "presente" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque soube que ele estivera doente e já tinha convalescido",
+      "feedbackCorrect": "Porque introduz a razão: a notícia da convalescença.",
+      "feedbackWrong": {
+        "b": "Cartas são o que foi enviado, não o marcador da causa.",
+        "c": "Presente é o envio; a causa começa em porque."
+      },
+      "hint": "É a conjunção antes de soube que.",
+      "learningObjective": "Tocar o marcador causal do versículo 1.",
+      "evidence": ["Isaías 39:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Isaías 39:6–7 estabelece após a exposição dos tesouros?",
+      "verseRef": "Isaías 39:6–7",
+      "options": [
+        { "id": "a", "text": "Bens e filhos serão levados à Babilônia" },
+        { "id": "b", "text": "Babilônia devolverá os presentes em dobro" },
+        { "id": "c", "text": "Os filhos reinam em Jerusalém em paz" },
+        { "id": "d", "text": "Nada muda porque o presente foi amizade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será levado para a Babilônia; nada permanecerá",
+      "feedbackCorrect": "O anúncio cobre a casa e, em seguida, os filhos.",
+      "feedbackWrong": {
+        "b": "O texto anuncia remoção, não devolução.",
+        "c": "Os filhos vão ao palácio de Babilônia como eunucos.",
+        "d": "A palavra do Senhor anuncia juízo concreto."
+      },
+      "hint": "Leia o destino da casa e o E ainda dos filhos.",
+      "learningObjective": "Compreender o alcance do anúncio de juízo.",
+      "evidence": ["Isaías 39:6–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do episódio dos mensageiros.",
+      "verseRef": "Isaías 39:1–2",
+      "options": [
+        { "id": "a", "text": "Presente e visita da Babilônia" },
+        { "id": "b", "text": "Ezequias mostra todos os tesouros" },
+        { "id": "c", "text": "Isaías interroga e anuncia o juízo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ezequias se alegrou com isso e mostrou aos mensageiros a casa do seu tesouro",
+      "feedbackCorrect": "Primeiro a visita; depois a exposição; enfim a palavra de Isaías.",
+      "feedbackWrong": {
+        "default": "Comece pela visita; o anúncio de Isaías vem depois."
+      },
+      "hint": "Siga a ordem dos versículos 1, 2 e 3–6.",
+      "learningObjective": "Ordenar a estrutura do episódio.",
+      "evidence": ["Isaías 39:1", "Isaías 39:2", "Isaías 39:3–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 39:6, complete: nada ___, diz o Senhor.",
+      "verseRef": "Isaías 39:6",
+      "options": [
+        { "id": "a", "text": "permanecerá" },
+        { "id": "b", "text": "faltará" },
+        { "id": "c", "text": "cairá" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nada permanecerá, diz o Senhor",
+      "feedbackCorrect": "Permanecerá carrega o resultado: nada fica na casa.",
+      "feedbackWrong": {
+        "b": "Faltará não está no versículo.",
+        "c": "Cairá não é a palavra do anúncio."
+      },
+      "hint": "É o verbo depois de nada.",
+      "learningObjective": "Lembrar a palavra que marca o resultado total.",
+      "evidence": ["Isaías 39:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 39:6 a 2 Reis 20:17?",
+      "verseRef": "Isaías 39:6",
+      "passageA": { "ref": "Isaías 39:6" },
+      "passageB": { "ref": "2 Reis 20:17" },
+      "options": [
+        { "id": "a", "text": "Tudo levado a Babilônia" },
+        { "id": "b", "text": "Vitória sobre a Assíria" },
+        { "id": "c", "text": "Templo sem visita" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será levado para a Babilônia; nada permanecerá",
+      "feedbackCorrect": "Os dois relatos anunciam a remoção do que há na casa para Babilônia.",
+      "feedbackWrong": {
+        "b": "A vitória sobre a Assíria não é o tema deste anúncio.",
+        "c": "O foco é a casa e os tesouros, não a ausência de visita."
+      },
+      "hint": "Compare o destino do que há na casa.",
+      "learningObjective": "Ligar Isaías ao paralelo em 2 Reis.",
+      "evidence": ["Isaías 39:6", "2 Reis 20:17"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Isaías 39:6–7, o juízo atinge só os bens materiais; os filhos de Ezequias ficam em segurança em Jerusalém.",
+      "verseRef": "Isaías 39:6–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "os filhos que você gerar serão levados para serem eunucos",
+      "feedbackCorrect": "O texto inclui os filhos no destino de Babilônia.",
+      "feedbackWrong": {
+        "true": "E ainda acrescenta o destino dos filhos no palácio de Babilônia."
+      },
+      "hint": "Leia o versículo depois do anúncio sobre a casa.",
+      "learningObjective": "Rejeitar a leitura que exclui a família do juízo.",
+      "evidence": ["Isaías 39:6–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 39:8, toque o trecho que mostra como Ezequias avalia a palavra ouvida.",
+      "verseRef": "Isaías 39:8",
+      "options": [
+        { "id": "a", "text": "É boa" },
+        { "id": "b", "text": "Isaías" },
+        { "id": "c", "text": "falou" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "É boa a palavra do Senhor que você falou",
+      "feedbackCorrect": "Ezequias chama boa a palavra do Senhor.",
+      "feedbackWrong": {
+        "b": "Isaías é o interlocutor; a avaliação é É boa.",
+        "c": "Falou descreve a entrega; a avaliação é É boa."
+      },
+      "hint": "É a primeira avaliação na resposta de Ezequias.",
+      "learningObjective": "Sustentar a avaliação que Ezequias faz da palavra.",
+      "evidence": ["Isaías 39:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 39:2 e 39:6 sustentam juntos?",
+      "verseRef": "Isaías 39:2",
+      "options": [
+        { "id": "a", "text": "Expor tudo aos mensageiros liga-se ao anúncio de remoção" },
+        { "id": "b", "text": "Mostrar tesouros garante proteção eterna de Deus" },
+        { "id": "c", "text": "Babilônia veio só para curar Ezequias" },
+        { "id": "d", "text": "Isaías elogia a diplomacia do rei" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nada havia em sua casa nem em todo o seu domínio que Ezequias não lhes mostrasse",
+      "feedbackCorrect": "A exposição total precede a palavra de que nada permanecerá.",
+      "feedbackWrong": {
+        "b": "O anúncio é de remoção, não de proteção garantida por exibir bens.",
+        "c": "Vieram por causa da convalescença, não para curar.",
+        "d": "Isaías traz juízo, não elogio diplomático."
+      },
+      "hint": "Una o que foi mostrado ao que será levado.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a exposição.",
+      "evidence": ["Isaías 39:2", "Isaías 39:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio do episódio até a resposta do rei?",
+      "verseRef": "Isaías 39:7–8",
+      "options": [
+        { "id": "a", "text": "Tesouros expostos aos mensageiros" },
+        { "id": "b", "text": "Anúncio: tudo e filhos a Babilônia" },
+        { "id": "c", "text": "Ezequias fala em paz nos seus dias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Haverá paz e segurança durante os meus dias",
+      "feedbackCorrect": "Da exposição ao juízo e à resposta centrada nos próprios dias.",
+      "feedbackWrong": {
+        "default": "Comece pela exposição; a fala sobre paz fecha o fio."
+      },
+      "hint": "Siga os versículos 2, 6–7 e 8.",
+      "learningObjective": "Encadear exposição, juízo e resposta do rei.",
+      "evidence": ["Isaías 39:2", "Isaías 39:6–7", "Isaías 39:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 39:2, complete: mostrou aos mensageiros a casa do seu ___.",
+      "verseRef": "Isaías 39:2",
+      "options": [
+        { "id": "a", "text": "tesouro" },
+        { "id": "b", "text": "templo" },
+        { "id": "c", "text": "jardim" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mostrou aos mensageiros a casa do seu tesouro",
+      "feedbackCorrect": "Tesouro nomeia o que Ezequias expõe no centro do episódio.",
+      "feedbackWrong": {
+        "b": "Templo não é o termo deste versículo.",
+        "c": "Jardim não aparece no texto."
+      },
+      "hint": "É a palavra depois de casa do seu.",
+      "learningObjective": "Lembrar o termo central do que foi mostrado.",
+      "evidence": ["Isaías 39:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 39:2 a 2 Crônicas 32:31?",
+      "verseRef": "Isaías 39:2",
+      "passageA": { "ref": "Isaías 39:2", "text": "nada havia em sua casa nem em todo o seu domínio que Ezequias não lhes mostrasse" },
+      "passageB": { "ref": "2 Crônicas 32:31" },
+      "options": [
+        { "id": "a", "text": "Prova do coração do rei" },
+        { "id": "b", "text": "Vitória militar imediata" },
+        { "id": "c", "text": "Construção do templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nada havia em sua casa nem em todo o seu domínio que Ezequias não lhes mostrasse",
+      "feedbackCorrect": "Crônicas lê a visita dos enviados como momento em que Deus prova o coração.",
+      "feedbackWrong": {
+        "b": "O foco aqui não é vitória militar.",
+        "c": "A construção do templo não é a ponte deste episódio."
+      },
+      "hint": "Pense no que a visita revela sobre Ezequias.",
+      "learningObjective": "Ligar a exposição dos bens à prova do coração.",
+      "evidence": ["Isaías 39:2", "2 Crônicas 32:31"]
+    }
+  ]
+}

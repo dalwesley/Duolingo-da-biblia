@@ -1,0 +1,484 @@
+{
+  "study": {
+    "passageRef": "Habacuque 3:14–19",
+    "passages": [
+      { "ref": "Habacuque 3:14–19" }
+    ],
+    "context": "Habacuque viu o juízo e tremeu. Ainda assim, no meio da falta — figueira, videira, rebanho —, escolhe alegrar-se no Senhor, sua fortaleza.",
+    "keyword": "Contudo",
+    "keywordGloss": "A virada da fé: mesmo sem fruto e rebanho, o profeta se alegra no Senhor.",
+    "focusQuestion": "O que sustenta a sua alegria quando a figueira não floresce e o rebanho falta?",
+    "reflectionPrompts": [
+      "Falta sem figos",
+      "Ainda assim alegria",
+      "Pés como de corças"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor traspassou a cabeça dos guerreiros do inimigo.",
+        "evidenceRef": "Habacuque 3:14",
+        "evidenceSpan": "Tu traspassaste com os teus cajados a cabeça dos guerreiros"
+      },
+      {
+        "text": "O íntimo do profeta se agitou ao ouvir; ele espera o dia da angústia.",
+        "evidenceRef": "Habacuque 3:16",
+        "evidenceSpan": "meu íntimo se agitou"
+      },
+      {
+        "text": "A figueira pode não florescer e não haver fruto na videira.",
+        "evidenceRef": "Habacuque 3:17",
+        "evidenceSpan": "a figueira não floresça, nem haja fruto na videira"
+      },
+      {
+        "text": "Ainda assim o profeta se alegra no Senhor e exulta no Deus da salvação.",
+        "evidenceRef": "Habacuque 3:18",
+        "evidenceSpan": "eu me alegro no Senhor"
+      },
+      {
+        "text": "O Senhor Deus é a fortaleza do profeta.",
+        "evidenceRef": "Habacuque 3:19",
+        "evidenceSpan": "O Senhor Deus é a minha fortaleza"
+      },
+      {
+        "text": "Deus fará seus pés como os das corças.",
+        "evidenceRef": "Habacuque 3:19",
+        "evidenceSpan": "meus pés sejam como os das corças"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Contudo",
+        "gloss": "Marcador da virada: apesar da falta, a alegria permanece."
+      },
+      {
+        "term": "fortaleza",
+        "gloss": "O Senhor Deus como segurança do profeta."
+      },
+      {
+        "term": "figueira",
+        "gloss": "Imagem da prosperidade que pode falhar sem anular a fé."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus fere o inimigo e marcha nas águas",
+        "evidenceRef": "Habacuque 3:14–15"
+      },
+      {
+        "label": "O profeta treme e espera em silêncio",
+        "evidenceRef": "Habacuque 3:16"
+      },
+      {
+        "label": "Quadro da falta total nos campos",
+        "evidenceRef": "Habacuque 3:17"
+      },
+      {
+        "label": "Ainda assim alegria e pés firmes",
+        "evidenceRef": "Habacuque 3:18–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Mesmo sem figos, vinhas e rebanho, o profeta se alegra no Senhor.",
+        "marker": "Contudo",
+        "evidenceRef": "Habacuque 3:18"
+      },
+      {
+        "kind": "resultado",
+        "text": "Porque o Senhor é fortaleza, os pés serão como os das corças.",
+        "marker": null,
+        "evidenceRef": "Habacuque 3:19"
+      },
+      {
+        "kind": "sequência",
+        "text": "Primeiro o tremor ao ouvir; depois a espera silenciosa do dia da angústia.",
+        "marker": null,
+        "evidenceRef": "Habacuque 3:16"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Filipenses 4:4", "bridge": "Alegria no Senhor sempre" },
+      { "ref": "Salmos 73:26", "bridge": "Deus fortaleza do coração" },
+      { "ref": "Salmos 18:33", "bridge": "Pés como de corças" }
+    ],
+    "misreadings": [
+      {
+        "text": "A alegria de Habacuque depende de figos, vinhas e rebanho prosperarem.",
+        "why": "3:17–18 mostra falta total e, contudo, alegria no Senhor."
+      },
+      {
+        "text": "O profeta não treme; só celebra sem medo.",
+        "why": "3:16 descreve íntimo agitado, lábios tremendo e ossos com podridão."
+      },
+      {
+        "text": "A fortaleza é o gado nos currais, não o Senhor.",
+        "why": "3:19 diz: \"O Senhor Deus é a minha fortaleza\"."
+      }
+    ],
+    "centralInsight": "A fé se alegra no Senhor mesmo quando a figueira não floresce e o rebanho falta.",
+    "anchorQuestion": "Segundo Habacuque 3:18, em quem o profeta se alegra apesar da falta?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Habacuque 3:18, o profeta se alegra no Senhor e exulta no Deus da sua salvação.",
+      "verseRef": "Habacuque 3:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "eu me alegro no Senhor",
+      "feedbackCorrect": "Contudo, ele se alegra no Senhor — a alegria não depende da colheita.",
+      "feedbackWrong": { "false": "Releia 3:18: \"eu me alegro no Senhor; exulto no Deus da minha salvação\"." },
+      "hint": "Veja o verbo depois de \"Contudo\".",
+      "learningObjective": "Observar a alegria declarada no Senhor.",
+      "evidence": ["Habacuque 3:18"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Habacuque 3:17, toque a árvore que pode não florescer.",
+      "verseRef": "Habacuque 3:17",
+      "evidenceSpan": "a figueira não floresça",
+      "feedbackCorrect": "A figueira pode não florescer — e ainda assim a fé permanece.",
+      "hint": "É a primeira planta nomeada no versículo.",
+      "learningObjective": "Identificar a figueira no quadro da falta.",
+      "evidence": ["Habacuque 3:17"],
+      "options": [
+        { "id": "a", "text": "figueira" },
+        { "id": "b", "text": "videira" },
+        { "id": "c", "text": "campos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A videira vem depois; a primeira imagem é outra árvore.",
+        "c": "\"Campos\" aparecem depois; comece pela árvore do início."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Habacuque 3:19, o que o Senhor Deus é para o profeta?",
+      "verseRef": "Habacuque 3:19",
+      "evidenceSpan": "O Senhor Deus é a minha fortaleza",
+      "feedbackCorrect": "O Senhor Deus é a fortaleza dele — não o gado nos currais.",
+      "hint": "Leia a primeira afirmação do versículo.",
+      "learningObjective": "Observar quem é a fortaleza do profeta.",
+      "evidence": ["Habacuque 3:19"],
+      "options": [
+        { "id": "a", "text": "A sua fortaleza" },
+        { "id": "b", "text": "O produto da oliveira" },
+        { "id": "c", "text": "O gado nos currais" },
+        { "id": "d", "text": "A figueira florescendo" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A oliveira pode falhar em 3:17; a fortaleza é o Senhor.",
+        "c": "O gado pode faltar; 3:19 aponta outra fortaleza.",
+        "d": "A figueira pode não florescer; a fortaleza é o Senhor."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Habacuque 3:18–19 na ordem do texto.",
+      "verseRef": "Habacuque 3:18–19",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "Alegria no Senhor; depois a fortaleza e os pés como de corças.",
+      "hint": "Comece pelo \"Contudo\" de 3:18.",
+      "learningObjective": "Reconhecer a sequência de Habacuque 3:18–19.",
+      "evidence": ["Habacuque 3:18–19"],
+      "options": [
+        { "id": "a", "text": "Contudo, eu me alegro no Senhor" },
+        { "id": "b", "text": "exulto no Deus da minha salvação" },
+        { "id": "c", "text": "O Senhor Deus é a minha fortaleza" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Comece por \"Contudo\"; a fortaleza abre 3:19." }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Habacuque 3:19, o Senhor Deus é a quê do profeta?",
+      "verseRef": "Habacuque 3:19",
+      "evidenceSpan": "é a minha fortaleza",
+      "feedbackCorrect": "Ele é a fortaleza: segurança firme quando o campo falha.",
+      "hint": "É a palavra depois de \"minha\".",
+      "learningObjective": "Lembrar o título dado ao Senhor em 3:19.",
+      "evidence": ["Habacuque 3:19"],
+      "options": [
+        { "id": "a", "text": "fortaleza" },
+        { "id": "b", "text": "figueira" },
+        { "id": "c", "text": "malhada" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A figueira pode falhar; não é o título de 3:19.",
+        "c": "\"Malhada\" aparece na falta de 3:17, não como título do Senhor."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Habacuque 3:18 comunica que se liga a este contexto?",
+      "verseRef": "Habacuque 3:18",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "Mesmo na falta, a alegria se ancora no Senhor.",
+      "hint": "Ligue o \"Contudo\" ao quadro de 3:17.",
+      "learningObjective": "Ligar a alegria à falta descrita antes.",
+      "evidence": ["Habacuque 3:18"],
+      "passageA": { "ref": "Habacuque 3:18" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Figueira, videira e rebanho podem faltar; a fé ainda se alegra."
+      },
+      "options": [
+        { "id": "a", "text": "Alegria apesar da falta" },
+        { "id": "b", "text": "Alegria só com colheita" },
+        { "id": "c", "text": "Fé sem nenhum tremor" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "3:17–18 mostra alegria sem colheita.",
+        "c": "3:16 descreve tremor antes da alegria."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Habacuque 3:17–18, o contraste \"Contudo\" liga a falta total à alegria no Senhor.",
+      "verseRef": "Habacuque 3:17–18",
+      "correctOptionId": "true",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "\"Contudo\" marca a virada: falta no campo, alegria no Senhor.",
+      "feedbackWrong": { "false": "Releia o elo entre 3:17 e 3:18: a falta, contudo a alegria." },
+      "hint": "Veja a primeira palavra de 3:18.",
+      "learningObjective": "Compreender o contraste entre falta e alegria.",
+      "evidence": ["Habacuque 3:17–18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Habacuque 3:18, toque a palavra que marca o contraste com a falta anterior.",
+      "verseRef": "Habacuque 3:18",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "\"Contudo\" vira a página: sem fruto, ainda assim alegria.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 3:18.",
+      "evidence": ["Habacuque 3:18"],
+      "options": [
+        { "id": "a", "text": "Contudo" },
+        { "id": "b", "text": "exulto" },
+        { "id": "c", "text": "salvação" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Exulto\" é a ação da fé, não o marcador do contraste.",
+        "c": "\"Salvação\" nomeia a Deus, não o contraste gramatical."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Habacuque 3:16–18 relaciona tremor e alegria?",
+      "verseRef": "Habacuque 3:16–18",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "O profeta treme e espera; ainda assim escolhe alegrar-se no Senhor.",
+      "hint": "Una o íntimo agitado de 3:16 ao \"Contudo\" de 3:18.",
+      "learningObjective": "Relacionar o tremor à alegria que permanece.",
+      "evidence": ["Habacuque 3:16–18"],
+      "options": [
+        { "id": "a", "text": "Treme e espera, mas ainda se alegra no Senhor" },
+        { "id": "b", "text": "Só se alegra porque nada faltou nos campos" },
+        { "id": "c", "text": "O tremor cancela qualquer alegria possível" },
+        { "id": "d", "text": "A alegria vem do gado que enche os currais" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "3:17 descreve falta; a alegria vem depois do \"Contudo\".",
+        "c": "3:18 declara alegria depois do tremor.",
+        "d": "O gado pode faltar; a alegria é no Senhor."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Habacuque 3:14–19?",
+      "verseRef": "Habacuque 3:16–19",
+      "evidenceSpan": "eu me alegro no Senhor",
+      "feedbackCorrect": "Ação de Deus; tremor; falta; ainda assim alegria e pés firmes.",
+      "hint": "Comece pela ação divina; a alegria fecha.",
+      "learningObjective": "Seguir o movimento do juízo à confiança.",
+      "evidence": ["Habacuque 3:16–19"],
+      "options": [
+        { "id": "a", "text": "O profeta treme e espera em silêncio" },
+        { "id": "b", "text": "Quadro da falta total nos campos" },
+        { "id": "c", "text": "Ainda assim alegria e pés firmes" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Tremor primeiro; alegria e pés firmes por último." }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Habacuque 3:16, o que o íntimo do profeta fez ao ouvir?",
+      "verseRef": "Habacuque 3:16",
+      "evidenceSpan": "meu íntimo se agitou",
+      "feedbackCorrect": "O íntimo se agitou: a fé treme antes de se alegrar.",
+      "hint": "É o verbo depois de \"íntimo se\".",
+      "learningObjective": "Lembrar o verbo que marca o tremor.",
+      "evidence": ["Habacuque 3:16"],
+      "options": [
+        { "id": "a", "text": "cantou" },
+        { "id": "b", "text": "agitou" },
+        { "id": "c", "text": "descansou" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Cantou\" não descreve o íntimo em 3:16.",
+        "c": "\"Descansou\" não aparece; o texto fala de agitação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Habacuque 3:18 a Filipenses 4:4?",
+      "verseRef": "Habacuque 3:18",
+      "evidenceSpan": "eu me alegro no Senhor",
+      "feedbackCorrect": "Nos dois textos, a alegria se ancora no Senhor, não nas circunstâncias.",
+      "hint": "Compare o objeto da alegria.",
+      "learningObjective": "Relacionar a alegria no Senhor em Habacuque e em Paulo.",
+      "evidence": ["Habacuque 3:18", "Filipenses 4:4"],
+      "passageA": { "ref": "Habacuque 3:18" },
+      "passageB": { "ref": "Filipenses 4:4" },
+      "options": [
+        { "id": "a", "text": "Alegria no Senhor sempre" },
+        { "id": "b", "text": "Alegria só na colheita" },
+        { "id": "c", "text": "Silêncio sem nenhuma fé" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Habacuque se alegra na falta; Paulo manda alegrar-se sempre.",
+        "c": "Os textos falam de alegria, não de fé vazia."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Habacuque 3:17–19, a alegria do profeta depende de a figueira florescer e o gado encher os currais.",
+      "verseRef": "Habacuque 3:17–18",
+      "correctOptionId": "false",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "A falta é total; a alegria está no Senhor, não na colheita.",
+      "feedbackWrong": { "true": "3:17 lista a falta; 3:18 declara alegria no Senhor mesmo assim." },
+      "hint": "Compare 3:17 com o \"Contudo\" de 3:18.",
+      "learningObjective": "Interpretar a alegria desancorada da prosperidade.",
+      "evidence": ["Habacuque 3:17–18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Habacuque 3:19, toque o trecho que mostra quem é a segurança do profeta.",
+      "verseRef": "Habacuque 3:19",
+      "evidenceSpan": "O Senhor Deus é a minha fortaleza",
+      "feedbackCorrect": "A fortaleza é o Senhor Deus, não o rebanho.",
+      "hint": "Procure o título depois de \"é a minha\".",
+      "learningObjective": "Sustentar com o texto a fortaleza no Senhor.",
+      "evidence": ["Habacuque 3:19"],
+      "options": [
+        { "id": "a", "text": "minha fortaleza" },
+        { "id": "b", "text": "instrumentos de cordas" },
+        { "id": "c", "text": "mestre de canto" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Instrumentos de cordas\" fecham a rubrica musical, não a segurança.",
+        "c": "\"Mestre de canto\" é rubrica litúrgica, não a fortaleza."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Habacuque 3:14–19 sustenta sobre a fé na crise?",
+      "verseRef": "Habacuque 3:17–18",
+      "evidenceSpan": "Contudo, eu me alegro no Senhor",
+      "feedbackCorrect": "A fé treme, vê a falta e ainda assim se alegra no Senhor, sua fortaleza.",
+      "hint": "Una tremor, falta e o \"Contudo\".",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Habacuque 3:17–18"],
+      "options": [
+        { "id": "a", "text": "A fé se alegra no Senhor mesmo na falta" },
+        { "id": "b", "text": "A alegria só vale se a figueira florescer" },
+        { "id": "c", "text": "O profeta não treme nem espera angústia" },
+        { "id": "d", "text": "A fortaleza é o gado nos currais" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "3:17–18 mostra alegria na falta.",
+        "c": "3:16 descreve tremor e espera.",
+        "d": "3:19 chama o Senhor de fortaleza."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a alegria firme que começa em Habacuque 3:18?",
+      "verseRef": "Habacuque 3:18",
+      "evidenceSpan": "eu me alegro no Senhor",
+      "feedbackCorrect": "Habacuque se alegra; Paulo ecoa; o Salmo aponta Deus como fortaleza.",
+      "hint": "Parta de Habacuque e avance na Escritura.",
+      "learningObjective": "Ver a alegria no Senhor no fio bíblico.",
+      "evidence": ["Habacuque 3:18", "Filipenses 4:4", "Salmos 73:26"],
+      "options": [
+        { "id": "a", "text": "Habacuque: alegria no Senhor na falta" },
+        { "id": "b", "text": "Paulo: alegria no Senhor sempre" },
+        { "id": "c", "text": "O Salmo: Deus fortaleza do coração" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": { "default": "Siga: Habacuque 3:18, Filipenses 4:4 e Salmos 73:26." }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Habacuque 3:19, a quais animais os pés do profeta são comparados?",
+      "verseRef": "Habacuque 3:19",
+      "evidenceSpan": "meus pés sejam como os das corças",
+      "feedbackCorrect": "Os pés serão como os das corças: firmeza dada pelo Senhor.",
+      "hint": "É a comparação depois de \"como os das\".",
+      "learningObjective": "Lembrar a imagem teológica dos pés firmes.",
+      "evidence": ["Habacuque 3:19"],
+      "options": [
+        { "id": "a", "text": "leopardos" },
+        { "id": "b", "text": "corças" },
+        { "id": "c", "text": "águas" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Leopardos\" não aparecem em 3:19.",
+        "c": "\"Águas\" estão em 3:15; a comparação dos pés é outra."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Habacuque 3:19 a Salmos 18:33?",
+      "verseRef": "Habacuque 3:19",
+      "evidenceSpan": "meus pés sejam como os das corças",
+      "feedbackCorrect": "Nos dois textos, Deus dá pés firmes como os das corças.",
+      "hint": "Compare a imagem dos pés.",
+      "learningObjective": "Ligar os pés como de corças em Habacuque e no Salmo.",
+      "evidence": ["Habacuque 3:19", "Salmos 18:33"],
+      "passageA": { "ref": "Habacuque 3:19" },
+      "passageB": { "ref": "Salmos 18:33" },
+      "options": [
+        { "id": "a", "text": "Pés como de corças" },
+        { "id": "b", "text": "Figueira sempre florida" },
+        { "id": "c", "text": "Gado eterno nos currais" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Habacuque contempla a figueira sem flor.",
+        "c": "O texto admite gado ausente nos currais."
+      }
+    }
+  ]
+}

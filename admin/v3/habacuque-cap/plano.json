@@ -1,0 +1,49 @@
+{
+  "slug": "habacuque-cap",
+  "prefix": "hqc",
+  "book": "Habacuque",
+  "chapters": 3,
+  "title": "Habacuque",
+  "description": "Habacuque capítulo a capítulo: da dúvida à confiança no Senhor.",
+  "icon": "🙏",
+  "color": "#8A7A5A",
+  "order": 42,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "avoidTrails": [
+    "habacuque"
+  ],
+  "modules": [
+    {
+      "title": "Da queixa à confiança · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "Habacuque 1:5–13",
+          "title": "Olhai entre as nações",
+          "intro": "O Senhor responde à queixa de Habacuque levantando os caldeus.",
+          "insight": "Deus age de modos que espantam, e o justo luta para entender o seu governo.",
+          "objective": "Confiar no governo de Deus"
+        },
+        {
+          "ref": "Habacuque 2:9–20",
+          "title": "Ai dos opressores",
+          "intro": "Habacuque ouve ais contra a ganância, a violência e os ídolos mudos.",
+          "insight": "O Senhor está no seu santo templo: cale-se diante dele toda a terra.",
+          "objective": "Calar-se diante do Senhor"
+        },
+        {
+          "ref": "Habacuque 3:14–19",
+          "title": "Ainda assim me alegrarei",
+          "intro": "Mesmo sem figos, vinhas nem rebanho, Habacuque escolhe alegrar-se no Senhor.",
+          "insight": "A fé se alegra no Senhor mesmo quando a figueira não floresce e o rebanho falta.",
+          "objective": "Alegrar-se no Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Da queixa à confiança",
+        "intro": "Revise a resposta de Deus, os ais e a alegria que permanece.",
+        "insight": "A fé pergunta a Deus e termina confiante nele"
+      }
+    }
+  ]
+}

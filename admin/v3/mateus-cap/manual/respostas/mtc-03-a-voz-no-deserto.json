@@ -1,0 +1,718 @@
+{
+  "study": {
+    "passageRef": "Mateus 3:1–6",
+    "passages": [
+      {
+        "ref": "Mateus 3:1–6"
+      },
+      {
+        "ref": "Mateus 3:7–12"
+      }
+    ],
+    "context": "Antes do ministério público de Jesus, Mateus apresenta João Batista no deserto da Judéia. Pessoas de Jerusalém, de toda a Judéia e da região do Jordão saem ao encontro dele e são batizadas no rio.",
+    "keyword": "arrependimento",
+    "keywordGloss": "No discurso de João, arrependimento é a mudança que produz fruto, e não apenas chegar ao batismo.",
+    "focusQuestion": "Que fruto o arrependimento está pedindo da sua vida hoje?",
+    "reflectionPrompts": [
+      "A voz no deserto",
+      "Fruto que se vê",
+      "Quem vem depois"
+    ],
+    "facts": [
+      {
+        "text": "João Batista apareceu pregando no deserto da Judéia.",
+        "evidenceRef": "Mateus 3:1",
+        "evidenceSpan": "apareceu João Batista pregando no deserto da Judéia"
+      },
+      {
+        "text": "Ele pedia arrependimento porque o reino dos céus está perto.",
+        "evidenceRef": "Mateus 3:2",
+        "evidenceSpan": "Arrependam-se, pois o reino dos céus está perto."
+      },
+      {
+        "text": "As pessoas eram batizadas no rio Jordão, confessando os seus pecados.",
+        "evidenceRef": "Mateus 3:6",
+        "evidenceSpan": "eram por ele batizados no rio Jordão, confessando os seus pecados"
+      },
+      {
+        "text": "João exige frutos que sejam dignos de arrependimento.",
+        "evidenceRef": "Mateus 3:8",
+        "evidenceSpan": "frutos que sejam dignos de arrependimento"
+      },
+      {
+        "text": "João afirma que Deus pode suscitar filhos a Abraão destas pedras.",
+        "evidenceRef": "Mateus 3:9",
+        "evidenceSpan": "destas pedras Deus pode suscitar filhos a Abraão"
+      },
+      {
+        "text": "Aquele que vem após João batizará com o Espírito Santo e com fogo.",
+        "evidenceRef": "Mateus 3:11",
+        "evidenceSpan": "Ele vos batizará com o Espírito Santo e com fogo."
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "deserto",
+        "gloss": "O lugar onde João prega e de onde a voz chama a preparar o caminho do Senhor."
+      },
+      {
+        "term": "arrependimento",
+        "gloss": "A mudança que João anuncia e para a qual o seu batismo com água aponta."
+      },
+      {
+        "term": "frutos",
+        "gloss": "A vida concreta que João exige como sinal do arrependimento, para além da origem familiar."
+      }
+    ],
+    "structure": [
+      {
+        "label": "João prega arrependimento no deserto",
+        "evidenceRef": "Mateus 3:1–2"
+      },
+      {
+        "label": "O povo confessa e é batizado",
+        "evidenceRef": "Mateus 3:5–6"
+      },
+      {
+        "label": "João exige fruto, não a família",
+        "evidenceRef": "Mateus 3:8–9"
+      },
+      {
+        "label": "O que vem depois separa o trigo",
+        "evidenceRef": "Mateus 3:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "João pede arrependimento porque o reino dos céus está perto.",
+        "marker": "pois",
+        "evidenceRef": "Mateus 3:2"
+      },
+      {
+        "kind": "resultado",
+        "text": "Quem se aproxima do batismo é chamado a produzir fruto digno de arrependimento.",
+        "marker": "portanto",
+        "evidenceRef": "Mateus 3:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "João batiza com água, mas aquele que vem após ele batizará com o Espírito Santo e com fogo.",
+        "marker": "mas",
+        "evidenceRef": "Mateus 3:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 40:3",
+        "bridge": "Voz que prepara o caminho"
+      },
+      {
+        "ref": "Lucas 3:8",
+        "bridge": "Fruto digno de arrependimento"
+      },
+      {
+        "ref": "Mateus 7:19",
+        "bridge": "Árvore sem fruto cortada"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ter Abraão por pai já coloca a pessoa a salvo, sem precisar mudar de vida.",
+        "why": "João manda não começar a dizer isso e pede frutos dignos de arrependimento; até das pedras Deus pode suscitar filhos."
+      },
+      {
+        "text": "O batismo de João com água é o mesmo que o batismo de quem vem depois.",
+        "why": "João separa os dois: ele batiza com água para arrependimento, e o que vem após ele batizará com o Espírito Santo e com fogo."
+      },
+      {
+        "text": "Confessar os pecados no Jordão já cumpre tudo o que João exige.",
+        "why": "A confissão acompanha o batismo, mas João ainda exige fruto, e a árvore sem bom fruto é cortada e lançada ao fogo."
+      }
+    ],
+    "centralInsight": "Preparar o caminho do Rei é mudar de vida, não só ter a família certa.",
+    "anchorQuestion": "O que João pede que seja digno de arrependimento?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 3:6, João confessava os seus pecados ao batizar as pessoas no rio Jordão.",
+      "verseRef": "Mateus 3:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "eram por ele batizados no rio Jordão, confessando os seus pecados",
+      "feedbackCorrect": "A confissão é das pessoas batizadas; João é quem batiza no Jordão.",
+      "feedbackWrong": {
+        "true": "Quem confessa os pecados é o povo; João é aquele por quem elas são batizadas."
+      },
+      "hint": "Veja quem é batizado e de quem é a confissão.",
+      "learningObjective": "Observar quem confessa os pecados no batismo do Jordão.",
+      "evidence": [
+        "Mateus 3:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 3:1, toque quem apareceu pregando no deserto.",
+      "verseRef": "Mateus 3:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nesse tempo"
+        },
+        {
+          "id": "b",
+          "text": "João Batista"
+        },
+        {
+          "id": "c",
+          "text": "da Judéia"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "apareceu João Batista pregando",
+      "feedbackCorrect": "Quem aparece pregando no deserto da Judéia é João Batista.",
+      "feedbackWrong": {
+        "a": "A expressão marca o tempo, não a pessoa que começa a pregar.",
+        "c": "Isso indica a região, não quem apareceu pregando."
+      },
+      "hint": "Procure o nome de quem pratica a ação de pregar.",
+      "learningObjective": "Identificar quem Mateus apresenta pregando no deserto.",
+      "evidence": [
+        "Mateus 3:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 3:5, quem ia ao encontro de João?",
+      "verseRef": "Mateus 3:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Somente as pessoas de Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Gente de Jerusalém, da Judéia e da região do Jordão"
+        },
+        {
+          "id": "c",
+          "text": "Apenas fariseus e saduceus"
+        },
+        {
+          "id": "d",
+          "text": "Apenas a circunvizinhança do Jordão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "as pessoas de Jerusalém, de toda a Judéia e de toda a circunvizinhança do Jordão",
+      "feedbackCorrect": "Iam até ele pessoas de Jerusalém, de toda a Judéia e da região do Jordão.",
+      "feedbackWrong": {
+        "a": "Jerusalém é só uma parte; o texto também inclui a Judéia e o Jordão.",
+        "c": "Fariseus e saduceus aparecem depois, não como o grupo de Mateus 3:5.",
+        "d": "A região do Jordão é uma parte; Jerusalém e a Judéia também iam."
+      },
+      "hint": "Leia de quais lugares as pessoas saíam até ele.",
+      "learningObjective": "Reconhecer a procedência de quem ia até João.",
+      "evidence": [
+        "Mateus 3:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 3:4 na ordem do texto.",
+      "verseRef": "Mateus 3:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "E João vestia roupas de pelos de camelo"
+        },
+        {
+          "id": "b",
+          "text": "e um cinto de couro na cintura"
+        },
+        {
+          "id": "c",
+          "text": "sua alimentação consistia em gafanhotos e mel silvestre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E João vestia roupas de pelos de camelo",
+      "feedbackCorrect": "O versículo segue da roupa de João ao cinto e, no fim, à alimentação.",
+      "feedbackWrong": {
+        "default": "Comece pela roupa de pelos; o cinto fica no meio e a comida no fim."
+      },
+      "hint": "A frase abre descrevendo o que João vestia.",
+      "learningObjective": "Reconhecer a ordem da descrição de João em Mateus 3:4.",
+      "evidence": [
+        "Mateus 3:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 3:3, onde clama a voz mencionada pelo profeta?",
+      "verseRef": "Mateus 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "templo"
+        },
+        {
+          "id": "b",
+          "text": "deserto"
+        },
+        {
+          "id": "c",
+          "text": "palácio"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Voz do que clama no deserto",
+      "feedbackCorrect": "A voz do profeta clama no deserto, onde João prepara o caminho.",
+      "feedbackWrong": {
+        "a": "A citação não situa a voz no templo; o lugar nomeado é outro.",
+        "c": "Não há palácio na fala do profeta; a voz clama fora da cidade."
+      },
+      "hint": "Olhe o lugar nomeado na fala atribuída a Isaías.",
+      "learningObjective": "Lembrar o lugar de onde a voz chama, segundo o profeta.",
+      "evidence": [
+        "Mateus 3:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que liga Mateus 3:2 a este contexto?",
+      "verseRef": "Mateus 3:2",
+      "passageA": {
+        "ref": "Mateus 3:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A cena abre com um chamado urgente: a proximidade do reino é a razão do arrependimento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reino perto pede arrependimento"
+        },
+        {
+          "id": "b",
+          "text": "Roupa de pelos de camelo"
+        },
+        {
+          "id": "c",
+          "text": "Chamado só para saduceus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois o reino dos céus está perto",
+      "feedbackCorrect": "O versículo pede arrependimento porque o reino dos céus está perto.",
+      "feedbackWrong": {
+        "b": "A roupa de João vem depois e não é o que este versículo comunica.",
+        "c": "O chamado não se limita aos saduceus; a razão é o reino perto."
+      },
+      "hint": "Veja a razão que o versículo dá para o chamado.",
+      "learningObjective": "Ligar o chamado de Mateus 3:2 à proximidade do reino.",
+      "evidence": [
+        "Mateus 3:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 3:2, o pedido de arrependimento se apoia na proximidade do reino dos céus.",
+      "verseRef": "Mateus 3:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Arrependam-se, pois o reino dos céus está perto.",
+      "feedbackCorrect": "O pois mostra que o reino perto é a razão do pedido de arrependimento.",
+      "feedbackWrong": {
+        "false": "O texto une as duas frases: arrependam-se, pois o reino está perto."
+      },
+      "hint": "Observe a palavrinha que liga o chamado ao reino.",
+      "learningObjective": "Compreender que a proximidade do reino fundamenta o chamado.",
+      "evidence": [
+        "Mateus 3:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 3:8, toque a palavra que liga o pedido ao que João acabou de ver.",
+      "verseRef": "Mateus 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Produzam"
+        },
+        {
+          "id": "b",
+          "text": "portanto"
+        },
+        {
+          "id": "c",
+          "text": "dignos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Produzam, portanto, frutos",
+      "feedbackCorrect": "Portanto liga o fruto exigido ao que João viu chegar para o batismo.",
+      "feedbackWrong": {
+        "a": "Produzam é o verbo do pedido, não o elo com o que veio antes.",
+        "c": "Dignos qualifica o fruto; o elo com o anterior é outra palavra."
+      },
+      "hint": "Ela fica entre vírgulas, no começo do pedido.",
+      "learningObjective": "Reconhecer a palavra que marca a consequência exigida por João.",
+      "evidence": [
+        "Mateus 3:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Mateus 3:11 estabelece entre João e aquele que vem depois?",
+      "verseRef": "Mateus 3:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "O batismo de João com água contrasta com o de quem vem depois."
+        },
+        {
+          "id": "b",
+          "text": "Os dois batismos têm o mesmo poder e o mesmo efeito."
+        },
+        {
+          "id": "c",
+          "text": "João é o mais poderoso e o outro só anuncia a sua vinda."
+        },
+        {
+          "id": "d",
+          "text": "O batismo com fogo cancela o arrependimento pedido antes."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas aquele que vem após mim é mais poderoso do que eu",
+      "feedbackCorrect": "Há contraste: João batiza com água, e o que vem depois é mais poderoso.",
+      "feedbackWrong": {
+        "b": "O texto não iguala os dois: o que vem após João é mais poderoso.",
+        "c": "É o inverso: João se diz indigno até de levar as sandálias dele.",
+        "d": "O fogo não anula o arrependimento; João batiza com água para isso."
+      },
+      "hint": "Compare quem batiza e quem João diz ser mais poderoso.",
+      "learningObjective": "Compreender o contraste entre o batismo de João e o de quem vem depois.",
+      "evidence": [
+        "Mateus 3:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a pregação de João avança até o aviso sobre a família?",
+      "verseRef": "Mateus 3:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "João prega arrependimento no deserto"
+        },
+        {
+          "id": "b",
+          "text": "O povo confessa e é batizado"
+        },
+        {
+          "id": "c",
+          "text": "João exige fruto, não a família"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "apareceu João Batista pregando no deserto da Judéia",
+      "feedbackCorrect": "A pregação chama o povo; depois vem a confissão e, então, o fruto.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio, siga pelo povo que confessa e termine no fruto."
+      },
+      "hint": "O anúncio no deserto é o primeiro movimento.",
+      "learningObjective": "Compreender os movimentos da pregação até o aviso sobre Abraão.",
+      "evidence": [
+        "Mateus 3:1–2",
+        "Mateus 3:5–6",
+        "Mateus 3:8–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 3:8, o que João manda que seja digno de arrependimento?",
+      "verseRef": "Mateus 3:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "ritos"
+        },
+        {
+          "id": "b",
+          "text": "atos"
+        },
+        {
+          "id": "c",
+          "text": "frutos"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "frutos que sejam dignos de arrependimento",
+      "feedbackCorrect": "João pede frutos, uma vida à altura do arrependimento que ele anuncia.",
+      "feedbackWrong": {
+        "a": "O texto não pede ritos; pede algo que seja digno de arrependimento.",
+        "b": "Atos não é a palavra; o versículo nomeia o que se deve produzir."
+      },
+      "hint": "Veja o objeto do verbo que abre o versículo.",
+      "learningObjective": "Lembrar o que João exige como sinal do arrependimento.",
+      "evidence": [
+        "Mateus 3:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 3:3 a Isaías 40:3?",
+      "verseRef": "Mateus 3:3",
+      "passageA": {
+        "ref": "Mateus 3:3"
+      },
+      "passageB": {
+        "ref": "Isaías 40:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Voz que prepara o caminho"
+        },
+        {
+          "id": "b",
+          "text": "Fruto lançado ao fogo"
+        },
+        {
+          "id": "c",
+          "text": "Batismo no rio Jordão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "preparem o caminho do Senhor",
+      "feedbackCorrect": "Mateus cita Isaías: a voz no deserto chama a preparar o caminho.",
+      "feedbackWrong": {
+        "b": "O fogo pertence ao aviso da árvore, não à citação do profeta.",
+        "c": "O batismo no Jordão é outra cena; a ponte é a voz do profeta."
+      },
+      "hint": "Compare o que a voz faz nos dois textos.",
+      "learningObjective": "Relacionar a citação de Mateus 3:3 com Isaías 40:3.",
+      "evidence": [
+        "Mateus 3:3",
+        "Isaías 40:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 3:8–9, ter Abraão por pai não substitui o fruto digno de arrependimento.",
+      "verseRef": "Mateus 3:8–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "frutos que sejam dignos de arrependimento",
+      "feedbackCorrect": "João pede fruto e recusa a frase de ter Abraão por pai como garantia.",
+      "feedbackWrong": {
+        "false": "O texto exige fruto e diz que Deus pode suscitar filhos até das pedras."
+      },
+      "hint": "Leia o pedido de fruto junto com a frase sobre Abraão.",
+      "learningObjective": "Interpretar que a família de Abraão não dispensa o fruto.",
+      "evidence": [
+        "Mateus 3:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 3:9, toque o que as pessoas não devem alegar sobre si.",
+      "verseRef": "Mateus 3:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "pai a Abraão"
+        },
+        {
+          "id": "b",
+          "text": "destas pedras"
+        },
+        {
+          "id": "c",
+          "text": "entre vocês"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Temos por pai a Abraão",
+      "feedbackCorrect": "João veta essa alegação: Deus pode suscitar filhos a Abraão até das pedras.",
+      "feedbackWrong": {
+        "b": "As pedras são a resposta de Deus, não o que o povo alega sobre si.",
+        "c": "Isso indica o interlocutor, não o conteúdo que João proíbe alegar."
+      },
+      "hint": "É a origem que João manda não começar a citar.",
+      "learningObjective": "Localizar a alegação que João recusa como segurança.",
+      "evidence": [
+        "Mateus 3:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 3:8–9 sustenta sobre a família de Abraão?",
+      "verseRef": "Mateus 3:8–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ter Abraão por pai não dispensa o fruto do arrependimento."
+        },
+        {
+          "id": "b",
+          "text": "Ser filho de Abraão já basta, mesmo sem mudar de vida."
+        },
+        {
+          "id": "c",
+          "text": "Deus não suscita filhos fora da família de Abraão."
+        },
+        {
+          "id": "d",
+          "text": "João quer que o povo se orgulhe de ter Abraão por pai."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Temos por pai a Abraão",
+      "feedbackCorrect": "O texto pede fruto e não aceita a família de Abraão como garantia.",
+      "feedbackWrong": {
+        "b": "João recusa essa segurança e exige fruto digno de arrependimento.",
+        "c": "O texto afirma o oposto: destas pedras Deus pode suscitar filhos.",
+        "d": "João manda não começar a dizer isso; não é um elogio à família."
+      },
+      "hint": "Compare o pedido de fruto com a frase que ele proíbe.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre Abraão e o fruto.",
+      "evidence": [
+        "Mateus 3:8–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica sustenta o aviso de João sobre o fruto?",
+      "verseRef": "Mateus 3:9–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O reino perto pede arrependimento"
+        },
+        {
+          "id": "b",
+          "text": "A família de Abraão não basta"
+        },
+        {
+          "id": "c",
+          "text": "Sem fruto a árvore é cortada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que não produz bom fruto é cortada",
+      "feedbackCorrect": "O reino pede mudança, a família não basta e sem fruto a árvore cai.",
+      "feedbackWrong": {
+        "default": "Parta do reino perto, passe pela família e chegue à árvore cortada."
+      },
+      "hint": "A árvore e o machado são o desfecho do aviso.",
+      "learningObjective": "Acompanhar a lógica do aviso de João, do reino até o fruto.",
+      "evidence": [
+        "Mateus 3:2",
+        "Mateus 3:9",
+        "Mateus 3:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 3:11, João batiza com água para quê?",
+      "verseRef": "Mateus 3:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "arrependimento"
+        },
+        {
+          "id": "b",
+          "text": "purificação"
+        },
+        {
+          "id": "c",
+          "text": "perdão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vos batizo com água, para arrependimento",
+      "feedbackCorrect": "João diz a finalidade: o seu batismo com água é para arrependimento.",
+      "feedbackWrong": {
+        "b": "Purificação não está no versículo; a finalidade nomeada é outra.",
+        "c": "Perdão não é a palavra usada; leia o que vem logo após a água."
+      },
+      "hint": "Leia a finalidade indicada logo depois da água.",
+      "learningObjective": "Lembrar o termo que diz para que serve o batismo de João.",
+      "evidence": [
+        "Mateus 3:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 3:10 a Mateus 7:19?",
+      "verseRef": "Mateus 3:10",
+      "passageA": {
+        "ref": "Mateus 3:10"
+      },
+      "passageB": {
+        "ref": "Mateus 7:19"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Árvore sem fruto é cortada"
+        },
+        {
+          "id": "b",
+          "text": "Linhagem de Abraão basta"
+        },
+        {
+          "id": "c",
+          "text": "Voz que clama no deserto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que não produz bom fruto é cortada e lançada ao fogo",
+      "feedbackCorrect": "Os dois textos lançam ao fogo a árvore que não produz bom fruto.",
+      "feedbackWrong": {
+        "b": "A linhagem é o que João recusa; a ponte entre os textos é o fruto.",
+        "c": "A voz no deserto é a citação de Isaías, não o critério do fruto."
+      },
+      "hint": "Compare o destino da árvore que não produz.",
+      "learningObjective": "Relacionar o critério do fruto em João ao que Jesus afirma depois.",
+      "evidence": [
+        "Mateus 3:10",
+        "Mateus 7:19"
+      ]
+    }
+  ]
+}

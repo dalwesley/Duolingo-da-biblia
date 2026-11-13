@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Filipenses 4:4–10",
+    "passages": [
+      {
+        "ref": "Filipenses 4:4–10"
+      }
+    ],
+    "context": "Paulo manda alegrar-se no Senhor, não andar ansioso, orar com ações de graças e deixar a paz de Deus guardar coração e mente.",
+    "keyword": "paz",
+    "keywordGloss": "Paz de Deus que ultrapassa a compreensão e protege coração e mente em Cristo.",
+    "focusQuestion": "O que você precisa apresentar a Deus em oração em vez de ansiedade?",
+    "reflectionPrompts": [
+      "Alegrai-vos",
+      "Oração com graças",
+      "Paz que guarda"
+    ],
+    "facts": [
+      {
+        "text": "Alegrem-se sempre no Senhor.",
+        "evidenceRef": "Filipenses 4:4",
+        "evidenceSpan": "Alegrem-se sempre no Senhor"
+      },
+      {
+        "text": "Não estejam ansiosos; apresentem petições com ações de graças.",
+        "evidenceRef": "Filipenses 4:6",
+        "evidenceSpan": "apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças"
+      },
+      {
+        "text": "A paz de Deus protegerá o coração e a mente em Cristo.",
+        "evidenceRef": "Filipenses 4:7",
+        "evidenceSpan": "a paz de Deus, que ultrapassa toda compreensão, protegerá o seu coração e a sua mente"
+      },
+      {
+        "text": "Pensem no que é verdadeiro, justo, puro e digno de louvor.",
+        "evidenceRef": "Filipenses 4:8",
+        "evidenceSpan": "tudo o que é verdadeiro, tudo o que é respeitável, tudo o que é justo"
+      },
+      {
+        "text": "Praticai o que aprenderam; o Deus da paz será convosco.",
+        "evidenceRef": "Filipenses 4:9",
+        "evidenceSpan": "isso praticai; e o Deus da paz será convosco"
+      },
+      {
+        "text": "Paulo se alegrou porque eles se lembraram dele.",
+        "evidenceRef": "Filipenses 4:10",
+        "evidenceSpan": "Alegrei-me sobremaneira no Senhor porque, finalmente, vocês se lembraram de mim"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "paz",
+        "gloss": "Paz de Deus que guarda coração e mente."
+      },
+      {
+        "term": "oração",
+        "gloss": "Meio de apresentar petições com ações de graças."
+      },
+      {
+        "term": "alegrem-se",
+        "gloss": "Mando repetido de alegria no Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Alegria e moderação; Senhor próximo",
+        "evidenceRef": "Filipenses 4:4–5"
+      },
+      {
+        "label": "Oração no lugar da ansiedade",
+        "evidenceRef": "Filipenses 4:6"
+      },
+      {
+        "label": "Paz que guarda; pensamentos e prática",
+        "evidenceRef": "Filipenses 4:7–9"
+      },
+      {
+        "label": "Alegria pela lembrança solidária",
+        "evidenceRef": "Filipenses 4:10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não ansiosos; porém apresentem petições com graças.",
+        "marker": "porém",
+        "evidenceRef": "Filipenses 4:6"
+      },
+      {
+        "kind": "resultado",
+        "text": "A paz de Deus protegerá coração e mente.",
+        "marker": "E",
+        "evidenceRef": "Filipenses 4:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Praticai; o Deus da paz será convosco.",
+        "marker": "e",
+        "evidenceRef": "Filipenses 4:9"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 6:25",
+        "bridge": "Não andeis ansiosos"
+      },
+      {
+        "ref": "Colossenses 3:15",
+        "bridge": "Paz de Cristo no coração"
+      },
+      {
+        "ref": "1 Tessalonicenses 5:16",
+        "bridge": "Regozijai-vos sempre"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Alegria no Senhor exclui oração nas dificuldades.",
+        "why": "Em tudo apresentem petições com graças."
+      },
+      {
+        "text": "A paz de Deus cabe toda na compreensão humana.",
+        "why": "Ultrapassa toda compreensão."
+      },
+      {
+        "text": "Basta pensar o bem; não precisa praticar.",
+        "why": "Isso praticai; e o Deus da paz será convosco."
+      }
+    ],
+    "centralInsight": "Não andeis ansiosos: pela oração a paz de Deus guardará o coração e a mente em Cristo.",
+    "anchorQuestion": "Segundo Filipenses 4:7, o que a paz de Deus fará?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Filipenses 4:4, devem alegrar-se sempre no Senhor.",
+      "verseRef": "Filipenses 4:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "Alegrem-se sempre no Senhor",
+      "feedbackCorrect": "Alegria no Senhor, repetida.",
+      "feedbackWrong": {
+        "false": "Releia o mando."
+      },
+      "hint": "Olhe o sempre.",
+      "learningObjective": "Observar a alegria.",
+      "evidence": [
+        "Filipenses 4:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Filipenses 4:7, toque o que protegerá o coração.",
+      "verseRef": "Filipenses 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "paz"
+        },
+        {
+          "id": "b",
+          "text": "compreensão"
+        },
+        {
+          "id": "c",
+          "text": "mente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a paz de Deus",
+      "feedbackCorrect": "A paz de Deus protege.",
+      "feedbackWrong": {
+        "b": "Compreensão é o que ultrapassa.",
+        "c": "Mente também é protegida."
+      },
+      "hint": "Veja o sujeito de protegerá.",
+      "learningObjective": "Identificar a paz.",
+      "evidence": [
+        "Filipenses 4:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Filipenses 4:6, o que fazer em vez da ansiedade?",
+      "verseRef": "Filipenses 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apresentar petições com ações de graças"
+        },
+        {
+          "id": "b",
+          "text": "Guardar tudo em silêncio"
+        },
+        {
+          "id": "c",
+          "text": "Desistir da oração"
+        },
+        {
+          "id": "d",
+          "text": "Esquecer o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "apresentem suas petições a Deus, pela oração e pela súplica, com ações de graças",
+      "feedbackCorrect": "Oração com graças.",
+      "feedbackWrong": {
+        "b": "Há apresentação.",
+        "c": "Há oração.",
+        "d": "Senhor está próximo."
+      },
+      "hint": "Leia o porém.",
+      "learningObjective": "Ver a oração no lugar da ansiedade.",
+      "evidence": [
+        "Filipenses 4:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Filipenses 4:4–5 na ordem do texto.",
+      "verseRef": "Filipenses 4:4–5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrem-se sempre no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "novamente digo: alegrem-se"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor está próximo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Alegrem-se sempre no Senhor",
+      "feedbackCorrect": "Ansiedade, oração e paz.",
+      "feedbackWrong": {
+        "default": "Comece pela ansiedade."
+      },
+      "hint": "Siga 4:6–7.",
+      "learningObjective": "Seguir até a paz.",
+      "evidence": [
+        "Filipenses 4:4–5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Filipenses 4:6, complete: com ações de ___.",
+      "verseRef": "Filipenses 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "graças"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "ansiedade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com ações de graças",
+      "feedbackCorrect": "Ações de graças acompanham as petições.",
+      "feedbackWrong": {
+        "b": "Paz é o resultado.",
+        "c": "Ansiedade é o que deixar."
+      },
+      "hint": "Veja o complemento final das petições.",
+      "learningObjective": "Lembrar ações de graças.",
+      "evidence": [
+        "Filipenses 4:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Filipenses 4:6 comunica que se liga a este contexto?",
+      "verseRef": "Filipenses 4:6",
+      "passageA": {
+        "ref": "Filipenses 4:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Alegria no Senhor e oração no lugar da ansiedade, com a paz que guarda."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração com ações de graças"
+        },
+        {
+          "id": "b",
+          "text": "Ansiedade como mando"
+        },
+        {
+          "id": "c",
+          "text": "Paz sem Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com ações de graças",
+      "feedbackCorrect": "Oração com graças responde à ansiedade.",
+      "feedbackWrong": {
+        "b": "Ansiedade é rejeitada.",
+        "c": "Paz em Cristo."
+      },
+      "hint": "Ligue oração e contexto.",
+      "learningObjective": "Ligar o contexto à oração.",
+      "evidence": [
+        "Filipenses 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Filipenses 4:6, o porém liga a saída da ansiedade à oração com ações de graças.",
+      "verseRef": "Filipenses 4:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "em tudo, porém, apresentem suas petições a Deus",
+      "feedbackCorrect": "O porém introduz a oração.",
+      "feedbackWrong": {
+        "false": "Ansiedade cede lugar à petição."
+      },
+      "hint": "Olhe o porém.",
+      "learningObjective": "Ver o contraste da oração.",
+      "evidence": [
+        "Filipenses 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Filipenses 4:6, toque a palavra que marca a virada.",
+      "verseRef": "Filipenses 4:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "nada"
+        },
+        {
+          "id": "c",
+          "text": "oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em tudo, porém, apresentem suas petições",
+      "feedbackCorrect": "O porém marca a virada.",
+      "feedbackWrong": {
+        "b": "Nada qualifica a ansiedade.",
+        "c": "Oração é o meio."
+      },
+      "hint": "Procure a conjunção.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Filipenses 4:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Filipenses 4:6–9 estabelece entre paz e prática?",
+      "verseRef": "Filipenses 4:6–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração traz paz; prática mantém o Deus da paz"
+        },
+        {
+          "id": "b",
+          "text": "Paz dispensa prática"
+        },
+        {
+          "id": "c",
+          "text": "Pensar basta sem orar"
+        },
+        {
+          "id": "d",
+          "text": "Ansiedade produz paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso praticai; e o Deus da paz será convosco",
+      "feedbackCorrect": "Paz e prática juntas.",
+      "feedbackWrong": {
+        "b": "Há prática.",
+        "c": "Há oração.",
+        "d": "Ansiedade é rejeitada."
+      },
+      "hint": "Una 4:7 e 4:9.",
+      "learningObjective": "Relacionar paz e prática.",
+      "evidence": [
+        "Filipenses 4:6–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Filipenses 4:4–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria e moderação; Senhor próximo"
+        },
+        {
+          "id": "b",
+          "text": "Oração no lugar da ansiedade"
+        },
+        {
+          "id": "c",
+          "text": "Paz que guarda; pensamentos e prática"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Deus da paz será convosco",
+      "feedbackCorrect": "Alegria, oração e paz.",
+      "feedbackWrong": {
+        "default": "Comece pela alegria."
+      },
+      "hint": "Pense no fluxo.",
+      "learningObjective": "Ordenar alegria, oração e paz.",
+      "evidence": [
+        "Filipenses 4:4–9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Filipenses 4:7, complete: que ultrapassa toda ___.",
+      "verseRef": "Filipenses 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "compreensão"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que ultrapassa toda compreensão",
+      "feedbackCorrect": "Compreensão é o que a paz ultrapassa.",
+      "feedbackWrong": {
+        "b": "Porém marca a virada.",
+        "c": "Oração é o meio."
+      },
+      "hint": "Veja o que a paz ultrapassa.",
+      "learningObjective": "Lembrar compreensão.",
+      "evidence": [
+        "Filipenses 4:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Filipenses 4:6 a Mateus 6:25?",
+      "verseRef": "Filipenses 4:6",
+      "passageA": {
+        "ref": "Filipenses 4:6"
+      },
+      "passageB": {
+        "ref": "Mateus 6:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não andeis ansiosos"
+        },
+        {
+          "id": "b",
+          "text": "Paz sem oração"
+        },
+        {
+          "id": "c",
+          "text": "Pensamentos vazios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não estejam ansiosos por nada",
+      "feedbackCorrect": "Ambos rejeitam a ansiedade.",
+      "feedbackWrong": {
+        "b": "Há oração.",
+        "c": "Há o que pensar."
+      },
+      "hint": "Compare a ansiedade.",
+      "learningObjective": "Ligar o não ansiosos.",
+      "evidence": [
+        "Filipenses 4:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Filipenses 4:6–7, a paz de Deus cabe toda na compreensão humana.",
+      "verseRef": "Filipenses 4:6–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "a paz de Deus, que ultrapassa toda compreensão",
+      "feedbackCorrect": "A paz ultrapassa a compreensão.",
+      "feedbackWrong": {
+        "true": "O texto diz que ultrapassa."
+      },
+      "hint": "Leia a descrição da paz.",
+      "learningObjective": "Avaliar a leitura da paz.",
+      "evidence": [
+        "Filipenses 4:6–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Filipenses 4:7, toque o trecho que sustenta o alcance da paz.",
+      "verseRef": "Filipenses 4:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "ultrapassa"
+        },
+        {
+          "id": "b",
+          "text": "protegerá"
+        },
+        {
+          "id": "c",
+          "text": "coração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que ultrapassa toda compreensão",
+      "feedbackCorrect": "Ultrapassa sustenta o alcance.",
+      "feedbackWrong": {
+        "b": "Protegerá é a ação.",
+        "c": "Coração é o objeto."
+      },
+      "hint": "Veja o verbo do alcance.",
+      "learningObjective": "Tocar o ultrapassar.",
+      "evidence": [
+        "Filipenses 4:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Filipenses 4:4–10 sustenta melhor?",
+      "verseRef": "Filipenses 4:4–10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria, oração e prática sob a paz de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ansiedade como virtude"
+        },
+        {
+          "id": "c",
+          "text": "Pensar sem praticar"
+        },
+        {
+          "id": "d",
+          "text": "Paz sem Cristo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a paz de Deus, que ultrapassa toda compreensão, protegerá",
+      "feedbackCorrect": "Alegria, oração, paz e prática.",
+      "feedbackWrong": {
+        "b": "Ansiedade é rejeitada.",
+        "c": "Há prática.",
+        "d": "Paz em Cristo."
+      },
+      "hint": "Una o fio.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Filipenses 4:4–10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até o Deus da paz.",
+      "verseRef": "Filipenses 4:4–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrai-vos no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Orai em vez de ansiedade"
+        },
+        {
+          "id": "c",
+          "text": "Paz guarda; praticai o aprendido"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Deus da paz será convosco",
+      "feedbackCorrect": "Alegria, oração e prática.",
+      "feedbackWrong": {
+        "default": "A prática fecha."
+      },
+      "hint": "Siga até 4:9.",
+      "learningObjective": "Encadear alegria, oração e prática.",
+      "evidence": [
+        "Filipenses 4:4–9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Filipenses 4:4, complete: ___ sempre no Senhor.",
+      "verseRef": "Filipenses 4:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegrem-se"
+        },
+        {
+          "id": "b",
+          "text": "Ansiosos"
+        },
+        {
+          "id": "c",
+          "text": "Silenciosos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Alegrem-se sempre no Senhor",
+      "feedbackCorrect": "Alegrem-se é o mando.",
+      "feedbackWrong": {
+        "b": "Ansiosos é rejeitado.",
+        "c": "Silêncio não é o mando."
+      },
+      "hint": "Veja o verbo inicial.",
+      "learningObjective": "Lembrar alegrem-se.",
+      "evidence": [
+        "Filipenses 4:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Filipenses 4:7 a Colossenses 3:15?",
+      "verseRef": "Filipenses 4:7",
+      "passageA": {
+        "ref": "Filipenses 4:7"
+      },
+      "passageB": {
+        "ref": "Colossenses 3:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Paz no coração"
+        },
+        {
+          "id": "b",
+          "text": "Ansiedade"
+        },
+        {
+          "id": "c",
+          "text": "Esquecimento de Paulo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "protegerá o seu coração e a sua mente",
+      "feedbackCorrect": "Ambos apontam a paz no coração.",
+      "feedbackWrong": {
+        "b": "Ansiedade é rejeitada.",
+        "c": "Há lembrança solidária."
+      },
+      "hint": "Compare a paz.",
+      "learningObjective": "Ligar a paz no coração.",
+      "evidence": [
+        "Filipenses 4:7"
+      ]
+    }
+  ]
+}

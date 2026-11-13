@@ -1,0 +1,715 @@
+{
+  "study": {
+    "passageRef": "Mateus 2:1–6",
+    "passages": [
+      {
+        "ref": "Mateus 2:1–6"
+      },
+      {
+        "ref": "Mateus 2:7–12"
+      }
+    ],
+    "context": "Jesus nasceu em Belém nos dias do rei Herodes. Magos do Oriente chegam a Jerusalém e perguntam pelo rei dos judeus, pois viram a estrela dele. Herodes reúne sacerdotes e escribas para saber onde o Cristo nasceria.",
+    "keyword": "Adorar",
+    "keywordGloss": "Adorar é o que os magos vieram fazer diante do rei que acabou de nascer.",
+    "focusQuestion": "Quando a notícia do Rei chega até você, você se aproxima para adorá-lo ou se perturba?",
+    "reflectionPrompts": [
+      "A busca desde o Oriente",
+      "A agitação em Jerusalém",
+      "A adoração na casa"
+    ],
+    "facts": [
+      {
+        "text": "Jesus nasceu em Belém, na Judeia, nos dias do rei Herodes.",
+        "evidenceRef": "Mateus 2:1",
+        "evidenceSpan": "Jesus nasceu em Belém, na Judeia, nos dias do rei Herodes"
+      },
+      {
+        "text": "Os magos dizem que viram a estrela no Oriente e que vieram para adorar o rei.",
+        "evidenceRef": "Mateus 2:2",
+        "evidenceSpan": "vimos a sua estrela no Oriente e viemos para adorá-lo"
+      },
+      {
+        "text": "Herodes se alarmou, e toda a Jerusalém ficou agitada.",
+        "evidenceRef": "Mateus 2:3",
+        "evidenceSpan": "o rei Herodes, ao ouvir isso, alarmou-se, e toda a Jerusalém também ficou agitada"
+      },
+      {
+        "text": "A resposta situa o nascimento em Belém da Judeia, conforme o profeta.",
+        "evidenceRef": "Mateus 2:5",
+        "evidenceSpan": "Em Belém da Judeia, pois assim está escrito por intermédio do profeta"
+      },
+      {
+        "text": "Os magos adoraram o menino e ofereceram ouro, incenso e mirra.",
+        "evidenceRef": "Mateus 2:11",
+        "evidenceSpan": "prostrando-se, o adoraram; abrindo seus tesouros, ofereceram-lhe suas ofertas: ouro, incenso e mirra"
+      },
+      {
+        "text": "Avisados em sonhos, não voltaram a Herodes e partiram por outro caminho.",
+        "evidenceRef": "Mateus 2:12",
+        "evidenceSpan": "para não voltarem à presença de Herodes, partiram para sua terra por outro caminho"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Guia",
+        "gloss": "Título de quem sai de Belém para apascentar o povo de Israel."
+      },
+      {
+        "term": "adoraram",
+        "gloss": "O gesto dos magos diante do menino: prostram-se e lhe oferecem presentes."
+      },
+      {
+        "term": "estrela",
+        "gloss": "O sinal que os magos viram no Oriente e que os precedeu até o menino."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Estrangeiros chegam em busca do rei",
+        "evidenceRef": "Mateus 2:1–2"
+      },
+      {
+        "label": "Jerusalém se agita e a Escritura responde",
+        "evidenceRef": "Mateus 2:3–6"
+      },
+      {
+        "label": "A estrela guia, eles adoram e partem",
+        "evidenceRef": "Mateus 2:9–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Os magos explicam que vieram adorar porque viram a estrela no Oriente.",
+        "marker": "Pois",
+        "evidenceRef": "Mateus 2:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os magos chegam para adorar, e Herodes se alarma junto com Jerusalém.",
+        "marker": null,
+        "evidenceRef": "Mateus 2:3"
+      },
+      {
+        "kind": "propósito",
+        "text": "O aviso em sonhos existe para os magos não voltarem à presença de Herodes.",
+        "marker": "para",
+        "evidenceRef": "Mateus 2:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Miqueias 5:2",
+        "bridge": "Rei prometido em Belém"
+      },
+      {
+        "ref": "Salmos 72:10–11",
+        "bridge": "Reis trazem presentes"
+      },
+      {
+        "ref": "Isaías 60:6",
+        "bridge": "Ouro e incenso de Sabá"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os magos adoraram a estrela ao vê-la com grande júbilo.",
+        "why": "Ao verem a estrela, alegraram-se; a adoração acontece na casa e é dirigida ao menino."
+      },
+      {
+        "text": "O aviso em sonhos mandou os magos contar a Herodes onde estava o menino.",
+        "why": "O aviso é para não voltarem à presença de Herodes, e eles partem por outro caminho."
+      },
+      {
+        "text": "Herodes queria adorar o menino do mesmo modo que os magos.",
+        "why": "Ele diz isso ao enviá-los, mas está alarmado, os chama em segredo, e Deus desvia os magos da presença dele."
+      }
+    ],
+    "centralInsight": "Quem vem de longe adora o Rei, enquanto quem estava perto se perturba com ele.",
+    "anchorQuestion": "O que os magos fizeram ao encontrar o menino?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 2:1, alguns magos vieram do Egito a Jerusalém depois que Jesus nasceu em Belém.",
+      "verseRef": "Mateus 2:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Jesus nasceu em Belém, na Judeia, nos dias do rei Herodes, eis que alguns magos vieram do Oriente a Jerusalém",
+      "feedbackCorrect": "Os magos vieram do Oriente, não do Egito. O nascimento em Belém está no mesmo versículo.",
+      "feedbackWrong": {
+        "true": "O versículo diz Oriente, não Egito. Eles vieram a Jerusalém depois do nascimento em Belém."
+      },
+      "hint": "Leia o versículo do começo ao fim.",
+      "learningObjective": "Observar o lugar do nascimento de Jesus e a chegada dos magos.",
+      "evidence": [
+        "Mateus 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 2:1, toque quem veio do Oriente a Jerusalém.",
+      "verseRef": "Mateus 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "alguns magos"
+        },
+        {
+          "id": "b",
+          "text": "rei Herodes"
+        },
+        {
+          "id": "c",
+          "text": "Jesus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "alguns magos vieram do Oriente a Jerusalém",
+      "feedbackCorrect": "Quem veio do Oriente a Jerusalém foram alguns magos.",
+      "feedbackWrong": {
+        "b": "Herodes é o rei daqueles dias; quem veio do Oriente são os magos.",
+        "c": "Jesus é quem nasceu em Belém; quem veio do Oriente são os magos."
+      },
+      "hint": "Procure o grupo que faz a viagem até a cidade.",
+      "learningObjective": "Identificar quem chegou do Oriente a Jerusalém.",
+      "evidence": [
+        "Mateus 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 2:5, em que lugar disseram que o Cristo nasceria?",
+      "verseRef": "Mateus 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Em Jerusalém, onde os magos chegaram"
+        },
+        {
+          "id": "b",
+          "text": "No Oriente, de onde vinham os magos"
+        },
+        {
+          "id": "c",
+          "text": "Em Nazaré, fora da terra de Judá"
+        },
+        {
+          "id": "d",
+          "text": "Em Belém da Judeia, conforme o profeta"
+        }
+      ],
+      "correctOptionId": "d",
+      "evidenceSpan": "Em Belém da Judeia",
+      "feedbackCorrect": "A resposta aponta Belém da Judeia, como está escrito pelo profeta.",
+      "feedbackWrong": {
+        "a": "Jerusalém é onde os magos chegaram, não o lugar citado para o nascimento.",
+        "b": "O Oriente é de onde os magos vieram; o nascimento é situado em Belém.",
+        "c": "O texto não fala de Nazaré; a resposta é Belém da Judeia."
+      },
+      "hint": "A resposta está no início do versículo.",
+      "learningObjective": "Identificar o lugar do nascimento indicado pelas Escrituras.",
+      "evidence": [
+        "Mateus 2:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 2:9 na ordem do texto.",
+      "verseRef": "Mateus 2:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "depois de ouvirem o rei, partiram"
+        },
+        {
+          "id": "b",
+          "text": "a estrela que tinham visto no Oriente os precedia"
+        },
+        {
+          "id": "c",
+          "text": "parou sobre o lugar onde estava o menino"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "depois de ouvirem o rei, partiram",
+      "feedbackCorrect": "O versículo segue a partida, a estrela que ia adiante e a parada sobre o menino.",
+      "feedbackWrong": {
+        "default": "Comece pela partida depois do rei; a estrela para no fim do versículo."
+      },
+      "hint": "A cena começa quando eles deixam o rei.",
+      "learningObjective": "Reconhecer a sequência da viagem guiada pela estrela.",
+      "evidence": [
+        "Mateus 2:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 2:10, o que os magos sentiram de modo grande e intenso?",
+      "verseRef": "Mateus 2:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "temor"
+        },
+        {
+          "id": "b",
+          "text": "cansaço"
+        },
+        {
+          "id": "c",
+          "text": "júbilo"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "alegraram-se com grande e intenso júbilo",
+      "feedbackCorrect": "Ao verem a estrela, os magos se alegraram com grande e intenso júbilo.",
+      "feedbackWrong": {
+        "a": "O texto não fala em temor; o sentimento nomeado é júbilo.",
+        "b": "Não há cansaço no versículo; eles se alegram com júbilo."
+      },
+      "hint": "Olhe a última palavra da frase.",
+      "learningObjective": "Lembrar o sentimento dos magos ao verem a estrela.",
+      "evidence": [
+        "Mateus 2:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 2:2 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 2:2",
+      "passageA": {
+        "ref": "Mateus 2:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Estrangeiros viram a estrela no Oriente e vieram adorar o rei que nasceu."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A cidade festejou o aviso"
+        },
+        {
+          "id": "b",
+          "text": "Vieram adorar o rei"
+        },
+        {
+          "id": "c",
+          "text": "Herodes já conhecia Belém"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "viemos para adorá-lo",
+      "feedbackCorrect": "Eles dizem que viram a estrela e vieram para adorar o rei.",
+      "feedbackWrong": {
+        "a": "O versículo não descreve festa na cidade; descreve a vinda para adorar.",
+        "c": "Herodes não anuncia o nascimento; os magos é que vieram adorar."
+      },
+      "hint": "Veja o verbo que diz o objetivo da viagem.",
+      "learningObjective": "Ligar a fala dos magos ao propósito de adorar o rei.",
+      "evidence": [
+        "Mateus 2:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 2:2, os magos dizem que vieram adorar o rei porque viram a sua estrela no Oriente.",
+      "verseRef": "Mateus 2:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Pois vimos a sua estrela no Oriente e viemos para adorá-lo",
+      "feedbackCorrect": "O Pois une as duas partes: viram a estrela e vieram para adorar.",
+      "feedbackWrong": {
+        "false": "A fala liga a estrela que viram no Oriente à vinda para adorá-lo."
+      },
+      "hint": "Observe a palavra que liga a estrela à vinda deles.",
+      "learningObjective": "Compreender que a estrela é o motivo que os magos dão para a viagem.",
+      "evidence": [
+        "Mateus 2:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 2:2, toque a palavra que introduz o motivo da viagem.",
+      "verseRef": "Mateus 2:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Onde"
+        },
+        {
+          "id": "b",
+          "text": "Pois"
+        },
+        {
+          "id": "c",
+          "text": "vimos"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Pois vimos a sua estrela no Oriente",
+      "feedbackCorrect": "Pois introduz a razão: viram a estrela e por isso vieram adorar.",
+      "feedbackWrong": {
+        "a": "Onde abre a pergunta pelo rei, não o motivo da viagem.",
+        "c": "Vimos conta o que ocorreu; quem introduz o motivo é a palavra anterior."
+      },
+      "hint": "Procure a palavra curta entre a pergunta e o que eles viram.",
+      "learningObjective": "Reconhecer a palavra que marca a causa da viagem dos magos.",
+      "evidence": [
+        "Mateus 2:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Mateus 2:2–3 mostra entre a vinda dos magos e Herodes?",
+      "verseRef": "Mateus 2:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Herodes se alarma e a cidade fica agitada"
+        },
+        {
+          "id": "b",
+          "text": "Herodes se alegra e a cidade entra em festa"
+        },
+        {
+          "id": "c",
+          "text": "Os magos se assustam e desistem da viagem"
+        },
+        {
+          "id": "d",
+          "text": "Os sacerdotes acalmam o rei e o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei Herodes, ao ouvir isso, alarmou-se",
+      "feedbackCorrect": "Ao ouvir a notícia, Herodes se alarma e toda a Jerusalém fica agitada.",
+      "feedbackWrong": {
+        "b": "O texto não fala em alegria nem em festa; fala em alarme e agitação.",
+        "c": "Quem se alarma é Herodes, não os magos; eles continuam a busca.",
+        "d": "Os sacerdotes são consultados depois; aqui há alarme, não acalmo."
+      },
+      "hint": "Leia a reação de Herodes e a da cidade.",
+      "learningObjective": "Relacionar a notícia dos magos com a reação de Herodes e de Jerusalém.",
+      "evidence": [
+        "Mateus 2:2",
+        "Mateus 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a visita dos magos avança ao longo de Mateus 2?",
+      "verseRef": "Mateus 2:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Estrangeiros chegam em busca do rei"
+        },
+        {
+          "id": "b",
+          "text": "Jerusalém se agita e a Escritura responde"
+        },
+        {
+          "id": "c",
+          "text": "A estrela guia, eles adoram e partem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "alguns magos vieram do Oriente a Jerusalém",
+      "feedbackCorrect": "Primeiro a busca, depois a agitação e a Escritura, por fim a adoração e a partida.",
+      "feedbackWrong": {
+        "default": "A busca abre a cena; a adoração e a partida vêm depois da Escritura."
+      },
+      "hint": "Siga do encontro em Jerusalém até a partida.",
+      "learningObjective": "Compreender os três movimentos da visita dos magos.",
+      "evidence": [
+        "Mateus 2:1–2",
+        "Mateus 2:3–6",
+        "Mateus 2:9–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 2:3, qual foi a reação de Herodes ao ouvir a notícia?",
+      "verseRef": "Mateus 2:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "alegrou-se"
+        },
+        {
+          "id": "b",
+          "text": "alarmou-se"
+        },
+        {
+          "id": "c",
+          "text": "calou-se"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "ao ouvir isso, alarmou-se",
+      "feedbackCorrect": "Herodes não festeja a notícia: ao ouvir, ele se alarmou.",
+      "feedbackWrong": {
+        "a": "O versículo não diz que ele se alegrou; diz que se alarmou.",
+        "c": "Ele não se cala; o texto diz que Herodes se alarmou."
+      },
+      "hint": "Veja o verbo que vem logo depois de ele ouvir.",
+      "learningObjective": "Reconhecer a reação de Herodes diante da notícia dos magos.",
+      "evidence": [
+        "Mateus 2:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 2:6 a Miqueias 5:2?",
+      "verseRef": "Mateus 2:6",
+      "passageA": {
+        "ref": "Mateus 2:6"
+      },
+      "passageB": {
+        "ref": "Miqueias 5:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O segredo de Herodes"
+        },
+        {
+          "id": "b",
+          "text": "Alegria ao ver a estrela"
+        },
+        {
+          "id": "c",
+          "text": "O Guia prometido em Belém"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "de ti sairá o Guia",
+      "feedbackCorrect": "Os dois textos anunciam que de Belém sai quem há de guiar Israel.",
+      "feedbackWrong": {
+        "a": "O segredo de Herodes está em outro versículo, não nessa ponte.",
+        "b": "A alegria com a estrela não é o que Miqueias e este versículo compartilham."
+      },
+      "hint": "Compare o que os dois textos dizem sobre Belém.",
+      "learningObjective": "Relacionar a citação de Mateus com o anúncio do profeta sobre Belém.",
+      "evidence": [
+        "Mateus 2:6",
+        "Miqueias 5:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 2:10–11, os magos adoraram a estrela ao vê-la com grande júbilo.",
+      "verseRef": "Mateus 2:10–11",
+      "correctOptionId": "false",
+      "evidenceSpan": "encontraram o menino com Maria, sua mãe; prostrando-se, o adoraram",
+      "feedbackCorrect": "Eles se alegraram ao ver a estrela; a adoração, na casa, é ao menino.",
+      "feedbackWrong": {
+        "true": "O versículo 10 fala em júbilo diante da estrela; quem eles adoram é o menino."
+      },
+      "hint": "Separe o que sentiram ao ver a estrela do que fizeram na casa.",
+      "learningObjective": "Distinguir a alegria diante da estrela da adoração dirigida ao menino.",
+      "evidence": [
+        "Mateus 2:10–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 2:11, toque a quem os magos se prostraram na casa.",
+      "verseRef": "Mateus 2:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua mãe"
+        },
+        {
+          "id": "b",
+          "text": "seus tesouros"
+        },
+        {
+          "id": "c",
+          "text": "o menino"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "encontraram o menino com Maria, sua mãe; prostrando-se, o adoraram",
+      "feedbackCorrect": "Eles encontram o menino e, ao se prostrar, é a ele que adoram.",
+      "feedbackWrong": {
+        "a": "Maria está com o menino, mas o texto não diz que a adoração é a ela.",
+        "b": "Os tesouros são abertos para as ofertas, não recebem a prostração."
+      },
+      "hint": "Veja quem estava na casa quando eles se prostraram.",
+      "learningObjective": "Localizar no texto a quem se dirige a adoração dos magos.",
+      "evidence": [
+        "Mateus 2:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 2:12 sustenta sobre o aviso dado aos magos?",
+      "verseRef": "Mateus 2:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sonho manda contar a Herodes onde acharam"
+        },
+        {
+          "id": "b",
+          "text": "Deus os desvia de voltar à presença de Herodes"
+        },
+        {
+          "id": "c",
+          "text": "O aviso pede que adorem a estrela no caminho"
+        },
+        {
+          "id": "d",
+          "text": "Herodes deve ir com eles adorar o menino"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para não voltarem à presença de Herodes",
+      "feedbackCorrect": "O aviso tem um fim claro: não voltar a Herodes, e eles partem por outro caminho.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: não voltarem à presença de Herodes.",
+        "c": "O sonho não pede adoração à estrela; evita a volta a Herodes.",
+        "d": "Herodes diz que quer adorar, mas o aviso afasta os magos da presença dele."
+      },
+      "hint": "Leia para que serviu o aviso dado em sonhos.",
+      "learningObjective": "Interpretar o aviso em sonhos como um desvio para longe de Herodes.",
+      "evidence": [
+        "Mateus 2:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento vai do anúncio em Belém até as ofertas?",
+      "verseRef": "Mateus 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A Escritura anuncia o nascimento em Belém"
+        },
+        {
+          "id": "b",
+          "text": "Estrangeiros seguem a estrela até a casa"
+        },
+        {
+          "id": "c",
+          "text": "O menino é adorado e recebe ofertas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "de ti sairá o Guia que há de apascentar o meu povo, Israel",
+      "feedbackCorrect": "O anúncio em Belém se cumpre quando estrangeiros acham o menino e o honram.",
+      "feedbackWrong": {
+        "default": "Comece pelo anúncio; a estrela conduz até a casa, e as ofertas vêm no fim."
+      },
+      "hint": "O anúncio escrito vem antes da visita e das ofertas.",
+      "learningObjective": "Acompanhar o caminho do anúncio em Belém até a adoração com ofertas.",
+      "evidence": [
+        "Miqueias 5:2",
+        "Mateus 2:6",
+        "Mateus 2:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 2:6, que título recebe quem sairá de Belém para apascentar Israel?",
+      "verseRef": "Mateus 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "juiz"
+        },
+        {
+          "id": "b",
+          "text": "profeta"
+        },
+        {
+          "id": "c",
+          "text": "Guia"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "de ti sairá o Guia que há de apascentar o meu povo",
+      "feedbackCorrect": "O profeta chama de Guia aquele que sai de Belém para apascentar Israel.",
+      "feedbackWrong": {
+        "a": "O versículo não diz juiz; o título escrito é Guia.",
+        "b": "O profeta é quem escreveu; quem sai de Belém é chamado Guia."
+      },
+      "hint": "Leia o título logo depois de sairá o.",
+      "learningObjective": "Lembrar o título dado àquele que sai de Belém para apascentar Israel.",
+      "evidence": [
+        "Mateus 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 2:11 a Salmos 72:10–11?",
+      "verseRef": "Mateus 2:11",
+      "passageA": {
+        "ref": "Mateus 2:11"
+      },
+      "passageB": {
+        "ref": "Salmos 72:10–11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ofertas diante do rei"
+        },
+        {
+          "id": "b",
+          "text": "Consulta aos sacerdotes"
+        },
+        {
+          "id": "c",
+          "text": "Partida por outro caminho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ofereceram-lhe suas ofertas: ouro, incenso e mirra",
+      "feedbackCorrect": "Nos dois textos, quem vem de longe se prostra e traz presentes ao rei.",
+      "feedbackWrong": {
+        "b": "A consulta aos sacerdotes não é o gesto que o salmo descreve.",
+        "c": "A mudança de caminho está no versículo seguinte, não nessa ponte."
+      },
+      "hint": "Compare o que os magos levam com o que os reis trazem.",
+      "learningObjective": "Ligar as ofertas dos magos à honra que reis de longe prestam ao rei.",
+      "evidence": [
+        "Mateus 2:11",
+        "Salmos 72:10–11"
+      ]
+    }
+  ]
+}

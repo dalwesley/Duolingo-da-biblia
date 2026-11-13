@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Êxodo 28:1–6",
+    "passages": [
+      {
+        "ref": "Êxodo 28:1–12"
+      }
+    ],
+    "context": "Deus chama Arão e os filhos ao sacerdócio. Nas pedras do éfode, Arão leva os nomes de Israel diante do Senhor.",
+    "keyword": "Memória",
+    "keywordGloss": "Os nomes de Israel nas pedras, levados por Arão diante do Senhor.",
+    "focusQuestion": "Quem você leva no coração quando se aproxima de Deus?",
+    "reflectionPrompts": [
+      "Arão chamado",
+      "Vestes sagradas",
+      "Nomes nos ombros"
+    ],
+    "facts": [
+      {
+        "text": "Arão e seus filhos são separados para oficiar como sacerdotes.",
+        "evidenceRef": "Êxodo 28:1",
+        "evidenceSpan": "para me oficiarem como sacerdotes"
+      },
+      {
+        "text": "As vestes sagradas são para glória e ornamentação.",
+        "evidenceRef": "Êxodo 28:2",
+        "evidenceSpan": "para glória e ornamentação"
+      },
+      {
+        "text": "Homens hábeis, cheios do Espírito de sabedoria, farão as vestes.",
+        "evidenceRef": "Êxodo 28:3",
+        "evidenceSpan": "enchido do Espírito de sabedoria"
+      },
+      {
+        "text": "Duas pedras de ônix recebem os nomes dos filhos de Israel.",
+        "evidenceRef": "Êxodo 28:9",
+        "evidenceSpan": "duas pedras de ônix e gravará nelas os nomes"
+      },
+      {
+        "text": "Arão leva os nomes sobre os ombros para memória diante do SENHOR.",
+        "evidenceRef": "Êxodo 28:12",
+        "evidenceSpan": "para memória diante do SENHOR"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sacerdotes",
+        "gloss": "Arão e filhos, separados para oficiar perante Deus."
+      },
+      {
+        "term": "éfode",
+        "gloss": "Peça do vestuário sacerdotal com ombreiras e pedras."
+      },
+      {
+        "term": "memória",
+        "gloss": "Os nomes de Israel lembrados diante do Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado de Arão e filhos",
+        "evidenceRef": "Êxodo 28:1"
+      },
+      {
+        "label": "Vestes sagradas e ofício",
+        "evidenceRef": "Êxodo 28:2–5"
+      },
+      {
+        "label": "Éfode e pedras com nomes",
+        "evidenceRef": "Êxodo 28:6–11"
+      },
+      {
+        "label": "Nomes nos ombros perante o Senhor",
+        "evidenceRef": "Êxodo 28:12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "As vestes consagram Arão para ministrar no ofício sacerdotal.",
+        "marker": "para",
+        "evidenceRef": "Êxodo 28:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "Arão leva os nomes para memória diante do Senhor.",
+        "marker": "memória",
+        "evidenceRef": "Êxodo 28:12"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois do chamado, vêm as vestes e as pedras.",
+        "marker": "Depois",
+        "evidenceRef": "Êxodo 28:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 5:1",
+        "bridge": "Sacerdote em favor dos homens"
+      },
+      {
+        "ref": "Hebreus 7:25",
+        "bridge": "Intercede pelos que se aproximam"
+      },
+      {
+        "ref": "Isaías 49:16",
+        "bridge": "Nomes gravados perante Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Arão entra sozinho, sem o povo no coração.",
+        "why": "Ele leva os nomes de Israel sobre os ombros."
+      },
+      {
+        "text": "As vestes são só moda, sem sentido sagrado.",
+        "why": "São para glória, ornamentação e consagração ao ofício."
+      },
+      {
+        "text": "Qualquer um se apresenta como sacerdote sem chamado.",
+        "why": "Deus manda aproximar Arão e os filhos nomeados."
+      }
+    ],
+    "centralInsight": "O sacerdote leva o povo sobre o coração quando entra perante o Senhor.",
+    "anchorQuestion": "O que Arão leva sobre os ombros diante do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Arão e seus filhos Nadabe, Abiú, Eleazar e Itamar são chamados para oficiar como sacerdotes.",
+      "verseRef": "Êxodo 28:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "para me oficiarem como sacerdotes",
+      "feedbackCorrect": "O texto nomeia Arão e os quatro filhos para o ofício.",
+      "feedbackWrong": {
+        "false": "Releia Êxodo 28:1: eles oficiam como sacerdotes."
+      },
+      "hint": "Veja a lista de nomes e o ofício.",
+      "learningObjective": "Observar quem é chamado ao sacerdócio.",
+      "evidence": [
+        "Êxodo 28:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 28:9, toque o tipo de pedras em que se gravam os nomes.",
+      "verseRef": "Êxodo 28:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "ônix"
+        },
+        {
+          "id": "b",
+          "text": "nomes"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "duas pedras de ônix",
+      "feedbackCorrect": "São duas pedras de ônix.",
+      "feedbackWrong": {
+        "b": "Nomes são o que se grava; a pedra é ônix.",
+        "c": "Filhos de Israel são os nomes; a pedra é ônix."
+      },
+      "hint": "Qual pedra o texto cita?",
+      "learningObjective": "Identificar as pedras de ônix.",
+      "evidence": [
+        "Êxodo 28:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 28:2, para que servem as vestes sagradas de Arão?",
+      "verseRef": "Êxodo 28:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para glória e ornamentação"
+        },
+        {
+          "id": "b",
+          "text": "Para esconder Arão do povo"
+        },
+        {
+          "id": "c",
+          "text": "Para venda no mercado"
+        },
+        {
+          "id": "d",
+          "text": "Para guerra contra o Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para glória e ornamentação",
+      "feedbackCorrect": "As vestes são para glória e ornamentação.",
+      "feedbackWrong": {
+        "b": "Não é para esconder.",
+        "c": "Não é para venda.",
+        "d": "Não é para guerra."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Observar o propósito das vestes.",
+      "evidence": [
+        "Êxodo 28:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 28:12 na ordem do texto.",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "E você colocará as duas pedras nas ombreiras do éfode"
+        },
+        {
+          "id": "b",
+          "text": "como pedras de memória para os filhos de Israel"
+        },
+        {
+          "id": "c",
+          "text": "e Arão levará os nomes deles sobre ambos os ombros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pedras de memória para os filhos de Israel",
+      "feedbackCorrect": "Pedras no éfode, memória, e Arão leva os nomes.",
+      "feedbackWrong": {
+        "default": "Comece pela colocação das pedras."
+      },
+      "hint": "O versículo começa com a colocação.",
+      "learningObjective": "Reconhecer a sequência de Êxodo 28:12.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 28:12, para que Arão leva os nomes sobre os ombros?",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "memória"
+        },
+        {
+          "id": "b",
+          "text": "esquecimento"
+        },
+        {
+          "id": "c",
+          "text": "castigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para memória diante do SENHOR",
+      "feedbackCorrect": "Ele leva os nomes para memória diante do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto diz memória, não esquecimento.",
+        "c": "Não é castigo; é memória."
+      },
+      "hint": "A frase é \"para ___ diante\".",
+      "learningObjective": "Lembrar o propósito das pedras.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 28:12 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 28:12",
+      "passageA": {
+        "ref": "Êxodo 28:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus escolhe Arão e manda gravar os nomes de Israel nas pedras do éfode."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levar o povo perante Deus"
+        },
+        {
+          "id": "b",
+          "text": "Esquecer Israel no culto"
+        },
+        {
+          "id": "c",
+          "text": "Entrar sem os nomes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Arão levará os nomes deles",
+      "feedbackCorrect": "Arão leva os nomes para memória diante do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto marca memória, não esquecimento.",
+        "c": "Os nomes vão nos ombros."
+      },
+      "hint": "O que as pedras representam no peito/ombros?",
+      "learningObjective": "Ligar as pedras ao povo perante Deus.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 28:3, as vestes se fazem só para enfeite, sem consagrar Arão ao ofício.",
+      "verseRef": "Êxodo 28:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "a fim de consagrá-lo, para que me ministre",
+      "feedbackCorrect": "O propósito é consagrá-lo para ministrar no ofício.",
+      "feedbackWrong": {
+        "true": "Releia: a fim de consagrá-lo, para que ministre."
+      },
+      "hint": "Veja as frases com \"para\" e \"a fim de\".",
+      "learningObjective": "Compreender o propósito das vestes.",
+      "evidence": [
+        "Êxodo 28:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 28:3, toque a palavra que marca o fim das vestes para Arão.",
+      "verseRef": "Êxodo 28:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "consagrá-lo"
+        },
+        {
+          "id": "b",
+          "text": "hábeis"
+        },
+        {
+          "id": "c",
+          "text": "sabedoria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a fim de consagrá-lo",
+      "feedbackCorrect": "\"Consagrá-lo\" marca o propósito das vestes.",
+      "feedbackWrong": {
+        "b": "Hábeis são os artesãos; o fim é consagrar.",
+        "c": "Sabedoria enche os artesãos; o fim é consagrar."
+      },
+      "hint": "A frase é \"a fim de\".",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "Êxodo 28:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 28:12 liga Arão ao povo de Israel?",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ele leva os nomes deles para memória diante do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Ele esconde os nomes para o povo não saber"
+        },
+        {
+          "id": "c",
+          "text": "Ele troca os nomes por ouro no altar"
+        },
+        {
+          "id": "d",
+          "text": "Ele deixa os nomes no acampamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levará os nomes deles sobre ambos os ombros, para memória",
+      "feedbackCorrect": "Os nomes nos ombros ligam o sacerdote ao povo perante Deus.",
+      "feedbackWrong": {
+        "b": "É memória, não esconder.",
+        "c": "Não há troca por ouro.",
+        "d": "Os nomes vão nos ombros dele."
+      },
+      "hint": "O que ele leva sobre os ombros?",
+      "learningObjective": "Relacionar sacerdote e povo.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 28:1–12?",
+      "verseRef": "Êxodo 28:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado de Arão e filhos"
+        },
+        {
+          "id": "b",
+          "text": "Vestes sagradas e ofício"
+        },
+        {
+          "id": "c",
+          "text": "Nomes nos ombros perante o Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "para me oficiarem como sacerdotes",
+      "feedbackCorrect": "Chamado, vestes, depois os nomes nos ombros.",
+      "feedbackWrong": {
+        "default": "Comece pelo chamado; os nomes vêm no fim."
+      },
+      "hint": "Primeiro quem é chamado.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Êxodo 28:1–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 28:12, onde Arão leva os nomes de Israel?",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "ombros"
+        },
+        {
+          "id": "b",
+          "text": "pés"
+        },
+        {
+          "id": "c",
+          "text": "mãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sobre ambos os ombros",
+      "feedbackCorrect": "Os nomes ficam sobre ambos os ombros.",
+      "feedbackWrong": {
+        "b": "Não é nos pés.",
+        "c": "O texto diz ombros."
+      },
+      "hint": "Sobre ambos os ___.",
+      "learningObjective": "Lembrar onde vão os nomes.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 28:1 a Hebreus 5:1?",
+      "verseRef": "Êxodo 28:1",
+      "passageA": {
+        "ref": "Êxodo 28:1"
+      },
+      "passageB": {
+        "ref": "Hebreus 5:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacerdote em favor do povo"
+        },
+        {
+          "id": "b",
+          "text": "Rejeição de todo ofício"
+        },
+        {
+          "id": "c",
+          "text": "Culto sem mediador"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para me oficiarem como sacerdotes",
+      "feedbackCorrect": "Nos dois textos, o sacerdote age perante Deus em favor dos homens.",
+      "feedbackWrong": {
+        "b": "Há chamado ao ofício, não rejeição.",
+        "c": "O ofício é mediação, não ausência."
+      },
+      "hint": "Para quem o sacerdote oficia?",
+      "learningObjective": "Relacionar o chamado sacerdotal.",
+      "evidence": [
+        "Êxodo 28:1",
+        "Hebreus 5:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Êxodo 28:12, o sacerdote leva o povo em memória diante do Senhor, e não entra vazio.",
+      "verseRef": "Êxodo 28:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "para memória diante do SENHOR",
+      "feedbackCorrect": "Os nomes nos ombros mostram o povo lembrado perante Deus.",
+      "feedbackWrong": {
+        "false": "O texto marca memória dos nomes diante do Senhor."
+      },
+      "hint": "Para que servem as pedras?",
+      "learningObjective": "Interpretar a memória sacerdotal.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 28:12, toque o trecho que mostra perante quem fica a memória.",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "éfode"
+        },
+        {
+          "id": "c",
+          "text": "ombreiras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para memória diante do SENHOR",
+      "feedbackCorrect": "A memória é diante do SENHOR.",
+      "feedbackWrong": {
+        "b": "O éfode carrega; o perante é o SENHOR.",
+        "c": "Ombreiras são o lugar das pedras."
+      },
+      "hint": "Diante de quem?",
+      "learningObjective": "Sustentar perante quem está a memória.",
+      "evidence": [
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 28:1–12 sustenta sobre o sacerdócio?",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O sacerdote leva o povo em memória perante Deus"
+        },
+        {
+          "id": "b",
+          "text": "O sacerdote entra só por interesse pessoal"
+        },
+        {
+          "id": "c",
+          "text": "As pedras são enfeite sem relação com Israel"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer um se nomeia sacerdote sozinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "levará os nomes deles sobre ambos os ombros, para memória",
+      "feedbackCorrect": "Chamado, vestes e nomes apontam para o povo perante Deus.",
+      "feedbackWrong": {
+        "b": "Os nomes de Israel desmentem o interesse só pessoal.",
+        "c": "As pedras são de memória para Israel.",
+        "d": "Deus nomeia Arão e os filhos."
+      },
+      "hint": "Una chamado e pedras de memória.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Êxodo 28:1",
+        "Êxodo 28:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o sacerdócio de Arão à intercessão na Escritura?",
+      "verseRef": "Êxodo 28:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arão leva os nomes de Israel"
+        },
+        {
+          "id": "b",
+          "text": "O sacerdote age em favor dos homens"
+        },
+        {
+          "id": "c",
+          "text": "Cristo vive para interceder"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "levará os nomes deles",
+      "feedbackCorrect": "Nomes em Êxodo, ofício em Hebreus 5, intercessão em Hebreus 7.",
+      "feedbackWrong": {
+        "default": "Comece por Arão; a intercessão de Cristo vem por último."
+      },
+      "hint": "Siga da sombra à plenitude.",
+      "learningObjective": "Ver o fio da mediação na Escritura.",
+      "evidence": [
+        "Êxodo 28:12",
+        "Hebreus 5:1",
+        "Hebreus 7:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 28:1, qual ofício Arão e os filhos exercerão?",
+      "verseRef": "Êxodo 28:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdotes"
+        },
+        {
+          "id": "b",
+          "text": "soldados"
+        },
+        {
+          "id": "c",
+          "text": "reis"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como sacerdotes",
+      "feedbackCorrect": "O ofício é o de sacerdotes.",
+      "feedbackWrong": {
+        "b": "Não é soldado neste versículo.",
+        "c": "O texto diz sacerdotes."
+      },
+      "hint": "A frase final: oficiarem como ___.",
+      "learningObjective": "Lembrar o termo do ofício.",
+      "evidence": [
+        "Êxodo 28:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 28:12 a Hebreus 7:25?",
+      "verseRef": "Êxodo 28:12",
+      "passageA": {
+        "ref": "Êxodo 28:12"
+      },
+      "passageB": {
+        "ref": "Hebreus 7:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levar o povo perante Deus"
+        },
+        {
+          "id": "b",
+          "text": "Abandonar a intercessão"
+        },
+        {
+          "id": "c",
+          "text": "Esquecer os nomes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para memória diante do SENHOR",
+      "feedbackCorrect": "Arão leva nomes; Cristo intercede pelos que se aproximam.",
+      "feedbackWrong": {
+        "b": "Os dois textos afirmam presença perante Deus.",
+        "c": "É memória e intercessão, não esquecimento."
+      },
+      "hint": "O que une memória e intercessão?",
+      "learningObjective": "Ligar memória sacerdotal e intercessão.",
+      "evidence": [
+        "Êxodo 28:12",
+        "Hebreus 7:25"
+      ]
+    }
+  ]
+}

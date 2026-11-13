@@ -23,9 +23,12 @@ function seeded(str) {
   };
 }
 
-function shuffleQuestion(q) {
+function shuffleQuestion(q, salt = '') {
   if (!TYPES.has(q.type) || !Array.isArray(q.options) || q.options.length < 2) return false;
-  const rnd = seeded(q.id);
+  // Inclui texto da certa + salt opcional: alguns slugs fazem todos os
+  // Completar/Conectar caírem em "a" com semente só do id.
+  const right = (q.options || []).find((o) => o.id === q.correctOptionId);
+  const rnd = seeded(`${q.id}|${right?.text || ''}|${salt}`);
   const opts = [...q.options];
   for (let i = opts.length - 1; i > 0; i--) {
     const j = Math.floor(rnd() * (i + 1));
@@ -43,6 +46,29 @@ function shuffleQuestion(q) {
   return true;
 }
 
+function toCanonical(q) {
+  const correct = q.options.find((o) => o.id === q.correctOptionId);
+  const rest = q.options
+    .filter((o) => o.id !== q.correctOptionId)
+    .sort((a, b) => String(a.text).localeCompare(String(b.text)));
+  const canon = [correct, ...rest];
+  const back = new Map(canon.map((o, i) => [o.id, 'abcd'[i]]));
+  q.options = canon.map((o) => ({ ...o, id: back.get(o.id) }));
+  q.feedbackWrong = Object.fromEntries(
+    Object.entries(q.feedbackWrong || {}).map(([k, v]) => [back.get(k) ?? k, v]),
+  );
+  q.correctOptionId = 'a';
+  q.correctAnswer = 'a';
+}
+
+function shuffleFileQuestions(questions, salt = '') {
+  for (const q of questions) {
+    if (!TYPES.has(q.type)) continue;
+    toCanonical(q);
+    shuffleQuestion(q, salt);
+  }
+}
+
 const args = process.argv.slice(2).filter((a, i, all) => !a.startsWith('--') && all[i - 1] !== '--trail');
 const files = args.length
   ? args.map((a) => (existsSync(a) ? resolve(a) : join(pilotDir, a)))
@@ -51,20 +77,16 @@ const files = args.length
 const positions = {};
 for (const f of files) {
   const data = JSON.parse(readFileSync(f, 'utf8'));
-  // Idempotente: parte sempre da ordem canônica (certa primeiro) se já embaralhado antes.
+  // Idempotente + evita cena com Completar/Conectar todos em "a" (validação --final).
+  let salt = '';
+  for (let attempt = 0; attempt < 12; attempt++) {
+    salt = attempt === 0 ? '' : `retry${attempt}`;
+    shuffleFileQuestions(data.questions, salt);
+    const shown = data.questions.filter((q) => q.type === 'complete' || q.type === 'connect');
+    if (shown.length < 4 || !shown.every((q) => q.correctOptionId === 'a')) break;
+  }
   for (const q of data.questions) {
     if (!TYPES.has(q.type)) continue;
-    const correct = q.options.find((o) => o.id === q.correctOptionId);
-    const rest = q.options
-      .filter((o) => o.id !== q.correctOptionId)
-      .sort((a, b) => String(a.text).localeCompare(String(b.text)));
-    const canon = [correct, ...rest];
-    const back = new Map(canon.map((o, i) => [o.id, 'abcd'[i]]));
-    q.options = canon.map((o) => ({ ...o, id: back.get(o.id) }));
-    q.feedbackWrong = Object.fromEntries(Object.entries(q.feedbackWrong || {}).map(([k, v]) => [back.get(k) ?? k, v]));
-    q.correctOptionId = 'a';
-    q.correctAnswer = 'a';
-    shuffleQuestion(q);
     positions[q.correctOptionId] = (positions[q.correctOptionId] || 0) + 1;
   }
   writeFileSync(f, `${JSON.stringify(data, null, 2)}\n`);

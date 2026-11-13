@@ -1,0 +1,33 @@
+{
+  "slug": "3joao-cap",
+  "prefix": "j3c",
+  "book": "3 João",
+  "chapters": 1,
+  "title": "3 João",
+  "description": "3 João capítulo a capítulo: hospitalidade, verdade e o bem na igreja.",
+  "icon": "💌",
+  "color": "#26A69A",
+  "order": 76,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["cartas-joao"],
+  "modules": [
+    {
+      "title": "Hospitalidade e verdade · cap. 1",
+      "scenes": [
+        {
+          "ref": "3 João 1:5–11",
+          "title": "Cooperadores da verdade",
+          "intro": "João louva Gaio por acolher os irmãos e confronta quem ama ser o primeiro.",
+          "insight": "Somos cooperadores da verdade quando acolhemos; não imiteis o mal, mas o bem.",
+          "objective": "Cooperar com a verdade"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Hospitalidade e verdade",
+        "intro": "Revise a hospitalidade que coopera com a verdade e a recusa do mal.",
+        "insight": "Quem faz o bem é de Deus"
+      }
+    }
+  ]
+}

@@ -1,0 +1,197 @@
+{
+  "slug": "juizes-cap",
+  "prefix": "jzc",
+  "book": "Juízes",
+  "chapters": 21,
+  "title": "Juízes",
+  "description": "Juízes capítulo a capítulo: o ciclo de queda, clamor e livramento no tempo sem rei.",
+  "icon": "🔨",
+  "color": "#7A6B4F",
+  "order": 11,
+  "realm": "antigo-testamento",
+  "category": "historicos-at",
+  "avoidTrails": ["juizes"],
+  "modules": [
+    {
+      "title": "Fracasso e Débora · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "Juízes 1:19–28",
+          "title": "Não expulsaram todos",
+          "intro": "Judá vence nas montanhas, mas o vale fica com carros de ferro; outras tribos também deixam povos.",
+          "insight": "O Senhor esteve com Judá, mas o povo não completou a expulsão dos moradores.",
+          "objective": "Não deixar a tarefa pela metade"
+        },
+        {
+          "ref": "Juízes 2:11–15",
+          "title": "Fizeram o que era mau",
+          "intro": "Israel serve aos baalins, deixa o Senhor e cai nas mãos dos saqueadores.",
+          "insight": "Quando deixam o Senhor, a mão dele se volta contra eles, como ele tinha dito.",
+          "objective": "Não abandonar o Senhor"
+        },
+        {
+          "ref": "Juízes 3:12–23",
+          "title": "Eúde e Eglom",
+          "intro": "Israel volta ao mal; o Senhor levanta Eúde, que leva o presente ao rei gordo de Moabe.",
+          "insight": "Com a espada na mão esquerda, Eúde livra Israel: o Senhor dá o livrador improvável.",
+          "objective": "O Senhor levanta livrador"
+        },
+        {
+          "ref": "Juízes 4:12–24",
+          "title": "Baraque e Sísera",
+          "intro": "Sísera sobe com novecentos carros; Baraque desce do Tabor, e o Senhor derrota o exército.",
+          "insight": "O Senhor põe em fuga Sísera diante de Baraque; Jael completa a vitória na tenda.",
+          "objective": "Confiar na batalha do Senhor"
+        },
+        {
+          "ref": "Juízes 5:1–11",
+          "title": "Cântico de Débora",
+          "intro": "Débora e Baraque cantam o dia em que os líderes e o povo se ofereceram de bom grado.",
+          "insight": "Bendizei o Senhor: quando o povo se oferece, há livramento e justiça nas portas.",
+          "objective": "Louvar o livramento"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Fracasso e Débora",
+        "intro": "Revise a conquista incompleta, o ciclo do mal, Eúde, a batalha e o cântico.",
+        "insight": "O Senhor livra quando o povo clama e se oferece"
+      }
+    },
+    {
+      "title": "Gideão e Abimeleque · cap. 6–9",
+      "scenes": [
+        {
+          "ref": "Juízes 6:11–24",
+          "title": "Gideão no lagar",
+          "intro": "O anjo do Senhor encontra Gideão malhando trigo escondido e o chama de homem valente.",
+          "insight": "O Senhor está com Gideão: o menor do clã é enviado a livrar Israel de Midiã.",
+          "objective": "Ouvir o chamado do Senhor"
+        },
+        {
+          "ref": "Juízes 7:3–14",
+          "title": "Trezentos homens",
+          "intro": "O medo reduz o exército; depois a água separa os que lambeu como cão dos demais.",
+          "insight": "Com poucos, o Senhor mostra que a vitória é dele, não do número de Israel.",
+          "objective": "A vitória é do Senhor"
+        },
+        {
+          "ref": "Juízes 8:22–28",
+          "title": "Nem eu nem meu filho",
+          "intro": "Israel pede que Gideão reine; ele recusa, mas pede brincos e faz um éfode.",
+          "insight": "Gideão diz que o Senhor reinará; o éfode, porém, vira laço para ele e sua casa.",
+          "objective": "O Senhor é quem reina"
+        },
+        {
+          "ref": "Juízes 9:7–15",
+          "title": "Parábola das árvores",
+          "intro": "Jotão clama do Gerizim: as árvores pedem rei; a oliveira, a figueira e a videira recusam.",
+          "insight": "Só o espinheiro aceita reinado: quem busca poder sem fruto traz fogo sobre si.",
+          "objective": "Rejeitar o rei espinho"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Gideão e Abimeleque",
+        "intro": "Revise o chamado de Gideão, os trezentos, a recusa do trono e a parábola de Jotão.",
+        "insight": "O Senhor livra com poucos; reinado humano sem fruto destrói"
+      }
+    },
+    {
+      "title": "Jefté e Sansão · cap. 10–16",
+      "scenes": [
+        {
+          "ref": "Juízes 11:29–40",
+          "chapters": "10–11",
+          "title": "O voto de Jefté",
+          "intro": "O Espírito vem sobre Jefté; ele faz um voto e, após a vitória, cumpre o que prometeu.",
+          "insight": "Jefté vence Amom, mas o voto precipitado traz dor à sua única filha.",
+          "objective": "Cuidado com votos precipitados"
+        },
+        {
+          "ref": "Juízes 12:1–7",
+          "title": "Efraim contra Jefté",
+          "intro": "Efraim reclama de não ter sido chamado; a disputa termina em guerra entre irmãos.",
+          "insight": "Orgulho tribal mata milhares: o livramento vira briga interna.",
+          "objective": "Não guerrear contra irmãos"
+        },
+        {
+          "ref": "Juízes 13:2–14",
+          "title": "Anúncio a Manoá",
+          "intro": "O anjo do Senhor aparece à mulher estéril e anuncia um filho nazireu desde o ventre.",
+          "insight": "Sansão será nazireu do Senhor: a mãe guarda o voto antes mesmo do nascimento.",
+          "objective": "Guardar o que o Senhor pede"
+        },
+        {
+          "ref": "Juízes 14:5–14",
+          "title": "Leão e enigma",
+          "intro": "Sansão despedaça um leão; depois acha mel nele e propõe um enigma no banquete.",
+          "insight": "O Espírito o impulsiona, mas o enigma e o segredo já mostram o risco da vida dele.",
+          "objective": "Força sem sabedoria falha"
+        },
+        {
+          "ref": "Juízes 15:9–20",
+          "title": "Queixada de jumento",
+          "intro": "Os filisteus acampam em Judá; Sansão é entregue e, com uma queixada, fere mil.",
+          "insight": "O Senhor dá vitória com arma improvisada e depois água quando Sansão tem sede.",
+          "objective": "O Senhor ainda livra"
+        },
+        {
+          "ref": "Juízes 16:15–24",
+          "title": "Dalila insiste",
+          "intro": "Dalila cobra o amor de Sansão até ele revelar o segredo do nazireado.",
+          "insight": "Quando o cabelo é cortado, a força o deixa; os filisteus o prendem e louvam seu deus.",
+          "objective": "Não entregar o consagrado"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Jefté e Sansão",
+        "intro": "Revise o voto de Jefté, a briga com Efraim, o nascimento, o leão, a queixada e Dalila.",
+        "insight": "Força e voto sem fidelidade custam caro ao povo e ao livrador"
+      }
+    },
+    {
+      "title": "Sem rei · cap. 17–21",
+      "scenes": [
+        {
+          "ref": "Juízes 17:10–13",
+          "title": "Sacerdote particular",
+          "intro": "Mica contrata um levita para ser pai e sacerdote em sua casa, com prata e roupa.",
+          "insight": "Mica acha que o Senhor lhe fará bem porque tem um levita — religião sob medida.",
+          "objective": "Não fabricar a própria religião"
+        },
+        {
+          "ref": "Juízes 18:1–10",
+          "title": "Danitas buscam terra",
+          "intro": "Sem herança completa, a tribo de Dã envia espias e acha uma terra quieta e boa.",
+          "insight": "Sem rei, cada um busca o seu caminho: a conquista vira oportunismo.",
+          "objective": "Buscar herança com justiça"
+        },
+        {
+          "ref": "Juízes 19:22–30",
+          "title": "Crime em Gibeá",
+          "intro": "Homens de Belial cercam a casa; a concubina é abusada e morta; o levita a envia em pedaços.",
+          "insight": "A violência em Gibeá choca Israel: algo assim ainda não se viu desde o Egito.",
+          "objective": "Confrontar o mal coletivo"
+        },
+        {
+          "ref": "Juízes 20:18–28",
+          "title": "Guerra contra Benjamim",
+          "intro": "Israel consulta o Senhor e sobe contra Benjamim; duas vezes cai, na terceira chora e espera.",
+          "insight": "Mesmo na disciplina, o Senhor é consultado: a justiça entre irmãos dói.",
+          "objective": "Consultar antes de lutar"
+        },
+        {
+          "ref": "Juízes 21:1–12",
+          "title": "Juramento em Mispá",
+          "intro": "Israel jurou não dar filhas a Benjamim; depois chora a tribo quase apagada e busca saída.",
+          "insight": "O juramento e a guerra deixam um povo partido: o remendo também é violento.",
+          "objective": "Pesar as consequências"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Sem rei",
+        "intro": "Revise o sacerdote de Mica, os danitas, Gibeá, a guerra e o juramento.",
+        "insight": "Sem o Senhor como rei, cada um faz o que parece certo e o mal se espalha"
+      }
+    }
+  ]
+}

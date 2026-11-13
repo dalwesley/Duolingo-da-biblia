@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Oséias 1:6–11",
+    "passages": [
+      {
+        "ref": "Oséias 1:6–11"
+      }
+    ],
+    "context": "Oséias recebe nomes para os filhos que anunciam juízo sobre Israel. Ainda assim, o texto vira para promessa: onde se disse Não-meu-povo, se dirá filhos do Deus vivo.",
+    "keyword": "povo",
+    "keywordGloss": "O vínculo quebrado (Não-meu-Povo) que Deus promete restaurar.",
+    "focusQuestion": "Onde você precisa ouvir de novo que Deus ainda chama de filhos?",
+    "reflectionPrompts": [
+      "Desfavorecida",
+      "Não-meu-Povo",
+      "Filhos do Deus vivo"
+    ],
+    "facts": [
+      {
+        "text": "A filha se chama Desfavorecida; o Senhor não terá mais compaixão de Israel.",
+        "evidenceRef": "Oséias 1:6",
+        "evidenceSpan": "Chame o nome dela de Desfavorecida"
+      },
+      {
+        "text": "Da casa de Judá o Senhor se compadecerá e os salvará.",
+        "evidenceRef": "Oséias 1:7",
+        "evidenceSpan": "da casa de Judá me compadecerei e os salvarei"
+      },
+      {
+        "text": "O filho se chama Não-meu-Povo.",
+        "evidenceRef": "Oséias 1:9",
+        "evidenceSpan": "Põe-lhe o nome de Não-meu-Povo"
+      },
+      {
+        "text": "Todavia, o número de Israel será como a areia do mar.",
+        "evidenceRef": "Oséias 1:10",
+        "evidenceSpan": "o número dos filhos de Israel será como a areia do mar"
+      },
+      {
+        "text": "Onde se dizia Não sois meu povo, se dirá filhos do Deus vivo.",
+        "evidenceRef": "Oséias 1:10",
+        "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo"
+      },
+      {
+        "text": "Judá e Israel se reunirão sob uma só cabeça.",
+        "evidenceRef": "Oséias 1:11",
+        "evidenceSpan": "se reunirão e constituirão uma só cabeça"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Desfavorecida",
+        "gloss": "Nome da filha que anuncia o fim da compaixão sobre Israel."
+      },
+      {
+        "term": "Não-meu-Povo",
+        "gloss": "Nome do filho que marca a ruptura da aliança."
+      },
+      {
+        "term": "Todavia",
+        "gloss": "Marcador que vira o juízo para a promessa."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Nome Desfavorecida e juízo sobre Israel",
+        "evidenceRef": "Oséias 1:6"
+      },
+      {
+        "label": "Compaixão sobre Judá",
+        "evidenceRef": "Oséias 1:7"
+      },
+      {
+        "label": "Nome Não-meu-Povo",
+        "evidenceRef": "Oséias 1:8–9"
+      },
+      {
+        "label": "Promessa: filhos do Deus vivo e reunião",
+        "evidenceRef": "Oséias 1:10–11"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não há mais compaixão por Israel; mas Judá será salva.",
+        "marker": "Mas",
+        "evidenceRef": "Oséias 1:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Juízo dos nomes; todavia vem a promessa da areia do mar.",
+        "marker": "Todavia",
+        "evidenceRef": "Oséias 1:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "No lugar da rejeição, se dirá filhos do Deus vivo.",
+        "marker": null,
+        "evidenceRef": "Oséias 1:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Romanos 9:25–26",
+        "bridge": "Não-meu-povo tornados povo"
+      },
+      {
+        "ref": "1 Pedro 2:10",
+        "bridge": "Outrora não povo"
+      },
+      {
+        "ref": "Gênesis 22:17",
+        "bridge": "Descendência como areia"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os nomes só são curiosidade familiar, sem juízo.",
+        "why": "1:6 e 1:9 explicam o sentido: sem compaixão e sem ser povo."
+      },
+      {
+        "text": "Não há esperança depois dos nomes de juízo.",
+        "why": "1:10–11: Todavia… filhos do Deus vivo e reunião."
+      },
+      {
+        "text": "Judá também fica sem salvação.",
+        "why": "1:7: da casa de Judá me compadecerei e os salvarei."
+      }
+    ],
+    "centralInsight": "Onde se disse Não-meu-povo, se dirá Filhos do Deus vivo.",
+    "anchorQuestion": "Segundo Oséias 1:10, o que se dirá no lugar de \"não sois meu povo\"?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Oséias 1:9, o filho recebe o nome Não-meu-Povo.",
+      "verseRef": "Oséias 1:9",
+      "correctOptionId": "true",
+      "evidenceSpan": "Põe-lhe o nome de Não-meu-Povo",
+      "feedbackCorrect": "O nome anuncia: vós não sois o meu povo.",
+      "feedbackWrong": {
+        "false": "Releia 1:9."
+      },
+      "hint": "Veja o nome do filho.",
+      "learningObjective": "Observar o nome de juízo.",
+      "evidence": [
+        "Oséias 1:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Oséias 1:6, toque o nome da filha.",
+      "verseRef": "Oséias 1:6",
+      "evidenceSpan": "Chame o nome dela de Desfavorecida",
+      "feedbackCorrect": "O nome é Desfavorecida.",
+      "hint": "Procure o nome ordenado.",
+      "learningObjective": "Identificar o nome da filha.",
+      "evidence": [
+        "Oséias 1:6"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Desfavorecida"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "filha"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Israel é o alvo do juízo.",
+        "c": "Filha descreve o nascimento, não o nome."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Oséias 1:10, o que se dirá no lugar de \"não sois meu povo\"?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Filhos do Deus vivo.",
+      "hint": "Veja a troca de declaração.",
+      "learningObjective": "Observar a promessa.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Filhos do Deus vivo"
+        },
+        {
+          "id": "b",
+          "text": "Povo sem esperança"
+        },
+        {
+          "id": "c",
+          "text": "Nação sem número"
+        },
+        {
+          "id": "d",
+          "text": "Casa sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há promessa, não desespero.",
+        "c": "Há número como areia.",
+        "d": "Se dirá filhos do Deus vivo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Oséias 1:10 na ordem do texto.",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "Todavia, o número dos filhos de Israel será como a areia do mar",
+      "feedbackCorrect": "Todavia a areia; no lugar da rejeição; filhos do Deus vivo.",
+      "hint": "Comece por Todavia.",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia, o número dos filhos de Israel será como a areia do mar"
+        },
+        {
+          "id": "b",
+          "text": "no lugar onde se dizia: Vós não sois meu povo"
+        },
+        {
+          "id": "c",
+          "text": "se dirá: Vós sois filhos do Deus vivo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece por Todavia."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Oséias 1:7, da casa de quem o Senhor se compadecerá?",
+      "verseRef": "Oséias 1:7",
+      "evidenceSpan": "da casa de Judá me compadecerei",
+      "feedbackCorrect": "Da casa de Judá.",
+      "hint": "É a casa nomeada.",
+      "learningObjective": "Lembrar o alvo da compaixão.",
+      "evidence": [
+        "Oséias 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "Edom"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é Egito.",
+        "c": "Não é Edom."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Oséias 1:10 comunica que se liga a este contexto?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Os nomes de juízo não são a última palavra.",
+      "hint": "Compare juízo e promessa.",
+      "learningObjective": "Ligar os nomes à restauração.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "passageA": {
+        "ref": "Oséias 1:10"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Nomes de juízo sobre Israel; então a promessa de filhos do Deus vivo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo virado em restauração"
+        },
+        {
+          "id": "b",
+          "text": "Fim eterno sem esperança"
+        },
+        {
+          "id": "c",
+          "text": "Salvação só pelo arco"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há Todavia e promessa.",
+        "c": "1:7: não pelo arco."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Oséias 1:7, o Senhor salvará Judá pelo arco e pela espada.",
+      "verseRef": "Oséias 1:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois não os salvarei pelo arco, nem pela espada, nem pela guerra",
+      "feedbackCorrect": "Ele salva, mas não pelo arco nem pela espada.",
+      "feedbackWrong": {
+        "true": "Releia o fim de 1:7."
+      },
+      "hint": "Veja o meio da salvação.",
+      "learningObjective": "Compreender a salvação de Judá.",
+      "evidence": [
+        "Oséias 1:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Oséias 1:10, toque a palavra que marca a virada para a promessa.",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "Todavia, o número dos filhos de Israel",
+      "feedbackCorrect": "\"Todavia\" vira o juízo para a promessa.",
+      "hint": "Procure o marcador no início.",
+      "learningObjective": "Reconhecer o contraste.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Todavia"
+        },
+        {
+          "id": "b",
+          "text": "areia"
+        },
+        {
+          "id": "c",
+          "text": "mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É a comparação.",
+        "c": "É a comparação."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Oséias 1:6–10 relaciona juízo e promessa?",
+      "verseRef": "Oséias 1:6–10",
+      "evidenceSpan": "Todavia, o número dos filhos de Israel será como a areia do mar",
+      "feedbackCorrect": "Nomes de juízo; Todavia vem a restauração.",
+      "hint": "Compare 1:6–9 com 1:10.",
+      "learningObjective": "Relacionar juízo e esperança.",
+      "evidence": [
+        "Oséias 1:6",
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo nos nomes e promessa depois do Todavia"
+        },
+        {
+          "id": "b",
+          "text": "Só juízo sem nenhuma virada"
+        },
+        {
+          "id": "c",
+          "text": "Só promessa sem juízo"
+        },
+        {
+          "id": "d",
+          "text": "Judá também fica sem compaixão"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há Todavia.",
+        "c": "Há nomes de juízo.",
+        "d": "1:7: Judá recebe compaixão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a cena em Oséias 1:6–11?",
+      "verseRef": "Oséias 1:6–11",
+      "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Juízo nos nomes, compaixão a Judá, promessa e reunião.",
+      "hint": "Comece pela Desfavorecida.",
+      "learningObjective": "Seguir o movimento.",
+      "evidence": [
+        "Oséias 1:6–11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Nome Desfavorecida e juízo sobre Israel"
+        },
+        {
+          "id": "b",
+          "text": "Compaixão a Judá e nome Não-meu-Povo"
+        },
+        {
+          "id": "c",
+          "text": "Promessa e reunião sob uma cabeça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo juízo; a reunião fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Oséias 1:7, que palavra marca o contraste com Israel?",
+      "verseRef": "Oséias 1:7",
+      "evidenceSpan": "Mas da casa de Judá me compadecerei",
+      "feedbackCorrect": "\"Mas\".",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador.",
+      "evidence": [
+        "Oséias 1:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "Assim"
+        },
+        {
+          "id": "c",
+          "text": "Logo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Oséias 1:10 a Romanos 9:25–26?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Paulo cita a virada de Não-meu-povo para povo.",
+      "hint": "Compare a restauração do povo.",
+      "learningObjective": "Relacionar Oséias e Romanos.",
+      "evidence": [
+        "Oséias 1:10",
+        "Romanos 9:25–26"
+      ],
+      "passageA": {
+        "ref": "Oséias 1:10"
+      },
+      "passageB": {
+        "ref": "Romanos 9:25–26"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não-meu-povo tornados povo"
+        },
+        {
+          "id": "b",
+          "text": "Rejeição sem volta"
+        },
+        {
+          "id": "c",
+          "text": "Salvação pelo arco"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há restauração.",
+        "c": "Não é pelo arco."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Oséias 1:6–11, o juízo dos nomes é a última palavra sobre Israel.",
+      "verseRef": "Oséias 1:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Todavia, o número dos filhos de Israel será como a areia do mar",
+      "feedbackCorrect": "O Todavia abre esperança: filhos do Deus vivo.",
+      "feedbackWrong": {
+        "true": "Releia 1:10."
+      },
+      "hint": "Veja a virada após os nomes.",
+      "learningObjective": "Interpretar juízo e esperança.",
+      "evidence": [
+        "Oséias 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Oséias 1:10, toque o trecho da nova declaração.",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "filhos do Deus vivo",
+      "feedbackCorrect": "Se dirá: filhos do Deus vivo.",
+      "hint": "Procure o que se dirá.",
+      "learningObjective": "Sustentar a restauração.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus vivo"
+        },
+        {
+          "id": "b",
+          "text": "areia"
+        },
+        {
+          "id": "c",
+          "text": "mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Areia é a comparação do número.",
+        "c": "Mar é a comparação do número."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Oséias 1:6–11 sustenta sobre juízo e restauração?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Deus anuncia juízo real e, ainda assim, restauração.",
+      "hint": "Compare cada opção com 1:6–11.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Juízo real seguido de restauração prometida"
+        },
+        {
+          "id": "b",
+          "text": "Só juízo sem esperança"
+        },
+        {
+          "id": "c",
+          "text": "Os nomes não têm sentido"
+        },
+        {
+          "id": "d",
+          "text": "Salvação só por armas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há Todavia.",
+        "c": "Os nomes têm explicação.",
+        "d": "1:7 nega salvação pelo arco."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio de Não-meu-povo a povo de Deus?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "se dirá: Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Oséias anuncia; Paulo cita; Pedro lembra.",
+      "hint": "Parta de Oséias.",
+      "learningObjective": "Ver o fio no NT.",
+      "evidence": [
+        "Oséias 1:10",
+        "Romanos 9:25–26",
+        "1 Pedro 2:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Oséias: filhos do Deus vivo"
+        },
+        {
+          "id": "b",
+          "text": "Paulo: Não-meu-povo tornados povo"
+        },
+        {
+          "id": "c",
+          "text": "Pedro: outrora não povo"
+        }
+      ],
+      "correctOrder": "a",
+      "feedbackWrong": {
+        "default": "Siga: Oséias 1, Romanos 9 e 1 Pedro 2."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Oséias 1:10, que palavra completa: Vós sois filhos do Deus ___?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "filhos do Deus vivo",
+      "feedbackCorrect": "Filhos do Deus vivo.",
+      "hint": "É o adjetivo de Deus no fim da declaração.",
+      "learningObjective": "Lembrar o termo-chave.",
+      "evidence": [
+        "Oséias 1:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "vivo"
+        },
+        {
+          "id": "b",
+          "text": "morto"
+        },
+        {
+          "id": "c",
+          "text": "distante"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz vivo.",
+        "c": "O texto diz vivo."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Oséias 1:10 a 1 Pedro 2:10?",
+      "verseRef": "Oséias 1:10",
+      "evidenceSpan": "Vós sois filhos do Deus vivo",
+      "feedbackCorrect": "Nos dois textos, quem não era povo torna-se povo de Deus.",
+      "hint": "Compare a identidade restaurada.",
+      "learningObjective": "Ligar Oséias e Pedro.",
+      "evidence": [
+        "Oséias 1:10",
+        "1 Pedro 2:10"
+      ],
+      "passageA": {
+        "ref": "Oséias 1:10"
+      },
+      "passageB": {
+        "ref": "1 Pedro 2:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Outrora não povo"
+        },
+        {
+          "id": "b",
+          "text": "Rejeição final"
+        },
+        {
+          "id": "c",
+          "text": "Povo sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há restauração.",
+        "c": "Há Deus vivo."
+      }
+    }
+  ]
+}

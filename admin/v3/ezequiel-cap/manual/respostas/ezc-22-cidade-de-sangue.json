@@ -1,0 +1,452 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 22:1–12",
+    "passages": [{ "ref": "Ezequiel 22:1–12" }],
+    "context": "O Senhor manda julgar a cidade sanguinária: sangue, ídolos, príncipes violentos e esquecimento de Deus.",
+    "keyword": "sangue",
+    "keywordGloss": "Violência derramada na cidade; marca a culpa dos príncipes e do povo.",
+    "focusQuestion": "Na sua cidade, o poder serve ao próximo ou derrama o fraco?",
+    "reflectionPrompts": ["A cidade sanguinária", "Príncipes e sangue", "Esquecimento de Deus"],
+    "facts": [
+      {
+        "text": "O Filho do homem deve fazer a cidade conhecer suas abominações.",
+        "evidenceRef": "Ezequiel 22:2",
+        "evidenceSpan": "acaso julgarás a cidade sanguinária? Faze-lhe conhecer, pois, todas as suas abominações"
+      },
+      {
+        "text": "A cidade derrama sangue e faz ídolos para se contaminar.",
+        "evidenceRef": "Ezequiel 22:3",
+        "evidenceSpan": "Ai da cidade que derrama sangue no meio dela"
+      },
+      {
+        "text": "Os príncipes de Israel, cada um segundo seu poder, intentam derramar sangue.",
+        "evidenceRef": "Ezequiel 22:6",
+        "evidenceSpan": "Os príncipes de Israel, cada um segundo seu poder, não intentam outra coisa senão derramar sangue"
+      },
+      {
+        "text": "Desprezaram pai e mãe, oprimiram estrangeiro, órfão e viúva.",
+        "evidenceRef": "Ezequiel 22:7",
+        "evidenceSpan": "Desprezam o pai e a mãe no meio de ti; praticam extorsões contra o estrangeiro"
+      },
+      {
+        "text": "A cidade se esqueceu do Senhor Deus.",
+        "evidenceRef": "Ezequiel 22:12",
+        "evidenceSpan": "mas de mim tu te esqueceste, diz o Senhor Deus"
+      }
+    ],
+    "keyTerms": [
+      { "term": "sangue", "gloss": "Violência que marca a culpa da cidade e dos príncipes." },
+      { "term": "abominações", "gloss": "Práticas que o profeta deve fazer a cidade conhecer." },
+      { "term": "príncipes", "gloss": "Líderes que usam o poder para derramar sangue." }
+    ],
+    "structure": [
+      { "label": "Ordem de julgar a cidade sanguinária", "evidenceRef": "Ezequiel 22:1–2" },
+      { "label": "Sangue, ídolos e opróbrio", "evidenceRef": "Ezequiel 22:3–5" },
+      { "label": "Príncipes e injustiças sociais", "evidenceRef": "Ezequiel 22:6–8" },
+      { "label": "Calúnia, impureza e esquecimento de Deus", "evidenceRef": "Ezequiel 22:9–12" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Pelo sangue derramado e pelos ídolos, a cidade se tornou culpada e contaminada.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 22:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Exploram o próximo com avareza, mas do Senhor se esqueceram.",
+        "marker": "mas",
+        "evidenceRef": "Ezequiel 22:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso o Senhor a fez objeto de opróbrio entre as nações.",
+        "marker": "por isso",
+        "evidenceRef": "Ezequiel 22:4"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Isaías 1:15", "bridge": "Mãos cheias de sangue" },
+      { "ref": "Miquéias 3:1–3", "bridge": "Príncipes que oprimem" },
+      { "ref": "Mateus 23:35", "bridge": "Sangue justo na cidade" }
+    ],
+    "misreadings": [
+      {
+        "text": "Só o povo comum peca; os príncipes são inocentes.",
+        "why": "Os príncipes, cada um segundo seu poder, intentam derramar sangue."
+      },
+      {
+        "text": "A cidade lembra o Senhor enquanto oprime o fraco.",
+        "why": "O fechamento diz: de mim tu te esqueceste."
+      },
+      {
+        "text": "O problema é só ritual; não há injustiça social.",
+        "why": "Há extorsão do estrangeiro e injustiça a órfão e viúva."
+      }
+    ],
+    "centralInsight": "A cidade derrama sangue, oprime o fraco e se esquece de Deus.",
+    "anchorQuestion": "O que os príncipes intentam em Ezequiel 22:6?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 22:6, os príncipes de Israel intentam derramar sangue segundo o seu poder.",
+      "verseRef": "Ezequiel 22:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "não intentam outra coisa senão derramar sangue",
+      "feedbackCorrect": "O poder dos príncipes está a serviço do sangue.",
+      "feedbackWrong": { "false": "O versículo diz que intentam derramar sangue." },
+      "hint": "Veja o que eles intentam.",
+      "learningObjective": "Identificar a acusação aos príncipes.",
+      "evidence": ["Ezequiel 22:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 22:2, toque o que o profeta deve julgar.",
+      "verseRef": "Ezequiel 22:2",
+      "options": [
+        { "id": "a", "text": "cidade sanguinária" },
+        { "id": "b", "text": "filho do homem" },
+        { "id": "c", "text": "suas abominações" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "acaso julgarás a cidade sanguinária?",
+      "feedbackCorrect": "O objeto do julgamento é a cidade sanguinária.",
+      "feedbackWrong": {
+        "b": "É o vocativo do profeta, não o objeto julgado.",
+        "c": "É o que se deve fazer conhecer, não o nome da cidade."
+      },
+      "hint": "Procure o que vem depois de \"julgarás\".",
+      "learningObjective": "Identificar a cidade julgada.",
+      "evidence": ["Ezequiel 22:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 22:12, de quem a cidade se esqueceu?",
+      "verseRef": "Ezequiel 22:12",
+      "options": [
+        { "id": "a", "text": "Do Senhor Deus" },
+        { "id": "b", "text": "Dos príncipes de Israel" },
+        { "id": "c", "text": "Das nações vizinhas" },
+        { "id": "d", "text": "Dos ídolos que fabricou" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas de mim tu te esqueceste, diz o Senhor Deus",
+      "feedbackCorrect": "O fechamento da lista é o esquecimento do Senhor.",
+      "feedbackWrong": {
+        "b": "Os príncipes são acusados, não esquecidos aqui.",
+        "c": "As nações zombam; o esquecido é o Senhor.",
+        "d": "Ela fabricou ídolos; esqueceu-se do Senhor."
+      },
+      "hint": "Leia a cláusula depois de \"mas\".",
+      "learningObjective": "Reconhecer o esquecimento de Deus.",
+      "evidence": ["Ezequiel 22:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 22:7 na ordem do texto.",
+      "verseRef": "Ezequiel 22:7",
+      "options": [
+        { "id": "a", "text": "Desprezam o pai e a mãe no meio de ti" },
+        { "id": "b", "text": "praticam extorsões contra o estrangeiro que está no meio de ti" },
+        { "id": "c", "text": "são injustos para com o órfão e a viúva" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Desprezam o pai e a mãe no meio de ti; praticam extorsões contra o estrangeiro",
+      "feedbackCorrect": "Família, estrangeiro, órfão e viúva nesta ordem.",
+      "feedbackWrong": { "default": "Comece por pai e mãe; feche em órfão e viúva." },
+      "hint": "Siga a lista de injustiças no versículo.",
+      "learningObjective": "Reconhecer a sequência das injustiças.",
+      "evidence": ["Ezequiel 22:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 22:3, Ai da cidade que derrama ___ no meio dela.",
+      "verseRef": "Ezequiel 22:3",
+      "options": [
+        { "id": "a", "text": "sangue" },
+        { "id": "b", "text": "óleo" },
+        { "id": "c", "text": "incenso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ai da cidade que derrama sangue no meio dela",
+      "feedbackCorrect": "A palavra do ai é sangue.",
+      "feedbackWrong": {
+        "b": "Não é óleo: é sangue.",
+        "c": "Não é incenso: é sangue."
+      },
+      "hint": "Veja o que a cidade derrama.",
+      "learningObjective": "Lembrar a marca da cidade.",
+      "evidence": ["Ezequiel 22:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 22:6 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 22:6",
+      "passageA": { "ref": "Ezequiel 22:6" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A cidade sanguinária é julgada: o poder dos príncipes serve ao derramamento de sangue."
+      },
+      "options": [
+        { "id": "a", "text": "Príncipes derramam sangue" },
+        { "id": "b", "text": "Sábados profanados" },
+        { "id": "c", "text": "Nora contaminada" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não intentam outra coisa senão derramar sangue",
+      "feedbackCorrect": "O versículo resume o poder sangrento do contexto.",
+      "feedbackWrong": {
+        "b": "Os sábados aparecem em 22:8; o núcleo aqui são os príncipes.",
+        "c": "Isso está em 22:11, não neste elo."
+      },
+      "hint": "Compare a acusação aos príncipes com o tema.",
+      "learningObjective": "Ligar os príncipes ao contexto da cidade.",
+      "evidence": ["Ezequiel 22:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 22:12, a cidade lembrou o Senhor enquanto explorava o próximo.",
+      "verseRef": "Ezequiel 22:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas de mim tu te esqueceste, diz o Senhor Deus",
+      "feedbackCorrect": "O contraste fecha: ela se esqueceu do Senhor.",
+      "feedbackWrong": { "true": "O texto diz que dela se esqueceu do Senhor." },
+      "hint": "Veja a cláusula depois de \"mas\".",
+      "learningObjective": "Perceber o contraste do esquecimento.",
+      "evidence": ["Ezequiel 22:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 22:12, toque a palavra que marca o contraste com a avareza.",
+      "verseRef": "Ezequiel 22:12",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "juros" },
+        { "id": "c", "text": "avareza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas de mim tu te esqueceste",
+      "feedbackCorrect": "\"Mas\" introduz o esquecimento de Deus.",
+      "feedbackWrong": {
+        "b": "Os juros são parte da acusação, não o contraste.",
+        "c": "A avareza é o pecado listado; o contraste vem depois."
+      },
+      "hint": "Procure a conjunção antes de \"de mim\".",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["Ezequiel 22:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 22:6 e 22:7 se relacionam?",
+      "verseRef": "Ezequiel 22:6",
+      "options": [
+        { "id": "a", "text": "O poder sangrento se mostra na opressão do fraco" },
+        { "id": "b", "text": "Os príncipes protegem órfão e viúva" },
+        { "id": "c", "text": "O sangue é só ritual, sem injustiça social" },
+        { "id": "d", "text": "A cidade honra pai e mãe no meio dela" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não intentam outra coisa senão derramar sangue",
+      "feedbackCorrect": "Depois do sangue dos príncipes vêm as injustiças concretas.",
+      "feedbackWrong": {
+        "b": "O texto diz que são injustos para com órfão e viúva.",
+        "c": "Há extorsão e injustiça listadas em seguida.",
+        "d": "Desprezam pai e mãe."
+      },
+      "hint": "Una príncipes e a lista de 22:7.",
+      "learningObjective": "Relacionar sangue e opressão social.",
+      "evidence": ["Ezequiel 22:6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 22?",
+      "verseRef": "Ezequiel 22:2–3",
+      "options": [
+        { "id": "a", "text": "Ordem de julgar a cidade sanguinária" },
+        { "id": "b", "text": "Príncipes e injustiças são listados" },
+        { "id": "c", "text": "A cidade se esquece do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "mas de mim tu te esqueceste, diz o Senhor Deus",
+      "feedbackCorrect": "Julgamento → lista → esquecimento de Deus.",
+      "feedbackWrong": { "default": "Comece pelo julgamento; feche no esquecimento." },
+      "hint": "Pense em ordem, lista e fechamento.",
+      "learningObjective": "Ordenar os movimentos da cena.",
+      "evidence": ["Ezequiel 22:2", "Ezequiel 22:6", "Ezequiel 22:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 22:8, Desprezaste as minhas coisas santas e profanaste os meus ___.",
+      "verseRef": "Ezequiel 22:8",
+      "options": [
+        { "id": "a", "text": "sábados" },
+        { "id": "b", "text": "muros" },
+        { "id": "c", "text": "rios" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "profanaste os meus sábados",
+      "feedbackCorrect": "O que é profanado são os sábados.",
+      "feedbackWrong": {
+        "b": "Não são muros: são sábados.",
+        "c": "Não são rios: são sábados."
+      },
+      "hint": "Veja o substantivo depois de \"meus\".",
+      "learningObjective": "Lembrar o que foi profanado.",
+      "evidence": ["Ezequiel 22:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 22:6 a Miquéias 3:1–3?",
+      "verseRef": "Ezequiel 22:6",
+      "passageA": { "ref": "Ezequiel 22:6" },
+      "passageB": { "ref": "Miquéias 3:1–3" },
+      "options": [
+        { "id": "a", "text": "Príncipes que oprimem" },
+        { "id": "b", "text": "Sábados profanados" },
+        { "id": "c", "text": "Presentes por sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os príncipes de Israel, cada um segundo seu poder",
+      "feedbackCorrect": "Nos dois, líderes usam poder contra o povo.",
+      "feedbackWrong": {
+        "b": "Os sábados não são o elo com Miquéias 3.",
+        "c": "Os presentes aparecem em 22:12; o elo são os príncipes."
+      },
+      "hint": "Compare o papel dos líderes.",
+      "learningObjective": "Relacionar os príncipes a Miquéias.",
+      "evidence": ["Ezequiel 22:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 22:4, pelo sangue e pelos ídolos a cidade se tornou culpada e contaminada.",
+      "verseRef": "Ezequiel 22:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "Pelo sangue que tu mesma derramaste, tornaste-te culpada; pelos ídolos que tu mesma fabricaste, te contaminaste",
+      "feedbackCorrect": "Sangue traz culpa; ídolos trazem contaminação.",
+      "feedbackWrong": { "false": "O versículo une sangue à culpa e ídolos à contaminação." },
+      "hint": "Leia as duas cláusulas de causa.",
+      "learningObjective": "Interpretar a dupla culpa da cidade.",
+      "evidence": ["Ezequiel 22:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 22:12, toque o trecho que fecha a acusação.",
+      "verseRef": "Ezequiel 22:12",
+      "options": [
+        { "id": "a", "text": "tu te esqueceste" },
+        { "id": "b", "text": "tomaste juros" },
+        { "id": "c", "text": "derramar sangue" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas de mim tu te esqueceste, diz o Senhor Deus",
+      "feedbackCorrect": "O fechamento é o esquecimento do Senhor.",
+      "feedbackWrong": {
+        "b": "Faz parte da lista, não o fechamento teológico.",
+        "c": "Aparece na lista; o fecho é o esquecimento."
+      },
+      "hint": "Procure o que vem depois de \"mas de mim\".",
+      "learningObjective": "Tocar o fechamento da acusação.",
+      "evidence": ["Ezequiel 22:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 22 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 22:6",
+      "options": [
+        { "id": "a", "text": "Poder sangrento, opressão e esquecimento de Deus" },
+        { "id": "b", "text": "Só pecados rituais, sem violência social" },
+        { "id": "c", "text": "Príncipes justos e povo culpado apenas" },
+        { "id": "d", "text": "A cidade lembra Deus enquanto oprime" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não intentam outra coisa senão derramar sangue",
+      "feedbackCorrect": "Sangue dos príncipes, injustiça social e esquecimento fecham a cena.",
+      "feedbackWrong": {
+        "b": "Há extorsão, órfão e viúva na lista.",
+        "c": "Os príncipes são acusados primeiro.",
+        "d": "Ela se esqueceu do Senhor."
+      },
+      "hint": "Una sangue, opressão e esquecimento.",
+      "learningObjective": "Escolher a interpretação sustentada.",
+      "evidence": ["Ezequiel 22:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica da acusação nesta cena.",
+      "verseRef": "Ezequiel 22:3–4",
+      "options": [
+        { "id": "a", "text": "A cidade derrama sangue e faz ídolos" },
+        { "id": "b", "text": "Príncipes oprimem o fraco" },
+        { "id": "c", "text": "Ela se esquece do Senhor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "mas de mim tu te esqueceste, diz o Senhor Deus",
+      "feedbackCorrect": "Sangue/ídolos → opressão → esquecimento.",
+      "feedbackWrong": { "default": "Comece no sangue; feche no esquecimento." },
+      "hint": "Pense em pecado, opressão e esquecimento.",
+      "learningObjective": "Encadear a lógica da acusação.",
+      "evidence": ["Ezequiel 22:3", "Ezequiel 22:7", "Ezequiel 22:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 22:2, Faze-lhe conhecer todas as suas ___.",
+      "verseRef": "Ezequiel 22:2",
+      "options": [
+        { "id": "a", "text": "abominações" },
+        { "id": "b", "text": "vitórias" },
+        { "id": "c", "text": "alianças" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Faze-lhe conhecer, pois, todas as suas abominações",
+      "feedbackCorrect": "O conteúdo a revelar são as abominações.",
+      "feedbackWrong": {
+        "b": "Não são vitórias: são abominações.",
+        "c": "Não são alianças: são abominações."
+      },
+      "hint": "Veja o substantivo no fim da ordem.",
+      "learningObjective": "Lembrar o que deve ser conhecido.",
+      "evidence": ["Ezequiel 22:2"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 22:3 a Isaías 1:15?",
+      "verseRef": "Ezequiel 22:3",
+      "passageA": { "ref": "Ezequiel 22:3" },
+      "passageB": { "ref": "Isaías 1:15" },
+      "options": [
+        { "id": "a", "text": "Mãos cheias de sangue" },
+        { "id": "b", "text": "Sábados honrados" },
+        { "id": "c", "text": "Príncipes inocentes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ai da cidade que derrama sangue no meio dela",
+      "feedbackCorrect": "Nos dois, a cidade é acusada de sangue.",
+      "feedbackWrong": {
+        "b": "Aqui os sábados são profanados noutro versículo.",
+        "c": "Os príncipes são acusados, não inocentados."
+      },
+      "hint": "Compare a acusação de sangue.",
+      "learningObjective": "Ligar a cidade sanguinária a Isaías.",
+      "evidence": ["Ezequiel 22:3"]
+    }
+  ]
+}

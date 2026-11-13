@@ -1,0 +1,478 @@
+{
+  "study": {
+    "passageRef": "Atos 28:1–6",
+    "passages": [{ "ref": "Atos 28:1–6" }],
+    "context": "Depois da tempestade, os náufragos chegam a uma ilha. Paulo ainda é prisioneiro a caminho de Roma, e os moradores do lugar recebem todos junto a uma fogueira.",
+    "keyword": "Guardado",
+    "keywordGloss": "Paulo sai ileso da víbora: Deus o guarda para que a viagem até Roma continue.",
+    "focusQuestion": "Quando as circunstâncias parecem julgar você, em quem você descansa?",
+    "reflectionPrompts": ["A fogueira acolhedora", "A víbora na mão", "A opinião que muda"],
+    "facts": [
+      {
+        "text": "A ilha onde os náufragos chegaram se chamava Malta.",
+        "evidenceRef": "Atos 28:1",
+        "evidenceSpan": "a ilha se chamava Malta"
+      },
+      {
+        "text": "Os bárbaros trataram todos com grande humanidade.",
+        "evidenceRef": "Atos 28:2",
+        "evidenceSpan": "nos trataram com grande humanidade"
+      },
+      {
+        "text": "Uma víbora, fugindo do calor, prendeu-se à mão de Paulo.",
+        "evidenceRef": "Atos 28:3",
+        "evidenceSpan": "uma víbora, fugindo do calor, prendeu-se à mão dele"
+      },
+      {
+        "text": "Os bárbaros disseram que Paulo era um assassino.",
+        "evidenceRef": "Atos 28:4",
+        "evidenceSpan": "este homem é um assassino"
+      },
+      {
+        "text": "Paulo sacudiu a serpente no fogo e não sofreu nenhum mal.",
+        "evidenceRef": "Atos 28:5",
+        "evidenceSpan": "Sacudindo, porém, a serpente no fogo, não sofreu nenhum mal"
+      },
+      {
+        "text": "Os bárbaros passaram a dizer que Paulo era um deus.",
+        "evidenceRef": "Atos 28:6",
+        "evidenceSpan": "passaram a dizer que ele era um deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Justiça",
+        "gloss": "Para os bárbaros, uma força que castiga quem escapa do mar; é a lente pela qual eles julgam Paulo."
+      },
+      {
+        "term": "víbora",
+        "gloss": "O perigo que parece decidir o destino de Paulo, mas não consegue tirar-lhe a vida."
+      },
+      {
+        "term": "deus",
+        "gloss": "A nova opinião dos bárbaros sobre Paulo, que muda conforme eles veem o que acontece."
+      }
+    ],
+    "structure": [
+      { "label": "Náufragos acolhidos na ilha", "evidenceRef": "Atos 28:1–2" },
+      { "label": "A víbora se prende a Paulo", "evidenceRef": "Atos 28:3" },
+      { "label": "Os bárbaros o julgam culpado", "evidenceRef": "Atos 28:4" },
+      { "label": "Paulo ileso e visto como deus", "evidenceRef": "Atos 28:5–6" }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Os bárbaros julgam Paulo culpado porque, para eles, a Justiça não deixa viver quem escapou do mar.",
+        "marker": "pois",
+        "evidenceRef": "Atos 28:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "O que os bárbaros esperavam era o dano; Paulo, porém, sacode a serpente no fogo e não sofre mal.",
+        "marker": "porém",
+        "evidenceRef": "Atos 28:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Como nenhum mal acontece a Paulo, os bárbaros mudam de opinião sobre ele.",
+        "marker": null,
+        "evidenceRef": "Atos 28:6"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 121:7", "bridge": "O Senhor guarda do mal" },
+      { "ref": "Atos 27:24", "bridge": "Guardado até chegar a Roma" },
+      { "ref": "Atos 23:11", "bridge": "Roma prometida a Paulo" }
+    ],
+    "misreadings": [
+      {
+        "text": "A víbora provou que os bárbaros estavam certos e que Paulo era culpado.",
+        "why": "Paulo sacode a serpente e não sofre nenhum mal; o julgamento dos bárbaros cai por terra."
+      },
+      {
+        "text": "O texto confirma que Paulo era um deus, como os bárbaros passaram a dizer.",
+        "why": "É só a nova opinião deles, que muda conforme o que veem; Paulo nunca se apresenta assim."
+      },
+      {
+        "text": "Paulo escapou da víbora por mero acaso, sem cuidado de Deus.",
+        "why": "Em Atos 27:24, Deus já lhe prometera comparecer diante de César; a missão ainda não acabou."
+      }
+    ],
+    "centralInsight": "Deus guarda Paulo para que o evangelho chegue aonde precisa chegar.",
+    "anchorQuestion": "O que aconteceu com Paulo depois que ele sacudiu a víbora no fogo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 28:2, os bárbaros acolheram os náufragos acendendo uma fogueira.",
+      "verseRef": "Atos 28:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "acendendo uma fogueira, acolheram-nos a todos",
+      "feedbackCorrect": "O texto diz: acendendo uma fogueira, eles acolheram a todos.",
+      "feedbackWrong": {
+        "false": "Releia Atos 28:2: eles acenderam uma fogueira e acolheram a todos."
+      },
+      "hint": "Veja como os moradores receberam os náufragos.",
+      "learningObjective": "Observar como os moradores de Malta acolheram os náufragos.",
+      "evidence": ["Atos 28:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 28:3, toque o animal que se prendeu à mão de Paulo.",
+      "verseRef": "Atos 28:3",
+      "options": [
+        { "id": "a", "text": "gravetos" },
+        { "id": "b", "text": "víbora" },
+        { "id": "c", "text": "calor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "uma víbora",
+      "feedbackCorrect": "Uma víbora, fugindo do calor, prendeu-se à mão de Paulo.",
+      "feedbackWrong": {
+        "a": "Os gravetos é o que Paulo juntava; não é um animal.",
+        "c": "O calor é o que a víbora fugia; não é um animal."
+      },
+      "hint": "Procure quem se prendeu à mão dele.",
+      "learningObjective": "Identificar o que se prendeu à mão de Paulo.",
+      "evidence": ["Atos 28:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 28:2, por que os bárbaros acenderam uma fogueira?",
+      "verseRef": "Atos 28:2",
+      "options": [
+        { "id": "a", "text": "Para sinalizar a outros navios" },
+        { "id": "b", "text": "Chovia e fazia frio sobre os náufragos" },
+        { "id": "c", "text": "Para afugentar as serpentes da ilha" },
+        { "id": "d", "text": "Para oferecer um sacrifício aos seus deuses" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "por causa da chuva que caía e por causa do frio",
+      "feedbackCorrect": "A fogueira acolhe os náufragos da chuva que caía e do frio.",
+      "feedbackWrong": {
+        "a": "O texto não fala de sinal a outros navios.",
+        "c": "A víbora só aparece depois, saindo do fogo.",
+        "d": "Não há sacrifício; a fogueira é para acolher os náufragos."
+      },
+      "hint": "Veja a razão no fim do versículo.",
+      "learningObjective": "Observar o motivo da fogueira em Malta.",
+      "evidence": ["Atos 28:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Atos 28:3 na ordem do texto.",
+      "verseRef": "Atos 28:3",
+      "options": [
+        { "id": "a", "text": "E, ao juntar Paulo um feixe de gravetos" },
+        { "id": "b", "text": "e lançá-lo ao fogo" },
+        { "id": "c", "text": "uma víbora, fugindo do calor, prendeu-se à mão dele" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "E, ao juntar Paulo um feixe de gravetos e lançá-lo ao fogo",
+      "feedbackCorrect": "Paulo junta os gravetos, lança-os ao fogo e só então a víbora aparece.",
+      "feedbackWrong": {
+        "default": "A víbora só aparece no fim: antes, Paulo junta os gravetos e os lança ao fogo."
+      },
+      "hint": "O versículo começa com o que Paulo faz.",
+      "learningObjective": "Reconhecer a sequência de Atos 28:3.",
+      "evidence": ["Atos 28:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 28:1, os náufragos souberam que a ilha se chamava ___.",
+      "verseRef": "Atos 28:1",
+      "options": [
+        { "id": "a", "text": "Creta" },
+        { "id": "b", "text": "Malta" },
+        { "id": "c", "text": "Chipre" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "a ilha se chamava Malta",
+      "feedbackCorrect": "Depois de escaparem, os náufragos souberam: a ilha era Malta.",
+      "feedbackWrong": {
+        "a": "Creta ficou para trás, no começo da tempestade.",
+        "c": "Chipre não é a ilha onde eles chegam nesta cena."
+      },
+      "hint": "Veja o nome da ilha no começo do capítulo.",
+      "learningObjective": "Lembrar onde os náufragos chegaram.",
+      "evidence": ["Atos 28:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 28:5 comunica que se liga a este contexto?",
+      "verseRef": "Atos 28:5",
+      "passageA": { "ref": "Atos 28:5" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os náufragos chegam a uma ilha, e uma víbora se prende à mão de Paulo."
+      },
+      "options": [
+        { "id": "a", "text": "Paulo morre pelo veneno" },
+        { "id": "b", "text": "Os bárbaros expulsam Paulo" },
+        { "id": "c", "text": "Paulo sai ileso da víbora" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não sofreu nenhum mal",
+      "feedbackCorrect": "Paulo sacode a serpente no fogo e não sofre nenhum mal.",
+      "feedbackWrong": {
+        "a": "O texto diz o contrário: Paulo não sofreu nenhum mal.",
+        "b": "Nada aqui fala de expulsar Paulo; ele sacode a serpente."
+      },
+      "hint": "Veja o que acontece a Paulo depois que sacode a serpente.",
+      "learningObjective": "Ligar a víbora na mão de Paulo ao fato de ele não sofrer mal.",
+      "evidence": ["Atos 28:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 28:4, a víbora leva os bárbaros a concluir que Paulo é um assassino, pois a Justiça não o deixa viver.",
+      "verseRef": "Atos 28:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "este homem é um assassino, pois, tendo escapado do mar, a Justiça não o deixa viver",
+      "feedbackCorrect": "O \"pois\" mostra o raciocínio deles: escapou do mar, mas a Justiça o alcança.",
+      "feedbackWrong": {
+        "false": "Releia o \"pois\": eles explicam a víbora dizendo que a Justiça não o deixa viver."
+      },
+      "hint": "Veja a palavra que dá a razão do julgamento.",
+      "learningObjective": "Compreender a causa do julgamento dos bárbaros sobre Paulo.",
+      "evidence": ["Atos 28:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 28:5, toque a palavra que marca o contraste com o que os bárbaros esperavam.",
+      "verseRef": "Atos 28:5",
+      "options": [
+        { "id": "a", "text": "fogo" },
+        { "id": "b", "text": "porém" },
+        { "id": "c", "text": "nenhum" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Sacudindo, porém,",
+      "feedbackCorrect": "\"Porém\" vira a expectativa: onde esperavam dano, Paulo não sofreu mal.",
+      "feedbackWrong": {
+        "a": "\"Fogo\" diz onde a serpente foi sacudida, não marca contraste.",
+        "c": "\"Nenhum\" nega o mal, mas quem marca o contraste é outra palavra."
+      },
+      "hint": "Procure a palavra curta que vira a expectativa.",
+      "learningObjective": "Reconhecer o marcador de contraste em Atos 28:5.",
+      "evidence": ["Atos 28:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Atos 28:6 se relaciona com Atos 28:5?",
+      "verseRef": "Atos 28:5–6",
+      "options": [
+        { "id": "a", "text": "Os bárbaros reforçam a acusação de que Paulo era assassino" },
+        { "id": "b", "text": "Paulo pede aos bárbaros que o chamem de deus" },
+        { "id": "c", "text": "Como Paulo não sofreu mal, os bárbaros mudaram de opinião" },
+        { "id": "d", "text": "Os bárbaros ficam em dúvida e expulsam Paulo da ilha" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "nenhum mal lhe acontecia, mudaram de opinião",
+      "feedbackCorrect": "Ver que nenhum mal lhe acontecia fez os bárbaros mudarem de opinião.",
+      "feedbackWrong": {
+        "a": "O julgamento deles cai por terra: Paulo não sofre mal algum.",
+        "b": "Quem passa a dizer isso são os bárbaros; Paulo não pede nada.",
+        "d": "O texto não fala de expulsão; fala de mudança de opinião."
+      },
+      "hint": "Pense no que os bárbaros viram depois de muito esperar.",
+      "learningObjective": "Relacionar o fato de Paulo não sofrer mal à mudança dos bárbaros.",
+      "evidence": ["Atos 28:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Atos 28:4–5?",
+      "verseRef": "Atos 28:4–5",
+      "options": [
+        { "id": "a", "text": "Os bárbaros veem a víbora pendente" },
+        { "id": "b", "text": "Eles dizem que Paulo é um assassino" },
+        { "id": "c", "text": "Paulo sacode a serpente e não sofre mal" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ao verem a víbora pendente da mão dele",
+      "feedbackCorrect": "Primeiro veem a víbora, depois julgam Paulo, e então ele sacode a serpente.",
+      "feedbackWrong": {
+        "default": "A reação de Paulo vem por último: antes, os bárbaros veem e julgam."
+      },
+      "hint": "A reação de Paulo é o ponto de virada.",
+      "learningObjective": "Compreender o movimento do julgamento à reação de Paulo.",
+      "evidence": ["Atos 28:4–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 28:5, que ação de Paulo vira a cena diante da víbora?",
+      "verseRef": "Atos 28:5",
+      "options": [
+        { "id": "a", "text": "Lançando" },
+        { "id": "b", "text": "Esmagando" },
+        { "id": "c", "text": "Sacudindo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Sacudindo, porém, a serpente no fogo",
+      "feedbackCorrect": "Paulo sacode a serpente no fogo, e nenhum mal lhe acontece.",
+      "feedbackWrong": {
+        "a": "Paulo não lança a serpente; ele a sacode para dentro do fogo.",
+        "b": "O texto não diz que Paulo esmagou a serpente."
+      },
+      "hint": "Veja a ação de Paulo logo no começo do versículo.",
+      "learningObjective": "Lembrar a ação de Paulo que muda a cena.",
+      "evidence": ["Atos 28:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 28:5 a Salmos 121:7?",
+      "verseRef": "Atos 28:5",
+      "passageA": { "ref": "Atos 28:5" },
+      "passageB": { "ref": "Salmos 121:7" },
+      "options": [
+        { "id": "a", "text": "O mal sempre poupa os justos" },
+        { "id": "b", "text": "Paulo vence pela própria força" },
+        { "id": "c", "text": "O Senhor guarda do mal" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "não sofreu nenhum mal",
+      "feedbackCorrect": "O Salmo diz que o Senhor guarda do mal; Paulo sai sem sofrer mal algum.",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos promete que o mal sempre poupa os justos.",
+        "b": "O Salmo atribui a guarda ao Senhor, não à força de quem é guardado."
+      },
+      "hint": "Compare quem guarda do mal no Salmo.",
+      "learningObjective": "Ligar a proteção de Paulo à guarda do Senhor cantada nos Salmos.",
+      "evidence": ["Atos 28:5", "Salmos 121:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Atos 28:6, o texto confirma a opinião dos bárbaros de que Paulo era um deus.",
+      "verseRef": "Atos 28:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "passaram a dizer que ele era um deus",
+      "feedbackCorrect": "O texto só registra o que eles passaram a dizer; Paulo não se apresenta como deus.",
+      "feedbackWrong": {
+        "true": "\"Passaram a dizer\" mostra a opinião dos bárbaros, não uma afirmação do texto."
+      },
+      "hint": "Veja quem passa a dizer isso.",
+      "learningObjective": "Distinguir a opinião dos bárbaros do que o texto afirma.",
+      "evidence": ["Atos 28:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 28:6, toque o trecho que mostra que o julgamento dos bárbaros depende do que eles veem.",
+      "verseRef": "Atos 28:6",
+      "options": [
+        { "id": "a", "text": "caísse morto" },
+        { "id": "b", "text": "mudaram de opinião" },
+        { "id": "c", "text": "muito esperar" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mudaram de opinião",
+      "feedbackCorrect": "Eles julgam pelo que veem: o que viram muda o que passam a dizer.",
+      "feedbackWrong": {
+        "a": "Isso é o que esperavam ver, não o que mostra a mudança.",
+        "c": "A espera é o tempo, mas a mudança vem em outro trecho."
+      },
+      "hint": "Procure o verbo da virada de julgamento.",
+      "learningObjective": "Sustentar com o texto que o julgamento dos bárbaros segue as aparências.",
+      "evidence": ["Atos 28:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Atos 28:5–6 o texto sustenta melhor?",
+      "verseRef": "Atos 28:5–6",
+      "options": [
+        { "id": "a", "text": "A víbora prova que Paulo era culpado, como diziam" },
+        { "id": "b", "text": "Paulo se torna um deus e deixa de depender do Senhor" },
+        { "id": "c", "text": "O julgamento dos bárbaros falha: Paulo é guardado para a missão" },
+        { "id": "d", "text": "Paulo se salva por mero acaso, sem cuidado de Deus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "nenhum mal lhe acontecia, mudaram de opinião",
+      "feedbackCorrect": "Paulo sai ileso e o julgamento dos bárbaros cai por terra: ele ainda tem Roma pela frente.",
+      "feedbackWrong": {
+        "a": "Paulo não sofre mal algum; o julgamento deles cai por terra.",
+        "b": "Quem diz isso são os bárbaros; Paulo nunca se apresenta como deus.",
+        "d": "Em Atos 27:24, Deus já prometera Paulo diante de César."
+      },
+      "hint": "Compare cada opção com o que acontece a Paulo no versículo 5.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a guarda de Paulo.",
+      "evidence": ["Atos 28:5–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra Paulo guardado a caminho de Roma?",
+      "verseRef": "Atos 28:5",
+      "options": [
+        { "id": "a", "text": "Deus promete a Paulo que ele estará diante de César" },
+        { "id": "b", "text": "Em Malta, a víbora não consegue tirar a vida de Paulo" },
+        { "id": "c", "text": "Paulo chega a Roma e prega o reino de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não sofreu nenhum mal",
+      "feedbackCorrect": "A promessa de Deus, a guarda em Malta e a chegada a Roma formam um só fio.",
+      "feedbackWrong": {
+        "default": "Siga a promessa (At 27), a guarda em Malta (At 28:5) e a chegada a Roma (At 28:30–31)."
+      },
+      "hint": "Siga a ordem: promessa, guarda no caminho, chegada.",
+      "learningObjective": "Ver a guarda de Paulo em Malta como parte da promessa até Roma.",
+      "evidence": ["Atos 27:24", "Atos 28:5", "Atos 28:30–31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 28:4, os bárbaros dizem que a ___ não deixa Paulo viver.",
+      "verseRef": "Atos 28:4",
+      "options": [
+        { "id": "a", "text": "Sorte" },
+        { "id": "b", "text": "Vingança" },
+        { "id": "c", "text": "Justiça" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "a Justiça não o deixa viver",
+      "feedbackCorrect": "Para os bárbaros, a Justiça castiga quem escapou do mar: é a lente do julgamento.",
+      "feedbackWrong": {
+        "a": "Não é sorte que eles citam; eles pensam em algo que castiga.",
+        "b": "Vingança não é a palavra do texto; eles falam de outra força."
+      },
+      "hint": "Veja o nome que eles dão ao poder que pune.",
+      "learningObjective": "Lembrar o termo pelo qual os bárbaros interpretam a víbora.",
+      "evidence": ["Atos 28:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 28:6 a Atos 27:24?",
+      "verseRef": "Atos 28:6",
+      "passageA": { "ref": "Atos 28:6" },
+      "passageB": { "ref": "Atos 27:24" },
+      "options": [
+        { "id": "a", "text": "Paulo busca fama entre estrangeiros" },
+        { "id": "b", "text": "Guardado até chegar a Roma" },
+        { "id": "c", "text": "Os bárbaros aceitam o evangelho" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "nenhum mal lhe acontecia",
+      "feedbackCorrect": "A promessa de comparecer diante de César se cumpre passo a passo: Paulo é guardado.",
+      "feedbackWrong": {
+        "a": "Paulo não busca fama; os bárbaros é que mudam de opinião.",
+        "c": "Nenhum dos textos fala de bárbaros aceitando o evangelho."
+      },
+      "hint": "Compare o que Deus prometeu a Paulo no navio com o que acontece em Malta.",
+      "learningObjective": "Ligar a guarda em Malta à promessa feita a Paulo no navio.",
+      "evidence": ["Atos 28:6", "Atos 27:24"]
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "study": {
+    "passageRef": "2 Reis 22:8–13",
+    "passages": [
+      {"ref": "2 Reis 22:8–13"},
+      {"ref": "2 Reis 23:1–8"},
+      {"ref": "2 Reis 24:10–17"},
+      {"ref": "2 Reis 25:1–10"}
+    ],
+    "context": "Esta travessia revisa o bloco final: o livro achado, a reforma de Josias, a primeira leva e a queda de Jerusalém. A palavra pode renovar; a rebeldia persistente leva ao exílio.",
+    "keyword": "exílio",
+    "keywordGloss": "O fim do bloco: rei, templo e povo saem; a cidade santa cai.",
+    "focusQuestion": "Você trata a palavra reencontrada como reforma real ou como aviso que pode esperar?",
+    "reflectionPrompts": [
+      "Livro reencontrado",
+      "Reforma e ídolos",
+      "Cidade em chamas"
+    ],
+    "facts": [
+      {
+        "text": "Hilquias achou o Livro da Lei na Casa do Senhor.",
+        "evidenceRef": "2 Reis 22:8",
+        "evidenceSpan": "Achei o Livro da Lei na Casa do SENHOR"
+      },
+      {
+        "text": "O rei rasgou as vestes ao ouvir as palavras do livro.",
+        "evidenceRef": "2 Reis 22:11",
+        "evidenceSpan": "rasgou suas vestes"
+      },
+      {
+        "text": "Josias leu o Livro da Aliança e o povo concordou com a aliança.",
+        "evidenceRef": "2 Reis 23:3",
+        "evidenceSpan": "todo o povo concordou com esta aliança"
+      },
+      {
+        "text": "Joaquim foi levado cativo pelo rei da Babilônia.",
+        "evidenceRef": "2 Reis 24:12",
+        "evidenceSpan": "o rei da Babilônia o levou cativo"
+      },
+      {
+        "text": "Nebuzaradã queimou a casa do Senhor.",
+        "evidenceRef": "2 Reis 25:9",
+        "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei"
+      },
+      {
+        "text": "Os muros ao redor de Jerusalém foram derrubados.",
+        "evidenceRef": "2 Reis 25:10",
+        "evidenceSpan": "derrubou os muros ao redor de Jerusalém"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Livro da Lei",
+        "gloss": "A palavra reencontrada que abre o bloco."
+      },
+      {
+        "term": "aliança",
+        "gloss": "O compromisso público renovado sob Josias."
+      },
+      {
+        "term": "queimou",
+        "gloss": "A destruição do templo na queda final."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O livro é achado e o rei se abala",
+        "evidenceRef": "2 Reis 22:8–11"
+      },
+      {
+        "label": "A aliança é lida e os ídolos saem",
+        "evidenceRef": "2 Reis 23:2–6"
+      },
+      {
+        "label": "A primeira leva leva rei e tesouros",
+        "evidenceRef": "2 Reis 24:12–14"
+      },
+      {
+        "label": "Jerusalém cai: templo e muros",
+        "evidenceRef": "2 Reis 25:9–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "A ira se acendeu porque os pais não deram ouvidos ao livro.",
+        "marker": "pois",
+        "evidenceRef": "2 Reis 22:13"
+      },
+      {
+        "kind": "propósito",
+        "text": "A aliança é para que sigam o Senhor com todo o coração.",
+        "marker": "para que",
+        "evidenceRef": "2 Reis 23:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "A elite sai; o povo pobre da terra fica.",
+        "marker": "exceto",
+        "evidenceRef": "2 Reis 24:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 28:36",
+        "bridge": "Rei levado a outra nação"
+      },
+      {
+        "ref": "Jeremias 52:12–13",
+        "bridge": "Templo queimado em Jerusalém"
+      },
+      {
+        "ref": "2 Crônicas 34:31",
+        "bridge": "Aliança perante o Senhor"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A reforma de Josias impede de vez a queda de Jerusalém.",
+        "why": "Depois vêm a primeira leva e a queima do templo; a rebeldia posterior leva ao exílio."
+      },
+      {
+        "text": "O livro achado não muda nada no rei nem no povo.",
+        "why": "O rei rasga as vestes, consulta o Senhor e lê a aliança em público."
+      },
+      {
+        "text": "Na queda final o templo permanece de pé.",
+        "why": "Nebuzaradã queima a casa do Senhor e derruba os muros."
+      }
+    ],
+    "centralInsight": "A palavra pode renovar, mas a rebeldia persistente leva ao exílio",
+    "anchorQuestion": "O que Hilquias achou na Casa do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Reis 22:11, quando o rei ouviu as palavras do livro da Lei, rasgou suas vestes.",
+      "verseRef": "2 Reis 22:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "rasgou suas vestes",
+      "feedbackCorrect": "A palavra reencontrada abala o rei.",
+      "feedbackWrong": {
+        "false": "Releia 22:11: o rei rasgou suas vestes."
+      },
+      "hint": "Veja a reação do rei ao ouvir.",
+      "learningObjective": "Observar o abalo do rei diante da lei.",
+      "evidence": ["2 Reis 22:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 23:3, toque quem concordou com a aliança.",
+      "verseRef": "2 Reis 23:3",
+      "options": [
+        {"id": "a", "text": "todo o povo"},
+        {"id": "b", "text": "junto à coluna"},
+        {"id": "c", "text": "naquele livro"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo o povo concordou com esta aliança",
+      "feedbackCorrect": "A aliança não fica só no rei: todo o povo concorda.",
+      "feedbackWrong": {
+        "b": "A coluna é o lugar; quem concorda é o povo.",
+        "c": "O livro é a fonte; quem concorda é o povo."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Identificar a adesão do povo.",
+      "evidence": ["2 Reis 23:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Reis 24:14, quem ficou em Jerusalém na primeira leva?",
+      "verseRef": "2 Reis 24:14",
+      "options": [
+        {"id": "a", "text": "O povo pobre da terra"},
+        {"id": "b", "text": "Os príncipes e os valentes"},
+        {"id": "c", "text": "Os artífices e ferreiros"},
+        {"id": "d", "text": "Joaquim e sua mãe"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "exceto o povo pobre da terra",
+      "feedbackCorrect": "A elite sai; o pobre permanece.",
+      "feedbackWrong": {
+        "b": "Príncipes e valentes são transportados.",
+        "c": "Artífices e ferreiros também saem.",
+        "d": "Joaquim e a mãe vão à Babilônia."
+      },
+      "hint": "Veja a exceção no versículo.",
+      "learningObjective": "Observar quem permanece na primeira leva.",
+      "evidence": ["2 Reis 24:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 25:9 na ordem do texto.",
+      "verseRef": "2 Reis 25:9",
+      "options": [
+        {"id": "a", "text": "Queimou a casa do SENHOR e a casa do rei"},
+        {"id": "b", "text": "assim como todas as casas de Jerusalém"},
+        {"id": "c", "text": "também entregou às chamas todos os edifícios importantes"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "Templo, palácio e casas vão às chamas.",
+      "feedbackWrong": {
+        "default": "Comece pela casa do Senhor."
+      },
+      "hint": "O versículo começa pelo templo.",
+      "learningObjective": "Seguir a ordem da queima final.",
+      "evidence": ["2 Reis 25:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Reis 22:8, complete: Achei o Livro da ___ na Casa do Senhor.",
+      "verseRef": "2 Reis 22:8",
+      "options": [
+        {"id": "a", "text": "Lei"},
+        {"id": "b", "text": "Guerra"},
+        {"id": "c", "text": "Corte"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Achei o Livro da Lei na Casa do SENHOR",
+      "feedbackCorrect": "O achado abre o bloco: o Livro da Lei.",
+      "feedbackWrong": {
+        "b": "Não é Guerra: é o Livro da Lei.",
+        "c": "Não é Corte: é o Livro da Lei."
+      },
+      "hint": "Qual palavra completa o nome do livro?",
+      "learningObjective": "Lembrar o que Hilquias achou.",
+      "evidence": ["2 Reis 22:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Reis 25:10 comunica que se liga a este contexto?",
+      "verseRef": "2 Reis 25:10",
+      "passageA": {"ref": "2 Reis 25:10"},
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Na queda final, a cidade perde também os muros."
+      },
+      "options": [
+        {"id": "a", "text": "Os muros também caem"},
+        {"id": "b", "text": "Os muros ficam intactos"},
+        {"id": "c", "text": "Só o templo queima"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "derrubou os muros ao redor de Jerusalém",
+      "feedbackCorrect": "Templo e muros: a defesa da cidade cai.",
+      "feedbackWrong": {
+        "b": "O texto diz que derrubou os muros.",
+        "c": "Além do templo, os muros caem."
+      },
+      "hint": "Veja o que o exército derruba.",
+      "learningObjective": "Ligar a queda dos muros ao fim da cidade.",
+      "evidence": ["2 Reis 25:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 24:17, toque o novo nome dado a Matanias.",
+      "verseRef": "2 Reis 24:17",
+      "options": [
+        {"id": "a", "text": "Zedequias"},
+        {"id": "b", "text": "Joaquim"},
+        {"id": "c", "text": "tio paterno"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mudou seu nome para Zedequias",
+      "feedbackCorrect": "O rei da Babilônia impõe o nome Zedequias.",
+      "feedbackWrong": {
+        "b": "Joaquim é o rei removido.",
+        "c": "\"Tio paterno\" descreve Matanias; o novo nome é Zedequias."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Identificar o nome imposto ao novo rei.",
+      "evidence": ["2 Reis 24:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Reis 22:10 na ordem do texto.",
+      "verseRef": "2 Reis 22:10",
+      "options": [
+        {"id": "a", "text": "E Safã, o escrivão, relatou ao rei, dizendo"},
+        {"id": "b", "text": "O sacerdote Hilquias me entregou um livro"},
+        {"id": "c", "text": "E Safã o leu diante do rei"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "E Safã o leu diante do rei",
+      "feedbackCorrect": "Relato, entrega e leitura diante do rei.",
+      "feedbackWrong": {
+        "default": "Comece pelo relato de Safã."
+      },
+      "hint": "Quem abre o versículo?",
+      "learningObjective": "Seguir a ordem do relato de Safã.",
+      "evidence": ["2 Reis 22:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Reis 24:14, o povo pobre da terra foi levado primeiro, e a elite ficou em Jerusalém.",
+      "verseRef": "2 Reis 24:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "exceto o povo pobre da terra",
+      "feedbackCorrect": "O contraste é o inverso: a elite sai; o pobre fica.",
+      "feedbackWrong": {
+        "true": "O texto diz que ninguém ficou, exceto o povo pobre."
+      },
+      "hint": "Leia a palavra \"exceto\".",
+      "learningObjective": "Compreender o contraste da primeira leva.",
+      "evidence": ["2 Reis 24:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 22:13, toque a palavra que marca a causa da ira do Senhor.",
+      "verseRef": "2 Reis 22:13",
+      "options": [
+        {"id": "a", "text": "pois"},
+        {"id": "b", "text": "consultem"},
+        {"id": "c", "text": "Judá"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois nossos pais não deram ouvidos",
+      "feedbackCorrect": "\"Pois\" introduz a causa: os pais não deram ouvidos.",
+      "feedbackWrong": {
+        "b": "\"Consultem\" é a ordem do rei, não a causa.",
+        "c": "\"Judá\" é o povo; a causa vem com \"pois\"."
+      },
+      "hint": "Procure o marcador antes de \"nossos pais\".",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": ["2 Reis 22:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Reis 23:4 se relaciona com a aliança de 23:3?",
+      "verseRef": "2 Reis 23:3–4",
+      "options": [
+        {"id": "a", "text": "Depois da aliança, o rei limpa o templo dos ídolos"},
+        {"id": "b", "text": "A limpeza vem antes de qualquer aliança"},
+        {"id": "c", "text": "A aliança dispensa remover utensílios de Baal"},
+        {"id": "d", "text": "O povo limpa o templo sem ordem real"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O rei ordenou ao sumo sacerdote Hilquias",
+      "feedbackCorrect": "Palavra e aliança abrem a limpeza concreta.",
+      "feedbackWrong": {
+        "b": "A aliança está em 23:3; a limpeza em 23:4.",
+        "c": "O rei manda tirar os utensílios feitos para Baal.",
+        "d": "Quem ordena é o rei."
+      },
+      "hint": "Compare a ordem dos versículos.",
+      "learningObjective": "Relacionar aliança e limpeza.",
+      "evidence": ["2 Reis 23:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco da queda de Jerusalém?",
+      "verseRef": "2 Reis 22:11",
+      "options": [
+        {"id": "a", "text": "O livro é achado e o rei se abala"},
+        {"id": "b", "text": "A aliança é lida e os ídolos saem"},
+        {"id": "c", "text": "Vêm a leva, a queima e os muros caídos"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "rasgou suas vestes",
+      "feedbackCorrect": "Da palavra à reforma e, por fim, ao exílio.",
+      "feedbackWrong": {
+        "default": "Comece pelo livro achado; a queda fecha o bloco."
+      },
+      "hint": "A reforma de Josias vem antes das levas.",
+      "learningObjective": "Compreender o arco do bloco.",
+      "evidence": ["2 Reis 22:8", "2 Reis 23:3", "2 Reis 25:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Reis 23:3, complete: fez uma aliança perante o Senhor, ___ que O seguissem.",
+      "verseRef": "2 Reis 23:3",
+      "options": [
+        {"id": "a", "text": "para"},
+        {"id": "b", "text": "sem"},
+        {"id": "c", "text": "após"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que O seguissem",
+      "feedbackCorrect": "A aliança tem propósito: para que o sigam.",
+      "feedbackWrong": {
+        "b": "Não é sem: o texto diz para que.",
+        "c": "Não é após: o marcador é para que."
+      },
+      "hint": "Qual palavra introduz o propósito?",
+      "learningObjective": "Lembrar o propósito da aliança.",
+      "evidence": ["2 Reis 23:3"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Reis 23:3 a 2 Crônicas 34:31?",
+      "verseRef": "2 Reis 23:3",
+      "passageA": {"ref": "2 Reis 23:3"},
+      "passageB": {"ref": "2 Crônicas 34:31"},
+      "options": [
+        {"id": "a", "text": "Aliança perante o Senhor"},
+        {"id": "b", "text": "Fuga para o Egito"},
+        {"id": "c", "text": "Silêncio do povo"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez uma aliança perante o Senhor",
+      "feedbackCorrect": "Os dois relatos mostram o rei fazendo aliança diante do Senhor.",
+      "feedbackWrong": {
+        "b": "Não há fuga ao Egito nestes versos.",
+        "c": "Em Reis o povo concorda."
+      },
+      "hint": "Compare o gesto do rei.",
+      "learningObjective": "Relacionar a aliança em Reis e Crônicas.",
+      "evidence": ["2 Reis 23:3", "2 Crônicas 34:31"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 24:13, toque a palavra que liga o saque à palavra do Senhor.",
+      "verseRef": "2 Reis 24:13",
+      "options": [
+        {"id": "a", "text": "conforme"},
+        {"id": "b", "text": "tesouros"},
+        {"id": "c", "text": "Salomão"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "conforme a palavra que o SENHOR havia dito",
+      "feedbackCorrect": "\"Conforme\" marca cumprimento, não acaso.",
+      "feedbackWrong": {
+        "b": "Tesouros são o objeto; a ligação é \"conforme\".",
+        "c": "Salomão fez os utensílios; o marcador é \"conforme\"."
+      },
+      "hint": "Procure a palavra perto do fim do versículo.",
+      "learningObjective": "Reconhecer o cumprimento da palavra no saque.",
+      "evidence": ["2 Reis 24:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os passos de 2 Reis 25:4–5?",
+      "verseRef": "2 Reis 25:4–5",
+      "options": [
+        {"id": "a", "text": "A cidade é arrombada e o rei foge"},
+        {"id": "b", "text": "O exército babilônio persegue Zedequias"},
+        {"id": "c", "text": "O rei é alcançado nas campinas de Jericó"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "alcançou nas campinas de Jericó",
+      "feedbackCorrect": "Fuga, perseguição e captura: a saída falha.",
+      "feedbackWrong": {
+        "default": "Comece pelo arrombamento; Jericó fecha o passo."
+      },
+      "hint": "A fuga vem antes da captura.",
+      "learningObjective": "Compreender a sequência da captura do rei.",
+      "evidence": ["2 Reis 25:4–5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Reis 22–25, a reforma de Josias impede de vez a queda de Jerusalém e a queima do templo.",
+      "verseRef": "2 Reis 25:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "A palavra renovou sob Josias; a rebeldia posterior ainda leva ao exílio.",
+      "feedbackWrong": {
+        "true": "Depois da reforma vêm a leva e a queima do templo."
+      },
+      "hint": "Compare a reforma com o fim do bloco em 25:9.",
+      "learningObjective": "Interpretar reforma e juízo no arco do bloco.",
+      "evidence": ["2 Reis 25:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 25:9, toque o verbo que sustenta a leitura de destruição do templo.",
+      "verseRef": "2 Reis 25:9",
+      "options": [
+        {"id": "a", "text": "Queimou"},
+        {"id": "b", "text": "Jerusalém"},
+        {"id": "c", "text": "edifícios"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Queimou a casa do SENHOR e a casa do rei",
+      "feedbackCorrect": "\"Queimou\" mostra que nem o templo segura a cidade.",
+      "feedbackWrong": {
+        "b": "Jerusalém é o cenário; o verbo é \"Queimou\".",
+        "c": "Os edifícios são o alvo; o verbo é \"Queimou\"."
+      },
+      "hint": "Procure o verbo que abre o versículo.",
+      "learningObjective": "Sustentar a destruição do templo com o texto.",
+      "evidence": ["2 Reis 25:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o bloco 2 Reis 22–25 sustenta?",
+      "verseRef": "2 Reis 22:11",
+      "options": [
+        {"id": "a", "text": "A palavra pode renovar, mas a rebeldia leva ao exílio"},
+        {"id": "b", "text": "O livro achado não muda o rei nem o povo"},
+        {"id": "c", "text": "A reforma de Josias impede para sempre a queda"},
+        {"id": "d", "text": "Na queda final o templo permanece de pé"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "rasgou suas vestes",
+      "feedbackCorrect": "Há renovação sob Josias e, depois, juízo e exílio.",
+      "feedbackWrong": {
+        "b": "O rei rasga as vestes e lê a aliança em público.",
+        "c": "Ainda vêm a leva e a queima do templo.",
+        "d": "Nebuzaradã queima a casa do Senhor."
+      },
+      "hint": "Junte o abalo de 22:11 com a queima de 25:9.",
+      "learningObjective": "Escolher a interpretação do arco do bloco.",
+      "evidence": ["2 Reis 22:11", "2 Reis 25:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do juízo até o exílio?",
+      "verseRef": "2 Reis 24:12",
+      "options": [
+        {"id": "a", "text": "O Senhor anuncia levar rei e povo"},
+        {"id": "b", "text": "Joaquim é levado cativo à Babilônia"},
+        {"id": "c", "text": "O templo é queimado em Jerusalém"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o rei da Babilônia o levou cativo",
+      "feedbackCorrect": "Da ameaça ao cativeiro e à queima do templo.",
+      "feedbackWrong": {
+        "default": "Siga: Deuteronômio 28:36, 2 Reis 24:12, Jeremias 52:12–13."
+      },
+      "hint": "Comece pelo anúncio em Deuteronômio.",
+      "learningObjective": "Ver o fio da ameaça ao fim do templo.",
+      "evidence": ["Deuteronômio 28:36", "2 Reis 24:12", "Jeremias 52:12–13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Reis 25:10, complete: derrubou os ___ ao redor de Jerusalém.",
+      "verseRef": "2 Reis 25:10",
+      "options": [
+        {"id": "a", "text": "muros"},
+        {"id": "b", "text": "altares"},
+        {"id": "c", "text": "poços"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "derrubou os muros ao redor de Jerusalém",
+      "feedbackCorrect": "Sem muros, a cidade santa fica sem defesa.",
+      "feedbackWrong": {
+        "b": "Não altares aqui: o texto fala de muros.",
+        "c": "Não poços: derrubou os muros."
+      },
+      "hint": "O que cercava a cidade e cai?",
+      "learningObjective": "Lembrar a queda dos muros.",
+      "evidence": ["2 Reis 25:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Reis 24:12 a Deuteronômio 28:36?",
+      "verseRef": "2 Reis 24:12",
+      "passageA": {"ref": "2 Reis 24:12"},
+      "passageB": {"ref": "Deuteronômio 28:36"},
+      "options": [
+        {"id": "a", "text": "Rei levado a outra nação"},
+        {"id": "b", "text": "Rei permanece em Judá"},
+        {"id": "c", "text": "Povo vence a Babilônia"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o rei da Babilônia o levou cativo",
+      "feedbackCorrect": "A ameaça se concreta no cativeiro de Joaquim.",
+      "feedbackWrong": {
+        "b": "Joaquim é levado; não permanece.",
+        "c": "Não há vitória de Judá neste texto."
+      },
+      "hint": "Compare o destino do rei.",
+      "learningObjective": "Ligar o cativeiro à maldição anunciada.",
+      "evidence": ["2 Reis 24:12", "Deuteronômio 28:36"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Reis 22:13, toque o trecho que liga a ira à desobediência dos pais.",
+      "verseRef": "2 Reis 22:13",
+      "options": [
+        {"id": "a", "text": "não deram ouvidos"},
+        {"id": "b", "text": "todo o Judá"},
+        {"id": "c", "text": "foi encontrado"}
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois nossos pais não deram ouvidos às palavras deste livro",
+      "feedbackCorrect": "A ira se explica pela desobediência à palavra.",
+      "feedbackWrong": {
+        "b": "Judá é o alcance da consulta; a causa é não ouvir.",
+        "c": "O achado do livro não é a causa da ira."
+      },
+      "hint": "Procure o que os pais não fizeram.",
+      "learningObjective": "Sustentar a causa da ira com o texto.",
+      "evidence": ["2 Reis 22:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da palavra reencontrada à reforma?",
+      "verseRef": "2 Reis 22:8",
+      "options": [
+        {"id": "a", "text": "Hilquias acha o Livro da Lei"},
+        {"id": "b", "text": "O rei rasga as vestes ao ouvir"},
+        {"id": "c", "text": "O povo concorda com a aliança"}
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Achei o Livro da Lei na Casa do SENHOR",
+      "feedbackCorrect": "Do achado ao abalo e à aliança pública.",
+      "feedbackWrong": {
+        "default": "Comece pelo achado; a aliança fecha o movimento."
+      },
+      "hint": "O achado vem antes do rasgar das vestes.",
+      "learningObjective": "Ver o fio do livro à aliança.",
+      "evidence": ["2 Reis 22:8", "2 Reis 22:11", "2 Reis 23:3"]
+    }
+  ]
+}

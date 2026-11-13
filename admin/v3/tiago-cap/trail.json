@@ -1,0 +1,106 @@
+{
+  "slug": "tiago-cap",
+  "title": "Tiago",
+  "description": "Tiago capítulo a capítulo: fé que se vê na prova, na fala e nas obras.",
+  "icon": "🪞",
+  "color": "#00897B",
+  "order": 74,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Fé que se vê · cap. 1–5",
+      "icon": "zap",
+      "section": "Tiago",
+      "missions": [
+        {
+          "slug": "tjc-01-alegria-na-prova",
+          "title": "Alegria na prova",
+          "subtitle": "Tiago 1:2–8",
+          "intro": "Tiago começa pedindo alegria nas diversas provações e sabedoria pedida com fé.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tiago 1:2–8",
+          "hookVerse": "Meus irmãos, considerem como um motivo de grande alegria o passarem por diversas provações. Sabendo que a provação da sua fé, uma vez confirmada, gera perseverança.",
+          "hookNote": "A provação gera perseverança; peçam sabedoria a Deus com fé, sem duvidar.",
+          "centralInsight": "A provação gera perseverança; peçam sabedoria a Deus com fé, sem duvidar.",
+          "objective": "Pedir sabedoria com fé"
+        },
+        {
+          "slug": "tjc-02-sem-acepcao",
+          "title": "Sem acepção",
+          "subtitle": "Tiago 2:1–9",
+          "intro": "A fé em Jesus, Senhor da glória, não combina com favoritismo na reunião.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tiago 2:1–9",
+          "hookVerse": "Meus irmãos, não tenhais a fé em nosso Senhor Jesus Cristo, Senhor da glória, sem fazer acepção de pessoas. Porque, se em vosso encontro entrar algum homem com anéis de ouro e vestes luxuosas, e também entrar um pobre com roupas esfarrapadas,",
+          "hookNote": "Fazer acepção de pessoas é pecado; a lei real é amar o próximo como a si mesmo.",
+          "centralInsight": "Fazer acepção de pessoas é pecado; a lei real é amar o próximo como a si mesmo.",
+          "objective": "Amar sem favoritismo"
+        },
+        {
+          "slug": "tjc-03-sabedoria-do-alto",
+          "title": "Sabedoria do alto",
+          "subtitle": "Tiago 3:13–18",
+          "intro": "Tiago pergunta quem é sábio e distingue a sabedoria terrena da que vem do alto.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tiago 3:13–18",
+          "hookVerse": "Quem entre vocês é sábio e entendido? Mostre por meio de suas boas ações, a mansidão que é fruto da sabedoria. Mas, se vocês têm inveja amarga e contendas no coração, não se gloriem disso, nem mintam contra a verdade.",
+          "hookNote": "A sabedoria do alto é pura, pacífica e cheia de misericórdia; a outra gera confusão.",
+          "centralInsight": "A sabedoria do alto é pura, pacífica e cheia de misericórdia; a outra gera confusão.",
+          "objective": "Buscar a sabedoria do alto"
+        },
+        {
+          "slug": "tjc-04-aproximem-se-de-deus",
+          "title": "Aproximem-se de Deus",
+          "subtitle": "Tiago 4:7–12",
+          "intro": "Diante da soberba, Tiago chama a sujeição a Deus e a humildade.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tiago 4:7–12",
+          "hookVerse": "Sujeitem-se, portanto, a Deus; mas resistam ao diabo, e ele fugirá de vós. Aproximem-se de Deus, e Ele se aproximará de vocês. Purifiquem as mãos, pecadores; e, vocês que são de ânimo dobre, limpem os corações.",
+          "hookNote": "Sujeitem-se a Deus, resistam ao diabo e humilhem-se: o Senhor os exaltará.",
+          "centralInsight": "Sujeitem-se a Deus, resistam ao diabo e humilhem-se: o Senhor os exaltará.",
+          "objective": "Humilhar-se perante Deus"
+        },
+        {
+          "slug": "tjc-05-paciencia-ate-a-vinda",
+          "title": "Paciência até a vinda",
+          "subtitle": "Tiago 5:7–12",
+          "intro": "Como o lavrador espera o fruto, os irmãos devem esperar com paciência.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Tiago 5:7–12",
+          "hookVerse": "Portanto, irmãos, sejam pacientes até a vinda do Senhor. Observem que o lavrador aguarda com paciência o precioso fruto da terra, esperando receber as primeiras e as últimas chuvas. Sejam também pacientes e fortaleçam os corações, pois a vinda do Senhor está próxima.",
+          "hookNote": "Sejam pacientes até a vinda do Senhor; não murmurem e sejam firmes.",
+          "centralInsight": "Sejam pacientes até a vinda do Senhor; não murmurem e sejam firmes.",
+          "objective": "Esperar com paciência"
+        },
+        {
+          "slug": "tjc-boss-1",
+          "title": "Travessia: Fé que se vê",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a prova, a acepção, a sabedoria, a humildade e a paciência.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Fé que se vê",
+          "hookVerse": "Revise a prova, a acepção, a sabedoria, a humildade e a paciência.",
+          "hookNote": "Revise a prova, a acepção, a sabedoria, a humildade e a paciência.",
+          "centralInsight": "A fé verdadeira se mostra no caráter e nas relações",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+{
+  "study": {
+    "slug": "jzc-11-efraim-contra-jefte",
+    "passageRef": "Juízes 12:1–7",
+    "passageText": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos queimar a sua casa enquanto você estiver dentro dela. E Jefté lhes disse: Eu e o meu povo tivemos grande contenda com os filhos de Amom; eu os chamei, mas vocês não me livraram das suas mãos. E, ao ver que vocês não me livrariam, arrisquei a minha vida e fui contra os filhos de Amom, e o Senhor os entregou em minhas mãos. Por que, então, vocês estão subindo contra mim hoje para me combater. Jefté reuniu todos os homens de Gileade e pelejou contra os efraimitas; os homens de Gileade feriram os efraimitas, porque estes disseram \"Vocês são fugitivos de Efraim, gileaditas que habitam no meio de Efraim e Manassés.\" Os gileaditas tomaram os vaus do Jordão que conduzem a Efraim, de sorte que, quando qualquer fugitivo de Efraim dizia: Quero passar; então, os homens de Gileade lhe perguntavam: És tu efraimita? Se respondia: Não sou. Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil. E Jefté, o gileadita, julgou a Israel seis anos; então faleceu e foi sepultado em uma das cidades de Gileade.",
+    "passages": [
+      {
+        "ref": "Juízes 12:1–7",
+        "text": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos queimar a sua casa enquanto você estiver dentro dela. E Jefté lhes disse: Eu e o meu povo tivemos grande contenda com os filhos de Amom; eu os chamei, mas vocês não me livraram das suas mãos. E, ao ver que vocês não me livrariam, arrisquei a minha vida e fui contra os filhos de Amom, e o Senhor os entregou em minhas mãos. Por que, então, vocês estão subindo contra mim hoje para me combater. Jefté reuniu todos os homens de Gileade e pelejou contra os efraimitas; os homens de Gileade feriram os efraimitas, porque estes disseram \"Vocês são fugitivos de Efraim, gileaditas que habitam no meio de Efraim e Manassés.\" Os gileaditas tomaram os vaus do Jordão que conduzem a Efraim, de sorte que, quando qualquer fugitivo de Efraim dizia: Quero passar; então, os homens de Gileade lhe perguntavam: És tu efraimita? Se respondia: Não sou. Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil. E Jefté, o gileadita, julgou a Israel seis anos; então faleceu e foi sepultado em uma das cidades de Gileade."
+      }
+    ],
+    "context": "Efraim ameaça Jefté após a vitória; a briga interna mata quarenta e dois mil no Jordão.",
+    "keyword": "chibolete",
+    "keywordGloss": "Palavra-teste que expõe os fugitivos de Efraim.",
+    "focusQuestion": "Onde o orgulho tribal transforma livramento em guerra interna?",
+    "reflectionPrompts": [
+      "Ameaça de queimar",
+      "Chibolete",
+      "Quarenta e dois mil"
+    ],
+    "facts": [
+      {
+        "text": "Efraim ameaça queimar a casa de Jefté.",
+        "evidenceRef": "Juízes 12:1",
+        "evidenceSpan": "Vamos queimar a sua casa"
+      },
+      {
+        "text": "Jefté diz que os chamou e não o livraram.",
+        "evidenceRef": "Juízes 12:2",
+        "evidenceSpan": "eu os chamei, mas vocês não me livraram"
+      },
+      {
+        "text": "O Senhor entregou Amom em suas mãos.",
+        "evidenceRef": "Juízes 12:3",
+        "evidenceSpan": "o Senhor os entregou em minhas mãos"
+      },
+      {
+        "text": "Gileade feriu os efraimitas.",
+        "evidenceRef": "Juízes 12:4",
+        "evidenceSpan": "os homens de Gileade feriram os efraimitas"
+      },
+      {
+        "text": "Pediam chibolete e matavam no Jordão.",
+        "evidenceRef": "Juízes 12:6",
+        "evidenceSpan": "Diga, pois, chibolete"
+      },
+      {
+        "text": "Caíram quarenta e dois mil de Efraim.",
+        "evidenceRef": "Juízes 12:6",
+        "evidenceSpan": "caíram de Efraim quarenta e dois mil"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "chibolete",
+        "gloss": "Palavra que os efraimitas não pronunciavam bem."
+      },
+      {
+        "term": "sibolete",
+        "gloss": "Pronúncia falha que denuncia o fugitivo."
+      },
+      {
+        "term": "Gileade",
+        "gloss": "Povo de Jefté que peleja contra Efraim."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acusação de Efraim",
+        "evidenceRef": "Juízes 12:1–3"
+      },
+      {
+        "label": "Peleja e vaus do Jordão",
+        "evidenceRef": "Juízes 12:4–6"
+      },
+      {
+        "label": "Morte de Jefté",
+        "evidenceRef": "Juízes 12:7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Chamou; mas não livraram.",
+        "marker": "mas",
+        "evidenceRef": "Juízes 12:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Feriram porque Efraim insultou.",
+        "marker": "porque",
+        "evidenceRef": "Juízes 12:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Dizia sibolete pois não conseguia.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 12:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Provérbios 13:10",
+        "bridge": "Orgulho gera contenda",
+        "text": "A soberba apenas gera contendas, mas o conselho dos sábios oferece sabedoria."
+      },
+      {
+        "ref": "Tiago 4:1",
+        "bridge": "Guerras entre vós",
+        "text": "De onde surgem as guerras e contendas que há entre vocês? Não provêm dos prazeres que militam dentro de vossa carne?"
+      },
+      {
+        "ref": "Gálatas 5:15",
+        "bridge": "Se vos mordeis",
+        "text": "Mas, se vocês se mordem e se devoram uns aos outros, tenham cuidado para que não sejam mutuamente destruídos."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Efraim só queria ajudar.",
+        "why": "Ameaça queimar a casa."
+      },
+      {
+        "text": "Não houve mortes.",
+        "why": "Quarenta e dois mil caíram."
+      },
+      {
+        "text": "Jefté nunca os chamou.",
+        "why": "Eu os chamei, mas não livraram."
+      }
+    ],
+    "centralInsight": "Orgulho tribal mata milhares: o livramento vira briga interna.",
+    "anchorQuestion": "Segundo Juízes 12:6, quantos de Efraim caíram?",
+    "relatedVerses": [
+      {
+        "reference": "Provérbios 13:10",
+        "reason": "Orgulho gera contenda"
+      },
+      {
+        "reference": "Tiago 4:1",
+        "reason": "Guerras entre vós"
+      },
+      {
+        "reference": "Gálatas 5:15",
+        "reason": "Se vos mordeis"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "juizes-cap-sem-jzc-11-efraim-contra-jefte-01",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Juízes 12:6, caíram de Efraim quarenta e dois mil.",
+      "prompt": "Em Juízes 12:6, caíram de Efraim quarenta e dois mil.",
+      "cue": "Em Juízes 12:6, caíram de Efraim quarenta e dois mil.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Quarenta e dois mil.",
+      "feedbackWrong": {
+        "false": "O texto dá o número."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Observar as baixas.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-11-efraim-contra-jefte-02",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Juízes 12:6, toque a palavra-teste.",
+      "prompt": "Em Juízes 12:6, toque a palavra-teste.",
+      "cue": "Em Juízes 12:6, toque a palavra-teste.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "a",
+          "text": "chibolete"
+        },
+        {
+          "id": "b",
+          "text": "Jordão"
+        },
+        {
+          "id": "c",
+          "text": "Efraim"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Diga, pois, chibolete",
+      "feedbackCorrect": "Chibolete.",
+      "feedbackWrong": {
+        "b": "Jordão é o lugar.",
+        "c": "Efraim é o povo."
+      },
+      "hint": "Veja o que pediam.",
+      "learningObjective": "Identificar chibolete.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-11-efraim-contra-jefte-03",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Juízes 12:1, Efraim ameaça:",
+      "prompt": "Segundo Juízes 12:1, Efraim ameaça:",
+      "cue": "Segundo Juízes 12:1, Efraim ameaça:",
+      "verseRef": "Juízes 12:1",
+      "passageText": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos queimar a sua casa enquanto você estiver dentro dela.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queimar a casa de Jefté"
+        },
+        {
+          "id": "b",
+          "text": "Ajudar Amom"
+        },
+        {
+          "id": "c",
+          "text": "Fugir do Jordão"
+        },
+        {
+          "id": "d",
+          "text": "Sepultar Jefté"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Queimar a casa.",
+      "feedbackWrong": {
+        "b": "Não ajuda.",
+        "c": "Não foge.",
+        "d": "Sepultura é depois."
+      },
+      "hint": "Leia a ameaça.",
+      "learningObjective": "Reconhecer a ameaça.",
+      "evidence": [
+        "Juízes 12:1"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-11-efraim-contra-jefte-04",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Juízes 12:6 na ordem do texto.",
+      "prompt": "Monte Juízes 12:6 na ordem do texto.",
+      "cue": "Monte Juízes 12:6 na ordem do texto.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diga, pois, chibolete"
+        },
+        {
+          "id": "b",
+          "text": "mas ele dizia sibolete"
+        },
+        {
+          "id": "c",
+          "text": "caíram de Efraim quarenta e dois mil"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Teste, falha e mortes.",
+      "feedbackWrong": {
+        "default": "Comece pelo teste."
+      },
+      "hint": "Quantos caem?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-11-efraim-contra-jefte-05",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Juízes 12:6, complete: mas ele dizia ___.",
+      "prompt": "Em Juízes 12:6, complete: mas ele dizia ___.",
+      "cue": "Em Juízes 12:6, complete: mas ele dizia ___.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "template": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia ___, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "a",
+          "text": "sibolete"
+        },
+        {
+          "id": "b",
+          "text": "amém"
+        },
+        {
+          "id": "c",
+          "text": "shalom"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "mas ele dizia sibolete",
+      "feedbackCorrect": "Sibolete.",
+      "feedbackWrong": {
+        "b": "Não é amém.",
+        "c": "Não é shalom."
+      },
+      "hint": "Veja a pronúncia.",
+      "learningObjective": "Lembrar sibolete.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-sem-jzc-11-efraim-contra-jefte-06",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Juízes 12:3 comunica que se liga a este contexto?",
+      "prompt": "O que Juízes 12:3 comunica que se liga a este contexto?",
+      "cue": "O que Juízes 12:3 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 12:3",
+      "passageText": "E, ao ver que vocês não me livrariam, arrisquei a minha vida e fui contra os filhos de Amom, e o Senhor os entregou em minhas mãos. Por que, então, vocês estão subindo contra mim hoje para me combater.",
+      "passageA": {
+        "ref": "Juízes 12:3",
+        "text": "E, ao ver que vocês não me livrariam, arrisquei a minha vida e fui contra os filhos de Amom, e o Senhor os entregou em minhas mãos. Por que, então, vocês estão subindo contra mim hoje para me combater."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Jefté lembra que o Senhor entregou Amom, mas Efraim sobe para combater."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor entregou Amom"
+        },
+        {
+          "id": "b",
+          "text": "Efraim ajudou"
+        },
+        {
+          "id": "c",
+          "text": "Sem combate"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o Senhor os entregou em minhas mãos",
+      "feedbackCorrect": "Entrega divina.",
+      "feedbackWrong": {
+        "b": "Efraim não ajudou.",
+        "c": "Há combate."
+      },
+      "hint": "Quem entregou?",
+      "learningObjective": "Ligar vitória e briga.",
+      "evidence": [
+        "Juízes 12:3"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-11-efraim-contra-jefte-01",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Juízes 12:2, Jefté diz que chamou Efraim; mas eles não o livraram.",
+      "prompt": "Em Juízes 12:2, Jefté diz que chamou Efraim; mas eles não o livraram.",
+      "cue": "Em Juízes 12:2, Jefté diz que chamou Efraim; mas eles não o livraram.",
+      "verseRef": "Juízes 12:2",
+      "passageText": "E Jefté lhes disse: Eu e o meu povo tivemos grande contenda com os filhos de Amom; eu os chamei, mas vocês não me livraram das suas mãos.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "eu os chamei, mas vocês não me livraram",
+      "feedbackCorrect": "Chamou e não livraram.",
+      "feedbackWrong": {
+        "false": "O mas marca a falha."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 12:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-11-efraim-contra-jefte-02",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Juízes 12:2, toque o marcador de contraste.",
+      "prompt": "Em Juízes 12:2, toque o marcador de contraste.",
+      "cue": "Em Juízes 12:2, toque o marcador de contraste.",
+      "verseRef": "Juízes 12:2",
+      "passageText": "E Jefté lhes disse: Eu e o meu povo tivemos grande contenda com os filhos de Amom; eu os chamei, mas vocês não me livraram das suas mãos.",
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "Amom"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "mas vocês não me livraram das suas mãos",
+      "feedbackCorrect": "Mas.",
+      "feedbackWrong": {
+        "b": "Amom é o inimigo.",
+        "c": "Povo é de Jefté."
+      },
+      "hint": "Procure após chamei.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 12:2"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-11-efraim-contra-jefte-03",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação Juízes 12:4 faz?",
+      "prompt": "Que relação Juízes 12:4 faz?",
+      "cue": "Que relação Juízes 12:4 faz?",
+      "verseRef": "Juízes 12:4",
+      "passageText": "Jefté reuniu todos os homens de Gileade e pelejou contra os efraimitas; os homens de Gileade feriram os efraimitas, porque estes disseram \"Vocês são fugitivos de Efraim, gileaditas que habitam no meio de Efraim e Manassés.\"",
+      "options": [
+        {
+          "id": "a",
+          "text": "Feriram porque Efraim insultou"
+        },
+        {
+          "id": "b",
+          "text": "Feriram sem motivo"
+        },
+        {
+          "id": "c",
+          "text": "Efraim venceu Gileade"
+        },
+        {
+          "id": "d",
+          "text": "Sem palavras na briga"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "porque estes disseram",
+      "feedbackCorrect": "Causa do combate.",
+      "feedbackWrong": {
+        "b": "Há motivo.",
+        "c": "Gileade fere.",
+        "d": "Há insulto."
+      },
+      "hint": "Leia o porque.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 12:4"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-11-efraim-contra-jefte-04",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos do conflito.",
+      "prompt": "Ordene os movimentos do conflito.",
+      "cue": "Ordene os movimentos do conflito.",
+      "verseRef": "Juízes 12:1",
+      "passageText": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos queimar a sua casa enquanto você estiver dentro dela.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acusação de Efraim"
+        },
+        {
+          "id": "b",
+          "text": "Peleja e vaus do Jordão"
+        },
+        {
+          "id": "c",
+          "text": "Morte de Jefté"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Acusação, peleja e morte.",
+      "feedbackWrong": {
+        "default": "Comece pela acusação."
+      },
+      "hint": "O que fecha?",
+      "learningObjective": "Ordenar o conflito",
+      "evidence": [
+        "Juízes 12:1",
+        "Juízes 12:7"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-11-efraim-contra-jefte-05",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Juízes 12:1, complete: Vamos ___ a sua casa.",
+      "prompt": "Em Juízes 12:1, complete: Vamos ___ a sua casa.",
+      "cue": "Em Juízes 12:1, complete: Vamos ___ a sua casa.",
+      "verseRef": "Juízes 12:1",
+      "passageText": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos queimar a sua casa enquanto você estiver dentro dela.",
+      "template": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos ___ a sua casa enquanto você estiver dentro dela.",
+      "options": [
+        {
+          "id": "a",
+          "text": "queimar"
+        },
+        {
+          "id": "b",
+          "text": "guardar"
+        },
+        {
+          "id": "c",
+          "text": "comprar"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Queimar.",
+      "feedbackWrong": {
+        "b": "Não é guardar.",
+        "c": "Não é comprar."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar queimar.",
+      "evidence": [
+        "Juízes 12:1"
+      ]
+    },
+    {
+      "id": "juizes-cap-cam-jzc-11-efraim-contra-jefte-06",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Juízes 12:6 a Provérbios 13:10?",
+      "prompt": "O que liga Juízes 12:6 a Provérbios 13:10?",
+      "cue": "O que liga Juízes 12:6 a Provérbios 13:10?",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "passageA": {
+        "ref": "Juízes 12:6",
+        "text": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil."
+      },
+      "passageB": {
+        "ref": "Provérbios 13:10",
+        "text": "A soberba apenas gera contendas, mas o conselho dos sábios oferece sabedoria."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orgulho gera contenda"
+        },
+        {
+          "id": "b",
+          "text": "Paz tribal"
+        },
+        {
+          "id": "c",
+          "text": "Sem mortes"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Contenda mortal.",
+      "feedbackWrong": {
+        "b": "Não há paz.",
+        "c": "Há mortes."
+      },
+      "hint": "Compare o orgulho.",
+      "learningObjective": "Ligar a Provérbios.",
+      "evidence": [
+        "Juízes 12:6",
+        "Provérbios 13:10"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-11-efraim-contra-jefte-01",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Juízes 12:6, o livramento de Amom une as tribos sem custo interno.",
+      "prompt": "Em Juízes 12:6, o livramento de Amom une as tribos sem custo interno.",
+      "cue": "Em Juízes 12:6, o livramento de Amom une as tribos sem custo interno.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Há custo interno enorme.",
+      "feedbackWrong": {
+        "true": "Quarenta e dois mil."
+      },
+      "hint": "Leia as baixas.",
+      "learningObjective": "Avaliar o orgulho.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-11-efraim-contra-jefte-02",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Juízes 12:6, toque quem caiu no Jordão.",
+      "prompt": "Em Juízes 12:6, toque quem caiu no Jordão.",
+      "cue": "Em Juízes 12:6, toque quem caiu no Jordão.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Efraim"
+        },
+        {
+          "id": "b",
+          "text": "chibolete"
+        },
+        {
+          "id": "c",
+          "text": "Jordão"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Efraim caiu.",
+      "feedbackWrong": {
+        "b": "Chibolete é o teste.",
+        "c": "Jordão é o lugar."
+      },
+      "hint": "Veja quem cai.",
+      "learningObjective": "Tocar as baixas.",
+      "evidence": [
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-11-efraim-contra-jefte-03",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Qual leitura melhor une livramento e orgulho tribal?",
+      "prompt": "Qual leitura melhor une livramento e orgulho tribal?",
+      "cue": "Qual leitura melhor une livramento e orgulho tribal?",
+      "verseRef": "Juízes 12:1",
+      "passageText": "Então, os homens de Efraim foram convocados e dirigiram-se a Zafom, dizendo a Jefté: Por que você atacou os filhos de Amom sem nos chamar para ir com você? Vamos queimar a sua casa enquanto você estiver dentro dela.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O livramento vira briga interna mortal"
+        },
+        {
+          "id": "b",
+          "text": "Efraim só celebra"
+        },
+        {
+          "id": "c",
+          "text": "Sem orgulho não há morte"
+        },
+        {
+          "id": "d",
+          "text": "Jefté inventa a ameaça"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Vamos queimar a sua casa",
+      "feedbackCorrect": "Orgulho mata.",
+      "feedbackWrong": {
+        "b": "Há briga.",
+        "c": "Há mortes.",
+        "d": "Há ameaça."
+      },
+      "hint": "Una vitória e chibolete.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 12:1"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-11-efraim-contra-jefte-04",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene o encadeamento da tragédia.",
+      "prompt": "Ordene o encadeamento da tragédia.",
+      "cue": "Ordene o encadeamento da tragédia.",
+      "verseRef": "Juízes 12:6",
+      "passageText": "Então lhe diziam: Diga, pois, chibolete, mas ele dizia sibolete, pois não conseguia exprimir bem a palavra, então o seguravam e o matavam nas travessias do Jordão, e naquele tempo caíram de Efraim quarenta e dois mil.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ameaça após a vitória"
+        },
+        {
+          "id": "b",
+          "text": "Teste nos vaus"
+        },
+        {
+          "id": "c",
+          "text": "Milhares caem"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "caíram de Efraim quarenta e dois mil",
+      "feedbackCorrect": "Ameaça, teste e mortes.",
+      "feedbackWrong": {
+        "default": "Comece pela ameaça."
+      },
+      "hint": "O que fecha as baixas?",
+      "learningObjective": "Encadear a tragédia",
+      "evidence": [
+        "Juízes 12:1",
+        "Juízes 12:6"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-11-efraim-contra-jefte-05",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Juízes 12:7, complete: julgou a Israel ___ anos.",
+      "prompt": "Em Juízes 12:7, complete: julgou a Israel ___ anos.",
+      "cue": "Em Juízes 12:7, complete: julgou a Israel ___ anos.",
+      "verseRef": "Juízes 12:7",
+      "passageText": "E Jefté, o gileadita, julgou a Israel seis anos; então faleceu e foi sepultado em uma das cidades de Gileade.",
+      "template": "E Jefté, o gileadita, julgou a Israel ___ anos; então faleceu e foi sepultado em uma das cidades de Gileade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "seis"
+        },
+        {
+          "id": "b",
+          "text": "quarenta"
+        },
+        {
+          "id": "c",
+          "text": "dois"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "julgou a Israel seis anos",
+      "feedbackCorrect": "Seis.",
+      "feedbackWrong": {
+        "b": "Não são quarenta.",
+        "c": "Não são dois."
+      },
+      "hint": "Veja a duração.",
+      "learningObjective": "Lembrar seis.",
+      "evidence": [
+        "Juízes 12:7"
+      ]
+    },
+    {
+      "id": "juizes-cap-pro-jzc-11-efraim-contra-jefte-06",
+      "trail": "juizes-cap",
+      "section": "jzc-11-efraim-contra-jefte",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Juízes 12:4 a Tiago 4:1?",
+      "prompt": "O que liga Juízes 12:4 a Tiago 4:1?",
+      "cue": "O que liga Juízes 12:4 a Tiago 4:1?",
+      "verseRef": "Juízes 12:4",
+      "passageText": "Jefté reuniu todos os homens de Gileade e pelejou contra os efraimitas; os homens de Gileade feriram os efraimitas, porque estes disseram \"Vocês são fugitivos de Efraim, gileaditas que habitam no meio de Efraim e Manassés.\"",
+      "passageA": {
+        "ref": "Juízes 12:4",
+        "text": "Jefté reuniu todos os homens de Gileade e pelejou contra os efraimitas; os homens de Gileade feriram os efraimitas, porque estes disseram \"Vocês são fugitivos de Efraim, gileaditas que habitam no meio de Efraim e Manassés.\""
+      },
+      "passageB": {
+        "ref": "Tiago 4:1",
+        "text": "De onde surgem as guerras e contendas que há entre vocês? Não provêm dos prazeres que militam dentro de vossa carne?"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Guerras entre vós"
+        },
+        {
+          "id": "b",
+          "text": "Paz entre tribos"
+        },
+        {
+          "id": "c",
+          "text": "Sem peleja"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "pelejou contra os efraimitas",
+      "feedbackCorrect": "Guerra interna.",
+      "feedbackWrong": {
+        "b": "Não há paz.",
+        "c": "Há peleja."
+      },
+      "hint": "Compare a briga.",
+      "learningObjective": "Ligar a Tiago.",
+      "evidence": [
+        "Juízes 12:4",
+        "Tiago 4:1"
+      ]
+    }
+  ]
+}

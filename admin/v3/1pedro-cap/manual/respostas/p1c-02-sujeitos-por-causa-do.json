@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "1 Pedro 2:13–18",
+    "passages": [
+      { "ref": "1 Pedro 2:13–18" },
+      { "ref": "1 Pedro 2:19–20" }
+    ],
+    "context": "Pedro orienta crentes sob autoridade humana: a sujeição é por amor ao Senhor, e a liberdade não serve de pretexto para o mal. Servos também são chamados a suportar com consciência diante de Deus.",
+    "keyword": "sujeitem-se",
+    "keywordGloss": "Colocar-se sob autoridade humana por amor ao Senhor, não por medo cego.",
+    "focusQuestion": "Onde sua liberdade tem virado pretexto, em vez de serviço a Deus?",
+    "reflectionPrompts": [
+      "Por amor ao Senhor",
+      "Liberdade sem pretexto",
+      "Sofrer fazendo o bem"
+    ],
+    "facts": [
+      {
+        "text": "Devem sujeitar-se a toda autoridade humana por amor ao Senhor.",
+        "evidenceRef": "1 Pedro 2:13",
+        "evidenceSpan": "Sujeitem-se, portanto, a toda a autoridade humana por amor ao Senhor"
+      },
+      {
+        "text": "Governantes são enviados para punir o mal e louvar quem faz o bem.",
+        "evidenceRef": "1 Pedro 2:14",
+        "evidenceSpan": "tanto para punir os que praticam o mal, quanto para louvor dos que fazem o bem"
+      },
+      {
+        "text": "A vontade de Deus é que, ao praticar o bem, emudeçam a ignorância dos insensatos.",
+        "evidenceRef": "1 Pedro 2:15",
+        "evidenceSpan": "ao praticar o bem, vocês façam emudecer a ignorância dos insensatos"
+      },
+      {
+        "text": "Como livres, não usem a liberdade por pretexto da maldade, mas como servos de Deus.",
+        "evidenceRef": "1 Pedro 2:16",
+        "evidenceSpan": "não usando todavia a liberdade por pretexto da maldade, mas vivendo como servos de Deus"
+      },
+      {
+        "text": "É digno de reconhecimento sofrer injustamente por causa da consciência diante de Deus.",
+        "evidenceRef": "1 Pedro 2:19",
+        "evidenceSpan": "por causa da consciência diante de Deus, suporta tristezas, sofrendo injustamente"
+      },
+      {
+        "text": "Sofrer com paciência ao praticar o bem é grato a Deus.",
+        "evidenceRef": "1 Pedro 2:20",
+        "evidenceSpan": "quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "liberdade",
+        "gloss": "Não é pretexto para maldade; vive-se como servo de Deus."
+      },
+      {
+        "term": "consciência",
+        "gloss": "Diante de Deus sustenta quem sofre injustamente."
+      },
+      {
+        "term": "grato",
+        "gloss": "Sofrer fazendo o bem com paciência agrada a Deus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Sujeição por amor ao Senhor",
+        "evidenceRef": "1 Pedro 2:13–14"
+      },
+      {
+        "label": "Praticar o bem emudece a ignorância",
+        "evidenceRef": "1 Pedro 2:15"
+      },
+      {
+        "label": "Liberdade como servos de Deus",
+        "evidenceRef": "1 Pedro 2:16–17"
+      },
+      {
+        "label": "Sofrer o bem com paciência agrada a Deus",
+        "evidenceRef": "1 Pedro 2:19–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "A sujeição e o bem praticado existem para emudecer a ignorância dos insensatos.",
+        "marker": "Porque",
+        "evidenceRef": "1 Pedro 2:15"
+      },
+      {
+        "kind": "contraste",
+        "text": "A liberdade não serve de pretexto da maldade, mas de vida como servos de Deus.",
+        "marker": "mas",
+        "evidenceRef": "1 Pedro 2:16"
+      },
+      {
+        "kind": "contraste",
+        "text": "Sofrer por pecar não traz louvor; sofrer ao fazer o bem é grato a Deus.",
+        "marker": "entretanto",
+        "evidenceRef": "1 Pedro 2:20"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Romanos 13:1", "bridge": "Sujeição às autoridades" },
+      { "ref": "Gálatas 5:13", "bridge": "Liberdade sem pretexto" },
+      { "ref": "Mateus 5:10", "bridge": "Bem-aventurados os perseguidos" }
+    ],
+    "misreadings": [
+      {
+        "text": "Liberdade cristã autoriza qualquer conduta, desde que se diga livre.",
+        "why": "O texto proíbe usar a liberdade por pretexto da maldade."
+      },
+      {
+        "text": "Só vale sujeitar-se a senhores bons; os difíceis podem ser ignorados.",
+        "why": "Servos devem sujeitar-se também aos difíceis de lidar."
+      },
+      {
+        "text": "Sofrer por pecar e sofrer fazendo o bem têm o mesmo valor diante de Deus.",
+        "why": "O texto distingue: só o sofrer ao praticar o bem é grato a Deus."
+      }
+    ],
+    "centralInsight": "Sujeitai-vos por causa do Senhor; sofrer fazendo o bem é agradável a Deus.",
+    "anchorQuestion": "Por causa de quem 1 Pedro 2:13 manda sujeitar-se à autoridade humana?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Pedro 2:13, a sujeição a toda autoridade humana é pedida por amor ao Senhor.",
+      "verseRef": "1 Pedro 2:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "por amor ao Senhor",
+      "feedbackCorrect": "O motivo da sujeição é o amor ao Senhor.",
+      "feedbackWrong": {
+        "false": "O versículo diz explicitamente: por amor ao Senhor."
+      },
+      "hint": "Veja a frase depois de autoridade humana.",
+      "learningObjective": "Observar o motivo da sujeição.",
+      "evidence": ["1 Pedro 2:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Pedro 2:16, toque o que não deve servir de pretexto da maldade.",
+      "verseRef": "1 Pedro 2:16",
+      "options": [
+        { "id": "a", "text": "liberdade" },
+        { "id": "b", "text": "servos" },
+        { "id": "c", "text": "pessoas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não usando todavia a liberdade por pretexto da maldade",
+      "feedbackCorrect": "A liberdade não pode ser usada como pretexto da maldade.",
+      "feedbackWrong": {
+        "b": "Servos é o modo correto de viver a liberdade.",
+        "c": "Pessoas livres descreve o sujeito, não o pretexto."
+      },
+      "hint": "Veja o que não se usa por pretexto da maldade.",
+      "learningObjective": "Identificar o que não serve de pretexto.",
+      "evidence": ["1 Pedro 2:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Pedro 2:15, o que a vontade de Deus quer que o bem praticado faça?",
+      "verseRef": "1 Pedro 2:15",
+      "options": [
+        { "id": "a", "text": "Emudecer a ignorância dos insensatos" },
+        { "id": "b", "text": "Punir os que praticam o mal" },
+        { "id": "c", "text": "Honrar só o rei" },
+        { "id": "d", "text": "Usar a liberdade como pretexto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "façam emudecer a ignorância dos insensatos",
+      "feedbackCorrect": "Praticar o bem deve emudecer a ignorância dos insensatos.",
+      "feedbackWrong": {
+        "b": "Punir o mal é papel dos governantes no v.14.",
+        "c": "Honrar o rei aparece no v.17, junto com outros deveres.",
+        "d": "Isso é o que o v.16 proíbe."
+      },
+      "hint": "Leia o fim do versículo 15.",
+      "learningObjective": "Reconhecer o efeito do bem praticado.",
+      "evidence": ["1 Pedro 2:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Pedro 2:17 na ordem do texto.",
+      "verseRef": "1 Pedro 2:17",
+      "options": [
+        { "id": "a", "text": "Honrem a todos" },
+        { "id": "b", "text": "Amem os irmãos" },
+        { "id": "c", "text": "Temam a Deus. Honrem o rei" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Honrem a todos. Amem os irmãos. Temam a Deus. Honrem o rei",
+      "feedbackCorrect": "A sequência vai de todos aos irmãos, a Deus e ao rei.",
+      "feedbackWrong": {
+        "default": "Comece com Honrem a todos; o rei fecha a lista."
+      },
+      "hint": "São quatro imperativos em sequência.",
+      "learningObjective": "Seguir a ordem dos deveres do versículo 17.",
+      "evidence": ["1 Pedro 2:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Pedro 2:20, complete: isto é ___ a Deus.",
+      "verseRef": "1 Pedro 2:20",
+      "options": [
+        { "id": "a", "text": "grato" },
+        { "id": "b", "text": "livre" },
+        { "id": "c", "text": "difícil" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isto é grato a Deus",
+      "feedbackCorrect": "Sofrer ao praticar o bem com paciência é grato a Deus.",
+      "feedbackWrong": {
+        "b": "Livre descreve as pessoas no v.16, não a avaliação de Deus.",
+        "c": "Difícil aparece nos senhores do v.18, não aqui."
+      },
+      "hint": "É a palavra final da avaliação divina.",
+      "learningObjective": "Lembrar como Deus avalia o sofrer fazendo o bem.",
+      "evidence": ["1 Pedro 2:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Pedro 2:13 comunica que se liga a este contexto?",
+      "verseRef": "1 Pedro 2:13",
+      "passageA": { "ref": "1 Pedro 2:13" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Pedro ensina crentes sob autoridades humanas a viver livres como servos de Deus e a sofrer o bem com paciência."
+      },
+      "options": [
+        { "id": "a", "text": "Sujeição por amor ao Senhor" },
+        { "id": "b", "text": "Liberdade como pretexto" },
+        { "id": "c", "text": "Sofrer por pecar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por amor ao Senhor",
+      "feedbackCorrect": "No meio das autoridades, o motivo da sujeição é o Senhor.",
+      "feedbackWrong": {
+        "b": "Isso é o que o texto proíbe.",
+        "c": "Sofrer por pecar não traz louvor no v.20."
+      },
+      "hint": "Veja a frase por amor ao…",
+      "learningObjective": "Ligar o contexto à sujeição por amor ao Senhor.",
+      "evidence": ["1 Pedro 2:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Pedro 2:16, a liberdade cristã pode ser usada como pretexto da maldade.",
+      "verseRef": "1 Pedro 2:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "não usando todavia a liberdade por pretexto da maldade",
+      "feedbackCorrect": "O texto proíbe usar a liberdade como pretexto da maldade.",
+      "feedbackWrong": {
+        "true": "A negação é clara: não usando a liberdade por pretexto da maldade."
+      },
+      "hint": "Leia a restrição depois de pessoas livres.",
+      "learningObjective": "Ver o contraste entre liberdade e pretexto.",
+      "evidence": ["1 Pedro 2:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Pedro 2:16, toque a palavra que marca o contraste com o pretexto da maldade.",
+      "verseRef": "1 Pedro 2:16",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "livres" },
+        { "id": "c", "text": "maldade" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas vivendo como servos de Deus",
+      "feedbackCorrect": "Mas vira a liberdade para o serviço a Deus.",
+      "feedbackWrong": {
+        "b": "Livres descreve o ponto de partida, não o contraste.",
+        "c": "Maldade é o que se rejeita; o marcador é mas."
+      },
+      "hint": "Procure a partícula antes de vivendo como servos.",
+      "learningObjective": "Tocar o marcador do contraste da liberdade.",
+      "evidence": ["1 Pedro 2:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação 1 Pedro 2:20 estabelece entre tipos de sofrimento?",
+      "verseRef": "1 Pedro 2:20",
+      "options": [
+        { "id": "a", "text": "Só sofrer ao fazer o bem com paciência é grato a Deus" },
+        { "id": "b", "text": "Sofrer por pecar e pelo bem têm o mesmo louvor" },
+        { "id": "c", "text": "Sofrer por pecar é o que Deus mais agradece" },
+        { "id": "d", "text": "Nenhum sofrimento importa se houver paciência" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando praticais o bem, sois igualmente afligidos e o suportais com paciência, isto é grato a Deus",
+      "feedbackCorrect": "O contraste mostra que o louvor cabe ao sofrer fazendo o bem.",
+      "feedbackWrong": {
+        "b": "O texto pergunta que louvor há no sofrer por pecar.",
+        "c": "Sofrer por pecar não recebe louvor.",
+        "d": "A paciência importa no contexto de praticar o bem."
+      },
+      "hint": "Compare as duas perguntas do versículo.",
+      "learningObjective": "Compreender o contraste entre sofrer por pecar e pelo bem.",
+      "evidence": ["1 Pedro 2:20"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho sobre autoridade e sofrimento.",
+      "verseRef": "1 Pedro 2:15–16",
+      "options": [
+        { "id": "a", "text": "Sujeição por amor ao Senhor" },
+        { "id": "b", "text": "Praticar o bem emudece a ignorância" },
+        { "id": "c", "text": "Liberdade como servos de Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "vivendo como servos de Deus",
+      "feedbackCorrect": "Da sujeição ao bem que emudece, até a liberdade servil a Deus.",
+      "feedbackWrong": {
+        "default": "Comece pela sujeição; a liberdade como servos fecha."
+      },
+      "hint": "Siga a ordem dos versículos 13–16.",
+      "learningObjective": "Ordenar a estrutura da instrução civil.",
+      "evidence": ["1 Pedro 2:13", "1 Pedro 2:15", "1 Pedro 2:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Pedro 2:15, complete: Porque assim é a vontade de Deus, que, ao praticar o ___.",
+      "verseRef": "1 Pedro 2:15",
+      "options": [
+        { "id": "a", "text": "bem" },
+        { "id": "b", "text": "mal" },
+        { "id": "c", "text": "rei" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ao praticar o bem, vocês façam emudecer a ignorância dos insensatos",
+      "feedbackCorrect": "A vontade de Deus passa por praticar o bem.",
+      "feedbackWrong": {
+        "b": "O mal é o que os governantes punem, não o que se pratica.",
+        "c": "Rei aparece no v.13 e 17, não nesta frase."
+      },
+      "hint": "É o que se pratica para emudecer a ignorância.",
+      "learningObjective": "Lembrar a ação que expressa a vontade de Deus.",
+      "evidence": ["1 Pedro 2:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Pedro 2:16 a Gálatas 5:13?",
+      "verseRef": "1 Pedro 2:16",
+      "passageA": { "ref": "1 Pedro 2:16" },
+      "passageB": { "ref": "Gálatas 5:13" },
+      "options": [
+        { "id": "a", "text": "Liberdade sem pretexto" },
+        { "id": "b", "text": "Honrar somente o rei" },
+        { "id": "c", "text": "Sofrer por pecar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não usando todavia a liberdade por pretexto da maldade",
+      "feedbackCorrect": "Nos dois textos, a liberdade não vira ocasião para a carne/maldade.",
+      "feedbackWrong": {
+        "b": "Honrar o rei é um dever local; a ponte é a liberdade.",
+        "c": "Sofrer por pecar não é o tema de Gálatas 5:13."
+      },
+      "hint": "Compare o uso da liberdade nos dois textos.",
+      "learningObjective": "Ligar a liberdade responsável em Pedro e Paulo.",
+      "evidence": ["1 Pedro 2:16", "Gálatas 5:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo 1 Pedro 2:18, servos só precisam sujeitar-se aos senhores bons e cordatos.",
+      "verseRef": "1 Pedro 2:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "não somente aos bons e cordatos, mas também aos difíceis de lidar",
+      "feedbackCorrect": "O texto inclui também os difíceis de lidar.",
+      "feedbackWrong": {
+        "true": "A frase não somente… mas também inclui os difíceis."
+      },
+      "hint": "Leia o alcance depois de seus senhores.",
+      "learningObjective": "Rejeitar a leitura que limita a sujeição aos bons.",
+      "evidence": ["1 Pedro 2:18"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Pedro 2:19, toque o trecho que sustenta por que sofrer injustamente é digno de reconhecimento.",
+      "verseRef": "1 Pedro 2:19",
+      "options": [
+        { "id": "a", "text": "consciência diante" },
+        { "id": "b", "text": "tristezas" },
+        { "id": "c", "text": "alguém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa da consciência diante de Deus",
+      "feedbackCorrect": "O reconhecimento vem da consciência diante de Deus.",
+      "feedbackWrong": {
+        "b": "Tristezas descrevem o sofrimento, não o motivo do reconhecimento.",
+        "c": "Alguém é genérico; o motivo é a consciência diante de Deus."
+      },
+      "hint": "Procure a frase por causa da…",
+      "learningObjective": "Sustentar o motivo do sofrer injustamente.",
+      "evidence": ["1 Pedro 2:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 1 Pedro 2:16 e 2:20 sustentam juntos?",
+      "verseRef": "1 Pedro 2:16",
+      "options": [
+        { "id": "a", "text": "Liberdade serve a Deus; sofrer o bem com paciência lhe é grato" },
+        { "id": "b", "text": "Liberdade autoriza o mal se houver paciência depois" },
+        { "id": "c", "text": "Só senhores bons merecem sujeição e honra" },
+        { "id": "d", "text": "Sofrer por pecar é tão grato quanto sofrer pelo bem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vivendo como servos de Deus",
+      "feedbackCorrect": "Liberdade como servos e sofrer o bem formam o padrão do trecho.",
+      "feedbackWrong": {
+        "b": "O pretexto da maldade é proibido.",
+        "c": "O texto inclui senhores difíceis.",
+        "d": "O v.20 distingue claramente os dois casos."
+      },
+      "hint": "Una o mas do v.16 ao isto é grato do v.20.",
+      "learningObjective": "Escolher a leitura que une liberdade e sofrimento.",
+      "evidence": ["1 Pedro 2:16", "1 Pedro 2:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o fio da sujeição ao sofrer grato a Deus?",
+      "verseRef": "1 Pedro 2:19–20",
+      "options": [
+        { "id": "a", "text": "Autoridade humana sob o Senhor" },
+        { "id": "b", "text": "Viver livres como servos de Deus" },
+        { "id": "c", "text": "Paciência no bem agrada a Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "isto é grato a Deus",
+      "feedbackCorrect": "Da autoridade sob o Senhor à liberdade servil, até a paciência no bem.",
+      "feedbackWrong": {
+        "default": "Comece pela autoridade; o agradar a Deus fecha o fio."
+      },
+      "hint": "Siga a lógica dos vv.13, 16 e 20.",
+      "learningObjective": "Encadear sujeição, liberdade e sofrimento.",
+      "evidence": ["1 Pedro 2:13", "1 Pedro 2:16", "1 Pedro 2:20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Pedro 2:19, complete: por causa da ___ diante de Deus.",
+      "verseRef": "1 Pedro 2:19",
+      "options": [
+        { "id": "a", "text": "consciência" },
+        { "id": "b", "text": "liberdade" },
+        { "id": "c", "text": "ignorância" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa da consciência diante de Deus",
+      "feedbackCorrect": "A consciência diante de Deus sustenta o sofrer injusto.",
+      "feedbackWrong": {
+        "b": "Liberdade é o tema do v.16, não o motivo aqui.",
+        "c": "Ignorância é dos insensatos no v.15."
+      },
+      "hint": "É o que fica diante de Deus no versículo.",
+      "learningObjective": "Lembrar o termo que sustenta o sofrer injusto.",
+      "evidence": ["1 Pedro 2:19"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Pedro 2:13 a Romanos 13:1?",
+      "verseRef": "1 Pedro 2:13",
+      "passageA": { "ref": "1 Pedro 2:13" },
+      "passageB": { "ref": "Romanos 13:1" },
+      "options": [
+        { "id": "a", "text": "Sujeição às autoridades" },
+        { "id": "b", "text": "Pretexto da maldade" },
+        { "id": "c", "text": "Sofrer por pecar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sujeitem-se, portanto, a toda a autoridade humana",
+      "feedbackCorrect": "Pedro e Paulo pedem sujeição às autoridades humanas.",
+      "feedbackWrong": {
+        "b": "Pretexto da maldade é o que Pedro rejeita.",
+        "c": "Sofrer por pecar não é a ponte com Romanos 13."
+      },
+      "hint": "Compare o verbo de sujeição nos dois textos.",
+      "learningObjective": "Ligar a sujeição civil em Pedro e Romanos.",
+      "evidence": ["1 Pedro 2:13", "Romanos 13:1"]
+    }
+  ]
+}

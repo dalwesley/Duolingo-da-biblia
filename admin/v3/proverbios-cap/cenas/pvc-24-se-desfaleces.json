@@ -1,0 +1,925 @@
+{
+  "study": {
+    "slug": "pvc-24-se-desfaleces",
+    "passageRef": "Provérbios 24:10–15",
+    "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena. Livre os que estão sendo levados à morte e salve os que vacilam em seu caminho para a morte. Se disseres: \"Eis que não o sabemos\", não perceberá aquele que pesa os corações? E não saberá aquele que atenta para a tua alma? Ele pagará ao homem segundo as suas obras. Come o mel, meu filho, pois é saudável, e o favo, porque é doce ao teu paladar. Assim é a sabedoria para a sua alma; se a encontrar, haverá um futuro promissor, e a sua esperança não será frustrada. Não te coloques à espreita, ó ímpio, contra a morada do justo nem destruas o seu lar.",
+    "passages": [
+      {
+        "ref": "Provérbios 24:10–15",
+        "text": "Se você se mostrar fraco no dia da angústia, sua força é pequena. Livre os que estão sendo levados à morte e salve os que vacilam em seu caminho para a morte. Se disseres: \"Eis que não o sabemos\", não perceberá aquele que pesa os corações? E não saberá aquele que atenta para a tua alma? Ele pagará ao homem segundo as suas obras. Come o mel, meu filho, pois é saudável, e o favo, porque é doce ao teu paladar. Assim é a sabedoria para a sua alma; se a encontrar, haverá um futuro promissor, e a sua esperança não será frustrada. Não te coloques à espreita, ó ímpio, contra a morada do justo nem destruas o seu lar."
+      },
+      {
+        "ref": "Provérbios 24:16–20",
+        "text": "Porque o justo cairá sete vezes e se levantará; mas os perversos serão derrubados pela calamidade. Não te alegres quando o teu inimigo cair, nem se regozije o teu coração quando ele tropeçar. Para que o Senhor não veja isso, não lhe desagrade e desvie dele a sua ira. Não se aflija por causa dos malignos nem tenha inveja dos perversos. Porque o maligno não terá um futuro favorável, e a lâmpada dos ímpios se apagará."
+      }
+    ],
+    "context": "A força se prova na angústia; o justo cai e se levanta; não há alegria na queda do inimigo nem inveja dos perversos.",
+    "keyword": "Força",
+    "keywordGloss": "Mostrada no dia da angústia: quem desfalece revela força pequena.",
+    "focusQuestion": "No dia da angústia, sua força tem sido estreita ou firme no resgate do fraco?",
+    "reflectionPrompts": [
+      "Dia da angústia",
+      "Livra os levados",
+      "Justo que se levanta"
+    ],
+    "facts": [
+      {
+        "text": "Se alguém se mostra fraco no dia da angústia, sua força é pequena.",
+        "evidenceRef": "Provérbios 24:10",
+        "evidenceSpan": "sua força é pequena"
+      },
+      {
+        "text": "Deve livrar os que estão sendo levados à morte.",
+        "evidenceRef": "Provérbios 24:11",
+        "evidenceSpan": "Livre os que estão sendo levados à morte"
+      },
+      {
+        "text": "O justo cairá sete vezes e se levantará.",
+        "evidenceRef": "Provérbios 24:16",
+        "evidenceSpan": "o justo cairá sete vezes e se levantará"
+      },
+      {
+        "text": "Não se alegre quando o inimigo cair.",
+        "evidenceRef": "Provérbios 24:17",
+        "evidenceSpan": "Não te alegres quando o teu inimigo cair"
+      },
+      {
+        "text": "A sabedoria, se encontrada, traz futuro e esperança.",
+        "evidenceRef": "Provérbios 24:14",
+        "evidenceSpan": "a sua esperança não será frustrada"
+      },
+      {
+        "text": "A lâmpada dos ímpios se apagará.",
+        "evidenceRef": "Provérbios 24:20",
+        "evidenceSpan": "a lâmpada dos ímpios se apagará"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "angústia",
+        "gloss": "Dia que prova se a força é grande ou pequena."
+      },
+      {
+        "term": "justo",
+        "gloss": "Quem cai sete vezes e ainda se levanta."
+      },
+      {
+        "term": "esperança",
+        "gloss": "Fruto de achar a sabedoria: não será frustrada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Força pequena na angústia",
+        "evidenceRef": "Provérbios 24:10"
+      },
+      {
+        "label": "Resgate dos levados à morte",
+        "evidenceRef": "Provérbios 24:11–12"
+      },
+      {
+        "label": "Sabedoria, justo e inimigo",
+        "evidenceRef": "Provérbios 24:13–18"
+      },
+      {
+        "label": "Sem inveja dos perversos",
+        "evidenceRef": "Provérbios 24:19–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porque o justo cairá sete vezes e se levantará.",
+        "marker": "Porque",
+        "evidenceRef": "Provérbios 24:16"
+      },
+      {
+        "kind": "propósito",
+        "text": "Para que o Senhor não veja a alegria na queda do inimigo.",
+        "marker": "Para que",
+        "evidenceRef": "Provérbios 24:18"
+      },
+      {
+        "kind": "contraste",
+        "text": "O justo se levanta; os perversos são derrubados.",
+        "marker": "mas",
+        "evidenceRef": "Provérbios 24:16"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Miqueias 7:8",
+        "bridge": "Caí, mas me levantarei",
+        "text": "Não te alegres sobre mim, ó inimiga; ainda que eu tenha caído, eu me levantarei; ainda que eu habite nas trevas, o Senhor será a minha luz."
+      },
+      {
+        "ref": "Romanos 12:19",
+        "bridge": "Não vos vingueis",
+        "text": "Não se vinguem, amados, mas deixem espaço para a ira; porque está escrito: A mim pertence a vingança; eu retribuirei, diz o Senhor."
+      },
+      {
+        "ref": "Gálatas 6:2",
+        "bridge": "Levai as cargas uns dos outros",
+        "text": "Levem as cargas uns dos outros e, assim, estarão cumprindo a lei de Cristo."
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Desfalecer na crise não diz nada sobre a força.",
+        "why": "24:10 liga fraqueza no dia da angústia a força pequena."
+      },
+      {
+        "text": "Pode-se ignorar quem é levado à morte se disser \"não sei\".",
+        "why": "24:12 diz que quem pesa os corações sabe e pagará."
+      },
+      {
+        "text": "Alegria na queda do inimigo é virtude.",
+        "why": "24:17–18 proíbe e avisa que o Senhor pode desviar a ira."
+      }
+    ],
+    "centralInsight": "Força se prova na crise; justiça se prova no resgate do fraco.",
+    "anchorQuestion": "O que Provérbios 24:10 diz sobre quem se mostra fraco na angústia?",
+    "relatedVerses": [
+      {
+        "reference": "Miqueias 7:8",
+        "reason": "Caí, mas me levantarei"
+      },
+      {
+        "reference": "Romanos 12:19",
+        "reason": "Não vos vingueis"
+      },
+      {
+        "reference": "Gálatas 6:2",
+        "reason": "Levai as cargas uns dos outros"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "proverbios-cap-sem-pvc-24-se-desfaleces-01",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Provérbios 24:10, quem se mostra fraco no dia da angústia revela força pequena.",
+      "prompt": "Em Provérbios 24:10, quem se mostra fraco no dia da angústia revela força pequena.",
+      "cue": "Em Provérbios 24:10, quem se mostra fraco no dia da angústia revela força pequena.",
+      "verseRef": "Provérbios 24:10",
+      "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "sua força é pequena",
+      "feedbackCorrect": "O versículo liga fraqueza na angústia a força pequena.",
+      "feedbackWrong": {
+        "false": "Releia 24:10: sua força é pequena."
+      },
+      "hint": "Veja o resultado da fraqueza.",
+      "learningObjective": "Observar a prova da força.",
+      "evidence": [
+        "Provérbios 24:10"
+      ]
+    },
+    {
+      "id": "proverbios-cap-sem-pvc-24-se-desfaleces-02",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Provérbios 24:10, toque o que se revela pequeno.",
+      "prompt": "Em Provérbios 24:10, toque o que se revela pequeno.",
+      "cue": "Em Provérbios 24:10, toque o que se revela pequeno.",
+      "verseRef": "Provérbios 24:10",
+      "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena.",
+      "options": [
+        {
+          "id": "a",
+          "text": "sua força"
+        },
+        {
+          "id": "b",
+          "text": "angústia"
+        },
+        {
+          "id": "c",
+          "text": "você"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "sua força é pequena",
+      "feedbackCorrect": "O que é pequena é a força.",
+      "feedbackWrong": {
+        "b": "A angústia é o dia da prova.",
+        "c": "Você é o sujeito, não o predicado."
+      },
+      "hint": "Palavras finais do versículo.",
+      "learningObjective": "Identificar o que a crise revela.",
+      "evidence": [
+        "Provérbios 24:10"
+      ]
+    },
+    {
+      "id": "proverbios-cap-sem-pvc-24-se-desfaleces-03",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Provérbios 24:11, o que se deve fazer?",
+      "prompt": "Segundo Provérbios 24:11, o que se deve fazer?",
+      "cue": "Segundo Provérbios 24:11, o que se deve fazer?",
+      "verseRef": "Provérbios 24:11",
+      "passageText": "Livre os que estão sendo levados à morte e salve os que vacilam em seu caminho para a morte.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Livrar os levados à morte"
+        },
+        {
+          "id": "b",
+          "text": "Alegrar-se com a queda do inimigo"
+        },
+        {
+          "id": "c",
+          "text": "Invejar os perversos"
+        },
+        {
+          "id": "d",
+          "text": "Destruir a morada do justo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Livre os que estão sendo levados à morte",
+      "feedbackCorrect": "O mandato é livrar e salvar os que vão à morte.",
+      "feedbackWrong": {
+        "b": "24:17 proíbe essa alegria.",
+        "c": "24:19 manda não ter inveja.",
+        "d": "24:15 proíbe destruir o lar do justo."
+      },
+      "hint": "Verbo de comando no início.",
+      "learningObjective": "Observar o dever de resgate.",
+      "evidence": [
+        "Provérbios 24:11"
+      ]
+    },
+    {
+      "id": "proverbios-cap-sem-pvc-24-se-desfaleces-04",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Provérbios 24:10 na ordem do texto.",
+      "prompt": "Monte Provérbios 24:10 na ordem do texto.",
+      "cue": "Monte Provérbios 24:10 na ordem do texto.",
+      "verseRef": "Provérbios 24:10",
+      "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Se você se mostrar fraco"
+        },
+        {
+          "id": "b",
+          "text": "no dia da angústia"
+        },
+        {
+          "id": "c",
+          "text": "sua força é pequena"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "sua força é pequena",
+      "feedbackCorrect": "Fraqueza na angústia revela força pequena.",
+      "feedbackWrong": {
+        "default": "Comece pela condição Se você."
+      },
+      "hint": "O versículo abre com Se.",
+      "learningObjective": "Seguir a ordem da prova.",
+      "evidence": [
+        "Provérbios 24:10"
+      ]
+    },
+    {
+      "id": "proverbios-cap-sem-pvc-24-se-desfaleces-05",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Provérbios 24:16, o justo cairá sete vezes e quê?",
+      "prompt": "Em Provérbios 24:16, o justo cairá sete vezes e quê?",
+      "cue": "Em Provérbios 24:16, o justo cairá sete vezes e quê?",
+      "verseRef": "Provérbios 24:16",
+      "passageText": "Porque o justo cairá sete vezes e se levantará; mas os perversos serão derrubados pela calamidade.",
+      "template": "Porque o justo cairá sete vezes e se ___; mas os perversos serão derrubados pela calamidade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "levantará"
+        },
+        {
+          "id": "b",
+          "text": "desistirá"
+        },
+        {
+          "id": "c",
+          "text": "fugirá"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "e se levantará",
+      "feedbackCorrect": "O justo se levantará.",
+      "feedbackWrong": {
+        "b": "Não desiste; levanta-se.",
+        "c": "Não foge; levanta-se."
+      },
+      "hint": "Verbo após sete vezes.",
+      "learningObjective": "Lembrar a recuperação do justo.",
+      "evidence": [
+        "Provérbios 24:16"
+      ]
+    },
+    {
+      "id": "proverbios-cap-sem-pvc-24-se-desfaleces-06",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Provérbios 24:10 comunica que se liga a este contexto?",
+      "prompt": "O que Provérbios 24:10 comunica que se liga a este contexto?",
+      "cue": "O que Provérbios 24:10 comunica que se liga a este contexto?",
+      "verseRef": "Provérbios 24:10",
+      "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena.",
+      "passageA": {
+        "ref": "Provérbios 24:10",
+        "text": "sua força é pequena"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A força se prova no dia da angústia."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Força sem prova"
+        },
+        {
+          "id": "b",
+          "text": "Crise revela a força"
+        },
+        {
+          "id": "c",
+          "text": "Angústia irrelevante"
+        }
+      ],
+      "correctOptionId": "b",
+      "correctAnswer": "b",
+      "evidenceSpan": "sua força é pequena",
+      "feedbackCorrect": "A fraqueza na crise liga o verso à prova da força.",
+      "feedbackWrong": {
+        "a": "A prova acontece na angústia.",
+        "c": "A angústia é o dia decisivo."
+      },
+      "hint": "Pense no que a crise mostra.",
+      "learningObjective": "Ligar 24:10 à prova da força.",
+      "evidence": [
+        "Provérbios 24:10"
+      ]
+    },
+    {
+      "id": "proverbios-cap-cam-pvc-24-se-desfaleces-01",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Provérbios 24:17–18, alegrar-se com a queda do inimigo é apresentado como atitude segura diante do Senhor.",
+      "prompt": "Em Provérbios 24:17–18, alegrar-se com a queda do inimigo é apresentado como atitude segura diante do Senhor.",
+      "cue": "Em Provérbios 24:17–18, alegrar-se com a queda do inimigo é apresentado como atitude segura diante do Senhor.",
+      "verseRef": "Provérbios 24:17–18",
+      "passageText": "Não te alegres quando o teu inimigo cair, nem se regozije o teu coração quando ele tropeçar. Para que o Senhor não veja isso, não lhe desagrade e desvie dele a sua ira.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Não te alegres quando o teu inimigo cair",
+      "feedbackCorrect": "O texto proíbe a alegria e avisa sobre a ira do Senhor.",
+      "feedbackWrong": {
+        "true": "Releia 24:17–18: não te alegres."
+      },
+      "hint": "Veja o aviso e o Para que.",
+      "learningObjective": "Compreender o propósito do aviso.",
+      "evidence": [
+        "Provérbios 24:17",
+        "Provérbios 24:18"
+      ]
+    },
+    {
+      "id": "proverbios-cap-cam-pvc-24-se-desfaleces-02",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Provérbios 24:18, toque o trecho que marca o propósito do aviso.",
+      "prompt": "Em Provérbios 24:18, toque o trecho que marca o propósito do aviso.",
+      "cue": "Em Provérbios 24:18, toque o trecho que marca o propósito do aviso.",
+      "verseRef": "Provérbios 24:18",
+      "passageText": "Para que o Senhor não veja isso, não lhe desagrade e desvie dele a sua ira.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "ira"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Para que o Senhor não veja isso",
+      "feedbackCorrect": "\"Para que\" introduz o propósito.",
+      "feedbackWrong": {
+        "b": "Senhor é quem vê, não o marcador.",
+        "c": "A ira é o que pode ser desviada."
+      },
+      "hint": "Palavras que abrem o versículo.",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": [
+        "Provérbios 24:18"
+      ]
+    },
+    {
+      "id": "proverbios-cap-cam-pvc-24-se-desfaleces-03",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação Provérbios 24:16 estabelece entre justo e perversos?",
+      "prompt": "Que relação Provérbios 24:16 estabelece entre justo e perversos?",
+      "cue": "Que relação Provérbios 24:16 estabelece entre justo e perversos?",
+      "verseRef": "Provérbios 24:16",
+      "passageText": "Porque o justo cairá sete vezes e se levantará; mas os perversos serão derrubados pela calamidade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contraste: o justo se levanta; os perversos caem"
+        },
+        {
+          "id": "b",
+          "text": "Igualdade total entre justo e perverso"
+        },
+        {
+          "id": "c",
+          "text": "Só o perverso se levanta sete vezes"
+        },
+        {
+          "id": "d",
+          "text": "O justo nunca cai"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "o justo cairá sete vezes e se levantará",
+      "feedbackCorrect": "O \"mas\" opõe levantar-se à derrubada dos perversos.",
+      "feedbackWrong": {
+        "b": "Há contraste claro.",
+        "c": "Quem se levanta é o justo.",
+        "d": "Ele cai, mas se levanta."
+      },
+      "hint": "Leia o mas no meio do verso.",
+      "learningObjective": "Relacionar queda e levantamento.",
+      "evidence": [
+        "Provérbios 24:16"
+      ]
+    },
+    {
+      "id": "proverbios-cap-cam-pvc-24-se-desfaleces-04",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Como avança o ensino em Provérbios 24:10–20?",
+      "prompt": "Como avança o ensino em Provérbios 24:10–20?",
+      "cue": "Como avança o ensino em Provérbios 24:10–20?",
+      "verseRef": "Provérbios 24:10–11",
+      "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena. Livre os que estão sendo levados à morte e salve os que vacilam em seu caminho para a morte.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Força pequena na angústia"
+        },
+        {
+          "id": "b",
+          "text": "Resgate dos levados à morte"
+        },
+        {
+          "id": "c",
+          "text": "Sem inveja dos perversos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "sua força é pequena",
+      "feedbackCorrect": "Da prova da força ao resgate e à recusa da inveja.",
+      "feedbackWrong": {
+        "default": "Comece pela força na angústia."
+      },
+      "hint": "O fim fala dos malignos e da lâmpada.",
+      "learningObjective": "Compreender o movimento do trecho.",
+      "evidence": [
+        "Provérbios 24:10",
+        "Provérbios 24:20"
+      ]
+    },
+    {
+      "id": "proverbios-cap-cam-pvc-24-se-desfaleces-05",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Provérbios 24:18, que expressão marca o propósito?",
+      "prompt": "Em Provérbios 24:18, que expressão marca o propósito?",
+      "cue": "Em Provérbios 24:18, que expressão marca o propósito?",
+      "verseRef": "Provérbios 24:18",
+      "passageText": "Para que o Senhor não veja isso, não lhe desagrade e desvie dele a sua ira.",
+      "template": "___ que o Senhor não veja isso, não lhe desagrade e desvie dele a sua ira.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para"
+        },
+        {
+          "id": "b",
+          "text": "Embora"
+        },
+        {
+          "id": "c",
+          "text": "Jamais"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Para que o Senhor não veja isso",
+      "feedbackCorrect": "\"Para que\" carrega o propósito do aviso.",
+      "feedbackWrong": {
+        "b": "Não é Embora; é Para que.",
+        "c": "Não é Jamais; é Para que."
+      },
+      "hint": "Abertura do versículo.",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": [
+        "Provérbios 24:18"
+      ]
+    },
+    {
+      "id": "proverbios-cap-cam-pvc-24-se-desfaleces-06",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Provérbios 24:16 a Miqueias 7:8?",
+      "prompt": "O que liga Provérbios 24:16 a Miqueias 7:8?",
+      "cue": "O que liga Provérbios 24:16 a Miqueias 7:8?",
+      "verseRef": "Provérbios 24:16",
+      "passageText": "Porque o justo cairá sete vezes e se levantará; mas os perversos serão derrubados pela calamidade.",
+      "passageA": {
+        "ref": "Provérbios 24:16",
+        "text": "o justo cairá sete vezes e se levantará"
+      },
+      "passageB": {
+        "ref": "Miqueias 7:8",
+        "text": "Não te alegres sobre mim, ó inimiga; ainda que eu tenha caído, eu me levantarei; ainda que eu habite nas trevas, o Senhor será a minha luz."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Caí, mas me levantarei"
+        },
+        {
+          "id": "b",
+          "text": "Nunca haverá queda"
+        },
+        {
+          "id": "c",
+          "text": "Só o ímpio se ergue"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "e se levantará",
+      "feedbackCorrect": "Nos dois textos há queda seguida de levantamento.",
+      "feedbackWrong": {
+        "b": "Há queda, depois levantamento.",
+        "c": "Quem se ergue é o justo."
+      },
+      "hint": "Compare queda e recuperação.",
+      "learningObjective": "Cruzar o justo que se levanta.",
+      "evidence": [
+        "Provérbios 24:16",
+        "Miqueias 7:8"
+      ]
+    },
+    {
+      "id": "proverbios-cap-pro-pvc-24-se-desfaleces-01",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Provérbios 24:12, quem pesa os corações perceberá a desculpa de não saber.",
+      "prompt": "Em Provérbios 24:12, quem pesa os corações perceberá a desculpa de não saber.",
+      "cue": "Em Provérbios 24:12, quem pesa os corações perceberá a desculpa de não saber.",
+      "verseRef": "Provérbios 24:12",
+      "passageText": "Se disseres: \"Eis que não o sabemos\", não perceberá aquele que pesa os corações? E não saberá aquele que atenta para a tua alma? Ele pagará ao homem segundo as suas obras.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "não perceberá aquele que pesa os corações?",
+      "feedbackCorrect": "A pergunta retórica afirma que ele perceberá e pagará.",
+      "feedbackWrong": {
+        "false": "Releia 24:12: quem pesa os corações perceberá."
+      },
+      "hint": "Leia a pergunta sobre quem pesa os corações.",
+      "learningObjective": "Sustentar a leitura da prestação de contas.",
+      "evidence": [
+        "Provérbios 24:12"
+      ]
+    },
+    {
+      "id": "proverbios-cap-pro-pvc-24-se-desfaleces-02",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Provérbios 24:16, toque o trecho que sustenta a recuperação do justo.",
+      "prompt": "Em Provérbios 24:16, toque o trecho que sustenta a recuperação do justo.",
+      "cue": "Em Provérbios 24:16, toque o trecho que sustenta a recuperação do justo.",
+      "verseRef": "Provérbios 24:16",
+      "passageText": "Porque o justo cairá sete vezes e se levantará; mas os perversos serão derrubados pela calamidade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "se levantará"
+        },
+        {
+          "id": "b",
+          "text": "sete vezes"
+        },
+        {
+          "id": "c",
+          "text": "perversos"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "e se levantará",
+      "feedbackCorrect": "O justo se levantará após cair.",
+      "feedbackWrong": {
+        "b": "Sete vezes descreve a queda.",
+        "c": "Os perversos são derrubados."
+      },
+      "hint": "Verbo de recuperação no verso.",
+      "learningObjective": "Sustentar a leitura do justo que se ergue.",
+      "evidence": [
+        "Provérbios 24:16"
+      ]
+    },
+    {
+      "id": "proverbios-cap-pro-pvc-24-se-desfaleces-03",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Que leitura Provérbios 24:10–12 sustenta?",
+      "prompt": "Que leitura Provérbios 24:10–12 sustenta?",
+      "cue": "Que leitura Provérbios 24:10–12 sustenta?",
+      "verseRef": "Provérbios 24:10–11",
+      "passageText": "Se você se mostrar fraco no dia da angústia, sua força é pequena. Livre os que estão sendo levados à morte e salve os que vacilam em seu caminho para a morte.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Força verdadeira age no resgate, não na desculpa"
+        },
+        {
+          "id": "b",
+          "text": "Fraqueza na crise não importa"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar o fraco é neutro perante Deus"
+        },
+        {
+          "id": "d",
+          "text": "Só o mel importa neste capítulo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Livre os que estão sendo levados à morte",
+      "feedbackCorrect": "A força se prova livrando; a desculpa não engana quem pesa os corações.",
+      "feedbackWrong": {
+        "b": "24:10 liga fraqueza a força pequena.",
+        "c": "24:12 mostra prestação de contas.",
+        "d": "O mel ilustra a sabedoria, não anula o dever."
+      },
+      "hint": "Una angústia, resgate e prestação de contas.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Provérbios 24:10",
+        "Provérbios 24:11"
+      ]
+    },
+    {
+      "id": "proverbios-cap-pro-pvc-24-se-desfaleces-04",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Qual sequência mostra o fio da força que se levanta?",
+      "prompt": "Qual sequência mostra o fio da força que se levanta?",
+      "cue": "Qual sequência mostra o fio da força que se levanta?",
+      "verseRef": "Provérbios 24:16",
+      "passageText": "Porque o justo cairá sete vezes e se levantará; mas os perversos serão derrubados pela calamidade.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O justo cai e se levanta"
+        },
+        {
+          "id": "b",
+          "text": "Miqueias diz: caí, mas me levantarei"
+        },
+        {
+          "id": "c",
+          "text": "Levai as cargas uns dos outros"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "o justo cairá sete vezes e se levantará",
+      "feedbackCorrect": "Do justo que se ergue ao eco em Miqueias e ao cuidar uns dos outros.",
+      "feedbackWrong": {
+        "default": "Comece por 24:16."
+      },
+      "hint": "De Provérbios ao eco e à carga mútua.",
+      "learningObjective": "Ver o tema atravessar a Bíblia.",
+      "evidence": [
+        "Provérbios 24:16",
+        "Miqueias 7:8",
+        "Gálatas 6:2"
+      ]
+    },
+    {
+      "id": "proverbios-cap-pro-pvc-24-se-desfaleces-05",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Provérbios 24:14, a esperança da sabedoria não será quê?",
+      "prompt": "Em Provérbios 24:14, a esperança da sabedoria não será quê?",
+      "cue": "Em Provérbios 24:14, a esperança da sabedoria não será quê?",
+      "verseRef": "Provérbios 24:14",
+      "passageText": "Assim é a sabedoria para a sua alma; se a encontrar, haverá um futuro promissor, e a sua esperança não será frustrada.",
+      "template": "Assim é a sabedoria para a sua alma; se a encontrar, haverá um futuro promissor, e a sua esperança não será ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "frustrada"
+        },
+        {
+          "id": "b",
+          "text": "alegre"
+        },
+        {
+          "id": "c",
+          "text": "oculta"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "a sua esperança não será frustrada",
+      "feedbackCorrect": "A esperança não será frustrada.",
+      "feedbackWrong": {
+        "b": "O texto nega frustração, não fala alegre.",
+        "c": "Não diz oculta; diz não frustrada."
+      },
+      "hint": "Última palavra do anúncio.",
+      "learningObjective": "Lembrar o termo da esperança.",
+      "evidence": [
+        "Provérbios 24:14"
+      ]
+    },
+    {
+      "id": "proverbios-cap-pro-pvc-24-se-desfaleces-06",
+      "trail": "proverbios-cap",
+      "section": "pvc-24-se-desfaleces",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Provérbios 24:11 a Gálatas 6:2?",
+      "prompt": "O que liga Provérbios 24:11 a Gálatas 6:2?",
+      "cue": "O que liga Provérbios 24:11 a Gálatas 6:2?",
+      "verseRef": "Provérbios 24:11",
+      "passageText": "Livre os que estão sendo levados à morte e salve os que vacilam em seu caminho para a morte.",
+      "passageA": {
+        "ref": "Provérbios 24:11",
+        "text": "Livre os que estão sendo levados à morte"
+      },
+      "passageB": {
+        "ref": "Gálatas 6:2",
+        "text": "Levem as cargas uns dos outros e, assim, estarão cumprindo a lei de Cristo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levai as cargas"
+        },
+        {
+          "id": "b",
+          "text": "Ignore o fraco"
+        },
+        {
+          "id": "c",
+          "text": "Alegre-se na queda"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Livre os que estão sendo levados à morte",
+      "feedbackCorrect": "Os dois textos chamam a carregar o outro em risco.",
+      "feedbackWrong": {
+        "b": "Há mandato de livrar.",
+        "c": "A alegria na queda é proibida."
+      },
+      "hint": "Compare o cuidado com o outro.",
+      "learningObjective": "Ligar o resgate ao levar cargas.",
+      "evidence": [
+        "Provérbios 24:11",
+        "Gálatas 6:2"
+      ]
+    }
+  ]
+}

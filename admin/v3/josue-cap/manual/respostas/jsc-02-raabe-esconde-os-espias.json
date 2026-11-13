@@ -1,0 +1,717 @@
+{
+  "study": {
+    "passageRef": "Josué 2:1–6",
+    "passages": [
+      {
+        "ref": "Josué 2:1–8"
+      }
+    ],
+    "context": "Josué envia dois espias a Jericó. Eles entram na casa de Raabe; o rei manda buscá-los, e ela os esconde no telhado.",
+    "keyword": "esconder",
+    "keywordGloss": "Raabe oculta os espias e desvia os perseguidores com coragem.",
+    "focusQuestion": "Onde você precisa de coragem para proteger o que o Senhor está fazendo?",
+    "reflectionPrompts": [
+      "Espias em risco",
+      "Coragem de Raabe",
+      "Telhado e linho"
+    ],
+    "facts": [
+      {
+        "text": "Josué enviou secretamente dois homens para explorar a terra e Jericó.",
+        "evidenceRef": "Josué 2:1",
+        "evidenceSpan": "enviou secretamente dois homens de Sitim para explorar a terra"
+      },
+      {
+        "text": "Eles entraram na casa de uma mulher chamada Raabe.",
+        "evidenceRef": "Josué 2:1",
+        "evidenceSpan": "entraram na casa de uma mulher chamada Raabe"
+      },
+      {
+        "text": "O rei de Jericó soube que homens de Israel vieram espiar a terra.",
+        "evidenceRef": "Josué 2:2",
+        "evidenceSpan": "vieram aqui alguns homens dos filhos de Israel para espiar a terra"
+      },
+      {
+        "text": "Raabe havia pegado os dois homens e os escondido.",
+        "evidenceRef": "Josué 2:4",
+        "evidenceSpan": "havia pegado os dois homens e os escondido"
+      },
+      {
+        "text": "Ela os fizera subir ao telhado e os escondera entre as canas de linho.",
+        "evidenceRef": "Josué 2:6",
+        "evidenceSpan": "os fizera subir ao telhado e os escondera entre as canas de linho"
+      },
+      {
+        "text": "Os perseguidores saíram pelo caminho do Jordão, em direção aos vaus.",
+        "evidenceRef": "Josué 2:7",
+        "evidenceSpan": "partiram após os espias pelo caminho do Jordão, em direção aos vaus"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "espiar",
+        "gloss": "Observar a terra em segredo, missão dos dois enviados."
+      },
+      {
+        "term": "telhado",
+        "gloss": "Lugar onde Raabe escondeu os homens entre o linho."
+      },
+      {
+        "term": "porém",
+        "gloss": "Marca a virada: apesar da ordem do rei, ela já os tinha escondido."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Josué envia espias a Jericó",
+        "evidenceRef": "Josué 2:1"
+      },
+      {
+        "label": "O rei manda Raabe entregar os homens",
+        "evidenceRef": "Josué 2:2–3"
+      },
+      {
+        "label": "Raabe esconde e desvia os perseguidores",
+        "evidenceRef": "Josué 2:4–7"
+      },
+      {
+        "label": "Ela sobe ao telhado antes que se deitem",
+        "evidenceRef": "Josué 2:8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O rei pede que saiam os homens; Raabe, porém, já os havia escondido.",
+        "marker": "porém",
+        "evidenceRef": "Josué 2:4"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois que os perseguidores saem, a porta é fechada.",
+        "marker": "após",
+        "evidenceRef": "Josué 2:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Os perseguidores vão aos vaus; os espias ficam no telhado.",
+        "marker": null,
+        "evidenceRef": "Josué 2:6–7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Hebreus 11:31",
+        "bridge": "Raabe acolhida pela fé"
+      },
+      {
+        "ref": "Tiago 2:25",
+        "bridge": "Raabe justificada pelas obras"
+      },
+      {
+        "ref": "Mateus 1:5",
+        "bridge": "Raabe na linhagem do Messias"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Raabe entregou os espias ao rei assim que pediram.",
+        "why": "Ela os escondeu e disse que não sabia de onde eram."
+      },
+      {
+        "text": "Os espias estavam abertos na sala quando o rei mandou buscar.",
+        "why": "Ela os fizera subir ao telhado entre as canas de linho."
+      },
+      {
+        "text": "Josué enviou os homens em público, sem segredo.",
+        "why": "O texto diz que enviou secretamente."
+      }
+    ],
+    "anchorQuestion": "Onde Raabe escondeu os dois homens, segundo Josué 2:6?",
+    "centralInsight": "Raabe esconde os espias no telhado e desvia os perseguidores com coragem."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 2:1, Josué enviou publicamente doze homens para explorar Jericó.",
+      "verseRef": "Josué 2:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "enviou secretamente dois homens",
+      "feedbackCorrect": "Foram dois homens, enviados secretamente.",
+      "feedbackWrong": {
+        "true": "Releia 2:1: secretamente dois homens."
+      },
+      "hint": "Veja quantos e como foram enviados.",
+      "learningObjective": "Observar o envio secreto dos espias.",
+      "evidence": [
+        "Josué 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 2:6, toque o lugar para onde Raabe fizera subir os homens.",
+      "verseRef": "Josué 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "telhado"
+        },
+        {
+          "id": "b",
+          "text": "linho"
+        },
+        {
+          "id": "c",
+          "text": "porta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fizera subir ao telhado",
+      "feedbackCorrect": "Ela os fizera subir ao telhado.",
+      "feedbackWrong": {
+        "b": "Linho é o material que cobria; o lugar é o telhado.",
+        "c": "A porta aparece noutro versículo; aqui é o telhado."
+      },
+      "hint": "Veja para onde ela os fizera subir.",
+      "learningObjective": "Identificar o lugar do esconderijo.",
+      "evidence": [
+        "Josué 2:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 2:4, o que Raabe já havia feito com os dois homens?",
+      "verseRef": "Josué 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os havia entregado ao rei"
+        },
+        {
+          "id": "b",
+          "text": "Os havia pegado e escondido"
+        },
+        {
+          "id": "c",
+          "text": "Os havia mandado ao Jordão"
+        },
+        {
+          "id": "d",
+          "text": "Os havia deixado na porta"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "havia pegado os dois homens e os escondido",
+      "feedbackCorrect": "Antes da mensagem do rei, ela já os tinha escondido.",
+      "feedbackWrong": {
+        "a": "Ela os escondeu, não os entregou.",
+        "c": "Isso ela diz aos perseguidores; na verdade os escondeu.",
+        "d": "O texto diz que os escondeu."
+      },
+      "hint": "Leia o começo da resposta de Raabe.",
+      "learningObjective": "Reconhecer a ação de Raabe com os espias.",
+      "evidence": [
+        "Josué 2:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 2:4 na ordem do texto.",
+      "verseRef": "Josué 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "A mulher, porém, havia pegado os dois homens"
+        },
+        {
+          "id": "b",
+          "text": "e os escondido, e disse:"
+        },
+        {
+          "id": "c",
+          "text": "É verdade que vieram homens a mim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "havia pegado os dois homens e os escondido",
+      "feedbackCorrect": "Primeiro o esconder; depois a fala ao enviado do rei.",
+      "feedbackWrong": {
+        "default": "Comece pela ação dela; a fala vem depois."
+      },
+      "hint": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 2:4"
+      ],
+      "learningObjective": "Seguir a ordem do versículo."
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 2:1, complete: enviou ___ dois homens de Sitim.",
+      "verseRef": "Josué 2:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "publicamente"
+        },
+        {
+          "id": "b",
+          "text": "tarde"
+        },
+        {
+          "id": "c",
+          "text": "secretamente"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "enviou secretamente dois homens",
+      "feedbackCorrect": "O envio foi secreto.",
+      "feedbackWrong": {
+        "a": "O texto diz secretamente, não publicamente.",
+        "b": "O advérbio do envio é secretamente."
+      },
+      "hint": "Olhe o advérbio junto de enviou.",
+      "learningObjective": "Lembrar como Josué enviou os espias.",
+      "evidence": [
+        "Josué 2:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 2:6 comunica que se liga a este contexto?",
+      "verseRef": "Josué 2:6",
+      "passageA": {
+        "ref": "Josué 2:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O rei manda buscar os espias na casa de Raabe."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espias escondidos no telhado"
+        },
+        {
+          "id": "b",
+          "text": "Espias entregues ao rei"
+        },
+        {
+          "id": "c",
+          "text": "Espias já no Jordão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os escondera entre as canas de linho",
+      "feedbackCorrect": "Diante da busca, Raabe os tinha no telhado.",
+      "feedbackWrong": {
+        "b": "Ela os escondeu, não os entregou.",
+        "c": "Eles estavam no telhado, não no Jordão."
+      },
+      "hint": "Veja onde ela os colocou.",
+      "learningObjective": "Ligar a busca do rei ao esconderijo.",
+      "evidence": [
+        "Josué 2:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 2:4, Raabe entrega os homens ao rei assim que recebe a mensagem.",
+      "verseRef": "Josué 2:4",
+      "correctOptionId": "false",
+      "evidenceSpan": "havia pegado os dois homens e os escondido",
+      "feedbackCorrect": "O porém marca o contrário: ela já os tinha escondido.",
+      "feedbackWrong": {
+        "true": "Ela os escondeu; não os entregou."
+      },
+      "hint": "Leia o porém e o que vem depois.",
+      "learningObjective": "Ver o contraste entre ordem e ação.",
+      "evidence": [
+        "Josué 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 2:4, toque a palavra que marca o contraste com a ordem do rei.",
+      "verseRef": "Josué 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "verdade"
+        },
+        {
+          "id": "b",
+          "text": "porém"
+        },
+        {
+          "id": "c",
+          "text": "homens"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "A mulher, porém, havia pegado",
+      "feedbackCorrect": "Porém introduz a virada: ela já os escondera.",
+      "feedbackWrong": {
+        "a": "Verdade abre a fala dela; o contraste é porém.",
+        "c": "Homens são os espias; a marca do contraste é porém."
+      },
+      "hint": "Procure a conjunção depois de A mulher.",
+      "learningObjective": "Tocar o marcador do contraste.",
+      "evidence": [
+        "Josué 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Josué 2:5–6 mostra entre o que Raabe diz e o que faz?",
+      "verseRef": "Josué 2:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ela conta tudo com exatidão ao rei"
+        },
+        {
+          "id": "b",
+          "text": "Ela aponta outro caminho, mas os guarda no telhado"
+        },
+        {
+          "id": "c",
+          "text": "Ela entrega os homens e depois sobe ao telhado"
+        },
+        {
+          "id": "d",
+          "text": "Ela ignora o rei e abre a porta"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Ela, porém, os fizera subir ao telhado",
+      "feedbackCorrect": "A fala desvia; a ação esconde.",
+      "feedbackWrong": {
+        "a": "Ela desvia os perseguidores enquanto esconde os homens.",
+        "c": "Ela já os tinha escondido no telhado.",
+        "d": "Ela responde e desvia; os esconde no telhado."
+      },
+      "hint": "Compare a fala dela com o versículo 6.",
+      "learningObjective": "Compreender o desvio e o esconderijo.",
+      "evidence": [
+        "Josué 2:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 2:1–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué envia espias a Jericó"
+        },
+        {
+          "id": "b",
+          "text": "O rei manda Raabe entregar os homens"
+        },
+        {
+          "id": "c",
+          "text": "Raabe esconde e desvia os perseguidores"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "enviou secretamente dois homens",
+      "feedbackCorrect": "Envio, ordem do rei e ação de Raabe.",
+      "feedbackWrong": {
+        "default": "Comece pelo envio de Josué."
+      },
+      "hint": "Ordenar a sequência da cena.",
+      "learningObjective": [
+        "Josué 2:1",
+        "Josué 2:8"
+      ],
+      "evidence": [
+        "Josué 2:1–8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 2:4, complete: havia pegado os dois homens e os ___.",
+      "verseRef": "Josué 2:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "escondido"
+        },
+        {
+          "id": "b",
+          "text": "entregue"
+        },
+        {
+          "id": "c",
+          "text": "expulso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "havia pegado os dois homens e os escondido",
+      "feedbackCorrect": "O verbo da ação dela é escondido.",
+      "feedbackWrong": {
+        "b": "Ela não entregou: o texto diz escondido.",
+        "c": "Não é expulso: o verbo é escondido."
+      },
+      "hint": "Veja o segundo verbo da ação dela.",
+      "learningObjective": "Lembrar o verbo que descreve a proteção.",
+      "evidence": [
+        "Josué 2:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 2:4 a Hebreus 11:31?",
+      "verseRef": "Josué 2:4",
+      "passageA": {
+        "ref": "Josué 2:4"
+      },
+      "passageB": {
+        "ref": "Hebreus 11:31"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Raabe rejeita os espias"
+        },
+        {
+          "id": "b",
+          "text": "Raabe acolhe pela fé"
+        },
+        {
+          "id": "c",
+          "text": "Raabe entrega a cidade ao rei"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "havia pegado os dois homens e os escondido",
+      "feedbackCorrect": "Hebreus lembra que Raabe acolheu os espias.",
+      "feedbackWrong": {
+        "a": "Nos dois textos ela acolhe, não rejeita.",
+        "c": "O elo é acolher os espias, não entregar a cidade."
+      },
+      "hint": "Pense no que a fé de Raabe fez.",
+      "learningObjective": "Ligar o esconderijo à fé de Hebreus.",
+      "evidence": [
+        "Josué 2:4",
+        "Hebreus 11:31"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 2:6, o esconderijo no telhado sustenta que Raabe protegeu os espias de propósito.",
+      "verseRef": "Josué 2:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "os fizera subir ao telhado e os escondera",
+      "feedbackCorrect": "Ela os fizera subir e os escondera: ação deliberada.",
+      "feedbackWrong": {
+        "false": "O texto mostra ação deliberada de esconder."
+      },
+      "hint": "Veja os verbos fizera e escondera.",
+      "learningObjective": "Avaliar a leitura sustentável da ação de Raabe.",
+      "evidence": [
+        "Josué 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 2:6, toque o trecho que sustenta que o esconderijo foi preparado.",
+      "verseRef": "Josué 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "canas de linho"
+        },
+        {
+          "id": "b",
+          "text": "telhado"
+        },
+        {
+          "id": "c",
+          "text": "Ela"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "escondera entre as canas de linho",
+      "feedbackCorrect": "O linho disposto no telhado cobre o esconderijo.",
+      "feedbackWrong": {
+        "b": "Telhado é o lugar; o material preparado é o linho.",
+        "c": "Ela é o sujeito; o preparo está no linho."
+      },
+      "hint": "Veja entre o que ela os escondera.",
+      "learningObjective": "Tocar o que sustenta o esconderijo preparado.",
+      "evidence": [
+        "Josué 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Josué 2:4–6 melhor sustenta?",
+      "verseRef": "Josué 2:4–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raabe obedece ao rei sem hesitar"
+        },
+        {
+          "id": "b",
+          "text": "Raabe arrisca-se para proteger os enviados de Israel"
+        },
+        {
+          "id": "c",
+          "text": "Raabe age só por medo do rei"
+        },
+        {
+          "id": "d",
+          "text": "Raabe ignora que eles eram espias"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "os fizera subir ao telhado e os escondera",
+      "feedbackCorrect": "A sequência mostra proteção consciente dos espias.",
+      "feedbackWrong": {
+        "a": "Ela esconde e desvia, não entrega.",
+        "c": "O texto destaca o esconder deliberado, não só o medo.",
+        "d": "Ela sabe e mesmo assim os esconde."
+      },
+      "hint": "Compare cada opção com o porém e o telhado.",
+      "learningObjective": "Escolher a leitura que o texto sustenta.",
+      "evidence": [
+        "Josué 2:4–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da proteção de Raabe.",
+      "verseRef": "Josué 2:4–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esconde os homens antes da busca"
+        },
+        {
+          "id": "b",
+          "text": "Desvia os perseguidores com palavras"
+        },
+        {
+          "id": "c",
+          "text": "Eles partem aos vaus; a porta fecha"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "havia pegado os dois homens e os escondido",
+      "feedbackCorrect": "Primeiro o esconder; depois o desvio e a partida.",
+      "feedbackWrong": {
+        "default": "Comece pelo que ela já havia feito."
+      },
+      "hint": "Encadear esconder, desviar e partida.",
+      "learningObjective": [
+        "Josué 2:4",
+        "Josué 2:7"
+      ],
+      "evidence": [
+        "Josué 2:4–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 2:6, complete: os escondera entre as canas de ___.",
+      "verseRef": "Josué 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "palha"
+        },
+        {
+          "id": "b",
+          "text": "linho"
+        },
+        {
+          "id": "c",
+          "text": "areia"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "escondera entre as canas de linho",
+      "feedbackCorrect": "O linho cobre os espias no telhado.",
+      "feedbackWrong": {
+        "a": "O texto diz linho, não palha.",
+        "c": "O material nomeado é linho."
+      },
+      "hint": "Veja o material no fim da frase.",
+      "learningObjective": "Lembrar o termo do esconderijo.",
+      "evidence": [
+        "Josué 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 2:1 a Mateus 1:5?",
+      "verseRef": "Josué 2:1",
+      "passageA": {
+        "ref": "Josué 2:1"
+      },
+      "passageB": {
+        "ref": "Mateus 1:5"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Raabe fora da linhagem de Cristo"
+        },
+        {
+          "id": "b",
+          "text": "Raabe só como inimiga de Israel"
+        },
+        {
+          "id": "c",
+          "text": "Raabe na história da salvação"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "uma mulher chamada Raabe",
+      "feedbackCorrect": "A mulher que esconde os espias entra na linhagem do Messias.",
+      "feedbackWrong": {
+        "a": "Mateus inclui Raabe na genealogia.",
+        "b": "O Elo é inclusão, não exclusão."
+      },
+      "hint": "Pense no nome Raabe além de Jericó.",
+      "learningObjective": "Ligar a cena à genealogia de Mateus.",
+      "evidence": [
+        "Josué 2:1",
+        "Mateus 1:5"
+      ]
+    }
+  ]
+}

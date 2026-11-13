@@ -1,0 +1,913 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 21:5–15",
+    "passages": [
+      {
+        "ref": "2 Crônicas 21:5–15"
+      },
+      {
+        "ref": "2 Crônicas 23:11–21"
+      },
+      {
+        "ref": "2 Crônicas 24:17–25"
+      },
+      {
+        "ref": "2 Crônicas 25:14–24"
+      },
+      {
+        "ref": "2 Crônicas 26:16–23"
+      },
+      {
+        "ref": "2 Crônicas 28:19–27"
+      }
+    ],
+    "context": "Revise Jeorão, a coroação de Joás, as apostasias e o fechamento do templo sob Acaz. Esta travessia revisa as cenas do bloco.",
+    "keyword": "Jeorão",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Quedas e golpes",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 2 Crônicas 21:5 afirma: Jeorão tinha trinta e dois anos quando começou a.",
+        "evidenceRef": "2 Crônicas 21:5",
+        "evidenceSpan": "Jeorão tinha trinta e dois anos quando começou a"
+      },
+      {
+        "text": "O texto em 2 Crônicas 23:16 afirma: E Joiada fez uma aliança entre si.",
+        "evidenceRef": "2 Crônicas 23:16",
+        "evidenceSpan": "E Joiada fez uma aliança entre si"
+      },
+      {
+        "text": "O texto em 2 Crônicas 25:15 afirma: Então, a ira do Senhor se acendeu contra Amazias, e.",
+        "evidenceRef": "2 Crônicas 25:15",
+        "evidenceSpan": "Então, a ira do Senhor se acendeu contra Amazias, e"
+      },
+      {
+        "text": "O texto em 2 Crônicas 26:18 afirma: E resistiram ao rei Uzias.",
+        "evidenceRef": "2 Crônicas 26:18",
+        "evidenceSpan": "E resistiram ao rei Uzias"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Jeorão",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "trinta",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "começou",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "2 Crônicas 21:5"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "2 Crônicas 23:16"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "2 Crônicas 26:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 2 Crônicas 25:15.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 25:15"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 2 Crônicas 26:18.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 26:18"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 2 Crônicas 21:5 a 2 Crônicas 26:18.",
+        "marker": null,
+        "evidenceRef": "2 Crônicas 21:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "Deixar o Senhor leva à soberba, ao ídolo e ao juízo",
+    "anchorQuestion": "O que 2 Crônicas 21:5–15 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 21:5 o nome Jeorão está ausente do versículo",
+      "verseRef": "2 Crônicas 21:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Jeorão",
+      "feedbackCorrect": "O versículo contém \"Jeorão\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 21:5: \"Jeorão\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 21:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 21:5, toque quem ou o quê o texto destaca.",
+      "verseRef": "2 Crônicas 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeorão"
+        },
+        {
+          "id": "b",
+          "text": "tinha"
+        },
+        {
+          "id": "c",
+          "text": "dois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jeorão",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 21:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 23:16, o que o texto destaca?",
+      "verseRef": "2 Crônicas 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de E Joiada no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Joiada fez uma aliança entre si",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "O texto nomeia pessoas e ações.",
+        "c": "Não há essa proibição aqui.",
+        "d": "Isso não é o que o versículo diz."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "2 Crônicas 23:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 21:5 na ordem do texto.",
+      "verseRef": "2 Crônicas 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeorão tinha trinta e dois"
+        },
+        {
+          "id": "b",
+          "text": "anos quando começou a reinar"
+        },
+        {
+          "id": "c",
+          "text": "e reinou oito anos em Jerusalém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Jeorão tinha trinta e dois",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "2 Crônicas 21:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 23:16, que palavra importante o texto usa?",
+      "verseRef": "2 Crônicas 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "Joiada"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E Joiada fez uma aliança entre si",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 23:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 21:5 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 21:5",
+      "passageA": {
+        "ref": "2 Crônicas 21:5"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Revise Jeorão, a coroação de Joás, as apostasias e o fechamento do templo sob Acaz."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tema da passagem"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jeorão tinha trinta e dois anos quando",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "O texto afirma, não nega tudo.",
+        "c": "Há nomes e ações no trecho."
+      },
+      "hint": "Compare os dois textos com atenção.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "2 Crônicas 21:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 21:9, toque o trecho pedido na revisão.",
+      "verseRef": "2 Crônicas 21:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "avançou"
+        },
+        {
+          "id": "b",
+          "text": "seus"
+        },
+        {
+          "id": "c",
+          "text": "oficiais"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "avançou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Revisar o texto.",
+      "evidence": [
+        "2 Crônicas 21:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Reordene 2 Crônicas 21:5 conforme o texto.",
+      "verseRef": "2 Crônicas 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeorão tinha trinta e dois"
+        },
+        {
+          "id": "b",
+          "text": "anos quando começou a reinar"
+        },
+        {
+          "id": "c",
+          "text": "e reinou oito anos em Jerusalém"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Jeorão tinha trinta e dois",
+      "feedbackCorrect": "Ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga o texto."
+      },
+      "hint": "Comece no início.",
+      "learningObjective": "Revisar a ordem.",
+      "evidence": [
+        "2 Crônicas 21:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 25:15 o nome ira está ausente do versículo",
+      "verseRef": "2 Crônicas 25:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "ira",
+      "feedbackCorrect": "O versículo contém \"ira\".",
+      "feedbackWrong": {
+        "true": "Releia 2 Crônicas 25:15: \"ira\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 25:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 23:16, toque a palavra que marca a relação no texto.",
+      "verseRef": "2 Crônicas 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "fez"
+        },
+        {
+          "id": "b",
+          "text": "uma"
+        },
+        {
+          "id": "c",
+          "text": "aliança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "2 Crônicas 23:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 25:15 se relaciona com o restante do trecho?",
+      "verseRef": "2 Crônicas 25:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, a ira do Senhor se acendeu contra",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "O texto continua a mesma cena.",
+        "c": "Continuamos no mesmo livro.",
+        "d": "O trecho registra a ação divina ou humana."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "2 Crônicas 25:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "2 Crônicas 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Joiada fez uma aliança entre si",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 23:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 25:15, que palavra carrega a relação ou a ação?",
+      "verseRef": "2 Crônicas 25:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "acendeu"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "contra"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Então, a ira do Senhor se acendeu contra Amazias, e",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "2 Crônicas 25:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 23:16 a Salmos 23:1?",
+      "verseRef": "2 Crônicas 23:16",
+      "passageA": {
+        "ref": "2 Crônicas 23:16"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Joiada fez uma aliança entre si",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "O vínculo é de fé, não de negação.",
+        "c": "Não é o fim da oração."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "2 Crônicas 23:16",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 23:12, toque o trecho pedido na revisão.",
+      "verseRef": "2 Crônicas 23:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvindo"
+        },
+        {
+          "id": "b",
+          "text": "Atalia"
+        },
+        {
+          "id": "c",
+          "text": "clamor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ouvindo",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Revisar o texto.",
+      "evidence": [
+        "2 Crônicas 23:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual a ordem dos movimentos na revisão?",
+      "verseRef": "2 Crônicas 21:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Revisão: abertura em 13"
+        },
+        {
+          "id": "b",
+          "text": "Revisão: o conflito do bloco"
+        },
+        {
+          "id": "c",
+          "text": "Revisão: o desfecho do bloco"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Mas você andou pelos caminhos dos reis",
+      "feedbackCorrect": "Esse é o arco da revisão.",
+      "feedbackWrong": {
+        "default": "Siga a ordem."
+      },
+      "hint": "Pense no arco do bloco.",
+      "learningObjective": "Revisar o arco.",
+      "evidence": [
+        "2 Crônicas 21:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 26:18 aparece a palavra resistiram",
+      "verseRef": "2 Crônicas 26:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "E resistiram ao rei Uzias",
+      "feedbackCorrect": "O versículo traz \"resistiram\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia 2 Crônicas 26:18: a palavra está no versículo."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "2 Crônicas 26:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 26:18, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "2 Crônicas 26:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "resistiram"
+        },
+        {
+          "id": "b",
+          "text": "rei"
+        },
+        {
+          "id": "c",
+          "text": "Uzias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "resistiram",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "b": "Não é esse o destaque.",
+        "c": "Não é esse o destaque."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "2 Crônicas 26:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "2 Crônicas 26:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deixar o Senhor leva à soberba, ao ídolo e ao juízo"
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E resistiram ao rei Uzias",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "O trecho registra a ação de Deus.",
+        "c": "O texto não elogia a idolatria.",
+        "d": "Há falhas e juízos no relato bíblico."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "2 Crônicas 26:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "2 Crônicas 26:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E resistiram ao rei Uzias",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "2 Crônicas 26:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 21:5, que termo carrega o sentido da cena?",
+      "verseRef": "2 Crônicas 21:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jeorão"
+        },
+        {
+          "id": "b",
+          "text": "trinta"
+        },
+        {
+          "id": "c",
+          "text": "dois"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jeorão tinha trinta e dois anos quando começou a",
+      "feedbackCorrect": "O termo \"trinta\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Esse não é o termo central aqui.",
+        "c": "Esse não é o termo central aqui."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "2 Crônicas 21:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 26:18 a Salmos 46:1?",
+      "verseRef": "2 Crônicas 26:18",
+      "passageA": {
+        "ref": "2 Crônicas 26:18"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E resistiram ao rei Uzias",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "O vínculo aponta esperança, não recusa.",
+        "c": "Não é culto idólatra."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "2 Crônicas 26:18",
+        "Salmos 46:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 23:20, toque o trecho pedido na revisão.",
+      "verseRef": "2 Crônicas 23:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "capitães"
+        },
+        {
+          "id": "b",
+          "text": "Tomou"
+        },
+        {
+          "id": "c",
+          "text": "nobres"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Tomou",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Revisar o texto.",
+      "evidence": [
+        "2 Crônicas 23:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Como se encadeia o arco deste bloco?",
+      "verseRef": "2 Crônicas 23:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Chamado ou juízo do bloco"
+        },
+        {
+          "id": "b",
+          "text": "Resposta do povo no bloco"
+        },
+        {
+          "id": "c",
+          "text": "Confirmação do Senhor no bloco"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Joiada fez uma aliança entre si",
+      "feedbackCorrect": "Esse é o arco da revisão.",
+      "feedbackWrong": {
+        "default": "Siga a ordem."
+      },
+      "hint": "Pense no arco do bloco.",
+      "learningObjective": "Revisar o arco.",
+      "evidence": [
+        "2 Crônicas 23:16"
+      ]
+    }
+  ]
+}

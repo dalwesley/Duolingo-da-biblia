@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 141:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 141:1–6"
+      },
+      {
+        "ref": "Salmos 141:7–10"
+      }
+    ],
+    "context": "Senhor, a ti clamo; seja a minha oração como o incenso. Põe guarda à minha boca.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "A minha oração",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Senhor, a ti clamo, apressa-te em me ouvir; inclina os teus ouvidos à minha voz, quando eu te invoc…",
+        "evidenceRef": "Salmos 141:1",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "Que a minha oração se eleve a Ti.",
+        "evidenceRef": "Salmos 141:2",
+        "evidenceSpan": "Que a minha oração se eleve a Ti"
+      },
+      {
+        "text": "Senhor, estabelece uma guarda à minha boca; vigia a porta dos meus lábios.",
+        "evidenceRef": "Salmos 141:3",
+        "evidenceSpan": "Senhor"
+      },
+      {
+        "text": "Não permita que meu coração se incline para.",
+        "evidenceRef": "Salmos 141:4",
+        "evidenceSpan": "Não permita que meu coração se incline para"
+      },
+      {
+        "text": "Fira-me o justo.",
+        "evidenceRef": "Salmos 141:5",
+        "evidenceSpan": "Fira-me o justo"
+      },
+      {
+        "text": "Quando os seus juízes forem lançados penha abaixo.",
+        "evidenceRef": "Salmos 141:6",
+        "evidenceSpan": "Quando os seus juízes forem lançados penha abaixo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "clamo",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Senhor a ti clamo apressa-te em",
+        "evidenceRef": "Salmos 141:1"
+      },
+      {
+        "label": "Que a minha oração se eleve",
+        "evidenceRef": "Salmos 141:2"
+      },
+      {
+        "label": "Senhor estabelece uma guarda à minha",
+        "evidenceRef": "Salmos 141:3"
+      },
+      {
+        "label": "Não permita que meu coração se",
+        "evidenceRef": "Salmos 141:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"quando\".",
+        "marker": "quando",
+        "evidenceRef": "Salmos 141:1"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 141:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 141:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Filipenses 4:6",
+        "bridge": "Oração com ações de graças"
+      },
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é pastor"
+      },
+      {
+        "ref": "Salmos 51:10",
+        "bridge": "Coração puro"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Oração como incenso e correção do justo: melhor ferida de amigo que óleo de ímpio."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Oração como incenso e correção do justo: melhor ferida de amigo que óleo de ímpio.",
+    "anchorQuestion": "O que Salmos 141:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 141:1, senhor.",
+      "verseRef": "Salmos 141:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 141:1 afirma.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 141:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 141:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "clamo"
+        },
+        {
+          "id": "c",
+          "text": "apressa-te"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca «Senhor».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 141:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 141:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor estabelece uma guarda à boca do orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 141:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 141:1 na ordem do texto.",
+      "verseRef": "Salmos 141:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "c",
+          "text": "ti"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 141:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 141:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "permita"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "clamo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permita",
+      "feedbackCorrect": "A palavra do versículo é «permita».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 141:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 141:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 141:1",
+      "passageA": {
+        "ref": "Salmos 141:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Senhor, a ti clamo; seja a minha oração como o incenso. Põe guarda à minha boca."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 141:1, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 141:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 141:1 afirma.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 141:1, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 141:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "apressa-te"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "clamo",
+      "feedbackCorrect": "O versículo destaca «quando».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 141:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 141:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não permita que meu coração se incline para",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 141:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 141:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor a ti clamo apressa-te"
+        },
+        {
+          "id": "b",
+          "text": "Que a minha oração se eleve"
+        },
+        {
+          "id": "c",
+          "text": "Senhor estabelece uma guarda à minha"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 141:3, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 141:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "estabelece"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "clamo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estabelece",
+      "feedbackCorrect": "A palavra do versículo é «estabelece».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 141:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 141:1 a Filipenses 4:6.",
+      "verseRef": "Salmos 141:1",
+      "passageA": {
+        "ref": "Salmos 141:1"
+      },
+      "passageB": {
+        "ref": "Filipenses 4:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração com ações de graças"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 141:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "Caiam",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 141:10 afirma.",
+      "evidence": [
+        "Salmos 141:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 141:10, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 141:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Caiam"
+        },
+        {
+          "id": "b",
+          "text": "ímpios"
+        },
+        {
+          "id": "c",
+          "text": "nas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Caiam",
+      "feedbackCorrect": "O versículo destaca «Caiam».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 141:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 141:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 141:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fira-me o justo",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 141:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 141:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 141:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 141:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fira-me"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "clamo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Fira-me",
+      "feedbackCorrect": "A palavra do versículo é «Fira-me».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 141:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 141:1 a Salmos 23:1.",
+      "verseRef": "Salmos 141:1",
+      "passageA": {
+        "ref": "Salmos 141:1"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 141:1"
+      ]
+    }
+  ]
+}

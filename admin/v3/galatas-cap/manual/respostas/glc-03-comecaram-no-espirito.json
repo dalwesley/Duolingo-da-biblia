@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Gálatas 3:1–6",
+    "passages": [
+      {
+        "ref": "Gálatas 3:1–6"
+      },
+      {
+        "ref": "Gálatas 3:7"
+      }
+    ],
+    "context": "Paulo pergunta se a igreja, que começou no Espírito pela pregação da fé, agora quer se aperfeiçoar na carne pelas obras da lei.",
+    "keyword": "Espírito",
+    "keywordGloss": "Aquele que foi recebido pela pregação da fé e com quem a vida cristã começou.",
+    "focusQuestion": "Onde você tenta terminar na carne o que começou no Espírito?",
+    "reflectionPrompts": [
+      "Começaram no Espírito",
+      "Pela pregação da fé",
+      "Filhos de Abraão"
+    ],
+    "facts": [
+      {
+        "text": "Jesus Cristo foi claramente exposto como crucificado diante deles.",
+        "evidenceRef": "Gálatas 3:1",
+        "evidenceSpan": "Jesus Cristo foi claramente exposto como crucificado"
+      },
+      {
+        "text": "Paulo pergunta se receberam o Espírito pelas obras da lei ou pela pregação da fé.",
+        "evidenceRef": "Gálatas 3:2",
+        "evidenceSpan": "receberam o Espírito pelas obras da lei ou pela pregação da fé"
+      },
+      {
+        "text": "Tendo começado pelo Espírito, agora querem se aperfeiçoar na carne.",
+        "evidenceRef": "Gálatas 3:3",
+        "evidenceSpan": "tendo começado pelo Espírito, agora estão se aperfeiçoando na carne"
+      },
+      {
+        "text": "Quem concede o Espírito e opera milagres o faz pela pregação da fé.",
+        "evidenceRef": "Gálatas 3:5",
+        "evidenceSpan": "pela pregação da fé"
+      },
+      {
+        "text": "Abraão creu em Deus, e isso lhe foi imputado como justiça.",
+        "evidenceRef": "Gálatas 3:6",
+        "evidenceSpan": "Abraão creu em Deus, e essa fé lhe foi imputada justiça"
+      },
+      {
+        "text": "Os que têm fé são filhos de Abraão.",
+        "evidenceRef": "Gálatas 3:7",
+        "evidenceSpan": "os que têm fé são filhos de Abraão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Espírito",
+        "gloss": "Recebido pela pregação da fé; início da vida cristã."
+      },
+      {
+        "term": "fé",
+        "gloss": "Caminho pelo qual veio o Espírito e pelo qual alguém é filho de Abraão."
+      },
+      {
+        "term": "carne",
+        "gloss": "Tentativa de se aperfeiçoar por esforço humano e obras da lei."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Cristo crucificado foi exposto",
+        "evidenceRef": "Gálatas 3:1"
+      },
+      {
+        "label": "Espírito veio pela pregação da fé",
+        "evidenceRef": "Gálatas 3:2"
+      },
+      {
+        "label": "Não terminar na carne",
+        "evidenceRef": "Gálatas 3:3"
+      },
+      {
+        "label": "Como Abraão: fé imputada justiça",
+        "evidenceRef": "Gálatas 3:6–7"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Começaram pelo Espírito e agora se aperfeiçoam na carne.",
+        "marker": "agora",
+        "evidenceRef": "Gálatas 3:3"
+      },
+      {
+        "kind": "resultado",
+        "text": "A fé de Abraão lhe foi imputada como justiça.",
+        "marker": "imputada",
+        "evidenceRef": "Gálatas 3:6"
+      },
+      {
+        "kind": "causa",
+        "text": "Porque têm fé, são filhos de Abraão.",
+        "marker": "portanto",
+        "evidenceRef": "Gálatas 3:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 15:6",
+        "bridge": "Abraão creu e foi justificado"
+      },
+      {
+        "ref": "Romanos 4:3",
+        "bridge": "Fé imputada como justiça"
+      },
+      {
+        "ref": "Atos 2:38",
+        "bridge": "Receber o Espírito"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Espírito veio pelas obras da lei.",
+        "why": "Paulo contrapõe obras da lei e pregação da fé."
+      },
+      {
+        "text": "Começar no Espírito e terminar na carne é progresso.",
+        "why": "Paulo chama isso de insensatez."
+      },
+      {
+        "text": "Filhos de Abraão são só os que guardam a lei.",
+        "why": "O texto diz que os que têm fé são filhos de Abraão."
+      }
+    ],
+    "centralInsight": "Quem crê é filho de Abraão: a justiça vem pela fé, não pelas obras da lei.",
+    "anchorQuestion": "Segundo Gálatas 3:2, como receberam o Espírito?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Gálatas 3:2, Paulo pergunta se receberam o Espírito pelas obras da lei ou pela pregação da fé.",
+      "verseRef": "Gálatas 3:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "receberam o Espírito pelas obras da lei ou pela pregação da fé",
+      "feedbackCorrect": "A pergunta coloca obras da lei contra pregação da fé.",
+      "feedbackWrong": {
+        "false": "Releia a alternativa da pergunta."
+      },
+      "hint": "Olhe as duas opções da pergunta.",
+      "learningObjective": "Observar como o Espírito foi recebido.",
+      "evidence": [
+        "Gálatas 3:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gálatas 3:3, toque por quem eles começaram.",
+      "verseRef": "Gálatas 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito"
+        },
+        {
+          "id": "b",
+          "text": "carne"
+        },
+        {
+          "id": "c",
+          "text": "obras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tendo começado pelo Espírito",
+      "feedbackCorrect": "Eles começaram pelo Espírito, não pela carne.",
+      "feedbackWrong": {
+        "b": "Carne é o aperfeiçoamento errado agora.",
+        "c": "Obras não aparece nesta frase."
+      },
+      "hint": "Veja o complemento de começado pelo.",
+      "learningObjective": "Identificar o começo no Espírito.",
+      "evidence": [
+        "Gálatas 3:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gálatas 3:7, quem são filhos de Abraão?",
+      "verseRef": "Gálatas 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os que têm fé"
+        },
+        {
+          "id": "b",
+          "text": "Só os da lei"
+        },
+        {
+          "id": "c",
+          "text": "Os da carne"
+        },
+        {
+          "id": "d",
+          "text": "Os sem sofrimento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "O texto liga filiação a Abraão à fé.",
+      "feedbackWrong": {
+        "b": "A lei não define os filhos aqui.",
+        "c": "Carne é o caminho criticado.",
+        "d": "O sofrimento aparece em 3:4, não nesta conclusão."
+      },
+      "hint": "Leia a conclusão do versículo.",
+      "learningObjective": "Ver quem são filhos de Abraão.",
+      "evidence": [
+        "Gálatas 3:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gálatas 3:2–3 na ordem do texto.",
+      "verseRef": "Gálatas 3:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "receberam o Espírito pelas obras da lei ou pela pregação da fé"
+        },
+        {
+          "id": "b",
+          "text": "tendo começado pelo Espírito"
+        },
+        {
+          "id": "c",
+          "text": "agora estão se aperfeiçoando na carne"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tendo começado pelo Espírito",
+      "feedbackCorrect": "Primeiro a pergunta do Espírito; depois o começo; então a carne.",
+      "feedbackWrong": {
+        "default": "Comece pela pergunta sobre o Espírito."
+      },
+      "hint": "Siga de 3:2 para 3:3.",
+      "learningObjective": "Seguir a ordem da pergunta ao contraste.",
+      "evidence": [
+        "Gálatas 3:2–3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gálatas 3:6, complete: Abraão ___ em Deus.",
+      "verseRef": "Gálatas 3:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "creu"
+        },
+        {
+          "id": "b",
+          "text": "obrou"
+        },
+        {
+          "id": "c",
+          "text": "duvidou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abraão creu em Deus",
+      "feedbackCorrect": "Abraão creu, e essa fé lhe foi imputada justiça.",
+      "feedbackWrong": {
+        "b": "Obras não é o verbo do versículo.",
+        "c": "Duvidar contradiz o texto."
+      },
+      "hint": "Veja o verbo ligado a Abraão.",
+      "learningObjective": "Lembrar o verbo da fé de Abraão.",
+      "evidence": [
+        "Gálatas 3:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gálatas 3:2 comunica que se liga a este contexto?",
+      "verseRef": "Gálatas 3:2",
+      "passageA": {
+        "ref": "Gálatas 3:2"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A igreja começou no Espírito e não deve se aperfeiçoar na carne."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito pela pregação da fé"
+        },
+        {
+          "id": "b",
+          "text": "Espírito pelas obras da lei"
+        },
+        {
+          "id": "c",
+          "text": "Filhos só pela carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela pregação da fé",
+      "feedbackCorrect": "O Espírito veio pela pregação da fé, não pelas obras.",
+      "feedbackWrong": {
+        "b": "Obras da lei é a alternativa rejeitada.",
+        "c": "A filiação vem pela fé, não pela carne."
+      },
+      "hint": "Ligue o recebimento do Espírito ao começo da igreja.",
+      "learningObjective": "Ligar o contexto ao Espírito pela fé.",
+      "evidence": [
+        "Gálatas 3:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gálatas 3:3, o contraste mostra que começar pelo Espírito e se aperfeiçoar na carne é insensatez.",
+      "verseRef": "Gálatas 3:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "tendo começado pelo Espírito, agora estão se aperfeiçoando na carne",
+      "feedbackCorrect": "O agora marca a virada absurda da carne depois do Espírito.",
+      "feedbackWrong": {
+        "false": "O texto chama isso de insensatez."
+      },
+      "hint": "Olhe o contraste entre Espírito e carne.",
+      "learningObjective": "Ver o contraste Espírito versus carne.",
+      "evidence": [
+        "Gálatas 3:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gálatas 3:3, toque a palavra que marca a virada para a carne.",
+      "verseRef": "Gálatas 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "agora"
+        },
+        {
+          "id": "b",
+          "text": "Espírito"
+        },
+        {
+          "id": "c",
+          "text": "insensatos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "agora estão se aperfeiçoando na carne",
+      "feedbackCorrect": "O agora introduz a tentativa de terminar na carne.",
+      "feedbackWrong": {
+        "b": "Espírito é o começo certo.",
+        "c": "Insensatos nomeia os leitores, não a virada."
+      },
+      "hint": "Procure o advérbio da mudança.",
+      "learningObjective": "Tocar o marcador da virada.",
+      "evidence": [
+        "Gálatas 3:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Gálatas 3:5–6 estabelece entre o Espírito e Abraão?",
+      "verseRef": "Gálatas 3:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Espírito pela fé ecoa a fé de Abraão imputada justiça"
+        },
+        {
+          "id": "b",
+          "text": "O Espírito veio pelas obras como Abraão"
+        },
+        {
+          "id": "c",
+          "text": "Abraão prova que a carne aperfeiçoa"
+        },
+        {
+          "id": "d",
+          "text": "Milagres dependem da lei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Abraão creu em Deus, e essa fé lhe foi imputada justiça",
+      "feedbackCorrect": "A pregação da fé liga o Espírito à fé de Abraão.",
+      "feedbackWrong": {
+        "b": "Abraão creu, não obrou a lei neste texto.",
+        "c": "A carne é criticada.",
+        "d": "Milagres vêm com a pregação da fé."
+      },
+      "hint": "Una 3:5 e o exemplo de Abraão.",
+      "learningObjective": "Relacionar Espírito, fé e Abraão.",
+      "evidence": [
+        "Gálatas 3:5–6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do argumento.",
+      "verseRef": "Gálatas 3:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cristo crucificado foi exposto"
+        },
+        {
+          "id": "b",
+          "text": "Espírito veio pela pregação da fé"
+        },
+        {
+          "id": "c",
+          "text": "Como Abraão: fé imputada justiça"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "pela pregação da fé",
+      "feedbackCorrect": "Primeiro a cruz exposta; depois o Espírito pela fé; então Abraão.",
+      "feedbackWrong": {
+        "default": "Comece pela exposição de Cristo."
+      },
+      "hint": "Pense no fluxo: cruz, Espírito, Abraão.",
+      "learningObjective": "Ordenar o argumento até Abraão.",
+      "evidence": [
+        "Gálatas 3:1–7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gálatas 3:3, complete: se aperfeiçoando na ___.",
+      "verseRef": "Gálatas 3:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "carne"
+        },
+        {
+          "id": "b",
+          "text": "fé"
+        },
+        {
+          "id": "c",
+          "text": "graça"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se aperfeiçoando na carne",
+      "feedbackCorrect": "Carne nomeia o aperfeiçoamento errado depois do Espírito.",
+      "feedbackWrong": {
+        "b": "Fé é o caminho certo.",
+        "c": "Graça não completa esta frase."
+      },
+      "hint": "Veja o oposto do Espírito.",
+      "learningObjective": "Lembrar a palavra do contraste.",
+      "evidence": [
+        "Gálatas 3:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gálatas 3:6 a Gênesis 15:6?",
+      "verseRef": "Gálatas 3:6",
+      "passageA": {
+        "ref": "Gálatas 3:6"
+      },
+      "passageB": {
+        "ref": "Gênesis 15:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé imputada justiça"
+        },
+        {
+          "id": "b",
+          "text": "Obras da lei"
+        },
+        {
+          "id": "c",
+          "text": "Aperfeiçoar na carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "essa fé lhe foi imputada justiça",
+      "feedbackCorrect": "Ambos dizem que Abraão creu e foi contado justo.",
+      "feedbackWrong": {
+        "b": "Obras da lei não ligam os textos.",
+        "c": "Carne é o erro de Gálatas 3:3."
+      },
+      "hint": "Compare a fé de Abraão.",
+      "learningObjective": "Ligar Gálatas ao relato de Abraão.",
+      "evidence": [
+        "Gálatas 3:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Segundo Gálatas 3:2–7, filhos de Abraão são só os que guardam a lei.",
+      "verseRef": "Gálatas 3:2–7",
+      "correctOptionId": "false",
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "O texto diz que os que têm fé são filhos de Abraão.",
+      "feedbackWrong": {
+        "true": "A conclusão aponta a fé, não a lei."
+      },
+      "hint": "Leia 3:7.",
+      "learningObjective": "Avaliar a leitura errada sobre filhos de Abraão.",
+      "evidence": [
+        "Gálatas 3:2–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gálatas 3:7, toque o trecho que sustenta quem são filhos de Abraão.",
+      "verseRef": "Gálatas 3:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "têm fé"
+        },
+        {
+          "id": "b",
+          "text": "Saibam"
+        },
+        {
+          "id": "c",
+          "text": "portanto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "Têm fé sustenta a identidade dos filhos de Abraão.",
+      "feedbackWrong": {
+        "b": "Saibam introduz o apelo.",
+        "c": "Portanto marca a conclusão, não o critério."
+      },
+      "hint": "Veja o critério da filiação.",
+      "learningObjective": "Tocar o trecho que sustenta a filiação pela fé.",
+      "evidence": [
+        "Gálatas 3:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura Gálatas 3:1–7 sustenta melhor?",
+      "verseRef": "Gálatas 3:1–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Espírito veio pela fé; filhos de Abraão creem"
+        },
+        {
+          "id": "b",
+          "text": "O progresso é começar no Espírito e terminar na carne"
+        },
+        {
+          "id": "c",
+          "text": "A lei dá o Espírito"
+        },
+        {
+          "id": "d",
+          "text": "Só a linhagem carnal faz filhos de Abraão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "Fé recebe o Espírito e define os filhos de Abraão.",
+      "feedbackWrong": {
+        "b": "Terminar na carne é insensatez.",
+        "c": "O Espírito não veio pelas obras.",
+        "d": "A filiação é pela fé."
+      },
+      "hint": "Una Espírito, fé e Abraão.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Gálatas 3:1–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica até a filiação de Abraão.",
+      "verseRef": "Gálatas 3:2–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Espírito pela pregação da fé"
+        },
+        {
+          "id": "b",
+          "text": "Não se aperfeiçoar na carne"
+        },
+        {
+          "id": "c",
+          "text": "Quem tem fé é filho de Abraão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os que têm fé são filhos de Abraão",
+      "feedbackCorrect": "Primeiro o Espírito pela fé; depois o aviso; então a filiação.",
+      "feedbackWrong": {
+        "default": "A filiação fecha o fio."
+      },
+      "hint": "Siga de 3:2 a 3:7.",
+      "learningObjective": "Encadear Espírito, aviso e filiação.",
+      "evidence": [
+        "Gálatas 3:2–7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gálatas 3:2, complete o meio certo: pela pregação da ___.",
+      "verseRef": "Gálatas 3:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "fé"
+        },
+        {
+          "id": "b",
+          "text": "lei"
+        },
+        {
+          "id": "c",
+          "text": "carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela pregação da fé",
+      "feedbackCorrect": "Fé é o meio pelo qual receberam o Espírito.",
+      "feedbackWrong": {
+        "b": "Lei é a alternativa rejeitada.",
+        "c": "Carne aparece no erro de 3:3."
+      },
+      "hint": "Veja o oposto das obras da lei.",
+      "learningObjective": "Lembrar o termo da pregação da fé.",
+      "evidence": [
+        "Gálatas 3:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gálatas 3:6 a Romanos 4:3?",
+      "verseRef": "Gálatas 3:6",
+      "passageA": {
+        "ref": "Gálatas 3:6"
+      },
+      "passageB": {
+        "ref": "Romanos 4:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fé imputada justiça"
+        },
+        {
+          "id": "b",
+          "text": "Milagres pela lei"
+        },
+        {
+          "id": "c",
+          "text": "Aperfeiçoar na carne"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "essa fé lhe foi imputada justiça",
+      "feedbackCorrect": "Paulo cita o mesmo padrão: fé contada como justiça.",
+      "feedbackWrong": {
+        "b": "Milagres vêm com a fé, não a lei.",
+        "c": "Carne não liga os textos."
+      },
+      "hint": "Compare a imputação da fé.",
+      "learningObjective": "Ligar Gálatas e Romanos em Abraão.",
+      "evidence": [
+        "Gálatas 3:6"
+      ]
+    }
+  ]
+}

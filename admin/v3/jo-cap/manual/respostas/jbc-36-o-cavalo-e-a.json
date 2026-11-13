@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 39:19–24",
+  "passages": [
+   {
+    "ref": "Jó 39:19–24"
+   },
+   {
+    "ref": "Jó 39:25–30"
+   }
+  ],
+  "context": "Do redemoinho, Deus aponta o cavalo de guerra e a águia: criaturas que Jó não criou nem governa. A criação humilha a pretensão de julgar os caminhos de Deus.",
+  "keyword": "Força ao cavalo",
+  "keywordGloss": "Pergunta de Deus: quem dá força e coragem ao cavalo — e quem faz a águia voar?",
+  "focusQuestion": "Onde a criação ainda te lembra que você não é o juiz dos caminhos de Deus?",
+  "reflectionPrompts": [
+   "Cavalo sem dono humano",
+   "Águia nas alturas",
+   "Criação que humilha"
+  ],
+  "facts": [
+   {
+    "text": "Deus pergunta se Jó dá força ao cavalo.",
+    "evidenceRef": "Jó 39:19",
+    "evidenceSpan": "Darás tu força ao cavalo?"
+   },
+   {
+    "text": "O cavalo ri-se do medo e não se espanta.",
+    "evidenceRef": "Jó 39:22",
+    "evidenceSpan": "Ri-se do medo não se espanta"
+   },
+   {
+    "text": "Quando a trombeta soa, o cavalo diz: Eia!",
+    "evidenceRef": "Jó 39:25",
+    "evidenceSpan": "ele diz: Eia!"
+   },
+   {
+    "text": "Deus pergunta se a águia voa por ordem de Jó.",
+    "evidenceRef": "Jó 39:27",
+    "evidenceSpan": "a águia voa por tua ordem"
+   },
+   {
+    "text": "A águia faz ninho nas alturas e lugares seguros.",
+    "evidenceRef": "Jó 39:28",
+    "evidenceSpan": "faz sua morada e se estabelece em lugares seguros"
+   },
+   {
+    "text": "Desde lá, a águia observa a presa à distância.",
+    "evidenceRef": "Jó 39:29",
+    "evidenceSpan": "observa a presa"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "cavalo",
+    "gloss": "Criatura de guerra cuja força Jó não deu."
+   },
+   {
+    "term": "águia",
+    "gloss": "Ave que voa e nidifica fora da ordem humana."
+   },
+   {
+    "term": "trombeta",
+    "gloss": "Som que desperta o cavalo para a batalha."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Deus pergunta sobre a força do cavalo",
+    "evidenceRef": "Jó 39:19–20"
+   },
+   {
+    "label": "O cavalo enfrenta a guerra sem medo",
+    "evidenceRef": "Jó 39:21–25"
+   },
+   {
+    "label": "Deus pergunta sobre gavião e águia",
+    "evidenceRef": "Jó 39:26–27"
+   },
+   {
+    "label": "A águia habita nas alturas e vê a presa",
+    "evidenceRef": "Jó 39:28–30"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "contraste",
+    "text": "Jó não dá força ao cavalo; o animal folga na sua força.",
+    "marker": null,
+    "evidenceRef": "Jó 39:19–21"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quando a trombeta soa, o cavalo se lança à batalha.",
+    "marker": "Quando",
+    "evidenceRef": "Jó 39:25"
+   },
+   {
+    "kind": "contraste",
+    "text": "A águia não voa por ordem de Jó; faz ninho nas alturas.",
+    "marker": null,
+    "evidenceRef": "Jó 39:27–28"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 104:24",
+    "bridge": "Obras cheias de sabedoria"
+   },
+   {
+    "ref": "Mateus 6:26",
+    "bridge": "Aves cuidadas por Deus"
+   },
+   {
+    "ref": "Isaías 40:31",
+    "bridge": "Asas como águias"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó criou o cavalo e a águia com sua inteligência.",
+    "why": "As perguntas de Deus pressupõem que Jó não deu força nem ordem a eles."
+   },
+   {
+    "text": "A criação serve só para enfeite, sem humilhar o juiz humano.",
+    "why": "As perguntas colocam Jó diante do que não governa."
+   },
+   {
+    "text": "A águia depende da ordem de Jó para voar.",
+    "why": "39:27 pergunta se voa por ordem dele, esperando a resposta negativa."
+   }
+  ],
+  "centralInsight": "A criação humilha a pretensão de julgar os caminhos de Deus.",
+  "anchorQuestion": "O que Deus pergunta se Jó dá ao cavalo em Jó 39:19?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 39:19, Deus pergunta se Jó dará força ao cavalo.",
+   "verseRef": "Jó 39:19",
+   "correctOptionId": "true",
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "A pergunta abre o retrato do cavalo.",
+   "feedbackWrong": {
+    "false": "Releia o começo: Darás tu força ao cavalo?"
+   },
+   "hint": "Veja a primeira pergunta.",
+   "learningObjective": "Observar a pergunta sobre o cavalo.",
+   "evidence": [
+    "Jó 39:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 39:19, toque a quem Deus pergunta se Jó dará força.",
+   "verseRef": "Jó 39:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "cavalo"
+    },
+    {
+     "id": "b",
+     "text": "crinas"
+    },
+    {
+     "id": "c",
+     "text": "pescoço"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "O alvo da pergunta é o cavalo.",
+   "feedbackWrong": {
+    "b": "Crinas revestem o pescoço; não são o alvo da força.",
+    "c": "Pescoço recebe as crinas; o alvo é o animal."
+   },
+   "hint": "Veja o fim da primeira pergunta.",
+   "learningObjective": "Identificar o animal da pergunta.",
+   "evidence": [
+    "Jó 39:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 39:22, como o cavalo reage ao medo?",
+   "verseRef": "Jó 39:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ri-se do medo e não se espanta"
+    },
+    {
+     "id": "b",
+     "text": "Foge ao primeiro som"
+    },
+    {
+     "id": "c",
+     "text": "Esconde-se no vale"
+    },
+    {
+     "id": "d",
+     "text": "Pede força a Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Ri-se do medo não se espanta",
+   "feedbackCorrect": "O cavalo ri-se do medo e não se espanta.",
+   "feedbackWrong": {
+    "b": "O texto diz que não se espanta.",
+    "c": "Ele escarva no vale e sai ao encontro.",
+    "d": "Deus pergunta se Jó dá a força; o cavalo não pede."
+   },
+   "hint": "Leia a primeira frase do versículo.",
+   "learningObjective": "Observar a coragem do cavalo.",
+   "evidence": [
+    "Jó 39:22"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 39:19 na ordem do texto.",
+   "verseRef": "Jó 39:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "Darás tu força ao cavalo?"
+    },
+    {
+     "id": "b",
+     "text": "Ou revestirás o seu pescoço"
+    },
+    {
+     "id": "c",
+     "text": "de crinas?"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "Primeiro a força; depois as crinas do pescoço.",
+   "feedbackWrong": {
+    "default": "Comece pela força; as crinas fecham."
+   },
+   "hint": "Comece pela primeira pergunta.",
+   "learningObjective": "Reconhecer a sequência de 39:19.",
+   "evidence": [
+    "Jó 39:19"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 39:25, o que soa antes do cavalo dizer Eia?",
+   "verseRef": "Jó 39:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "trombeta"
+    },
+    {
+     "id": "b",
+     "text": "águia"
+    },
+    {
+     "id": "c",
+     "text": "gavião"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quando a trombeta soa",
+   "feedbackCorrect": "A trombeta desperta o grito do cavalo.",
+   "feedbackWrong": {
+    "b": "A águia vem depois, em 39:27.",
+    "c": "O gavião está em 39:26."
+   },
+   "hint": "Veja o que soa no começo.",
+   "learningObjective": "Lembrar o som da batalha.",
+   "evidence": [
+    "Jó 39:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 39:19 comunica que se liga a este contexto?",
+   "verseRef": "Jó 39:19",
+   "passageA": {
+    "ref": "Jó 39:19"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus usa o cavalo para mostrar a Jó que ele não governa a criação."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Criação fora do controle"
+    },
+    {
+     "id": "b",
+     "text": "Vitória fácil de Jó"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio total de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "A pergunta mostra o que Jó não controla.",
+   "feedbackWrong": {
+    "b": "Não há vitória fácil de Jó.",
+    "c": "Deus está falando, não em silêncio."
+   },
+   "hint": "Pense no que a pergunta assume.",
+   "learningObjective": "Ligar a pergunta ao contexto.",
+   "evidence": [
+    "Jó 39:19"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 39:27, a águia voa porque Jó deu a ordem.",
+   "verseRef": "Jó 39:27",
+   "correctOptionId": "false",
+   "evidenceSpan": "a águia voa por tua ordem",
+   "feedbackCorrect": "A pergunta espera a resposta negativa: não é por ordem de Jó.",
+   "feedbackWrong": {
+    "true": "A forma da pergunta mostra que Jó não comanda a águia."
+   },
+   "hint": "Leia a pergunta sobre a águia.",
+   "learningObjective": "Compreender a ordem que Jó não dá.",
+   "evidence": [
+    "Jó 39:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 39:25, toque a palavra que marca o momento da batalha.",
+   "verseRef": "Jó 39:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Quando"
+    },
+    {
+     "id": "b",
+     "text": "Eia"
+    },
+    {
+     "id": "c",
+     "text": "batalha"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quando a trombeta soa",
+   "feedbackCorrect": "\"Quando\" marca o momento.",
+   "feedbackWrong": {
+    "b": "\"Eia\" é o grito do cavalo.",
+    "c": "\"Batalha\" é o que ele cheira."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de tempo.",
+   "evidence": [
+    "Jó 39:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 39:27–28 se relaciona com a pergunta sobre o cavalo?",
+   "verseRef": "Jó 39:19–28",
+   "options": [
+    {
+     "id": "a",
+     "text": "Repete a lição: Jó não governa a criação"
+    },
+    {
+     "id": "b",
+     "text": "Mostra que Jó criou águia e cavalo"
+    },
+    {
+     "id": "c",
+     "text": "Nega qualquer grandeza nas criaturas"
+    },
+    {
+     "id": "d",
+     "text": "Afirma que a águia depende de Jó"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a águia voa por tua ordem",
+   "feedbackCorrect": "Cavalo e águia fazem a mesma pergunta: quem governa?",
+   "feedbackWrong": {
+    "b": "As perguntas pressupõem que Jó não criou.",
+    "c": "O texto celebra a força das criaturas.",
+    "d": "A pergunta espera o não."
+   },
+   "hint": "Compare as perguntas de 39:19 e 39:27.",
+   "learningObjective": "Relacionar cavalo e águia.",
+   "evidence": [
+    "Jó 39:19–28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a fala de Deus em 39:19–30?",
+   "verseRef": "Jó 39:19–30",
+   "options": [
+    {
+     "id": "a",
+     "text": "Perguntas sobre a força do cavalo"
+    },
+    {
+     "id": "b",
+     "text": "O cavalo enfrenta a guerra sem medo"
+    },
+    {
+     "id": "c",
+     "text": "A águia habita nas alturas e vê a presa"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "observa a presa",
+   "feedbackCorrect": "O fio vai do cavalo à guerra e à águia.",
+   "feedbackWrong": {
+    "default": "Comece pelo cavalo; a presa fecha."
+   },
+   "hint": "Pense: cavalo → guerra → águia.",
+   "learningObjective": "Compreender a estrutura do trecho.",
+   "evidence": [
+    "Jó 39:19–30"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 39:27, que ave voa na pergunta de Deus?",
+   "verseRef": "Jó 39:27",
+   "options": [
+    {
+     "id": "a",
+     "text": "águia"
+    },
+    {
+     "id": "b",
+     "text": "cavalo"
+    },
+    {
+     "id": "c",
+     "text": "gafanhoto"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a águia voa por tua ordem",
+   "feedbackCorrect": "A ave da pergunta é a águia.",
+   "feedbackWrong": {
+    "b": "O cavalo está em 39:19.",
+    "c": "O gafanhoto está em 39:20."
+   },
+   "hint": "Veja o sujeito do verbo \"voa\".",
+   "learningObjective": "Lembrar a ave da pergunta.",
+   "evidence": [
+    "Jó 39:27"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 39:27 a Mateus 6:26?",
+   "verseRef": "Jó 39:27",
+   "passageA": {
+    "ref": "Jó 39:27"
+   },
+   "passageB": {
+    "ref": "Mateus 6:26"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Aves cuidadas por Deus"
+    },
+    {
+     "id": "b",
+     "text": "Lista de sacrifícios"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de cidades"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a águia voa por tua ordem",
+   "feedbackCorrect": "Nos dois textos, as aves vivem sob o cuidado de Deus, não do homem.",
+   "feedbackWrong": {
+    "b": "Não há lista de sacrifícios.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare quem cuida das aves.",
+   "learningObjective": "Relacionar a águia a Mateus.",
+   "evidence": [
+    "Jó 39:27",
+    "Mateus 6:26"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 39:19–30 sustenta que a criação humilha a pretensão de Jó de julgar os caminhos de Deus.",
+   "verseRef": "Jó 39:19–30",
+   "correctOptionId": "true",
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "As perguntas sobre cavalo e águia colocam Jó no tamanho certo.",
+   "feedbackWrong": {
+    "false": "As perguntas mostram o que Jó não governa."
+   },
+   "hint": "Veja o tom das perguntas de Deus.",
+   "learningObjective": "Interpretar a criação como humilhação da pretensão.",
+   "evidence": [
+    "Jó 39:19–30"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 39:28, toque o trecho que sustenta a segurança da águia.",
+   "verseRef": "Jó 39:28",
+   "options": [
+    {
+     "id": "a",
+     "text": "lugares seguros"
+    },
+    {
+     "id": "b",
+     "text": "alto das rochas"
+    },
+    {
+     "id": "c",
+     "text": "sua morada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "se estabelece em lugares seguros",
+   "feedbackCorrect": "Lugares seguros sustentam a morada fora do alcance de Jó.",
+   "feedbackWrong": {
+    "b": "As rochas são o lugar; a segurança fecha a frase.",
+    "c": "A morada é feita; a segurança a completa."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Sustentar a leitura da águia.",
+   "evidence": [
+    "Jó 39:28"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 39:19–30 sustenta?",
+   "verseRef": "Jó 39:19–30",
+   "options": [
+    {
+     "id": "a",
+     "text": "A criação humilha quem quer julgar os caminhos de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Jó governa cavalo e águia com inteligência"
+    },
+    {
+     "id": "c",
+     "text": "As criaturas existem para confirmar o tribunal de Jó"
+    },
+    {
+     "id": "d",
+     "text": "Deus evita falar da criação"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "As perguntas desmontam a pretensão de Jó.",
+   "feedbackWrong": {
+    "b": "As perguntas esperam o não.",
+    "c": "A criação não confirma o tribunal de Jó.",
+    "d": "O trecho inteiro fala da criação."
+   },
+   "hint": "Una cavalo e águia.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 39:19–30"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra a criação que ensina dependência?",
+   "verseRef": "Jó 39:19–30",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus aponta o cavalo que Jó não fortaleceu"
+    },
+    {
+     "id": "b",
+     "text": "O salmista celebra obras cheias de sabedoria"
+    },
+    {
+     "id": "c",
+     "text": "Jesus aponta as aves cuidadas pelo Pai"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Darás tu força ao cavalo?",
+   "feedbackCorrect": "O fio vai de Jó ao Salmo e a Mateus.",
+   "feedbackWrong": {
+    "default": "Comece pelo cavalo; as aves de Jesus fecham."
+   },
+   "hint": "Siga: cavalo → Salmo → aves.",
+   "learningObjective": "Ver o fio da criação.",
+   "evidence": [
+    "Jó 39:19",
+    "Salmos 104:24",
+    "Mateus 6:26"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 39:19, o que Jó revestiria no pescoço do cavalo?",
+   "verseRef": "Jó 39:19",
+   "options": [
+    {
+     "id": "a",
+     "text": "crinas"
+    },
+    {
+     "id": "b",
+     "text": "espada"
+    },
+    {
+     "id": "c",
+     "text": "trombeta"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "revestirás o seu pescoço de crinas",
+   "feedbackCorrect": "O termo concreto é crinas.",
+   "feedbackWrong": {
+    "b": "\"Espada\" está em 39:22.",
+    "c": "\"Trombeta\" está em 39:25."
+   },
+   "hint": "Veja o fim da segunda pergunta.",
+   "learningObjective": "Lembrar o detalhe do pescoço.",
+   "evidence": [
+    "Jó 39:19"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 39:27 a Isaías 40:31?",
+   "verseRef": "Jó 39:27",
+   "passageA": {
+    "ref": "Jó 39:27"
+   },
+   "passageB": {
+    "ref": "Isaías 40:31"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Asas como águias"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem véu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a águia voa por tua ordem",
+   "feedbackCorrect": "Nos dois textos, a águia aponta para força que vem de Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare a imagem da águia.",
+   "learningObjective": "Ligar a águia a Isaías.",
+   "evidence": [
+    "Jó 39:27",
+    "Isaías 40:31"
+   ]
+  }
+ ]
+}

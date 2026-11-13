@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 6:12–19",
+    "passages": [
+      {
+        "ref": "2 Samuel 6:12–19"
+      }
+    ],
+    "context": "A arca sobe de Obede-Edom para a Cidade de Davi. Davi dança; Mical despreza; o culto e a bênção seguem.",
+    "keyword": "dançava",
+    "keywordGloss": "Davi se alegra com todas as forças diante do Senhor.",
+    "focusQuestion": "Você deixa o olhar alheio calar a alegria diante do Senhor?",
+    "reflectionPrompts": [
+      "Arca sobe com alegria",
+      "Davi dança",
+      "Mical despreza"
+    ],
+    "facts": [
+      {
+        "text": "Davi fez subir a arca com alegria.",
+        "evidenceRef": "2 Samuel 6:12",
+        "evidenceSpan": "com alegria"
+      },
+      {
+        "text": "Davi dançava com todas as suas forças diante do Senhor.",
+        "evidenceRef": "2 Samuel 6:14",
+        "evidenceSpan": "Davi dançava com todas as suas forças diante do Senhor"
+      },
+      {
+        "text": "Mical desprezou Davi em seu coração.",
+        "evidenceRef": "2 Samuel 6:16",
+        "evidenceSpan": "o desprezou em seu coração"
+      },
+      {
+        "text": "Colocaram a arca na tenda que Davi havia preparado.",
+        "evidenceRef": "2 Samuel 6:17",
+        "evidenceSpan": "na tenda que Davi havia preparado"
+      },
+      {
+        "text": "Davi abençoou o povo em nome do SENHOR dos Exércitos.",
+        "evidenceRef": "2 Samuel 6:18",
+        "evidenceSpan": "abençoou o povo em nome do SENHOR dos Exércitos"
+      },
+      {
+        "text": "Davi repartiu pão, carne e passas a todo o povo.",
+        "evidenceRef": "2 Samuel 6:19",
+        "evidenceSpan": "um bolo de pão, um bom pedaço de carne e passas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "dançava",
+        "gloss": "Alegria corporal de Davi diante do Senhor."
+      },
+      {
+        "term": "desprezou",
+        "gloss": "Olhar de Mical que rejeita o culto alegre do rei."
+      },
+      {
+        "term": "alegria",
+        "gloss": "Tom da subida da arca com todo o Israel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Arca sobe de Obede-Edom com alegria",
+        "evidenceRef": "2 Samuel 6:12–13"
+      },
+      {
+        "label": "Davi dança e Israel sobe com júbilo",
+        "evidenceRef": "2 Samuel 6:14–15"
+      },
+      {
+        "label": "Mical despreza pela janela",
+        "evidenceRef": "2 Samuel 6:16"
+      },
+      {
+        "label": "Ofertas, bênção e repartição ao povo",
+        "evidenceRef": "2 Samuel 6:17–19"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Assim Davi e Israel sobem a arca com júbilo.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 6:15"
+      },
+      {
+        "kind": "contraste",
+        "text": "Davi dança; Mical despreza em seu coração.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 6:16"
+      },
+      {
+        "kind": "sequência",
+        "text": "Então avisam Davi; então ele faz subir a arca.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 6:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 150:4",
+        "bridge": "Louvor com dança"
+      },
+      {
+        "ref": "1 Crônicas 15:29",
+        "bridge": "Mical vê Davi dançar"
+      },
+      {
+        "ref": "Êxodo 15:20",
+        "bridge": "Dança depois da salvação"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O desprezo de Mical interrompe o culto.",
+        "why": "Davi segue com ofertas, bênção e repartição ao povo."
+      },
+      {
+        "text": "Davi dança sem força, só por formalidade.",
+        "why": "O texto diz com todas as suas forças."
+      },
+      {
+        "text": "A arca sobe em silêncio triste.",
+        "why": "Sobe com alegria, júbilo e trombetas."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 6:14, como Davi dançava diante do Senhor?",
+    "centralInsight": "Davi se alegra diante do Senhor; Mical despreza, mas o culto não se cala."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 6:14, Davi dançava com todas as suas forças diante do Senhor.",
+      "verseRef": "2 Samuel 6:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Davi dançava com todas as suas forças diante do Senhor",
+      "feedbackCorrect": "Há dança intensa.",
+      "feedbackWrong": {
+        "false": "O verso fala de todas as forças."
+      },
+      "hint": "Veja como dança.",
+      "learningObjective": "Observar a dança.",
+      "evidence": [
+        "2 Samuel 6:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 6:14, toque com que intensidade Davi dança.",
+      "verseRef": "2 Samuel 6:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "dançava"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "forças"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar forças.",
+      "evidence": [
+        "2 Samuel 6:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 6:15, com que Israel sobe a arca?",
+      "verseRef": "2 Samuel 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com júbilo e trombetas"
+        },
+        {
+          "id": "b",
+          "text": "Com silêncio total"
+        },
+        {
+          "id": "c",
+          "text": "Com lamento de Mical"
+        },
+        {
+          "id": "d",
+          "text": "Sem o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com júbilo, acompanhados pelo som das trombetas",
+      "feedbackCorrect": "Júbilo e trombetas.",
+      "feedbackWrong": {
+        "b": "Há júbilo.",
+        "c": "Mical despreza à parte.",
+        "d": "Todo o Israel sobe."
+      },
+      "hint": "Leia o tom.",
+      "learningObjective": "Reconhecer o júbilo.",
+      "evidence": [
+        "2 Samuel 6:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 6:14 na ordem do texto.",
+      "verseRef": "2 Samuel 6:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "E Davi dançava com todas as suas forças"
+        },
+        {
+          "id": "b",
+          "text": "diante do Senhor"
+        },
+        {
+          "id": "c",
+          "text": "estava cingido de um éfode de linho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Davi dançava com todas as suas forças diante do Senhor",
+      "feedbackCorrect": "Dança, Senhor e éfode.",
+      "feedbackWrong": {
+        "default": "Comece pela dança."
+      },
+      "hint": "Com o que estava cingido?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 6:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 6:15, complete: subiram a arca do Senhor com ___.",
+      "verseRef": "2 Samuel 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "júbilo"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "desprezo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com júbilo",
+      "feedbackCorrect": "Júbilo.",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "Não é desprezo."
+      },
+      "hint": "Veja o tom.",
+      "learningObjective": "Lembrar júbilo.",
+      "evidence": [
+        "2 Samuel 6:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 6:12 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 6:12",
+      "passageA": {
+        "ref": "2 Samuel 6:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A arca sobe para a Cidade de Davi com alegria."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Subida com alegria"
+        },
+        {
+          "id": "b",
+          "text": "Abandono da arca"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio em Obede-Edom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com alegria",
+      "feedbackCorrect": "Há alegria.",
+      "feedbackWrong": {
+        "b": "Há subida.",
+        "c": "Há bênção prévia."
+      },
+      "hint": "Como sobe?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 6:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 6:16–18, o desprezo de Mical impede Davi de abençoar o povo.",
+      "verseRef": "2 Samuel 6:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "abençoou o povo em nome do SENHOR dos Exércitos",
+      "feedbackCorrect": "O culto segue com bênção.",
+      "feedbackWrong": {
+        "true": "Leia o que Davi faz depois."
+      },
+      "hint": "Veja a bênção.",
+      "learningObjective": "Ver que o culto segue.",
+      "evidence": [
+        "2 Samuel 6:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 6:15, toque o marcador de resultado.",
+      "verseRef": "2 Samuel 6:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "subiram"
+        },
+        {
+          "id": "b",
+          "text": "Israel"
+        },
+        {
+          "id": "c",
+          "text": "arca"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Israel",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o Assim.",
+      "evidence": [
+        "2 Samuel 6:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 6:14–16 destaca?",
+      "verseRef": "2 Samuel 6:14–16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria de Davi contrastada com o desprezo de Mical"
+        },
+        {
+          "id": "b",
+          "text": "Mical lidera a dança"
+        },
+        {
+          "id": "c",
+          "text": "Davi abandona a arca"
+        },
+        {
+          "id": "d",
+          "text": "O povo despreza o rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o desprezou em seu coração",
+      "feedbackCorrect": "Contraste do olhar.",
+      "feedbackWrong": {
+        "b": "Davi dança.",
+        "c": "A arca sobe.",
+        "d": "Mical despreza."
+      },
+      "hint": "Compare dança e olhar.",
+      "learningObjective": "Compreender o contraste.",
+      "evidence": [
+        "2 Samuel 6:14–16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 6:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Arca sobe de Obede-Edom com alegria"
+        },
+        {
+          "id": "b",
+          "text": "Davi dança e Israel sobe com júbilo"
+        },
+        {
+          "id": "c",
+          "text": "Ofertas, bênção e repartição ao povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "com alegria",
+      "feedbackCorrect": "Subida, dança e bênção.",
+      "feedbackWrong": {
+        "default": "Comece pela subida."
+      },
+      "hint": "O que fecha o culto?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 6:12",
+        "2 Samuel 6:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 6:14, complete: estava cingido de um ___ de linho.",
+      "verseRef": "2 Samuel 6:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "éfode"
+        },
+        {
+          "id": "b",
+          "text": "manto"
+        },
+        {
+          "id": "c",
+          "text": "escudo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cingido de um éfode de linho",
+      "feedbackCorrect": "Éfode.",
+      "feedbackWrong": {
+        "b": "Não é manto.",
+        "c": "Não é escudo."
+      },
+      "hint": "Veja a vestimenta.",
+      "learningObjective": "Lembrar éfode.",
+      "evidence": [
+        "2 Samuel 6:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 6:14 a Salmos 150:4?",
+      "verseRef": "2 Samuel 6:14",
+      "passageA": {
+        "ref": "2 Samuel 6:14"
+      },
+      "passageB": {
+        "ref": "Salmos 150:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvor com dança"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio no culto"
+        },
+        {
+          "id": "c",
+          "text": "Desprezo como regra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Davi dançava com todas as suas forças",
+      "feedbackCorrect": "Dança no louvor.",
+      "feedbackWrong": {
+        "b": "Há dança.",
+        "c": "Há força."
+      },
+      "hint": "Compare a dança.",
+      "learningObjective": "Ligar ao louvor.",
+      "evidence": [
+        "2 Samuel 6:14",
+        "Salmos 150:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 6:14–19, a alegria diante do Senhor continua mesmo com o desprezo de Mical.",
+      "verseRef": "2 Samuel 6:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "o desprezou em seu coração",
+      "feedbackCorrect": "Desprezo não cala o culto.",
+      "feedbackWrong": {
+        "false": "Há desprezo, mas o culto segue."
+      },
+      "hint": "Veja o que vem depois.",
+      "learningObjective": "Avaliar a leitura do culto.",
+      "evidence": [
+        "2 Samuel 6:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 6:16, toque de onde Mical olha.",
+      "verseRef": "2 Samuel 6:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "entrar"
+        },
+        {
+          "id": "b",
+          "text": "aconteceu"
+        },
+        {
+          "id": "c",
+          "text": "arca"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "aconteceu",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar janela.",
+      "evidence": [
+        "2 Samuel 6:16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une dança, desprezo e bênção?",
+      "verseRef": "2 Samuel 6:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O culto ao Senhor segue apesar do olhar que despreza"
+        },
+        {
+          "id": "b",
+          "text": "Mical interrompe a bênção ao povo"
+        },
+        {
+          "id": "c",
+          "text": "Davi dança para impressionar Mical"
+        },
+        {
+          "id": "d",
+          "text": "A arca sobe sem alegria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abençoou o povo em nome do SENHOR dos Exércitos",
+      "feedbackCorrect": "Culto que não se cala.",
+      "feedbackWrong": {
+        "b": "Há bênção.",
+        "c": "Dança é diante do Senhor.",
+        "d": "Há alegria."
+      },
+      "hint": "Una dança e bênção.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 6:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do culto alegre.",
+      "verseRef": "2 Samuel 6:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dança diante do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Desprezo pela janela"
+        },
+        {
+          "id": "c",
+          "text": "Bênção e repartição ao povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Davi dançava com todas as suas forças",
+      "feedbackCorrect": "Dança, desprezo e bênção.",
+      "feedbackWrong": {
+        "default": "Comece pela dança."
+      },
+      "hint": "O que fecha o culto?",
+      "learningObjective": "Encadear o culto.",
+      "evidence": [
+        "2 Samuel 6:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 6:17, complete: colocaram-na em seu local, na ___.",
+      "verseRef": "2 Samuel 6:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "tenda"
+        },
+        {
+          "id": "b",
+          "text": "janela"
+        },
+        {
+          "id": "c",
+          "text": "porta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na tenda que Davi havia preparado",
+      "feedbackCorrect": "Tenda.",
+      "feedbackWrong": {
+        "b": "Não é janela.",
+        "c": "Não é porta."
+      },
+      "hint": "Onde colocam a arca?",
+      "learningObjective": "Lembrar tenda.",
+      "evidence": [
+        "2 Samuel 6:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 6:16 a 1 Crônicas 15:29?",
+      "verseRef": "2 Samuel 6:16",
+      "passageA": {
+        "ref": "2 Samuel 6:16"
+      },
+      "passageB": {
+        "ref": "1 Crônicas 15:29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mical vê Davi dançar"
+        },
+        {
+          "id": "b",
+          "text": "Mical lidera a dança"
+        },
+        {
+          "id": "c",
+          "text": "Mical abençoa o povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vendo o rei Davi dançando e saltando",
+      "feedbackCorrect": "O olhar de Mical.",
+      "feedbackWrong": {
+        "b": "Ela despreza.",
+        "c": "Davi abençoa."
+      },
+      "hint": "Compare o olhar.",
+      "learningObjective": "Ligar ao paralelo.",
+      "evidence": [
+        "2 Samuel 6:16",
+        "1 Crônicas 15:29"
+      ]
+    }
+  ]
+}

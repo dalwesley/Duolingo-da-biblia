@@ -10,6 +10,7 @@ import '../data/question_bank.dart';
 import '../data/season_walk_catalog.dart';
 import '../data/trail_art.dart';
 import '../data/trail_repository.dart';
+import '../models/scene_takeaway.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/difficulty.dart';
 import '../models/pilgrim_medals.dart';
@@ -44,6 +45,7 @@ import '../widgets/mascot_bubble.dart';
 import '../widgets/postcard.dart';
 import '../widgets/relic_panel.dart';
 import '../widgets/reminder_prompt_sheet.dart';
+import '../widgets/scene_takeaways_sheet.dart';
 import '../widgets/share_insight_card.dart';
 import '../widgets/share_seal_card.dart';
 import '../widgets/share_streak_button.dart';
@@ -82,6 +84,9 @@ class CelebrationScreen extends StatefulWidget {
   /// A cena veio pela própria trilha: a 1ª feita a põe em Minhas trilhas.
   final bool choosesTrail;
 
+  /// O que a pessoa viu no texto (frases de acerto) e o que ficou para rever.
+  final List<SceneTakeaway> takeaways;
+
   const CelebrationScreen({
     super.key,
     required this.missionSlug,
@@ -97,6 +102,7 @@ class CelebrationScreen extends StatefulWidget {
     this.sceneTitle,
     this.postcardRef,
     this.choosesTrail = false,
+    this.takeaways = const [],
   });
 
   @override
@@ -571,6 +577,23 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                 await progress.markWalkDate(campaign.id, ymd);
                 break;
               }
+            }
+            if (!widget.failed) {
+              // Dia em que a cena foi feita (refazer conta) e aviso ao grupo
+              // na hora: a cena marcada pelo grupo ou o dia do propósito
+              // ficam feitos sem esperar a pessoa abrir a aba Juntos.
+              await progress.markSceneDone({
+                widget.missionSlug,
+                ...CuratedTrails.linkedScenes(widget.missionSlug),
+              });
+              unawaited(
+                rooms
+                    .syncStudyDone(progress)
+                    .then((_) => rooms.syncPlan(progress))
+                    .catchError((Object e) {
+                      debugPrint('celebration group sync failed: $e');
+                    }),
+              );
             }
             if (firstSealEncounter && mounted) {
               final seal = CharacterSeals.forMission(widget.missionSlug);
@@ -1199,6 +1222,23 @@ class _CelebrationScreenState extends State<CelebrationScreen>
                                                 replayThisStep: false,
                                               )
                                             : null,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              if (widget.takeaways.isNotEmpty &&
+                                  !widget.failed &&
+                                  _newSeal == null)
+                                Padding(
+                                  padding: const EdgeInsets.only(bottom: 8),
+                                  child: FadeTransition(
+                                    opacity: _statsOpacity,
+                                    child: _TakeawaysRow(
+                                      takeaways: widget.takeaways,
+                                      onTap: () => showSceneTakeawaysSheet(
+                                        context,
+                                        takeaways: widget.takeaways,
+                                        sceneTitle: widget.sceneTitle,
                                       ),
                                     ),
                                   ),
@@ -2207,6 +2247,60 @@ class _ModeUpgradeCard extends StatelessWidget {
             ),
           ],
         ],
+      ),
+    );
+  }
+}
+
+/// Linha que abre "O que você viu no texto" — curta para não roubar a tela.
+class _TakeawaysRow extends StatelessWidget {
+  final List<SceneTakeaway> takeaways;
+  final VoidCallback onTap;
+
+  const _TakeawaysRow({required this.takeaways, required this.onTap});
+
+  @override
+  Widget build(BuildContext context) {
+    final seen = takeaways.where((t) => !t.missed).length;
+    final label = seen > 0
+        ? context.l10n.takeawaysRow(seen)
+        : context.l10n.takeawaysRowReviewOnly;
+    return Material(
+      color: Colors.transparent,
+      child: InkWell(
+        borderRadius: BorderRadius.circular(AppRadii.md),
+        onTap: onTap,
+        child: GlassCard(
+          color: _CelebrationPlate.fill,
+          tint: _CelebrationPlate.line,
+          padding: AppMetrics.cardPaddingCompact,
+          child: Row(
+            children: [
+              CinematicIcon(
+                glyph: CinematicGlyph.book,
+                size: AppMetrics.chipIcon,
+                accent: AppRoles.presence,
+                framed: false,
+              ),
+              const SizedBox(width: AppSpace.sm),
+              Expanded(
+                child: Text(
+                  label,
+                  style: AppTypography.title(
+                    size: 14,
+                    color: _CelebrationPlate.ink,
+                  ),
+                ),
+              ),
+              CinematicIcon(
+                glyph: CinematicGlyph.chevron,
+                size: AppMetrics.chipIcon,
+                accent: _CelebrationPlate.muted,
+                framed: false,
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }

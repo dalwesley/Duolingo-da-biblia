@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Josué 24:1–6",
+    "passages": [
+      {
+        "ref": "Josué 24:1–13"
+      }
+    ],
+    "context": "Em Siquém, Josué conta a história do Senhor: tirou, guiou e deu a terra; Israel não conquistou com espada própria.",
+    "keyword": "dei",
+    "keywordGloss": "O Senhor deu a terra, cidades e vinhas que o povo não fez.",
+    "focusQuestion": "O que em sua vida você trata como conquista própria, sendo dom do Senhor?",
+    "reflectionPrompts": [
+      "História em Siquém",
+      "Não foi a espada",
+      "Terra e cidades dadas"
+    ],
+    "facts": [
+      {
+        "text": "Josué reuniu as tribos em Siquém.",
+        "evidenceRef": "Josué 24:1",
+        "evidenceSpan": "reuniu todas as tribos de Israel em Siquém"
+      },
+      {
+        "text": "O Senhor tomou Abraão do outro lado do rio.",
+        "evidenceRef": "Josué 24:3",
+        "evidenceSpan": "tomei Abraão, vosso pai, do outro lado do rio"
+      },
+      {
+        "text": "O Senhor tirou Israel do Egito.",
+        "evidenceRef": "Josué 24:5",
+        "evidenceSpan": "tirei-vos de lá"
+      },
+      {
+        "text": "Não quis ouvir Balaão; ele teve de abençoar.",
+        "evidenceRef": "Josué 24:10",
+        "evidenceSpan": "Porém eu não quis ouvir Balaão"
+      },
+      {
+        "text": "Enviou vespões que expulsaram os povos.",
+        "evidenceRef": "Josué 24:12",
+        "evidenceSpan": "Enviei vespões diante de vocês"
+      },
+      {
+        "text": "Deu terra, cidades e vinhas que não trabalharam nem edificaram.",
+        "evidenceRef": "Josué 24:13",
+        "evidenceSpan": "Eu lhes dei a terra na qual não trabalharam"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "porém",
+        "gloss": "Marca a ação do Senhor tomando Abraão."
+      },
+      {
+        "term": "vespões",
+        "gloss": "Instrumento do Senhor para expulsar os povos."
+      },
+      {
+        "term": "dei",
+        "gloss": "O Senhor deu a terra e as cidades."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Reunião em Siquém",
+        "evidenceRef": "Josué 24:1–2"
+      },
+      {
+        "label": "Pais, Abraão e Egito",
+        "evidenceRef": "Josué 24:2–7"
+      },
+      {
+        "label": "Amorreus, Balaão e Jericó",
+        "evidenceRef": "Josué 24:8–11"
+      },
+      {
+        "label": "Vespões e terra dada",
+        "evidenceRef": "Josué 24:12–13"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os pais além do rio; porém o Senhor tomou Abraão.",
+        "marker": "porém",
+        "evidenceRef": "Josué 24:3"
+      },
+      {
+        "kind": "contraste",
+        "text": "Não quis ouvir Balaão; por isso abençoou.",
+        "marker": "Porém",
+        "evidenceRef": "Josué 24:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Deram terra e cidades sem trabalho próprio.",
+        "marker": null,
+        "evidenceRef": "Josué 24:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 6:10–11",
+        "bridge": "Cidades que não edificastes"
+      },
+      {
+        "ref": "Salmos 44:3",
+        "bridge": "Não foi a espada"
+      },
+      {
+        "ref": "Êxodo 23:28",
+        "bridge": "Vespões diante de ti"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Israel conquistou tudo só com espada e arco.",
+        "why": "O texto diz que não foi com espada nem arco."
+      },
+      {
+        "text": "A terra foi fruto do trabalho deles.",
+        "why": "Deram terra na qual não trabalharam."
+      },
+      {
+        "text": "Balaão amaldiçoou com sucesso.",
+        "why": "O Senhor não quis ouvir; Balaão abençoou."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 24:13, o que o Senhor deu além da terra?",
+    "centralInsight": "O Senhor tirou, guiou e deu a terra: Israel não conquistou com espada própria."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 24:1, Josué reuniu todas as tribos de Israel em Siquém.",
+      "verseRef": "Josué 24:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "reuniu todas as tribos de Israel em Siquém",
+      "feedbackCorrect": "A reunião é em Siquém.",
+      "feedbackWrong": {
+        "false": "O texto situa a reunião em Siquém."
+      },
+      "hint": "Veja o lugar.",
+      "learningObjective": "Observar a reunião em Siquém.",
+      "evidence": [
+        "Josué 24:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 24:12, toque o que o Senhor enviou diante do povo.",
+      "verseRef": "Josué 24:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "vespões"
+        },
+        {
+          "id": "b",
+          "text": "amorreus"
+        },
+        {
+          "id": "c",
+          "text": "espada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Enviei vespões diante de vocês",
+      "feedbackCorrect": "Enviou vespões.",
+      "feedbackWrong": {
+        "b": "Amorreus são expulsos.",
+        "c": "Espada é negada no fim."
+      },
+      "hint": "Veja o objeto de Enviei.",
+      "learningObjective": "Identificar os vespões.",
+      "evidence": [
+        "Josué 24:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 24:13, o que o Senhor deu?",
+      "verseRef": "Josué 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Terra, cidades e vinhas que não fizeram"
+        },
+        {
+          "id": "b",
+          "text": "Só o deserto para morar"
+        },
+        {
+          "id": "c",
+          "text": "Armas para comprar terra"
+        },
+        {
+          "id": "d",
+          "text": "Templo em vez de cidades"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu lhes dei a terra na qual não trabalharam",
+      "feedbackCorrect": "Dom sem trabalho próprio.",
+      "feedbackWrong": {
+        "b": "Não é só deserto.",
+        "c": "Não compram.",
+        "d": "Há cidades dadas."
+      },
+      "hint": "Leia o que foi dado.",
+      "learningObjective": "Reconhecer o dom.",
+      "evidence": [
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 24:13 na ordem do texto.",
+      "verseRef": "Josué 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu lhes dei a terra na qual não trabalharam"
+        },
+        {
+          "id": "b",
+          "text": "e cidades que não edificaram"
+        },
+        {
+          "id": "c",
+          "text": "agora habitam nelas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu lhes dei a terra na qual não trabalharam",
+      "feedbackCorrect": "Dom e habitação.",
+      "feedbackWrong": {
+        "default": "Comece pelo dei."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 24:13, complete: Eu lhes ___ a terra.",
+      "verseRef": "Josué 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "dei"
+        },
+        {
+          "id": "b",
+          "text": "vendi"
+        },
+        {
+          "id": "c",
+          "text": "pedi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu lhes dei a terra",
+      "feedbackCorrect": "O Senhor deu a terra.",
+      "feedbackWrong": {
+        "b": "Não é vendi.",
+        "c": "O verbo é dei."
+      },
+      "hint": "Veja o verbo do Senhor.",
+      "learningObjective": "Lembrar o verbo dei.",
+      "evidence": [
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 24:13 comunica que se liga a este contexto?",
+      "verseRef": "Josué 24:13",
+      "passageA": {
+        "ref": "Josué 24:13"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Josué conta em Siquém o que o Senhor fez por Israel."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Dom sem conquista própria"
+        },
+        {
+          "id": "b",
+          "text": "Vitória só humana"
+        },
+        {
+          "id": "c",
+          "text": "Trabalho sem dom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu lhes dei a terra na qual não trabalharam",
+      "feedbackCorrect": "A história fecha no dom.",
+      "feedbackWrong": {
+        "b": "Não é só humana.",
+        "c": "Há dom."
+      },
+      "hint": "Veja o dei.",
+      "learningObjective": "Ligar a história ao dom.",
+      "evidence": [
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 24:3, o Senhor deixa Abraão além do rio, sem tomá-lo para Canaã.",
+      "verseRef": "Josué 24:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu, porém, tomei Abraão, vosso pai, do outro lado do rio",
+      "feedbackCorrect": "O \"porém\" marca que o Senhor tomou Abraão do outro lado do rio.",
+      "feedbackWrong": {
+        "true": "Releia 24:3: Eu, porém, tomei Abraão."
+      },
+      "hint": "Veja o verbo após \"porém\".",
+      "learningObjective": "Ver o contraste do porém.",
+      "evidence": [
+        "Josué 24:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 24:3, toque a palavra que marca a virada da história.",
+      "verseRef": "Josué 24:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "rio"
+        },
+        {
+          "id": "c",
+          "text": "Canaã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu, porém, tomei Abraão",
+      "feedbackCorrect": "Porém introduz a ação.",
+      "feedbackWrong": {
+        "b": "Rio é a origem.",
+        "c": "Canaã é o percurso."
+      },
+      "hint": "Procure a conjunção após Eu.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": [
+        "Josué 24:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Josué 24:12 faz sobre a expulsão?",
+      "verseRef": "Josué 24:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vespões expulsaram; não foi espada nem arco"
+        },
+        {
+          "id": "b",
+          "text": "Só a espada expulsou"
+        },
+        {
+          "id": "c",
+          "text": "O arco fez tudo"
+        },
+        {
+          "id": "d",
+          "text": "Israel expulsou sem o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso não com a sua espada, nem com o seu arco",
+      "feedbackCorrect": "O Senhor atribui a expulsão a si.",
+      "feedbackWrong": {
+        "b": "Nega a espada.",
+        "c": "Nega o arco.",
+        "d": "Há envio divino."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Compreender quem expulsou.",
+      "evidence": [
+        "Josué 24:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 24:1–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reunião em Siquém"
+        },
+        {
+          "id": "b",
+          "text": "Pais, Abraão e Egito"
+        },
+        {
+          "id": "c",
+          "text": "Vespões e terra dada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "reuniu todas as tribos de Israel em Siquém",
+      "feedbackCorrect": "Reunião, história e dom.",
+      "feedbackWrong": {
+        "default": "Comece pela reunião."
+      },
+      "hint": "O que abre a cena?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 24:1",
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 24:3, complete: Eu, porém, ___ Abraão.",
+      "verseRef": "Josué 24:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "tomei"
+        },
+        {
+          "id": "b",
+          "text": "deixei"
+        },
+        {
+          "id": "c",
+          "text": "vendi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu, porém, tomei Abraão",
+      "feedbackCorrect": "O Senhor tomou Abraão.",
+      "feedbackWrong": {
+        "b": "Não é deixei.",
+        "c": "O verbo é tomei."
+      },
+      "hint": "Veja o verbo após porém.",
+      "learningObjective": "Lembrar o verbo tomei.",
+      "evidence": [
+        "Josué 24:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 24:13 a Deuteronômio 6:10–11?",
+      "verseRef": "Josué 24:13",
+      "passageA": {
+        "ref": "Josué 24:13"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 6:10–11"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades que não edificastes"
+        },
+        {
+          "id": "b",
+          "text": "Trabalho sem descanso"
+        },
+        {
+          "id": "c",
+          "text": "Espada como único meio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cidades que não edificaram",
+      "feedbackCorrect": "Nos dois textos o dom precede o trabalho.",
+      "feedbackWrong": {
+        "b": "O elo é o dom.",
+        "c": "Não é só espada."
+      },
+      "hint": "Compare cidades não edificadas.",
+      "learningObjective": "Ligar a Deuteronômio.",
+      "evidence": [
+        "Josué 24:13",
+        "Deuteronômio 6:10–11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 24:12–13, vespões e terra dada sustentam que Israel não conquistou com espada própria.",
+      "verseRef": "Josué 24:12–13",
+      "correctOptionId": "true",
+      "evidenceSpan": "isso não com a sua espada, nem com o seu arco",
+      "feedbackCorrect": "O Senhor nega a espada e afirma o dom.",
+      "feedbackWrong": {
+        "false": "O texto une vespões e dei."
+      },
+      "hint": "Una 24:12 e 24:13.",
+      "learningObjective": "Avaliar a leitura da conquista.",
+      "evidence": [
+        "Josué 24:12–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 24:12, toque o trecho que sustenta a negação da conquista própria.",
+      "verseRef": "Josué 24:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "espada"
+        },
+        {
+          "id": "b",
+          "text": "vespões"
+        },
+        {
+          "id": "c",
+          "text": "amorreus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso não com a sua espada",
+      "feedbackCorrect": "A espada é negada.",
+      "feedbackWrong": {
+        "b": "Vespões são o instrumento.",
+        "c": "Amorreus são expulsos."
+      },
+      "hint": "Veja o que não foi.",
+      "learningObjective": "Tocar a negação da espada.",
+      "evidence": [
+        "Josué 24:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 24:1–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor tirou, guiou e deu a terra"
+        },
+        {
+          "id": "b",
+          "text": "Israel conquistou só com arco"
+        },
+        {
+          "id": "c",
+          "text": "Balaão derrotou o plano de Deus"
+        },
+        {
+          "id": "d",
+          "text": "A terra foi paga com trabalho duro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu lhes dei a terra na qual não trabalharam",
+      "feedbackCorrect": "História de dom.",
+      "feedbackWrong": {
+        "b": "Nega espada e arco.",
+        "c": "Balaão abençoou.",
+        "d": "Não trabalharam a terra."
+      },
+      "hint": "Una história e dom.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 24:1–13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da salvação contada.",
+      "verseRef": "Josué 24:3–13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor toma Abraão e tira do Egito"
+        },
+        {
+          "id": "b",
+          "text": "Livra de Balaão e envia vespões"
+        },
+        {
+          "id": "c",
+          "text": "Dá terra e cidades sem trabalho próprio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu, porém, tomei Abraão",
+      "feedbackCorrect": "Chamada, livramento e dom.",
+      "feedbackWrong": {
+        "default": "Comece por Abraão."
+      },
+      "hint": "O que vem primeiro na história?",
+      "learningObjective": "Encadear a história do dom",
+      "evidence": [
+        "Josué 24:3",
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 24:13, complete: cidades que não ___.",
+      "verseRef": "Josué 24:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "edificaram"
+        },
+        {
+          "id": "b",
+          "text": "compraram"
+        },
+        {
+          "id": "c",
+          "text": "venderam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "cidades que não edificaram",
+      "feedbackCorrect": "Cidades que não edificaram.",
+      "feedbackWrong": {
+        "b": "Não é compraram.",
+        "c": "O verbo é edificaram."
+      },
+      "hint": "Veja o verbo das cidades.",
+      "learningObjective": "Lembrar edificaram.",
+      "evidence": [
+        "Josué 24:13"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 24:12 a Salmos 44:3?",
+      "verseRef": "Josué 24:12",
+      "passageA": {
+        "ref": "Josué 24:12"
+      },
+      "passageB": {
+        "ref": "Salmos 44:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não foi a espada"
+        },
+        {
+          "id": "b",
+          "text": "Vitória só humana"
+        },
+        {
+          "id": "c",
+          "text": "Arco como salvador"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso não com a sua espada, nem com o seu arco",
+      "feedbackCorrect": "Nos dois textos a conquista não é da espada.",
+      "feedbackWrong": {
+        "b": "O elo é a espada negada.",
+        "c": "Há ação divina."
+      },
+      "hint": "Compare a espada.",
+      "learningObjective": "Ligar a Salmos 44.",
+      "evidence": [
+        "Josué 24:12",
+        "Salmos 44:3"
+      ]
+    }
+  ]
+}

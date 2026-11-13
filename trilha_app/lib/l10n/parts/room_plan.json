@@ -1,0 +1,908 @@
+{
+  "planLabelDay": {
+    "pt": "Propósito · Dia {n} de {total}",
+    "en": "Purpose · Day {n} of {total}",
+    "es": "Propósito · Día {n} de {total}",
+    "placeholders": {
+      "n": "int",
+      "total": "int"
+    }
+  },
+  "planLabelStartsIn": {
+    "pt": "{days, plural, =0{Propósito · começa hoje} =1{Propósito · começa amanhã} other{Propósito · começa em {days} dias}}",
+    "en": "{days, plural, =0{Purpose · starts today} =1{Purpose · starts tomorrow} other{Purpose · starts in {days} days}}",
+    "es": "{days, plural, =0{Propósito · empieza hoy} =1{Propósito · empieza mañana} other{Propósito · empieza en {days} días}}",
+    "placeholders": {
+      "days": "int"
+    }
+  },
+  "planLabelEnded": {
+    "pt": "Propósito encerrado",
+    "en": "Purpose finished",
+    "es": "Propósito terminado"
+  },
+  "planDateRange": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}} · {from} a {to}",
+    "en": "{count, plural, =1{1 day} other{{count} days}} · {from} to {to}",
+    "es": "{count, plural, =1{1 día} other{{count} días}} · del {from} al {to}",
+    "placeholders": {
+      "count": "int",
+      "from": "String",
+      "to": "String"
+    }
+  },
+  "planDayDate": {
+    "pt": "Dia {n} · {date}",
+    "en": "Day {n} · {date}",
+    "es": "Día {n} · {date}",
+    "placeholders": {
+      "n": "int",
+      "date": "String"
+    }
+  },
+  "planCatchUpTag": {
+    "pt": "Recuperar",
+    "en": "Catch up",
+    "es": "Recuperar"
+  },
+  "planItemRead": {
+    "pt": "Ler {ref}",
+    "en": "Read {ref}",
+    "es": "Leer {ref}",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planItemScene": {
+    "pt": "Cena: {title}",
+    "en": "Scene: {title}",
+    "es": "Escena: {title}",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "planItemQuestion": {
+    "pt": "Pergunta do dia",
+    "en": "Question of the day",
+    "es": "Pregunta del día"
+  },
+  "planItemManual": {
+    "pt": "Marcar o dia como feito",
+    "en": "Mark the day as done",
+    "es": "Marcar el día como hecho"
+  },
+  "planItemManualBody": {
+    "pt": "Hoje é só você e Deus. Marque quando terminar.",
+    "en": "Today it's just you and God. Mark it when you're done.",
+    "es": "Hoy es solo tú y Dios. Márcalo cuando termines."
+  },
+  "planDayDone": {
+    "pt": "Dia {n} feito",
+    "en": "Day {n} done",
+    "es": "Día {n} hecho",
+    "placeholders": {
+      "n": "int"
+    }
+  },
+  "planNextOpens": {
+    "pt": "O dia {n} abre {when}.",
+    "en": "Day {n} opens {when}.",
+    "es": "El día {n} abre {when}.",
+    "placeholders": {
+      "n": "int",
+      "when": "String"
+    }
+  },
+  "planTomorrow": {
+    "pt": "amanhã",
+    "en": "tomorrow",
+    "es": "mañana"
+  },
+  "planLastDayDone": {
+    "pt": "Era o último dia do propósito.",
+    "en": "That was the last day of the purpose.",
+    "es": "Era el último día del propósito."
+  },
+  "planCatchUpHint": {
+    "pt": "{count, plural, =1{1 dia para recuperar} other{{count} dias para recuperar}}",
+    "en": "{count, plural, =1{1 day to catch up} other{{count} days to catch up}}",
+    "es": "{count, plural, =1{1 día para recuperar} other{{count} días para recuperar}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planRestToday": {
+    "pt": "Hoje é dia de descanso",
+    "en": "Today is a rest day",
+    "es": "Hoy es día de descanso"
+  },
+  "planJoin": {
+    "pt": "Estou dentro",
+    "en": "I'm in",
+    "es": "Me apunto"
+  },
+  "planJoined": {
+    "pt": "Você está dentro",
+    "en": "You're in",
+    "es": "Estás dentro"
+  },
+  "planJoinedCount": {
+    "pt": "{count} de {total} estão dentro",
+    "en": "{count} of {total} are in",
+    "es": "{count} de {total} están dentro",
+    "placeholders": {
+      "count": "int",
+      "total": "int"
+    }
+  },
+  "planJoinedToast": {
+    "pt": "Você está dentro. O dia 1 abre {when}.",
+    "en": "You're in. Day 1 opens {when}.",
+    "es": "Estás dentro. El día 1 abre {when}.",
+    "placeholders": {
+      "when": "String"
+    }
+  },
+  "planFirstDay": {
+    "pt": "No dia 1: {items}",
+    "en": "On day 1: {items}",
+    "es": "El día 1: {items}",
+    "placeholders": {
+      "items": "String"
+    }
+  },
+  "planYouDid": {
+    "pt": "Você cumpriu {done} de {total} dias",
+    "en": "You completed {done} of {total} days",
+    "es": "Cumpliste {done} de {total} días",
+    "placeholders": {
+      "done": "int",
+      "total": "int"
+    }
+  },
+  "planReveal": {
+    "pt": "Ver a revelação",
+    "en": "See the reveal",
+    "es": "Ver la revelación"
+  },
+  "planCloseReveal": {
+    "pt": "Fechar e revelar",
+    "en": "Close and reveal",
+    "es": "Cerrar y revelar"
+  },
+  "planClosing": {
+    "pt": "Fechando…",
+    "en": "Closing…",
+    "es": "Cerrando…"
+  },
+  "planWaitReveal": {
+    "pt": "Quem conduz vai revelar como o grupo foi.",
+    "en": "Your leader will reveal how the group did.",
+    "es": "Quien guía va a revelar cómo le fue al grupo."
+  },
+  "planStartAnother": {
+    "pt": "Começar outro propósito",
+    "en": "Start another purpose",
+    "es": "Empezar otro propósito"
+  },
+  "planPulseTitle": {
+    "pt": "Hoje no grupo",
+    "en": "Today in the group",
+    "es": "Hoy en el grupo"
+  },
+  "planPulseDone": {
+    "pt": "{done} de {total} já cumpriram o dia {n}",
+    "en": "{done} of {total} have completed day {n}",
+    "es": "{done} de {total} ya cumplieron el día {n}",
+    "placeholders": {
+      "done": "int",
+      "total": "int",
+      "n": "int"
+    }
+  },
+  "planPulseNone": {
+    "pt": "Ninguém cumpriu o dia {n} ainda. Seja o primeiro.",
+    "en": "No one has completed day {n} yet. Be the first.",
+    "es": "Nadie cumplió el día {n} todavía. Sé el primero.",
+    "placeholders": {
+      "n": "int"
+    }
+  },
+  "planChain": {
+    "pt": "{count, plural, =1{Corrente de 1 dia} other{Corrente de {count} dias}}",
+    "en": "{count, plural, =1{1-day chain} other{{count}-day chain}}",
+    "es": "{count, plural, =1{Cadena de 1 día} other{Cadena de {count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planChainZero": {
+    "pt": "Comece a corrente",
+    "en": "Start the chain",
+    "es": "Empiecen la cadena"
+  },
+  "planChainBody": {
+    "pt": "Quando metade do grupo cumpre o dia na data, a corrente cresce.",
+    "en": "When half the group completes the day on its date, the chain grows.",
+    "es": "Cuando la mitad del grupo cumple el día en su fecha, la cadena crece."
+  },
+  "planAnswersTitle": {
+    "pt": "Respostas do dia {n}",
+    "en": "Answers for day {n}",
+    "es": "Respuestas del día {n}",
+    "placeholders": {
+      "n": "int"
+    }
+  },
+  "planAnswersLocked": {
+    "pt": "Responda para ver o que o grupo escreveu.",
+    "en": "Answer to see what the group wrote.",
+    "es": "Responde para ver lo que escribió el grupo."
+  },
+  "planAnswersCount": {
+    "pt": "{count, plural, =0{Ninguém respondeu ainda.} =1{1 pessoa já respondeu.} other{{count} pessoas já responderam.}}",
+    "en": "{count, plural, =0{No one has answered yet.} =1{1 person has answered.} other{{count} people have answered.}}",
+    "es": "{count, plural, =0{Nadie respondió todavía.} =1{1 persona ya respondió.} other{{count} personas ya respondieron.}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planAnswerCta": {
+    "pt": "Responder",
+    "en": "Answer",
+    "es": "Responder"
+  },
+  "planAnswerEmpty": {
+    "pt": "Ninguém mais respondeu ainda.",
+    "en": "No one else has answered yet.",
+    "es": "Nadie más respondió todavía."
+  },
+  "planAnswerHint": {
+    "pt": "Toque e segure uma resposta para denunciar ou apagar.",
+    "en": "Press and hold an answer to report or delete it.",
+    "es": "Mantén pulsada una respuesta para denunciarla o borrarla."
+  },
+  "planAnswerSheetHint": {
+    "pt": "Escreva em poucas linhas. Só o grupo vê.",
+    "en": "Write a few lines. Only the group sees it.",
+    "es": "Escribe pocas líneas. Solo el grupo lo ve."
+  },
+  "planAnswerSend": {
+    "pt": "Enviar",
+    "en": "Send",
+    "es": "Enviar"
+  },
+  "planAnswerSaved": {
+    "pt": "Resposta enviada.",
+    "en": "Answer sent.",
+    "es": "Respuesta enviada."
+  },
+  "planAnswerError": {
+    "pt": "Não deu para enviar. Tente de novo.",
+    "en": "Couldn't send. Try again.",
+    "es": "No se pudo enviar. Inténtalo de nuevo."
+  },
+  "planAnswerDeleteTitle": {
+    "pt": "Apagar esta resposta?",
+    "en": "Delete this answer?",
+    "es": "¿Borrar esta respuesta?"
+  },
+  "planAnswerDeleteBody": {
+    "pt": "Ela some para todo o grupo.",
+    "en": "It disappears for the whole group.",
+    "es": "Desaparece para todo el grupo."
+  },
+  "planAnswerDelete": {
+    "pt": "Apagar",
+    "en": "Delete",
+    "es": "Borrar"
+  },
+  "planInviteTitle": {
+    "pt": "Criar um propósito",
+    "en": "Create a purpose",
+    "es": "Crear un propósito"
+  },
+  "planInviteBody": {
+    "pt": "Você escolhe quando começa e quando termina. Todo dia o grupo recebe algo para fazer junto: um capítulo, uma cena e uma pergunta.",
+    "en": "You choose when it starts and ends. Every day the group gets something to do together: a chapter, a scene and a question.",
+    "es": "Tú eliges cuándo empieza y cuándo termina. Cada día el grupo recibe algo para hacer junto: un capítulo, una escena y una pregunta."
+  },
+  "planMenuCreate": {
+    "pt": "Criar propósito",
+    "en": "Create purpose",
+    "es": "Crear propósito"
+  },
+  "planMenuEdit": {
+    "pt": "Editar propósito",
+    "en": "Edit purpose",
+    "es": "Editar propósito"
+  },
+  "planMenuEnd": {
+    "pt": "Encerrar o propósito",
+    "en": "End the purpose",
+    "es": "Terminar el propósito"
+  },
+  "planEndTitle": {
+    "pt": "Encerrar o propósito?",
+    "en": "End the purpose?",
+    "es": "¿Terminar el propósito?"
+  },
+  "planEndBody": {
+    "pt": "Os dias que faltam somem e o propósito termina hoje. O que o grupo já fez continua contado.",
+    "en": "The remaining days are removed and the purpose ends today. What the group already did still counts.",
+    "es": "Los días que faltan se quitan y el propósito termina hoy. Lo que el grupo ya hizo sigue contando."
+  },
+  "planEndConfirm": {
+    "pt": "Encerrar",
+    "en": "End",
+    "es": "Terminar"
+  },
+  "planEditorTitleNew": {
+    "pt": "Novo propósito",
+    "en": "New purpose",
+    "es": "Nuevo propósito"
+  },
+  "planEditorTitleEdit": {
+    "pt": "Editar propósito",
+    "en": "Edit purpose",
+    "es": "Editar propósito"
+  },
+  "planEditorNameDefault": {
+    "pt": "Propósito de {count} dias",
+    "en": "{count}-day purpose",
+    "es": "Propósito de {count} días",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEditorDays": {
+    "pt": "{count, plural, =1{1 dia} other{{count} dias}}",
+    "en": "{count, plural, =1{1 day} other{{count} days}}",
+    "es": "{count, plural, =1{1 día} other{{count} días}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEditorStart": {
+    "pt": "Começa",
+    "en": "Starts",
+    "es": "Empieza"
+  },
+  "planEditorEnd": {
+    "pt": "Termina",
+    "en": "Ends",
+    "es": "Termina"
+  },
+  "planEditorRestHint": {
+    "pt": "Toque num dia para deixá-lo de descanso: nele não abre nada.",
+    "en": "Tap a day to make it a rest day: nothing opens on it.",
+    "es": "Toca un día para dejarlo de descanso: ese día no abre nada."
+  },
+  "planEditorCount": {
+    "pt": "{count, plural, =0{Nenhum dia no período} =1{1 dia com algo para fazer} other{{count} dias com algo para fazer}}",
+    "en": "{count, plural, =0{No days in this period} =1{1 day with something to do} other{{count} days with something to do}}",
+    "es": "{count, plural, =0{Ningún día en el período} =1{1 día con algo para hacer} other{{count} días con algo para hacer}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEditorReadingPreview": {
+    "pt": "Dia 1: {first} · último dia: {last}",
+    "en": "Day 1: {first} · last day: {last}",
+    "es": "Día 1: {first} · último día: {last}",
+    "placeholders": {
+      "first": "String",
+      "last": "String"
+    }
+  },
+  "planEditorReadingEnds": {
+    "pt": "O livro acaba no dia {n}; depois, sem capítulo.",
+    "en": "The book ends on day {n}; after that, no chapter.",
+    "es": "El libro termina el día {n}; después, sin capítulo.",
+    "placeholders": {
+      "n": "int"
+    }
+  },
+  "planEditorQuestion": {
+    "pt": "Pergunta do dia",
+    "en": "Question of the day",
+    "es": "Pregunta del día"
+  },
+  "planEditorDayOpen": {
+    "pt": "Já abriu",
+    "en": "Already open",
+    "es": "Ya abrió"
+  },
+  "planEditorSaveNew": {
+    "pt": "Começar o propósito",
+    "en": "Start the purpose",
+    "es": "Empezar el propósito"
+  },
+  "planEditorSave": {
+    "pt": "Salvar",
+    "en": "Save",
+    "es": "Guardar"
+  },
+  "planEditorSaved": {
+    "pt": "Propósito salvo. O grupo já vê.",
+    "en": "Purpose saved. The group can see it.",
+    "es": "Propósito guardado. El grupo ya lo ve."
+  },
+  "planEditorSaveError": {
+    "pt": "Não deu para salvar o propósito.",
+    "en": "Couldn't save the purpose.",
+    "es": "No se pudo guardar el propósito."
+  },
+  "planDayEditQuestion": {
+    "pt": "Pergunta",
+    "en": "Question",
+    "es": "Pregunta"
+  },
+  "planDayEditNote": {
+    "pt": "Recado de quem conduz (opcional)",
+    "en": "Note from the leader (optional)",
+    "es": "Mensaje de quien guía (opcional)"
+  },
+  "planRevealEyebrow": {
+    "pt": "Propósito · {room}",
+    "en": "Purpose · {room}",
+    "es": "Propósito · {room}",
+    "placeholders": {
+      "room": "String"
+    }
+  },
+  "planRevealGroupPct": {
+    "pt": "dos dias do propósito, o grupo cumpriu junto",
+    "en": "of the purpose's days, the group completed together",
+    "es": "de los días del propósito, el grupo cumplió junto"
+  },
+  "planRevealFaithfulTitle": {
+    "pt": "Fiéis no propósito",
+    "en": "Faithful in the purpose",
+    "es": "Fieles en el propósito"
+  },
+  "planRevealFaithfulBody": {
+    "pt": "Cumpriram todos os dias. Cada um ganha o selo.",
+    "en": "They completed every day. Each one earns the seal.",
+    "es": "Cumplieron todos los días. Cada uno gana el sello."
+  },
+  "planRevealFaithfulNone": {
+    "pt": "Desta vez ninguém cumpriu todos os dias. O próximo propósito é uma nova chance.",
+    "en": "This time no one completed every day. The next purpose is a new chance.",
+    "es": "Esta vez nadie cumplió todos los días. El próximo propósito es una nueva oportunidad."
+  },
+  "planRevealConstantBody": {
+    "pt": "Cumpriu mais dias na data certa.",
+    "en": "Completed the most days on their date.",
+    "es": "Cumplió más días en su fecha."
+  },
+  "planRevealYourSeal": {
+    "pt": "Você ganhou o selo Fiel. Ele fica ao lado do seu nome no grupo.",
+    "en": "You earned the Faithful seal. It sits next to your name in the group.",
+    "es": "Ganaste el sello Fiel. Queda junto a tu nombre en el grupo."
+  },
+  "planClosingBannerTitle": {
+    "pt": "O propósito do grupo foi fechado",
+    "en": "The group's purpose was closed",
+    "es": "El propósito del grupo fue cerrado"
+  },
+  "notifPlanDayTitle": {
+    "pt": "Dia {n} de {total} abriu",
+    "en": "Day {n} of {total} is open",
+    "es": "Abrió el día {n} de {total}",
+    "placeholders": {
+      "n": "int",
+      "total": "int"
+    }
+  },
+  "notifPlanDayBody": {
+    "pt": "{title}: o grupo começa o dia junto.",
+    "en": "{title}: the group starts the day together.",
+    "es": "{title}: el grupo empieza el día junto.",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "notifPlanEveningTitle": {
+    "pt": "Falta o dia {n} do propósito",
+    "en": "Day {n} of the purpose is still open",
+    "es": "Falta el día {n} del propósito",
+    "placeholders": {
+      "n": "int"
+    }
+  },
+  "notifPlanEveningBody": {
+    "pt": "{title}: ainda dá tempo de cumprir hoje.",
+    "en": "{title}: there's still time today.",
+    "es": "{title}: todavía hay tiempo hoy.",
+    "placeholders": {
+      "title": "String"
+    }
+  },
+  "planQ1": {
+    "pt": "O que {ref} mostra sobre quem Deus é?",
+    "en": "What does {ref} show about who God is?",
+    "es": "¿Qué muestra {ref} sobre quién es Dios?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ2": {
+    "pt": "Qual frase de {ref} ficou com você hoje?",
+    "en": "Which line from {ref} stayed with you today?",
+    "es": "¿Qué frase de {ref} se quedó contigo hoy?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ3": {
+    "pt": "O que {ref} pede de você nesta semana?",
+    "en": "What does {ref} ask of you this week?",
+    "es": "¿Qué te pide {ref} esta semana?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ4": {
+    "pt": "Onde você se vê em {ref}?",
+    "en": "Where do you see yourself in {ref}?",
+    "es": "¿Dónde te ves en {ref}?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ5": {
+    "pt": "O que surpreendeu você em {ref}?",
+    "en": "What surprised you in {ref}?",
+    "es": "¿Qué te sorprendió en {ref}?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ6": {
+    "pt": "Pelo que {ref} faz você agradecer?",
+    "en": "What does {ref} make you thankful for?",
+    "es": "¿Por qué te hace agradecer {ref}?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ7": {
+    "pt": "Que pergunta você levaria ao grupo sobre {ref}?",
+    "en": "What question would you bring to the group about {ref}?",
+    "es": "¿Qué pregunta llevarías al grupo sobre {ref}?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ8": {
+    "pt": "Como {ref} aponta para Jesus?",
+    "en": "How does {ref} point to Jesus?",
+    "es": "¿Cómo apunta {ref} a Jesús?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ9": {
+    "pt": "O que você quer pedir a Deus depois de ler {ref}?",
+    "en": "What do you want to ask God after reading {ref}?",
+    "es": "¿Qué quieres pedirle a Dios después de leer {ref}?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planQ10": {
+    "pt": "Que promessa ou aviso aparece em {ref}?",
+    "en": "What promise or warning shows up in {ref}?",
+    "es": "¿Qué promesa o advertencia aparece en {ref}?",
+    "placeholders": {
+      "ref": "String"
+    }
+  },
+  "planAutoTitle": {
+    "pt": "{what} em {count} dias",
+    "en": "{what} in {count} days",
+    "es": "{what} en {count} días",
+    "placeholders": {
+      "what": "String",
+      "count": "int"
+    }
+  },
+  "planEditorWhatDaily": {
+    "pt": "O que o grupo faz todo dia",
+    "en": "What the group does each day",
+    "es": "Lo que el grupo hace cada día"
+  },
+  "planSourceReading": {
+    "pt": "Capítulo da Bíblia",
+    "en": "Bible chapter",
+    "es": "Capítulo de la Biblia"
+  },
+  "planSourceReadingEmpty": {
+    "pt": "O grupo ainda não tem leitura. Escolha um livro e o capítulo de partida.",
+    "en": "The group has no reading yet. Pick a book and a starting chapter.",
+    "es": "El grupo aún no tiene lectura. Elige un libro y el capítulo de inicio."
+  },
+  "planSourceReadingFrom": {
+    "pt": "{book}, a partir do capítulo {from}",
+    "en": "{book}, from chapter {from}",
+    "es": "{book}, desde el capítulo {from}",
+    "placeholders": {
+      "book": "String",
+      "from": "int"
+    }
+  },
+  "planSourceScene": {
+    "pt": "Cena da trilha",
+    "en": "Trail scene",
+    "es": "Escena de la ruta"
+  },
+  "planSourceSceneEmpty": {
+    "pt": "O grupo ainda não tem estudo. Escolha a cena de partida da trilha.",
+    "en": "The group has no study yet. Pick the trail scene to start from.",
+    "es": "El grupo aún no tiene estudio. Elige la escena de inicio de la ruta."
+  },
+  "planSourceSceneFrom": {
+    "pt": "{trail} · a partir de “{title}”",
+    "en": "{trail} · from “{title}”",
+    "es": "{trail} · desde “{title}”",
+    "placeholders": {
+      "trail": "String",
+      "title": "String"
+    }
+  },
+  "planSourceSceneCount": {
+    "pt": "Uma cena por dia: {scenes} de {days} dias têm cena.",
+    "en": "One scene a day: {scenes} of {days} days have a scene.",
+    "es": "Una escena por día: {scenes} de {days} días tienen escena.",
+    "placeholders": {
+      "scenes": "int",
+      "days": "int"
+    }
+  },
+  "planSourceQuestionBody": {
+    "pt": "Todo dia o grupo responde uma pergunta, tirada da cena do dia ou, sem cena, do capítulo. Abra os dias para ver cada uma e trocar a que quiser.",
+    "en": "Each day the group answers one question, taken from the day's scene or, with no scene, from the chapter. Open the days to see each one and change any.",
+    "es": "Cada día el grupo responde una pregunta, sacada de la escena del día o, sin escena, del capítulo. Abre los días para ver cada una y cambiar la que quieras."
+  },
+  "planSourcePick": {
+    "pt": "Escolher",
+    "en": "Choose",
+    "es": "Elegir"
+  },
+  "planSourceRemove": {
+    "pt": "Tirar",
+    "en": "Remove",
+    "es": "Quitar"
+  },
+  "planPerDay": {
+    "pt": "{count} por dia",
+    "en": "{count} a day",
+    "es": "{count} por día",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEditorRestShort": {
+    "pt": "Dias da semana com propósito",
+    "en": "Weekdays with purpose",
+    "es": "Días de la semana con propósito"
+  },
+  "planEditorShowDays": {
+    "pt": "Ver a pergunta de cada dia ({count})",
+    "en": "See each day's question ({count})",
+    "es": "Ver la pregunta de cada día ({count})",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEditorHideDays": {
+    "pt": "Esconder os dias",
+    "en": "Hide the days",
+    "es": "Ocultar los días"
+  },
+  "planEmptyLabel": {
+    "pt": "Propósito do grupo",
+    "en": "Group purpose",
+    "es": "Propósito del grupo"
+  },
+  "planEmptyLeaderTitle": {
+    "pt": "Qual será o propósito do grupo?",
+    "en": "What will the group's purpose be?",
+    "es": "¿Cuál será el propósito del grupo?"
+  },
+  "planEmptyLeaderBody": {
+    "pt": "Escolha a trilha, o livro e as datas. Todo dia o grupo recebe uma cena, um capítulo e uma pergunta.",
+    "en": "Pick the trail, the book and the dates. Every day the group gets a scene, a chapter and a question.",
+    "es": "Elige la ruta, el libro y las fechas. Cada día el grupo recibe una escena, un capítulo y una pregunta."
+  },
+  "planEmptyMemberTitle": {
+    "pt": "O propósito ainda não começou",
+    "en": "The purpose hasn't started yet",
+    "es": "El propósito aún no empezó"
+  },
+  "planEmptyMemberBody": {
+    "pt": "{leader} escolhe a trilha, o livro e as datas. Depois, o dia de cada um aparece aqui.",
+    "en": "{leader} picks the trail, the book and the dates. Then each day shows up here.",
+    "es": "{leader} elige la ruta, el libro y las fechas. Después, el día de cada uno aparece aquí.",
+    "placeholders": {
+      "leader": "String"
+    }
+  },
+  "planEmptyCta": {
+    "pt": "Criar o propósito",
+    "en": "Create the purpose",
+    "es": "Crear el propósito"
+  },
+  "planPickSceneTitle": {
+    "pt": "Cena de partida",
+    "en": "Starting scene",
+    "es": "Escena de inicio"
+  },
+  "planPickReadingTitle": {
+    "pt": "Livro e capítulo de partida",
+    "en": "Starting book and chapter",
+    "es": "Libro y capítulo de inicio"
+  },
+  "planPickReadingSubtitle": {
+    "pt": "O grupo lê em sequência a partir daqui.",
+    "en": "The group reads in order from here.",
+    "es": "El grupo lee en orden desde aquí."
+  },
+  "planPickReadingChapter": {
+    "pt": "Capítulo",
+    "en": "Chapter",
+    "es": "Capítulo"
+  },
+  "planPickReadingSave": {
+    "pt": "Começar aqui",
+    "en": "Start here",
+    "es": "Empezar aquí"
+  },
+  "planEditorHowLong": {
+    "pt": "Por quanto tempo",
+    "en": "For how long",
+    "es": "Por cuánto tiempo"
+  },
+  "planEditorDuration": {
+    "pt": "Duração",
+    "en": "Length",
+    "es": "Duración"
+  },
+  "planEditorDurationBody": {
+    "pt": "Quantas semanas o grupo caminha junto. Você escolhe o dia de começar; o fim fecha a última semana.",
+    "en": "How many weeks the group walks together. You pick the start day; the end closes the last week.",
+    "es": "Cuántas semanas camina junto el grupo. Tú eliges el día de inicio; el final cierra la última semana."
+  },
+  "planEditorWeeks": {
+    "pt": "{count, plural, =1{1 semana} other{{count} semanas}}",
+    "en": "{count, plural, =1{1 week} other{{count} weeks}}",
+    "es": "{count, plural, =1{1 semana} other{{count} semanas}}",
+    "placeholders": {
+      "count": "int"
+    }
+  },
+  "planEditorRename": {
+    "pt": "Editar o nome",
+    "en": "Edit the name",
+    "es": "Editar el nombre"
+  },
+  "planSourceQuestionNone": {
+    "pt": "Escolha a cena ou o capítulo: a pergunta sai deles.",
+    "en": "Pick the scene or the chapter: the question comes from them.",
+    "es": "Elige la escena o el capítulo: la pregunta sale de ellos."
+  },
+  "planEditorNeedContent": {
+    "pt": "Escolha a cena da trilha ou o capítulo da Bíblia para começar.",
+    "en": "Pick the trail scene or the Bible chapter to start.",
+    "es": "Elige la escena de la ruta o el capítulo de la Biblia para empezar."
+  },
+  "planSuggestLife": {
+    "pt": "Para a vida",
+    "en": "For life",
+    "es": "Para la vida"
+  },
+  "planSuggestText": {
+    "pt": "Sobre o texto",
+    "en": "About the text",
+    "es": "Sobre el texto"
+  },
+  "planSuggestGeneral": {
+    "pt": "Geral",
+    "en": "General",
+    "es": "General"
+  },
+  "planSuggestTitle": {
+    "pt": "Sugestões",
+    "en": "Suggestions",
+    "es": "Sugerencias"
+  },
+  "planSourceQuestionOff": {
+    "pt": "Desligada: o grupo faz a cena e lê o capítulo, sem pergunta para responder.",
+    "en": "Off: the group does the scene and reads the chapter, with no question to answer.",
+    "es": "Apagada: el grupo hace la escena y lee el capítulo, sin pregunta para responder.",
+    "description": "Question of the day card body when the toggle is off."
+  },
+  "planDayQuestionLine": {
+    "pt": "Pergunta: {text}",
+    "en": "Question: {text}",
+    "es": "Pregunta: {text}",
+    "placeholders": {
+      "text": "String"
+    },
+    "description": "Day row in the plan editor: the question of that day."
+  },
+  "planDayNoteLine": {
+    "pt": "Recado: {text}",
+    "en": "Note: {text}",
+    "es": "Mensaje: {text}",
+    "placeholders": {
+      "text": "String"
+    },
+    "description": "Day row in the plan editor: the leader's note for that day."
+  },
+  "planDayEmpty": {
+    "pt": "Sem cena nem capítulo neste dia",
+    "en": "No scene or chapter this day",
+    "es": "Sin escena ni capítulo este día",
+    "description": "Day row in the plan editor when the day has nothing."
+  },
+  "planHearthLabel": {
+    "pt": "O grupo no propósito",
+    "en": "The group in the plan",
+    "es": "El grupo en el propósito",
+    "description": "Header of the group card (people + countdown) while a plan exists."
+  },
+  "planHearthStarts": {
+    "pt": "Começa em",
+    "en": "Starts in",
+    "es": "Empieza en",
+    "description": "Countdown label until the plan starts."
+  },
+  "planHearthEnds": {
+    "pt": "Termina em",
+    "en": "Ends in",
+    "es": "Termina en",
+    "description": "Countdown label until the plan ends (end of the last day)."
+  },
+  "planNotStartedTitle": {
+    "pt": "O propósito ainda não começou",
+    "en": "The plan hasn't started yet",
+    "es": "El propósito aún no empezó",
+    "description": "Anan dialog when someone taps to study before the group's plan starts."
+  },
+  "planNotStartedBody": {
+    "pt": "{days, plural, =1{Começa amanhã, {date}.} other{Começa em {days} dias, {date}.}} No primeiro dia, a cena e o capítulo do grupo aparecem aqui.",
+    "en": "{days, plural, =1{It starts tomorrow, {date}.} other{It starts in {days} days, {date}.}} On the first day, the group's scene and chapter show up here.",
+    "es": "{days, plural, =1{Empieza mañana, {date}.} other{Empieza en {days} días, {date}.}} El primer día, la escena y el capítulo del grupo aparecen aquí.",
+    "placeholders": {
+      "days": "int",
+      "date": "String"
+    },
+    "description": "Body of the not-started dialog; date is the short start date."
+  },
+  "planSeatLabel": {
+    "pt": "Propósito",
+    "en": "Plan",
+    "es": "Propósito",
+    "description": "Person sheet stat label before the plan starts (value says if they're in)."
+  },
+  "planSeatIn": {
+    "pt": "Dentro",
+    "en": "In",
+    "es": "Dentro",
+    "description": "Person sheet: tapped 'I'm in' on the group's plan."
+  },
+  "planSeatNotIn": {
+    "pt": "Ainda não",
+    "en": "Not yet",
+    "es": "Aún no",
+    "description": "Person sheet: hasn't tapped 'I'm in' yet."
+  },
+  "planSeatDays": {
+    "pt": "Dias do propósito",
+    "en": "Plan days",
+    "es": "Días del propósito",
+    "description": "Person sheet stat label: days of the plan this person closed (value like 5/21)."
+  }
+}

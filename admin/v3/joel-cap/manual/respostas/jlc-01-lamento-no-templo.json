@@ -1,0 +1,716 @@
+{
+  "study": {
+    "passageRef": "Joel 1:13–18",
+    "passages": [
+      {
+        "ref": "Joel 1:13–18"
+      },
+      {
+        "ref": "Joel 1:19–20"
+      }
+    ],
+    "context": "Uma praga e a seca deixam Judá sem oferta, sem pasto e sem alegria. Joel chama sacerdotes e povo a jejum e clamor na Casa do Senhor.",
+    "keyword": "jejum",
+    "keywordGloss": "Tempo santificado de clamor ao Senhor diante da calamidade.",
+    "focusQuestion": "Quando a falta aperta, você clama ao Senhor ou só reclama da circunstância?",
+    "reflectionPrompts": [
+      "Lamento no templo",
+      "Dia próximo",
+      "Clamor ao Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Os sacerdotes devem cingir-se de pano de saco e lamentar.",
+        "evidenceRef": "Joel 1:13",
+        "evidenceSpan": "Cingi-vos de pano de saco e lamentai, sacerdotes"
+      },
+      {
+        "text": "Devem santificar um jejum e clamar ao Senhor na Casa dele.",
+        "evidenceRef": "Joel 1:14",
+        "evidenceSpan": "Santificai um jejum, proclamai um dia sagrado"
+      },
+      {
+        "text": "O dia do Senhor está próximo e virá como calamidade.",
+        "evidenceRef": "Joel 1:15",
+        "evidenceSpan": "o dia do Senhor está próximo e virá como uma calamidade"
+      },
+      {
+        "text": "O alimento está destruído diante dos olhos do povo.",
+        "evidenceRef": "Joel 1:16",
+        "evidenceSpan": "Não está o alimento destruído diante de nossos olhos?"
+      },
+      {
+        "text": "A semente murchou e os celeiros foram destruídos.",
+        "evidenceRef": "Joel 1:17",
+        "evidenceSpan": "A semente murchou debaixo da terra; os celeiros foram destruídos"
+      },
+      {
+        "text": "O profeta clama ao Senhor porque o fogo consumiu os pastos.",
+        "evidenceRef": "Joel 1:19",
+        "evidenceSpan": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "jejum",
+        "gloss": "Tempo santificado de busca e clamor ao Senhor."
+      },
+      {
+        "term": "calamidade",
+        "gloss": "Modo como o dia do Senhor se aproxima neste lamento."
+      },
+      {
+        "term": "clamo",
+        "gloss": "Resposta do profeta: dirigir-se ao Senhor na angústia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado aos sacerdotes ao lamento",
+        "evidenceRef": "Joel 1:13"
+      },
+      {
+        "label": "Jejum e clamor na Casa do Senhor",
+        "evidenceRef": "Joel 1:14"
+      },
+      {
+        "label": "Anúncio do dia próximo",
+        "evidenceRef": "Joel 1:15"
+      },
+      {
+        "label": "Descrição da ruína e clamor pessoal",
+        "evidenceRef": "Joel 1:16–20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O lamento vem porque oferta e libação foram cortadas da casa de Deus.",
+        "marker": "pois",
+        "evidenceRef": "Joel 1:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "O dia do Senhor próximo virá como calamidade do Todo-Poderoso.",
+        "marker": "Porque",
+        "evidenceRef": "Joel 1:15"
+      },
+      {
+        "kind": "causa",
+        "text": "O profeta clama porque o fogo consumiu pastos e árvores.",
+        "marker": "porque",
+        "evidenceRef": "Joel 1:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Crônicas 20:3–4",
+        "bridge": "Jejum e busca ao Senhor"
+      },
+      {
+        "ref": "Jonas 3:5",
+        "bridge": "Povo que jejua e clama"
+      },
+      {
+        "ref": "Salmos 50:15",
+        "bridge": "Clamar a Deus na angústia"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O jejum é só formalidade religiosa sem clamor.",
+        "why": "Joel 1:14 une jejum, convocação e clamor ao Senhor."
+      },
+      {
+        "text": "O dia do Senhor ainda está longe e não ameaça.",
+        "why": "1:15 diz que o dia do Senhor está próximo."
+      },
+      {
+        "text": "Só os animais sofrem; o culto segue normal.",
+        "why": "1:13 diz que oferta e libação foram cortadas da casa de Deus."
+      }
+    ],
+    "centralInsight": "A praga chama o povo ao jejum e ao clamor perante o Senhor.",
+    "anchorQuestion": "Segundo Joel 1:14, o que o povo deve fazer na Casa do Senhor?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Joel 1:14, o povo deve santificar um jejum e clamar ao Senhor.",
+      "verseRef": "Joel 1:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Santificai um jejum, proclamai um dia sagrado",
+      "feedbackCorrect": "O versículo manda santificar jejum, convocar e clamar ao Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 1:14: jejum, convocação e clamor ao Senhor."
+      },
+      "hint": "Veja os verbos de mandato no versículo.",
+      "learningObjective": "Observar o chamado a jejum e clamor.",
+      "evidence": [
+        "Joel 1:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Joel 1:13, toque o que os sacerdotes devem cingir.",
+      "verseRef": "Joel 1:13",
+      "evidenceSpan": "Cingi-vos de pano de saco",
+      "feedbackCorrect": "Devem cingir-se de pano de saco.",
+      "hint": "Procure o que cobrem no lamento.",
+      "learningObjective": "Identificar o sinal externo do lamento.",
+      "evidence": [
+        "Joel 1:13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "pano de saco"
+        },
+        {
+          "id": "b",
+          "text": "libação"
+        },
+        {
+          "id": "c",
+          "text": "altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "A libação foi cortada; não é o que cingem.",
+        "c": "O altar é o lugar do ministério, não o que cingem."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Joel 1:15, como virá o dia do Senhor?",
+      "verseRef": "Joel 1:15",
+      "evidenceSpan": "virá como uma calamidade do Todo-Poderoso",
+      "feedbackCorrect": "Virá como uma calamidade do Todo-Poderoso.",
+      "hint": "Veja a comparação no fim do versículo.",
+      "learningObjective": "Observar como o dia do Senhor é descrito.",
+      "evidence": [
+        "Joel 1:15"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Como uma calamidade do Todo-Poderoso"
+        },
+        {
+          "id": "b",
+          "text": "Como uma festa sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Como chuva suave sobre o campo"
+        },
+        {
+          "id": "d",
+          "text": "Como silêncio total em Sião"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto fala de calamidade, não de festa.",
+        "c": "O texto não compara o dia a chuva suave.",
+        "d": "O texto não fala de silêncio total."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Joel 1:14 na ordem do texto.",
+      "verseRef": "Joel 1:14",
+      "evidenceSpan": "Santificai um jejum, proclamai um dia sagrado",
+      "feedbackCorrect": "Jejum e dia sagrado; depois convocação e clamor.",
+      "hint": "Comece por santificar o jejum.",
+      "learningObjective": "Reconhecer a sequência do chamado.",
+      "evidence": [
+        "Joel 1:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Santificai um jejum, proclamai um dia sagrado"
+        },
+        {
+          "id": "b",
+          "text": "convocai os anciãos e todos os habitantes desta terra"
+        },
+        {
+          "id": "c",
+          "text": "para a Casa do Senhor, seu Deus, e clamai ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Jejum primeiro; o clamor fecha o versículo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Joel 1:14, que prática deve ser santificada perante o Senhor?",
+      "verseRef": "Joel 1:14",
+      "evidenceSpan": "Santificai um jejum",
+      "feedbackCorrect": "Devem santificar um jejum.",
+      "hint": "É a primeira palavra após Santificai.",
+      "learningObjective": "Lembrar a prática santificada no chamado.",
+      "evidence": [
+        "Joel 1:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "banho"
+        },
+        {
+          "id": "b",
+          "text": "jejum"
+        },
+        {
+          "id": "c",
+          "text": "mercado"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Banho\" não aparece em 1:14.",
+        "c": "\"Mercado\" não aparece em 1:14."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Joel 1:19 comunica que se liga a este contexto?",
+      "verseRef": "Joel 1:19",
+      "evidenceSpan": "A ti, ó Senhor, clamo",
+      "feedbackCorrect": "Na ruína, a resposta certa é clamar ao Senhor.",
+      "hint": "Veja a quem o profeta se dirige.",
+      "learningObjective": "Ligar o clamor à resposta na calamidade.",
+      "evidence": [
+        "Joel 1:19"
+      ],
+      "passageA": {
+        "ref": "Joel 1:19"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Diante da praga e da seca, Joel aponta o clamor ao Senhor como resposta."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor na calamidade"
+        },
+        {
+          "id": "b",
+          "text": "Fuga para o Egito"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio no templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto aponta clamor, não fuga.",
+        "c": "O texto mostra clamor, não silêncio."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Joel 1:13, oferta de manjares e libação foram cortadas da casa de Deus.",
+      "verseRef": "Joel 1:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "foram cortadas a oferta de manjares e a libação",
+      "feedbackCorrect": "O culto sofre: oferta e libação foram cortadas.",
+      "feedbackWrong": {
+        "false": "Releia o fim de 1:13: oferta e libação foram cortadas."
+      },
+      "hint": "Veja o que foi cortado da casa de Deus.",
+      "learningObjective": "Compreender o impacto da praga no culto.",
+      "evidence": [
+        "Joel 1:13"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Joel 1:15, toque a palavra que abre a razão do ai.",
+      "verseRef": "Joel 1:15",
+      "evidenceSpan": "Porque o dia do Senhor está próximo",
+      "feedbackCorrect": "\"Porque\" introduz a razão: o dia do Senhor está próximo.",
+      "hint": "É a palavra após \"Ah! aquele dia!\".",
+      "learningObjective": "Reconhecer o marcador de causa em 1:15.",
+      "evidence": [
+        "Joel 1:15"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque"
+        },
+        {
+          "id": "b",
+          "text": "calamidade"
+        },
+        {
+          "id": "c",
+          "text": "Todo-Poderoso"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Calamidade\" descreve o modo, não abre a razão.",
+        "c": "\"Todo-Poderoso\" fecha a frase, não abre a razão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Joel 1:13–15 liga lamento sacerdotal e dia do Senhor?",
+      "verseRef": "Joel 1:13–14",
+      "evidenceSpan": "clamai ao Senhor",
+      "feedbackCorrect": "O culto interrompido leva a jejum e clamor porque o dia está próximo.",
+      "hint": "Ligue o corte das ofertas ao chamado de 1:14–15.",
+      "learningObjective": "Relacionar lamento, jejum e dia próximo.",
+      "evidence": [
+        "Joel 1:13–14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Culto interrompido chama a clamor diante do dia próximo"
+        },
+        {
+          "id": "b",
+          "text": "Os sacerdotes devem ignorar a falta de ofertas"
+        },
+        {
+          "id": "c",
+          "text": "O dia do Senhor só preocupa os animais"
+        },
+        {
+          "id": "d",
+          "text": "Não há ligação entre jejum e o dia do Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto manda lamentar e clamar, não ignorar.",
+        "c": "O chamado é a sacerdotes e povo.",
+        "d": "1:14–15 une clamor e dia próximo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Joel 1:13–19?",
+      "verseRef": "Joel 1:13–19",
+      "evidenceSpan": "A ti, ó Senhor, clamo",
+      "feedbackCorrect": "Lamento sacerdotal; jejum; anúncio do dia; clamor pessoal.",
+      "hint": "Comece pelos sacerdotes.",
+      "learningObjective": "Seguir o movimento do lamento ao clamor.",
+      "evidence": [
+        "Joel 1:13–19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sacerdotes são chamados ao lamento"
+        },
+        {
+          "id": "b",
+          "text": "O povo é convocado a jejum e clamor"
+        },
+        {
+          "id": "c",
+          "text": "O profeta clama ao Senhor na ruína"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Sacerdotes primeiro; o clamor pessoal fecha."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Joel 1:15, que palavra descreve como o dia do Senhor virá?",
+      "verseRef": "Joel 1:15",
+      "evidenceSpan": "virá como uma calamidade do Todo-Poderoso",
+      "feedbackCorrect": "Virá como uma calamidade.",
+      "hint": "É o substantivo da comparação.",
+      "learningObjective": "Lembrar a palavra que carrega o tom do dia.",
+      "evidence": [
+        "Joel 1:15"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "festa"
+        },
+        {
+          "id": "b",
+          "text": "calamidade"
+        },
+        {
+          "id": "c",
+          "text": "brisa"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Festa\" não descreve o dia em 1:15.",
+        "c": "\"Brisa\" não aparece em 1:15."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Joel 1:14 a 2 Crônicas 20:3–4?",
+      "verseRef": "Joel 1:14",
+      "evidenceSpan": "Santificai um jejum",
+      "feedbackCorrect": "Nos dois textos, jejum e busca ao Senhor respondem à crise.",
+      "hint": "Compare jejum e busca a Deus.",
+      "learningObjective": "Relacionar o jejum de Joel ao de Jeosafá.",
+      "evidence": [
+        "Joel 1:14",
+        "2 Crônicas 20:3–4"
+      ],
+      "passageA": {
+        "ref": "Joel 1:14"
+      },
+      "passageB": {
+        "ref": "2 Crônicas 20:3–4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Jejum e busca ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Festa sem nenhum clamor"
+        },
+        {
+          "id": "c",
+          "text": "Aliança com o Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos chamam a jejum e busca, não a festa sem clamor.",
+        "c": "Nenhum dos textos aponta aliança com o Egito."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Joel 1:15–16, a calamidade do dia do Senhor deixa o culto e a alegria intactos.",
+      "verseRef": "Joel 1:15–16",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não está o alimento destruído diante de nossos olhos?",
+      "feedbackCorrect": "Alimento destruído e alegria da casa de Deus afetada: nada está intacto.",
+      "feedbackWrong": {
+        "true": "Releia 1:16: alimento destruído e alegria abalada."
+      },
+      "hint": "Veja o que acontece ao alimento e à alegria.",
+      "learningObjective": "Interpretar o alcance da calamidade sobre o culto.",
+      "evidence": [
+        "Joel 1:15–16"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Joel 1:19, toque o verbo que mostra a resposta do profeta.",
+      "verseRef": "Joel 1:19",
+      "evidenceSpan": "A ti, ó Senhor, clamo",
+      "feedbackCorrect": "O verbo é clamo: resposta dirigida ao Senhor.",
+      "hint": "Procure o verbo na abertura do versículo.",
+      "learningObjective": "Sustentar com o texto a resposta de clamor.",
+      "evidence": [
+        "Joel 1:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "clamo"
+        },
+        {
+          "id": "b",
+          "text": "fogo"
+        },
+        {
+          "id": "c",
+          "text": "pastos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Fogo\" é a causa do dano, não a resposta.",
+        "c": "\"Pastos\" é o que o fogo consumiu."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Joel 1:13–20 sustenta sobre a calamidade?",
+      "verseRef": "Joel 1:14",
+      "evidenceSpan": "clamai ao Senhor",
+      "feedbackCorrect": "A ruína deve levar a jejum e clamor, não a resignação muda.",
+      "hint": "Compare cada opção com o chamado de 1:14 e 1:19.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": [
+        "Joel 1:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A calamidade chama a jejum e clamor ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Basta lamentar sem se dirigir a Deus"
+        },
+        {
+          "id": "c",
+          "text": "O culto interrompido prova que Deus se foi para sempre"
+        },
+        {
+          "id": "d",
+          "text": "Só os animais devem clamar; o povo não"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto manda clamar ao Senhor.",
+        "c": "O texto chama a buscar o Senhor, não declara abandono final.",
+        "d": "Sacerdotes e povo são convocados; os animais também bramam."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra crise que leva a clamor na Escritura?",
+      "verseRef": "Joel 1:14",
+      "evidenceSpan": "clamai ao Senhor",
+      "feedbackCorrect": "Joel manda clamar; Jeosafá jejua; o Salmo convida a clamar na angústia.",
+      "hint": "Parta de Joel.",
+      "learningObjective": "Ver o clamor de Joel no fio bíblico.",
+      "evidence": [
+        "Joel 1:14",
+        "2 Crônicas 20:3–4",
+        "Salmos 50:15"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Joel manda jejuar e clamar ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Jeosafá proclama jejum e busca a Deus"
+        },
+        {
+          "id": "c",
+          "text": "O Salmo convida a clamar na angústia"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Joel 1:14, 2 Crônicas 20 e Salmos 50:15."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Joel 1:14, que verbo manda o povo fazer perante o Senhor na Casa?",
+      "verseRef": "Joel 1:14",
+      "evidenceSpan": "clamai ao Senhor",
+      "feedbackCorrect": "O mandato final é: clamai ao Senhor.",
+      "hint": "É o último verbo do versículo.",
+      "learningObjective": "Lembrar o verbo do clamor coletivo.",
+      "evidence": [
+        "Joel 1:14"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "calai"
+        },
+        {
+          "id": "b",
+          "text": "clamai"
+        },
+        {
+          "id": "c",
+          "text": "fugi"
+        }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Calai\" é o oposto do mandato.",
+        "c": "\"Fugi\" não é o verbo final de 1:14."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Joel 1:19 a Salmos 50:15?",
+      "verseRef": "Joel 1:19",
+      "evidenceSpan": "A ti, ó Senhor, clamo",
+      "feedbackCorrect": "Nos dois textos, a angústia é tempo de clamar a Deus.",
+      "hint": "Compare clamor e angústia.",
+      "learningObjective": "Ligar o clamor de Joel ao do Salmo.",
+      "evidence": [
+        "Joel 1:19",
+        "Salmos 50:15"
+      ],
+      "passageA": {
+        "ref": "Joel 1:19"
+      },
+      "passageB": {
+        "ref": "Salmos 50:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamar a Deus na angústia"
+        },
+        {
+          "id": "b",
+          "text": "Esconder-se da oração"
+        },
+        {
+          "id": "c",
+          "text": "Confiar só em celeiros"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mandam clamar, não esconder-se.",
+        "c": "Em Joel os celeiros já foram destruídos."
+      }
+    }
+  ]
+}

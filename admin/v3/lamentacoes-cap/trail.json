@@ -1,0 +1,106 @@
+{
+  "slug": "lamentacoes-cap",
+  "title": "Lamentações",
+  "description": "Lamentações capítulo a capítulo: o choro sobre Jerusalém e a esperança no Senhor.",
+  "icon": "🕯️",
+  "color": "#7A6B8A",
+  "order": 32,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-maiores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "A cidade caída · cap. 1–5",
+      "icon": "zap",
+      "section": "Lamentações",
+      "missions": [
+        {
+          "slug": "lmc-01-olhai-e-vede",
+          "title": "Olhai e vede",
+          "subtitle": "Lamentações 1:12–18",
+          "intro": "Jerusalém chama os que passam a ver a sua dor e confessa que o Senhor é justo.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Lamentações 1:12–18",
+          "hookVerse": "Não vos comove isto, a todos vós que passais pelo caminho? Considerai e vede se há dor igual à minha, que me sobreveio, com a qual o Senhor me afligiu no dia do furor da sua ira. Do alto, enviou fogo aos meus ossos, que se apoderou de mim; estendeu uma rede aos meus pés, arrojou-me para trás, causando-me desolação e enfermidade durante todo o dia.",
+          "hookNote": "A cidade reconhece: o Senhor é justo, porque ela se rebelou contra a sua palavra.",
+          "centralInsight": "A cidade reconhece: o Senhor é justo, porque ela se rebelou contra a sua palavra.",
+          "objective": "Confessar a justiça do Senhor"
+        },
+        {
+          "slug": "lmc-02-a-ira-do-senhor",
+          "title": "A ira do Senhor",
+          "subtitle": "Lamentações 2:1–10",
+          "intro": "O Senhor cobriu Sião com a sua ira; o altar, o santuário e os muros caíram.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Lamentações 2:1–10",
+          "hookVerse": "Como o Senhor cobriu de nuvens, na sua ira, a filha de Sião! Precipitou do céu à terra a glória de Israel e não se lembrou do estrado de seus pés no dia da sua ira. O Senhor destruiu todas as moradas de Jacó e não se apiedou; derrubou, na sua ira, as fortalezas da filha de Judá e as lançou por terra; profanou o reino e seus príncipes.",
+          "hookNote": "Até o santuário pode cair quando o povo rejeita o Senhor.",
+          "centralInsight": "Até o santuário pode cair quando o povo rejeita o Senhor.",
+          "objective": "Temer a ira santa de Deus"
+        },
+        {
+          "slug": "lmc-03-nao-rejeita-para-sempre",
+          "title": "Não rejeita para sempre",
+          "subtitle": "Lamentações 3:31–42",
+          "intro": "No meio do lamento, há esperança: o Senhor não rejeita para sempre.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Lamentações 3:31–42",
+          "hookVerse": "Pois o Senhor não rejeitará para sempre. Antes, se ele entristecer a alguém, usará de compaixão, conforme a grandeza das suas misericórdias.",
+          "hookNote": "Ele entristece e se compadece segundo a multidão das suas misericórdias.",
+          "centralInsight": "Ele entristece e se compadece segundo a multidão das suas misericórdias.",
+          "objective": "Esperar nas misericórdias"
+        },
+        {
+          "slug": "lmc-04-ouro-escurecido",
+          "title": "Ouro escurecido",
+          "subtitle": "Lamentações 4:1–11",
+          "intro": "O ouro perde o brilho; os filhos de Sião, antes preciosos, são como vasos de barro.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Lamentações 4:1–11",
+          "hookVerse": "Como se escureceu o ouro! Como se alterou o ouro refinado! Como estão espalhadas as pedras do santuário pelas esquinas de todas as ruas! Os nobres filhos de Sião, comparáveis a ouro puro, agora são tidos como objetos de barro, obra das mãos do oleiro!",
+          "hookNote": "O pecado muda a glória da cidade em desolação e fome.",
+          "centralInsight": "O pecado muda a glória da cidade em desolação e fome.",
+          "objective": "Ver o custo do pecado"
+        },
+        {
+          "slug": "lmc-05-lembra-te-senhor",
+          "title": "Lembra-te, Senhor",
+          "subtitle": "Lamentações 5:1–12",
+          "intro": "O povo pede que o Senhor lembre do opróbrio: órfãos, água paga e jugo sobre os pescoços.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Lamentações 5:1–12",
+          "hookVerse": "Lembra-te, Senhor, do que nos tem sucedido; considera e olha para a nossa desonra. A nossa herança foi entregue a estranhos, e as nossas casas, a estrangeiros.",
+          "hookNote": "Na ruína, o clamor sincero ainda se volta ao Senhor que reina para sempre.",
+          "centralInsight": "Na ruína, o clamor sincero ainda se volta ao Senhor que reina para sempre.",
+          "objective": "Clamar na ruína"
+        },
+        {
+          "slug": "lmc-boss-1",
+          "title": "Travessia: A cidade caída",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise a confissão, a ira, a misericórdia, o ouro escurecido e o clamor.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: A cidade caída",
+          "hookVerse": "Revise a confissão, a ira, a misericórdia, o ouro escurecido e o clamor.",
+          "hookNote": "Revise a confissão, a ira, a misericórdia, o ouro escurecido e o clamor.",
+          "centralInsight": "Mesmo na ruína, há espaço para confessar e esperar no Senhor",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

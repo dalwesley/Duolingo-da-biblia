@@ -1,0 +1,61 @@
+{
+  "slug": "1pedro-cap",
+  "prefix": "p1c",
+  "book": "1 Pedro",
+  "chapters": 5,
+  "title": "1 Pedro",
+  "description": "1 Pedro capítulo a capítulo: esperança viva no sofrimento e santidade no caminho.",
+  "icon": "🪨",
+  "color": "#00796B",
+  "order": 75,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["cartas-gerais", "pedro"],
+  "modules": [
+    {
+      "title": "Esperança no sofrimento · cap. 1–5",
+      "scenes": [
+        {
+          "ref": "1 Pedro 1:13–21",
+          "title": "Cingir a mente",
+          "intro": "Pedro chama os eleitos a esperança e a santidade, lembrando o preço do resgate.",
+          "insight": "Sede santos, porque fostes resgatados pelo precioso sangue de Cristo.",
+          "objective": "Viver em santa esperança"
+        },
+        {
+          "ref": "1 Pedro 2:13–20",
+          "title": "Sujeitos por causa do Senhor",
+          "intro": "Pedro orienta a vida sob autoridades humanas e o sofrimento injusto.",
+          "insight": "Sujeitai-vos por causa do Senhor; sofrer fazendo o bem é agradável a Deus.",
+          "objective": "Fazer o bem sob pressão"
+        },
+        {
+          "ref": "1 Pedro 3:13–18",
+          "title": "Prontos para responder",
+          "intro": "Mesmo no maltrato, Pedro pede boa consciência e resposta com mansidão.",
+          "insight": "Santificai a Cristo como Senhor e estejais prontos a responder com mansidão e temor.",
+          "objective": "Responder com mansidão"
+        },
+        {
+          "ref": "1 Pedro 4:12–19",
+          "title": "Fogo da provação",
+          "intro": "A carta não trata o sofrimento como estranho, mas como participação nas aflições de Cristo.",
+          "insight": "Alegrai-vos na participação dos sofrimentos de Cristo; confiai a alma ao Criador fiel.",
+          "objective": "Sofrer com alegria fiel"
+        },
+        {
+          "ref": "1 Pedro 5:6–11",
+          "title": "Debaixo da mão de Deus",
+          "intro": "Aos anciãos e à igreja, Pedro fecha com humildade, vigilância e esperança.",
+          "insight": "Humilhai-vos sob a potente mão de Deus; o Deus de toda a graça vos aperfeiçoará.",
+          "objective": "Humildes e firmes na graça"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Esperança no sofrimento",
+        "intro": "Revise a santidade, a sujeição, a resposta, a provação e a humildade.",
+        "insight": "A esperança sustenta santidade e firmeza no sofrimento"
+      }
+    }
+  ]
+}

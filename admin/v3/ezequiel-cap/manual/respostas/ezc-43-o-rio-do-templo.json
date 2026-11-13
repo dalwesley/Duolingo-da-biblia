@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 47:1–9",
+    "passages": [
+      {
+        "ref": "Ezequiel 47:1–12"
+      }
+    ],
+    "context": "Águas saem do templo, crescem até virar rio; tudo vive por onde o ribeiro passa.",
+    "keyword": "rio",
+    "keywordGloss": "Águas que saem do santuário e dão vida por onde passam.",
+    "focusQuestion": "Onde a água do santuário ainda precisa atravessar a sua seca?",
+    "reflectionPrompts": [
+      "Águas do templo",
+      "Rio impassável",
+      "Folhas de remédio"
+    ],
+    "facts": [
+      {
+        "text": "Águas saíam de debaixo do umbral da casa para o leste.",
+        "evidenceRef": "Ezequiel 47:1",
+        "evidenceSpan": "saíam águas de debaixo do umbral da casa para o leste"
+      },
+      {
+        "text": "As águas chegaram aos tornozelos após mil côvados.",
+        "evidenceRef": "Ezequiel 47:3",
+        "evidenceSpan": "águas que me chegavam aos tornozelos"
+      },
+      {
+        "text": "Tornou-se rio que não se podia atravessar.",
+        "evidenceRef": "Ezequiel 47:5",
+        "evidenceSpan": "era um rio que eu não podia atravessar"
+      },
+      {
+        "text": "Tudo viverá por onde o ribeiro passar.",
+        "evidenceRef": "Ezequiel 47:9",
+        "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe"
+      },
+      {
+        "text": "As folhas não murcharão; servirão de remédio.",
+        "evidenceRef": "Ezequiel 47:12",
+        "evidenceSpan": "suas folhas não murcharão, nem faltarão os seus frutos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "águas",
+        "gloss": "Saem do templo e crescem até virar rio."
+      },
+      {
+        "term": "rio",
+        "gloss": "Corrente impassável que dá vida."
+      },
+      {
+        "term": "santuário",
+        "gloss": "Origem das águas que alimentam as árvores."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Águas saem do templo",
+        "evidenceRef": "Ezequiel 47:1–2"
+      },
+      {
+        "label": "Medições crescentes",
+        "evidenceRef": "Ezequiel 47:3–5"
+      },
+      {
+        "label": "Árvores e Mar Morto",
+        "evidenceRef": "Ezequiel 47:6–10"
+      },
+      {
+        "label": "Pântanos e folhas de remédio",
+        "evidenceRef": "Ezequiel 47:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Quando chegam ao mar, as águas ficam saudáveis.",
+        "marker": "quando",
+        "evidenceRef": "Ezequiel 47:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Porém os pântanos não serão curados.",
+        "marker": "Porém",
+        "evidenceRef": "Ezequiel 47:11"
+      },
+      {
+        "kind": "causa",
+        "text": "Folhas e frutos porque as águas saem do santuário.",
+        "marker": "porque",
+        "evidenceRef": "Ezequiel 47:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Apocalipse 22:1–2",
+        "bridge": "Rio da vida e folhas"
+      },
+      {
+        "ref": "Joel 3:18",
+        "bridge": "Fonte da casa do Senhor"
+      },
+      {
+        "ref": "Zacarias 14:8",
+        "bridge": "Águas vivas de Jerusalém"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "As águas diminuem até sumir.",
+        "why": "Crescem até rio impassável."
+      },
+      {
+        "text": "Nada vive onde o ribeiro passa.",
+        "why": "Tudo viverá."
+      },
+      {
+        "text": "Os pântanos também serão todos curados.",
+        "why": "Não serão curados; ficam para o sal."
+      }
+    ],
+    "centralInsight": "Tudo viverá por onde quer que passar este rio; as suas folhas não murcharão.",
+    "anchorQuestion": "De onde saem as águas em Ezequiel 47:1?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 47:1, saíam águas de debaixo do umbral da casa para o leste.",
+      "verseRef": "Ezequiel 47:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "saíam águas de debaixo do umbral da casa para o leste",
+      "feedbackCorrect": "Águas saem do templo.",
+      "feedbackWrong": {
+        "false": "O versículo afirma."
+      },
+      "hint": "Veja 47:1.",
+      "learningObjective": "Identificar as águas.",
+      "evidence": [
+        "Ezequiel 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 47:1, toque o que saía do umbral.",
+      "verseRef": "Ezequiel 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "águas"
+        },
+        {
+          "id": "b",
+          "text": "umbral"
+        },
+        {
+          "id": "c",
+          "text": "altar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saíam águas de debaixo do umbral da casa",
+      "feedbackCorrect": "Saíam águas.",
+      "feedbackWrong": {
+        "b": "É o lugar.",
+        "c": "É referência de posição."
+      },
+      "hint": "Procure o que flui.",
+      "learningObjective": "Tocar as águas.",
+      "evidence": [
+        "Ezequiel 47:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 47:5, o que o rio se tornou?",
+      "verseRef": "Ezequiel 47:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Um rio que não se podia atravessar"
+        },
+        {
+          "id": "b",
+          "text": "Um fio seco"
+        },
+        {
+          "id": "c",
+          "text": "Um poço parado"
+        },
+        {
+          "id": "d",
+          "text": "Uma porta fechada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era um rio que eu não podia atravessar",
+      "feedbackCorrect": "Tornou-se impassável.",
+      "feedbackWrong": {
+        "b": "As águas cresceram.",
+        "c": "É rio.",
+        "d": "Não é porta."
+      },
+      "hint": "Veja o resultado.",
+      "learningObjective": "Reconhecer o rio.",
+      "evidence": [
+        "Ezequiel 47:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 47:3–4 na ordem do texto.",
+      "verseRef": "Ezequiel 47:3–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "águas que me chegavam aos tornozelos"
+        },
+        {
+          "id": "b",
+          "text": "que me chegavam até os joelhos"
+        },
+        {
+          "id": "c",
+          "text": "águas que me chegavam até os lombos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "águas que me chegavam aos tornozelos",
+      "feedbackCorrect": "Tornozelos → joelhos → lombos.",
+      "feedbackWrong": {
+        "default": "Comece pelos tornozelos."
+      },
+      "hint": "Comece pelos tornozelos.",
+      "learningObjective": "Ordenar as medidas.",
+      "evidence": [
+        "Ezequiel 47:3",
+        "Ezequiel 47:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 47:5, era um ___ que eu não podia atravessar.",
+      "verseRef": "Ezequiel 47:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "rio"
+        },
+        {
+          "id": "b",
+          "text": "muro"
+        },
+        {
+          "id": "c",
+          "text": "trono"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "era um rio que eu não podia atravessar",
+      "feedbackCorrect": "A palavra é rio.",
+      "feedbackWrong": {
+        "b": "Não é muro.",
+        "c": "Não é trono."
+      },
+      "hint": "Veja o substantivo.",
+      "learningObjective": "Lembrar o rio.",
+      "evidence": [
+        "Ezequiel 47:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 47:9 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 47:9",
+      "passageA": {
+        "ref": "Ezequiel 47:9"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Águas do templo crescem e dão vida por onde passam."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Tudo viverá"
+        },
+        {
+          "id": "b",
+          "text": "Porta fechada"
+        },
+        {
+          "id": "c",
+          "text": "Gogue cai"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "A vida resume a cena.",
+      "feedbackWrong": {
+        "b": "Porta está em 44.",
+        "c": "Gogue está em 39."
+      },
+      "hint": "Compare a vida.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 47:11, os pântanos e lodaçais também serão curados.",
+      "verseRef": "Ezequiel 47:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "os seus pântanos e os seus lodaçais não serão curados",
+      "feedbackCorrect": "Não serão curados.",
+      "feedbackWrong": {
+        "true": "Há contraste."
+      },
+      "hint": "Veja 47:11.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Ezequiel 47:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 47:11, toque a palavra que marca o contraste.",
+      "verseRef": "Ezequiel 47:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "pântanos"
+        },
+        {
+          "id": "c",
+          "text": "sal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, os seus pântanos e os seus lodaçais não serão curados",
+      "feedbackCorrect": "\"Porém\" marca o contraste.",
+      "feedbackWrong": {
+        "b": "São o que não sara.",
+        "c": "É o destino deles."
+      },
+      "hint": "Procure o contraste.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 47:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 47:1 e 47:9 se relacionam?",
+      "verseRef": "Ezequiel 47:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Águas do templo tornam-se vida por onde passam"
+        },
+        {
+          "id": "b",
+          "text": "As águas somem no umbral"
+        },
+        {
+          "id": "c",
+          "text": "A vida impede o rio"
+        },
+        {
+          "id": "d",
+          "text": "O santuário seca o mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "saíam águas de debaixo do umbral da casa para o leste",
+      "feedbackCorrect": "Origem e efeito se ligam.",
+      "feedbackWrong": {
+        "b": "Crescem.",
+        "c": "O rio dá vida.",
+        "d": "O mar fica saudável."
+      },
+      "hint": "Una origem e vida.",
+      "learningObjective": "Relacionar fonte e efeito.",
+      "evidence": [
+        "Ezequiel 47:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 47?",
+      "verseRef": "Ezequiel 47:1–9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Águas saem do templo"
+        },
+        {
+          "id": "b",
+          "text": "Crescem até rio impassável"
+        },
+        {
+          "id": "c",
+          "text": "Tudo vive onde o ribeiro passa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "Fonte → crescimento → vida.",
+      "feedbackWrong": {
+        "default": "Comece na fonte."
+      },
+      "hint": "Comece na fonte.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 47:1",
+        "Ezequiel 47:5",
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 47:8, quando chegam ao mar, suas águas ficam ___.",
+      "verseRef": "Ezequiel 47:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "saudáveis"
+        },
+        {
+          "id": "b",
+          "text": "secas"
+        },
+        {
+          "id": "c",
+          "text": "amargas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suas águas ficam saudáveis",
+      "feedbackCorrect": "A palavra é saudáveis.",
+      "feedbackWrong": {
+        "b": "Não é secas.",
+        "c": "Não é amargas."
+      },
+      "hint": "Veja o resultado.",
+      "learningObjective": "Lembrar o efeito.",
+      "evidence": [
+        "Ezequiel 47:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 47:9 a Zacarias 14:8?",
+      "verseRef": "Ezequiel 47:9",
+      "passageA": {
+        "ref": "Ezequiel 47:9"
+      },
+      "passageB": {
+        "ref": "Zacarias 14:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Águas vivas de Jerusalém"
+        },
+        {
+          "id": "b",
+          "text": "Cedro"
+        },
+        {
+          "id": "c",
+          "text": "Gogue"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "Nos dois, águas saem com vida.",
+      "feedbackWrong": {
+        "b": "Cedro está em 31.",
+        "c": "Gogue está em 38."
+      },
+      "hint": "Compare as águas.",
+      "learningObjective": "Relacionar a Zacarias.",
+      "evidence": [
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 47:9, nada vive onde o ribeiro passa.",
+      "verseRef": "Ezequiel 47:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "Tudo viverá.",
+      "feedbackWrong": {
+        "true": "O texto afirma vida."
+      },
+      "hint": "Veja o fim de 47:9.",
+      "learningObjective": "Rejeitar a morte.",
+      "evidence": [
+        "Ezequiel 47:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 47:12, toque o trecho que sustenta a origem das águas.",
+      "verseRef": "Ezequiel 47:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "santuário"
+        },
+        {
+          "id": "b",
+          "text": "folhas"
+        },
+        {
+          "id": "c",
+          "text": "frutos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque as águas saem do santuário",
+      "feedbackCorrect": "Saem do santuário.",
+      "feedbackWrong": {
+        "b": "São para remédio.",
+        "c": "São alimento."
+      },
+      "hint": "Procure a origem.",
+      "learningObjective": "Tocar a origem.",
+      "evidence": [
+        "Ezequiel 47:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 47 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 47:1–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Águas do santuário crescem e dão vida; pântanos ficam de fora"
+        },
+        {
+          "id": "b",
+          "text": "As águas diminuem"
+        },
+        {
+          "id": "c",
+          "text": "Nada vive no ribeiro"
+        },
+        {
+          "id": "d",
+          "text": "Pântanos também sararão todos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo viverá por onde quer que esse ribeiro passe",
+      "feedbackCorrect": "Vida do rio e exceção dos pântanos.",
+      "feedbackWrong": {
+        "b": "Crescem.",
+        "c": "Tudo viverá.",
+        "d": "Não serão curados."
+      },
+      "hint": "Una rio e pântanos.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 47:9",
+        "Ezequiel 47:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do rio do templo.",
+      "verseRef": "Ezequiel 47:1–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Águas saem do umbral"
+        },
+        {
+          "id": "b",
+          "text": "Tornam-se corrente impassável"
+        },
+        {
+          "id": "c",
+          "text": "Vida nas margens e folhas de remédio"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "suas folhas, de remédio",
+      "feedbackCorrect": "Fonte → rio → vida.",
+      "feedbackWrong": {
+        "default": "Comece na fonte."
+      },
+      "hint": "Comece na fonte.",
+      "learningObjective": "Encadear o rio.",
+      "evidence": [
+        "Ezequiel 47:1",
+        "Ezequiel 47:5",
+        "Ezequiel 47:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 47:12, e suas folhas, de ___.",
+      "verseRef": "Ezequiel 47:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "remédio"
+        },
+        {
+          "id": "b",
+          "text": "veneno"
+        },
+        {
+          "id": "c",
+          "text": "sal"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suas folhas, de remédio",
+      "feedbackCorrect": "A palavra é remédio.",
+      "feedbackWrong": {
+        "b": "Não é veneno.",
+        "c": "Não é sal."
+      },
+      "hint": "Veja o uso das folhas.",
+      "learningObjective": "Lembrar o remédio.",
+      "evidence": [
+        "Ezequiel 47:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 47:12 a Apocalipse 22:1–2?",
+      "verseRef": "Ezequiel 47:12",
+      "passageA": {
+        "ref": "Ezequiel 47:12"
+      },
+      "passageB": {
+        "ref": "Apocalipse 22:1–2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Rio da vida e folhas"
+        },
+        {
+          "id": "b",
+          "text": "Porta fechada"
+        },
+        {
+          "id": "c",
+          "text": "Monte Seir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suas folhas não murcharão, nem faltarão os seus frutos",
+      "feedbackCorrect": "Nos dois, rio e folhas curam.",
+      "feedbackWrong": {
+        "b": "Porta está em 44.",
+        "c": "Seir está em 35."
+      },
+      "hint": "Compare rio e folhas.",
+      "learningObjective": "Ligar a Apocalipse.",
+      "evidence": [
+        "Ezequiel 47:12"
+      ]
+    }
+  ]
+}

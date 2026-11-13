@@ -1,0 +1,3915 @@
+{
+  "studies": {
+    "joc-01-venham-e-vejam": {
+      "slug": "joc-01-venham-e-vejam",
+      "passageRef": "João 1:37–42",
+      "passageText": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus. E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está hospedado? Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora. Era André, o irmão de Simão Pedro, um dos dois que tinham ouvido o testemunho de João e seguido Jesus. Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo). E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro).",
+      "passages": [
+        {
+          "ref": "João 1:37–42",
+          "text": "E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus. E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está hospedado? Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora. Era André, o irmão de Simão Pedro, um dos dois que tinham ouvido o testemunho de João e seguido Jesus. Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo). E o levou a Jesus. Jesus olhou para ele e disse: Você é Simão, filho de João; você será chamado Cefas (que quer dizer Pedro)."
+        },
+        {
+          "ref": "João 1:35–36",
+          "text": "No dia seguinte, João estava novamente presente, acompanhado de dois dos seus discípulos. Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus!"
+        }
+      ],
+      "context": "No dia anterior, João já tinha apontado Jesus. Neste dia ele está com dois discípulos quando Jesus passa. O trecho acompanha o que esses dois fazem em seguida.",
+      "keyword": "Messias",
+      "keywordGloss": "Título que André anuncia ao irmão, explicado no texto como o Cristo.",
+      "focusQuestion": "Quando você encontra Jesus, a quem você chama para ver também?",
+      "reflectionPrompts": [
+        "Ouvir e seguir",
+        "Ficar com Jesus",
+        "Chamar o irmão"
+      ],
+      "facts": [
+        {
+          "text": "João estava acompanhado de dois dos seus discípulos.",
+          "evidenceRef": "João 1:35",
+          "evidenceSpan": "acompanhado de dois dos seus discípulos"
+        },
+        {
+          "text": "Ao ver Jesus passar, João exclamou que ele é o Cordeiro de Deus.",
+          "evidenceRef": "João 1:36",
+          "evidenceSpan": "Eis o Cordeiro de Deus"
+        },
+        {
+          "text": "Os dois discípulos seguiram a Jesus.",
+          "evidenceRef": "João 1:37",
+          "evidenceSpan": "seguiram a Jesus"
+        },
+        {
+          "text": "Jesus convida os dois a vir e ver, e eles ficam com ele naquele dia.",
+          "evidenceRef": "João 1:39",
+          "evidenceSpan": "Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia."
+        },
+        {
+          "text": "André disse ao irmão que já tinham encontrado o Messias.",
+          "evidenceRef": "João 1:41",
+          "evidenceSpan": "Já encontramos o Messias"
+        },
+        {
+          "text": "André levou Simão a Jesus.",
+          "evidenceRef": "João 1:42",
+          "evidenceSpan": "E o levou a Jesus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Cordeiro",
+          "gloss": "Título com que João apresenta Jesus aos dois discípulos."
+        },
+        {
+          "term": "testemunho",
+          "gloss": "O que os dois ouviram de João antes de seguir Jesus."
+        },
+        {
+          "term": "Messias",
+          "gloss": "Título que André anuncia ao irmão; o texto o traduz por Cristo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "João aponta Jesus aos discípulos",
+          "evidenceRef": "João 1:35–36"
+        },
+        {
+          "label": "Os dois seguem Jesus e permanecem",
+          "evidenceRef": "João 1:37–39"
+        },
+        {
+          "label": "André anuncia o Messias ao irmão",
+          "evidenceRef": "João 1:40–41"
+        },
+        {
+          "label": "Jesus olha para Simão e o nomeia",
+          "evidenceRef": "João 1:42"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "sequência",
+          "text": "Ao ouvir o que João diz, os dois discípulos seguem a Jesus.",
+          "marker": "ouvindo-o",
+          "evidenceRef": "João 1:37"
+        },
+        {
+          "kind": "resultado",
+          "text": "Depois do convite, os dois veem a morada e ficam com Jesus naquele dia.",
+          "marker": "ficaram",
+          "evidenceRef": "João 1:39"
+        },
+        {
+          "kind": "causa",
+          "text": "Depois de anunciar o Messias, André leva o irmão a Jesus.",
+          "marker": null,
+          "evidenceRef": "João 1:41–42"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 1:29",
+          "bridge": "Cordeiro anunciado por João",
+          "text": "No dia seguinte, João viu Jesus, que se aproximava dele, e disse: Eis o Cordeiro de Deus, que tira o pecado do mundo!"
+        },
+        {
+          "ref": "João 4:29",
+          "bridge": "Chamar outro para ver",
+          "text": "Venham ver um homem que me disse tudo o que eu tenho feito: será este, porventura, o Cristo?"
+        },
+        {
+          "ref": "João 1:45",
+          "bridge": "Achar e contar a outro",
+          "text": "Filipe encontrou Natanael e disse-lhe: Encontramos aquele de quem Moisés escreveu na lei e a quem os profetas se referiram: Jesus, o Nazareno, filho de José."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "André encontra o Messias e guarda a notícia só para si.",
+          "why": "Ele procura Simão, diz que encontraram o Messias e o leva a Jesus."
+        },
+        {
+          "text": "Jesus recusa Simão e o manda de volta, sem o receber.",
+          "why": "André o leva a Jesus, que olha para ele e diz que será chamado Cefas."
+        },
+        {
+          "text": "Cefas já era o nome de Simão, e Jesus apenas o repete.",
+          "why": "Jesus diz que Simão será chamado Cefas, e o texto explica o sentido desse nome."
+        }
+      ],
+      "centralInsight": "Quem encontra Jesus vai chamar o irmão: achamos o Messias.",
+      "anchorQuestion": "O que André disse a Simão quando o encontrou?",
+      "relatedVerses": [
+        {
+          "reference": "João 1:29",
+          "reason": "Cordeiro anunciado por João"
+        },
+        {
+          "reference": "João 4:29",
+          "reason": "Chamar outro para ver"
+        },
+        {
+          "reference": "João 1:45",
+          "reason": "Achar e contar a outro"
+        }
+      ]
+    },
+    "joc-02-o-vinho-em-cana": {
+      "slug": "joc-02-o-vinho-em-cana",
+      "passageRef": "João 2:6–11",
+      "passageText": "Havia ali seis talhas de pedra, que os judeus usavam para as purificações, e cada uma levava de duas a três metretas. Jesus lhes disse: Encham essas talhas de água. E as encheram completamente. Disse-lhes: \"Agora tirem e levem ao mestre-sala. Eles o fizeram. E, assim que o mestre-sala provou a água que se tornara vinho (sem saber de onde viera, embora os serventes soubessem que haviam tirado a água), chamou o noivo. E lhe disse: Todo homem serve primeiro o vinho de melhor qualidade, e, quando já beberam fartamente, serve o inferior; mas você guardou o melhor vinho até agora. Jesus deu início a seus sinais em Caná da Galileia, manifestando sua glória; e seus discípulos creram nele.",
+      "passages": [
+        {
+          "ref": "João 2:6–11",
+          "text": "Havia ali seis talhas de pedra, que os judeus usavam para as purificações, e cada uma levava de duas a três metretas. Jesus lhes disse: Encham essas talhas de água. E as encheram completamente. Disse-lhes: \"Agora tirem e levem ao mestre-sala. Eles o fizeram. E, assim que o mestre-sala provou a água que se tornara vinho (sem saber de onde viera, embora os serventes soubessem que haviam tirado a água), chamou o noivo. E lhe disse: Todo homem serve primeiro o vinho de melhor qualidade, e, quando já beberam fartamente, serve o inferior; mas você guardou o melhor vinho até agora. Jesus deu início a seus sinais em Caná da Galileia, manifestando sua glória; e seus discípulos creram nele."
+        },
+        {
+          "ref": "João 2:1–5",
+          "text": "No terceiro dia, houve um casamento em Caná da Galiléia, e a mãe de Jesus encontrava-se ali. E também Jesus e seus discípulos foram convidados para o casamento. E, tendo acabado o vinho, a mãe de Jesus lhe disse: Eles não têm mais vinho. Disse-lhe Jesus: Mulher, que tenho eu a ver contigo? Ainda não chegou a minha hora. A mãe dele disse aos serventes: Façam tudo o que ele lhes disser."
+        }
+      ],
+      "context": "O relato de João sai do encontro com os primeiros discípulos e chega a um casamento em Caná da Galiléia. A mãe de Jesus está ali, e os serventes cuidam da festa.",
+      "keyword": "sinais",
+      "keywordGloss": "São os atos de Jesus que revelam quem ele é; em Caná começa o primeiro.",
+      "focusQuestion": "Quando falta algo importante ao seu redor, você espera a hora de Jesus ou tenta antecipá-la?",
+      "reflectionPrompts": [
+        "A hora ainda não",
+        "Água nas talhas",
+        "Glória no sinal"
+      ],
+      "facts": [
+        {
+          "text": "Houve um casamento em Caná da Galiléia.",
+          "evidenceRef": "João 2:1",
+          "evidenceSpan": "houve um casamento em Caná da Galiléia"
+        },
+        {
+          "text": "O vinho da festa tinha acabado.",
+          "evidenceRef": "João 2:3",
+          "evidenceSpan": "tendo acabado o vinho"
+        },
+        {
+          "text": "Jesus disse que a sua hora ainda não tinha chegado.",
+          "evidenceRef": "João 2:4",
+          "evidenceSpan": "Ainda não chegou a minha hora"
+        },
+        {
+          "text": "Havia seis talhas de pedra usadas nas purificações.",
+          "evidenceRef": "João 2:6",
+          "evidenceSpan": "seis talhas de pedra, que os judeus usavam para as purificações"
+        },
+        {
+          "text": "Jesus mandou encher as talhas de água, e elas foram enchidas por completo.",
+          "evidenceRef": "João 2:7",
+          "evidenceSpan": "Encham essas talhas de água. E as encheram completamente."
+        },
+        {
+          "text": "Jesus manifestou sua glória, e seus discípulos creram nele.",
+          "evidenceRef": "João 2:11",
+          "evidenceSpan": "manifestando sua glória; e seus discípulos creram nele"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "hora",
+          "gloss": "O momento que Jesus declara ainda não ter chegado."
+        },
+        {
+          "term": "sinais",
+          "gloss": "Os atos de Jesus que revelam quem ele é; Caná é o começo."
+        },
+        {
+          "term": "glória",
+          "gloss": "A grandeza de Jesus que este sinal torna visível."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A festa fica sem vinho",
+          "evidenceRef": "João 2:1–3"
+        },
+        {
+          "label": "Os serventes enchem as talhas",
+          "evidenceRef": "João 2:6–8"
+        },
+        {
+          "label": "O sinal manifesta a glória",
+          "evidenceRef": "João 2:9–11"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O mestre-sala não sabia a origem do vinho, embora os serventes soubessem que era água.",
+          "marker": "embora",
+          "evidenceRef": "João 2:9"
+        },
+        {
+          "kind": "contraste",
+          "text": "O costume é servir o vinho inferior depois; aqui o melhor ficou guardado até agora.",
+          "marker": "mas",
+          "evidenceRef": "João 2:10"
+        },
+        {
+          "kind": "resultado",
+          "text": "Ao manifestar sua glória no sinal, Jesus leva os discípulos a crer nele.",
+          "marker": null,
+          "evidenceRef": "João 2:11"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 4:46",
+          "bridge": "Água transformada em vinho",
+          "text": "Mais uma vez, Jesus voltou a Caná da Galileia, onde havia transformado água em vinho. Havia ali um oficial do rei, cujo filho estava doente em Cafarnaum."
+        },
+        {
+          "ref": "João 1:14",
+          "bridge": "Glória já vista",
+          "text": "E o Verbo se fez carne e habitou entre nós, cheio de graça e de verdade, e vimos a sua glória, glória como do unigênito do Pai."
+        },
+        {
+          "ref": "João 20:30–31",
+          "bridge": "Sinais para crer",
+          "text": "Jesus realmente fez, na presença de seus discípulos, muitos outros sinais que não estão registrados neste livro. Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus recusa o pedido e nada acontece, porque a hora ainda não chegou.",
+          "why": "Depois dessa fala, a mãe manda obedecer a Jesus, e ele inicia o sinal em Caná."
+        },
+        {
+          "text": "O mestre-sala sabia que a água tinha virado vinho.",
+          "why": "O texto diz que ele não sabia de onde viera; os serventes é que sabiam da água."
+        },
+        {
+          "text": "A mãe de Jesus realiza o sinal ao dar a ordem aos serventes.",
+          "why": "Ela manda fazer o que Jesus disser; quem ordena encher as talhas e inicia os sinais é Jesus."
+        }
+      ],
+      "centralInsight": "No primeiro sinal, Jesus transforma água em vinho e mostra sua glória.",
+      "anchorQuestion": "O que João 2:11 diz que Jesus manifestou em Caná?",
+      "relatedVerses": [
+        {
+          "reference": "João 4:46",
+          "reason": "Água transformada em vinho"
+        },
+        {
+          "reference": "João 1:14",
+          "reason": "Glória já vista"
+        },
+        {
+          "reference": "João 20:30–31",
+          "reason": "Sinais para crer"
+        }
+      ]
+    },
+    "joc-03-deus-amou-o-mundo": {
+      "slug": "joc-03-deus-amou-o-mundo",
+      "passageRef": "João 3:14–19",
+      "passageText": "E assim como Moisés levantou a serpente no deserto, assim também é necessário que o Filho do Homem seja levantado; Para que todo aquele que nele crê não se perca, mas tenha a vida eterna. Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna. Porque Deus enviou seu Filho ao mundo, não para que condenasse o mundo, mas para que o mundo fosse salvo por intermédio dele. Quem crê nele não é julgado; mas quem não crê já está julgado, porque não crê no nome do unigênito Filho de Deus. E o julgamento é este: a luz veio ao mundo, e os homens amaram mais as trevas do que a luz; porque as suas obras eram más.",
+      "passages": [
+        {
+          "ref": "João 3:14–19",
+          "text": "E assim como Moisés levantou a serpente no deserto, assim também é necessário que o Filho do Homem seja levantado; Para que todo aquele que nele crê não se perca, mas tenha a vida eterna. Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna. Porque Deus enviou seu Filho ao mundo, não para que condenasse o mundo, mas para que o mundo fosse salvo por intermédio dele. Quem crê nele não é julgado; mas quem não crê já está julgado, porque não crê no nome do unigênito Filho de Deus. E o julgamento é este: a luz veio ao mundo, e os homens amaram mais as trevas do que a luz; porque as suas obras eram más."
+        },
+        {
+          "ref": "João 3:20–21",
+          "text": "Porque todo aquele que pratica o mal detesta a luz e não se aproxima dela, para que suas obras não sejam reveladas. Aquele que pratica a verdade se aproxima da luz, a fim de que suas obras sejam manifestas, pois foram realizadas em Deus."
+        }
+      ],
+      "context": "Nicodemos, mestre em Israel, procura Jesus de noite. Na conversa, Jesus retoma o deserto: Moisés levantou uma serpente, e quem olhava para ela vivia.",
+      "keyword": "amou",
+      "keywordGloss": "Amou, no texto, é o amor de Deus que se mostra ao entregar o Filho unigênito.",
+      "focusQuestion": "Quando a luz mostra uma obra que você esconde, você se aproxima ou se afasta?",
+      "reflectionPrompts": [
+        "O Filho levantado",
+        "O amor que entrega",
+        "Chegar à luz"
+      ],
+      "facts": [
+        {
+          "text": "Moisés levantou a serpente no deserto.",
+          "evidenceRef": "João 3:14",
+          "evidenceSpan": "Moisés levantou a serpente no deserto"
+        },
+        {
+          "text": "É necessário que o Filho do Homem seja levantado.",
+          "evidenceRef": "João 3:14",
+          "evidenceSpan": "é necessário que o Filho do Homem seja levantado"
+        },
+        {
+          "text": "Deus amou o mundo e deu o seu Filho unigênito.",
+          "evidenceRef": "João 3:16",
+          "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito"
+        },
+        {
+          "text": "Deus enviou o Filho para que o mundo fosse salvo, não para condená-lo.",
+          "evidenceRef": "João 3:17",
+          "evidenceSpan": "não para que condenasse o mundo, mas para que o mundo fosse salvo"
+        },
+        {
+          "text": "Quem não crê já está julgado.",
+          "evidenceRef": "João 3:18",
+          "evidenceSpan": "quem não crê já está julgado"
+        },
+        {
+          "text": "Os homens amaram mais as trevas do que a luz.",
+          "evidenceRef": "João 3:19",
+          "evidenceSpan": "os homens amaram mais as trevas do que a luz"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "unigênito",
+          "gloss": "É o modo como o texto nomeia o Filho único, a quem Deus entrega por amor."
+        },
+        {
+          "term": "vida eterna",
+          "gloss": "É a vida que quem crê no Filho recebe, em lugar de se perder."
+        },
+        {
+          "term": "trevas",
+          "gloss": "É o que os homens amaram mais do que a luz, porque suas obras eram más."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus anuncia o Filho levantado",
+          "evidenceRef": "João 3:14–15"
+        },
+        {
+          "label": "Deus entrega o Filho para salvar",
+          "evidenceRef": "João 3:16–18"
+        },
+        {
+          "label": "A luz revela a escolha de cada um",
+          "evidenceRef": "João 3:19–21"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Deus deu o Filho com um fim: que todo aquele que nele crê tenha a vida eterna.",
+          "marker": "para que",
+          "evidenceRef": "João 3:16"
+        },
+        {
+          "kind": "contraste",
+          "text": "O Filho não foi enviado para condenar o mundo, e sim para que o mundo fosse salvo.",
+          "marker": "mas",
+          "evidenceRef": "João 3:17"
+        },
+        {
+          "kind": "causa",
+          "text": "Os homens amaram mais as trevas porque as suas obras eram más.",
+          "marker": "porque",
+          "evidenceRef": "João 3:19"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Números 21:8–9",
+          "bridge": "Olhar e viver",
+          "text": "E o Senhor disse a Moisés: Faze uma serpente abrasadora e a coloca sobre uma haste; todo aquele que for mordido e a mirar viverá. E Moisés fez uma serpente de bronze e a colocou sobre uma haste; e quando alguém era mordido por uma serpente, se olhava para a serpente de bronze, sarava."
+        },
+        {
+          "ref": "1 João 4:9",
+          "bridge": "Amor entrega o Filho",
+          "text": "Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos."
+        },
+        {
+          "ref": "João 12:32",
+          "bridge": "Levantado da terra",
+          "text": "E eu, quando for levantado da terra, atrairei todos a mim mesmo."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Deus enviou o Filho ao mundo para condenar o mundo.",
+          "why": "João 3:17 diz o contrário: não para condenar, mas para que o mundo fosse salvo por meio dele."
+        },
+        {
+          "text": "Quem não crê só será julgado no futuro; agora ainda não há juízo.",
+          "why": "O texto afirma que quem não crê já está julgado, por não crer no Filho."
+        },
+        {
+          "text": "O amor de Deus pelo mundo dispensa crer no Filho.",
+          "why": "O dom tem endereço: para que todo aquele que nele crê não pereça e tenha a vida eterna."
+        }
+      ],
+      "centralInsight": "Deus amou o mundo e deu o Filho para que quem crê tenha a vida eterna.",
+      "anchorQuestion": "O que Deus fez com o Filho ao amar o mundo?",
+      "relatedVerses": [
+        {
+          "reference": "Números 21:8–9",
+          "reason": "Olhar e viver"
+        },
+        {
+          "reference": "1 João 4:9",
+          "reason": "Amor entrega o Filho"
+        },
+        {
+          "reference": "João 12:32",
+          "reason": "Levantado da terra"
+        }
+      ]
+    },
+    "joc-04-a-agua-viva": {
+      "slug": "joc-04-a-agua-viva",
+      "passageRef": "João 4:10–15",
+      "passageText": "Jesus respondeu: \"Se você conhecesse o dom de Deus e quem é aquele que te pede: 'Dá-me de beber', você lhe pediria, e ele te daria água viva. Disse-lhe a mulher: Senhor, você não tem como tirá-la, e o poço é profundo; onde, então, você tem a água viva? Você é, por acaso, maior que o nosso pai Jacó, que nos deu este poço, do qual ele mesmo bebeu, assim como seus filhos e seu gado? Jesus respondeu: \"Quem beber desta água tornará a ter sede novamente; Mas aquele que beber da água que eu lhe der nunca mais terá sede; pelo contrário, a água que eu lhe der será nele uma fonte a jorrar para a vida eterna. Disse-lhe a mulher: Senhor, dá-me dessa água para que eu não mais tenha sede nem precise vir aqui para buscá-la.",
+      "passages": [
+        {
+          "ref": "João 4:10–15",
+          "text": "Jesus respondeu: \"Se você conhecesse o dom de Deus e quem é aquele que te pede: 'Dá-me de beber', você lhe pediria, e ele te daria água viva. Disse-lhe a mulher: Senhor, você não tem como tirá-la, e o poço é profundo; onde, então, você tem a água viva? Você é, por acaso, maior que o nosso pai Jacó, que nos deu este poço, do qual ele mesmo bebeu, assim como seus filhos e seu gado? Jesus respondeu: \"Quem beber desta água tornará a ter sede novamente; Mas aquele que beber da água que eu lhe der nunca mais terá sede; pelo contrário, a água que eu lhe der será nele uma fonte a jorrar para a vida eterna. Disse-lhe a mulher: Senhor, dá-me dessa água para que eu não mais tenha sede nem precise vir aqui para buscá-la."
+        },
+        {
+          "ref": "João 4:7–9",
+          "text": "Veio uma mulher samaritana tirar água. Jesus lhe disse \"Dá-me de beber\" Porque os discípulos dele tinham ido à cidade para comprar alimentos. Disse-lhe, então, a mulher samaritana: Como, sendo você judeu, pede de beber a mim, que sou uma mulher samaritana? (Pois os judeus não se relacionam com os samaritanos.)"
+        }
+      ],
+      "context": "Cansado da viagem, Jesus se senta junto ao poço de Jacó, em Sicar. Uma mulher samaritana chega para tirar água. Judeus e samaritanos não se relacionavam entre si.",
+      "keyword": "água viva",
+      "keywordGloss": "Água que Jesus oferece no lugar da água do poço, e que sacia de verdade.",
+      "focusQuestion": "Onde você tenta saciar uma sede que volta no dia seguinte?",
+      "reflectionPrompts": [
+        "O pedido no poço",
+        "A sede que volta",
+        "A fonte interior"
+      ],
+      "facts": [
+        {
+          "text": "Uma mulher samaritana veio tirar água.",
+          "evidenceRef": "João 4:7",
+          "evidenceSpan": "Veio uma mulher samaritana tirar água"
+        },
+        {
+          "text": "Os discípulos tinham ido à cidade para comprar alimentos.",
+          "evidenceRef": "João 4:8",
+          "evidenceSpan": "tinham ido à cidade para comprar alimentos"
+        },
+        {
+          "text": "Jesus diz que daria água viva.",
+          "evidenceRef": "João 4:10",
+          "evidenceSpan": "ele te daria água viva"
+        },
+        {
+          "text": "A mulher diz que Jesus não tem como tirar a água e que o poço é profundo.",
+          "evidenceRef": "João 4:11",
+          "evidenceSpan": "você não tem como tirá-la, e o poço é profundo"
+        },
+        {
+          "text": "Quem beber desta água tornará a ter sede.",
+          "evidenceRef": "João 4:13",
+          "evidenceSpan": "Quem beber desta água tornará a ter sede novamente"
+        },
+        {
+          "text": "A água que Jesus der será nele uma fonte para a vida eterna.",
+          "evidenceRef": "João 4:14",
+          "evidenceSpan": "será nele uma fonte a jorrar para a vida eterna"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "água viva",
+          "gloss": "A água que Jesus oferece, distinta da água do poço de Jacó."
+        },
+        {
+          "term": "fonte",
+          "gloss": "O que essa água se torna em quem bebe, jorrando para a vida eterna."
+        },
+        {
+          "term": "sede",
+          "gloss": "A necessidade que a água do poço não resolve de uma vez."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus pede de beber à samaritana",
+          "evidenceRef": "João 4:7"
+        },
+        {
+          "label": "Ela estranha o pedido de um judeu",
+          "evidenceRef": "João 4:9"
+        },
+        {
+          "label": "A oferta dele vira fonte interna",
+          "evidenceRef": "João 4:14"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Jesus pede água à mulher porque os discípulos tinham ido comprar alimentos.",
+          "marker": "Porque",
+          "evidenceRef": "João 4:8"
+        },
+        {
+          "kind": "contraste",
+          "text": "A água do poço faz a sede voltar, mas a água que Jesus dá não.",
+          "marker": "Mas",
+          "evidenceRef": "João 4:14"
+        },
+        {
+          "kind": "resultado",
+          "text": "A água que Jesus dá se torna uma fonte que jorra para a vida eterna.",
+          "marker": null,
+          "evidenceRef": "João 4:14"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 55:1",
+          "bridge": "Oferta aos sedentos",
+          "text": "Venham, todos vocês que têm sede, venham às águas; e vocês que não têm dinheiro, venham, comprem e comam! Venham, comprem sem dinheiro e sem custo, vinho e leite."
+        },
+        {
+          "ref": "Jeremias 2:13",
+          "bridge": "Manancial de águas vivas",
+          "text": "Porque o meu povo cometeu dois males: abandonou a mim, que sou o manancial de águas vivas, e cavou cisternas, cisternas rotas, que não retêm as águas."
+        },
+        {
+          "ref": "João 7:38",
+          "bridge": "Rios no interior",
+          "text": "Quem crê em mim, como diz a Escritura, do seu interior brotarão rios de água viva."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus só queria água do poço, e a conversa permanece nisso.",
+          "why": "Ele passa do pedido ao dom de Deus e à água viva, que se torna fonte."
+        },
+        {
+          "text": "A água viva é apenas a água do poço de Jacó, tirada de um lugar fundo.",
+          "why": "Jesus separa esta água, que deixa sede, da água que ele dá, que acaba com a sede."
+        },
+        {
+          "text": "A mulher já entende a vida eterna e pede essa fonte com clareza.",
+          "why": "Ela pede para não precisar voltar ao poço; ainda pensa na viagem diária."
+        }
+      ],
+      "centralInsight": "Jesus oferece uma água que mata a sede de verdade e vira fonte de vida.",
+      "anchorQuestion": "O que a água que Jesus dá se torna em quem bebe?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 55:1",
+          "reason": "Oferta aos sedentos"
+        },
+        {
+          "reference": "Jeremias 2:13",
+          "reason": "Manancial de águas vivas"
+        },
+        {
+          "reference": "João 7:38",
+          "reason": "Rios no interior"
+        }
+      ]
+    },
+    "joc-05-levanta-te-e-anda": {
+      "slug": "joc-05-levanta-te-e-anda",
+      "passageRef": "João 5:5–9",
+      "passageText": "Estava ali um homem que estava enfermo havia trinta e oito anos. E Jesus, vendo-o deitado e sabendo que ele estava assim há muito tempo, perguntou-lhe: Você deseja ser curado? O enfermo respondeu: Senhor, não tenho ninguém que me coloque no tanque quando a água é agitada; pois, enquanto eu estou indo, outro desce antes de mim. Jesus lhe disse: Levanta-te, toma a tua cama e anda. Imediatamente, o homem se viu curado, levantou sua cama e começou a andar. E aquele dia era sábado.",
+      "passages": [
+        {
+          "ref": "João 5:5–9",
+          "text": "Estava ali um homem que estava enfermo havia trinta e oito anos. E Jesus, vendo-o deitado e sabendo que ele estava assim há muito tempo, perguntou-lhe: Você deseja ser curado? O enfermo respondeu: Senhor, não tenho ninguém que me coloque no tanque quando a água é agitada; pois, enquanto eu estou indo, outro desce antes de mim. Jesus lhe disse: Levanta-te, toma a tua cama e anda. Imediatamente, o homem se viu curado, levantou sua cama e começou a andar. E aquele dia era sábado."
+        },
+        {
+          "ref": "João 5:1–4",
+          "text": "Depois de tudo isso, havia uma festa dos judeus, e Jesus subiu para Jerusalém. Em Jerusalém, próximo à Porta das Ovelhas, existia um tanque, chamado em hebraico Betesda, que possuía cinco pavilhões. Existia ali uma grande multidão de enfermos, cegos, coxos e paralíticos, aguardando o movimento das águas. Porque um anjo descia em certo momento ao tanque e agitava as águas; e o primeiro que entrava no tanque, assim que as águas eram agitadas, ficava curado de qualquer enfermidade que tivesse."
+        }
+      ],
+      "context": "Jesus subiu a Jerusalém numa festa dos judeus. Perto da Porta das Ovelhas havia o tanque de Betesda, com cinco pavilhões. Enfermos esperavam o movimento das águas. Entre eles, um homem estava doente havia trinta e oito anos.",
+      "keyword": "Levanta-te",
+      "keywordGloss": "Ordem de Jesus que põe o homem de pé sem depender do tanque.",
+      "focusQuestion": "Quando a espera já dura anos, você ainda crê que uma palavra de Jesus basta?",
+      "reflectionPrompts": [
+        "A espera de anos",
+        "A pergunta de Jesus",
+        "A ordem que levanta"
+      ],
+      "facts": [
+        {
+          "text": "Havia uma festa dos judeus, e Jesus subiu para Jerusalém.",
+          "evidenceRef": "João 5:1",
+          "evidenceSpan": "havia uma festa dos judeus, e Jesus subiu para Jerusalém"
+        },
+        {
+          "text": "Havia um tanque chamado Betesda, com cinco pavilhões.",
+          "evidenceRef": "João 5:2",
+          "evidenceSpan": "chamado em hebraico Betesda, que possuía cinco pavilhões"
+        },
+        {
+          "text": "Um homem estava enfermo havia trinta e oito anos.",
+          "evidenceRef": "João 5:5",
+          "evidenceSpan": "estava enfermo havia trinta e oito anos"
+        },
+        {
+          "text": "Jesus perguntou ao homem se ele desejava ser curado.",
+          "evidenceRef": "João 5:6",
+          "evidenceSpan": "Você deseja ser curado?"
+        },
+        {
+          "text": "Jesus disse ao homem que se levantasse, tomasse a cama e andasse.",
+          "evidenceRef": "João 5:8",
+          "evidenceSpan": "Levanta-te, toma a tua cama e anda"
+        },
+        {
+          "text": "Imediatamente o homem se viu curado, levantou sua cama e começou a andar.",
+          "evidenceRef": "João 5:9",
+          "evidenceSpan": "o homem se viu curado, levantou sua cama e começou a andar"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Levanta-te",
+          "gloss": "Ordem de Jesus que põe o enfermo de pé, sem esperar a água do tanque."
+        },
+        {
+          "term": "Imediatamente",
+          "gloss": "A cura não espera: acontece na hora em que Jesus fala."
+        },
+        {
+          "term": "Betesda",
+          "gloss": "Tanque em Jerusalém onde os enfermos aguardavam o movimento das águas."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus chega ao tanque na festa",
+          "evidenceRef": "João 5:1–2"
+        },
+        {
+          "label": "O enfermo conta que não tem ajuda",
+          "evidenceRef": "João 5:7"
+        },
+        {
+          "label": "A ordem cura o homem na hora",
+          "evidenceRef": "João 5:8–9"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Jesus pergunta ao homem porque o vê deitado e sabe que a enfermidade já dura muito.",
+          "marker": "sabendo",
+          "evidenceRef": "João 5:6"
+        },
+        {
+          "kind": "contraste",
+          "text": "O homem espera alguém para o tanque; Jesus não usa a água e manda que ele ande.",
+          "marker": null,
+          "evidenceRef": "João 5:7–8"
+        },
+        {
+          "kind": "resultado",
+          "text": "A ordem de Jesus produz a cura na hora, e o homem começa a andar.",
+          "marker": "Imediatamente",
+          "evidenceRef": "João 5:9"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Marcos 2:11",
+          "bridge": "Mesma ordem de Jesus",
+          "text": "Eu te digo: Levanta-te, toma a tua cama e vai para a tua casa."
+        },
+        {
+          "ref": "Mateus 8:13",
+          "bridge": "Cura na hora da fala",
+          "text": "Então Jesus disse ao centurião: Vá e que aconteça conforme a sua fé. E, naquela mesma hora, o seu servo foi curado."
+        },
+        {
+          "ref": "Salmos 107:20",
+          "bridge": "Deus sara pela palavra",
+          "text": "Ele enviou a sua palavra e os sarou; livrou-os do que lhes era fatal."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Este homem sarou porque entrou no tanque antes dos outros.",
+          "why": "Ele diz que não tem quem o coloque na água. Quem o levanta é a ordem de Jesus, e o efeito é imediato."
+        },
+        {
+          "text": "Jesus só pergunta, e o anjo é quem realiza a cura.",
+          "why": "O anjo explica a espera da multidão. Com este homem, Jesus ordena que ele se levante, e a cura vem na hora."
+        },
+        {
+          "text": "Trinta e oito anos mostram que a ordem de Jesus demorou a agir.",
+          "why": "Esse tempo descreve a espera do homem. O relato diz que ele se viu curado imediatamente."
+        }
+      ],
+      "centralInsight": "Jesus faz por uma palavra o que o homem esperou a vida inteira.",
+      "anchorQuestion": "Que ordem Jesus deu ao homem enfermo em Betesda, e o que ocorreu em seguida?",
+      "relatedVerses": [
+        {
+          "reference": "Marcos 2:11",
+          "reason": "Mesma ordem de Jesus"
+        },
+        {
+          "reference": "Mateus 8:13",
+          "reason": "Cura na hora da fala"
+        },
+        {
+          "reference": "Salmos 107:20",
+          "reason": "Deus sara pela palavra"
+        }
+      ]
+    },
+    "joc-06-o-pao-da-vida": {
+      "slug": "joc-06-o-pao-da-vida",
+      "passageRef": "João 6:32–35",
+      "passageText": "Jesus respondeu: \"Em verdade, em verdade vos digo: não foi Moisés quem vos deu o pão do céu; mas é meu Pai quem vos dá o verdadeiro pão do céu.\" Porque o pão de Deus é aquele que desce do céu e dá vida ao mundo. Senhor, dá-nos sempre desse pão, disseram então a Ele. Jesus lhes declarou: \"Eu sou o pão da vida; quem se aproxima de mim nunca sentirá fome, e quem crê em mim jamais terá sede.\"",
+      "passages": [
+        {
+          "ref": "João 6:32–35",
+          "text": "Jesus respondeu: \"Em verdade, em verdade vos digo: não foi Moisés quem vos deu o pão do céu; mas é meu Pai quem vos dá o verdadeiro pão do céu.\" Porque o pão de Deus é aquele que desce do céu e dá vida ao mundo. Senhor, dá-nos sempre desse pão, disseram então a Ele. Jesus lhes declarou: \"Eu sou o pão da vida; quem se aproxima de mim nunca sentirá fome, e quem crê em mim jamais terá sede.\""
+        },
+        {
+          "ref": "João 6:36–40",
+          "text": "Mas eu já disse que, embora vocês me tenham visto, não creem. Todo aquele que o Pai me dá virá a mim; e o que vem a mim, de modo nenhum o lançarei fora. Porque eu desci do céu, não para fazer a minha própria vontade, mas sim a vontade daquele que me enviou. E a vontade daquele que me enviou é esta: que eu não perca nenhum dos que me deu; mas que eu o ressuscite no último dia. E esta é a vontade daquele que me enviou: que todo homem que vê o Filho e nele crê tenha a vida eterna, e eu o ressuscitarei no último dia."
+        }
+      ],
+      "context": "Depois dos pães multiplicados, a multidão procura Jesus e recorda o maná do deserto. O diálogo trata de quem dá o pão que vem do céu.",
+      "keyword": "pão da vida",
+      "keywordGloss": "É o nome com que Jesus se apresenta: alimento verdadeiro para quem se aproxima dele.",
+      "focusQuestion": "Quando a fome aperta, você busca Jesus ou apenas o que ele pode dar?",
+      "reflectionPrompts": [
+        "O pão que o Pai dá",
+        "Quem vem é acolhido",
+        "Vontade e vida eterna"
+      ],
+      "facts": [
+        {
+          "text": "Não foi Moisés quem deu o pão do céu.",
+          "evidenceRef": "João 6:32",
+          "evidenceSpan": "não foi Moisés quem vos deu o pão do céu"
+        },
+        {
+          "text": "O pão de Deus desce do céu e dá vida ao mundo.",
+          "evidenceRef": "João 6:33",
+          "evidenceSpan": "desce do céu e dá vida ao mundo"
+        },
+        {
+          "text": "A multidão pede esse pão para sempre.",
+          "evidenceRef": "João 6:34",
+          "evidenceSpan": "dá-nos sempre desse pão"
+        },
+        {
+          "text": "Jesus diz que é o pão da vida.",
+          "evidenceRef": "João 6:35",
+          "evidenceSpan": "Eu sou o pão da vida"
+        },
+        {
+          "text": "Quem vem a Jesus não é lançado fora.",
+          "evidenceRef": "João 6:37",
+          "evidenceSpan": "de modo nenhum o lançarei fora"
+        },
+        {
+          "text": "Quem vê o Filho e nele crê tem a vida eterna.",
+          "evidenceRef": "João 6:40",
+          "evidenceSpan": "nele crê tenha a vida eterna"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "pão da vida",
+          "gloss": "O nome com que Jesus se identifica, ligando sua pessoa ao alimento que sacia."
+        },
+        {
+          "term": "verdadeiro",
+          "gloss": "Qualifica o pão que o Pai dá, distinto do pão associado a Moisés."
+        },
+        {
+          "term": "vontade",
+          "gloss": "O plano de quem enviou Jesus, que ele veio cumprir no lugar da própria."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Pai aponta o pão verdadeiro",
+          "evidenceRef": "João 6:32"
+        },
+        {
+          "label": "Jesus se nomeia o pão da vida",
+          "evidenceRef": "João 6:35"
+        },
+        {
+          "label": "Crer no Filho traz vida eterna",
+          "evidenceRef": "João 6:40"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Jesus afasta Moisés da função de doador e apresenta o Pai como quem dá o pão verdadeiro.",
+          "marker": "mas",
+          "evidenceRef": "João 6:32"
+        },
+        {
+          "kind": "propósito",
+          "text": "A descida de Jesus tem um fim declarado: cumprir a vontade de quem o enviou.",
+          "marker": "para",
+          "evidenceRef": "João 6:38"
+        },
+        {
+          "kind": "resultado",
+          "text": "Ver o Filho e crer nele resulta em vida eterna, com ressurreição no último dia.",
+          "marker": null,
+          "evidenceRef": "João 6:40"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Êxodo 16:15",
+          "bridge": "Deus dá o pão",
+          "text": "E, ao vê-la, os filhos de Israel disseram uns aos outros: \"O que é isso?\" Pois não sabiam o que era. Moisés, então, lhes disse: \"Este é o pão que o Senhor vos dá para o vosso alimento.\""
+        },
+        {
+          "ref": "João 4:14",
+          "bridge": "Sede saciada por Jesus",
+          "text": "Mas aquele que beber da água que eu lhe der nunca mais terá sede; pelo contrário, a água que eu lhe der será nele uma fonte a jorrar para a vida eterna."
+        },
+        {
+          "ref": "João 5:24",
+          "bridge": "Crer traz vida eterna",
+          "text": "Em verdade, em verdade vos digo que quem ouve a minha palavra e crê naquele que me enviou tem a vida eterna, não entra em juízo, mas já passou da morte para a vida."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Moisés deu ao povo o verdadeiro pão do céu.",
+          "why": "Jesus afirma o contrário: não foi Moisés; o Pai é quem dá o verdadeiro pão."
+        },
+        {
+          "text": "Jesus lança fora quem vem a ele com fé ainda fraca.",
+          "why": "Ele diz que o que vem a ele, de modo nenhum o lançará fora."
+        },
+        {
+          "text": "Jesus desceu para fazer a própria vontade, à parte de quem o enviou.",
+          "why": "Ele desceu para fazer a vontade daquele que o enviou, não a sua própria."
+        }
+      ],
+      "centralInsight": "Jesus é o pão da vida: quem vem a ele nunca terá fome.",
+      "anchorQuestion": "O que Jesus promete a quem se aproxima dele?",
+      "relatedVerses": [
+        {
+          "reference": "Êxodo 16:15",
+          "reason": "Deus dá o pão"
+        },
+        {
+          "reference": "João 4:14",
+          "reason": "Sede saciada por Jesus"
+        },
+        {
+          "reference": "João 5:24",
+          "reason": "Crer traz vida eterna"
+        }
+      ]
+    },
+    "joc-07-rios-de-agua-viva": {
+      "slug": "joc-07-rios-de-agua-viva",
+      "passageRef": "João 7:37–39",
+      "passageText": "No último dia da festa, que era o grande dia, Jesus levantou-se e exclamou: \"Se alguém tem sede, venha a mim e beba.\" Quem crê em mim, como diz a Escritura, do seu interior brotarão rios de água viva. E ele se referia ao Espírito que os que nele cressem haveriam de receber, pois o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado.",
+      "passages": [
+        {
+          "ref": "João 7:37–39",
+          "text": "No último dia da festa, que era o grande dia, Jesus levantou-se e exclamou: \"Se alguém tem sede, venha a mim e beba.\" Quem crê em mim, como diz a Escritura, do seu interior brotarão rios de água viva. E ele se referia ao Espírito que os que nele cressem haveriam de receber, pois o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado."
+        },
+        {
+          "ref": "João 7:34–36",
+          "text": "Vocês me procurarão, mas não me encontrarão; e onde eu estou, vocês não podem ir. Os judeus, então, disseram uns aos outros: \"Para onde irá este que não podemos encontrar? Irá, porventura, para os dispersos entre os gregos, a fim de ensiná-los? Que palavra é esta que ele disse: Vocês me procurarão, mas não me encontrarão; e para onde eu vou, vocês não podem ir?"
+        },
+        {
+          "ref": "João 7:40–42",
+          "text": "Então, muitos do povo ouvindo essas palavras, davam testemunho: \"Verdadeiramente, este é o profeta.\" Outros diziam: \"Este é o Cristo; contudo\", outros, porém, perguntavam: \"Porventura, o Cristo vem da Galileia?\" Não diz a Escritura que o Cristo vem da descendência de Davi e da aldeia de Belém, donde era?"
+        }
+      ],
+      "context": "Jesus já avisou que o procurariam sem poder encontrá-lo. No grande dia da festa, ele se levanta diante do povo e fala de sede.",
+      "keyword": "água viva",
+      "keywordGloss": "Imagem de Jesus para o que brota do interior de quem crê nele.",
+      "focusQuestion": "Quando a sede aparece, você vai a Jesus ou procura outro caminho?",
+      "reflectionPrompts": [
+        "Sede no grande dia",
+        "Rios no interior",
+        "A espera do dom"
+      ],
+      "facts": [
+        {
+          "text": "Jesus diz que o procurarão e não o encontrarão.",
+          "evidenceRef": "João 7:34",
+          "evidenceSpan": "Vocês me procurarão, mas não me encontrarão"
+        },
+        {
+          "text": "No último dia da festa, Jesus se levanta e exclama.",
+          "evidenceRef": "João 7:37",
+          "evidenceSpan": "Jesus levantou-se e exclamou"
+        },
+        {
+          "text": "Jesus convida quem tem sede a vir a ele e beber.",
+          "evidenceRef": "João 7:37",
+          "evidenceSpan": "Se alguém tem sede, venha a mim e beba"
+        },
+        {
+          "text": "Do interior de quem crê brotarão rios de água viva.",
+          "evidenceRef": "João 7:38",
+          "evidenceSpan": "do seu interior brotarão rios de água viva"
+        },
+        {
+          "text": "O Espírito Santo ainda não tinha sido dado, porque Jesus não havia sido glorificado.",
+          "evidenceRef": "João 7:39",
+          "evidenceSpan": "o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado"
+        },
+        {
+          "text": "Alguns perguntam se o Cristo vem da Galileia.",
+          "evidenceRef": "João 7:41",
+          "evidenceSpan": "Porventura, o Cristo vem da Galileia?"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "sede",
+          "gloss": "A falta que Jesus nomeia no convite: quem a sente deve ir a ele e beber."
+        },
+        {
+          "term": "água viva",
+          "gloss": "A imagem dos rios que brotam do interior de quem crê em Jesus."
+        },
+        {
+          "term": "Espírito",
+          "gloss": "Aquele a quem Jesus se referia, e que os crentes haveriam de receber."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus chama quem tem sede",
+          "evidenceRef": "João 7:37"
+        },
+        {
+          "label": "Quem crê recebe a promessa dos rios",
+          "evidenceRef": "João 7:38"
+        },
+        {
+          "label": "O narrador nomeia o Espírito",
+          "evidenceRef": "João 7:39"
+        },
+        {
+          "label": "O povo divide opiniões sobre o Cristo",
+          "evidenceRef": "João 7:40–42"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Jesus chama quem tem sede para vir a ele e beber.",
+          "marker": "venha",
+          "evidenceRef": "João 7:37"
+        },
+        {
+          "kind": "causa",
+          "text": "O Espírito Santo ainda não tinha sido dado porque Jesus ainda não havia sido glorificado.",
+          "marker": "porque",
+          "evidenceRef": "João 7:39"
+        },
+        {
+          "kind": "contraste",
+          "text": "Uns afirmam que ele é o Cristo; outros, porém, perguntam se o Cristo vem da Galileia.",
+          "marker": "porém",
+          "evidenceRef": "João 7:41"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 55:1",
+          "bridge": "Convite a quem tem sede",
+          "text": "Venham, todos vocês que têm sede, venham às águas; e vocês que não têm dinheiro, venham, comprem e comam! Venham, comprem sem dinheiro e sem custo, vinho e leite."
+        },
+        {
+          "ref": "João 4:14",
+          "bridge": "Fonte que jorra nele",
+          "text": "Mas aquele que beber da água que eu lhe der nunca mais terá sede; pelo contrário, a água que eu lhe der será nele uma fonte a jorrar para a vida eterna."
+        },
+        {
+          "ref": "João 16:7",
+          "bridge": "Consolador após a ida",
+          "text": "Mas eu lhes digo a verdade: convém que eu vá; pois, se eu não for, o Consolador não virá para vocês; mas, se eu for, eu o enviarei."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Os rios de água viva são só uma imagem de alívio, sem relação com o Espírito.",
+          "why": "João 7:39 diz que Jesus se referia ao Espírito que os crentes haveriam de receber."
+        },
+        {
+          "text": "O Espírito Santo já tinha sido dado naquele dia da festa.",
+          "why": "O versículo diz que o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado."
+        },
+        {
+          "text": "A menção à Galileia é a conclusão do narrador de que Jesus não é o Cristo.",
+          "why": "Quem fala da Galileia é um grupo do povo, em forma de pergunta. O narrador não emite esse veredito."
+        }
+      ],
+      "centralInsight": "Do interior de quem crê fluem rios de água viva: o Espírito.",
+      "anchorQuestion": "A que Jesus se referia ao falar em rios de água viva?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 55:1",
+          "reason": "Convite a quem tem sede"
+        },
+        {
+          "reference": "João 4:14",
+          "reason": "Fonte que jorra nele"
+        },
+        {
+          "reference": "João 16:7",
+          "reason": "Consolador após a ida"
+        }
+      ]
+    },
+    "joc-08-a-verdade-liberta": {
+      "slug": "joc-08-a-verdade-liberta",
+      "passageRef": "João 8:31–36",
+      "passageText": "Jesus dizia, portanto, aos judeus que haviam crido nele: Se vós permanecerdes na minha palavra, verdadeiramente sereis meus discípulos; E conhecereis a verdade, e a verdade vos libertará. Responderam-lhe: Somos descendência de Abraão e jamais fomos escravos de alguém; como dizes tu: Sereis livres? Jesus respondeu: Em verdade, em verdade, eu vos digo que todo aquele que comete pecado é escravo do pecado. O servo não permanece na casa; ao contrário, o Filho permanece para sempre. Se, pois, o Filho vos libertar, de fato sereis livres.",
+      "passages": [
+        {
+          "ref": "João 8:31–36",
+          "text": "Jesus dizia, portanto, aos judeus que haviam crido nele: Se vós permanecerdes na minha palavra, verdadeiramente sereis meus discípulos; E conhecereis a verdade, e a verdade vos libertará. Responderam-lhe: Somos descendência de Abraão e jamais fomos escravos de alguém; como dizes tu: Sereis livres? Jesus respondeu: Em verdade, em verdade, eu vos digo que todo aquele que comete pecado é escravo do pecado. O servo não permanece na casa; ao contrário, o Filho permanece para sempre. Se, pois, o Filho vos libertar, de fato sereis livres."
+        }
+      ],
+      "context": "Jesus se dirige aos judeus que haviam crido nele. A frase seguinte é a resposta deles ao que acabaram de ouvir.",
+      "keyword": "verdade",
+      "keywordGloss": "O que Jesus diz que será conhecido, e que liberta.",
+      "focusQuestion": "Onde você ainda se apoia na origem, em vez de permanecer na palavra de Jesus?",
+      "reflectionPrompts": [
+        "Ficar na palavra",
+        "A resposta deles",
+        "Livre de fato"
+      ],
+      "facts": [
+        {
+          "text": "Jesus falava aos judeus que haviam crido nele.",
+          "evidenceRef": "João 8:31",
+          "evidenceSpan": "aos judeus que haviam crido nele"
+        },
+        {
+          "text": "Permanecer na palavra dele é ser discípulo de verdade.",
+          "evidenceRef": "João 8:31",
+          "evidenceSpan": "Se vós permanecerdes na minha palavra, verdadeiramente sereis meus discípulos"
+        },
+        {
+          "text": "A verdade liberta.",
+          "evidenceRef": "João 8:32",
+          "evidenceSpan": "a verdade vos libertará"
+        },
+        {
+          "text": "Eles dizem que são descendência de Abraão e que jamais foram escravos de alguém.",
+          "evidenceRef": "João 8:33",
+          "evidenceSpan": "Somos descendência de Abraão e jamais fomos escravos de alguém"
+        },
+        {
+          "text": "Todo aquele que comete pecado é escravo do pecado.",
+          "evidenceRef": "João 8:34",
+          "evidenceSpan": "todo aquele que comete pecado é escravo do pecado"
+        },
+        {
+          "text": "Se o Filho libertar, serão livres de fato.",
+          "evidenceRef": "João 8:36",
+          "evidenceSpan": "o Filho vos libertar, de fato sereis livres"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "verdade",
+          "gloss": "O que se conhece ao permanecer na palavra, e o que liberta."
+        },
+        {
+          "term": "permanece",
+          "gloss": "O que o Filho faz para sempre, ao contrário do servo, que não fica na casa."
+        },
+        {
+          "term": "Filho",
+          "gloss": "Aquele que liberta de fato e que permanece para sempre."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Chamado a permanecer na palavra",
+          "evidenceRef": "João 8:31"
+        },
+        {
+          "label": "A verdade que liberta",
+          "evidenceRef": "João 8:32"
+        },
+        {
+          "label": "A objeção da descendência",
+          "evidenceRef": "João 8:33"
+        },
+        {
+          "label": "O Filho liberta de fato",
+          "evidenceRef": "João 8:36"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Permanecer na palavra é a condição para ser discípulo de verdade.",
+          "marker": "Se",
+          "evidenceRef": "João 8:31"
+        },
+        {
+          "kind": "contraste",
+          "text": "O servo não permanece na casa; o Filho, ao contrário, permanece para sempre.",
+          "marker": "contrário",
+          "evidenceRef": "João 8:35"
+        },
+        {
+          "kind": "resultado",
+          "text": "Se o Filho libertar, o resultado é ser livre de fato.",
+          "marker": "pois",
+          "evidenceRef": "João 8:36"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 17:17",
+          "bridge": "A palavra é a verdade",
+          "text": "Santifica-os na tua verdade; a tua palavra é a verdade."
+        },
+        {
+          "ref": "Romanos 6:18",
+          "bridge": "Livres do pecado",
+          "text": "E, uma vez libertados do pecado, vocês se tornaram servos da justiça."
+        },
+        {
+          "ref": "Gálatas 5:1",
+          "bridge": "Cristo liberta da escravidão",
+          "text": "Permanecei, portanto, firmes na liberdade com que Cristo nos libertou e não vos sujeiteis novamente ao jugo da escravidão."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Ser descendência de Abraão já garante a liberdade de que Jesus fala.",
+          "why": "Eles dizem que jamais foram escravos, mas Jesus responde que quem comete pecado é escravo, e que a liberdade de fato vem do Filho."
+        },
+        {
+          "text": "A verdade liberta mesmo sem a pessoa permanecer na palavra de Jesus.",
+          "why": "A ordem do texto é permanecer na palavra, conhecer a verdade e, então, ser liberto por ela."
+        },
+        {
+          "text": "O servo e o Filho permanecem do mesmo modo na casa.",
+          "why": "O versículo opõe os dois: o servo não permanece; o Filho permanece para sempre."
+        }
+      ],
+      "centralInsight": "Quem permanece na palavra de Jesus conhece a verdade e fica livre de fato.",
+      "anchorQuestion": "Quem João 8:36 diz que liberta de fato?",
+      "relatedVerses": [
+        {
+          "reference": "João 17:17",
+          "reason": "A palavra é a verdade"
+        },
+        {
+          "reference": "Romanos 6:18",
+          "reason": "Livres do pecado"
+        },
+        {
+          "reference": "Gálatas 5:1",
+          "reason": "Cristo liberta da escravidão"
+        }
+      ]
+    },
+    "joc-09-o-cego-de-nascenca": {
+      "slug": "joc-09-o-cego-de-nascenca",
+      "passageRef": "João 9:2–7",
+      "passageText": "E os seus discípulos lhe perguntaram: \"Mestre, quem pecou, ele ou seus pais, para que nascesse cego?\" Jesus respondeu: \"Nem ele pecou, nem seus pais; mas isso ocorreu para que se manifestem nele as obras de Deus.\" É necessário que façamos as obras daquele que me enviou, enquanto é dia; a noite vem, quando ninguém pode trabalhar. Enquanto permaneço no mundo, sou a luz do mundo. E, ao dizer isso, cuspiu na terra, fez lodo com a saliva e aplicou-o aos olhos do cego. Vai, lava-te no tanque de Siloé (que significa \"Enviado\"). Ele foi, lavou-se e voltou a ver.",
+      "passages": [
+        {
+          "ref": "João 9:2–7",
+          "text": "E os seus discípulos lhe perguntaram: \"Mestre, quem pecou, ele ou seus pais, para que nascesse cego?\" Jesus respondeu: \"Nem ele pecou, nem seus pais; mas isso ocorreu para que se manifestem nele as obras de Deus.\" É necessário que façamos as obras daquele que me enviou, enquanto é dia; a noite vem, quando ninguém pode trabalhar. Enquanto permaneço no mundo, sou a luz do mundo. E, ao dizer isso, cuspiu na terra, fez lodo com a saliva e aplicou-o aos olhos do cego. Vai, lava-te no tanque de Siloé (que significa \"Enviado\"). Ele foi, lavou-se e voltou a ver."
+        },
+        {
+          "ref": "João 9:1",
+          "text": "E, ao passar, Jesus avistou um homem que era cego de nascença."
+        }
+      ],
+      "context": "No caminho, Jesus vê um homem cego desde o nascimento. Os discípulos perguntam se a culpa é dele ou dos pais. O que ele responde, e o que faz em seguida, muda o rumo da conversa.",
+      "keyword": "Luz do mundo",
+      "keywordGloss": "Nome que Jesus dá a si mesmo enquanto permanece no mundo.",
+      "focusQuestion": "Quando você encontra o sofrimento de alguém, qual é a sua primeira pergunta?",
+      "reflectionPrompts": [
+        "A pergunta pelo culpado",
+        "A resposta que vira o rumo",
+        "O homem que passa a ver"
+      ],
+      "facts": [
+        {
+          "text": "Jesus avistou um homem que era cego de nascença.",
+          "evidenceRef": "João 9:1",
+          "evidenceSpan": "Jesus avistou um homem que era cego de nascença"
+        },
+        {
+          "text": "Os discípulos perguntaram quem pecou, ele ou seus pais.",
+          "evidenceRef": "João 9:2",
+          "evidenceSpan": "quem pecou, ele ou seus pais"
+        },
+        {
+          "text": "Jesus disse que nem ele nem seus pais pecaram.",
+          "evidenceRef": "João 9:3",
+          "evidenceSpan": "Nem ele pecou, nem seus pais"
+        },
+        {
+          "text": "Jesus disse que isso ocorreu para que se manifestem nele as obras de Deus.",
+          "evidenceRef": "João 9:3",
+          "evidenceSpan": "para que se manifestem nele as obras de Deus"
+        },
+        {
+          "text": "Enquanto permanece no mundo, Jesus diz que é a luz do mundo.",
+          "evidenceRef": "João 9:5",
+          "evidenceSpan": "sou a luz do mundo"
+        },
+        {
+          "text": "O homem foi, lavou-se e voltou a ver.",
+          "evidenceRef": "João 9:7",
+          "evidenceSpan": "Ele foi, lavou-se e voltou a ver"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "nascença",
+          "gloss": "A cegueira vinha desde o nascimento, não de um acidente depois."
+        },
+        {
+          "term": "Siloé",
+          "gloss": "Tanque para onde Jesus envia o homem; o nome significa Enviado."
+        },
+        {
+          "term": "luz",
+          "gloss": "Jesus se nomeia assim enquanto permanece no mundo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Os discípulos perguntam quem pecou",
+          "evidenceRef": "João 9:2"
+        },
+        {
+          "label": "Jesus nega a culpa do homem e dos pais",
+          "evidenceRef": "João 9:3"
+        },
+        {
+          "label": "A cegueira fica a serviço da obra de Deus",
+          "evidenceRef": "João 9:3"
+        },
+        {
+          "label": "O homem obedece e passa a ver",
+          "evidenceRef": "João 9:7"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Os discípulos perguntam quem pecou; Jesus nega as duas culpas e vira a resposta.",
+          "marker": "mas",
+          "evidenceRef": "João 9:3"
+        },
+        {
+          "kind": "propósito",
+          "text": "A cegueira ocorreu para que se manifestem nele as obras de Deus, não como castigo.",
+          "marker": "para",
+          "evidenceRef": "João 9:3"
+        },
+        {
+          "kind": "sequência",
+          "text": "As obras cabem enquanto é dia; a noite vem depois, e então ninguém pode trabalhar.",
+          "marker": "enquanto",
+          "evidenceRef": "João 9:4"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Isaías 35:5",
+          "bridge": "Olhos dos cegos abertos",
+          "text": "Então, os olhos dos cegos se abrirão, e os ouvidos dos surdos se desimpedirão."
+        },
+        {
+          "ref": "João 8:12",
+          "bridge": "Jesus é a luz",
+          "text": "Jesus lhes falou novamente, dizendo: Eu sou a luz do mundo; quem me segue não andará nas trevas; antes, terá a luz da vida."
+        },
+        {
+          "ref": "João 12:35",
+          "bridge": "Andar enquanto há luz",
+          "text": "Disse-lhes Jesus: A luz ainda está convosco por pouco tempo; andai enquanto tendes a luz, para que as trevas não vos surpreendam. E quem anda nas trevas não sabe para onde vai."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A cegueira prova que o homem ou seus pais pecaram.",
+          "why": "Jesus diz que nem ele pecou, nem seus pais. O que se manifesta são as obras de Deus."
+        },
+        {
+          "text": "Jesus apenas explica a cegueira e não age sobre o homem.",
+          "why": "Depois da fala, ele faz lodo, põe nos olhos e manda lavar. O homem volta a ver."
+        },
+        {
+          "text": "A luz do mundo, nesse trecho, é o tanque de Siloé.",
+          "why": "Quem diz sou a luz do mundo é Jesus, enquanto permanece no mundo. Siloé é o tanque para onde o homem vai."
+        }
+      ],
+      "centralInsight": "Jesus é a luz do mundo, e a cegueira vira lugar para a obra de Deus.",
+      "anchorQuestion": "O que Jesus respondeu sobre quem pecou, e o que ele disse ser enquanto está no mundo?",
+      "relatedVerses": [
+        {
+          "reference": "Isaías 35:5",
+          "reason": "Olhos dos cegos abertos"
+        },
+        {
+          "reference": "João 8:12",
+          "reason": "Jesus é a luz"
+        },
+        {
+          "reference": "João 12:35",
+          "reason": "Andar enquanto há luz"
+        }
+      ]
+    },
+    "joc-10-o-bom-pastor": {
+      "slug": "joc-10-o-bom-pastor",
+      "passageRef": "João 10:11–16",
+      "passageText": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas. Mas o mercenário, que não é pastor e a quem as ovelhas não pertencem, vê o lobo se aproximar, abandona as ovelhas e foge; então, o lobo as arrebata e as dispersa. O mercenário foge, pois é mercenário e não se preocupa com as ovelhas. Eu sou o bom Pastor; conheço as minhas ovelhas, e elas me conhecem a mim, Assim como o Pai me conhece, eu conheço o Pai; e dou a minha vida pelas ovelhas. Ainda tenho outras ovelhas, que não pertencem a este aprisco; é necessário que eu as conduza, e elas ouvirão a minha voz; assim, haverá um só rebanho e um só Pastor.",
+      "passages": [
+        {
+          "ref": "João 10:11–16",
+          "text": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas. Mas o mercenário, que não é pastor e a quem as ovelhas não pertencem, vê o lobo se aproximar, abandona as ovelhas e foge; então, o lobo as arrebata e as dispersa. O mercenário foge, pois é mercenário e não se preocupa com as ovelhas. Eu sou o bom Pastor; conheço as minhas ovelhas, e elas me conhecem a mim, Assim como o Pai me conhece, eu conheço o Pai; e dou a minha vida pelas ovelhas. Ainda tenho outras ovelhas, que não pertencem a este aprisco; é necessário que eu as conduza, e elas ouvirão a minha voz; assim, haverá um só rebanho e um só Pastor."
+        },
+        {
+          "ref": "João 10:17–18",
+          "text": "Por isso o Pai me ama, porque eu dou a minha vida para a reassumir. Ninguém a tira de mim; pelo contrário, eu espontaneamente a dou de mim mesmo; tenho autoridade para a entregar e poder para reavê-la. Este mandamento recebi de meu Pai."
+        }
+      ],
+      "context": "Jesus vinha falando da porta das ovelhas. Neste trecho ele se compara a um pastor e descreve o que faz por elas, ao lado de quem está ali só por pagamento.",
+      "keyword": "bom Pastor",
+      "keywordGloss": "É o nome com que Jesus se apresenta: pastor que cuida de verdade, e não quem trabalha só por pagamento.",
+      "focusQuestion": "Quando cuidar de alguém custa caro, você permanece ou procura uma saída?",
+      "reflectionPrompts": [
+        "A vida pelas ovelhas",
+        "Quem foge no perigo",
+        "Um só rebanho"
+      ],
+      "facts": [
+        {
+          "text": "Jesus diz que é o bom Pastor.",
+          "evidenceRef": "João 10:11",
+          "evidenceSpan": "Eu sou o bom Pastor"
+        },
+        {
+          "text": "O bom Pastor entrega a vida pelas ovelhas.",
+          "evidenceRef": "João 10:11",
+          "evidenceSpan": "entrega a sua vida pelas ovelhas"
+        },
+        {
+          "text": "O mercenário abandona as ovelhas e foge.",
+          "evidenceRef": "João 10:12",
+          "evidenceSpan": "abandona as ovelhas e foge"
+        },
+        {
+          "text": "Jesus conhece as suas ovelhas, e elas o conhecem.",
+          "evidenceRef": "João 10:14",
+          "evidenceSpan": "conheço as minhas ovelhas, e elas me conhecem"
+        },
+        {
+          "text": "Jesus tem outras ovelhas fora deste aprisco.",
+          "evidenceRef": "João 10:16",
+          "evidenceSpan": "outras ovelhas, que não pertencem a este aprisco"
+        },
+        {
+          "text": "Ninguém tira a vida de Jesus; ele a dá espontaneamente.",
+          "evidenceRef": "João 10:18",
+          "evidenceSpan": "Ninguém a tira de mim; pelo contrário, eu espontaneamente a dou de mim mesmo"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "bom Pastor",
+          "gloss": "O nome com que Jesus se apresenta neste trecho, distinto de quem não é pastor."
+        },
+        {
+          "term": "mercenário",
+          "gloss": "Quem não é pastor, não tem as ovelhas como suas e foge quando o lobo chega."
+        },
+        {
+          "term": "espontaneamente",
+          "gloss": "Sem coação: Jesus entrega a vida por decisão própria, e ninguém a tira dele."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O Pastor se apresenta e entrega a vida",
+          "evidenceRef": "João 10:11"
+        },
+        {
+          "label": "O mercenário vê o perigo e sai",
+          "evidenceRef": "João 10:12"
+        },
+        {
+          "label": "As ovelhas ficam nas mãos do lobo",
+          "evidenceRef": "João 10:12"
+        },
+        {
+          "label": "A vida dada volta por autoridade",
+          "evidenceRef": "João 10:18"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "O bom Pastor entrega a vida; o mercenário, ao ver o lobo, abandona as ovelhas e foge.",
+          "marker": "Mas",
+          "evidenceRef": "João 10:12"
+        },
+        {
+          "kind": "causa",
+          "text": "O mercenário foge porque não se preocupa com as ovelhas.",
+          "marker": "pois",
+          "evidenceRef": "João 10:13"
+        },
+        {
+          "kind": "propósito",
+          "text": "Jesus dá a vida para a reassumir, e não para perdê-la de vez.",
+          "marker": "para",
+          "evidenceRef": "João 10:17"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 15:13",
+          "bridge": "Amor que entrega a vida",
+          "text": "Ninguém tem maior amor do que este: dar a própria vida pelos seus amigos."
+        },
+        {
+          "ref": "Hebreus 13:20",
+          "bridge": "Pastor trazido dentre os mortos",
+          "text": "Agora, o Deus da paz, que trouxe de volta dentre os mortos a nosso Senhor Jesus Cristo, o grande Pastor das ovelhas, pelo sangue da aliança eterna,"
+        },
+        {
+          "ref": "Ezequiel 34:23",
+          "bridge": "Um só pastor prometido",
+          "text": "Levantarei sobre elas um só pastor, e ele as apascentará; meu servo Davi é quem as apascentará; ele lhes servirá de pastor."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Alguém tira a vida de Jesus contra a vontade dele.",
+          "why": "Ele diz que ninguém a tira e que a dá espontaneamente, de si mesmo."
+        },
+        {
+          "text": "Jesus entrega a vida e não tem como retomá-la.",
+          "why": "Ele dá a vida para a reassumir e declara ter poder para reavê-la."
+        },
+        {
+          "text": "O Pai ama Jesus porque ele evita entregar a vida.",
+          "why": "O Pai o ama porque ele dá a vida para a reassumir, não porque recua."
+        }
+      ],
+      "centralInsight": "O bom pastor conhece as ovelhas e dá a vida por elas.",
+      "anchorQuestion": "O que o bom Pastor faz pelas ovelhas em João 10:11?",
+      "relatedVerses": [
+        {
+          "reference": "João 15:13",
+          "reason": "Amor que entrega a vida"
+        },
+        {
+          "reference": "Hebreus 13:20",
+          "reason": "Pastor trazido dentre os mortos"
+        },
+        {
+          "reference": "Ezequiel 34:23",
+          "reason": "Um só pastor prometido"
+        }
+      ]
+    },
+    "joc-11-eu-sou-a-ressurreicao": {
+      "slug": "joc-11-eu-sou-a-ressurreicao",
+      "passageRef": "João 11:21–26",
+      "passageText": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá. Jesus lhe declarou: Teu irmão irá ressurgir. Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia. Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso?",
+      "passages": [
+        {
+          "ref": "João 11:21–26",
+          "text": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá. Jesus lhe declarou: Teu irmão irá ressurgir. Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia. Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso?"
+        },
+        {
+          "ref": "João 11:27",
+          "text": "Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo."
+        }
+      ],
+      "context": "Lázaro, irmão de Marta, já morreu. Ela sai ao encontro de Jesus, lembra a ausência dele na hora da morte e ainda afirma que Deus atende o que ele pedir.",
+      "keyword": "ressurreição",
+      "keywordGloss": "Jesus aplica essa palavra a si mesmo, e não só a uma data futura.",
+      "focusQuestion": "Diante da morte de alguém querido, em quem você apoia a esperança?",
+      "reflectionPrompts": [
+        "A queixa de Marta",
+        "A vida em Jesus",
+        "A confissão dela"
+      ],
+      "facts": [
+        {
+          "text": "Marta diz que, se Jesus estivesse ali, o irmão dela não teria morrido.",
+          "evidenceRef": "João 11:21",
+          "evidenceSpan": "se estivesses aqui, meu irmão não teria morrido"
+        },
+        {
+          "text": "Marta afirma que Deus concederá o que Jesus pedir.",
+          "evidenceRef": "João 11:22",
+          "evidenceSpan": "tudo o que pedires a Deus, Deus te concederá"
+        },
+        {
+          "text": "Jesus declara que o irmão de Marta irá ressurgir.",
+          "evidenceRef": "João 11:23",
+          "evidenceSpan": "Teu irmão irá ressurgir"
+        },
+        {
+          "text": "Marta espera a ressurreição do irmão no último dia.",
+          "evidenceRef": "João 11:24",
+          "evidenceSpan": "há de ressurgir na ressurreição, no último dia"
+        },
+        {
+          "text": "Jesus diz que é a ressurreição e a vida.",
+          "evidenceRef": "João 11:25",
+          "evidenceSpan": "Eu sou a ressurreição e a vida"
+        },
+        {
+          "text": "Marta confessa que Jesus é o Cristo, o Filho de Deus.",
+          "evidenceRef": "João 11:27",
+          "evidenceSpan": "tu és o Cristo, o Filho de Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ressurreição",
+          "gloss": "Jesus aplica essa palavra a si mesmo, e não só a uma data futura."
+        },
+        {
+          "term": "vida",
+          "gloss": "Ele a coloca ao lado da ressurreição: quem crê nele vive, ainda que morra."
+        },
+        {
+          "term": "Cristo",
+          "gloss": "Título que Marta confessa ao dizer quem Jesus é."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Marta leva a queixa a Jesus",
+          "evidenceRef": "João 11:21"
+        },
+        {
+          "label": "Ela ainda confia no pedido dele",
+          "evidenceRef": "João 11:22"
+        },
+        {
+          "label": "Jesus se apresenta como a vida",
+          "evidenceRef": "João 11:25"
+        },
+        {
+          "label": "Marta confessa o Cristo",
+          "evidenceRef": "João 11:27"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Depois da queixa, Marta afirma que, mesmo agora, Deus concederá o que Jesus pedir.",
+          "marker": "Mas",
+          "evidenceRef": "João 11:22"
+        },
+        {
+          "kind": "contraste",
+          "text": "Marta põe a ressurreição no último dia; Jesus a identifica consigo mesmo.",
+          "marker": null,
+          "evidenceRef": "João 11:25"
+        },
+        {
+          "kind": "resultado",
+          "text": "Crer em Jesus resulta em vida, ainda que a pessoa morra.",
+          "marker": "viverá",
+          "evidenceRef": "João 11:25"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 5:21",
+          "bridge": "O Filho dá vida",
+          "text": "Porque assim como o Pai ressuscita e dá vida aos mortos, assim também o Filho dá vida a quem deseja."
+        },
+        {
+          "ref": "João 6:40",
+          "bridge": "Ressuscitar no último dia",
+          "text": "E esta é a vontade daquele que me enviou: que todo homem que vê o Filho e nele crê tenha a vida eterna, e eu o ressuscitarei no último dia."
+        },
+        {
+          "ref": "João 20:31",
+          "bridge": "Jesus é o Cristo",
+          "text": "Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus só confirma a data de Marta: a ressurreição fica no último dia.",
+          "why": "Ele não repete a data. Diz que ele mesmo é a ressurreição e a vida."
+        },
+        {
+          "text": "Quem crê em Jesus não chega a passar pela morte.",
+          "why": "Ele diz que, ainda que a pessoa morra, viverá. A morte acontece, e não é a última palavra."
+        },
+        {
+          "text": "Marta reconhece Jesus apenas como alguém a quem Deus atende.",
+          "why": "Ela vai além: confessa que ele é o Cristo, o Filho de Deus que havia de vir ao mundo."
+        }
+      ],
+      "centralInsight": "Jesus é a ressurreição e a vida: quem crê nele, ainda que morra, viverá.",
+      "anchorQuestion": "O que Jesus diz que ele é, ao falar com Marta sobre a morte do irmão?",
+      "relatedVerses": [
+        {
+          "reference": "João 5:21",
+          "reason": "O Filho dá vida"
+        },
+        {
+          "reference": "João 6:40",
+          "reason": "Ressuscitar no último dia"
+        },
+        {
+          "reference": "João 20:31",
+          "reason": "Jesus é o Cristo"
+        }
+      ]
+    },
+    "joc-12-o-grao-de-trigo": {
+      "slug": "joc-12-o-grao-de-trigo",
+      "passageRef": "João 12:23–28",
+      "passageText": "E Jesus lhes respondeu: Chegou a hora em que o Filho do Homem será glorificado. Em verdade, em verdade vos digo: se o grão de trigo, caindo na terra, não morrer, permanecerá só; mas, se morrer, produzirá abundantes frutos. Quem ama a sua vida a perderá; mas aquele que aborrece a sua vida neste mundo a preservará para a vida eterna. Se alguém me serve, siga-me, e, onde eu estou, ali estará também o meu servo. E, se alguém me servir, o Pai o honrará. Agora, a minha alma está angustiada; e que direi eu? Pai, salva-me desta hora; mas foi para isso que vim a esta hora. Pai, glorifica o teu nome. Então, veio uma voz do céu, que disse: Já o glorifiquei e ainda o glorificarei.",
+      "passages": [
+        {
+          "ref": "João 12:23–28",
+          "text": "E Jesus lhes respondeu: Chegou a hora em que o Filho do Homem será glorificado. Em verdade, em verdade vos digo: se o grão de trigo, caindo na terra, não morrer, permanecerá só; mas, se morrer, produzirá abundantes frutos. Quem ama a sua vida a perderá; mas aquele que aborrece a sua vida neste mundo a preservará para a vida eterna. Se alguém me serve, siga-me, e, onde eu estou, ali estará também o meu servo. E, se alguém me servir, o Pai o honrará. Agora, a minha alma está angustiada; e que direi eu? Pai, salva-me desta hora; mas foi para isso que vim a esta hora. Pai, glorifica o teu nome. Então, veio uma voz do céu, que disse: Já o glorifiquei e ainda o glorificarei."
+        }
+      ],
+      "context": "Alguns gregos queriam ver Jesus. Ele não marca um encontro e passa a falar da hora do Filho do Homem.",
+      "keyword": "grão de trigo",
+      "keywordGloss": "A imagem com que Jesus fala da hora que acaba de anunciar.",
+      "focusQuestion": "O que você ainda segura quando a hora pede para soltar?",
+      "reflectionPrompts": [
+        "A hora chegou",
+        "O grão na terra",
+        "A voz do céu"
+      ],
+      "facts": [
+        {
+          "text": "Jesus anuncia que chegou a hora em que o Filho do Homem será glorificado.",
+          "evidenceRef": "João 12:23",
+          "evidenceSpan": "Chegou a hora em que o Filho do Homem será glorificado"
+        },
+        {
+          "text": "Se o grão de trigo não morrer, permanecerá só.",
+          "evidenceRef": "João 12:24",
+          "evidenceSpan": "não morrer, permanecerá só"
+        },
+        {
+          "text": "Se o grão morrer, produzirá abundantes frutos.",
+          "evidenceRef": "João 12:24",
+          "evidenceSpan": "se morrer, produzirá abundantes frutos"
+        },
+        {
+          "text": "Quem ama a sua vida a perderá, mas quem a aborrece neste mundo a preservará para a vida eterna.",
+          "evidenceRef": "João 12:25",
+          "evidenceSpan": "Quem ama a sua vida a perderá; mas aquele que aborrece a sua vida neste mundo a preservará para a vida eterna"
+        },
+        {
+          "text": "Quem servir a Jesus será honrado pelo Pai.",
+          "evidenceRef": "João 12:26",
+          "evidenceSpan": "se alguém me servir, o Pai o honrará"
+        },
+        {
+          "text": "Uma voz do céu diz que já glorificou e ainda glorificará.",
+          "evidenceRef": "João 12:28",
+          "evidenceSpan": "Já o glorifiquei e ainda o glorificarei"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "grão de trigo",
+          "gloss": "A imagem do que cai na terra: sem morrer fica só, e morrendo produz fruto."
+        },
+        {
+          "term": "glorificado",
+          "gloss": "O que Jesus diz que acontecerá ao Filho do Homem quando a hora chegar."
+        },
+        {
+          "term": "vida eterna",
+          "gloss": "O horizonte para o qual fica preservada a vida de quem a aborrece neste mundo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A hora da glória é anunciada",
+          "evidenceRef": "João 12:23"
+        },
+        {
+          "label": "Sem morte o grão fica só",
+          "evidenceRef": "João 12:24"
+        },
+        {
+          "label": "A morte do grão produz fruto",
+          "evidenceRef": "João 12:24"
+        },
+        {
+          "label": "A voz do céu responde ao pedido",
+          "evidenceRef": "João 12:28"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Quem ama a sua vida a perde, mas quem a aborrece neste mundo a preserva para a vida eterna.",
+          "marker": "mas",
+          "evidenceRef": "João 12:25"
+        },
+        {
+          "kind": "propósito",
+          "text": "Jesus pede para ser salvo desta hora, mas afirma que veio para ela.",
+          "marker": "para",
+          "evidenceRef": "João 12:27"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois do pedido para glorificar o nome, uma voz do céu responde.",
+          "marker": "Então",
+          "evidenceRef": "João 12:28"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Marcos 8:35",
+          "bridge": "Perder para salvar a vida",
+          "text": "Pois quem quiser salvar a sua vida a perderá, mas quem perder a sua vida por minha causa e pelo evangelho, este a salvará."
+        },
+        {
+          "ref": "João 17:1",
+          "bridge": "A hora de ser glorificado",
+          "text": "Jesus disse essas coisas, levantou os olhos ao céu e disse: Pai, é chegada a hora; glorifica o teu Filho, para que o Filho te glorifique a ti."
+        },
+        {
+          "ref": "1 Coríntios 15:36",
+          "bridge": "Morrer para ter vida",
+          "text": "Insensato! O que semeias não poderá ter vida, se antes não morrer."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O fruto da hora chega sem morte, como glória que não passa pelo grão.",
+          "why": "Jesus diz que, se o grão não morrer, permanece só. O fruto vem se ele morrer."
+        },
+        {
+          "text": "Aborrecer a vida neste mundo é jogá-la fora, sem futuro pela frente.",
+          "why": "Quem aborrece a vida neste mundo a preservará para a vida eterna. Não é um fim sem amanhã."
+        },
+        {
+          "text": "O pedido para ser salvo desta hora mostra que Jesus desiste dela.",
+          "why": "Na mesma frase ele diz que veio para esta hora e, em seguida, pede que o Pai glorifique o nome."
+        }
+      ],
+      "centralInsight": "Como o grão que morre e dá muito fruto, a vida entregue é a que permanece.",
+      "anchorQuestion": "O que Jesus diz que acontece se o grão de trigo morrer?",
+      "relatedVerses": [
+        {
+          "reference": "Marcos 8:35",
+          "reason": "Perder para salvar a vida"
+        },
+        {
+          "reference": "João 17:1",
+          "reason": "A hora de ser glorificado"
+        },
+        {
+          "reference": "1 Coríntios 15:36",
+          "reason": "Morrer para ter vida"
+        }
+      ]
+    },
+    "joc-13-jesus-lava-os-pes": {
+      "slug": "joc-13-jesus-lava-os-pes",
+      "passageRef": "João 13:3–8",
+      "passageText": "Jesus, ciente de que o Pai entregara todas as coisas às suas mãos, e que viera de Deus, e voltava para Deus, Levantou-se da mesa, despindo-se de suas vestes e, pegando uma toalha, cingiu-se com ela. Depois, derramou água na bacia e começou a lavar os pés dos discípulos, enxugando-os com a toalha que estava à cintura. Aproximou-se, então, de Simão Pedro, e este lhe disse: Senhor, você vai me lavar os pés a mim? Jesus respondeu: \"O que estou fazendo você não entende agora; compreendê-lo-á mais tarde.\" Disse-lhe Pedro: Nunca vai me lavar os pés. Respondeu-lhe Jesus: Se eu não os lavar, você não terá parte comigo.",
+      "passages": [
+        {
+          "ref": "João 13:3–8",
+          "text": "Jesus, ciente de que o Pai entregara todas as coisas às suas mãos, e que viera de Deus, e voltava para Deus, Levantou-se da mesa, despindo-se de suas vestes e, pegando uma toalha, cingiu-se com ela. Depois, derramou água na bacia e começou a lavar os pés dos discípulos, enxugando-os com a toalha que estava à cintura. Aproximou-se, então, de Simão Pedro, e este lhe disse: Senhor, você vai me lavar os pés a mim? Jesus respondeu: \"O que estou fazendo você não entende agora; compreendê-lo-á mais tarde.\" Disse-lhe Pedro: Nunca vai me lavar os pés. Respondeu-lhe Jesus: Se eu não os lavar, você não terá parte comigo."
+        },
+        {
+          "ref": "João 13:9–11",
+          "text": "Senhor, não apenas os meus pés, mas também as minhas mãos e a minha cabeça. Disse-lhe Jesus: Aquele que já se banhou não precisa se lavar, exceto os pés; quanto ao mais, está todo limpo. Ora, vocês estão limpos, mas não todos. Porque sabia bem quem o trairia; por isso disse: Nem todos estão limpos."
+        },
+        {
+          "ref": "João 13:12–15",
+          "text": "Depois de lhes ter lavado os pés, tomou as vestes e, ao retornar à mesa, perguntou-lhes: Vocês compreendem o que lhes fiz? Vocês me chamam Mestre e Senhor e afirmam com razão, pois eu realmente sou. Se eu, que sou o Senhor e o Mestre, lavei os pés de vocês, também vocês devem lavar os pés uns dos outros. Porque eu vos dei o exemplo, para que, assim como eu vos fiz, façam vocês também."
+        }
+      ],
+      "context": "Jesus está à mesa com os discípulos e sabe que o Pai lhe entregou todas as coisas. Ele veio de Deus e volta para Deus. Pedro estranha quando Jesus se aproxima.",
+      "keyword": "exemplo",
+      "keywordGloss": "É o gesto que Jesus entrega aos discípulos para que eles façam o mesmo.",
+      "focusQuestion": "Onde você ainda espera ser servido, quando cabe a você se abaixar e servir?",
+      "reflectionPrompts": [
+        "Ciente de quem é",
+        "A água na bacia",
+        "Fazer como ele fez"
+      ],
+      "facts": [
+        {
+          "text": "O Pai entregara todas as coisas às mãos de Jesus.",
+          "evidenceRef": "João 13:3",
+          "evidenceSpan": "o Pai entregara todas as coisas às suas mãos"
+        },
+        {
+          "text": "Jesus aproximou-se de Simão Pedro.",
+          "evidenceRef": "João 13:6",
+          "evidenceSpan": "Aproximou-se, então, de Simão Pedro"
+        },
+        {
+          "text": "Jesus começou a lavar os pés dos discípulos.",
+          "evidenceRef": "João 13:5",
+          "evidenceSpan": "começou a lavar os pés dos discípulos"
+        },
+        {
+          "text": "Jesus diz que, se não lavar Pedro, ele não terá parte consigo.",
+          "evidenceRef": "João 13:8",
+          "evidenceSpan": "Se eu não os lavar, você não terá parte comigo"
+        },
+        {
+          "text": "Jesus disse que nem todos estão limpos porque sabia quem o trairia.",
+          "evidenceRef": "João 13:11",
+          "evidenceSpan": "Porque sabia bem quem o trairia; por isso disse: Nem todos estão limpos."
+        },
+        {
+          "text": "Jesus deu o exemplo aos discípulos.",
+          "evidenceRef": "João 13:15",
+          "evidenceSpan": "eu vos dei o exemplo"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "toalha",
+          "gloss": "Pano com que Jesus se cinge e enxuga os pés dos discípulos."
+        },
+        {
+          "term": "Mestre",
+          "gloss": "Título que os discípulos dão a Jesus e que ele confirma ao servir."
+        },
+        {
+          "term": "exemplo",
+          "gloss": "O gesto que Jesus entrega para que os discípulos façam o mesmo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus se levanta e deixa a mesa",
+          "evidenceRef": "João 13:4"
+        },
+        {
+          "label": "Ele se cinge com uma toalha",
+          "evidenceRef": "João 13:4"
+        },
+        {
+          "label": "Passa a lavar e enxugar os pés",
+          "evidenceRef": "João 13:5"
+        },
+        {
+          "label": "O gesto vira exemplo a repetir",
+          "evidenceRef": "João 13:15"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Jesus deu o exemplo para que os discípulos façam como ele fez.",
+          "marker": "para",
+          "evidenceRef": "João 13:15"
+        },
+        {
+          "kind": "causa",
+          "text": "Jesus diz que nem todos estão limpos porque sabia quem o trairia.",
+          "marker": "Porque",
+          "evidenceRef": "João 13:11"
+        },
+        {
+          "kind": "contraste",
+          "text": "Jesus afirma que os discípulos estão limpos, mas logo diz que não são todos.",
+          "marker": "mas",
+          "evidenceRef": "João 13:10"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "Marcos 10:45",
+          "bridge": "Jesus veio para servir",
+          "text": "O Filho do Homem não veio para ser servido, mas para servir e dar a sua vida em resgate por muitos."
+        },
+        {
+          "ref": "Lucas 22:27",
+          "bridge": "Serve no meio do grupo",
+          "text": "Pois qual é o maior: quem está à mesa ou quem serve? Não é quem está à mesa? Entretanto, no meio de vós, eu sou como aquele que serve."
+        },
+        {
+          "ref": "1 Pedro 2:21",
+          "bridge": "Cristo deixou o exemplo",
+          "text": "Porque para isso vocês foram chamados; pois também Cristo sofreu em nosso lugar, deixando-nos um exemplo, para que sigamos os seus passos."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus lava os pés porque não sabia que viera de Deus e voltava para Deus.",
+          "why": "O texto abre dizendo que ele estava ciente disso antes de se levantar da mesa."
+        },
+        {
+          "text": "Os discípulos erram ao chamar Jesus de Mestre e Senhor.",
+          "why": "Jesus diz que eles afirmam com razão, porque ele realmente é Mestre e Senhor."
+        },
+        {
+          "text": "O exemplo dispensa os discípulos de lavar os pés uns dos outros.",
+          "why": "Jesus diz que eles também devem lavar os pés uns dos outros e fazer como ele fez."
+        }
+      ],
+      "centralInsight": "O Mestre lava os pés dos discípulos e deixa o exemplo do serviço.",
+      "anchorQuestion": "O que Jesus pede que os discípulos façam depois de terem os pés lavados?",
+      "relatedVerses": [
+        {
+          "reference": "Marcos 10:45",
+          "reason": "Jesus veio para servir"
+        },
+        {
+          "reference": "Lucas 22:27",
+          "reason": "Serve no meio do grupo"
+        },
+        {
+          "reference": "1 Pedro 2:21",
+          "reason": "Cristo deixou o exemplo"
+        }
+      ]
+    },
+    "joc-14-nao-os-deixarei-orfaos": {
+      "slug": "joc-14-nao-os-deixarei-orfaos",
+      "passageRef": "João 14:15–20",
+      "passageText": "Se vós me amais, guardareis os meus mandamentos. E eu pedirei ao Pai, e Ele vos dará outro Consolador, para que esteja convosco para sempre. O Espírito da verdade, que o mundo não pode receber, porque não o vê, nem o conhece; mas vós o conheceis, pois ele habita convosco e estará em vós. Não os deixarei órfãos, voltarei para vocês. Ainda por pouco, e o mundo não me verá mais; mas vós, porém, me vereis; porque eu vivo, vocês também viverão. Naquele dia, vocês saberão que eu estou em meu Pai, vocês em mim, e eu em vocês.",
+      "passages": [
+        {
+          "ref": "João 14:15–20",
+          "text": "Se vós me amais, guardareis os meus mandamentos. E eu pedirei ao Pai, e Ele vos dará outro Consolador, para que esteja convosco para sempre. O Espírito da verdade, que o mundo não pode receber, porque não o vê, nem o conhece; mas vós o conheceis, pois ele habita convosco e estará em vós. Não os deixarei órfãos, voltarei para vocês. Ainda por pouco, e o mundo não me verá mais; mas vós, porém, me vereis; porque eu vivo, vocês também viverão. Naquele dia, vocês saberão que eu estou em meu Pai, vocês em mim, e eu em vocês."
+        },
+        {
+          "ref": "João 14:21",
+          "text": "Aquele que tem os meus mandamentos e os guarda, esse é o que me ama; e aquele que me ama será amado por meu Pai, e eu também o amarei e me manifestarei a ele."
+        }
+      ],
+      "context": "Jesus está com os discípulos na noite da despedida. Ele já disse que vai para o Pai, e estas palavras são para quem fica.",
+      "keyword": "Consolador",
+      "keywordGloss": "Aquele que Jesus pede ao Pai para estar com os discípulos para sempre.",
+      "focusQuestion": "O que o seu amor a Jesus tem guardado na prática?",
+      "reflectionPrompts": [
+        "O amor que guarda",
+        "O Consolador pedido",
+        "A promessa de voltar"
+      ],
+      "facts": [
+        {
+          "text": "Quem ama Jesus guardará os mandamentos dele.",
+          "evidenceRef": "João 14:15",
+          "evidenceSpan": "Se vós me amais, guardareis os meus mandamentos"
+        },
+        {
+          "text": "Jesus pedirá ao Pai, e o Pai dará outro Consolador.",
+          "evidenceRef": "João 14:16",
+          "evidenceSpan": "eu pedirei ao Pai, e Ele vos dará outro Consolador"
+        },
+        {
+          "text": "O mundo não pode receber o Espírito da verdade.",
+          "evidenceRef": "João 14:17",
+          "evidenceSpan": "O Espírito da verdade, que o mundo não pode receber"
+        },
+        {
+          "text": "Os discípulos conhecem o Espírito, pois ele habita com eles.",
+          "evidenceRef": "João 14:17",
+          "evidenceSpan": "vós o conheceis, pois ele habita convosco"
+        },
+        {
+          "text": "Jesus diz que não deixará os discípulos órfãos e que voltará.",
+          "evidenceRef": "João 14:18",
+          "evidenceSpan": "Não os deixarei órfãos, voltarei para vocês"
+        },
+        {
+          "text": "Quem tem os mandamentos de Jesus e os guarda é quem o ama.",
+          "evidenceRef": "João 14:21",
+          "evidenceSpan": "Aquele que tem os meus mandamentos e os guarda, esse é o que me ama"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Consolador",
+          "gloss": "Aquele que o Pai dará, a pedido de Jesus, para estar com os discípulos para sempre."
+        },
+        {
+          "term": "órfãos",
+          "gloss": "A condição que Jesus recusa para os discípulos na despedida."
+        },
+        {
+          "term": "mandamentos",
+          "gloss": "O que quem ama Jesus guarda, segundo as palavras dele."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus pede o Consolador ao Pai",
+          "evidenceRef": "João 14:16"
+        },
+        {
+          "label": "O dom permanece para sempre",
+          "evidenceRef": "João 14:16"
+        },
+        {
+          "label": "Os discípulos conhecem o Espírito",
+          "evidenceRef": "João 14:17"
+        },
+        {
+          "label": "Jesus não os deixa órfãos",
+          "evidenceRef": "João 14:18"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Jesus pede ao Pai outro Consolador para que ele esteja com os discípulos para sempre.",
+          "marker": "para",
+          "evidenceRef": "João 14:16"
+        },
+        {
+          "kind": "contraste",
+          "text": "O mundo não conhece o Espírito, mas os discípulos o conhecem.",
+          "marker": "mas",
+          "evidenceRef": "João 14:17"
+        },
+        {
+          "kind": "causa",
+          "text": "Os discípulos viverão porque Jesus vive.",
+          "marker": "porque",
+          "evidenceRef": "João 14:19"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 15:10",
+          "bridge": "Guardar é permanecer no amor",
+          "text": "Se vocês guardarem os meus mandamentos, permanecerão no meu amor; assim como eu também tenho guardado os mandamentos de meu Pai e permaneço no seu amor."
+        },
+        {
+          "ref": "João 15:26",
+          "bridge": "Testemunho sobre Jesus",
+          "text": "Quando, porém, vier o Consolador, que eu vos enviarei da parte do Pai, o Espírito da verdade, que dele procede, esse dará testemunho de mim;"
+        },
+        {
+          "ref": "Gálatas 4:6",
+          "bridge": "Filhos pelo Espírito enviado",
+          "text": "E, por serem filhos, Deus enviou ao nosso coração o Espírito de seu Filho, que clama: Aba, Pai!"
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O mundo já conhece o Espírito da verdade; a única barreira é que ainda não o vê.",
+          "why": "O versículo nega as duas coisas juntas: o mundo não o vê, nem o conhece."
+        },
+        {
+          "text": "O outro Consolador toma o lugar de Jesus, e por isso Jesus não volta aos discípulos.",
+          "why": "No mesmo discurso, Jesus diz que voltará para eles. O Consolador não cancela essa palavra."
+        },
+        {
+          "text": "Não ficar órfão significa que Jesus nunca se ausenta dos discípulos.",
+          "why": "Ele diz que voltará, e voltar supõe uma partida. A promessa é não deixá-los órfãos, não apagar a saída."
+        }
+      ],
+      "centralInsight": "Quem ama Jesus guarda a palavra dele e não fica órfão: o Espírito vem.",
+      "anchorQuestion": "O que Jesus diz que pedirá ao Pai para os discípulos?",
+      "relatedVerses": [
+        {
+          "reference": "João 15:10",
+          "reason": "Guardar é permanecer no amor"
+        },
+        {
+          "reference": "João 15:26",
+          "reason": "Testemunho sobre Jesus"
+        },
+        {
+          "reference": "Gálatas 4:6",
+          "reason": "Filhos pelo Espírito enviado"
+        }
+      ]
+    },
+    "joc-15-voces-sao-meus-amigos": {
+      "slug": "joc-15-voces-sao-meus-amigos",
+      "passageRef": "João 15:12–17",
+      "passageText": "O meu mandamento é este: que vocês se amem mutuamente, assim como eu os amei. Ninguém tem maior amor do que este: dar a própria vida pelos seus amigos. Vocês são meus amigos, se fizerem o que eu mando. Já não os chamo de servos, porque o servo não sabe o que faz o seu senhor; mas eu os chamei de amigos, porque tudo o que ouvi do meu Pai eu lhes tornei conhecido. Não fostes vós que me escolhestes, mas eu vos escolhi e designei-vos para que vades e deis fruto, e que o vosso fruto permaneça; para que tudo o que pedirdes ao Pai em meu nome, ele vo-lo conceda. Isso eu vos ordeno: que vos ameis uns aos outros.",
+      "passages": [
+        {
+          "ref": "João 15:12–17",
+          "text": "O meu mandamento é este: que vocês se amem mutuamente, assim como eu os amei. Ninguém tem maior amor do que este: dar a própria vida pelos seus amigos. Vocês são meus amigos, se fizerem o que eu mando. Já não os chamo de servos, porque o servo não sabe o que faz o seu senhor; mas eu os chamei de amigos, porque tudo o que ouvi do meu Pai eu lhes tornei conhecido. Não fostes vós que me escolhestes, mas eu vos escolhi e designei-vos para que vades e deis fruto, e que o vosso fruto permaneça; para que tudo o que pedirdes ao Pai em meu nome, ele vo-lo conceda. Isso eu vos ordeno: que vos ameis uns aos outros."
+        }
+      ],
+      "context": "Jesus está com os discípulos na noite da despedida. Ele já pediu que permanecessem nele. Agora deixa uma ordem e explica o lugar deles junto de si.",
+      "keyword": "amigos",
+      "keywordGloss": "É o nome que Jesus dá a quem faz o que ele manda e a quem ele revela o que ouviu do Pai.",
+      "focusQuestion": "O que esse amor muda na forma como você trata quem caminha com você?",
+      "reflectionPrompts": [
+        "O amor que dá a vida",
+        "Servos e amigos",
+        "A escolha e o envio"
+      ],
+      "facts": [
+        {
+          "text": "O mandamento é que se amem mutuamente, como Jesus os amou.",
+          "evidenceRef": "João 15:12",
+          "evidenceSpan": "que vocês se amem mutuamente, assim como eu os amei"
+        },
+        {
+          "text": "Ninguém tem maior amor do que dar a própria vida pelos amigos.",
+          "evidenceRef": "João 15:13",
+          "evidenceSpan": "dar a própria vida pelos seus amigos"
+        },
+        {
+          "text": "Eles são amigos de Jesus se fizerem o que ele manda.",
+          "evidenceRef": "João 15:14",
+          "evidenceSpan": "Vocês são meus amigos, se fizerem o que eu mando"
+        },
+        {
+          "text": "Jesus já não os chama de servos.",
+          "evidenceRef": "João 15:15",
+          "evidenceSpan": "Já não os chamo de servos"
+        },
+        {
+          "text": "Não foram eles que escolheram Jesus; foi ele quem os escolheu.",
+          "evidenceRef": "João 15:16",
+          "evidenceSpan": "Não fostes vós que me escolhestes, mas eu vos escolhi"
+        },
+        {
+          "text": "Jesus ordena que se amem uns aos outros.",
+          "evidenceRef": "João 15:17",
+          "evidenceSpan": "que vos ameis uns aos outros"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "amigos",
+          "gloss": "Nome que Jesus dá a quem faz o que ele manda e a quem ele revela o que ouviu do Pai."
+        },
+        {
+          "term": "mandamento",
+          "gloss": "A ordem de Jesus para que os discípulos se amem como ele os amou."
+        },
+        {
+          "term": "fruto",
+          "gloss": "O que os escolhidos devem produzir, e que deve permanecer."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O mandamento de amar até dar a vida",
+          "evidenceRef": "João 15:12–13"
+        },
+        {
+          "label": "Amigo é quem faz o que ele manda",
+          "evidenceRef": "João 15:14"
+        },
+        {
+          "label": "Do servo que não sabe ao amigo que conhece",
+          "evidenceRef": "João 15:15"
+        },
+        {
+          "label": "Escolhidos para a missão e para o amor",
+          "evidenceRef": "João 15:16–17"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Jesus não os chama mais de servos; a frase vira, e ele os chama de amigos.",
+          "marker": "mas",
+          "evidenceRef": "João 15:15"
+        },
+        {
+          "kind": "causa",
+          "text": "Ele os chama de amigos porque lhes tornou conhecido tudo o que ouviu do Pai.",
+          "marker": "porque",
+          "evidenceRef": "João 15:15"
+        },
+        {
+          "kind": "propósito",
+          "text": "Ele os escolheu e designou para que vão, deem fruto e peçam ao Pai em nome dele.",
+          "marker": "para",
+          "evidenceRef": "João 15:16"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 13:34",
+          "bridge": "Amar como Jesus amou",
+          "text": "Um novo mandamento eu vos dou: que vos ameis uns aos outros; assim como eu vos amei, que também vós ameis uns aos outros."
+        },
+        {
+          "ref": "1 João 3:16",
+          "bridge": "Dar a vida por amor",
+          "text": "Conhecemos o amor, pois Cristo deu a Sua vida por nós; assim, devemos também dar nossas vidas pelos irmãos."
+        },
+        {
+          "ref": "João 14:15",
+          "bridge": "Amor guarda os mandamentos",
+          "text": "Se vós me amais, guardareis os meus mandamentos."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Ser amigo de Jesus dispensa fazer o que ele manda.",
+          "why": "O texto condiciona a amizade: vocês são meus amigos, se fizerem o que eu mando."
+        },
+        {
+          "text": "Jesus chama os discípulos de servos e de amigos ao mesmo tempo.",
+          "why": "Ele diz que já não os chama de servos, e sim de amigos, porque lhes tornou conhecido o que ouviu do Pai."
+        },
+        {
+          "text": "O amigo continua sem saber o que vem do Pai, como o servo.",
+          "why": "O servo é quem não sabe; Jesus chama de amigos justamente porque lhes tornou conhecido o que ouviu do Pai."
+        }
+      ],
+      "centralInsight": "Jesus chama de amigos os que ele escolheu e manda amar como ele amou.",
+      "anchorQuestion": "Segundo João 15:14, o que acompanha ser amigo de Jesus?",
+      "relatedVerses": [
+        {
+          "reference": "João 13:34",
+          "reason": "Amar como Jesus amou"
+        },
+        {
+          "reference": "1 João 3:16",
+          "reason": "Dar a vida por amor"
+        },
+        {
+          "reference": "João 14:15",
+          "reason": "Amor guarda os mandamentos"
+        }
+      ]
+    },
+    "joc-16-a-tristeza-vira-alegria": {
+      "slug": "joc-16-a-tristeza-vira-alegria",
+      "passageRef": "João 16:20–24",
+      "passageText": "Na verdade, eu vos digo que chorareis e lamentareis, mas o mundo se alegrará; vós ficareis tristes, porém a vossa tristeza se converterá em alegria. A mulher, quando está para dar à luz, tem tristeza, pois chegou a sua hora; mas, após ter dado à luz o menino, já não se lembra da aflição, pelo prazer de ter trazido um homem ao mundo. Assim também vós agora, de fato, tendes tristeza; mas em breve vos verei novamente, e o vosso coração se alegrará, e a vossa alegria ninguém poderá tirar. Naquele dia, vocês não me perguntarão nada. Em verdade, em verdade, eu lhes digo que se pedirem algo ao meu Pai em meu nome, Ele o concederá a vocês. Até agora vocês não pediram nada em meu nome; peçam e receberão para que a alegria de vocês seja cheia.",
+      "passages": [
+        {
+          "ref": "João 16:20–24",
+          "text": "Na verdade, eu vos digo que chorareis e lamentareis, mas o mundo se alegrará; vós ficareis tristes, porém a vossa tristeza se converterá em alegria. A mulher, quando está para dar à luz, tem tristeza, pois chegou a sua hora; mas, após ter dado à luz o menino, já não se lembra da aflição, pelo prazer de ter trazido um homem ao mundo. Assim também vós agora, de fato, tendes tristeza; mas em breve vos verei novamente, e o vosso coração se alegrará, e a vossa alegria ninguém poderá tirar. Naquele dia, vocês não me perguntarão nada. Em verdade, em verdade, eu lhes digo que se pedirem algo ao meu Pai em meu nome, Ele o concederá a vocês. Até agora vocês não pediram nada em meu nome; peçam e receberão para que a alegria de vocês seja cheia."
+        },
+        {
+          "ref": "João 16:17–19",
+          "text": "Então, alguns dos seus discípulos disseram uns aos outros: O que significa isto que ele nos diz: Um pouco, e não mais me verão; e outra vez, um pouco, e me verão; e: por que vou para o Pai? Diziam, então: O que significa isso: Um pouco? Não entendemos o que ele quer dizer. Jesus, percebendo que desejavam interrogá-lo, perguntou-lhes: \"Vocês estão indagando entre si a respeito do que eu disse: ‘Um pouco, e não me vereis, e outra vez um pouco, e me vereis?’\""
+        },
+        {
+          "ref": "João 16:25–27",
+          "text": "Disse-vos estas coisas por meio de figuras; mas chega a hora em que não falarei mais por figuras, mas falarei claramente a respeito do Pai. Naquele dia, pedireis em meu nome; e não vos afirmo que eu rogarei ao Pai por vós. Pois o próprio Pai vos ama, visto que vós me amastes e crestes que eu saí da parte de Deus."
+        }
+      ],
+      "context": "Na noite da despedida, Jesus falou de um pouco em que os discípulos não o veriam e de ir para o Pai. Eles repetem a frase entre si e não entendem. Ele percebe a dúvida e passa a responder.",
+      "keyword": "alegria",
+      "keywordGloss": "É o que nasce da tristeza dos discípulos e que ninguém poderá tirar.",
+      "focusQuestion": "O que essa promessa muda no seu olhar quando a tristeza parece sem saída?",
+      "reflectionPrompts": [
+        "O choro e o mundo",
+        "A dor que passa",
+        "A alegria que fica"
+      ],
+      "facts": [
+        {
+          "text": "Os discípulos dizem que não entendem o que Jesus quer dizer.",
+          "evidenceRef": "João 16:18",
+          "evidenceSpan": "Não entendemos o que ele quer dizer."
+        },
+        {
+          "text": "Eles chorarão e lamentarão, mas o mundo se alegrará.",
+          "evidenceRef": "João 16:20",
+          "evidenceSpan": "chorareis e lamentareis, mas o mundo se alegrará"
+        },
+        {
+          "text": "A tristeza deles se converterá em alegria.",
+          "evidenceRef": "João 16:20",
+          "evidenceSpan": "a vossa tristeza se converterá em alegria"
+        },
+        {
+          "text": "Depois do parto, a mulher já não se lembra da aflição.",
+          "evidenceRef": "João 16:21",
+          "evidenceSpan": "já não se lembra da aflição"
+        },
+        {
+          "text": "Ninguém poderá tirar a alegria dos discípulos.",
+          "evidenceRef": "João 16:22",
+          "evidenceSpan": "a vossa alegria ninguém poderá tirar"
+        },
+        {
+          "text": "Até agora eles não pediram nada em nome de Jesus, e devem pedir para que a alegria seja cheia.",
+          "evidenceRef": "João 16:24",
+          "evidenceSpan": "Até agora vocês não pediram nada em meu nome; peçam e receberão para que a alegria de vocês seja cheia."
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "alegria",
+          "gloss": "O que nasce da tristeza dos discípulos e que ninguém poderá tirar."
+        },
+        {
+          "term": "tristeza",
+          "gloss": "O que os discípulos sentem agora e o que a mulher sente na hora do parto."
+        },
+        {
+          "term": "nome",
+          "gloss": "É em nome de Jesus que eles passam a pedir ao Pai, para a alegria ficar cheia."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A dúvida sobre o sentido do pouco",
+          "evidenceRef": "João 16:18"
+        },
+        {
+          "label": "O choro deles contrasta com a alegria do mundo",
+          "evidenceRef": "João 16:20"
+        },
+        {
+          "label": "A tristeza anunciada se converte em alegria",
+          "evidenceRef": "João 16:20"
+        },
+        {
+          "label": "O parto mostra a aflição que passa",
+          "evidenceRef": "João 16:21"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Eles choram e lamentam, mas o mundo se alegrará.",
+          "marker": "mas",
+          "evidenceRef": "João 16:20"
+        },
+        {
+          "kind": "contraste",
+          "text": "Eles ficarão tristes, porém essa tristeza se converterá em alegria.",
+          "marker": "porém",
+          "evidenceRef": "João 16:20"
+        },
+        {
+          "kind": "contraste",
+          "text": "Agora eles têm tristeza, mas em breve o coração se alegra e essa alegria ninguém tira.",
+          "marker": "mas",
+          "evidenceRef": "João 16:22"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 15:11",
+          "bridge": "Alegria completa nos discípulos",
+          "text": "Eu lhes disse estas coisas para que a minha alegria esteja em vocês, e que a alegria de vocês seja plena."
+        },
+        {
+          "ref": "João 20:20",
+          "bridge": "Alegria ao ver o Senhor",
+          "text": "E, dizendo isso, mostrou-lhes as mãos e o lado. Os discípulos, então, se alegraram ao ver o Senhor."
+        },
+        {
+          "ref": "Salmos 30:5",
+          "bridge": "O choro cede à alegria",
+          "text": "Porque a sua ira dura apenas um momento; no seu favor há vida: o choro pode durar uma noite, mas a alegria vem pela manhã."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Depois do parto, a mulher continua lembrando a aflição.",
+          "why": "O texto diz que ela já não se lembra da aflição, pelo prazer de ter trazido um homem ao mundo."
+        },
+        {
+          "text": "Alguém poderá tirar a alegria prometida aos discípulos.",
+          "why": "Jesus diz que a alegria deles ninguém poderá tirar."
+        },
+        {
+          "text": "A tristeza de agora é o fim e não tem virada para a alegria.",
+          "why": "Eles têm tristeza agora, mas em breve o coração se alegrará, e essa alegria fica com eles."
+        }
+      ],
+      "centralInsight": "A tristeza dos discípulos vira uma alegria que ninguém pode tirar.",
+      "anchorQuestion": "O que Jesus diz que acontece com a tristeza dos discípulos?",
+      "relatedVerses": [
+        {
+          "reference": "João 15:11",
+          "reason": "Alegria completa nos discípulos"
+        },
+        {
+          "reference": "João 20:20",
+          "reason": "Alegria ao ver o Senhor"
+        },
+        {
+          "reference": "Salmos 30:5",
+          "reason": "O choro cede à alegria"
+        }
+      ]
+    },
+    "joc-17-que-todos-sejam-um": {
+      "slug": "joc-17-que-todos-sejam-um",
+      "passageRef": "João 17:20–25",
+      "passageText": "E não rogo apenas por estes, mas também por aqueles que hão de crer em mim, por intermédio da sua palavra. Para que todos sejam um, assim como Tu, ó Pai, estás em mim e eu em Ti; que eles também sejam um em nós, para que o mundo creia que Tu me enviaste. Eu lhes tenho transmitido a glória que me tens dado, para que sejam um, como nós o somos. Eu neles, e Tu em mim, a fim de que sejam aperfeiçoados na unidade, para que o mundo conheça que Tu me enviaste e os amaste, como também me amaste. Pai, aqueles que me deste, desejo que, onde eu estiver, também estejam comigo, para que vejam a minha glória que me conferiste, pois me amaste antes da fundação do mundo. Pai justo, o mundo não Te conheceu; mas eu Te conheci, e estes compreenderam que Tu me enviaste.",
+      "passages": [
+        {
+          "ref": "João 17:20–25",
+          "text": "E não rogo apenas por estes, mas também por aqueles que hão de crer em mim, por intermédio da sua palavra. Para que todos sejam um, assim como Tu, ó Pai, estás em mim e eu em Ti; que eles também sejam um em nós, para que o mundo creia que Tu me enviaste. Eu lhes tenho transmitido a glória que me tens dado, para que sejam um, como nós o somos. Eu neles, e Tu em mim, a fim de que sejam aperfeiçoados na unidade, para que o mundo conheça que Tu me enviaste e os amaste, como também me amaste. Pai, aqueles que me deste, desejo que, onde eu estiver, também estejam comigo, para que vejam a minha glória que me conferiste, pois me amaste antes da fundação do mundo. Pai justo, o mundo não Te conheceu; mas eu Te conheci, e estes compreenderam que Tu me enviaste."
+        },
+        {
+          "ref": "João 17:26",
+          "text": "Eu lhes fiz conhecer o Teu nome e continuarei a fazê-lo, para que o amor com que me amaste esteja neles, e eu esteja neles."
+        }
+      ],
+      "context": "Jesus está com os discípulos na noite em que seria entregue. A oração ao Pai já passou por ele e pelos que o acompanham. O trecho que segue alarga o alcance dessa fala.",
+      "keyword": "unidade",
+      "keywordGloss": "É o pedido de Jesus para que os que creem sejam um, como o Pai e o Filho são um.",
+      "focusQuestion": "O que a sua convivência com quem crê pode mostrar a quem ainda não crê?",
+      "reflectionPrompts": [
+        "Quem a oração alcança",
+        "Um como Pai e Filho",
+        "O que o mundo vê"
+      ],
+      "facts": [
+        {
+          "text": "Jesus não roga apenas pelos que estão com ele; roga também pelos que hão de crer.",
+          "evidenceRef": "João 17:20",
+          "evidenceSpan": "não rogo apenas por estes, mas também por aqueles que hão de crer em mim"
+        },
+        {
+          "text": "Jesus pede que todos sejam um, como o Pai está nele e ele no Pai.",
+          "evidenceRef": "João 17:21",
+          "evidenceSpan": "Para que todos sejam um, assim como Tu, ó Pai, estás em mim e eu em Ti"
+        },
+        {
+          "text": "Esse um tem o fim de o mundo crer que o Pai enviou Jesus.",
+          "evidenceRef": "João 17:21",
+          "evidenceSpan": "para que o mundo creia que Tu me enviaste"
+        },
+        {
+          "text": "Jesus transmitiu aos discípulos a glória que o Pai lhe deu, para que sejam um.",
+          "evidenceRef": "João 17:22",
+          "evidenceSpan": "Eu lhes tenho transmitido a glória que me tens dado, para que sejam um"
+        },
+        {
+          "text": "Jesus deseja que os que o Pai lhe deu estejam com ele e vejam a sua glória.",
+          "evidenceRef": "João 17:24",
+          "evidenceSpan": "aqueles que me deste, desejo que, onde eu estiver, também estejam comigo, para que vejam a minha glória"
+        },
+        {
+          "text": "Jesus fez conhecer o nome do Pai e continuará a fazê-lo.",
+          "evidenceRef": "João 17:26",
+          "evidenceSpan": "Eu lhes fiz conhecer o Teu nome e continuarei a fazê-lo"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "unidade",
+          "gloss": "O alvo em que os que creem devem ser aperfeiçoados, no um do Pai e do Filho."
+        },
+        {
+          "term": "glória",
+          "gloss": "O que o Pai deu a Jesus, o que Jesus transmitiu aos seus, e o que eles hão de ver."
+        },
+        {
+          "term": "nome",
+          "gloss": "O que Jesus fez conhecer e seguirá fazendo conhecer, para o amor do Pai estar neles."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A oração alcança quem ainda vai crer",
+          "evidenceRef": "João 17:20"
+        },
+        {
+          "label": "Ser um no modelo do Pai e do Filho",
+          "evidenceRef": "João 17:21"
+        },
+        {
+          "label": "A glória recebida sustenta a união",
+          "evidenceRef": "João 17:22"
+        },
+        {
+          "label": "A unidade se aperfeiçoa e o mundo conhece",
+          "evidenceRef": "João 17:23"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Jesus pede que todos sejam um para que o mundo creia que o Pai o enviou.",
+          "marker": "para",
+          "evidenceRef": "João 17:21"
+        },
+        {
+          "kind": "contraste",
+          "text": "O mundo não conheceu o Pai, mas Jesus o conheceu, e os discípulos compreenderam o envio.",
+          "marker": "mas",
+          "evidenceRef": "João 17:25"
+        },
+        {
+          "kind": "propósito",
+          "text": "Jesus transmitiu a glória que recebeu para que os discípulos sejam um, como ele e o Pai.",
+          "marker": "para",
+          "evidenceRef": "João 17:22"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 10:30",
+          "bridge": "Pai e Filho são um",
+          "text": "Eu e o Pai somos um."
+        },
+        {
+          "ref": "João 13:35",
+          "bridge": "Outros conhecem pelo amor",
+          "text": "Nisto todos saberão que vocês são meus discípulos, se tiverem amor uns pelos outros."
+        },
+        {
+          "ref": "Efésios 4:3",
+          "bridge": "Guardar a unidade",
+          "text": "Esforcem-se diligentemente para preservar a unidade do Espírito no vínculo da paz."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus ora apenas pelos discípulos que estão com ele, e não por quem ainda vai crer.",
+          "why": "Ele diz que não roga apenas por estes, mas também pelos que hão de crer por meio da palavra deles."
+        },
+        {
+          "text": "A unidade pedida é só entre as pessoas, sem a união do Pai e do Filho.",
+          "why": "O modelo é o Pai nele e ele no Pai, e o lugar desse um é em nós, isto é, neles."
+        },
+        {
+          "text": "O fim da unidade é que o mundo creia nos discípulos, e não no envio de Jesus.",
+          "why": "O texto diz que o mundo deve crer e conhecer que o Pai enviou Jesus, e que os amou."
+        }
+      ],
+      "centralInsight": "Jesus ora pela unidade dos que creem, para que o mundo creia.",
+      "anchorQuestion": "Com que fim Jesus pede que todos sejam um, em João 17:21?",
+      "relatedVerses": [
+        {
+          "reference": "João 10:30",
+          "reason": "Pai e Filho são um"
+        },
+        {
+          "reference": "João 13:35",
+          "reason": "Outros conhecem pelo amor"
+        },
+        {
+          "reference": "Efésios 4:3",
+          "reason": "Guardar a unidade"
+        }
+      ]
+    },
+    "joc-18-o-que-e-a": {
+      "slug": "joc-18-o-que-e-a",
+      "passageRef": "João 18:33–38",
+      "passageText": "Pilatos voltou a entrar no pretório, chamou Jesus e perguntou: Você é o rei dos judeus? Jesus respondeu: Você faz essa pergunta por conta própria ou foram outros que falaram isso a meu respeito? Pilatos respondeu: Sou eu judeu? A tua própria nação e os principais sacerdotes são os que te entregaram a mim. O que fizeste? Respondeu Jesus: Meu reino não é deste mundo; se meu reino fosse deste mundo, meus ministros se empenhariam para que eu não fosse entregue aos judeus. Mas agora, meu reino não é daqui. Disse-lhe, então, Pilatos: \"Então, tu és rei?\" Jesus respondeu: \"Tu dizes que eu sou rei. Para isso nasci e para isso vim ao mundo, a fim de dar testemunho da verdade. Todo o que é da verdade ouve a minha voz.\" Disse Pilatos: O que é a verdade? E, ao dizer isso, voltou novamente aos judeus e lhes disse: Não encontro nele crime algum.",
+      "passages": [
+        {
+          "ref": "João 18:33–38",
+          "text": "Pilatos voltou a entrar no pretório, chamou Jesus e perguntou: Você é o rei dos judeus? Jesus respondeu: Você faz essa pergunta por conta própria ou foram outros que falaram isso a meu respeito? Pilatos respondeu: Sou eu judeu? A tua própria nação e os principais sacerdotes são os que te entregaram a mim. O que fizeste? Respondeu Jesus: Meu reino não é deste mundo; se meu reino fosse deste mundo, meus ministros se empenhariam para que eu não fosse entregue aos judeus. Mas agora, meu reino não é daqui. Disse-lhe, então, Pilatos: \"Então, tu és rei?\" Jesus respondeu: \"Tu dizes que eu sou rei. Para isso nasci e para isso vim ao mundo, a fim de dar testemunho da verdade. Todo o que é da verdade ouve a minha voz.\" Disse Pilatos: O que é a verdade? E, ao dizer isso, voltou novamente aos judeus e lhes disse: Não encontro nele crime algum."
+        }
+      ],
+      "context": "Jesus já foi preso e levado ao governador. Pilatos volta ao pretório, chama Jesus e pergunta se ele é o rei dos judeus. O diálogo seguinte é esse interrogatório.",
+      "keyword": "verdade",
+      "keywordGloss": "No texto, é aquilo de que Jesus veio dar testemunho, e quem é dela ouve a voz dele.",
+      "focusQuestion": "Quando a verdade pede que você fique, você ouve ou sai da sala?",
+      "reflectionPrompts": [
+        "A pergunta sobre o rei",
+        "Um reino fora daqui",
+        "A pergunta sem espera"
+      ],
+      "facts": [
+        {
+          "text": "Pilatos pergunta a Jesus se ele é o rei dos judeus.",
+          "evidenceRef": "João 18:33",
+          "evidenceSpan": "Você é o rei dos judeus?"
+        },
+        {
+          "text": "Pilatos diz que a própria nação de Jesus e os principais sacerdotes o entregaram.",
+          "evidenceRef": "João 18:35",
+          "evidenceSpan": "A tua própria nação e os principais sacerdotes são os que te entregaram a mim"
+        },
+        {
+          "text": "Jesus diz que o seu reino não é deste mundo.",
+          "evidenceRef": "João 18:36",
+          "evidenceSpan": "Meu reino não é deste mundo"
+        },
+        {
+          "text": "Jesus nasceu e veio ao mundo a fim de dar testemunho da verdade.",
+          "evidenceRef": "João 18:37",
+          "evidenceSpan": "Para isso nasci e para isso vim ao mundo, a fim de dar testemunho da verdade"
+        },
+        {
+          "text": "Todo o que é da verdade ouve a voz de Jesus.",
+          "evidenceRef": "João 18:37",
+          "evidenceSpan": "Todo o que é da verdade ouve a minha voz"
+        },
+        {
+          "text": "Pilatos diz que não encontra crime algum em Jesus.",
+          "evidenceRef": "João 18:38",
+          "evidenceSpan": "Não encontro nele crime algum"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "verdade",
+          "gloss": "Aquilo de que Jesus veio dar testemunho, e de que é quem ouve a voz dele."
+        },
+        {
+          "term": "reino",
+          "gloss": "O governo de Jesus, que ele diz não ser deste mundo nem daqui."
+        },
+        {
+          "term": "testemunho",
+          "gloss": "A missão para a qual Jesus diz ter nascido e vindo ao mundo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Pilatos pergunta se Jesus é rei",
+          "evidenceRef": "João 18:33"
+        },
+        {
+          "label": "Jesus afirma um reino que não é daqui",
+          "evidenceRef": "João 18:36"
+        },
+        {
+          "label": "Jesus aponta o testemunho da verdade",
+          "evidenceRef": "João 18:37"
+        },
+        {
+          "label": "Pilatos não encontra crime algum",
+          "evidenceRef": "João 18:38"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Jesus contrasta a hipótese de um reino daqui com o que vale agora: o reino não é daqui.",
+          "marker": "Mas",
+          "evidenceRef": "João 18:36"
+        },
+        {
+          "kind": "causa",
+          "text": "Se o reino fosse deste mundo, os ministros se empenhariam para que Jesus não fosse entregue.",
+          "marker": "se",
+          "evidenceRef": "João 18:36"
+        },
+        {
+          "kind": "propósito",
+          "text": "Jesus nasceu e veio ao mundo a fim de dar testemunho da verdade.",
+          "marker": "fim",
+          "evidenceRef": "João 18:37"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 10:27",
+          "bridge": "Quem é dele ouve",
+          "text": "As minhas ovelhas ouvem a minha voz; eu as conheço, e elas me seguem."
+        },
+        {
+          "ref": "João 14:6",
+          "bridge": "Jesus é a verdade",
+          "text": "Disse-lhe Jesus: Eu sou o caminho, a verdade e a vida; ninguém vem ao Pai, senão por mim."
+        },
+        {
+          "ref": "João 17:17",
+          "bridge": "A palavra é a verdade",
+          "text": "Santifica-os na tua verdade; a tua palavra é a verdade."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus nega ser rei quando diz que Pilatos é quem afirma o título.",
+          "why": "Ele não recusa o título. Explica que nasceu para dar testemunho da verdade."
+        },
+        {
+          "text": "O reinado de Jesus, nesse texto, é um trono de poder neste mundo.",
+          "why": "Ele diz que o reino não é deste mundo nem daqui. Vir ao mundo é para testemunhar a verdade."
+        },
+        {
+          "text": "Só ouve a voz de Jesus quem já entende tudo por conta própria.",
+          "why": "O texto não põe essa condição. Todo o que é da verdade ouve a voz dele."
+        }
+      ],
+      "centralInsight": "O Reino de Jesus não é deste mundo, e quem é da verdade ouve a voz dele.",
+      "anchorQuestion": "Segundo João 18:37, para que Jesus nasceu e veio ao mundo?",
+      "relatedVerses": [
+        {
+          "reference": "João 10:27",
+          "reason": "Quem é dele ouve"
+        },
+        {
+          "reference": "João 14:6",
+          "reason": "Jesus é a verdade"
+        },
+        {
+          "reference": "João 17:17",
+          "reason": "A palavra é a verdade"
+        }
+      ]
+    },
+    "joc-19-o-rei-dos-judeus": {
+      "slug": "joc-19-o-rei-dos-judeus",
+      "passageRef": "João 19:17–22",
+      "passageText": "E, carregando a cruz, saiu para o lugar chamado Caveira, que em hebraico é chamado de Gólgota. Onde o crucificaram e com ele outros dois, um de cada lado, e Jesus no meio. E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego. Os principais sacerdotes dos judeus disseram a Pilatos: \"Não escrevas: Rei dos judeus, mas sim que ele afirmou 'Sou o rei dos judeus.'\" O que escrevi, permanece escrito.",
+      "passages": [
+        {
+          "ref": "João 19:17–22",
+          "text": "E, carregando a cruz, saiu para o lugar chamado Caveira, que em hebraico é chamado de Gólgota. Onde o crucificaram e com ele outros dois, um de cada lado, e Jesus no meio. E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego. Os principais sacerdotes dos judeus disseram a Pilatos: \"Não escrevas: Rei dos judeus, mas sim que ele afirmou 'Sou o rei dos judeus.'\" O que escrevi, permanece escrito."
+        },
+        {
+          "ref": "João 19:16",
+          "text": "Então, Pilatos o entregou para que fosse crucificado, e levaram Jesus."
+        }
+      ],
+      "context": "Pilatos entrega Jesus para ser crucificado. Jesus sai carregando a cruz até o lugar chamado Caveira, onde é posto no meio de outros dois. No alto da cruz, Pilatos manda colocar um escrito.",
+      "keyword": "título",
+      "keywordGloss": "O título é o escrito que Pilatos coloca no cimo da cruz.",
+      "focusQuestion": "Quando alguém pede para suavizar quem Jesus é, o que você faz?",
+      "reflectionPrompts": [
+        "A caminho da Caveira",
+        "O título em três línguas",
+        "O escrito que fica"
+      ],
+      "facts": [
+        {
+          "text": "Pilatos entregou Jesus para que fosse crucificado.",
+          "evidenceRef": "João 19:16",
+          "evidenceSpan": "Pilatos o entregou para que fosse crucificado"
+        },
+        {
+          "text": "Jesus saiu carregando a cruz para o lugar chamado Caveira.",
+          "evidenceRef": "João 19:17",
+          "evidenceSpan": "carregando a cruz, saiu para o lugar chamado Caveira"
+        },
+        {
+          "text": "Jesus foi crucificado no meio de outros dois.",
+          "evidenceRef": "João 19:18",
+          "evidenceSpan": "com ele outros dois, um de cada lado, e Jesus no meio"
+        },
+        {
+          "text": "No título estava escrito que Jesus é o rei dos judeus.",
+          "evidenceRef": "João 19:19",
+          "evidenceSpan": "JESUS NAZARENO, O REI DOS JUDEUS"
+        },
+        {
+          "text": "O título estava escrito em hebraico, latim e grego.",
+          "evidenceRef": "João 19:20",
+          "evidenceSpan": "estava escrito em hebraico, latim e grego"
+        },
+        {
+          "text": "Pilatos disse que o que escreveu permanece escrito.",
+          "evidenceRef": "João 19:22",
+          "evidenceSpan": "O que escrevi, permanece escrito"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "título",
+          "gloss": "O escrito que Pilatos coloca no cimo da cruz."
+        },
+        {
+          "term": "Gólgota",
+          "gloss": "Nome hebraico do lugar chamado Caveira, para onde Jesus levou a cruz."
+        },
+        {
+          "term": "permanece",
+          "gloss": "O que Pilatos diz do título: o que ele escreveu fica como está."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus carrega a cruz até a Caveira",
+          "evidenceRef": "João 19:17"
+        },
+        {
+          "label": "Um título de rei é publicado",
+          "evidenceRef": "João 19:19"
+        },
+        {
+          "label": "Os sacerdotes recusam o título de rei",
+          "evidenceRef": "João 19:21"
+        },
+        {
+          "label": "Pilatos deixa o escrito como está",
+          "evidenceRef": "João 19:22"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Muitos judeus leram o título porque o lugar da cruz ficava perto da cidade.",
+          "marker": "pois",
+          "evidenceRef": "João 19:20"
+        },
+        {
+          "kind": "contraste",
+          "text": "Os sacerdotes não querem a frase rei dos judeus, mas a de que ele afirmou ser rei.",
+          "marker": "mas",
+          "evidenceRef": "João 19:21"
+        },
+        {
+          "kind": "resultado",
+          "text": "Diante do pedido de mudança, o que Pilatos escreveu permanece escrito.",
+          "marker": "permanece",
+          "evidenceRef": "João 19:22"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 18:37",
+          "bridge": "Jesus já se disse rei",
+          "text": "Disse-lhe, então, Pilatos: \"Então, tu és rei?\" Jesus respondeu: \"Tu dizes que eu sou rei. Para isso nasci e para isso vim ao mundo, a fim de dar testemunho da verdade. Todo o que é da verdade ouve a minha voz.\""
+        },
+        {
+          "ref": "João 18:36",
+          "bridge": "Reino que não é daqui",
+          "text": "Respondeu Jesus: Meu reino não é deste mundo; se meu reino fosse deste mundo, meus ministros se empenhariam para que eu não fosse entregue aos judeus. Mas agora, meu reino não é daqui."
+        },
+        {
+          "ref": "João 19:15",
+          "bridge": "Sacerdotes negam esse rei",
+          "text": "Mas eles gritaram: \"Tira, tira, crucifica-o!\" Pilatos lhes perguntou: \"Hei de crucificar o vosso Rei?\" Os principais sacerdotes responderam: \"Não temos rei, senão César.\""
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "O título é só zombaria e nega que Jesus seja rei.",
+          "why": "A placa diz que ele é o rei dos judeus, e Pilatos não aceita apagar essa frase."
+        },
+        {
+          "text": "Os sacerdotes concordam com o título e só querem reforçá-lo.",
+          "why": "Eles pedem para não escrever rei dos judeus, e sim que ele afirmou ser rei."
+        },
+        {
+          "text": "Pilatos muda o título quando os sacerdotes reclamam.",
+          "why": "A resposta dele é que o que escreveu permanece escrito."
+        }
+      ],
+      "centralInsight": "Sem querer, a placa da cruz anuncia a verdade: Jesus é o Rei.",
+      "anchorQuestion": "O que Pilatos respondeu quando lhe pediram para mudar o título da cruz?",
+      "relatedVerses": [
+        {
+          "reference": "João 18:37",
+          "reason": "Jesus já se disse rei"
+        },
+        {
+          "reference": "João 18:36",
+          "reason": "Reino que não é daqui"
+        },
+        {
+          "reference": "João 19:15",
+          "reason": "Sacerdotes negam esse rei"
+        }
+      ]
+    },
+    "joc-20-senhor-meu-e-deus": {
+      "slug": "joc-20-senhor-meu-e-deus",
+      "passageRef": "João 20:24–29",
+      "passageText": "Tomé, um dos doze, chamado Dídimo, não estava com eles quando veio Jesus. Disseram-lhe, então, os outros discípulos: \"Vimos o Senhor.\" Mas ele respondeu: \"Se eu não vir nas mãos dele as marcas dos cravos, e não colocar meu dedo nos lugares dos cravos, e não colocar minha mão no seu lado, de modo algum acreditarei.\" Oito dias depois, os discípulos estavam novamente reunidos, e Tomé estava com eles. Jesus entrou, mesmo com as portas trancadas, e pôs-se no meio deles, dizendo: Paz seja com vocês. Depois disse a Tomé: Ponha aqui o seu dedo e veja as minhas mãos; aproxime também a sua mão e coloque-a no meu lado; não seja incrédulo, mas crente. Tomé respondeu e disse-lhe: Meu Senhor e meu Deus! Disse-lhe Jesus: Porque me viste, Tomé, creste; bem-aventurados os que não viram e creram.",
+      "passages": [
+        {
+          "ref": "João 20:24–29",
+          "text": "Tomé, um dos doze, chamado Dídimo, não estava com eles quando veio Jesus. Disseram-lhe, então, os outros discípulos: \"Vimos o Senhor.\" Mas ele respondeu: \"Se eu não vir nas mãos dele as marcas dos cravos, e não colocar meu dedo nos lugares dos cravos, e não colocar minha mão no seu lado, de modo algum acreditarei.\" Oito dias depois, os discípulos estavam novamente reunidos, e Tomé estava com eles. Jesus entrou, mesmo com as portas trancadas, e pôs-se no meio deles, dizendo: Paz seja com vocês. Depois disse a Tomé: Ponha aqui o seu dedo e veja as minhas mãos; aproxime também a sua mão e coloque-a no meu lado; não seja incrédulo, mas crente. Tomé respondeu e disse-lhe: Meu Senhor e meu Deus! Disse-lhe Jesus: Porque me viste, Tomé, creste; bem-aventurados os que não viram e creram."
+        }
+      ],
+      "context": "Jesus já tinha aparecido aos discípulos reunidos. Tomé não estava lá. Ao ouvir que viram o Senhor, ele exige ver as marcas e tocar o lado. Oito dias depois, o grupo está junto outra vez.",
+      "keyword": "Senhor e Deus",
+      "keywordGloss": "É o modo como Tomé nomeia Jesus quando o reconhece vivo diante dele.",
+      "focusQuestion": "Em quem você firma a fé quando ainda não viu o que espera?",
+      "reflectionPrompts": [
+        "A ausência de Tomé",
+        "A condição para crer",
+        "O encontro oito dias depois"
+      ],
+      "facts": [
+        {
+          "text": "Tomé não estava com eles quando Jesus veio.",
+          "evidenceRef": "João 20:24",
+          "evidenceSpan": "não estava com eles quando veio Jesus"
+        },
+        {
+          "text": "Os outros discípulos disseram que viram o Senhor.",
+          "evidenceRef": "João 20:25",
+          "evidenceSpan": "Vimos o Senhor"
+        },
+        {
+          "text": "Tomé diz que não acreditará se não vir as marcas dos cravos.",
+          "evidenceRef": "João 20:25",
+          "evidenceSpan": "Se eu não vir nas mãos dele as marcas dos cravos"
+        },
+        {
+          "text": "Jesus entrou mesmo com as portas trancadas.",
+          "evidenceRef": "João 20:26",
+          "evidenceSpan": "Jesus entrou, mesmo com as portas trancadas"
+        },
+        {
+          "text": "Tomé chama Jesus de Senhor e de Deus.",
+          "evidenceRef": "João 20:28",
+          "evidenceSpan": "Meu Senhor e meu Deus"
+        },
+        {
+          "text": "Jesus chama de bem-aventurados os que não viram e creram.",
+          "evidenceRef": "João 20:29",
+          "evidenceSpan": "bem-aventurados os que não viram e creram"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Senhor",
+          "gloss": "Título que Tomé dá a Jesus ao dizer quem ele é."
+        },
+        {
+          "term": "Deus",
+          "gloss": "Tomé não para em mestre: chama Jesus de Deus."
+        },
+        {
+          "term": "crente",
+          "gloss": "É o que Jesus pede a Tomé no lugar de permanecer incrédulo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Tomé não estava com o grupo",
+          "evidenceRef": "João 20:24"
+        },
+        {
+          "label": "Os outros dizem que viram o Senhor",
+          "evidenceRef": "João 20:25"
+        },
+        {
+          "label": "Ele só acredita se vir e tocar",
+          "evidenceRef": "João 20:25"
+        },
+        {
+          "label": "Jesus se mostra e Tomé confessa",
+          "evidenceRef": "João 20:26–28"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Os discípulos dizem que viram o Senhor, mas Tomé responde que não acreditará sem ver e tocar.",
+          "marker": "Mas",
+          "evidenceRef": "João 20:25"
+        },
+        {
+          "kind": "contraste",
+          "text": "Jesus não deixa Tomé na incredulidade; chama-o a ser crente.",
+          "marker": "mas",
+          "evidenceRef": "João 20:27"
+        },
+        {
+          "kind": "causa",
+          "text": "Tomé crê porque viu Jesus; a visão é a razão que a frase aponta.",
+          "marker": "Porque",
+          "evidenceRef": "João 20:29"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 20:20",
+          "bridge": "Eles viram o Senhor",
+          "text": "E, dizendo isso, mostrou-lhes as mãos e o lado. Os discípulos, então, se alegraram ao ver o Senhor."
+        },
+        {
+          "ref": "João 20:31",
+          "bridge": "Escrito para gerar fé",
+          "text": "Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+        },
+        {
+          "ref": "João 19:34",
+          "bridge": "O lado ferido na cruz",
+          "text": "Um dos soldados, porém, lhe perfurou o lado com uma lança, e imediatamente brotou sangue e água."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Tomé só crê porque colocou a mão nas feridas.",
+          "why": "Jesus liga a fé dele ao que ele viu. O relato não diz que ele chegou a tocar."
+        },
+        {
+          "text": "A bênção fica só com quem viu Jesus ressuscitado.",
+          "why": "Jesus chama de bem-aventurados os que não viram e creram."
+        },
+        {
+          "text": "Tomé reconhece Jesus apenas como um mestre humano.",
+          "why": "Ele diz Meu Senhor e meu Deus, e Jesus não corrige essa confissão."
+        }
+      ],
+      "centralInsight": "Felizes os que não viram e creram: Jesus é Senhor e Deus.",
+      "anchorQuestion": "O que Tomé diz a Jesus em João 20:28?",
+      "relatedVerses": [
+        {
+          "reference": "João 20:20",
+          "reason": "Eles viram o Senhor"
+        },
+        {
+          "reference": "João 20:31",
+          "reason": "Escrito para gerar fé"
+        },
+        {
+          "reference": "João 19:34",
+          "reason": "O lado ferido na cruz"
+        }
+      ]
+    },
+    "joc-21-tu-me-amas": {
+      "slug": "joc-21-tu-me-amas",
+      "passageRef": "João 21:15–19",
+      "passageText": "Depois de terem comido, Jesus perguntou a Simão Pedro: Simão, filho de Jonas, tu me amas mais do que estes? Ele respondeu: Sim, Senhor; tu sabes que eu te amo. Jesus disse: Apascenta as minhas ovelhas. Perguntou-lhe pela segunda vez: Simão, filho de Jonas, tu me amas? Ele respondeu: Sim, Senhor; tu sabes que eu te amo. Jesus disse: Apascenta as minhas ovelhas. Jesus lhe perguntou pela terceira vez: Simão, filho de Jonas, tu me amas? Simão se entristeceu por ele ter perguntado pela terceira vez: Tu me amas? E respondeu: Senhor, tu sabes todas as coisas; tu sabes que eu te amo. Jesus lhe disse: Apascenta as minhas ovelhas. Em verdade, em verdade te digo que, quando eras mais jovem, te cingias e andavas para onde querias; mas quando fores velho, estenderás as mãos, e outro te cingirá e te levará para onde não desejas. E disse isso, indicando o tipo de morte com que ele glorificaria a Deus. E, após dizer isso, acrescentou-lhe: Segue-me.",
+      "passages": [
+        {
+          "ref": "João 21:15–19",
+          "text": "Depois de terem comido, Jesus perguntou a Simão Pedro: Simão, filho de Jonas, tu me amas mais do que estes? Ele respondeu: Sim, Senhor; tu sabes que eu te amo. Jesus disse: Apascenta as minhas ovelhas. Perguntou-lhe pela segunda vez: Simão, filho de Jonas, tu me amas? Ele respondeu: Sim, Senhor; tu sabes que eu te amo. Jesus disse: Apascenta as minhas ovelhas. Jesus lhe perguntou pela terceira vez: Simão, filho de Jonas, tu me amas? Simão se entristeceu por ele ter perguntado pela terceira vez: Tu me amas? E respondeu: Senhor, tu sabes todas as coisas; tu sabes que eu te amo. Jesus lhe disse: Apascenta as minhas ovelhas. Em verdade, em verdade te digo que, quando eras mais jovem, te cingias e andavas para onde querias; mas quando fores velho, estenderás as mãos, e outro te cingirá e te levará para onde não desejas. E disse isso, indicando o tipo de morte com que ele glorificaria a Deus. E, após dizer isso, acrescentou-lhe: Segue-me."
+        },
+        {
+          "ref": "João 21:12–14",
+          "text": "Jesus lhes disse: Vinde, comei. E nenhum dos discípulos ousava perguntar-lhe: Quem és tu? porque sabiam que era o Senhor. Jesus chegou, pegou o pão e o ofereceu a eles da mesma forma que fez com o peixe. E esta era a terceira vez que Jesus se manifestava aos seus discípulos, depois de ter ressuscitado dentre os mortos."
+        },
+        {
+          "ref": "João 21:20–22",
+          "text": "E Pedro, voltando-se, viu que o discípulo a quem Jesus amava o seguia; era o mesmo que, durante a ceia, se recostara sobre o peito de Jesus e perguntara: Senhor, quem é o traidor? Vendo-o Pedro, perguntou: Senhor, e quanto a este? Respondeu-lhe Jesus: Se eu quiser que ele permaneça até que eu venha, que te importa? Quanto a ti, segue-me."
+        }
+      ],
+      "context": "Jesus e os discípulos estão à beira do mar, depois da pesca. Ele os chama para comer. A conversa que vem em seguida fica entre Jesus e Pedro, antes de falarem do outro discípulo.",
+      "keyword": "Tu me amas",
+      "keywordGloss": "É a pergunta que Jesus faz a Pedro três vezes, depois da refeição à beira do mar.",
+      "focusQuestion": "O que o amor que você diz ter por Jesus pede no cuidado dos outros?",
+      "reflectionPrompts": [
+        "A refeição com o Senhor",
+        "A pergunta repetida",
+        "O caminho que é o seu"
+      ],
+      "facts": [
+        {
+          "text": "Nenhum dos discípulos ousava perguntar quem ele era, porque sabiam que era o Senhor.",
+          "evidenceRef": "João 21:12",
+          "evidenceSpan": "porque sabiam que era o Senhor"
+        },
+        {
+          "text": "Jesus pegou o pão e o ofereceu, da mesma forma que fez com o peixe.",
+          "evidenceRef": "João 21:13",
+          "evidenceSpan": "pegou o pão e o ofereceu a eles"
+        },
+        {
+          "text": "Esta era a terceira vez que Jesus se manifestava aos discípulos depois de ressuscitar.",
+          "evidenceRef": "João 21:14",
+          "evidenceSpan": "a terceira vez que Jesus se manifestava aos seus discípulos"
+        },
+        {
+          "text": "Jesus disse a Pedro para apascentar as ovelhas dele.",
+          "evidenceRef": "João 21:15",
+          "evidenceSpan": "Apascenta as minhas ovelhas"
+        },
+        {
+          "text": "Simão se entristeceu porque Jesus perguntou pela terceira vez.",
+          "evidenceRef": "João 21:17",
+          "evidenceSpan": "Simão se entristeceu por ele ter perguntado pela terceira vez"
+        },
+        {
+          "text": "Jesus indicou o tipo de morte com que Pedro glorificaria a Deus.",
+          "evidenceRef": "João 21:19",
+          "evidenceSpan": "indicando o tipo de morte com que ele glorificaria a Deus"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "amas",
+          "gloss": "A pergunta que Jesus repete a Pedro depois que eles comem."
+        },
+        {
+          "term": "Apascenta",
+          "gloss": "O verbo do chamado: cuidar das ovelhas que Jesus chama de minhas."
+        },
+        {
+          "term": "Senhor",
+          "gloss": "O nome com que os discípulos reconhecem Jesus e com que Pedro lhe responde."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus pergunta se Pedro o ama",
+          "evidenceRef": "João 21:15"
+        },
+        {
+          "label": "Pedro responde que Jesus sabe",
+          "evidenceRef": "João 21:15"
+        },
+        {
+          "label": "Jesus lhe entrega as ovelhas",
+          "evidenceRef": "João 21:16"
+        },
+        {
+          "label": "A morte anunciada e o segue-me",
+          "evidenceRef": "João 21:18–19"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "causa",
+          "text": "Ninguém perguntava quem ele era porque já sabiam que era o Senhor.",
+          "marker": "porque",
+          "evidenceRef": "João 21:12"
+        },
+        {
+          "kind": "contraste",
+          "text": "Na juventude Pedro ia para onde queria; na velhice, outro o levará para onde não deseja.",
+          "marker": "mas",
+          "evidenceRef": "João 21:18"
+        },
+        {
+          "kind": "sequência",
+          "text": "Depois de indicar a morte, Jesus acrescenta o chamado a segui-lo.",
+          "marker": "após",
+          "evidenceRef": "João 21:19"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 10:11",
+          "bridge": "Ovelhas do bom Pastor",
+          "text": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas."
+        },
+        {
+          "ref": "João 13:36",
+          "bridge": "O seguir prometido depois",
+          "text": "Disse-lhe Simão Pedro: Senhor, para onde você vai? Jesus respondeu: Para onde eu vou, você não pode me seguir agora; mais tarde, porém, você me seguirá."
+        },
+        {
+          "ref": "João 13:38",
+          "bridge": "Depois das três negações",
+          "text": "Jesus respondeu: Você daria a sua vida por mim? Em verdade, em verdade lhe digo que o galo não cantará antes que você me negue três vezes."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "As três perguntas humilham Pedro e lhe fecham o serviço.",
+          "why": "A cada resposta Jesus diz apascenta as minhas ovelhas: a pergunta abre o cuidado, não fecha a porta."
+        },
+        {
+          "text": "Jesus entrega a Pedro um rebanho que passa a ser dele.",
+          "why": "Jesus diz as minhas ovelhas: o rebanho continua sendo dele, e Pedro é chamado a cuidar."
+        },
+        {
+          "text": "Jesus manda Pedro seguir o caminho do outro discípulo.",
+          "why": "Jesus responde que te importa e devolve Pedro ao próprio chamado: quanto a ti, segue-me."
+        }
+      ],
+      "centralInsight": "Jesus restaura Pedro com uma pergunta de amor e um chamado: apascenta as minhas ovelhas.",
+      "anchorQuestion": "O que Jesus pede a Pedro cada vez que ele diz que o ama?",
+      "relatedVerses": [
+        {
+          "reference": "João 10:11",
+          "reason": "Ovelhas do bom Pastor"
+        },
+        {
+          "reference": "João 13:36",
+          "reason": "O seguir prometido depois"
+        },
+        {
+          "reference": "João 13:38",
+          "reason": "Depois das três negações"
+        }
+      ]
+    },
+    "joc-boss-1": {
+      "slug": "joc-boss-1",
+      "passageRef": "João 3:16–21",
+      "passageText": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna. Porque Deus enviou seu Filho ao mundo, não para que condenasse o mundo, mas para que o mundo fosse salvo por intermédio dele. Quem crê nele não é julgado; mas quem não crê já está julgado, porque não crê no nome do unigênito Filho de Deus. E o julgamento é este: a luz veio ao mundo, e os homens amaram mais as trevas do que a luz; porque as suas obras eram más. Porque todo aquele que pratica o mal detesta a luz e não se aproxima dela, para que suas obras não sejam reveladas. Aquele que pratica a verdade se aproxima da luz, a fim de que suas obras sejam manifestas, pois foram realizadas em Deus.",
+      "passages": [
+        {
+          "ref": "João 3:16–21",
+          "text": "Porque Deus amou o mundo de tal maneira que deu o seu Filho unigênito, para que todo aquele que nele crê não pereça, mas tenha a vida eterna. Porque Deus enviou seu Filho ao mundo, não para que condenasse o mundo, mas para que o mundo fosse salvo por intermédio dele. Quem crê nele não é julgado; mas quem não crê já está julgado, porque não crê no nome do unigênito Filho de Deus. E o julgamento é este: a luz veio ao mundo, e os homens amaram mais as trevas do que a luz; porque as suas obras eram más. Porque todo aquele que pratica o mal detesta a luz e não se aproxima dela, para que suas obras não sejam reveladas. Aquele que pratica a verdade se aproxima da luz, a fim de que suas obras sejam manifestas, pois foram realizadas em Deus."
+        },
+        {
+          "ref": "João 1:36–41",
+          "text": "Ao ver Jesus passar, exclamou: Eis o Cordeiro de Deus! E os dois discípulos, ouvindo-o dizer isso, seguiram a Jesus. E Jesus, voltando-se e vendo que o seguiam, disse-lhes: O que vocês buscam? Eles lhe responderam: Rabi (que significa Mestre), onde você está hospedado? Ele lhes disse: Venham e vejam. Foram, viram onde ele estava morando e ficaram com ele naquele dia. Era cerca da décima hora. Era André, o irmão de Simão Pedro, um dos dois que tinham ouvido o testemunho de João e seguido Jesus. Ele encontrou primeiro seu irmão Simão e lhe disse: Já encontramos o Messias (que, traduzido, é o Cristo)."
+        },
+        {
+          "ref": "João 2:3–8",
+          "text": "E, tendo acabado o vinho, a mãe de Jesus lhe disse: Eles não têm mais vinho. Disse-lhe Jesus: Mulher, que tenho eu a ver contigo? Ainda não chegou a minha hora. A mãe dele disse aos serventes: Façam tudo o que ele lhes disser. Havia ali seis talhas de pedra, que os judeus usavam para as purificações, e cada uma levava de duas a três metretas. Jesus lhes disse: Encham essas talhas de água. E as encheram completamente. Disse-lhes: \"Agora tirem e levem ao mestre-sala. Eles o fizeram."
+        },
+        {
+          "ref": "João 4:9–14",
+          "text": "Disse-lhe, então, a mulher samaritana: Como, sendo você judeu, pede de beber a mim, que sou uma mulher samaritana? (Pois os judeus não se relacionam com os samaritanos.) Jesus respondeu: \"Se você conhecesse o dom de Deus e quem é aquele que te pede: 'Dá-me de beber', você lhe pediria, e ele te daria água viva. Disse-lhe a mulher: Senhor, você não tem como tirá-la, e o poço é profundo; onde, então, você tem a água viva? Você é, por acaso, maior que o nosso pai Jacó, que nos deu este poço, do qual ele mesmo bebeu, assim como seus filhos e seu gado? Jesus respondeu: \"Quem beber desta água tornará a ter sede novamente; Mas aquele que beber da água que eu lhe der nunca mais terá sede; pelo contrário, a água que eu lhe der será nele uma fonte a jorrar para a vida eterna."
+        },
+        {
+          "ref": "João 5:3–8",
+          "text": "Existia ali uma grande multidão de enfermos, cegos, coxos e paralíticos, aguardando o movimento das águas. Porque um anjo descia em certo momento ao tanque e agitava as águas; e o primeiro que entrava no tanque, assim que as águas eram agitadas, ficava curado de qualquer enfermidade que tivesse. Estava ali um homem que estava enfermo havia trinta e oito anos. E Jesus, vendo-o deitado e sabendo que ele estava assim há muito tempo, perguntou-lhe: Você deseja ser curado? O enfermo respondeu: Senhor, não tenho ninguém que me coloque no tanque quando a água é agitada; pois, enquanto eu estou indo, outro desce antes de mim. Jesus lhe disse: Levanta-te, toma a tua cama e anda."
+        }
+      ],
+      "context": "Esta travessia revisa João 1 a 5. Discípulos encontram Jesus e chamam o irmão. Em Caná o vinho acaba. Jesus fala do amor de Deus, oferece água à samaritana e, em Betesda, dirige a palavra a um enfermo.",
+      "keyword": "vida eterna",
+      "keywordGloss": "O dom prometido a quem crê no Filho e a quem bebe da água que Jesus dá.",
+      "focusQuestion": "Quando a sede volta ou a espera parece longa demais, a quem você tem recorrido?",
+      "reflectionPrompts": [
+        "O convite para ver",
+        "O amor que entrega o Filho",
+        "A palavra que levanta"
+      ],
+      "facts": [
+        {
+          "text": "André encontra Simão e lhe diz que já encontraram o Messias.",
+          "evidenceRef": "João 1:41",
+          "evidenceSpan": "Já encontramos o Messias"
+        },
+        {
+          "text": "Jesus manda encher as talhas de água, e elas ficam completamente cheias.",
+          "evidenceRef": "João 2:7",
+          "evidenceSpan": "Encham essas talhas de água"
+        },
+        {
+          "text": "Deus amou o mundo e deu o seu Filho unigênito.",
+          "evidenceRef": "João 3:16",
+          "evidenceSpan": "Deus amou o mundo de tal maneira que deu o seu Filho unigênito"
+        },
+        {
+          "text": "Deus enviou o Filho para que o mundo fosse salvo, não para condená-lo.",
+          "evidenceRef": "João 3:17",
+          "evidenceSpan": "não para que condenasse o mundo, mas para que o mundo fosse salvo"
+        },
+        {
+          "text": "Quem bebe da água que Jesus dá nunca mais terá sede.",
+          "evidenceRef": "João 4:14",
+          "evidenceSpan": "nunca mais terá sede"
+        },
+        {
+          "text": "Jesus manda o enfermo levantar-se, tomar a cama e andar.",
+          "evidenceRef": "João 5:8",
+          "evidenceSpan": "Levanta-te, toma a tua cama e anda"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "Messias",
+          "gloss": "O título que André anuncia a Simão: o Cristo, aquele que eles encontraram."
+        },
+        {
+          "term": "água viva",
+          "gloss": "A água que Jesus oferece, diferente da água do poço, que mata a sede."
+        },
+        {
+          "term": "vida eterna",
+          "gloss": "A vida que Deus dá a quem crê no Filho e a quem bebe da água de Jesus."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Discípulos seguem Jesus e anunciam o Messias",
+          "evidenceRef": "João 1:37–41"
+        },
+        {
+          "label": "Em Caná as talhas são cheias de água",
+          "evidenceRef": "João 2:6–7"
+        },
+        {
+          "label": "Deus entrega o Filho para salvar o mundo",
+          "evidenceRef": "João 3:16–17"
+        },
+        {
+          "label": "Jesus dá uma ordem ao enfermo",
+          "evidenceRef": "João 5:8"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Deus deu o Filho para que quem crê não pereça, mas tenha a vida eterna.",
+          "marker": "para",
+          "evidenceRef": "João 3:16"
+        },
+        {
+          "kind": "contraste",
+          "text": "A água do poço deixa a sede voltar; a água que Jesus dá não deixa sede outra vez.",
+          "marker": "Mas",
+          "evidenceRef": "João 4:14"
+        },
+        {
+          "kind": "causa",
+          "text": "Os homens amaram as trevas porque as suas obras eram más.",
+          "marker": "porque",
+          "evidenceRef": "João 3:19"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "1 João 4:9",
+          "bridge": "Deus enviou o Filho unigênito",
+          "text": "Nisto se manifestou o amor de Deus em nós: em haver Deus enviado seu Filho unigênito ao mundo, para que, por meio dele, vivamos."
+        },
+        {
+          "ref": "Romanos 5:8",
+          "bridge": "Amor de Deus em Cristo",
+          "text": "Mas Deus demonstra o seu próprio amor por nós, pelo fato de Cristo ter morrido por nós, sendo nós ainda pecadores."
+        },
+        {
+          "ref": "João 7:37–38",
+          "bridge": "Água viva no interior",
+          "text": "No último dia da festa, que era o grande dia, Jesus levantou-se e exclamou: \"Se alguém tem sede, venha a mim e beba.\" Quem crê em mim, como diz a Escritura, do seu interior brotarão rios de água viva."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus manda o enfermo esperar alguém que o coloque no tanque.",
+          "why": "Quem descreve essa espera é o enfermo. Jesus responde com outra ordem: levantar, tomar a cama e andar (5:8)."
+        },
+        {
+          "text": "Jesus só age depois que o anjo agita a água.",
+          "why": "A agitação aparece na espera da multidão (5:4). Em 5:8 Jesus não espera o anjo; ele dá uma ordem ao homem."
+        },
+        {
+          "text": "Jesus recusa ajudar o homem, porque ele não tem quem o leve.",
+          "why": "Jesus não recusa. Diante de quem diz que não tem ninguém, ele manda o homem levantar e andar (5:8)."
+        }
+      ],
+      "centralInsight": "Em Jesus, Deus vem morar entre nós",
+      "anchorQuestion": "Para que Deus enviou o Filho ao mundo, segundo João 3:17?",
+      "relatedVerses": [
+        {
+          "reference": "1 João 4:9",
+          "reason": "Deus enviou o Filho unigênito"
+        },
+        {
+          "reference": "Romanos 5:8",
+          "reason": "Amor de Deus em Cristo"
+        },
+        {
+          "reference": "João 7:37–38",
+          "reason": "Água viva no interior"
+        }
+      ]
+    },
+    "joc-boss-2": {
+      "slug": "joc-boss-2",
+      "passageRef": "João 10:11–16",
+      "passageText": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas. Mas o mercenário, que não é pastor e a quem as ovelhas não pertencem, vê o lobo se aproximar, abandona as ovelhas e foge; então, o lobo as arrebata e as dispersa. O mercenário foge, pois é mercenário e não se preocupa com as ovelhas. Eu sou o bom Pastor; conheço as minhas ovelhas, e elas me conhecem a mim, Assim como o Pai me conhece, eu conheço o Pai; e dou a minha vida pelas ovelhas. Ainda tenho outras ovelhas, que não pertencem a este aprisco; é necessário que eu as conduza, e elas ouvirão a minha voz; assim, haverá um só rebanho e um só Pastor.",
+      "passages": [
+        {
+          "ref": "João 10:11–16",
+          "text": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas. Mas o mercenário, que não é pastor e a quem as ovelhas não pertencem, vê o lobo se aproximar, abandona as ovelhas e foge; então, o lobo as arrebata e as dispersa. O mercenário foge, pois é mercenário e não se preocupa com as ovelhas. Eu sou o bom Pastor; conheço as minhas ovelhas, e elas me conhecem a mim, Assim como o Pai me conhece, eu conheço o Pai; e dou a minha vida pelas ovelhas. Ainda tenho outras ovelhas, que não pertencem a este aprisco; é necessário que eu as conduza, e elas ouvirão a minha voz; assim, haverá um só rebanho e um só Pastor."
+        },
+        {
+          "ref": "João 6:32–37",
+          "text": "Jesus respondeu: \"Em verdade, em verdade vos digo: não foi Moisés quem vos deu o pão do céu; mas é meu Pai quem vos dá o verdadeiro pão do céu.\" Porque o pão de Deus é aquele que desce do céu e dá vida ao mundo. Senhor, dá-nos sempre desse pão, disseram então a Ele. Jesus lhes declarou: \"Eu sou o pão da vida; quem se aproxima de mim nunca sentirá fome, e quem crê em mim jamais terá sede.\" Mas eu já disse que, embora vocês me tenham visto, não creem. Todo aquele que o Pai me dá virá a mim; e o que vem a mim, de modo nenhum o lançarei fora."
+        },
+        {
+          "ref": "João 6:38–40",
+          "text": "Porque eu desci do céu, não para fazer a minha própria vontade, mas sim a vontade daquele que me enviou. E a vontade daquele que me enviou é esta: que eu não perca nenhum dos que me deu; mas que eu o ressuscite no último dia. E esta é a vontade daquele que me enviou: que todo homem que vê o Filho e nele crê tenha a vida eterna, e eu o ressuscitarei no último dia."
+        },
+        {
+          "ref": "João 7:37–39",
+          "text": "No último dia da festa, que era o grande dia, Jesus levantou-se e exclamou: \"Se alguém tem sede, venha a mim e beba.\" Quem crê em mim, como diz a Escritura, do seu interior brotarão rios de água viva. E ele se referia ao Espírito que os que nele cressem haveriam de receber, pois o Espírito Santo ainda não tinha sido dado, porque Jesus ainda não havia sido glorificado."
+        },
+        {
+          "ref": "João 8:31–36",
+          "text": "Jesus dizia, portanto, aos judeus que haviam crido nele: Se vós permanecerdes na minha palavra, verdadeiramente sereis meus discípulos; E conhecereis a verdade, e a verdade vos libertará. Responderam-lhe: Somos descendência de Abraão e jamais fomos escravos de alguém; como dizes tu: Sereis livres? Jesus respondeu: Em verdade, em verdade, eu vos digo que todo aquele que comete pecado é escravo do pecado. O servo não permanece na casa; ao contrário, o Filho permanece para sempre. Se, pois, o Filho vos libertar, de fato sereis livres."
+        },
+        {
+          "ref": "João 9:1–7",
+          "text": "E, ao passar, Jesus avistou um homem que era cego de nascença. E os seus discípulos lhe perguntaram: \"Mestre, quem pecou, ele ou seus pais, para que nascesse cego?\" Jesus respondeu: \"Nem ele pecou, nem seus pais; mas isso ocorreu para que se manifestem nele as obras de Deus.\" É necessário que façamos as obras daquele que me enviou, enquanto é dia; a noite vem, quando ninguém pode trabalhar. Enquanto permaneço no mundo, sou a luz do mundo. E, ao dizer isso, cuspiu na terra, fez lodo com a saliva e aplicou-o aos olhos do cego. Vai, lava-te no tanque de Siloé (que significa \"Enviado\"). Ele foi, lavou-se e voltou a ver."
+        },
+        {
+          "ref": "João 10:17–18",
+          "text": "Por isso o Pai me ama, porque eu dou a minha vida para a reassumir. Ninguém a tira de mim; pelo contrário, eu espontaneamente a dou de mim mesmo; tenho autoridade para a entregar e poder para reavê-la. Este mandamento recebi de meu Pai."
+        }
+      ],
+      "context": "Esta travessia revisa João 6 a 10. Jesus fala de um pão que vem do céu e, na festa, chama quem tem sede. Depois fala a quem havia crido, vê um homem cego de nascença e fala sobre ovelhas.",
+      "keyword": "Eu sou",
+      "keywordGloss": "Expressão com que Jesus se apresenta nos capítulos desta etapa.",
+      "focusQuestion": "Quando a fome, a sede ou o medo apertam, a quem você tem recorrido?",
+      "reflectionPrompts": [
+        "O pão que vem do céu",
+        "A palavra que liberta",
+        "A vida pelas ovelhas"
+      ],
+      "facts": [
+        {
+          "text": "Jesus diz que não foi Moisés quem deu o pão do céu, e sim o Pai.",
+          "evidenceRef": "João 6:32",
+          "evidenceSpan": "não foi Moisés quem vos deu o pão do céu"
+        },
+        {
+          "text": "Do interior de quem crê brotam rios de água viva.",
+          "evidenceRef": "João 7:38",
+          "evidenceSpan": "do seu interior brotarão rios de água viva"
+        },
+        {
+          "text": "Jesus não perde nenhum dos que o Pai lhe deu e o ressuscita no último dia.",
+          "evidenceRef": "João 6:39",
+          "evidenceSpan": "que eu não perca nenhum dos que me deu"
+        },
+        {
+          "text": "A verdade liberta quem a conhece.",
+          "evidenceRef": "João 8:32",
+          "evidenceSpan": "a verdade vos libertará"
+        },
+        {
+          "text": "Enquanto permanece no mundo, Jesus é a luz do mundo.",
+          "evidenceRef": "João 9:5",
+          "evidenceSpan": "sou a luz do mundo"
+        },
+        {
+          "text": "O bom Pastor entrega a sua vida pelas ovelhas.",
+          "evidenceRef": "João 10:11",
+          "evidenceSpan": "o bom Pastor entrega a sua vida pelas ovelhas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "pão da vida",
+          "gloss": "O nome com que Jesus se oferece a quem tem fome e a quem crê nele."
+        },
+        {
+          "term": "luz",
+          "gloss": "Jesus se apresenta assim enquanto permanece no mundo: a luz do mundo."
+        },
+        {
+          "term": "bom Pastor",
+          "gloss": "Quem entrega a vida pelas ovelhas, diferente de quem foge no perigo."
+        }
+      ],
+      "structure": [
+        {
+          "label": "O pão oferecido a quem tem fome",
+          "evidenceRef": "João 6:35"
+        },
+        {
+          "label": "A palavra que conduz à liberdade",
+          "evidenceRef": "João 8:32"
+        },
+        {
+          "label": "A luz diante do cego de nascença",
+          "evidenceRef": "João 9:5"
+        },
+        {
+          "label": "A vida entregue pelas ovelhas",
+          "evidenceRef": "João 10:11"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "propósito",
+          "text": "Jesus desceu do céu para fazer a vontade de quem o enviou, não a sua.",
+          "marker": "para",
+          "evidenceRef": "João 6:38"
+        },
+        {
+          "kind": "contraste",
+          "text": "O mercenário vê o lobo, abandona as ovelhas e foge.",
+          "marker": "Mas",
+          "evidenceRef": "João 10:12"
+        },
+        {
+          "kind": "causa",
+          "text": "O Espírito ainda não tinha sido dado porque Jesus não havia sido glorificado.",
+          "marker": "porque",
+          "evidenceRef": "João 7:39"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 8:12",
+          "bridge": "Jesus é a luz",
+          "text": "Jesus lhes falou novamente, dizendo: Eu sou a luz do mundo; quem me segue não andará nas trevas; antes, terá a luz da vida."
+        },
+        {
+          "ref": "João 5:24",
+          "bridge": "Vida eterna de quem crê",
+          "text": "Em verdade, em verdade vos digo que quem ouve a minha palavra e crê naquele que me enviou tem a vida eterna, não entra em juízo, mas já passou da morte para a vida."
+        },
+        {
+          "ref": "João 10:27–28",
+          "bridge": "Ovelhas ouvem a voz",
+          "text": "As minhas ovelhas ouvem a minha voz; eu as conheço, e elas me seguem. E lhes dou a vida eterna; jamais se perderão, e ninguém as arrebatará da minha mão."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Moisés deu ao povo o verdadeiro pão do céu.",
+          "why": "Jesus diz o contrário: não foi Moisés; é o Pai quem dá o verdadeiro pão (6:32)."
+        },
+        {
+          "text": "O homem nasceu cego por pecado dele ou dos pais.",
+          "why": "Jesus nega as duas hipóteses e diz que isso ocorreu para as obras de Deus (9:3)."
+        },
+        {
+          "text": "Quem descende de Abraão já é livre e não precisa do Filho.",
+          "why": "Eles dizem que nunca foram escravos, mas só fica livre quem o Filho liberta (8:36)."
+        }
+      ],
+      "centralInsight": "Jesus diz quem é: pão, luz, pastor",
+      "anchorQuestion": "Que nomes Jesus usa para si ao falar do alimento, da visão e das ovelhas?",
+      "relatedVerses": [
+        {
+          "reference": "João 8:12",
+          "reason": "Jesus é a luz"
+        },
+        {
+          "reference": "João 5:24",
+          "reason": "Vida eterna de quem crê"
+        },
+        {
+          "reference": "João 10:27–28",
+          "reason": "Ovelhas ouvem a voz"
+        }
+      ]
+    },
+    "joc-boss-3": {
+      "slug": "joc-boss-3",
+      "passageRef": "João 15:12–17",
+      "passageText": "O meu mandamento é este: que vocês se amem mutuamente, assim como eu os amei. Ninguém tem maior amor do que este: dar a própria vida pelos seus amigos. Vocês são meus amigos, se fizerem o que eu mando. Já não os chamo de servos, porque o servo não sabe o que faz o seu senhor; mas eu os chamei de amigos, porque tudo o que ouvi do meu Pai eu lhes tornei conhecido. Não fostes vós que me escolhestes, mas eu vos escolhi e designei-vos para que vades e deis fruto, e que o vosso fruto permaneça; para que tudo o que pedirdes ao Pai em meu nome, ele vo-lo conceda. Isso eu vos ordeno: que vos ameis uns aos outros.",
+      "passages": [
+        {
+          "ref": "João 15:12–17",
+          "text": "O meu mandamento é este: que vocês se amem mutuamente, assim como eu os amei. Ninguém tem maior amor do que este: dar a própria vida pelos seus amigos. Vocês são meus amigos, se fizerem o que eu mando. Já não os chamo de servos, porque o servo não sabe o que faz o seu senhor; mas eu os chamei de amigos, porque tudo o que ouvi do meu Pai eu lhes tornei conhecido. Não fostes vós que me escolhestes, mas eu vos escolhi e designei-vos para que vades e deis fruto, e que o vosso fruto permaneça; para que tudo o que pedirdes ao Pai em meu nome, ele vo-lo conceda. Isso eu vos ordeno: que vos ameis uns aos outros."
+        },
+        {
+          "ref": "João 11:21–27",
+          "text": "Disse então Marta a Jesus: Senhor, se estivesses aqui, meu irmão não teria morrido. Mas também sei que, mesmo agora, tudo o que pedires a Deus, Deus te concederá. Jesus lhe declarou: Teu irmão irá ressurgir. Marta lhe respondeu: Eu sei que ele há de ressurgir na ressurreição, no último dia. Disse-lhe Jesus: Eu sou a ressurreição e a vida; aquele que crê em mim, ainda que morra, viverá. E todo aquele que vive e crê em mim não morrerá para sempre. Você crê nisso? Disse ela: Sim, Senhor, eu creio que tu és o Cristo, o Filho de Deus que havia de vir ao mundo."
+        },
+        {
+          "ref": "João 12:23–28",
+          "text": "E Jesus lhes respondeu: Chegou a hora em que o Filho do Homem será glorificado. Em verdade, em verdade vos digo: se o grão de trigo, caindo na terra, não morrer, permanecerá só; mas, se morrer, produzirá abundantes frutos. Quem ama a sua vida a perderá; mas aquele que aborrece a sua vida neste mundo a preservará para a vida eterna. Se alguém me serve, siga-me, e, onde eu estou, ali estará também o meu servo. E, se alguém me servir, o Pai o honrará. Agora, a minha alma está angustiada; e que direi eu? Pai, salva-me desta hora; mas foi para isso que vim a esta hora. Pai, glorifica o teu nome. Então, veio uma voz do céu, que disse: Já o glorifiquei e ainda o glorificarei."
+        },
+        {
+          "ref": "João 13:3–10",
+          "text": "Jesus, ciente de que o Pai entregara todas as coisas às suas mãos, e que viera de Deus, e voltava para Deus, Levantou-se da mesa, despindo-se de suas vestes e, pegando uma toalha, cingiu-se com ela. Depois, derramou água na bacia e começou a lavar os pés dos discípulos, enxugando-os com a toalha que estava à cintura. Aproximou-se, então, de Simão Pedro, e este lhe disse: Senhor, você vai me lavar os pés a mim? Jesus respondeu: \"O que estou fazendo você não entende agora; compreendê-lo-á mais tarde.\" Disse-lhe Pedro: Nunca vai me lavar os pés. Respondeu-lhe Jesus: Se eu não os lavar, você não terá parte comigo. Senhor, não apenas os meus pés, mas também as minhas mãos e a minha cabeça. Disse-lhe Jesus: Aquele que já se banhou não precisa se lavar, exceto os pés; quanto ao mais, está todo limpo. Ora, vocês estão limpos, mas não todos."
+        },
+        {
+          "ref": "João 14:15–21",
+          "text": "Se vós me amais, guardareis os meus mandamentos. E eu pedirei ao Pai, e Ele vos dará outro Consolador, para que esteja convosco para sempre. O Espírito da verdade, que o mundo não pode receber, porque não o vê, nem o conhece; mas vós o conheceis, pois ele habita convosco e estará em vós. Não os deixarei órfãos, voltarei para vocês. Ainda por pouco, e o mundo não me verá mais; mas vós, porém, me vereis; porque eu vivo, vocês também viverão. Naquele dia, vocês saberão que eu estou em meu Pai, vocês em mim, e eu em vocês. Aquele que tem os meus mandamentos e os guarda, esse é o que me ama; e aquele que me ama será amado por meu Pai, e eu também o amarei e me manifestarei a ele."
+        }
+      ],
+      "context": "Esta travessia revisa João 11 a 15. Marta fala da morte do irmão. Jesus anuncia a hora, lava os pés, promete o Consolador e chama os discípulos de amigos.",
+      "keyword": "amor entregue",
+      "keywordGloss": "O amor de Jesus, que dá a vida e pede o mesmo entre os seus.",
+      "focusQuestion": "Quando amar custa uma entrega, o que você ainda guarda só para si?",
+      "reflectionPrompts": [
+        "Jesus diante da morte",
+        "A hora e o serviço",
+        "Amigos que ele escolhe"
+      ],
+      "facts": [
+        {
+          "text": "Jesus declara a Marta que o irmão dela irá ressurgir.",
+          "evidenceRef": "João 11:23",
+          "evidenceSpan": "Teu irmão irá ressurgir"
+        },
+        {
+          "text": "Jesus diz a Marta que ele é a ressurreição e a vida.",
+          "evidenceRef": "João 11:25",
+          "evidenceSpan": "Eu sou a ressurreição e a vida"
+        },
+        {
+          "text": "A voz do céu diz que já glorificou o nome e ainda o glorificará.",
+          "evidenceRef": "João 12:28",
+          "evidenceSpan": "Já o glorifiquei e ainda o glorificarei"
+        },
+        {
+          "text": "Jesus começa a lavar os pés dos discípulos.",
+          "evidenceRef": "João 13:5",
+          "evidenceSpan": "começou a lavar os pés dos discípulos"
+        },
+        {
+          "text": "Jesus anuncia que o Pai dará outro Consolador para estar com os discípulos.",
+          "evidenceRef": "João 14:16",
+          "evidenceSpan": "vos dará outro Consolador"
+        },
+        {
+          "text": "Jesus diz que o maior amor é dar a própria vida pelos amigos.",
+          "evidenceRef": "João 15:13",
+          "evidenceSpan": "dar a própria vida pelos seus amigos"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "ressurreição",
+          "gloss": "Jesus não aponta só um dia futuro: ele diz que ele mesmo é a ressurreição e a vida."
+        },
+        {
+          "term": "Consolador",
+          "gloss": "Aquele que Jesus pede ao Pai para ficar com os discípulos para sempre."
+        },
+        {
+          "term": "amigos",
+          "gloss": "O nome que Jesus dá a quem ele escolheu e a quem ele manda amar."
+        }
+      ],
+      "structure": [
+        {
+          "label": "Jesus se revela a Marta como vida",
+          "evidenceRef": "João 11:25"
+        },
+        {
+          "label": "A hora chega e o grão explica a morte",
+          "evidenceRef": "João 12:23–24"
+        },
+        {
+          "label": "O Mestre se levanta e lava os pés",
+          "evidenceRef": "João 13:4–5"
+        },
+        {
+          "label": "Jesus chama os seus de amigos",
+          "evidenceRef": "João 15:14–15"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "Se o grão não morre, fica só; se morre, produz abundantes frutos.",
+          "marker": "mas",
+          "evidenceRef": "João 12:24"
+        },
+        {
+          "kind": "propósito",
+          "text": "Jesus diz que veio para esta hora, mesmo com a alma angustiada.",
+          "marker": "para",
+          "evidenceRef": "João 12:27"
+        },
+        {
+          "kind": "causa",
+          "text": "O mundo não pode receber o Espírito porque não o vê nem o conhece.",
+          "marker": "porque",
+          "evidenceRef": "João 14:17"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 10:11",
+          "bridge": "Jesus entrega a sua vida",
+          "text": "Eu sou o bom Pastor; o bom Pastor entrega a sua vida pelas ovelhas."
+        },
+        {
+          "ref": "João 13:34",
+          "bridge": "Mandamento de amar como ele",
+          "text": "Um novo mandamento eu vos dou: que vos ameis uns aos outros; assim como eu vos amei, que também vós ameis uns aos outros."
+        },
+        {
+          "ref": "João 14:26",
+          "bridge": "O Pai envia o Consolador",
+          "text": "Mas o Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas e vos lembrará de tudo o que tenho dito a vocês."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "Jesus lava os pés porque ainda não sabia que voltava para o Pai.",
+          "why": "João 13:3 diz que ele sabia: viera de Deus e voltava para Deus. Só então se levanta e serve."
+        },
+        {
+          "text": "O grão que morre deixa de produzir fruto.",
+          "why": "João 12:24 diz o contrário: se não morrer, fica só; se morrer, produz abundantes frutos."
+        },
+        {
+          "text": "Os discípulos viraram amigos porque foram eles que escolheram Jesus.",
+          "why": "João 15:16 diz que não foram eles. Jesus é quem os escolheu e os chamou de amigos."
+        }
+      ],
+      "centralInsight": "Na hora de Jesus, o amor se entrega",
+      "anchorQuestion": "O que Jesus diz que é o maior amor?",
+      "relatedVerses": [
+        {
+          "reference": "João 10:11",
+          "reason": "Jesus entrega a sua vida"
+        },
+        {
+          "reference": "João 13:34",
+          "reason": "Mandamento de amar como ele"
+        },
+        {
+          "reference": "João 14:26",
+          "reason": "O Pai envia o Consolador"
+        }
+      ]
+    },
+    "joc-boss-4": {
+      "slug": "joc-boss-4",
+      "passageRef": "João 20:24–29",
+      "passageText": "Tomé, um dos doze, chamado Dídimo, não estava com eles quando veio Jesus. Disseram-lhe, então, os outros discípulos: \"Vimos o Senhor.\" Mas ele respondeu: \"Se eu não vir nas mãos dele as marcas dos cravos, e não colocar meu dedo nos lugares dos cravos, e não colocar minha mão no seu lado, de modo algum acreditarei.\" Oito dias depois, os discípulos estavam novamente reunidos, e Tomé estava com eles. Jesus entrou, mesmo com as portas trancadas, e pôs-se no meio deles, dizendo: Paz seja com vocês. Depois disse a Tomé: Ponha aqui o seu dedo e veja as minhas mãos; aproxime também a sua mão e coloque-a no meu lado; não seja incrédulo, mas crente. Tomé respondeu e disse-lhe: Meu Senhor e meu Deus! Disse-lhe Jesus: Porque me viste, Tomé, creste; bem-aventurados os que não viram e creram.",
+      "passages": [
+        {
+          "ref": "João 20:24–29",
+          "text": "Tomé, um dos doze, chamado Dídimo, não estava com eles quando veio Jesus. Disseram-lhe, então, os outros discípulos: \"Vimos o Senhor.\" Mas ele respondeu: \"Se eu não vir nas mãos dele as marcas dos cravos, e não colocar meu dedo nos lugares dos cravos, e não colocar minha mão no seu lado, de modo algum acreditarei.\" Oito dias depois, os discípulos estavam novamente reunidos, e Tomé estava com eles. Jesus entrou, mesmo com as portas trancadas, e pôs-se no meio deles, dizendo: Paz seja com vocês. Depois disse a Tomé: Ponha aqui o seu dedo e veja as minhas mãos; aproxime também a sua mão e coloque-a no meu lado; não seja incrédulo, mas crente. Tomé respondeu e disse-lhe: Meu Senhor e meu Deus! Disse-lhe Jesus: Porque me viste, Tomé, creste; bem-aventurados os que não viram e creram."
+        },
+        {
+          "ref": "João 16:17–22",
+          "text": "Então, alguns dos seus discípulos disseram uns aos outros: O que significa isto que ele nos diz: Um pouco, e não mais me verão; e outra vez, um pouco, e me verão; e: por que vou para o Pai? Diziam, então: O que significa isso: Um pouco? Não entendemos o que ele quer dizer. Jesus, percebendo que desejavam interrogá-lo, perguntou-lhes: \"Vocês estão indagando entre si a respeito do que eu disse: ‘Um pouco, e não me vereis, e outra vez um pouco, e me vereis?’\" Na verdade, eu vos digo que chorareis e lamentareis, mas o mundo se alegrará; vós ficareis tristes, porém a vossa tristeza se converterá em alegria. A mulher, quando está para dar à luz, tem tristeza, pois chegou a sua hora; mas, após ter dado à luz o menino, já não se lembra da aflição, pelo prazer de ter trazido um homem ao mundo. Assim também vós agora, de fato, tendes tristeza; mas em breve vos verei novamente, e o vosso coração se alegrará, e a vossa alegria ninguém poderá tirar."
+        },
+        {
+          "ref": "João 17:20–25",
+          "text": "E não rogo apenas por estes, mas também por aqueles que hão de crer em mim, por intermédio da sua palavra. Para que todos sejam um, assim como Tu, ó Pai, estás em mim e eu em Ti; que eles também sejam um em nós, para que o mundo creia que Tu me enviaste. Eu lhes tenho transmitido a glória que me tens dado, para que sejam um, como nós o somos. Eu neles, e Tu em mim, a fim de que sejam aperfeiçoados na unidade, para que o mundo conheça que Tu me enviaste e os amaste, como também me amaste. Pai, aqueles que me deste, desejo que, onde eu estiver, também estejam comigo, para que vejam a minha glória que me conferiste, pois me amaste antes da fundação do mundo. Pai justo, o mundo não Te conheceu; mas eu Te conheci, e estes compreenderam que Tu me enviaste."
+        },
+        {
+          "ref": "João 18:33–38",
+          "text": "Pilatos voltou a entrar no pretório, chamou Jesus e perguntou: Você é o rei dos judeus? Jesus respondeu: Você faz essa pergunta por conta própria ou foram outros que falaram isso a meu respeito? Pilatos respondeu: Sou eu judeu? A tua própria nação e os principais sacerdotes são os que te entregaram a mim. O que fizeste? Respondeu Jesus: Meu reino não é deste mundo; se meu reino fosse deste mundo, meus ministros se empenhariam para que eu não fosse entregue aos judeus. Mas agora, meu reino não é daqui. Disse-lhe, então, Pilatos: \"Então, tu és rei?\" Jesus respondeu: \"Tu dizes que eu sou rei. Para isso nasci e para isso vim ao mundo, a fim de dar testemunho da verdade. Todo o que é da verdade ouve a minha voz.\" Disse Pilatos: O que é a verdade? E, ao dizer isso, voltou novamente aos judeus e lhes disse: Não encontro nele crime algum."
+        },
+        {
+          "ref": "João 19:16–21",
+          "text": "Então, Pilatos o entregou para que fosse crucificado, e levaram Jesus. E, carregando a cruz, saiu para o lugar chamado Caveira, que em hebraico é chamado de Gólgota. Onde o crucificaram e com ele outros dois, um de cada lado, e Jesus no meio. E Pilatos também escreveu um título e o colocou no cimo da cruz; nele estava escrito: JESUS NAZARENO, O REI DOS JUDEUS. E muitos judeus leram este título, pois o lugar onde Jesus foi crucificado era próximo da cidade; e estava escrito em hebraico, latim e grego. Os principais sacerdotes dos judeus disseram a Pilatos: \"Não escrevas: Rei dos judeus, mas sim que ele afirmou 'Sou o rei dos judeus.'\""
+        },
+        {
+          "ref": "João 21:12–17",
+          "text": "Jesus lhes disse: Vinde, comei. E nenhum dos discípulos ousava perguntar-lhe: Quem és tu? porque sabiam que era o Senhor. Jesus chegou, pegou o pão e o ofereceu a eles da mesma forma que fez com o peixe. E esta era a terceira vez que Jesus se manifestava aos seus discípulos, depois de ter ressuscitado dentre os mortos. Depois de terem comido, Jesus perguntou a Simão Pedro: Simão, filho de Jonas, tu me amas mais do que estes? Ele respondeu: Sim, Senhor; tu sabes que eu te amo. Jesus disse: Apascenta as minhas ovelhas. Perguntou-lhe pela segunda vez: Simão, filho de Jonas, tu me amas? Ele respondeu: Sim, Senhor; tu sabes que eu te amo. Jesus disse: Apascenta as minhas ovelhas. Jesus lhe perguntou pela terceira vez: Simão, filho de Jonas, tu me amas? Simão se entristeceu por ele ter perguntado pela terceira vez: Tu me amas? E respondeu: Senhor, tu sabes todas as coisas; tu sabes que eu te amo. Jesus lhe disse: Apascenta as minhas ovelhas."
+        }
+      ],
+      "context": "Esta travessia revisa João 16 a 21. Jesus fala da tristeza dos discípulos e ora pelos que vão crer. Diante de Pilatos, explica o seu reino. Na cruz há um título. Depois, Tomé está na sala e Pedro responde a Jesus.",
+      "keyword": "crer",
+      "keywordGloss": "A resposta que Jesus espera de quem ouve a palavra, mesmo sem ter visto.",
+      "focusQuestion": "Quando você ainda não vê o que espera, em quem a sua fé se apoia?",
+      "reflectionPrompts": [
+        "A tristeza que vira alegria",
+        "O reino que não é daqui",
+        "A pergunta feita a Pedro"
+      ],
+      "facts": [
+        {
+          "text": "A tristeza dos discípulos se converterá em alegria.",
+          "evidenceRef": "João 16:20",
+          "evidenceSpan": "a vossa tristeza se converterá em alegria"
+        },
+        {
+          "text": "Jesus ora também pelos que hão de crer por meio da palavra.",
+          "evidenceRef": "João 17:20",
+          "evidenceSpan": "por aqueles que hão de crer em mim"
+        },
+        {
+          "text": "Jesus diz que o seu reino não é deste mundo.",
+          "evidenceRef": "João 18:36",
+          "evidenceSpan": "Meu reino não é deste mundo"
+        },
+        {
+          "text": "O título na cruz chama Jesus de Rei dos judeus.",
+          "evidenceRef": "João 19:19",
+          "evidenceSpan": "JESUS NAZARENO, O REI DOS JUDEUS"
+        },
+        {
+          "text": "Tomé chama Jesus de Senhor e de Deus.",
+          "evidenceRef": "João 20:28",
+          "evidenceSpan": "Meu Senhor e meu Deus"
+        },
+        {
+          "text": "Jesus manda Pedro apascentar as suas ovelhas.",
+          "evidenceRef": "João 21:15",
+          "evidenceSpan": "Apascenta as minhas ovelhas"
+        }
+      ],
+      "keyTerms": [
+        {
+          "term": "alegria",
+          "gloss": "O que a tristeza dos discípulos vem a ser, e que ninguém pode tirar."
+        },
+        {
+          "term": "verdade",
+          "gloss": "Aquilo de que Jesus veio dar testemunho, e que quem é dela ouve a voz dele."
+        },
+        {
+          "term": "Senhor",
+          "gloss": "O nome com que os discípulos reconhecem Jesus e com que Tomé o confessa."
+        }
+      ],
+      "structure": [
+        {
+          "label": "A tristeza anunciada se converte em alegria",
+          "evidenceRef": "João 16:20–22"
+        },
+        {
+          "label": "Jesus ora pela unidade de quem crê",
+          "evidenceRef": "João 17:20–23"
+        },
+        {
+          "label": "O título da cruz apresenta Jesus como Rei",
+          "evidenceRef": "João 19:19–21"
+        },
+        {
+          "label": "Quem viu e quem não viu é chamado a crer",
+          "evidenceRef": "João 20:27–29"
+        }
+      ],
+      "relations": [
+        {
+          "kind": "contraste",
+          "text": "A tristeza dos discípulos não fica: ela se converte em alegria.",
+          "marker": "porém",
+          "evidenceRef": "João 16:20"
+        },
+        {
+          "kind": "propósito",
+          "text": "A unidade tem um fim fora do grupo: que o mundo creia.",
+          "marker": "para",
+          "evidenceRef": "João 17:21"
+        },
+        {
+          "kind": "contraste",
+          "text": "Jesus não deixa Tomé incrédulo: chama-o a ser crente.",
+          "marker": "mas",
+          "evidenceRef": "João 20:27"
+        }
+      ],
+      "crossRefs": [
+        {
+          "ref": "João 15:11",
+          "bridge": "Alegria que permanece",
+          "text": "Eu lhes disse estas coisas para que a minha alegria esteja em vocês, e que a alegria de vocês seja plena."
+        },
+        {
+          "ref": "João 20:31",
+          "bridge": "Escrito para que creiam",
+          "text": "Estes foram escritos para que vocês creiam que Jesus é o Cristo, o Filho de Deus, e para que, ao crerem, tenham vida em seu nome."
+        },
+        {
+          "ref": "João 21:19",
+          "bridge": "Chamado a seguir Jesus",
+          "text": "E disse isso, indicando o tipo de morte com que ele glorificaria a Deus. E, após dizer isso, acrescentou-lhe: Segue-me."
+        }
+      ],
+      "misreadings": [
+        {
+          "text": "A alegria prometida significa que os discípulos não vão chorar.",
+          "why": "Jesus diz que eles chorarão e ficarão tristes; a alegria vem quando a tristeza se converte."
+        },
+        {
+          "text": "O reino de Jesus é um reino político como os deste mundo.",
+          "why": "Ele diz que o reino não é deste mundo e que agora não é daqui."
+        },
+        {
+          "text": "Só pode crer quem viu Jesus do modo como Tomé viu.",
+          "why": "Jesus chama de bem-aventurados os que não viram e creram."
+        }
+      ],
+      "centralInsight": "Tudo foi escrito para que você creia",
+      "anchorQuestion": "O que Jesus diz em João 20:29 sobre os que não viram e creram?",
+      "relatedVerses": [
+        {
+          "reference": "João 15:11",
+          "reason": "Alegria que permanece"
+        },
+        {
+          "reference": "João 20:31",
+          "reason": "Escrito para que creiam"
+        },
+        {
+          "reference": "João 21:19",
+          "reason": "Chamado a seguir Jesus"
+        }
+      ]
+    }
+  }
+}

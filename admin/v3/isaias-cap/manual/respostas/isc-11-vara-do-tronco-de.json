@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Isaías 11:1–6",
+    "passages": [
+      { "ref": "Isaías 11:1–6" },
+      { "ref": "Isaías 11:7–9" }
+    ],
+    "context": "Do tronco de Jessé brota um renovo. O Espírito do Senhor repousa sobre ele; justiça e paz marcam o monte santo.",
+    "keyword": "renovo",
+    "keywordGloss": "O broto das raízes de Jessé sobre quem o Espírito repousa.",
+    "focusQuestion": "Você espera justiça e paz desse renovo, ou ainda julga só pela aparência?",
+    "reflectionPrompts": ["Tronco de Jessé", "Espírito sobre ele", "Monte santo"],
+    "facts": [
+      {
+        "text": "Um rebento surgirá do tronco de Jessé e das raízes brotará um renovo.",
+        "evidenceRef": "Isaías 11:1",
+        "evidenceSpan": "Um rebento surgirá do tronco de Jessé"
+      },
+      {
+        "text": "O Espírito do Senhor repousará sobre ele: sabedoria, entendimento, conselho, fortaleza, conhecimento e temor.",
+        "evidenceRef": "Isaías 11:2",
+        "evidenceSpan": "repousará sobre ele o Espírito do SENHOR"
+      },
+      {
+        "text": "Ele não julgará pela aparência nem reprimirá pelo ouvir.",
+        "evidenceRef": "Isaías 11:3",
+        "evidenceSpan": "ele não julgará pela aparência, nem reprimirá com base no que ouvir"
+      },
+      {
+        "text": "Julgará com justiça os pobres e com equidade os mansos.",
+        "evidenceRef": "Isaías 11:4",
+        "evidenceSpan": "ele julgará com justiça os pobres"
+      },
+      {
+        "text": "O lobo habitará com o cordeiro; um pequenino os guiará.",
+        "evidenceRef": "Isaías 11:6",
+        "evidenceSpan": "O lobo habitará com o cordeiro"
+      },
+      {
+        "text": "Não fará mal nem dano no monte santo, porque a terra se encherá do conhecimento do Senhor.",
+        "evidenceRef": "Isaías 11:9",
+        "evidenceSpan": "Não fará mal nem dano algum em todo o meu monte santo"
+      }
+    ],
+    "keyTerms": [
+      { "term": "renovo", "gloss": "O broto das raízes de Jessé." },
+      { "term": "justiça", "gloss": "Cinto dos lombos e critério do julgamento dos pobres." },
+      { "term": "Espírito", "gloss": "O que repousa sobre o renovo em sabedoria e temor." }
+    ],
+    "structure": [
+      { "label": "Rebento do tronco de Jessé", "evidenceRef": "Isaías 11:1" },
+      { "label": "Espírito e julgamento justo", "evidenceRef": "Isaías 11:2–5" },
+      { "label": "Paz entre criaturas", "evidenceRef": "Isaías 11:6–8" },
+      { "label": "Monte santo sem dano", "evidenceRef": "Isaías 11:9" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não julga pela aparência, mas com justiça os pobres.",
+        "marker": "Mas",
+        "evidenceRef": "Isaías 11:4"
+      },
+      {
+        "kind": "causa",
+        "text": "Não há dano no monte porque a terra se enche do conhecimento do Senhor.",
+        "marker": "porque",
+        "evidenceRef": "Isaías 11:9"
+      },
+      {
+        "kind": "resultado",
+        "text": "Sobre o renovo repousa o Espírito do Senhor.",
+        "marker": null,
+        "evidenceRef": "Isaías 11:2"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Romanos 15:12", "bridge": "Raiz de Jessé" },
+      { "ref": "Apocalipse 5:5", "bridge": "Raiz de Davi" },
+      { "ref": "Habacuque 2:14", "bridge": "Terra cheia do conhecimento" }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo do renovo se baseia em aparência e rumores.",
+        "why": "O v.3 nega julgar pela aparência ou pelo ouvir."
+      },
+      {
+        "text": "No monte santo ainda haverá mal e dano.",
+        "why": "O v.9 diz que não fará mal nem dano algum."
+      },
+      {
+        "text": "O Espírito não tem relação com o renovo.",
+        "why": "O v.2 diz que o Espírito do Senhor repousará sobre ele."
+      }
+    ],
+    "centralInsight": "Não prejudicarão nem destruirão em todo o meu santo monte.",
+    "anchorQuestion": "Segundo Isaías 11:1, de onde surgirá o rebento?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 11:1, o rebento surgirá do tronco de Jessé.",
+      "verseRef": "Isaías 11:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Um rebento surgirá do tronco de Jessé",
+      "feedbackCorrect": "A origem é o tronco de Jessé.",
+      "feedbackWrong": { "false": "Leia o início de Isaías 11:1." },
+      "hint": "Veja de onde surge o rebento.",
+      "learningObjective": "Observar a origem do rebento.",
+      "evidence": ["Isaías 11:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 11:2, toque o que repousará sobre ele.",
+      "verseRef": "Isaías 11:2",
+      "options": [
+        { "id": "a", "text": "Espírito do SENHOR" },
+        { "id": "b", "text": "sabedoria" },
+        { "id": "c", "text": "fortaleza" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "repousará sobre ele o Espírito do SENHOR",
+      "feedbackCorrect": "O Espírito do Senhor repousa sobre o renovo.",
+      "feedbackWrong": {
+        "b": "Sabedoria é um aspecto do Espírito; o sujeito que repousa é o Espírito.",
+        "c": "Fortaleza também descreve o Espírito; quem repousa é o Espírito."
+      },
+      "hint": "Veja o que repousa sobre ele.",
+      "learningObjective": "Identificar o Espírito sobre o renovo.",
+      "evidence": ["Isaías 11:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 11:9, o que encherá a terra?",
+      "verseRef": "Isaías 11:9",
+      "options": [
+        { "id": "a", "text": "O conhecimento do Senhor" },
+        { "id": "b", "text": "O dano no monte" },
+        { "id": "c", "text": "A aparência do juízo" },
+        { "id": "d", "text": "O sopro do perverso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra se encherá do conhecimento do Senhor",
+      "feedbackCorrect": "O conhecimento do Senhor enche a terra.",
+      "feedbackWrong": {
+        "b": "Não haverá dano no monte.",
+        "c": "Ele não julga pela aparência.",
+        "d": "O perverso é ferido no v.4."
+      },
+      "hint": "Leia a razão do fim do versículo.",
+      "learningObjective": "Notar o que enche a terra.",
+      "evidence": ["Isaías 11:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 11:1 na ordem do texto.",
+      "verseRef": "Isaías 11:1",
+      "options": [
+        { "id": "a", "text": "Um rebento surgirá do tronco de Jessé" },
+        { "id": "b", "text": "e das suas raízes" },
+        { "id": "c", "text": "brotará um renovo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Um rebento surgirá do tronco de Jessé",
+      "feedbackCorrect": "Rebento, raízes e renovo nessa ordem.",
+      "feedbackWrong": { "default": "Comece pelo rebento do tronco." },
+      "hint": "O versículo começa com Um rebento.",
+      "learningObjective": "Reconhecer a ordem de Isaías 11:1.",
+      "evidence": ["Isaías 11:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 11:5, A ___ será o cinto dos seus lombos.",
+      "verseRef": "Isaías 11:5",
+      "options": [
+        { "id": "a", "text": "justiça" },
+        { "id": "b", "text": "fidelidade" },
+        { "id": "c", "text": "rins" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A justiça será o cinto dos seus lombos",
+      "feedbackCorrect": "Justiça cinge o renovo.",
+      "feedbackWrong": {
+        "b": "Fidelidade é o cinto dos rins, não dos lombos.",
+        "c": "Rins recebem o cinto da fidelidade."
+      },
+      "hint": "É o primeiro cinto do versículo.",
+      "learningObjective": "Lembrar o cinto da justiça.",
+      "evidence": ["Isaías 11:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 11:1 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 11:1",
+      "passageA": { "ref": "Isaías 11:1", "text": "das suas raízes brotará um renovo" },
+      "passageB": { "ref": "Contexto", "text": "Do tronco aparentemente cortado nasce a esperança do Espírito." },
+      "options": [
+        { "id": "a", "text": "Renovo das raízes" },
+        { "id": "b", "text": "Tronco sem futuro" },
+        { "id": "c", "text": "Sem rebento algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "das suas raízes brotará um renovo",
+      "feedbackCorrect": "O renovo é a esperança que brota.",
+      "feedbackWrong": {
+        "b": "Há rebento e renovo.",
+        "c": "O texto afirma o brotar."
+      },
+      "hint": "Veja o que brota das raízes.",
+      "learningObjective": "Ligar o renovo ao contexto.",
+      "evidence": ["Isaías 11:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 11:3–4, o julgamento justo aparece sem contraste com a aparência.",
+      "verseRef": "Isaías 11:3–4",
+      "correctOptionId": "false",
+      "evidenceSpan": "Mas ele julgará com justiça os pobres",
+      "feedbackCorrect": "O \"Mas\" contrapõe aparência e justiça.",
+      "feedbackWrong": { "true": "Há um \"Mas\" abrindo o juízo justo." },
+      "hint": "Veja a primeira palavra do v.4.",
+      "learningObjective": "Compreender o contraste do juízo.",
+      "evidence": ["Isaías 11:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 11:4, toque a palavra que marca o contraste com a aparência.",
+      "verseRef": "Isaías 11:4",
+      "options": [
+        { "id": "a", "text": "Mas" },
+        { "id": "b", "text": "pobres" },
+        { "id": "c", "text": "perverso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas ele julgará com justiça os pobres",
+      "feedbackCorrect": "\"Mas\" introduz o juízo justo.",
+      "feedbackWrong": {
+        "b": "Pobres são beneficiados; o marcador é Mas.",
+        "c": "Perverso é julgado; o marcador abre o verso."
+      },
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["Isaías 11:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 11:3–4 relaciona aparência e justiça?",
+      "verseRef": "Isaías 11:3–4",
+      "options": [
+        { "id": "a", "text": "Não julga pela aparência; julga com justiça os pobres" },
+        { "id": "b", "text": "Julga só pela aparência" },
+        { "id": "c", "text": "Ignora os pobres e mansos" },
+        { "id": "d", "text": "A aparência basta para o juízo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ele não julgará pela aparência",
+      "feedbackCorrect": "Negação da aparência e afirmação da justiça.",
+      "feedbackWrong": {
+        "b": "O texto nega julgar pela aparência.",
+        "c": "Há juízo a favor dos pobres e mansos.",
+        "d": "Aparência é rejeitada."
+      },
+      "hint": "Compare o v.3 com o início do v.4.",
+      "learningObjective": "Relacionar aparência e justiça.",
+      "evidence": ["Isaías 11:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 11:1–9?",
+      "verseRef": "Isaías 11:1–2",
+      "options": [
+        { "id": "a", "text": "Rebento do tronco de Jessé" },
+        { "id": "b", "text": "Espírito e julgamento justo" },
+        { "id": "c", "text": "Paz no monte santo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Um rebento surgirá do tronco de Jessé",
+      "feedbackCorrect": "Origem, Espírito e paz sem dano.",
+      "feedbackWrong": { "default": "A paz do monte fecha o arco." },
+      "hint": "Comece pelo rebento.",
+      "learningObjective": "Ver a progressão da cena.",
+      "evidence": ["Isaías 11:1–2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 11:9, Não fará mal nem dano algum em todo o meu monte santo, ___ a terra se encherá do conhecimento do Senhor.",
+      "verseRef": "Isaías 11:9",
+      "options": [
+        { "id": "a", "text": "porque" },
+        { "id": "b", "text": "porém" },
+        { "id": "c", "text": "logo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque a terra se encherá do conhecimento do Senhor",
+      "feedbackCorrect": "\"Porque\" explica a ausência de dano.",
+      "feedbackWrong": {
+        "b": "A ligação é causal, não contrastiva.",
+        "c": "\"Logo\" não é a palavra do texto."
+      },
+      "hint": "É a palavra que introduz a razão.",
+      "learningObjective": "Lembrar o marcador causal do monte.",
+      "evidence": ["Isaías 11:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 11:1 a Romanos 15:12?",
+      "verseRef": "Isaías 11:1",
+      "passageA": { "ref": "Isaías 11:1", "text": "Um rebento surgirá do tronco de Jessé" },
+      "passageB": { "ref": "Romanos 15:12" },
+      "options": [
+        { "id": "a", "text": "Raiz de Jessé" },
+        { "id": "b", "text": "Tronco abandonado" },
+        { "id": "c", "text": "Sem esperança gentílica" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Um rebento surgirá do tronco de Jessé",
+      "feedbackCorrect": "Paulo cita a raiz de Jessé como esperança.",
+      "feedbackWrong": {
+        "b": "Há rebento e renovo.",
+        "c": "Romanos liga Jessé às nações."
+      },
+      "hint": "Compare Jessé.",
+      "learningObjective": "Ligar Jessé a Romanos.",
+      "evidence": ["Isaías 11:1", "Romanos 15:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 11:6–9 sustenta que ainda haverá mal e dano em todo o monte santo.",
+      "verseRef": "Isaías 11:9",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não fará mal nem dano algum em todo o meu monte santo",
+      "feedbackCorrect": "O texto nega mal e dano no monte santo.",
+      "feedbackWrong": { "true": "O v.9 afirma a ausência de mal e dano." },
+      "hint": "Leia o início de Isaías 11:9.",
+      "learningObjective": "Interpretar a paz do monte santo.",
+      "evidence": ["Isaías 11:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 11:9, toque o trecho que sustenta a razão da paz.",
+      "verseRef": "Isaías 11:9",
+      "options": [
+        { "id": "a", "text": "conhecimento do Senhor" },
+        { "id": "b", "text": "monte santo" },
+        { "id": "c", "text": "nem dano" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque a terra se encherá do conhecimento do Senhor",
+      "feedbackCorrect": "O conhecimento do Senhor explica a ausência de dano.",
+      "feedbackWrong": {
+        "b": "Monte santo é o lugar; a razão é o conhecimento.",
+        "c": "\"Nem dano\" é o efeito, não a causa."
+      },
+      "hint": "Veja o que vem depois de porque.",
+      "learningObjective": "Sustentar a razão da paz.",
+      "evidence": ["Isaías 11:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 11:1–9 sustenta?",
+      "verseRef": "Isaías 11:1",
+      "options": [
+        { "id": "a", "text": "O renovo de Jessé traz Espírito, justiça e paz sem dano" },
+        { "id": "b", "text": "O juízo se baseia em aparência" },
+        { "id": "c", "text": "O monte santo permanece violento" },
+        { "id": "d", "text": "Não há Espírito sobre o renovo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Um rebento surgirá do tronco de Jessé",
+      "feedbackCorrect": "Origem, Espírito, justiça e monte sem dano formam o arco.",
+      "feedbackWrong": {
+        "b": "Ele não julga pela aparência.",
+        "c": "Não fará mal nem dano.",
+        "d": "O Espírito repousa sobre ele."
+      },
+      "hint": "Una rebento, Espírito e monte.",
+      "learningObjective": "Escolher a leitura do arco.",
+      "evidence": ["Isaías 11:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga o renovo de Jessé na Escritura?",
+      "verseRef": "Isaías 11:1",
+      "options": [
+        { "id": "a", "text": "Surge o rebento de Jessé" },
+        { "id": "b", "text": "A raiz de Jessé esperança das nações" },
+        { "id": "c", "text": "O Leão da tribo de Judá, a Raiz de Davi" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Um rebento surgirá do tronco de Jessé",
+      "evidence": ["Isaías 11:1", "Romanos 15:12", "Apocalipse 5:5"],
+      "feedbackCorrect": "De Isaías a Paulo e ao Cordeiro vitorioso.",
+      "feedbackWrong": { "default": "Comece por Isaías; depois Romanos; enfim Apocalipse." },
+      "hint": "Siga Jessé → nações → Raiz de Davi.",
+      "learningObjective": "Encadear Jessé na Bíblia."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 11:1, e das suas raízes brotará um ___.",
+      "verseRef": "Isaías 11:1",
+      "options": [
+        { "id": "a", "text": "renovo" },
+        { "id": "b", "text": "lobo" },
+        { "id": "c", "text": "cinto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "das suas raízes brotará um renovo",
+      "feedbackCorrect": "Renovo é o termo teológico da esperança.",
+      "feedbackWrong": {
+        "b": "Lobo aparece na paz do v.6.",
+        "c": "Cinto aparece no v.5."
+      },
+      "hint": "O que brota das raízes?",
+      "learningObjective": "Lembrar o termo teológico do renovo.",
+      "evidence": ["Isaías 11:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 11:9 a Habacuque 2:14?",
+      "verseRef": "Isaías 11:9",
+      "passageA": { "ref": "Isaías 11:9", "text": "a terra se encherá do conhecimento do Senhor" },
+      "passageB": { "ref": "Habacuque 2:14" },
+      "options": [
+        { "id": "a", "text": "Terra cheia do conhecimento" },
+        { "id": "b", "text": "Terra vazia de Deus" },
+        { "id": "c", "text": "Só dano permanece" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra se encherá do conhecimento do Senhor",
+      "feedbackCorrect": "Os dois profetas anunciam a terra cheia do conhecimento.",
+      "feedbackWrong": {
+        "b": "Há enchimento, não vazio.",
+        "c": "Isaías nega dano no monte."
+      },
+      "hint": "Compare o enchimento da terra.",
+      "learningObjective": "Ligar o conhecimento a Habacuque.",
+      "evidence": ["Isaías 11:9", "Habacuque 2:14"]
+    }
+  ]
+}

@@ -1,0 +1,635 @@
+{
+  "study": {
+    "passageRef": "1 Coríntios 5:6–8",
+    "passages": [
+      { "ref": "1 Coríntios 5:6–8" },
+      { "ref": "1 Coríntios 6:18–20" },
+      { "ref": "1 Coríntios 7:7–9" },
+      { "ref": "1 Coríntios 8:1–3" },
+      { "ref": "1 Coríntios 5:1–5" },
+      { "ref": "1 Coríntios 6:12–17" },
+      { "ref": "1 Coríntios 7:1–6" },
+      { "ref": "1 Coríntios 8:4–9" }
+    ],
+    "context": "Esta Travessia revisa pureza e liberdade: fermento na massa, corpo como templo, dom no casamento e cuidado com o fraco.",
+    "keyword": "liberdade",
+    "keywordGloss": "Direitos e dons a serviço do amor, da pureza e do irmão fraco.",
+    "focusQuestion": "Onde sua liberdade precisa servir à pureza e ao cuidado com alguém mais frágil?",
+    "reflectionPrompts": [
+      "Novo fermento",
+      "Templo do corpo",
+      "Amor que edifica"
+    ],
+    "facts": [
+      {
+        "text": "Um pouco de fermento leveda toda a massa.",
+        "evidenceRef": "1 Coríntios 5:6",
+        "evidenceSpan": "um pouco de fermento leveda toda a massa"
+      },
+      {
+        "text": "Cristo, nosso Cordeiro pascal, foi oferecido em sacrifício.",
+        "evidenceRef": "1 Coríntios 5:7",
+        "evidenceSpan": "Cristo, nosso Cordeiro pascal, foi oferecido em sacrifício por nós"
+      },
+      {
+        "text": "O corpo é templo do Espírito Santo e não somos de nós mesmos.",
+        "evidenceRef": "1 Coríntios 6:19",
+        "evidenceSpan": "o vosso corpo é o templo do Espírito Santo"
+      },
+      {
+        "text": "Fostes comprados por preço; glorificai a Deus no corpo.",
+        "evidenceRef": "1 Coríntios 6:20",
+        "evidenceSpan": "fostes comprados por preço"
+      },
+      {
+        "text": "Cada um tem de Deus o seu próprio dom.",
+        "evidenceRef": "1 Coríntios 7:7",
+        "evidenceSpan": "cada um tem de Deus o seu próprio dom"
+      },
+      {
+        "text": "O saber incha, mas o amor edifica.",
+        "evidenceRef": "1 Coríntios 8:1",
+        "evidenceSpan": "O saber incha, mas o amor edifica"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "fermento",
+        "gloss": "Pouco contágio que afeta a massa inteira: imagem do pecado tolerado."
+      },
+      {
+        "term": "templo",
+        "gloss": "O corpo habitado pelo Espírito: não é propriedade privada."
+      },
+      {
+        "term": "edifica",
+        "gloss": "O amor constrói; o saber sozinho só incha."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Eliminar o velho fermento",
+        "evidenceRef": "1 Coríntios 5:6–8"
+      },
+      {
+        "label": "Corpo templo, comprados por preço",
+        "evidenceRef": "1 Coríntios 6:18–20"
+      },
+      {
+        "label": "Casamento e celibato como dons",
+        "evidenceRef": "1 Coríntios 7:7–9"
+      },
+      {
+        "label": "Saber, amor e cuidado com o fraco",
+        "evidenceRef": "1 Coríntios 8:1–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Eliminem o velho fermento para serem nova massa.",
+        "marker": "para",
+        "evidenceRef": "1 Coríntios 5:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Todas as coisas são lícitas, mas nem todas convêm nem devem dominar.",
+        "marker": "mas",
+        "evidenceRef": "1 Coríntios 6:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "O saber incha, mas o amor edifica.",
+        "marker": "mas",
+        "evidenceRef": "1 Coríntios 8:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 12:15",
+        "bridge": "Tirar o fermento"
+      },
+      {
+        "ref": "Romanos 12:1",
+        "bridge": "Corpo como culto"
+      },
+      {
+        "ref": "Gálatas 5:13",
+        "bridge": "Liberdade para servir"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Pecado tolerado na igreja não contamina o conjunto.",
+        "why": "Um pouco de fermento leveda toda a massa."
+      },
+      {
+        "text": "O corpo é meu; a impureza não importa.",
+        "why": "O corpo é templo do Espírito; fostes comprados por preço."
+      },
+      {
+        "text": "Quem sabe mais pode ignorar a consciência do fraco.",
+        "why": "O amor edifica; a liberdade não pode ser tropeço."
+      }
+    ],
+    "centralInsight": "A liberdade cristã serve ao amor e à pureza",
+    "anchorQuestion": "O que Paulo contrapõe ao saber que incha em 1 Coríntios 8:1?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 5:6, um pouco de fermento leveda toda a massa.",
+      "verseRef": "1 Coríntios 5:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "um pouco de fermento leveda toda a massa",
+      "feedbackCorrect": "Pouco fermento afeta a massa inteira: imagem do pecado tolerado.",
+      "feedbackWrong": {
+        "false": "Releia 5:6: um pouco de fermento leveda toda a massa."
+      },
+      "hint": "Olhe a pergunta retórica no fim.",
+      "learningObjective": "Observar o efeito do fermento na massa.",
+      "evidence": ["1 Coríntios 5:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 6:19, toque o que o corpo é chamado de ser.",
+      "verseRef": "1 Coríntios 6:19",
+      "options": [
+        { "id": "a", "text": "templo" },
+        { "id": "b", "text": "preço" },
+        { "id": "c", "text": "vós mesmos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o vosso corpo é o templo do Espírito Santo",
+      "feedbackCorrect": "O corpo é templo do Espírito Santo, recebido de Deus.",
+      "feedbackWrong": {
+        "b": "\"Preço\" aparece em 6:20; aqui o corpo é templo.",
+        "c": "\"Não sois de vós mesmos\" é a conclusão; o nome é templo."
+      },
+      "hint": "Procure a palavra depois de \"é o\".",
+      "learningObjective": "Identificar o corpo como templo.",
+      "evidence": ["1 Coríntios 6:19"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Coríntios 7:7, de onde vem o dom de cada um?",
+      "verseRef": "1 Coríntios 7:7",
+      "options": [
+        { "id": "a", "text": "Da rivalidade na igreja" },
+        { "id": "b", "text": "De Deus, o próprio dom de cada um" },
+        { "id": "c", "text": "Só do estado civil romano" },
+        { "id": "d", "text": "Do acaso, sem doador" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "cada um tem de Deus o seu próprio dom",
+      "feedbackCorrect": "Casamento e celibato são dons que vêm de Deus.",
+      "feedbackWrong": {
+        "a": "O texto aponta Deus, não a rivalidade.",
+        "c": "Não é o estado romano; é dom de Deus.",
+        "d": "Há doador: de Deus."
+      },
+      "hint": "Leia de quem cada um tem o dom.",
+      "learningObjective": "Observar que o dom vem de Deus.",
+      "evidence": ["1 Coríntios 7:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 8:1 na ordem do texto.",
+      "verseRef": "1 Coríntios 8:1",
+      "options": [
+        { "id": "a", "text": "Quanto às coisas sacrificadas aos ídolos" },
+        { "id": "b", "text": "sabemos que todos temos sabedoria" },
+        { "id": "c", "text": "O saber incha, mas o amor edifica" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O saber incha, mas o amor edifica",
+      "feedbackCorrect": "Tema, saber comum e o contraste saber/amor.",
+      "feedbackWrong": {
+        "default": "Comece pelo tema dos ídolos; o contraste fecha o versículo."
+      },
+      "hint": "O versículo começa pelo assunto.",
+      "learningObjective": "Reconhecer a sequência de 8:1.",
+      "evidence": ["1 Coríntios 8:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Coríntios 6:20, por que preço fostes adquiridos?",
+      "verseRef": "1 Coríntios 6:20",
+      "options": [
+        { "id": "a", "text": "favor" },
+        { "id": "b", "text": "preço" },
+        { "id": "c", "text": "acaso" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "fostes comprados por preço",
+      "feedbackCorrect": "Comprados por preço: o corpo e o espírito são de Deus.",
+      "feedbackWrong": {
+        "a": "O texto diz comprados por preço.",
+        "c": "Não é acaso; há preço de compra."
+      },
+      "hint": "Olhe a palavra depois de \"por\".",
+      "learningObjective": "Lembrar a compra por preço.",
+      "evidence": ["1 Coríntios 6:20"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Coríntios 5:7 comunica que se liga a este contexto?",
+      "verseRef": "1 Coríntios 5:7",
+      "passageA": { "ref": "1 Coríntios 5:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cristo é o Cordeiro pascal oferecido pela igreja."
+      },
+      "options": [
+        { "id": "a", "text": "Cordeiro pascal oferecido" },
+        { "id": "b", "text": "Fermento que deve ficar" },
+        { "id": "c", "text": "Massa sem Cristo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Cristo, nosso Cordeiro pascal, foi oferecido em sacrifício por nós",
+      "feedbackCorrect": "A nova massa existe porque o Cordeiro foi oferecido.",
+      "feedbackWrong": {
+        "b": "O chamado é eliminar o velho fermento.",
+        "c": "A razão da nova massa é Cristo oferecido."
+      },
+      "hint": "Veja quem é o Cordeiro pascal.",
+      "learningObjective": "Ligar a páscoa a Cristo.",
+      "evidence": ["1 Coríntios 5:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 7:9, toque o que é melhor do que viver em chamas.",
+      "verseRef": "1 Coríntios 7:9",
+      "options": [
+        { "id": "a", "text": "casem" },
+        { "id": "b", "text": "chamas" },
+        { "id": "c", "text": "dominar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "é melhor casar-se do que viver em chamas",
+      "feedbackCorrect": "Se não conseguem se dominar, que se casem.",
+      "feedbackWrong": {
+        "b": "\"Chamas\" é o que se evita; o melhor é casar-se.",
+        "c": "\"Dominar\" é a condição; a saída nomeada é casar."
+      },
+      "hint": "Procure o verbo do conselho.",
+      "learningObjective": "Observar o conselho a quem não se domina.",
+      "evidence": ["1 Coríntios 7:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Coríntios 6:18 na ordem do texto.",
+      "verseRef": "1 Coríntios 6:18",
+      "options": [
+        { "id": "a", "text": "Fujam da impureza" },
+        { "id": "b", "text": "Todo pecado que uma pessoa comete está fora do corpo" },
+        { "id": "c", "text": "mas aquele que pratica a imoralidade peca contra o próprio corpo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Fujam da impureza",
+      "feedbackCorrect": "Ordem de fugir, contraste geral, e o pecado contra o próprio corpo.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem \"Fujam\"; o contraste fecha o versículo."
+      },
+      "hint": "O versículo começa com o mandamento.",
+      "learningObjective": "Reconhecer a sequência de 6:18.",
+      "evidence": ["1 Coríntios 6:18"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 6:12, tudo o que é lícito também convém e pode dominar a pessoa.",
+      "verseRef": "1 Coríntios 6:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "Todas as coisas me são lícitas, mas nem todas me convêm",
+      "feedbackCorrect": "O \"mas\" limita: lícito não é o mesmo que conveniente ou senhor.",
+      "feedbackWrong": {
+        "true": "Releia 6:12: lícitas, mas nem todas convêm; nenhuma deve dominar."
+      },
+      "hint": "Repare nas duas vezes em que aparece \"mas\".",
+      "learningObjective": "Compreender o limite da liberdade.",
+      "evidence": ["1 Coríntios 6:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 5:7, toque a palavra que marca o propósito de eliminar o fermento.",
+      "verseRef": "1 Coríntios 5:7",
+      "options": [
+        { "id": "a", "text": "Portanto" },
+        { "id": "b", "text": "para" },
+        { "id": "c", "text": "Pois" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "para que vocês sejam uma nova massa",
+      "feedbackCorrect": "\"Para\" aponta o fim: serem nova massa, sem fermento.",
+      "feedbackWrong": {
+        "a": "\"Portanto\" abre o versículo; o propósito está em \"para\".",
+        "c": "\"Pois\" introduz a razão do Cordeiro; o propósito é \"para\"."
+      },
+      "hint": "Procure a palavra antes de \"que vocês sejam\".",
+      "learningObjective": "Reconhecer o marcador de propósito.",
+      "evidence": ["1 Coríntios 5:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Coríntios 8:9 se relaciona com 8:1?",
+      "verseRef": "1 Coríntios 8:1",
+      "options": [
+        { "id": "a", "text": "O amor que edifica cuida para a liberdade não ser tropeço" },
+        { "id": "b", "text": "O saber que incha autoriza ignorar o fraco" },
+        { "id": "c", "text": "Edificar e tropeçar são o mesmo gesto" },
+        { "id": "d", "text": "Liberdade cancela o chamado ao amor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O saber incha, mas o amor edifica",
+      "feedbackCorrect": "Amor que edifica se traduz em cuidado para não fazer o fraco cair.",
+      "feedbackWrong": {
+        "b": "8:9 manda cuidar do tropeço.",
+        "c": "Edificar e tropeçar são opostos.",
+        "d": "A liberdade é limitada pelo amor."
+      },
+      "hint": "Ligue \"edifica\" a \"tropeço\".",
+      "learningObjective": "Relacionar amor e cuidado com o fraco.",
+      "evidence": ["1 Coríntios 8:1", "1 Coríntios 8:9"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a etapa Pureza e liberdade?",
+      "verseRef": "1 Coríntios 5:7–8",
+      "options": [
+        { "id": "a", "text": "Eliminar o velho fermento" },
+        { "id": "b", "text": "Corpo templo, comprados por preço" },
+        { "id": "c", "text": "Saber, amor e cuidado com o fraco" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eliminem o velho fermento",
+      "feedbackCorrect": "Da pureza da massa ao templo do corpo e ao amor que edifica.",
+      "feedbackWrong": {
+        "default": "Comece pelo fermento (cap. 5); o cuidado com o fraco fecha (cap. 8)."
+      },
+      "hint": "Siga a ordem dos capítulos 5, 6 e 8.",
+      "learningObjective": "Compreender o arco da etapa.",
+      "evidence": ["1 Coríntios 5:7", "1 Coríntios 6:19", "1 Coríntios 8:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Coríntios 8:1, que palavra marca o contraste entre saber e amor?",
+      "verseRef": "1 Coríntios 8:1",
+      "options": [
+        { "id": "a", "text": "e" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "ou" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O saber incha, mas o amor edifica",
+      "feedbackCorrect": "\"Mas\" opõe inchamento e edificação.",
+      "feedbackWrong": {
+        "a": "O conector de contraste é \"mas\".",
+        "c": "Não é alternativa com \"ou\"; é \"mas\"."
+      },
+      "hint": "Procure a conjunção entre \"incha\" e \"o amor\".",
+      "learningObjective": "Notar o marcador de contraste.",
+      "evidence": ["1 Coríntios 8:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 5:7 a Êxodo 12:15?",
+      "verseRef": "1 Coríntios 5:7",
+      "passageA": { "ref": "1 Coríntios 5:7" },
+      "passageB": { "ref": "Êxodo 12:15" },
+      "options": [
+        { "id": "a", "text": "Tirar o fermento" },
+        { "id": "b", "text": "Guardar o velho fermento" },
+        { "id": "c", "text": "Páscoa sem Cordeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eliminem o velho fermento",
+      "feedbackCorrect": "Paulo relê a páscoa: tirar fermento porque o Cordeiro foi oferecido.",
+      "feedbackWrong": {
+        "b": "Os dois textos mandam remover o fermento.",
+        "c": "Há Cordeiro: Cristo foi oferecido."
+      },
+      "hint": "Compare a ordem sobre o fermento.",
+      "learningObjective": "Relacionar páscoa e pureza da igreja.",
+      "evidence": ["1 Coríntios 5:7", "Êxodo 12:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 7:7, toque a palavra que liga o desejo de Paulo à realidade dos dons.",
+      "verseRef": "1 Coríntios 7:7",
+      "options": [
+        { "id": "a", "text": "Gostaria" },
+        { "id": "b", "text": "no entanto" },
+        { "id": "c", "text": "homens" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "no entanto, cada um tem de Deus o seu próprio dom",
+      "feedbackCorrect": "\"No entanto\" marca a virada: cada um tem de Deus o seu próprio dom.",
+      "feedbackWrong": {
+        "a": "\"Gostaria\" é o desejo; a virada está em \"no entanto\".",
+        "c": "\"Homens\" é o objeto do desejo, não o conector."
+      },
+      "hint": "Procure a expressão que introduz \"cada um tem\".",
+      "learningObjective": "Reconhecer o contraste desejo/dom.",
+      "evidence": ["1 Coríntios 7:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se encadeiam os passos de 1 Coríntios 6:19–20?",
+      "verseRef": "1 Coríntios 6:19–20",
+      "options": [
+        { "id": "a", "text": "O corpo é templo do Espírito" },
+        { "id": "b", "text": "Não sois de vós mesmos" },
+        { "id": "c", "text": "Comprados por preço, glorificai a Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o vosso corpo é o templo do Espírito Santo",
+      "feedbackCorrect": "Templo, pertença e preço levam a glorificar a Deus no corpo.",
+      "feedbackWrong": {
+        "default": "Comece pelo templo; a glorificação fecha 6:20."
+      },
+      "hint": "A glorificação é o ponto de chegada.",
+      "learningObjective": "Compreender a lógica templo–preço–glória.",
+      "evidence": ["1 Coríntios 6:19–20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Coríntios 6:19–20, o corpo pode ser tratado como propriedade privada sem relação com Deus.",
+      "verseRef": "1 Coríntios 6:19–20",
+      "correctOptionId": "false",
+      "evidenceSpan": "não sois de vós mesmos",
+      "feedbackCorrect": "Templo do Espírito e compra por preço: o corpo é de Deus.",
+      "feedbackWrong": {
+        "true": "6:19–20: não sois de vós mesmos; fostes comprados por preço."
+      },
+      "hint": "Leia a quem o corpo pertence.",
+      "learningObjective": "Interpretar o corpo como pertencente a Deus.",
+      "evidence": ["1 Coríntios 6:19–20"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 5:8, toque o trecho que mostra com que \"pães\" celebrar.",
+      "verseRef": "1 Coríntios 5:8",
+      "options": [
+        { "id": "a", "text": "velho fermento" },
+        { "id": "b", "text": "sinceridade" },
+        { "id": "c", "text": "maldade" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "com os asmos da sinceridade e da verdade",
+      "feedbackCorrect": "A festa é com asmos de sinceridade e verdade, não com malícia.",
+      "feedbackWrong": {
+        "a": "O velho fermento é o que se rejeita.",
+        "c": "Maldade e malícia são o fermento a evitar."
+      },
+      "hint": "Olhe o fim do versículo.",
+      "learningObjective": "Sustentar a celebração em sinceridade e verdade.",
+      "evidence": ["1 Coríntios 5:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura esta Travessia sustenta sobre liberdade cristã?",
+      "verseRef": "1 Coríntios 8:9",
+      "options": [
+        { "id": "a", "text": "Serve à pureza, ao templo do corpo e ao fraco" },
+        { "id": "b", "text": "Autoriza tolerar o fermento na massa" },
+        { "id": "c", "text": "Torna o corpo propriedade só minha" },
+        { "id": "d", "text": "Permite ignorar a consciência fraca" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a sua liberdade não se torne, de algum modo, um tropeço para os fracos",
+      "feedbackCorrect": "Liberdade sem amor e sem pureza deixa de ser cristã.",
+      "feedbackWrong": {
+        "b": "5:6–7 manda eliminar o fermento.",
+        "c": "6:19–20: não sois de vós mesmos.",
+        "d": "8:9: a liberdade não pode ser tropeço."
+      },
+      "hint": "Una caps. 5, 6 e 8.",
+      "learningObjective": "Escolher a leitura sustentável da etapa.",
+      "evidence": ["1 Coríntios 8:9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do corpo entregue a Deus?",
+      "verseRef": "1 Coríntios 6:20",
+      "options": [
+        { "id": "a", "text": "Fostes comprados; glorificai no corpo" },
+        { "id": "b", "text": "Apresentai o corpo como culto vivo" },
+        { "id": "c", "text": "Liberdade para servir pelo amor" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "glorificai a Deus no vosso corpo",
+      "feedbackCorrect": "Do preço em Coríntios ao culto em Romanos e ao serviço em Gálatas.",
+      "feedbackWrong": {
+        "default": "Siga: 1 Co 6:20 → Rm 12:1 → Gl 5:13."
+      },
+      "hint": "Comece pela compra por preço.",
+      "learningObjective": "Ver o corpo e a liberdade como fio bíblico.",
+      "evidence": ["1 Coríntios 6:20", "Romanos 12:1", "Gálatas 5:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Coríntios 5:6, que palavra nomeia o pouco que contamina a massa?",
+      "verseRef": "1 Coríntios 5:6",
+      "options": [
+        { "id": "a", "text": "fermento" },
+        { "id": "b", "text": "trigo" },
+        { "id": "c", "text": "sal" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um pouco de fermento leveda toda a massa",
+      "feedbackCorrect": "O fermento é a imagem do pecado que se espalha.",
+      "feedbackWrong": {
+        "b": "O texto fala de fermento, não de trigo.",
+        "c": "Não é sal; é fermento."
+      },
+      "hint": "É o sujeito da pergunta retórica.",
+      "learningObjective": "Lembrar o termo-chave da pureza.",
+      "evidence": ["1 Coríntios 5:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Coríntios 6:19 a Romanos 12:1?",
+      "verseRef": "1 Coríntios 6:19",
+      "passageA": { "ref": "1 Coríntios 6:19" },
+      "passageB": { "ref": "Romanos 12:1" },
+      "options": [
+        { "id": "a", "text": "Corpo como culto" },
+        { "id": "b", "text": "Corpo sem valor" },
+        { "id": "c", "text": "Espírito ausente" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o vosso corpo é o templo do Espírito Santo",
+      "feedbackCorrect": "Templo e sacrifício vivo: o corpo pertence ao culto de Deus.",
+      "feedbackWrong": {
+        "b": "Os dois textos dignificam o corpo diante de Deus.",
+        "c": "Em 6:19 o Espírito habita no corpo."
+      },
+      "hint": "Compare templo e sacrifício vivo.",
+      "learningObjective": "Ligar templo do Espírito ao culto racional.",
+      "evidence": ["1 Coríntios 6:19", "Romanos 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Coríntios 8:3, toque o trecho que sustenta quem é conhecido por Deus.",
+      "verseRef": "1 Coríntios 8:3",
+      "options": [
+        { "id": "a", "text": "ama a Deus" },
+        { "id": "b", "text": "alguém" },
+        { "id": "c", "text": "Mas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se alguém ama a Deus, essa pessoa é conhecida por Ele",
+      "feedbackCorrect": "Conhecido por Deus é quem ama — não quem só julga saber.",
+      "feedbackWrong": {
+        "b": "\"Alguém\" é genérico; a condição é amar a Deus.",
+        "c": "\"Mas\" introduz; a condição está em amar."
+      },
+      "hint": "Procure a condição do \"se\".",
+      "learningObjective": "Sustentar que o amor a Deus é o critério.",
+      "evidence": ["1 Coríntios 8:3"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o cuidado com pureza e fracos?",
+      "verseRef": "1 Coríntios 5:6",
+      "options": [
+        { "id": "a", "text": "Pouco fermento leveda a massa" },
+        { "id": "b", "text": "Fujam da impureza; o corpo é templo" },
+        { "id": "c", "text": "Liberdade sem tropeço aos fracos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "um pouco de fermento leveda toda a massa",
+      "feedbackCorrect": "Da massa pura ao templo do corpo e ao amor que não faz cair.",
+      "feedbackWrong": {
+        "default": "Siga caps. 5 → 6 → 8."
+      },
+      "hint": "Comece pelo fermento.",
+      "learningObjective": "Rever o arco da Travessia.",
+      "evidence": ["1 Coríntios 5:6", "1 Coríntios 6:18", "1 Coríntios 8:9"]
+    }
+  ]
+}

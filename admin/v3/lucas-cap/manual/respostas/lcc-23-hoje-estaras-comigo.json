@@ -1,0 +1,498 @@
+{
+  "study": {
+    "passageRef": "Lucas 23:39–43",
+    "passages": [
+      { "ref": "Lucas 23:39–43" },
+      { "ref": "Lucas 23:36–38" },
+      { "ref": "Lucas 23:44–46" }
+    ],
+    "context": "Jesus está na cruz, entre dois criminosos. Soldados zombam dele e oferecem vinagre. Uma inscrição o apresenta como rei dos judeus. Os dois homens ao lado falam com ele de modos opostos.",
+    "keyword": "Paraíso",
+    "keywordGloss": "Lugar que Jesus nomeia, onde o criminoso estará com ele ainda naquele dia.",
+    "focusQuestion": "Se a sua última hora chegasse agora, o que você pediria a Jesus?",
+    "reflectionPrompts": [
+      "A zombaria na cruz",
+      "A culpa confessada",
+      "A promessa de hoje"
+    ],
+    "facts": [
+      {
+        "text": "Os soldados escarneciam de Jesus e lhe ofereciam vinagre.",
+        "evidenceRef": "Lucas 23:36",
+        "evidenceSpan": "Os soldados também o escarneciam, aproximando-se dele e oferecendo-lhe vinagre."
+      },
+      {
+        "text": "Um dos criminosos crucificados insultava Jesus.",
+        "evidenceRef": "Lucas 23:39",
+        "evidenceSpan": "Um dos criminosos crucificados o insultava"
+      },
+      {
+        "text": "O outro diz que eles estão ali com justiça.",
+        "evidenceRef": "Lucas 23:41",
+        "evidenceSpan": "estamos aqui com justiça"
+      },
+      {
+        "text": "Ele afirma que este homem não fez nenhum mal.",
+        "evidenceRef": "Lucas 23:41",
+        "evidenceSpan": "este homem não fez nenhum mal"
+      },
+      {
+        "text": "Ele pede que Jesus se recorde dele quando vier no reino.",
+        "evidenceRef": "Lucas 23:42",
+        "evidenceSpan": "recorda-te de mim quando vieres no teu reino"
+      },
+      {
+        "text": "Jesus diz que hoje o criminoso estará com ele no Paraíso.",
+        "evidenceRef": "Lucas 23:43",
+        "evidenceSpan": "hoje estarás comigo no Paraíso"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Paraíso",
+        "gloss": "O lugar da promessa de Jesus para o mesmo dia, ao lado dele."
+      },
+      {
+        "term": "reino",
+        "gloss": "O horizonte do pedido: que Jesus se lembre dele quando vier no reino."
+      },
+      {
+        "term": "justiça",
+        "gloss": "A confissão de que o castigo deles é merecido, diferente de Jesus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Zombaria na cruz contra Jesus",
+        "evidenceRef": "Lucas 23:36–39"
+      },
+      {
+        "label": "Confissão da culpa merecida",
+        "evidenceRef": "Lucas 23:40–41"
+      },
+      {
+        "label": "Pedido recebe a promessa",
+        "evidenceRef": "Lucas 23:42–43"
+      },
+      {
+        "label": "Trevas, véu e último suspiro",
+        "evidenceRef": "Lucas 23:44–46"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O outro criminoso censura o insulto, em vez de repetir a zombaria.",
+        "marker": "Mas",
+        "evidenceRef": "Lucas 23:40"
+      },
+      {
+        "kind": "contraste",
+        "text": "Eles estão ali com justiça; Jesus não fez nenhum mal.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 23:41"
+      },
+      {
+        "kind": "resultado",
+        "text": "Ao pedido de memória no reino, Jesus responde com a promessa daquele dia.",
+        "marker": null,
+        "evidenceRef": "Lucas 23:43"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 31:5", "bridge": "Entrega do espírito" },
+      { "ref": "Filipenses 1:23", "bridge": "Estar com Cristo" },
+      { "ref": "Atos 7:59", "bridge": "Estêvão entrega o espírito" }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus promete o Paraíso ao criminoso que o insultava.",
+        "why": "A resposta vem depois do pedido de quem o chamou Senhor e confessou a própria culpa."
+      },
+      {
+        "text": "O pedido de memória no reino é só mais uma zombaria, como a dos soldados.",
+        "why": "Os soldados mandam Jesus salvar a si mesmo. Este homem o chama Senhor e pede memória no reino."
+      },
+      {
+        "text": "A palavra hoje não situa a promessa no mesmo dia.",
+        "why": "Jesus situa a companhia no hoje. O prazo é o próprio dia da cruz."
+      }
+    ],
+    "centralInsight": "Até na última hora, quem pede a Jesus recebe a promessa: hoje estarás comigo.",
+    "anchorQuestion": "O que Jesus prometeu ao criminoso que pediu para ser lembrado no reino?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 23:36, os soldados escarneciam de Jesus e lhe ofereciam vinagre.",
+      "verseRef": "Lucas 23:36",
+      "correctOptionId": "true",
+      "evidenceSpan": "Os soldados também o escarneciam, aproximando-se dele e oferecendo-lhe vinagre.",
+      "feedbackCorrect": "O versículo mostra os soldados zombando de Jesus e oferecendo vinagre.",
+      "feedbackWrong": {
+        "false": "Lucas 23:36 diz que os soldados escarneciam dele e lhe ofereciam vinagre."
+      },
+      "hint": "Olhe o que os soldados fazem ao se aproximar.",
+      "learningObjective": "Observar a zombaria dos soldados e o vinagre oferecido a Jesus.",
+      "evidence": ["Lucas 23:36"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 23:39, toque quem insultava Jesus.",
+      "verseRef": "Lucas 23:39",
+      "options": [
+        { "id": "a", "text": "Um dos criminosos" },
+        { "id": "b", "text": "o Cristo" },
+        { "id": "c", "text": "a nós também" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Um dos criminosos crucificados o insultava",
+      "feedbackCorrect": "Quem insulta Jesus é um dos criminosos crucificados ao lado dele.",
+      "feedbackWrong": {
+        "b": "Cristo é o título na pergunta dele, não quem fala o insulto.",
+        "c": "Essa expressão diz a quem ele quer incluído, não quem insulta."
+      },
+      "hint": "Procure o sujeito que pratica o insulto.",
+      "learningObjective": "Identificar quem insulta Jesus no início da cena.",
+      "evidence": ["Lucas 23:39"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que o criminoso pediu a Jesus em Lucas 23:42?",
+      "verseRef": "Lucas 23:42",
+      "options": [
+        { "id": "a", "text": "Que Jesus se lembrasse dele ao vir no reino" },
+        { "id": "b", "text": "Que Jesus descesse da cruz naquela hora" },
+        { "id": "c", "text": "Que os soldados retirassem a inscrição" },
+        { "id": "d", "text": "Que o companheiro pedisse perdão primeiro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "recorda-te de mim quando vieres no teu reino",
+      "feedbackCorrect": "Ele pede que Jesus se recorde dele quando vier no reino.",
+      "feedbackWrong": {
+        "b": "Descer da cruz é o tom da zombaria, não deste pedido.",
+        "c": "A inscrição aparece antes. O pedido não fala dela.",
+        "d": "O pedido é por si. Ele não pede perdão pelo outro."
+      },
+      "hint": "Leia a fala que fecha o versículo.",
+      "learningObjective": "Reconhecer o pedido concreto feito a Jesus na cruz.",
+      "evidence": ["Lucas 23:42"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte a resposta de Jesus em Lucas 23:43 na ordem do texto.",
+      "verseRef": "Lucas 23:43",
+      "options": [
+        { "id": "a", "text": "E Jesus lhe respondeu" },
+        { "id": "b", "text": "Em verdade te digo" },
+        { "id": "c", "text": "hoje estarás comigo no Paraíso" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "A frase abre com a resposta de Jesus e fecha no lugar prometido.",
+      "feedbackWrong": {
+        "default": "Comece por Jesus respondendo. O lugar prometido fecha a frase."
+      },
+      "hint": "A fala começa pelo verbo da resposta de Jesus.",
+      "learningObjective": "Reconhecer a sequência da promessa em Lucas 23:43.",
+      "evidence": ["Lucas 23:43"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 23:43, em que lugar Jesus diz que ele estará?",
+      "verseRef": "Lucas 23:43",
+      "options": [
+        { "id": "a", "text": "templo" },
+        { "id": "b", "text": "Paraíso" },
+        { "id": "c", "text": "reino" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "Jesus nomeia o Paraíso como o lugar onde ele estará naquele dia.",
+      "feedbackWrong": {
+        "a": "O templo aparece depois, quando o véu se rasga. Não é este lugar.",
+        "c": "Reino é o horizonte do pedido. A resposta nomeia outro lugar."
+      },
+      "hint": "Olhe a última palavra da resposta de Jesus.",
+      "learningObjective": "Lembrar o lugar concreto nomeado na promessa de Jesus.",
+      "evidence": ["Lucas 23:43"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 23:43 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 23:43",
+      "passageA": { "ref": "Lucas 23:43" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Quem pede a Jesus na cruz recebe uma promessa para o mesmo dia."
+      },
+      "options": [
+        { "id": "a", "text": "Zombaria dos soldados" },
+        { "id": "b", "text": "Promessa para o mesmo dia" },
+        { "id": "c", "text": "Inscrição sobre a cruz" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "Jesus marca o dia: hoje o criminoso estará com ele.",
+      "feedbackWrong": {
+        "a": "A zombaria abre a cena. Este versículo é a resposta ao pedido.",
+        "c": "A inscrição está acima da cruz. Não é o que Jesus promete aqui."
+      },
+      "hint": "Veja o prazo que a frase de Jesus marca.",
+      "learningObjective": "Ligar a promessa de Lucas 23:43 ao mesmo dia do pedido.",
+      "evidence": ["Lucas 23:43"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 23:41, o texto trata Jesus como culpado e os dois criminosos como inocentes.",
+      "verseRef": "Lucas 23:41",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas este homem não fez nenhum mal",
+      "feedbackCorrect": "O contraste é o inverso: eles estão com justiça; Jesus não fez mal.",
+      "feedbackWrong": {
+        "true": "Eles confessam castigo merecido. Só este homem não fez nenhum mal."
+      },
+      "hint": "Compare o que eles dizem de si com o que dizem dele.",
+      "learningObjective": "Compreender o contraste entre a culpa deles e a inocência de Jesus.",
+      "evidence": ["Lucas 23:41"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 23:40, toque a palavra que marca o contraste com o insulto.",
+      "verseRef": "Lucas 23:40",
+      "options": [
+        { "id": "a", "text": "respondendo" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "condenação" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Mas o outro, respondendo, o censurou",
+      "feedbackCorrect": "Essa palavra vira o relato: o outro censura quem insultava.",
+      "feedbackWrong": {
+        "a": "Respondendo só introduz a fala. O contraste está na primeira palavra.",
+        "c": "Condenação nomeia a sentença comum, não a virada entre os dois."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador que separa o insulto da censura.",
+      "evidence": ["Lucas 23:40"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual relação Lucas 23:40 cria com o insulto anterior?",
+      "verseRef": "Lucas 23:39–40",
+      "options": [
+        { "id": "a", "text": "O outro censura quem tinha insultado" },
+        { "id": "b", "text": "O outro repete o insulto com outras palavras" },
+        { "id": "c", "text": "O outro pede que Jesus salve os dois" },
+        { "id": "d", "text": "O outro se une aos soldados na zombaria" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o censurou",
+      "feedbackCorrect": "O outro não segue o insulto. Ele censura quem falava assim.",
+      "feedbackWrong": {
+        "b": "Ele não repete o insulto. O verbo da cena é censurar.",
+        "c": "Pedir salvação para os dois é o tom de quem insultava.",
+        "d": "Unir-se à zombaria seria seguir o insulto, não censurá-lo."
+      },
+      "hint": "Veja o que o outro faz com quem insultava.",
+      "learningObjective": "Relacionar a censura de Lucas 23:40 ao insulto anterior.",
+      "evidence": ["Lucas 23:39–40"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança da zombaria até a promessa?",
+      "verseRef": "Lucas 23:39",
+      "options": [
+        { "id": "a", "text": "Zombaria na cruz contra Jesus" },
+        { "id": "b", "text": "Confissão da culpa merecida" },
+        { "id": "c", "text": "Pedido recebe a promessa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Um dos criminosos crucificados o insultava",
+      "feedbackCorrect": "A cena passa da zombaria à confissão e termina na promessa.",
+      "feedbackWrong": {
+        "default": "A zombaria abre. A confissão vem no meio. A promessa fecha."
+      },
+      "hint": "A zombaria abre o caminho. A promessa é o fecho.",
+      "learningObjective": "Compreender os três movimentos da cena até a promessa.",
+      "evidence": ["Lucas 23:36–39", "Lucas 23:40–41", "Lucas 23:42–43"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 23:40, o que o outro fez ao criminoso que insultava?",
+      "verseRef": "Lucas 23:40",
+      "options": [
+        { "id": "a", "text": "apoiou" },
+        { "id": "b", "text": "imitou" },
+        { "id": "c", "text": "censurou" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o censurou",
+      "feedbackCorrect": "Ele censura o insulto. Não apoia nem imita quem zombava.",
+      "feedbackWrong": {
+        "a": "Apoiar seria seguir o insulto. O texto diz o contrário.",
+        "b": "Imitar repetiria a zombaria. Ele reage contra ela."
+      },
+      "hint": "Veja o verbo logo depois de respondendo.",
+      "learningObjective": "Identificar a ação que contrasta com o insulto.",
+      "evidence": ["Lucas 23:40"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 23:46 a Salmos 31:5?",
+      "verseRef": "Lucas 23:46",
+      "passageA": { "ref": "Lucas 23:46" },
+      "passageB": { "ref": "Salmos 31:5" },
+      "options": [
+        { "id": "a", "text": "Entrega do espírito" },
+        { "id": "b", "text": "Zombaria na cruz" },
+        { "id": "c", "text": "Véu rasgado ao meio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nas tuas mãos entrego o meu espírito",
+      "feedbackCorrect": "Jesus fala ao Pai com as palavras do salmo, ao entregar o espírito.",
+      "feedbackWrong": {
+        "b": "A zombaria é dos soldados. O salmo não trata dela.",
+        "c": "O véu se rasga no versículo anterior. O salmo fala de outra entrega."
+      },
+      "hint": "Compare o que Jesus diz ao Pai com o salmo.",
+      "learningObjective": "Relacionar a última frase de Jesus às palavras do salmo.",
+      "evidence": ["Lucas 23:46", "Salmos 31:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lucas 23:42–43, Jesus responde com a promessa ao criminoso que pediu memória no reino.",
+      "verseRef": "Lucas 23:42–43",
+      "correctOptionId": "true",
+      "evidenceSpan": "E Jesus lhe respondeu",
+      "feedbackCorrect": "Jesus responde a quem acabou de pedir memória. O insulto fica sem essa promessa.",
+      "feedbackWrong": {
+        "false": "A promessa vem logo após o pedido de memória, não após o insulto."
+      },
+      "hint": "Veja a quem Jesus responde logo após o pedido.",
+      "learningObjective": "Interpretar a quem Jesus dirige a promessa do Paraíso.",
+      "evidence": ["Lucas 23:42–43"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 23:42, toque o tratamento com que o criminoso fala a Jesus.",
+      "verseRef": "Lucas 23:42",
+      "options": [
+        { "id": "a", "text": "recorda-te" },
+        { "id": "b", "text": "Senhor" },
+        { "id": "c", "text": "teu reino" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Senhor, recorda-te de mim",
+      "feedbackCorrect": "Ele não zomba. Chama Jesus de Senhor antes de pedir.",
+      "feedbackWrong": {
+        "a": "Recorda-te é o pedido, não o tratamento dado a Jesus.",
+        "c": "Teu reino diz o horizonte do pedido, não como ele o chama."
+      },
+      "hint": "A fala dele começa logo depois do nome Jesus.",
+      "learningObjective": "Sustentar com o texto que o pedido trata Jesus como Senhor.",
+      "evidence": ["Lucas 23:42"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lucas 23:43 sustenta sobre a resposta de Jesus?",
+      "verseRef": "Lucas 23:43",
+      "options": [
+        { "id": "a", "text": "Jesus promete companhia naquele mesmo dia" },
+        { "id": "b", "text": "A promessa é para quem o insultava" },
+        { "id": "c", "text": "O pedido apenas repete a zombaria" },
+        { "id": "d", "text": "O hoje não fixa o mesmo dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "Jesus marca companhia com ele naquele dia, no lugar que nomeia.",
+      "feedbackWrong": {
+        "b": "A resposta segue o pedido de quem confessou, não o insulto.",
+        "c": "Chamar Jesus de Senhor e pedir memória não é a zombaria dos soldados.",
+        "d": "Hoje fecha o prazo. A promessa não fica sem data."
+      },
+      "hint": "Ouça o tempo que Jesus põe na própria resposta.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a promessa.",
+      "evidence": ["Lucas 23:43"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual lógica leva da culpa confessada à promessa?",
+      "verseRef": "Lucas 23:42–43",
+      "options": [
+        { "id": "a", "text": "Culpa dita pela própria boca" },
+        { "id": "b", "text": "Pedido de memória no reino" },
+        { "id": "c", "text": "Promessa de estar junto hoje" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "A cena sobe da culpa confessada ao pedido e, então, à promessa.",
+      "feedbackWrong": {
+        "default": "A culpa abre. O pedido vem depois. A promessa é o fecho."
+      },
+      "hint": "A confissão vem antes do pedido.",
+      "learningObjective": "Interpretar o caminho da confissão até a promessa de Jesus.",
+      "evidence": ["Lucas 23:41", "Lucas 23:42", "Lucas 23:43"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 23:42, o criminoso pede memória quando Jesus vier no seu quê?",
+      "verseRef": "Lucas 23:42",
+      "options": [
+        { "id": "a", "text": "reino" },
+        { "id": "b", "text": "Paraíso" },
+        { "id": "c", "text": "templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quando vieres no teu reino",
+      "feedbackCorrect": "O pedido olha para o reino. É ali que ele pede para ser lembrado.",
+      "feedbackWrong": {
+        "b": "Paraíso é a resposta de Jesus, não a palavra do pedido.",
+        "c": "O templo não entra neste pedido. A palavra final é outra."
+      },
+      "hint": "A última palavra do pedido nomeia esse lugar.",
+      "learningObjective": "Lembrar o termo que carrega o horizonte do pedido.",
+      "evidence": ["Lucas 23:42"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 23:43 a Filipenses 1:23?",
+      "verseRef": "Lucas 23:43",
+      "passageA": { "ref": "Lucas 23:43" },
+      "passageB": { "ref": "Filipenses 1:23" },
+      "options": [
+        { "id": "a", "text": "Trevas sobre a terra" },
+        { "id": "b", "text": "Castigo merecido" },
+        { "id": "c", "text": "Estar com Cristo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "hoje estarás comigo no Paraíso",
+      "feedbackCorrect": "Jesus promete estar com ele. Paulo deseja partir e estar com Cristo.",
+      "feedbackWrong": {
+        "a": "As trevas cobrem a terra noutro versículo. Filipenses fala de outra coisa.",
+        "b": "O castigo merecido é a confissão do criminoso, não o elo com Paulo."
+      },
+      "hint": "Veja o que Paulo deseja ao pensar em partir.",
+      "learningObjective": "Ligar a promessa de estar com Jesus ao desejo de estar com Cristo.",
+      "evidence": ["Lucas 23:43", "Filipenses 1:23"]
+    }
+  ]
+}

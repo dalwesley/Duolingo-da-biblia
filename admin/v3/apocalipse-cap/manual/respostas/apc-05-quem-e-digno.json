@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Apocalipse 5:1–6",
+    "passages": [
+      { "ref": "Apocalipse 5:1–6" },
+      { "ref": "Apocalipse 5:7–8" }
+    ],
+    "context": "João vê, na mão de quem está no trono, um livro fechado com sete selos. Um anjo forte pergunta quem pode abri-lo, e o silêncio do universo faz João chorar antes de a cena mudar.",
+    "keyword": "Digno",
+    "keywordGloss": "Quem tem direito e valor para abrir o livro dos selos: ninguém no universo, exceto um.",
+    "focusQuestion": "Em quem você confia quando o futuro parece fechado, como um livro selado?",
+    "reflectionPrompts": [
+      "Um livro selado",
+      "Ninguém digno, João chora",
+      "O Leão é o Cordeiro"
+    ],
+    "facts": [
+      {
+        "text": "O livro estava na mão direita de quem estava assentado no trono.",
+        "evidenceRef": "Apocalipse 5:1",
+        "evidenceSpan": "na mão direita daquele que estava assentado no trono"
+      },
+      {
+        "text": "O livro era escrito por dentro e por fora e estava selado com sete selos.",
+        "evidenceRef": "Apocalipse 5:1",
+        "evidenceSpan": "um livro escrito por dentro e por fora, completamente selado com sete selos"
+      },
+      {
+        "text": "Um anjo forte pergunta quem é digno de abrir o livro e desatar os selos.",
+        "evidenceRef": "Apocalipse 5:2",
+        "evidenceSpan": "Quem é digno de abrir o livro e de desatar os selos"
+      },
+      {
+        "text": "Ninguém no céu, na terra ou debaixo da terra podia abrir o livro.",
+        "evidenceRef": "Apocalipse 5:3",
+        "evidenceSpan": "ninguém no céu, nem sobre a terra, nem debaixo da terra, podia abrir o livro"
+      },
+      {
+        "text": "O Leão da tribo de Judá venceu para abrir o livro e os seus sete selos.",
+        "evidenceRef": "Apocalipse 5:5",
+        "evidenceSpan": "o Leão da tribo de Judá, a Raiz de Davi, venceu para abrir o livro e os seus sete selos"
+      },
+      {
+        "text": "No meio do trono, João vê um Cordeiro de pé, como se tivesse sido morto.",
+        "evidenceRef": "Apocalipse 5:6",
+        "evidenceSpan": "um Cordeiro de pé, como se tivesse sido morto"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "digno",
+        "gloss": "Quem tem valor e direito de abrir o livro; no texto, só um é achado digno."
+      },
+      {
+        "term": "Leão",
+        "gloss": "Título de realeza e vitória: o que o ancião anuncia a João."
+      },
+      {
+        "term": "Cordeiro",
+        "gloss": "O que João vê no lugar do Leão: vencedor que foi morto."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Um livro selado na mão do trono",
+        "evidenceRef": "Apocalipse 5:1"
+      },
+      {
+        "label": "Ninguém digno, e João chora",
+        "evidenceRef": "Apocalipse 5:2–4"
+      },
+      {
+        "label": "O Leão que venceu é anunciado",
+        "evidenceRef": "Apocalipse 5:5"
+      },
+      {
+        "label": "O Cordeiro toma o livro e é adorado",
+        "evidenceRef": "Apocalipse 5:6–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "João chora porque ninguém foi encontrado digno de abrir o livro.",
+        "marker": "porque",
+        "evidenceRef": "Apocalipse 5:4"
+      },
+      {
+        "kind": "propósito",
+        "text": "O Leão venceu para abrir o livro e os seus sete selos.",
+        "marker": "para",
+        "evidenceRef": "Apocalipse 5:5"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois que o Cordeiro aparece, ele vem e toma o livro da mão de quem está no trono.",
+        "marker": "veio",
+        "evidenceRef": "Apocalipse 5:7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Gênesis 49:9", "bridge": "Judá como leão" },
+      { "ref": "Isaías 53:7", "bridge": "Cordeiro levado ao matadouro" },
+      { "ref": "João 1:29", "bridge": "Jesus, o Cordeiro de Deus" }
+    ],
+    "misreadings": [
+      {
+        "text": "O Leão e o Cordeiro são dois personagens sem relação entre si.",
+        "why": "O ancião anuncia o Leão que venceu, e João vê um Cordeiro que foi morto tomar o livro."
+      },
+      {
+        "text": "O livro continuaria fechado para sempre, sem esperança.",
+        "why": "O ancião diz: Não chores! O Leão da tribo de Judá venceu para abrir o livro."
+      },
+      {
+        "text": "O anjo forte seria digno de abrir o livro, mas prefere não fazê-lo.",
+        "why": "O anjo apenas pergunta quem é digno; ninguém no céu ou na terra podia abrir o livro."
+      }
+    ],
+    "centralInsight": "Não chores: o Leão da tribo de Judá venceu para abrir o livro e os seus sete selos.",
+    "anchorQuestion": "Segundo Apocalipse 5:5, quem venceu para abrir o livro e os seus sete selos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Apocalipse 5:1, o livro na mão direita de quem estava no trono era completamente selado com sete selos.",
+      "verseRef": "Apocalipse 5:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "um livro escrito por dentro e por fora, completamente selado com sete selos",
+      "feedbackCorrect": "O livro estava fechado por sete selos, na mão direita de quem está no trono.",
+      "feedbackWrong": {
+        "false": "Releia Apocalipse 5:1: o livro estava completamente selado com sete selos."
+      },
+      "hint": "Olhe a descrição do livro, depois do trono.",
+      "learningObjective": "Observar o livro selado na mão de quem está no trono.",
+      "evidence": ["Apocalipse 5:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 5:5, toque quem venceu para abrir o livro e os seus sete selos.",
+      "verseRef": "Apocalipse 5:5",
+      "options": [
+        { "id": "a", "text": "anciãos" },
+        { "id": "b", "text": "Leão" },
+        { "id": "c", "text": "selos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Leão da tribo de Judá, a Raiz de Davi, venceu para abrir o livro",
+      "feedbackCorrect": "O ancião anuncia o Leão da tribo de Judá como quem venceu para abrir o livro.",
+      "feedbackWrong": {
+        "a": "Um dos anciãos só fala com João; quem venceu vem depois de \"Eis que\".",
+        "c": "Os selos são o que será aberto, não quem venceu."
+      },
+      "hint": "Procure quem o ancião anuncia depois de \"Eis que\".",
+      "learningObjective": "Identificar quem venceu para abrir o livro.",
+      "evidence": ["Apocalipse 5:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Apocalipse 5:3, quem podia abrir o livro ou olhar para ele?",
+      "verseRef": "Apocalipse 5:3",
+      "options": [
+        { "id": "a", "text": "Apenas os anjos que estão no céu" },
+        { "id": "b", "text": "Somente os anciãos ao redor do trono" },
+        { "id": "c", "text": "Ninguém no céu, na terra nem debaixo dela" },
+        { "id": "d", "text": "Qualquer um que olhasse para ele" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "ninguém no céu, nem sobre a terra, nem debaixo da terra, podia abrir o livro",
+      "feedbackCorrect": "O texto cobre céu, terra e debaixo da terra: ninguém podia abrir o livro.",
+      "feedbackWrong": {
+        "a": "Nem os anjos do céu podiam; o versículo diz que ninguém no céu podia.",
+        "b": "Os anciãos aparecem depois, e nenhum deles abre o livro neste versículo.",
+        "d": "O texto diz o contrário: ninguém podia nem mesmo olhar para o livro."
+      },
+      "hint": "Observe quem o versículo diz que podia abrir o livro.",
+      "learningObjective": "Observar que nenhuma criatura podia abrir o livro.",
+      "evidence": ["Apocalipse 5:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Apocalipse 5:4 na ordem do texto.",
+      "verseRef": "Apocalipse 5:4",
+      "options": [
+        { "id": "a", "text": "porque ninguém foi encontrado digno" },
+        { "id": "b", "text": "E eu chorava muito" },
+        { "id": "c", "text": "de abrir o livro, nem de vê-lo" }
+      ],
+      "correctOrder": ["b", "a", "c"],
+      "evidenceSpan": "E eu chorava muito, porque ninguém foi encontrado digno de abrir o livro",
+      "feedbackCorrect": "João chora primeiro; depois vem o motivo: ninguém digno de abrir ou ver o livro.",
+      "feedbackWrong": {
+        "default": "O versículo começa com o choro de João; o motivo vem logo depois."
+      },
+      "hint": "O versículo começa com o que João fazia.",
+      "learningObjective": "Reconhecer a sequência de Apocalipse 5:4.",
+      "evidence": ["Apocalipse 5:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Apocalipse 5:1, quantos selos fechavam o livro?",
+      "verseRef": "Apocalipse 5:1",
+      "options": [
+        { "id": "a", "text": "doze" },
+        { "id": "b", "text": "quatro" },
+        { "id": "c", "text": "sete" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "completamente selado com sete selos",
+      "feedbackCorrect": "O livro estava completamente selado com sete selos.",
+      "feedbackWrong": {
+        "a": "Doze não aparece aqui; o livro tinha sete selos.",
+        "b": "Quatro é outro número do Apocalipse; neste versículo são sete selos."
+      },
+      "hint": "Veja o número ligado aos selos, no fim do versículo.",
+      "learningObjective": "Lembrar o número de selos do livro.",
+      "evidence": ["Apocalipse 5:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Apocalipse 5:2 comunica que se liga a este contexto?",
+      "verseRef": "Apocalipse 5:2",
+      "passageA": { "ref": "Apocalipse 5:2", "text": "Quem é digno de abrir o livro e de desatar os selos?" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Nenhuma criatura foi achada capaz de abrir o livro selado, e João chorou."
+      },
+      "options": [
+        { "id": "a", "text": "Ordem para fechar o livro" },
+        { "id": "b", "text": "Anúncio de castigo imediato" },
+        { "id": "c", "text": "Busca por alguém digno" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Quem é digno de abrir o livro e de desatar os selos",
+      "feedbackCorrect": "O anjo proclama a pergunta que move a cena: quem é digno de abrir o livro?",
+      "feedbackWrong": {
+        "a": "O anjo não manda fechar: pergunta quem pode abrir.",
+        "b": "A pergunta é sobre quem pode abrir o livro, não sobre castigo."
+      },
+      "hint": "Veja a pergunta que o anjo forte proclama em alta voz.",
+      "learningObjective": "Ligar a pergunta do anjo ao impasse da cena.",
+      "evidence": ["Apocalipse 5:2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Apocalipse 5:5, o Leão da tribo de Judá venceu para destruir o livro e os seus sete selos.",
+      "verseRef": "Apocalipse 5:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "venceu para abrir o livro e os seus sete selos",
+      "feedbackCorrect": "O \"para\" marca o propósito: o Leão venceu para abrir o livro, não para destruí-lo.",
+      "feedbackWrong": {
+        "true": "Releia Apocalipse 5:5: ele venceu para abrir o livro e os seus sete selos."
+      },
+      "hint": "Procure o que vem logo depois de \"venceu para\".",
+      "learningObjective": "Compreender o propósito da vitória do Leão.",
+      "evidence": ["Apocalipse 5:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 5:4, toque a palavra que dá o motivo do choro de João.",
+      "verseRef": "Apocalipse 5:4",
+      "options": [
+        { "id": "a", "text": "digno" },
+        { "id": "b", "text": "chorava" },
+        { "id": "c", "text": "porque" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "porque ninguém foi encontrado digno de abrir o livro",
+      "feedbackCorrect": "\"Porque\" liga o choro de João ao fato de ninguém ser achado digno.",
+      "feedbackWrong": {
+        "a": "\"Digno\" está dentro do motivo, mas não é a palavra que o introduz.",
+        "b": "\"Chorava\" diz o que João fazia, não o motivo."
+      },
+      "hint": "Procure a palavra curta logo depois de \"chorava muito\".",
+      "learningObjective": "Reconhecer a palavra que marca a causa do choro.",
+      "evidence": ["Apocalipse 5:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Apocalipse 5:5 responde ao choro de João em Apocalipse 5:4?",
+      "verseRef": "Apocalipse 5:4–5",
+      "options": [
+        { "id": "a", "text": "Manda João parar de olhar para o livro" },
+        { "id": "b", "text": "Anuncia alguém que venceu e pode abrir o livro" },
+        { "id": "c", "text": "Diz que o livro nunca será aberto" },
+        { "id": "d", "text": "Mostra que o anjo forte abrirá os selos" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não chores! Eis que o Leão da tribo de Judá, a Raiz de Davi, venceu para abrir o livro",
+      "feedbackCorrect": "O motivo do choro é desfeito: alguém venceu e pode abrir o livro.",
+      "feedbackWrong": {
+        "a": "O ancião manda João não chorar, não desviar o olhar do livro.",
+        "c": "O texto afirma o contrário: o Leão venceu para abrir o livro.",
+        "d": "O anjo forte só faz a pergunta; quem abre é o Leão que venceu."
+      },
+      "hint": "Veja o que o ancião diz logo depois de \"Não chores\".",
+      "learningObjective": "Relacionar o choro de João com o anúncio do ancião.",
+      "evidence": ["Apocalipse 5:4–5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Apocalipse 5:5–6?",
+      "verseRef": "Apocalipse 5:5–6",
+      "options": [
+        { "id": "a", "text": "João vê um Cordeiro que parece morto" },
+        { "id": "b", "text": "O ancião manda João não chorar" },
+        { "id": "c", "text": "É anunciado o Leão que venceu" }
+      ],
+      "correctOrder": ["b", "c", "a"],
+      "evidenceSpan": "um Cordeiro de pé, como se tivesse sido morto",
+      "feedbackCorrect": "João ouve o consolo e o anúncio do Leão; depois vê o Cordeiro que parece morto.",
+      "feedbackWrong": {
+        "default": "O que João ouve vem primeiro; o que ele vê, o Cordeiro, fecha o movimento."
+      },
+      "hint": "O Cordeiro aparece depois do que o ancião diz.",
+      "learningObjective": "Compreender o movimento do anúncio à visão do Cordeiro.",
+      "evidence": ["Apocalipse 5:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Apocalipse 5:7, que ação mostra o Cordeiro assumindo o livro?",
+      "verseRef": "Apocalipse 5:7",
+      "options": [
+        { "id": "a", "text": "rasgou" },
+        { "id": "b", "text": "devolveu" },
+        { "id": "c", "text": "tomou" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "E veio e tomou o livro da mão direita daquele que estava no trono",
+      "feedbackCorrect": "Ele veio e tomou o livro: quem foi achado digno passa a ter o livro na mão.",
+      "feedbackWrong": {
+        "a": "O texto não diz que ele rasgou o livro; diz que o tomou.",
+        "b": "Ele recebe o livro da mão de quem está no trono, não o devolve."
+      },
+      "hint": "Procure o verbo logo depois de \"veio\".",
+      "learningObjective": "Compreender a ação que muda a cena.",
+      "evidence": ["Apocalipse 5:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Apocalipse 5:5 a Gênesis 49:9?",
+      "verseRef": "Apocalipse 5:5",
+      "passageA": { "ref": "Apocalipse 5:5", "text": "o Leão da tribo de Judá, a Raiz de Davi" },
+      "passageB": { "ref": "Gênesis 49:9" },
+      "options": [
+        { "id": "a", "text": "Levi e o sacerdócio" },
+        { "id": "b", "text": "A arca da aliança" },
+        { "id": "c", "text": "Judá comparado a um leão" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "o Leão da tribo de Judá",
+      "evidence": ["Apocalipse 5:5", "Gênesis 49:9"],
+      "feedbackCorrect": "A imagem do leão vem de Judá, como no que Jacó disse sobre o filho.",
+      "feedbackWrong": {
+        "a": "Nenhum dos textos fala de Levi; os dois falam de Judá.",
+        "b": "A arca não aparece aqui; a ponte é a imagem do leão ligada a Judá."
+      },
+      "hint": "Compare a tribo e o animal citados nos dois trechos.",
+      "learningObjective": "Relacionar o Leão de Judá com a bênção de Jacó."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Apocalipse 5:4–5 conclui que o livro ficará fechado para sempre, porque ninguém pode abri-lo.",
+      "verseRef": "Apocalipse 5:4–5",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eis que o Leão da tribo de Judá, a Raiz de Davi, venceu para abrir o livro",
+      "feedbackCorrect": "O choro não é a última palavra: alguém venceu para abrir o livro e os seus selos.",
+      "feedbackWrong": {
+        "true": "O ancião responde: Não chores! O Leão venceu para abrir o livro."
+      },
+      "hint": "Veja o que o ancião diz depois de \"Não chores\".",
+      "learningObjective": "Interpretar o impasse como esperado, não como definitivo.",
+      "evidence": ["Apocalipse 5:4–5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Apocalipse 5:6, toque o trecho que sustenta que o vencedor passou pela morte.",
+      "verseRef": "Apocalipse 5:6",
+      "options": [
+        { "id": "a", "text": "sete chifres" },
+        { "id": "b", "text": "sido morto" },
+        { "id": "c", "text": "quatro seres" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "um Cordeiro de pé, como se tivesse sido morto",
+      "feedbackCorrect": "O Cordeiro está de pé, mas leva a marca de quem foi morto.",
+      "feedbackWrong": {
+        "a": "Os sete chifres falam de poder, não de ter passado pela morte.",
+        "c": "Os quatro seres viventes apenas rodeiam o trono neste versículo."
+      },
+      "hint": "Procure o que o versículo diz sobre o estado do Cordeiro.",
+      "learningObjective": "Sustentar com o texto que o Cordeiro foi morto.",
+      "evidence": ["Apocalipse 5:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Apocalipse 5:5–6 sustenta sobre quem abre o livro?",
+      "verseRef": "Apocalipse 5:5–6",
+      "options": [
+        { "id": "a", "text": "Os anciãos abrem o livro no lugar de quem está no trono" },
+        { "id": "b", "text": "O Leão e o Cordeiro são dois personagens sem relação" },
+        { "id": "c", "text": "O vencedor anunciado se mostra como Cordeiro que foi morto" },
+        { "id": "d", "text": "João abre o livro depois de parar de chorar" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "um Cordeiro de pé, como se tivesse sido morto",
+      "feedbackCorrect": "O Leão anunciado é visto como Cordeiro: a vitória passa pela morte.",
+      "feedbackWrong": {
+        "a": "Os anciãos consolam João; quem toma o livro é o Cordeiro.",
+        "b": "O anúncio do Leão e a visão do Cordeiro se encontram em quem toma o livro.",
+        "d": "João só chora e olha; ele não abre o livro."
+      },
+      "hint": "Compare o que João ouve com o que ele vê.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o vencedor.",
+      "evidence": ["Apocalipse 5:5–6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio do Leão de Judá e do Cordeiro até Apocalipse 5:5?",
+      "verseRef": "Apocalipse 5:5",
+      "options": [
+        { "id": "a", "text": "Jacó compara Judá a um leão" },
+        { "id": "b", "text": "Isaías vê o Servo levado como cordeiro" },
+        { "id": "c", "text": "O Leão vence e o Cordeiro toma o livro" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Leão da tribo de Judá, a Raiz de Davi, venceu",
+      "evidence": ["Apocalipse 5:5", "Gênesis 49:9", "Isaías 53:7"],
+      "feedbackCorrect": "O leão de Judá e o cordeiro de Isaías se encontram em quem toma o livro.",
+      "feedbackWrong": {
+        "default": "Siga a história: Judá (Gn 49:9), o cordeiro (Is 53:7) e o livro tomado (Ap 5)."
+      },
+      "hint": "Comece pelo patriarca e termine na visão do trono.",
+      "learningObjective": "Ver o Leão e o Cordeiro como fios que se encontram em Apocalipse 5."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Apocalipse 5:6, que figura João vê de pé no meio do trono?",
+      "verseRef": "Apocalipse 5:6",
+      "options": [
+        { "id": "a", "text": "Cavalo" },
+        { "id": "b", "text": "Cordeiro" },
+        { "id": "c", "text": "Pastor" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "um Cordeiro de pé, como se tivesse sido morto",
+      "feedbackCorrect": "João esperava um Leão e vê um Cordeiro morto, de pé: o vencedor é o sacrificado.",
+      "feedbackWrong": {
+        "a": "Cavalos aparecem em outros selos; aqui a figura é outra.",
+        "c": "O texto não fala de pastor; a imagem é de um animal sacrificado."
+      },
+      "hint": "É a imagem do sacrifício, no meio do trono.",
+      "learningObjective": "Lembrar o termo que carrega o sentido da cena.",
+      "evidence": ["Apocalipse 5:6"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Apocalipse 5:6 a João 1:29?",
+      "verseRef": "Apocalipse 5:6",
+      "passageA": { "ref": "Apocalipse 5:6", "text": "um Cordeiro de pé, como se tivesse sido morto" },
+      "passageB": { "ref": "João 1:29" },
+      "options": [
+        { "id": "a", "text": "A pomba que desce do céu" },
+        { "id": "b", "text": "O pastor que guia o rebanho" },
+        { "id": "c", "text": "Jesus como Cordeiro de Deus" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "um Cordeiro de pé, como se tivesse sido morto",
+      "evidence": ["Apocalipse 5:6", "João 1:29"],
+      "feedbackCorrect": "João Batista apresenta Jesus como o Cordeiro, e o Apocalipse o mostra no trono.",
+      "feedbackWrong": {
+        "a": "Nenhum dos dois trechos fala de uma pomba.",
+        "b": "A imagem comum não é o pastor, e sim o Cordeiro."
+      },
+      "hint": "Compare o título dado a Jesus nos dois textos.",
+      "learningObjective": "Ligar o Cordeiro do Apocalipse a Jesus, como o Evangelho o apresenta."
+    }
+  ]
+}

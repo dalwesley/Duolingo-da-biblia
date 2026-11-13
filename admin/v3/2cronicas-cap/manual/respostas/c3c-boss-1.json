@@ -1,0 +1,927 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 7:12–22",
+    "passages": [
+      {
+        "ref": "2 Crônicas 1:7–13"
+      },
+      {
+        "ref": "2 Crônicas 2:1–9"
+      },
+      {
+        "ref": "2 Crônicas 5:1–6"
+      },
+      {
+        "ref": "2 Crônicas 6:36–42"
+      },
+      {
+        "ref": "2 Crônicas 7:12–22"
+      },
+      {
+        "ref": "2 Crônicas 9:1–8"
+      }
+    ],
+    "context": "Esta travessia revisa o bloco do templo: sabedoria pedida, casa edificada, arca, oração, resposta de Deus e o louvor da rainha.",
+    "keyword": "converter",
+    "keywordGloss": "Do pedido de sabedoria à cura prometida, o bloco aponta para um Deus que ouve quem se volta a ele.",
+    "focusQuestion": "Onde você precisa pedir sabedoria e se converter de verdade?",
+    "reflectionPrompts": [
+      "Sabedoria pedida",
+      "Casa e arca",
+      "Humilhar e ouvir"
+    ],
+    "facts": [
+      {
+        "text": "Salomão pede sabedoria e conhecimento para conduzir o povo.",
+        "evidenceRef": "2 Crônicas 1:10",
+        "evidenceSpan": "sabedoria e conhecimento, para que eu saiba conduzir-me"
+      },
+      {
+        "text": "A casa será grande porque Deus é maior do que todos os deuses.",
+        "evidenceRef": "2 Crônicas 2:5",
+        "evidenceSpan": "será grande, porque o nosso Deus é maior do que todos os deuses"
+      },
+      {
+        "text": "A obra é concluída e a arca sobe ao templo.",
+        "evidenceRef": "2 Crônicas 5:1",
+        "evidenceSpan": "toda a obra que o rei Salomão realizou para a Casa do SENHOR foi concluída"
+      },
+      {
+        "text": "Se se converterem, Deus é pedido a ouvir e perdoar.",
+        "evidenceRef": "2 Crônicas 6:39",
+        "evidenceSpan": "Ouve, pois, dos céus, do lugar onde habitas"
+      },
+      {
+        "text": "Se o povo se humilhar e se converter, Deus curará a terra.",
+        "evidenceRef": "2 Crônicas 7:14",
+        "evidenceSpan": "então, eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra"
+      },
+      {
+        "text": "A rainha bendiz o Senhor que colocou Salomão no trono.",
+        "evidenceRef": "2 Crônicas 9:8",
+        "evidenceSpan": "Bendito seja o SENHOR, teu Deus, que se agradou de ti"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sabedoria",
+        "gloss": "Pedido de Salomão para julgar o povo."
+      },
+      {
+        "term": "humilhar",
+        "gloss": "Condição do povo para a cura da terra."
+      },
+      {
+        "term": "Bendito",
+        "gloss": "Louvor da rainha ao Senhor do trono."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Salomão pede sabedoria",
+        "evidenceRef": "2 Crônicas 1:7–13"
+      },
+      {
+        "label": "A casa é edificada e a arca sobe",
+        "evidenceRef": "2 Crônicas 2:1–9"
+      },
+      {
+        "label": "Oração e resposta de Deus",
+        "evidenceRef": "2 Crônicas 6:36–42"
+      },
+      {
+        "label": "A rainha bendiz o Senhor",
+        "evidenceRef": "2 Crônicas 9:1–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Deus concede porque Salomão pediu sabedoria.",
+        "marker": "Visto que",
+        "evidenceRef": "2 Crônicas 1:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Se se humilharem, Deus ouvirá e curará.",
+        "marker": "então",
+        "evidenceRef": "2 Crônicas 7:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Porém, se se desviarem, virá o juízo.",
+        "marker": "Porém",
+        "evidenceRef": "2 Crônicas 7:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Reis 3:9",
+        "bridge": "Mesmo pedido de sabedoria"
+      },
+      {
+        "ref": "1 Reis 8:27",
+        "bridge": "Céus não podem conter"
+      },
+      {
+        "ref": "Mateus 12:42",
+        "bridge": "Rainha do Sul e sabedoria"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A casa escolhida nunca sofre juízo.",
+        "why": "7:20 prevê a casa lançada longe se abandonarem."
+      },
+      {
+        "text": "Salomão pediu primeiro riquezas.",
+        "why": "Ele pediu sabedoria; riquezas foram acréscimo."
+      },
+      {
+        "text": "A rainha louva Salomão sem Deus.",
+        "why": "Ela bendiz o SENHOR do trono."
+      }
+    ],
+    "centralInsight": "O templo aponta para um Deus que ouve o povo que se converte",
+    "anchorQuestion": "O que 2 Crônicas 7:14 promete se o povo se humilhar e se converter?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 1:10, Salomão pede sabedoria e conhecimento para conduzir o povo.",
+      "verseRef": "2 Crônicas 1:10",
+      "correctOptionId": "true",
+      "evidenceSpan": "sabedoria e conhecimento, para que eu saiba conduzir-me",
+      "feedbackCorrect": "O pedido é sabedoria para conduzir.",
+      "feedbackWrong": {
+        "false": "Releia 1:10."
+      },
+      "hint": "Veja o pedido de Salomão.",
+      "learningObjective": "Relembrar o pedido.",
+      "evidence": [
+        "2 Crônicas 1:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 2:5, toque a palavra que liga a casa grande a Deus.",
+      "verseRef": "2 Crônicas 2:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "edificar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "será grande, porque o nosso Deus é maior",
+      "feedbackCorrect": "Porque liga tamanho e Deus.",
+      "feedbackWrong": {
+        "b": "É o objeto.",
+        "c": "É a ação."
+      },
+      "hint": "Procure o motivo.",
+      "learningObjective": "Relembrar a causa.",
+      "evidence": [
+        "2 Crônicas 2:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 5:2, para que Salomão convocou os líderes?",
+      "verseRef": "2 Crônicas 5:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para levarem a arca ao templo"
+        },
+        {
+          "id": "b",
+          "text": "Para destruir Sião"
+        },
+        {
+          "id": "c",
+          "text": "Para negar a aliança"
+        },
+        {
+          "id": "d",
+          "text": "Para fechar a casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que levassem a arca da Aliança do Senhor",
+      "feedbackCorrect": "A convocação é pela arca.",
+      "feedbackWrong": {
+        "b": "Não há demolição.",
+        "c": "A arca é da aliança.",
+        "d": "A casa acabara de ser concluída."
+      },
+      "hint": "Leia o propósito.",
+      "learningObjective": "Relembrar a convocação.",
+      "evidence": [
+        "2 Crônicas 5:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 7:14 na ordem do texto.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "E se o meu povo, que se chama pelo meu nome, se humilhar"
+        },
+        {
+          "id": "b",
+          "text": "orar, e me buscar, e se converter dos seus maus caminhos"
+        },
+        {
+          "id": "c",
+          "text": "então, eu ouvirei dos céus, perdoarei os seus pecados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se humilhar, orar, e me buscar",
+      "feedbackCorrect": "Humilhar, converter e promessa.",
+      "feedbackWrong": {
+        "default": "Comece pelo povo."
+      },
+      "hint": "A ordem segue o versículo.",
+      "learningObjective": "Reconhecer 7:14.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 6:39, Salomão pede que Deus _____ ao povo.",
+      "verseRef": "2 Crônicas 6:39",
+      "options": [
+        {
+          "id": "a",
+          "text": "perdoa"
+        },
+        {
+          "id": "b",
+          "text": "venda"
+        },
+        {
+          "id": "c",
+          "text": "ignore"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "perdoa ao teu povo que pecou contra ti",
+      "feedbackCorrect": "O pedido é perdão.",
+      "feedbackWrong": {
+        "b": "Não é venda.",
+        "c": "Não é ignore."
+      },
+      "hint": "Veja o verbo final.",
+      "learningObjective": "Relembrar o perdão.",
+      "evidence": [
+        "2 Crônicas 6:39"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 9:8 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 9:8",
+      "passageA": {
+        "ref": "2 Crônicas 9:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A rainha bendiz o Deus que pôs Salomão no trono."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Louvor ao Deus do trono"
+        },
+        {
+          "id": "b",
+          "text": "Negação da sabedoria"
+        },
+        {
+          "id": "c",
+          "text": "Fim do templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendito seja o SENHOR, teu Deus",
+      "feedbackCorrect": "O bloco fecha em louvor.",
+      "feedbackWrong": {
+        "b": "Há sabedoria exaltada.",
+        "c": "A casa foi concluída."
+      },
+      "hint": "Veja a bênção.",
+      "learningObjective": "Ligar ao louvor.",
+      "evidence": [
+        "2 Crônicas 9:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 5:4, toque quem levantou a arca.",
+      "verseRef": "2 Crônicas 5:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "levitas"
+        },
+        {
+          "id": "b",
+          "text": "anciãos"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os levitas levantaram a arca",
+      "feedbackCorrect": "Os levitas levantam a arca.",
+      "feedbackWrong": {
+        "b": "Eles se reuniram.",
+        "c": "É o povo, não quem levanta."
+      },
+      "hint": "Procure quem levantou.",
+      "learningObjective": "Identificar os levitas.",
+      "evidence": [
+        "2 Crônicas 5:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 1:10 na ordem do texto.",
+      "verseRef": "2 Crônicas 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dá-me, pois, agora, sabedoria e conhecimento"
+        },
+        {
+          "id": "b",
+          "text": "para que eu saiba conduzir-me diante deste tão grande povo"
+        },
+        {
+          "id": "c",
+          "text": "pois quem poderá julgar este teu imenso povo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Dá-me, pois, agora, sabedoria e conhecimento",
+      "feedbackCorrect": "Pedido e propósito.",
+      "feedbackWrong": {
+        "default": "Comece pelo Dá-me."
+      },
+      "hint": "Siga o versículo.",
+      "learningObjective": "Reconhecer 1:10.",
+      "evidence": [
+        "2 Crônicas 1:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 7:14, a cura vem depois que o povo se humilha e se converte.",
+      "verseRef": "2 Crônicas 7:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "então, eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra",
+      "feedbackCorrect": "O então marca o resultado.",
+      "feedbackWrong": {
+        "false": "Veja a palavra então."
+      },
+      "hint": "Una condição e promessa.",
+      "learningObjective": "Compreender 7:14.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 1:11, toque o marcador da causa da concessão.",
+      "verseRef": "2 Crônicas 1:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Visto que"
+        },
+        {
+          "id": "b",
+          "text": "riquezas"
+        },
+        {
+          "id": "c",
+          "text": "honras"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Visto que este desejo está em seu coração",
+      "feedbackCorrect": "Visto que introduz a causa.",
+      "feedbackWrong": {
+        "b": "É o que ele não pediu.",
+        "c": "Também não pediu."
+      },
+      "hint": "Procure o início da fala.",
+      "learningObjective": "Reconhecer a causa.",
+      "evidence": [
+        "2 Crônicas 1:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 6:37 se relaciona com 7:14?",
+      "verseRef": "2 Crônicas 6:37",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conversão no cativeiro ecoa a humilhação que traz cura"
+        },
+        {
+          "id": "b",
+          "text": "O cativeiro cancela 7:14"
+        },
+        {
+          "id": "c",
+          "text": "Só o rei precisa se converter"
+        },
+        {
+          "id": "d",
+          "text": "Não há oração no exílio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se se converterem e te suplicarem",
+      "feedbackCorrect": "Os dois textos pedem volta a Deus.",
+      "feedbackWrong": {
+        "b": "Há caminho de volta.",
+        "c": "O povo também é chamado.",
+        "d": "Há súplica explícita."
+      },
+      "hint": "Compare conversão e humilhação.",
+      "learningObjective": "Relacionar oração e resposta.",
+      "evidence": [
+        "2 Crônicas 6:37"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco do templo?",
+      "verseRef": "2 Crônicas 5:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Salomão pede sabedoria"
+        },
+        {
+          "id": "b",
+          "text": "A casa é edificada e concluída"
+        },
+        {
+          "id": "c",
+          "text": "O povo traz a arca e Deus responde"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Então Salomão convocou em Jerusalém os anciãos de Israel",
+      "feedbackCorrect": "Pedido, obra e culto.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido."
+      },
+      "hint": "Siga a ordem das cenas.",
+      "learningObjective": "Compreender o arco.",
+      "evidence": [
+        "2 Crônicas 5:1–2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 9:6, ela diz que não contaram a _____.",
+      "verseRef": "2 Crônicas 9:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "metade"
+        },
+        {
+          "id": "b",
+          "text": "lenda"
+        },
+        {
+          "id": "c",
+          "text": "sombra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não me contaram a metade da grandeza de sua sabedoria",
+      "feedbackCorrect": "Metade marca o quanto a fama ficou aquém.",
+      "feedbackWrong": {
+        "b": "Não é lenda.",
+        "c": "Não é sombra."
+      },
+      "hint": "Veja a medida usada.",
+      "learningObjective": "Lembrar a medida.",
+      "evidence": [
+        "2 Crônicas 9:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 1:10 a 1 Reis 3:9?",
+      "verseRef": "2 Crônicas 1:10",
+      "passageA": {
+        "ref": "2 Crônicas 1:10"
+      },
+      "passageB": {
+        "ref": "1 Reis 3:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesmo pedido de sabedoria"
+        },
+        {
+          "id": "b",
+          "text": "Pedido só de ouro"
+        },
+        {
+          "id": "c",
+          "text": "Recusa do povo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabedoria e conhecimento",
+      "feedbackCorrect": "Os dois pedem sabedoria.",
+      "feedbackWrong": {
+        "b": "O centro é sabedoria.",
+        "c": "Ele quer julgar o povo."
+      },
+      "hint": "Compare o pedido.",
+      "learningObjective": "Relacionar Crônicas a Reis.",
+      "evidence": [
+        "2 Crônicas 1:10",
+        "1 Reis 3:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 9:6, toque o marcador de contraste com a fama.",
+      "verseRef": "2 Crônicas 9:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mas"
+        },
+        {
+          "id": "b",
+          "text": "metade"
+        },
+        {
+          "id": "c",
+          "text": "olhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas não acreditei no que se falava",
+      "feedbackCorrect": "Mas introduz o contraste.",
+      "feedbackWrong": {
+        "b": "É a medida.",
+        "c": "É o meio."
+      },
+      "hint": "Procure a primeira palavra.",
+      "learningObjective": "Reconhecer o contraste.",
+      "evidence": [
+        "2 Crônicas 9:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança 2 Crônicas 6:36–39?",
+      "verseRef": "2 Crônicas 6:36–39",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pecado leva ao cativeiro"
+        },
+        {
+          "id": "b",
+          "text": "Conversão e súplica no exílio"
+        },
+        {
+          "id": "c",
+          "text": "Pedido de ouvir e perdoar"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "perdoa ao teu povo que pecou contra ti",
+      "feedbackCorrect": "Queda, volta e perdão.",
+      "feedbackWrong": {
+        "default": "Comece pelo pecado."
+      },
+      "hint": "O perdão fecha.",
+      "learningObjective": "Compreender a oração.",
+      "evidence": [
+        "2 Crônicas 6:36–39"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O bloco do templo ensina que a casa escolhida nunca sofre juízo se o povo abandonar Deus.",
+      "verseRef": "2 Crônicas 7:19–20",
+      "correctOptionId": "false",
+      "evidenceSpan": "esta casa que consagrei ao meu nome lançarei para longe da minha presença",
+      "feedbackCorrect": "A casa ainda pode ser julgada.",
+      "feedbackWrong": {
+        "true": "Leia 7:20."
+      },
+      "hint": "Veja o destino da casa.",
+      "learningObjective": "Interpretar escolha e juízo.",
+      "evidence": [
+        "2 Crônicas 7:19–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 2:6, toque o trecho que sustenta a transcendência de Deus.",
+      "verseRef": "2 Crônicas 2:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "não o podem"
+        },
+        {
+          "id": "b",
+          "text": "queimar incenso"
+        },
+        {
+          "id": "c",
+          "text": "quem sou eu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os céus e até os céus dos céus não o podem conter",
+      "feedbackCorrect": "Nem os céus o contêm.",
+      "feedbackWrong": {
+        "b": "É a finalidade da casa.",
+        "c": "É a humildade de Salomão."
+      },
+      "hint": "Procure o que os céus não fazem.",
+      "learningObjective": "Sustentar a transcendência.",
+      "evidence": [
+        "2 Crônicas 2:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura este bloco sustenta?",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus ouve o povo que se converte e ainda julga o abandono"
+        },
+        {
+          "id": "b",
+          "text": "O templo dispensa qualquer conversão"
+        },
+        {
+          "id": "c",
+          "text": "Sabedoria e culto não se relacionam"
+        },
+        {
+          "id": "d",
+          "text": "A rainha nega o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então, eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra",
+      "feedbackCorrect": "Misericórdia e juízo formam a leitura.",
+      "feedbackWrong": {
+        "b": "7:14 exige humilhação.",
+        "c": "Sabedoria e casa caminham juntas.",
+        "d": "Ela bendiz o SENHOR."
+      },
+      "hint": "Una os fios do bloco.",
+      "learningObjective": "Escolher a leitura do bloco.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho do pedido ao louvor?",
+      "verseRef": "2 Crônicas 1:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rei pede discernimento a Deus"
+        },
+        {
+          "id": "b",
+          "text": "A casa e a arca recebem o culto"
+        },
+        {
+          "id": "c",
+          "text": "A rainha bendiz o Senhor do trono"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "sabedoria e conhecimento",
+      "feedbackCorrect": "Pedido, culto e louvor.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido."
+      },
+      "hint": "O louvor fecha.",
+      "learningObjective": "Encadear o bloco.",
+      "evidence": [
+        "2 Crônicas 1:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 7:14, o povo deve se _____.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "humilhar"
+        },
+        {
+          "id": "b",
+          "text": "orgulhar"
+        },
+        {
+          "id": "c",
+          "text": "esconder"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se humilhar, orar, e me buscar",
+      "feedbackCorrect": "Humilhar abre a restauração.",
+      "feedbackWrong": {
+        "b": "Não é orgulhar.",
+        "c": "Não é esconder."
+      },
+      "hint": "Veja o primeiro verbo.",
+      "learningObjective": "Lembrar o termo-chave.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 9:8 a 1 Reis 3:12?",
+      "verseRef": "2 Crônicas 9:8",
+      "passageA": {
+        "ref": "2 Crônicas 9:8"
+      },
+      "passageB": {
+        "ref": "1 Reis 3:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sabedoria e trono de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Negação do reinado"
+        },
+        {
+          "id": "c",
+          "text": "Fim de Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Bendito seja o SENHOR, teu Deus, que se agradou de ti",
+      "feedbackCorrect": "Dom e trono se encontram.",
+      "feedbackWrong": {
+        "b": "Há reinado afirmado.",
+        "c": "Israel é amado no texto."
+      },
+      "hint": "Compare sabedoria e trono.",
+      "learningObjective": "Ligar trono e sabedoria.",
+      "evidence": [
+        "2 Crônicas 9:8",
+        "1 Reis 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 6:38, toque o trecho da conversão sincera.",
+      "verseRef": "2 Crônicas 6:38",
+      "options": [
+        {
+          "id": "a",
+          "text": "todo o coração"
+        },
+        {
+          "id": "b",
+          "text": "seu cativeiro"
+        },
+        {
+          "id": "c",
+          "text": "Teu nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "com todo o coração e com toda a alma",
+      "feedbackCorrect": "Coração e alma marcam a volta.",
+      "feedbackWrong": {
+        "b": "É o lugar.",
+        "c": "É a casa."
+      },
+      "hint": "Procure a expressão do coração.",
+      "learningObjective": "Sustentar a conversão.",
+      "evidence": [
+        "2 Crônicas 6:38"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga casa, conversão e testemunho?",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "A casa é dedicada a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O povo é chamado a se humilhar"
+        },
+        {
+          "id": "c",
+          "text": "A rainha reconhece o Deus do trono"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se humilhar, orar, e me buscar",
+      "feedbackCorrect": "Casa, povo e testemunho.",
+      "feedbackWrong": {
+        "default": "Comece pela casa."
+      },
+      "hint": "Siga o arco.",
+      "learningObjective": "Encadear o bloco.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    }
+  ]
+}

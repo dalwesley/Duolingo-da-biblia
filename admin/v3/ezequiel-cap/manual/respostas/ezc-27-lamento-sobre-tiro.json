@@ -1,0 +1,708 @@
+{
+  "study": {
+    "passageRef": "Ezequiel 27:1–9",
+    "passages": [
+      {
+        "ref": "Ezequiel 27:1–9"
+      }
+    ],
+    "context": "O Senhor manda levantar lamento sobre Tiro: ela se diz perfeita em formosura, edificada no mar com madeira e comércio.",
+    "keyword": "formosura",
+    "keywordGloss": "Beleza de que Tiro se gaba; aperfeiçoada pelos que a edificaram.",
+    "focusQuestion": "Quando a beleza e o comércio incham, você ainda depende de Deus?",
+    "reflectionPrompts": [
+      "Lamento sobre Tiro",
+      "Perfeita em formosura",
+      "Madeira e pilotos"
+    ],
+    "facts": [
+      {
+        "text": "O Filho do homem deve levantar lamentação sobre Tiro.",
+        "evidenceRef": "Ezequiel 27:2",
+        "evidenceSpan": "Levanta, pois, ó filho do homem, uma lamentação sobre Tiro"
+      },
+      {
+        "text": "Tiro se diz perfeita em formosura.",
+        "evidenceRef": "Ezequiel 27:3",
+        "evidenceSpan": "Ó Tiro, você diz: Eu sou perfeita em formosura"
+      },
+      {
+        "text": "No coração dos mares estão seus limites; edificadores aperfeiçoaram sua beleza.",
+        "evidenceRef": "Ezequiel 27:4",
+        "evidenceSpan": "No coração dos mares, estão os teus limites; os que te edificaram aperfeiçoaram a tua beleza"
+      },
+      {
+        "text": "Conveses de cipreste de Senir e mastros de cedros do Líbano.",
+        "evidenceRef": "Ezequiel 27:5",
+        "evidenceSpan": "Fizeram todos os teus conveses de cipreste de Senir; trouxeram cedros do Líbano para fazer os teus mastros"
+      },
+      {
+        "text": "Sidon e Arvade foram remeiros; sábios de Tiro foram pilotos.",
+        "evidenceRef": "Ezequiel 27:8",
+        "evidenceSpan": "Os habitantes de Sidon e de Arvade foram os teus remeiros; os teus sábios, ó Tiro, que se encontravam em ti, esses foram os teus pilotos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "formosura",
+        "gloss": "Beleza de que Tiro se gaba."
+      },
+      {
+        "term": "lamentação",
+        "gloss": "Canto de dor ordenado sobre Tiro."
+      },
+      {
+        "term": "pilotos",
+        "gloss": "Sábios de Tiro que dirigem o navio da cidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem do lamento",
+        "evidenceRef": "Ezequiel 27:1–2"
+      },
+      {
+        "label": "Tiro se declara perfeita",
+        "evidenceRef": "Ezequiel 27:3–4"
+      },
+      {
+        "label": "Madeira e luxo do navio",
+        "evidenceRef": "Ezequiel 27:5–7"
+      },
+      {
+        "label": "Remeiros, pilotos e calafates",
+        "evidenceRef": "Ezequiel 27:8–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Por isso se manda levantar lamentação sobre Tiro.",
+        "marker": "pois",
+        "evidenceRef": "Ezequiel 27:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ela se diz perfeita; o lamento já anuncia a queda.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 27:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Os edificadores aperfeiçoaram a beleza no coração dos mares.",
+        "marker": null,
+        "evidenceRef": "Ezequiel 27:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 23:5–7",
+        "bridge": "Orgulho de Tiro"
+      },
+      {
+        "ref": "Apocalipse 18:11–13",
+        "bridge": "Comércio que cai"
+      },
+      {
+        "ref": "Ezequiel 28:2",
+        "bridge": "Coração elevado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O texto só celebra Tiro sem lamento.",
+        "why": "A ordem é levantar uma lamentação sobre Tiro."
+      },
+      {
+        "text": "Tiro se confessa frágil e humilde.",
+        "why": "Ela diz: Eu sou perfeita em formosura."
+      },
+      {
+        "text": "Não há comércio nem marinheiros na cena.",
+        "why": "Há remeiros, pilotos, calafates e mercadorias."
+      }
+    ],
+    "centralInsight": "Tiro se gaba de formosura; o lamento já canta sua queda.",
+    "anchorQuestion": "O que Tiro diz de si em Ezequiel 27:3?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Ezequiel 27:3, Tiro diz que é perfeita em formosura.",
+      "verseRef": "Ezequiel 27:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ó Tiro, você diz: Eu sou perfeita em formosura",
+      "feedbackCorrect": "A declaração de orgulho é explícita.",
+      "feedbackWrong": {
+        "false": "O versículo cita a fala de Tiro."
+      },
+      "hint": "Veja o que Tiro diz de si.",
+      "learningObjective": "Identificar a declaração.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 27:2, toque o que se deve levantar.",
+      "verseRef": "Ezequiel 27:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "uma lamentação"
+        },
+        {
+          "id": "b",
+          "text": "filho do homem"
+        },
+        {
+          "id": "c",
+          "text": "sobre Tiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma lamentação sobre Tiro",
+      "feedbackCorrect": "O que se levanta é uma lamentação.",
+      "feedbackWrong": {
+        "b": "É o vocativo.",
+        "c": "É o alvo."
+      },
+      "hint": "Procure o substantivo.",
+      "learningObjective": "Identificar o canto.",
+      "evidence": [
+        "Ezequiel 27:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Ezequiel 27:4, onde estão os limites de Tiro?",
+      "verseRef": "Ezequiel 27:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "No coração dos mares"
+        },
+        {
+          "id": "b",
+          "text": "No deserto de Judá"
+        },
+        {
+          "id": "c",
+          "text": "Nas montanhas de Seir"
+        },
+        {
+          "id": "d",
+          "text": "No rio do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No coração dos mares, estão os teus limites",
+      "feedbackCorrect": "Os limites estão no coração dos mares.",
+      "feedbackWrong": {
+        "b": "Não é o deserto.",
+        "c": "Não é Seir.",
+        "d": "Não é o Egito."
+      },
+      "hint": "Leia o início do versículo.",
+      "learningObjective": "Reconhecer a localização.",
+      "evidence": [
+        "Ezequiel 27:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Ezequiel 27:5 na ordem do texto.",
+      "verseRef": "Ezequiel 27:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fizeram todos os teus conveses de cipreste de Senir"
+        },
+        {
+          "id": "b",
+          "text": "trouxeram cedros do Líbano"
+        },
+        {
+          "id": "c",
+          "text": "para fazer os teus mastros"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fizeram todos os teus conveses de cipreste de Senir",
+      "feedbackCorrect": "Conveses, cedros e mastros.",
+      "feedbackWrong": {
+        "default": "Comece pelos conveses."
+      },
+      "hint": "Comece pelos conveses.",
+      "learningObjective": "Reconhecer a sequência.",
+      "evidence": [
+        "Ezequiel 27:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Ezequiel 27:3, Eu sou perfeita em ___.",
+      "verseRef": "Ezequiel 27:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "formosura"
+        },
+        {
+          "id": "b",
+          "text": "humildade"
+        },
+        {
+          "id": "c",
+          "text": "pobreza"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou perfeita em formosura",
+      "feedbackCorrect": "A palavra do orgulho é formosura.",
+      "feedbackWrong": {
+        "b": "Não é humildade.",
+        "c": "Não é pobreza."
+      },
+      "hint": "Veja o substantivo no fim.",
+      "learningObjective": "Lembrar a palavra.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Ezequiel 27:3 comunica que se liga a este contexto?",
+      "verseRef": "Ezequiel 27:3",
+      "passageA": {
+        "ref": "Ezequiel 27:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O lamento sobre Tiro começa pela beleza de que ela se gaba no mar."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orgulho da formosura"
+        },
+        {
+          "id": "b",
+          "text": "Calafates de Gebal"
+        },
+        {
+          "id": "c",
+          "text": "Linho do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou perfeita em formosura",
+      "feedbackCorrect": "A declaração resume o orgulho.",
+      "feedbackWrong": {
+        "b": "Os calafates vêm depois.",
+        "c": "O linho aparece depois."
+      },
+      "hint": "Compare a fala.",
+      "learningObjective": "Ligar ao contexto.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Ezequiel 27:2, o Senhor manda celebrar uma festa alegre sobre Tiro.",
+      "verseRef": "Ezequiel 27:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Levanta, pois, ó filho do homem, uma lamentação sobre Tiro",
+      "feedbackCorrect": "É lamentação, não festa.",
+      "feedbackWrong": {
+        "true": "O texto manda levantar lamentação."
+      },
+      "hint": "Veja o que se deve levantar.",
+      "learningObjective": "Perceber o gênero.",
+      "evidence": [
+        "Ezequiel 27:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 27:2, toque a palavra que marca a sequência da ordem.",
+      "verseRef": "Ezequiel 27:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Tiro"
+        },
+        {
+          "id": "c",
+          "text": "homem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta, pois, ó filho do homem, uma lamentação",
+      "feedbackCorrect": "\"Pois\" marca a sequência.",
+      "feedbackWrong": {
+        "b": "É o alvo.",
+        "c": "Faz parte do vocativo."
+      },
+      "hint": "Procure a palavra curta.",
+      "learningObjective": "Tocar o marcador.",
+      "evidence": [
+        "Ezequiel 27:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Ezequiel 27:3 e 27:4 se relacionam?",
+      "verseRef": "Ezequiel 27:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "A formosura gaba-se e os edificadores a aperfeiçoam"
+        },
+        {
+          "id": "b",
+          "text": "Tiro nega qualquer beleza no mar"
+        },
+        {
+          "id": "c",
+          "text": "Os mares recusam os limites de Tiro"
+        },
+        {
+          "id": "d",
+          "text": "A formosura cancela o lamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou perfeita em formosura",
+      "feedbackCorrect": "Ela se declara perfeita; os edificadores aperfeiçoam.",
+      "feedbackWrong": {
+        "b": "Ela se gaba.",
+        "c": "Os limites estão nos mares.",
+        "d": "O lamento é ordenado."
+      },
+      "hint": "Una a fala à edificação.",
+      "learningObjective": "Relacionar orgulho e construção.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como a cena avança em Ezequiel 27:1–9?",
+      "verseRef": "Ezequiel 27:2–3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem de levantar o lamento"
+        },
+        {
+          "id": "b",
+          "text": "Tiro se declara perfeita em formosura"
+        },
+        {
+          "id": "c",
+          "text": "Madeira, remeiros e pilotos são descritos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu sou perfeita em formosura",
+      "feedbackCorrect": "Ordem → orgulho → navio.",
+      "feedbackWrong": {
+        "default": "Comece pelo lamento."
+      },
+      "hint": "Comece pelo lamento.",
+      "learningObjective": "Ordenar a cena.",
+      "evidence": [
+        "Ezequiel 27:2",
+        "Ezequiel 27:3",
+        "Ezequiel 27:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Ezequiel 27:8, esses foram os teus ___.",
+      "verseRef": "Ezequiel 27:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "pilotos"
+        },
+        {
+          "id": "b",
+          "text": "inimigos"
+        },
+        {
+          "id": "c",
+          "text": "sacerdotes"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esses foram os teus pilotos",
+      "feedbackCorrect": "Os sábios foram pilotos.",
+      "feedbackWrong": {
+        "b": "Não são inimigos.",
+        "c": "Não são sacerdotes."
+      },
+      "hint": "Veja o substantivo no fim.",
+      "learningObjective": "Lembrar o papel.",
+      "evidence": [
+        "Ezequiel 27:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Ezequiel 27:3 a Isaías 23:5–7?",
+      "verseRef": "Ezequiel 27:3",
+      "passageA": {
+        "ref": "Ezequiel 27:3"
+      },
+      "passageB": {
+        "ref": "Isaías 23:5–7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Orgulho de Tiro"
+        },
+        {
+          "id": "b",
+          "text": "Curral de Amom"
+        },
+        {
+          "id": "c",
+          "text": "Espada do Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou perfeita em formosura",
+      "feedbackCorrect": "Nos dois, Tiro aparece ligada ao orgulho.",
+      "feedbackWrong": {
+        "b": "Amom está noutra cena.",
+        "c": "O Egito está noutra cena."
+      },
+      "hint": "Compare o orgulho.",
+      "learningObjective": "Relacionar a Isaías.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Ezequiel 27:4, os que edificaram Tiro aperfeiçoaram a sua beleza.",
+      "verseRef": "Ezequiel 27:4",
+      "correctOptionId": "true",
+      "evidenceSpan": "os que te edificaram aperfeiçoaram a tua beleza",
+      "feedbackCorrect": "A beleza é obra dos edificadores.",
+      "feedbackWrong": {
+        "false": "O versículo afirma que aperfeiçoaram a beleza."
+      },
+      "hint": "Leia a segunda metade.",
+      "learningObjective": "Confirmar a origem da beleza.",
+      "evidence": [
+        "Ezequiel 27:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Ezequiel 27:4, toque o trecho que sustenta onde estão os limites.",
+      "verseRef": "Ezequiel 27:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "coração dos mares"
+        },
+        {
+          "id": "b",
+          "text": "tua beleza"
+        },
+        {
+          "id": "c",
+          "text": "te edificaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No coração dos mares, estão os teus limites",
+      "feedbackCorrect": "\"Coração dos mares\" localiza os limites.",
+      "feedbackWrong": {
+        "b": "É o resultado.",
+        "c": "São os agentes."
+      },
+      "hint": "Procure a localização.",
+      "learningObjective": "Tocar a localização.",
+      "evidence": [
+        "Ezequiel 27:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura de Ezequiel 27:1–9 o texto sustenta melhor?",
+      "verseRef": "Ezequiel 27:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O lamento canta a formosura orgulhosa de Tiro no mar"
+        },
+        {
+          "id": "b",
+          "text": "Tiro se confessa humilde e pobre"
+        },
+        {
+          "id": "c",
+          "text": "Não há comércio nem marinheiros"
+        },
+        {
+          "id": "d",
+          "text": "O lamento celebra vitória eterna de Tiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu sou perfeita em formosura",
+      "feedbackCorrect": "Lamento + orgulho + navio comercial.",
+      "feedbackWrong": {
+        "b": "Ela se diz perfeita.",
+        "c": "Há remeiros e pilotos.",
+        "d": "É lamentação."
+      },
+      "hint": "Una lamento e orgulho.",
+      "learningObjective": "Escolher a interpretação.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene a lógica do lamento sobre Tiro.",
+      "verseRef": "Ezequiel 27:2–4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O lamento é ordenado"
+        },
+        {
+          "id": "b",
+          "text": "Tiro se gaba da formosura"
+        },
+        {
+          "id": "c",
+          "text": "A beleza no mar é descrita"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "os que te edificaram aperfeiçoaram a tua beleza",
+      "feedbackCorrect": "Ordem → orgulho → descrição.",
+      "feedbackWrong": {
+        "default": "Comece na ordem."
+      },
+      "hint": "Comece na ordem.",
+      "learningObjective": "Encadear o lamento.",
+      "evidence": [
+        "Ezequiel 27:2",
+        "Ezequiel 27:3",
+        "Ezequiel 27:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Ezequiel 27:5, trouxeram cedros do ___.",
+      "verseRef": "Ezequiel 27:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Líbano"
+        },
+        {
+          "id": "b",
+          "text": "Egito"
+        },
+        {
+          "id": "c",
+          "text": "Basã"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trouxeram cedros do Líbano",
+      "feedbackCorrect": "A origem é o Líbano.",
+      "feedbackWrong": {
+        "b": "Não é o Egito.",
+        "c": "Basã entra nos carvalhos."
+      },
+      "hint": "Veja de onde vieram.",
+      "learningObjective": "Lembrar a origem.",
+      "evidence": [
+        "Ezequiel 27:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Ezequiel 27:3–4 a Apocalipse 18:11–13?",
+      "verseRef": "Ezequiel 27:3",
+      "passageA": {
+        "ref": "Ezequiel 27:3"
+      },
+      "passageB": {
+        "ref": "Apocalipse 18:11–13"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Comércio que cai"
+        },
+        {
+          "id": "b",
+          "text": "Santuário de Amom"
+        },
+        {
+          "id": "c",
+          "text": "Sinal da esposa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "negocia com os povos em muitas terras do mar",
+      "feedbackCorrect": "Nos dois, o comércio orgulhoso está sob juízo.",
+      "feedbackWrong": {
+        "b": "Amom está noutra cena.",
+        "c": "O sinal está noutra etapa."
+      },
+      "hint": "Compare o comércio.",
+      "learningObjective": "Ligar a Apocalipse 18.",
+      "evidence": [
+        "Ezequiel 27:3"
+      ]
+    }
+  ]
+}

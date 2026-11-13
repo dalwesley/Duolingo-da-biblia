@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 22:21–26",
+  "passages": [
+   {
+    "ref": "Jó 22:21–26"
+   },
+   {
+    "ref": "Jó 22:27–30"
+   }
+  ],
+  "context": "Elifaz manda Jó reconciliar-se com Deus, guardar as palavras e devolver o ouro — conselho certo em tom de acusação.",
+  "keyword": "Reconcilia-te",
+  "keywordGloss": "O imperativo de Elifaz que mistura verdade e pressão.",
+  "focusQuestion": "Você já deu um conselho certo com o tom errado?",
+  "reflectionPrompts": [
+   "Paz com Deus",
+   "Ouro e Ofir",
+   "Pureza das mãos"
+  ],
+  "facts": [
+   {
+    "text": "Elifaz manda Jó reconciliar-se com Deus e ter paz.",
+    "evidenceRef": "Jó 22:21",
+    "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz"
+   },
+   {
+    "text": "Jó deve aceitar a instrução e guardar as palavras no coração.",
+    "evidenceRef": "Jó 22:22",
+    "evidenceSpan": "coloca suas palavras em teu coração"
+   },
+   {
+    "text": "Se se converter, será restaurado.",
+    "evidenceRef": "Jó 22:23",
+    "evidenceSpan": "serás restaurado"
+   },
+   {
+    "text": "O Todo-Poderoso será o ouro de Jó.",
+    "evidenceRef": "Jó 22:25",
+    "evidenceSpan": "o Todo-Poderoso será o teu ouro"
+   },
+   {
+    "text": "Jó orará e Deus o ouvirá.",
+    "evidenceRef": "Jó 22:27",
+    "evidenceSpan": "Orarás a ele, e ele te ouvirá"
+   },
+   {
+    "text": "Deus salva o humilde.",
+    "evidenceRef": "Jó 22:29",
+    "evidenceSpan": "Deus salva o humilde"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "paz",
+    "gloss": "O fruto da reconciliação que Elifaz promete."
+   },
+   {
+    "term": "ouro",
+    "gloss": "O que Elifaz diz espalhar e o que Deus será."
+   },
+   {
+    "term": "humilde",
+    "gloss": "Aquele a quem Deus salva."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Chamado à reconciliação e paz",
+    "evidenceRef": "Jó 22:21–22"
+   },
+   {
+    "label": "Conversão, ouro e Ofir",
+    "evidenceRef": "Jó 22:23–25"
+   },
+   {
+    "label": "Deleite, oração e luz",
+    "evidenceRef": "Jó 22:26–28"
+   },
+   {
+    "label": "Exaltação do humilde",
+    "evidenceRef": "Jó 22:29–30"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Reconcilia-te e tem paz; assim o bem te sobrevirá.",
+    "marker": "assim",
+    "evidenceRef": "Jó 22:21"
+   },
+   {
+    "kind": "causa",
+    "text": "Porquanto, então, te deleitarás no Todo-Poderoso.",
+    "marker": "Porquanto",
+    "evidenceRef": "Jó 22:26"
+   },
+   {
+    "kind": "resultado",
+    "text": "Quando forem humilhados, então dirás que haja exaltação.",
+    "marker": "então",
+    "evidenceRef": "Jó 22:29"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "2 Coríntios 5:20",
+    "bridge": "Reconciliem-se com Deus"
+   },
+   {
+    "ref": "Isaías 55:7",
+    "bridge": "Volte-se ao Senhor"
+   },
+   {
+    "ref": "Tiago 4:8",
+    "bridge": "Aproximai-vos de Deus"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Elifaz só mente; não há verdade no conselho.",
+    "why": "Há verdade (reconciliação), mas o tom acusa."
+   },
+   {
+    "text": "Deus nunca salva o humilde neste texto.",
+    "why": "22:29 afirma que Deus salva o humilde."
+   },
+   {
+    "text": "O ouro de Ofir deve ser o único tesouro.",
+    "why": "22:25 diz que o Todo-Poderoso será o ouro."
+   }
+  ],
+  "centralInsight": "O conselho certo na boca errada ainda fere: reconciliação não se impõe com acusação.",
+  "anchorQuestion": "O que Elifaz manda Jó fazer em Jó 22:21?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 22:21, Elifaz manda Jó reconciliar-se com Deus e ter paz.",
+   "verseRef": "Jó 22:21",
+   "correctOptionId": "true",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "O imperativo é reconciliar-se e ter paz.",
+   "feedbackWrong": {
+    "false": "Releia o início de 22:21."
+   },
+   "hint": "Veja o primeiro verbo.",
+   "learningObjective": "Observar o chamado.",
+   "evidence": [
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 22:21, toque o que virá se Jó se reconciliar.",
+   "verseRef": "Jó 22:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "bem"
+    },
+    {
+     "id": "b",
+     "text": "paz"
+    },
+    {
+     "id": "c",
+     "text": "Ele"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o bem te sobrevirá",
+   "feedbackCorrect": "O bem sobrevirá.",
+   "feedbackWrong": {
+    "b": "Paz é o meio, não o resultado do fim.",
+    "c": "Ele é com quem se reconciliar."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Identificar o resultado.",
+   "evidence": [
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 22:25, o que o Todo-Poderoso será para Jó?",
+   "verseRef": "Jó 22:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "O seu ouro"
+    },
+    {
+     "id": "b",
+     "text": "O seu acusador"
+    },
+    {
+     "id": "c",
+     "text": "O seu laço"
+    },
+    {
+     "id": "d",
+     "text": "O seu exílio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Todo-Poderoso será o teu ouro",
+   "feedbackCorrect": "Deus será o ouro.",
+   "feedbackWrong": {
+    "b": "Não há acusador neste versículo.",
+    "c": "Não há laço.",
+    "d": "Não há exílio."
+   },
+   "hint": "Leia o predicado.",
+   "learningObjective": "Observar a imagem do ouro.",
+   "evidence": [
+    "Jó 22:25"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 22:21 na ordem do texto.",
+   "verseRef": "Jó 22:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Reconcilia-te, pois, com Ele e tem paz"
+    },
+    {
+     "id": "b",
+     "text": "assim, o bem"
+    },
+    {
+     "id": "c",
+     "text": "te sobrevirá"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Reconciliação, paz e bem.",
+   "feedbackWrong": {
+    "default": "Comece por Reconcilia-te."
+   },
+   "hint": "Comece pelo imperativo.",
+   "learningObjective": "Reconhecer a sequência.",
+   "evidence": [
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 22:22, onde Jó deve colocar as palavras?",
+   "verseRef": "Jó 22:22",
+   "options": [
+    {
+     "id": "a",
+     "text": "coração"
+    },
+    {
+     "id": "b",
+     "text": "tenda"
+    },
+    {
+     "id": "c",
+     "text": "ribeiros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "em teu coração",
+   "feedbackCorrect": "A palavra é coração.",
+   "feedbackWrong": {
+    "b": "Tenda está em 22:23.",
+    "c": "Ribeiros está em 22:24."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Lembrar onde guardar.",
+   "evidence": [
+    "Jó 22:22"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 22:21 comunica que se liga a este contexto?",
+   "verseRef": "Jó 22:21",
+   "passageA": {
+    "ref": "Jó 22:21"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Elifaz mistura conselho verdadeiro com tom de acusação."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Conselho e pressão"
+    },
+    {
+     "id": "b",
+     "text": "Silêncio absoluto"
+    },
+    {
+     "id": "c",
+     "text": "Vitória dos ímpios"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Há conselho; há pressão.",
+   "feedbackWrong": {
+    "b": "Há imperativo, não silêncio.",
+    "c": "Não há vitória dos ímpios."
+   },
+   "hint": "Pense no tom do chamado.",
+   "learningObjective": "Ligar o versículo ao contexto.",
+   "evidence": [
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 22:27–29, Elifaz diz que Deus ignora a oração e nunca salva o humilde.",
+   "verseRef": "Jó 22:27–28",
+   "correctOptionId": "false",
+   "evidenceSpan": "Orarás a ele, e ele te ouvirá",
+   "feedbackCorrect": "Há oração ouvida e salvação do humilde.",
+   "feedbackWrong": {
+    "true": "Compare 22:27 e 22:29."
+   },
+   "hint": "Veja oração e humilde.",
+   "learningObjective": "Compreender a promessa.",
+   "evidence": [
+    "Jó 22:27–28"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 22:26, toque a palavra que marca a causa do deleite.",
+   "verseRef": "Jó 22:26",
+   "options": [
+    {
+     "id": "a",
+     "text": "Porquanto"
+    },
+    {
+     "id": "b",
+     "text": "rosto"
+    },
+    {
+     "id": "c",
+     "text": "Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Porquanto, então, te deleitarás",
+   "feedbackCorrect": "Porquanto introduz a causa.",
+   "feedbackWrong": {
+    "b": "Rosto é o que se levanta.",
+    "c": "Deus é o objeto do deleite."
+   },
+   "hint": "Procure a primeira palavra.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 22:26"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 22:25 se relaciona com 22:21?",
+   "verseRef": "Jó 22:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "Mostra o bem da reconciliação: Deus como tesouro"
+    },
+    {
+     "id": "b",
+     "text": "Nega qualquer paz com Deus"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que o ouro de Ofir basta sozinho"
+    },
+    {
+     "id": "d",
+     "text": "Diz que Deus não ouve oração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o Todo-Poderoso será o teu ouro",
+   "feedbackCorrect": "Da paz ao Deus-tesouro.",
+   "feedbackWrong": {
+    "b": "22:21 oferece paz.",
+    "c": "22:25 troca o ouro por Deus.",
+    "d": "22:27 fala de oração ouvida."
+   },
+   "hint": "Una chamado e tesouro.",
+   "learningObjective": "Relacionar paz e ouro.",
+   "evidence": [
+    "Jó 22:25"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança o conselho de Elifaz em 22:21–30?",
+   "verseRef": "Jó 22:21–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Chamado à reconciliação e paz"
+    },
+    {
+     "id": "b",
+     "text": "Conversão e Deus como ouro"
+    },
+    {
+     "id": "c",
+     "text": "Oração ouvida e humilde salvo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Chamado, conversão e salvação.",
+   "feedbackWrong": {
+    "default": "Comece pelo chamado."
+   },
+   "hint": "Pense: paz → ouro → oração.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 22:21–22"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 22:29, a quem Deus salva?",
+   "verseRef": "Jó 22:29",
+   "options": [
+    {
+     "id": "a",
+     "text": "humilde"
+    },
+    {
+     "id": "b",
+     "text": "ouro"
+    },
+    {
+     "id": "c",
+     "text": "coração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Deus salva o humilde",
+   "feedbackCorrect": "A palavra é humilde.",
+   "feedbackWrong": {
+    "b": "Ouro está em 22:25.",
+    "c": "Coração está em 22:22."
+   },
+   "hint": "Veja o objeto de salva.",
+   "learningObjective": "Lembrar quem é salvo.",
+   "evidence": [
+    "Jó 22:29"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 22:21 a 2 Coríntios 5:20?",
+   "verseRef": "Jó 22:21",
+   "passageA": {
+    "ref": "Jó 22:21"
+   },
+   "passageB": {
+    "ref": "2 Coríntios 5:20"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Reconciliem-se com Deus"
+    },
+    {
+     "id": "b",
+     "text": "Lista de leis"
+    },
+    {
+     "id": "c",
+     "text": "Templo sem altar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Nos dois textos, há chamado à reconciliação.",
+   "feedbackWrong": {
+    "b": "Não há lista de leis.",
+    "c": "Não se fala de templo."
+   },
+   "hint": "Compare o imperativo.",
+   "learningObjective": "Relacionar Elifaz a Paulo.",
+   "evidence": [
+    "Jó 22:21",
+    "2 Coríntios 5:20"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 22:21–30 sustenta que o tom de Elifaz anula qualquer verdade no conselho de reconciliar-se.",
+   "verseRef": "Jó 22:21",
+   "correctOptionId": "false",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Há verdade no conselho; o tom ainda fere.",
+   "feedbackWrong": {
+    "true": "Separe conteúdo e tom."
+   },
+   "hint": "Separe o que é dito e como.",
+   "learningObjective": "Interpretar conselho e tom.",
+   "evidence": [
+    "Jó 22:21"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 22:30, toque o meio pelo qual alguém é libertado.",
+   "verseRef": "Jó 22:30",
+   "options": [
+    {
+     "id": "a",
+     "text": "tuas mãos"
+    },
+    {
+     "id": "b",
+     "text": "não é inocente"
+    },
+    {
+     "id": "c",
+     "text": "livrará"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "pela pureza de tuas mãos",
+   "feedbackCorrect": "A pureza das mãos liberta.",
+   "feedbackWrong": {
+    "b": "Não é inocente é quem é libertado.",
+    "c": "Livrará é o verbo, não o meio."
+   },
+   "hint": "Veja o meio da libertação.",
+   "learningObjective": "Sustentar a leitura das mãos.",
+   "evidence": [
+    "Jó 22:30"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 22:21–30 sustenta?",
+   "verseRef": "Jó 22:21–22",
+   "options": [
+    {
+     "id": "a",
+     "text": "Conselho certo na boca errada ainda pode ferir"
+    },
+    {
+     "id": "b",
+     "text": "Não há chamado à reconciliação"
+    },
+    {
+     "id": "c",
+     "text": "Deus nunca ouve a oração"
+    },
+    {
+     "id": "d",
+     "text": "O humilde nunca é salvo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Verdade e acusação convivem no discurso.",
+   "feedbackWrong": {
+    "b": "22:21 chama à reconciliação.",
+    "c": "22:27 fala de oração ouvida.",
+    "d": "22:29 salva o humilde."
+   },
+   "hint": "Una conteúdo e tom.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 22:21–22"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o chamado à reconciliação?",
+   "verseRef": "Jó 22:21",
+   "options": [
+    {
+     "id": "a",
+     "text": "Elifaz manda reconciliar-se com Deus"
+    },
+    {
+     "id": "b",
+     "text": "Isaías chama a voltar ao Senhor"
+    },
+    {
+     "id": "c",
+     "text": "Tiago manda aproximar-se de Deus"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "O fio vai de Elifaz a Isaías e a Tiago.",
+   "feedbackWrong": {
+    "default": "Comece por Elifaz."
+   },
+   "hint": "Siga: Elifaz → Isaías → Tiago.",
+   "learningObjective": "Ver o fio da reconciliação.",
+   "evidence": [
+    "Jó 22:21",
+    "Isaías 55:7",
+    "Tiago 4:8"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 22:25, o que o Todo-Poderoso será?",
+   "verseRef": "Jó 22:25",
+   "options": [
+    {
+     "id": "a",
+     "text": "ouro"
+    },
+    {
+     "id": "b",
+     "text": "humilde"
+    },
+    {
+     "id": "c",
+     "text": "coração"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "será o teu ouro",
+   "feedbackCorrect": "O termo é ouro.",
+   "feedbackWrong": {
+    "b": "Humilde está em 22:29.",
+    "c": "Coração está em 22:22."
+   },
+   "hint": "Veja o predicado.",
+   "learningObjective": "Lembrar o termo teológico.",
+   "evidence": [
+    "Jó 22:25"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 22:21 a Tiago 4:8?",
+   "verseRef": "Jó 22:21",
+   "passageA": {
+    "ref": "Jó 22:21"
+   },
+   "passageB": {
+    "ref": "Tiago 4:8"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Aproximai-vos de Deus"
+    },
+    {
+     "id": "b",
+     "text": "Lista de reis"
+    },
+    {
+     "id": "c",
+     "text": "Conquista de cidades"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Reconcilia-te, pois, com Ele e tem paz",
+   "feedbackCorrect": "Nos dois textos, há movimento em direção a Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de reis.",
+    "c": "Não se fala de conquista."
+   },
+   "hint": "Compare o movimento.",
+   "learningObjective": "Ligar Elifaz a Tiago.",
+   "evidence": [
+    "Jó 22:21",
+    "Tiago 4:8"
+   ]
+  }
+ ]
+}

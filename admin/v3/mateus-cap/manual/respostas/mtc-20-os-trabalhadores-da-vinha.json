@@ -1,0 +1,502 @@
+{
+  "study": {
+    "passageRef": "Mateus 20:8–13",
+    "passages": [
+      { "ref": "Mateus 20:8–13" },
+      { "ref": "Mateus 20:14–16" }
+    ],
+    "context": "Jesus compara o reino dos céus a um proprietário que contrata trabalhadores em horas diferentes. Com os primeiros, o acordo é um denário por dia. Outros só entram na undécima hora. Agora anoitece, e chega a hora de pagar.",
+    "keyword": "bom",
+    "keywordGloss": "É a palavra com que o dono se define ao dar ao último o mesmo que deu a quem trabalhou o dia todo.",
+    "focusQuestion": "Quando alguém recebe o mesmo que você, mesmo tendo feito menos, você reclama ou reconhece a bondade?",
+    "reflectionPrompts": [
+      "O mesmo denário",
+      "A queixa dos primeiros",
+      "O dono se diz bom"
+    ],
+    "facts": [
+      {
+        "text": "Ao anoitecer, o senhor da vinha manda pagar o salário começando pelos últimos.",
+        "evidenceRef": "Mateus 20:8",
+        "evidenceSpan": "pague-lhes o salário, começando pelos últimos"
+      },
+      {
+        "text": "Cada trabalhador contratado na undécima hora recebe um denário.",
+        "evidenceRef": "Mateus 20:9",
+        "evidenceSpan": "recebeu cada um deles um denário"
+      },
+      {
+        "text": "Os primeiros também recebem um denário.",
+        "evidenceRef": "Mateus 20:10",
+        "evidenceSpan": "também cada um deles recebeu um denário"
+      },
+      {
+        "text": "Ao receber o denário, os primeiros começam a murmurar contra o dono da casa.",
+        "evidenceRef": "Mateus 20:11",
+        "evidenceSpan": "começaram a murmurar contra o dono da casa"
+      },
+      {
+        "text": "O dono diz a um deles que não faz injustiça.",
+        "evidenceRef": "Mateus 20:13",
+        "evidenceSpan": "não te faço injustiça"
+      },
+      {
+        "text": "O dono pergunta se os olhos deles são maus porque ele é bom.",
+        "evidenceRef": "Mateus 20:15",
+        "evidenceSpan": "são maus os teus olhos porque eu sou bom"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "denário",
+        "gloss": "A moeda do acordo com os primeiros, paga também a cada um dos demais."
+      },
+      {
+        "term": "murmurar",
+        "gloss": "A reclamação dos primeiros contra o dono, depois de receberem o mesmo denário."
+      },
+      {
+        "term": "bom",
+        "gloss": "Como o dono se define ao querer dar ao último tanto quanto aos primeiros."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O pagamento começa pelos últimos",
+        "evidenceRef": "Mateus 20:8"
+      },
+      {
+        "label": "Os primeiros recebem igual e murmuram",
+        "evidenceRef": "Mateus 20:10–11"
+      },
+      {
+        "label": "O dono defende a própria bondade",
+        "evidenceRef": "Mateus 20:13–15"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Os primeiros esperavam mais, porém cada um recebeu um denário, como os últimos.",
+        "marker": "porém",
+        "evidenceRef": "Mateus 20:10"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os últimos trabalharam uma hora, contudo foram igualados a quem suportou o dia.",
+        "marker": "contudo",
+        "evidenceRef": "Mateus 20:12"
+      },
+      {
+        "kind": "causa",
+        "text": "O dono dá ao último o mesmo que ao primeiro porque quer dar.",
+        "marker": "pois",
+        "evidenceRef": "Mateus 20:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 19:30",
+        "bridge": "Últimos passam à frente"
+      },
+      {
+        "ref": "Lucas 13:30",
+        "bridge": "A ordem se inverte"
+      },
+      {
+        "ref": "Lucas 15:31–32",
+        "bridge": "Queixa contra a bondade"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Os primeiros receberam menos do que o denário combinado.",
+        "why": "Cada um deles recebeu um denário, e o dono lembra que esse era o acordo."
+      },
+      {
+        "text": "Pagar o mesmo a quem trabalhou menos foi injustiça.",
+        "why": "A queixa está com os trabalhadores. O dono diz que não faz injustiça e que é bom."
+      },
+      {
+        "text": "Os contratados na undécima hora ficaram sem salário.",
+        "why": "O texto diz que cada um deles recebeu um denário."
+      }
+    ],
+    "centralInsight": "A graça do Reino não segue a conta do mérito: Deus é bom com todos.",
+    "anchorQuestion": "O que o dono da vinha afirma sobre si ao responder à queixa dos primeiros?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Mateus 20:8, o senhor da vinha manda pagar o salário começando pelos primeiros.",
+      "verseRef": "Mateus 20:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "começando pelos últimos e indo até os primeiros",
+      "feedbackCorrect": "O pagamento começa pelos últimos e só depois chega aos primeiros.",
+      "feedbackWrong": {
+        "true": "O versículo manda o contrário: começar pelos últimos, indo até os primeiros."
+      },
+      "hint": "Veja a ordem que o senhor dá ao administrador.",
+      "learningObjective": "Observar que o pagamento começa pelos últimos, não pelos primeiros.",
+      "evidence": ["Mateus 20:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 20:9, toque o que cada contratado da undécima hora recebeu.",
+      "verseRef": "Mateus 20:9",
+      "options": [
+        { "id": "a", "text": "undécima hora" },
+        { "id": "b", "text": "um denário" },
+        { "id": "c", "text": "cada um" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "recebeu cada um deles um denário",
+      "feedbackCorrect": "Cada um dos contratados na undécima hora recebeu um denário.",
+      "feedbackWrong": {
+        "a": "A undécima hora diz quando foram contratados, não o que receberam.",
+        "c": "Cada um indica quem recebe, não a quantia."
+      },
+      "hint": "Olhe o fim do versículo, depois da chegada deles.",
+      "learningObjective": "Identificar o que cada contratado da undécima hora recebeu.",
+      "evidence": ["Mateus 20:9"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 20:12, quanto tempo os últimos trabalharam?",
+      "verseRef": "Mateus 20:12",
+      "options": [
+        { "id": "a", "text": "Uma hora só, como diz a queixa" },
+        { "id": "b", "text": "O dia todo, sob fadiga e calor" },
+        { "id": "c", "text": "O mesmo tempo dos primeiros" },
+        { "id": "d", "text": "Tempo nenhum, só a espera" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trabalharam apenas uma hora",
+      "feedbackCorrect": "A queixa diz que os últimos trabalharam apenas uma hora.",
+      "feedbackWrong": {
+        "b": "O dia inteiro, com fadiga e calor, é o que os primeiros dizem de si.",
+        "c": "O texto não iguala o tempo. Os últimos trabalharam uma hora.",
+        "d": "Eles trabalharam. A queixa fala de uma hora, não de tempo nenhum."
+      },
+      "hint": "Leia o tempo que a queixa atribui aos últimos.",
+      "learningObjective": "Observar por quanto tempo os últimos trabalharam, segundo a queixa.",
+      "evidence": ["Mateus 20:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 20:10 na ordem do texto.",
+      "verseRef": "Mateus 20:10",
+      "options": [
+        { "id": "a", "text": "Ao chegarem os primeiros" },
+        { "id": "b", "text": "pensaram que receberiam mais" },
+        { "id": "c", "text": "também cada um deles recebeu um denário" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ao chegarem os primeiros, pensaram que receberiam mais",
+      "feedbackCorrect": "A frase vai da chegada dos primeiros à expectativa e, então, ao denário.",
+      "feedbackWrong": {
+        "default": "Comece pela chegada dos primeiros. O denário igual fica no fim."
+      },
+      "hint": "O versículo abre com a chegada dos primeiros.",
+      "learningObjective": "Reconhecer a ordem da frase em Mateus 20:10.",
+      "evidence": ["Mateus 20:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 20:11, o que os primeiros começaram a fazer contra o dono da casa?",
+      "verseRef": "Mateus 20:11",
+      "options": [
+        { "id": "a", "text": "agradecer" },
+        { "id": "b", "text": "murmurar" },
+        { "id": "c", "text": "calar" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "começaram a murmurar contra o dono da casa",
+      "feedbackCorrect": "Ao receber o denário, eles começaram a murmurar contra o dono.",
+      "feedbackWrong": {
+        "a": "Não há gratidão no versículo. Eles começaram a murmurar.",
+        "c": "Eles não se calaram. O texto diz que começaram a murmurar."
+      },
+      "hint": "É o verbo da reação logo depois de receber o salário.",
+      "learningObjective": "Lembrar o verbo que descreve a reação dos primeiros.",
+      "evidence": ["Mateus 20:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 20:15 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 20:15",
+      "passageA": { "ref": "Mateus 20:15" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O proprietário chamou trabalhadores em horas diferentes e combinou um denário com os primeiros."
+      },
+      "options": [
+        { "id": "a", "text": "Horas definem o salário" },
+        { "id": "b", "text": "Bondade acima das horas" },
+        { "id": "c", "text": "Os últimos ficam sem paga" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "porque eu sou bom",
+      "feedbackCorrect": "Com horas desiguais, o dono ainda se apresenta como bom.",
+      "feedbackWrong": {
+        "a": "O acordo foi um denário. As horas não são a medida que ele usa.",
+        "c": "Os da undécima hora receberam. O versículo fala da bondade dele."
+      },
+      "hint": "Veja como o dono fala de si no fim do versículo.",
+      "learningObjective": "Ligar a palavra do dono sobre si ao cenário de horas diferentes.",
+      "evidence": ["Mateus 20:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 20:14, o dono dá ao último o mesmo que ao primeiro porque quer dar.",
+      "verseRef": "Mateus 20:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois eu quero dar a este último tanto quanto a ti",
+      "feedbackCorrect": "O pois mostra o motivo: ele quer dar ao último tanto quanto ao primeiro.",
+      "feedbackWrong": {
+        "false": "O versículo traz o motivo: ele quer dar a este último tanto quanto a ti."
+      },
+      "hint": "Observe a palavra que liga a saída ao que ele quer fazer.",
+      "learningObjective": "Compreender que o dono dá o mesmo ao último porque quer.",
+      "evidence": ["Mateus 20:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 20:12, toque a palavra que marca o contraste na queixa.",
+      "verseRef": "Mateus 20:12",
+      "options": [
+        { "id": "a", "text": "contudo" },
+        { "id": "b", "text": "uma hora" },
+        { "id": "c", "text": "calor do dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contudo, você os igualou a nós",
+      "feedbackCorrect": "Contudo marca o contraste: uma hora de trabalho, e mesmo assim igualados.",
+      "feedbackWrong": {
+        "b": "Uma hora é o tempo citado na queixa, não a palavra do contraste.",
+        "c": "O calor do dia é o que os primeiros suportaram, não o contraste."
+      },
+      "hint": "Procure a palavra curta que muda o rumo da queixa.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste na queixa.",
+      "evidence": ["Mateus 20:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "O que Mateus 20:10 mostra sobre a expectativa dos primeiros?",
+      "verseRef": "Mateus 20:10",
+      "options": [
+        { "id": "a", "text": "Eles receberam o dobro do combinado" },
+        { "id": "b", "text": "A espera de receber mais não se cumpriu" },
+        { "id": "c", "text": "O pagamento ficou para outro dia" },
+        { "id": "d", "text": "Só os últimos receberam o salário" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "pensaram que receberiam mais; porém, também cada um deles recebeu um denário",
+      "feedbackCorrect": "Eles pensaram em receber mais, porém cada um recebeu um denário.",
+      "feedbackWrong": {
+        "a": "Ninguém recebeu o dobro. Cada um dos primeiros recebeu um denário.",
+        "c": "O pagamento acontece ao anoitecer, não fica para outro dia.",
+        "d": "Os primeiros também receberam. O texto diz cada um deles."
+      },
+      "hint": "Compare o que eles pensaram com o que de fato receberam.",
+      "learningObjective": "Relacionar a expectativa dos primeiros com o denário que receberam.",
+      "evidence": ["Mateus 20:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual é a sequência dos movimentos nesta cena?",
+      "verseRef": "Mateus 20:8–9",
+      "options": [
+        { "id": "a", "text": "O pagamento começa pelos últimos" },
+        { "id": "b", "text": "Os primeiros recebem igual e murmuram" },
+        { "id": "c", "text": "O dono defende a própria bondade" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "começando pelos últimos e indo até os primeiros",
+      "feedbackCorrect": "A cena vai do pagamento inicial à queixa e, depois, à defesa do dono.",
+      "feedbackWrong": {
+        "default": "Siga a história: pagamento, queixa dos primeiros e resposta do dono."
+      },
+      "hint": "O pagamento abre a cena. A defesa do dono vem depois.",
+      "learningObjective": "Compreender os três movimentos da cena, do pagamento à resposta.",
+      "evidence": ["Mateus 20:8", "Mateus 20:10–11", "Mateus 20:13–15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 20:12, o que o dono fez com os últimos em relação aos primeiros?",
+      "verseRef": "Mateus 20:12",
+      "options": [
+        { "id": "a", "text": "comparou" },
+        { "id": "b", "text": "igualou" },
+        { "id": "c", "text": "juntou" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "você os igualou a nós",
+      "feedbackCorrect": "A queixa é esta: o dono igualou quem trabalhou uma hora aos primeiros.",
+      "feedbackWrong": {
+        "a": "O verbo da queixa não é comparar. Eles dizem que ele os igualou.",
+        "c": "O texto não diz que ele os juntou. Diz que os igualou."
+      },
+      "hint": "Observe o verbo entre os últimos e o grupo dos primeiros.",
+      "learningObjective": "Identificar o verbo que carrega a queixa de igualdade.",
+      "evidence": ["Mateus 20:12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 20:16 a Mateus 19:30?",
+      "verseRef": "Mateus 20:16",
+      "passageA": { "ref": "Mateus 20:16" },
+      "passageB": { "ref": "Mateus 19:30" },
+      "options": [
+        { "id": "a", "text": "Denário dobrado no fim" },
+        { "id": "b", "text": "Murmúrio contra o acordo" },
+        { "id": "c", "text": "Últimos passam à frente" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "os últimos serão os primeiros",
+      "feedbackCorrect": "Os dois textos anunciam a inversão: últimos à frente, primeiros atrás.",
+      "feedbackWrong": {
+        "a": "Mateus 19:30 fala da ordem entre pessoas, não de um denário maior.",
+        "b": "O murmúrio está na parábola. O elo é a inversão da ordem."
+      },
+      "hint": "Compare o que os dois textos dizem sobre primeiros e últimos.",
+      "learningObjective": "Relacionar Mateus 20:16 ao dito de Mateus 19:30.",
+      "evidence": ["Mateus 20:16", "Mateus 19:30"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 20:13, o dono sustenta que o pagamento igual não foi injustiça.",
+      "verseRef": "Mateus 20:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "não te faço injustiça",
+      "feedbackCorrect": "O dono responde à queixa dizendo que não faz injustiça no acordo.",
+      "feedbackWrong": {
+        "false": "A frase dele é clara: não te faço injustiça no denário combinado."
+      },
+      "hint": "Leia a resposta direta do dono a um dos que reclamam.",
+      "learningObjective": "Interpretar a resposta do dono como recusa da acusação de injustiça.",
+      "evidence": ["Mateus 20:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 20:13, toque o que o dono diz que não pratica.",
+      "verseRef": "Mateus 20:13",
+      "options": [
+        { "id": "a", "text": "Amigo" },
+        { "id": "b", "text": "faço injustiça" },
+        { "id": "c", "text": "um denário" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "não te faço injustiça",
+      "feedbackCorrect": "Ele nega a injustiça. O que recusa praticar está nessa frase.",
+      "feedbackWrong": {
+        "a": "Amigo é o tratamento, não o que ele diz que não pratica.",
+        "c": "O denário é o acordo cumprido, não a falta que ele nega."
+      },
+      "hint": "Leia a frase logo depois do tratamento inicial.",
+      "learningObjective": "Localizar no texto o que o dono diz que não pratica.",
+      "evidence": ["Mateus 20:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 20:14–15 sustenta sobre o pagamento igual?",
+      "verseRef": "Mateus 20:14–15",
+      "options": [
+        { "id": "a", "text": "Ele quer dar o mesmo porque é bom" },
+        { "id": "b", "text": "Ele pagou menos do que o combinado" },
+        { "id": "c", "text": "Igualar o salário foi injustiça" },
+        { "id": "d", "text": "O último ficou sem pagamento algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois eu quero dar a este último tanto quanto a ti",
+      "feedbackCorrect": "Ele quer dar ao último o mesmo, e se apresenta como bom.",
+      "feedbackWrong": {
+        "b": "O dono não reduz o acordo. Ele dá ao último tanto quanto ao primeiro.",
+        "c": "A queixa chama isso de injustiça. O dono se diz bom.",
+        "d": "O último recebe. O dono quer dar a ele tanto quanto ao primeiro."
+      },
+      "hint": "Leia o que ele quer fazer e como se descreve.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre o pagamento igual.",
+      "evidence": ["Mateus 20:14–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual é a lógica da resposta do dono?",
+      "verseRef": "Mateus 20:13–14",
+      "options": [
+        { "id": "a", "text": "O acordo feito era um denário" },
+        { "id": "b", "text": "O dono paga o combinado e quer dar" },
+        { "id": "c", "text": "A queixa trata bondade como injustiça" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "não te faço injustiça",
+      "feedbackCorrect": "Ele lembra o acordo, afirma que quer dar e expõe a queixa.",
+      "feedbackWrong": {
+        "default": "Comece pelo acordo. A vontade de dar vem depois, e a queixa por último."
+      },
+      "hint": "Parta do que foi combinado antes da resposta.",
+      "learningObjective": "Acompanhar a lógica da resposta do dono, do acordo à bondade.",
+      "evidence": ["Mateus 20:13", "Mateus 20:14", "Mateus 20:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 20:15, o dono diz que os olhos deles são maus porque ele é o quê?",
+      "verseRef": "Mateus 20:15",
+      "options": [
+        { "id": "a", "text": "justo" },
+        { "id": "b", "text": "duro" },
+        { "id": "c", "text": "bom" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "porque eu sou bom",
+      "feedbackCorrect": "A última palavra dele é bom: a queixa, diz ele, revela olhos maus.",
+      "feedbackWrong": {
+        "a": "O versículo não o chama de justo. A palavra é bom.",
+        "b": "Ele não se diz duro. Afirma que é bom."
+      },
+      "hint": "Fique na última palavra da segunda pergunta do dono.",
+      "learningObjective": "Lembrar o termo com que o dono define a si mesmo.",
+      "evidence": ["Mateus 20:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 20:14–15 a Lucas 15:31–32?",
+      "verseRef": "Mateus 20:14–15",
+      "passageA": { "ref": "Mateus 20:14–15" },
+      "passageB": { "ref": "Lucas 15:31–32" },
+      "options": [
+        { "id": "a", "text": "Queixa contra a bondade" },
+        { "id": "b", "text": "Horas decidem o salário" },
+        { "id": "c", "text": "Acordo rompido no fim" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque eu sou bom",
+      "feedbackCorrect": "Nos dois relatos, a queixa esbarra na bondade de quem pode dar.",
+      "feedbackWrong": {
+        "b": "Nenhum dos dois mede o dom pelas horas de trabalho.",
+        "c": "O acordo não se rompe. Quem dá afirma o que é seu e a sua bondade."
+      },
+      "hint": "Veja como quem é generoso responde a quem reclama.",
+      "learningObjective": "Ligar a resposta do dono à bondade diante da queixa em Lucas 15.",
+      "evidence": ["Mateus 20:14–15", "Lucas 15:31–32"]
+    }
+  ]
+}

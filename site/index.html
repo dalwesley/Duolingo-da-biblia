@@ -25,7 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,560;1,9..144,400;1,9..144,500&family=Sora:wght@400;600;700&display=swap" rel="stylesheet" />
   <!-- Hebraico: só os caracteres usados na página -->
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@500&display=swap&text=%D6%B0%D6%B1%D6%B4%D6%B5%D6%B6%D6%B7%D6%B8%D6%B9%D6%BC%D7%81%D7%90%D7%91%D7%94%D7%95%D7%99%D7%9C%D7%9D%D7%9E%D7%A5%D7%A8%D7%A9%D7%AA" rel="stylesheet" />
-  <link rel="stylesheet" href="/styles.css?v=loja2" />
+  <link rel="stylesheet" href="/styles.css?v=ios1" />
   <script>document.documentElement.classList.add('js');</script>
   <script type="application/ld+json">
   {
@@ -76,7 +76,7 @@
         <a class="quiet" href="/doar">Doar</a>
         <span class="store-actions">
           <a class="btn btn-gold btn-sm" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-          <span class="btn btn-soon btn-sm" aria-disabled="true">iOS em breve</span>
+          <button type="button" class="btn btn-soon btn-sm" data-ios-waitlist>Baixe para iOS</button>
         </span>
       </nav>
     </div>
@@ -109,7 +109,7 @@
           <h1>Missões curtas para ler e estudar a Bíblia <em>todo dia.</em></h1>
           <div class="hero-actions">
             <a class="btn btn-gold btn-sheen" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-            <span class="btn btn-soon" aria-disabled="true">iOS em breve</span>
+            <button type="button" class="btn btn-soon" data-ios-waitlist>Baixe para iOS</button>
             <a class="btn btn-ghost" href="#palco">Ver como funciona</a>
           </div>
         </div>
@@ -424,7 +424,7 @@
       <div class="coda-cta reveal">
         <span class="store-actions">
           <a class="btn btn-gold btn-sheen" href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-          <span class="btn btn-soon" aria-disabled="true">iOS em breve</span>
+          <button type="button" class="btn btn-soon" data-ios-waitlist>Baixe para iOS</button>
         </span>
       </div>
     </section>
@@ -459,7 +459,7 @@
       <nav class="footer-col" aria-label="Participe">
         <h2>Participe</h2>
         <a href="https://play.google.com/store/apps/details?id=com.trilha.trilha_app&amp;pcampaignid=web_share" target="_blank" rel="noopener">Baixar o app Android</a>
-        <span class="footer-soon">iOS em breve</span>
+        <button type="button" class="footer-soon" data-ios-waitlist>Baixe para iOS</button>
         <a href="#contato">Para igrejas</a>
         <a href="#contato">Imprensa</a>
         <a href="#contato">Fale conosco</a>
@@ -482,5 +482,6 @@
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.4/dist/lenis.min.js" defer></script>
   <script src="/main.js?v=loja1" defer></script>
+  <script src="/ios-waitlist.js?v=2" defer></script>
 </body>
 </html>

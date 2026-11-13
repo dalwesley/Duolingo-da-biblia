@@ -1,0 +1,28 @@
+{
+  "takeawaysTitle": {
+    "pt": "O que você viu no texto",
+    "en": "What you saw in the text",
+    "es": "Lo que viste en el texto"
+  },
+  "takeawaysSubtitle": {
+    "pt": "Cada frase vem de uma pergunta que você respondeu. Toque para abrir o versículo.",
+    "en": "Each line comes from a question you answered. Tap to open the verse.",
+    "es": "Cada frase viene de una pregunta que respondiste. Toca para abrir el versículo."
+  },
+  "takeawaysReviewLabel": {
+    "pt": "Para rever",
+    "en": "To review",
+    "es": "Para repasar"
+  },
+  "takeawaysRow": {
+    "pt": "{count, plural, =1{Você encontrou 1 coisa no texto} other{Você encontrou {count} coisas no texto}}",
+    "en": "{count, plural, =1{You found 1 thing in the text} other{You found {count} things in the text}}",
+    "es": "{count, plural, =1{Encontraste 1 cosa en el texto} other{Encontraste {count} cosas en el texto}}",
+    "placeholders": {"count": "int"}
+  },
+  "takeawaysRowReviewOnly": {
+    "pt": "Veja o que rever no texto",
+    "en": "See what to review in the text",
+    "es": "Mira qué repasar en el texto"
+  }
+}

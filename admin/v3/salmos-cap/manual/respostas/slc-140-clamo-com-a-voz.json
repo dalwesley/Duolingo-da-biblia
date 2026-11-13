@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 142:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 142:1–6"
+      },
+      {
+        "ref": "Salmos 142:7"
+      }
+    ],
+    "context": "Com a minha voz clamo ao Senhor; não há quem cuide da minha alma. Tu és o meu refúgio.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Clamo com a voz",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Com a minha voz clamei ao Senhor.",
+        "evidenceRef": "Salmos 142:1",
+        "evidenceSpan": "Com a minha voz clamei ao Senhor"
+      },
+      {
+        "text": "Derramei a minha queixa perante ele.",
+        "evidenceRef": "Salmos 142:2",
+        "evidenceSpan": "Derramei a minha queixa perante ele"
+      },
+      {
+        "text": "Quando meu espírito se esmorece dentro de mim.",
+        "evidenceRef": "Salmos 142:3",
+        "evidenceSpan": "Quando meu espírito se esmorece dentro de mim"
+      },
+      {
+        "text": "Olhei para a minha direita e vi que.",
+        "evidenceRef": "Salmos 142:4",
+        "evidenceSpan": "Olhei para a minha direita e vi que"
+      },
+      {
+        "text": "A ti, Senhor, clamei e declarei: Tu és o meu refúgio e a minha porção na terra dos vivos.",
+        "evidenceRef": "Salmos 142:5",
+        "evidenceSpan": "A ti"
+      },
+      {
+        "text": "Atende ao meu clamor.",
+        "evidenceRef": "Salmos 142:6",
+        "evidenceSpan": "Atende ao meu clamor"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "minha",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "clamei",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Com a minha voz clamei ao",
+        "evidenceRef": "Salmos 142:1"
+      },
+      {
+        "label": "Derramei a minha queixa perante ele",
+        "evidenceRef": "Salmos 142:2"
+      },
+      {
+        "label": "Quando meu espírito se esmorece dentro",
+        "evidenceRef": "Salmos 142:3"
+      },
+      {
+        "label": "Olhei para a minha direita e",
+        "evidenceRef": "Salmos 142:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Quando\".",
+        "marker": "Quando",
+        "evidenceRef": "Salmos 142:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 142:4"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Salmos 142:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Tiago 1:2",
+        "bridge": "Alegria na prova"
+      },
+      {
+        "ref": "Salmos 27:1",
+        "bridge": "Luz e salvação"
+      },
+      {
+        "ref": "Salmos 90:1",
+        "bridge": "Morada em todas as gerações"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Solidão na caverna: Deus conhece a vereda e tira da prisão para louvor."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Solidão na caverna: Deus conhece a vereda e tira da prisão para louvor.",
+    "anchorQuestion": "O que Salmos 142:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 142:1, com a minha voz clamei ao Senhor.",
+      "verseRef": "Salmos 142:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Com a minha voz clamei ao Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 142:1 afirma.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 142:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 142:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com"
+        },
+        {
+          "id": "b",
+          "text": "minha"
+        },
+        {
+          "id": "c",
+          "text": "voz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "O versículo destaca «minha».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 142:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 142:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quando meu espírito se esmorece dentro de mim"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando meu espírito se esmorece dentro de mim",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 142:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 142:1 na ordem do texto.",
+      "verseRef": "Salmos 142:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "c",
+          "text": "minha"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 142:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 142:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Olhei"
+        },
+        {
+          "id": "b",
+          "text": "Com"
+        },
+        {
+          "id": "c",
+          "text": "minha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Olhei",
+      "feedbackCorrect": "A palavra do versículo é «Olhei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 142:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 142:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 142:1",
+      "passageA": {
+        "ref": "Salmos 142:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Com a minha voz clamo ao Senhor; não há quem cuide da minha alma. Tu és o meu refúgio."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 142:3, o marcador Quando une ideias no fluxo do texto.",
+      "verseRef": "Salmos 142:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 142:3 afirma.",
+      "evidence": [
+        "Salmos 142:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 142:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 142:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quando"
+        },
+        {
+          "id": "b",
+          "text": "meu"
+        },
+        {
+          "id": "c",
+          "text": "espírito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo destaca «Quando».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 142:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 142:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 142:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Olhei para a minha direita e vi que",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 142:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 142:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Com a minha voz clamei ao Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Derramei a minha queixa perante ele"
+        },
+        {
+          "id": "c",
+          "text": "Quando meu espírito se esmorece"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 142:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 142:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Com"
+        },
+        {
+          "id": "c",
+          "text": "minha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 142:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 142:1 a Tiago 1:2.",
+      "verseRef": "Salmos 142:1",
+      "passageA": {
+        "ref": "Salmos 142:1"
+      },
+      "passageB": {
+        "ref": "Tiago 1:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Alegria na prova"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 142:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Liberta",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 142:7 afirma.",
+      "evidence": [
+        "Salmos 142:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 142:7, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 142:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Liberta"
+        },
+        {
+          "id": "b",
+          "text": "minha"
+        },
+        {
+          "id": "c",
+          "text": "alma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Liberta",
+      "feedbackCorrect": "O versículo destaca «Liberta».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 142:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 142:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 142:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A ti",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 142:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 142:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 142:5, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 142:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "clamei"
+        },
+        {
+          "id": "b",
+          "text": "Com"
+        },
+        {
+          "id": "c",
+          "text": "minha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "clamei",
+      "feedbackCorrect": "A palavra do versículo é «clamei».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 142:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 142:1 a Salmos 27:1.",
+      "verseRef": "Salmos 142:1",
+      "passageA": {
+        "ref": "Salmos 142:1"
+      },
+      "passageB": {
+        "ref": "Salmos 27:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Luz e salvação"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Com",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 142:1"
+      ]
+    }
+  ]
+}

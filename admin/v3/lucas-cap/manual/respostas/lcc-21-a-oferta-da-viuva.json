@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Lucas 21:1–4",
+    "passages": [
+      { "ref": "Lucas 21:1–4" },
+      { "ref": "Lucas 21:5–7" }
+    ],
+    "context": "Jesus está no templo e observa quem deposita ofertas no gazofilácio, o cofre das contribuições. Os ricos se aproximam com o que trazem. Uma viúva pobre chega e lança duas pequenas moedas.",
+    "keyword": "sustento",
+    "keywordGloss": "Sustento é aquilo de que a viúva vivia, e foi isso que ela colocou no gazofilácio.",
+    "focusQuestion": "Quando você dá, o que pesa mais para você: o que sobra ou o custo real do gesto?",
+    "reflectionPrompts": [
+      "O olhar de Jesus",
+      "Duas pequenas moedas",
+      "O sustento entregue"
+    ],
+    "facts": [
+      {
+        "text": "Jesus vê os ricos colocando suas ofertas no gazofilácio.",
+        "evidenceRef": "Lucas 21:1",
+        "evidenceSpan": "viu os ricos colocando suas ofertas no gazofilácio"
+      },
+      {
+        "text": "Ele vê também uma viúva pobre lançar duas pequenas moedas.",
+        "evidenceRef": "Lucas 21:2",
+        "evidenceSpan": "certa viúva pobre lançar ali duas pequenas moedas"
+      },
+      {
+        "text": "Jesus diz que esta viúva pobre deu mais do que todos.",
+        "evidenceRef": "Lucas 21:3",
+        "evidenceSpan": "esta viúva pobre deu mais do que todos"
+      },
+      {
+        "text": "Os outros deram como oferta do que lhes sobrava.",
+        "evidenceRef": "Lucas 21:4",
+        "evidenceSpan": "deram como oferta do que lhes sobrava"
+      },
+      {
+        "text": "Da sua pobreza, a viúva deu tudo o que possuía, o seu sustento.",
+        "evidenceRef": "Lucas 21:4",
+        "evidenceSpan": "da sua pobreza, deu tudo o que possuía, o seu sustento"
+      },
+      {
+        "text": "O templo estava ornado com belas pedras e ofertas.",
+        "evidenceRef": "Lucas 21:5",
+        "evidenceSpan": "ornado com belas pedras e ofertas"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "gazofilácio",
+        "gloss": "O cofre do templo em que as ofertas eram colocadas."
+      },
+      {
+        "term": "pobreza",
+        "gloss": "A condição da viúva, da qual ela entrega o que tem para viver."
+      },
+      {
+        "term": "sustento",
+        "gloss": "Tudo o que a viúva possuía para viver, e que ela deu."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Jesus observa os ricos no gazofilácio",
+        "evidenceRef": "Lucas 21:1"
+      },
+      {
+        "label": "A viúva lança duas pequenas moedas",
+        "evidenceRef": "Lucas 21:2"
+      },
+      {
+        "label": "Jesus explica a medida da oferta",
+        "evidenceRef": "Lucas 21:3–4"
+      },
+      {
+        "label": "O templo ornado entra na conversa",
+        "evidenceRef": "Lucas 21:5"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Depois dos ricos, Jesus vê também a viúva pobre lançar duas moedas.",
+        "marker": "também",
+        "evidenceRef": "Lucas 21:2"
+      },
+      {
+        "kind": "causa",
+        "text": "Ela deu mais porque os outros ofertaram do que sobrava e ela deu o sustento.",
+        "marker": "Porque",
+        "evidenceRef": "Lucas 21:4"
+      },
+      {
+        "kind": "contraste",
+        "text": "Os outros deram da sobra, mas a viúva deu da pobreza tudo o que possuía.",
+        "marker": "mas",
+        "evidenceRef": "Lucas 21:4"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Coríntios 8:12",
+        "bridge": "Conforme o que possui"
+      },
+      {
+        "ref": "2 Coríntios 8:2",
+        "bridge": "Generosidade na pobreza"
+      },
+      {
+        "ref": "Marcos 12:43–44",
+        "bridge": "Mesma medida da oferta"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A viúva deu mais porque duas moedas formavam uma quantia maior que a dos ricos.",
+        "why": "Jesus explica outro critério: os outros deram do que sobrava; ela deu tudo o que possuía."
+      },
+      {
+        "text": "Jesus recusa a oferta dos ricos e aceita somente a da viúva.",
+        "why": "O texto diz que eles deram uma oferta e que ela deu mais. Comparar não é anular."
+      },
+      {
+        "text": "O elogio de Jesus vale pela pobreza da viúva, sem olhar o que ela entregou.",
+        "why": "Ele não para na pobreza. Da sua pobreza, ela deu tudo o que possuía, o seu sustento."
+      }
+    ],
+    "centralInsight": "Deus mede a oferta pelo coração: a viúva deu tudo o que tinha.",
+    "anchorQuestion": "Por que Jesus disse que a viúva pobre deu mais do que todos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lucas 21:2, Jesus viu uma viúva pobre lançar duas pequenas moedas.",
+      "verseRef": "Lucas 21:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "certa viúva pobre lançar ali duas pequenas moedas",
+      "feedbackCorrect": "O versículo registra o olhar de Jesus sobre a viúva e as duas moedas.",
+      "feedbackWrong": {
+        "false": "Releia Lucas 21:2: ele viu a viúva pobre lançar duas pequenas moedas."
+      },
+      "hint": "Observe a pessoa que aparece neste versículo.",
+      "learningObjective": "Reconhecer o gesto da viúva que Jesus observa no templo.",
+      "evidence": ["Lucas 21:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lucas 21:1, toque quem Jesus viu colocando as ofertas.",
+      "verseRef": "Lucas 21:1",
+      "options": [
+        { "id": "a", "text": "observando" },
+        { "id": "b", "text": "os ricos" },
+        { "id": "c", "text": "gazofilácio" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "viu os ricos colocando suas ofertas",
+      "feedbackCorrect": "Os ricos são as pessoas que Jesus vê colocando as ofertas.",
+      "feedbackWrong": {
+        "a": "Observar é o que Jesus faz; a pergunta pede quem ele vê.",
+        "c": "O gazofilácio é o lugar das ofertas, não quem as coloca."
+      },
+      "hint": "Procure as pessoas que depositam algo neste versículo.",
+      "learningObjective": "Identificar quem Jesus observa colocando ofertas no gazofilácio.",
+      "evidence": ["Lucas 21:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "O que Jesus declara em Lucas 21:3?",
+      "verseRef": "Lucas 21:3",
+      "options": [
+        { "id": "a", "text": "A viúva deu mais do que os demais" },
+        { "id": "b", "text": "Os ricos deram mais por grandes quantias" },
+        { "id": "c", "text": "A viúva não colocou oferta alguma" },
+        { "id": "d", "text": "As ofertas tiveram o mesmo valor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta viúva pobre deu mais do que todos",
+      "feedbackCorrect": "Jesus declara que esta viúva pobre deu mais do que todos os outros.",
+      "feedbackWrong": {
+        "b": "O texto não atribui a maior oferta aos ricos; ele destaca a viúva.",
+        "c": "Lucas 21:2 mostra que ela lançou duas moedas; houve oferta.",
+        "d": "Jesus não iguala as ofertas; ele diz que a viúva deu mais."
+      },
+      "hint": "Leia a frase que Jesus diz neste versículo.",
+      "learningObjective": "Identificar o que Jesus afirma sobre a oferta da viúva.",
+      "evidence": ["Lucas 21:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lucas 21:4 na ordem do texto.",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "Porque todos aqueles deram como oferta do que lhes sobrava" },
+        { "id": "b", "text": "mas esta, da sua pobreza" },
+        { "id": "c", "text": "deu tudo o que possuía, o seu sustento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Porque todos aqueles deram como oferta do que lhes sobrava",
+      "feedbackCorrect": "A frase vai da sobra dos outros à pobreza dela e, no fim, ao sustento.",
+      "feedbackWrong": {
+        "default": "Comece pela sobra dos outros; o sustento dela fecha o versículo."
+      },
+      "hint": "A explicação abre com o que os outros deram.",
+      "learningObjective": "Reconhecer a ordem da explicação de Jesus em Lucas 21:4.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lucas 21:2, o que a viúva pobre lançou no gazofilácio?",
+      "verseRef": "Lucas 21:2",
+      "options": [
+        { "id": "a", "text": "pedras" },
+        { "id": "b", "text": "ofertas" },
+        { "id": "c", "text": "moedas" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "lançar ali duas pequenas moedas",
+      "feedbackCorrect": "Ela lança duas pequenas moedas, o gesto que Jesus observa ali.",
+      "feedbackWrong": {
+        "a": "Pedras aparecem no templo ornado, não no gesto da viúva.",
+        "b": "Ofertas nomeia o que os ricos colocam; aqui o texto fala em moedas."
+      },
+      "hint": "Olhe o objeto pequeno no fim da frase.",
+      "learningObjective": "Lembrar o que a viúva lançou no gazofilácio.",
+      "evidence": ["Lucas 21:2"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lucas 21:4 comunica que se liga a este contexto?",
+      "verseRef": "Lucas 21:4",
+      "passageA": { "ref": "Lucas 21:4" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Ricos e uma viúva pobre colocam ofertas no mesmo cofre do templo."
+      },
+      "options": [
+        { "id": "a", "text": "Oferta igual à dos ricos" },
+        { "id": "b", "text": "Entrega de todo o sustento" },
+        { "id": "c", "text": "Moedas guardadas em segredo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "deu tudo o que possuía, o seu sustento",
+      "feedbackCorrect": "No mesmo cofre, o que a distingue é entregar o sustento.",
+      "feedbackWrong": {
+        "a": "O texto não iguala as ofertas; a dela sai da pobreza.",
+        "c": "Nada no relato diz que as moedas ficaram escondidas."
+      },
+      "hint": "Veja o que distingue a oferta dela da sobra dos outros.",
+      "learningObjective": "Ligar a explicação de Lucas 21:4 ao gesto da viúva no gazofilácio.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lucas 21:3–4, a viúva deu mais por lançar uma quantia maior que a dos ricos.",
+      "verseRef": "Lucas 21:3–4",
+      "correctOptionId": "false",
+      "evidenceSpan": "da sua pobreza, deu tudo o que possuía",
+      "feedbackCorrect": "Deu mais não é uma soma maior. Ela deu o sustento; os outros deram da sobra.",
+      "feedbackWrong": {
+        "true": "A quantia não é o critério. O texto opõe o sustento dela à sobra dos outros."
+      },
+      "hint": "Leia a explicação que segue a frase sobre dar mais.",
+      "learningObjective": "Compreender que deu mais não significa uma quantia superior.",
+      "evidence": ["Lucas 21:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lucas 21:4, toque a palavra que abre a explicação de Jesus.",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "Porque" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "esta" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque todos aqueles deram",
+      "feedbackCorrect": "Porque abre o versículo e apresenta o motivo da comparação.",
+      "feedbackWrong": {
+        "b": "Mas marca o contraste no meio da frase, não o motivo inicial.",
+        "c": "Esta aponta para a viúva, sem explicar o motivo."
+      },
+      "hint": "Olhe a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer a palavra que introduz o motivo da comparação.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Qual contraste Lucas 21:4 estabelece entre as ofertas?",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "Eles deram o excedente; ela deu o sustento" },
+        { "id": "b", "text": "Os dois grupos entregaram apenas a sobra" },
+        { "id": "c", "text": "Ela deu a sobra; os ricos deram o sustento" },
+        { "id": "d", "text": "O custo da oferta foi o mesmo para todos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deram como oferta do que lhes sobrava",
+      "feedbackCorrect": "O contraste é a origem: excedente dos outros, sustento da viúva.",
+      "feedbackWrong": {
+        "b": "Só os outros deram do que sobrava; ela deu o que tinha para viver.",
+        "c": "A leitura inverte o texto: a sobra é deles, o sustento é dela.",
+        "d": "Jesus não iguala o custo; a viúva entrega o que possuía."
+      },
+      "hint": "Compare a origem da oferta de cada grupo.",
+      "learningObjective": "Relacionar a sobra dos outros com o sustento entregue pela viúva.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Qual sequência organiza a cena de Lucas 21:1–4?",
+      "verseRef": "Lucas 21:1–2",
+      "options": [
+        { "id": "a", "text": "Jesus observa os ricos no gazofilácio" },
+        { "id": "b", "text": "A viúva lança duas pequenas moedas" },
+        { "id": "c", "text": "Jesus explica a medida da oferta" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "viu os ricos colocando suas ofertas",
+      "feedbackCorrect": "O olhar vê as ofertas, a viúva lança as moedas, e Jesus explica a medida.",
+      "feedbackWrong": {
+        "default": "A cena começa no gazofilácio, passa pela viúva e chega à explicação."
+      },
+      "hint": "Siga do que Jesus vê até a frase que explica.",
+      "learningObjective": "Compreender os três movimentos da cena da oferta.",
+      "evidence": ["Lucas 21:1", "Lucas 21:2", "Lucas 21:3–4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lucas 21:4, de que condição a viúva deu tudo o que possuía?",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "pobreza" },
+        { "id": "b", "text": "riqueza" },
+        { "id": "c", "text": "sobra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "da sua pobreza, deu tudo o que possuía",
+      "feedbackCorrect": "Da sua pobreza ela deu tudo; a palavra marca essa condição.",
+      "feedbackWrong": {
+        "b": "Riqueza caberia aos outros, não à condição citada neste ponto.",
+        "c": "A sobra é o que os outros deram; dela, o texto fala outra condição."
+      },
+      "hint": "A condição dela aparece logo antes de dizer o que ela deu.",
+      "learningObjective": "Lembrar a condição da qual a viúva fez a sua oferta.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lucas 21:3 a 2 Coríntios 8:12?",
+      "verseRef": "Lucas 21:3",
+      "passageA": { "ref": "Lucas 21:3" },
+      "passageB": { "ref": "2 Coríntios 8:12" },
+      "options": [
+        { "id": "a", "text": "Conforme o que possui" },
+        { "id": "b", "text": "Soma superior em moedas" },
+        { "id": "c", "text": "Dom rejeitado por Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esta viúva pobre deu mais do que todos",
+      "feedbackCorrect": "Os dois textos medem a oferta pelo que a pessoa possui.",
+      "feedbackWrong": {
+        "b": "Deu mais não é uma soma superior; o critério é o que cada um tem.",
+        "c": "Nenhum dos textos rejeita o dom; os dois falam de aceitação."
+      },
+      "hint": "Veja pelo que a oferta é recebida no outro texto.",
+      "learningObjective": "Relacionar o deu mais de Jesus ao critério do que cada um possui.",
+      "evidence": ["Lucas 21:3", "2 Coríntios 8:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Lucas 21:3–4 reconhece que os ricos deram uma oferta e ainda declara que a viúva deu mais.",
+      "verseRef": "Lucas 21:3–4",
+      "correctOptionId": "true",
+      "evidenceSpan": "todos aqueles deram como oferta",
+      "feedbackCorrect": "Eles deram uma oferta, e ainda assim ela deu mais. Nada é apagado.",
+      "feedbackWrong": {
+        "false": "O texto admite que eles deram e, ao mesmo tempo, que ela deu mais."
+      },
+      "hint": "Veja se o relato nega a oferta deles ou a compara.",
+      "learningObjective": "Interpretar a comparação sem anular a oferta dos ricos.",
+      "evidence": ["Lucas 21:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lucas 21:4, toque o trecho que mostra a extensão da oferta da viúva.",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "sua pobreza" },
+        { "id": "b", "text": "todos aqueles" },
+        { "id": "c", "text": "deu tudo" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "deu tudo o que possuía",
+      "feedbackCorrect": "Deu tudo mostra a extensão: não foi uma parte, foi o que ela tinha.",
+      "feedbackWrong": {
+        "a": "A pobreza diz de onde ela deu, não até onde a oferta chegou.",
+        "b": "Todos aqueles são os outros, não a medida do que ela deu."
+      },
+      "hint": "Procure até onde a frase diz que a oferta chegou.",
+      "learningObjective": "Localizar o trecho que mostra a extensão do que a viúva deu.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Lucas 21:3–4 permanece fiel ao texto?",
+      "verseRef": "Lucas 21:3–4",
+      "options": [
+        { "id": "a", "text": "Ela deu mais ao entregar o que tinha para viver" },
+        { "id": "b", "text": "Duas moedas valiam mais que as ofertas dos ricos" },
+        { "id": "c", "text": "Jesus recusa a oferta dos ricos e aceita só a dela" },
+        { "id": "d", "text": "Ele elogia só a pobreza, sem olhar o que ela deu" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "deu tudo o que possuía, o seu sustento",
+      "feedbackCorrect": "O texto mede a oferta pelo sustento entregue, não por uma soma maior.",
+      "feedbackWrong": {
+        "b": "Duas moedas não superam as outras em valor; ela deu o que tinha.",
+        "c": "Jesus não anula a oferta dos ricos; diz que a viúva deu mais.",
+        "d": "O elogio não para na pobreza: ela deu tudo o que possuía."
+      },
+      "hint": "Separe o que ela entregou da simples condição de ser pobre.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a oferta da viúva.",
+      "evidence": ["Lucas 21:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual encadeamento segue a fala de Jesus em Lucas 21:3–4?",
+      "verseRef": "Lucas 21:3–4",
+      "options": [
+        { "id": "a", "text": "Jesus afirma que a viúva deu mais" },
+        { "id": "b", "text": "Os outros deram apenas o excedente" },
+        { "id": "c", "text": "Ela entregou o próprio sustento" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "esta viúva pobre deu mais do que todos",
+      "feedbackCorrect": "Primeiro vem o juízo de que ela deu mais; depois, sobra e sustento.",
+      "feedbackWrong": {
+        "default": "A fala começa pelo deu mais e só então explica sobra e sustento."
+      },
+      "hint": "A afirmação abre a fala; a explicação vem em seguida.",
+      "learningObjective": "Acompanhar o argumento de Jesus, do juízo à explicação.",
+      "evidence": ["Lucas 21:3–4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lucas 21:4, que nome o texto dá ao que a viúva possuía e deu?",
+      "verseRef": "Lucas 21:4",
+      "options": [
+        { "id": "a", "text": "tesouro" },
+        { "id": "b", "text": "sustento" },
+        { "id": "c", "text": "exemplo" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o seu sustento",
+      "feedbackCorrect": "Sustento nomeia tudo o que ela possuía e entregou para viver.",
+      "feedbackWrong": {
+        "a": "O texto não fala em tesouro; fala no que a sustentava.",
+        "c": "Ela não é chamada de exemplo; o termo nomeia o que ela deu."
+      },
+      "hint": "Está no fim do versículo, depois de tudo o que ela possuía.",
+      "learningObjective": "Lembrar o termo que nomeia tudo o que a viúva entregou.",
+      "evidence": ["Lucas 21:4"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lucas 21:4 a 2 Coríntios 8:2?",
+      "verseRef": "Lucas 21:4",
+      "passageA": { "ref": "Lucas 21:4" },
+      "passageB": { "ref": "2 Coríntios 8:2" },
+      "options": [
+        { "id": "a", "text": "Valor maior das moedas" },
+        { "id": "b", "text": "Oferta feita por obrigação" },
+        { "id": "c", "text": "Generosidade na pobreza" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "da sua pobreza, deu tudo o que possuía",
+      "feedbackCorrect": "Os dois textos ligam pobreza e generosidade na hora de ofertar.",
+      "feedbackWrong": {
+        "a": "O valor das moedas não é a ponte; a pobreza generosa é.",
+        "b": "Nenhum texto fala em obrigação; os dois mostram oferta na pobreza."
+      },
+      "hint": "Compare a condição de quem dá nos dois textos.",
+      "learningObjective": "Ligar a oferta da viúva, feita na pobreza, à generosidade de 2 Coríntios 8:2.",
+      "evidence": ["Lucas 21:4", "2 Coríntios 8:2"]
+    }
+  ]
+}

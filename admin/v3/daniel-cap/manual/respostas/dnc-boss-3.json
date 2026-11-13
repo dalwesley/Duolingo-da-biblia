@@ -1,0 +1,935 @@
+{
+  "study": {
+    "passageRef": "Daniel 9:20–25",
+    "passages": [
+      {
+        "ref": "Daniel 9:16–19"
+      },
+      {
+        "ref": "Daniel 9:20–25"
+      },
+      {
+        "ref": "Daniel 10:10–15"
+      },
+      {
+        "ref": "Daniel 11:30–35"
+      },
+      {
+        "ref": "Daniel 12:1–4"
+      },
+      {
+        "ref": "Daniel 9:26–27"
+      },
+      {
+        "ref": "Daniel 12:5–10"
+      }
+    ],
+    "context": "Revise a confissão e as semanas, o ânimo a Daniel, o povo que conhece a Deus e a ressurreição no fim.",
+    "keyword": "sábios",
+    "keywordGloss": "Os que ensinam, são provados, resplandecem e compreendem no fim.",
+    "focusQuestion": "O que muda quando você confia no plano de Deus até a ressurreição?",
+    "reflectionPrompts": [
+      "Setenta semanas",
+      "Não tema",
+      "Sábios no fim"
+    ],
+    "facts": [
+      {
+        "text": "Setenta semanas determinadas sobre o povo.",
+        "evidenceRef": "Daniel 9:24",
+        "evidenceSpan": "Setenta semanas estão determinadas"
+      },
+      {
+        "text": "Palavras ouvidas desde o primeiro dia.",
+        "evidenceRef": "Daniel 10:12",
+        "evidenceSpan": "desde o primeiro dia"
+      },
+      {
+        "text": "O povo que conhece a Deus se torna forte.",
+        "evidenceRef": "Daniel 11:32",
+        "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte"
+      },
+      {
+        "text": "Muitos ressuscitarão.",
+        "evidenceRef": "Daniel 12:2",
+        "evidenceSpan": "ressuscitarão, uns para a vida eterna"
+      },
+      {
+        "text": "Os sábios resplandecerão.",
+        "evidenceRef": "Daniel 12:3",
+        "evidenceSpan": "Os sábios resplandecerão"
+      },
+      {
+        "text": "O Ungido será morto.",
+        "evidenceRef": "Daniel 9:26",
+        "evidenceSpan": "o Ungido será morto"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sábios",
+        "gloss": "Ensinam, são provados e compreendem."
+      },
+      {
+        "term": "Ungido",
+        "gloss": "O Príncipe no plano das semanas."
+      },
+      {
+        "term": "misericórdias",
+        "gloss": "Base da súplica de Daniel."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Confissão e semanas",
+        "evidenceRef": "Daniel 9:16–27"
+      },
+      {
+        "label": "Não tema, amado",
+        "evidenceRef": "Daniel 10:10–19"
+      },
+      {
+        "label": "Povo que conhece",
+        "evidenceRef": "Daniel 11:30–35"
+      },
+      {
+        "label": "Ressurreição e compreensão",
+        "evidenceRef": "Daniel 12:1–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Não justiças próprias, mas misericórdias.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 9:18"
+      },
+      {
+        "kind": "causa",
+        "text": "Não tema porque as palavras foram ouvidas.",
+        "marker": "porque",
+        "evidenceRef": "Daniel 10:12"
+      },
+      {
+        "kind": "contraste",
+        "text": "Ímpios não compreendem; sábios sim.",
+        "marker": "mas",
+        "evidenceRef": "Daniel 12:10"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 53:8",
+        "bridge": "Ungido cortado da terra"
+      },
+      {
+        "ref": "João 5:28–29",
+        "bridge": "Ressurreição para vida ou juízo"
+      },
+      {
+        "ref": "João 17:3",
+        "bridge": "Conhecer a Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A oração de Daniel não foi ouvida.",
+        "why": "10:12: desde o primeiro dia."
+      },
+      {
+        "text": "Não há ressurreição em Daniel 12.",
+        "why": "12:2 afirma."
+      },
+      {
+        "text": "Conhecer a Deus é irrelevante.",
+        "why": "11:32: o povo se torna forte."
+      }
+    ],
+    "centralInsight": "Deus responde à confissão com plano, ânimo e esperança até a ressurreição.",
+    "anchorQuestion": "O que Daniel 9–12 mostra sobre oração, força e o fim?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Daniel 9:24, setenta semanas estão determinadas sobre o povo e a cidade.",
+      "verseRef": "Daniel 9:24",
+      "correctOptionId": "true",
+      "evidenceSpan": "Setenta semanas estão determinadas sobre o teu povo e sobre a tua santa cidade",
+      "feedbackCorrect": "Há setenta semanas determinadas.",
+      "feedbackWrong": {
+        "false": "Releia 9:24."
+      },
+      "hint": "Veja o que está determinado.",
+      "learningObjective": "Revisar as semanas.",
+      "evidence": [
+        "Daniel 9:24"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 10:12, toque desde quando as palavras foram ouvidas.",
+      "verseRef": "Daniel 10:12",
+      "evidenceSpan": "desde o primeiro dia",
+      "feedbackCorrect": "Desde o primeiro dia.",
+      "hint": "Procure o marco temporal.",
+      "learningObjective": "Revisar a escuta.",
+      "evidence": [
+        "Daniel 10:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "primeiro dia"
+        },
+        {
+          "id": "b",
+          "text": "Pérsia"
+        },
+        {
+          "id": "c",
+          "text": "Miguel"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É a oposição.",
+        "c": "É o ajudador."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Daniel 11:32, o povo que conhece a Deus:",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte e realizará grandes feitos",
+      "feedbackCorrect": "Se torna forte e realiza feitos.",
+      "hint": "Veja o resultado.",
+      "learningObjective": "Revisar o povo que conhece.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Se torna forte"
+        },
+        {
+          "id": "b",
+          "text": "Abandona o pacto"
+        },
+        {
+          "id": "c",
+          "text": "Cala para sempre"
+        },
+        {
+          "id": "d",
+          "text": "Serve às lisonjas"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É o contraste.",
+        "c": "Há força e feitos.",
+        "d": "Lisonjas pervertem outros."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 12:2 na ordem do texto.",
+      "verseRef": "Daniel 12:2",
+      "evidenceSpan": "ressuscitarão, uns para a vida eterna",
+      "feedbackCorrect": "Pó, ressurreição, destinos.",
+      "hint": "Comece pelo pó.",
+      "learningObjective": "Revisar a ressurreição.",
+      "evidence": [
+        "Daniel 12:2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Muitos dos que estão no pó da terra ressuscitarão"
+        },
+        {
+          "id": "b",
+          "text": "uns para a vida eterna"
+        },
+        {
+          "id": "c",
+          "text": "e outros para vergonha e horror eterno"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo pó."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Daniel 9:26, quem será morto?",
+      "verseRef": "Daniel 9:26",
+      "evidenceSpan": "o Ungido será morto e não estará mais presente",
+      "feedbackCorrect": "O Ungido.",
+      "hint": "É o título de quem é morto.",
+      "learningObjective": "Revisar o Ungido.",
+      "evidence": [
+        "Daniel 9:26"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ungido"
+        },
+        {
+          "id": "b",
+          "text": "Gabriel"
+        },
+        {
+          "id": "c",
+          "text": "Miguel"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Gabriel anuncia.",
+        "c": "Miguel defende."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Daniel 12:3 comunica que se liga a este contexto?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "No fim da etapa, os sábios brilham e compreendem.",
+      "hint": "Compare sábios e resplendor.",
+      "learningObjective": "Revisar o resplendor.",
+      "evidence": [
+        "Daniel 12:3"
+      ],
+      "passageA": {
+        "ref": "Daniel 12:3"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Confissão e fim: semanas, ânimo, povo que conhece e ressurreição."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sábios resplandecem no fim"
+        },
+        {
+          "id": "b",
+          "text": "Ímpios brilham"
+        },
+        {
+          "id": "c",
+          "text": "Livro sem selo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "São os sábios.",
+        "c": "O livro é selado."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Daniel 11:31, toque o que será profanado.",
+      "verseRef": "Daniel 11:31",
+      "evidenceSpan": "profanarão o santuário",
+      "feedbackCorrect": "O santuário.",
+      "hint": "Procure o objeto.",
+      "learningObjective": "Revisar a profanação.",
+      "evidence": [
+        "Daniel 11:31"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "santuário"
+        },
+        {
+          "id": "b",
+          "text": "navios"
+        },
+        {
+          "id": "c",
+          "text": "Quitim"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Em 11:30.",
+        "c": "Em 11:30."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Daniel 10:19 na ordem do texto.",
+      "verseRef": "Daniel 10:19",
+      "evidenceSpan": "Não tema, homem muito amado",
+      "feedbackCorrect": "Não tema; paz; seja forte.",
+      "hint": "Comece por não tema.",
+      "learningObjective": "Revisar o ânimo.",
+      "evidence": [
+        "Daniel 10:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tema, homem muito amado"
+        },
+        {
+          "id": "b",
+          "text": "A paz esteja contigo"
+        },
+        {
+          "id": "c",
+          "text": "Seja forte, seja forte"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece por não tema."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Daniel 9:18, Daniel confia nas próprias justiças.",
+      "verseRef": "Daniel 9:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "não lançamos as nossas súplicas diante de ti confiando em nossas justiças, mas em tuas muitas misericórdias",
+      "feedbackCorrect": "Ele confia nas misericórdias.",
+      "feedbackWrong": {
+        "true": "Releia 9:18."
+      },
+      "hint": "Veja o contraste.",
+      "learningObjective": "Compreender a súplica.",
+      "evidence": [
+        "Daniel 9:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 11:32, toque a palavra de contraste.",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "mas o povo que conhece ao seu Deus",
+      "feedbackCorrect": "\"Mas\" marca o povo que conhece.",
+      "hint": "Procure o contraste.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "lisonjas"
+        },
+        {
+          "id": "c",
+          "text": "pacto"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ferramenta de perversão.",
+        "c": "O que se viola."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Daniel 10:12–13 relaciona escuta e demora?",
+      "verseRef": "Daniel 10:12–13",
+      "evidenceSpan": "suas palavras foram ouvidas",
+      "feedbackCorrect": "Ouvidas desde o início; demora por oposição.",
+      "hint": "Compare escuta e oposição.",
+      "learningObjective": "Relacionar oração e demora.",
+      "evidence": [
+        "Daniel 10:12–13"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvido desde o início; demora por oposição"
+        },
+        {
+          "id": "b",
+          "text": "Nunca ouvido"
+        },
+        {
+          "id": "c",
+          "text": "Miguel se opôs a Daniel"
+        },
+        {
+          "id": "d",
+          "text": "Sem oposição"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "10:12 afirma escuta.",
+        "c": "Miguel ajuda.",
+        "d": "Houve 21 dias."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move a etapa Confissão e fim?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão",
+      "feedbackCorrect": "Oração e semanas; ânimo; povo forte; ressurreição.",
+      "hint": "Comece pela oração.",
+      "learningObjective": "Seguir o arco.",
+      "evidence": [
+        "Daniel 9:24",
+        "Daniel 10:12",
+        "Daniel 12:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Confissão e setenta semanas"
+        },
+        {
+          "id": "b",
+          "text": "Não tema e povo que conhece"
+        },
+        {
+          "id": "c",
+          "text": "Ressurreição e sábios que brilham"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela confissão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Daniel 10:12, que palavra marca a razão do \"não tema\"?",
+      "verseRef": "Daniel 10:12",
+      "evidenceSpan": "porque desde o primeiro dia",
+      "feedbackCorrect": "\"Porque\" liga o não temer à escuta.",
+      "hint": "Procure o marcador da razão.",
+      "learningObjective": "Lembrar o marcador.",
+      "evidence": [
+        "Daniel 10:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "embora"
+        },
+        {
+          "id": "c",
+          "text": "nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não é embora.",
+        "c": "Não é nunca."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Daniel 9:26 a Isaías 53:8?",
+      "verseRef": "Daniel 9:26",
+      "evidenceSpan": "o Ungido será morto",
+      "feedbackCorrect": "Nos dois textos, o Ungido/Servo é cortado.",
+      "hint": "Compare a morte do Ungido.",
+      "learningObjective": "Relacionar Daniel e Isaías.",
+      "evidence": [
+        "Daniel 9:26",
+        "Isaías 53:8"
+      ],
+      "passageA": {
+        "ref": "Daniel 9:26"
+      },
+      "passageB": {
+        "ref": "Isaías 53:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ungido cortado da terra"
+        },
+        {
+          "id": "b",
+          "text": "Rei sem sofrer"
+        },
+        {
+          "id": "c",
+          "text": "Templo sem profecia"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há corte/morte.",
+        "c": "O foco é o Ungido."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Daniel 12:1, toque o contraste após a angústia.",
+      "verseRef": "Daniel 12:1",
+      "evidenceSpan": "porém, naquele tempo, o teu povo será salvo",
+      "feedbackCorrect": "\"Porém\" marca a salvação.",
+      "hint": "Procure o contraste.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "Daniel 12:1"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "nação"
+        },
+        {
+          "id": "c",
+          "text": "angústia"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Comparação.",
+        "c": "Antecede o contraste."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se relacionam oração, força e fim?",
+      "verseRef": "Daniel 11:32",
+      "evidenceSpan": "o povo que conhece ao seu Deus se tornará forte",
+      "feedbackCorrect": "Súplica ouvida; povo forte; sábios compreendem.",
+      "hint": "Comece pela súplica.",
+      "learningObjective": "Relacionar os temas.",
+      "evidence": [
+        "Daniel 10:12",
+        "Daniel 11:32",
+        "Daniel 12:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Palavras ouvidas desde o primeiro dia"
+        },
+        {
+          "id": "b",
+          "text": "Povo que conhece se torna forte"
+        },
+        {
+          "id": "c",
+          "text": "Sábios compreendem no fim"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pela escuta."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Daniel 9–12, Deus responde à confissão com plano, ânimo, força e esperança de ressurreição.",
+      "verseRef": "Daniel 12:2",
+      "correctOptionId": "true",
+      "evidenceSpan": "Muitos dos que estão no pó da terra ressuscitarão",
+      "feedbackCorrect": "O arco vai da confissão à ressurreição.",
+      "feedbackWrong": {
+        "false": "Compare 9:23 e 12:2."
+      },
+      "hint": "Veja o arco da etapa.",
+      "learningObjective": "Interpretar a etapa.",
+      "evidence": [
+        "Daniel 12:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 12:10, toque quem compreende.",
+      "verseRef": "Daniel 12:10",
+      "evidenceSpan": "mas os sábios compreenderão",
+      "feedbackCorrect": "Os sábios compreenderão.",
+      "hint": "Procure quem compreende.",
+      "learningObjective": "Sustentar a compreensão.",
+      "evidence": [
+        "Daniel 12:10"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "sábios compreenderão"
+        },
+        {
+          "id": "b",
+          "text": "ímpios agirão"
+        },
+        {
+          "id": "c",
+          "text": "tempo do fim"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ímpios não compreendem.",
+        "c": "É o horizonte."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura a etapa sustenta sobre o fim?",
+      "verseRef": "Daniel 12:3",
+      "evidenceSpan": "Os sábios resplandecerão como o fulgor do firmamento",
+      "feedbackCorrect": "Há plano, ânimo, força e sábios que brilham no fim.",
+      "hint": "Compare as cenas.",
+      "learningObjective": "Interpretar o arco.",
+      "evidence": [
+        "Daniel 12:3",
+        "Daniel 11:32"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Sábios resplandecem e compreendem no fim"
+        },
+        {
+          "id": "b",
+          "text": "Não há ressurreição"
+        },
+        {
+          "id": "c",
+          "text": "A oração nunca é ouvida"
+        },
+        {
+          "id": "d",
+          "text": "Conhecer a Deus é irrelevante"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "12:2 afirma.",
+        "c": "10:12: ouvidas.",
+        "d": "11:32: força."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência resume o fio da etapa?",
+      "verseRef": "Daniel 9:24",
+      "evidenceSpan": "Setenta semanas estão determinadas",
+      "feedbackCorrect": "Plano; ânimo; força; resplendor.",
+      "hint": "Comece pelo plano.",
+      "learningObjective": "Ver o arco teológico.",
+      "evidence": [
+        "Daniel 9:24",
+        "Daniel 10:12",
+        "Daniel 12:3"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Plano das setenta semanas"
+        },
+        {
+          "id": "b",
+          "text": "Não tema: palavras ouvidas"
+        },
+        {
+          "id": "c",
+          "text": "Sábios resplandecem e compreendem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelo plano."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Daniel 9:18, que palavra nomeia a base da súplica?",
+      "verseRef": "Daniel 9:18",
+      "evidenceSpan": "mas em tuas muitas misericórdias",
+      "feedbackCorrect": "Misericórdias.",
+      "hint": "É o termo depois de \"mas\".",
+      "learningObjective": "Lembrar o termo.",
+      "evidence": [
+        "Daniel 9:18"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "misericórdias"
+        },
+        {
+          "id": "b",
+          "text": "exércitos"
+        },
+        {
+          "id": "c",
+          "text": "tesouros"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Não.",
+        "c": "Não."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Daniel 12:2 a João 5:28–29?",
+      "verseRef": "Daniel 12:2",
+      "evidenceSpan": "uns para a vida eterna, e outros para vergonha e horror eterno",
+      "feedbackCorrect": "Nos dois textos, há ressurreição para vida ou juízo.",
+      "hint": "Compare os destinos.",
+      "learningObjective": "Ligar a ressurreição.",
+      "evidence": [
+        "Daniel 12:2",
+        "João 5:28–29"
+      ],
+      "passageA": {
+        "ref": "Daniel 12:2"
+      },
+      "passageB": {
+        "ref": "João 5:28–29"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ressurreição para vida ou juízo"
+        },
+        {
+          "id": "b",
+          "text": "Sono sem despertar"
+        },
+        {
+          "id": "c",
+          "text": "Só juízo sem vida"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Há ressurreição.",
+        "c": "Há também vida."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Daniel 10:19, toque o mandato de força.",
+      "verseRef": "Daniel 10:19",
+      "evidenceSpan": "Seja forte, seja forte",
+      "feedbackCorrect": "Seja forte.",
+      "hint": "Procure o mandato.",
+      "learningObjective": "Sustentar o ânimo.",
+      "evidence": [
+        "Daniel 10:19"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Seja forte"
+        },
+        {
+          "id": "b",
+          "text": "amado"
+        },
+        {
+          "id": "c",
+          "text": "paz"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "É o título.",
+        "c": "É a saudação."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga confissão, força e ressurreição?",
+      "verseRef": "Daniel 12:2",
+      "evidenceSpan": "ressuscitarão, uns para a vida eterna",
+      "feedbackCorrect": "Súplica, ânimo e ressurreição fecham o fio.",
+      "hint": "Comece pela súplica.",
+      "learningObjective": "Ver o fio final.",
+      "evidence": [
+        "Daniel 9:18",
+        "Daniel 10:19",
+        "Daniel 12:2"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Súplica nas misericórdias de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ânimo: não tema, homem amado"
+        },
+        {
+          "id": "c",
+          "text": "Muitos ressuscitarão"
+        }
+      ],
+      "correctOrder": "a",
+      "feedbackWrong": {
+        "default": "Comece pela súplica; a ressurreição fecha."
+      }
+    }
+  ]
+}

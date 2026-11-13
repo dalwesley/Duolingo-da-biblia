@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 3:12–23",
+    "passages": [
+      {
+        "ref": "Juízes 3:12–23"
+      }
+    ],
+    "context": "Israel volta ao mal; o Senhor dá poder a Eglom. O povo clama e recebe Eúde, canhoto, que livra com o punhal na coxa direita.",
+    "keyword": "libertador",
+    "keywordGloss": "Quem o Senhor suscita para livrar o povo.",
+    "focusQuestion": "Que instrumento improvável o Senhor já pôs na sua mão?",
+    "reflectionPrompts": [
+      "Clamor",
+      "Canhoto",
+      "Palavra secreta"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor deu poder a Eglom contra Israel.",
+        "evidenceRef": "Juízes 3:12",
+        "evidenceSpan": "o SENHOR deu poder a Eglom"
+      },
+      {
+        "text": "Israel serviu a Eglom dezoito anos.",
+        "evidenceRef": "Juízes 3:14",
+        "evidenceSpan": "durante dezoito anos"
+      },
+      {
+        "text": "O Senhor suscitou o libertador Eúde.",
+        "evidenceRef": "Juízes 3:15",
+        "evidenceSpan": "o SENHOR lhes suscitou um libertador: Eúde"
+      },
+      {
+        "text": "Eúde era canhoto.",
+        "evidenceRef": "Juízes 3:15",
+        "evidenceSpan": "um homem canhoto"
+      },
+      {
+        "text": "Eúde cingiu o punhal na coxa direita.",
+        "evidenceRef": "Juízes 3:16",
+        "evidenceSpan": "na coxa direita"
+      },
+      {
+        "text": "Eúde cravou o punhal com a mão esquerda.",
+        "evidenceRef": "Juízes 3:21",
+        "evidenceSpan": "estendendo a mão esquerda"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "libertador",
+        "gloss": "Eúde, suscitado pelo Senhor."
+      },
+      {
+        "term": "canhoto",
+        "gloss": "Detalhe que esconde a arma na coxa direita."
+      },
+      {
+        "term": "punhal",
+        "gloss": "Arma de dois gumes usada no livramento."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Mal e opressão de Eglom",
+        "evidenceRef": "Juízes 3:12–14"
+      },
+      {
+        "label": "Clamor e Eúde enviado",
+        "evidenceRef": "Juízes 3:15–18"
+      },
+      {
+        "label": "Palavra secreta e golpe",
+        "evidenceRef": "Juízes 3:19–23"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Mau aos olhos; por isso o Senhor deu poder a Eglom.",
+        "marker": "por isso",
+        "evidenceRef": "Juízes 3:12"
+      },
+      {
+        "kind": "sequência",
+        "text": "Clamaram; então o Senhor suscitou Eúde.",
+        "marker": "Então",
+        "evidenceRef": "Juízes 3:15"
+      },
+      {
+        "kind": "sequência",
+        "text": "O rei manda calar; os assistentes saem.",
+        "marker": "Cala-te",
+        "evidenceRef": "Juízes 3:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 50:15",
+        "bridge": "Clamar no dia da angústia"
+      },
+      {
+        "ref": "1 Coríntios 1:27",
+        "bridge": "Deus usa o que parece fraco"
+      },
+      {
+        "ref": "Juízes 2:16",
+        "bridge": "Senhor levanta juízes"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Eúde age sem o Senhor.",
+        "why": "O Senhor suscitou o libertador."
+      },
+      {
+        "text": "O canhoto é detalhe inútil.",
+        "why": "Explica a arma na coxa direita."
+      },
+      {
+        "text": "Israel não clamou.",
+        "why": "Clamaram e o Senhor respondeu."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 3:15, quem o Senhor suscitou?",
+    "centralInsight": "Com a espada na mão esquerda, Eúde livra Israel: o Senhor dá o livrador improvável."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 3:15, o Senhor suscitou Eúde como libertador.",
+      "verseRef": "Juízes 3:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "o SENHOR lhes suscitou um libertador: Eúde",
+      "feedbackCorrect": "Eúde libertador.",
+      "feedbackWrong": {
+        "false": "O texto nomeia Eúde."
+      },
+      "hint": "Veja quem foi suscitado.",
+      "learningObjective": "Observar o libertador.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 3:15, toque a descrição de Eúde.",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "canhoto"
+        },
+        {
+          "id": "b",
+          "text": "libertador"
+        },
+        {
+          "id": "c",
+          "text": "benjamita"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um homem canhoto",
+      "feedbackCorrect": "Canhoto.",
+      "feedbackWrong": {
+        "b": "Libertador é o papel.",
+        "c": "Benjamita é a tribo."
+      },
+      "hint": "Veja o fim da frase.",
+      "learningObjective": "Identificar canhoto.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 3:14, quanto tempo Israel serviu a Eglom?",
+      "verseRef": "Juízes 3:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dezoito anos"
+        },
+        {
+          "id": "b",
+          "text": "Três dias"
+        },
+        {
+          "id": "c",
+          "text": "Quarenta anos"
+        },
+        {
+          "id": "d",
+          "text": "Um mês"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "durante dezoito anos",
+      "feedbackCorrect": "Dezoito anos.",
+      "feedbackWrong": {
+        "b": "Não são três.",
+        "c": "Não são quarenta.",
+        "d": "Não é um mês."
+      },
+      "hint": "Leia a duração.",
+      "learningObjective": "Reconhecer o tempo.",
+      "evidence": [
+        "Juízes 3:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 3:21 na ordem do texto.",
+      "verseRef": "Juízes 3:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "estendendo a mão esquerda"
+        },
+        {
+          "id": "b",
+          "text": "puxou o punhal da coxa direita"
+        },
+        {
+          "id": "c",
+          "text": "o cravou em seu ventre"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "puxou o punhal da coxa direita e o cravou em seu ventre",
+      "feedbackCorrect": "Esquerda, punhal e golpe.",
+      "feedbackWrong": {
+        "default": "Comece pela mão."
+      },
+      "hint": "Onde crava?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 3:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 3:16, complete: o cingiu sob suas vestes, na ___.",
+      "verseRef": "Juízes 3:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "coxa direita"
+        },
+        {
+          "id": "b",
+          "text": "mão esquerda"
+        },
+        {
+          "id": "c",
+          "text": "porta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "na coxa direita",
+      "feedbackCorrect": "Coxa direita.",
+      "feedbackWrong": {
+        "b": "Mão é no golpe.",
+        "c": "Porta é depois."
+      },
+      "hint": "Veja o lugar.",
+      "learningObjective": "Lembrar a coxa.",
+      "evidence": [
+        "Juízes 3:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 3:15 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 3:15",
+      "passageA": {
+        "ref": "Juízes 3:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel clama e o Senhor suscita um libertador improvável."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamor e libertador"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio sem resposta"
+        },
+        {
+          "id": "c",
+          "text": "Eglom como juiz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR",
+      "feedbackCorrect": "Clamor abre o livramento.",
+      "feedbackWrong": {
+        "b": "Há clamor.",
+        "c": "Eglom oprime."
+      },
+      "hint": "O que o povo fez?",
+      "learningObjective": "Ligar clamor e livramento.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 3:12, o Senhor deu poder a Eglom porque Israel fez o que era mau.",
+      "verseRef": "Juízes 3:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "por isso, o SENHOR deu poder a Eglom",
+      "feedbackCorrect": "Causa e poder.",
+      "feedbackWrong": {
+        "false": "O por isso liga mal e Eglom."
+      },
+      "hint": "Leia o por isso.",
+      "learningObjective": "Ver a causa.",
+      "evidence": [
+        "Juízes 3:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 3:12, toque o marcador de causa.",
+      "verseRef": "Juízes 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "por isso"
+        },
+        {
+          "id": "b",
+          "text": "Eglom"
+        },
+        {
+          "id": "c",
+          "text": "moabitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por isso, o SENHOR deu poder a Eglom",
+      "feedbackCorrect": "Por isso.",
+      "feedbackWrong": {
+        "b": "Eglom é o rei.",
+        "c": "Moabitas são o povo."
+      },
+      "hint": "Procure após o mal.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Juízes 3:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 3:15 faz?",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamaram; então o Senhor suscitou Eúde"
+        },
+        {
+          "id": "b",
+          "text": "Silêncio; então Eglom caiu"
+        },
+        {
+          "id": "c",
+          "text": "Eúde se nomeou"
+        },
+        {
+          "id": "d",
+          "text": "Sem tributo não há livramento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR, e o SENHOR lhes suscitou",
+      "feedbackCorrect": "Clamor e resposta.",
+      "feedbackWrong": {
+        "b": "Há clamor.",
+        "c": "Há suscitar.",
+        "d": "Há tributo depois."
+      },
+      "hint": "Leia o Então.",
+      "learningObjective": "Compreender a sequência.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do relato.",
+      "verseRef": "Juízes 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mal e opressão de Eglom"
+        },
+        {
+          "id": "b",
+          "text": "Clamor e Eúde enviado"
+        },
+        {
+          "id": "c",
+          "text": "Palavra secreta e golpe"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o SENHOR deu poder a Eglom",
+      "feedbackCorrect": "Opressão, clamor e golpe.",
+      "feedbackWrong": {
+        "default": "Comece pelo mal."
+      },
+      "hint": "O que fecha o golpe?",
+      "learningObjective": "Ordenar a sequência",
+      "evidence": [
+        "Juízes 3:12",
+        "Juízes 3:21"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 3:15, complete: o SENHOR lhes suscitou um ___.",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "libertador"
+        },
+        {
+          "id": "b",
+          "text": "carrasco"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suscitou um libertador: Eúde",
+      "feedbackCorrect": "Libertador.",
+      "feedbackWrong": {
+        "b": "Não é carrasco.",
+        "c": "Não é sacerdote."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar libertador.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 3:15 a Salmos 50:15?",
+      "verseRef": "Juízes 3:15",
+      "passageA": {
+        "ref": "Juízes 3:15"
+      },
+      "passageB": {
+        "ref": "Salmos 50:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Clamar no dia da angústia"
+        },
+        {
+          "id": "b",
+          "text": "Calar perante o rei"
+        },
+        {
+          "id": "c",
+          "text": "Servir a Eglom"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "os filhos de Israel clamaram ao SENHOR",
+      "feedbackCorrect": "Clamor.",
+      "feedbackWrong": {
+        "b": "Não é calar.",
+        "c": "Não é servir."
+      },
+      "hint": "Compare o clamor.",
+      "learningObjective": "Ligar ao Salmo.",
+      "evidence": [
+        "Juízes 3:15",
+        "Salmos 50:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 3:15, ser canhoto torna Eúde inútil ao Senhor.",
+      "verseRef": "Juízes 3:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "um homem canhoto",
+      "feedbackCorrect": "O Senhor o suscita assim.",
+      "feedbackWrong": {
+        "true": "O detalhe serve ao plano."
+      },
+      "hint": "Leia a descrição.",
+      "learningObjective": "Avaliar o instrumento.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 3:21, toque o trecho da mão usada.",
+      "verseRef": "Juízes 3:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "mão esquerda"
+        },
+        {
+          "id": "b",
+          "text": "coxa direita"
+        },
+        {
+          "id": "c",
+          "text": "ventre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "estendendo a mão esquerda",
+      "feedbackCorrect": "Mão esquerda.",
+      "feedbackWrong": {
+        "b": "Coxa guarda a arma.",
+        "c": "Ventre é o alvo."
+      },
+      "hint": "Veja o gesto.",
+      "learningObjective": "Tocar a mão.",
+      "evidence": [
+        "Juízes 3:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une clamor e instrumento improvável?",
+      "verseRef": "Juízes 3:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor suscita o canhoto que livra"
+        },
+        {
+          "id": "b",
+          "text": "Só a força direita importa"
+        },
+        {
+          "id": "c",
+          "text": "Eglom escolhe o libertador"
+        },
+        {
+          "id": "d",
+          "text": "Sem clamor o Senhor age igual"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR lhes suscitou um libertador: Eúde",
+      "feedbackCorrect": "Senhor escolhe.",
+      "feedbackWrong": {
+        "b": "Há canhoto.",
+        "c": "Há Senhor.",
+        "d": "Há clamor."
+      },
+      "hint": "Una clamor e Eúde.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 3:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do livramento.",
+      "verseRef": "Juízes 3:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo clama sob Eglom"
+        },
+        {
+          "id": "b",
+          "text": "Senhor suscita Eúde"
+        },
+        {
+          "id": "c",
+          "text": "Golpe com a mão esquerda"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "estendendo a mão esquerda",
+      "feedbackCorrect": "Clamor, envio e golpe.",
+      "feedbackWrong": {
+        "default": "Comece pelo clamor."
+      },
+      "hint": "O que fecha o golpe?",
+      "learningObjective": "Encadear o livramento",
+      "evidence": [
+        "Juízes 3:15",
+        "Juízes 3:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 3:12, complete: o SENHOR deu poder a ___.",
+      "verseRef": "Juízes 3:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eglom"
+        },
+        {
+          "id": "b",
+          "text": "Eúde"
+        },
+        {
+          "id": "c",
+          "text": "Gera"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR deu poder a Eglom",
+      "feedbackCorrect": "Eglom.",
+      "feedbackWrong": {
+        "b": "Eúde é o libertador.",
+        "c": "Gera é o pai."
+      },
+      "hint": "Veja o nome.",
+      "learningObjective": "Lembrar Eglom.",
+      "evidence": [
+        "Juízes 3:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 3:15 a 1 Coríntios 1:27?",
+      "verseRef": "Juízes 3:15",
+      "passageA": {
+        "ref": "Juízes 3:15"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 1:27"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus usa o improvável"
+        },
+        {
+          "id": "b",
+          "text": "Só o forte livra"
+        },
+        {
+          "id": "c",
+          "text": "Rei escolhe o juiz"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um homem canhoto",
+      "feedbackCorrect": "Instrumento improvável.",
+      "feedbackWrong": {
+        "b": "Não só o forte.",
+        "c": "Senhor escolhe."
+      },
+      "hint": "Compare o improvável.",
+      "learningObjective": "Ligar a Coríntios.",
+      "evidence": [
+        "Juízes 3:15",
+        "1 Coríntios 1:27"
+      ]
+    }
+  ]
+}

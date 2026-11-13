@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Salmos 110:1–6",
+    "passages": [
+      {
+        "ref": "Salmos 110:1–6"
+      },
+      {
+        "ref": "Salmos 110:7"
+      }
+    ],
+    "context": "Disse o Senhor ao meu Senhor: assenta-te à minha direita. Tu és sacerdote eterno.",
+    "keyword": "Senhor",
+    "keywordGloss": "Palavra central neste trecho do salmo.",
+    "focusQuestion": "Como este salmo orienta a sua oração hoje?",
+    "reflectionPrompts": [
+      "Assenta-te à minha direita",
+      "Confiança",
+      "Oração"
+    ],
+    "facts": [
+      {
+        "text": "Disse o Senhor ao meu Senhor.",
+        "evidenceRef": "Salmos 110:1",
+        "evidenceSpan": "Disse o Senhor ao meu Senhor"
+      },
+      {
+        "text": "O Senhor enviará de Sião o cetro da.",
+        "evidenceRef": "Salmos 110:2",
+        "evidenceSpan": "O Senhor enviará de Sião o cetro da"
+      },
+      {
+        "text": "O teu povo se oferecerá de bom grado.",
+        "evidenceRef": "Salmos 110:3",
+        "evidenceSpan": "O teu povo se oferecerá de bom grado"
+      },
+      {
+        "text": "O Senhor jurou e não se arrependerá.",
+        "evidenceRef": "Salmos 110:4",
+        "evidenceSpan": "O Senhor jurou e não se arrependerá"
+      },
+      {
+        "text": "O Senhor, à sua direita, no dia da sua ira, esmagará os reis.",
+        "evidenceRef": "Salmos 110:5",
+        "evidenceSpan": "O Senhor"
+      },
+      {
+        "text": "Julgará entre as nações.",
+        "evidenceRef": "Salmos 110:6",
+        "evidenceSpan": "Julgará entre as nações"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Palavra central neste trecho do salmo."
+      },
+      {
+        "term": "Disse",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      },
+      {
+        "term": "Assenta-te",
+        "gloss": "Termo que carrega o sentido deste salmo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Disse o senhor ao meu senhor",
+        "evidenceRef": "Salmos 110:1"
+      },
+      {
+        "label": "O senhor enviará de sião o",
+        "evidenceRef": "Salmos 110:2"
+      },
+      {
+        "label": "O teu povo se oferecerá de",
+        "evidenceRef": "Salmos 110:3"
+      },
+      {
+        "label": "O senhor jurou e não se",
+        "evidenceRef": "Salmos 110:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"se\".",
+        "marker": "se",
+        "evidenceRef": "Salmos 110:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Se\".",
+        "marker": null,
+        "evidenceRef": "Salmos 110:4"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"por isso\".",
+        "marker": "por isso",
+        "evidenceRef": "Salmos 110:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Refúgio e fortaleza"
+      },
+      {
+        "ref": "Salmos 103:1",
+        "bridge": "Bendize a alma"
+      },
+      {
+        "ref": "Salmos 139:14",
+        "bridge": "Feitos de modo admirável"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O salmo só fala de emoção humana, sem relação com Deus.",
+        "why": "O texto dirige-se a Deus e fala da sua ação."
+      },
+      {
+        "text": "Tudo no trecho é ameaça sem esperança.",
+        "why": "Rei e sacerdote segundo Melquisedeque: o cetro sai de Sião."
+      },
+      {
+        "text": "O texto permite qualquer leitura, sem apoiar-se nas palavras.",
+        "why": "As afirmações do salmo são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Rei e sacerdote segundo Melquisedeque: o cetro sai de Sião.",
+    "anchorQuestion": "O que Salmos 110:1 destaca neste salmo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Salmos 110:1, disse o Senhor ao meu Senhor.",
+      "verseRef": "Salmos 110:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Disse o Senhor ao meu Senhor",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "false": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 110:1 afirma.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Salmos 110:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Salmos 110:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O versículo destaca «Disse».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Salmos 110:3, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 110:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O teu povo se oferecerá de bom grado"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O teu povo se oferecerá de bom grado",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 110:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Salmos 110:1 na ordem do texto.",
+      "verseRef": "Salmos 110:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "o"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Salmos 110:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 110:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "meu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é «Senhor».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 110:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Salmos 110:1 comunica que se liga a este contexto.",
+      "verseRef": "Salmos 110:1",
+      "passageA": {
+        "ref": "Salmos 110:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Disse o Senhor ao meu Senhor: assenta-te à minha direita. Tu és sacerdote eterno."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Oração ligada ao salmo"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "O versículo conversa com o contexto do salmo.",
+      "feedbackWrong": {
+        "b": "O salmo chama à oração, não à fuga.",
+        "c": "O texto fala a Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Salmos 110:3, o salmo trata as ideias como desconexas, sem qualquer ligação.",
+      "verseRef": "Salmos 110:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "se",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 110:3 afirma.",
+      "evidence": [
+        "Salmos 110:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Salmos 110:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Salmos 110:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "teu"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "oferecerá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "teu",
+      "feedbackCorrect": "O versículo destaca «se».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 110:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Salmos 110:4, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 110:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor jurou e não se arrependerá",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 110:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "O texto mostra avança o movimento deste salmo.",
+      "verseRef": "Salmos 110:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse o senhor ao meu senhor"
+        },
+        {
+          "id": "b",
+          "text": "O senhor enviará de sião"
+        },
+        {
+          "id": "c",
+          "text": "O teu povo se oferecerá"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "Os movimentos seguem a ordem do salmo.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do salmo.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Salmos 110:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Salmos 110:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "direita"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "direita",
+      "feedbackCorrect": "A palavra do versículo é «direita».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 110:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Salmos 110:1 a Salmos 46:1.",
+      "verseRef": "Salmos 110:1",
+      "passageA": {
+        "ref": "Salmos 110:1"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e fortaleza"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O salmo permite concluir que Deus está ausente e indiferente ao orante.",
+      "verseRef": "Salmos 110:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Beberá",
+      "feedbackCorrect": "O versículo sustenta essa leitura do salmo.",
+      "feedbackWrong": {
+        "true": "Releia o versículo: o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Salmos 110:7 afirma.",
+      "evidence": [
+        "Salmos 110:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Salmos 110:7, toque o trecho que sustenta a leitura do salmo.",
+      "verseRef": "Salmos 110:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Beberá"
+        },
+        {
+          "id": "b",
+          "text": "ribeiro"
+        },
+        {
+          "id": "c",
+          "text": "longo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Beberá",
+      "feedbackCorrect": "O versículo destaca «Beberá».",
+      "feedbackWrong": {
+        "b": "Não é o alvo.",
+        "c": "Não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Salmos 110:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Salmos 110:5, o que o texto apresenta com clareza.",
+      "verseRef": "Salmos 110:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto liga a ação de Deus ao orante"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total de Deus sem palavras"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer orante no texto"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de louvar o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta silêncio total de Deus.",
+        "c": "Há orante e conteúdo no salmo.",
+        "d": "O salmo não proíbe o louvor."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Salmos 110:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do salmo.",
+      "verseRef": "Salmos 110:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O orante apresenta sua situação a Deus"
+        },
+        {
+          "id": "b",
+          "text": "O texto afirma a ação ou o caráter de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Surge confiança, louvor ou pedido final"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A lógica vai da situação à resposta de fé.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do orante."
+      },
+      "hint": "Do clamor à confiança.",
+      "learningObjective": "Ver o encadeamento do salmo.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Salmos 110:5, complete a palavra que o texto usa com peso (pro).",
+      "verseRef": "Salmos 110:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "esmagará"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "esmagará",
+      "feedbackCorrect": "A palavra do versículo é «esmagará».",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Salmos 110:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Salmos 110:1 a Salmos 103:1.",
+      "verseRef": "Salmos 110:1",
+      "passageA": {
+        "ref": "Salmos 110:1"
+      },
+      "passageB": {
+        "ref": "Salmos 103:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Bendize a alma"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o salmo a outro texto.",
+      "evidence": [
+        "Salmos 110:1"
+      ]
+    }
+  ]
+}

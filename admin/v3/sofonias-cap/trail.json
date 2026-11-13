@@ -1,0 +1,78 @@
+{
+  "slug": "sofonias-cap",
+  "title": "Sofonias",
+  "description": "Sofonias capítulo a capítulo: o dia do Senhor e a restauração do remanescente.",
+  "icon": "🔥",
+  "color": "#C45C5A",
+  "order": 43,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Dia e restauração · cap. 1–3",
+      "icon": "zap",
+      "section": "Sofonias",
+      "missions": [
+        {
+          "slug": "sfc-01-consumirei-tudo",
+          "title": "Consumirei tudo",
+          "subtitle": "Sofonias 1:2–9",
+          "intro": "Sofonias anuncia o juízo do Senhor sobre Judá e sobre os que se afastaram dele.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Sofonias 1:2–9",
+          "hookVerse": "Certamente, consumirei todas as coisas que existem sobre a face da terra, declara o Senhor. Destruirei os homens e os animais, eliminarei as aves do céu e os peixes do mar, e farei desaparecer as ofensas junto com os perversos; exterminarei os humanos de sobre a face da terra, diz o Senhor.",
+          "hookNote": "O Senhor busca quem se voltou para trás e quem não o busca.",
+          "centralInsight": "O Senhor busca quem se voltou para trás e quem não o busca.",
+          "objective": "Buscar o Senhor de verdade"
+        },
+        {
+          "slug": "sfc-02-buscai-o-senhor",
+          "title": "Buscai o Senhor",
+          "subtitle": "Sofonias 2:1–7",
+          "intro": "Antes que chegue o dia da ira, o povo é chamado a buscar a justiça e a humildade.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Sofonias 2:1–7",
+          "hookVerse": "Reúnam-se, sim, reúnam-se, ó nação que não tem pudor Antes que o decreto se estabeleça, antes que o dia passe como a palha; antes que sobre vocês venha o furor da ira do Senhor, sim, antes que venha a vocês o dia da ira do Senhor.",
+          "hookNote": "Buscar o Senhor, a justiça e a humildade pode esconder no dia da ira.",
+          "centralInsight": "Buscar o Senhor, a justiça e a humildade pode esconder no dia da ira.",
+          "objective": "Buscar justiça e humildade"
+        },
+        {
+          "slug": "sfc-03-um-povo-humilde",
+          "title": "Um povo humilde",
+          "subtitle": "Sofonias 3:8–13",
+          "intro": "Depois do juízo, o Senhor deixa um povo humilde e pobre que confia no seu nome.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Sofonias 3:8–13",
+          "hookVerse": "Esperem por mim, diz o SENHOR, no dia em que eu me levantar para o despojo; porque a minha resolução é ajuntar as nações e congregar os reinos, para fazer cair sobre eles a minha maldição e todo o furor da minha ira; pois toda esta terra será devorada pelo fogo do meu zelo. Então, darei uma língua pura aos povos, para que todos invoquem o nome do SENHOR e o sirvam em unidade.",
+          "hookNote": "O remanescente não pratica iniquidade e se apascenta sem temor.",
+          "centralInsight": "O remanescente não pratica iniquidade e se apascenta sem temor.",
+          "objective": "Confiar no nome do Senhor"
+        },
+        {
+          "slug": "sfc-boss-1",
+          "title": "Travessia: Dia e restauração",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o juízo, o chamado a buscar e o povo humilde que resta.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Dia e restauração",
+          "hookVerse": "Revise o juízo, o chamado a buscar e o povo humilde que resta.",
+          "hookNote": "Revise o juízo, o chamado a buscar e o povo humilde que resta.",
+          "centralInsight": "O dia do Senhor juíza e deixa um povo que confia nele",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

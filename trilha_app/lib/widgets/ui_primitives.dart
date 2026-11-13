@@ -845,7 +845,11 @@ class SectionLabel extends StatelessWidget {
       style: AppTypography.label(
         size: size,
         letterSpacing: 1.3,
-        color: color ?? a.sectionLabel,
+        color:
+            color ??
+            (a.placeTint == null
+                ? a.sectionLabel
+                : Color.lerp(a.sectionLabel, a.place, 0.7)!),
       ),
     );
   }
@@ -987,7 +991,7 @@ class CardHeader extends StatelessWidget {
             width: 3,
             height: 18,
             decoration: BoxDecoration(
-              color: accent ?? a.chrome,
+              color: accent ?? a.place,
               borderRadius: BorderRadius.circular(AppRadii.hair),
             ),
           ),

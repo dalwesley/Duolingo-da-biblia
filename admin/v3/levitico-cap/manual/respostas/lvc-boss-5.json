@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "Levítico 21:6–9",
+    "passages": [
+      {
+        "ref": "Levítico 21:6–9"
+      },
+      {
+        "ref": "Levítico 22:17–20"
+      },
+      {
+        "ref": "Levítico 23:15–18"
+      },
+      {
+        "ref": "Levítico 24:1–4"
+      },
+      {
+        "ref": "Levítico 25:8–11"
+      }
+    ],
+    "context": "Cena de Travessia: Festas e aliança: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Festas e aliança",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Serão santos ao seu Deus e não profanarão.",
+        "evidenceRef": "Levítico 21:6",
+        "evidenceSpan": "Serão santos ao seu Deus e não profanarão"
+      },
+      {
+        "text": "E se a filha de um sacerdote se.",
+        "evidenceRef": "Levítico 21:9",
+        "evidenceSpan": "E se a filha de um sacerdote se"
+      },
+      {
+        "text": "Disse ainda o Senhor a Moisés.",
+        "evidenceRef": "Levítico 22:17",
+        "evidenceSpan": "Disse ainda o Senhor a Moisés"
+      },
+      {
+        "text": "Nenhum.",
+        "evidenceRef": "Levítico 22:20",
+        "evidenceSpan": "Nenhum"
+      },
+      {
+        "text": "Contarão para vocês desde o dia seguinte ao.",
+        "evidenceRef": "Levítico 23:15",
+        "evidenceSpan": "Contarão para vocês desde o dia seguinte ao"
+      },
+      {
+        "text": "Também.",
+        "evidenceRef": "Levítico 23:18",
+        "evidenceSpan": "Também"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "holocausto",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Serão santos ao seu deus",
+        "evidenceRef": "Levítico 21:6"
+      },
+      {
+        "label": "E se a filha de um",
+        "evidenceRef": "Levítico 21:9"
+      },
+      {
+        "label": "Disse ainda o senhor a moisés",
+        "evidenceRef": "Levítico 22:17"
+      },
+      {
+        "label": "Nenhum animal que tenha defeito será",
+        "evidenceRef": "Levítico 22:20"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Levítico 21:6"
+      },
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Levítico 22:20"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Também\".",
+        "marker": "Também",
+        "evidenceRef": "Levítico 23:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Pedro 1:16",
+        "bridge": "Sede santos como eu"
+      },
+      {
+        "ref": "2 Coríntios 6:16",
+        "bridge": "Deus no meio do povo"
+      },
+      {
+        "ref": "Lucas 4:18",
+        "bridge": "Boa nova aos pobres"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A aliança marca o tempo, a terra e a presença de Deus",
+    "anchorQuestion": "O que Levítico 21:6 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 21:6, o texto inclui Serão santos ao seu Deus e não profanarão.",
+      "verseRef": "Levítico 21:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Serão santos ao seu Deus e não profanarão",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 21:6 afirma.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 21:6, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "santos"
+        },
+        {
+          "id": "b",
+          "text": "seu"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "santos",
+      "feedbackCorrect": "O versículo destaca santos.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 22:17, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 22:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse ainda o Senhor a Moisés"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse ainda o Senhor a Moisés",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 22:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 21:9 na ordem do texto.",
+      "verseRef": "Levítico 21:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "E se a filha"
+        },
+        {
+          "id": "b",
+          "text": "de um sacerdote se"
+        },
+        {
+          "id": "c",
+          "text": "prostituir"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E se a filha",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 21:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 22:20, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 22:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nenhum"
+        },
+        {
+          "id": "b",
+          "text": "Serão"
+        },
+        {
+          "id": "c",
+          "text": "santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nenhum",
+      "feedbackCorrect": "A palavra do versículo é Nenhum.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 22:20"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 21:6 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 21:6",
+      "passageA": {
+        "ref": "Levítico 21:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Festas e aliança: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Serão",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 24:1, toque outra palavra central do trecho.",
+      "verseRef": "Levítico 24:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "E"
+        },
+        {
+          "id": "c",
+          "text": "o"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O trecho destaca Senhor.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Levítico 24:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 25:8 na ordem do texto.",
+      "verseRef": "Levítico 25:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarás sete semanas"
+        },
+        {
+          "id": "b",
+          "text": "anos"
+        },
+        {
+          "id": "c",
+          "text": "semanas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Contarás sete semanas",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 21:6, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Levítico 21:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 21:6 afirma.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 21:6, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "santos"
+        },
+        {
+          "id": "c",
+          "text": "seu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 22:20, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 22:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra nenhum"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nenhum",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 22:20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Serão santos ao seu deus"
+        },
+        {
+          "id": "b",
+          "text": "E se a filha de um"
+        },
+        {
+          "id": "c",
+          "text": "Disse ainda o senhor a moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Serão",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 22:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 22:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "Serão"
+        },
+        {
+          "id": "c",
+          "text": "santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A palavra do versículo é Disse.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 22:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 21:6 a 1 Pedro 1:16.",
+      "verseRef": "Levítico 21:6",
+      "passageA": {
+        "ref": "Levítico 21:6"
+      },
+      "passageB": {
+        "ref": "1 Pedro 1:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sede santos como eu"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Serão",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 24:4, toque outra palavra central do trecho.",
+      "verseRef": "Levítico 24:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "candelabro"
+        },
+        {
+          "id": "b",
+          "text": "Sobre"
+        },
+        {
+          "id": "c",
+          "text": "o"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "candelabro",
+      "feedbackCorrect": "O trecho destaca candelabro.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Levítico 24:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Levítico 25:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "No",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Levítico 25:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 25:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 25:11 afirma.",
+      "evidence": [
+        "Levítico 25:11"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 23:18, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 23:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também"
+        },
+        {
+          "id": "b",
+          "text": "pão"
+        },
+        {
+          "id": "c",
+          "text": "oferecerão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O versículo destaca Também.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 23:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 23:15, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 23:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Santidade exige distinção prática"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarão para vocês desde o dia seguinte ao",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 21:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Serão",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 23:15, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 23:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarão"
+        },
+        {
+          "id": "b",
+          "text": "Serão"
+        },
+        {
+          "id": "c",
+          "text": "santos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarão",
+      "feedbackCorrect": "A palavra do versículo é Contarão.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 23:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 21:6 a 2 Coríntios 6:16.",
+      "verseRef": "Levítico 21:6",
+      "passageA": {
+        "ref": "Levítico 21:6"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 6:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus no meio do povo"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Serão",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 21:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 25:8, toque outra palavra central do trecho.",
+      "verseRef": "Levítico 25:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contarás"
+        },
+        {
+          "id": "b",
+          "text": "sete"
+        },
+        {
+          "id": "c",
+          "text": "semanas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Contarás",
+      "feedbackCorrect": "O trecho destaca Contarás.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Levítico 25:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a lógica deste bloco na Interpretação.",
+      "verseRef": "Levítico 26:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Se",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Levítico 26:3"
+      ]
+    }
+  ]
+}

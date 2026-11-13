@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 8:22–28",
+    "passages": [
+      {
+        "ref": "Juízes 8:22–28"
+      }
+    ],
+    "context": "Israel pede que Gideão domine; ele diz que o Senhor dominará. Porém o éfode em Ofra vira laço para ele e sua casa.",
+    "keyword": "dominará",
+    "keywordGloss": "O Senhor como rei, não a dinastia de Gideão.",
+    "focusQuestion": "Onde você confessa o Senhor como rei, mas cria um laço com as próprias mãos?",
+    "reflectionPrompts": [
+      "Não dominarei",
+      "Éfode em Ofra",
+      "Laço para a casa"
+    ],
+    "facts": [
+      {
+        "text": "Israel pediu que Gideão dominasse.",
+        "evidenceRef": "Juízes 8:22",
+        "evidenceSpan": "Domina sobre nós"
+      },
+      {
+        "text": "Gideão disse que o Senhor dominará.",
+        "evidenceRef": "Juízes 8:23",
+        "evidenceSpan": "o SENHOR dominará sobre vocês"
+      },
+      {
+        "text": "Pediu os brincos de ouro do despojo.",
+        "evidenceRef": "Juízes 8:24",
+        "evidenceSpan": "os brincos do seu despojo"
+      },
+      {
+        "text": "Fez um éfode e o pôs em Ofra.",
+        "evidenceRef": "Juízes 8:27",
+        "evidenceSpan": "fez com isso um éfode"
+      },
+      {
+        "text": "O éfode se tornou um laço.",
+        "evidenceRef": "Juízes 8:27",
+        "evidenceSpan": "isso se tornou um laço para Gideão e sua casa"
+      },
+      {
+        "text": "A terra teve paz por quarenta anos.",
+        "evidenceRef": "Juízes 8:28",
+        "evidenceSpan": "paz por quarenta anos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "éfode",
+        "gloss": "Objeto que Israel passou a seguir em Ofra."
+      },
+      {
+        "term": "laço",
+        "gloss": "Armadilha espiritual para Gideão e a casa."
+      },
+      {
+        "term": "dominará",
+        "gloss": "Reinado confessado como do Senhor."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Pedido de domínio e recusa",
+        "evidenceRef": "Juízes 8:22–23"
+      },
+      {
+        "label": "Ouro e éfode",
+        "evidenceRef": "Juízes 8:24–27"
+      },
+      {
+        "label": "Paz sob Gideão",
+        "evidenceRef": "Juízes 8:28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Pedem domínio; porém Gideão recusa.",
+        "marker": "Porém",
+        "evidenceRef": "Juízes 8:23"
+      },
+      {
+        "kind": "causa",
+        "text": "Pediu brincos pois eram ismaelitas.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 8:24"
+      },
+      {
+        "kind": "sequência",
+        "text": "Fez o éfode; Israel se prostituiu.",
+        "marker": "e",
+        "evidenceRef": "Juízes 8:27"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 8:7",
+        "bridge": "A mim me rejeitaram"
+      },
+      {
+        "ref": "Êxodo 20:3",
+        "bridge": "Não ter outros deuses"
+      },
+      {
+        "ref": "Salmos 106:36",
+        "bridge": "Ídolos viram laço"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Gideão aceita reinado dinástico.",
+        "why": "Não dominarei; o Senhor dominará."
+      },
+      {
+        "text": "O éfode foi só ornamentação.",
+        "why": "Tornou-se laço."
+      },
+      {
+        "text": "Não houve paz.",
+        "why": "Quarenta anos de paz."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 8:23, quem dominará sobre o povo?",
+    "centralInsight": "Gideão diz que o Senhor reinará; o éfode, porém, vira laço para ele e sua casa."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 8:23, Gideão diz que o Senhor dominará sobre o povo.",
+      "verseRef": "Juízes 8:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "O Senhor reinará.",
+      "feedbackWrong": {
+        "false": "O texto atribui o domínio ao Senhor."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Observar o reinado.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 8:27, toque o que Gideão fez.",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "éfode"
+        },
+        {
+          "id": "b",
+          "text": "Ofra"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "fez com isso um éfode",
+      "feedbackCorrect": "Éfode.",
+      "feedbackWrong": {
+        "b": "Ofra é a cidade.",
+        "c": "Israel se prostituiu."
+      },
+      "hint": "Veja o objeto feito.",
+      "learningObjective": "Identificar o éfode.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 8:28, a terra desfrutou de paz por:",
+      "verseRef": "Juízes 8:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quarenta anos"
+        },
+        {
+          "id": "b",
+          "text": "Três dias"
+        },
+        {
+          "id": "c",
+          "text": "Sete semanas"
+        },
+        {
+          "id": "d",
+          "text": "Um mês"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "paz por quarenta anos",
+      "feedbackCorrect": "Quarenta anos.",
+      "feedbackWrong": {
+        "b": "Não são três.",
+        "c": "Não são sete.",
+        "d": "Não é um mês."
+      },
+      "hint": "Leia a duração.",
+      "learningObjective": "Reconhecer a paz.",
+      "evidence": [
+        "Juízes 8:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 8:23 na ordem do texto.",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não dominarei sobre vocês"
+        },
+        {
+          "id": "b",
+          "text": "nem meu filho dominará sobre vocês"
+        },
+        {
+          "id": "c",
+          "text": "o SENHOR dominará sobre vocês"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "Recusa, filho e Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa."
+      },
+      "hint": "Quem domina?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 8:27, complete: isso se tornou um ___ para Gideão.",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "laço"
+        },
+        {
+          "id": "b",
+          "text": "trono"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso se tornou um laço para Gideão e sua casa",
+      "feedbackCorrect": "Laço.",
+      "feedbackWrong": {
+        "b": "Não é trono.",
+        "c": "Não é templo."
+      },
+      "hint": "Veja o resultado.",
+      "learningObjective": "Lembrar laço.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 8:22 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 8:22",
+      "passageA": {
+        "ref": "Juízes 8:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O povo pede um domínio humano após o livramento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedido de domínio"
+        },
+        {
+          "id": "b",
+          "text": "Recusa do ouro"
+        },
+        {
+          "id": "c",
+          "text": "Sem midianitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Domina sobre nós",
+      "feedbackCorrect": "Pedido de reinado.",
+      "feedbackWrong": {
+        "b": "Há pedido.",
+        "c": "Há midianitas no passado."
+      },
+      "hint": "O que pedem?",
+      "learningObjective": "Ligar pedido e recusa.",
+      "evidence": [
+        "Juízes 8:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 8:23, Israel pede domínio; porém Gideão recusa e aponta o Senhor.",
+      "verseRef": "Juízes 8:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "Porém Gideão lhes disse",
+      "feedbackCorrect": "Contraste da recusa.",
+      "feedbackWrong": {
+        "false": "O Porém marca a recusa."
+      },
+      "hint": "Leia o Porém.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 8:23, toque o marcador de contraste.",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "filho"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém Gideão lhes disse",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Filho é recusado.",
+        "c": "SENHOR é quem domina."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 8:27 faz?",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fez o éfode; e Israel se prostituiu"
+        },
+        {
+          "id": "b",
+          "text": "Fez o éfode; e ninguém tocou"
+        },
+        {
+          "id": "c",
+          "text": "Recusou o ouro; e Ofra fechou"
+        },
+        {
+          "id": "d",
+          "text": "Aceitou o trono; e houve idolatria"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo Israel se prostituiu ali após ele",
+      "feedbackCorrect": "Éfode e prostituição.",
+      "feedbackWrong": {
+        "b": "Há prostituição.",
+        "c": "Há ouro.",
+        "d": "Há recusa do trono."
+      },
+      "hint": "Leia o após.",
+      "learningObjective": "Compreender o laço.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do relato.",
+      "verseRef": "Juízes 8:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pedido de domínio e recusa"
+        },
+        {
+          "id": "b",
+          "text": "Ouro e éfode"
+        },
+        {
+          "id": "c",
+          "text": "Paz sob Gideão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Domina sobre nós",
+      "feedbackCorrect": "Pedido, éfode e paz.",
+      "feedbackWrong": {
+        "default": "Comece pelo pedido."
+      },
+      "hint": "O que fecha a paz?",
+      "learningObjective": "Ordenar o relato",
+      "evidence": [
+        "Juízes 8:22",
+        "Juízes 8:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 8:23, complete: o SENHOR ___ sobre vocês.",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "dominará"
+        },
+        {
+          "id": "b",
+          "text": "desaparecerá"
+        },
+        {
+          "id": "c",
+          "text": "calará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "Dominará.",
+      "feedbackWrong": {
+        "b": "Não é desaparecerá.",
+        "c": "Não é calará."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar dominará.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 8:27 a Salmos 106:36?",
+      "verseRef": "Juízes 8:27",
+      "passageA": {
+        "ref": "Juízes 8:27"
+      },
+      "passageB": {
+        "ref": "Salmos 106:36"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ídolos viram laço"
+        },
+        {
+          "id": "b",
+          "text": "Éfode sem risco"
+        },
+        {
+          "id": "c",
+          "text": "Paz sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "isso se tornou um laço",
+      "feedbackCorrect": "Laço idólatra.",
+      "feedbackWrong": {
+        "b": "Há risco.",
+        "c": "Há Deus."
+      },
+      "hint": "Compare o laço.",
+      "learningObjective": "Ligar ao Salmo.",
+      "evidence": [
+        "Juízes 8:27",
+        "Salmos 106:36"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 8:27, confessar o Senhor como rei torna o éfode inofensivo.",
+      "verseRef": "Juízes 8:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "isso se tornou um laço para Gideão e sua casa",
+      "feedbackCorrect": "O éfode virou laço.",
+      "feedbackWrong": {
+        "true": "Laço para a casa."
+      },
+      "hint": "Leia o resultado.",
+      "learningObjective": "Avaliar a contradição.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 8:27, toque o verbo da idolatria.",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "prostituiu"
+        },
+        {
+          "id": "b",
+          "text": "colocou"
+        },
+        {
+          "id": "c",
+          "text": "casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "todo Israel se prostituiu ali após ele",
+      "feedbackCorrect": "Prostituiu.",
+      "feedbackWrong": {
+        "b": "Colocou é o éfode.",
+        "c": "Casa sofre o laço."
+      },
+      "hint": "Veja o que Israel fez.",
+      "learningObjective": "Tocar prostituiu.",
+      "evidence": [
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une a confissão e o éfode?",
+      "verseRef": "Juízes 8:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "Confessa o Senhor; porém o éfode vira laço"
+        },
+        {
+          "id": "b",
+          "text": "A confissão cancela todo risco"
+        },
+        {
+          "id": "c",
+          "text": "O éfode prova fidelidade"
+        },
+        {
+          "id": "d",
+          "text": "Sem paz não há laço"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "Confissão e laço juntos.",
+      "feedbackWrong": {
+        "b": "Há risco.",
+        "c": "Há laço.",
+        "d": "Há paz."
+      },
+      "hint": "Una 8:23 e 8:27.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 8:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da tensão.",
+      "verseRef": "Juízes 8:27",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recusa o reinado humano"
+        },
+        {
+          "id": "b",
+          "text": "Faz o éfode com o ouro"
+        },
+        {
+          "id": "c",
+          "text": "Laço alcança a casa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "isso se tornou um laço para Gideão e sua casa",
+      "feedbackCorrect": "Recusa, éfode e laço.",
+      "feedbackWrong": {
+        "default": "Comece pela recusa."
+      },
+      "hint": "O que alcança a casa?",
+      "learningObjective": "Encadear a tensão",
+      "evidence": [
+        "Juízes 8:23",
+        "Juízes 8:27"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 8:22, complete: ___ sobre nós.",
+      "verseRef": "Juízes 8:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Domina"
+        },
+        {
+          "id": "b",
+          "text": "Foge"
+        },
+        {
+          "id": "c",
+          "text": "Cala"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Domina sobre nós",
+      "feedbackCorrect": "Domina.",
+      "feedbackWrong": {
+        "b": "Não é Foge.",
+        "c": "Não é Cala."
+      },
+      "hint": "Veja o imperativo.",
+      "learningObjective": "Lembrar Domina.",
+      "evidence": [
+        "Juízes 8:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 8:23 a 1 Samuel 8:7?",
+      "verseRef": "Juízes 8:23",
+      "passageA": {
+        "ref": "Juízes 8:23"
+      },
+      "passageB": {
+        "ref": "1 Samuel 8:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A mim me rejeitaram"
+        },
+        {
+          "id": "b",
+          "text": "Aceite o rei humano"
+        },
+        {
+          "id": "c",
+          "text": "Esqueça o Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o SENHOR dominará sobre vocês",
+      "feedbackCorrect": "Reinado do Senhor.",
+      "feedbackWrong": {
+        "b": "Não aceitar.",
+        "c": "Não esquecer."
+      },
+      "hint": "Compare o reinado.",
+      "learningObjective": "Ligar a Samuel.",
+      "evidence": [
+        "Juízes 8:23",
+        "1 Samuel 8:7"
+      ]
+    }
+  ]
+}

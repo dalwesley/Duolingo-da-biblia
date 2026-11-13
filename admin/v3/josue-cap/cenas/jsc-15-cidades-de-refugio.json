@@ -1,0 +1,918 @@
+{
+  "study": {
+    "slug": "jsc-15-cidades-de-refugio",
+    "passageRef": "Josué 20:1–6",
+    "passageText": "Então, o Senhor falou a Josué: Fala aos filhos de Israel, dizendo: Separem para vocês as cidades de refúgio, das quais lhes falei por meio de Moisés. Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue. E, fugindo para alguma dessas cidades, pôr-se-á à porta da cidade e exporá suas razões aos ouvidos dos anciãos daquela cidade; então, o acolherão na cidade e lhe darão um lugar para que habite entre eles. E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso. Ele habitará na mesma cidade até que seja julgado pela congregação ou até a morte do sumo sacerdote que houver naqueles dias; então o homicida retornará à sua cidade e à sua casa, à cidade de onde fugiu.",
+    "passages": [
+      {
+        "ref": "Josué 20:1–9",
+        "text": "Então, o Senhor falou a Josué: Fala aos filhos de Israel, dizendo: Separem para vocês as cidades de refúgio, das quais lhes falei por meio de Moisés. Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue. E, fugindo para alguma dessas cidades, pôr-se-á à porta da cidade e exporá suas razões aos ouvidos dos anciãos daquela cidade; então, o acolherão na cidade e lhe darão um lugar para que habite entre eles. E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso. Ele habitará na mesma cidade até que seja julgado pela congregação ou até a morte do sumo sacerdote que houver naqueles dias; então o homicida retornará à sua cidade e à sua casa, à cidade de onde fugiu. Então designaram, portanto, Quedes, na Galiléia, na região montanhosa de Naftali; Siquém, na região montanhosa de Efraim; e Quiriate-Arba, que é Hebrom, na região montanhosa de Judá. Além do Jordão, na altura de Jericó, para o oriente, designaram a Bezer, no deserto, na região da tribo de Rúben; a Ramote, em Gileade, da tribo de Gade; e a Golã, em Basã, da tribo de Manassés. Estas são as cidades que foram designadas para todos os filhos de Israel e para o estrangeiro que habitava entre eles; para que se refugiasse nelas todo aquele que ferisse alguém involuntariamente, a fim de que não morresse às mãos do vingador do sangue, até se apresentar diante da congregação."
+      }
+    ],
+    "context": "O Senhor manda separar cidades de refúgio para o homicida sem intenção, até o juízo da congregação.",
+    "keyword": "refúgio",
+    "keywordGloss": "Cidade que guarda a vida do homicida involuntário até o juízo.",
+    "focusQuestion": "Onde você precisa de um lugar que guarde a vida até que a justiça seja ouvida?",
+    "reflectionPrompts": [
+      "Cidades de refúgio",
+      "Vingador do sangue",
+      "Até o juízo"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor mandou separar cidades de refúgio.",
+        "evidenceRef": "Josué 20:2",
+        "evidenceSpan": "Separem para vocês as cidades de refúgio"
+      },
+      {
+        "text": "O homicida sem intenção pode fugir para ali.",
+        "evidenceRef": "Josué 20:3",
+        "evidenceSpan": "o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali"
+      },
+      {
+        "text": "Ele expõe suas razões aos anciãos à porta da cidade.",
+        "evidenceRef": "Josué 20:4",
+        "evidenceSpan": "pôr-se-á à porta da cidade e exporá suas razões aos ouvidos dos anciãos"
+      },
+      {
+        "text": "Não entregarão o homicida ao vingador do sangue.",
+        "evidenceRef": "Josué 20:5",
+        "evidenceSpan": "não entregarão nas mãos dele o homicida"
+      },
+      {
+        "text": "Habitará até ser julgado ou até a morte do sumo sacerdote.",
+        "evidenceRef": "Josué 20:6",
+        "evidenceSpan": "até que seja julgado pela congregação ou até a morte do sumo sacerdote"
+      },
+      {
+        "text": "As cidades servem a Israel e ao estrangeiro.",
+        "evidenceRef": "Josué 20:9",
+        "evidenceSpan": "para todos os filhos de Israel e para o estrangeiro"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "refúgio",
+        "gloss": "Abrigo legal para quem matou sem intenção."
+      },
+      {
+        "term": "vingador",
+        "gloss": "Parente que busca sangue; a cidade protege do alcance dele."
+      },
+      {
+        "term": "Para que",
+        "gloss": "Marca o propósito das cidades de refúgio."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ordem de separar cidades",
+        "evidenceRef": "Josué 20:1–2"
+      },
+      {
+        "label": "Propósito: fugir o homicida sem intenção",
+        "evidenceRef": "Josué 20:3"
+      },
+      {
+        "label": "Procedimento à porta e proteção",
+        "evidenceRef": "Josué 20:4–6"
+      },
+      {
+        "label": "Lista das cidades e alcance",
+        "evidenceRef": "Josué 20:7–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "Separem cidades para que o homicida sem intenção fuja.",
+        "marker": "Para que",
+        "evidenceRef": "Josué 20:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Não entregam porque feriu sem intenção.",
+        "marker": "pois",
+        "evidenceRef": "Josué 20:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Habita até o juízo ou a morte do sumo sacerdote.",
+        "marker": null,
+        "evidenceRef": "Josué 20:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Números 35:11–12",
+        "bridge": "Cidades de refúgio ordenadas",
+        "text": "Escolham para vocês cidades que sirvam de refúgio, para que ali se acolha o homicida que matar alguém involuntariamente. E essas cidades serão um refúgio para o vingador do sangue, para que o homicida não morra antes de ser apresentado à congregação para julgamento."
+      },
+      {
+        "ref": "Deuteronômio 19:4–5",
+        "bridge": "Homicídio sem intenção",
+        "text": "Este é o caso do homicida que se refugiar ali para que viva: aquele que matar o seu próximo sem querer, a quem não aborrecia antes. Como aquele que entrar com o seu próximo no bosque para cortar lenha, e, ao fazer força com o machado para derrubar a árvore, se o ferro se soltar do cabo e ferir seu próximo, causando a sua morte, essa pessoa se refugiará em uma dessas cidades e viverá."
+      },
+      {
+        "ref": "Hebreus 6:18",
+        "bridge": "Refúgio e esperança",
+        "text": "Para que, mediante duas coisas imutáveis, nas quais é impossível que Deus minta, tenhamos forte alento, nós que já corremos para o refúgio, a fim de agarrar a esperança que nos foi proposta;"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O refúgio serve a qualquer assassino de propósito.",
+        "why": "É para quem matou por engano, sem intenção."
+      },
+      {
+        "text": "A cidade entrega o fugitivo ao vingador na porta.",
+        "why": "Não entregarão nas mãos dele."
+      },
+      {
+        "text": "Só israelitas podem usar as cidades.",
+        "why": "Também o estrangeiro que habitava entre eles."
+      }
+    ],
+    "centralInsight": "O refúgio guarda a vida até o juízo: justiça e misericórdia na terra dada.",
+    "anchorQuestion": "Segundo Josué 20:3, quem pode fugir para as cidades de refúgio?",
+    "relatedVerses": [
+      {
+        "reference": "Números 35:11–12",
+        "reason": "Cidades de refúgio ordenadas"
+      },
+      {
+        "reference": "Deuteronômio 19:4–5",
+        "reason": "Homicídio sem intenção"
+      },
+      {
+        "reference": "Hebreus 6:18",
+        "reason": "Refúgio e esperança"
+      }
+    ]
+  },
+  "questions": [
+    {
+      "id": "josue-cap-sem-jsc-15-cidades-de-refugio-01",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "semente",
+      "type": "true_false",
+      "skill": "observe",
+      "question": "Em Josué 20:2, Israel deve separar cidades de refúgio.",
+      "prompt": "Em Josué 20:2, Israel deve separar cidades de refúgio.",
+      "cue": "Em Josué 20:2, Israel deve separar cidades de refúgio.",
+      "verseRef": "Josué 20:2",
+      "passageText": "Fala aos filhos de Israel, dizendo: Separem para vocês as cidades de refúgio, das quais lhes falei por meio de Moisés.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "Separem para vocês as cidades de refúgio",
+      "feedbackCorrect": "A ordem é separar cidades de refúgio.",
+      "feedbackWrong": {
+        "false": "O texto manda separar cidades de refúgio."
+      },
+      "hint": "Veja a ordem.",
+      "learningObjective": "Observar a ordem das cidades.",
+      "evidence": [
+        "Josué 20:2"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-15-cidades-de-refugio-02",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "skill": "observe",
+      "question": "Em Josué 20:3, toque o que o homicida sem intenção pode fazer.",
+      "prompt": "Em Josué 20:3, toque o que o homicida sem intenção pode fazer.",
+      "cue": "Em Josué 20:3, toque o que o homicida sem intenção pode fazer.",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "fugir"
+        },
+        {
+          "id": "b",
+          "text": "engano"
+        },
+        {
+          "id": "c",
+          "text": "pessoa"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Pode fugir para ali.",
+      "feedbackWrong": {
+        "b": "Engano descreve o modo.",
+        "c": "Pessoa é a vítima."
+      },
+      "hint": "Veja o verbo do propósito.",
+      "learningObjective": "Identificar a fuga.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-15-cidades-de-refugio-03",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "semente",
+      "type": "choice",
+      "skill": "observe",
+      "question": "Segundo Josué 20:5, o que a cidade não fará?",
+      "prompt": "Segundo Josué 20:5, o que a cidade não fará?",
+      "cue": "Segundo Josué 20:5, o que a cidade não fará?",
+      "verseRef": "Josué 20:5",
+      "passageText": "E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entregar o homicida ao vingador"
+        },
+        {
+          "id": "b",
+          "text": "Ouvir o fugitivo"
+        },
+        {
+          "id": "c",
+          "text": "Abrir a porta"
+        },
+        {
+          "id": "d",
+          "text": "Julgar nunca"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "não entregarão nas mãos dele o homicida",
+      "feedbackCorrect": "Não entregam ao vingador.",
+      "feedbackWrong": {
+        "b": "Há exposição aos anciãos.",
+        "c": "A porta recebe.",
+        "d": "Há juízo da congregação."
+      },
+      "hint": "Leia a proibição.",
+      "learningObjective": "Reconhecer a proteção.",
+      "evidence": [
+        "Josué 20:5"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-15-cidades-de-refugio-04",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "semente",
+      "type": "order",
+      "skill": "observe",
+      "question": "Monte Josué 20:3 na ordem do texto.",
+      "prompt": "Monte Josué 20:3 na ordem do texto.",
+      "cue": "Monte Josué 20:3 na ordem do texto.",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que o homicida que, por engano"
+        },
+        {
+          "id": "b",
+          "text": "matar alguma pessoa sem intenção"
+        },
+        {
+          "id": "c",
+          "text": "possa fugir para ali"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Propósito e refúgio.",
+      "feedbackWrong": {
+        "default": "Comece pelo Para que."
+      },
+      "hint": "O que abre o versículo?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-15-cidades-de-refugio-05",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "semente",
+      "type": "complete",
+      "skill": "observe",
+      "question": "Em Josué 20:2, complete: Separem para vocês as cidades de ___.",
+      "prompt": "Em Josué 20:2, complete: Separem para vocês as cidades de ___.",
+      "cue": "Em Josué 20:2, complete: Separem para vocês as cidades de ___.",
+      "verseRef": "Josué 20:2",
+      "passageText": "Fala aos filhos de Israel, dizendo: Separem para vocês as cidades de refúgio, das quais lhes falei por meio de Moisés.",
+      "template": "Fala aos filhos de Israel, dizendo: Separem para vocês as cidades de ___, das quais lhes falei por meio de Moisés.",
+      "options": [
+        {
+          "id": "a",
+          "text": "refúgio"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "ouro"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "cidades de refúgio",
+      "feedbackCorrect": "Cidades de refúgio.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "A palavra é refúgio."
+      },
+      "hint": "Veja o complemento de cidades.",
+      "learningObjective": "Lembrar refúgio.",
+      "evidence": [
+        "Josué 20:2"
+      ]
+    },
+    {
+      "id": "josue-cap-sem-jsc-15-cidades-de-refugio-06",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "semente",
+      "type": "connect",
+      "skill": "observe",
+      "question": "O que Josué 20:3 comunica que se liga a este contexto?",
+      "prompt": "O que Josué 20:3 comunica que se liga a este contexto?",
+      "cue": "O que Josué 20:3 comunica que se liga a este contexto?",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "passageA": {
+        "ref": "Josué 20:3",
+        "text": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue."
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor manda preparar lugares na terra dada."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fuga para preservar a vida"
+        },
+        {
+          "id": "b",
+          "text": "Vingança imediata na porta"
+        },
+        {
+          "id": "c",
+          "text": "Exílio forçado ao Egito"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "O refúgio guarda a vida.",
+      "feedbackWrong": {
+        "b": "Não é vingança imediata.",
+        "c": "Não é exílio ao Egito."
+      },
+      "hint": "Veja o propósito.",
+      "learningObjective": "Ligar a ordem ao refúgio.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-15-cidades-de-refugio-01",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "skill": "understand",
+      "question": "Em Josué 20:3, as cidades existem para punir de imediato todo homicida.",
+      "prompt": "Em Josué 20:3, as cidades existem para punir de imediato todo homicida.",
+      "cue": "Em Josué 20:3, as cidades existem para punir de imediato todo homicida.",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "false",
+      "correctAnswer": "false",
+      "evidenceSpan": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir",
+      "feedbackCorrect": "O propósito é fuga e refúgio, não punição imediata.",
+      "feedbackWrong": {
+        "true": "O Para que aponta para a fuga."
+      },
+      "hint": "Leia o Para que.",
+      "learningObjective": "Ver o propósito do refúgio.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-15-cidades-de-refugio-02",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "skill": "understand",
+      "question": "Em Josué 20:3, toque a expressão que marca o propósito das cidades.",
+      "prompt": "Em Josué 20:3, toque a expressão que marca o propósito das cidades.",
+      "cue": "Em Josué 20:3, toque a expressão que marca o propósito das cidades.",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Para que"
+        },
+        {
+          "id": "b",
+          "text": "engano"
+        },
+        {
+          "id": "c",
+          "text": "refúgio"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "Para que o homicida",
+      "feedbackCorrect": "Para que introduz o propósito.",
+      "feedbackWrong": {
+        "b": "Engano descreve o ato.",
+        "c": "Refúgio é o resultado."
+      },
+      "hint": "Olhe o início do versículo.",
+      "learningObjective": "Tocar o marcador de propósito.",
+      "evidence": [
+        "Josué 20:3"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-15-cidades-de-refugio-03",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "caminhada",
+      "type": "choice",
+      "skill": "understand",
+      "question": "Que relação há entre proteção e juízo?",
+      "prompt": "Que relação há entre proteção e juízo?",
+      "cue": "Que relação há entre proteção e juízo?",
+      "verseRef": "Josué 20:5–6",
+      "passageText": "E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso. Ele habitará na mesma cidade até que seja julgado pela congregação ou até a morte do sumo sacerdote que houver naqueles dias; então o homicida retornará à sua cidade e à sua casa, à cidade de onde fugiu.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Protege agora; julga depois a congregação"
+        },
+        {
+          "id": "b",
+          "text": "Entrega já ao vingador"
+        },
+        {
+          "id": "c",
+          "text": "Liberta sem qualquer juízo"
+        },
+        {
+          "id": "d",
+          "text": "Expulsa o estrangeiro"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "Proteção temporária até o juízo.",
+      "feedbackWrong": {
+        "b": "Não entregam ao vingador.",
+        "c": "Há juízo.",
+        "d": "O estrangeiro também entra."
+      },
+      "hint": "Leia até que.",
+      "learningObjective": "Compreender proteção e juízo.",
+      "evidence": [
+        "Josué 20:5–6"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-15-cidades-de-refugio-04",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "caminhada",
+      "type": "order",
+      "skill": "understand",
+      "question": "Ordene os movimentos do trecho.",
+      "prompt": "Ordene os movimentos do trecho.",
+      "cue": "Ordene os movimentos do trecho.",
+      "verseRef": "Josué 20:2",
+      "passageText": "Fala aos filhos de Israel, dizendo: Separem para vocês as cidades de refúgio, das quais lhes falei por meio de Moisés.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordem de separar cidades"
+        },
+        {
+          "id": "b",
+          "text": "Propósito: fugir o homicida sem intenção"
+        },
+        {
+          "id": "c",
+          "text": "Lista das cidades e alcance"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "Separem para vocês as cidades de refúgio",
+      "feedbackCorrect": "Ordem, propósito e lista.",
+      "feedbackWrong": {
+        "default": "Comece pela ordem."
+      },
+      "hint": "O que o Senhor manda primeiro?",
+      "learningObjective": "Ordenar a sequência da cena",
+      "evidence": [
+        "Josué 20:1",
+        "Josué 20:9"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-15-cidades-de-refugio-05",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "caminhada",
+      "type": "complete",
+      "skill": "understand",
+      "question": "Em Josué 20:5, complete: não entregarão nas mãos dele o ___.",
+      "prompt": "Em Josué 20:5, complete: não entregarão nas mãos dele o ___.",
+      "cue": "Em Josué 20:5, complete: não entregarão nas mãos dele o ___.",
+      "verseRef": "Josué 20:5",
+      "passageText": "E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso.",
+      "template": "E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o ___, pois ele feriu a seu próximo sem intenção e não o odiava antes disso.",
+      "options": [
+        {
+          "id": "a",
+          "text": "homicida"
+        },
+        {
+          "id": "b",
+          "text": "vingador"
+        },
+        {
+          "id": "c",
+          "text": "ancião"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "não entregarão nas mãos dele o homicida",
+      "feedbackCorrect": "O homicida.",
+      "feedbackWrong": {
+        "b": "Vingador é quem alcança.",
+        "c": "A palavra é homicida."
+      },
+      "hint": "Veja o objeto de entregarão.",
+      "learningObjective": "Lembrar quem é protegido.",
+      "evidence": [
+        "Josué 20:5"
+      ]
+    },
+    {
+      "id": "josue-cap-cam-jsc-15-cidades-de-refugio-06",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "caminhada",
+      "type": "connect",
+      "skill": "understand",
+      "question": "O que liga Josué 20:3 a Números 35:11–12?",
+      "prompt": "O que liga Josué 20:3 a Números 35:11–12?",
+      "cue": "O que liga Josué 20:3 a Números 35:11–12?",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "passageA": {
+        "ref": "Josué 20:3",
+        "text": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue."
+      },
+      "passageB": {
+        "ref": "Números 35:11–12",
+        "text": "Escolham para vocês cidades que sirvam de refúgio, para que ali se acolha o homicida que matar alguém involuntariamente. E essas cidades serão um refúgio para o vingador do sangue, para que o homicida não morra antes de ser apresentado à congregação para julgamento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio ordenadas"
+        },
+        {
+          "id": "b",
+          "text": "Vingança sem limite"
+        },
+        {
+          "id": "c",
+          "text": "Altar em vez de cidade"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Nos dois textos há fuga para refúgio.",
+      "feedbackWrong": {
+        "b": "O elo é o refúgio.",
+        "c": "Há proteção."
+      },
+      "hint": "Compare a ordem do refúgio.",
+      "learningObjective": "Ligar a Josué a Números.",
+      "evidence": [
+        "Josué 20:3",
+        "Números 35:11–12"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-15-cidades-de-refugio-01",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "skill": "interpret",
+      "question": "Em Josué 20:3–6, o refúgio até o juízo sustenta justiça e misericórdia na terra dada.",
+      "prompt": "Em Josué 20:3–6, o refúgio até o juízo sustenta justiça e misericórdia na terra dada.",
+      "cue": "Em Josué 20:3–6, o refúgio até o juízo sustenta justiça e misericórdia na terra dada.",
+      "verseRef": "Josué 20:6",
+      "passageText": "Ele habitará na mesma cidade até que seja julgado pela congregação ou até a morte do sumo sacerdote que houver naqueles dias; então o homicida retornará à sua cidade e à sua casa, à cidade de onde fugiu.",
+      "options": [
+        {
+          "id": "true",
+          "text": "Verdadeiro"
+        },
+        {
+          "id": "false",
+          "text": "Falso"
+        }
+      ],
+      "correctOptionId": "true",
+      "correctAnswer": "true",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "Proteção e juízo juntos.",
+      "feedbackWrong": {
+        "false": "O texto une fuga e juízo."
+      },
+      "hint": "Una 20:3 e 20:6.",
+      "learningObjective": "Avaliar a leitura do refúgio.",
+      "evidence": [
+        "Josué 20:3–6"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-15-cidades-de-refugio-02",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "skill": "interpret",
+      "question": "Em Josué 20:6, toque o trecho que sustenta o limite da permanência.",
+      "prompt": "Em Josué 20:6, toque o trecho que sustenta o limite da permanência.",
+      "cue": "Em Josué 20:6, toque o trecho que sustenta o limite da permanência.",
+      "verseRef": "Josué 20:6",
+      "passageText": "Ele habitará na mesma cidade até que seja julgado pela congregação ou até a morte do sumo sacerdote que houver naqueles dias; então o homicida retornará à sua cidade e à sua casa, à cidade de onde fugiu.",
+      "options": [
+        {
+          "id": "a",
+          "text": "julgado"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "habitará"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "O juízo limita a estadia.",
+      "feedbackWrong": {
+        "b": "Cidade é o lugar.",
+        "c": "Habitará é a ação."
+      },
+      "hint": "Veja o até que.",
+      "learningObjective": "Tocar o que sustenta o limite.",
+      "evidence": [
+        "Josué 20:6"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-15-cidades-de-refugio-03",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "profundezas",
+      "type": "choice",
+      "skill": "interpret",
+      "question": "Qual leitura melhor expressa o trecho?",
+      "prompt": "Qual leitura melhor expressa o trecho?",
+      "cue": "Qual leitura melhor expressa o trecho?",
+      "verseRef": "Josué 20:6",
+      "passageText": "Ele habitará na mesma cidade até que seja julgado pela congregação ou até a morte do sumo sacerdote que houver naqueles dias; então o homicida retornará à sua cidade e à sua casa, à cidade de onde fugiu.",
+      "options": [
+        {
+          "id": "a",
+          "text": "O refúgio guarda a vida até o juízo"
+        },
+        {
+          "id": "b",
+          "text": "O refúgio cancela qualquer juízo"
+        },
+        {
+          "id": "c",
+          "text": "Só o vingador decide na porta"
+        },
+        {
+          "id": "d",
+          "text": "Estrangeiros ficam de fora"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "até que seja julgado pela congregação",
+      "feedbackCorrect": "Misericórdia com juízo.",
+      "feedbackWrong": {
+        "b": "Há juízo.",
+        "c": "A cidade não entrega ao vingador.",
+        "d": "O estrangeiro entra."
+      },
+      "hint": "Una fuga e juízo.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 20:1–9"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-15-cidades-de-refugio-04",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "profundezas",
+      "type": "order",
+      "skill": "interpret",
+      "question": "Ordene o encadeamento do refúgio.",
+      "prompt": "Ordene o encadeamento do refúgio.",
+      "cue": "Ordene o encadeamento do refúgio.",
+      "verseRef": "Josué 20:3",
+      "passageText": "Para que o homicida que, por engano, matar alguma pessoa sem intenção, possa fugir para ali; esses lugares serão refúgio contra o vingador do sangue.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Homicida sem intenção foge"
+        },
+        {
+          "id": "b",
+          "text": "Anciãos ouvem e protegem"
+        },
+        {
+          "id": "c",
+          "text": "Permanece até o juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "correctAnswer": "a,b,c",
+      "evidenceSpan": "possa fugir para ali",
+      "feedbackCorrect": "Fuga, acolhida e juízo.",
+      "feedbackWrong": {
+        "default": "Comece pela fuga."
+      },
+      "hint": "O que vem primeiro?",
+      "learningObjective": "Encadear misericórdia e juízo",
+      "evidence": [
+        "Josué 20:3",
+        "Josué 20:6"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-15-cidades-de-refugio-05",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "profundezas",
+      "type": "complete",
+      "skill": "interpret",
+      "question": "Em Josué 20:5, complete: se o ___ do sangue o alcançar.",
+      "prompt": "Em Josué 20:5, complete: se o ___ do sangue o alcançar.",
+      "cue": "Em Josué 20:5, complete: se o ___ do sangue o alcançar.",
+      "verseRef": "Josué 20:5",
+      "passageText": "E, se o vingador do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso.",
+      "template": "E, se o ___ do sangue o alcançar, não entregarão nas mãos dele o homicida, pois ele feriu a seu próximo sem intenção e não o odiava antes disso.",
+      "options": [
+        {
+          "id": "a",
+          "text": "vingador"
+        },
+        {
+          "id": "b",
+          "text": "sacerdote"
+        },
+        {
+          "id": "c",
+          "text": "rei"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "se o vingador do sangue o alcançar",
+      "feedbackCorrect": "Vingador.",
+      "feedbackWrong": {
+        "b": "Não é sacerdote.",
+        "c": "A palavra é vingador."
+      },
+      "hint": "Veja quem alcança.",
+      "learningObjective": "Lembrar o termo vingador.",
+      "evidence": [
+        "Josué 20:5"
+      ]
+    },
+    {
+      "id": "josue-cap-pro-jsc-15-cidades-de-refugio-06",
+      "trail": "josue-cap",
+      "section": "jsc-15-cidades-de-refugio",
+      "difficulty": "profundezas",
+      "type": "connect",
+      "skill": "interpret",
+      "question": "O que liga Josué 20:9 a Hebreus 6:18?",
+      "prompt": "O que liga Josué 20:9 a Hebreus 6:18?",
+      "cue": "O que liga Josué 20:9 a Hebreus 6:18?",
+      "verseRef": "Josué 20:9",
+      "passageText": "Estas são as cidades que foram designadas para todos os filhos de Israel e para o estrangeiro que habitava entre eles; para que se refugiasse nelas todo aquele que ferisse alguém involuntariamente, a fim de que não morresse às mãos do vingador do sangue, até se apresentar diante da congregação.",
+      "passageA": {
+        "ref": "Josué 20:9",
+        "text": "Estas são as cidades que foram designadas para todos os filhos de Israel e para o estrangeiro que habitava entre eles; para que se refugiasse nelas todo aquele que ferisse alguém involuntariamente, a fim de que não morresse às mãos do vingador do sangue, até se apresentar diante da congregação."
+      },
+      "passageB": {
+        "ref": "Hebreus 6:18",
+        "text": "Para que, mediante duas coisas imutáveis, nas quais é impossível que Deus minta, tenhamos forte alento, nós que já corremos para o refúgio, a fim de agarrar a esperança que nos foi proposta;"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Refúgio e esperança"
+        },
+        {
+          "id": "b",
+          "text": "Vingança sem abrigo"
+        },
+        {
+          "id": "c",
+          "text": "Juízo sem misericórdia"
+        }
+      ],
+      "correctOptionId": "a",
+      "correctAnswer": "a",
+      "evidenceSpan": "para todos os filhos de Israel e para o estrangeiro",
+      "feedbackCorrect": "O tema do refúgio ecoa na esperança.",
+      "feedbackWrong": {
+        "b": "O elo é refúgio.",
+        "c": "Há abrigo."
+      },
+      "hint": "Pense em buscar refúgio.",
+      "learningObjective": "Ligar as cidades a Hebreus.",
+      "evidence": [
+        "Josué 20:9",
+        "Hebreus 6:18"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,919 @@
+{
+  "study": {
+    "passageRef": "Números 32:1–2",
+    "passages": [
+      {
+        "ref": "Números 32:1–2"
+      },
+      {
+        "ref": "Números 34:1–6"
+      },
+      {
+        "ref": "Números 35:9–12"
+      },
+      {
+        "ref": "Números 36:1–5"
+      }
+    ],
+    "context": "Cena de Travessia: Herança: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Herança",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Os filhos de Rúben e os filhos de.",
+        "evidenceRef": "Números 32:1",
+        "evidenceSpan": "Os filhos de Rúben e os filhos de"
+      },
+      {
+        "text": "Porém Moisés disse aos filhos de Gade e.",
+        "evidenceRef": "Números 32:6",
+        "evidenceSpan": "Porém Moisés disse aos filhos de Gade e"
+      },
+      {
+        "text": "O Senhor disse a Moisés.",
+        "evidenceRef": "Números 34:1",
+        "evidenceSpan": "O Senhor disse a Moisés"
+      },
+      {
+        "text": "O mar Grande será o vosso limite ocidental.",
+        "evidenceRef": "Números 34:6",
+        "evidenceSpan": "O mar Grande será o vosso limite ocidental"
+      },
+      {
+        "text": "O Senhor disse a Moisés.",
+        "evidenceRef": "Números 35:9",
+        "evidenceSpan": "O Senhor disse a Moisés"
+      },
+      {
+        "text": "E essas cidades serão um refúgio para o.",
+        "evidenceRef": "Números 35:12",
+        "evidenceSpan": "E essas cidades serão um refúgio para o"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "terra",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Os filhos de rúben",
+        "evidenceRef": "Números 32:1"
+      },
+      {
+        "label": "Porém moisés disse aos filhos",
+        "evidenceRef": "Números 32:6"
+      },
+      {
+        "label": "O senhor disse a moisés",
+        "evidenceRef": "Números 34:1"
+      },
+      {
+        "label": "O mar grande será o vosso",
+        "evidenceRef": "Números 34:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Porém\".",
+        "marker": "Porém",
+        "evidenceRef": "Números 32:6"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"antes\".",
+        "marker": "antes",
+        "evidenceRef": "Números 35:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Números 36:1"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Josué 20:2–3",
+        "bridge": "Cidades de refúgio"
+      },
+      {
+        "ref": "Deuteronômio 10:8",
+        "bridge": "Levi separado para servir"
+      },
+      {
+        "ref": "João 3:14",
+        "bridge": "Serpente levantada"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Deus cuida da terra e da justiça entre as tribos",
+    "anchorQuestion": "O que Números 32:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 32:1, o texto inclui Os filhos de Rúben e os filhos de.",
+      "verseRef": "Números 32:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Os filhos de Rúben e os filhos de",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 32:1 afirma.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 32:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Números 32:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "filhos"
+        },
+        {
+          "id": "b",
+          "text": "Rúben"
+        },
+        {
+          "id": "c",
+          "text": "Gade"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "filhos",
+      "feedbackCorrect": "O versículo destaca filhos.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 34:1, o que o texto apresenta com clareza.",
+      "verseRef": "Números 34:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor dirige a palavra a Moisés"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor disse a Moisés",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 34:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 32:6 na ordem do texto.",
+      "verseRef": "Números 32:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém Moisés disse aos"
+        },
+        {
+          "id": "b",
+          "text": "filhos de Gade"
+        },
+        {
+          "id": "c",
+          "text": "aos filhos de Rúben"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porém Moisés disse aos",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Números 32:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 34:6, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grande"
+        },
+        {
+          "id": "b",
+          "text": "filhos"
+        },
+        {
+          "id": "c",
+          "text": "Rúben"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Grande",
+      "feedbackCorrect": "A palavra do versículo é Grande.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 34:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 32:1 comunica que se liga a este contexto.",
+      "verseRef": "Números 32:1",
+      "passageA": {
+        "ref": "Números 32:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Herança: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 36:1, toque outra palavra central do trecho.",
+      "verseRef": "Números 36:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "chegaram"
+        },
+        {
+          "id": "c",
+          "text": "os"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "O trecho destaca Então.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Números 36:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 32:1 na ordem do texto.",
+      "verseRef": "Números 32:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "filhos de Rúben"
+        },
+        {
+          "id": "b",
+          "text": "e os filhos"
+        },
+        {
+          "id": "c",
+          "text": "Gade possuíam uma quantidade muitíssimo imensa de gado e contemplaram"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "filhos de Rúben",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 32:6, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Números 32:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 32:6 afirma.",
+      "evidence": [
+        "Números 32:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 32:6, toque a palavra que marca a relação no texto.",
+      "verseRef": "Números 32:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém",
+      "feedbackCorrect": "O versículo destaca Porém.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 32:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Números 34:6, o que o texto apresenta com clareza.",
+      "verseRef": "Números 34:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: o mar Grande será o vosso limite ocidental"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O mar Grande será o vosso limite ocidental",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 34:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Números 32:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os filhos de rúben"
+        },
+        {
+          "id": "b",
+          "text": "Porém moisés disse aos filhos"
+        },
+        {
+          "id": "c",
+          "text": "O senhor disse a moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 34:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 34:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "filhos"
+        },
+        {
+          "id": "c",
+          "text": "Rúben"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é Senhor.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 34:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 32:1 a Josué 20:2–3.",
+      "verseRef": "Números 32:1",
+      "passageA": {
+        "ref": "Números 32:1"
+      },
+      "passageB": {
+        "ref": "Josué 20:2–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Cidades de refúgio"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 36:5, toque outra palavra central do trecho.",
+      "verseRef": "Números 36:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "deu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés",
+      "feedbackCorrect": "O trecho destaca Moisés.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Números 36:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Números 32:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Números 32:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Números 32:2",
+      "correctOptionId": "false",
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 32:2 afirma.",
+      "evidence": [
+        "Números 32:2"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 35:12, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Números 35:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "essas"
+        },
+        {
+          "id": "b",
+          "text": "cidades"
+        },
+        {
+          "id": "c",
+          "text": "refúgio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "essas",
+      "feedbackCorrect": "O versículo destaca essas.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 35:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Números 35:9, o que o texto apresenta com clareza.",
+      "verseRef": "Números 35:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto afirma que o Senhor disse a Moisés:"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor disse a Moisés",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 35:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Números 32:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 35:9, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 35:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "filhos"
+        },
+        {
+          "id": "c",
+          "text": "Rúben"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "disse",
+      "feedbackCorrect": "A palavra do versículo é disse.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 35:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 32:1 a Deuteronômio 10:8.",
+      "verseRef": "Números 32:1",
+      "passageA": {
+        "ref": "Números 32:1"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 10:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Levi separado para servir"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Os",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 32:1, toque outra palavra central do trecho.",
+      "verseRef": "Números 32:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rúben"
+        },
+        {
+          "id": "b",
+          "text": "Os"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Rúben",
+      "feedbackCorrect": "O trecho destaca Rúben.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Números 32:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento ligado a Números 32:3.",
+      "verseRef": "Números 32:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Atarote",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Números 32:3"
+      ]
+    }
+  ]
+}

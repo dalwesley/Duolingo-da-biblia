@@ -1,0 +1,308 @@
+{
+  "slug": "numeros-cap",
+  "prefix": "nmc",
+  "book": "Números",
+  "chapters": 36,
+  "title": "Números",
+  "description": "Números capítulo a capítulo: o povo no deserto, entre murmuração e promessa.",
+  "icon": "⛺",
+  "color": "#6B8F71",
+  "order": 5,
+  "realm": "antigo-testamento",
+  "category": "pentateuco",
+  "avoidTrails": ["numeros"],
+  "modules": [
+    {
+      "title": "Acampamento · cap. 1–6",
+      "scenes": [
+        {
+          "ref": "Números 1:47–54",
+          "chapters": "1–2",
+          "title": "Os levitas à parte",
+          "intro": "Os levitas não entram no censo de guerra; cuidam do tabernáculo no meio do povo.",
+          "insight": "Deus separa gente para guardar a sua habitação enquanto o povo se organiza.",
+          "objective": "Guardar a habitação de Deus"
+        },
+        {
+          "ref": "Números 3:5–13",
+          "chapters": "3–4",
+          "title": "Em lugar dos primogênitos",
+          "intro": "O Senhor toma os levitas em lugar de todo primogênito de Israel.",
+          "insight": "O serviço santo substitui o que era devido: os levitas são do Senhor.",
+          "objective": "Pertencer ao Senhor"
+        },
+        {
+          "ref": "Números 5:5–10",
+          "title": "Restituir o dano",
+          "intro": "Quem prejudica o próximo confessa, restitui e acrescenta a quinta parte.",
+          "insight": "A culpa contra o irmão se trata com confissão e reparo concreto.",
+          "objective": "Confessar e restituir"
+        },
+        {
+          "ref": "Números 6:22–27",
+          "title": "A bênção de Áarão",
+          "intro": "O Senhor ensina Áarão a abençoar Israel com o nome dele sobre o povo.",
+          "insight": "O Senhor abençoa e guarda; faz resplandecer o rosto e dá a paz.",
+          "objective": "O nome que abençoa"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Acampamento",
+        "intro": "Revise os levitas, os primogênitos, a restituição e a bênção.",
+        "insight": "Deus organiza o povo em torno da sua presença"
+      }
+    },
+    {
+      "title": "Dedicação e partida · cap. 7–10",
+      "scenes": [
+        {
+          "ref": "Números 7:84–89",
+          "title": "Voz sobre a arca",
+          "intro": "Terminadas as ofertas dos príncipes, Moisés ouve a voz de cima do propiciatório.",
+          "insight": "Depois da generosidade das tribos, o Senhor fala a Moisés da arca.",
+          "objective": "Deus fala no santuário"
+        },
+        {
+          "ref": "Números 8:5–14",
+          "title": "Levitas apresentados",
+          "intro": "Os levitas são purificados, e toda a congregação impõe as mãos sobre eles.",
+          "insight": "O povo participa da consagração: os levitas são oferta ao Senhor.",
+          "objective": "Consagrados pelo povo"
+        },
+        {
+          "ref": "Números 9:1–5",
+          "title": "Páscoa no deserto",
+          "intro": "No primeiro mês, o povo celebra a Páscoa em Sinai, como o Senhor ordenou.",
+          "insight": "Mesmo no deserto, Israel lembra a libertação com a festa do Senhor.",
+          "objective": "Lembrar a libertação"
+        },
+        {
+          "ref": "Números 10:29–36",
+          "title": "Vem conosco",
+          "intro": "Moisés convida Hobabe; a arca parte, e ele clama que o Senhor se levante.",
+          "insight": "A jornada precisa de guia humano e da presença que vai à frente.",
+          "objective": "Partir com o Senhor"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Dedicação e partida",
+        "intro": "Revise a voz na arca, os levitas, a Páscoa e a partida.",
+        "insight": "Consagrados, o povo segue a presença de Deus"
+      }
+    },
+    {
+      "title": "Queixas no deserto · cap. 11–14",
+      "scenes": [
+        {
+          "ref": "Números 11:1–9",
+          "title": "O maná enjoa",
+          "intro": "O povo chora por carne e lembra o Egito; o maná cai como semente de coentro.",
+          "insight": "A murmuração despreza o pão do céu e romantiza a escravidão.",
+          "objective": "Não desprezar o maná"
+        },
+        {
+          "ref": "Números 12:1–10",
+          "title": "Contra Moisés",
+          "intro": "Miriã e Áarão falam contra Moisés por causa da mulher cuchita; o Senhor desce.",
+          "insight": "Deus defende o seu servo humilde; a lepra ensina a não falar contra ele.",
+          "objective": "Não falar contra o servo"
+        },
+        {
+          "ref": "Números 13:17–29",
+          "title": "O relatório dos espias",
+          "intro": "Moisés manda ver a terra; eles voltam com uvas e com medo dos gigantes.",
+          "insight": "A terra é boa, mas o medo fala mais alto que a promessa.",
+          "objective": "Ver a terra com fé"
+        },
+        {
+          "ref": "Números 14:1–10",
+          "title": "Queremos outro chefe",
+          "intro": "A noite se enche de choro; o povo quer voltar ao Egito, e Josué e Calebe rasgam as vestes.",
+          "insight": "A incredulidade prefere a escravidão; só dois confiam que o Senhor é capaz.",
+          "objective": "Confiar apesar do medo"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Queixas no deserto",
+        "intro": "Revise o maná, Miriã, os espias e a rebelião.",
+        "insight": "Murmurar custa caro; a fé enxerga a promessa"
+      }
+    },
+    {
+      "title": "Corá e o sacerdócio · cap. 15–19",
+      "scenes": [
+        {
+          "ref": "Números 15:37–41",
+          "title": "As franjas da memória",
+          "intro": "O Senhor manda pôr franjas nas vestes para lembrar os mandamentos.",
+          "insight": "Um sinal no corpo ajuda a não seguir o coração e os olhos para longe de Deus.",
+          "objective": "Lembrar os mandamentos"
+        },
+        {
+          "ref": "Números 16:1–7",
+          "title": "Basta-vos",
+          "intro": "Corá e os seus desafiam Moisés e Áarão: toda a congregação é santa.",
+          "insight": "Querer o sacerdócio sem chamado é se levantar contra o próprio Senhor.",
+          "objective": "Respeitar o chamado de Deus"
+        },
+        {
+          "ref": "Números 17:1–8",
+          "title": "A vara que floresce",
+          "intro": "Cada tribo põe uma vara; de manhã a de Áarão brota, floresce e dá amêndoas.",
+          "insight": "Deus confirma o escolhido com vida onde só havia madeira seca.",
+          "objective": "Deus confirma o escolhido"
+        },
+        {
+          "ref": "Números 18:1–7",
+          "title": "Levai a iniquidade",
+          "intro": "Áarão e os filhos carregam a culpa ligada ao santuário; o estranho não se chega.",
+          "insight": "O serviço santo é dádiva e peso: só quem foi chamado se chega ao altar.",
+          "objective": "Serviço que é dádiva"
+        },
+        {
+          "ref": "Números 19:1–10",
+          "title": "A novilha vermelha",
+          "intro": "Uma novilha sem defeito é queimada fora do arraial para a água da purificação.",
+          "insight": "Há limpeza para o que toca a morte: o Senhor abre caminho de volta ao puro.",
+          "objective": "Purificação da morte"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Corá e o sacerdócio",
+        "intro": "Revise as franjas, Corá, a vara, o serviço e a novilha.",
+        "insight": "Deus guarda o santo e confirma quem ele escolhe"
+      }
+    },
+    {
+      "title": "Água, serpente e Balaão · cap. 20–25",
+      "scenes": [
+        {
+          "ref": "Números 20:1–13",
+          "title": "Águas de Meribá",
+          "intro": "O povo briga por água; Moisés fere a rocha duas vezes e ouve a sentença de Deus.",
+          "insight": "A água sai, mas Moisés não santificou o Senhor diante do povo.",
+          "objective": "Santificar a Deus em público"
+        },
+        {
+          "ref": "Números 21:21–31",
+          "title": "Vitória sobre Seom",
+          "intro": "Israel pede passagem em paz; Seom sai à guerra e perde a terra até o Arnom.",
+          "insight": "O Senhor entrega o inimigo que se opõe ao caminho do povo.",
+          "objective": "Deus dá a vitória"
+        },
+        {
+          "ref": "Números 22:1–12",
+          "title": "Balaque chama Balaão",
+          "intro": "Moabe teme Israel e manda chamar Balaão para amaldiçoar; Deus diz: não irás.",
+          "insight": "Deus não deixa amaldiçoar o povo que ele abençoou.",
+          "objective": "Bênção que ninguém vira"
+        },
+        {
+          "ref": "Números 23:18–24",
+          "title": "Deus não é homem",
+          "intro": "Balaão toma a palavra e declara que Deus não mente nem se arrepende assim.",
+          "insight": "Não se pode revogar a bênção do Senhor: ele fez e cumprirá.",
+          "objective": "A palavra de Deus permanece"
+        },
+        {
+          "ref": "Números 24:15–19",
+          "title": "A estrela de Jacó",
+          "intro": "Balaão vê de longe: uma estrela sai de Jacó, e um cetro se levanta de Israel.",
+          "insight": "Até a boca do adivinho anuncia o rei que virá de Jacó.",
+          "objective": "Esperar a estrela"
+        },
+        {
+          "ref": "Números 25:6–13",
+          "title": "O zelo de Fineias",
+          "intro": "Fineias atravessa a tenda com a lança; Deus faz com ele aliança de paz.",
+          "insight": "O zelo pelo Senhor detém a praga e recebe uma aliança de sacerdócio perpétuo.",
+          "objective": "Zelo que detém a praga"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Água, serpente e Balaão",
+        "intro": "Revise Meribá, Seom, Balaão, a estrela e Fineias.",
+        "insight": "Deus disciplina, abençoa e zela pelo seu povo"
+      }
+    },
+    {
+      "title": "Nova geração · cap. 26–31",
+      "scenes": [
+        {
+          "ref": "Números 27:1–11",
+          "chapters": "26–27",
+          "title": "As filhas de Zelofeade",
+          "intro": "Cinco irmãs pedem herança porque o pai morreu sem filhos; Moisés consulta o Senhor.",
+          "insight": "O Senhor ouve as filhas e garante herança também quando não há filho homem.",
+          "objective": "Justiça para as filhas"
+        },
+        {
+          "ref": "Números 28:1–8",
+          "chapters": "28–29",
+          "title": "Oferta de cada dia",
+          "intro": "O Senhor repete o holocausto contínuo da manhã e da tarde, com vinho.",
+          "insight": "A nova geração também vive de culto diário perante o Senhor.",
+          "objective": "Culto de manhã e à tarde"
+        },
+        {
+          "ref": "Números 30:1–8",
+          "title": "Votos e palavra",
+          "intro": "O Senhor regula o voto do homem e da mulher sob a autoridade do pai ou do marido.",
+          "insight": "A palavra diante de Deus pesa; há ordem para proteger e para cumprir.",
+          "objective": "Cumprir a palavra dada"
+        },
+        {
+          "ref": "Números 31:1–12",
+          "title": "Guerra contra Midiã",
+          "intro": "O Senhor manda vingar Israel de Midiã; o povo vence e traz o despojo.",
+          "insight": "A guerra cumpre a sentença de Deus contra quem seduziu Israel.",
+          "objective": "Cumprir a sentença de Deus"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Nova geração",
+        "intro": "Revise as filhas, o culto diário, os votos e Midiã.",
+        "insight": "A nova geração recebe justiça, culto e missão"
+      }
+    },
+    {
+      "title": "Herança · cap. 32–36",
+      "scenes": [
+        {
+          "ref": "Números 32:1–12",
+          "title": "Deste lado do Jordão",
+          "intro": "Rúben e Gade pedem terra antes do Jordão; Moisés lembra o pecado de Cades.",
+          "insight": "Pedir descanso cedo demais pode desanimar os irmãos na conquista.",
+          "objective": "Não desanimar os irmãos"
+        },
+        {
+          "ref": "Números 34:1–12",
+          "chapters": "33–34",
+          "title": "Os limites da terra",
+          "intro": "O Senhor descreve as fronteiras de Canaã, do Neguebe ao Líbano e ao Jordão.",
+          "insight": "A herança tem limites dados por Deus, não inventados pelo povo.",
+          "objective": "A terra que Deus delimita"
+        },
+        {
+          "ref": "Números 35:9–15",
+          "title": "Cidades de refúgio",
+          "intro": "Seis cidades recebem quem matou sem intenção, até o juízo perante a congregação.",
+          "insight": "Há lugar de proteção para o inocente do homicídio culposo.",
+          "objective": "Refúgio para o inocente"
+        },
+        {
+          "ref": "Números 36:1–9",
+          "title": "Herança na tribo",
+          "intro": "Os chefes de Manassés temem perder terra se as filhas casarem fora; Deus responde.",
+          "insight": "A herança permanece na tribo: justiça às filhas sem perder a ordem da terra.",
+          "objective": "Guardar a herança"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Herança",
+        "intro": "Revise o pedido de Rúben, os limites, o refúgio e as filhas.",
+        "insight": "Deus cuida da terra e da justiça entre as tribos"
+      }
+    }
+  ]
+}

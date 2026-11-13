@@ -1,0 +1,711 @@
+{
+ "study": {
+  "passageRef": "Atos 2:1–6",
+  "passages": [
+   {
+    "ref": "Atos 2:1–6"
+   },
+   {
+    "ref": "Atos 2:7–8"
+   }
+  ],
+  "context": "Os discípulos estavam reunidos em Jerusalém no dia de Pentecostes, festa judaica. De repente, o Espírito Santo desce com sinais claros.",
+  "keyword": "Espírito Santo",
+  "keywordGloss": "A presença de Deus que enche o grupo e concede falar em outras línguas.",
+  "focusQuestion": "Onde você precisa ouvir as grandezas de Deus na língua da sua vida?",
+  "reflectionPrompts": [
+   "O Espírito vem",
+   "Cheios para falar",
+   "Cada língua ouve"
+  ],
+  "facts": [
+   {
+    "text": "No dia de Pentecostes, todos estavam reunidos no mesmo lugar.",
+    "evidenceRef": "Atos 2:1",
+    "evidenceSpan": "todos estavam reunidos no mesmo lugar"
+   },
+   {
+    "text": "Veio do céu um som como de vento impetuoso e encheu a casa.",
+    "evidenceRef": "Atos 2:2",
+    "evidenceSpan": "veio do céu um som, como de um vento impetuoso"
+   },
+   {
+    "text": "Apareceram línguas como de fogo sobre cada um deles.",
+    "evidenceRef": "Atos 2:3",
+    "evidenceSpan": "línguas como de fogo, que se distribuíram e pousaram"
+   },
+   {
+    "text": "Todos ficaram cheios do Espírito Santo e falaram em outras línguas.",
+    "evidenceRef": "Atos 2:4",
+    "evidenceSpan": "todos ficaram cheios do Espírito Santo"
+   },
+   {
+    "text": "Cada um ouvia os discípulos falar na própria língua.",
+    "evidenceRef": "Atos 2:6",
+    "evidenceSpan": "cada um os ouvia falar em sua própria língua"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "Pentecostes",
+    "gloss": "O dia da festa em que o Espírito desce sobre o grupo reunido."
+   },
+   {
+    "term": "Espírito Santo",
+    "gloss": "Quem enche os discípulos e concede o falar em outras línguas."
+   },
+   {
+    "term": "línguas",
+    "gloss": "Idiomas reais: a multidão ouve na própria língua materna."
+   }
+  ],
+  "structure": [
+   {
+    "label": "O grupo está reunido no Pentecostes",
+    "evidenceRef": "Atos 2:1"
+   },
+   {
+    "label": "Som e fogo marcam a vinda do Espírito",
+    "evidenceRef": "Atos 2:2–3"
+   },
+   {
+    "label": "Ficam cheios e falam outras línguas",
+    "evidenceRef": "Atos 2:4"
+   },
+   {
+    "label": "A multidão ouve na própria língua",
+    "evidenceRef": "Atos 2:6–8"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Cheios do Espírito, começam a falar conforme o Espírito concede.",
+    "marker": "e começaram",
+    "evidenceRef": "Atos 2:4"
+   },
+   {
+    "kind": "causa",
+    "text": "A voz é ouvida, e a multidão se reúne cheia de perplexidade.",
+    "marker": "quando",
+    "evidenceRef": "Atos 2:6"
+   },
+   {
+    "kind": "contraste",
+    "text": "São galileus, e mesmo assim cada um ouve na própria língua materna.",
+    "marker": "então",
+    "evidenceRef": "Atos 2:7–8"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Joel 2:28",
+    "bridge": "Espírito derramado sobre todos"
+   },
+   {
+    "ref": "João 16:13",
+    "bridge": "O Espírito guia à verdade"
+   },
+   {
+    "ref": "Lucas 24:49",
+    "bridge": "Promessa do poder do alto"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "O som e o fogo foram só metáforas sem acontecimento real.",
+    "why": "O texto narra eventos concretos: som do céu, casa cheia, línguas que pousam."
+   },
+   {
+    "text": "Só os líderes receberam o Espírito; o restante ficou de fora.",
+    "why": "\"Todos\" ficaram cheios e as línguas pousaram sobre cada um."
+   },
+   {
+    "text": "A multidão ouviu um jargão incompreensível, sem sentido.",
+    "why": "Cada um ouvia na própria língua materna as palavras dos discípulos."
+   }
+  ],
+  "centralInsight": "O Espírito vem como prometido, e cada povo ouve as grandezas de Deus na própria língua.",
+  "anchorQuestion": "O que aconteceu com os discípulos quando ficaram cheios do Espírito Santo?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Atos 2:1, no dia de Pentecostes, cada discípulo estava sozinho em sua casa.",
+   "verseRef": "Atos 2:1",
+   "correctOptionId": "false",
+   "evidenceSpan": "todos estavam reunidos no mesmo lugar",
+   "feedbackCorrect": "O texto diz o contrário: todos estavam reunidos no mesmo lugar.",
+   "feedbackWrong": {
+    "true": "Releia Atos 2:1: todos estavam reunidos no mesmo lugar."
+   },
+   "hint": "Olhe onde estavam no dia de Pentecostes.",
+   "learningObjective": "Observar que o grupo estava reunido.",
+   "evidence": [
+    "Atos 2:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Atos 2:2, toque de onde veio o som como de vento impetuoso.",
+   "verseRef": "Atos 2:2",
+   "options": [
+    {
+     "id": "a",
+     "text": "do céu"
+    },
+    {
+     "id": "b",
+     "text": "a casa"
+    },
+    {
+     "id": "c",
+     "text": "de repente"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "veio do céu um som",
+   "feedbackCorrect": "O som veio do céu e encheu toda a casa onde estavam.",
+   "feedbackWrong": {
+    "b": "A casa é o lugar enchido, não a origem do som.",
+    "c": "\"De repente\" marca o tempo, não a origem."
+   },
+   "hint": "Procure a origem do som.",
+   "learningObjective": "Identificar a origem celestial do sinal.",
+   "evidence": [
+    "Atos 2:2"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Atos 2:4, o que aconteceu com todos os que estavam ali?",
+   "verseRef": "Atos 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Ficaram cheios do Espírito Santo e falaram outras línguas"
+    },
+    {
+     "id": "b",
+     "text": "Fugiram da casa com medo do vento"
+    },
+    {
+     "id": "c",
+     "text": "Pediram que o som parasse imediatamente"
+    },
+    {
+     "id": "d",
+     "text": "Ficaram em silêncio absoluto o dia todo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todos ficaram cheios do Espírito Santo",
+   "feedbackCorrect": "Cheios do Espírito, começaram a falar conforme o Espírito concedia.",
+   "feedbackWrong": {
+    "b": "Não há fuga; há enchimento e fala em outras línguas.",
+    "c": "O texto não registra esse pedido; registra o enchimento.",
+    "d": "Pelo contrário: começaram a falar em outras línguas."
+   },
+   "hint": "Leia o que fizeram depois de ficar cheios.",
+   "learningObjective": "Observar o efeito imediato do Espírito.",
+   "evidence": [
+    "Atos 2:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Atos 2:3 na ordem do texto.",
+   "verseRef": "Atos 2:3",
+   "options": [
+    {
+     "id": "a",
+     "text": "E apareceram-lhes línguas como de fogo"
+    },
+    {
+     "id": "b",
+     "text": "que se distribuíram"
+    },
+    {
+     "id": "c",
+     "text": "e pousaram sobre cada um deles"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "línguas como de fogo",
+   "feedbackCorrect": "Aparecem, se distribuem e pousam sobre cada um.",
+   "feedbackWrong": {
+    "default": "Comece pelo aparecimento das línguas; o pousar vem por último."
+   },
+   "hint": "O versículo começa com \"E apareceram-lhes\".",
+   "learningObjective": "Reconhecer a sequência do sinal de fogo.",
+   "evidence": [
+    "Atos 2:3"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Atos 2:1, que dia havia chegado quando todos estavam reunidos?",
+   "verseRef": "Atos 2:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Páscoa"
+    },
+    {
+     "id": "b",
+     "text": "Pentecostes"
+    },
+    {
+     "id": "c",
+     "text": "sábado"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Quando chegou o dia de Pentecostes",
+   "feedbackCorrect": "É o dia de Pentecostes: o momento em que o Espírito desce sobre o grupo.",
+   "feedbackWrong": {
+    "a": "A Páscoa já passou na narrativa; aqui é Pentecostes.",
+    "c": "O texto nomeia Pentecostes, não o sábado."
+   },
+   "hint": "É o nome da festa no começo do versículo.",
+   "learningObjective": "Lembrar o dia em que o Espírito veio.",
+   "evidence": [
+    "Atos 2:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Atos 2:6 comunica que se liga a este contexto?",
+   "verseRef": "Atos 2:6",
+   "passageA": {
+    "ref": "Atos 2:6"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Povos de muitas nações ouvem os discípulos na própria língua."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Ninguém entendeu nada"
+    },
+    {
+     "id": "b",
+     "text": "Cada um ouviu na língua"
+    },
+    {
+     "id": "c",
+     "text": "Só galileus compreenderam"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "cada um os ouvia falar em sua própria língua",
+   "feedbackCorrect": "A perplexidade nasce disso: cada um ouve na própria língua.",
+   "feedbackWrong": {
+    "a": "O texto diz que ouviam, não que ninguém entendeu.",
+    "c": "A multidão vinha de muitas nações; cada um ouvia."
+   },
+   "hint": "Veja o que cada um ouvia.",
+   "learningObjective": "Ligar o milagre ao alcance das nações.",
+   "evidence": [
+    "Atos 2:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Atos 2:4, os discípulos falaram em outras línguas por iniciativa própria, sem o Espírito.",
+   "verseRef": "Atos 2:4",
+   "correctOptionId": "false",
+   "evidenceSpan": "conforme o Espírito lhes concedia que falassem",
+   "feedbackCorrect": "Falaram conforme o Espírito lhes concedia: a iniciativa é do Espírito.",
+   "feedbackWrong": {
+    "true": "Releia o fim de 2:4: conforme o Espírito lhes concedia."
+   },
+   "hint": "Olhe quem concede o falar.",
+   "learningObjective": "Compreender que o Espírito concede a fala.",
+   "evidence": [
+    "Atos 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Atos 2:6, toque a palavra que marca o momento em que a multidão se reúne.",
+   "verseRef": "Atos 2:6",
+   "options": [
+    {
+     "id": "a",
+     "text": "quando"
+    },
+    {
+     "id": "b",
+     "text": "multidão"
+    },
+    {
+     "id": "c",
+     "text": "língua"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quando aquela voz foi ouvida",
+   "feedbackCorrect": "\"Quando\" liga a voz ouvida à reunião perplexada da multidão.",
+   "feedbackWrong": {
+    "b": "\"Multidão\" é quem se reúne; o marcador temporal vem antes.",
+    "c": "\"Língua\" é o que ouvem, não o marcador do momento."
+   },
+   "hint": "Procure a palavra que introduz a causa da reunião.",
+   "learningObjective": "Reconhecer o marcador temporal da cena.",
+   "evidence": [
+    "Atos 2:6"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Atos 2:7–8 se relaciona com o milagre das línguas?",
+   "verseRef": "Atos 2:7–8",
+   "options": [
+    {
+     "id": "a",
+     "text": "A surpresa cresce porque galileus falam línguas maternas alheias"
+    },
+    {
+     "id": "b",
+     "text": "A multidão ignora o que está acontecendo"
+    },
+    {
+     "id": "c",
+     "text": "Todos concluem que nada de novo ocorreu"
+    },
+    {
+     "id": "d",
+     "text": "Os ouvintes pedem que os galileus parem de falar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "os ouvimos falar, cada um em nossa própria língua materna",
+   "feedbackCorrect": "O contraste é explícito: galileus falando, e cada um ouvindo na própria língua.",
+   "feedbackWrong": {
+    "b": "Estão atônitos e perguntam o que isso quer dizer.",
+    "c": "A admiração mostra que algo novo e estranho ocorreu.",
+    "d": "O texto registra pergunta, não pedido para calar."
+   },
+   "hint": "Una a origem dos falantes ao que os ouvintes ouvem.",
+   "learningObjective": "Relacionar a identidade dos falantes ao milagre.",
+   "evidence": [
+    "Atos 2:7–8"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cena em Atos 2:1–4?",
+   "verseRef": "Atos 2:3–4",
+   "options": [
+    {
+     "id": "a",
+     "text": "O grupo está reunido no Pentecostes"
+    },
+    {
+     "id": "b",
+     "text": "Som e fogo marcam a vinda do Espírito"
+    },
+    {
+     "id": "c",
+     "text": "Ficam cheios e falam outras línguas"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "todos ficaram cheios do Espírito Santo",
+   "feedbackCorrect": "Reunião, sinais, e então o enchimento que produz a fala.",
+   "feedbackWrong": {
+    "default": "O falar em línguas vem depois dos sinais e do enchimento."
+   },
+   "hint": "Comece pelo grupo reunido.",
+   "learningObjective": "Compreender o movimento até o enchimento.",
+   "evidence": [
+    "Atos 2:1–4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Atos 2:4, que verbo mostra o resultado imediato do enchimento?",
+   "verseRef": "Atos 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "fugiram"
+    },
+    {
+     "id": "b",
+     "text": "começaram"
+    },
+    {
+     "id": "c",
+     "text": "dormiram"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "e começaram a falar em outras línguas",
+   "feedbackCorrect": "\"Começaram\" marca o resultado: cheios, passam a falar.",
+   "feedbackWrong": {
+    "a": "Não há fuga; há início da fala em outras línguas.",
+    "c": "O texto fala de começar a falar, não de dormir."
+   },
+   "hint": "Olhe o que fazem logo depois de ficar cheios.",
+   "learningObjective": "Ver o resultado do enchimento no verbo da ação.",
+   "evidence": [
+    "Atos 2:4"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Atos 2:4 a Joel 2:28?",
+   "verseRef": "Atos 2:4",
+   "passageA": {
+    "ref": "Atos 2:4"
+   },
+   "passageB": {
+    "ref": "Joel 2:28"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Espírito só para reis"
+    },
+    {
+     "id": "b",
+     "text": "Espírito derramado sobre todos"
+    },
+    {
+     "id": "c",
+     "text": "Espírito remoto e silencioso"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "todos ficaram cheios do Espírito Santo",
+   "evidence": [
+    "Atos 2:4",
+    "Joel 2:28"
+   ],
+   "feedbackCorrect": "Joel anuncia o derramar; Atos mostra todos cheios do Espírito.",
+   "feedbackWrong": {
+    "a": "Joel fala de toda a carne; Atos mostra todos cheios.",
+    "c": "Nos dois textos o Espírito age e se manifesta."
+   },
+   "hint": "Compare quem recebe o Espírito.",
+   "learningObjective": "Relacionar Pentecostes à promessa de Joel."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Atos 2:4–8 apresenta o Espírito como dom que alcança povos diversos na própria língua.",
+   "verseRef": "Atos 2:5–6",
+   "correctOptionId": "true",
+   "evidenceSpan": "cada um os ouvia falar em sua própria língua",
+   "feedbackCorrect": "Cheios do Espírito, falam; a multidão de nações ouve na própria língua.",
+   "feedbackWrong": {
+    "false": "O texto une enchimento, fala e audição nas línguas das nações."
+   },
+   "hint": "Una o enchimento ao que a multidão ouve.",
+   "learningObjective": "Interpretar o alcance do Espírito às nações.",
+   "evidence": [
+    "Atos 2:4–6"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Atos 2:4, toque o trecho que mostra quem concede o falar.",
+   "verseRef": "Atos 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "o Espírito"
+    },
+    {
+     "id": "b",
+     "text": "outras línguas"
+    },
+    {
+     "id": "c",
+     "text": "todos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "conforme o Espírito lhes concedia que falassem",
+   "feedbackCorrect": "Não é técnica humana: o Espírito concede o que falam.",
+   "feedbackWrong": {
+    "b": "\"Outras línguas\" é o meio; quem concede é o Espírito.",
+    "c": "\"Todos\" são os que falam; quem concede está no fim."
+   },
+   "hint": "Olhe o fim do versículo.",
+   "learningObjective": "Sustentar que o Espírito concede a fala.",
+   "evidence": [
+    "Atos 2:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Atos 2:1–8 sustenta sobre o Pentecostes?",
+   "verseRef": "Atos 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "O Espírito vem ao grupo e as nações ouvem na própria língua"
+    },
+    {
+     "id": "b",
+     "text": "Só metáforas: nada de concreto aconteceu na casa"
+    },
+    {
+     "id": "c",
+     "text": "Apenas os líderes receberam o Espírito Santo"
+    },
+    {
+     "id": "d",
+     "text": "A multidão ouviu um jargão sem sentido"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todos ficaram cheios do Espírito Santo",
+   "feedbackCorrect": "Sinais reais, todos cheios, e cada um ouvindo na própria língua.",
+   "feedbackWrong": {
+    "b": "Som, fogo e casa cheia são narrados como eventos.",
+    "c": "\"Todos\" e \"cada um\" mostram o alcance do dom.",
+    "d": "Ouvem na própria língua materna, não um jargão vazio."
+   },
+   "hint": "Compare cada opção com o que o texto narra.",
+   "learningObjective": "Escolher a interpretação sustentada pelo texto.",
+   "evidence": [
+    "Atos 2:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho do Espírito prometido?",
+   "verseRef": "Atos 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus promete o poder do alto"
+    },
+    {
+     "id": "b",
+     "text": "O Espírito enche e concede a fala"
+    },
+    {
+     "id": "c",
+     "text": "Joel anuncia o derramar do Espírito"
+    }
+   ],
+   "correctOrder": [
+    "c",
+    "a",
+    "b"
+   ],
+   "evidenceSpan": "todos ficaram cheios do Espírito Santo",
+   "evidence": [
+    "Joel 2:28",
+    "Lucas 24:49",
+    "Atos 2:4"
+   ],
+   "feedbackCorrect": "A promessa antiga e a palavra de Jesus chegam ao enchimento em Atos.",
+   "feedbackWrong": {
+    "default": "Siga: Joel anuncia, Jesus promete, Atos cumpre."
+   },
+   "hint": "Comece pela promessa antiga em Joel.",
+   "learningObjective": "Ver Pentecostes no fio da promessa bíblica."
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Atos 2:4, de quem ficaram cheios todos os discípulos?",
+   "verseRef": "Atos 2:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "medo"
+    },
+    {
+     "id": "b",
+     "text": "Espírito Santo"
+    },
+    {
+     "id": "c",
+     "text": "orgulho"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "cheios do Espírito Santo",
+   "feedbackCorrect": "O termo central da cena: ficaram cheios do Espírito Santo.",
+   "feedbackWrong": {
+    "a": "O texto não fala de medo; fala do Espírito Santo.",
+    "c": "Não é orgulho: é enchimento do Espírito Santo."
+   },
+   "hint": "É o nome de quem os encheu.",
+   "learningObjective": "Lembrar o termo teológico central da cena.",
+   "evidence": [
+    "Atos 2:4"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Atos 2:4 a João 16:13?",
+   "verseRef": "Atos 2:4",
+   "passageA": {
+    "ref": "Atos 2:4"
+   },
+   "passageB": {
+    "ref": "João 16:13"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "O Espírito guia à verdade"
+    },
+    {
+     "id": "b",
+     "text": "O Espírito permanece mudo"
+    },
+    {
+     "id": "c",
+     "text": "Homens guiam o Espírito"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "conforme o Espírito lhes concedia que falassem",
+   "evidence": [
+    "Atos 2:4",
+    "João 16:13"
+   ],
+   "feedbackCorrect": "Nos dois textos o Espírito age: concede a fala e guia à verdade.",
+   "feedbackWrong": {
+    "b": "João e Atos mostram o Espírito ativo, não mudo.",
+    "c": "É o Espírito quem concede e guia, não o contrário."
+   },
+   "hint": "Veja quem age e conduz nos dois textos.",
+   "learningObjective": "Ligar o Pentecostes à obra do Espírito da verdade."
+  }
+ ]
+}

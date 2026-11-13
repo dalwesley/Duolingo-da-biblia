@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Romanos 10:8–13",
+  "passages": [
+   {
+    "ref": "Romanos 10:8–13"
+   },
+   {
+    "ref": "Romanos 10:14–17"
+   }
+  ],
+  "context": "Paulo continua o tema de Israel e explica que a justiça da fé está perto: confessar Jesus como Senhor e crer na ressurreição. Em seguida, mostra a cadeia até a pregação.",
+  "keyword": "confessar",
+  "keywordGloss": "Declarar com a boca que Jesus é Senhor, unido à fé do coração.",
+  "focusQuestion": "Quem perto de você ainda precisa ouvir a palavra da fé?",
+  "reflectionPrompts": [
+   "Perto da boca",
+   "Jesus é Senhor",
+   "Fé pelo ouvir"
+  ],
+  "facts": [
+   {
+    "text": "A palavra da fé está perto, na boca e no coração.",
+    "evidenceRef": "Romanos 10:8",
+    "evidenceSpan": "A palavra está perto de ti, na tua boca e no teu coração"
+   },
+   {
+    "text": "Confessar Jesus como Senhor e crer na ressurreição salva.",
+    "evidenceRef": "Romanos 10:9",
+    "evidenceSpan": "confessar com a sua boca que Jesus é Senhor e crer em seu coração"
+   },
+   {
+    "text": "Com o coração se crê para a justiça; com a boca se confessa para a salvação.",
+    "evidenceRef": "Romanos 10:10",
+    "evidenceSpan": "com o coração que se crê para a justiça e com a boca que se faz confissão para a salvação"
+   },
+   {
+    "text": "Não há distinção entre judeu e grego.",
+    "evidenceRef": "Romanos 10:12",
+    "evidenceSpan": "não há distinção entre judeu e grego"
+   },
+   {
+    "text": "Todo aquele que invocar o nome do Senhor será salvo.",
+    "evidenceRef": "Romanos 10:13",
+    "evidenceSpan": "todo aquele que invocar o nome do Senhor será salvo"
+   },
+   {
+    "text": "A fé vem pelo ouvir, e o ouvir pela palavra de Cristo.",
+    "evidenceRef": "Romanos 10:17",
+    "evidenceSpan": "a fé vem pelo ouvir, e o ouvir pela palavra de Cristo"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "confessar",
+    "gloss": "Declarar abertamente que Jesus é Senhor."
+   },
+   {
+    "term": "invocar",
+    "gloss": "Chamar o nome do Senhor pedindo salvação."
+   },
+   {
+    "term": "ouvir",
+    "gloss": "Canal pelo qual a fé chega: ouvir a palavra de Cristo."
+   }
+  ],
+  "structure": [
+   {
+    "label": "A palavra perto da boca e do coração",
+    "evidenceRef": "Romanos 10:8"
+   },
+   {
+    "label": "Confissão e fé que salvam",
+    "evidenceRef": "Romanos 10:9–10"
+   },
+   {
+    "label": "Um Senhor para todos que invocam",
+    "evidenceRef": "Romanos 10:12–13"
+   },
+   {
+    "label": "Cadeia até a pregação e a fé pelo ouvir",
+    "evidenceRef": "Romanos 10:14–17"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Confessar e crer resultam em salvação.",
+    "marker": "Se",
+    "evidenceRef": "Romanos 10:9"
+   },
+   {
+    "kind": "causa",
+    "text": "Não há distinção porque um único Senhor é rico para todos.",
+    "marker": "pois",
+    "evidenceRef": "Romanos 10:12"
+   },
+   {
+    "kind": "sequência",
+    "text": "A fé vem pelo ouvir, e o ouvir pela palavra de Cristo.",
+    "marker": "Então",
+    "evidenceRef": "Romanos 10:17"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Joel 2:32",
+    "bridge": "Invocar o nome do Senhor"
+   },
+   {
+    "ref": "Atos 2:21",
+    "bridge": "Todo que invocar será salvo"
+   },
+   {
+    "ref": "Isaías 52:7",
+    "bridge": "Pés que anunciam o bem"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Basta confessar com a boca, sem crer de coração.",
+    "why": "10:9–10 une boca e coração; os dois andam juntos."
+   },
+   {
+    "text": "A fé nasce sozinha, sem ouvir a palavra de Cristo.",
+    "why": "10:17: a fé vem pelo ouvir, e o ouvir pela palavra de Cristo."
+   },
+   {
+    "text": "Só judeus podem invocar o Senhor e ser salvos.",
+    "why": "10:12–13: não há distinção; todo aquele que invocar será salvo."
+   }
+  ],
+  "centralInsight": "Quem confessa Jesus como Senhor e crê é salvo, e a fé vem pelo ouvir.",
+  "anchorQuestion": "Segundo Romanos 10:17, de onde vem a fé?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Romanos 10:13, só alguns poucos que invocam o nome do Senhor serão salvos.",
+   "verseRef": "Romanos 10:13",
+   "correctOptionId": "false",
+   "evidenceSpan": "todo aquele que invocar o nome do Senhor será salvo",
+   "feedbackCorrect": "O texto abre a porta: todo aquele que invocar será salvo.",
+   "feedbackWrong": {
+    "true": "Releia 10:13: todo aquele que invocar será salvo."
+   },
+   "hint": "Veja as duas primeiras palavras do versículo.",
+   "learningObjective": "Observar o alcance de quem pode ser salvo.",
+   "evidence": [
+    "Romanos 10:13"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Romanos 10:9, toque o que se confessa com a boca.",
+   "verseRef": "Romanos 10:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "Jesus é Senhor"
+    },
+    {
+     "id": "b",
+     "text": "seu coração"
+    },
+    {
+     "id": "c",
+     "text": "os mortos"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "confessar com a sua boca que Jesus é Senhor",
+   "feedbackCorrect": "A confissão nomeia Jesus como Senhor.",
+   "feedbackWrong": {
+    "b": "O coração é onde se crê; a confissão é com a boca.",
+    "c": "A ressurreição é o objeto da fé, não da confissão nomeada."
+   },
+   "hint": "Leia o conteúdo da confissão.",
+   "learningObjective": "Identificar o conteúdo da confissão.",
+   "evidence": [
+    "Romanos 10:9"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Romanos 10:8, onde está a palavra da fé?",
+   "verseRef": "Romanos 10:8",
+   "options": [
+    {
+     "id": "a",
+     "text": "Perto, na boca e no coração"
+    },
+    {
+     "id": "b",
+     "text": "Longe, no céu inacessível"
+    },
+    {
+     "id": "c",
+     "text": "Escondida só com os anjos"
+    },
+    {
+     "id": "d",
+     "text": "Reservada aos sábios de Roma"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "A palavra está perto de ti, na tua boca e no teu coração",
+   "feedbackCorrect": "A palavra da fé não está distante: está perto.",
+   "feedbackWrong": {
+    "b": "O texto diz perto, não longe.",
+    "c": "Não está escondida com anjos.",
+    "d": "Está perto de ti, não reservada a sábios."
+   },
+   "hint": "Leia onde a palavra está.",
+   "learningObjective": "Observar a proximidade da palavra da fé.",
+   "evidence": [
+    "Romanos 10:8"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Romanos 10:17 na ordem do texto.",
+   "verseRef": "Romanos 10:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então, a fé vem pelo ouvir"
+    },
+    {
+     "id": "b",
+     "text": "e o ouvir"
+    },
+    {
+     "id": "c",
+     "text": "pela palavra de Cristo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "a fé vem pelo ouvir, e o ouvir pela palavra de Cristo",
+   "feedbackCorrect": "Fé, ouvir e palavra de Cristo: a cadeia do versículo.",
+   "feedbackWrong": {
+    "default": "Comece pela fé; a palavra de Cristo fecha."
+   },
+   "hint": "O versículo começa com \"Então\".",
+   "learningObjective": "Reconhecer a sequência de Romanos 10:17.",
+   "evidence": [
+    "Romanos 10:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Romanos 10:17, a fé vem pelo ___.",
+   "verseRef": "Romanos 10:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "ouvir"
+    },
+    {
+     "id": "b",
+     "text": "mérito"
+    },
+    {
+     "id": "c",
+     "text": "silêncio"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a fé vem pelo ouvir",
+   "feedbackCorrect": "A fé chega pelo ouvir a palavra.",
+   "feedbackWrong": {
+    "b": "Não é mérito; é pelo ouvir.",
+    "c": "Não é silêncio; é pelo ouvir."
+   },
+   "hint": "Veja o meio pelo qual a fé vem.",
+   "learningObjective": "Lembrar de onde vem a fé.",
+   "evidence": [
+    "Romanos 10:17"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Romanos 10:13 comunica que se liga a este contexto?",
+   "verseRef": "Romanos 10:13",
+   "passageA": {
+    "ref": "Romanos 10:13"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Invocar o nome do Senhor traz salvação."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Salvação por invocar o Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Salvação só por linhagem"
+    },
+    {
+     "id": "c",
+     "text": "Invocar não muda nada"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo aquele que invocar o nome do Senhor será salvo",
+   "feedbackCorrect": "A promessa é clara: invocar o Senhor e ser salvo.",
+   "feedbackWrong": {
+    "b": "Todo aquele, sem distinção de linhagem.",
+    "c": "O texto liga invocar e ser salvo."
+   },
+   "hint": "Veja o resultado de invocar.",
+   "learningObjective": "Ligar a invocação à salvação.",
+   "evidence": [
+    "Romanos 10:13"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Romanos 10:12, há distinção entre judeu e grego diante do Senhor.",
+   "verseRef": "Romanos 10:12",
+   "correctOptionId": "false",
+   "evidenceSpan": "não há distinção entre judeu e grego",
+   "feedbackCorrect": "Um único Senhor é rico para todos os que o invocam.",
+   "feedbackWrong": {
+    "true": "Releia 10:12: não há distinção entre judeu e grego."
+   },
+   "hint": "Veja a primeira afirmação do versículo.",
+   "learningObjective": "Compreender a ausência de distinção.",
+   "evidence": [
+    "Romanos 10:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Romanos 10:17, toque a palavra que marca a conclusão da cadeia.",
+   "verseRef": "Romanos 10:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "Então"
+    },
+    {
+     "id": "b",
+     "text": "fé"
+    },
+    {
+     "id": "c",
+     "text": "Cristo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Então, a fé vem pelo ouvir",
+   "feedbackCorrect": "\"Então\" resume a cadeia das perguntas anteriores.",
+   "feedbackWrong": {
+    "b": "\"Fé\" é o resultado; o marcador é \"Então\".",
+    "c": "\"Cristo\" fecha a fonte; o marcador de conclusão abre o verso."
+   },
+   "hint": "Procure a primeira palavra do versículo.",
+   "learningObjective": "Reconhecer o marcador de conclusão em 10:17.",
+   "evidence": [
+    "Romanos 10:17"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Romanos 10:10 relaciona coração e boca?",
+   "verseRef": "Romanos 10:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "Coração crê para justiça; boca confessa para salvação"
+    },
+    {
+     "id": "b",
+     "text": "Só a boca importa; o coração é irrelevante"
+    },
+    {
+     "id": "c",
+     "text": "Só o coração importa; a boca fica em silêncio"
+    },
+    {
+     "id": "d",
+     "text": "Coração e boca se contradizem na salvação"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com o coração que se crê para a justiça e com a boca que se faz confissão para a salvação",
+   "feedbackCorrect": "Fé e confissão caminham juntas, cada uma com seu papel.",
+   "feedbackWrong": {
+    "b": "O coração também crê para a justiça.",
+    "c": "A boca confessa para a salvação.",
+    "d": "O texto une os dois, não os opõe."
+   },
+   "hint": "Veja o papel de cada um.",
+   "learningObjective": "Relacionar fé do coração e confissão da boca.",
+   "evidence": [
+    "Romanos 10:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a cadeia em Romanos 10:14–15?",
+   "verseRef": "Romanos 10:14–15",
+   "options": [
+    {
+     "id": "a",
+     "text": "Invocar exige crer"
+    },
+    {
+     "id": "b",
+     "text": "Crer exige ouvir"
+    },
+    {
+     "id": "c",
+     "text": "Ouvir exige quem pregue e seja enviado"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "Como, então, poderão invocar aquele em quem não creram?",
+   "feedbackCorrect": "Invocar, crer, ouvir e enviar: a cadeia missionária.",
+   "feedbackWrong": {
+    "default": "Comece pelo invocar; o envio fecha a cadeia."
+   },
+   "hint": "Siga as perguntas de Paulo em ordem.",
+   "learningObjective": "Compreender a cadeia até a pregação.",
+   "evidence": [
+    "Romanos 10:14–15"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Romanos 10:12, um único Senhor é ___ para com todos os que o invocam.",
+   "verseRef": "Romanos 10:12",
+   "options": [
+    {
+     "id": "a",
+     "text": "pobre"
+    },
+    {
+     "id": "b",
+     "text": "rico"
+    },
+    {
+     "id": "c",
+     "text": "distante"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "um único Senhor é rico para com todos os que o invocam",
+   "feedbackCorrect": "A generosidade do Senhor alcança todos que o invocam.",
+   "feedbackWrong": {
+    "a": "O texto diz rico, não pobre.",
+    "c": "Ele é rico para com todos, não distante."
+   },
+   "hint": "Veja o adjetivo ligado ao Senhor.",
+   "learningObjective": "Lembrar a generosidade do Senhor.",
+   "evidence": [
+    "Romanos 10:12"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Romanos 10:13 a Joel 2:32?",
+   "verseRef": "Romanos 10:13",
+   "passageA": {
+    "ref": "Romanos 10:13"
+   },
+   "passageB": {
+    "ref": "Joel 2:32"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Invocar o nome do Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Salvação só de Israel"
+    },
+    {
+     "id": "c",
+     "text": "Proibição de invocar"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "todo aquele que invocar o nome do Senhor será salvo",
+   "feedbackCorrect": "Paulo cita a mesma promessa: invocar e ser salvo.",
+   "feedbackWrong": {
+    "b": "Todo aquele amplia o alcance.",
+    "c": "Os dois textos convidam a invocar."
+   },
+   "hint": "Compare a frase sobre invocar.",
+   "learningObjective": "Relacionar Romanos 10 com a promessa de Joel.",
+   "evidence": [
+    "Romanos 10:13",
+    "Joel 2:32"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Romanos 10:9–10 sustenta que a salvação une confissão da boca e fé do coração.",
+   "verseRef": "Romanos 10:9–10",
+   "correctOptionId": "true",
+   "evidenceSpan": "confessar com a sua boca que Jesus é Senhor e crer em seu coração",
+   "feedbackCorrect": "Boca e coração aparecem juntos na salvação.",
+   "feedbackWrong": {
+    "false": "Releia 10:9–10: confissão e fé caminham juntas."
+   },
+   "hint": "Veja os dois verbos principais.",
+   "learningObjective": "Interpretar a união de confissão e fé.",
+   "evidence": [
+    "Romanos 10:9–10"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Romanos 10:15, toque o trecho que mostra a beleza de quem anuncia.",
+   "verseRef": "Romanos 10:15",
+   "options": [
+    {
+     "id": "a",
+     "text": "pés"
+    },
+    {
+     "id": "b",
+     "text": "enviados"
+    },
+    {
+     "id": "c",
+     "text": "formosos"
+    }
+   ],
+   "correctOptionId": "c",
+   "evidenceSpan": "Quão formosos são os pés dos que anunciam coisas boas!",
+   "feedbackCorrect": "A Escritura chama de formosos os pés dos anunciadores.",
+   "feedbackWrong": {
+    "a": "\"Pés\" são o objeto; o adjetivo de beleza é outro.",
+    "b": "\"Enviados\" responde à pergunta anterior; a beleza está na citação."
+   },
+   "hint": "Procure o adjetivo na citação.",
+   "learningObjective": "Sustentar com o texto a beleza do anúncio.",
+   "evidence": [
+    "Romanos 10:15"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Romanos 10:14–17 sustenta sobre a fé?",
+   "verseRef": "Romanos 10:17",
+   "options": [
+    {
+     "id": "a",
+     "text": "A fé chega pelo ouvir a palavra de Cristo anunciada"
+    },
+    {
+     "id": "b",
+     "text": "A fé nasce sem qualquer anúncio"
+    },
+    {
+     "id": "c",
+     "text": "Só quem já crê precisa ouvir"
+    },
+    {
+     "id": "d",
+     "text": "A pregação é opcional para a fé"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "a fé vem pelo ouvir, e o ouvir pela palavra de Cristo",
+   "feedbackCorrect": "A cadeia termina na palavra de Cristo ouvida.",
+   "feedbackWrong": {
+    "b": "10:14–17 exige ouvir e pregação.",
+    "c": "O ouvir vem antes do crer na cadeia.",
+    "d": "Sem quem pregue, não há como ouvir."
+   },
+   "hint": "Veja a conclusão em 10:17.",
+   "learningObjective": "Escolher a leitura sobre a origem da fé.",
+   "evidence": [
+    "Romanos 10:17"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência revela o caminho da salvação em Romanos 10?",
+   "verseRef": "Romanos 10:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "A palavra da fé é anunciada e ouvida"
+    },
+    {
+     "id": "b",
+     "text": "O coração crê e a boca confessa"
+    },
+    {
+     "id": "c",
+     "text": "Quem invoca o Senhor é salvo"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "você será salvo",
+   "feedbackCorrect": "Ouvir, crer-confessar e invocar: o caminho do texto.",
+   "feedbackWrong": {
+    "default": "Comece pelo anúncio ouvido; a salvação fecha."
+   },
+   "hint": "Siga 10:14–17 e 10:9–13.",
+   "learningObjective": "Ver o encadeamento da salvação.",
+   "evidence": [
+    "Romanos 10:17",
+    "Romanos 10:9",
+    "Romanos 10:13"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Romanos 10:9, quem se confessa com a boca como Senhor?",
+   "verseRef": "Romanos 10:9",
+   "options": [
+    {
+     "id": "a",
+     "text": "César"
+    },
+    {
+     "id": "b",
+     "text": "Jesus"
+    },
+    {
+     "id": "c",
+     "text": "Moisés"
+    }
+   ],
+   "correctOptionId": "b",
+   "evidenceSpan": "Jesus é Senhor",
+   "feedbackCorrect": "O termo teológico da cena: Jesus é Senhor.",
+   "feedbackWrong": {
+    "a": "Não é César; é Jesus.",
+    "c": "Não é Moisés; é Jesus."
+   },
+   "hint": "Veja o nome confessado.",
+   "learningObjective": "Lembrar quem é confessado como Senhor.",
+   "evidence": [
+    "Romanos 10:9"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Romanos 10:15 a Isaías 52:7?",
+   "verseRef": "Romanos 10:15",
+   "passageA": {
+    "ref": "Romanos 10:15"
+   },
+   "passageB": {
+    "ref": "Isaías 52:7"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Pés que anunciam o bem"
+    },
+    {
+     "id": "b",
+     "text": "Pés que fogem da missão"
+    },
+    {
+     "id": "c",
+     "text": "Anúncio sem mensageiro"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quão formosos são os pés dos que anunciam coisas boas!",
+   "feedbackCorrect": "Paulo ecoa Isaías: belos são os pés do anunciador.",
+   "feedbackWrong": {
+    "b": "Os dois textos celebram quem anuncia.",
+    "c": "Há mensageiro: quem é enviado a pregar."
+   },
+   "hint": "Compare a imagem dos pés.",
+   "learningObjective": "Ligar o anúncio em Romanos e Isaías.",
+   "evidence": [
+    "Romanos 10:15",
+    "Isaías 52:7"
+   ]
+  }
+ ]
+}

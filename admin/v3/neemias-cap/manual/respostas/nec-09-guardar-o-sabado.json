@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Neemias 13:15–20",
+    "passages": [
+      {
+        "ref": "Neemias 13:15–20"
+      },
+      {
+        "ref": "Neemias 13:21–22"
+      }
+    ],
+    "context": "Cena de Guardar o sábado: o texto acompanha personagens e decisões diante de Deus.",
+    "keyword": "Deus",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Guardar o sábado",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Nos dias em que vi em Judá aqueles.",
+        "evidenceRef": "Neemias 13:15",
+        "evidenceSpan": "Nos dias em que vi em Judá aqueles"
+      },
+      {
+        "text": "Também.",
+        "evidenceRef": "Neemias 13:16",
+        "evidenceSpan": "Também"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Neemias 13:17",
+        "evidenceSpan": "Então"
+      },
+      {
+        "text": "Acaso.",
+        "evidenceRef": "Neemias 13:18",
+        "evidenceSpan": "Acaso"
+      },
+      {
+        "text": "Aconteceu.",
+        "evidenceRef": "Neemias 13:19",
+        "evidenceSpan": "Aconteceu"
+      },
+      {
+        "text": "Então.",
+        "evidenceRef": "Neemias 13:20",
+        "evidenceSpan": "Então"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "dias",
+        "gloss": "Termo que carrega o sentido desta cena."
+      },
+      {
+        "term": "Judá",
+        "gloss": "Termo que carrega o sentido desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Nos dias em que vi em",
+        "evidenceRef": "Neemias 13:15"
+      },
+      {
+        "label": "Também havia tírios morando ali",
+        "evidenceRef": "Neemias 13:16"
+      },
+      {
+        "label": "Então contendi com os nobres",
+        "evidenceRef": "Neemias 13:17"
+      },
+      {
+        "label": "Acaso não fizeram assim seus pais",
+        "evidenceRef": "Neemias 13:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"Também\".",
+        "marker": "Também",
+        "evidenceRef": "Neemias 13:16"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"Então\".",
+        "marker": "Então",
+        "evidenceRef": "Neemias 13:17"
+      },
+      {
+        "kind": "sequência",
+        "text": "O texto liga as partes com \"antes\".",
+        "marker": "antes",
+        "evidenceRef": "Neemias 13:19"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "2 Crônicas 7:14",
+        "bridge": "Povo que se humilha"
+      },
+      {
+        "ref": "Isaías 58:12",
+        "bridge": "Reparador de muros"
+      },
+      {
+        "ref": "Salmos 122:7",
+        "bridge": "Paz nos muros"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho é só história humana, sem ação de Deus.",
+        "why": "O texto nomeia o Senhor e suas obras no meio do relato."
+      },
+      {
+        "text": "Os personagens agem sem risco nem escolha real.",
+        "why": "O relato mostra decisões custosas e consequências claras."
+      },
+      {
+        "text": "Qualquer leitura serve, mesmo contra as palavras do texto.",
+        "why": "As afirmações do texto são concretas e verificáveis no versículo."
+      }
+    ],
+    "centralInsight": "Santificai o dia de sábado: fechei as portas para que não haja carga no dia santo.",
+    "anchorQuestion": "O que Neemias 13:15 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Neemias 13:15, o texto inclui Nos dias em que vi em Judá aqueles.",
+      "verseRef": "Neemias 13:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Nos dias em que vi em Judá aqueles",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 13:15 afirma.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Neemias 13:15, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Neemias 13:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "dias"
+        },
+        {
+          "id": "b",
+          "text": "Judá"
+        },
+        {
+          "id": "c",
+          "text": "aqueles"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dias",
+      "feedbackCorrect": "O versículo destaca dias.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Neemias 13:17, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 13:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 13:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Neemias 13:16 na ordem do texto.",
+      "verseRef": "Neemias 13:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também havia tírios morando"
+        },
+        {
+          "id": "b",
+          "text": "ali"
+        },
+        {
+          "id": "c",
+          "text": "e toda sorte de mercadorias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Também havia tírios morando",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Neemias 13:16"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Neemias 13:18, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 13:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acaso"
+        },
+        {
+          "id": "b",
+          "text": "Nos"
+        },
+        {
+          "id": "c",
+          "text": "dias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Acaso",
+      "feedbackCorrect": "A palavra do versículo é Acaso.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 13:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Neemias 13:15 comunica que se liga a este contexto.",
+      "verseRef": "Neemias 13:15",
+      "passageA": {
+        "ref": "Neemias 13:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Guardar o sábado: o texto acompanha personagens e decisões diante de Deus."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Neemias 13:16, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Neemias 13:16",
+      "correctOptionId": "false",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 13:16 afirma.",
+      "evidence": [
+        "Neemias 13:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Neemias 13:16, toque a palavra que marca a relação no texto.",
+      "verseRef": "Neemias 13:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também"
+        },
+        {
+          "id": "b",
+          "text": "havia"
+        },
+        {
+          "id": "c",
+          "text": "tírios"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O versículo destaca Também.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 13:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Neemias 13:18, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 13:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra uma decisão concreta"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Acaso",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 13:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Neemias 13:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nos dias em que vi em"
+        },
+        {
+          "id": "b",
+          "text": "Também havia tírios morando ali"
+        },
+        {
+          "id": "c",
+          "text": "Então contendi com os nobres"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Nos",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Neemias 13:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 13:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Então"
+        },
+        {
+          "id": "b",
+          "text": "Nos"
+        },
+        {
+          "id": "c",
+          "text": "dias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "A palavra do versículo é Então.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 13:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Neemias 13:15 a 2 Crônicas 7:14.",
+      "verseRef": "Neemias 13:15",
+      "passageA": {
+        "ref": "Neemias 13:15"
+      },
+      "passageB": {
+        "ref": "2 Crônicas 7:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Povo que se humilha"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Neemias 13:22",
+      "correctOptionId": "false",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Neemias 13:22 afirma.",
+      "evidence": [
+        "Neemias 13:22"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Neemias 13:20, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Neemias 13:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "comerciantes"
+        },
+        {
+          "id": "b",
+          "text": "Então"
+        },
+        {
+          "id": "c",
+          "text": "vendedores"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "comerciantes",
+      "feedbackCorrect": "O versículo destaca comerciantes.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Neemias 13:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Neemias 13:19, o que o texto apresenta com clareza.",
+      "verseRef": "Neemias 13:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto aponta a ação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aconteceu",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Neemias 13:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Neemias 13:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Nos",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Neemias 13:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Neemias 13:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aconteceu"
+        },
+        {
+          "id": "b",
+          "text": "Nos"
+        },
+        {
+          "id": "c",
+          "text": "dias"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aconteceu",
+      "feedbackCorrect": "A palavra do versículo é Aconteceu.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Neemias 13:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Neemias 13:15 a Isaías 58:12.",
+      "verseRef": "Neemias 13:15",
+      "passageA": {
+        "ref": "Neemias 13:15"
+      },
+      "passageB": {
+        "ref": "Isaías 58:12"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Reparador de muros"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nos",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Neemias 13:15"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 21:1–12",
+    "passages": [
+      {
+        "ref": "Juízes 21:1–12"
+      }
+    ],
+    "context": "O juramento em Mispá impede esposas a Benjamim; o remendo passa por violência contra Jabes-Gileade.",
+    "keyword": "juramento",
+    "keywordGloss": "Promessa que deixa Israel partido e busca remendo violento.",
+    "focusQuestion": "Onde um juramento precipitado já pediu um remendo ainda mais duro?",
+    "reflectionPrompts": [
+      "Nenhuma filha",
+      "Falta uma tribo",
+      "Jabes-Gileade"
+    ],
+    "facts": [
+      {
+        "text": "Juraram não dar filhas a Benjamim.",
+        "evidenceRef": "Juízes 21:1",
+        "evidenceSpan": "Nenhum de nós dará sua filha como esposa aos benjamitas"
+      },
+      {
+        "text": "Prantearam porque falta uma tribo.",
+        "evidenceRef": "Juízes 21:3",
+        "evidenceSpan": "que hoje falta uma tribo"
+      },
+      {
+        "text": "Edificaram um altar e ofereceram.",
+        "evidenceRef": "Juízes 21:4",
+        "evidenceSpan": "edificou ali um altar"
+      },
+      {
+        "text": "Compadeceram-se de Benjamim.",
+        "evidenceRef": "Juízes 21:6",
+        "evidenceSpan": "se compadeceram de seu irmão Benjamim"
+      },
+      {
+        "text": "Ninguém de Jabes-Gileade veio a Mispá.",
+        "evidenceRef": "Juízes 21:8",
+        "evidenceSpan": "ninguém de Jabes-Gileade veio ao acampamento"
+      },
+      {
+        "text": "Encontraram quatrocentas moças virgens.",
+        "evidenceRef": "Juízes 21:12",
+        "evidenceSpan": "quatrocentas moças virgens"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "juramento",
+        "gloss": "Promessa feita em Mispá."
+      },
+      {
+        "term": "Mispá",
+        "gloss": "Lugar do juramento e da assembleia."
+      },
+      {
+        "term": "Jabes-Gileade",
+        "gloss": "Cidade ausente e depois atacada."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Juramento e lamento",
+        "evidenceRef": "Juízes 21:1–4"
+      },
+      {
+        "label": "Compadecimento e ausência",
+        "evidenceRef": "Juízes 21:5–9"
+      },
+      {
+        "label": "Ataque e quatrocentas",
+        "evidenceRef": "Juízes 21:10–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Quem não veio; pois havia juramento de morte.",
+        "marker": "Pois",
+        "evidenceRef": "Juízes 21:5"
+      },
+      {
+        "kind": "causa",
+        "text": "Que faremos pois juramos.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 21:7"
+      },
+      {
+        "kind": "contraste",
+        "text": "Exterminem; entretanto poupem as virgens.",
+        "marker": "Entretanto",
+        "evidenceRef": "Juízes 21:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Eclesiastes 5:4",
+        "bridge": "Pague o voto a Deus"
+      },
+      {
+        "ref": "Provérbios 20:25",
+        "bridge": "Laço falar depressa"
+      },
+      {
+        "ref": "Oséias 6:6",
+        "bridge": "Misericórdia e não sacrifício"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O remendo é pacífico.",
+        "why": "Ordenam passar ao fio da espada."
+      },
+      {
+        "text": "Todas as tribos vieram.",
+        "why": "Jabes-Gileade não veio."
+      },
+      {
+        "text": "Não houve lamento.",
+        "why": "Prantearam com grande lamento."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 21:1, o que Israel jurou em Mispá?",
+    "centralInsight": "O juramento e a guerra deixam um povo partido: o remendo também é violento."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 21:1, Israel jurou não dar filhas a Benjamim.",
+      "verseRef": "Juízes 21:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Nenhum de nós dará sua filha como esposa aos benjamitas",
+      "feedbackCorrect": "Juramento.",
+      "feedbackWrong": {
+        "false": "O texto afirma."
+      },
+      "hint": "Veja o juramento.",
+      "learningObjective": "Observar a promessa.",
+      "evidence": [
+        "Juízes 21:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 21:1, toque o lugar do juramento.",
+      "verseRef": "Juízes 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mispá"
+        },
+        {
+          "id": "b",
+          "text": "filha"
+        },
+        {
+          "id": "c",
+          "text": "benjamitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um juramento em Mispá",
+      "feedbackCorrect": "Mispá.",
+      "feedbackWrong": {
+        "b": "Filha é o objeto.",
+        "c": "Benjamitas são o alvo."
+      },
+      "hint": "Veja o lugar.",
+      "learningObjective": "Identificar Mispá.",
+      "evidence": [
+        "Juízes 21:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 21:12, quantas moças virgens encontraram?",
+      "verseRef": "Juízes 21:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Quatrocentas"
+        },
+        {
+          "id": "b",
+          "text": "Doze"
+        },
+        {
+          "id": "c",
+          "text": "Mil"
+        },
+        {
+          "id": "d",
+          "text": "Nenhuma"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quatrocentas moças virgens",
+      "feedbackCorrect": "Quatrocentas.",
+      "feedbackWrong": {
+        "b": "Não são doze.",
+        "c": "Não são mil.",
+        "d": "Há moças."
+      },
+      "hint": "Leia o número.",
+      "learningObjective": "Reconhecer quatrocentas.",
+      "evidence": [
+        "Juízes 21:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 21:1 na ordem do texto.",
+      "verseRef": "Juízes 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Os homens de Israel haviam feito um juramento em Mispá"
+        },
+        {
+          "id": "b",
+          "text": "Nenhum de nós dará sua filha"
+        },
+        {
+          "id": "c",
+          "text": "como esposa aos benjamitas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Nenhum de nós dará sua filha como esposa aos benjamitas",
+      "feedbackCorrect": "Juramento, filha e Benjamim.",
+      "feedbackWrong": {
+        "default": "Comece pelo juramento."
+      },
+      "hint": "A quem não dar?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 21:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 21:3, complete: hoje falta uma ___.",
+      "verseRef": "Juízes 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "tribo"
+        },
+        {
+          "id": "b",
+          "text": "cidade"
+        },
+        {
+          "id": "c",
+          "text": "arca"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que hoje falta uma tribo",
+      "feedbackCorrect": "Tribo.",
+      "feedbackWrong": {
+        "b": "Não é cidade.",
+        "c": "Não é arca."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar tribo.",
+      "evidence": [
+        "Juízes 21:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 21:6 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 21:6",
+      "passageA": {
+        "ref": "Juízes 21:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel se compadece de Benjamim após o juramento."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Compadecimento de Benjamim"
+        },
+        {
+          "id": "b",
+          "text": "Ódio sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Sem lamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se compadeceram de seu irmão Benjamim",
+      "feedbackCorrect": "Compadecimento.",
+      "feedbackWrong": {
+        "b": "Há compadecimento.",
+        "c": "Há lamento."
+      },
+      "hint": "O que sentem?",
+      "learningObjective": "Ligar lamento e compadecimento.",
+      "evidence": [
+        "Juízes 21:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 21:7, o problema das esposas existe porque juraram ao Senhor.",
+      "verseRef": "Juízes 21:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois juramos ao Senhor que não daremos nossas filhas",
+      "feedbackCorrect": "Causa do impasse.",
+      "feedbackWrong": {
+        "false": "O pois liga juramento e crise."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Ver a causa.",
+      "evidence": [
+        "Juízes 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 21:7, toque o marcador de causa.",
+      "verseRef": "Juízes 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "filhas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois juramos ao Senhor",
+      "feedbackCorrect": "Pois.",
+      "feedbackWrong": {
+        "b": "Senhor recebe o voto.",
+        "c": "Filhas são o objeto."
+      },
+      "hint": "Procure a causa.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "Juízes 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 21:11 faz?",
+      "verseRef": "Juízes 21:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exterminem; entretanto poupem certas mulheres"
+        },
+        {
+          "id": "b",
+          "text": "Exterminem a todos sem exceção"
+        },
+        {
+          "id": "c",
+          "text": "Sem ordem de ataque"
+        },
+        {
+          "id": "d",
+          "text": "Só homens são poupados"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, isto é o que vocês devem fazer",
+      "feedbackCorrect": "Contraste da ordem.",
+      "feedbackWrong": {
+        "b": "Há exceção.",
+        "c": "Há ordem.",
+        "d": "Homens são exterminados."
+      },
+      "hint": "Leia o Entretanto.",
+      "learningObjective": "Compreender a ordem.",
+      "evidence": [
+        "Juízes 21:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do remendo.",
+      "verseRef": "Juízes 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Juramento e lamento"
+        },
+        {
+          "id": "b",
+          "text": "Compadecimento e ausência"
+        },
+        {
+          "id": "c",
+          "text": "Ataque e quatrocentas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "um juramento em Mispá",
+      "feedbackCorrect": "Juramento, ausência e ataque.",
+      "feedbackWrong": {
+        "default": "Comece pelo juramento."
+      },
+      "hint": "O que fecha as quatrocentas?",
+      "learningObjective": "Ordenar o remendo",
+      "evidence": [
+        "Juízes 21:1",
+        "Juízes 21:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 21:1, complete: haviam feito um ___.",
+      "verseRef": "Juízes 21:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "juramento"
+        },
+        {
+          "id": "b",
+          "text": "banquete"
+        },
+        {
+          "id": "c",
+          "text": "templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "haviam feito um juramento em Mispá",
+      "feedbackCorrect": "Juramento.",
+      "feedbackWrong": {
+        "b": "Não é banquete.",
+        "c": "Não é templo."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar juramento.",
+      "evidence": [
+        "Juízes 21:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 21:7 a Eclesiastes 5:4?",
+      "verseRef": "Juízes 21:7",
+      "passageA": {
+        "ref": "Juízes 21:7"
+      },
+      "passageB": {
+        "ref": "Eclesiastes 5:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Pague o voto a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Ignore o juramento"
+        },
+        {
+          "id": "c",
+          "text": "Vote sem peso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois juramos ao Senhor",
+      "feedbackCorrect": "Voto perante Deus.",
+      "feedbackWrong": {
+        "b": "Não ignorar.",
+        "c": "Há peso."
+      },
+      "hint": "Compare o voto.",
+      "learningObjective": "Ligar a Eclesiastes.",
+      "evidence": [
+        "Juízes 21:7",
+        "Eclesiastes 5:4"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 21:10, o remendo do juramento é feito sem violência.",
+      "verseRef": "Juízes 21:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "passem ao fio da espada os moradores de Jabes-Gileade",
+      "feedbackCorrect": "Há violência.",
+      "feedbackWrong": {
+        "true": "Fio da espada."
+      },
+      "hint": "Leia a ordem.",
+      "learningObjective": "Avaliar o remendo.",
+      "evidence": [
+        "Juízes 21:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 21:8, toque a cidade ausente.",
+      "verseRef": "Juízes 21:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jabes-Gileade"
+        },
+        {
+          "id": "b",
+          "text": "Mispá"
+        },
+        {
+          "id": "c",
+          "text": "acampamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ninguém de Jabes-Gileade veio ao acampamento",
+      "feedbackCorrect": "Jabes-Gileade.",
+      "feedbackWrong": {
+        "b": "Mispá é a assembleia.",
+        "c": "Acampamento é o destino."
+      },
+      "hint": "Veja quem não veio.",
+      "learningObjective": "Tocar Jabes-Gileade.",
+      "evidence": [
+        "Juízes 21:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une juramento e povo partido?",
+      "verseRef": "Juízes 21:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "O juramento deixa falta de tribo e pede remendo violento"
+        },
+        {
+          "id": "b",
+          "text": "O juramento cura tudo"
+        },
+        {
+          "id": "c",
+          "text": "Sem ausência não há dor"
+        },
+        {
+          "id": "d",
+          "text": "Siló ordenou o voto"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que hoje falta uma tribo",
+      "feedbackCorrect": "Povo partido.",
+      "feedbackWrong": {
+        "b": "Há remendo.",
+        "c": "Há dor.",
+        "d": "Voto em Mispá."
+      },
+      "hint": "Una juramento e falta.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 21:3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento do remendo.",
+      "verseRef": "Juízes 21:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Juramento impede esposas"
+        },
+        {
+          "id": "b",
+          "text": "Descobrem Jabes ausente"
+        },
+        {
+          "id": "c",
+          "text": "Trazem quatrocentas virgens"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "quatrocentas moças virgens",
+      "feedbackCorrect": "Voto, ausência e moças.",
+      "feedbackWrong": {
+        "default": "Comece pelo juramento."
+      },
+      "hint": "O que trazem?",
+      "learningObjective": "Encadear o remendo",
+      "evidence": [
+        "Juízes 21:1",
+        "Juízes 21:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 21:12, complete: ___ moças virgens.",
+      "verseRef": "Juízes 21:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "quatrocentas"
+        },
+        {
+          "id": "b",
+          "text": "doze"
+        },
+        {
+          "id": "c",
+          "text": "mil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "quatrocentas moças virgens",
+      "feedbackCorrect": "Quatrocentas.",
+      "feedbackWrong": {
+        "b": "Não são doze.",
+        "c": "Não são mil."
+      },
+      "hint": "Veja o número.",
+      "learningObjective": "Lembrar quatrocentas.",
+      "evidence": [
+        "Juízes 21:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 21:10 a Provérbios 20:25?",
+      "verseRef": "Juízes 21:10",
+      "passageA": {
+        "ref": "Juízes 21:10"
+      },
+      "passageB": {
+        "ref": "Provérbios 20:25"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Laço falar depressa"
+        },
+        {
+          "id": "b",
+          "text": "Voto sem custo"
+        },
+        {
+          "id": "c",
+          "text": "Paz sem espada"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "passem ao fio da espada os moradores de Jabes-Gileade",
+      "feedbackCorrect": "Laço do voto.",
+      "feedbackWrong": {
+        "b": "Há custo.",
+        "c": "Há espada."
+      },
+      "hint": "Compare o laço.",
+      "learningObjective": "Ligar a Provérbios.",
+      "evidence": [
+        "Juízes 21:10",
+        "Provérbios 20:25"
+      ]
+    }
+  ]
+}

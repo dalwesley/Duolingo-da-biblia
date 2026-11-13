@@ -1,0 +1,505 @@
+{
+  "study": {
+    "passageRef": "Atos 21:10–14",
+    "passages": [
+      { "ref": "Atos 21:10–14" }
+    ],
+    "context": "Paulo viaja para Jerusalém e para em Cesaréia, na casa de Filipe. Ali chega um profeta da Judéia. Os amigos de Paulo já sabem que a cidade guarda perigo para ele.",
+    "keyword": "Estou preparado",
+    "keywordGloss": "Paulo diz que está pronto não só para ser preso, mas também para morrer por causa do nome do Senhor Jesus.",
+    "focusQuestion": "O que você ainda segura com as próprias mãos e precisa entregar ao Senhor?",
+    "reflectionPrompts": [
+      "O sinal do cinto",
+      "O choro dos amigos",
+      "A vontade do Senhor"
+    ],
+    "facts": [
+      {
+        "text": "Um profeta chamado Ágabo desce da Judéia.",
+        "evidenceRef": "Atos 21:10",
+        "evidenceSpan": "desceu da Judéia um profeta chamado Ágabo"
+      },
+      {
+        "text": "Ágabo pega o cinto de Paulo e liga os próprios pés e mãos.",
+        "evidenceRef": "Atos 21:11",
+        "evidenceSpan": "ele pegou o cinto de Paulo, ligou os próprios pés e mãos"
+      },
+      {
+        "text": "Ágabo diz que os judeus entregarão o dono do cinto aos gentios.",
+        "evidenceRef": "Atos 21:11",
+        "evidenceSpan": "ligarão o dono deste cinto e o entregarão nas mãos dos gentios"
+      },
+      {
+        "text": "Os que estavam ali suplicam a Paulo que não suba a Jerusalém.",
+        "evidenceRef": "Atos 21:12",
+        "evidenceSpan": "suplicamos a Paulo que não subisse a Jerusalém"
+      },
+      {
+        "text": "Paulo diz estar preparado para ser preso e até para morrer em Jerusalém.",
+        "evidenceRef": "Atos 21:13",
+        "evidenceSpan": "Estou preparado não apenas para ser preso, mas também para morrer em Jerusalém"
+      },
+      {
+        "text": "Sem conseguir persuadi-lo, os amigos dizem: Faça-se a vontade do Senhor.",
+        "evidenceRef": "Atos 21:14",
+        "evidenceSpan": "Faça-se a vontade do Senhor!"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Espírito Santo",
+        "gloss": "Quem Ágabo diz estar falando por trás do aviso: a palavra sobre a prisão vem do Senhor."
+      },
+      {
+        "term": "preparado",
+        "gloss": "Paulo não é surpreendido: ele já se entregou ao que vier por causa de Jesus."
+      },
+      {
+        "term": "vontade do Senhor",
+        "gloss": "O desfecho que os amigos entregam ao Senhor quando já não conseguem convencer Paulo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ágabo chega da Judéia",
+        "evidenceRef": "Atos 21:10"
+      },
+      {
+        "label": "O cinto e o aviso da prisão",
+        "evidenceRef": "Atos 21:11"
+      },
+      {
+        "label": "O pedido dos amigos para Paulo não subir",
+        "evidenceRef": "Atos 21:12"
+      },
+      {
+        "label": "Paulo se diz pronto e todos se entregam ao Senhor",
+        "evidenceRef": "Atos 21:13–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Todos pedem que Paulo não suba, mas ele responde que está pronto para ser preso e até morrer.",
+        "marker": "porém",
+        "evidenceRef": "Atos 21:13"
+      },
+      {
+        "kind": "resultado",
+        "text": "Como não conseguem persuadir Paulo, os amigos se conformam e entregam o caso à vontade do Senhor.",
+        "marker": "como",
+        "evidenceRef": "Atos 21:14"
+      },
+      {
+        "kind": "causa",
+        "text": "Paulo aceita a prisão e a morte por causa do nome do Senhor Jesus.",
+        "marker": null,
+        "evidenceRef": "Atos 21:13"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Atos 20:22–23",
+        "bridge": "Prisões já anunciadas a Paulo"
+      },
+      {
+        "ref": "Lucas 22:42",
+        "bridge": "Entrega à vontade de Deus"
+      },
+      {
+        "ref": "Filipenses 1:21",
+        "bridge": "Viver e morrer por Cristo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Ágabo quer impedir Paulo de ir a Jerusalém.",
+        "why": "Ágabo apenas anuncia o que o Espírito Santo diz; quem suplica a Paulo são os que estavam ali."
+      },
+      {
+        "text": "Paulo ignora o Espírito Santo e vai por conta própria.",
+        "why": "Paulo não nega a palavra: ele aceita ser preso e até morrer por causa do nome do Senhor Jesus."
+      },
+      {
+        "text": "Paulo cede ao choro dos amigos e muda de ideia.",
+        "why": "O texto diz que não puderam persuadi-lo; foram eles que se conformaram."
+      }
+    ],
+    "centralInsight": "Paulo está pronto até para morrer pelo nome de Jesus: faça-se a vontade do Senhor.",
+    "anchorQuestion": "O que Paulo respondeu aos amigos que choravam e pediam que ele não subisse a Jerusalém?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Atos 21:11, Ágabo pega o cinto de Paulo e liga os próprios pés e mãos.",
+      "verseRef": "Atos 21:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "ele pegou o cinto de Paulo, ligou os próprios pés e mãos",
+      "feedbackCorrect": "Ágabo usa o cinto de Paulo e amarra os próprios pés e mãos.",
+      "feedbackWrong": {
+        "false": "Releia o início de Atos 21:11: Ágabo pega o cinto e liga os próprios pés e mãos."
+      },
+      "hint": "Veja o que Ágabo faz ao se aproximar.",
+      "learningObjective": "Observar o gesto que Ágabo faz com o cinto de Paulo.",
+      "evidence": ["Atos 21:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Atos 21:10, toque o nome do profeta que desce da Judéia.",
+      "verseRef": "Atos 21:10",
+      "options": [
+        { "id": "a", "text": "Judéia" },
+        { "id": "b", "text": "Ágabo" },
+        { "id": "c", "text": "alguns dias" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "um profeta chamado Ágabo",
+      "feedbackCorrect": "O profeta que chega a Cesaréia se chama Ágabo.",
+      "feedbackWrong": {
+        "a": "Judéia é o lugar de onde ele vem, não o nome do profeta.",
+        "c": "\"Alguns dias\" marca o tempo da estadia, não o nome."
+      },
+      "hint": "Procure o nome próprio do profeta.",
+      "learningObjective": "Identificar o profeta que anuncia a prisão de Paulo.",
+      "evidence": ["Atos 21:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Atos 21:11, o que Ágabo diz que vai acontecer ao dono do cinto?",
+      "verseRef": "Atos 21:11",
+      "options": [
+        { "id": "a", "text": "Seria preso pelos judeus e entregue aos gentios" },
+        { "id": "b", "text": "Seria expulso de Jerusalém pelos gentios" },
+        { "id": "c", "text": "Seria recebido com festa pelos judeus" },
+        { "id": "d", "text": "Seria solto pelos gentios no dia seguinte" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ligarão o dono deste cinto e o entregarão nas mãos dos gentios",
+      "feedbackCorrect": "Ágabo anuncia que os judeus ligarão Paulo e o entregarão aos gentios.",
+      "feedbackWrong": {
+        "b": "O aviso fala de prisão e entrega, não de expulsão.",
+        "c": "A recepção alegre só vem depois, em Atos 21:17, entre os irmãos.",
+        "d": "Ágabo não fala de libertação, mas de entrega aos gentios."
+      },
+      "hint": "Leia o que Ágabo diz depois de \"Isto diz o Espírito Santo\".",
+      "learningObjective": "Observar o que o aviso de Ágabo anuncia.",
+      "evidence": ["Atos 21:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte a resposta de Paulo em Atos 21:13 na ordem do texto.",
+      "verseRef": "Atos 21:13",
+      "options": [
+        { "id": "a", "text": "Por que vocês estão chorando e me afligindo o coração?" },
+        { "id": "b", "text": "Estou preparado não apenas para ser preso" },
+        { "id": "c", "text": "mas também para morrer em Jerusalém por causa do nome do Senhor Jesus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Por que vocês estão chorando e me afligindo o coração?",
+      "feedbackCorrect": "Paulo começa perguntando pelo choro e termina dizendo por quem está pronto a morrer.",
+      "feedbackWrong": {
+        "default": "A resposta começa com a pergunta sobre o choro e termina com o nome do Senhor Jesus."
+      },
+      "hint": "A resposta de Paulo abre com uma pergunta.",
+      "learningObjective": "Reconhecer a sequência da resposta de Paulo.",
+      "evidence": ["Atos 21:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Atos 21:12, que verbo mostra o que os amigos pedem que Paulo não faça?",
+      "verseRef": "Atos 21:12",
+      "options": [
+        { "id": "a", "text": "subisse" },
+        { "id": "b", "text": "descesse" },
+        { "id": "c", "text": "voltasse" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "suplicamos a Paulo que não subisse a Jerusalém",
+      "feedbackCorrect": "Eles suplicam que Paulo não suba a Jerusalém.",
+      "feedbackWrong": {
+        "b": "O pedido é sobre a ida a Jerusalém, e não sobre descer.",
+        "c": "Paulo ainda não estava voltando: o pedido era para que não fosse."
+      },
+      "hint": "Olhe o fim do versículo, antes de Jerusalém.",
+      "learningObjective": "Lembrar o pedido que os amigos fazem a Paulo.",
+      "evidence": ["Atos 21:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Atos 21:11 comunica que se liga a este contexto?",
+      "verseRef": "Atos 21:11",
+      "passageA": { "ref": "Atos 21:11" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Em Cesaréia, um profeta anuncia que Paulo será preso em Jerusalém."
+      },
+      "options": [
+        { "id": "a", "text": "Aviso da prisão em Jerusalém" },
+        { "id": "b", "text": "Paulo desiste da viagem" },
+        { "id": "c", "text": "Gentios recebem Paulo com festa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ligarão o dono deste cinto e o entregarão nas mãos dos gentios",
+      "feedbackCorrect": "O gesto do cinto anuncia a prisão de Paulo em Jerusalém.",
+      "feedbackWrong": {
+        "b": "O versículo não fala de desistência; fala do que o espera.",
+        "c": "A entrega aos gentios é parte do aviso de prisão, não uma festa."
+      },
+      "hint": "Pense no que o cinto amarrado representa.",
+      "learningObjective": "Ligar o gesto de Ágabo ao anúncio da prisão de Paulo.",
+      "evidence": ["Atos 21:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Atos 21:12–13, Paulo atende ao pedido dos amigos e desiste de subir a Jerusalém.",
+      "verseRef": "Atos 21:12–13",
+      "correctOptionId": "false",
+      "evidenceSpan": "Paulo, porém, respondeu",
+      "feedbackCorrect": "O \"porém\" marca o contraste: todos pedem que ele não suba, e Paulo diz que está preparado.",
+      "feedbackWrong": {
+        "true": "Releia Atos 21:13: Paulo, porém, responde que está preparado para ser preso e morrer."
+      },
+      "hint": "Repare na palavra que vira a cena entre os dois versículos.",
+      "learningObjective": "Compreender o contraste entre o pedido dos amigos e a resposta de Paulo.",
+      "evidence": ["Atos 21:12–13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Atos 21:13, toque a palavra que marca o contraste com o pedido dos amigos.",
+      "verseRef": "Atos 21:13",
+      "options": [
+        { "id": "a", "text": "porém" },
+        { "id": "b", "text": "respondeu" },
+        { "id": "c", "text": "Por que" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Paulo, porém, respondeu",
+      "feedbackCorrect": "\"Porém\" vira a cena: o pedido de todos encontra a resposta firme de Paulo.",
+      "feedbackWrong": {
+        "b": "\"Respondeu\" indica a ação, mas não marca o contraste.",
+        "c": "\"Por que\" abre a pergunta de Paulo, não o contraste."
+      },
+      "hint": "Procure uma palavra curta entre vírgulas, logo depois do nome.",
+      "learningObjective": "Reconhecer o marcador de contraste na resposta de Paulo.",
+      "evidence": ["Atos 21:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Por que os amigos se conformam, segundo Atos 21:14?",
+      "verseRef": "Atos 21:14",
+      "options": [
+        { "id": "a", "text": "Porque não conseguem convencer Paulo a desistir" },
+        { "id": "b", "text": "Porque Ágabo retira a profecia sobre a prisão" },
+        { "id": "c", "text": "Porque Paulo promete voltar logo para Cesaréia" },
+        { "id": "d", "text": "Porque o Espírito Santo manda que fiquem calados" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como não o podemos persuadir, nos conformamos",
+      "feedbackCorrect": "Sem poder persuadir Paulo, eles se conformam e entregam tudo ao Senhor.",
+      "feedbackWrong": {
+        "b": "Ninguém retira o aviso; o que muda é que eles aceitam a decisão de Paulo.",
+        "c": "O texto não traz promessa de volta; traz o conformar-se.",
+        "d": "Não há ordem de silêncio; eles dizem: Faça-se a vontade do Senhor."
+      },
+      "hint": "Veja a causa logo no começo do versículo.",
+      "learningObjective": "Compreender o motivo que leva os amigos a se conformar.",
+      "evidence": ["Atos 21:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Atos 21:11–12?",
+      "verseRef": "Atos 21:11–12",
+      "options": [
+        { "id": "a", "text": "Ágabo amarra os próprios pés e mãos com o cinto" },
+        { "id": "b", "text": "Ágabo anuncia a entrega do dono do cinto aos gentios" },
+        { "id": "c", "text": "Os que ouvem suplicam que Paulo não suba" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ao ouvirmos essas palavras, tanto nós como os que estavam ali, suplicamos a Paulo",
+      "feedbackCorrect": "Primeiro o gesto, depois o aviso e, por fim, a súplica dos que ouviram.",
+      "feedbackWrong": {
+        "default": "A súplica vem por último: ela é a reação ao gesto e ao aviso de Ágabo."
+      },
+      "hint": "A súplica é a reação ao que Ágabo faz e diz.",
+      "learningObjective": "Compreender o movimento do aviso à súplica.",
+      "evidence": ["Atos 21:11–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Atos 21:14, que verbo mostra o que os amigos não conseguiram fazer para mudar a decisão de Paulo?",
+      "verseRef": "Atos 21:14",
+      "options": [
+        { "id": "a", "text": "persuadir" },
+        { "id": "b", "text": "esquecer" },
+        { "id": "c", "text": "acompanhar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "como não o podemos persuadir",
+      "feedbackCorrect": "Eles não puderam persuadir Paulo, e por isso se conformaram.",
+      "feedbackWrong": {
+        "b": "Esquecer não muda a decisão de ninguém; o texto fala de convencer.",
+        "c": "Acompanhar não muda a decisão; o problema era convencê-lo."
+      },
+      "hint": "Pense no que se faz para mudar a opinião de alguém.",
+      "learningObjective": "Lembrar a ação que não deu resultado e levou ao conformar-se.",
+      "evidence": ["Atos 21:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Atos 21:13 a Atos 20:22–23?",
+      "verseRef": "Atos 21:13",
+      "passageA": { "ref": "Atos 21:13" },
+      "passageB": { "ref": "Atos 20:22–23" },
+      "options": [
+        { "id": "a", "text": "Prisões já anunciadas a Paulo" },
+        { "id": "b", "text": "Paulo recusa subir a Jerusalém" },
+        { "id": "c", "text": "Ágabo escreve a Paulo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estou preparado não apenas para ser preso",
+      "evidence": ["Atos 21:13", "Atos 20:22–23"],
+      "feedbackCorrect": "Nos dois textos, Paulo já sabe que prisões o esperam em Jerusalém.",
+      "feedbackWrong": {
+        "b": "Nos dois textos Paulo está decidido a ir, não a recusar.",
+        "c": "Em Atos 20 não há carta de Ágabo; é o Espírito que avisa Paulo."
+      },
+      "hint": "Compare o que Paulo já sabe sobre Jerusalém nos dois textos.",
+      "learningObjective": "Ligar a resposta de Paulo ao aviso que ele já tinha recebido."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Atos 21:13 mostra que Paulo enfrenta Jerusalém por causa do nome de Jesus, e não por teimosia.",
+      "verseRef": "Atos 21:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "por causa do nome do Senhor Jesus",
+      "feedbackCorrect": "Paulo diz que aceita ser preso e morrer por causa do nome do Senhor Jesus.",
+      "feedbackWrong": {
+        "false": "O texto dá a razão: Paulo está pronto por causa do nome do Senhor Jesus."
+      },
+      "hint": "Veja o motivo que Paulo dá ao fim do versículo.",
+      "learningObjective": "Interpretar a firmeza de Paulo como entrega a Jesus.",
+      "evidence": ["Atos 21:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Atos 21:13, toque o trecho que sustenta a razão pela qual Paulo aceita até a morte.",
+      "verseRef": "Atos 21:13",
+      "options": [
+        { "id": "a", "text": "nome do Senhor" },
+        { "id": "b", "text": "chorando" },
+        { "id": "c", "text": "ser preso" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "por causa do nome do Senhor Jesus",
+      "feedbackCorrect": "A razão de Paulo é o nome do Senhor Jesus: ele aceita tudo por causa dele.",
+      "feedbackWrong": {
+        "b": "O choro é a reação dos amigos, não a razão de Paulo.",
+        "c": "Ser preso é o que Paulo aceita, não a razão pela qual aceita."
+      },
+      "hint": "Procure o motivo, não o que Paulo aceita sofrer.",
+      "learningObjective": "Sustentar com o texto o motivo da entrega de Paulo.",
+      "evidence": ["Atos 21:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura de Atos 21:13–14 o texto sustenta melhor?",
+      "verseRef": "Atos 21:13–14",
+      "options": [
+        { "id": "a", "text": "Paulo conhece o custo e se entrega ao Senhor, pronto até para morrer" },
+        { "id": "b", "text": "Paulo ignora o aviso do Espírito e segue por conta própria" },
+        { "id": "c", "text": "Ágabo tenta impedir Paulo de chegar a Jerusalém" },
+        { "id": "d", "text": "Paulo cede ao choro dos amigos e muda de ideia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Estou preparado não apenas para ser preso, mas também para morrer em Jerusalém",
+      "feedbackCorrect": "Paulo sabe o que o espera e se entrega ao Senhor; os amigos acabam aceitando.",
+      "feedbackWrong": {
+        "b": "Paulo não nega o aviso: ele aceita a prisão e a morte por Jesus.",
+        "c": "Ágabo só anuncia o que o Espírito diz; quem suplica são os amigos.",
+        "d": "Os amigos não o persuadem; são eles que se conformam."
+      },
+      "hint": "Compare cada opção com o que Paulo e os amigos fazem no fim.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta sobre a decisão de Paulo.",
+      "evidence": ["Atos 21:13–14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra como Paulo chega pronto a Jerusalém?",
+      "verseRef": "Atos 21:11",
+      "options": [
+        { "id": "a", "text": "O Espírito já anunciava prisões a Paulo em cada cidade" },
+        { "id": "b", "text": "Ágabo mostra com o cinto o que espera Paulo em Jerusalém" },
+        { "id": "c", "text": "Paulo se diz pronto até para morrer pelo Senhor Jesus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "ligarão o dono deste cinto e o entregarão nas mãos dos gentios",
+      "evidence": ["Atos 20:22–23", "Atos 21:11", "Atos 21:13"],
+      "feedbackCorrect": "O aviso vem de antes, é repetido por Ágabo e termina na entrega de Paulo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos textos: aviso em Atos 20, sinal em Atos 21:11 e resposta em 21:13."
+      },
+      "hint": "Siga a ordem dos textos: Atos 20, Atos 21:11 e Atos 21:13.",
+      "learningObjective": "Ver a resposta de Paulo como fim de um aviso repetido."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Atos 21:14, o que os amigos pedem que se faça, entregando o desfecho ao Senhor?",
+      "verseRef": "Atos 21:14",
+      "options": [
+        { "id": "a", "text": "vontade" },
+        { "id": "b", "text": "glória" },
+        { "id": "c", "text": "palavra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Faça-se a vontade do Senhor!",
+      "feedbackCorrect": "Eles entregam o desfecho à vontade do Senhor, em vez de insistirem na própria.",
+      "feedbackWrong": {
+        "b": "O pedido é sobre o que o Senhor quer, não sobre glória.",
+        "c": "O texto não pede que se faça a palavra, mas aquilo que o Senhor quer."
+      },
+      "hint": "Pense na entrega que Jesus faz na oração do Getsêmani.",
+      "learningObjective": "Lembrar o termo que carrega o sentido de entregar a vida ao Senhor.",
+      "evidence": ["Atos 21:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Atos 21:14 a Lucas 22:42?",
+      "verseRef": "Atos 21:14",
+      "passageA": { "ref": "Atos 21:14" },
+      "passageB": { "ref": "Lucas 22:42" },
+      "options": [
+        { "id": "a", "text": "Entrega à vontade de Deus" },
+        { "id": "b", "text": "Fuga diante do perigo" },
+        { "id": "c", "text": "Recusa do sofrimento" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Faça-se a vontade do Senhor!",
+      "evidence": ["Atos 21:14", "Lucas 22:42"],
+      "feedbackCorrect": "Nos dois textos, a vontade do Senhor vem antes da própria vontade, mesmo diante da dor.",
+      "feedbackWrong": {
+        "b": "Nenhum dos textos mostra fuga: ambos aceitam o caminho que o Senhor quer.",
+        "c": "Jesus e os amigos de Paulo aceitam o sofrimento, não o recusam."
+      },
+      "hint": "Compare o que se pede nas duas orações: a vontade de quem?",
+      "learningObjective": "Ligar a entrega de Paulo à entrega de Jesus no Getsêmani."
+    }
+  ]
+}

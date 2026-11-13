@@ -65,6 +65,11 @@ async function leaveRooms(db, uid) {
 
     await member.delete();
     await room.collection('nudges').doc(uid).delete();
+    // Respostas às perguntas do propósito (answers/{planId_dia}/by/{uid}).
+    const answerDays = await room.collection('answers').listDocuments();
+    await Promise.all(
+      answerDays.map((day) => day.collection('by').doc(uid).delete()),
+    );
     if (!owns) continue;
 
     const others = await room
@@ -209,6 +214,9 @@ async function purgeUserData(db, uid, logger) {
         db.doc(`${TOMBSTONES}/${uid}`).set({ deletedAt: FieldValue.serverTimestamp() }),
     ],
     ['perfil', () => db.recursiveDelete(db.doc(`users/${uid}`))],
+    // Saldo de meses ganhos por convite (referral.js). A marca de quem
+    // convidou mora em users/{uid}/server e sai junto com o perfil.
+    ['indicações', () => db.doc(`referralRewards/${uid}`).delete()],
     ['placares', async () => deleteRefs(db, await rankingRefs(db, uid))],
     ['grupos', () => leaveRooms(db, uid)],
     ['companhias', () => leaveCompanions(db, uid)],

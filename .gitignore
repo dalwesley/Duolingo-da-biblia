@@ -54,3 +54,9 @@ admin/arte/cenas/provisorio/
 
 # Marketing: imagens geradas (regerar com marketing/tools/*.py)
 marketing/out/
+
+# V3: rascunhos e logs de geração (regeneráveis)
+admin/v3/_build_tmp/
+admin/v3/_tmp_*/
+admin/v3/*/logs/
+admin/v3/admin/

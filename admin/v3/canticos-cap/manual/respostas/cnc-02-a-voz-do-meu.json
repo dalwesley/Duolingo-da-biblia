@@ -1,0 +1,497 @@
+{
+  "study": {
+    "passageRef": "Cantares 2:7–12",
+    "passages": [
+      { "ref": "Cantares 2:1–6" },
+      { "ref": "Cantares 2:7–12" }
+    ],
+    "context": "A amada se descreve entre flores e espinhos; o amado a chama quando o inverno passa. O amor tem tempo certo.",
+    "keyword": "inverno",
+    "keywordGloss": "A estação que já se foi: o chamado do amado chega no tempo certo.",
+    "focusQuestion": "Que chamado de amor você ainda deixa para um \"tempo perfeito\" que atrasa o encontro?",
+    "reflectionPrompts": [
+      "Tempo do amor",
+      "Voz que chama",
+      "Inverno que passa"
+    ],
+    "facts": [
+      {
+        "text": "Ela se chama rosa de Sarom e lírio dos vales.",
+        "evidenceRef": "Cantares 2:1",
+        "evidenceSpan": "Eu sou a rosa de Sarom, o lírio dos vales"
+      },
+      {
+        "text": "O estandarte dele sobre ela é o amor.",
+        "evidenceRef": "Cantares 2:4",
+        "evidenceSpan": "o seu estandarte sobre mim é o amor"
+      },
+      {
+        "text": "Ela conjura as filhas de Jerusalém a não despertar o amor antes da hora.",
+        "evidenceRef": "Cantares 2:7",
+        "evidenceSpan": "que não acordeis nem desperteis o amor até que este queira"
+      },
+      {
+        "text": "A voz do amado vem galgando os montes.",
+        "evidenceRef": "Cantares 2:8",
+        "evidenceSpan": "A voz do meu amado! Ei-lo aí, galgando os montes"
+      },
+      {
+        "text": "Ele diz: Levanta-te, querida minha, formosa minha, e vem.",
+        "evidenceRef": "Cantares 2:10",
+        "evidenceSpan": "Levanta-te, querida minha, formosa minha, e vem"
+      },
+      {
+        "text": "O inverno já se foi; a chuva cessou e desapareceu.",
+        "evidenceRef": "Cantares 2:11",
+        "evidenceSpan": "o inverno já se foi, a chuva cessou e desapareceu"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "inverno",
+        "gloss": "A estação que passou: sinal de que chegou o tempo do chamado."
+      },
+      {
+        "term": "estandarte",
+        "gloss": "O sinal do amado sobre ela: o amor."
+      },
+      {
+        "term": "desperteis",
+        "gloss": "O verbo da conjura: não acordar o amor antes que ele queira."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ela se situa entre flores e o abrigo do amado",
+        "evidenceRef": "Cantares 2:1–6"
+      },
+      {
+        "label": "A conjura protege o tempo do amor",
+        "evidenceRef": "Cantares 2:7"
+      },
+      {
+        "label": "A voz do amado chega saltando",
+        "evidenceRef": "Cantares 2:8–10"
+      },
+      {
+        "label": "O inverno passou e a terra floresce",
+        "evidenceRef": "Cantares 2:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "propósito",
+        "text": "A conjura pede que não despertem o amor até que este queira.",
+        "marker": "até que",
+        "evidenceRef": "Cantares 2:7"
+      },
+      {
+        "kind": "causa",
+        "text": "O chamado para levantar-se vem porque o inverno já se foi.",
+        "marker": "Pois",
+        "evidenceRef": "Cantares 2:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Com o inverno passado, flores surgem e a voz da rola ressoa.",
+        "marker": null,
+        "evidenceRef": "Cantares 2:12"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Eclesiastes 3:1", "bridge": "Há tempo para cada propósito" },
+      { "ref": "Apocalipse 3:20", "bridge": "A voz que chama à porta" },
+      { "ref": "João 10:3", "bridge": "As ovelhas ouvem a voz" }
+    ],
+    "misreadings": [
+      {
+        "text": "O amor cristão deve ser forçado e acordado a qualquer hora.",
+        "why": "2:7 pede que não despertem o amor até que este queira."
+      },
+      {
+        "text": "O inverno nunca passa; o chamado do amado é sempre cedo demais.",
+        "why": "2:11 diz que o inverno já se foi."
+      },
+      {
+        "text": "A voz do amado é só metáfora sem convite concreto.",
+        "why": "2:10 traz palavras claras: Levanta-te… e vem."
+      }
+    ],
+    "centralInsight": "O amor desperta no tempo certo: o inverno passa, e a voz chama para fora.",
+    "anchorQuestion": "Segundo Cantares 2:11, o que já se foi quando o amado chama?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Cantares 2:11, o inverno já se foi e a chuva cessou.",
+      "verseRef": "Cantares 2:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "o inverno já se foi, a chuva cessou e desapareceu",
+      "feedbackCorrect": "O texto afirma: o inverno passou e a chuva cessou.",
+      "feedbackWrong": {
+        "false": "Releia 2:11: o inverno já se foi."
+      },
+      "hint": "Veja o que o versículo diz sobre o inverno.",
+      "learningObjective": "Observar que o inverno já passou.",
+      "evidence": ["Cantares 2:11"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Cantares 2:8, toque o que anuncia a chegada do amado.",
+      "verseRef": "Cantares 2:8",
+      "options": [
+        { "id": "a", "text": "A voz" },
+        { "id": "b", "text": "os montes" },
+        { "id": "c", "text": "outeiros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "A voz do meu amado",
+      "feedbackCorrect": "É a voz do amado que se anuncia primeiro.",
+      "feedbackWrong": {
+        "b": "Os montes são o caminho; o anúncio é a voz.",
+        "c": "Outeiros descrevem o salto; o anúncio é a voz."
+      },
+      "hint": "Comece pelas primeiras palavras do versículo.",
+      "learningObjective": "Identificar a voz como sinal da chegada.",
+      "evidence": ["Cantares 2:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Cantares 2:4, o que é o estandarte do amado sobre ela?",
+      "verseRef": "Cantares 2:4",
+      "options": [
+        { "id": "a", "text": "O amor" },
+        { "id": "b", "text": "O medo" },
+        { "id": "c", "text": "A guerra" },
+        { "id": "d", "text": "O silêncio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o seu estandarte sobre mim é o amor",
+      "feedbackCorrect": "O estandarte sobre ela é o amor.",
+      "feedbackWrong": {
+        "b": "O texto não fala de medo como estandarte.",
+        "c": "Não é guerra: é amor.",
+        "d": "Há estandarte nomeado: o amor."
+      },
+      "hint": "Leia o fim do versículo.",
+      "learningObjective": "Reconhecer o estandarte como amor.",
+      "evidence": ["Cantares 2:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Cantares 2:10 na ordem do texto.",
+      "verseRef": "Cantares 2:10",
+      "options": [
+        { "id": "a", "text": "O meu amado fala e me diz" },
+        { "id": "b", "text": "Levanta-te, querida minha, formosa minha" },
+        { "id": "c", "text": "e vem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O meu amado fala e me diz: Levanta-te, querida minha, formosa minha, e vem",
+      "feedbackCorrect": "Primeiro ele fala; depois o chamado; por fim o \"vem\".",
+      "feedbackWrong": {
+        "default": "Comece pela fala do amado; o \"vem\" fecha o convite."
+      },
+      "hint": "Siga a ordem: fala, chamado, convite.",
+      "learningObjective": "Seguir a ordem literal do convite.",
+      "evidence": ["Cantares 2:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Cantares 2:4, o estandarte sobre ela é o quê?",
+      "verseRef": "Cantares 2:4",
+      "options": [
+        { "id": "a", "text": "amor" },
+        { "id": "b", "text": "medo" },
+        { "id": "c", "text": "ouro" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o seu estandarte sobre mim é o amor",
+      "feedbackCorrect": "O estandarte é o amor.",
+      "feedbackWrong": {
+        "b": "O texto não coloca medo no estandarte.",
+        "c": "Não é ouro: é amor."
+      },
+      "hint": "Veja a última palavra do versículo.",
+      "learningObjective": "Lembrar a palavra-chave do estandarte.",
+      "evidence": ["Cantares 2:4"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Cantares 2:11 comunica que se liga a este contexto?",
+      "verseRef": "Cantares 2:11",
+      "passageA": { "ref": "Cantares 2:11" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O amado chama a amada quando a estação muda e o tempo do encontro chega."
+      },
+      "options": [
+        { "id": "a", "text": "O inverno já passou" },
+        { "id": "b", "text": "O inverno nunca acaba" },
+        { "id": "c", "text": "A chuva apenas começa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o inverno já se foi",
+      "feedbackCorrect": "O contexto do tempo certo aparece assim: o inverno já se foi.",
+      "feedbackWrong": {
+        "b": "O texto diz que o inverno já se foi.",
+        "c": "A chuva cessou e desapareceu."
+      },
+      "hint": "Veja o que já se foi no versículo.",
+      "learningObjective": "Ligar o contexto do chamado ao fim do inverno.",
+      "evidence": ["Cantares 2:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Cantares 2:7, a conjura pede que despertem o amor imediatamente, sem esperar.",
+      "verseRef": "Cantares 2:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "que não acordeis nem desperteis o amor até que este queira",
+      "feedbackCorrect": "O texto pede o contrário: não despertar até que o amor queira.",
+      "feedbackWrong": {
+        "true": "Releia: a ordem é não despertar o amor antes da hora."
+      },
+      "hint": "Olhe o \"até que\" no fim do versículo.",
+      "learningObjective": "Ver o propósito de proteger o tempo do amor.",
+      "evidence": ["Cantares 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Cantares 2:7, toque as palavras que marcam o limite do despertar.",
+      "verseRef": "Cantares 2:7",
+      "options": [
+        { "id": "a", "text": "até que" },
+        { "id": "b", "text": "filhas de" },
+        { "id": "c", "text": "do campo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "até que este queira",
+      "feedbackCorrect": "\"Até que\" marca o limite: só quando o amor quiser.",
+      "feedbackWrong": {
+        "b": "Isso nomeia as ouvintes, e não o limite do tempo.",
+        "c": "Isso fecha a imagem das gazelas, e não o limite."
+      },
+      "hint": "Procure a expressão perto do fim do versículo.",
+      "learningObjective": "Tocar o marcador de propósito/tempo.",
+      "evidence": ["Cantares 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Cantares 2:10–11 estabelece entre o chamado e a estação?",
+      "verseRef": "Cantares 2:10–11",
+      "options": [
+        { "id": "a", "text": "Ele chama porque o inverno já passou" },
+        { "id": "b", "text": "Ele chama apesar do inverno continuar" },
+        { "id": "c", "text": "Ele chama para trazer de volta a chuva" },
+        { "id": "d", "text": "Ele chama sem qualquer motivo no texto" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois eis que o inverno já se foi",
+      "feedbackCorrect": "O \"Pois\" liga o convite ao fim do inverno.",
+      "feedbackWrong": {
+        "b": "O texto diz que o inverno já se foi.",
+        "c": "A chuva cessou; não volta pelo chamado.",
+        "d": "Há motivo explícito: a mudança de estação."
+      },
+      "hint": "Leia o \"Pois\" que abre o versículo 11.",
+      "learningObjective": "Relacionar o chamado ao fim do inverno.",
+      "evidence": ["Cantares 2:10–11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Cantares 2:7–12.",
+      "verseRef": "Cantares 2:10–11",
+      "options": [
+        { "id": "a", "text": "A conjura protege o tempo do amor" },
+        { "id": "b", "text": "A voz do amado chega saltando" },
+        { "id": "c", "text": "O inverno passou e a terra floresce" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o inverno já se foi",
+      "feedbackCorrect": "Primeiro a proteção do tempo; depois a voz; por fim a primavera.",
+      "feedbackWrong": {
+        "default": "Comece pela conjura; a floração vem depois da voz."
+      },
+      "hint": "Siga de 2:7 a 2:12.",
+      "learningObjective": "Ordenar a estrutura do chamado no tempo certo.",
+      "evidence": ["Cantares 2:7–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Cantares 2:11, que palavra marca a razão do chamado?",
+      "verseRef": "Cantares 2:11",
+      "options": [
+        { "id": "a", "text": "Pois" },
+        { "id": "b", "text": "Mas" },
+        { "id": "c", "text": "Se" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Pois eis que o inverno já se foi",
+      "feedbackCorrect": "\"Pois\" liga o convite à razão: o inverno passou.",
+      "feedbackWrong": {
+        "b": "O versículo não abre com contraste \"Mas\".",
+        "c": "Não é condição \"Se\": é razão \"Pois\"."
+      },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de causa do chamado.",
+      "evidence": ["Cantares 2:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Cantares 2:11 a Eclesiastes 3:1?",
+      "verseRef": "Cantares 2:11",
+      "passageA": { "ref": "Cantares 2:11" },
+      "passageB": { "ref": "Eclesiastes 3:1" },
+      "options": [
+        { "id": "a", "text": "Há tempo para cada propósito" },
+        { "id": "b", "text": "Todo tempo é igual sempre" },
+        { "id": "c", "text": "O tempo não importa ao amor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o inverno já se foi",
+      "feedbackCorrect": "Os dois textos afirmam estações e tempo próprio.",
+      "feedbackWrong": {
+        "b": "Ambos mostram diferença de tempos e estações.",
+        "c": "O Cântico liga o chamado à mudança de estação."
+      },
+      "hint": "Compare a mudança de estação com o tempo designado.",
+      "learningObjective": "Ligar o fim do inverno ao tempo para cada propósito.",
+      "evidence": ["Cantares 2:11", "Eclesiastes 3:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Cantares 2:7 ensina que o amor deve ser forçado a despertar a qualquer hora.",
+      "verseRef": "Cantares 2:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "que não acordeis nem desperteis o amor até que este queira",
+      "feedbackCorrect": "A conjura protege o tempo: não despertar até que o amor queira.",
+      "feedbackWrong": {
+        "true": "O texto pede o oposto: não forçar o despertar."
+      },
+      "hint": "Leia o que a conjura manda não fazer.",
+      "learningObjective": "Rejeitar a leitura de amor forçado.",
+      "evidence": ["Cantares 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Cantares 2:10, toque o trecho que sustenta o convite concreto.",
+      "verseRef": "Cantares 2:10",
+      "options": [
+        { "id": "a", "text": "e vem" },
+        { "id": "b", "text": "me diz" },
+        { "id": "c", "text": "amado fala" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "formosa minha, e vem",
+      "feedbackCorrect": "O convite concreto fecha assim: \"e vem\".",
+      "feedbackWrong": {
+        "b": "\"Me diz\" introduz a fala; o convite está no fim.",
+        "c": "Isso descreve quem fala; o convite é \"e vem\"."
+      },
+      "hint": "Veja as últimas palavras do versículo.",
+      "learningObjective": "Sustentar com o texto o convite concreto.",
+      "evidence": ["Cantares 2:10"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Cantares 2:7–12 sustenta sobre o amor?",
+      "verseRef": "Cantares 2:10–11",
+      "options": [
+        { "id": "a", "text": "O amor desperta no tempo certo, quando o inverno passa" },
+        { "id": "b", "text": "O amor deve ser acordado à força em qualquer estação" },
+        { "id": "c", "text": "O amado chama sem palavras e sem convite" },
+        { "id": "d", "text": "O inverno prova que o encontro nunca chega" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o inverno já se foi",
+      "feedbackCorrect": "A conjura protege o tempo; o chamado vem quando o inverno passa.",
+      "feedbackWrong": {
+        "b": "2:7 proíbe despertar antes da hora.",
+        "c": "2:10 traz palavras claras de convite.",
+        "d": "2:11–12 mostram o inverno passado e a terra em flor."
+      },
+      "hint": "Una a conjura de 2:7 com o \"Pois\" de 2:11.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Cantares 2:10–11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho do tempo ao chamado?",
+      "verseRef": "Cantares 2:10–11",
+      "options": [
+        { "id": "a", "text": "Não despertar o amor antes da hora" },
+        { "id": "b", "text": "O inverno passa e a terra muda" },
+        { "id": "c", "text": "A voz chama: levanta-te e vem" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Levanta-te, querida minha, formosa minha, e vem",
+      "feedbackCorrect": "Do respeito ao tempo chega-se ao chamado quando a estação muda.",
+      "feedbackWrong": {
+        "default": "Comece pela conjura; o convite vem depois da mudança de estação."
+      },
+      "hint": "Siga proteção do tempo → estação → convite.",
+      "learningObjective": "Ver o encadeamento do tempo certo ao chamado.",
+      "evidence": ["Cantares 2:7", "Cantares 2:10–11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Cantares 2:11, que termo nomeia a estação que já passou?",
+      "verseRef": "Cantares 2:11",
+      "options": [
+        { "id": "a", "text": "inverno" },
+        { "id": "b", "text": "verão" },
+        { "id": "c", "text": "outono" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o inverno já se foi",
+      "feedbackCorrect": "O termo é \"inverno\": a estação que já se foi.",
+      "feedbackWrong": {
+        "b": "O texto não nomeia o verão aqui.",
+        "c": "O texto nomeia o inverno."
+      },
+      "hint": "Veja o sujeito de \"já se foi\".",
+      "learningObjective": "Lembrar o termo que carrega a mudança de tempo.",
+      "evidence": ["Cantares 2:11"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Cantares 2:10 a Apocalipse 3:20?",
+      "verseRef": "Cantares 2:10",
+      "passageA": { "ref": "Cantares 2:10" },
+      "passageB": { "ref": "Apocalipse 3:20" },
+      "options": [
+        { "id": "a", "text": "A voz que chama para fora" },
+        { "id": "b", "text": "O silêncio que fecha a porta" },
+        { "id": "c", "text": "A ordem de nunca se levantar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Levanta-te, querida minha, formosa minha, e vem",
+      "feedbackCorrect": "Nos dois textos há uma voz que chama ao encontro.",
+      "feedbackWrong": {
+        "b": "Os textos apontam chamado, não silêncio final.",
+        "c": "O Cântico manda levantar-se e vir."
+      },
+      "hint": "Compare o convite falado nos dois textos.",
+      "learningObjective": "Ligar o chamado do amado à voz à porta.",
+      "evidence": ["Cantares 2:10", "Apocalipse 3:20"]
+    }
+  ]
+}

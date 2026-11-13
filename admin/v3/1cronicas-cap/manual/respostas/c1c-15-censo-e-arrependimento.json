@@ -1,0 +1,697 @@
+{
+  "study": {
+    "passageRef": "1 Crônicas 21:7–17",
+    "passages": [
+      {
+        "ref": "1 Crônicas 21:7–17"
+      }
+    ],
+    "context": "O censo desagrada a Deus; Davi confessa e vê o anjo sobre Jerusalém. Confessar e buscar misericórdia",
+    "keyword": "desagradou",
+    "keywordGloss": "É uma palavra central deste trecho: aparece no texto da cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Censo e arrependimento",
+      "Ação do Senhor",
+      "Resposta do povo"
+    ],
+    "facts": [
+      {
+        "text": "O texto em 1 Crônicas 21:7 afirma: E isso também desagradou a Deus.",
+        "evidenceRef": "1 Crônicas 21:7",
+        "evidenceSpan": "E isso também desagradou a Deus"
+      },
+      {
+        "text": "O texto em 1 Crônicas 21:10 afirma: Vai, e fala a Davi, dizendo: Assim diz o SENHOR: Três.",
+        "evidenceRef": "1 Crônicas 21:10",
+        "evidenceSpan": "Vai, e fala a Davi, dizendo: Assim diz o SENHOR: Três"
+      },
+      {
+        "text": "O texto em 1 Crônicas 21:14 afirma: Então, o SENHOR enviou a peste sobre Israel; e.",
+        "evidenceRef": "1 Crônicas 21:14",
+        "evidenceSpan": "Então, o SENHOR enviou a peste sobre Israel; e"
+      },
+      {
+        "text": "O texto em 1 Crônicas 21:17 afirma: E Davi disse a Deus: Não fui eu que pedi que se.",
+        "evidenceRef": "1 Crônicas 21:17",
+        "evidenceSpan": "E Davi disse a Deus: Não fui eu que pedi que se"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "desagradou",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      },
+      {
+        "term": "feriu",
+        "gloss": "Termo que aparece no trecho e carrega o sentido da cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "A ação inicial se apresenta",
+        "evidenceRef": "1 Crônicas 21:7"
+      },
+      {
+        "label": "A decisão ou conflito avança",
+        "evidenceRef": "1 Crônicas 21:10"
+      },
+      {
+        "label": "O resultado fecha o trecho",
+        "evidenceRef": "1 Crônicas 21:17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O trecho liga ações e resultados em 1 Crônicas 21:14.",
+        "marker": "por",
+        "evidenceRef": "1 Crônicas 21:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Há um desfecho registrado em 1 Crônicas 21:17.",
+        "marker": null,
+        "evidenceRef": "1 Crônicas 21:17"
+      },
+      {
+        "kind": "sequência",
+        "text": "A cena avança de 1 Crônicas 21:7 a 1 Crônicas 21:17.",
+        "marker": null,
+        "evidenceRef": "1 Crônicas 21:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Salmos 23:1",
+        "bridge": "O Senhor é meu pastor"
+      },
+      {
+        "ref": "Salmos 46:1",
+        "bridge": "Deus é refúgio e força"
+      },
+      {
+        "ref": "Salmos 119:105",
+        "bridge": "Lâmpada para os pés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O trecho não fala de Deus nem de responsabilidade humana.",
+        "why": "O texto registra ações de Deus e do povo."
+      },
+      {
+        "text": "Tudo no trecho é só metáfora sem fato histórico.",
+        "why": "O relato apresenta nomes, lugares e ações concretas."
+      },
+      {
+        "text": "Obediência e fé não importam neste capítulo.",
+        "why": "A cena gira em torno da resposta ao Senhor."
+      }
+    ],
+    "centralInsight": "Davi pequenou muito: escolhe cair nas mãos do Senhor, que é misericordioso.",
+    "anchorQuestion": "O que 1 Crônicas 21:7–17 ensina sobre o Senhor e o povo?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 21 —7 o nome desagradou está ausente do versículo",
+      "verseRef": "1 Crônicas 21:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "desagradou",
+      "feedbackCorrect": "O versículo contém \"desagradou\".",
+      "feedbackWrong": {
+        "true": "Releia 1 Crônicas 21:7: \"desagradou\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "1 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 21:7, toque quem ou o quê o texto destaca.",
+      "verseRef": "1 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "isso"
+        },
+        {
+          "id": "c",
+          "text": "feriu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "isso",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "1 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 1 Crônicas 21:10, o que o texto destaca?",
+      "verseRef": "1 Crônicas 21:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "A presença de Vai no relato"
+        },
+        {
+          "id": "b",
+          "text": "A ausência total de nomes"
+        },
+        {
+          "id": "c",
+          "text": "A proibição de orar"
+        },
+        {
+          "id": "d",
+          "text": "A destruição de toda a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vai, e fala a Davi, dizendo: Assim diz o",
+      "feedbackCorrect": "O versículo traz esse elemento no relato.",
+      "feedbackWrong": {
+        "b": "O texto nomeia pessoas e ações.",
+        "c": "Não há essa proibição aqui.",
+        "d": "Isso não é o que o versículo diz."
+      },
+      "hint": "Leia o que o versículo afirma.",
+      "learningObjective": "Identificar o fato do texto.",
+      "evidence": [
+        "1 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 1 Crônicas 21:7 na ordem do texto.",
+      "verseRef": "1 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "desagradou"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "feriu"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "desagradou",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a ordem do texto."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Reconhecer a ordem do texto.",
+      "evidence": [
+        "1 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 1 Crônicas 21:10, que palavra importante o texto usa?",
+      "verseRef": "1 Crônicas 21:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "fala"
+        },
+        {
+          "id": "c",
+          "text": "dizendo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Vai, e fala a Davi, dizendo: Assim diz o SENHOR: Três",
+      "feedbackCorrect": "A palavra do texto é \"fala\".",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "1 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 1 Crônicas 21:7 comunica que se liga a este contexto?",
+      "verseRef": "1 Crônicas 21:7",
+      "passageA": {
+        "ref": "1 Crônicas 21:7"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O censo desagrada a Deus; Davi confessa e vê o anjo sobre Jerusalém."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Ideia central da cena"
+        },
+        {
+          "id": "b",
+          "text": "Negação total do texto"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de qualquer nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E isso também desagradou a Deus",
+      "feedbackCorrect": "O versículo e o contexto da cena se encontram.",
+      "feedbackWrong": {
+        "b": "O texto afirma, não nega tudo.",
+        "c": "Há nomes e ações no trecho."
+      },
+      "hint": "Compare os dois textos e a ponte entre eles.",
+      "learningObjective": "Ligar o versículo ao contexto.",
+      "evidence": [
+        "1 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 21 —14 o nome SENHOR está ausente do versículo",
+      "verseRef": "1 Crônicas 21:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "SENHOR",
+      "feedbackCorrect": "O versículo contém \"SENHOR\".",
+      "feedbackWrong": {
+        "true": "Releia 1 Crônicas 21:14: \"SENHOR\" aparece no texto."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "1 Crônicas 21:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 21:7, toque a palavra que marca a relação no texto.",
+      "verseRef": "1 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "feriu"
+        },
+        {
+          "id": "b",
+          "text": "Deus"
+        },
+        {
+          "id": "c",
+          "text": "Israel"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Reconhecer o marcador.",
+      "evidence": [
+        "1 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 1 Crônicas 21:14 se relaciona com o restante do trecho?",
+      "verseRef": "1 Crônicas 21:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aprofunda a causa, o contraste ou o resultado da ação"
+        },
+        {
+          "id": "b",
+          "text": "Apaga tudo o que veio antes"
+        },
+        {
+          "id": "c",
+          "text": "Introduz um livro diferente da Bíblia"
+        },
+        {
+          "id": "d",
+          "text": "Nega que Deus age na história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então, o SENHOR enviou a peste sobre",
+      "feedbackCorrect": "O versículo avança a lógica do trecho.",
+      "feedbackWrong": {
+        "b": "O texto continua a mesma cena.",
+        "c": "Continuamos no mesmo livro.",
+        "d": "O trecho registra a ação divina ou humana."
+      },
+      "hint": "Pense na função deste versículo no fluxo.",
+      "learningObjective": "Relacionar partes do texto.",
+      "evidence": [
+        "1 Crônicas 21:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento deste trecho?",
+      "verseRef": "1 Crônicas 21:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "A ação inicial se apresenta"
+        },
+        {
+          "id": "b",
+          "text": "A decisão ou conflito avança"
+        },
+        {
+          "id": "c",
+          "text": "O resultado fecha o trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vai, e fala a Davi, dizendo: Assim diz",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "1 Crônicas 21:10"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 1 Crônicas 21:14, que palavra carrega a relação ou a ação?",
+      "verseRef": "1 Crônicas 21:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "enviou"
+        },
+        {
+          "id": "b",
+          "text": "SENHOR"
+        },
+        {
+          "id": "c",
+          "text": "peste"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Então, o SENHOR enviou a peste sobre Israel; e",
+      "feedbackCorrect": "A palavra do texto é \"SENHOR\".",
+      "feedbackWrong": {
+        "a": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Veja a palavra que falta no sentido do versículo.",
+      "learningObjective": "Lembrar a palavra do texto.",
+      "evidence": [
+        "1 Crônicas 21:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 21:10 a Salmos 23:1?",
+      "verseRef": "1 Crônicas 21:10",
+      "passageA": {
+        "ref": "1 Crônicas 21:10"
+      },
+      "passageB": {
+        "ref": "Salmos 23:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor é meu pastor"
+        },
+        {
+          "id": "b",
+          "text": "Negação da fé bíblica"
+        },
+        {
+          "id": "c",
+          "text": "Fim de toda oração"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vai, e fala a Davi, dizendo: Assim diz",
+      "feedbackCorrect": "Os dois textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "O vínculo é de fé, não de negação.",
+        "c": "Não é o fim da oração."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Relacionar ao texto cruzado.",
+      "evidence": [
+        "1 Crônicas 21:10",
+        "Salmos 23:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 1 Crônicas 21 —17 aparece a palavra Davi",
+      "verseRef": "1 Crônicas 21:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "E Davi disse a Deus: Não fui eu que pedi que se",
+      "feedbackCorrect": "O versículo traz \"Davi\" no texto.",
+      "feedbackWrong": {
+        "false": "Releia 1 Crônicas 21:17: a palavra está no versículo."
+      },
+      "hint": "Compare a afirmação com o versículo.",
+      "learningObjective": "Conferir o fato no texto.",
+      "evidence": [
+        "1 Crônicas 21:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 1 Crônicas 21:17, toque o trecho que sustenta a leitura da cena.",
+      "verseRef": "1 Crônicas 21:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "disse"
+        },
+        {
+          "id": "b",
+          "text": "Davi"
+        },
+        {
+          "id": "c",
+          "text": "pedi"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Davi",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar no texto.",
+      "evidence": [
+        "1 Crônicas 21:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura o trecho sustenta?",
+      "verseRef": "1 Crônicas 21:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi pequenou muito: escolhe cair nas mãos do Senhor, que é misericordioso."
+        },
+        {
+          "id": "b",
+          "text": "Deus nunca age na história deste povo"
+        },
+        {
+          "id": "c",
+          "text": "O texto elogia a idolatria como caminho"
+        },
+        {
+          "id": "d",
+          "text": "Não há pecado nem juízo em nenhuma linha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Davi disse a Deus: Não fui eu que pedi",
+      "feedbackCorrect": "Essa leitura cabe no que o texto afirma.",
+      "feedbackWrong": {
+        "b": "O trecho registra a ação de Deus.",
+        "c": "O texto não elogia a idolatria.",
+        "d": "Há falhas e juízos no relato bíblico."
+      },
+      "hint": "Compare cada opção com o trecho.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "1 Crônicas 21:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o sentido da cena?",
+      "verseRef": "1 Crônicas 21:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "A promessa ou chamado se anuncia"
+        },
+        {
+          "id": "b",
+          "text": "A resposta humana se manifesta"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor confirma o caminho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "E Davi disse a Deus: Não fui eu que",
+      "feedbackCorrect": "Esse é o movimento do trecho.",
+      "feedbackWrong": {
+        "default": "Siga a ordem dos movimentos."
+      },
+      "hint": "Pense no começo, meio e fim.",
+      "learningObjective": "Compreender o movimento.",
+      "evidence": [
+        "1 Crônicas 21:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 1 Crônicas 21:7, que termo carrega o sentido da cena?",
+      "verseRef": "1 Crônicas 21:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "desagradou"
+        },
+        {
+          "id": "c",
+          "text": "feriu"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "E isso também desagradou a Deus",
+      "feedbackCorrect": "O termo \"desagradou\" carrega o sentido da cena.",
+      "feedbackWrong": {
+        "a": "Esse não é o termo central aqui.",
+        "c": "Esse não é o termo central aqui."
+      },
+      "hint": "Veja a palavra que nomeia a ideia da cena.",
+      "learningObjective": "Lembrar o termo teológico.",
+      "evidence": [
+        "1 Crônicas 21:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 1 Crônicas 21:17 a Salmos 46:1?",
+      "verseRef": "1 Crônicas 21:17",
+      "passageA": {
+        "ref": "1 Crônicas 21:17"
+      },
+      "passageB": {
+        "ref": "Salmos 46:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus é refúgio e força"
+        },
+        {
+          "id": "b",
+          "text": "Recusa de toda esperança"
+        },
+        {
+          "id": "c",
+          "text": "Culto aos ídolos das nações"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E Davi disse a Deus: Não fui eu que",
+      "feedbackCorrect": "Os textos se encontram nesse tema de fé.",
+      "feedbackWrong": {
+        "b": "O vínculo aponta esperança, não recusa.",
+        "c": "Não é culto idólatra."
+      },
+      "hint": "Compare o tema dos dois textos.",
+      "learningObjective": "Ligar ao texto cruzado de cumprimento.",
+      "evidence": [
+        "1 Crônicas 21:17",
+        "Salmos 46:1"
+      ]
+    }
+  ]
+}

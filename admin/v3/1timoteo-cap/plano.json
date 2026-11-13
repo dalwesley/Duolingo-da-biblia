@@ -1,0 +1,78 @@
+{
+  "slug": "1timoteo-cap",
+  "prefix": "i1c",
+  "book": "1 Timóteo",
+  "chapters": 6,
+  "title": "1 Timóteo",
+  "description": "1 Timóteo capítulo a capítulo: doutrina sã, ordem na igreja e piedade com contentamento.",
+  "icon": "📖",
+  "color": "#16A085",
+  "order": 68,
+  "realm": "novo-testamento",
+  "category": "epistolas",
+  "avoidTrails": ["timoteo"],
+  "modules": [
+    {
+      "title": "Doutrina e oração · cap. 1–3",
+      "scenes": [
+        {
+          "ref": "1 Timóteo 1:12–17",
+          "title": "O primeiro dos pecadores",
+          "intro": "Paulo agradece a Cristo que o capacitou, sendo ele antes blasfemo.",
+          "insight": "Cristo veio ao mundo para salvar os pecadores; a graça foi abundante com fé e amor.",
+          "objective": "Receber a graça de Cristo"
+        },
+        {
+          "ref": "1 Timóteo 2:1–8",
+          "title": "Orar por todos",
+          "intro": "Paulo recomenda súplicas e ações de graças por todos os homens.",
+          "insight": "Deus quer que todos sejam salvos e cheguem ao conhecimento da verdade: há um mediador, Cristo Jesus.",
+          "objective": "Orar por todos"
+        },
+        {
+          "ref": "1 Timóteo 3:8–16",
+          "title": "Mistério da piedade",
+          "intro": "Depois dos bispos, Paulo fala dos diáconos e do mistério da fé.",
+          "insight": "A igreja é coluna e baluarte da verdade: grande é o mistério da piedade revelado em Cristo.",
+          "objective": "Guardar o mistério da fé"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Doutrina e oração",
+        "intro": "Revise a graça que salva, a oração por todos e o mistério da piedade.",
+        "insight": "A igreja ora, guarda a verdade e vive da graça"
+      }
+    },
+    {
+      "title": "Piedade e contentamento · cap. 4–6",
+      "scenes": [
+        {
+          "ref": "1 Timóteo 4:1–10",
+          "title": "Exercitar-se na piedade",
+          "intro": "Há doutrinas de demônios; Timóteo deve alimentar-se das boas palavras da fé.",
+          "insight": "A piedade para tudo é proveitosa, tendo a promessa da vida presente e da futura.",
+          "objective": "Exercitar-se na piedade"
+        },
+        {
+          "ref": "1 Timóteo 5:1–8",
+          "title": "Cuidar da família",
+          "intro": "Paulo orienta o trato com idosos, jovens e viúvas na casa de Deus.",
+          "insight": "Se alguém não cuida dos seus, especialmente dos da família, negou a fé e é pior que o incrédulo.",
+          "objective": "Cuidar dos da família"
+        },
+        {
+          "ref": "1 Timóteo 6:6–16",
+          "title": "Contentamento e luta",
+          "intro": "A piedade com contentamento é grande lucro; o amor ao dinheiro é raiz de males.",
+          "insight": "Foge disso e segue a justiça; luta a boa luta da fé e toma posse da vida eterna.",
+          "objective": "Lutar a boa luta"
+        }
+      ],
+      "boss": {
+        "title": "Travessia: Piedade e contentamento",
+        "intro": "Revise a piedade proveitosa, o cuidado da família e a boa luta da fé.",
+        "insight": "Piedade com contentamento sustenta a boa luta da fé"
+      }
+    }
+  ]
+}

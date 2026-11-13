@@ -1,0 +1,711 @@
+{
+  "study": {
+    "passageRef": "Mateus 1:1–6",
+    "passages": [
+      {
+        "ref": "Mateus 1:1–6"
+      }
+    ],
+    "context": "Mateus abre o Evangelho com uma lista de nomes. O leitor acompanha as gerações desde Abraão, passa por Judá e chega ao rei Davi, pai de Salomão. No caminho, a lista também traz nomes de mulheres.",
+    "keyword": "genealogia",
+    "keywordGloss": "É a lista de gerações com que Mateus apresenta Jesus como filho de Davi e filho de Abraão.",
+    "focusQuestion": "Quando você olha para a sua família, que nome parece pequeno demais para Deus usar?",
+    "reflectionPrompts": [
+      "Os dois pais do título",
+      "Nomes no meio da lista",
+      "O rei e Salomão"
+    ],
+    "facts": [
+      {
+        "text": "Jesus Cristo é apresentado como filho de Davi e filho de Abraão.",
+        "evidenceRef": "Mateus 1:1",
+        "evidenceSpan": "filho de Davi e filho de Abraão"
+      },
+      {
+        "text": "Abraão gerou Isaque, Isaque gerou Jacó, e Jacó gerou Judá e seus irmãos.",
+        "evidenceRef": "Mateus 1:2",
+        "evidenceSpan": "Abraão gerou Isaque; Isaque gerou Jacó; e Jacó gerou Judá e seus irmãos."
+      },
+      {
+        "text": "Judá gerou Pérez e Zera de Tamar.",
+        "evidenceRef": "Mateus 1:3",
+        "evidenceSpan": "Judá gerou de Tamar a Pérez e a Zera"
+      },
+      {
+        "text": "Salmon gerou Boaz de Raabe, e de Rute nasceu Obede, que gerou Jessé.",
+        "evidenceRef": "Mateus 1:5",
+        "evidenceSpan": "Salmon gerou de Raabe a Boaz; este, de Rute, gerou a Obede; e Obede gerou a Jessé"
+      },
+      {
+        "text": "Jessé gerou o rei Davi.",
+        "evidenceRef": "Mateus 1:6",
+        "evidenceSpan": "Jessé gerou o rei Davi"
+      },
+      {
+        "text": "O rei Davi gerou Salomão da mulher de Urias.",
+        "evidenceRef": "Mateus 1:6",
+        "evidenceSpan": "o rei Davi gerou Salomão, da mulher de Urias"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "genealogia",
+        "gloss": "É a lista de gerações com que o livro apresenta Jesus na primeira linha."
+      },
+      {
+        "term": "Cristo",
+        "gloss": "É o título com que Mateus nomeia Jesus já na abertura do livro."
+      },
+      {
+        "term": "Davi",
+        "gloss": "É o rei de quem Jesus é chamado filho no título da genealogia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O livro apresenta Jesus na primeira linha",
+        "evidenceRef": "Mateus 1:1"
+      },
+      {
+        "label": "A linhagem desce de Abraão até Judá",
+        "evidenceRef": "Mateus 1:2"
+      },
+      {
+        "label": "A lista chega ao rei Davi e a Salomão",
+        "evidenceRef": "Mateus 1:6"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "A lista avança de pai para filho: Abraão gera Isaque, Isaque gera Jacó, e Jacó gera Judá e seus irmãos.",
+        "marker": "gerou",
+        "evidenceRef": "Mateus 1:2"
+      },
+      {
+        "kind": "sequência",
+        "text": "O pronome este retoma Boaz, que gera Obede de Rute, e Obede gera Jessé.",
+        "marker": "este",
+        "evidenceRef": "Mateus 1:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "A linha chega ao rei Davi e, a partir dele, a Salomão, da mulher de Urias.",
+        "marker": "gerou",
+        "evidenceRef": "Mateus 1:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 22:18",
+        "bridge": "Bênção na descendência de Abraão"
+      },
+      {
+        "ref": "2 Samuel 7:16",
+        "bridge": "Trono de Davi para sempre"
+      },
+      {
+        "ref": "Gálatas 3:16",
+        "bridge": "A descendência prometida é Cristo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Jesus é filho só de Davi, e Abraão entra apenas como memória antiga.",
+        "why": "Mateus 1:1 junta os dois no mesmo título: filho de Davi e filho de Abraão."
+      },
+      {
+        "text": "A genealogia guarda só os pais e deixa as mulheres de fora.",
+        "why": "Tamar, Raabe, Rute e a mulher de Urias são nomeadas na própria lista."
+      },
+      {
+        "text": "A mulher de Urias é a mãe do rei Davi.",
+        "why": "Jessé gerou o rei Davi; o rei Davi gerou Salomão da mulher de Urias."
+      }
+    ],
+    "centralInsight": "Deus cumpre a promessa a Abraão e Davi por meio de uma família cheia de histórias quebradas.",
+    "anchorQuestion": "Quem Mateus 1:1 diz que é filho de Davi e filho de Abraão?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Mateus 1:1 apresenta Jesus Cristo como filho de Davi e filho de Abraão.",
+      "verseRef": "Mateus 1:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "filho de Davi e filho de Abraão",
+      "feedbackCorrect": "O título chama Jesus Cristo de filho de Davi e de filho de Abraão.",
+      "feedbackWrong": {
+        "false": "O versículo afirma os dois: filho de Davi e filho de Abraão."
+      },
+      "hint": "Leia como o título apresenta Jesus.",
+      "learningObjective": "Reconhecer que Jesus é apresentado como filho de Davi e de Abraão.",
+      "evidence": [
+        "Mateus 1:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Mateus 1:1, toque quem é chamado filho de Davi e filho de Abraão.",
+      "verseRef": "Mateus 1:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi"
+        },
+        {
+          "id": "b",
+          "text": "Jesus Cristo"
+        },
+        {
+          "id": "c",
+          "text": "Abraão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "genealogia de Jesus Cristo, que é filho de Davi",
+      "feedbackCorrect": "A genealogia é de Jesus Cristo; Davi e Abraão são os pais nomeados.",
+      "feedbackWrong": {
+        "a": "Davi é o pai citado, não quem o título chama de filho dele.",
+        "c": "Abraão é o outro pai; o filho nomeado é Jesus Cristo."
+      },
+      "hint": "Procure o nome próprio no começo do versículo.",
+      "learningObjective": "Identificar de quem é a genealogia aberta em Mateus 1:1.",
+      "evidence": [
+        "Mateus 1:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Mateus 1:6, quem gerou Salomão?",
+      "verseRef": "Mateus 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jessé, pai do rei Davi"
+        },
+        {
+          "id": "b",
+          "text": "O rei Davi, da mulher de Urias"
+        },
+        {
+          "id": "c",
+          "text": "Obede, na geração de Rute"
+        },
+        {
+          "id": "d",
+          "text": "Salmon, pai de Boaz"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o rei Davi gerou Salomão, da mulher de Urias",
+      "feedbackCorrect": "O rei Davi gerou Salomão, e o texto liga essa geração à mulher de Urias.",
+      "feedbackWrong": {
+        "a": "Jessé gerou o rei Davi; Salomão vem na frase seguinte.",
+        "c": "Obede está na geração de Rute, bem antes de Salomão.",
+        "d": "Salmon gerou Boaz; Salomão só aparece com Davi."
+      },
+      "hint": "Veja o nome de quem gerou Salomão.",
+      "learningObjective": "Identificar quem o texto diz que gerou Salomão.",
+      "evidence": [
+        "Mateus 1:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Mateus 1:2 na ordem do texto.",
+      "verseRef": "Mateus 1:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abraão gerou Isaque"
+        },
+        {
+          "id": "b",
+          "text": "Isaque gerou Jacó"
+        },
+        {
+          "id": "c",
+          "text": "e Jacó gerou Judá e seus irmãos."
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Abraão gerou Isaque",
+      "feedbackCorrect": "A frase vai de Abraão a Isaque, de Isaque a Jacó e de Jacó a Judá.",
+      "feedbackWrong": {
+        "default": "Comece em Abraão; Judá e os irmãos fecham o versículo."
+      },
+      "hint": "O primeiro nome da frase é o começo.",
+      "learningObjective": "Reconhecer a ordem das gerações em Mateus 1:2.",
+      "evidence": [
+        "Mateus 1:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Mateus 1:3, de quem Judá gerou Pérez e Zera?",
+      "verseRef": "Mateus 1:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raabe"
+        },
+        {
+          "id": "b",
+          "text": "Tamar"
+        },
+        {
+          "id": "c",
+          "text": "Rute"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Judá gerou de Tamar a Pérez e a Zera",
+      "feedbackCorrect": "Judá gerou Pérez e Zera de Tamar, a primeira mulher nomeada.",
+      "feedbackWrong": {
+        "a": "Raabe entra com Salmon, não com Judá.",
+        "c": "Rute entra com Boaz, não com Judá."
+      },
+      "hint": "Veja o nome da mulher nesse versículo.",
+      "learningObjective": "Lembrar de quem Judá gerou Pérez e Zera.",
+      "evidence": [
+        "Mateus 1:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Mateus 1:1 comunica que se liga a este contexto?",
+      "verseRef": "Mateus 1:1",
+      "passageA": {
+        "ref": "Mateus 1:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "A lista parte de Abraão, atravessa as gerações e chega ao rei Davi."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Um rei sem antepassados"
+        },
+        {
+          "id": "b",
+          "text": "Filho de Davi e Abraão"
+        },
+        {
+          "id": "c",
+          "text": "Só o filho de Salomão"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "filho de Davi e filho de Abraão",
+      "feedbackCorrect": "Jesus é filho de Davi e de Abraão, os dois extremos da lista.",
+      "feedbackWrong": {
+        "a": "O título nomeia dois pais; Jesus não surge sem família.",
+        "c": "Salomão vem depois; o título liga Jesus a Davi e a Abraão."
+      },
+      "hint": "Veja os dois pais nomeados no título.",
+      "learningObjective": "Ligar o título de Mateus 1:1 aos dois extremos da lista.",
+      "evidence": [
+        "Mateus 1:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Mateus 1:6, a mulher de Urias é a mãe do rei Davi.",
+      "verseRef": "Mateus 1:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "o rei Davi gerou Salomão, da mulher de Urias",
+      "feedbackCorrect": "Jessé gerou Davi; a mulher de Urias é ligada a Salomão.",
+      "feedbackWrong": {
+        "true": "Davi gerou Salomão da mulher de Urias; ela não gerou Davi."
+      },
+      "hint": "Veja quem gera quem na segunda parte do versículo.",
+      "learningObjective": "Distinguir de quem nasce Davi e de quem nasce Salomão.",
+      "evidence": [
+        "Mateus 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Mateus 1:2, toque a palavra que marca o passo de um pai ao filho.",
+      "verseRef": "Mateus 1:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abraão"
+        },
+        {
+          "id": "b",
+          "text": "gerou"
+        },
+        {
+          "id": "c",
+          "text": "Judá"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Abraão gerou Isaque",
+      "feedbackCorrect": "Esse verbo liga cada pai ao filho ao longo da lista.",
+      "feedbackWrong": {
+        "a": "Abraão é o primeiro pai, não o elo entre as gerações.",
+        "c": "Judá é um nome no fim; o elo entre os nomes é outro."
+      },
+      "hint": "É o verbo repetido entre um nome e outro.",
+      "learningObjective": "Reconhecer o verbo que marca a passagem de uma geração à outra.",
+      "evidence": [
+        "Mateus 1:2"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Mateus 1:5 estabelece de Salmon até Jessé?",
+      "verseRef": "Mateus 1:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A linha desce de Salmon a Boaz, a Obede e a Jessé."
+        },
+        {
+          "id": "b",
+          "text": "Jessé abre a lista e Salmon fica no fim."
+        },
+        {
+          "id": "c",
+          "text": "Raabe e Rute ficam de fora dessa descendência."
+        },
+        {
+          "id": "d",
+          "text": "Obede gera Boaz, e Salmon nasce por último."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Salmon gerou de Raabe a Boaz; este, de Rute, gerou a Obede; e Obede gerou a Jessé",
+      "feedbackCorrect": "Salmon gera Boaz, Boaz gera Obede, e Obede gera Jessé.",
+      "feedbackWrong": {
+        "b": "A ordem não volta: Salmon está no início e Jessé no fim.",
+        "c": "Raabe e Rute são nomeadas nessa descida, não ficam de fora.",
+        "d": "Obede vem depois de Boaz; Salmon abre o versículo."
+      },
+      "hint": "Siga os nascimentos do mais antigo ao mais novo.",
+      "learningObjective": "Compreender a sequência de Salmon até Jessé.",
+      "evidence": [
+        "Mateus 1:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Em que ordem Mateus conduz a lista até Salomão?",
+      "verseRef": "Mateus 1:1–2",
+      "options": [
+        {
+          "id": "a",
+          "text": "O livro apresenta Jesus na primeira linha"
+        },
+        {
+          "id": "b",
+          "text": "A linhagem desce de Abraão até Judá"
+        },
+        {
+          "id": "c",
+          "text": "A lista chega ao rei Davi e a Salomão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Livro da genealogia de Jesus Cristo",
+      "feedbackCorrect": "Jesus é apresentado, a lista desce até Judá e depois chega a Davi e Salomão.",
+      "feedbackWrong": {
+        "default": "Abra a cena pelo título e termine em Davi e Salomão."
+      },
+      "hint": "O título abre; o rei e o filho fecham a lista.",
+      "learningObjective": "Compreender os três movimentos da lista até Salomão.",
+      "evidence": [
+        "Mateus 1:1",
+        "Mateus 1:2",
+        "Mateus 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Mateus 1:6, de quem era a mulher ligada a Salomão?",
+      "verseRef": "Mateus 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jessé"
+        },
+        {
+          "id": "b",
+          "text": "Obede"
+        },
+        {
+          "id": "c",
+          "text": "Urias"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "da mulher de Urias",
+      "feedbackCorrect": "O texto liga Salomão à mulher de Urias.",
+      "feedbackWrong": {
+        "a": "Jessé é pai de Davi, não o nome no fim do versículo.",
+        "b": "Obede vem antes de Jessé; o último nome é outro."
+      },
+      "hint": "Leia o último nome do versículo.",
+      "learningObjective": "Reconhecer de quem é a mulher ligada ao nascimento de Salomão.",
+      "evidence": [
+        "Mateus 1:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Mateus 1:1 a Gênesis 22:18?",
+      "verseRef": "Mateus 1:1",
+      "passageA": {
+        "ref": "Mateus 1:1"
+      },
+      "passageB": {
+        "ref": "Gênesis 22:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "A descendência de Abraão"
+        },
+        {
+          "id": "b",
+          "text": "O trono eterno de Davi"
+        },
+        {
+          "id": "c",
+          "text": "A mãe de Salomão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "filho de Abraão",
+      "feedbackCorrect": "Jesus é filho de Abraão, e Gênesis fala da descendência dele.",
+      "feedbackWrong": {
+        "b": "O trono de Davi é outra promessa; o elo aqui é Abraão.",
+        "c": "A mãe de Salomão está em Mateus 1:6, não neste elo."
+      },
+      "hint": "Compare o segundo pai do título com Gênesis.",
+      "learningObjective": "Relacionar o filho de Abraão à bênção prometida na descendência.",
+      "evidence": [
+        "Mateus 1:1",
+        "Gênesis 22:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Mateus 1:5–6, Raabe, Rute e a mulher de Urias pertencem à família de Davi.",
+      "verseRef": "Mateus 1:5–6",
+      "correctOptionId": "true",
+      "evidenceSpan": "de Raabe a Boaz; este, de Rute, gerou a Obede; e Obede gerou a Jessé; E Jessé gerou o rei Davi; e o rei Davi gerou Salomão, da mulher de Urias",
+      "feedbackCorrect": "Raabe, Rute e a mulher de Urias estão nomeadas nessa família.",
+      "feedbackWrong": {
+        "false": "Os três nomes estão no trecho, na linha que chega a Davi e a Salomão."
+      },
+      "hint": "Procure os nomes de mulheres nos dois versículos.",
+      "learningObjective": "Interpretar a presença dessas mulheres na família que chega a Davi.",
+      "evidence": [
+        "Mateus 1:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Mateus 1:6, toque quem o texto nomeia com Salomão, além do pai.",
+      "verseRef": "Mateus 1:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "rei Davi"
+        },
+        {
+          "id": "b",
+          "text": "Jessé"
+        },
+        {
+          "id": "c",
+          "text": "mulher de Urias"
+        }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "mulher de Urias",
+      "feedbackCorrect": "Além de Davi, o texto nomeia a mulher de Urias com Salomão.",
+      "feedbackWrong": {
+        "a": "O rei Davi é o pai; a pergunta pede quem mais é nomeado.",
+        "b": "Jessé gerou Davi; não é ele quem o texto liga a Salomão."
+      },
+      "hint": "Olhe a expressão que fecha o versículo.",
+      "learningObjective": "Localizar o trecho que identifica a mãe de Salomão.",
+      "evidence": [
+        "Mateus 1:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Mateus 1:5–6 sustenta sobre a família do rei?",
+      "verseRef": "Mateus 1:5–6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Raabe, Rute e a mulher de Urias fazem parte dessa família."
+        },
+        {
+          "id": "b",
+          "text": "A lista omite as mulheres e guarda só os pais."
+        },
+        {
+          "id": "c",
+          "text": "A mulher de Urias é a mãe do rei Davi."
+        },
+        {
+          "id": "d",
+          "text": "Rute é mãe de Davi, e Raabe é mãe de Salomão."
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "de Raabe a Boaz; este, de Rute, gerou a Obede; e Obede gerou a Jessé; E Jessé gerou o rei Davi; e o rei Davi gerou Salomão, da mulher de Urias",
+      "feedbackCorrect": "O trecho nomeia Raabe, Rute e a mulher de Urias na família do rei.",
+      "feedbackWrong": {
+        "b": "Esses nomes estão na lista; o texto não os deixa de fora.",
+        "c": "Quem gera Davi é Jessé; a mulher de Urias é ligada a Salomão.",
+        "d": "Rute está com Obede, e Raabe com Boaz, não com Davi nem Salomão."
+      },
+      "hint": "Confira quais mulheres o trecho nomeia.",
+      "learningObjective": "Escolher a leitura que o trecho sustenta sobre as mulheres da lista.",
+      "evidence": [
+        "Mateus 1:5–6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga as promessas a Jesus em Mateus 1:1?",
+      "verseRef": "Mateus 1:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus promete bênção na descendência de Abraão"
+        },
+        {
+          "id": "b",
+          "text": "Deus firma o trono na casa de Davi"
+        },
+        {
+          "id": "c",
+          "text": "Mateus apresenta Jesus como filho dos dois"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "filho de Davi e filho de Abraão",
+      "feedbackCorrect": "A bênção a Abraão e o trono de Davi se encontram em Jesus.",
+      "feedbackWrong": {
+        "default": "Siga a história: Abraão, depois Davi, e então o título de Mateus."
+      },
+      "hint": "Comece pela promessa mais antiga e termine no título.",
+      "learningObjective": "Encadear a promessa a Abraão, o trono de Davi e o título de Mateus.",
+      "evidence": [
+        "Gênesis 22:18",
+        "2 Samuel 7:16",
+        "Mateus 1:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Mateus 1:1, como se chama a lista que apresenta Jesus?",
+      "verseRef": "Mateus 1:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "genealogia"
+        },
+        {
+          "id": "b",
+          "text": "promessa"
+        },
+        {
+          "id": "c",
+          "text": "história"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Livro da genealogia de Jesus Cristo",
+      "feedbackCorrect": "A primeira linha chama essa lista de genealogia de Jesus Cristo.",
+      "feedbackWrong": {
+        "b": "A palavra do versículo não é promessa.",
+        "c": "História caberia na frase, mas não é a palavra escrita."
+      },
+      "hint": "Leia a palavra que dá nome ao livro.",
+      "learningObjective": "Lembrar o termo com que Mateus nomeia a lista de Jesus.",
+      "evidence": [
+        "Mateus 1:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Mateus 1:1 a Gálatas 3:16?",
+      "verseRef": "Mateus 1:1",
+      "passageA": {
+        "ref": "Mateus 1:1"
+      },
+      "passageB": {
+        "ref": "Gálatas 3:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Davi no lugar de Abraão"
+        },
+        {
+          "id": "b",
+          "text": "Cristo é a descendência"
+        },
+        {
+          "id": "c",
+          "text": "Várias famílias sem ligação"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Jesus Cristo, que é filho de Davi e filho de Abraão",
+      "feedbackCorrect": "Gálatas diz que a descendência de Abraão é Cristo, a quem Mateus apresenta.",
+      "feedbackWrong": {
+        "a": "Jesus é filho de Davi e de Abraão; um não apaga o outro.",
+        "c": "Gálatas fala de uma só descendência, que é Cristo."
+      },
+      "hint": "Veja quem Gálatas põe na linha de Abraão.",
+      "learningObjective": "Ligar Jesus, filho de Abraão, à descendência que Gálatas chama de Cristo.",
+      "evidence": [
+        "Mateus 1:1",
+        "Gálatas 3:16"
+      ]
+    }
+  ]
+}

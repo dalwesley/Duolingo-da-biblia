@@ -1,0 +1,510 @@
+{
+  "study": {
+    "passageRef": "Miqueias 1:2–7",
+    "passages": [
+      {
+        "ref": "Miqueias 1:2–7"
+      },
+      {
+        "ref": "Miqueias 1:8–9"
+      }
+    ],
+    "context": "Miquéias anuncia juízo: o Senhor sai do templo e desce contra a transgressão de Jacó, centrada em Samaria e Jerusalém.",
+    "keyword": "desce",
+    "keywordGloss": "O Senhor deixa o santo templo e caminha sobre a terra em juízo.",
+    "focusQuestion": "Você leva a sério o pecado que faz o Senhor descer em juízo?",
+    "reflectionPrompts": [
+      "Senhor testemunha",
+      "Transgressão de Jacó",
+      "Ferida até Judá"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor Deus será testemunha contra o povo desde o santo templo.",
+        "evidenceRef": "Miqueias 1:2",
+        "evidenceSpan": "Que o Senhor Deus seja testemunha contra vocês"
+      },
+      {
+        "text": "O Senhor sai do seu lugar, desce e caminha sobre as alturas da terra.",
+        "evidenceRef": "Miqueias 1:3",
+        "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha"
+      },
+      {
+        "text": "Os montes se derretem e os vales se fendem diante dele.",
+        "evidenceRef": "Miqueias 1:4",
+        "evidenceSpan": "Os montes se derretem sob ele, e os vales se fendem"
+      },
+      {
+        "text": "A causa é a transgressão de Jacó; Samaria e Jerusalém são apontadas.",
+        "evidenceRef": "Miqueias 1:5",
+        "evidenceSpan": "Tudo isso por causa da transgressão de Jacó"
+      },
+      {
+        "text": "Samaria será feita um montão de pedras do campo.",
+        "evidenceRef": "Miqueias 1:6",
+        "evidenceSpan": "farei de Samaria um montão de pedras do campo"
+      },
+      {
+        "text": "A ferida é incurável e se espalhou até Judá e Jerusalém.",
+        "evidenceRef": "Miqueias 1:9",
+        "evidenceSpan": "a ferida é incurável; pois se espalhou até Judá"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "desce",
+        "gloss": "Ação do Senhor que sai do lugar santo e vem em juízo."
+      },
+      {
+        "term": "transgressão",
+        "gloss": "A culpa de Jacó que provoca a descida do Senhor."
+      },
+      {
+        "term": "Samaria",
+        "gloss": "Capital apontada como a transgressão de Jacó."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Chamado e testemunha do Senhor",
+        "evidenceRef": "Miqueias 1:2"
+      },
+      {
+        "label": "O Senhor desce sobre a terra",
+        "evidenceRef": "Miqueias 1:3–4"
+      },
+      {
+        "label": "Causa: pecado de Samaria e Judá",
+        "evidenceRef": "Miqueias 1:5"
+      },
+      {
+        "label": "Juízo, lamento e ferida incurável",
+        "evidenceRef": "Miqueias 1:6–9"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O Senhor sai do lugar porque desce em juízo sobre a terra.",
+        "marker": "Porque",
+        "evidenceRef": "Miqueias 1:3"
+      },
+      {
+        "kind": "causa",
+        "text": "Tudo isso acontece por causa da transgressão de Jacó.",
+        "marker": "por causa",
+        "evidenceRef": "Miqueias 1:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por isso Samaria será montão de pedras e o profeta lamentará.",
+        "marker": "Por isso",
+        "evidenceRef": "Miqueias 1:6"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Isaías 26:21",
+        "bridge": "Senhor sai do lugar"
+      },
+      {
+        "ref": "Amós 1:2",
+        "bridge": "Senhor ruge de Sião"
+      },
+      {
+        "ref": "Naum 1:5",
+        "bridge": "Montes tremem diante dele"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O juízo é só contra Samaria; Judá e Jerusalém ficam a salvo.",
+        "why": "1:5 aponta altos de Judá e Jerusalém; 1:9 diz que a ferida chegou a Judá."
+      },
+      {
+        "text": "O Senhor permanece distante no templo e não intervém.",
+        "why": "1:3 diz que o Senhor sai do lugar, desce e caminha sobre a terra."
+      },
+      {
+        "text": "A ferida é leve e logo cicatriza sem juízo.",
+        "why": "1:9 chama a ferida de incurável e espalhada até Jerusalém."
+      }
+    ],
+    "centralInsight": "O pecado de Samaria e de Judá faz o Senhor descer em juízo.",
+    "anchorQuestion": "Segundo Miqueias 1:3, o que o Senhor faz ao sair do seu lugar?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Miqueias 1:3, o Senhor sai do seu lugar, desce e caminha sobre as alturas da terra.",
+      "verseRef": "Miqueias 1:3",
+      "correctOptionId": "true",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "O texto mostra o Senhor saindo, descendo e caminhando sobre a terra.",
+      "feedbackWrong": {
+        "false": "Releia 1:3: o Senhor sai, desce e caminha sobre as alturas."
+      },
+      "hint": "Veja os três verbos do Senhor no versículo.",
+      "learningObjective": "Observar a descida do Senhor em juízo.",
+      "evidence": ["Miqueias 1:3"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Miqueias 1:5, toque a cidade apontada como transgressão de Jacó.",
+      "verseRef": "Miqueias 1:5",
+      "evidenceSpan": "Não é Samaria?",
+      "feedbackCorrect": "A transgressão de Jacó é identificada com Samaria.",
+      "hint": "Procure a primeira cidade nomeada na pergunta do texto.",
+      "learningObjective": "Identificar Samaria como centro da transgressão.",
+      "evidence": ["Miqueias 1:5"],
+      "options": [
+        { "id": "a", "text": "Samaria" },
+        { "id": "b", "text": "Jacó" },
+        { "id": "c", "text": "Israel" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Jacó é o povo culpado; a cidade apontada vem depois.",
+        "c": "Israel é a casa; a resposta à pergunta é Samaria."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Miqueias 1:2, de onde o Senhor age como testemunha?",
+      "verseRef": "Miqueias 1:2",
+      "evidenceSpan": "o Senhor, desde o seu santo templo",
+      "feedbackCorrect": "Ele é testemunha desde o seu santo templo.",
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar a origem da testemunha divina.",
+      "evidence": ["Miqueias 1:2"],
+      "options": [
+        { "id": "a", "text": "Desde o seu santo templo" },
+        { "id": "b", "text": "Desde o trono de Samaria" },
+        { "id": "c", "text": "Desde o campo de batalha" },
+        { "id": "d", "text": "Desde o vale dos ídolos" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto aponta o santo templo, não Samaria.",
+        "c": "O texto não situa a testemunha no campo de batalha.",
+        "d": "O texto fala do santo templo do Senhor."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Miqueias 1:3 na ordem do texto.",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "Primeiro sai; depois desce; por fim caminha sobre as alturas.",
+      "hint": "Comece pela saída do lugar.",
+      "learningObjective": "Reconhecer a sequência da descida do Senhor.",
+      "evidence": ["Miqueias 1:3"],
+      "options": [
+        { "id": "a", "text": "Porque eis que o Senhor sai do seu lugar" },
+        { "id": "b", "text": "desce e caminha" },
+        { "id": "c", "text": "sobre as alturas da terra" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Comece pela saída do lugar; as alturas fecham o versículo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Miqueias 1:9, que palavra descreve a ferida que chegou a Judá?",
+      "verseRef": "Miqueias 1:9",
+      "evidenceSpan": "a ferida é incurável",
+      "feedbackCorrect": "A ferida é chamada incurável e se espalha até Judá.",
+      "hint": "É o adjetivo logo após \"ferida é\".",
+      "learningObjective": "Lembrar o estado da ferida anunciada.",
+      "evidence": ["Miqueias 1:9"],
+      "options": [
+        { "id": "a", "text": "leve" },
+        { "id": "b", "text": "incurável" },
+        { "id": "c", "text": "passageira" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Leve\" não aparece em 1:9.",
+        "c": "O texto diz incurável, não passageira."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Miqueias 1:5 comunica que se liga a este contexto?",
+      "verseRef": "Miqueias 1:5",
+      "evidenceSpan": "Tudo isso por causa da transgressão de Jacó",
+      "feedbackCorrect": "O juízo desce porque há pecado em Samaria e Judá.",
+      "hint": "Veja a causa declarada no início do versículo.",
+      "learningObjective": "Ligar a descida do Senhor à culpa do povo.",
+      "evidence": ["Miqueias 1:5"],
+      "passageA": { "ref": "Miqueias 1:5" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O pecado de Samaria e de Judá provoca a descida do Senhor em juízo."
+      },
+      "options": [
+        { "id": "a", "text": "Juízo por causa do pecado" },
+        { "id": "b", "text": "Vitória sem nenhum juízo" },
+        { "id": "c", "text": "Templo abandonado para sempre" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto liga juízo à transgressão, não vitória sem juízo.",
+        "c": "O Senhor ainda age desde o santo templo."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Miqueias 1:5–6, o juízo sobre Samaria não tem ligação com a transgressão de Jacó.",
+      "verseRef": "Miqueias 1:5–6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Tudo isso por causa da transgressão de Jacó",
+      "feedbackCorrect": "1:5 dá a causa; 1:6 traz o \"Por isso\" do juízo sobre Samaria.",
+      "feedbackWrong": {
+        "true": "Releia 1:5–6: a causa é a transgressão; por isso Samaria é julgada."
+      },
+      "hint": "Ligue \"por causa\" em 1:5 ao \"Por isso\" de 1:6.",
+      "learningObjective": "Compreender a causa do juízo sobre Samaria.",
+      "evidence": ["Miqueias 1:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Miqueias 1:3, toque a palavra que abre a razão da descida do Senhor.",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "Porque eis que o Senhor sai",
+      "feedbackCorrect": "\"Porque\" introduz a razão: o Senhor sai e desce.",
+      "hint": "É a primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de causa em 1:3.",
+      "evidence": ["Miqueias 1:3"],
+      "options": [
+        { "id": "a", "text": "Porque" },
+        { "id": "b", "text": "desce" },
+        { "id": "c", "text": "alturas" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Desce\" é a ação, não o marcador da razão.",
+        "c": "\"Alturas\" fecha a frase, não abre a causa."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Miqueias 1:5–6 liga pecado e juízo?",
+      "verseRef": "Miqueias 1:5–6",
+      "evidenceSpan": "Por isso, farei de Samaria um montão de pedras",
+      "feedbackCorrect": "A transgressão de Jacó leva ao juízo que reduz Samaria a montão.",
+      "hint": "Una a causa de 1:5 ao resultado de 1:6.",
+      "learningObjective": "Relacionar transgressão e juízo sobre Samaria.",
+      "evidence": ["Miqueias 1:5–6"],
+      "options": [
+        { "id": "a", "text": "A transgressão leva Samaria ao juízo do Senhor" },
+        { "id": "b", "text": "Samaria é poupada apesar da transgressão" },
+        { "id": "c", "text": "Só Judá sofre; Samaria fica intacta" },
+        { "id": "d", "text": "O pecado não tem nenhuma consequência no texto" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "1:6 anuncia montão de pedras, não isenção.",
+        "c": "1:5–6 trata primeiro de Samaria.",
+        "d": "O texto une causa e juízo com clareza."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Miqueias 1:2–9?",
+      "verseRef": "Miqueias 1:2–3",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "Testemunha; descida; causa do pecado; juízo e lamento.",
+      "hint": "Comece pelo chamado à testemunha.",
+      "learningObjective": "Seguir o movimento do anúncio ao lamento.",
+      "evidence": ["Miqueias 1:2–3"],
+      "options": [
+        { "id": "a", "text": "O Senhor é chamado como testemunha" },
+        { "id": "b", "text": "O Senhor desce sobre a terra" },
+        { "id": "c", "text": "O profeta lamenta a ferida incurável" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Testemunha primeiro; o lamento fecha o trecho."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Miqueias 1:6, o que o Senhor fará de Samaria no campo?",
+      "verseRef": "Miqueias 1:6",
+      "evidenceSpan": "farei de Samaria um montão de pedras do campo",
+      "feedbackCorrect": "Samaria será um montão de pedras do campo.",
+      "hint": "Procure o substantivo após \"um\" no juízo.",
+      "learningObjective": "Lembrar a imagem do juízo sobre Samaria.",
+      "evidence": ["Miqueias 1:6"],
+      "options": [
+        { "id": "a", "text": "jardim" },
+        { "id": "b", "text": "montão" },
+        { "id": "c", "text": "palácio" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Jardim\" não descreve Samaria em 1:6.",
+        "c": "\"Palácio\" não aparece no juízo de 1:6."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Miqueias 1:3 a Isaías 26:21?",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar",
+      "feedbackCorrect": "Nos dois textos, o Senhor sai do seu lugar para agir em juízo.",
+      "hint": "Compare a saída do Senhor do lugar santo.",
+      "learningObjective": "Relacionar a saída do Senhor em Miquéias e Isaías.",
+      "evidence": ["Miqueias 1:3", "Isaías 26:21"],
+      "passageA": { "ref": "Miqueias 1:3" },
+      "passageB": { "ref": "Isaías 26:21" },
+      "options": [
+        { "id": "a", "text": "Senhor sai do lugar" },
+        { "id": "b", "text": "Povo sem nenhum juízo" },
+        { "id": "c", "text": "Templo fechado para sempre" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos anunciam intervenção, não ausência de juízo.",
+        "c": "O Senhor sai do lugar; o templo não some do relato."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Miqueias 1:5–9, a ferida incurável se espalha até Judá e alcança Jerusalém.",
+      "verseRef": "Miqueias 1:5–9",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois se espalhou até Judá; alcançou a porta do meu povo, até Jerusalém",
+      "feedbackCorrect": "1:9 confirma: a ferida chega a Judá e até Jerusalém.",
+      "feedbackWrong": {
+        "false": "Releia 1:9: a ferida se espalhou até Judá e Jerusalém."
+      },
+      "hint": "Veja até onde a ferida se espalha em 1:9.",
+      "learningObjective": "Interpretar o alcance do juízo além de Samaria.",
+      "evidence": ["Miqueias 1:5–9"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Miqueias 1:9, toque o trecho que mostra o alcance da ferida até o povo de Deus.",
+      "verseRef": "Miqueias 1:9",
+      "evidenceSpan": "alcançou a porta do meu povo, até Jerusalém",
+      "feedbackCorrect": "A ferida chega à porta do povo, até Jerusalém.",
+      "hint": "Procure o destino final da ferida no versículo.",
+      "learningObjective": "Sustentar com o texto o alcance até Jerusalém.",
+      "evidence": ["Miqueias 1:9"],
+      "options": [
+        { "id": "a", "text": "até Jerusalém" },
+        { "id": "b", "text": "chacais" },
+        { "id": "c", "text": "avestruzes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Chacais\" está no lamento de 1:8, não no alcance da ferida.",
+        "c": "\"Avestruzes\" também pertence ao lamento de 1:8."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Miqueias 1:2–9 sustenta sobre o juízo do Senhor?",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar, desce e caminha",
+      "feedbackCorrect": "O pecado faz o Senhor descer; Samaria e Judá não ficam a salvo.",
+      "hint": "Compare cada opção com 1:3, 1:5 e 1:9.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Miqueias 1:3"],
+      "options": [
+        { "id": "a", "text": "O pecado faz o Senhor descer em juízo sobre o povo" },
+        { "id": "b", "text": "O Senhor permanece distante e não intervém" },
+        { "id": "c", "text": "Só Samaria peca; Judá fica intacta" },
+        { "id": "d", "text": "A ferida é leve e sem alcance real" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "1:3 mostra o Senhor saindo e descendo.",
+        "c": "1:5 e 1:9 incluem Judá e Jerusalém.",
+        "d": "1:9 chama a ferida de incurável."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o Senhor saindo para julgar na Escritura?",
+      "verseRef": "Miqueias 1:3",
+      "evidenceSpan": "o Senhor sai do seu lugar",
+      "feedbackCorrect": "Miquéias anuncia a saída; Isaías ecoa; Amós ouve o Senhor rugir de Sião.",
+      "hint": "Parta de Miqueias 1:3.",
+      "learningObjective": "Ver a saída do Senhor no fio bíblico.",
+      "evidence": ["Miqueias 1:3", "Isaías 26:21", "Amós 1:2"],
+      "options": [
+        { "id": "a", "text": "Miquéias vê o Senhor sair e descer" },
+        { "id": "b", "text": "Isaías anuncia o Senhor saindo do lugar" },
+        { "id": "c", "text": "Amós ouve o Senhor rugir de Sião" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "feedbackWrong": {
+        "default": "Siga: Miqueias 1:3, Isaías 26:21 e Amós 1:2."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Miqueias 1:5, que palavra nomeia a culpa de Jacó?",
+      "verseRef": "Miqueias 1:5",
+      "evidenceSpan": "por causa da transgressão de Jacó",
+      "feedbackCorrect": "A palavra que carrega a culpa é transgressão.",
+      "hint": "É o substantivo logo após \"por causa da\".",
+      "learningObjective": "Lembrar o termo teológico da culpa de Jacó.",
+      "evidence": ["Miqueias 1:5"],
+      "options": [
+        { "id": "a", "text": "vitória" },
+        { "id": "b", "text": "transgressão" },
+        { "id": "c", "text": "paz" }
+      ],
+      "correctOptionId": "b",
+      "feedbackWrong": {
+        "a": "\"Vitória\" não nomeia a culpa em 1:5.",
+        "c": "\"Paz\" não aparece como causa em 1:5."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Miqueias 1:4 a Naum 1:5?",
+      "verseRef": "Miqueias 1:4",
+      "evidenceSpan": "Os montes se derretem sob ele",
+      "feedbackCorrect": "Nos dois textos, a criação treme diante da presença do Senhor.",
+      "hint": "Compare montes e reação da terra.",
+      "learningObjective": "Ligar o tremor dos montes em Miquéias e Naum.",
+      "evidence": ["Miqueias 1:4", "Naum 1:5"],
+      "passageA": { "ref": "Miqueias 1:4" },
+      "passageB": { "ref": "Naum 1:5" },
+      "options": [
+        { "id": "a", "text": "Montes tremem diante dele" },
+        { "id": "b", "text": "Terra quieta e indiferente" },
+        { "id": "c", "text": "Ídolos sustentam os montes" }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos mostram tremor, não indiferença.",
+        "c": "Nenhum dos textos aponta ídolos sustentando montes."
+      }
+    }
+  ]
+}

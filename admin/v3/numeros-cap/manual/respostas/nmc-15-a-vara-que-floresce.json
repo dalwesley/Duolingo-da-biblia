@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "Números 17:1–6",
+    "passages": [
+      {
+        "ref": "Números 17:1–6"
+      },
+      {
+        "ref": "Números 17:7–8"
+      }
+    ],
+    "context": "Cena de A vara que floresce: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "A vara que floresce",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor disse a Moisés.",
+        "evidenceRef": "Números 17:1",
+        "evidenceSpan": "O Senhor disse a Moisés"
+      },
+      {
+        "text": "Fale aos filhos de Israel e receba uma.",
+        "evidenceRef": "Números 17:2",
+        "evidenceSpan": "Fale aos filhos de Israel e receba uma"
+      },
+      {
+        "text": "Entretanto.",
+        "evidenceRef": "Números 17:3",
+        "evidenceSpan": "Entretanto"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Números 17:4",
+        "evidenceSpan": "E"
+      },
+      {
+        "text": "E a vara do homem que eu escolher.",
+        "evidenceRef": "Números 17:5",
+        "evidenceSpan": "E a vara do homem que eu escolher"
+      },
+      {
+        "text": "Moisés.",
+        "evidenceRef": "Números 17:6",
+        "evidenceSpan": "Moisés"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Moisés",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Arão",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O senhor disse a moisés",
+        "evidenceRef": "Números 17:1"
+      },
+      {
+        "label": "Fale aos filhos de israel",
+        "evidenceRef": "Números 17:2"
+      },
+      {
+        "label": "Entretanto o nome de arão escreverás",
+        "evidenceRef": "Números 17:3"
+      },
+      {
+        "label": "E as colocarás na tenda",
+        "evidenceRef": "Números 17:4"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Entretanto\".",
+        "marker": "Entretanto",
+        "evidenceRef": "Números 17:3"
+      },
+      {
+        "kind": "sequência",
+        "text": "O relato avança de um gesto ao seguinte.",
+        "marker": null,
+        "evidenceRef": "Números 17:2"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Coríntios 10:9",
+        "bridge": "Não tentem o Senhor"
+      },
+      {
+        "ref": "2 Pedro 2:15",
+        "bridge": "Caminho de Balaão"
+      },
+      {
+        "ref": "Deuteronômio 18:18",
+        "bridge": "Profeta como Moisés"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "Deus confirma o escolhido com vida onde só havia madeira seca.",
+    "anchorQuestion": "O que Números 17:1 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Números 17:1, o texto inclui O Senhor disse a Moisés.",
+      "verseRef": "Números 17:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor disse a Moisés",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 17:1 afirma.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Números 17:1, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Números 17:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "disse"
+        },
+        {
+          "id": "c",
+          "text": "Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "O versículo destaca Senhor.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Números 17:3, o que o texto apresenta com clareza.",
+      "verseRef": "Números 17:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 17:3"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Números 17:2 na ordem do texto.",
+      "verseRef": "Números 17:2",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fale aos filhos"
+        },
+        {
+          "id": "b",
+          "text": "Israel e receba uma"
+        },
+        {
+          "id": "c",
+          "text": "vara de cada casa paterna de todos os seus príncipes"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Fale aos filhos",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Números 17:2"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Números 17:4, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 17:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "colocarás"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "colocarás",
+      "feedbackCorrect": "A palavra do versículo é colocarás.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 17:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Números 17:1 comunica que se liga a este contexto.",
+      "verseRef": "Números 17:1",
+      "passageA": {
+        "ref": "Números 17:1"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de A vara que floresce: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Números 17:3, o texto trata as ideias como desconexas, sem ligação.",
+      "verseRef": "Números 17:3",
+      "correctOptionId": "false",
+      "evidenceSpan": "Entretanto",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 17:3 afirma.",
+      "evidence": [
+        "Números 17:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Números 17:3, toque a palavra que marca a relação no texto.",
+      "verseRef": "Números 17:3",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "nome"
+        },
+        {
+          "id": "c",
+          "text": "Arão"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto",
+      "feedbackCorrect": "O versículo destaca Entretanto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 17:3"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Números 17:4, o que o texto apresenta com clareza.",
+      "verseRef": "Números 17:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "O trecho registra o fato central com clareza"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E as colocarás na tenda da congregação, diante",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 17:4"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Números 17:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O senhor disse a moisés"
+        },
+        {
+          "id": "b",
+          "text": "Fale aos filhos de israel"
+        },
+        {
+          "id": "c",
+          "text": "Entretanto o nome de arão escreverás"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Números 17:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Números 17:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "vara"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vara",
+      "feedbackCorrect": "A palavra do versículo é vara.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 17:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Números 17:1 a 1 Coríntios 10:9.",
+      "verseRef": "Números 17:1",
+      "passageA": {
+        "ref": "Números 17:1"
+      },
+      "passageB": {
+        "ref": "1 Coríntios 10:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tentem o Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Números 17:8",
+      "correctOptionId": "false",
+      "evidenceSpan": "No",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Números 17:8 afirma.",
+      "evidence": [
+        "Números 17:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Números 17:6, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Números 17:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Moisés"
+        },
+        {
+          "id": "b",
+          "text": "falou"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Moisés",
+      "feedbackCorrect": "O versículo destaca Moisés.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Números 17:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Números 17:5, o que o texto apresenta com clareza.",
+      "verseRef": "Números 17:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O texto mostra: a vara do homem que eu escolher florescerá"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "E a vara do homem que eu escolher florescerá; assim, farei",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Números 17:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Números 17:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Números 17:5, qual palavra completa o sentido do trecho.",
+      "verseRef": "Números 17:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "homem"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "disse"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "homem",
+      "feedbackCorrect": "A palavra do versículo é homem.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Números 17:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Números 17:1 a 2 Pedro 2:15.",
+      "verseRef": "Números 17:1",
+      "passageA": {
+        "ref": "Números 17:1"
+      },
+      "passageB": {
+        "ref": "2 Pedro 2:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Caminho de Balaão"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Números 17:1"
+      ]
+    }
+  ]
+}

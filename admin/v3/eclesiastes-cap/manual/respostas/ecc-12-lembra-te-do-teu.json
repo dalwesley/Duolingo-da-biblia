@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Eclesiastes 12:1–8",
+    "passages": [{ "ref": "Eclesiastes 12:1–8" }],
+    "context": "O Pregador chama a juventude a lembrar o Criador antes dos dias ruins. No fim, o pó volta à terra e o espírito a Deus; tudo é vaidade.",
+    "keyword": "Criador",
+    "keywordGloss": "Aquele a quem se deve lembrar na juventude, antes que o prazer se apague.",
+    "focusQuestion": "O que você ainda adia lembrar do Criador como se a juventude fosse eterna?",
+    "reflectionPrompts": ["Lembrar na juventude", "Dias ruins", "Pó e espírito"],
+    "facts": [
+      {
+        "text": "Lembre-se do Criador nos dias da juventude, antes dos dias ruins.",
+        "evidenceRef": "Eclesiastes 12:1",
+        "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude"
+      },
+      {
+        "text": "Chegarão anos em que se dirá: Não tenho prazer neles.",
+        "evidenceRef": "Eclesiastes 12:1",
+        "evidenceSpan": "Não tenho prazer neles"
+      },
+      {
+        "text": "O homem vai para sua casa eterna, e os pranteadores andam pela praça.",
+        "evidenceRef": "Eclesiastes 12:5",
+        "evidenceSpan": "o homem vai para sua casa eterna"
+      },
+      {
+        "text": "O pó retornará à terra, e o espírito retornará a Deus, que o deu.",
+        "evidenceRef": "Eclesiastes 12:7",
+        "evidenceSpan": "o espírito retornará a Deus, que o deu"
+      },
+      {
+        "text": "Vaidade das vaidades, diz o Pregador, tudo é vaidade.",
+        "evidenceRef": "Eclesiastes 12:8",
+        "evidenceSpan": "Vaidade das vaidades, diz o Pregador, tudo é vaidade"
+      },
+      {
+        "text": "Antes que o fio de prata se rompa e o cântaro se quebre junto à fonte.",
+        "evidenceRef": "Eclesiastes 12:6",
+        "evidenceSpan": "Antes que o fio de prata se rompa"
+      }
+    ],
+    "keyTerms": [
+      { "term": "Criador", "gloss": "Aquele a lembrar na juventude, antes dos dias sem prazer." },
+      { "term": "espírito", "gloss": "O que retorna a Deus, que o deu." },
+      { "term": "vaidade", "gloss": "O veredito final do Pregador sobre tudo debaixo do sol." }
+    ],
+    "structure": [
+      { "label": "Lembre o Criador antes dos dias ruins", "evidenceRef": "Eclesiastes 12:1–2" },
+      { "label": "A casa do corpo enfraquece", "evidenceRef": "Eclesiastes 12:3–5" },
+      { "label": "O fio se rompe e o pó volta", "evidenceRef": "Eclesiastes 12:6–7" },
+      { "label": "Tudo é vaidade, diz o Pregador", "evidenceRef": "Eclesiastes 12:8" }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "Lembre o Criador antes que cheguem os dias ruins.",
+        "marker": "antes que",
+        "evidenceRef": "Eclesiastes 12:1"
+      },
+      {
+        "kind": "causa",
+        "text": "O homem vai à casa eterna porque a vida enfraquece até o fim.",
+        "marker": "porque",
+        "evidenceRef": "Eclesiastes 12:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "O pó volta à terra e o espírito a Deus, que o deu.",
+        "marker": null,
+        "evidenceRef": "Eclesiastes 12:7"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "Salmos 90:12", "bridge": "Contar os dias com sabedoria" },
+      { "ref": "Gênesis 2:7", "bridge": "Deus deu o fôlego de vida" },
+      { "ref": "Eclesiastes 12:13", "bridge": "Teme a Deus e guarda" }
+    ],
+    "misreadings": [
+      {
+        "text": "A juventude é para esquecer Deus e só lembrar depois.",
+        "why": "12:1 manda lembrar o Criador nos dias da juventude."
+      },
+      {
+        "text": "O espírito se dissolve no pó e não volta a Deus.",
+        "why": "12:7: o espírito retornará a Deus, que o deu."
+      },
+      {
+        "text": "O Pregador celebra a juventude sem qualquer aviso de fim.",
+        "why": "O texto descreve os dias ruins e a casa eterna."
+      }
+    ],
+    "centralInsight": "A juventude não é para esquecer Deus: o fim lembra que tudo é vapor sem ele.",
+    "anchorQuestion": "Segundo Eclesiastes 12:1, de quem se deve lembrar nos dias da juventude?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Eclesiastes 12:1, deve-se lembrar do Criador nos dias da juventude.",
+      "verseRef": "Eclesiastes 12:1",
+      "correctOptionId": "true",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "A ordem é clara: lembrar o Criador na juventude.",
+      "feedbackWrong": { "false": "Releia 12:1: lembre-se do Criador na juventude." },
+      "hint": "Veja de quem se deve lembrar.",
+      "learningObjective": "Observar a ordem de lembrar o Criador.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 12:7, toque o que retorna a Deus.",
+      "verseRef": "Eclesiastes 12:7",
+      "options": [
+        { "id": "a", "text": "o espírito" },
+        { "id": "b", "text": "o pó" },
+        { "id": "c", "text": "terra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o espírito retornará a Deus",
+      "feedbackCorrect": "É o espírito que retorna a Deus, que o deu.",
+      "feedbackWrong": {
+        "b": "O pó retorna à terra.",
+        "c": "A terra recebe o pó; a Deus volta o espírito."
+      },
+      "hint": "Veja o que retorna a Deus.",
+      "learningObjective": "Identificar o espírito que volta a Deus.",
+      "evidence": ["Eclesiastes 12:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Eclesiastes 12:8, o que diz o Pregador?",
+      "verseRef": "Eclesiastes 12:8",
+      "options": [
+        { "id": "a", "text": "Vaidade das vaidades; tudo é vaidade" },
+        { "id": "b", "text": "Tudo é eterno debaixo do sol" },
+        { "id": "c", "text": "A juventude nunca acaba" },
+        { "id": "d", "text": "O pó nunca volta à terra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vaidade das vaidades, diz o Pregador, tudo é vaidade",
+      "feedbackCorrect": "O Pregador fecha: tudo é vaidade.",
+      "feedbackWrong": {
+        "b": "O veredito é vaidade, não eternidade sob o sol.",
+        "c": "O texto fala dos dias ruins.",
+        "d": "12:7 diz que o pó retorna à terra."
+      },
+      "hint": "Leia a frase completa do Pregador.",
+      "learningObjective": "Reconhecer o veredito final de vaidade.",
+      "evidence": ["Eclesiastes 12:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Eclesiastes 12:7 na ordem do texto.",
+      "verseRef": "Eclesiastes 12:7",
+      "options": [
+        { "id": "a", "text": "E o pó retornará à terra, como era antes" },
+        { "id": "b", "text": "e o espírito retornará a Deus" },
+        { "id": "c", "text": "que o deu" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "E o pó retornará à terra, como era antes, e o espírito retornará a Deus, que o deu",
+      "feedbackCorrect": "Primeiro o pó; depois o espírito; por fim quem o deu.",
+      "feedbackWrong": { "default": "Comece pelo pó; \"que o deu\" fecha." },
+      "hint": "Siga pó → espírito → Deus.",
+      "learningObjective": "Seguir a ordem literal do retorno.",
+      "evidence": ["Eclesiastes 12:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Eclesiastes 12:1, de quem se deve lembrar na juventude?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "Criador" },
+        { "id": "b", "text": "Pregador" },
+        { "id": "c", "text": "pranteadores" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do seu Criador",
+      "feedbackCorrect": "Deve-se lembrar do Criador.",
+      "feedbackWrong": {
+        "b": "O Pregador fala; o lembrado é o Criador.",
+        "c": "Os pranteadores aparecem no fim da vida."
+      },
+      "hint": "Veja o objeto de \"Lembre-se\".",
+      "learningObjective": "Lembrar a palavra-chave Criador.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Eclesiastes 12:1 comunica que se liga a este contexto?",
+      "verseRef": "Eclesiastes 12:1",
+      "passageA": { "ref": "Eclesiastes 12:1" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Pregador chama a juventude a lembrar Deus antes que o prazer se apague."
+      },
+      "options": [
+        { "id": "a", "text": "Lembrar o Criador cedo" },
+        { "id": "b", "text": "Esquecer Deus na juventude" },
+        { "id": "c", "text": "Só lembrar nos dias ruins" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "O contexto da juventude aparece no lembrar o Criador cedo.",
+      "feedbackWrong": {
+        "b": "O texto manda lembrar, não esquecer.",
+        "c": "A ordem é lembrar antes dos dias ruins."
+      },
+      "hint": "Veja quando se deve lembrar.",
+      "learningObjective": "Ligar o contexto ao lembrar cedo.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Eclesiastes 12:1, deve-se lembrar do Criador só depois que chegarem os dias ruins.",
+      "verseRef": "Eclesiastes 12:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "A ordem é lembrar antes que cheguem os dias ruins.",
+      "feedbackWrong": { "true": "O texto diz \"antes que\", não \"depois que\"." },
+      "hint": "Procure a expressão \"antes que\".",
+      "learningObjective": "Ver a sequência temporal do lembrar.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 12:1, toque as palavras que marcam o limite temporal do lembrar.",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "antes que" },
+        { "id": "b", "text": "juventude" },
+        { "id": "c", "text": "prazer" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "\"Antes que\" marca o limite: lembrar enquanto ainda é juventude.",
+      "feedbackWrong": {
+        "b": "Juventude é o tempo; o marcador temporal é outra expressão.",
+        "c": "Prazer aparece no lamento dos dias ruins."
+      },
+      "hint": "Ache a expressão antes dos dias ruins.",
+      "learningObjective": "Tocar o marcador de sequência temporal.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Eclesiastes 12:1 estabelece entre juventude e dias ruins?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "Lembre o Criador na juventude, antes dos dias sem prazer" },
+        { "id": "b", "text": "Esqueça Deus na juventude e lembre só no fim" },
+        { "id": "c", "text": "Os dias ruins nunca chegam" },
+        { "id": "d", "text": "A juventude dispensa qualquer memória de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "A juventude é o tempo de lembrar, antes dos dias ruins.",
+      "feedbackWrong": {
+        "b": "O texto manda o oposto.",
+        "c": "O texto prevê a chegada desses dias.",
+        "d": "A ordem é lembrar o Criador."
+      },
+      "hint": "Ligue a juventude ao \"antes que\".",
+      "learningObjective": "Relacionar juventude e dias ruins.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos de Eclesiastes 12:1–8.",
+      "verseRef": "Eclesiastes 12:6–7",
+      "options": [
+        { "id": "a", "text": "Lembre o Criador antes dos dias ruins" },
+        { "id": "b", "text": "O fio se rompe e o pó volta" },
+        { "id": "c", "text": "Tudo é vaidade, diz o Pregador" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Vaidade das vaidades, diz o Pregador, tudo é vaidade",
+      "feedbackCorrect": "Do lembrar ao fim do corpo e ao veredito de vaidade.",
+      "feedbackWrong": { "default": "Comece pelo lembrar; a vaidade fecha." },
+      "hint": "Siga lembrar → fim → vaidade.",
+      "learningObjective": "Ordenar a estrutura do fim.",
+      "evidence": ["Eclesiastes 12:1–8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Eclesiastes 12:1, que expressão marca o limite antes dos dias ruins?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "antes" },
+        { "id": "b", "text": "depois" },
+        { "id": "c", "text": "nunca" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes que cheguem os dias ruins",
+      "feedbackCorrect": "\"Antes\" marca o tempo do lembrar.",
+      "feedbackWrong": {
+        "b": "O texto não diz depois.",
+        "c": "Há um tempo claro: antes."
+      },
+      "hint": "Complete a expressão \"___ que cheguem\".",
+      "learningObjective": "Lembrar o marcador temporal.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 12:1 a Salmos 90:12?",
+      "verseRef": "Eclesiastes 12:1",
+      "passageA": { "ref": "Eclesiastes 12:1" },
+      "passageB": { "ref": "Salmos 90:12" },
+      "options": [
+        { "id": "a", "text": "Contar os dias com sabedoria" },
+        { "id": "b", "text": "Ignorar o fim da vida" },
+        { "id": "c", "text": "Adiar toda memória de Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nos dias da sua juventude",
+      "feedbackCorrect": "Os dois textos pedem sabedoria diante dos dias limitados.",
+      "feedbackWrong": {
+        "b": "Ambos apontam para o fim.",
+        "c": "Eclesiastes manda lembrar cedo."
+      },
+      "hint": "Compare a juventude com contar os dias.",
+      "learningObjective": "Ligar o lembrar cedo ao Salmo 90.",
+      "evidence": ["Eclesiastes 12:1", "Salmos 90:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Eclesiastes 12:1–8 ensina que a juventude é para esquecer Deus e só lembrar depois.",
+      "verseRef": "Eclesiastes 12:1",
+      "correctOptionId": "false",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "A juventude é exatamente o tempo de lembrar o Criador.",
+      "feedbackWrong": { "true": "O texto manda lembrar na juventude, não depois." },
+      "hint": "Veja quando se deve lembrar.",
+      "learningObjective": "Rejeitar a leitura de juventude sem Deus.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Eclesiastes 12:7, toque o trecho que sustenta a origem do espírito.",
+      "verseRef": "Eclesiastes 12:7",
+      "options": [
+        { "id": "a", "text": "que o deu" },
+        { "id": "b", "text": "como era antes" },
+        { "id": "c", "text": "à terra" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a Deus, que o deu",
+      "feedbackCorrect": "A origem está em \"que o deu\": Deus deu o espírito.",
+      "feedbackWrong": {
+        "b": "Isso descreve o pó; a origem do espírito é outra.",
+        "c": "A terra recebe o pó."
+      },
+      "hint": "Leia o fim do versículo sobre Deus.",
+      "learningObjective": "Sustentar com o texto que Deus deu o espírito.",
+      "evidence": ["Eclesiastes 12:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Eclesiastes 12:1–8 sustenta sobre juventude e fim?",
+      "verseRef": "Eclesiastes 12:1",
+      "options": [
+        { "id": "a", "text": "A juventude não é para esquecer Deus; o fim lembra a vaidade" },
+        { "id": "b", "text": "O espírito se dissolve no pó sem voltar a Deus" },
+        { "id": "c", "text": "Os dias ruins nunca chegam de verdade" },
+        { "id": "d", "text": "O Pregador nega qualquer vaidade final" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do seu Criador nos dias da sua juventude",
+      "feedbackCorrect": "Lembrar cedo e o veredito de vaidade sustentam essa leitura.",
+      "feedbackWrong": {
+        "b": "12:7 diz que o espírito retorna a Deus.",
+        "c": "O texto descreve a chegada desses dias.",
+        "d": "12:8 afirma: tudo é vaidade."
+      },
+      "hint": "Una 12:1 com 12:7–8.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Eclesiastes 12:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra o caminho da juventude ao retorno a Deus?",
+      "verseRef": "Eclesiastes 12:7–8",
+      "options": [
+        { "id": "a", "text": "Lembrar o Criador na juventude" },
+        { "id": "b", "text": "O corpo enfraquece até a casa eterna" },
+        { "id": "c", "text": "O espírito retorna a Deus" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o espírito retornará a Deus, que o deu",
+      "feedbackCorrect": "Do lembrar cedo ao enfraquecer e ao retorno a Deus.",
+      "feedbackWrong": { "default": "Comece pelo lembrar; o espírito fecha." },
+      "hint": "Siga juventude → enfraquecer → Deus.",
+      "learningObjective": "Ver o encadeamento até o retorno a Deus.",
+      "evidence": ["Eclesiastes 12:1–7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Eclesiastes 12:8, que termo resume o veredito do Pregador?",
+      "verseRef": "Eclesiastes 12:8",
+      "options": [
+        { "id": "a", "text": "vaidade" },
+        { "id": "b", "text": "juventude" },
+        { "id": "c", "text": "prazer" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tudo é vaidade",
+      "feedbackCorrect": "Vaidade é o termo do veredito final.",
+      "feedbackWrong": {
+        "b": "Juventude é o tempo do lembrar.",
+        "c": "Prazer aparece no lamento dos dias ruins."
+      },
+      "hint": "Veja a última palavra do versículo.",
+      "learningObjective": "Lembrar o termo do veredito final.",
+      "evidence": ["Eclesiastes 12:8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Eclesiastes 12:7 a Gênesis 2:7?",
+      "verseRef": "Eclesiastes 12:7",
+      "passageA": { "ref": "Eclesiastes 12:7" },
+      "passageB": { "ref": "Gênesis 2:7" },
+      "options": [
+        { "id": "a", "text": "Deus deu o fôlego de vida" },
+        { "id": "b", "text": "O espírito nasce do pó sozinho" },
+        { "id": "c", "text": "Deus nunca deu o espírito" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a Deus, que o deu",
+      "feedbackCorrect": "Os dois textos afirmam que a vida vem de Deus, que a deu.",
+      "feedbackWrong": {
+        "b": "O espírito retorna a quem o deu.",
+        "c": "O texto diz que Deus o deu."
+      },
+      "hint": "Compare \"que o deu\" com o fôlego de vida.",
+      "learningObjective": "Ligar o retorno do espírito ao dom da criação.",
+      "evidence": ["Eclesiastes 12:7", "Gênesis 2:7"]
+    }
+  ]
+}

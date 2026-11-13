@@ -1,0 +1,457 @@
+{
+  "study": {
+    "passageRef": "Isaías 8:11–16",
+    "passages": [
+      { "ref": "Isaías 8:11–16" },
+      { "ref": "Isaías 8:17–18" }
+    ],
+    "context": "Com mão forte o Senhor adverte Isaías: não ande pelo caminho deste povo. O temor certo é santificar o Senhor dos Exércitos.",
+    "keyword": "temor",
+    "keywordGloss": "Espanto reverente devido só ao Senhor dos Exércitos, não ao que o povo teme.",
+    "focusQuestion": "Você teme o que a multidão teme, ou santifica o Senhor como seu temor?",
+    "reflectionPrompts": ["Não o caminho do povo", "Santificar o Senhor", "Santuário ou pedra"],
+    "facts": [
+      {
+        "text": "O Senhor falou com mão forte e advertiu Isaías a não andar pelo caminho deste povo.",
+        "evidenceRef": "Isaías 8:11",
+        "evidenceSpan": "me advertiu para não andar pelo caminho deste povo"
+      },
+      {
+        "text": "Não devem temer o que o povo teme nem ficar com medo disso.",
+        "evidenceRef": "Isaías 8:12",
+        "evidenceSpan": "não temam o que eles temem nem fiquem com medo disso"
+      },
+      {
+        "text": "Devem santificar o Senhor dos Exércitos; Ele seja o temor e o espanto reverente.",
+        "evidenceRef": "Isaías 8:13",
+        "evidenceSpan": "que Ele seja o vosso temor e o vosso espanto reverente"
+      },
+      {
+        "text": "Ele será santuário, mas também pedra de tropeço para as duas casas de Israel.",
+        "evidenceRef": "Isaías 8:14",
+        "evidenceSpan": "Ele será para vocês um santuário; mas será uma pedra de tropeço"
+      },
+      {
+        "text": "Isaías espera no Senhor, que oculta o rosto da casa de Jacó.",
+        "evidenceRef": "Isaías 8:17",
+        "evidenceSpan": "Esperarei no Senhor, que oculta Seu rosto da casa de Jacó"
+      },
+      {
+        "text": "Isaías e os filhos são sinais e maravilhas em Israel.",
+        "evidenceRef": "Isaías 8:18",
+        "evidenceSpan": "como sinais e maravilhas em Israel"
+      }
+    ],
+    "keyTerms": [
+      { "term": "santuário", "gloss": "O Senhor como refúgio para quem o santifica." },
+      { "term": "temor", "gloss": "Espanto reverente devido só a Ele." },
+      { "term": "testemunho", "gloss": "O que deve ser resguardado entre os discípulos." }
+    ],
+    "structure": [
+      { "label": "Advertência: não o caminho do povo", "evidenceRef": "Isaías 8:11–12" },
+      { "label": "Santificar o Senhor como temor", "evidenceRef": "Isaías 8:13" },
+      { "label": "Santuário ou pedra de tropeço", "evidenceRef": "Isaías 8:14–15" },
+      { "label": "Testemunho, espera e sinais", "evidenceRef": "Isaías 8:16–18" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Será santuário, mas pedra de tropeço para Israel.",
+        "marker": "mas",
+        "evidenceRef": "Isaías 8:14"
+      },
+      {
+        "kind": "causa",
+        "text": "O Senhor falou assim porque advertiu com mão forte.",
+        "marker": "Porque",
+        "evidenceRef": "Isaías 8:11"
+      },
+      {
+        "kind": "propósito",
+        "text": "Santificar o Senhor para que Ele seja o temor.",
+        "marker": null,
+        "evidenceRef": "Isaías 8:13"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "1 Pedro 3:15", "bridge": "Santificai a Cristo" },
+      { "ref": "Romanos 9:33", "bridge": "Pedra de tropeço" },
+      { "ref": "Hebreus 2:13", "bridge": "Eu e os filhos" }
+    ],
+    "misreadings": [
+      {
+        "text": "Devem temer o mesmo que o povo teme.",
+        "why": "O v.12 manda não temer o que eles temem."
+      },
+      {
+        "text": "O Senhor é só pedra de tropeço, nunca santuário.",
+        "why": "Para os que o santificam Ele é santuário; o tropeço é para as casas de Israel."
+      },
+      {
+        "text": "Não há o que resguardar: testemunho e lei são irrelevantes.",
+        "why": "O v.16 manda resguardar o testemunho e selar a lei."
+      }
+    ],
+    "centralInsight": "Ao Senhor dos Exércitos, a ele santificareis; ele será o vosso temor.",
+    "anchorQuestion": "Segundo Isaías 8:13, quem deve ser o temor e o espanto reverente?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Isaías 8:13, o Senhor dos Exércitos deve ser o temor e o espanto reverente.",
+      "verseRef": "Isaías 8:13",
+      "correctOptionId": "true",
+      "evidenceSpan": "que Ele seja o vosso temor e o vosso espanto reverente",
+      "feedbackCorrect": "O temor devido é só a Ele.",
+      "feedbackWrong": { "false": "Leia o fim de Isaías 8:13." },
+      "hint": "Veja o que Ele deve ser para vocês.",
+      "learningObjective": "Observar o temor devido ao Senhor.",
+      "evidence": ["Isaías 8:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Isaías 8:14, toque o que Ele será para vocês antes do contraste.",
+      "verseRef": "Isaías 8:14",
+      "options": [
+        { "id": "a", "text": "santuário" },
+        { "id": "b", "text": "armadilha" },
+        { "id": "c", "text": "laço" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ele será para vocês um santuário",
+      "feedbackCorrect": "Para os que o santificam, Ele é santuário.",
+      "feedbackWrong": {
+        "b": "Armadilha é para Jerusalém no contraste.",
+        "c": "Laço também pertence ao lado do tropeço."
+      },
+      "hint": "Leia o primeiro predicado.",
+      "learningObjective": "Identificar o santuário.",
+      "evidence": ["Isaías 8:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Isaías 8:12, o que não devem fazer?",
+      "verseRef": "Isaías 8:12",
+      "options": [
+        { "id": "a", "text": "Temer o que o povo teme" },
+        { "id": "b", "text": "Santificar o Senhor" },
+        { "id": "c", "text": "Resguardar o testemunho" },
+        { "id": "d", "text": "Esperar no Senhor" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não temam o que eles temem nem fiquem com medo disso",
+      "feedbackCorrect": "O temor do povo não deve ser o deles.",
+      "feedbackWrong": {
+        "b": "Santificar é a ordem do v.13.",
+        "c": "Resguardar é ordem do v.16.",
+        "d": "Esperar é a postura do v.17."
+      },
+      "hint": "Leia a proibição do versículo.",
+      "learningObjective": "Notar o que não devem temer.",
+      "evidence": ["Isaías 8:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Isaías 8:13 na ordem do texto.",
+      "verseRef": "Isaías 8:13",
+      "options": [
+        { "id": "a", "text": "Ao Senhor dos Exércitos, a Ele santifiquem" },
+        { "id": "b", "text": "que Ele seja o vosso temor" },
+        { "id": "c", "text": "e o vosso espanto reverente" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Ao Senhor dos Exércitos, a Ele santifiquem",
+      "feedbackCorrect": "Santificar, temor e espanto nessa ordem.",
+      "feedbackWrong": { "default": "Comece por santificar o Senhor." },
+      "hint": "O versículo começa com Ao Senhor.",
+      "learningObjective": "Reconhecer a ordem do temor devido.",
+      "evidence": ["Isaías 8:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Isaías 8:16, Resguarda o ___, sela a lei entre os meus discípulos.",
+      "verseRef": "Isaías 8:16",
+      "options": [
+        { "id": "a", "text": "testemunho" },
+        { "id": "b", "text": "santuário" },
+        { "id": "c", "text": "caminho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Resguarda o testemunho, sela a lei entre os meus discípulos",
+      "feedbackCorrect": "Testemunho e lei devem ser guardados.",
+      "feedbackWrong": {
+        "b": "Santuário está no v.14.",
+        "c": "Caminho aparece na advertência do v.11."
+      },
+      "hint": "O que deve ser resguardado?",
+      "learningObjective": "Lembrar o que resguardar.",
+      "evidence": ["Isaías 8:16"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Isaías 8:13 comunica que se liga a este contexto?",
+      "verseRef": "Isaías 8:13",
+      "passageA": { "ref": "Isaías 8:13", "text": "que Ele seja o vosso temor e o vosso espanto reverente" },
+      "passageB": { "ref": "Contexto", "text": "O temor certo não é o do povo, e sim o Senhor santificado." },
+      "options": [
+        { "id": "a", "text": "Temor só ao Senhor" },
+        { "id": "b", "text": "Temor ao povo" },
+        { "id": "c", "text": "Sem temor algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que Ele seja o vosso temor e o vosso espanto reverente",
+      "feedbackCorrect": "O temor devido é transferido para o Senhor.",
+      "feedbackWrong": {
+        "b": "O v.12 manda não temer o que o povo teme.",
+        "c": "Há temor: o espanto reverente a Ele."
+      },
+      "hint": "Veja quem deve ser o temor.",
+      "learningObjective": "Ligar o temor ao contexto da advertência.",
+      "evidence": ["Isaías 8:13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Isaías 8:14, o Senhor aparece só como santuário, sem qualquer contraste.",
+      "verseRef": "Isaías 8:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "Ele será para vocês um santuário; mas será uma pedra de tropeço",
+      "feedbackCorrect": "O \"mas\" introduz pedra de tropeço.",
+      "feedbackWrong": { "true": "Há um \"mas\" ligando santuário e tropeço." },
+      "hint": "Procure a palavra do contraste.",
+      "learningObjective": "Compreender o contraste santuário/tropeço.",
+      "evidence": ["Isaías 8:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Isaías 8:14, toque a palavra que marca o contraste com o santuário.",
+      "verseRef": "Isaías 8:14",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "santuário" },
+        { "id": "c", "text": "Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "um santuário; mas será uma pedra de tropeço",
+      "feedbackCorrect": "\"Mas\" vira santuário em pedra de tropeço.",
+      "feedbackWrong": {
+        "b": "Santuário é o primeiro lado; o marcador é mas.",
+        "c": "Israel recebe o tropeço; o marcador é mas."
+      },
+      "hint": "É a palavra curta do contraste.",
+      "learningObjective": "Tocar o marcador de contraste.",
+      "evidence": ["Isaías 8:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Isaías 8:12–13 relaciona o temor do povo e o temor do Senhor?",
+      "verseRef": "Isaías 8:12–13",
+      "options": [
+        { "id": "a", "text": "Não temam o que eles temem; santifiquem o Senhor" },
+        { "id": "b", "text": "Temam o povo e ignorem o Senhor" },
+        { "id": "c", "text": "O temor do povo é o mesmo que o do Senhor" },
+        { "id": "d", "text": "Não há temor devido a ninguém" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não temam o que eles temem",
+      "feedbackCorrect": "Há transferência: do medo coletivo ao temor santo.",
+      "feedbackWrong": {
+        "b": "O texto inverte essa lógica.",
+        "c": "O v.12 separa os temores.",
+        "d": "Há temor e espanto reverente a Ele."
+      },
+      "hint": "Compare a proibição e a ordem.",
+      "learningObjective": "Relacionar os dois temores.",
+      "evidence": ["Isaías 8:12–13"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Isaías 8:11–18?",
+      "verseRef": "Isaías 8:11–12",
+      "options": [
+        { "id": "a", "text": "Advertência: não o caminho do povo" },
+        { "id": "b", "text": "Santificar o Senhor como temor" },
+        { "id": "c", "text": "Espera e sinais dos filhos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "me advertiu para não andar pelo caminho deste povo",
+      "feedbackCorrect": "Da advertência ao temor e à espera.",
+      "feedbackWrong": { "default": "A espera e os sinais fecham a cena." },
+      "hint": "Comece pela advertência.",
+      "learningObjective": "Ver a progressão da cena.",
+      "evidence": ["Isaías 8:11–12"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Isaías 8:14, mas será uma pedra de ___.",
+      "verseRef": "Isaías 8:14",
+      "options": [
+        { "id": "a", "text": "tropeço" },
+        { "id": "b", "text": "sossego" },
+        { "id": "c", "text": "caminho" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas será uma pedra de tropeço",
+      "feedbackCorrect": "Tropeço nomeia o lado oposto ao santuário.",
+      "feedbackWrong": {
+        "b": "O texto não fala de sossego.",
+        "c": "Caminho aparece na advertência do v.11."
+      },
+      "hint": "É o substantivo depois de pedra de.",
+      "learningObjective": "Lembrar a palavra do contraste.",
+      "evidence": ["Isaías 8:14"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Isaías 8:14 a Romanos 9:33?",
+      "verseRef": "Isaías 8:14",
+      "passageA": { "ref": "Isaías 8:14", "text": "mas será uma pedra de tropeço e uma rocha de ofensa" },
+      "passageB": { "ref": "Romanos 9:33" },
+      "options": [
+        { "id": "a", "text": "Pedra de tropeço" },
+        { "id": "b", "text": "Só santuário" },
+        { "id": "c", "text": "Sem ofensa alguma" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas será uma pedra de tropeço e uma rocha de ofensa",
+      "feedbackCorrect": "Paulo cita a pedra de tropeço de Isaías.",
+      "feedbackWrong": {
+        "b": "Paulo destaca o tropeço.",
+        "c": "Há ofensa e tropeço nos dois."
+      },
+      "hint": "Compare a pedra.",
+      "learningObjective": "Ligar a pedra de Isaías a Romanos.",
+      "evidence": ["Isaías 8:14", "Romanos 9:33"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Isaías 8:12–14 sustenta que santificar o Senhor redefine o temor e decide se Ele é santuário ou tropeço.",
+      "verseRef": "Isaías 8:13–14",
+      "correctOptionId": "true",
+      "evidenceSpan": "que Ele seja o vosso temor e o vosso espanto reverente",
+      "feedbackCorrect": "O temor certo e o contraste santuário/tropeço andam juntos.",
+      "feedbackWrong": { "false": "Os vv.13–14 unem santificar, temor e o duplo efeito." },
+      "hint": "Leia juntos santificar e o que Ele será.",
+      "learningObjective": "Interpretar temor e santuário juntos.",
+      "evidence": ["Isaías 8:13–14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Isaías 8:14, toque o trecho que sustenta a leitura de ofensa.",
+      "verseRef": "Isaías 8:14",
+      "options": [
+        { "id": "a", "text": "rocha de ofensa" },
+        { "id": "b", "text": "um santuário" },
+        { "id": "c", "text": "para vocês" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "uma pedra de tropeço e uma rocha de ofensa",
+      "feedbackCorrect": "Rocha de ofensa nomeia o lado do tropeço.",
+      "feedbackWrong": {
+        "b": "Santuário é o outro lado do contraste.",
+        "c": "\"Para vocês\" introduz o santuário."
+      },
+      "hint": "Procure o paralelo de pedra de tropeço.",
+      "learningObjective": "Sustentar a leitura de ofensa.",
+      "evidence": ["Isaías 8:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Isaías 8:11–18 sustenta?",
+      "verseRef": "Isaías 8:13",
+      "options": [
+        { "id": "a", "text": "Santificar o Senhor redefine o temor e a espera" },
+        { "id": "b", "text": "Devem seguir o temor do povo" },
+        { "id": "c", "text": "O Senhor nunca é santuário" },
+        { "id": "d", "text": "Testemunho e lei podem ser abandonados" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Ao Senhor dos Exércitos, a Ele santifiquem",
+      "feedbackCorrect": "A cena move do medo coletivo ao temor santo e à espera.",
+      "feedbackWrong": {
+        "b": "O v.12 proíbe esse temor.",
+        "c": "Ele será santuário para vocês.",
+        "d": "O v.16 manda resguardar e selar."
+      },
+      "hint": "Una santificar, temor e espera.",
+      "learningObjective": "Escolher a leitura do arco da cena.",
+      "evidence": ["Isaías 8:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga Isaías 8 ao Novo Testamento?",
+      "verseRef": "Isaías 8:14",
+      "options": [
+        { "id": "a", "text": "Pedra de tropeço em Isaías" },
+        { "id": "b", "text": "Paulo cita a pedra de tropeço" },
+        { "id": "c", "text": "Santificai a Cristo no coração" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "mas será uma pedra de tropeço e uma rocha de ofensa",
+      "evidence": ["Isaías 8:14", "Romanos 9:33", "1 Pedro 3:15"],
+      "feedbackCorrect": "Da pedra à citação e ao santificar Cristo.",
+      "feedbackWrong": { "default": "Comece por Isaías; depois Romanos; enfim Pedro." },
+      "hint": "Siga pedra → citação → santificar.",
+      "learningObjective": "Encadear Isaías 8 no NT."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Isaías 8:13, que Ele seja o vosso ___.",
+      "verseRef": "Isaías 8:13",
+      "options": [
+        { "id": "a", "text": "temor" },
+        { "id": "b", "text": "caminho" },
+        { "id": "c", "text": "povo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que Ele seja o vosso temor e o vosso espanto reverente",
+      "feedbackCorrect": "Temor é o termo teológico central da cena.",
+      "feedbackWrong": {
+        "b": "Caminho é o que não devem seguir no v.11.",
+        "c": "Povo é quem teme errado no v.12."
+      },
+      "hint": "É o que Ele deve ser para vocês.",
+      "learningObjective": "Lembrar o termo teológico do temor.",
+      "evidence": ["Isaías 8:13"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Isaías 8:18 a Hebreus 2:13?",
+      "verseRef": "Isaías 8:18",
+      "passageA": { "ref": "Isaías 8:18", "text": "Aqui estou eu e os filhos que o Senhor me deu" },
+      "passageB": { "ref": "Hebreus 2:13" },
+      "options": [
+        { "id": "a", "text": "Eu e os filhos" },
+        { "id": "b", "text": "Filhos abandonados" },
+        { "id": "c", "text": "Sem sinais em Israel" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Aqui estou eu e os filhos que o Senhor me deu",
+      "feedbackCorrect": "Hebreus cita Isaías sobre o Senhor e os filhos.",
+      "feedbackWrong": {
+        "b": "Os filhos são dados pelo Senhor.",
+        "c": "São sinais e maravilhas."
+      },
+      "hint": "Compare a frase sobre os filhos.",
+      "learningObjective": "Ligar Isaías 8:18 a Hebreus.",
+      "evidence": ["Isaías 8:18", "Hebreus 2:13"]
+    }
+  ]
+}

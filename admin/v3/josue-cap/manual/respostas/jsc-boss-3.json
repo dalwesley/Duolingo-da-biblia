@@ -1,0 +1,925 @@
+{
+  "study": {
+    "passageRef": "Josué 10:12–14",
+    "passages": [
+      {
+        "ref": "Josué 10:6–14"
+      },
+      {
+        "ref": "Josué 11:15–23"
+      },
+      {
+        "ref": "Josué 14:6–15"
+      },
+      {
+        "ref": "Josué 17:11–18"
+      }
+    ],
+    "context": "Esta Travessia revisa Vitória e herança: sol em Gibeão, cumprimento total, Calebe e o quinhão da casa de José.",
+    "keyword": "possuir",
+    "keywordGloss": "O Senhor dá a terra; o povo precisa tomar posse com fé.",
+    "focusQuestion": "O que o Senhor já deu e você ainda não tomou posse?",
+    "reflectionPrompts": [
+      "Sol que se detém",
+      "Nenhuma palavra de lado",
+      "Tomar posse"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor ouviu a voz de um homem.",
+        "evidenceRef": "Josué 10:14",
+        "evidenceSpan": "tendo o Senhor ouvido a voz de um homem"
+      },
+      {
+        "text": "Josué cumpriu tudo sem deixar nenhuma palavra.",
+        "evidenceRef": "Josué 11:15",
+        "evidenceSpan": "sem deixar de lado nenhuma palavra"
+      },
+      {
+        "text": "A terra repousou da guerra.",
+        "evidenceRef": "Josué 11:23",
+        "evidenceSpan": "a terra repousou da guerra"
+      },
+      {
+        "text": "Calebe tem oitenta e cinco anos.",
+        "evidenceRef": "Josué 14:10",
+        "evidenceSpan": "tenho oitenta e cinco anos"
+      },
+      {
+        "text": "Josué deu Hebrom a Calebe.",
+        "evidenceRef": "Josué 14:13",
+        "evidenceSpan": "Hebrom como herança"
+      },
+      {
+        "text": "Josué mandou subir ao bosque.",
+        "evidenceRef": "Josué 17:15",
+        "evidenceSpan": "subam ao bosque"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "cumpriu",
+        "gloss": "Obediência total à ordem do Senhor."
+      },
+      {
+        "term": "Hebrom",
+        "gloss": "Herança de Calebe pela perseverança."
+      },
+      {
+        "term": "bosque",
+        "gloss": "Área a abrir para ampliar a posse."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Senhor luta e ouve Josué",
+        "evidenceRef": "Josué 10:8–14"
+      },
+      {
+        "label": "Josué cumpre e a terra repousa",
+        "evidenceRef": "Josué 11:15–23"
+      },
+      {
+        "label": "Calebe pede e recebe Hebrom",
+        "evidenceRef": "Josué 14:6–15"
+      },
+      {
+        "label": "José é mandado ao bosque",
+        "evidenceRef": "Josué 17:14–18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Dia único porque o Senhor lutava.",
+        "marker": "porque",
+        "evidenceRef": "Josué 10:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Irmãos desanimam; porém Calebe permanece firme.",
+        "marker": "porém",
+        "evidenceRef": "Josué 14:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Reclamam; porém a montanha será deles.",
+        "marker": "Porém",
+        "evidenceRef": "Josué 17:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Êxodo 14:14",
+        "bridge": "Senhor luta por vós"
+      },
+      {
+        "ref": "Números 14:24",
+        "bridge": "Calebe de outro espírito"
+      },
+      {
+        "ref": "Deuteronômio 20:1",
+        "bridge": "Não temer carros"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A terra se toma sem fé nem esforço.",
+        "why": "Josué manda abrir o bosque e expulsar."
+      },
+      {
+        "text": "Calebe desistiu da promessa.",
+        "why": "Pede o monte e recebe Hebrom."
+      },
+      {
+        "text": "Josué deixou de lado várias ordens.",
+        "why": "Cumpriu tudo, nenhuma palavra de lado."
+      }
+    ],
+    "anchorQuestion": "Segundo Josué 17:15, o que Josué manda o grande povo fazer?",
+    "centralInsight": "O Senhor dá a terra; o povo precisa tomar posse com fé"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Josué 11:15, Josué cumpriu tudo sem deixar nenhuma palavra.",
+      "verseRef": "Josué 11:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "sem deixar de lado nenhuma palavra",
+      "feedbackCorrect": "Obediência total.",
+      "feedbackWrong": {
+        "false": "Cumpriu tudo."
+      },
+      "hint": "Veja o fim do versículo.",
+      "learningObjective": "Observar o cumprimento.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 14:13, toque a herança dada.",
+      "verseRef": "Josué 14:13",
+      "options": [
+        {
+          "id": "a",
+          "text": "Hebrom"
+        },
+        {
+          "id": "b",
+          "text": "Jefoné"
+        },
+        {
+          "id": "c",
+          "text": "abençoou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Hebrom como herança",
+      "feedbackCorrect": "Hebrom.",
+      "feedbackWrong": {
+        "b": "Jefoné é o pai.",
+        "c": "Abençoou é a ação."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Identificar Hebrom.",
+      "evidence": [
+        "Josué 14:13"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Josué 10:14, o que o Senhor fez?",
+      "verseRef": "Josué 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouviu a voz de um homem"
+        },
+        {
+          "id": "b",
+          "text": "Ignorou Josué"
+        },
+        {
+          "id": "c",
+          "text": "Parou só a chuva"
+        },
+        {
+          "id": "d",
+          "text": "Deixou Israel só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tendo o Senhor ouvido a voz de um homem",
+      "feedbackCorrect": "Ouviu a voz.",
+      "feedbackWrong": {
+        "b": "Ele ouviu.",
+        "c": "Há luta.",
+        "d": "Há presença."
+      },
+      "hint": "Leia a razão do dia.",
+      "learningObjective": "Reconhecer a voz ouvida.",
+      "evidence": [
+        "Josué 10:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 10:12 na ordem do texto.",
+      "verseRef": "Josué 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sol, detém-te em Gibeão"
+        },
+        {
+          "id": "b",
+          "text": "e tu, lua"
+        },
+        {
+          "id": "c",
+          "text": "no vale de Aijalom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Sol, detém-te em Gibeão",
+      "feedbackCorrect": "Sol e lua.",
+      "feedbackWrong": {
+        "default": "Comece pelo sol."
+      },
+      "hint": "Qual astro primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 10:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Josué 17:15, complete: subam ao ___.",
+      "verseRef": "Josué 17:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "bosque"
+        },
+        {
+          "id": "b",
+          "text": "vale"
+        },
+        {
+          "id": "c",
+          "text": "mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "subam ao bosque",
+      "feedbackCorrect": "Bosque.",
+      "feedbackWrong": {
+        "b": "Não é vale.",
+        "c": "A palavra é bosque."
+      },
+      "hint": "Veja o destino.",
+      "learningObjective": "Lembrar o bosque.",
+      "evidence": [
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Josué 11:23 comunica que se liga a este contexto?",
+      "verseRef": "Josué 11:23",
+      "passageA": {
+        "ref": "Josué 11:23"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Josué termina a conquista e reparte a terra."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Herança e repouso"
+        },
+        {
+          "id": "b",
+          "text": "Guerra sem fim"
+        },
+        {
+          "id": "c",
+          "text": "Sem herança"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "Repouso após herança.",
+      "feedbackWrong": {
+        "b": "Há repouso.",
+        "c": "Há herança."
+      },
+      "hint": "Veja o fim.",
+      "learningObjective": "Ligar conquista e repouso.",
+      "evidence": [
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Josué 14:8, toque o marcador de contraste.",
+      "verseRef": "Josué 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "porém"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "irmãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu, porém, permaneci firme",
+      "feedbackCorrect": "Porém.",
+      "feedbackWrong": {
+        "b": "Povo foi desanimado.",
+        "c": "Irmãos desanimaram."
+      },
+      "hint": "Procure após eu.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Josué 14:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Josué 11:15 na ordem do texto.",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Como o Senhor havia ordenado a Moisés"
+        },
+        {
+          "id": "b",
+          "text": "assim Moisés ordenou a Josué"
+        },
+        {
+          "id": "c",
+          "text": "e Josué cumpriu tudo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Josué cumpriu tudo o que o Senhor havia ordenado a Moisés",
+      "feedbackCorrect": "Cadeia de ordens.",
+      "feedbackWrong": {
+        "default": "Comece pelo Senhor."
+      },
+      "hint": "Quem ordena primeiro?",
+      "learningObjective": "Seguir a ordem do versículo.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Josué 10:14, o dia é único porque Israel lutou sozinho, sem o Senhor.",
+      "verseRef": "Josué 10:14",
+      "correctOptionId": "false",
+      "evidenceSpan": "porque o Senhor estava lutando por Israel",
+      "feedbackCorrect": "O Senhor lutava.",
+      "feedbackWrong": {
+        "true": "O porque aponta ao Senhor."
+      },
+      "hint": "Leia o porque.",
+      "learningObjective": "Ver a causa do dia único.",
+      "evidence": [
+        "Josué 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 10:14, toque a marca de causa.",
+      "verseRef": "Josué 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "porque"
+        },
+        {
+          "id": "b",
+          "text": "antes"
+        },
+        {
+          "id": "c",
+          "text": "depois"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "porque o Senhor estava lutando",
+      "feedbackCorrect": "Porque.",
+      "feedbackWrong": {
+        "b": "Antes situa.",
+        "c": "Depois situa."
+      },
+      "hint": "Procure a conjunção final.",
+      "learningObjective": "Tocar a causa.",
+      "evidence": [
+        "Josué 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Josué 14:9 faz?",
+      "verseRef": "Josué 14:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Perseverou; por isso a terra será herança"
+        },
+        {
+          "id": "b",
+          "text": "Desistiu; por isso perde"
+        },
+        {
+          "id": "c",
+          "text": "Espionou sem fé"
+        },
+        {
+          "id": "d",
+          "text": "Jurou contra Moisés"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois perseveraste em seguir ao SENHOR",
+      "feedbackCorrect": "Perseverança e herança.",
+      "feedbackWrong": {
+        "b": "Ele perseverou.",
+        "c": "Recebe.",
+        "d": "Moisés a favor."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a herança.",
+      "evidence": [
+        "Josué 14:9"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do bloco.",
+      "verseRef": "Josué 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor luta e ouve Josué"
+        },
+        {
+          "id": "b",
+          "text": "Calebe pede e recebe Hebrom"
+        },
+        {
+          "id": "c",
+          "text": "José é mandado ao bosque"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tendo o Senhor ouvido a voz de um homem",
+      "feedbackCorrect": "Luta, Hebrom e bosque.",
+      "feedbackWrong": {
+        "default": "Comece pela luta."
+      },
+      "hint": "O que abre o bloco?",
+      "learningObjective": "Ordenar a sequência",
+      "evidence": [
+        "Josué 10:14",
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Josué 14:8, complete: eu, porém, permaneci ___.",
+      "verseRef": "Josué 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "firme"
+        },
+        {
+          "id": "b",
+          "text": "calado"
+        },
+        {
+          "id": "c",
+          "text": "longe"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneci firme em seguir ao Senhor",
+      "feedbackCorrect": "Firme.",
+      "feedbackWrong": {
+        "b": "Não é calado.",
+        "c": "A palavra é firme."
+      },
+      "hint": "Veja o predicativo.",
+      "learningObjective": "Lembrar firme.",
+      "evidence": [
+        "Josué 14:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Josué 10:14 a Êxodo 14:14?",
+      "verseRef": "Josué 10:14",
+      "passageA": {
+        "ref": "Josué 10:14"
+      },
+      "passageB": {
+        "ref": "Êxodo 14:14"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor luta por vós"
+        },
+        {
+          "id": "b",
+          "text": "Povo luta só"
+        },
+        {
+          "id": "c",
+          "text": "Sol sem ordem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor estava lutando por Israel",
+      "feedbackCorrect": "Luta divina.",
+      "feedbackWrong": {
+        "b": "O elo é a luta.",
+        "c": "Há Deus."
+      },
+      "hint": "Quem luta?",
+      "learningObjective": "Ligar ao Êxodo.",
+      "evidence": [
+        "Josué 10:14",
+        "Êxodo 14:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Josué 17:18, toque o que os cananeus têm.",
+      "verseRef": "Josué 17:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "carros de ferro"
+        },
+        {
+          "id": "b",
+          "text": "Porém"
+        },
+        {
+          "id": "c",
+          "text": "floresta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda que tenham carros de ferro",
+      "feedbackCorrect": "Carros de ferro.",
+      "feedbackWrong": {
+        "b": "Porém é contraste.",
+        "c": "Floresta é o terreno."
+      },
+      "hint": "Veja o ainda que.",
+      "learningObjective": "Tocar os carros.",
+      "evidence": [
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene cumprimento e repouso.",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Josué cumpre toda a ordem"
+        },
+        {
+          "id": "b",
+          "text": "Toma a terra e derrota reis"
+        },
+        {
+          "id": "c",
+          "text": "Herança e repouso da guerra"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Josué cumpriu tudo",
+      "feedbackCorrect": "Cumprir e repousar.",
+      "feedbackWrong": {
+        "default": "Comece pelo cumprimento."
+      },
+      "hint": "O que fecha?",
+      "learningObjective": "Ordenar cumprimento",
+      "evidence": [
+        "Josué 11:15",
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Josué 17:18, os carros de ferro tornam a expulsão impossível segundo Josué.",
+      "verseRef": "Josué 17:18",
+      "correctOptionId": "false",
+      "evidenceSpan": "você expulsará os cananeus, ainda que tenham carros de ferro",
+      "feedbackCorrect": "Ele promete expulsão.",
+      "feedbackWrong": {
+        "true": "Ainda que tenham carros."
+      },
+      "hint": "Leia o ainda que.",
+      "learningObjective": "Avaliar o medo dos carros.",
+      "evidence": [
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 11:15, toque o trecho da totalidade.",
+      "verseRef": "Josué 11:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "nenhuma palavra"
+        },
+        {
+          "id": "b",
+          "text": "Moisés"
+        },
+        {
+          "id": "c",
+          "text": "servo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sem deixar de lado nenhuma palavra",
+      "feedbackCorrect": "Nenhuma palavra.",
+      "feedbackWrong": {
+        "b": "Moisés transmite.",
+        "c": "Servo descreve."
+      },
+      "hint": "Veja o que não ficou de lado.",
+      "learningObjective": "Tocar a totalidade.",
+      "evidence": [
+        "Josué 11:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une Calebe a este bloco?",
+      "verseRef": "Josué 14:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Aos oitenta e cinco, ainda confia e recebe"
+        },
+        {
+          "id": "b",
+          "text": "A idade apaga a promessa"
+        },
+        {
+          "id": "c",
+          "text": "Josué nega Hebrom"
+        },
+        {
+          "id": "d",
+          "text": "Só força física importa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "visto que perseverou em seguir o Senhor, Deus de Israel",
+      "feedbackCorrect": "Perseverança.",
+      "feedbackWrong": {
+        "b": "Promessa vive.",
+        "c": "Josué concede.",
+        "d": "Fé sustenta."
+      },
+      "hint": "Una idade e fé.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Josué 14:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da posse.",
+      "verseRef": "Josué 10:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor luta e cumpre a palavra"
+        },
+        {
+          "id": "b",
+          "text": "Calebe recebe Hebrom"
+        },
+        {
+          "id": "c",
+          "text": "Casa de José deve abrir o bosque"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "o Senhor estava lutando por Israel",
+      "feedbackCorrect": "Luta, herança e posse.",
+      "feedbackWrong": {
+        "default": "Comece pela luta."
+      },
+      "hint": "O que fecha com o bosque?",
+      "learningObjective": "Encadear a posse",
+      "evidence": [
+        "Josué 10:14",
+        "Josué 17:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Josué 11:23, complete: a terra ___ da guerra.",
+      "verseRef": "Josué 11:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "repousou"
+        },
+        {
+          "id": "b",
+          "text": "explodiu"
+        },
+        {
+          "id": "c",
+          "text": "fugiu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "a terra repousou da guerra",
+      "feedbackCorrect": "Repousou.",
+      "feedbackWrong": {
+        "b": "Não explodiu.",
+        "c": "O verbo é repousou."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar repouso.",
+      "evidence": [
+        "Josué 11:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Josué 17:18 a Deuteronômio 20:1?",
+      "verseRef": "Josué 17:18",
+      "passageA": {
+        "ref": "Josué 17:18"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 20:1"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Não temer carros"
+        },
+        {
+          "id": "b",
+          "text": "Fugir dos carros"
+        },
+        {
+          "id": "c",
+          "text": "Adorar o ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "ainda que tenham carros de ferro",
+      "feedbackCorrect": "Carros não cancelam.",
+      "feedbackWrong": {
+        "b": "Não temer.",
+        "c": "Há expulsão."
+      },
+      "hint": "Compare carros.",
+      "learningObjective": "Ligar a Deuteronômio.",
+      "evidence": [
+        "Josué 17:18",
+        "Deuteronômio 20:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Josué 10:12, toque o imperativo ao sol.",
+      "verseRef": "Josué 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "detém-te"
+        },
+        {
+          "id": "b",
+          "text": "lua"
+        },
+        {
+          "id": "c",
+          "text": "vale"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Sol, detém-te em Gibeão",
+      "feedbackCorrect": "Detém-te.",
+      "feedbackWrong": {
+        "b": "Lua no vale.",
+        "c": "Vale é o lugar."
+      },
+      "hint": "Veja o imperativo.",
+      "learningObjective": "Tocar detém-te.",
+      "evidence": [
+        "Josué 10:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene fé e posse pedida.",
+      "verseRef": "Josué 14:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Calebe permanece firme"
+        },
+        {
+          "id": "b",
+          "text": "Recebe Hebrom pela fé"
+        },
+        {
+          "id": "c",
+          "text": "José sobe ao bosque"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "eu, porém, permaneci firme",
+      "feedbackCorrect": "Firmeza, herança e bosque.",
+      "feedbackWrong": {
+        "default": "Comece pela firmeza."
+      },
+      "hint": "O que vem depois de Hebrom?",
+      "learningObjective": "Encadear fé e posse",
+      "evidence": [
+        "Josué 14:8",
+        "Josué 17:15"
+      ]
+    }
+  ]
+}

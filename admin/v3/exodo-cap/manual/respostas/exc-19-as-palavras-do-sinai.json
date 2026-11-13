@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Êxodo 20:7–12",
+    "passages": [
+      {
+        "ref": "Êxodo 20:7–17"
+      }
+    ],
+    "context": "No Sinai, o Senhor fala palavras que guardam o seu nome, o sábado e o amor concreto ao próximo.",
+    "keyword": "Palavras",
+    "keywordGloss": "Mandamentos que protegem o nome de Deus, o descanso e o próximo.",
+    "focusQuestion": "Qual mandamento está pedindo cuidado concreto na sua semana?",
+    "reflectionPrompts": [
+      "Nome em vão",
+      "Sábado santo",
+      "Amar o próximo"
+    ],
+    "facts": [
+      {
+        "text": "Não se deve tomar o nome do Senhor em vão.",
+        "evidenceRef": "Êxodo 20:7",
+        "evidenceSpan": "Não tomarás o nome do Senhor, teu Deus, em vão"
+      },
+      {
+        "text": "O sábado deve ser lembrado para santificá-lo.",
+        "evidenceRef": "Êxodo 20:8",
+        "evidenceSpan": "Lembre-se do dia de sábado, para santificá-lo"
+      },
+      {
+        "text": "Em seis dias o Senhor fez céus, terra e mar.",
+        "evidenceRef": "Êxodo 20:11",
+        "evidenceSpan": "em seis dias, o Senhor fez os céus, a terra, o mar"
+      },
+      {
+        "text": "Honrar pai e mãe prolonga os dias na terra.",
+        "evidenceRef": "Êxodo 20:12",
+        "evidenceSpan": "Honra teu pai e tua mãe, para que se prolonguem os teus dias"
+      },
+      {
+        "text": "Não se deve cobiçar a casa nem a mulher do próximo.",
+        "evidenceRef": "Êxodo 20:17",
+        "evidenceSpan": "Não cobiçarás a casa do teu próximo, não cobiçarás a mulher do teu próximo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "sábado",
+        "gloss": "Dia do Senhor para santificar, não trabalhar."
+      },
+      {
+        "term": "Honra",
+        "gloss": "Respeito a pai e mãe com promessa de dias longos."
+      },
+      {
+        "term": "cobiçarás",
+        "gloss": "Desejo proibido do que é do próximo."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Nome do Senhor e sábado",
+        "evidenceRef": "Êxodo 20:7–11"
+      },
+      {
+        "label": "Honra a pai e mãe",
+        "evidenceRef": "Êxodo 20:12"
+      },
+      {
+        "label": "Não matar, adulterar, roubar",
+        "evidenceRef": "Êxodo 20:13–15"
+      },
+      {
+        "label": "Falso testemunho e cobiça",
+        "evidenceRef": "Êxodo 20:16–17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Não tomar o nome em vão, pois o Senhor não terá por inocente.",
+        "marker": "pois",
+        "evidenceRef": "Êxodo 20:7"
+      },
+      {
+        "kind": "resultado",
+        "text": "Honra pai e mãe para que se prolonguem os dias.",
+        "marker": "para que",
+        "evidenceRef": "Êxodo 20:12"
+      },
+      {
+        "kind": "causa",
+        "text": "O sábado se funda na criação: porque em seis dias o Senhor fez.",
+        "marker": "Porque",
+        "evidenceRef": "Êxodo 20:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Mateus 22:37–39",
+        "bridge": "Amar Deus e próximo"
+      },
+      {
+        "ref": "Romanos 13:9",
+        "bridge": "Mandamentos resumidos"
+      },
+      {
+        "ref": "Efésios 6:2–3",
+        "bridge": "Honra e promessa"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O sábado não tem ligação com a criação.",
+        "why": "O texto liga o sábado aos seis dias da criação."
+      },
+      {
+        "text": "Cobiçar é só sobre objetos, nunca sobre pessoas.",
+        "why": "O texto inclui a mulher do próximo."
+      },
+      {
+        "text": "Tomar o nome em vão não tem consequência.",
+        "why": "O Senhor não considerará inocente quem o fizer."
+      }
+    ],
+    "centralInsight": "A lei guarda o nome de Deus, o descanso e o amor concreto ao próximo.",
+    "anchorQuestion": "Por que o Senhor mandou lembrar o sábado?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "O texto manda lembrar o dia de sábado para santificá-lo.",
+      "verseRef": "Êxodo 20:8",
+      "correctOptionId": "true",
+      "evidenceSpan": "Lembre-se do dia de sábado, para santificá-lo",
+      "feedbackCorrect": "Lembrar e santificar o sábado estão juntos.",
+      "feedbackWrong": {
+        "false": "Releia: lembre-se do dia de sábado, para santificá-lo."
+      },
+      "hint": "Veja o verbo e o propósito.",
+      "learningObjective": "Observar o mandamento do sábado.",
+      "evidence": [
+        "Êxodo 20:8"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 20:12, toque a quem se deve honrar primeiro no verso.",
+      "verseRef": "Êxodo 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "pai"
+        },
+        {
+          "id": "b",
+          "text": "mãe"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Honra teu pai e tua mãe",
+      "feedbackCorrect": "O verso começa: Honra teu pai e tua mãe.",
+      "feedbackWrong": {
+        "b": "A mãe vem junto; o primeiro citado é pai.",
+        "c": "A terra é a promessa; quem se honra é pai."
+      },
+      "hint": "Veja o primeiro honrado.",
+      "learningObjective": "Identificar pai e mãe.",
+      "evidence": [
+        "Êxodo 20:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 20:7, o que não se deve fazer com o nome do Senhor?",
+      "verseRef": "Êxodo 20:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomá-lo em vão"
+        },
+        {
+          "id": "b",
+          "text": "Cantá-lo em louvor"
+        },
+        {
+          "id": "c",
+          "text": "Ensiná-lo aos filhos"
+        },
+        {
+          "id": "d",
+          "text": "Lembrá-lo no sábado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não tomarás o nome do Senhor, teu Deus, em vão",
+      "feedbackCorrect": "É proibido tomar o nome do Senhor em vão.",
+      "feedbackWrong": {
+        "b": "Louvor não é o alvo da proibição.",
+        "c": "Ensinar não é tomado como vão aqui.",
+        "d": "O sábado é outro mandamento."
+      },
+      "hint": "Leia a proibição sobre o nome.",
+      "learningObjective": "Observar o uso do nome.",
+      "evidence": [
+        "Êxodo 20:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 20:7 na ordem do texto.",
+      "verseRef": "Êxodo 20:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não tomarás o nome do Senhor, teu Deus, em vão"
+        },
+        {
+          "id": "b",
+          "text": "pois o Senhor não considerará inocente"
+        },
+        {
+          "id": "c",
+          "text": "aquele que tomar o seu nome em vão"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não tomarás o nome do Senhor, teu Deus, em vão",
+      "feedbackCorrect": "Proibição, motivo e alcance na ordem do texto.",
+      "feedbackWrong": {
+        "default": "Comece pela proibição do nome."
+      },
+      "hint": "O versículo começa com Não tomarás.",
+      "learningObjective": "Reconhecer a ordem de 20:7.",
+      "evidence": [
+        "Êxodo 20:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 20:15, qual é a proibição?",
+      "verseRef": "Êxodo 20:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "roubarás"
+        },
+        {
+          "id": "b",
+          "text": "orarás"
+        },
+        {
+          "id": "c",
+          "text": "cantarás"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não roubarás",
+      "feedbackCorrect": "A ordem é: Não roubarás.",
+      "feedbackWrong": {
+        "b": "Não é sobre orar.",
+        "c": "O verbo proibido é roubar."
+      },
+      "hint": "Veja o verbo do mandamento.",
+      "learningObjective": "Lembrar a proibição de roubar.",
+      "evidence": [
+        "Êxodo 20:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 20:8 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 20:8",
+      "passageA": {
+        "ref": "Êxodo 20:8"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "No Sinai o Senhor dá palavras que moldam a vida do povo."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Descanso santificado"
+        },
+        {
+          "id": "b",
+          "text": "Volta ao Egito"
+        },
+        {
+          "id": "c",
+          "text": "Culto a Faraó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Lembre-se do dia de sábado, para santificá-lo",
+      "feedbackCorrect": "O sábado santificado é parte das palavras do Sinai.",
+      "feedbackWrong": {
+        "b": "O texto não manda voltar.",
+        "c": "O Senhor, não Faraó, é o centro."
+      },
+      "hint": "Compare a palavra com o momento.",
+      "learningObjective": "Ligar sábado e aliança.",
+      "evidence": [
+        "Êxodo 20:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 20:7, o Senhor considerará inocente quem tomar o seu nome em vão.",
+      "verseRef": "Êxodo 20:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "o Senhor não considerará inocente aquele que tomar o seu nome em vão",
+      "feedbackCorrect": "Ele não considerará inocente quem o fizer.",
+      "feedbackWrong": {
+        "true": "Releia: o Senhor não considerará inocente."
+      },
+      "hint": "Veja se há inocência ou não.",
+      "learningObjective": "Compreender a seriedade do nome.",
+      "evidence": [
+        "Êxodo 20:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 20:7, toque a palavra que marca o motivo da proibição.",
+      "verseRef": "Êxodo 20:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "nome"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "em vão, pois o Senhor não considerará inocente",
+      "feedbackCorrect": "\"Pois\" introduz a consequência divina.",
+      "feedbackWrong": {
+        "b": "\"nome\" é o objeto; o marcador é pois.",
+        "c": "\"Deus\" acompanha; a causa é pois."
+      },
+      "hint": "Procure a palavra após \"em vão\".",
+      "learningObjective": "Reconhecer o marcador de causa.",
+      "evidence": [
+        "Êxodo 20:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 20:11 liga o sábado à criação?",
+      "verseRef": "Êxodo 20:11",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porque o Senhor fez tudo em seis dias e descansou"
+        },
+        {
+          "id": "b",
+          "text": "Porque Israel inventou o descanso"
+        },
+        {
+          "id": "c",
+          "text": "Porque Faraó ordenou o sábado"
+        },
+        {
+          "id": "d",
+          "text": "Porque o mar Vermelho abriu no sábado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porque, em seis dias, o Senhor fez os céus, a terra, o mar",
+      "feedbackCorrect": "O fundamento é a criação e o descanso de Deus.",
+      "feedbackWrong": {
+        "b": "O texto aponta para o Senhor, não para Israel.",
+        "c": "Faraó não institui o sábado aqui.",
+        "d": "O motivo é a criação."
+      },
+      "hint": "Veja o \"Porque\" do versículo.",
+      "learningObjective": "Relacionar sábado e criação.",
+      "evidence": [
+        "Êxodo 20:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o bloco das palavras em Êxodo 20:7–17?",
+      "verseRef": "Êxodo 20:7–8",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guardar o nome e o sábado"
+        },
+        {
+          "id": "b",
+          "text": "Honrar pai e mãe"
+        },
+        {
+          "id": "c",
+          "text": "Não cobiçar o do próximo"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Não tomarás o nome do Senhor",
+      "feedbackCorrect": "De Deus e do descanso ao lar e ao próximo.",
+      "feedbackWrong": {
+        "default": "Comece pelo nome e sábado."
+      },
+      "hint": "Siga de Deus ao próximo.",
+      "learningObjective": "Compreender o movimento da lei.",
+      "evidence": [
+        "Êxodo 20:7",
+        "Êxodo 20:12",
+        "Êxodo 20:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 20:12, que palavra introduz o propósito de honrar pai e mãe?",
+      "verseRef": "Êxodo 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "para"
+        },
+        {
+          "id": "b",
+          "text": "contra"
+        },
+        {
+          "id": "c",
+          "text": "sem"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "para que se prolonguem os teus dias",
+      "feedbackCorrect": "\"Para que\" liga honra e dias prolongados.",
+      "feedbackWrong": {
+        "b": "Não é contra; é para que.",
+        "c": "O marcador é para."
+      },
+      "hint": "Veja a palavra antes de \"que se prolonguem\".",
+      "learningObjective": "Lembrar o marcador de propósito.",
+      "evidence": [
+        "Êxodo 20:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 20:12 a Efésios 6:2–3?",
+      "verseRef": "Êxodo 20:12",
+      "passageA": {
+        "ref": "Êxodo 20:12"
+      },
+      "passageB": {
+        "ref": "Efésios 6:2–3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Honra e promessa"
+        },
+        {
+          "id": "b",
+          "text": "Jejum no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Construção do templo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Honra teu pai e tua mãe, para que se prolonguem",
+      "feedbackCorrect": "Paulo cita a honra com promessa de dias.",
+      "feedbackWrong": {
+        "b": "O elo é honra familiar.",
+        "c": "Não é sobre o templo."
+      },
+      "hint": "Compare honra e dias longos.",
+      "learningObjective": "Relacionar Êxodo e Efésios.",
+      "evidence": [
+        "Êxodo 20:12",
+        "Efésios 6:2–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 20:7–17 sustenta que a lei só fala de ritos e ignora o próximo.",
+      "verseRef": "Êxodo 20:16–17",
+      "correctOptionId": "false",
+      "evidenceSpan": "Não darás falso testemunho em relação ao teu próximo",
+      "feedbackCorrect": "A lei alcança nome, descanso e o próximo concreto.",
+      "feedbackWrong": {
+        "true": "Há mandamentos claros sobre o próximo."
+      },
+      "hint": "Veja falso testemunho e cobiça.",
+      "learningObjective": "Interpretar o alcance da lei.",
+      "evidence": [
+        "Êxodo 20:16",
+        "Êxodo 20:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 20:17, toque o verbo que sustenta a proibição do desejo injusto.",
+      "verseRef": "Êxodo 20:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "cobiçarás"
+        },
+        {
+          "id": "b",
+          "text": "casa"
+        },
+        {
+          "id": "c",
+          "text": "boi"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não cobiçarás a casa do teu próximo",
+      "feedbackCorrect": "O verbo-chave é cobiçarás.",
+      "feedbackWrong": {
+        "b": "\"casa\" é objeto; o verbo é cobiçar.",
+        "c": "\"boi\" é exemplo; o verbo é cobiçar."
+      },
+      "hint": "Procure o verbo repetido.",
+      "learningObjective": "Sustentar a leitura da cobiça.",
+      "evidence": [
+        "Êxodo 20:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 20:7–17 sustenta sobre a lei?",
+      "verseRef": "Êxodo 20:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Guarda o nome de Deus e o amor concreto ao próximo"
+        },
+        {
+          "id": "b",
+          "text": "Só importa o culto sem ética"
+        },
+        {
+          "id": "c",
+          "text": "Cobiçar o próximo é permitido"
+        },
+        {
+          "id": "d",
+          "text": "O sábado não tem base na criação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não tomarás o nome do Senhor, teu Deus, em vão",
+      "feedbackCorrect": "Nome santo e próximo protegido andam juntos.",
+      "feedbackWrong": {
+        "b": "Há mandamentos éticos claros.",
+        "c": "Cobiçar é proibido.",
+        "d": "20:11 liga o sábado à criação."
+      },
+      "hint": "Una nome, sábado e próximo.",
+      "learningObjective": "Escolher a interpretação sustentável.",
+      "evidence": [
+        "Êxodo 20:7",
+        "Êxodo 20:17"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga as palavras do Sinai à Escritura?",
+      "verseRef": "Êxodo 20:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Sinai manda honrar e não cobiçar"
+        },
+        {
+          "id": "b",
+          "text": "Jesus resume em amar a Deus e ao próximo"
+        },
+        {
+          "id": "c",
+          "text": "Paulo cita a honra com promessa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Honra teu pai e tua mãe",
+      "feedbackCorrect": "Da lei ao resumo de Jesus e à citação de Paulo.",
+      "feedbackWrong": {
+        "default": "Comece pelo Sinai; depois Jesus e Paulo."
+      },
+      "hint": "Siga a ordem da revelação.",
+      "learningObjective": "Ver a lei ecoar no NT.",
+      "evidence": [
+        "Êxodo 20:12",
+        "Mateus 22:37–39",
+        "Efésios 6:2–3"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 20:8, que termo nomeia o dia a santificar?",
+      "verseRef": "Êxodo 20:8",
+      "options": [
+        {
+          "id": "a",
+          "text": "sábado"
+        },
+        {
+          "id": "b",
+          "text": "guerra"
+        },
+        {
+          "id": "c",
+          "text": "colheita"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dia de sábado, para santificá-lo",
+      "feedbackCorrect": "O dia a santificar é o sábado.",
+      "feedbackWrong": {
+        "b": "Não é guerra.",
+        "c": "O termo é sábado."
+      },
+      "hint": "Veja o nome do dia.",
+      "learningObjective": "Lembrar o termo do descanso.",
+      "evidence": [
+        "Êxodo 20:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 20:13–17 a Romanos 13:9?",
+      "verseRef": "Êxodo 20:13–14",
+      "passageA": {
+        "ref": "Êxodo 20:13"
+      },
+      "passageB": {
+        "ref": "Romanos 13:9"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Mandamentos resumidos"
+        },
+        {
+          "id": "b",
+          "text": "Maná no deserto"
+        },
+        {
+          "id": "c",
+          "text": "Coluna de fogo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Não matarás",
+      "feedbackCorrect": "Paulo resume esses mandamentos no amor ao próximo.",
+      "feedbackWrong": {
+        "b": "O elo é a lei moral.",
+        "c": "A coluna não é o tema."
+      },
+      "hint": "Compare a lista de proibições.",
+      "learningObjective": "Ligar Sinai a Romanos.",
+      "evidence": [
+        "Êxodo 20:13",
+        "Romanos 13:9"
+      ]
+    }
+  ]
+}

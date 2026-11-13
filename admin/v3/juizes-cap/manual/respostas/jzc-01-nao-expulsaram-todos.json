@@ -1,0 +1,713 @@
+{
+  "study": {
+    "passageRef": "Juízes 1:19–28",
+    "passages": [
+      {
+        "ref": "Juízes 1:19–28"
+      }
+    ],
+    "context": "Judá vence nas montanhas, mas o vale fica com carros de ferro; outras tribos também deixam povos na terra.",
+    "keyword": "expulsar",
+    "keywordGloss": "Tirar os moradores da terra que o Senhor deu.",
+    "focusQuestion": "Onde você deixou pela metade o que o Senhor pediu completar?",
+    "reflectionPrompts": [
+      "Senhor com Judá",
+      "Carros de ferro",
+      "Não expulsou de todo"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor esteve com Judá.",
+        "evidenceRef": "Juízes 1:19",
+        "evidenceSpan": "O Senhor esteve com Judá"
+      },
+      {
+        "text": "Judá não expulsou os do vale por causa dos carros de ferro.",
+        "evidenceRef": "Juízes 1:19",
+        "evidenceSpan": "pois possuíam carros de ferro"
+      },
+      {
+        "text": "Benjamim não expulsou os jebuseus de Jerusalém.",
+        "evidenceRef": "Juízes 1:21",
+        "evidenceSpan": "não expulsaram os jebuseus"
+      },
+      {
+        "text": "O Senhor estava com a casa de José.",
+        "evidenceRef": "Juízes 1:22",
+        "evidenceSpan": "o Senhor estava com eles"
+      },
+      {
+        "text": "Manassés não expulsou vários povos.",
+        "evidenceRef": "Juízes 1:27",
+        "evidenceSpan": "Manassés não expulsou os habitantes"
+      },
+      {
+        "text": "Israel sujeitou os cananeus, mas não os expulsou de todo.",
+        "evidenceRef": "Juízes 1:28",
+        "evidenceSpan": "mas não os expulsou de todo"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "carros de ferro",
+        "gloss": "Motivo dado para não expulsar os do vale."
+      },
+      {
+        "term": "jebuseus",
+        "gloss": "Povo que permanece em Jerusalém com Benjamim."
+      },
+      {
+        "term": "trabalhos forçados",
+        "gloss": "Domínio parcial em vez de expulsão total."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Judá e o limite do vale",
+        "evidenceRef": "Juízes 1:19–20"
+      },
+      {
+        "label": "Benjamim e os jebuseus",
+        "evidenceRef": "Juízes 1:21"
+      },
+      {
+        "label": "José em Betel",
+        "evidenceRef": "Juízes 1:22–26"
+      },
+      {
+        "label": "Manassés e o restante",
+        "evidenceRef": "Juízes 1:27–28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Despovoou montanhas; contudo não expulsou o vale.",
+        "marker": "contudo",
+        "evidenceRef": "Juízes 1:19"
+      },
+      {
+        "kind": "causa",
+        "text": "Não expulsou o vale pois tinham carros de ferro.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 1:19"
+      },
+      {
+        "kind": "contraste",
+        "text": "Sujeitou a trabalhos; mas não expulsou de todo.",
+        "marker": "mas",
+        "evidenceRef": "Juízes 1:28"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Josué 17:18",
+        "bridge": "Carros não impedem a posse"
+      },
+      {
+        "ref": "Deuteronômio 7:2",
+        "bridge": "Expulsar e não pactuar"
+      },
+      {
+        "ref": "Josué 15:63",
+        "bridge": "Jebuseus em Jerusalém"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O Senhor não esteve com Judá.",
+        "why": "O texto diz que esteve com Judá."
+      },
+      {
+        "text": "Israel expulsou todos os cananeus.",
+        "why": "Não os expulsou de todo."
+      },
+      {
+        "text": "Carros de ferro cancelam a ordem do Senhor.",
+        "why": "O limite é humano; o Senhor estava com eles."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 1:28, o que Israel não fez de todo?",
+    "centralInsight": "O Senhor esteve com Judá, mas o povo não completou a expulsão dos moradores."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 1:19, o Senhor esteve com Judá.",
+      "verseRef": "Juízes 1:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor esteve com Judá",
+      "feedbackCorrect": "O Senhor esteve com Judá.",
+      "feedbackWrong": {
+        "false": "O texto afirma a presença."
+      },
+      "hint": "Veja o início.",
+      "learningObjective": "Observar a presença.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 1:19, toque o que os do vale possuíam.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "carros de ferro"
+        },
+        {
+          "id": "b",
+          "text": "montanhas"
+        },
+        {
+          "id": "c",
+          "text": "vale"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois possuíam carros de ferro",
+      "feedbackCorrect": "Carros de ferro.",
+      "feedbackWrong": {
+        "b": "Montanhas foram despovoadas.",
+        "c": "Vale é o lugar."
+      },
+      "hint": "Veja o pois.",
+      "learningObjective": "Identificar os carros.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 1:28, o que Israel não fez de todo?",
+      "verseRef": "Juízes 1:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Não expulsou os cananeus de todo"
+        },
+        {
+          "id": "b",
+          "text": "Expulsou todos"
+        },
+        {
+          "id": "c",
+          "text": "Queimou Siló"
+        },
+        {
+          "id": "d",
+          "text": "Abandonou Judá"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não os expulsou de todo",
+      "feedbackCorrect": "Não expulsou de todo.",
+      "feedbackWrong": {
+        "b": "Não expulsou todos.",
+        "c": "Não é Siló.",
+        "d": "Judá está no relato."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Reconhecer a falha.",
+      "evidence": [
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 1:19 na ordem do texto.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor esteve com Judá"
+        },
+        {
+          "id": "b",
+          "text": "despovoou as montanhas"
+        },
+        {
+          "id": "c",
+          "text": "não conseguiu expulsar os habitantes do vale"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não conseguiu expulsar os habitantes do vale",
+      "feedbackCorrect": "Presença, montanhas e vale.",
+      "feedbackWrong": {
+        "default": "Comece pelo Senhor."
+      },
+      "hint": "O que falha no vale?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 1:28, complete: sujeitou os cananeus a ___.",
+      "verseRef": "Juízes 1:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "trabalhos forçados"
+        },
+        {
+          "id": "b",
+          "text": "tributos"
+        },
+        {
+          "id": "c",
+          "text": "festas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sujeitou os cananeus a trabalhos forçados",
+      "feedbackCorrect": "Trabalhos forçados.",
+      "feedbackWrong": {
+        "b": "Não são tributos.",
+        "c": "Não são festas."
+      },
+      "hint": "Veja o objeto.",
+      "learningObjective": "Lembrar trabalhos forçados.",
+      "evidence": [
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 1:22 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 1:22",
+      "passageA": {
+        "ref": "Juízes 1:22"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor esteve com Judá, e também com a casa de José."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor com José"
+        },
+        {
+          "id": "b",
+          "text": "Senhor ausente"
+        },
+        {
+          "id": "c",
+          "text": "Só carros mandam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor estava com eles",
+      "feedbackCorrect": "Presença também com José.",
+      "feedbackWrong": {
+        "b": "Há presença.",
+        "c": "Não só carros."
+      },
+      "hint": "Quem estava com eles?",
+      "learningObjective": "Ligar presença e conquista.",
+      "evidence": [
+        "Juízes 1:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 1:19, Judá despovoou as montanhas; contudo, não expulsou os do vale.",
+      "verseRef": "Juízes 1:19",
+      "correctOptionId": "true",
+      "evidenceSpan": "contudo, não conseguiu expulsar",
+      "feedbackCorrect": "Há contraste no verso.",
+      "feedbackWrong": {
+        "false": "O contudo marca o limite."
+      },
+      "hint": "Leia o contudo.",
+      "learningObjective": "Ver o contraste.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 1:19, toque o marcador de contraste.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "contudo"
+        },
+        {
+          "id": "b",
+          "text": "Senhor"
+        },
+        {
+          "id": "c",
+          "text": "vale"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "contudo, não conseguiu expulsar",
+      "feedbackCorrect": "Contudo.",
+      "feedbackWrong": {
+        "b": "Senhor é quem está.",
+        "c": "Vale é o lugar."
+      },
+      "hint": "Procure após montanhas.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 1:28 faz?",
+      "verseRef": "Juízes 1:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sujeitou a trabalhos; mas não expulsou de todo"
+        },
+        {
+          "id": "b",
+          "text": "Expulsou e sujeitou por completo"
+        },
+        {
+          "id": "c",
+          "text": "Abandonou a terra"
+        },
+        {
+          "id": "d",
+          "text": "Pactuou em Siló"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sujeitou os cananeus a trabalhos forçados, mas não os expulsou de todo",
+      "feedbackCorrect": "Domínio parcial.",
+      "feedbackWrong": {
+        "b": "Não foi completo.",
+        "c": "Há sujeição.",
+        "d": "Não é Siló."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Compreender o contraste.",
+      "evidence": [
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos do relato.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá e o limite do vale"
+        },
+        {
+          "id": "b",
+          "text": "Benjamim e os jebuseus"
+        },
+        {
+          "id": "c",
+          "text": "Manassés e o restante"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "não conseguiu expulsar os habitantes do vale",
+      "feedbackCorrect": "Judá, Benjamim e Manassés.",
+      "feedbackWrong": {
+        "default": "Comece por Judá."
+      },
+      "hint": "Quem fecha o bloco?",
+      "learningObjective": "Ordenar a sequência",
+      "evidence": [
+        "Juízes 1:19",
+        "Juízes 1:27"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 1:19, complete: contudo, não conseguiu ___.",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "expulsar"
+        },
+        {
+          "id": "b",
+          "text": "armar"
+        },
+        {
+          "id": "c",
+          "text": "louvar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não conseguiu expulsar os habitantes do vale",
+      "feedbackCorrect": "Expulsar.",
+      "feedbackWrong": {
+        "b": "Não é armar.",
+        "c": "Não é louvar."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar expulsar.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 1:19 a Josué 17:18?",
+      "verseRef": "Juízes 1:19",
+      "passageA": {
+        "ref": "Juízes 1:19"
+      },
+      "passageB": {
+        "ref": "Josué 17:18"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Carros não impedem a posse"
+        },
+        {
+          "id": "b",
+          "text": "Fugir dos carros"
+        },
+        {
+          "id": "c",
+          "text": "Adorar o ferro"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois possuíam carros de ferro",
+      "feedbackCorrect": "Carros no caminho.",
+      "feedbackWrong": {
+        "b": "Não é fuga.",
+        "c": "Não é culto."
+      },
+      "hint": "Compare os carros.",
+      "learningObjective": "Ligar a Josué.",
+      "evidence": [
+        "Juízes 1:19",
+        "Josué 17:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 1:28, trabalhos forçados equivalem a cumprir a expulsão pedida.",
+      "verseRef": "Juízes 1:28",
+      "correctOptionId": "false",
+      "evidenceSpan": "mas não os expulsou de todo",
+      "feedbackCorrect": "Não expulsou de todo.",
+      "feedbackWrong": {
+        "true": "O mas corrige."
+      },
+      "hint": "Leia o mas.",
+      "learningObjective": "Avaliar domínio parcial.",
+      "evidence": [
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 1:28, toque o alcance da falha.",
+      "verseRef": "Juízes 1:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "de todo"
+        },
+        {
+          "id": "b",
+          "text": "mais forte"
+        },
+        {
+          "id": "c",
+          "text": "cananeus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não os expulsou de todo",
+      "feedbackCorrect": "De todo.",
+      "feedbackWrong": {
+        "b": "Mais forte é o contexto.",
+        "c": "Cananeus são o povo."
+      },
+      "hint": "Veja o mas.",
+      "learningObjective": "Tocar a falha.",
+      "evidence": [
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une presença do Senhor e falha de Judá?",
+      "verseRef": "Juízes 1:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor esteve com Judá; mesmo assim o vale ficou"
+        },
+        {
+          "id": "b",
+          "text": "O Senhor ausente explica tudo"
+        },
+        {
+          "id": "c",
+          "text": "Carros cancelam a ordem"
+        },
+        {
+          "id": "d",
+          "text": "Só Benjamim falhou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor esteve com Judá",
+      "feedbackCorrect": "Presença e limite juntos.",
+      "feedbackWrong": {
+        "b": "Há presença.",
+        "c": "Há ordem.",
+        "d": "Há outras falhas."
+      },
+      "hint": "Una presença e falha.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 1:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da falha.",
+      "verseRef": "Juízes 1:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Presença e vitória parcial"
+        },
+        {
+          "id": "b",
+          "text": "Povos deixados na terra"
+        },
+        {
+          "id": "c",
+          "text": "Domínio sem expulsão total"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "mas não os expulsou de todo",
+      "feedbackCorrect": "Vitória, restos e domínio.",
+      "feedbackWrong": {
+        "default": "Comece pela presença."
+      },
+      "hint": "O que fecha sem expulsão?",
+      "learningObjective": "Encadear a falha",
+      "evidence": [
+        "Juízes 1:19",
+        "Juízes 1:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 1:21, complete: não expulsaram os ___.",
+      "verseRef": "Juízes 1:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "jebuseus"
+        },
+        {
+          "id": "b",
+          "text": "filisteus"
+        },
+        {
+          "id": "c",
+          "text": "moabitas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não expulsaram os jebuseus",
+      "feedbackCorrect": "Jebuseus.",
+      "feedbackWrong": {
+        "b": "Não são filisteus.",
+        "c": "Não são moabitas."
+      },
+      "hint": "Veja o povo.",
+      "learningObjective": "Lembrar jebuseus.",
+      "evidence": [
+        "Juízes 1:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 1:28 a Deuteronômio 7:2?",
+      "verseRef": "Juízes 1:28",
+      "passageA": {
+        "ref": "Juízes 1:28"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 7:2"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Expulsar e não pactuar"
+        },
+        {
+          "id": "b",
+          "text": "Sujeitar basta"
+        },
+        {
+          "id": "c",
+          "text": "Ignorar a terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas não os expulsou de todo",
+      "feedbackCorrect": "Expulsão incompleta.",
+      "feedbackWrong": {
+        "b": "Sujeitar não basta.",
+        "c": "Há terra."
+      },
+      "hint": "Compare a ordem.",
+      "learningObjective": "Ligar a Deuteronômio.",
+      "evidence": [
+        "Juízes 1:28",
+        "Deuteronômio 7:2"
+      ]
+    }
+  ]
+}

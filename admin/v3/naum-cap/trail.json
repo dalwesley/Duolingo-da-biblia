@@ -1,0 +1,78 @@
+{
+  "slug": "naum-cap",
+  "title": "Naum",
+  "description": "Naum capítulo a capítulo: o juízo do Senhor sobre Nínive.",
+  "icon": "⛈️",
+  "color": "#5A6B8E",
+  "order": 41,
+  "unlockAfter": null,
+  "comingSoon": false,
+  "realm": "antigo-testamento",
+  "category": "profetas-menores",
+  "isActive": true,
+  "modules": [
+    {
+      "title": "Queda de Nínive · cap. 1–3",
+      "icon": "zap",
+      "section": "Naum",
+      "missions": [
+        {
+          "slug": "nac-01-o-senhor-e-bom",
+          "title": "O Senhor é bom",
+          "subtitle": "Naum 1:1–7",
+          "intro": "Naum apresenta o Senhor zeloso e vingador, e também bom e refúgio.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Naum 1:1–7",
+          "hookVerse": "Sentença sobre Nínive. Registro da visão de Naum, o elcosita. O Senhor é Deus zeloso e vingador; o Senhor é vingador e cheio de furor; o Senhor toma vingança contra seus adversários e reserva indignação para seus inimigos.",
+          "hookNote": "O Senhor é bom, fortaleza no dia da angústia, e conhece os que nele confiam.",
+          "centralInsight": "O Senhor é bom, fortaleza no dia da angústia, e conhece os que nele confiam.",
+          "objective": "Confiar no Senhor zeloso"
+        },
+        {
+          "slug": "nac-02-o-saque-de-ninive",
+          "title": "O saque de Nínive",
+          "subtitle": "Naum 2:1–10",
+          "intro": "A cidade que destruía outras é cercada; carros, escudos e pânico enchem as ruas.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Naum 2:1–10",
+          "hookVerse": "O destruidor avança contra você, ó Nínive! Vigie a fortaleza, observe o caminho, fortaleça os lombos e reúna todas as suas forças! Porque o Senhor restaurará a glória de Jacó, assim como a glória de Israel; pois os saqueadores os saquearam e destruíram suas videiras.",
+          "hookNote": "Nínive, antes temida, é esvaziada: o juízo do Senhor não falha.",
+          "centralInsight": "Nínive, antes temida, é esvaziada: o juízo do Senhor não falha.",
+          "objective": "O juízo não falha"
+        },
+        {
+          "slug": "nac-03-eis-me-contra-ti",
+          "title": "Eis-me contra ti",
+          "subtitle": "Naum 3:5–12",
+          "intro": "O Senhor se declara contra Nínive por causa da prostituição e da feitiçaria.",
+          "type": "lesson",
+          "xpReward": 60,
+          "questions": [],
+          "hookRef": "Naum 3:5–12",
+          "hookVerse": "Eis que estou contra você, diz o SENHOR dos Exércitos; levantarei as abas de suas vestes sobre seu rosto e mostrarei às nações a sua nudez e aos reinos a sua humilhação. Lançarei sobre você imundícias, te tratarei com desprezo e te porei como um espetáculo.",
+          "hookNote": "Quem oprime as nações encontra vergonha pública diante do Senhor.",
+          "centralInsight": "Quem oprime as nações encontra vergonha pública diante do Senhor.",
+          "objective": "Deus confronta a opressão"
+        },
+        {
+          "slug": "nac-boss-1",
+          "title": "Travessia: Queda de Nínive",
+          "subtitle": "Revisão da etapa 1",
+          "intro": "Revise o caráter do Senhor, o saque e o confronto com Nínive.",
+          "type": "boss",
+          "xpReward": 110,
+          "questions": [],
+          "hookRef": "Travessia: Queda de Nínive",
+          "hookVerse": "Revise o caráter do Senhor, o saque e o confronto com Nínive.",
+          "hookNote": "Revise o caráter do Senhor, o saque e o confronto com Nínive.",
+          "centralInsight": "O Senhor é refúgio dos seus e juíz contra a violência",
+          "objective": "Revisão da etapa 1"
+        }
+      ]
+    }
+  ]
+}

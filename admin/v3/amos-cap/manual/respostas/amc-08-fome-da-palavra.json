@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "Amós 8:4–9",
+    "passages": [
+      {
+        "ref": "Amós 8:4–9"
+      },
+      {
+        "ref": "Amós 8:10–12"
+      }
+    ],
+    "context": "Amós denuncia quem oprime os necessitados e espera o fim do sábado para enganar nas balanças. O Senhor jura e anuncia fome de ouvir a sua palavra.",
+    "keyword": "fome",
+    "keywordGloss": "Não de pão, mas de ouvir as palavras do Senhor.",
+    "focusQuestion": "Você trata a palavra do Senhor como urgente, ou espera o \"sábado passar\" para viver sem ela?",
+    "reflectionPrompts": [
+      "Balanças enganadoras",
+      "Juramento do Senhor",
+      "Fome da palavra"
+    ],
+    "facts": [
+      {
+        "text": "Têm avareza contra os necessitados e buscam destruir os miseráveis.",
+        "evidenceRef": "Amós 8:4",
+        "evidenceSpan": "têm avareza contra os necessitados e que buscam destruir os miseráveis da terra"
+      },
+      {
+        "text": "Perguntam quando passará o sábado para abrir os celeiros com balanças enganadoras.",
+        "evidenceRef": "Amós 8:5",
+        "evidenceSpan": "o sábado, para abrirmos os celeiros de trigo, diminuindo o efa, aumentando o siclo, e procedendo dolosamente com balanças enganadoras"
+      },
+      {
+        "text": "Compram os pobres por dinheiro e os necessitados por um par de sandálias.",
+        "evidenceRef": "Amós 8:6",
+        "evidenceSpan": "comprarmos os pobres por dinheiro e os necessitados por um par de sandálias"
+      },
+      {
+        "text": "O Senhor jurou pela glória de Jacó não esquecer nenhuma de suas obras.",
+        "evidenceRef": "Amós 8:7",
+        "evidenceSpan": "Não me esquecerei de nenhuma de suas obras, para sempre"
+      },
+      {
+        "text": "Enviará fome: não de pão, mas de ouvir as palavras do Senhor.",
+        "evidenceRef": "Amós 8:11",
+        "evidenceSpan": "enviarei fome sobre a terra, não de pão, nem sede de água, mas de ouvir as palavras do Senhor"
+      },
+      {
+        "text": "Andarão buscando a palavra do Senhor e não a encontrarão.",
+        "evidenceRef": "Amós 8:12",
+        "evidenceSpan": "percorrerão por toda parte em busca da palavra do SENHOR, mas não a encontrarão"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "necessitados",
+        "gloss": "Os pobres esmagados pela avareza e pelas balanças falsas."
+      },
+      {
+        "term": "fome",
+        "gloss": "A privação de ouvir as palavras do Senhor."
+      },
+      {
+        "term": "palavra",
+        "gloss": "A mensagem do Senhor que o povo buscará e não achará."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Acusação: avareza e balanças falsas",
+        "evidenceRef": "Amós 8:4–6"
+      },
+      {
+        "label": "Juramento e trevas no meio do dia",
+        "evidenceRef": "Amós 8:7–10"
+      },
+      {
+        "label": "Fome de ouvir a palavra do Senhor",
+        "evidenceRef": "Amós 8:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "A fome não é de pão, mas de ouvir as palavras do Senhor.",
+        "marker": "mas",
+        "evidenceRef": "Amós 8:11"
+      },
+      {
+        "kind": "resultado",
+        "text": "Por causa das obras, a terra se abalará.",
+        "marker": "Por causa disso",
+        "evidenceRef": "Amós 8:8"
+      },
+      {
+        "kind": "contraste",
+        "text": "Buscarão a palavra, mas não a encontrarão.",
+        "marker": "mas",
+        "evidenceRef": "Amós 8:12"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 8:3",
+        "bridge": "Viver da palavra de Deus"
+      },
+      {
+        "ref": "1 Samuel 3:1",
+        "bridge": "Palavra do Senhor rara"
+      },
+      {
+        "ref": "Mateus 4:4",
+        "bridge": "Viver pela palavra"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A fome anunciada é só falta de pão e água.",
+        "why": "8:11 diz: não de pão, nem sede de água, mas de ouvir as palavras."
+      },
+      {
+        "text": "O Senhor esquecerá as obras injustas com o tempo.",
+        "why": "8:7: Não me esquecerei de nenhuma de suas obras, para sempre."
+      },
+      {
+        "text": "Oprimir necessitados não entra neste oráculo.",
+        "why": "8:4–6 abre com avareza, balanças e compra dos pobres."
+      }
+    ],
+    "centralInsight": "Virão dias de fome: não de pão, mas de ouvir as palavras do Senhor.",
+    "anchorQuestion": "Segundo Amós 8:11, de que será a fome enviada sobre a terra?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Amós 8:11, a fome anunciada é de ouvir as palavras do Senhor, não de pão.",
+      "verseRef": "Amós 8:11",
+      "correctOptionId": "true",
+      "evidenceSpan": "não de pão, nem sede de água, mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "A fome é de ouvir a palavra, não de pão nem de água.",
+      "feedbackWrong": {
+        "false": "Releia Amós 8:11: não de pão, mas de ouvir as palavras."
+      },
+      "hint": "Veja o contraste no meio do versículo.",
+      "learningObjective": "Observar o tipo de fome anunciada.",
+      "evidence": [
+        "Amós 8:11"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Amós 8:4, toque contra quem têm avareza.",
+      "verseRef": "Amós 8:4",
+      "evidenceSpan": "avareza contra os necessitados",
+      "feedbackCorrect": "Têm avareza contra os necessitados e buscam destruir os miseráveis.",
+      "hint": "Procure o objeto da avareza.",
+      "learningObjective": "Identificar os oprimidos.",
+      "evidence": [
+        "Amós 8:4"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "necessitados"
+        },
+        {
+          "id": "b",
+          "text": "celeiros"
+        },
+        {
+          "id": "c",
+          "text": "trigo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Celeiros aparecem em 8:5; a avareza é contra pessoas.",
+        "c": "Trigo é a mercadoria; a avareza é contra os necessitados."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Amós 8:7, o que o Senhor jurou a respeito das obras deles?",
+      "verseRef": "Amós 8:7",
+      "evidenceSpan": "Não me esquecerei de nenhuma de suas obras, para sempre",
+      "feedbackCorrect": "Jurou pela glória de Jacó: não esquecerá nenhuma obra.",
+      "hint": "Leia o conteúdo do juramento.",
+      "learningObjective": "Observar o juramento do Senhor.",
+      "evidence": [
+        "Amós 8:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Não esquecerá nenhuma de suas obras"
+        },
+        {
+          "id": "b",
+          "text": "Esquecerá tudo em pouco tempo"
+        },
+        {
+          "id": "c",
+          "text": "Aprovará as balanças enganadoras"
+        },
+        {
+          "id": "d",
+          "text": "Cancelará o sábado para sempre"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto diz \"para sempre\".",
+        "c": "As balanças são denunciadas, não aprovadas.",
+        "d": "O sábado é desprezado por eles, não cancelado por Deus."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Amós 8:11 na ordem do texto.",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "enviarei fome sobre a terra",
+      "feedbackCorrect": "Vêm dias de fome: não de pão, mas de ouvir a palavra.",
+      "hint": "Comece pelo anúncio dos dias.",
+      "learningObjective": "Reconhecer a sequência de Amós 8:11.",
+      "evidence": [
+        "Amós 8:11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Eis que vêm dias, diz o Senhor Deus"
+        },
+        {
+          "id": "b",
+          "text": "em que enviarei fome sobre a terra"
+        },
+        {
+          "id": "c",
+          "text": "não de pão, nem sede de água, mas de ouvir as palavras do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Comece pelos dias; a palavra fecha."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Amós 8:11, o que o Senhor enviará sobre a terra?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "enviarei fome sobre a terra",
+      "feedbackCorrect": "Enviará fome: de ouvir as palavras do Senhor.",
+      "hint": "É o substantivo depois de \"enviarei\".",
+      "learningObjective": "Lembrar a palavra central do juízo.",
+      "evidence": [
+        "Amós 8:11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "fome"
+        },
+        {
+          "id": "b",
+          "text": "festa"
+        },
+        {
+          "id": "c",
+          "text": "chuva"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "As festas viram luto em 8:10.",
+        "c": "\"Chuva\" não é o anúncio deste versículo."
+      }
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Amós 8:11 comunica que se liga a este contexto?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "A opressão leva a dias sem a palavra que desprezaram.",
+      "hint": "Ligue a fome à palavra.",
+      "learningObjective": "Ligar fome e palavra.",
+      "evidence": [
+        "Amós 8:11"
+      ],
+      "passageA": {
+        "ref": "Amós 8:11"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Virão dias de fome de ouvir as palavras do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fome de ouvir a palavra"
+        },
+        {
+          "id": "b",
+          "text": "Abundância de pão e água"
+        },
+        {
+          "id": "c",
+          "text": "Palavra sempre fácil de achar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "O texto nega fome de pão e sede de água.",
+        "c": "8:12 diz que não a encontrarão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Amós 8:11, a fome anunciada é só falta de pão e água, sem relação com a palavra.",
+      "verseRef": "Amós 8:11",
+      "correctOptionId": "false",
+      "evidenceSpan": "não de pão, nem sede de água, mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "O \"mas\" marca o contraste: a fome é de ouvir a palavra.",
+      "feedbackWrong": {
+        "true": "Releia o contraste no meio de Amós 8:11."
+      },
+      "hint": "Procure a palavra que vira a frase.",
+      "learningObjective": "Compreender o contraste da fome.",
+      "evidence": [
+        "Amós 8:11"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Amós 8:11, toque a palavra que marca o contraste com pão e água.",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "\"Mas\" introduz a fome de ouvir as palavras.",
+      "hint": "É a palavra antes de \"de ouvir\".",
+      "learningObjective": "Reconhecer o marcador de contraste.",
+      "evidence": [
+        "Amós 8:11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "mas"
+        },
+        {
+          "id": "b",
+          "text": "pão"
+        },
+        {
+          "id": "c",
+          "text": "água"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Pão\" é o que a fome não é.",
+        "c": "\"Água\" também é negada; o contraste vem depois."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Amós 8:4–12 relaciona a opressão e a fome da palavra?",
+      "verseRef": "Amós 8:11–12",
+      "evidenceSpan": "mas não a encontrarão",
+      "feedbackCorrect": "Quem oprime e despreza o santo tempo perde o acesso à palavra.",
+      "hint": "Una a acusação ao anúncio de 8:11–12.",
+      "learningObjective": "Relacionar injustiça e privação da palavra.",
+      "evidence": [
+        "Amós 8:11–12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "A opressão leva a dias sem achar a palavra"
+        },
+        {
+          "id": "b",
+          "text": "A fome é só de pão e água"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor esquecerá as obras injustas"
+        },
+        {
+          "id": "d",
+          "text": "Oprimir necessitados fica fora do oráculo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "8:11 nega pão e água como o foco.",
+        "c": "8:7 jura não esquecer.",
+        "d": "8:4–6 abre com a opressão."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Amós 8:4–12?",
+      "verseRef": "Amós 8:4–12",
+      "evidenceSpan": "enviarei fome sobre a terra",
+      "feedbackCorrect": "Acusação, juramento e fome da palavra.",
+      "hint": "Comece pela avareza.",
+      "learningObjective": "Seguir o movimento do oráculo.",
+      "evidence": [
+        "Amós 8:4–12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Acusação: avareza e balanças falsas"
+        },
+        {
+          "id": "b",
+          "text": "Juramento e trevas no meio do dia"
+        },
+        {
+          "id": "c",
+          "text": "Fome de ouvir a palavra do Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Acusação primeiro; fome da palavra por último."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Amós 8:7, que verbo expressa o que o Senhor não fará com as obras deles?",
+      "verseRef": "Amós 8:7",
+      "evidenceSpan": "Não me esquecerei de nenhuma de suas obras",
+      "feedbackCorrect": "Ele não se esquecerá: o juramento prende a memória à injustiça.",
+      "hint": "É o verbo depois de \"Não me\".",
+      "learningObjective": "Lembrar a ação do juramento.",
+      "evidence": [
+        "Amós 8:7"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "esquecerei"
+        },
+        {
+          "id": "b",
+          "text": "aprovarei"
+        },
+        {
+          "id": "c",
+          "text": "esquecemos"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Ele não aprova; jura lembrar.",
+        "c": "O sujeito é o Senhor na primeira pessoa."
+      }
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Amós 8:11 a Deuteronômio 8:3?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "Nos dois textos, a vida depende de ouvir a palavra, não só de pão.",
+      "hint": "Compare pão e palavra.",
+      "learningObjective": "Relacionar a fome da palavra à lição do maná.",
+      "evidence": [
+        "Amós 8:11",
+        "Deuteronômio 8:3"
+      ],
+      "passageA": {
+        "ref": "Amós 8:11"
+      },
+      "passageB": {
+        "ref": "Deuteronômio 8:3"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Viver da palavra de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Só pão basta para viver"
+        },
+        {
+          "id": "c",
+          "text": "Palavra sem nenhuma urgência"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos colocam a palavra acima do pão.",
+        "c": "A fome mostra a urgência da palavra."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Amós 8:7, o Senhor jura não se esquecer de nenhuma das obras injustas, para sempre.",
+      "verseRef": "Amós 8:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "Não me esquecerei de nenhuma de suas obras, para sempre",
+      "feedbackCorrect": "O juramento pela glória de Jacó é definitivo.",
+      "feedbackWrong": {
+        "false": "Releia o juramento de Amós 8:7."
+      },
+      "hint": "Veja o que ele jura não fazer.",
+      "learningObjective": "Interpretar a memória do Senhor sobre a injustiça.",
+      "evidence": [
+        "Amós 8:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Amós 8:12, toque o trecho que mostra o resultado da busca pela palavra.",
+      "verseRef": "Amós 8:12",
+      "evidenceSpan": "mas não a encontrarão",
+      "feedbackCorrect": "Percorrerão por toda parte, mas não a encontrarão.",
+      "hint": "Procure o verbo depois de \"mas não a\".",
+      "learningObjective": "Sustentar a privação da palavra com o texto.",
+      "evidence": [
+        "Amós 8:12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "encontrarão"
+        },
+        {
+          "id": "b",
+          "text": "norte"
+        },
+        {
+          "id": "c",
+          "text": "mar"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "\"Norte\" marca a direção da busca, não o resultado.",
+        "c": "\"Mar\" situa a busca; o resultado é não encontrar."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Amós 8:4–12 sustenta sobre a palavra do Senhor?",
+      "verseRef": "Amós 8:11–12",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "Virão dias de fome de ouvir a palavra que desprezaram.",
+      "hint": "Una opressão, juramento e fome.",
+      "learningObjective": "Escolher a interpretação do oráculo.",
+      "evidence": [
+        "Amós 8:11–12"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Virão dias de fome de ouvir a palavra"
+        },
+        {
+          "id": "b",
+          "text": "A fome anunciada é só falta de pão"
+        },
+        {
+          "id": "c",
+          "text": "O Senhor esquecerá as obras injustas"
+        },
+        {
+          "id": "d",
+          "text": "Oprimir necessitados não entra no oráculo"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "8:11 nega pão e água como o foco.",
+        "c": "8:7 jura não esquecer.",
+        "d": "8:4 abre com a avareza."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a urgência da palavra na Escritura?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "Amós anuncia fome; a Lei e Jesus afirmam viver da palavra.",
+      "hint": "Parta de Amós e avance.",
+      "learningObjective": "Ver o fio da palavra que sustenta.",
+      "evidence": [
+        "Amós 8:11",
+        "Deuteronômio 8:3",
+        "Mateus 4:4"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "Amós: fome de ouvir a palavra"
+        },
+        {
+          "id": "b",
+          "text": "Deuteronômio: viver da palavra de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Jesus: nem só de pão vive o homem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "feedbackWrong": {
+        "default": "Siga: Amós 8, Deuteronômio 8 e Mateus 4."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Amós 8:11, de que se terá fome além do pão?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "Fome de ouvir as palavras — a palavra do Senhor.",
+      "hint": "É o substantivo no fim do contraste.",
+      "learningObjective": "Lembrar o termo teológico da cena.",
+      "evidence": [
+        "Amós 8:11"
+      ],
+      "options": [
+        {
+          "id": "a",
+          "text": "palavras"
+        },
+        {
+          "id": "b",
+          "text": "balanças"
+        },
+        {
+          "id": "c",
+          "text": "sandálias"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Balanças são a injustiça; a fome é da palavra.",
+        "c": "Sandálias marcam a compra dos pobres."
+      }
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Amós 8:11 a Mateus 4:4?",
+      "verseRef": "Amós 8:11",
+      "evidenceSpan": "não de pão, nem sede de água, mas de ouvir as palavras do Senhor",
+      "feedbackCorrect": "Jesus ecoa: o homem vive da palavra, não só de pão.",
+      "hint": "Compare pão e palavra nos dois textos.",
+      "learningObjective": "Ligar a fome de Amós à tentação de Jesus.",
+      "evidence": [
+        "Amós 8:11",
+        "Mateus 4:4"
+      ],
+      "passageA": {
+        "ref": "Amós 8:11"
+      },
+      "passageB": {
+        "ref": "Mateus 4:4"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Viver pela palavra"
+        },
+        {
+          "id": "b",
+          "text": "Só pão basta para viver"
+        },
+        {
+          "id": "c",
+          "text": "Palavra sem valor nenhum"
+        }
+      ],
+      "correctOptionId": "a",
+      "feedbackWrong": {
+        "b": "Os textos colocam a palavra acima do pão.",
+        "c": "A fome mostra o valor da palavra."
+      }
+    }
+  ]
+}

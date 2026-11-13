@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "joel-cap-sem-jlc-01-lamento-no-templo-01",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 1:14, o povo deve santificar um jejum e clamar ao Senhor.",
+    "prompt": "Em Joel 1:14, o povo deve santificar um jejum e clamar ao Senhor.",
+    "cue": "Em Joel 1:14, o povo deve santificar um jejum e clamar ao Senhor.",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Santificai um jejum, proclamai um dia sagrado",
+    "feedbackCorrect": "O versículo manda santificar jejum, convocar e clamar ao Senhor.",
+    "feedbackWrong": {
+      "false": "Releia 1:14: jejum, convocação e clamor ao Senhor."
+    },
+    "hint": "Veja os verbos de mandato no versículo.",
+    "learningObjective": "Observar o chamado a jejum e clamor.",
+    "evidence": [
+      "Joel 1:14"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-01-lamento-no-templo-02",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 1:13, toque o que os sacerdotes devem cingir.",
+    "prompt": "Em Joel 1:13, toque o que os sacerdotes devem cingir.",
+    "cue": "Em Joel 1:13, toque o que os sacerdotes devem cingir.",
+    "verseRef": "Joel 1:13",
+    "passageText": "Cingi-vos de pano de saco e lamentai, sacerdotes; uivai, ministros do altar; vinde e passai a noite vestidos de pano de saco, ministros do meu Deus; pois da casa de vosso Deus foram cortadas a oferta de manjares e a libação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "altar"
+      },
+      {
+        "id": "b",
+        "text": "libação"
+      },
+      {
+        "id": "c",
+        "text": "pano de saco"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Cingi-vos de pano de saco",
+    "feedbackCorrect": "Devem cingir-se de pano de saco.",
+    "feedbackWrong": {
+      "a": "O altar é o lugar do ministério, não o que cingem.",
+      "b": "A libação foi cortada; não é o que cingem."
+    },
+    "hint": "Procure o que cobrem no lamento.",
+    "learningObjective": "Identificar o sinal externo do lamento.",
+    "evidence": [
+      "Joel 1:13"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-01-lamento-no-templo-03",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 1:15, como virá o dia do Senhor?",
+    "prompt": "Segundo Joel 1:15, como virá o dia do Senhor?",
+    "cue": "Segundo Joel 1:15, como virá o dia do Senhor?",
+    "verseRef": "Joel 1:15",
+    "passageText": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Como uma calamidade do Todo-Poderoso"
+      },
+      {
+        "id": "b",
+        "text": "Como chuva suave sobre o campo"
+      },
+      {
+        "id": "c",
+        "text": "Como silêncio total em Sião"
+      },
+      {
+        "id": "d",
+        "text": "Como uma festa sem fim"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "virá como uma calamidade do Todo-Poderoso",
+    "feedbackCorrect": "Virá como uma calamidade do Todo-Poderoso.",
+    "feedbackWrong": {
+      "b": "O texto não compara o dia a chuva suave.",
+      "c": "O texto não fala de silêncio total.",
+      "d": "O texto fala de calamidade, não de festa."
+    },
+    "hint": "Veja a comparação no fim do versículo.",
+    "learningObjective": "Observar como o dia do Senhor é descrito.",
+    "evidence": [
+      "Joel 1:15"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-01-lamento-no-templo-04",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 1:14 na ordem do texto.",
+    "prompt": "Monte Joel 1:14 na ordem do texto.",
+    "cue": "Monte Joel 1:14 na ordem do texto.",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santificai um jejum, proclamai um dia sagrado"
+      },
+      {
+        "id": "b",
+        "text": "convocai os anciãos e todos os habitantes desta terra"
+      },
+      {
+        "id": "c",
+        "text": "para a Casa do Senhor, seu Deus, e clamai ao Senhor"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Santificai um jejum, proclamai um dia sagrado",
+    "feedbackCorrect": "Jejum e dia sagrado; depois convocação e clamor.",
+    "feedbackWrong": {
+      "default": "Jejum primeiro; o clamor fecha o versículo."
+    },
+    "hint": "Comece por santificar o jejum.",
+    "learningObjective": "Reconhecer a sequência do chamado.",
+    "evidence": [
+      "Joel 1:14"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-01-lamento-no-templo-05",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 1:14, que prática deve ser santificada perante o Senhor?",
+    "prompt": "Em Joel 1:14, que prática deve ser santificada perante o Senhor?",
+    "cue": "Em Joel 1:14, que prática deve ser santificada perante o Senhor?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "template": "Santificai um ___, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mercado"
+      },
+      {
+        "id": "b",
+        "text": "jejum"
+      },
+      {
+        "id": "c",
+        "text": "banho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Santificai um jejum",
+    "feedbackCorrect": "Devem santificar um jejum.",
+    "feedbackWrong": {
+      "a": "\"Mercado\" não aparece em 1:14.",
+      "c": "\"Banho\" não aparece em 1:14."
+    },
+    "hint": "É a primeira palavra após Santificai.",
+    "learningObjective": "Lembrar a prática santificada no chamado.",
+    "evidence": [
+      "Joel 1:14"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-01-lamento-no-templo-06",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 1:19 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:19 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:19 comunica que se liga a este contexto?",
+    "verseRef": "Joel 1:19",
+    "passageText": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto, e a chama consumiu todas as árvores do campo.",
+    "passageA": {
+      "ref": "Joel 1:19",
+      "text": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto, e a chama consumiu todas as árvores do campo."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Diante da praga e da seca, Joel aponta o clamor ao Senhor como resposta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga para o Egito"
+      },
+      {
+        "id": "b",
+        "text": "Clamor na calamidade"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio no templo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A ti, ó Senhor, clamo",
+    "feedbackCorrect": "Na ruína, a resposta certa é clamar ao Senhor.",
+    "feedbackWrong": {
+      "a": "O texto aponta clamor, não fuga.",
+      "c": "O texto mostra clamor, não silêncio."
+    },
+    "hint": "Veja a quem o profeta se dirige.",
+    "learningObjective": "Ligar o clamor à resposta na calamidade.",
+    "evidence": [
+      "Joel 1:19"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-01-lamento-no-templo-01",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 1:13, oferta de manjares e libação foram cortadas da casa de Deus.",
+    "prompt": "Em Joel 1:13, oferta de manjares e libação foram cortadas da casa de Deus.",
+    "cue": "Em Joel 1:13, oferta de manjares e libação foram cortadas da casa de Deus.",
+    "verseRef": "Joel 1:13",
+    "passageText": "Cingi-vos de pano de saco e lamentai, sacerdotes; uivai, ministros do altar; vinde e passai a noite vestidos de pano de saco, ministros do meu Deus; pois da casa de vosso Deus foram cortadas a oferta de manjares e a libação.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "foram cortadas a oferta de manjares e a libação",
+    "feedbackCorrect": "O culto sofre: oferta e libação foram cortadas.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 1:13: oferta e libação foram cortadas."
+    },
+    "hint": "Veja o que foi cortado da casa de Deus.",
+    "learningObjective": "Compreender o impacto da praga no culto.",
+    "evidence": [
+      "Joel 1:13"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-01-lamento-no-templo-02",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 1:15, toque a palavra que abre a razão do ai.",
+    "prompt": "Em Joel 1:15, toque a palavra que abre a razão do ai.",
+    "cue": "Em Joel 1:15, toque a palavra que abre a razão do ai.",
+    "verseRef": "Joel 1:15",
+    "passageText": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porque"
+      },
+      {
+        "id": "b",
+        "text": "Todo-Poderoso"
+      },
+      {
+        "id": "c",
+        "text": "calamidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Porque o dia do Senhor está próximo",
+    "feedbackCorrect": "\"Porque\" introduz a razão: o dia do Senhor está próximo.",
+    "feedbackWrong": {
+      "b": "\"Todo-Poderoso\" fecha a frase, não abre a razão.",
+      "c": "\"Calamidade\" descreve o modo, não abre a razão."
+    },
+    "hint": "É a palavra após \"Ah! aquele dia!\".",
+    "learningObjective": "Reconhecer o marcador de causa em 1:15.",
+    "evidence": [
+      "Joel 1:15"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-01-lamento-no-templo-03",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 1:13–15 liga lamento sacerdotal e dia do Senhor?",
+    "prompt": "Como Joel 1:13–15 liga lamento sacerdotal e dia do Senhor?",
+    "cue": "Como Joel 1:13–15 liga lamento sacerdotal e dia do Senhor?",
+    "verseRef": "Joel 1:13–14",
+    "passageText": "Cingi-vos de pano de saco e lamentai, sacerdotes; uivai, ministros do altar; vinde e passai a noite vestidos de pano de saco, ministros do meu Deus; pois da casa de vosso Deus foram cortadas a oferta de manjares e a libação. Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não há ligação entre jejum e o dia do Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Culto interrompido chama a clamor diante do dia próximo"
+      },
+      {
+        "id": "c",
+        "text": "O dia do Senhor só preocupa os animais"
+      },
+      {
+        "id": "d",
+        "text": "Os sacerdotes devem ignorar a falta de ofertas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "clamai ao Senhor",
+    "feedbackCorrect": "O culto interrompido leva a jejum e clamor porque o dia está próximo.",
+    "feedbackWrong": {
+      "a": "1:14–15 une clamor e dia próximo.",
+      "c": "O chamado é a sacerdotes e povo.",
+      "d": "O texto manda lamentar e clamar, não ignorar."
+    },
+    "hint": "Ligue o corte das ofertas ao chamado de 1:14–15.",
+    "learningObjective": "Relacionar lamento, jejum e dia próximo.",
+    "evidence": [
+      "Joel 1:13–14"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-01-lamento-no-templo-04",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move Joel 1:13–19?",
+    "prompt": "Como se move Joel 1:13–19?",
+    "cue": "Como se move Joel 1:13–19?",
+    "verseRef": "Joel 1:19",
+    "passageText": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto, e a chama consumiu todas as árvores do campo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Sacerdotes são chamados ao lamento"
+      },
+      {
+        "id": "b",
+        "text": "O povo é convocado a jejum e clamor"
+      },
+      {
+        "id": "c",
+        "text": "O profeta clama ao Senhor na ruína"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "A ti, ó Senhor, clamo",
+    "feedbackCorrect": "Lamento sacerdotal; jejum; anúncio do dia; clamor pessoal.",
+    "feedbackWrong": {
+      "default": "Sacerdotes primeiro; o clamor pessoal fecha."
+    },
+    "hint": "Comece pelos sacerdotes.",
+    "learningObjective": "Seguir o movimento do lamento ao clamor.",
+    "evidence": [
+      "Joel 1:13–19"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-01-lamento-no-templo-05",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 1:15, que palavra descreve como o dia do Senhor virá?",
+    "prompt": "Em Joel 1:15, que palavra descreve como o dia do Senhor virá?",
+    "cue": "Em Joel 1:15, que palavra descreve como o dia do Senhor virá?",
+    "verseRef": "Joel 1:15",
+    "passageText": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "template": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma ___ do Todo-Poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "festa"
+      },
+      {
+        "id": "b",
+        "text": "calamidade"
+      },
+      {
+        "id": "c",
+        "text": "brisa"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "virá como uma calamidade do Todo-Poderoso",
+    "feedbackCorrect": "Virá como uma calamidade.",
+    "feedbackWrong": {
+      "a": "\"Festa\" não descreve o dia em 1:15.",
+      "c": "\"Brisa\" não aparece em 1:15."
+    },
+    "hint": "É o substantivo da comparação.",
+    "learningObjective": "Lembrar a palavra que carrega o tom do dia.",
+    "evidence": [
+      "Joel 1:15"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-01-lamento-no-templo-06",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 1:14 a 2 Crônicas 20:3–4?",
+    "prompt": "O que liga Joel 1:14 a 2 Crônicas 20:3–4?",
+    "cue": "O que liga Joel 1:14 a 2 Crônicas 20:3–4?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "passageA": {
+      "ref": "Joel 1:14",
+      "text": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor."
+    },
+    "passageB": {
+      "ref": "2 Crônicas 20:3–4",
+      "text": "Então, Josafá teve medo e começou a buscar ao Senhor; e proclamou um jejum em todo o Judá. E Judá se congregou para clamar ao Senhor; também de todas as cidades de Judá vieram pessoas para buscar ao Senhor."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa sem nenhum clamor"
+      },
+      {
+        "id": "b",
+        "text": "Aliança com o Egito"
+      },
+      {
+        "id": "c",
+        "text": "Jejum e busca ao Senhor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Santificai um jejum",
+    "feedbackCorrect": "Nos dois textos, jejum e busca ao Senhor respondem à crise.",
+    "feedbackWrong": {
+      "a": "Os textos chamam a jejum e busca, não a festa sem clamor.",
+      "b": "Nenhum dos textos aponta aliança com o Egito."
+    },
+    "hint": "Compare jejum e busca a Deus.",
+    "learningObjective": "Relacionar o jejum de Joel ao de Jeosafá.",
+    "evidence": [
+      "Joel 1:14",
+      "2 Crônicas 20:3–4"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-01-lamento-no-templo-01",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Joel 1:15–16, a calamidade do dia do Senhor deixa o culto e a alegria intactos.",
+    "prompt": "Em Joel 1:15–16, a calamidade do dia do Senhor deixa o culto e a alegria intactos.",
+    "cue": "Em Joel 1:15–16, a calamidade do dia do Senhor deixa o culto e a alegria intactos.",
+    "verseRef": "Joel 1:15–16",
+    "passageText": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso. Não está o alimento destruído diante de nossos olhos? E a alegria e o regozijo da casa do nosso Deus?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Não está o alimento destruído diante de nossos olhos?",
+    "feedbackCorrect": "Alimento destruído e alegria da casa de Deus afetada: nada está intacto.",
+    "feedbackWrong": {
+      "true": "Releia 1:16: alimento destruído e alegria abalada."
+    },
+    "hint": "Veja o que acontece ao alimento e à alegria.",
+    "learningObjective": "Interpretar o alcance da calamidade sobre o culto.",
+    "evidence": [
+      "Joel 1:15–16"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-01-lamento-no-templo-02",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 1:19, toque o verbo que mostra a resposta do profeta.",
+    "prompt": "Em Joel 1:19, toque o verbo que mostra a resposta do profeta.",
+    "cue": "Em Joel 1:19, toque o verbo que mostra a resposta do profeta.",
+    "verseRef": "Joel 1:19",
+    "passageText": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto, e a chama consumiu todas as árvores do campo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "clamo"
+      },
+      {
+        "id": "b",
+        "text": "pastos"
+      },
+      {
+        "id": "c",
+        "text": "fogo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "A ti, ó Senhor, clamo",
+    "feedbackCorrect": "O verbo é clamo: resposta dirigida ao Senhor.",
+    "feedbackWrong": {
+      "b": "\"Pastos\" é o que o fogo consumiu.",
+      "c": "\"Fogo\" é a causa do dano, não a resposta."
+    },
+    "hint": "Procure o verbo na abertura do versículo.",
+    "learningObjective": "Sustentar com o texto a resposta de clamor.",
+    "evidence": [
+      "Joel 1:19"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-01-lamento-no-templo-03",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 1:13–20 sustenta sobre a calamidade?",
+    "prompt": "Que leitura Joel 1:13–20 sustenta sobre a calamidade?",
+    "cue": "Que leitura Joel 1:13–20 sustenta sobre a calamidade?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A calamidade chama a jejum e clamor ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "O culto interrompido prova que Deus se foi para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Basta lamentar sem se dirigir a Deus"
+      },
+      {
+        "id": "d",
+        "text": "Só os animais devem clamar; o povo não"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "clamai ao Senhor",
+    "feedbackCorrect": "A ruína deve levar a jejum e clamor, não a resignação muda.",
+    "feedbackWrong": {
+      "b": "O texto chama a buscar o Senhor, não declara abandono final.",
+      "c": "O texto manda clamar ao Senhor.",
+      "d": "Sacerdotes e povo são convocados; os animais também bramam."
+    },
+    "hint": "Compare cada opção com o chamado de 1:14 e 1:19.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Joel 1:14"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-01-lamento-no-templo-04",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra crise que leva a clamor na Escritura?",
+    "prompt": "Qual sequência mostra crise que leva a clamor na Escritura?",
+    "cue": "Qual sequência mostra crise que leva a clamor na Escritura?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Joel manda jejuar e clamar ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Jeosafá proclama jejum e busca a Deus"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo convida a clamar na angústia"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "clamai ao Senhor",
+    "feedbackCorrect": "Joel manda clamar; Jeosafá jejua; o Salmo convida a clamar na angústia.",
+    "feedbackWrong": {
+      "default": "Siga: Joel 1:14, 2 Crônicas 20 e Salmos 50:15."
+    },
+    "hint": "Parta de Joel.",
+    "learningObjective": "Ver o clamor de Joel no fio bíblico.",
+    "evidence": [
+      "Joel 1:14",
+      "2 Crônicas 20:3–4",
+      "Salmos 50:15"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-01-lamento-no-templo-05",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 1:14, que verbo manda o povo fazer perante o Senhor na Casa?",
+    "prompt": "Em Joel 1:14, que verbo manda o povo fazer perante o Senhor na Casa?",
+    "cue": "Em Joel 1:14, que verbo manda o povo fazer perante o Senhor na Casa?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "template": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e ___ ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "calai"
+      },
+      {
+        "id": "b",
+        "text": "fugi"
+      },
+      {
+        "id": "c",
+        "text": "clamai"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "clamai ao Senhor",
+    "feedbackCorrect": "O mandato final é: clamai ao Senhor.",
+    "feedbackWrong": {
+      "a": "\"Calai\" é o oposto do mandato.",
+      "b": "\"Fugi\" não é o verbo final de 1:14."
+    },
+    "hint": "É o último verbo do versículo.",
+    "learningObjective": "Lembrar o verbo do clamor coletivo.",
+    "evidence": [
+      "Joel 1:14"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-01-lamento-no-templo-06",
+    "trail": "joel-cap",
+    "section": "jlc-01-lamento-no-templo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 1:19 a Salmos 50:15?",
+    "prompt": "O que liga Joel 1:19 a Salmos 50:15?",
+    "cue": "O que liga Joel 1:19 a Salmos 50:15?",
+    "verseRef": "Joel 1:19",
+    "passageText": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto, e a chama consumiu todas as árvores do campo.",
+    "passageA": {
+      "ref": "Joel 1:19",
+      "text": "A ti, ó Senhor, clamo, porque o fogo consumiu os pastos do deserto, e a chama consumiu todas as árvores do campo."
+    },
+    "passageB": {
+      "ref": "Salmos 50:15",
+      "text": "Invoca-me no dia da aflição; eu te libertarei, e tu me glorificarás."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Esconder-se da oração"
+      },
+      {
+        "id": "b",
+        "text": "Clamar a Deus na angústia"
+      },
+      {
+        "id": "c",
+        "text": "Confiar só em celeiros"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "A ti, ó Senhor, clamo",
+    "feedbackCorrect": "Nos dois textos, a angústia é tempo de clamar a Deus.",
+    "feedbackWrong": {
+      "a": "Os textos mandam clamar, não esconder-se.",
+      "c": "Em Joel os celeiros já foram destruídos."
+    },
+    "hint": "Compare clamor e angústia.",
+    "learningObjective": "Ligar o clamor de Joel ao do Salmo.",
+    "evidence": [
+      "Joel 1:19",
+      "Salmos 50:15"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-02-trombeta-em-siao-01",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 2:1, o Dia do Senhor ainda está longe e não precisa preocupar.",
+    "prompt": "Em Joel 2:1, o Dia do Senhor ainda está longe e não precisa preocupar.",
+    "cue": "Em Joel 2:1, o Dia do Senhor ainda está longe e não precisa preocupar.",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "O texto diz que o Dia vem e já está próximo.",
+    "feedbackWrong": {
+      "true": "Releia o fim de 2:1: o Dia vem e já está próximo."
+    },
+    "hint": "Veja o que se diz sobre a proximidade do Dia.",
+    "learningObjective": "Observar que o Dia do Senhor está próximo.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-02-trombeta-em-siao-02",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 2:1, toque o que deve soar em Sião.",
+    "prompt": "Em Joel 2:1, toque o que deve soar em Sião.",
+    "cue": "Em Joel 2:1, toque o que deve soar em Sião.",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "trombeta"
+      },
+      {
+        "id": "b",
+        "text": "habitantes"
+      },
+      {
+        "id": "c",
+        "text": "terra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Toca a trombeta em Sião",
+    "feedbackCorrect": "A trombeta deve soar em Sião como alerta.",
+    "feedbackWrong": {
+      "b": "Os habitantes devem tremer; não são o que se toca.",
+      "c": "A terra é o cenário do tremor, não o sinal."
+    },
+    "hint": "É o objeto do primeiro verbo do versículo.",
+    "learningObjective": "Identificar o sinal de alerta em Sião.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-02-trombeta-em-siao-03",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 2:3, como fica a terra atrás do avanço?",
+    "prompt": "Segundo Joel 2:3, como fica a terra atrás do avanço?",
+    "cue": "Segundo Joel 2:3, como fica a terra atrás do avanço?",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cheia de águas e mosto"
+      },
+      {
+        "id": "b",
+        "text": "Um deserto assolado"
+      },
+      {
+        "id": "c",
+        "text": "Coberta de cereais novos"
+      },
+      {
+        "id": "d",
+        "text": "Como o jardim do Éden"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "atrás dele, um deserto assolado",
+    "feedbackCorrect": "Atrás fica um deserto assolado; nada lhe escapa.",
+    "feedbackWrong": {
+      "a": "O trecho não fala de águas e mosto atrás do avanço.",
+      "c": "Atrás fica desolação, não colheita nova.",
+      "d": "O jardim do Éden descreve o que está diante, não atrás."
+    },
+    "hint": "Compare o que há diante e o que há atrás.",
+    "learningObjective": "Observar o contraste Éden/deserto.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-02-trombeta-em-siao-04",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:1 na ordem do texto.",
+    "prompt": "Monte Joel 2:1 na ordem do texto.",
+    "cue": "Monte Joel 2:1 na ordem do texto.",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Toca a trombeta em Sião e clama em alta voz no meu monte santo"
+      },
+      {
+        "id": "b",
+        "text": "que tremam todos os habitantes da terra"
+      },
+      {
+        "id": "c",
+        "text": "pois o Dia do Senhor vem, já está próximo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Toca a trombeta em Sião e clama em alta voz no meu monte santo",
+    "feedbackCorrect": "Trombeta e clamor primeiro; depois o tremor e a proximidade do Dia.",
+    "feedbackWrong": {
+      "default": "Comece pela trombeta; a proximidade do Dia fecha."
+    },
+    "hint": "O versículo começa com tocar e clamar.",
+    "learningObjective": "Reconhecer a sequência do alerta em 2:1.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-02-trombeta-em-siao-05",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 2:2, de que é o dia anunciado além de escuridão?",
+    "prompt": "Em Joel 2:2, de que é o dia anunciado além de escuridão?",
+    "cue": "Em Joel 2:2, de que é o dia anunciado além de escuridão?",
+    "verseRef": "Joel 2:2",
+    "passageText": "Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração.",
+    "template": "Dia de escuridão e densas ___, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "trevas"
+      },
+      {
+        "id": "b",
+        "text": "vinhos"
+      },
+      {
+        "id": "c",
+        "text": "flores"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Dia de escuridão e densas trevas",
+    "feedbackCorrect": "É dia de escuridão e densas trevas.",
+    "feedbackWrong": {
+      "b": "\"Vinhos\" não aparece em 2:2.",
+      "c": "\"Flores\" não descreve o dia em 2:2."
+    },
+    "hint": "É a palavra depois de \"densas\".",
+    "learningObjective": "Lembrar a imagem das trevas no Dia.",
+    "evidence": [
+      "Joel 2:2"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-02-trombeta-em-siao-06",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 2:1 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 2:1 comunica que se liga a este contexto?",
+    "cue": "O que Joel 2:1 comunica que se liga a este contexto?",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "passageA": {
+      "ref": "Joel 2:1",
+      "text": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "O Dia do Senhor se aproxima e exige tremor e alerta."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Festa sem temor algum"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio no monte santo"
+      },
+      {
+        "id": "c",
+        "text": "Alerta do Dia próximo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Toca a trombeta em Sião",
+    "feedbackCorrect": "A trombeta em Sião alerta: o Dia do Senhor vem e já está próximo.",
+    "feedbackWrong": {
+      "a": "O texto manda tremer, não festejar sem temor.",
+      "b": "Há trombeta e clamor em alta voz, não silêncio."
+    },
+    "hint": "Ligue o sinal ao anúncio do Dia.",
+    "learningObjective": "Ligar a trombeta ao alerta do Dia próximo.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-02-trombeta-em-siao-01",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 2:3, a terra diante do avanço é como o jardim do Éden, mas atrás fica um deserto assolado.",
+    "prompt": "Em Joel 2:3, a terra diante do avanço é como o jardim do Éden, mas atrás fica um deserto assolado.",
+    "cue": "Em Joel 2:3, a terra diante do avanço é como o jardim do Éden, mas atrás fica um deserto assolado.",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado",
+    "feedbackCorrect": "O \"mas\" marca o contraste: Éden diante, deserto atrás.",
+    "feedbackWrong": {
+      "false": "Releia 2:3: o contraste Éden/deserto está explícito."
+    },
+    "hint": "Compare o que há diante e o que há atrás.",
+    "learningObjective": "Compreender o contraste do avanço em 2:3.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-02-trombeta-em-siao-02",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:3, toque a palavra que marca o contraste entre diante e atrás.",
+    "prompt": "Em Joel 2:3, toque a palavra que marca o contraste entre diante e atrás.",
+    "cue": "Em Joel 2:3, toque a palavra que marca o contraste entre diante e atrás.",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "fogo"
+      },
+      {
+        "id": "c",
+        "text": "chama"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "jardim do Éden, mas atrás dele",
+    "feedbackCorrect": "\"Mas\" vira a página: Éden diante, deserto atrás.",
+    "feedbackWrong": {
+      "b": "\"Fogo\" descreve o avanço, não o contraste gramatical.",
+      "c": "\"Chama\" descreve o que abrasa atrás, não o marcador."
+    },
+    "hint": "É a palavra curta entre as duas imagens da terra.",
+    "learningObjective": "Reconhecer o marcador de contraste em 2:3.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-02-trombeta-em-siao-03",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 2:1–3 relaciona o alerta da trombeta com o avanço?",
+    "prompt": "Como Joel 2:1–3 relaciona o alerta da trombeta com o avanço?",
+    "cue": "Como Joel 2:1–3 relaciona o alerta da trombeta com o avanço?",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A trombeta celebra a terra mais fértil depois"
+      },
+      {
+        "id": "b",
+        "text": "A trombeta alerta porque o avanço nada deixa escapar"
+      },
+      {
+        "id": "c",
+        "text": "O avanço é fraco e fácil de ignorar"
+      },
+      {
+        "id": "d",
+        "text": "Só as nuvens mudam; a terra fica igual"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nada lhe escapa",
+    "feedbackCorrect": "A trombeta alerta porque um povo poderoso avança e nada lhe escapa.",
+    "feedbackWrong": {
+      "a": "Atrás fica deserto, não fertilidade.",
+      "c": "É um povo grande e poderoso; os povos tremem.",
+      "d": "A terra muda de Éden a deserto."
+    },
+    "hint": "Ligue o Dia próximo ao que o povo deixa atrás de si.",
+    "learningObjective": "Relacionar o alerta ao avanço devastador.",
+    "evidence": [
+      "Joel 2:1–3"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-02-trombeta-em-siao-04",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Joel 2:1–9?",
+    "prompt": "Como avança a cena em Joel 2:1–9?",
+    "cue": "Como avança a cena em Joel 2:1–9?",
+    "verseRef": "Joel 2:9",
+    "passageText": "Assaltam a cidade, correm pelos muros, sobem às casas; entram pelas janelas como um ladrão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Trombeta e alerta do Dia próximo"
+      },
+      {
+        "id": "b",
+        "text": "Trevas e povo poderoso que avança"
+      },
+      {
+        "id": "c",
+        "text": "Assalto à cidade sem desvio de fila"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Assaltam a cidade",
+    "feedbackCorrect": "Alerta, avanço com trevas, terror dos povos e assalto à cidade.",
+    "feedbackWrong": {
+      "default": "Comece pela trombeta; o assalto vem por último."
+    },
+    "hint": "Comece pela trombeta; o assalto fecha.",
+    "learningObjective": "Seguir o movimento do alerta ao assalto.",
+    "evidence": [
+      "Joel 2:1–9"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-02-trombeta-em-siao-05",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 2:1, que palavra liga o tremor à proximidade do Dia?",
+    "prompt": "Em Joel 2:1, que palavra liga o tremor à proximidade do Dia?",
+    "cue": "Em Joel 2:1, que palavra liga o tremor à proximidade do Dia?",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "template": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, ___ o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "nunca"
+      },
+      {
+        "id": "b",
+        "text": "quase"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "\"Pois\" liga o tremor ao Dia que vem e já está próximo.",
+    "feedbackWrong": {
+      "a": "\"Nunca\" não é o marcador em 2:1.",
+      "b": "\"Quase\" não aparece em 2:1."
+    },
+    "hint": "É a palavra curta antes de \"o Dia do Senhor\".",
+    "learningObjective": "Lembrar o marcador de causa em 2:1.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-02-trombeta-em-siao-06",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:2 a Amós 5:18–20?",
+    "prompt": "O que liga Joel 2:2 a Amós 5:18–20?",
+    "cue": "O que liga Joel 2:2 a Amós 5:18–20?",
+    "verseRef": "Joel 2:2",
+    "passageText": "Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração.",
+    "passageA": {
+      "ref": "Joel 2:2",
+      "text": "Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração."
+    },
+    "passageB": {
+      "ref": "Amós 5:18–20"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia só de luz plena"
+      },
+      {
+        "id": "b",
+        "text": "Dia do Senhor e trevas"
+      },
+      {
+        "id": "c",
+        "text": "Dia sem juízo algum"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Dia de escuridão e densas trevas",
+    "feedbackCorrect": "Nos dois textos, o Dia do Senhor aparece ligado a trevas, não a alívio fácil.",
+    "feedbackWrong": {
+      "a": "Os textos falam de escuridão e trevas.",
+      "c": "O Dia traz juízo, não ausência dele."
+    },
+    "hint": "Compare a imagem do Dia nos dois profetas.",
+    "learningObjective": "Relacionar as trevas do Dia em Joel e Amós.",
+    "evidence": [
+      "Joel 2:2",
+      "Amós 5:18–20"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-02-trombeta-em-siao-01",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Joel 2:1–9, o povo que avança deixa a terra mais fértil atrás de si.",
+    "prompt": "Em Joel 2:1–9, o povo que avança deixa a terra mais fértil atrás de si.",
+    "cue": "Em Joel 2:1–9, o povo que avança deixa a terra mais fértil atrás de si.",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "atrás dele, um deserto assolado; nada lhe escapa",
+    "feedbackCorrect": "Atrás fica deserto assolado; nada lhe escapa.",
+    "feedbackWrong": {
+      "true": "Releia 2:3: atrás é deserto, não fertilidade."
+    },
+    "hint": "Veja o que fica atrás do avanço.",
+    "learningObjective": "Interpretar o alcance devastador do avanço.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-02-trombeta-em-siao-02",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 2:3, toque o trecho que mostra que nada escapa ao avanço.",
+    "prompt": "Em Joel 2:3, toque o trecho que mostra que nada escapa ao avanço.",
+    "cue": "Em Joel 2:3, toque o trecho que mostra que nada escapa ao avanço.",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "jardim do Éden"
+      },
+      {
+        "id": "b",
+        "text": "nada lhe escapa"
+      },
+      {
+        "id": "c",
+        "text": "fogo devorador"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "nada lhe escapa",
+    "feedbackCorrect": "\"Nada lhe escapa\" fecha o contraste com totalidade.",
+    "feedbackWrong": {
+      "a": "O jardim descreve o que está diante, não a totalidade do alcance.",
+      "c": "O fogo descreve o avanço, mas a frase final afirma que nada escapa."
+    },
+    "hint": "Olhe a última cláusula do versículo.",
+    "learningObjective": "Sustentar a totalidade do avanço com o texto.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-02-trombeta-em-siao-03",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 2:1–9 sustenta sobre o Dia do Senhor?",
+    "prompt": "Que leitura Joel 2:1–9 sustenta sobre o Dia do Senhor?",
+    "cue": "Que leitura Joel 2:1–9 sustenta sobre o Dia do Senhor?",
+    "verseRef": "Joel 2:1–2",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo; Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O avanço melhora a terra atrás de si"
+      },
+      {
+        "id": "b",
+        "text": "A trombeta é só festa sem juízo"
+      },
+      {
+        "id": "c",
+        "text": "O Dia próximo exige tremor e não pode ser ignorado"
+      },
+      {
+        "id": "d",
+        "text": "O Dia ainda está longe e pode ser adiado"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "O Dia é grande e terrível: alerta, trevas e avanço que nada deixa escapar.",
+    "feedbackWrong": {
+      "a": "Atrás fica deserto assolado.",
+      "b": "Há tremor e trevas, não só festa.",
+      "d": "O texto diz que o Dia já está próximo."
+    },
+    "hint": "Compare cada opção com trombeta, trevas e deserto.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Joel 2:1–2"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-02-trombeta-em-siao-04",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o Dia do Senhor na Escritura?",
+    "prompt": "Qual sequência mostra o Dia do Senhor na Escritura?",
+    "cue": "Qual sequência mostra o Dia do Senhor na Escritura?",
+    "verseRef": "Joel 2:1–2",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo; Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Joel anuncia o Dia com trombeta e trevas"
+      },
+      {
+        "id": "b",
+        "text": "Amós liga o Dia do Senhor às trevas"
+      },
+      {
+        "id": "c",
+        "text": "Apocalipse fala do grande dia da ira"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Dia de escuridão e densas trevas",
+    "feedbackCorrect": "Joel anuncia trevas; Amós e Sofonias ecoam o Dia terrível; Apocalipse fala da ira.",
+    "feedbackWrong": {
+      "default": "Siga: Joel 2, Amós 5 e Apocalipse 6:17."
+    },
+    "hint": "Parta de Joel e avance na Escritura.",
+    "learningObjective": "Ver o Dia de Joel no fio bíblico.",
+    "evidence": [
+      "Joel 2:1–2",
+      "Amós 5:18–20",
+      "Apocalipse 6:17"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-02-trombeta-em-siao-05",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:3, que palavra descreve o que fica atrás do avanço?",
+    "prompt": "Em Joel 2:3, que palavra descreve o que fica atrás do avanço?",
+    "cue": "Em Joel 2:3, que palavra descreve o que fica atrás do avanço?",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "template": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um ___ assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "aliança"
+      },
+      {
+        "id": "b",
+        "text": "colheita"
+      },
+      {
+        "id": "c",
+        "text": "deserto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "atrás dele, um deserto assolado",
+    "feedbackCorrect": "Atrás fica um deserto assolado: a terra devastada pelo avanço.",
+    "feedbackWrong": {
+      "a": "\"Aliança\" não aparece em 2:3.",
+      "b": "\"Colheita\" não descreve o que fica atrás em 2:3."
+    },
+    "hint": "É a palavra depois de \"um\" no contraste final.",
+    "learningObjective": "Lembrar o termo que carrega a desolação do avanço.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-02-trombeta-em-siao-06",
+    "trail": "joel-cap",
+    "section": "jlc-02-trombeta-em-siao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 2:1 a Sofonias 1:14–15?",
+    "prompt": "O que liga Joel 2:1 a Sofonias 1:14–15?",
+    "cue": "O que liga Joel 2:1 a Sofonias 1:14–15?",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "passageA": {
+      "ref": "Joel 2:1",
+      "text": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;"
+    },
+    "passageB": {
+      "ref": "Sofonias 1:14–15",
+      "text": "O grande Dia do Senhor está próximo, muito próximo, e se apressa rapidamente. Atenção! O Dia do Senhor é amargo, e nele clama até o homem poderoso. Aquele dia será um dia de indignação, um dia de angústia e aflição, um dia de alvoroço e desolação, um dia de escuridade e negrume, um dia de nuvens e densas trevas."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia grande e terrível"
+      },
+      {
+        "id": "b",
+        "text": "Dia sem proximidade"
+      },
+      {
+        "id": "c",
+        "text": "Dia só de colheita"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "Nos dois textos, o Dia do Senhor se aproxima como dia grande e terrível.",
+    "feedbackWrong": {
+      "b": "Os textos afirmam proximidade do Dia.",
+      "c": "O tom é de juízo e trevas, não só colheita."
+    },
+    "hint": "Compare a proximidade e o tom do Dia.",
+    "learningObjective": "Ligar o Dia próximo em Joel e Sofonias.",
+    "evidence": [
+      "Joel 2:1",
+      "Sofonias 1:14–15"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-03-no-vale-da-decisao-01",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 3:16, o Senhor será o refúgio do seu povo.",
+    "prompt": "Em Joel 3:16, o Senhor será o refúgio do seu povo.",
+    "cue": "Em Joel 3:16, o Senhor será o refúgio do seu povo.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "Mesmo com céus e terra tremendo, o Senhor é refúgio do povo.",
+    "feedbackWrong": {
+      "false": "Releia o fim de 3:16: o Senhor será o refúgio."
+    },
+    "hint": "Olhe o que o Senhor será para o seu povo.",
+    "learningObjective": "Observar que o Senhor é refúgio do povo.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-03-no-vale-da-decisao-02",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 3:14, toque o nome do vale onde há multidões.",
+    "prompt": "Em Joel 3:14, toque o nome do vale onde há multidões.",
+    "cue": "Em Joel 3:14, toque o nome do vale onde há multidões.",
+    "verseRef": "Joel 3:14",
+    "passageText": "Multidões, multidões no vale da Decisão! Porque o Dia do Senhor se aproxima, neste vale da Decisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multidões"
+      },
+      {
+        "id": "b",
+        "text": "Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Decisão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vale da Decisão",
+    "feedbackCorrect": "As multidões estão no vale da Decisão.",
+    "feedbackWrong": {
+      "a": "\"Multidões\" descreve quem está no vale, não o nome do vale.",
+      "b": "\"Senhor\" aparece na frase do Dia, não como nome do vale."
+    },
+    "hint": "Procure o nome próprio depois de \"vale da\".",
+    "learningObjective": "Identificar o vale da Decisão.",
+    "evidence": [
+      "Joel 3:14"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-03-no-vale-da-decisao-03",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 3:18, de onde sai a fonte que rega o vale de Sitim?",
+    "prompt": "Segundo Joel 3:18, de onde sai a fonte que rega o vale de Sitim?",
+    "cue": "Segundo Joel 3:18, de onde sai a fonte que rega o vale de Sitim?",
+    "verseRef": "Joel 3:18",
+    "passageText": "Naquele dia, os montes destilarão mosto, os outeiros manarão leite, e todos os rios de Judá estarão cheios de águas; sairá uma fonte da casa do Senhor e regará o vale de Sitim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Das estrelas que brilham"
+      },
+      {
+        "id": "b",
+        "text": "Da casa do Senhor"
+      },
+      {
+        "id": "c",
+        "text": "Do Egito desolado"
+      },
+      {
+        "id": "d",
+        "text": "Do deserto de Edom"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "sairá uma fonte da casa do Senhor",
+    "feedbackCorrect": "A fonte sai da casa do Senhor e rega o vale de Sitim.",
+    "feedbackWrong": {
+      "a": "As estrelas deixam de brilhar; não são a fonte.",
+      "c": "O Egito se torna desolação, não fonte.",
+      "d": "Edom vira deserto; não é a origem da fonte."
+    },
+    "hint": "Veja a origem da fonte no versículo.",
+    "learningObjective": "Observar a origem da fonte restauradora.",
+    "evidence": [
+      "Joel 3:18"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-03-no-vale-da-decisao-04",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 3:16 na ordem do texto.",
+    "prompt": "Monte Joel 3:16 na ordem do texto.",
+    "cue": "Monte Joel 3:16 na ordem do texto.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém"
+      },
+      {
+        "id": "b",
+        "text": "e os céus e a terra tremerão"
+      },
+      {
+        "id": "c",
+        "text": "mas o Senhor será o refúgio do seu povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E o Senhor bramará de Sião",
+    "feedbackCorrect": "O Senhor brama; céus e terra tremem; ele é refúgio do povo.",
+    "feedbackWrong": {
+      "default": "Comece pelo bramido; o refúgio fecha o contraste."
+    },
+    "hint": "O versículo começa com o bramido do Senhor.",
+    "learningObjective": "Reconhecer a sequência de 3:16.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-03-no-vale-da-decisao-05",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 3:20, o que Judá será para sempre?",
+    "prompt": "Em Joel 3:20, o que Judá será para sempre?",
+    "cue": "Em Joel 3:20, o que Judá será para sempre?",
+    "verseRef": "Joel 3:20",
+    "passageText": "Judá, porém, será habitada para sempre, e Jerusalém, de geração em geração.",
+    "template": "Judá, porém, será ___ para sempre, e Jerusalém, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apagada"
+      },
+      {
+        "id": "b",
+        "text": "habitada"
+      },
+      {
+        "id": "c",
+        "text": "esquecida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Judá, porém, será habitada para sempre",
+    "feedbackCorrect": "Judá será habitada para sempre; Jerusalém, de geração em geração.",
+    "feedbackWrong": {
+      "a": "\"Apagada\" contradiz a promessa de 3:20.",
+      "c": "\"Esquecida\" não aparece em 3:20."
+    },
+    "hint": "É o particípio depois de \"será\".",
+    "learningObjective": "Lembrar a promessa de permanência de Judá.",
+    "evidence": [
+      "Joel 3:20"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-03-no-vale-da-decisao-06",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 3:16 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 3:16 comunica que se liga a este contexto?",
+    "cue": "O que Joel 3:16 comunica que se liga a este contexto?",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "passageA": {
+      "ref": "Joel 3:16",
+      "text": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "No Dia do Senhor, o povo precisa de abrigo firme."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Sião abandonada para sempre"
+      },
+      {
+        "id": "b",
+        "text": "Senhor como refúgio"
+      },
+      {
+        "id": "c",
+        "text": "Povo sem nenhum abrigo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "No tremor do Dia, o Senhor é refúgio e fortaleza do povo.",
+    "feedbackWrong": {
+      "a": "O Senhor habita em Sião; não a abandona.",
+      "c": "O texto afirma que o Senhor será o refúgio."
+    },
+    "hint": "Ligue o tremor ao que o Senhor será.",
+    "learningObjective": "Ligar o bramido ao refúgio do povo.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-03-no-vale-da-decisao-01",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 3:16, céus e terra tremem, mas o Senhor é refúgio do seu povo.",
+    "prompt": "Em Joel 3:16, céus e terra tremem, mas o Senhor é refúgio do seu povo.",
+    "cue": "Em Joel 3:16, céus e terra tremem, mas o Senhor é refúgio do seu povo.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "O \"mas\" marca o contraste: tremor geral, refúgio para o povo.",
+    "feedbackWrong": {
+      "false": "Releia o contraste no fim de 3:16."
+    },
+    "hint": "Procure a palavra que liga tremor e refúgio.",
+    "learningObjective": "Compreender o contraste tremor/refúgio.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-03-no-vale-da-decisao-02",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 3:16, toque a palavra que marca o contraste com o tremor.",
+    "prompt": "Em Joel 3:16, toque a palavra que marca o contraste com o tremor.",
+    "cue": "Em Joel 3:16, toque a palavra que marca o contraste com o tremor.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mas"
+      },
+      {
+        "id": "b",
+        "text": "terra"
+      },
+      {
+        "id": "c",
+        "text": "voz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "tremerão; mas o Senhor será o refúgio",
+    "feedbackCorrect": "\"Mas\" vira a página: tremor, porém refúgio.",
+    "feedbackWrong": {
+      "b": "\"Terra\" faz parte do tremor, não do marcador.",
+      "c": "\"Voz\" descreve o bramido, não o contraste."
+    },
+    "hint": "É a palavra curta antes de \"o Senhor será\".",
+    "learningObjective": "Reconhecer o marcador de contraste em 3:16.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-03-no-vale-da-decisao-03",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 3:19–20 relaciona Egito/Edom e Judá?",
+    "prompt": "Como Joel 3:19–20 relaciona Egito/Edom e Judá?",
+    "cue": "Como Joel 3:19–20 relaciona Egito/Edom e Judá?",
+    "verseRef": "Joel 3:19–20",
+    "passageText": "O Egito se tornará uma desolação, e Edom se tornará um deserto abandonado, por causa da violência que praticaram contra os filhos de Judá, em cuja terra derramaram sangue inocente. Judá, porém, será habitada para sempre, e Jerusalém, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Edom é restaurado e Judá some"
+      },
+      {
+        "id": "b",
+        "text": "Nações vizinhos desolam; Judá permanece habitada"
+      },
+      {
+        "id": "c",
+        "text": "Judá e Egito compartilham a mesma desolação"
+      },
+      {
+        "id": "d",
+        "text": "Não há diferença entre os destinos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Judá, porém, será habitada para sempre",
+    "feedbackCorrect": "Egito e Edom viram desolação; Judá, porém, permanece habitada.",
+    "feedbackWrong": {
+      "a": "Edom vira deserto; Judá é habitada.",
+      "c": "O \"porém\" separa Judá da desolação de Egito e Edom.",
+      "d": "O texto marca contraste claro com \"porém\"."
+    },
+    "hint": "Compare o destino das nações com o de Judá.",
+    "learningObjective": "Relacionar juízo sobre as nações e permanência de Judá.",
+    "evidence": [
+      "Joel 3:19–20"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-03-no-vale-da-decisao-04",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a cena em Joel 3:14–21?",
+    "prompt": "Como avança a cena em Joel 3:14–21?",
+    "cue": "Como avança a cena em Joel 3:14–21?",
+    "verseRef": "Joel 3:20",
+    "passageText": "Judá, porém, será habitada para sempre, e Jerusalém, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Multidões no vale da Decisão"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor ruge e é refúgio do povo"
+      },
+      {
+        "id": "c",
+        "text": "Juízo sobre Egito e Edom; Judá permanece"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Judá, porém, será habitada para sempre",
+    "feedbackCorrect": "Vale e trevas, refúgio em Sião, fonte e juízo; Judá permanece.",
+    "feedbackWrong": {
+      "default": "Comece pelo vale; Judá habitada vem por último."
+    },
+    "hint": "Comece pelo vale; a permanência de Judá fecha.",
+    "learningObjective": "Seguir o movimento do vale à restauração.",
+    "evidence": [
+      "Joel 3:14–20"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-03-no-vale-da-decisao-05",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 3:14, que palavra introduz a razão das multidões no vale?",
+    "prompt": "Em Joel 3:14, que palavra introduz a razão das multidões no vale?",
+    "cue": "Em Joel 3:14, que palavra introduz a razão das multidões no vale?",
+    "verseRef": "Joel 3:14",
+    "passageText": "Multidões, multidões no vale da Decisão! Porque o Dia do Senhor se aproxima, neste vale da Decisão.",
+    "template": "Multidões, multidões no vale da Decisão! ___ o Dia do Senhor se aproxima, neste vale da Decisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Embora"
+      },
+      {
+        "id": "b",
+        "text": "Porque"
+      },
+      {
+        "id": "c",
+        "text": "Depois"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Porque o Dia do Senhor se aproxima",
+    "feedbackCorrect": "\"Porque\" liga as multidões à aproximação do Dia do Senhor.",
+    "feedbackWrong": {
+      "a": "\"Embora\" não aparece em 3:14.",
+      "c": "\"Depois\" não introduz a razão no versículo."
+    },
+    "hint": "É a primeira palavra da segunda frase.",
+    "learningObjective": "Lembrar o marcador de causa em 3:14.",
+    "evidence": [
+      "Joel 3:14"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-03-no-vale-da-decisao-06",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 3:16 a Salmos 46:1?",
+    "prompt": "O que liga Joel 3:16 a Salmos 46:1?",
+    "cue": "O que liga Joel 3:16 a Salmos 46:1?",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "passageA": {
+      "ref": "Joel 3:16",
+      "text": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel."
+    },
+    "passageB": {
+      "ref": "Salmos 46:1",
+      "text": "Deus é nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Deus abandona o povo"
+      },
+      {
+        "id": "b",
+        "text": "Só muros humanos protegem"
+      },
+      {
+        "id": "c",
+        "text": "Deus é refúgio e força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "Nos dois textos, Deus é refúgio e força do seu povo.",
+    "feedbackWrong": {
+      "a": "Os textos afirmam refúgio, não abandono.",
+      "b": "O abrigo é o Senhor, não só muros."
+    },
+    "hint": "Compare a imagem de abrigo.",
+    "learningObjective": "Relacionar o refúgio em Joel e no Salmo.",
+    "evidence": [
+      "Joel 3:16",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-03-no-vale-da-decisao-01",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Joel 3:14–21, o Senhor só ruge e não oferece abrigo ao seu povo.",
+    "prompt": "Em Joel 3:14–21, o Senhor só ruge e não oferece abrigo ao seu povo.",
+    "cue": "Em Joel 3:14–21, o Senhor só ruge e não oferece abrigo ao seu povo.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "Ele brama e, ao mesmo tempo, é refúgio e fortaleza.",
+    "feedbackWrong": {
+      "true": "O contraste de 3:16 mostra refúgio, não só bramido."
+    },
+    "hint": "Leia o que vem depois do tremor em 3:16.",
+    "learningObjective": "Interpretar o Senhor como juiz e refúgio.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-03-no-vale-da-decisao-02",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 3:16, toque o trecho que mostra a fortaleza de Israel.",
+    "prompt": "Em Joel 3:16, toque o trecho que mostra a fortaleza de Israel.",
+    "cue": "Em Joel 3:16, toque o trecho que mostra a fortaleza de Israel.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tremerão"
+      },
+      {
+        "id": "b",
+        "text": "bramará"
+      },
+      {
+        "id": "c",
+        "text": "fortaleza"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "a fortaleza dos filhos de Israel",
+    "feedbackCorrect": "O Senhor é também a fortaleza dos filhos de Israel.",
+    "feedbackWrong": {
+      "a": "\"Tremerão\" descreve céus e terra, não a fortaleza.",
+      "b": "\"Bramará\" é a voz de juízo, não o nome da fortaleza."
+    },
+    "hint": "Procure a palavra de força no fim do versículo.",
+    "learningObjective": "Sustentar com o texto o Senhor como fortaleza.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-03-no-vale-da-decisao-03",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Joel 3:14–21 sustenta sobre o destino de Judá?",
+    "prompt": "Que leitura Joel 3:14–21 sustenta sobre o destino de Judá?",
+    "cue": "Que leitura Joel 3:14–21 sustenta sobre o destino de Judá?",
+    "verseRef": "Joel 3:20",
+    "passageText": "Judá, porém, será habitada para sempre, e Jerusalém, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O vale da Decisão é só geografia sem juízo"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor abriga o povo e restaura Judá para sempre"
+      },
+      {
+        "id": "c",
+        "text": "Judá e Egito terão o mesmo destino de desolação"
+      },
+      {
+        "id": "d",
+        "text": "O Senhor ruge e abandona Sião de vez"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Judá, porém, será habitada para sempre",
+    "feedbackCorrect": "O Senhor é refúgio e promete Judá habitada; as nações opressoras desolam.",
+    "feedbackWrong": {
+      "a": "O Dia se aproxima no vale; há juízo e restauração.",
+      "c": "O \"porém\" separa Judá da desolação.",
+      "d": "O Senhor habita em Sião e é refúgio."
+    },
+    "hint": "Compare refúgio, fonte e o \"porém\" de 3:20.",
+    "learningObjective": "Escolher a interpretação que o texto sustenta.",
+    "evidence": [
+      "Joel 3:16–20"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-03-no-vale-da-decisao-04",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o tema do refúgio e das águas na Escritura?",
+    "prompt": "Qual sequência mostra o tema do refúgio e das águas na Escritura?",
+    "cue": "Qual sequência mostra o tema do refúgio e das águas na Escritura?",
+    "verseRef": "Joel 3:18",
+    "passageText": "Naquele dia, os montes destilarão mosto, os outeiros manarão leite, e todos os rios de Judá estarão cheios de águas; sairá uma fonte da casa do Senhor e regará o vale de Sitim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Joel: o Senhor é refúgio e da casa sai fonte"
+      },
+      {
+        "id": "b",
+        "text": "O Salmo afirma que Deus é refúgio e força"
+      },
+      {
+        "id": "c",
+        "text": "Apocalipse mostra o rio da vida de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "sairá uma fonte da casa do Senhor",
+    "feedbackCorrect": "Joel: refúgio e fonte; o Salmo ecoa o refúgio; Apocalipse mostra o rio da vida.",
+    "feedbackWrong": {
+      "default": "Siga: Joel 3, Salmos 46 e Apocalipse 22."
+    },
+    "hint": "Parta de Joel e avance na Escritura.",
+    "learningObjective": "Ver refúgio e fonte de Joel no fio bíblico.",
+    "evidence": [
+      "Joel 3:16",
+      "Salmos 46:1",
+      "Apocalipse 22:1–2"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-03-no-vale-da-decisao-05",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 3:16, que palavra nomeia o abrigo que o Senhor será?",
+    "prompt": "Em Joel 3:16, que palavra nomeia o abrigo que o Senhor será?",
+    "cue": "Em Joel 3:16, que palavra nomeia o abrigo que o Senhor será?",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "template": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o ___ do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "exílio"
+      },
+      {
+        "id": "b",
+        "text": "refúgio"
+      },
+      {
+        "id": "c",
+        "text": "deserto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "Refúgio é o termo que carrega o abrigo no tremor do Dia.",
+    "feedbackWrong": {
+      "a": "\"Exílio\" não aparece em 3:16.",
+      "c": "\"Deserto\" descreve Edom, não o abrigo do povo."
+    },
+    "hint": "É a palavra depois de \"será o\".",
+    "learningObjective": "Lembrar o termo teológico central da cena.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-03-no-vale-da-decisao-06",
+    "trail": "joel-cap",
+    "section": "jlc-03-no-vale-da-decisao",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 3:18 a Zacarias 14:8?",
+    "prompt": "O que liga Joel 3:18 a Zacarias 14:8?",
+    "cue": "O que liga Joel 3:18 a Zacarias 14:8?",
+    "verseRef": "Joel 3:18",
+    "passageText": "Naquele dia, os montes destilarão mosto, os outeiros manarão leite, e todos os rios de Judá estarão cheios de águas; sairá uma fonte da casa do Senhor e regará o vale de Sitim.",
+    "passageA": {
+      "ref": "Joel 3:18",
+      "text": "Naquele dia, os montes destilarão mosto, os outeiros manarão leite, e todos os rios de Judá estarão cheios de águas; sairá uma fonte da casa do Senhor e regará o vale de Sitim."
+    },
+    "passageB": {
+      "ref": "Zacarias 14:8",
+      "text": "Naquele dia, também acontecerá que de Jerusalém sairão águas vivas; metade delas irá para o mar oriental e a outra metade, para o mar ocidental. Isso se dará tanto no verão quanto no inverno."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Seca eterna sem fonte"
+      },
+      {
+        "id": "b",
+        "text": "Rio que some no Egito"
+      },
+      {
+        "id": "c",
+        "text": "Águas vivas de Jerusalém"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sairá uma fonte da casa do Senhor",
+    "feedbackCorrect": "Nos dois textos, águas vivas saem de Jerusalém/casa do Senhor.",
+    "feedbackWrong": {
+      "a": "Os textos afirmam águas que saem, não seca eterna.",
+      "b": "A origem é a casa/Jerusalém, não o Egito."
+    },
+    "hint": "Compare a origem das águas.",
+    "learningObjective": "Ligar a fonte de Joel às águas vivas de Zacarias.",
+    "evidence": [
+      "Joel 3:18",
+      "Zacarias 14:8"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-01",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Joel 2:1, a trombeta deve soar em Sião porque o Dia do Senhor já está próximo.",
+    "prompt": "Em Joel 2:1, a trombeta deve soar em Sião porque o Dia do Senhor já está próximo.",
+    "cue": "Em Joel 2:1, a trombeta deve soar em Sião porque o Dia do Senhor já está próximo.",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Toca a trombeta em Sião",
+    "feedbackCorrect": "A trombeta alerta: o Dia vem e já está próximo.",
+    "feedbackWrong": {
+      "false": "Releia 2:1: trombeta em Sião e Dia próximo."
+    },
+    "hint": "Veja o sinal e a razão no versículo.",
+    "learningObjective": "Observar o alerta da trombeta.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-02",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 1:14, toque o que deve ser santificado.",
+    "prompt": "Em Joel 1:14, toque o que deve ser santificado.",
+    "cue": "Em Joel 1:14, toque o que deve ser santificado.",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "terra"
+      },
+      {
+        "id": "b",
+        "text": "anciãos"
+      },
+      {
+        "id": "c",
+        "text": "jejum"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Santificai um jejum",
+    "feedbackCorrect": "Um jejum deve ser santificado antes do clamor.",
+    "feedbackWrong": {
+      "a": "A terra é o lugar dos habitantes, não o objeto santificado.",
+      "b": "Os anciãos são convocados; não são o que se santifica."
+    },
+    "hint": "É o objeto do primeiro verbo.",
+    "learningObjective": "Identificar o jejum no chamado de 1:14.",
+    "evidence": [
+      "Joel 1:14"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-03",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Joel 3:16, o que o Senhor será para o seu povo?",
+    "prompt": "Segundo Joel 3:16, o que o Senhor será para o seu povo?",
+    "cue": "Segundo Joel 3:16, o que o Senhor será para o seu povo?",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Um inimigo de Sião"
+      },
+      {
+        "id": "b",
+        "text": "O refúgio do seu povo"
+      },
+      {
+        "id": "c",
+        "text": "Um deserto sem água"
+      },
+      {
+        "id": "d",
+        "text": "Um silêncio sem voz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "O Senhor será o refúgio do seu povo e a fortaleza de Israel.",
+    "feedbackWrong": {
+      "a": "Ele habita em Sião e abriga o povo.",
+      "c": "O deserto é o destino de Edom, não do Senhor.",
+      "d": "Ele brama e faz ouvir a voz."
+    },
+    "hint": "Olhe o que vem depois do tremor.",
+    "learningObjective": "Observar o Senhor como refúgio.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-04",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 2:3 na ordem do texto.",
+    "prompt": "Monte Joel 2:3 na ordem do texto.",
+    "cue": "Monte Joel 2:3 na ordem do texto.",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Diante dele, um fogo devorador avança"
+      },
+      {
+        "id": "b",
+        "text": "a terra diante dele é como o jardim do Éden"
+      },
+      {
+        "id": "c",
+        "text": "mas atrás dele, um deserto assolado; nada lhe escapa"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Diante dele, um fogo devorador avança",
+    "feedbackCorrect": "Fogo diante; terra como Éden; atrás, deserto; nada escapa.",
+    "feedbackWrong": {
+      "default": "Comece pelo fogo; o deserto fecha."
+    },
+    "hint": "Comece pelo fogo diante dele.",
+    "learningObjective": "Reconhecer a sequência de 2:3.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-05",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Joel 3:14, no vale de que nome há multidões?",
+    "prompt": "Em Joel 3:14, no vale de que nome há multidões?",
+    "cue": "Em Joel 3:14, no vale de que nome há multidões?",
+    "verseRef": "Joel 3:14",
+    "passageText": "Multidões, multidões no vale da Decisão! Porque o Dia do Senhor se aproxima, neste vale da Decisão.",
+    "template": "Multidões, multidões no vale da ___! Porque o Dia do Senhor se aproxima, neste vale da Decisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cedros"
+      },
+      {
+        "id": "b",
+        "text": "Túmulo"
+      },
+      {
+        "id": "c",
+        "text": "Decisão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "vale da Decisão",
+    "feedbackCorrect": "As multidões estão no vale da Decisão.",
+    "feedbackWrong": {
+      "a": "\"Cedros\" não é o nome do vale em 3:14.",
+      "b": "\"Túmulo\" não aparece em 3:14."
+    },
+    "hint": "É o nome próprio depois de \"vale da\".",
+    "learningObjective": "Lembrar o nome do vale.",
+    "evidence": [
+      "Joel 3:14"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-06",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Joel 1:15 comunica que se liga a este contexto?",
+    "prompt": "O que Joel 1:15 comunica que se liga a este contexto?",
+    "cue": "O que Joel 1:15 comunica que se liga a este contexto?",
+    "verseRef": "Joel 1:15",
+    "passageText": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "passageA": {
+      "ref": "Joel 1:15",
+      "text": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A etapa inteira gira em torno do Dia do Senhor que se aproxima."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia só de festa leve"
+      },
+      {
+        "id": "b",
+        "text": "Dia já passado sem efeito"
+      },
+      {
+        "id": "c",
+        "text": "Dia próximo como calamidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o dia do Senhor está próximo",
+    "feedbackCorrect": "O dia próximo como calamidade chama ao jejum e ao alerta.",
+    "feedbackWrong": {
+      "a": "O tom é de calamidade, não de festa leve.",
+      "b": "O texto diz que o dia está próximo, não passado."
+    },
+    "hint": "Ligue a proximidade do dia ao tom da etapa.",
+    "learningObjective": "Ligar 1:15 ao Dia próximo da etapa.",
+    "evidence": [
+      "Joel 1:15"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-07",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Joel 3:18, toque o que sai da casa do Senhor.",
+    "prompt": "Em Joel 3:18, toque o que sai da casa do Senhor.",
+    "cue": "Em Joel 3:18, toque o que sai da casa do Senhor.",
+    "verseRef": "Joel 3:18",
+    "passageText": "Naquele dia, os montes destilarão mosto, os outeiros manarão leite, e todos os rios de Judá estarão cheios de águas; sairá uma fonte da casa do Senhor e regará o vale de Sitim.",
+    "options": [
+      {
+        "id": "a",
+        "text": "mosto"
+      },
+      {
+        "id": "b",
+        "text": "leite"
+      },
+      {
+        "id": "c",
+        "text": "fonte"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "sairá uma fonte da casa do Senhor",
+    "feedbackCorrect": "Uma fonte sai da casa do Senhor e rega o vale.",
+    "feedbackWrong": {
+      "a": "O mosto destila dos montes; não é o que sai da casa.",
+      "b": "O leite mana dos outeiros; não sai da casa."
+    },
+    "hint": "Procure o que sai da casa.",
+    "learningObjective": "Identificar a fonte da casa do Senhor.",
+    "evidence": [
+      "Joel 3:18"
+    ]
+  },
+  {
+    "id": "joel-cap-sem-jlc-boss-1-08",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Joel 1:13 na ordem do texto.",
+    "prompt": "Monte Joel 1:13 na ordem do texto.",
+    "cue": "Monte Joel 1:13 na ordem do texto.",
+    "verseRef": "Joel 1:13",
+    "passageText": "Cingi-vos de pano de saco e lamentai, sacerdotes; uivai, ministros do altar; vinde e passai a noite vestidos de pano de saco, ministros do meu Deus; pois da casa de vosso Deus foram cortadas a oferta de manjares e a libação.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Cingi-vos de pano de saco e lamentai, sacerdotes"
+      },
+      {
+        "id": "b",
+        "text": "uivai, ministros do altar"
+      },
+      {
+        "id": "c",
+        "text": "foram cortadas a oferta de manjares e a libação"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Cingi-vos de pano de saco e lamentai, sacerdotes",
+    "feedbackCorrect": "Sacerdotes lamentam; ministros uivam; oferta e libação foram cortadas.",
+    "feedbackWrong": {
+      "default": "Comece pelos sacerdotes; a oferta cortada fecha."
+    },
+    "hint": "Comece pelo chamado aos sacerdotes.",
+    "learningObjective": "Reconhecer a sequência do lamento em 1:13.",
+    "evidence": [
+      "Joel 1:13"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-01",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Joel 3:16, céus e terra tremem, e por isso o Senhor deixa de ser refúgio do povo.",
+    "prompt": "Em Joel 3:16, céus e terra tremem, e por isso o Senhor deixa de ser refúgio do povo.",
+    "cue": "Em Joel 3:16, céus e terra tremem, e por isso o Senhor deixa de ser refúgio do povo.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "mas o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "O \"mas\" afirma o contrário: ele é refúgio no meio do tremor.",
+    "feedbackWrong": {
+      "true": "Releia o contraste: tremor, mas refúgio."
+    },
+    "hint": "Veja a palavra que liga tremor e refúgio.",
+    "learningObjective": "Compreender o contraste tremor/refúgio.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-02",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 2:1, toque a palavra que liga o tremor à proximidade do Dia.",
+    "prompt": "Em Joel 2:1, toque a palavra que liga o tremor à proximidade do Dia.",
+    "cue": "Em Joel 2:1, toque a palavra que liga o tremor à proximidade do Dia.",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "monte"
+      },
+      {
+        "id": "b",
+        "text": "pois"
+      },
+      {
+        "id": "c",
+        "text": "Sião"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pois o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "\"Pois\" liga o tremor ao Dia que vem.",
+    "feedbackWrong": {
+      "a": "\"Monte\" é o lugar do clamor, não o marcador.",
+      "c": "\"Sião\" é o lugar da trombeta, não o marcador."
+    },
+    "hint": "É a palavra curta antes de \"o Dia\".",
+    "learningObjective": "Reconhecer o marcador de causa em 2:1.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-03",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Joel 1:14–15 e 2:1 se relacionam sobre o Dia do Senhor?",
+    "prompt": "Como Joel 1:14–15 e 2:1 se relacionam sobre o Dia do Senhor?",
+    "cue": "Como Joel 1:14–15 e 2:1 se relacionam sobre o Dia do Senhor?",
+    "verseRef": "Joel 1:14–15",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor. Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia próximo cancela o jejum e o clamor"
+      },
+      {
+        "id": "b",
+        "text": "Só os animais precisam se preparar"
+      },
+      {
+        "id": "c",
+        "text": "A trombeta celebra que o Dia já passou"
+      },
+      {
+        "id": "d",
+        "text": "O Dia próximo exige jejum e alerta em Sião"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "o dia do Senhor está próximo",
+    "feedbackCorrect": "O Dia próximo chama ao jejum e à trombeta de alerta.",
+    "feedbackWrong": {
+      "a": "O jejum é a resposta ao Dia próximo.",
+      "b": "Sacerdotes e habitantes são convocados.",
+      "c": "O Dia vem e já está próximo, não passou."
+    },
+    "hint": "Ligue proximidade, jejum e trombeta.",
+    "learningObjective": "Relacionar jejum e trombeta ao Dia próximo.",
+    "evidence": [
+      "Joel 1:14–15"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-04",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança a etapa do Dia do Senhor em Joel?",
+    "prompt": "Como avança a etapa do Dia do Senhor em Joel?",
+    "cue": "Como avança a etapa do Dia do Senhor em Joel?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Lamento, jejum e clamor"
+      },
+      {
+        "id": "b",
+        "text": "Trombeta e Dia de trevas"
+      },
+      {
+        "id": "c",
+        "text": "Vale da Decisão e refúgio"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "clamai ao Senhor",
+    "feedbackCorrect": "Jejuar e clamar; trombeta e trevas; vale e refúgio.",
+    "feedbackWrong": {
+      "default": "Comece pelo jejum; o refúgio vem por último."
+    },
+    "hint": "Comece pelo lamento; o refúgio fecha.",
+    "learningObjective": "Seguir o arco da etapa.",
+    "evidence": [
+      "Joel 1:14",
+      "Joel 2:1",
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-05",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Joel 2:3, que palavra marca o contraste entre Éden e deserto?",
+    "prompt": "Em Joel 2:3, que palavra marca o contraste entre Éden e deserto?",
+    "cue": "Em Joel 2:3, que palavra marca o contraste entre Éden e deserto?",
+    "verseRef": "Joel 2:3",
+    "passageText": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, mas atrás dele, um deserto assolado; nada lhe escapa.",
+    "template": "Diante dele, um fogo devorador avança, e atrás dele, uma chama que abrasa; a terra diante dele é como o jardim do Éden, ___ atrás dele, um deserto assolado; nada lhe escapa.",
+    "options": [
+      {
+        "id": "a",
+        "text": "logo"
+      },
+      {
+        "id": "b",
+        "text": "quase"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "jardim do Éden, mas atrás dele, um deserto",
+    "feedbackCorrect": "\"Mas\" liga o Éden diante ao deserto atrás.",
+    "feedbackWrong": {
+      "a": "\"Logo\" não marca o contraste em 2:3.",
+      "b": "\"Quase\" não aparece em 2:3."
+    },
+    "hint": "É a palavra curta entre as duas imagens da terra.",
+    "learningObjective": "Lembrar o marcador de contraste em 2:3.",
+    "evidence": [
+      "Joel 2:3"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-06",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Joel 2:2 a Amós 5:18–20?",
+    "prompt": "O que liga Joel 2:2 a Amós 5:18–20?",
+    "cue": "O que liga Joel 2:2 a Amós 5:18–20?",
+    "verseRef": "Joel 2:2",
+    "passageText": "Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração.",
+    "passageA": {
+      "ref": "Joel 2:2",
+      "text": "Dia de escuridão e densas trevas, dia de nuvens e negridão! Como a alva que se espalha sobre os montes, assim se propaga um povo grande e poderoso, qual nunca houve desde os tempos antigos nem haverá, depois dele, pelos anos adiante, de geração em geração."
+    },
+    "passageB": {
+      "ref": "Amós 5:18–20"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dia só de luz plena"
+      },
+      {
+        "id": "b",
+        "text": "Dia sem juízo algum"
+      },
+      {
+        "id": "c",
+        "text": "Dia do Senhor e trevas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Dia de escuridão e densas trevas",
+    "feedbackCorrect": "Nos dois textos, o Dia do Senhor se liga a trevas.",
+    "feedbackWrong": {
+      "a": "Os textos falam de escuridão e trevas.",
+      "b": "O Dia traz juízo, não ausência dele."
+    },
+    "hint": "Compare a imagem do Dia.",
+    "learningObjective": "Relacionar trevas do Dia em Joel e Amós.",
+    "evidence": [
+      "Joel 2:2",
+      "Amós 5:18–20"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-07",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Joel 3:20, toque a palavra que marca o contraste com Egito e Edom.",
+    "prompt": "Em Joel 3:20, toque a palavra que marca o contraste com Egito e Edom.",
+    "cue": "Em Joel 3:20, toque a palavra que marca o contraste com Egito e Edom.",
+    "verseRef": "Joel 3:20",
+    "passageText": "Judá, porém, será habitada para sempre, e Jerusalém, de geração em geração.",
+    "options": [
+      {
+        "id": "a",
+        "text": "porém"
+      },
+      {
+        "id": "b",
+        "text": "Judá"
+      },
+      {
+        "id": "c",
+        "text": "sempre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Judá, porém, será habitada para sempre",
+    "feedbackCorrect": "\"Porém\" separa Judá da desolação das nações.",
+    "feedbackWrong": {
+      "b": "\"Judá\" é o sujeito; o contraste está na palavra seguinte.",
+      "c": "\"Sempre\" descreve a duração, não o contraste."
+    },
+    "hint": "É a palavra entre vírgulas depois de Judá.",
+    "learningObjective": "Reconhecer o contraste em 3:20.",
+    "evidence": [
+      "Joel 3:20"
+    ]
+  },
+  {
+    "id": "joel-cap-cam-jlc-boss-1-08",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como se move o contraste de Joel 3:16?",
+    "prompt": "Como se move o contraste de Joel 3:16?",
+    "cue": "Como se move o contraste de Joel 3:16?",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Senhor brama de Sião"
+      },
+      {
+        "id": "b",
+        "text": "Céus e terra tremem"
+      },
+      {
+        "id": "c",
+        "text": "O Senhor é refúgio do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "mas o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "Bramido, tremor, e então o refúgio do povo.",
+    "feedbackWrong": {
+      "default": "Bramido primeiro; refúgio por último."
+    },
+    "hint": "O refúgio vem depois do tremor.",
+    "learningObjective": "Seguir o contraste interno de 3:16.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-01",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Em Joel 1–3, o Dia do Senhor ainda está longe e pode ser ignorado sem jejum nem refúgio.",
+    "prompt": "Em Joel 1–3, o Dia do Senhor ainda está longe e pode ser ignorado sem jejum nem refúgio.",
+    "cue": "Em Joel 1–3, o Dia do Senhor ainda está longe e pode ser ignorado sem jejum nem refúgio.",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "O Dia está próximo: exige jejum, alerta e confiança no refúgio.",
+    "feedbackWrong": {
+      "true": "Joel 1:15 e 2:1 afirmam proximidade; 3:16 oferece refúgio."
+    },
+    "hint": "Compare proximidade, jejum e refúgio na etapa.",
+    "learningObjective": "Interpretar o arco do Dia na etapa.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-02",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 3:16, toque o trecho que sustenta o abrigo do povo.",
+    "prompt": "Em Joel 3:16, toque o trecho que sustenta o abrigo do povo.",
+    "cue": "Em Joel 3:16, toque o trecho que sustenta o abrigo do povo.",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "options": [
+      {
+        "id": "a",
+        "text": "tremerão"
+      },
+      {
+        "id": "b",
+        "text": "refúgio"
+      },
+      {
+        "id": "c",
+        "text": "bramará"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "\"Refúgio\" sustenta que o Senhor abriga o povo no Dia.",
+    "feedbackWrong": {
+      "a": "\"Tremerão\" descreve o cosmos, não o abrigo.",
+      "c": "\"Bramará\" é juízo; o abrigo vem depois."
+    },
+    "hint": "Procure a palavra de abrigo depois de \"será o\".",
+    "learningObjective": "Sustentar o Senhor como refúgio com o texto.",
+    "evidence": [
+      "Joel 3:16"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-03",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura a etapa de Joel sustenta sobre o Dia do Senhor?",
+    "prompt": "Que leitura a etapa de Joel sustenta sobre o Dia do Senhor?",
+    "cue": "Que leitura a etapa de Joel sustenta sobre o Dia do Senhor?",
+    "verseRef": "Joel 1:14–15",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor. Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O Dia está longe e não exige resposta"
+      },
+      {
+        "id": "b",
+        "text": "O Senhor só julga e nunca abriga"
+      },
+      {
+        "id": "c",
+        "text": "O Dia chama ao arrependimento e oferece refúgio"
+      },
+      {
+        "id": "d",
+        "text": "A praga é só agrícola, sem clamor"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "clamai ao Senhor",
+    "feedbackCorrect": "O Dia chama ao arrependimento e oferece o Senhor como refúgio.",
+    "feedbackWrong": {
+      "a": "O texto afirma que o Dia está próximo.",
+      "b": "Joel 3:16 afirma o refúgio.",
+      "d": "Joel 1:14 manda jejuar e clamar."
+    },
+    "hint": "Una jejum, trombeta e refúgio.",
+    "learningObjective": "Escolher a interpretação do arco da etapa.",
+    "evidence": [
+      "Joel 1:14–15"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-04",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o Dia do Senhor e o refúgio na Escritura?",
+    "prompt": "Qual sequência mostra o Dia do Senhor e o refúgio na Escritura?",
+    "cue": "Qual sequência mostra o Dia do Senhor e o refúgio na Escritura?",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Joel anuncia o Dia próximo com trombeta"
+      },
+      {
+        "id": "b",
+        "text": "Sofonias ecoa o Dia grande e terrível"
+      },
+      {
+        "id": "c",
+        "text": "O Salmo afirma Deus como refúgio e força"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "o Dia do Senhor vem, já está próximo",
+    "feedbackCorrect": "Joel anuncia o Dia; Sofonias ecoa o Dia terrível; o Salmo afirma o refúgio.",
+    "feedbackWrong": {
+      "default": "Siga: Joel 2, Sofonias 1 e Salmos 46."
+    },
+    "hint": "Parta de Joel e avance na Escritura.",
+    "learningObjective": "Ver Dia e refúgio no fio bíblico.",
+    "evidence": [
+      "Joel 2:1",
+      "Sofonias 1:14–15",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-05",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Joel 2:1, que palavra nomeia o sinal tocado em Sião?",
+    "prompt": "Em Joel 2:1, que palavra nomeia o sinal tocado em Sião?",
+    "cue": "Em Joel 2:1, que palavra nomeia o sinal tocado em Sião?",
+    "verseRef": "Joel 2:1",
+    "passageText": "Toca a trombeta em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "template": "Toca a ___ em Sião e clama em alta voz no meu monte santo; que tremam todos os habitantes da terra, pois o Dia do Senhor vem, já está próximo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "colheita"
+      },
+      {
+        "id": "b",
+        "text": "trombeta"
+      },
+      {
+        "id": "c",
+        "text": "mercado"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Toca a trombeta em Sião",
+    "feedbackCorrect": "A trombeta é o sinal do alerta do Dia.",
+    "feedbackWrong": {
+      "a": "\"Colheita\" não é o sinal em 2:1.",
+      "c": "\"Mercado\" não aparece em 2:1."
+    },
+    "hint": "É o objeto do primeiro verbo.",
+    "learningObjective": "Lembrar o termo do alerta da etapa.",
+    "evidence": [
+      "Joel 2:1"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-06",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Joel 3:16 a Salmos 46:1?",
+    "prompt": "O que liga Joel 3:16 a Salmos 46:1?",
+    "cue": "O que liga Joel 3:16 a Salmos 46:1?",
+    "verseRef": "Joel 3:16",
+    "passageText": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.",
+    "passageA": {
+      "ref": "Joel 3:16",
+      "text": "E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel."
+    },
+    "passageB": {
+      "ref": "Salmos 46:1",
+      "text": "Deus é nosso refúgio e fortaleza, socorro bem presente nas tribulações."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Só muros humanos bastam"
+      },
+      {
+        "id": "b",
+        "text": "Deus abandona Sião"
+      },
+      {
+        "id": "c",
+        "text": "Deus é refúgio e força"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o Senhor será o refúgio do seu povo",
+    "feedbackCorrect": "Nos dois textos, Deus é refúgio e força do povo.",
+    "feedbackWrong": {
+      "a": "O abrigo é o Senhor.",
+      "b": "Os textos afirmam refúgio, não abandono."
+    },
+    "hint": "Compare a imagem de abrigo.",
+    "learningObjective": "Ligar o refúgio de Joel ao Salmo.",
+    "evidence": [
+      "Joel 3:16",
+      "Salmos 46:1"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-07",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Joel 1:15, toque o trecho que descreve como virá o dia.",
+    "prompt": "Em Joel 1:15, toque o trecho que descreve como virá o dia.",
+    "cue": "Em Joel 1:15, toque o trecho que descreve como virá o dia.",
+    "verseRef": "Joel 1:15",
+    "passageText": "Ah! aquele dia! Porque o dia do Senhor está próximo e virá como uma calamidade do Todo-Poderoso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Todo-Poderoso"
+      },
+      {
+        "id": "b",
+        "text": "próximo"
+      },
+      {
+        "id": "c",
+        "text": "calamidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "virá como uma calamidade do Todo-Poderoso",
+    "feedbackCorrect": "O dia virá como calamidade do Todo-Poderoso.",
+    "feedbackWrong": {
+      "a": "\"Todo-Poderoso\" nomeia de quem vem a calamidade, não a comparação.",
+      "b": "\"Próximo\" diz quando o dia está, não como ele virá."
+    },
+    "hint": "Procure a comparação no fim do versículo.",
+    "learningObjective": "Sustentar o tom de calamidade do Dia.",
+    "evidence": [
+      "Joel 1:15"
+    ]
+  },
+  {
+    "id": "joel-cap-pro-jlc-boss-1-08",
+    "trail": "joel-cap",
+    "section": "jlc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência resume o chamado da etapa?",
+    "prompt": "Qual sequência resume o chamado da etapa?",
+    "cue": "Qual sequência resume o chamado da etapa?",
+    "verseRef": "Joel 1:14",
+    "passageText": "Santificai um jejum, proclamai um dia sagrado, convocai os anciãos e todos os habitantes desta terra, para a Casa do Senhor, seu Deus, e clamai ao Senhor.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Santificar jejum e clamar ao Senhor"
+      },
+      {
+        "id": "b",
+        "text": "Tocar a trombeta diante do Dia próximo"
+      },
+      {
+        "id": "c",
+        "text": "Confiar no Senhor como refúgio do povo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Santificai um jejum",
+    "feedbackCorrect": "Jejuar diante da praga; ouvir a trombeta; confiar no refúgio.",
+    "feedbackWrong": {
+      "default": "Jejuar, alertar, confiar no refúgio."
+    },
+    "hint": "Comece pelo jejum; termine no refúgio.",
+    "learningObjective": "Encadear as respostas da etapa.",
+    "evidence": [
+      "Joel 1:14",
+      "Joel 2:1",
+      "Joel 3:16"
+    ]
+  }
+]

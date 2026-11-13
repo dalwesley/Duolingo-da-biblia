@@ -1,0 +1,4049 @@
+[
+  {
+    "id": "rute-cap-sem-rtc-01-volta-de-moabe-01",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Rute 1:6, o texto inclui Então.",
+    "prompt": "Em Rute 1:6, o texto inclui Então.",
+    "cue": "Em Rute 1:6, o texto inclui Então.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 1:6 afirma.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-01-volta-de-moabe-02",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+    "prompt": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+    "cue": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "preparou"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo destaca Então.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-01-volta-de-moabe-03",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Rute 1:8, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 1:8, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 1:8, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 1:8",
+    "passageText": "Disse Noemi às suas duas noras: \"Vão, voltem cada uma para a casa de sua mãe; e que o Senhor use a Sua benevolência para com vocês, como vocês usaram com os falecidos e comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "O silêncio total sem nenhuma fala"
+      },
+      {
+        "id": "b",
+        "text": "Disse"
+      },
+      {
+        "id": "c",
+        "text": "A proibição de agir no relato"
+      },
+      {
+        "id": "d",
+        "text": "A ausência de qualquer personagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Disse",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 1:8"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-01-volta-de-moabe-04",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Rute 1:7 na ordem do texto.",
+    "prompt": "Monte Rute 1:7 na ordem do texto.",
+    "cue": "Monte Rute 1:7 na ordem do texto.",
+    "verseRef": "Rute 1:7",
+    "passageText": "Então, ela saiu do lugar onde estava, acompanhada por suas duas noras, e, enquanto caminhavam de volta para a terra de Judá,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "lugar onde estava"
+      },
+      {
+        "id": "c",
+        "text": "por suas duas noras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Siga a sequência das frases no versículo."
+    },
+    "hint": "Comece pelo início do versículo.",
+    "learningObjective": "Ordenar o texto do versículo.",
+    "evidence": [
+      "Rute 1:7"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-01-volta-de-moabe-05",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Rute 1:9, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 1:9, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 1:9, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 1:9",
+    "passageText": "O Senhor faça com que cada uma de vocês seja feliz na casa do seu marido. E, ao beijá-las, ela chorou em alta voz.",
+    "template": "O ___ faça com que cada uma de vocês seja feliz na casa do seu marido. E, ao beijá-las, ela chorou em alta voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Senhor"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Senhor",
+    "feedbackCorrect": "A palavra do versículo é Senhor.",
+    "feedbackWrong": {
+      "b": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 1:9"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-01-volta-de-moabe-06",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 1:6 comunica que se liga a este contexto.",
+    "prompt": "O que Rute 1:6 comunica que se liga a este contexto.",
+    "cue": "O que Rute 1:6 comunica que se liga a este contexto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "passageA": {
+      "ref": "Rute 1:6",
+      "text": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cena de Volta de Moabe: o texto acompanha personagens e decisões diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Relato ligado ao contexto"
+      },
+      {
+        "id": "b",
+        "text": "Fuga de toda decisão"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+    "feedbackWrong": {
+      "b": "O texto chama a enfrentar, não a fugir.",
+      "c": "O texto fala no meio da história, não de silêncio vazio."
+    },
+    "hint": "Ligue o versículo ao contexto dado.",
+    "learningObjective": "Conectar versículo e contexto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-01-volta-de-moabe-01",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+    "prompt": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+    "cue": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pois",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 1:6 afirma.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-01-volta-de-moabe-02",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+    "prompt": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+    "cue": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois",
+    "feedbackCorrect": "O versículo destaca pois.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "b": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-01-volta-de-moabe-03",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Segundo Rute 1:9, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 1:9, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 1:9, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 1:9",
+    "passageText": "O Senhor faça com que cada uma de vocês seja feliz na casa do seu marido. E, ao beijá-las, ela chorou em alta voz.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "b",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "c",
+        "text": "Os personagens fogem de toda decisão"
+      },
+      {
+        "id": "d",
+        "text": "O relato mostra uma decisão concreta"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "O Senhor faça com que cada uma de",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "b": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 1:9"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-01-volta-de-moabe-04",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o movimento desta cena.",
+    "prompt": "Como avança o movimento desta cena.",
+    "cue": "Como avança o movimento desta cena.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então ela se preparou com suas"
+      },
+      {
+        "id": "b",
+        "text": "Então ela saiu do lugar onde"
+      },
+      {
+        "id": "c",
+        "text": "Disse noemi às suas duas noras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Reordene conforme o avanço do texto."
+    },
+    "hint": "Pense no começo, meio e fim do trecho.",
+    "learningObjective": "Ordenar os movimentos do texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-01-volta-de-moabe-05",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Rute 1:8, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 1:8, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 1:8, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 1:8",
+    "passageText": "Disse Noemi às suas duas noras: \"Vão, voltem cada uma para a casa de sua mãe; e que o Senhor use a Sua benevolência para com vocês, como vocês usaram com os falecidos e comigo.\"",
+    "template": "___ Noemi às suas duas noras: \"Vão, voltem cada uma para a casa de sua mãe; e que o Senhor use a Sua benevolência para com vocês, como vocês usaram com os falecidos e comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Disse"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Disse",
+    "feedbackCorrect": "A palavra do versículo é Disse.",
+    "feedbackWrong": {
+      "b": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 1:8"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-01-volta-de-moabe-06",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+    "prompt": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+    "cue": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "passageA": {
+      "ref": "Rute 1:6",
+      "text": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 25:5",
+      "text": "Quando irmãos habitarem juntos e um deles morrer sem deixar filhos, a viúva do falecido não se casará com um homem estranho; seu cunhado a tomará, a receberá como esposa e cumprirá a obrigação de cunhado para com ela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dever do resgatador"
+      },
+      {
+        "id": "b",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "b": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-01-volta-de-moabe-01",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O texto permite concluir que Deus está ausente e indiferente.",
+    "prompt": "O texto permite concluir que Deus está ausente e indiferente.",
+    "cue": "O texto permite concluir que Deus está ausente e indiferente.",
+    "verseRef": "Rute 1:15",
+    "passageText": "Disse Noemi: Eis que tua cunhada voltou ao seu povo e aos seus deuses; também você, volta após a sua cunhada.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Disse",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 1:15 afirma.",
+    "evidence": [
+      "Rute 1:15"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-01-volta-de-moabe-02",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Rute 1:11, toque o trecho que sustenta a leitura do texto.",
+    "prompt": "Em Rute 1:11, toque o trecho que sustenta a leitura do texto.",
+    "cue": "Em Rute 1:11, toque o trecho que sustenta a leitura do texto.",
+    "verseRef": "Rute 1:11",
+    "passageText": "Porém Noemi disse: Voltem, minhas filhas! Por que iriam comigo? Tenho eu ainda filhos no ventre, para que lhes sejam por maridos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "Voltem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Noemi",
+    "feedbackCorrect": "O versículo destaca Noemi.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 1:11"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-01-volta-de-moabe-03",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Segundo Rute 1:10, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 1:10, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 1:10, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 1:10",
+    "passageText": "E responderam: \"De fato, iremos com você ao seu povo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os personagens fogem de toda decisão"
+      },
+      {
+        "id": "b",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "c",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "d",
+        "text": "O texto aponta a ação dos personagens"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "b": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 1:10"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-01-volta-de-moabe-04",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do texto.",
+    "prompt": "Qual sequência mostra a lógica do texto.",
+    "cue": "Qual sequência mostra a lógica do texto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cena apresenta a situação"
+      },
+      {
+        "id": "b",
+        "text": "Alguém age ou decide no relato"
+      },
+      {
+        "id": "c",
+        "text": "O trecho chega ao desfecho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela situação do relato."
+    },
+    "hint": "Da situação ao desfecho.",
+    "learningObjective": "Ver o encadeamento do texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-01-volta-de-moabe-05",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Rute 1:10, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 1:10, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 1:10, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 1:10",
+    "passageText": "E responderam: \"De fato, iremos com você ao seu povo.\"",
+    "template": "E ___: \"De fato, iremos com você ao seu povo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "responderam"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "ela"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "responderam",
+    "feedbackCorrect": "A palavra do versículo é responderam.",
+    "feedbackWrong": {
+      "b": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 1:10"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-01-volta-de-moabe-06",
+    "trail": "rute-cap",
+    "section": "rtc-01-volta-de-moabe",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Rute 1:6 a Gênesis 2:24.",
+    "prompt": "O que liga Rute 1:6 a Gênesis 2:24.",
+    "cue": "O que liga Rute 1:6 a Gênesis 2:24.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "passageA": {
+      "ref": "Rute 1:6",
+      "text": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento."
+    },
+    "passageB": {
+      "ref": "Gênesis 2:24",
+      "text": "Portanto, o homem deixará seu pai e sua mãe e se unirá à sua mulher, tornando-se os dois uma só carne."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "b",
+        "text": "Negação de Deus"
+      },
+      {
+        "id": "c",
+        "text": "Unir-se e permanecer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "a": "Os textos não sustentam essa ponte.",
+      "b": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-02-favor-no-campo-01",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Rute 2:13, o texto inclui E.",
+    "prompt": "Em Rute 2:13, o texto inclui E.",
+    "cue": "Em Rute 2:13, o texto inclui E.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 2:13 afirma.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-02-favor-no-campo-02",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Rute 2:13, toque quem ou o quê o versículo destaca.",
+    "prompt": "Em Rute 2:13, toque quem ou o quê o versículo destaca.",
+    "cue": "Em Rute 2:13, toque quem ou o quê o versículo destaca.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ela"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "encontre"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "disse",
+    "feedbackCorrect": "O versículo destaca disse.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-02-favor-no-campo-03",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Rute 2:15, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 2:15, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 2:15, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 2:15",
+    "passageText": "E, levantando-se para colher, Boaz deu ordem aos seus servos, dizendo: \"Deixai-a colher até entre as gavelas, e não a censureis.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "A proibição de agir no relato"
+      },
+      {
+        "id": "b",
+        "text": "O silêncio total sem nenhuma fala"
+      },
+      {
+        "id": "c",
+        "text": "A ausência de qualquer personagem"
+      },
+      {
+        "id": "d",
+        "text": "E"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "b": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 2:15"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-02-favor-no-campo-04",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Rute 2:14 na ordem do texto.",
+    "prompt": "Monte Rute 2:14 na ordem do texto.",
+    "cue": "Monte Rute 2:14 na ordem do texto.",
+    "verseRef": "Rute 2:14",
+    "passageText": "E, já sendo hora de comer, Boaz lhe disse: Achega-te para aqui, e come do pão e molha o teu bocado no vinagre. Ela se assentou ao lado dos segadores, e ele lhe deu grãos tostados de cereais; ela comeu, se fartou e ainda lhe sobejou.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E"
+      },
+      {
+        "id": "b",
+        "text": "de comer"
+      },
+      {
+        "id": "c",
+        "text": "disse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Siga a sequência das frases no versículo."
+    },
+    "hint": "Comece pelo início do versículo.",
+    "learningObjective": "Ordenar o texto do versículo.",
+    "evidence": [
+      "Rute 2:14"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-02-favor-no-campo-05",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Rute 2:16, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 2:16, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 2:16, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 2:16",
+    "passageText": "E deixai cair alguns molhos de espigas e deixai-os para que os apanhe, e não a repreendais.",
+    "template": "E ___ cair alguns molhos de espigas e deixai-os para que os apanhe, e não a repreendais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disse"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "deixai"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "deixai",
+    "feedbackCorrect": "A palavra do versículo é deixai.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "b": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 2:16"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-02-favor-no-campo-06",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 2:13 comunica que se liga a este contexto.",
+    "prompt": "O que Rute 2:13 comunica que se liga a este contexto.",
+    "cue": "O que Rute 2:13 comunica que se liga a este contexto.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "passageA": {
+      "ref": "Rute 2:13",
+      "text": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cena de Favor no campo: o texto acompanha personagens e decisões diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Relato ligado ao contexto"
+      },
+      {
+        "id": "b",
+        "text": "Fuga de toda decisão"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+    "feedbackWrong": {
+      "b": "O texto chama a enfrentar, não a fugir.",
+      "c": "O texto fala no meio da história, não de silêncio vazio."
+    },
+    "hint": "Ligue o versículo ao contexto dado.",
+    "learningObjective": "Conectar versículo e contexto.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-02-favor-no-campo-01",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Rute 2:13, o texto trata as ideias como desconexas, sem ligação.",
+    "prompt": "Em Rute 2:13, o texto trata as ideias como desconexas, sem ligação.",
+    "cue": "Em Rute 2:13, o texto trata as ideias como desconexas, sem ligação.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "pois",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 2:13 afirma.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-02-favor-no-campo-02",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Rute 2:13, toque a palavra que marca a relação no texto.",
+    "prompt": "Em Rute 2:13, toque a palavra que marca a relação no texto.",
+    "cue": "Em Rute 2:13, toque a palavra que marca a relação no texto.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "disse"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois",
+    "feedbackCorrect": "O versículo destaca pois.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "b": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-02-favor-no-campo-03",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Segundo Rute 2:16, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 2:16, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 2:16, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 2:16",
+    "passageText": "E deixai cair alguns molhos de espigas e deixai-os para que os apanhe, e não a repreendais.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Os personagens fogem de toda decisão"
+      },
+      {
+        "id": "b",
+        "text": "O relato mostra uma decisão concreta"
+      },
+      {
+        "id": "c",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "d",
+        "text": "O texto apaga o nome de Deus da cena"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 2:16"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-02-favor-no-campo-04",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o movimento desta cena.",
+    "prompt": "Como avança o movimento desta cena.",
+    "cue": "Como avança o movimento desta cena.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E disse ela que eu encontre"
+      },
+      {
+        "id": "b",
+        "text": "E já sendo hora de comer"
+      },
+      {
+        "id": "c",
+        "text": "E levantando se para colher boaz"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Reordene conforme o avanço do texto."
+    },
+    "hint": "Pense no começo, meio e fim do trecho.",
+    "learningObjective": "Ordenar os movimentos do texto.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-02-favor-no-campo-05",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Rute 2:15, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 2:15, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 2:15, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 2:15",
+    "passageText": "E, levantando-se para colher, Boaz deu ordem aos seus servos, dizendo: \"Deixai-a colher até entre as gavelas, e não a censureis.\"",
+    "template": "E, ___-se para colher, Boaz deu ordem aos seus servos, dizendo: \"Deixai-a colher até entre as gavelas, e não a censureis.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "disse"
+      },
+      {
+        "id": "b",
+        "text": "levantando"
+      },
+      {
+        "id": "c",
+        "text": "ela"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "levantando",
+    "feedbackCorrect": "A palavra do versículo é levantando.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 2:15"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-02-favor-no-campo-06",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Rute 2:13 a Isaías 54:4.",
+    "prompt": "O que liga Rute 2:13 a Isaías 54:4.",
+    "cue": "O que liga Rute 2:13 a Isaías 54:4.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "passageA": {
+      "ref": "Rute 2:13",
+      "text": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas."
+    },
+    "passageB": {
+      "ref": "Isaías 54:4",
+      "text": "Não temas, pois não serás envergonhada; não te envergonhes, pois não sofrerás humilhação; pois te esquecerás da vergonha da tua juventude e não mais te lembrarás do desprezo da tua viuvez."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negação de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Viuvez sem vergonha"
+      },
+      {
+        "id": "c",
+        "text": "Ausência de sentido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "a": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-02-favor-no-campo-01",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O texto permite concluir que Deus está ausente e indiferente.",
+    "prompt": "O texto permite concluir que Deus está ausente e indiferente.",
+    "cue": "O texto permite concluir que Deus está ausente e indiferente.",
+    "verseRef": "Rute 2:20",
+    "passageText": "Então Noemi disse à sua nora: \"Bendito seja o SENHOR, que ainda não se afastou de mostrar sua bondade nem para com os vivos, nem para com os mortos.\" E acrescentou Noemi: \"Este homem é nosso parente chegado e um de nossos resgatadores.\"",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 2:20 afirma.",
+    "evidence": [
+      "Rute 2:20"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-02-favor-no-campo-02",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Rute 2:18, toque o trecho que sustenta a leitura do texto.",
+    "prompt": "Em Rute 2:18, toque o trecho que sustenta a leitura do texto.",
+    "cue": "Em Rute 2:18, toque o trecho que sustenta a leitura do texto.",
+    "verseRef": "Rute 2:18",
+    "passageText": "E ela o levou à cidade; e sua sogra viu o que havia colhido. Também retirou e deu a ela o que sobrou depois de se fartar.",
+    "options": [
+      {
+        "id": "a",
+        "text": "cidade"
+      },
+      {
+        "id": "b",
+        "text": "levou"
+      },
+      {
+        "id": "c",
+        "text": "ela"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "ela",
+    "feedbackCorrect": "O versículo destaca ela.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não é o alvo.",
+      "b": "Essa opção aparece no texto, mas não responde ao pedido."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 2:18"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-02-favor-no-campo-03",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 2:17",
+    "passageText": "E ela permaneceu colhendo naquele campo até o final da tarde; em seguida, debulhou o que havia apanhado e obteve quase um efa de cevada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "b",
+        "text": "O texto aponta a ação dos personagens"
+      },
+      {
+        "id": "c",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "d",
+        "text": "Os personagens fogem de toda decisão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E ela permaneceu colhendo naquele campo até o",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 2:17"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-02-favor-no-campo-04",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do texto.",
+    "prompt": "Qual sequência mostra a lógica do texto.",
+    "cue": "Qual sequência mostra a lógica do texto.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cena apresenta a situação"
+      },
+      {
+        "id": "b",
+        "text": "Alguém age ou decide no relato"
+      },
+      {
+        "id": "c",
+        "text": "O trecho chega ao desfecho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela situação do relato."
+    },
+    "hint": "Da situação ao desfecho.",
+    "learningObjective": "Ver o encadeamento do texto.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-02-favor-no-campo-05",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 2:17",
+    "passageText": "E ela permaneceu colhendo naquele campo até o final da tarde; em seguida, debulhou o que havia apanhado e obteve quase um efa de cevada.",
+    "template": "E ela ___ colhendo naquele campo até o final da tarde; em seguida, debulhou o que havia apanhado e obteve quase um efa de cevada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ela"
+      },
+      {
+        "id": "b",
+        "text": "permaneceu"
+      },
+      {
+        "id": "c",
+        "text": "disse"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "permaneceu",
+    "feedbackCorrect": "A palavra do versículo é permaneceu.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 2:17"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-02-favor-no-campo-06",
+    "trail": "rute-cap",
+    "section": "rtc-02-favor-no-campo",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Rute 2:13 a Provérbios 17:17.",
+    "prompt": "O que liga Rute 2:13 a Provérbios 17:17.",
+    "cue": "O que liga Rute 2:13 a Provérbios 17:17.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "passageA": {
+      "ref": "Rute 2:13",
+      "text": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas."
+    },
+    "passageB": {
+      "ref": "Provérbios 17:17",
+      "text": "Em todo tempo, o amigo ama, e na angústia se faz o irmão."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Amigo fiel em todo tempo"
+      },
+      {
+        "id": "b",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "b": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-03-noite-na-eira-01",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Rute 3:1, o texto inclui E.",
+    "prompt": "Em Rute 3:1, o texto inclui E.",
+    "cue": "Em Rute 3:1, o texto inclui E.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 3:1 afirma.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-03-noite-na-eira-02",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Rute 3:1, toque quem ou o quê o versículo destaca.",
+    "prompt": "Em Rute 3:1, toque quem ou o quê o versículo destaca.",
+    "cue": "Em Rute 3:1, toque quem ou o quê o versículo destaca.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "sua"
+      },
+      {
+        "id": "b",
+        "text": "sogra"
+      },
+      {
+        "id": "c",
+        "text": "Noemi"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Noemi",
+    "feedbackCorrect": "O versículo destaca Noemi.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "b": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-03-noite-na-eira-03",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Rute 3:3, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 3:3, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 3:3, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 3:3",
+    "passageText": "Lave-se, unja-se, vista suas melhores roupas e desça à eira; mas não revele sua presença ao homem até que ele tenha terminado de comer e beber.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O silêncio total sem nenhuma fala"
+      },
+      {
+        "id": "b",
+        "text": "Lave"
+      },
+      {
+        "id": "c",
+        "text": "A proibição de agir no relato"
+      },
+      {
+        "id": "d",
+        "text": "A ausência de qualquer personagem"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Lave",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 3:3"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-03-noite-na-eira-04",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Rute 3:2 na ordem do texto.",
+    "prompt": "Monte Rute 3:2 na ordem do texto.",
+    "cue": "Monte Rute 3:2 na ordem do texto.",
+    "verseRef": "Rute 3:2",
+    "passageText": "Não é Boaz, com quem você esteve entre as servas, um dos nossos parentes? Esta noite, ele estará limpando a cevada na eira.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Não é Boaz"
+      },
+      {
+        "id": "b",
+        "text": "quem você esteve entre"
+      },
+      {
+        "id": "c",
+        "text": "as servas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Não é Boaz",
+    "feedbackCorrect": "Essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Siga a sequência das frases no versículo."
+    },
+    "hint": "Comece pelo início do versículo.",
+    "learningObjective": "Ordenar o texto do versículo.",
+    "evidence": [
+      "Rute 3:2"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-03-noite-na-eira-05",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Rute 3:4, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 3:4, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 3:4, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 3:4",
+    "passageText": "E acontecerá que, quando ele repousar, você notará o lugar onde ele se deita; então, entre, descubra os pés dele e deite-se; ele lhe dirá o que você deve fazer.",
+    "template": "E ___ que, quando ele repousar, você notará o lugar onde ele se deita; então, entre, descubra os pés dele e deite-se; ele lhe dirá o que você deve fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi"
+      },
+      {
+        "id": "b",
+        "text": "sua"
+      },
+      {
+        "id": "c",
+        "text": "acontecerá"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "acontecerá",
+    "feedbackCorrect": "A palavra do versículo é acontecerá.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "b": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 3:4"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-03-noite-na-eira-06",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 3:1 comunica que se liga a este contexto.",
+    "prompt": "O que Rute 3:1 comunica que se liga a este contexto.",
+    "cue": "O que Rute 3:1 comunica que se liga a este contexto.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "passageA": {
+      "ref": "Rute 3:1",
+      "text": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cena de Noite na eira: o texto acompanha personagens e decisões diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Fuga de toda decisão"
+      },
+      {
+        "id": "b",
+        "text": "Relato ligado ao contexto"
+      },
+      {
+        "id": "c",
+        "text": "Silêncio sem Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+    "feedbackWrong": {
+      "a": "O texto chama a enfrentar, não a fugir.",
+      "c": "O texto fala no meio da história, não de silêncio vazio."
+    },
+    "hint": "Ligue o versículo ao contexto dado.",
+    "learningObjective": "Conectar versículo e contexto.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-03-noite-na-eira-01",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Rute 3:1, a palavra para que liga ideias no fluxo do texto.",
+    "prompt": "Em Rute 3:1, a palavra para que liga ideias no fluxo do texto.",
+    "cue": "Em Rute 3:1, a palavra para que liga ideias no fluxo do texto.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 3:1 afirma.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-03-noite-na-eira-02",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Rute 3:1, toque a palavra que marca a relação no texto.",
+    "prompt": "Em Rute 3:1, toque a palavra que marca a relação no texto.",
+    "cue": "Em Rute 3:1, toque a palavra que marca a relação no texto.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "para que"
+      },
+      {
+        "id": "b",
+        "text": "sua"
+      },
+      {
+        "id": "c",
+        "text": "Noemi"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que",
+    "feedbackCorrect": "O versículo destaca para que.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não é o alvo.",
+      "c": "Essa opção aparece no texto, mas não responde ao pedido."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-03-noite-na-eira-03",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Segundo Rute 3:4, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 3:4, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 3:4, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 3:4",
+    "passageText": "E acontecerá que, quando ele repousar, você notará o lugar onde ele se deita; então, entre, descubra os pés dele e deite-se; ele lhe dirá o que você deve fazer.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "b",
+        "text": "O relato mostra uma decisão concreta"
+      },
+      {
+        "id": "c",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "d",
+        "text": "Os personagens fogem de toda decisão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 3:4"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-03-noite-na-eira-04",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o movimento desta cena.",
+    "prompt": "Como avança o movimento desta cena.",
+    "cue": "Como avança o movimento desta cena.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "E noemi sua sogra disse lhe"
+      },
+      {
+        "id": "b",
+        "text": "Não é boaz com quem você"
+      },
+      {
+        "id": "c",
+        "text": "Lave se unja se vista suas"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Reordene conforme o avanço do texto."
+    },
+    "hint": "Pense no começo, meio e fim do trecho.",
+    "learningObjective": "Ordenar os movimentos do texto.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-03-noite-na-eira-05",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Rute 3:3, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 3:3, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 3:3, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 3:3",
+    "passageText": "Lave-se, unja-se, vista suas melhores roupas e desça à eira; mas não revele sua presença ao homem até que ele tenha terminado de comer e beber.",
+    "template": "___-se, unja-se, vista suas melhores roupas e desça à eira; mas não revele sua presença ao homem até que ele tenha terminado de comer e beber.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Noemi"
+      },
+      {
+        "id": "b",
+        "text": "sua"
+      },
+      {
+        "id": "c",
+        "text": "Lave"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Lave",
+    "feedbackCorrect": "A palavra do versículo é Lave.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "b": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 3:3"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-03-noite-na-eira-06",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Rute 3:1 a Deuteronômio 25:5.",
+    "prompt": "O que liga Rute 3:1 a Deuteronômio 25:5.",
+    "cue": "O que liga Rute 3:1 a Deuteronômio 25:5.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "passageA": {
+      "ref": "Rute 3:1",
+      "text": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?"
+    },
+    "passageB": {
+      "ref": "Deuteronômio 25:5",
+      "text": "Quando irmãos habitarem juntos e um deles morrer sem deixar filhos, a viúva do falecido não se casará com um homem estranho; seu cunhado a tomará, a receberá como esposa e cumprirá a obrigação de cunhado para com ela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Negação de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Dever do resgatador"
+      },
+      {
+        "id": "c",
+        "text": "Ausência de sentido"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "a": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-03-noite-na-eira-01",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O texto permite concluir que Deus está ausente e indiferente.",
+    "prompt": "O texto permite concluir que Deus está ausente e indiferente.",
+    "cue": "O texto permite concluir que Deus está ausente e indiferente.",
+    "verseRef": "Rute 3:8",
+    "passageText": "E aconteceu que, à meia-noite, o homem se assustou e sentou-se; e eis que uma mulher estava deitada a seus pés.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 3:8 afirma.",
+    "evidence": [
+      "Rute 3:8"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-03-noite-na-eira-02",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Rute 3:6, toque o trecho que sustenta a leitura do texto.",
+    "prompt": "Em Rute 3:6, toque o trecho que sustenta a leitura do texto.",
+    "cue": "Em Rute 3:6, toque o trecho que sustenta a leitura do texto.",
+    "verseRef": "Rute 3:6",
+    "passageText": "Ela foi à eira e fez conforme tudo o que sua sogra lhe havia orientado.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Ela"
+      },
+      {
+        "id": "b",
+        "text": "eira"
+      },
+      {
+        "id": "c",
+        "text": "fez"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Ela",
+    "feedbackCorrect": "O versículo destaca Ela.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 3:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-03-noite-na-eira-03",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Segundo Rute 3:5, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 3:5, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 3:5, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 3:5",
+    "passageText": "Rute respondeu: Tudo o que você me disser farei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "b",
+        "text": "O texto aponta a ação dos personagens"
+      },
+      {
+        "id": "c",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "d",
+        "text": "Os personagens fogem de toda decisão"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Rute",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 3:5"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-03-noite-na-eira-04",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do texto.",
+    "prompt": "Qual sequência mostra a lógica do texto.",
+    "cue": "Qual sequência mostra a lógica do texto.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cena apresenta a situação"
+      },
+      {
+        "id": "b",
+        "text": "Alguém age ou decide no relato"
+      },
+      {
+        "id": "c",
+        "text": "O trecho chega ao desfecho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela situação do relato."
+    },
+    "hint": "Da situação ao desfecho.",
+    "learningObjective": "Ver o encadeamento do texto.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-03-noite-na-eira-05",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Rute 3:5, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 3:5, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 3:5, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 3:5",
+    "passageText": "Rute respondeu: Tudo o que você me disser farei.",
+    "template": "___ respondeu: Tudo o que você me disser farei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Rute"
+      },
+      {
+        "id": "b",
+        "text": "Noemi"
+      },
+      {
+        "id": "c",
+        "text": "sua"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Rute",
+    "feedbackCorrect": "A palavra do versículo é Rute.",
+    "feedbackWrong": {
+      "b": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 3:5"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-03-noite-na-eira-06",
+    "trail": "rute-cap",
+    "section": "rtc-03-noite-na-eira",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Rute 3:1 a Gênesis 2:24.",
+    "prompt": "O que liga Rute 3:1 a Gênesis 2:24.",
+    "cue": "O que liga Rute 3:1 a Gênesis 2:24.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "passageA": {
+      "ref": "Rute 3:1",
+      "text": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?"
+    },
+    "passageB": {
+      "ref": "Gênesis 2:24",
+      "text": "Portanto, o homem deixará seu pai e sua mãe e se unirá à sua mulher, tornando-se os dois uma só carne."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "b",
+        "text": "Unir-se e permanecer"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "a": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-04-na-porta-da-cidade-01",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Rute 4:1, o texto inclui Então Boaz subiu à porta da cidade e.",
+    "prompt": "Em Rute 4:1, o texto inclui Então Boaz subiu à porta da cidade e.",
+    "cue": "Em Rute 4:1, o texto inclui Então Boaz subiu à porta da cidade e.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Então Boaz subiu à porta da cidade e",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 4:1 afirma.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-04-na-porta-da-cidade-02",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Rute 4:1, toque quem ou o quê o versículo destaca.",
+    "prompt": "Em Rute 4:1, toque quem ou o quê o versículo destaca.",
+    "cue": "Em Rute 4:1, toque quem ou o quê o versículo destaca.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "Boaz"
+      },
+      {
+        "id": "c",
+        "text": "subiu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo destaca Então.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-04-na-porta-da-cidade-03",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Rute 4:3, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 4:3, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 4:3, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 4:3",
+    "passageText": "Então, disse ao redentor: Aquela parte da terra que pertencia a Elimeleque, nosso irmão, Noemi, que retornou da terra dos moabitas, a tem para venda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "A proibição de agir no relato"
+      },
+      {
+        "id": "c",
+        "text": "A ausência de qualquer personagem"
+      },
+      {
+        "id": "d",
+        "text": "O silêncio total sem nenhuma fala"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "b": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 4:3"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-04-na-porta-da-cidade-04",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Rute 4:2 na ordem do texto.",
+    "prompt": "Monte Rute 4:2 na ordem do texto.",
+    "cue": "Monte Rute 4:2 na ordem do texto.",
+    "verseRef": "Rute 4:2",
+    "passageText": "Então, Boaz chamou dez homens dos anciãos da cidade e disse: “Sentem-se aqui.” E eles se assentaram.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "homens dos anciãos"
+      },
+      {
+        "id": "c",
+        "text": "cidade e disse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Siga a sequência das frases no versículo."
+    },
+    "hint": "Comece pelo início do versículo.",
+    "learningObjective": "Ordenar o texto do versículo.",
+    "evidence": [
+      "Rute 4:2"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-04-na-porta-da-cidade-05",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Rute 4:4, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 4:4, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 4:4, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 4:4",
+    "passageText": "E eu disse: Farei saber aos seus ouvidos, dizendo: Compra-a na presença dos habitantes e dos anciãos do meu povo; se você deseja redimi-la, então redima-a; mas se não for redimi-la, declara-me para que eu saiba, pois não há ninguém além de você que a possa redimir, e eu, depois de você. Então ele respondeu: Eu a redimirei.",
+    "template": "E eu ___: Farei saber aos seus ouvidos, dizendo: Compra-a na presença dos habitantes e dos anciãos do meu povo; se você deseja redimi-la, então redima-a; mas se não for redimi-la, declara-me para que eu saiba, pois não há ninguém além de você que a possa redimir, e eu, depois de você. Então ele respondeu: Eu a redimirei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boaz"
+      },
+      {
+        "id": "b",
+        "text": "disse"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "disse",
+    "feedbackCorrect": "A palavra do versículo é disse.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 4:4"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-04-na-porta-da-cidade-06",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 4:1 comunica que se liga a este contexto.",
+    "prompt": "O que Rute 4:1 comunica que se liga a este contexto.",
+    "cue": "O que Rute 4:1 comunica que se liga a este contexto.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "passageA": {
+      "ref": "Rute 4:1",
+      "text": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cena de Na porta da cidade: o texto acompanha personagens e decisões diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Relato ligado ao contexto"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio sem Deus"
+      },
+      {
+        "id": "c",
+        "text": "Fuga de toda decisão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+    "feedbackWrong": {
+      "b": "O texto fala no meio da história, não de silêncio vazio.",
+      "c": "O texto chama a enfrentar, não a fugir."
+    },
+    "hint": "Ligue o versículo ao contexto dado.",
+    "learningObjective": "Conectar versículo e contexto.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-04-na-porta-da-cidade-01",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Rute 4:1, o texto trata as ideias como desconexas, sem ligação.",
+    "prompt": "Em Rute 4:1, o texto trata as ideias como desconexas, sem ligação.",
+    "cue": "Em Rute 4:1, o texto trata as ideias como desconexas, sem ligação.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 4:1 afirma.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-04-na-porta-da-cidade-02",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Rute 4:1, toque a palavra que marca a relação no texto.",
+    "prompt": "Em Rute 4:1, toque a palavra que marca a relação no texto.",
+    "cue": "Em Rute 4:1, toque a palavra que marca a relação no texto.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boaz"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "subiu"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Boaz",
+    "feedbackCorrect": "O versículo destaca Boaz.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-04-na-porta-da-cidade-03",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Segundo Rute 4:4, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 4:4, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 4:4, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 4:4",
+    "passageText": "E eu disse: Farei saber aos seus ouvidos, dizendo: Compra-a na presença dos habitantes e dos anciãos do meu povo; se você deseja redimi-la, então redima-a; mas se não for redimi-la, declara-me para que eu saiba, pois não há ninguém além de você que a possa redimir, e eu, depois de você. Então ele respondeu: Eu a redimirei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "b",
+        "text": "Os personagens fogem de toda decisão"
+      },
+      {
+        "id": "c",
+        "text": "O relato mostra uma decisão concreta"
+      },
+      {
+        "id": "d",
+        "text": "O texto apaga o nome de Deus da cena"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "b": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 4:4"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-04-na-porta-da-cidade-04",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o movimento desta cena.",
+    "prompt": "Como avança o movimento desta cena.",
+    "cue": "Como avança o movimento desta cena.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então boaz subiu à porta"
+      },
+      {
+        "id": "b",
+        "text": "Então boaz chamou dez homens"
+      },
+      {
+        "id": "c",
+        "text": "Então disse ao redentor aquela parte"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Reordene conforme o avanço do texto."
+    },
+    "hint": "Pense no começo, meio e fim do trecho.",
+    "learningObjective": "Ordenar os movimentos do texto.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-04-na-porta-da-cidade-05",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Rute 4:3, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 4:3, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 4:3, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 4:3",
+    "passageText": "Então, disse ao redentor: Aquela parte da terra que pertencia a Elimeleque, nosso irmão, Noemi, que retornou da terra dos moabitas, a tem para venda.",
+    "template": "Então, disse ao ___: Aquela parte da terra que pertencia a Elimeleque, nosso irmão, Noemi, que retornou da terra dos moabitas, a tem para venda.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Boaz"
+      },
+      {
+        "id": "b",
+        "text": "redentor"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "redentor",
+    "feedbackCorrect": "A palavra do versículo é redentor.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 4:3"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-04-na-porta-da-cidade-06",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Rute 4:1 a Mateus 1:5.",
+    "prompt": "O que liga Rute 4:1 a Mateus 1:5.",
+    "cue": "O que liga Rute 4:1 a Mateus 1:5.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "passageA": {
+      "ref": "Rute 4:1",
+      "text": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se."
+    },
+    "passageB": {
+      "ref": "Mateus 1:5",
+      "text": "Salmon gerou de Raabe a Boaz; este, de Rute, gerou a Obede; e Obede gerou a Jessé;"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "b",
+        "text": "Rute na linhagem messiânica"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "a": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-04-na-porta-da-cidade-01",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O texto permite concluir que Deus está ausente e indiferente.",
+    "prompt": "O texto permite concluir que Deus está ausente e indiferente.",
+    "cue": "O texto permite concluir que Deus está ausente e indiferente.",
+    "verseRef": "Rute 4:12",
+    "passageText": "E que a sua casa seja como a casa de Perez, que Tamar teve de Judá, pela descendência que o Senhor lhe der desta jovem.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 4:12 afirma.",
+    "evidence": [
+      "Rute 4:12"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-04-na-porta-da-cidade-02",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Rute 4:6, toque o trecho que sustenta a leitura do texto.",
+    "prompt": "Em Rute 4:6, toque o trecho que sustenta a leitura do texto.",
+    "cue": "Em Rute 4:6, toque o trecho que sustenta a leitura do texto.",
+    "verseRef": "Rute 4:6",
+    "passageText": "Então, disse o resgatador: Não posso redimir para mim, a fim de não prejudicar a minha própria herança. Você redima o que me cabe, pois eu não poderei fazê-lo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "resgatador"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "disse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "resgatador",
+    "feedbackCorrect": "O versículo destaca resgatador.",
+    "feedbackWrong": {
+      "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 4:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-04-na-porta-da-cidade-03",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Segundo Rute 4:5, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 4:5, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 4:5, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 4:5",
+    "passageText": "Disse, porém, Boaz: No dia em que você tomar a terra da mão de Noemi, também a tomará da mão de Rute, a moabita, já viúva, para suscitar o nome do falecido sobre a herança dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "b",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "c",
+        "text": "O texto aponta a ação dos personagens"
+      },
+      {
+        "id": "d",
+        "text": "Os personagens fogem de toda decisão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Disse",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "b": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 4:5"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-04-na-porta-da-cidade-04",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do texto.",
+    "prompt": "Qual sequência mostra a lógica do texto.",
+    "cue": "Qual sequência mostra a lógica do texto.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cena apresenta a situação"
+      },
+      {
+        "id": "b",
+        "text": "Alguém age ou decide no relato"
+      },
+      {
+        "id": "c",
+        "text": "O trecho chega ao desfecho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela situação do relato."
+    },
+    "hint": "Da situação ao desfecho.",
+    "learningObjective": "Ver o encadeamento do texto.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-04-na-porta-da-cidade-05",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Rute 4:5, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 4:5, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 4:5, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 4:5",
+    "passageText": "Disse, porém, Boaz: No dia em que você tomar a terra da mão de Noemi, também a tomará da mão de Rute, a moabita, já viúva, para suscitar o nome do falecido sobre a herança dele.",
+    "template": "Disse, porém, Boaz: No dia em que ___ tomar a terra da mão de Noemi, também a tomará da mão de Rute, a moabita, já viúva, para suscitar o nome do falecido sobre a herança dele.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "você"
+      },
+      {
+        "id": "c",
+        "text": "Boaz"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "você",
+    "feedbackCorrect": "A palavra do versículo é você.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 4:5"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-04-na-porta-da-cidade-06",
+    "trail": "rute-cap",
+    "section": "rtc-04-na-porta-da-cidade",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Rute 4:1 a Salmos 37:3.",
+    "prompt": "O que liga Rute 4:1 a Salmos 37:3.",
+    "cue": "O que liga Rute 4:1 a Salmos 37:3.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "passageA": {
+      "ref": "Rute 4:1",
+      "text": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se."
+    },
+    "passageB": {
+      "ref": "Salmos 37:3",
+      "text": "Confie no Senhor e faça o bem; habite na terra e alimente-se da verdade."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "b",
+        "text": "Confiar e habitar"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "a": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-01",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Rute 1:6, o texto inclui Então.",
+    "prompt": "Em Rute 1:6, o texto inclui Então.",
+    "cue": "Em Rute 1:6, o texto inclui Então.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 1:6 afirma.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-02",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+    "prompt": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+    "cue": "Em Rute 1:6, toque quem ou o quê o versículo destaca.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ela"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "preparou"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo destaca Então.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-03",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Rute 2:13, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 2:13, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 2:13, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "E"
+      },
+      {
+        "id": "b",
+        "text": "O silêncio total sem nenhuma fala"
+      },
+      {
+        "id": "c",
+        "text": "A ausência de qualquer personagem"
+      },
+      {
+        "id": "d",
+        "text": "A proibição de agir no relato"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "b": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-04",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Rute 1:11 na ordem do texto.",
+    "prompt": "Monte Rute 1:11 na ordem do texto.",
+    "cue": "Monte Rute 1:11 na ordem do texto.",
+    "verseRef": "Rute 1:11",
+    "passageText": "Porém Noemi disse: Voltem, minhas filhas! Por que iriam comigo? Tenho eu ainda filhos no ventre, para que lhes sejam por maridos?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Porém Noemi disse"
+      },
+      {
+        "id": "b",
+        "text": "minhas filhas"
+      },
+      {
+        "id": "c",
+        "text": "iriam comigo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Porém Noemi disse",
+    "feedbackCorrect": "Essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Siga a sequência das frases no versículo."
+    },
+    "hint": "Comece pelo início do versículo.",
+    "learningObjective": "Ordenar o texto do versículo.",
+    "evidence": [
+      "Rute 1:11"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-05",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 2:17, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 2:17",
+    "passageText": "E ela permaneceu colhendo naquele campo até o final da tarde; em seguida, debulhou o que havia apanhado e obteve quase um efa de cevada.",
+    "template": "E ela ___ colhendo naquele campo até o final da tarde; em seguida, debulhou o que havia apanhado e obteve quase um efa de cevada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ela"
+      },
+      {
+        "id": "b",
+        "text": "permaneceu"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "permaneceu",
+    "feedbackCorrect": "A palavra do versículo é permaneceu.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "c": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 2:17"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-06",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Rute 1:6 comunica que se liga a este contexto.",
+    "prompt": "O que Rute 1:6 comunica que se liga a este contexto.",
+    "cue": "O que Rute 1:6 comunica que se liga a este contexto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "passageA": {
+      "ref": "Rute 1:6",
+      "text": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "Cena de Travessia: Lealdade e redenção: o texto acompanha personagens e decisões diante de Deus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Relato ligado ao contexto"
+      },
+      {
+        "id": "b",
+        "text": "Silêncio sem Deus"
+      },
+      {
+        "id": "c",
+        "text": "Fuga de toda decisão"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+    "feedbackWrong": {
+      "b": "O texto fala no meio da história, não de silêncio vazio.",
+      "c": "O texto chama a enfrentar, não a fugir."
+    },
+    "hint": "Ligue o versículo ao contexto dado.",
+    "learningObjective": "Conectar versículo e contexto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-07",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Rute 4:1, toque outra palavra central do trecho.",
+    "prompt": "Em Rute 4:1, toque outra palavra central do trecho.",
+    "cue": "Em Rute 4:1, toque outra palavra central do trecho.",
+    "verseRef": "Rute 4:1",
+    "passageText": "Então Boaz subiu à porta da cidade e ali se sentou. Eis que o resgatador de quem Boaz havia falado passou, e ele disse: \"Ó fulano, chega-te para cá e assenta-te.\" Ele se virou e sentou-se.",
+    "options": [
+      {
+        "id": "a",
+        "text": "subiu"
+      },
+      {
+        "id": "b",
+        "text": "Boaz"
+      },
+      {
+        "id": "c",
+        "text": "Então"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Boaz",
+    "feedbackCorrect": "O trecho destaca Boaz.",
+    "feedbackWrong": {
+      "a": "Não é o alvo deste toque.",
+      "c": "Não é o alvo deste toque."
+    },
+    "hint": "Busque outra palavra forte no versículo.",
+    "learningObjective": "Identificar mais um trecho do bloco.",
+    "evidence": [
+      "Rute 4:1"
+    ]
+  },
+  {
+    "id": "rute-cap-sem-rtc-boss-1-08",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Rute 4:10 na ordem correta do texto.",
+    "prompt": "Monte Rute 4:10 na ordem correta do texto.",
+    "cue": "Monte Rute 4:10 na ordem correta do texto.",
+    "verseRef": "Rute 4:10",
+    "passageText": "E também tomo por esposa Rute, a moabita, que era esposa de Malom, para perpetuar o nome do falecido sobre sua herança, para que o nome do falecido não seja exterminado entre seus irmãos e na porta de sua cidade; vocês são hoje testemunhas disso.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esposa Rute"
+      },
+      {
+        "id": "b",
+        "text": "que era esposa"
+      },
+      {
+        "id": "c",
+        "text": "Malom"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "esposa Rute",
+    "feedbackCorrect": "Essa é a ordem do versículo.",
+    "feedbackWrong": {
+      "default": "Siga a sequência do versículo."
+    },
+    "hint": "Comece pelo início.",
+    "learningObjective": "Ordenar outro trecho do bloco.",
+    "evidence": [
+      "Rute 4:10"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-01",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+    "prompt": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+    "cue": "Em Rute 1:6, a palavra pois liga ideias no fluxo do texto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "pois",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "false": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 1:6 afirma.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-02",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+    "prompt": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+    "cue": "Em Rute 1:6, toque a palavra que marca a relação no texto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "pois"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "pois",
+    "feedbackCorrect": "O versículo destaca pois.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "b": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-03",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 2:17, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 2:17",
+    "passageText": "E ela permaneceu colhendo naquele campo até o final da tarde; em seguida, debulhou o que havia apanhado e obteve quase um efa de cevada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "b",
+        "text": "O relato mostra uma decisão concreta"
+      },
+      {
+        "id": "c",
+        "text": "Os personagens fogem de toda decisão"
+      },
+      {
+        "id": "d",
+        "text": "Nada de concreto acontece no trecho"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "c": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 2:17"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-04",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o movimento desta cena.",
+    "prompt": "Como avança o movimento desta cena.",
+    "cue": "Como avança o movimento desta cena.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então ela se preparou com suas"
+      },
+      {
+        "id": "b",
+        "text": "Porém noemi disse voltem minhas filhas"
+      },
+      {
+        "id": "c",
+        "text": "E disse ela que eu encontre"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+    "feedbackWrong": {
+      "default": "Reordene conforme o avanço do texto."
+    },
+    "hint": "Pense no começo, meio e fim do trecho.",
+    "learningObjective": "Ordenar os movimentos do texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-05",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Rute 2:13, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 2:13, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 2:13, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 2:13",
+    "passageText": "E disse ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "template": "E ___ ela: Que eu encontre favor aos teus olhos, meu senhor, pois me trouxeste conforto e falaste ao coração de tua serva, mesmo não sendo eu uma das tuas empregadas.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "disse"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "disse",
+    "feedbackCorrect": "A palavra do versículo é disse.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "b": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 2:13"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-06",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+    "prompt": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+    "cue": "O que liga Rute 1:6 a Deuteronômio 25:5.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "passageA": {
+      "ref": "Rute 1:6",
+      "text": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento."
+    },
+    "passageB": {
+      "ref": "Deuteronômio 25:5",
+      "text": "Quando irmãos habitarem juntos e um deles morrer sem deixar filhos, a viúva do falecido não se casará com um homem estranho; seu cunhado a tomará, a receberá como esposa e cumprirá a obrigação de cunhado para com ela."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Dever do resgatador"
+      },
+      {
+        "id": "b",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "b": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-07",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Rute 4:6, toque outra palavra central do trecho.",
+    "prompt": "Em Rute 4:6, toque outra palavra central do trecho.",
+    "cue": "Em Rute 4:6, toque outra palavra central do trecho.",
+    "verseRef": "Rute 4:6",
+    "passageText": "Então, disse o resgatador: Não posso redimir para mim, a fim de não prejudicar a minha própria herança. Você redima o que me cabe, pois eu não poderei fazê-lo.",
+    "options": [
+      {
+        "id": "a",
+        "text": "resgatador"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "disse"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "resgatador",
+    "feedbackCorrect": "O trecho destaca resgatador.",
+    "feedbackWrong": {
+      "b": "Não é o alvo deste toque.",
+      "c": "Não é o alvo deste toque."
+    },
+    "hint": "Busque outra palavra forte no versículo.",
+    "learningObjective": "Identificar mais um trecho do bloco.",
+    "evidence": [
+      "Rute 4:6"
+    ]
+  },
+  {
+    "id": "rute-cap-cam-rtc-boss-1-08",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Ordene os passos deste trecho do bloco.",
+    "prompt": "Ordene os passos deste trecho do bloco.",
+    "cue": "Ordene os passos deste trecho do bloco.",
+    "verseRef": "Rute 1:7",
+    "passageText": "Então, ela saiu do lugar onde estava, acompanhada por suas duas noras, e, enquanto caminhavam de volta para a terra de Judá,",
+    "options": [
+      {
+        "id": "a",
+        "text": "A tensão do bloco aparece"
+      },
+      {
+        "id": "b",
+        "text": "Alguém decide e age com firmeza"
+      },
+      {
+        "id": "c",
+        "text": "O desfecho do bloco chega"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela tensão do bloco."
+    },
+    "hint": "Da tensão ao desfecho.",
+    "learningObjective": "Ordenar a lógica do bloco.",
+    "evidence": [
+      "Rute 1:7"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-01",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "O texto permite concluir que Deus está ausente e indiferente.",
+    "prompt": "O texto permite concluir que Deus está ausente e indiferente.",
+    "cue": "O texto permite concluir que Deus está ausente e indiferente.",
+    "verseRef": "Rute 1:7",
+    "passageText": "Então, ela saiu do lugar onde estava, acompanhada por suas duas noras, e, enquanto caminhavam de volta para a terra de Judá,",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+    "feedbackWrong": {
+      "true": "Releia o versículo, o texto aponta outra direção."
+    },
+    "hint": "Olhe com atenção as palavras do versículo.",
+    "learningObjective": "Observar o que Rute 1:7 afirma.",
+    "evidence": [
+      "Rute 1:7"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-02",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Rute 3:5, toque o trecho que sustenta a leitura do texto.",
+    "prompt": "Em Rute 3:5, toque o trecho que sustenta a leitura do texto.",
+    "cue": "Em Rute 3:5, toque o trecho que sustenta a leitura do texto.",
+    "verseRef": "Rute 3:5",
+    "passageText": "Rute respondeu: Tudo o que você me disser farei.",
+    "options": [
+      {
+        "id": "a",
+        "text": "respondeu"
+      },
+      {
+        "id": "b",
+        "text": "Rute"
+      },
+      {
+        "id": "c",
+        "text": "Tudo"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Rute",
+    "feedbackCorrect": "O versículo destaca Rute.",
+    "feedbackWrong": {
+      "a": "Essa opção aparece no texto, mas não responde ao pedido.",
+      "c": "Essa opção aparece no texto, mas não é o alvo."
+    },
+    "hint": "Procure no versículo a palavra pedida.",
+    "learningObjective": "Identificar o trecho no versículo.",
+    "evidence": [
+      "Rute 3:5"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-03",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Segundo Rute 3:1, o que o texto apresenta com clareza.",
+    "prompt": "Segundo Rute 3:1, o que o texto apresenta com clareza.",
+    "cue": "Segundo Rute 3:1, o que o texto apresenta com clareza.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Nada de concreto acontece no trecho"
+      },
+      {
+        "id": "b",
+        "text": "O texto apaga o nome de Deus da cena"
+      },
+      {
+        "id": "c",
+        "text": "O texto aponta a ação dos personagens"
+      },
+      {
+        "id": "d",
+        "text": "Os personagens fogem de toda decisão"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "E",
+    "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+    "feedbackWrong": {
+      "a": "O texto não sustenta essa leitura.",
+      "b": "O texto não sustenta essa leitura.",
+      "d": "O texto não sustenta essa leitura."
+    },
+    "hint": "Volte às palavras concretas do versículo.",
+    "learningObjective": "Escolher o que o texto afirma.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-04",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra a lógica do texto.",
+    "prompt": "Qual sequência mostra a lógica do texto.",
+    "cue": "Qual sequência mostra a lógica do texto.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A cena apresenta a situação"
+      },
+      {
+        "id": "b",
+        "text": "Alguém age ou decide no relato"
+      },
+      {
+        "id": "c",
+        "text": "O trecho chega ao desfecho"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela situação do relato."
+    },
+    "hint": "Da situação ao desfecho.",
+    "learningObjective": "Ver o encadeamento do texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-05",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Rute 3:1, complete a palavra que o texto usa com peso.",
+    "prompt": "Em Rute 3:1, complete a palavra que o texto usa com peso.",
+    "cue": "Em Rute 3:1, complete a palavra que o texto usa com peso.",
+    "verseRef": "Rute 3:1",
+    "passageText": "E Noemi, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "template": "E ___, sua sogra, disse-lhe: Minha filha, não hei de eu buscar um lar para você, para que você possa ser feliz?",
+    "options": [
+      {
+        "id": "a",
+        "text": "ela"
+      },
+      {
+        "id": "b",
+        "text": "Então"
+      },
+      {
+        "id": "c",
+        "text": "Noemi"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "Noemi",
+    "feedbackCorrect": "A palavra do versículo é Noemi.",
+    "feedbackWrong": {
+      "a": "Essa palavra não é a que o versículo usa aqui.",
+      "b": "Essa palavra não é a que o versículo usa aqui."
+    },
+    "hint": "Lembre a palavra concreta do versículo.",
+    "learningObjective": "Recordar a palavra-chave do trecho.",
+    "evidence": [
+      "Rute 3:1"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-06",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Rute 1:6 a Gênesis 2:24.",
+    "prompt": "O que liga Rute 1:6 a Gênesis 2:24.",
+    "cue": "O que liga Rute 1:6 a Gênesis 2:24.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "passageA": {
+      "ref": "Rute 1:6",
+      "text": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento."
+    },
+    "passageB": {
+      "ref": "Gênesis 2:24",
+      "text": "Portanto, o homem deixará seu pai e sua mãe e se unirá à sua mulher, tornando-se os dois uma só carne."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Unir-se e permanecer"
+      },
+      {
+        "id": "b",
+        "text": "Ausência de sentido"
+      },
+      {
+        "id": "c",
+        "text": "Negação de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "Então",
+    "feedbackCorrect": "A ponte entre os textos é esse tema.",
+    "feedbackWrong": {
+      "b": "Os textos não sustentam essa ponte.",
+      "c": "Os textos não sustentam essa ponte."
+    },
+    "hint": "Nomeie a ponte em poucas palavras.",
+    "learningObjective": "Ligar o texto a outro texto.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-07",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Rute 1:6, toque outra palavra central do trecho.",
+    "prompt": "Em Rute 1:6, toque outra palavra central do trecho.",
+    "cue": "Em Rute 1:6, toque outra palavra central do trecho.",
+    "verseRef": "Rute 1:6",
+    "passageText": "Então, ela se preparou com suas noras e voltou da terra de Moabe, pois ouviu que o Senhor se lembrara do seu povo, dando-lhe alimento.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Então"
+      },
+      {
+        "id": "b",
+        "text": "ela"
+      },
+      {
+        "id": "c",
+        "text": "se"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ela",
+    "feedbackCorrect": "O trecho destaca ela.",
+    "feedbackWrong": {
+      "a": "Não é o alvo deste toque.",
+      "c": "Não é o alvo deste toque."
+    },
+    "hint": "Busque outra palavra forte no versículo.",
+    "learningObjective": "Identificar mais um trecho do bloco.",
+    "evidence": [
+      "Rute 1:6"
+    ]
+  },
+  {
+    "id": "rute-cap-pro-rtc-boss-1-08",
+    "trail": "rute-cap",
+    "section": "rtc-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Encadeie a lógica deste trecho do bloco.",
+    "prompt": "Encadeie a lógica deste trecho do bloco.",
+    "cue": "Encadeie a lógica deste trecho do bloco.",
+    "verseRef": "Rute 1:8",
+    "passageText": "Disse Noemi às suas duas noras: \"Vão, voltem cada uma para a casa de sua mãe; e que o Senhor use a Sua benevolência para com vocês, como vocês usaram com os falecidos e comigo.\"",
+    "options": [
+      {
+        "id": "a",
+        "text": "O risco ou o desafio se mostra"
+      },
+      {
+        "id": "b",
+        "text": "A resposta fiel entra em cena"
+      },
+      {
+        "id": "c",
+        "text": "O plano chega ao seu termo"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Disse",
+    "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+    "feedbackWrong": {
+      "default": "Comece pela tensão do bloco."
+    },
+    "hint": "Da tensão ao desfecho.",
+    "learningObjective": "Ordenar a lógica do bloco.",
+    "evidence": [
+      "Rute 1:8"
+    ]
+  }
+]

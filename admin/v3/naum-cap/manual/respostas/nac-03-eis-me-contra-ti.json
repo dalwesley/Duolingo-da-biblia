@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Naum 3:5–10",
+    "passages": [
+      { "ref": "Naum 3:5–10" },
+      { "ref": "Naum 3:11–12" }
+    ],
+    "context": "O Senhor se declara contra Nínive por causa da violência e da humilhação que ela impôs. Até No-Amon, cidade forte, caiu; Nínive não será exceção.",
+    "keyword": "humilhação",
+    "keywordGloss": "Exposição pública da vergonha de quem oprimiu as nações.",
+    "focusQuestion": "Onde a confiança em força ou alianças precisa ceder ao juízo do Senhor?",
+    "reflectionPrompts": [
+      "Contra a opressora",
+      "Vergonha pública",
+      "Fortalezas que caem"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor dos Exércitos declara estar contra Nínive.",
+        "evidenceRef": "Naum 3:5",
+        "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos"
+      },
+      {
+        "text": "Ele mostrará às nações a nudez e aos reinos a humilhação dela.",
+        "evidenceRef": "Naum 3:5",
+        "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação"
+      },
+      {
+        "text": "Quem a vir fugirá e dirá que Nínive está destruída.",
+        "evidenceRef": "Naum 3:7",
+        "evidenceSpan": "Nínive está destruída! Quem terá compaixão dela?"
+      },
+      {
+        "text": "No-Amon tinha o mar como fortaleza e muralhas.",
+        "evidenceRef": "Naum 3:8",
+        "evidenceSpan": "tendo o mar como fortaleza e suas muralhas também sendo o mar"
+      },
+      {
+        "text": "No entanto, No-Amon foi levada ao exílio.",
+        "evidenceRef": "Naum 3:10",
+        "evidenceSpan": "No entanto, foi levada ao exílio"
+      },
+      {
+        "text": "As fortalezas de Nínive serão como figos precoces que caem.",
+        "evidenceRef": "Naum 3:12",
+        "evidenceSpan": "serão como figueiras com figos precoces"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "humilhação",
+        "gloss": "Exposição pública da vergonha diante das nações."
+      },
+      {
+        "term": "exílio",
+        "gloss": "Destino de No-Amon, aviso do que espera Nínive."
+      },
+      {
+        "term": "fortalezas",
+        "gloss": "Defesas que, no juízo, caem com facilidade."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O Senhor se declara contra Nínive",
+        "evidenceRef": "Naum 3:5–6"
+      },
+      {
+        "label": "Ninguém tem compaixão da cidade",
+        "evidenceRef": "Naum 3:7"
+      },
+      {
+        "label": "Comparação com a queda de No-Amon",
+        "evidenceRef": "Naum 3:8–10"
+      },
+      {
+        "label": "Fortalezas frágeis como figos",
+        "evidenceRef": "Naum 3:11–12"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Porque o Senhor está contra ela, a nudez e a humilhação serão mostradas.",
+        "marker": null,
+        "evidenceRef": "Naum 3:5"
+      },
+      {
+        "kind": "contraste",
+        "text": "No-Amon era forte entre águas; no entanto, foi ao exílio.",
+        "marker": "No entanto",
+        "evidenceRef": "Naum 3:10"
+      },
+      {
+        "kind": "resultado",
+        "text": "Como No-Amon caiu, Nínive também buscará refúgio contra o inimigo.",
+        "marker": "também",
+        "evidenceRef": "Naum 3:11"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 50:31",
+        "bridge": "Eis que estou contra você"
+      },
+      {
+        "ref": "Provérbios 16:18",
+        "bridge": "Soberba precede a ruína"
+      },
+      {
+        "ref": "Habacuque 2:8",
+        "bridge": "Quem despoja será despojado"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Nínive é melhor e mais segura que No-Amon, então não cairá.",
+        "why": "3:8 pergunta se ela é melhor; 3:10–11 mostra que também cairá."
+      },
+      {
+        "text": "O Senhor só repreende em privado, sem exposição pública.",
+        "why": "3:5 diz que mostrará às nações a nudez e aos reinos a humilhação."
+      },
+      {
+        "text": "As fortalezas de Nínive são inabaláveis.",
+        "why": "3:12 compara as fortalezas a figos precoces que caem ao serem sacudidos."
+      }
+    ],
+    "centralInsight": "Quem oprime as nações encontra vergonha pública diante do Senhor.",
+    "anchorQuestion": "Segundo Naum 3:5, o que o Senhor mostrará às nações e aos reinos?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Naum 3:5, o SENHOR dos Exércitos declara estar contra Nínive.",
+      "verseRef": "Naum 3:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+      "feedbackCorrect": "O versículo abre com a declaração: estou contra você.",
+      "feedbackWrong": {
+        "false": "Releia 3:5: Eis que estou contra você, diz o SENHOR."
+      },
+      "hint": "Veja a declaração no começo do versículo.",
+      "learningObjective": "Observar a declaração do Senhor contra Nínive.",
+      "evidence": ["Naum 3:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Naum 3:5, toque o que o Senhor mostrará aos reinos.",
+      "verseRef": "Naum 3:5",
+      "options": [
+        { "id": "a", "text": "humilhação" },
+        { "id": "b", "text": "nações" },
+        { "id": "c", "text": "vestes" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "aos reinos a sua humilhação",
+      "feedbackCorrect": "Aos reinos ele mostra a humilhação dela.",
+      "feedbackWrong": {
+        "b": "As nações recebem a nudez; aos reinos é a humilhação.",
+        "c": "As vestes são levantadas; o que se mostra aos reinos é a humilhação."
+      },
+      "hint": "Leia o fim do versículo, depois de \"reinos\".",
+      "learningObjective": "Identificar o que é mostrado aos reinos.",
+      "evidence": ["Naum 3:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Naum 3:7, o que dirão os que virem Nínive?",
+      "verseRef": "Naum 3:7",
+      "options": [
+        { "id": "a", "text": "Que Nínive está destruída" },
+        { "id": "b", "text": "Que Nínive ainda reina em paz" },
+        { "id": "c", "text": "Que todos terão compaixão dela" },
+        { "id": "d", "text": "Que suas muralhas nunca caem" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Nínive está destruída! Quem terá compaixão dela?",
+      "feedbackCorrect": "Quem a vir fugirá e dirá: Nínive está destruída.",
+      "feedbackWrong": {
+        "b": "O texto anuncia destruição, não reinado em paz.",
+        "c": "A pergunta é: quem terá compaixão dela?",
+        "d": "O trecho fala de destruição, não de muralhas intactas."
+      },
+      "hint": "Veja a frase que os observadores pronunciam.",
+      "learningObjective": "Observar a reação diante de Nínive destruída.",
+      "evidence": ["Naum 3:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Naum 3:6 na ordem do texto.",
+      "verseRef": "Naum 3:6",
+      "options": [
+        { "id": "a", "text": "Lançarei sobre você imundícias" },
+        { "id": "b", "text": "te tratarei com desprezo" },
+        { "id": "c", "text": "e te porei como um espetáculo" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Lançarei sobre você imundícias, te tratarei com desprezo",
+      "feedbackCorrect": "Imundícias, desprezo e espetáculo: a exposição pública avança.",
+      "feedbackWrong": {
+        "default": "Comece pelo lançar imundícias; o espetáculo fecha."
+      },
+      "hint": "O versículo começa com \"Lançarei\".",
+      "learningObjective": "Reconhecer a sequência de 3:6.",
+      "evidence": ["Naum 3:6"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Naum 3:10, para onde No-Amon foi levada?",
+      "verseRef": "Naum 3:10",
+      "options": [
+        { "id": "a", "text": "vitória" },
+        { "id": "b", "text": "exílio" },
+        { "id": "c", "text": "trono" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "No entanto, foi levada ao exílio",
+      "feedbackCorrect": "Apesar da força, foi levada ao exílio.",
+      "feedbackWrong": {
+        "a": "O texto não fala de vitória; fala de exílio.",
+        "c": "Não há trono no fim; há exílio e grilhões."
+      },
+      "hint": "É o destino depois de \"foi levada ao\".",
+      "learningObjective": "Lembrar o destino de No-Amon.",
+      "evidence": ["Naum 3:10"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Naum 3:5 comunica que se liga a este contexto?",
+      "verseRef": "Naum 3:5",
+      "passageA": { "ref": "Naum 3:5" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "O Senhor confronta Nínive com vergonha pública diante das nações."
+      },
+      "options": [
+        { "id": "a", "text": "Exposição pública da opressora" },
+        { "id": "b", "text": "Proteção secreta de Nínive" },
+        { "id": "c", "text": "Louvor das nações a Nínive" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
+      "feedbackCorrect": "O juízo não é privado: nudez e humilhação diante das nações.",
+      "feedbackWrong": {
+        "b": "O texto mostra exposição, não proteção secreta.",
+        "c": "As nações veem a humilhação, não louvam a cidade."
+      },
+      "hint": "Veja o que será mostrado às nações.",
+      "learningObjective": "Ligar o confronto à exposição pública.",
+      "evidence": ["Naum 3:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Naum 3:8–10, No-Amon era forte entre águas e, por isso, nunca foi levada ao exílio.",
+      "verseRef": "Naum 3:10",
+      "correctOptionId": "false",
+      "evidenceSpan": "No entanto, foi levada ao exílio",
+      "feedbackCorrect": "A força entre águas não impediu o exílio: \"no entanto\" marca a queda.",
+      "feedbackWrong": {
+        "true": "Releia 3:10: no entanto, foi levada ao exílio."
+      },
+      "hint": "Repare na expressão que muda o rumo após a força.",
+      "learningObjective": "Compreender o contraste entre força e exílio.",
+      "evidence": ["Naum 3:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Naum 3:10, toque a expressão que marca o contraste após a força de No-Amon.",
+      "verseRef": "Naum 3:10",
+      "options": [
+        { "id": "a", "text": "No entanto" },
+        { "id": "b", "text": "filhos" },
+        { "id": "c", "text": "grilhões" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "No entanto, foi levada ao exílio",
+      "feedbackCorrect": "\"No entanto\" vira a página: força não impediu o exílio.",
+      "feedbackWrong": {
+        "b": "\"Filhos\" descreve a violência; o contraste está no início.",
+        "c": "\"Grilhões\" é o resultado; o marcador vem antes."
+      },
+      "hint": "Procure a expressão no começo do versículo.",
+      "learningObjective": "Reconhecer o marcador de contraste em 3:10.",
+      "evidence": ["Naum 3:10"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Naum 3:8–11 relaciona No-Amon e Nínive?",
+      "verseRef": "Naum 3:11",
+      "options": [
+        { "id": "a", "text": "Como No-Amon caiu, Nínive também buscará refúgio" },
+        { "id": "b", "text": "Nínive é isenta porque é melhor que No-Amon" },
+        { "id": "c", "text": "No-Amon caiu, mas Nínive nunca cairá" },
+        { "id": "d", "text": "As duas cidades são salvas pelas águas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Você também ficará embriagada e se esconderá",
+      "feedbackCorrect": "O \"também\" aplica a Nínive o destino que já alcançou No-Amon.",
+      "feedbackWrong": {
+        "b": "A pergunta de 3:8 desafia a ideia de ser melhor.",
+        "c": "3:11 aplica o mesmo destino a Nínive.",
+        "d": "As águas não salvaram No-Amon do exílio."
+      },
+      "hint": "Veja a palavra \"também\" em 3:11.",
+      "learningObjective": "Relacionar a queda de No-Amon ao destino de Nínive.",
+      "evidence": ["Naum 3:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move o argumento em Naum 3:5–12?",
+      "verseRef": "Naum 3:5–6",
+      "options": [
+        { "id": "a", "text": "O Senhor se declara contra Nínive" },
+        { "id": "b", "text": "Compara Nínive à queda de No-Amon" },
+        { "id": "c", "text": "Anuncia fortalezas frágeis como figos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+      "feedbackCorrect": "Confronto, comparação histórica e fragilidade final.",
+      "feedbackWrong": {
+        "default": "Comece pelo \"contra você\"; os figos fecham."
+      },
+      "hint": "A declaração contra Nínive vem primeiro.",
+      "learningObjective": "Compreender o avanço do argumento do juízo.",
+      "evidence": ["Naum 3:5–6"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Naum 3:11, que palavra aplica a Nínive o destino já visto em No-Amon?",
+      "verseRef": "Naum 3:11",
+      "options": [
+        { "id": "a", "text": "nunca" },
+        { "id": "b", "text": "também" },
+        { "id": "c", "text": "apenas" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Você também ficará embriagada e se esconderá",
+      "feedbackCorrect": "\"Também\" liga o destino de No-Amon ao de Nínive.",
+      "feedbackWrong": {
+        "a": "O texto não isenta Nínive; aplica o mesmo destino.",
+        "c": "Não há restrição; o \"também\" amplia o juízo."
+      },
+      "hint": "É a palavra logo após \"Você\".",
+      "learningObjective": "Lembrar a palavra que aplica o juízo a Nínive.",
+      "evidence": ["Naum 3:11"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Naum 3:5 a Jeremias 50:31?",
+      "verseRef": "Naum 3:5",
+      "passageA": { "ref": "Naum 3:5" },
+      "passageB": { "ref": "Jeremias 50:31" },
+      "options": [
+        { "id": "a", "text": "Eis que estou contra você" },
+        { "id": "b", "text": "Promessa de paz à cidade" },
+        { "id": "c", "text": "Louvor à soberba humana" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+      "feedbackCorrect": "Nos dois textos, o Senhor se declara contra a cidade orgulhosa.",
+      "feedbackWrong": {
+        "b": "Ambos anunciam confronto, não paz.",
+        "c": "O alvo é a soberba, não o louvor a ela."
+      },
+      "hint": "Compare a fórmula de abertura dos dois versículos.",
+      "learningObjective": "Relacionar a declaração contra Nínive a Jeremias.",
+      "evidence": ["Naum 3:5", "Jeremias 50:31"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Naum 3:5–12, o juízo do Senhor expõe publicamente a opressora diante das nações.",
+      "verseRef": "Naum 3:5",
+      "correctOptionId": "true",
+      "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
+      "feedbackCorrect": "A vergonha é pública: nações e reinos veem a humilhação.",
+      "feedbackWrong": {
+        "false": "Releia 3:5: ele mostrará às nações a nudez e a humilhação."
+      },
+      "hint": "Veja para quem a nudez e a humilhação são mostradas.",
+      "learningObjective": "Interpretar o juízo como exposição pública.",
+      "evidence": ["Naum 3:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Naum 3:12, toque o trecho que mostra a fragilidade das fortalezas.",
+      "verseRef": "Naum 3:12",
+      "options": [
+        { "id": "a", "text": "figos precoces" },
+        { "id": "b", "text": "fortalezas" },
+        { "id": "c", "text": "boca do" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serão como figueiras com figos precoces",
+      "feedbackCorrect": "As fortalezas caem como figos precoces ao serem sacudidos.",
+      "feedbackWrong": {
+        "b": "\"Fortalezas\" é o que se compara; a imagem da fragilidade vem depois.",
+        "c": "\"Boca\" é o destino dos figos; a fragilidade está na imagem."
+      },
+      "hint": "Procure a comparação depois de \"como\".",
+      "learningObjective": "Sustentar com o texto a fragilidade das defesas.",
+      "evidence": ["Naum 3:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Naum 3:5–12 sustenta sobre quem oprime as nações?",
+      "verseRef": "Naum 3:5",
+      "options": [
+        { "id": "a", "text": "Encontra vergonha pública diante do Senhor" },
+        { "id": "b", "text": "Fica protegida para sempre por suas águas" },
+        { "id": "c", "text": "Recebe louvor das nações que oprimiu" },
+        { "id": "d", "text": "É isenta se for maior que No-Amon" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mostrarei às nações a sua nudez e aos reinos a sua humilhação",
+      "feedbackCorrect": "O Senhor expõe a opressora: nudez e humilhação diante das nações.",
+      "feedbackWrong": {
+        "b": "Nem No-Amon foi salva pelas águas.",
+        "c": "As nações veem a destruição, não louvam.",
+        "d": "O texto aplica a Nínive o mesmo destino de No-Amon."
+      },
+      "hint": "Ligue a declaração \"contra você\" ao que é mostrado.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre a opressão.",
+      "evidence": ["Naum 3:5"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o juízo sobre a soberba na Escritura?",
+      "verseRef": "Naum 3:5",
+      "options": [
+        { "id": "a", "text": "Naum expõe a humilhação da opressora" },
+        { "id": "b", "text": "Provérbios diz que a soberba precede a ruína" },
+        { "id": "c", "text": "Habacuque diz que quem despoja será despojado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "aos reinos a sua humilhação",
+      "evidence": ["Naum 3:5", "Provérbios 16:18", "Habacuque 2:8"],
+      "feedbackCorrect": "A exposição de Nínive ecoa o princípio: soberba e violência voltam contra si.",
+      "feedbackWrong": {
+        "default": "Siga: Naum 3:5, Provérbios 16:18 e Habacuque 2:8."
+      },
+      "hint": "Parta de Naum e avance na Escritura.",
+      "learningObjective": "Ver o juízo de Nínive no fio da soberba e da violência."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Naum 3:12, que palavra nomeia as defesas comparadas a figueiras?",
+      "verseRef": "Naum 3:12",
+      "options": [
+        { "id": "a", "text": "exércitos" },
+        { "id": "b", "text": "fortalezas" },
+        { "id": "c", "text": "tesouros" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Todas as suas fortalezas serão como figueiras com figos precoces",
+      "feedbackCorrect": "As fortalezas, símbolo de segurança, caem como figos maduros cedo.",
+      "feedbackWrong": {
+        "a": "O texto fala de fortalezas, não de exércitos aqui.",
+        "c": "Tesouros aparecem em outro capítulo; aqui são as fortalezas."
+      },
+      "hint": "É o substantivo sujeito da comparação.",
+      "learningObjective": "Lembrar o termo que carrega a fragilidade das defesas.",
+      "evidence": ["Naum 3:12"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Naum 3:5 a Habacuque 2:8?",
+      "verseRef": "Naum 3:5",
+      "passageA": { "ref": "Naum 3:5" },
+      "passageB": { "ref": "Habacuque 2:8" },
+      "options": [
+        { "id": "a", "text": "Quem despoja será despojado" },
+        { "id": "b", "text": "A violência fica sem resposta" },
+        { "id": "c", "text": "A opressora é exaltada para sempre" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eis que estou contra você, diz o SENHOR dos Exércitos",
+      "feedbackCorrect": "A cidade que oprimiu encontra o Senhor contra si: o despojo volta.",
+      "feedbackWrong": {
+        "b": "Os dois textos mostram juízo, não silêncio.",
+        "c": "O destino é humilhação, não exaltação eterna."
+      },
+      "hint": "Compare o destino de quem pratica violência.",
+      "learningObjective": "Ligar a exposição de Nínive ao princípio de Habacuque.",
+      "evidence": ["Naum 3:5", "Habacuque 2:8"]
+    }
+  ]
+}

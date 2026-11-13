@@ -1,0 +1,714 @@
+{
+  "study": {
+    "passageRef": "Gênesis 50:15–20",
+    "passages": [
+      {
+        "ref": "Gênesis 50:15–20"
+      },
+      {
+        "ref": "Gênesis 50:21"
+      }
+    ],
+    "context": "Os irmãos temem depois da morte do pai; José chora e fala de perdão.",
+    "keyword": "Deus",
+    "keywordGloss": "Palavra que carrega o sentido desta cena.",
+    "focusQuestion": "O que este trecho pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Vós pensastes mal",
+      "Confiança",
+      "Obediência"
+    ],
+    "facts": [
+      {
+        "text": "Vendo irmãos josé pai era morto.",
+        "evidenceRef": "Gênesis 50:15",
+        "evidenceSpan": "Vendo os irmãos de José que seu pai"
+      },
+      {
+        "text": "Enviaram josé dizendo 'teu pai ordenou.",
+        "evidenceRef": "Gênesis 50:16",
+        "evidenceSpan": "E enviaram a José"
+      },
+      {
+        "text": "Direis josé perdoa transgressão teus irmãos.",
+        "evidenceRef": "Gênesis 50:17",
+        "evidenceSpan": "a transgressão de teus irmãos e o seu"
+      },
+      {
+        "text": "Irmãos vieram prostraram diante dizendo estamos.",
+        "evidenceRef": "Gênesis 50:18",
+        "evidenceSpan": "seus irmãos vieram e se prostraram diante dele"
+      },
+      {
+        "text": "José respondeu temam acaso estou eu.",
+        "evidenceRef": "Gênesis 50:19",
+        "evidenceSpan": "acaso estou eu no lugar de Deus"
+      },
+      {
+        "text": "Vocês verdade intentaram mal contra mim.",
+        "evidenceRef": "Gênesis 50:20",
+        "evidenceSpan": "que se conservem muitos em vida"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Deus",
+        "gloss": "Palavra que carrega o sentido desta cena."
+      },
+      {
+        "term": "Vendo",
+        "gloss": "Termo literal do trecho desta cena."
+      },
+      {
+        "term": "irmãos",
+        "gloss": "Termo literal do trecho desta cena."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Vendo irmãos josé pai era",
+        "evidenceRef": "Gênesis 50:15"
+      },
+      {
+        "label": "Enviaram josé dizendo 'teu pai",
+        "evidenceRef": "Gênesis 50:16"
+      },
+      {
+        "label": "Direis josé perdoa transgressão teus",
+        "evidenceRef": "Gênesis 50:17"
+      },
+      {
+        "label": "Irmãos vieram prostraram diante dizendo",
+        "evidenceRef": "Gênesis 50:18"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "sequência",
+        "text": "O marcador \"antes\" liga o fluxo do relato neste versículo.",
+        "marker": "antes",
+        "evidenceRef": "Gênesis 50:16"
+      },
+      {
+        "kind": "causa",
+        "text": "O marcador \"pois\" liga o fluxo do relato neste versículo.",
+        "marker": "pois",
+        "evidenceRef": "Gênesis 50:17"
+      },
+      {
+        "kind": "resultado",
+        "text": "O marcador \"Então\" liga o fluxo do relato neste versículo.",
+        "marker": "Então",
+        "evidenceRef": "Gênesis 50:18"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 50:20",
+        "bridge": "Deus tornou em bem"
+      },
+      {
+        "ref": "Gênesis 45:8",
+        "bridge": "Deus enviou José"
+      },
+      {
+        "ref": "Gênesis 32:28",
+        "bridge": "Nome Israel"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus está ausente e o texto só registra acaso humano.",
+        "why": "O relato nomeia a ação ou a palavra de Deus no trecho."
+      },
+      {
+        "text": "O trecho autoriza qualquer conduta sem juízo moral.",
+        "why": "As ações humanas são narradas com consequências claras."
+      },
+      {
+        "text": "A promessa de Deus falhou e o texto admite derrota final.",
+        "why": "O mal que os irmãos pensaram, Deus o tornou em bem para salvar muita gente."
+      }
+    ],
+    "centralInsight": "O mal que os irmãos pensaram, Deus o tornou em bem para salvar muita gente.",
+    "anchorQuestion": "O que Gênesis 50:15 destaca nesta cena?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Segundo Gênesis 50:15, vendo os irmãos de José que seu pai.",
+      "verseRef": "Gênesis 50:15",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vendo os irmãos de José que seu pai",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 50:15 afirma.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Gênesis 50:15, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Gênesis 50:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendo"
+        },
+        {
+          "id": "b",
+          "text": "irmãos"
+        },
+        {
+          "id": "c",
+          "text": "José"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vendo",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Gênesis 50:17, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 50:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Há direis josé perdoa transgressão no relato"
+        },
+        {
+          "id": "b",
+          "text": "O relato omite qualquer personagem"
+        },
+        {
+          "id": "c",
+          "text": "Nada acontece neste versículo"
+        },
+        {
+          "id": "d",
+          "text": "O texto só lista números sem ação"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Assim direis a José",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 50:17"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Gênesis 50:15 na ordem do texto.",
+      "verseRef": "Gênesis 50:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendo os irmãos"
+        },
+        {
+          "id": "b",
+          "text": "de José"
+        },
+        {
+          "id": "c",
+          "text": "que seu pai"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vendo os irmãos",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Gênesis 50:15, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 50:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "irmãos"
+        },
+        {
+          "id": "b",
+          "text": "Vendo"
+        },
+        {
+          "id": "c",
+          "text": "José"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "irmãos",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Gênesis 50:15 comunica que se liga a este contexto.",
+      "verseRef": "Gênesis 50:15",
+      "passageA": {
+        "ref": "Gênesis 50:15"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Os irmãos temem depois da morte do pai; José chora e fala de perdão."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Fato ligado ao relato"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda oração"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vendo",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama à confiança, não à fuga.",
+        "c": "O texto fala de Deus, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Gênesis 50:16, o marcador antes une ideias no fluxo do texto.",
+      "verseRef": "Gênesis 50:16",
+      "correctOptionId": "true",
+      "evidenceSpan": "antes",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 50:16 afirma.",
+      "evidence": [
+        "Gênesis 50:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Gênesis 50:16, toque a palavra que marca a relação no texto.",
+      "verseRef": "Gênesis 50:16",
+      "options": [
+        {
+          "id": "a",
+          "text": "antes"
+        },
+        {
+          "id": "b",
+          "text": "enviaram"
+        },
+        {
+          "id": "c",
+          "text": "José"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "antes",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 50:16"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Gênesis 50:18, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 50:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "As partes do texto se ligam no fluxo do relato"
+        },
+        {
+          "id": "b",
+          "text": "As ideias ficam soltas sem relação"
+        },
+        {
+          "id": "c",
+          "text": "O texto só repete o mesmo ato"
+        },
+        {
+          "id": "d",
+          "text": "Não há avanço entre as falas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Então",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 50:18"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Gênesis 50:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vendo irmãos josé pai era"
+        },
+        {
+          "id": "b",
+          "text": "Enviaram josé dizendo 'teu pai"
+        },
+        {
+          "id": "c",
+          "text": "Direis josé perdoa transgressão teus"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vendo",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Gênesis 50:17, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 50:17",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus"
+        },
+        {
+          "id": "b",
+          "text": "Vendo"
+        },
+        {
+          "id": "c",
+          "text": "irmãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Deus",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 50:17"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Gênesis 50:15 a Gênesis 50:20.",
+      "verseRef": "Gênesis 50:15",
+      "passageA": {
+        "ref": "Gênesis 50:15"
+      },
+      "passageB": {
+        "ref": "Gênesis 50:20"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus tornou em bem"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vendo",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 50:15",
+        "Gênesis 50:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente nesta cena.",
+      "verseRef": "Gênesis 50:21",
+      "correctOptionId": "false",
+      "evidenceSpan": "Agora",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Gênesis 50:21 afirma.",
+      "evidence": [
+        "Gênesis 50:21"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Gênesis 50:19, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Gênesis 50:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "José"
+        },
+        {
+          "id": "b",
+          "text": "respondeu"
+        },
+        {
+          "id": "c",
+          "text": "temam"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "José",
+      "feedbackCorrect": "O versículo destaca essa expressão no texto.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Gênesis 50:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Gênesis 50:19, o que o texto apresenta com clareza.",
+      "verseRef": "Gênesis 50:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "A leitura firme segue o que o texto afirma"
+        },
+        {
+          "id": "b",
+          "text": "Deus some e o acaso governa a cena"
+        },
+        {
+          "id": "c",
+          "text": "O texto anula toda promessa anterior"
+        },
+        {
+          "id": "d",
+          "text": "Qualquer leitura vale igualmente"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "José",
+      "feedbackCorrect": "Essa opção resume o que o versículo sustenta.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "Releia o versículo, o relato diz outra coisa.",
+        "d": "Essa opção não encontra apoio no texto."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Gênesis 50:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Gênesis 50:15",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação dos personagens"
+        },
+        {
+          "id": "b",
+          "text": "Deus ou o personagem age no relato"
+        },
+        {
+          "id": "c",
+          "text": "O relato chega ao desfecho do trecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Vendo",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação e avance ao fim."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Gênesis 50:15"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Gênesis 50:19, complete a palavra que o texto usa com peso.",
+      "verseRef": "Gênesis 50:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "respondeu"
+        },
+        {
+          "id": "b",
+          "text": "Vendo"
+        },
+        {
+          "id": "c",
+          "text": "irmãos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "respondeu",
+      "feedbackCorrect": "Essa é a palavra que o versículo usa.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Gênesis 50:19"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Gênesis 50:15 a Gênesis 45:8.",
+      "verseRef": "Gênesis 50:15",
+      "passageA": {
+        "ref": "Gênesis 50:15"
+      },
+      "passageB": {
+        "ref": "Gênesis 45:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus enviou José"
+        },
+        {
+          "id": "b",
+          "text": "Contradição sem ponte"
+        },
+        {
+          "id": "c",
+          "text": "Tema de guerra só"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vendo",
+      "feedbackCorrect": "Os textos se encontram nesse tema.",
+      "feedbackWrong": {
+        "b": "Há ponte temática entre os textos.",
+        "c": "A ponte não é só guerra."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a um cruzamento bíblico.",
+      "evidence": [
+        "Gênesis 50:15",
+        "Gênesis 45:8"
+      ]
+    }
+  ]
+}

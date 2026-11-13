@@ -1,0 +1,452 @@
+{
+  "study": {
+    "passageRef": "Êxodo 10:21–26",
+    "passages": [{ "ref": "Êxodo 10:21–29" }],
+    "context": "Trevas cobrem o Egito; em Israel há luz. Faraó tenta negociar e depois manda Moisés sair.",
+    "keyword": "Trevas",
+    "keywordGloss": "Escuridão espessa que se pode tocar, enquanto Israel tem luz.",
+    "focusQuestion": "Onde você ainda tenta barganhar com Deus em vez de sair por completo?",
+    "reflectionPrompts": ["Trevas no Egito", "Luz em Israel", "Sem barganha"],
+    "facts": [
+      {
+        "text": "Houve trevas espessas sobre o Egito por três dias.",
+        "evidenceRef": "Êxodo 10:22",
+        "evidenceSpan": "houve trevas espessas sobre toda a terra do Egito por três dias"
+      },
+      {
+        "text": "Os filhos de Israel tinham luz em suas habitações.",
+        "evidenceRef": "Êxodo 10:23",
+        "evidenceSpan": "todos os filhos de Israel tinham luz em suas habitações"
+      },
+      {
+        "text": "Faraó permite ir, mas quer reter rebanhos e gado.",
+        "evidenceRef": "Êxodo 10:24",
+        "evidenceSpan": "permaneçam somente os vossos rebanhos e o vosso gado"
+      },
+      {
+        "text": "Moisés diz que nem uma unha do gado ficará.",
+        "evidenceRef": "Êxodo 10:26",
+        "evidenceSpan": "nem uma unha ficará para trás"
+      },
+      {
+        "text": "Faraó manda Moisés não ver mais o seu rosto.",
+        "evidenceRef": "Êxodo 10:28",
+        "evidenceSpan": "não mais ver o meu rosto"
+      }
+    ],
+    "keyTerms": [
+      { "term": "trevas", "gloss": "Escuridão que cobre o Egito e se pode tocar." },
+      { "term": "luz", "gloss": "O que Israel tem nas habitações enquanto o Egito está às escuras." },
+      { "term": "unha", "gloss": "Imagem de totalidade: nada do gado fica para trás." }
+    ],
+    "structure": [
+      { "label": "Trevas espessas por três dias", "evidenceRef": "Êxodo 10:21–22" },
+      { "label": "Israel tem luz; Faraó barganha", "evidenceRef": "Êxodo 10:23–24" },
+      { "label": "Moisés exige o gado inteiro", "evidenceRef": "Êxodo 10:25–26" },
+      { "label": "Endurecimento e ameaça", "evidenceRef": "Êxodo 10:27–29" }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Egito nas trevas; Israel com luz nas casas.",
+        "marker": "mas",
+        "evidenceRef": "Êxodo 10:23"
+      },
+      {
+        "kind": "resultado",
+        "text": "O Senhor endurece o coração e Faraó não libera.",
+        "marker": "Então",
+        "evidenceRef": "Êxodo 10:27"
+      },
+      {
+        "kind": "sequência",
+        "text": "Depois da barganha, Faraó manda Moisés sair.",
+        "marker": "E",
+        "evidenceRef": "Êxodo 10:28"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 1:5", "bridge": "Luz brilha nas trevas" },
+      { "ref": "Isaías 60:2", "bridge": "Trevas cobrem a terra" },
+      { "ref": "Êxodo 8:23", "bridge": "Distinção do povo" }
+    ],
+    "misreadings": [
+      {
+        "text": "Israel também ficou sem luz por três dias.",
+        "why": "O texto diz que tinham luz nas habitações."
+      },
+      {
+        "text": "Moisés aceitou deixar o gado no Egito.",
+        "why": "Nem uma unha ficaria para trás."
+      },
+      {
+        "text": "Faraó libertou o povo após as trevas.",
+        "why": "O coração endureceu e ele não quis liberá-los."
+      }
+    ],
+    "centralInsight": "O Senhor separa luz e trevas; a saída não admite barganha parcial.",
+    "anchorQuestion": "Quem tinha luz enquanto o Egito estava em trevas?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Houve trevas espessas sobre toda a terra do Egito por três dias.",
+      "verseRef": "Êxodo 10:22",
+      "correctOptionId": "true",
+      "evidenceSpan": "houve trevas espessas sobre toda a terra do Egito por três dias",
+      "feedbackCorrect": "O texto afirma trevas espessas por três dias.",
+      "feedbackWrong": { "false": "Releia Êxodo 10:22." },
+      "hint": "Quanto tempo durou?",
+      "learningObjective": "Observar a duração das trevas.",
+      "evidence": ["Êxodo 10:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 10:23, toque o que Israel tinha nas habitações.",
+      "verseRef": "Êxodo 10:23",
+      "options": [
+        { "id": "a", "text": "luz" },
+        { "id": "b", "text": "lugar" },
+        { "id": "c", "text": "dias" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tinham luz em suas habitações",
+      "feedbackCorrect": "Os filhos de Israel tinham luz.",
+      "feedbackWrong": {
+        "b": "Lugar fala da imobilidade; o contraste é luz.",
+        "c": "Dias marca a duração; o dom é luz."
+      },
+      "hint": "O contraste com as trevas.",
+      "learningObjective": "Identificar a luz de Israel.",
+      "evidence": ["Êxodo 10:23"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 10:24, o que Faraó queria que ficasse?",
+      "verseRef": "Êxodo 10:24",
+      "options": [
+        { "id": "a", "text": "Os rebanhos e o gado" },
+        { "id": "b", "text": "As crianças" },
+        { "id": "c", "text": "Só Moisés" },
+        { "id": "d", "text": "Os utensílios do templo" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "permaneçam somente os vossos rebanhos e o vosso gado",
+      "feedbackCorrect": "Ele libera o povo, mas retém os animais.",
+      "feedbackWrong": {
+        "b": "As crianças iriam.",
+        "c": "Não é só Moisés.",
+        "d": "Não fala de utensílios."
+      },
+      "hint": "O que \"permaneçam somente\".",
+      "learningObjective": "Observar a barganha de Faraó.",
+      "evidence": ["Êxodo 10:24"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 10:22 na ordem do texto.",
+      "verseRef": "Êxodo 10:22",
+      "options": [
+        { "id": "a", "text": "Moisés estendeu a mão para o céu" },
+        { "id": "b", "text": "e houve trevas espessas" },
+        { "id": "c", "text": "sobre toda a terra do Egito por três dias" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "houve trevas espessas",
+      "feedbackCorrect": "Gesto, trevas e duração.",
+      "feedbackWrong": { "default": "Comece pelo gesto de Moisés." },
+      "hint": "Quem age primeiro?",
+      "learningObjective": "Reconhecer a sequência do versículo.",
+      "evidence": ["Êxodo 10:22"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 10:26, o que não ficará para trás?",
+      "verseRef": "Êxodo 10:26",
+      "options": [
+        { "id": "a", "text": "unha" },
+        { "id": "b", "text": "porta" },
+        { "id": "c", "text": "rede" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem uma unha ficará para trás",
+      "feedbackCorrect": "Nem uma unha do gado fica.",
+      "feedbackWrong": {
+        "b": "Não fala de porta.",
+        "c": "Não fala de rede."
+      },
+      "hint": "Nem uma ___.",
+      "learningObjective": "Lembrar a totalidade da saída.",
+      "evidence": ["Êxodo 10:26"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 10:23 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 10:23",
+      "passageA": { "ref": "Êxodo 10:23" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Trevas cobrem o Egito, mas o povo de Deus não fica sem luz."
+      },
+      "options": [
+        { "id": "a", "text": "Israel tem luz em casa" },
+        { "id": "b", "text": "Israel também fica às escuras" },
+        { "id": "c", "text": "Faraó acende tochas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tinham luz em suas habitações",
+      "feedbackCorrect": "A distinção aparece como luz nas casas.",
+      "feedbackWrong": {
+        "b": "O texto diz o contrário.",
+        "c": "Não fala de tochas de Faraó."
+      },
+      "hint": "O fim do versículo.",
+      "learningObjective": "Ligar trevas e distinção.",
+      "evidence": ["Êxodo 10:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 10:27, Faraó liberou Israel logo após as trevas.",
+      "verseRef": "Êxodo 10:27",
+      "correctOptionId": "false",
+      "evidenceSpan": "ele não quis liberá-los",
+      "feedbackCorrect": "O Senhor endureceu o coração; Faraó não liberou.",
+      "feedbackWrong": { "true": "Releia: não quis liberá-los." },
+      "hint": "O que Faraó quis fazer?",
+      "learningObjective": "Compreender o endurecimento.",
+      "evidence": ["Êxodo 10:27"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 10:23, toque a palavra que marca o contraste com as trevas.",
+      "verseRef": "Êxodo 10:23",
+      "options": [
+        { "id": "a", "text": "mas" },
+        { "id": "b", "text": "lugar" },
+        { "id": "c", "text": "outros" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "mas todos os filhos de Israel tinham luz",
+      "feedbackCorrect": "\"Mas\" introduz a luz de Israel.",
+      "feedbackWrong": {
+        "b": "Lugar descreve a imobilidade.",
+        "c": "Outros não é o marcador."
+      },
+      "hint": "Conjunção antes de \"todos os filhos\".",
+      "learningObjective": "Reconhecer o contraste textual.",
+      "evidence": ["Êxodo 10:23"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 10:26 responde à barganha de Faraó?",
+      "verseRef": "Êxodo 10:26",
+      "options": [
+        { "id": "a", "text": "O gado irá; nem uma unha fica" },
+        { "id": "b", "text": "Só as ovelhas vão; bois ficam" },
+        { "id": "c", "text": "Moisés aceita deixar metade" },
+        { "id": "d", "text": "O gado fica para os magos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "também nosso gado irá conosco; nem uma unha ficará",
+      "feedbackCorrect": "A saída é total: gado incluso.",
+      "feedbackWrong": {
+        "b": "Nada fica para trás.",
+        "c": "Não há meio-termo.",
+        "d": "Não fala de magos."
+      },
+      "hint": "Leia \"nem uma unha\".",
+      "learningObjective": "Relacionar barganha e recusa.",
+      "evidence": ["Êxodo 10:26"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em Êxodo 10:22–28?",
+      "verseRef": "Êxodo 10:22–24",
+      "options": [
+        { "id": "a", "text": "Trevas espessas cobrem o Egito" },
+        { "id": "b", "text": "Faraó barganha sobre o gado" },
+        { "id": "c", "text": "Faraó manda Moisés sair" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "trevas espessas",
+      "feedbackCorrect": "Praga, barganha e ameaça.",
+      "feedbackWrong": { "default": "As trevas vêm antes da barganha." },
+      "hint": "Comece pelas trevas.",
+      "learningObjective": "Compreender o movimento da cena.",
+      "evidence": ["Êxodo 10:22", "Êxodo 10:28"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 10:21, as trevas são tais que se podem…",
+      "verseRef": "Êxodo 10:21",
+      "options": [
+        { "id": "a", "text": "tocar" },
+        { "id": "b", "text": "beber" },
+        { "id": "c", "text": "vender" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trevas que se podem tocar",
+      "feedbackCorrect": "São trevas que se podem tocar.",
+      "feedbackWrong": {
+        "b": "Não diz beber.",
+        "c": "Não diz vender."
+      },
+      "hint": "Última palavra da frase.",
+      "learningObjective": "Lembrar a densidade das trevas.",
+      "evidence": ["Êxodo 10:21"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 10:23 a Êxodo 8:23?",
+      "verseRef": "Êxodo 10:23",
+      "passageA": { "ref": "Êxodo 10:23" },
+      "passageB": { "ref": "Êxodo 8:23" },
+      "options": [
+        { "id": "a", "text": "Distinção do povo" },
+        { "id": "b", "text": "Lista de reis" },
+        { "id": "c", "text": "Medidas do altar" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tinham luz em suas habitações",
+      "feedbackCorrect": "Nos dois, o Senhor distingue Israel do Egito.",
+      "feedbackWrong": {
+        "b": "Não há lista de reis.",
+        "c": "Não fala de altar."
+      },
+      "hint": "O que muda entre Egito e Israel?",
+      "learningObjective": "Relacionar distinção nas pragas.",
+      "evidence": ["Êxodo 10:23", "Êxodo 8:23"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 10:21–29 sustenta que o Senhor governa luz e trevas e não aceita saída pela metade.",
+      "verseRef": "Êxodo 10:23",
+      "correctOptionId": "true",
+      "evidenceSpan": "tinham luz em suas habitações",
+      "feedbackCorrect": "Luz para Israel e recusa da barganha mostram o governo de Deus.",
+      "feedbackWrong": { "false": "Una a luz de 10:23 com a unha de 10:26." },
+      "hint": "Luz e \"nem uma unha\".",
+      "learningObjective": "Interpretar distinção e totalidade.",
+      "evidence": ["Êxodo 10:23", "Êxodo 10:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 10:28, toque o que Moisés não deve mais ver.",
+      "verseRef": "Êxodo 10:28",
+      "options": [
+        { "id": "a", "text": "meu rosto" },
+        { "id": "b", "text": "Moisés" },
+        { "id": "c", "text": "dia" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "não mais ver o meu rosto",
+      "feedbackCorrect": "Faraó proíbe ver o seu rosto.",
+      "feedbackWrong": {
+        "b": "Moisés é quem ouve a ordem.",
+        "c": "Dia marca a ameaça; o alvo é o rosto."
+      },
+      "hint": "O que Faraó menciona.",
+      "learningObjective": "Sustentar a ameaça final.",
+      "evidence": ["Êxodo 10:28"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 10:21–26 sustenta?",
+      "verseRef": "Êxodo 10:26",
+      "options": [
+        { "id": "a", "text": "Servir ao Senhor exige saída sem retenção parcial" },
+        { "id": "b", "text": "Basta sair e deixar o culto no Egito" },
+        { "id": "c", "text": "Trevas atingem Israel e Egito iguais" },
+        { "id": "d", "text": "Faraó define o que servir a Deus" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "nem uma unha ficará para trás, pois dele precisamos para servir",
+      "feedbackCorrect": "O gado vai porque serve ao culto do Senhor.",
+      "feedbackWrong": {
+        "b": "O culto exige o que Deus pede.",
+        "c": "Israel tem luz.",
+        "d": "Moisés recusa a barganha."
+      },
+      "hint": "Por que o gado precisa ir?",
+      "learningObjective": "Escolher a interpretação do serviço.",
+      "evidence": ["Êxodo 10:26"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência liga trevas, distinção e luz na Escritura?",
+      "verseRef": "Êxodo 10:23",
+      "options": [
+        { "id": "a", "text": "Israel tem luz nas trevas do Egito" },
+        { "id": "b", "text": "Isaías fala de trevas sobre a terra" },
+        { "id": "c", "text": "João diz que a luz brilha nas trevas" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "tinham luz em suas habitações",
+      "evidence": ["Êxodo 10:23", "Isaías 60:2", "João 1:5"],
+      "feedbackCorrect": "Do Êxodo ao profeta e ao evangelho.",
+      "feedbackWrong": { "default": "Comece por Israel no Egito." },
+      "hint": "Ordem: Êxodo, Isaías, João.",
+      "learningObjective": "Ver o fio luz–trevas."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 10:22, que tipo de trevas houve?",
+      "verseRef": "Êxodo 10:22",
+      "options": [
+        { "id": "a", "text": "espessas" },
+        { "id": "b", "text": "leves" },
+        { "id": "c", "text": "curtas" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "trevas espessas",
+      "feedbackCorrect": "O texto chama de trevas espessas.",
+      "feedbackWrong": {
+        "b": "Não são leves.",
+        "c": "Duração é três dias; o adjetivo é espessas."
+      },
+      "hint": "Adjetivo junto de trevas.",
+      "learningObjective": "Lembrar o termo da praga.",
+      "evidence": ["Êxodo 10:22"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 10:23 a João 1:5?",
+      "verseRef": "Êxodo 10:23",
+      "passageA": { "ref": "Êxodo 10:23" },
+      "passageB": { "ref": "João 1:5" },
+      "options": [
+        { "id": "a", "text": "Luz no meio das trevas" },
+        { "id": "b", "text": "Censo das tribos" },
+        { "id": "c", "text": "Altar de bronze" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tinham luz em suas habitações",
+      "feedbackCorrect": "Luz presente onde há trevas une os textos.",
+      "feedbackWrong": {
+        "b": "Não é censo.",
+        "c": "Não é altar."
+      },
+      "hint": "O contraste luz/trevas.",
+      "learningObjective": "Ligar Êxodo ao evangelho.",
+      "evidence": ["Êxodo 10:23", "João 1:5"]
+    }
+  ]
+}

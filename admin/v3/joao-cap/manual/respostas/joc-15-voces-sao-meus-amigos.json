@@ -1,0 +1,493 @@
+{
+  "study": {
+    "passageRef": "João 15:12–17",
+    "passages": [
+      { "ref": "João 15:12–17" }
+    ],
+    "context": "Jesus está com os discípulos na noite da despedida. Ele já pediu que permanecessem nele. Agora deixa uma ordem e explica o lugar deles junto de si.",
+    "keyword": "amigos",
+    "keywordGloss": "É o nome que Jesus dá a quem faz o que ele manda e a quem ele revela o que ouviu do Pai.",
+    "focusQuestion": "O que esse amor muda na forma como você trata quem caminha com você?",
+    "reflectionPrompts": [
+      "O amor que dá a vida",
+      "Servos e amigos",
+      "A escolha e o envio"
+    ],
+    "facts": [
+      {
+        "text": "O mandamento é que se amem mutuamente, como Jesus os amou.",
+        "evidenceRef": "João 15:12",
+        "evidenceSpan": "que vocês se amem mutuamente, assim como eu os amei"
+      },
+      {
+        "text": "Ninguém tem maior amor do que dar a própria vida pelos amigos.",
+        "evidenceRef": "João 15:13",
+        "evidenceSpan": "dar a própria vida pelos seus amigos"
+      },
+      {
+        "text": "Eles são amigos de Jesus se fizerem o que ele manda.",
+        "evidenceRef": "João 15:14",
+        "evidenceSpan": "Vocês são meus amigos, se fizerem o que eu mando"
+      },
+      {
+        "text": "Jesus já não os chama de servos.",
+        "evidenceRef": "João 15:15",
+        "evidenceSpan": "Já não os chamo de servos"
+      },
+      {
+        "text": "Não foram eles que escolheram Jesus; foi ele quem os escolheu.",
+        "evidenceRef": "João 15:16",
+        "evidenceSpan": "Não fostes vós que me escolhestes, mas eu vos escolhi"
+      },
+      {
+        "text": "Jesus ordena que se amem uns aos outros.",
+        "evidenceRef": "João 15:17",
+        "evidenceSpan": "que vos ameis uns aos outros"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "amigos",
+        "gloss": "Nome que Jesus dá a quem faz o que ele manda e a quem ele revela o que ouviu do Pai."
+      },
+      {
+        "term": "mandamento",
+        "gloss": "A ordem de Jesus para que os discípulos se amem como ele os amou."
+      },
+      {
+        "term": "fruto",
+        "gloss": "O que os escolhidos devem produzir, e que deve permanecer."
+      }
+    ],
+    "structure": [
+      {
+        "label": "O mandamento de amar até dar a vida",
+        "evidenceRef": "João 15:12–13"
+      },
+      {
+        "label": "Amigo é quem faz o que ele manda",
+        "evidenceRef": "João 15:14"
+      },
+      {
+        "label": "Do servo que não sabe ao amigo que conhece",
+        "evidenceRef": "João 15:15"
+      },
+      {
+        "label": "Escolhidos para a missão e para o amor",
+        "evidenceRef": "João 15:16–17"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Jesus não os chama mais de servos; a frase vira, e ele os chama de amigos.",
+        "marker": "mas",
+        "evidenceRef": "João 15:15"
+      },
+      {
+        "kind": "causa",
+        "text": "Ele os chama de amigos porque lhes tornou conhecido tudo o que ouviu do Pai.",
+        "marker": "porque",
+        "evidenceRef": "João 15:15"
+      },
+      {
+        "kind": "propósito",
+        "text": "Ele os escolheu e designou para que vão, deem fruto e peçam ao Pai em nome dele.",
+        "marker": "para",
+        "evidenceRef": "João 15:16"
+      }
+    ],
+    "crossRefs": [
+      { "ref": "João 13:34", "bridge": "Amar como Jesus amou" },
+      { "ref": "1 João 3:16", "bridge": "Dar a vida por amor" },
+      { "ref": "João 14:15", "bridge": "Amor guarda os mandamentos" }
+    ],
+    "misreadings": [
+      {
+        "text": "Ser amigo de Jesus dispensa fazer o que ele manda.",
+        "why": "O texto condiciona a amizade: vocês são meus amigos, se fizerem o que eu mando."
+      },
+      {
+        "text": "Jesus chama os discípulos de servos e de amigos ao mesmo tempo.",
+        "why": "Ele diz que já não os chama de servos, e sim de amigos, porque lhes tornou conhecido o que ouviu do Pai."
+      },
+      {
+        "text": "O amigo continua sem saber o que vem do Pai, como o servo.",
+        "why": "O servo é quem não sabe; Jesus chama de amigos justamente porque lhes tornou conhecido o que ouviu do Pai."
+      }
+    ],
+    "centralInsight": "Jesus chama de amigos os que ele escolheu e manda amar como ele amou.",
+    "anchorQuestion": "Segundo João 15:14, o que acompanha ser amigo de Jesus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em João 15:17, Jesus ordena que os discípulos se amem uns aos outros.",
+      "verseRef": "João 15:17",
+      "correctOptionId": "true",
+      "evidenceSpan": "que vos ameis uns aos outros",
+      "feedbackCorrect": "O versículo fecha com essa ordem: que eles se amem uns aos outros.",
+      "feedbackWrong": {
+        "false": "Releia João 15:17: a ordem é que se amem uns aos outros."
+      },
+      "hint": "Olhe o que Jesus ordena no último versículo.",
+      "learningObjective": "Observar a ordem de se amarem uns aos outros.",
+      "evidence": ["João 15:17"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em João 15:14, toque como Jesus chama os discípulos.",
+      "verseRef": "João 15:14",
+      "options": [
+        { "id": "a", "text": "mando" },
+        { "id": "b", "text": "Vocês" },
+        { "id": "c", "text": "amigos" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Vocês são meus amigos",
+      "feedbackCorrect": "Amigos é o nome que Jesus dá a quem faz o que ele manda.",
+      "feedbackWrong": {
+        "a": "Mando é o verbo da condição, não o nome que ele lhes dá.",
+        "b": "Vocês é quem ouve; o nome da relação vem em seguida."
+      },
+      "hint": "Procure o nome da relação, não o verbo.",
+      "learningObjective": "Identificar o nome que Jesus dá aos discípulos.",
+      "evidence": ["João 15:14"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo João 15:13, em que consiste o maior amor?",
+      "verseRef": "João 15:13",
+      "options": [
+        { "id": "a", "text": "Falar de amor sem abrir mão de nada" },
+        { "id": "b", "text": "Dar a vida em favor dos amigos" },
+        { "id": "c", "text": "Receber de volta tudo o que se deu" },
+        { "id": "d", "text": "Deixar que outros tomem a iniciativa" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "dar a própria vida pelos seus amigos",
+      "feedbackCorrect": "O maior amor, no texto, é dar a vida em favor dos amigos.",
+      "feedbackWrong": {
+        "a": "O texto não fala de discurso; fala de entregar a própria vida.",
+        "c": "Não há retorno aqui; o amor maior é dar a vida.",
+        "d": "A frase não passa a vez; ela define o amor como entrega."
+      },
+      "hint": "Leia o que vem depois dos dois-pontos.",
+      "learningObjective": "Observar como o texto define o maior amor.",
+      "evidence": ["João 15:13"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte João 15:15 na ordem do texto.",
+      "verseRef": "João 15:15",
+      "options": [
+        { "id": "a", "text": "Já não os chamo de servos" },
+        { "id": "b", "text": "porque o servo não sabe o que faz o seu senhor" },
+        { "id": "c", "text": "mas eu os chamei de amigos" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "Já não os chamo de servos",
+      "feedbackCorrect": "A frase segue assim: já não servos, o que o servo ignora, e então amigos.",
+      "feedbackWrong": {
+        "default": "Comece pelo que ele já não chama; o título de amigo vem depois."
+      },
+      "hint": "O versículo começa pelo título que ele deixa.",
+      "learningObjective": "Reconhecer a sequência de João 15:15.",
+      "evidence": ["João 15:15"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em João 15:12, que nome Jesus dá à ordem de se amarem?",
+      "verseRef": "João 15:12",
+      "options": [
+        { "id": "a", "text": "conselho" },
+        { "id": "b", "text": "pedido" },
+        { "id": "c", "text": "mandamento" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "O meu mandamento é este",
+      "feedbackCorrect": "Mandamento é o nome da ordem: que se amem como ele os amou.",
+      "feedbackWrong": {
+        "a": "Conselho caberia na frase, mas o texto diz mandamento.",
+        "b": "Pedido caberia na frase, mas Jesus chama isso de mandamento."
+      },
+      "hint": "Olhe a palavra logo depois de O meu.",
+      "learningObjective": "Lembrar o nome que Jesus dá à sua ordem.",
+      "evidence": ["João 15:12"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que João 15:16 comunica que se liga a este contexto?",
+      "verseRef": "João 15:16",
+      "passageA": { "ref": "João 15:16" },
+      "passageB": { "ref": "Contexto", "text": "Quem escolhe os discípulos é Jesus, não eles." },
+      "options": [
+        { "id": "a", "text": "Eles escolhem primeiro" },
+        { "id": "b", "text": "Jesus é quem escolhe" },
+        { "id": "c", "text": "O fruto escolhe sozinho" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Não fostes vós que me escolhestes, mas eu vos escolhi",
+      "feedbackCorrect": "O versículo nega a escolha deles: foi Jesus quem os escolheu.",
+      "feedbackWrong": {
+        "a": "O texto começa negando isso: não foram eles que o escolheram.",
+        "c": "O fruto vem depois; a primeira frase é sobre quem escolhe."
+      },
+      "hint": "Veja quem pratica o verbo da escolha.",
+      "learningObjective": "Ligar João 15:16 ao fato de que a escolha é de Jesus.",
+      "evidence": ["João 15:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em João 15:15, Jesus mantém os discípulos como servos e também os chama de amigos.",
+      "verseRef": "João 15:15",
+      "correctOptionId": "false",
+      "evidenceSpan": "Já não os chamo de servos",
+      "feedbackCorrect": "Ele diz que já não os chama de servos; o título novo é amigo.",
+      "feedbackWrong": {
+        "true": "O versículo abre dizendo que ele já não os chama de servos."
+      },
+      "hint": "Repare se os dois títulos valem juntos.",
+      "learningObjective": "Compreender o contraste entre servo e amigo.",
+      "evidence": ["João 15:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em João 15:15, toque a palavra que troca o título de servo pelo de amigo.",
+      "verseRef": "João 15:15",
+      "options": [
+        { "id": "a", "text": "senhor" },
+        { "id": "b", "text": "mas" },
+        { "id": "c", "text": "porque" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "mas eu os chamei de amigos",
+      "feedbackCorrect": "\"Mas\" marca a troca: deixa o servo e chama de amigo.",
+      "feedbackWrong": {
+        "a": "A palavra senhor aqui é o dono do servo, não a troca de título.",
+        "c": "Porque explica uma razão; a troca de título é a palavra mas."
+      },
+      "hint": "Procure a palavra curta depois do ponto e vírgula.",
+      "learningObjective": "Reconhecer a palavra que marca o contraste no versículo.",
+      "evidence": ["João 15:15"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Com que fim Jesus escolheu e designou os discípulos em João 15:16?",
+      "verseRef": "João 15:16",
+      "options": [
+        { "id": "a", "text": "Irem e darem um fruto que dure" },
+        { "id": "b", "text": "Continuarem servos, longe do Pai" },
+        { "id": "c", "text": "Tomarem eles a iniciativa da escolha" },
+        { "id": "d", "text": "Calarem o que foi revelado do Pai" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "designei-vos para que vades e deis fruto",
+      "feedbackCorrect": "Ele os designou para irem e darem fruto, e esse resultado fica.",
+      "feedbackWrong": {
+        "b": "O título de servo ficou para trás; o fim não é voltar a ele.",
+        "c": "A iniciativa não é deles: foi Jesus quem escolheu e designou.",
+        "d": "Ele tornou conhecido o que ouviu; o fim não é esconder."
+      },
+      "hint": "Olhe o que vem depois de designou, nas frases de finalidade.",
+      "learningObjective": "Relacionar a escolha de Jesus com o fim que ele declara.",
+      "evidence": ["João 15:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a cena em João 15:16–17?",
+      "verseRef": "João 15:16–17",
+      "options": [
+        { "id": "a", "text": "A escolha parte de Jesus" },
+        { "id": "b", "text": "Ele os envia com uma missão" },
+        { "id": "c", "text": "A ordem é amar uns aos outros" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "eu vos escolhi e designei-vos",
+      "feedbackCorrect": "Primeiro a escolha dele, depois a missão, e no fim a ordem de amar.",
+      "feedbackWrong": {
+        "default": "Siga os dois versículos: escolha, missão e, por último, a ordem."
+      },
+      "hint": "Siga os dois versículos, do começo ao fim.",
+      "learningObjective": "Compreender o movimento da escolha à ordem de amar.",
+      "evidence": ["João 15:16–17"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em João 15:16, o que deve acontecer com aquilo que eles dão?",
+      "verseRef": "João 15:16",
+      "options": [
+        { "id": "a", "text": "acabe" },
+        { "id": "b", "text": "permaneça" },
+        { "id": "c", "text": "mude" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "e que o vosso fruto permaneça",
+      "feedbackCorrect": "O que eles dão deve permanecer, para além do primeiro momento.",
+      "feedbackWrong": {
+        "a": "Acabar é o contrário do verbo que o versículo usa aí.",
+        "c": "Mudar não é o verbo do texto; ele pede continuidade."
+      },
+      "hint": "Olhe o verbo que fecha a frase do que eles dão.",
+      "learningObjective": "Compreender que o resultado da missão deve continuar.",
+      "evidence": ["João 15:16"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga João 15:12 a João 13:34?",
+      "verseRef": "João 15:12",
+      "passageA": { "ref": "João 15:12" },
+      "passageB": { "ref": "João 13:34" },
+      "options": [
+        { "id": "a", "text": "Servir sem conhecer nada" },
+        { "id": "b", "text": "Pedir tudo em seu nome" },
+        { "id": "c", "text": "Amar como Jesus amou" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "assim como eu os amei",
+      "feedbackCorrect": "Nos dois textos, Jesus manda amar do jeito que ele amou.",
+      "feedbackWrong": {
+        "a": "Esse par não fala de servo sem conhecimento; fala da ordem de amar.",
+        "b": "Pedir ao Pai está em outro versículo; aqui a ponte é o amor."
+      },
+      "hint": "Compare a ordem que os dois textos deixam.",
+      "learningObjective": "Relacionar o mandamento de João 15 ao de João 13.",
+      "evidence": ["João 15:12", "João 13:34"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "João 15:14 liga ser amigo de Jesus a fazer o que ele manda.",
+      "verseRef": "João 15:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "Vocês são meus amigos, se fizerem o que eu mando",
+      "feedbackCorrect": "A amizade, no texto, anda junto de fazer o que ele manda.",
+      "feedbackWrong": {
+        "false": "Releia João 15:14: são amigos se fizerem o que ele manda."
+      },
+      "hint": "Veja a condição que o versículo põe na amizade.",
+      "learningObjective": "Interpretar a amizade como ligada a fazer o que Jesus manda.",
+      "evidence": ["João 15:14"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em João 15:15, toque o que Jesus fez com o que ouviu do Pai.",
+      "verseRef": "João 15:15",
+      "options": [
+        { "id": "a", "text": "chamo de servos" },
+        { "id": "b", "text": "seu senhor" },
+        { "id": "c", "text": "tornei conhecido" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "eu lhes tornei conhecido",
+      "feedbackCorrect": "Ele tornou conhecido o que ouviu do Pai, e por isso os chama amigos.",
+      "feedbackWrong": {
+        "a": "Esse trecho é o título que ele deixa, não o que fez com a palavra do Pai.",
+        "b": "A palavra senhor aqui é o dono do servo, não o que veio do Pai."
+      },
+      "hint": "Olhe o fim do versículo, depois do segundo porque.",
+      "learningObjective": "Sustentar com o texto que Jesus revela aos amigos o que ouviu do Pai.",
+      "evidence": ["João 15:15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura João 15:14–15 sustenta sobre a amizade?",
+      "verseRef": "João 15:14–15",
+      "options": [
+        { "id": "a", "text": "Amigo de nome, sem fazer o que ele manda" },
+        { "id": "b", "text": "Servo e amigo como títulos ao mesmo tempo" },
+        { "id": "c", "text": "O amigo faz o que ele manda e conhece o Pai" },
+        { "id": "d", "text": "O amigo segue sem saber o que vem do Pai" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "Vocês são meus amigos, se fizerem o que eu mando",
+      "feedbackCorrect": "O amigo faz o que ele manda e conhece o que o servo não sabia.",
+      "feedbackWrong": {
+        "a": "O texto não dispensa a ordem: são amigos se fizerem o que ele manda.",
+        "b": "Ele já não os chama de servos; o título que fica é o de amigo.",
+        "d": "Quem fica sem saber é o servo; ao amigo ele tornou tudo conhecido."
+      },
+      "hint": "Compare cada leitura com o se do 14 e com o fim do 15.",
+      "learningObjective": "Escolher a leitura que o texto sustenta sobre servo e amigo.",
+      "evidence": ["João 15:14–15"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência o amor de João 15:13 abre na Bíblia?",
+      "verseRef": "João 15:13",
+      "options": [
+        { "id": "a", "text": "O maior amor entrega a vida pelo amigo" },
+        { "id": "b", "text": "Cristo entregou a sua vida por nós" },
+        { "id": "c", "text": "Os irmãos entregam a vida uns pelos outros" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "dar a própria vida pelos seus amigos",
+      "feedbackCorrect": "O amor que entrega a vida vai de Jesus aos irmãos, na carta.",
+      "feedbackWrong": {
+        "default": "Comece pelo que João 15 diz e siga o que a carta pede aos irmãos."
+      },
+      "hint": "Siga a história: primeiro este versículo, depois a carta.",
+      "learningObjective": "Ver João 15:13 como início de um fio que a carta retoma.",
+      "evidence": ["João 15:13", "1 João 3:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em João 15:16, o que os escolhidos devem dar ao ir?",
+      "verseRef": "João 15:16",
+      "options": [
+        { "id": "a", "text": "testemunho" },
+        { "id": "b", "text": "glória" },
+        { "id": "c", "text": "fruto" }
+      ],
+      "correctOptionId": "c",
+      "evidenceSpan": "vades e deis fruto",
+      "feedbackCorrect": "Fruto é o que ele manda dar: a escolha dele produz resultado.",
+      "feedbackWrong": {
+        "a": "Testemunho caberia depois de deis, mas o texto diz fruto.",
+        "b": "Glória caberia na frase, mas o que eles devem dar é fruto."
+      },
+      "hint": "Está logo depois de deis.",
+      "learningObjective": "Lembrar o termo que nomeia o resultado da escolha.",
+      "evidence": ["João 15:16"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga João 15:13 a 1 João 3:16?",
+      "verseRef": "João 15:13",
+      "passageA": { "ref": "João 15:13" },
+      "passageB": { "ref": "1 João 3:16" },
+      "options": [
+        { "id": "a", "text": "Dar a vida por amor" },
+        { "id": "b", "text": "Um rito sem entrega" },
+        { "id": "c", "text": "Fruto que não permanece" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "dar a própria vida pelos seus amigos",
+      "feedbackCorrect": "Os dois textos medem o amor por entregar a vida pelos outros.",
+      "feedbackWrong": {
+        "b": "Nenhum dos dois reduz o amor a rito; os dois falam de vida entregue.",
+        "c": "O fruto é outra frase; a ponte aqui é a vida dada por amor."
+      },
+      "hint": "Compare o verbo central de cada trecho.",
+      "learningObjective": "Ligar o maior amor de João 15 à vida entregue em 1 João.",
+      "evidence": ["João 15:13", "1 João 3:16"]
+    }
+  ]
+}

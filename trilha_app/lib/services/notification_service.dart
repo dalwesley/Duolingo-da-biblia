@@ -15,6 +15,7 @@ import '../l10n/l10n_global.dart';
 import '../models/caravan_pilgrim_profile.dart';
 import '../models/daily_quest.dart';
 import '../models/pilgrim_medals.dart';
+import '../models/room_plan.dart';
 import '../utils/dust_copy.dart';
 import 'analytics_service.dart';
 import 'progress_service.dart';
@@ -760,6 +761,71 @@ class NotificationService {
     try {
       await _plugin.cancel(_idTrialEnding);
     } catch (_) {}
+  }
+
+  /// Propósito do grupo: 7h no dia que abre e 19h se o dia de hoje ainda
+  /// falta. Ids próprios (fora de [_allIds]): o sync geral não apaga.
+  static const _idPlanBase = 112;
+  static const _planSlots = 4;
+
+  Future<void> syncGroupPlan({
+    required RoomPlan? plan,
+    required Set<int> done,
+    required bool enabled,
+  }) async {
+    await init();
+    if (!_available || !_initialized) return;
+    for (var i = 0; i < _planSlots; i++) {
+      try {
+        await _plugin.cancel(_idPlanBase + i);
+      } catch (_) {}
+    }
+    if (plan == null || !enabled) return;
+    final l = L10n.current;
+    final now = tz.TZDateTime.now(tz.local);
+    final today = planYmd(DateTime.now());
+    var slot = 0;
+    try {
+      final t = plan.today();
+      if (t != null && !done.contains(t.n)) {
+        final evening = tz.TZDateTime(
+          tz.local,
+          now.year,
+          now.month,
+          now.day,
+          19,
+        );
+        if (evening.isAfter(now)) {
+          await _schedule(
+            id: _idPlanBase + slot++,
+            when: evening,
+            copy: _ReminderCopy(
+              title: l.notifPlanEveningTitle(t.n),
+              body: l.notifPlanEveningBody(plan.title),
+              action: ReminderAction.league,
+              priority: 2,
+            ),
+          );
+        }
+      }
+      for (final d in plan.days) {
+        if (slot >= _planSlots) break;
+        if (d.date.compareTo(today) <= 0) continue;
+        final date = parsePlanYmd(d.date)!;
+        await _schedule(
+          id: _idPlanBase + slot++,
+          when: tz.TZDateTime(tz.local, date.year, date.month, date.day, 7),
+          copy: _ReminderCopy(
+            title: l.notifPlanDayTitle(d.n, plan.total),
+            body: l.notifPlanDayBody(plan.title),
+            action: ReminderAction.league,
+            priority: 2,
+          ),
+        );
+      }
+    } catch (e) {
+      debugPrint('Lembrete do propósito: $e');
+    }
   }
 
   Future<void> _cancelAll() async {

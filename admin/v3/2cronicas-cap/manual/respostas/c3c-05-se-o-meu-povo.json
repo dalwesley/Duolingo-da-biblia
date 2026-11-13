@@ -1,0 +1,706 @@
+{
+  "study": {
+    "passageRef": "2 Crônicas 7:12–22",
+    "passages": [
+      {
+        "ref": "2 Crônicas 7:12–22"
+      }
+    ],
+    "context": "O Senhor responde à oração de Salomão: escolhe a casa, promete cura se o povo se humilhar, e avisa do juízo se abandonarem.",
+    "keyword": "humilhar",
+    "keywordGloss": "Condição do povo chamado pelo nome de Deus: humilhar-se, orar, buscar e converter-se.",
+    "focusQuestion": "Em que área você precisa se humilhar e buscar o Senhor de novo?",
+    "reflectionPrompts": [
+      "Casa escolhida",
+      "Se o meu povo",
+      "Abandono e juízo"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor apareceu a Salomão e disse que ouviu a oração e escolheu o lugar como casa de sacrifício.",
+        "evidenceRef": "2 Crônicas 7:12",
+        "evidenceSpan": "Ouvi a tua oração e escolhi para mim este lugar como casa de sacrifício"
+      },
+      {
+        "text": "Se o povo se humilhar, orar, buscar e se converter, Deus ouvirá, perdoará e curará a terra.",
+        "evidenceRef": "2 Crônicas 7:14",
+        "evidenceSpan": "se humilhar, orar, e me buscar, e se converter dos seus maus caminhos"
+      },
+      {
+        "text": "Deus escolheu e santificou a casa para que seu nome esteja nela perpetuamente.",
+        "evidenceRef": "2 Crônicas 7:16",
+        "evidenceSpan": "escolhi e santifiquei esta casa"
+      },
+      {
+        "text": "Se andarem como Davi, Deus confirmará o trono do reino.",
+        "evidenceRef": "2 Crônicas 7:17",
+        "evidenceSpan": "se andar diante de mim, como andou Davi"
+      },
+      {
+        "text": "Se se desviarem e servirem outros deuses, serão arrancados e a casa se tornará provérbio.",
+        "evidenceRef": "2 Crônicas 7:19",
+        "evidenceSpan": "se vocês se desviarem e abandonarem os meus estatutos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "humilhar",
+        "gloss": "Primeira ação pedida ao povo que se chama pelo nome de Deus."
+      },
+      {
+        "term": "curarei",
+        "gloss": "Promessa de Deus à terra quando o povo se converte."
+      },
+      {
+        "term": "abandonarem",
+        "gloss": "Desvio que leva ao juízo sobre povo e casa."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus ouve e escolhe a casa",
+        "evidenceRef": "2 Crônicas 7:12"
+      },
+      {
+        "label": "Promete cura se o povo se humilhar",
+        "evidenceRef": "2 Crônicas 7:13–16"
+      },
+      {
+        "label": "Aliança com o rei como Davi",
+        "evidenceRef": "2 Crônicas 7:17–18"
+      },
+      {
+        "label": "Aviso se abandonarem o Senhor",
+        "evidenceRef": "2 Crônicas 7:19–22"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Se se humilharem e se converterem, Deus ouvirá e curará.",
+        "marker": "então",
+        "evidenceRef": "2 Crônicas 7:14"
+      },
+      {
+        "kind": "contraste",
+        "text": "Porém, se se desviarem, virá o juízo.",
+        "marker": "Porém",
+        "evidenceRef": "2 Crônicas 7:19"
+      },
+      {
+        "kind": "causa",
+        "text": "O mal veio porque abandonaram o Senhor.",
+        "marker": "Porque",
+        "evidenceRef": "2 Crônicas 7:22"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Levítico 26:40",
+        "bridge": "Confessar e se humilhar"
+      },
+      {
+        "ref": "Jeremias 18:8",
+        "bridge": "Converter e evitar o mal"
+      },
+      {
+        "ref": "Tiago 4:10",
+        "bridge": "Humilhar-se diante de Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "A casa escolhida nunca pode sofrer juízo.",
+        "why": "7:20–22 prevê a casa lançada longe se abandonarem."
+      },
+      {
+        "text": "Basta orar sem se converter dos maus caminhos.",
+        "why": "7:14 exige humilhar, orar, buscar e converter-se."
+      },
+      {
+        "text": "A resposta de Deus ignora a oração de Salomão.",
+        "why": "7:12 começa: Ouvi a tua oração."
+      }
+    ],
+    "centralInsight": "Se o meu povo se humilhar, orar e se converter, eu ouvirei do céu e sararei a terra.",
+    "anchorQuestion": "Quais ações 2 Crônicas 7:14 pede ao povo de Deus?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 7:12, o Senhor diz que ouviu a oração de Salomão e escolheu o lugar.",
+      "verseRef": "2 Crônicas 7:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "Ouvi a tua oração e escolhi para mim este lugar",
+      "feedbackCorrect": "Deus responde: ouviu e escolheu.",
+      "feedbackWrong": {
+        "false": "Releia 7:12."
+      },
+      "hint": "Veja o que o Senhor diz ter feito.",
+      "learningObjective": "Observar a resposta de Deus.",
+      "evidence": [
+        "2 Crônicas 7:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 7:14, toque a primeira ação pedida ao povo.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "humilhar"
+        },
+        {
+          "id": "b",
+          "text": "pecados"
+        },
+        {
+          "id": "c",
+          "text": "terra"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se humilhar, orar, e me buscar",
+      "feedbackCorrect": "Humilhar-se abre a lista de ações.",
+      "feedbackWrong": {
+        "b": "Pecados são perdoados depois; a primeira ação é humilhar.",
+        "c": "Terra é curada depois; a primeira ação é humilhar."
+      },
+      "hint": "Procure o primeiro verbo da condição.",
+      "learningObjective": "Identificar o humilhar-se.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Crônicas 7:14, o que Deus fará se o povo se humilhar e se converter?",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ouvirá, perdoará e curará a terra"
+        },
+        {
+          "id": "b",
+          "text": "Fechará os céus para sempre"
+        },
+        {
+          "id": "c",
+          "text": "Destruirá a casa imediatamente"
+        },
+        {
+          "id": "d",
+          "text": "Ignorará a oração deste lugar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra",
+      "feedbackCorrect": "Ouvir, perdoar e curar são a promessa.",
+      "feedbackWrong": {
+        "b": "Isso é o juízo condicional de 7:13.",
+        "c": "A destruição é se abandonarem.",
+        "d": "7:15 fala de olhos e ouvidos atentos."
+      },
+      "hint": "Leia o \"então\" de 7:14.",
+      "learningObjective": "Identificar a promessa.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Crônicas 7:14 na ordem do texto.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "E se o meu povo, que se chama pelo meu nome, se humilhar"
+        },
+        {
+          "id": "b",
+          "text": "orar, e me buscar, e se converter dos seus maus caminhos"
+        },
+        {
+          "id": "c",
+          "text": "então, eu ouvirei dos céus, perdoarei os seus pecados"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "se humilhar, orar, e me buscar, e se converter",
+      "feedbackCorrect": "Condição e promessa em sequência.",
+      "feedbackWrong": {
+        "default": "Comece pelo povo que se humilha."
+      },
+      "hint": "A cura fecha o versículo.",
+      "learningObjective": "Reconhecer a ordem de 7:14.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Crônicas 7:14, Deus diz: curarei a sua _____.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "terra"
+        },
+        {
+          "id": "b",
+          "text": "espada"
+        },
+        {
+          "id": "c",
+          "text": "torre"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "curarei a sua terra",
+      "feedbackCorrect": "A terra é objeto da cura prometida.",
+      "feedbackWrong": {
+        "b": "Não é espada.",
+        "c": "Não é torre."
+      },
+      "hint": "Veja a última palavra da promessa.",
+      "learningObjective": "Lembrar o objeto da cura.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Crônicas 7:14 comunica que se liga a este contexto?",
+      "verseRef": "2 Crônicas 7:14",
+      "passageA": {
+        "ref": "2 Crônicas 7:14"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Deus responde com um caminho de humilhação e cura."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Caminho de humilhação e cura"
+        },
+        {
+          "id": "b",
+          "text": "Casa sem qualquer condição"
+        },
+        {
+          "id": "c",
+          "text": "Promessa só de juízo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se humilhar, orar, e me buscar, e se converter",
+      "feedbackCorrect": "A resposta une arrependimento e restauração.",
+      "feedbackWrong": {
+        "b": "Há condições claras.",
+        "c": "Também há perdão e cura."
+      },
+      "hint": "Veja a condição e o então.",
+      "learningObjective": "Ligar humilhação e cura.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Crônicas 7:14, a cura da terra vem depois que o povo se humilha, ora, busca e se converte.",
+      "verseRef": "2 Crônicas 7:14",
+      "correctOptionId": "true",
+      "evidenceSpan": "então, eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra",
+      "feedbackCorrect": "O \"então\" marca o resultado das ações do povo.",
+      "feedbackWrong": {
+        "false": "Repare na palavra \"então\"."
+      },
+      "hint": "Veja o que segue às ações do povo.",
+      "learningObjective": "Compreender condição e resultado.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 7:14, toque a palavra que marca o resultado da conversão.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "então"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "nome"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então, eu ouvirei dos céus",
+      "feedbackCorrect": "\"Então\" introduz a resposta de Deus.",
+      "feedbackWrong": {
+        "b": "É quem deve agir.",
+        "c": "Identifica o povo, não o resultado."
+      },
+      "hint": "Procure a palavra antes de \"eu ouvirei\".",
+      "learningObjective": "Reconhecer o marcador de resultado.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como 2 Crônicas 7:19–22 se relaciona com 7:14–18?",
+      "verseRef": "2 Crônicas 7:19–20",
+      "options": [
+        {
+          "id": "a",
+          "text": "Após a promessa, vem o contraste do abandono e do juízo"
+        },
+        {
+          "id": "b",
+          "text": "O juízo cancela a escolha da casa sem aviso"
+        },
+        {
+          "id": "c",
+          "text": "Abandonar os deuses garante o trono"
+        },
+        {
+          "id": "d",
+          "text": "Não há qualquer risco para a casa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, se vocês se desviarem e abandonarem os meus estatutos",
+      "feedbackCorrect": "Promessa e aviso ficam lado a lado.",
+      "feedbackWrong": {
+        "b": "Há aviso claro antes do juízo.",
+        "c": "Abandonar o Senhor traz juízo.",
+        "d": "A casa pode tornar-se provérbio."
+      },
+      "hint": "Leia o \"Porém\" de 7:19.",
+      "learningObjective": "Relacionar promessa e aviso.",
+      "evidence": [
+        "2 Crônicas 7:19–20"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança a resposta em 2 Crônicas 7:12–22?",
+      "verseRef": "2 Crônicas 7:12–22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus ouve e escolhe a casa"
+        },
+        {
+          "id": "b",
+          "text": "Promete cura se o povo se humilhar"
+        },
+        {
+          "id": "c",
+          "text": "Avisa o juízo se abandonarem"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Porém, se vocês se desviarem",
+      "feedbackCorrect": "Escolha, promessa e aviso.",
+      "feedbackWrong": {
+        "default": "Comece pela resposta positiva."
+      },
+      "hint": "O juízo fecha o trecho.",
+      "learningObjective": "Compreender o arco da resposta.",
+      "evidence": [
+        "2 Crônicas 7:12–22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Crônicas 7:19, a palavra _____ introduz o contraste do abandono.",
+      "verseRef": "2 Crônicas 7:19",
+      "options": [
+        {
+          "id": "a",
+          "text": "Porém"
+        },
+        {
+          "id": "b",
+          "text": "Assim"
+        },
+        {
+          "id": "c",
+          "text": "Logo"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Porém, se vocês se desviarem",
+      "feedbackCorrect": "\"Porém\" vira a página para o aviso.",
+      "feedbackWrong": {
+        "b": "Não é Assim.",
+        "c": "Não é Logo."
+      },
+      "hint": "Veja a primeira palavra do versículo.",
+      "learningObjective": "Lembrar o marcador de contraste.",
+      "evidence": [
+        "2 Crônicas 7:19"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 7:14 a Tiago 4:10?",
+      "verseRef": "2 Crônicas 7:14",
+      "passageA": {
+        "ref": "2 Crônicas 7:14"
+      },
+      "passageB": {
+        "ref": "Tiago 4:10"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Humilhar-se diante de Deus"
+        },
+        {
+          "id": "b",
+          "text": "Exaltar-se sobre o povo"
+        },
+        {
+          "id": "c",
+          "text": "Fechar os céus de propósito"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se humilhar, orar, e me buscar",
+      "feedbackCorrect": "Nos dois textos, a humilhação abre caminho a Deus.",
+      "feedbackWrong": {
+        "b": "O chamado é humilhar-se.",
+        "c": "Fechar os céus é juízo, não o alvo."
+      },
+      "hint": "Compare a humilhação.",
+      "learningObjective": "Relacionar Crônicas a Tiago.",
+      "evidence": [
+        "2 Crônicas 7:14",
+        "Tiago 4:10"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "2 Crônicas 7:12–22 ensina que a casa escolhida está isenta de juízo mesmo se o povo abandonar o Senhor.",
+      "verseRef": "2 Crônicas 7:19–20",
+      "correctOptionId": "false",
+      "evidenceSpan": "esta casa que consagrei ao meu nome lançarei para longe da minha presença",
+      "feedbackCorrect": "A casa escolhida ainda pode sofrer juízo.",
+      "feedbackWrong": {
+        "true": "Leia o que acontece se se desviarem."
+      },
+      "hint": "Veja o destino da casa em 7:20.",
+      "learningObjective": "Corrigir a leitura de impunidade.",
+      "evidence": [
+        "2 Crônicas 7:19–20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Crônicas 7:20, toque o trecho que sustenta o juízo sobre a casa.",
+      "verseRef": "2 Crônicas 7:20",
+      "options": [
+        {
+          "id": "a",
+          "text": "lançarei para longe"
+        },
+        {
+          "id": "b",
+          "text": "meu nome"
+        },
+        {
+          "id": "c",
+          "text": "todos os povos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lançarei para longe da minha presença",
+      "feedbackCorrect": "A casa pode ser lançada longe da presença.",
+      "feedbackWrong": {
+        "b": "É o que foi consagrado.",
+        "c": "São as testemunhas do ditado."
+      },
+      "hint": "Procure a ação de Deus sobre a casa.",
+      "learningObjective": "Sustentar o juízo possível.",
+      "evidence": [
+        "2 Crônicas 7:20"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura 2 Crônicas 7:12–22 sustenta?",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus cura quem se humilha e julga quem abandona"
+        },
+        {
+          "id": "b",
+          "text": "A escolha da casa anula qualquer condição"
+        },
+        {
+          "id": "c",
+          "text": "Só o rei precisa fidelidade, não o povo"
+        },
+        {
+          "id": "d",
+          "text": "Orar sem conversão basta para a cura"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então, eu ouvirei dos céus, perdoarei os seus pecados e curarei a sua terra",
+      "feedbackCorrect": "Misericórdia e juízo formam a leitura.",
+      "feedbackWrong": {
+        "b": "Há condições e avisos claros.",
+        "c": "O povo também é chamado.",
+        "d": "A conversão dos maus caminhos é exigida."
+      },
+      "hint": "Una 7:14 e 7:19–22.",
+      "learningObjective": "Escolher a interpretação da resposta.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o caminho da humilhação à cura?",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "O povo se humilha e se converte"
+        },
+        {
+          "id": "b",
+          "text": "Deus ouve e perdoa do céu"
+        },
+        {
+          "id": "c",
+          "text": "A terra é curada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "curarei a sua terra",
+      "feedbackCorrect": "Humilhação, perdão e cura.",
+      "feedbackWrong": {
+        "default": "Comece pela ação do povo."
+      },
+      "hint": "A cura fecha a promessa.",
+      "learningObjective": "Encadear arrependimento e restauração.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Crônicas 7:14, o povo deve se _____ dos seus maus caminhos.",
+      "verseRef": "2 Crônicas 7:14",
+      "options": [
+        {
+          "id": "a",
+          "text": "converter"
+        },
+        {
+          "id": "b",
+          "text": "orgulhar"
+        },
+        {
+          "id": "c",
+          "text": "ocultar"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se converter dos seus maus caminhos",
+      "feedbackCorrect": "Converter-se carrega a volta dos maus caminhos.",
+      "feedbackWrong": {
+        "b": "O texto pede humilhar, não orgulhar.",
+        "c": "O verbo do texto é converter."
+      },
+      "hint": "Veja o verbo antes de \"dos seus maus caminhos\".",
+      "learningObjective": "Lembrar o termo da conversão.",
+      "evidence": [
+        "2 Crônicas 7:14"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Crônicas 7:14 a Jeremias 18:8?",
+      "verseRef": "2 Crônicas 7:14",
+      "passageA": {
+        "ref": "2 Crônicas 7:14"
+      },
+      "passageB": {
+        "ref": "Jeremias 18:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Converter e evitar o mal"
+        },
+        {
+          "id": "b",
+          "text": "Endurecer sem retorno"
+        },
+        {
+          "id": "c",
+          "text": "Destruir a casa sem aviso"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "se converter dos seus maus caminhos",
+      "feedbackCorrect": "Conversão e misericórdia se encontram.",
+      "feedbackWrong": {
+        "b": "Há caminho de volta.",
+        "c": "Há aviso antes do juízo."
+      },
+      "hint": "Compare a conversão.",
+      "learningObjective": "Ligar Crônicas a Jeremias.",
+      "evidence": [
+        "2 Crônicas 7:14",
+        "Jeremias 18:8"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,712 @@
+{
+  "study": {
+    "passageRef": "2 Samuel 10:9–14",
+    "passages": [
+      {
+        "ref": "2 Samuel 10:9–14"
+      }
+    ],
+    "context": "Joabe vê a batalha pela frente e pela retaguarda. Divide as tropas com Abisai, anima-se e deixa o resultado com o Senhor.",
+    "keyword": "Esforça-te",
+    "keywordGloss": "Chamado de Joabe à bravura, com o desfecho nas mãos do Senhor.",
+    "focusQuestion": "Onde você precisa esforçar-se e ainda assim entregar o resultado ao Senhor?",
+    "reflectionPrompts": [
+      "Frente e retaguarda",
+      "Ajuda mútua",
+      "O Senhor fará"
+    ],
+    "facts": [
+      {
+        "text": "Joabe viu a batalha pronta pela frente e pela retaguarda.",
+        "evidenceRef": "2 Samuel 10:9",
+        "evidenceSpan": "tanto pela frente quanto pela retaguarda"
+      },
+      {
+        "text": "Joabe escolheu os mais valentes contra os sírios.",
+        "evidenceRef": "2 Samuel 10:9",
+        "evidenceSpan": "escolheu entre os mais valentes de Israel"
+      },
+      {
+        "text": "Abisai formou linha contra os filhos de Amom.",
+        "evidenceRef": "2 Samuel 10:10",
+        "evidenceSpan": "formou uma linha contra os filhos de Amom"
+      },
+      {
+        "text": "Joabe propõe ajuda mútua se um lado for mais forte.",
+        "evidenceRef": "2 Samuel 10:11",
+        "evidenceSpan": "Se os sírios forem mais fortes do que eu, vem ajudar-me"
+      },
+      {
+        "text": "Joabe deixa o Senhor fazer o que lhe aprouver.",
+        "evidenceRef": "2 Samuel 10:12",
+        "evidenceSpan": "que o Senhor faça o que lhe aprouver"
+      },
+      {
+        "text": "Os sírios fugiram de diante de Joabe.",
+        "evidenceRef": "2 Samuel 10:13",
+        "evidenceSpan": "estes fugiram de diante deles"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "bravura",
+        "gloss": "Coragem pedida por Joabe pelo povo e pelas cidades de Deus."
+      },
+      {
+        "term": "aprouver",
+        "gloss": "O desfecho fica com o que parecer bem ao Senhor."
+      },
+      {
+        "term": "retaguarda",
+        "gloss": "A ameaça pelas costas que exige divisão sábia."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Joabe vê o cerco e divide as tropas",
+        "evidenceRef": "2 Samuel 10:9–10"
+      },
+      {
+        "label": "Pacto de ajuda mútua",
+        "evidenceRef": "2 Samuel 10:11"
+      },
+      {
+        "label": "Ânimo e entrega ao Senhor",
+        "evidenceRef": "2 Samuel 10:12"
+      },
+      {
+        "label": "Fuga dos sírios e de Amom",
+        "evidenceRef": "2 Samuel 10:13–14"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Esforça-te pois; lutemos com bravura.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 10:12"
+      },
+      {
+        "kind": "resultado",
+        "text": "Avançam; então os sírios fogem.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 10:13"
+      },
+      {
+        "kind": "sequência",
+        "text": "Vendo Amom a fuga dos sírios, também fogem.",
+        "marker": null,
+        "evidenceRef": "2 Samuel 10:14"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Deuteronômio 20:1–4",
+        "bridge": "Não temais na batalha"
+      },
+      {
+        "ref": "Salmos 20:7",
+        "bridge": "Confiança no Senhor"
+      },
+      {
+        "ref": "1 Samuel 14:6",
+        "bridge": "Coragem e confiança"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Joabe confia só na estratégia e ignora o Senhor.",
+        "why": "Ele diz que o Senhor faça o que lhe aprouver."
+      },
+      {
+        "text": "Cada um luta sozinho, sem ajuda.",
+        "why": "Há pacto explícito de socorro mútuo."
+      },
+      {
+        "text": "Amom vence e Joabe foge.",
+        "why": "Sírios e Amom fogem; Joabe volta a Jerusalém."
+      }
+    ],
+    "anchorQuestion": "Segundo 2 Samuel 10:12, a quem Joabe entrega o resultado da batalha?",
+    "centralInsight": "Seja forte: o Senhor fará o que bem lhe parecer — coragem com confiança."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em 2 Samuel 10:12, Joabe diz que o Senhor faça o que lhe aprouver.",
+      "verseRef": "2 Samuel 10:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Resultado com o Senhor.",
+      "feedbackWrong": {
+        "false": "O verso entrega o desfecho."
+      },
+      "hint": "Veja o fim do verso.",
+      "learningObjective": "Observar a entrega.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 10:10, toque contra quem Abisai formou linha.",
+      "verseRef": "2 Samuel 10:10",
+      "options": [
+        {
+          "id": "a",
+          "text": "povo"
+        },
+        {
+          "id": "b",
+          "text": "restante"
+        },
+        {
+          "id": "c",
+          "text": "entregou"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "restante",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Identificar Amom.",
+      "evidence": [
+        "2 Samuel 10:10"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo 2 Samuel 10:9, de onde vinha a ameaça vista por Joabe?",
+      "verseRef": "2 Samuel 10:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pela frente e pela retaguarda"
+        },
+        {
+          "id": "b",
+          "text": "Só do céu"
+        },
+        {
+          "id": "c",
+          "text": "Só de Jerusalém"
+        },
+        {
+          "id": "d",
+          "text": "Só de dentro do acampamento"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "tanto pela frente quanto pela retaguarda",
+      "feedbackCorrect": "Frente e retaguarda.",
+      "feedbackWrong": {
+        "b": "Há cerco humano.",
+        "c": "Há sírios e Amom.",
+        "d": "Há duas frentes."
+      },
+      "hint": "Leia a dupla ameaça.",
+      "learningObjective": "Reconhecer o cerco.",
+      "evidence": [
+        "2 Samuel 10:9"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte 2 Samuel 10:12 na ordem do texto.",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Esforça-te pois, lutemos com bravura"
+        },
+        {
+          "id": "b",
+          "text": "pelo nosso povo e pelas cidades do nosso Deus"
+        },
+        {
+          "id": "c",
+          "text": "e que o Senhor faça o que lhe aprouver"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Esforço, povo e Senhor.",
+      "feedbackWrong": {
+        "default": "Comece pelo esforço."
+      },
+      "hint": "Com quem fica o resultado?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em 2 Samuel 10:12, complete: lutemos com ___.",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "bravura"
+        },
+        {
+          "id": "b",
+          "text": "medo"
+        },
+        {
+          "id": "c",
+          "text": "ódio"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lutemos com bravura",
+      "feedbackCorrect": "Bravura.",
+      "feedbackWrong": {
+        "b": "Não é medo.",
+        "c": "Não é ódio."
+      },
+      "hint": "Veja o modo de lutar.",
+      "learningObjective": "Lembrar bravura.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que 2 Samuel 10:12 comunica que se liga a este contexto?",
+      "verseRef": "2 Samuel 10:12",
+      "passageA": {
+        "ref": "2 Samuel 10:12"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Coragem humana com o resultado nas mãos do Senhor."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Esforço e entrega"
+        },
+        {
+          "id": "b",
+          "text": "Desistência total"
+        },
+        {
+          "id": "c",
+          "text": "Confiança só em si"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Esforço com entrega.",
+      "feedbackWrong": {
+        "b": "Há esforço.",
+        "c": "Há o Senhor."
+      },
+      "hint": "O que Joabe une?",
+      "learningObjective": "Ligar verso e contexto.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em 2 Samuel 10:12, o texto traz o trecho — que o Senhor faça o que lhe aprouver.",
+      "verseRef": "2 Samuel 10:12",
+      "correctOptionId": "true",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "O versículo confirma a afirmação.",
+      "feedbackWrong": {
+        "false": "O trecho está no versículo."
+      },
+      "hint": "Compare com o palco.",
+      "learningObjective": "Ver a entrega do resultado.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 10:12, toque o marcador de causa.",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "lutemos"
+        },
+        {
+          "id": "b",
+          "text": "Esforça"
+        },
+        {
+          "id": "c",
+          "text": "nosso"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "Esforça",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar o pois.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação 2 Samuel 10:11–12 faz?",
+      "verseRef": "2 Samuel 10:11–12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ajuda mútua e esforço, com o desfecho no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Cada um foge sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Joabe ignora Abisai"
+        },
+        {
+          "id": "d",
+          "text": "O Senhor é deixado de fora"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Coragem com confiança.",
+      "feedbackWrong": {
+        "b": "Há pacto de ajuda.",
+        "c": "Há Abisai.",
+        "d": "Há o Senhor."
+      },
+      "hint": "Una ajuda e aprouver.",
+      "learningObjective": "Compreender a lógica.",
+      "evidence": [
+        "2 Samuel 10:11–12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da cena.",
+      "verseRef": "2 Samuel 10:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joabe vê o cerco e divide as tropas"
+        },
+        {
+          "id": "b",
+          "text": "Ânimo e entrega ao Senhor"
+        },
+        {
+          "id": "c",
+          "text": "Fuga dos sírios e de Amom"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "tanto pela frente quanto pela retaguarda",
+      "feedbackCorrect": "Cerco, ânimo e fuga.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco."
+      },
+      "hint": "O que fecha a batalha?",
+      "learningObjective": "Ordenar a estrutura.",
+      "evidence": [
+        "2 Samuel 10:9",
+        "2 Samuel 10:14"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em 2 Samuel 10:12, complete: que o Senhor faça o que lhe ___.",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "aprouver"
+        },
+        {
+          "id": "b",
+          "text": "apertar"
+        },
+        {
+          "id": "c",
+          "text": "omitir"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o que lhe aprouver",
+      "feedbackCorrect": "Aprouver.",
+      "feedbackWrong": {
+        "b": "Não é apertar.",
+        "c": "Não é omitir."
+      },
+      "hint": "Veja o desfecho.",
+      "learningObjective": "Lembrar aprouver.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 10:12 a Salmos 20:7?",
+      "verseRef": "2 Samuel 10:12",
+      "passageA": {
+        "ref": "2 Samuel 10:12"
+      },
+      "passageB": {
+        "ref": "Salmos 20:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Confiança no Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Confiança nos carros"
+        },
+        {
+          "id": "c",
+          "text": "Medo sem luta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Confiança no Senhor.",
+      "feedbackWrong": {
+        "b": "Há entrega.",
+        "c": "Há esforço com fé."
+      },
+      "hint": "Compare a confiança.",
+      "learningObjective": "Ligar à confiança.",
+      "evidence": [
+        "2 Samuel 10:12",
+        "Salmos 20:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em 2 Samuel 10:9–14, a vitória prova que Joabe dispensa o Senhor na batalha.",
+      "verseRef": "2 Samuel 10:12",
+      "correctOptionId": "false",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Ele entrega o resultado ao Senhor.",
+      "feedbackWrong": {
+        "true": "Há entrega explícita."
+      },
+      "hint": "Veja o fim do ânimo.",
+      "learningObjective": "Avaliar a leitura da vitória.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em 2 Samuel 10:12, toque o que sustenta a coragem com confiança.",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "nosso"
+        },
+        {
+          "id": "b",
+          "text": "lutemos"
+        },
+        {
+          "id": "c",
+          "text": "povo"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "lutemos",
+      "feedbackCorrect": "O texto aponta para esse trecho.",
+      "feedbackWrong": {
+        "a": "Essa opção não é o trecho pedido.",
+        "c": "Essa opção não é o trecho pedido."
+      },
+      "hint": "Procure no versículo o trecho pedido.",
+      "learningObjective": "Tocar Senhor.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une esforço, ajuda e resultado?",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coragem humana com o desfecho nas mãos do Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Só estratégia basta sem Deus"
+        },
+        {
+          "id": "c",
+          "text": "Fé dispensa qualquer luta"
+        },
+        {
+          "id": "d",
+          "text": "Amom prova que o Senhor falhou"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lutemos com bravura pelo nosso povo",
+      "feedbackCorrect": "Esforço e entrega.",
+      "feedbackWrong": {
+        "b": "Há o Senhor.",
+        "c": "Há luta.",
+        "d": "Amom foge."
+      },
+      "hint": "Una bravura e aprouver.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da coragem confiante.",
+      "verseRef": "2 Samuel 10:12",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ver o cerco e dividir forças"
+        },
+        {
+          "id": "b",
+          "text": "Animar-se e ajudar-se"
+        },
+        {
+          "id": "c",
+          "text": "Entregar o resultado ao Senhor"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Esforça-te pois",
+      "feedbackCorrect": "Cerco, ânimo e entrega.",
+      "feedbackWrong": {
+        "default": "Comece pelo cerco."
+      },
+      "hint": "Com quem fica o fim?",
+      "learningObjective": "Encadear a confiança.",
+      "evidence": [
+        "2 Samuel 10:12"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em 2 Samuel 10:9, complete: tanto pela frente quanto pela ___.",
+      "verseRef": "2 Samuel 10:9",
+      "options": [
+        {
+          "id": "a",
+          "text": "retaguarda"
+        },
+        {
+          "id": "b",
+          "text": "paz"
+        },
+        {
+          "id": "c",
+          "text": "festa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pela retaguarda",
+      "feedbackCorrect": "Retaguarda.",
+      "feedbackWrong": {
+        "b": "Não é paz.",
+        "c": "Não é festa."
+      },
+      "hint": "Veja a outra frente.",
+      "learningObjective": "Lembrar retaguarda.",
+      "evidence": [
+        "2 Samuel 10:9"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga 2 Samuel 10:12 a 1 Samuel 14:6?",
+      "verseRef": "2 Samuel 10:12",
+      "passageA": {
+        "ref": "2 Samuel 10:12"
+      },
+      "passageB": {
+        "ref": "1 Samuel 14:6"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor salva"
+        },
+        {
+          "id": "b",
+          "text": "O povo salva sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Fuga sem luta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "que o Senhor faça o que lhe aprouver",
+      "feedbackCorrect": "Salvação do Senhor.",
+      "feedbackWrong": {
+        "b": "Há o Senhor.",
+        "c": "Há batalha."
+      },
+      "hint": "Compare a confiança.",
+      "learningObjective": "Ligar à salvação.",
+      "evidence": [
+        "2 Samuel 10:12",
+        "1 Samuel 14:6"
+      ]
+    }
+  ]
+}

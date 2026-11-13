@@ -1,0 +1,3308 @@
+[
+  {
+    "id": "tito-cap-sem-tic-01-repreender-com-firmeza-01",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 1:11, é necessário fazê-los calar porque estão transtornando casas inteiras.",
+    "prompt": "Em Tito 1:11, é necessário fazê-los calar porque estão transtornando casas inteiras.",
+    "cue": "Em Tito 1:11, é necessário fazê-los calar porque estão transtornando casas inteiras.",
+    "verseRef": "Tito 1:11",
+    "passageText": "É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "É necessário fazê-los calar, pois estão transtornando casas inteiras",
+    "feedbackCorrect": "O pois liga a ordem de calar ao dano nas casas.",
+    "feedbackWrong": {
+      "false": "O versículo afirma a necessidade e o motivo."
+    },
+    "hint": "Veja o pois.",
+    "learningObjective": "Observar o motivo de fazê-los calar.",
+    "evidence": [
+      "Tito 1:11"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-01-repreender-com-firmeza-02",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 1:10, toque quem Paulo destaca especialmente entre os enganadores.",
+    "prompt": "Em Tito 1:10, toque quem Paulo destaca especialmente entre os enganadores.",
+    "cue": "Em Tito 1:10, toque quem Paulo destaca especialmente entre os enganadores.",
+    "verseRef": "Tito 1:10",
+    "passageText": "Pois existem muitos insubordinados, faladores fúteis e enganadores, especialmente os da circuncisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "faladores fúteis"
+      },
+      {
+        "id": "b",
+        "text": "da circuncisão"
+      },
+      {
+        "id": "c",
+        "text": "insubordinados"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "especialmente os da circuncisão",
+    "feedbackCorrect": "O especialmente aponta os da circuncisão.",
+    "feedbackWrong": {
+      "a": "Faladores fúteis descreve o grupo; o destaque é a circuncisão.",
+      "c": "Insubordinados é o grupo geral; a pergunta pede o especialmente."
+    },
+    "hint": "Procure o especialmente.",
+    "learningObjective": "Identificar o grupo destacado.",
+    "evidence": [
+      "Tito 1:10"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-01-repreender-com-firmeza-03",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 1:13, com que atitude Tito deve repreender?",
+    "prompt": "Segundo Tito 1:13, com que atitude Tito deve repreender?",
+    "cue": "Segundo Tito 1:13, com que atitude Tito deve repreender?",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Com indiferença, sem propósito"
+      },
+      {
+        "id": "b",
+        "text": "Aprovando as fábulas judaicas"
+      },
+      {
+        "id": "c",
+        "text": "Só em silêncio, sem palavras"
+      },
+      {
+        "id": "d",
+        "text": "Com rigor, para que estejam sadios na fé"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "repreenda-os com rigor, para que estejam sadios na fé",
+    "feedbackCorrect": "Rigor com propósito: saúde da fé.",
+    "feedbackWrong": {
+      "a": "Há propósito claro.",
+      "b": "O texto manda não se ocupar com fábulas.",
+      "c": "Há ordem de repreender."
+    },
+    "hint": "Olhe o modo e o para que.",
+    "learningObjective": "Registrar a repreensão com rigor e propósito.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-01-repreender-com-firmeza-04",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 1:13 na ordem do texto.",
+    "prompt": "Monte Tito 1:13 na ordem do texto.",
+    "cue": "Monte Tito 1:13 na ordem do texto.",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este testemunho é exato"
+      },
+      {
+        "id": "b",
+        "text": "Portanto, repreenda-os com rigor"
+      },
+      {
+        "id": "c",
+        "text": "para que estejam sadios na fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Portanto, repreenda-os com rigor, para que estejam sadios na fé",
+    "feedbackCorrect": "Testemunho → ordem → propósito.",
+    "feedbackWrong": {
+      "default": "Comece pelo testemunho; o para que fecha."
+    },
+    "hint": "O versículo abre com Este testemunho.",
+    "learningObjective": "Reconhecer a ordem de Tito 1:13.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-01-repreender-com-firmeza-05",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 1:13, Tito deve ___-os com rigor.",
+    "prompt": "Em Tito 1:13, Tito deve ___-os com rigor.",
+    "cue": "Em Tito 1:13, Tito deve ___-os com rigor.",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "template": "Este testemunho é exato. Portanto, ___-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "ignore"
+      },
+      {
+        "id": "b",
+        "text": "repreenda"
+      },
+      {
+        "id": "c",
+        "text": "imite"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "repreenda-os com rigor",
+    "feedbackCorrect": "O verbo da ordem é repreenda.",
+    "feedbackWrong": {
+      "a": "Não é ignorar; é repreender.",
+      "c": "Não é imitar os enganadores."
+    },
+    "hint": "Qual verbo vem depois de Portanto?",
+    "learningObjective": "Lembrar o verbo repreenda.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-01-repreender-com-firmeza-06",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:11 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:11 comunica que se liga a este contexto?",
+    "verseRef": "Tito 1:11",
+    "passageText": "É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza",
+    "passageA": {
+      "ref": "Tito 1:11",
+      "text": "É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "É preciso fazê-los calar porque transtornam casas por avareza."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Ensino sem efeito"
+      },
+      {
+        "id": "b",
+        "text": "Dano e ganância no ensino"
+      },
+      {
+        "id": "c",
+        "text": "Casas fortalecidas pelo erro"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ensinando coisas que não devem, por avareza",
+    "feedbackCorrect": "O transtorno das casas vem ligado à avareza no ensino.",
+    "feedbackWrong": {
+      "a": "Há efeito: casas transtornadas.",
+      "c": "O texto fala de transtorno, não fortalecimento."
+    },
+    "hint": "Veja o dano e o motivo.",
+    "learningObjective": "Ligar o versículo ao dano do falso ensino.",
+    "evidence": [
+      "Tito 1:11"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-01-repreender-com-firmeza-01",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 1:16, quem diz conhecer a Deus necessariamente o confirma pelas obras.",
+    "prompt": "Em Tito 1:16, quem diz conhecer a Deus necessariamente o confirma pelas obras.",
+    "cue": "Em Tito 1:16, quem diz conhecer a Deus necessariamente o confirma pelas obras.",
+    "verseRef": "Tito 1:16",
+    "passageText": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras",
+    "feedbackCorrect": "O no entanto mostra obras que negam o reconhecimento.",
+    "feedbackWrong": {
+      "true": "O texto afirma a negação pelas obras."
+    },
+    "hint": "Repare no no entanto.",
+    "learningObjective": "Compreender o contraste entre dizer e fazer.",
+    "evidence": [
+      "Tito 1:16"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-01-repreender-com-firmeza-02",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 1:16, toque a expressão que marca o contraste entre confessar e negar.",
+    "prompt": "Em Tito 1:16, toque a expressão que marca o contraste entre confessar e negar.",
+    "cue": "Em Tito 1:16, toque a expressão que marca o contraste entre confessar e negar.",
+    "verseRef": "Tito 1:16",
+    "passageText": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra",
+    "options": [
+      {
+        "id": "a",
+        "text": "abomináveis"
+      },
+      {
+        "id": "b",
+        "text": "conhecem"
+      },
+      {
+        "id": "c",
+        "text": "no entanto"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "no entanto, o negam por suas obras",
+    "feedbackCorrect": "\"No entanto\" vira a página: a boca diz, as obras negam.",
+    "feedbackWrong": {
+      "a": "Abomináveis descreve o resultado, não o contraste.",
+      "b": "Conhecem é a confissão; a virada vem depois."
+    },
+    "hint": "Procure o conector da virada.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Tito 1:16"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-01-repreender-com-firmeza-03",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 1:13 liga a repreensão ao resultado desejado?",
+    "prompt": "Como Tito 1:13 liga a repreensão ao resultado desejado?",
+    "cue": "Como Tito 1:13 liga a repreensão ao resultado desejado?",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A repreensão não tem finalidade"
+      },
+      {
+        "id": "b",
+        "text": "O rigor serve para que estejam sadios na fé"
+      },
+      {
+        "id": "c",
+        "text": "O fim é espalhar fábulas"
+      },
+      {
+        "id": "d",
+        "text": "O rigor existe só para humilhar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que estejam sadios na fé",
+    "feedbackCorrect": "O para que define o alvo: fé sadia.",
+    "feedbackWrong": {
+      "a": "O texto declara o propósito.",
+      "c": "Fábulas devem ser evitadas (1:14).",
+      "d": "Há propósito pastoral."
+    },
+    "hint": "Olhe o para que.",
+    "learningObjective": "Relacionar rigor e saúde da fé.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-01-repreender-com-firmeza-04",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Tito 1:10–13?",
+    "prompt": "Como avança o argumento em Tito 1:10–13?",
+    "cue": "Como avança o argumento em Tito 1:10–13?",
+    "verseRef": "Tito 1:10",
+    "passageText": "Pois existem muitos insubordinados, faladores fúteis e enganadores, especialmente os da circuncisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há muitos enganadores"
+      },
+      {
+        "id": "b",
+        "text": "É preciso fazê-los calar"
+      },
+      {
+        "id": "c",
+        "text": "Repreenda para saúde da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "existem muitos insubordinados, faladores fúteis e enganadores",
+    "feedbackCorrect": "Problema → necessidade de calar → repreensão com propósito.",
+    "feedbackWrong": {
+      "default": "Siga: problema → calar → repreender."
+    },
+    "hint": "O Portanto de 1:13 fecha o bloco.",
+    "learningObjective": "Ver o movimento do problema à correção.",
+    "evidence": [
+      "Tito 1:10–13"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-01-repreender-com-firmeza-05",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 1:13, o alvo é que estejam ___ na fé.",
+    "prompt": "Em Tito 1:13, o alvo é que estejam ___ na fé.",
+    "cue": "Em Tito 1:13, o alvo é que estejam ___ na fé.",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "template": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam ___ na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "sadios"
+      },
+      {
+        "id": "b",
+        "text": "orgulhosos"
+      },
+      {
+        "id": "c",
+        "text": "indiferentes"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que estejam sadios na fé",
+    "feedbackCorrect": "Saúde da fé é o alvo da repreensão.",
+    "feedbackWrong": {
+      "b": "Não é orgulho; é saúde.",
+      "c": "Não é indiferença."
+    },
+    "hint": "Qual adjetivo descreve a fé desejada?",
+    "learningObjective": "Lembrar a palavra sadios.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-01-repreender-com-firmeza-06",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 1:14 a 1 Timóteo 1:3–4?",
+    "prompt": "O que liga Tito 1:14 a 1 Timóteo 1:3–4?",
+    "cue": "O que liga Tito 1:14 a 1 Timóteo 1:3–4?",
+    "verseRef": "Tito 1:14",
+    "passageText": "Não se ocupem com fábulas judaicas, nem com mandamentos de homens desviados da verdade.",
+    "passageA": {
+      "ref": "Tito 1:14",
+      "text": "Não se ocupem com fábulas judaicas, nem com mandamentos de homens desviados da verdade."
+    },
+    "passageB": {
+      "ref": "1 Timóteo 1:3–4",
+      "text": "Como te pedi ao partir para a Macedônia, que permanecesses em Éfeso, a fim de admoestares a alguns para que não ensinassem outra doutrina. Nem se dediquem a fábulas nem a genealogias sem fim, pois isso promove mais discussões do que o serviço de Deus, fundamentado na fé."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Mandamentos humanos como centro"
+      },
+      {
+        "id": "b",
+        "text": "Evitar fábulas"
+      },
+      {
+        "id": "c",
+        "text": "Promover mitos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "Não se ocupem com fábulas judaicas",
+    "feedbackCorrect": "Nas duas cartas, Paulo afasta o povo de fábulas e desvios.",
+    "feedbackWrong": {
+      "a": "O texto rejeita mandamentos de homens desviados.",
+      "c": "Ambos mandam não se ocupar com isso."
+    },
+    "hint": "Compare o aviso sobre fábulas.",
+    "learningObjective": "Relacionar os textos contra fábulas.",
+    "evidence": [
+      "Tito 1:14",
+      "1 Timóteo 1:3–4"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-01-repreender-com-firmeza-01",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Tito 1:16 sustenta que é possível confessar conhecer a Deus e, ao mesmo tempo, negá-lo pelas obras.",
+    "prompt": "Tito 1:16 sustenta que é possível confessar conhecer a Deus e, ao mesmo tempo, negá-lo pelas obras.",
+    "cue": "Tito 1:16 sustenta que é possível confessar conhecer a Deus e, ao mesmo tempo, negá-lo pelas obras.",
+    "verseRef": "Tito 1:16",
+    "passageText": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras",
+    "feedbackCorrect": "O contraste entre boca e obras é explícito.",
+    "feedbackWrong": {
+      "false": "O versículo descreve exatamente essa contradição."
+    },
+    "hint": "Una reconhecimento e negação.",
+    "learningObjective": "Interpretar a contradição entre confissão e obras.",
+    "evidence": [
+      "Tito 1:16"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-01-repreender-com-firmeza-02",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 1:16, toque o trecho que sustenta a negação prática de Deus.",
+    "prompt": "Em Tito 1:16, toque o trecho que sustenta a negação prática de Deus.",
+    "cue": "Em Tito 1:16, toque o trecho que sustenta a negação prática de Deus.",
+    "verseRef": "Tito 1:16",
+    "passageText": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra",
+    "options": [
+      {
+        "id": "a",
+        "text": "por suas obras"
+      },
+      {
+        "id": "b",
+        "text": "Reconhecem"
+      },
+      {
+        "id": "c",
+        "text": "boa obra"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "o negam por suas obras",
+    "feedbackCorrect": "As obras são o lugar da negação.",
+    "feedbackWrong": {
+      "b": "Isso é a confissão verbal.",
+      "c": "Isso fala da reprovação final."
+    },
+    "hint": "Procure o que as obras fazem.",
+    "learningObjective": "Sustentar a leitura das obras que negam.",
+    "evidence": [
+      "Tito 1:16"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-01-repreender-com-firmeza-03",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 1:11 e 1:13 sustentam juntas?",
+    "prompt": "Que leitura Tito 1:11 e 1:13 sustentam juntas?",
+    "cue": "Que leitura Tito 1:11 e 1:13 sustentam juntas?",
+    "verseRef": "Tito 1:11",
+    "passageText": "É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza",
+    "options": [
+      {
+        "id": "a",
+        "text": "A repreensão é opcional e sem alvo"
+      },
+      {
+        "id": "b",
+        "text": "Corrigir o falso ensino protege casas e a fé"
+      },
+      {
+        "id": "c",
+        "text": "Avareza justifica o ensino errado"
+      },
+      {
+        "id": "d",
+        "text": "O falso ensino não afeta ninguém"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "estão transtornando casas inteiras",
+    "feedbackCorrect": "Há dano real e correção com alvo: fé sadia.",
+    "feedbackWrong": {
+      "a": "Há ordem e propósito.",
+      "c": "A avareza é o motivo do erro, não justificação.",
+      "d": "Casas estão sendo transtornadas."
+    },
+    "hint": "Una o dano e o para que da repreensão.",
+    "learningObjective": "Escolher a interpretação pastoral do texto.",
+    "evidence": [
+      "Tito 1:11",
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-01-repreender-com-firmeza-04",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da correção neste trecho?",
+    "prompt": "Qual sequência mostra o fio da correção neste trecho?",
+    "cue": "Qual sequência mostra o fio da correção neste trecho?",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repreender para fé sadia"
+      },
+      {
+        "id": "b",
+        "text": "Evitar fábulas e mandamentos humanos"
+      },
+      {
+        "id": "c",
+        "text": "Expor a contradição entre boca e obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "repreenda-os com rigor, para que estejam sadios na fé",
+    "feedbackCorrect": "Correção → pureza do ensino → julgamento das obras.",
+    "feedbackWrong": {
+      "default": "Comece pela repreensão; depois fábulas; por fim as obras."
+    },
+    "hint": "Pense: correção, conteúdo, prova.",
+    "learningObjective": "Ver o encadeamento correção–ensino–obras.",
+    "evidence": [
+      "Tito 1:13–16"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-01-repreender-com-firmeza-05",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 1:10, Paulo fala de faladores fúteis e ___.",
+    "prompt": "Em Tito 1:10, Paulo fala de faladores fúteis e ___.",
+    "cue": "Em Tito 1:10, Paulo fala de faladores fúteis e ___.",
+    "verseRef": "Tito 1:10",
+    "passageText": "Pois existem muitos insubordinados, faladores fúteis e enganadores, especialmente os da circuncisão.",
+    "template": "Pois existem muitos insubordinados, faladores fúteis e ___, especialmente os da circuncisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "apóstolos"
+      },
+      {
+        "id": "b",
+        "text": "enganadores"
+      },
+      {
+        "id": "c",
+        "text": "pastores"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "faladores fúteis e enganadores",
+    "feedbackCorrect": "O termo descreve quem transtorna com ensino falso.",
+    "feedbackWrong": {
+      "a": "Não são apóstolos neste versículo.",
+      "c": "O grupo problemático são os enganadores."
+    },
+    "hint": "Qual palavra fecha a lista?",
+    "learningObjective": "Lembrar o termo enganadores.",
+    "evidence": [
+      "Tito 1:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-01-repreender-com-firmeza-06",
+    "trail": "tito-cap",
+    "section": "tic-01-repreender-com-firmeza",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 1:16 a Mateus 7:21–23?",
+    "prompt": "O que liga Tito 1:16 a Mateus 7:21–23?",
+    "cue": "O que liga Tito 1:16 a Mateus 7:21–23?",
+    "verseRef": "Tito 1:16",
+    "passageText": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra",
+    "passageA": {
+      "ref": "Tito 1:16",
+      "text": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra"
+    },
+    "passageB": {
+      "ref": "Mateus 7:21",
+      "text": "Nem todo aquele que me chama: Senhor, Senhor! entrará no reino dos céus, mas sim aquele que pratica a vontade de meu Pai, que está nos céus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Conhecer Deus basta dizer"
+      },
+      {
+        "id": "b",
+        "text": "Obras que salvam sozinhas"
+      },
+      {
+        "id": "c",
+        "text": "Confessar sem obedecer"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o negam por suas obras",
+    "feedbackCorrect": "Nos dois textos, dizer e fazer podem se separar.",
+    "feedbackWrong": {
+      "a": "Ambos questionam a confissão vazia.",
+      "b": "O elo é a contradição, não mérito das obras."
+    },
+    "hint": "Compare boca e vida.",
+    "learningObjective": "Ligar os textos sobre confissão vazia.",
+    "evidence": [
+      "Tito 1:16",
+      "Mateus 7:21"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-02-ensinar-o-que-convem-01",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 2:1, Tito deve falar o que agrada aos ouvintes, sem ligar à sã doutrina.",
+    "prompt": "Em Tito 2:1, Tito deve falar o que agrada aos ouvintes, sem ligar à sã doutrina.",
+    "cue": "Em Tito 2:1, Tito deve falar o que agrada aos ouvintes, sem ligar à sã doutrina.",
+    "verseRef": "Tito 2:1",
+    "passageText": "Você, porém, fale o que é adequado à sã doutrina.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "fale o que é adequado à sã doutrina",
+    "feedbackCorrect": "A ordem é falar o adequado à sã doutrina, não o que agrada.",
+    "feedbackWrong": {
+      "true": "Leia de novo: o critério é a sã doutrina, não o gosto dos ouvintes."
+    },
+    "hint": "Veja a que a fala deve ser adequada.",
+    "learningObjective": "Observar a ordem sobre a sã doutrina.",
+    "evidence": [
+      "Tito 2:1"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-02-ensinar-o-que-convem-02",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 2:5, toque o que não deve ser difamado.",
+    "prompt": "Em Tito 2:5, toque o que não deve ser difamado.",
+    "cue": "Em Tito 2:5, toque o que não deve ser difamado.",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "donas de casa"
+      },
+      {
+        "id": "b",
+        "text": "sensatas"
+      },
+      {
+        "id": "c",
+        "text": "palavra de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que a palavra de Deus não seja difamada",
+    "feedbackCorrect": "O alvo da conduta é proteger a palavra de Deus.",
+    "feedbackWrong": {
+      "a": "Donas de casa descreve um papel; a pergunta pede o que não se difama.",
+      "b": "Sensatas é qualidade; o risco é à palavra."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Identificar a palavra de Deus como alvo de cuidado.",
+    "evidence": [
+      "Tito 2:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-02-ensinar-o-que-convem-03",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 2:7, o que Tito deve ser?",
+    "prompt": "Segundo Tito 2:7, o que Tito deve ser?",
+    "cue": "Segundo Tito 2:7, o que Tito deve ser?",
+    "verseRef": "Tito 2:7",
+    "passageText": "Em tudo, seja um padrão de boas obras; na doutrina, mostre integridade, reverência e seriedade.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Padrão de boas obras, com integridade na doutrina"
+      },
+      {
+        "id": "b",
+        "text": "Opositor dos senhores"
+      },
+      {
+        "id": "c",
+        "text": "Exemplo de calúnia e vinho em excesso"
+      },
+      {
+        "id": "d",
+        "text": "Alguém sem seriedade no ensino"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "seja um padrão de boas obras; na doutrina, mostre integridade",
+    "feedbackCorrect": "Vida e doutrina caminham juntas no padrão de Tito.",
+    "feedbackWrong": {
+      "b": "Servos devem submeter-se (2:9).",
+      "c": "Isso é o que se deve evitar (2:3).",
+      "d": "O texto pede seriedade."
+    },
+    "hint": "Olhe o começo do versículo.",
+    "learningObjective": "Registrar o chamado a ser padrão.",
+    "evidence": [
+      "Tito 2:7"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-02-ensinar-o-que-convem-04",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 2:1 na ordem do texto.",
+    "prompt": "Monte Tito 2:1 na ordem do texto.",
+    "cue": "Monte Tito 2:1 na ordem do texto.",
+    "verseRef": "Tito 2:1",
+    "passageText": "Você, porém, fale o que é adequado à sã doutrina.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Você, porém, fale"
+      },
+      {
+        "id": "b",
+        "text": "o que é adequado"
+      },
+      {
+        "id": "c",
+        "text": "à sã doutrina"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Você, porém, fale o que é adequado à sã doutrina",
+    "feedbackCorrect": "Ordem de falar → o adequado → à sã doutrina.",
+    "feedbackWrong": {
+      "default": "Comece por Você, porém, fale."
+    },
+    "hint": "O versículo abre com Você.",
+    "learningObjective": "Reconhecer a ordem de Tito 2:1.",
+    "evidence": [
+      "Tito 2:1"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-02-ensinar-o-que-convem-05",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+    "prompt": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+    "cue": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "template": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a ___ de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fúria"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "embelezar a doutrina de Deus, nosso Salvador",
+    "feedbackCorrect": "A conduta fideliza e embeleza a doutrina.",
+    "feedbackWrong": {
+      "a": "O texto fala de doutrina.",
+      "c": "Não é riqueza; é doutrina."
+    },
+    "hint": "O que se embeleza?",
+    "learningObjective": "Lembrar a palavra doutrina.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-02-ensinar-o-que-convem-06",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 2:5 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 2:5 comunica que se liga a este contexto?",
+    "cue": "O que Tito 2:5 comunica que se liga a este contexto?",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "passageA": {
+      "ref": "Tito 2:5",
+      "text": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada."
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A conduta existe para que a palavra de Deus não seja difamada."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Palavra que difama a si mesma"
+      },
+      {
+        "id": "b",
+        "text": "Conduta que protege a palavra"
+      },
+      {
+        "id": "c",
+        "text": "Conduta sem efeito na palavra"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que a palavra de Deus não seja difamada",
+    "feedbackCorrect": "O para que liga hábitos do lar à reputação da palavra.",
+    "feedbackWrong": {
+      "a": "O risco é a difamação pela conduta.",
+      "c": "Há efeito claro."
+    },
+    "hint": "Veja o propósito final.",
+    "learningObjective": "Ligar conduta e reputação da palavra.",
+    "evidence": [
+      "Tito 2:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-02-ensinar-o-que-convem-01",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina de Deus.",
+    "prompt": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina de Deus.",
+    "cue": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina de Deus.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a fim de que em tudo possam embelezar a doutrina de Deus",
+    "feedbackCorrect": "O a fim de que liga fidelidade e doutrina.",
+    "feedbackWrong": {
+      "true": "O texto diz que a fidelidade embeleza a doutrina."
+    },
+    "hint": "Repare no a fim de que.",
+    "learningObjective": "Compreender o propósito da fidelidade.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-02-ensinar-o-que-convem-02",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 2:5, toque a expressão que marca o propósito da conduta.",
+    "prompt": "Em Tito 2:5, toque a expressão que marca o propósito da conduta.",
+    "cue": "Em Tito 2:5, toque a expressão que marca o propósito da conduta.",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "submissas"
+      },
+      {
+        "id": "b",
+        "text": "para que"
+      },
+      {
+        "id": "c",
+        "text": "bondosas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que a palavra de Deus não seja difamada",
+    "feedbackCorrect": "\"Para que\" introduz o propósito: não difamar a palavra.",
+    "feedbackWrong": {
+      "a": "Submissas é conduta; o propósito vem no para que.",
+      "c": "Bondosas é qualidade; a pergunta pede o marcador."
+    },
+    "hint": "Procure o marcador de finalidade.",
+    "learningObjective": "Reconhecer o marcador de propósito.",
+    "evidence": [
+      "Tito 2:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-02-ensinar-o-que-convem-03",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 2:7–8 liga o padrão de Tito ao adversário?",
+    "prompt": "Como Tito 2:7–8 liga o padrão de Tito ao adversário?",
+    "cue": "Como Tito 2:7–8 liga o padrão de Tito ao adversário?",
+    "verseRef": "Tito 2:7–8",
+    "passageText": "Em tudo, seja um padrão de boas obras; na doutrina, mostre integridade, reverência e seriedade. Palavra sadia e irrepreensível, para que o adversário seja envergonhado, não tendo indignidade nenhuma a dizer a nosso respeito.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Integridade e palavra sadia envergonham o adversário"
+      },
+      {
+        "id": "b",
+        "text": "O adversário deve ser imitado"
+      },
+      {
+        "id": "c",
+        "text": "A doutrina pode ser irreverente"
+      },
+      {
+        "id": "d",
+        "text": "Não importa o que digam a nosso respeito"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "para que o adversário seja envergonhado",
+    "feedbackCorrect": "Vida íntegra e palavra sadia fecham a boca do adversário.",
+    "feedbackWrong": {
+      "b": "O adversário é envergonhado, não imitado.",
+      "c": "O texto pede reverência e seriedade.",
+      "d": "O texto se importa com o que se pode dizer."
+    },
+    "hint": "Una padrão e o para que de 2:8.",
+    "learningObjective": "Relacionar exemplo e adversário.",
+    "evidence": [
+      "Tito 2:7–8"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-02-ensinar-o-que-convem-04",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Tito 2:1–5?",
+    "prompt": "Como avança o argumento em Tito 2:1–5?",
+    "cue": "Como avança o argumento em Tito 2:1–5?",
+    "verseRef": "Tito 2:1",
+    "passageText": "Você, porém, fale o que é adequado à sã doutrina.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Fale o adequado à sã doutrina"
+      },
+      {
+        "id": "b",
+        "text": "Conduta de homens e mulheres mais velhos"
+      },
+      {
+        "id": "c",
+        "text": "Jovens: para que a palavra não seja difamada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fale o que é adequado à sã doutrina",
+    "feedbackCorrect": "Doutrina → gerações → propósito da palavra.",
+    "feedbackWrong": {
+      "default": "Siga: ordem de falar → mais velhos → jovens e a palavra."
+    },
+    "hint": "O para que de 2:5 fecha o bloco.",
+    "learningObjective": "Ver o movimento da doutrina à reputação.",
+    "evidence": [
+      "Tito 2:1–5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-02-ensinar-o-que-convem-05",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 2:5, a palavra de Deus não deve ser ___.",
+    "prompt": "Em Tito 2:5, a palavra de Deus não deve ser ___.",
+    "cue": "Em Tito 2:5, a palavra de Deus não deve ser ___.",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "template": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja ___.",
+    "options": [
+      {
+        "id": "a",
+        "text": "difamada"
+      },
+      {
+        "id": "b",
+        "text": "ouvida"
+      },
+      {
+        "id": "c",
+        "text": "ensinada"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não seja difamada",
+    "feedbackCorrect": "O risco nomeado é a difamação da palavra.",
+    "feedbackWrong": {
+      "b": "Ouvir não é o verbo do risco.",
+      "c": "Ensinar é positivo; o risco é difamar."
+    },
+    "hint": "Qual verbo negativa o versículo?",
+    "learningObjective": "Lembrar a palavra difamada.",
+    "evidence": [
+      "Tito 2:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-02-ensinar-o-que-convem-06",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+    "prompt": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+    "cue": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+    "verseRef": "Tito 2:7",
+    "passageText": "Em tudo, seja um padrão de boas obras; na doutrina, mostre integridade, reverência e seriedade.",
+    "passageA": {
+      "ref": "Tito 2:7",
+      "text": "Em tudo, seja um padrão de boas obras; na doutrina, mostre integridade, reverência e seriedade."
+    },
+    "passageB": {
+      "ref": "1 Timóteo 4:12",
+      "text": "Ninguém despreze a sua juventude; pelo contrário, seja um padrão para os fiéis na palavra, no comportamento, na caridade, na fé e na pureza."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desprezar a juventude"
+      },
+      {
+        "id": "b",
+        "text": "Doutrina sem vida"
+      },
+      {
+        "id": "c",
+        "text": "Ser exemplo"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "seja um padrão de boas obras",
+    "feedbackCorrect": "Nos dois textos, o líder deve ser exemplo/padrão.",
+    "feedbackWrong": {
+      "a": "O chamado é ser exemplo.",
+      "b": "Ambos unem doutrina e vida."
+    },
+    "hint": "Compare padrão e exemplo.",
+    "learningObjective": "Relacionar os textos sobre exemplo do líder.",
+    "evidence": [
+      "Tito 2:7",
+      "1 Timóteo 4:12"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-02-ensinar-o-que-convem-01",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Tito 2:5 e 2:10 sustentam que a conduta cristã pode difamar ou embelezar a doutrina de Deus.",
+    "prompt": "Tito 2:5 e 2:10 sustentam que a conduta cristã pode difamar ou embelezar a doutrina de Deus.",
+    "cue": "Tito 2:5 e 2:10 sustentam que a conduta cristã pode difamar ou embelezar a doutrina de Deus.",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "para que a palavra de Deus não seja difamada",
+    "feedbackCorrect": "Há risco de difamação e chamado a embelezar (2:10).",
+    "feedbackWrong": {
+      "false": "Os dois fins mostram o peso da conduta sobre a doutrina."
+    },
+    "hint": "Compare difamar e embelezar.",
+    "learningObjective": "Interpretar o impacto público da conduta.",
+    "evidence": [
+      "Tito 2:5",
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-02-ensinar-o-que-convem-02",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 2:10, toque o trecho que sustenta o efeito positivo da fidelidade.",
+    "prompt": "Em Tito 2:10, toque o trecho que sustenta o efeito positivo da fidelidade.",
+    "cue": "Em Tito 2:10, toque o trecho que sustenta o efeito positivo da fidelidade.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "embelezar a doutrina"
+      },
+      {
+        "id": "b",
+        "text": "não roubando"
+      },
+      {
+        "id": "c",
+        "text": "toda a fidelidade"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "possam embelezar a doutrina de Deus, nosso Salvador",
+    "feedbackCorrect": "\"Embelezar a doutrina\" nomeia o efeito desejado.",
+    "feedbackWrong": {
+      "b": "Isso é a conduta; a pergunta pede o efeito.",
+      "c": "Fidelidade é o meio; o efeito é embelezar."
+    },
+    "hint": "Procure o verbo do propósito.",
+    "learningObjective": "Sustentar a leitura do embelezamento.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-02-ensinar-o-que-convem-03",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 2:1–10 sustenta?",
+    "prompt": "Que leitura Tito 2:1–10 sustenta?",
+    "cue": "Que leitura Tito 2:1–10 sustenta?",
+    "verseRef": "Tito 2:1",
+    "passageText": "Você, porém, fale o que é adequado à sã doutrina.",
+    "options": [
+      {
+        "id": "a",
+        "text": "A doutrina não precisa de conduta"
+      },
+      {
+        "id": "b",
+        "text": "A sã doutrina molda a vida para honrar a palavra"
+      },
+      {
+        "id": "c",
+        "text": "Só os líderes precisam de integridade"
+      },
+      {
+        "id": "d",
+        "text": "Embelezar a doutrina é opcional"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fale o que é adequado à sã doutrina",
+    "feedbackCorrect": "Do falar ao embelezar, a doutrina forma a vida pública.",
+    "feedbackWrong": {
+      "a": "Todo o capítulo é conduta.",
+      "c": "Há instrução para vários grupos.",
+      "d": "Há a fim de que embelezar."
+    },
+    "hint": "Una doutrina, conduta e reputação.",
+    "learningObjective": "Escolher a interpretação que o capítulo sustenta.",
+    "evidence": [
+      "Tito 2:1",
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-02-ensinar-o-que-convem-04",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da doutrina neste trecho?",
+    "prompt": "Qual sequência mostra o fio da doutrina neste trecho?",
+    "cue": "Qual sequência mostra o fio da doutrina neste trecho?",
+    "verseRef": "Tito 2:1",
+    "passageText": "Você, porém, fale o que é adequado à sã doutrina.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Falar o adequado à sã doutrina"
+      },
+      {
+        "id": "b",
+        "text": "Viver conforme o que convém a cada um"
+      },
+      {
+        "id": "c",
+        "text": "Embelezar a doutrina de Deus"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "fale o que é adequado à sã doutrina",
+    "feedbackCorrect": "Falar → viver → embelezar.",
+    "feedbackWrong": {
+      "default": "Comece pelo falar; o embelezar fecha o bloco."
+    },
+    "hint": "Pense: ensino, prática, testemunho.",
+    "learningObjective": "Ver o encadeamento doutrina–vida–testemunho.",
+    "evidence": [
+      "Tito 2:1",
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-02-ensinar-o-que-convem-05",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 2:10, os servos devem ___ a doutrina de Deus.",
+    "prompt": "Em Tito 2:10, os servos devem ___ a doutrina de Deus.",
+    "cue": "Em Tito 2:10, os servos devem ___ a doutrina de Deus.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "template": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam ___ a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "esconder"
+      },
+      {
+        "id": "b",
+        "text": "difamar"
+      },
+      {
+        "id": "c",
+        "text": "embelezar"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "possam embelezar a doutrina de Deus",
+    "feedbackCorrect": "O verbo teológico da cena prática é embelezar.",
+    "feedbackWrong": {
+      "a": "Não é esconder.",
+      "b": "Difamar é o risco de 2:5; aqui é embelezar."
+    },
+    "hint": "Qual verbo expressa o objetivo?",
+    "learningObjective": "Lembrar o termo embelezar.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-02-ensinar-o-que-convem-06",
+    "trail": "tito-cap",
+    "section": "tic-02-ensinar-o-que-convem",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 2:10 a Mateus 5:16?",
+    "prompt": "O que liga Tito 2:10 a Mateus 5:16?",
+    "cue": "O que liga Tito 2:10 a Mateus 5:16?",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "passageA": {
+      "ref": "Tito 2:10",
+      "text": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador."
+    },
+    "passageB": {
+      "ref": "Mateus 5:16",
+      "text": "Assim resplandeça a sua luz diante dos homens, para que vejam as suas boas obras e glorifiquem a seu Pai que está nos céus."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Boas obras que honram a Deus"
+      },
+      {
+        "id": "b",
+        "text": "Conduta sem testemunho"
+      },
+      {
+        "id": "c",
+        "text": "Obras para se exibir"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "embelezar a doutrina de Deus, nosso Salvador",
+    "feedbackCorrect": "Nos dois textos, a conduta aponta para Deus, não para si.",
+    "feedbackWrong": {
+      "b": "Há testemunho público claro.",
+      "c": "O alvo é a doutrina/glória de Deus."
+    },
+    "hint": "Compare embelezar e brilhar diante dos homens.",
+    "learningObjective": "Ligar os textos sobre obras que honram a Deus.",
+    "evidence": [
+      "Tito 2:10",
+      "Mateus 5:16"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-03-salvos-pela-misericordia-01",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 3:5, Deus nos salvou segundo a sua misericórdia, não por obras de justiça.",
+    "prompt": "Em Tito 3:5, Deus nos salvou segundo a sua misericórdia, não por obras de justiça.",
+    "cue": "Em Tito 3:5, Deus nos salvou segundo a sua misericórdia, não por obras de justiça.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+    "feedbackCorrect": "O contraste obras × misericórdia é explícito.",
+    "feedbackWrong": {
+      "false": "O versículo nega as obras e afirma a misericórdia."
+    },
+    "hint": "Veja o não… mas…",
+    "learningObjective": "Observar o fundamento da salvação.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-03-salvos-pela-misericordia-02",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 3:4, toque o que se manifestou da parte de Deus.",
+    "prompt": "Em Tito 3:4, toque o que se manifestou da parte de Deus.",
+    "cue": "Em Tito 3:4, toque o que se manifestou da parte de Deus.",
+    "verseRef": "Tito 3:4",
+    "passageText": "Mas quando se manifestaram a benignidade e o amor de Deus, nosso Salvador, para com todos os seres humanos,",
+    "options": [
+      {
+        "id": "a",
+        "text": "quando"
+      },
+      {
+        "id": "b",
+        "text": "humanos"
+      },
+      {
+        "id": "c",
+        "text": "benignidade"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "se manifestaram a benignidade e o amor de Deus",
+    "feedbackCorrect": "Benignidade e amor de Deus se manifestaram.",
+    "feedbackWrong": {
+      "a": "Quando marca o tempo, não o que se manifestou.",
+      "b": "Humanos são o destinatário do amor."
+    },
+    "hint": "Procure o que se manifestou.",
+    "learningObjective": "Identificar a benignidade de Deus.",
+    "evidence": [
+      "Tito 3:4"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-03-salvos-pela-misericordia-03",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 3:3, como éramos em outro tempo?",
+    "prompt": "Segundo Tito 3:3, como éramos em outro tempo?",
+    "cue": "Segundo Tito 3:3, como éramos em outro tempo?",
+    "verseRef": "Tito 3:3",
+    "passageText": "Porque também nós, em outro tempo, éramos insensatos, desobedientes, extraviados, escravos de diversas paixões e prazeres, vivendo em malícia e inveja, odiosos e odiando-nos uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Insensatos, desobedientes e extraviados"
+      },
+      {
+        "id": "b",
+        "text": "Livres de qualquer paixão"
+      },
+      {
+        "id": "c",
+        "text": "Sem necessidade de Salvador"
+      },
+      {
+        "id": "d",
+        "text": "Já justificados pelas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "éramos insensatos, desobedientes, extraviados",
+    "feedbackCorrect": "Paulo inclui a todos no passado sombrio.",
+    "feedbackWrong": {
+      "b": "Éramos escravos de paixões.",
+      "c": "Há Salvador em 3:4–5.",
+      "d": "A justificativa vem depois, pela graça."
+    },
+    "hint": "Olhe a lista do passado.",
+    "learningObjective": "Registrar o passado compartilhado.",
+    "evidence": [
+      "Tito 3:3"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-03-salvos-pela-misericordia-04",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 3:5 na ordem do texto (trecho central).",
+    "prompt": "Monte Tito 3:5 na ordem do texto (trecho central).",
+    "cue": "Monte Tito 3:5 na ordem do texto (trecho central).",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "não por meio das obras de justiça"
+      },
+      {
+        "id": "b",
+        "text": "mas segundo a sua misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "ele nos salvou pelo lavar regenerador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+    "feedbackCorrect": "Negação das obras → misericórdia → lavar regenerador.",
+    "feedbackWrong": {
+      "default": "Comece pela negação das obras."
+    },
+    "hint": "O versículo opõe obras e misericórdia.",
+    "learningObjective": "Reconhecer a ordem de Tito 3:5.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-03-salvos-pela-misericordia-05",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+    "prompt": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+    "cue": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "template": "não por meio das obras de justiça que realizamos, mas segundo a sua ___, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "cobrança"
+      },
+      {
+        "id": "c",
+        "text": "indiferença"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas segundo a sua misericórdia",
+    "feedbackCorrect": "O fundamento nomeado é a misericórdia.",
+    "feedbackWrong": {
+      "b": "Não é cobrança; é misericórdia.",
+      "c": "Há amor e benignidade, não indiferença."
+    },
+    "hint": "Qual palavra vem depois de segundo a sua?",
+    "learningObjective": "Lembrar a palavra misericórdia.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-03-salvos-pela-misericordia-06",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 3:5 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 3:5 comunica que se liga a este contexto?",
+    "cue": "O que Tito 3:5 comunica que se liga a este contexto?",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "passageA": {
+      "ref": "Tito 3:5",
+      "text": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "A salvação vem da misericórdia de Deus, não das nossas obras."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvação sem Espírito"
+      },
+      {
+        "id": "b",
+        "text": "Misericórdia, não mérito"
+      },
+      {
+        "id": "c",
+        "text": "Obras que compram salvação"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+    "feedbackCorrect": "O contraste define o evangelho deste trecho.",
+    "feedbackWrong": {
+      "a": "Há lavar regenerador do Espírito.",
+      "c": "O texto nega esse caminho."
+    },
+    "hint": "Compare obras e misericórdia.",
+    "learningObjective": "Ligar o versículo ao fundamento da salvação.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-03-salvos-pela-misericordia-01",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 3:4–5, a manifestação do amor de Deus leva à salvação pelas nossas obras.",
+    "prompt": "Em Tito 3:4–5, a manifestação do amor de Deus leva à salvação pelas nossas obras.",
+    "cue": "Em Tito 3:4–5, a manifestação do amor de Deus leva à salvação pelas nossas obras.",
+    "verseRef": "Tito 3:4–5",
+    "passageText": "Mas quando se manifestaram a benignidade e o amor de Deus, nosso Salvador, para com todos os seres humanos, não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+    "feedbackCorrect": "O amor se manifesta; a salvação é pela misericórdia, não pelas obras.",
+    "feedbackWrong": {
+      "true": "O texto nega as obras como meio."
+    },
+    "hint": "Una 3:4 e o não… mas… de 3:5.",
+    "learningObjective": "Compreender a relação entre amor e meio da salvação.",
+    "evidence": [
+      "Tito 3:4–5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-03-salvos-pela-misericordia-02",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+    "prompt": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+    "cue": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "lavar"
+      },
+      {
+        "id": "c",
+        "text": "mas"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas segundo a sua misericórdia",
+    "feedbackCorrect": "\"Mas\" vira da negação das obras para a misericórdia.",
+    "feedbackWrong": {
+      "a": "Espírito é quem regenera; o contraste está no mas.",
+      "b": "Lavar é o meio; a virada é o mas."
+    },
+    "hint": "Procure o conector da oposição.",
+    "learningObjective": "Reconhecer o marcador de contraste.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-03-salvos-pela-misericordia-03",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 3:7 se liga à salvação de 3:5?",
+    "prompt": "Como Tito 3:7 se liga à salvação de 3:5?",
+    "cue": "Como Tito 3:7 se liga à salvação de 3:5?",
+    "verseRef": "Tito 3:7",
+    "passageText": "Para que, justificados pela sua graça, nos tornemos seus herdeiros, de acordo com a esperança da vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Substitui misericórdia por mérito"
+      },
+      {
+        "id": "b",
+        "text": "Nega a graça mencionada antes"
+      },
+      {
+        "id": "c",
+        "text": "Afirma herança pelas obras"
+      },
+      {
+        "id": "d",
+        "text": "Mostra o fim: justificados pela graça, herdeiros"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "justificados pela sua graça, nos tornemos seus herdeiros",
+    "feedbackCorrect": "O Para que aponta o resultado da salvação: herança pela graça.",
+    "feedbackWrong": {
+      "a": "A graça permanece.",
+      "b": "Há continuidade na graça.",
+      "c": "É pela graça, não pelas obras."
+    },
+    "hint": "Olhe o Para que.",
+    "learningObjective": "Relacionar salvação e herança.",
+    "evidence": [
+      "Tito 3:5",
+      "Tito 3:7"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-03-salvos-pela-misericordia-04",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Tito 3:3–7?",
+    "prompt": "Como avança o argumento em Tito 3:3–7?",
+    "cue": "Como avança o argumento em Tito 3:3–7?",
+    "verseRef": "Tito 3:3",
+    "passageText": "Porque também nós, em outro tempo, éramos insensatos, desobedientes, extraviados, escravos de diversas paixões e prazeres, vivendo em malícia e inveja, odiosos e odiando-nos uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Passado: éramos insensatos"
+      },
+      {
+        "id": "b",
+        "text": "Virada: amor de Deus e misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "Resultado: justificados e herdeiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "éramos insensatos, desobedientes, extraviados",
+    "feedbackCorrect": "Passado → misericórdia → herança.",
+    "feedbackWrong": {
+      "default": "Siga: outrora → mas quando → para que."
+    },
+    "hint": "O Mas de 3:4 e o Para que de 3:7 marcam as viradas.",
+    "learningObjective": "Ver o movimento do passado à herança.",
+    "evidence": [
+      "Tito 3:3–7"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-03-salvos-pela-misericordia-05",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 3:7, somos justificados pela sua ___.",
+    "prompt": "Em Tito 3:7, somos justificados pela sua ___.",
+    "cue": "Em Tito 3:7, somos justificados pela sua ___.",
+    "verseRef": "Tito 3:7",
+    "passageText": "Para que, justificados pela sua graça, nos tornemos seus herdeiros, de acordo com a esperança da vida eterna.",
+    "template": "Para que, justificados pela sua ___, nos tornemos seus herdeiros, de acordo com a esperança da vida eterna.",
+    "options": [
+      {
+        "id": "a",
+        "text": "força"
+      },
+      {
+        "id": "b",
+        "text": "sorte"
+      },
+      {
+        "id": "c",
+        "text": "graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "justificados pela sua graça",
+    "feedbackCorrect": "A justificativa é pela graça.",
+    "feedbackWrong": {
+      "a": "Não é força própria.",
+      "b": "Não é sorte; é graça."
+    },
+    "hint": "Justificados pela sua…?",
+    "learningObjective": "Lembrar a palavra graça.",
+    "evidence": [
+      "Tito 3:7"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-03-salvos-pela-misericordia-06",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 3:5 a Efésios 2:8–9?",
+    "prompt": "O que liga Tito 3:5 a Efésios 2:8–9?",
+    "cue": "O que liga Tito 3:5 a Efésios 2:8–9?",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "passageA": {
+      "ref": "Tito 3:5",
+      "text": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Efésios 2:8–9",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvos sem obras"
+      },
+      {
+        "id": "b",
+        "text": "Salvação negociada"
+      },
+      {
+        "id": "c",
+        "text": "Obras que merecem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos",
+    "feedbackCorrect": "Nos dois textos, a salvação não vem das obras.",
+    "feedbackWrong": {
+      "b": "O elo é graça/misericórdia, não troca.",
+      "c": "Ambos negam o mérito das obras."
+    },
+    "hint": "Compare a exclusão das obras.",
+    "learningObjective": "Relacionar os textos sobre graça sem obras.",
+    "evidence": [
+      "Tito 3:5",
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-03-salvos-pela-misericordia-01",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+    "prompt": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+    "cue": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+    "verseRef": "Tito 3:8",
+    "passageText": "Fiel é a palavra, e quero que você afirme isso com confiança, para que os que creem em Deus se empenhem na prática de boas obras; essas coisas são excelentes e proveitosas para os homens.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os que creem em Deus se empenhem na prática de boas obras",
+    "feedbackCorrect": "As boas obras vêm dos que creem, não como preço da salvação.",
+    "feedbackWrong": {
+      "false": "Paulo quer afirmação confiante que leva ao empenho nas obras."
+    },
+    "hint": "Veja quem deve se empenhar.",
+    "learningObjective": "Interpretar as boas obras como fruto da fé.",
+    "evidence": [
+      "Tito 3:8"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-03-salvos-pela-misericordia-02",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 3:5, toque o trecho que sustenta que a salvação não vem das obras.",
+    "prompt": "Em Tito 3:5, toque o trecho que sustenta que a salvação não vem das obras.",
+    "cue": "Em Tito 3:5, toque o trecho que sustenta que a salvação não vem das obras.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "não por meio"
+      },
+      {
+        "id": "b",
+        "text": "Espírito Santo"
+      },
+      {
+        "id": "c",
+        "text": "lavar regenerador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos",
+    "feedbackCorrect": "\"Não por meio das obras\" corta a leitura meritória.",
+    "feedbackWrong": {
+      "b": "Nomeia quem regenera, não a exclusão das obras.",
+      "c": "Isso é o meio positivo; a pergunta pede a exclusão."
+    },
+    "hint": "Procure a negação.",
+    "learningObjective": "Sustentar a leitura anti-meritória.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-03-salvos-pela-misericordia-03",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 3:3–8 sustenta?",
+    "prompt": "Que leitura Tito 3:3–8 sustenta?",
+    "cue": "Que leitura Tito 3:3–8 sustenta?",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "O passado prova que não precisávamos de Salvador"
+      },
+      {
+        "id": "b",
+        "text": "Justificação pela graça anula qualquer obra"
+      },
+      {
+        "id": "c",
+        "text": "Misericórdia salva; a fé responde com boas obras"
+      },
+      {
+        "id": "d",
+        "text": "Obras compram a misericórdia de Deus"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas segundo a sua misericórdia, ele nos salvou",
+    "feedbackCorrect": "Salvação pela misericórdia e empenho nas obras dos que creem cabem juntos.",
+    "feedbackWrong": {
+      "a": "O passado mostra necessidade.",
+      "b": "3:8 manda empenhar-se nas obras.",
+      "d": "O texto nega as obras como meio."
+    },
+    "hint": "Una 3:5 e 3:8.",
+    "learningObjective": "Escolher a interpretação graça e frutos.",
+    "evidence": [
+      "Tito 3:5",
+      "Tito 3:8"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-03-salvos-pela-misericordia-04",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da graça neste trecho?",
+    "prompt": "Qual sequência mostra o fio da graça neste trecho?",
+    "cue": "Qual sequência mostra o fio da graça neste trecho?",
+    "verseRef": "Tito 3:4",
+    "passageText": "Mas quando se manifestaram a benignidade e o amor de Deus, nosso Salvador, para com todos os seres humanos,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aparece o amor de Deus Salvador"
+      },
+      {
+        "id": "b",
+        "text": "Salvos pela misericórdia e justificados"
+      },
+      {
+        "id": "c",
+        "text": "Os que creem se empenham em boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se manifestaram a benignidade e o amor de Deus",
+    "feedbackCorrect": "Manifestação → salvação → obras dos crentes.",
+    "feedbackWrong": {
+      "default": "Comece pela manifestação; as obras fecham."
+    },
+    "hint": "Pense: iniciativa de Deus, meio, fruto.",
+    "learningObjective": "Ver o encadeamento amor–salvação–obras.",
+    "evidence": [
+      "Tito 3:4–8"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-03-salvos-pela-misericordia-05",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 3:5, ele nos salvou pelo lavar ___.",
+    "prompt": "Em Tito 3:5, ele nos salvou pelo lavar ___.",
+    "cue": "Em Tito 3:5, ele nos salvou pelo lavar ___.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "template": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar ___ e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "temporário"
+      },
+      {
+        "id": "b",
+        "text": "regenerador"
+      },
+      {
+        "id": "c",
+        "text": "humano"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "pelo lavar regenerador e renovador do Espírito Santo",
+    "feedbackCorrect": "O termo carrega o novo nascimento pelo Espírito.",
+    "feedbackWrong": {
+      "a": "Não é temporário.",
+      "c": "É obra do Espírito Santo."
+    },
+    "hint": "Qual adjetivo descreve o lavar?",
+    "learningObjective": "Lembrar o termo regenerador.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-03-salvos-pela-misericordia-06",
+    "trail": "tito-cap",
+    "section": "tic-03-salvos-pela-misericordia",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 3:7 a Romanos 3:24?",
+    "prompt": "O que liga Tito 3:7 a Romanos 3:24?",
+    "cue": "O que liga Tito 3:7 a Romanos 3:24?",
+    "verseRef": "Tito 3:7",
+    "passageText": "Para que, justificados pela sua graça, nos tornemos seus herdeiros, de acordo com a esperança da vida eterna.",
+    "passageA": {
+      "ref": "Tito 3:7",
+      "text": "Para que, justificados pela sua graça, nos tornemos seus herdeiros, de acordo com a esperança da vida eterna."
+    },
+    "passageB": {
+      "ref": "Romanos 3:24",
+      "text": "sendo justificados gratuitamente, por sua graça, através da redenção que há em Cristo Jesus"
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Graça sem justificativa"
+      },
+      {
+        "id": "b",
+        "text": "Justificados pelas obras"
+      },
+      {
+        "id": "c",
+        "text": "Justificados pela graça"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "justificados pela sua graça",
+    "feedbackCorrect": "Nos dois textos, a justificativa é pela graça.",
+    "feedbackWrong": {
+      "a": "Há justificativa explícita pela graça.",
+      "b": "Ambos apontam para a graça."
+    },
+    "hint": "Compare justificados e graça.",
+    "learningObjective": "Ligar os textos sobre justificativa pela graça.",
+    "evidence": [
+      "Tito 3:7",
+      "Romanos 3:24"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-01",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "true_false",
+    "skill": "observe",
+    "question": "Em Tito 3:5, Deus nos salvou pelas obras de justiça que realizamos.",
+    "prompt": "Em Tito 3:5, Deus nos salvou pelas obras de justiça que realizamos.",
+    "cue": "Em Tito 3:5, Deus nos salvou pelas obras de justiça que realizamos.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+    "feedbackCorrect": "O contraste nega as obras e afirma a misericórdia.",
+    "feedbackWrong": {
+      "true": "O versículo diz não por meio das obras."
+    },
+    "hint": "Veja o não… mas….",
+    "learningObjective": "Observar o fundamento da salvação.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-02",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 1:13, toque o alvo da repreensão.",
+    "prompt": "Em Tito 1:13, toque o alvo da repreensão.",
+    "cue": "Em Tito 1:13, toque o alvo da repreensão.",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "testemunho"
+      },
+      {
+        "id": "b",
+        "text": "sadios na fé"
+      },
+      {
+        "id": "c",
+        "text": "Portanto"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que estejam sadios na fé",
+    "feedbackCorrect": "O alvo é a saúde da fé.",
+    "feedbackWrong": {
+      "a": "Testemunho abre o versículo.",
+      "c": "Portanto introduz a ordem."
+    },
+    "hint": "Procure o para que.",
+    "learningObjective": "Identificar o alvo da repreensão.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-03",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "choice",
+    "skill": "observe",
+    "question": "Segundo Tito 2:1, o que Tito deve falar?",
+    "prompt": "Segundo Tito 2:1, o que Tito deve falar?",
+    "cue": "Segundo Tito 2:1, o que Tito deve falar?",
+    "verseRef": "Tito 2:1",
+    "passageText": "Você, porém, fale o que é adequado à sã doutrina.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O que nega a Deus pelas obras"
+      },
+      {
+        "id": "b",
+        "text": "O que é adequado à sã doutrina"
+      },
+      {
+        "id": "c",
+        "text": "O que difama a palavra"
+      },
+      {
+        "id": "d",
+        "text": "Fábulas judaicas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "fale o que é adequado à sã doutrina",
+    "feedbackCorrect": "A ordem é falar o adequado.",
+    "feedbackWrong": {
+      "a": "Isso é o problema de 1:16.",
+      "c": "O texto protege a palavra.",
+      "d": "Fábulas devem ser evitadas."
+    },
+    "hint": "Olhe o fim do versículo.",
+    "learningObjective": "Registrar a ordem sobre a doutrina.",
+    "evidence": [
+      "Tito 2:1"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-04",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 3:5 (trecho central) na ordem do texto.",
+    "prompt": "Monte Tito 3:5 (trecho central) na ordem do texto.",
+    "cue": "Monte Tito 3:5 (trecho central) na ordem do texto.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "não por meio das obras de justiça"
+      },
+      {
+        "id": "b",
+        "text": "mas segundo a sua misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "ele nos salvou pelo lavar regenerador"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia",
+    "feedbackCorrect": "Negação → misericórdia → lavar.",
+    "feedbackWrong": {
+      "default": "Comece pela negação das obras."
+    },
+    "hint": "O versículo opõe obras e misericórdia.",
+    "learningObjective": "Reconhecer a ordem de 3:5.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-05",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "complete",
+    "skill": "observe",
+    "question": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+    "prompt": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+    "cue": "Em Tito 2:10, a fidelidade visa embelezar a ___ de Deus.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "template": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a ___ de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "fúria"
+      },
+      {
+        "id": "b",
+        "text": "doutrina"
+      },
+      {
+        "id": "c",
+        "text": "riqueza"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "embelezar a doutrina de Deus, nosso Salvador",
+    "feedbackCorrect": "A conduta embeleza a doutrina.",
+    "feedbackWrong": {
+      "a": "É doutrina.",
+      "c": "Não é riqueza."
+    },
+    "hint": "O que se embeleza?",
+    "learningObjective": "Lembrar doutrina.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-06",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "connect",
+    "skill": "observe",
+    "question": "O que Tito 1:11 comunica que se liga a este contexto?",
+    "prompt": "O que Tito 1:11 comunica que se liga a este contexto?",
+    "cue": "O que Tito 1:11 comunica que se liga a este contexto?",
+    "verseRef": "Tito 1:11",
+    "passageText": "É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza",
+    "passageA": {
+      "ref": "Tito 1:11",
+      "text": "É necessário fazê-los calar, pois estão transtornando casas inteiras, ensinando coisas que não devem, por avareza"
+    },
+    "passageB": {
+      "ref": "Contexto",
+      "text": "É preciso fazê-los calar porque transtornam casas por avareza."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Casas fortalecidas pelo erro"
+      },
+      {
+        "id": "b",
+        "text": "Dano e ganância no ensino"
+      },
+      {
+        "id": "c",
+        "text": "Ensino sem efeito"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "ensinando coisas que não devem, por avareza",
+    "feedbackCorrect": "O transtorno vem ligado à avareza.",
+    "feedbackWrong": {
+      "a": "Há transtorno, não fortalecimento.",
+      "c": "Há efeito: casas transtornadas."
+    },
+    "hint": "Veja o dano e o motivo.",
+    "learningObjective": "Ligar ao dano do falso ensino.",
+    "evidence": [
+      "Tito 1:11"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-07",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "find_in_text",
+    "skill": "observe",
+    "question": "Em Tito 2:5, toque o que não deve ser difamado.",
+    "prompt": "Em Tito 2:5, toque o que não deve ser difamado.",
+    "cue": "Em Tito 2:5, toque o que não deve ser difamado.",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "donas de casa"
+      },
+      {
+        "id": "b",
+        "text": "palavra de Deus"
+      },
+      {
+        "id": "c",
+        "text": "sensatas"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que a palavra de Deus não seja difamada",
+    "feedbackCorrect": "O alvo é proteger a palavra.",
+    "feedbackWrong": {
+      "a": "Papel, não o que se difama.",
+      "c": "Qualidade, não o risco."
+    },
+    "hint": "Procure o fim do versículo.",
+    "learningObjective": "Identificar a palavra de Deus.",
+    "evidence": [
+      "Tito 2:5"
+    ]
+  },
+  {
+    "id": "tito-cap-sem-tic-boss-1-08",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "semente",
+    "type": "order",
+    "skill": "observe",
+    "question": "Monte Tito 1:13 na ordem do texto.",
+    "prompt": "Monte Tito 1:13 na ordem do texto.",
+    "cue": "Monte Tito 1:13 na ordem do texto.",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Este testemunho é exato"
+      },
+      {
+        "id": "b",
+        "text": "Portanto, repreenda-os com rigor"
+      },
+      {
+        "id": "c",
+        "text": "para que estejam sadios na fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "Portanto, repreenda-os com rigor, para que estejam sadios na fé",
+    "feedbackCorrect": "Testemunho → ordem → propósito.",
+    "feedbackWrong": {
+      "default": "Comece pelo testemunho."
+    },
+    "hint": "O versículo abre com Este testemunho.",
+    "learningObjective": "Reconhecer a ordem de 1:13.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-01",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "true_false",
+    "skill": "understand",
+    "question": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina.",
+    "prompt": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina.",
+    "cue": "Em Tito 2:10, a fidelidade dos servos não tem relação com a doutrina.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "false",
+    "correctAnswer": "false",
+    "evidenceSpan": "a fim de que em tudo possam embelezar a doutrina de Deus",
+    "feedbackCorrect": "O a fim de que liga fidelidade e doutrina.",
+    "feedbackWrong": {
+      "true": "O texto diz que a fidelidade embeleza a doutrina."
+    },
+    "hint": "Repare no a fim de que.",
+    "learningObjective": "Compreender o propósito da fidelidade.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-02",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+    "prompt": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+    "cue": "Em Tito 3:5, toque a palavra que marca o contraste com as obras.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Espírito"
+      },
+      {
+        "id": "b",
+        "text": "mas"
+      },
+      {
+        "id": "c",
+        "text": "lavar"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "mas segundo a sua misericórdia",
+    "feedbackCorrect": "Mas vira das obras para a misericórdia.",
+    "feedbackWrong": {
+      "a": "Espírito regenera.",
+      "c": "Lavar é o meio."
+    },
+    "hint": "Procure o conector da oposição.",
+    "learningObjective": "Reconhecer o contraste.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-03",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "choice",
+    "skill": "understand",
+    "question": "Como Tito 1:13 liga a repreensão ao resultado?",
+    "prompt": "Como Tito 1:13 liga a repreensão ao resultado?",
+    "cue": "Como Tito 1:13 liga a repreensão ao resultado?",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "O rigor existe só para humilhar"
+      },
+      {
+        "id": "b",
+        "text": "A repreensão não tem finalidade"
+      },
+      {
+        "id": "c",
+        "text": "O fim é espalhar fábulas"
+      },
+      {
+        "id": "d",
+        "text": "O rigor serve para que estejam sadios na fé"
+      }
+    ],
+    "correctOptionId": "d",
+    "correctAnswer": "d",
+    "evidenceSpan": "para que estejam sadios na fé",
+    "feedbackCorrect": "O para que define o alvo.",
+    "feedbackWrong": {
+      "a": "Há propósito pastoral.",
+      "b": "O texto declara o propósito.",
+      "c": "Fábulas devem ser evitadas."
+    },
+    "hint": "Olhe o para que.",
+    "learningObjective": "Relacionar rigor e saúde da fé.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-04",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Tito 3:3–7?",
+    "prompt": "Como avança o argumento em Tito 3:3–7?",
+    "cue": "Como avança o argumento em Tito 3:3–7?",
+    "verseRef": "Tito 3:3",
+    "passageText": "Porque também nós, em outro tempo, éramos insensatos, desobedientes, extraviados, escravos de diversas paixões e prazeres, vivendo em malícia e inveja, odiosos e odiando-nos uns aos outros.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Passado: éramos insensatos"
+      },
+      {
+        "id": "b",
+        "text": "Virada: amor e misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "Resultado: justificados e herdeiros"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "éramos insensatos, desobedientes, extraviados",
+    "feedbackCorrect": "Passado → misericórdia → herança.",
+    "feedbackWrong": {
+      "default": "Siga: outrora → mas quando → para que."
+    },
+    "hint": "O Mas e o Para que marcam viradas.",
+    "learningObjective": "Ver o movimento do passado.",
+    "evidence": [
+      "Tito 3:3–7"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-05",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "complete",
+    "skill": "understand",
+    "question": "Em Tito 1:13, o alvo é que estejam ___ na fé.",
+    "prompt": "Em Tito 1:13, o alvo é que estejam ___ na fé.",
+    "cue": "Em Tito 1:13, o alvo é que estejam ___ na fé.",
+    "verseRef": "Tito 1:13",
+    "passageText": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam sadios na fé.",
+    "template": "Este testemunho é exato. Portanto, repreenda-os com rigor, para que estejam ___ na fé.",
+    "options": [
+      {
+        "id": "a",
+        "text": "indiferentes"
+      },
+      {
+        "id": "b",
+        "text": "sadios"
+      },
+      {
+        "id": "c",
+        "text": "orgulhosos"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "para que estejam sadios na fé",
+    "feedbackCorrect": "Saúde da fé é o alvo.",
+    "feedbackWrong": {
+      "a": "Não é indiferença.",
+      "c": "Não é orgulho."
+    },
+    "hint": "Qual adjetivo descreve a fé?",
+    "learningObjective": "Lembrar sadios.",
+    "evidence": [
+      "Tito 1:13"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-06",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "connect",
+    "skill": "understand",
+    "question": "O que liga Tito 3:5 a Efésios 2:8–9?",
+    "prompt": "O que liga Tito 3:5 a Efésios 2:8–9?",
+    "cue": "O que liga Tito 3:5 a Efésios 2:8–9?",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "passageA": {
+      "ref": "Tito 3:5",
+      "text": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;"
+    },
+    "passageB": {
+      "ref": "Efésios 2:8–9",
+      "text": "Porque pela graça vocês são salvos, por meio da fé; e isto não vem de vocês; é um dom de Deus. não é resultado de obras, para que ninguém se glorie."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Salvos sem obras"
+      },
+      {
+        "id": "b",
+        "text": "Salvação negociada"
+      },
+      {
+        "id": "c",
+        "text": "Obras que merecem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "não por meio das obras de justiça que realizamos",
+    "feedbackCorrect": "Nos dois textos, a salvação não vem das obras.",
+    "feedbackWrong": {
+      "b": "O elo é graça/misericórdia.",
+      "c": "Ambos negam o mérito."
+    },
+    "hint": "Compare a exclusão das obras.",
+    "learningObjective": "Relacionar graça sem obras.",
+    "evidence": [
+      "Tito 3:5",
+      "Efésios 2:8–9"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-07",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "find_in_text",
+    "skill": "understand",
+    "question": "Em Tito 2:5, toque a expressão que marca o propósito.",
+    "prompt": "Em Tito 2:5, toque a expressão que marca o propósito.",
+    "cue": "Em Tito 2:5, toque a expressão que marca o propósito.",
+    "verseRef": "Tito 2:5",
+    "passageText": "A serem sensatas, honestas, boas donas de casa, bondosas, submissas a seus maridos, para que a palavra de Deus não seja difamada.",
+    "options": [
+      {
+        "id": "a",
+        "text": "submissas"
+      },
+      {
+        "id": "b",
+        "text": "bondosas"
+      },
+      {
+        "id": "c",
+        "text": "para que"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "para que a palavra de Deus não seja difamada",
+    "feedbackCorrect": "Para que introduz o propósito.",
+    "feedbackWrong": {
+      "a": "Conduta, não marcador.",
+      "b": "Qualidade, não marcador."
+    },
+    "hint": "Procure o marcador de finalidade.",
+    "learningObjective": "Reconhecer o propósito.",
+    "evidence": [
+      "Tito 2:5"
+    ]
+  },
+  {
+    "id": "tito-cap-cam-tic-boss-1-08",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "caminhada",
+    "type": "order",
+    "skill": "understand",
+    "question": "Como avança o argumento em Tito 1:10–13?",
+    "prompt": "Como avança o argumento em Tito 1:10–13?",
+    "cue": "Como avança o argumento em Tito 1:10–13?",
+    "verseRef": "Tito 1:10",
+    "passageText": "Pois existem muitos insubordinados, faladores fúteis e enganadores, especialmente os da circuncisão.",
+    "options": [
+      {
+        "id": "a",
+        "text": "Há muitos enganadores"
+      },
+      {
+        "id": "b",
+        "text": "É preciso fazê-los calar"
+      },
+      {
+        "id": "c",
+        "text": "Repreenda para saúde da fé"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "existem muitos insubordinados, faladores fúteis e enganadores",
+    "feedbackCorrect": "Problema → calar → repreender.",
+    "feedbackWrong": {
+      "default": "Siga: problema → calar → repreender."
+    },
+    "hint": "O Portanto de 1:13 fecha.",
+    "learningObjective": "Ver o movimento à correção.",
+    "evidence": [
+      "Tito 1:10–13"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-01",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "true_false",
+    "skill": "interpret",
+    "question": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+    "prompt": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+    "cue": "Tito 3:8 apresenta as boas obras como fruto esperado de quem crê, depois da salvação pela misericórdia.",
+    "verseRef": "Tito 3:8",
+    "passageText": "Fiel é a palavra, e quero que você afirme isso com confiança, para que os que creem em Deus se empenhem na prática de boas obras; essas coisas são excelentes e proveitosas para os homens.",
+    "options": [
+      {
+        "id": "true",
+        "text": "Verdadeiro"
+      },
+      {
+        "id": "false",
+        "text": "Falso"
+      }
+    ],
+    "correctOptionId": "true",
+    "correctAnswer": "true",
+    "evidenceSpan": "os que creem em Deus se empenhem na prática de boas obras",
+    "feedbackCorrect": "As obras vêm dos que creem, não como preço.",
+    "feedbackWrong": {
+      "false": "Paulo quer o empenho nas obras dos que creem."
+    },
+    "hint": "Veja quem deve se empenhar.",
+    "learningObjective": "Interpretar obras como fruto.",
+    "evidence": [
+      "Tito 3:8"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-02",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 1:16, toque o trecho que sustenta a negação prática de Deus.",
+    "prompt": "Em Tito 1:16, toque o trecho que sustenta a negação prática de Deus.",
+    "cue": "Em Tito 1:16, toque o trecho que sustenta a negação prática de Deus.",
+    "verseRef": "Tito 1:16",
+    "passageText": "Reconhecem que conhecem a Deus, no entanto, o negam por suas obras, sendo abomináveis, desobedientes e reprovados para toda boa obra",
+    "options": [
+      {
+        "id": "a",
+        "text": "Reconhecem"
+      },
+      {
+        "id": "b",
+        "text": "boa obra"
+      },
+      {
+        "id": "c",
+        "text": "por suas obras"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "o negam por suas obras",
+    "feedbackCorrect": "As obras são o lugar da negação.",
+    "feedbackWrong": {
+      "a": "É a confissão verbal.",
+      "b": "Fala da reprovação final."
+    },
+    "hint": "Procure o que as obras fazem.",
+    "learningObjective": "Sustentar obras que negam.",
+    "evidence": [
+      "Tito 1:16"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-03",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "choice",
+    "skill": "interpret",
+    "question": "Que leitura Tito 1–3 sustenta neste desafio?",
+    "prompt": "Que leitura Tito 1–3 sustenta neste desafio?",
+    "cue": "Que leitura Tito 1–3 sustenta neste desafio?",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "Repreensão sem propósito"
+      },
+      {
+        "id": "b",
+        "text": "Doutrina sem efeito na vida"
+      },
+      {
+        "id": "c",
+        "text": "Misericórdia salva; doutrina e conduta respondem"
+      },
+      {
+        "id": "d",
+        "text": "Obras compram a misericórdia"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "mas segundo a sua misericórdia, ele nos salvou",
+    "feedbackCorrect": "Misericórdia, correção e conduta cabem juntos.",
+    "feedbackWrong": {
+      "a": "Há para que em 1:13.",
+      "b": "Tito 2 liga doutrina e vida.",
+      "d": "O texto nega as obras como meio."
+    },
+    "hint": "Una 1:13, 2:10 e 3:5.",
+    "learningObjective": "Escolher a interpretação do bloco.",
+    "evidence": [
+      "Tito 1:13",
+      "Tito 2:10",
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-04",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio deste desafio?",
+    "prompt": "Qual sequência mostra o fio deste desafio?",
+    "cue": "Qual sequência mostra o fio deste desafio?",
+    "verseRef": "Tito 3:4",
+    "passageText": "Mas quando se manifestaram a benignidade e o amor de Deus, nosso Salvador, para com todos os seres humanos,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Corrigir o engano e falar a sã doutrina"
+      },
+      {
+        "id": "b",
+        "text": "Viver de modo que a palavra seja honrada"
+      },
+      {
+        "id": "c",
+        "text": "Confiar na misericórdia e praticar o bem"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se manifestaram a benignidade e o amor de Deus",
+    "feedbackCorrect": "Correção → conduta → misericórdia e obras.",
+    "feedbackWrong": {
+      "default": "Comece pela correção; a misericórdia fecha com obras."
+    },
+    "hint": "Ensino, vida, graça.",
+    "learningObjective": "Ver o encadeamento do bloco.",
+    "evidence": [
+      "Tito 1:13",
+      "Tito 2:5",
+      "Tito 3:5–8"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-05",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "complete",
+    "skill": "interpret",
+    "question": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+    "prompt": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+    "cue": "Em Tito 3:5, Deus salvou segundo a sua ___.",
+    "verseRef": "Tito 3:5",
+    "passageText": "não por meio das obras de justiça que realizamos, mas segundo a sua misericórdia, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "template": "não por meio das obras de justiça que realizamos, mas segundo a sua ___, ele nos salvou pelo lavar regenerador e renovador do Espírito Santo;",
+    "options": [
+      {
+        "id": "a",
+        "text": "misericórdia"
+      },
+      {
+        "id": "b",
+        "text": "indiferença"
+      },
+      {
+        "id": "c",
+        "text": "cobrança"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctAnswer": "a",
+    "evidenceSpan": "mas segundo a sua misericórdia",
+    "feedbackCorrect": "O fundamento é a misericórdia.",
+    "feedbackWrong": {
+      "b": "Há amor, não indiferença.",
+      "c": "Não é cobrança."
+    },
+    "hint": "Qual palavra vem depois de segundo a sua?",
+    "learningObjective": "Lembrar misericórdia.",
+    "evidence": [
+      "Tito 3:5"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-06",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "connect",
+    "skill": "interpret",
+    "question": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+    "prompt": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+    "cue": "O que liga Tito 2:7 a 1 Timóteo 4:12?",
+    "verseRef": "Tito 2:7",
+    "passageText": "Em tudo, seja um padrão de boas obras; na doutrina, mostre integridade, reverência e seriedade.",
+    "passageA": {
+      "ref": "Tito 2:7",
+      "text": "Em tudo, seja um padrão de boas obras; na doutrina, mostre integridade, reverência e seriedade."
+    },
+    "passageB": {
+      "ref": "1 Timóteo 4:12",
+      "text": "Ninguém despreze a sua juventude; pelo contrário, seja um padrão para os fiéis na palavra, no comportamento, na caridade, na fé e na pureza."
+    },
+    "options": [
+      {
+        "id": "a",
+        "text": "Desprezar a juventude"
+      },
+      {
+        "id": "b",
+        "text": "Ser exemplo"
+      },
+      {
+        "id": "c",
+        "text": "Doutrina sem vida"
+      }
+    ],
+    "correctOptionId": "b",
+    "correctAnswer": "b",
+    "evidenceSpan": "seja um padrão de boas obras",
+    "feedbackCorrect": "Nos dois textos, o líder deve ser exemplo.",
+    "feedbackWrong": {
+      "a": "O chamado é ser exemplo.",
+      "c": "Ambos unem doutrina e vida."
+    },
+    "hint": "Compare padrão e exemplo.",
+    "learningObjective": "Relacionar exemplo do líder.",
+    "evidence": [
+      "Tito 2:7",
+      "1 Timóteo 4:12"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-07",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "find_in_text",
+    "skill": "interpret",
+    "question": "Em Tito 2:10, toque o trecho que sustenta o efeito da fidelidade.",
+    "prompt": "Em Tito 2:10, toque o trecho que sustenta o efeito da fidelidade.",
+    "cue": "Em Tito 2:10, toque o trecho que sustenta o efeito da fidelidade.",
+    "verseRef": "Tito 2:10",
+    "passageText": "não roubando, mas demonstrando toda a fidelidade, a fim de que em tudo possam embelezar a doutrina de Deus, nosso Salvador.",
+    "options": [
+      {
+        "id": "a",
+        "text": "toda a fidelidade"
+      },
+      {
+        "id": "b",
+        "text": "não roubando"
+      },
+      {
+        "id": "c",
+        "text": "embelezar a doutrina"
+      }
+    ],
+    "correctOptionId": "c",
+    "correctAnswer": "c",
+    "evidenceSpan": "possam embelezar a doutrina de Deus, nosso Salvador",
+    "feedbackCorrect": "Embelezar nomeia o efeito.",
+    "feedbackWrong": {
+      "a": "É o meio.",
+      "b": "É a conduta."
+    },
+    "hint": "Procure o verbo do propósito.",
+    "learningObjective": "Sustentar o embelezamento.",
+    "evidence": [
+      "Tito 2:10"
+    ]
+  },
+  {
+    "id": "tito-cap-pro-tic-boss-1-08",
+    "trail": "tito-cap",
+    "section": "tic-boss-1",
+    "difficulty": "profundezas",
+    "type": "order",
+    "skill": "interpret",
+    "question": "Qual sequência mostra o fio da graça em Tito 3:4–8?",
+    "prompt": "Qual sequência mostra o fio da graça em Tito 3:4–8?",
+    "cue": "Qual sequência mostra o fio da graça em Tito 3:4–8?",
+    "verseRef": "Tito 3:4",
+    "passageText": "Mas quando se manifestaram a benignidade e o amor de Deus, nosso Salvador, para com todos os seres humanos,",
+    "options": [
+      {
+        "id": "a",
+        "text": "Aparece o amor de Deus"
+      },
+      {
+        "id": "b",
+        "text": "Salvos pela misericórdia"
+      },
+      {
+        "id": "c",
+        "text": "Os que creem praticam boas obras"
+      }
+    ],
+    "correctOptionId": "a",
+    "correctOrder": [
+      "a",
+      "b",
+      "c"
+    ],
+    "correctAnswer": "a,b,c",
+    "evidenceSpan": "se manifestaram a benignidade e o amor de Deus",
+    "feedbackCorrect": "Manifestação → salvação → obras.",
+    "feedbackWrong": {
+      "default": "Comece pela manifestação."
+    },
+    "hint": "Iniciativa, meio, fruto.",
+    "learningObjective": "Ver amor–salvação–obras.",
+    "evidence": [
+      "Tito 3:4–8"
+    ]
+  }
+]

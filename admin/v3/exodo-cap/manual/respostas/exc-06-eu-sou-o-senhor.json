@@ -1,0 +1,710 @@
+{
+  "study": {
+    "passageRef": "Êxodo 6:2–7",
+    "passages": [
+      {
+        "ref": "Êxodo 6:2–8"
+      }
+    ],
+    "context": "Deus fala a Moisés: revela-se, lembra a aliança e promete libertar, resgatar e tomar Israel por povo.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome pelo qual Deus se dá a conhecer e promete agir por Israel.",
+    "focusQuestion": "Qual promessa de Deus você precisa ouvir de novo quando a libertação demora?",
+    "reflectionPrompts": [
+      "Eu sou o Senhor",
+      "Aliança lembrada",
+      "Povo de Deus"
+    ],
+    "facts": [
+      {
+        "text": "Deus diz a Moisés: Eu sou o SENHOR.",
+        "evidenceRef": "Êxodo 6:2",
+        "evidenceSpan": "Eu sou o SENHOR"
+      },
+      {
+        "text": "Ele se revelou aos patriarcas como Deus Todo-Poderoso.",
+        "evidenceRef": "Êxodo 6:3",
+        "evidenceSpan": "Deus Todo-Poderoso"
+      },
+      {
+        "text": "Estabeleceu aliança para dar a terra de Canaã.",
+        "evidenceRef": "Êxodo 6:4",
+        "evidenceSpan": "terra de Canaã"
+      },
+      {
+        "text": "Ouviu os gemidos e lembrou-se da aliança.",
+        "evidenceRef": "Êxodo 6:5",
+        "evidenceSpan": "lembrei-me da minha aliança"
+      },
+      {
+        "text": "Promete libertar, resgatar e tomar Israel por povo.",
+        "evidenceRef": "Êxodo 6:6",
+        "evidenceSpan": "vos libertarei das cargas do Egito"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "aliança",
+        "gloss": "Compromisso de Deus com os patriarcas, agora lembrado."
+      },
+      {
+        "term": "libertarei",
+        "gloss": "Promessa de tirar Israel das cargas do Egito."
+      },
+      {
+        "term": "povo",
+        "gloss": "Israel será tomado por povo; Deus será o seu Deus."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Deus se revela como o Senhor",
+        "evidenceRef": "Êxodo 6:2–3"
+      },
+      {
+        "label": "Lembra a aliança e a terra",
+        "evidenceRef": "Êxodo 6:4–5"
+      },
+      {
+        "label": "Promete libertar e resgatar",
+        "evidenceRef": "Êxodo 6:6"
+      },
+      {
+        "label": "Toma o povo e dá a terra",
+        "evidenceRef": "Êxodo 6:7–8"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "Porque ouviu os gemidos, lembrou-se da aliança.",
+        "marker": "também",
+        "evidenceRef": "Êxodo 6:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "Portanto, diga aos filhos de Israel as promessas de libertação.",
+        "marker": "Portanto",
+        "evidenceRef": "Êxodo 6:6"
+      },
+      {
+        "kind": "propósito",
+        "text": "Serão povo e saberão que Ele é o Senhor que os tira.",
+        "marker": "sabereis",
+        "evidenceRef": "Êxodo 6:7"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Gênesis 17:7",
+        "bridge": "Aliança por povo"
+      },
+      {
+        "ref": "Êxodo 3:15",
+        "bridge": "Nome do Senhor"
+      },
+      {
+        "ref": "2 Coríntios 6:16",
+        "bridge": "Serei o vosso Deus"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Deus só promete terra, sem relação pessoal.",
+        "why": "Ele diz: vos tomarei por meu povo e serei o vosso Deus."
+      },
+      {
+        "text": "A libertação depende da força de Moisés.",
+        "why": "O Senhor age com braço poderoso e julgamentos."
+      },
+      {
+        "text": "Os patriarcas já conheciam plenamente o nome Senhor.",
+        "why": "O texto diz que pelo nome SENHOR não lhes foi conhecido."
+      }
+    ],
+    "centralInsight": "O Senhor se revela e promete tirar, resgatar e tomar Israel por povo.",
+    "anchorQuestion": "O que o Senhor promete fazer por Israel em Êxodo 6:6–7?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Deus disse a Moisés que só libertaria Israel se o povo primeiro merecesse.",
+      "verseRef": "Êxodo 6:6",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu sou o SENHOR, e vos libertarei",
+      "feedbackCorrect": "A promessa começa com Eu sou o SENHOR, não com mérito do povo.",
+      "feedbackWrong": {
+        "true": "Releia: a libertação é declaração do Senhor."
+      },
+      "hint": "Quem inicia a frase da promessa?",
+      "learningObjective": "Observar a iniciativa de Deus.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Êxodo 6:4, toque a terra prometida na aliança.",
+      "verseRef": "Êxodo 6:4",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "Canaã"
+        },
+        {
+          "id": "c",
+          "text": "estrangeiros"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "terra de Canaã",
+      "feedbackCorrect": "A aliança é para dar a terra de Canaã.",
+      "feedbackWrong": {
+        "a": "Aliança é o pacto; a terra é Canaã.",
+        "c": "Estrangeiros descreve como habitaram; a terra é Canaã."
+      },
+      "hint": "Nome da terra no versículo.",
+      "learningObjective": "Identificar a terra da aliança.",
+      "evidence": [
+        "Êxodo 6:4"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Êxodo 6:5, o que Deus lembrou ao ouvir os gemidos?",
+      "verseRef": "Êxodo 6:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "A sua aliança"
+        },
+        {
+          "id": "b",
+          "text": "Os tesouros do Egito"
+        },
+        {
+          "id": "c",
+          "text": "O nome de Faraó"
+        },
+        {
+          "id": "d",
+          "text": "As pirâmides"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lembrei-me da minha aliança",
+      "feedbackCorrect": "Ouviu os gemidos e lembrou-se da aliança.",
+      "feedbackWrong": {
+        "b": "Não fala de tesouros.",
+        "c": "Não é o nome de Faraó.",
+        "d": "Pirâmides não aparecem."
+      },
+      "hint": "O que Ele lembrou?",
+      "learningObjective": "Observar a memória da aliança.",
+      "evidence": [
+        "Êxodo 6:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Êxodo 6:6 na ordem do texto.",
+      "verseRef": "Êxodo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto, diga aos filhos de Israel: Eu sou o SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "e vos libertarei das cargas do Egito"
+        },
+        {
+          "id": "c",
+          "text": "e vos resgatarei com braço poderoso"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "vos libertarei das cargas do Egito",
+      "feedbackCorrect": "Identidade, libertação e resgate.",
+      "feedbackWrong": {
+        "default": "Comece por \"Eu sou o SENHOR\"."
+      },
+      "hint": "A frase abre com Portanto.",
+      "learningObjective": "Reconhecer a sequência da promessa.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Êxodo 6:7, o que Deus tomará Israel para ser?",
+      "verseRef": "Êxodo 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "povo"
+        },
+        {
+          "id": "b",
+          "text": "exército"
+        },
+        {
+          "id": "c",
+          "text": "mercado"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu vos tomarei por meu povo",
+      "feedbackCorrect": "Ele toma Israel por seu povo e será o seu Deus.",
+      "feedbackWrong": {
+        "b": "O termo é povo, não exército.",
+        "c": "Não é mercado."
+      },
+      "hint": "Meu ___ no versículo.",
+      "learningObjective": "Lembrar a relação povo–Deus.",
+      "evidence": [
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Êxodo 6:6 comunica que se liga a este contexto?",
+      "verseRef": "Êxodo 6:6",
+      "passageA": {
+        "ref": "Êxodo 6:6"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Israel geme sob as cargas do Egito."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor promete libertar"
+        },
+        {
+          "id": "b",
+          "text": "Israel deve fugir sozinho"
+        },
+        {
+          "id": "c",
+          "text": "Faraó já se arrependeu"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vos libertarei das cargas do Egito",
+      "feedbackCorrect": "Diante das cargas, o Senhor promete libertar.",
+      "feedbackWrong": {
+        "b": "A libertação é ato do Senhor.",
+        "c": "Ainda não; a promessa vem primeiro."
+      },
+      "hint": "Compare gemidos e promessa.",
+      "learningObjective": "Ligar opressão e promessa.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Êxodo 6:6, a libertação é anunciada porque o Senhor se apresenta e age.",
+      "verseRef": "Êxodo 6:6",
+      "correctOptionId": "true",
+      "evidenceSpan": "Eu sou o SENHOR, e vos libertarei",
+      "feedbackCorrect": "O \"Portanto\" liga a identidade do Senhor à ação.",
+      "feedbackWrong": {
+        "false": "Releia: Eu sou o SENHOR, e vos libertarei."
+      },
+      "hint": "Veja o início da frase.",
+      "learningObjective": "Compreender a ligação identidade–ação.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Êxodo 6:6, toque a palavra que marca a conclusão após lembrar a aliança.",
+      "verseRef": "Êxodo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "Portanto"
+        },
+        {
+          "id": "b",
+          "text": "julgamentos"
+        },
+        {
+          "id": "c",
+          "text": "filhos"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Portanto, diga aos filhos de Israel",
+      "feedbackCorrect": "\"Portanto\" introduz a mensagem de libertação.",
+      "feedbackWrong": {
+        "b": "Julgamentos são o meio; o marcador é Portanto.",
+        "c": "Filhos são os destinatários."
+      },
+      "hint": "Primeira palavra do versículo.",
+      "learningObjective": "Reconhecer o marcador de conclusão.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Êxodo 6:7 liga ser povo e conhecer o Senhor?",
+      "verseRef": "Êxodo 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tomados por povo, saberão que Ele os tira"
+        },
+        {
+          "id": "b",
+          "text": "Só conhecerão depois de conquistar Canaã"
+        },
+        {
+          "id": "c",
+          "text": "O conhecimento vem de Faraó"
+        },
+        {
+          "id": "d",
+          "text": "Ser povo dispensa conhecer a Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sabereis que eu sou o Senhor vosso Deus",
+      "feedbackCorrect": "A relação povo–Deus inclui saber quem os tira.",
+      "feedbackWrong": {
+        "b": "O saber está ligado à saída do Egito.",
+        "c": "Faraó não ensina esse saber.",
+        "d": "O texto une povo e conhecimento."
+      },
+      "hint": "Leia o \"sabereis\".",
+      "learningObjective": "Relacionar aliança e conhecimento.",
+      "evidence": [
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avançam as promessas em Êxodo 6:6–8?",
+      "verseRef": "Êxodo 6:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Libertar e resgatar do Egito"
+        },
+        {
+          "id": "b",
+          "text": "Tomar Israel por povo"
+        },
+        {
+          "id": "c",
+          "text": "Levar à terra jurada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu vos tomarei por meu povo",
+      "feedbackCorrect": "Sair, relacionar-se, herdar.",
+      "feedbackWrong": {
+        "default": "A terra vem depois de ser povo."
+      },
+      "hint": "A terra é o último passo.",
+      "learningObjective": "Compreender a ordem das promessas.",
+      "evidence": [
+        "Êxodo 6:6",
+        "Êxodo 6:8"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Êxodo 6:5, do que Deus se lembrou?",
+      "verseRef": "Êxodo 6:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "aliança"
+        },
+        {
+          "id": "b",
+          "text": "pirâmide"
+        },
+        {
+          "id": "c",
+          "text": "coroa"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "lembrei-me da minha aliança",
+      "feedbackCorrect": "Os gemidos despertam a memória da aliança.",
+      "feedbackWrong": {
+        "b": "Não é pirâmide.",
+        "c": "Não é coroa."
+      },
+      "hint": "Minha ___ no fim do verso.",
+      "learningObjective": "Lembrar a palavra da relação.",
+      "evidence": [
+        "Êxodo 6:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Êxodo 6:7 a Gênesis 17:7?",
+      "verseRef": "Êxodo 6:7",
+      "passageA": {
+        "ref": "Êxodo 6:7"
+      },
+      "passageB": {
+        "ref": "Gênesis 17:7"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Aliança por povo"
+        },
+        {
+          "id": "b",
+          "text": "Lei no Sinai"
+        },
+        {
+          "id": "c",
+          "text": "Queda de Jericó"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu vos tomarei por meu povo",
+      "feedbackCorrect": "Nos dois, Deus toma um povo para si.",
+      "feedbackWrong": {
+        "b": "Sinai ainda não é o tema deste elo.",
+        "c": "Outra história."
+      },
+      "hint": "Povo e Deus juntos.",
+      "learningObjective": "Relacionar aliança patriarcal e êxodo.",
+      "evidence": [
+        "Êxodo 6:7",
+        "Gênesis 17:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Êxodo 6:2–8 ensina que Israel se torna povo de Deus por conquista militar própria, sem promessa prévia.",
+      "verseRef": "Êxodo 6:7",
+      "correctOptionId": "false",
+      "evidenceSpan": "Eu vos tomarei por meu povo e serei o vosso Deus",
+      "feedbackCorrect": "É o Senhor quem toma o povo; a iniciativa é dele.",
+      "feedbackWrong": {
+        "true": "O texto diz: Eu vos tomarei por meu povo."
+      },
+      "hint": "Quem é o sujeito de \"tomarei\"?",
+      "learningObjective": "Corrigir leitura de mérito humano.",
+      "evidence": [
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Êxodo 6:7, toque o trecho que mostra o que Israel saberá sobre Deus.",
+      "verseRef": "Êxodo 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "cargas"
+        },
+        {
+          "id": "b",
+          "text": "vosso Deus"
+        },
+        {
+          "id": "c",
+          "text": "Egito"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Senhor vosso Deus que vos tira",
+      "feedbackCorrect": "Saberão que Ele é o Senhor, seu Deus que os tira.",
+      "feedbackWrong": {
+        "a": "Cargas são o que deixam; o saber é sobre o Deus.",
+        "c": "Egito é o lugar; o título é vosso Deus."
+      },
+      "hint": "Como Ele se chama em relação a eles?",
+      "learningObjective": "Sustentar o conhecimento de Deus.",
+      "evidence": [
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Êxodo 6:2–8 sustenta sobre a libertação?",
+      "verseRef": "Êxodo 6:6–7",
+      "options": [
+        {
+          "id": "a",
+          "text": "O Senhor se revela e age para ter um povo"
+        },
+        {
+          "id": "b",
+          "text": "A libertação é só mudança de endereço"
+        },
+        {
+          "id": "c",
+          "text": "Deus esqueceu a aliança dos pais"
+        },
+        {
+          "id": "d",
+          "text": "Israel conquista Canaã sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Eu vos tomarei por meu povo",
+      "feedbackCorrect": "Revelação, libertação e relação povo–Deus.",
+      "feedbackWrong": {
+        "b": "Há também ser povo e conhecer a Deus.",
+        "c": "Ele lembrou-se da aliança.",
+        "d": "Ele dá a terra."
+      },
+      "hint": "Una 6:2, 6:6 e 6:7.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Êxodo 6:6",
+        "Êxodo 6:7"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela o fio da aliança neste trecho?",
+      "verseRef": "Êxodo 6:7",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus promete tomar Israel por povo"
+        },
+        {
+          "id": "b",
+          "text": "A aliança com Abraão já falava disso"
+        },
+        {
+          "id": "c",
+          "text": "Paulo ecoa: serei o vosso Deus"
+        }
+      ],
+      "correctOrder": [
+        "b",
+        "a",
+        "c"
+      ],
+      "evidenceSpan": "serei o vosso Deus",
+      "evidence": [
+        "Gênesis 17:7",
+        "Êxodo 6:7",
+        "2 Coríntios 6:16"
+      ],
+      "feedbackCorrect": "Da promessa aos pais, ao êxodo, à igreja.",
+      "feedbackWrong": {
+        "default": "Comece por Gênesis; depois Êxodo e Paulo."
+      },
+      "hint": "Ordem da história bíblica.",
+      "learningObjective": "Ver a aliança atravessar a Escritura."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Êxodo 6:6, com que braço Deus resgata?",
+      "verseRef": "Êxodo 6:6",
+      "options": [
+        {
+          "id": "a",
+          "text": "fraco"
+        },
+        {
+          "id": "b",
+          "text": "poderoso"
+        },
+        {
+          "id": "c",
+          "text": "humano"
+        }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "com braço poderoso",
+      "feedbackCorrect": "O resgate é com braço poderoso e julgamentos.",
+      "feedbackWrong": {
+        "a": "O texto diz poderoso.",
+        "c": "Não é braço humano."
+      },
+      "hint": "Adjetivo de \"braço\".",
+      "learningObjective": "Lembrar o termo do poder de Deus.",
+      "evidence": [
+        "Êxodo 6:6"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Êxodo 6:7 a 2 Coríntios 6:16?",
+      "verseRef": "Êxodo 6:7",
+      "passageA": {
+        "ref": "Êxodo 6:7"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 6:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Serei o vosso Deus"
+        },
+        {
+          "id": "b",
+          "text": "Construção de barcos"
+        },
+        {
+          "id": "c",
+          "text": "Lista de pragas"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "serei o vosso Deus",
+      "feedbackCorrect": "Paulo ecoa a fórmula da aliança do Êxodo.",
+      "feedbackWrong": {
+        "b": "Não é o tema.",
+        "c": "Não é lista de pragas."
+      },
+      "hint": "A fórmula povo–Deus.",
+      "learningObjective": "Ligar Êxodo e a igreja.",
+      "evidence": [
+        "Êxodo 6:7",
+        "2 Coríntios 6:16"
+      ]
+    }
+  ]
+}

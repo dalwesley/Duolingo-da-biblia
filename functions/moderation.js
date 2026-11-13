@@ -11,6 +11,8 @@
  * mora em `moderation/{uid}`. Os dois só o admin lê; ninguém grava pelo cliente.
  *
  *   info         dados do Auth (e-mail, login, criada, último acesso)
+ *   emails       e-mail do Auth de uma lista de uids (a lista do Suporte;
+ *                o perfil público não guarda mais e-mail)
  *   warn         aviso por push (fica no histórico mesmo sem push)
  *   rename       nome neutro no perfil, placares, grupos e companhias
  *   removePhoto  tira a foto do perfil, dos placares e do Auth
@@ -83,6 +85,34 @@ async function renameInCompanions(db, uid, name) {
   return hosted.size + guested.size;
 }
 
+/** Uids únicos e curtos. O que não serve é ignorado. */
+function uniqueUids(raw) {
+  const uids = [];
+  const seen = new Set();
+  if (!Array.isArray(raw)) return uids;
+  for (const item of raw) {
+    const uid = String(item || '').trim();
+    if (!uid || uid.length > 128 || seen.has(uid)) continue;
+    seen.add(uid);
+    uids.push(uid);
+  }
+  return uids;
+}
+
+/** E-mail do login, em lotes de 100 (limite do Auth). Sem e-mail, o uid fica de fora. */
+async function emailsFor(auth, uids) {
+  const emails = {};
+  for (let i = 0; i < uids.length; i += 100) {
+    const chunk = uids.slice(i, i + 100).map((uid) => ({ uid }));
+    const res = await auth.getUsers(chunk);
+    for (const u of res.users || []) {
+      const email = String(u.email || '').trim();
+      if (email) emails[u.uid] = email;
+    }
+  }
+  return emails;
+}
+
 async function authInfo(auth, uid) {
   try {
     const u = await auth.getUser(uid);
@@ -113,8 +143,14 @@ async function moderate(deps, caller, input) {
     throw new ModerationError('permission-denied', 'Só administradores moderam contas.');
   }
 
-  const uid = String(input?.uid || '').trim();
   const action = String(input?.action || '');
+  if (action === 'emails') {
+    const uids = uniqueUids(input?.uids);
+    if (uids.length > 2000) throw new ModerationError('invalid-argument', 'Lista grande demais.');
+    return { emails: await emailsFor(auth, uids) };
+  }
+
+  const uid = String(input?.uid || '').trim();
   const reason = String(input?.reason || '').trim().slice(0, 500);
   if (!uid || uid.length > 128) throw new ModerationError('invalid-argument', 'uid inválido.');
   if (!ACTIONS.has(action)) throw new ModerationError('invalid-argument', `Ação desconhecida: ${action}`);

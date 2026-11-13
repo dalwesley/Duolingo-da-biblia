@@ -1,0 +1,709 @@
+{
+  "study": {
+    "passageRef": "Juízes 20:18–28",
+    "passages": [
+      {
+        "ref": "Juízes 20:18–28"
+      }
+    ],
+    "context": "Israel consulta o Senhor contra Benjamim; perde duas vezes, chora e jejua; então ouve a promessa de entrega.",
+    "keyword": "consultaram",
+    "keywordGloss": "Buscar a Deus antes e durante a guerra entre irmãos.",
+    "focusQuestion": "Onde a justiça entre irmãos ainda precisa passar pelo choro diante do Senhor?",
+    "reflectionPrompts": [
+      "Judá sobe primeiro",
+      "Irmão Benjamim",
+      "Amanhã eu os entregarei"
+    ],
+    "facts": [
+      {
+        "text": "Consultaram a Deus em Betel.",
+        "evidenceRef": "Juízes 20:18",
+        "evidenceSpan": "consultaram a Deus"
+      },
+      {
+        "text": "O Senhor disse que Judá subiria primeiro.",
+        "evidenceRef": "Juízes 20:18",
+        "evidenceSpan": "Judá subirá primeiro"
+      },
+      {
+        "text": "Benjamim derrubou vinte e dois mil.",
+        "evidenceRef": "Juízes 20:21",
+        "evidenceSpan": "vinte e dois mil homens de Israel"
+      },
+      {
+        "text": "No segundo dia, mais dezoito mil caíram.",
+        "evidenceRef": "Juízes 20:25",
+        "evidenceSpan": "mais dezoito mil homens"
+      },
+      {
+        "text": "Jejuaram e ofereceram holocaustos.",
+        "evidenceRef": "Juízes 20:26",
+        "evidenceSpan": "Jejuaram naquele dia até à tarde"
+      },
+      {
+        "text": "O Senhor prometeu entregar Benjamim.",
+        "evidenceRef": "Juízes 20:28",
+        "evidenceSpan": "amanhã eu os entregarei nas suas mãos"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Betel",
+        "gloss": "Lugar da consulta e do choro."
+      },
+      {
+        "term": "irmão",
+        "gloss": "Como Israel chama Benjamim na consulta."
+      },
+      {
+        "term": "Jejuaram",
+        "gloss": "Resposta de Israel após as derrotas."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Consulta e primeira derrota",
+        "evidenceRef": "Juízes 20:18–21"
+      },
+      {
+        "label": "Choro e segunda derrota",
+        "evidenceRef": "Juízes 20:22–25"
+      },
+      {
+        "label": "Jejum e promessa",
+        "evidenceRef": "Juízes 20:26–28"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "contraste",
+        "text": "Derrota; entretanto o povo se animou.",
+        "marker": "Entretanto",
+        "evidenceRef": "Juízes 20:22"
+      },
+      {
+        "kind": "causa",
+        "text": "Vá pois amanhã eu entregarei.",
+        "marker": "pois",
+        "evidenceRef": "Juízes 20:28"
+      },
+      {
+        "kind": "sequência",
+        "text": "Perguntaram; e o Senhor respondeu.",
+        "marker": "E",
+        "evidenceRef": "Juízes 20:23"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Samuel 30:8",
+        "bridge": "Consultar e seguir"
+      },
+      {
+        "ref": "Salmos 34:18",
+        "bridge": "Perto dos quebrantados"
+      },
+      {
+        "ref": "Mateus 18:15",
+        "bridge": "Corrigir o irmão"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "Israel não consultou o Senhor.",
+        "why": "Consultaram repetidas vezes."
+      },
+      {
+        "text": "A primeira batalha já venceu.",
+        "why": "Vinte e dois mil caíram."
+      },
+      {
+        "text": "Benjamim não é chamado irmão.",
+        "why": "Nosso irmão aparece na pergunta."
+      }
+    ],
+    "anchorQuestion": "Segundo Juízes 20:28, o que o Senhor promete para amanhã?",
+    "centralInsight": "Mesmo na disciplina, o Senhor é consultado: a justiça entre irmãos dói."
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Juízes 20:18, o Senhor disse que Judá subiria primeiro.",
+      "verseRef": "Juízes 20:18",
+      "correctOptionId": "true",
+      "evidenceSpan": "Judá subirá primeiro",
+      "feedbackCorrect": "Judá primeiro.",
+      "feedbackWrong": {
+        "false": "O texto afirma."
+      },
+      "hint": "Veja a resposta.",
+      "learningObjective": "Observar a ordem.",
+      "evidence": [
+        "Juízes 20:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Juízes 20:18, toque quem sobe primeiro.",
+      "verseRef": "Juízes 20:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judá"
+        },
+        {
+          "id": "b",
+          "text": "Betel"
+        },
+        {
+          "id": "c",
+          "text": "Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Judá subirá primeiro",
+      "feedbackCorrect": "Judá.",
+      "feedbackWrong": {
+        "b": "Betel é o lugar.",
+        "c": "Deus é consultado."
+      },
+      "hint": "Veja a resposta.",
+      "learningObjective": "Identificar Judá.",
+      "evidence": [
+        "Juízes 20:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Juízes 20:21, quantos de Israel caíram no primeiro dia?",
+      "verseRef": "Juízes 20:21",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vinte e dois mil"
+        },
+        {
+          "id": "b",
+          "text": "Dez"
+        },
+        {
+          "id": "c",
+          "text": "Três mil"
+        },
+        {
+          "id": "d",
+          "text": "Nenhum"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "vinte e dois mil homens de Israel",
+      "feedbackCorrect": "Vinte e dois mil.",
+      "feedbackWrong": {
+        "b": "Não são dez.",
+        "c": "Não são três.",
+        "d": "Há baixas."
+      },
+      "hint": "Leia o número.",
+      "learningObjective": "Reconhecer as baixas.",
+      "evidence": [
+        "Juízes 20:21"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Juízes 20:18 na ordem do texto.",
+      "verseRef": "Juízes 20:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "consultaram a Deus"
+        },
+        {
+          "id": "b",
+          "text": "Quem de nós deve subir primeiro"
+        },
+        {
+          "id": "c",
+          "text": "Judá subirá primeiro"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Judá subirá primeiro",
+      "feedbackCorrect": "Consulta, pergunta e resposta.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta."
+      },
+      "hint": "Quem sobe?",
+      "learningObjective": "Seguir a ordem.",
+      "evidence": [
+        "Juízes 20:18"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Juízes 20:26, complete: ___ naquele dia até à tarde.",
+      "verseRef": "Juízes 20:26",
+      "options": [
+        {
+          "id": "a",
+          "text": "Jejuaram"
+        },
+        {
+          "id": "b",
+          "text": "Dançaram"
+        },
+        {
+          "id": "c",
+          "text": "Fugiram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Jejuaram naquele dia até à tarde",
+      "feedbackCorrect": "Jejuaram.",
+      "feedbackWrong": {
+        "b": "Não é dançaram.",
+        "c": "Não é fugiram."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar jejuaram.",
+      "evidence": [
+        "Juízes 20:26"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Juízes 20:28 comunica que se liga a este contexto?",
+      "verseRef": "Juízes 20:28",
+      "passageA": {
+        "ref": "Juízes 20:28"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Após choro e jejum, o Senhor promete entregar Benjamim."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Promessa de entrega"
+        },
+        {
+          "id": "b",
+          "text": "Ordem de desistir"
+        },
+        {
+          "id": "c",
+          "text": "Sem resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amanhã eu os entregarei nas suas mãos",
+      "feedbackCorrect": "Entrega prometida.",
+      "feedbackWrong": {
+        "b": "Não é desistir.",
+        "c": "Há resposta."
+      },
+      "hint": "O que promete?",
+      "learningObjective": "Ligar jejum e promessa.",
+      "evidence": [
+        "Juízes 20:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Juízes 20:23, Israel pergunta se deve lutar de novo, sem chamar Benjamim de irmão.",
+      "verseRef": "Juízes 20:23",
+      "correctOptionId": "false",
+      "evidenceSpan": "contra os filhos de Benjamim, nosso irmão",
+      "feedbackCorrect": "Chama de irmão.",
+      "feedbackWrong": {
+        "true": "Nosso irmão."
+      },
+      "hint": "Leia a pergunta.",
+      "learningObjective": "Ver o vínculo.",
+      "evidence": [
+        "Juízes 20:23"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Juízes 20:22, toque o marcador de contraste.",
+      "verseRef": "Juízes 20:22",
+      "options": [
+        {
+          "id": "a",
+          "text": "Entretanto"
+        },
+        {
+          "id": "b",
+          "text": "povo"
+        },
+        {
+          "id": "c",
+          "text": "batalha"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Entretanto, o povo de Israel se animou",
+      "feedbackCorrect": "Entretanto.",
+      "feedbackWrong": {
+        "b": "Povo se anima.",
+        "c": "Batalha continua."
+      },
+      "hint": "Olhe o início.",
+      "learningObjective": "Tocar o contraste.",
+      "evidence": [
+        "Juízes 20:22"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Que relação Juízes 20:28 faz?",
+      "verseRef": "Juízes 20:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vá pois amanhã eu entregarei"
+        },
+        {
+          "id": "b",
+          "text": "Pare pois já venceu"
+        },
+        {
+          "id": "c",
+          "text": "Fuja pois não há arca"
+        },
+        {
+          "id": "d",
+          "text": "Cale pois Finéias manda"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Vá, pois amanhã eu os entregarei nas suas mãos",
+      "feedbackCorrect": "Causa da ida.",
+      "feedbackWrong": {
+        "b": "Há entrega.",
+        "c": "Há arca.",
+        "d": "Finéias pergunta."
+      },
+      "hint": "Leia o pois.",
+      "learningObjective": "Compreender a causa.",
+      "evidence": [
+        "Juízes 20:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene os movimentos da guerra.",
+      "verseRef": "Juízes 20:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consulta e primeira derrota"
+        },
+        {
+          "id": "b",
+          "text": "Choro e segunda derrota"
+        },
+        {
+          "id": "c",
+          "text": "Jejum e promessa"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "consultaram a Deus",
+      "feedbackCorrect": "Consulta, choro e promessa.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta."
+      },
+      "hint": "O que fecha a promessa?",
+      "learningObjective": "Ordenar a guerra",
+      "evidence": [
+        "Juízes 20:18",
+        "Juízes 20:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Juízes 20:28, complete: amanhã eu os ___.",
+      "verseRef": "Juízes 20:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "entregarei"
+        },
+        {
+          "id": "b",
+          "text": "esquecerei"
+        },
+        {
+          "id": "c",
+          "text": "amaldiçoarei"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amanhã eu os entregarei nas suas mãos",
+      "feedbackCorrect": "Entregarei.",
+      "feedbackWrong": {
+        "b": "Não é esquecerei.",
+        "c": "Não é amaldiçoarei."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar entregarei.",
+      "evidence": [
+        "Juízes 20:28"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Juízes 20:18 a 1 Samuel 30:8?",
+      "verseRef": "Juízes 20:18",
+      "passageA": {
+        "ref": "Juízes 20:18"
+      },
+      "passageB": {
+        "ref": "1 Samuel 30:8"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Consultar e seguir"
+        },
+        {
+          "id": "b",
+          "text": "Lutar sem Deus"
+        },
+        {
+          "id": "c",
+          "text": "Sem resposta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "consultaram a Deus",
+      "feedbackCorrect": "Consulta.",
+      "feedbackWrong": {
+        "b": "Há consulta.",
+        "c": "Há resposta."
+      },
+      "hint": "Compare a consulta.",
+      "learningObjective": "Ligar a Samuel.",
+      "evidence": [
+        "Juízes 20:18",
+        "1 Samuel 30:8"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Juízes 20:26, após as derrotas Israel ignora o Senhor e só confia na força.",
+      "verseRef": "Juízes 20:26",
+      "correctOptionId": "false",
+      "evidenceSpan": "estiveram ali perante o SENHOR",
+      "feedbackCorrect": "Choram perante o Senhor.",
+      "feedbackWrong": {
+        "true": "Perante o SENHOR."
+      },
+      "hint": "Leia o perante.",
+      "learningObjective": "Avaliar a resposta.",
+      "evidence": [
+        "Juízes 20:26"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Juízes 20:23, toque como chamam Benjamim.",
+      "verseRef": "Juízes 20:23",
+      "options": [
+        {
+          "id": "a",
+          "text": "irmão"
+        },
+        {
+          "id": "b",
+          "text": "Benjamim"
+        },
+        {
+          "id": "c",
+          "text": "Senhor"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Benjamim, nosso irmão",
+      "feedbackCorrect": "Irmão.",
+      "feedbackWrong": {
+        "b": "Benjamim é o nome.",
+        "c": "Senhor é consultado."
+      },
+      "hint": "Veja o apelativo.",
+      "learningObjective": "Tocar irmão.",
+      "evidence": [
+        "Juízes 20:23"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Qual leitura melhor une disciplina e consulta?",
+      "verseRef": "Juízes 20:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Mesmo na guerra, o Senhor é consultado e promete"
+        },
+        {
+          "id": "b",
+          "text": "Consulta cancela a dor"
+        },
+        {
+          "id": "c",
+          "text": "Sem jejum não há irmão"
+        },
+        {
+          "id": "d",
+          "text": "Judá age sozinho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "amanhã eu os entregarei nas suas mãos",
+      "feedbackCorrect": "Consulta e promessa.",
+      "feedbackWrong": {
+        "b": "Há dor.",
+        "c": "Há irmão.",
+        "d": "Há povo."
+      },
+      "hint": "Una choro e entrega.",
+      "learningObjective": "Escolher a leitura sustentável.",
+      "evidence": [
+        "Juízes 20:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Ordene o encadeamento da disciplina.",
+      "verseRef": "Juízes 20:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Consultam e perdem"
+        },
+        {
+          "id": "b",
+          "text": "Choram e jejuam"
+        },
+        {
+          "id": "c",
+          "text": "Ouvem a promessa de entrega"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "amanhã eu os entregarei nas suas mãos",
+      "feedbackCorrect": "Perda, choro e promessa.",
+      "feedbackWrong": {
+        "default": "Comece pela consulta."
+      },
+      "hint": "O que fecha a promessa?",
+      "learningObjective": "Encadear a disciplina",
+      "evidence": [
+        "Juízes 20:18",
+        "Juízes 20:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Juízes 20:18, complete: ___ a Deus.",
+      "verseRef": "Juízes 20:18",
+      "options": [
+        {
+          "id": "a",
+          "text": "consultaram"
+        },
+        {
+          "id": "b",
+          "text": "ignoraram"
+        },
+        {
+          "id": "c",
+          "text": "acusaram"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "consultaram a Deus",
+      "feedbackCorrect": "Consultaram.",
+      "feedbackWrong": {
+        "b": "Não é ignoraram.",
+        "c": "Não é acusaram."
+      },
+      "hint": "Veja o verbo.",
+      "learningObjective": "Lembrar consultaram.",
+      "evidence": [
+        "Juízes 20:18"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Juízes 20:23 a Mateus 18:15?",
+      "verseRef": "Juízes 20:23",
+      "passageA": {
+        "ref": "Juízes 20:23"
+      },
+      "passageB": {
+        "ref": "Mateus 18:15"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Corrigir o irmão"
+        },
+        {
+          "id": "b",
+          "text": "Esquecer o irmão"
+        },
+        {
+          "id": "c",
+          "text": "Odiar Benjamim"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Benjamim, nosso irmão",
+      "feedbackCorrect": "Irmão.",
+      "feedbackWrong": {
+        "b": "Não esquecer.",
+        "c": "Não odiar."
+      },
+      "hint": "Compare o irmão.",
+      "learningObjective": "Ligar a Mateus.",
+      "evidence": [
+        "Juízes 20:23",
+        "Mateus 18:15"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,922 @@
+{
+  "study": {
+    "passageRef": "Levítico 11:41–44",
+    "passages": [
+      {
+        "ref": "Levítico 11:41–44"
+      },
+      {
+        "ref": "Levítico 12:1–5"
+      },
+      {
+        "ref": "Levítico 13:1–5"
+      },
+      {
+        "ref": "Levítico 14:1–5"
+      },
+      {
+        "ref": "Levítico 15:25–28"
+      }
+    ],
+    "context": "Cena de Travessia: Pureza: o Senhor instrui Israel sobre culto, pureza e vida santa.",
+    "keyword": "Senhor",
+    "keywordGloss": "Nome ou título central neste trecho.",
+    "focusQuestion": "O que esta cena pede de você diante de Deus?",
+    "reflectionPrompts": [
+      "Travessia: Pureza",
+      "Fidelidade",
+      "Decisão"
+    ],
+    "facts": [
+      {
+        "text": "Todo réptil que se arrasta sobre a terra.",
+        "evidenceRef": "Levítico 11:41",
+        "evidenceSpan": "Todo réptil que se arrasta sobre a terra"
+      },
+      {
+        "text": "Eu.",
+        "evidenceRef": "Levítico 11:44",
+        "evidenceSpan": "Eu"
+      },
+      {
+        "text": "Disse ainda o Senhor a Moisés.",
+        "evidenceRef": "Levítico 12:1",
+        "evidenceSpan": "Disse ainda o Senhor a Moisés"
+      },
+      {
+        "text": "Mas.",
+        "evidenceRef": "Levítico 12:5",
+        "evidenceSpan": "Mas"
+      },
+      {
+        "text": "O Senhor falou a Moisés e a Arão.",
+        "evidenceRef": "Levítico 13:1",
+        "evidenceSpan": "O Senhor falou a Moisés e a Arão"
+      },
+      {
+        "text": "E.",
+        "evidenceRef": "Levítico 13:5",
+        "evidenceSpan": "E"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "Senhor",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "Deus",
+        "gloss": "Nome ou título central neste trecho."
+      },
+      {
+        "term": "sacerdote",
+        "gloss": "Nome ou título central neste trecho."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Todo réptil que se arrasta sobre",
+        "evidenceRef": "Levítico 11:41"
+      },
+      {
+        "label": "Eu sou o senhor vosso deus",
+        "evidenceRef": "Levítico 11:44"
+      },
+      {
+        "label": "Disse ainda o senhor a moisés",
+        "evidenceRef": "Levítico 12:1"
+      },
+      {
+        "label": "Mas se der à luz uma",
+        "evidenceRef": "Levítico 12:5"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "causa",
+        "text": "O texto liga as partes com \"pois\".",
+        "marker": "pois",
+        "evidenceRef": "Levítico 11:44"
+      },
+      {
+        "kind": "contraste",
+        "text": "O texto liga as partes com \"Mas\".",
+        "marker": "Mas",
+        "evidenceRef": "Levítico 12:5"
+      },
+      {
+        "kind": "resultado",
+        "text": "O texto liga as partes com \"então\".",
+        "marker": "então",
+        "evidenceRef": "Levítico 13:5"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "1 Pedro 1:16",
+        "bridge": "Sede santos como eu"
+      },
+      {
+        "ref": "2 Coríntios 6:16",
+        "bridge": "Deus no meio do povo"
+      },
+      {
+        "ref": "Lucas 4:18",
+        "bridge": "Boa nova aos pobres"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O culto é só formalidade; o Senhor não se importa com o detalhe.",
+        "why": "O texto detalha oferta, sangue e altar com precisão."
+      },
+      {
+        "text": "Qualquer animal ou gesto serve, mesmo contra a regra do texto.",
+        "why": "Há exigências claras: sem defeito, lugar e rito definidos."
+      },
+      {
+        "text": "Santidade é só sentimento, sem distinção prática.",
+        "why": "O texto exige distinguir limpo e imundo, santo e profano."
+      }
+    ],
+    "centralInsight": "A pureza protege a vida com Deus e com o próximo",
+    "anchorQuestion": "O que Levítico 11:41 destaca neste trecho?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Levítico 11:41, o texto inclui Todo réptil que se arrasta sobre a terra.",
+      "verseRef": "Levítico 11:41",
+      "correctOptionId": "true",
+      "evidenceSpan": "Todo réptil que se arrasta sobre a terra",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 11:41 afirma.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 11:41, toque quem ou o quê o versículo destaca.",
+      "verseRef": "Levítico 11:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo"
+        },
+        {
+          "id": "b",
+          "text": "réptil"
+        },
+        {
+          "id": "c",
+          "text": "arrasta"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "O versículo destaca Todo.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Levítico 12:1, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse ainda o Senhor a Moisés"
+        },
+        {
+          "id": "b",
+          "text": "O silêncio total sem nenhuma fala"
+        },
+        {
+          "id": "c",
+          "text": "A ausência de qualquer personagem"
+        },
+        {
+          "id": "d",
+          "text": "A proibição de agir no relato"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse ainda o Senhor a Moisés",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 12:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 11:44 na ordem do texto.",
+      "verseRef": "Levítico 11:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "Eu sou o SENHOR"
+        },
+        {
+          "id": "b",
+          "text": "vosso Deus"
+        },
+        {
+          "id": "c",
+          "text": "vos consagrareis e sereis santos"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Eu sou o SENHOR",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência das frases no versículo."
+      },
+      "hint": "Comece pelo início do versículo.",
+      "learningObjective": "Ordenar o texto do versículo.",
+      "evidence": [
+        "Levítico 11:44"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Levítico 12:5, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "menina"
+        },
+        {
+          "id": "b",
+          "text": "Todo"
+        },
+        {
+          "id": "c",
+          "text": "réptil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "menina",
+      "feedbackCorrect": "A palavra do versículo é menina.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 12:5"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Levítico 11:41 comunica que se liga a este contexto.",
+      "verseRef": "Levítico 11:41",
+      "passageA": {
+        "ref": "Levítico 11:41"
+      },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Cena de Travessia: Pureza: o Senhor instrui Israel sobre culto, pureza e vida santa."
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Relato ligado ao contexto"
+        },
+        {
+          "id": "b",
+          "text": "Fuga de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "Silêncio sem Deus"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "O versículo conversa com o contexto da cena.",
+      "feedbackWrong": {
+        "b": "O texto chama a enfrentar, não a fugir.",
+        "c": "O texto fala no meio da história, não de silêncio vazio."
+      },
+      "hint": "Ligue o versículo ao contexto dado.",
+      "learningObjective": "Conectar versículo e contexto.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Levítico 14:1, toque outra palavra central do trecho.",
+      "verseRef": "Levítico 14:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "então"
+        },
+        {
+          "id": "b",
+          "text": "Disse"
+        },
+        {
+          "id": "c",
+          "text": "o"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "então",
+      "feedbackCorrect": "O trecho destaca então.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Levítico 14:1"
+      ]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Levítico 15:25 na ordem do texto.",
+      "verseRef": "Levítico 15:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também a mulher"
+        },
+        {
+          "id": "b",
+          "text": "tiver fluxo de sangue"
+        },
+        {
+          "id": "c",
+          "text": "por muitos dias"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Também a mulher",
+      "feedbackCorrect": "Essa é a ordem do versículo.",
+      "feedbackWrong": {
+        "default": "Siga a sequência do versículo."
+      },
+      "hint": "Comece pelo início.",
+      "learningObjective": "Ordenar outro trecho do bloco.",
+      "evidence": [
+        "Levítico 15:25"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Levítico 11:44, a palavra pois liga ideias no fluxo do texto.",
+      "verseRef": "Levítico 11:44",
+      "correctOptionId": "true",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "false": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 11:44 afirma.",
+      "evidence": [
+        "Levítico 11:44"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 11:44, toque a palavra que marca a relação no texto.",
+      "verseRef": "Levítico 11:44",
+      "options": [
+        {
+          "id": "a",
+          "text": "pois"
+        },
+        {
+          "id": "b",
+          "text": "sou"
+        },
+        {
+          "id": "c",
+          "text": "SENHOR"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "pois",
+      "feedbackCorrect": "O versículo destaca pois.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 11:44"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Segundo Levítico 12:5, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 12:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "O rito avança com propósito"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Mas",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 12:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como avança o movimento desta cena.",
+      "verseRef": "Levítico 11:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "Todo réptil que se arrasta sobre"
+        },
+        {
+          "id": "b",
+          "text": "Eu sou o senhor vosso deus"
+        },
+        {
+          "id": "c",
+          "text": "Disse ainda o senhor a moisés"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "Os movimentos seguem a ordem do texto.",
+      "feedbackWrong": {
+        "default": "Reordene conforme o avanço do texto."
+      },
+      "hint": "Pense no começo, meio e fim do trecho.",
+      "learningObjective": "Ordenar os movimentos do texto.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Levítico 12:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 12:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Disse"
+        },
+        {
+          "id": "b",
+          "text": "Todo"
+        },
+        {
+          "id": "c",
+          "text": "réptil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Disse",
+      "feedbackCorrect": "A palavra do versículo é Disse.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 12:1"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Levítico 11:41 a 1 Pedro 1:16.",
+      "verseRef": "Levítico 11:41",
+      "passageA": {
+        "ref": "Levítico 11:41"
+      },
+      "passageB": {
+        "ref": "1 Pedro 1:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Sede santos como eu"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Levítico 14:5, toque outra palavra central do trecho.",
+      "verseRef": "Levítico 14:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "sacerdote"
+        },
+        {
+          "id": "b",
+          "text": "O"
+        },
+        {
+          "id": "c",
+          "text": "ordenará"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sacerdote",
+      "feedbackCorrect": "O trecho destaca sacerdote.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Levítico 14:5"
+      ]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Ordene o movimento deste trecho do bloco.",
+      "verseRef": "Levítico 15:28",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco caminhada"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em caminhada"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em caminhada"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Levítico 15:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "O texto permite concluir que Deus está ausente e indiferente.",
+      "verseRef": "Levítico 15:28",
+      "correctOptionId": "false",
+      "evidenceSpan": "Quando",
+      "feedbackCorrect": "O versículo sustenta essa leitura do texto.",
+      "feedbackWrong": {
+        "true": "Releia o versículo, o texto aponta outra direção."
+      },
+      "hint": "Olhe com atenção as palavras do versículo.",
+      "learningObjective": "Observar o que Levítico 15:28 afirma.",
+      "evidence": [
+        "Levítico 15:28"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 13:5, toque o trecho que sustenta a leitura do texto.",
+      "verseRef": "Levítico 13:5",
+      "options": [
+        {
+          "id": "a",
+          "text": "sétimo"
+        },
+        {
+          "id": "b",
+          "text": "dia"
+        },
+        {
+          "id": "c",
+          "text": "sacerdote"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "sétimo",
+      "feedbackCorrect": "O versículo destaca sétimo.",
+      "feedbackWrong": {
+        "b": "Essa opção aparece no texto, mas não responde ao pedido.",
+        "c": "Essa opção aparece no texto, mas não é o alvo."
+      },
+      "hint": "Procure no versículo a palavra pedida.",
+      "learningObjective": "Identificar o trecho no versículo.",
+      "evidence": [
+        "Levítico 13:5"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Segundo Levítico 13:1, o que o texto apresenta com clareza.",
+      "verseRef": "Levítico 13:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "O relato mostra o senhor falou a moisés"
+        },
+        {
+          "id": "b",
+          "text": "Os personagens fogem de toda decisão"
+        },
+        {
+          "id": "c",
+          "text": "O texto apaga o nome de Deus da cena"
+        },
+        {
+          "id": "d",
+          "text": "Nada de concreto acontece no trecho"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor falou a Moisés e a Arão",
+      "feedbackCorrect": "Essa opção resume o que o versículo diz.",
+      "feedbackWrong": {
+        "b": "O texto não sustenta essa leitura.",
+        "c": "O texto não sustenta essa leitura.",
+        "d": "O texto não sustenta essa leitura."
+      },
+      "hint": "Volte às palavras concretas do versículo.",
+      "learningObjective": "Escolher o que o texto afirma.",
+      "evidence": [
+        "Levítico 13:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra a lógica do texto.",
+      "verseRef": "Levítico 11:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cena apresenta a situação"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age ou decide no relato"
+        },
+        {
+          "id": "c",
+          "text": "O trecho chega ao desfecho"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "A lógica vai da situação ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela situação do relato."
+      },
+      "hint": "Da situação ao desfecho.",
+      "learningObjective": "Ver o encadeamento do texto.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Levítico 13:1, complete a palavra que o texto usa com peso.",
+      "verseRef": "Levítico 13:1",
+      "options": [
+        {
+          "id": "a",
+          "text": "Senhor"
+        },
+        {
+          "id": "b",
+          "text": "Todo"
+        },
+        {
+          "id": "c",
+          "text": "réptil"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Senhor",
+      "feedbackCorrect": "A palavra do versículo é Senhor.",
+      "feedbackWrong": {
+        "b": "Essa palavra não é a que o versículo usa aqui.",
+        "c": "Essa palavra não é a que o versículo usa aqui."
+      },
+      "hint": "Lembre a palavra concreta do versículo.",
+      "learningObjective": "Recordar a palavra-chave do trecho.",
+      "evidence": [
+        "Levítico 13:1"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Levítico 11:41 a 2 Coríntios 6:16.",
+      "verseRef": "Levítico 11:41",
+      "passageA": {
+        "ref": "Levítico 11:41"
+      },
+      "passageB": {
+        "ref": "2 Coríntios 6:16"
+      },
+      "options": [
+        {
+          "id": "a",
+          "text": "Deus no meio do povo"
+        },
+        {
+          "id": "b",
+          "text": "Negação de Deus"
+        },
+        {
+          "id": "c",
+          "text": "Ausência de sentido"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "A ponte entre os textos é esse tema.",
+      "feedbackWrong": {
+        "b": "Os textos não sustentam essa ponte.",
+        "c": "Os textos não sustentam essa ponte."
+      },
+      "hint": "Nomeie a ponte em poucas palavras.",
+      "learningObjective": "Ligar o texto a outro texto.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Levítico 15:25, toque outra palavra central do trecho.",
+      "verseRef": "Levítico 15:25",
+      "options": [
+        {
+          "id": "a",
+          "text": "Também"
+        },
+        {
+          "id": "b",
+          "text": "a"
+        },
+        {
+          "id": "c",
+          "text": "mulher"
+        }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "Também",
+      "feedbackCorrect": "O trecho destaca Também.",
+      "feedbackWrong": {
+        "b": "Não é o alvo deste toque.",
+        "c": "Não é o alvo deste toque."
+      },
+      "hint": "Busque outra palavra forte no versículo.",
+      "learningObjective": "Identificar mais um trecho do bloco.",
+      "evidence": [
+        "Levítico 15:25"
+      ]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência revela a lógica deste bloco na Interpretação.",
+      "verseRef": "Levítico 11:41",
+      "options": [
+        {
+          "id": "a",
+          "text": "Surge a tensão do bloco profundezas"
+        },
+        {
+          "id": "b",
+          "text": "Alguém age com decisão em profundezas"
+        },
+        {
+          "id": "c",
+          "text": "O bloco chega ao desfecho em profundezas"
+        }
+      ],
+      "correctOrder": [
+        "a",
+        "b",
+        "c"
+      ],
+      "evidenceSpan": "Todo",
+      "feedbackCorrect": "O bloco caminha da tensão ao desfecho.",
+      "feedbackWrong": {
+        "default": "Comece pela tensão do bloco."
+      },
+      "hint": "Da tensão ao desfecho.",
+      "learningObjective": "Ordenar a lógica do bloco.",
+      "evidence": [
+        "Levítico 11:41"
+      ]
+    }
+  ]
+}

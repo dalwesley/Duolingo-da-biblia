@@ -1,0 +1,716 @@
+{
+ "study": {
+  "passageRef": "Jó 41:1–6",
+  "passages": [
+   {
+    "ref": "Jó 41:1–6"
+   },
+   {
+    "ref": "Jó 41:7–11"
+   }
+  ],
+  "context": "Deus aponta o leviatã: criatura que Jó não captura com anzol nem toma por servo. Se não dominamos a criação, como chamar Deus a depor no nosso tribunal?",
+  "keyword": "Leviatã",
+  "keywordGloss": "Criatura indomável que expõe o limite de quem quer julgar a Deus.",
+  "focusQuestion": "O que na criação ainda te lembra que você não coloca Deus no banco dos réus?",
+  "reflectionPrompts": [
+   "Criatura indomável",
+   "Limite humano",
+   "Tudo debaixo dos céus"
+  ],
+  "facts": [
+   {
+    "text": "Deus pergunta se Jó captura o leviatã com anzol.",
+    "evidenceRef": "Jó 41:1",
+    "evidenceSpan": "capturar o leviatã"
+   },
+   {
+    "text": "Deus pergunta se o leviatã fará acordo e será servo.",
+    "evidenceRef": "Jó 41:4",
+    "evidenceSpan": "Fará ele um acordo contigo?"
+   },
+   {
+    "text": "Ninguém é tão audacioso que o desperte.",
+    "evidenceRef": "Jó 41:10",
+    "evidenceSpan": "Nenhum há tão audacioso que se atreva a despertá-lo"
+   },
+   {
+    "text": "Deus pergunta quem pode se erguer diante dele.",
+    "evidenceRef": "Jó 41:10",
+    "evidenceSpan": "quem, pois, é aquele que pode se erguer diante de mim?"
+   },
+   {
+    "text": "Ninguém deu primeiro a Deus para que Ele retribua.",
+    "evidenceRef": "Jó 41:11",
+    "evidenceSpan": "Quem primeiro me deu algo, para que eu deva retribuí-lo?"
+   },
+   {
+    "text": "O que está debaixo de todos os céus é de Deus.",
+    "evidenceRef": "Jó 41:11",
+    "evidenceSpan": "o que está debaixo de todos os céus é meu"
+   }
+  ],
+  "keyTerms": [
+   {
+    "term": "leviatã",
+    "gloss": "Criatura que Jó não doma com anzol, corda ou acordo."
+   },
+   {
+    "term": "acordo",
+    "gloss": "Pacto que o leviatã não fará com o homem."
+   },
+   {
+    "term": "céus",
+    "gloss": "Horizonte do domínio de Deus: tudo debaixo deles é dele."
+   }
+  ],
+  "structure": [
+   {
+    "label": "Perguntas sobre capturar o leviatã",
+    "evidenceRef": "Jó 41:1–2"
+   },
+   {
+    "label": "Perguntas sobre súplicas, acordo e brincadeira",
+    "evidenceRef": "Jó 41:3–5"
+   },
+   {
+    "label": "Aviso da peleja e da esperança iludida",
+    "evidenceRef": "Jó 41:6–9"
+   },
+   {
+    "label": "Ninguém se ergue diante de Deus; tudo é dele",
+    "evidenceRef": "Jó 41:10–11"
+   }
+  ],
+  "relations": [
+   {
+    "kind": "resultado",
+    "text": "Quem põe a mão no leviatã lembra a peleja e não tenta de novo.",
+    "marker": null,
+    "evidenceRef": "Jó 41:8"
+   },
+   {
+    "kind": "contraste",
+    "text": "Ninguém desperta o leviatã; quem, pois, se ergue diante de Deus?",
+    "marker": "pois",
+    "evidenceRef": "Jó 41:10"
+   },
+   {
+    "kind": "causa",
+    "text": "Ninguém deu primeiro a Deus, pois tudo debaixo dos céus é dele.",
+    "marker": "Pois",
+    "evidenceRef": "Jó 41:11"
+   }
+  ],
+  "crossRefs": [
+   {
+    "ref": "Salmos 104:26",
+    "bridge": "Leviatã nas águas de Deus"
+   },
+   {
+    "ref": "Romanos 11:35",
+    "bridge": "Quem deu primeiro ao Senhor"
+   },
+   {
+    "ref": "Salmos 24:1",
+    "bridge": "Do Senhor é a terra"
+   }
+  ],
+  "misreadings": [
+   {
+    "text": "Jó pode domesticar o leviatã como passarinho.",
+    "why": "41:5 pergunta isso para mostrar a impossibilidade."
+   },
+   {
+    "text": "Deus deve retribuir porque o homem deu primeiro.",
+    "why": "41:11 nega que alguém tenha dado primeiro a Deus."
+   },
+   {
+    "text": "Erguer-se diante de Deus é fácil se alguém doma o leviatã.",
+    "why": "41:10 usa o leviatã para perguntar quem se ergue diante de Deus."
+   }
+  ],
+  "centralInsight": "Se não dominamos a criação, como chamar Deus a depor no nosso tribunal?",
+  "anchorQuestion": "Com o que Deus pergunta se Jó captura o leviatã em Jó 41:1?"
+ },
+ "questions": [
+  {
+   "difficulty": "semente",
+   "type": "true_false",
+   "question": "Em Jó 41:1, Deus pergunta se Jó capturará o leviatã com anzol.",
+   "verseRef": "Jó 41:1",
+   "correctOptionId": "true",
+   "evidenceSpan": "capturar o leviatã",
+   "feedbackCorrect": "A pergunta abre o retrato do leviatã.",
+   "feedbackWrong": {
+    "false": "Releia: Poderás tu, com anzol, capturar o leviatã?"
+   },
+   "hint": "Veja a primeira pergunta.",
+   "learningObjective": "Observar a pergunta sobre o leviatã.",
+   "evidence": [
+    "Jó 41:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "find_in_text",
+   "question": "Em Jó 41:1, toque a criatura que Deus menciona.",
+   "verseRef": "Jó 41:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "leviatã"
+    },
+    {
+     "id": "b",
+     "text": "anzol"
+    },
+    {
+     "id": "c",
+     "text": "corda"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "capturar o leviatã",
+   "feedbackCorrect": "A criatura é o leviatã.",
+   "feedbackWrong": {
+    "b": "Anzol é o instrumento da pergunta.",
+    "c": "Corda aparece na segunda pergunta."
+   },
+   "hint": "Veja o objeto de capturar.",
+   "learningObjective": "Identificar a criatura.",
+   "evidence": [
+    "Jó 41:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "choice",
+   "question": "Segundo Jó 41:11, de quem é o que está debaixo de todos os céus?",
+   "verseRef": "Jó 41:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "É de Deus"
+    },
+    {
+     "id": "b",
+     "text": "É de Jó"
+    },
+    {
+     "id": "c",
+     "text": "É dos comerciantes"
+    },
+    {
+     "id": "d",
+     "text": "É do leviatã"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o que está debaixo de todos os céus é meu",
+   "feedbackCorrect": "Deus declara: é meu.",
+   "feedbackWrong": {
+    "b": "O texto não atribui a Jó.",
+    "c": "Comerciantes aparecem em 41:6.",
+    "d": "O leviatã é criatura, não dono dos céus."
+   },
+   "hint": "Leia o fim do versículo.",
+   "learningObjective": "Observar o domínio de Deus.",
+   "evidence": [
+    "Jó 41:11"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "order",
+   "question": "Monte Jó 41:1 na ordem do texto.",
+   "verseRef": "Jó 41:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "Poderás tu, com anzol, capturar o leviatã?"
+    },
+    {
+     "id": "b",
+     "text": "Ou conseguirás prender sua língua"
+    },
+    {
+     "id": "c",
+     "text": "com uma corda?"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "capturar o leviatã",
+   "feedbackCorrect": "Primeiro o anzol; depois a corda na língua.",
+   "feedbackWrong": {
+    "default": "Comece pelo anzol; a corda fecha."
+   },
+   "hint": "Comece pela primeira pergunta.",
+   "learningObjective": "Reconhecer a sequência de 41:1.",
+   "evidence": [
+    "Jó 41:1"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "complete",
+   "question": "Em Jó 41:4, o que o leviatã faria contigo na pergunta de Deus?",
+   "verseRef": "Jó 41:4",
+   "options": [
+    {
+     "id": "a",
+     "text": "acordo"
+    },
+    {
+     "id": "b",
+     "text": "anzol"
+    },
+    {
+     "id": "c",
+     "text": "arpões"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Fará ele um acordo contigo?",
+   "feedbackCorrect": "A palavra da pergunta é acordo.",
+   "feedbackWrong": {
+    "b": "Anzol está em 41:1.",
+    "c": "Arpões estão em 41:7."
+   },
+   "hint": "Veja o objeto da primeira pergunta.",
+   "learningObjective": "Lembrar o pacto impossível.",
+   "evidence": [
+    "Jó 41:4"
+   ]
+  },
+  {
+   "difficulty": "semente",
+   "type": "connect",
+   "question": "O que Jó 41:1 comunica que se liga a este contexto?",
+   "verseRef": "Jó 41:1",
+   "passageA": {
+    "ref": "Jó 41:1"
+   },
+   "passageB": {
+    "ref": "Contexto",
+    "text": "Deus usa o leviatã para mostrar que Jó não domina a criação nem julga a Deus."
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Criatura fora do domínio"
+    },
+    {
+     "id": "b",
+     "text": "Vitória fácil de Jó"
+    },
+    {
+     "id": "c",
+     "text": "Silêncio eterno de Deus"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "capturar o leviatã",
+   "feedbackCorrect": "A pergunta mostra o que Jó não captura.",
+   "feedbackWrong": {
+    "b": "Não há vitória fácil.",
+    "c": "Deus está falando."
+   },
+   "hint": "Pense no que a pergunta assume.",
+   "learningObjective": "Ligar a pergunta ao contexto.",
+   "evidence": [
+    "Jó 41:1"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "true_false",
+   "question": "Em Jó 41:10, qualquer homem audacioso desperta o leviatã sem risco.",
+   "verseRef": "Jó 41:10",
+   "correctOptionId": "false",
+   "evidenceSpan": "Nenhum há tão audacioso que se atreva a despertá-lo",
+   "feedbackCorrect": "O texto diz que nenhum é tão audacioso.",
+   "feedbackWrong": {
+    "true": "Releia o começo de 41:10."
+   },
+   "hint": "Veja a palavra Nenhum.",
+   "learningObjective": "Compreender o limite humano.",
+   "evidence": [
+    "Jó 41:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "find_in_text",
+   "question": "Em Jó 41:10, toque a palavra que liga o leviatã ao desafio diante de Deus.",
+   "verseRef": "Jó 41:10",
+   "options": [
+    {
+     "id": "a",
+     "text": "pois"
+    },
+    {
+     "id": "b",
+     "text": "Nenhum"
+    },
+    {
+     "id": "c",
+     "text": "audacioso"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem, pois, é aquele",
+   "feedbackCorrect": "Pois liga a impossibilidade de despertar o leviatã ao desafio diante de Deus.",
+   "feedbackWrong": {
+    "b": "Nenhum abre a frase sobre o leviatã.",
+    "c": "Audacioso descreve quem não há."
+   },
+   "hint": "Procure a palavra entre vírgulas.",
+   "learningObjective": "Reconhecer o marcador.",
+   "evidence": [
+    "Jó 41:10"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "choice",
+   "question": "Como Jó 41:10–11 se relaciona com as perguntas de 41:1–4?",
+   "verseRef": "Jó 41:1–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Leva do indomável à conclusão: quem se ergue diante de Deus?"
+    },
+    {
+     "id": "b",
+     "text": "Nega que o leviatã seja difícil de capturar"
+    },
+    {
+     "id": "c",
+     "text": "Afirma que Jó já fez acordo com o leviatã"
+    },
+    {
+     "id": "d",
+     "text": "Diz que Deus deve retribuir o que Jó deu"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem, pois, é aquele que pode se erguer diante de mim?",
+   "feedbackCorrect": "Do anzol ao trono: a criatura aponta para Deus.",
+   "feedbackWrong": {
+    "b": "As perguntas mostram a impossibilidade.",
+    "c": "41:4 pergunta se fará acordo.",
+    "d": "41:11 nega que alguém tenha dado primeiro."
+   },
+   "hint": "Leia o salto de 41:10.",
+   "learningObjective": "Relacionar criatura e Criador.",
+   "evidence": [
+    "Jó 41:1–11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "order",
+   "question": "Como avança a fala de Deus em 41:1–11?",
+   "verseRef": "Jó 41:1–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Perguntas sobre capturar o leviatã"
+    },
+    {
+     "id": "b",
+     "text": "Aviso de que a peleja ilude a esperança"
+    },
+    {
+     "id": "c",
+     "text": "Ninguém se ergue diante de Deus; tudo é dele"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o que está debaixo de todos os céus é meu",
+   "feedbackCorrect": "O fio vai da captura ao aviso e ao domínio de Deus.",
+   "feedbackWrong": {
+    "default": "Comece pela captura; o domínio fecha."
+   },
+   "hint": "Pense: captura → peleja → domínio.",
+   "learningObjective": "Compreender a estrutura.",
+   "evidence": [
+    "Jó 41:1–11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "complete",
+   "question": "Em Jó 41:11, o que está debaixo de todos os céus?",
+   "verseRef": "Jó 41:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "meu"
+    },
+    {
+     "id": "b",
+     "text": "teu"
+    },
+    {
+     "id": "c",
+     "text": "nosso"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o que está debaixo de todos os céus é meu",
+   "feedbackCorrect": "A palavra do domínio é meu.",
+   "feedbackWrong": {
+    "b": "O texto não diz teu.",
+    "c": "O texto não diz nosso."
+   },
+   "hint": "Veja o fim da frase.",
+   "learningObjective": "Lembrar a declaração de domínio.",
+   "evidence": [
+    "Jó 41:11"
+   ]
+  },
+  {
+   "difficulty": "caminhada",
+   "type": "connect",
+   "question": "O que liga Jó 41:11 a Romanos 11:35?",
+   "verseRef": "Jó 41:11",
+   "passageA": {
+    "ref": "Jó 41:11"
+   },
+   "passageB": {
+    "ref": "Romanos 11:35"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Quem deu primeiro ao Senhor"
+    },
+    {
+     "id": "b",
+     "text": "Lista de tributos"
+    },
+    {
+     "id": "c",
+     "text": "Construção de muros"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "Quem primeiro me deu algo",
+   "feedbackCorrect": "Nos dois textos, ninguém coloca Deus em dívida.",
+   "feedbackWrong": {
+    "b": "Não há lista de tributos.",
+    "c": "Não se fala de muros."
+   },
+   "hint": "Compare a pergunta sobre dar primeiro.",
+   "learningObjective": "Relacionar Jó a Romanos.",
+   "evidence": [
+    "Jó 41:11",
+    "Romanos 11:35"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "true_false",
+   "question": "Jó 41:1–11 sustenta que, se não dominamos o leviatã, não podemos chamar Deus a depor no nosso tribunal.",
+   "verseRef": "Jó 41:10–11",
+   "correctOptionId": "true",
+   "evidenceSpan": "quem, pois, é aquele que pode se erguer diante de mim?",
+   "feedbackCorrect": "A pergunta sobre erguer-se diante de Deus é a ponta do argumento.",
+   "feedbackWrong": {
+    "false": "Una 41:1 com 41:10."
+   },
+   "hint": "Veja a pergunta final sobre erguer-se.",
+   "learningObjective": "Interpretar o leviatã como limite do tribunal.",
+   "evidence": [
+    "Jó 41:10–11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "find_in_text",
+   "question": "Em Jó 41:11, toque o trecho que sustenta o domínio de Deus.",
+   "verseRef": "Jó 41:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "céus é meu"
+    },
+    {
+     "id": "b",
+     "text": "primeiro me deu"
+    },
+    {
+     "id": "c",
+     "text": "deva retribuí-lo"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "debaixo de todos os céus é meu",
+   "feedbackCorrect": "A declaração final sustenta o domínio.",
+   "feedbackWrong": {
+    "b": "Isso é a pergunta sobre dívida.",
+    "c": "Isso completa a pergunta, não a declaração."
+   },
+   "hint": "Veja o fim do versículo.",
+   "learningObjective": "Sustentar a leitura do domínio.",
+   "evidence": [
+    "Jó 41:11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "choice",
+   "question": "Que leitura Jó 41:1–11 sustenta?",
+   "verseRef": "Jó 41:1–11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Se não dominamos a criação, não chamamos Deus a depor"
+    },
+    {
+     "id": "b",
+     "text": "Jó domestica o leviatã e julga a Deus"
+    },
+    {
+     "id": "c",
+     "text": "Deus deve retribuir o que o homem deu primeiro"
+    },
+    {
+     "id": "d",
+     "text": "Qualquer audacioso desperta o leviatã"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "quem, pois, é aquele que pode se erguer diante de mim?",
+   "feedbackCorrect": "Do indomável ao domínio de Deus: essa é a leitura.",
+   "feedbackWrong": {
+    "b": "As perguntas esperam o não.",
+    "c": "41:11 nega essa dívida.",
+    "d": "41:10 diz que nenhum há tão audacioso."
+   },
+   "hint": "Una 41:1 e 41:10–11.",
+   "learningObjective": "Escolher a leitura sustentável.",
+   "evidence": [
+    "Jó 41:1–11"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "order",
+   "question": "Qual sequência mostra o domínio de Deus sobre tudo?",
+   "verseRef": "Jó 41:11",
+   "options": [
+    {
+     "id": "a",
+     "text": "Deus declara que tudo sob os céus é dele"
+    },
+    {
+     "id": "b",
+     "text": "Paulo pergunta quem deu primeiro ao Senhor"
+    },
+    {
+     "id": "c",
+     "text": "O salmista confessa: do Senhor é a terra"
+    }
+   ],
+   "correctOrder": [
+    "a",
+    "b",
+    "c"
+   ],
+   "evidenceSpan": "o que está debaixo de todos os céus é meu",
+   "feedbackCorrect": "O fio vai de Jó a Romanos e ao Salmo 24.",
+   "feedbackWrong": {
+    "default": "Comece por Jó; o Salmo fecha."
+   },
+   "hint": "Siga: domínio → Romanos → Salmo.",
+   "learningObjective": "Ver o fio do domínio.",
+   "evidence": [
+    "Jó 41:11",
+    "Romanos 11:35",
+    "Salmos 24:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "complete",
+   "question": "Em Jó 41:1, com o que Deus pergunta se Jó captura o leviatã?",
+   "verseRef": "Jó 41:1",
+   "options": [
+    {
+     "id": "a",
+     "text": "anzol"
+    },
+    {
+     "id": "b",
+     "text": "cavalo"
+    },
+    {
+     "id": "c",
+     "text": "águia"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "com anzol, capturar o leviatã",
+   "feedbackCorrect": "O instrumento da pergunta é anzol.",
+   "feedbackWrong": {
+    "b": "Cavalo está em outra cena.",
+    "c": "Águia está em outra cena."
+   },
+   "hint": "Veja o instrumento da primeira pergunta.",
+   "learningObjective": "Lembrar o instrumento do desafio.",
+   "evidence": [
+    "Jó 41:1"
+   ]
+  },
+  {
+   "difficulty": "profundezas",
+   "type": "connect",
+   "question": "O que liga Jó 41:11 a Salmos 24:1?",
+   "verseRef": "Jó 41:11",
+   "passageA": {
+    "ref": "Jó 41:11"
+   },
+   "passageB": {
+    "ref": "Salmos 24:1"
+   },
+   "options": [
+    {
+     "id": "a",
+     "text": "Do Senhor é a terra"
+    },
+    {
+     "id": "b",
+     "text": "Lista de portas"
+    },
+    {
+     "id": "c",
+     "text": "Cântico sem palavras"
+    }
+   ],
+   "correctOptionId": "a",
+   "evidenceSpan": "o que está debaixo de todos os céus é meu",
+   "feedbackCorrect": "Nos dois textos, tudo pertence a Deus.",
+   "feedbackWrong": {
+    "b": "Não há lista de portas.",
+    "c": "Não se fala de cântico sem palavras."
+   },
+   "hint": "Compare a declaração de domínio.",
+   "learningObjective": "Ligar Jó ao Salmo.",
+   "evidence": [
+    "Jó 41:11",
+    "Salmos 24:1"
+   ]
+  }
+ ]
+}

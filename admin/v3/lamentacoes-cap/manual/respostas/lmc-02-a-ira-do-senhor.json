@@ -1,0 +1,506 @@
+{
+  "study": {
+    "passageRef": "Lamentações 2:1–6",
+    "passages": [
+      { "ref": "Lamentações 2:1–6" },
+      { "ref": "Lamentações 2:7–10" }
+    ],
+    "context": "O segundo canto mostra a ira do Senhor sobre Sião: moradas, altar, santuário e muros caem.",
+    "keyword": "ira",
+    "keywordGloss": "A indignação santa do Senhor que cobre Sião e derruba o que parecia seguro.",
+    "focusQuestion": "O que no seu coração trata o santuário como se nada pudesse cair?",
+    "reflectionPrompts": [
+      "Ira sobre Sião",
+      "Santuário rejeitado",
+      "Muros que gemem"
+    ],
+    "facts": [
+      {
+        "text": "O Senhor cobriu de nuvens, na sua ira, a filha de Sião.",
+        "evidenceRef": "Lamentações 2:1",
+        "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião"
+      },
+      {
+        "text": "O Senhor destruiu todas as moradas de Jacó e não se apiedou.",
+        "evidenceRef": "Lamentações 2:2",
+        "evidenceSpan": "O Senhor destruiu todas as moradas de Jacó e não se apiedou"
+      },
+      {
+        "text": "O Senhor se tornou como um inimigo e devorou Israel.",
+        "evidenceRef": "Lamentações 2:5",
+        "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel"
+      },
+      {
+        "text": "O Senhor rejeitou o seu altar e abominou o seu santuário.",
+        "evidenceRef": "Lamentações 2:7",
+        "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário"
+      },
+      {
+        "text": "O Senhor decidiu destruir o muro da filha de Sião.",
+        "evidenceRef": "Lamentações 2:8",
+        "evidenceSpan": "O Senhor decidiu destruir o muro da filha de Sião"
+      },
+      {
+        "text": "Os anciãos estão sentados no chão em silêncio.",
+        "evidenceRef": "Lamentações 2:10",
+        "evidenceSpan": "Estão sentados no chão em silêncio os anciãos da filha de Sião"
+      }
+    ],
+    "keyTerms": [
+      {
+        "term": "ira",
+        "gloss": "A indignação do Senhor que cobre e derruba Sião."
+      },
+      {
+        "term": "santuário",
+        "gloss": "O lugar santo que o Senhor abominou na disciplina."
+      },
+      {
+        "term": "rejeitou",
+        "gloss": "Verbo que mostra o Senhor afastando altar e santuário."
+      }
+    ],
+    "structure": [
+      {
+        "label": "Ira cobre Sião e derruba a glória",
+        "evidenceRef": "Lamentações 2:1–2"
+      },
+      {
+        "label": "O Senhor age como inimigo",
+        "evidenceRef": "Lamentações 2:4–5"
+      },
+      {
+        "label": "Altar e santuário são rejeitados",
+        "evidenceRef": "Lamentações 2:6–7"
+      },
+      {
+        "label": "Muros caem e anciãos calam",
+        "evidenceRef": "Lamentações 2:8–10"
+      }
+    ],
+    "relations": [
+      {
+        "kind": "resultado",
+        "text": "Na ira, o Senhor derruba fortalezas e profana o reino.",
+        "marker": "na sua ira",
+        "evidenceRef": "Lamentações 2:2"
+      },
+      {
+        "kind": "contraste",
+        "text": "O Senhor se tornou como um inimigo contra o próprio povo.",
+        "marker": "como",
+        "evidenceRef": "Lamentações 2:5"
+      },
+      {
+        "kind": "causa",
+        "text": "Antemuro e muro gemem porque já estão juntos enfraquecidos.",
+        "marker": "pois",
+        "evidenceRef": "Lamentações 2:8"
+      }
+    ],
+    "crossRefs": [
+      {
+        "ref": "Jeremias 7:14",
+        "bridge": "Casa rejeitada na disciplina"
+      },
+      {
+        "ref": "Miquéias 3:12",
+        "bridge": "Sião arada como campo"
+      },
+      {
+        "ref": "Salmos 74:7",
+        "bridge": "Santuário profanado pelo fogo"
+      }
+    ],
+    "misreadings": [
+      {
+        "text": "O santuário é intocável e nunca pode cair.",
+        "why": "2:7 diz que o Senhor rejeitou o altar e abominou o santuário."
+      },
+      {
+        "text": "Só inimigos humanos agiram; o Senhor ficou neutro.",
+        "why": "2:5 diz que o Senhor se tornou como um inimigo."
+      },
+      {
+        "text": "A ira do Senhor poupou muros e culto.",
+        "why": "2:7–8 mostram santuário entregue e muro decidido à destruição."
+      }
+    ],
+    "centralInsight": "Até o santuário pode cair quando o povo rejeita o Senhor.",
+    "anchorQuestion": "Segundo Lamentações 2:7, o que o Senhor fez com o altar e o santuário?"
+  },
+  "questions": [
+    {
+      "difficulty": "semente",
+      "type": "true_false",
+      "question": "Em Lamentações 2:7, o Senhor rejeitou o seu altar e abominou o seu santuário.",
+      "verseRef": "Lamentações 2:7",
+      "correctOptionId": "true",
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "Até o culto sagrado cai sob a ira do Senhor.",
+      "feedbackWrong": {
+        "false": "Releia 2:7: rejeitou o altar e abominou o santuário."
+      },
+      "hint": "Veja os dois verbos no começo do versículo.",
+      "learningObjective": "Observar a rejeição do santuário.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "find_in_text",
+      "question": "Em Lamentações 2:1, toque o que cobriu a filha de Sião na ira.",
+      "verseRef": "Lamentações 2:1",
+      "options": [
+        { "id": "a", "text": "de nuvens" },
+        { "id": "b", "text": "a glória" },
+        { "id": "c", "text": "seus pés" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião",
+      "feedbackCorrect": "O Senhor cobriu Sião de nuvens na sua ira.",
+      "feedbackWrong": {
+        "b": "A glória é precipitada, não o que cobre.",
+        "c": "\"Seus pés\" aparece no estrado, não como cobertura."
+      },
+      "hint": "Procure o complemento de \"cobriu\".",
+      "learningObjective": "Identificar a cobertura da ira.",
+      "evidence": ["Lamentações 2:1"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "choice",
+      "question": "Segundo Lamentações 2:5, como o Senhor se tornou em relação a Israel?",
+      "verseRef": "Lamentações 2:5",
+      "options": [
+        { "id": "a", "text": "Como um inimigo que devora" },
+        { "id": "b", "text": "Como um aliado silencioso" },
+        { "id": "c", "text": "Como um juiz distante e neutro" },
+        { "id": "d", "text": "Como um pastor que restaura já" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel",
+      "feedbackCorrect": "O texto diz: o Senhor se tornou como um inimigo e devorou Israel.",
+      "feedbackWrong": {
+        "b": "O texto fala de inimizade, não de aliança.",
+        "c": "Há ação direta: destroem-se palácios e fortalezas.",
+        "d": "Aqui há pranto e lamentação, não restauração."
+      },
+      "hint": "Leia a comparação no início do versículo.",
+      "learningObjective": "Observar a comparação com inimigo.",
+      "evidence": ["Lamentações 2:5"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "order",
+      "question": "Monte Lamentações 2:7 na ordem do texto.",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "O Senhor rejeitou o seu altar, abominou o seu santuário" },
+        { "id": "b", "text": "entregou nas mãos do inimigo os muros dos seus castelos" },
+        { "id": "c", "text": "gritaram na casa do Senhor, como em dia de festa" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "Rejeição do culto; entrega dos muros; gritos na casa.",
+      "feedbackWrong": {
+        "default": "Comece pela rejeição do altar; os gritos fecham."
+      },
+      "hint": "O versículo abre com a rejeição do altar.",
+      "learningObjective": "Reconhecer a sequência de 2:7.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "complete",
+      "question": "Em Lamentações 2:8, o que o Senhor decidiu destruir da filha de Sião?",
+      "verseRef": "Lamentações 2:8",
+      "options": [
+        { "id": "a", "text": "muro" },
+        { "id": "b", "text": "jardim" },
+        { "id": "c", "text": "rio" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor decidiu destruir o muro da filha de Sião",
+      "feedbackCorrect": "O Senhor decidiu destruir o muro da filha de Sião.",
+      "feedbackWrong": {
+        "b": "\"Jardim\" aparece em 2:6 como comparação, não aqui.",
+        "c": "\"Rio\" não aparece em 2:8."
+      },
+      "hint": "É o objeto da decisão no começo do versículo.",
+      "learningObjective": "Lembrar o alvo da destruição.",
+      "evidence": ["Lamentações 2:8"]
+    },
+    {
+      "difficulty": "semente",
+      "type": "connect",
+      "question": "O que Lamentações 2:7 comunica que se liga a este contexto?",
+      "verseRef": "Lamentações 2:7",
+      "passageA": { "ref": "Lamentações 2:7" },
+      "passageB": {
+        "ref": "Contexto",
+        "text": "Até o lugar santo cai quando o Senhor age na sua ira."
+      },
+      "options": [
+        { "id": "a", "text": "Santuário sob disciplina" },
+        { "id": "b", "text": "Templo intocável sempre" },
+        { "id": "c", "text": "Culto sem qualquer risco" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abominou o seu santuário",
+      "feedbackCorrect": "O santuário também está sob a disciplina do Senhor.",
+      "feedbackWrong": {
+        "b": "O texto mostra o santuário abominado, não intocável.",
+        "c": "Há rejeição do altar e entrega aos inimigos."
+      },
+      "hint": "Veja o que acontece ao altar e ao santuário.",
+      "learningObjective": "Ligar 2:7 à disciplina sobre o culto.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "true_false",
+      "question": "Em Lamentações 2:5, o Senhor permanece apenas como aliado e não se assemelha a inimigo.",
+      "verseRef": "Lamentações 2:5",
+      "correctOptionId": "false",
+      "evidenceSpan": "O Senhor se tornou como um inimigo; devorou Israel",
+      "feedbackCorrect": "O texto compara o Senhor a um inimigo que devora Israel.",
+      "feedbackWrong": {
+        "true": "Releia 2:5: o Senhor se tornou como um inimigo."
+      },
+      "hint": "Veja a comparação no início do versículo.",
+      "learningObjective": "Compreender a comparação com inimigo.",
+      "evidence": ["Lamentações 2:5"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "find_in_text",
+      "question": "Em Lamentações 2:8, toque a palavra que explica por que muro e antemuro gemem.",
+      "verseRef": "Lamentações 2:8",
+      "options": [
+        { "id": "a", "text": "pois" },
+        { "id": "b", "text": "cordel" },
+        { "id": "c", "text": "mão" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "gemem, pois já estão juntos enfraquecidos",
+      "feedbackCorrect": "\"Pois\" introduz a causa: já estão juntos enfraquecidos.",
+      "feedbackWrong": {
+        "b": "\"Cordel\" marca a medida da destruição, não a causa do gemido.",
+        "c": "\"Mão\" descreve a ação destruidora, não o marcador causal."
+      },
+      "hint": "Procure a palavra curta antes de \"já estão\".",
+      "learningObjective": "Reconhecer o marcador de causa em 2:8.",
+      "evidence": ["Lamentações 2:8"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "choice",
+      "question": "Como Lamentações 2:5–7 liga a ira do Senhor ao culto?",
+      "verseRef": "Lamentações 2:5–7",
+      "options": [
+        { "id": "a", "text": "A ira atinge palácios e também altar e santuário" },
+        { "id": "b", "text": "A ira poupa o culto e só derruba muros" },
+        { "id": "c", "text": "O Senhor se afasta sem tocar no santuário" },
+        { "id": "d", "text": "Só o inimigo humano age; o Senhor observa" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "Depois de destruir fortalezas, rejeita altar e santuário.",
+      "feedbackWrong": {
+        "b": "2:7 mostra rejeição explícita do culto.",
+        "c": "Há abominação do santuário, não isenção.",
+        "d": "O Senhor é o sujeito das ações."
+      },
+      "hint": "Ligue 2:5 ao que 2:7 faz com o altar.",
+      "learningObjective": "Relacionar ira, cidade e culto.",
+      "evidence": ["Lamentações 2:5–7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "order",
+      "question": "Como se move Lamentações 2:1–10?",
+      "verseRef": "Lamentações 2:1–2",
+      "options": [
+        { "id": "a", "text": "A ira cobre Sião e derruba a glória" },
+        { "id": "b", "text": "Altar e santuário são rejeitados" },
+        { "id": "c", "text": "Muros caem e anciãos calam" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião",
+      "feedbackCorrect": "Da cobertura da ira à queda do culto e ao silêncio.",
+      "feedbackWrong": {
+        "default": "Comece pela ira sobre Sião; o silêncio fecha."
+      },
+      "hint": "Siga da ira inicial ao luto dos anciãos.",
+      "learningObjective": "Seguir o movimento da ira à ruína.",
+      "evidence": ["Lamentações 2:1–2"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "complete",
+      "question": "Em Lamentações 2:7, que verbo mostra o que o Senhor fez ao altar?",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "exaltou" },
+        { "id": "b", "text": "rejeitou" },
+        { "id": "c", "text": "limpou" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "O Senhor rejeitou o seu altar.",
+      "feedbackWrong": {
+        "a": "O texto não fala de exaltação do altar.",
+        "c": "O verbo é rejeitou, não limpou."
+      },
+      "hint": "É o primeiro verbo do versículo.",
+      "learningObjective": "Lembrar o verbo da disciplina sobre o culto.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "caminhada",
+      "type": "connect",
+      "question": "O que liga Lamentações 2:7 a Jeremias 7:14?",
+      "verseRef": "Lamentações 2:7",
+      "passageA": { "ref": "Lamentações 2:7" },
+      "passageB": { "ref": "Jeremias 7:14" },
+      "options": [
+        { "id": "a", "text": "Casa rejeitada na disciplina" },
+        { "id": "b", "text": "Templo eternamente seguro" },
+        { "id": "c", "text": "Culto sem juízo algum" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abominou o seu santuário",
+      "evidence": ["Lamentações 2:7", "Jeremias 7:14"],
+      "feedbackCorrect": "Nos dois textos, a casa santa não escapa à disciplina.",
+      "feedbackWrong": {
+        "b": "Ambos mostram rejeição, não segurança eterna do templo.",
+        "c": "Há juízo sobre o lugar do culto."
+      },
+      "hint": "Compare o destino da casa do Senhor.",
+      "learningObjective": "Relacionar a rejeição do santuário em Lm e Jr."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "true_false",
+      "question": "Em Lamentações 2:7–8, a ira do Senhor poupa santuário e muros e só atinge casas comuns.",
+      "verseRef": "Lamentações 2:7–8",
+      "correctOptionId": "false",
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "Santuário e muro estão no centro da disciplina.",
+      "feedbackWrong": {
+        "true": "Releia 2:7–8: santuário abominado e muro a destruir."
+      },
+      "hint": "Veja o que acontece ao santuário e ao muro.",
+      "learningObjective": "Interpretar o alcance da ira sobre o sagrado.",
+      "evidence": ["Lamentações 2:7–8"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "find_in_text",
+      "question": "Em Lamentações 2:7, toque o trecho que sustenta a queda do lugar santo.",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "seu santuário" },
+        { "id": "b", "text": "dia de festa" },
+        { "id": "c", "text": "seus castelos" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abominou o seu santuário",
+      "feedbackCorrect": "\"Seu santuário\" é o alvo abominado na disciplina.",
+      "feedbackWrong": {
+        "b": "\"Dia de festa\" é comparação dos gritos, não o alvo.",
+        "c": "Os castelos são entregues; o lugar santo é o santuário."
+      },
+      "hint": "Procure o objeto de \"abominou\".",
+      "learningObjective": "Sustentar com o texto a queda do santuário.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "choice",
+      "question": "Que leitura Lamentações 2:1–10 sustenta sobre o santuário?",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "Até o santuário pode cair sob a ira do Senhor" },
+        { "id": "b", "text": "O santuário é intocável qualquer que seja a culpa" },
+        { "id": "c", "text": "Só muros caem; o culto permanece intacto" },
+        { "id": "d", "text": "O Senhor nunca age como juiz sobre Sião" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "O Senhor rejeitou o seu altar, abominou o seu santuário",
+      "feedbackCorrect": "O texto mostra altar rejeitado e santuário abominado.",
+      "feedbackWrong": {
+        "b": "2:7 desmente a ideia de santuário intocável.",
+        "c": "O culto também é atingido.",
+        "d": "Todo o capítulo mostra a ira do Senhor em ação."
+      },
+      "hint": "Compare cada opção com 2:7.",
+      "learningObjective": "Escolher a interpretação que o texto sustenta.",
+      "evidence": ["Lamentações 2:7"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "order",
+      "question": "Qual sequência mostra juízo sobre o lugar santo na Escritura?",
+      "verseRef": "Lamentações 2:7",
+      "options": [
+        { "id": "a", "text": "O Senhor rejeita altar e santuário" },
+        { "id": "b", "text": "Jeremias anuncia a casa rejeitada" },
+        { "id": "c", "text": "O Salmo lamenta o santuário profanado" }
+      ],
+      "correctOrder": ["a", "b", "c"],
+      "evidenceSpan": "abominou o seu santuário",
+      "evidence": ["Lamentações 2:7", "Jeremias 7:14", "Salmos 74:7"],
+      "feedbackCorrect": "De Lamentações a Jeremias e ao Salmo, o juízo toca o santo.",
+      "feedbackWrong": {
+        "default": "Siga: Lm 2:7, Jr 7:14 e Sl 74:7."
+      },
+      "hint": "Parta da rejeição em Lamentações.",
+      "learningObjective": "Ver o juízo do santuário no fio bíblico."
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "complete",
+      "question": "Em Lamentações 2:1, que palavra nomeia a indignação que cobre Sião?",
+      "verseRef": "Lamentações 2:1",
+      "options": [
+        { "id": "a", "text": "alegria" },
+        { "id": "b", "text": "ira" },
+        { "id": "c", "text": "paz" }
+      ],
+      "correctOptionId": "b",
+      "evidenceSpan": "o Senhor cobriu de nuvens, na sua ira, a filha de Sião",
+      "feedbackCorrect": "É na sua ira que o Senhor cobre Sião.",
+      "feedbackWrong": {
+        "a": "O texto fala de ira, não de alegria.",
+        "c": "\"Paz\" não descreve a cobertura de 2:1."
+      },
+      "hint": "Procure a palavra após \"na sua\".",
+      "learningObjective": "Lembrar o termo teológico da disciplina.",
+      "evidence": ["Lamentações 2:1"]
+    },
+    {
+      "difficulty": "profundezas",
+      "type": "connect",
+      "question": "O que liga Lamentações 2:7 a Salmos 74:7?",
+      "verseRef": "Lamentações 2:7",
+      "passageA": { "ref": "Lamentações 2:7" },
+      "passageB": { "ref": "Salmos 74:7" },
+      "options": [
+        { "id": "a", "text": "Santuário profanado pelo juízo" },
+        { "id": "b", "text": "Templo eternamente intacto" },
+        { "id": "c", "text": "Culto sem qualquer perda" }
+      ],
+      "correctOptionId": "a",
+      "evidenceSpan": "abominou o seu santuário",
+      "evidence": ["Lamentações 2:7", "Salmos 74:7"],
+      "feedbackCorrect": "Nos dois textos, o santuário sofre sob o juízo.",
+      "feedbackWrong": {
+        "b": "Ambos lamentam a profanação, não a intactez.",
+        "c": "Há perda e profanação do lugar santo."
+      },
+      "hint": "Compare o destino do santuário.",
+      "learningObjective": "Ligar a abominação ao lamento do Salmo."
+    }
+  ]
+}
